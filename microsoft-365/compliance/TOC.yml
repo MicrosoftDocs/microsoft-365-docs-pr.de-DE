@@ -6,8 +6,6 @@
       href: compliance-quick-tasks.md
     - name: Neuerungen im Compliance Center
       href: whats-new.md
-    - name: Neueste Aktualisierungen für Compliance-Inhalte
-      href: recently-updated-topics-mcc.md
     - name: Microsoft 365 Compliance Center
       href: microsoft-365-compliance-center.md
     - name: Microsoft 365-Lösungskatalog
@@ -341,13 +339,13 @@
           href: 'https://go.microsoft.com/fwlink/?linkid=867039'
     - name: Datensatzverwaltung
       items:
-        - name: Datensatzverwaltung
+        - name: Mehr zur Datensatzverwaltung
           href: records-management.md
-        - name: Informationen zu Datensätzen
-          href: records.md
+        - name: Erste Schritte mit der Datensatzverwaltung
+          href: get-started-with-records-management.md
         - name: Datensätze deklarieren
           href: declare-records.md
-        - name: Datensatzversionsverwaltung
+        - name: Datensatzversionsverwaltung verwenden
           href: record-versioning.md
 - name: Verwalten von eDiscovery
   items:

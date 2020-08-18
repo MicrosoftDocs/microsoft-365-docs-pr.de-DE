@@ -16,18 +16,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Überwachen und Verwalten der Freigabe von Inhalten, unabhängig davon, ob Sie eine Dispositions Überprüfung oder Inhalte verwenden, wird automatisch entsprechend den von Ihnen konfigurierten Einstellungen gelöscht.
-ms.openlocfilehash: 55b57891732f50eba09425fce4d2be34c94740f3
-ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
+ms.openlocfilehash: 7548ab12b72aa75047caa373efe3e7c3eb7c5d31
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46533822"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778535"
 ---
 # <a name="disposition-of-content"></a>Disposition von Inhalten
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
 
-Verwenden Sie die Registerkarte **Disposition** aus der **Datensatzverwaltung** im Microsoft 365 Compliance Center, um Dispositions Überprüfungen zu verwalten und [Datensätze](records.md) anzuzeigen, die am Ende des Aufbewahrungszeitraums automatisch gelöscht wurden. 
+Verwenden Sie die Registerkarte **Disposition** aus der **Datensatzverwaltung** im Microsoft 365 Compliance Center, um Dispositions Überprüfungen zu verwalten und [Datensätze](records-management.md#records) anzuzeigen, die am Ende des Aufbewahrungszeitraums automatisch gelöscht wurden. 
 
 ## <a name="prerequisites-for-viewing-content-dispositions"></a>Voraussetzungen für das Anzeigen von Inhalts Abstellungen
 

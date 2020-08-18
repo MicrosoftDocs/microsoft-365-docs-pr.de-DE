@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie mehr über Kunden Lockbox-Anforderungen, mit denen Sie steuern können, wie ein Microsoft-Supporttechniker auf Ihre Daten zugreifen kann, wenn Sie auf ein Problem stoßen.
-ms.openlocfilehash: 3ae04648cc89bf9871bb48e5669c620ffd7564ff
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 67662c34ed3aedb22c3462a2ba8aff9e338e07c6
+ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637787"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46794254"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Kunden-Lockbox in Office 365
 
@@ -32,13 +32,13 @@ Informationen zu den Optionen für die Lizenzierung von Benutzern, die von den M
 
 Kunden-Lockbox stellt sicher, dass Microsoft nicht auf Ihre Inhalte zugreifen kann, um einen Dienstvorgang ohne Ihre ausdrückliche Genehmigung auszuführen. Kunden-Lockbox bringt Sie in den Genehmigungsworkflow für Anforderungen für den Zugriff auf Ihre Inhalte.
 
-Gelegentlich helfen Microsoft-Ingenieure bei der Problembehandlung und beim Beheben von vom Kunden gemeldeten Problemen im Support Prozess. In der Regel werden Probleme durch umfangreiche Telemetrie-und Debugging-Tools behoben, die Microsoft für seine Dienste implementiert hat. In einigen Fällen ist es jedoch erforderlich, dass ein Microsoft-Techniker auf Kunden Inhalte zugreift, um die Ursache zu ermitteln und das Problem zu beheben. Kunden-Lockbox erfordert, dass der Techniker Zugriff vom Kunden als letzten Schritt im Genehmigungsworkflow anfordert. Dadurch erhalten Organisationen die Möglichkeit, diese Anforderungen zu genehmigen oder abzulehnen und dem Kunden eine direkte Zugriffssteuerung bereitzustellen.
+Gelegentlich helfen Microsoft-Ingenieure bei der Problembehandlung und beim Beheben von vom Kunden gemeldeten Problemen im Support Prozess. In der Regel werden Probleme durch umfangreiche Telemetrie-und Debugging-Tools behoben, die Microsoft für seine Dienste implementiert hat. In einigen Fällen ist es jedoch erforderlich, dass ein Microsoft-Techniker auf Kunden Inhalte zugreift, um die Ursache zu ermitteln und das Problem zu beheben. Kunden-Lockbox setzt voraus, dass der Techniker den Zugriff vom Kunden als letzten Schritt im Genehmigungsworkflow anfordert. Dadurch erhalten Organisationen die Möglichkeit, diese Anforderungen zu genehmigen oder abzulehnen und dem Kunden eine direkte Zugriffssteuerung bereitzustellen.
 
 ### <a name="customer-lockbox-overview-video"></a>Kunden-Lockbox – Übersichtsvideo
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/8fecf10b-1f03-4849-8b67-76d3d2a43f26?autoplay=false]
 
-## <a name="customer-lockbox-workflow"></a>Kunden-Lockbox-Workflow
+## <a name="customer-lockbox-workflow"></a>Kunden-Lockbox – Genehmigungsvorgang
 
 Die folgenden Schritte beschreiben den typischen Workflow, wenn ein Microsoft-Techniker eine Kunden-Lockbox-Anforderung initiiert:
 
@@ -50,41 +50,39 @@ Die folgenden Schritte beschreiben den typischen Workflow, wenn ein Microsoft-Te
 
 4. Der Microsoft-Supporttechniker meldet sich beim Kunden Lockbox-Anforderungs Tool an und erstellt eine Datenzugriffsanforderung, die den Mandantennamen, die Dienstanforderungsnummer und die geschätzte Zeit, die der Techniker auf die Daten zugreifen muss, enthält.
 
-5. Nachdem ein Microsoft Support Manager die Anforderung genehmigt hat, sendet der Kunden-Lockbox die designierte genehmigende Person in der Organisation eine e-Mail-Benachrichtigung über die ausstehende Zugriffsanforderung von Microsoft.
+5. Nachdem die Anforderung von einem Microsoft-Support-Mitarbeiter genehmigt wurde, sendet die Kunden-Lockbox der für die Genehmigung zuständigen Person in der Organisation eine E-Mail-Benachrichtigung über die ausstehende Zugriffsanforderung von Microsoft.
 
     ![Beispiel für eine Kunden-Lockbox-e-Mail-Benachrichtigung](../media/CustomerLockbox1.png)
 
    Jeder Benutzer, dem die Administratorrolle " [Customer Lockbox Access genehmigende](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) Person" im Microsoft 365 Admin Center zugewiesen ist, kann Kunden-Lockbox-Anforderungen genehmigen.
 
-6. Die genehmigende Person meldet sich beim Microsoft 365 Admin Center an und genehmigt die Anforderung. In diesem Schritt wird die Erstellung eines Überwachungsdatensatzes ausgelöst, der durch Durchsuchen des Überwachungsprotokolls zur Verfügung steht. Weitere Informationen finden Sie unter [Auditing Customer Lockbox Requests](#auditing-customer-lockbox-requests).
+6. Die genehmigende Person meldet sich beim Microsoft 365 Admin Center an und genehmigt die Anforderung. Mit diesem Schritt wird die Erstellung eines Überwachungseintrags ausgelöst, der über eine Suche innerhalb des Überwachungsprotokolls auffindbar ist. Weitere Informationen finden Sie unter [Auditing Customer Lockbox Requests](#auditing-customer-lockbox-requests).
 
    Wenn der Kunde die Anforderung ablehnt oder die Anforderung nicht innerhalb von 12 Stunden genehmigt, läuft die Anforderung ab, und dem Microsoft-Techniker wird kein Zugriff gewährt.
 
    > [!IMPORTANT]
    > Microsoft schließt keine Links in die Kunden-Lockbox-e-Mail-Benachrichtigungen ein, bei denen Sie sich bei Office 365 anmelden müssen.
 
-7. Nachdem die genehmigende Person aus der Organisation die Anforderung genehmigt hat, erhält der Microsoft-Techniker die Genehmigungsnachricht, meldet sich beim Mandanten in Exchange Online an und behebt das Problem des Kunden. Microsoft-Techniker haben die angeforderte Dauer, um das Problem zu beheben, nach dem der Zugriff automatisch aufgehoben wird.
+7. Nachdem die genehmigende Person der Organisation die Anforderung genehmigt hat, erhält der Microsoft-Techniker die entsprechende Genehmigungsnachricht, meldet sich beim Mandanten in Exchange Online an und behebt das Problem des Kunden. Microsoft-Techniker haben die angeforderte Dauer, um das Problem zu beheben, nach dem der Zugriff automatisch aufgehoben wird.
 
 > [!NOTE]
-> Alle von einem Microsoft-Techniker ausgeführten Aktionen werden im Überwachungsprotokoll protokolliert. Sie können diese Überwachungseinträge suchen und diese überprüfen.
+> Sämtliche von einem Microsoft-Techniker ausgeführten Aktionen werden im Überwachungsprotokoll protokolliert. Sie können nach diesen Überwachungseinträgen suchen und sie überprüfen.
 
 ## <a name="turn-customer-lockbox-requests-on-or-off"></a>Aktivieren oder Deaktivieren von Kunden-Lockbox-Anforderungen
 
-Sie können Kunden-Lockbox-Steuerelemente im Microsoft 365 Admin Center aktivieren. Wenn Sie die Kunden-Lockbox aktivieren, muss Microsoft die Zustimmung Ihrer Organisation erhalten, bevor Sie auf den Inhalt Ihres Mandanten zugreifen können.
+Sie können die Steuerelemente für die Kunden-Lockbox im Microsoft 365 Admin Center aktivieren. Wenn Sie die Kunden-Lockbox aktivieren, muss Microsoft die Zustimmung Ihrer Organisation erhalten, bevor Sie auf den Inhalt Ihres Mandanten zugreifen können.
 
-1. Wechseln Sie zu und melden Sie sich mit einem Arbeits-oder Schulkonto an [https://admin.microsoft.com](https://admin.microsoft.com) , dem der globale Administrator oder die **Customer Lockbox Access-genehmigende** Rolle zugewiesen ist.
+1. Wechseln Sie zu und melden Sie sich mit einem Arbeits-oder Schulkonto an, dem der globale Administrator oder die **Customer Lockbox Access-genehmigende** Rolle zugewiesen ist [https://admin.microsoft.com](https://admin.microsoft.com) .
 
-2. Wählen Sie **Einstellungen > Sicherheit & Datenschutz**aus.
+2. Wählen Sie **Einstellungen > org-Einstellungen**aus.
 
-    ![Bearbeiten der Einstellungen für den Kunden-Lockbox im Admin Center](../media/CustomerLockbox2.png)
-
-3. Wählen Sie auf der Kachel **Customer Lockbox** die Option **Bearbeiten**aus, und bewegen Sie die Umschaltfläche in **ein** oder **aus** , um das Feature ein-oder auszuschalten.
+3. Wählen Sie **Services**  >  **Customer Lockbox**  >  **Edit**aus, und bewegen Sie die Umschaltfläche in **ein** oder **aus** , um das Feature ein-oder auszuschalten.
 
     ![Require approval for Customer Lockbox](../media/CustomerLockbox4.png)
 
-## <a name="approve-or-deny-a-customer-lockbox-request"></a>Genehmigen oder Verweigern einer Kunden-Lockbox-Anforderung
+## <a name="approve-or-deny-a-customer-lockbox-request"></a>Genehmigen oder Ablehnen einer Kunden-Lockbox-Anforderung
 
-1. Wechseln Sie zu und melden Sie sich mit einem Arbeits-oder Schulkonto an [https://admin.microsoft.com](https://admin.microsoft.com) , dem der globale Administrator oder die **Customer Lockbox Access-genehmigende** Rolle zugewiesen ist.
+1. Wechseln Sie zu und melden Sie sich mit einem Arbeits-oder Schulkonto an, dem der globale Administrator oder die **Customer Lockbox Access-genehmigende** Rolle zugewiesen ist [https://admin.microsoft.com](https://admin.microsoft.com) .
 
 2. Wählen Sie **Support > Kunden-Lockbox-Anforderungen**aus.
 
@@ -102,9 +100,13 @@ Sie können Kunden-Lockbox-Steuerelemente im Microsoft 365 Admin Center aktivier
 
     ![Genehmigen oder Verweigern von Kunden-Lockbox-Anforderungen](../media/CustomerLockbox8.png)
 
-## <a name="auditing-customer-lockbox-requests"></a>Überwachen von Kunden-Lockbox-Anforderungen
+> [!NOTE]
+> Verwenden Sie das Cmdlet "AccessToCustomerDataRequest", um Microsoft 365 Kunden-Lockbox-Anfragen zu genehmigen, zu verweigern oder zu kündigen, die den Zugriff auf Ihre Daten durch Microsoft-Supporttechniker steuern. Weitere Informationen finden Sie unter [Sets-AccessToCustomerDataRequest](https://docs.microsoft.com/powershell/module/exchange/set-accesstocustomerdatarequest?view=exchange-ps).
 
-Überwachungsdatensätze, die den Kunden-Lockbox-Anforderungen entsprechen, werden im Überwachungsprotokoll protokolliert. Sie können auf diese Protokolle zugreifen, indem Sie das [Überwachungsprotokoll-Such Tool](search-the-audit-log-in-security-and-compliance.md) im Security & Compliance Center verwenden. Im Überwachungsprotokoll werden auch Aktionen im Zusammenhang mit der Annahme oder Ablehnung einer Kunden-Lockbox-Anforderung und von Microsoft-Ingenieuren durchgeführten Aktionen (wenn Zugriffsanforderungen genehmigt werden) im Überwachungsprotokoll protokolliert. Sie können diese Überwachungseinträge suchen und diese überprüfen.
+
+## <a name="auditing-customer-lockbox-requests"></a>Überwachung von Kunden-Lockbox-Anforderungen
+
+Überwachungsdatensätze, die den Kunden-Lockbox-Anforderungen entsprechen, werden im Überwachungsprotokoll protokolliert. Sie können auf diese Protokolle zugreifen, indem Sie das [Überwachungsprotokoll-Such Tool](search-the-audit-log-in-security-and-compliance.md) im Security & Compliance Center verwenden. Im Überwachungsprotokoll werden auch Aktionen im Zusammenhang mit der Annahme oder Ablehnung einer Kunden-Lockbox-Anforderung und von Microsoft-Ingenieuren durchgeführten Aktionen (wenn Zugriffsanforderungen genehmigt werden) im Überwachungsprotokoll protokolliert. Sie können nach diesen Überwachungseinträgen suchen und sie überprüfen.
 
 ### <a name="search-the-audit-log-for-activity-related-to-customer-lockbox-requests"></a>Durchsuchen des Überwachungsprotokolls nach Aktivitäten im Zusammenhang mit Kunden-Lockbox-Anforderungen
 
@@ -112,9 +114,9 @@ Bevor Sie das Überwachungsprotokoll zum Nachverfolgen von Anforderungen für Ku
 
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
   
-2. Melden Sie sich mit ihrem geschäftlichen oder Schulkonto an.
+2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto an.
 
-3. Klicken Sie im linken Bereich des Security & Compliance Centers auf **Suche & Ermittlungs** > **Überwachungsprotokoll-Suche**.
+3. Klicken Sie im linken Bereich des Security & Compliance Centers auf **Suche & Ermittlungs**  >  **Überwachungsprotokoll-Suche**.
 
     Die Seite **Überwachungsprotokoll Suche** wird angezeigt.
 
@@ -144,16 +146,16 @@ Bevor Sie das Überwachungsprotokoll zum Nachverfolgen von Anforderungen für Ku
 
 7. Klicken Sie in der Ergebnisliste auf einen Überwachungseintrag, um ihn anzuzeigen.
 
-### <a name="audit-record-for-a-customer-lockbox-access-request"></a>Überwachungseintrag für eine Kunden-Lockbox-Zugriffsanforderung
+### <a name="audit-record-for-a-customer-lockbox-access-request"></a>Überwachungsdatensatz für eine Kunden-Lockbox-Zugriffsanforderung
 
-Wenn eine Person in Ihrer Organisation eine Kunden-Lockbox-Anforderung genehmigt oder ablehnt, wird im Überwachungsprotokoll ein Überwachungseintrag protokolliert. Dieser Datensatz enthält die folgenden Informationen.
+Wenn eine Person in Ihrer Organisation eine Kunden-Lockbox-Anforderung genehmigt oder ablehnt, wird im Überwachungsprotokoll ein Überwachungseintrag protokolliert. Dieser Datensatz enthält folgende Informationen.
 
-| Audit Record-Eigenschaft| Beschreibung|
+| Überwachungsdatensatz-Eigenschaft| Beschreibung|
 |:---------- |:----------|
-| Datum       | Das Datum und die Uhrzeit, zu der die Kunden-Lockbox-Anforderung genehmigt oder verweigert wurde.
-| IP-Adresse | Die IP-Adresse des Computers, den die genehmigende Person verwendet hat, um eine Anforderung zu genehmigen oder zu verweigern. |
-| Benutzer       | Das Dienstkonto BOXServiceAccount@\[customerforest\]. Prod.Outlook.com.            |
-| Aktivität   | Festlegen-AccessToCustomerDataRequest; Dies ist die Überwachungsaktivität, die protokolliert wird, wenn Sie eine Kunden-Lockbox-Anforderung genehmigen oder verweigern.                                |
+| Datum       | Das Datum und die Uhrzeit, zu der die Kunden-Lockbox-Anforderung genehmigt oder abgelehnt wurde.
+| IP-Adresse | Die IP-Adresse des Computers, den die genehmigende Person zur Genehmigung oder Ablehnung einer Anforderung verwendet hat. |
+| Benutzer       | Das Dienstkonto BOXServiceAccount@ \[ customerforest \] . Prod.Outlook.com.            |
+| Aktivität   | Set-AccessToCustomerDataRequest; Hierbei handelt es sich um die Überwachungsaktivität, die protokolliert wird, wenn eine Kunden-Lockbox-Anforderung genehmigt oder abgelehnt wird.                                |
 | Element       | Die GUID der Kunden-Lockbox-Anforderung                             |
 
 Der folgende Screenshot zeigt ein Beispiel für einen Überwachungsprotokolleintrag, der einer genehmigten Kunden-Lockbox-Anforderung entspricht. Wenn eine Kunden-Lockbox-Anforderung verweigert wurde, lautet der Wert des **ApprovalDecision** -Parameters **Deny**.
@@ -163,17 +165,17 @@ Der folgende Screenshot zeigt ein Beispiel für einen Überwachungsprotokolleint
 > [!TIP]
 > Wenn Sie ausführlichere Informationen in einem Überwachungseintrag anzeigen möchten, klicken Sie auf **Weitere Informationen**.
 
-### <a name="audit-record-for-an-action-performed-by-a-microsoft-engineer"></a>Überwachungseintrag für eine von einem Microsoft-Techniker ausgeführte Aktion
+### <a name="audit-record-for-an-action-performed-by-a-microsoft-engineer"></a>Überwachungsdatensatz für eine Aktion, die von einem Microsoft-Techniker ausgeführt wird
 
-Die Aktionen, die von einem Microsoft-Techniker ausgeführt werden, nachdem eine Kunden-Lockbox-Anforderung genehmigt wurde (und die möglicherweise zum Zugriff auf Kunden Inhalte führen kann), werden im Überwachungsprotokoll protokolliert. Diese Einträge enthalten die folgenden Informationen.
+Die Aktionen, die von einem Microsoft-Techniker nach der Genehmigung einer Kunden-Lockbox-Anforderung durchgeführt werden (und die zum Zugriff auf Kundeninhalte führen können), werden im Überwachungsprotokoll protokolliert. Diese Datensätze enthalten die folgenden Informationen.
 
-| Audit Record-Eigenschaft| Beschreibung|
+| Überwachungsdatensatz-Eigenschaft| Beschreibung|
 |:---------- |:----------|
-| Datum       | Datum Uhrzeit, zu der die Aktion ausgeführt wurde. Beachten Sie, dass die Zeit, für die diese Aktion ausgeführt wurde, innerhalb von 4 Stunden nach der Genehmigung der Kunden-Lockbox-Anforderung erfolgt.              |
-| IP-Adresse | Die IP-Adresse des Computers, den Microsoft-Techniker verwendet hat. |
-| Benutzer       | Microsoft-Operator; Dieser Wert gibt an, dass dieser Datensatz mit einer Kunden-Lockbox-Anforderung verknüpft ist.                                  |
-| Aktivität   | Name der Aktivität, die von Microsoft Engineer ausgeführt wird.|
-| Element       | \<leer\>                                             |
+| Datum       | Datum Uhrzeit, zu der die Aktion ausgeführt wurde. Beachten Sie, dass die Uhrzeit, zu der diese Aktion durchgeführt wurde, innerhalb von 4 Stunden nach der Genehmigung der Kunden-Lockbox-Anforderung liegt.              |
+| IP-Adresse | Die IP-Adresse des Computers, den der Microsoft-Techniker verwendet hat. |
+| Benutzer       | Microsoft-Operator; dieser Wert gibt an, dass dieser Datensatz mit einer Kunden-Lockbox-Anforderung verknüpft ist.                                  |
+| Aktivität   | Name der vom Microsoft-Techniker ausgeführten Aktivität.|
+| Element       | \<empty\>                                             |
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
@@ -183,25 +185,25 @@ Kunden-Lockbox wird derzeit in Exchange Online, SharePoint Online und OneDrive f
 
 #### <a name="is-customer-lockbox-available-to-all-customers"></a>Ist die Kunden-Lockbox für alle Kunden verfügbar?
 
-Kunden-Lockbox ist in den Microsoft 365-oder Office 365 E5-Abonnements enthalten und kann mit einem Add-on für Informationsschutz und Compliance oder mit einem Advanced Compliance-Add-on-Abonnement zu anderen Plänen hinzugefügt werden. Weitere Informationen finden Sie unter [Pläne und Preise](https://products.office.com/business/office-365-enterprise-e5-business-software) .
+Kunden-Lockbox ist in den Microsoft 365-oder Office 365 E5-Abonnements enthalten und kann mit einem Add-on für Informationsschutz und Compliance oder mit einem Advanced Compliance-Add-on-Abonnement zu anderen Plänen hinzugefügt werden. Weitere Informationen finden Sie unter [Pläne und Preise](https://products.office.com/business/office-365-enterprise-e5-business-software)   .
 
 #### <a name="what-is-customer-content"></a>Was sind Kunden Inhalte?
 
-Kunden Inhalte sind die Daten, die von Benutzern von Microsoft 365-Diensten und-Anwendungen erstellt wurden. Beispiele für Kunden Inhalte sind:
+Kunden Inhalte sind die Daten, die von Benutzern von Microsoft 365-Diensten und-Anwendungen erstellt wurden. Beispiele für Kundeninhalte:
 
-- E-Mail-Text oder e-Mail-Anhänge
+- E-Mail-Nachrichtentext oder -Anlagen
 
-- SharePoint-Websiteinhalt
+- SharePoint-Websiteinhalte
 
 - Informationen im Textkörper einer SharePoint-Datei
 
 - Skype for Business-Präsentationsdatei Text
 
-- Sofortnachrichten (Chat) oder sprach Unterhaltungen
+- Chatnachrichten oder VoIP-Unterhaltungen
 
-- Vom kundengenerierte BLOB-oder strukturierte Speicherdaten (beispielsweise SQL-Container)
+- Kundengenerierte BLOB- oder strukturierte Speicherdaten (z. B. SQL-Container)
 
-- Kundeneigene Sicherheitsinformationen (beispielsweise Zertifikate, Verschlüsselungsschlüssel und Kennwörter)
+- Sicherheitsinformationen des Kunden (z. B. Zertifikate, Verschlüsselungsschlüssel und Kennwörter)
 
 - Schlussfolgerungen und alle nachfolgenden Rückschlüsse, wenn der Inhalt des Kunden bleibt
 
@@ -239,7 +241,7 @@ Jede Kunden-Lockbox-Anforderung enthält eine Microsoft 365-Dienstanforderungsnu
 
 #### <a name="when-a-customer-lockbox-request-is-approved-how-long-are-the-permissions-valid"></a>Wie lange sind die Berechtigungen gültig, wenn eine Kunden-Lockbox-Anforderung genehmigt wird?
 
-Derzeit beträgt der maximale Zeitraum für die dem Microsoft-Techniker gewährten Zugriffsberechtigungen 4 Stunden. Der Microsoft-Techniker kann auch einen kürzeren Zeitraum anfordern.
+Zurzeit beträgt die maximale Zeitspanne der Zugriffsberechtigungen für den Microsoft-Techniker 4 Stunden. Der Microsoft-Techniker kann auch einen kürzeren Zeitraum anfordern.
 
 #### <a name="how-can-i-get-a-history-of-all-customer-lockbox-requests"></a>Wie erhalte ich einen Verlauf aller Kunden-Lockbox-Anfragen?
 
@@ -251,7 +253,7 @@ Der Compliance Center-Aktivitäts Feed enthält Protokoll Aktivitäten von Custo
 
 #### <a name="what-happens-when-a-customer-doesnt-respond-to-a-customer-lockbox-request"></a>Was geschieht, wenn ein Kunde nicht auf eine Kunden-Lockbox-Anforderung antwortet?
 
-Kunden-Lockbox-Anforderungen haben eine Standarddauer von 12 Stunden. Wenn Sie auf eine Anforderung nicht innerhalb von 12 Stunden antworten, läuft die Anforderung ab.
+Kunden-Lockbox-Anfragen haben eine Standarddauer von 12 Stunden. Wenn Sie auf eine Anforderung nicht innerhalb von 12 Stunden antworten, läuft die Anforderung ab.
 
 #### <a name="what-does-microsoft-do-when-a-customer-rejects-a-customer-lockbox-request"></a>Was macht Microsoft, wenn ein Kunde eine Lockbox-Anfrage ablehnt?
 

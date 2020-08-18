@@ -15,13 +15,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
+hideEdit: true
 description: Die Verhinderung von Datenverlust im Security &amp; Compliance Center umfasst 80 Typen für vertrauliche Informationen, die Sie in ihren DLP-Richtlinien verwenden können. Dieses Thema enthält eine Liste aller dieser vertraulichen Informationstypen und zeigt, was eine DLP-Richtlinie sucht, wenn sie den jeweiligen Typen erkennt.
-ms.openlocfilehash: 9e1b1261bbb58b1ca65818a5ad304ee186561ae6
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: b302879b50c06007656aba93b38f8387557d301b
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430518"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778555"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Entitätsdefinitionen für Typen vertraulicher Informationstypen
 
@@ -37,9 +38,9 @@ Die Verhinderung von Datenverlust (Data Loss Prevention, DLP) im Compliance Cent
 
 Formatiert
 - Vier Ziffern, beginnend mit 0, 1, 2, 3, 6, 7 oder 8
-- Ein Bindestrich 
+- Ein Bindestrich
 - Vier Ziffern
-- Ein Bindestrich 
+- Ein Bindestrich
 - Eine Ziffer
 
 Unformatiert: 9 aufeinanderfolgende Ziffern, beginnend mit 0, 1, 2, 3, 6, 7 oder 8 
@@ -98,9 +99,9 @@ Acht Ziffern, durch Punkte getrennt
 Acht Ziffern:
 - Zwei Ziffern
 - Ein Punkt 
-- Drei Ziffern 
+- Drei Ziffern
 - Ein Punkt 
-- Drei Ziffern 
+- Drei Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -127,7 +128,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
 - Argentina National Identity number 
-- Identity 
+- Identität 
 - Identification National Identity Card 
 - DNI 
 - Nic-nationales Personenregister 
@@ -146,9 +147,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 Kontonummer hat 6-10 Stellen.
 Australische Bankleitzahl:
-- Drei Ziffern 
+- Drei Stellen 
 - Ein Bindestrich 
-- Drei Stellen
+- Drei Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -577,9 +578,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_austria_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Der reguläre Ausdruck  `Regex_austria_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_austria_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_austria_eu_driver's_license_number` wurde gefunden. 
     
 ```xml
 <!-- EU Driver's License Number -->
@@ -626,15 +627,15 @@ Eine Kombination aus Buchstaben, Ziffern und Sonderzeichen mit einer 24 Zeichen 
     
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_austria_eu_national_id_card` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Der reguläre Ausdruck  `Regex_austria_eu_national_id_card` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_austria_eu_national_id_card` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_austria_eu_national_id_card` wurde gefunden. 
    
 ```xml
 <!-- EU austria_eu_national_id -->
@@ -674,15 +675,15 @@ Eine Kombination aus einem Buchstaben, sieben Ziffern und einem Leerzeichen:
     
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_austria_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Der reguläre Ausdruck  `Regex_austria_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_austria_eu_passport_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_austria_eu_passport_number` wurde gefunden. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -726,13 +727,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_austria_eu_ssn_or_equivalent` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_austria_eu_ssn_or_equivalent` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_austria_eu_ssn_or_equivalent` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_austria_eu_ssn_or_equivalent` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_austria_eu_ssn_or_equivalent` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_austria_eu_ssn_or_equivalent` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -790,12 +791,12 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_austria_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_austria_eu_tax_file_number` wurde gefunden. 
+- Die  `Func_austria_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_austria_eu_tax_file_number` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_austria_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_austria_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -1323,8 +1324,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_belgium_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_belgium_eu_driver's_license_number` wurde gefunden.
+- Der reguläre Ausdruck  `Regex_belgium_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_belgium_eu_driver's_license_number` wurde gefunden.
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -1474,14 +1475,14 @@ Zwei Buchstaben und gefolgt von sechs Ziffern
   
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_belgium_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_belgium_eu_passport_number` wurde gefunden.
+- Der reguläre Ausdruck  `Regex_belgium_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_belgium_eu_passport_number` wurde gefunden.
 
 ```xml
  <!-- EU Passport Number -->
@@ -1523,12 +1524,12 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_belgium_eu_ssn_or_equivalent` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_belgium_eu_ssn_or_equivalent` wurde gefunden. 
+- Die  `Func_belgium_eu_ssn_or_equivalent` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_belgium_eu_ssn_or_equivalent` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_belgium_eu_ssn_or_equivalent` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_belgium_eu_ssn_or_equivalent` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -1584,14 +1585,14 @@ Diese vertrauliche Informationstyp Entität steht nur für den Identificaiton-In
     
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_belgium_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_belgium_eu_tax_file_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_belgium_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_belgium_eu_tax_file_number` wurde gefunden. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -1745,7 +1746,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Drei Ziffern (diese ersten acht Ziffern sind die Registrierungsnummer)  
 - Ein Schrägstrich  
 - Vierstellige Zweignummer  
-- Ein Bindestrich 
+- Ein Bindestrich  
 - Zwei Ziffern, die Prüfziffern sind
 
 ### <a name="checksum"></a>Prüfsumme
@@ -1885,8 +1886,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_bulgaria_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_bulgaria_eu_driver's_license_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_bulgaria_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_bulgaria_eu_driver's_license_number` wurde gefunden. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -1942,12 +1943,12 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_bulgaria_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_bulgaria_national_number` wurde gefunden. 
+- Die  `Func_bulgaria_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_bulgaria_national_number` wurde gefunden. 
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_bulgaria_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_bulgaria_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -2030,8 +2031,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_bulgaria_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_bulgaria_eu_passport_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_bulgaria_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_bulgaria_eu_passport_number` wurde gefunden. 
 
 ```xml
  <!-- EU Passport Number -->
@@ -2069,12 +2070,12 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_bulgaria_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_bulgaria_eu_tax_file_number` wurde gefunden. 
+- Die  `Func_bulgaria_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_bulgaria_eu_tax_file_number` wurde gefunden. 
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_bulgaria_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_bulgaria_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
 
 ```xml
  <!-- EU Tax File Number -->
@@ -3076,8 +3077,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_croatia_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_croatia_eu_driver's_license_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_croatia_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_croatia_eu_driver's_license_number` wurde gefunden. 
 
 ```xml
  <!-- EU Driver's License Number -->
@@ -3192,8 +3193,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_croatia_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_croatia_eu_passport_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_croatia_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_croatia_eu_passport_number` wurde gefunden. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -3284,12 +3285,12 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_croatia_eu_ssn_or_equivalent` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_croatia_eu_ssn_or_equivalent` wurde gefunden. 
+- Die  `Func_croatia_eu_ssn_or_equivalent` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_croatia_eu_ssn_or_equivalent` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_croatia_eu_ssn_or_equivalent` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_croatia_eu_ssn_or_equivalent` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -3345,12 +3346,12 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_croatia_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_croatia_eu_tax_file_number` wurde gefunden. 
+- Die  `Func_croatia_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_croatia_eu_tax_file_number` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_croatia_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_croatia_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -3418,8 +3419,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_cyprus_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_cyprus_eu_driver's_license_number` wurde gefunden.
+- Der reguläre Ausdruck  `Regex_cyprus_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_cyprus_eu_driver's_license_number` wurde gefunden.
 
 ```xml
  <!-- EU Driver's License Number -->
@@ -3461,14 +3462,14 @@ Zehn Ziffern ohne Leerzeichen und Trennzeichen
   
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_cyprus_eu_national_id_card` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_cyprus_eu_national_id_card` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_cyprus_eu_national_id_card` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_cyprus_eu_national_id_card` wurde gefunden. 
     
 ```xml 
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -3509,8 +3510,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_cyprus_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen.
-- Ein Schlüsselwort aus `Keywords_cyprus_eu_passport_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_cyprus_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen.
+- Ein Schlüsselwort aus  `Keywords_cyprus_eu_passport_number` wurde gefunden. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -3548,18 +3549,18 @@ Acht Ziffern und ein Buchstabe:
     
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_cyprus_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_cyprus_eu_tax_file_number` wurde gefunden. 
+- Die  `Func_cyprus_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_cyprus_eu_tax_file_number` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_cyprus_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_cyprus_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -3629,8 +3630,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_czech_republic_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_czech_republic_eu_driver's_license_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_czech_republic_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_czech_republic_eu_driver's_license_number` wurde gefunden. 
 
 ```xml
  <!-- EU Driver's License Number -->
@@ -3681,8 +3682,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_czech_republic_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_czech_republic_eu_passport_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_czech_republic_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_czech_republic_eu_passport_number` wurde gefunden. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -3784,12 +3785,12 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_czech_republic_eu_ssn_or_equivalent` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_czech_republic_eu_ssn_or_equivalent` wurde gefunden. 
+- Die  `Func_czech_republic_eu_ssn_or_equivalent` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_czech_republic_eu_ssn_or_equivalent` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_czech_republic_eu_ssn_or_equivalent` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_czech_republic_eu_ssn_or_equivalent` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
 
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -3839,14 +3840,14 @@ Neun oder zehn Ziffern mit einem optionalen backslashl:
     
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_czech_republic_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_czech_republic_eu_tax_file_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_czech_republic_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_czech_republic_eu_tax_file_number` wurde gefunden. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -3919,8 +3920,8 @@ Ja
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_denmark_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_denmark_eu_driver's_license_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_denmark_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_denmark_eu_driver's_license_number` wurde gefunden. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -3971,8 +3972,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_denmark_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_denmark_eu_passport_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_denmark_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_denmark_eu_passport_number` wurde gefunden. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -4107,12 +4108,12 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_denmark_eu_ssn_or_equivalent` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_denmark_eu_ssn_or_equivalent` wurde gefunden. 
+- Die  `Func_denmark_eu_ssn_or_equivalent` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_denmark_eu_ssn_or_equivalent` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_denmark_eu_ssn_or_equivalent` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_denmark_eu_ssn_or_equivalent` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -4166,12 +4167,12 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_denmark_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_denmark_eu_tax_file_number` wurde gefunden. 
+- Die  `Func_denmark_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_denmark_eu_tax_file_number` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_denmark_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_denmark_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -4301,8 +4302,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_estonia_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_estonia_eu_driver's_license_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_estonia_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_estonia_eu_driver's_license_number` wurde gefunden. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -4357,12 +4358,12 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_estonia_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_estonia_eu_national_id_card` wurde gefunden. 
+- Die  `Func_estonia_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_estonia_eu_national_id_card` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_estonia_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_estonia_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
  
@@ -4432,8 +4433,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_estonia_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_estonia_eu_passport_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_estonia_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_estonia_eu_passport_number` wurde gefunden. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -4479,12 +4480,12 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_estonia_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_estonia_eu_tax_file_number` wurde gefunden. 
+- Die  `Func_estonia_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_estonia_eu_tax_file_number` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_estonia_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_estonia_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -5055,9 +5056,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_finland_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Der reguläre Ausdruck  `Regex_finland_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_finland_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_finland_eu_driver's_license_number` wurde gefunden. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -5234,12 +5235,12 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_finland_eu_ssn_or_equivalent` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_finland_eu_ssn_or_equivalent` wurde gefunden. 
+- Die  `Func_finland_eu_ssn_or_equivalent` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_finland_eu_ssn_or_equivalent` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_finland_eu_ssn_or_equivalent` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_finland_eu_ssn_or_equivalent` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -5304,12 +5305,12 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_finland_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_finland_eu_tax_file_number` wurde gefunden. 
+- Die  `Func_finland_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_finland_eu_tax_file_number` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_finland_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_finland_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -5628,18 +5629,18 @@ Neun Ziffern für Entitäten
   
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_france_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_france_eu_tax_file_number` wurde gefunden. 
+- Die  `Func_france_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_france_eu_tax_file_number` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_france_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_france_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -5985,12 +5986,12 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_germany_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_germany_eu_tax_file_number` wurde gefunden. 
+- Die  `Func_germany_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_germany_eu_tax_file_number` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_germany_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_germany_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -6053,8 +6054,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_greece_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_greece_eu_driver's_license_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_greece_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_greece_eu_driver's_license_number` wurde gefunden. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -6157,8 +6158,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_greece_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_greece_eu_passport_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_greece_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_greece_eu_passport_number` wurde gefunden. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -6192,15 +6193,15 @@ Neun Ziffern
   
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_greece_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Der reguläre Ausdruck  `Regex_greece_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_greece_eu_tax_file_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_greece_eu_tax_file_number` wurde gefunden. 
     
 ```
  <!-- EU Tax File Number -->
@@ -6350,8 +6351,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_hungary_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_hungary_eu_driver's_license_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_hungary_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_hungary_eu_driver's_license_number` wurde gefunden. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -6404,12 +6405,12 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_hungary_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_hungary_eu_national_id_card` wurde gefunden. 
+- Die  `Func_hungary_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_hungary_eu_national_id_card` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_hungary_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_hungary_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -6455,8 +6456,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_hungary_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_hungary_eu_passport_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_hungary_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_hungary_eu_passport_number` wurde gefunden. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -6495,12 +6496,12 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_hungary_eu_ssn_or_equivalent` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_hungary_eu_ssn_or_equivalent` wurde gefunden. 
+- Die  `Func_hungary_eu_ssn_or_equivalent` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_hungary_eu_ssn_or_equivalent` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_hungary_eu_ssn_or_equivalent` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_hungary_eu_ssn_or_equivalent` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -6562,12 +6563,12 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_hungary_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_hungary_eu_tax_file_number` wurde gefunden. 
+- Die  `Func_hungary_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_hungary_eu_tax_file_number` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_hungary_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_hungary_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -6661,9 +6662,9 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 ### <a name="pattern"></a>Muster
 
 12 Ziffern:
-- Vier Ziffern  
+- Vier Ziffern 
 - Eine optionales Leerzeichen oder ein Bindestrich  
-- Vier Ziffern  
+- Vier Ziffern 
 - Eine optionales Leerzeichen oder ein Bindestrich  
 - Die letzte Ziffer, die eine Prüfziffer ist
 
@@ -6963,8 +6964,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_ireland_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_ireland_eu_driver's_license_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_ireland_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_ireland_eu_driver's_license_number` wurde gefunden. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -7088,7 +7089,7 @@ Zwei Buchstaben oder Ziffern, gefolgt von sieben Ziffern ohne Leerzeichen oder T
 Zwei Buchstaben oder Ziffern, gefolgt von sieben Ziffern:
   
 - Zwei Ziffern oder Buchstaben (ohne Beachtung der Groß-/Kleinschreibung)
-- Sieben Ziffern 
+- Sieben Ziffern
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -7098,8 +7099,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_ireland_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_ireland_eu_passport_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_ireland_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_ireland_eu_passport_number` wurde gefunden. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -7210,18 +7211,18 @@ Sieben Ziffern, gefolgt von einem Buchstaben:
     
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_ireland_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_ireland_eu_tax_file_number` wurde gefunden. 
+- Die  `Func_ireland_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_ireland_eu_tax_file_number` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_ireland_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_ireland_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -7428,12 +7429,12 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_italy_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_italy_eu_national_id_card` wurde gefunden. 
+- Die  `Func_italy_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_italy_eu_national_id_card` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_italy_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_italy_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
 <!-- Italy national identification number -->
@@ -7502,14 +7503,14 @@ Zwei Buchstaben oder Ziffern, gefolgt von sieben Ziffern:
     
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_italy_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_italy_eu_passport_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_italy_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_italy_eu_passport_number` wurde gefunden. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -7562,12 +7563,12 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_italy_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_italy_eu_tax_file_number` wurde gefunden. 
+- Die  `Func_italy_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_italy_eu_tax_file_number` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_italy_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_italy_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -7998,8 +7999,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_latvia_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_latvia_eu_driver's_license_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_latvia_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_latvia_eu_driver's_license_number` wurde gefunden. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -8053,12 +8054,12 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_latvia_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_latvia_eu_national_id_card` wurde gefunden. 
+- Die  `Func_latvia_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_latvia_eu_national_id_card` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_latvia_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_latvia_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
 <!-- Latvia national identification number -->
@@ -8166,8 +8167,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_latvia_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_latvia_eu_passport_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_latvia_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_latvia_eu_passport_number` wurde gefunden. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -8211,12 +8212,12 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_latvia_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_latvia_eu_tax_file_number` wurde gefunden. 
+- Die  `Func_latvia_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_latvia_eu_tax_file_number` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_latvia_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_latvia_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -8321,8 +8322,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_lithuania_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_lithuania_eu_driver's_license_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_lithuania_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_lithuania_eu_driver's_license_number` wurde gefunden. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -8376,12 +8377,12 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_lithuania_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_lithuania_eu_national_id_card` wurde gefunden. 
+- Die  `Func_lithuania_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_lithuania_eu_national_id_card` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_lithuania_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_lithuania_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
 <!-- Lithuania national identification number -->
@@ -8447,14 +8448,14 @@ Acht Ziffern oder Buchstaben (Groß-/Kleinschreibung nicht beachtet)
   
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_lithuania_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_lithuania_eu_passport_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_lithuania_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_lithuania_eu_passport_number` wurde gefunden. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -8485,18 +8486,18 @@ Diese vertrauliche Informationstyp Entität ist nur im vertraulichen Information
   
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_lithuania_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_lithuania_eu_tax_file_number` wurde gefunden. 
+- Die  `Func_lithuania_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_lithuania_eu_tax_file_number` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_lithuania_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_lithuania_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -8567,8 +8568,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_luxemburg_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_luxemburg_eu_driver's_license_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_luxemburg_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_luxemburg_eu_driver's_license_number` wurde gefunden. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -8616,14 +8617,14 @@ Diese vertrauliche Informationstyp Entität steht nur im vertraulichen Informati
     
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_luxemburg_eu_national_id_card` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_luxemburg_eu_national_id_card` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_luxemburg_eu_national_id_card` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_luxemburg_eu_national_id_card` wurde gefunden. 
     
 ```xml
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -8678,8 +8679,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_nation_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_nation_eu_passport_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_nation_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_nation_eu_passport_number` wurde gefunden. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -8719,12 +8720,12 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_luxemburg_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_luxemburg_eu_tax_file_number` wurde gefunden. 
+- Die  `Func_luxemburg_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_luxemburg_eu_tax_file_number` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_luxemburg_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_luxemburg_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -8874,8 +8875,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_malta_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_malta_eu_driver's_license_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_malta_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_malta_eu_driver's_license_number` wurde gefunden. 
     
 ```xml
 <!-- EU Driver's License Number -->
@@ -8921,18 +8922,18 @@ Sieben Ziffern, gefolgt von einem Buchstaben:
     
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_malta_eu_national_id_card` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_malta_eu_national_id_card` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_malta_eu_national_id_card` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_malta_eu_national_id_card` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_malta_eu_national_id_card` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Der reguläre Ausdruck  `Regex_malta_eu_national_id_card` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
  <!--Malta national identification number  -->
@@ -8986,8 +8987,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_malta_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_malta_eu_passport_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_malta_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_malta_eu_passport_number` wurde gefunden. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -9030,18 +9031,18 @@ Nicht-maltesische Staatsangehörige und maltesische Entitäten: 9 Ziffern
     
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_malta_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_malta_eu_tax_file_number` wurde gefunden. 
+- Die  `Func_malta_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_malta_eu_tax_file_number` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_malta_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_malta_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -9175,8 +9176,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_netherlands_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_netherlands_eu_driver's_license_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_netherlands_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_netherlands_eu_driver's_license_number` wurde gefunden. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -9227,12 +9228,12 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_netherlands_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_netherlands_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
 - Ein Schlüsselwort aus wurde gefunden.
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_netherlands_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_netherlands_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
  <!--Netherland national identification number  -->
@@ -9286,14 +9287,14 @@ Neun Buchstaben oder Ziffern
   
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_netherlands_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_netherlands_eu_passport_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_netherlands_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_netherlands_eu_passport_number` wurde gefunden. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -9336,12 +9337,12 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_netherlands_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_netherlands_eu_tax_file_number` wurde gefunden. 
+- Die  `Func_netherlands_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_netherlands_eu_tax_file_number` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_netherlands_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_netherlands_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -9550,7 +9551,7 @@ Diese Typen Entität für vertrauliche Informationen ist nur im vertraulichen In
 - Ein Schrägstrich 
 - Zwei Ziffern
 - Ein Schrägstrich 
-- Sieben Ziffern 
+- Sieben Ziffern
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -9560,8 +9561,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_poland_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_poland_eu_driver's_license_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_poland_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_poland_eu_driver's_license_number` wurde gefunden. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -9741,12 +9742,12 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_poland_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_poland_eu_tax_file_number` wurde gefunden. 
+- Die  `Func_poland_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_poland_eu_tax_file_number` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_poland_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_poland_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -9877,8 +9878,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_portugal_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_portugal_eu_driver's_license_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_portugal_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_portugal_eu_driver's_license_number` wurde gefunden. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -9930,8 +9931,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_portugal_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_portugal_eu_passport_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_portugal_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_portugal_eu_passport_number` wurde gefunden. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -9968,12 +9969,12 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_portugal_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_portugal_eu_tax_file_number` wurde gefunden. 
+- Die  `Func_portugal_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_portugal_eu_tax_file_number` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_portugal_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_portugal_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -10039,8 +10040,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_romania_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_romania_eu_driver's_license_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_romania_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_romania_eu_driver's_license_number` wurde gefunden. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -10089,12 +10090,12 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_romania_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_romania_eu_national_id_card` wurde gefunden. 
+- Die  `Func_romania_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_romania_eu_national_id_card` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_romania_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_romania_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
  <!--Romania national identification number  -->
@@ -10183,8 +10184,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_romania_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_romania_eu_passport_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_romania_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_romania_eu_passport_number` wurde gefunden. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -10218,14 +10219,14 @@ Diese vertrauliche Informationstyp Entität ist nur im vertraulichen Information
   
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_romania_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_romania_eu_tax_file_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_romania_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_romania_eu_tax_file_number` wurde gefunden. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -10412,8 +10413,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_slovakia_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_slovakia_eu_driver's_license_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_slovakia_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_slovakia_eu_driver's_license_number` wurde gefunden. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -10451,12 +10452,12 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_slovakia_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_slovakia_eu_national_id_card` wurde gefunden. 
+- Die  `Func_slovakia_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_slovakia_eu_national_id_card` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_slovakia_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_slovakia_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
  <!-- Slovakia national identification number -->
@@ -10542,8 +10543,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_slovakia_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_slovakia_eu_passport_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_slovakia_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_slovakia_eu_passport_number` wurde gefunden. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -10577,14 +10578,14 @@ Diese vertrauliche Informationstyp Entität ist nur im vertraulichen Information
   
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_slovakia_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_slovakia_eu_tax_file_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_slovakia_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_slovakia_eu_tax_file_number` wurde gefunden. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -10668,8 +10669,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_slovenia_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_slovenia_eu_driver's_license_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_slovenia_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_slovenia_eu_driver's_license_number` wurde gefunden. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -10723,12 +10724,12 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_slovenia_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_slovenia_eu_national_id_card` wurde gefunden. 
+- Die  `Func_slovenia_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_slovenia_eu_national_id_card` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_slovenia_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_slovenia_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
  <!-- Slovenia national identification number -->
@@ -10798,8 +10799,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_slovenia_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_slovenia_eu_passport_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_slovenia_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_slovenia_eu_passport_number` wurde gefunden. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -10836,12 +10837,12 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_slovenia_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_slovenia_eu_tax_file_number` wurde gefunden. 
+- Die  `Func_slovenia_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_slovenia_eu_tax_file_number` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_slovenia_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_slovenia_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -11005,8 +11006,8 @@ Ja
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_spain_eu_driver's_license_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_spain_eu_driver's_license_number` wurde gefunden. 
+- Die  `Func_spain_eu_driver's_license_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_spain_eu_driver's_license_number` wurde gefunden. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -11073,14 +11074,14 @@ Sieben Ziffern, gefolgt von einem Zeichen
     
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_spain_eu_national_id_card` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_spain_eu_national_id_card"` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_spain_eu_national_id_card` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_spain_eu_national_id_card"` wurde gefunden. 
     
 ```xml
 <!-- Spain national identification number -->
@@ -11136,14 +11137,14 @@ Eine Kombination aus Buchstaben und Zahlen aus acht oder neun Zeichen:
     
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht anwendbar
+Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_spain_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_spain_eu_passport_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_spain_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_spain_eu_passport_number` wurde gefunden. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -11255,12 +11256,12 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_spain_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_spain_eu_tax_file_number` wurde gefunden. 
+- Die  `Func_spain_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_spain_eu_tax_file_number` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_spain_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_spain_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -11409,8 +11410,8 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_sweden_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_sweden_eu_driver's_license_number` wurde gefunden. 
+- Der reguläre Ausdruck  `Regex_sweden_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_sweden_eu_driver's_license_number` wurde gefunden. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -11574,12 +11575,12 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_sweden_eu_ssn_or_equivalent` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_sweden_eu_ssn_or_equivalent` wurde gefunden. 
+- Die  `Func_sweden_eu_ssn_or_equivalent` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_sweden_eu_ssn_or_equivalent` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_sweden_eu_ssn_or_equivalent` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_sweden_eu_ssn_or_equivalent` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -11638,12 +11639,12 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_sweden_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus `Keywords_sweden_eu_tax_file_number` wurde gefunden. 
+- Die  `Func_sweden_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_sweden_eu_tax_file_number` wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_sweden_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_sweden_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -11739,7 +11740,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - swift routing number 
 - bic number 
 - bic code 
-- BIC\# 
+- BIC \# 
 - BIC\# 
 - bank identifier code 
 - 標準化 9362 
@@ -11751,12 +11752,12 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - BICコード 
 - 銀行識別コードのための国際組織 
 - Organisation internationale de normalisation 9362 
-- rapide\# 
+- rapide \# 
 - code SWIFT 
 - le numéro de swift 
 - swift numéro d'acheminement 
 - le numéro BIC 
-- \#BIC 
+- \# BIC 
 - code identificateur de banque 
    
 ## <a name="taiwan-national-identification-number"></a>Taiwan nationale Identifikationsnummer
@@ -12280,9 +12281,9 @@ Ja
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die `Func_uk_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die  `Func_uk_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_uk_eu_tax_file_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_uk_eu_tax_file_number` wurde gefunden. 
     
 ```
  <!-- EU Tax File Number -->

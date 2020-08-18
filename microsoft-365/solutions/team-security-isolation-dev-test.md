@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 08/14/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: Konfigurieren Sie Sicherheit und Infrastruktur, die es Ihren Mitarbeitern ermöglicht, von überall und jederzeit remote zu arbeiten.
-ms.openlocfilehash: c8d56d3dd6e2c46db6ef1938dee8383b56e8966c
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 62361126ad0b843fd909b98807eeb186f13e75bb
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522253"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778339"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>Konfigurieren eines Teams mit Sicherheitsisolierung in einer Entwicklungs-/Testumgebung
 
@@ -33,15 +33,15 @@ Verwenden Sie diese Entwicklungs-/Testumgebung zum Experimentieren und zur Feina
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Phase 1: Erstellen Ihrer Microsoft 365 Enterprise-Testumgebung
 
-Wenn Sie vertrauliche und streng vertrauliche Teams auf einfache Weise mit Minimalanforderungen testen möchten, befolgen Sie die Anweisungen unter [Einfache Basiskonfiguration](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise).
+Wenn Sie vertrauliche und streng vertrauliche Teams auf einfache Weise mit Minimalanforderungen testen möchten, befolgen Sie die Anweisungen unter [Einfache Basiskonfiguration](../enterprise/lightweight-base-configuration-microsoft-365-enterprise.md).
 
-Wenn Sie vertrauliche und hochgradig vertrauliche Teams in einem simulierten Unternehmen testen möchten, befolgen Sie die Anweisungen unter [Kennworthashsynchronisierung](https://docs.microsoft.com/microsoft-365/enterprise/password-hash-sync-m365-ent-test-environment).
+Wenn Sie vertrauliche und hochgradig vertrauliche Teams in einem simulierten Unternehmen testen möchten, befolgen Sie die Anweisungen unter [Kennworthashsynchronisierung](../enterprise/password-hash-sync-m365-ent-test-environment.md).
 
 >[!Note]
->Für das Testen eines Teams mit Sicherheitsisolation ist keine simulierte Unternehmenstestumgebung erforderlich, die ein simuliertes Intranet, das mit dem Internet verbunden ist, und die Verzeichnissynchronisierung für eine Active Directory Domain Services-Gesamtstruktur umfasst. Dies wird hier als Option bereitgestellt, damit Sie ein Team mit Sicherheitsisolation testen und damit in einer Umgebung, die eine typische Organisation darstellt, experimentieren können.
+>Das Testen eines Teams mit Sicherheitsisolierung erfordert nicht die simulierte Unternehmenstestumgebung, die ein simuliertes, mit dem Internet verbundenes Intranet und die Verzeichnissynchronisierung für eine Active Directory Domain Services (AD DS)-Struktur umfasst. Dies wird hier als Option bereitgestellt, damit Sie ein Team mit Sicherheitsisolation testen und damit in einer Umgebung, die eine typische Organisation darstellt, experimentieren können.
 >
     
-## <a name="phase-2-create-and-configure-your-azure-active-directory-ad-group-and-users"></a>Phase 2: Erstellen und Konfigurieren der Azure Active Directory(AD)-Gruppe und -Benutzer
+## <a name="phase-2-create-and-configure-your-azure-active-directory-azure-ad-group-and-users"></a>Phase 2: Azure Active Directory (Azure AD)-Gruppe und -Benutzende erstellen und konfigurieren
 
 In dieser Phase erstellen und konfigurieren Sie eine Azure AD-Gruppe und -Benutzer für eine fiktive Organisation.
   
@@ -63,7 +63,7 @@ Erstellen Sie zunächst eine Sicherheitsgruppe mit dem Azure-Portal.
       
 5. Klicken Sie auf **Erstellen**, und schließen Sie dann das Blatt **Gruppe**.
     
-Als Nächstes, konfigurieren Sie die automatische Lizenzierung so, dass den Mitgliedern der neuen **C-Suite**-Gruppe automatisch eine Microsoft 365 E5-Lizenz zugewiesen wird.
+Konfigurieren Sie als Nächstes die automatische Lizenzierung so, dass den Mitgliedern der neuen **C-Suite**-Gruppe automatisch eine Microsoft 365 E5-Lizenz zugewiesen wird.
   
 1. Klicken Sie im Azure-Portal auf **Azure Active Directory > Lizenzen > Alle Produkte**.
     
@@ -77,7 +77,7 @@ Als Nächstes, konfigurieren Sie die automatische Lizenzierung so, dass den Mitg
     
 6. Schließen Sie die Registerkarte für das Azure Portal in Ihrem Browser.
     
-Als Nächstes, [stellen Sie eine Verbindung mit dem Azure Active Directory PowerShell für Graph-Modul her](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Als Nächstes, [stellen Sie eine Verbindung mit dem Azure Active Directory PowerShell für Graph-Modul her](../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 Geben Sie den Namen Ihrer Organisation, Ihren Standort und ein gemeinsames Kennwort ein, und führen Sie dann die folgenden Befehle über die PowerShell-Eingabeaufforderung oder in der ISE-Umgebung (Integrated Script Environment) aus, um neue Benutzerkonten zu erstellen und sie zu der C-Suite-Gruppe hinzuzufügen:
   
@@ -115,7 +115,7 @@ Gehen Sie folgendermaßen vor, um sicherzustellen, dass die gruppenbasierte Lize
 
 In dieser Phase erstellen und konfigurieren Sie ein Team mit Sicherheitsisolierung, in dem die Mitglieder des leitenden Führungsteams an der Unternehmensstrategie mitarbeiten.
 
-Aktivieren Sie zunächst Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Office 365-Gruppen und SharePoint-Websites, bevor Sie mit den Schritten in [diesem Artikel](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) fortfahren.
+Aktivieren Sie zunächst Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Office 365-Gruppen und SharePoint-Websites, bevor Sie mit den Schritten in [diesem Artikel](../compliance/sensitivity-labels-teams-groups-sites.md) fortfahren.
 
 Als Nächstes, erstellen Sie das Team:
 
@@ -126,9 +126,15 @@ Als Nächstes, erstellen Sie das Team:
 5. Klicken Sie unter **Datenschutz** auf **Privat**.
 6. Geben Sie **Unternehmensstrategie** ein, und klicken Sie dann auf **Erstellen** > **Schließen**.
 
-Als Nächstes, müssen Sie eine Vertraulichkeitsbezeichnung mit den folgenden Einstellungen konfigurieren:
+Beschränken Sie als nächstes die Schaffung privater Kanäle auf die Eigentümer der Unternehmensstrategie-Gruppe.
 
-- Der Name der Bezeichnung lautet „Unternehmensstrategie“.
+1. Klicken Sie im Team auf **Weitere Optionen** und dann auf **Team verwalten**.
+2. Erweitern Sie auf der Registerkarte **Einstellungen** den Eintrag **Mitgliedsberechtigungen**.
+3. Deaktivieren Sie das Kontrollkästchen **Mitglieder können private Kanäle erstellen**.
+
+Konfigurieren Sie als nächstes eine Vertraulichkeitsbezeichnung mit den folgenden Einstellungen:
+
+- Der Name lautet "Unternehmensstrategie".
 - Die Verschlüsselung ist aktiviert.
 - Die Gruppe „Unternehmensstrategie“ verfügt über Berechtigungen für die gemeinsame Dokumenterstellung.
 
@@ -199,10 +205,6 @@ Hier ist die resultierende Konfiguration für das Unternehmensstrategieteam.
 
 ![Konfiguration für das isolierte Team „Unternehmensstrategie“](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png)
 
-Dateien im Team können von den Mitgliedern der Gruppe „Unternehmensstrategie“ mit der Vertraulichkeitsbezeichnung „Unternehmensstrategie“ versehen werden. Hier ein Beispiel.
-
-![Beispiel einer Datei mit der Vertraulichkeitsbezeichnung „Unternehmensstrategie“](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config-example.png)
- 
 ## <a name="next-step"></a>Nächster Schritt
 
-Wenn Sie für den Produktionseinsatz bereit sind, finden Sie unter [Konfigurieren eines Teams mit Sicherheitsisolierung](secure-teams-security-isolation.md) detaillierte Informationen zur Konfiguration.
+Wenn Sie für den Produktionseinsatz bereit sind, lesen Sie diese [Konfigurationsanweisungen](secure-teams-security-isolation.md).

@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie den Kundenschlüssel für Microsoft 365 für Exchange Online-, Skype for Business-, SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Dateien einrichten.
-ms.openlocfilehash: 158096216974691bf0caff93a1c95db54b92f6b1
-ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
+ms.openlocfilehash: 346b723a4741e18d161122edecf985a3fb8c7845
+ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44810991"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46794220"
 ---
 # <a name="set-up-customer-key"></a>Einrichten des Kunden Schlüssels
 
@@ -132,12 +132,12 @@ Bevor Sie sich an das Microsoft 365-Team wenden, müssen Sie für jedes Azure-Ab
 
    ```powershell
    Set-AzContext -SubscriptionId <SubscriptionId>
-   Register-AzProviderFeature -FeatureName mandatoryRetentionPeriodEnabled -ProviderNamespace Microsoft.KeyVault
+   Register-AzProviderFeature -FeatureName mandatoryRetentionPeriodEnabled -ProviderNamespace Microsoft.Resources
    ```
 
 3. Wenden Sie sich an Microsoft, damit der Prozess abgeschlossen wird. Um mit dem SharePoint- und OneDrive for Business-Team in Verbindung zu treten, wenden Sie sich bitte an [spock@microsoft.com](mailto:spock@microsoft.com). Für Exchange Online und Skype for Business wenden Sie sich bitte an [exock@microsoft.com](mailto:exock@microsoft.com). Teilen Sie uns in Ihrem E-Mail bitte Folgendes mit:
 
-   **Betreff**: Kundenschlüssel für\<*Your tenant's fully-qualified domain name*\>
+   **Betreff**: Kundenschlüssel für \<*Your tenant's fully-qualified domain name*\>
 
    **Textkörper**: Abonnements-IDs, für die Sie einen obligatorischen Aufbewahrungszeitraum verbindlich festlegen möchten.
    Die Ausgabe von Get-AzProviderFeature für jedes Abonnement.
@@ -215,7 +215,7 @@ Sie müssen für jeden Schlüsseltresor entsprechend der von Ihnen gewählten Im
 
     - Für Exchange Online und Skype for Business ersetzen Sie bitte die *Office 365 App-ID* durch `00000002-0000-0ff1-ce00-000000000000`
 
-    - Ersetzen Sie für SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Dateien *Office 365* -ID durch`00000003-0000-0ff1-ce00-000000000000`
+    - Ersetzen Sie für SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Dateien  *Office 365* -ID durch `00000003-0000-0ff1-ce00-000000000000`
 
   Beispiel: Festlegen von Berechtigungen für Exchange Online und Skype for Business:
 
@@ -273,19 +273,19 @@ Dabei gilt:
   
 - Wenn Sie den Schlüssel mit einem HSM schützen möchten, stellen Sie sicher, dass Sie **HSM** als Wert des Parameters _Destination_ angeben, andernfalls geben Sie **Software**an.
 
-Beispiele:
+Beispiel:
   
 ```powershell
 Add-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-VaultA1-Key001 -Destination Software -KeyOps wrapKey,unwrapKey
 ```
 
-Wenn Sie einen Schlüssel direkt in ihren Schlüsseltresor importieren möchten, müssen Sie über ein Thales-nShield-Hardware-Sicherheitsmodul verfügen.
+Wenn Sie einen Schlüssel direkt in ihren schlüsseltresor importieren möchten, benötigen Sie ein nCipher nShield-Hardware Sicherheitsmodul.
   
-Einige Organisationen bevorzugen diese Vorgehensweise, um die Herkunft Ihrer Schlüssel festzulegen. Außerdem bietet diese Methode folgendes Features:
+Einige Organisationen bevorzugen diesen Ansatz, um die Herkunft Ihrer Schlüssel festzulegen, und dann bietet diese Methode auch Folgendes:
   
-- Der für den Import verwendete Werkzeugsatz umfasst die Beglaubigung von Thales, dass der Schlüsselaustauschschlüssel (KEK), der zum Verschlüsseln des von Ihnen generierten Schlüssels verwendet wird, nicht exportierbar ist und in einem echten HSM generiert wird, das von Thales hergestellt wurde.
+- Das für den Import verwendete Toolset umfasst die Bescheinigung von nCipher, dass der Schlüsselaustauschschlüssel (KEK), der zum Verschlüsseln des von Ihnen generierten Schlüssels verwendet wird, nicht exportierbar ist und in einem echten HSM generiert wird, das von nCipher hergestellt wurde.
 
-- Das Toolset umfasst die Bestätigung von Thales, dass die Azure Key Vault Security-Welt auch auf einem echten HSM von Thales generiert wurde. Diese Bescheinigung dient für Sie als Nachweis, dass Microsoft ebenfalls Original-Thales-Hardware verwendet.
+- Das Toolset umfasst die Bestätigung von nCipher, dass die Azure Key Vault Security-Welt auch auf einem echten HSM erstellt wurde, das von nCipher hergestellt wurde. Diese Bestätigung beweist, dass Microsoft auch echte nCipher-Hardware verwendet.
 
 Wenden Sie sich an Ihr Sicherheitsteam, um festzustellen, ob die vorstehenden Bescheinigungen erforderlich sind. Detaillierte Anweisungen zum Erstellen eines lokalen Schlüssels und zum Importieren in Ihren Schlüsseltresor finden Sie unter [Generieren und Übertragen von HSM-geschützten Schlüsseln für Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/). Folgen Sie den Azure-Anweisungen, um in jedem Schlüsseltresor einen Schlüssel zu erstellen.
   
@@ -356,7 +356,7 @@ Beispielsweise für SharePoint Online und OneDrive for Business:
   
 ```powershell
 Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365SP-NA-VaultA1
--PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName TBD
+-PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName 00000003-0000-0ff1-ce00-000000000000
 ```
 
 Um zu überprüfen, ob für Ihre Schlüssel ein Ablaufdatum festgelegt wurde, führen Sie das Cmdlet [Get-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvault) wie folgt aus:
@@ -502,7 +502,7 @@ Um eine Datenverschlüsselungsrichtlinie (DEP) zu erstellen, müssen Sie mithilf
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-- [Dienst Verschlüsselung mit Kundenschlüssel](customer-key-overview.md)
+- [Dienstverschlüsselung mit dem Kundenschlüssel](customer-key-overview.md)
 
 - [Verwalten des Kunden Schlüssels](customer-key-manage.md)
 
