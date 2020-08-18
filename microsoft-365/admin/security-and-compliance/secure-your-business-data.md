@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Schützen Sie Ihre geschäftlichen e-Mails und Daten vor Cyber-Bedrohungen, einschließlich Ransomware, Phishing und böswilligen Anlagen. '
-ms.openlocfilehash: cffc922aec3ca46543b5b1608fa37e6fa0acfa23
-ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
+ms.openlocfilehash: c5ae75bea68f56cb1ba028500a1f206603332717
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45138290"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778302"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Die 10 wichtigsten Möglichkeiten zum Sichern von Microsoft 365 for Business-Plänen
 
@@ -43,9 +43,9 @@ Microsoft empfiehlt, die in der folgenden Tabelle aufgeführten Aufgaben abzusch
   
 ||**Aufgabe**|**Microsoft 365 Business Standard**|**Microsoft 365 Business Premium**|
 |:-----|:-----|:-----|:-----|
-|1   <br/> |[Einrichten der mehrstufigen Authentifizierung](secure-your-business-data.md#setup) <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|2   <br/> |[Schulen der Benutzer](secure-your-business-data.md#train) <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|3   <br/> |[Verwenden dedizierter Administratorkonten](secure-your-business-data.md#admin) <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|1  <br/> |[Einrichten der mehrstufigen Authentifizierung](secure-your-business-data.md#setup) <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|2  <br/> |[Schulen der Benutzer](secure-your-business-data.md#train) <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|3  <br/> |[Verwenden dedizierter Administratorkonten](secure-your-business-data.md#admin) <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |4   <br/> |[Erhöhen des Schutzniveaus gegen Schadsoftware in Mail](secure-your-business-data.md#malware) <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |5   <br/> |[Schutz vor Ransomware](secure-your-business-data.md#ransomware) <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |6   <br/> |[Beenden der automatischen Weiterleitung für e-Mail](secure-your-business-data.md#forwarding) <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
@@ -66,17 +66,19 @@ Die Verwendung der mehrstufigen Authentifizierung ist eine der einfachsten und e
 Fügen Sie für Unternehmen, die Microsoft 365 verwenden, eine Einstellung hinzu, mit der sich Ihre Benutzer mit mehrstufiger Authentifizierung anmelden müssen. Wenn Sie diese Änderung vornehmen, werden die Benutzer aufgefordert, Ihr Mobiltelefon für die zweistufige Authentifizierung einzurichten, wenn Sie sich das nächste Mal anmelden.
 Ein Schulungsvideo zur Einrichtung von MFA und zur Fertigstellung von Benutzern finden Sie unter [Einrichten von MFA](https://support.microsoft.com/office/e12187b8-216a-4490-9e3b-df34a06fb787) und [Benutzer einrichten](https://support.microsoft.com/office/a32541df-079c-420d-9395-9d59354f7225).
   
-So richten Sie die mehrstufige Authentifizierung ein:
+Um die mehrstufige Authentifizierung einzurichten, aktivieren Sie Sicherheitsstandards:
 
-1. Wählen Sie im [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=834822)die Option **Users**  >  **Active Users**aus.
+In den meisten Organisationen bieten Sicherheitsstandards ein gutes Maß an zusätzlicher Anmeldesicherheit. Weitere Informationen hierzu finden Sie unter [Was sind Sicherheitsstandards?](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
-2. Wählen Sie im Abschnitt **aktive Benutzer** die Option **mehrstufige Authentifizierung**aus.
+Wenn Ihr Abonnement neu ist, sind die Sicherheitsstandards möglicherweise bereits automatisch für Sie aktiviert.
 
-3. Wählen Sie auf der Seite mehrstufige **Authentifizierung** die Option **Benutzer** aus, wenn Sie dies für einen Benutzer aktivieren, oder Sie können eine **Massenaktualisierung**durchführen.
+Die Standardsicherheitseinstellungen können Sie im Azure-Portal im Bereich **Einstellungen** für Active Directory (Azure AD) aktivieren oder deaktivieren.
 
-4. Wählen Sie unter **Quick Steps**die Option **enable** aus.
-
-5. Wählen Sie im Popupfenster die **Option mehrstufige Authentifizierung aktivieren**aus.
+1.  Melden Sie sich mit den Anmeldeinformationen des globalen Administrators beim [Microsoft 365 Admin Center](https://admin.microsoft.com) an.
+2.  Wählen Sie im linken Navigationsbereich **Alle anzeigen** und dann unter **Admin Center** die Option **Azure Active Directory** aus.
+3. Im **Azure Active Directory Admin Center** wählen Sie dann **Azure Active Directory** > **Eigenschaften** aus.
+3.  Wählen Sie unten auf der Seite **Sicherheitsstandards verwalten** aus.
+4.  Wählen Sie **Ja** aus, um die zu aktivieren oder **Nein**, um die Sicherheitsstandards zu deaktivieren. Klicken Sie anschließend auf **Speichern**.
 
 
 Nachdem Sie die mehrstufige Authentifizierung für Ihre Organisation eingerichtet haben, müssen die Benutzer auf ihren Geräten die Prüfung in zwei Schritten einrichten. Weitere Informationen finden Sie unter [Einrichten der Überprüfung in zwei Schritten für Microsoft 365](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
@@ -155,7 +157,7 @@ Um eine e-Mail-Transportregel zu erstellen, zeigen Sie ein [kurzes Schulungsvide
     
 5. Wenden Sie die Einstellungen in der folgenden Tabelle für jede Regel an. Lassen Sie die restlichen Einstellungen standardmäßig unverändert, es sei denn, Sie möchten diese ändern.
     
-6. Wählen Sie **Save** aus.
+6. Wählen Sie **Speichern** aus.
     
 |**Einstellung**|**Benutzer vor dem Öffnen von Anlagen von Office-Dateien warnen**|**Blockieren von Dateitypen, die Ransomware oder anderen bösartigen Code enthalten könnten**|
 |:-----|:-----|:-----|
@@ -191,7 +193,7 @@ So erstellen Sie eine e-Mail-Transportregel:
     
 5. Wenden Sie die Einstellungen in der folgenden Tabelle an. Lassen Sie die restlichen Einstellungen standardmäßig unverändert, es sei denn, Sie möchten diese ändern.
     
-6. Wählen Sie **Save** aus.
+6. Wählen Sie **Speichern** aus.
     
 |**Einstellung**|**Ablehnen automatischer Weiterleitung von e-Mails an externe Domänen**|
 |:-----|:-----|
@@ -331,7 +333,7 @@ So ändern Sie die Standardrichtlinie:
 
 3. Wählen Sie unter **Einstellungen für Inhalte mit Ausnahme von e-Mail**die Option **Office 365 Anwendungen**aus, **verfolgen Sie nicht nach, wann Benutzer auf sichere Links klicken**, und **lassen Sie keine Benutzer durch sichere Links zur ursprünglichen URL klicken**.
     
-4. Wählen Sie **Save** aus. 
+4. Wählen Sie **Speichern** aus. 
     
 So erstellen Sie eine neue Richtlinie, die für alle Empfänger in Ihrer Domäne vorgesehen ist:
   
@@ -339,7 +341,7 @@ So erstellen Sie eine neue Richtlinie, die für alle Empfänger in Ihrer Domäne
     
 2. Wenden Sie die in der folgenden Tabelle aufgeführten Einstellungen an.
     
-3. Wählen Sie **Save** aus. 
+3. Wählen Sie **Speichern** aus. 
     
 |**Einstellung oder Option**|**Empfohlene Einstellung** <br/>|
 |:-----|:-----|

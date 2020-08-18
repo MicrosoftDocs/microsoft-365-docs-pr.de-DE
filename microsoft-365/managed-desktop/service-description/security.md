@@ -1,24 +1,27 @@
 ---
-title: Sicherheit in Microsoft Managed Desktop
+title: Sicherheitstechnologien in Microsoft Managed Desktop
 description: ''
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
-ms.date: 09/24/2018
-ms.openlocfilehash: 8bfd71c4a143dee54ae006c8c54d711a8785480f
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.collection: M365-modern-desktop
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: debd21a975ce209677bdd054952e31f34260e405
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470489"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778256"
 ---
-# <a name="security-in-microsoft-managed-desktop"></a>Sicherheit in Microsoft Managed Desktop
+# <a name="security-technologies-in-microsoft-managed-desktop"></a>Sicherheitstechnologien in Microsoft Managed Desktop
 
 <!--Security, also Onboarding doc: data handling/store, privileged account access -->
 
-Microsoft Managed Desktop verwendet mehrere Microsoft-Technologien, um die Sicherung verwalteter Geräte und Daten zu unterstützen. Insbesondere gilt: 
+Microsoft Managed Desktop verwendet mehrere Microsoft-Technologien, um die Sicherung verwalteter Geräte und Daten zu unterstützen. Darüber hinaus verwendet das Microsoft Managed Desktop Security Operations Center eine Vielzahl von [Prozessen](security-operations.md) in Verbindung mit diesen Technologien.
 
+Insbesondere gilt: 
 
 - [Gerätesicherheit](#device-security) – Sicherheit und Schutz auf Microsoft Managed Desktop-Geräten
 - [Identitäts-und Zugriffsverwaltung](#identity-and-access-management) – Verwalten der sicheren Verwendung von Geräten über Azure Active Directory Identitätsdienste
