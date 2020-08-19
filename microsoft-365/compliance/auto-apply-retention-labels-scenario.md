@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Die Verwendung von Aufbewahrungsbezeichnungen zur Verwaltung des Lebenszyklus von Dokumenten in SharePoint, mithilfe von Metadaten zur Klassifizierung von Inhalten, automatisch angewendeten Beschriftungen und ereignisbasierter Aufbewahrung zum Start der Aufbewahrungsdauer.
-ms.openlocfilehash: 250bf182c26616a3a2f9253471469d2cecbd8d2b
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 8aed846c8c95aad737a9dfd56e4df7533e57a329
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560668"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778545"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>Verwenden von Aufbewahrungsbezeichnungen zur Verwaltung des Lebenszyklus von in SharePoint gespeicherten Dokumenten
 
@@ -107,7 +107,7 @@ Hier ist der [Aktenplan](file-plan-manager.md) für die Aufbewahrungsbezeichnung
 
 - **Aufbewahrungsdauer:** 5 Jahre (1.825 Tage).
 
-- **Datensatzbezeichnung**: Konfigurieren Sie die Aufbewahrungsbezeichnung, um Inhalte als [*Datensatz*](records.md) zu kennzeichnen. (Dokumente, die als *Datensatz* klassifiziert sind, können von Benutzern nicht geändert oder gelöscht werden.)
+- **Datensatzbezeichnung**: Konfigurieren Sie die Aufbewahrungsbezeichnung, um Inhalte als [Datensatz](records-management.md#records) zu kennzeichnen. (Dokumente, die als *Datensatz* klassifiziert sind, können von Benutzern nicht geändert oder gelöscht werden.)
 
 - **Dateiplandeskriptoren:** (Zur Vereinfachung des Szenarios werden keine Dateideskriptoren bereitgestellt)
 
