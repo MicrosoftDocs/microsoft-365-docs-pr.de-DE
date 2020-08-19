@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Haben Sie eine Frage zur Funktionsweise der neuen Nachrichtenschutzfunktionen? Hier finden Sie eine Antwort.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5368133877921d8f5fdfa2e3de2e610c545f57ff
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 927b81c3a1ce049f1a2427bbbf1d306608be35cb
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818678"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46798187"
 ---
 # <a name="message-encryption-faq"></a>Häufig gestellte Fragen zur Nachrichtenverschlüsselung
 
@@ -70,7 +70,7 @@ Die neuen Funktionen für Office 365 Nachrichtenverschlüsselung stellen eine We
   
 **Vergleich von Legacy-OM-, IRM-und neuen OM-Funktionen**
 
-|**Funktion**|**Frühere Versionen von OM**|**IRM**|**Neue OM-Funktionen**|
+|**Funktionalität**|**Frühere Versionen von OM**|**IRM**|**Neue OM-Funktionen**|
 |:-----|:-----|:-----|:-----|
 |**Senden einer verschlüsselten e-Mail**|Nur über Exchange-Nachrichtenfluss Regeln|Von Outlook für Windows, Outlook für Mac oder Outlook im Internet initiierter Endbenutzer; oder über Exchange-Nachrichtenfluss Regeln|Von Outlook für Windows, Outlook für Mac oder Outlook im Internet initiierter Endbenutzer; oder über Nachrichtenfluss Regeln|
 |**Rechteverwaltung**|-|Option und benutzerdefinierte Vorlagen nicht weiterleiten|Option "nicht weiterleiten", Option "nur verschlüsseln", Standard-und benutzerdefinierte Vorlagen|
@@ -102,11 +102,15 @@ Sie können geschützte Nachrichten aus Outlook 2016 und Outlook 2013 für Windo
 
 Microsoft 365-Benutzer können Outlook für Windows und Mac (2013 und 2016), Outlook im Web und Outlook Mobile (Android und IOS) lesen und darauf antworten. Sie können auch den IOS-systemeigenen e-Mail-Client verwenden, wenn Ihre Organisation dies zulässt. Wenn Sie kein Microsoft 365-Benutzer sind, können Sie verschlüsselte Nachrichten im Web über Ihren Webbrowser lesen und beantworten.
   
+## <a name="is-there-a-size-limit-for-messages-you-can-send-with-ome"></a>Gibt es eine Größenbeschränkung für Nachrichten, die Sie mit OM senden können?
+
+Ja. Die maximale Nachrichtengröße, die Sie mit OM senden können, einschließlich Anlagen, beträgt 30 MB.
+
 ## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>Welche Dateitypen werden als Anlagen in geschützten e-Mail-Nachrichten unterstützt? Erben Anlagen die Schutzrichtlinien, die geschützten e-Mails zugeordnet sind?
 
-Sie können einen beliebigen Dateityp an eine geschützte e-Mail-Nachricht anfügen, jedoch werden Schutzrichtlinien nur auf die Dateiformate angewendet, die in Dateitypen erwähnt werden, [die vom Azure Information Protection-Client unterstützt](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types)werden.
-  
-Wenn ein Dateiformat unterstützt wird, beispielsweise eine Word-, Excel-oder PowerPoint-Datei, ist die Datei immer geschützt, auch wenn die Anlage vom Empfänger heruntergeladen wurde. Wenn beispielsweise eine Anlage durch do not Forward geschützt ist und der ursprüngliche Empfänger die Anlage an einen neuen Empfänger herunterlädt und leitet, kann der neue Empfänger die geschützte Datei nicht öffnen.
+Sie können einen beliebigen Dateityp an eine geschützte e-Mail anfügen. Mit einer Ausnahme werden Schutzrichtlinien nur auf die Dateiformate angewendet, die in [Dateitypen erwähnt werden, die vom Azure Information Protection-Client unterstützt](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types)werden. OM unterstützt nicht die 97-2003-Versionen der folgenden Office-Programme: Word (. doc), Excel (. xls) und PowerPoint (PPT).
+
+Wenn ein Dateiformat unterstützt wird, beispielsweise eine Word-, Excel-oder PowerPoint-Datei, ist die Datei immer geschützt, auch wenn die Anlage vom Empfänger heruntergeladen wurde. Angenommen, eine Anlage ist durch "nicht weiterleiten" geschützt. Der ursprüngliche Empfänger lädt die Datei herunter, erstellt eine Nachricht an einen neuen Empfänger und fügt die Datei an. Wenn der neue Empfänger die Datei empfängt, kann der Empfänger die geschützte Datei nicht öffnen.
   
 ## <a name="are-pdf-file-attachments-supported"></a>Werden PDF-Dateianlagen unterstützt?
 
@@ -188,9 +192,19 @@ In der folgenden Tabelle sind die unterstützten Clients für freigegebene Postf
 
 Derzeit gibt es zwei bekannte Einschränkungen:
 
-- Wir unterstützen nur den Zugriff, der durch direkte Benutzerzuweisung auf das freigegebene Postfach bereitgestellt wird. Die Zuweisung über eine e-Mail-aktivierte Sicherheitsgruppe wird nicht unterstützt.
-
 - Sie können keine Anlagen in e-Mails öffnen, die Sie auf mobilen Geräten mithilfe von Outlook Mobile empfangen.
+
+- Die Zuweisung über eine e-Mail-aktivierte Sicherheitsgruppe wird nicht unterstützt. Wir unterstützen nur den Zugriff, der durch direkte Benutzerzuweisung auf das freigegebene Postfach bereitgestellt wird, und dass die automatische Zuordnung für Exchange Online aktiviert ist. Die automatische Zuordnung ist für Exchange Online standardmäßig aktiviert.
+
+**So weisen Sie dem freigegebenen Postfach einen Benutzer zu**
+
+1. Stellen [Sie mithilfe von Remote-PowerShell eine Verbindung zu Exchange Online her](https://technet.microsoft.com/library/jj984289?v=exchg.150%29.aspx).
+
+2. Führen Sie das Add-MailboxPermission-Cmdlet mit dem Parameter Automapping aus. In diesem Beispiel werden Ayla Vollzugriffsberechtigungen für ein Support Postfach erteilt.
+
+   ```powershell
+   Add-MailboxPermission -Identity support@contoso.onmicrosoft.com -User ayla@contoso.com -AccessRights FullAccess -AutoMapping $true
+   ```
 
 ## <a name="what-do-i-do-if-i-dont-receive-the-one-time-pass-code-after-i-requested-it"></a>Was muss ich tun, wenn ich den einmaligen Passcode nicht erhalte, nachdem ich ihn angefordert habe?
 

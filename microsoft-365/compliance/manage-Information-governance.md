@@ -1,31 +1,31 @@
 ---
-title: Verwalten der Informationsgovernance
+title: Microsoft Information Governance in Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: robmazz
-author: robmazz
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
-localization_priority: Normal
+localization_priority: High
 search.appverid:
 - MOE150
 - MET150
-description: Erfahren Sie mehr über die Information Governance in Microsoft 365.
-ms.openlocfilehash: ff7d5ebc1b656aa62bac054cfbd2784b335d03e6
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+description: Implementieren Sie Microsoft Information Governance-Funktionen in Microsoft 365, um Ihre Daten für Compliance-oder behördliche Anforderungen zu bestimmen.
+ms.openlocfilehash: b67fbe1a8336ba73d1c43ebc531657c60dd3e8d8
+ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778565"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46804243"
 ---
-# <a name="manage-information-governance"></a>Verwalten der Informationsgovernance
+# <a name="microsoft-information-governance-in-microsoft-365"></a>Microsoft Information Governance in Microsoft 365
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
 
-Verwenden Sie die Microsoft Information Governance-Funktionen, um Ihre Daten für Compliance-oder behördliche Anforderungen zu bestimmen.
+Verwenden Sie Microsoft Information Governance (manchmal abgekürzt MIG), um Ihre Daten für Compliance-oder behördliche Anforderungen zu bestimmen.
 
 ## <a name="information-governance"></a>Informationsverwaltung
 

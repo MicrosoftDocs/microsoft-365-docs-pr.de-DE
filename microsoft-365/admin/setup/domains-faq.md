@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Erfahren Sie mehr über Domänen, indem Sie Antworten auf Ihre häufig gestellten Fragen finden.
-ms.openlocfilehash: c588586ddd3d57fdbe78d7751131f61e6aa53eba
-ms.sourcegitcommit: dc5de2064706137256307f100b8dc61e9797bd1c
+ms.openlocfilehash: bb949dbd4e32bb62f10dfd0323df70697fdc5404
+ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45068103"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46804196"
 ---
 # <a name="domains-faq"></a>FAQ zu Domänen
 
@@ -52,6 +52,7 @@ Inhalt dieses Artikels
 - [Was geschieht, wenn mein DNS-Anbieter bestimmte Eintragstypen nicht unterstützt?](#what-happens-if-my-dns-provider-doesnt-support-certain-record-types)
 - [Wie kann ich die Standarddomäne in Microsoft 365 festlegen oder ändern?](#how-do-i-set-or-change-the-default-domain-in-microsoft-365)
 - [Kann ich Microsoft 365 benutzerdefinierte Unterdomänen oder mehrere Domänen hinzufügen?](#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365)
+- [Wie übertrage ich eine Domäne von Microsoft 365 auf einen anderen Host?]
 - [Warum habe ich eine Domäne des Typs "onmicrosoft.com"?](#why-do-i-have-an-onmicrosoftcom-domain)
 - [Warum habe ich eine "onmicrosoft.de"-Domäne?](#why-do-i-have-an-onmicrosoftde-domain)
 - [Wie kann ich meinen gemeinnützigen oder Bildungsstatus überprüfen?](#how-do-i-verify-my-nonprofit-or-education-status)
@@ -72,7 +73,7 @@ E-Mail wird an MX-Server (Mail Exchange) mit der niedrigsten Einstellungsnummer 
     
 ## <a name="how-can-i-validate-spf-records-for-my-domain"></a>Wie kann ich SPF-Einträge für meine Domäne überprüfen?
 
-Es ist wichtig, dass Sie **nur einen TXT-Eintrag für SPF**haben oder erstellen. Wenn Sie bereits einen SPF-Eintrag haben, sollten Sie die neuen Microsoft 365-Werte an diese anfügen, anstatt eine neue zu erstellen. Nachdem Sie den SPF-Eintrag für Microsoft e-Mail hinzugefügt oder aktualisiert haben, sollten Sie überprüfen, ob die Syntax für eines dieser Tools richtig ist: 
+Es ist wichtig, dass Sie  **nur einen TXT-Eintrag für SPF**haben oder erstellen. Wenn Sie bereits einen SPF-Eintrag haben, sollten Sie die neuen Microsoft 365-Werte an diese anfügen, anstatt eine neue zu erstellen. Nachdem Sie den SPF-Eintrag für Microsoft e-Mail hinzugefügt oder aktualisiert haben, sollten Sie überprüfen, ob die Syntax für eines dieser Tools richtig ist: 
   
 - [SPF Record Testing Tools](http://www.kitterman.com/spf/validate.html)
     
@@ -152,13 +153,13 @@ Sie können den Namen der ursprünglichen Domäne  *.onmicrosoft.com*  nicht än
 
 ::: moniker range="o365-germany"
 
-Sie können den Namen ihrer ursprünglichen *. onmicrosoft.de-* Domäne nicht ändern. 
+Sie können den Namen ihrer ursprünglichen  *. onmicrosoft.de-*  Domäne nicht ändern. 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Sie können den Namen ihrer ursprünglichen *. Partner.onmschina.cn-* Domäne nicht ändern. 
+Sie können den Namen ihrer ursprünglichen  *. Partner.onmschina.cn-*  Domäne nicht ändern. 
 
 ::: moniker-end
 
@@ -194,6 +195,14 @@ Wenn Sie Microsoft 365 mehrere Domänen hinzufügen, können Sie alle Dienste (w
 
 > [!NOTE]
 > Wenn Sie eine contoso.com-Domäne zu einem Microsoft 365-Abonnement hinzugefügt haben, können Sie auch die Unterdomäne XYZ.contoso.com zu einer anderen Microsoft 365-Organisation hinzufügen. Beim Hinzufügen der Unterdomäne werden Sie aufgefordert, einen TXT-Eintrag im DNS-Hostanbieter hinzuzufügen.
+
+## <a name="how-do-i-transfer-a-domain-from-microsoft-365-to-another-host"></a>Wie übertrage ich eine Domäne von Microsoft 365 auf einen anderen Host?
+
+Informationen zum Verfahren zum Übertragen einer Domäne finden Sie unter [übertragen einer Domäne von Microsoft auf einen anderen Host](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host).
+
+## <a name="pilot-microsoft-365-from-my-custom-domain"></a>Testen von Microsoft 365 aus Ihrer benutzerdefinierten Domäne
+
+Das Verfahren zum pilotieren von Microsoft 365-e-Mail-Funktionen von einer benutzerdefinierten Domäne zu einem Microsoft 365-Postfach finden Sie unter [Pilot Microsoft 365 aus meiner benutzerdefinierten Domäne](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain).
 
 ## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a>Warum habe ich eine Domäne des Typs "onmicrosoft.com"?
 
@@ -232,7 +241,7 @@ Sie können die anfängliche onmicrosoft.de-Domäne auch dann weiterhin verwende
 
 1. Wählen Sie im [Admin Center](https://docs.microsoft.com/microsoft-365/admin/admin-home) die Option **Setup** aus, um den Assistenten zu starten. (Achten Sie darauf, sich zuerst bei Microsoft 365 anzumelden.) 
     
-2. Um Administrator für Ihre Schule zu werden, wählen Sie die Option **Administrator werden** in Microsoft 365 aus. 
+2. Um Administrator für Ihre Schule zu werden, wählen Sie die Option  **Administrator werden** in Microsoft 365 aus. 
     
 3. Sie werden aufgefordert, einen txt-DNS-Eintrag auf der DNS-Hostwebsite für Ihre Domäne hinzuzufügen. Warum? Da Sie sich auf dem DNS-Host anmelden und einen Eintrag für Ihre Domäne hinzufügen, beweisen Sie Microsoft 365, dass Sie der Domänenname besitzen.
     

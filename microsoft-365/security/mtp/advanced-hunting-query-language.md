@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 64f0b19cfd9588e975b06cb43ca73270b00c5e26
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 15e298edfad2d04079322a070615a36bb5df64ad
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649391"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797852"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Erlernen der Abfragesprache für die erweiterte Suche
 
@@ -117,7 +117,7 @@ Klicken Sie auf **Abfrage ausführen** aus, um die Ergebnisse anzuzeigen. Wähle
 >[!TIP]
 >Sie können Abfrageergebnisse als Diagramme anzeigen und Filter schnell anpassen. [Informationen zum Arbeiten mit Abfrageergebnissen finden Sie](advanced-hunting-query-results.md) unter Anleitung.
 
-## <a name="learn-common-query-operators-for-advanced-hunting"></a>Erlernen häufig verwendeter Operatoren für die erweiterte Suche
+## <a name="learn-common-query-operators"></a>Erlernen allgemeiner Abfrageoperatoren
 
 Da Sie nun Ihre erste Abfrage ausgeführt und eine allgemeine Vorstellung von deren Komponenten haben, gehen wir einen Schritt zurück und befassen uns mit ein paar Grundlagen. Die von der erweiterten Suche verwendete Kusto-Abfragesprache unterstützt eine Reihe von Operatoren, darunter die folgenden allgemeinen Operatoren.
 
@@ -136,7 +136,7 @@ Da Sie nun Ihre erste Abfrage ausgeführt und eine allgemeine Vorstellung von de
 
 Wenn Sie ein Beispiel für diese Operatoren sehen möchten, führen Sie diese im Abschnitt **Erste Schritte** in der erweiterten Suche aus.
 
-## <a name="understand-data-types-and-their-query-syntax-implications"></a>Grundlegendes zu Datentypen und deren Auswirkungen auf die Abfragesyntax
+## <a name="understand-data-types"></a>Grundlegendes zu Datentypen
 
 Daten in erweiterten Suchtabellen werden in der Regel in die folgenden Datentypen unterteilt.
 
@@ -147,6 +147,8 @@ Daten in erweiterten Suchtabellen werden in der Regel in die folgenden Datentype
 | `bool` | „True“ oder „False“ |
 | `int` | Ein numerischer 32-Bit-Wert.  |
 | `long` | Ein numerischer 64-Bit-Wert. |
+
+Weitere Informationen zu diesen Datentypen und deren Auswirkungen finden [Sie unter Kusto Scalar Data Types](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/).
 
 ## <a name="get-help-as-you-write-queries"></a>Hilfe beim Schreiben von Abfragen
 Nutzen Sie die folgenden Funktionen, um Abfragen schneller zu schreiben:
@@ -179,6 +181,6 @@ Weitere Informationen zur Kusto-Abfragesprache und zu unterstützten Operatoren 
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
 - [Arbeiten mit Abfrageergebnissen](advanced-hunting-query-results.md)
 - [Verwenden freigegebener Abfragen](advanced-hunting-shared-queries.md)
-- [Jagd auf Geräte, e-Mails, Apps und Identitäten](advanced-hunting-query-emails-devices.md)
+- [Suchen auf Geräten, in E-Mails, Apps und Identitäten](advanced-hunting-query-emails-devices.md)
 - [Grundlegendes zum Schema](advanced-hunting-schema-tables.md)
 - [Anwenden bewährter Methoden für Abfragen](advanced-hunting-best-practices.md)

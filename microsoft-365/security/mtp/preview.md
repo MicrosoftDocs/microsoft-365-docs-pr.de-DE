@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 3559bf3391427d6f6ae0cfc6b6f6e8ed343438fa
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: ff610cee46b2b48815af82fa86d0b30aa99f4b5c
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552662"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46798234"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Vorschaufunktionen für Microsoft Threat Protection
 
@@ -57,7 +57,8 @@ Sie wissen, dass Sie die Vorschaufunktionen aktiviert haben, wenn Sie sehen, das
 ## <a name="preview-features"></a>Vorschaufeatures
 Die folgenden Features und Verbesserungen sind derzeit in der Vorschau verfügbar:
 
+- **[IdentityDirectoryEvents-Tabelle in Advanced Hunting](advanced-hunting-identitydirectoryevents-table.md)** – Ereignisse finden, die einen lokalen Domänencontroller mit Active Directory (AD) umfassen. Diese Tabelle behandelt eine Reihe von identitätsbezogenen Ereignissen sowie Systemereignisse auf dem Domänencontroller.
+- **[AssignedIPAddresses ()-Funktion](advanced-hunting-assignedipaddresses-function.md)** – verwenden Sie diese Funktion in Advanced Hunting, um schnell die neuesten IP-Adressen zu erhalten, die einem Gerät oder den aktuellen IP-Adressen zu einem bestimmten Zeitpunkt zugewiesen wurden.
 - **[Aktionen in der erweiterten Suche durchführen](advanced-hunting-take-action.md)** – enthalten schnell Bedrohungen oder adressieren gefährdete Objekte, die Sie in [Advanced Hunting](advanced-hunting-overview.md)finden.
-
 - **[In-Portal-Schemareferenz](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : Informationen zu erweiterten Jagd Schema Tabellen erhalten Sie direkt im Sicherheitscenter. Neben Tabellen-und Spaltenbeschreibungen bietet diese praktische Referenzinformationen zu unterstützten Ereignistypen ( `ActionType` Werten) und Beispielabfragen.
 

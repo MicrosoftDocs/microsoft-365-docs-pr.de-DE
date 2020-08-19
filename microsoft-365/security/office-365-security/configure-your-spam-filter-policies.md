@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Administratoren erfahren, wie Sie Anti-Spam-Richtlinien in Exchange Online Protection (EOP) anzeigen, erstellen, ändern und löschen können.
-ms.openlocfilehash: fea1ae4a43ee3002c49bd6511a55a3d490723fc2
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 21e2142eb62c25a7301e2ea5f9160ef6d6ef7947
+ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656815"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46804220"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Konfigurieren von Antispamrichtlinien in EOP
 
@@ -31,39 +31,24 @@ Administratoren können die standardmäßige Antispamrichtlinie anzeigen, bearbe
 
 Sie können Antispamrichtlinien im Security & Compliance Center oder in PowerShell konfigurieren (Exchange Online PowerShell für Microsoft 365-Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange Online-Postfächer).
 
-## <a name="anti-spam-policies-in-the-security--compliance-center-vs-powershell"></a>Antispamrichtlinien im Security & Compliance Center vs PowerShell
-
-Die grundlegenden Elemente einer Antispamrichtlinie in EOP sind:
+Die grundlegenden Elemente einer Antispamrichtlinie sind:
 
 - **Die Spamfilterrichtlinie**: gibt die Aktionen für Spamfilterbewertungen und die Benachrichtigungsoptionen an.
-
 - **Die Spamfilterregel**: gibt die Priorität und die Empfängerfilter (für wen die Richtlinie gilt) für eine Spamfilterrichtlinie an.
 
 Der Unterschied zwischen diesen beiden Elementen ist nicht offensichtlich, wenn Sie Antispamrichtlinien im Security & Compliance Center verwalten:
 
-- Beim Erstellen einer Antispamrichtlinie im Security & Compliance Center erstellen Sie tatsächlich gleichzeitig eine Spamfilterregel und die zugehörige Spamfilterrichtlinie, beide mit demselben Namen.
+- Beim Erstellen einer Antispamrichtlinie erstellen Sie tatsächlich gleichzeitig eine Spamfilterregel und die zugehörige Spamfilterrichtlinie, beide mit demselben Namen.
+- Beim Ändern einer Antispamrichtlinie ändern die Einstellungen im Zusammenhang mit Name, Priorität, aktiviert oder deaktiviert und Empfängerfilter tatsächlich die Spamfilterregel. Alle anderen Einstellungen ändern die zugehörige Spamfilterrichtlinie.
+- Wenn Sie eine Antispamrichtlinie entfernen, werden die Spamfilterregel und die zugeordnete Spamfilterrichtlinie entfernt.
 
-- Wenn Sie eine Antispamrichtlinie im Security & Compliance Center ändern, ändern die Einstellungen im Zusammenhang mit Name, Priorität, aktiviert oder deaktiviert und Empfängerfilter tatsächlich die Spamfilterregel. Alle anderen Einstellungen ändern die zugehörige Spamfilterrichtlinie.
+In Exchange Online PowerShell oder der eigenständigen EOP PowerShell verwalten Sie die Richtlinie und die Regel getrennt. Weitere Informationen hierzu finden Sie im Abschnitt [Verwenden von Exchange Online PowerShell oder eigenständige EOP PowerShell zum Konfigurieren von Antispamrichtlinien](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies) weiter unten in diesem Thema.
 
-- Wenn Sie eine Antispamrichtlinie aus dem Security & Compliance Center entfernen, werden die Spamfilterregel und die zugeordnete Spamfilterrichtlinie entfernt.
+Jede Organisation verfügt über eine integrierte Antispamrichtlinie namens "Standard" mit folgenden Eigenschaften:
 
-In Exchange Online PowerShell oder der eigenständigen Exchange Online Protection PowerShell wird der Unterschied zwischen Spamfilterrichtlinien und Spamfilterregeln deutlich. Sie verwalten Spamfilterrichtlinien mithilfe der **\*-HostedContentFilterPolicy**-Cmdlets, und Sie verwalten Spamfilterregeln mithilfe der **\*-HostedContentFilterRule**-Cmdlets.
-
-- In PowerShell erstellen Sie zuerst die Spamfilterrichtlinie und dann die Spamfilterregel, die die Richtlinie identifiziert, auf die die Regel angewendet wird.
-
-- In PowerShell ändern Sie die Einstellungen in der Spamfilterrichtlinie und der Spamfilterregel separat.
-
-- Wenn Sie eine Spamfilterrichtlinie aus PowerShell entfernen, wird die entsprechende Spamfilterregel nicht automatisch entfernt und umgekehrt.
-
-### <a name="default-anti-spam-policy"></a>Standard-Antispamrichtlinie
-
-Jede Organisation verfügt über eine integrierte Antispamrichtlinie namens „Standard“ mit folgenden Eigenschaften:
-
-- Die Spamfilterrichtlinie namens „Standard“ wird auf alle Empfänger in der Organisation angewendet, obwohl der Richtlinie keine Spamfilterregel (kein Empfängerfilter) zugeordnet ist.
-
-- Die Richtlinie namens „Standard“ weist den benutzerdefinierten Prioritätswert **Niedrigster** auf, der nicht geändert werden kann (die Richtlinie wird immer als letztes angewendet). Alle benutzerdefinierten Richtlinien, die Sie erstellen, haben immer Vorrang vor der Richtlinie „Standard“.
-
-- Die Richtlinie namens „Standard“ ist die Standardrichtlinie (die **IsDefault**-Eigenschaft hat den Wert `True`), und die Standardrichtlinie kann nicht gelöscht werden.
+- Die Richtlinie wird auf alle Empfänger in der Organisation angewendet, obwohl der Richtlinie keine Spamfilterregel (kein Empfängerfilter) zugeordnet ist.
+- Die Richtlinie weist den benutzerdefinierten Prioritätswert **Niedrigster** auf, der nicht geändert werden kann (die Richtlinie wird immer als letztes angewendet). Alle benutzerdefinierten Richtlinien, die Sie erstellen, haben immer eine höhere Priorität.
+- Die Richtlinie ist die Standardrichtlinie (die **IsDefault**-Eigenschaft hat den Wert `True`), und die Standardrichtlinie kann nicht gelöscht werden.
 
 Wenn Sie die Effektivität der Spamfilterung erhöhen möchten, können Sie benutzerdefinierte Antispamrichtlinien mit strengeren Einstellungen erstellen, die auf bestimmte Benutzer oder Benutzergruppen angewendet werden.
 
@@ -320,7 +305,9 @@ Die Standard-Antispamrichtlinie kann nicht deaktiviert werden.
 
 ### <a name="set-the-priority-of-custom-anti-spam-policies"></a>Festlegen der Priorität von benutzerdefinierten Antispamrichtlinien
 
-Standardmäßig erhalten Antispamrichtlinien eine Priorität, die auf der Reihenfolge ihrer Erstellung basiert (neuere Richtlinien haben eine niedrigere Priorität als ältere). Eine niedrigere Prioritätsnummer gibt eine höhere Priorität für die Richtlinie an (0 ist die höchste), und Richtlinien werden in der Reihenfolge der Priorität verarbeitet (Richtlinien mit einer höheren Priorität werden vor Richtlinien mit einer niedrigeren Priorität verarbeitet). Zwei Richtlinien können nicht dieselbe Priorität haben.
+Standardmäßig erhalten Antispamrichtlinien eine Priorität, die auf der Reihenfolge ihrer Erstellung basiert (neuere Richtlinien haben eine niedrigere Priorität als ältere). Eine niedrigere Prioritätsnummer gibt eine höhere Priorität für die Richtlinie an (0 ist die höchste), und Richtlinien werden in der Reihenfolge der Priorität verarbeitet (Richtlinien mit einer höheren Priorität werden vor Richtlinien mit einer niedrigeren Priorität verarbeitet). Keine zwei Richtlinien können die gleiche Priorität aufweisen, und die Richtlinienverarbeitung endet, nachdem die erste Richtlinie angewendet wurde.
+
+Weitere Informationen über die Prioritätsreihenfolge und darüber, wie mehrere Richtlinien ausgewertet und angewendet werden, finden Sie unter [Reihenfolge und Priorität beim E-Mail-Schutz](how-policies-and-protections-are-combined.md).
 
 Benutzerdefinierte Antispamrichtlinien werden in der Reihenfolge angezeigt, in der sie verarbeitet werden (die erste Richtlinie hat den **Priorität**-Wert 0). Die Standard-Antispamrichtlinie namens **Standard-Spamfilterrichtlinie** hat den Prioritätswert **Niedrigste**. Dies kann nicht geändert werden.
 
@@ -383,6 +370,14 @@ Die Standardrichtlinie kann nicht entfernt werden.
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies"></a>Verwenden von Exchange Online PowerShell oder eigenständige EOP PowerShell zum Konfigurieren von Antispamrichtlinien
 
+Wie bereits beschrieben, besteht eine Antispamrichtlinie aus einer Spamfilterrichtlinie und einer Spamfilterregel.
+
+In Exchange Online PowerShell oder der eigenständigen Exchange Online Protection PowerShell wird der Unterschied zwischen Spamfilterrichtlinien und Spamfilterregeln deutlich. Sie verwalten Spamfilterrichtlinien mithilfe der **\*-HostedContentFilterPolicy**-Cmdlets, und Sie verwalten Spamfilterregeln mithilfe der **\*-HostedContentFilterRule**-Cmdlets.
+
+- In PowerShell erstellen Sie zuerst die Spamfilterrichtlinie und dann die Spamfilterregel, die die Richtlinie identifiziert, auf die die Regel angewendet wird.
+- In PowerShell ändern Sie die Einstellungen in der Spamfilterrichtlinie und der Spamfilterregel separat.
+- Wenn Sie eine Spamfilterrichtlinie aus PowerShell entfernen, wird die entsprechende Spamfilterregel nicht automatisch entfernt und umgekehrt.
+
 Die folgenden Einstellungen für Antispamrichtlinien sind nur in PowerShell verfügbar:
 
 - Der Parameter _MarkAsSpamBulkMail_, der standardmäßig `On` ist. Die Auswirkungen dieser Einstellung wurden im Abschnitt [Verwenden des Security & Compliance Centers zum Erstellen von Antispamrichtlinien](#use-the-security--compliance-center-to-create-anti-spam-policies) weiter oben in diesem Thema erläutert.
@@ -398,7 +393,6 @@ Die folgenden Einstellungen für Antispamrichtlinien sind nur in PowerShell verf
 Das Erstellen einer Antispamrichtlinie in PowerShell ist ein zweistufiger Vorgang:
 
 1. Erstellen Sie die Spamfilterrichtlinie.
-
 2. Erstellen Sie die Spamfilterregel, die die Spamfilterrichtlinie angibt, auf die die Regel angewendet wird.
 
  **Hinweise**:
@@ -408,7 +402,6 @@ Das Erstellen einer Antispamrichtlinie in PowerShell ist ein zweistufiger Vorgan
 - Sie können die folgenden Einstellungen für neue Spamfilterrichtlinien in PowerShell konfigurieren, die erst dann im Security & Compliance Center verfügbar sind, wenn Sie die Richtlinie erstellt haben:
 
   - Erstellen Sie die neue Richtlinie als deaktiviert (_Aktiviert_ `$false` im Cmdlet **New-HostedContentFilterRule**).
-
   - Legen Sie die Priorität der Richtlinie bei der Erstellung fest (_Priority_ _\<Number\>_) im Cmdlet **New-HostedContentFilterRule**).
 
 - Eine neue Spamfilterrichtlinie, die Sie in PowerShell erstellen, wird erst im Security & Compliance Center angezeigt, nachdem Sie die Richtlinie einer Spamfilterregel zugewiesen haben.

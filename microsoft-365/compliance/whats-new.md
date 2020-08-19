@@ -1,5 +1,5 @@
 ---
-title: Neuerungen im Compliance Center
+title: Neuerungen in der Microsoft 365-Compliance
 f1.keywords:
 - NOCSH
 ms.author: brendonb
@@ -16,21 +16,25 @@ search.appverid:
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
-description: Wir fügen dem Microsoft 365 Compliance Center ständig neue Features hinzu. Finden Sie heraus, was wir diesen Monat vorhaben.
+description: Unabhängig davon, ob neue Lösungen zum Compliance Center hinzugefügt werden, vorhandene Funktionen auf der Grundlage Ihres Feedbacks aktualisiert werden oder eine aktualisierte Dokumentation bereitgestellt wird, hilft Ihnen Microsoft 365, die ständig wechselnde Compliance-Landschaft zu überwachen. Finden Sie heraus, was wir diesen Monat vorhaben.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 77ba6f0926a1826fe6c946ff4f8c05cf913c57ed
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 9bccaab4c1dd1ac8b4676939d848c0f1a599d86b
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560262"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46798172"
 ---
-# <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Neuerungen im Microsoft 365 Compliance Center
+# <a name="whats-new-in-microsoft-365-compliance"></a>Neuerungen in der Microsoft 365-Compliance
 
-Wir fügen kontinuierlich neue Funktionen zum [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) hinzu, beheben Probleme, von denen wir erfahren, und nehmen basierend auf Ihrem Feedback Änderungen vor. Unten können Sie sehen, was heute schon für Sie verfügbar ist. Einige Funktionen werden für unsere Kunden mit unterschiedlicher Geschwindigkeit bereitgestellt. Wenn Sie noch kein Feature sehen, versuchen Sie, sich selbst zu [Gezieltes Release](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365) hinzuzufügen.
+Unabhängig davon, ob neue Lösungen zum [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md)hinzugefügt, vorhandene Features auf der Grundlage Ihres Feedbacks aktualisiert werden oder eine aktualisierte Dokumentation bereitgestellt wird, hilft Ihnen Microsoft 365, die ständig wechselnde Compliance-Landschaft zu überwachen. Sehen Sie sich die folgenden Informationen an, um zu erfahren, was in der Microsoft 365-Compliance heute neu ist. 
+
+> [!NOTE]
+> Einige Compliance-Features werden mit unterschiedlichen Geschwindigkeiten für unsere Kunden bereit gesetzt. Wenn Sie noch kein Feature sehen, versuchen Sie, sich selbst zu [Gezieltes Release](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365) hinzuzufügen.
+
 
 > [!TIP]
-> Interessieren Sie sich dafür, was in anderen Admin Centers geschieht? Dann lesen Sie die folgenden Artikel:<br>[Neuerungen im Microsoft 365 Admin Center](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Aktive Websites im SharePoint Online Admin Center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br><br>
+> Interessieren Sie sich dafür, was in anderen Admin Centers geschieht? Dann lesen Sie die folgenden Artikel:<br>[Neuerungen im Microsoft 365 Admin Center](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Aktive Websites im SharePoint Online Admin Center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Neues in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
 Besuchen Sie die [Microsoft 365-Roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap), um sich über Features von Microsoft 365 zu informieren, die eingeführt wurden, bereitgestellt werden, sich in der Entwicklung befinden, eingestellt oder zuvor veröffentlicht wurden.
 
 ## <a name="june-2020"></a>Juni 2020
@@ -290,7 +294,7 @@ Wechseln Sie zu [Einschränken des Zugriffs auf Inhalte mithilfe von Sensitivit�
 
 ### <a name="update-to-data-investigations"></a>Aktualisierung von Datenuntersuchungen
 
-Wenn Sie eine Datenuntersuchung durchführen, können Sie jetzt Elemente von den ursprünglichen Speicherorten löschen. Dies bedeutet, dass Sie Elemente aus Exchange-Postfächern, SharePoint-Websites und OneDrive-Konten in Ihrer ganzen Organisation löschen können. Da Sie die Elemente als Beweis gesammelt haben, wurden Kopien davon im Beweissatz aufbewahrt, die Sie weiter untersuchen oder einfach als Referenz behalten können. Wechseln Sie zu [manage a Data Spilling Incident in Microsoft 365](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) , um weitere Informationen zu erhalten. 
+Wenn Sie eine Datenuntersuchung durchführen, können Sie jetzt Elemente von den ursprünglichen Speicherorten löschen. Dies bedeutet, dass Sie Elemente aus Exchange-Postfächern, SharePoint-Websites und OneDrive-Konten in Ihrer ganzen Organisation löschen können. Da Sie die Elemente als Beweis gesammelt haben, wurden Kopien davon im Beweissatz aufbewahrt, die Sie weiter untersuchen oder einfach als Referenz behalten können. [Weitere Informationen](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) Wenn Sie eine Daten Untersuchung durchführen, können Sie jetzt Elemente aus ihren ursprünglichen Speicherorten löschen. Dies bedeutet, dass Sie Elemente aus Exchange-Postfächern, SharePoint-Websites und OneDrive-Konten in Ihrer ganzen Organisation löschen können. Da Sie die Elemente als Beweis gesammelt haben, wurden Kopien davon im Beweissatz aufbewahrt, die Sie weiter untersuchen oder einfach als Referenz behalten können. Wechseln Sie zu [manage a Data Spilling Incident in Microsoft 365](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) , um weitere Informationen zu erhalten. 
 
 ## <a name="july-2019"></a>Juli 2019
 

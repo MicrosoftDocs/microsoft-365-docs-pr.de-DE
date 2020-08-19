@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 6465821ff1b8e8ea23cc5cf6b205f65a483bbe82
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: d0fd359bb6f56f7c20b0a39b7fd45ec551e7e49e
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204947"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797782"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -43,9 +43,9 @@ Die `FileProfile()` Funktion ist eine Anreicherungs Funktion in [Advanced Huntin
 | Signierers | string | Informationen über den unterschreibenden der Datei |
 | Aussteller | string | Informationen zur ausstellenden Zertifizierungsstelle (Certification Authority, ca) |
 | SignerHash | string | Eindeutiger Hashwert zur Identifizierung der signierenden |
-| IsCertificateValid | boolean | Gibt an, ob das zum Signieren der Datei verwendete Zertifikat gültig ist. |
-| IsRootSignerMicrosoft | boolean | Gibt an, ob die Signatur des Stammzertifikats Microsoft lautet. |
-| IsExecutable | boolean | Gibt an, ob es sich bei der Datei um eine PE-Datei (Portable Executable) handelt |
+| IsCertificateValid | Boolescher Wert | Gibt an, ob das zum Signieren der Datei verwendete Zertifikat gültig ist. |
+| IsRootSignerMicrosoft | Boolescher Wert | Gibt an, ob die Signatur des Stammzertifikats Microsoft lautet. |
+| IsExecutable | Boolescher Wert | Gibt an, ob es sich bei der Datei um eine PE-Datei (Portable Executable) handelt |
 | Bedrohungsname | string | Erkennungsname für Schadsoftware oder andere gefundene Bedrohungen |
 | Publisher | string | Name der Organisation, die die Datei veröffentlicht hat |
 | Software Name | string | Name des Softwareprodukts |
@@ -87,3 +87,4 @@ DeviceFileEvents
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
 - [Lernen der Abfragesprache](advanced-hunting-query-language.md)
 - [Grundlegendes zum Schema](advanced-hunting-schema-tables.md)
+- [Abrufen weiterer Abfragebeispiele](advanced-hunting-shared-queries.md)

@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Hier erfahren Sie, wie Sie benutzerdefinierte blockierte URLs für Benutzer einrichten und eine Liste mit URLs für eine Gruppe von Benutzern in Office 365 Richtlinien für ATP-sichere Links erstellen.
-ms.openlocfilehash: 7909e91b96f8bdbc38ffdceafe11fa47f5ebe897
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 17828566769f438439eebcb4e460ecac1147a648
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656969"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46798330"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>Einrichten einer benutzerdefinierten Liste "do-not-Rewrite-URLs" mithilfe von ATP-Safe-Links
 
@@ -34,6 +34,9 @@ ms.locfileid: "46656969"
 Mit [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) kann Ihre Organisation eine [benutzerdefinierte Blockierte URL](set-up-a-custom-blocked-urls-list-atp.md)haben, wenn Personen in e-Mail-Nachrichten oder bestimmten Office-Dokumenten auf Webadressen (URLs) klicken, wird verhindert, dass Sie zu diesen URLs wechseln. Ihre Organisation kann auch benutzerdefinierte Listen für bestimmte Gruppen in Ihrer Organisation erstellen. Eine Liste "nicht umschreiben" ermöglicht einigen Benutzern das Aufrufen von URLs, die ansonsten durch [ATP-sichere Links in Office 365](atp-safe-links.md)blockiert werden.
 
 In diesem Artikel wird beschrieben, wie Sie eine Liste von URLs angeben, die von der Überprüfung der ATP-sichere Links ausgeschlossen werden, und einige wichtige Punkte, die beachtet werden sollten.
+
+> [!NOTE]
+> Wenn Ihre Organisation Richtlinien für sichere Links verwendet, ist die Liste "nicht umschreiben" die einzige unterstützte Methode für Phishing-Tests von Drittanbietern.
 
 ## <a name="set-up-a-do-not-rewrite-list"></a>Einrichten einer Liste "nicht umschreiben"
 
@@ -90,6 +93,6 @@ In der folgenden Tabelle sind Beispiele aufgeführt, was Sie eingeben können un
 |---|---|
 |`contoso.com`|Ermöglicht Empfängern das Aufrufen einer Website wie, `https://contoso.com` aber keine Unterdomänen oder Pfade.|
 |`*.contoso.com/*`|Ermöglicht Empfängern das Aufrufen einer Domäne, Unterdomänen und Pfaden, beispielsweise `https://www.contoso.com` ,,, `https://www.contoso.com` `https://maps.contoso.com` oder `https://www.contoso.com/a` . <br/><br/> Dieser Eintrag ist grundsätzlich besser als `*contoso.com*` , da er potenziell betrügerische Websites wie oder nicht enthält. `https://www.falsecontoso.com``https://www.false.contoso.completelyfalse.com`|
-|`https://contoso.com/a`|Ermöglicht bestimmten Empfängern das Besuchen einer Website wie `https://contoso.com/a` , aber keine untergeordneten Pfade wie`https://contoso.com/a/b`|
-|`https://contoso.com/a/*`|Ermöglicht bestimmten Empfängern das Besuchen einer Website wie und untergeordnete `https://contoso.com/a` Pfade wie`https://contoso.com/a/b`|
+|`https://contoso.com/a`|Ermöglicht bestimmten Empfängern das Besuchen einer Website wie `https://contoso.com/a` , aber keine untergeordneten Pfade wie `https://contoso.com/a/b`|
+|`https://contoso.com/a/*`|Ermöglicht bestimmten Empfängern das Besuchen einer Website wie und untergeordnete `https://contoso.com/a` Pfade wie `https://contoso.com/a/b`|
 |

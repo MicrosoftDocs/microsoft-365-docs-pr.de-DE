@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die Anti-Phishing-Richtlinien informieren, die in Exchange Online Protection (EoP) und Office 365 Advanced Threat Protection (Office 365 ATP) zur Verfügung stehen.
-ms.openlocfilehash: a7db287b8a8efb5c41488529fcaa8789b2f594b5
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: b492d37bea6135bccb770571f9984f9866c7cfd3
+ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652717"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46804278"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-Phishing-Richtlinien in Microsoft 365
 
@@ -50,15 +50,37 @@ In der folgenden Tabelle werden die allgemeinen Unterschiede zwischen Anti-Phish
 |Erweiterte Phishing-Schwellenwerte||![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |
 
-<sup>\*</sup>In der Standardrichtlinie sind der Richtlinienname und die Beschreibung schreibgeschützt (die Beschreibung ist leer), und Sie können nicht angeben, für wen die Richtlinie gilt (die Standardrichtlinie gilt für alle Empfänger).
+<sup>\*</sup> In der Standardrichtlinie sind der Richtlinienname und die Beschreibung schreibgeschützt (die Beschreibung ist leer), und Sie können nicht angeben, für wen die Richtlinie gilt (die Standardrichtlinie gilt für alle Empfänger).
 
-Informationen zum Konfigurieren von Anti-Phishing-Richtlinien finden Sie in den folgenden Themen:
+Informationen zum Konfigurieren von Anti-Phishing-Richtlinien finden Sie in den folgenden Artikeln:
 
 - [Konfigurieren von Anti-Phishing-Richtlinien in EoP](configure-anti-phishing-policies-eop.md)
 
 - [Konfigurieren von Richtlinien für die ATP-Anti-Phishing in Microsoft 365](configure-atp-anti-phishing-policies.md)
 
-Im weiteren Verlauf dieses Themas werden die Einstellungen beschrieben, die in Anti-Phishing-Richtlinien und ATP-Anti-Phishing-Richtlinien verfügbar sind.
+Im Rest dieses Artikels werden die Einstellungen beschrieben, die in Anti-Phishing-Richtlinien und Richtlinien für die ATP-Anti-Phishing verfügbar sind.
+
+## <a name="policy-settings"></a>Richtlinieneinstellungen
+
+Die folgenden Richtlinieneinstellungen sind in Anti-Phishing-Richtlinien und Richtlinien für die ATP-Anti-Phishing verfügbar:
+
+- **Name**: Sie können die standardmäßige Anti-Phishing-Richtlinie nicht umbenennen, aber Sie können benutzerdefinierte Richtlinien benennen und umbenennen, die Sie erstellen.
+
+- **Beschreibung** Sie können keine Beschreibung zur Standard-Anti-Phishing-Richtlinie hinzufügen, aber Sie können die Beschreibung für benutzerdefinierte Richtlinien, die Sie erstellen, hinzufügen und ändern.
+
+- **Angewendet auf**: identifiziert interne Empfänger, auf die die AntiPhishing-Richtlinie angewendet wird. Dieser Wert ist in benutzerdefinierten Richtlinien erforderlich und in der Standardrichtlinie nicht verfügbar (die Standardrichtlinie gilt für alle Empfänger).
+
+  Sie können eine Bedingung oder Ausnahme nur einmal verwenden, aber Sie können mehrere Werte für die Bedingung oder Ausnahme angeben. Bei mehreren Werten derselben Bedingung oder Ausnahme wird ODER-Logik verwendet (z. B. _\<recipient1\>_ oder _\<recipient2\>_). Bei unterschiedlichen Bedingungen oder Ausnahmen wird UND-Logik verwendet (z. B. _\<recipient1\>_ und _\<member of group 1\>_).
+
+  - **Empfänger ist**: ein oder mehrere Postfächer, e-Mail-Benutzer oder e-Mail-Kontakte in Ihrer Organisation.
+  - **Der Empfänger ist Mitglied von**: eine oder mehrere Gruppen in Ihrer Organisation.
+  - **Die Empfängerdomäne ist**: eine oder mehrere der konfigurierten akzeptierten Domänen in Microsoft 365.
+
+  - **Ausnahme**: Ausnahmen für die Regel. Die Einstellungen und das Verhalten sind genau wie die Bedingungen:
+
+    - **Empfänger lautet**
+    - **Der Empfänger ist Mitglied von**
+    - **Die Empfängerdomäne ist**
 
 ## <a name="spoof-settings"></a>Spoof-Einstellungen
 
@@ -75,28 +97,34 @@ Die folgenden spoofeinstellungen stehen unter Anti-Phishing-Richtlinien und ATP-
 
   - **Nachricht in den Junk-e-Mail-Ordner umlegen**: Dies ist der Standardwert. Die Nachricht wird an das Postfach übermittelt und in den Junk-e-Mail-Ordner verschoben. In Exchange Online wird die Nachricht in den Junk-e-Mail-Ordner verschoben, wenn die Junk-e-Mail-Regel für das Postfach aktiviert ist (Sie ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Konfigurieren von Junk-e-Mail-Einstellungen für Exchange Online-Postfächer in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-  - **Nachricht in Quarantäne verschieben**: sendet die Nachricht an die Quarantäne statt an die vorgesehenen Empfänger. Informationen zur Quarantäne finden Sie in den folgenden Themen:
+  - **Nachricht in Quarantäne verschieben**: sendet die Nachricht an die Quarantäne statt an die vorgesehenen Empfänger. Weitere Informationen zur Quarantäne finden Sie in den folgenden Artikeln:
 
     - [Quarantäne in Microsoft 365](quarantine-email-messages.md)
     - [Verwalten von isolierten Nachrichten und Dateien als Administrator in Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Suchen und Freigeben von isolierten Nachrichten als Benutzer in Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-- Nicht **authentifizierter Absender**: aktiviert oder deaktiviert die Unbekannte Absender Identifikation in Outlook. Insbesondere gilt:
+- Nicht **authentifizierter Absender**: siehe die Beschreibung im nächsten Abschnitt.
 
-  - Dem Foto des Absenders wird ein Fragezeichen (?) hinzugefügt, wenn die Nachricht keine SPF-oder DKIM-Prüfungen übergibt **und** die Nachricht nicht DMARC oder die [kombinierte Authentifizierung](email-validation-and-authentication.md#composite-authentication)übergibt.
+### <a name="unauthenticated-sender"></a>Nicht authentifizierter Absender
 
-  - Das Via-Tag (Chris@contoso.com <u>über</u> Michelle@fabrikam.com) wird hinzugefügt, wenn die Domäne in der von-Adresse (der Absender der Nachricht, der in e-Mail-Clients angezeigt wird) sich von der Domäne in der DKIM-Signatur oder der **e-Mail-** Adresse unterscheidet. Weitere Informationen zu diesen Adressen finden Sie unter [Übersicht über Standards für e-Mail-Nachrichten](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)
+Die nicht authentifizierte Absender Identifikation ist Teil der [spoofeinstellungen](#spoof-settings) , die in Anti-Phishing-Richtlinien und ATP-AntiPhishing-Richtlinien zur Verfügung stehen, wie im vorherigen Abschnitt beschrieben.
 
-  Um zu verhindern, dass diese Bezeichner Nachrichten von bestimmten Absendern hinzugefügt werden, stehen Ihnen die folgenden Optionen zur Verfügung:
+Die Einstellung nicht **authentifizierter Absender** aktiviert oder deaktiviert die Unbekannte Absender Identifikation in Outlook. Insbesondere gilt:
 
-  - Zulassen, dass Absender Spoofing in der Spoof Intelligence-Richtlinie vortäuscht. Anweisungen finden Sie unter [configure Spoof Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
+- Dem Foto des Absenders wird ein Fragezeichen (?) hinzugefügt, wenn die Nachricht keine SPF-oder DKIM-Prüfungen übergibt **und** die Nachricht nicht DMARC oder die [kombinierte Authentifizierung](email-validation-and-authentication.md#composite-authentication)übergibt.
 
-  - [Konfigurieren Sie die e-Mail-Authentifizierung](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) für die Absenderdomäne.
+- Das Via-Tag (Chris@contoso.com <u>über</u> Michelle@fabrikam.com) wird hinzugefügt, wenn die Domäne in der von-Adresse (der Absender der Nachricht, der in e-Mail-Clients angezeigt wird) sich von der Domäne in der DKIM-Signatur oder der **e-Mail-** Adresse unterscheidet. Weitere Informationen zu diesen Adressen finden Sie unter [Übersicht über Standards für e-Mail-Nachrichten](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)
+
+Um zu verhindern, dass diese Bezeichner Nachrichten von bestimmten Absendern hinzugefügt werden, stehen Ihnen die folgenden Optionen zur Verfügung:
+
+- Zulassen, dass Absender Spoofing in der Spoof Intelligence-Richtlinie vortäuscht. Anweisungen finden Sie unter [configure Spoof Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
+
+- [Konfigurieren Sie die e-Mail-Authentifizierung](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) für die Absenderdomäne.
   
-    - Für das Fragezeichen im Foto des Absenders sind SPF oder DKIM die wichtigsten.
-    - Bestätigen Sie für das via-Tag die Domäne in der DKIM-Signatur oder die **e-Mail-** Adresse Übereinstimmungen (oder ist eine Unterdomäne von) der Domäne in der von-Adresse.
+  - Für das Fragezeichen im Foto des Absenders sind SPF oder DKIM die wichtigsten.
+  - Bestätigen Sie für das via-Tag die Domäne in der DKIM-Signatur oder die **e-Mail-** Adresse Übereinstimmungen (oder ist eine Unterdomäne von) der Domäne in der von-Adresse.
 
-  Weitere Informationen finden Sie unter [Identifizieren von verdächtigen Nachrichten in Outlook.com und Outlook im Internet](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206) .
+Weitere Informationen finden Sie unter [Identifizieren von verdächtigen Nachrichten in Outlook.com und Outlook im Internet](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206) .
 
 ## <a name="exclusive-settings-in-atp-anti-phishing-policies"></a>Exklusive Einstellungen in ATP-Richtlinien zum Schutz vor Phishing
 
@@ -105,34 +133,11 @@ In diesem Abschnitt werden die Richtlinieneinstellungen beschrieben, die nur in 
 > [!NOTE]
 > Standardmäßig sind die exklusiven ATP-Einstellungen nicht selbst in der Standardrichtlinie konfiguriert oder aktiviert. Um diese Funktionen nutzen zu können, müssen Sie Sie in der standardmäßigen ATP-AntiPhishing-Richtlinie aktivieren und konfigurieren oder benutzerdefinierte ATP-Richtlinien für die Phishing-Abwehr erstellen und konfigurieren.
 
-### <a name="policy-settings-in-atp-anti-phishing-policies"></a>Richtlinieneinstellungen in ATP-Richtlinien zum Schutz vor Phishing
-
-Die folgenden Richtlinieneinstellungen sind nur in Richtlinien für ATP-Anti-Phishing verfügbar:
-
-- **Name**: Sie können die standardmäßige Anti-Phishing-Richtlinie nicht umbenennen, aber Sie können benutzerdefinierte Richtlinien benennen und umbenennen, die Sie erstellen.
-
-- **Beschreibung** Sie können keine Beschreibung zur Standard-Anti-Phishing-Richtlinie hinzufügen, aber Sie können die Beschreibung für benutzerdefinierte Richtlinien, die Sie erstellen, hinzufügen und ändern.
-
-- **Angewendet auf**: identifiziert interne Empfänger, für die die ATP-AntiPhishing-Richtlinie gilt. Dieser Wert ist in benutzerdefinierten Richtlinien erforderlich und in der Standardrichtlinie nicht verfügbar (die Standardrichtlinie gilt für alle Empfänger).
-
-    Sie können eine Bedingung oder Ausnahme nur einmal verwenden, aber Sie können mehrere Werte für die Bedingung oder Ausnahme angeben. Bei mehreren Werten derselben Bedingung oder Ausnahme wird ODER-Logik verwendet (z. B. _\<recipient1\>_ oder _\<recipient2\>_). Bei unterschiedlichen Bedingungen oder Ausnahmen wird UND-Logik verwendet (z. B. _\<recipient1\>_ und _\<member of group 1\>_).
-
-  - **Empfänger ist**: ein oder mehrere Postfächer, e-Mail-Benutzer oder e-Mail-Kontakte in Ihrer Organisation.
-  - **Der Empfänger ist Mitglied von**: eine oder mehrere Gruppen in Ihrer Organisation.
-  - **Die Empfängerdomäne ist**: eine oder mehrere der konfigurierten akzeptierten Domänen in Microsoft 365.
-
-  - **Ausnahme**: Ausnahmen für die Regel. Die Einstellungen und das Verhalten sind genau wie die Bedingungen:
-
-    - **Empfänger lautet**
-    - **Der Empfänger ist Mitglied von**
-    - **Die Empfängerdomäne ist**
-
 ### <a name="impersonation-settings-in-atp-anti-phishing-policies"></a>Identitätswechseleinstellungen in ATP-Richtlinien zum Schutz vor Phishing
 
 Bei einem Identitätswechsel sieht der Absender oder die e-Mail-Domäne des Absenders in einer Nachricht wie ein echter Absender oder eine reale Domäne aus:
 
 - Ein Beispiel für einen Identitätswechsel der Domäne contoso.com ist ćóntoso.com.
-
 - Ein Beispiel für einen Identitätswechsel der Benutzerin michelle@contoso.com ist michele@contoso.com.
 
 Eine imitierte Domäne kann ansonsten als seriös gelten (registrierte Domäne, konfigurierte E-Mail-Authentifizierungseinträge usw.). Der Unterschied besteht darin, dass damit Empfänger getäuscht werden sollen.
@@ -155,7 +160,7 @@ Die folgenden Identitätswechseleinstellungen sind nur in Richtlinien für ATP-A
 
   - **Nachricht in Junk-e-Mail-Ordner verschieben**: die Nachricht wird an das Postfach übermittelt und in den Junk-e-Mail-Ordner verschoben. In Exchange Online wird die Nachricht in den Junk-e-Mail-Ordner verschoben, wenn die Junk-e-Mail-Regel für das Postfach aktiviert ist (Sie ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Konfigurieren von Junk-e-Mail-Einstellungen für Exchange Online-Postfächer in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-    - **Nachricht in Quarantäne verschieben**: sendet die Nachricht an die Quarantäne statt an die vorgesehenen Empfänger. Informationen zur Quarantäne finden Sie in den folgenden Themen:
+    - **Nachricht in Quarantäne verschieben**: sendet die Nachricht an die Quarantäne statt an die vorgesehenen Empfänger. Weitere Informationen zur Quarantäne finden Sie in den folgenden Artikeln:
 
     - [Quarantäne in Microsoft 365](quarantine-email-messages.md)
     - [Verwalten von isolierten Nachrichten und Dateien als Administrator in Microsoft 365](manage-quarantined-messages-and-files.md)
