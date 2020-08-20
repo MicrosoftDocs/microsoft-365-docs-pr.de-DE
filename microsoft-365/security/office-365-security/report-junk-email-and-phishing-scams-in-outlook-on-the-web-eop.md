@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Administratoren können Informationen zu den integrierten Junk-, nicht Junk-und Phishing-e-Mail-Berichtoptionen in Outlook im Internet (Outlook Web App) in Exchange Online und zum Deaktivieren dieser Berichtsoptionen für Benutzer erhalten.
-ms.openlocfilehash: adbb4f16201e221bce2405a7b715dd6a630e9e1d
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: a364afed9bb7e61d5f34ffc0206ede1c5155db65
+ms.sourcegitcommit: c692bdc186fb29499816e8bb2addcddef34d23d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617320"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46818333"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-exchange-online"></a>Melden von Junk-und Phishing-e-Mails in Outlook im Internet in Exchange Online
 
@@ -49,9 +49,9 @@ In Microsoft 365-Organisationen mit Postfächern in Exchange Online können Sie 
 
 2. Klicken Sie im angezeigten Dialogfeld auf **Bericht**. Wenn Sie Ihre Meinung ändern, klicken Sie auf **nicht melden**.
 
-   ![Dialogfeld "Bericht als Junk"](../../media/owa-report-as-junk-dialog.png)
-
-   ![Dialogfeld "als Phishing melden"](../../media/owa-report-as-phishing-dialog.png)
+   |Junk-E-Mail|Phishing-E-Mail|
+   |:---:|:---:|
+   |![Dialogfeld "Bericht als Junk"](../../media/owa-report-as-junk-dialog.png)|![Dialogfeld "als Phishing melden"](../../media/owa-report-as-phishing-dialog.png)|
 
 3. Die ausgewählten Nachrichten werden zur Analyse an Microsoft gesendet. Wenn Sie überprüfen möchten, ob die Nachrichten gesendet wurden, öffnen Sie den Ordner **Gesendete Objekte**, in dem die gesendeten Nachrichten angezeigt werden sollten.
 
@@ -67,9 +67,9 @@ In Microsoft 365-Organisationen mit Postfächern in Exchange Online können Sie 
 
 2. Lesen Sie im daraufhin angezeigten Dialogfeld die Informationen, und klicken Sie auf **Bericht**. Wenn Sie Ihre Meinung ändern, klicken Sie auf **nicht melden**.
 
-   ![Dialogfeld "Bericht als nicht-Junk"](../../media/owa-report-as-not-junk-dialog.png)
-
-   ![Dialogfeld "als Phishing melden"](../../media/owa-report-as-phishing-dialog.png)
+   |Keine Junk-E-Mail|Phishing|
+   |:---:|:---:|
+   |![Dialogfeld "Bericht als nicht-Junk"](../../media/owa-report-as-not-junk-dialog.png)|![Dialogfeld "als Phishing melden"](../../media/owa-report-as-phishing-dialog.png)|
 
 3. Die ausgewählten Nachrichten werden zur Analyse an Microsoft gesendet. Wenn Sie überprüfen möchten, ob die Nachrichten gesendet wurden, öffnen Sie den Ordner **Gesendete Objekte**, in dem die gesendeten Nachrichten angezeigt werden sollten.
 
@@ -129,7 +129,7 @@ Um zu überprüfen, ob Sie die Junk-e-Mail-Berichterstellung in Outlook im Inter
 
 - Öffnen Sie das Postfach eines betroffenen Benutzers in Outlook im Internet, wählen Sie eine Nachricht im Ordner Junk-e-Mail aus, klicken Sie auf **Junk** - \> **Junk** , und überprüfen Sie, ob die Aufforderung zum Melden der Nachricht an Microsoft angezeigt wird oder nicht.<sup>\*</sup>
 
-<sup>\*</sup>Benutzer können die Eingabeaufforderung ausblenden, um die Nachricht zu melden, während Sie die Nachricht weiterhin meldet. So überprüfen Sie diese Einstellung in Outlook im Internet:
+<sup>\*</sup> Benutzer können die Eingabeaufforderung ausblenden, um die Nachricht zu melden, während Sie die Nachricht weiterhin meldet. So überprüfen Sie diese Einstellung in Outlook im Internet:
 
 1. Klicken Sie auf **Einstellungen** ![ Outlook im Webeinstellungen-Symbol ](../../media/owa-settings-icon.png) \> **alle Outlook** \> **-Einstellungen Junk-e-Mail**anzeigen.
 2. Überprüfen Sie im Abschnitt **Berichterstellung** den Wert: **Fragen Sie mich vor dem Senden eines Berichts**.

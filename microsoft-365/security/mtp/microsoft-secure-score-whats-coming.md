@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 634f4194e450a7f3835ae0003c5632220a63108e
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 1b6bd81bc194a3b8d972661eaca393571b1ad199
+ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200050"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46815219"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Was kommt mit Microsoft Secure Score
 
@@ -32,16 +32,11 @@ Um [Microsoft-Sicherheitsbewertung](microsoft-secure-score.md) zu einem besseren
 
 Diese Änderungen werden möglicherweise in Ihrem Microsoft Secure Score in Kürze in Abhängigkeit von Ihrer Lizenz durchkommen. Wenn Sie mehr über die neuesten Änderungen wissen möchten, lesen Sie [Neuerungen in Microsoft-Sicherheitsbewertung](microsoft-secure-score-whats-new.md).
 
-### <a name="adding-improvement-actions-for-azure-advanced-threat-protection"></a>Hinzufügen von Verbesserungs Aktionen für Azure Advanced Threat Protection
-
-- Riskante laterale Bewegungspfade
-- Unsichere Kontoattribute
-- Aktivieren von Sicherheitsfunktionen in Active Directory-Vertrauensstellungen
-- Unsichere SID-Verlaufsattribute aus Entitäten entfernen
+- Ändern der maximalen Punktzahl von 7 auf 8 für die Aktion Azure Active Directory Improvement mit dem Namen "Aktivieren der Richtlinie zum Blockieren der Legacy Authentifizierung"
 
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
 - [Microsoft Secure Score (Übersicht)](microsoft-secure-score.md)
-- [Bewerten Ihrer Sicherheitsposition](microsoft-secure-score-improvement-actions.md)
+- [Zugreifen auf Ihren Sicherheitsstatus](microsoft-secure-score-improvement-actions.md)
 - [Verfolgen des Microsoft Secure Score-Verlaufs und erreichen der Ziele](microsoft-secure-score-history-metrics-trends.md)
 - [Neuigkeiten](microsoft-secure-score-whats-new.md)
