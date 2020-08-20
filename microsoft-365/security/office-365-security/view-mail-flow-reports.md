@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratoren können Informationen zu den Nachrichtenfluss Berichten erhalten, die im Dashboard Berichte im Security & Compliance Center verfügbar sind.
 ms.custom: ''
-ms.openlocfilehash: acf74136fc61d38ea9aac47f36d96aa51a7b9905
-ms.sourcegitcommit: 6319e73b3690b4cf1b7932f2b9f51c2c99e70eaa
+ms.openlocfilehash: 98b27497b758a202ccbb741f6cb10e4ec65570e9
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46635034"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814504"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Anzeigen von Nachrichtenfluss Berichten im Dashboard "Berichte" im Security & Compliance Center
 
@@ -279,6 +279,123 @@ Für die Detailansicht können Sie nur Daten für einen Tag exportieren. Wenn Si
 Jede exportierte CSV-Datei ist auf 150.000 Zeilen limitiert. Wenn die Daten für diesen Tag mehr als 150.000 Zeilen enthalten, werden mehrere CSV-Dateien erstellt.
 
 ![Richtungs Ansicht im Nachrichtenflussstatus Bericht ](../../media/mail-flow-status-report-direction-view.png)
+
+### <a name="funnel-view-for-the-mailflow-status-report"></a>Trichter Ansicht für den Nachrichtenfluss-Statusbericht
+
+In der **Trichter** Ansicht erfahren Sie, wie die e-Mail-Bedrohungsschutz Funktionen von Microsoft eingehende und ausgehende e-Mails in Ihrer Organisation filtern. Es enthält Details zur Gesamtzahl der e-Mails und dazu, wie die konfigurierten Funktionen zum Schutz vor Bedrohungen, einschließlich Edgeschutz, Antischadsoftware, AntiPhishing, Antispam-und Antispoofing diese Anzahl beeinflussen.
+
+Wenn Sie auf die Registerkarte **Trichter** klicken, enthält diese Ansicht standardmäßig ein Diagramm und eine Datentabelle, die mit den folgenden Filtern konfiguriert ist:
+
+- **Datum**: die letzten 7 Tage.
+
+- **Richtung**:
+
+  - **Eingehende**
+  - **Ausgehende**
+  - **Intra-org**: diese Anzahl gilt für Nachrichten, die innerhalb eines Mandanten gesendet werden; Das heißt, Absender-ABC@Domain.com sendet an den Empfänger XYZ@Domain.com (separat von eingehend und ausgehend gezählt).
+
+Die Ansicht aggregierte Ansicht und Datentabelle ermöglichen eine Filterung von 90 Tagen.
+
+Wenn Sie auf **Filter**klicken, können Sie sowohl das Diagramm als auch die Datentabelle filtern.
+
+Dieses Diagramm zeigt die Anzahl der e-Mail-Nachweise:
+
+  - **E-Mail insgesamt**
+  - **E-Mail nach dem Edge-Schutz**
+  - **E-Mail nach Anti-Malware, Datei Zuverlässigkeit, Dateityp Block**
+  - **E-Mail nach Anti-Phishing, URL-Reputation, Marken Identitätswechsel, Anti-Spoofing**
+  - **E-Mail nach Spam Schutz, Massen-e-Mail-Filterung**
+  - **E-Mail nach Benutzer-und Domänen Identitätswechsel**<sup>1</sup>
+  - **E-Mail nach Datei-und URL-Detonation**<sup>1</sup>
+  - **E-Mail-Nachricht wurde nach dem Zustellungs Schutz als gutartig erkannt (URL-Klick-Zeit Schutz)**
+
+<sup>1</sup> Office 365 nur ATP
+
+Wenn Sie die von EoP oder ATP gefilterte e-Mail separat anzeigen möchten, klicken Sie auf den Wert in der Diagrammlegende.
+
+Die Datentabelle enthält die folgenden Informationen, die in absteigender Datumsreihenfolge angezeigt werden:
+
+ - **Date**
+ - **E-Mail insgesamt**
+ - **Kantenschutz**
+ - **Anti-Malware, Datei Zuverlässigkeit, Dateityp Block**
+ - **Anti-Phishing, URL-Reputation, Marken Identitätswechsel, Spoofing**
+ - **Antispam-, Massen-e-Mail-Filterung**
+ - **Benutzer-und Domänen Identitätswechsel (ATP)**
+ - **Datei-und URL-Detonation (ATP)**
+ - **Schutz nach Zustellung und zap (ATP) oder zap (EoP)**
+
+Wenn Sie eine Zeile in der Datentabelle auswählen, wird im Flyout eine weitere Aufschlüsselung der e-Mail-Anzahl angezeigt.
+
+**Export**:
+
+Nachdem Sie unter **Optionen**auf **exportieren** klicken, können Sie einen der folgenden Werte auswählen:
+
+- **Zusammenfassung (höchstens mit Daten für die letzten 90 Tage)**
+- **Details (höchstens mit Daten für die letzten 30 Tage)**
+
+Wählen Sie unter **Datum**einen Bereich aus, und klicken Sie dann auf über **nehmen**. Daten für die aktuellen Filter werden in eine CSV-Datei exportiert.
+
+Jede exportierte CSV-Datei ist auf 150.000 Zeilen limitiert. Wenn die Daten mehr als 150.000 Zeilen enthalten, werden mehrere CSV-Dateien erstellt.
+
+ ![Trichter Ansicht im Nachrichtenflussstatus Bericht ](../../media/mail-flow-status-report-funnel-view.png)
+
+ ### <a name="tech-view-for-the-mailflow-status-report"></a>Tech-Ansicht für den Nachrichtenfluss-Statusbericht
+
+Die **Tech-Ansicht** ähnelt der **Trichter** Ansicht und bietet detailliertere Details für die konfigurierten Features zum Schutz vor Bedrohungen. Im Diagramm können Sie sehen, wie Nachrichten in den verschiedenen Stadien des Bedrohungsschutzes kategorisiert werden.
+
+Wenn Sie auf die Registerkarte **Tech-Ansicht** klicken, enthält diese Ansicht standardmäßig ein Diagramm und eine Datentabelle, die mit den folgenden Filtern konfiguriert ist:
+
+- **Datum**: die letzten 7 Tage.
+
+- **Richtung**:
+
+  - **Eingehende**
+  - **Ausgehende**
+  - **Intra-org**: diese Anzahl gilt für Nachrichten innerhalb eines Mandanten, d. h. Absender ABC@Domain.com wird an den Empfänger XYZ@Domain.com gesendet (separat von eingehend und ausgehend gezählt)
+
+Die Ansicht aggregierte Ansicht und Datentabelle ermöglichen eine Filterung von 90 Tagen.
+
+Wenn Sie auf **Filter**klicken, können Sie sowohl das Diagramm als auch die Datentabelle filtern.
+
+In diesem Diagramm werden Nachrichten angezeigt, die in die folgenden Kategorien aufgeteilt sind:
+
+  - **E-Mail insgesamt**
+  - **Edge-allow, Edge gefiltert**
+  - **Nicht Schadsoftware, Erkennung sicherer Anlagen (ATP), Erkennung von Anti-Malware-Engines, Regelblock**
+  - **Nicht Phishing, DMARC-Fehler, Identitätswechsel Erkennung, spoof-Erkennung, Phishing-Erkennung**
+  - **Keine Erkennung mit URL-Detonation, URL-detonations Erkennung (ATP)**
+  - **Kein Spam, Spam**
+  - **Nicht-böswillige e-Mails, Erkennung von sicheren Links (ATP), Zap**
+
+Wenn Sie mit dem Mauszeiger auf eine Kategorie im Diagramm zeigen, wird die Anzahl der Nachrichten in dieser Kategorie angezeigt.
+
+Die Datentabelle enthält die folgenden Informationen, die in absteigender Datumsreihenfolge angezeigt werden:
+
+  - **Date**  
+  - **E-Mail insgesamt**
+  - **Edge gefiltert**
+  - **Anti-Malware-Modul, sichere Anlagen, Regelfilter**
+  - **DMARC, Identitätswechsel, Spoofing, Phishing-Filterung**
+  - **URL-detonations Erkennung**
+  - **Anti-Spam gefiltert**
+  - **Zap entfernt**
+  - **Erkennung durch sichere Links**
+
+Wenn Sie eine Zeile in der Datentabelle auswählen, wird im Flyout eine weitere Aufschlüsselung der e-Mail-Anzahl angezeigt.
+
+**Export**:
+
+Beim Klicken auf **exportieren**unter **Optionen** können Sie einen der folgenden Werte auswählen:
+
+- **Zusammenfassung (höchstens mit Daten für die letzten 90 Tage)**
+- **Details (höchstens mit Daten für die letzten 30 Tage)**
+
+Wählen Sie unter **Datum**einen Bereich aus, und klicken Sie dann auf über **nehmen**. Daten für die aktuellen Filter werden in eine CSV-Datei exportiert.
+
+Jede exportierte CSV-Datei ist auf 150.000 Zeilen limitiert. Wenn die Daten mehr als 150.000 Zeilen enthalten, werden mehrere CSV-Dateien erstellt.
+
+ ![Tech-Ansicht im Nachrichtenfluss-Statusbericht ](../../media/mail-flow-status-report-Tech-view.png)
 
 ## <a name="sent-and-received-email-report"></a>Gesendete und empfangene e-Mail-Berichte
 

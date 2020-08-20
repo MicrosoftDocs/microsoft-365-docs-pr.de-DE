@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: Normalerweise ein Bestandteil einer Datensatzverwaltungslösung. Sie können eine Aufbewahrungsbezeichnung so konfigurieren, dass der Aufbewahrungszeitraum basierend auf einem von Ihnen festgelegten Ereignis gestartet wird.
-ms.openlocfilehash: 03f8446d54d905665f5bf33c2f581a869dfc478e
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 7286e65be2313f5716bfc59399c1755cadb9f6d6
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560532"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778525"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>Beginn der Aufbewahrung bei Auftreten eines Ereignisses
 
@@ -43,7 +43,7 @@ Beispiele für die Verwendung der ereignisgesteuerten Aufbewahrung:
     
 Die ereignisgesteuerte Aufbewahrung wird in der Regel als Teil eines Prozesses für die Datensatzverwaltung verwendet. Dies bedeutet:
   
-- Bezeichnungen auf Basis von Ereignissen klassifizieren in der Regel auch Inhalte als Datensatz. Weitere Informationen finden Sie unter [Informationen zu Datensätzen](records.md).
+- Bezeichnungen auf Basis von Ereignissen klassifizieren in der Regel auch Inhalte als Datensatz (als Teil einer Lösung für die Datensatzverwaltung). Weitere Informationen finden Sie unter [Informationen zur Datensatzverwaltung](records-management.md).
 
 - Ein Dokument, das als Datensatz klassifiziert wurde, dessen Ereignisauslöser jedoch noch nicht eingetreten ist, wird unbegrenzt aufbewahrt (Datensätze können nicht dauerhaft gelöscht werden), bis der Aufbewahrungszeitraum für das Dokument durch ein Ereignis ausgelöst wird.
     

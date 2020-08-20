@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Hier erfahren Sie, wie Sie eine alte Domäne aus Microsoft 365 entfernen und Benutzer und Gruppen in eine andere Domäne verlagern.
-ms.openlocfilehash: 6f5e36a897316c8cdc057a725957c54e7eb53edc
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 57e52cc4f44e41d31200b8b5469aed6c36b63d24
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45079761"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814420"
 ---
 # <a name="remove-a-domain"></a>Entfernen einer Domäne
 
@@ -228,8 +228,6 @@ Funktioniert es immer noch nicht? Die Domäne muss möglicherweise manuell entfe
 ## <a name="related-articles"></a>Verwandte Artikel
 
 [Häufig gestellte Fragen zu Domänen](../setup/domains-faq.md)
-
-[Erhalten von Hilfe zu Microsoft 365-Domänen](get-help-with-domains.md)
 
 [Wechseln zu einem anderen Microsoft 365 Business-Plan](../../commerce/subscriptions/switch-to-a-different-plan.md)
 

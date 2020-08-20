@@ -1,5 +1,5 @@
 ---
-title: Dokumentmetadaten-Felder in Advanced eDiscovery
+title: Dokument-Metadatenfelder in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In diesem Artikel werden die Metadatenfelder für Dokumente in einem Überprüfungs Satz in einem Fall in Advanced eDiscovery in Microsoft 365 definiert.
-ms.openlocfilehash: e419cb14d1b0adbebd6d45aaa5120933b060bdf9
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 69b22155f209f155aa0b311f67f3e69841093003
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126952"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814387"
 ---
-# <a name="document-metadata-fields-in-advanced-ediscovery"></a>Dokumentmetadaten-Felder in Advanced eDiscovery
+# <a name="document-metadata-fields-in-advanced-ediscovery"></a>Dokument-Metadatenfelder in Advanced eDiscovery
 
 In der folgenden Tabelle sind die Metadatenfelder für Dokumente in einer Überprüfungsgruppe in einem Fall in Advanced eDiscovery aufgeführt. Die Tabelle enthält die folgenden Informationen:
 
@@ -93,17 +93,22 @@ In der folgenden Tabelle sind die Metadatenfelder für Dokumente in einer Überp
 |Erstelltes Dateisystem Datum||File_system_date_created|Erstellungsdatum aus dem Dateisystem (gilt nur für nicht Office 365 Daten).|
 |Dateisystem Datum geändert||File_system_date_modified|Änderungsdatum aus dem Dateisystem (gilt nur für nicht Office 365 Daten).|
 |Dateityp|FileType||Dateityp des Elements basierend auf der Dateierweiterung.|
+|Gruppen-ID| GroupID|  |Gruppen-ID für gruppierten Inhalt.|
 |Weist eine Anlage auf|HasAttachment|Email_has_attachment|Gibt an, ob die Nachricht Anlagen enthält.|
 |Hat Anwalt|HasAttorney||**True** , wenn mindestens einer der Teilnehmer in der anwaltsliste gefunden wird; Andernfalls ist der Wert **false**.|
 |HasText||Has_text|Gibt an, ob das Element über Text verfügt oder nicht. mögliche Werte sind **true** und **false**.|
 |Unveränderliche ID||Immutable_ID|Diese ID wird verwendet, um ein Dokument innerhalb eines Überprüfungs Satzes eindeutig zu identifizieren. Dieses Feld kann nicht in einer Überprüfung festgelegten Suche verwendet werden, und die ID kann nicht für den Zugriff auf ein Dokument an seinem systemeigenen Speicherort verwendet werden.|
 |Inklusiv-Typ|Inklusivtype|Inclusive_type|Integrativer Typ, berechnet für Analyse: **0** -nicht inklusive; **1** – inklusive; **2** – inklusive minus; **3** -inclusive-Kopie.|
 |In Antwort an ID||In_reply_to_ID|In Antwort an ID aus der Nachricht.|
+|Ist eine moderne Anlage| IsModernAttachment|  |Diese Datei ist eine moderne Anlage oder verknüpfte Datei.|
+|Stammt aus Dokumentversion | IsFromDocumentVersion |  |Das aktuelle Dokument stammt aus einer anderen Version eines anderen Dokuments.|
+|E-Mail-Anlage | IsEmailAttachment|  |Dieses Element stammt aus einer e-Mail-Anlage, die als angefügtes Element an die Nachricht angezeigt wird.|
+|Ist Inline Anlage| IsInlineAttachment|  |Dieser wurde Inline angefügt und wird im Textkörper der Nachricht angezeigt.|
 |Ist repräsentativ|Isrepresentative|Is_representative|Ein Dokument in jeder Gruppe exakter Duplikate wird als repräsentativ gekennzeichnet.|
 |Elementklasse|ItemClass|Item_class|Von Exchange Server bereitgestellte Item-Klasse; Beispiel: **IPM. Hinweis:**|
 |Datum der letzten Änderung|LastModifiedDate|Doc_date_modified|Datum der letzten Änderung aus Dokumentmetadaten.|
 |Laden-ID|Lade-Nr|Load_ID|Die ID des Lade Satzes, in dem das Element einem Überprüfungs Satzes hinzugefügt wurde.|
-|Speicherort|Speicherort|Speicherort|Zeichenfolge, die den Typ des Speicherorts angibt, aus dem Dokumente stammen.<br /><br />**Importierte Daten** – nicht Office 365 Daten<br />**Teams** – Microsoft Teams<br />**Exchange** -Exchange-Postfächer<br />**SharePoint** -SharePoint-Websites<br />**OneDrive** -OneDrive-Konten|
+|Standort|Standort|Standort|Zeichenfolge, die den Typ des Speicherorts angibt, aus dem Dokumente stammen.<br /><br />**Importierte Daten** – nicht Office 365 Daten<br />**Teams** – Microsoft Teams<br />**Exchange** -Exchange-Postfächer<br />**SharePoint** -SharePoint-Websites<br />**OneDrive** -OneDrive-Konten|
 |Speicherort Name|LocationName|Location_name|Zeichenfolge, die die Quelle des Elements angibt. Für Exchange ist dies die SMTP-Adresse des Postfachs. für SharePoint und OneDrive die URL für die Websitesammlung.|
 |Als repräsentativ gekennzeichnet|MarkAsRepresentative||Ein Dokument aus den einzelnen Sätzen exakter Duplikate wird als Repräsentanten markiert.|
 |Als Pre-Tagged-Case-Problem 1 * markiert||Marked_as_pre_tagged_Case_issue_1|Als vorab markiertes Fall Problem 1 von Relevanz gekennzeichnet.|

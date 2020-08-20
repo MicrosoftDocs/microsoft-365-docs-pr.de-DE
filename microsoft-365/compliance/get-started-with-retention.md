@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sie sind bereit, Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen zum Schutz der Daten Ihrer Organisation zu implementieren, sind sich aber nicht sicher, wie Sie dies bewerkstelligen sollten? Hier finden Sie einige praktische Anweisungen für die ersten Schritte.
-ms.openlocfilehash: 910d5b64addfeda077a5fd34eb2409a9cac2516d
-ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
+ms.openlocfilehash: 33b2fbd40c19d1f4e2e2ef042eaa2fe21080eec1
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46588173"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778291"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Erste Schritte zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
@@ -52,7 +52,7 @@ Die Optionen für die Lizenzierung Ihrer Benutzer zur Nutzung der Microsoft 365-
 
 Die Mitglieder Ihres Complianceteams, die Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen erstellen und verwalten sollen, benötigen Berechtigungen für das [Microsoft 365 Compliance Center](https://compliance.microsoft.com/). Standardmäßig hat der Mandantenadministrator (Globaler Administrator) Zugriff auf diese Ressource und kann anderen Personen den Zugriff darauf gewähren, ohne ihnen alle Berechtigungen eines Mandantenadministrators zu geben. Um Berechtigungen für diese eingeschränkte Administration zu erteilen, empfehlen wir, Benutzer zur Administrator-Rollengruppe „**Compliance Administrator**“ hinzuzufügen. Anweisungen finden Sie unter [Benutzern den Zugriff auf das Security & Compliance Center gewähren](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
 
-Diese Berechtigungen sind nur erforderlich, um eine Aufbewahrungsrichtlinie zu erstellen und anzuwenden. Die Person, die die Aufbewahrungsrichtlinie konfiguriert, benötigt keinen Zugriff auf die Inhalte.
+Diese Berechtigungen sind nur erforderlich, um Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen zu erstellen und anzuwenden. Die Person, die die Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen konfiguriert, benötigt keinen Zugriff auf die Inhalte.
 
 ## <a name="common-scenarios-for-retention-policies-and-retention-labels"></a>Allgemeine Szenarien für Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
@@ -67,11 +67,12 @@ Anhand der folgenden Tabelle können Sie Ihre geschäftlichen Anforderungen ents
 |Aufbewahrungs- und Löschaktionen automatisch auf Dokumente und E-Mails anwenden |[Automatisches Anwenden einer Aufbewahrungsbezeichnung auf Inhalte](apply-retention-labels-automatically.md)|
 |Starten Sie den Aufbewahrungszeitraum mit einem bestimmten Ereignis, wie:  <br />– Mitarbeiter verlässt das Unternehmen <br />– Vertrag läuft aus <br />– Ende der Produktlebensdauer| [Aufbewahrung mit Eintritt eines Ereignisses starten](event-driven-retention.md)|
 |Verwalten des Lebenszyklus verschiedener Dokumenttypen in SharePoint| [Verwenden von Aufbewahrungsbezeichnungen zum Verwalten des Lebenszyklus von in SharePoint gespeicherten Dokumenten](auto-apply-retention-labels-scenario.md)|
-|Verwenden einer einzelnen Datensatzverwaltungslösung für Dokumente und E-Mails |[Datensatzverwaltung in Microsoft 365](records-management.md) |
-|Einhaltung der SEC-Richtlinie 17a-4|[Verwenden von Exchange Online und des Security & Compliance Centers, zur Einhaltung der SEC-Richtlinie 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
+|Einhaltung der SEC-Regel 17a-4|[Verwenden von Exchange Online und des Security & Compliance Centers, zur Einhaltung der SEC-Richtlinie 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
 |Vergewissern Sie sich, dass das Löschen von Inhalten am Ende deren Aufbewahrungszeitraums von jemandem überprüft und genehmigt wird|[Dispositionsüberprüfungen](disposition.md#disposition-reviews) |
-|Vergewissern Sie sich, dass Sie für Inhalte, die am Ende deren Aufbewahrungszeitraums gelöscht werden, einen Dispositionsnachweis haben|[Disposition von Datensätzen](disposition.md#disposition-of-records) |
 | Überwachen Sie, wie und wo die Aufbewahrungsbezeichnungen angewendet werden | [Überwachen von Aufbewahrungsbezeichnungen](retention.md#monitoring-retention-labels) |
+|Verwenden einer einzelnen Datensatzverwaltungslösung für Dokumente und E-Mails |[Mehr zur Datensatzverwaltung](records-management.md) |
+
+Wenn Sie Aufbewahrungsbezeichnungen für die Datensatzverwaltung verwenden, gibt es zusätzliche Szenarios, die einzigartig für Aufbewahrungsbezeichnungen sind, die Inhalte als Datensatz kennzeichnen. Siehe [Häufige Szenarien für die Datensatzverwaltung](get-started-with-records-management.md#common-scenarios-for-records-management).
 
 ## <a name="end-user-documentation-for-retention-labels"></a>Dokumentation zu Aufbewahrungsbezeichnungen für Endbenutzer
 

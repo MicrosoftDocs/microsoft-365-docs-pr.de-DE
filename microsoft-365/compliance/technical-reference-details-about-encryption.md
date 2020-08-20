@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Erfahren Sie mehr über die verschiedenen Zertifikate, Technologien und TLS-Verschlüsselungs Pakete, die für die Verschlüsselung in Office 365 verwendet werden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c9bc61a7c7a35d84d5e4ff338927ead98a932d9d
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 68e4b2923d2b250e85efa7fdc50a995db397d670
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649096"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814367"
 ---
 # <a name="technical-reference-details-about-encryption"></a>Technische Details zur Verschlüsselung
 
@@ -81,10 +81,6 @@ Bei einer Cipher Suite handelt es sich um eine Sammlung von Verschlüsselungsalg
 |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA <br/>        |ECDH/128 <br/>|Ja <br/>|AES/128 <br/>|RSA/112 <br/> |
 |TLS_RSA_WITH_AES_256_GCM_SHA384 <br/>           |RSA/112 <br/> |Nein <br/> |AES/256 <br/>|RSA/112 <br/> |
 |TLS_RSA_WITH_AES_128_GCM_SHA256 <br/>           |RSA/112 <br/> |Nein <br/> |AES/256 <br/>|RSA/112 <br/> |
-|TLS_RSA_WITH_AES_256_CBC_SHA256 <br/>           |RSA/112 <br/> |Nein <br/> |AES/256 <br/>|RSA/112 <br/> |
-|TLS_RSA_WITH_AES_128_CBC_SHA256 <br/>           |RSA/112 <br/> |Nein <br/> |AES/128 <br/>|RSA/112 <br/> |
-|TLS_RSA_WITH_AES_256_CBC_SHA <br/>              |RSA/112 <br/> |Nein <br/> |AES/256 <br/>|RSA/112 <br/> |
-|TLS_RSA_WITH_AES_128_CBC_SHA <br/>              |RSA/112 <br/> |Nein <br/> |AES/128 <br/>|RSA/112 <br/> |
 
 Dies sind die folgenden Verschlüsselungs Pakete, die weiterhin TLS 1,0-und 1,1-Protokolle bis zu Ihrem veralteten Datum unterstützen. Für gcc-High-und DoD-Umgebungen, in denen das Datum der veralteten Daten vom 15. Januar 2020 und für die weltweiten und gcc-Umgebungen am 15. Oktober 2020.
 
@@ -94,6 +90,8 @@ Dies sind die folgenden Verschlüsselungs Pakete, die weiterhin TLS 1,0-und 1,1-
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA  <br/> |ECDH/128  <br/> |Ja  <br/> |RSA/112  <br/> |AES/128  <br/> |
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA        <br/> |RSA/112  <br/>  |Nein  <br/>  |RSA/112  <br/> |AES/256  <br/> |
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA        <br/> |RSA/112  <br/>  |Nein  <br/>  |RSA/112  <br/> |AES/128  <br/> |
+|TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA256     <br/> |RSA/112  <br/>  |Nein   <br/> |RSA/112  <br/> |AES/256  <br/> |
+|TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA256     <br/> |RSA/112  <br/>  |Nein   <br/> |RSA/112  <br/> |AES/256  <br/> |
    
 ## <a name="related-topics"></a>Verwandte Themen
 [TLS-Verschlüsselungs Pakete in Windows 10 v1903](https://docs.microsoft.com/windows/win32/secauthn/tls-cipher-suites-in-windows-10-v1903)

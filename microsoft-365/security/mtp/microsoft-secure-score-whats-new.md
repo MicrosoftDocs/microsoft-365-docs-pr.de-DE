@@ -20,16 +20,25 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 4f9f4f40b9cd88cad1676417d467d04367eaa0be
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 644e12d3b9dfecc0a31c8d464033e41670bc7b88
+ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200150"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46815231"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Neuerungen in Microsoft Secure Score
 
 Damit die Microsoft-Sicherheitsbewertung zu einem besseren Ansprechpartner für Ihren Sicherheitsstatus wird, haben wir einige Änderungen vorgenommen. Wenn Sie mehr über geplante Änderungen wissen möchten, lesen Sie [Bald in der Microsoft-Sicherheitsbewertung verfügbar](microsoft-secure-score-whats-coming.md).
+
+## <a name="july-2020"></a>Juli 2020
+
+### <a name="adding-improvement-actions-for-azure-advanced-threat-protection"></a>Hinzufügen von Verbesserungs Aktionen für Azure Advanced Threat Protection
+
+- Riskante laterale Bewegungspfade
+- Unsichere Kontoattribute
+- Aktivieren von Sicherheitsfunktionen in Active Directory-Vertrauensstellungen
+- Unsichere SID-Verlaufsattribute aus Entitäten entfernen
 
 ## <a name="june-2020"></a>Juni 2020
 
@@ -83,6 +92,6 @@ Wenn Sie Probleme haben, informieren Sie uns mit einem Beitrag in der Community 
 
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
-- [Bewerten Ihrer Sicherheitsposition](microsoft-secure-score-improvement-actions.md)
+- [Zugreifen auf Ihren Sicherheitsstatus](microsoft-secure-score-improvement-actions.md)
 - [Verfolgen des Microsoft Secure Score-Verlaufs und erreichen der Ziele](microsoft-secure-score-history-metrics-trends.md)
 - [Was in Kürze verfügbar ist](microsoft-secure-score-whats-coming.md)

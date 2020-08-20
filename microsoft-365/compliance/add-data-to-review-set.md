@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie, wie Sie Suchergebnisse oder Beispiele dieser Suchergebnisse zu einer erweiterten eDiscovery-Fall Prüfungsgruppe hinzufügen.
-ms.openlocfilehash: 5e0cdb12a34b3b69c41546e6fcb356ed905189dd
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 687cc33c0e7e6a09fb352e9c13058a6fcac30053
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034669"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814527"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Hinzufügen von Suchergebnissen zu einem Prüfdateisatz
 
@@ -45,7 +45,17 @@ Sie können zu einer vorhandenen Überprüfungsgruppe hinzufügen oder einen neu
 
 ![Auswählen eines Überprüfungs Satzes](../media/e8c6ab51-da8d-4c39-9b21-26bfdf453fb9.png)
 
-Das Hinzufügen von Daten zu einem Überprüfungs Satzes ist ein langwieriger Prozess. Dieser Prozess umfasst das Sammeln von Elementen aus den ursprünglichen Datenquellen in Microsoft 365 (beispielsweise aus Postfächern und Websites), das Kopieren dieser Elemente in den Azure-Speicherort (dieser Kopiervorgang wird auch als *Einnahme*bezeichnet) und das anschließende erneute Indizieren der Elemente. Sie können den Fortschritt auf der Registerkarte **Aufträge** oder auf der Registerkarte **Suchen** überwachen, indem Sie den Status in der Spalte **hinzugefügte Daten zum Überprüfen des Satzes über** wachen. Klicken Sie nach Abschluss der Überarbeitungs Satzverarbeitung auf die Registerkarte **Überprüfungs Sätze** für den Fall, und klicken Sie auf den Überprüfungs Satz, um das Filtern, überprüfen, markieren und Exportieren von Daten in der Überprüfungsgruppe zu starten.
+## <a name="define-options-to-scope-your-collection-for-review"></a>Definieren von Optionen zum Bereich Ihrer Sammlung zur Überprüfung
+
+Wenn Sie den Inhalt einer Suche zu einer vorhandenen Überprüfungsgruppe hinzufügen oder einen neuen erstellen, haben Sie Optionen zum Erfassen der Inhalte zur Überprüfung:
+
+- **Konversations Überprüfungs Satz** : die dem Überprüfungs Satz hinzugefügten Elemente werden für threadbezogene Unterhaltungen aktiviert, damit Inhalte im Kontext der hin-und her-Unterhaltung überprüft werden, siehe Weitere Informationen in diesem Artikel [Conversation Review Sets]
+
+- **Abruf für moderne Anlage aktivieren** – verwenden Sie dieses Steuerelement, um moderne Anlagen oder verknüpfte Dateien zur weiteren Überprüfung in die Sammlung einzubeziehen. Weitere Informationen zu den neuen durchsuchbaren Feldnamen, die für die Gruppierung dieses Inhalts zur Verfügung stehen, finden Sie unter [Document Metadata fields in Advanced eDiscovery]
+
+- **Include-Versionen von SharePoint (Beta)** : dieses Steuerelement ermöglicht die Sammlung aller Versionen einer SharePoint-Datei pro Versions Limits und Suchparametern der Auflistung. Hinweis: dieses Steuerelement nimmt die Größe der Auflistung erheblich zu.
+
+Das Hinzufügen von Daten zu einem Prüfdateisatz ist ein langwieriger Prozess. Dieser Prozess umfasst das Sammeln von Elementen aus den ursprünglichen Datenquellen in Microsoft 365 (beispielsweise aus Postfächern und Websites), das Kopieren dieser Elemente in den Azure-Speicherort (dieser Kopiervorgang wird auch als *Einnahme*bezeichnet) und das anschließende erneute Indizieren der Elemente. Sie können den Fortschritt auf der Registerkarte **Aufträge** oder auf der Registerkarte **Suchen** überwachen, indem Sie den Status in der Spalte **hinzugefügte Daten zum Überprüfen des Satzes über** wachen. Klicken Sie nach Abschluss der Überarbeitungs Satzverarbeitung auf die Registerkarte **Überprüfungs Sätze** für den Fall, und klicken Sie auf den Überprüfungs Satz, um das Filtern, überprüfen, markieren und Exportieren von Daten in der Überprüfungsgruppe zu starten.
 
 ## <a name="add-a-sample-to-a-review-set"></a>Hinzufügen eines Beispiels zu einem Überprüfungs Satzes
 
@@ -59,8 +69,8 @@ Wenn Sie einem Überprüfungs Satzes ein Beispiel hinzufügen möchten, klicken 
 
 Nachdem Sie eine der vorherigen Optionen ausgewählt und konfiguriert haben, wählen Sie eine Überprüfungsgruppe aus, der Sie das Beispiel hinzufügen möchten, und klicken Sie dann auf **senden**. Sie können den Fortschritt auch wieder auf der Registerkarte **Aufträge** oder auf der Registerkarte **Suchen** verfolgen, indem Sie den Status in der Spalte **hinzugefügte Daten zum Überprüfen des Satzes über** wachen.
 
-## <a name="optical-character-recognition"></a>Optische Zeichenerkennung
+## <a name="optical-character-recognition"></a>Optical Character Recognition (optische Zeichenerkennung)
 
-Wenn Sie Suchergebnisse zu einem Überprüfungs Satz hinzufügen, extrahiert die OCR-Funktion (Optical Character Recognition) in Advanced eDiscovery automatisch Text aus Bildern und enthält den Bildtext mit den Daten, die einem Überprüfungs Satz hinzugefügt wurden. Sie können den extrahierten Text im Text Betrachter der ausgewählten Bilddatei im überprüfungsordner anzeigen. Auf diese Weise können Sie eine weitere Überprüfung und Analyse von Text in Bildern durchführen. OCR wird für lose Dateien, e-Mail-Anlagen und eingebettete Bilder unterstützt. Eine Liste der Bilddateiformate, die für die OCR unterstützt werden, finden Sie unter [Supported file types in Advanced eDiscovery](supported-filetypes-ediscovery20.md#image).
+Wenn Sie Suchergebnisse zu einem Überprüfungs Satz hinzufügen, extrahiert die OCR-Funktion (Optical Character Recognition) in Advanced eDiscovery automatisch Text aus Bildern und enthält den Bildtext mit den Daten, die einem Überprüfungs Satz hinzugefügt wurden. Sie können den extrahierten Text im Text Betrachter der ausgewählten Bilddatei im überprüfungsordner anzeigen. Auf diese Weise können Sie den Text in Bildern genauer überprüfen und analysieren. OCR wird für lose Dateien, E-Mail-Anlagen und eingebettete Bilder unterstützt. Eine Liste der Bilddateiformate, für die OCR unterstützt wird, finden Sie unter [Unterstützte Dateitypen in Advanced eDiscovery](supported-filetypes-ediscovery20.md#image).
 
-Sie müssen OCR-Funktionen für jeden Fall aktivieren, den Sie in Advanced eDiscovery erstellen. Weitere Informationen finden Sie unter [Configure Search and Analytics Settings](configure-search-and-analytics-settings-in-advanced-ediscovery.md#optical-character-recognition-ocr).
+Sie müssen die OCR-Funktion für jeden Fall aktivieren, den Sie in Advanced eDiscovery erstellen. Weitere Informationen finden Sie unter [Configure Search and Analytics Settings](configure-search-and-analytics-settings-in-advanced-ediscovery.md#optical-character-recognition-ocr).

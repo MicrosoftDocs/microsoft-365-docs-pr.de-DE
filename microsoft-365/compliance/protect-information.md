@@ -14,19 +14,25 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: Implementieren Sie die Funktionen von Microsoft Information Protection (MIP) in Microsoft 365, damit Sie vertrauliche Informationen überall dort, wo Sie leben oder Reisen, erkennen, klassifizieren und schützen können.
-ms.openlocfilehash: 058a1b46f879b2cc4b8ada8f2a5de88717958e94
-ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
+description: Implementieren Sie die Funktionen von Microsoft Information Protection (MIP) mithilfe der Microsoft 365-Konformität, damit Sie vertrauliche Informationen überall dort, wo Sie leben oder Reisen, erkennen, klassifizieren und schützen können.
+ms.openlocfilehash: 96082bc70b093e763be00c847bb6a68ce302c8a9
+ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 08/19/2020
-ms.locfileid: "46804185"
+ms.locfileid: "46815202"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection in Microsoft 365
 
 >*[Lizenzierung für Microsoft 365 Security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-Verwenden Sie Microsoft Information Protection (häufig abgekürzt MIP), damit Sie vertrauliche Informationen überall dort, wo Sie leben oder Reisen, erkennen, klassifizieren und schützen können.
+Mithilfe von Microsoft Information Protection (MIP) können Sie vertrauliche Informationen überall dort, wo Sie leben oder Reisen, erkennen, klassifizieren und schützen.
+
+Die MIP-Funktionen sind in der Microsoft 365-Konformität enthalten und bieten Ihnen die Tools, um [Ihre Daten zu kennen](#know-your-data), [Ihre Daten zu schützen](#protect-your-data)und [Datenverlust zu verhindern](#prevent-data-loss).
+
+![Kennen Sie Ihre Daten, schützen Sie Ihre Daten, verhindern Sie Datenverlust, Steuern Sie Ihre Daten](../media/powered-by-intelligent-platform.png)
+
+Informationen zum Steuern ihrer Daten finden Sie unter [Microsoft Information Governance in Microsoft 365](manage-Information-governance.md).
 
 ## <a name="know-your-data"></a>Kennen Sie Ihre Daten
 

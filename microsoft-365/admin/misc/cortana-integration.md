@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: Wenn Benutzer mit gültigen Geschäfts-oder Schul Konten angemeldet sind, können Sie Cloud-basierte Unterstützungsdienste mit Cortana in Microsoft 365-Erfahrungen erhalten, die die Datenschutz-, Sicherheits-und Konformitäts Zusagen von Office 365 auf Unternehmensebene erfüllen.
-ms.openlocfilehash: 29e04726b04fafb0b79e5ba4625dce2ae74bfc67
-ms.sourcegitcommit: 6fb2a1c404ea3c3573b0f7803bf17459a9387891
+ms.openlocfilehash: e7464525774e15d5b54f1b2321948aef5d998558
+ms.sourcegitcommit: c692bdc186fb29499816e8bb2addcddef34d23d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46788848"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46818301"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana in Microsoft 365
 
@@ -101,6 +101,8 @@ Einzelne Benutzer können Cortana-VoIP-Unterstützung in den Teams Mobile App te
 
 4. Aktivieren oder deaktivieren Sie die Umschaltfläche, je nachdem, ob Sie Cortana-VoIP-Unterstützung für dieses Gerät wünschen.
 
+[Weitere Informationen zur Cortana-VoIP-Unterstützung in Microsoft Teams](https://support.microsoft.com/en-us/office/using-cortana-voice-assistance-in-teams-274bb2f0-d962-4182-b45d-307435cea256?ui=en-us&rs=en-us&ad=us)
+
 ### <a name="play-my-emails"></a>Meine e-Mails abspielen
 
 "Meine e-Mail-Nachrichten abspielen" (wie mit Outlook Mobile verbunden) ist eine sprachgesteuerte, Freisprecheinrichtung für Benutzer, die neue Nachrichten in Ihrem fokussierten Posteingang abhören und Änderungen an Ihrem Tag über die Lautsprecher auf Ihrem Telefon, einem Kopfhörer oder einem angeschlossenen Audiogerät durchführt. Benutzer können Cortana bitten, ihre letzten e-Mail-Nachrichten vorzulesen und bitten Cortana, Aktionen wie kennzeichnen, archivieren, löschen und Überspringen von Nachrichten durchführen zu lassen. Dieses Feature ist besonders hilfreich, um Ihre e-Mails beim Pendeln, Multitasking oder unterwegs aufzuholen. Wenn der Benutzer mit Cortana unter "meine e-Mails abspielen" kommuniziert, wird die sprach-audioanforderung direkt an Cortana Enterprise Services weitergeleitet. In der Office 365 Cloud wird eine Text-zu-Sprache-Anzeige der e-Mail-Adresse des Benutzers verarbeitet. Während dieses Vorgangs werden keine Office 365 Daten auf dem mobilen Gerät des Benutzers verarbeitet, und es werden keine e-Mail-Daten gespeichert. Eine Abschrift der gesprochenen Befehle (d. h. "als gelesen markieren", "weiter", "kennzeichnen" usw.) kann in Übereinstimmung mit den Datenschutzbedingungen in den Microsoft [Online Services-Nutzungsbedingungen](https://www.microsoft.com/licensing/product-licensing/products)aufbewahrt werden.
@@ -133,7 +135,7 @@ Administratoren können das Briefing für Ihre Organisation mithilfe von [PowerS
 
 Wir werden weiterhin weitere Erfahrungen wie die oben genannten durchführen, um die Produktivität Ihres Unternehmens zu verbessern.
 
-Erfahren Sie mehr über [Microsoft Compliance-Angebote](https://docs.microsoft.com/microsoft-365/compliance/offering-home).
+[Weitere Informationen zu Microsoft Compliance-angeboten](https://docs.microsoft.com/microsoft-365/compliance/offering-home)
 
 ## <a name="how-is-the-delivery-of-cortana-enterprise-services-different-from-the-delivery-of-other-cortana-features-i-may-have-previously-experienced"></a>Wie unterscheidet sich die Bereitstellung von Cortana Enterprise Services von der Bereitstellung anderer Cortana-Funktionen, die ich zuvor möglicherweise erfahren habe?
 

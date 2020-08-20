@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Fügen Sie Ihre Domäne zu Microsoft 365 im Microsoft 365 Admin Center hinzu, indem Sie einen DNS-Eintrag auf Ihrem DNS-Host hinzufügen. Der Setup-Assistent führt Sie nun durch den Vorgang.
-ms.openlocfilehash: 8b70466e5cf82d9cf5be67162263f28ab5bd0d5d
-ms.sourcegitcommit: 20c219332270f1013d48b39773dd0e48dabad9e4
+ms.openlocfilehash: 0adf8b4dcd5d7bd31038b74a574f449f32bfb037
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46592298"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814432"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Hinzufügen einer Domäne zu Microsoft 365
 
@@ -124,7 +124,7 @@ Führen Sie die folgenden Schritte aus, um einen benutzerdefinierten Datensatz f
 
 5. Wählen Sie den Typ des DNS-Eintrags aus, den Sie hinzufügen möchten, und geben Sie die Informationen für den neuen Datensatz ein.
     
-6. Wählen Sie **Speichern** aus.
+6. Klicken Sie auf **Speichern**.
 
 ## <a name="registrars-with-domain-connect"></a>Registrierungsstellen mit Domäne Connect
 
@@ -163,5 +163,3 @@ Wenn Sie über eine Website verfügen, die Sie für Ihr Unternehmen verwenden, f
 [Erwerben eines Domänennamens in Microsoft 365](../get-help-with-domains/buy-a-domain-name.md)
 
 [Einrichten Ihrer Domäne (hostspezifische Anweisungen)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
-
-[Abrufen von Hilfe zu Domänen](../get-help-with-domains/get-help-with-domains.md)

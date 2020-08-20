@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Erfahren Sie, wie Sie überprüfen, ob Ihr e-Mail-und Domänenbesitz einen nicht verwalteten Mandanten in Microsoft 365 übernimmt.
-ms.openlocfilehash: 1eb54a6c34c9700bda09a660c71d2b1222fcdb8c
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 9c1d98616b10737553060bcbad62df9b3b4c0c9a
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45022157"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814468"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>Ausführen einer internen Übernahme durch den Administrator
 
@@ -72,9 +72,7 @@ YouTube: [3 Schritte zum Ausführen einer Übernahme durch IT-Administratoren f�
 
 [Übernahme von Administratoren in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover)
 
-[Abrufen von Hilfe zu Domänen](../get-help-with-domains/get-help-with-domains.md)
-
-[Verwenden von Self-Service-Registrierung in Ihrer Organisation](self-service-sign-up.md)
+[Verwenden der Self-Service-Registrierung in Ihrer Organisation](self-service-sign-up.md)
   
 [Grundlegendes zur Rolle des Power BI-Dienstadministrators](https://docs.microsoft.com/power-bi/service-admin-role)
 
