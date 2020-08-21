@@ -1,109 +1,109 @@
 ---
-title: Neue Benutzer, die e-Mail-Insight weiterleiten
+title: Einblick in E-Mail-Weiterleitung von neuen Benutzern
 f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
 description: Administratoren erfahren, wie Sie mit den neuen Benutzern, die e-Mail-Einblicke im Security & Compliance Center weiterleiten, untersuchen können, wann Benutzer in Ihrer Organisation Nachrichten an neue domänenweiter leiten.
-ms.openlocfilehash: 73ab6d1c9601ad40d469984b0ba18191a0917941
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: cb2e16d321e181916219e3425c26e59ebe31b866
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46578376"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826975"
 ---
-# <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a><span data-ttu-id="4a0e8-103">Neue Benutzer, die e-Mail-Insight im Security & Compliance Center weiterleiten</span><span class="sxs-lookup"><span data-stu-id="4a0e8-103">New users forwarding email insight in the Security & Compliance Center</span></span>
+# <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a><span data-ttu-id="2fb71-103">Neue Benutzer, die e-Mail-Insight im Security & Compliance Center weiterleiten</span><span class="sxs-lookup"><span data-stu-id="2fb71-103">New users forwarding email insight in the Security & Compliance Center</span></span>
 
-<span data-ttu-id="4a0e8-104">Es ist verdächtig, wenn neue Benutzerkonten in Ihrer Organisation plötzlich mit der Weiterleitung von e-Mail-Nachrichten an externe Domänen beginnen.</span><span class="sxs-lookup"><span data-stu-id="4a0e8-104">It's suspicious when new user accounts in your organization suddenly start forwarding email messages to external domains.</span></span>
+<span data-ttu-id="2fb71-104">Es ist verdächtig, wenn neue Benutzerkonten in Ihrer Organisation plötzlich mit der Weiterleitung von e-Mail-Nachrichten an externe Domänen beginnen.</span><span class="sxs-lookup"><span data-stu-id="2fb71-104">It's suspicious when new user accounts in your organization suddenly start forwarding email messages to external domains.</span></span>
 
-<span data-ttu-id="4a0e8-105">Die **neuen Domänen, die in e-Mail-Insight weitergeleitet** werden, erhalten eine Benachrichtigung, wenn neu erstellte Benutzer in Ihrer Organisation Nachrichten an externe domänenweiter leiten.</span><span class="sxs-lookup"><span data-stu-id="4a0e8-105">The **New domains being forwarded email** insight notifies you when newly-created users in your organization are forwarding messages to external domains.</span></span> <span data-ttu-id="4a0e8-106">Diese Bedingung kann darauf hindeuten, dass kompromittierte Administratorkonten verwendet wurden, um die neuen Benutzer zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="4a0e8-106">This condition could indicate compromised admin accounts were used to create the new users.</span></span> <span data-ttu-id="4a0e8-107">Wenn Sie vermuten, dass die Konten kompromittiert wurden, finden Sie weitere Informationen unter [reagieren auf ein kompromittiertes e-Mail-Konto](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account).</span><span class="sxs-lookup"><span data-stu-id="4a0e8-107">If you suspect the accounts have been compromised, see [Responding to a compromised email account](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account).</span></span>
+<span data-ttu-id="2fb71-105">Die **neuen Domänen, die in e-Mail-Insight weitergeleitet** werden, erhalten eine Benachrichtigung, wenn neu erstellte Benutzer in Ihrer Organisation Nachrichten an externe domänenweiter leiten.</span><span class="sxs-lookup"><span data-stu-id="2fb71-105">The **New domains being forwarded email** insight notifies you when newly-created users in your organization are forwarding messages to external domains.</span></span> <span data-ttu-id="2fb71-106">Diese Bedingung kann darauf hindeuten, dass kompromittierte Administratorkonten verwendet wurden, um die neuen Benutzer zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="2fb71-106">This condition could indicate compromised admin accounts were used to create the new users.</span></span> <span data-ttu-id="2fb71-107">Wenn Sie vermuten, dass die Konten kompromittiert wurden, finden Sie weitere Informationen unter [reagieren auf ein kompromittiertes e-Mail-Konto](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account).</span><span class="sxs-lookup"><span data-stu-id="2fb71-107">If you suspect the accounts have been compromised, see [Responding to a compromised email account](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account).</span></span>
 
-<span data-ttu-id="4a0e8-108">Diese Einblicke wird nur angezeigt, wenn das Problem erkannt wird und auf der Seite [weiterleitender Bericht](view-mail-flow-reports.md#forwarding-report) angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="4a0e8-108">This insight appears only when the issue is detected, and it appears on the [Forwarding report](view-mail-flow-reports.md#forwarding-report) page.</span></span>
+<span data-ttu-id="2fb71-108">Diese Einblicke wird nur angezeigt, wenn das Problem erkannt wird und auf der Seite [weiterleitender Bericht](view-mail-flow-reports.md#forwarding-report) angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="2fb71-108">This insight appears only when the issue is detected, and it appears on the [Forwarding report](view-mail-flow-reports.md#forwarding-report) page.</span></span>
 
-![Neue Benutzer, die e-Mail-Insight weiterleiten](../../media/mfi-new-users-forwarding-email.png)
+![Einblick in E-Mail-Weiterleitung von neuen Benutzern](../../media/mfi-new-users-forwarding-email.png)
 
-<span data-ttu-id="4a0e8-110">Wenn Sie auf das Widget klicken, wird ein Flyout angezeigt, in dem Sie weitere Details zu den weitergeleiteten Nachrichten finden können, einschließlich eines Links zum [Weiterleiten von Änderungs Berichten](#forwarding-modifications-report) wie weiter unten in diesem Thema beschrieben.</span><span class="sxs-lookup"><span data-stu-id="4a0e8-110">When you click on the widget, a flyout appears where you can find more details about the forwarded messages, including a link to the [Forwarding modifications report](#forwarding-modifications-report) as described later in this topic.</span></span>
+<span data-ttu-id="2fb71-110">Wenn Sie auf das Widget klicken, wird ein Flyout angezeigt, in dem Sie weitere Details zu den weitergeleiteten Nachrichten finden können, einschließlich eines Links zum [Weiterleiten von Änderungs Berichten](#forwarding-modifications-report) wie weiter unten in diesem Thema beschrieben.</span><span class="sxs-lookup"><span data-stu-id="2fb71-110">When you click on the widget, a flyout appears where you can find more details about the forwarded messages, including a link to the [Forwarding modifications report](#forwarding-modifications-report) as described later in this topic.</span></span>
 
 ![Details-Flyout, das angezeigt wird, nachdem Sie auf die neuen Benutzer weiterleiten von e-Mail Insight geklickt haben](../../media/mfi-new-users-forwarding-email-details.png)
 
-<span data-ttu-id="4a0e8-112">Sie können diese Detailseite auch aufrufen, wenn Sie die Einblicke auswählen, nachdem Sie auf **Alle anzeigen** im Bereich **Top Insights & Empfehlungen** auf (**Berichte** \> - **Dashboard** oder <https://protection.office.com/insightdashboard> ) klicken.</span><span class="sxs-lookup"><span data-stu-id="4a0e8-112">You can also get to this details page when you select the insight after you click **View all** in the **Top insights & recommendations** area on (**Reports** \> **Dashboard** or <https://protection.office.com/insightdashboard>).</span></span>
+<span data-ttu-id="2fb71-112">Sie können diese Detailseite auch aufrufen, wenn Sie die Einblicke auswählen, nachdem Sie auf **Alle anzeigen** im Bereich **Top Insights & Empfehlungen** auf (**Berichte** \> - **Dashboard** oder <https://protection.office.com/insightdashboard> ) klicken.</span><span class="sxs-lookup"><span data-stu-id="2fb71-112">You can also get to this details page when you select the insight after you click **View all** in the **Top insights & recommendations** area on (**Reports** \> **Dashboard** or <https://protection.office.com/insightdashboard>).</span></span>
 
-<span data-ttu-id="4a0e8-113">Sie können auf den Link **Bericht mit Insight zugeordnet sehen** klicken, um zum **weiter Leitungs Änderungsbericht** zu wechseln, wie im nächsten Abschnitt beschrieben.</span><span class="sxs-lookup"><span data-stu-id="4a0e8-113">You can click the **See report associated with insight** link to go to the **Forwarding modifications report** as described in the next section.</span></span>
+<span data-ttu-id="2fb71-113">Sie können auf den Link **Bericht mit Insight zugeordnet sehen** klicken, um zum **weiter Leitungs Änderungsbericht** zu wechseln, wie im nächsten Abschnitt beschrieben.</span><span class="sxs-lookup"><span data-stu-id="2fb71-113">You can click the **See report associated with insight** link to go to the **Forwarding modifications report** as described in the next section.</span></span>
 
-## <a name="forwarding-modifications-report"></a><span data-ttu-id="4a0e8-114">Änderungsbericht wird weitergeleitet</span><span class="sxs-lookup"><span data-stu-id="4a0e8-114">Forwarding modifications report</span></span>
+## <a name="forwarding-modifications-report"></a><span data-ttu-id="2fb71-114">Änderungsbericht wird weitergeleitet</span><span class="sxs-lookup"><span data-stu-id="2fb71-114">Forwarding modifications report</span></span>
 
-<span data-ttu-id="4a0e8-115">Der **Bericht zum Weiterleiten von Änderungen** zeigt Details zu Nachrichten an, die automatisch von Absendern in Ihrer Organisation weitergeleitet werden:</span><span class="sxs-lookup"><span data-stu-id="4a0e8-115">The **Forwarding modifications report** shows details about messages that are being automatically forwarded from senders in your organization:</span></span>
+<span data-ttu-id="2fb71-115">Der **Bericht zum Weiterleiten von Änderungen** zeigt Details zu Nachrichten an, die automatisch von Absendern in Ihrer Organisation weitergeleitet werden:</span><span class="sxs-lookup"><span data-stu-id="2fb71-115">The **Forwarding modifications report** shows details about messages that are being automatically forwarded from senders in your organization:</span></span>
 
-- <span data-ttu-id="4a0e8-116">Neu erstellte Konten, die Nachrichten an externe domänenweiter leiten.</span><span class="sxs-lookup"><span data-stu-id="4a0e8-116">Newly-created accounts that are forwarding messages to external domains.</span></span>
-- <span data-ttu-id="4a0e8-117">Konten, die Nachrichten an externe domänenweiter leiten, die noch nie von anderen Absendern in Ihrer Organisation weitergeleitet wurden.</span><span class="sxs-lookup"><span data-stu-id="4a0e8-117">Accounts that are forwarding messages to external domains that have never been forwarded to by other senders in your organization.</span></span>
+- <span data-ttu-id="2fb71-116">Neu erstellte Konten, die Nachrichten an externe domänenweiter leiten.</span><span class="sxs-lookup"><span data-stu-id="2fb71-116">Newly-created accounts that are forwarding messages to external domains.</span></span>
+- <span data-ttu-id="2fb71-117">Konten, die Nachrichten an externe domänenweiter leiten, die noch nie von anderen Absendern in Ihrer Organisation weitergeleitet wurden.</span><span class="sxs-lookup"><span data-stu-id="2fb71-117">Accounts that are forwarding messages to external domains that have never been forwarded to by other senders in your organization.</span></span>
 
-<span data-ttu-id="4a0e8-118">Diese Typen von weitergeleiteten Nachrichten können ein Sicherheits-oder Konformitäts Risiko darstellen und möglicherweise auf kompromittierte Konten hindeuten.</span><span class="sxs-lookup"><span data-stu-id="4a0e8-118">These types of forwarded messages can pose a security or compliance risk, and might indicate compromised accounts.</span></span>
+<span data-ttu-id="2fb71-118">Diese Typen von weitergeleiteten Nachrichten können ein Sicherheits-oder Konformitäts Risiko darstellen und möglicherweise auf kompromittierte Konten hindeuten.</span><span class="sxs-lookup"><span data-stu-id="2fb71-118">These types of forwarded messages can pose a security or compliance risk, and might indicate compromised accounts.</span></span>
 
-<span data-ttu-id="4a0e8-119">Der Bericht enthält Daten für bis zu 90 Tage.</span><span class="sxs-lookup"><span data-stu-id="4a0e8-119">The report contains data for up to 90 days.</span></span> <span data-ttu-id="4a0e8-120">Standardmäßig zeigt der Berichtdaten für die letzten 7 Tage an.</span><span class="sxs-lookup"><span data-stu-id="4a0e8-120">By default, the report shows data for the last 7 days.</span></span>
+<span data-ttu-id="2fb71-119">Der Bericht enthält Daten für bis zu 90 Tage.</span><span class="sxs-lookup"><span data-stu-id="2fb71-119">The report contains data for up to 90 days.</span></span> <span data-ttu-id="2fb71-120">Standardmäßig zeigt der Berichtdaten für die letzten 7 Tage an.</span><span class="sxs-lookup"><span data-stu-id="2fb71-120">By default, the report shows data for the last 7 days.</span></span>
 
-<span data-ttu-id="4a0e8-121">Dieser Bericht ist nicht direkt im [Nachrichtenfluss-Dashboard](mail-flow-insights-v2.md) oder im [Dashboard Berichte](view-mail-flow-reports.md)verfügbar.</span><span class="sxs-lookup"><span data-stu-id="4a0e8-121">This report isn't directly available in the [Mail flow dashboard](mail-flow-insights-v2.md) or in the [Reports dashboard](view-mail-flow-reports.md).</span></span> <span data-ttu-id="4a0e8-122">Neben dem Klicken auf den Link **Bericht mit Insight zugeordnet** in den **neuen Benutzern, die e-Mail-** Einblicke weiterleiten, gelangen Sie in den Bericht über die folgenden Informationen:</span><span class="sxs-lookup"><span data-stu-id="4a0e8-122">In addition to clicking the **See report associated with insight** link in the **New users forwarding email** insight, you get to the report by:</span></span>
+<span data-ttu-id="2fb71-121">Dieser Bericht ist nicht direkt im [Nachrichtenfluss-Dashboard](mail-flow-insights-v2.md) oder im [Dashboard Berichte](view-mail-flow-reports.md)verfügbar.</span><span class="sxs-lookup"><span data-stu-id="2fb71-121">This report isn't directly available in the [Mail flow dashboard](mail-flow-insights-v2.md) or in the [Reports dashboard](view-mail-flow-reports.md).</span></span> <span data-ttu-id="2fb71-122">Neben dem Klicken auf den Link **Bericht mit Insight zugeordnet** in den **neuen Benutzern, die e-Mail-** Einblicke weiterleiten, gelangen Sie in den Bericht über die folgenden Informationen:</span><span class="sxs-lookup"><span data-stu-id="2fb71-122">In addition to clicking the **See report associated with insight** link in the **New users forwarding email** insight, you get to the report by:</span></span>
 
-- <span data-ttu-id="4a0e8-123">Klicken Sie auf den Link **Weiterleitungsbenachrichtigungen weiterleiten** in den Details der [neuen Domänen, die in e-Mail-Insight weitergeleitet werden](mfi-new-domains-being-forwarded-email.md).</span><span class="sxs-lookup"><span data-stu-id="4a0e8-123">Clicking the **Forwarding notifications report** link in the details of the [New domains being forwarded email insight](mfi-new-domains-being-forwarded-email.md).</span></span>
-- <span data-ttu-id="4a0e8-124">Öffnen <https://protection.office.com/reportv2?id=MailFlowNewForwarding> .</span><span class="sxs-lookup"><span data-stu-id="4a0e8-124">Opening <https://protection.office.com/reportv2?id=MailFlowNewForwarding>.</span></span>
+- <span data-ttu-id="2fb71-123">Klicken Sie auf den Link **Weiterleitungsbenachrichtigungen weiterleiten** in den Details der [neuen Domänen, die in e-Mail-Insight weitergeleitet werden](mfi-new-domains-being-forwarded-email.md).</span><span class="sxs-lookup"><span data-stu-id="2fb71-123">Clicking the **Forwarding notifications report** link in the details of the [New domains being forwarded email insight](mfi-new-domains-being-forwarded-email.md).</span></span>
+- <span data-ttu-id="2fb71-124">Öffnen <https://protection.office.com/reportv2?id=MailFlowNewForwarding> .</span><span class="sxs-lookup"><span data-stu-id="2fb71-124">Opening <https://protection.office.com/reportv2?id=MailFlowNewForwarding>.</span></span>
 
-### <a name="report-view-for-the-forwarding-modifications-report"></a><span data-ttu-id="4a0e8-125">Berichtsansicht für den Weiterleitungs Änderungsbericht</span><span class="sxs-lookup"><span data-stu-id="4a0e8-125">Report view for the Forwarding modifications report</span></span>
+### <a name="report-view-for-the-forwarding-modifications-report"></a><span data-ttu-id="2fb71-125">Berichtsansicht für den Weiterleitungs Änderungsbericht</span><span class="sxs-lookup"><span data-stu-id="2fb71-125">Report view for the Forwarding modifications report</span></span>
 
-<span data-ttu-id="4a0e8-126">Die folgenden Diagramme stehen in der Berichtsansicht zur Verfügung:</span><span class="sxs-lookup"><span data-stu-id="4a0e8-126">The following charts are available in the report view:</span></span>
+<span data-ttu-id="2fb71-126">Die folgenden Diagramme stehen in der Berichtsansicht zur Verfügung:</span><span class="sxs-lookup"><span data-stu-id="2fb71-126">The following charts are available in the report view:</span></span>
 
-- <span data-ttu-id="4a0e8-127">**Daten anzeigen für: neue Weiterleitungs Benutzer**:</span><span class="sxs-lookup"><span data-stu-id="4a0e8-127">**Show data for: New forwarding users**:</span></span>
+- <span data-ttu-id="2fb71-127">**Daten anzeigen für: neue Weiterleitungs Benutzer**:</span><span class="sxs-lookup"><span data-stu-id="2fb71-127">**Show data for: New forwarding users**:</span></span>
 
-  ![Ansicht "neue weiterleitende Benutzer" im Bericht "Weiterleiten von Änderungen"](../../media/forwarding-modificiations-report-new-forwarding-users.png)
+  ![Ansicht "neue weiterleitende Benutzer" im Bericht "Weiterleiten von Änderungen"](../../media/forwarding-modifications-report-new-forwarding-users.png)
 
-- <span data-ttu-id="4a0e8-129">**Daten anzeigen für: neue Weiterleitungs Domänen**:</span><span class="sxs-lookup"><span data-stu-id="4a0e8-129">**Show data for: New forwarding domains**:</span></span>
+- <span data-ttu-id="2fb71-129">**Daten anzeigen für: neue Weiterleitungs Domänen**:</span><span class="sxs-lookup"><span data-stu-id="2fb71-129">**Show data for: New forwarding domains**:</span></span>
 
-  ![Ansicht "neu weitergeleitete Domänen" im Bericht zum Weiterleiten von Änderungen](../../media/forwarding-modificiations-report-new-forwarded-domains.png)
+  ![Ansicht "neu weitergeleitete Domänen" im Bericht zum Weiterleiten von Änderungen](../../media/forwarding-modifications-report-new-forwarded-domains.png)
 
-<span data-ttu-id="4a0e8-131">Wenn Sie in einer Berichtsansicht auf **Filter** klicken, können Sie einen Datumsbereich mit **anfangs** -und **Enddatum**angeben.</span><span class="sxs-lookup"><span data-stu-id="4a0e8-131">If you click **Filters** in a report view, you can specify a date range with **Start date** and **End date**.</span></span>
+<span data-ttu-id="2fb71-131">Wenn Sie in einer Berichtsansicht auf **Filter** klicken, können Sie einen Datumsbereich mit **anfangs** -und **Enddatum**angeben.</span><span class="sxs-lookup"><span data-stu-id="2fb71-131">If you click **Filters** in a report view, you can specify a date range with **Start date** and **End date**.</span></span>
 
-### <a name="details-table-view-for-the-forwarding-modifications-report"></a><span data-ttu-id="4a0e8-132">Detailtabellen Ansicht für den Weiterleitungs Änderungsbericht</span><span class="sxs-lookup"><span data-stu-id="4a0e8-132">Details table view for the Forwarding modifications report</span></span>
+### <a name="details-table-view-for-the-forwarding-modifications-report"></a><span data-ttu-id="2fb71-132">Detailtabellen Ansicht für den Weiterleitungs Änderungsbericht</span><span class="sxs-lookup"><span data-stu-id="2fb71-132">Details table view for the Forwarding modifications report</span></span>
 
-<span data-ttu-id="4a0e8-133">Wenn Sie auf **Detailtabelle anzeigen**klicken, hängt die Anzeige der angezeigten Informationen von dem Diagramm ab, das Sie gesucht haben:</span><span class="sxs-lookup"><span data-stu-id="4a0e8-133">If you click **View details table**, the information that's shown depends on the chart you were looking at:</span></span>
+<span data-ttu-id="2fb71-133">Wenn Sie auf **Detailtabelle anzeigen**klicken, hängt die Anzeige der angezeigten Informationen von dem Diagramm ab, das Sie gesucht haben:</span><span class="sxs-lookup"><span data-stu-id="2fb71-133">If you click **View details table**, the information that's shown depends on the chart you were looking at:</span></span>
 
-- <span data-ttu-id="4a0e8-134">**Daten anzeigen für: neue Weiterleitungs Benutzer**:</span><span class="sxs-lookup"><span data-stu-id="4a0e8-134">**Show data for: New forwarding users**:</span></span>
+- <span data-ttu-id="2fb71-134">**Daten anzeigen für: neue Weiterleitungs Benutzer**:</span><span class="sxs-lookup"><span data-stu-id="2fb71-134">**Show data for: New forwarding users**:</span></span>
 
-  - <span data-ttu-id="4a0e8-135">**Name**: die e-Mail-Adresse des Absenders.</span><span class="sxs-lookup"><span data-stu-id="4a0e8-135">**Name**: The email address of the sender.</span></span>
-  - <span data-ttu-id="4a0e8-136">**Weiterleitender Typ**</span><span class="sxs-lookup"><span data-stu-id="4a0e8-136">**Forwarding type**</span></span>
-  - <span data-ttu-id="4a0e8-137">**Empfängeradresse**</span><span class="sxs-lookup"><span data-stu-id="4a0e8-137">**Recipient address**</span></span>
-  - <span data-ttu-id="4a0e8-138">**Details**</span><span class="sxs-lookup"><span data-stu-id="4a0e8-138">**Details**</span></span>
-  - <span data-ttu-id="4a0e8-139">**Count**</span><span class="sxs-lookup"><span data-stu-id="4a0e8-139">**Count**</span></span>
-  - <span data-ttu-id="4a0e8-140">**Erstes Termin Datum**</span><span class="sxs-lookup"><span data-stu-id="4a0e8-140">**First forward date**</span></span>
+  - <span data-ttu-id="2fb71-135">**Name**: die e-Mail-Adresse des Absenders.</span><span class="sxs-lookup"><span data-stu-id="2fb71-135">**Name**: The email address of the sender.</span></span>
+  - <span data-ttu-id="2fb71-136">**Weiterleitender Typ**</span><span class="sxs-lookup"><span data-stu-id="2fb71-136">**Forwarding type**</span></span>
+  - <span data-ttu-id="2fb71-137">**Empfängeradresse**</span><span class="sxs-lookup"><span data-stu-id="2fb71-137">**Recipient address**</span></span>
+  - <span data-ttu-id="2fb71-138">**Details**</span><span class="sxs-lookup"><span data-stu-id="2fb71-138">**Details**</span></span>
+  - <span data-ttu-id="2fb71-139">**Count**</span><span class="sxs-lookup"><span data-stu-id="2fb71-139">**Count**</span></span>
+  - <span data-ttu-id="2fb71-140">**Erstes Termin Datum**</span><span class="sxs-lookup"><span data-stu-id="2fb71-140">**First forward date**</span></span>
 
-- <span data-ttu-id="4a0e8-141">**Daten anzeigen für: neue Weiterleitungs Domänen**:</span><span class="sxs-lookup"><span data-stu-id="4a0e8-141">**Show data for: New forwarding domains**:</span></span>
+- <span data-ttu-id="2fb71-141">**Daten anzeigen für: neue Weiterleitungs Domänen**:</span><span class="sxs-lookup"><span data-stu-id="2fb71-141">**Show data for: New forwarding domains**:</span></span>
 
-  - <span data-ttu-id="4a0e8-142">**Name**: die e-Mail-Domäne des Absenders.</span><span class="sxs-lookup"><span data-stu-id="4a0e8-142">**Name**: The email domain of the sender.</span></span>
-  - <span data-ttu-id="4a0e8-143">**Weiterleitender Typ**</span><span class="sxs-lookup"><span data-stu-id="4a0e8-143">**Forwarding type**</span></span>
-  - <span data-ttu-id="4a0e8-144">**Empfängeradresse**</span><span class="sxs-lookup"><span data-stu-id="4a0e8-144">**Recipient address**</span></span>
-  - <span data-ttu-id="4a0e8-145">**Details**</span><span class="sxs-lookup"><span data-stu-id="4a0e8-145">**Details**</span></span>
-  - <span data-ttu-id="4a0e8-146">**Count**</span><span class="sxs-lookup"><span data-stu-id="4a0e8-146">**Count**</span></span>
-  - <span data-ttu-id="4a0e8-147">**Erstes Termin Datum**</span><span class="sxs-lookup"><span data-stu-id="4a0e8-147">**First forward date**</span></span>
+  - <span data-ttu-id="2fb71-142">**Name**: die e-Mail-Domäne des Absenders.</span><span class="sxs-lookup"><span data-stu-id="2fb71-142">**Name**: The email domain of the sender.</span></span>
+  - <span data-ttu-id="2fb71-143">**Weiterleitender Typ**</span><span class="sxs-lookup"><span data-stu-id="2fb71-143">**Forwarding type**</span></span>
+  - <span data-ttu-id="2fb71-144">**Empfängeradresse**</span><span class="sxs-lookup"><span data-stu-id="2fb71-144">**Recipient address**</span></span>
+  - <span data-ttu-id="2fb71-145">**Details**</span><span class="sxs-lookup"><span data-stu-id="2fb71-145">**Details**</span></span>
+  - <span data-ttu-id="2fb71-146">**Count**</span><span class="sxs-lookup"><span data-stu-id="2fb71-146">**Count**</span></span>
+  - <span data-ttu-id="2fb71-147">**Erstes Termin Datum**</span><span class="sxs-lookup"><span data-stu-id="2fb71-147">**First forward date**</span></span>
 
-<span data-ttu-id="4a0e8-148">Wenn Sie in einer Detailtabellen Ansicht auf **Filter** klicken, können Sie einen Datumsbereich mit **anfangs** -und **Enddatum**angeben.</span><span class="sxs-lookup"><span data-stu-id="4a0e8-148">If you click **Filters** in a details table view, you can specify a date range with **Start date** and **End date**.</span></span>
+<span data-ttu-id="2fb71-148">Wenn Sie in einer Detailtabellen Ansicht auf **Filter** klicken, können Sie einen Datumsbereich mit **anfangs** -und **Enddatum**angeben.</span><span class="sxs-lookup"><span data-stu-id="2fb71-148">If you click **Filters** in a details table view, you can specify a date range with **Start date** and **End date**.</span></span>
 
-<span data-ttu-id="4a0e8-149">Wenn Sie eine Zeile aus der Tabelle auswählen, wird ein **Detail** Flyout mit den folgenden Informationen angezeigt:</span><span class="sxs-lookup"><span data-stu-id="4a0e8-149">If you select a row from the table, a **Details** flyout appears with the following information:</span></span>
+<span data-ttu-id="2fb71-149">Wenn Sie eine Zeile aus der Tabelle auswählen, wird ein **Detail** Flyout mit den folgenden Informationen angezeigt:</span><span class="sxs-lookup"><span data-stu-id="2fb71-149">If you select a row from the table, a **Details** flyout appears with the following information:</span></span>
 
-- <span data-ttu-id="4a0e8-150">**Name**: Dies ist entweder die e-Mail-Adresse des Absenders (von **Daten anzeigen für: neue Weiterleitungs Benutzer** anzeigen) oder die e-Mail-Domäne des Absenders (aus **Daten anzeigen für: neue Weiterleitungs Domänen** -Ansicht).</span><span class="sxs-lookup"><span data-stu-id="4a0e8-150">**Name**: This is either the sender's email address (from **Show data for: New forwarding users** view) or the sender's email domain (from **Show data for: New forwarding domains** view).</span></span>
-- <span data-ttu-id="4a0e8-151">**Weiterleitender Typ**</span><span class="sxs-lookup"><span data-stu-id="4a0e8-151">**Forwarding type**</span></span>
-- <span data-ttu-id="4a0e8-152">**Empfänger**</span><span class="sxs-lookup"><span data-stu-id="4a0e8-152">**Recipient**</span></span>
-- <span data-ttu-id="4a0e8-153">**Details**</span><span class="sxs-lookup"><span data-stu-id="4a0e8-153">**Details**</span></span>
-- <span data-ttu-id="4a0e8-154">**Count**</span><span class="sxs-lookup"><span data-stu-id="4a0e8-154">**Count**</span></span>
-- <span data-ttu-id="4a0e8-155">**Anfangstermin**</span><span class="sxs-lookup"><span data-stu-id="4a0e8-155">**Start date**</span></span>
-- <span data-ttu-id="4a0e8-156">**Empfehlung**: von hier aus können Sie auf den Link klicken, um den Benutzer im Microsoft 365 Admin Center zu verwalten.</span><span class="sxs-lookup"><span data-stu-id="4a0e8-156">**Recommendation**: From here, you can click the link to manage the user in the Microsoft 365 admin center.</span></span>
+- <span data-ttu-id="2fb71-150">**Name**: Dies ist entweder die e-Mail-Adresse des Absenders (von **Daten anzeigen für: neue Weiterleitungs Benutzer** anzeigen) oder die e-Mail-Domäne des Absenders (aus **Daten anzeigen für: neue Weiterleitungs Domänen** -Ansicht).</span><span class="sxs-lookup"><span data-stu-id="2fb71-150">**Name**: This is either the sender's email address (from **Show data for: New forwarding users** view) or the sender's email domain (from **Show data for: New forwarding domains** view).</span></span>
+- <span data-ttu-id="2fb71-151">**Weiterleitender Typ**</span><span class="sxs-lookup"><span data-stu-id="2fb71-151">**Forwarding type**</span></span>
+- <span data-ttu-id="2fb71-152">**Empfänger**</span><span class="sxs-lookup"><span data-stu-id="2fb71-152">**Recipient**</span></span>
+- <span data-ttu-id="2fb71-153">**Details**</span><span class="sxs-lookup"><span data-stu-id="2fb71-153">**Details**</span></span>
+- <span data-ttu-id="2fb71-154">**Count**</span><span class="sxs-lookup"><span data-stu-id="2fb71-154">**Count**</span></span>
+- <span data-ttu-id="2fb71-155">**Anfangstermin**</span><span class="sxs-lookup"><span data-stu-id="2fb71-155">**Start date**</span></span>
+- <span data-ttu-id="2fb71-156">**Empfehlung**: von hier aus können Sie auf den Link klicken, um den Benutzer im Microsoft 365 Admin Center zu verwalten.</span><span class="sxs-lookup"><span data-stu-id="2fb71-156">**Recommendation**: From here, you can click the link to manage the user in the Microsoft 365 admin center.</span></span>
 
 ![Details-Flyout aus der Detailtabelle der Ansicht neue weiterleitende Benutzer im Bericht zum Weiterleiten von Änderungen](../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png)
 
-<span data-ttu-id="4a0e8-158">Klicken Sie auf **Bericht anzeigen**, um zur Ansicht Berichte zurückzukehren.</span><span class="sxs-lookup"><span data-stu-id="4a0e8-158">To go back to the reports view, click **View report**.</span></span>
+<span data-ttu-id="2fb71-158">Klicken Sie auf **Bericht anzeigen**, um zur Ansicht Berichte zurückzukehren.</span><span class="sxs-lookup"><span data-stu-id="2fb71-158">To go back to the reports view, click **View report**.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="4a0e8-159">Verwandte Themen</span><span class="sxs-lookup"><span data-stu-id="4a0e8-159">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="2fb71-159">Verwandte Themen</span><span class="sxs-lookup"><span data-stu-id="2fb71-159">Related topics</span></span>
 
-<span data-ttu-id="4a0e8-160">Informationen zu weiteren Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span><span class="sxs-lookup"><span data-stu-id="4a0e8-160">For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
+<span data-ttu-id="2fb71-160">Informationen zu weiteren Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span><span class="sxs-lookup"><span data-stu-id="2fb71-160">For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
