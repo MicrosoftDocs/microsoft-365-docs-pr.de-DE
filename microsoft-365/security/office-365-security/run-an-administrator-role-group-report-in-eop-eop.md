@@ -7,19 +7,19 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können erfahren, wie Sie einen Administratorrollengruppen Bericht in eigenständigen Exchange Online Schutz (EoP) ausführen. Dieser Bericht protokolliert, wenn ein Administrator Mitglieder aus Administratorrollengruppen hinzugefügt oder entfernt, EoP protokolliert jedes Vorkommen.
-ms.openlocfilehash: 0c504460657a153aad7d3dd065c81007a68ba916
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: db1934c7865209d358d164ff5165bb23026589cc
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44587364"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827505"
 ---
 # <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>Ausführen eines Administrator-Rollengruppenberichts in EOP als eigenständige Lösung
 
@@ -36,7 +36,7 @@ Wenn Sie einen Administratorrollengruppen Bericht im Exchange Admin Center (EAC)
 - Informationen zu Tastenkombinationen, die möglicherweise für die Verfahren in diesem Thema gelten, finden Sie unter [Tastenkombinationen für das Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
-> Liegt ein Problem vor? Fragen Sie im Forum [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) nach Hilfe.
+> Liegt ein Problem vor? Bitten Sie im [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)-Forum um Hilfe.
 
 ## <a name="use-the-eac-to-run-an-administrator-role-group-report"></a>Ausführen eines Administrator-Rollengruppenberichts mithilfe der Exchange-Verwaltungskonsole
 

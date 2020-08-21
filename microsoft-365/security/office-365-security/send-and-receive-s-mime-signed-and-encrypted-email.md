@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 1ce37ada-0a80-4b47-8611-d008979589ff
 description: Das Senden oder Beantworten einer S/MIME-verschlüsselten Nachricht in Outlook verläuft sehr ähnlich wie bei einer unverschlüsselten Nachricht.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d03479fd83ac037c67d97a2378062589210eaf9f
-ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
+ms.openlocfilehash: d460d447580dde7d5ab84c3cbf4f6c403726fd4c
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44811002"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825245"
 ---
 # <a name="send-and-receive-smime-signed-and-encrypted-email-in-exchange-online"></a>Senden und empfangen von S/MIME-signierten und verschlüsselten e-Mails in Exchange Online
 

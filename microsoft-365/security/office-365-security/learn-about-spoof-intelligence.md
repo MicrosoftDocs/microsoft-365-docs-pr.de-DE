@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können Informationen zu Spoof Intelligence in Exchange Online Protection (EoP) erhalten, in der Sie bestimmte gefälschte Absender zulassen oder blockieren können.
-ms.openlocfilehash: e1c282076d054c338a02a50412ec376406f5ce98
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: 66cfc419c3e2f3a5dd8ad45cdb9fe651b613679b
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726746"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826577"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>Konfigurieren von Spoof Intelligence in EoP
 
@@ -35,17 +35,13 @@ Wenn ein Absender eine e-Mail-Adresse spooft, scheinen Sie ein Benutzer in einer
 - Legitime Szenarien für Spoofing interner Domänen:
 
   - Absender von Drittanbietern verwenden Ihre Domäne, um Massen-e-Mails an Ihre eigenen Mitarbeiter für Unternehmensumfragen zu senden.
-
   - Ein externes Unternehmen generiert und sendet Werbungs-oder Produktaktualisierungen in Ihrem Auftrag.
-
   - Ein Assistent muss regelmäßig e-Mails für eine andere Person in Ihrer Organisation senden.
-
   - Eine interne Anwendung sendet e-Mail-Benachrichtigungen.
 
 - Legitime Szenarien für Spoofing externer Domänen:
 
   - Der Absender befindet sich auf einer Mailingliste (wird auch als Diskussionsliste bezeichnet), und die Mailingliste leitet e-Mails vom ursprünglichen Absender an alle Teilnehmer der Mailingliste weiter.
-
   - Ein externes Unternehmen sendet e-Mails im Auftrag eines anderen Unternehmens (beispielsweiseeines automatisierten Berichts oder eines Software-as-a-Service-Unternehmens).
 
 Spoof Intelligence und speziell die standardmäßige Spoof Intelligence-Richtlinie gewährleisten, dass die gefälschten e-Mail-Nachrichten, die von legitimen Absendern gesendet werden, nicht in EoP-Spamfiltern oder externen e-Mail-Systemen erfasst werden, während Ihre Benutzer vor Spam-oder Phishing-Angriffen geschützt werden.
@@ -58,17 +54,17 @@ Sie können Spoof Intelligence im Security & Compliance Center oder in PowerShel
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Sie müssen Berechtigungen zugewiesen haben, bevor Sie die Verfahren in diesem Thema ausführen können:
+- Bevor Sie die in diesem Artikel besprochenen Verfahren ausführen können, müssen Ihnen Berechtigungen zugewiesen werden:
 
   - Um die Spoof Intelligence-Richtlinie zu ändern oder Spoof Intelligence zu aktivieren oder zu deaktivieren, müssen Sie Mitglied einer der folgenden Rollengruppen sein:
 
-    - **Organisationsverwaltung** oder **Sicherheits Administrator** im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-    - **Organisationsverwaltung** oder **Hygiene Verwaltung** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+    - **Organisationsverwaltung** oder **Sicherheitsadministrator** im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+    - **Organisationsverwaltung** oder **Nachrichtenschutz** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
   - Für den schreibgeschützten Zugriff auf die Spoof Intelligence-Richtlinie müssen Sie Mitglied einer der folgenden Rollengruppen sein:
 
-    - **Sicherheits Leser** im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-    - **Organisationsverwaltung mit Ansichts** Schutz in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+    - **Security Reader** im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+    - **Schreibgeschützte Organisationsverwaltung** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - Unsere empfohlenen Einstellungen für Spoof Intelligence finden Sie unter [EoP default Anti-Phishing Policy Settings](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings).
 

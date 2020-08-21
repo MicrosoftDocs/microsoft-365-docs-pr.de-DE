@@ -7,17 +7,17 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: Administratoren können erfahren, wie Sie das Administrator-Überwachungsprotokoll in eigenständiger Exchange Online Schutz (EoP) anzeigen und durchsuchen.
-ms.openlocfilehash: 171f3ec531b232ca796232ab26caefbee8afc75c
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 8890ab8f2f2db01ed6bd22657a9bea8f77b25d08
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653497"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825077"
 ---
 # <a name="view-the-admin-audit-log-in-standalone-eop"></a>Anzeigen des Administratorüberwachungsprotokolls in EOP als eigenständige Lösung
 
@@ -44,7 +44,7 @@ Das administratorüberwachungsprotokoll zeichnet bestimmte Aktionen auf der Grun
 - Informationen zu Tastenkombinationen, die möglicherweise für die Verfahren in diesem Thema gelten, finden Sie unter [Tastenkombinationen für das Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
-> Liegt ein Problem vor? Fragen Sie im Forum [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) nach Hilfe.
+> Liegt ein Problem vor? Bitten Sie im [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)-Forum um Hilfe.
 
 ## <a name="use-the-eac-to-view-the-admin-audit-log"></a>Anzeigen des administratorüberwachungsprotokolls mithilfe der Exchange-Verwaltungskonsole
 
@@ -74,11 +74,11 @@ Sie können eigenständige EoP PowerShell verwenden, um nach Überwachungsprotok
 Search-AdminAuditLog [-Cmdlets <Cmdlet1,Cmdlet2,...CmdletN>] [-Parameters <Parameter1,Parameter2,...ParameterN>] [-StartDate <UTCDateTime>] [-EndDate <UTCDateTime>] [-UserIds <"User1","User2",..."UserN">] [-ObjectIds <"Object1","Object2",..."ObjectN">] [-IsSuccess <$true | $false>]
 ```
 
-**Anmerkungen**:
+**Hinweise**:
 
 - Sie können den Parameter _para_ meters nur zusammen mit dem _Cmdlets_ -Parameter verwenden.
 
-- Der Parameter _ObjectIDs_ filtert die Ergebnisse nach dem Objekt, das vom Cmdlet geändert wurde. Ein gültiger Wert hängt davon ab, wie das Objekt im Überwachungsprotokoll dargestellt wird. Zum Beispiel:
+- Der Parameter _ObjectIDs_ filtert die Ergebnisse nach dem Objekt, das vom Cmdlet geändert wurde. Ein gültiger Wert hängt davon ab, wie das Objekt im Überwachungsprotokoll dargestellt wird. Beispiel:
 
   - Name
   - Kanonischer Distinguished Name (beispielsweise contoso.com/users/Akia Al-Zuhairi)

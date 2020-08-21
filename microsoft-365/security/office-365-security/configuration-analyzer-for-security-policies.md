@@ -8,7 +8,7 @@ manager: dansimp
 ms.reviewer: ''
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie mithilfe der Konfigurationsanalyse Sicherheitsrichtlinien suchen und beheben, die Einstellungen enthalten, die den Standard mäßigen Sicherheitsrichtlinien für Schutz und strenge Schutz unterliegen.
-ms.openlocfilehash: 259d498646ecf893a57a608a37e3b771083716cc
-ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
+ms.openlocfilehash: 4515efcd73d40eae93523c6ef139553420e48677
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46533970"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825773"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-office-365-atp"></a>Konfigurationsanalyse für Schutzrichtlinien in EoP und Office 365 ATP
 

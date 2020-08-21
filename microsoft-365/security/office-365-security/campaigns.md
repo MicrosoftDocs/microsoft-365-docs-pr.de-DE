@@ -8,7 +8,7 @@ manager: dansimp
 ms.reviewer: mcostea
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über die Kampagnenansichten in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: b7078188d8e01f27e6941c3f61f4ef20a004606c
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: f0f5d2305b4f17c7018d32eebd155b4ad2d459e7
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653233"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825797"
 ---
 # <a name="campaign-views-in-atp"></a>Kampagnen Ansichten in ATP
 
@@ -40,7 +40,7 @@ Mit Kampagnenansichten können Sie das Gesamtbild eines Angriffs schneller und v
 
 Eine Kampagne ist ein koordinierter E-Mail-Angriff gegen eine oder mehrere Organisationen. E-Mail-Angriffe, die Anmeldeinformationen und Unternehmensdaten stehlen, sind eine große und lukrative Branche. Wenn Technologien sich anstrengen, um Angriffe zu stoppen, ändern Angreifer Ihre Methoden, um den weiteren Erfolg sicherzustellen.
 
-Microsoft nutzt die großen Mengen an Anti-Phishing-, Antispam-und Antischadsoftware-Daten im gesamten Dienst, um Kampagnen zu identifizieren. Wir analysieren und klassifizieren die Angriffsinformationen anhand verschiedener Faktoren. Zum Beispiel:
+Microsoft nutzt die großen Mengen an Anti-Phishing-, Antispam-und Antischadsoftware-Daten im gesamten Dienst, um Kampagnen zu identifizieren. Wir analysieren und klassifizieren die Angriffsinformationen anhand verschiedener Faktoren. Beispiel:
 
 - **Angriffsquelle**: die Quell-IP-Adressen und Absender-e-Mail-Domänen.
 
@@ -89,7 +89,7 @@ Auf der Rest der Übersichtsseite werden auf der Registerkarte **Kampagne** die 
 
 - **Typ**: dieser Wert ist entweder **Phish** oder **Schadsoftware**.
 
-- **Untertyp**: dieser Wert enthält weitere Details zur Kampagne. Zum Beispiel:
+- **Untertyp**: dieser Wert enthält weitere Details zur Kampagne. Beispiel:
 
   - **Phishing**: sofern verfügbar, die Marke, die von dieser Kampagne als Phishing bezeichnet wird. Beispielsweise,,, `Microsoft` `365` `Unknown` , `Outlook` , oder `DocuSign` .
 
@@ -237,9 +237,9 @@ Das Diagramm enthält die folgenden Informationen:
   |**ZAP**|n/v|[Zero-Hour Auto Purge (zap)](zero-hour-auto-purge.md) hat in der zugestellten Nachricht entsprechend den Einstellungen Ihrer Antispampolitik (in den Junk-e-Mail-Ordner verschoben oder isoliert) Aktionen durchgeführt.|
   |
 
-  <sup>\*</sup>Überprüfen Sie Ihre Anti-Spam-Richtlinien, da die zulässige Nachricht wahrscheinlich vom Dienst blockiert wurde.
+  <sup>\*</sup> Überprüfen Sie Ihre Anti-Spam-Richtlinien, da die zulässige Nachricht wahrscheinlich vom Dienst blockiert wurde.
 
-  <sup>\*\*</sup>Überprüfen Sie Ihre Anti-Spam-Richtlinien, da diese Nachrichten isoliert und nicht zugestellt werden sollen.
+  <sup>\*\*</sup> Überprüfen Sie Ihre Anti-Spam-Richtlinien, da diese Nachrichten isoliert und nicht zugestellt werden sollen.
 
 - **Übermittlungsorte**: Sie möchten wahrscheinlich Nachrichten überprüfen, die an Empfänger übermittelt wurden (entweder im Posteingang oder Junk-E-Mail-Ordner), auch wenn Benutzer nicht auf die Nutzlast-URL in der Nachricht geklickt haben. Sie können auch die isolierten Nachrichten aus der Quarantäne entfernen. Weitere Informationen finden Sie unter [Quarantäne-e-Mail-Nachrichten in EoP](quarantine-email-messages.md).
 

@@ -7,17 +7,17 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: Sie können Nachrichtenfluss Regeln (Transportregeln) verwenden, um Nachrichten zu identifizieren und zu handeln, die Ihre Organisation durchlaufen.
-ms.openlocfilehash: 6a70d5a23e3d65788143ea067a4702268e32f6ea
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: ed17ac62009f5e766772095985441fad2367edf4
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653688"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827701"
 ---
 # <a name="mail-flow-rules-transport-rules-in-standalone-eop"></a>Regeln für den Nachrichtenfluss (Transportregeln) in EOP als eigenständige Lösung
 
@@ -73,7 +73,7 @@ Use a transport rule so messages can bypass Clutter
 
 ****
 
-|Komponente|Logik|Comments|
+|Komponente|Logik|Kommentare|
 |---|---|---|
 |Kommentare|UND|Eine Nachricht muss allen Bedingungen in der Regel entsprechen. Wenn eine von zwei Bedingungen erfüllt werden muss, verwenden Sie für die Bedingungen separate Regeln. Wenn Sie z. B. Nachrichten mit Anlagen und Nachrichten, die einen bestimmten Text enthalten, die gleiche Haftungsausschlusserklärung hinzufügen möchten, erstellen Sie für jede Bedingung eine Regel. In der Exchange-Verwaltungskonsole können Sie eine Regel ganz einfach kopieren.|
 |Eine Nachricht muss allen Bedingungen in der Regel entsprechen. Wenn eine bestimmte Bedingung erfüllt werden muss, verwenden Sie für jede Bedingung separate Regeln. Wenn Sie Nachrichten mit Anlagen und Nachrichten mit Inhalt, der einem Muster entspricht, z. B. die gleichen Haftungsausschlusserklärung hinzufügen möchten, erstellen Sie für jede Bedingung eine Regel. Sie können eine Regel problemlos kopieren.|ODER|Bei einigen Bedingungen können Sie mehr als einen Wert angeben. Die Nachricht muss einem der angegebenen Werte (nicht allen) entsprechen. Beispiel: Wenn eine E-Mail den Betreff Informationen zum Börsenkurs hat und die Bedingung **Betreff enthält eines der folgenden Wörter** für die Übereinstimmung mit den Wörtern Contoso oder Börsenkurs konfiguriert ist, gilt die Bedingung als erfüllt, da der Betreff mindestens einen der angegebenen Werte enthält.  |

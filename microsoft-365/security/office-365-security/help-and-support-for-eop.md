@@ -7,17 +7,17 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft bietet Hilfestellung für EoP in einer Vielzahl von Orten und Methoden, einschließlich selbst Unterstützung und unterstütztem Support.
-ms.openlocfilehash: 959f842e05939e4a6cfc54d1b860de96bd8546e6
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 7b6fc805a91ee1f0a6dd6f1954f4b470028c8e52
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656933"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826589"
 ---
 # <a name="help-and-support-for-eop"></a>Hilfe und Support für EOP
 

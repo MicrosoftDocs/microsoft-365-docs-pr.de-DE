@@ -6,17 +6,17 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Administratoren können erfahren, wie Sie das Warteschlangen-Widget im Nachrichtenfluss-Dashboard im Security & Compliance Center verwenden, um den nicht erfolgreichen e-Mail-Fluss an Ihre lokalen oder Partnerorganisationen über ausgehende Connectors zu überwachen.
-ms.openlocfilehash: fdc3f44041990e3860deb04a36a69a3d506d334a
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 79523533306e847988fa0d4e2dd70eca22f7c76c
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577307"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826905"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>Warteschlangen Einblicke im Security & Compliance Center
 
@@ -87,6 +87,6 @@ Das gleiche Flyout wird angezeigt, nachdem Sie in den Details einer **verzögert
 
 ![Nachrichten wurden im Security & Compliance Center mit Warnungsdetails verzögert](../../media/mfi-queued-messages-alert-details.png)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 Informationen zu weiteren Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

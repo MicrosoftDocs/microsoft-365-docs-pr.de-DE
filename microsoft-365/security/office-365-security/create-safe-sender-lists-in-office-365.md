@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die verfügbaren und bevorzugten Optionen informieren, um eingehende Nachrichten in Exchange Online Protection (EoP) zuzulassen.
-ms.openlocfilehash: bbb25e1c499e84a1af34d0f0a52a81f1470aadfd
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: f182027b153ee73e33131b39066e512c9303fcbd
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652981"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827111"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Erstellen sicherer Absenderlisten in EoP
 
@@ -102,7 +102,7 @@ Wenn Nachrichten Spamfilterung aufgrund der Liste sicherer Absender eines Benutz
 
 Wenn Sie Nachrichtenfluss Regeln nicht wie zuvor beschrieben verwenden können, ist die nächste beste Option das Hinzufügen des Quell-e-Mail-Servers oder der Server zur IP-Zulassungsliste in der Verbindungsfilter Richtlinie. Ausführliche Informationen finden Sie unter [Konfigurieren der Verbindungsfilterung in EoP](configure-the-connection-filter-policy.md).
 
-**Anmerkungen**:
+**Hinweise**:
 
 - Es ist wichtig, dass Sie die Anzahl der zulässigen IP-Adressen auf ein Minimum beschränken, daher sollten Sie möglichst keine ganzen IP-Adressbereiche verwenden.
 

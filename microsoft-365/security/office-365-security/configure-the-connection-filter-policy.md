@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können erfahren, wie Sie die Verbindungsfilterung in Exchange Online Protection (EoP) konfigurieren, um e-Mails von e-Mail-Servern zuzulassen oder zu blockieren.
-ms.openlocfilehash: 675247ba1764cb928bec967c581083c6365f635a
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 45213ff36c7efc76a83a2c520e0369211ffecf53
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656791"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827845"
 ---
 # <a name="configure-connection-filtering"></a>Konfigurieren von Verbindungsfiltern
 
@@ -108,7 +108,7 @@ Verwenden Sie die folgende Syntax:
 Set-HostedConnectionFilterPolicy -Identity Default [-AdminDisplayName <"Optional Comment">] [-EnableSafeList <$true | $false>] [-IPAllowList <IPAddressOrRange1,IPAddressOrRange2...>] [-IPBlockList <IPAddressOrRange1,IPAddressOrRange2...>]
 ```
 
-**Anmerkungen**:
+**Hinweise**:
 
 - Gültige IP-Adress-oder Adressbereichs Werte sind:
 

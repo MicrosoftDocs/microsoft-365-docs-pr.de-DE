@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie das Add-in "Berichtsnachricht" für Outlook und Outlook im Internet für einzelne Benutzer oder die gesamte Organisation aktivieren.
-ms.openlocfilehash: 2b074d1bd260f5c95d138577e259aee14ec9e8d7
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 45f67e4c88d311254a0d922baed66178c3f672a5
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430507"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826637"
 ---
 # <a name="enable-the-report-message-add-in"></a>Aktivieren des Add-Ins „Nachrichten melden“
 

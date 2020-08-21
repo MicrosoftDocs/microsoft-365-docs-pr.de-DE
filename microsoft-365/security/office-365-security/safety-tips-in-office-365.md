@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie EoP und Office 365 Sie mit Spam, Phishing und Schadsoftware schützen, indem Sie oben in e-Mails einen Sicherheitstipp hinzufügen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6fb461619aaacafad86bb3c53731526fd00047a4
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: e13e9cce325dfd3f8312c1d68459ab3c423c1fbb
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209151"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827481"
 ---
 # <a name="safety-tips-in-email-messages"></a>Sicherheitstipps in E-Mail-Nachrichten
 
@@ -58,7 +58,6 @@ Der Sicherheitstipp – eine farbcodierte Nachricht – warnt Sie vor potenziell
     Wir sagen Ihnen auch, wann die Überprüfung einer e-Mail übersprungen wurde, da Sie von einem Absender stammt, dem Sie Ihre Liste sicherer Absender Vertrauen, oder wenn eine Nachrichtenfluss Regel zur Umgehung der Filterung vorhanden ist.
 
     Die graue Sicherheitsspitze wird auch angezeigt, wenn externe Bilder blockiert werden, das heißt, die Nachricht befindet sich in Ihrem Posteingang und scheint nicht Spam zu sein, sondern enthält externe Bilder, die Sie nicht zum Herunterladen entschieden haben.
-    
 
 ## <a name="working-with-safety-tips"></a>Arbeiten mit Sicherheitstipps
 

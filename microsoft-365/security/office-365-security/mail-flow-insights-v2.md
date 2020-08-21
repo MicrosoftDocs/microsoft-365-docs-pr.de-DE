@@ -6,18 +6,18 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Administratoren können sich über die Einblicke und Berichte informieren, die im Nachrichtenfluss-Dashboard im Security & Compliance Center zur Verfügung stehen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 977dcef82a4f32980898c7b4392d011340e3d0a2
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 06e9449553d008bc383ae6f2b6098f9598cad43c
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577789"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826565"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Nachrichtenfluss-Einblicke im Security & Compliance Center
 
@@ -27,13 +27,13 @@ Administratoren können das Nachrichtenfluss-Dashboard im Security & Compliance 
 
 Die verfügbaren Einblicke sind:
 
-- [Einblicke automatisch weitergeleitete Nachrichten](mfi-auto-forwarded-messages-report.md)
+- [Einblick in automatisch weitergeleitete Nachrichten](mfi-auto-forwarded-messages-report.md)
 
 - [Fix possible Mail Loop Insight](mfi-mail-loop-insight.md)<sup>1</sup>
 
 - [Fix Slow Mail Flow Rules Insight](mfi-slow-mail-flow-rules-insight.md)<sup>1</sup>
 
-- [Nachrichtenfluss Zuordnung](mfi-mail-flow-map-report.md)
+- [Zuordnung der Nachrichtenübermittlung](mfi-mail-flow-map-report.md)
 
 - [Neue Domänen werden weitergeleitet e-Mail Insight](mfi-new-domains-being-forwarded-email.md)<sup>2</sup>
 
@@ -43,11 +43,11 @@ Die verfügbaren Einblicke sind:
 
 - [Unzustellbarkeitsbericht](mfi-non-delivery-report.md)
 
-- [Einblicke in ausgehenden und eingehenden Nachrichtenfluss](mfi-outbound-and-inbound-mail-flow.md)
+- [Einblick in den Fluss eingehender und ausgehender E-Mails](mfi-outbound-and-inbound-mail-flow.md)
 
-- [Warteschlangen Einblicke](mfi-queue-alerts-and-queues.md)
+- [Einblick in die Warteschlange](mfi-queue-alerts-and-queues.md)
 
-- [Einblicke und Berichte von SMTP-Authentifizierungsclients](mfi-smtp-auth-clients-report.md)
+- [Einblick und Berichte zu SMTP-AUTH-Clients](mfi-smtp-auth-clients-report.md)
 
 - [Übersicht über den Top-Domain-e-Mail-Datenstrom](mfi-domain-mail-flow-status-insight.md)
 

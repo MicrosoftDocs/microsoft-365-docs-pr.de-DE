@@ -7,19 +7,19 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: troubleshooting
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
 ms.custom:
 - seo-marvel-apr2020
 description: Dieses Thema enthält FAQs und Antworten für Microsoft-Partner und-Händler, die Delegierte Microsoft 365-Verwaltungsaufgaben durchführen möchten.
-ms.openlocfilehash: d1522973292b290fd9f66f534ca23aeaa55ee756
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 01781437bbc7e8fe5c035ea23e4392e734e0231f
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209523"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827087"
 ---
 # <a name="delegated-administration-faq"></a>Häufig gestellte Fragen zur delegierten Verwaltung
 
@@ -33,9 +33,9 @@ Wenn Sie ein Microsoft-Partner oder-Wiederverkäufer sind und sich als Microsoft
 
 2. Registrieren Sie sich für die delegierte Verwaltung. Bevor Sie mit der Verwaltung eines Kundenkontos beginnen können, muss der Kunde Sie als delegierten Administrator autorisieren. Um die Genehmigung des Kunden einzuholen, [senden Sie ihm zuerst ein Angebot für die delegierte Verwaltung](https://support.microsoft.com/office/26530dc0-ebba-415b-86b1-b55bc06b073e). (Sie können Ihrem Kunden die delegierte Verwaltung auch später anbieten.)
 
-3. Erstellen Sie das Delegierte Administratorkonto mithilfe der Schritte unter [hinzufügen, ändern oder Löschen eines Subscription Advisor-Partners](https://docs.microsoft.com/office365/admin/misc/add-partner).
+3. Erstellen Sie das Delegierte Administratorkonto mithilfe der Schritte unter [hinzufügen, ändern oder Löschen eines Subscription Advisor-Partners](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner).
 
-Visit [Partners: Erstellen Sie Ihr Unternehmen, und verwalten Sie das Partner Abonnement](https://support.office.com/article/30dd1681-47e0-4cbc-abfe-a222cd111319) , um weitere Informationen zum Einrichten der Delegierten Verwaltung zu erhalten.
+Visit [Partners: Erstellen Sie Ihr Unternehmen, und verwalten Sie das Partner Abonnement](https://support.microsoft.com/office/30dd1681-47e0-4cbc-abfe-a222cd111319) , um weitere Informationen zum Einrichten der Delegierten Verwaltung zu erhalten.
 
 ## <a name="im-a-customer-not-a-reseller-how-can-set-up-delegated-administrator-for-my-sub-tenants"></a>Ich bin Kunde, kein Wiederverkäufer, wie kann ich einen delegierten Administrator für meine unter Mandanten einrichten?
 

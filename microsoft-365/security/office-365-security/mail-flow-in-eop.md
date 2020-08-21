@@ -7,19 +7,19 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: e109077e-cc85-4c19-ae40-d218ac7d0548
 ms.custom:
 - seo-marvel-apr2020
 description: Der Administrator kann Informationen zu den Optionen zum Konfigurieren von Nachrichtenfluss und Routing in Exchange Online Protection (EoP) erhalten.
-ms.openlocfilehash: cb2ae7370d50fe32802ad5c279cc2170eb35f581
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: c58981afaadf2c4083b6a6db99c74cf9544715c3
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208330"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827725"
 ---
 # <a name="mail-flow-in-eop"></a>Nachrichtenfluss in EOP
 

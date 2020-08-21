@@ -1,22 +1,22 @@
 ---
-title: Neue Benutzer, die e-Mail-Insight weiterleiten
+title: Einblick in E-Mail-Weiterleitung von neuen Benutzern
 f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
 description: Administratoren erfahren, wie Sie mit den neuen Benutzern, die e-Mail-Einblicke im Security & Compliance Center weiterleiten, untersuchen können, wann Benutzer in Ihrer Organisation Nachrichten an neue domänenweiter leiten.
-ms.openlocfilehash: 73ab6d1c9601ad40d469984b0ba18191a0917941
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: cb2e16d321e181916219e3425c26e59ebe31b866
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46578376"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826975"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>Neue Benutzer, die e-Mail-Insight im Security & Compliance Center weiterleiten
 
@@ -26,7 +26,7 @@ Die **neuen Domänen, die in e-Mail-Insight weitergeleitet** werden, erhalten ei
 
 Diese Einblicke wird nur angezeigt, wenn das Problem erkannt wird und auf der Seite [weiterleitender Bericht](view-mail-flow-reports.md#forwarding-report) angezeigt wird.
 
-![Neue Benutzer, die e-Mail-Insight weiterleiten](../../media/mfi-new-users-forwarding-email.png)
+![Einblick in E-Mail-Weiterleitung von neuen Benutzern](../../media/mfi-new-users-forwarding-email.png)
 
 Wenn Sie auf das Widget klicken, wird ein Flyout angezeigt, in dem Sie weitere Details zu den weitergeleiteten Nachrichten finden können, einschließlich eines Links zum [Weiterleiten von Änderungs Berichten](#forwarding-modifications-report) wie weiter unten in diesem Thema beschrieben.
 
@@ -58,11 +58,11 @@ Die folgenden Diagramme stehen in der Berichtsansicht zur Verfügung:
 
 - **Daten anzeigen für: neue Weiterleitungs Benutzer**:
 
-  ![Ansicht "neue weiterleitende Benutzer" im Bericht "Weiterleiten von Änderungen"](../../media/forwarding-modificiations-report-new-forwarding-users.png)
+  ![Ansicht "neue weiterleitende Benutzer" im Bericht "Weiterleiten von Änderungen"](../../media/forwarding-modifications-report-new-forwarding-users.png)
 
 - **Daten anzeigen für: neue Weiterleitungs Domänen**:
 
-  ![Ansicht "neu weitergeleitete Domänen" im Bericht zum Weiterleiten von Änderungen](../../media/forwarding-modificiations-report-new-forwarded-domains.png)
+  ![Ansicht "neu weitergeleitete Domänen" im Bericht zum Weiterleiten von Änderungen](../../media/forwarding-modifications-report-new-forwarded-domains.png)
 
 Wenn Sie in einer Berichtsansicht auf **Filter** klicken, können Sie einen Datumsbereich mit **anfangs** -und **Enddatum**angeben.
 

@@ -5,7 +5,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie die Junk-e-Mail-Einstellungen in Exchange Online Postfächern konfigurieren. Viele dieser Einstellungen stehen Benutzern in Outlook oder Outlook im Internet zur Verfügung.
-ms.openlocfilehash: 5da4aad41f5c5f00f65fa1ceb4fc4c0fad773779
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 171eca8535958f01a7f749ad678e6ea9dd83d80c
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653041"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825713"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Konfigurieren der Junk-E-Mail-Einstellungen für Exchange Online-Postfächer
 
@@ -42,7 +42,7 @@ Wenn die Junk-e-Mail-Regel für das Postfach aktiviert ist, kann EoP Nachrichten
 Administratoren können Exchange Online PowerShell verwenden, um den Status der Junk-e-Mail-Regel für Postfächer zu deaktivieren, zu aktivieren und anzuzeigen. Administratoren können auch Exchange Online PowerShell zum Konfigurieren von Einträgen in der Sammlung von Listen sicherer Adressen für Postfächer verwenden (die Liste sicherer Absender, die Liste sicherer Empfänger und die Liste Absender blockieren).
 
 > [!NOTE]
-> Nachrichten von Absendern, die Benutzer ihren eigenen Listen sicherer Absender hinzugefügt haben, überspringen die Verbindungsfilterung als Teil von EoP (der SCL-Wert ist-1). Wenn Sie verhindern möchten, dass Benutzer Ihrer Liste sicherer Absender in Outlook Einträge hinzufügen, verwenden Sie Gruppenrichtlinien wie im Abschnitt [Informationen zu Junk-e-Mail-Einstellungen in Outlook](#about-junk-email-settings-in-outlook) weiter unten in diesem Thema beschrieben. Die Richtlinienfilterung, Inhaltsfilterung und ATP-Prüfungen (Advanced Threat Protection) werden weiterhin auf die Nachrichten angewendet.
+> Nachrichten von Absendern, die Benutzer ihren eigenen Listen sicherer Absender hinzugefügt haben, überspringen die Verbindungsfilterung als Teil von EoP (der SCL-Wert ist-1). Wenn Sie verhindern möchten, dass Benutzer Ihrer Liste sicherer Absender in Outlook Einträge hinzufügen, verwenden Sie Gruppenrichtlinien wie im Abschnitt  [Informationen zu Junk-e-Mail-Einstellungen in Outlook](#about-junk-email-settings-in-outlook) weiter unten in diesem Thema beschrieben. Die Richtlinienfilterung, Inhaltsfilterung und ATP-Prüfungen (Advanced Threat Protection) werden weiterhin auf die Nachrichten angewendet.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
@@ -57,7 +57,7 @@ Administratoren können Exchange Online PowerShell verwenden, um den Status der 
 ## <a name="use-exchange-online-powershell-to-enable-or-disable-the-junk-email-rule-in-a-mailbox"></a>Verwenden Exchange Online PowerShell zum Aktivieren oder Deaktivieren der Junk-e-Mail-Regel in einem Postfach
 
 > [!NOTE]
-> Sie können nur das **Set-MailboxJunkEmailConfiguration** -Cmdlet zum Deaktivieren der Junk-E-Mail-Regel in einem Postfach verwenden, das in Outlook (im Exchange-Cachemodus) oder Outlook im Web geöffnet wurde. Wenn das Postfach nicht geöffnet wurde, wird die folgende Fehlermeldung angezeigt: `The Junk Email configuration couldn't be set. The user needs to sign in to Outlook Web App before they can modify their Safe Senders and Recipients or Blocked Senders lists.` Wenn Sie diesen Fehler für Massenvorgänge unterdrücken möchten, können Sie `-ErrorAction SlientlyContinue` den Befehl " **MailboxJunkEmailConfiguration** " hinzufügen.
+> Sie können nur das **Set-MailboxJunkEmailConfiguration** -Cmdlet zum Deaktivieren der Junk-E-Mail-Regel in einem Postfach verwenden, das in Outlook (im Exchange-Cachemodus) oder Outlook im Web geöffnet wurde. Wenn das Postfach nicht geöffnet wurde, wird die folgende Fehlermeldung angezeigt: `The Junk Email configuration couldn't be set. The user needs to sign in to Outlook Web App before they can modify their Safe Senders and Recipients or Blocked Senders lists.` Wenn Sie diesen Fehler für Massenvorgänge unterdrücken möchten, können Sie `-ErrorAction SilentlyContinue` den Befehl " **MailboxJunkEmailConfiguration** " hinzufügen.
 
 Verwenden Sie zum Aktivieren oder Deaktivieren der Junk-E-Mail-Regel in einem Postfach die folgende Syntax:
 
@@ -81,7 +81,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Sets-Mail
 
 > [!NOTE]
 >
-> - Wenn der Benutzer sein Postfach nie geöffnet hat, wird möglicherweise eine Fehlermeldung angezeigt, wenn Sie den vorherigen Befehl ausführen. Um diesen Fehler für Massenvorgänge zu unterdrücken, fügen Sie `-ErrorAction SlientlyContinue` den Befehl " **MailboxJunkEmailConfiguration** " hinzu.
+> - Wenn der Benutzer sein Postfach nie geöffnet hat, wird möglicherweise eine Fehlermeldung angezeigt, wenn Sie den vorherigen Befehl ausführen. Um diesen Fehler für Massenvorgänge zu unterdrücken, fügen Sie `-ErrorAction SilentlyContinue` den Befehl " **MailboxJunkEmailConfiguration** " hinzu.
 >
 > - Selbst wenn Sie die Junk-e-Mail-Regel deaktivieren, kann der Outlook-Junk-e-Mail-Filter (je nach Konfiguration) auch bestimmen, ob es sich bei einer Nachricht um Spam handelt, und Nachrichten in den Posteingang oder den Junk-e-Mail-Ordner basierend auf dem eigenen Spam Urteil und der Sammlung "Listen sicherer Adressen" im Postfach verschieben können. Weitere Informationen finden Sie im Abschnitt [Grundlegendes zu Junk-E-Mail-Einstellungen in Outlook](#about-junk-email-settings-in-outlook) in diesem Thema.
 
@@ -121,7 +121,7 @@ Verwenden Sie zum Konfigurieren der Sammlung von Listen sicherer Adressen in ein
 Set-MailboxJunkEmailConfiguration <MailboxIdentity> -BlockedSendersAndDomains <EmailAddressesOrDomains | $null> -ContactsTrusted <$true | $false> -TrustedListsOnly <$true | $false> -TrustedSendersAndDomains  <EmailAddresses | $null>
 ```
 
-Verwenden Sie die folgende Syntax, um mehrere Werte einzugeben und vorhandene Einträge für die Parameter _BlockedSendersAndDomains_ und _TrustedSendersAndDomains_ zu überschreiben: `"<Value1>","<Value2>"...` . Verwenden Sie die folgende Syntax, um einen oder mehrere Werte hinzuzufügen oder zu entfernen, ohne andere vorhandene Einträge zu beeinflussen:`@{Add="<Value1>","<Value2>"... ; Remove="<Value3>","<Value4>...}`
+Verwenden Sie die folgende Syntax, um mehrere Werte einzugeben und vorhandene Einträge für die Parameter _BlockedSendersAndDomains_ und _TrustedSendersAndDomains_ zu überschreiben: `"<Value1>","<Value2>"...` . Verwenden Sie die folgende Syntax, um einen oder mehrere Werte hinzuzufügen oder zu entfernen, ohne andere vorhandene Einträge zu beeinflussen: `@{Add="<Value1>","<Value2>"... ; Remove="<Value3>","<Value4>...}`
 
 In diesem Beispiel werden die folgenden Einstellungen für die Sammlung von Listen sicherer Adressen für das Postfach von Ori Epstein konfiguriert:
 
@@ -145,7 +145,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Sets-Mail
 
 > [!NOTE]
 >
-> - Wenn der Benutzer sein Postfach nie geöffnet hat, wird möglicherweise eine Fehlermeldung angezeigt, wenn Sie die vorherigen Befehle ausführen. Um diesen Fehler für Massenvorgänge zu unterdrücken, fügen Sie `-ErrorAction SlientlyContinue` den Befehl " **MailboxJunkEmailConfiguration** " hinzu.
+> - Wenn der Benutzer sein Postfach nie geöffnet hat, wird möglicherweise eine Fehlermeldung angezeigt, wenn Sie die vorherigen Befehle ausführen. Um diesen Fehler für Massenvorgänge zu unterdrücken, fügen Sie `-ErrorAction SilentlyContinue` den Befehl " **MailboxJunkEmailConfiguration** " hinzu.
 >
 > - Selbst wenn die Junk-e-Mail-Regel für das Postfach deaktiviert ist, können Sie die Sammlung von Listen sicherer Adressen weiterhin konfigurieren, und der Outlook-Junk-e-Mail-Filter kann Nachrichten in den Posteingang oder den Junk-e-Mail-Ordner verschieben. Weitere Informationen finden Sie im Abschnitt [Grundlegendes zu Junk-E-Mail-Einstellungen in Outlook](#about-junk-email-settings-in-outlook) in diesem Thema.
 >

@@ -7,17 +7,17 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: Administratoren können erfahren, wie Sie Berechtigungen in der Exchange-Verwaltungskonsole (EAC) in Exchange Online Protection zuweisen oder entfernen.
-ms.openlocfilehash: 3555d3bd7fa4c53802eb214747735223cccc21e5
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 8d452eb85d59bbe82cc6685d652617bc857c1ddf
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616514"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825689"
 ---
 # <a name="manage-role-groups-in-standalone-eop"></a>Verwalten von Rollengruppen in EOP als eigenständige Lösung
 
@@ -36,7 +36,7 @@ Weitere Informationen zu Rollen und Rollengruppen finden Sie unter [Permissions 
 - Informationen zu Tastenkombinationen, die möglicherweise für die Verfahren in diesem Thema gelten, finden Sie unter [Tastenkombinationen für das Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
-> Liegt ein Problem vor? Fragen Sie im Forum [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) nach Hilfe.
+> Liegt ein Problem vor? Bitten Sie im [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)-Forum um Hilfe.
 
 ## <a name="use-the-eac-to-manage-role-groups"></a>Verwalten von Rollengruppen mithilfe der Exchange-Verwaltungskonsole
 
@@ -62,9 +62,9 @@ Wenn Sie eine neue Rollengruppe erstellen, können Sie alle Einstellungen selbst
 
     - **Beschreibung**: Geben Sie eine optionale Beschreibung für die Rollengruppe ein.
 
-    - **Rollen**: Klicken Sie auf Add-Symbol **Hinzufügen** ![ ](../../media/ITPro-EAC-AddIcon.png) oder **Remove** ![ ITPro-EAC-RemoveIcon. gif entfernen ](../../media/ITPro-EAC-RemoveIcon.gif) , um die Rollen auszuwählen oder zu ändern, die der Rollengruppe zugewiesen sind.
+    - **Rollen**: Klicken Sie auf Add-Symbol **Hinzufügen** ![ ](../../media/ITPro-EAC-AddIcon.png) oderITPro-EAC-RemoveIcon.gif**Entfernen** ![ ](../../media/ITPro-EAC-RemoveIcon.gif) , um die Rollen auszuwählen oder zu ändern, die der Rollengruppe zugewiesen sind.
 
-    - **Mitglieder**: Klicken Sie auf Add-Symbol **Hinzufügen** ![ ](../../media/ITPro-EAC-AddIcon.png) oder **Remove** ![ ITPro-EAC-RemoveIcon. gif entfernen ](../../media/ITPro-EAC-RemoveIcon.gif) , um die Rollengruppenmitgliedschaft zu ändern.
+    - **Mitglieder**: Klicken Sie auf Add-Symbol **Hinzufügen** ![ ](../../media/ITPro-EAC-AddIcon.png) oderITPro-EAC-RemoveIcon.gif**Entfernen** ![ ](../../media/ITPro-EAC-RemoveIcon.gif) , um die Rollengruppenmitgliedschaft zu ändern.
 
 3. Wenn Sie fertig sind, klicken Sie auf **Speichern** , um die Rollengruppe zu erstellen.
 
@@ -86,7 +86,7 @@ Dieselben Optionen stehen zur Verfügung, wenn Sie Rollengruppen wie beim Erstel
 
 1. Wechseln Sie in der Exchange-Verwaltungskonsole zu **Berechtigungen** \> **Administratorrollen**, wählen Sie die Rollengruppe aus, die Sie ändern möchten, und klicken Sie dann auf Bearbeitungssymbol **Bearbeiten** ![ ](../../media/ITPro-EAC-EditIcon.png) .
 
-2. Führen Sie auf der Seite Eigenschaften der Rollengruppe, die geöffnet wird, im Abschnitt **memebers** einen der folgenden Schritte aus:
+2. Führen Sie auf der Seite Eigenschaften der Rollengruppe, die geöffnet wird, im Abschnitt **Mitglieder** einen der folgenden Schritte aus:
 
    - Klicken Sie auf Add-Symbol **Hinzufügen** ![ ](../../media/ITPro-EAC-AddIcon.png) . Suchen Sie auf der angezeigten Seite den Benutzer, den Wou hinzufügen möchten, und klicken Sie dann auf **Add->**. Wählen Sie Benutzer aus, und klicken Sie nach Bedarf viele Male auf **Add->** . Klicken Sie nach Abschluss des Vorgangs auf **OK**.
 
@@ -147,9 +147,9 @@ Wenn Sie eine neue Rollengruppe erstellen, können Sie alle Einstellungen manuel
   New-RoleGroup -Name "Unique Name" -Description "Descriptive text" -Roles <"Role1","Role2"...>
   ```
 
-  - Der Parameter _roles_ gibt die Verwaltungsrollen an, die der Rollengruppe mithilfe der folgenden Syntax zugewiesen werden sollen `"Role1","Role1",..."RoleN"` . Sie können die verfügbaren Rollen mithilfe des Cmdlets **Get-ManagementRole** anzeigen.
+  - Der Parameter _roles_ gibt die Verwaltungsrollen an, die der Rollengruppe mithilfe der folgenden Syntax zugewiesen werden sollen `"Role1","Role1",..."RoleN"` . Sie können die verfügbaren Rollen mit dem Cmdlet **Get-ManagementRole** anzeigen.
 
-  - Der Parameter _Members_ gibt die Mitglieder der Rollengruppe mithilfe der folgenden Syntax an: `"Member1","Member2",..."MemberN"` . Sie können Benutzer, universelle Sicherheitsgruppen für e-Mail-aktivierte oder andere Rollengruppen (Sicherheitsprinzipale) angeben.
+  - Der Parameter _Members_ gibt die Mitglieder der Rollengruppe mithilfe der folgenden Syntax an: `"Member1","Member2",..."MemberN"` . Sie können Benutzer, Mail-aktivierte universelle Sicherheitsgruppen (USGs) oder andere Rollengruppen (Sicherheitsprinzipale) angeben.
 
   In diesem Beispiel wird eine neue Rollengruppe mit dem Namen "Limited Recipient Management" mit den folgenden Einstellungen erstellt:
 
@@ -175,7 +175,7 @@ Wenn Sie eine neue Rollengruppe erstellen, können Sie alle Einstellungen manuel
      New-RoleGroup -Name "<Unique Name>" -Roles $RoleGroup.Roles [-Members <Members>]
      ```
 
-     Der Parameter _Members_ gibt die Mitglieder der Rollengruppe mithilfe der folgenden Syntax an: `"Member1","Member2",..."MemberN"` . Sie können Benutzer, universelle Sicherheitsgruppen für e-Mail-aktivierte oder andere Rollengruppen (Sicherheitsprinzipale) angeben.
+     Der Parameter _Members_ gibt die Mitglieder der Rollengruppe mithilfe der folgenden Syntax an: `"Member1","Member2",..."MemberN"` . Sie können Benutzer, Mail-aktivierte universelle Sicherheitsgruppen (USGs) oder andere Rollengruppen (Sicherheitsprinzipale) angeben.
 
      In diesem Beispiel wird die Rollengruppe "Organisationsverwaltung" in die neue Rollengruppe mit dem Namen "Limited Organization Management" kopiert. Die Mitglieder der Rollengruppe sind Isabelle, Carter und Lukas.
 

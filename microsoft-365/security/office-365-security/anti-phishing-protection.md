@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -19,16 +19,16 @@ ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
 description: Administratoren können Informationen zu den Features zum Schutz vor Phishing in Exchange Online Protection (EoP) und Office 365 Advanced Threat Protection (Office 365 ATP) erhalten.
-ms.openlocfilehash: 657224d3a18d7cae1581eaf6c603d1c04c3b41f3
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 5594c4e7033ab70a622403bca7759cd4b89f111a
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588312"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827445"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Anti-Phishing-Schutz in Microsoft 365
 
-*Phishing* ist ein e-Mail-Angriff, der versucht, vertrauliche Informationen in Nachrichten zu stehlen, die anscheinend von legitimen oder vertrauenswürdigen Absendern sind. Es gibt bestimmte Kategorien von Phishing. Zum Beispiel:
+Bei *Phishing* handelt es sich um E-Mail-Angriffe, bei denen versucht wird, vertrauliche Informationen mittels Nachrichten zu stehlen, die scheinbar von legitimen oder vertrauenswürdigen Absendern stammen. Es gibt bestimmte Kategorien von Phishing. Beispiel:
 
 - **Spear-Phishing** verwendet sehr fokussierte und angepasste Inhalte, die speziell auf die Zielempfänger zugeschnitten sind (in der Regel nach Aufklärung der Empfänger durch den Angreifer).
 
@@ -40,7 +40,7 @@ ms.locfileid: "44588312"
 
 Aufgrund der wachsenden Komplexität von Angriffen ist es für geschulte Benutzer sogar schwierig, anspruchsvolle Phishing-Nachrichten zu identifizieren. Glücklicherweise kann Exchange Online Protection (EoP) und die zusätzlichen Features in Office 365 Advanced Threat Protection (Office 365 ATP) hilfreich sein.
 
-## <a name="anti-phishing-protection-in-eop"></a>Anti-Phishing-Schutz in EoP
+## <a name="anti-phishing-protection-in-eop"></a>Antiphishingschutz in EOP
 
 EoP (Microsoft 365-Organisationen ohne ATP) enthält Features, mit denen Ihre Organisation vor Phishing-Bedrohungen geschützt werden kann:
 
@@ -50,9 +50,9 @@ EoP (Microsoft 365-Organisationen ohne ATP) enthält Features, mit denen Ihre Or
 
 - **Implizite e-Mail-Authentifizierung**: EoP verbessert standardmäßige e-Mail-Authentifizierungsüberprüfungen für eingehende e-Mails ([SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)und [DMARC](use-dmarc-to-validate-email.md)) mit Absenderzuverlässigkeit, Absender Verlauf, Empfänger Verlauf, Verhaltensanalyse und anderen erweiterten Techniken zur Identifizierung gefälschter Absender. Weitere Informationen finden Sie unter [E-Mail-Authentifizierung in Microsoft 365](email-validation-and-authentication.md).
 
-## <a name="additional-anti-phishing-protection-in-office-365-atp"></a>Zusätzlicher Schutz gegen Phishing in Office 365 ATP
+## <a name="additional-anti-phishing-protection-in-office-365-atp"></a>Weiterer Antiphishingschutz in Office 365 ATP
 
-Office 365 ATP enthält zusätzliche und erweiterte Features zum Schutz vor Phishing:
+Office 365 ATP enthält weitere und noch fortgeschrittenere Anti-Phishing-Features:
 
 - **Richtlinien für ATP-Anti-Phishing**: Erstellen neuer benutzerdefinierter Richtlinien, Konfigurieren von Einstellungen für antiidentitäts Wechsel (schützen von Benutzern und Domänen vor Identitätswechsel), Post Fachnachrichten Einstellungen und anpassbaren erweiterten Phishing-Schwellenwerten. Weitere Informationen finden Sie unter [configure ATP Anti-Phishing Policies in Microsoft 365](configure-atp-anti-phishing-policies.md). Weitere Informationen zu den Unterschieden zwischen Anti-Phishing-Richtlinien und ATP-AntiPhishing-Richtlinien finden Sie unter [Anti-Phishing Policies in Microsoft 365](set-up-anti-phishing-policies.md).
 

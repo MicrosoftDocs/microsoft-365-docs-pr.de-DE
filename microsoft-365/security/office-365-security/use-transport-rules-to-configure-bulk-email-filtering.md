@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie Nachrichtenfluss Regeln (Transportregeln) verwenden, um Massen-e-Mails (Gray Mail) in Exchange Online Protection (EoP) zu identifizieren und zu filtern.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 860c9a1af2cb560c4fd966b303501686a1cbfea7
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: dfe841d3e80efc50d6ffbc702faefa1c9a971b13
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613312"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826753"
 ---
 # <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>Verwenden von Regeln zum Filtern von Massen-E-Mails in EOP
 
@@ -125,7 +125,7 @@ In diesem Thema wird erläutert, wie Sie diese Nachrichtenfluss Regeln in der Ex
 Verwenden Sie die folgende Syntax, um eine oder beide Nachrichtenfluss Regeln (reguläre Ausdrücke Vs. Wörter) zu erstellen:
 
 ```powershell
-New-TransportRule -Name "<UniqueName>" [-SubjectOrBodyMatchesPatterns "<RegEx1>","<RegEx2>"...] [-SubjectOrBodyContainsWords "<WordOrPrhase1>","<WordOrPhrase2>"...] -SetSCL <6 | 9>
+New-TransportRule -Name "<UniqueName>" [-SubjectOrBodyMatchesPatterns "<RegEx1>","<RegEx2>"...] [-SubjectOrBodyContainsWords "<WordOrPhrase1>","<WordOrPhrase2>"...] -SetSCL <6 | 9>
 ```
 
 In diesem Beispiel wird eine neue Regel mit dem Namen "Massen-e-Mail-Filterung-Regex" erstellt, die die gleiche Liste regulärer Ausdrücke aus der früheren Version des Themas verwendet, um Nachrichten als **Spam**festzulegen.

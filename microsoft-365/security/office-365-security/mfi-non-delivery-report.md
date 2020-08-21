@@ -6,19 +6,19 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können erfahren, wie Sie den Bericht über Unzustellbarkeits Informationen im Nachrichtenfluss-Dashboard im Security & Compliance Center verwenden, um die am häufigsten auftretenden Fehlercodes in Unzustellbarkeitsberichten (auch als Unzustellbarkeitsberichte oder Unzustellbarkeitsnachrichten bezeichnet) von Absendern in Ihrer Organisation zu überwachen.
-ms.openlocfilehash: d45382ab5c7e0d0a73487740544f20b9c25a3ad1
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: bdc2a2a16f76f4e6ada629c82b86423422ab56c9
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577420"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826917"
 ---
 # <a name="non-delivery-report-in-the-security--compliance-center"></a>Unzustellbarkeitsbericht im Security & Compliance Center
 

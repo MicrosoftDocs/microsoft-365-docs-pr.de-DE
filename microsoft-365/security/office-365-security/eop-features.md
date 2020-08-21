@@ -7,17 +7,17 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: Die folgende Tabelle enthält eine Liste der Funktionen, die im gehosteten E-Mail-Filterdienst Exchange Online Protection (EOP) verfügbar sind.
-ms.openlocfilehash: 5a882edd91e8502d7340bf86f74e8114be9cd07b
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 0df2f9afa8be6feba6734d2b07e7b7de5c13c994
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652873"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827773"
 ---
 # <a name="eop-features"></a>EOP-Funktionen
 

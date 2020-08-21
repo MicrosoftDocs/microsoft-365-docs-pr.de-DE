@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
-ms.topic: hub-page
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.date: ''
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratoren können Informationen zum Bedrohungsschutz in Microsoft 365 und konfigurieren, wie Sie für Ihre Organisation verwendet werden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8c2786ebda18b5730e1cbe93316f0d6cc319f6a9
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 8f1cecbb3141b4751778212025e5aad582707e12
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656629"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826825"
 ---
 # <a name="protect-against-threats"></a>Schutz vor Bedrohungen
 
@@ -110,7 +110,7 @@ Um ATP- [sichere Anlagen](atp-safe-attachments.md)einzurichten, müssen Sie mind
 
 5. Klicken Sie auf **Speichern**.
 
-6. (**Empfohlener zusätzlicher Schritt**) Führen Sie als globaler Administrator oder SharePoint Online Administrator das Cmdlet " **[SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** " mit dem Parameter " **DisallowInfectedFileDownload** " für Ihre Microsoft 365-Umgebung auf *true* festgelegt. (Dadurch wird verhindert, dass Benutzer Dateien öffnen, verschieben, kopieren oder freigeben, die als bösartig erkannt werden.)
+6. (**Empfohlener zusätzlicher Schritt**) Führen Sie als globaler Administrator oder SharePoint Online Administrator das Cmdlet " **[SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** " mit dem Parameter " **DisallowInfectedFileDownload** " für Ihre Microsoft 365-Umgebung auf  *true* festgelegt. (Dadurch wird verhindert, dass Benutzer Dateien öffnen, verschieben, kopieren oder freigeben, die als bösartig erkannt werden.)
 
 Weitere Informationen finden Sie unter [Einrichten Office 365 ATP-Richtlinien für sichere Anlagen](set-up-atp-safe-attachments-policies.md) und [Aktivieren von Office 365 ATP für SharePoint, OneDrive und Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
 
@@ -226,7 +226,7 @@ Nachdem Sie die Features für den Schutz vor Bedrohungen konfiguriert haben, mü
 
 ****
 
-|Nächste Schritte|Ressourcen mit mehr Informationen|
+|Vorgehensweise|Ressourcen mit mehr Informationen|
 |---|---|
 |Erfahren Sie, wie die Features für den Schutz von Bedrohungen für Ihre Organisation durch Anzeigen von Berichten funktionieren.|[Sicherheits Dashboard](security-dashboard.md)<br/>[E-Mail-Sicherheitsberichte](view-email-security-reports.md)<br/>[Reportagen für Office 365 ATP](view-reports-for-atp.md)<br/>[Sicherheitsrisiken-Explorer](threat-explorer.md)|
 |Regelmäßige Überprüfung und Überarbeitung ihrer Threat Protection-Richtlinien nach Bedarf|[Sicherheitsbewertung](../mtp/microsoft-secure-score.md)<br/>[Intelligente Berichte und Einblicke](reports-and-insights-in-security-and-compliance.md)<br/>[Microsoft 365 Threat Investigation and Response Features](keep-users-safe-with-office-365-ti.md)|

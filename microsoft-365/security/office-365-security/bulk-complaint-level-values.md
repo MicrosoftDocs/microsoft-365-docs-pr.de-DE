@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -16,12 +16,12 @@ ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
 description: Administratoren können Informationen zu den Werten für die Massen Konformitätsstufe (BCL) erhalten, die in Exchange Online Protection (EoP) verwendet werden.
-ms.openlocfilehash: 19fa7172bd242852d03822c588e163b7a13f9201
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: e24c0c97afcca2e7aa014d929d7b2131c6a2d074
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653209"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827433"
 ---
 # <a name="bulk-complaint-level-bcl-in-eop"></a>Massen Reklamations Ebene (BCL) in EoP
 

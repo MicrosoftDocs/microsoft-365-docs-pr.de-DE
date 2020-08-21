@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie den Kundenschlüssel für Microsoft 365 für Exchange Online-, Skype for Business-, SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Dateien einrichten.
-ms.openlocfilehash: 346b723a4741e18d161122edecf985a3fb8c7845
-ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
+ms.openlocfilehash: 87c18c1695d2963fc8a0c064d34d2b6cdc14199c
+ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46794220"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845833"
 ---
 # <a name="set-up-customer-key"></a>Einrichten des Kunden Schlüssels
 
@@ -400,25 +400,9 @@ Nicht vergessen! Beim Erstellen einer Datenverschlüsselungsrichtlinie (DEP) geb
   
 Um eine Datenverschlüsselungsrichtlinie (DEP) zu erstellen, führen Sie bitte folgende Schritte aus:
   
-1. Stellen Sie auf Ihrem lokalen Computer mithilfe eines Arbeits-oder Schul Kontos, das über globale Administratorberechtigungen in Ihrer Organisation verfügt, [eine Verbindung mit Exchange Online PowerShell her](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps) , indem Sie Windows PowerShell öffnen und den folgenden Befehl ausführen.
+1. Stellen Sie auf Ihrem lokalen Computer mithilfe eines Arbeits-oder Schul Kontos, das über globale Administratorberechtigungen in Ihrer Organisation verfügt, eine [Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) in einem Windows PowerShell Fenster her.
 
-   ```powershell
-   $UserCredential = Get-Credential
-   ```
-
-2. Geben Sie im Dialogfeld für die Eingabe von Anmeldedaten in Windows PowerShell die Kontoinformationen für Ihr Geschäfts-, Schul- oder Unikonto ein, klicken Sie auf **OK** und geben Sie dann den folgenden Befehl ein.
-
-   ```powershell
-   $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-   ```
-
-3. Führen Sie den folgenden Befehl aus.
-
-   ```powershell
-   Import-PSSession $Session
-   ```
-
-4. Um eine Datenverschlüsselungsrichtlinie zu erstellen, verwenden Sie das Cmdlet „New-DataEncryptionPolicy“, indem Sie den folgenden Befehl eingeben.
+2. Um eine Datenverschlüsselungsrichtlinie zu erstellen, verwenden Sie das Cmdlet „New-DataEncryptionPolicy“, indem Sie den folgenden Befehl eingeben.
 
    ```powershell
    New-DataEncryptionPolicy -Name <PolicyName> -Description "Policy Description" -AzureKeyIDs <KeyVaultURI1>, <KeyVaultURI2>
@@ -430,15 +414,17 @@ Um eine Datenverschlüsselungsrichtlinie (DEP) zu erstellen, führen Sie bitte f
 
    - *Richtlinienbeschreibung* ist eine benutzerfreundliche Beschreibung der Richtlinie, mit der Sie sich daran erinnern können, wofür die Richtlinie verwendet wird. In der Beschreibung sind Leerzeichen erlaubt. Beispiel: "Stammschlüssel für Postfächer in USA und seinen Territorien".
 
-   - *KeyVaultURI1* ist der URI für den ersten Schlüssel in der Richtlinie. Beispiel: https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01.
+   - *KeyVaultURI1* ist der URI für den ersten Schlüssel in der Richtlinie. Beispiel: <https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01>.
 
-   - *KeyVaultURI2* ist der URI für den zweiten Schlüssel in der Richtlinie. Beispiel: https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02. Trennen Sie die beiden URI mittels Komma und Leerzeichen.
+   - *KeyVaultURI2* ist der URI für den zweiten Schlüssel in der Richtlinie. Beispiel: <https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02>. Trennen Sie die beiden URI mittels Komma und Leerzeichen.
 
    Beispiel:
   
    ```powershell
    New-DataEncryptionPolicy -Name USA_mailboxes -Description "Root key for mailboxes in USA and its territories" -AzureKeyIDs https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01, https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02
    ```
+
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [New-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/new-data-encryptionpolicy).
 
 ### <a name="assign-a-dep-to-a-mailbox"></a>Zuweisen einer Datenverschlüsselungsrichtlinie (DEP) zu einem Postfach
 
@@ -450,7 +436,7 @@ Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
 
 Dabei legt der *MailboxIdParameter* ein Postfach fest. Weitere Informationen zum Cmdlet „Set-Mailbox“ finden Sie unter [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
 
-Für [lokale Postfächer mit Outlook für IOS und Android mit moderner Hybrid Authentifizierung](https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)können die lokalen Postfachdaten, die mit dem Exchange Online-Mandanten synchronisiert werden, der DEP mithilfe des Cmdlets "MailUser" zugewiesen werden. 
+Für [lokale Postfächer mit Outlook für IOS und Android mit moderner Hybrid Authentifizierung](https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)können die lokalen Postfachdaten, die mit dem Exchange Online-Mandanten synchronisiert werden, der DEP mithilfe des Cmdlets "MailUser" zugewiesen werden.
 
 ```powershell
 Set-MailUser -Identity <MailUserIdParameter> -DataEncryptionPolicy <PolicyName>

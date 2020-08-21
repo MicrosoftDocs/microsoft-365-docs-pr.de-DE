@@ -6,19 +6,19 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können erfahren, wie Sie den Bericht nicht akzeptierte Domäne im Nachrichtenfluss-Dashboard im Security & Compliance Center verwenden, um Nachrichten von Ihrer lokalen Organisation zu überwachen, in denen die Domäne des Absenders in Microsoft 365 nicht konfiguriert ist.
-ms.openlocfilehash: 649163729bbb73140f9cfb7e75c9fd06f3908cce
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: ef5f1c26168347b6696e90292d9c957e63615c0f
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577465"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826941"
 ---
 # <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>Bericht über nicht akzeptierte Domänen im Security & Compliance Center
 

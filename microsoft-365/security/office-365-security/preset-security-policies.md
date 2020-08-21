@@ -1,12 +1,12 @@
 ---
-title: Vordefinierte Sicherheitsrichtlinien
+title: Voreingestellte Sicherheitsrichtlinien
 f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.date: ''
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratoren erfahren, wie Sie Standard mäßige und strenge Richtlinieneinstellungen über die Schutzfunktionen von Exchange Online Protection (EoP) und Office 365 Advanced Threat Protection (ATP) anwenden können.
-ms.openlocfilehash: dd730639aa15709bafd600d4cc2706befb143cd4
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: a2f0472d8dd44c90fd5db14e71d2db0d5d323b50
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430399"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825257"
 ---
 # <a name="preset-security-policies-in-eop-and-office-365-atp"></a>Voreingestellte Sicherheitsrichtlinien in EoP und Office 365 ATP
 

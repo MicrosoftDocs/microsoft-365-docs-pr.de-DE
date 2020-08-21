@@ -7,19 +7,19 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie das Add-in "Microsoft Junk-e-Mail-Berichterstellung" installieren und verwenden, um Spam, nicht-Spam und Phishing-Nachrichten an Microsoft zu melden.
-ms.openlocfilehash: 54b0fb634333ccb180870ab1fcc6160fd133f81e
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 42b38830b55ae3dbee4ec74a0e96531d920c24a5
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560521"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827099"
 ---
 # <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Installieren und Verwenden des Add-Ins für die Junk-e-Mail-Berichterstellung für Microsoft Outlook
 
@@ -105,8 +105,8 @@ In diesem Thema wird erläutert, wie Sie das Add-in "Junk-e-Mail-Berichterstellu
 
 - Wechseln Sie zu, <https://www.microsoft.com/download/details.aspx?id=18275> und laden Sie die entsprechende MSI-Datei für Ihre Office-Version an einen Speicherort, der leicht zu finden ist:
 
-  - **32-Bit**:`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
-  - **64-Bit**:`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
+  - **32-Bit**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
+  - **64-Bit**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
 - Für Outlook 2013 oder höher ist die einzige Voraussetzung die Microsoft .NET Framework 2.0. In Windows 10 installieren Sie das .NET Framework 2,0 nicht aus einem Download.
 
@@ -146,9 +146,9 @@ Wählen Sie den Pfeil nach unten neben **Junk** aus, um weitere Optionen anzuzei
    msiexec /qn /i "<PathToMSIFile>\<MSIFile>" [MaxMessageSelection=<1-50>] [BccEmailAddress="<EmailAddress1>; <EmailAddress2>"...]
    ```
 
-   - `MaxMessageSelection`Gibt die maximale Anzahl von Nachrichten an, die Sie für eine einzelne Übermittlung auswählen können. Gültige Werte sind 1 bis 50. Der Standardwert ist 15.
+   - `MaxMessageSelection` Gibt die maximale Anzahl von Nachrichten an, die Sie für eine einzelne Übermittlung auswählen können. Gültige Werte sind 1 bis 50. Der Standardwert ist 15.
 
-   - `BccEmailAddress`Gibt zusätzliche Bcc-Empfänger an, die eine Kopie aller Übermittlungen von Benutzern erhalten sollen. Der Standardwert ist leer (keine zusätzlichen Bcc-Empfänger).
+   - `BccEmailAddress` Gibt zusätzliche Bcc-Empfänger an, die eine Kopie aller Übermittlungen von Benutzern erhalten sollen. Der Standardwert ist leer (keine zusätzlichen Bcc-Empfänger).
 
    In diesem Beispiel wird die 64-Bit-Version des Add-Ins aus dem angegebenen Pfad mit den Standardeinstellungen installiert.
 
@@ -212,9 +212,9 @@ Nachdem Sie Outlook geschlossen haben, verwenden Sie eines der folgenden Verfahr
 
 - **Windows Installer-Paket**: Suchen oder laden Sie die entsprechende MSI-Datei, und doppelklicken Sie darauf.
 
-  - **32-Bit**:`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
+  - **32-Bit**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
 
-  - **64-Bit**:`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
+  - **64-Bit**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
   Wählen Sie im daraufhin angezeigten Dialogfeld **Microsoft Junk-e-Mail-Berichts-Add-in für Outlook entfernen** aus, und klicken Sie dann auf **weiter**.
 

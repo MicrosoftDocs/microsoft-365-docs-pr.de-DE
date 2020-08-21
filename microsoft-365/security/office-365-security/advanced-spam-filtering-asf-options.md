@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die ASF-Einstellungen (Advanced Spam Filter) informieren, die in Anti-Spam-Richtlinien in Exchange Online Protection (EoP) zur Verfügung stehen.
-ms.openlocfilehash: b314b8b2a2de72987d9acff688602df0e0947293
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 2a79a6721a587e3033e71e6e46856a21cffe7bcc
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653341"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827337"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Einstellungen für erweiterte Spam Filter (ASF) in EoP
 
@@ -34,6 +34,7 @@ In Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenst
 
 > [!NOTE]
 > Das Aktivieren einer oder mehrerer der ASF-Einstellungen ist ein aggressiver Ansatz für die Spamfilterung. Sie können Nachrichten, die von ASF gefiltert werden, nicht als falsch positive Ergebnisse melden. Nachrichten, die von ASF gefiltert wurden, können Sie nach folgenden Kriterien identifizieren:
+>
 > - Regelmäßige Spamquarantäne Benachrichtigungen für Endbenutzer.
 >
 > - Das vorhanden sein gefilterter Nachrichten in Quarantäne.
@@ -58,7 +59,7 @@ Für jede ASF-Einstellung stehen die folgenden Optionen unter Anti-Spam-Richtlin
 
   - **BCC-Nachricht senden (*BccMessage*)**: die angegebenen e-Mail-Adressen (der Wert des *den testmodebcctorecipients* -Parameters in PowerShell) werden dem Feld Bcc der Nachricht hinzugefügt, und die Nachricht wird an die Bcc-Empfänger übermittelt. Im Security & Compliance Center trennen Sie mehrere e-Mail-Adressen durch Semikolons (;). In PowerShell trennen Sie mehrere e-Mail-Adressen durch Kommas.
 
-  **Anmerkungen**:
+  **Hinweise**:
 
   - Der Testmodus ist für die folgenden ASF-Einstellungen nicht verfügbar:
 

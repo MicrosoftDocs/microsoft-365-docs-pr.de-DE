@@ -6,19 +6,19 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können erfahren, wie Sie die SMTP-Authentifizierungs Einblicke und den Bericht im Nachrichtenfluss-Dashboard im Security & Compliance Center verwenden, um e-Mail-Absender in Ihrer Organisation zu überwachen, die authentifizierte SMTP (SMTP-Authentifizierung) zum Senden von e-Mail-Nachrichten verwenden.
-ms.openlocfilehash: afdcf01260dd6dfcaf6b53d107e5addd007b1fb3
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 65e5569bcd79caef071ee2103d18a4e985c19dbb
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577235"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826869"
 ---
 # <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>Einblicke und Berichte von SMTP-Authentifizierungsclients im Security & Compliance Center
 
@@ -73,7 +73,7 @@ Wenn Sie auf **Detailtabelle anzeigen**klicken, hängt die Anzeige der angezeigt
   - **TLS 1.2%**<sup>\*</sup>
   - **Nachrichtenanzahl**
 
-  <sup>\*</sup>In dieser Spalte werden sowohl der Prozentsatz als auch die Anzahl der Nachrichten des Absenders angezeigt.
+  <sup>\*</sup> In dieser Spalte werden sowohl der Prozentsatz als auch die Anzahl der Nachrichten des Absenders angezeigt.
 
 Wenn Sie in einer Detailtabellen Ansicht auf **Filter** klicken, können Sie einen Datumsbereich mit **anfangs** -und **Enddatum**angeben.
 

@@ -5,7 +5,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Microsoft 365-Administratoren erfahren, wie Sie nach einem Ransomware-Angriff wiederherstellen können.
-ms.openlocfilehash: 1471b7b0cacbabaf086e0759e21a46b9cb9929ab
-ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
+ms.openlocfilehash: 2f8e5f5deb18cadfaea7acc1cffe73abbc43010b
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44811026"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827833"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Wiederherstellen nach einem Ransomware-Angriff in Microsoft 365
 
@@ -78,7 +78,7 @@ Durch die Wiederherstellung von Dateien in OneDrive für Unternehmen können Sie
 
 ## <a name="step-6-recover-deleted-email"></a>Schritt 6: Wiederherstellen gelöschter e-Mails
 
-In dem seltenen Fall, dass die Ransomware alle Ihre e-Mails gelöscht hat, können Sie die gelöschten Elemente wahrscheinlich wiederherstellen. Weitere Informationen finden Sie unter:
+In dem seltenen Fall, dass die Ransomware alle Ihre e-Mails gelöscht hat, können Sie die gelöschten Elemente wahrscheinlich wiederherstellen. Weitere Informationen finden Sie hier:
 
 - [Wiederherstellen von gelöschten Nachrichten im Postfach eines Benutzers](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
@@ -124,7 +124,7 @@ Wenn Ihr Land nicht aufgeführt ist, wenden Sie sich an Ihre lokalen oder Bundes
 
 Sie können Phishing-Nachrichten melden, die Ransomware enthalten, indem Sie eine von mehreren Methoden verwenden. Weitere Informationen finden Sie unter [Melden von Nachrichten und Dateien an Microsoft](report-junk-email-messages-to-microsoft.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 - [Ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)
 

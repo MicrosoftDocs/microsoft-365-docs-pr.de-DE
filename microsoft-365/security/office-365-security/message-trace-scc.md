@@ -6,19 +6,19 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können die Nachrichtenablaufverfolgung im Security & Compliance Center verwenden, um herauszufinden, was mit Nachrichten passiert ist.
-ms.openlocfilehash: 7c0b87b1bb882714692a04b857bfc054305dee8c
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: c6e1f8f9280c84ab6ff6a1572d902ed1d4d4caa3
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653641"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827051"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Nachrichtenablaufverfolgung im Security & Compliance Center
 
@@ -133,7 +133,7 @@ Die verfügbaren Berichtstypen sind:
 
 - **Erweiterte Zusammenfassung** oder **Erweiterung**: Diese Berichte sind nur als herunterladbare CSV-Dateien verfügbar und erfordern eine oder mehrere der folgenden Filteroptionen unabhängig vom Zeitbereich: **durch diese Personen**, **für diese Personen**oder nach **richten-ID**. Sie können Platzhalter für die Absender oder die Empfänger verwenden (beispielsweise \* @contoso. com). Der erweiterte Zusammenfassungsbericht gibt bis zu 50000 Ergebnisse zurück. Der erweiterte Bericht gibt bis zu 1000 Ergebnisse zurück.
 
-**Anmerkungen**:
+**Hinweise**:
 
 - Erweiterte Zusammenfassung und erweiterte Berichte werden mithilfe von archivierten Nachrichtenablauf Verfolgungsdaten vorbereitet, und es kann bis zu mehreren Stunden dauern, bis Ihr Bericht zum Download verfügbar ist. Je nachdem, wie viele andere Administratoren gleichzeitig Berichtsanforderungen übermittelt haben, wird möglicherweise auch eine Verzögerung festgestellt, bevor die Verarbeitung der Warteschlangen Anforderung beginnt.
 
@@ -235,7 +235,7 @@ Verfügbare (abgeschlossene) erweiterte Zusammenfassungsberichte stehen im Absch
 
 - **sender_address**: die e-Mail-Adresse des Absenders (*Alias* @ *Domäne*).
 
-- **Recipient_status**: der Status der Zustellung der Nachricht an den Empfänger. Wenn die Nachricht an mehrere Empfänger gesendet wurde, werden alle Empfänger und der entsprechende Status für jeden im Format: angezeigt \<*email address*\> ## \<*status*\> . Zum Beispiel:
+- **Recipient_status**: der Status der Zustellung der Nachricht an den Empfänger. Wenn die Nachricht an mehrere Empfänger gesendet wurde, werden alle Empfänger und der entsprechende Status für jeden im Format: angezeigt \<*email address*\> ## \<*status*\> . Beispiel:
 
   - **# #Receive, Send bedeutet,** dass die Nachricht vom Dienst empfangen und an das vorgesehene Ziel gesendet wurde.
 
@@ -273,13 +273,13 @@ Verfügbare (abgeschlossene) Erweiterte Berichte stehen im Abschnitt zum **Herun
 
 - **server_hostname**: der Hostname oder der vollqualifizierte Domänenname des Zielservers.
 
-- **source_context**: zusätzliche Informationen, die dem Feld **Quelle** zugeordnet sind. Zum Beispiel:
+- **source_context**: zusätzliche Informationen, die dem Feld **Quelle** zugeordnet sind. Beispiel:
 
   - `Protocol Filter Agent`
 
   - `3489061114359050000`
 
-- **Quelle**: die Exchange Online Komponente, die für das Ereignis verantwortlich ist. Zum Beispiel:
+- **Quelle**: die Exchange Online Komponente, die für das Ereignis verantwortlich ist. Beispiel:
 
   - `AGENT`
 
@@ -297,7 +297,7 @@ Verfügbare (abgeschlossene) Erweiterte Berichte stehen im Abschnitt zum **Herun
 
 - **related_recipient_address**: wird mit-,-und-Ereignissen verwendet, `EXPAND` `REDIRECT` `RESOLVE` um andere Empfänger-e-Mail-Adressen anzuzeigen, die der Nachricht zugeordnet sind.
 
-- **Referenz**: Dieses Feld enthält zusätzliche Informationen für bestimmte Ereignistypen. Zum Beispiel:
+- **Referenz**: Dieses Feld enthält zusätzliche Informationen für bestimmte Ereignistypen. Beispiel:
 
   - **DSN**: enthält den Berichtslink, bei dem es sich um den **message_id** Wert der zugehörigen Benachrichtigung über den Zustellungsstatus (auch als DSN, Unzustellbarkeitsbericht, NDR oder Bounce-Nachricht bezeichnet) handelt, wenn nach diesem Ereignis ein DSN generiert wird. Wenn es sich um eine DSN-Nachricht handelt, enthält dieses Feld den **message_id** Wert der ursprünglichen Nachricht, für die der DSN generiert wurde.
 
@@ -315,7 +315,7 @@ Verfügbare (abgeschlossene) Erweiterte Berichte stehen im Abschnitt zum **Herun
 
 - **return_path**: die Absender-e-Mail-Adresse, die durch den Befehl **Mail from** angegeben wurde, der die Nachricht gesendet hat. Obwohl dieses Feld nie leer ist, kann es den Wert der NULL-Absenderadresse darstellen, dargestellt als `<>` .
 
-- **message_info**: zusätzliche Informationen zur Nachricht. Zum Beispiel:
+- **message_info**: zusätzliche Informationen zur Nachricht. Beispiel:
 
   - Der Nachrichtenursprung Datum-Uhrzeit in UTC für `DELIVER` und `SEND` Ereignisse. Das Datum-Uhrzeit der Erstellung ist die Uhrzeit, zu der die Nachricht zuerst in die Exchange Online Organisation eingegeben wurde. Die UTC-Datum-Uhrzeit wird im ISO 8601-Datum-Uhrzeit-Format dargestellt: `yyyy-mm-ddThh:mm:ss.fffZ` , wobei `yyyy` = year, `mm` = Month, `dd` = Day, `T` den Anfang der Zeitkomponente angibt, `hh` = Hour, `mm` = Minute, `ss` = Second, `fff` = Brüche einer Sekunde, und `Z` `Zulu` eine andere Möglichkeit zum bezeichnen von UTC darstellt.
 
@@ -369,7 +369,7 @@ Ein **custom_data** Wert, der mit beginnt, `S:AMA` ist vom Filter-Agent für Sch
 
 |Wert|Beschreibung|
 |---|---|
-|`AMA=SUM|v=1|` oder `AMA=EV|v=1`|Die Nachricht enthält Schadsoftware. `SUM`Gibt an, dass die Schadsoftware von einer beliebigen Anzahl von Modulen erkannt wurde. `EV`Gibt an, dass die Schadsoftware von einem bestimmten Modul erkannt wurde. Wenn von einem Modul Schadsoftware erkannt wird, werden dadurch die nachfolgenden Aktionen ausgelöst.|
+|`AMA=SUM|v=1|` oder `AMA=EV|v=1`|Die Nachricht enthält Schadsoftware. `SUM` Gibt an, dass die Schadsoftware von einer beliebigen Anzahl von Modulen erkannt wurde. `EV` Gibt an, dass die Schadsoftware von einem bestimmten Modul erkannt wurde. Wenn von einem Modul Schadsoftware erkannt wird, werden dadurch die nachfolgenden Aktionen ausgelöst.|
 |`Action=r`|Die Nachricht wurde ersetzt.|
 |`Action=p`|Die Nachricht wurde umgangen.|
 |`Action=d`|Die Nachricht wurde zurückgestellt.|
@@ -398,7 +398,7 @@ Ein **custom_data** Wert, der mit beginnt, `S:TRA` ist vom Transportregel-Agent 
 |`ETR|ruleId=<guid>`|Die ID der Regel, die abgeglichen wurde.|
 |`St=<datetime>`|Das Datum und die Uhrzeit in UTC, als die Regelübereinstimmung aufgetreten ist.|
 |`Action=<ActionDefinition>`|Die Aktion, die angewendet wurde. Eine Liste der verfügbaren Aktionen finden Sie unter [Aktionen für Nachrichtenfluss Regeln in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).|
-|`Mode=<Mode>`|Der Modus der Regel. Gültige Werte sind: <br/>* **Erzwingen**: alle Aktionen für die Regel werden erzwungen. <br/>* **Test mit Richtlinien Tipps:**: alle richtlinientipp Aktionen werden gesendet, aber andere Durchsetzungs Aktionen werden nicht ausgeführt. <br/>* **Test ohne Richtlinien Tipps**: Aktionen werden in einer Protokolldatei aufgeführt, Absender werden jedoch in keiner Weise benachrichtigt, und es werden keine Durchsetzungs Aktionen ausgeführt.|
+|`Mode=<Mode>`|Der Modus der Regel. Gültige Werte sind:<ul><li>**Erzwingen**: alle Aktionen für die Regel werden erzwungen.</li><li>**Test mit Richtlinien Tipps:**: alle richtlinientipp Aktionen werden gesendet, aber andere Durchsetzungs Aktionen werden nicht ausgeführt.</li><li>**Test ohne Richtlinien Tipps**: Aktionen werden in einer Protokolldatei aufgeführt, Absender werden jedoch in keiner Weise benachrichtigt, und es werden keine Durchsetzungs Aktionen ausgeführt.</li></ul>|
 |
 
 Ein Beispiel **custom_data** Wert für eine Nachricht, die mit den Bedingungen einer e-Mail-Fluss Regel übereinstimmt, sieht wie folgt aus:

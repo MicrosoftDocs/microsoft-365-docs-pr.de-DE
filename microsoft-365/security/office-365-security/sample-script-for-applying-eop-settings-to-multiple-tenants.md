@@ -7,19 +7,19 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: e87e84e1-7be0-44bf-a414-d91d60ed8817
 ms.custom:
 - seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie, wie Sie mithilfe von PowerShell Konfigurationseinstellungen auf Ihre Mandanten in Microsoft Exchange Online Protection (EoP) anwenden.
-ms.openlocfilehash: c25bafe9ece71264931d8f059dd726147a6d28a4
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 46b7c756171da7687568e5135974841d828f45bd
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209139"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827457"
 ---
 # <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a>Beispielskript für das Anwenden von EOP-Einstellungen für mehrere Mandanten
 
@@ -33,7 +33,7 @@ Mit dem folgenden Beispielskript können Microsoft Exchange Online Protection (E
 
 3. Geben Sie für jede Zeile in der CSV-Datei den Administratornamen des Mandanten in die Spalte "UserName" und das für diesen Mandanten auszuführende Cmdlet in die Spalte "Cmdlet" ein. Verwenden Sie beispielsweise admin@contoso.com und Get-AcceptedDomain.
 
-4. Kopieren Sie das [Skript runcmdletonmultipletenants. ps1](#runcmdletonmultipletenantsps1) -Skript in Editor, und speichern Sie die Datei an einem Speicherort, der leicht zu finden ist (beispielsweise c:\Scripts).
+4. Kopieren Sie das [RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1) -Skript in Editor, und speichern Sie die Datei an einem Speicherort, der leicht zu finden ist (beispielsweise c:\Scripts).
 
 5. Führen Sie das Skript mit der folgenden Syntax aus:
 
@@ -44,12 +44,12 @@ Mit dem folgenden Beispielskript können Microsoft Exchange Online Protection (E
    Hier ein Beispiel:
 
    ```powershell
-   & "c:\scripts\RunCmdletOnMultipleTenanats.ps1" "c:\scripts\inputfile.csv"
+   & "c:\scripts\RunCmdletOnMultipleTenants.ps1" "c:\scripts\inputfile.csv"
    ```
 
 6. Jeder Mandant wird bei angemeldet, und das Skript wird ausgeführt.
 
-## <a name="runcmdletonmultipletenantsps1"></a>Skript runcmdletonmultipletenants. ps1
+## <a name="runcmdletonmultipletenantsps1"></a>RunCmdletOnMultipleTenants.ps1
 
 ```powershell
 # This script runs Windows PowerShell cmdlets on multiple tenants.

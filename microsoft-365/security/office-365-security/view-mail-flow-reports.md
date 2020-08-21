@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratoren können Informationen zu den Nachrichtenfluss Berichten erhalten, die im Dashboard Berichte im Security & Compliance Center verfügbar sind.
 ms.custom: ''
-ms.openlocfilehash: 98b27497b758a202ccbb741f6cb10e4ec65570e9
-ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
+ms.openlocfilehash: 9e9249eab5d3519dac0e33acf40d600d471b7cb2
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46814504"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826457"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Anzeigen von Nachrichtenfluss Berichten im Dashboard "Berichte" im Security & Compliance Center
 
@@ -51,7 +51,7 @@ Die folgenden Diagramme stehen in der Berichtsansicht zur Verfügung:
   - **Aus dem Internet ohne Connector**
   - **An das Internet ohne Connector**
   - Einen bestimmten Connector, den Sie konfiguriert haben.
-  
+
   Um die Daten im Diagramm zu isolieren, verwenden Sie die Option **Daten für** SteuerelementAnzeigen, um eine dieser Optionen oder den **gesamten Nachrichtenfluss**auszuwählen.
 
   ![Anzeigen von Daten nach dem Nachrichtenfluss im connectorbericht](../../media/connector-report-view-data-by-mail-flow.png)
@@ -206,7 +206,7 @@ Klicken Sie auf **Bericht anzeigen**, um zur Ansicht Berichte zurückzukehren.
 
 ## <a name="mailflow-status-report"></a>Nachrichtenfluss-Statusbericht
 
-Der **Nachrichtenfluss-Statusbericht** ähnelt dem [gesendeten und empfangenen e-Mail-Bericht](#sent-and-received-email-report), wobei zusätzliche Informationen zu e-Mail-Nachrichten zugelassen oder am Edge blockiert werden. Dies ist der einzige Bericht, der Informationen zum Edge-Schutz enthält, und zeigt, wie viele e-Mails blockiert werden, bevor Sie in den Dienst zur Evaluierung durch Exchange Online Protection (EoP) zugelassen werden. Es ist wichtig zu verstehen, dass wenn eine Nachricht an fünf Empfänger gesendet wird, wir Sie als fünf verschiedene Nachrichten und nicht eine Nachricht zählen.  
+Der **Nachrichtenfluss-Statusbericht** ähnelt dem [gesendeten und empfangenen e-Mail-Bericht](#sent-and-received-email-report), wobei zusätzliche Informationen zu e-Mail-Nachrichten zugelassen oder am Edge blockiert werden. Dies ist der einzige Bericht, der Informationen zum Edge-Schutz enthält, und zeigt, wie viele e-Mails blockiert werden, bevor Sie in den Dienst zur Evaluierung durch Exchange Online Protection (EoP) zugelassen werden. Es ist wichtig zu verstehen, dass wenn eine Nachricht an fünf Empfänger gesendet wird, wir Sie als fünf verschiedene Nachrichten und nicht eine Nachricht zählen.
 Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center](https://protection.office.com), wechseln Sie **Reports** zum \> **Dashboard** Berichte, und wählen Sie **Nachrichtenflussstatus Bericht**aus. Wenn Sie direkt zum **Nachrichtenflussstatus Bericht**wechseln möchten, öffnen Sie <https://protection.office.com/mailflowStatusReport> .
 
 ![Nachrichtenfluss-Statusbericht-Widget im Dashboard "Berichte"](../../media/mail-flow-status-report-widget.png)
@@ -300,14 +300,14 @@ Wenn Sie auf **Filter**klicken, können Sie sowohl das Diagramm als auch die Dat
 
 Dieses Diagramm zeigt die Anzahl der e-Mail-Nachweise:
 
-  - **E-Mail insgesamt**
-  - **E-Mail nach dem Edge-Schutz**
-  - **E-Mail nach Anti-Malware, Datei Zuverlässigkeit, Dateityp Block**
-  - **E-Mail nach Anti-Phishing, URL-Reputation, Marken Identitätswechsel, Anti-Spoofing**
-  - **E-Mail nach Spam Schutz, Massen-e-Mail-Filterung**
-  - **E-Mail nach Benutzer-und Domänen Identitätswechsel**<sup>1</sup>
-  - **E-Mail nach Datei-und URL-Detonation**<sup>1</sup>
-  - **E-Mail-Nachricht wurde nach dem Zustellungs Schutz als gutartig erkannt (URL-Klick-Zeit Schutz)**
+- **E-Mail insgesamt**
+- **E-Mail nach dem Edge-Schutz**
+- **E-Mail nach Anti-Malware, Datei Zuverlässigkeit, Dateityp Block**
+- **E-Mail nach Anti-Phishing, URL-Reputation, Marken Identitätswechsel, Anti-Spoofing**
+- **E-Mail nach Spam Schutz, Massen-e-Mail-Filterung**
+- **E-Mail nach Benutzer-und Domänen Identitätswechsel**<sup>1</sup>
+- **E-Mail nach Datei-und URL-Detonation**<sup>1</sup>
+- **E-Mail-Nachricht wurde nach dem Zustellungs Schutz als gutartig erkannt (URL-Klick-Zeit Schutz)**
 
 <sup>1</sup> Office 365 nur ATP
 
@@ -315,15 +315,15 @@ Wenn Sie die von EoP oder ATP gefilterte e-Mail separat anzeigen möchten, klick
 
 Die Datentabelle enthält die folgenden Informationen, die in absteigender Datumsreihenfolge angezeigt werden:
 
- - **Date**
- - **E-Mail insgesamt**
- - **Kantenschutz**
- - **Anti-Malware, Datei Zuverlässigkeit, Dateityp Block**
- - **Anti-Phishing, URL-Reputation, Marken Identitätswechsel, Spoofing**
- - **Antispam-, Massen-e-Mail-Filterung**
- - **Benutzer-und Domänen Identitätswechsel (ATP)**
- - **Datei-und URL-Detonation (ATP)**
- - **Schutz nach Zustellung und zap (ATP) oder zap (EoP)**
+- **Date**
+- **E-Mail insgesamt**
+- **Kantenschutz**
+- **Anti-Malware, Datei Zuverlässigkeit, Dateityp Block**
+- **Anti-Phishing, URL-Reputation, Marken Identitätswechsel, Spoofing**
+- **Antispam-, Massen-e-Mail-Filterung**
+- **Benutzer-und Domänen Identitätswechsel (ATP)**
+- **Datei-und URL-Detonation (ATP)**
+- **Schutz nach Zustellung und zap (ATP) oder zap (EoP)**
 
 Wenn Sie eine Zeile in der Datentabelle auswählen, wird im Flyout eine weitere Aufschlüsselung der e-Mail-Anzahl angezeigt.
 
@@ -340,7 +340,7 @@ Jede exportierte CSV-Datei ist auf 150.000 Zeilen limitiert. Wenn die Daten mehr
 
  ![Trichter Ansicht im Nachrichtenflussstatus Bericht ](../../media/mail-flow-status-report-funnel-view.png)
 
- ### <a name="tech-view-for-the-mailflow-status-report"></a>Tech-Ansicht für den Nachrichtenfluss-Statusbericht
+### <a name="tech-view-for-the-mailflow-status-report"></a>Tech-Ansicht für den Nachrichtenfluss-Statusbericht
 
 Die **Tech-Ansicht** ähnelt der **Trichter** Ansicht und bietet detailliertere Details für die konfigurierten Features zum Schutz vor Bedrohungen. Im Diagramm können Sie sehen, wie Nachrichten in den verschiedenen Stadien des Bedrohungsschutzes kategorisiert werden.
 
@@ -360,27 +360,27 @@ Wenn Sie auf **Filter**klicken, können Sie sowohl das Diagramm als auch die Dat
 
 In diesem Diagramm werden Nachrichten angezeigt, die in die folgenden Kategorien aufgeteilt sind:
 
-  - **E-Mail insgesamt**
-  - **Edge-allow, Edge gefiltert**
-  - **Nicht Schadsoftware, Erkennung sicherer Anlagen (ATP), Erkennung von Anti-Malware-Engines, Regelblock**
-  - **Nicht Phishing, DMARC-Fehler, Identitätswechsel Erkennung, spoof-Erkennung, Phishing-Erkennung**
-  - **Keine Erkennung mit URL-Detonation, URL-detonations Erkennung (ATP)**
-  - **Kein Spam, Spam**
-  - **Nicht-böswillige e-Mails, Erkennung von sicheren Links (ATP), Zap**
+- **E-Mail insgesamt**
+- **Edge-allow, Edge gefiltert**
+- **Nicht Schadsoftware, Erkennung sicherer Anlagen (ATP), Erkennung von Anti-Malware-Engines, Regelblock**
+- **Nicht Phishing, DMARC-Fehler, Identitätswechsel Erkennung, spoof-Erkennung, Phishing-Erkennung**
+- **Keine Erkennung mit URL-Detonation, URL-detonations Erkennung (ATP)**
+- **Kein Spam, Spam**
+- **Nicht-böswillige e-Mails, Erkennung von sicheren Links (ATP), Zap**
 
 Wenn Sie mit dem Mauszeiger auf eine Kategorie im Diagramm zeigen, wird die Anzahl der Nachrichten in dieser Kategorie angezeigt.
 
 Die Datentabelle enthält die folgenden Informationen, die in absteigender Datumsreihenfolge angezeigt werden:
 
-  - **Date**  
-  - **E-Mail insgesamt**
-  - **Edge gefiltert**
-  - **Anti-Malware-Modul, sichere Anlagen, Regelfilter**
-  - **DMARC, Identitätswechsel, Spoofing, Phishing-Filterung**
-  - **URL-detonations Erkennung**
-  - **Anti-Spam gefiltert**
-  - **Zap entfernt**
-  - **Erkennung durch sichere Links**
+- **Date**
+- **E-Mail insgesamt**
+- **Edge gefiltert**
+- **Anti-Malware-Modul, sichere Anlagen, Regelfilter**
+- **DMARC, Identitätswechsel, Spoofing, Phishing-Filterung**
+- **URL-detonations Erkennung**
+- **Anti-Spam gefiltert**
+- **Zap entfernt**
+- **Erkennung durch sichere Links**
 
 Wenn Sie eine Zeile in der Datentabelle auswählen, wird im Flyout eine weitere Aufschlüsselung der e-Mail-Anzahl angezeigt.
 

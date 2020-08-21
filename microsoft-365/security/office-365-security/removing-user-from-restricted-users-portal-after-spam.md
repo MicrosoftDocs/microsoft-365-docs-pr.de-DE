@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 f1_keywords:
 - ms.exch.eac.ActionCenter.Restricted.Users.RestrictedUsers
 ms.service: O365-seccomp
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: Hier erfahren Administratoren, wie sie Benutzer aus dem Portal für eingeschränkte Benutzer in Office 365 entfernen können. Benutzer werden aufgrund des Versands von ausgehenden Spamnachrichten zum Portal für eingeschränkte Benutzer hinzugefügt, in der Regel als Folge einer Kontokompromittierung.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 43312ee6eff9b56ac4faf8173666a1ba79b9e067
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: 0d411cec48ff6704d737850974e832dbe07a3ad3
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726730"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826529"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Entfernen von blockierten Benutzern aus dem Portal "Eingeschränkte Benutzer" in Office 365
 

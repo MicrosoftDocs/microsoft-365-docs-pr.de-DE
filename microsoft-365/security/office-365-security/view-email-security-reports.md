@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie e-Mail-Sicherheitsberichte für Ihre Organisation suchen und verwenden. E-Mail-Sicherheitsberichte sind im Security & Compliance Center verfügbar.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 269e68c1e7f864ba5be84f1dc444a3d7d9c27e55
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 2b714d9dc4e3ca143d2cb2d7164f8c3c737d1928
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46578030"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826505"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Anzeigen von E-Mail-Sicherheitsberichten im Security & Compliance Center
 
@@ -274,7 +274,7 @@ Der Bericht enthält eine aggregierte Anzahl von eindeutigen e-Mail-Nachrichten 
 Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center](https://protection.office.com), wechseln Sie **Reports** zum \> **Dashboard** Berichte, und wählen Sie **Threat Protection Status**aus. Wenn Sie direkt zum Bericht wechseln möchten, öffnen Sie eine der folgenden URLs:
 
 - Office 365 ATP: <https://protection.office.com/reportv2?id=ATPV2AggregateReport> .
-- EoP<https://protection.office.com/reportv2?id=ATPAggregateLightReport>
+- EoP <https://protection.office.com/reportv2?id=ATPAggregateLightReport>
 
 ![Widget "Threat Protection Status" im Dashboard "Berichte"](../../media/threat-protection-status-report-widget.png)
 
@@ -371,7 +371,7 @@ Wenn Sie auf **Detailtabelle anzeigen**klicken, hängt die Anzeige der angezeigt
 - **Anzeigen von Daten nach: Inhalt \> Schadsoftware**:
 
   - **Date**
-  - **Standort**
+  - **Ort**
   - **Regie**
   - **Name der Schadsoftware**
 

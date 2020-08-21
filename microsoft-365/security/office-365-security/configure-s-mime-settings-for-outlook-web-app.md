@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 description: Eine kurze Beschreibung, was Exchange Online Administratoren tun müssen, um die S/MIME-Einstellungen in Outlook im Internet in Exchange Online anzuzeigen und zu konfigurieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b9f4e6c33369640ad66956568959dd02b01c4fb9
-ms.sourcegitcommit: df59c83174d845b8ddec48b9be2659fbfb58bb7f
+ms.openlocfilehash: 9acd7d4523754c1e07ece8fb0344d9f888c0ee3d
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46517485"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825701"
 ---
 # <a name="configure-smime-settings-in-exchange-online-for-outlook-on-the-web"></a>Konfigurieren von S/MIME-Einstellungen in Exchange Online für Outlook im Internet
 

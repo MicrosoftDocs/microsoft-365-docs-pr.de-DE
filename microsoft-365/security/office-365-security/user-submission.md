@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie ein Postfach So konfigurieren, dass Spam-und Phishing-e-Mails erfasst werden, die von Benutzern gemeldet werden.
-ms.openlocfilehash: ae6088a0eab214b4e160b85a278e1160c2845ed9
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 76264801820b6a41ee744a8adcc3b3b48a8e9479
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577126"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826741"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-exchange-online"></a>Angeben eines Postfachs für Benutzer Übermittlungen von Spam-und Phishing-Nachrichten in Exchange Online
 
@@ -101,7 +101,7 @@ Durch das Übermitteln von Benutzern gemeldeten Nachrichten an ein benutzerdefin
 
 Nachrichten, die an benutzerdefinierte Postfächer gesendet werden, müssen einem bestimmten Übermittlungs Nachrichtenformat entsprechen. Der Betreff (Umschlag Titel) der Übermittlung sollte in folgendem Format vorliegen:
 
-`SafetyAPIAction|NetworkMessgeId|SenderIp|FromAddress|(Message Subject)`
+`SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
 
 were SafetyAPIAction ist einer der folgenden Integer-Werte:
 

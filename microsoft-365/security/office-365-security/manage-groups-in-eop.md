@@ -7,19 +7,19 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren in eigenständigen Exchange Online Schutzorganisationen können Informationen zum Erstellen, ändern und Entfernen von Verteilergruppen und e-Mail-aktivierten Sicherheitsgruppen in der Exchange-Verwaltungskonsole (EAC) und in der eigenständigen Exchange Online Protection (EoP) PowerShell EoP.
-ms.openlocfilehash: 813735d4024c3b8424a6bbac51ebef7b4c53e590
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: e7b93b9d05fda7e4f5f8abea02fbe3f1c70a6c74
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653653"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826553"
 ---
 # <a name="manage-groups-in-eop"></a>Verwalten von Gruppen in EOP
 
@@ -50,7 +50,7 @@ Sie können Gruppen in der Exchange-Verwaltungskonsole (EAC) und in der eigenst�
 - Informationen zu Tastenkombinationen, die möglicherweise für die Verfahren in diesem Thema gelten, finden Sie unter [Tastenkombinationen für das Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
-> Liegt ein Problem vor? Fragen Sie im Forum [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) nach Hilfe.
+> Liegt ein Problem vor? Bitten Sie im [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)-Forum um Hilfe.
 
 ## <a name="use-the-exchange-admin-center-to-manage-distribution-groups"></a>Verwalten von Verteilergruppen mithilfe der Exchange-Verwaltungskonsole
 
@@ -160,7 +160,7 @@ Verwenden Sie die folgende Syntax, um Verteilergruppen oder e-Mail-aktivierte Si
 New-EOPDistributionGroup -Name "<Unique Name>" -ManagedBy @("UserOrGroup1","UserOrGroup2",..."UserOrGroupN">) [-Alias <text>] [-DisplayName "<Descriptive Name>"] [-Members @("UserOrGroup1","UserOrGroup2",..."UserOrGroupN">)] [-Notes "<Optional Text>"] [-PrimarySmtpAddress <SmtpAddress>] [-Type <Distribution | Security>]
 ```
 
-**Anmerkungen**:
+**Hinweise**:
 
 - Der _Name_ -Parameter ist erforderlich, hat eine maximale Länge von 64 Zeichen und muss eindeutig sein. Wenn Sie den _DisplayName_-Parameter nicht verwenden, wird der Wert des _Name_-Parameters für den Anzeigenamen verwendet.
 
@@ -192,7 +192,7 @@ Update-EOPDistributionGroupMember -Identity <GroupIdentity> -Members @("User1","
 In diesem Beispiel wird die primäre SMTP-Adresse (auch als Antwortadresse bezeichnet) für die Gruppe "Seattle Employees" in Sea.Employees@contoso.com verwendet.
 
 ```PowerShell
-Set-EOPDistributionGroup "Seattle Employees" -PrimarysmptAddress "sea.employees@contoso.com"
+Set-EOPDistributionGroup "Seattle Employees" -PrimarySmtpAddress "sea.employees@contoso.com"
 ```
 
 In diesem Beispiel werden die aktuellen Mitglieder der Sicherheits Team Gruppe durch Kitty Petersen und Tyson Fawcett ersetzt.

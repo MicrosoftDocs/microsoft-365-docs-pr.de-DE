@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Erfahren Sie mehr über Domänen, indem Sie Antworten auf Ihre häufig gestellten Fragen finden.
-ms.openlocfilehash: bb949dbd4e32bb62f10dfd0323df70697fdc5404
-ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
+ms.openlocfilehash: fe602c45059be1b273b7ebe3a11cd91adf89a479
+ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46804196"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845844"
 ---
 # <a name="domains-faq"></a>FAQ zu Domänen
 
@@ -52,7 +52,7 @@ Inhalt dieses Artikels
 - [Was geschieht, wenn mein DNS-Anbieter bestimmte Eintragstypen nicht unterstützt?](#what-happens-if-my-dns-provider-doesnt-support-certain-record-types)
 - [Wie kann ich die Standarddomäne in Microsoft 365 festlegen oder ändern?](#how-do-i-set-or-change-the-default-domain-in-microsoft-365)
 - [Kann ich Microsoft 365 benutzerdefinierte Unterdomänen oder mehrere Domänen hinzufügen?](#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365)
-- [Wie übertrage ich eine Domäne von Microsoft 365 auf einen anderen Host?]
+- [Wie übertrage ich eine Domäne von Microsoft 365 auf einen anderen Host?](#how-do-i-transfer-a-domain-from-microsoft-365-to-another-host)
 - [Warum habe ich eine Domäne des Typs "onmicrosoft.com"?](#why-do-i-have-an-onmicrosoftcom-domain)
 - [Warum habe ich eine "onmicrosoft.de"-Domäne?](#why-do-i-have-an-onmicrosoftde-domain)
 - [Wie kann ich meinen gemeinnützigen oder Bildungsstatus überprüfen?](#how-do-i-verify-my-nonprofit-or-education-status)
@@ -200,7 +200,7 @@ Wenn Sie Microsoft 365 mehrere Domänen hinzufügen, können Sie alle Dienste (w
 
 Informationen zum Verfahren zum Übertragen einer Domäne finden Sie unter [übertragen einer Domäne von Microsoft auf einen anderen Host](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host).
 
-## <a name="pilot-microsoft-365-from-my-custom-domain"></a>Testen von Microsoft 365 aus Ihrer benutzerdefinierten Domäne
+## <a name="pilot-microsoft-365-from-my-custom-domain"></a>Microsoft 365-Pilot aus benutzerdefinierter Domäne
 
 Das Verfahren zum pilotieren von Microsoft 365-e-Mail-Funktionen von einer benutzerdefinierten Domäne zu einem Microsoft 365-Postfach finden Sie unter [Pilot Microsoft 365 aus meiner benutzerdefinierten Domäne](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain).
 

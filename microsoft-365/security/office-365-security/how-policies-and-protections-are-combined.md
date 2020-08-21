@@ -8,7 +8,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die Anwendungsreihenfolge von Schutzmaßnahmen in Exchange Online Protection (EoP) und darüber informieren, wie der Prioritätswert in Schutzrichtlinien festlegt, welche Richtlinie angewendet wird.
-ms.openlocfilehash: 7775f0a37751289e7f0116575e2f6b2733683b6b
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 9556d2262eb59224357e20027a1f0e63404081f2
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653678"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827409"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Reihenfolge und Priorität des e-Mail-Schutzes
 
@@ -38,11 +38,11 @@ Es gibt zwei Hauptfaktoren, die bestimmen, welche Richtlinie auf eine Nachricht 
   |Priorität|E-Mail-Schutz|Kategorie|Verwalten von|
   |---|---|---|---|
   |1|Schadsoftware|Kat: MALW|[Konfigurieren von Anti-Malware-Richtlinien in EoP](configure-anti-malware-policies.md)|
-  |2|Phishing-E-Mail|Kat: PHSH|[Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)|
+  |2|Phishing|Kat: PHSH|[Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)|
   |3|Spam mit hoher Vertrauenswürdigkeit|Kat: HSPM|[Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)|
   |4 |Spoofing|Kat: Spoof|[Konfigurieren von Spoof Intelligence in EoP](learn-about-spoof-intelligence.md)|
   |5 |Spam|Kat: SPM|[Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)|
-  |6 |Massensendung|Kat: Bulk|[Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)|
+  |6 |Masse|Kat: Bulk|[Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)|
   |7<sup>\*</sup>|Domänen Identitätswechsel (geschützte Benutzer)|DIMP|[Konfigurieren der ATP Antiphishing-Richtlinien](configure-atp-anti-phishing-policies.md)|
   |8<sup>\*</sup>|Benutzeridentitätswechsel (geschützte Domänen)|Uimp|[Konfigurieren der ATP Antiphishing-Richtlinien](configure-atp-anti-phishing-policies.md)|
   |

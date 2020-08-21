@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die SCL-Bewertung (Spam Confidence Level) informieren, die auf Nachrichten in Exchange Online Protection (EoP) angewendet wird.
-ms.openlocfilehash: 7e8d706f89c5b16bd34ad074498e011dc5d74093
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 44687b8234e38e7f818aee908d1b65f382c908fe
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656539"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827397"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>SCL (Spam Confidence Level) in EoP
 

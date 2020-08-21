@@ -1,5 +1,5 @@
 ---
-title: Überwachen von Berichten in eigenständigen EoP
+title: Überwachungsberichte in EOP als eigenständige Lösung
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -7,19 +7,19 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: Administratoren können Informationen zu den Administrator Überwachungsberichten erhalten, die in Exchange Online Protection verfügbar sind (EoP)
-ms.openlocfilehash: 1553bb3e076c97d7539107509aaf903b0607eefc
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: ab2c1af7197094b456d8e1b4151dd42791d992a1
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213316"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825785"
 ---
-# <a name="auditing-reports-in-standalone-eop"></a>Überwachen von Berichten in eigenständigen EoP
+# <a name="auditing-reports-in-standalone-eop"></a>Überwachungsberichte in EOP als eigenständige Lösung
 
 In Organisationen mit eigenständigen Exchange Online Schutz (EoP) ohne Exchange Online Postfächer können Überwachungsberichte Ihnen dabei helfen, behördliche, Compliance-und prozessrechtliche Anforderungen für Ihre Organisation zu erfüllen. Sie können die Überwachungsberichte jederzeit abrufen, um an Ihrer EOP-Konfiguration vorgenommene Änderungen zu ermitteln. Diese Berichte können Sie zum Behandeln von Konfigurationsproblemen sowie zum Ermitteln der Ursache von Sicherheits- oder Kompatibilitätsproblemen heranziehen.
 

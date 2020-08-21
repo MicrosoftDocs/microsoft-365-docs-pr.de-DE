@@ -6,7 +6,7 @@ manager: dansimp
 ms.reviewer: kshi
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über sichere Dokumente in Microsoft 365 E5 oder Microsoft 365 E5 Security.
-ms.openlocfilehash: c574e28a01dc961d898638184afe9ece90e31133
-ms.sourcegitcommit: aa7f7350d1342ff9713bb840b2cc96d1a4234ef4
+ms.openlocfilehash: cd689099fc6a6caa1e0e649c3f152f1de123bf12
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "44835351"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827469"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Sichere Dokumente in Microsoft 365 E5
 

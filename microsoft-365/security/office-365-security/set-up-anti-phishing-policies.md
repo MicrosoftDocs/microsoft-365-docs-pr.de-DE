@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.date: ''
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -16,18 +16,18 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die Anti-Phishing-Richtlinien informieren, die in Exchange Online Protection (EoP) und Office 365 Advanced Threat Protection (Office 365 ATP) zur Verfügung stehen.
-ms.openlocfilehash: b492d37bea6135bccb770571f9984f9866c7cfd3
-ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
+ms.openlocfilehash: f671588ff4232c6ca1c1342475f48802bf1a0076
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46804278"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825101"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-Phishing-Richtlinien in Microsoft 365
 
 Richtlinien zum Konfigurieren von Einstellungen zum Schutz vor Phishing stehen in Microsoft 365-Organisationen mit Exchange Online-Postfächern, eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächern und Office 365 Advanced Threat Protection (Office 365 ATP)-Organisationen zur Verfügung.
 
-ATP-Anti-Phishing-Richtlinien sind nur in Organisationen verfügbar, die Office 365 ATP haben. Zum Beispiel:
+ATP-Anti-Phishing-Richtlinien sind nur in Organisationen verfügbar, die Office 365 ATP haben. Beispiel:
 
 - Microsoft 365 Enterprise E5, Microsoft 365 Education A5, etc.
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)

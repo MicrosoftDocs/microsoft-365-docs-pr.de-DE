@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 07/23/2020
+ms.date: 08/20/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 92ad1b644dd0b3cac04657d01f70cfb274b7e517
-ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
+ms.openlocfilehash: 39ef79f685c216732aa1e3e0ccb28a4ab6e2b07a
+ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45391554"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845856"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Neuerungen in Office 365 ATP
 
@@ -34,6 +34,11 @@ In diesem Artikel werden neue Features in der neuesten Version von Office 365 AT
 
 > [!TIP]
 > Sie haben noch keine Office 365 ATP? [Wenden Sie sich an den Vertrieb, um eine Testversion zu starten](https://go.microsoft.com/fwlink/p/?LinkId=518644).
+
+## <a name="septemberoctober-2020"></a>September/Oktober 2020 
+
+- [Überprüfen der Richtlinien mithilfe der Konfigurationsanalyse](configuration-analyzer-for-security-policies.md)
+- [Manuelles Überschreiben von Filter Urteilen mithilfe der Liste "Mandanten zulassen/blockieren"](tenant-allow-block-list.md)
 
 ## <a name="julyaugust-2020"></a>Juli/August 2020 
 
@@ -93,7 +98,7 @@ In diesem Artikel werden neue Features in der neuesten Version von Office 365 AT
 
 Wussten Sie schon, dass Office 365 ATP in zwei Plänen verfügbar ist? [Hier finden Sie weitere Informationen zu den einzelnen Plänen](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap)
 

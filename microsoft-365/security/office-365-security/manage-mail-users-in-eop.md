@@ -7,18 +7,18 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: In diesem Artikel erfahren Sie, wie Sie e-Mail-Benutzer in Exchange Online Protection (EoP) verwalten, einschließlich der Verwendung der Verzeichnissynchronisierung, der Exchange-Verwaltungskonsole und PowerShell zum Verwalten von Benutzern.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d82170499bcfa6465164ca2644eea43c2558ad18
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 64b7effadd96b6dc025677139c4303acd538dadb
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616834"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827075"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>Verwalten von E-Mail-Benutzern in EOP als eigenständige Lösung
 
@@ -107,15 +107,15 @@ Verwenden Sie die Registerkarte **Kontaktinformationen** , um die Kontaktinforma
 - **Land/Region**
 - **Telefon (geschäftlich)**
 - **Mobiltelefon**
-- **Fax-**
+- **Fax**
 - **Weitere Optionen**
 
   - **Office**
   - **Telefon (privat)**
   - **Webseite**
-  - **Hinweise**
+  - **Notizen**
 
-#### <a name="organization"></a>Organisation
+#### <a name="organization"></a>Organization (Organisation)
 
 Verwenden Sie die Registerkarte **Organisation** , um detaillierte Informationen zur Rolle des Benutzers in der Organisation aufzuzeichnen.
 
@@ -162,7 +162,7 @@ New-EOPMailUser -Name "<UniqueName>" -MicrosoftOnlineServicesID <Account> -Passw
 **Hinweise**:
 
 - Der _Name_ -Parameter ist erforderlich, hat eine maximale Länge von 64 Zeichen und muss eindeutig sein. Wenn Sie den _DisplayName_-Parameter nicht verwenden, wird der Wert des _Name_-Parameters für den Anzeigenamen verwendet.
-- Wenn Sie den Parameter _Alias_ nicht verwenden, wird die linke Seite des _MicrosoftOnlneServicesID_ -Parameters für den Alias verwendet.
+- Wenn Sie den Parameter _Alias_ nicht verwenden, wird die linke Seite des _MicrosoftOnlineServicesID_ -Parameters für den Alias verwendet.
 - Wenn Sie den Parameter _ExternalEmailAddress_ nicht verwenden, wird der _MicrosoftOnlineServicesID_ -Wert für die externe e-Mail-Adresse verwendet.
 
 In diesem Beispiel wird ein e-Mail-Benutzer mit den folgenden Einstellungen erstellt:
@@ -185,7 +185,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [New-EOPMa
 Verwenden Sie die folgende Syntax, um vorhandene e-Mail-Benutzer in eigenständiger EoP PowerShell zu ändern:
 
 ```powershell
-Set-EOPMailUser -Identity <MailUserIdentity> [-Alias <Text>] [-DisplayName <Textg>] [-EmailAddresses <ProxyAddressCollection>] [-MicrosoftOnlineServicesID <SmtpAddress>]
+Set-EOPMailUser -Identity <MailUserIdentity> [-Alias <Text>] [-DisplayName <Text>] [-EmailAddresses <ProxyAddressCollection>] [-MicrosoftOnlineServicesID <SmtpAddress>]
 ```
 
 ```powershell

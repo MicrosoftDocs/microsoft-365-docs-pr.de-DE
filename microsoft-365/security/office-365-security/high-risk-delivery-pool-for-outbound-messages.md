@@ -1,5 +1,5 @@
 ---
-title: Pools für ausgehende Zustellungen
+title: Pools für die Zustellung ausgehender Nachrichten
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -16,14 +16,14 @@ ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie die Zustellungs Pools verwendet werden, um die Reputation von e-Mail-Servern in Microsoft 365-Rechenzentren zu schützen.
-ms.openlocfilehash: 213149eda3dd121b65b64e3bddbb4bd73d66f57c
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: 83ea21a9230240f1339513efc75587f3d84733cb
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419160"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827737"
 ---
-# <a name="outbound-delivery-pools"></a>Pools für ausgehende Zustellungen
+# <a name="outbound-delivery-pools"></a>Pools für die Zustellung ausgehender Nachrichten
 
 E-Mail-Server in den Microsoft 365-Rechenzentren sind möglicherweise vorübergehend für das Senden von Spam schuldig. Beispielsweise eine Schadsoftware oder ein böswilliger Spamangriff in einer lokalen e-Mail-Organisation, die ausgehende e-Mails über Microsoft 365 sendet oder Microsoft 365-Konten kompromittiert. Angreifer versuchen auch, die Erkennung durch Weiterleiten von Nachrichten über die Microsoft 365-Weiterleitung zu vermeiden.
 
@@ -56,6 +56,6 @@ Alle diese Probleme können zu einer plötzlichen Vergrößerung der Anzahl von 
 
 ## <a name="relay-pool"></a>Relay-Pool
 
-Nachrichten, die von Microsoft 365 weitergeleitet oder weitergeleitet werden, werden über einen speziellen Relay-Pool gesendet, da das endgültige Ziel Microsoft 365 nicht als tatsächlichen Absender berücksichtigen sollte. Es ist auch wichtig, dass wir diesen Datenverkehr isolieren, da es legitime und illegitmate Szenarien für die Auto Weiterleitung oder Weiterleitung von e-Mails von Microsoft 365 gibt. Ähnlich wie bei dem Pool mit hoher Risikoverteilung wird für weitergeleitete e-Mails ein separater IP-Adresspool verwendet. Dieser Adresspool wird nicht veröffentlicht, da er häufig geändert werden kann. 
+Nachrichten, die von Microsoft 365 weitergeleitet oder weitergeleitet werden, werden über einen speziellen Relay-Pool gesendet, da das endgültige Ziel Microsoft 365 nicht als tatsächlichen Absender berücksichtigen sollte. Es ist auch wichtig, dass wir diesen Datenverkehr isolieren, da es legitime und ungültige Szenarien für die Auto Weiterleitung oder das Weiterleiten von e-Mails von Microsoft 365 gibt. Ähnlich wie bei dem Pool mit hoher Risikoverteilung wird für weitergeleitete e-Mails ein separater IP-Adresspool verwendet. Dieser Adresspool wird nicht veröffentlicht, da er häufig geändert werden kann.
 
 Microsoft 365 muss sicherstellen, dass der ursprüngliche Absender legitim ist, damit wir die weitergeleitete Nachricht zuverlässig übermitteln können. Um dies zu erreichen, muss die e-Mail-Authentifizierung (SPF, DKIM und DMARC) übergeben werden, wenn die Nachricht zu uns kommt. In Fällen, in denen der Absender authentifiziert werden kann, verwenden wir die Absender Umschreibung, um dem Empfänger zu helfen, zu wissen, dass die weitergeleitete Nachricht von einer vertrauenswürdigen Quelle stammt. Sie können mehr darüber erfahren, wie das funktioniert und was Sie tun können, um sicherzustellen, dass die sendende Domäne die Authentifizierung im [Absender umschreibungs Schema (SRS)](https://docs.microsoft.com/office365/troubleshoot/antispam/sender-rewriting-scheme)übergibt.

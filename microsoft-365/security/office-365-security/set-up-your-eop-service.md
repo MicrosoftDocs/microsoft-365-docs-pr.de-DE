@@ -7,19 +7,19 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Administratoren können erfahren, wie Sie eigenständige Exchange Online Schutz (EoP) einrichten, um lokale e-Mail-Umgebungen zu schützen.
-ms.openlocfilehash: b50ec7e2bca3765bb81e165b74596155da1f7940
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: cf49cf4b0784731c23c0c36de44d3b0b2cb78dc8
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588064"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827821"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>Einrichten des eigenständigen EoP-Diensts
 
@@ -39,7 +39,7 @@ In diesem Thema wird erläutert, wie Sie eigenständige Exchange Online Schutz e
 - Informationen zu Tastenkombinationen, die möglicherweise für die Verfahren in diesem Thema gelten, finden Sie unter [Tastenkombinationen für das Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
-> Liegt ein Problem vor? Fragen Sie im Forum [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) nach Hilfe.
+> Liegt ein Problem vor? Bitten Sie im [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)-Forum um Hilfe.
 
 ## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>Schritt 1: Verwenden des Microsoft 365 Admin Center zum Hinzufügen und Überprüfen Ihrer Domäne
 

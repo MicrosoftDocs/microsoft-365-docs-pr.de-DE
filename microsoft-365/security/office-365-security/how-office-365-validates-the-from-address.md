@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratoren können sich über die Arten von e-Mail-Adressen informieren, die von Exchange Online Protection (EoP) und Outlook.com akzeptiert oder abgelehnt werden, um Phishing zu verhindern.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f16bb9b0af1ca5481437ef253c6d36dd519ff9e2
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: c67cf5855f2b0a99cf8d03bb6d7ba8557329b300
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209451"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827421"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Wie EoP die Absenderadresse überprüft, um Phishing zu verhindern
 
@@ -72,13 +72,13 @@ Die folgenden e-Mail-Adressen sind gültig:
 
 - `From: <sender@contoso.com>`
 
-- `From: < sender@contoso.com >`(Nicht empfehlenswert, da zwischen den spitzen Klammern und der e-Mail-Adresse Leerzeichen vorhanden sind.)
+- `From: < sender@contoso.com >` (Nicht empfehlenswert, da zwischen den spitzen Klammern und der e-Mail-Adresse Leerzeichen vorhanden sind.)
 
 - `From: "Sender, Example" <sender.example@contoso.com>`
 
 - `From: "Microsoft 365" <sender@contoso.com>`
 
-- `From: Microsoft 365 <sender@contoso.com>`(Nicht empfohlen, da der Anzeigename nicht in doppelte Anführungszeichen eingeschlossen ist.)
+- `From: Microsoft 365 <sender@contoso.com>` (Nicht empfohlen, da der Anzeigename nicht in doppelte Anführungszeichen eingeschlossen ist.)
 
 Die folgenden e-Mail-Adressen sind ungültig:
 
@@ -88,19 +88,19 @@ Die folgenden e-Mail-Adressen sind ungültig:
 
   Nachrichten mit leerer Absenderadresse werden nun nicht mehr akzeptiert.
 
-- `From: Microsoft 365 sender@contoso.com`(Der Anzeigename ist vorhanden, aber die e-Mail-Adresse ist nicht in spitzen Klammern eingeschlossen.)
+- `From: Microsoft 365 sender@contoso.com` (Der Anzeigename ist vorhanden, aber die e-Mail-Adresse ist nicht in spitzen Klammern eingeschlossen.)
 
-- `From: "Microsoft 365" <sender@contoso.com> (Sent by a process)`(Text nach der e-Mail-Adresse.)
+- `From: "Microsoft 365" <sender@contoso.com> (Sent by a process)` (Text nach der e-Mail-Adresse.)
 
-- `From: Sender, Example <sender.example@contoso.com>`(Der Anzeigename enthält ein Komma, ist jedoch nicht in doppelte Anführungszeichen eingeschlossen.)
+- `From: Sender, Example <sender.example@contoso.com>` (Der Anzeigename enthält ein Komma, ist jedoch nicht in doppelte Anführungszeichen eingeschlossen.)
 
-- `From: "Microsoft 365 <sender@contoso.com>"`(Der gesamte Wert ist falsch in doppelte Anführungszeichen eingeschlossen.)
+- `From: "Microsoft 365 <sender@contoso.com>"` (Der gesamte Wert ist falsch in doppelte Anführungszeichen eingeschlossen.)
 
-- `From: "Microsoft 365 <sender@contoso.com>" sender@contoso.com`(Der Anzeigename ist vorhanden, aber die e-Mail-Adresse ist nicht in spitzen Klammern eingeschlossen.)
+- `From: "Microsoft 365 <sender@contoso.com>" sender@contoso.com` (Der Anzeigename ist vorhanden, aber die e-Mail-Adresse ist nicht in spitzen Klammern eingeschlossen.)
 
-- `From: Microsoft 365<sender@contoso.com>`(Kein Leerzeichen zwischen dem Anzeigenamen und der linken spitzen Klammer.)
+- `From: Microsoft 365<sender@contoso.com>` (Kein Leerzeichen zwischen dem Anzeigenamen und der linken spitzen Klammer.)
 
-- `From: "Microsoft 365"<sender@contoso.com>`(Kein Leerzeichen zwischen dem schließenden doppelten Anführungszeichen und der linken spitzen Klammer.)
+- `From: "Microsoft 365"<sender@contoso.com>` (Kein Leerzeichen zwischen dem schließenden doppelten Anführungszeichen und der linken spitzen Klammer.)
 
 ## <a name="suppress-auto-replies-to-your-custom-domain"></a>Automatische Antworten auf Ihre benutzerdefinierte Domäne unterdrücken
 
@@ -110,7 +110,7 @@ Sie können den Wert nicht verwenden `From: <>` , um automatische Antworten zu u
 
 - Der NULL-MX-Eintrag für diese Domäne besteht aus einem einzelnen Zeitraum.
 
-Zum Beispiel:
+Beispiel:
 
 ```text
 noreply.contoso.com IN MX .

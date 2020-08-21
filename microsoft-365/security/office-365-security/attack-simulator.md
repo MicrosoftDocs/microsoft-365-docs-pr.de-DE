@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: overview
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -17,23 +17,21 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Erfahren Sie, wie Sie mithilfe des Angriffs Simulators simulierte Phishing-und Kennwortangriffe in Ihrer Microsoft 365 E5-oder ATP-Plan 2-Organisation ausführen.
-ms.openlocfilehash: 6aa1d2027915caeffe2c20ba8f75f3658c336dbe
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+description: Administratoren erfahren, wie Sie mithilfe des Angriffs Simulators simulierte Phishing-und Kennwortangriffe in Ihren Microsoft 365 E5-oder ATP-Plan-2-Organisationen ausführen können.
+ms.openlocfilehash: 017376d8002811398fe3ce2d94f7c207cd718a78
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653221"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825833"
 ---
 # <a name="attack-simulator-in-atp"></a>Angriffs Simulator in ATP
 
-**Zusammenfassung** Wenn Sie globaler Administrator oder Sicherheitsadministrator sind und Ihre Organisation Office 365 Advanced Threat Protection Plan 2, einschließlich der [Funktionen zur Ermittlung und Reaktion von Bedrohungen](office-365-ti.md), verwendet, können Sie mit dem Angriffs Simulator realistische Angriffsszenarien in Ihrer Organisation ausführen. Auf diese Weise können Sie Benutzer mit Sicherheitslücken leichter identifizieren und finden, bevor ein echter Angriff passiert. Lesen Sie diesen Artikel, um mehr zu erfahren.
+Wenn Ihre Organisation Office 365 Advanced Threat Protection (ATP) Plan 2, einschließlich der [Funktionen zur Ermittlung und Reaktion von Bedrohungen](office-365-ti.md), verfügt, können Sie den Angriffs Simulator im Security & Compliance Center verwenden, um realistische Angriffsszenarien in Ihrer Organisation auszuführen. Diese simulierten Angriffe können Sie bei der Identifizierung und Suche nach anfälligen Benutzern unterstützen, bevor ein echter Angriff Ihr Endergebnis beeinträchtigt. Lesen Sie diesen Artikel, um mehr zu erfahren.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Zum Öffnen des Security & Compliance Centers wechseln Sie zu <https://protection.office.com/>. Angriffs Simulator ist unter **Threat Management** \> **Attack Simulator**verfügbar.
-
-  ![Threat Management – Angriffs Simulator](../../media/ThreatMgmt-AttackSimulator.png)
+- Zum Öffnen des Security & Compliance Centers wechseln Sie zu <https://protection.office.com/>. Angriffs Simulator ist unter **Threat Management** \> **Attack Simulator**verfügbar. Wechseln Sie direkt zum Angriffs Simulator, öffnen Sie <https://protection.office.com/attacksimulator> .
 
 - Weitere Informationen zur Verfügbarkeit des Angriffs Simulators in verschiedenen Microsoft 365-Abonnements finden Sie unter [Office 365 Advanced Threat Protection-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
@@ -41,23 +39,19 @@ ms.locfileid: "46653221"
 
 - Ihr Konto muss für die mehrstufige Authentifizierung (MFA) konfiguriert sein, um Kampagnen im Angriffs Simulator zu erstellen und zu verwalten. Anweisungen finden Sie unter [Einrichten der mehr](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)stufigen Authentifizierung.
 
-Damit ein Angriff erfolgreich gestartet werden kann, müssen Sie sicherstellen, dass das Konto, mit dem Simulierte Angriffe ausgeführt werden, die mehrstufige Authentifizierung verwendet. Darüber hinaus müssen Sie ein globaler Administrator oder Sicherheitsadministrator sein. (Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).)
-
 - Bei Phishing-Kampagnen werden Ereignisse für 30 Tage gesammelt und verarbeitet. Die Daten der Verlaufs Kampagne werden bis zu 90 Tage nach dem Start der Kampagne zur Verfügung stehen.
 
 - Es gibt keine entsprechenden PowerShell-Cmdlets für den Angriffs Simulator.
 
 ## <a name="spear-phishing-campaigns"></a>Speer-Phishing-Kampagnen
 
-*Phishing* ist ein allgemeiner Begriff für e-Mail-Angriffe, die versuchen, vertrauliche Informationen in Nachrichten zu stehlen, die anscheinend von legitimen oder vertrauenswürdigen Absendern sind. *Spear-Phishing* ist ein gezielter Phishing-Angriff, der sehr fokussierte und angepasste Inhalte verwendet, die speziell auf die Zielempfänger zugeschnitten sind (normalerweise nach Aufklärung der Empfänger durch den Angreifer).
-
-- Sie sind globaler Administrator oder Sicherheitsadministrator
+*Phishing* ist ein allgemeiner Begriff für e-Mail-Angriffe, die versuchen, vertrauliche Informationen in Nachrichten zu stehlen, die anscheinend von legitimen oder vertrauenswürdigen Absendern sind. *Spear-Phishing* ist ein gezielter Phishing-Angriff, der fokussierte und angepasste Inhalte verwendet, die speziell auf die Zielempfänger zugeschnitten sind (normalerweise nach Aufklärung der Empfänger durch den Angreifer).
 
 In Attack Simulator stehen zwei verschiedene Arten von Speer-Phishing-Kampagnen zur Verfügung:
 
-- [Mehrstufige Authentifizierung/bedingter Zugriff](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication) ist aktiviert, für mindestens das globale Administratorkonto und Sicherheitsadministratoren, die den Angriffs Simulator verwenden werden. (Im Idealfall ist mehrstufige Authentifizierung/bedingter Zugriff für alle Benutzer in Ihrer Organisation aktiviert.)
+- **Spear Phishing (Credentials Harvest)**: der Angriff versucht, die Empfänger davon zu überzeugen, auf eine URL in der Nachricht zu klicken. Wenn Sie auf den Link klicken, werden Sie aufgefordert, Ihre Anmeldeinformationen einzugeben. Wenn dies der Fall ist, werden Sie an einen der folgenden Speicherorte geleitet:
 
-  - Eine Standardseite, auf der dies erläutert wurde, war nur ein Test und gibt Tipps zum Erkennen von Phishing-Nachrichten.
+  - Eine Standardseite, die erklärt, dass dies ein nur ein Test war, und gibt Tipps zum Erkennen von Phishing-Nachrichten.
 
     ![Was die Benutzer sehen, wenn Sie auf den Phishing-Link klicken und Ihre Anmeldeinformationen eingeben](../../media/attack-simulator-phishing-result.png)
 
@@ -131,9 +125,9 @@ Wenn Sie eine der integrierten Vorlagen verwenden oder die e-Mail-Nachricht dire
 
    Die HTML-Formatierung kann so einfach oder komplex sein, wie Sie es benötigen. Sie können Bilder und Text einfügen, um die Glaubwürdigkeit erhöhen der Nachricht im e-Mail-Client des Empfängers zu verbessern.
 
-   - `${username}`Fügt den Namen des Empfängers ein.
+   - `${username}` Fügt den Namen des Empfängers ein.
 
-   - `${loginserverurl}`Fügt den URL-Wert des **Phishing-Anmeldeservers** aus dem vorherigen Schritt ein.
+   - `${loginserverurl}` Fügt den URL-Wert des **Phishing-Anmeldeservers** aus dem vorherigen Schritt ein.
 
    Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
 
@@ -212,9 +206,9 @@ Wenn Sie eine der integrierten Vorlagen verwenden oder die e-Mail-Nachricht dire
 
    Die HTML-Formatierung kann so einfach oder komplex sein, wie Sie es benötigen. Sie können Bilder und Text einfügen, um die Glaubwürdigkeit erhöhen der Nachricht im e-Mail-Client des Empfängers zu verbessern.
 
-   - `${username}`Fügt den Namen des Empfängers ein.
+   - `${username}` Fügt den Namen des Empfängers ein.
 
-   - `${loginserverurl}`Fügt den URL-Wert für den **Phishing-Anmelde Server** ein.
+   - `${loginserverurl}` Fügt den URL-Wert für den **Phishing-Anmelde Server** ein.
 
    Bei Kampagnen mit **Spear-Phishing (Attachment)** sollten Sie den Link aus dem Nachrichtentext entfernen (andernfalls enthält die Nachricht sowohl einen Link als **auch** eine Anlage, und Link Klicks werden nicht in einer Anlagen Kampagne nachverfolgt).
 
