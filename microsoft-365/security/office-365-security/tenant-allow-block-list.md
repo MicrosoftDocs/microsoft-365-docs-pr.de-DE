@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,14 +15,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie URL-Einträge in der Liste Mandanten-Allow/Block im Security & Compliance Center konfigurieren.
-ms.openlocfilehash: 5ff34cca922f18a015bd9da847facc8177cf8790
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 888a96f23daf2cf47847466ad4080f310be7f9b4
+ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552550"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845942"
 ---
-# <a name="manage-urls-in-the-tenant-allowblock-list"></a>Verwalten von URLs in der Liste "Mandanten zulassen/blockieren"
+# <a name="manage-urls-in-the-tenant-allowblock-list"></a>Verwalten von URLs in der Zulassungs-/Sperrliste des Mandanten
 
 > [!NOTE]
 > Die in diesem Thema beschriebenen Funktionen befinden sich in der Vorschau, können sich ändern und sind nicht in allen Organisationen verfügbar.
@@ -257,7 +257,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-Te
 
     Enthält beispielsweise `contoso.com/*` nicht `contoso.com/a` .
 
-  - `*.com*`ist ungültig (keine auflösbare Domäne, und der Rechte Platzhalter folgt keinem Schrägstrich).
+  - `*.com*` ist ungültig (keine auflösbare Domäne, und der Rechte Platzhalter folgt keinem Schrägstrich).
 
   - Platzhalter sind in IP-Adressen nicht zulässig.
 
@@ -281,7 +281,7 @@ In den folgenden Abschnitten werden gültige URL-Einträge und ihre Ergebnisse b
 
 #### <a name="scenario-no-wildcards"></a>Szenario: keine Platzhalter
 
-**Eintrag**:`contoso.com`
+**Eintrag**: `contoso.com`
 
 - **Übereinstimmung zulassen**: contoso.com
 
@@ -309,7 +309,7 @@ In den folgenden Abschnitten werden gültige URL-Einträge und ihre Ergebnisse b
 
 #### <a name="scenario-left-wildcard-subdomain"></a>Szenario: Linker Platzhalter (Unterdomäne)
 
-**Eintrag**:`*.contoso.com`
+**Eintrag**: `*.contoso.com`
 
 - Übereinstimmung und **Block Übereinstimmung** **zulassen** :
 
@@ -325,7 +325,7 @@ In den folgenden Abschnitten werden gültige URL-Einträge und ihre Ergebnisse b
   
 #### <a name="scenario-right-wildcard-at-top-of-path"></a>Szenario: rechter Platzhalter oben im Pfad
 
-**Eintrag**:`contoso.com/a/*`
+**Eintrag**: `contoso.com/a/*`
 
 - Übereinstimmung und **Block Übereinstimmung** **zulassen** :
 
@@ -342,7 +342,7 @@ In den folgenden Abschnitten werden gültige URL-Einträge und ihre Ergebnisse b
   
 #### <a name="scenario-left-tilde"></a>Szenario: linke Tilde
 
-**Eintrag**:`~contoso.com`
+**Eintrag**: `~contoso.com`
 
 - Übereinstimmung und **Block Übereinstimmung** **zulassen** :
 
@@ -358,7 +358,7 @@ In den folgenden Abschnitten werden gültige URL-Einträge und ihre Ergebnisse b
 
 #### <a name="scenario-right-wildcard-suffix"></a>Szenario: Rechtes Platzhalter Suffix
 
-**Eintrag**:`contoso.com/*`
+**Eintrag**: `contoso.com/*`
 
 - Übereinstimmung und **Block Übereinstimmung** **zulassen** :
 
@@ -374,7 +374,7 @@ In den folgenden Abschnitten werden gültige URL-Einträge und ihre Ergebnisse b
 
 #### <a name="scenario-left-wildcard-subdomain-and-right-wildcard-suffix"></a>Szenario: linke Platzhalter-Unterdomäne und Rechte Platzhalter Suffix
 
-**Eintrag**:`*.contoso.com/*`
+**Eintrag**: `*.contoso.com/*`
 
 - Übereinstimmung und **Block Übereinstimmung** **zulassen** :
 
@@ -388,7 +388,7 @@ In den folgenden Abschnitten werden gültige URL-Einträge und ihre Ergebnisse b
 
 #### <a name="scenario-left-and-right-tilde"></a>Szenario: linke und Rechte Tilde
 
-**Eintrag**:`~contoso.com~`
+**Eintrag**: `~contoso.com~`
 
 - Übereinstimmung und **Block Übereinstimmung** **zulassen** :
 
@@ -405,7 +405,7 @@ In den folgenden Abschnitten werden gültige URL-Einträge und ihre Ergebnisse b
 
 #### <a name="scenario-ip-address"></a>Szenario: IP-Adresse
 
-**Eintrag**:`1.2.3.4`
+**Eintrag**: `1.2.3.4`
 
 - Übereinstimmung **zulassen** und **Block Übereinstimmung**: 1.2.3.4
 
@@ -416,7 +416,7 @@ In den folgenden Abschnitten werden gültige URL-Einträge und ihre Ergebnisse b
 
 #### <a name="ip-address-with-right-wildcard"></a>IP-Adresse mit dem richtigen Platzhalter
 
-**Eintrag**:`1.2.3.4/*`
+**Eintrag**: `1.2.3.4/*`
 
 - Übereinstimmung und **Block Übereinstimmung** **zulassen** :
 

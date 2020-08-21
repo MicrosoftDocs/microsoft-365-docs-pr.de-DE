@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: Administratoren können sich über die Verwendung von S/MIME (Secure/Multipurpose Internet Mail Extensions) in Exchange Online informieren, um e-Mails zu verschlüsseln und Digital zu signieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 95bbab5161f9e4133223a247f8937c68f29c0590
-ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
+ms.openlocfilehash: ca865fa8ef658b4715d18e09fe9cbc1cffb201e6
+ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44811014"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845920"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>S/MIME für die Nachrichtensignierung und-Verschlüsselung in Exchange Online
 
@@ -33,14 +33,18 @@ Als Exchange Online Administrator können Sie die S/MIME-basierte Sicherheit fü
 Sie können S/MIME für alle der folgenden Endpunkte einrichten:
 
 - Outlook 2010 oder höher
-
 - Outlook im Web (früher Outlook Web App)
-
 - Exchange ActiveSync (EAS)
 
 Die Schritte, die Sie zum Einrichten von S/MIME mit jedem dieser Endpunkte durchführen, unterscheiden sich geringfügig. Im Allgemeinen müssen Sie die folgenden Schritte ausführen:
 
-1. Installieren Sie eine Windows-basierte Zertifizierungsstelle, und richten Sie eine öffentliche Schlüsselinfrastruktur zum Ausstellen von S/MIME-Zertifikaten ein. Zertifikate, die von Drittanbieter-Zertifikatanbietern ausgestellt werden, werden ebenfalls unterstützt. Details finden Sie unter [Active Directory-Zertifikatdienste: Übersicht](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831740(v=ws.11)).
+1. Installieren Sie eine Windows-basierte Zertifizierungsstelle (Certification Authority, ca), und richten Sie eine Public Key-Infrastruktur zum Ausgeben von S/MIME-Zertifikaten ein. Zertifikate, die von Drittanbieter-Zertifikatanbietern ausgestellt werden, werden ebenfalls unterstützt. Details finden Sie unter [Active Directory-Zertifikatdienste: Übersicht](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831740(v=ws.11)).
+
+   **Hinweise**:
+
+   - Von einer Drittanbieter-Zertifizierungsstelle ausgestellte Zertifikate haben den Vorteil, dass Sie von allen Clients und Geräten automatisch als vertrauenswürdig eingestuft werden. Zertifikate, die von einer internen, privaten Zertifizierungsstelle ausgestellt werden, werden nicht automatisch von Clients und Geräten als vertrauenswürdig eingestuft, und nicht alle Geräte (beispielsweise Telefone) können so konfiguriert werden, dass Sie privaten Zertifikaten vertrauen.
+
+   - Verwenden Sie ein Zwischenzertifikat anstelle des Stammzertifikats, um Benutzern Zertifikate auszustellen. Auf diese Weise ist das Stammzertifikat immer noch intakt, wenn Sie Zertifikate widerrufen und erneut ausstellen müssen.
 
 2. Veröffentlichen Sie das Benutzerzertifikat in einem lokalen AD DS-Konto in den Attributen **UserSMIMECertificate** und/oder **userCertificate** .
 
@@ -58,9 +62,7 @@ Die Schritte, die Sie zum Einrichten von S/MIME mit jedem dieser Endpunkte durch
 Das Einrichten von S/MIME für Exchange Online mit Outlook im Internet umfasst die folgenden wichtigen Schritte:
 
 1. [Konfigurieren von S/MIME-Einstellungen für Outlook im Web](configure-s-mime-settings-for-outlook-web-app.md)
-
 2. [Einrichten einer virtuellen Zertifikatauflistung für die Überprüfung von S/MIME](set-up-virtual-certificate-collection-to-validate-s-mime.md)
-
 3. [Synchronisierung von Benutzerzertifikaten nach Office 365 für S/MIME](sync-user-certificates-to-office-365-for-s-mime.md)
 
 ## <a name="related-message-encryption-technologies"></a>Zugehörige Nachrichten-Verschlüsselungstechnologien
