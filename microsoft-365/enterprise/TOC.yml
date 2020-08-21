@@ -610,7 +610,7 @@
         - name: Hinzufügen einer Domäne zu einem Kundenmandanten mit Windows PowerShell für Partner mit delegiertem Zugriff
           href: add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md
         - name: Verbinden mit Exchange Online über eine Remotesitzung von Windows PowerShell für Partner mit delegiertem Zugriff
-          href: connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md
+          href: 'https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell'
         - name: Abrufen von Kundenberichtsdaten über Windows PowerShell für Partner mit delegiertem Zugriff
           href: retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md
     - name: Verwalten von Microsoft Teams
