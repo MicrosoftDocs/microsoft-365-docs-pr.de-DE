@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Administratoren können sich über die Anti-Spoofing-Funktionen informieren, die in Exchange Online Protection (EOP) verfügbar sind und die dazu beitragen können, Phishing-Angriffe von gefälschten Absendern und Domänen abzuschwächen.
-ms.openlocfilehash: 490d0d137f654e06512622e3fd5825822286ba41
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 46adb8b666bd9f73cbd76860f58efedc8d3c1c59
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826661"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868879"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Schutz vor Spoofing in EOP
 
@@ -162,3 +162,7 @@ Sie können auch Ihren Administrator kontaktieren, der ein Supportticket bei Mic
 ## <a name="considerations-for-anti-spoofing-protection"></a>Überlegungen zum Schutz vor Spoofing
 
 Falls Sie ein Administrator sind, der aktuell Nachrichten an Microsoft 365 sendet, müssen Sie sicherstellen, dass Ihre E-Mails ordnungsgemäß authentifiziert werden. Andernfalls werden sie möglicherweise als Spam oder Phishingversuch gekennzeichnet. Weitere Informationen finden Sie unter [Lösungen für seriöse Absender, die nicht-authentifizierte E-Mails senden](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email).
+
+Absender in einer Liste der sicheren Absender eines einzelnen Benutzers (oder Administrators) umgehen Teile des Filterstapels, einschließlich Spoofschutz. Weitere Informationen finden Sie unter [Outlook Safe Senders](create-safe-sender-lists-in-office-365.md#use-outlook-safe-senders) (Sichere Absender in Outlook).
+
+Administratoren sollten (wenn möglich) die Verwendung von Listen zulässiger Absender oder zulässiger Domänen vermeiden. Diese Absender umgehen alle Schutzmaßnahmen zu Spam, Spoofing und Phishing und außerdem die Absenderauthentifizierung (SPF, DKIM, DMARC). Weitere Informationen finden Sie unter [Use allowed sender lists or allowed domain lists](create-safe-sender-lists-in-office-365.md#use-allowed-sender-lists-or-allowed-domain-lists) (Verwendung von Listen zulässiger Absender oder zulässiger Domänen).

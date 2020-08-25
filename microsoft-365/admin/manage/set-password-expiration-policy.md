@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: 'Hier erfahren Sie, wie Sie im Microsoft 365 Admin Center eine Richtlinie für den Kennwortablauf für Ihre Organisation festlegen. '
-ms.openlocfilehash: 053b3214862d477cbd122ff6336a6b53a98e5421
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: e95184bda631a5efaad0376c766ce5408c0a95e7
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597365"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868867"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Festlegen der Kennwortablaufrichtlinie für Ihre Organisation
 
@@ -50,7 +50,7 @@ Führen Sie die folgenden Schritte aus, wenn Sie festlegen möchten, dass Benutz
 > [!IMPORTANT]
 > Nur [globale Administratoren](../add-users/about-admin-roles.md) können diese Schritte ausführen.
   
-1. Wechseln Sie im Admin Center zu **Einstellungen** \> **Einstellungen**.
+1. Wechseln Sie im Admin Center zu **Einstellungen** \> **Org-Einstellungen**.
 
 2. Wechseln Sie zur Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Sicherheit & Datenschutz</a>.
  Wenn Sie kein globaler Administrator sind, wird die Option "Sicherheit und Datenschutz" nicht angezeigt.
