@@ -20,12 +20,12 @@ ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 ms.custom:
 - seo-marvel-apr2020
 description: Hier erfahren Sie, wie Sie mit dem Importdienst im Security & Compliance Center E-Mail-Daten (PST-Dateien) in Benutzerpostfächer importieren.
-ms.openlocfilehash: fd369a8cde1284c19f9eb3cb38cf8bfe39dbc4ee
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 36cf04722b13f3d1033ddae54e32307497d9194b
+ms.sourcegitcommit: 37da941919036a714da42eaa039682ccbe0da670
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127160"
+ms.lasthandoff: 08/23/2020
+ms.locfileid: "46860732"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>Übersicht über das Importieren von PST-Dateien Ihrer Organisation
 
@@ -146,7 +146,7 @@ Darüber hinaus muss eine der folgenden Bedingungen erfüllt sein, um Importauft
   
  **Wo ist der Netzwerkupload verfügbar?**
   
-Der Netzwerkupload ist derzeit in den USA, Kanada, Brasilien, Vereinigtes Königreich, Frankreich, Deutschland, Europa, Indien, Ostasien, Südostasien, Japan, der Republik Korea, Australien und den Vereinigten Arabischen Emiraten (VAE) verfügbar. Der Netzwerkupload wird in Kürze in weiteren Regionen zur Verfügung gestellt.
+Der Netzwerkupload ist derzeit in den USA, Kanada, Brasilien, Vereinigtes Königreich, Frankreich, Deutschland, Schweiz, Norwegen, Europa, Indien, Ostasien, Südostasien, Japan, der Republik Korea, Australien und den Vereinigten Arabischen Emiraten (VAE) verfügbar. Der Netzwerkupload wird in Kürze in weiteren Regionen zur Verfügung gestellt.
   
  **Welche Preise ergeben sich für den Import von PST-Dateien über den Netzwerkupload?**
   

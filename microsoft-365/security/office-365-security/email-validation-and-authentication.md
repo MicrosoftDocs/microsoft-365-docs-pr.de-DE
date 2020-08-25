@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 search.appverid:
 - MET150
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Administratoren erfahren hier, wie Exchange Online und Exchange Online Protection (EOP) E-Mail-Authentifizierung (SPF, DKIM und DMARC) verwendet, um Spoofing, Phishing und Spam zu verhindern.
-ms.openlocfilehash: c79a75f1ae520a0c4f885c923b4a56cdb0f7fb87
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: cc9489a258608080118e88bf1375e4d5f35f8c77
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209499"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826649"
 ---
 # <a name="email-authentication-in-eop"></a>E-Mail-Authentifizierung in EOP
 
@@ -41,7 +41,7 @@ Der Rest dieses Artikels erläutert, wie diese Technologien funktionieren und wi
 
 ## <a name="use-email-authentication-to-help-prevent-spoofing"></a>Verwenden von E-Mail-Authentifizierung, um Spoofing zu verhindern
 
-DMARC verhindert Spoofing, indem die **Von**-Adresse in Nachrichten untersucht wird (die Absender-E-Mail-Adresse, die Benutzer in ihren E-Mail-Clients sehen). Ziel-E-Mail-Organisationen könne auch überprüfen, ob die E-Mail-Domäne SPF oder DKIM durchlaufen hat. Dies würde darauf hin deuten, dass die Domäne authentifiziert wurde und daher kein Spoofing erfolgt. 
+DMARC verhindert Spoofing, indem die **Von**-Adresse in Nachrichten untersucht wird (die Absender-E-Mail-Adresse, die Benutzer in ihren E-Mail-Clients sehen). Ziel-E-Mail-Organisationen könne auch überprüfen, ob die E-Mail-Domäne SPF oder DKIM durchlaufen hat. Dies würde darauf hin deuten, dass die Domäne authentifiziert wurde und daher kein Spoofing erfolgt.
 
 Allerdings ist das Problem, dass SPF-, DKIM- und DMARC-Einträge im DNS für die E-Mail-Authentifizierung (gemeinsam unter der Bezeichnung „E-Mail-Authentifizierungsrichtlinien“ bekannt) vollständig optional sind. Während Domänen mit Richtlinien für sichere E-Mail-Authentifizierung wie microsoft.com und skype.com vor Spoofing geschützt sind, werden Domänen mit schwächeren oder ohne E-Mail-Authentifizierungsrichtlinien zu einem hervorragenden Ziel für Spoofing.
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: cbf118d918dd5c3bc922fbea157fb56a709fad66
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 99e7d28bea37ec282bd6358b5af81a3078dfdd38
+ms.sourcegitcommit: b7f4f1e04b27519b818d4255022b28f99fbe54af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065800"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46852501"
 ---
 # <a name="new-zealand-government-cloud-computing-security-and-privacy-considerations"></a>New Zealand Government Cloud Computing-Sicherheits-und Datenschutzüberlegungen
 
@@ -37,14 +37,14 @@ Um Agenturen bei der Analyse und Evaluierung von Microsoft Enterprise Cloud-Dien
 
 Erfahren Sie, wie Sie Ihre NZ CC Framework-Bereitstellung mit unserem Azure Security and Compliance Blueprint beschleunigen: [herunterladen der Azure-Antwort auf das NZ CC-Framework](https://gallery.technet.microsoft.com/Response-to-GCIO-Cloud-e117bbb9)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
 - [Azure und Azure Government](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
 - Power BI-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365-Plan oder einer -Anwendungssuite enthalten
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Exchange Online, SharePoint Online und Skype for Business Online. Microsoft NZ hat mit dem GCIO-Team zusammengearbeitet, um eine Referenzarchitektur für die Integration von Exchange Online und e-Mails zu entwickeln, die im White Paper Office 365 beschrieben wurden [: e-Mail-Integration und Referenzarchitektur](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf)
+- Exchange Online, SharePoint Online und Microsoft Teams. Microsoft NZ hat mit dem GCIO-Team zusammengearbeitet, um eine Referenzarchitektur für die Integration von Exchange Online und e-Mail zu entwickeln.
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
@@ -63,7 +63,7 @@ Wenn Ihre Agentur im Rahmen des [neuseeländischen Informations Sicherheitshandb
 - [NZ Government ICT Strategy 2015](https://www.ict.govt.nz/strategy-and-action-plan/strategy/)
 - [NZ Government Requirements for Cloud Computing](https://aka.ms/NZ-Cloud-Requirements)
 - [Cloud Computing: Überlegungen zu Sicherheit und Datenschutz (ISPC)](https://www.digital.govt.nz/standards-and-guidance/technology-and-architecture/cloud-services/)
-- [Nutzungsbedingungen für Microsoft-Onlinedienste](https://aka.ms/Online-Services-Terms)
+- [Microsoft Online Services-Nutzungsbedingungen](https://aka.ms/Online-Services-Terms)
 - [Office 365: e-Mail-Integration und Referenzarchitektur](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf) (zusätzliche Microsoft NZ-Anleitungen für die Einführung in Cloud Services)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 

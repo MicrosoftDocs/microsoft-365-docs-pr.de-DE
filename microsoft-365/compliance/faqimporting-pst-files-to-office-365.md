@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 ms.custom: seo-marvel-apr2020
 description: Dieser Artikel enthält Antworten auf einige häufig gestellte Fragen an Administratoren zum Importieren von PST-Dateien in Microsoft 365 mithilfe des Office 365-Import Diensts.
-ms.openlocfilehash: 5ba6df2f2c6ed10edee22f58308a5e3ee5acd533
-ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
+ms.openlocfilehash: b6d00bf58225ca016f6debbeeac8468c558c3556
+ms.sourcegitcommit: 37da941919036a714da42eaa039682ccbe0da670
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091899"
+ms.lasthandoff: 08/23/2020
+ms.locfileid: "46860700"
 ---
 # <a name="faq-about-importing-pst-files"></a>Häufig gestellte Fragen zum Importieren von PST-Dateien
 
@@ -51,7 +51,7 @@ Darüber hinaus muss eine der folgenden Bedingungen erfüllt sein, um Importauft
   
  **Wo ist der Netzwerkupload verfügbar?**
   
-Netzwerk Upload ist derzeit in diesen Regionen verfügbar: USA, Kanada, Brasilien, Vereinigtes Königreich, Frankreich, Deutschland, Europa, Indien, Ostasien, Südostasien, Japan, Südkorea, Australien und Vereinigte Arabische Emirate (VAE). Network upload will be available in more regions soon.
+Netzwerk Upload ist derzeit in diesen Regionen verfügbar: USA, Kanada, Brasilien, Vereinigtes Königreich, Frankreich, Deutschland, Schweiz, Norwegen, Europa, Indien, Ostasien, Südostasien, Japan, Südkorea, Australien und Vereinigte Arabische Emirate (VAE). Network upload will be available in more regions soon.
   
  **Welche Preise ergeben sich für den Import von PST-Dateien über den Netzwerkupload?**
   
@@ -67,7 +67,7 @@ Darüber hinaus können PST-Dateien aus Outlook 2007 und neueren Versionen in Of
   
  **Wie lange verbleiben meine PST-Dateien, nachdem ich sie in den Azure-Speicherbereich hochgeladen habe, in Azure, bevor sie gelöscht werden?**
   
-Wenn Sie die Netzwerk-Upload-Methode zum Importieren von PST-Dateien verwenden, laden Sie Sie in einen Azure-BLOB-Container mit dem Namen hoch `ingestiondata` . Wenn auf der Seite **PST-Dateien importieren** im Security & Compliance Center keine laufenden Importaufträge ausgeführt werden), werden alle PST-Dateien im `ingestiondata` Container in Azure 30 Tage nach dem Erstellen des letzten importauftrags im Security & Compliance Center gelöscht. Daraus folgt, dass Sie innerhalb von 30 Tagen nach dem Hochladen von PST-Dateien nach Azure einen neuen Importauftrag im Security & Compliance Center erstellen müssen (wie in Schritt 5 in den Netzwerkupload-Anweisungen beschrieben). 
+Wenn Sie PST-Dateien mit der Netzwerkupload-Methode importieren, werden die Dateien in einen Azure-BLOB-Container namens `ingestiondata` hochgeladen. Wenn auf der Seite **PST-Dateien importieren** im Security & Compliance Center keine Importaufträge in Bearbeitung sind, werden alle PST-Dateien im Container `ingestiondata` in Azure 30 Tage nach Erstellung des letzten Importauftrags im Security & Compliance Center gelöscht. Daraus folgt, dass Sie innerhalb von 30 Tagen nach dem Hochladen von PST-Dateien nach Azure einen neuen Importauftrag im Security & Compliance Center erstellen müssen (wie in Schritt 5 in den Netzwerkupload-Anweisungen beschrieben). 
   
 Dies bedeutet auch, dass aus dem Azure-Speicherbereich gelöschte PST-Dateien im Security & Compliance Center nicht mehr in der Dateiliste für einen abgeschlossenen Importauftrag angezeigt werden. Es kann zwar sein, dass auf der Seite **PST-Dateien importieren** im Security & Compliance Center ältere Importaufträge noch aufgeführt sind, die Liste der PST-Dateien könnte jedoch leer sein, wenn Sie die Details anzeigen. 
   
@@ -79,7 +79,7 @@ Wenn verschiedene PST-Dateien in unterschiedliche Zielpostfächer importiert wer
   
  **Wie behandelt der PST-Importprozess doppelte E-Mail-Elemente?**
 
-Beim PST-Importprozess wird eine Überprüfung auf doppelte Elemente durchgeführt, und die Elemente werden nicht aus einer PST-Datei in das Postfach oder Archiv kopiert, wenn ein übereinstimmendes Element im Zielordner im Zielpostfach oder -archiv vorliegt. Wenn Sie die gleiche PST-Datei erneut importieren und einen anderen Zielordner angeben (mithilfe der TargetRootFolder-Eigenschaft in der PST-Import Zuordnungsdatei) als die, die Sie in einem vorherigen Importauftrag angegeben haben, werden alle Elemente in der PST-Datei erneut importiert.
+Beim PST-Importprozess wird eine Überprüfung auf doppelte Elemente durchgeführt, und die Elemente werden nicht aus einer PST-Datei in das Postfach oder Archiv kopiert, wenn ein übereinstimmendes Element im Zielordner im Zielpostfach oder -archiv vorliegt. Wenn Sie dieselbe PST-Datei erneut importieren und einen anderen Zielordner (mithilfe der TargetRootFolder-Eigenschaft in der PST-Importzuordnungsdatei) angeben als den, den Sie in einem vorherigen Importauftrag angegeben haben, werden alle Elemente in der PST-Datei erneut importiert.
 
  **Gibt es eine Beschränkung der Nachrichtengröße beim Importieren von PST-Dateien?**
   
@@ -141,7 +141,7 @@ Die Kosten für den Laufwerksversand zum Importieren von PST-Dateien in Microsof
   
  **Welche Festplattentypen werden für den Laufwerkversand unterstützt?**
   
-Nur 2,5-Zoll-Solid-State-Laufwerke (SSDs) oder 2,5 Inch oder 3,5 Zoll SATA II/III-Festplatten werden für die Verwendung mit dem Office 365-Import Dienst unterstützt. Sie können Festplatten bis zu 10 TB verwenden. Bei Importaufträgen wird nur das erste Datenvolume auf der Festplatte verarbeitet. Das Datenvolume muss mit NTFS formatiert sein. Beim Kopieren von Daten auf ein Festplattenlaufwerk kann der Anschluss direkt mithilfe eines 2,5-Zoll-SSD- oder eines 2,5- oder 3,5-Zoll-SATA II/III-Verbinders oder extern über einen externen 2,5-Zoll-SSD- oder einen 2,5- oder 3,5-Zoll-SATA II/III-USB-Adapter erfolgen.
+Nur 2,5-Zoll-Solid-State-Laufwerke (SSDs) oder 2,5-Zoll-oder 3,5-Zoll-SATA II/III-Festplattenlaufwerke werden für die Verwendung mit dem Office 365-Import Dienst unterstützt. Sie können Festplatten bis zu 10 TB verwenden. Bei Importaufträgen wird nur das erste Datenvolume auf der Festplatte verarbeitet. Das Datenvolume muss mit NTFS formatiert sein. Wenn Sie Daten auf eine Festplatte kopieren, können Sie Sie direkt über einen 2,5-Zoll-SSD oder 2,5-Zoll-oder 3,5-Zoll-SATA II/III-Anschluss anhängen oder extern mit einem externen 2,5-Zoll-SSD oder einem 2,5-Zoll-oder 3,5-Zoll-SATA II/III-USB-Adapter verbinden.
   
 > [!IMPORTANT]
 > Externe Festplatten mit einem integrierten USB-Adapter werden vom Office 365-Importdienst nicht unterstützt. Darüber hinaus kann der Datenträger innerhalb des Gehäuses einer externen Festplatte nicht verwendet werden. Versenden Sie keine externen Festplatten. 
@@ -182,7 +182,7 @@ Ja. Wenn eine PST-Datei ein Postfachelement enthält, das größer als 150 MB is
   
   **Wie behandelt der PST-Importprozess doppelte E-Mail-Elemente?**
 
-Beim PST-Importprozess wird eine Überprüfung auf doppelte Elemente durchgeführt, und die Elemente werden nicht aus einer PST-Datei in das Postfach oder Archiv kopiert, wenn ein übereinstimmendes Element im Zielordner im Zielpostfach oder -archiv vorliegt. Wenn Sie die gleiche PST-Datei erneut importieren und einen anderen Zielordner angeben (mithilfe der TargetRootFolder-Eigenschaft in der PST-Import Zuordnungsdatei) als die, die Sie in einem vorherigen Importauftrag angegeben haben, werden alle Elemente in der PST-Datei erneut importiert.
+Beim PST-Importprozess wird eine Überprüfung auf doppelte Elemente durchgeführt, und die Elemente werden nicht aus einer PST-Datei in das Postfach oder Archiv kopiert, wenn ein übereinstimmendes Element im Zielordner im Zielpostfach oder -archiv vorliegt. Wenn Sie dieselbe PST-Datei erneut importieren und einen anderen Zielordner (mithilfe der TargetRootFolder-Eigenschaft in der PST-Importzuordnungsdatei) angeben als den, den Sie in einem vorherigen Importauftrag angegeben haben, werden alle Elemente in der PST-Datei erneut importiert.
  
  **Bleiben die Eigenschaften der Nachrichten (z. B. Sende- oder Empfangsdatum, Empfängerliste und andere Eigenschaften) erhalten, wenn PST-Dateien in ein Microsoft 365-Postfach importiert werden?**
   

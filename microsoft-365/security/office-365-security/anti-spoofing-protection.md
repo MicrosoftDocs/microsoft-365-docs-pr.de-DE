@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: overview
 ms.service: O365-seccomp
 search.appverid:
 - MET150
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Administratoren können sich über die Anti-Spoofing-Funktionen informieren, die in Exchange Online Protection (EOP) verfügbar sind und die dazu beitragen können, Phishing-Angriffe von gefälschten Absendern und Domänen abzuschwächen.
-ms.openlocfilehash: 25e1c73a58ffc89ecf4723fbb7cb872ff7d16071
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 490d0d137f654e06512622e3fd5825822286ba41
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653413"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826661"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Schutz vor Spoofing in EOP
 
@@ -41,7 +41,7 @@ Die folgenden Anti-Spoofing-Technologien stehen in EOP zur Verfügung:
 
 - **E-Mail-Authentifizierung**: ein wesentlicher Bestandteil aller Anti-Spoofing-Anstrengungen ist die Verwendung von E-Mail-Authentifizierung (auch als E-Mail-Überprüfung bezeichnet) durch SPF-, DKIM- und DMARC-Einträge in DNS. Sie können diese Einträge für Ihre Domänen so konfigurieren, dass Ziel-E-Mail-Systeme die Gültigkeit von Nachrichten überprüfen können, die von Absendern in Ihren Domänen stammen. Bei eingehenden Nachrichten erfordert Microsoft 365 eine E-Mail-Authentifizierung für Absenderdomänen. Weitere Informationen finden Sie unter [E-Mail-Authentifizierung in Microsoft 365](email-validation-and-authentication.md).
 
-Ab Oktober 2018 ist der Anti-Spoofing-Schutz in EOP verfügbar. Zuvor war der Anti-Spoofing-Schutz nur in Organisationen mit Office 365 ATP verfügbar.
+Ab Oktober 2018 ist der Anti-Spoofing-Schutz in EOP verfügbar. Vorher war der Anti-Spoofing-Schutz nur in Organisationen mit Office 365 ATP verfügbar.
 
 EOP analysiert und blockiert Nachrichten, die nicht durch die Kombination von standardmäßigen E-Mail-Authentifizierungsmethoden und Absender-Reputations-Techniken authentifiziert werden können.
 
