@@ -16,20 +16,20 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Administratoren können erfahren, wie Sie mithilfe der Konfigurationsanalyse Sicherheitsrichtlinien suchen und beheben, die Einstellungen enthalten, die den Standard mäßigen Sicherheitsrichtlinien für Schutz und strenge Schutz unterliegen.
-ms.openlocfilehash: 4515efcd73d40eae93523c6ef139553420e48677
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+description: Administratoren erfahren, wie Sie mithilfe der Konfigurationsanalyse Sicherheitsrichtlinien finden und beheben können, die unter den vordefinierten Sicherheitsrichtlinien für Standard Schutz und strenge Schutzbedingungen liegen.
+ms.openlocfilehash: 39bec980ac95681ec2c2300914582d5e8786c884
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825773"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46867163"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-office-365-atp"></a>Konfigurationsanalyse für Schutzrichtlinien in EoP und Office 365 ATP
 
 > [!NOTE]
 > Die in diesem Thema beschriebenen Funktionen befinden sich in der Vorschau, sind nicht in allen Organisationen verfügbar und können geändert werden.
 
-Configuration Analyzer im Security & Compliance Center bietet einen zentralen Standort, um Sicherheitsrichtlinien zu finden und zu beheben, die Einstellungen enthalten, die unter den Standard mäßigen Schutz-und strengen Schutzprofil Einstellungen in [vordefinierten Sicherheitsrichtlinien](preset-security-policies.md)liegen.
+Configuration Analyzer im Security & Compliance Center bietet einen zentralen Standort, um Sicherheitsrichtlinien zu finden und zu beheben, bei denen die Einstellungen unter den Standard mäßigen Schutz-und strengen Schutzprofil Einstellungen in [vordefinierten Sicherheitsrichtlinien](preset-security-policies.md)liegen.
 
 Die folgenden Richtlinientypen werden vom Configuration Analyzer analysiert:
 
@@ -59,7 +59,7 @@ Die **Standard mäßigen** und **strengen** Richtlinien Einstellungswerte, die a
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Bevor Sie die in diesem Artikel besprochenen Verfahren ausführen können, müssen Ihnen Berechtigungen zugewiesen werden:
+- Sie müssen Berechtigungen zugewiesen haben, bevor Sie die Verfahren in diesem Artikel ausführen können:
 
   - Sie müssen Mitglied einer der folgenden Rollengruppen sein, um die Konfigurationsanalyse verwenden **und** Updates für Sicherheitsrichtlinien vornehmen zu können:
 
@@ -81,7 +81,7 @@ Die Konfigurationsanalyse verfügt über zwei Hauptregisterkarten:
 
 - **Einstellungen und Empfehlungen**: Sie wählen Standard oder Strict aus und vergleichen diese Einstellungen mit Ihren vorhandenen Sicherheitsrichtlinien. In den Ergebnissen können Sie die Werte Ihrer Einstellungen anpassen, um Sie auf die gleiche Stufe wie Standard oder Strict zu bringen.
 
-- **Analyse und Verlauf der Konfigurations Drift**: in dieser Ansicht können Sie die Änderungen, die Sie an Ihren Richtlinien vorgenommen haben, basierend auf den Ergebnissen der Konfigurationsanalyse über einen Zeitraum nachverfolgen.
+- **Analyse und Verlauf der Konfigurations Drift**: in dieser Ansicht können Sie Richtlinienänderungen im Laufe der Zeit verfolgen.
 
 ### <a name="setting-and-recommendations-tab-in-the-configuration-analyzer"></a>Registerkarte Einstellungen und Empfehlungen in der Konfigurationsanalyse
 
@@ -89,7 +89,7 @@ Standardmäßig wird die Registerkarte im Vergleich zum Standard Schutzprofil ge
 
 ![Ansicht "Einstellungen und Empfehlungen" in der Konfigurationsanalyse](../../media/configuration-analyzer-settings-and-recommendations-view.png)
 
-Standardmäßig enthält die Spalte **Richtliniengruppen/Einstellungsname** eine reduzierte Ansicht der verschiedenen Typen von Sicherheitsrichtlinien und die Anzahl der Einstellungen in diesen Richtlinien, die verbessert werden müssen (sofern vorhanden). Die Typen von Richtlinien lauten wie folgt:
+Standardmäßig enthält die Spalte **Richtliniengruppen/Einstellungsname** eine reduzierte Ansicht der verschiedenen Typen von Sicherheitsrichtlinien und der Anzahl von Einstellungen, die verbessert werden müssen (sofern vorhanden). Die Typen von Richtlinien lauten wie folgt:
 
 - **Antispam**
 - **Anti-Phishing**
@@ -97,11 +97,11 @@ Standardmäßig enthält die Spalte **Richtliniengruppen/Einstellungsname** eine
 - **ATP-sichere Anlagen** (wenn Ihr Abonnement ATP umfasst)
 - **ATP-sichere Links** (wenn Ihr Abonnement ATP umfasst)
 
-In der Standardansicht wird alles reduziert. Neben den einzelnen Richtlinien wird eine Zusammenfassung der Vergleichsergebnisse aus ihren Richtlinien (die Sie ändern können) und die Einstellungen in den entsprechenden Richtlinien für die Standard mäßigen oder strengen Schutzprofile angezeigt, die Sie nicht ändern können. Die folgenden Informationen werden angezeigt:
+In der Standardansicht wird alles reduziert. Neben den einzelnen Richtlinien gibt es eine Zusammenfassung der Vergleichsergebnisse aus ihren Richtlinien (die Sie ändern können) und die Einstellungen in den entsprechenden Richtlinien für die Standard mäßigen oder strengen Schutzprofile (die Sie nicht ändern können). Die folgenden Informationen für das Schutzprofil, mit dem Sie verglichen werden, werden angezeigt:
 
-- **Grün**: alle Einstellungen in allen vorhandenen Richtlinien sind mindestens so sicher wie das Schutzprofil, mit dem Sie verglichen werden.
-- **Amber**: eine kleine Anzahl von Einstellungen in den vorhandenen Richtlinien ist nicht so sicher wie das Schutzprofil, mit dem Sie verglichen werden.
-- **Rot**: eine beträchtliche Anzahl von Einstellungen in den vorhandenen Richtlinien ist nicht so sicher wie das Schutzprofil, mit dem Sie verglichen werden. Dabei kann es sich um einige Einstellungen in vielen Richtlinien oder um viele Einstellungen in einer Richtlinie handeln.
+- **Grün**: alle Einstellungen in allen vorhandenen Richtlinien sind mindestens so sicher wie das Schutzprofil.
+- **Amber**: eine kleine Anzahl von Einstellungen in den vorhandenen Richtlinien ist nicht so sicher wie das Schutzprofil.
+- **Rot**: eine beträchtliche Anzahl von Einstellungen in den vorhandenen Richtlinien ist nicht so sicher wie das Schutzprofil. Dabei kann es sich um einige Einstellungen in vielen Richtlinien oder um viele Einstellungen in einer Richtlinie handeln.
 
 Für günstige Vergleiche wird der Text angezeigt: **alle Einstellungen folgen** den \<**Standard** or **Strict**\> **Empfehlungen**. Andernfalls wird die Anzahl der empfohlenen Einstellungen angezeigt, die geändert werden sollten.
 
@@ -123,7 +123,7 @@ Wenn der Vergleich keine Empfehlungen für Verbesserungen (grün) hat, zeigt das
 
 ### <a name="configuration-drift-analysis-and-history-tab-in-the-configuration-analyzer"></a>Konfigurations Drift Analyse und Registerkarte Verlauf in der Konfigurationsanalyse
 
-Auf dieser Registerkarte können Sie die Änderungen nachverfolgen, die Sie basierend auf den Informationen im Security Analyzer an Ihren benutzerdefinierten Sicherheitsrichtlinien vorgenommen haben. Standardmäßig werden die folgenden Informationen angezeigt:
+Auf dieser Registerkarte können Sie die Änderungen nachverfolgen, die Sie an Ihren benutzerdefinierten Sicherheitsrichtlinien vorgenommen haben. Standardmäßig werden die folgenden Informationen angezeigt:
 
 - **Zuletzt geändert**
 - **Geändert von**

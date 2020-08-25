@@ -1,5 +1,5 @@
 ---
-title: Kampagnen Ansichten in ATP
+title: Kampagnen Ansichten in Office 365 ATP-Plan
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,21 +17,19 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über die Kampagnenansichten in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: f0f5d2305b4f17c7018d32eebd155b4ad2d459e7
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 72662519177f4ac43e3de04e9755fd99f5ffb03f
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825797"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46867199"
 ---
-# <a name="campaign-views-in-atp"></a>Kampagnen Ansichten in ATP
+# <a name="campaign-views-in-office-365-atp"></a>Kampagnenansichten in Office 365 ATP
 
-Kampagnen Ansichten sind ein Feature in Advanced Threat Protection (ATP) im Security & Compliance Center, das Phishing-Angriffe im Dienst identifiziert und kategorisiert. Kampagnenansichten können Ihnen bei Folgendem helfen:
+Kampagnen Ansichten sind ein Feature in Advanced Threat Protection (ATP) Plan 2 (beispielsweise Microsoft 365 E5 oder Organisationen mit einem ATP Plan 2-Add-on). Campaing-Ansichten im Security & Compliance Center identifiziert und kategorisiert Phishing-Angriffe im Dienst. Kampagnenansichten können Ihnen bei Folgendem helfen:
 
 - Phishing-Angriffe effektiv untersuchen und darauf reagieren.
-
 - Besseres Verständnis des Umfangs des Angriffs.
-
 - Entscheidungsträgern den Nutzen anzeigen.
 
 Mit Kampagnenansichten können Sie das Gesamtbild eines Angriffs schneller und vollständiger erfassen als jeder Mensch.
@@ -40,14 +38,11 @@ Mit Kampagnenansichten können Sie das Gesamtbild eines Angriffs schneller und v
 
 Eine Kampagne ist ein koordinierter E-Mail-Angriff gegen eine oder mehrere Organisationen. E-Mail-Angriffe, die Anmeldeinformationen und Unternehmensdaten stehlen, sind eine große und lukrative Branche. Wenn Technologien sich anstrengen, um Angriffe zu stoppen, ändern Angreifer Ihre Methoden, um den weiteren Erfolg sicherzustellen.
 
-Microsoft nutzt die großen Mengen an Anti-Phishing-, Antispam-und Antischadsoftware-Daten im gesamten Dienst, um Kampagnen zu identifizieren. Wir analysieren und klassifizieren die Angriffsinformationen anhand verschiedener Faktoren. Beispiel:
+Microsoft nutzt die großen Mengen an Anti-Phishing-, Antispam-und Antischadsoftware-Daten im gesamten Dienst, um Kampagnen zu identifizieren. Wir analysieren und klassifizieren die Angriffsinformationen anhand verschiedener Faktoren. Zum Beispiel:
 
 - **Angriffsquelle**: die Quell-IP-Adressen und Absender-e-Mail-Domänen.
-
-- **Eigenschaften von Angriffs Nachrichten**: der Inhalt, die Formatvorlage und der Ton der Nachrichten.
-
-- **Angriffsempfänger**: Empfängerdomänen, Aufgaben des Empfängers (Administratoren, Führungskräfte usw.), Firmentypen (groß, klein, öffentlich, privat usw.) und Branchen.
-
+- **Nachrichteneigenschaften**: der Inhalt, die Formatvorlage und der Ton der Nachrichten.
+- **Nachrichtenempfänger**: wie Empfänger verwandt werden. Beispielsweise Empfängerdomänen, Empfänger Auftrags Funktionen (Administratoren, Führungskräfte usw.), Unternehmenstypen (groß, klein, öffentlich, privat usw.) und Branchen.
 - **Angriffsnutzlast**: böswillige Links, Anlagen oder andere Nutzlasten in den Nachrichten.
 
 Eine Kampagne kann von kurzer Dauer sein oder mehrere Tage, Wochen oder Monate mit aktiven und inaktiven Zeitspannen umfassen. Möglicherweise wird eine Kampagne für ihre jeweilige Organisation gestartet, oder Ihre Organisation kann Teil einer größeren Kampagne in mehreren Unternehmen sein.
@@ -85,11 +80,11 @@ Auf der Rest der Übersichtsseite werden auf der Registerkarte **Kampagne** die 
 
 - **Beispiel-Betreff**: Betreffzeile einer der Nachrichten in der Kampagne. Beachten Sie, dass alle Nachrichten in der Kampagne nicht unbedingt den gleichen Betreff haben.
 
-- **Targeted**: der Prozentsatz, der von: (die Anzahl der Kampagnen Empfänger in Ihrer Organisation)/(die Gesamtzahl der Empfänger in der Kampagne für alle Organisationen im Dienst) berechnet wurde. Dieser Wert gibt an, in welchem Ausmaß die Kampagne speziell an Ihre Organisation (einen höheren Wert) oder an andere Organisationen im Dienst gerichtet ist (ein niedrigerer Wert).
+- **Targeted**: der Prozentsatz, der von: (die Anzahl der Kampagnen Empfänger in Ihrer Organisation)/(die Gesamtzahl der Empfänger in der Kampagne für alle Organisationen im Dienst) berechnet wurde. Dieser Wert gibt an, in welchem Ausmaß die Kampagne nur an Ihre Organisation (einen höheren Wert) oder an andere Organisationen im Dienst gerichtet wird (ein niedrigerer Wert).
 
 - **Typ**: dieser Wert ist entweder **Phish** oder **Schadsoftware**.
 
-- **Untertyp**: dieser Wert enthält weitere Details zur Kampagne. Beispiel:
+- **Untertyp**: dieser Wert enthält weitere Details zur Kampagne. Zum Beispiel:
 
   - **Phishing**: sofern verfügbar, die Marke, die von dieser Kampagne als Phishing bezeichnet wird. Beispielsweise,,, `Microsoft` `365` `Unknown` , `Outlook` , oder `DocuSign` .
 
@@ -103,9 +98,9 @@ Sofern verfügbar, die Marke, die von dieser Kampagne als Phishing bezeichnet wi
 
 - **Geklickt**: die Anzahl der Benutzer, die auf die URL geklickt oder die Anlage in der Phishing-Nachricht geöffnet haben.
 
-- **Klicken Sie auf Rate**: den Prozentsatz,**Clicked**der von "auf  /  **Posteingang**geklickt" berechnet wird. Dieser Wert ist ein Indikator für die Effektivität der Kampagne und gibt an, ob die Empfänger die Nachricht als Phishing identifizieren konnten, und vermeiden Sie das Klicken auf die Nutzlast-URL.
+- **Klicken Sie auf Rate**: den Prozentsatz,**Clicked**der von "auf  /  **Posteingang**geklickt" berechnet wird. Dieser Wert ist ein Indikator für die Effektivität der Kampagne. Das heißt, wenn die Empfänger die Nachricht als Phishing identifizieren konnten, und wenn Sie nicht auf die Nutzlast-URL klicken.
 
-  Beachten Sie, dass dieser Wert in Schadsoftware-Kampagnen nicht verwendet wird.
+  Beachten Sie, dass die **Klick Rate** in Schadsoftware-Kampagnen nicht verwendet wird.
 
 - **Besucht**: Anzahl der Benutzer, die die Nutzlast-Website tatsächlich durchlaufen haben. Wenn auf Werte **geklickt** wird, aber sichere Links den Zugriff auf die Website blockiert haben, ist dieser Wert gleich NULL.
 
@@ -194,11 +189,11 @@ Oben in der Ansicht kampagnendetails stehen die folgenden Kampagneninformationen
   - Wie viele Benutzer auf die URL-Nutzlast in der Phishing-Nachricht geklickt haben.
   - Howe viele Benutzer haben die URL besucht.
 
-- **Targeted**: der Prozentsatz, der von: (die Anzahl der Kampagnen Empfänger in Ihrer Organisation)/(die Gesamtzahl der Empfänger in der Kampagne für alle Organisationen im Dienst) berechnet wurde. Beachten Sie, dass dieser Wert über die gesamte Lebensdauer der Kampagne berechnet wird und nicht die Filterdaten ändert.
+- **Targeted**: der Prozentsatz, der von: (die Anzahl der Kampagnen Empfänger in Ihrer Organisation)/(die Gesamtzahl der Empfänger in der Kampagne für alle Organisationen im Dienst) berechnet wurde. Beachten Sie, dass dieser Wert über die gesamte Lebensdauer der Kampagne berechnet wird und nicht basierend auf den Datums Filtern geändert wird.
 
 - Eine interaktive Zeitachse der Kampagnenaktivität: die Zeitachse zeigt die Aktivität während der gesamten Lebensdauer der Kampagne an. Standardmäßig enthält der schattierte Bereich den Datumsbereichsfilter, den Sie in der Übersicht ausgewählt haben. Sie können durch Klicken und ziehen einen bestimmten Startpunkt und Endpunkt auswählen, um <u>die Daten zu ändern, die im **IMPACT** -Bereich angezeigt werden, und auf den Rest der Seite, wie in den nächsten Abschnitten beschrieben</u>.
 
-In der Titelleiste können Sie auf die Schaltfläche Download Campaign Write- **up** klicken, ![ ](../../media/download-campaign-write-up-button.png) um die kampagnendetails in ein Word-Dokument (standardmäßig mit dem Namen "CampaignReport.docx") herunterzuladen. Beachten Sie, dass dieses Dokumentdetails über die gesamte Lebensdauer der Kampagne enthält (nicht nur die Filterdaten, die Sie ausgewählt haben).
+In der Titelleiste können Sie auf die Schaltfläche Download Campaign Write- **up** klicken, ![ ](../../media/download-campaign-write-up-button.png) um die kampagnendetails in ein Word-Dokument (standardmäßig mit dem Namen "CampaignReport.docx") herunterzuladen. Beachten Sie, dass der Download Details über die gesamte Lebensdauer der Kampagne enthält (nicht nur die Filterdaten, die Sie ausgewählt haben).
 
 ![Kampagneninformationen](../../media/campaign-details-campaign-info.png)
 
@@ -219,29 +214,29 @@ Das Diagramm enthält die folgenden Informationen:
 
 - **Absenderdomänen**
 
-- **Filter Urteile**: diese Werte beziehen sich auf die verfügbaren Phishing-und Spamfilter Urteile, wie unter [Antispam-Nachrichtenkopfzeilen](anti-spam-message-headers.md)beschrieben. Die verfügbaren Werte werden in der folgenden Tabelle beschrieben:
+- **Filter Urteile**: Urteils Werte beziehen sich auf die verfügbaren Phishing-und Spamfilter Urteile, wie unter [Antispam-Nachrichtenkopfzeilen](anti-spam-message-headers.md)beschrieben. Die verfügbaren Werte werden in der folgenden Tabelle beschrieben:
 
   ****
 
   |Wert|Spam Filter Urteil|Beschreibung|
   |---|---|---|
-  |**Zulässig**|`SFV:SKN` <br/><br/> `SFV:SKI`|Die Nachricht wurde durch Spamfilterung (beispielsweisedurch eine e-Mail-Fluss Regel, die auch als Transportregel bezeichnet wird) als nicht-Spam und/oder übersprungene Filterung markiert.<br/><br/>Die Nachricht hat die Spamfilterung aus anderen Gründen übersprungen (beispielsweise scheinen sich der Absender und der Empfänger in derselben Organisation zu befinden).|
-  |**Gesperrt**|`SFV:SKS`|Die Nachricht wurde vor der Auswertung durch Spamfilterung (beispielsweisedurch eine Nachrichtenfluss Regel) als Spam markiert.|
+  |**Zulässig**|`SFV:SKN` <br/><br/> `SFV:SKI`|Die Nachricht wurde vor der Auswertung durch Spamfilterung als nicht-Spam-und/oder übersprungene Filterung markiert. Beispielsweise wurde die Nachricht von einer e-Mail-Fluss Regel (auch als Transportregel bezeichnet) als nicht Spam gekennzeichnet.<br/><br/>Die Nachricht hat aus anderen Gründen die Spamfilterung übersprungen. Beispielsweise scheint sich der Absender und der Empfänger in derselben Organisation zu befinden.|
+  |**Gesperrt**|`SFV:SKS`|Die Nachricht wurde als Spam markiert, bevor Sie von der Spamfilterung ausgewertet wurde. Beispielsweisedurch eine Nachrichtenfluss Regel.|
   |**Erkannt**|`SFV:SPM`|Die Nachricht wurde von der Spamfilterung als Spam markiert.|
   |**Nicht erkannt**|`SFV:NSPM`|Die Nachricht wurde durch Spamfilterung als nicht Spam gekennzeichnet.|
   |**Veröffentlicht**|`SFV:SKQ`|Die Nachricht hat die Spamfilterung übersprungen, da Sie aus der Quarantäne freigegeben wurde.|
-  |**Mandanten zulässig**<sup>\*</sup>|`SFV:SKA`|Die Nachricht hat die Spamfilterung aufgrund von Anti-Spam-Richtlinieneinstellungen übersprungen (beispielsweise war der Absender in der Liste Zugelassene Absender oder zugelassener Domänen).|
-  |**Mandanten Block**<sup>\*\*</sup>|`SFV:SKA`|Die Nachricht wurde durch die Spamfilterung aufgrund von Anti-Spam-Richtlinieneinstellungen blockiert (beispielsweise war der Absender in der Liste Zugelassene Absender oder zugelassener Domänen).|
-  |**Benutzer zulassen**<sup>\*</sup>|`SFV:SFE`|Die Nachricht hat die Spamfilterung übersprungen, da sich der Absender in Outlook in der Liste sicherer Absender eines Benutzers befand.|
-  |**Benutzer Block**<sup>\*\*</sup>|`SFV:BLK`|Die Nachricht wurde durch die Spamfilterung blockiert, da sich der Absender in Outlook in der Liste Blockierte Absender eines Benutzers befand.|
-  |**ZAP**|n/v|[Zero-Hour Auto Purge (zap)](zero-hour-auto-purge.md) hat in der zugestellten Nachricht entsprechend den Einstellungen Ihrer Antispampolitik (in den Junk-e-Mail-Ordner verschoben oder isoliert) Aktionen durchgeführt.|
+  |**Mandanten zulässig**<sup>\*</sup>|`SFV:SKA`|Die Nachricht hat die Spamfilterung aufgrund der Einstellungen in einer Anti-Spam-Richtlinie übersprungen. Beispielsweise war der Absender in der Liste Zugelassene Absender oder zugelassene Domäne.|
+  |**Mandanten Block**<sup>\*\*</sup>|`SFV:SKA`|Die Nachricht wurde aufgrund der Einstellungen in einer Anti-Spam-Richtlinie durch Spamfilterung blockiert. Beispielsweise war der Absender in der Liste Zugelassene Absender oder zugelassene Domäne.|
+  |**Benutzer zulassen**<sup>\*</sup>|`SFV:SFE`|Die Nachricht hat die Spamfilterung übersprungen, da sich der Absender in der Liste sicherer Absender eines Benutzers befand.|
+  |**Benutzer Block**<sup>\*\*</sup>|`SFV:BLK`|Die Nachricht wurde durch die Spamfilterung blockiert, da sich der Absender in der Liste Blockierte Absender eines Benutzers befand.|
+  |**ZAP**|n/v|[Zero-Hour Auto Purge (zap)](zero-hour-auto-purge.md) hat die zugestellte Nachricht in den Junk-e-Mail-Ordner oder in die Quarantäne verschoben. Sie konfigurieren die Aktion in ihrer Anti-Spam-Richtlinie.|
   |
 
   <sup>\*</sup> Überprüfen Sie Ihre Anti-Spam-Richtlinien, da die zulässige Nachricht wahrscheinlich vom Dienst blockiert wurde.
 
   <sup>\*\*</sup> Überprüfen Sie Ihre Anti-Spam-Richtlinien, da diese Nachrichten isoliert und nicht zugestellt werden sollen.
 
-- **Übermittlungsorte**: Sie möchten wahrscheinlich Nachrichten überprüfen, die an Empfänger übermittelt wurden (entweder im Posteingang oder Junk-E-Mail-Ordner), auch wenn Benutzer nicht auf die Nutzlast-URL in der Nachricht geklickt haben. Sie können auch die isolierten Nachrichten aus der Quarantäne entfernen. Weitere Informationen finden Sie unter [Quarantäne-e-Mail-Nachrichten in EoP](quarantine-email-messages.md).
+- **Zustellungsorte**: Sie möchten wahrscheinlich Nachrichten untersuchen, die an Empfänger gesendet wurden (entweder an den Posteingang oder den Junk-e-Mail-Ordner), auch wenn Benutzer nicht auf die Nutzlast-URL in der Nachricht klicken. Sie können auch die isolierten Nachrichten aus der Quarantäne entfernen. Weitere Informationen finden Sie unter [Quarantäne-e-Mail-Nachrichten in EoP](quarantine-email-messages.md).
 
   - **Ordner gelöscht**
   - **Gelöscht**
@@ -253,14 +248,14 @@ Das Diagramm enthält die folgenden Informationen:
   - **Quarantäne**
   - **Unknown**
 
-- **URL-Klicks**: Diese werden im nächsten Abschnitt beschrieben.
+- **URL-Klicks**: diese Werte werden im nächsten Abschnitt beschrieben.
 
 > [!NOTE]
 > In allen Ebenen, die mehr als 10 Elemente enthalten, werden die oberen 10 Elemente angezeigt, während der Rest in **anderen**zusammengefasst wird.
 
 #### <a name="url-clicks"></a>URL-Klicks
 
-Wenn eine Phishing-Nachricht an einen Empfänger (in den Posteingang oder den Junk-e-Mail-Ordner) zugestellt wird, besteht immer die Möglichkeit, dass der Benutzer auf die Nutzlast-URL klickt. Wenn Sie nicht auf die URL in einer zugestellten Nachricht klicken, ist dies ein kleines Maß an Erfolg, aber Sie müssen herausfinden, warum die Phishing-Nachricht an erster Stelle an Ihr Postfach zugestellt wurde.
+Wenn eine Phishing-Nachricht an den Posteingang des Empfängers oder den Junk-e-Mail-Ordner gesendet wird, besteht immer die Möglichkeit, dass der Benutzer auf die Nutzlast-URL klickt. Wenn Sie nicht auf die URL klicken, ist dies ein kleines Maß an Erfolg, aber Sie müssen ermitteln, warum die Phishing-Nachricht sogar an das Postfach übermittelt wurde.
 
 Wenn ein Benutzer in der Phishing-Nachricht auf die Nutzlast-URL geklickt hat, werden die Aktionen im Bereich **URL Klicks** des Diagramms in der Ansicht kampagnendetails angezeigt.
 
@@ -268,9 +263,9 @@ Wenn ein Benutzer in der Phishing-Nachricht auf die Nutzlast-URL geklickt hat, w
 
 - **BlockPage**: der Empfänger hat auf die Nutzlast-URL geklickt, aber der Zugriff auf die bösartige Website wurde durch die Richtlinien für [ATP-sichere Links](atp-safe-links.md) in Ihrer Organisation blockiert.
 
-- **BlockPageOverride**: der Empfänger hat auf die Nutzlast-URL in der Nachricht geklickt, die ATP-Sicherheits Links haben versucht, diese zu beenden, aber Sie durften den Block außer Kraft setzen. Sie müssen Ihre [Richtlinien zu sicheren Links](set-up-atp-safe-links-policies.md) untersuchen, um zu ermitteln, warum Benutzer das Urteil "sichere Links" außer Kraft setzen und mit der bösartigen Website fortfahren dürfen.
+- **BlockPageOverride**: der Empfänger hat auf die Nutzlast-URL in der Nachricht geklickt, die ATP-Sicherheits Links haben versucht, diese zu beenden, aber Sie durften den Block außer Kraft setzen. Überprüfen Sie Ihre [Richtlinien für sichere Links](set-up-atp-safe-links-policies.md) , um zu erfahren, warum Benutzer das Urteil "sichere Links" außer Kraft setzen und mit der bösartigen Website fortfahren können.
 
-- **PendingDetonationPage**: ATP Safe Attachments ist gerade dabei, die Nutzlast-URL in einer virtuellen Computerumgebung zu öffnen und zu sehen, was geschieht.
+- **PendingDetonationPage**: sichere Anlagen in Office 365 ATP wird gerade dabei sein, die Nutzlast-URL in einer virtuellen Computerumgebung zu öffnen und zu untersuchen.
 
 - **PendingDetonationPageOverride**: der Empfänger durfte den detonations Prozess für die Nutzlast außer Kraft setzen und die URL öffnen, ohne auf die Ergebnisse zu warten.
 
@@ -281,7 +276,7 @@ Auf den Registerkarten in der Ansicht kampagnendetails können Sie die Kampagne 
 > [!TIP]
 > Die Informationen, die auf den Registerkarten angezeigt werden, werden durch den schattierten Datumsbereich in der Zeitleiste gesteuert, wie im Abschnitt [Kampagneninformationen](#campaign-information) beschrieben.
 
-- **URL Klicks**: Wenn Benutzer nicht auf die Nutzlast-URL in der Phishing-Nachricht geklickt haben, ist dieser Abschnitt leer. Wenn ein Benutzer auf die URL klicken konnte, werden die folgenden Werte aufgefüllt:
+- **URL Klicks**: Wenn Benutzer nicht auf die Nutzlast-URL in der Nachricht geklickt haben, ist dieser Abschnitt leer. Wenn ein Benutzer auf die URL klicken konnte, werden die folgenden Werte aufgefüllt:
 
   - **Benutzer**<sup>\*</sup>
   - **URL**<sup>\*</sup>
@@ -294,7 +289,7 @@ Auf den Registerkarten in der Ansicht kampagnendetails können Sie die Kampagne 
   - **Gesamtanzahl**
   - **Posteingang**
   - **Nicht Posteingang**
-  - **Weitergegebene SPF**: der Absender wurde vom [SPF (Sender Policy Framework)](how-office-365-uses-spf-to-prevent-spoofing.md)authentifiziert. Ein Absender, der die SPF-Überprüfung nicht übergibt, gibt an, dass der Absender nicht authentifiziert ist oder wenn die Nachricht einen legitimen Absender fälscht.
+  - **Weitergegebene SPF**: der Absender wurde vom [SPF (Sender Policy Framework)](how-office-365-uses-spf-to-prevent-spoofing.md)authentifiziert. Ein Absender, der die SPF-Überprüfung nicht übergibt, gibt einen nicht authentifizierten Absender an, oder die Nachricht fälscht einen legitimen Absender.
 
 - **Absender**
 
@@ -302,8 +297,8 @@ Auf den Registerkarten in der Ansicht kampagnendetails können Sie die Kampagne 
   - **Gesamtanzahl**
   - **Posteingang**
   - **Nicht Posteingang**
-  - **DKIM-Übergabe**: der Absender wurde durch Domänenschlüssel authentifiziert, die [Mail (DKIM) identifiziert](support-for-validation-of-dkim-signed-messages.md)haben. Ein Absender, der die DKIM-Überprüfung nicht übergibt, gibt an, dass der Absender nicht authentifiziert ist oder wenn die Nachricht einen legitimen Absender fälscht.
-  - **DMARC wurde übergeben**: der Absender wurde durch [domänenbasierte Nachrichtenauthentifizierung, Berichterstellung und Konformität authentifiziert (DMARC)](use-dmarc-to-validate-email.md). Ein Absender, der die DMARC-Überprüfung nicht übergibt, gibt an, dass der Absender nicht authentifiziert ist oder wenn die Nachricht einen legitimen Absender fälscht.
+  - **DKIM-Übergabe**: der Absender wurde durch Domänenschlüssel authentifiziert, die [Mail (DKIM) identifiziert](support-for-validation-of-dkim-signed-messages.md)haben. Ein Absender, der die DKIM-Überprüfung nicht übergibt, gibt einen nicht authentifizierten Absender an, oder die Nachricht fälscht einen legitimen Absender.
+  - **DMARC wurde übergeben**: der Absender wurde durch [domänenbasierte Nachrichtenauthentifizierung, Berichterstellung und Konformität authentifiziert (DMARC)](use-dmarc-to-validate-email.md). Ein Absender, der die DMARC-Überprüfung nicht übergibt, gibt einen nicht authentifizierten Absender an, oder die Nachricht fälscht einen legitimen Absender.
 
 - **Anlagen**
 

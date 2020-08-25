@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Implementieren Sie Microsoft Information Governance-Funktionen in Microsoft 365, um Ihre Daten für Compliance-oder behördliche Anforderungen zu bestimmen.
-ms.openlocfilehash: 8883b376f75ecd92c99d837a769ef6297b5e7129
-ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
+ms.openlocfilehash: b02c724ee812e622a45939d11b78f87245e2f194
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46815188"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866946"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Microsoft Information Governance in Microsoft 365
 
@@ -27,11 +27,13 @@ ms.locfileid: "46815188"
 
 Verwenden Sie Microsoft Information Governance (manchmal abgekürzt MIG), um Ihre Daten für Compliance-oder behördliche Anforderungen zu bestimmen.
 
+![Regieren Ihrer Daten – Information Governance und Datensatzverwaltung](../media/information-governance-records-management.png)
+
 Suchen Sie, um Ihre Daten zu schützen? Siehe [Microsoft Information Protection in Microsoft 365](protect-information.md).
 
 ## <a name="information-governance"></a>Informationsverwaltung
 
-, Um das gewünschte beizubehalten und zu löschen:
+So behalten Sie, was Sie benötigen, und Löschen nicht mehr:
  
 |Funktion|Welche Probleme werden behoben?|Erste Schritte|
 |:------|:------------|:--------------------|:-----------------------------|
@@ -42,7 +44,7 @@ Suchen Sie, um Ihre Daten zu schützen? Siehe [Microsoft Information Protection 
 
 ## <a name="records-management"></a>Datensatzverwaltung
 
-Verwenden Sie die Datensatzverwaltung, um hochwertige Inhalte für rechtliche, geschäftliche oder regulatorische Verpflichtungen zu verwalten:
+So verwalten Sie hochwertige Inhalte für rechtliche, geschäftliche oder regulatorische Verpflichtungen:
 
 |Funktion|Welche Probleme werden behoben?|Erste Schritte|
 |:------|:------------|---------------------|:----------------------------|

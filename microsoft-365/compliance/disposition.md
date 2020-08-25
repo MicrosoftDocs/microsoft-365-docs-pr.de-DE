@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Überwachen und Verwalten der Freigabe von Inhalten, unabhängig davon, ob Sie eine Dispositions Überprüfung oder Inhalte verwenden, wird automatisch entsprechend den von Ihnen konfigurierten Einstellungen gelöscht.
-ms.openlocfilehash: 7548ab12b72aa75047caa373efe3e7c3eb7c5d31
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: e70160ef309ad421724f9ad40db0d7c6e00df136
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778535"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46867210"
 ---
 # <a name="disposition-of-content"></a>Disposition von Inhalten
 
@@ -35,18 +35,14 @@ Zum Verwalten von Dispositions Überprüfungen und zum bestätigen, dass Datens�
 
 ### <a name="permissions-for-disposition"></a>Berechtigungen für die Disposition
 
-Um erfolgreich auf die Registerkarte **Disposition** im Microsoft 365 Compliance Center zugreifen zu können, müssen die Benutzer über die **Verwaltungs** Rolle "Disposition" und die Rolle " **Überwachungsprotokolle nur anzeigen** " verfügen. Obwohl standardmäßig Benutzer zu den Standardrollengruppen hinzugefügt werden sollen, empfehlen wir Ihnen, in diesem Fall eine neue Rollengruppe mit dem Namen **Dispositions Prüfer** mit diesen beiden Rollen zu erstellen und Benutzer dieser Gruppe nach Bedarf hinzuzufügen. Eine einzelne Rollengruppe für die Disposition reduziert die Verwaltungskosten und erleichtert Benutzern die benötigten kombinierten Berechtigungen.
+Für einen erfolgreichen Zugriff auf die Registerkarte " **Disposition** " im Microsoft 365 Compliance Center müssen Benutzer über die Verwaltungsrolle " **Disposition Management** " verfügen. Diese Rolle ist in den standardmäßigen Administratorrollengruppen " **Compliance Administrator** " und " **Compliance Data Administrator**" enthalten.
+
+Um Benutzern diese erforderliche Dispositions-Verwaltungsrolle zu gewähren, fügen Sie diese entweder einer dieser Standardrollengruppen hinzu, oder erstellen Sie eine benutzerdefinierte Rollengruppe (beispielsweise "Dispositions Prüfer"), und erteilen Sie dieser Gruppe die Dispositions Verwaltungsrolle.  
 
 > [!NOTE]
-> Selbst einem globalen Administrator muss die **Dispositions Verwaltungs** Rolle erteilt werden. Wenn also globale Administratoren auf die Registerkarte "Disposition" zugreifen müssen, werden Sie als Mitglieder der Rollengruppe " **Dispositions Prüfer** " angezeigt. 
+> Selbst einem globalen Administrator muss die **Dispositions Verwaltungs** Rolle erteilt werden. 
 
-Spezifisch für die Rolle " **nur Ansichts Überwachungsprotokolle** ":
-
-- Da es sich bei dem zugrunde liegenden Cmdlet, das zum Durchsuchen des Überwachungsprotokolls verwendet wird, um ein Exchange Online-Cmdlet handelt, müssen Sie Benutzer diese Rolle mithilfe des [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center)anstatt mithilfe der Seite **Berechtigungen** im Security & Compliance Center zuweisen. Anweisungen finden Sie unter [Verwalten von Rollengruppen in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
-
-- Microsoft 365-Gruppen ([früher Office 365 Gruppen](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) werden für diese Rolle nicht unterstützt. Weisen Sie stattdessen Benutzerpostfächer, e-Mail-Benutzer oder e-Mail-aktivierte Sicherheitsgruppen zu.
-
-Anweisungen zum Erteilen von Benutzern der **Dispositions Verwaltungs** Rolle und zum Erstellen Ihrer neuen Funktion " **Dispositions Prüfer** " finden Sie unter [Erteilen von Benutzern den Zugriff auf das Office 365 Security &amp; Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Anweisungen finden Sie unter [Gewähren des Zugriffs auf das Office 365 Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 ### <a name="enable-auditing"></a>Aktivieren der Überwachung
 

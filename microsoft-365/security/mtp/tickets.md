@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: d258bf3ec4c04eafd22e850329ca925b4c974e94
-ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
+ms.openlocfilehash: 12ac7d0a3d07749e16443e645f50de8fda185658
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45086667"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866779"
 ---
 # <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a>Integrieren von ServiceNow-Tickets in das Microsoft 365 Security Center und Compliance Center
 
@@ -74,9 +74,9 @@ Informationen zum Herstellen einer Verbindung mit ServiceNow finden Sie unter [E
 
 ### <a name="you-receive-an-error-in-the-first-step-of-the-installation-checklist-oauth-creation"></a>Sie erhalten eine Fehlermeldung im ersten Schritt der Installationsprüfliste (OAuth-Erstellung)
 
-**Fehlermeldung**: der Lesevorgang für "oauth_entity" aus dem Bereich "x_mioms_m365ticket" wurde aufgrund der bereichsübergreifenden Zugriffsrichtlinie der Tabelle verweigert.
+**Fehlermeldung**: der Lesevorgang für "oauth_entity" aus dem Bereich "x_mioms_m365ticket" wurde aufgrund der bereichsübergreifenden Zugriffsrichtlinie der Tabelle abgelehnt.
 
-Die APP geht davon aus, dass ein Administrator in der ServiceNow-Instanz OAuth-Entitäten erstellen und lesen kann. Dieser Fehler kann aufgrund einer Anpassung Ihrer Instanz von ServiceNow verursacht werden, wodurch die Benutzer eingeschränkt werden, die OAuth-Entitäten erstellen/lesen können.
+Die APP geht davon aus, dass ein Administrator in der ServiceNow-Instanz OAuth-Entitäten erstellen und lesen kann. Dieser Fehler kann durch eine Anpassung in Ihrer Instanz von ServiceNow verursacht werden, die die Benutzer einschränken kann, die OAuth-Entitäten erstellen oder lesen können.
 
 **ServiceNow empfiehlt Benutzern, die Standardfunktionalität beizubehalten.**
 
@@ -89,14 +89,14 @@ Legen Sie die Tabellen Konfigurationen "Anwendungs Registrierungen" auf "Standar
 
 ### <a name="how-to-validate-the-oauth-entity-created-for-microsoft-365-security--compliance-connector"></a>Überprüfen der OAuth-Entität, die für Microsoft 365 Security & Compliance Connector erstellt wurde
 
-Wechseln Sie zur Tabelle Anwendungs Registrierungstabellen (**Menü > System OAuth > Anwendungsregistrierung**) in ServiceNow, und suchen Sie nach der von Ihnen erstellten OAuth-Entität mit dem Namen, den Sie Ihr zugewiesen haben.
+Wechseln Sie zur Tabelle Anwendungs Registrierungstabellen (**Menü > System OAuth > Anwendungsregistrierung**) in ServiceNow. Suchen Sie die von Ihnen erstellte OAuth-Entität mit dem Namen, den Sie Ihr zugewiesen haben.
 
-### <a name="logging-in-as-the-integration-user"></a>Anmelden als Integrationsbenutzer
+### <a name="signing-in-as-the-integration-user"></a>Anmelden als Integrationsbenutzer
 
-Bevor Sie die Verbindung zwischen dem Microsoft 365 Security Center und ServiceNow autorisieren, müssen Sie sicherstellen, dass Sie den Benutzernamen und das Kennwort für die Integration verwenden, die Sie in den Installationsschritten erstellt haben. Verwenden Sie Ihre persönlichen Anmeldeinformationen nicht.
+Bevor Sie die Verbindung zwischen dem Microsoft 365 Security Center und ServiceNow autorisieren, müssen Sie sicherstellen, dass Sie die Benutzeranmeldung und das Kennwort für die Integration verwenden, die Sie in den Installationsschritten erstellt haben. Verwenden Sie Ihre persönlichen Anmeldeinformationen nicht.
 
 1. Wechseln Sie zur Autorisierungs Seite in ServiceNow.
-2. Wenn Sie mit Ihren persönlichen Anmeldeinformationen angemeldet sind, wählen Sie den Link **nicht** in der rechten oberen Ecke aus.
+2. Wenn Sie mit Ihren persönlichen Anmeldeinformationen angemeldet sind, wählen Sie den Link **nicht** in der oberen rechten Ecke aus.
 3. Melden Sie sich bei ServiceNow als der Integrationsbenutzer an, den Sie zuvor in der Installationsprüfliste erstellt haben.  
 4. Wählen Sie auf der Seite ServiceNow die Option **zulassen** aus, die fragt, ob der Security + Compliance-Konnektor eine Verbindung mit Ihrem ServiceNow-Konto herstellen kann.
 5. Fahren Sie mit den Setupschritten fort.
@@ -109,7 +109,7 @@ Wechseln Sie zu Benutzertabelle **(Menü > Benutzerverwaltung > Benutzer**) in S
 
 Wenn Ihr Unternehmen einmaliges Anmelden aktiviert hat und Sie eine Fehlermeldung erhalten oder die Anmeldung nicht erfolgreich war, führen Sie eine der beiden Lösungen aus.
 
-#### <a name="log-into-servicenow-as-the-integration-user"></a>Melden Sie sich als Integrationsbenutzer bei ServiceNow an.
+#### <a name="sign-in-to-servicenow-as-the-integration-user"></a>Melden Sie sich bei ServiceNow als Integrationsbenutzer an.
 
 1. Navigieren Sie zurück zur Autorisierungs Seite in ServiceNow.
 2. Klicken Sie in der rechten oberen Ecke auf den Link **Not You** .

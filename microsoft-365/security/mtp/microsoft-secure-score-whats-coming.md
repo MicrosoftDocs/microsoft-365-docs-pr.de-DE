@@ -17,20 +17,20 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1b6bd81bc194a3b8d972661eaca393571b1ad199
-ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
+ms.openlocfilehash: 4707b95c72200042b17c9e8ff9ae876933522d1f
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46815219"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866919"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Was kommt mit Microsoft Secure Score
 
-Um [Microsoft-Sicherheitsbewertung](microsoft-secure-score.md) zu einem besseren Anlaufpunkt für Ihren Sicherheitsstatus zu machen und die Benutzerfreundlichkeit zu verbessern, nehmen wir in naher Zukunft einige Änderungen vor. Ihre Punktzahl und die maximal mögliche Punktzahl können sich ändern.
+Wir nehmen in naher Zukunft einige Änderungen vor, um [Microsoft Secure Score](microsoft-secure-score.md) zu einem besseren Vertreter ihrer Sicherheitsposition zu machen und die Benutzerfreundlichkeit zu verbessern. Ihre Punktzahl und die maximal mögliche Punktzahl können sich ändern.
 
 ## <a name="proposed-changes"></a>Vorgeschlagene Änderungen
 
-Diese Änderungen werden möglicherweise in Ihrem Microsoft Secure Score in Kürze in Abhängigkeit von Ihrer Lizenz durchkommen. Wenn Sie mehr über die neuesten Änderungen wissen möchten, lesen Sie [Neuerungen in Microsoft-Sicherheitsbewertung](microsoft-secure-score-whats-new.md).
+Je nach Lizenz werden diese Änderungen möglicherweise bald zu Ihrem Microsoft Secure Score kommen. Wenn Sie mehr über die neuesten Änderungen wissen möchten, lesen Sie [Neuerungen in Microsoft-Sicherheitsbewertung](microsoft-secure-score-whats-new.md).
 
 - Ändern der maximalen Punktzahl von 7 auf 8 für die Aktion Azure Active Directory Improvement mit dem Namen "Aktivieren der Richtlinie zum Blockieren der Legacy Authentifizierung"
 

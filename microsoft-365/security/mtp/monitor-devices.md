@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 870d2ce1f70028c917cc8b165e8a1c55b746100a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 8abb4960318bb12b0205d014c32e48a60d4b9ae5
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033998"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866813"
 ---
 # <a name="device-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Geräteüberwachung und-Berichterstellung im Microsoft 365 Security Center
 
@@ -32,7 +32,7 @@ Erhalten Sie aktuelle Benachrichtigungen zu Sicherheitsverletzungen und anderen 
 
 ### <a name="monitor-high-impact-alerts"></a>Überwachen von Warnungen mit hoher Wirkung
 
-Jede Microsoft Defender-ATP-Warnung weist einen entsprechenden Schweregrad (hoch, Mittel, niedrig oder ininformational) auf, der Ihre potenziellen Auswirkungen auf Ihr Netzwerk angibt, wenn Sie unbeaufsichtigt bleiben.  
+Jede Microsoft Defender-ATP-Warnung weist einen entsprechenden Schweregrad auf (hoch, Mittel, niedrig oder Information). Sie weist auf mögliche Auswirkungen auf Ihr Netzwerk hin, wenn Sie unbeaufsichtigt bleiben.  
 
 Verwenden Sie die **Geräte Warnungs schwere** Karte, um sich speziell auf Warnungen zu konzentrieren, die gravierender sind und möglicherweise sofort reagieren müssen. Auf dieser Karte können Sie weitere Informationen im Microsoft Defender-Sicherheits Center-Portal anzeigen.
 
@@ -40,9 +40,9 @@ Verwenden Sie die **Geräte Warnungs schwere** Karte, um sich speziell auf Warnu
 
 ### <a name="understand-sources-of-alerts"></a>Grundlegendes zu Warnungs Quellen
 
-Microsoft Defender ATP nutzt Daten aus einer breiten Palette von Sicherheitssensoren und Nachrichtenquellen, um Warnungen zu generieren. Beispielsweise kann es Erkennungsinformationen von Windows Defender Antivirus und Antischadsoftware von Drittanbietern sowie ihre eigenen benutzerdefinierten Bedrohungen, die über die Webdienst-API bereitgestellt werden, verwenden.
+Microsoft Defender ATP nutzt Daten aus einer breiten Palette von Sicherheitssensoren und Nachrichtenquellen, um Warnungen zu generieren. Beispielsweise kann es Erkennungsinformationen von Microsoft Defender Antivirus und Antischadsoftware von Drittanbietern verwenden. Es kann auch Ihre eigene benutzerdefinierte Bedrohungs Intelligenz verwenden, die über die Webdienst-API bereitgestellt wird.
 
-Die Karte für die **Erkennung von Geräte Warnungen** zeigt die Verteilung von Benachrichtigungen nach Quelle an. Diese Karte kann Ihnen dabei helfen, Aktivitäten im Zusammenhang mit bestimmten Quellen, insbesondere ihren benutzerdefinierten Quellen, nachzuverfolgen. Sie können dies auch verwenden, um sich auf Warnungen zu konzentrieren, die von Sensoren stammen, die nicht so konfiguriert sind, dass böswillige Aktivitäten oder Komponenten automatisch blockiert werden.
+Die Karte für die **Erkennung von Geräte Warnungen** zeigt die Verteilung von Benachrichtigungen nach Quelle an. Verfolgen Sie Aktivitäten im Zusammenhang mit bestimmten Quellen, insbesondere ihren benutzerdefinierten Quellen. Sie können die Karte auch verwenden, um sich auf Warnungen zu konzentrieren, die von Sensoren stammen, die nicht so konfiguriert sind, dass böswillige Aktivitäten oder Komponenten automatisch blockiert werden.
 
 ![Geräte Warnungs Erkennungsquellen-Karte](../../media/device-alert-detection-sources.png)
 
@@ -50,15 +50,15 @@ Auf dieser Karte können Sie weitere Informationen im Microsoft Defender-Sicherh
 
 ### <a name="understand-the-types-of-threats-that-trigger-alerts"></a>Grundlegendes zu den Typen von Bedrohungen, die Warnungen auslösen
 
-Microsoft Defender ATP sortiert jede Warnung in eine Kategorie, die eine bestimmte Stufe in der Angriffs Kette oder eine Art von Bedrohungs Komponente darstellt. Beispielsweise kann eine erkannte Bedrohungsaktivität als "laterale Bewegung" kategorisiert werden, um anzugeben, dass versucht wurde, andere Geräte im Netzwerk zu erreichen. Die Aktivität ist auch möglicherweise aufgetreten, nachdem Angreifer einen ersten Standbein erreicht haben. Wenn eine Bedrohungs Komponente erkannt wird, kann Sie entweder weitgehend als Schadsoftware klassifiziert werden oder genauer gesagt als Ransomware, Anmeldeinformationen stehlen oder andere Arten von bösartiger oder unerwünschter Software.
+Microsoft Defender ATP sortiert jede Warnung in eine Kategorie, die eine bestimmte Stufe in der Angriffs Kette oder dem Typ der Bedrohungs Komponente darstellt. Beispielsweise kann eine erkannte Bedrohungsaktivität als "laterale Bewegung" kategorisiert werden, um anzugeben, dass versucht wurde, andere Geräte im Netzwerk zu erreichen. Die Aktivität ist wahrscheinlich aufgetreten, nachdem Angreifer einen ersten Standbein erreicht haben. Wenn eine Bedrohungs Komponente erkannt wird, kann Sie weitgehend als Schadsoftware oder speziell als bestimmter Bedrohungs klassifiziert werden. Zu den Besonderheiten gehören Ransomware, das stehlen von Anmeldeinformationen oder andere Arten von bösartiger oder unerwünschter Software.
 
-Die Karte **Bedrohungskategorien für Geräte** zeigt die Verteilung von Warnungen in diesen Kategorien an. Sie können diese Informationen verwenden, um Bedrohungsaktivitäten zu identifizieren, wie beispielsweise Diebstahlversuche von Anmeldeinformationen, die im Vergleich zu Social Engineering-versuchen eine höhere Auswirkung haben können. Sie können diese Informationen auch verwenden, um potenziell destruktive Bedrohungen wie Ransomware zu überwachen.
+Die Karte **Bedrohungskategorien für Geräte** zeigt die Verteilung von Warnungen in diesen Kategorien an. Verwenden Sie diese Informationen, um die Bedrohungsaktivität zu identifizieren, wie beispielsweise Diebstahlversuche von Anmeldeinformationen, die in der Regel höhere Auswirkungen haben als Social Engineering-Versuche. Sie können auch auf potenziell destruktive Bedrohungen wie Ransomware überwachen.
 
 ![Geräte Bedrohungskategorien-Karte](../../media/device-threat-categories.png)
 
 ### <a name="monitor-active-alerts"></a>Überwachen aktiver Warnungen
 
-Die **Geräte Warnungsstatus** Karte gibt die Anzahl der Warnungen an, die nicht aufgelöst wurden und möglicherweise beachtet werden müssen. Auf dieser Karte können Sie weitere Informationen im Microsoft Defender-Sicherheits Center-Portal anzeigen.
+Die **Geräte Warnungs-Status** Karte gibt die Anzahl der Warnungen an, die nicht aufgelöst wurden, und erfordert möglicherweise Aufmerksamkeit. Auf dieser Karte können Sie weitere Informationen im Microsoft Defender-Sicherheits Center-Portal anzeigen.
 
 ![Geräte Warnungsstatus Karte](../../media/device-alert-status.png)
 
@@ -77,7 +77,7 @@ Hinweis: in einigen Fällen stehen Klassifizierungsinformationen für bestimmte 
 
 ### <a name="monitor-determination-of-resolved-alerts"></a>Überwachen der Ermittlung von aufgelösten Warnungen
 
-Zusätzlich zur Klassifizierung, ob eine Warnung während der Lösung true oder false ist, kann Ihr Sicherheitspersonal eine Bestimmung bereitstellen, die den Typ der normalen oder böswilligen Aktivität angibt, die bei der Überprüfung der Warnung gefunden wurde.
+Zusammen mit der Klassifizierung, ob eine Warnung bei der Lösung true oder false ist, kann Ihr Sicherheitspersonal eine Ermittlung bereitstellen. Eine Ermittlung gibt den Typ der normalen oder böswilligen Aktivität an, die bei der Überprüfung der Warnung gefunden wurde.
 
 Die Karte für die **Geräte Warnungs Ermittlung** zeigt die für jede Warnung vorgesehene Ermittlung an.
 
@@ -119,7 +119,7 @@ Die **Gerätekompatibilität** zeigt, wie viele Geräte, die in InTune registrie
 
 ### <a name="discover-devices-with-malware-detections"></a>Erkennen von Geräten mit Malwareerkennungen
 
-**Erkennungen von Geräte-Schadsoftware** liefern die Anzahl von InTune-registrierten Geräten mit Schadsoftware, die nicht vollständig aufgelöst wurden. Dies kann daran liegen, dass ausstehende Aktionen, ein Neustart, ein vollständiger Scan, manuelle Benutzeraktionen oder die Korrekturaktion nicht erfolgreich abgeschlossen wurde.
+**Erkennungen von Geräte-Schadsoftware** liefern die Anzahl von InTune-registrierten Geräten mit Schadsoftware, die noch nicht vollständig aufgelöst wurde. Ein Mangel an Auflösung kann aufgrund ausstehender Aktionen, eines Neustarts, einer vollständigen Überprüfung, manueller Benutzeraktionen oder wenn die Korrekturaktion nicht erfolgreich abgeschlossen wurde.
 
 ![Karte für die Erkennung von Geräte-Schadsoftware](../../media/device-malware-detections.png)
 
@@ -131,7 +131,7 @@ Die **Gerätekompatibilität** zeigt, wie viele Geräte, die in InTune registrie
 
 ### <a name="understand-the-specific-malware-detected-on-your-devices"></a>Grundlegendes zur spezifischen auf Ihren Geräten erkannten Malware
 
-**Malware auf Geräten** stellt eine Liste der auf Ihren Geräten erkannten spezifischen Malware zur Verfügung.
+**Malware auf Geräten** enthält eine Liste der spezifischen Schadsoftware, die auf Ihren Geräten erkannt wurde.
 
 ![Malware auf Geräte Karte](../../media/malware-on-devices.png)
 
@@ -147,7 +147,7 @@ Die **Gerätekompatibilität** zeigt, wie viele Geräte, die in InTune registrie
 
 ![Benutzer mit der Malware Erkennungskarte](../../media/users-with-malware-detections.png)
 
-## <a name="monitor-and-manage-asr-rule-deployment-and-detections"></a>Überwachen und Verwalten der Bereitstellung und Erkennung von ASR-Regeln
+## <a name="monitor-and-manage-attack-surface-reduction-rule-deployment-and-detections"></a>Überwachen und Verwalten der Bereitstellung und Erkennung von Angriffs Oberflächen Reduzierungs Regeln
 
 [Regeln für die Angriffsflächen Reduzierung (ASR)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction) verhindern, dass Aktionen und apps, die in der Regel von Exploit sucht-Schadsoftware verwendet werden, Geräte infizieren. Mit diesen Regeln wird gesteuert, wann und wie ausführbare Dateien ausgeführt werden. So können Sie beispielsweise verhindern, dass JavaScript oder VBScript eine heruntergeladene ausführbare Datei startet, Win32-API-Aufrufe aus Office-Makros blockiert oder Prozesse blockiert, die von USB-Laufwerken ausgeführt werden.
 
@@ -161,7 +161,7 @@ Die obere Leiste auf der Karte zeigt die Gesamtzahl der Geräte an, die sich in 
 * **Überwachungsmodus**: Geräte, für die keine Regeln zum Blockieren der erkannten Aktivität festgelegt sind, aber mindestens eine Regel zum Überwachen der erkannten Aktivität festgelegt ist  
 * **Off**: Geräte mit ausgeschalteten ASR-Regeln
 
-Der untere Teil dieser Karte zeigt die Einstellungen nach Regeln auf Ihren Geräten an. In jeder Leiste wird die Anzahl der Geräte angegeben, die für die Blockierung oder Überwachung der Erkennung festgelegt sind, oder die Regel vollständig deaktivieren lassen.
+Der untere Teil dieser Karte zeigt die Einstellungen nach Regeln auf Ihren Geräten an. Jeder Balken gibt die Anzahl der zu blockierenden Geräte an, die Überwachungs Erkennung, oder die Regel ist vollständig deaktiviert.
 
 ### <a name="view-asr-detections"></a>Anzeigen von ASR-Erkennungen
 
@@ -173,7 +173,7 @@ Im Diagramm oben auf der Seite werden Erkennungen im Laufe der Zeit angezeigt, d
 
 * **Erkannte Datei**: die Datei, in der Regel ein Skript oder ein Dokument, dessen Inhalt die mutmaßliche Angriffs Aktivität ausgelöst hat
 * **Regel**: Name, der die Angriffsaktivitäten beschreibt, die von der Regel erfasst werden sollen. Lesen Sie mehr über vorhandene ASR-Regeln
-* **Quell-App**: die Anwendung, die Inhalte geladen oder ausgeführt hat, die die mutmaßliche Angriffs Aktivität ausgelöst haben. Hierbei kann es sich um eine legitime Anwendung wie Webbrowser, eine Office-Anwendung oder ein System Tool wie PowerShell handeln.
+* **Quell-App**: die Anwendung, die Inhalte geladen oder ausgeführt hat, die die mutmaßliche Angriffs Aktivität ausgelöst haben. Es kann sich um eine legitime Anwendung wie Webbrowser, eine Office-Anwendung oder ein System Tool wie PowerShell handeln.
 * **Herausgeber**: der Anbieter, der die Quell-APP freigegeben hat
 
 ### <a name="review-device-asr-rule-settings"></a>Überprüfen der Einstellungen für die Geräte ASR-Regel
@@ -202,7 +202,7 @@ In der Tabelle sind alle Dateinamen aufgeführt, die von den Regeln für Angriff
 
 Wenn Sie eine Liste der ausgewählten Dateien mit vollständigen Pfaden für den Ausschluss erhalten möchten, wählen Sie **Ausschluss Pfade abrufen**aus.
 
-Protokolle für den ASR-Regel **Block Anmeldeinformationen, die vom Windows Local Security Authority Subsystem (Lsass. exe) gestohlen** werden, erfassen die Quell-app " **LSASS. exe**", eine normale System Datei, als erkannte Datei. Daher enthält die generierte Liste der Ausschluss Pfade diese Datei. Um die Datei auszuschließen, die diese Regel anstelle von **LSASS. exe**ausgelöst hat, verwenden Sie den Pfad zur Quell-APP anstelle der erkannten Datei.
+Protokolle für den ASR **-Regel Block Anmeldeinformationen, die vom Windows Local Security Authority Subsystem (lsass.exe) gestohlen** werden, erfassen die Quell-APP **lsass.exe**. Es handelt sich um eine normale System Datei, die jedoch als erkannte Datei erfasst wird. Daher enthält die generierte Liste der Ausschluss Pfade diese Datei. Verwenden Sie den Pfad zur Quell-APP anstelle der erkannten Datei, um die Datei auszuschließen, die diese Regel anstelle von **lsass.exe**ausgelöst hat.
 
 Um die Quell-APP zu finden, führen Sie die folgende [erweiterte Suchabfrage](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting) für diese spezielle Regel aus (identifiziert durch die Regel-ID 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2):
 
@@ -218,7 +218,7 @@ DeviceEvents
 
 Bevor Sie eine Datei von ASR ausschließen, sollten Sie die Datei überprüfen, um zu ermitteln, ob es sich tatsächlich nicht um bösartige Dateien handelt.
 
-Verwenden Sie zum Überprüfen einer Datei die [Seite Dateiinformationen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-files) im Microsoft Defender Security Center. Die Seite enthält Informationen über die Prävalenz sowie das Erkennungs Verhältnis von VirusTotal Antivirus. Sie können auch die Seite verwenden, um die Datei zur tiefen Analyse zu übermitteln.
+Verwenden Sie zum Überprüfen einer Datei die [Seite Dateiinformationen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-files) im Microsoft Defender Security Center. Die Seite enthält Informationen über die Prävalenz und das Antivirus-Erkennungs Verhältnis von virustotal. Sie können auch die Seite verwenden, um die Datei zur tiefen Analyse zu übermitteln.
 
 Um eine erkannte Datei im Sicherheits Center von Microsoft Defender zu finden, suchen Sie mithilfe der folgenden erweiterten Suchabfrage nach allen ASR-Erkennungen:
 

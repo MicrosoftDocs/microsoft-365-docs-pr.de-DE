@@ -16,16 +16,16 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratoren können häufig gestellte Fragen und Antworten zum Schutz vor Spoofing in Exchange Online Protection (EoP) anzeigen.
-ms.openlocfilehash: 66dbedaf638154c4a35359a4e5bc66c326c04d1e
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 3547b0a0af6d2e541d4ec3546d9bbd4aa34c3a6b
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826673"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46867139"
 ---
 # <a name="anti-spoofing-protection-faq"></a>Antispoofingschutz Häufig gestellte Fragen
 
-Dieses Thema enthält häufig gestellte Fragen und Antworten zum Schutz vor Spoofing für Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächern.
+Dieser Artikel enthält häufig gestellte Fragen und Antworten zum Schutz vor Spoofing für Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächern.
 
 Fragen und Antworten zum Antispamschutz finden Sie unter [Anti-Spam Protection FAQ](anti-spam-protection-faq.md).
 
@@ -33,11 +33,11 @@ Fragen und Antworten zum Schutz vor Schadsoftware finden Sie unter [Anti-Malware
 
 ## <a name="why-did-microsoft-choose-to-junk-unauthenticated-inbound-email"></a>Warum hat Microsoft sich für Junk-nicht authentifizierte eingehende e-Mails entschieden?
 
-Aufgrund der Auswirkungen von Phishing-Angriffen und weil die e-Mail-Authentifizierung seit mehr als 15 Jahren besteht, ist Microsoft der Ansicht, dass das Risiko, weiterhin nicht authentifizierte eingehende e-Mails zuzulassen, höher ist als das Risiko, dass legitime eingehende e-Mails verloren gehen.
+Microsoft ist der Ansicht, dass das Risiko, weiterhin nicht authentifizierte eingehende e-Mails zuzulassen, höher ist als das Risiko, dass legitime eingehende e-Mails verloren gehen.
 
 ## <a name="does-junking-unauthenticated-inbound-email-cause-legitimate-email-to-be-marked-as-spam"></a>Bewirkt junking nicht authentifizierte eingehende e-Mails, dass legitime e-Mails als Spam gekennzeichnet werden?
 
-Wenn Microsoft dieses Feature in 2018 aktiviert hat, sind einige falsch positive Ergebnisse aufgetreten (gute Nachrichten wurden als ungültig markiert). Im Laufe der Zeit wurden Absender jedoch mit den neuen Anforderungen an die Absenderauthentifizierung angepasst, und die Anzahl der Nachrichten, die fälschlicherweise als gefälscht identifiziert wurden, wurde für die meisten e-Mail-Pfade vernachlässigbar.
+Wenn Microsoft dieses Feature in 2018 aktiviert hat, sind einige falsch positive Ergebnisse aufgetreten (gute Nachrichten wurden als ungültig markiert). Im Laufe der Zeit wurden die Absender jedoch an die Anforderungen angepasst. Die Anzahl der Nachrichten, die fälschlicherweise als gefälscht identifiziert wurden, wurden für die meisten e-Mail-Pfade vernachlässigbar.
 
 Microsoft selbst hat die neuen e-Mail-Authentifizierungsanforderungen mehrere Wochen vor der Bereitstellung an Kunden übernommen. Zunächst gab es zwar Störungen, diese gingen jedoch allmählich zurück.
 
@@ -45,7 +45,7 @@ Microsoft selbst hat die neuen e-Mail-Authentifizierungsanforderungen mehrere Wo
 
 Ja. Ab Oktober 2018 steht Spoof Intelligence für alle Organisationen mit Postfächern in Exchange Online und eigenständigen EoP-Organisationen ohne Exchange Online Postfächer zur Verfügung.
 
-Die Anti-Spoofing-Technologie wurde anfänglich nur für Organisationen bereitgestellt, die Office 365 Enterprise E5-Abonnements oder das Office 365 Advanced Threat Protection (Office 365 ATP)-Add-on für Ihr Abonnement hatten.
+Anti-Spoofing-Technologie war anfänglich nur in Office 365 Advanced Threat Protection verfügbar. Beispielsweise Microsoft E5-Abonnements oder ATP-Add-ons.
 
 ## <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>Wie kann ich Spamnachrichten oder Nachrichten, die kein Spam sind, an Microsoft melden?
 
@@ -57,9 +57,9 @@ Siehe [Melden von Nachrichten und Dateien an Microsoft](report-junk-email-messag
 
 ## <a name="what-happens-if-i-disable-anti-spoofing-protection-for-my-organization"></a>Was geschieht, wenn ich den Schutz gegen Spoofing für meine Organisation deaktiviere?
 
-Dies wird nicht empfohlen, da dies dazu führt, dass mehr Nachrichten nicht als Phishing- und Spamnachrichten erkannt werden. Nicht alle Phishingnachrichten sind Spoofingnachrichten und nicht alle Spoofingnachrichten werden übersehen. Ihr Risiko ist jedenfalls höher als bei einem Kunden, der Antispoofing aktiviert.
+Es wird nicht empfohlen, den Schutz gegen Spoofing zu deaktivieren. Durch das Deaktivieren des Schutzes können mehr Phishing-und Spamnachrichten in Ihrer Organisation zugestellt werden. Nicht alle Phishing-Spoofing ist, und nicht alle gefälschten Nachrichten werden nicht verpasst. Allerdings ist Ihr Risiko höher.
 
-Da nun die [Erweiterte Filterung für Connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) verfügbar ist, wird empfohlen, dass Sie den Schutz vor Spoofing nicht mehr deaktivieren, wenn Ihr MX-Eintrag auf einen anderen Server oder Dienst verweist, bevor Sie eine e-Mail an EoP senden.
+Da nun die [Erweiterte Filterung für Connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) verfügbar ist, wird empfohlen, den Schutz vor Spoofing nicht mehr zu deaktivieren, wenn Ihre e-Mails vor EoP durch einen anderen Dienst weitergeleitet werden.
 
 ## <a name="does-anti-spoofing-protection-mean-i-will-be-protected-from-all-phishing"></a>Bedeutet der Schutz vor Spoofing, dass ich vor allen Phishing-Daten geschützt werde?
 
@@ -67,11 +67,11 @@ Leider Nein. Angreifer passen sich an die Verwendung anderer Techniken an (beisp
 
 ## <a name="do-other-large-email-services-block-unauthenticated-inbound-email"></a>Blockieren andere große e-Mail-Dienste nicht authentifizierte eingehende e-Mails?
 
-Fast alle großen e-Mail-Dienste implementieren herkömmliche SPF-, DKIM-und DMARC-Prüfungen. Einige Dienste haben andere, strengere Überprüfungen, aber nur wenige gehen so weit, dass Sie nicht authentifizierte e-Mails blockieren und Sie als gefälschte Nachrichten behandeln EoP. Allerdings wird die Branche in Bezug auf Probleme mit nicht authentifizierten e-Mails, insbesondere aufgrund des Problems der Phishing-Problematik, immer stärker bewusst.
+Fast alle großen e-Mail-Dienste implementieren herkömmliche SPF-, DKIM-und DMARC-Prüfungen. Einige Dienste haben andere, strengere Prüfungen, aber nur wenige gehen so weit, dass Sie nicht authentifizierte e-Mails blockieren und als gefälschte Nachrichten behandeln EoP. Allerdings wird die Branche in Bezug auf Probleme mit nicht authentifizierten e-Mails, insbesondere aufgrund des Problems der Phishing-Problematik, immer stärker bewusst.
 
 ## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>Muss ich dennoch die erweiterte Spam Filter Einstellung "SPF Record: Hard Fail" (_MarkAsSpamSpfRecordHardFail_) aktivieren, wenn ich Antispoofing aktiviere?
 
-Nein. Diese ASF-Einstellung ist nicht mehr erforderlich, da bei der Antispoofing-Funktion nicht nur SPF-schwer Fehler, sondern eine weitaus umfassendere Gruppe von Kriterien berücksichtigt werden. Wenn Sie Antispoofing und **SPF-Eintrag: Schwerer Fehler** (_MarkAsSpamSpfRecordHardFail_) aktiviert haben, erhalten Sie wahrscheinlich mehr falsch positive Ergebnisse.
+Nein. Diese ASF-Einstellung ist nicht mehr erforderlich. Der Schutz vor Spoofing hält sowohl SPF-Fehler als auch eine viel breitere Gruppe von Kriterien für erforderlich. Wenn Sie Antispoofing und **SPF-Eintrag: Schwerer Fehler** (_MarkAsSpamSpfRecordHardFail_) aktiviert haben, erhalten Sie wahrscheinlich mehr falsch positive Ergebnisse.
 
 Es wird empfohlen, dieses Feature zu deaktivieren, da es fast keine zusätzlichen Vorteile für das Erkennen von Spam-oder Phishing-Nachrichten bietet und stattdessen meistens falsch positive Ergebnisse generiert. Weitere Informationen finden Sie unter [Advanced Spam Filter (ASF) Settings in EoP](advanced-spam-filtering-asf-options.md).
 

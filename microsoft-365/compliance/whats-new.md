@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Unabhängig davon, ob neue Lösungen zum Compliance Center hinzugefügt werden, vorhandene Funktionen auf der Grundlage Ihres Feedbacks aktualisiert werden oder eine aktualisierte Dokumentation bereitgestellt wird, hilft Ihnen Microsoft 365, die ständig wechselnde Compliance-Landschaft zu überwachen. Finden Sie heraus, was wir diesen Monat vorhaben.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 9bccaab4c1dd1ac8b4676939d848c0f1a599d86b
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: 95b23ccdb272c9e91ee4c525fd90679c492efc9b
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798172"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868972"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Neuerungen in der Microsoft 365-Compliance
 
@@ -97,8 +97,6 @@ April enthält ein paar wichtige Updates für unsere Datensatzverwaltungslösung
 
 - Der Abschnitt "Datensatzverwaltung" ist jetzt vollständig im Compliance Center verfügbar. Nutzen Sie aktualisierte Benutzeroberflächen und Funktionen für Dateiplan, Aufbewahrungs Bezeichnungen und Bezeichnungsrichtlinien, Ereignisse und Disposition.
 - Apropos Disposition: Wir haben auch einen [Nachweis über die Disposition](disposition.md#disposition-of-records) für Datensätze in SharePoint und OneDrive ausgeführt. Sie können jetzt eine Liste der Elemente an diesen Orten sehen, die automatisch oder nach einer Dispositions Überprüfung verworfen wurden.
-
-:::image type="content" source="../media/mcc-records-management-page.png" alt-text="Abschnitt "Datensatzverwaltung" im Microsoft 365 Compliance Center":::
 
 ### <a name="sensitivity-labels-preview-auto-labeling-policies"></a>Vertraulichkeits Bezeichnungen: Vorschau Richtlinien für die automatische Kennzeichnung
 

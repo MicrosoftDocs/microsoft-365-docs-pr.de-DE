@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 85d1a7d5a5507e674c4c9bb5c579322a1ca1c4b6
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 46a45eac2fe5d1a19b0d2c40c6c1405f31b7f7f7
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200086"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866707"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Verfolgen des Microsoft Secure Score-Verlaufs und erreichen der Ziele
 
@@ -49,15 +49,15 @@ Um den gesamten Verlauf für diese bestimmte Verbesserungs Aktion anzuzeigen, w�
 
 Auf der Registerkarte **Metriken und Trends** finden Sie mehrere Graphen und Diagramme, die Ihnen einen besseren Einblick in Trends und festgelegte Ziele ermöglichen. Sie können den Datumsbereich für die gesamte Seite der Visualisierungen festlegen. Die Visualisierungen umfassen:
 
-* **Ihre Sicherheitsbewertungszone**: Angepasst, basierend auf den Zielen und Definitionen Ihrer Organisation für die Bewertungsbereiche „Gut“, „OK“ und „Schlecht“.
-* **Verschlechterungstrend**: Eine Zeitachse mit Punkten, die sich aufgrund von Änderungen an der Konfiguration, am Benutzer oder am Gerät verschlechtert haben.  
-* **Vergleichstrend**: Wie die Sicherheitsbewertung Ihrer Organisation im Vergleich mit anderen im zeitlichen Verlauf abschneidet. Diese Ansicht kann Linien enthalten, die den Bewertungsdurchschnitt von Organisationen mit ähnlicher Anzahl von Plätzen darstellt, sowie eine benutzerdefinierte Vergleichsansicht, die Sie festlegen können.
-* **Risikoakzeptanztrend**: Zeitachse mit Verbesserungsmaßnahmen, die mit „Risiko akzeptiert“ gekennzeichnet sind.
-* **Änderungen an der Bewertung**: Die Anzahl der erzielten Punkte, verschlechterter Punkte sowie der sich anschließenden Bewertungsänderung im angegebenen Datumsbereich.
+* **Ihre sichere Ergebnis Zone** – angepasst basierend auf den Zielen und Definitionen Ihrer Organisation für gute, ordnungsgemäße und ungültige Bewertungsbereiche.
+* **Regressions Trend** – eine Zeitskala mit Punkten, die aufgrund von Konfigurations-, Benutzer-oder Geräteänderungen zurückgegangen sind.  
+* **Vergleichs Trend** – wie die sichere Punktzahl Ihres Unternehmens mit anderen im Laufe der Zeit vergleicht. Diese Ansicht kann Linien enthalten, die den Bewertungsdurchschnitt von Organisationen mit ähnlicher Anzahl von Plätzen darstellt, sowie eine benutzerdefinierte Vergleichsansicht, die Sie festlegen können.
+* **Trend zur Risikoakzeptanz** – Zeitskala der Verbesserungs Aktionen, die als "Risiko akzeptiert" gekennzeichnet sind.
+* **Ergebnisänderungen** : Anzahl der erreichten Punkte, zurückgegebene Punkte, zusammen mit der nachfolgenden Ergebnis Änderung im angegebenen Datumsbereich.
 
 ### <a name="compare-your-score-to-organizations-like-yours"></a>Vergleichen Sie Ihre Punktzahl mit Organisationen wie Ihrem
 
-Es gibt zwei Orte, um zu sehen, wie Ihre Gäste mit Organisationen verglichen werden, die Ihnen ähnlich sind.
+Es gibt zwei Möglichkeiten, um zu sehen, wie sich Ihre Partitur mit Organisationen vergleicht, die Ihnen ähnlich sind.
 
 Die erste Stelle befindet sich auf der Registerkarte " **Übersicht** ", auf der Sie ein Vergleichs Balkendiagramm sehen können. Zeigen Sie mit dem Mauszeiger auf das Diagramm, um die Möglichkeit zur Bewertung und Bewertung anzuzeigen.
 
@@ -67,15 +67,15 @@ Der zweite Platz befindet sich auf der Registerkarte **Metriken & Trends** , auf
 
 ![Diagramm der Ergebnisse einer ähnlichen Organisation im Laufe der Zeit](../../media/secure-score/secure-score-comparison-trend.png)
 
-In beiden Diagrammen können Sie **Vergleiche verwalten** auswählen, um die Informationen Ihrer Organisation anzuzeigen und zu bearbeiten. Sie können auch einen benutzerdefinierten Vergleich basierend auf Industrie, Organisationsgröße, Lizenzen und Regionen erstellen. 
+In beiden Diagrammen können Sie **Vergleiche verwalten** auswählen, um die Informationen Ihrer Organisation anzuzeigen und zu bearbeiten. Sie können auch einen benutzerdefinierten Vergleich basierend auf Industrie, Organisationsgröße, Lizenzen und Regionen erstellen.
 
 ## <a name="we-want-to-hear-from-you"></a>Wir freuen uns über Ihr Feedback
 
-Wenn Sie Probleme haben, informieren Sie uns mit einem Beitrag in der Community für [Sicherheit, Datenschutz und Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy). Die Communitybeiträge werden überwacht und wir sind ständig bemüht, Ihnen zu helfen.
+Wenn Sie Probleme haben, lassen Sie es uns wissen, indem Sie in der [Sicherheits-, Datenschutz-& Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) -Community veröffentlichen. Die Communitybeiträge werden überwacht und wir sind ständig bemüht, Ihnen zu helfen.
 
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
 - [Microsoft Secure Score (Übersicht)](microsoft-secure-score.md)
-- [Bewerten Ihrer Sicherheitsposition](microsoft-secure-score-improvement-actions.md)
+- [Zugreifen auf Ihren Sicherheitsstatus](microsoft-secure-score-improvement-actions.md)
 - [Was in Kürze verfügbar ist](microsoft-secure-score-whats-coming.md)
 - [Neuigkeiten](microsoft-secure-score-whats-new.md)

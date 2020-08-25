@@ -15,18 +15,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 987f3a60b514874bd970b93bdcc2c08832345b4b
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 90d9fcc45e768abd5fddef948fcafdaf9e77f5fb
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033986"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866719"
 ---
 # <a name="monitor-and-view-reports-in-the-microsoft-365-security-center"></a>Überwachen und Anzeigen von Berichten im Microsoft 365 Security Center
 
-Das Microsoft 365 Security Center bietet auf einen Blick eine Zusammenfassung des Schutzes und der Sicherheitsstatus in Ihrer Microsoft 365-Umgebung.
+Das Microsoft 365 Security Center bietet eine Zusammenfassung der Schutz-und Sicherheitsstatus in Ihrer Microsoft 365-Umgebung.
 
-Das Sicherheitscenter umfasst einen **Bericht** Abschnitt mit einer Vielzahl von Karten, die eine Reihe von Bereichen abdecken, die Sicherheitsanalysten und Administratoren im Rahmen ihres täglichen Betriebs verfolgen. Bei Drilldowns bieten Karten detaillierte Berichte und in einigen Fällen Verwaltungsoptionen.
+Das Sicherheitscenter umfasst einen **Bericht** Abschnitt mit einer Vielzahl von Karten, die eine Reihe von Bereichen abdecken. Sicherheitsanalysten und Administratoren können die Karten im Rahmen ihrer täglichen Vorgänge nachverfolgen. Bei Drilldowns bieten Karten detaillierte Berichte und in einigen Fällen Verwaltungsoptionen.
 
 ## <a name="customize-views"></a>Anpassen von Ansichten
 
@@ -37,7 +37,7 @@ Karten werden standardmäßig in folgende Kategorien unterteilt:
 * [Geräte](monitor-devices.md) – Computer, Mobiltelefone und andere Geräte
 * [Apps](monitor-apps.md) -Programme und angefügte Onlinedienste
 
-Wechseln Sie zu **Gruppieren nach Thema**, um die Karten neu anzuordnen und in folgende Gruppen zu gruppieren:
+Wechseln Sie zu **Gruppieren nach Thema**, um die Karten neu anzuordnen und in die folgenden Themen zu gruppieren:
 
 * **Risiko** Karten, die Entitäten wie Konten und Geräte hervorheben, die möglicherweise gefährdet sind. Diese Karten heben auch mögliche Risikoquellen hervor, beispielsweise neue Bedrohungs Kampagnen und privilegierte Cloud-apps.  
 * **Erkennungs Trends** -Karten, die neue Bedrohungserkennungen, Anomalien und Richtlinienverletzungen hervorheben

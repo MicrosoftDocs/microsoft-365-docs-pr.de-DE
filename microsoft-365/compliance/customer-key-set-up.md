@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie den Kundenschlüssel für Microsoft 365 für Exchange Online-, Skype for Business-, SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Dateien einrichten.
-ms.openlocfilehash: 87c18c1695d2963fc8a0c064d34d2b6cdc14199c
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: 0743b4339dae8e70960293f51a7869dc61fea606
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845833"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868890"
 ---
 # <a name="set-up-customer-key"></a>Einrichten des Kunden Schlüssels
 
@@ -93,7 +93,7 @@ Führen Sie diese Aufgaben in Azure Key Vault aus. Sie müssen diese Schritte au
   
 ### <a name="create-two-new-azure-subscriptions"></a>Zwei neue Azure-Abonnements erstellen
 
-Kundenschlüssel erfordert zwei Azure-Abonnements. Als bewährte Methode empfiehlt Microsoft, neue Azure-Abonnements für die Verwendung mit Customer Key zu erstellen. Azure Key-Tresorschlüssel können nur für Anwendungen in demselben Azure-Active Directory (AAD)-Mandanten autorisiert werden, Sie müssen die neuen Abonnements mit demselben Azure AD Mandanten erstellen, der in Ihrer Organisation verwendet wird, in der das DEPs zugewiesen wird. Verwenden Sie beispielsweise Ihr Arbeits-oder Schulkonto, das über globale Administratorrechte in Ihrer Organisation verfügt. Weitere Informationen zu den einzelnen Arbeitsschritten finden Sie unter [Als Unternehmen für Azure registrieren](https://azure.microsoft.com/documentation/articles/sign-up-organization/).
+Kundenschlüssel erfordert zwei Azure-Abonnements. Als bewährte Methode empfiehlt Microsoft, neue Azure-Abonnements für die Verwendung mit Customer Key zu erstellen. Azure Key-Tresorschlüssel können nur für Anwendungen in demselben Azure-Active Directory (Microsoft Azure Active Directory)-Mandanten autorisiert werden, Sie müssen die neuen Abonnements mit dem gleichen Azure AD Mandanten erstellen, der in Ihrer Organisation verwendet wird, in der die DEPs zugewiesen wird. Verwenden Sie beispielsweise Ihr Arbeits-oder Schulkonto, das über globale Administratorrechte in Ihrer Organisation verfügt. Weitere Informationen zu den einzelnen Arbeitsschritten finden Sie unter [Als Unternehmen für Azure registrieren](https://azure.microsoft.com/documentation/articles/sign-up-organization/).
   
 > [!IMPORTANT]
 > Für Customer Key sind zwei Schlüssel für jede Daten- Verschlüsselungsrichtlinie (DEP) erforderlich. Zu diesem Zweck müssen Sie zwei Azure-Abonnements erstellen. Als bewährte Methode empfiehlt Microsoft, dass separate Mitglieder Ihrer Organisation jeweils einen Schlüssel für jedes Abonnement konfigurieren. Darüber hinaus sollten diese Azure-Abonnements nur zum Verwalten von kryptografischen Schlüsseln für Office 365 verwendet werden. Auf diese Weise ist Ihre Organisation geschützt, falls einer ihrer Betreiber versehentlich, absichtlich oder in böswilliger Absicht die Schlüssel, für die Sie verantwortlich sind, löscht oder auf andere Weise unsachgemäß handhabt. <br/> Es wird empfohlen, dass Sie neue Azure-Abonnements einrichten, die ausschließlich zum Verwalten von Azure Key Vault-Ressourcen für die Verwendung mit Customer Key genutzt werden. Es gibt praktisch keine Beschränkung hinsichtlich der Anzahl von Azure-Abonnements, die Sie für Ihre Organisation erstellen können. Durch die Nutzung dieser bewährten Methoden können Sie die Auswirkungen von menschlichen Fehlern bei der Verwaltung der von Customer Key genutzten Ressourcen minimieren.

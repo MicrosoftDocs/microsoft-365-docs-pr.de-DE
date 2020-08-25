@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Übersicht über die Microsoft Produktivitätsbewertung
-ms.openlocfilehash: a93ceef3833e1e55f6e3bb979fd93aa3d90ded37
-ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
+ms.openlocfilehash: 66ab028282fb8c74087713083e43e22cf6708897
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45101647"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868855"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Microsoft Productivity Score (Vorschau)
 
@@ -42,9 +42,9 @@ Wir stellen Daten, Einblicke und Empfehlungen in zwei Bereichen zur Verfügung:
 
     Diese Einblicke bieten wir, da Personen, die Online zusammenarbeiten, Zeit sparen. Wenn Sie die Freiheit haben, auf einem Gerät zu arbeiten, sind Sie produktiver und zufriedener. Wenn Sie auf flexible Weise kommunizieren können, sind Sie effizienter, bilden bessere Beziehungen und Ihre Organisation ist einheitlicher. Hinweise finden Sie unter [Forrester Report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
-- **Technologie Erfahrung:** Die Produktivität hängt von der zuverlässigen und leistungsfähigen Technologie sowie der effizienten Nutzung von Microsoft 365 ab. Wir stellen Endpoint Analytics zur Verfügung, die Ihnen Einblicke und Empfehlungen zum Einrichten und starten von Geräten gibt und Microsoft 365-Netzwerkkonnektivitäts-Einblicke für Ihre Organisation bereitstellt.
+- **Technologie Erfahrung:** Die Produktivität hängt von der zuverlässigen und leistungsfähigen Technologie sowie der effizienten Nutzung von Microsoft 365 ab. Wir bieten eine [Endpunktanalyse](https://aka.ms/endpointanalytics), die Ihnen hilft zu verstehen, wie die Produktivität Ihrer Benutzer durch Leistungs-und Integritätsprobleme mit ihrer Endpunkt Hardware und-Software beeinträchtigt werden kann, und gleichzeitig Empfohlene Maßnahmen zur Korrektur dieser Funktionen bietet. und wir bieten Einblicke in die Microsoft 365-Netzwerkkonnektivität für Ihre Organisation.
 
-Weitere Informationen zur Endpunktanalyse finden Sie [unter Übersicht über die Netzwerkkonnektivität](https://docs.microsoft.com/office365/enterprise/office-365-networking-overview).
+Eine Übersicht und erforderliche Details finden Sie unter [Was ist Endpoint Analytics](https://docs.microsoft.com/mem/analytics/overview) . Weitere Informationen zu den Einblicken in Microsoft 365 Netzwerkkonnektivität finden Sie [unter Übersicht über die Netzwerkkonnektivität](https://docs.microsoft.com/office365/enterprise/office-365-networking-overview).
   
 
 ## <a name="how-the-score-is-calculated"></a>Berechnung der Bewertung

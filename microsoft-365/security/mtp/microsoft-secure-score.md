@@ -1,5 +1,5 @@
 ---
-title: Microsoft Secure Score
+title: Microsoft-Sicherheitsbewertung
 description: Beschreibt Microsoft Secure Score im Microsoft 365 Security Center, wie Sie Ihre Sicherheitsposition verbessern und welche Sicherheitsadministratoren erwarten können.
 keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Sicherheitsbewertung, Security Center, Verbesserungsmaßnahmen
 ms.prod: microsoft-365-enterprise
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 862a25eddda6048349df937641914377cb25874f
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 304967a06c1fec2df6968f12be30ef3001fdb762
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200038"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866871"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft-Sicherheitsbewertung
 
@@ -45,9 +45,15 @@ Organisationen erhalten Zugriff auf zuverlässige Visualisierungen von Metriken 
 
 ## <a name="how-it-works"></a>Funktionsweise
 
-Sie erhalten Punkte für die Konfiguration empfohlener Sicherheitsfunktionen, die Ausführung sicherheitsrelevanter Aufgaben oder die Behandlung von Verbesserungsmaßnahmen mit einer Drittanbieteranwendung oder -software oder einer alternativen Korrektur. Einige Verbesserungsmaßnahmen geben nur Punkte, wenn sie vollständig abgeschlossen sind, und einige geben schon Punkte, auch wenn sie nur für einige Geräte oder Benutzer abgeschlossen sind. Wenn Sie eine der Verbesserungsmaßnahmen nicht ausführen können oder möchten, können Sie sich entschließen, das Risiko bzw. das Restrisiko zu übernehmen.
+Für die folgenden Aktionen werden Punkte angegeben:
 
-Wenn Sie über eine Lizenz für eines der unterstützten Microsoft-Produkte verfügen, werden Ihnen Empfehlungen für diese Produkte angezeigt. Wir zeigen Ihnen den vollständigen Überblick über mögliche Verbesserungen für ein Produkt, unabhängig von Lizenzedition, Abonnement oder Plan, damit Sie bewährte Methoden für die Sicherheit verstehen und Ihre Punktzahl verbessern können. Ihre absolute Sicherheitsposition wird durch Secure Score dargestellt, was unabhängig von den Lizenzen, die Ihre Organisation für ein bestimmtes Produkt besitzt, gleich bleibt. Bitte bedenken Sie: Sicherheit sollte mit Benutzerfreundlichkeit in Einklang gebracht werden, und nicht jede Empfehlung funktioniert für Ihre Umgebung.
+- Konfigurieren von empfohlenen Sicherheitsfeatures
+- Durchführen von sicherheitsbezogenen Aufgaben
+- Beheben der Verbesserungs Aktion mit einer Anwendung oder Software eines Drittanbieters oder einer alternativen Minderung
+
+Einige Verbesserungs Aktionen geben nur dann Punkte an, wenn Sie vollständig abgeschlossen sind. Einige geben partielle Punkte an, wenn Sie für einige Geräte oder Benutzer abgeschlossen sind. Wenn Sie eine der Verbesserungs Aktionen nicht ausführen können oder möchten, können Sie das Risiko oder das verbleibende Risiko akzeptieren.
+
+Wenn Sie über eine Lizenz für eines der unterstützten Microsoft-Produkte verfügen, werden Ihnen Empfehlungen für diese Produkte angezeigt. Wir zeigen Ihnen den vollständigen Umfang möglicher Verbesserungen für ein Produkt, unabhängig von Lizenzedition, Abonnement oder Plan. Auf diese Weise können Sie bewährte Methoden für die Sicherheit verstehen und Ihre Punktzahl verbessern. Ihre absolute Sicherheitsposition, dargestellt durch Secure Score, bleibt gleich, unabhängig davon, welche Lizenzen Ihre Organisation für ein bestimmtes Produkt besitzt. Bitte bedenken Sie: Sicherheit sollte mit Benutzerfreundlichkeit in Einklang gebracht werden, und nicht jede Empfehlung funktioniert für Ihre Umgebung.
 
 Ihre Bewertung wird in Echtzeit aktualisiert, um die Informationen auf den Seiten Visualisierung und Verbesserungsmaßnahmen darzustellen. Sicherheitsbewertung wird auch täglich synchronisiert, um Systemdaten zu Ihren erreichten Punkten für jede Aktion zu erhalten.
 
@@ -61,13 +67,15 @@ Ihre Bewertung wird in Echtzeit aktualisiert, um die Informationen auf den Seite
 
 ### <a name="how-improvement-actions-are-scored"></a>Wie Verbesserungsmaßnahmen bewertet werden
 
-Jede Verbesserungsmaßnahme hat einen Wert von höchstens 10 Punkten. Die meisten werden auf binäre Art bewertet – wenn Sie die Verbesserungsmaßnahme umsetzen, wie z. B. eine neue Richtlinie erstellen oder eine bestimmte Einstellung aktivieren –, erhalten Sie die volle Punktzahl. Bei anderen Verbesserungsmaßnahmen werden Punkte als Prozentsatz der Gesamtkonfiguration gegeben. Wenn beispielsweise die Verbesserungs Aktion besagt, dass Sie 10 Punkte erhalten, indem Sie alle Ihre Benutzer mit mehrstufiger Authentifizierung schützen und nur 50 von 100 Gesamtanzahl der Benutzer geschützt haben, erhalten Sie einen Teil der Punktzahl von 5 Punkten (50 Protected/100 total * 10 max PTS = 5 Pkt Partial Score).
+Jede Verbesserungs Aktion ist 10 oder mehr Punkte Wert, und die meisten werden auf binäre Weise bewertet. Wenn Sie die Verbesserungs Aktion implementieren, wie Sie eine neue Richtlinie erstellen oder eine bestimmte Einstellung aktivieren, erhalten Sie 100% der Punkte. Bei anderen Verbesserungsmaßnahmen werden Punkte als Prozentsatz der Gesamtkonfiguration gegeben.
+
+Beispielsweise besagt eine Verbesserungs Aktion, dass Sie 10 Punkte erhalten, indem Sie alle Ihre Benutzer mit mehrstufiger Authentifizierung schützen. Sie haben nur 50 von 100 Gesamtanzahl der Benutzer geschützt, sodass Sie einen Teil der Punktzahl von 5 Punkten erhalten (50 Protected/100 total * 10 max PTS = 5 Pkt.).
 
 ### <a name="products-included-in-secure-score"></a>Produkte in Sicherheitsbewertung
 
-Derzeit gibt es Empfehlungen für Microsoft 365 (einschließlich Exchange Online), Azure AD, Microsoft Defender ATP, Azure ATP und Cloud App Security. Empfehlungen für andere Sicherheitsprodukte werden in Kürze verfügbar sein. Die Empfehlungen umfassen nicht alle Angriffsflächen, die jedem Produkt zugeordnet sind, sind aber ein guter Ausgangsbasis. Sie können die Verbesserungsmaßnahmen auch als „über Drittanbieter abgedeckt“ oder „ durch alternative Korrektur abgedeckt“ markieren.
+Derzeit gibt es Empfehlungen für Microsoft 365 (einschließlich Exchange Online), Azure Active Directory, Microsoft Defender ATP, Azure ATP und Cloud-App-Sicherheit. Empfehlungen für andere Sicherheitsprodukte werden in Kürze verfügbar sein. Die Empfehlungen decken nicht alle Angriffsflächen ab, die jedem Produkt zugeordnet sind, sind jedoch ein guter Ausgangswert. Sie können die Verbesserungsmaßnahmen auch als „über Drittanbieter abgedeckt“ oder „ durch alternative Korrektur abgedeckt“ markieren.
 
-### <a name="security-defaults"></a>Standardsicherheitseinstellungen 
+### <a name="security-defaults"></a>Sicherheitsstandards
 
 Microsoft Secure Score enthält aktualisierte Verbesserungs Aktionen zur Unterstützung von [Sicherheitsstandards in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), die es einfacher machen, Ihre Organisation mit vorkonfigurierten Sicherheitseinstellungen für häufige Angriffe zu schützen.
 
@@ -96,7 +104,7 @@ Mit Lese- und Schreibzugriff können Sie Änderungen vornehmen und mit Sicherhei
 
 ### <a name="read-only-roles"></a>Schreibgeschützte Rollen
 
-Bei schreibgeschütztem Zugriff können Sie den Status oder die Notizen für eine Verbesserungsmaßnahme nicht bearbeiten, sowie keine Ergebniszonen oder benutzerdefinierte Vergleiche bearbeiten.
+Mit schreibgeschütztem Zugriff können Sie den Status oder die Notizen für eine Verbesserungs Aktion nicht bearbeiten, Bewertungs Zonen bearbeiten oder benutzerdefinierte Vergleiche bearbeiten.
 
 * Helpdesk-Administrator
 * Benutzeradministrator
@@ -107,15 +115,15 @@ Bei schreibgeschütztem Zugriff können Sie den Status oder die Notizen für ein
 
 ## <a name="risk-awareness"></a>Risikobewusstsein
 
-Die Microsoft-Sicherheitsbewertung ist eine numerische Zusammenfassung Ihres Sicherheitsstatus, die auf Systemkonfigurationen, Benutzerverhalten und anderen sicherheitsrelevanten Maßstäben basiert. Hierbei handelt es sich nicht um eine absolute Messung, wie wahrscheinlich eine Sicherheitsverletzung Ihres System oder Ihrer Daten ist. Vielmehr stellt Sie das Ausmaß dar, in dem Sie Sicherheitskontrollen in Ihrer Microsoft-Umgebung eingeführt haben, die das Risiko einer Sicherheitsverletzung ausgleichen können. Kein Onlinedienst ist vollkommen immun gegen Sicherheitsverstöße, und Sicherheitsbewertung sollte in keiner Weise als Garantie gegen Sicherheitsverstöße interpretiert werden.
+Microsoft Secure Score ist eine numerische Zusammenfassung Ihrer Sicherheitsposition basierend auf Systemkonfigurationen, Benutzerverhalten und anderen sicherheitsbezogenen Messungen. Es ist keine absolute Maßeinheit dafür, wie wahrscheinlich ein System oder Daten verletzt werden. Sie stellt vielmehr das Ausmaß dar, in dem Sie Sicherheitssteuerelemente in Ihrer Microsoft-Umgebung übernommen haben, um das Risiko von Verstößen auszugleichen. Kein Onlinedienst ist vollständig immun gegen Sicherheitsverletzungen, und Secure Score sollte nicht als Garantie gegen Sicherheitsverletzungen in irgendeiner Weise interpretiert werden.
 
 ## <a name="we-want-to-hear-from-you"></a>Wir freuen uns über Ihr Feedback
 
-Wenn Sie Probleme haben, informieren Sie uns mit einem Beitrag in der Community für [Sicherheit, Datenschutz und Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy). Die Communitybeiträge werden überwacht und wir sind ständig bemüht, Ihnen zu helfen.
+Wenn Sie Probleme haben, lassen Sie es uns wissen, indem Sie in der [Sicherheits-, Datenschutz-& Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) -Community veröffentlichen. Die Communitybeiträge werden überwacht und wir sind ständig bemüht, Ihnen zu helfen.
 
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
-- [Bewerten Ihrer Sicherheitsposition](microsoft-secure-score-improvement-actions.md)
+- [Zugreifen auf Ihren Sicherheitsstatus](microsoft-secure-score-improvement-actions.md)
 - [Verfolgen des Microsoft Secure Score-Verlaufs und erreichen der Ziele](microsoft-secure-score-history-metrics-trends.md)
 - [Was in Kürze verfügbar ist](microsoft-secure-score-whats-coming.md)
 - [Neuigkeiten](microsoft-secure-score-whats-new.md)
