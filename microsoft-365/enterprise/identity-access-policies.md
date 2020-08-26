@@ -1,13 +1,13 @@
 ---
 title: Allgemeine Richtlinien für Identitäts-und Geräte Zugriff – Microsoft 365 für Unternehmen | Microsoft-Dokumente
 description: Beschreibt die Richtlinien für Empfehlungen von Microsoft zur Anwendung von Identitäts- und Gerätezugriffsrichtlinien und -konfigurationen
-author: BrendaCarter
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 676a37752e24b238117ec238bc171b9df723e247
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 699bc04c8e286c004e1f47ae6825ae311434d9cb
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685974"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898116"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Allgemeine Identitäts- und Gerätezugriffsrichtlinien
 In diesem Artikel werden die allgemeinen empfohlenen Richtlinien für die Sicherung des Zugriffs auf Cloud-Dienste beschrieben, einschließlich lokaler Anwendungen, die mit Azure AD-Anwendungs Proxy veröffentlicht werden. 
@@ -282,7 +282,7 @@ Die folgenden Einstellungen werden für Windows 10 empfohlen.
 |Typ|Eigenschaften|Werte|Hinweise|
 |:---|:---------|:-----|:----|
 |Kennwort|Anfordern eines Kennworts zum Entsperren mobiler Geräte|Erforderlich||
-||Einfache Kennwörter|Block||
+||Einfache Kennwörter|Blockieren||
 ||Kennwort-Typ|Geräte Standard||
 ||Minimale Kennwortlänge|6 ||
 ||Maximale Anzahl von Minuten Inaktivität, bevor Kennwort erforderlich ist|15 |Diese Einstellung wird für die Android-Versionen 4,0 und höher oder für Knox 4,0 und höher unterstützt. Für IOS-Geräte wird diese für IOS 8,0 und höher unterstützt.|
@@ -302,7 +302,7 @@ Die folgenden Einstellungen werden für Windows 10 empfohlen.
 
 |Typ|Eigenschaften|Werte|Hinweise|
 |:---|:---------|:-----|:----|
-|Microsoft Defender Advanced Threat Protection-Regeln|Erfordern, dass das Gerät auf oder unter dem Computer-Risk-Score liegt|Mittel||
+|Microsoft Defender Advanced Threat Protection-Regeln|Erfordern, dass das Gerät auf oder unter dem Computer-Risk-Score liegt|Medium||
 
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Erfordern Sie kompatible PCs (aber keine kompatiblen Telefone und Tablets)

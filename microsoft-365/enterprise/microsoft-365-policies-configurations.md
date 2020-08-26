@@ -1,14 +1,14 @@
 ---
 title: Konfigurationen für den Identitäts-und Geräte Zugriff – Microsoft 365 für Unternehmen
 description: Beschreibt Microsoft-Empfehlungen und Kernkonzepte für die Bereitstellung von Richtlinien und Konfigurationen für sichere e-Mails, Dokumente und apps.
-author: brendacarter
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 09/11/2018
 f1.keywords:
 - NOCSH
-ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
@@ -17,12 +17,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: f39b5d72de630674ea6d58c30eadf211917de10d
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: e76ed8869f2e3bc3198eeff6dc4fcec777d0ce26
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686626"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898164"
 ---
 # <a name="identity-and-device-access-configurations"></a>Konfigurationen für den Identitäts- und Gerätezugriff
 
@@ -64,15 +64,14 @@ Jede Branche verfügt auch über ihren eigenen Satz von spezialisierten Vorschri
 
 In diesem Leitfaden erfahren Sie, wie Sie den Schutz von Identitäten und Geräten für jede dieser Schutzebenen implementieren. Verwenden Sie diese Anleitung als Ausgangspunkt für Ihre Organisation, und passen Sie die Richtlinien an die spezifischen Anforderungen Ihrer Organisation an.
 
-Es ist wichtig, konsistente Schutzebenen für Daten, Identitäten und Geräte zu verwenden. Wenn Sie beispielsweise diesen Leitfaden implementieren, müssen Sie Ihre Daten auf vergleichbaren Ebenen schützen. Diese Architekturmodelle zeigen Ihnen, welche Funktionen vergleichbar sind.
+Es ist wichtig, konsistente Schutzebenen für Daten, Identitäten und Geräte zu verwenden. Wenn Sie beispielsweise diesen Leitfaden implementieren, müssen Sie Ihre Daten auf vergleichbaren Ebenen schützen. 
 
-**Identität- und Geräteschutz für Office 365**<br/>
+Der **Identitäts-und Geräteschutz für Office 365** Architekturmodell zeigt Ihnen, welche Funktionen vergleichbar sind.
+
 ![Miniaturansicht für Poster "Identitäts-und Geräteschutz für Office 365"](../media/O365_Identity_device_protection_thumb.png)<br/>
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=55032)
 
-**Lösungen zum Schutz von Dateien in Office 365**<br/>
-![Miniaturansicht für Poster "Dateischutz Lösungen in Office 365"](../media/24be68b5-d852-4fdb-94ad-94491a19edd8.png)<br/>
-[PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
+Weitere Informationen finden Sie unter [Deploy Information Protection for Data Privacy Regulations](../solutions/information-protection-deploy.md) Solution zum Schutz der in Microsoft 365 gespeicherten Informationen.
 
 ## <a name="security-and-productivity-trade-offs"></a>Kompromisse in den Bereichen Sicherheit und Produktivität
 

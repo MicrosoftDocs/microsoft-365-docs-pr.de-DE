@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 95bf8ca693ac4b45be569870ff732c4053be39d2
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: 089d9dc79da568a43c1d5701d7bc52d9bed0f4f5
+ms.sourcegitcommit: c76c025fe75cd9c06eccbf9c7fc887b09da36659
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597497"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46903871"
 ---
 # <a name="new-microsoft-edge-app"></a>Neue Microsoft Edge-App
 
@@ -25,13 +25,13 @@ Der neue [Microsoft Edge-Browser](https://www.microsoft.com/edge) bietet erstkla
 
 Um Ihre verwalteten Desktop Geräte von Microsoft auf den neuen Microsoft Edge-Browser zu migrieren, müssen Sie ein IT-Support Ticket über das Microsoft Managed Desktop Portal einreichen. Wenn Sie das Ticket archivieren, stellen wir den Edge stable-Kanal für die Test Gruppe bereit und stellen ihn dann alle 24 Stunden in jeder nachfolgenden Bereitstellungsgruppe bereit. Um die Bereitstellung anzuhalten, müssen Sie ein weiteres Ticket anfordern, in dem Vorgänge angehalten werden.
 
-[Beta Kanal] ( https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) ist auch auf Anfrage zur repräsentativen Validierung in Ihrer Organisation verfügbar. Microsoft Managed Desktop stellt die Anwendung nach Bedarf für den Test und die ersten Gruppen bereit, sodass alle diese Benutzer den Beta Kanal zusätzlich zum stabilen Kanal haben. Für alle weiteren Benutzer, die Zugriff auf den Beta Kanal benötigen, fügen Sie diese bitte der modernen Gruppe " **Workplace-Edge Beta users** " hinzu und lassen Sie Sie über das Unternehmens Portal installieren.
+Der [Beta Kanal](https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) steht auch auf Anfrage zur repräsentativen Validierung in Ihrer Organisation zur Verfügung. Microsoft Managed Desktop stellt die Anwendung nach Bedarf für den Test und die ersten Gruppen bereit, sodass alle diese Benutzer den Beta Kanal zusätzlich zum stabilen Kanal haben. Für alle weiteren Benutzer, die Zugriff auf den Beta Kanal benötigen, fügen Sie diese bitte der modernen Gruppe " **Workplace-Edge Beta users** " hinzu und lassen Sie Sie über das Unternehmens Portal installieren.
 
 ## <a name="updates-to-microsoft-edge"></a>Updates für Microsoft Edge
 
 Microsoft Managed Desktop stellt den [stabilen Kanal](https://docs.microsoft.com/deployedge/microsoft-edge-channels#stable-channel) von Microsoft Edge bereit, der etwa alle sechs Wochen automatisch aktualisiert wird. Updates auf dem stabilen Kanal werden [schrittweise](https://docs.microsoft.com/deployedge/microsoft-edge-update-progressive-rollout) von der Microsoft Edge-Produktgruppe ausgeführt, um die beste Benutzerfreundlichkeit sicherzustellen. 
 
-[Beta Kanal] ( https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) wird auf Geräten sowohl im Test als auch in den ersten Gruppen zur repräsentativen Validierung innerhalb der Organisation bereitgestellt. Dieser Kanal wird vollständig unterstützt und wird mit neuen Features etwa alle sechs Wochen automatisch aktualisiert.
+Der [Beta Kanal](https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) wird auf Geräten sowohl im Test als auch in den ersten Gruppen zur repräsentativen Validierung innerhalb der Organisation bereitgestellt. Dieser Kanal wird vollständig unterstützt und wird mit neuen Features etwa alle sechs Wochen automatisch aktualisiert.
 
 Um sicherzustellen, dass Microsoft Edge ordnungsgemäß aktualisiert wird, sollten Sie die Microsoft-Edge- [Update-Richtlinien](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)nicht ändern.
 
@@ -49,7 +49,7 @@ Die Sicherheitsbasis für Microsoft Edge auf Microsoft Managed Desktop-Geräten 
 #### <a name="extension-installation-blocklist"></a>Erweiterungs Installations Blockliste
 **Standardwert:** Alle
 
-Microsoft Managed Desktop legt diese Richtlinie fest, um zu verhindern, dass Chrome-Erweiterungen auf verwalteten Endpunkten installiert werden. Es gibt bekannte Risiko sassociated mit dem Chromium-Erweiterungsmodell, einschließlich Datenverlust Schutz, Datenschutz und anderen Risiken, die Geräte gefährden können. 
+Microsoft Managed Desktop legt diese Richtlinie fest, um zu verhindern, dass Chrome-Erweiterungen auf verwalteten Endpunkten installiert werden. Es gibt bekannte Risiken im Zusammenhang mit dem Chromium-Erweiterungsmodell, einschließlich Datenverlust Schutz, Datenschutz und anderen Risiken, die Geräte gefährden können. 
 
 #### <a name="allow-user-level-native-messaging-hosts-installed-without-admin-permissions"></a>Zulassen von systemeigenen Messaginghosts auf Benutzerebene (installiert ohne Administratorberechtigungen)
 
@@ -71,7 +71,7 @@ Wenn Sie die unsicherste TLS 1,1 verwenden möchten, können Sie dies anfordern.
 
 Es wird nicht empfohlen, diese Einstellung zu aktivieren, da Benutzer Websites mit SSL-Fehlern besuchen können.
 
-### <a name="microsoft-defender-smart-screen"></a>Smart Screen von Microsoft Defender
+### <a name="microsoft-defender-smartscreen"></a>Microsoft Defender-SmartScreen
 
 #### <a name="configure-windows-defender-smartscreen"></a>Konfigurieren von Windows Defender SmartScreen
 

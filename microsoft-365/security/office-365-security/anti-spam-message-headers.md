@@ -16,16 +16,24 @@ ms.collection:
 - M365-security-compliance
 description: Administratoren können mehr über die Nachrichtenkopfzeilen erfahren, die Nachrichten von Exchange Online Protection (EOP) hinzugefügt werden. Diese Kopfzeilenfelder enthalten Informationen zu der Nachricht und deren Verarbeitung.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5400bdbc9d3eef0b8005619f9820a9e71b829a5a
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: a5423ccf658843ab22f30dcef99fe0a0c34d512f
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825197"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46867187"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Antispam-Nachrichtenkopfzeilen in Microsoft 365
 
-n Microsoft 365-Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection-Organisationen (EoP) ohne Exchange Online-Postfächer scannt EoP jede eingehende E-Mail-Nachricht und fügt zu dieser die **X-Forefront-Antispam-Report**-Kopfzeile hinzu. Die Felder in dieser Kopfzeile tragen dazu bei, für Administratoren Informationen zu der Nachricht und deren Verarbeitung bereitzustellen. Die Felder in der **X-Microsoft-Antispam-**-Kopfzeile bieten Zusatzinformationen zu „Massenmails“ und „Phishing“. Neben diesen beiden Kopfzeilen fügt Exchange Online Protection außerdem für jede verarbeitete E-Mail die E-Mail-Authentifizierungsergebnisse in die Kopfzeile mit den **Authentifizierungsergebnissen** ein.
+In allen Microsoft 365-Organisationen überprüft Exchange Online Protection (EOP) alle eingehenden Nachrichten auf Spam, Malware und andere Bedrohungen. Die Ergebnisse dieser Scans werden den folgenden Kopfzeilenfeldern in Nachrichten hinzugefügt:
+
+- **X-Forefront-Antispam-Report**: enthält Informationen zur Nachricht und ihrer Verarbeitung.
+
+- **X-Microsoft-Antispam**: liefert zusätzliche Informationen über Massensendungen und Phishing.
+
+- **Authentifizierungsergebnisse**: enthält Informationen zu den Ergebnissen von SPF, DKIM und DMARC (E-Mail-Authentifizierung).
+
+In diesem Artikel wird beschrieben, was in diesen Kopfzeilenfeldern verfügbar ist.
 
 Informationen dazu, wie Sie einen E-Mail-Nachrichtenkopf in verschiedenen E-Mail-Clients anzeigen, finden Sie unter [Anzeigen von Internet Nachrichtenkopfzeilen in Outlook](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c).
 
@@ -34,42 +42,42 @@ Informationen dazu, wie Sie einen E-Mail-Nachrichtenkopf in verschiedenen E-Mail
 
 ## <a name="x-forefront-antispam-report-message-header-fields"></a>Felder der Nachrichtenkopfzeile X-Forefront-Antispam-Report
 
-Wenn Sie die Nachrichtenheader-Informationen haben, suchen Sie nach dem **X-Forefront-Antispam-Report**-Header. In diesem Header sind mehrere Felder und Wertepaare vorhanden. Diese sind durch Semikolons getrennt (;). Beispiel:
+Wenn Sie die Nachrichtenheader-Informationen haben, suchen Sie nach dem **X-Forefront-Antispam-Report**-Header. In dieser Kopfzeile sind mehrere Felder und Wertepaare vorhanden, die durch Semikolons (;) getrennt sind. Zum Beispiel:
 
 `...CTRY:;LANG:hr;SCL:1;SRV:;IPV:NLI;SFV:NSPM;PTR:;CAT:NONE;SFTY:;...`
 
 Die einzelnen Felder und Werte werden in der folgenden Tabelle beschrieben.
 
 > [!NOTE]
-> Der Header **X-Forefront-Antispam-Report** enthält viele verschiedene Kopfzeilenfelder und Werte. Andere Felder in diesem Header, die nicht in der Tabelle beschrieben werden, werden ausschließlich vom Microsoft-Antispamteam zu Diagnosezwecken verwendet.
+> Die **X-Forefront-Antispam-Report**-Kopfzeile enthält viele verschiedene Kopfzeilenfelder und Werte. Felder, die nicht in der Tabelle beschrieben werden, werden ausschließlich vom Microsoft-Antispamteam zu Diagnosezwecken verwendet.
 
 ****
 
-|Kopfzeilenfeld|Beschreibung|
+|Feld|Beschreibung|
 |---|---|
-|ARC|Das ARC-Protokoll weist die folgenden Header auf: <ul><li>AAR: Zeichnet den Inhalt des Authentifizierungsergebnis-Headers aus DMARC auf.</li><li>AMS: Dieser Header enthält kryptographische Signaturen der Nachricht.</li><li>AS: Enthält kryptographische Signaturen der Nachrichtenkopfzeilen. Dieser Header enthält einen Tag einer Kettenüberprüfung mit der Bezeichnung "cv=", das das Ergebnis der Kettenüberprüfung als **none**, **pass** oder **fail** enthält.</li></ul>|
-|CAT:|Die Kategorie der Schutzrichtlinie, die auf die Nachricht angewendet wurde: <ul><li>BULK: Massenaktion</li><li>DIMP: Domänenidentitätswechsel</li><li>GIMP: Mailbox Intelligence-basierter Identitätswechsel</li><li>HPHSH oder HPHISH : Hohe Phishing-Wahrscheinlichkeit</li><li>HSPM: Spam mit hoher Vertrauenswürdigkeit</li><li>MALW: Malware</li><li>PHSH: Phishing</li><li>SPM: Spam</li><li>SPOOF: Spoofing</li><li>UIMP: Benutzeridentitätswechsel</li><li>AMP: Antischadsoftware</li><li>SAP: Sichere Anlagen</li><li>OSPM: Ausgehende Spamnachrichten</li></ul><br/>Eine eingehende Nachricht kann durch mehrere Schutzformen und mehrere Erkennungsscans gekennzeichnet werden. Richtlinien haben unterschiedliche Prioritäten, und die Richtlinie mit der höchsten Priorität wird zuerst angewendet. Weitere Informationen finden Sie unter [Welche Richtlinie gilt, wenn mehrere Schutzmethoden und Erkennungsscans für Ihre E-Mails ausgeführt werden?](how-policies-and-protections-are-combined.md)|
-|CIP: \[IP-Adresse\]|Die IP-Verbindungsadresse. Sie können diese IP-Adresse in der Liste der zugelassenen IP-Adressen oder in der IP-Sperrliste verwenden. Weitere Informationen finden Sie unter [Konfigurieren der Richtlinie für Verbindungsfilter](configure-the-connection-filter-policy.md).|
-|CTRY|Das anhand der Verbindungs-IP-Adresse ermittelte Quellland, die nicht notwendigerweise mit der ursprünglichen Sende-IP-Adresse übereinstimmen muss.|
-|H:\[helostring\]|Die HELO- oder EHLO-Zeichenfolge des verbindenden E-Mail-Servers.|
-|IPV:CAL|Die Nachricht wurde von der Spamfilterung übersprungen, da sich die IP-Quelladresse in der Liste der zugelassenen IP-Adressen befand. Weitere Informationen finden Sie unter [Konfigurieren der Richtlinie für Verbindungsfilter](configure-the-connection-filter-policy.md).|
-|IPV:NLI|Die IP-Adresse war nicht in einer IP-Zuverlässigkeitsliste aufgeführt.|
-|LANG|Die Sprache, in der die Nachricht verfasst wurde, wie im Ländercode angegeben (z. B. ru_RU für Russisch).|
-|PTR:\[ReverseDNS\]|Der PTR-Eintrag (auch bekannt als Reverse-DNS-Lookup) der Quell-IP-Adresse.|
-|SCL|Die SCL-Bewertung (Spam Confidence Level) der Nachricht. Ein höherer Wert gibt an, dass die Nachricht mit größerer Wahrscheinlichkeit Spam ist. Weitere Informationen finden Sie unter [SCL-Bewertungen (Spam Confidence Level)](spam-confidence-levels.md).|
-|SFTY|Die Nachricht wurde als Phishing-E-Mail erkannt und wird außerdem mit einem der folgenden Werte gekennzeichnet: <ul><li>9.1: Standardwert. Die Nachricht enthält eine Phishing-URL, kann weitere Phishinginhalte enthalten oder wurde möglicherweise vor der Weiterleitung an Microsoft 365 von einem anderen E-Mail-Filter (z. B. einem lokalen Exchange) als Phishing-E-Mail gekennzeichnet.</li><li>9.11: [Organisationsinternes oder „Self-to-Self“-Spoofing](anti-spoofing-protection.md#different-types-of-spoofing). Die Nachricht hat Antispoofing-Überprüfungen nicht bestanden, wobei die Domäne der Absender-E-Mail in der „Von:“-Kopfzeile mit der Empfängerdomäne übereinstimmt oder Teil der gleichen Organisation ist. Der Nachricht wird ein Sicherheitstipp für Organisationsinternes Spoofing beigefügt.</li><li>9.19:Domänenidentitätswechsel. Die sendende Domäne versucht, die Identität einer geschützten Domäne (einer Domäne, die sich im Besitz der Organisation des Empfängers oder einer benutzerdefinierten Domäne befindet), die in einer ATP-Richtlinie für Anti-Phishing angegeben ist, nachzuahmen. Der Sicherheitstipp für Domänen-Identitätswechsel wird der Nachricht hinzugefügt (wenn der Sicherheitstipp in der ATP-Anti-Phishing-Richtlinie aktiviert ist).</li><li>9.20: Benutzeridentitätswechsel. Der sendende Benutzer versucht, die Identität eines Benutzers in der Organisation des Empfängers oder die eines geschützten Benutzers, der in einer ATP Anti-Phishing-Richtlinie festgelegt ist, nachzuahmen. Der Sicherheitstipp für Benutzer-Identitätswechsel wird der Nachricht hinzugefügt (wenn der Sicherheitstipp in der ATP-Anti-Phishing-Richtlinie aktiviert ist).</li><li>9.21: [Domänenübergreifendes Spoofing](anti-spoofing-protection.md#different-types-of-spoofing). Die Nachricht hat Antispoofing-Überprüfungen nicht bestanden, da sich die Absenderdomäne in der „Von:“-Kopfzeile nicht authentifiziert und eine externe Domäne ist. Wird in Kombination mit [CompAuth](#authentication-results-message-header-fields-used-by-microsoft-email-authentication) verwendet).</li><li>9.22: identisch mit 9.21, außer dass der Benutzer über ein sicherer Absender ist, der überschrieben wurde.</li><li>9.23: identisch mit 9.22, außer dass die Organisation über einen zulässigen Absender oder eine zulässige Domäne verfügt, die überschrieben wurde.</li><li>9.24: identisch mit 9.23, außer dass der Benutzer über eine Exchange-Nachrichtenflussregel (auch als Transportregel bezeichnet) verfügt, die überschrieben wurde.</li></ul>|
-|SFV:BLK|Filterung wurde übersprungen, und die Nachricht wurde blockiert, da sie von einer Adresse gesendet wurde, die sich in der Sperrliste des Benutzers (in Outlook blockierte Absender) befindet.<br/></br> Weitere Informationen dazu, wie Administratoren die Liste blockierter Absender eines Benutzers verwalten können, finden Sie unter [Konfigurieren der Einstellungen für Junk-E-Mails für Exchange Online-Postfächer](configure-junk-email-settings-on-exo-mailboxes.md).|
-|SFV:NSPM|Die Nachricht wurde von der Spamfilterung als "Nicht-Spam" markiert und an die beabsichtigten Empfänger gesendet.|
-|SFV:SFE|Filterung wurde übersprungen, und die Nachricht wurde durchgelassen, da sie von einer Adresse gesendet wurde, die sich in der Benutzerliste der sicheren Absender (Outlook-Liste sicherer Absender) befindet.<br/></br> Weitere Informationen dazu, wie Administratoren die Liste sicherer Absender eines Benutzers verwalten können, finden Sie unter [Konfigurieren der Einstellungen für Junk-E-Mails für Exchange Online-Postfächer](configure-junk-email-settings-on-exo-mailboxes.md).|
-|SFV:SKA|Die Nachricht wurde von der Spamfilterung übersprungen und an den Posteingang übermittelt, da sie einem Eintrag in der Liste der zulässigen Absender oder in der Liste der zulässigen Domänen in einer Antispamrichtlinie entsprach. Weitere Informationen finden Sie unter [Konfigurieren von Anti-Spam-Richtlinien](configure-your-spam-filter-policies.md).|
-|SFV:SKB|Die Nachricht wurde als Spam gekennzeichnet, da sie einem Eintrag in der Liste der blockierten Absender oder in der Liste der blockierten Domänen in einer Antispamrichtlinie entsprach. Weitere Informationen finden Sie unter [Konfigurieren von Anti-Spam-Richtlinien](configure-your-spam-filter-policies.md).|
-|SFV:SKI|Ähnlich wie SFV:SKN; die Nachricht wurde von der Spamfilterung aus einem anderen Grund übersprungen (z. B. unternehmensinterne E-Mail innerhalb eines Mandanten).|
-|SFV:SKN|Die Nachricht wurde vor der Verarbeitung durch die Spamfilterung als "Nicht-Spam" markiert, (beispielsweise wurde die Nachricht durch eine Nachrichtenflussregel als SCL-1 oder **Spamfilter umgehen** markiert).|
-|SFV:SKQ|Die Nachricht wurde aus der Quarantäne freigegeben und an die vorgesehenen Empfänger gesendet.|
-|SFV:SKS|Die Nachricht wurde vor der Verarbeitung durch die Spamfilterung als Spam markiert (beispielsweise wurde die Nachricht durch eine Nachrichtenflussregel als SCL-5 bis 9 markiert).|
-|SFV:SPM|Die Nachricht wurde von der Spamfilterung als Spam markiert.|
-|SRV:BULK|Die Nachricht wurde von der Spamfilterung und durch den BCL-Schwellenwert (Bulk Complaint Level) als Massen-E-Mail erkannt. Wenn der Parameter _MarkAsSpamBulkMail_ auf `On` festgelegt ist (dies ist die Standardeinstellung), wird eine Massen-E-Mail-Nachricht als SCL-9 (Hoge Spamwahrscheinlichkeit) markiert. Weitere Informationen finden Sie unter [Konfigurieren von Anti-Spam-Richtlinien](configure-your-spam-filter-policies.md).|
-|X-CustomSpam: \[ASFOption\]|Die Nachricht stimmte mit einer erweiterten Einstellung für Spamfilter (AFL) überein. Informationen zum Anzeigen des X-Header-Werts für jede ASF-Einstellung finden Sie unter [Erweiterte Einstellungen für Spamfilter (ASF)](advanced-spam-filtering-asf-options.md).|
+|`ARC`|Das `ARC`-Protokoll weist die folgenden Felder auf: <ul><li>`AAR`: Zeichnet den Inhalt der **Authentifizierungsergebnis**-Kopfzeile aus DMARC auf.</li><li>`AMS`: Enthält kryptographische Signaturen der Nachrichten.</li><li>`AS`: Enthält kryptographische Signaturen der Nachrichtenkopfzeilen. Dieses Feld enthält ein Tag einer Kettenüberprüfung mit der Bezeichnung `"cv="`, das das Ergebnis der Kettenüberprüfung in Form von **kein**, **bestanden** oder **fehlgeschlagen** enthält.</li></ul>|
+|`CAT:`|Die Kategorie der Schutzrichtlinie, die auf die Nachricht angewendet wurde: <ul><li>`BULK`: Massensendung</li><li>`DIMP`:Domänenidentitätswechsel</li><li>`GIMP`: [Mailbox Intelligence-basierter Identitätswechsel](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)</li><li>`HPHSH` oder `HPHISH`: Hohe Phishingwahrscheinlichkeit</li><li>`HSPM`: Hohe Spamwahrscheinlichkeit</li><li>`MALW`: Schadsoftware</li><li>`PHSH`: Phishing</li><li>`SPM`: Spam</li><li>`SPOOF`: Spoofing</li><li>`UIMP`: Benutzeridentitätswechsel</li><li>`AMP`: Antischadsoftware</li><li>`SAP`: Sichere Anlagen</li><li>`OSPM`: Ausgehende Spamnachricht</li></ul><br/>Eine eingehende Nachricht kann durch mehrere Schutzformen und mehrere Erkennungsscans gekennzeichnet werden. Richtlinien haben unterschiedliche Prioritäten, und die Richtlinie mit der höchsten Priorität wird zuerst angewendet. Weitere Informationen finden Sie unter [Welche Richtlinie gilt, wenn mehrere Schutzmethoden und Erkennungsscans für Ihre E-Mails ausgeführt werden?](how-policies-and-protections-are-combined.md)|
+|`CIP:[IP address]`|Die IP-Verbindungsadresse. Sie können diese IP-Adresse in der Liste der zugelassenen IP-Adressen oder in der IP-Sperrliste verwenden. Weitere Informationen finden Sie unter [Konfigurieren der Richtlinie für Verbindungsfilter](configure-the-connection-filter-policy.md).|
+|`CTRY`|Das anhand der Verbindungs-IP-Adresse ermittelte Quellland. Die IP-Adresse muss nicht notwendigerweise mit der ursprünglichen Sende-IP-Adresse übereinstimmen.|
+|`H:[helostring]`|Die HELO- oder EHLO-Zeichenfolge des verbindenden E-Mail-Servers.|
+|`IPV:CAL`|Die Nachricht wurde von der Spamfilterung übersprungen, da sich die IP-Quelladresse in der Liste der zugelassenen IP-Adressen befand. Weitere Informationen finden Sie unter [Konfigurieren der Richtlinie für Verbindungsfilter](configure-the-connection-filter-policy.md).|
+|`IPV:NLI`|Die IP-Adresse wurde in keiner IP-Zuverlässigkeitsliste gefunden.|
+|`LANG`|Die Sprache, in der die Nachricht verfasst wurde, wie im Ländercode angegeben (z. B. ru_RU für Russisch).|
+|`PTR:[ReverseDNS]`|Der PTR-Eintrag (auch bekannt als Reverse-DNS-Lookup) der Quell-IP-Adresse.|
+|`SCL`|Die SCL-Bewertung (Spam Confidence Level) der Nachricht. Ein höherer Wert gibt an, dass die Nachricht mit größerer Wahrscheinlichkeit Spam ist. Weitere Informationen finden Sie unter [SCL-Bewertungen (Spam Confidence Level)](spam-confidence-levels.md).|
+|`SFTY`|Die Nachricht wurde als Phishing-E-Mail erkannt und wird außerdem mit einem der folgenden Werte gekennzeichnet: <ul><li>9.1: Standardwert. Die Nachricht enthält einige oder alle der folgenden Elemente: eine Phishing-URL, sonstige Phishinginhalte oder eine lokale Exchange-Kennzeichnung als Phishingnachricht.</li><li>9.11: [Organisationsinternes oder „Self-to-Self“-Spoofing](anti-spoofing-protection.md#different-types-of-spoofing). Der Nachricht wird ein Sicherheitstipp für Organisationsinternes Spoofing beigefügt.</li><li>9.19:Domänenidentitätswechsel. Die sendende Domäne versucht, [die Identität einer geschützten Domäne](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies) anzunehmen. Der Sicherheitstipp für Domänenidentitätswechsel wird der Nachricht (sofern aktiviert) hinzugefügt.</li><li>9.20: Benutzeridentitätswechsel. Der sendende Benutzer versucht, die Identität eines Benutzers in der Organisation des Empfängers oder die eines geschützten Benutzers, der in einer ATP Anti-Phishing-Richtlinie festgelegt ist, nachzuahmen. Der Sicherheitstipp für Benutzeridentitätswechsel wird der Nachricht (sofern aktiviert) hinzugefügt.</li><li>9.21: [Domänenübergreifendes Spoofing](anti-spoofing-protection.md#different-types-of-spoofing). Fehler bei der Meldung "Antispoofing-Prüfungen". Die Absenderdomäne des Absenders in der „Von“-Kopfzeile konnte nicht authentifiziert werden und ist eine externe Domäne. Wird in Kombination mit [zusammengesetzter Authentifizierung](#authentication-results-message-header-fields) verwendet.</li><li>9.22: identisch mit 9.21, außer dass der Benutzer über ein sicherer Absender ist, der überschrieben wurde.</li><li>9.23: identisch mit 9.22, außer dass die Organisation über einen zulässigen Absender oder eine zulässige Domäne verfügt, die überschrieben wurde.</li><li>9.24: identisch mit 9.23, außer dass der Benutzer über eine Exchange-Nachrichtenflussregel (auch als Transportregel bezeichnet) verfügt, die überschrieben wurde.</li></ul>|
+|`SFV:BLK`|Die Filterung wurde übersprungen, und die Nachricht wurde blockiert, da sie von einem Absender stammt, der sich in der Liste mit blockierten Absendern des Benutzers befindet.<br/></br> Weitere Informationen dazu, wie Administratoren die Liste blockierter Absender eines Benutzers verwalten können, finden Sie unter [Konfigurieren der Einstellungen für Junk-E-Mails für Exchange Online-Postfächer](configure-junk-email-settings-on-exo-mailboxes.md).|
+|`SFV:NSPM`|Die Nachricht wurde von der Spamfilterung als "Kein Spam" markiert und an die beabsichtigten Empfänger gesendet.|
+|`SFV:SFE`Die Filterung wurde übersprungen, und die Nachricht wurde zugelassen, da sie von einem Absender stammt, der sich in der Liste mit sicheren Absendern des Benutzers befindet.<br/></br> Weitere Informationen dazu, wie Administratoren die Liste sicherer Absender eines Benutzers verwalten können, finden Sie unter [Konfigurieren der Einstellungen für Junk-E-Mails für Exchange Online-Postfächer](configure-junk-email-settings-on-exo-mailboxes.md).|
+|`SFV:SKA`|Die Nachricht wurde von der Spamfilterung übersprungen und an den Posteingang übermittelt, da sich der Absender in der Liste der zulässigen Absender oder in der Liste der zulässigen Domänen in einer Antispamrichtlinie befand. Weitere Informationen finden Sie unter [Konfigurieren von Anti-Spam-Richtlinien](configure-your-spam-filter-policies.md).|
+|`SFV:SKB`|Die Nachricht wurde als Spam gekennzeichnet, da sie einem Sender in der Liste der blockierten Absender oder in der Liste der blockierten Domänen in einer Antispamrichtlinie entsprach. Weitere Informationen finden Sie unter [Konfigurieren von Anti-Spam-Richtlinien](configure-your-spam-filter-policies.md).|
+|`SFV:SKI`|Ähnlich wie SFV:SKN wurde die Nachricht von der Spamfilterung aus einem anderen Grund übersprungen (z. B. eine unternehmensinterne E-Mail innerhalb eines Mandanten).|
+|`SFV:SKN`|Die Nachricht wurde bereits als Nicht-Spam markiert, noch bevor sie vom Spamfilter verarbeitet wurde. Die Nachricht wurde durch eine Nachrichtenflussregel z. B. als SCL-1 oder **Spamfilter umgehen** markiert.|
+|`SFV:SKQ`|Die Nachricht wurde aus der Quarantäne freigegeben und an die vorgesehenen Empfänger gesendet.|
+|`SFV:SKS`|Die Nachricht wurde bereits als Spam markiert, noch bevor sie vom Spamfilter verarbeitet wurde. Die Nachricht wurde beispielsweise durch eine Nachrichtenflussregel als SCL-5 bis 9 markiert.|
+|`SFV:SPM`|Die Nachricht wurde vom Spamfilter als Spam markiert.|
+|`SRV:BULK`|Die Nachricht wurde von der Spamfilterung und durch den BCL-Schwellenwert (Bulk Complaint Level) als Massen-E-Mail erkannt. Wenn der Parameter _MarkAsSpamBulkMail_ auf `On` festgelegt ist (dies ist die Standardeinstellung), wird eine Massen-E-Mail-Nachricht als SCL-9 (Hoge Spamwahrscheinlichkeit) markiert. Weitere Informationen finden Sie unter [Konfigurieren von Anti-Spam-Richtlinien](configure-your-spam-filter-policies.md).|
+|`X-CustomSpam: [ASFOption]`|Die Nachricht stimmte mit einer erweiterten Einstellung für Spamfilter (AFL) überein. Informationen zum Anzeigen des X-Header-Werts für jede ASF-Einstellung finden Sie unter [Erweiterte Einstellungen für Spamfilter (ASF)](advanced-spam-filtering-asf-options.md).|
 |
 
 ## <a name="x-microsoft-antispam-message-header-fields"></a>Felder der Nachrichtenkopfzeile X-Microsoft-Antispam
@@ -78,81 +86,73 @@ In der folgenden Tabelle werden die hilfreiche Felder der Nachrichtenkopfzeile *
 
 ****
 
-|Kopfzeilenfeld|Beschreibung|
+|Feld|Beschreibung|
 |---|---|
-|BCL|Die BCL-Wert (Bulk Complaint Level) der Nachricht. Ein höherer BCL zeigt an, dass eine Massen-E-Mail-Nachricht (auch als _Gray Mail_ bezeichnet) mit größerer Wahrscheinlichkeit zu Beschwerden führen wird (und daher eher als Spam einzustufen ist). Weitere Informationen finden Sie unter [BCL-Werte (Bulk Complaint Level)](bulk-complaint-level-values.md).|
+|`BCL`|Das Massenbeschwerdeniveau (Bulk Complaint Level, BCL) der Nachricht. Ein höheres BCL-Niveau zeigt an, dass eine als Massensendung gesendete E-Mail mit größerer Wahrscheinlichkeit zu Beschwerden führen wird (und daher eher als Spam einzustufen ist). Weitere Informationen finden Sie unter [BCL-Werte (Bulk Complaint Level)](bulk-complaint-level-values.md).|
 |
 
 ## <a name="authentication-results-message-header"></a>Nachrichtenkopfzeile „Authentication-results“
 
-Die Ergebnisse der SPF-, DKIM- und DMARC-Überprüfungen werden aufgezeichnet, oder in der Nachrichtenkopfzeile **Authentifizierungsergebnissen** von Microsoft 365 markiert, wenn unsere E-Mail-Server eine E-Mail erhalten.
+Die Ergebnisse der E-Mail-Authentifizierungsüberprüfung für SPF, DKIM und DMARC werden in eingehende Nachrichten in der Nachrichtenkopfzeile **Authentifizierungsergebnisse** aufgezeichnet.
 
-### <a name="check-stamp-syntax-and-examples"></a>Überprüfen der Stempelsyntax und Beispiele
+Die folgende Liste beschreibt den Text, der der Kopfzeile **Authentifizierungsergebnisse** für jede Art der E-Mail-Authentifizierungsprüfung hinzugefügt wird:
 
-Die folgenden Syntaxbeispiele zeigen einen Teil des „Textstempels“, den Microsoft 365 in der Nachrichtenkopfzeile für jede E-Mail-Nachricht anwendet, die beim Empfang durch Ihren Mailserver eine E-Mail-Authentifizierungsprüfung durchlaufen. Dieser Stempel wird der Kopfzeile mit den**Authentifizierungsergebnissen** hinzugefügt.
+- SPF verwendet die folgende Syntax:
 
-#### <a name="syntax-spf-check-stamp"></a>Syntax: SPF-Prüfstempel
+  ```text
+  spf=<pass (IP address)|fail (IP address)|softfail (reason)|neutral|none|temperror|permerror> smtp.mailfrom=<domain>
+  ```
 
-Für SPF gilt die folgende Syntax.
+  Zum Beispiel:
 
-```text
-spf=<pass (IP address)|fail (IP address)|softfail (reason)|neutral|none|temperror|permerror> smtp.mailfrom=<domain>
-```
+  ```text
+  spf=pass (sender IP is 192.168.0.1) smtp.mailfrom=contoso.com
+  spf=fail (sender IP is 127.0.0.1) smtp.mailfrom=contoso.com
+  ```
 
-##### <a name="examples-spf-check-stamp"></a>Beispiele: SPF-Prüfstempel
+- DKIM verwendet die folgende Syntax:
 
-```text
-spf=pass (sender IP is 192.168.0.1) smtp.mailfrom=contoso.com
-spf=fail (sender IP is 127.0.0.1) smtp.mailfrom=contoso.com
-```
+  ```text
+  dkim=<pass|fail (reason)|none> header.d=<domain>
+  ```
 
-#### <a name="syntax-dkim-check-stamp"></a>Syntax: DKIM-Prüfstempel
+  Zum Beispiel:
 
-Für DKIM gilt die folgende Syntax.
+  ```text
+  dkim=pass (signature was verified) header.d=contoso.com
+  dkim=fail (body hash did not verify) header.d=contoso.com
+  ```
 
-```text
-dkim=<pass|fail (reason)|none> header.d=<domain>
-```
+- DMARC verwendet die folgende Syntax:
 
-##### <a name="examples-dkim-check-stamp"></a>Beispiele: DKIM-Prüfstempel
+  ```text
+  dmarc=<pass|fail|bestguesspass|none> action=<permerror|temperror|oreject|pct.quarantine|pct.reject> header.from=<domain>
+  ```
 
-```text
-dkim=pass (signature was verified) header.d=contoso.com
-dkim=fail (body hash did not verify) header.d=contoso.com
-```
+  Zum Beispiel:
 
-#### <a name="syntax-dmarc-check-stamp"></a>Syntax: DMARC-Prüfstempel
+  ```text
+  dmarc=pass action=none header.from=contoso.com
+  dmarc=bestguesspass action=none header.from=contoso.com
+  dmarc=fail action=none header.from=contoso.com
+  dmarc=fail action=oreject header.from=contoso.com
+  ```
 
-Für DMARC gilt die folgende Syntax.
+### <a name="authentication-results-message-header-fields"></a>Nachrichtenkopfzeilenfelder “Authentifizierungsergebnisse”
 
-```text
-dmarc=<pass|fail|bestguesspass|none> action=<permerror|temperror|oreject|pct.quarantine|pct.reject> header.from=<domain>
-```
-
-##### <a name="examples-dmarc-check-stamp"></a>Beispiele: DMARC-Prüfstempel
-
-```text
-dmarc=pass action=none header.from=contoso.com
-dmarc=bestguesspass action=none header.from=contoso.com
-dmarc=fail action=none header.from=contoso.com
-dmarc=fail action=oreject header.from=contoso.com
-```
-
-### <a name="authentication-results-message-header-fields-used-by-microsoft-email-authentication"></a>Kopfzeilenfelder mit Authentifizierungsergebnissen, die von der Microsoft-E-Mail-Authentifizierung verwendet werden
-
-In dieser Tabelle werden die Felder und die möglichen Werte für jede E-Mail-Authentifizierungsprüfung beschrieben.
+In der folgenden Tabelle werden die Felder und die möglichen Werte für jede E-Mail-Authentifizierungsprüfung beschrieben.
 
 ****
 
-|Kopfzeilenfeld|Beschreibung|
+|Feld|Beschreibung|
 |---|---|
-|Aktion|Gibt die Aktion an, die vom Spamfilter basierend auf den Ergebnissen der DMARC-Prüfung ausgeführt wird. Beispiel: <ul><li>**oreject** oder **o.reject**: Dies bedeutet "override reject". Microsoft 365 wendet diese Aktion an, wenn es Nachrichten empfängt, die die DMARC-Prüfung nicht bestehen und die von Domänen stammen, für deren DMARC-TXT-Eintrag die Richtlinie „p=reject“ festgelegt ist. Anstatt die Nachricht abzulehnen oder zu löschen, kennzeichnet Microsoft 365 die Nachricht als Spam. Weitere Informationen darüber, warum Microsoft 365 auf diese Weise konfiguriert ist, finden Sie unter [So behandelt Microsoft 365 eingehende E-Mail-Nachrichten, die DMARC-Prüfungen nicht bestehen](use-dmarc-to-validate-email.md#how-microsoft-365-handles-inbound-email-that-fails-dmarc).</li><li>**pct.quarantine**: Gibt an, dass ein Prozentsatz von weniger als 100 % der Nachrichten, welche die DMARC-Prüfung nicht bestehen, trotzdem übermittelt wird. Das bedeutet, dass die Nachricht die DMARC-Prüfung nicht bestanden hat und die Richtlinie auf "Quarantäne" festgelegt wurde. Das PCT-Feld wurde jedoch nicht auf 100 % festgelegt, und das System hat gemäß der Richtlinie der angegebenen Domäne zufällig bestimmt, dass die DMARC-Aktion nicht angewendet werden soll.</li><li>**pct.reject**: Gibt an, dass ein Prozentsatz von weniger als 100 % der Nachrichten, welche die DMARC-Prüfung nicht bestehen, trotzdem übermittelt wird. Das bedeutet, dass die Nachricht die DMARC-Prüfung nicht bestanden hat und die Richtlinie auf "Ablehnen" festgelegt wurde. Das PCT-Feld wurde jedoch nicht auf 100 % festgelegt, und das System hat gemäß der Richtlinie der angegebenen Domäne zufällig bestimmt, dass die DMARC-Aktion nicht angewendet werden soll.</li><li>**permerror**: Bei der DMARC-Prüfung ist ein dauerhafter Fehler aufgetreten, wie z. B. ein falsch formatierter DMARC-TXT-Eintrag in DNS. Der Versuch, die Nachricht erneut zu senden, wird höchstwahrscheinlich kein anderes Ergebnis liefern. Stattdessen müssen Sie sich möglicherweise an den Domänenbesitzer wenden, um das Problem zu beheben.</li><li>**temperror**: Bei der DMARC-Prüfung ist ein temporärer Fehler aufgetreten. Sie können den Absender der Nachricht möglicherweise bitten, die Nachricht kurze Zeit später erneut zu senden, damit sie dann ordnungsgemäß verarbeitet werden kann.</li></ul>|
-|compauth|Ergebnis der zusammengesetzten Authentifizierung. Wird von Microsoft 365 verwendet, um mehrere Authentifizierungstypen zu kombinieren, z. B. SPF, DKIM, DMARC oder einen beliebigen anderen Teil der Nachricht, um festzustellen, ob die Nachricht authentifiziert ist oder nicht. Verwendet die "From:"-Domäne als Grundlage für die Prüfung.|
-|dkim|Beschreibt die Ergebnisse der DKIM-Prüfung für die Nachricht. Mögliche Werte sind: <ul><li>**pass**: Gibt an, dass die Nachricht die DKIM-Prüfung bestanden hat.</li><li>**fail (Ursache)**: Gibt an, dass die Nachricht die DKIM-Prüfung nicht bestanden hat und warum. Wenn die Nachricht beispielsweise nicht signiert war oder die Signatur nicht überprüft werden konnte.</li><li>**none**: Gibt an, dass die Nachricht nicht signiert war. Dies kann darauf hinweisen, dass die Domäne über einen DKIM-Eintrag verfügt oder dass der DKIM-Eintrag nicht zu einem Ergebnis ausgewertet wird. Dieser Wert gibt nur an, dass die Nachricht nicht signiert war.</li></ul>|
-|dmarc|Beschreibt die Ergebnisse der DMARC-Prüfung für die Nachricht. Mögliche Werte sind: <ul><li>**pass**: Gibt an, dass die Nachricht die DMARC-Prüfung bestanden hat.</li><li>**fail**: Gibt an, dass die Nachricht die DMARC-Prüfung nicht bestanden hat.</li><li>**bestguesspass**: Gibt an, dass kein DMARC-TXT-Eintrag für die Domäne vorhanden ist. Wenn jedoch ein Eintrag vorhanden gewesen wäre, hätte die Nachricht die DMARC-Prüfung bestanden. Dies liegt daran, dass die Domäne in der `5321.MailFrom`-Adresse (auch als MAIL FROM-Adresse, P1-Absender oder Umschlagabsender bezeichnet) mit der Domäne in der `5322.From`-Adresse (auch als Absenderadresse oder P2-Absender bezeichnet) übereinstimmt.</li><li>**none**: Gibt an, dass kein DMARC-TXT-Eintrag für die sendende Domäne in DNS vorhanden ist.|
-|header.d|Die in der DKIM-Signatur identifizierte Domäne, sofern vorhanden. Dies ist die Domäne, die für den öffentlichen Schlüssel abgefragt wird.|
-|header.from|Die Domäne der `5322.From`-Adresse im Kopf der E-Mail-Nachricht (auch als Absenderadresse oder P2-Absender bezeichnet). Empfänger sehen die Absenderadresse in E-Mail-Clients.|
-|reason|Der Grund, warum die zusammengesetzte Authentifizierung erfolgreich war oder fehlgeschlagen ist. Bei dem Wert handelt es sich um einen dreistelligen Code. Zum Beispiel: <ul><li>**000**: Die explizite Authentifizierung der Nachricht ist fehlgeschlagen (`compauth=fail`). Die Nachricht hat beispielsweise eine DMARC-Prüfung nicht bestanden (mit der Aktion "Quarantäne" oder "Ablehnen").</li><li>**001** Die implizite Authentifizierung der Nachricht ist fehlgeschlagen (`compauth=fail`). Das bedeutet, dass die sendende Domäne keine E-Mail-Authentifizierungseinträge veröffentlicht hat oder, wenn sie sie veröffentlicht hat, sie eine schwächere Fehlerrichtlinie hatten (SPF Soft Fail oder neutral, DMARC-Richtlinie von `p=none`).</li><li>**002** gibt an, dass die Organisation über eine Richtlinie für das Absender/Domänepaar verfügt, für die das Senden von gefälschten E-Mails explizit untersagt ist. Diese Einstellung wird manuell von einem Administrator festgelegt.</li><li>**010** gibt an, dass DMARC für die Nachricht mit einer Aktion der Ablehnung oder Quarantäne fehlgeschlagen ist und die sendende Domäne eine der in der Organisation zulässigen Domänen ist (Dies ist Teil von Self-to-Self Spoofing oder organisationsinternem Spoofing).</li><li>**1xx** oder **7xx**: Die Authentifizierung der Nachricht war erfolgreich (`compauth=pass`). Die letzten beiden Ziffern sind von Microsoft 365 verwendete, interne Codes.</li><li>**2xx**: Die Nachricht wurde mit dem Ergebnis „soft-pass“ implizit authentifiziert (`compauth=softpass`). Die letzten beiden Ziffern sind von Microsoft 365 verwendete, interne Codes.</li><li>**3xx**: Die Nachricht wurde nicht auf die zusammengesetzte Authentifizierung überprüft. (`compauth=none`)</li><li>**4xx** oder **9xx**: Die zusammengesetzte Authentifizierung wurde für die Nachricht umgangen (`compauth=none`). Die letzten beiden Ziffern sind von Microsoft 365 verwendete, interne Codes.</li><li>**6xx**: Die implizite E-Mail-Authentifizierung für die Nachricht ist fehlgeschlagen und die sendende Domäne ist eine der in der Organisation zulässigen Domänen (Dies ist Teil von Self-to-Self-Spoofing oder organisationsinternem Spoofing).</li></ul>|
-|smtp.mailfrom|Die Domäne der `5321.MailFrom`-Adresse (auch als MAIL FROM-Adresse, P1-Absender oder Umschlagabsender bezeichnet). Dies ist die E-Mail-Adresse, die für Unzustellbarkeitsberichte (auch als NDRs oder Unzustellbarkeitsnachricht bezeichnet) verwendet wird.|
-|SPF|Beschreibt die Ergebnisse der SPF-Prüfung für die Nachricht. Mögliche Werte sind: <ul><li>**pass (IP-Adresse)**: Gibt an, dass die SPF-Überprüfung für die Nachricht bestanden wurde, und enthält die IP-Adresse des Absenders. Der Client kann E-Mails im Auftrag der Absenderdomäne senden oder weiterleiten.</li><li>**fail (IP-Adresse)**: Gibt an, dass die SPF-Überprüfung für die Nachricht fehlgeschlagen ist, und enthält die IP-Adresse des Absenders. Dies wird häufig als _hard fail_ bezeichnet.</li><li>**soft fail (Ursache)**: Gibt an, dass der SPF-Eintrag bestimmt hat, dass der Host nicht die Erlaubnis zum Senden hat, sich jedoch im Übergang befindet.</li><li>**neutral**: Gibt an, dass der SPF-Eintrag explizit angegeben hat, dass nicht angegeben wird, ob die IP-Adresse autorisiert ist.</li><li>**none**: Gibt an, dass die Domäne nicht über einen SPF-Eintrag verfügt oder dass der SPF-Eintrag nicht zu einem Ergebnis ausgewertet wird.</li><li>**temperror**: Gibt an, dass ein Fehler aufgetreten ist, der möglicherweise vorübergehend ist, zum Beispiel ein DNS-Fehler. Wenn Sie es später noch einmal versuchen, kann der Vorgang möglicherweise ohne Eingreifen von Seiten eines Administrators erfolgreich ausgeführt werden.</li><li>**permerror**: Gibt an, dass ein dauerhafter Fehler aufgetreten ist. Dies geschieht, wenn die Domäne beispielsweise einen falsch formatierten SPF-Eintrag aufweist.</li></ul>|
+|`action`|Gibt die Aktion an, die vom Spamfilter basierend auf den Ergebnissen der DMARC-Prüfung ausgeführt wird. Zum Beispiel: <ul><li>**oreject** oder **o.reject**: Dies bedeutet "override reject". Microsoft 365 wendet diese Aktion an, wenn es Nachrichten empfängt, die die DMARC-Prüfung nicht bestehen und die von Domänen stammen, für deren DMARC-TXT-Eintrag die Richtlinie „p=reject“ festgelegt ist. Anstatt die Nachricht abzulehnen oder zu löschen, kennzeichnet Microsoft 365 die Nachricht als Spam. Weitere Informationen darüber, warum Microsoft 365 auf diese Weise konfiguriert ist, finden Sie unter [So behandelt Microsoft 365 eingehende E-Mail-Nachrichten, die DMARC-Prüfungen nicht bestehen](use-dmarc-to-validate-email.md#how-microsoft-365-handles-inbound-email-that-fails-dmarc).</li><li>**pct.quarantine**: Gibt an, dass ein Prozentsatz von weniger als 100 % der Nachrichten, welche die DMARC-Prüfung nicht bestehen, trotzdem übermittelt wird. Das bedeutet, dass die Nachricht die DMARC-Prüfung nicht bestanden hat und die Richtlinie auf "Quarantäne" festgelegt wurde. Das PCT-Feld wurde jedoch nicht auf 100 % festgelegt, und das System hat gemäß der Richtlinie der angegebenen Domäne zufällig bestimmt, dass die DMARC-Aktion nicht angewendet werden soll.</li><li>**pct.reject**: Gibt an, dass ein Prozentsatz von weniger als 100 % der Nachrichten, welche die DMARC-Prüfung nicht bestehen, trotzdem übermittelt wird. Das bedeutet, dass die Nachricht die DMARC-Prüfung nicht bestanden hat und die Richtlinie auf "Ablehnen" festgelegt wurde. Das PCT-Feld wurde jedoch nicht auf 100 % festgelegt, und das System hat gemäß der Richtlinie der angegebenen Domäne zufällig bestimmt, dass die DMARC-Aktion nicht angewendet werden soll.</li><li>**permerror**: Bei der DMARC-Prüfung ist ein dauerhafter Fehler aufgetreten, wie z. B. ein falsch formatierter DMARC-TXT-Eintrag in DNS. Der Versuch, die Nachricht erneut zu senden, wird höchstwahrscheinlich kein anderes Ergebnis liefern. Stattdessen müssen Sie sich möglicherweise an den Domänenbesitzer wenden, um das Problem zu beheben.</li><li>**temperror**: Bei der DMARC-Prüfung ist ein temporärer Fehler aufgetreten. Sie können den Absender der Nachricht möglicherweise bitten, die Nachricht kurze Zeit später erneut zu senden, damit sie dann ordnungsgemäß verarbeitet werden kann.</li></ul>|
+|`compauth`|Ergebnis der zusammengesetzten Authentifizierung. Wird von Microsoft 365 verwendet, um mehrere Authentifizierungstypen zu kombinieren, z. B. SPF, DKIM, DMARC oder einen beliebigen anderen Teil der Nachricht, um festzustellen, ob die Nachricht authentifiziert ist oder nicht. Verwendet die "From:"-Domäne als Grundlage für die Prüfung.|
+|`dkim`|Beschreibt die Ergebnisse der DKIM-Prüfung für die Nachricht. Mögliche Werte sind: <ul><li>**pass**: Gibt an, dass die Nachricht die DKIM-Prüfung bestanden hat.</li><li>**fail (Ursache)**: Gibt an, dass die Nachricht die DKIM-Prüfung nicht bestanden hat und warum. Wenn die Nachricht beispielsweise nicht signiert war oder die Signatur nicht überprüft werden konnte.</li><li>**none**: Gibt an, dass die Nachricht nicht signiert war. Dies kann darauf hinweisen, dass die Domäne über einen DKIM-Eintrag verfügt oder dass der DKIM-Eintrag nicht zu einem Ergebnis ausgewertet wird. Dieser Wert gibt nur an, dass die Nachricht nicht signiert war.</li></ul>|
+|`dmarc`|Beschreibt die Ergebnisse der DMARC-Prüfung für die Nachricht. Mögliche Werte sind: <ul><li>**pass**: Gibt an, dass die Nachricht die DMARC-Prüfung bestanden hat.</li><li>**fail**: Gibt an, dass die Nachricht die DMARC-Prüfung nicht bestanden hat.</li><li>**bestguesspass**: Gibt an, dass kein DMARC-TXT-Eintrag für die Domäne vorhanden ist. Wenn jedoch ein Eintrag vorhanden gewesen wäre, hätte die Nachricht die DMARC-Prüfung bestanden. Dies liegt daran, dass die Domäne in der `5321.MailFrom`-Adresse (auch als MAIL FROM-Adresse, P1-Absender oder Umschlagabsender bezeichnet) mit der Domäne in der `5322.From`-Adresse (auch als Absenderadresse oder P2-Absender bezeichnet) übereinstimmt.</li><li>**none**: Gibt an, dass kein DMARC-TXT-Eintrag für die sendende Domäne in DNS vorhanden ist.|
+|`header.d`|Die in der DKIM-Signatur identifizierte Domäne, sofern vorhanden. Dies ist die Domäne, die für den öffentlichen Schlüssel abgefragt wird.|
+|`header.from`|Die Domäne der `5322.From`-Adresse im Kopf der E-Mail-Nachricht (auch als Absenderadresse oder P2-Absender bezeichnet). Empfänger sehen die Absenderadresse in E-Mail-Clients.|
+|`reason`|Der Grund, warum die zusammengesetzte Authentifizierung erfolgreich war oder fehlgeschlagen ist. Bei dem Wert handelt es sich um einen dreistelligen Code. Zum Beispiel: <ul><li>**000**: Die explizite Authentifizierung der Nachricht ist fehlgeschlagen (`compauth=fail`). Die Nachricht hat beispielsweise eine DMARC-Prüfung nicht bestanden (mit der Aktion "Quarantäne" oder "Ablehnen").</li><li>**001** Die implizite Authentifizierung der Nachricht ist fehlgeschlagen (`compauth=fail`). Das bedeutet, dass die sendende Domäne keine E-Mail-Authentifizierungseinträge veröffentlicht hat oder, wenn sie sie veröffentlicht hat, sie eine schwächere Fehlerrichtlinie hatten (SPF Soft Fail oder neutral, DMARC-Richtlinie von `p=none`).</li><li>**002** gibt an, dass die Organisation über eine Richtlinie für das Absender/Domänepaar verfügt, für die das Senden von gefälschten E-Mails explizit untersagt ist. Diese Einstellung wird manuell von einem Administrator festgelegt.</li><li>**010** gibt an, dass DMARC für die Nachricht mit einer Aktion der Ablehnung oder Quarantäne fehlgeschlagen ist und die sendende Domäne eine der in der Organisation zulässigen Domänen ist (Dies ist Teil von Self-to-Self Spoofing oder organisationsinternem Spoofing).</li><li>**1xx** oder **7xx**: Die Authentifizierung der Nachricht war erfolgreich (`compauth=pass`). Die letzten beiden Ziffern sind von Microsoft 365 verwendete, interne Codes.</li><li>**2xx**: Die Nachricht wurde mit dem Ergebnis „soft-pass“ implizit authentifiziert (`compauth=softpass`). Die letzten beiden Ziffern sind von Microsoft 365 verwendete, interne Codes.</li><li>**3xx**: Die Nachricht wurde nicht auf die zusammengesetzte Authentifizierung überprüft. (`compauth=none`)</li><li>**4xx** oder **9xx**: Die zusammengesetzte Authentifizierung wurde für die Nachricht umgangen (`compauth=none`). Die letzten beiden Ziffern sind von Microsoft 365 verwendete, interne Codes.</li><li>**6xx**: Die implizite E-Mail-Authentifizierung für die Nachricht ist fehlgeschlagen und die sendende Domäne ist eine der in der Organisation zulässigen Domänen (Dies ist Teil von Self-to-Self-Spoofing oder organisationsinternem Spoofing).</li></ul>|
+|`smtp.mailfrom`|Die Domäne der `5321.MailFrom`-Adresse (auch als MAIL FROM-Adresse, P1-Absender oder Umschlagabsender bezeichnet). Dies ist die E-Mail-Adresse, die für Unzustellbarkeitsberichte (auch als NDRs oder Unzustellbarkeitsnachricht bezeichnet) verwendet wird.|
+|`spf`|Beschreibt die Ergebnisse der SPF-Prüfung für die Nachricht. Mögliche Werte sind: <ul><li>`pass (IP address)`: Die SPF-Überprüfung für die Nachricht wurde bestanden und enthält die IP-Adresse des Absenders. Der Client kann E-Mails im Auftrag der Absenderdomäne senden oder weiterleiten.</li><li>`fail (IP address)`: Die SPF-Überprüfung für die Nachricht ist fehlgeschlagen, und enthält die IP-Adresse des Absenders. Dies wird manchmal auch als _schwerer Fehler_ bezeichnet.</li><li>`softfail (reason)`: Der SPF-Eintrag hat bestimmt, dass der Host nicht die Erlaubnis zum Senden hat, sich jedoch im Übergang befindet.</li><li>`neutral`: Der SPF-Eintrag gibt explizit an, dass nicht bestätigt wird, dass die IP-Adresse zum Versenden autorisiert ist.</li><li>`none`: Die Domäne verfügt nicht über einen SPF-Eintrag oder der SPF-Eintrag führt zu keinem Ergebnis.</li><li>`temperror`: Es ist ein vorübergehender Fehler aufgetreten. Dabei kann es sich beispielsweise um einen DNS-Fehler handeln. Dieselbe Überprüfung ist zu einem späteren Zeitpunkt möglicherweise erfolgreich.</li><li>`permerror`: Es ist ein dauerhafter Fehler aufgetreten. Dabei kann es sich zum Beispiel um einen Fehler handeln, bei dem die Domäne einen falsch formatierten SPF-Eintrag aufweist.</li></ul>|
 |

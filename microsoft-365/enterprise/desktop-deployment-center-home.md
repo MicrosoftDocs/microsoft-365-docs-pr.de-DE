@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Hier erhalten Sie Informationen zu den Ressourcen, die dem veralteten Desktop Bereitstellungs Center entsprechen.
-ms.openlocfilehash: 6db35ba51f06c7cca025112ebd1bb8d718b7842c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 0dc5816959c5284739de4dee31dde7cc520bde55
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686130"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898016"
 ---
 # <a name="desktop-deployment-center-deprecated"></a>Desktop Bereitstellungs Center (veraltet)
 
@@ -33,7 +33,7 @@ Verwenden Sie diese Ressourcen für die Bereitstellung moderner Desktops:
 
 Sie können auch die [Videos der Desktop Bereitstellungs Reihe von Microsoft Mechanics](https://www.aka.ms/watchhowtoshift)anzeigen.
 
-[Hilfe](https://aka.ms/mddhelp) bei Ihrer Desktop-Bereitstellung erhalten Sie außerdem von Microsoft-Partnern und FastTrack-Diensten.
+Sie können auch Hilfe zur Desktopbereitstellung von Microsoft [Partners und dem](https://www.microsoft.com/fasttrack/microsoft-365)Kurztext finden.
 
 ## <a name="windows-and-office-deployment-lab-kit"></a>Deployment Lab Kit für Windows und Office
 

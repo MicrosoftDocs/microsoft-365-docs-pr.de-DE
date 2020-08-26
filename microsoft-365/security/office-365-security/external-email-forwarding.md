@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: 88c3dae4f5a6786fe4eddea0d5e1c61dda837a87
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 7cb2ab9c6987900f2b53a17c3eda49001bca4d84
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080113"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898052"
 ---
 # <a name="configuring-external-email-forwarding-in-office-365"></a>Konfigurieren der externen e-Mail-Weiterleitung in Office 365
 
@@ -43,6 +43,11 @@ Office 365 lässt keine automatische externe Weiterleitung von Posteingangsregel
 > Das Deaktivieren der automatischen Weiterleitung an externe Adressen in Office 365 wird in Phasen mit Details, die über [Nachrichten Center](https://admin.microsoft.com/Adminportal/Home?source=applauncher&ref=/MessageCenter) -Beiträge mitgeteilt werden, ausgeführt. Um Administratoren bei der Vorbereitung auf diese Änderungen zu unterstützen, müssen Sie die Richtlinien vor der Zeit ändern, um sicherzustellen, dass Ihre Benutzer keine Unterbrechung finden.
 
 Weitere Informationen zu Benutzern, die die automatische Weiterleitung (Posteingangsregeln oder SMTP-Weiterleitung) in Ihrer Organisation verwenden, finden Sie im [Bericht automatisch weitergeleitete Nachrichten](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report?view=o365-worldwide).
+
+## <a name="how-does-this-policy-work-with-other-automatic-forwarding-controls"></a>Wie funktioniert diese Richtlinie mit anderen automatischen Weiterleitungs Steuerelementen?
+
+Als Administrator verfügen Sie möglicherweise bereits über andere Arten von Steuerelementen, wie das Blockieren der automatischen Weiterleitung in [Remotedomänen](https://docs.microsoft.com/exchange/mail-flow-best-practices/remote-domains/remote-domains) und die Verwendung einer Exchange-Transport Regel (ETR). Beide Steuerelemente sind unabhängig von dieser Funktion, beispielsweise wenn Sie die automatische Weiterleitung für eine Remotedomäne zulassen, die automatische Weiterleitung jedoch über die ausgehende Spam Richtlinie blockieren, wird das Ergebnis sein, dass die automatisch weitergeleitete Nachricht blockiert wird. Wenn Sie die automatische Weiterleitung in der ausgehenden Spam Richtlinie zulassen, Sie jedoch in einer ETR-oder Remotedomäne blockieren, wird die Nachricht durch eines dieser Steuerelemente blockiert. So können Sie beispielsweise die automatische Weiterleitung in der ausgehenden Spam Richtlinie zulassen und Remotedomänen verwenden, um die Domänen zu steuern, an die Benutzer Nachrichten automatisch weiterleiten können.
+
 
 ## <a name="the-blocked-email-forwarding-message"></a>Die Nachricht für blockierte e-Mail-Weiterleitung
 

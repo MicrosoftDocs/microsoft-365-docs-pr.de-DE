@@ -1,13 +1,13 @@
 ---
 title: Empfohlene Richtlinien für sichere e-Mails – Microsoft 365 für Unternehmen | Microsoft-Dokumente
 description: Beschreibt die Richtlinien für Empfehlungen von Microsoft zur Anwendung von E-Mail-Richtlinien und -Konfigurationen.
-author: brendacarter
-manager: laurawi
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 39e7be86c06a471a4eefc0cacd3657c363eddae6
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 9c289006fc1501865b0cf5529c308a0986895504
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685606"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898140"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Richtlinienempfehlungen für sichere E-Mails
 
@@ -39,7 +39,7 @@ Das folgende Diagramm veranschaulicht die allgemeinen Richtlinien für Identitä
 
 [Anzeigen einer größeren Version dieses Bilds](https://raw.githubusercontent.com/MicrosoftDocs/microsoft-365-docs/public/microsoft-365/media/identity-access-ruleset-mail.png)
 
-Wenn Sie Exchange Online und Outlook in den Bereich der Richtlinien einbezogen haben, wenn Sie Sie eingerichtet haben, müssen Sie nur die neue Richtlinie erstellen, um ActiveSync-Clients zu blockieren. Überprüfen Sie die in der folgenden Tabelle aufgeführten Richtlinien, und nehmen Sie entweder die empfohlenen Ergänzungen vor, oder bestätigen Sie, dass diese bereits enthalten sind. Jede Regel enthält Links zu den zugehörigen Konfigurationsanweisungen im Artikel [Allgemeine Richtlinien für Identitäts-und Geräte Zugriff](identity-access-policies.md) .
+Wenn Sie Exchange Online und Outlook in den Bereich der Richtlinien einbezogen haben, wenn Sie Sie eingerichtet haben, müssen Sie nur die neue Richtlinie erstellen, um ActiveSync-Clients zu blockieren. Überprüfen Sie die in der folgenden Tabelle aufgeführten Richtlinien, und nehmen Sie entweder die empfohlenen Ergänzungen vor, oder bestätigen Sie, dass diese bereits enthalten sind. Jede Regel verweist auf die zugehörigen Konfigurationsanweisungen in [allgemeinen Identitäts-und Gerätezugriffs Richtlinien](identity-access-policies.md).
 
 |Schutzebene|Richtlinien|Weitere Informationen|
 |:---------------|:-------|:----------------|
