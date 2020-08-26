@@ -17,11 +17,12 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: Verwalten Sie diese Azure-Administratorrollen im Microsoft 365 Admin Center.
-ms.openlocfilehash: d35daab57446fd2a6a052f7e0fca29af7910c5f9
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: afb025feb6e867b16be7a844a5f48ef42759b543
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432467"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898028"
 ---
 # <a name="azure-active-directory-roles-in-the-microsoft-365-admin-center"></a>Rollen in Azure Active Directory im Microsoft 365 Admin Center
 
@@ -67,6 +68,7 @@ Hier ist eine Liste aller im Microsoft 365 Admin Center verfügbaren Administrat
 |Nachrichtencenter-Datenschutzleser     |    Hat Zugriff auf Datenschutznachrichten im Nachrichtencenter, erhält E-Mail-Benachrichtigungen.     |
 |Nachrichtencenter-Leseberechtigter     | Kann normale Nachrichten im Nachrichtencenter lesen und teilen, erhält wöchentliche E-Mail-Digests, hat Lesezugriff auf Benutzer, Gruppen, Domänen und Abonnements.     |
 |Office-Apps-Administrator    |   Verwaltet cloudbasierte Richtlinien für Office und Inhalte im Dialogfenster "Neuigkeiten", das den Benutzern in ihren Office-Apps angezeigt wird.   |
+|Kennwortadministrator    |   Sie können Kennwörter von Benutzern zurücksetzen, die keine Administratoren oder Mitglieder der folgenden Rollen sind: Verzeichnisleser, Gasteinladender, Kennwortadministrator. Diese Rolle kann keine Möglichkeit zum Verwalten von Serviceanforderungen oder zum Überwachen des Dienststatus gewähren.   |
 |Power BI-Administrator    |   Hat Vollzugriff auf Power BI-Verwaltungsaufgaben, verwaltet Serviceanfragen und überwacht den Dienststatus.   |
 |Power Plattform-Administrator     |    Hat Vollzugriff auf Microsoft Dynamics 365, PowerApps, Richtlinien zur Verhinderung von Datenverlust und auf Microsoft Flow.     |
 |Administrator für privilegierte Rollen     |    Verwaltet Rollenzuweisungen und alle Zugriffssteuerungsfunktionen von Privileged Identity Management.     |

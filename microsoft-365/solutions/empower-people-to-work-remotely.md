@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: Konfigurieren Sie Sicherheit und Dienstinfrastruktur, die es Ihren Arbeitnehmern ermöglicht, von überall und jederzeit remote zu arbeiten.
-ms.openlocfilehash: dc1f5a540b261437a0bf94132bd41929ce5d3546
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 17cc826f5cf28ff375deaf1e6a4b192700eebf2f
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560919"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898128"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Fördern von Remotemitarbeitern mit Microsoft 365
 
@@ -69,7 +69,7 @@ Verwenden Sie zur Erfüllung der Voraussetzungen für Remotemitarbeiter die folg
 | Microsoft Teams, Exchange Online, SharePoint Online und OneDrive, Microsoft 365 Apps, Microsoft Power Platform, Yammer, Power Apps | Planen, kommunizieren und zusammenarbeiten. | Microsoft 365 E3 oder E5 |
 ||||
 
-Informationen zu den Sicherheits- und Compliance-Kriterien für Remotemitarbeiter finden Sie unter [Bereitstellen von Sicherheit und Compliance für Remotemitarbeiter](empower-people-to-work-remotely-security-compliance.md)
+Informationen zu den Sicherheits- und Compliance-Kriterien finden Sie unter [Bereitstellen von Sicherheit und Compliance für Remotemitarbeiter](empower-people-to-work-remotely-security-compliance.md).
 
 <a name="poster"></a> Eine zweiseitige Zusammenfassung dieser Lösung finden Sie auf dem [Poster „Fördern von Remotemitarbeitern“](../downloads/empower-remote-workers.pdf).
 
