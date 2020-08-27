@@ -20,12 +20,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie, wie Sie drittanbieterdaten aus Social Media-Plattformen, Instant Messaging-Plattformen und Dokument Zusammenarbeits Plattformen zu Microsoft 365-Postfächern importieren.
-ms.openlocfilehash: 6b75d2857fd95d24a90f9245cb299b7558aa3cec
-ms.sourcegitcommit: 37da941919036a714da42eaa039682ccbe0da670
+ms.openlocfilehash: ebb5c78dc043afb0e1e35aa8b5c70cd2219a6349
+ms.sourcegitcommit: b144e8ba1ab0c40fa7e0e8e893b5cb44aa2d8243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2020
-ms.locfileid: "46860710"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47282613"
 ---
 # <a name="archive-third-party-data"></a>Archivieren von Drittanbieterdaten
 
@@ -38,7 +38,7 @@ In der folgenden Tabelle sind die Drittanbieter-Daten-Konnektoren aufgeführt, d
 > [!TIP]
 > Klicken Sie auf den Link in der Spalte **drittanbieterdaten** , um die schrittweisen Anweisungen zum Erstellen eines Connectors für diesen Datentyp zu öffnen.
 
-|Drittanbieterdaten  |Beweissicherungsverfahren|eDiscovery  |Aufbewahrungsrichtlinien  |Datensatzverwaltung  |Kommunikationscompliance  |Insider-Risikomanagement  |
+|Drittanbieterdaten  |Beweissicherungsverfahren|eDiscovery  |Aufbewahrungseinstellungen  |Datensatzverwaltung  |Kommunikationscompliance  |Insider-Risikomanagement  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
 |[Bloomberg Message](archive-bloomberg-message-data.md)     |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |[Facebook](archive-facebook-data-with-sample-connector.md)     |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
@@ -71,9 +71,9 @@ Die drei primären eDiscovery-Tools in Microsoft 365 sind Inhaltssuche, zentrale
 
    Sowohl die Haupt-eDiscovery-als auch die Advanced-eDiscovery ermöglichen Ihnen die Verwaltung von drittanbieterdaten, die für die rechtlichen oder internen Untersuchungen Ihrer Organisation relevant sein können.
 
-### <a name="retention-policies"></a>Aufbewahrungsrichtlinien
+### <a name="retention-settings"></a>Aufbewahrungseinstellungen
 
-Sie können eine [Aufbewahrungsrichtlinie](retention.md) auf Benutzerpostfächer anwenden, um drittanbieterdaten (und andere Postfachinhalte) nach Ablauf des Aufbewahrungszeitraums beizubehalten und anschließend zu löschen. Sie können auch Aufbewahrungsrichtlinien verwenden, um drittanbieterdaten eines bestimmten Alters zu löschen oder eine Dispositions Überprüfung auszulösen, wenn der Aufbewahrungszeitraum abgelaufen ist.
+Sie können eine [Aufbewahrungsrichtlinie](retention.md) auf Benutzerpostfächer anwenden, um drittanbieterdaten (und andere Postfachinhalte) nach Ablauf des Aufbewahrungszeitraums beizubehalten und anschließend zu löschen. Sie können auch mithilfe von Aufbewahrungsrichtlinien drittanbieterdaten eines bestimmten Alters löschen oder [Aufbewahrungs Bezeichnungen verwenden, um eine Dispositions Überprüfung auszulösen,](disposition.md) wenn der Aufbewahrungszeitraum für drittanbieterdaten abläuft.
 
 ### <a name="records-management"></a>Datensatzverwaltung
 

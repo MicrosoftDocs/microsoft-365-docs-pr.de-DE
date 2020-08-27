@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie, wie Sie & einen Connector im Microsoft 365 Compliance Center verwenden, um & Archivdaten von Facebook-Geschäfts Seiten nach Microsoft 365 zu importieren.
-ms.openlocfilehash: 79f3c3914476a20c07a1c3ab4418b918c8f22c3e
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 747f98ff084eaa8536c10b2f4edefcc20d11d7f9
+ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818464"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47255852"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>Einrichten eines Connectors zum Archivieren von Facebook-Daten (Vorschau)
 
@@ -45,7 +45,7 @@ Schließen Sie die folgenden Voraussetzungen ab, bevor Sie einen Connector im Mi
 
 - Ihre Organisation muss einwilligen, dass der Office 365 Import Dienst auf Postfachdaten in Ihrer Organisation zugreifen kann. Um dieser Anforderung zuzustimmen, gehen Sie zu [dieser Seite](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), melden Sie sich mit den Anmeldeinformationen eines globalen Administrators an, und nehmen Sie dann die Anforderung an.
 
-- Der Benutzer, der den benutzerdefinierten Connector im Microsoft 365 Compliance Center (in Schritt 5) einrichtet, muss in Exchange Online über die Rolle "Post Fach Import-Export" verfügen. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle "Post Fach Import exportieren" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle "Post Fach Import Export" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie im Abschnitt [Erstellen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) von Rollengruppen oder [Ändern von Rollengruppen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
+- Der Benutzer, der den benutzerdefinierten Connector im Microsoft 365 Compliance Center (in Schritt 5) einrichtet, muss in Exchange Online über die Rolle "Post Fach Import-Export" verfügen. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle "Post Fach Import exportieren" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle "Post Fach Import Export" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie im Abschnitt  [Erstellen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) von Rollengruppen oder [Ändern von Rollengruppen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>Schritt 1: Erstellen einer APP in Azure Active Directory
 
@@ -117,6 +117,6 @@ Bei Abschluss dieses Schritts (indem Sie die schrittweisen Anleitungen ausführe
 
 - Aad-Anwendungs-ID (in Schritt 1 abgerufen)
 
-- Azure-App-Dienst-URL (in Schritt 1 abgerufen, beispielsweisehttps://fbconnector.azurewebsites.net)
+- Azure-App-Dienst-URL (in Schritt 1 abgerufen, beispielsweise https://fbconnector.azurewebsites.net)
 
 - APISecretKey (das Sie in Schritt 2 erstellt haben)
