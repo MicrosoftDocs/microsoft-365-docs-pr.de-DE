@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: ec4bd2e3244add3b14d614c308fea736c6ceccb6
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: 2428109743b408061ead8ad87d5e59ac30417c06
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254298"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898083"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -107,7 +107,7 @@ Anhand der Berichte können Ihre Prüfer die Ergebnisse der Microsoft-Clouddiens
 
 **Wie oft werden Azure SOC-Berichte erstellt?**
 
-SOC-Berichte für Azure, Microsoft Cloud App-Sicherheit, Flow, Microsoft Graph, Intune, Power BI, PowerApps, Microsoft Stream und Microsoft Rechenzentren werden über einen Zeitraum von 12 Monaten (Prüfungszeitraum) erstellt. Neue Berichte werden halbjährlich (jeweils zum 31. März und 30. September) erstellt. Bridge Letters werden im Januar herausgegeben, um den Zeitraum von 1.10. – 31.12. abzudecken und im Juli, um den Zeitraum vom 1.4. – 30.6. abzudecken. Kunden können die neuesten Berichte im Service Trust Portal [herunterladen](https://aka.ms/stp).
+SOC-Berichte für Azure, Microsoft Cloud App-Sicherheit, Flow, Microsoft Graph, Intune, Power BI, PowerApps, Microsoft Stream und Microsoft Rechenzentren werden über einen Zeitraum von 12 Monaten (Prüfungszeitraum) erstellt. Neue Berichte werden halbjährlich (jeweils zum 31. März und 30. September) erstellt. Bridge Letter werden jedes Quartal für die vorherigen drei Monate herausgegeben. Beispielsweise umfasst der January Letter den Zeitraum 1.10.–31.12., der April Letter 1.1.–31.3., der July Letter 1.4.–30.6. und der October Letter 1.7.–30.9.. Kunden können die neuesten Berichte im Service Trust Portal [herunterladen](https://aka.ms/stp).
 
 **Muss ich eine eigene Prüfung der Microsoft-Datencenter durchführen?**
 
