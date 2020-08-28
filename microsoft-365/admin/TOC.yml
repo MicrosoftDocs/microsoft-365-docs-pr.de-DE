@@ -22,6 +22,8 @@
               href: setup/setup-apps-for-business.md
         - name: Erkunden der Einrichtungsseite und des Assistenten
           href: setup/o365-setup-wizard-and-setup-page.md
+        - name: Sichern von Windows 10-Computern
+          href: ../business/secure-win-10-pcs.md
         - name: Installieren von Office-Apps
           href: setup/install-applications.md
         - name: Einrichten von Windows-Geräten
