@@ -9,12 +9,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e6311c0ad11d68c870b0c8185974b8913735e2a2
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 04c3901155ecd80fad472e07e7e46620c3ddee1f
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530175"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289273"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Voraussetzungen zugeordneter Laufwerke für Microsoft Managed Desktop
 
@@ -24,7 +24,7 @@ Viele Unternehmensumgebungen weisen Legacy Anforderungen für zugeordnete Laufwe
 - Migrieren Sie von Teams verwendete zugeordnete Laufwerke, um Dateien für SharePoint Online freizugeben. 
 - Modernisieren oder ersetzen Sie Anwendungen, die lokale Dateifreigaben verwenden, um diese Anforderung zu entfernen.
   
-Durch die Modernisierung dieser Dienste wird das beste Endbenutzererlebnis mit Microsoft Managed Desktop ermöglicht. Microsoft-Kurzarbeits Dienste können Sie bei der Modernisierung ihrer Umgebung mithilfe von Microsoft Cloud Services unterstützen. Sie können überprüfen, ob Sie bei [berechtigten Diensten und Plänen](https://docs.microsoft.com/fasttrack/m365-eligible-services-and-plans) für die Dienstleistungen für die zeitlosen Dienste in Frage kommen, und sich dann direkt an den Microsoft Managed Desktop wenden. Hintergrundinformationen zu kurzOneDrive für Unternehmen oder SharePoint Online Migration finden Sie unter [Datenmigration](https://docs.microsoft.com/fasttrack/o365-data-migration).
+Durch die Modernisierung dieser Dienste wird die beste Benutzererfahrung mit Microsoft Managed Desktop ermöglicht. Microsoft-Kurzarbeits Dienste können Sie bei der Modernisierung ihrer Umgebung mithilfe von Microsoft Cloud Services unterstützen. Sie können überprüfen, ob Sie bei [berechtigten Diensten und Plänen](https://docs.microsoft.com/fasttrack/m365-eligible-services-and-plans) für die Dienstleistungen für die zeitlosen Dienste in Frage kommen, und sich dann direkt an den Microsoft Managed Desktop wenden. Hintergrundinformationen zu kurzOneDrive für Unternehmen oder SharePoint Online Migration finden Sie unter [Datenmigration](https://docs.microsoft.com/fasttrack/o365-data-migration).
 
 ## <a name="mapped-drives-on-microsoft-managed-desktop"></a>Zugeordnete Laufwerke auf dem Microsoft Managed Desktop
  

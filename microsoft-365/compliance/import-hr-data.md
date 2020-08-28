@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Administratoren können einen Daten Konnektor einrichten, um Mitarbeiterdaten aus dem Personalwesen (HR) Ihrer Organisation nach Microsoft 365 zu importieren. Auf diese Weise können Sie Personaldaten in Richtlinien für das Insider Risikomanagement verwenden, um die Aktivität bestimmter Benutzer zu ermitteln, die eine interne Bedrohung für Ihre Organisation darstellen können.
-ms.openlocfilehash: 49589d2e5a6a716a2e224aa28b73bd14f9048d0b
-ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
+ms.openlocfilehash: 78832d74a7d61577e5ec49c290e19bdec758a0b3
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255768"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289250"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-preview"></a>Einrichten eines Connectors zum Importieren von HR-Daten (Vorschau)
 
@@ -201,15 +201,15 @@ Je nach HR-Systemen Ihrer Organisation und wie Sie HR-Daten in CSV-Dateien expor
 
 ## <a name="step-2-create-an-app-in-azure-active-directory"></a>Schritt 2: Erstellen einer APP in Azure Active Directory
 
-Der nächste Schritt besteht darin, eine neue app in Azure Active Directory (AAD) zu erstellen und zu registrieren. Die APP entspricht dem HR-Konnektor, den Sie in Schritt 3 erstellen. Durch das Erstellen dieser APP kann Aad den HR-Konnektor bei der Ausführung authentifizieren und versucht, auf Ihre Organisation zuzugreifen. Diese APP wird auch verwendet, um das Skript zu authentifizieren, das Sie in Schritt 4 ausführen, um Ihre HR-Daten in die Microsoft-Cloud hochzuladen. Achten Sie beim Erstellen dieser Aad-App darauf, die folgenden Informationen zu speichern. Diese Werte werden in Schritt 3 und Schritt 4 verwendet.
+Der nächste Schritt besteht darin, eine neue app in Azure Active Directory (Azure AD) zu erstellen und zu registrieren. Die APP entspricht dem HR-Konnektor, den Sie in Schritt 3 erstellen. Durch das Erstellen dieser APP kann Azure AD den HR-Konnektor bei der Ausführung authentifizieren und versucht, auf Ihre Organisation zuzugreifen. Diese APP wird auch verwendet, um das Skript zu authentifizieren, das Sie in Schritt 4 ausführen, um Ihre HR-Daten in die Microsoft-Cloud hochzuladen. Achten Sie beim Erstellen dieser Azure AD-App darauf, die folgenden Informationen zu speichern. Diese Werte werden in Schritt 3 und Schritt 4 verwendet.
 
-- Aad-Anwendungs-ID (auch als *App-ID* oder *Client-ID*bezeichnet)
+- Azure AD Anwendungs-ID (auch als *App-ID* oder *Client-ID*bezeichnet)
 
-- Aad-Anwendungs Geheimnis (auch als *geheimer Client Schlüssel*bezeichnet)
+- Geheime Azure AD Anwendung (auch als *geheimer Client Schlüssel*bezeichnet)
 
 - Mandanten-ID (auch als *Verzeichnis-ID*bezeichnet)
 
-Eine Schritt-für-Schritt-Anleitung zum Erstellen einer APP in Aad finden Sie unter [Registrieren einer Anwendung mit der Microsoft Identity-Plattform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+Eine Schritt-für-Schritt-Anleitung zum Erstellen einer APP in Azure AD finden Sie unter [Registrieren einer Anwendung mit der Microsoft Identity-Plattform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
 ## <a name="step-3-create-the-hr-connector"></a>Schritt 3: Erstellen des HR-Connectors
 
@@ -225,7 +225,7 @@ Nachdem Sie diesen Schritt ausgeführt haben, müssen Sie unbedingt die Auftrags
 
 4. Führen Sie auf der Seite **Verbindung einrichten** die folgenden Schritte aus, und klicken Sie dann auf **weiter**:
 
-   a. Geben Sie die Aad-Anwendungs-ID für die Azure-App ein, die Sie in Schritt 2 erstellt haben, oder fügen Sie Sie ein.
+   a. Geben Sie die Azure AD Anwendungs-ID für die Azure-App ein, die Sie in Schritt 2 erstellt haben, oder fügen Sie Sie ein.
 
    b. Geben Sie einen Namen für den HR-Konnektor ein.
 
@@ -294,8 +294,8 @@ Der letzte Schritt beim Einrichten eines HR-Konnektors besteht darin, ein Beispi
    |**Parameter**|**Beschreibung**
    |:-----|:-----|:-----|
    |`tenantId`|Dies ist die ID für Ihre Microsoft 365-Organisation, die Sie in Schritt 2 erhalten haben. Sie können die Mandanten-ID für Ihre Organisation auch auf dem Blatt " **Übersicht** " im Azure AD Admin Center abrufen. Dies wird verwendet, um Ihre Organisation zu identifizieren.|
-   |`appId` |Dies ist die Aad-Anwendungs-ID für die APP, die Sie in Schritt 2 in Azure AD erstellt haben. Dies wird von Azure AD für die Authentifizierung verwendet, wenn das Skript versucht, auf Ihre Microsoft 365-Organisation zuzugreifen. | 
-   |`appSecret`|Dies ist der Aad-Anwendungsschlüssel für die APP, die Sie in Schritt 2 in Azure AD erstellt haben. Dies wird auch für die Authentifizierung verwendet.|
+   |`appId` |Dies ist die Azure AD Anwendungs-ID für die APP, die Sie in Schritt 2 in Azure AD erstellt haben. Dies wird von Azure AD für die Authentifizierung verwendet, wenn das Skript versucht, auf Ihre Microsoft 365-Organisation zuzugreifen. | 
+   |`appSecret`|Dies ist der Azure AD geheime Anwendungsschlüssel für die APP, die Sie in Schritt 2 in Azure AD erstellt haben. Dies wird auch für die Authentifizierung verwendet.|
    |`jobId`|Dies ist die Auftrags-ID für den HR-Konnektor, den Sie in Schritt 3 erstellt haben. Dies wird verwendet, um die HR-Daten, die in die Microsoft-Cloud hochgeladen werden, mit dem HR-Connector zuzuordnen.|
    |`csvFilePath`|Dies ist der Dateipfad für die CSV-Datei (gespeichert auf dem gleichen System wie das Skript), die Sie in Schritt 1 erstellt haben. Versuchen Sie, Leerzeichen im Dateipfad zu vermeiden; Verwenden Sie andernfalls einfache Anführungszeichen.|
    |||
@@ -307,9 +307,9 @@ Der letzte Schritt beim Einrichten eines HR-Konnektors besteht darin, ein Beispi
     ```
 
    Wenn der Upload erfolgreich war, zeigt das Skript die **erfolgreiche Nachricht hochladen** an.
-   
+
    > [!NOTE]
-   > Wenn Sie aufgrund von excution-Richtlinien Probleme beim Ausführen des vorherigen Befehls haben, finden Sie unter [Informationen zu Ausführungsrichtlinien](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies) und zum [Festlegen von ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy) Anleitungen zum Festlegen von Ausführungsrichtlinien. 
+   > Wenn beim Ausführen des vorherigen Befehls aufgrund von Ausführungsrichtlinien Probleme aufgetreten sind, finden Sie unter [Informationen zu Ausführungs](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies) Richtlinien und zum [Festlegen von ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy) Anleitungen zum Festlegen von Ausführungsrichtlinien.
 
 ## <a name="step-5-monitor-the-hr-connector"></a>Schritt 5: Überwachen des HR-Connectors
 

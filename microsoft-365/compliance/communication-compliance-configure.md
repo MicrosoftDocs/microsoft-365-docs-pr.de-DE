@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: c61529b612079c93e3c175a67fccd32a7c561400
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: 361e20129e67832c21631ebf1dbf0031319489ed
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597576"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289116"
 ---
 # <a name="get-started-with-communication-compliance"></a>Erste Schritte mit der Kommunikationscompliance
 
@@ -57,69 +57,57 @@ Wenn Sie keinen Office 365 Enterprise E5-Plan haben und das Insider Risk Managem
 >[!Important]
 >Standardmäßig haben globale Administratoren keinen Zugriff auf Features für die Kommunikations Kompatibilität. Die in diesem Schritt zugewiesenen Rollen sind erforderlich, bevor auf Kommunikations Kompatibilitätsfeatures zugegriffen werden kann.
 
-Es gibt fünf Rollen, die zum Konfigurieren von Berechtigungen zum Verwalten von Kommunikations Kompatibilitätsfeatures verwendet werden. Um die **Kommunikation Compliance** als Menüoption im Microsoft 365 Compliance Center zur Verfügung zu stellen und diese Konfigurationsschritte fortzusetzen, müssen Sie der *Administratorrolle "Communications Compliance"* zugewiesen sein.
+Es gibt fünf Rollengruppen, die zum Konfigurieren von Berechtigungen zum Verwalten von Kommunikations Kompatibilitätsfeatures verwendet werden. Um die **Kommunikation Compliance** als Menüoption im Microsoft 365 Compliance Center zur Verfügung zu stellen und diese Konfigurationsschritte fortzusetzen, müssen Sie den Administratorrollengruppen " *Communication Compliance* " oder " *Communication Compliance"* zugewiesen sein. Für den Zugriff auf und die Verwaltung von Kommunikations Kompatibilitätsfeatures nach der anfänglichen Konfiguration müssen Benutzer Mitglied mindestens einer Rollengruppe für die Kommunikations Kompatibilität sein.
 
-Je nachdem, wie Sie Kommunikationsrichtlinien und Warnungen verwalten möchten, müssen Sie eine oder mehrere neue Rollengruppen für Administratoren, Prüfer und Ermittler erstellen. Sie haben die Möglichkeit, Benutzer bestimmten Rollengruppen zuzuweisen, um verschiedene Bereiche der Kommunikations Kompatibilitätsfeatures zu verwalten. Sie können auch eine Rollengruppe erstellen und der Gruppe alle Kommunikations Konformitäts Rollen zuweisen. Erstellen Sie eine einzelne Rollengruppe oder mehrere Rollengruppen, die Ihren Anforderungen an die Compliance-Verwaltung am besten entsprechen.
+Je nachdem, wie Sie Kommunikationsrichtlinien und Warnungen verwalten möchten, müssen Sie Benutzer bestimmten Rollengruppen zuweisen. Sie haben die Möglichkeit, Benutzer mit unterschiedlichen Compliance-Verantwortlichkeiten bestimmten Rollengruppen zuzuweisen, um verschiedene Bereiche der Kommunikations Compliance-Features zu verwalten. Sie können auch festlegen, dass alle Benutzerkonten für designierte Administratoren, Analysten, Ermittler und Betrachter der Rollengruppe *Kommunikation Compliance* zugewiesen werden. Verwenden Sie eine einzelne Rollengruppe oder mehrere Rollengruppen, um Ihre Anforderungen an die Compliance-Verwaltung am besten anzupassen.
 
-Wählen Sie unter diesen Rollenoptionen beim Konfigurieren der Rollengruppen für die Kommunikations Konformität aus:
+Wählen Sie unter diese Rollengruppen Optionen aus, wenn Sie die Kommunikations Kompatibilität konfigurieren:
 
 |**Rolle**|**Rollenberechtigungen**|
 |:-----|:-----|
-| **Communication Compliance-Administrator** | Benutzer, denen diese Rolle zugewiesen ist, können Kommunikationsrichtlinien, globale Einstellungen und Rollengruppen Zuordnungen erstellen, lesen, aktualisieren und löschen. Benutzern, denen diese Rolle zugewiesen ist, können keine Nachrichten Benachrichtigungen angezeigt werden. |
-| **Kompatibilitätsanalyse für Kommunikation** | Benutzer, denen diese Rolle zugewiesen ist, können Richtlinien anzeigen, in denen Sie als Bearbeiter zugewiesen werden, Nachrichten Metadaten anzeigen (keine Nachrichteninhalte), an zusätzliche Bearbeiter eskalieren oder Benachrichtigungen an Benutzer senden. Ausstehende Warnungen können von Analysten nicht aufgelöst werden. |
-| **Untersuchung der Kommunikations Konformität** | Benutzer, denen diese Rolle zugewiesen ist, können Nachrichten Metadaten und-Inhalte anzeigen, an zusätzliche Bearbeiter eskalieren, zu einem erweiterten eDiscovery-Fall eskalieren, Benachrichtigungen an Benutzer senden und die Warnung lösen. |
-| **Communication Compliance Viewer** | Benutzer, denen diese Rolle zugewiesen ist, können auf der Homepage der Communication Compliance auf alle Berichts-Widgets zugreifen und alle Kommunikations Konformitätsberichte anzeigen. |
-| **Kommunikation Compliance Case Management** | Benutzer, denen diese Rolle zugewiesen ist, können Fälle verwalten und Benachrichtigungen bearbeiten. Diese Rolle ist für das Erstellen benutzerdefinierter Rollengruppen für Administratoren, Analysten und Ermittler erforderlich. Benutzerdefinierte Gruppen für Viewer benötigen diese Rolle nicht zugewiesen. |
+| **Kommunikation Compliance** | Verwenden Sie diese Rollengruppe, um die Kommunikations Konformität für Ihre Organisation in einer einzigen Gruppe zu verwalten. Durch Hinzufügen aller Benutzerkonten für designierte Administratoren, Analysten, Ermittler und Betrachter können Sie die Berechtigungen für die Kommunikations Konformität in einer einzigen Gruppe konfigurieren. Diese Rollengruppe enthält alle Berechtigungsrollen für die Kommunikations Konformität. Diese Konfiguration ist die einfachste Möglichkeit, um schnell mit der Kommunikation zu beginnen, und Sie eignet sich gut für Organisationen, die keine separaten Berechtigungen benötigen, die für getrennte Benutzergruppen definiert sind. |
+| **Communication Compliance-Administrator** | Verwenden Sie diese Rollengruppe, um die Kommunikationsrichtlinien Konfiguration zu konfigurieren und später Kommunikationsrichtlinien Administratoren in eine definierte Gruppe zu trennen. Benutzer, die dieser Rollengruppe zugewiesen sind, können Kommunikationsrichtlinien, globale Einstellungen und Rollengruppen Zuordnungen erstellen, lesen, aktualisieren und löschen. Benutzer, die dieser Rollengruppe zugewiesen sind, können keine Nachrichten Benachrichtigungen anzeigen. |
+| **Communication Compliance Analyst** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zuzuweisen, die als Kommunikations Compliance-Analysten fungieren sollen. Benutzer, die dieser Rollengruppe zugewiesen sind, können Richtlinien anzeigen, in denen Sie als Bearbeiter zugewiesen werden, Nachrichten Metadaten anzeigen (keine Nachrichteninhalte), an zusätzliche Bearbeiter eskalieren oder Benachrichtigungen an Benutzer senden. Ausstehende Warnungen können von Analysten nicht aufgelöst werden. |
+| **Communication Compliance Investigator** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zuzuweisen, die als Kommunikations Compliance-Ermittler fungieren sollen. Benutzer, die dieser Rollengruppe zugewiesen sind, können Nachrichten Metadaten und-Inhalte anzeigen, an zusätzliche Bearbeiter eskalieren, zu einem erweiterten eDiscovery-Fall eskalieren, Benachrichtigungen an Benutzer senden und die Warnung lösen. |
+| **Communication Compliance Viewer** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen für die Verwaltung von Kommunikations Berichten zuzuweisen. Benutzer, die dieser Rollengruppe zugewiesen sind, können auf der Homepage der Communication Compliance auf alle Berichts-Widgets zugreifen und alle Kommunikations Konformitätsberichte anzeigen. |
 
-### <a name="option-1-create-a-new-role-group-with-all-communication-compliance-roles"></a>Option 1: Erstellen einer neuen Rollengruppe mit allen Kommunikations Konformitäts Rollen
-
-1. Melden [https://protection.office.com/permissions](https://protection.office.com/permissions) Sie sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365-Organisation an.
-
-2. &amp;Wechseln Sie im Security Compliance Center zu **Berechtigungen**. Wählen Sie den Link zum Anzeigen und Verwalten von Rollen in Office 365 aus.
-
-3. Wählen Sie **Erstellen** aus.
-
-4. Geben Sie der neuen Rollengruppe im Feld **Name** einen Anzeigenamen. Wählen Sie **Weiter** aus.
-
-5. Wählen Sie **Rollen auswählen** aus, und klicken Sie dann auf **Hinzufügen**. Aktivieren Sie die Kontrollkästchen für die folgenden Rollen:
-
-    - Communication Compliance-Administrator
-    - Kompatibilitätsanalyse für Kommunikation
-    - Untersuchung der Kommunikations Konformität
-    - Communication Compliance Viewer
-    - Kommunikation Compliance Case Management
-
-    ![Kommunikation Compliance Roles](../media/communication-compliance-case-roles.png)
-
-6. Wählen Sie **Hinzufügen** und **Fertig**aus, und wählen Sie dann **weiter** aus, um fortzufahren.
-
-7. Wählen Sie **Mitglieder auswählen** aus, und klicken Sie dann auf **Hinzufügen**. Aktivieren Sie das Kontrollkästchen für alle Benutzer und Gruppen, für die Sie Richtlinien erstellen und Nachrichten mit Richtlinien Übereinstimmungen verwalten möchten, und wählen Sie dann **Hinzufügen** und **Fertig**aus. Wählen Sie **Weiter** aus.
-
-8. Wählen Sie **Rollengruppe erstellen** aus, um abzuschließen.
-
-### <a name="option-2-create-new-role-groups-with-different-communication-compliance-roles"></a>Option 2: Erstellen neuer Rollengruppen mit unterschiedlichen Kommunikations Konformitäts Rollen
-
-Erstellen Sie mehrere Rollengruppen, um den Zugriff auf Kommunikation und die Zuständigkeiten zwischen verschiedenen Benutzern in Ihrer Organisation zu segmentieren. Für jede neue Rollengruppe weisen Sie unterschiedliche Kommunikations Konformitäts Rollen zu.
+### <a name="option-1-assign-all-compliance-users-to-the-communication-compliance-role-group"></a>Option 1: Zuweisen aller Kompatibilitäts Benutzer zur Rollengruppe "Communication Compliance"
 
 1. Melden [https://protection.office.com/permissions](https://protection.office.com/permissions) Sie sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365-Organisation an.
 
 2. &amp;Wechseln Sie im Security Compliance Center zu **Berechtigungen**. Wählen Sie den Link zum Anzeigen und Verwalten von Rollen in Office 365 aus.
 
-3. Wählen Sie **Erstellen** aus.
+3. Wählen Sie die Rollengruppe *Kommunikations Kompatibilität* aus, und wählen Sie dann **Rollengruppe bearbeiten**aus.
 
-4. Geben Sie der neuen Rollengruppe im Feld **Name** einen Anzeigenamen. Wählen Sie **Weiter** aus.
+4. Wählen Sie im linken Navigationsbereich **Elemente** auswählen aus, und wählen Sie dann **Bearbeiten**aus.
 
-5. Wählen Sie **Rollen auswählen** aus, und klicken Sie dann auf **Hinzufügen**. Aktivieren Sie das Kontrollkästchen für die Kommunikations Konformitäts Rollen, die Sie dieser Gruppe zuweisen möchten. Wenn sich diese Rollengruppe beispielsweise für Compliance-Analysten in Ihrer Organisation eignet, wählen Sie die Rolle Compliance *Analysis* and *Communication Compliance Case Management* aus. Wenn diese Rollengruppe für Compliance-Ermittler gilt, wählen Sie die Rollen für die *Kommunikation Compliance Investigation* and *Communications Compliance Case Management* aus.
+5. Wählen Sie **Hinzufügen** aus, und aktivieren Sie dann das Kontrollkästchen für alle Benutzer, die Sie der Rollengruppe *Kommunikations Kompatibilität* hinzufügen möchten.
 
-    ![Kommunikation Compliance Roles](../media/communication-compliance-analysts-role-group.png)
+6. Wählen Sie **Hinzufügen** aus, und klicken Sie dann auf **Fertig**.
 
-6. Wählen Sie **Hinzufügen** und **Fertig**aus, und wählen Sie dann **weiter** aus, um fortzufahren.
+7. Wählen Sie **Speichern** aus, um die Benutzer der Rollengruppe hinzuzufügen. Wählen Sie **Schließen** , um die Schritte abzuschließen.
 
-7. Wählen Sie **Mitglieder auswählen** aus, und klicken Sie dann auf **Hinzufügen**. Aktivieren Sie das Kontrollkästchen für alle Benutzer und Gruppen, für die Sie Richtlinien erstellen und Nachrichten mit Richtlinien Übereinstimmungen verwalten möchten, und wählen Sie dann **Hinzufügen** und **Fertig**aus. Wählen Sie **Weiter** aus.
+### <a name="option-2-assign-users-to-specific-communication-compliance-role-groups"></a>Option 2: Zuweisen von Benutzern zu bestimmten Rollengruppen für die Kommunikations Konformität
 
-8. Wählen Sie **Rollengruppe erstellen** aus, um abzuschließen.
+Verwenden Sie diese Option, um Benutzer bestimmten Rollengruppen zuzuweisen, um den Zugriff auf Kommunikation und Zuständigkeiten zwischen verschiedenen Benutzern in Ihrer Organisation zu segmentieren.
 
-9. Erstellen Sie nach Bedarf zusätzliche Rollengruppen für die Kommunikations Konformität.
+1. Melden [https://protection.office.com/permissions](https://protection.office.com/permissions) Sie sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365-Organisation an.
+
+2. &amp;Wechseln Sie im Security Compliance Center zu **Berechtigungen**. Wählen Sie den Link zum Anzeigen und Verwalten von Rollen in Office 365 aus.
+
+3. Wählen Sie eine der Rollengruppen Kommunikations Konformität aus, und wählen Sie dann **Rollengruppe bearbeiten**aus.
+
+4. Wählen Sie im linken Navigationsbereich **Elemente** auswählen aus, und wählen Sie dann **Bearbeiten**aus.
+
+5. Wählen Sie **Hinzufügen** aus, und aktivieren Sie dann das Kontrollkästchen für alle Benutzer, die Sie der Rollengruppe hinzufügen möchten.
+
+6. Wählen Sie **Hinzufügen** aus, und klicken Sie dann auf **Fertig**.
+
+7. Wählen Sie **Speichern** aus, um die Benutzer der Rollengruppe hinzuzufügen.
+
+8. Wählen Sie die Rollengruppe "nächste Kommunikations Konformität" aus, und wiederholen Sie dann die Schritte 4-7 für jede erforderliche Rollengruppe.
+
+9. Wählen Sie **Schließen** aus, um die Schritte abzuschließen.
 
 Weitere Informationen zu Rollengruppen und Berechtigungen finden Sie unter [Berechtigungen im Compliance Center](../security/office-365-security/protect-against-threats.md).
 
@@ -216,7 +204,7 @@ Sie können auch festlegen, dass für angezeigte Benutzernamen Anonymisierung ak
 
 4. Um die Anonymisierung zu aktivieren, wählen Sie **Anonyme Versionen von Benutzernamen anzeigen**aus.
 
-5. Wählen Sie **Speichern** aus.
+5. Klicken Sie auf **Speichern**.
 
 6. Navigieren Sie zur Registerkarte **Notiz Vorlagen** , und wählen Sie dann **Notizvorlage erstellen**aus.
 

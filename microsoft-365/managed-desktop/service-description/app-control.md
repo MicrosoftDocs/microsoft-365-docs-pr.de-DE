@@ -1,5 +1,5 @@
 ---
-title: App-Steuerelement
+title: App-Steuerung
 description: ''
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
@@ -10,21 +10,21 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f11c7a4aa69c96232a33c565e7bf20d04b96d1f7
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 32ed3f95ebb4299796c5ad3eb71802c949701b65
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529971"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289127"
 ---
-# <a name="app-control"></a>App-Steuerelement
+# <a name="app-control"></a>App-Steuerung
 
 App-Steuerelement ist eine optionale Sicherheitspraxis in Microsoft Managed Desktop, die die Ausführung von Code auf Clientgeräten einschränkt. Durch dieses Steuerelement wird das Risiko von Schadsoftware oder böswilligen Skripts verringert, da nur Code ausgeführt werden kann, der von einer vom Kunden genehmigten Liste mit Herausgebern signiert wurde. Dieses Steuerelement bietet viele Sicherheitsvorteile, zielt jedoch in erster Linie darauf ab, Daten und Identität vor clientbasierten Exploits zu schützen.
 
 Microsoft Managed Desktop vereinfacht die Verwaltung von App-Steuerelement Richtlinien, indem eine Basisrichtlinie erstellt wird, die Kern Produktivitätsszenarien ermöglicht. Sie können die Vertrauensstellung auf zusätzliche Signaturer erweitern, die für die apps und Skripts in Ihrer Umgebung spezifisch sind. 
 
 
-Jede Sicherheitstechnologie erfordert ein Gleichgewichtzwischen Benutzerfreundlichkeit, Sicherheit und Kosten. Das App-Steuerelement reduziert die Bedrohung durch Schadsoftware in Ihrer Umgebung, es gibt jedoch Konsequenzen für den Endbenutzer und zusätzliche Aktionen für Ihren IT-Administrator.
+Jede Sicherheitstechnologie erfordert ein Gleichgewichtzwischen Benutzerfreundlichkeit, Sicherheit und Kosten. Das App-Steuerelement reduziert die Bedrohung durch Schadsoftware in Ihrer Umgebung, es gibt jedoch Konsequenzen für den Benutzer und zusätzliche Aktionen für Ihren IT-Administrator.
 
 **Zusätzliche Sicherheit:**
 
@@ -73,7 +73,7 @@ Mit dieser Richtlinie werden Protokolle erstellt, um festzuhalten, ob eine APP o
 ### <a name="enforced-policy"></a>Erzwungene Richtlinie
 Durch diese Richtlinie wird verhindert, dass nicht vertrauenswürdige apps und Skripts gestartet werden, und es werden Protokolle erstellt, wenn eine APP oder ein Skript blockiert wird. Erzwungene Richtlinien verhindern, dass Standardbenutzer Apps oder Skripts ausführen können, die in Benutzer schreibbaren Verzeichnissen gespeichert sind.
 
-Für Geräte in der Test Gruppe wird eine Überwachungsrichtlinie angewendet, sodass Sie Sie verwenden können, um zu überprüfen, ob Anwendungen Probleme verursachen. Alle anderen Gruppen (zuerst, schnell und breit) verwenden eine erzwungene Richtlinie, sodass Endbenutzer in diesen Gruppen keine nicht vertrauenswürdigen Apps oder Skripts ausführen können.
+Für Geräte in der Test Gruppe wird eine Überwachungsrichtlinie angewendet, sodass Sie Sie verwenden können, um zu überprüfen, ob Anwendungen Probleme verursachen. Alle anderen Gruppen (zuerst, schnell und breit) verwenden eine erzwungene Richtlinie, sodass Benutzer in diesen Gruppen keine nicht vertrauenswürdigen Apps oder Skripts ausführen können.
 
 
 

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: 'Hier finden Sie die Schritte zum Übertragen einer Domäne von Microsoft an eine andere Registrierungsstelle. '
-ms.openlocfilehash: 7e00f5ae2c36a06803a3f7a8acd825dcab90805c
-ms.sourcegitcommit: 6fb2a1c404ea3c3573b0f7803bf17459a9387891
+ms.openlocfilehash: c5c1e98ed14c3ac975e55aadbff65e52165a6f8b
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46788981"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289171"
 ---
 # <a name="transfer-a-domain-from-microsoft-to-another-host"></a>Übertragen einer Domäne von Microsoft auf einen anderen Host
 
@@ -43,7 +43,7 @@ Führen Sie die folgenden Schritte aus, um einen Code bei Microsoft 365 zu erhal
 
 1. Wechseln Sie im Admin Center zu  **Einstellungen**   >  **Domänen**.
 
-2. Wählen Sie <auf der Seite **Domänen** die Microsoft 365-Domäne aus, die Sie an eine andere Domänenregistrierungsstelle übertragen möchten, und wählen Sie dann **Integrität überprüfen**aus.
+2. Wählen Sie auf der Seite **Domänen** die Microsoft 365-Domäne aus, die Sie an eine andere Domänenregistrierungsstelle übertragen möchten, und wählen Sie dann **Integrität überprüfen**aus.
 
 3. Wählen Sie oben auf der Seite **Domäne übertragen**aus.
 

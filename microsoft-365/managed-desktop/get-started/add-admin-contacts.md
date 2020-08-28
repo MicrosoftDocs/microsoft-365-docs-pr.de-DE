@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d8a5775d90f592aa5f64dd5f379fb37278032d87
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 8b287200b1c94ff350f7ba00cf0c4e6bc1b4a71f
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529803"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289261"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Hinzufügen und Überprüfen von Administrator-Kontakten im Administratorportal
 
@@ -42,7 +42,7 @@ Fokusbereich | Fragen zu
 App-Verpackung | Problembehandlung bei App-Verpackungen
 Geräte | Geräte Integrität, Problembehandlung mit Microsoft Managed Desktop-Geräten
 Sicherheit | Beheben von Sicherheitsproblemen mit Microsoft Managed Desktop-Geräten
-IT-Helpdesk | in Fällen, in denen unser Supportmitarbeiter Karten für Endbenutzer außerhalb der Microsoft Managed Desktop-Support Bereiche übergibt 
+IT-Helpdesk | in Fällen, in denen unser Supportmitarbeiter Benutzertickets außerhalb der Microsoft Managed Desktop-Support Bereiche übergibt 
 Andere | Für Probleme, die nicht von anderen Bereichen abgedeckt werden
 
 **Wer auch immer Sie für diese Kontakte ausgewählt haben, muss über das Wissen und die Autorität verfügen, um Entscheidungen für Ihre von Microsoft verwaltete Desktop Umgebung zu treffen.** Wenn Sie Ihre Microsoft Managed Desktop-Umgebung an Bord haben, werden Sie aufgefordert, Kontakte für den lokalen Helpdesk und die Sicherheit hinzuzufügen. 

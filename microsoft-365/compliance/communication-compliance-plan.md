@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 4c44610f4d74fe9ebf3c8e549692d9cc7cc6cb34
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: 5fde3c6d5fd14bd0e4d108030ffaa8e5aeb5ed5c
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597422"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289320"
 ---
 # <a name="plan-for-communication-compliance"></a>Planen der Kommunikationscompliance
 
@@ -42,25 +42,25 @@ Identifizieren Sie die geeigneten Beteiligten in Ihrer Organisation für die Zus
 
 ## <a name="plan-for-the-investigation-and-remediation-workflow"></a>Planen des unter Such-und Korrektur Workflows
 
-Wählen Sie dedizierte Beteiligte aus, um die Warnungen und Fälle auf einer regulären Kadenz im [Microsoft 365 Compliance Center](https://compliance.microsoft.com/)zu überwachen und zu überprüfen. Stellen Sie sicher, dass Sie verstehen, wie Sie den Beteiligten in Ihrer Organisation unterschiedliche Kommunikations Konformitäts Rollen zuweisen müssen.
+Wählen Sie dedizierte Beteiligte aus, um die Warnungen und Fälle auf einer regulären Kadenz im [Microsoft 365 Compliance Center](https://compliance.microsoft.com/)zu überwachen und zu überprüfen. Stellen Sie sicher, dass Sie verstehen, wie Sie Benutzern und Beteiligten unterschiedlichen Kommunikations Compliance-Rollengruppen in Ihrer Organisation zuweisen können.
 
-Je nachdem, wie Sie Kommunikationsrichtlinien und Warnungen verwalten möchten, müssen Sie eine oder mehrere neue Rollengruppen für Administratoren, Prüfer und Ermittler erstellen. Sie haben die Möglichkeit, Benutzer bestimmten Rollengruppen zuzuweisen, um verschiedene Sätze von Kompatibilitätsfeatures für die Kommunikation zu verwalten. Sie können auch eine Rollengruppe erstellen und der Gruppe alle Kommunikations Konformitäts Rollen zuweisen. Erstellen Sie eine einzelne Rollengruppe oder mehrere Gruppen, die Ihren Anforderungen an die Compliance-Verwaltung am besten entsprechen.
+Je nachdem, wie Sie Kommunikationsrichtlinien und Warnungen verwalten möchten, müssen Sie Benutzer einer oder mehreren Rollengruppen für Administratoren, Prüfer und Ermittler zuweisen. Sie haben die Möglichkeit, Benutzer bestimmten Rollengruppen zuzuweisen, um verschiedene Sätze von Kompatibilitätsfeatures für die Kommunikation zu verwalten. Oder Sie können beschließen, alle Benutzer der Kommunikations Konformität der Rollengruppe "Kommunikations Konformität" zuzuweisen. Verwenden Sie eine einzelne Rollengruppe oder mehrere Gruppen, um Ihre Anforderungen an die Compliance-Verwaltung am besten anzupassen.
 
-Planen Sie beim Konfigurieren der Rollengruppen für die Kommunikations Konformität eine Auswahl aus diesen Rollenoptionen:
+Planen Sie beim Konfigurieren der Kommunikations Kompatibilität eine Auswahl aus diesen Rollengruppen Optionen:
 
 |**Rolle**|**Rollenberechtigungen**|
 |:-----|:-----|
-| **Communication Compliance-Administrator** | Benutzer, denen diese Rolle zugewiesen ist, können Kommunikationsrichtlinien, globale Einstellungen und Rollengruppen Zuordnungen erstellen, lesen, aktualisieren und löschen. Benutzern, denen diese Rolle zugewiesen ist, können keine Nachrichten Benachrichtigungen angezeigt werden. |
-| **Kompatibilitätsanalyse für Kommunikation** | Benutzer, denen diese Rolle zugewiesen ist, können Richtlinien anzeigen, in denen Sie als Bearbeiter zugewiesen werden, Nachrichten Metadaten anzeigen (keine Nachrichteninhalte), an zusätzliche Bearbeiter eskalieren oder Benachrichtigungen an Benutzer senden. Ausstehende Warnungen können von Analysten nicht aufgelöst werden. |
-| **Untersuchung der Kommunikations Konformität** | Benutzer, denen diese Rolle zugewiesen ist, können Nachrichten Metadaten und-Inhalte anzeigen, an zusätzliche Bearbeiter eskalieren, zu einem erweiterten eDiscovery-Fall eskalieren, Benachrichtigungen an Benutzer senden und die Warnung lösen. |
-| **Communication Compliance Viewer** | Benutzer, denen diese Rolle zugewiesen ist, können auf der Homepage der Communication Compliance auf alle Berichts-Widgets zugreifen und alle Kommunikations Konformitätsberichte anzeigen. |
-| **Kommunikation Compliance Case Management** | Benutzer, denen diese Rolle zugewiesen ist, können Fälle verwalten und Benachrichtigungen bearbeiten. Diese Rolle ist für das Erstellen benutzerdefinierter Rollengruppen für Administratoren, Analysten und Ermittler erforderlich. Benutzerdefinierte Gruppen für Viewer benötigen diese Rolle nicht zugewiesen. |
+| **Kommunikation Compliance** | Verwenden Sie diese Rollengruppe, um die Kommunikations Konformität für Ihre Organisation in einer einzigen Gruppe zu verwalten. Durch Hinzufügen aller Benutzerkonten für designierte Administratoren, Analysten, Ermittler und Betrachter können Sie die Berechtigungen für die Kommunikations Konformität in einer einzigen Gruppe konfigurieren. Diese Rollengruppe enthält alle Berechtigungsrollen für die Kommunikations Konformität. Diese Konfiguration ist die einfachste Möglichkeit, um schnell mit der Kommunikation zu beginnen, und Sie eignet sich gut für Organisationen, die keine separaten Berechtigungen benötigen, die für getrennte Benutzergruppen definiert sind. |
+| **Communication Compliance-Administrator** | Verwenden Sie diese Rollengruppe, um die Kommunikationsrichtlinien Konfiguration zu konfigurieren und später Kommunikationsrichtlinien Administratoren in eine definierte Gruppe zu trennen. Benutzer, die dieser Rollengruppe zugewiesen sind, können Kommunikationsrichtlinien, globale Einstellungen und Rollengruppen Zuordnungen erstellen, lesen, aktualisieren und löschen. Benutzer, die dieser Rollengruppe zugewiesen sind, können keine Nachrichten Benachrichtigungen anzeigen. |
+| **Communication Compliance Analyst** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zuzuweisen, die als Kommunikations Compliance-Analysten fungieren sollen. Benutzer, die dieser Rollengruppe zugewiesen sind, können Richtlinien anzeigen, in denen Sie als Bearbeiter zugewiesen werden, Nachrichten Metadaten anzeigen (keine Nachrichteninhalte), an zusätzliche Bearbeiter eskalieren oder Benachrichtigungen an Benutzer senden. Ausstehende Warnungen können von Analysten nicht aufgelöst werden. |
+| **Communication Compliance Investigator** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zuzuweisen, die als Kommunikations Compliance-Ermittler fungieren sollen. Benutzer, die dieser Rollengruppe zugewiesen sind, können Nachrichten Metadaten und-Inhalte anzeigen, an zusätzliche Bearbeiter eskalieren, zu einem erweiterten eDiscovery-Fall eskalieren, Benachrichtigungen an Benutzer senden und die Warnung lösen. |
+| **Communication Compliance Viewer** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen für die Verwaltung von Kommunikations Berichten zuzuweisen. Benutzer, die dieser Rollengruppe zugewiesen sind, können auf der Homepage der Communication Compliance auf alle Berichts-Widgets zugreifen und alle Kommunikations Konformitätsberichte anzeigen. |
 
 ## <a name="plan-for-policies"></a>Planen von Richtlinien
 
 Das Erstellen von Richtlinien für die Kommunikations Konformität ist schnell und einfach mit [vordefinierten Vorlagen](communication-compliance-feature-reference.md#policy-templates) für anstößige Sprache, vertrauliche Informationen und behördliche Compliance. Benutzerdefinierte Kommunikationsrichtlinien ermöglichen die Flexibilität bei der Erkennung und Untersuchung von Problemen, die für Ihre Organisation und Anforderungen spezifisch sind.
 
-Berücksichtigen Sie bei der Planung von Kommunikations Konformitätsrichtlinien Folgendes:
+Berücksichtigen Sie bei der Planung von Kommunikations Konformitätsrichtlinien die folgenden Bereiche:
 
 - Sie sollten alle Benutzer in Ihrer Organisation als im Rahmen ihrer Kommunikationsrichtlinien Konformität hinzufügen. Das Identifizieren bestimmter Benutzer als in-Scope für einzelne Richtlinien ist unter bestimmten Umständen nützlich, allerdings sollten die meisten Organisationen alle Benutzer in Kommunikationsrichtlinien einbinden, die für die Erkennung von Belästigung oder Diskriminierung optimiert sind.
 - Um das Setup zu vereinfachen, sollten Sie Gruppen für Personen erstellen, die Ihre Kommunikation überprüfen müssen. Wenn Sie mit Gruppen arbeiten; möglicherweise benötigen Sie mehrere. Zum Beispiel, wenn Sie die Kommunikation zwischen zwei verschiedenen Personengruppen überprüfen möchten oder wenn Sie eine Gruppe angeben möchten, die nicht überwacht wird.

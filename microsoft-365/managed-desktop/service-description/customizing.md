@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 826710bf59acd88494adf1f154e5657d1e039af7
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 0785d7ac12c7b027322338d9949a10ea30168b3b
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529935"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289061"
 ---
 # <a name="exceptions-to-the-service-plan"></a>Dienstplanausnahmen
 
-Microsoft Managed Desktop stellt eine kuratierte Geräteliste, [Standardgeräte Einstellungen](device-policies.md), Anwendungsanforderungen und bestimmte [konfigurierbare Einstellungen](../working-with-managed-desktop/config-setting-overview.md)bereit, die für Endbenutzer eine sichere, produktive und angenehme Umgebung bieten. Es empfiehlt sich, immer bei der Bereitstellung des Diensts zu bleiben. Allerdings erkennen wir, dass einige Details des Diensts möglicherweise nicht genau den Anforderungen Ihrer Organisation entsprechen. Wenn Sie der Meinung sind, dass Sie den Dienst auf eine bestimmte Art und Weise ändern müssen, ist es wichtig, dass Sie die folgenden Prozesse befolgen, um diese Änderungen anzufordern.
+Microsoft Managed Desktop stellt eine kuratierte Geräteliste, [Standardgeräte Einstellungen](device-policies.md), Anwendungsanforderungen und bestimmte [konfigurierbare Einstellungen](../working-with-managed-desktop/config-setting-overview.md)bereit, die alle für eine sichere, produktive und angenehme Benutzeroberfläche ausgelegt sind. Es empfiehlt sich, immer bei der Bereitstellung des Diensts zu bleiben. Allerdings erkennen wir, dass einige Details des Diensts möglicherweise nicht genau den Anforderungen Ihrer Organisation entsprechen. Wenn Sie der Meinung sind, dass Sie den Dienst auf eine bestimmte Art und Weise ändern müssen, ist es wichtig, dass Sie die folgenden Prozesse befolgen, um diese Änderungen anzufordern.
  
 ## <a name="types-of-exceptions"></a>Ausnahmetypen
 
@@ -26,7 +26,7 @@ Eine Ausnahme ist jede Ergänzung oder Änderung an der Microsoft Managed Deskto
 
 |Typ  |Beschreibung  |
 |---------|---------|
-|Produktivitätssoftware     |  Von Endbenutzern benötigte Vordergrund-Software, eingeschränkt durch die [Anwendungsanforderungen](mmd-app-requirements.md)       |
+|Produktivitätssoftware     |  Von Benutzern benötigte Vordergrund-Software, eingeschränkt durch die [Anwendungsanforderungen](mmd-app-requirements.md)       |
 |Sicherheits-Agents & VPNs     |  Software, die zum Sichern, überwachen oder Ändern des Verhaltens des Geräts oder Netzwerks verwendet wird       |
 |Digitale Erlebnis Überwachung     |  Software zum Nachverfolgen von Daten auf dem Gerät eines Benutzers, um Sie zu melden.       |
 |Hardware-oder Software Treiber     |   Gerätetreiber, eingeschränkt durch die [Anwendungsanforderungen](mmd-app-requirements.md)      |
@@ -48,7 +48,7 @@ Eine Ausnahme ist jede Ergänzung oder Änderung an der Microsoft Managed Deskto
 Bei der Überprüfung von Ausnahmeanforderungen bewerten wir diese Faktoren in dieser Reihenfolge:
  
 1.  Einige Anwendungen und Richtlinien, die von Microsoft Managed Desktop auf allen Geräten bereitgestellt werden, sind nicht verhandelbar, daher darf Ihre Anforderung keine Auswirkungen auf diese haben. Weitere Informationen finden Sie unter [Device Configuration](device-policies.md) .
-2.  Eingeschränkte Produktivitätssoftware, die von einem Endbenutzer für seine Aufgabe benötigt wird, wird wahrscheinlich genehmigt. 
+2.  Eingeschränkte Produktivitätssoftware, die ein Benutzer für seine Aufgaben benötigt, wird wahrscheinlich genehmigt. 
 3.  Wenn Ihre Anforderung mithilfe der Microsoft-Technologie erfüllt werden kann, werden wir Ihre Anforderung für einen Ausnahme Migrationszeitraum von drei bis zwölf Monaten (je nach Projektumfang) genehmigen.
 4.  Wenn Ihre Anforderung mithilfe der Microsoft-Technologie nicht erfüllt werden kann, werden wir Ihre Anfrage wahrscheinlich genehmigen, es sei denn, Sie verletzt eine der nachfolgenden Bedingungen.  
 
