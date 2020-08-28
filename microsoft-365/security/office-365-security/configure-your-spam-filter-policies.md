@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Administratoren erfahren, wie Sie Anti-Spam-Richtlinien in Exchange Online Protection (EOP) anzeigen, erstellen, ändern und löschen können.
-ms.openlocfilehash: d2abc863468fe66de516e954a53253332f0ad0ee
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: e27e32778f908e85fd4bf0b205e7b80fef798859
+ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827325"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47255779"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Konfigurieren von Antispamrichtlinien in EOP
 
@@ -70,7 +70,7 @@ Wenn Sie die Effektivität der Spamfilterung erhöhen möchten, können Sie benu
     - **Security Reader** im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
     - **Schreibgeschützte Organisationsverwaltung** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
-- Die empfohlenen Einstellungen für Richtlinien für Antischadsoftware finden Sie unter [EOP-Antispam-Richtlinieneinstellungen](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
+- Die empfohlenen Einstellungen für Richtlinien für Antispam finden Sie unter [EOP-Antispam-Richtlinieneinstellungen](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
 
 ## <a name="use-the-security--compliance-center-to-create-anti-spam-policies"></a>Verwenden des Security & Compliance Centers zum Erstellen von Antispamrichtlinien
 
@@ -511,7 +511,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-Hoste
 
 ### <a name="use-powershell-to-modify-spam-filter-policies"></a>Verwenden von PowerShell zum Ändern von Spamfilterrichtlinien
 
-Abgesehen von den folgenden Elementen stehen dieselben Einstellungen zur Verfügung, wenn Sie eine Schadsoftware-Filterrichtlinie in PowerShell ändern, wie wenn Sie die Richtlinie wie in Abschnitt [Schritt 1: Verwenden von PowerShell zum Erstellen einer Spamfilterrichtlinie](#step-1-use-powershell-to-create-a-spam-filter-policy) weiter oben in diesem Thema beschrieben erstellen.
+Abgesehen von den folgenden Elementen stehen dieselben Einstellungen zur Verfügung, wenn Sie eine Spamfilterrichtlinie in PowerShell ändern, wie wenn Sie die Richtlinie wie in Abschnitt [Schritt 1: Verwenden von PowerShell zum Erstellen einer Spamfilterrichtlinie](#step-1-use-powershell-to-create-a-spam-filter-policy) (weiter oben zu diesem Thema beschrieben) erstellen.
 
 - Die Option _MakeDefault_, mit der die angegebene Richtlinie zur Standardrichtlinie erklärt wird (angewendet auf alle, immer **Niedrigste** Priorität, und Sie können sie nicht löschen), steht nur zur Verfügung, wenn Sie eine Spamfilterrichtlinie in PowerShell ändern.
 
