@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 58d3355788d9af4297ba454c404b4b2b920c358e
-ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
+ms.openlocfilehash: bf3d1745030561102b5b7b25611001a4d7698ef0
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43790693"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289651"
 ---
 # <a name="microsoft-managed-desktop-supported-regions-and-languages"></a>Von Microsoft verwaltete Desktop unterstützte Regionen und Sprachen
 
@@ -19,7 +19,7 @@ Dieser Artikel enthält Details zu Regionen und Sprachen, die von Microsoft Mana
 
 ## <a name="supported-languages"></a>Unterstützte Sprachen
 
-Englisch ist die einzige Sprache, die Benutzern von Microsoft Managed Desktop zur Verfügung steht. Dies umfasst alle Benutzeroberflächen für Endbenutzer und Administratoren sowie alle Interaktionen sowohl mit [Administrator Unterstützung](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) als auch mit [Endbenutzer Unterstützung](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support).
+Englisch ist die einzige Sprache, die Benutzern von Microsoft Managed Desktop zur Verfügung steht. Dies umfasst alle Benutzeroberflächen für Benutzer und Administratoren sowie alle Interaktionen sowohl mit [Administrator Unterstützung](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) als auch mit [Endbenutzer Unterstützung](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support).
 
 
 Sie können verwaltete Geräte auch außerhalb der englischsprachigen Regionen ohne Unterbrechung des von Microsoft verwalteten Desktop Diensts verwenden. Beispielsweise kann ein Mitarbeiter mit Hauptsitz in Großbritannien sicher arbeiten und Updates auf dem verwalteten Gerät erhalten, während Sie in Asien, Europa oder Südamerika Reisen. 
@@ -45,4 +45,4 @@ Organisationen in den folgenden Ländern können Microsoft Managed Desktop abonn
 - Australien
 - Neuseeland
 
-Sowohl für Endbenutzer als auch für Administratoren in diesen Regionen muss für Ihre Geräte und Verwaltungstools Englisch verwendet werden. 
+Sowohl Benutzer als auch Administratoren in diesen Regionen müssen Englisch für Ihre Geräte und Verwaltungstools verwenden. 

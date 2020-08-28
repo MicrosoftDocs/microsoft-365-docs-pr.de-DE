@@ -10,16 +10,16 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9efe6ba6704b0e1633973d157c38827221316bbd
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 0b76a14a30caeb75cfdcb8acc5715fe6710e0625
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430447"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289459"
 ---
 # <a name="work-with-app-control"></a>Arbeiten mit dem App-Steuerelement
 
-Sobald die APP-Steuerung in Ihrer Umgebung bereitgestellt wurde, haben sowohl Sie als auch Microsoft Managed Desktop-Vorgänge fortlaufende Aufgaben. Beispielsweise können Sie eine neue app in der Umgebung hinzufügen oder einen vertrauenswürdigen Signaturer hinzufügen (oder entfernen). Um die Sicherheit zu verbessern, sollten alle apps Code signiert sein, bevor Sie Sie an Endbenutzer freigeben. Die Herausgeber Details einer App enthalten Informationen zur signiererin.
+Sobald die APP-Steuerung in Ihrer Umgebung bereitgestellt wurde, haben sowohl Sie als auch Microsoft Managed Desktop-Vorgänge fortlaufende Aufgaben. Beispielsweise können Sie eine neue app in der Umgebung hinzufügen oder einen vertrauenswürdigen Signaturer hinzufügen (oder entfernen). Um die Sicherheit zu verbessern, sollten alle apps Code signiert sein, bevor Sie Sie für Benutzer freigeben. Die Herausgeber Details einer App enthalten Informationen zur signiererin.
 
 
 ## <a name="add-a-new-app"></a>Hinzufügen einer neuen App

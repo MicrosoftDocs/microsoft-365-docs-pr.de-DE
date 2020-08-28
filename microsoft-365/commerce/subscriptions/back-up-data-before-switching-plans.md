@@ -22,16 +22,18 @@ search.appverid:
 - BEA160
 ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
 description: Sichern von Outlook-, OneDrive-, Jammer-und SharePoint-Inhalten, bevor Sie Microsoft 365-Pläne ändern.
-ms.openlocfilehash: 9acc97f65bb5b471cb992d7f01cd299192b74a52
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 1158a98fc35c586ae900ef64579b52b9d64a85e6
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818531"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294717"
 ---
 # <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>Sichern von Daten vor dem Wechsel von Microsoft 365 for Business-Plänen
 
 Wenn ein Benutzer zu einem anderen Abonnement mit weniger datenbezogenen Diensten gewechselt wird oder ein Benutzer die Organisation verlässt, kann eine Kopie der in Microsoft 365 gespeicherten Daten heruntergeladen werden, bevor Sie zum neuen Abonnement gewechselt werden.
+
+Wenn Sie einen Benutzer in ein Abonnement verschieben, das über dieselben oder mehrere Dienste verfügt, müssen Sie keine Benutzerdaten sichern. Weitere Informationen finden Sie unter " [Benutzer in ein anderes Abonnement migrieren](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/move-users-different-subscription)".
   
 ## <a name="save-a-copy-of-outlook-information"></a>Sichern einer Kopie von Outlook-Daten
 
@@ -62,7 +64,7 @@ Standardmäßig weist die URL der Teamwebsite das folgende Format auf:
 https://<orgDomain>/_layouts/15/start.aspx#/SitePages/Home.aspx
 ```
 
-dabei _\<orgDomain\>_ ist die URL der Organisation.
+dabei  _\<orgDomain\>_ ist die URL der Organisation.
   
 Wenn die Domäne der Organisation beispielsweise contoso.onmicrosoft.com lautet, ist die direkte URL der Teamwebsite https://contoso.onmicrosoft.com/_layouts/15/start.aspx#/SitePages/Home.aspx.
   

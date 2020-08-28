@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie ein Postfach So konfigurieren, dass Spam-und Phishing-e-Mails erfasst werden, die von Benutzern gemeldet werden.
-ms.openlocfilehash: b21a95629e3b84ea77bbee5a988f84c1d55d717f
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 458938105d03cb82dfa4e9a7824f8b026fddec5d
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866931"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294753"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-exchange-online"></a>Angeben eines Postfachs für Benutzer Übermittlungen von Spam-und Phishing-Nachrichten in Exchange Online
 
@@ -47,10 +47,10 @@ Durch das Übermitteln von Benutzern gemeldeten Nachrichten an ein benutzerdefin
 
   - Um die Konfiguration für Benutzer Übermittlungen zu ändern, müssen Sie Mitglied einer der folgenden Rollengruppen sein:
 
-    - **Organisationsverwaltung** oder **Sicherheitsadministrator** im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+    - **[Exchange-Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** in Azure AD **und Organisationsverwaltung** oder **Sicherheits Administrator** und im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
     - **Organisationsverwaltung** oder **Nachrichtenschutz** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
-  - Für den schreibgeschützten Zugriff auf Benutzereingaben müssen Sie Mitglied einer der folgenden Rollengruppen sein:
+  - Für den schreibgeschützten Zugriff auf Benutzereingaben müssen Sie Mitglied der folgenden Rollengruppen sein:
 
     - **Security Reader** im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
     - **Schreibgeschützte Organisationsverwaltung** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).

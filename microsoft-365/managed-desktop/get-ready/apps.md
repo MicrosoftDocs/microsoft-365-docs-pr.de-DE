@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: bc7192cf82c825a13780567663695d96a760b3ef
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: da5798b3412cb69580e5d9adc582f0ca4add1e3e
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530103"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289591"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Anwendungen in Microsoft Managed Desktop
 
@@ -26,7 +26,7 @@ ms.locfileid: "46530103"
 
 Microsoft enthält bestimmte wichtige Apps zusammen mit der Microsoft 365 E3-oder E5-Lizenz, die für die Teilnahme an Microsoft Managed Desktop benötigt wird. Obwohl wir diese apps bereitstellen, haben Sie jedoch immer noch bestimmte Zuständigkeiten und Aktionen.
 
-Sie können auch zusätzliche nicht-Microsoft-Apps für Ihre Endbenutzer zur Self-Service-Bereitstellung über das Unternehmens Portal oder eine erforderliche Hintergrundinstallation mit der Bereitstellungs Pipeline von Microsoft InTune bereitstellen. Wenn Sie über das Fachwissen verfügen, können Sie diese apps, die Sie selbst benötigen, migrieren. Alternativ können Microsoft Consulting Services (MCS) oder nicht-Microsoft-Anbieter Ihnen gerne bei einem Paket-und Migrationsprojekt behilflich sein. Weitere Informationen zum Arbeiten mit MCS finden Sie unter [Working with Microsoft Consulting Services](apps-MCS.md).
+Sie können auch zusätzliche nicht-Microsoft-Apps für Ihre Benutzer zur Self-Service-Bereitstellung über das Unternehmens Portal oder eine erforderliche Hintergrundinstallation mit der Bereitstellungs Pipeline von Microsoft InTune bereitstellen. Wenn Sie über das Fachwissen verfügen, können Sie diese apps, die Sie selbst benötigen, migrieren. Alternativ können Microsoft Consulting Services (MCS) oder nicht-Microsoft-Anbieter Ihnen gerne bei einem Paket-und Migrationsprojekt behilflich sein. Weitere Informationen zum Arbeiten mit MCS finden Sie unter [Working with Microsoft Consulting Services](apps-MCS.md).
 
 
 ## <a name="apps-provided-by-microsoft"></a>Von Microsoft bereitgestellte apps
@@ -35,13 +35,13 @@ In Ihrer Microsoft Managed Desktop-Lizenz sind 64-Bit-Versionen der apps in der 
 
 ### <a name="what-microsoft-does-to-support-the-apps-we-provide"></a>Was Microsoft zur Unterstützung der von uns bereitgestellten apps tut
 
-Microsoft stellt den vollständigen Dienst für die Bereitstellung, Aktualisierung und Unterstützung für die enthaltenen Microsoft 365-Apps für Enterprise-apps bereit. Klick-und-Los-Versionen von Microsoft Project und Visio sind *nicht* standardmäßig enthalten, aber Microsoft Managed Desktop stellt Bereitstellungsgruppen zur Verfügung, mit denen Ihr IT-Administrator Lizenzen verwalten und diese Anwendungen entsprechend für Ihre Organisation bereitstellen kann. Microsoft unterstützt Endbenutzer dieser Anwendungen über die Microsoft Managed Desktop-Supportkanäle.
+Microsoft stellt den vollständigen Dienst für die Bereitstellung, Aktualisierung und Unterstützung für die enthaltenen Microsoft 365-Apps für Enterprise-apps bereit. Klick-und-Los-Versionen von Microsoft Project und Visio sind *nicht* standardmäßig enthalten, aber Microsoft Managed Desktop stellt Bereitstellungsgruppen zur Verfügung, mit denen Ihr IT-Administrator Lizenzen verwalten und diese Anwendungen entsprechend für Ihre Organisation bereitstellen kann. Microsoft unterstützt Benutzer dieser Anwendungen über die Microsoft Managed Desktop-Supportkanäle.
 
 ### <a name="what-you-need-to-do-to-support-the-apps-we-provide"></a>Was Sie zur Unterstützung der von uns bereitgestellten apps tun müssen
 
 Es gibt immer noch bestimmte Dinge, die Sie mit diesen apps tun müssen:
 
-- **Zuweisen von Lizenzen** – Sie sind für das Abrufen und Zuweisen der entsprechenden Lizenzen an Endbenutzer für Microsoft 365 apps for Enterprise verantwortlich.
+- **Zuweisen von Lizenzen** – Sie sind für das Abrufen und Zuweisen der entsprechenden Lizenzen für Benutzer für Microsoft 365 apps for Enterprise verantwortlich.
 - **Hinzufügen von Benutzern zu Sicherheitsgruppen** – Wenn Sie Microsoft Project oder Visio verwenden, muss Ihr IT-Administrator diese Benutzer den entsprechenden Bereitstellungsgruppen hinzufügen. IT-Administratoren sind außerdem dafür verantwortlich, Lizenzen von diesen Benutzern zurückzufordern, wenn Sie das Unternehmen verlassen.
 - **Bereitstellen von Microsoft 365-Add-ons** – Wenn Sie Add-ons für alle Microsoft 365-Apps für Enterprise-apps benötigen, stellen Sie Sie wie jede andere Windows 32-App zentral bereit. 
 

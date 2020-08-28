@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5d296c9e690421fdd98fba22b21b44a87157b36f
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 2d6dab7ae722b6e64b782596e51e0898ddc2cccc
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529755"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289687"
 ---
-# <a name="getting-help-for-end-users"></a>Hilfe für Endbenutzer
+# <a name="getting-help-for-users"></a>Aufrufen von Hilfe für Benutzer
 
 Es gibt zwei Möglichkeiten, wie Benutzer in Ihrer Organisation Unterstützung für Ihre Microsoft Managed Desktop-Geräte erhalten können: **Abrufen der Hilfe** -APP oder Telefonsupport. Beide Supportoptionen stehen Benutzern 24 Stunden am Tag, 7 Tage die Woche zur Verfügung.
  
@@ -25,17 +25,17 @@ Es gibt zwei Möglichkeiten, wie Benutzer in Ihrer Organisation Unterstützung f
 
 ## <a name="get-help-app"></a>Hilfe-App abrufen
 
-Die bevorzugte Methode für die Bereitstellung von Unterstützung für Ihre Benutzer ist **Get Help**, eine benutzerfreundliche Oberfläche, die in das endbenutzergerät integriert ist.  
+Die bevorzugte Methode für die Bereitstellung von Unterstützung für Ihre Benutzer ist **Get Help**, eine einfach zu verwendende Schnittstelle, die in das Benutzergerät integriert ist.  
 
 ![Hilfe-App-Symbol abrufen](../../media/get-help.png)
 
 Hierbei handelt es sich um eine Anwendung, die auf allen von Microsoft verwalteten Desktop Geräten installiert ist und an der Taskleiste fixiert ist. 
 
-- Endbenutzer können einen Rückruf an eine bereitgestellte Telefonnummer anfordern oder online mit einem Dienstmitarbeiter chatten.
+- Benutzer können einen Rückruf an eine bereitgestellte Telefonnummer anfordern oder online mit einem Dienstmitarbeiter chatten.
 - Anforderungen, die außerhalb des Bereichs Microsoft Managed Desktop Support fallen, werden per Telefonanruf an den lokalen IT-Helpdesk umgeleitet.
 
 ### <a name="prerequisites"></a>Voraussetzungen
-Damit Ihre Endbenutzerhilfe über die APP erhalten können, stellen Sie sicher, dass diese Voraussetzungen erfüllt sind:
+Damit Ihre Benutzer Hilfe über die APP erhalten können, stellen Sie sicher, dass diese Voraussetzungen erfüllt sind:
 
 - Das Gerät muss bei Microsoft Managed Desktop mit einer der Methoden unter [Einrichten von Microsoft Managed Desktop-Geräten](../get-started/set-up-devices.md)registriert werden, beispielsweise [Registrieren neuer Geräte selbst](../get-started/register-devices-self.md).
 - Die Anzeigesprache für das Gerät muss auf eine der folgenden englischsprachigen Gebietsschemas festgelegt sein: en-US, en-GB, en-au, en-NZ oder en-ca.
@@ -49,7 +49,7 @@ Wenn Sie diese Voraussetzungen überprüft haben und die Get-Hilfe-App immer noc
 
 ## <a name="phone-support"></a>Support per Telefon
 
-Endbenutzer mit von Microsoft verwalteten Desktop Geräten haben auch Zugriff auf gebührenfreie Telefonnummern, die Sie anrufen können. Diese sollte verwendet werden, wenn Get Help nicht verfügbar ist. Beispielsweise, wenn Sie sich nicht am Gerät anmelden können oder das Gerät beschädigt ist. Hier sind die Telefonnummern für den Telefonsupport:
+Benutzer mit Microsoft Managed Desktop-Geräten haben auch Zugriff auf gebührenfreie Telefonnummern, die Sie anrufen können. Diese sollte verwendet werden, wenn Get Help nicht verfügbar ist. Beispielsweise, wenn Sie sich nicht am Gerät anmelden können oder das Gerät beschädigt ist. Hier sind die Telefonnummern für den Telefonsupport:
 
 - Vereinigte Staaten: + 1 855 425 0216
 - Kanada (ohne Quebec): + 1 855 425 0216
@@ -68,7 +68,7 @@ Endbenutzer mit von Microsoft verwalteten Desktop Geräten haben auch Zugriff au
 >[!NOTE]
 >Sie müssen ihre organisatorische e-Mail-Adresse parat haben, wenn Sie anrufen, um Ihre Identität zu überprüfen. 
 
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
+## <a name="additional-resources"></a>Weitere Ressourcen
 - [Administrator Unterstützung für Microsoft Managed Desktop](admin-support.md). 
 - [Unterstützung für Microsoft Managed Desktop](../service-description/support.md).
 - Wenn Sie bereits Microsoft Managed Desktop abonniert haben, finden Sie im Microsoft Managed Desktop Admin Guide im Abschnitt **Online Ressourcen** des [Microsoft Managed Desktop admin-Portals](https://aka.ms/mwaasportal)ausführliche Verfahren, Ablauf, Arbeitsanweisungen und FAQs.

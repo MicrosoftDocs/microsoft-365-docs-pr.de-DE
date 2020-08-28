@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5fe8e01e24f38ddd62649349575bd38ec37ccae4
-ms.sourcegitcommit: b144e8ba1ab0c40fa7e0e8e893b5cb44aa2d8243
+ms.openlocfilehash: 1aaa73fdc56662335904cbaa152429ea90d6bb08
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47282673"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289354"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referenz zur Kommunikation Compliance-Feature
 
@@ -49,19 +49,39 @@ Richtlinienvorlagen sind vordefinierte Richtlinieneinstellungen, mit denen Sie s
 
 ## <a name="permissions-preview"></a>Berechtigungen (Vorschau)
 
-Es gibt fünf Rollen, die zum Konfigurieren von Berechtigungen zum Verwalten von Kommunikations Kompatibilitätsfeatures verwendet werden. Um die **Kommunikation Compliance** als Menüoption im Microsoft 365 Compliance Center zur Verfügung zu stellen, müssen Sie der Administratorrolle " *Communications Compliance"* zugewiesen sein.
+>[!Important]
+>Standardmäßig haben globale Administratoren keinen Zugriff auf Features für die Kommunikations Kompatibilität. Die in diesem Schritt zugewiesenen Rollen sind erforderlich, bevor auf Kommunikations Kompatibilitätsfeatures zugegriffen werden kann.
 
-Je nachdem, wie Sie Kommunikationsrichtlinien und Warnungen verwalten möchten, müssen Sie eine oder mehrere neue Rollengruppen für Administratoren, Prüfer und Ermittler erstellen. Sie haben die Möglichkeit, Benutzer bestimmten Rollengruppen zuzuweisen, um verschiedene Sätze von Kompatibilitätsfeatures für die Kommunikation zu verwalten. Sie können auch eine Rollengruppe erstellen und der Gruppe alle Kommunikations Konformitäts Rollen zuweisen. Erstellen Sie eine einzelne Rollengruppe oder mehrere Gruppen, die Ihren Anforderungen an die Compliance-Verwaltung am besten entsprechen.
+Es gibt fünf Rollengruppen, die zum Konfigurieren von Berechtigungen zum Verwalten von Kommunikations Kompatibilitätsfeatures verwendet werden. Um die **Kommunikation Compliance** als Menüoption im Microsoft 365 Compliance Center zur Verfügung zu stellen und diese Konfigurationsschritte fortzusetzen, müssen Sie den Administratorrollengruppen " *Communication Compliance* " oder " *Communication Compliance"* zugewiesen sein. Für den Zugriff auf und die Verwaltung von Kommunikations Kompatibilitätsfeatures nach der anfänglichen Konfiguration müssen Benutzer Mitglied mindestens einer Rollengruppe für die Kommunikations Kompatibilität sein.
 
-Wählen Sie unter diesen Rollenoptionen beim Konfigurieren der Rollengruppen für die Kommunikations Konformität aus:
+Je nachdem, wie Sie Kommunikationsrichtlinien und Warnungen verwalten möchten, müssen Sie Benutzer bestimmten Rollengruppen zuweisen. Sie haben die Möglichkeit, Benutzer mit unterschiedlichen Compliance-Verantwortlichkeiten bestimmten Rollengruppen zuzuweisen, um verschiedene Bereiche der Kommunikations Compliance-Features zu verwalten. Sie können auch festlegen, dass alle Benutzerkonten für designierte Administratoren, Analysten, Ermittler und Betrachter der Rollengruppe *Kommunikation Compliance* zugewiesen werden. Verwenden Sie eine einzelne Rollengruppe oder mehrere Rollengruppen, um Ihre Anforderungen an die Compliance-Verwaltung am besten anzupassen.
+
+Wählen Sie unter diese Rollengruppen Optionen aus, wenn Sie die Kommunikations Kompatibilität konfigurieren:
 
 |**Rolle**|**Rollenberechtigungen**|
 |:-----|:-----|
-| **Communication Compliance-Administrator** | Benutzer, denen diese Rolle zugewiesen ist, können Kommunikationsrichtlinien, globale Einstellungen und Rollengruppen Zuordnungen erstellen, lesen, aktualisieren und löschen. Benutzern, denen diese Rolle zugewiesen ist, können keine Nachrichten Benachrichtigungen angezeigt werden. |
-| **Kompatibilitätsanalyse für Kommunikation** | Benutzer, denen diese Rolle zugewiesen ist, können Richtlinien anzeigen, in denen Sie als Bearbeiter zugewiesen werden, Nachrichten Metadaten anzeigen (keine Nachrichteninhalte), an zusätzliche Bearbeiter eskalieren oder Benachrichtigungen an Benutzer senden. Ausstehende Warnungen können von Analysten nicht aufgelöst werden. |
-| **Untersuchung der Kommunikations Konformität** | Benutzer, denen diese Rolle zugewiesen ist, können Nachrichten Metadaten und-Inhalte anzeigen, an zusätzliche Bearbeiter eskalieren, zu einem erweiterten eDiscovery-Fall eskalieren, Benachrichtigungen an Benutzer senden und die Warnung lösen. |
-| **Communication Compliance Viewer** | Benutzer, denen diese Rolle zugewiesen ist, können auf der Homepage der Communication Compliance auf alle Berichts-Widgets zugreifen und alle Kommunikations Konformitätsberichte anzeigen. |
-| **Kommunikation Compliance Case Management** | Benutzer, denen diese Rolle zugewiesen ist, können Fälle verwalten und Benachrichtigungen bearbeiten. Diese Rolle ist für das Erstellen benutzerdefinierter Rollengruppen für Administratoren, Analysten und Ermittler erforderlich. Benutzerdefinierte Gruppen für Viewer benötigen diese Rolle nicht zugewiesen. |
+| **Kommunikation Compliance** | Verwenden Sie diese Rollengruppe, um die Kommunikations Konformität für Ihre Organisation in einer einzigen Gruppe zu verwalten. Durch Hinzufügen aller Benutzerkonten für designierte Administratoren, Analysten, Ermittler und Betrachter können Sie die Berechtigungen für die Kommunikations Konformität in einer einzigen Gruppe konfigurieren. Diese Rollengruppe enthält alle Berechtigungsrollen für die Kommunikations Konformität. Diese Konfiguration ist die einfachste Möglichkeit, um schnell mit der Kommunikation zu beginnen, und Sie eignet sich gut für Organisationen, die keine separaten Berechtigungen benötigen, die für getrennte Benutzergruppen definiert sind. |
+| **Communication Compliance-Administrator** | Verwenden Sie diese Rollengruppe, um die Kommunikationsrichtlinien Konfiguration zu konfigurieren und später Kommunikationsrichtlinien Administratoren in eine definierte Gruppe zu trennen. Benutzer, die dieser Rollengruppe zugewiesen sind, können Kommunikationsrichtlinien, globale Einstellungen und Rollengruppen Zuordnungen erstellen, lesen, aktualisieren und löschen. Benutzer, die dieser Rollengruppe zugewiesen sind, können keine Nachrichten Benachrichtigungen anzeigen. |
+| **Communication Compliance Analyst** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zuzuweisen, die als Kommunikations Compliance-Analysten fungieren sollen. Benutzer, die dieser Rollengruppe zugewiesen sind, können Richtlinien anzeigen, in denen Sie als Bearbeiter zugewiesen werden, Nachrichten Metadaten anzeigen (keine Nachrichteninhalte), an zusätzliche Bearbeiter eskalieren oder Benachrichtigungen an Benutzer senden. Ausstehende Warnungen können von Analysten nicht aufgelöst werden. |
+| **Communication Compliance Investigator** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zuzuweisen, die als Kommunikations Compliance-Ermittler fungieren sollen. Benutzer, die dieser Rollengruppe zugewiesen sind, können Nachrichten Metadaten und-Inhalte anzeigen, an zusätzliche Bearbeiter eskalieren, zu einem erweiterten eDiscovery-Fall eskalieren, Benachrichtigungen an Benutzer senden und die Warnung lösen. |
+| **Communication Compliance Viewer** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen für die Verwaltung von Kommunikations Berichten zuzuweisen. Benutzer, die dieser Rollengruppe zugewiesen sind, können auf der Homepage der Communication Compliance auf alle Berichts-Widgets zugreifen und alle Kommunikations Konformitätsberichte anzeigen. |
+
+### <a name="for-organizations-using-the-original-permissions-and-role-groups"></a>Für Organisationen, die die ursprünglichen Berechtigungen und Rollengruppen verwenden
+
+Die neue Rollengruppen Struktur ersetzt die anfängliche Rollengruppen Struktur für die Kommunikations Kompatibilität. Für Organisationen, die die Kommunikations Konformität bereits verwenden, mussten Sie die Rolle Aufsichts Überprüfungs Administrator erhalten, um mit der Kommunikation im Microsoft 365 Compliance Center zu beginnen. Darüber hinaus mussten Sie eine neue Rollengruppe für Bearbeiter mit dem Aufsichts Überprüfungs Administrator, der Fallverwaltung, dem Kompatibilitäts Administrator und den Überprüfungs Rollen erstellen, um Nachrichten mit Richtlinien Übereinstimmungen zu untersuchen und zu beheben. Im Wesentlichen befanden sich alle Administratoren und Bearbeiter in einer einzelnen Rollengruppe, und alle hatten dieselben Zugriffs-und Verwaltungsberechtigungen. Mit den neuesten Updates für die Kommunikations Kompatibilität sollten Sie die Migration von der vorherigen Rollengruppen Struktur in die neue Rollengruppen Struktur planen. Die Unterstützung für die vorherige Rollengruppen Struktur wird ablaufen.
+
+Zur Unterstützung der Migrationsplanung sollten Sie das folgende Beispiel verwenden. Sie verfügen derzeit über drei Typen von Benutzern in Ihrer Organisation, IT-Administratoren, Triage und Prüfer. Diese drei Benutzertypen befinden sich in der vorherigen Rollengruppen Struktur und sind alle Mitglieder einer einzelnen Rollengruppe, der die folgenden Rollen zugewiesen sind:
+
+- Aufsichts Überprüfungs Administrator
+- Fallverwaltung
+- Complianceadministrator
+- Überprüfung
+
+Um die Rollen für diese Benutzer für die neue Rollengruppen Struktur zu aktualisieren und die Zugriffs-und Verwaltungsberechtigungen für die Benutzer zu trennen, können Sie drei neue Gruppen und die zugeordneten neuen Rollengruppen Zuweisungen in Frage stellen:
+
+- **IT-Administratoren**: der neuen Administratorrollengruppe für die *Kommunikationsrichtlinien Verwaltung* zugewiesen.
+- **Triage**: der Rollengruppe " *Communication Compliance Analyst* " zugewiesen.
+- **Bearbeiter**: der neuen *Kommunikations Compliance-Ermittler* -Rollengruppe zugewiesen.
 
 ## <a name="supervised-users"></a>Beaufsichtigte Benutzer
 
@@ -150,7 +170,7 @@ Weitere Informationen zu vertraulichen Informationsdetails und den Mustern, die 
 
 ### <a name="custom-keyword-dictionaries"></a>Benutzerdefinierte Schlüsselwörter Wörterbücher
 
-Konfigurieren Sie benutzerdefinierte Keyword-Wörterbücher (oder Lexika), um eine einfache Verwaltung von Schlüsselwörtern für Ihre Organisation oder Industrie bereitzustellen. Stichwort Wörterbücher unterstützen bis zu 100KB Begriffe (nach Komprimierung) im Wörterbuch und unterstützen jede Sprache. Die Mandanten Grenze ist auch nach der Komprimierung 100KB. Bei Bedarf können Sie mehrere benutzerdefinierte Schlüsselwörter Wörterbücher auf eine einzelne Richtlinie anwenden oder über ein einzelnes Schlüssel Wörterbuch pro Richtlinie verfügen. Diese Wörterbücher werden in einer Kommunikations Konformitätsrichtlinie zugewiesen und können aus einer Datei (wie einer CSV-oder txt-Liste) oder aus einer Liste stammen, [die Sie im Compliance Center importieren](create-a-keyword-dictionary.md)können. Verwenden Sie Benutzerwörterbücher, wenn Sie Ausdrücke oder Sprachen speziell für Ihre Organisation und ihre Richtlinien unterstützen müssen.
+Konfigurieren Sie benutzerdefinierte Keyword-Wörterbücher (oder Lexika), um eine einfache Verwaltung von Schlüsselwörtern für Ihre Organisation oder Industrie bereitzustellen. Stichwort Wörterbücher unterstützen bis zu 100 KB von Begriffen (nach der Komprimierung) im Wörterbuch und unterstützen jede Sprache. Die Mandanten Grenze beträgt auch 100 KB nach der Komprimierung. Bei Bedarf können Sie mehrere benutzerdefinierte Schlüsselwörter Wörterbücher auf eine einzelne Richtlinie anwenden oder über ein einzelnes Schlüssel Wörterbuch pro Richtlinie verfügen. Diese Wörterbücher werden in einer Kommunikations Konformitätsrichtlinie zugewiesen und können aus einer Datei (wie einer CSV-oder txt-Liste) oder aus einer Liste stammen, [die Sie im Compliance Center importieren](create-a-keyword-dictionary.md)können. Verwenden Sie Benutzerwörterbücher, wenn Sie Ausdrücke oder Sprachen speziell für Ihre Organisation und ihre Richtlinien unterstützen müssen.
 
 ### <a name="classifiers"></a>Klassifizierungen
 
@@ -162,7 +182,7 @@ Kommunikation Compliance integrierte Schulungs-und globale Klassifizierungen üb
 - **Gezielte Belästigung**: Scans für anstößige Verhaltensweisen, die Menschen hinsichtlich Rasse, Farbe, Religion und nationalem Ursprung anvisieren.
 - **Profanität**: scannt nach profanen Ausdrücken, die die meisten Menschen in Verlegenheit bringen.
 - **Bilder für Erwachsene**: scannt nach Bildern, die in der Natur sexuell explizit sind.
-- **Rassige Bilder**: scannt nach Bildern, die in der Natur sexuell suggestive sind, jedoch weniger explizite Inhalte enthalten als Erwachsene Bilder.
+- **Rassige Bilder**: scannt nach Bildern, die in der Natur sexuell suggestive sind, jedoch weniger expliziten Inhalt enthalten als für Erwachsene vorgesehene Bilder.
 - **Blutige Bilder**: scannt nach Bildern, die Gewalt und Gore darstellen.
 
 Die *adulten*, *rassigen*und *blutigen* Bild Klassifizierungen überprüfen Dateien in. JPEG,. PNG,. GIF und. BMP-Formate. Die Größe von Bilddateien muss kleiner als 4 MB sein, und die Abmessungen der Bilder müssen größer als 50x50 Pixel und größer als 50 Kilobyte (KB) sein, damit das Bild für die Auswertung qualifiziert wird. Die Bild Identifikation wird für Exchange Online e-Mail-Nachrichten und Microsoft Teams-Kanäle und-Chats unterstützt.

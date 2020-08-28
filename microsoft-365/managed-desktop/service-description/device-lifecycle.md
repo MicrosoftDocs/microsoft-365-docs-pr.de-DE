@@ -8,16 +8,16 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0dee95743e0a504330ebbcc69749e41cdc96da39
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 89dbf0e67c112743a557842bb32555d3a079743b
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529947"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289793"
 ---
 # <a name="microsoft-managed-desktop-product-lifecycle"></a>Microsoft Managed Desktop-Produktlebenszyklus
 
-Microsoft Managed Desktop profitiert von Endbenutzern, die sicherstellen, dass Sie immer Geräte verwenden, die die beste Leistung, Zuverlässigkeit, Design und Sicherheitsfunktionen bieten (beispielsweise Unterstützung für Features wie Windows Hello). Um dies zu erreichen, verwaltet Microsoft Managed Desktop einen kurzen Katalog mit kontinuierlich aktualisierten [genehmigten Geräten](device-list.md). 
+Microsoft Managed Desktop profitiert von Benutzern, die sicherstellen, dass Sie immer Geräte verwenden, die die beste Leistung, Zuverlässigkeit, Design und Sicherheitsfunktionen bieten (beispielsweise Unterstützung für Features wie Windows Hello). Um dies zu erreichen, verwaltet Microsoft Managed Desktop einen kurzen Katalog mit kontinuierlich aktualisierten [genehmigten Geräten](device-list.md). 
  
 In diesem Thema wird der Lebenszyklus von Geräten erläutert, die dem genehmigten Katalog hinzugefügt und daraus entfernt wurden. 
 

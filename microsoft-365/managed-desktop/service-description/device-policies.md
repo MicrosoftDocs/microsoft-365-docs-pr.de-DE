@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d16f63490de8060eea7ef06a4ad6960d846f16eb
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 319b26261f623a7e19e5bb8fbcd0b5d8a50d10a8
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529385"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289709"
 ---
 # <a name="device-configuration"></a>Gerätekonfiguration
 
@@ -44,7 +44,7 @@ Gemessene Verbindungen | Standardmäßig sind Aktualisierungen über gemessene V
 
 ## <a name="diagnostic-data"></a>Diagnosedaten
 
- Geräte werden so konfiguriert, dass Microsoft unter einer bekannten kommerziellen ID erweiterte Diagnosedaten bereitstellt. Als Teil von Microsoft Managed Desktop können IT-Administratoren diese Einstellungen nicht ändern. Für Kunden in dsgvo-Regionen (allgemeine Datenschutzverordnung) können Endbenutzer den Grad der bereitgestellten Diagnosedaten reduzieren, aber es wird eine Verringerung der Dienstleistung geben. Beispielsweise kann Microsoft Managed Desktop die erforderlichen Daten zum Durchlaufen von Einstellungen und Richtlinien nicht erfassen, um Leistungs-und Sicherheitsanforderungen optimal zu erfüllen. Weitere Informationen finden Sie unter [Konfigurieren von Windows-Diagnosedaten in Ihrer Organisation.](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
+ Geräte werden so konfiguriert, dass Microsoft unter einer bekannten kommerziellen ID erweiterte Diagnosedaten bereitstellt. Als Teil von Microsoft Managed Desktop können IT-Administratoren diese Einstellungen nicht ändern. Für Kunden in dsgvo-Regionen (General Data Protection Regulation) können Benutzer den Umfang der bereitgestellten Diagnosedaten reduzieren, aber es wird eine Verringerung der Dienstleistung geben. Beispielsweise kann Microsoft Managed Desktop die erforderlichen Daten zum Durchlaufen von Einstellungen und Richtlinien nicht erfassen, um Leistungs-und Sicherheitsanforderungen optimal zu erfüllen. Weitere Informationen finden Sie unter [Konfigurieren von Windows-Diagnosedaten in Ihrer Organisation.](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
 
 ## <a name="security-addendum"></a>Sicherheits Nachtrag
 

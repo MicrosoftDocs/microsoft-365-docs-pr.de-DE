@@ -1,6 +1,6 @@
 ---
 title: Das neue Microsoft Edge
-description: ''
+description: Erläutert, wie der neue Edge-Browser bereitgestellt und aktualisiert wird.
 keywords: Browser, Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 089d9dc79da568a43c1d5701d7bc52d9bed0f4f5
-ms.sourcegitcommit: c76c025fe75cd9c06eccbf9c7fc887b09da36659
+ms.openlocfilehash: 60ffdcddcd069330d3cde2f9cc6b2635cf205a90
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46903871"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294674"
 ---
 # <a name="new-microsoft-edge-app"></a>Neue Microsoft Edge-App
 
@@ -35,7 +35,6 @@ Der [Beta Kanal](https://docs.microsoft.com/deployedge/microsoft-edge-channels#b
 
 Um sicherzustellen, dass Microsoft Edge ordnungsgemäß aktualisiert wird, sollten Sie die Microsoft-Edge- [Update-Richtlinien](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)nicht ändern.
 
-### <a name="microsoft-edge-beta-channel"></a>Microsoft Edge-Beta Kanal
 
 
 ## <a name="settings-managed-by-microsoft-managed-desktop"></a>Von Microsoft Managed Desktop verwaltete Einstellungen
@@ -44,7 +43,7 @@ Microsoft Managed Desktop hat eine Reihe von Standardrichtlinien für Microsoft 
 
 ### <a name="microsoft-edge-extensions"></a>Microsoft-Edge-Erweiterungen
 
-Die Sicherheitsbasis für Microsoft Edge auf Microsoft Managed Desktop-Geräten legt zwei Richtlinien fest, um alle Chrome-Erweiterungen und sicheren Endbenutzer zu deaktivieren. Informationen zum Aktivieren und Bereitstellen von Erweiterungen in Ihrer Umgebung finden Sie unter Einstellungen, die Sie verwalten. 
+Die Sicherheitsbasis für Microsoft Edge auf Microsoft Managed Desktop-Geräten legt zwei Richtlinien fest, um alle Chrome-Erweiterungen zu deaktivieren und Benutzer zu schützen. Informationen zum Aktivieren und Bereitstellen von Erweiterungen in Ihrer Umgebung finden Sie unter Einstellungen, die Sie verwalten. 
 
 #### <a name="extension-installation-blocklist"></a>Erweiterungs Installations Blockliste
 **Standardwert:** Alle
@@ -77,7 +76,7 @@ Es wird nicht empfohlen, diese Einstellung zu aktivieren, da Benutzer Websites m
 
 **Standardwert:** Aktiviert
 
-Standardmäßig aktiviert, um den Schutz von Endbenutzern zu erleichtern.
+Standardmäßig aktiviert, damit Benutzer geschützt werden.
 
 #### <a name="windows-defender-smartscreen-prompts-for-sites"></a>Windows Defender-SmartScreen-Eingabeaufforderungen für Websites
 
@@ -105,7 +104,7 @@ Es wird nicht empfohlen, Flash aufgrund der zugeordneten Sicherheitsrisiken zu v
 
 **Standardwert:** Deaktiviert
 
-Es wird nicht empfohlen, dass Benutzer Kennwörter auf Ihrem Gerät speichern können.
+Es wird nicht empfohlen, Benutzern das Speichern von Kennwörtern auf Ihrem Gerät zu ermöglichen.
 
 ### <a name="internet-explorer-mode-in-microsoft-edge"></a>Internet Explorer-Modus in Microsoft Edge
 Der IE-Modus auf Microsoft Edge erleichtert die Verwendung aller Websites, die Ihre Organisation benötigt, in einem einzigen Browser. Es verwendet das integrierte Chrom-Modul für Websites, die mit der Chrom Rendering-Engine kompatibel sind, und verwendet das Trident-MSHTML-Modul von Internet Explorer 11 (IE11) für Websites, die keine Abhängigkeiten zur IE-Funktionalität aufweisen. [Weitere Informationen] (https://docs.microsoft.com/DeployEdge/edge-ie-mode) 

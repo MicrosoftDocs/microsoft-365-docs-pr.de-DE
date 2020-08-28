@@ -15,12 +15,12 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 description: Häufig gestellte Fragen (FAQ) zum Microsoft Home Use-Programm.
-ms.openlocfilehash: 9d37afb952374b3d01d3ef3212b82cfd1ccde7a7
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: f4848e5f84081152fb42e41887b581d7290dfe2f
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46903493"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294686"
 ---
 # <a name="microsoft-home-use-program-frequently-asked-questions-faq"></a>Microsoft Home Use-Programm häufig gestellte Fragen (FAQ)
 
@@ -34,14 +34,13 @@ Alle anderen Kunden greifen mithilfe dieses Schritts auf HUP zu:
 
 Mit dem Microsoft Home Use-Programm (HUP) können Mitarbeiter von berechtigten Unternehmen Microsoft-Consumerprodukte mit einem Abschlag kaufen. Sie können die aktuellen Rabatte für jedes Produktangebot überprüfen, indem Sie auf der [Produktseite Home Use Program](https://www.microsoft.com/home-use-program)besuchen.
 
-## <a name="in-which-countries-is-this-benefit-available"></a>In welchen Ländern steht dieser Vorteil zur Verfügung?
+## <a name="in-which-markets-is-the-home-use-program-offered"></a>In welchen Märkten wird das Home Use-Programm angeboten?
 
-Nachdem Sie Ihre Vorteile hier aktiviert haben (in Microsoft Store for Business), sind HUP-Rabatte für Microsoft-Produkte für Mitarbeiter in den meisten Ländern weltweit verfügbar, mit Ausnahme von:
+Rabatte auf Microsoft 365-Familie und persönliche Abonnements werden für berechtigte Unternehmen weltweit mit diesen Ausnahmen angeboten:
 
-- Russland
-- Venezuela
-
-HUP-Rabatte sind möglicherweise auch für den Erwerb von Surface-Geräten und Zubehör sowie Xbox Game Pass Ultimate verfügbar. Informationen zur Verfügbarkeit finden Sie unter [Microsoft 365 Subscriptions](https://go.microsoft.com/fwlink/p/linkid=2139192).
+- Macau, Russland und Venezuela: Dieses Angebot ist auf diesen Märkten nicht verfügbar.
+- China und Hongkong: in diesen Märkten steht ein einjähriges Abonnement zur Verfügung. Für China besuchen Sie [Microsoft 365 in China](https://www.microsoftstore.com.cn/home-use-program/invite). Für Hongkong besuchen Sie [Microsoft 365 zu einem verbilligten Preis kaufen](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK).
+- Japan: Microsoft 365-Familie ist nicht verfügbar.
 
 ## <a name="how-does-an-organization-qualify-for-hup-discounts"></a>Wie qualifiziert sich eine Organisation für HUP-Rabatte?
 
@@ -64,12 +63,6 @@ Um das Home Use-Programm auf eine breitere Palette von Lizenz-und Produktvorteil
 Sie müssen einen speziellen Eintrag in DNS erstellen, um zu beweisen, dass Sie Ihre eigene Unternehmensdomäne haben, also Ex:contoso. com.
 
 Ein Schritt-für-Schritt-Prozess zum Verwalten eines verwalteten Mandanten finden Sie unter [Übernehmen eines nicht verwalteten Verzeichnisses als Administrator in Azure Active](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover).
-
-## <a name="where-can-i-find-marketing-materials-to-help-promote-the-program-within-my-company"></a>Wo kann ich Marketingunterlagen finden, um das Programm in meinem Unternehmen zu fördern?
-
-Unternehmens-Marketingmaterialien finden Sie im Abschnitt " _Info_ " Ihres Administrator Portals unter dem Link "Microsoft Home Use Program Onboarding Materials".
-
-Sie können auch schnell Werbematerial auf der Seite it/hr admin Resources finden. Besuchen Sie die Start [Seite des Home Use-Programms](https://www.microsoft.com/home-use-program/resources) , und Scrollen Sie nach unten zum Abschnitt " _Home Use Program Promotion Resources_ " der Seite.
 
 ## <a name="what-resources-are-available-to-help-promote-the-home-use-program-benefit-to-employees"></a>Welche Ressourcen stehen zur Verfügung, um den Mitarbeitern die Nutzung des Home Use-Programms zu erleichtern?
 

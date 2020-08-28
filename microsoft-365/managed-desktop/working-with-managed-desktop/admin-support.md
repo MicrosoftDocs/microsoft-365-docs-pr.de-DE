@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: a29fa11e43e9be5c8175118ad5b54817c463e929
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: fb786383e448ad3f5c78b22f3cdbf282c2c9f906
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529899"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289721"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Administratorunterstützung für Microsoft Managed Desktop
 
@@ -64,7 +64,7 @@ Wenn sich ein **Ticket im Status "** behoben" oder " **gelöst** " befindet, kö
 
 
 
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
-- [Endbenutzer Unterstützung für Microsoft Managed Desktop](end-user-support.md). 
+## <a name="additional-resources"></a>Weitere Ressourcen
+- [Benutzerunterstützung für Microsoft Managed Desktop](end-user-support.md). 
 - [Unterstützung für Microsoft Managed Desktop](../service-description/support.md). 
 - Wenn Sie bereits Microsoft Managed Desktop abonniert haben, finden Sie im Microsoft Managed Desktop Admin Guide im Abschnitt **Online Ressourcen** des [Microsoft Managed Desktop admin-Portals](https://aka.ms/mwaasportal)ausführliche Verfahren, Ablauf, Arbeitsanweisungen und FAQs.

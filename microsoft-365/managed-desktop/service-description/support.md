@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: c68d12ccd339c863c2dd96b2a56cfaf19e604f79
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: de113fd61fbb8fabaea64d58525a2f8aca052e90
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632001"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289781"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Unterstützung für Microsoft Managed Desktop
 
@@ -27,7 +27,7 @@ Kunden können Microsoft Managed Desktop Operations für folgende Aufgaben konta
 Die Microsoft Managed Desktop-Unterstützung umfasst Folgendes:
 
 - Ein Team von Ingenieuren, die für Microsoft Managed Desktop-Geräte reserviert sind
-- Support Optionen für Endbenutzer mit von Microsoft verwalteten Desktop Geräten
+- Support Optionen für Benutzer mit Microsoft Managed Desktop-Geräten
 - Gewährt begrenzten administrativen Zugriff auf Microsoft Managed Desktop-Geräte für Ingenieure, die Microsoft Managed Desktop-Geräte verwalten 
 
 Unterstützte Produkte:
@@ -48,4 +48,4 @@ Support Details:
 ## <a name="related-topics"></a>Verwandte Themen
 
 - [Erfahren Sie, wie IT-Administratoren Unterstützung erhalten können](../working-with-managed-desktop/admin-support.md)
-- [Informationen dazu, wie Endbenutzer Unterstützung erhalten](../working-with-managed-desktop/end-user-support.md)
+- [Erfahren Sie, wie Benutzer Unterstützung erhalten können](../working-with-managed-desktop/end-user-support.md)

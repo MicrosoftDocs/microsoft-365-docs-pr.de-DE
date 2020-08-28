@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 9e16e96989fd3e2312129f9633bd298181839cf0
-ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
+ms.openlocfilehash: 9c20b322d4da0339d7c8711abcee38f19f556423
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46632086"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289388"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Fallstudie: contoso konfiguriert schnell eine Offensive Sprachrichtlinie für Microsoft Teams, Exchange und jammern von Kommunikation
 
@@ -79,34 +79,29 @@ IT-Administratoren von Contoso führen Sie die folgenden Schritte aus, um die Li
 
 ### <a name="permissions-for-communication-compliance"></a>Berechtigungen für die Kommunikations Konformität
 
-Es gibt fünf Rollen, die zum Konfigurieren von Berechtigungen zum Verwalten von Kommunikations Kompatibilitätsfeatures verwendet werden. Um die Kommunikation Compliance als Menüoption im Microsoft 365 Compliance Center zur Verfügung zu stellen und diese Konfigurationsschritte fortzusetzen, werden Contoso-Administratoren die Administratorrolle " *Communications Compliance"* zugewiesen.
+Es gibt fünf Rollengruppen, die zum Konfigurieren von Berechtigungen zum Verwalten von Kommunikations Kompatibilitätsfeatures verwendet werden. Um die **Kommunikation Compliance** als Menüoption im Microsoft 365 Compliance Center zur Verfügung zu stellen und diese Konfigurationsschritte fortzusetzen, werden Contoso-Administratoren die Administratorrolle " *Communications Compliance"* zugewiesen.
 
-Contoso beschließt, eine benutzerdefinierte Rollengruppe zu erstellen und der Gruppe alle Kommunikations Konformitäts Rollen zuzuweisen. Dadurch ist es für Contoso einfacher, schnell zu beginnen und am besten Ihren Compliance-Verwaltungsanforderungen gerecht zu werden.
-
-Contoso erstellt eine Rollengruppe, die alle folgenden Kommunikations Konformitäts Rollen enthält:
+Contoso entscheidet sich für die Verwendung der Rollengruppe " *Kommunikations Konformität* " für die Gruppe mit allen Kommunikationsrichtlinien Administratoren, Analysten, Ermittlern und Viewern. Dadurch ist es für Contoso einfacher, schnell zu beginnen und am besten Ihren Compliance-Verwaltungsanforderungen gerecht zu werden.
 
 |**Rolle**|**Rollenberechtigungen**|
 |:-----|:-----|
-| **Communication Compliance-Administrator** | Benutzer, denen diese Rolle zugewiesen ist, können Kommunikationsrichtlinien, globale Einstellungen und Rollengruppen Zuordnungen erstellen, lesen, aktualisieren und löschen. Benutzern, denen diese Rolle zugewiesen ist, können keine Nachrichten Benachrichtigungen angezeigt werden. |
-| **Kompatibilitätsanalyse für Kommunikation** | Benutzer, denen diese Rolle zugewiesen ist, können Richtlinien anzeigen, in denen Sie als Bearbeiter zugewiesen werden, Nachrichten Metadaten anzeigen (keine Nachrichteninhalte), an zusätzliche Bearbeiter eskalieren oder Benachrichtigungen an Benutzer senden. Ausstehende Warnungen können von Analysten nicht aufgelöst werden. |
-| **Untersuchung der Kommunikations Konformität** | Benutzer, denen diese Rolle zugewiesen ist, können Nachrichten Metadaten und-Inhalte anzeigen, an zusätzliche Bearbeiter eskalieren, zu einem erweiterten eDiscovery-Fall eskalieren, Benachrichtigungen an Benutzer senden und die Warnung lösen. |
-| **Communication Compliance Viewer** | Benutzer, denen diese Rolle zugewiesen ist, können auf der Homepage der Communication Compliance auf alle Berichts-Widgets zugreifen und alle Kommunikations Konformitätsberichte anzeigen. |
-| **Kommunikation Compliance Case Management** | Benutzer, denen diese Rolle zugewiesen ist, können Fälle verwalten und Benachrichtigungen bearbeiten. Diese Rolle ist für das Erstellen benutzerdefinierter Rollengruppen für Administratoren, Analysten und Ermittler erforderlich. Benutzerdefinierte Gruppen für Viewer benötigen diese Rolle nicht zugewiesen. |
+| **Kommunikation Compliance** | Verwenden Sie diese Rollengruppe, um die Kommunikations Konformität für Ihre Organisation in einer einzigen Gruppe zu verwalten. Durch Hinzufügen aller Benutzerkonten für designierte Administratoren, Analysten, Ermittler und Betrachter können Sie die Berechtigungen für die Kommunikations Konformität in einer einzigen Gruppe konfigurieren. Diese Rollengruppe enthält alle Berechtigungsrollen für die Kommunikations Konformität. Diese Konfiguration ist die einfachste Möglichkeit, um schnell mit der Kommunikation zu beginnen, und Sie eignet sich gut für Organisationen, die keine separaten Berechtigungen benötigen, die für getrennte Benutzergruppen definiert sind. |
+| **Communication Compliance-Administrator** | Verwenden Sie diese Rollengruppe, um die Kommunikationsrichtlinien Konfiguration zu konfigurieren und später Kommunikationsrichtlinien Administratoren in eine definierte Gruppe zu trennen. Benutzer, die dieser Rollengruppe zugewiesen sind, können Kommunikationsrichtlinien, globale Einstellungen und Rollengruppen Zuordnungen erstellen, lesen, aktualisieren und löschen. Benutzer, die dieser Rollengruppe zugewiesen sind, können keine Nachrichten Benachrichtigungen anzeigen. |
+| **Communication Compliance Analyst** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zuzuweisen, die als Kommunikations Compliance-Analysten fungieren sollen. Benutzer, die dieser Rollengruppe zugewiesen sind, können Richtlinien anzeigen, in denen Sie als Bearbeiter zugewiesen werden, Nachrichten Metadaten anzeigen (keine Nachrichteninhalte), an zusätzliche Bearbeiter eskalieren oder Benachrichtigungen an Benutzer senden. Ausstehende Warnungen können von Analysten nicht aufgelöst werden. |
+| **Communication Compliance Investigator** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zuzuweisen, die als Kommunikations Compliance-Ermittler fungieren sollen. Benutzer, die dieser Rollengruppe zugewiesen sind, können Nachrichten Metadaten und-Inhalte anzeigen, an zusätzliche Bearbeiter eskalieren, zu einem erweiterten eDiscovery-Fall eskalieren, Benachrichtigungen an Benutzer senden und die Warnung lösen. |
+| **Communication Compliance Viewer** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen für die Verwaltung von Kommunikations Berichten zuzuweisen. Benutzer, die dieser Rollengruppe zugewiesen sind, können auf der Homepage der Communication Compliance auf alle Berichts-Widgets zugreifen und alle Kommunikations Konformitätsberichte anzeigen. |
 
-1. Contoso-IT-Administratoren melden sich auf der Seite Berechtigungen für das **Office 365 Security and Compliance Center** an [( https://protection.office.com/permissions) ](https://protection.office.com/permissions) Verwenden von Anmeldeinformationen für ein globales Administratorkonto und auswählen des Links zum Anzeigen und Verwalten von Rollen in Microsoft 365.
-2. Nachdem Sie **Create**ausgewählt haben, weisen Sie der neuen Rollengruppe den Anzeigenamen "*Communication Compliance*" zu und wählen **dann weiter**aus.
-3. Sie wählen **Rollen auswählen** und dann **Hinzufügen** aus. Sie fügen die erforderlichen Rollen hinzu, indem Sie das Kontrollkästchen für *Communication Compliance admin*, *Communication Compliance Analysis*, *Communication Compliance Investigation*, *Communication Compliance Viewer*und *Communication Compliance Case Management*aktivieren und dann **Hinzufügen**, **Fertig** und **weiter**auswählen.
-
-    ![Kommunikation Compliance Roles](../media/communication-compliance-case-roles.png)
-
-4. Als nächstes wählen die IT-Administratoren **Mitglieder auswählen** aus, und dann **Hinzufügen**. Das Kontrollkästchen für alle Benutzer und Gruppen aktivieren, für die Sie Richtlinien erstellen und Nachrichten mit Richtlinien Übereinstimmungen verwalten möchten. Sie fügen die IT-Administratoren, Compliance-Spezialisten und andere Kollegen der Personal- und Rechtsabteilung hinzu, die sie bei der ursprünglichen Planung identifiziert haben, und wählen dann **Hinzufügen**, **Fertig** und **Weiter** aus.
-5. Um die Berechtigungen abzuschließen, wählen die IT-Administratoren zum Abschluss **Rollengruppe** erstellen. Es dauert etwa 30 Minuten, bis die Rollen im Microsoft 365-Dienst von Contoso wirksam werden.
-
-    ![Überprüfung der Kommunikations Konformität](../media/communication-compliance-case-review.png)
+1. Contoso-IT-Administratoren melden sich bei der Berechtigungsseite **Office 365 Security & Compliance Center** an [( https://protection.office.com/permissions) ](https://protection.office.com/permissions) Verwenden von Anmeldeinformationen für ein globales Administratorkonto und auswählen des Links zum Anzeigen und Verwalten von Rollen in Microsoft 365.
+2. Im **Security & Compliance Center**wechseln Sie zu **Berechtigungen** und wählen den Link zum Anzeigen und Verwalten von Rollen in Office 365 aus.
+3. Die Administratoren wählen Sie die Rollengruppe *Kommunikations Kompatibilität* aus, und wählen Sie dann **Rollengruppe bearbeiten**aus.
+4. Die Administratoren wählen Sie im linken Navigationsbereich **Elemente** auswählen aus, und wählen Sie dann **Bearbeiten**aus.
+5. Wählen Sie **Hinzufügen** aus, und aktivieren Sie dann das Kontrollkästchen für alle Contoso-Benutzer, die die Kommunikations Konformität verwalten, Warnungen untersuchen und überprüfen möchten.
+6. Die Administratoren wählen **Hinzufügen**und dann **Fertig**aus.
+7. Sie wählen **Speichern** aus, um Contoso-Benutzer zur Rollengruppe hinzuzufügen. Sie wählen **Close** aus, um die Schritte abzuschließen.
 
 ## <a name="step-2-accessing-communication-compliance-in-microsoft-365"></a>Schritt 2: Zugreifen auf die Kommunikations Kompatibilität in Microsoft 365
 
-Nach dem Konfigurieren der Berechtigungen für die Kommunikationscompliance können die IT-Administratoren und Compliance-Spezialisten von Contoso, die in der neuen Rollengruppe definiert wurden, auf die Kommunikationscompliance-Lösung in Microsoft 365 zugreifen. IT-Administratoren und Compliance-Experten von Contoso haben verschiedene Möglichkeiten für den Zugriff auf die Kommunikations Konformität und erste Schritte beim Erstellen einer neuen Richtlinie:
+Nachdem Sie die Berechtigungen für die Kommunikations Konformität konfiguriert haben, können Contoso-IT-Administratoren und Compliance-Spezialisten, die der Rollengruppe "Communication Compliance" zugewiesen sind, auf die Kommunikations kompatibilitätslösung in Microsoft 365 zugreifen. IT-Administratoren und Compliance-Experten von Contoso haben verschiedene Möglichkeiten für den Zugriff auf die Kommunikations Konformität und erste Schritte beim Erstellen einer neuen Richtlinie:
 
 - Direktes Starten von der Kommunikations kompatibilitätslösung
 - Ausgehend vom Microsoft 365 Compliance Center
@@ -163,7 +158,7 @@ Die IT-Administratoren von Contoso überprüfen und vervollständigen die [Schri
 
 Für die Kommunikation ist es erforderlich, dass der Jammer-Mandant für eine Organisation im einheitlichen Modus ist, um anstößige Sprachen in privaten Nachrichten und Unterhaltungen in öffentlichen Communitys zu überwachen.
 
-IT-Administratoren von Contoso stellen Sie sicher, dass Sie die Informationen in der Übersicht über den [einheitlichen Modus "jammern" im Microsoft 365-Artikel](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) lesen, und befolgen Sie die Schritte zum Ausführen des Migrationstools im Thema [Konfigurieren Ihres Jammer Netzwerks für den einheitlichen Modus für Microsoft 365](https://docs.microsoft.com/yammer/configure-your-yammer-network/native-mode) .
+IT-Administratoren von Contoso stellen Sie sicher, dass Sie die Informationen in der Übersicht über den [einheitlichen Modus "jammern" im Microsoft 365-Artikel](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) lesen, und befolgen Sie die Schritte zum Ausführen des Migrationstools im Artikel [configure your jammern Network for Native Mode for Microsoft 365](https://docs.microsoft.com/yammer/configure-your-yammer-network/native-mode) .
 
 ### <a name="setting-up-a-group-for-in-scope-users"></a>Einrichten einer Gruppe für Benutzer im Bereich
 

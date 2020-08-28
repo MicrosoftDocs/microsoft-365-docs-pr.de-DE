@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 470047da0a1902a6076add27a6e7ac516edd3150
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: e433b10b66b5e4f061227eae7e944c7fd19e2260
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46869007"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289757"
 ---
 # <a name="register-new-devices-yourself"></a>Selbstregistrieren neuer Geräte
 
@@ -93,9 +93,9 @@ Sie können den Fortschritt der Geräteregistrierung auf der Hauptseite von **Mi
 |---------------|-------------|
 | AutopilotRegistrationRequested | Die Registrierung ist noch nicht abgeschlossen. Überprüfen Sie später erneut. |
 | Registrierung fehlgeschlagen | Die Registrierung konnte nicht abgeschlossen werden. Weitere Informationen erhalten Sie unter [Problembehandlung bei der Geräteregistrierung](#troubleshooting-device-registration) . |
-| Benutzer einsatzfähig | Die Registrierung wurde erfolgreich ausgeführt, und das Gerät ist jetzt bereit, an den Endbenutzer zugestellt zu werden. Microsoft Managed Desktop führt Sie durch die erstmalige Einrichtung, sodass Sie keine weiteren Vorbereitungen treffen müssen. |
-| Aktiv | Das Gerät wurde an den Endbenutzer übermittelt, und Sie haben sich bei Ihrem Mandanten registriert. Dies deutet auch darauf hin, dass das Gerät regelmäßig verwendet wird. |
-| Inaktiv | Das Gerät wurde an den Endbenutzer übermittelt, und Sie haben sich bei Ihrem Mandanten registriert. Sie haben das Gerät jedoch vor kurzem nicht verwendet (in den letzten 7 Tagen).  | 
+| Benutzer einsatzfähig | Die Registrierung wurde erfolgreich ausgeführt, und das Gerät kann nun für den Benutzer bereitgestellt werden. Microsoft Managed Desktop führt Sie durch die erstmalige Einrichtung, sodass Sie keine weiteren Vorbereitungen treffen müssen. |
+| Aktiv | Das Gerät wurde dem Benutzer zugestellt und Sie haben sich bei Ihrem Mandanten registriert. Dies deutet auch darauf hin, dass das Gerät regelmäßig verwendet wird. |
+| Inaktiv | Das Gerät wurde dem Benutzer zugestellt und Sie haben sich bei Ihrem Mandanten registriert. Sie haben das Gerät jedoch vor kurzem nicht verwendet (in den letzten 7 Tagen).  | 
 
 #### <a name="troubleshooting-device-registration"></a>Problembehandlung bei der Geräteregistrierung
 

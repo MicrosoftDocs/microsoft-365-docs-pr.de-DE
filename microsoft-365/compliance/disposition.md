@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Überwachen und Verwalten der Freigabe von Inhalten, unabhängig davon, ob Sie eine Dispositions Überprüfung oder Inhalte verwenden, wird automatisch entsprechend den von Ihnen konfigurierten Einstellungen gelöscht.
-ms.openlocfilehash: e70160ef309ad421724f9ad40db0d7c6e00df136
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 20f44244005f5a34a0d82f32f625fb067f02df20
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867210"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294764"
 ---
 # <a name="disposition-of-content"></a>Disposition von Inhalten
 
@@ -97,7 +97,7 @@ Das Auslösen einer Dispositions Überprüfung am Ende des Aufbewahrungszeitraum
 
 Wenn ein Prüfer per e-Mail benachrichtigt wird, dass der Inhalt überprüft werden kann, wechseln Sie zur Registerkarte " **Disposition** " von der **Datensatzverwaltung** im Microsoft 365 Compliance Center. Die Bearbeiter können sehen, wie viele Elemente für jede Aufbewahrungs Bezeichnung auf die Disposition warten, und wählen dann eine Aufbewahrungs Bezeichnung aus, um den gesamten Inhalt mit dieser Bezeichnung anzuzeigen.
 
-Nachdem Sie eine Aufbewahrungs Bezeichnung ausgewählt haben, werden auf der Registerkarte **ausstehende Disposition** alle ausstehenden Dispositionen für diese Bezeichnung angezeigt. Wählen Sie ein oder mehrere Elemente aus, in denen Sie eine Aktion auswählen und einen Ausrichtungs Kommentar eingeben können:
+Nachdem Sie eine Aufbewahrungs Bezeichnung ausgewählt haben, werden auf der Registerkarte **ausstehende Disposition** alle ausstehenden Dispositionen für diese Bezeichnung angezeigt. Wählen Sie mindestens ein Element aus, in dem Sie eine Aktion auswählen und einen Ausrichtungs Kommentar eingeben können:
 
 ![Dispositions Optionen](../media/retention-disposition-options.png)
 
@@ -120,11 +120,11 @@ Inhalte, die auf eine Dispositions Überprüfung warten, werden erst gelöscht, 
 ## <a name="disposition-of-records"></a>Disposition von Datensätzen
 
 > [!NOTE]
-> Der Rollout für den Nachweis der Verfügung für Datensätze in SharePoint und OneDrive ist abgeschlossen. Die Liste der Aufbewahrungs Bezeichnungen, die Inhalte als Datensätze für SharePoint und OneDrive markiert haben, wird im Abschnitt Disposition der Seite Datensatzverwaltung im Microsoft 365 Compliance Center angezeigt. Unter diesen Bezeichnungen können Sie die Liste der Elemente in SharePoint und OneDrive anzeigen, die automatisch oder nach einer Dispositions Überprüfung verworfen wurden.
+> Der Rollout für den Nachweis der Verfügung für Datensätze in SharePoint und OneDrive ist abgeschlossen.
 >
-> Der Nachweis der Verfügung für Datensätze in Exchange ist noch nicht aktiv. Wenn dieser Rollout beginnt und wenn er abgeschlossen ist, werden wir diesen Hinweis aktualisieren.
+> Der Nachweis der Verfügung für Datensätze in Exchange wurde gerade erst gestartet, um den Rollout auszuführen. Wenn dieser Rollout abgeschlossen ist, werden wir diesen Hinweis aktualisieren.
 
-Verwenden Sie die Registerkarte **Disposition** auf der Seite **Datensatzverwaltung** , um Datensätze zu identifizieren, die automatisch gelöscht werden. Diese Elemente zeigen **Datensätze** an, die in der Spalte **Typ** angeordnet sind. Zum Beispiel:
+Verwenden Sie die Registerkarte **Disposition** auf der Seite **Datensatzverwaltung** , um Datensätze zu identifizieren, die jetzt entweder automatisch oder nach einer Dispositions Überprüfung gelöscht werden. Diese Elemente zeigen **Datensätze** an, die in der Spalte **Typ** angeordnet sind. Zum Beispiel:
 
 ![Elemente, die ohne eine Dispositions Überprüfung verworfen wurden](../media/records-disposed2.png)
 
