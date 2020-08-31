@@ -17,12 +17,12 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: Verwalten Sie diese Azure-Administratorrollen im Microsoft 365 Admin Center.
-ms.openlocfilehash: afb025feb6e867b16be7a844a5f48ef42759b543
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: 2295a003fa73cb1805fad3231ff62b37930d0306
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898028"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289093"
 ---
 # <a name="azure-active-directory-roles-in-the-microsoft-365-admin-center"></a>Rollen in Azure Active Directory im Microsoft 365 Admin Center
 
@@ -62,6 +62,8 @@ Hier ist eine Liste aller im Microsoft 365 Admin Center verfügbaren Administrat
 |Gruppenadministrator   |Erstellt Gruppen und verwaltet alle Gruppeneinstellungen in allen Admin Centern.|
 |Gasteniladender     |    Verwaltet Azure Active Directory B2B-Gastbenutzereinladungen.     |
 |Helpdesk-Administrator     | Setzt Kennwörter zurück und authentifiziert erneut für Nicht-Administratoren und einige Administratorrollen, verwaltet Serviceanfragen und überwacht den Dienststatus.      |
+|Insights-Administrator     | Verwaltet alle Aspekte der Anwendung Microsoft 365 Insights, liest Azure Active Directory-Informationen, kann den Dienststatus überwachen und Serviceanfragen erstellen und verwalten.      |
+|Insights Business-Administrator     | Lesen Sie Berichte und Einblicke in der Anwendung Microsoft 365 Insights.      |
 |Intune-Administrator     | Hat Vollzugriff auf Intune, verwaltet Benutzer und Geräte, um Richtlinien zuzuordnen, Gruppen zu erstellen und zu verwalten.      |
 |Kaizala-Administrator     |    Vollzugriff auf alle Kaizala-Verwaltungsfunktionen und -Daten; verwaltet Serviceanfragen.     |
 |Lizenzadministrator     |     Kann Benutzern Lizenzen zuweisen, diese entfernen und deren Verwendungsstandort bearbeiten.    |

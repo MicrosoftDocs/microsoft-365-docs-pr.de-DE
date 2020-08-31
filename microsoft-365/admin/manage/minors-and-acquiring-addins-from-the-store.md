@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Erfahren Sie mehr über die allgemeinen Datenschutzverordnung (dsgvo)-Verordnungen, die die personenbezogenen Daten von Minderjährigen Regeln.
-ms.openlocfilehash: dcf2c98906830e0007747e2dd90e67b9dc85a5bb
-ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
+ms.openlocfilehash: a738e22a0ac0b995c8e44fcf4cc5a2eb47375be5
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45103104"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306551"
 ---
 # <a name="minors-and-acquiring-add-ins-from-the-store"></a>Minderjährige und Erwerb von Add-Ins aus dem Store
 
@@ -65,7 +65,7 @@ Um dsgvo-konform für Minderjährige zu sein, müssen Sie sicherstellen, dass ei
   
 Word-, Excel-und PowerPoint 2013 für Windows unterstützt die gleichen Minderjährigen überprüft, ob Active Directory Authentifizierungsbibliothek (Adal) aktiviert ist. Es gibt zwei Optionen für die Compliance, wie weiter erläutert.
   
-- **Aktivieren Sie Adal**. In diesem Artikel wird erläutert, wie Sie Adal für Office 2013 aktivieren: [Verwenden der modernen Authentifizierung von Microsoft 365 mit Office-Clients](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).<br/>Sie müssen auch die Registrierungsschlüssel festlegen, um Adal zu aktivieren, wie unter [Aktivieren der modernen Authentifizierung für Office 2013 auf Windows-Geräten](../security-and-compliance/enable-modern-authentication.md)erläutert.<br/>Darüber hinaus müssen Sie die folgenden April-Updates für Office 2013 installieren:
+- **Aktivieren Sie Adal**. In diesem Artikel wird erläutert, wie Sie Adal für Office 2013 aktivieren: [Verwenden der modernen Authentifizierung von Microsoft 365 mit Office-Clients](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016).<br/>Sie müssen auch die Registrierungsschlüssel festlegen, um Adal zu aktivieren, wie unter [Aktivieren der modernen Authentifizierung für Office 2013 auf Windows-Geräten](../security-and-compliance/enable-modern-authentication.md)erläutert.<br/>Darüber hinaus müssen Sie die folgenden April-Updates für Office 2013 installieren:
     
   - [Beschreibung des Sicherheitsupdates für Office 2013:10. April 2018](https://support.microsoft.com/help/4018330/description-of-the-security-update-for-office-2013-april-10-2018)
     

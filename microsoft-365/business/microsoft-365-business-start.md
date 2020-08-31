@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Erfahren Sie mehr über Microsoft 365 for Business, wie Sie eingerichtet werden und wie Sie die Geräte und PCs Ihrer Benutzer vorbereiten können, um sicherzustellen, dass Sie von Microsoft 365 for Business geschützt sind.
-ms.openlocfilehash: aedcf78f10707dbe6a1d1527effea7d56283dce0
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: ec50036f589cfd8497b0e7e9af6519b30d25dcd3
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080041"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306487"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Erste Schritte mit Microsoft 365 for Business
 
@@ -82,7 +82,7 @@ Melden Sie sich bei [Microsoft 365 Admin Center](https://portal.office.com/admin
     
     - Wenn Sie auch über einen Exchange 2010-, Exchange 2013-oder Exchange 2016-Server verfügen, können Sie mit [minimaler Hybrid Bereitstellung schnell Exchange-Postfächer zu Microsoft 365 migrieren](https://docs.microsoft.com/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate). Die minimalen Hybriden Schritte umfassen eine einmalige Synchronisierung von Benutzern zu Azure AD und eine e-Mail-Migration von der lokalen zur Cloud. Nachdem die e-Mail-Migration abgeschlossen ist, wird die Verzeichnissynchronisierung automatisch deaktiviert, wenn Sie diese Methode verwenden.
     
-    - Verwenden Sie den Verzeichnis Synchronisierungs-Assistenten, um Ihre Benutzer mit der Cloud zu synchronisieren. Führen Sie die Schritte unter [Einrichten der Verzeichnissynchronisierung für Microsoft 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) aus, um diesen Vorgang abzuschließen. Nachdem Sie Ihre Benutzer mit der Cloud synchronisiert haben, müssen Sie die [Verzeichnissynchronisierung für Microsoft 365 deaktivieren](https://docs.microsoft.com/office365/enterprise/turn-off-directory-synchronization).
+    - Verwenden Sie den Verzeichnis Synchronisierungs-Assistenten, um Ihre Benutzer mit der Cloud zu synchronisieren. Führen Sie die Schritte unter [Einrichten der Verzeichnissynchronisierung für Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization) aus, um diesen Vorgang abzuschließen. Nachdem Sie Ihre Benutzer mit der Cloud synchronisiert haben, müssen Sie die [Verzeichnissynchronisierung für Microsoft 365 deaktivieren](https://docs.microsoft.com/microsoft-365/enterprise/turn-off-directory-synchronization).
     
     Außerdem müssen Sie jedem Benutzer, der auf diese Weise hinzugefügt wurde, eine Lizenz für Microsoft 365 for Business geben. Sie können dies im Setup- [Assistenten](set-up.md) tun, oder Sie können [Benutzern Lizenzen zuweisen](../admin/manage/assign-licenses-to-users.md).
     
@@ -107,7 +107,7 @@ Wenn Sie ein lokales Active Directory beibehalten, das einige lokale Ressourcen 
     
 - Als Microsoft 365 for Business-Administrator haben Sie Zugriff auf unser Kundensupport Team: ** [kontaktieren des Supports für Business-Produkte-Administratorhilfe](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)**
     
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen:
 
 [Dokumentation und Ressourcen zu Microsoft 365 for Business](https://go.microsoft.com/fwlink/p/?linkid=853701)
   

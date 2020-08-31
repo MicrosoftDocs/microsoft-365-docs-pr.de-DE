@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Erfahren Sie mehr über die Anforderungen und Überlegungen für die Umstellung auf Microsoft 365 for Business.
-ms.openlocfilehash: b7d815da012e1c104561d5fccfb9e1704ac5c447
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 14543e3859f06e7f89cf74e2159a70483c7ec228
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529660"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307543"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Planen des Setups von Microsoft 365 for Business
 
@@ -60,7 +60,7 @@ Wenn Sie an einer Stelle nicht weiterkommen, rufen Sie uns an. [Wir helfen Ihnen
 
 Es gibt eine Reihe von Szenarien, die entweder das Migrieren von Daten oder Benutzern aus lokalen Umgebungen oder das Einrichten eines Hybridsystems umfassen, das die Verzeichnissynchronisierung umfasst. Wenn Sie sich in einer der beiden Kategorien befinden, befolgen Sie die Anweisungen in den folgenden Artikeln:
   
-- Informationen zum Einrichten der Verzeichnissynchronisierung mit Ihren lokalen Active Directory finden Sie unter [Einrichten der Verzeichnissynchronisierung für Microsoft 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)und verstehen der unterschiedlichen Identitäts Modelle in Microsoft 365, lesen [Grundlegendes zur Microsoft 365-Identität und Azure-Active Directory](https://docs.microsoft.com/office365/enterprise/about-office-365-identity).
+- Informationen zum Einrichten der Verzeichnissynchronisierung mit Ihren lokalen Active Directory finden Sie unter [Einrichten der Verzeichnissynchronisierung für Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization)und verstehen der unterschiedlichen Identitäts Modelle in Microsoft 365, lesen [Grundlegendes zur Microsoft 365-Identität und Azure-Active Directory](https://docs.microsoft.com/microsoft-365/enterprise/about-microsoft-365-identity).
 
 - Die vollständigen Anweisungen zum Einrichten einer Exchange-Hybridbereitstellung, die Sie durch alle verschiedenen Möglichkeiten zum Einrichten einer Exchange-Hybridbereitstellung führen (einschließlich der Einrichtung von DNS-Einträgen) finden Sie hier: [Bereitstellungs-Assistent für Exchange Server](https://aka.ms/exdeploy)
 
@@ -127,7 +127,7 @@ Informationen zu größeren Organisationen oder wenn Sie mit Skype for Business,
   
 ## <a name="plan-for-integration-with-active-directory-or-other-software"></a>Planen der Integration mit Active Directory oder sonstiger Software
 
-- **Wünschen Sie eine Integration mit Ihrem lokalen Active Directory?** Sie können Ihre lokalen Active Directory mithilfe von Azure Active Directory Connect in Microsoft 365 integrieren. Anweisungen finden Sie unter [Einrichten der Verzeichnissynchronisierung für Microsoft 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization).
+- **Wünschen Sie eine Integration mit Ihrem lokalen Active Directory?** Sie können Ihre lokalen Active Directory mithilfe von Azure Active Directory Connect in Microsoft 365 integrieren. Anweisungen finden Sie unter [Einrichten der Verzeichnissynchronisierung für Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization).
   
 - **Möchten Sie Microsoft 365 mit Software integrieren, die von anderen Unternehmen erstellt wurde?** Wenn Sie Microsoft 365 mit anderer Software in Ihrer Organisation integrieren müssen, empfehlen wir Ihnen, [einen Partner](https://go.microsoft.com/fwlink/?linkid=391089) zur Unterstützung Ihrer Bereitstellung zu mieten.
   

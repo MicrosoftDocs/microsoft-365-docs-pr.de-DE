@@ -16,18 +16,18 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die Anti-Phishing-Richtlinien informieren, die in Exchange Online Protection (EoP) und Office 365 Advanced Threat Protection (Office 365 ATP) zur Verfügung stehen.
-ms.openlocfilehash: f671588ff4232c6ca1c1342475f48802bf1a0076
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 7118bca15102fd52e7825ee873187fa11d9fc0f9
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825101"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308195"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-Phishing-Richtlinien in Microsoft 365
 
 Richtlinien zum Konfigurieren von Einstellungen zum Schutz vor Phishing stehen in Microsoft 365-Organisationen mit Exchange Online-Postfächern, eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächern und Office 365 Advanced Threat Protection (Office 365 ATP)-Organisationen zur Verfügung.
 
-ATP-Anti-Phishing-Richtlinien sind nur in Organisationen verfügbar, die Office 365 ATP haben. Beispiel:
+ATP-Anti-Phishing-Richtlinien sind nur in Organisationen verfügbar, die Office 365 ATP haben. Zum Beispiel:
 
 - Microsoft 365 Enterprise E5, Microsoft 365 Education A5, etc.
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
@@ -81,6 +81,9 @@ Die folgenden Richtlinieneinstellungen sind in Anti-Phishing-Richtlinien und Ric
     - **Empfänger lautet**
     - **Der Empfänger ist Mitglied von**
     - **Die Empfängerdomäne ist**
+
+  > [!NOTE]
+  > Die Einstellung **angewendet auf** ist in benutzerdefinierten Richtlinien zum Schutz vor Phishing erforderlich, um die Nachrichten **Empfänger** zu identifizieren <u>, auf die die Richtlinie angewendet</u>wird. Für ATP-Anti-Phishing-Richtlinien gibt es auch Einstellungen für den [Identitätswechsel](#impersonation-settings-in-atp-anti-phishing-policies) , in denen Sie einzelne Absender-e-Mail-Adressen oder Absenderdomänen angeben können <u>, die den Identitätswechsel Schutz erhalten,</u> wie weiter unten in diesem Thema beschrieben wird.
 
 ## <a name="spoof-settings"></a>Spoof-Einstellungen
 
@@ -144,13 +147,21 @@ Eine imitierte Domäne kann ansonsten als seriös gelten (registrierte Domäne, 
 
 Die folgenden Identitätswechseleinstellungen sind nur in Richtlinien für ATP-Anti-Phishing verfügbar:
 
-- **Zu schützende Benutzer**: verhindert, dass die Identität der angegebenen internen oder externen Benutzer imitiert wird. Beispiel: Führungskräfte (intern) und Verwaltungsratsmitglieder (extern). Sie können bis zu 60 interne und externe Adressen hinzufügen. Diese Liste geschützter Benutzer unterscheidet sich von der Liste der Empfänger, für die die Richtlinie in der Einstellung **angewendet auf** gilt.
+- **Zu schützende Benutzer**: verhindert, dass die angegebene interne oder externe e-Mail-Adresse **als Absender**von Nachrichten imitiert wird. Beispielsweise Führungskräfte (interne Absender) und Verwaltungsratsmitglieder (externe Absender). Sie können bis zu 60 interne und externe Absender-e-Mail-Adressen zum Schutz vor Identitätswechsel hinzufügen. Diese Liste von **Absendern** , die vor Identitätswechsel geschützt sind, unterscheidet sich von der Liste der **Empfänger** , auf die die Richtlinie angewendet wird.
 
-  Sie geben beispielsweise Felipe Apodaca (felipea@contoso.com) als geschützten Benutzer in einer Richtlinie an, die für die Gruppe "Führungskräfte" gilt. Eingehende Nachrichten, die an Mitglieder der Gruppe "Führungskräfte" gesendet werden, in der Felipe Apodaca imitiert wird, werden von der Richtlinie verarbeitet (die Aktion, die Sie für imitierte Benutzer konfigurieren).
+  Die Standardrichtlinie gilt für Nachrichten, die an alle Empfänger gesendet werden, während benutzerdefinierte Richtlinien nur auf Nachrichten angewendet werden, die Sie in der Einstellung **angewendet auf,** wie im Abschnitt [Richtlinieneinstellungen](#policy-settings) beschrieben, an die Empfänger gesendet haben.
 
-- **Zu schützende Domänen**: verhindern, dass die Identität der angegebenen Domänen imitiert wird. Beispielsweise alle Domänen, die Sie besitzen ([akzeptierte Domänen](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) oder bestimmte Domänen (Domänen, die Sie besitzen oder Partnerdomänen). Diese Liste geschützter Domänen unterscheidet sich von der Liste der Domänen, für die die Richtlinie in der Einstellung **angewendet auf** gilt.
+  Standardmäßig sind keine Absender-e-Mail-Adressen für den Identitätswechsel Schutz in **Benutzern konfiguriert, die geschützt werden sollen**. Daher werden standardmäßig keine Absender-e-Mail-Adressen durch den Identitätswechsel Schutz in der Standardrichtlinie oder in benutzerdefinierten Richtlinien abgedeckt.
 
-  Beispielsweise geben Sie tailspintoys.com als geschützte Domäne in einer Richtlinie an, die für Mitglieder der Gruppe "Führungskräfte" gilt. Eingehende Nachrichten, die an Mitglieder der Gruppe "Führungskräfte" gesendet werden, in der tailspintoys.com imitiert wird, werden von der Richtlinie verarbeitet (die Aktion, die Sie für imitierte Domänen konfigurieren).
+  Wenn Sie der Liste der **zu schützenden Benutzer** interne oder externe e-Mail-Adressen hinzufügen, unterliegen Nachrichten von diesen **Absendern** den Identitätswechsel-Schutzprüfungen. Die Nachricht wird auf den Identitätswechsel überprüft, **Wenn** die Nachricht an einen **Empfänger** gesendet wird, auf den die Richtlinie angewendet wird (alle Empfänger für die Standardrichtlinie; **Auf** Empfänger in benutzerdefinierten Richtlinien angewendet). Wenn der Identitätswechsel in der e-Mail-Adresse des Absenders erkannt wird, werden die Aktionen des Identitätswechsel Schutzes für Benutzer auf die Nachricht angewendet (die Aktion in der Nachricht, der Sicherheitstipp "imitierte Benutzer" usw.).
+
+- **Zu schützende Domänen**: verhindert, dass die angegebenen Domänen **in der Domäne des Nachrichtenabsenders**imitiert werden. Beispielsweise alle Domänen, die Sie besitzen ([akzeptierte Domänen](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) oder bestimmte Domänen (Domänen, die Sie besitzen oder Partnerdomänen). Diese Liste von **Absenderdomänen** , die vor Identitätswechsel geschützt sind, unterscheidet sich von der Liste der **Empfänger** , auf die die Richtlinie angewendet wird.
+
+  Die Standardrichtlinie gilt für Nachrichten, die an alle Empfänger gesendet werden, während benutzerdefinierte Richtlinien nur auf Nachrichten angewendet werden, die Sie in der Einstellung **angewendet auf,** wie im Abschnitt [Richtlinieneinstellungen](#policy-settings) beschrieben, an die Empfänger gesendet haben.
+
+  Standardmäßig sind keine Absenderdomänen für den Identitätswechsel Schutz in Domänen konfiguriert **, die geschützt werden sollen**. Daher werden standardmäßig keine Absenderdomänen durch den Identitätswechsel Schutz in der Standardrichtlinie oder in benutzerdefinierten Richtlinien behandelt.
+
+  Wenn Sie Domänen zu Domänen hinzufügen, um die Liste zu **schützen** , unterliegen Nachrichten von **Absendern in diesen Domänen** den Identitätswechsel-Schutzprüfungen. Die Nachricht wird auf den Identitätswechsel überprüft, **Wenn** die Nachricht an einen **Empfänger** gesendet wird, auf den die Richtlinie angewendet wird (alle Empfänger für die Standardrichtlinie; **Auf** Empfänger in benutzerdefinierten Richtlinien angewendet). Wenn der Identitätswechsel in der Domäne des Absenders erkannt wird, werden die Schutzaktionen für den Identitätswechsel für Domänen auf die Nachricht angewendet (die Aktion in der Nachricht, der Sicherheitstipp "imitierte Domänen" usw.).
 
 - **Aktionen für geschützte Benutzer oder Domänen**: Wählen Sie die Aktion aus, die für eingehende Nachrichten ausgeführt werden soll, die Identitätswechsel Versuche für geschützte Benutzer und geschützte Domänen in der Richtlinie enthalten. Sie können verschiedene Aktionen für den Identitätswechsel von geschützten Benutzern im Vergleich zum Identitätswechsel geschützter Domänen angeben:
 

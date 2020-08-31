@@ -11,12 +11,12 @@ metadata:
   ms.date: 04/16/2020
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: c35874ec774b0e8753b0bfacb2dd795a4f000188
-  ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+  ms.openlocfilehash: 213d7a3680504fdd13b63568627a97dc0c0c6496
+  ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 06/17/2020
-  ms.locfileid: "44780217"
+  ms.lasthandoff: 08/29/2020
+  ms.locfileid: "47306911"
 landingContent:
 - title: Verwalten von E-Mails
   linkLists:
@@ -69,6 +69,6 @@ landingContent:
     - text: Beheben und Suchen von Problemen, nachdem Ihre Domäne oder DNS-Einträge hinzugefügt wurden
       url: ../get-help-with-domains/find-and-fix-issues.md
     - text: Wiederherstellen gelöschter E-Mails im Postfach eines Benutzers
-      url: https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox
+      url: https://docs.microsoft.com/microsoft-365/enterprise/recover-deleted-items-in-a-mailbox
     - text: Beheben von Outlook-Verbindungsproblemen in Microsoft 365 und Exchange Online
       url: https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f

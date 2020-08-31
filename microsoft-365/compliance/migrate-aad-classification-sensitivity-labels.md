@@ -10,12 +10,12 @@ ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
 description: In diesem Artikel werden die klassischen Azure Active Directory Klassifizierungs-und Sensitivitäts Bezeichnungen erläutert.
-ms.openlocfilehash: f11473653884392048d5f9a84f8e284dba5f6f27
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 38a3dbe727f3d0759d427944016ae98440f2686f
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755389"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308172"
 ---
 # <a name="azure-active-directory-classification-and-sensitivity-labels-for-microsoft-365-groups"></a>Azure Active Directory Klassifizierungs-und Sensitivitäts Bezeichnungen für Microsoft 365-Gruppen
 
@@ -52,7 +52,7 @@ Tabelle 1. Verhalten kompatibler und nicht kompatibler Arbeitsauslastungen – 
 > - Wenn der Benutzer jedoch eine Gruppe bearbeitet und die Gruppe mit einer Vertraulichkeits Bezeichnung speichert, wird die ausgewählte Datenschutzeinstellung durch die Datenschutzeinstellung der angewendeten Vertraulichkeits Bezeichnung außer Kraft gesetzt.
 > Es wird empfohlen, dass Ihre Benutzer auf einer alten Version des Outlook-Clients auf die neuere Version aktualisieren.
 
-## <a name="scenario-2-tenant-is-already-using-classic-aad-classifications"></a>Szenario 2: der Mandant verwendet bereits klassische Aad- [Klassifikationen](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell#create-classifications-for-office-groups-in-your-organization)
+## <a name="scenario-2-tenant-is-already-using-classic-aad-classifications"></a>Szenario 2: der Mandant verwendet bereits klassische Aad- [Klassifikationen](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
 
 ### <a name="case-a-tenant-never-used-sensitivity-labels-for-documents-and-emails"></a>Fall A: Mandant verwendet keine Sensitivitäts Bezeichnungen für Dokumente und e-Mails.
 

@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Hier erfahren Sie, wie Sie einem Benutzer oder mehreren Benutzern in Ihrem Unternehmen Administratorrollen zuweisen, damit diese bestimmte Aufgaben im Admin Center ausführen können.
-ms.openlocfilehash: cd50faf5db5e674e865e0913cae14a68a202bd1f
-ms.sourcegitcommit: 2e9e309ec09e5275ac6b3b425fba48a9ffce8eb2
+ms.openlocfilehash: f5449bdb6b05e2a29393ad8e389c562953efd710
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44900776"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307319"
 ---
 # <a name="assign-admin-roles"></a>Zuweisen von Administratorrollen
 
@@ -40,13 +40,13 @@ Wenn Sie die Person sind, die Ihr Microsoft Business-Abonnement erworben hat, si
 
 Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](about-admin-roles.md).
 
-Wenn Sie neue Benutzer hinzufügen, wenn Sie Ihnen keine Administratorrolle zuweisen, befinden Sie sich in der *Benutzerrolle* und verfügen nicht über Administratorrechte für eines der Microsoft Admin Center. Wenn Sie jedoch Hilfe beim erledigen von Aufgaben benötigen, können Sie einem Benutzer eine Administratorrolle zuweisen. Wenn Sie beispielsweise eine Person benötigen, die das Zurücksetzen von Kennwörtern unterstützt, sollten Sie Ihnen nicht die globale Administratorrolle zuweisen, sondern Ihnen die kennwortadministratorrolle zuweisen. Wenn Sie zu viele globale Administratoren mit unbegrenztem Zugriff auf Ihre Daten und Ihr Online-Geschäft haben, ist dies ein Sicherheitsrisiko.
+Wenn Sie neue Benutzer hinzufügen, wenn Sie Ihnen keine Administratorrolle zuweisen, befinden Sie sich in der *Benutzerrolle* und verfügen nicht über Administratorrechte für eines der Microsoft Admin Center. Wenn Sie jedoch Hilfe beim erledigen von Aufgaben benötigen, können Sie einem Benutzer eine Administratorrolle zuweisen. Wenn Sie beispielsweise eine Person benötigen, die das Zurücksetzen von Kennwörtern unterstützt, sollten Sie Ihnen nicht die globale Administratorrolle zuweisen, sondern Ihnen die kennwortadministratorrolle zuweisen. Zu viele globale Administratoren mit unbegrenztem Zugriff auf Ihre Daten und Ihr Onlinegeschäft zu ernennen, stellt ein Sicherheitsrisiko dar.
 
 Sehen Sie sich ein kurzes Video über das Hinzufügen eines Administrators an.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) an.
 
 ## <a name="assign-admin-roles"></a>Zuweisen von Administratorrollen 
 
@@ -66,7 +66,7 @@ Sie können Benutzern eine Rolle auf zwei verschiedene Arten zuweisen:
 5. Fügen Sie mehrere Benutzer hinzu, bis Sie fertig sind.
 6. Wählen Sie **Speichern**aus, und dann wird der Benutzer der Liste der zugewiesenen Administratoren hinzugefügt.
 
-### <a name="assign-a-user-to-an-admin-role-from-active-users"></a>Zuweisen eines Benutzers zu einer Administratorrolle von aktiven Benutzern
+### <a name="assign-a-user-to-an-admin-role-from-active-users"></a>Zuweisen eines Benutzers zu einer Administratorrolle über "Aktive Benutzer"
 
 1. Wechseln Sie im Admin Center zur Seite **Benutzer** > [aktive Benutzer](https://go.microsoft.com/fwlink/p/?linkid=834822) .
 
@@ -122,6 +122,6 @@ Möglicherweise verfügen Sie nicht über die richtigen Berechtigungen, um ander
 
 [Administratorrollenberechtigungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
-[Zuweisen von Rollen zu Benutzerkonten mit PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell)
+[Zuweisen von Rollen zu Benutzerkonten mit PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell)
 
 [Autorisieren oder Entfernen von Partnerbeziehungen](../misc/add-partner.md)

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Administratoren können sich über die Fehlercodes informieren, die der Nachrichtenzustellung mithilfe von Connectors (auch als Nachrichtenfluss-Intelligence bezeichnet) zugeordnet sind.
-ms.openlocfilehash: b345b52f572efca2aca1fde6ba720d733e521cc4
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: e8427f3e0341ccb381121b6cdc83d20727713d4c
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827713"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307917"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>Intelligenter Nachrichtenfluss in EOP
 
@@ -62,7 +62,7 @@ Normalerweise bedeutet dieser Fehler, dass Microsoft 365 einen Verbindungsfehler
 
 ### <a name="how-do-i-fix-error-code-450-44316"></a>Wie behebe ich den Fehlercode 450 4.4.316?
 
-- Wenn Sie über Postfächer in Ihrer lokalen Umgebung verfügen, müssen Sie Ihre Firewalleinstellungen so ändern, dass Verbindungen von Microsoft 365-IP-Adressen an TCP-Port 25 zu Ihren lokalen e-Mail-Servern zugelassen werden. Eine Liste der Microsoft 365-IP-Adressen finden Sie unter [Microsoft 365-URLs und IP-Adressbereiche](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
+- Wenn Sie über Postfächer in Ihrer lokalen Umgebung verfügen, müssen Sie Ihre Firewalleinstellungen so ändern, dass Verbindungen von Microsoft 365-IP-Adressen an TCP-Port 25 zu Ihren lokalen e-Mail-Servern zugelassen werden. Eine Liste der Microsoft 365-IP-Adressen finden Sie unter [Microsoft 365-URLs und IP-Adressbereiche](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges).
 
 - Wenn keine weiteren Nachrichten an Ihre lokale Umgebung übermittelt werden sollen, klicken Sie in der Warnung auf **jetzt korrigieren** , damit Microsoft 365 die Nachrichten mit ungültigen Empfängern sofort ablehnen kann. Dadurch wird das Risiko verringert, dass das Kontingent für ungültige Empfänger Ihrer Organisation überschritten wird, wodurch die normale Nachrichtenübermittlung beeinträchtigt werden könnte. Alternativ können Sie das Problem mit den folgenden Anweisungen manuell beheben:
 

@@ -20,12 +20,12 @@ search.appverid:
 description: Erfahren Sie, wie Sie ein Upgrade von einem Office 365 E4-Abonnement durchführen.
 ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3ab3ac1c85dc3726585f9c414449ff4847626fc8
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2587732a6c4092dcb7b53daf9493e7cee2f1987c
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690697"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308005"
 ---
 # <a name="upgrade-from-an-office-365-e4-subscription"></a>Upgrade von einem Office 365 E4-Abonnement
 
@@ -130,7 +130,7 @@ Bevor Sie mit dem nächsten Schritt fortfahren, müssen Sie unbedingt sicherstel
 Sie können das Microsoft 365 Admin Center verwenden, um Lizenzen für bis zu 20 Benutzer gleichzeitig neu zuzuweisen. Weitere Informationen finden Sie unter [Migrieren von Benutzern zu einem anderen Abonnement](move-users-different-subscription.md).
 
 > [!TIP]
-> Wenn Sie viele Benutzer haben, können Sie [Office 365 PowerShell verwenden, um Benutzerlizenzen massenweise zuzuweisen](https://docs.microsoft.com/office365/enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell).
+> Wenn Sie viele Benutzer haben, können Sie [Office 365 PowerShell verwenden, um Benutzerlizenzen massenweise zuzuweisen](https://docs.microsoft.com/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell).
 
 ### <a name="step-4-cancel-the-office-365-e4-subscription"></a>Schritt 4: Abbrechen des Abonnements für Office 365 E4
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Erfahren Sie mehr über das Verwalten von Microsoft 365-Gruppen, einschließlich Hinzufügen von Gruppenmitgliedern, Bearbeiten der e-Mail-Adresse, des Gruppennamens oder der Beschreibung und Anpassen der Funktionsweise der Gruppe.
-ms.openlocfilehash: ba88e35713e889ca85a264b1da1d34d9e1e30671
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 26c6c064e454351366c326e665bacdcc9bb855fb
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780649"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307301"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Verwalten einer Gruppe im Microsoft 365 Admin Center
 
@@ -122,7 +122,7 @@ Gruppenmitglieder können diesen e-Mail-Empfang nicht mehr erhalten, indem Sie d
 
 3. Wählen Sie auf der Registerkarte **Einstellungen** die Option **Kopien von Gruppenunterhaltungen und Ereignissen an Gruppenmitglieder senden** aus, wenn Sie möchten, dass Mitglieder Kopien von Gruppen Nachrichten und Kalenderelementen in Ihrem eigenen Posteingang erhalten.
 
-4. Wählen Sie **Speichern**.
+4. Klicken Sie auf **Speichern**.
 
 ::: moniker-end
 
@@ -134,7 +134,7 @@ Gruppenmitglieder können diesen e-Mail-Empfang nicht mehr erhalten, indem Sie d
 
 3. **Senden Sie Kopien von Gruppenunterhaltungen und Ereignissen an die Posteingänge der Gruppenmitglieder** an, wenn Sie möchten, dass Mitglieder Kopien von Gruppen Nachrichten und Kalenderelementen in Ihrem eigenen Posteingang erhalten. **On**
 
-4. Wählen Sie **Speichern**.
+4. Klicken Sie auf **Speichern**.
 
 ::: moniker-end
 
@@ -146,7 +146,7 @@ Gruppenmitglieder können diesen e-Mail-Empfang nicht mehr erhalten, indem Sie d
 
 3. **Senden Sie Kopien von Gruppenunterhaltungen und Ereignissen an die Posteingänge der Gruppenmitglieder** an, wenn Sie möchten, dass Mitglieder Kopien von Gruppen Nachrichten und Kalenderelementen in Ihrem eigenen Posteingang erhalten. **On**
 
-4. Wählen Sie **Speichern**.
+4. Klicken Sie auf **Speichern**.
 
 ::: moniker-end
 
@@ -162,7 +162,7 @@ Diese Option eignet sich hervorragend, wenn Sie eine Firmen-e-Mail-Adresse wie I
 
 3. Wählen Sie in der Liste Admin Center-Gruppen den Namen der Gruppe aus, die Sie ändern möchten, und wählen Sie dann auf der Registerkarte **Einstellungen** die Option **externe Absender können diese Gruppe per e-Mail zulassen**aus.
     
-4. Wählen Sie **Speichern**.
+4. Klicken Sie auf **Speichern**.
 
 ::: moniker-end
 
@@ -174,7 +174,7 @@ Diese Option eignet sich hervorragend, wenn Sie eine Firmen-e-Mail-Adresse wie I
     
 3. Setzen Sie die Umschaltfläche **Personen von außerhalb der Organisation das Senden von E-Mail an die Gruppe gestatten** auf **Ein**.
     
-4. Wählen Sie **Speichern**.
+4. Klicken Sie auf **Speichern**.
 
 ::: moniker-end
 
@@ -186,7 +186,7 @@ Diese Option eignet sich hervorragend, wenn Sie eine Firmen-e-Mail-Adresse wie I
     
 3. Setzen Sie die Umschaltfläche **Personen von außerhalb der Organisation das Senden von E-Mail an die Gruppe gestatten** auf **Ein**.
     
-4. Wählen Sie **Speichern**.
+4. Klicken Sie auf **Speichern**.
 
 ::: moniker-end
 
@@ -202,4 +202,4 @@ Diese Option eignet sich hervorragend, wenn Sie eine Firmen-e-Mail-Adresse wie I
 
 [Aktualisieren von Verteilerlisten auf Microsoft 365-Gruppen](../manage/upgrade-distribution-lists.md)
 
-[Verwalten von Microsoft 365-Gruppen mit PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
+[Verwalten von Microsoft 365-Gruppen mit PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/powershell/manage-office-365-groups-with-powershell)

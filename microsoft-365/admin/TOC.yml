@@ -293,7 +293,7 @@
           items:
             - name: Überprüfen der Einstellungen unter Android oder iOS
               href: ../business/validate-settings-on-android-or-ios.md
-        - name: Festlegen von Geräteschutzeinstellungen für Windows 10-PCs
+        - name: Bearbeiten oder Erstellen von Geräteschutzeinstellungen für Windows 10-PCs
           href: ../business/protection-settings-for-windows-10-pcs.md
           items:
             - name: Überprüfen der Einstellungen auf Windows 10-PCs

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Informationen zum Hinzufügen von Benutzern und Zuweisen von Lizenzen zu Microsoft 365 gleichzeitig.
 ms.date: 07/01/2020
-ms.openlocfilehash: 016c98fc93bfa1a92274a5b991cf8adbd1131bc9
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 6745285600b6c5a62b4327d7174b2c249ff5276c
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45015887"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307373"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Hinzufügen von Benutzern und gleichzeitiges Zuweisen von Lizenzen
 
@@ -100,9 +100,9 @@ Zum Hinzufügen von Benutzern und Zuweisen von Lizenzen müssen Sie ein globaler
 
 Sie können eine der folgenden Methoden verwenden, um mehrere Benutzer gleichzeitig hinzuzufügen:
   
-- **Mithilfe einer Kalkulationstabelle können Sie Benutzer in Massen hinzufügen.** Weitere Informationen hierzu finden Sie unter [Gleichzeitiges Hinzufügen von mehreren Benutzern](https://docs.microsoft.com/office365/enterprise/add-several-users-at-the-same-time).
-- **Automatisieren Sie das Hinzufügen von Konten und Zuweisen von Lizenzen.** Informationen hierzu finden Sie unter [Erstellen von Benutzerkonten mit Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/create-user-accounts-with-office-365-powershell). Wählen Sie diese Methode aus, wenn Sie mit der Nutzung von Windows PowerShell-Cmdlets bereits vertraut sind.
-- **Sie verwenden Active Directory?** [Richten Sie die Verzeichnissynchronisierung für Office 365 ein](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization). Verwenden Sie das Azure AD Connect-Tool, um Active Directory Benutzerkonten (und andere Active Directory-Objekte) in Microsoft 365 zu replizieren. Bei der Synchronisierung werden nur die Benutzerkonten hinzugefügt. Sie müssen den synchronisierten Benutzern Lizenzen zuweisen, bevor Sie e-Mails und andere Office-Apps verwenden können.
+- **Mithilfe einer Kalkulationstabelle können Sie Benutzer in Massen hinzufügen.** Weitere Informationen hierzu finden Sie unter [Gleichzeitiges Hinzufügen von mehreren Benutzern](https://docs.microsoft.com/microsoft-365/enterprise/add-several-users-at-the-same-time).
+- **Automatisieren Sie das Hinzufügen von Konten und Zuweisen von Lizenzen.** Siehe [Erstellen von Benutzerkonten mit Microsoft 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/create-user-accounts-with-microsoft-365-powershell). Wählen Sie diese Methode aus, wenn Sie mit der Nutzung von Windows PowerShell-Cmdlets bereits vertraut sind.
+- **Sie verwenden Active Directory?** [Einrichten der Verzeichnissynchronisierung für Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization). Verwenden Sie das Azure AD Connect-Tool, um Active Directory Benutzerkonten (und andere Active Directory-Objekte) in Microsoft 365 zu replizieren. Bei der Synchronisierung werden nur die Benutzerkonten hinzugefügt. Sie müssen den synchronisierten Benutzern Lizenzen zuweisen, bevor Sie e-Mails und andere Office-Apps verwenden können.
 - **Sie migrieren aus Exchange?** Hier finden Sie [Möglichkeiten zum Migrieren mehrerer e-Mail-Konten zu Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration). Wenn Sie mehrere Postfächer mithilfe von Cutover, Staged oder einer Exchange-Hybridmethode zu Microsoft 365 migrieren, fügen Sie automatisch Benutzer im Rahmen der Migration hinzu. Bei der Migration werden nur die Benutzerkonten hinzugefügt. Sie müssen den Benutzern Lizenzen zuweisen, bevor Sie e-Mails und andere Office-Apps verwenden können. Wenn Sie einem Benutzer keine Lizenz zuweisen, wird sein Postfach nach einer Kulanzzeit von 30 Tagen deaktiviert. Erfahren Sie, wie Sie Benutzern im Microsoft 365 Admin Center [Lizenzen zuweisen](../manage/assign-licenses-to-users.md) .
 
 ## <a name="next-steps"></a>Nächste Schritte
@@ -112,7 +112,7 @@ Nachdem Sie einen Benutzer hinzugefügt haben, erhalten Sie eine e-Mail-Benachri
 ## <a name="related-content"></a>Verwandte Inhalte
 
 [Hinzufügen eines neuen Mitarbeiters zu Microsoft 365](add-new-employee.md) (Artikel) \
-Gleich [zeitiges Hinzufügen mehrerer Benutzer zu Microsoft 365](https://docs.microsoft.com/office365/enterprise/add-several-users-at-the-same-time) (Artikel) \
+Gleich [zeitiges Hinzufügen mehrerer Benutzer zu Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/add-several-users-at-the-same-time) (Artikel) \
 [Wiederherstellen eines Benutzers in Microsoft 365](restore-user.md) (Artikel) \
 [Zuweisen von Lizenzen zu Benutzern](../manage/assign-licenses-to-users.md) (Artikel) \
 [Löschen eines Benutzers aus Ihrer Organisation](delete-a-user.md) (Artikel)

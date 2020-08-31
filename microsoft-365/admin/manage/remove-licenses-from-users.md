@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie die Zuweisung von Lizenzen von Benutzerkonten aufheben.
 ms.date: 07/01/2020
-ms.openlocfilehash: 29dbdb89550d5bd9bd13071b184ffe1ca340f2a6
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 4441fd253c4cf5304562900bf31869eb4e0f21ff
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45015935"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306539"
 ---
 # <a name="unassign-licenses-from-users"></a>Aufheben der Zuweisung von Benutzerlizenzen
 
@@ -45,7 +45,7 @@ Sie können die Zuweisung von Lizenzen von Benutzern auf der Seite " **aktive Be
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Zum Aufheben der Zuweisung von Lizenzen müssen Sie ein globaler, Lizenz-, Benutzer-Admin sein. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen von Microsoft 365](../add-users/about-admin-roles.md).
-- Sie können [Lizenzen von Benutzerkonten mit Office 365 PowerShell entfernen](https://docs.microsoft.com/office365/enterprise/powershell/remove-licenses-from-user-accounts-with-office-365-powershell).
+- Sie können [Lizenzen von Benutzerkonten mit Office 365 PowerShell entfernen](https://docs.microsoft.com/microsoft-365/enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell).
 - Sie können auch [Benutzerkonten löschen](../add-users/delete-a-user.md) , denen eine Lizenz zugewiesen wurde, um Ihre Lizenz anderen Benutzern zur Verfügung zu stellen. Wenn Sie ein Benutzerkonto löschen, ist Ihre Lizenz sofort verfügbar, um Sie einer anderen Person zuzuweisen.
 
 ::: moniker range="o365-worldwide"
@@ -54,7 +54,7 @@ Sie können die Zuweisung von Lizenzen von Benutzern auf der Seite " **aktive Be
 
 Wenn Sie die Zuweisung von Lizenzen mithilfe der Seite **Lizenzen** aufheben, werden Lizenzen für ein bestimmtes Produkt für bis zu 20 Benutzer aufheben.
 
-1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Lizenzen</a> .
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Lizenzen</a>.
 2. Wählen Sie das Produkt aus, für das Sie die Zuweisung von Lizenzen aufheben möchten.
 3. Wählen Sie die Benutzer aus, für die Sie die Zuweisung von Lizenzen aufheben möchten.
 4. Wählen Sie Lizenzen für Aufheben der **Zuweisung**aus.

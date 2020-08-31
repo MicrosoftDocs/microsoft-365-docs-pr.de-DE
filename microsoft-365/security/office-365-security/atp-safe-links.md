@@ -25,12 +25,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: In diesem Artikel erfahren Sie, wie Sie sichere Links zum Schutz Ihrer Organisation vor Phishing und anderen Angriffen verwenden.
-ms.openlocfilehash: 5baf18c249d67551c7ae1eeb643a401ea16d2b6c
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: d9b3c981cb282c286a5b6edcea367c8c57ffd4d3
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656981"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307637"
 ---
 # <a name="atp-safe-links"></a>ATP-sichere Links
 
@@ -57,7 +57,7 @@ Wenn [ATP neue Features hinzugefügt werden](office-365-atp.md#new-features-in-o
 
 - Richtlinien für ATP-sichere Links werden für e-Mails und für Office-Dokumente eingerichtet. (Weitere Informationen finden Sie unter [Einrichten von Richtlinien für ATP-sichere Links](set-up-atp-safe-links-policies.md).)
 
-- Microsoft 365-Client-apps sind für die Verwendung der modernen Authentifizierung konfiguriert (Dies gilt für den Schutz von ATP-Links in Office-Dokumenten). (Weitere Informationen finden Sie unter [moderne Authentifizierung für Office 2016](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).)
+- Microsoft 365-Client-apps sind für die Verwendung der modernen Authentifizierung konfiguriert (Dies gilt für den Schutz von ATP-Links in Office-Dokumenten). (Weitere Informationen finden Sie unter [moderne Authentifizierung für Office 2016](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016).)
 
 - Benutzer haben sich mit Ihrem Arbeits-oder Schulkonto angemeldet. (Weitere Informationen finden Sie unter [Anmelden bei Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426).)
 

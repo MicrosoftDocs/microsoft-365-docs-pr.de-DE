@@ -21,12 +21,12 @@ description: Microsoft 365 Admin Center – erfahren Sie mehr über die Features
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 84932e13a336d225894683f9e328cb44df8c0e78
-ms.sourcegitcommit: 6319e73b3690b4cf1b7932f2b9f51c2c99e70eaa
+ms.openlocfilehash: 7504fa085c6dd5413a1dcddbb71f3d015ded72c1
+ms.sourcegitcommit: 97ef8f846939c3d31bb0638edf07bb89463ace0b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46635022"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47300455"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Neuerungen im Microsoft 365 Admin Center
 
@@ -39,10 +39,6 @@ ms.locfileid: "46635022"
 
 Wir fügen [dem Microsoft 365 Admin Center](microsoft-365-admin-center-preview.md)ständig neue Features hinzu, beheben Probleme, die wir kennen, und machen Änderungen basierend auf Ihrem Feedback. Unten können Sie sehen, was heute schon für Sie verfügbar ist. Einige Funktionen werden für unsere Kunden mit unterschiedlicher Geschwindigkeit bereitgestellt. Wenn Sie noch kein Feature sehen, versuchen Sie, [sich der zielgerichteten Version hinzuzufügen](manage/release-options-in-office-365.md).
 
-> [!IMPORTANT]
-> **"Classic" Admin Center Ruhestand ab März**<br><br>
-Wenn Sie sich beim Microsoft 365 Admin Center anmelden, wechseln Sie jetzt jedes Mal zum neuen Admin Center. Im März haben wir damit begonnen, die Möglichkeit zu deaktivieren, wieder zum klassischen Admin Center zu wechseln. Für den Moment können Sie immer noch zurückwechseln, aber da das neue Admin Center zu Parität kommt (und es überschreitet), werden wir den Switch für alle Organisationen deaktivieren. <br><br> *Letzte Aktualisierung: 11. Mai 2020*
-
 Und wenn Sie wissen möchten, was mit anderen Microsoft-Cloud-Diensten neu ist:
 
 - [Neuerungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/whats-new)
@@ -53,6 +49,34 @@ Und wenn Sie wissen möchten, was mit anderen Microsoft-Cloud-Diensten neu ist:
 - [Aktive Websites im SharePoint Online Admin Center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 - [Office-Updates](https://docs.microsoft.com/OfficeUpdates/)
 
+## <a name="july-2020"></a>Juli 2020
+
+### <a name="getting-ready-for-ignite-2020"></a>Vorbereitungen für Ignite 2020
+
+Während wir in die Ignite Season bei Microsoft umziehen, werden wir nicht so viele Features freigeben, dass wir während unserer Sitzungen viel besprechen müssen. 
+
+Das nächste Update für diesen Artikel wird am Tag des ersten Starts unseres ersten Online-ignites sein. In diesem Jahr können Sie kostenlos teilnehmen! Check it out, Get signed up: [Microsoft Ignite 2020](https://www.microsoft.com/ignite).
+
+### <a name="your-products"></a>Ihre Produkte
+
+Es wurde eine Menge Arbeit in der Abonnementverwaltung getan, um die Seite schneller zu laden, schneller zu finden, was Sie suchen, und um die acessibility-Standards ([WCAG 2,1 Guidelines](http://www.w3.org/TR/WCAG21/)) zu erfüllen.
+
+- **Tabellen Umgestaltung**: die Tabelle wurde neu gestaltet, sodass Sie ähnliche Abonnements gruppieren können. Wechseln Sie zu **Abrechnung**  >  **ihrer Produkte**.
+- **Produkt Details**: Weitere Details zu ihren Abonnements erhalten Sie, indem Sie das Produkt in der Liste auswählen.
+- **Machen Sie alles von hier aus**: und Sie müssen nicht mehr auf mehrere Seiten wechseln, um ein Produkt zu verwalten. Wenn Sie beispielsweise ein Abonnement stornieren müssen, wird der Bereich geöffnet, um die Aktion direkt dort durchführen zu können.
+
+![Seite "Produkte" mit geöffnetem Abonnement Bereich kündigen.](../media/MAC-WN-SubscrDetails.png)
+
+### <a name="domains"></a>Domänen
+
+Die Domänenverwaltung kann kompliziert sein, und wir haben ein neues Feature veröffentlicht, um es einfacher zu machen. Wechseln Sie zu Einstellungen > Domänen, und wählen Sie dann eine Domäne aus, um weitere Informationen zu Ihrer Domäne und der Domänenintegrität zu erhalten.
+
+:::image type="content" source="../media/MAC-WN-DomainDNS.PNG" alt-text="Seite "Domänendetails" für contoso.com":::
+
+### <a name="docs-training-and-videos"></a>Dokumente, Schulungen und Videos
+
+[Was ist neu in Microsoft 365](https://youtu.be/m1Nu8WJgCDY) Video Series: in diesem Monat decken wir die neue Jammer Erfahrung für das Internet und Mobile, die Integration der Jammer Gemeinschaften-App für Microsoft Teams, neue Richtlinien Pakete zur Unterstützung von Mitarbeitern und Führungskräften in erster Linie und vieles mehr.
+
 ## <a name="june-2020"></a>Juni 2020
 
 ### <a name="keeping-up-with-office-whats-new-management"></a>Schritt halten mit Office What es New Management
@@ -62,7 +86,6 @@ Vor ein paar Monaten haben wir eine Einstellung hinzugefügt, mit der Sie die ne
 ### <a name="docs-training-and-videos-june"></a>Dokumente, Schulungen und Videos (Juni)
 
 - [Erste Schritte mit Microsoft Teams](https://support.microsoft.com/office/184f1aba-2f91-43f0-86e1-9fae607e24f6)
-
 
 ## <a name="may-2020"></a>Mai 2020
 
@@ -90,7 +113,7 @@ Weitere Informationen zu diesen Rollen finden Sie unter [Informationen zu Admini
 
 Wir haben viele Administratoren gehört, dass Sie Informationen über Gruppen und deren Nutzung für Personen freigeben müssen, die keinen Zugriff auf die Admin Center haben. Sie können die Gruppenliste nun zu Überwachungszwecken in eine CSV-Datei exportieren, was bedeutet, dass Sie das alte PowerShell-Skript auswerfen können. Um es auszuprobieren, wechseln Sie zu **Gruppen**  >  **Gruppen**, und wählen Sie dann in der Befehlsleiste **Gruppen exportieren** aus.
 
-### <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365 Lösungs- und Architektur-Center
+### <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365-Center – Lösungen und Architekturen
 
 In diesem Monat haben wir eine neue Website mit dem [https://docs.microsoft.com](https://docs.microsoft.com) Namen " [Microsoft 365 Solution and Architecture Center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center)" veröffentlicht, in der die technischen Anleitungen zum Verständnis, zur Planung und zur Implementierung integrierter Microsoft 365-Lösungen für eine sichere und konforme Zusammenarbeit zusammengefasst werden. In diesem Center finden Sie:
 
@@ -100,9 +123,9 @@ In diesem Monat haben wir eine neue Website mit dem [https://docs.microsoft.com]
 - Branchenspezifische Anleitungen
 - Entwurfs Prinzipale für die Unternehmensarchitektur
 
-### <a name="docs-training-and-videos"></a>Dokumente, Schulungen und Videos
+### <a name="docs-training-and-videos-may"></a>Dokumente, Schulungen und Videos (Mai)
 
-- **Was ist neu in Microsoft 365 Video Series**: diesen Monat decken wir die neue Supporterfahrung in den Teams admin und Security and Compliance Center, Planner Integration in das Nachrichten Center und das neue 3X3-Video Layout in Microsoft Teams ab. [Neuerungen in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
+- **Was ist neu in Microsoft 365 Video Series**: diesen Monat decken wir die neue Supporterfahrung in den Teams admin und Security and Compliance Center, Planner Integration in das Nachrichten Center und das neue 3X3-Video Layout in Microsoft Teams ab. 
 - Die Seite [Microsoft 365 Admin Center Help](https://docs.microsoft.com/microsoft-365/admin/) Hub wurde aktualisiert, um Ihnen zu helfen, schneller zu finden, was Sie benötigen. Wenn Sie diese Seite jetzt betrachten, haben wir eine Karte hinzugefügt, um Sie über wichtige Updates und Änderungen zu informieren.
 
 ## <a name="april-2020"></a>April 2020
@@ -306,7 +329,7 @@ Wir beginnen mit dem Rollout der Möglichkeit, Ihre Zahlungsmethode von Kreditka
 
 Möchten Sie mehr darüber erfahren? [Ändern der Zahlungsmethode von per Kreditkarte zu per Bankkonto oder auf Rechnung](../commerce/billing-and-payments/change-payment-method.md)
 
-### <a name="global-reader"></a>Globale Leseberechtigung
+### <a name="global-reader"></a>Globaler Leser
 
 Wir haben die Rolle des globalen Lesers in der [Oktober 2019-Ignite-Edition](#october-2019---ignite-edition)erwähnt, aber da Sie im allgemeinen weiter kommt, lassen Sie uns einige Details besprechen:
 
@@ -334,7 +357,7 @@ Im November haben wir einige Lern Pfade zur [Microsoft Learn](https://docs.micro
 - [Microsoft 365 – Modernisierung ihrer Unternehmensbereitstellung mit Windows 10-und Microsoft 365-Apps für Unternehmen](https://docs.microsoft.com/learn/paths/m365-getmodern/)
 - [Verwalten Sie Ihre Unternehmensbereitstellung mit Microsoft 365](https://docs.microsoft.com/learn/paths/manage-enterprise-deployment-m365/)
 - [Maßgeschneidertes Upgrade von Microsoft Office für IT](https://docs.microsoft.com/learn/paths/m365-office-for-it/)
-- [Übertragen von Remotedesktops und Apps aus Azure mit Windows Virtual Desktop](https://docs.microsoft.com/learn/paths/m365-wvd/)
+- [Übertragen von Remotedesktops und Apps aus Azure mit Windows Virtual Desktop ](https://docs.microsoft.com/learn/paths/m365-wvd/)
 - [Modernisieren Ihres Arbeitsplatzes mit Microsoft 365 und Surface for Business](https://docs.microsoft.com/learn/paths/modernize-workplace-with-m365-and-surface/)
 - [Schutz von Identität und Zugriff mit Microsoft 365](https://docs.microsoft.com/learn/paths/m365-identity/)
 - [Schützen von Unternehmensinformationen mit Microsoft 365](https://docs.microsoft.com/learn/paths/m365-information-protection/)
@@ -382,7 +405,7 @@ Wenn ein wichtiges Office-Feature für eine Office-App freigegeben wird, erhalte
 
 Technisch gesehen ist dies nicht die Nachricht von Microsoft 365 Admin Center, aber wir sind so aufgeregt, dass Sie diese Nachricht sehen wollten:
 > [!IMPORTANT]
-> Sie können nun mit einer regulären URL zu Ihrem SharePoint Admin Center gelangen:[https://admin.microsoft.com/SharePoint](https://admin.microsoft.com/SharePoint)
+> Sie können nun mit einer regulären URL zu Ihrem SharePoint Admin Center gelangen: [https://admin.microsoft.com/SharePoint](https://admin.microsoft.com/SharePoint)
 
 Weitere Informationen finden Sie unter [What es New in the SharePoint Admin Center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center).
 
@@ -414,7 +437,7 @@ Es wurde ein anderer unserer anfänglichen Setup-Assistenten aktualisiert: Micro
 Wir haben einige Updates für Abrechnung und Abonnements in diesem Monat:
 
 - Gerätebasierte Abonnements: Sie können **Microsoft 365 apps for Education (Geräte)** Lizenzen den Geräten im Microsoft 365 Admin Center zuweisen oder aufheben. **Microsoft 365 apps for Education (Gerät)** ist eine Add-on-Lizenz, mit der Sie einem Gerät eine Lizenz zuweisen können. Wechseln Sie zu **Abrechnung**  >  **ihrer Produkte** , um die Lizenz zu finden und zu kaufen.
-- Benutzerbasierte Lizenzverwaltung: Wir haben die Art und Weise aktualisiert, in der **Benutzer**  >  **aktive Benutzer** der neuen Formatvorlage Lizenzen zuweisen. Weitere Informationen finden Sie unter:
+- Benutzerbasierte Lizenzverwaltung: Wir haben die Art und Weise aktualisiert, in der **Benutzer**  >  **aktive Benutzer** der neuen Formatvorlage Lizenzen zuweisen. Weitere Informationen finden Sie hier:
   - [Zuweisen von Lizenzen für Benutzer](manage/assign-licenses-to-users.md)
   - [Entfernen der Zuweisung von Benutzerlizenzen](manage/remove-licenses-from-users.md)
 

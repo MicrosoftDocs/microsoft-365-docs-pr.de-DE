@@ -14,12 +14,12 @@ ms.custom:
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Administratoren können erfahren, wie Sie eigenständige Exchange Online Schutz (EoP) einrichten, um lokale e-Mail-Umgebungen zu schützen.
-ms.openlocfilehash: cf49cf4b0784731c23c0c36de44d3b0b2cb78dc8
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: e6ca3965dd82bf0e6ed7e361984758ab34e3eea0
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827821"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307591"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>Einrichten des eigenständigen EoP-Diensts
 
@@ -64,7 +64,7 @@ Erstellen Sie in der Exchange-Verwaltungskonsole (EAC) Connectors, die den Nachr
 
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>Schritt 4: Zulassen eingehender SMTP-Verbindungen an Port 25
 
-Nachdem Sie Connectors konfiguriert haben, warten Sie 72 Stunden, um die Weitergabe Ihrer DNS-Eintragsaktualisierungen zu ermöglichen. Schränken Sie anschließend in Ihrer Firewall oder auf Ihren E-Mail-Servern den eingehenden SMTP-Datenverkehr für Port 25 so ein, dass nur E-Mails von EOP-Rechenzentren, genauer gesagt von den unter [Exchange Online Protection-IP-Adressen](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges) aufgeführten IP-Adressen, zugelassen werden. So schützen Sie Ihre lokale Umgebung, indem Sie den Bereich eingehender Nachrichten einschränken, die Sie empfangen können. Wenn Ihr E-Mail-Server Einstellungen aufweist, welche die IP-Adressen steuern, die für E-Mail-Relay eine Verbindung herstellen dürfen, sollten Sie zusätzlich diese Einstellungen aktualisieren.
+Nachdem Sie Connectors konfiguriert haben, warten Sie 72 Stunden, um die Weitergabe Ihrer DNS-Eintragsaktualisierungen zu ermöglichen. Schränken Sie anschließend in Ihrer Firewall oder auf Ihren E-Mail-Servern den eingehenden SMTP-Datenverkehr für Port 25 so ein, dass nur E-Mails von EOP-Rechenzentren, genauer gesagt von den unter [Exchange Online Protection-IP-Adressen](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges) aufgeführten IP-Adressen, zugelassen werden. So schützen Sie Ihre lokale Umgebung, indem Sie den Bereich eingehender Nachrichten einschränken, die Sie empfangen können. Wenn Ihr E-Mail-Server Einstellungen aufweist, welche die IP-Adressen steuern, die für E-Mail-Relay eine Verbindung herstellen dürfen, sollten Sie zusätzlich diese Einstellungen aktualisieren.
 
 > [!TIP]
 > Konfigurieren Sie Einstellungen auf dem SMTP-Server mit einem Verbindungstimeout von 60 Sekunden. Diese Einstellung ist für die meisten Situationen akzeptabel, sodass eine gewisse Verzögerung im Fall einer Nachricht, die mit einer großen Anlage gesendet wird, beispielsweise ermöglicht wird.

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie Sie DomainKeys Identified Mail (DKIM) mit Microsoft 365 verwenden können, um sicherzustellen, dass die von Ihrer benutzerdefinierten Domäne gesendeten Nachrichten von den Ziel-E-Mail-Systemen als vertrauenswürdig eingestuft werden.
-ms.openlocfilehash: 36e62600836c66b9e7be61ddd07a6081af4ffbeb
-ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
+ms.openlocfilehash: d2035ed0805215f1bd8e343f9edf1c557035b5c1
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46632163"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307847"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Verwenden von DKIM zum Überprüfen ausgehender E-Mails, die von Ihrer benutzerdefinierten Domäne gesendet werden
 
@@ -83,7 +83,7 @@ Da sowohl 1024-Bit als auch 2048-Bit für DKIM-Schlüssel unterstützt wird, erf
 
 1. Wenn Sie **DKIM bereits konfiguriert haben**, können Sie Bitanzahl wie folgt wechseln:
 
-   1. [Stellen Sie die Verbindung zu Office 365-Workloads über PowerShell her](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window). (Das Cmdlet stammt von Exchange Online.)
+   1. [Stellen Sie die Verbindung zu Office 365-Workloads über PowerShell her](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window). (Das Cmdlet stammt von Exchange Online.)
    1. Führen Sie den folgenden Befehl aus:
 
       ```powershell 
@@ -92,7 +92,7 @@ Da sowohl 1024-Bit als auch 2048-Bit für DKIM-Schlüssel unterstützt wird, erf
 
 1. Oder für eine **neue Implementierung von DKIM**:
 
-   1. [Stellen Sie die Verbindung zu Office 365-Workloads über PowerShell her](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window). (Hierbei handelt es sich um ein Exchange Online-Cmdlet.)
+   1. [Stellen Sie die Verbindung zu Office 365-Workloads über PowerShell her](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window). (Hierbei handelt es sich um ein Exchange Online-Cmdlet.)
    1. Führen Sie den folgenden Befehl aus:
 
       ```powershell

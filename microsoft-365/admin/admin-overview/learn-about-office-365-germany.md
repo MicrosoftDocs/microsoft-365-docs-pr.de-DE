@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: Erfahren Sie mehr über Office 365 Deutschland.
-ms.openlocfilehash: e17ce259837167dd4b2b0ab894b00318103f73a5
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 694f1a2ebbe3740c09cb306a26729b6482497d0b
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386793"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307277"
 ---
 # <a name="learn-about-office-365-germany"></a>Weitere Informationen zu Office 365 Deutschland
 
@@ -45,7 +45,7 @@ Office 365 Deutschland Plan Angebote werden in dieser isolierten Umgebung so wei
   
 Die folgenden Dienste und Features sind in einigen [Abonnementplänen von Office 365 Deutschland](https://go.microsoft.com/fwlink/p/?linkid=839016) enthalten. Lesen Sie darüber hinaus die [Nutzungsbedingungen für Onlinedienste](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=46).
   
-- Microsoft 365-Apps für Unternehmen, Office 2016 und Office 2013<sup>1</sup>. Beachten Sie, dass Office 2013 die [Verwendung Office 365 modernen Authentifizierung mit Office-Clients](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)erfordert.
+- Microsoft 365-Apps für Unternehmen, Office 2016 und Office 2013<sup>1</sup>. Beachten Sie, dass Office 2013 die [Verwendung Office 365 modernen Authentifizierung mit Office-Clients](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016)erfordert.
     
 - Exchange Online
     
@@ -93,7 +93,7 @@ Die folgenden Dienste und Features sind in einigen [Abonnementplänen von Office
 |-----|-----|
 |Anmeldeportal  <br/> |[https://portal.office.de](https://portal.office.de)  <br/> |
 |Abonnements, Abrechnung und technischer Support  <br/> |Deutschland-basierter Support in deutscher und englischer Sprache weitere Informationen finden Sie unter [Contact Support for Business Products-admin Help](../contact-support-for-business-products.md).  <br/> |
-|IP-Adressen und URLs  <br/> |Siehe [Endpunkte - Office 365 Deutschland](https://docs.microsoft.com/office365/enterprise/office-365-germany-endpoints).  <br/> |
+|IP-Adressen und URLs  <br/> |Siehe [Endpunkte - Office 365 Deutschland](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-germany-endpoints).  <br/> |
 |Yammer  <br/> |Nicht verfügbar  <br/> |
 |Versionen von Office, die älter sind als Office 2013 oder Microsoft 365-Apps für Enterprise<sup>1</sup> <br/> |Nicht unterstützt  <br/> |
 |Office Lens  <br/> |Nicht verfügbar.  <br/> |

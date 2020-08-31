@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Über das Admin Center können Sie Ihre Organisation in der Cloud einrichten sowie Benutzer und Abonnements verwalten. Beginnen Sie, indem Sie sich bei einem Konto mit Administratorberechtigungen anmelden.
-ms.openlocfilehash: e4b1570afd8572df31af970fb168b6d22deee979
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 0c7ec95ffbda76f5d754c157e4099e1ef2c81766
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45022181"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307337"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Informationen zum Microsoft 365 Admin Center
 
@@ -84,7 +84,7 @@ Hier die Funktionen und Einstellungen, die sich in der Navigationsleiste auf der
 |**Einstellungen** <br/> |Verwalten Sie globale Einstellungen für Apps wie E-Mail, Websites und die Office-Suite. Ändern Sie Ihre Kennwortrichtlinie und das Ablaufdatum. Fügen Sie Domänennamen wie "contoso.com" hinzu, und aktualisieren Sie diese. Ändern Sie Ihr Organisationsprofil und die Veröffentlichungseinstellungen. Und wählen Sie aus, ob Partner auf Ihr Admin Center zugreifen können.  <br/> |
 |**Setup** <br/> |Verwalten Sie vorhandene Domänen, aktivieren und verwalten Sie die mehrstufige Authentifizierung, verwalten Sie den Administratorzugriff, migrieren Sie Benutzerpostfächer zu Office 365, verwalten Sie Featureupdates, und helfen Sie den Benutzern beim Installieren ihrer Office-Apps. |
 |**Berichte** <br/> |Sehen Sie auf einen Blick, wie Ihre Organisation Microsoft 365 mit detaillierten Berichten zur e-Mail-Verwendung, Office-Aktivierungen und vielem mehr verwendet. Hier erfahren Sie, wie Sie die neuen [Aktivitätsberichte](../activity-reports/activity-reports.md)verwenden.<br/> |
-|**Integrität** <br/> |Zeigen Sie den Dienststatus auf einen Blick an. Sie können weitere Einzelheiten und den Dienststatusverlauf anzeigen. Schauen Sie sich [Überprüfen des Dienststatus](https://docs.microsoft.com/office365/enterprise/view-service-health) an.  <br/> Nutzen Sie das Nachrichtencenter, um anstehende Änderungen an Features und Diensten nachzuverfolgen. Wir veröffentlichen dort Ankündigungen mit Informationen, die Ihnen bei der Planung für Änderungen und zu verstehen helfen, wie sich dies möglicherweise auf Benutzer auswirkt. Weitere Details finden Sie unter [Nachrichtencenter in Office 365](../manage/message-center.md).  <br/> |
+|**Integrität** <br/> |Zeigen Sie den Dienststatus auf einen Blick an. Sie können weitere Einzelheiten und den Dienststatusverlauf anzeigen. Schauen Sie sich [Überprüfen des Dienststatus](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health) an.  <br/> Nutzen Sie das Nachrichtencenter, um anstehende Änderungen an Features und Diensten nachzuverfolgen. Wir veröffentlichen dort Ankündigungen mit Informationen, die Ihnen bei der Planung für Änderungen und zu verstehen helfen, wie sich dies möglicherweise auf Benutzer auswirkt. Weitere Details finden Sie unter [Nachrichtencenter in Office 365](../manage/message-center.md).  <br/> |
 |**Admin Center** <br/> |Öffnen Sie separate Admin Center für Exchange, Skype for Business, SharePoint, Yammer und Azure AD. Jedes Admin Center umfasst alle verfügbaren Einstellungen für den jeweiligen Dienst,  <br/> Im Exchange Admin Center werden beispielsweise E-Mail, Kalender, Verteilergruppen usw. eingerichtet und verwaltet. Im SharePoint Admin Center werden Websitesammlungen, Einstellungen der Teamwebsite und OneDrive for Business erstellt und verwaltet. Im Skype for Business Admin Center werden Chatbenachrichtigungen, Dial-In-Konferenzen und Onlineanwesenheit eingerichtet.  <br/> Weitere Informationen zum [Exchange Admin Center](https://go.microsoft.com/fwlink/p/?LinkID=271807) und zum [SharePoint Admin Center](https://docs.microsoft.com/sharepoint/sharepoint-online).<br/> **Hinweis:** Die verfügbaren Admin Center sind von Ihrem Plan und Ihrer Region abhängig.           |
    
 ## <a name="common-tasks-in-the-admin-center"></a>Allgemeine Aufgaben im Admin Center
@@ -95,7 +95,7 @@ Hier die Funktionen und Einstellungen, die sich in der Navigationsleiste auf der
 
 - Anzeigen von Aktivitätsberichten: [Aktivitätsberichte](../activity-reports/activity-reports.md)
 
-- [Erstellen einer Microsoft 365-Gruppe](../create-groups/create-groups.md)
+- [Erstellen einer Microsoft 365-Gruppe ](../create-groups/create-groups.md)
 
 - [Verwalten einer Microsoft 365-Gruppe](../create-groups/manage-groups.md)
 

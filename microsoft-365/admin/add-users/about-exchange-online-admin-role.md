@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Exchange Online-Administratoren verwalten die e-Mails und Postfächer Ihrer Organisation. Beispielsweise werden gelöschte Elemente im Postfach eines Benutzers wiederhergestellt. '
-ms.openlocfilehash: d69ec803c8321c6417f587feafb2730de1d1e7b3
-ms.sourcegitcommit: 7f765670cb6970fdf7ddbad464ed3f8fe704bfaf
+ms.openlocfilehash: 0b63679883e8329782700085fa0c11a0ac6585ca
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "44909252"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307433"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Informationen zur Exchange Online-Administratorrolle
 
@@ -36,13 +36,13 @@ Zur Unterstützung der Verwaltung von Microsoft 365 können Sie Benutzern Berech
   
 Hier folgen einige der wichtigsten Aufgaben, die Benutzer ausführen können, wenn ihnen die Exchange-Administratorrolle zugewiesen wurde:
   
-- [Wiederherstellen gelöschter Elemente im Postfach eines Benutzers](https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox)
+- [Wiederherstellen gelöschter Elemente im Postfach eines Benutzers](https://docs.microsoft.com/microsoft-365/enterprise/recover-deleted-items-in-a-mailbox)
     
 - [Richten Sie eine Archivierungs-und Löschrichtlinie für Postfächer in Ihrer Organisation ein](https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes).
     
 - Einrichten von Postfachfeatures wie die Postfachfreigaberichtlinie: Wie Benutzer Kalender- und Kontaktinformationen für andere Personen außerhalb Ihrer Organisation freigeben können.
     
-- Einrichten der Delegaten "[Senden als](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)" und "[Senden bei abehalf](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)" für das Postfach eines anderen Benutzers. Beispielsweise möchte eine Führungskraft ihren Assistenten in die Lage versetzen, e-Mails in Ihrem Auftrag zu senden. 
+- Einrichten der Delegaten "[Senden als](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)" und "[Senden bei abehalf](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)" für das Postfach eines anderen Benutzers. Eine Führungskraft möchte z. B., dass ihr Assistent über die Möglichkeit verfügt, E-Mails in ihrem Namen zu senden. 
 
 - [Erstellen eines freigegebenen Postfachs](../email/create-a-shared-mailbox.md) , damit eine Gruppe von Personen e-Mails über eine gemeinsame e-Mail-Adresse überwachen und senden kann.
 

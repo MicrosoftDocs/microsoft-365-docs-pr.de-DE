@@ -1,5 +1,5 @@
 ---
-title: Problembehandlung bei an Microsoft 365 gesendeten e-Mails
+title: An Microsoft 365 gesendete E-Mail zur Problembehandlung
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,14 +18,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Dieser Artikel enthält Informationen zur Problembehandlung bei Problemen beim Senden von e-Mails an Posteingänge in Microsoft 365 & bewährte Methoden für Massenversand an Microsoft 365-Kunden.
-ms.openlocfilehash: 0d9c1646aa7491b3da458c7cb0ddeb908873153a
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 4243f46746cb21425fc2dc7493c69818f095e71f
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208597"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307579"
 ---
-# <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Problembehandlung bei an Microsoft 365 gesendeten e-Mails
+# <a name="troubleshooting-mail-sent-to-microsoft-365"></a>An Microsoft 365 gesendete E-Mail zur Problembehandlung
 
 Dieser Artikel enthält Informationen zur Problembehandlung für Absender, bei denen Probleme auftreten, wenn Sie versuchen, e-Mails an Posteingänge in Microsoft 365 und bewährte Methoden für Massenversand an Kunden zu senden.
 
@@ -79,7 +79,7 @@ Sie haben einen NDR erhalten, da an der betreffenden IP-Adresse eine verdächtig
 
 ## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>Ich kann keine e-Mails von Absendern in Microsoft 365 empfangen
 
- Damit Sie Nachrichten von unseren Benutzern empfangen können, muss Ihr Netzwerk Verbindungen von den IP-Adressen zulassen, die EOP in unseren Rechenzentren verwendet. Weitere Informationen finden Sie unter [Exchange Online Protection IP addresses](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
+ Damit Sie Nachrichten von unseren Benutzern empfangen können, muss Ihr Netzwerk Verbindungen von den IP-Adressen zulassen, die EOP in unseren Rechenzentren verwendet. Weitere Informationen finden Sie unter [Exchange Online Protection IP addresses](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges).
 
 ## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Bewährte Methoden für das Massen Senden von e-Mails an Microsoft 365-Benutzer
 

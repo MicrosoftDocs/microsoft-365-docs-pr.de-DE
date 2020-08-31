@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren in China mit Office 365, die von 21Vianet betrieben werden, erfahren, wie Sie eigenständige Exchange Online Protection (EoP) verwenden, um Ihre lokalen Postfächer zu schützen.
-ms.openlocfilehash: 57b9e7519edf92438662ecbf27c93b662d9e8f71
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: ca3f7f1ffc91b404ac59e92b40ae1f95709ec3ff
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826813"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307749"
 ---
 # <a name="protect-on-premises-mailboxes-in-china-with-standalone-eop"></a>Schützen von lokalen Postfächern in China mit EOP als eigenständige Lösung
 
@@ -58,7 +58,7 @@ Erstellen Sie in der Exchange-Verwaltungskonsole (EAC) Connectors, die den Nachr
 
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>Schritt 4: Zulassen eingehender SMTP-Verbindungen an Port 25
 
-Nachdem Sie Connectors konfiguriert haben, sollten Sie 72 Stunden warten, bis Ihre DNS-Datensatzaktualisierungen weitergegeben wurden. Danach können Sie den eingehenden Port-25-SMTP-Datenverkehr auf Ihrer Firewall oder Ihren e-Mail-Servern so einschränken, dass nur e-Mails von den EoP-Rechenzentren akzeptiert werden, insbesondere von den IP-Adressen, die unter [URLs und IP-Adressbereichen für Office 365](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints)aufgeführt sind. So schützen Sie Ihre lokale Umgebung, indem Sie den Bereich eingehender Nachrichten einschränken, die Sie empfangen können. Wenn Ihr E-Mail-Server Einstellungen aufweist, welche die IP-Adressen steuern, die für E-Mail-Relay eine Verbindung herstellen dürfen, sollten Sie zusätzlich diese Einstellungen aktualisieren.
+Nachdem Sie Connectors konfiguriert haben, sollten Sie 72 Stunden warten, bis Ihre DNS-Datensatzaktualisierungen weitergegeben wurden. Danach können Sie den eingehenden Port-25-SMTP-Datenverkehr auf Ihrer Firewall oder Ihren e-Mail-Servern so einschränken, dass nur e-Mails von den EoP-Rechenzentren akzeptiert werden, insbesondere von den IP-Adressen, die unter [URLs und IP-Adressbereichen für Office 365](https://docs.microsoft.com/microsoft-365/enterprise/managing-office-365-endpoints)aufgeführt sind. So schützen Sie Ihre lokale Umgebung, indem Sie den Bereich eingehender Nachrichten einschränken, die Sie empfangen können. Wenn Ihr E-Mail-Server Einstellungen aufweist, welche die IP-Adressen steuern, die für E-Mail-Relay eine Verbindung herstellen dürfen, sollten Sie zusätzlich diese Einstellungen aktualisieren.
 
 > [!TIP]
 > Konfigurieren Sie Einstellungen auf dem SMTP-Server mit einem Verbindungstimeout von 60 Sekunden. Diese Einstellung ist in den meisten Fällen sinnvoll, da sie eine gewisse Verzögerung erlaubt, falls z. B. eine Nachricht mit einem großen Anhang gesendet wird.

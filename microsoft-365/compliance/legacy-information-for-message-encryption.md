@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Hier erfahren Sie, wie Sie Legacydateien in Office 365 Nachrichtenverschlüsselung (OM) für Ihre Organisation umstellen.
-ms.openlocfilehash: e69a0d3f0d8803630ecff976d0060d8a7447b928
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 06c0e41d6c3b7cbf7d06bf6aae82742211bd2542
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817122"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306504"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Legacyinformationen für die Office 365-Nachrichtenverschlüsselung
 
@@ -93,7 +93,7 @@ Im folgenden Beispiel wird ein benutzerdefiniertes ContosoPharma-Logo im E-Mail-
   
  **So passen Sie Verschlüsselungs-e-Mails und das Verschlüsselungs Portal mit der Marke Ihrer Organisation an**
   
-1. Stellen Sie mithilfe von Remote-PowerShell eine Verbindung mit Exchange Online her, wie unter [Verbinden mit Exchange Online mithilfe von Remote-PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated)beschrieben.
+1. Stellen Sie mithilfe von Remote-PowerShell eine Verbindung mit Exchange Online her, wie unter [Verbinden mit Exchange Online mithilfe von Remote-PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)beschrieben.
 
 2. Verwenden Sie das Cmdlet "OMEConfiguration" wie hier beschrieben: [festlegen-OMEConfiguration](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b) oder verwenden Sie die folgende Tabelle, um Anleitungen zu erhalten.
 
@@ -110,7 +110,7 @@ Im folgenden Beispiel wird ein benutzerdefiniertes ContosoPharma-Logo im E-Mail-
   
 1. Stellen Sie mithilfe von Remote-PowerShell eine Verbindung mit Exchange Online her, wie unter [Verbinden mit Exchange Online mithilfe von Remote-PowerShell](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx)beschrieben.
 
-2. Verwenden Sie das Cmdlet "OMEConfiguration" wie hier beschrieben: " [festlegen-OMEConfiguration](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b)". Wenn Sie die Marken Anpassungen ihrer Organisation aus den DisclaimerText-, EmailText-und Portal Text-Werten entfernen möchten, legen Sie den Wert auf eine leere Zeichenfolge fest `""` . Legen Sie für alle Bild Werte wie Logo den Wert auf fest `"$null"` .
+2. Verwenden Sie das Cmdlet "OMEConfiguration" wie hier beschrieben: " [festlegen-OMEConfiguration](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b)". Wenn Sie die Marken Anpassungen ihrer Organisation aus den DisclaimerText-, EmailText-und Portal Text-Werten entfernen möchten, legen Sie den Wert auf eine leere Zeichenfolge fest  `""` . Legen Sie für alle Bild Werte wie Logo den Wert auf fest  `"$null"` .
 
    **Anpassungsoptionen für Verschlüsselung**
 
@@ -141,7 +141,7 @@ Die folgende Tabelle enthält technische Details für den Office 365 Nachrichten
 
 Haben Sie Fragen zu Office 365 Nachrichtenverschlüsselung? Hier finden Sie einige Antworten. Wenn Sie nicht finden können, was Sie benötigen, lesen Sie [in den Microsoft Tech Community-Foren nach Office 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365).
   
- **F. meine Benutzer senden verschlüsselte e-Mail-Nachrichten an Empfänger außerhalb unserer Organisation. Gibt es etwas, das externe Empfänger durchführen müssen, um e-Mail-Nachrichten zu lesen und zu beantworten, die mit Office 365 Nachrichtenverschlüsselung verschlüsselt sind?**
+ **F.. Meine Benutzer senden verschlüsselte e-Mail-Nachrichten an Empfänger außerhalb unserer Organisation. Gibt es etwas, das externe Empfänger durchführen müssen, um e-Mail-Nachrichten zu lesen und zu beantworten, die mit Office 365 Nachrichtenverschlüsselung verschlüsselt sind?**
   
 Empfänger außerhalb Ihrer Organisation, die Microsoft 365-verschlüsselte Nachrichten erhalten, können Sie auf eine von zwei Arten anzeigen:
   
@@ -149,7 +149,7 @@ Empfänger außerhalb Ihrer Organisation, die Microsoft 365-verschlüsselte Nach
 
 - Mithilfe eines einmaligen Pass Codes.
 
- **F. werden Microsoft 365-verschlüsselte Nachrichten in der Cloud oder auf Microsoft-Servern gespeichert?**
+ **F.. Werden Microsoft 365-verschlüsselte Nachrichten in der Cloud oder auf Microsoft-Servern gespeichert?**
   
 Nein, die verschlüsselten Nachrichten werden auf dem e-Mail-System des Empfängers aufbewahrt, und wenn der Empfänger die Nachricht öffnet, wird Sie vorübergehend zur Anzeige auf Microsoft-Servern bereitgestellt. Die Nachrichten werden dort nicht gespeichert.
   
@@ -165,11 +165,11 @@ Jeder Benutzer in der Organisation benötigt eine Lizenz, der verschlüsselte E-
   
 Nein, externe Empfänger benötigen kein Abonnement zum Lesen oder Beantworten verschlüsselter Nachrichten.
   
- **F. Inwiefern unterscheidet sich Office 365 Nachrichtenverschlüsselung von RMS (Rights Management Services, Rechteverwaltungsdienst)?**
+ **F.. Inwiefern unterscheidet sich Office 365 Nachrichtenverschlüsselung von RMS (Rights Management Services, Rechteverwaltungsdienst)?**
   
 RMS bietet Funktionen zum Schutz von Informationsrechten für interne e-Mail-Nachrichten durch Bereitstellen integrierter Vorlagen, beispielsweise: nicht weiterleiten und Unternehmens vertraulich. Office 365 Nachrichtenverschlüsselung unterstützt die e-Mail-Nachrichtenverschlüsselung für Nachrichten, die an externe Empfänger sowie interne Empfänger gesendet werden.
   
- **F. wie unterscheidet sich Office 365 Nachrichtenverschlüsselung von S/MIME?**
+ **F.. Wie unterscheidet sich Office 365 Nachrichtenverschlüsselung von S/MIME?**
   
 S/MIME ist im Grunde eine clientseitige Verschlüsselungstechnologie, für die eine komplizierte Zertifikatverwaltung und Veröffentlichungsinfrastruktur erforderlich ist. Office 365 Nachrichtenverschlüsselung verwendet Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) und ist nicht von der Veröffentlichung von Zertifikaten abhängig.
   
@@ -181,11 +181,11 @@ Ja, Sie können Nachrichten auf Android und IOS anzeigen, indem Sie die apps OM 
   
 Ja. Antworten werden während des gesamten Nachrichtenverlaufs weiterhin verschlüsselt.
   
- **F. stellt Office 365 Nachrichtenverschlüsselung eine Lokalisierung bereit?**
+ **F.. Bietet Office 365 Nachrichtenverschlüsselung eine Lokalisierung?**
   
 Eingehende E-Mails und HTML-Inhalte werden basierend auf den E-Maileinstellungen des Absenders lokalisiert. Das Anzeigeportal wird basierend auf den Browsereinstellungen des Empfängers lokalisiert. Allerdings wird der eigentliche Text (Inhalt) der verschlüsselten Nachricht nicht lokalisiert.
   
- **F. welche Verschlüsselungsmethode wird für Office 365 Nachrichtenverschlüsselung verwendet?**
+ **F.. Welche Verschlüsselungsmethode wird für Office 365 Nachrichtenverschlüsselung verwendet?**
   
 Office 365 Nachrichtenverschlüsselung verwendet RMS (Rights Management Services) als Verschlüsselungsinfrastruktur. Die verwendete Verschlüsselungsmethode hängt davon ab, woher Sie die RMS-Schlüssel zum Verschlüsseln und Entschlüsseln von Nachrichten erhalten.
   
@@ -195,19 +195,19 @@ Office 365 Nachrichtenverschlüsselung verwendet RMS (Rights Management Services
 
 Weitere Informationen finden Sie unter [AD RMS Cryptographic Modes](https://go.microsoft.com/fwlink/p/?LinkId=398616).
   
- **F. Warum sagen einige verschlüsselte Nachrichten, dass Sie aus Office365@Messaging.Microsoft.com stammen** ?
+ **Q. Warum sagen einige verschlüsselte Nachrichten, dass Sie aus Office365@Messaging.Microsoft.com stammen** ?
   
 Wenn eine verschlüsselte Antwort aus dem Verschlüsselungsportal oder über die OME Viewer-App gesendet wird, wird die Absender-E-Mail-Adresse auf Office365@messaging.microsoft.com festgelegt, da die verschlüsselte Nachricht über einen Microsoft-Endpunkt gesendet wird. Dadurch wird verhindert, dass verschlüsselte Nachrichten als Spam markiert werden. Der angezeigte Name in der E-Mail und die Adresse im Verschlüsselungsportal werden durch diese Bezeichnung nicht geändert. Außerdem gilt diese Bezeichnung nur für über das Portal gesendete Nachrichten und nicht für Nachrichten, die über einen anderen E-Mail-Client gesendet werden.
   
- **F. Ich bin ein Exchange Hosted Encryption (ehst)-Abonnent. Wo kann ich mehr über das Upgrade auf Office 365 Nachrichtenverschlüsselung erfahren?**
+ **F.. Ich bin ein Abonnent von Exchange Hosted Encryption (ehst). Wo kann ich mehr über das Upgrade auf Office 365 Nachrichtenverschlüsselung erfahren?**
   
 Bei allen EHE-Kunden wurde ein Upgrade auf Office 365-Nachrichtenverschlüsselung durchgeführt. Weitere Informationen finden Sie im [Exchange Hosted Encryption Upgrade Center](https://go.microsoft.com/fwlink/p/?LinkID=511077).
   
- **F. muss ich URLs, IP-Adressen oder Ports in der Firewall meines Unternehmens öffnen, um Office 365 Nachrichtenverschlüsselung zu unterstützen?**
+ **F.. Muss ich alle URLs, IP-Adressen oder Ports in der Firewall meines Unternehmens öffnen, um Office 365 Nachrichtenverschlüsselung zu unterstützen?**
   
-Ja. Sie müssen URLs für Exchange Online zur Liste "Zulassen" für Ihre Organisation hinzufügen, damit Nachrichten, die mit der Office 365-Nachrichtenverschlüsselung verschlüsselt wurden, authentifiziert werden können. Eine Liste der Exchange Online-URLs finden Sie unter [Microsoft 365-URLs und IP-Adressbereiche](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
+Ja. Sie müssen URLs für Exchange Online zur Liste "Zulassen" für Ihre Organisation hinzufügen, damit Nachrichten, die mit der Office 365-Nachrichtenverschlüsselung verschlüsselt wurden, authentifiziert werden können. Eine Liste der Exchange Online-URLs finden Sie unter [Microsoft 365-URLs und IP-Adressbereiche](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges).
   
- **F. an wie viele Empfänger kann ich eine verschlüsselte Microsoft 365-Nachricht senden?**
+ **F.. An wie viele Empfänger kann ich eine verschlüsselte Microsoft 365-Nachricht senden?**
   
 Die Empfänger Grenze beträgt 500 Empfänger pro Nachricht oder, wenn Sie nach der Erweiterung der Verteilerliste kombiniert werden, 11.980 Zeichen im Feld " **an** " der Nachricht, je nachdem, was zuerst angezeigt wird.
   

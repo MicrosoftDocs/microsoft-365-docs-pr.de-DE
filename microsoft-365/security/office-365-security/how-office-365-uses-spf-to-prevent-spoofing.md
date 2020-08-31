@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie, wie Microsoft 365 den SPF-TXT-Eintrag (Sender Policy Framework) in DNS verwendet, um sicherzustellen, dass Ziel-e-Mail-Nachrichten von Ihrer benutzerdefinierten Domäne aus Vertrauen.
-ms.openlocfilehash: a86087f510dca328bb5b56af6fd4802f1f42a454
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 702c5de90c53388a3d55ad752010fbaa04b5556b
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44587484"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307649"
 ---
 # <a name="how-microsoft-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Verwenden des Sender Policy Framework (SPF) durch Microsoft 365 zum Verhindern von Spoofing
 
@@ -131,7 +131,7 @@ Wenn Sie über eine hybridbereitstellung verfügen (also Sie verfügen über ein
 
 Verwenden Sie die Syntaxinformationen in diesem Artikel, um den SPF TXT-Eintrag für Ihre benutzerdefinierte Domäne zu erstellen. Obwohl es auch andere Optionen gibt, die hier nicht genannt werden, sind dies die am häufigsten verwendeten Syntaxoptionen. Nachdem Sie Ihren Eintrag erstellt haben, müssen Sie den Eintrag bei Ihrer Domänenregistrierungsstelle aktualisieren.
 
-Informationen zu den Domänen, die Sie für Microsoft 365 einbeziehen müssen, finden Sie unter [externe DNS-Einträge, die für SPF erforderlich](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records)sind. Verwenden Sie die [schrittweisen Anweisungen](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam) zur Aktualisierung von SPF (TXT)-Einträgen für Ihre Domänenregistrierungsstelle.
+Informationen zu den Domänen, die Sie für Microsoft 365 einbeziehen müssen, finden Sie unter [externe DNS-Einträge, die für SPF erforderlich](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records)sind. Verwenden Sie die [schrittweisen Anweisungen](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam) zur Aktualisierung von SPF (TXT)-Einträgen für Ihre Domänenregistrierungsstelle.
 
 ### <a name="spf-txt-record-syntax-for-microsoft-365"></a>Syntax des SPF txt-Eintrags für Microsoft 365
 <a name="SPFSyntaxO365"> </a>
@@ -156,7 +156,7 @@ Dabei gilt:
 
 - _IP address_ ist die IP-Adresse, die Sie dem SPF TXT-Eintrag hinzufügen möchten. Normalerweise ist dies die IP-Adresse des Servers für ausgehende E-Mails für Ihre Organisation. Sie können mehrere ausgehende Mailserver auflisten. Weitere Informationen finden Sie unter [Beispiel: SPF TXT-Eintrag für mehrere ausgehende lokale e-Mail-Server und Microsoft 365](how-office-365-uses-spf-to-prevent-spoofing.md#ExampleSPFMultipleMailServerO365).
 
-- _domain name_ ist die Domäne, die Sie als legitimen Absender hinzufügen möchten. Eine Liste der Domänennamen, die für Microsoft 365 enthalten sein sollten, finden Sie unter [externe DNS-Einträge, die für SPF erforderlich](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records)sind.
+- _domain name_ ist die Domäne, die Sie als legitimen Absender hinzufügen möchten. Eine Liste der Domänennamen, die für Microsoft 365 enthalten sein sollten, finden Sie unter [externe DNS-Einträge, die für SPF erforderlich](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records)sind.
 
 - Die Durchsetzungsregel bietet normalerweise eine der folgenden Optionen:
 

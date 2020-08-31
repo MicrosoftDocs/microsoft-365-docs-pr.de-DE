@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 196cbc0ebc05683315766b736dd9d5fc2d92afd2
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: 02dbb22ad47fbacf964308d2b4a989f34b6d6c9d
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214569"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307682"
 ---
 # <a name="information-protection-for-gdpr-with-microsoft-365-capabilities"></a>Schutz von Daten für die DSGVO mit Microsoft 365-Funktionen
 
@@ -33,9 +33,9 @@ Weitere Informationen dazu, wie Microsoft Ihnen mit der DSGVO helfen kann, finde
 ## <a name="information-protection"></a>Schutz von Daten
 
 
-Office 365 bietet umfassende Funktionen zur Datenkontrolle. Hilfe zum Suchen, Klassifizieren, Schützen und Überwachen von personenbezogenen Daten finden Sie unter [Schutz von Informationen in Office 365 für die DSGVO](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr).
+Office 365 bietet umfassende Funktionen zur Datenkontrolle. Hilfe zum Suchen, Klassifizieren, Schützen und Überwachen von personenbezogenen Daten finden Sie unter [Schutz von Informationen in Office 365 für die DSGVO](https://docs.microsoft.com/microsoft-365/compliance/office-365-information-protection-for-gdpr).
 
-Hilfe zu lokalen Servern, einschließlich Dateifreigaben, SharePoint Server, Exchange Server, Skype for Business Server, Project Server und Office Online Server, finden Sie unter [DSGVO für lokale Office-Server](https://docs.microsoft.com/office365/enterprise/gdpr-for-office-servers). 
+Hilfe zu lokalen Servern, einschließlich Dateifreigaben, SharePoint Server, Exchange Server, Skype for Business Server, Project Server und Office Online Server, finden Sie unter [DSGVO für lokale Office-Server](https://docs.microsoft.com/microsoft-365/compliance/gdpr-for-office-servers). 
 
 ## <a name="identity-and-access-management"></a>Identitäts- und Zugriffsverwaltung
 
@@ -51,7 +51,7 @@ Azure Active Directory und andere Funktionen von Microsoft 365 bieten eine umfas
 Microsoft bietet eine empfohlene Konfiguration, die Sie als Ausgangspunkt verwenden können:
 
 - [Konfigurationen für den Identitäts- und Gerätezugriff](../enterprise/microsoft-365-policies-configurations.md): Empfohlene Richtlinienkonfigurationen, um drei Ebenen von Schutz zu erzielen (Baseline, vertraulich und stark reguliert). Dieser Leitfaden umfasst empfohlene Richtlinien für Exchange Online und SharePoint Online (einschließlich OneDrive for Business).
-- [Sicherheitsanweisungen für politische Kampagnen, gemeinnützige Unternehmen und andere agile Organisationen](https://docs.microsoft.com/office365/enterprise/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o): Dies umfasst dieselbe Gruppe von Richtlinien, bietet jedoch mehr Führung für BYOD-Geräte und B2B-Konten.
+- [Sicherheitsanweisungen für politische Kampagnen, gemeinnützige Unternehmen und andere agile Organisationen](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o): Dies umfasst dieselbe Gruppe von Richtlinien, bietet jedoch mehr Führung für BYOD-Geräte und B2B-Konten.
 
 ## <a name="threat-protection"></a>Bedrohungsschutz
 

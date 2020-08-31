@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Mithilfe des Microsoft 365 Security Centers oder des Microsoft 365 Compliance Centers können Sie Berechtigungen zentral für alle Aufgaben im Zusammenhang mit Sicherheit und Compliance verwalten.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0a7ca90bfc4a8d323b67528ca850f60059abeb12
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: c18f50fcad7b934e02c2110fa05196874ab0169a
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652837"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307773"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Berechtigungen im neuen Microsoft 365 Compliance Center und Microsoft 365 Security Center
 
@@ -101,7 +101,7 @@ Benutzer mit dieser Rolle haben Berechtigungen zur Verwaltung sicherheitsrelevan
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Anzeigen von Benutzern, Geräten, Registrierung, Konfiguration und Anwendungsinformationen <br/><br/> Kann **keine** Änderungen an Intune vornehmen|
 |[**Cloud-App-Sicherheit**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Hinzufügen von Administratoren, Richtlinien und Einstellungen, Hochladen von Protokollen und Ausführen von Governanceaktionen|
 |[**Azure Security Center**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) (in Kürze verfügbar)|Anzeigen von Sicherheitsrichtlinien und -zuständen, Bearbeiten von Sicherheitsrichtlinien sowie Anzeigen und Verwerfen von Warnungen und Empfehlungen.|
-|[**Office 365-Dienstintegrität**](https://docs.microsoft.com/office365/enterprise/view-service-health)|Anzeigen der Integrität von Office 365-Diensten|
+|[**Office 365-Dienstintegrität**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|Anzeigen der Integrität von Office 365-Diensten|
 |
 
 ### <a name="security-operator"></a>Sicherheitsoperator
@@ -119,7 +119,7 @@ Benutzer mit dieser Rolle können Warnungen verwalten und besitzen globalen schr
 |**Windows Defender ATP und EDR**|Alle Berechtigungen des Benutzers mit Leseberechtigung für Sicherheitsfunktionen <br/><br/> Anzeigen, Untersuchen und Reagieren auf Warnungen|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Anzeigen von Benutzern, Geräten, Registrierung, Konfiguration und Anwendungsinformationen <br/><br/> Kann **keine** Änderungen an Intune vornehmen|
 |[**Cloud-App-Sicherheit**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Alle Berechtigungen des Benutzers mit Leseberechtigung für Sicherheitsfunktionen plus Anzeigen und Schließen von Warnungen|
-|[**Office 365-Dienstintegrität**](https://docs.microsoft.com/office365/enterprise/view-service-health)|Anzeigen der Integrität von Office 365-Diensten|
+|[**Office 365-Dienstintegrität**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|Anzeigen der Integrität von Office 365-Diensten|
 |
 
 ### <a name="security-reader"></a>Benutzer mit Leseberechtigung für Sicherheitsfunktionen
@@ -138,7 +138,7 @@ Benutzer mit dieser Rolle besitzen globalen schreibgeschützten Zugriff auf sich
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Anzeigen von Benutzern, Geräten, Registrierung, Konfiguration und Anwendungsinformationen <br/><br/> Kann **keine** Änderungen an Intune vornehmen|
 |[**Cloud-App-Sicherheit**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Verwenden von schreibgeschützten Berechtigungen zum Anzeigen von Informationen <br/><br/> Verwalten von Benachrichtigungen|
 |[**Azure Security Center**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)|Anzeigen von Empfehlungen und Benachrichtigungen <br/><br/> Anzeigen von Sicherheitsrichtlinien <br/><br/> Kann Sicherheitsstatus anzeigen, aber keine Änderungen vornehmen.|
-|[**Office 365-Dienstintegrität**](https://docs.microsoft.com/office365/enterprise/view-service-health)|Anzeigen der Integrität von Office 365-Diensten|
+|[**Office 365-Dienstintegrität**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|Anzeigen der Integrität von Office 365-Diensten|
 |
 
 ## <a name="global-administrators-can-manage-roles-in-azure-active-directory"></a>Globale Administratoren können Rollen in Azure Active Directory verwalten

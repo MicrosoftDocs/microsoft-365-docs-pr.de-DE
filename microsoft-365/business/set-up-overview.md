@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Erfahren Sie mehr über die Setupschritte für Microsoft 365 Business Premium, vom abonnieren über das Hinzufügen einer Domäne und von Benutzern bis hin zum Einrichten von Sicherheitsrichtlinien.
-ms.openlocfilehash: a808ae5761c1bc5706966a3f7de95f96f8f7c8c8
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: fa9c02fa9546437c83b9cc6c1f1e6e0d723ec868
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44785810"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306467"
 ---
 # <a name="overview-of-setup"></a>Übersicht über die Einrichtung
 
@@ -40,7 +40,7 @@ Sehen Sie sich ein kurzes Video über das Microsoft 365 Business Premium-Setup a
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) an.
 
 Die meisten Setupschritte können im Setup-Assistenten ausgeführt werden, aber auch die anderen Optionen werden aufgelistet.
 
@@ -50,7 +50,7 @@ Die meisten Setupschritte können im Setup-Assistenten ausgeführt werden, aber 
 
    - **Benutzer hinzufügen**. Sie können auf drei Arten Benutzer hinzufügen:
         - Im [Assistenten](set-up.md#add-users-in-the-wizard).
-        - Verwenden Sie die Verzeichnissynchronisierung, um [Benutzer mithilfe Azure AD Connect hinzuzufügen](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) , wenn Sie über ein lokales Active Directory verfügen.
+        - Verwenden Sie die Verzeichnissynchronisierung, um [Benutzer mithilfe Azure AD Connect hinzuzufügen](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization) , wenn Sie über ein lokales Active Directory verfügen.
         - Sie können Benutzer auch später im Admin Center [Hinzufügen](add-users-m365b.md) .
 ## <a name="step-2-set-up-security-policies-and-configure-devices"></a>Schritt 2: Einrichten von Sicherheitsrichtlinien und Konfigurieren von Geräten 
 

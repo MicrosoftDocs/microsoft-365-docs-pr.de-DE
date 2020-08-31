@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 8a988cb053a5869c9cb57306fc0c78cdd7ba5ccc
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 07f63fd590c5ce9f5fabee942056a1f9c261bf55
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208816"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307836"
 ---
 # <a name="accountability-readiness-checklist-for-microsoft-365"></a>Prüfliste zu den Verantwortlichkeiten für die DSGVO für Microsoft 365
 
@@ -138,7 +138,7 @@ Diese Steuerelementstruktur wird auch verwendet, um die Darstellung der internen
 | 2 <a name="2"> </a> | [Dokumentation zur Office 365-Sicherheit](https://docs.microsoft.com/microsoft-365/compliance/protect-access-to-data-and-services) |
 | 3 <a name="3"> </a> | [FedRAMP Moderate – FedRAMP-System – Sicherheitsplan (SSP)](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=053666de-e359-43ef-a7bb-3cf379208ed8&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_FedRAMP_Reports) |
 | 4 <a name="4"> </a> | [Microsoft Cloud-Sicherheitsrichtlinie](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=c83d1345-0cff-4beb-a521-27b837ed271a&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) |
-| 5 <a name="5"> </a> | [Schutz von Informationen in Office 365 für die DSGVO](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr) |
+| 5 <a name="5"> </a> | [Schutz von Informationen in Office 365 für die DSGVO](https://docs.microsoft.com/microsoft-365/compliance/office-365-information-protection-for-gdpr) |
 | 6 <a name="6"> </a> | [Wer unter welchen Umständen auf Ihre Kundendaten zugreifen kann](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms) |
 | 7 <a name="7"> </a> | [Verträge für Verarbeiter als Subunternehmer: Arbeiten als Vertragspartner von Microsoft](https://www.microsoft.com/procurement/supplier-contracting.aspx#SSPA) |
 | 8 <a name="8"> </a> | [Anträge von 365-betroffenen Personen im Rahmen der DSGVO](https://aka.ms/DSROffice365) |

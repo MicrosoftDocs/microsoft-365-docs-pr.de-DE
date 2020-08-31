@@ -21,12 +21,12 @@ search.appverid:
 - BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Hier erfahren Sie, wie Sie einer Gruppe ein Mitglied hinzufügen, Mitglied aus der Gruppe entfernen und den Status von Gruppenbesitzern im Microsoft 365 Admin Center verwalten.
-ms.openlocfilehash: f873d4f4a20804ada3222178b59c4e1cc8ddb6fb
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 1d11e527f4f8759511a64036a71e837689bcbcd3
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780481"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307313"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Hinzufügen oder Entfernen von Mitgliedern aus Microsoft 365-Gruppen mithilfe des Admin Centers
 
@@ -54,7 +54,7 @@ In Microsoft 365 erstellen Gruppenmitglieder in der Regel Ihre eigenen Gruppen, 
 
 4. Suchen Sie nach dem Namen des Mitglieds, das hinzugefügt werden soll, oder wählen Sie ihn aus.
 
-5. Wählen Sie **Speichern**.
+5. Klicken Sie auf **Speichern**.
 
 ::: moniker-end
 
@@ -68,7 +68,7 @@ In Microsoft 365 erstellen Gruppenmitglieder in der Regel Ihre eigenen Gruppen, 
 
 4. Suchen Sie nach dem Namen des Mitglieds, das hinzugefügt werden soll, oder wählen Sie ihn aus.
 
-5. Wählen Sie **Speichern**.
+5. Klicken Sie auf **Speichern**.
 
 ::: moniker-end
 
@@ -82,7 +82,7 @@ In Microsoft 365 erstellen Gruppenmitglieder in der Regel Ihre eigenen Gruppen, 
 
 4. Suchen Sie nach dem Namen des Mitglieds, das hinzugefügt werden soll, oder wählen Sie ihn aus.
 
-5. Wählen Sie **Speichern**.
+5. Klicken Sie auf **Speichern**.
 
 ::: moniker-end
 
@@ -126,7 +126,7 @@ In Microsoft 365 erstellen Gruppenmitglieder in der Regel Ihre eigenen Gruppen, 
 
 4. Suchen oder wählen Sie den Namen der Gruppe aus, die Sie hinzufügen möchten.
 
-5. Wählen Sie **Speichern**.
+5. Klicken Sie auf **Speichern**.
 
 ::: moniker-end
 
@@ -243,7 +243,7 @@ Die Person, die eine Gruppe erstellt hat, ist standardmäßig der Gruppenbesitze
 
 4. Wählen Sie neben dem Namen des Besitzers das X aus.
 
-5. Wählen Sie **Speichern**.
+5. Klicken Sie auf **Speichern**.
 
 ::: moniker-end
 
@@ -257,7 +257,7 @@ Die Person, die eine Gruppe erstellt hat, ist standardmäßig der Gruppenbesitze
 
 4. Wählen Sie neben dem Namen des Besitzers das X aus.
 
-5. Wählen Sie **Speichern**.
+5. Klicken Sie auf **Speichern**.
 
 ::: moniker-end
 
@@ -271,7 +271,7 @@ Die Person, die eine Gruppe erstellt hat, ist standardmäßig der Gruppenbesitze
 
 4. Wählen Sie neben dem Namen des Besitzers das X aus.
 
-5. Wählen Sie **Speichern**.
+5. Klicken Sie auf **Speichern**.
 
 ::: moniker-end
 
@@ -291,6 +291,6 @@ Die Person, die eine Gruppe erstellt hat, ist standardmäßig der Gruppenbesitze
 
 - [Verwalten des Gastzugriffs in Microsoft 365-Gruppen](manage-guest-access-in-groups.md)
 
-- [Verwalten von Microsoft 365-Gruppen mit PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell): in diesem Artikel werden wichtige Cmdlets vorgestellt und Beispiele bereitgestellt.
+- [Verwalten von Microsoft 365-Gruppen mit PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell): in diesem Artikel werden wichtige Cmdlets vorgestellt und Beispiele bereitgestellt.
 
 - [Microsoft 365 gruppenbenennungsrichtlinie](groups-naming-policy.md)

@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: Dies ist ein Referenzartikel zu den Azure Active Directory-Benutzerkonto Attributen, die Sie zum Definieren von Informations Sperr Segmenten verwenden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 75a568b4d54432de0b72c379e83077c222acb687
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 6b6fb9cbbe5840888114ba99a604d16117ec795d
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035051"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307994"
 ---
 # <a name="attributes-for-information-barrier-policies"></a>Attribute für Richtlinien für Informationsbarrieren
 
@@ -28,7 +28,7 @@ Bestimmte Attribute in Azure Active Directory können verwendet werden, um Benut
 In diesem Artikel wird beschrieben, wie Sie Attribute mit Informationsbarrieren verwenden, und es wird eine Liste der Attribute bereitgestellt, die verwendet werden können. Wenn Sie mehr über Informationsbarrieren erfahren möchten, lesen Sie die folgenden Ressourcen:
 - [Informationsbarrieren](information-barriers.md)
 - [Definieren von Richtlinien für Informationsbarrieren in Microsoft Teams](information-barriers-policies.md)
-- [Bearbeiten (oder entfernen) von Richtlinien für Informationsbarrieren](information-barriers-edit-segments-policies.md)
+- [Bearbeiten oder Entfernen von Richtlinien für Informationsbarrieren](information-barriers-edit-segments-policies.md)
 
 ## <a name="how-to-use-attributes-in-information-barrier-policies"></a>Verwenden von Attributen in Richtlinien für Informationsbarrieren
 
@@ -38,7 +38,7 @@ Die in diesem Artikel aufgeführten Attribute können verwendet werden, um Segme
 
 2. Stellen Sie sicher, dass die Benutzerkonten Werte für die in Schritt 1 ausgewählten Attribute eingegeben haben. Zeigen Sie die Benutzerkontodetails an, und bearbeiten Sie Benutzerkonten bei Bedarf, um Attributwerte einzubeziehen. 
 
-    - Informationen zum Bearbeiten mehrerer Konten (oder zum Bearbeiten eines einzelnen Kontos mithilfe von PowerShell) finden Sie unter [Konfigurieren von Benutzerkontoeigenschaften mit Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell).
+    - Informationen zum Bearbeiten mehrerer Konten (oder zum Bearbeiten eines einzelnen Kontos mithilfe von PowerShell) finden Sie unter [Konfigurieren von Benutzerkontoeigenschaften mit Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell).
 
     - Informationen zum Bearbeiten eines einzelnen Kontos finden Sie unter [Hinzufügen oder Aktualisieren der Profilinformationen eines Benutzers mithilfe von Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
@@ -65,8 +65,8 @@ In der folgenden Tabelle sind die Attribute aufgeführt, die Sie mit Information
 |ExtensionAttribute1 |CustomAttribute1  |
 |ExtensionAttribute2 |CustomAttribute2  |
 |ExtensionAttribute3 |CustomAttribute3  |
-|ExtensionAttribute4 |Parameter CustomAttribute4  |
-|ExtensionAttribute5 |Eigenschaft CustomAttribute5  |
+|ExtensionAttribute4 |CustomAttribute4  |
+|ExtensionAttribute5 |CustomAttribute5  |
 |ExtensionAttribute6 |CustomAttribute6  |
 |ExtensionAttribute7 |CustomAttribute7  |
 |ExtensionAttribute8 |CustomAttribute8  |

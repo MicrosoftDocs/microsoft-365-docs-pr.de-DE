@@ -21,12 +21,12 @@ search.appverid:
 description: Technischen und Abrechnungssupport erhalten Sie über die für Ihr Land oder Ihre Region aufgeführten Telefonnummern oder indem Sie online eine Serviceanfrage übermitteln.
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 1db89882db693c2102ca5c8dcb28f7ceb3ebf12e
-ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
+ms.openlocfilehash: f508607bb19a15fa089cf13eecfd7047f2e6f7bf
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46641585"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307361"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>Möglichkeiten, Kontakt mit dem Support für Geschäftsprodukte aufzunehmen – Administratorhilfe
 
@@ -35,7 +35,7 @@ ms.locfileid: "46641585"
 > [!IMPORTANT]
 > Sie müssen ein Administrator für ein Geschäftsabonnement sein, um diese Supportmethoden nutzen zu können. Wenn Sie kein Administrator für ein Geschäftskonto sind, benutzen Sie bitte diese [Support-Seite](https://support.microsoft.com/help/contactus).
 
-Beginnen Sie mit [Überprüfen Sie den aktuellen Status der Dienste](https://docs.microsoft.com/office365/enterprise/view-service-health). Detaillierte Informationen zu aktuellen und vergangenen Themen können Sie auf dem <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Dashbord "Dienststatus"</a> einsehen. Wenn Sie ein Problem haben, das nicht aufgelistet ist, können Sie auf eine der folgenden Weisen Support erhalten:
+Beginnen Sie mit [Überprüfen Sie den aktuellen Status der Dienste](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health). Detaillierte Informationen zu aktuellen und vergangenen Themen können Sie auf dem <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Dashbord "Dienststatus"</a> einsehen. Wenn Sie ein Problem haben, das nicht aufgelistet ist, können Sie auf eine der folgenden Weisen Support erhalten:
 
 ## <a name="online-support"></a>Onlinesupport
 

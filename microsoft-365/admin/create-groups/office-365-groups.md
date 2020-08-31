@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie mehr über Microsoft 365 Gruppen.
-ms.openlocfilehash: 6922e6bf8561d0600c25de9768669d90e959ff26
-ms.sourcegitcommit: 4789b261eb029d7c965421a1260acc110e6385db
+ms.openlocfilehash: 711ab7e7818b266d7cbdbe076e30355d29bc3eeb
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45387399"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307265"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Übersicht über Microsoft 365-Gruppen für Administratoren
 
@@ -62,7 +62,7 @@ Als Administrator haben Sie die folgenden Möglichkeiten:
 
 Wenn Sie eine automatisiertere Möglichkeit zum Verwalten des Lebenszyklus Ihrer Microsoft 365-Gruppen bevorzugen, können Sie Ablaufrichtlinien zum Ablaufen von Gruppen in einem bestimmten Zeitintervall verwenden. Die Besitzer der Gruppe erhalten-30 Tage, 15 Tage und 1 Tag vor Gruppenablauf Benachrichtigungen per E-Mail, sodass sie die Gruppe einfach verlängern können, falls diese noch benötigt wird. Siehe: [Microsoft 365 Group-Ablaufrichtlinie](office-365-groups-expiration-policy.md).
 
-Sie können Gruppen entweder über das Microsoft 365 Admin Center oder [mithilfe von PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell) durchführen.
+Sie können Gruppen entweder über das Microsoft 365 Admin Center oder [mithilfe von PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershel) durchführen.
 
 Wenn Sie viele Benutzer haben, z. B. in einem großen Unternehmen oder Konzern, haben Sie möglicherweise viele Benutzer, die Gruppen für unterschiedliche Zwecke erstellen. Es wird dringend empfohlen, [Plan for Governance in Microsoft 365 Groups](plan-for-groups-governance.md) for Best Practices zu überprüfen.
 
@@ -120,6 +120,6 @@ Microsoft 365 Gruppen arbeiten mit Azure Active Directory (AAD). Die von Ihnen e
 
 [Aktualisieren von Verteilerlisten auf Microsoft 365-Gruppen](../manage/upgrade-distribution-lists.md)
 
-[Verwalten von Microsoft 365-Gruppen mit PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
+[Verwalten von Microsoft 365-Gruppen mit PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
 
 [SharePoint Online-Beschränkungen](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)

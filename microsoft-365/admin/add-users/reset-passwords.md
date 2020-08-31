@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 'Hier erfahren Sie, wie Sie das Kennwort für einen Benutzer in Microsoft 365 for Business-Abonnement zurücksetzen. '
-ms.openlocfilehash: d1c17448a1f9993b056fa2dc428980acf8ef82b4
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 6159b62cb6c1e09cb86732cc27cc4c4c87328a42
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780565"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307289"
 ---
 # <a name="reset-passwords"></a>Zurücksetzen von Kennwörtern
 
@@ -120,7 +120,7 @@ Diese Schritte können Sie für ein Unternehmen mit Dutzenden von Benutzern ausf
 
 Verwenden Sie PowerShell! Lesen Sie diesen Beitrag von Eyal Doron: [Verwalten von Kennwörtern mit PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
   
-Und hier ist ein verwandter Artikel: [Festlegen der Kennwörter für mehrere Benutzerkonten](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell).
+Und hier ist ein verwandter Artikel: [Festlegen der Kennwörter für mehrere Benutzerkonten](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell).
   
 Eine Übersicht über die Informationen finden Sie unter [PowerShell for Microsoft 365 Administrators](https://support.microsoft.com/office/40fdcbd4-c34f-42ab-8678-8b3751137ef1).
   
