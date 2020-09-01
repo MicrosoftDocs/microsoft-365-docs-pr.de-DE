@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Hier erfahren Sie, wie Sie ein Team mit einer eindeutigen Vertraulichkeitsbezeichnung für Sicherheit erstellen.
-ms.openlocfilehash: f540c1fce1c525ab49037ea27b139f10fac76f33
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 789e75165339f8a834a73aa3fd0d8a2666285ce9
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577962"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308183"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Konfigurieren eines Teams mit Sicherheitsisolierung
 
@@ -52,7 +52,7 @@ Sie können dieses Poster auch im [PDF](https://github.com/MicrosoftDocs/microso
 
 Wenn Sie den Zugriff auf das Team und die zugrunde liegende SharePoint-Website schützen möchten, überprüfen Sie die folgenden bewährten Methoden:
 - [Identitäts- und Gerätezugriffsrichtlinien](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-policies)
-- [SharePoint-Zugriffsrichtlinien](https://docs.microsoft.com/microsoft-365/enterprise/sharepoint-file-access-policies).
+- [SharePoint-Online-Zugriffsrichtlinien](https://docs.microsoft.com/microsoft-365/enterprise/sharepoint-file-access-policies)
 - [Bereitstellen von Teams mit grundlegendem Schutz](configure-teams-baseline-protection.md)
 
 ## <a name="guest-sharing"></a>Gastfreigabe

@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 'Zusammenfassung: Konfigurieren einer SharePoint Online Teamwebsite, die vom Rest der Organisation in Ihrer Microsoft 365-Entwicklungs-/Testumgebung isoliert ist.'
-ms.openlocfilehash: 07f3ae349f20fd4498e7809955cf0407d8c31d8c
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 095b0e5098d86f69c21576e72439dde48a092db3
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588028"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308403"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Isolierte SharePoint Online-Teamwebsite in Ihrer Office 365-Entwicklungs-/Testumgebung
 
@@ -65,7 +65,7 @@ Wenn Sie eine isolierte SharePoint Online Teamwebsite in einer simulierten Unter
 
 ## <a name="phase-2-create-user-accounts-and-access-groups"></a>Phase 2: Erstellen von Benutzerkonten und Zugriffsgruppen
 
-Verwenden Sie die Anweisungen unter [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) , um mit ihrem globalen Administratorkonto eine Verbindung mit Ihrem Testabonnement herzustellen:
+Verwenden Sie die Anweisungen unter [Connect to Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell) , um mit ihrem globalen Administratorkonto eine Verbindung mit Ihrem Testabonnement herzustellen:
 
 - Ihrem Computer (für die einfache Microsoft 365-Entwicklungs-/Testumgebung).
 
@@ -150,7 +150,7 @@ Führen Sie folgende Schritte aus, um eine SharePoint Online-Teamwebsite für Pr
 
 1. Melden Sie sich über einen Browser auf Ihrem lokalen Computer (einfache Konfiguration) oder auf CLIENT1 (simulierte Unternehmenskonfiguration) beim Microsoft 365 Admin Center ( [https://admin.microsoft.com](https://admin.microsoft.com) ) mit ihrem globalen Administratorkonto an.
 
-2. Klicken Sie in der Liste der Kacheln auf **SharePoint**.
+2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
 
 3. Klicken Sie auf der neuen SharePoint-Registerkarte in Ihrem Browser auf **+ Website erstellen**.
 
@@ -218,7 +218,7 @@ Nachfolgend wird der Zugriff unter Verwendung des Lead Designer-Benutzerkontos v
 
 3. Melden Sie sich beim Microsoft 365 Admin Center ( [https://admin.microsoft.com](https://admin.microsoft.com) ) unter Verwendung des Lead Designer-Kontonamens und des Kennworts an.
 
-4. Klicken Sie in der Liste der Kacheln auf **SharePoint**.
+4. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
 
 5. Geben Sie auf der neuen Registerkarte **SharePoint** in Ihrem Browser **ProjectX** in das Suchfeld ein, aktivieren Sie die Suche, und klicken Sie dann auf die Teamwebsite **ProjectX**. Für die ProjectX-Teamwebsite sollte nun eine neue Registerkarte im Browser angezeigt werden.
 
@@ -248,7 +248,7 @@ Nachfolgend wird der Zugriff unter Verwendung des Development VP-Benutzerkontos 
 
 1. Melden Sie sich beim Microsoft 365 Admin Center ( [https://admin.microsoft.com](https://admin.microsoft.com) ) mit dem Kontonamen und dem Kennwort des Development VP an.
 
-2. Klicken Sie in der Liste der Kacheln auf **SharePoint**.
+2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
 
 3. Geben Sie auf der neuen Registerkarte **SharePoint** in Ihrem Browser **ProjectX** in das Suchfeld ein, aktivieren Sie die Suche, und klicken Sie dann auf die Teamwebsite **ProjectX**. Für die ProjectX-Teamwebsite sollte nun eine neue Registerkarte im Browser angezeigt werden.
 
@@ -286,7 +286,7 @@ Wenn Sie eine isolierte SharePoint Online-Teamwebsite in der Produktion bereitst
 
 [Isolierte SharePoint Online-Teamwebsites](isolated-sharepoint-online-team-sites.md)
 
-[Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
 
 [Die simulierte Unternehmensstandardkonfiguration](https://docs.microsoft.com/microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise)
 

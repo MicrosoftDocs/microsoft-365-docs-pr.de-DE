@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -17,12 +17,13 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/27/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8eda787a92228fc9705bd329f0df7203b9a1175c
-ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
+ms.reviewer: vippand
+ms.openlocfilehash: 2e6638480ec3a687b1bed9f2a176b6bf21278ef2
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47294775"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308379"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Neuerungen in Office 365 ATP
 
@@ -39,7 +40,7 @@ In diesem Artikel werden neue Features in der neuesten Version von Office 365 AT
 
 - [Überprüfen der Richtlinien mithilfe der Konfigurationsanalyse](configuration-analyzer-for-security-policies.md)
 - [Manuelles Überschreiben von Filter Urteilen mithilfe der Liste "Mandanten zulassen/blockieren"](tenant-allow-block-list.md)
-- [Erweiterte Funktionen im Threat Explorer, einschließlich der wichtigsten Zielbenutzer, Transportregeln und Connectors](threat-explorer.md#extended-capabilities-in-Threat-Explorer.md)
+- [Erweiterte Funktionen im Threat Explorer, einschließlich der wichtigsten Zielbenutzer, Transportregeln und Connectors](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections)
 - Flächen Oberflächen Überschreibungs Informationen im [Threat Explorer](threat-explorer.md) (e-Mail wurde zugelassen/blockiert durch Mandanten-/Benutzerrichtlinie)
 - Aufdeckung von URL-Bedrohungen im [Threat Explorer](threat-explorer.md) (Malware, Phishing, Spam oder keine)
 
@@ -99,7 +100,7 @@ In diesem Artikel werden neue Features in der neuesten Version von Office 365 AT
 
 Wussten Sie schon, dass Office 365 ATP in zwei Plänen verfügbar ist? [Hier finden Sie weitere Informationen zu den einzelnen Plänen](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Weitere Informationen:
 
 [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap)
 
