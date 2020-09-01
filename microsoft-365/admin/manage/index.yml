@@ -11,12 +11,12 @@ metadata:
   ms.date: 04/16/2020
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: 3aba9a081fadb85a3c052d0b11d6ff49dbffa0ca
-  ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+  ms.openlocfilehash: 8af267e0317b396cbcb1364598bbce70c86df3e0
+  ms.sourcegitcommit: 97ef8f846939c3d31bb0638edf07bb89463ace0b
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 06/17/2020
-  ms.locfileid: "44780097"
+  ms.lasthandoff: 08/28/2020
+  ms.locfileid: "47300422"
 landingContent:
 - title: Überwachen des Status unseres Diensts
   linkLists:
@@ -58,7 +58,9 @@ landingContent:
       url: centralized-deployment-of-add-ins.md
     - text: Installieren und Verwalten von Add-Ins mit Hilfe von zentraler Bereitstellung
       url: manage-deployment-of-add-ins.md
-- title: Microsoft Teams
+    - text: Office-Skripts-Einstellungen verwalten
+      url: manage-office-scripts-settings.md
+- title: Microsoft Teams
   linkLists:
   - linkListType: overview
     links:
