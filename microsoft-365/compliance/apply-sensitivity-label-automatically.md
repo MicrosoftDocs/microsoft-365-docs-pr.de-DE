@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch einem Dokument oder einer E-Mail zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: 112857d9778cf850613c808474051eb25df74296
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 5b466084701d2424aeaf9e7ee644d33861fdd5f3
+ms.sourcegitcommit: 87449335d9a1124ee82fa2e95e4745155a95a62f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656826"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47310886"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -255,7 +255,7 @@ Schließlich können Sie den Simulationsmodus verwenden, um einen Näherungswert
     
     ![Seite "Standorte" auswählen, Assistent für automatischen Bezeichnung ](../media/locations-auto-labeling-wizard.png)
     
-    Für OneDrive müssen Sie einzelne Konten angeben. Die URL für den OneDrive eines Benutzers hat das folgende Format: `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
+    Sie müssen einzelne SharePoint-Websites und OneDrive-Konten angeben. In OneDrive hat die URL eines OneDrive-Benutzers das folgende Format: `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
     
     Beispielsweise bei einem Benutzer im Mandanten „Contoso“, der den Benutzernamen „rsimone“ hat: `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
     
@@ -312,4 +312,44 @@ Sie können die Ergebnisse der Richtlinie für die automatische Bezeichnung auch
 
 > [!TIP]
 > Sie können den Inhalts-Explorer auch verwenden, um Speicherorte zu identifizieren, die Dokumente mit vertraulichen Informationen, aber ohne Bezeichnungen enthalten. Anhand dieser Informationen können Sie diese Speicherorte ihrer Richtlinie zur automatischen Bezeichnung hinzufügen und die identifizierten Typen vertraulicher Informationen als Regeln aufnehmen.
+
+### <a name="use-powershell-for-auto-labeling-policies"></a>PowerShell für automatische Bezeichnungsrichtlinien verwenden
+
+Sie können jetzt [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) verwenden, um automatische Bezeichnungsrichtlinien zu erstellen und zu konfigurieren. Dies bedeutet, dass Sie das Erstellen und Verwalten Ihrer automatischen Bezeichnungsrichtlinien jetzt vollständig mithilfe von Skripts durchführen können, was auch eine effizientere Methode zum Angeben mehrerer URLs für OneDrive-und SharePoint-Speicherorte darstellt.
+
+Bevor Sie die Befehle in PowerShell ausführen, müssen Sie zunächst [eine Verbindung zu Security & Compliance Center PowerShell herstellen](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+
+So erstellen Sie eine neue automatische Bezeichnungsrichtlinie: 
+
+```powershell
+New-AutoSensitivityLabelPolicy -Name <AutoLabelingPolicyName> -SharePointLocation "<SharePointSiteLocation>" -ApplySensitivityLabel <Label> -Mode TestWithoutNotifications
+```
+Mit diesem Befehl wird eine automatische Bezeichnungsrichtlinie für eine von Ihnen angegebene SharePoint-Website erstellt. Verwenden Sie bei einem OneDrive-Speicherort stattdessen den Parameter *OneDriveLocation*. 
+
+So fügen Sie einer vorhandenen automatischen Bezeichnungsrichtlinie weitere Websites hinzu:
+
+```powershell
+$spoLocations = @("<SharePointSiteLocation1>","<SharePointSiteLocation2>")
+Set-AutoSensitivityLabelPolicy -Identity <AutoLabelingPolicyName> -AddSharePointLocation $spoLocations -ApplySensitivityLabel <Label> -Mode TestWithoutNotifications
+```
+
+Mit diesem Befehl werden die zusätzlichen SharePoint-URLs in einer Variablen angegeben, die dann der bestehenden automatischen Bezeichnungsrichtlinie hinzugefügt wird. Wenn Sie stattdessen OneDrive Speicherorte hinzufügen möchten, verwenden Sie den *AddOneDriveLocation*-Parameter mit einer anderen Variablen, z. B. *$OneDriveLocations*.
+
+So erstellen Sie eine neue automatische Bezeichnungsrichtlinienregel:
+
+```powershell
+New-AutoSensitivityLabelRule -Policy <AutoLabelingPolicyName> -Name <AutoLabelingRuleName> -ContentContainsSensitiveInformation @{"name"= "a44669fe-0d48-453d-a9b1-2cc83f2cba77"; "mincount" = "2"} -Workload SharePoint
+```
+
+Bei einer vorhandenen automatischen Bezeichnungsrichtlinie wird mit diesem Befehl eine neue Richtlinienregel erstellt, um den vertraulichen Informationstyp **US-Sozialversicherungsnummer (SSN)** zu ermitteln, der die Entitäts-ID a44669fe-0d48-453d-a9b1-2cc83f2cba77 hat. Entitäts-IDs anderer vertraulicher Informationstypen finden Sie unter [Entitätsdefinitionen für vertrauliche Informationstypen](sensitive-information-type-entity-definitions.md).
+
+Weitere Informationen zu den PowerShell-Cmdlets, die automatische Bezeichnungsrichtlinien unterstützen, deren verfügbare Parameter sowie einige Beispiele finden Sie in der folgenden Cmdlet-Hilfe:
+
+- [Get-AutoSensitivityLabelPolicy](https://docs.microsoft.com/powershell/module/exchange/get-autosensitivitylabelpolicy)
+- [New-AutoSensitivityLabelPolicy](https://docs.microsoft.com/powershell/module/exchange/new-autosensitivitylabelpolicy?view=exchange-ps)
+- [New-AutoSensitivityLabelRule](https://docs.microsoft.com/powershell/module/exchange/new-autosensitivitylabelrule?view=exchange-ps)
+- [Remove-AutoSensitivityLabelPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-autosensitivitylabelpolicy?view=exchange-ps)
+- [Remove-AutoSensitivityLabelRule](https://docs.microsoft.com/powershell/module/exchange/remove-autosensitivitylabelrule?view=exchange-ps)
+- [Set-AutoSensitivityLabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-autosensitivitylabelpolicy?view=exchange-ps)
+- [Set-AutoSensitivityLabelRule](https://docs.microsoft.com/powershell/module/exchange/set-autosensitivitylabelrule?view=exchange-ps)
 
