@@ -15,12 +15,12 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 description: Die Roadmap zum Einrichten der Geräteverwaltung für Microsoft 365.
-ms.openlocfilehash: 1c5a06c75ede11697e2ecf17c47eb035e78dcd27
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1a1bdb449aa1d1ba12cf1de422b3e279df6c1376
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690516"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315741"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Roadmap für die Geräteverwaltung für Microsoft 365
 
@@ -47,17 +47,11 @@ Beginnen Sie [hier](https://support.microsoft.com/office/set-up-basic-mobility-a
  
 ## <a name="identity-and-device-access-recommendations"></a>Empfehlungen für den Identitäts- und Gerätezugriff
 
-Microsoft stellt eine Reihe von Empfehlungen für [Identität und Gerätezugriff](microsoft-365-policies-configurations.md) bereit, um sicherzustellen, dass die Mitarbeiter sicher und produktiv arbeiten können. Verwenden Sie für den Geräte Zugriff die Empfehlungen und Einstellungen in den folgenden Artikeln zusammen mit den Schritten in dieser Phase:
+Microsoft stellt eine Reihe von Empfehlungen für [Identität und Gerätezugriff](microsoft-365-policies-configurations.md) bereit, um sicherzustellen, dass die Mitarbeiter sicher und produktiv arbeiten können. Verwenden Sie für den Geräte Zugriff die Empfehlungen und Einstellungen in den folgenden Artikeln:
 
 - [Voraussetzungen](identity-access-prerequisites.md)
 - [Allgemeine Identitäts- und Gerätezugriffsrichtlinien](identity-access-policies.md)
 
-## <a name="how-microsoft-does-device-management-for-microsoft-365"></a>Funktionsweise von Microsoft-Geräteverwaltung für Microsoft 365
-
-Erfahren Sie, wie IT-Experten bei Microsoft [Geräte mit EMS verwalten](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR8).
-
 ## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Funktionsweise von Contoso für die Geräteverwaltung für Microsoft 365
 
 Erfahren Sie, wie die Contoso Corporation, ein fiktives, aber repräsentatives multinationales Unternehmen, [Ihre Infrastruktur für Mobile Geräteverwaltung](contoso-mdm.md) mit Microsoft 365 Cloud Services bereitgestellt hat.
-
-![Die Contoso Corporation](../media/contoso-overview/contoso-icon.png)

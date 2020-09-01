@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: ab75e7ddbf3ada01c3f1247e58d8dc9472ecae77
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 3b913b3d53abf8c46fbcc9e053f91f512864c9d8
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866975"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315831"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Bewerten Ihrer Sicherheitsposition mit Microsoft Secure Score
 
@@ -35,7 +35,7 @@ Damit Sie die benötigten Informationen schneller finden können, sind die Micro
 
 * Identity (Azure Active Directory Accounts & Roles)
 * Daten (Microsoft Information Protection)
-* Gerät (Microsoft Defender ATP, bekannt als [Konfigurationsergebnis](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configuration-score))
+* Gerät (Microsoft Defender ATP, bekannt als [Microsoft Secure Score für Geräte](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
 * App (E-Mail-und Cloud-Apps, einschließlich Office 365 und Microsoft Cloud App Security)
 * Infrastruktur (bisher keine Verbesserungsmaßnahmen)
 

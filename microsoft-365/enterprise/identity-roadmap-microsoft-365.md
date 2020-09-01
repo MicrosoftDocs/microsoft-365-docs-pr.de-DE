@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Die Roadmap zur Identität für Microsoft 365.
-ms.openlocfilehash: 206d8598bab294e6ecb9502599e5530dd4942a59
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2eae98d891672e9fc9adb68e1fee2426fe4934dd
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690897"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315799"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Identity Roadmap für Microsoft 365
 
@@ -42,14 +42,14 @@ Sie können [dieses Poster herunterladen](https://github.com/MicrosoftDocs/micro
 
 ## <a name="plan"></a>Plan
 
-In der Planungsphase Ihrer Identitäts Implementierung:
+So planen Sie die Implementierung Ihrer Identität:
 
 - [Grundlegendes zu den verschiedenen Identitäts Modellen](about-microsoft-365-identity.md)
 - [Planen der Hybriden Identitäts-und Verzeichnissynchronisierung](plan-for-directory-synchronization.md)
 
 ## <a name="deploy"></a>Bereitstellen
 
-In der Bereitstellungsphase Ihrer Identitäts Implementierung:
+So stellen Sie die Identitäts Implementierung bereit:
 
 - [Schützen Ihrer globalen Administratorkonten](protect-your-global-administrator-accounts.md)
 - [Konfigurieren und Verwenden von nur-Cloud-Identitäten](cloud-only-identities.md)
@@ -59,14 +59,14 @@ In der Bereitstellungsphase Ihrer Identitäts Implementierung:
 
 ### <a name="identity-and-device-access-recommendations"></a>Empfehlungen für den Identitäts- und Gerätezugriff
 
-Microsoft bietet eine Reihe von Empfehlungen für den [Identitäts- und Gerätezugriff](microsoft-365-policies-configurations.md), um sicherzustellen, dass eine sichere und produktive Mitarbeiter. Verwenden Sie für Identität die Standardeinstellungen und Empfehlungen in den folgenden Artikeln zusammen mit den Schritten in dieser Phase:
+Microsoft stellt eine Reihe von Empfehlungen für [Identität und Gerätezugriff](microsoft-365-policies-configurations.md) bereit, um sicherzustellen, dass die Mitarbeiter sicher und produktiv arbeiten können. Verwenden Sie für Identity die Empfehlungen und Einstellungen in den folgenden Artikeln:
 
 - [Voraussetzungen](identity-access-prerequisites.md)
 - [Allgemeine Identitäts- und Gerätezugriffsrichtlinien](identity-access-policies.md)
 
 ## <a name="manage"></a>Verwalten
 
-In der Verwaltungsphase Ihrer Identitäts Implementierung:
+So verwalten Sie die Identitäts Implementierung:
 
 - [Zuweisen von Lizenzen und Verwalten von Benutzerkonten](assign-licenses-to-user-accounts.md)
 - [Überwachen der Verzeichnissynchronisierung](view-directory-synchronization-status.md)
@@ -83,9 +83,6 @@ Erfahren Sie, wie IT-Experten bei Microsoft [Identitäten verwalten und den Zugr
 
 Erfahren Sie, wie die Contoso Corporation, ein fiktives, aber multinationales, repräsentatives Unternehmen [eine hybride Identitätsinfrastruktur bereitgestellt hat](contoso-identity.md) (für Microsoft 365-Clouddienste).
 
-![Die Contoso Corporation](../media/contoso-overview/contoso-icon.png)
-
 ## <a name="next-step"></a>Nächster Schritt
 
 Starten Sie Ihre Identitäts Planung mit [Identitäts Modellen](about-microsoft-365-identity.md).
-

@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Fügen Sie Ihre Domäne zu Microsoft 365 im Microsoft 365 Admin Center hinzu, indem Sie einen DNS-Eintrag auf Ihrem DNS-Host hinzufügen. Der Setup-Assistent führt Sie nun durch den Vorgang.
-ms.openlocfilehash: 0adf8b4dcd5d7bd31038b74a574f449f32bfb037
-ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
+ms.openlocfilehash: 3da99644f339eac2db6f1904e4eb50a7f584bc80
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46814432"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315717"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Hinzufügen einer Domäne zu Microsoft 365
 
@@ -83,11 +83,13 @@ ms.locfileid: "46814432"
     
 5. Wählen Sie aus, wie Sie überprüfen möchten, ob Sie die Domäne besitzen.
     
-    1. Wenn Ihre Domäne bei GoDaddy oder 1 1 registriert ist &amp; , wählen Sie weiter **Anmelden**aus,  >  **Next** und Microsoft [wird Ihre Einträge automatisch einrichten](../get-help-with-domains/domain-connect.md).
+    1. Wenn Ihre Domänenregistrierungsstelle die [Domäne Connect](#domain-connect-registrars-integrating-with-microsoft-365)verwendet, wählen Sie weiter **Anmelden**aus,  >  **Next** und Microsoft [wird Ihre Einträge automatisch einrichten](../get-help-with-domains/domain-connect.md).
     
     2. Sie können auch eine E-Mail mit einem Prüfcode an den registrierten Kontakt für die Domäne senden lassen. Wenn Sie diese E-Mail nicht erkennen oder keinen Zugriff darauf haben, können Sie die dritte Option verwenden.
     
     3. Sie können einen TXT-Eintrag zur Überprüfung Ihrer Domäne verwenden. Wählen Sie dies und dann **Weiter** aus, um Anleitungen dazu anzuzeigen, wie Sie diesen DNS-Eintrag zur Website Ihrer Registrierungsstelle hinzufügen. Nachdem Sie den Eintrag hinzugefügt haben, kann die Überprüfung bis zu 30 Minuten dauern. 
+
+    4. Sie können der Website Ihrer Domäne eine Textdatei hinzufügen. Wählen Sie aus, und laden Sie die Datei. txt aus dem Setup-Assistenten, und laden Sie die Datei dann in den Ordner auf oberster Ebene Ihrer Website hoch. Der Pfad zur Datei sollte wie folgt aussehen: `http://mydomain.com/ms39978200.txt` . Wir bestätigen, dass Sie die Domäne besitzen, indem Sie die Datei auf Ihrer Website suchen.
     
 6. Wählen Sie aus, wie Sie die erforderlichen DNS-Änderungen vornehmen möchten, damit Office Ihre Domäne verwenden kann.
     
