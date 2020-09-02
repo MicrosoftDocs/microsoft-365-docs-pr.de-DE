@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Verwenden Sie eine Aufbewahrungsrichtlinie, um proaktiv zu entscheiden, ob Inhalte aufbewahrt, gelöscht oder beides, also aufbewahrt und dann gelöscht werden sollen. Wenden Sie eine einzelne Richtlinie auf die gesamte Organisation oder auf bestimmte Speicherorte oder Benutzer an sowie eine Richtlinie auf alle Inhalte oder auf bestimmte Bedingungen erfüllende Inhalte.
-ms.openlocfilehash: 6a22c1020c7e6d6c1fce4f80ce40da353b095e64
-ms.sourcegitcommit: c76c025fe75cd9c06eccbf9c7fc887b09da36659
+ms.openlocfilehash: 5b0b81d18afad9f0f9cba6ec24e157ad8f96e4ef
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46903860"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315847"
 ---
 # <a name="create-and-configure-retention-policies"></a>Erstellen und Konfigurieren von Aufbewahrungsrichtlinien
 
@@ -210,9 +210,7 @@ Eine Aufbewahrungsrichtlinie kann für alle Inhalte an den von ihr abgedeckten S
 ### <a name="identify-content-that-contains-specific-keywords"></a>Ermitteln von Inhalten, die bestimmte Stichwörter enthalten
 
 Sie können eine Aufbewahrungsrichtlinie auch nur auf Inhalte anwenden, die bestimmte Bedingungen erfüllen, und dann Aufbewahrungsaktionen nur für diese Inhalte festlegen. Zu den verfügbaren Bedingungen zählt das Anwenden einer Aufbewahrungsrichtlinie auf Inhalte, die bestimmte Wörter oder Ausdrücke enthalten. Sie können Ihre Abfrage mithilfe von Suchoperatoren wie UND, ODER und NICHT verfeinern. Weitere Informationen zu diesen Operatoren finden Sie unter [Stichwortabfragen und Suchbedingungen für Inhaltssuchen](keyword-queries-and-search-conditions.md).
-  
-Unterstützung für das Hinzufügen durchsuchbarer Eigenschaften (z. B. **Betreff:**) wird in Kürze verfügbar sein.
-  
+
 Die abfragebasierte Aufbewahrung verwendet den Suchindex, um Inhalte zu identifizieren.
   
 ![Abfrage-Editor](../media/2c31b412-922e-4a88-89e4-5175c23d9b5f.png)

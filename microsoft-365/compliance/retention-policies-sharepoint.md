@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen, wie die Aufbewahrung für SharePoint und OneDrive funktioniert.
-ms.openlocfilehash: f19f452a01c093d08dbeed38a34756dcaf7a4e95
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 3c1b2564b0ba9d96d22ab9d3b78da500b54363e2
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127402"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315788"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Informationen zur Aufbewahrung für SharePoint und OneDrive
 
@@ -71,7 +71,7 @@ Wenn die Aufbewahrungseinstellungen das reine Aufbewahren oder das reine Lösche
 
 ## <a name="how-retention-works-with-document-versions-in-a-site-collection"></a>Funktionsweise der Aufbewahrung mit Dokumentversionen in einer Websitesammlung
 
-Die Versionsverwaltung ist ein Feature aller Dokumentbibliotheken in SharePoint und in OneDrive. Standardmäßig werden bei der Versionsverwaltung mindestens 500 Hauptversionen beibehalten, Sie können diese Beschränkung jedoch erhöhen. Weitere Informationen finden Sie unter [Aktivieren und Konfigurieren der Versionsverwaltung für eine Liste oder Bibliothek](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37).
+Die Versionsverwaltung ist ein Feature aller Dokumentbibliotheken in SharePoint und in OneDrive. Standardmäßig werden bei der Versionsverwaltung mindestens 500 Hauptversionen beibehalten, Sie können diese Beschränkung jedoch erhöhen. Weitere Informationen finden Sie unter [Aktivieren und Konfigurieren der Versionsverwaltung für eine Liste oder Bibliothek](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37) und [So funktioniert die Versionsverwaltung in Listen und Bibliotheken](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247).
   
 Die Einstellung für reine Aufbewahrung behält alle Versionen eines Dokuments in einer SharePoint-Websitesammlung oder einem OneDrive-Konto bei. Wenn ein Dokument, das einer Einstellung für die reine Aufbewahrung untersteht, zum ersten Mal bearbeitet wird, wird eine Version des ursprünglichen Dokuments in das permanente Dokumentarchiv kopiert und dort aufbewahrt. Wenn ein Dokument, das einer Einstellung für die reine Aufbewahrung untersteht, gelöscht wird, werden alle bestehenden Versionen in das permanente Dokumentarchiv kopiert. Vorrausetzung hierfür ist, dass die Versionsverwaltung aktiviert sein muss. Jede Version eines Dokuments im permanenten Dokumentarchiv bleibt in ihrem jeweiligen Aufbewahrungszeitraum als eigenständiges Element bestehen:
   
@@ -81,6 +81,10 @@ Die Einstellung für reine Aufbewahrung behält alle Versionen eines Dokuments i
 
 > [!NOTE]
 > Aufbewahrte Versionen von SharePoint- und OneDrive-Dokumenten lassen sich nicht mithilfe von eDiscovery-Tools durchsuchen.
+
+Bei Elementen, die einer Aufbewahrungsrichtlinie (oder einer Aufbewahrung für juristische Zwecke) unterliegen, werden die Einschränkungen der Versionsverwaltung für die Dokumentbibliothek ignoriert, bis der Aufbewahrungszeitraum des Dokuments beendet ist. In diesem Szenario werden alte Versionen nicht automatisch gelöscht und Benutzer können Versionen nicht löschen.
+
+Das ist bei Aufbewahrungsbezeichnungen nicht der Fall, wenn Seite keiner Aufbewahrungsrichtlinie unterliegt. Stattdessen werden die Einschränkungen der Versionsverwaltung berücksichtigt, sodass ältere Versionen automatisch gelöscht und durch neuere Versionen ersetzt werden. Benutzer werden jedoch immer noch daran gehindert, Versionen zu löschen.
 
 ## <a name="when-a-user-leaves-the-organization"></a>Wenn ein Benutzer die Organisation verlässt
 

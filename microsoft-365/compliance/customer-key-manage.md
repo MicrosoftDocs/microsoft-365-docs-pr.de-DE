@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Nachdem Sie den Kundenschlüssel eingerichtet haben, erfahren Sie, wie Sie ihn verwalten, indem Sie AKV-Schlüssel wiederherstellen und Berechtigungen und Daten Verschlüsselungsrichtlinien verwalten.
-ms.openlocfilehash: 21c1fedce1ebc09e6c33b74a1b2c035c90988e12
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.openlocfilehash: 8f5f23fa1b8ce8baa8fafd3f29ca5fb8905887a1
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717306"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324257"
 ---
 # <a name="manage-customer-key"></a>Verwalten des Kunden Schlüssels
 
@@ -84,11 +84,11 @@ Führen Sie die folgenden Schritte aus, um eine Liste aller DEPs anzuzeigen, die
 
 2. Wenn Sie alle DEPs in Ihrer Organisation zurückgeben möchten, führen Sie das Cmdlet Get-DataEncryptionPolicy ohne Parameter aus.
 
-  ```powershell
-  Get-DataEncryptionPolicy
-  ```
+   ```powershell
+   Get-DataEncryptionPolicy
+   ```
 
-  Weitere Informationen zum Get-DataEncryptionPolicy-Cmdlet finden Sie unter [Get-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-dataencryptionpolicy?view=exchange-ps).
+   Weitere Informationen zum Get-DataEncryptionPolicy-Cmdlet finden Sie unter [Get-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-dataencryptionpolicy?view=exchange-ps).
 
 ### <a name="assign-a-dep-before-you-migrate-a-mailbox-to-the-cloud"></a>Zuweisen einer Datenausführungsverhinderung vor der Migration eines Postfachs in die Cloud
 
@@ -100,11 +100,11 @@ Führen Sie das Cmdlet "MailUser" in Exchange Online PowerShell aus, um einem Po
 
 2. Führen Sie das Cmdlet "Sets-MailUser" aus.
 
-  ```powershell
-  Set-MailUser -Identity <GeneralMailboxOrMailUserIdParameter> -DataEncryptionPolicy <DataEncryptionPolicyIdParameter>
-  ```
+   ```powershell
+   Set-MailUser -Identity <GeneralMailboxOrMailUserIdParameter> -DataEncryptionPolicy <DataEncryptionPolicyIdParameter>
+   ```
 
-  Dabei gibt *GeneralMailboxOrMailUserIdParameter* ein Postfach an, und *DataEncryptionPolicyIdParameter* ist die ID der DEP. Weitere Informationen zum Cmdlet "MailUser" finden Sie unter [festlegen-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser?view=exchange-ps).
+   Dabei gibt *GeneralMailboxOrMailUserIdParameter* ein Postfach an, und *DataEncryptionPolicyIdParameter* ist die ID der DEP. Weitere Informationen zum Cmdlet "MailUser" finden Sie unter [festlegen-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser?view=exchange-ps).
 
 ### <a name="determine-the-dep-assigned-to-a-mailbox"></a>Ermitteln der Datenverschlüsselungsrichtlinie (DEP), die einem Postfach zugewiesen ist
 
@@ -168,6 +168,20 @@ Die Ausgabe dieses Cmdlets umfasst Folgendes:
 
   - **Rolling:** Das Erstellen eines sich fortlaufend ändernden, sogenannten Rolling-Codes für den Schlüssel ist in Gang. Wenn der Schlüssel für den Geo rollt, werden Ihnen auch Informationen darüber angezeigt, wie viel Prozent der Websites den Schlüsselrollen Vorgang abgeschlossen haben, damit Sie den Fortschritt überwachen können.
 
+## <a name="unassign-a-dep-from-a-mailbox"></a>Aufheben der Zuweisung einer Datenausführungsverhinderung von einem Postfach
+
+Sie heben die Zuweisung einer Datenausführungsverhinderung von einem Postfach mithilfe des PowerShell-Cmdlets "Cmdlet" und Festlegen von `DataEncryptionPolicy` auf auf zurück `$NULL` . Durch das Ausführen dieses Cmdlets wird die Zuweisung der derzeit zugewiesenen DEP aufgehoben und das Postfach mithilfe der DEP, die den standardmäßigen Microsoft-verwalteten Schlüsseln zugeordnet ist, erneut verschlüsselt. Sie können die Zuweisung der Datenausführungsverhinderung für von Microsoft verwaltete Schlüssel nicht aufheben. Wenn Sie keine verwalteten Microsoft-Schlüssel verwenden möchten, können Sie dem Postfach eine weitere DEP zuweisen.
+
+Führen Sie die folgenden Schritte aus, um die Zuweisung der Datenausführungsverhinderung von einem Postfach mithilfe des PowerShell-Cmdlets für die Gruppe zu beenden.
+
+1. Wenn Sie ein Arbeits-oder Schulkonto mit globalen Administratorberechtigungen in Ihrer Organisation verwenden möchten, stellen Sie [eine Verbindung mit Exchange Online PowerShell her](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+
+2. Führen Sie das Cmdlet "festgelegt-Postfach" aus.
+
+   ```powershell
+   Set-Mailbox -Identity <mailbox> -DataEncryptionPolicy $NULL
+   ```
+
 ## <a name="revoke-your-keys-and-start-the-data-purge-path-process"></a>Widerrufen von Schlüsseln und Starten des Prozesses zur Bereinigung des Datenpfads
 
 Sie steuern die Sperrung aller Stammschlüssel, einschließlich des Verfügbarkeits Schlüssels. Kundenschlüssel bietet Ihnen die Kontrolle über den Aspekt der Beendigungs Planung der behördlichen Anforderungen. Wenn Sie Ihre Schlüssel widerrufen, um Ihre Daten zu löschen und den Dienst zu beenden, löscht der Dienst den Verfügbarkeits Schlüssel nach Abschluss des Daten Löschvorgangs.
@@ -229,7 +243,7 @@ Führen Sie die folgenden Schritte aus, um den Daten Lösch Pfad für SharePoint
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-- [Dienst Verschlüsselung mit Kundenschlüssel](customer-key-overview.md)
+- [Dienstverschlüsselung mit dem Kundenschlüssel](customer-key-overview.md)
 
 - [Informationen zum Verfügbarkeits Schlüssel](customer-key-availability-key-understand.md)
 

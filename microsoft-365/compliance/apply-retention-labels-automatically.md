@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erstellen Sie Aufbewahrungsbezeichnungen und veröffentlichen Sie diese automatisch, damit Sie diese Bezeichnungen automatisch auf Inhalte anwenden können, die Sie beibehalten möchten und nicht benötigte Inhalte löschen können.
-ms.openlocfilehash: 80a5ef502450a24d9c8aeeb08d571bfcbd51a4e3
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 7528fed52ae3df1a60303c40df35a42de6bc1f31
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46648804"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315815"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aufbewahrungsbezeichnungen automatisch anwenden, um Inhalte beizubehalten oder zu löschen
 
@@ -38,8 +38,8 @@ Das automatische Anwenden von Aufbewahrungsbezeichnungen ist aus den folgenden G
     
 - Benutzer müssen nicht mehr über Governance-Richtlinien Bescheid wissen, sondern können sich stattdessen auf ihre Arbeit konzentrieren.
     
-Sie können Aufbewahrungsbezeichnungen automatisch auf Inhalte anwenden, wenn diese Inhalte vertrauliche Informationen oder Schlüsselwörter aufweisen oder [trainierbaren Klassifizierungsmerkmalen](classifier-getting-started-with.md) entsprechen.
-    
+Sie können Aufbewahrungsbezeichnungen automatisch auf Inhalte anwenden, wenn diese Inhalte vertrauliche Informationen, Schlüsselwörter oder durchsuchbare Eigenschaften aufweisen oder [trainierbaren Klassifizierungsmerkmalen](classifier-getting-started-with.md) entsprechen.
+
 Folgende Prozesse können eine Aufbewahrungsbezeichnung entsprechend dieser Bedingungen automatisch anwenden:
 
 ![Diagramm der Rollen und Aufgaben für automatisch angewendete Bezeichnungen](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
@@ -113,7 +113,7 @@ Aufbewahrungsbezeichnungen können automatisch auf Inhalte angewendet werden, we
 
 - [Der Inhalt enthält bestimmte vertrauliche Informationen.](#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
 
-- [Der Inhalt enthält bestimmte Stichwörter, die einer von Ihnen erstellten Abfrage entsprechen.](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
+- [Der Inhalt enthält bestimmte Stichwörter oder durchsuchbare Eigenschaften, die einer von Ihnen erstellten Abfrage entsprechen](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
 
 - [Eine Übereinstimmung für trainierbare Klassifizierungen](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
@@ -135,30 +135,28 @@ Weitere Informationen zu diesen Optionen finden Sie unter [Optimieren von Regeln
   
 #### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>Automatisches Anwenden von Bezeichnungen auf Inhalte mit Stichwörtern oder durchsuchbare Eigenschaften
 
-Sie können automatische Bezeichnungen auf Inhalte anwenden, die bestimmte Kriterien erfüllen. Die derzeit verfügbaren Bedingungen unterstützen das Anwenden einer Bezeichnung auf Inhalte, die bestimmte Wörter, Ausdrücke oder durchsuchbare Eigenschaften enthalten. Sie können Ihre Abfrage mithilfe von Suchoperatoren wie UND, ODER und NICHT verfeinern.
+Sie können automatische Bezeichnungen auf Inhalte mithilfe einer Abfrage anwenden, die bestimmte Wörter, Ausdrücke oder durchsuchbare Eigenschaften enthält. Sie können Ihre Abfrage mithilfe von Suchoperatoren wie UND, ODER und NICHT verfeinern.
 
-Während des automatischen Anwendens von Bezeichnungen für durchsuchbare Eigenschaften kann in der Abfrage kein Alias für eine verwaltete Eigenschaft verwendet werden. Es muss der tatsächliche Name der verwalteten Eigenschaft sein, z. B „RefinableString01“.
+![Abfrage-Editor](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
 
-Weitere Informationen zur Abfragesyntax finden Sie unter:
+Weitere Informationen zur Abfragesyntax, bei der die Keyword Query Language (KQL) angewendet wird, finden Sie unter [Syntaxreferenz für die Keyword Query Language (KQL)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
-- [Syntaxreferenz für die Keyword Query Language (KQL)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
-
-Abfragebasierte Bezeichnungen verwenden den Suchindex zum Identifizieren von Inhalten. Weitere Informationen zu gültigen durchsuchbaren Eigenschaften finden Sie unter:
+Abfragebasierte Bezeichnungen verwenden den Suchindex, um Inhalte zu identifizieren. Weitere Informationen zu den durchsuchbaren Eigenschaften, die Sie verwenden können, finden Sie unter:
 
 - [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md)
 - [Übersicht über durchforstete und verwaltete Eigenschaften in SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/crawled-and-managed-properties-overview)
 
+> [!NOTE]
+> Obwohl bei den in SharePoint verwalteten Eigenschaften Aliase unterstützt werden, sollten Sie diese bei der Konfiguration von Aufbewahrungsbezeichnungen nicht verwenden. Sie müssen immer den tatsächlichen Namen der verwalteten Eigenschaft angeben, z. B „RefinableString01“.
+
 Beispiele für Abfragen:
 
-- Exchange
-    - Betreff: „Vierteljährliche Finanzdaten“
-    - recipients:garthf<!--nolink-->@contoso.com
-- SharePoint und OneDrive
-    - contenttype:contract
-    - site:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract
-
-![Abfrage-Editor](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
-
+| Arbeitslast | Beispiel |
+|:-----|:-----|
+|Exchange   | `subject:"Quarterly Financials"` |
+|Exchange   | `recipients:garthf@contoso.com` |
+|SharePoint | `contenttype:contract` |
+|SharePoint | `site:https://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract`|
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>Automatisches Anwenden von Bezeichnungen auf Inhalte mithilfe von trainierbare Klassifizierungen
 

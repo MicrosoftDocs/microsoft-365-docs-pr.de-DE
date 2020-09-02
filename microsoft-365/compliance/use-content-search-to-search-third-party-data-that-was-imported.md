@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: Verwenden Sie das eDiscovery-Tool für die Inhaltssuche, um nach Elementen zu suchen, die von einer Drittanbieter-Datenquelle in Postfächer in Microsoft 365 importiert wurden, indem Sie Abfragen erstellen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 823d95d6b32a15662004bfc5d92662b130fe4a65
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 24ca63cf78b85f7b8b5181d5babd16058b641128
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527415"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324571"
 ---
 # <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>Verwenden der Inhaltssuche zum Durchsuchen von drittanbieterdaten, die von einem benutzerdefinierten Partner Connector importiert wurden
 
@@ -35,7 +35,7 @@ Weitere Informationen zur Zusammenarbeit mit einem Partner zum Importieren von d
   
 ## <a name="creating-a-query-to-search-all-third-party-data"></a>Erstellen einer Abfrage zum Durchsuchen aller drittanbieterdaten
 
-Zum Suchen (oder aufbewahren) beliebiger Typen von drittanbieterdaten, die Sie in Office 365 importiert haben, können Sie das `kind:externaldata` Nachrichten Eigenschaftswert-Paar im Feld Schlüsselwort für eine Inhaltssuche oder beim Erstellen eines abfragebasierten haltebereichs verwenden. Um beispielsweise nach Elementen zu suchen, die aus einer Datenquelle eines Drittanbieters importiert wurden und das Wort "Contoso" in der Subject-Eigenschaft des importierten Elements enthalten, verwenden Sie die folgende Abfrage: 
+Zum Suchen (oder aufbewahren) beliebiger Typen von drittanbieterdaten, die Sie in Office 365 importiert haben, können Sie das  `kind:externaldata` Nachrichten Eigenschaftswert-Paar im Feld Schlüsselwort für eine Inhaltssuche oder beim Erstellen eines abfragebasierten haltebereichs verwenden. Um beispielsweise nach Elementen zu suchen, die aus einer Datenquelle eines Drittanbieters importiert wurden und das Wort "Contoso" in der Subject-Eigenschaft des importierten Elements enthalten, verwenden Sie die folgende Abfrage: 
   
 ```powershell
 kind:externaldata AND subject:contoso
@@ -59,9 +59,9 @@ Um beispielsweise Facebook-Daten zu durchsuchen, die das Wort "Contoso" in der S
 itemclass:ipm.externaldata.Facebook* AND subject:contoso
 ```
 
-In der folgenden Tabelle sind die Drittanbieter-Datentypen aufgeführt, die Sie durchsuchen können, und der Wert, der für die Message-Eigenschaft verwendet werden kann, `itemclass:` um speziell nach diesem Typ von drittanbieterdaten zu suchen. Bei der Abfragesyntax wird die Groß-/Kleinschreibung nicht beachtet. 
+In der folgenden Tabelle sind die Drittanbieter-Datentypen aufgeführt, die Sie durchsuchen können, und der Wert, der für die Message-Eigenschaft verwendet werden kann,  `itemclass:` um speziell nach diesem Typ von drittanbieterdaten zu suchen. Bei der Abfragesyntax wird die Groß-/Kleinschreibung nicht beachtet. 
   
-|**Datentyp eines Drittanbieters**|**Wert für `itemclass:` Eigenschaft**|
+|**Datentyp eines Drittanbieters**|**Wert für  `itemclass:` Eigenschaft**|
 |:-----|:-----|
 |Versuchen  <br/> | `ipm.externaldata.AIM*` <br/> |
 |American Idol  <br/> | `ipm.externaldata.AmericanIdol*` <br/> |
@@ -83,7 +83,7 @@ In der folgenden Tabelle sind die Drittanbieter-Datentypen aufgeführt, die Sie 
 |BlackBerry-PIN  <br/> | `ipm.externaldata.BlackBerryPIN*` <br/> |
 |BlackBerry-SMS  <br/> | `ipm.externaldata.BlackBerrySMS*` <br/> |
 |Bloomberg  <br/> | `ipm.externaldata.Bloomberg*` <br/> |
-|Bloomberg Mail  <br/> | `ipm.externaldata.BloombergMail*` <br/> |
+|Bloomberg Message  <br/> | `ipm.externaldata.conversation.Bloomberg Message*` <br/> |
 |Bloomberg-Messaging  <br/> | `ipm.externaldata.BloombergMessaging*` <br/> |
 |Box  <br/> | `ipm.externaldata.Box*` <br/> |
 |Cisco-Chat- &amp; Anwesenheits Server  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
@@ -103,7 +103,7 @@ In der folgenden Tabelle sind die Drittanbieter-Datentypen aufgeführt, die Sie 
 |HubConnex  <br/> | `ipm.externaldata.HubConnex*` <br/> |
 |IBM-Verbindungen  <br/> | `ipm.externaldata.Connections*` <br/> |
 |IBM Sametime  <br/> | `ipm.externaldata.Sametime*` <br/> |
-|Ice-Chat  <br/> | `ipm.externaldata.ICEChat.Chat` <br/> |
+|ICE Chat  <br/> | `ipm.externaldata.conversation.Ice Chat*` <br/> |
 |Indii Messenger  <br/> | `ipm.externaldata.Indii*` <br/> |
 |Instagram  <br/> | `ipm.externaldata.Instagram*` <br/> |
 |Instant Bloomberg  <br/> | `ipm.externaldata.InstantBloomberg*` <br/> |

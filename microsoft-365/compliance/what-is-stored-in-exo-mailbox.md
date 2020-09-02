@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Daten, die von cloudbasierten apps in Microsoft 365 erstellt wurden, werden mit dem Exchange Online Postfach eines Benutzers gespeichert oder diesem zugeordnet.
-ms.openlocfilehash: dc8588008194b5ea9e414efd1354d835e6bb7a63
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 121380cdaaf5d0397d082159ddf6461c0c12cbe1
+ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45016298"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47321984"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes"></a>In Exchange Online Postfächern gespeicherte Inhalte
 
@@ -40,8 +40,9 @@ In der folgenden Tabelle sind die apps aufgeführt, mit denen Daten einem cloudb
 |Skype for Business|Unterhaltungen in Skype for Business werden im Ordner "Unterhaltungsverlauf" im Postfach eines Benutzers gespeichert. Wenn das Postfach eines Teilnehmers einer Skype-Besprechung in das Beweissicherungsverfahren aufgenommen oder einer Aufbewahrungsrichtlinie zugewiesen wurde, werden Dateien, die einer Besprechung zugeordnet sind, im Postfach der Teilnehmer aufbewahrt.|
 |Sway|Sways werden als HTML-Datei gespeichert, die an eine e-Mail-Nachricht angefügt und in einem verborgenen Ordner im Postfach des Benutzers gespeichert ist, der die Sway erstellt hat. Wenn Sie Inhalte aus Sway in einer PST-Datei exportieren, befinden sich diese Daten im **ApplicationDataRoot** -Ordner in einem Unterordner mit der folgenden GUID) **905fcf26-4eb7-48A0-9ff0-8dcc7194b5ba**.|
 |Aufgaben|Aufgaben in der Aufgaben-app (bei denen es sich um dieselben Aufgaben handelt, die in Outlook verfügbar sind) werden im Postfach eines Benutzers gespeichert.|
-|Microsoft Teams|Unterhaltungen, die Teil eines Teams-Kanals sind, sind dem Postfach "Teams" zugeordnet. Unterhaltungen, die Teil der Chat Liste in Microsoft Teams (auch *1 x N-Chats*genannt) sind, sind dem Postfach der Benutzer zugeordnet, die am Chat teilnehmen. Außerdem werden zusammenfassende Informationen für Besprechungen und Anrufe in einem Teams-Kanal Postfächern von Benutzern zugeordnet, die sich in die Besprechung oder den Anruf eingewählt haben. Wenn Sie also nach Microsoft Teams-Inhalten suchen, suchen Sie im Teams-Postfach nach Inhalten in Kanal Unterhaltungen und Durchsuchen von Benutzerpostfächern nach Inhalten in 1 x N-Chats.| 
+|Teams|Unterhaltungen, die Teil eines Teams-Kanals sind, sind dem Postfach "Teams" zugeordnet. Unterhaltungen, die Teil der Chat Liste in Microsoft Teams (auch *1 x N-Chats*genannt) sind, sind dem Postfach der Benutzer zugeordnet, die am Chat teilnehmen. Außerdem werden zusammenfassende Informationen für Besprechungen und Anrufe in einem Teams-Kanal Postfächern von Benutzern zugeordnet, die sich in die Besprechung oder den Anruf eingewählt haben. Wenn Sie also nach Microsoft Teams-Inhalten suchen, suchen Sie im Teams-Postfach nach Inhalten in Kanal Unterhaltungen und Durchsuchen von Benutzerpostfächern nach Inhalten in 1 x N-Chats.| 
 |To-Do|Aufgaben (" *to-DOS*", die in "to-do"-Listen gespeichert sind) in der to-do-App werden im Postfach eines Benutzers gespeichert.|
+|Yammer|Unterhaltungen und Kommentare innerhalb einer Jammer Gemeinschaft sind dem Microsoft 365-Gruppenpostfach sowie dem Benutzerpostfach des Autors und allen benannten Empfängern (@mentioned-oder cc'ed-Benutzer) zugeordnet. Private Nachrichten, die außerhalb einer Jammer Gemeinschaft gesendet werden, werden im Postfach der Benutzer gespeichert, die an der privaten Nachricht teilnehmen.|  
 ||||
 
 > [!NOTE]
