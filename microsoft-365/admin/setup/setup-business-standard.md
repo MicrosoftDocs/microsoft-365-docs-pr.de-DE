@@ -25,14 +25,20 @@ search.appverid:
 - MOE150
 - BEA160
 description: Erfahren Sie, wie Sie Ihr Microsoft 365 Business Standard-Abonnement einrichten.
-ms.openlocfilehash: b42dd0779c708410614ea2ab0d134aa3dcf0c7e9
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: cfc198c749cfcaa76bc3fa6323e1dba8a46e7388
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44778925"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324446"
 ---
 # <a name="set-up-microsoft-business-standard"></a>Einrichten von Microsoft Business Standard
+
+Sehen Sie sich ein kurzes Video zum Einrichten von Microsoft 365 Business Standard an.<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ELKR]
+
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) an.
   
  *Diese Schritte gelten für Unternehmen und [gemeinnützige Einrichtungen](https://go.microsoft.com/fwlink/p/?LinkId=627221), die über den **[Microsoft 365 Business Standard-Plan verfügen.](https://go.microsoft.com/fwlink/p/?LinkId=627220)***
 

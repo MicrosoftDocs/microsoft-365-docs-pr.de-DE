@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Übersicht über die Microsoft Produktivitätsbewertung
-ms.openlocfilehash: 47675f37e9146586b3fe0dd8d974887fd2435bf3
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: a7f6fc5fef9189f7478bcc67e1d24bdf037f561d
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307477"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324434"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Microsoft Productivity Score (Vorschau)
 
@@ -40,9 +40,9 @@ Wir stellen Daten, Einblicke und Empfehlungen in zwei Bereichen zur Verfügung:
 
 - **Mitarbeiter Erfahrung:** Wir messen, wie Personen an Inhalten zusammenarbeiten, wie Microsoft 365-Produkte für die Kommunikation verwendet werden und ob Microsoft 365 plattformübergreifend verwendet wird. 
 
-    Diese Einblicke bieten wir, da Personen, die Online zusammenarbeiten, Zeit sparen. Wenn Sie die Freiheit haben, auf einem Gerät zu arbeiten, sind Sie produktiver und zufriedener. Wenn Sie auf flexible Weise kommunizieren können, sind Sie effizienter, bilden bessere Beziehungen und Ihre Organisation ist einheitlicher. Hinweise finden Sie unter [Forrester Report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
+    Diese Einblicke bieten wir, da Personen, die Online zusammenarbeiten, Zeit sparen. Mit der Freiheit, auf jedem Gerät zu arbeiten, sind Sie produktiver und zufriedener. Die flexible Kommunikation macht die Benutzer effizienter, bildet bessere Beziehungen, und Ihre Organisation ist einheitlicher. Hinweise finden Sie unter [Forrester Report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
-- **Technologie Erfahrung:** Die Produktivität hängt von der zuverlässigen und leistungsfähigen Technologie sowie der effizienten Nutzung von Microsoft 365 ab. Wir bieten eine [Endpunktanalyse](https://aka.ms/endpointanalytics), die Ihnen hilft zu verstehen, wie die Produktivität Ihrer Benutzer durch Leistungs-und Integritätsprobleme mit ihrer Endpunkt Hardware und-Software beeinträchtigt werden kann, und gleichzeitig Empfohlene Maßnahmen zur Korrektur dieser Funktionen bietet. und wir bieten Einblicke in die Microsoft 365-Netzwerkkonnektivität für Ihre Organisation.
+- **Technologie Erfahrung:** Die Produktivität hängt von der zuverlässigen und leistungsfähigen Technologie sowie der effizienten Nutzung von Microsoft 365 ab. Wir stellen [EndPoint Analytics](https://aka.ms/endpointanalytics)bereit, damit Sie besser verstehen, wie die Produktivität Ihrer Benutzer durch Leistungs-und Integritätsprobleme mit ihrer Endpunkt Hardware und-Software beeinträchtigt werden kann. Außerdem werden Empfohlene Maßnahmen zur Korrektur dieser Informationen sowie Microsoft 365-Netzwerkkonnektivitäts-Einblicke für Ihre Organisation bereitgestellt.
 
 Eine Übersicht und erforderliche Details finden Sie unter [Was ist Endpoint Analytics](https://docs.microsoft.com/mem/analytics/overview) . Weitere Informationen zu den Einblicken in Microsoft 365 Netzwerkkonnektivität finden Sie [unter Übersicht über die Netzwerkkonnektivität](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview).
   
@@ -66,7 +66,7 @@ Ihr Produktivitäts Ergebnis basiert auf den kombinierten Bewertungen ihrer Mita
 
 Die Produktivitäts Bewertung umfasst Daten aus Exchange, SharePoint, OneDrive, Microsoft Teams, Word, Excel, PowerPoint, OneNote, Outlook, jammern und Skype.
 
-Ihre Punktzahl wird täglich aktualisiert und reflektiert Benutzeraktionen, die in den letzten 28 bis 180 Tagen (einschließlich des aktuellen Tags) abgeschlossen wurden.
+Ihre Punktzahl wird täglich aktualisiert und spiegelt Benutzeraktionen wider, die in den letzten 28 (einschließlich des aktuellen Tags) abgeschlossen wurden.
 
 
 ## <a name="pre-requisites"></a>Voraussetzungen 
@@ -111,15 +111,15 @@ Jede Kategorie-Detailseite enthält die primären Einblicke und unterstützenden
 
 ### <a name="content-collaboration-details"></a>Details zur Inhalts Zusammenarbeit
 
-Die wichtigste Erkenntnis für die Zusammenarbeit mit Inhalten ist die Anzahl der Personen, die Online erstellen, lesen und zusammenarbeiten (Bearbeiten und freigeben). Diese Maßnahmen sind wichtig, da Untersuchungen zeigen, dass bei der Zusammenarbeit mit Online Dateien jede Person durchschnittlich 100 Minuten oder fast zwei Stunden pro Woche spart.
+Die wichtigste Erkenntnis für die Zusammenarbeit mit Inhalten ist die Anzahl der Personen, die Online erstellen, lesen und zusammenarbeiten (Bearbeiten und freigeben). Diese Maßnahmen sind wichtig, da Untersuchungen zeigen, dass bei der Zusammenarbeit mit Online Dateien jede Person durchschnittlich fast zwei Stunden pro Woche spart.
 
-Wir definieren die Zusammenarbeit von Inhalten als eine Person, die eine Office-Datei erstellt und freigibt, und dann wird Sie von mindestens einer anderen Person bearbeitet. 
+Wir definieren die Zusammenarbeit von Inhalten als eine Person, die eine Office-Datei erstellt und freigibt, und dann wird Sie von mindestens einer anderen Person gelesen. 
 
-Leser: Personen, die in OneDrive oder SharePoint auf Online Dateien zugreifen oder diese herunterladen.
+**Leser**: Personen, die in OneDrive oder SharePoint auf Online Dateien zugreifen oder diese herunterladen.
 
 **Ersteller:** Personen, die Online-OneDrive oder SharePoint-Dateien erstellen, ändern, hochladen, synchronisieren, Einchecken, kopieren oder verlagern.
 
-Mitarbeiter: Personen, die mit Online Dateien mit OneDrive oder SharePoint zusammenarbeiten. Zwei Personen sind Mitarbeiter, wenn einer von Ihnen ein Online-Word-, Excel-, PowerPoint-, OneNote-oder PDF-Cloud-Dokument liest oder bearbeitet, nachdem es von der anderen Person innerhalb eines 28-tägigen Fensters erstellt oder geändert wurde.
+**Mitarbeiter**: Personen, die mit Online Dateien mit OneDrive oder SharePoint zusammenarbeiten. Zwei Personen sind Mitarbeiter, wenn einer von Ihnen ein Online-Office-Apps-oder PDF-Cloud-Dokument liest oder bearbeitet, nachdem es von der anderen Person innerhalb eines 28-tägigen Fensters erstellt oder geändert wurde.
 
 Die für die Zusammenarbeit in Betracht gezogenen Dateitypen sind Word-, Excel-, PowerPoint-, OneNote-und PDF-Dateien.
 
@@ -127,7 +127,7 @@ Wir bieten Einblicke in die Startzeiten und Einrichten für Geräte in Ihrer Org
 
 ### <a name="communication-details"></a>Kommunikationsdetails
 
-Die wichtigste Erkenntnis für die Kommunikation besteht darin, wie häufig Personen in Ihrer Organisation e-Mails, Chats und Community-Beiträge zur Kommunikation verwenden. Diese Einblicke sind wichtig, da Sie bei Verwendung einer Vielzahl von Echt Zeit Kommunikationstools den Kommunikationsmodus auswählen können, der Sie am effizientesten gestaltet, und über Tools wie Chat und Communities verfügt, die Sie bei der Entwicklung von Beziehungen über Office-Standorte unterstützen.
+Die wichtigste Erkenntnis für die Kommunikation besteht darin, wie häufig Personen in Ihrer Organisation e-Mails, Chats und Community-Beiträge zur Kommunikation verwenden. Wenn Benutzer eine Vielzahl von Tools für die Echtzeitkommunikation verwenden, können Sie den Kommunikationsmodus auswählen, der Sie am effizientesten gestaltet, beispielsweise Chat und Communities, die Ihnen bei der Entwicklung von Beziehungen über Office-Standorte helfen.
 
 ### <a name="mobility-details"></a>Mobilitäts Details
 
@@ -153,4 +153,4 @@ Dieser Bericht hilft Geschäftsführern, Folgendes zu verstehen:
 
 ## <a name="we-want-to-hear-from-you"></a>Wir freuen uns über Ihr Feedback
 
-Bitte teilen Sie Ihre Gedanken zur Produktivitäts Bewertung und ihre Vorstellungen darüber, wie Sie Sie verbessern können. Verwenden Sie die **Feedback** Abschnitte im Produkt und/oder erreichen Sie das Team für die Produktivitäts Bewertung unter ProductivityScorePreview@Service.Microsoft.com.
+Teilen Sie Ihre Gedanken zur Produktivitäts Bewertung und ihre Vorstellungen darüber, wie Sie Sie verbessern können. Verwenden Sie die **Feedback** Abschnitte im Produkt und/oder erreichen Sie das Team für die Produktivitäts Bewertung unter ProductivityScorePreview@Service.Microsoft.com.

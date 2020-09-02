@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: Erfahren Sie, wie Sie Ihre Rechnungsadressen für Microsoft 365 for Business aktualisieren. Sie können auch die e-Mail-Adresse aktualisieren, die zum Empfangen von Abrechnungs Benachrichtigungen verwendet wird.
-ms.openlocfilehash: 6b2da1e947362db432bf036d9799ddef89526030
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 5e6fc2bad63c445f516ba3cd473bd40c7bfcb2e3
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817029"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324352"
 ---
 # <a name="change-your-billing-addresses"></a>Ändern der Rechnungsadressen
 
@@ -49,7 +49,7 @@ Ihre Rechnung oder Rechnung enthält drei Adressen:
 
 - **Dienstnutzungsadresse** Dies ist die Adresse, unter welcher der Dienst genutzt wird. Normalerweise ist diese Adresse mit der **Auftraggeberadresse** identisch. Wenn Ihre Organisation Remotebenutzer oder mehrere Niederlassungen hat, verwenden Sie die Adresse, an der sich die Mehrheit der Benutzer befindet.
 
-In den meisten Fällen sind diese Adressen identisch. Bei Bedarf können Sie eine oder mehrere Adressen ändern. Sie können auch eine alternative E-Mail-Adresse zum Empfang von Rechnungsbenachrichtigungen angeben, und die alternative E-Mail-Adresse für andere Administratoren ändern.
+In den meisten Fällen sind diese Adressen identisch. Bei Bedarf können Sie eine oder mehrere Adressen ändern. Sie können auch eine Alternative e-Mail-Adresse angeben, um Abrechnungs Benachrichtigungen zu erhalten und die Alternative e-Mail-Adresse für andere Administratoren zu ändern.
   
 ::: moniker range="o365-worldwide"
 
@@ -68,7 +68,6 @@ Weitere Informationen zu Ihrer Rechnung oder Rechnung finden Sie unter [Anzeigen
 Wenn Sie Office 365 betrieben von 21Vianet in China verwenden, finden Sie weitere Informationen unter [View your Bill oder Get Fapiaos for Office 365 operated by 21Vianet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).
 
 ::: moniker-end
-
 
 ## <a name="change-your-sold-to-address"></a>Ändern der Auftraggeberadresse
 
@@ -131,10 +130,9 @@ Wenn Sie Office 365 betrieben von 21Vianet in China verwenden, finden Sie weiter
 ::: moniker range="o365-worldwide"
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
-
-2. Suchen Sie das Abonnement, das Sie ändern möchten. Wählen Sie im Abschnitt **Einstellungen & Aktionen** die Option **Dienst Verwendungs Adresse bearbeiten**aus.
-
-3. Aktualisieren Sie im Bereich **Ihre Dienstnutzungsadresse bearbeiten** Ihre Adresse, und wählen Sie dann **Speichern**aus.
+2. Wählen Sie auf der Registerkarte **Produkte** das Abonnement aus, das Sie ändern möchten.
+3. Wählen Sie auf der Seite Abonnementdetails im Abschnitt **Dienstnutzungsadresse** die Option **Dienst Verwendungs Adresse bearbeiten**aus.
+4. Aktualisieren Sie im Bereich **Dienst Verwendungs Adresse bearbeiten** Ihre Adresse, und wählen Sie dann **Speichern**aus.
 
 ::: moniker-end
 
@@ -166,7 +164,7 @@ Wenn Sie Office 365 betrieben von 21Vianet in China verwenden, finden Sie weiter
 
 Standardmäßig werden die Abrechnungs Benachrichtigungen Ihrer Organisation an die Microsoft-e-Mail-Adresse und die Alternative e-Mail-Adresse jedes globalen und abrechnungsadministrators in Ihrer Organisation gesendet. Jeder Administrator kann seine eigene alternative E-Mail-Adresse durch Aktualisieren seiner Profilinformationen ändern.
   
-1. Melden Sie sich bei Microsoft 365 mit ihrem geschäftlichen oder Schulkonto als globaler Administrator an. [Hier erfahren Sie, wie Sie sich anmelden](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Melden Sie sich bei Microsoft 365 mit ihrem geschäftlichen oder Schulkonto als globaler Administrator an. [hier erfahren Sie, wie](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)Sie sich anmelden.
 
 2. Wählen Sie das **Benutzersymbol**aus, und wählen Sie dann **mein Konto**aus.
   

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,18 +16,15 @@ ms.collection:
 - commerce
 ms.custom: AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 ms.assetid: 75533195-f1f6-4c2c-8ceb-0b5597790d7b
 description: Erfahren Sie, wie Sie Ihr Testabonnement für einen weiteren Zeitraum von 30 Tagen verlängern.
-ms.openlocfilehash: 50f0548ddcd2eeef36a853cfb08b279cee8095a9
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c1c4134f944b07b177a92e03fc3e5ba2d9b362ef
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402154"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324316"
 ---
 # <a name="extend-your-trial"></a>Verlängern Ihrer Testversion
 
@@ -43,19 +40,16 @@ Benötigen Sie mehr Zeit, um die Features von Microsoft 365 for Business vor dem
 ::: moniker range="o365-worldwide"
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
-
-2. Suchen Sie auf der Seite **Ihre Produkte** nach dem Testabonnement, das Sie erweitern möchten. Wählen Sie im Abschnitt **Einstellungen & Aktionen** die Option **Testversion verlängern**aus.
-
-3. Überprüfen Sie die Erweiterungsinformationen, und ändern Sie gegebenenfalls Ihre Zahlungsmethode. Wenn Sie fertig sind, wählen Sie **Testversion verlängern**aus.
+2. Wählen Sie auf der Registerkarte **Produkte** das Testabonnement aus, das Sie erweitern möchten. 
+3. Wählen Sie auf der Seite Abonnementdetails im Abschnitt **Abonnements und Zahlungseinstellungen** die Option **Enddatum verlängern**aus.
+4. Überprüfen Sie im Bereich **Enddatum verlängern** die Erweiterungsinformationen, und wählen Sie gegebenenfalls eine Zahlungsmethode aus. Wenn Sie fertig sind, wählen Sie **Testversion verlängern**aus.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
-
 2. Wählen Sie auf der Seite **Abonnements** das Testabonnement aus, das Sie erweitern möchten, und wählen Sie dann unter Ablaufdatum die Option **Testversion verlängern**aus.
-
 3. Führen Sie die Schritte des Assistenten aus.
 
 ::: moniker-end
@@ -63,9 +57,7 @@ Benötigen Sie mehr Zeit, um die Features von Microsoft 365 for Business vor dem
 ::: moniker range="o365-21vianet"
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
-
 2. Wählen Sie auf der Seite **Abonnements** das Testabonnement aus, das Sie erweitern möchten, und wählen Sie dann unter Ablaufdatum die Option **Testversion verlängern**aus.
-
 3. Führen Sie die Schritte des Assistenten aus.
 
 ::: moniker-end

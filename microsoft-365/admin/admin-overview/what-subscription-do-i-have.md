@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,18 +18,15 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
-description: Erfahren Sie, wie Sie überprüfen, welche Abonnements Ihre Organisation hat, indem Sie zur Seite Abonnements wechseln.
-ms.openlocfilehash: fff76f1a9ac127d061460767a41941f4daf2ea32
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+description: Erfahren Sie, welche Abonnements Ihre Organisation hat, indem Sie auf die Seite Ihre Produkte wechseln.
+ms.openlocfilehash: bd7b7726c93ee6c5022df7ca72342d8d3b7a1c09
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780505"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324548"
 ---
 # <a name="what-subscription-do-i-have"></a>Welches Abonnement habe ich?
 
@@ -40,8 +37,9 @@ Wenn Sie Administrator sind, können Sie überprüfen, welche Abonnements Ihre O
 ::: moniker range="o365-worldwide"
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
-
-2. Ihre Abonnements werden auf der Seite **Ihre Produkte** zusammen mit dem Abonnement Namen, Informationen zum Abonnement und seinem Status angezeigt. Zum Anzeigen einer verkürzten Ansicht wählen Sie **Tabellenansicht**aus.
+2. Auf der Registerkarte " **Produkte** " werden alle Ihre Abonnements angezeigt. Jede Abonnementreihe enthält Informationen zu Lizenzen, zum Abonnementstatus und zur Abrechnung.
+3. Wenn Sie die Spalten ändern möchten, die in der Liste angezeigt werden, wählen Sie **Spalten auswählen**aus. Ändern Sie die Spaltenauswahl, und wählen Sie dann **Speichern**aus.
+4. Wenn Sie weitere Details zu einem einzelnen Abonnement anzeigen möchten, wählen Sie dieses Abonnement aus.
 
 ::: moniker-end
   

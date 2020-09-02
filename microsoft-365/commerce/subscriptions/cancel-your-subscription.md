@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,18 +16,15 @@ ms.collection:
 - commerce
 ms.custom: AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Hier erfahren Sie, wie Sie Ihre Microsoft 365 for Business-Testversion oder ein kostenpflichtiges Abonnement kündigen.
-ms.openlocfilehash: 746060596010fd80816e19dece093d91fe850c30
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.date: ''
+ms.openlocfilehash: 9669551101243f1abe760bf336d3472b50182555
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049748"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324279"
 ---
 # <a name="cancel-your-subscription"></a>Kündigen Ihres Abonnements
 
@@ -45,19 +42,22 @@ ms.locfileid: "45049748"
 > [!NOTE]
 > Wenn Sie mehrere Abonnements für dasselbe Produkt wie Microsoft 365 Business Premium haben, wirkt sich das Abbrechen eines dieser Produkte nicht auf die erworbenen Lizenzen oder Dienste innerhalb der anderen Abonnements aus.
 
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
+
+Sie müssen ein globaler oder abrechnungsadministrator sein, um die Aufgaben in diesem Artikel durchführen zu können. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
+
 ## <a name="steps-to-cancel-your-subscription"></a>Schritte zum Kündigen Ihres Abonnements
 
 Wenn Sie Ihren eigenen Domänennamen für die Nutzung mit Ihrem Abonnement hinzufügt haben, müssen Sie die Domäne entfernen, bevor Sie Ihr Abonnement kündigen. Weitere Informationen finden Sie unter [Entfernen einer Domäne](../../admin/get-help-with-domains/remove-a-domain.md).
 
 ::: moniker range="o365-worldwide"
 
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
+1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> , und wählen Sie dann die Registerkarte **Produkte** aus.
+2. Suchen Sie das Abonnement, das Sie abbrechen möchten. Wählen Sie **Weitere Aktionen** (drei Punkte) aus, und wählen Sie dann **Abonnement kündigen**aus.
+3. Wählen Sie im Bereich **Abonnement kündigen** einen Grund aus, warum Sie abbrechen möchten. Geben Sie optional Feedback ein.
+4. Klicken Sie auf **Speichern**.
 
-2. Suchen Sie das Abonnement, das Sie kündigen möchten, und wählen Sie unter **Einstellungen und Aktionen** die Option **Abonnement kündigen** aus.
-
-3. Überprüfen Sie die wichtigen Termine, geben Sie Feedback dazu, warum Sie Abbrechen, und wählen Sie dann **Abonnement kündigen**aus.
-
-    Ihr Abonnement wird jetzt mit dem Status **Deaktiviert** angezeigt und bietet nur noch eingeschränkte Funktionen, bis es gelöscht wird. Weitere Informationen darüber, was Sie erwarten können, wenn ein bezahltes Microsoft 365 for Business-Abonnement storniert wird, finden Sie unter [Was passiert mit meinen Daten und dem Zugriff, wenn mein Microsoft 365 Business-Abonnement endet?](what-if-my-subscription-expires.md)
+Ihr Abonnement wird jetzt mit dem Status **Deaktiviert** angezeigt und bietet nur noch eingeschränkte Funktionen, bis es gelöscht wird. Weitere Informationen darüber, was Sie erwarten können, wenn ein bezahltes Microsoft 365 for Business-Abonnement storniert wird, finden Sie unter [Was passiert mit meinen Daten und dem Zugriff, wenn mein Microsoft 365 Business-Abonnement endet?](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -73,7 +73,7 @@ Wenn Sie Ihren eigenen Domänennamen für die Nutzung mit Ihrem Abonnement hinzu
 
 4. Überprüfen Sie die wichtigen Termine, geben Sie Feedback dazu, warum Sie Abbrechen, und wählen Sie dann **Abonnement kündigen**aus.
 
-    Ihr Abonnement wird jetzt mit dem Status **Deaktiviert** angezeigt und bietet nur noch eingeschränkte Funktionen, bis es gelöscht wird. Weitere Informationen darüber, was Sie erwarten können, wenn ein bezahltes Microsoft 365 for Business-Abonnement storniert wird, finden Sie unter [Was passiert mit meinen Daten und dem Zugriff, wenn mein Microsoft 365 Business-Abonnement endet?](what-if-my-subscription-expires.md)
+    Ihr Abonnement wird nun im **deaktivierten** Zustand angezeigt und verfügt über eine eingeschränkte Funktionalität, bis es gelöscht wird. Weitere Informationen darüber, was Sie erwarten können, wenn ein bezahltes Microsoft 365 for Business-Abonnement storniert wird, finden Sie unter [Was passiert mit meinen Daten und dem Zugriff, wenn mein Microsoft 365 Business-Abonnement endet?](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -95,7 +95,9 @@ Wenn Sie Ihren eigenen Domänennamen für die Nutzung mit Ihrem Abonnement hinzu
 
 ## <a name="what-happens-when-you-cancel-a-subscription"></a>Was geschieht, wenn man ein Abonnement kündigt?
 
-Wenn Sie ein Abonnement vor Ablauf der Laufzeit kündigen, wird es direkt in den Status "Deaktiviert" versetzt. Der Status "Deaktiviert" dauert bei den meisten Abonnements, in den meisten Ländern und Regionen, 90 Tage. Administratoren können zwar weiterhin auf die Daten ihrer Organisation zugreifen und diese sichern, während sich das Abonnement im Status "Deaktiviert" befindet, es empfiehlt sich jedoch, dass sie [ihre Daten sichern](back-up-data-before-switching-plans.md), bevor sie das Abonnement kündigen, insbesondere, wenn es sich um das einzige Abonnement handelt. Sämtliche Daten, die zurückgelassen werden, könnten nach 90 Tagen gelöscht werden, werden aber spätestens 180 Tage nach der Kündigung gelöscht.
+Wenn Sie ein Abonnement vor dem Ende ihrer Laufzeit kündigen, wird der Abonnementstatus direkt in einen deaktivierten Status verschoben. Der Status "Deaktiviert" dauert bei den meisten Abonnements, in den meisten Ländern und Regionen, 90 Tage. Administratoren können zwar weiterhin auf die Daten ihrer Organisation zugreifen und diese sichern, während sich das Abonnement im Status "Deaktiviert" befindet, es empfiehlt sich jedoch, dass sie [ihre Daten sichern](back-up-data-before-switching-plans.md), bevor sie das Abonnement kündigen, insbesondere, wenn es sich um das einzige Abonnement handelt. Administratoren können das Abonnement auch wieder aktivieren, wenn es sich im Status "deaktiviert" befindet.
+
+Nachdem 90 lautet, wird das Abonnement in den Status "gelöscht" verschoben. Alle Daten, die Sie zurücklassen, werden möglicherweise gelöscht, nachdem diese 90 Tage spätestens 180 Tage nach dem Abbruch gelöscht wurden. Sie können eine Zahlungsmethode erst dann aus einem abgebrochenen Abonnement entfernen, wenn Sie den gelöschten Status erreicht hat.
 
 ### <a name="what-to-expect-for-you-and-your-users-if-you-cancel-a-subscription"></a>Mit Folgendem können Sie für sich und Ihre Benutzer rechnen, wenn Sie ein Abonnement kündigen:
   
@@ -146,10 +148,12 @@ Wenn die Kündigung wirksam wird, verlieren Ihre Benutzer den Zugriff auf ihre D
 
 Wenn Sie Ihr Abonnement storniert haben und [Benutzer nicht in ein anderes Abonnement](move-users-different-subscription.md) mit Microsoft 365 umgezogen haben, wird Microsoft 365 im Modus mit eingeschränkter Funktionalität ausgeführt. In diesem Fall können Benutzer nur Dokumente lesen und drucken, und Microsoft 365-Anwendungen zeigen nicht [lizenzierte Produktbenachrichtigungen](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)an. Um Verwirrung zu vermeiden, weisen Sie die Benutzer an, [Office von ihren Computern zu deinstallieren](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx).
 
-## <a name="related-articles"></a>Verwandte Artikel
+## <a name="next-steps"></a>Nächste Schritte
 
-[Verlängern Ihres Abonnements](renew-your-subscription.md)
+Wenn Sie Ihr Konto mit Microsoft vollständig schließen möchten, lesen Sie [Schließen Ihres Kontos](../close-your-account.md).
 
-[Verlängern oder Reaktivieren Ihres Abonnements](reactivate-your-subscription.md)
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Verschieben von Benutzern zu einem anderen Abonnement](move-users-different-subscription.md)
+[Erneuern Ihres Abonnements](renew-your-subscription.md) (Artikel) \
+[Reaktivieren Ihres Abonnements](reactivate-your-subscription.md) (Artikel) \
+[Migrieren von Benutzern zu einem anderen Abonnement](move-users-different-subscription.md) (Artikel)
