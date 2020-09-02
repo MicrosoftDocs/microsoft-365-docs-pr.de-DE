@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: Verwenden Sie die Inhaltssuche im Security & Compliance Center, um gezielte Sammlungen durchzuführen, die sicherstellen, dass sich die Elemente in einem bestimmten Postfach oder Standortordner befinden.
-ms.openlocfilehash: aa311d0f9226330d9f2d881af6dabbdc6d0a15b5
-ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
+ms.openlocfilehash: 179d893c153af337cf6b8b9ed633172e22cf208a
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46814537"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324581"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>Verwenden der Inhaltssuche für gezielte Sammlungen
 
@@ -33,38 +33,38 @@ Das Feature "Inhaltssuche" im Security &amp; Compliance Center bietet keine dire
 > [!NOTE]
 > Um Inhalte zurückzugeben, die sich in einem Ordner auf einer SharePoint-oder OneDrive für Unternehmen-Website befinden, verwendet das Skript in diesem Thema die verwaltete Eigenschaft DocumentLink anstelle der Path-Eigenschaft. Die DocumentLink-Eigenschaft ist robuster als die Path-Eigenschaft, da Sie alle Inhalte in einem Ordner zurückgibt, während die Path-Eigenschaft einige Mediendateien zurückgibt.
 
-## <a name="before-you-use-content-search"></a>Vor der Verwendung der Inhaltssuche
+## <a name="before-you-run-a-targeted-collection"></a>Vor dem Ausführen einer zielgerichteten Sammlung
 
 - Sie müssen Mitglied der Rollengruppe "eDiscovery-Manager" im Security &amp; Compliance Center sein, um das Skript in Schritt 1 auszuführen. Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen](assign-ediscovery-permissions.md).
-    
+
     Darüber hinaus müssen Sie der Rolle "e-Mail-Empfänger" in Ihrer Exchange Online Organisation zugewiesen sein. Dies ist erforderlich, um das **Get-MailboxFolderStatistics-** Cmdlet auszuführen, das in dem Skript in Schritt 1 enthalten ist. Standardmäßig ist die Rolle "e-Mail-Empfänger" der Rollengruppe "Organisationsverwaltung" und "Empfängerverwaltung" in Exchange Online zugewiesen. Weitere Informationen zum Zuweisen von Berechtigungen in Exchange Online finden Sie unter [Verwalten von Rollengruppenmitgliedern](https://go.microsoft.com/fwlink/p/?linkid=692102). Sie können auch eine benutzerdefinierte Rollengruppe erstellen, ihr die Rolle "e-Mail-Empfänger" zuweisen und dann die Mitglieder hinzufügen, die das Skript in Schritt 1 ausführen müssen. Weitere Informationen finden Sie unter [Verwalten von Rollengruppen](https://go.microsoft.com/fwlink/p/?linkid=730688).
-    
+
 - Jedes Mal, wenn Sie das Skript in Schritt 1 ausführen, wird eine neue Remote-PowerShell-Sitzung erstellt. Sie können also alle Remote-PowerShell-Sitzungen nutzen, die Ihnen zur Verfügung stehen. Um dies zu verhindern, können Sie den folgenden Befehl ausführen, um die Verbindung der aktiven Remote-PowerShell-Sitzungen zu trennen.
-    
+
   ```powershell
   Get-PSSession | Remove-PSSession
   ```
 
     Weitere Informationen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
-    
+
 - Das Skript enthält eine minimale Fehlerbehandlung. Der Hauptzweck des Skripts besteht darin, schnell eine Liste von Postfachordner-IDs oder Website Pfaden anzuzeigen, die in der Suchabfrage Syntax einer Inhaltssuche verwendet werden können, um eine gezielte Sammlung auszuführen.
-    
+
 - Das in diesem Thema bereitgestellte Beispielskript wird unter keinem Microsoft Standard Support Programm oder-Dienst unterstützt. Das Beispielskript wird ohne jegliche Gewährleistung bereitgestellt. Microsoft schließt ferner alle konkludenten Gewährleistungen, einschließlich, aber nicht beschränkt auf konkludente Gewährleistungen der Handelsüblichkeit oder Eignung für einen bestimmten Zweck aus. Das gesamte Risiko, das aus der Verwendung oder der Leistung des Beispielskripts und der Dokumentation erwachsen, bleibt bei Ihnen. In keinem Fall sind Microsoft, seine Autoren oder an der Erstellung, Produktion oder Übermittlung der Skripts beteiligte Personen für Schäden jeglicher Art (einschließlich und ohne Einschränkung Schäden durch Verlust entgangener Gewinne, Geschäftsunterbrechungen, Verlust von Geschäftsinformationen oder andere geldliche Verluste) haftbar, die aus der Nutzung bzw. Unfähigkeit zur Nutzung der Beispielskripts oder Dokumentation entstehen, auch wenn Microsoft auf die Möglichkeit solcher Schäden hingewiesen wurde.
   
 ## <a name="step-1-run-the-script-to-get-a-list-of-folders-for-a-mailbox-or-site"></a>Schritt 1: Ausführen des Skripts zum Abrufen einer Liste von Ordnern für ein Postfach oder eine Website
 
 Das Skript, das Sie in diesem ersten Schritt ausführen, gibt eine Liste der Postfachordner oder SharePoint-und OneDrive für Unternehmen-Ordner sowie die entsprechende Ordner-ID oder den entsprechenden Pfad für jeden Ordner zurück. Wenn Sie dieses Skript ausführen, werden Sie aufgefordert, die folgenden Informationen einzugeben.
   
-- **E-Mail-Adresse oder Website-URL** Geben Sie eine e-Mail-Adresse der Depotbank ein, um eine Liste der Exchange-Postfachordner und Ordner-IDs zurückzugeben. Oder geben Sie die URL für eine SharePoint-Website oder eine OneDrive für Unternehmen Website ein, um eine Liste der Pfade für die angegebene Website zurückzugeben. Im Folgenden finden Sie einige Beispiele: 
-    
-  - **Exchange** -stacig@contoso.onmicrosoft.com 
-    
-  - **Share** - https://contoso.sharepoint.com/sites/marketing 
-    
-  - **OneDrive für Unternehmen** - https://contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com 
-    
-- **Ihre Benutzeranmeldeinformationen** – das Skript verwendet Ihre Anmeldeinformationen, um eine Verbindung mit Exchange Online und dem Security & Compliance Center mit Remote-PowerShell herzustellen. Wie bereits erläutert, müssen Sie die entsprechenden Berechtigungen für die erfolgreiche Ausführung dieses Skripts zugewiesen haben.
-    
+- **E-Mail-Adresse oder Website-URL**: Geben Sie eine e-Mail-Adresse der Depotbank ein, um eine Liste der Exchange-Postfachordner und Ordner-IDs zurückzugeben. Oder geben Sie die URL für eine SharePoint-Website oder eine OneDrive für Unternehmen Website ein, um eine Liste der Pfade für die angegebene Website zurückzugeben. Im Folgenden finden Sie einige Beispiele:
+
+  - **Exchange**: stacig@contoso.onmicrosoft.com 
+
+  - **SharePoint**: https://contoso.sharepoint.com/sites/marketing 
+
+  - **OneDrive für Unternehmen**: https://contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com 
+
+- **Ihre Benutzeranmeldeinformationen**: das Skript verwendet Ihre Anmeldeinformationen, um eine Verbindung mit Exchange Online und dem Security & Compliance Center mit Remote-PowerShell herzustellen. Wie bereits erläutert, müssen Sie die entsprechenden Berechtigungen für die erfolgreiche Ausführung dieses Skripts zuweisen.
+
 So zeigen Sie eine Liste der Postfachordner oder Website documentlink (path) Namen an:
   
 1. Speichern Sie den folgenden Text in einer Windows PowerShell Skriptdatei unter Verwendung eines filename-Suffixes von. ps1; Beispiel: `GetFolderSearchParameters.ps1` .
@@ -181,17 +181,17 @@ So zeigen Sie eine Liste der Postfachordner oder Website documentlink (path) Nam
    ```
 
 2. Öffnen Sie auf dem lokalen Computer Windows PowerShell, und wechseln Sie zu dem Ordner, in dem Sie das Skript gespeichert haben.
-    
+
 3. Ausführen des Skripts; Zum Beispiel:
-    
+
    ```powershell
    .\GetFolderSearchParameters.ps1
    ```
 
 4. Geben Sie die Informationen ein, die Sie vom Skript angefordert haben.
-    
+
     Das Skript zeigt eine Liste von Postfachordnern oder Websiteordnern für den angegebenen Benutzer an. Lassen Sie dieses Fenster geöffnet, damit Sie einen Ordner-ID-oder documentlink-Namen kopieren und in einer Suchabfrage in Schritt 2 einfügen können.
-    
+
     > [!TIP]
     > Anstatt eine Liste von Ordnern auf dem Computerbildschirm anzuzeigen, können Sie die Ausgabe des Skripts erneut an eine Textdatei weiterleiten. Diese Datei wird in dem Ordner gespeichert, in dem sich das Skript befindet. Um beispielsweise die Skriptausgabe in eine Textdatei umzuleiten, führen Sie den folgenden Befehl in Schritt 3  `.\GetFolderSearchParameters.ps1 > StacigFolderIds.txt` aus: dann können Sie eine Ordner-ID oder documentlink aus der Datei kopieren, die in einer Suchabfrage verwendet werden soll.
   
@@ -218,58 +218,58 @@ Im folgenden finden Sie ein Beispiel für die vom Skript für Websiteordner zur�
   
 ## <a name="step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection"></a>Schritt 2: Verwenden einer Ordner-ID oder documentlink zum Durchführen einer zielgerichteten Sammlung
 
-Nachdem Sie das Skript ausgeführt haben, um eine Liste der Ordner-IDs oder documentlinks für einen bestimmten Benutzer zu sammeln, gehen Sie im nächsten Schritt zum Security & Compliance Center, und erstellen Sie eine neue Inhaltssuche, um einen bestimmten Ordner zu durchsuchen. Sie verwenden das-  `folderid:<folderid>` oder  `documentlink:<path>` -Eigenschaft: Value-Paar in der Suchabfrage, die Sie im Feld Schlüsselwort für die Inhaltssuche konfigurieren (oder als Wert für den Parameter  *ContentMatchQuery*  , wenn Sie das Cmdlet **New-ComplianceSearch** verwenden). Sie können die  `folderid` Eigenschaft oder  `documentlink` mit anderen Suchparametern oder Suchbedingungen kombinieren. Wenn Sie nur die  `folderid` oder  `documentlink` -Eigenschaft in die Abfrage einbeziehen, gibt die Suche alle Elemente zurück, die sich im angegebenen Ordner befinden. 
+Nachdem Sie das Skript ausgeführt haben, um eine Liste der Ordner-IDs oder Dokumentverknüpfungen für einen bestimmten Benutzer zu sammeln, gehen Sie im nächsten Schritt zum Security & Compliance Center, und erstellen Sie eine neue Inhaltssuche, um einen bestimmten Ordner zu durchsuchen. Sie verwenden das-  `folderid:<folderid>` oder  `documentlink:<path>` -Eigenschaft: Value-Paar in der Suchabfrage, die Sie im Feld Schlüsselwort für die Inhaltssuche konfigurieren (oder als Wert für den Parameter  *ContentMatchQuery*  , wenn Sie das Cmdlet **New-ComplianceSearch** verwenden). Sie können die  `folderid` Eigenschaft oder  `documentlink` mit anderen Suchparametern oder Suchbedingungen kombinieren. Wenn Sie nur die  `folderid` oder  `documentlink` -Eigenschaft in die Abfrage einbeziehen, gibt die Suche alle Elemente zurück, die sich im angegebenen Ordner befinden.
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
-    
+
 2. Melden Sie sich mit dem Konto und den Anmeldeinformationen an, die Sie zum Ausführen des Skripts in Schritt 1 verwendet haben.
-    
+
 3. Klicken Sie im linken Bereich des Security & Compliance Centers auf **Such** \> **Inhaltssuche**, und klicken Sie dann auf **Neues** ![ Symbol hinzufügen ](../media/O365-MDM-CreatePolicy-AddIcon.gif) .
-    
+
 4. Geben Sie auf der Seite **Neue Suche** einen Namen für die Inhaltssuche ein. Dieser Name muss in der Organisation eindeutig sein. 
-    
+
 5. Führen Sie einen der folgenden Schritte aus, je nachdem, ob Sie einen Postfachordner oder einen Websiteordner **durch**suchen:
-    
-    - Klicken Sie auf **bestimmte Postfächer für die Suche auswählen** , und fügen Sie dann das gleiche Postfach hinzu, das Sie beim Ausführen des Skripts in Schritt 1 angegeben haben. 
-    
+
+    - Klicken Sie auf **bestimmte Postfächer für die Suche auswählen** , und fügen Sie dann das gleiche Postfach hinzu, das Sie beim Ausführen des Skripts in Schritt 1 angegeben haben.
+
       Oder:
-    
-    - Klicken Sie auf **bestimmte Websites für** die Suche auswählen, und fügen Sie dann die gleiche Website-URL hinzu, die Sie beim Ausführen des Skripts in Schritt 1 angegeben haben. 
-    
+
+    - Klicken Sie auf **bestimmte Websites zum Durchsuchen auswählen** , und fügen Sie dann die gleiche Website-URL hinzu, die Sie beim Ausführen des Skripts in Schritt 1 angegeben haben.
+
 6. Klicken Sie auf **Weiter**.
-    
+
 7. Fügen Sie in das Feld Stichwort auf der Seite **Was möchten Sie** , dass wir nach Seiten suchen die oder-Werte ein, die  `folderid:<folderid>`  `documentlink:<path>` von dem Skript in Schritt 1 zurückgegeben wurden. 
-    
+
     Die Abfrage im folgenden Screenshot sucht beispielsweise im Ordner "Wiederherstellbare Elemente" des Benutzers nach einem beliebigen Element im Ordner "purges" (der Wert der `folderid` Eigenschaft für den Ordner "purges" ist im Screenshot in Schritt 1 dargestellt):
-    
+
     ![Fügen Sie die Ordner-oder documentlink in das Feld Stichwort der Suchabfrage ein.](../media/84057516-b663-48a4-a78f-8032a8f8da80.png)
   
 8. Klicken Sie auf **Suchen** , um die gezielte Sammlungs Suche zu starten. 
   
 ### <a name="examples-of-search-queries-for-targeted-collections"></a>Beispiele für Suchabfragen für gezielte Auflistungen
 
-Im folgenden finden Sie einige Beispiele für die Verwendung der  `folderid` and-  `documentlink` Eigenschaften in einer Suchabfrage, um eine gezielte Sammlung auszuführen. Beachten Sie, dass Platzhalter verwendet werden  `folderid:<folderid>` und  `documentlink:<path>` um Platz zu sparen. 
+Im folgenden finden Sie einige Beispiele für die Verwendung der  `folderid` and-  `documentlink` Eigenschaften in einer Suchabfrage, um eine gezielte Sammlung auszuführen. Platzhalter werden für  `folderid:<folderid>` und  `documentlink:<path>` zum Speichern von Speicherplatz verwendet. 
   
 - In diesem Beispiel werden drei verschiedene Postfachordner durchsucht. Sie können ähnliche Abfragesyntax verwenden, um die ausgeblendeten Ordner im Ordner "refundable Items" eines Benutzers zu durchsuchen.
-    
+
   ```powershell
   folderid:<folderid> OR folderid:<folderid> OR folderid:<folderid>
   ```
 
 - In diesem Beispiel wird ein Postfachordner nach Elementen durchsucht, die einen genauen Ausdruck enthalten.
-    
+
   ```powershell
   folderid:<folderid> AND "Contoso financial results"
   ```
 
 - In diesem Beispiel wird ein Websiteordner (und alle Unterordner) nach Dokumenten durchsucht, die die Buchstaben "NDA" im Titel enthalten.
-    
+
   ```powershell
   documentlink:<path> AND filename:nda
   ```
 
 - In diesem Beispiel wird ein Websiteordner (und ein beliebiger Unterordner) nach Dokumenten durchsucht, die innerhalb eines Datumsbereichs geändert wurden.
-    
+
   ```powershell
   documentlink:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
@@ -278,12 +278,12 @@ Im folgenden finden Sie einige Beispiele für die Verwendung der  `folderid` and
 
 Beachten Sie Folgendes, wenn Sie das Skript in diesem Artikel verwenden, um gezielte Sammlungen durchzuführen.
   
-- Das Skript entfernt keine Ordner aus den Ergebnissen. Einige in den Ergebnissen aufgeführte Ordner sind möglicherweise nicht durchsuchbar (oder geben keine Elemente zurück), da Sie vom System generierte Inhalte enthalten.
-    
-- Dieses Skript gibt nur Ordnerinformationen für das primäre Postfach des Benutzers zurück. Es werden keine Informationen zu Ordnern im Archivpostfach des Benutzers zurückgegeben.
-    
-- Beim Durchsuchen von Postfachordnern wird nur der angegebene Ordner durchsucht, der durch seine  `folderid` Eigenschaft identifiziert wird; Unterordner werden nicht durchsucht. Zum Durchsuchen von Unterordnern müssen Sie die Ordner-ID für den Unterordner verwenden, den Sie durchsuchen möchten. 
-    
-- Beim Durchsuchen von Websiteordnern wird der Ordner (identifiziert durch seine  `documentlink` Eigenschaft) und alle Unterordner durchsucht. 
-    
+- Das Skript entfernt keine Ordner aus den Ergebnissen. Einige in den Ergebnissen aufgeführte Ordner sind möglicherweise nicht durchsuchbar (oder geben keine Elemente zurück), da Sie vom System generierte Inhalte enthalten oder nur Unterordner und keine Postfachelemente enthalten.
+
+- Dieses Skript gibt nur Ordnerinformationen für das primäre Postfach des Benutzers zurück. Es werden keine Informationen zu Ordnern im Archivpostfach des Benutzers zurückgegeben. Wenn Sie Informationen zu Ordnern im Archivpostfach des Benutzers zurückgeben möchten, können Sie das Skript bearbeiten. Ändern Sie dazu die Leitung in, `$folderStatistics = Get-MailboxFolderStatistics $emailAddress` `$folderStatistics = Get-MailboxFolderStatistics $emailAddress -Archive` und speichern und führen Sie dann das bearbeitete Skript aus. Durch diese Änderung werden die Ordner-IDs für Ordner und Unterordner im Archivpostfach des Benutzers zurückgegeben. Zum Durchsuchen des gesamten Archivpostfachs können Sie alle Ordner-ID-Eigenschaft: Wert-Paare mit einem `OR` Operator in einer Suchabfrage verbinden.
+
+- Beim Durchsuchen von Postfachordnern wird nur der angegebene Ordner durchsucht, der durch seine `folderid` Eigenschaft identifiziert wird; Unterordner werden nicht durchsucht. Zum Durchsuchen von Unterordnern müssen Sie die Ordner-ID für den Unterordner verwenden, den Sie durchsuchen möchten.
+
+- Beim Durchsuchen von Websiteordnern wird der Ordner (identifiziert durch seine `documentlink` Eigenschaft) und alle Unterordner durchsucht. 
+
 - Wenn Sie die Ergebnisse einer Suche exportieren, in der Sie die `folderid` Eigenschaft nur in der Suchabfrage angegeben haben, können Sie die erste Exportoption auswählen: "alle Elemente, ausgenommen diejenigen, die ein nicht erkanntes Format haben, werden verschlüsselt oder aus anderen Gründen nicht indiziert." Alle Elemente im Ordner werden unabhängig von Ihrem Indizierungsstatus immer exportiert, da die Ordner-ID immer indiziert ist.

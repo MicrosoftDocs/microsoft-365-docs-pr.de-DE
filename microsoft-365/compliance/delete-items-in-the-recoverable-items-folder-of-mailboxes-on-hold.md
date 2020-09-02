@@ -1,5 +1,5 @@
 ---
-title: Löschen von Elementen im Ordner "Cloud Mailbox" in "Wiederherstellbare Elemente speichern"
+title: Elemente im Ordner "Wiederherstellbare Elemente" des Cloud-Postfachs in der Warteschleife löschen
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,20 +16,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
-description: Hier erfahren Sie, wie Sie Elemente im Ordner "Wiederherstellbare Elemente" eines Benutzers für ein Exchange Online Postfach löschen, selbst wenn das Postfach legal aufbewahrt wird.
+description: Erfahren Sie, wie Administratoren Elemente im Ordner "Wiederherstellbare Elemente" eines Benutzers für ein Exchange Online Postfach löschen können, selbst wenn das Postfach legal aufbewahrt wird.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9b4338784602826694b4683f3d000391592547a8
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 52cfe237bb05bc151058a41914af5725bdacee18
+ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127022"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47321962"
 ---
-# <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Löschen von Elementen im Ordner "Wiederherstellbare Elemente" von cloudbasierten Postfächern in der Warteschleife – Administratorhilfe
+# <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>Löschen von Elementen im Ordner „Wiederherstellbare Elemente“ für cloudbasierte aufzubewahrende Postfächer
 
-Der Ordner "refundable Items" für ein Exchange Online Postfach ist vorhanden, um vor versehentlichen oder böswilligen Löschungen zu schützen. Es wird auch verwendet, um Elemente zu speichern, die von Compliance-Features wie Holds und eDiscovery-suchen aufbewahrt werden und auf die zugegriffen werden kann. In einigen Situationen können Organisationen jedoch Daten haben, die versehentlich im Ordner "Wiederherstellbare Elemente" aufbewahrt werden, den Sie löschen müssen. Beispielsweise kann ein Benutzer unwissentlich eine e-Mail-Nachricht senden oder weiterleiten, die vertrauliche Informationen oder Informationen enthält, die möglicherweise schwerwiegende geschäftliche Konsequenzen haben. Selbst wenn die Nachricht dauerhaft gelöscht wird, kann Sie auf unbestimmte Zeit aufbewahrt werden, da im Postfach ein rechtlicher Aufbewahrungsplatz gespeichert wurde. Dieses Szenario wird als Datenüberlauf bezeichnet, da Daten versehentlich in Office 365 verschüttet wurden. In diesen Situationen können Sie Elemente im Ordner "Wiederherstellbare Elemente" eines Benutzers für ein Exchange Online Postfach löschen, auch wenn das Postfach mit einem der unterschiedlichen Hold-Features in Office 365 in den Haltestatus versetzt wird. Zu diesen Aufbewahrungsarten zählen Beweissicherungsverfahren, in-Place-Speicher, eDiscovery-Haltestatus und im Security and Compliance Center in Office 365 oder Microsoft 365 erstellte Aufbewahrungsrichtlinien.
+Der Ordner "refundable Items" für ein Exchange Online Postfach ist vorhanden, um vor versehentlichen oder böswilligen Löschungen zu schützen. Es wird auch verwendet, um Elemente zu speichern, die von Compliance-Features wie Holds und eDiscovery-suchen aufbewahrt werden und auf die zugegriffen werden kann. In einigen Situationen können Organisationen jedoch Daten haben, die versehentlich im Ordner "Wiederherstellbare Elemente" aufbewahrt werden, den Sie löschen müssen. Beispielsweise kann ein Benutzer unwissentlich eine e-Mail-Nachricht senden oder weiterleiten, die vertrauliche Informationen oder Informationen enthält, die möglicherweise schwerwiegende geschäftliche Konsequenzen haben. Selbst wenn die Nachricht dauerhaft gelöscht wird, kann Sie auf unbestimmte Zeit aufbewahrt werden, da im Postfach ein rechtlicher Aufbewahrungsplatz gespeichert wurde. Dieses Szenario wird als *Datenüberlauf* bezeichnet, da Daten versehentlich in Office 365 *verschüttet* wurden. In diesen Situationen können Sie Elemente im Ordner "Wiederherstellbare Elemente" eines Benutzers für ein Exchange Online Postfach löschen, auch wenn das Postfach mit einem der unterschiedlichen Hold-Features in Office 365 in den Haltestatus versetzt wird. Zu diesen Aufbewahrungsarten zählen Beweissicherungsverfahren, in-Place-Speicher, eDiscovery-Haltestatus und im Security and Compliance Center in Office 365 oder Microsoft 365 erstellte Aufbewahrungsrichtlinien.
   
- In diesem Artikel wird erläutert, wie Sie Elemente aus dem Ordner "Wiederherstellbare Elemente" für in der Warteschleife verhaltene Cloud-basierte Postfächer löschen. Dieses Verfahren umfasst das Deaktivieren des Zugriffs auf das Postfach und das Deaktivieren der Wiederherstellung einzelner Elemente, das Deaktivieren des Assistenten für verwaltete Ordner für die Verarbeitung des Postfachs, das vorübergehende Entfernen des haltebereichs, das Löschen von Elementen aus dem Ordner "Wiederherstellbare Elemente" und das anschließende Zurücksetzen des Postfachs auf die vorherige Konfiguration. Hier ist der Prozess: 
+ In diesem Artikel wird erläutert, wie Administratoren Elemente aus dem Ordner "Wiederherstellbare Elemente" für in der Warteschleife verhaltene cloudbasierten Postfächer löschen können. Dieses Verfahren umfasst das Deaktivieren des Zugriffs auf das Postfach und das Deaktivieren der Wiederherstellung einzelner Elemente, das Deaktivieren des Assistenten für verwaltete Ordner für die Verarbeitung des Postfachs, das vorübergehende Entfernen des haltebereichs, das Löschen von Elementen aus dem Ordner "Wiederherstellbare Elemente" und das anschließende Zurücksetzen des Postfachs auf die vorherige Konfiguration. Hier ist der Prozess:
   
 [Schritt 1: Erfassen von Informationen zum Postfach](#step-1-collect-information-about-the-mailbox)
 
@@ -44,7 +44,7 @@ Der Ordner "refundable Items" für ein Exchange Online Postfach ist vorhanden, u
 [Schritt 6: Zurücksetzen des Postfachs in den vorherigen Zustand](#step-6-revert-the-mailbox-to-its-previous-state)
   
 > [!CAUTION]
-> Die in diesem Artikel beschriebenen Verfahren führen dazu, dass Daten endgültig aus einem Exchange Online Postfach gelöscht (bereinigt) werden. Das bedeutet, dass Nachrichten, die Sie aus dem Ordner "Wiederherstellbare Elemente" löschen, nicht wiederhergestellt werden können und nicht für rechtliche Ermittlungen oder andere Compliance-Zwecke zur Verfügung stehen. Wenn Sie Nachrichten aus einem Postfach löschen möchten, das im Rahmen eines beweissicherungsverfahrens, eines Compliance-Archivs, eines eDiscovery-Speichers oder einer im Security and Compliance Center erstellten Aufbewahrungsrichtlinie aufbewahrt wird, erkundigen Sie sich vor dem Entfernen des Haltestatus mit ihrer Datensatzverwaltung oder den Rechtsabteilungen. Ihre Organisation verfügt möglicherweise über eine Richtlinie, die definiert, ob ein aufbewahrtes Postfach oder ein Vorfall mit Datenüberlauf Vorrang hat. 
+> Die in diesem Artikel beschriebenen Verfahren führen dazu, dass Daten endgültig aus einem Exchange Online Postfach gelöscht (bereinigt) werden. Das bedeutet, dass Nachrichten, die Sie aus dem Ordner "Wiederherstellbare Elemente" löschen, nicht wiederhergestellt werden können und nicht für rechtliche Ermittlungen oder andere Compliance-Zwecke zur Verfügung stehen. Wenn Sie Nachrichten aus einem Postfach löschen möchten, das im Rahmen eines beweissicherungsverfahrens, eines Compliance-Archivs, eines eDiscovery-Speichers oder einer im Security and Compliance Center erstellten Aufbewahrungsrichtlinie aufbewahrt wird, erkundigen Sie sich vor dem Entfernen des Haltestatus mit ihrer Datensatzverwaltung oder den Rechtsabteilungen. Ihre Organisation verfügt möglicherweise über eine Richtlinie, die definiert, ob ein aufbewahrtes Postfach oder ein Vorfall mit Datenüberlauf Vorrang hat.
   
 ## <a name="before-you-delete-items"></a>Vor dem Löschen von Elementen
 
@@ -60,52 +60,51 @@ Der Ordner "refundable Items" für ein Exchange Online Postfach ist vorhanden, u
 
 In diesem ersten Schritt werden ausgewählte Eigenschaften aus dem Zielpostfach gesammelt, die sich auf diese Prozedur auswirken. Achten Sie darauf, diese Einstellungen zu notieren oder in einer Textdatei zu speichern, da Sie einige dieser Eigenschaften ändern und dann wieder zu den ursprünglichen Werten in Schritt 6 zurückkehren, nachdem Sie Elemente aus dem Ordner "Wiederherstellbare Elemente" gelöscht haben. Im folgenden finden Sie eine Liste der Postfacheigenschaften, die Sie erfassen müssen.
   
-- *SingleItemRecoveryEnabled* und *Parameter RetainDeletedItemsFor*. Bei Bedarf können Sie die einzelne Wiederherstellung deaktivieren und den Aufbewahrungszeitraum für gelöschte Elemente in Schritt 3 verbessern. 
+- *SingleItemRecoveryEnabled*  und  *Parameter RetainDeletedItemsFor*. Bei Bedarf können Sie die einzelne Wiederherstellung deaktivieren und den Aufbewahrungszeitraum für gelöschte Elemente in Schritt 3 verbessern.
 
-- *LitigationHoldEnabled* und *InPlaceHolds*. Sie müssen alle auf dem Postfach angeordneten haltebereiche identifizieren, damit Sie Sie in Schritt 3 vorübergehend entfernen können. Im Abschnitt [Weitere Informationen](#more-information) finden Sie Tipps zum Identifizieren des Typs Hold, der möglicherweise in einem Postfach gespeichert wird. 
+- *LitigationHoldEnabled*  und  *InPlaceHolds*. Sie müssen alle auf dem Postfach angeordneten haltebereiche identifizieren, damit Sie Sie in Schritt 3 vorübergehend entfernen können. Im Abschnitt [Weitere Informationen](#more-information) finden Sie Tipps zum Identifizieren des Typs Hold, der möglicherweise in einem Postfach gespeichert wird.
 
 Darüber hinaus müssen Sie die Einstellungen für den Post Fach Clientzugriff abrufen, sodass Sie Sie vorübergehend deaktivieren können, sodass der Besitzer (oder andere Benutzer) während dieses Verfahrens nicht auf das Postfach zugreifen kann. Schließlich können Sie die aktuelle Größe und Anzahl der Elemente im Ordner "Wiederherstellbare Elemente" abrufen. Nachdem Sie Elemente im Ordner "Wiederherstellbare Elemente" in Schritt 5 gelöscht haben, verwenden Sie diese Informationen, um zu überprüfen, ob Elemente entfernt wurden.
   
-1. [Stellen Sie eine Verbindung mit Exchange Online PowerShell her](https://go.microsoft.com/fwlink/?linkid=396554). Achten Sie darauf, einen Benutzernamen und ein Kennwort für ein Administratorkonto zu verwenden, dem in Exchange Online die entsprechenden Verwaltungsrollen zugewiesen wurden. 
-    
+1. [Stellen Sie eine Verbindung mit Exchange Online PowerShell her](https://go.microsoft.com/fwlink/?linkid=396554). Achten Sie darauf, einen Benutzernamen und ein Kennwort für ein Administratorkonto zu verwenden, dem in Exchange Online die entsprechenden Verwaltungsrollen zugewiesen wurden.
+
 2. Führen Sie den folgenden Befehl aus, um Informationen zur Wiederherstellung einzelner Elemente und zum Aufbewahrungszeitraum für gelöschte Elemente abzurufen.
 
     ```powershell
     Get-Mailbox <username> | FL SingleItemRecoveryEnabled,RetainDeletedItemsFor
     ```
 
-   Wenn die Wiederherstellung einzelner Elemente aktiviert ist, müssen Sie Sie in Schritt 2 deaktivieren. Wenn der Aufbewahrungszeitraum für gelöschte Elemente für 30 Tage (der Höchstwert in Exchange Online) nicht festgelegt ist, können Sie ihn in Schritt 2 vergrössern. 
-    
-3. Führen Sie den folgenden Befehl aus, um die Postfachzugriffs Einstellungen für das Postfach abzurufen. 
-    
+   Wenn die Wiederherstellung einzelner Elemente aktiviert ist, müssen Sie Sie in Schritt 2 deaktivieren. Wenn der Aufbewahrungszeitraum für gelöschte Elemente für 30 Tage (der Höchstwert in Exchange Online) nicht festgelegt ist, können Sie ihn in Schritt 2 vergrössern.
+
+3. Führen Sie den folgenden Befehl aus, um die Postfachzugriffs Einstellungen für das Postfach abzurufen.
+
     ```powershell
     Get-CASMailbox <username> | FL EwsEnabled,ActiveSyncEnabled,MAPIEnabled,OWAEnabled,ImapEnabled,PopEnabled
     ```
 
    In Schritt 2 deaktivieren Sie alle diese Zugriffsmethoden.
-    
+
 4. Führen Sie den folgenden Befehl aus, um Informationen zu den auf das Postfach angewendeten Haltestatus-und Aufbewahrungsrichtlinien abzurufen.
-    
+
     ```powershell
     Get-Mailbox <username> | FL LitigationHoldEnabled,InPlaceHolds
     ```
 
-
    > [!TIP]
-    > Wenn die *InPlaceHolds* -Eigenschaft zu viele Werte enthält und nicht alle angezeigt werden, können Sie den `Get-Mailbox <username> | Select-Object -ExpandProperty InPlaceHolds` Befehl ausführen, um jeden Wert in einer separaten Zeile anzuzeigen. 
+    > Wenn die  *InPlaceHolds*  -Eigenschaft zu viele Werte enthält und nicht alle angezeigt werden, können Sie den  `Get-Mailbox <username> | Select-Object -ExpandProperty InPlaceHolds` Befehl ausführen, um jeden Wert in einer separaten Zeile anzuzeigen.
   
 5. Führen Sie den folgenden Befehl aus, um Informationen zu organisationsweiten Aufbewahrungsrichtlinien zu erhalten. 
 
     ```powershell
     Get-OrganizationConfig | FL InPlaceHolds
     ```
-   
+
    Wenn Ihre Organisation über eine unternehmensweite Aufbewahrungsrichtlinie verfügt, müssen Sie das Postfach in Schritt 3 von diesen Richtlinien ausschließen.
 
    > [!TIP]
-    > Wenn die *InPlaceHolds* -Eigenschaft zu viele Werte enthält und nicht alle angezeigt werden, können Sie den `Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds` Befehl ausführen, um jeden Wert in einer separaten Zeile anzuzeigen. 
+    > Wenn die  *InPlaceHolds*  -Eigenschaft zu viele Werte enthält und nicht alle angezeigt werden, können Sie den  `Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds` Befehl ausführen, um jeden Wert in einer separaten Zeile anzuzeigen. 
   
-6. Führen Sie den folgenden Befehl aus, um die aktuelle Größe und Gesamtzahl der Elemente in Ordnern und Unterordnern im Ordner "Wiederherstellbare Elemente" im primären Postfach des Benutzers abzurufen. 
+6. Führen Sie den folgenden Befehl aus, um die aktuelle Größe und Gesamtzahl der Elemente in Ordnern und Unterordnern im Ordner "Wiederherstellbare Elemente" im primären Postfach des Benutzers abzurufen.
 
     ```powershell
     Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
@@ -113,7 +112,7 @@ Darüber hinaus müssen Sie die Einstellungen für den Post Fach Clientzugriff a
 
    Wenn das Archivpostfach des Benutzers aktiviert ist, führen Sie den folgenden Befehl aus, um die Größe und die Gesamtzahl der Elemente in Ordnern und Unterordnern im Ordner "Wiederherstellbare Elemente" in Ihrem Archivpostfach abzurufen. 
 
-    ```s
+    ```powershell
     Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
     ```
 
@@ -121,35 +120,35 @@ Darüber hinaus müssen Sie die Einstellungen für den Post Fach Clientzugriff a
   
 ## <a name="step-2-prepare-the-mailbox"></a>Schritt 2: Vorbereiten des Postfachs
 
-Nach dem sammeln und Speichern von Informationen über das Postfach besteht der nächste Schritt darin, das Postfach durch Ausführen der folgenden Aufgaben vorzubereiten: 
+Nach dem sammeln und Speichern von Informationen über das Postfach besteht der nächste Schritt darin, das Postfach durch Ausführen der folgenden Aufgaben vorzubereiten:
   
-- **Deaktivieren Sie den Clientzugriff auf das Postfach** , sodass der Postfachbesitzer während dieses Verfahrens nicht auf sein Postfach zugreifen und Änderungen an den Postfachdaten vornehmen kann. 
-    
-- **Erweitern Sie den Aufbewahrungszeitraum für gelöschte Elemente** auf 30 Tage (der Höchstwert in Exchange Online), sodass Elemente nicht aus dem Ordner "Wiederherstellbare Elemente" gelöscht werden, bevor Sie Sie in Schritt 5 löschen können. 
-    
-- **Deaktivieren Sie die Wiederherstellung einzelner** Elemente, sodass Elemente (während der Dauer des Aufbewahrungszeitraums für gelöschte Elemente) nicht aufbewahrt werden, nachdem Sie Sie aus dem Ordner "Wiederherstellbare Elemente" in Schritt 5 gelöscht haben. 
-    
-- **Deaktivieren Sie den Assistenten für verwaltete Ordner** , sodass das Postfach nicht verarbeitet wird und die in Schritt 5 gelöschten Elemente beibehalten werden. 
-    
+- **Deaktivieren Sie den Clientzugriff auf das Postfach** , sodass der Postfachbesitzer während dieses Verfahrens nicht auf sein Postfach zugreifen und Änderungen an den Postfachdaten vornehmen kann.
+
+- **Erweitern Sie den Aufbewahrungszeitraum für gelöschte Elemente** auf 30 Tage (der Höchstwert in Exchange Online), sodass Elemente nicht aus dem Ordner "Wiederherstellbare Elemente" gelöscht werden, bevor Sie Sie in Schritt 5 löschen können.
+
+- **Deaktivieren Sie die Wiederherstellung einzelner** Elemente, sodass Elemente (während der Dauer des Aufbewahrungszeitraums für gelöschte Elemente) nicht aufbewahrt werden, nachdem Sie Sie aus dem Ordner "Wiederherstellbare Elemente" in Schritt 5 gelöscht haben.
+
+- **Deaktivieren Sie den Assistenten für verwaltete Ordner** , sodass das Postfach nicht verarbeitet wird und die in Schritt 5 gelöschten Elemente beibehalten werden.
+
 Führen Sie die folgenden Schritte in Exchange Online PowerShell aus.
   
 1. Führen Sie den folgenden Befehl aus, um den gesamten Clientzugriff auf das Postfach zu deaktivieren. Bei der Befehlssyntax wird davon ausgegangen, dass alle Clientzugriffsmethoden für das Postfach aktiviert wurden.
 
-    ```   
+    ```powershell
     Set-CASMailbox <username> -EwsEnabled $false -ActiveSyncEnabled $false -MAPIEnabled $false -OWAEnabled $false -ImapEnabled $false -PopEnabled $false
     ```
 
    > [!NOTE]
-    > Es kann bis zu 60 Minuten dauern, bis alle Clientzugriffsmethoden für das Postfach deaktiviert sind. Beachten Sie, dass das Deaktivieren dieser Zugriffsmethoden nicht den Postfachbesitzer trennt, in dem Sie sich gerade angemeldet haben. Wenn der Besitzer nicht angemeldet ist, kann er nicht auf sein Postfach zugreifen, nachdem diese Zugriffsmethoden deaktiviert wurden. 
+    > Es kann bis zu 60 Minuten dauern, bis alle Clientzugriffsmethoden für das Postfach deaktiviert sind. Beachten Sie, dass das Deaktivieren dieser Zugriffsmethoden nicht den Postfachbesitzer trennt, in dem Sie sich gerade angemeldet haben. Wenn der Besitzer nicht angemeldet ist, kann er nicht auf sein Postfach zugreifen, nachdem diese Zugriffsmethoden deaktiviert wurden.
   
-2. Führen Sie den folgenden Befehl aus, um den Aufbewahrungszeitraum für gelöschte Elemente um maximal 30 Tage zu verlängern. Dabei wird davon ausgegangen, dass die aktuelle Einstellung weniger als 30 Tage beträgt. 
+2. Führen Sie den folgenden Befehl aus, um den Aufbewahrungszeitraum für gelöschte Elemente um maximal 30 Tage zu verlängern. Dabei wird davon ausgegangen, dass die aktuelle Einstellung weniger als 30 Tage beträgt.
 
     ```powershell
     Set-Mailbox <username> -RetainDeletedItemsFor 30
     ```
 
 3. Führen Sie den folgenden Befehl aus, um die Wiederherstellung einzelner Elemente zu deaktivieren.
-    
+
     ```powershell
     Set-Mailbox <username> -SingleItemRecoveryEnabled $false
     ```
@@ -170,7 +169,7 @@ Der letzte Schritt, bevor Sie Elemente aus dem Ordner "Wiederherstellbare Elemen
 > [!CAUTION]
 > Erkundigen Sie sich wie bereits erwähnt mit ihrer Datensatzverwaltung oder den Rechtsabteilungen, bevor Sie einen Haltebereich aus einem Postfach entfernen. 
   
- ### <a name="litigation-hold"></a>Aufbewahrung für eventuelle Rechtsstreitigkeiten
+### <a name="litigation-hold"></a>Aufbewahrung für eventuelle Rechtsstreitigkeiten
   
 Führen Sie den folgenden Befehl in Exchange Online PowerShell aus, um ein Beweissicherungsverfahren aus dem Postfach zu entfernen.
 
@@ -178,13 +177,12 @@ Führen Sie den folgenden Befehl in Exchange Online PowerShell aus, um ein Bewei
 Set-Mailbox <username> -LitigationHoldEnabled $false
 ```
 
-   
 > [!NOTE]
 > Ähnlich wie beim Deaktivieren der Clientzugriffsmethoden und der Wiederherstellung einzelner Elemente kann es bis zu 60 Minuten dauern, bis das Beweissicherungsverfahren entfernt wurde. Löschen Sie keine Elemente aus dem Ordner "Wiederherstellbare Elemente", bis dieser Zeitraum abgelaufen ist. 
   
- ### <a name="in-place-hold"></a>Compliance-Archiv
+### <a name="in-place-hold"></a>Compliance-Archiv
   
-Führen Sie den folgenden Befehl in Exchange Online PowerShell aus, um den in-situ-Speicher zu identifizieren, der auf dem Postfach platziert wird. Verwenden Sie die GUID für den in-situ-Speicher, den Sie in Schritt 1 identifiziert haben. 
+Führen Sie den folgenden Befehl in Exchange Online PowerShell aus, um den in-situ-Speicher zu identifizieren, der auf dem Postfach platziert wird. Verwenden Sie die GUID für den in-situ-Speicher, den Sie in Schritt 1 identifiziert haben.
 
 ```powershell
 Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name
@@ -192,25 +190,25 @@ Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name
 
 Nachdem Sie den in-situ-Speicher identifiziert haben, können Sie die Exchange-Verwaltungskonsole (EAC) oder Exchange Online PowerShell verwenden, um das Postfach aus dem Archiv zu entfernen. Weitere Informationen finden Sie unter [Erstellen oder Entfernen eines Compliance-Archivs](https://go.microsoft.com/fwlink/?linkid=852668).
   
- ### <a name="retention-policies-applied-to-specific-mailboxes"></a>Auf bestimmte Postfächer angewendete Aufbewahrungsrichtlinien
+### <a name="retention-policies-applied-to-specific-mailboxes"></a>Auf bestimmte Postfächer angewendete Aufbewahrungsrichtlinien
   
-Führen Sie den folgenden Befehl in [Security & Compliance Center PowerShell](https://go.microsoft.com/fwlink/?linkid=627084) aus, um die Aufbewahrungsrichtlinie zu identifizieren, die auf das Postfach angewendet wird. Verwenden Sie die GUID (ohne das `mbx` `skp` Präfix oder) für die Aufbewahrungsrichtlinie, die Sie in Schritt 1 identifiziert haben. 
+Führen Sie den folgenden Befehl in [Security & Compliance Center PowerShell](https://go.microsoft.com/fwlink/?linkid=627084) aus, um die Aufbewahrungsrichtlinie zu identifizieren, die auf das Postfach angewendet wird. Mit diesem Befehl werden auch alle Microsoft Teams-Unterhaltungs Aufbewahrungsrichtlinien zurückgegeben, die auf ein Postfach angewendet werden. Verwenden Sie die GUID (ohne das `mbx` `skp` Präfix oder) für die Aufbewahrungsrichtlinie, die Sie in Schritt 1 identifiziert haben.
 
 ```powershell
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-Nachdem Sie die Aufbewahrungsrichtlinie identifiziert haben, wechseln **Information governance** Sie \> im Security & Compliance Center zur Seite **Retentions** Informationen für die Informationsverwaltung, bearbeiten Sie die im vorherigen Schritt identifizierte Aufbewahrungsrichtlinie, und entfernen Sie das Postfach aus der Liste der Empfänger, die in der Aufbewahrungsrichtlinie enthalten sind. 
+Nachdem Sie die Aufbewahrungsrichtlinie identifiziert haben, wechseln **Information governance**Sie  >  im Security & Compliance Center zur Seite**Retentions** Informationen für die Informationsverwaltung, bearbeiten Sie die im vorherigen Schritt identifizierte Aufbewahrungsrichtlinie, und entfernen Sie das Postfach aus der Liste der Empfänger, die in der Aufbewahrungsrichtlinie enthalten sind.
   
- ### <a name="organization-wide-retention-policies"></a>Organisationsweite Aufbewahrungsrichtlinien
+### <a name="organization-wide-retention-policies"></a>Organisationsweite Aufbewahrungsrichtlinien
   
-Organisationsweite und Exchange-weite Aufbewahrungsrichtlinien werden auf jedes Postfach in der Organisation angewendet. Sie werden auf Organisationsebene (nicht auf Postfachebene) angewendet und werden zurückgegeben, wenn Sie das Cmdlet **Get-OrganizationConfig** in Schritt 1 ausführen. Führen Sie den folgenden Befehl in [Security & Compliance Center PowerShell](https://go.microsoft.com/fwlink/?linkid=627084) aus, um die organisationsweiten Aufbewahrungsrichtlinien zu identifizieren. Verwenden Sie die GUID (ohne das `mbx` Präfix eingeschlossen) für die organisationsweiten Aufbewahrungsrichtlinien, die Sie in Schritt 1 identifiziert haben. 
+Auf alle Postfächer in der Organisation werden organisationsweite, Exchange-weite und Teams-weite Aufbewahrungsrichtlinien angewendet. Sie werden auf Organisationsebene (nicht auf Postfachebene) angewendet und werden zurückgegeben, wenn Sie das Cmdlet **Get-OrganizationConfig** in Schritt 1 ausführen. Führen Sie den folgenden Befehl in [Security & Compliance Center PowerShell](https://go.microsoft.com/fwlink/?linkid=627084) aus, um die organisationsweiten Aufbewahrungsrichtlinien zu identifizieren. Verwenden Sie die GUID (ohne das  `mbx` Präfix eingeschlossen) für die organisationsweiten Aufbewahrungsrichtlinien, die Sie in Schritt 1 identifiziert haben.
 
 ```powershell
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-Nachdem Sie die organisationsweiten Aufbewahrungsrichtlinien identifiziert haben, wechseln Sie **Information governance** \> im Security & Compliance Center zur Registerkarte Information Governance **-Aufbewahrung** , bearbeiten Sie jede organisationsweite Aufbewahrungsrichtlinie, die Sie im vorherigen Schritt identifiziert haben, und fügen Sie das Postfach der Liste der ausgeschlossenen Empfänger hinzu. Dadurch wird das Postfach des Benutzers aus der Aufbewahrungsrichtlinie entfernt. 
+Nachdem Sie die organisationsweiten Aufbewahrungsrichtlinien identifiziert haben, wechseln Sie **Information governance**  >  im Security & Compliance Center zur Registerkarte Information Governance **-Aufbewahrung** , bearbeiten Sie jede organisationsweite Aufbewahrungsrichtlinie, die Sie im vorherigen Schritt identifiziert haben, und fügen Sie das Postfach der Liste der ausgeschlossenen Empfänger hinzu. Dadurch wird das Postfach des Benutzers aus der Aufbewahrungsrichtlinie entfernt.
 
 ### <a name="retention-labels"></a>Aufbewahrungsbezeichnungen
 
@@ -226,9 +224,9 @@ Nachdem Sie festgestellt haben, dass ein Postfach in der Warteschleife ist, da e
 
 Weitere Informationen zu Bezeichnungen finden Sie unter Informationen [zu Aufbewahrungsrichtlinien und Aufbewahrungs Bezeichnungen](retention.md).
 
- ### <a name="ediscovery-holds"></a>eDiscovery-Aufbewahrung
+### <a name="ediscovery-holds"></a>eDiscovery-Aufbewahrung
   
-Führen Sie die folgenden Befehle in [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) aus, um den Haltebereich für einen eDiscovery-Fall (so genannte *eDiscovery Holds*) zu identifizieren, der auf das Postfach angewendet wird. Verwenden Sie die GUID (ohne das `UniH` Präfix eingeschlossen) für den eDiscovery-Haltebereich, den Sie in Schritt 1 identifiziert haben. Der zweite Befehl zeigt den Namen des eDiscovery-Falls an, dem der Haltebereich zugeordnet ist. der dritte Befehl zeigt den Namen des Haltestatus an. 
+Führen Sie die folgenden Befehle in [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) aus, um den Haltebereich für einen eDiscovery-Fall (so genannte *eDiscovery Holds*) zu identifizieren, der auf das Postfach angewendet wird. Verwenden Sie die GUID (ohne das  `UniH` Präfix eingeschlossen) für den eDiscovery-Haltebereich, den Sie in Schritt 1 identifiziert haben. Der zweite Befehl zeigt den Namen des eDiscovery-Falls an, dem der Haltebereich zugeordnet ist. der dritte Befehl zeigt den Namen des Haltestatus an.
   
 ```powershell
 $CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>
@@ -262,7 +260,7 @@ Wenn der Wert der *DelayHoldApplied* -oder *DelayReleaseHoldApplied* -Eigenschaf
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
 
-Oder
+Oder:
 
 ```powershell
 Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
@@ -272,21 +270,57 @@ Sie müssen die Rolle "Legal Hold" in Exchange Online zugewiesen haben, um den P
 
 ## <a name="step-5-delete-items-in-the-recoverable-items-folder"></a>Schritt 5: Löschen von Elementen im Ordner "Wiederherstellbare Elemente"
 
-Jetzt können Sie Elemente im Ordner "Wiederherstellbare Elemente" mithilfe der Cmdlets [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearch) und [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearchaction) im Security & Compliance Center tatsächlich löschen. 
+Jetzt können Sie Elemente im Ordner "Wiederherstellbare Elemente" mithilfe der Cmdlets [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearch) und [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearchaction) in Security & Compliance Center PowerShell tatsächlich löschen.
 
-Informationen dazu finden Sie unter [Suchen nach und Löschen von e-Mail-Nachrichten](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization).
+Um nach Elementen zu suchen, die sich im Ordner "Wiederherstellbare Elemente" befinden, wird empfohlen, eine *gezielte Sammlung*auszuführen. Dies bedeutet, dass Sie den Suchbereich nur auf Elemente beschränken, die sich im Ordner "refundable Items" befinden. Sie können dies tun, indem Sie das Skript im Artikel [Verwenden der Inhaltssuche für gezielte Sammlungen](use-content-search-for-targeted-collections.md) ausführen. Dieses Skript gibt den Wert der Folder ID-Eigenschaft für alle Unterordner im Ordner "Ziel Wiederherstellbare Elemente" zurück. Anschließend verwenden Sie die Ordner-ID in einer Suchabfrage, um Elemente zurückzugeben, die sich in diesem Ordner befinden.
+
+Im folgenden finden Sie eine Übersicht über den Prozess zum Suchen und Löschen von Elementen im Ordner "Wiederherstellbare Elemente" eines Benutzers:
+
+1. Führen Sie das Targeted Collection-Skript aus, das die Ordner-IDs für alle Ordner im Postfach des Zielbenutzers zurückgibt. Das Skript stellt eine Verbindung mit Exchange Online PowerShell und Security & Compliance PowerShell in derselben PowerShell-Sitzung her. Weitere Informationen finden Sie unter [Ausführen des Skripts, um eine Liste der Ordner für ein Postfach abzurufen](use-content-search-for-targeted-collections.md#step-1-run-the-script-to-get-a-list-of-folders-for-a-mailbox-or-site).
+
+2. Kopieren Sie die Ordner-IDs für alle Unterordner im Ordner "refundable Items". Alternativ können Sie die Ausgabe des Skripts in eine Textdatei umleiten.
+
+   Im folgenden finden Sie eine Liste und eine Beschreibung der Unterordner im Ordner "Wiederherstellbare Elemente", in denen Sie Elemente suchen und löschen können:
+
+   - **Löschvorgänge**: enthält vorläufig gelöschte Elemente, deren Aufbewahrungszeitraum für gelöschte Elemente nicht abgelaufen ist. Benutzer können in Outlook gelöschte Elemente aus diesem Unterordner wiederherstellen, indem Sie das Tool zum Wiederherstellen von gelöschten Elementen verwenden.
+
+   - **Purges**: enthält hart gelöschte Elemente, deren Aufbewahrungszeitraum für gelöschte Elemente abgelaufen ist. Benutzer können Elemente auch schwer löschen, indem Sie Elemente aus dem Ordner "Wiederherstellbare Elemente" entfernen. Wenn das Postfach gespeichert ist, werden die endgültig gelöschten Elemente beibehalten. Dieser Unterordner ist für Endbenutzer nicht sichtbar.
+
+   - **DiscoveryHolds**: enthält hart gelöschte Elemente, die von einem eDiscovery-Speicher oder einer Aufbewahrungsrichtlinie beibehalten wurden. Dieser Unterordner ist für Endbenutzer nicht sichtbar.
+
+   - **SubstrateHolds**: enthält hart gelöschte Elemente aus Teams und anderen cloudbasierten apps, die von einer Aufbewahrungsrichtlinie oder einem anderen Haltestatus beibehalten wurden. Dieser Unterordner ist für Endbenutzer nicht sichtbar.
+
+3. Verwenden Sie das Cmdlet **New-ComplianceSearch** (in Security & Compliance Center PowerShell), oder verwenden Sie das Inhaltssuche-Tool im Compliance Center, um eine Inhaltssuche zu erstellen, die Elemente aus dem Ordner "Wiederherstellbare Elemente" des Zielbenutzers zurückgibt. Sie können dies tun, indem Sie die Ordner-Nr in der Suchabfrage für alle Unterordner, die Sie durchsuchen möchten, hinzufügen. Die folgende Abfrage gibt beispielsweise alle Nachrichten in den Unterordnern purges und eDiscoveryHolds zurück:
+
+   ```powershell
+   folderid:<folder ID of Purges subfolder> OR folderid:<folder ID of DiscoveryHolds subfolder>
+   ```
+
+   Weitere Informationen und Beispiele zum Ausführen von Inhalts suchen, die die Folder ID-Eigenschaft verwenden, finden Sie unter [use a Folder ID oder to perform a Targeted Collection](use-content-search-for-targeted-collections.md#step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection).
+
+   > [!NOTE]
+   > Wenn Sie das Cmdlet **New-ComplianceSearch** zum Durchsuchen des Ordners "Wiederherstellbare Elemente" verwenden, müssen Sie unbedingt das Cmdlet " **Start-ComplianceSearch** " verwenden, um die Suche auszuführen.
+
+4. Nachdem Sie eine Inhaltssuche erstellt und überprüft haben, dass Sie die zu löschenden Elemente zurückgibt, verwenden Sie den `New-ComplianceSearchAction -Purge -PurgeType HardDelete` Befehl (in Security & Compliance Center PowerShell), um die Elemente, die von der Inhaltssuche zurückgegeben werden, die Sie im vorherigen Schritt erstellt haben, endgültig zu löschen. Beispielsweise können Sie einen Befehl wie den folgenden Befehl ausführen:
+
+   ```powershell
+   New-ComplianceSearchAction -SearchName "RecoverableItems" -Purge -PurgeType HardDelete
+   ```
+
+   > [!NOTE]
+   > Es werden maximal 10 Elemente (pro Postfach) gelöscht, wenn Sie den vorherigen Befehl ausführen. Das bedeutet, dass Sie den Befehl möglicherweise mehrmals ausführen müssen, `New-ComplianceSearchAction -Purge` um die Elemente zu löschen, die Sie im Ordner "Wiederherstellbare Elemente" löschen möchten.
 
 ### <a name="verify-that-items-were-deleted"></a>Überprüfen, ob Elemente gelöscht wurden
 
-Um zu überprüfen, ob Sie Elemente erfolgreich aus dem Ordner "Wiederherstellbare Elemente" eines Postfachs gelöscht haben, verwenden Sie das Cmdlet **Get-MailboxFolderStatistics** in Exchange Online PowerShell, um die Größe und Anzahl der Elemente im Ordner "Wiederherstellbare Elemente" zu überprüfen. Sie können diese Statistiken mit denen vergleichen, die Sie in Schritt 1 gesammelt haben. 
+Um zu überprüfen, ob Sie Elemente erfolgreich aus dem Ordner "Wiederherstellbare Elemente" eines Postfachs gelöscht haben, verwenden Sie das Cmdlet **Get-MailboxFolderStatistics** in Exchange Online PowerShell, um die Größe und Anzahl der Elemente im Ordner "Wiederherstellbare Elemente" zu überprüfen. Sie können diese Statistiken mit denen vergleichen, die Sie in Schritt 1 gesammelt haben.
   
-Führen Sie den folgenden Befehl in aus, um die aktuelle Größe und Gesamtzahl der Elemente in Ordnern und Unterordnern im Ordner "Wiederherstellbare Elemente" im primären Postfach des Benutzers abzurufen. 
+Führen Sie den folgenden Befehl in aus, um die aktuelle Größe und Gesamtzahl der Elemente in Ordnern und Unterordnern im Ordner "Wiederherstellbare Elemente" im primären Postfach des Benutzers abzurufen.
   
 ```powershell
 Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
 ```
 
-Führen Sie den folgenden Befehl aus, um die Größe und die Gesamtzahl der Elemente in Ordnern und Unterordnern im Ordner "Wiederherstellbare Elemente" im Archivpostfach des Benutzers abzurufen. 
+Führen Sie den folgenden Befehl aus, um die Größe und die Gesamtzahl der Elemente in Ordnern und Unterordnern im Ordner "Wiederherstellbare Elemente" im Archivpostfach des Benutzers abzurufen.
 
 ```powershell
 Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
@@ -297,65 +331,65 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
 Im letzten Schritt wird das Postfach wieder auf seine frühere Konfiguration zurückgesetzt. Dies bedeutet, dass Sie die Eigenschaften, die Sie in Schritt 2 geändert haben, erneut festlegen und die in Schritt 3 entfernten Haltestatus erneut anwenden. Dies umfasst Folgendes:
   
 - Ändern der Aufbewahrungsdauer für gelöschte Elemente zurück in den vorherigen Wert. Alternativ können Sie diese Einstellung auf 30 Tage festlegen, wobei der Höchstwert in Exchange Online liegt.
-    
+
 - Erneutes Aktivieren der Wiederherstellung einzelner Elemente
-    
+
 - Erneutes Aktivieren der Clientzugriffsmethoden, damit der Besitzer auf sein Postfach zugreifen kann.
-    
+
 - Erneutes Anwenden der Aufbewahrungs-und Aufbewahrungsrichtlinien, die Sie entfernt haben.
-    
+
 - Erneutes Aktivieren des Assistenten für verwaltete Ordner zum Verarbeiten des Postfachs.
-    
+
 > [!IMPORTANT]
-> Es wird empfohlen, dass Sie 24 Stunden nach der erneuten Anwendung eines Haltestatus oder einer Aufbewahrungsrichtlinie (und überprüfen, ob Sie vorhanden ist) warten, bevor Sie den Assistenten für verwaltete Ordner erneut aktivieren, um das Postfach zu verarbeiten. 
+> Es wird empfohlen, dass Sie 24 Stunden nach der erneuten Anwendung eines Haltestatus oder einer Aufbewahrungsrichtlinie (und überprüfen, ob Sie vorhanden ist) warten, bevor Sie den Assistenten für verwaltete Ordner erneut aktivieren, um das Postfach zu verarbeiten.
   
 Führen Sie die folgenden Schritte (in der angegebenen Reihenfolge) in Exchange Online PowerShell aus.
   
-1. Führen Sie den folgenden Befehl aus, um die Aufbewahrungsdauer für gelöschte Elemente in den ursprünglichen Wert zurück zu ändern. Dabei wird davon ausgegangen, dass die vorherige Einstellung weniger als 30 Tage beträgt; Beispiel: 14 Tage. 
-    
+1. Führen Sie den folgenden Befehl aus, um die Aufbewahrungsdauer für gelöschte Elemente in den ursprünglichen Wert zurück zu ändern. Dabei wird davon ausgegangen, dass die vorherige Einstellung weniger als 30 Tage beträgt; Beispiel: 14 Tage.
+
     ```powershell
     Set-Mailbox <username> -RetainDeletedItemsFor 14
     ```
 
 2. Führen Sie den folgenden Befehl aus, um die Wiederherstellung einzelner Elemente wieder zu aktivieren.
-   
+
     ```powershell
     Set-Mailbox <username> -SingleItemRecoveryEnabled $true
     ```
 
 3. Führen Sie den folgenden Befehl aus, um alle Clientzugriffsmethoden für das Postfach erneut zu aktivieren.
-    
+
     ```powershell
     Set-CASMailbox <username> -EwsEnabled $true -ActiveSyncEnabled $true -MAPIEnabled $true -OWAEnabled $true -ImapEnabled $true -PopEnabled $true
     ```
 
 4. Wenden Sie die in Schritt 3 entfernten Haltestatus erneut an. Je nach Typ des haltebereichs verwenden Sie eines der folgenden Verfahren.
-    
+
     **Aufbewahrung für eventuelle Rechtsstreitigkeiten**
-    
+
     Führen Sie den folgenden Befehl aus, um ein Beweissicherungsverfahren für das Postfach erneut zu aktivieren.
-    
+
     ```powershell
     Set-Mailbox <username> -LitigationHoldEnabled $true
     ```
 
     **In-Situ-Aufbewahrung**
-    
-    Verwenden Sie die Exchange-Verwaltungskonsole (oder Exchange Online PowerShell), um das Postfach wieder dem in-situ-Speicher hinzuzufügen. 
-    
+
+    Verwenden Sie die Exchange-Verwaltungskonsole (oder Exchange Online PowerShell), um das Postfach wieder dem in-situ-Speicher hinzuzufügen.
+
     **Auf bestimmte Postfächer angewendete Aufbewahrungsrichtlinien**
-    
-    Verwenden Sie das Security & Compliance Center, um das Postfach wieder zur Aufbewahrungsrichtlinie hinzuzufügen. Wechseln Sie zur Seite Aufbewahrung von Informationen für die **Verwaltung** \> **Retention** im Security & Compliance Center, bearbeiten Sie die Aufbewahrungsrichtlinie, und fügen Sie das Postfach wieder der Liste der Empfänger hinzu, auf die die Aufbewahrungsrichtlinie angewendet wird. 
-    
+
+    Verwenden Sie das Security & Compliance Center, um das Postfach wieder zur Aufbewahrungsrichtlinie hinzuzufügen. Wechseln Sie zur Seite Aufbewahrung von Informationen für die **Verwaltung**  >  **Retention** im Security & Compliance Center, bearbeiten Sie die Aufbewahrungsrichtlinie, und fügen Sie das Postfach wieder der Liste der Empfänger hinzu, auf die die Aufbewahrungsrichtlinie angewendet wird.
+
     **Organisationsweite Aufbewahrungsrichtlinien**
-    
-    Wenn Sie eine organisationsweite oder Exchange-weite Aufbewahrungsrichtlinie durch Ausschließen aus der Richtlinie entfernt haben, verwenden Sie das Sicherheits & Compliance Center, um das Postfach aus der Liste der ausgeschlossenen Benutzer zu entfernen. Wechseln Sie **Information governance** \> im Security & Compliance Center zur Registerkarte Information Governance- **Aufbewahrung** , bearbeiten Sie die organisationsweite Aufbewahrungsrichtlinie, und entfernen Sie das Postfach aus der Liste der ausgeschlossenen Empfänger. Dadurch wird die Aufbewahrungsrichtlinie erneut auf das Postfach des Benutzers angewendet. 
-    
+
+    Wenn Sie eine organisationsweite oder Exchange-weite Aufbewahrungsrichtlinie durch Ausschließen aus der Richtlinie entfernt haben, verwenden Sie das Sicherheits & Compliance Center, um das Postfach aus der Liste der ausgeschlossenen Benutzer zu entfernen. Wechseln Sie **Information governance**  >  im Security & Compliance Center zur Registerkarte Information Governance-**Aufbewahrung** , bearbeiten Sie die organisationsweite Aufbewahrungsrichtlinie, und entfernen Sie das Postfach aus der Liste der ausgeschlossenen Empfänger. Dadurch wird die Aufbewahrungsrichtlinie erneut auf das Postfach des Benutzers angewendet.
+
     **eDiscovery-Fall Behältern**
-    
-    Verwenden Sie das Security & Compliance Center, um das Postfach wieder dem Aufbewahrungsplatz hinzuzufügen, der einem eDiscovery-Fall zugeordnet ist. Wechseln Sie zur **eDiscovery** - \> **eDiscovery** -Seite, öffnen Sie die Anfrage, und fügen Sie das Postfach wieder in das Archiv ein. 
-    
-5. Führen Sie den folgenden Befehl aus, um dem Assistenten für verwaltete Ordner das erneute verarbeiten des Postfachs zu gestatten. Wie bereits erwähnt, wird empfohlen, dass Sie 24 Stunden nach der erneuten Anwendung eines Haltestatus oder einer Aufbewahrungsrichtlinie warten (und sich vergewissern, dass Sie vorhanden ist), bevor Sie den Assistenten für verwaltete Ordner erneut aktivieren. 
+
+    Verwenden Sie das Security & Compliance Center, um das Postfach wieder dem Aufbewahrungsplatz hinzuzufügen, der einem eDiscovery-Fall zugeordnet ist. Wechseln Sie zur **eDiscovery**-  >  **eDiscovery** -Seite, öffnen Sie die Anfrage, und fügen Sie das Postfach wieder in das Archiv ein. 
+
+5. Führen Sie den folgenden Befehl aus, um dem Assistenten für verwaltete Ordner das erneute verarbeiten des Postfachs zu gestatten. Wie bereits erwähnt, wird empfohlen, dass Sie 24 Stunden nach der erneuten Anwendung eines Haltestatus oder einer Aufbewahrungsrichtlinie warten (und sich vergewissern, dass Sie vorhanden ist), bevor Sie den Assistenten für verwaltete Ordner erneut aktivieren.
 
     ```powershell
     Set-Mailbox <username> -ElcProcessingDisabled $false
@@ -373,16 +407,14 @@ Führen Sie die folgenden Schritte (in der angegebenen Reihenfolge) in Exchange 
 
 ## <a name="more-information"></a>Weitere Informationen
 
-Im folgenden finden Sie eine Tabelle, in der beschrieben wird, wie verschiedene Aufbewahrungs Typen basierend auf den Werten in der *InPlaceHolds* -Eigenschaft identifiziert werden, wenn Sie die Cmdlets **Get-Mailbox** oder **Get-OrganizationConfig** ausführen. Ausführlichere Informationen finden Sie unter [Identifizieren des Aufbewahrungs Typs, der in einem Exchange Online Postfach gespeichert](identify-a-hold-on-an-exchange-online-mailbox.md)ist.
+Im folgenden finden Sie eine Tabelle, in der beschrieben wird, wie verschiedene Aufbewahrungs Typen basierend auf den Werten in der  *InPlaceHolds*  -Eigenschaft identifiziert werden, wenn Sie die Cmdlets **Get-Mailbox** oder **Get-OrganizationConfig** ausführen. Ausführlichere Informationen finden Sie unter [Identifizieren des Aufbewahrungs Typs, der in einem Exchange Online Postfach gespeichert](identify-a-hold-on-an-exchange-online-mailbox.md)ist.
 
-Wie bereits erläutert, müssen Sie alle halte-und Aufbewahrungsrichtlinien aus einem Postfach entfernen, bevor Sie die Elemente im Ordner "Wiederherstellbare Elemente" erfolgreich löschen können. 
+Wie bereits erläutert, müssen Sie alle halte-und Aufbewahrungsrichtlinien aus einem Postfach entfernen, bevor Sie die Elemente im Ordner "Wiederherstellbare Elemente" erfolgreich löschen können.
   
 |**Haltebereichstyp**|**Beispielwert**|**Vorgehensweise zum Identifizieren des Haltestatus**|
 |:-----|:-----|:-----|
 |Beweissicherungsverfahren  <br/> | `True` <br/> |Die  *LitigationHoldEnabled*  -Eigenschaft wird festgelegt auf  `True`.  <br/> |
-|Compliance-Archiv  <br/> | `c0ba3ce811b6432a8751430937152491` <br/> |Die *InPlaceHolds* -Eigenschaft enthält die GUID des in-situ-Speichers, der im Postfach platziert wird. Sie können feststellen, dass es sich um einen in-situ-Speicher handelt, da die GUID nicht mit einem Präfix beginnt.  <br/> Sie können den `Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL` Befehl in Exchange Online PowerShell verwenden, um Informationen zum in-situ-Speicher für das Postfach abzurufen.  <br/> |
-| Aufbewahrungsrichtlinien im Security & Compliance Center, die auf bestimmte Postfächer angewendet werden  <br/> | `mbxcdbbb86ce60342489bff371876e7f224` <br/> oder  <br/>  `skp127d7cf1076947929bf136b7a2a8c36f` <br/> |Wenn Sie das Cmdlet **Get-Mailbox** ausführen, enthält die *InPlaceHolds* -Eigenschaft auch GUIDs von Aufbewahrungsrichtlinien, die auf das Postfach angewendet werden. Sie können Aufbewahrungsrichtlinien identifizieren, da die GUID mit dem `mbx` Präfix beginnt. Wenn die GUID der Aufbewahrungsrichtlinie mit dem `skp` Präfix beginnt, bedeutet dies, dass die Aufbewahrungsrichtlinie auf Skype for Business Unterhaltungen angewendet wird.  <br/> Führen Sie den folgenden Befehl in Security & Compliance Center PowerShell aus, um die Identität der auf das Postfach angewendeten Aufbewahrungsrichtlinie zu ermitteln: <br/> <br/>`Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>Entfernen Sie die Präfix  `mbx` oder  `skp`, wenn Sie diesen Befehl ausführen.  <br/> |
-|Organisationsweite Aufbewahrungsrichtlinien im Security & Compliance Center  <br/> |Kein Wert  <br/> oder  <br/>  `-mbxe9b52bf7ab3b46a286308ecb29624696`(gibt an, dass das Postfach von einer organisationsweiten Richtlinie ausgeschlossen wird)  <br/> |Auch wenn die *InPlaceHolds* -Eigenschaft leer ist, wenn Sie das Cmdlet **Get-Mailbox** ausführen, kann es trotzdem eine oder mehrere organisationsweite Aufbewahrungsrichtlinien geben, die auf das Postfach angewendet werden.  <br/> Um dies zu überprüfen, können Sie den `Get-OrganizationConfig | FL InPlaceHolds` Befehl in Exchange Online PowerShell ausführen, um eine Liste der GUIDs für organisationsweite Aufbewahrungsrichtlinien zu erhalten. Die GUID für organisationsweite Aufbewahrungsrichtlinien, die auf Exchange-Postfächer angewendet werden, beginnt mit dem `mbx` Präfix, beispielsweise `mbxa3056bb15562480fadb46ce523ff7b02` .  <br/> Um die organisationsweite Aufbewahrungsrichtlinie zu identifizieren, die auf das Postfach angewendet wird, führen Sie den folgenden Befehl in Security & Compliance Center PowerShell aus: <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>Wenn ein Postfach aus einer unternehmensweiten Aufbewahrungsrichtlinie ausgeschlossen wird, wird die GUID für die Aufbewahrungsrichtlinie in der *InPlaceHolds* -Eigenschaft des Postfachs des Benutzers angezeigt, wenn Sie das Cmdlet **Get-Mailbox** ausführen. Sie wird durch das Präfix identifiziert `-mbx` , beispielsweise`-mbxe9b52bf7ab3b46a286308ecb29624696` <br/> |
-|eDiscovery-Aufbewahrungs Fall im Security & Compliance Center  <br/> | `UniH7d895d48-7e23-4a8d-8346-533c3beac15d` <br/> |Die *InPlaceHolds* -Eigenschaft enthält auch die GUID aller Halterungen, die einem eDiscovery-Fall im Security & Compliance Center zugeordnet sind, das möglicherweise in das Postfach eingefügt wird. Sie können erkennen, dass es sich hierbei um einen eDiscovery-Fall handelt, da die GUID mit dem Präfix  `UniH` beginnt.  <br/> Sie können das `Get-CaseHoldPolicy` Cmdlet in Security & Compliance Center PowerShell verwenden, um Informationen zu dem eDiscovery-Fall abzurufen, dem der Aufbewahrungs Status für das Postfach zugeordnet ist. Beispielsweise können Sie den Befehl ausführen, `Get-CaseHoldPolicy <hold GUID without prefix> | FL Name` um den Namen des Aufbewahrungs Falls im Postfach anzuzeigen. Be sure to remove the  `UniH`, wenn Sie diesen Befehl ausführen.  <br/><br/> Führen Sie die folgenden Befehle aus, um den eDiscovery-Fall zu identifizieren, dem der Haltebereich für das Postfach zugeordnet ist:<br/><br/>`$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/>`Get-ComplianceCase $CaseHold.CaseId | FL Name`
-
-
+|Compliance-Archiv  <br/> | `c0ba3ce811b6432a8751430937152491` <br/> |Die  *InPlaceHolds*  -Eigenschaft enthält die GUID des in-situ-Speichers, der im Postfach platziert wird. Sie können feststellen, dass es sich um einen in-situ-Speicher handelt, da die GUID nicht mit einem Präfix beginnt.  <br/> Sie können den  `Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL` Befehl in Exchange Online PowerShell verwenden, um Informationen zum in-situ-Speicher für das Postfach abzurufen.  <br/> |
+| Aufbewahrungsrichtlinien im Security & Compliance Center, die auf bestimmte Postfächer angewendet werden  <br/> | `mbxcdbbb86ce60342489bff371876e7f224` <br/> oder  <br/>  `skp127d7cf1076947929bf136b7a2a8c36f` <br/> |Wenn Sie das Cmdlet **Get-Mailbox** ausführen, enthält die  *InPlaceHolds*  -Eigenschaft auch GUIDs von Aufbewahrungsrichtlinien, die auf das Postfach angewendet werden. Sie können Aufbewahrungsrichtlinien identifizieren, da die GUID mit dem  `mbx` Präfix beginnt. Wenn die GUID der Aufbewahrungsrichtlinie mit dem  `skp` Präfix beginnt, bedeutet dies, dass die Aufbewahrungsrichtlinie auf Skype for Business Unterhaltungen angewendet wird.  <br/> Führen Sie den folgenden Befehl in Security & Compliance Center PowerShell aus, um die Identität der auf das Postfach angewendeten Aufbewahrungsrichtlinie zu ermitteln: <br/> <br/>`Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>Entfernen Sie die Präfix  `mbx` oder  `skp`, wenn Sie diesen Befehl ausführen.  <br/> |
+|Organisationsweite Aufbewahrungsrichtlinien im Security & Compliance Center  <br/> |Kein Wert  <br/> oder  <br/>  `-mbxe9b52bf7ab3b46a286308ecb29624696` (gibt an, dass das Postfach von einer organisationsweiten Richtlinie ausgeschlossen wird)  <br/> |Auch wenn die  *InPlaceHolds*  -Eigenschaft leer ist, wenn Sie das Cmdlet **Get-Mailbox** ausführen, kann es trotzdem eine oder mehrere organisationsweite Aufbewahrungsrichtlinien geben, die auf das Postfach angewendet werden.  <br/> Um dies zu überprüfen, können Sie den  `Get-OrganizationConfig | FL InPlaceHolds` Befehl in Exchange Online PowerShell ausführen, um eine Liste der GUIDs für organisationsweite Aufbewahrungsrichtlinien zu erhalten. Die GUID für organisationsweite Aufbewahrungsrichtlinien, die auf Exchange-Postfächer angewendet werden, beginnt mit dem  `mbx` Präfix, beispielsweise  `mbxa3056bb15562480fadb46ce523ff7b02` .  <br/> Um die organisationsweite Aufbewahrungsrichtlinie zu identifizieren, die auf das Postfach angewendet wird, führen Sie den folgenden Befehl in Security & Compliance Center PowerShell aus: <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>Wenn ein Postfach aus einer unternehmensweiten Aufbewahrungsrichtlinie ausgeschlossen wird, wird die GUID für die Aufbewahrungsrichtlinie in der  *InPlaceHolds*  -Eigenschaft des Postfachs des Benutzers angezeigt, wenn Sie das Cmdlet **Get-Mailbox** ausführen. Sie wird durch das Präfix identifiziert  `-mbx` , beispielsweise  `-mbxe9b52bf7ab3b46a286308ecb29624696` <br/> |
+|eDiscovery-Aufbewahrungs Fall im Security & Compliance Center  <br/> | `UniH7d895d48-7e23-4a8d-8346-533c3beac15d` <br/> |Die  *InPlaceHolds*  -Eigenschaft enthält auch die GUID aller Halterungen, die einem eDiscovery-Fall im Security & Compliance Center zugeordnet sind, das möglicherweise in das Postfach eingefügt wird. Sie können erkennen, dass es sich hierbei um einen eDiscovery-Fall handelt, da die GUID mit dem Präfix  `UniH` beginnt.  <br/> Sie können das  `Get-CaseHoldPolicy` Cmdlet in Security & Compliance Center PowerShell verwenden, um Informationen zu dem eDiscovery-Fall abzurufen, dem der Aufbewahrungs Status für das Postfach zugeordnet ist. Beispielsweise können Sie den Befehl ausführen,  `Get-CaseHoldPolicy <hold GUID without prefix> | FL Name` um den Namen des Aufbewahrungs Falls im Postfach anzuzeigen. Be sure to remove the  `UniH`, wenn Sie diesen Befehl ausführen.  <br/><br/> Führen Sie die folgenden Befehle aus, um den eDiscovery-Fall zu identifizieren, dem der Haltebereich für das Postfach zugeordnet ist:<br/><br/>`$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/>`Get-ComplianceCase $CaseHold.CaseId | FL Name`

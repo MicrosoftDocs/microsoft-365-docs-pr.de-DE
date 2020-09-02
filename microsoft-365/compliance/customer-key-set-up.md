@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie den Kundenschlüssel für Microsoft 365 für Exchange Online-, Skype for Business-, SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Dateien einrichten.
-ms.openlocfilehash: 0743b4339dae8e70960293f51a7869dc61fea606
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: 94403e1d76fbc6fdf06d784fbb7bb9025dc06fc0
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868890"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324211"
 ---
 # <a name="set-up-customer-key"></a>Einrichten des Kunden Schlüssels
 
@@ -31,7 +31,9 @@ Sie müssen Azure einrichten, bevor Sie Customer Key für Office 365 verwenden k
   
 ## <a name="before-you-set-up-customer-key"></a>Vor dem Einrichten des Kunden Schlüssels
 
-Stellen Sie vor dem ersten Start sicher, dass Sie über die entsprechende Lizenzierung für Ihre Organisation verfügen. Kundenschlüssel in Microsoft 365 wird in Office 365 E5 oder Advanced Compliance SKU angeboten. Um die Konzepte und Verfahren in diesem Thema zu verstehen, lesen Sie die [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/) -Dokumentation. Machen Sie sich außerdem mit den in Azure verwendeten Begriffen vertraut, beispielsweise [Mandant](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)).
+Stellen Sie vor dem ersten Start sicher, dass Sie über die entsprechende Lizenzierung für Ihre Organisation verfügen. Ab dem 1. April 2020 wird der Kundenschlüssel in Office 365 in Office 365 E5, M365 E5, M365 E5 Compliance und M365 E5 Information Protection & Governance-SKUs angeboten. Office 365 Advanced Compliance SKU steht nicht mehr für die Beschaffung neuer Lizenzen zur Verfügung. Vorhandene Office 365 Advanced Compliance-Lizenzen werden weiterhin unterstützt.
+
+Um die Konzepte und Verfahren in diesem Thema zu verstehen, lesen Sie die [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/) -Dokumentation. Machen Sie sich außerdem mit den in Azure verwendeten Ausdrücken vertraut, beispielsweise [Azure AD Mandanten](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant).
 
 Der kurzstand wird nur zum Erfassen der erforderlichen Mandanten-und Dienstkonfigurationsinformationen verwendet, die für die Registrierung für den Kundenschlüssel verwendet werden. Die Kundenschlüssel Angebote werden über die Kurzarbeits Veröffentlichung veröffentlicht, sodass Sie und unsere Partner die erforderlichen Informationen bequem mit derselben Methode übermitteln können. Mit dem schnelleren Archivieren von Daten, die Sie im Angebot bereitgestellt haben, können Sie auch einfach archivieren.
   

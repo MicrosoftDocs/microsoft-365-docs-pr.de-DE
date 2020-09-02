@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Überwachen und Verwalten der Freigabe von Inhalten, unabhängig davon, ob Sie eine Dispositions Überprüfung oder Inhalte verwenden, wird automatisch entsprechend den von Ihnen konfigurierten Einstellungen gelöscht.
-ms.openlocfilehash: 20f44244005f5a34a0d82f32f625fb067f02df20
-ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
+ms.openlocfilehash: 5751857f8b3bf0a7f63df73e9bfaa244897bf429
+ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47294764"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47321994"
 ---
 # <a name="disposition-of-content"></a>Disposition von Inhalten
 
@@ -62,7 +62,7 @@ Wenn der Inhalt das Ende seines Aufbewahrungszeitraums erreicht, gibt es mehrere
 
 Wenn eine Dispositions Überprüfung am Ende des Aufbewahrungszeitraums ausgelöst wird:
   
-- Die Personen, die Sie auswählen, erhalten eine e-Mail-Benachrichtigung, dass Sie Inhalte zur Überprüfung haben. Bei diesen Prüfern kann es sich um einzelne Benutzer, Verteilungs-oder Sicherheitsgruppen oder Microsoft 365-Gruppen ([früher Office 365 Gruppen](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) handeln. Beachten Sie, dass Benachrichtigungen auf wöchentlicher Basis gesendet werden.
+- Die Personen, die Sie auswählen, erhalten eine e-Mail-Benachrichtigung, dass Sie Inhalte zur Überprüfung haben. Diese Bearbeiter können einzelne Benutzer oder e-Mail-aktivierte Sicherheitsgruppen sein. Beachten Sie, dass Benachrichtigungen auf wöchentlicher Basis gesendet werden.
     
 - Die Bearbeiter wechseln zur Registerkarte " **Disposition** " im Microsoft 365 Compliance Center, um die Inhalte zu überprüfen und zu entscheiden, ob Sie sie dauerhaft löschen, den Aufbewahrungszeitraum verlängern oder eine andere Aufbewahrungs Bezeichnung anwenden möchten.
 
