@@ -1,7 +1,7 @@
 ---
 title: Mandantenisolation in Office 365 Video
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: In diesem Artikel finden Sie eine Erläuterung, wie die Mandanten Isolierung die gespeicherten Videos jedes Mandanten in Office 365 Video getrennt hält.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3f46812bb2bf9432252c2de6bb46fbb47cb71221
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 626a995fc5a3ac971c48cc87bec1017134e87b88
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690615"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332244"
 ---
 # <a name="tenant-isolation-in-office-365-video"></a>Mandantenisolation in Office 365 Video
 

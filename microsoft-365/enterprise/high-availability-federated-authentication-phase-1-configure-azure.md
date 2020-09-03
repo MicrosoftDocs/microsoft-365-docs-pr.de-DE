@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 'Zusammenfassung: Konfigurieren der Microsoft Azure Infrastruktur zum Hosten der Verbundauthentifizierung mit hoher Verfügbarkeit für Microsoft 365.'
-ms.openlocfilehash: a99259e8c60346665f76aeba3a8a440e0f9061f0
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: d2a9fe3c31468cd53576a82639e0e61901192d8e
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690798"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332340"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Hochverfügbarkeit der Verbundauthentifizierung, Phase 1: Konfigurieren von Azure
 
@@ -57,7 +57,7 @@ Geben Sie für die ersten drei Subnetze einen Namen und einen einzigen IP-Adress
     
 2. Übertragen Sie den resultierenden Bitblock ins Dezimalsystem, und drücken Sie ihn als Adressraum aus, wobei Sie als Präfixlänge die Größe des Gatewaysubnetzes festlegen.
     
-Weitere Informationen finden Sie unter [Adressraum Rechner für Azure-Gateway-Subnetze](https://gallery.technet.microsoft.com/scriptcenter/Address-prefix-calculator-a94b6eed) für einen PowerShell-Befehlsblock und eine C#-oder python-Konsolenanwendung, die diese Berechnung ausführt.
+Weitere Informationen finden Sie unter [Adressraum Rechner für Azure-Gateway-Subnetze](address-space-calculator-for-azure-gateway-subnets.md) für einen PowerShell-Befehlsblock und eine C#-oder python-Konsolenanwendung, die diese Berechnung ausführt.
   
 Fragen Sie Ihre IT-Abteilung nach diesen Adressräumen aus dem Adressraum des virtuellen Netzwerks.
   
@@ -316,7 +316,7 @@ Verwenden Sie [Phase 2: Konfigurieren von Domänencontrollern](high-availability
   
 [Verbundidentität für Ihre Microsoft 365-Entwicklungs-/Testumgebung](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
-[Microsoft 365 Lösungs- und Architektur-Center](../solutions/solution-architecture-center.md)
+[Microsoft 365-Center – Lösungen und Architekturen](../solutions/solution-architecture-center.md)
 
 [Grundlegendes zu Microsoft 365 Identity und Azure Active Directory](about-microsoft-365-identity.md)
 

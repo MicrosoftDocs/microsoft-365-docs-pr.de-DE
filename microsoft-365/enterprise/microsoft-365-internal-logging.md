@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365-interne Protokollierung für Microsoft 365 Engineering
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,14 +16,14 @@ f1.keywords:
 - NOCSH
 description: In diesem Artikel finden Sie eine Erläuterung der Funktionsweise der internen Protokollierung für Microsoft 365-Entwicklungsteams.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b4c4b1db876a6b68ec852adbbd51afe7386a1855
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 08f87ba682a88a7efd93735b160af49bf5468ca2
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695991"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332508"
 ---
-# <a name="internal-logging-for-microsoft-365-engineering"></a>Interne Protokollierung für Microsoft 365 Engineering
+# <a name="internal-logging-for-microsoft-365-engineering"></a>Interne Protokollierung für Microsoft 365-Engineering
 
 Zusätzlich zu den für Kunden verfügbaren Ereignissen und Protokolldaten gibt es auch ein internes Protokoll Datenerfassungssystem, das Microsoft 365-Ingenieuren bei Microsoft zur Verfügung steht. Viele verschiedene Typen von Protokolldaten werden von Microsoft 365-Servern in einen internen, großen Daten Datenverarbeitungsdienst mit dem Namen Cosmos hochgeladen. Jedes Service Team lädt Überwachungsprotokolle von den jeweiligen Servern in die Cosmos-Datenbank für Aggregation und Analyse hoch. Diese Datenübertragung erfolgt über eine FIPS 140-2-validierte TLS-Verbindung auf speziell genehmigten Ports und Protokollen mithilfe eines proprietären Automatisierungstools namens Office Data Loader (ODL). Die in Microsoft 365 zum Erfassen und Verarbeiten von Überwachungsdatensätzen verwendeten Tools ermöglichen keine permanenten oder irreversiblen Änderungen am ursprünglichen Inhalt oder der Zeitreihenfolge des Überwachungseintrags.
 

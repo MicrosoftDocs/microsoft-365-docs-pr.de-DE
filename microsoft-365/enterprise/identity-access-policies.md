@@ -1,6 +1,6 @@
 ---
 title: Allgemeine Richtlinien für Identitäts-und Geräte Zugriff – Microsoft 365 für Unternehmen | Microsoft-Dokumente
-description: Beschreibt die Richtlinien für Empfehlungen von Microsoft zur Anwendung von Identitäts- und Gerätezugriffsrichtlinien und -konfigurationen
+description: Beschreibt die empfohlenen allgemeinen Richtlinien und Konfigurationen für den Identitäts-und Geräte Zugriff.
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: Laurawi
@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 699bc04c8e286c004e1f47ae6825ae311434d9cb
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: 9819c161cc421117730cb4c58d1db06859125476
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898116"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332103"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Allgemeine Identitäts- und Gerätezugriffsrichtlinien
 In diesem Artikel werden die allgemeinen empfohlenen Richtlinien für die Sicherung des Zugriffs auf Cloud-Dienste beschrieben, einschließlich lokaler Anwendungen, die mit Azure AD-Anwendungs Proxy veröffentlicht werden. 
@@ -32,8 +32,8 @@ In diesem Leitfaden wird erläutert, wie die empfohlenen Richtlinien in einer ne
 
 Das folgende Diagramm zeigt die empfohlenen Richtlinien. Es wird angezeigt, auf welcher Schutzebene jede Richtlinie angewendet wird und ob die Richtlinien auf PCs oder Telefone und Tablets oder auf beide Gerätekategorien zutreffen. Außerdem wird angegeben, wo diese Richtlinien konfiguriert sind.
 
-[ ![ Allgemeine Richtlinien für das Konfigurieren von Identitäts-und Geräte Zugriff](../media/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png) 
- [Siehe eine größere Version dieses Abbilds](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
+[ ![ Allgemeine Richtlinien für das Konfigurieren von Identitäts-und Geräte Zugriff](../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png) 
+ [Siehe eine größere Version dieses Abbilds](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
 
 Im Rest dieses Artikels wird beschrieben, wie Sie diese Richtlinien konfigurieren. 
 
@@ -63,13 +63,13 @@ Eine empfohlene Vorgehensweise besteht darin, eine Azure Ad Gruppe für bedingte
 
 Das folgende Diagramm enthält ein Beispiel für Benutzerzuweisungen und-Ausschlüsse.
 
-![Beispiel für eine Benutzerzuweisung und Ausschlüsse für MFA-Regeln](../media/identity-access-policies-assignment.png)
+![Beispiel für eine Benutzerzuweisung und Ausschlüsse für MFA-Regeln](../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
 
 In der Abbildung wird dem "Top Secret Project X-Team" eine Richtlinie für den bedingten Zugriff zugewiesen, für die *immer*MFA erforderlich ist. Achten Sie bei der Anwendung eines höheren Schutzniveaus auf Benutzer mit Bedacht. Mitglieder dieses Projektteams müssen bei jeder Anmeldung zwei Formen der Authentifizierung bereitstellen, auch wenn Sie nicht hochregulierte Inhalte anzeigen.  
 
-Alle Azure Ad Gruppen, die als Teil dieser Empfehlungen erstellt wurden, müssen als Microsoft 365-Gruppen erstellt werden. Dies ist insbesondere für die Bereitstellung von AIP (Azure Information Protection) beim Schützen von Dokumenten in SharePoint Online wichtig.
+Alle Azure Ad Gruppen, die als Teil dieser Empfehlungen erstellt wurden, müssen als Microsoft 365-Gruppen erstellt werden. Dies ist besonders wichtig für die Bereitstellung von Sensitivitäts Bezeichnungen beim Sichern von Dokumenten in SharePoint Online.
 
-![Bildschirmaufnahme zum Erstellen von Microsoft 365-Gruppen](../media/identity-device-AAD-groups.png)
+![Bildschirmaufnahme zum Erstellen von Microsoft 365-Gruppen](../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
 
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>MFA basierend auf dem Anmelde Risiko erforderlich
@@ -249,7 +249,7 @@ Erstellen Sie eine Richtlinie für jede Plattform:
 - Android-Geräteadministrator
 - Android Enterprise
 - IOS/iPads
-- macOS
+- MacOS
 - Windows Phone 8.1
 - Windows 8.1 und höher
 - Windows 10 und höher

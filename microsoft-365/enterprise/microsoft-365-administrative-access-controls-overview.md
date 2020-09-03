@@ -1,7 +1,7 @@
 ---
 title: Administrative Zugriffssteuerung in Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Dieser Artikel bietet eine Übersicht über die administrativen Zugriffssteuerungen und die Datenkategorisierung in Microsoft 365.
-ms.openlocfilehash: b5063f89e89b6cffffda53a5df3088a80f89c242
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 817a5907566435d021fe78d89b5c9476c04318d0
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690337"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332592"
 ---
 # <a name="administrative-access-controls-in-microsoft-365"></a>Administrative Zugriffssteuerung in Microsoft 365 
 
@@ -94,8 +94,8 @@ Informationen zum Zuweisen von Administratorrollen und-Berechtigungen finden Sie
 
 ## <a name="related-links"></a>Links zu verwandten Themen
 
-- [Isolierungs Steuerelemente](microsoft-365-isolation-controls.md)
-- [Personalsteuer Elemente](microsoft-365-personnel-controls.md)
+- [Isolierungssteuerungen](microsoft-365-isolation-controls.md)
+- [Personalsteuerungen](microsoft-365-personnel-controls.md)
 - [Technologie Steuerelemente](microsoft-365-technology-controls.md)
 - [Überwachung und Überprüfung von Zugriffssteuerungen](microsoft-365-monitoring-and-auditing-access-controls.md)
 - [Yammer Enterprise-Zugriffssteuerungen](microsoft-365-yammer-enterprise-access-controls.md)

@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Kernprinzipien der Abwehr von Denial-of-Service-Angriffen
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,14 +15,14 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Wie Microsoft die Kernprinzipien der Absorption, Erkennung und Minderung bei der Abwehr von DOS-Angriffen (Denial of Service) verwendet.
-ms.openlocfilehash: b04ec717f7c97e44c6ed4011156666e8c27f06c0
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: fb3446570dd8e99ccdb3005a6a7c90ca90a81aee
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690487"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47331908"
 ---
-# <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>Grundlegende Prinzipien der Abwehr von Denial-of-Service-Angriffen
+# <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>Wichtige Grundsätze zum Schutz vor Denial-of-Service-Angriffen
 
 Die drei Hauptprinzipien bei der Verteidigung gegen netzwerkbasierte DOS-Angriffe sind Absorption, Erkennung und Minderung. Die Absorption erfolgt vor der Erkennung, und die Erkennung erfolgt vor der Minderung. Absorption ist die beste Verteidigung gegen einen DOS-Angriff. Wenn der Angriff nicht erkannt werden kann, kann er nicht gemindert werden. Wenn aber selbst der kleinste DOS-Angriff nicht absorbiert werden kann, werden Dienste nicht lange genug überleben, damit der Angriff erkannt wird.
 

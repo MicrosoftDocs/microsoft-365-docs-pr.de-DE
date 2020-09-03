@@ -1,7 +1,7 @@
 ---
 title: Überwachung und Berichterstellung in Microsoft Cloud Services
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -18,12 +18,12 @@ f1.keywords:
 - NOCSH
 description: Eine Übersicht über die Überwachungs-und Berichtsfunktionen in Office 365, Microsoft 365 und Service Assurance.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 89c7ff3556e71ead8ced94bdc396da1c862c2f57
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 11dbf29faf028ec9ed0274c806fc8c8979a6f1fd
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695953"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332580"
 ---
 # <a name="auditing-and-reporting-in-microsoft-cloud-services"></a>Überwachung und Berichterstellung in Microsoft Cloud Services
 

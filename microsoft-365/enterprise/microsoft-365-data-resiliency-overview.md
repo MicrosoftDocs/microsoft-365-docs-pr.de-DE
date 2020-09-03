@@ -1,7 +1,7 @@
 ---
 title: Datenresilienz in Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: In diesem Artikel erfahren Sie mehr über den Entwurf und die Grundsätze der Datenausfall Sicherheit und-Wiederherstellung in Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a0e6ca643fe9842a71102fbabd3c05324ba52b70
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2474417100c68139c53d71e6031bbbe13b994677
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690475"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47331884"
 ---
 # <a name="data-resiliency-in-microsoft-365"></a>Datenresilienz in Microsoft 365
 

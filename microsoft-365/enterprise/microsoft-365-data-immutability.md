@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365-Daten Unveränderlichkeit
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: In diesem Artikel erfahren Sie, wie Microsoft 365 Daten in auffindbarem Format aufrecht erhält, um behördliche Bestimmungen, interne Steuerungsanforderungen und Prozessrisiken zu beheben.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2c070eea4498aca89d7cdb8fea233d9b9596491a
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: ce3b3f0f5036ab76be714747d7e95fe86139dd75
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690486"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47331920"
 ---
 # <a name="immutability-in-microsoft-365"></a>Unveränderbarkeit in Microsoft 365
 
