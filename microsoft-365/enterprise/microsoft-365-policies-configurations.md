@@ -17,12 +17,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 9eaea7579faedace50ca76a69997fbfd83e452bb
-ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
+ms.openlocfilehash: 72344e1918a85de65ab7de8a60b7ace0b2629ac6
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47321916"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332749"
 ---
 # <a name="identity-and-device-access-configurations"></a>Konfigurationen für den Identitäts- und Gerätezugriff
 
@@ -161,7 +161,7 @@ Es wird empfohlen, dass unternehmenseigene Geräte von InTune oder von der Domä
 ![Schritte zum Konfigurieren des Identitäts-und Gerätezugriffs.](../media/microsoft-365-policies-configurations/identity-device-access-steps.png)
 
 1. Konfigurieren Sie die erforderlichen Identitätsfeatures und deren Einstellungen.
-2. Konfigurieren Sie die gängigsten Identitäts-und Zugriffsrichtlinien für bedingten Zugriff.
+2. Konfigurieren der allgemeinen Identitäts-und Zugriffsrichtlinien für den bedingten Zugriff.
 3. Konfigurieren Sie Richtlinien für bedingten Zugriff für Gast-und externe Benutzer.
 4. Konfigurieren Sie Richtlinien für bedingten Zugriff für Microsoft 365 Cloud-apps wie Microsoft Teams, Exchange Online und SharePoint.
 

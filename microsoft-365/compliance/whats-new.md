@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Unabhängig davon, ob neue Lösungen zum Compliance Center hinzugefügt werden, vorhandene Funktionen auf der Grundlage Ihres Feedbacks aktualisiert werden oder eine aktualisierte Dokumentation bereitgestellt wird, hilft Ihnen Microsoft 365, die ständig wechselnde Compliance-Landschaft zu überwachen. Finden Sie heraus, was wir diesen Monat vorhaben.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 95b23ccdb272c9e91ee4c525fd90679c492efc9b
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: 750d8274faa5e68f8d36006f8ccf6d7fa55f8250
+ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868972"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47336668"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Neuerungen in der Microsoft 365-Compliance
 
@@ -36,6 +36,32 @@ Unabhängig davon, ob neue Lösungen zum [Microsoft 365 Compliance Center](micro
 > [!TIP]
 > Interessieren Sie sich dafür, was in anderen Admin Centers geschieht? Dann lesen Sie die folgenden Artikel:<br>[Neuerungen im Microsoft 365 Admin Center](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Aktive Websites im SharePoint Online Admin Center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Neues in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
 Besuchen Sie die [Microsoft 365-Roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap), um sich über Features von Microsoft 365 zu informieren, die eingeführt wurden, bereitgestellt werden, sich in der Entwicklung befinden, eingestellt oder zuvor veröffentlicht wurden.
+
+## <a name="july-2020"></a>Juli 2020
+
+### <a name="spotlight-on-help-docs"></a>Hilfedokumente im Rampenlicht
+
+Damit Sie besser verstehen, welche Compliance-Lösungen zum Schutz und zur Steuerung vertraulicher Daten Ihrer Organisation verwendet werden, haben wir zwei neue Zielseiten mit Übersichten darüber erstellt, wie die Lösungen zusammenarbeiten, um diese Ziele zu erreichen, einschließlich Links zu verwandten Dokumenten, damit Sie weiter eintauchen können.
+
+[Microsoft Information Protection in Microsoft 365](protect-information.md)<br>
+[Microsoft Information Governance in Microsoft 365](manage-Information-governance.md)
+
+### <a name="advanced-ediscovery-add-non-custodial-data-sources-to-your-cases"></a>Erweiterte eDiscovery: Hinzufügen von Datenquellen ohne Freiheitsentzug zu ihren Fällen
+
+Hinzufügen von Daten zu einem Fall, ohne ihn einer Depotbank zuzuordnen (als [Datenquellen ohne Freiheitsentzug](non-custodial-data-sources.md)bezeichnet). Wenn Sie diese Daten ohne Freiheitsentzug in die Warteschleife stellen müssen, können Sie dies mit unserem neuen Feature für erweiterte Indizierung tun.
+
+### <a name="data-connectors-hr-connector-enhancements"></a>Daten Konnektoren: Verbesserungen des HR-Connectors
+
+(In der Vorschau) Mit einer neuen Version des [HR-Konnektors](import-hr-data.md) können Sie Daten im Zusammenhang mit Änderungen auf Auftragsebene, Leistungsbewertungen und Pläne zur Leistungsverbesserung importieren. Diese Daten können dann in mehreren [Insider Risikorichtlinien](insider-risk-management-policies.md) verwendet werden, um verwandte Aktivitäten zu erkennen.
+
+### <a name="retention-labels-new-support-for-email"></a>Aufbewahrungs Bezeichnungen: neue Unterstützung für e-Mail
+
+Sie können jetzt eine [Aufbewahrungs Bezeichnung](retention.md#retention-labels) erstellen, um e-Mails basierend auf der Bezeichnung der Nachrichten beizubehalten. Dies gilt nicht für Kalenderelemente, die basierend auf dem Senden des Elements beibehalten werden.
+
+### <a name="sensitivity-labels-new-feature-and-an-improvement"></a>Vertraulichkeits Bezeichnungen: neues Feature und eine Verbesserung
+
+- (In der Vorschau) Wenn Sie Verschlüsselungseinstellungen für eine Bezeichnung konfigurieren, suchen Sie nach der neuen Option, um die [Doppelschlüssel Verschlüsselung](encryption-sensitivity-labels.md#double-key-encryption) zu verwenden, um die beschrifteten Dateien und e-Mails weiter zu schützen.
+- Beim Erstellen oder Löschen von Vertraulichkeits Bezeichnungen oder beim Erstellen, bearbeiten oder Löschen Ihrer Bezeichnungsrichtlinien werden Änderungen jetzt innerhalb einer Stunde für alle Benutzer, Apps und Dienste synchronisiert.
 
 ## <a name="june-2020"></a>Juni 2020
 
@@ -293,20 +319,3 @@ Wechseln Sie zu [Einschränken des Zugriffs auf Inhalte mithilfe von Sensitivit�
 ### <a name="update-to-data-investigations"></a>Aktualisierung von Datenuntersuchungen
 
 Wenn Sie eine Datenuntersuchung durchführen, können Sie jetzt Elemente von den ursprünglichen Speicherorten löschen. Dies bedeutet, dass Sie Elemente aus Exchange-Postfächern, SharePoint-Websites und OneDrive-Konten in Ihrer ganzen Organisation löschen können. Da Sie die Elemente als Beweis gesammelt haben, wurden Kopien davon im Beweissatz aufbewahrt, die Sie weiter untersuchen oder einfach als Referenz behalten können. [Weitere Informationen](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) Wenn Sie eine Daten Untersuchung durchführen, können Sie jetzt Elemente aus ihren ursprünglichen Speicherorten löschen. Dies bedeutet, dass Sie Elemente aus Exchange-Postfächern, SharePoint-Websites und OneDrive-Konten in Ihrer ganzen Organisation löschen können. Da Sie die Elemente als Beweis gesammelt haben, wurden Kopien davon im Beweissatz aufbewahrt, die Sie weiter untersuchen oder einfach als Referenz behalten können. Wechseln Sie zu [manage a Data Spilling Incident in Microsoft 365](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) , um weitere Informationen zu erhalten. 
-
-## <a name="july-2019"></a>Juli 2019
-
-### <a name="new-admin-roles"></a>Neue Administratorrollen
-
-Wir haben zwei neue Administratorrollen veröffentlicht, um die Sicherheit und Compliance in Ihrer Organisation verwalten zu helfen. Informieren Sie alle Ihre Freunde darüber.
-
-- **Compliancedaten-Administrator**: Benutzer mit dieser Rolle verfügen über Berechtigungen zum Schützen und Nachverfolgen von Daten im Microsoft 365 Compliance Center, Microsoft 365 Admin Center und in Azure. Die Benutzer können auch alle Features im Exchange Admin Center, Compliance Manager sowie im Teams und Skype for Business Admin Center verwalten und Supporttickets für Azure und Microsoft 365 erstellen.
-- **Sicherheitsoperator**: Benutzer mit dieser Rolle können Warnungen verwalten und verfügen über globalen schreibgeschützten Zugriff auf sicherheitsbezogene Features, einschließlich aller Informationen in Microsoft 365 Security Center, Azure Active Directory, Identity Protection, Privileged Identity Management sowie Office 365 Security & Compliance Center.
-
-[Weitere Informationen zu diesen Rollen](https://docs.microsoft.com/microsoft-365/security//office-365-security/permissions-microsoft-365-compliance-security)
-
-### <a name="search-and-filtering-for-reports"></a>Suchen und Filtern nach Berichten
-
-Sie müssen nicht mehr durch ein Meer von Berichten scrollen, um die gewünschten zu finden. Jetzt können Sie nach Berichten (basierend auf ihren Titeln) suchen und nach Kategorien wie "Bezeichnungen" und "Compliance" sowie nach Quellen wie "Office 365" und "Microsoft Cloud App Security" filtern.
-
-![Bildschirmaufnahme der Schaltflächen "Suchen" und "Filtern" für Berichte mit einem angewendeten Filter](../media/mcc_report_filtering.png)

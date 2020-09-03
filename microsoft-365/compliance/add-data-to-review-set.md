@@ -18,16 +18,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie, wie Sie Suchergebnisse oder Beispiele dieser Suchergebnisse zu einer erweiterten eDiscovery-Fall Prüfungsgruppe hinzufügen.
-ms.openlocfilehash: 687cc33c0e7e6a09fb352e9c13058a6fcac30053
-ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
+ms.openlocfilehash: 6eed13c2096ad3cd33fbc7af93399824866b17c2
+ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46814527"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47336652"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Hinzufügen von Suchergebnissen zu einem Prüfdateisatz
 
-Wenn Sie mit den Ergebnissen einer Suche zufrieden sind und Sie diese Suchergebnisse überprüfen und analysieren möchten, können Sie Sie zu einem Überprüfungs in dem Fall hinzufügen. Durch das Kopieren der ursprünglichen Daten in den Überprüfungs wird auch der Überprüfungs-und Analyseprozess erleichtert, indem Ihnen erweiterte Analysetools bereitgestellt werden, beispielsweise die Erkennung von Designs, die Erkennung praktischer Duplikate und die e-Mail-Threadidentifikation. Sie können auch Daten aus nicht-Microsoft 365-Datenquellen zu einem Überprüfungs Satz hinzufügen, damit Sie diese Daten zusätzlich zu den von Microsoft 365 erfassten Daten überprüfen können. 
+Wenn Sie mit den Ergebnissen einer Suche zufrieden sind und Sie diese Suchergebnisse überprüfen und analysieren möchten, können Sie Sie zu einem Überprüfungs in dem Fall hinzufügen. Durch das Kopieren der ursprünglichen Daten in den Überprüfungs wird auch der Überprüfungs-und Analyseprozess erleichtert, indem Ihnen erweiterte Analysetools bereitgestellt werden, beispielsweise die Erkennung von Designs, die Erkennung praktischer Duplikate und die e-Mail-Threadidentifikation. Sie können auch Daten aus nicht-Microsoft 365-Datenquellen zu einem Überprüfungs Satz hinzufügen, damit Sie diese Daten zusätzlich zu den von Microsoft 365 erfassten Daten überprüfen können.
 
 Wenn Sie die Ergebnisse einer Suche zu einem Überprüfungs Satz hinzufügen (die Überprüfungs Sätze werden in einem Fall auf der Registerkarte **Überprüfungs Sätze** aufgeführt), treten die folgenden Dinge auf:
 
@@ -35,27 +35,25 @@ Wenn Sie die Ergebnisse einer Suche zu einem Überprüfungs Satz hinzufügen (di
 
 - Alle Elemente in den Suchergebnissen werden aus der ursprünglichen Datenquelle in den Live-Diensten kopiert und in einen sicheren Azure-Speicherort in der Microsoft-Cloud kopiert.
 
-- Alle Elemente (einschließlich der Inhalte und Metadaten) werden erneut indiziert, sodass alle Daten in der Überprüfungsgruppe während der Überprüfung der Falldaten vollständig durchsuchbar sind. Das erneute Indizieren der Daten führt zu einer gründlichen und schnellen Suche, wenn Sie die Daten im Überprüfungspaket während der Fallprüfung durchsuchen.
+- Alle Elemente (einschließlich der Inhalte und Metadaten) werden neu indiziert, sodass alle Daten in der Überprüfungsgruppe während der Überprüfung der Falldaten vollständig durchsuchbar sind. Durch das Neuindizieren der Daten werden gründliche und schnelle Suchvorgänge durchsucht, wenn Sie die Daten im Überprüfungs Satzes während der Fall Ermittlung durchsuchen.
 
 Klicken Sie zum Hinzufügen von Daten zu einem Überprüfungs Satzes auf der Registerkarte **Suchen** auf eine Suche, und klicken Sie dann auf der Flyout-Seite auf **zu überprüfende Ergebnisse hinzufügen** .
 
-![Hinzufügen von Daten zu einem Überprüfungs Satzes](../media/c1b4fc00-7a15-4587-b9b0-ce594bb02e4d.png)
+Sie können zu einer vorhandenen Überprüfungsgruppe hinzufügen oder einen neuen Überprüfungs erstellen.  Wenn Sie zu einem neuen Überprüfungs Satzes hinzufügen, geben Sie den Namen an, und klicken Sie dann auf **Hinzufügen** , um die Flyout-Seite anzuzeigen.
 
-Sie können zu einer vorhandenen Überprüfungsgruppe hinzufügen oder einen neuen Überprüfungs erstellen.  Wenn Sie zu einem neuen Überprüfungs Sätze hinzufügen, geben Sie den Namen an, und klicken Sie dann auf **Hinzufügen**.
+![Auswählen eines Überprüfungs Satzes und Konfigurieren von Sammlungsoptionen](../media/AeD_AddToReviewSet.png)
 
-![Auswählen eines Überprüfungs Satzes](../media/e8c6ab51-da8d-4c39-9b21-26bfdf453fb9.png)
+Das Hinzufügen von Daten zu einem Prüfdateisatz ist ein langwieriger Prozess. Dieser Prozess umfasst das Sammeln von Elementen aus den ursprünglichen Datenquellen in Microsoft 365 (beispielsweise aus Postfächern und Websites), das Kopieren dieser Elemente in den Azure-Speicherort (dieser Kopiervorgang wird auch als *Einnahme*bezeichnet) und anschließendes Neuindizieren der Elemente. Sie können den Fortschritt auf der Registerkarte **Aufträge** oder auf der Registerkarte **Suchen** überwachen, indem Sie den Status in der Spalte **hinzugefügte Daten zum Überprüfen des Satzes über** wachen. Klicken Sie nach Abschluss der Überarbeitungs Satzverarbeitung in der Anfrage auf die Registerkarte Überprüfungs **Sätze** , und klicken Sie dann auf den Überprüfungs Satz, um das Filtern, überprüfen, markieren und Exportieren von Daten in der Überprüfungsgruppe zu starten.
 
 ## <a name="define-options-to-scope-your-collection-for-review"></a>Definieren von Optionen zum Bereich Ihrer Sammlung zur Überprüfung
 
-Wenn Sie den Inhalt einer Suche zu einer vorhandenen Überprüfungsgruppe hinzufügen oder einen neuen erstellen, haben Sie Optionen zum Erfassen der Inhalte zur Überprüfung:
+Wenn Sie den Inhalt einer Suche einem vorhandenen oder neuen Überprüfungs Sätzen hinzufügen, haben Sie die folgenden Optionen zum Erfassen der Inhalte zur Überprüfung:
 
-- **Konversations Überprüfungs Satz** : die dem Überprüfungs Satz hinzugefügten Elemente werden für threadbezogene Unterhaltungen aktiviert, damit Inhalte im Kontext der hin-und her-Unterhaltung überprüft werden, siehe Weitere Informationen in diesem Artikel [Conversation Review Sets]
+- **Versionen von SharePoint einbeziehen (Beta)**: Verwenden Sie diese Option, um die Sammlung aller Versionen eines SharePoint-Dokuments pro Versions Limits und Suchparametern der Auflistung zu aktivieren. Durch Auswahl dieser Option wird die Größe der Elemente, die dem Überprüfungs Satzes hinzugefügt werden, erheblich erhöht.
 
-- **Abruf für moderne Anlage aktivieren** – verwenden Sie dieses Steuerelement, um moderne Anlagen oder verknüpfte Dateien zur weiteren Überprüfung in die Sammlung einzubeziehen. Weitere Informationen zu den neuen durchsuchbaren Feldnamen, die für die Gruppierung dieses Inhalts zur Verfügung stehen, finden Sie unter [Document Metadata fields in Advanced eDiscovery]
+- **Unterhaltungs Abrufoptionen**: Elemente, die dem Überprüfungs Satzes hinzugefügt wurden, sind für Thread gestützte Unterhaltungen aktiviert, um Inhalte im Kontext der hin-und her-Unterhaltung zu überprüfen. Weitere Informationen finden Sie unter [Review Conversations in Advanced eDiscovery](conversation-review-sets.md).
 
-- **Include-Versionen von SharePoint (Beta)** : dieses Steuerelement ermöglicht die Sammlung aller Versionen einer SharePoint-Datei pro Versions Limits und Suchparametern der Auflistung. Hinweis: dieses Steuerelement nimmt die Größe der Auflistung erheblich zu.
-
-Das Hinzufügen von Daten zu einem Prüfdateisatz ist ein langwieriger Prozess. Dieser Prozess umfasst das Sammeln von Elementen aus den ursprünglichen Datenquellen in Microsoft 365 (beispielsweise aus Postfächern und Websites), das Kopieren dieser Elemente in den Azure-Speicherort (dieser Kopiervorgang wird auch als *Einnahme*bezeichnet) und das anschließende erneute Indizieren der Elemente. Sie können den Fortschritt auf der Registerkarte **Aufträge** oder auf der Registerkarte **Suchen** überwachen, indem Sie den Status in der Spalte **hinzugefügte Daten zum Überprüfen des Satzes über** wachen. Klicken Sie nach Abschluss der Überarbeitungs Satzverarbeitung auf die Registerkarte **Überprüfungs Sätze** für den Fall, und klicken Sie auf den Überprüfungs Satz, um das Filtern, überprüfen, markieren und Exportieren von Daten in der Überprüfungsgruppe zu starten.
+- **Abruf für moderne Anlagen aktivieren**: Verwenden Sie diese Option, um moderne Anlagen oder verknüpfte Dateien in die Sammlung zur weiteren Überprüfung einzubeziehen. Weitere Informationen zu den durchsuchbaren Eigenschaften im Zusammenhang mit modernen Anlagen finden Sie unter [Document Metadata fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).
 
 ## <a name="add-a-sample-to-a-review-set"></a>Hinzufügen eines Beispiels zu einem Überprüfungs Satzes
 

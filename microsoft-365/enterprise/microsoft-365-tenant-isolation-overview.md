@@ -1,7 +1,7 @@
 ---
 title: Mandanten Isolierung in Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Dieser Artikel enthält eine Zusammenfassung darüber, wie Microsoft die Mandanten Isolierung in Cloud-Diensten wie Microsoft 365 erzwingt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ea97cbe9b6c23f7ed0006fbe78a4deb5f35b5ab7
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 7aca35fc61d03e94225375fcf67970e13dd691c9
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690667"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332688"
 ---
 # <a name="tenant-isolation-in-microsoft-365"></a>Mandanten Isolierung in Microsoft 365
 

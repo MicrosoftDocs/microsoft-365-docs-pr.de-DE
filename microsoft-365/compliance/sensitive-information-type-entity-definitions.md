@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: Die Verhinderung von Datenverlust im Security &amp; Compliance Center umfasst 80 Typen für vertrauliche Informationen, die Sie in ihren DLP-Richtlinien verwenden können. Dieses Thema enthält eine Liste aller dieser vertraulichen Informationstypen und zeigt, was eine DLP-Richtlinie sucht, wenn sie den jeweiligen Typen erkennt.
-ms.openlocfilehash: 71969a58acd64c3e830da398288249cbb8610b5f
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: 17c32ea53d860e54a7c9a8fcf70778151c28c539
+ms.sourcegitcommit: 6ad2e4164ed59d5a58a0df9cb8413531c1be0986
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797793"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47334848"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Entitätsdefinitionen für Typen vertraulicher Informationstypen
 
@@ -506,9 +506,6 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
       <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_australian_tax_file_number" />
         <Match idRef="Keyword_Australia_Tax_File_Number" />
-        <Any minMatches="0" maxMatches="0">
-          <Match idRef="Keyword_number_exclusions" />
-        </Any>
       </Pattern>
     </Entity>
 ```
@@ -526,39 +523,6 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 - individual tax return
 - tax file number
 - TFN
-
-#### <a name="keyword_number_exclusions"></a>Keyword_number_exclusions
-
-- 00000000
-- 11111111
-- 22222222
-- 33333333
-- 44444444
-- 55555555
-- 66666666
-- 77777777
-- 88888888
-- 99999999
-- 000000000
-- 111111111
-- 222222222
-- 333333333
-- 444444444
-- 555555555
-- 666666666
-- 777777777
-- 888888888
-- 999999999
-- 0000000000
-- 1111111111
-- 2222222222
-- 3333333333
-- 4444444444
-- 5555555555
-- 6666666666
-- 7777777777
-- 8888888888
-- 9999999999
 
 ## <a name="austria-drivers-license-number"></a>Österreichische Führerscheinnummer
 Diese Typen Entität für vertrauliche Informationen ist nur im vertraulichen Informationstyp für den EU-Führerscheinnummer verfügbar.
@@ -728,7 +692,9 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die  `Func_austria_eu_ssn_or_equivalent` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die Funktion "Func_austria_eu_
+
+_or_equivalent "sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 - Ein Schlüsselwort aus  `Keywords_austria_eu_ssn_or_equivalent` wurde gefunden. 
     
@@ -2864,20 +2830,28 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 
 #### <a name="keyword_cc_verification"></a>Keyword_cc_verification
 
-- card verification
+- 
+card verification
+
 - card identification number
 - CVN
 - cid
 - CVC2
 - CVV2
-- pin block
+- 
+pin block
 - security code
+
 - security number
+
 - security no
+
 - issue number
+
 - issue no
 - cryptogramme
-- numéro de sécurité
+- 
+numéro de sécurité
 - numero de securite
 - kreditkartenprüfnummer
 - kreditkartenprufnummer
@@ -2888,24 +2862,32 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 - sicherheitsnummer
 - verfalldatum
 - codice di verifica
-- COD. Sicurezza
-- cod sicurezza
+- COD.Sicurezza
+- 
+cod sicurezza
 - n autorizzazione
 - Código
 - codigo
-- COD. SEG
-- cod seg
+- COD.SEG
+- 
+cod seg
 - código de segurança
+
 - codigo de seguranca
+
 - codigo de segurança
+
 - código de seguranca
-- cód. Segurança
-- COD. Seguranca COD. Segurança
-- cód. seguranca
-- cód segurança
-- COD Seguranca COD Segurança
-- cód seguranca
+- cód.Segurança
+- COD.seguranca
+- COD.Segurança
+- cód.seguranca
+- cód Segurança
+- COD-Seguranca
+- COD-Segurança
+- cód seguranca
 - número de verificação
+
 - numero de verificacao
 - Ablauf
 - Gültig bis
@@ -2913,60 +2895,85 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 - Gultig bis
 - gultigkeitsdatum
 - scadenza
-- data scad
+- 
+data scad
 - fecha de expiracion
+
 - fecha de venc
 - vencimiento
-- válido hasta
+- 
+válido hasta
 - valido hasta
 - VTO
-- data de expiração
+- 
+data de expiração
 - data de expiracao
+
 - data em que expira
 - validade
 - Valor
 - vencimento
-- Venc 
+- Transaktion
+- Transaktionsnummer
+- Referenznummer
+- セキュリティコード
+- セキュリティ コード
+- セキュリティナンバー
+- セキュリティ ナンバー
+- セキュリティ番号
+
 
 #### <a name="keyword_cc_name"></a>Keyword_cc_name
 
 - Amex
 - american express
 - AmericanExpress
+- americano espresso
+
 - Visa
 - MasterCard
 - master card
-- Verwaltungskonsole 
+- Verwaltungskonsole
 - MasterCards gesichert
-- master cards
-- diner's Club
+- 
+master cards
+- Diner es Club
 - diners club
 - DinersClub
+- ermitteln
 - discover card
 - discovercard
 - discover cards
 - JCB
+- BrandSmart
 - japanese card bureau
+
 - carte blanche
 - CarteBlanche
 - credit card
 - CC #
 - cc #:
-- expiration date
+- Ablaufdatum
 - exp date
-- expiry date
-- Datum d'expiration
-- date d'exp
-- date expiration
+
+- 
+expiry date
+- 
+date d’expiration
+- 
+date d'exp
+- 
+date expiration
 - bank card
 - Bankcard
-- card number
+- 
+card number
 - card num
 - cardNumber
 - cardnumbers
 - card numbers
 - CreditCard
-- credit cards
+- Kreditkarten
 - creditCards
 - Angaben
 - card holder
@@ -2986,14 +2993,36 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 - atm cards
 - atmcards
 - enroute
-- en route
+- 
+en route
 - card type
+
+- Cardmember acct
+- cardmember-Konto
+- Cardno
+- Unternehmenskarte
+- Unternehmenskarten
+- Typ der Karte
+- Kartenkonto Nummer
+- Karten Mitgliedskonto
+- Cardmember acct.
+- card no.
+
+- Karte Nein
+- card number
+
 - carte bancaire
+
 - carte de crédit
+
 - carte de credit
+
 - numéro de carte
+
 - numero de carte
+
 - nº de la carte
+
 - nº de carte
 - kreditkarte
 - Karte
@@ -3003,61 +3032,124 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 - kreditkarteninstitut
 - kreditkartentyp
 - eigentümername
-- kartennr 
+- kartennr
 - kartennummer
 - kreditkartennummer
 - Kreditkarten-Nummer
-- carta di credito
+- 
+carta di credito
 - carta credito
-- Carta
+- n.Carta
 - n carta
-- Nr. Carta
-- nr carta
+- Nr.Carta
+- 
+nr carta
 - numero carta
+
 - numero della carta
+
 - numero di carta
+
 - tarjeta credito
+
 - tarjeta de credito
-- tarjeta crédito
-- tarjeta de crédito
+
+- 
+tarjeta crédito
+- 
+tarjeta de crédito
 - tarjeta de atm
+
 - tarjeta atm
+
 - tarjeta debito
+
 - tarjeta de debito
-- tarjeta débito
-- tarjeta de débito
+
+- 
+tarjeta débito
+- 
+tarjeta de débito
 - nº de tarjeta
-- Nein. de tarjeta
-- no de tarjeta
+- Nein.de tarjeta
+- kein de Tarjeta
 - numero de tarjeta
+
 - número de tarjeta
+
 - tarjeta no
 - tarjetahabiente
-- cartão de crédito
+- 
+cartão de crédito
 - cartão de credito
+
 - cartao de crédito
+
 - cartao de credito
+
 - cartão de débito
+
 - cartao de débito
+
 - cartão de debito
+
 - cartao de debito
+
 - débito automático
 - debito automatico
-- número do cartão
-- numero do cartão 
+
+- 
+número do cartão
+- numero do cartão
+
 - número do cartao
+
 - numero do cartao
+
 - número de cartão
+
 - numero de cartão
+
 - número de cartao
+
 - numero de cartao
-- nº do cartão
+
+- nº do Cartão
 - nº do cartao
-- nº. do cartão
-- no do cartão
-- no do cartao
-- Nein. do cartão
-- Nein. do cartao 
+- nº.do cartão
+- keine do-Cartão
+- keine do cartao
+- Nein.do cartão
+- Nein.do cartao
+- クレジットカード番号
+- クレジットカードナンバー
+- クレジットカード＃
+- クレジットカード
+- クレジット
+- クレカ
+- カード番号
+- カードナンバー
+- カード＃
+- アメックス
+- アメリカンエクスプレス
+- アメリカン エクスプレス
+- Visaカード
+- Visa-カード
+- マスターカード
+- マスター カード
+- マスター
+- ダイナースクラブ
+- ダイナース クラブ
+- ダイナース
+- 有効期限
+- 期限
+- キャッシュカード
+- キャッシュ カード
+- カード名義人
+- カードの名義人
+- カードの名義
+- デビット カード
+- デビットカード
 
 ## <a name="croatia-drivers-license-number"></a>Kroatische Führerscheinnummer
 Diese Typen Entität für vertrauliche Informationen ist nur im vertraulichen Informationstyp für den EU-Führerscheinnummer verfügbar.
@@ -6724,12 +6816,9 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Der reguläre Ausdruck Regex_indonesia_id_card findet Inhalte, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus Keyword_indonesia_id_card wurde gefunden.
-
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläre Ausdruck Regex_indonesia_id_card findet Inhalte, die mit dem Muster übereinstimmen.
 
 ```xml
 <!-- Indonesia Identity Card (KTP) Number -->
@@ -6737,10 +6826,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
   <Pattern confidenceLevel="85">
      <IdMatch idRef="Regex_indonesia_id_card"/>
      <Match idRef="Keyword_indonesia_id_card"/>
-  </Pattern>
-  <Pattern confidenceLevel="75">
-     <IdMatch idRef="Regex_indonesia_id_card"/>
-  </Pattern>
 </Entity>
 ```
 
@@ -12258,7 +12343,16 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 - soziale Sicherheit
 - great britain
-- Versicherungs
+
+- NI-Nummer
+- NI-Nr.
+- NI #
+- NI #
+- Versicherungs #
+- insurancenumber
+- nationalinsurance #
+- nationalinsurancenumber
+
     
 ## <a name="uk-tax-identification-number"></a>Britannien Steueridentifikationsnummer
 Diese vertrauliche Informationstyp Entität ist nur im vertraulichen Informationstyp EU-Steueridentifikationsnummer verfügbar.
@@ -12693,14 +12787,18 @@ Eine DLP-Richtlinie ist zu 55 % sicher, dass diese Art von vertraulichen Inform
 
 #### <a name="keyword_ssn"></a>Keyword_ssn
 
-- Social Security 
-- Social Security# 
-- Soc Sec 
-- SSN 
-- Sozialversicherungsnummern 
-- SSN # 
-- SS # 
-- SSID 
+- SSA-Nummer
+- social security number
+- soziale Sicherheit #
+- soziale Sicherheit #
+- Sozialversicherungsnummer
+- Social Security#
+- Soc Sec
+- SSN
+- Sozialversicherungsnummern
+- SSN #
+- SS #
+- SSID
    
 ## <a name="us--uk-passport-number"></a>USA/U.K. passport number
 Großbritannien Passport-Nummer vertraulicher Informationstyp Entität ist im vertraulichen Informationstyp EU-Passport-Nummer verfügbar und steht als eigenständige vertrauliche Informationstyp Entität zur Verfügung.

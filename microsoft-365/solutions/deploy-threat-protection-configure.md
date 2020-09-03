@@ -13,12 +13,12 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: fb1290a0f0b884fdbc630cbfcd10cd1102c8acae
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: a5f3f93ad70210143cbe774c2a4e96542b1cfd34
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597509"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332676"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Konfigurieren von Threat Protection-Funktionen in Microsoft 365
 
@@ -32,12 +32,12 @@ Führen Sie die folgenden Schritte aus, um den Bedrohungsschutz in Microsoft 365
 Microsoft hat getestet und empfiehlt eine bestimmte Gruppe von bedingten Zugriffen und zugehörigen Richtlinien für den Schutz des Zugriffs auf alle Ihre SaaS-Anwendungen, insbesondere Microsoft 365. Richtlinien werden für den grundlegenden, vertraulichen und streng reglementierten Schutz empfohlen. Beginnen Sie mit der Implementierung der Richtlinien für den grundlegenden Schutz. 
 
 
-[ ![ Allgemeine Richtlinien für das Konfigurieren von Identitäts-und Geräte Zugriff](../media/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png) 
- [Siehe eine größere Version dieses Abbilds](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
+[ ![ Allgemeine Richtlinien für das Konfigurieren von Identitäts-und Geräte Zugriff](../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png) 
+ [Siehe eine größere Version dieses Abbilds](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
 
 ### <a name="to-implement-baseline-protection-for-microsoft-365"></a>So implementieren Sie den Basisschutz für Microsoft 365
 
-![Prozess für die Bereitstellung von Threat Protection-Funktionen](../media/solutions-architecture-center/deploy-threat-protection-identity-access-steps.png) 
+![Prozess für die Bereitstellung des Basis Schutzes](../media/solutions-architecture-center/deploy-threat-protection-identity-access-steps.png) 
 
 1. [Konfigurieren von Voraussetzungen, einschließlich Azure Identity Protection](../enterprise/identity-access-prerequisites.md).
 2. [Konfigurieren allgemeiner Identitäts-und Gerätezugriffs Richtlinien](../enterprise/identity-access-policies.md) für den grundlegenden Schutz.
@@ -60,7 +60,7 @@ Azure ATP aktiviert Sicherheitsfunktionen (Polizisten), Analysten und Sicherheit
 
 ### <a name="to-set-up-azure-atp"></a>So richten Sie Azure ATP ein
 
-![Prozess für die Bereitstellung von Threat Protection-Funktionen](../media/solutions-architecture-center/deploy-azure-atp-steps.png) 
+![Prozess für die Bereitstellung von Azure ATP](../media/solutions-architecture-center/deploy-azure-atp-steps.png) 
 
 1. [Einrichten von Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) zum Schutz Ihrer primären Umgebungen.
 2. Schützen Sie alle [Domänencontroller](https://docs.microsoft.com/azure-advanced-threat-protection/atp-sensor-monitoring) und [Gesamtstrukturen](https://docs.microsoft.com/azure-advanced-threat-protection/atp-multi-forest).
@@ -80,7 +80,7 @@ Microsoft Threat Protection vereinigt Warnungen, Vorfälle, automatisierte Unter
 
 ### <a name="to-set-up-microsoft-threat-protection"></a>So richten Sie Microsoft Threat Protection ein
 
-![Prozess für die Bereitstellung von Threat Protection-Funktionen](../media/solutions-architecture-center/deploy-mtp-steps.png) 
+![Prozess für die Bereitstellung von Microsoft Threat Protection](../media/solutions-architecture-center/deploy-mtp-steps.png) 
 
 1. [Überprüfen Sie die Voraussetzungen](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites).
 2. [Aktivieren Sie Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable).
@@ -97,14 +97,14 @@ Microsoft Threat Protection vereinigt Warnungen, Vorfälle, automatisierte Unter
 
 |Konfigurations-, Schutz-und Erkennungsfunktionen|Funktionen für Automatisierung, Untersuchung, Korrektur und Bildung|
 |---|---|
-|[Sichere Anlagen](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br/>[Sichere Links](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)<br/>[Sichere Dokumente](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)<br/>[ATP für SharePoint, OneDrive und Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)<br/>[ATP-Schutz gegen Phishing](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#exclusive-settings-in-atp-anti-phishing-policies)|[Nachverfolgungslisten für Bedrohungen](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-trackers)<br/>[Sicherheitsrisiken-Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)<br/>[Automatische Untersuchung und Reaktion](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>[Angriffssimulator](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulator)|
+|[Sichere Anlagen](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br/>[Sichere Links](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)<br/>[Sichere Dokumente](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)<br/>[ATP für SharePoint, OneDrive und Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)<br/>[ATP Antiphishingschutz](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#exclusive-settings-in-atp-anti-phishing-policies)|[Bedrohungs-Tracker](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-trackers)<br/>[Sicherheitsrisiken-Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)<br/>[Automatische Untersuchung und Reaktion](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>[Angriffssimulator](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulator)|
 |
 
 Mit Office 365 ATP können Personen in Ihrer Organisation sicher mit dem Bedrohungsschutz für Ihre e-Mail-Inhalte und Office-Dokumente kommunizieren und zusammenarbeiten.
 
 ### <a name="to-set-up-office-365-atp"></a>So richten Sie Office 365 ATP ein
 
-![Prozess für die Bereitstellung von Threat Protection-Funktionen](../media/solutions-architecture-center/deploy-office365-atp-steps.png) 
+![Prozess für die Bereitstellung von Office 365 ATP](../media/solutions-architecture-center/deploy-office365-atp-steps.png) 
 
 1. [Richten Sie Ihre Office 365 ATP-Richtlinien ein und konfigurieren Sie](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)Sie.
 2. [Zeigen Sie Ihre Office 365 ATP-Berichte an, und verwenden](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp)Sie Sie.
@@ -122,7 +122,7 @@ Mit Office 365 ATP können Personen in Ihrer Organisation sicher mit dem Bedrohu
 
 ### <a name="set-up-microsoft-defender-atp"></a>Einrichten von Microsoft Defender ATP
 
-![Prozess für die Bereitstellung von Threat Protection-Funktionen](../media/solutions-architecture-center/deploy-mdatp-steps.png) 
+![Prozess für die Bereitstellung von Microsoft Defender ATP](../media/solutions-architecture-center/deploy-mdatp-steps.png) 
 
 1. [Bereiten Sie Ihre Microsoft Defender ATP-Bereitstellung](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases)vor.
 2. [Einrichten der ATP-Bereitstellung von Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/micros.oft-defender-atp/production-deployment)
@@ -140,7 +140,7 @@ Mit Office 365 ATP können Personen in Ihrer Organisation sicher mit dem Bedrohu
 
 ### <a name="set-up-microsoft-cloud-app-security"></a>Einrichten von Microsoft Cloud App Security
 
-![Prozess für die Bereitstellung von Threat Protection-Funktionen](../media/solutions-architecture-center/deploy-mcas-steps.png) 
+![Prozess für die Bereitstellung von Microsoft Cloud App Security](../media/solutions-architecture-center/deploy-mcas-steps.png) 
 
 1. [Richten Sie das Portal und andere grundlegende Anforderungen ein](https://docs.microsoft.com/cloud-app-security/general-setup).
 2. [Einrichten der Cloud Discovery](https://docs.microsoft.com/cloud-app-security/set-up-cloud-discovery) und [Verbinden von apps](https://docs.microsoft.com/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps).
