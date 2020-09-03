@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,19 +18,15 @@ ms.custom:
 - SaRA
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-- GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
-description: 'Erfahren Sie, wie Sie Ihr Microsoft 365 Business-Abonnement mit einem Product Key verlängern und wie Sie die wiederkehrende Abrechnung aktivieren oder deaktivieren. '
-ms.openlocfilehash: 8dd9697f95e238ff759b90b1fef7544be9196c85
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Erfahren Sie, wie Sie Ihr Microsoft 365 verlängern, indem Sie wiederkehrende Abrechnungen aktivieren oder deaktivieren.
+ms.openlocfilehash: 1bf6d3957479d1cb695075e139dc4af2a09db3df
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403222"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324304"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Verlängern von Microsoft 365 Business
 
@@ -57,18 +53,15 @@ Wenn Sie für Ihr Abonnement mit einem Product Key im Voraus bezahlt haben, läu
 ::: moniker range="o365-worldwide"
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
-
 2. Wählen Sie das Abonnement aus, für das Sie die wiederkehrende Abrechnung verwalten möchten.
-
-3. Wählen Sie unter **Abrechnung** neben **Wird verlängert am** oder **Läuft ab am** die Option **Bearbeiten** aus.
-
-4. Wählen Sie im Bereich mit den Einstellungen für die **wiederkehrende Abrechnung** die Option **Deaktivieren** aus, um sie zu deaktivieren. Wenn die wiederkehrende Abrechnung bereits deaktiviert wurde, wählen Sie **Monatlich** oder **Einmalig** aus, um Sie zu aktivieren.
-
-5. Wählen Sie **Änderung absenden** aus.
+3. Wählen Sie auf der Seite Abonnementdetails, unter **Abonnement- und Zahlungseinstellungen**, **Wiederkehrende Abrechnung bearbeiten** aus.
+4. Wählen Sie im Bereich **Einstellungen für die wiederkehrende Abrechnung bearbeiten** zwischen den Optionen **Ein**, **Ein, aber einmal verlängern** oder **Deaktivieren** aus.
+5. Wählen Sie **Speichern** aus.
 
     > [!NOTE]
     > - Sie können die Einstellung für **wiederkehrende Abrechnung** nur für aktive Abonnements ändern. Wenn Ihr Abonnement bereits abgelaufen oder deaktiviert ist, müssen Sie es zuerst [reaktivieren](reactivate-your-subscription.md), bevor Sie die **wiederkehrende Abrechnung** aktivieren oder deaktivieren können.
-    > - Wenn die **wiederkehrende Abrechnung** deaktiviert ist, wird das Abonnement nicht sofort gekündigt. Es bleibt bis zum Ablauf aktiv. Sie können das Ablaufdatum im Abschnitt **Abrechnung** der Abonnementdetails auf der Seite **Ihre Produkte** anzeigen.
+    > - Wenn die **Wiederkehrende Abrechnung** deaktiviert ist, wird das Abonnement nicht sofort gekündigt. Wenn Sie möchten, dass das Abonnement aktiv bleibt, müssen Sie die Rechnung manuell zahlen.
+    > - Wenn Sie die **Wiederkehrenden Abrechnung** deaktivieren, bleibt das Abonnement bis zum Ablauf aktiv. Das Ablaufdatum können Sie auf der Seite Abonnementdetails im Abschnitt **Abonnement- und Zahlungseinstellungen** anzeigen.
     > - Wenn Sie erfahren möchten, wie Sie das Abonnement sofort kündigen können, lesen Sie [Kündigen eines Abonnements](cancel-your-subscription.md).
 
 ::: moniker-end

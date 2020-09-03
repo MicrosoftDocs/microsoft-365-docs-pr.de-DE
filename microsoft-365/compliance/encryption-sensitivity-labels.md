@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Konfigurieren Sie Vertraulichkeitsbezeichnungen für die Verschlüsselung, die Ihre Daten durch Einschränken von Zugriff und Nutzung schützt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ae9131b4cd70cfca4cc32116a651bf4642ed94f1
-ms.sourcegitcommit: c4a7b227f7d9abd666dfb93e3ded78ba8288e649
+ms.openlocfilehash: dc7f1e181fcc2ffda6cd9b36596c164f49d23452
+ms.sourcegitcommit: 6ad2e4164ed59d5a58a0df9cb8413531c1be0986
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229435"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47334858"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Einschränken des Zugriffs auf Inhalte mithilfe von Vertraulichkeitsbezeichnungen zur Verschlüsselung 
 
@@ -211,9 +211,9 @@ Weitere Informationen finden Sie unter [Rights Management-Aussteller und Rights 
 ### <a name="double-key-encryption"></a>Verschlüsselung mit Doppelschlüssel
 
 > [!NOTE]
-> Dieses Feature ist derzeit in der öffentlichen Vorschau bereitgestellt. Weitere Informationen finden Sie unter [Ankündigung der öffentlichen Vorschau der Double Key-Verschlüsselung für Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-public-preview-of-double-key-encryption-for-microsoft/ba-p/1534451).
+> Dieses Feature ist derzeit in Public Preview. Weitere Informationen finden Sie unter [Ankündigung der öffentlichen Vorschau der Double Key-Verschlüsselung für Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-public-preview-of-double-key-encryption-for-microsoft/ba-p/1534451).
 
-Wählen Sie diese Option nur aus, nachdem Sie den Verschlüsselungsdienst für Doppelschlüssel konfiguriert haben, und Sie müssen diese Verschlüsselung mit Doppelschlüssel für die Dokumente und E-Mails verwenden, auf die diese Bezeichnung angewendet wird.
+Wählen Sie diese Option erst, nachdem Sie den Dienst Doppelschlüssel-Verschlüsselung konfiguriert haben und Sie diese Doppelschlüssel-Verschlüsselung für Dateien und E-Mails verwenden müssen, die mit diesem Label versehen werden sollen.
 
 Weitere Informationen, Voraussetzungen und Konfigurationsanweisungen finden Sie unter [Double Key Encryption (DKE)](double-key-encryption.md).
 
