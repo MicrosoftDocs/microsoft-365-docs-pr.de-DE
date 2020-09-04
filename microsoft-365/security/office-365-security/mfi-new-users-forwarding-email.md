@@ -11,18 +11,18 @@ ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
 description: Administratoren erfahren, wie Sie mit den neuen Benutzern, die e-Mail-Einblicke im Security & Compliance Center weiterleiten, untersuchen können, wann Benutzer in Ihrer Organisation Nachrichten an neue domänenweiter leiten.
-ms.openlocfilehash: cb2e16d321e181916219e3425c26e59ebe31b866
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 4d8c88cef182ab1c521d23970797e4746e188916
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826975"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357366"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>Neue Benutzer, die e-Mail-Insight im Security & Compliance Center weiterleiten
 
 Es ist verdächtig, wenn neue Benutzerkonten in Ihrer Organisation plötzlich mit der Weiterleitung von e-Mail-Nachrichten an externe Domänen beginnen.
 
-Die **neuen Domänen, die in e-Mail-Insight weitergeleitet** werden, erhalten eine Benachrichtigung, wenn neu erstellte Benutzer in Ihrer Organisation Nachrichten an externe domänenweiter leiten. Diese Bedingung kann darauf hindeuten, dass kompromittierte Administratorkonten verwendet wurden, um die neuen Benutzer zu erstellen. Wenn Sie vermuten, dass die Konten kompromittiert wurden, finden Sie weitere Informationen unter [reagieren auf ein kompromittiertes e-Mail-Konto](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account).
+Die **neuen Domänen, die als e-Mail-Insight weitergeleitet** werden, werden in der [Security & Compliance Center](https://protection.office.com) benachrichtigt, wenn neu erstellte Benutzer in Ihrer Organisation Nachrichten an externe domänenweiter leiten. Diese Bedingung kann darauf hindeuten, dass kompromittierte Administratorkonten verwendet wurden, um die neuen Benutzer zu erstellen. Wenn Sie vermuten, dass die Konten kompromittiert wurden, finden Sie weitere Informationen unter [reagieren auf ein kompromittiertes e-Mail-Konto](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account).
 
 Diese Einblicke wird nur angezeigt, wenn das Problem erkannt wird und auf der Seite [weiterleitender Bericht](view-mail-flow-reports.md#forwarding-report) angezeigt wird.
 

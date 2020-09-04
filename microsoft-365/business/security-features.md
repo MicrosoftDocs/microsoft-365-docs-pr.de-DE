@@ -24,20 +24,18 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Erfahren Sie mehr über die Sicherheitsfunktionen, die mit Microsoft 365 Business Premium geliefert werden, um Ihre Daten auf PCs, Telefonen und Tablets zu schützen.
-ms.openlocfilehash: 839b5481e27591e1762a0d8eb5623f279d6d22dd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 5e16d4bf297d363b6f9b44ce854c857e7e5464ed
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402712"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357316"
 ---
 # <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Microsoft 365 Business Premium-Sicherheits-und Compliance-Features
 
 Microsoft 365 Business Premium bietet vereinfachte Sicherheitsfunktionen zum Schutz Ihrer Daten auf PCs, Telefonen und Tablets.
     
 ## <a name="microsoft-365-admin-center-security-features"></a>Microsoft 365 Admin Center-Sicherheitsfeatures
-
-[![Hinweis, der Sie darüber informiert, dass sich das Admin Center ändert und Sie unter "aka.ms/aboutM365preview" weitere Details finden.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 Sie können viele der Microsoft 365 Business Premium-Sicherheitsfunktionen im Admin Center verwalten, wodurch Sie eine vereinfachte Möglichkeit zum Aktivieren oder Deaktivieren dieser Features erhalten. Im Admin Center können Sie folgendermaßen vorgehen:
   
@@ -113,7 +111,7 @@ Ihr Microsoft 365 Business Premium-Abonnement umfasst Features, mit denen Sie Co
 Sie können diese Funktionen im Security &amp; Compliance Center und im InTune Admin Center verwalten. Im Laufe der Zeit werden die vereinfachten Steuerelemente dem Microsoft 365 Admin Center hinzugefügt.
   
     
-## <a name="faq"></a>Häufig gestellte Fragen
+## <a name="faq"></a>Häufig gestellte Fragen (FAQ)
 
  ### <a name="are-these-security-features-available-in-all-markets"></a>Sind diese Sicherheitsfeatures in allen Märkten verfügbar?
   

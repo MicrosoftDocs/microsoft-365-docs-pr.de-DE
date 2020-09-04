@@ -22,34 +22,31 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: In diesem Artikel erfahren Sie, wie Sie mit Windows PowerShell einzelne Benutzerkennwörter so festlegen, dass Sie nie ablaufen.
-ms.openlocfilehash: f85eb2d3aaf5b19779ea8f293e2cbdc28c1535aa
-ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
+ms.openlocfilehash: 01817aba0de1f5ca5f0b9bdf7feb1d03d72f6a24
+ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46804208"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47361749"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Festlegen, dass das Kennwort eines einzelnen Benutzers nie abläuft
 
-## <a name="set-the-password-expiration-policy-for-your-organization"></a>Festlegen der Kennwortablaufrichtlinie für Ihre Organisation
+In diesem Artikel wird erklärt, wie Sie ein Kennwort für einen einzelnen Benutzer festlegen, der nicht abläuft. Sie müssen diese Schritte mithilfe von PowerShell ausführen.
 
-1. Wechseln Sie im Admin Center zur Seite **Einstellungs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Einstellungen</a> .
-2. Wählen Sie oben auf der Seite Einstellungen die Option **Sicherheit & Datenschutz**aus.
-3. Wählen Sie **Kennwortablaufrichtlinie** aus. 
-4. Wenn Kennwörter auf nie ablaufen festgelegt sind, aktivieren Sie das Kontrollkästchen neben **Kennwort für Benutzer festlegen, um nach einer bestimmten Anzahl von Tagen zu verfallen**. Sie erhalten die Option, die Anzahl der Tage anzugeben, bis Kennwörter ablaufen.
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-## <a name="set-the-password-expiration-policy-for-individual-users"></a>Festlegen der Kennwortablaufrichtlinie für einzelne Benutzer
+Dieser Artikel richtet sich an Personen, die eine Kennwortablaufrichtlinie für ein Unternehmen, eine Schule/Uni oder eine gemeinnützige Organisation festlegen. Um diese Schritte ausführen zu können, müssen Sie sich mit Ihrem Microsoft 365-Administratorkonto anmelden. [Was ist ein Administratorkonto?](../admin-overview/admin-overview.md). 
+
+Sie müssen ein [globaler Administrator oder Kenn Wort Administrator](about-admin-roles.md) sein, um diese Schritte ausführen zu können.
 
 Ein globaler Administrator für einen Microsoft-clouddienst kann das [Azure Active Directory PowerShell für Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) verwenden, um Kennwörter festzulegen, die für bestimmte Benutzer nicht ablaufen. Sie können auch [AzureAD](https://docs.microsoft.com/powershell/module/Azuread) -Cmdlets verwenden, um die nie ablaufende Konfiguration zu entfernen oder zu sehen, welche Benutzerkennwörter nie ablaufen.
 
 Dieses Handbuch gilt für andere Anbieter wie InTune und Microsoft 365, die sich auch auf Azure AD für Identitäts-und Verzeichnisdienste stützen. Das Kennwortablaufdatum ist der einzige Teil der Richtlinie, der geändert werden kann.
 
-Weitere Informationen zum Azure AD PowerShell für Graph finden Sie unter [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
-
 > [!NOTE]
 > Nur Kennwörter für Benutzerkonten, die nicht über die Verzeichnissynchronisierung synchronisiert werden, können so konfiguriert werden, dass Sie nicht ablaufen. Weitere Informationen zur Verzeichnissynchronisierung finden Sie unter [Connect AD with Azure AD](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect).
 
-### <a name="how-to-check-the-expiration-policy-for-a-password"></a>Überprüfen der Ablaufrichtlinie auf ein Kennwort
+## <a name="how-to-check-the-expiration-policy-for-a-password"></a>Überprüfen der Ablaufrichtlinie auf ein Kennwort
 
 Weitere Informationen zum Befehl Get-AzureADUser im AzureAD-Modul finden Sie im Referenzartikel [Get-AzureADUser](https://docs.microsoft.com/powershell/module/Azuread/Get-AzureADUser?view=azureadps-2.0).
 
@@ -93,6 +90,21 @@ Führen Sie einen der folgenden Befehle aus:
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
         N="PasswordNeverExpires";E={$_.PasswordPolicies -contains "DisablePasswordExpiration"}
     } | ConvertTo-Csv -NoTypeInformation | Out-File $env:userprofile\Desktop\ReportPasswordNeverExpires.csv
+
+## Set a password to never expire
+
+Run one of the following commands:
+
+- To set the password of one user to never expire, run the following cmdlet by using the UPN or the user ID of the user:
+
+    ```powershell
+    Set-AzureADUser -ObjectId <user ID> -PasswordPolicies DisablePasswordExpiration
+    ```
+
+- Führen Sie das folgende Cmdlet aus, um die Kennwörter aller Benutzer in einer Organisation so festzulegen, dass Sie nie ablaufen:
+
+    ```powershell
+    Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies DisablePasswordExpiration
     ```
 
 ### <a name="set-a-password-to-expire"></a>Festlegen eines Kennworts zum ablaufen
@@ -111,21 +123,11 @@ Führen Sie einen der folgenden Befehle aus:
     Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies None
     ```
 
-### <a name="set-a-password-to-never-expire"></a>Festlegen eines Kennworts, das nie abläuft
-
-Führen Sie einen der folgenden Befehle aus:
-
-- Um das Kennwort eines Benutzers so festzulegen, dass es nie abläuft, führen Sie das folgende Cmdlet mithilfe des UPN oder der Benutzer-ID des Benutzers aus:
-
-    ```powershell
-    Set-AzureADUser -ObjectId <user ID> -PasswordPolicies DisablePasswordExpiration
-    ```
-
-- Führen Sie das folgende Cmdlet aus, um die Kennwörter aller Benutzer in einer Organisation so festzulegen, dass Sie nie ablaufen:
-
-    ```powershell
-    Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies DisablePasswordExpiration
-    ```
-
 > [!WARNING]
 > Benutzerkonten, die mit dem `-PasswordPolicies DisablePasswordExpiration` Parameter "still Age" basierend auf dem `pwdLastSet` Benutzerkonto Attribut konfiguriert wurden. Wenn Sie beispielsweise festlegen, dass Benutzerkennwörter nie ablaufen und dann 90 oder mehr Tage vergehen, verfallen die Kennwörter weiterhin. Basierend auf dem `pwdLastSet` Benutzerkonto Attribut müssen bei Benutzerkonten, die mit dem Parameter konfiguriert sind `-PasswordPolicies None` , alle Kennwörter, die `pwdLastSet` älter als 90 Tage sind, vom Benutzer geändert werden, wenn Sie sich das nächste Mal anmelden. Diese Änderung kann sich auf eine große Anzahl von Benutzern auswirken.
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Benutzern das Zurücksetzen ihrer eigenen Kennwörter gestatten](../add-users/let-users-reset-passwords.md)
+
+[Zurücksetzen von Kennwörtern](../add-users/reset-passwords.md)

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Die Verwendung von Aufbewahrungsbezeichnungen zur Verwaltung des Lebenszyklus von Dokumenten in SharePoint, mithilfe von Metadaten zur Klassifizierung von Inhalten, automatisch angewendeten Beschriftungen und ereignisbasierter Aufbewahrung zum Start der Aufbewahrungsdauer.
-ms.openlocfilehash: 8aed846c8c95aad737a9dfd56e4df7533e57a329
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: d02c8102dc53f455c5e0620acf1f8a9a7529bf08
+ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778545"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47336690"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>Verwenden von Aufbewahrungsbezeichnungen zur Verwaltung des Lebenszyklus von in SharePoint gespeicherten Dokumenten
 
@@ -60,14 +60,14 @@ Der *Inhaltstyp* kann mit dem [Inhaltstyphub](https://support.office.com/article
 
 Jedes Produkt verfügt über eine dedizierte SharePoint-Website, die eine Dokumentbibliothek enthält, in denen die richtigen Inhaltstypen aktiviert sind. Alle Dokumente werden in dieser Dokumentbibliothek gespeichert.
 
-![Dokumentbibliothek für Produktdokumentation](../media/SPRetention3.png)
+[ ![Dokumentbibliothek für Produktdokumentation](../media/SPRetention3.png) ](../media/SPRetention3.png#lightbox)
 
 > [!NOTE]
 > Anstatt eine SharePoint-Website pro Produkt zu haben, könnte das produzierende Unternehmen in diesem Szenario ein Microsoft-Team pro Produkt verwenden, um die Zusammenarbeit mit Mitgliedern des Teams zu unterstützen, z. B. durch durchgehenden Chat, und die Registerkarte **Dateien** in Teams für die Dokumentverwaltung zu verwenden. In diesem Artikel konzentrieren wir uns nur auf Dokumente, daher verwenden wir nur eine Website.
 
 Hier ist eine Ansicht der Dokumentbibliothek für das Spinning Widget-Produkt:
 
-![Spinning Widget-Dokumentbibliothek](../media/SPRetention4.png)
+[ ![Spinning Widget-Dokumentbibliothek](../media/SPRetention4.png) ](../media/SPRetention4.png#lightbox)
 
 Nachdem wir die grundlegende Informationsarchitektur für das Dokumentenmanagement eingerichtet haben, schauen wir uns die Aufbewahrungs- und Entsorgungsstrategie für die Dokumente an, die die Metadaten von Dokumenten verwenden, und wie wir diese Dokumente klassifizieren können.
 
@@ -75,7 +75,7 @@ Nachdem wir die grundlegende Informationsarchitektur für das Dokumentenmanageme
 
 Die Compliance- und Data Governance-Richtlinien des Herstellers bestimmen, wie Daten aufbewahrt und entsorgt werden. Produktbezogene Dokumente müssen so lange aufbewahrt werden, wie das Produkt hergestellt wird und für einen bestimmten zusätzlichen Zeitraum. Dieser zusätzliche Zeitraum ist für Produktspezifikationen, Verträge und Benutzerhandbücher unterschiedlich. In der folgenden Tabelle sind die Aufbewahrungs- und Entsorgungsanforderungen aufgeführt:
 
-| **Dokumenttyp**          | **Vermerkdauer**                          | **Disposition**                              |
+|   Dokumenttyp            |   Aufbewahrung                            |   Disposition                                |
 | -------------------------- | -------------------------------------- | -------------------------------------------- |
 | Produktspezifikationen      | 5 Jahre nach Produktionsstopp  | Löschen                                       |
 | Produktvereinbarungen          | 10 Jahre nach Produktionsstopp | Überprüfung                                       |
@@ -137,8 +137,9 @@ Der folgende Screenshot zeigt die Einstellungen, wenn Sie die Aufbewahrungsbezei
    ![Einstellungen für die neue Bezeichnung „Produktspezifikation“](../media/SPRetention7.png)
 
 6. **Diese Bezeichnung erstellen** auswählen. 
-> [!TIP]
-> Ausführlichere Schritte finden Sie unter[Erstellen einer Bezeichnung, deren Aufbewahrungsdauer auf einem Ereignis basiert](event-driven-retention.md#step-1-create-a-label-whose-retention-period-is-based-on-an-event).
+
+   > [!TIP]
+   > Ausführlichere Schritte finden Sie unter[Erstellen einer Bezeichnung, deren Aufbewahrungsdauer auf einem Ereignis basiert](event-driven-retention.md#step-1-create-a-label-whose-retention-period-is-based-on-an-event).
 
 Nun wird die Aufbewahrungsbezeichnung automatisch auf den Inhalt der Produktspezifikation angewendet.
 
@@ -183,7 +184,7 @@ KQL kann keine gecrawlten Eigenschaften in Suchabfragen verwenden. Es muss eine 
 
 Damit die KQL-Abfrage die richtige Aufbewahrungsbezeichnung automatisch auf den Inhalt des Produktdokuments anwendet, ordnen wir die gecrawlten Eigenschaften **ows\_Doc\_x0020\_Type* und *ows\_\_Status** zwei anpassbaren verwalteten Eigenschaften zu. In unserer Testumgebung für dieses Szenario werden **RefinableString00** und **RefinableString01** nicht verwendet. Wir haben dies festgelegt, indem wir im SharePoint Admin Center **Verwaltete Eigenschaften** im **Suchschema verwalten** anzeigen.
 
-![Verwaltete Eigenschaften im Suchschema](../media/SPRetention12.png)
+[ ![Verwaltete Eigenschaften im Suchschema](../media/SPRetention12.png) ](../media/SPRetention12.png#lightbox)
 
 Beachten Sie, dass die Spalte **Zugeordnete, durchforstete Eigenschaften** im vorherigen Screenshot leer ist.
 
@@ -199,7 +200,8 @@ Folgen Sie diesen Schritten, um die durchforstete Eigenschaft **ows\_Doc\_x0020\
 
    Im Abschnitt **Zugeordnete durchforstete Eigenschaften** sollten Sie so etwas wie diesen Screenshot sehen:
 
-   ![Wählen Sie im Abschnitt „Zugeordnete durchforstete Eigenschaften“ die Option „Zuordnung hinzufügen“ aus.](../media/SPRetention13.png)
+   [ ![Wählen Sie im Abschnitt „Zugeordnete durchforstete Eigenschaften“ die Option „Zuordnung hinzufügen“ aus.](../media/SPRetention13.png) ](../media/SPRetention13.png#lightbox)
+
 
 5. Führen Sie einen Bildlauf zum Ende der Seite aus, und klicken Sie auf **OK**, um die Zuordnung zu speichern.
 
@@ -207,7 +209,7 @@ Wiederholen Sie diese Schritte, um **RefinableString01** und **ows\_\_Status** z
 
 Jetzt sollten zwei verwaltete Eigenschaften den beiden durchforsteten Eigenschaften zugeordnet sein:
 
-![Die gezeigten verwalteten Eigenschaften sind den durchforsteten Eigenschaften zugeordnet](../media/SPRetention14.png)
+[ ![Die gezeigten verwalteten Eigenschaften sind den durchforsteten Eigenschaften zugeordnet.](../media/SPRetention14.png) ](../media/SPRetention14.png#lightbox)
 
 Lassen Sie uns überprüfen, ob alles korrekt eingerichtet ist, indem Sie eine Unternehmenssuche ausführen. Gehen Sie in einem Browser auf *https://\<your_tenant>sharepoint.com/search*. Geben Sie im Suchfeld ***RefinableString00:"Product Specification"*** ein und drücken Sie die Eingabetaste. Diese Suche sollte alle Dokumente zurückgeben, die über die **Produktspezifikation** ***Dokumenttyp***verfügen.
 
@@ -219,7 +221,7 @@ Nachdem wir überprüft haben, dass die KQL-Abfrage funktioniert, erstellen wir 
 
 1. Wechseln Sie im [Compliance Center](https://compliance.microsoft.com/homepage)zu **Datensatzverwaltung** > **Bezeichnungsrichtlinien** > **Automatisch eine Bezeichnung anwenden**.
 
-   ![Auswählen der Option „Bezeichnung automatisch anwenden“ auf der Bezeichnungsseite](../media/SPRetention16.png)
+   [ ![Auswählen der Option „Bezeichnung automatisch anwenden“ auf der Bezeichnungsseite](../media/SPRetention16.png) ](../media/SPRetention16.png#lightbox)
 
 2. Klicken Sie auf der Assistenten-Seite **Automatisch anzuwendende Bezeichnung auswählen** auf **Automatisch anzuwendende Bezeichnung auswählen**.
 
@@ -227,7 +229,7 @@ Nachdem wir überprüft haben, dass die KQL-Abfrage funktioniert, erstellen wir 
 
 4. Wählen Sie **Bezeichnung auf Inhalt anwenden, der bestimmte Wörter oder Ausdrücke enthält** aus, und klicken Sie dann auf **Weiter**.
 
-   ![Auswählen der Option „Bezeichnung auf Inhalt anwenden, der bestimmte Wörter oder Ausdrücke enthält“](../media/SPRetention17.png)
+   [ ![Auswählen der Option „Bezeichnung auf Inhalt anwenden, der bestimmte Wörter oder Ausdrücke enthält“](../media/SPRetention17.png) ](../media/SPRetention17.png#lightbox)
 
    Im nächsten Schritt stellen Sie dieselbe KQL-Suchabfrage bereit, die wir im vorherigen Abschnitt getestet haben. Diese Abfrage gibt alle Produktspezifikationsdokumente zurück, die den Status *Endgültig* haben. Wenn wir dieselbe Abfrage in der Bezeichnungsrichtlinie verwenden, wird die Aufbewahrungsbezeichnung der Produktspezifikation automatisch auf alle Dokumente angewendet, die ihr entsprechen.
 
@@ -259,11 +261,11 @@ Verwenden Sie nach 7 Tagen den[ Aktivität-Explorer](data-classification-activit
 
 Überprüfen Sie auch die Eigenschaften der Dokumente in der Dokumentbibliothek. Im Informationsbereich können Sie sehen, dass die Aufbewahrungsbezeichnung auf ein ausgewähltes Dokument angewendet wird.
 
-![Überprüfen in den Dokumenteigenschaften in der Dokumentbibliothek, dass die Bezeichnung angewendet wurde](../media/SPRetention21.png)
+[ ![Überprüfen in den Dokumenteigenschaften in der Dokumentbibliothek, dass die Bezeichnung angewendet wurde](../media/SPRetention21.png) ](../media/SPRetention21.png#lightbox)
 
 Da die Aufbewahrungsbezeichnungen automatisch auf Dokumente angewendet wurden, sind diese Dokumente vor dem Löschen geschützt, da die Aufbewahrungsbezeichnung so konfiguriert wurde, dass die Dokumente als *Datensätze* deklariert werden. Als Beispiel für diesen Schutz erhalten wir die folgende Fehlermeldung, wenn wir versuchen, eines dieser Dokumente zu löschen:
 
-![Eine Fehlermeldung zeigt, dass Dokumente nicht gelöscht werden können, weil die Bezeichnung angibt, dass es sich um Datensätze handelt.](../media/SPRetention22.png)
+[ ![Eine Fehlermeldung zeigt, dass Dokumente nicht gelöscht werden können, weil die Bezeichnung angibt, dass es sich um Datensätze handelt.](../media/SPRetention22.png) ](../media/SPRetention22.png#lightbox)
 
 ## <a name="generate-the-event-that-triggers-the-retention-period"></a>Generieren Sie das Ereignis, das den Aufbewahrungszeitraum auslöst.
 
@@ -275,13 +277,13 @@ In diesem Szenario generieren wir das Ereignis jedoch automatisch aus einem exte
 
 Der folgende Screenshot zeigt die SharePoint-Liste, die zum Auslösen des Ereignisses verwendet wird:
 
-![Die Liste, die das Aufbewahrungsereignis auslöst](../media/SPRetention23.png)
+[ ![Die Liste, die das Aufbewahrungsereignis auslöst](../media/SPRetention23.png) ](../media/SPRetention23.png#lightbox)
 
 Derzeit sind zwei Produkte in Produktion, wie mit ***Ja*** in der Spalte **In Produktion** angezeigt. Wenn der Wert in dieser Spalte für ein Produkt auf ***Nein*** gesetzt ist, generiert der mit der Liste verknüpfte Flow automatisch das Ereignis. Dieses Ereignis löst den Beginn der Aufbewahrungsfrist für die Aufbewahrungsbezeichnung aus, die automatisch auf die entsprechenden Produktdokumente angewendet wurde.
 
 In diesem Szenario verwenden wir den folgenden Flow, um das Ereignis auszulösen:
 
-![Konfigurieren des Flows, der das Ereignis auslöst](../media/SPRetention24.png)
+[ ![Konfigurieren des Flows, der das Ereignis auslöst](../media/SPRetention24.png) ](../media/SPRetention24.png#lightbox)
 
 Starten Sie zum Erstellen dieses Flows einen SharePoint-Connector, und wählen Sie den Auslöser **Wenn ein Element erstellt oder geändert wird** aus. Geben Sie die Websiteadresse und den Listennamen an. Fügen Sie dann eine Bedingung hinzu, die darauf basiert, dass der Wert der Spalte **In Produktion** auf ***Nein*** gesetzt ist (oder auf der Bedingungskarte gleich *False* ist). Fügen Sie dann eine Aktion hinzu, die auf der integrierten HTTP-Vorlage basiert. Verwenden Sie die Werte im folgenden Abschnitt, um die HTTP-Aktion zu konfigurieren. Sie können die Werte für die Eigenschaften **URI**und **Textkörper** aus dem folgenden Abschnitt kopieren und in die Vorlage einfügen.
 
@@ -290,7 +292,7 @@ Starten Sie zum Erstellen dieses Flows einen SharePoint-Connector, und wählen S
 - **Headers**: Key = Content-Type, Value = application/atom+xml
 - **Body**:
     
-    ```HTML
+    ```xml
     <?xml version='1.0' encoding='utf-8' standalone='yes'>
     <entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices' xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata' xmlns='https://www.w3.org/2005/Atom'>
     <category scheme='http://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent'>
@@ -312,7 +314,7 @@ Diese Liste beschreibt die Parameter in der **Body**-Eigenschaft der Aktion, die
 - **EventType**: Der Wert für diesen Parameter entspricht dem Ereignistyp, auf den das erstellte Ereignis angewendet wird. Dieser Ereignistyp wurde beim Erstellen der Aufbewahrungsbezeichnung definiert. In diesem Szenario lautet der Ereignistyp "Produkteinstellung".
 - **SharePointAssetIdQuery**: Dieser Parameter definiert die Objekt-ID für das Ereignis. Die ereignisbasierte Aufbewahrung benötigt eine eindeutige Kennung für das Dokument. Wir können Objekt-IDs verwenden, um die Dokumente zu identifizieren, auf die ein bestimmtes Ereignis anwendbar ist, oder, wie in diesem Szenario, die Metadatenspalte **Produktname**. Dazu muss eine neue verwaltete Eigenschaft **Produktname** erstellt werden, die in der KQL-Abfrage verwendet werden kann. (Sie können alternativ auch **RefinableString00** verwenden, statt eine neue verwaltete Eigenschaft zu erstellen). Wir müssen diese neue verwaltete Eigenschaft auch der durchforsteten Eigenschaft **ows_Product_x0020_Name** zuordnen. Hier ist ein Screenshot dieser verwalteten Eigenschaft.
 
-    ![Verwaltete Eigenschaft "Aufbewahrung"](../media/SPRetention25.png)
+    [ ![Verwaltete Eigenschaft "Aufbewahrung"](../media/SPRetention25.png) ](../media/SPRetention25.png#lightbox)
 
 - **EventDateTime**: Dieser Parameter definiert das Datum, an dem das Ereignis eintritt. Verwenden Sie das aktuelle Datumsformat:<br/><br/>*formatDateTime(utcNow(),'yyyy-MM-dd'*)
 
@@ -320,7 +322,7 @@ Diese Liste beschreibt die Parameter in der **Body**-Eigenschaft der Aktion, die
 
 Nun wurde die Aufbewahrungsbezeichnung erstellt und automatisch angewendet, und der Datenstrom wurde konfiguriert und erstellt. Wenn der Wert in der Spalte **In Produktion** für das Spinning Widget-Produkt in der Produktliste von ***Ja*** zu ***Nein***geändert wird, wird der Datenstrom ausgelöst, um das Ereignis zu erstellen. Um dieses Ereignis im Compliance Center anzuzeigen, wechseln Sie zu **Datensatzverwaltung** > **Ereignisse**.
 
-![Das Ereignis, das durch den Datenstrom ausgelöst wurde, wird auf der Ereignisseite im Compliance Center angezeigt.](../media/SPRetention28.png)
+[ ![Das Ereignis, das durch den Datenstrom ausgelöst wurde, wird auf der Ereignisseite im Compliance Center angezeigt.](../media/SPRetention28.png) ](../media/SPRetention28.png#lightbox)
 
 Wählen Sie das Ereignis aus, um die Details auf der Flyout-Seite anzuzeigen. Beachten Sie, dass trotz der Erstellung des Ereignisses der Ereignisstatus anzeigt, dass keine SharePoint-Websites oder -Dokumente verarbeitet wurden.
 
@@ -340,16 +342,10 @@ Wie der Artikel [Übersicht über die ereignisgesteuerte Aufbewahrung](event-dri
 
 Wie der folgende Screenshot zeigt, heißt die verwaltete Eigenschaft Objekt-ID **ComplianceAssetId**.
 
-![Verwaltete Eigenschaft „ComplianceAssetId“](../media/SPRetention27.png)
+[ ![Verwaltete Eigenschaft „ComplianceAssetId“](../media/SPRetention27.png) ](../media/SPRetention27.png#lightbox)
 
 Anstatt die standardmäßige **Objekt-ID**-Eigenschaft zu verwenden, wie wir es in diesem Szenario tun, können Sie jede andere Eigenschaft verwenden. Es ist jedoch wichtig zu verstehen, dass der Aufbewahrungszeitraum für alle Inhalte, die eine Bezeichnung dieses Ereignistyps aufweisen, durch das Ereignis ausgelöst wird, wenn Sie keine Objekt-ID oder Schlüsselwörter für ein Ereignis angeben.
 
 ### <a name="using-advanced-search-in-sharepoint"></a>Verwenden der erweiterten Suche in SharePoint
 
 Im vorherigen Screenshot sehen Sie, dass es eine andere verwaltete Eigenschaft gibt, die sich auf Aufbewahrungsbezeichnungen bezieht, die als **ComplianceTag** bezeichnet wird und die einer durchforsteten Eigenschaft zugeordnet ist. Die verwaltete Eigenschaft **ComplianceAssetId** wird auch einer durchforsteten Eigenschaft zugeordnet. Dies bedeutet, dass Sie diese verwalteten Eigenschaften in der erweiterten Suche verwenden können, um alle Dokumente abzurufen, die mit einer Aufbewahrungsbezeichnung versehen wurden.
-
-## <a name="credits"></a>Mitwirkende
-
-Dieses Szenario wurde verfasst von: 
-
-Frederic Lapierre<br/>Hauptberater, Microsoft Services
