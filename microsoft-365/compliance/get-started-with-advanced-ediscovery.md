@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In diesem Artikel wird beschrieben, wie Sie mit der Verwendung von Advanced eDiscovery in Microsoft 365 beginnen. Nachdem Sie einige kurze Schritte ausgeführt haben, ist das erweiterte eDiscovery-Tooleinsatz fähig. Der erste Schritt besteht darin, einen Fall zu erstellen und dann erweiterte eDiscovery-Funktionen und-Funktionen zu verwenden.
-ms.openlocfilehash: 669ca954401242f7ac8da9a752a99b1b32c1041c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cc593009337a9b78285fbcf98ad78dbf1899bce1
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632476"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357505"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>Erste Schritte mit Advanced eDiscovery
 
@@ -60,7 +60,7 @@ Um auf Advanced eDiscovery zuzugreifen oder als Mitglied eines erweiterten eDisc
 
 Führen Sie die folgenden Schritte aus, um Benutzer zur eDiscovery-Manager-Rollengruppe hinzuzufügen:
 
-1. Wechseln Sie [https://protection.office.com/permissions](https://protection.office.com/permissions) zu, und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365-Organisation an.
+1. Wechseln Sie zu, [https://protection.office.com/permissions](https://protection.office.com/permissions) und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365-Organisation an.
 
 2. Wählen Sie auf der Seite **Berechtigungen** die Rollengruppe **eDiscovery-Manager** aus.
 
@@ -80,15 +80,15 @@ Es gibt zwei Untergruppen in der Rollengruppe "eDiscovery-Manager". Der Untersch
 
 - **eDiscovery-Manager:** Kann die erweiterten eDiscovery-Fälle anzeigen und verwalten, in denen Sie erstellt werden oder deren Mitglied Sie sind. Wenn ein anderer eDiscovery-Manager einen Fall erstellt, aber keinen zweiten eDiscovery-Manager als Mitglied dieses Falls hinzufügt, kann der zweite eDiscovery-Manager den Fall nicht auf der Seite "Advanced eDiscovery" im Compliance Center anzeigen oder öffnen. Im Allgemeinen können die meisten Personen in Ihrer Organisation der Untergruppe eDiscovery-Manager hinzugefügt werden.
 
-- **eDiscovery-Administrator:** Kann alle Fall Verwaltungsaufgaben ausführen, die ein eDiscovery-Manager ausführen kann. Darüber hinaus können eDiscovery-Administratoren folgende Aktionen durchführen:
+- **eDiscovery-Administrator:** Kann alle Fall Verwaltungsaufgaben ausführen, die ein eDiscovery-Manager ausführen kann. Außerdem kann ein eDiscovery-Administrator Folgendes:
 
-  - Anzeigen aller Fälle, die auf der Seite Erweiterte eDiscovery aufgeführt sind.
+  - Anzeigen aller Fälle, die auf der Seite „ Advanced eDiscovery“ aufgeführt sind.
   
-  - Verwalten Sie alle Fälle in der Organisation, nachdem Sie sich selbst als Mitglied der Anfrage hinzugefügt haben.
+  - Verwalten aller Fälle in der Organisation, nachdem er sich selbst als Fallmitglied hinzugefügt hat.
 
-  - Zugriffs-und Export Fall Daten für alle Fälle in der Organisation.
+  - Zugreifen auf und Exportieren von Falldaten für jeden Fall in der Organisation.
 
-  Aufgrund des breiten Zugriffs Umfangs sollte eine Organisation nur wenige Administratoren haben, die Mitglieder der Untergruppe "eDiscovery Administrators" sind.
+  Aufgrund des breit gefächerten Zugriffs sollte eine Organisation nur über wenige Administratoren verfügen, die Mitglieder der Untergruppe der eDiscovery-Administratoren sind.
 
 Weitere Informationen zu eDiscovery-Berechtigungen und eine Beschreibung der einzelnen Rollen, die der Rollengruppe "eDiscovery-Manager" zugewiesen sind, finden Sie unter [Zuweisen von eDiscovery-Berechtigungen](assign-ediscovery-permissions.md).
 
@@ -105,9 +105,9 @@ Weitere Informationen zum Einrichten und Verwenden des Erkennungs Modells für d
 
 Der nächste Schritt besteht darin, einen Fall zu erstellen und mit Advanced eDiscovery zu beginnen. Führen Sie die folgenden Schritte aus, um einen Fall zu erstellen und Mitglieder hinzuzufügen. Der Benutzer, der den Fall erstellt, wird automatisch als Mitglied hinzugefügt.
 
-1. Wechseln Sie [https://compliance.microsoft.com](https://compliance.microsoft.com) zu, und melden Sie sich mit den Anmeldeinformationen für das Benutzerkonto an, dem die entsprechenden eDiscovery-Berechtigungen zugewiesen wurden. Mitglieder der Rollengruppe "Organisationsverwaltung" können auch erweiterte eDiscovery-Fälle erstellen.
+1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com) und melden Sie sich mit den Anmeldeinformationen für das Benutzerkonto an, dem die entsprechenden eDiscovery-Berechtigungen zugewiesen wurden. Mitglieder der Rollengruppe "Organisationsverwaltung" können auch erweiterte eDiscovery-Fälle erstellen.
 
-2. Klicken Sie im linken Navigationsbereich des Microsoft 365 Compliance Center auf **Alle anzeigen**, und klicken Sie dann auf **eDiscovery > erweitert**.
+2. Klicken Sie im linken Navigationsbereich des Microsoft 365 Compliance Centers auf **Ale anzeigen**, und klicken Sie dann auf **eDiscovery > Advanced**.
 
 3. Klicken Sie auf der Seite **Erweiterte eDiscovery** auf die Registerkarte **Fälle** , und klicken Sie dann auf **Fall erstellen**.
 
@@ -127,7 +127,7 @@ Der nächste Schritt besteht darin, einen Fall zu erstellen und mit Advanced eDi
 
 10. Nachdem Sie die Personen ausgewählt haben, die als Mitglieder der Anfrage hinzugefügt werden sollen, klicken Sie auf **Hinzufügen**.
 
-11. Klicken Sie auf der Seite **diesen Fall Flyout verwalten** auf **Speichern** , um die neue Liste der Fall Mitglieder zu speichern.
+11. Klicken Sie auf der Flyout-Seite **Fall verwalten** auf **Speichern**, um die neue Liste der Fallbeteiligten zu speichern.
 
 12. Klicken Sie auf die Registerkarte **Start** , um zur Fall Startseite zu wechseln.
 
@@ -135,7 +135,7 @@ Der nächste Schritt besteht darin, einen Fall zu erstellen und mit Advanced eDi
 
 Um den Einstieg in die Verwendung von Advanced eDiscovery zu erleichtern, finden Sie hier einen einfachen Workflow, der sich an [gängige eDiscovery-Methoden](overview-ediscovery-20.md#alignment-with-edrm)richtet. In jedem dieser Schritte werden auch einige erweiterte eDiscovery-Funktionen hervorgehoben, die Sie untersuchen können.
 
-![Erweiterter eDiscovery-Workflow](../media/AeDWorkflow.png)
+![Advanced eDiscovery-Workflow](../media/AeDWorkflow.png)
 
 1. **[Hinzufügen von Verwaltern zu einem Fall](add-custodians-to-case.md)**. Der erste Schritt nach dem Erstellen eines Falls besteht darin, Verwalter hinzuzufügen. Bei einer *Depotbank* handelt es sich um eine Person, die über eine administrative Kontrolle über ein Dokument oder eine elektronische Datei verfügt, die für den Fall relevant sein kann. Hier sind einige Dinge, die passieren (oder die Sie tun können), wenn Sie Verwalter einem Fall hinzufügen:
 
@@ -149,7 +149,7 @@ Um den Einstieg in die Verwendung von Advanced eDiscovery zu erleichtern, finden
 
    - Sie können den [Kommunikations Workflow](managing-custodian-communications.md) in Advanced eDiscovery verwenden, um eine rechtliche Aufbewahrungs Benachrichtigung an Verwalter zu senden.
 
-2. **[Durchsuchen von Freiheits Datenquellen nach Daten, die für den Fall relevant](collecting-data-for-ediscovery.md)** sind. Nachdem Sie einem Fall Verwalter hinzugefügt haben, verwenden Sie das integrierte Such Tool, um die Speicherorte der Depotdaten nach Daten zu durchsuchen, die für den Fall relevant sein können. Sie verwenden Schlüsselwörter, Eigenschaften und Bedingungen zum [Erstellen von Suchabfragen](building-search-queries.md) , die Suchergebnisse mit den Daten zurückgeben, die für den Fall wahrscheinlich relevant sind. Des Weiteren können Sie Folgendes:
+2. **[Durchsuchen von Freiheits Datenquellen nach Daten, die für den Fall relevant](collecting-data-for-ediscovery.md)** sind. Nachdem Sie einem Fall Verwalter hinzugefügt haben, verwenden Sie das integrierte Such Tool, um die Speicherorte der Depotdaten nach Daten zu durchsuchen, die für den Fall relevant sein können. Sie verwenden Schlüsselwörter, Eigenschaften und Bedingungen zum [Erstellen von Suchabfragen](building-search-queries.md) , die Suchergebnisse mit den Daten zurückgeben, die für den Fall wahrscheinlich relevant sind. Sie können auch Folgendes tun:
 
    - Anzeigen von [Suchstatistiken](search-statistics.md) , die Ihnen beim Verfeinern einer Suchabfrage helfen können, um die Ergebnisse einzugrenzen.
 

@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Eine Tabelle mit den unterstützten Dateitypen und den Anzeigeprogrammen, in denen Sie für Daten Untersuchungen (Preview) angezeigt werden können.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b4aef30c3f2bc15c306a7561bab261bdb0bdcace
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 95af625ece261061d6f797b50a382b1905254326
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034539"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357737"
 ---
 # <a name="supported-file-types-in-data-investigations-preview"></a>Unterstützte Dateitypen in Data Investigations (Preview)
 
@@ -31,7 +31,7 @@ Data Investigations (Preview) unterstützt viele Dateitypen auf verschiedene Art
 | MIME-Typ | File-Klasse | Nativer Viewer | Text Anzeige | Annotations-Viewer | Container Extraktion | Erweiterungen |
 | :- | :- | :- | :- | :- | :- | :- |
 | application/msword | Dokument | Ja | Ja | Ja | Nein | . doc;. dat |
-| application/pdf | Dokument | Ja | Ja | Ja | Nein | .pdf |
+| application/pdf | Dokument | Ja | Ja | Ja | Nein | .PDF |
 | Application/RTF | Dokument | Ja | Ja | Ja | Nein | . RTF;. doc |
 | application/vnd. MS-Excel | Dokument | Ja | Ja | Ja | Nein | xls; DAT |
 | application/vnd. MS-Excel. Sheet. Binary. macroenabled. 12 | Produktivität/Open Document Format | Ja | Ja | Nein | Nein | . xlsb |
@@ -40,7 +40,7 @@ Data Investigations (Preview) unterstützt viele Dateitypen auf verschiedene Art
 | application/vnd. MS-Outlook | Produktivität | Nein | Nein | Nein | Nein | . msg |
 | application/vnd. MS-Outlook-PST | Produktivität/Zusammenarbeit | Nein | Nein | Nein | Ja | PST-Datei |
 | application/vnd. MS-PowerPoint | Dokument | Ja | Ja | Ja | Nein | ppt;. PPS;. Pot |
-| application/vnd. MS-Word. Document. macroenabled. 12 | Dokument | Ja | Ja | Ja | Nein | DOCM |
+| Application/vnd.ms-word.document. macroenabled. 12 | Dokument | Ja | Ja | Ja | Nein | DOCM |
 | application/vnd. MS-Word. Template. macroenabled. 12 | Dokument | Ja | Ja | Ja | Nein | . dotm |
 | application/vnd. Oasis. OpenDocument. Text | Dokument | Ja | Ja | Ja | Nein | ODT  |
 | application/vnd.openxmlformats-officedocument.presentationml.presentation | Dokument | Ja | Ja | Ja | Nein | PPTX |
@@ -58,12 +58,12 @@ Data Investigations (Preview) unterstützt viele Dateitypen auf verschiedene Art
 | Application/x-mspublisher | Dokument | Ja | Ja | Ja | Nein | . pub |
 | Application/x-rar-komprimiert | Archiv/Container | Nein | Nein | Nein | Ja | . rar |
 | Anwendung/zip | Archiv/Container | Nein | Nein | Nein | Ja | .ZIP |
-| Bild/BMP | Image | Ja | Ja | Ja | Nein | BMP |
-| Bild/EMF | Image | Ja | Ja | Ja | Nein | . EMF |
+| Bild/BMP | Bild | Ja | Ja | Ja | Nein | BMP |
+| Bild/EMF | Bild | Ja | Ja | Ja | Nein | . EMF |
 | image/gif | Dokument | Ja | Ja | Ja | Nein | .gif |
-| image/jpeg | Image | Ja | Ja | Ja | Nein | JPG; JPEG;. dat;. jpgt |
-| image/png | Image | Ja | Ja | Ja | Nein | .png |
-| Bild/TIFF | Image | Ja | Ja | Ja | Nein | TIF |
+| image/jpeg | Bild | Ja | Ja | Ja | Nein | JPG; JPEG;. dat;. jpgt |
+| image/png | Bild | Ja | Ja | Ja | Nein | .png |
+| Bild/TIFF | Bild | Ja | Ja | Ja | Nein | TIF |
 | Image/vnd. DWG | Dokument | Ja | Ja | Ja | Nein | . dwg;. DXF |
 | Image/WMF | Dokument | Ja | Ja | Ja | Nein | . WMF |
 | Nachricht/RFC822 | Produktivität/Zusammenarbeit | Nein | Nein | Nein | Nein | .EML |

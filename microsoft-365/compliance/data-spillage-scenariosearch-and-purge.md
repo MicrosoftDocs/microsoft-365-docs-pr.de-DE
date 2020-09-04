@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Verwenden Sie eDiscovery-und Such Tools, um einen Vorfall zur Verschütten von Daten in Ihrer Organisation zu verwalten und zu reagieren.
-ms.openlocfilehash: 4246460f2f7d7fdc41754fc2acd3125601bb5f79
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: bb342eef057fefafe98de274851ad14e9c588dbe
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292451"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357565"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>eDiscovery-Lösungsreihe: Szenario mit Datenüberlauf-Suche und Bereinigung
 
@@ -110,7 +110,7 @@ Nachdem Sie die Suchergebnisse überprüft haben, möchten Sie möglicherweise I
  
     ![Klicken Sie auf der Seite exportieren auf exportieren, und klicken Sie dann auf "Bericht herunterladen".](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport2.png)
 
-Der Bericht " **Zusammenfassung exportieren** " enthält die Anzahl der gefundenen Speicherorte mit Ergebnissen und der Größe der Suchergebnisse. Sie können dies verwenden, um mit dem Bericht zu vergleichen, der nach dem Löschen generiert wurde, und als Nachweis für die Löschung anzugeben. Der Bericht **Ergebnisse** enthält eine detailliertere Zusammenfassung der Suchergebnisse, einschließlich Betreff, Absender, Empfänger, wenn die e-Mail gelesen wurde, Daten und die Größe der einzelnen Nachrichten. Wenn eine der Details in diesem Bericht die tatsächlich verschütteten Daten enthält, müssen Sie die CSV-Datei "Results" nach Abschluss der Untersuchung endgültig löschen.
+Der Bericht " **Zusammenfassung exportieren** " enthält die Anzahl der gefundenen Speicherorte mit Ergebnissen und der Größe der Suchergebnisse. Sie können dies verwenden, um mit dem Bericht zu vergleichen, der nach dem Löschen generiert wurde, und als Nachweis für die Löschung anzugeben. Der Bericht **Ergebnisse** enthält eine detailliertere Zusammenfassung der Suchergebnisse, einschließlich Betreff, Absender, Empfänger, wenn die e-Mail gelesen wurde, Daten und die Größe der einzelnen Nachrichten. Wenn eine der Details in diesem Bericht die tatsächlich verschütteten Daten enthält, müssen Sie die Results.csv Datei nach Abschluss der Untersuchung endgültig löschen.
 
 Weitere Informationen zum Exportieren von Berichten finden Sie unter [Exportieren eines Inhalts Suchberichts](export-a-content-search-report.md).
     
@@ -176,7 +176,7 @@ Mithilfe der Postfachspeicher Orte, die Sie in Schritt 6 gesammelt und vorbereit
 Informationen zum Löschen der verschütteten Nachrichten finden Sie in den Schritten 2 & 3 unter [Suchen nach und Löschen von e-Mail-Nachrichten](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)
 
 > [!IMPORTANT]
-> E-Mail-Elemente in einem Überprüfungs Satz in einem erweiterten eDiscovery-Fall können nicht mithilfe der Verfahren in diesem Artikel gelöscht werden. Das liegt daran, dass Elemente in einem Überprüfungs Sätze Kopien von Elementen im Live-Dienst sind, die kopiert und an einem Azure-Speicherort gespeichert werden. Dies bedeutet, dass Sie nicht von einer Inhaltssuche zurückgegeben werden, die Sie in Schritt 3 erstellen. Um Elemente in einem Überprüfungs Satzes zu löschen, müssen Sie den erweiterten eDiscovery-Fall löschen, der die Überprüfungsgruppe enthält. Weitere Informationen finden Sie unter [Schließen oder Löschen eines erweiterten eDiscovery-Falls](close-or-delete-case.md).
+> E-Mail-Elemente in einer Überprüfung in einem erweiterten eDiscovery-Fall können nicht mithilfe der in diesem Artikel beschriebenen Verfahren gelöscht werden. Das liegt daran, dass Elemente in einem Überprüfungs Sätze Kopien von Elementen im Live-Dienst sind, die kopiert und an einem Azure-Speicherort gespeichert werden. Dies bedeutet, dass Sie nicht von einer Inhaltssuche zurückgegeben werden, die Sie in Schritt 3 erstellen. Wenn Sie Elemente in einem Überprüfungssatz löschen möchten, müssen Sie den erweiterten eDiscovery-Fall löschen, der den Überprüfungssatz enthält. Weitere Informationen finden Sie unter [Schließen oder Löschen eines erweiterten eDiscovery-Falls](close-or-delete-case.md).
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>Schritt 8: überprüfen, stellen Sie einen Nachweis für die Löschung bereit, und überwachen
 

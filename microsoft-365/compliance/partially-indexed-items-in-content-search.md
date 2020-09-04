@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - ms.o365.cc.UnindexedItemsLearnMore
 ms.service: O365-seccomp
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: Informationen zu nicht indizierten Elementen in Exchange und SharePoint, die Sie in eine Inhaltssuche einschließen können, die über das Security & Compliance Center ausgeführt wird.
-ms.openlocfilehash: 587f887a7ecd8e7393b2f6852a070dd040ff1bda
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: d4d9cfec03c4d7ca5af7ee68b077985ffb5d97dc
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936340"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358557"
 ---
 # <a name="partially-indexed-items-in-content-search"></a>Teilweise indizierte Elemente in der Inhaltssuche
 
@@ -125,7 +125,7 @@ Eine Liste der Indizierungs Grenzwerte für SharePoint-Dokumente finden Sie unte
 |Maximale Parser-Ausgabe  <br/> |2 Millionen Zeichen  <br/> |Die maximale Textausgabe des indizierten Parsers. Wenn der Parser beispielsweise 8 Millionen Zeichen aus einem Dokument extrahiert hat, werden nur die ersten 2 Millionen Zeichen indiziert.  <br/> |
 |Maximale Anmerkungs Token  <br/> |2 Millionen  <br/> |Wenn eine e-Mail-Nachricht indiziert wird, wird jedes Wort mit unterschiedlichen Verarbeitungsanweisungen versehen, die angeben, wie dieses Wort indiziert werden soll. Jeder Sätze von Verarbeitungsanweisungen wird als Anmerkungs Token bezeichnet. Um die Dienstqualität in Office 365 beizubehalten, gibt es einen Grenzwert von 2 Millionen-Anmerkungs Token für eine e-Mail-Nachricht.  <br/> |
 |Maximale Körpergröße im Index  <br/> |67 Millionen Zeichen  <br/> |Die Gesamtzahl der Zeichen im Textkörper einer e-Mail-Nachricht und aller Anlagen. Wenn eine e-Mail-Nachricht indiziert wird, wird der gesamte Text im Nachrichtentext und in allen Anlagen in einer einzigen Zeichenfolge verkettet. Die maximale Größe dieser Zeichenfolge, die indiziert wird, ist 67 Millionen Zeichen.  <br/> |
-|Maximale Anzahl eindeutiger Token im Textkörper  <br/> |1 Mio.  <br/> |Wie bereits erläutert, sind Token das Ergebnis des Extrahierens von Text aus dem Inhalt, dem Entfernen von Satzzeichen und Leerzeichen und der anschließende Aufteilung in Wörter (sogenannte Token), die im Index gespeichert sind. Der Ausdruck enthält beispielsweise `"cat, mouse, bird, dog, dog"` 5 Token. Aber nur 4 von diesen sind eindeutige Token. Es gibt ein Limit von 1 Million eindeutigen Token pro e-Mail-Nachricht, wodurch verhindert werden kann, dass der Index zu groß wird mit zufälligen Token.  <br/> |
+|Maximale Anzahl eindeutiger Token im Textkörper  <br/> |1 Mio.  <br/> |Wie bereits erläutert, sind Token das Ergebnis des Extrahierens von Text aus dem Inhalt, dem Entfernen von Satzzeichen und Leerzeichen und der anschließende Aufteilung in Wörter (sogenannte Token), die im Index gespeichert sind. Der Ausdruck enthält beispielsweise  `"cat, mouse, bird, dog, dog"` 5 Token. Aber nur 4 von diesen sind eindeutige Token. Es gibt ein Limit von 1 Million eindeutigen Token pro e-Mail-Nachricht, wodurch verhindert werden kann, dass der Index zu groß wird mit zufälligen Token.  <br/> |
 
 ## <a name="more-information-about-partially-indexed-items"></a>Weitere Informationen zu teilweise indizierten Elementen
 
@@ -141,7 +141,7 @@ Eine Liste der Indizierungs Grenzwerte für SharePoint-Dokumente finden Sie unte
 
 - Durch die Verwaltung von Informationsrechten (Information Rights Management, IRM) geschützte Nachrichten werden indiziert und daher in die Suchergebnisse eingeschlossen, wenn sie der Suchabfrage entsprechen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 [Untersuchen von teilweise indizierten Elementen in eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)
 

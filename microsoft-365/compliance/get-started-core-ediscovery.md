@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Artikel wird beschrieben, wie Sie mit der Verwendung von Core eDiscovery in Microsoft 365 beginnen. Nachdem Sie eDiscovery-Berechtigungen zugewiesen und eine Anfrage erstellt haben, können Sie Mitglieder hinzufügen, eDiscovery-Haltestatus erstellen und dann nach Daten suchen und exportieren, die für Ihre Untersuchung relevant sind.
-ms.openlocfilehash: 5faae81eb81ce8c69e3ae801d153c664ac152bda
-ms.sourcegitcommit: 6ea9a910a8106a5f1aa589c55d166bfa67fd12a8
+ms.openlocfilehash: 94c85987be4cbc5da7a378abb7ea74294f6fe740
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "44280545"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357913"
 ---
 # <a name="get-started-with-core-ediscovery"></a>Erste Schritte mit Core eDiscovery
 
@@ -82,15 +82,15 @@ Es gibt zwei Untergruppen in der Rollengruppe "eDiscovery-Manager". Der Untersch
 
 - **eDiscovery-Manager:** Kann die zentralen eDiscovery-Fälle anzeigen und verwalten, in denen Sie erstellt werden oder deren Mitglied Sie sind. Wenn ein anderer eDiscovery-Manager einen Fall erstellt, aber keinen zweiten eDiscovery-Manager als Mitglied dieses Falles hinzufügt, kann der zweite eDiscovery-Manager den Fall nicht auf der zentralen eDiscovery-Seite im Compliance Center anzeigen oder öffnen. Im Allgemeinen können die meisten Personen in Ihrer Organisation der Untergruppe eDiscovery-Manager hinzugefügt werden.
 
-- **eDiscovery-Administrator:** Kann alle Fall Verwaltungsaufgaben ausführen, die ein eDiscovery-Manager ausführen kann. Darüber hinaus können eDiscovery-Administratoren folgende Aktionen durchführen:
+- **eDiscovery-Administrator:** Kann alle Fall Verwaltungsaufgaben ausführen, die ein eDiscovery-Manager ausführen kann. Außerdem kann ein eDiscovery-Administrator Folgendes:
 
   - Anzeigen aller Fälle, die auf der zentralen eDiscovery-Seite aufgeführt sind.
   
-  - Verwalten Sie alle Fälle in der Organisation, nachdem Sie sich selbst als Mitglied der Anfrage hinzugefügt haben.
+  - Verwalten aller Fälle in der Organisation, nachdem er sich selbst als Fallmitglied hinzugefügt hat.
 
-  - Zugriffs-und Export Fall Daten für alle Fälle in der Organisation.
+  - Zugreifen auf und Exportieren von Falldaten für jeden Fall in der Organisation.
 
-  Aufgrund des breiten Zugriffs Umfangs sollte eine Organisation nur wenige Administratoren haben, die Mitglieder der Untergruppe "eDiscovery Administrators" sind.
+  Aufgrund des breit gefächerten Zugriffs sollte eine Organisation nur über wenige Administratoren verfügen, die Mitglieder der Untergruppe der eDiscovery-Administratoren sind.
 
 Weitere Informationen zu eDiscovery-Berechtigungen und eine Beschreibung der einzelnen Rollen, die der Rollengruppe "eDiscovery-Manager" zugewiesen sind, finden Sie unter [Zuweisen von eDiscovery-Berechtigungen](assign-ediscovery-permissions.md).
 
@@ -134,7 +134,7 @@ Um Ihnen den Einstieg in die Verwendung von Core eDiscovery zu erleichtern, find
 
 1. **[Erstellen eines eDiscovery-Haltestatus](create-ediscovery-holds.md)**. Der erste Schritt nach dem Erstellen eines Falls ist das Platzieren eines Haltestatus (auch als *eDiscovery*-Archiv bezeichnet) an den Inhaltsspeicherorten der Personen, die für Ihre Untersuchung relevant sind. Zu den Inhaltsspeicherorten gehören Exchange-Postfächer, SharePoint-Websites, OneDrive-Konten sowie die Postfächer und Websites, die Microsoft Teams und Office 365 Gruppen zugeordnet sind. Während dieser Schritt optional ist, behält das Erstellen eines eDiscovery-Speichers Inhalte bei, die für den Fall während der Untersuchung relevant sein können. Wenn Sie einen eDiscovery-Haltebereich erstellen, können Sie den gesamten Inhalt an bestimmten Inhaltsspeicherorten beibehalten oder einen abfragebasierten Haltebereich erstellen, um nur die Inhalte beizubehalten, die mit einer halte Abfrage übereinstimmen. Neben dem Beibehalten von Inhalten besteht ein weiterer Grund zum Erstellen von eDiscovery-Archiven darin, die inhaltsspeicherorte schnell durchsuchen zu lassen (anstatt jeden zu durchsuchenden Standort auszuwählen), wenn Sie im nächsten Schritt suchen erstellen und ausführen. Nachdem Sie Ihre Untersuchung abgeschlossen haben, können Sie alle von Ihnen erstellten Haltestatus freigeben.
 
-2. **[Suchen nach Inhalten](search-for-content-in-core-ediscovery.md)**. Nachdem Sie eDiscovery-Haltestatus erstellt haben, verwenden Sie das integrierte Such Tool, um die inhaltsspeicherorte zu durchsuchen. Sie können auch andere inhaltsspeicherorte nach Daten durchsuchen, die möglicherweise für den Fall relevant sind. Sie können verschiedene Suchvorgänge erstellen und ausführen, die mit der Anfrage verknüpft sind. Sie verwenden Schlüsselwörter, Eigenschaften und Bedingungen zum [Erstellen von Suchabfragen](keyword-queries-and-search-conditions.md) , die Suchergebnisse mit den Daten zurückgeben, die für den Fall wahrscheinlich relevant sind. Des Weiteren können Sie Folgendes:
+2. **[Suchen nach Inhalten](search-for-content-in-core-ediscovery.md)**. Nachdem Sie eDiscovery-Haltestatus erstellt haben, verwenden Sie das integrierte Such Tool, um die inhaltsspeicherorte zu durchsuchen. Sie können auch andere inhaltsspeicherorte nach Daten durchsuchen, die möglicherweise für den Fall relevant sind. Sie können verschiedene Suchvorgänge erstellen und ausführen, die mit der Anfrage verknüpft sind. Sie verwenden Schlüsselwörter, Eigenschaften und Bedingungen zum [Erstellen von Suchabfragen](keyword-queries-and-search-conditions.md) , die Suchergebnisse mit den Daten zurückgeben, die für den Fall wahrscheinlich relevant sind. Sie können auch Folgendes tun:
 
    - Anzeigen von Suchstatistiken, die Ihnen beim Verfeinern einer Suchabfrage helfen können, um die Ergebnisse einzugrenzen.
 

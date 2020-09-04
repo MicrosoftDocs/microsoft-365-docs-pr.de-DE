@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: troubleshooting
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ ms.assetid: ''
 description: Erfahren Sie mehr über die grundlegenden Schritte zur Problembehandlung, die Sie zur Lösung häufig auftretender Probleme in Office 365 eDiscovery ausführen können.
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f643f4c3709b811a10618343a4b37ac4114dd8c0
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: 2b96ed80ba9f347616fd364b3b97ac960cdaeb8e
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434168"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357995"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Untersuchen, beheben und Beheben allgemeiner eDiscovery-Probleme
 

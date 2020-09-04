@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 f1_keywords:
 - ms.o365.cc.CustomizeExportReport
 ms.service: O365-seccomp
@@ -22,18 +22,18 @@ search.appverid:
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: Anstatt die tatsächlichen Ergebnisse einer Inhaltssuche im Security & Compliance Center in Office 365 zu exportieren, können Sie einen Suchergebnisbericht exportieren. Der Bericht enthält eine Zusammenfassung der Suchergebnisse und ein Dokument mit detaillierten Informationen zu jedem Element, das exportiert werden würde.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 25525a0670f31a7e962fb72f6d1559381e8b33cd
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: de27e25945f14f6a6119b4c1776eebca5e84d8ce
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817774"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358301"
 ---
 # <a name="export-a-content-search-report"></a>Exportieren eines Berichts für die Inhaltssuche
 
 Anstatt den vollständigen Satz von Suchergebnissen aus einer Inhaltssuche im Security & Compliance Center (und aus einer Inhaltssuche, die einem eDiscovery-Fall zugeordnet ist) zu exportieren, können Sie dieselben Berichte exportieren, die beim Exportieren der Suchergebnisse generiert werden.
   
-Wenn Sie einen Bericht exportieren, wird er in einen Ordner mit dem gleichen Namen wie die Inhaltssuche heruntergeladen, dieser wird jedoch *_ReportsOnly*angefügt. Wenn die Inhaltssuche beispielsweise " *ContosoCase0815*" lautet, wird der Bericht in einen Ordner mit dem Namen " *ContosoCase0815_ReportsOnly*" heruntergeladen. Eine Liste der Dokumente, die im Bericht enthalten sind, finden Sie unter [What es included in the Report](#whats-included-in-the-report).
+Wenn Sie einen Bericht exportieren, wird er in einen Ordner mit dem gleichen Namen wie die Inhaltssuche heruntergeladen, dieser wird jedoch *_ReportsOnly*angefügt. Wenn die Inhaltssuche beispielsweise "  *ContosoCase0815*" lautet, wird der Bericht in einen Ordner mit dem Namen " *ContosoCase0815_ReportsOnly*" heruntergeladen. Eine Liste der Dokumente, die im Bericht enthalten sind, finden Sie unter [What es included in the Report](#whats-included-in-the-report).
 
 ## <a name="assign-roles-and-check-system-requirements"></a>Zuweisen von Rollen und Überprüfen der Systemanforderungen
 
@@ -45,7 +45,7 @@ Wenn Sie einen Bericht exportieren, wird er in einen Ordner mit dem gleichen Nam
     
   - 32-Bit-oder 64-Bit-Versionen von Windows 7 und höheren Versionen
     
-  - Microsoft .NET Framework 4,7
+  - Microsoft .NET Framework 4.7
     
 - Sie müssen einen der folgenden unterstützten Browser verwenden, um das eDiscovery-Export Tool<sup>1</sup>auszuführen:
 

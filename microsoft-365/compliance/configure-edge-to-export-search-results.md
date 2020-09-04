@@ -6,18 +6,18 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Sie müssen die ClickOnce-Unterstützung aktivieren, um die neueste Version von Microsoft Edge zum Herunterladen von Suchergebnissen aus der Inhaltssuche und von eDiscovery im Security and Compliance Center zu verwenden.
-ms.openlocfilehash: c48e3fb04747306693364a2cdbc6f18047a0fd9e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 317e19c81a606565fcb18f3256fd5bac007747e1
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632380"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357575"
 ---
 # <a name="use-the-ediscovery-export-tool-in-microsoft-edge"></a>Verwenden des eDiscovery-Export Tools in Microsoft Edge
 
@@ -29,15 +29,15 @@ Aufgrund der letzten Änderungen an der neuesten Version von Microsoft Edge ist 
 
 2. Wenn der vorhandene Wert in der Dropdownliste auf **Standard** oder **deaktiviert** festgelegt ist, ändern Sie ihn in **aktiviert**.
 
-   ![](../media/ClickOnceimage1.png)
+   ![Auswählen aus Dropdownliste aktiviert](../media/ClickOnceimage1.png)
 
 3. Scrollen Sie nach unten zum Browserfenster, und klicken Sie auf **neu** starten, um Edge neu zu starten.
 
-   ![](../media/ClickOnceimage2.png)
+   ![Klicken Sie auf neu starten](../media/ClickOnceimage2.png)
 
 **Hinweis:** Organisationen können mithilfe von Gruppenrichtlinien die ClickOnce-Unterstützung deaktivieren. Um zu überprüfen, ob eine Organisationsrichtlinie für die ClickOnce-Unterstützung vorhanden ist, wechseln Sie zu **Edge://Policy**. Der folgende Screenshot zeigt, dass ClickOnce in der gesamten Organisation aktiviert ist. Wenn dieser Richtlinienwert auf **false**festgelegt ist, müssen Sie einen Administrator in Ihrer Organisation kontaktieren.
 
-![](../media/ClickOnceimage3.png)
+![Liste der Edge-Organisationsrichtlinien](../media/ClickOnceimage3.png)
 
 ## <a name="install-and-run-the-ediscovery-export-tool"></a>Installieren und Ausführen des eDiscovery-Export Tools
 

@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: In diesem Artikel erfahren Sie, wie Sie mit der Funktion zur Wiederherstellung von Features für erweiterte eDiscovery Thread Unterhaltungen neu erstellen, überprüfen und exportieren.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 45cf4bdbf0956ee28e75878b7db5ec84b81c7230
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: bf5c39f567240b58546dbeb353e3e461e9b69e48
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035493"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358343"
 ---
 # <a name="review-conversations-in-advanced-ediscovery"></a>Überprüfen von Unterhaltungen in Advanced eDiscovery 
 
@@ -40,7 +40,7 @@ Bei der Wiederherstellung von Unterhaltungen können Sie integrierte Funktionen 
 
 - Exportieren einzelner Nachrichten oder Thread Unterhaltungen
 
-## <a name="terminology"></a>Begrifflichkeiten
+## <a name="terminology"></a>Terminologie
 
 Hier sind einige Definitionen, die Sie beim Einstieg in die Wiederherstellung von Unterhaltungen unterstützen.
 
@@ -132,7 +132,7 @@ In einer Konversations Überprüfungsgruppe können Sie die folgenden Optionen v
 
 In einer Konversations Überprüfungsgruppe können Sie die folgenden Optionen zum Exportieren von Unterhaltungen festlegen:
 
-![Exportieren](../media/export.png)
+![Exportieren von Optionen für Unterhaltungen](../media/export.png)
 
 a. Metadaten-Optionen
 

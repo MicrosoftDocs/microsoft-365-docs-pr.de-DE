@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Eine Liste unterstützter Dateitypen in Microsoft 365 Advanced eDiscovery, einschließlich Bilddateitypen, die von der OCR-Funktion in Advanced eDiscovery unterstützt werden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e7c1840642dcc572da8e23bcdde3b7759746b209
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 4b23e0b0f428c91b13e461eb6514da99e5a69f42
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819155"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357746"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>Unterstützte Dateitypen in Advanced eDiscovery
 
@@ -50,14 +50,14 @@ Advanced eDiscovery unterstützt viele Dateitypen in vielen verschiedenen Ebenen
 | Video/x-m4v | Ja | Ja | Nein | Ja | Nein | . m4v |
 ||||||||
 
-## <a name="database"></a>Datenbank
+## <a name="database"></a>Database
 
 | MIME-Typ | Datei Identifikation | Extraktion von Metadaten | Text Extraktion | Nativer Viewer | Annotations-Viewer | Mögliche Erweiterungen |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
 | Application/x-Msaccess | Ja | Ja | Ja | Nein | Nein | MDB |
 ||||||||
 
-## <a name="email"></a>E-Mails
+## <a name="email"></a>E-Mail
 
 | MIME-Typ | Datei Identifikation | Extraktion von Metadaten | Text Extraktion | Nativer Viewer | Annotations-Viewer | Mögliche Erweiterungen |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
@@ -83,7 +83,7 @@ Advanced eDiscovery unterstützt viele Dateitypen in vielen verschiedenen Ebenen
 | Text/HTML | Ja | Ja | Ja | Ja | Ja | . htm;. html;. shtml |
 ||||||||
 
-## <a name="image"></a>Image
+## <a name="image"></a>Bild
 
 | MIME-Typ | Datei Identifikation | Extraktion von Metadaten | OCR-Textextraktion | Nativer Viewer | Annotations-Viewer | Mögliche Erweiterungen |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |

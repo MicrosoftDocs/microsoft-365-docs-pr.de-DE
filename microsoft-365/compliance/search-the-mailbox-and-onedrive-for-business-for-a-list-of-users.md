@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 1/3/2017
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: Verwenden Sie die Inhaltssuche und das Skript in diesem Artikel, um die Postfächer und OneDrive für Unternehmen Websites für eine Gruppe von Benutzern zu durchsuchen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 90aab661992ae2f0c19d18939191230dc0469eaa
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: e3a10913cc4d8618e3d25bdf34e30c9d55a43324
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527361"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357797"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>Verwenden Sie die Inhaltssuche, um das Postfach und die OneDrive for Business-Website nach einer Liste mit Benutzern zu durchsuchen.
 
@@ -56,7 +56,7 @@ Hier ist ein [Exchange Onlineer PowerShell](https://go.microsoft.com/fwlink/p/?L
 Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbox'} | Select-Object PrimarySmtpAddress > Users.txt
 ```
 
-Nachdem Sie diesen Befehl ausgeführt haben, müssen Sie die Datei öffnen und die Kopfzeile mit dem Eigenschaftennamen entfernen `PrimarySmtpAddress` . Die Textdatei sollte nur eine Liste von e-Mail-Adressen enthalten, und nichts anderes. Stellen Sie sicher, dass keine leeren Zeilen vor oder nach der Liste der e-Mail-Adressen vorhanden sind.
+Nachdem Sie diesen Befehl ausgeführt haben, müssen Sie die Datei öffnen und die Kopfzeile mit dem Eigenschaftennamen entfernen  `PrimarySmtpAddress` . Die Textdatei sollte nur eine Liste von e-Mail-Adressen enthalten, und nichts anderes. Stellen Sie sicher, dass keine leeren Zeilen vor oder nach der Liste der e-Mail-Adressen vorhanden sind.
   
 ## <a name="step-3-run-the-script-to-create-and-start-the-search"></a>Schritt 3: Ausführen des Skripts zum Erstellen und Starten der Suche
 
@@ -64,7 +64,7 @@ Wenn Sie das Skript in diesem Schritt ausführen, werden Sie aufgefordert, die f
   
 - **Ihre Benutzeranmeldeinformationen** – das Skript verwendet Ihre Anmeldeinformationen, um auf SharePoint Online zuzugreifen, um die OneDrive für Unternehmen-URLs abzurufen und eine Verbindung mit dem Security & Compliance Center mit Remote-PowerShell herzustellen. 
     
-- **Name Ihrer mysite-Domäne** : die mysite-Domäne ist die Domäne, die alle OneDrive für Unternehmen Websites in Ihrer Organisation enthält. Wenn beispielsweise die URL für Ihre mysite-Domäne lautet **https://contoso-my.sharepoint.com** , geben Sie ein, `contoso` Wenn Sie vom Skript nach dem Namen Ihrer mysite-Domäne gefragt werden. 
+- **Name Ihrer mysite-Domäne** : die mysite-Domäne ist die Domäne, die alle OneDrive für Unternehmen Websites in Ihrer Organisation enthält. Wenn beispielsweise die URL für Ihre mysite-Domäne lautet **https://contoso-my.sharepoint.com** , geben Sie ein,  `contoso` Wenn Sie vom Skript nach dem Namen Ihrer mysite-Domäne gefragt werden. 
     
 - **Pfadname der Textdatei aus Schritt 2** -der Pfadname der Textdatei, die Sie in Schritt 2 erstellt haben. Wenn sich die Textdatei und das Skript im gleichen Ordner befinden, geben Sie den Namen der Textdatei ein. Geben Sie andernfalls den vollständigen Pfadnamen für die Textdatei ein. 
     

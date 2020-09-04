@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 1/30/2017
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: Erfahren Sie, wie Sie mithilfe der Suchstatistik-Funktion Statistiken für mehrere Inhalts suchen im Security & Compliance Center anzeigen und vergleichen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 30cc893d041819ac1fa2e24c6ecf6178677686b2
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 6f9f6b77a7a557ca363b2a7d56b96ea3d6ccc287
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819035"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358463"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>Anzeigen der Schlüsselwortstatistik für Inhaltssuchergebnisse
 
@@ -74,7 +74,7 @@ So zeigen Sie Statistiken für die Inhaltssuche an:
     
     d. Diese Spalte enthält die tatsächliche Suchabfrage, die vom Inhalts Such Tool ausgeführt wird. Beachten Sie, dass das Tool automatisch einige zusätzliche Komponenten zur Abfrage hinzufügt, die Sie erstellen. 
 
-    - Wenn Sie nach allen Inhalten in Postfächern suchen (indem Sie keine Stichwörter angeben), ist die tatsächliche Schlüsselwortabfrage `size>=0` so, dass alle Elemente zurückgegeben werden. 
+    - Wenn Sie nach allen Inhalten in Postfächern suchen (indem Sie keine Stichwörter angeben), ist die tatsächliche Schlüsselwortabfrage  `size>=0` so, dass alle Elemente zurückgegeben werden. 
     
      - Wenn Sie SharePoint Online-und OneDrive für Unternehmen-Websites Durchsuchen, werden die beiden folgenden Komponenten hinzugefügt:
     

@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie mehr über die Fall Limits, Indizierungs Grenzwerte und Such Grenzwerte, die für die erweiterte eDiscovery-Lösung in Microsoft 365 gelten.
-ms.openlocfilehash: 5666bae5315586ed421ad8d6c748505cda8ae3e6
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: c139480f18e0e6d94aae5a38d5fd636fbc62b2dc
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778461"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358473"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Grenzwerte in Advanced eDiscovery
 
@@ -60,13 +60,13 @@ Die in diesem Abschnitt beschriebenen Grenzwerte beziehen sich auf die Verwendun
 |:-----|:-----|
 |Maximale Anzahl von Postfächern oder Websites, die in einer einzigen Suche durchsucht werden können.  <br/> |Keine Begrenzung  <br/> |
 |Maximale Anzahl von Suchvorgängen, die gleichzeitig ausgeführt werden können.  <br/> |Keine Begrenzung  <br/> | 
-|Maximale Anzahl von Suchvorgängen, die ein einzelner Benutzer gleichzeitig starten kann.  <br/> |10   <br/> | 
+|Maximale Anzahl von Suchvorgängen, die ein einzelner Benutzer gleichzeitig starten kann.  <br/> |10    <br/> | 
 |Maximale Anzahl von Zeichen für eine Suchabfrage (einschließlich Operatoren und Bedingungen).  <br/> |**Postfächer**: 10.000<br/>**Websites**: 4.000 beim Durchsuchen aller Websites oder 2.000 bei der Suche bis zu 20 Websites <sup>2</sup> <br/> |
-|Minimale Anzahl von Alphazeichen für Präfix Platzhalter; Beispiel ** \* eins** oder **festgelegt \* **. <br/> |3  <br/> |  
+|Minimale Anzahl von Alphazeichen für Präfix Platzhalter; Beispiel ** \* eins** oder **festgelegt \* **. <br/> |3   <br/> |  
 |Maximale Anzahl von Varianten, die zurückgegeben werden, wenn Präfix Platzhalter verwendet wird, um nach einem exakten Ausdruck zu suchen oder wenn ein Präfix Platzhalter und der **near** -Boolesche Operator verwendet werden.  <br/> |10.000 <sup>3</sup> <br/> |
 |Maximale Anzahl von Elementen pro Benutzerpostfach, die auf der Vorschauseite für Suchvorgänge angezeigt werden. Die neuesten Elemente werden angezeigt.   <br/> |100  <br/> |
-|Maximale Anzahl von Elementen aus allen Postfächern, die auf der Vorschauseite für Suchvorgänge angezeigt werden.  <br/> |1.000  <br/> |
-|Maximale Anzahl von Postfächern, für die eine Vorschau für Suchergebnisse angezeigt werden kann.  Wenn mehr als 1000 Postfächer vorhanden sind, die Elemente enthalten, die mit der Suchabfrage übereinstimmen, stehen nur die obersten 1.000-Postfächer mit den meisten Ergebnissen für die Vorschau zur Verfügung.<br/> |1.000  <br/> |
+|Maximale Anzahl von Elementen aus allen Postfächern, die auf der Vorschauseite für Suchvorgänge angezeigt werden.  <br/> |1,000  <br/> |
+|Maximale Anzahl von Postfächern, für die eine Vorschau für Suchergebnisse angezeigt werden kann.  Wenn mehr als 1000 Postfächer vorhanden sind, die Elemente enthalten, die mit der Suchabfrage übereinstimmen, stehen nur die obersten 1.000-Postfächer mit den meisten Ergebnissen für die Vorschau zur Verfügung.<br/> |1,000  <br/> |
 |Maximale Anzahl von Elementen aus SharePoint und OneDrive für Unternehmen Websites, die auf der Vorschauseite für Suchvorgänge angezeigt werden. Die neuesten Elemente werden angezeigt.  <br/> |200  <br/> |
 |Maximale Anzahl von SharePoint-und OneDrive für Unternehmen-Websites, für die eine Vorschau für Suchergebnisse angezeigt werden kann. Wenn es mehr als 200 Websites gibt, die Elemente enthalten, die mit der Suchabfrage übereinstimmen, stehen nur die Top 200-Websites mit den meisten Ergebnissen für die Vorschau zur Verfügung.  <br/> |200  <br/> |
 |Maximale Anzahl von Elementen pro Postfach für Öffentliche Ordner, die auf der Vorschauseite für Suchvorgänge angezeigt werden.  <br/> |100  <br/> |

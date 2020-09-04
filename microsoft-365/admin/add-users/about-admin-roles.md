@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Administratorrollen sind Geschäftsfunktionen zugeordnet. Über sie werden Berechtigungen für bestimmte Aufgaben im Admin Center erteilt. Der Dienstadministrator öffnet beispielsweise Supporttickets bei Microsoft.
-ms.openlocfilehash: 361c6599dfccbe7a80fa520bcd1fa988a1fae536
-ms.sourcegitcommit: 6cf29958aff90d8bc1df0fe5fb9238d338db8237
+ms.openlocfilehash: d80207ac264cb1b649f631d358c86809c2992a8e
+ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46506285"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47361773"
 ---
 # <a name="about-admin-roles"></a>Info zu Administratorrollen
 
@@ -40,6 +40,10 @@ Suchen Sie nach der vollständigen Liste der detaillierten Azure AD-Rollenbeschr
 Suchen Sie nach der vollständigen Liste der detaillierten Intune-Rollenbeschreibungen, die Sie im Microsoft 365 Admin Center verwalten können?  Siehe [Rollenbasierte Zugriffssteuerung (RBAC) mit Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).
 
 Weitere Informationen zum Zuweisen von Rollen im Microsoft 365 Admin Center finden Sie unter [Zuweisen von Administratorrollen](assign-admin-roles.md).
+
+### <a name="watch-what-is-an-admin"></a>Schauen Sie sich an: Was ist ein Administrator?
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0]
 
 ## <a name="security-guidelines-for-assigning-roles"></a>Sicherheitsrichtlinien für das Zuweisen von Rollen
 

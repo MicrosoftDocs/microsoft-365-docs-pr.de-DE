@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Artikel werden die Grenzwerte im zentralen eDiscovery-Fall in Microsoft 365 beschrieben.
-ms.openlocfilehash: 00df8cff683701ce5ee38dca12b6f7af5b31c8b0
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 6224ce5ecb8fc0439e43ab5e1362f8a618194202
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351896"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358513"
 ---
 # <a name="limits-in-core-ediscovery"></a>Grenzwerte in der zentralen eDiscovery
 
@@ -32,9 +32,9 @@ In der folgenden Tabelle sind die Grenzwerte für zentrale eDiscovery-Fälle und
   |:-----|:-----|
   |Maximale Anzahl von Fällen für eine Organisation  <br/> |Keine Begrenzung  <br/> |
   |Maximale Anzahl von Fall Behältern für eine Organisation  <br/> |10.000  <br/> |
-  |Maximale Anzahl von Postfächern in einem einzigen Aufbewahrungs Fall  <br/> |1.000  <br/> |
+  |Maximale Anzahl von Postfächern in einem einzigen Aufbewahrungs Fall  <br/> |1,000  <br/> |
   |Maximale Anzahl von SharePoint-und OneDrive für Unternehmen-Websites in einem einzigen Aufbewahrungs Fall  <br/> |100  <br/> |
-  |Die maximale Anzahl von Fällen, die auf der zentralen eDiscovery-Startseite angezeigt werden, und die maximale Anzahl von Elementen, die auf den Registerkarten Holds, suchen und Exportieren in einem Fall angezeigt werden. <sup>1</sup> |1.000|
+  |Die maximale Anzahl von Fällen, die auf der zentralen eDiscovery-Startseite angezeigt werden, und die maximale Anzahl von Elementen, die auf den Registerkarten Holds, suchen und Exportieren in einem Fall angezeigt werden. <sup>1</sup> |1,000|
   |||
 
    > [!NOTE]

@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 07/23/2020
+ms.date: 09/02/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: Konfigurieren Sie Sicherheit und Dienstinfrastruktur, die es Ihren Arbeitnehmern ermöglicht, von überall und jederzeit remote zu arbeiten.
-ms.openlocfilehash: 17cc826f5cf28ff375deaf1e6a4b192700eebf2f
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: b0f6816ad758f374f2512076939cfa6392b748de
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898128"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357302"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Fördern von Remotemitarbeitern mit Microsoft 365
 
@@ -37,13 +37,33 @@ Microsoft 365 bietet die Möglichkeit, Ihre Mitarbeiter zu befähigen, Remote zu
 
 ![Fördern Ihrer Remotemitarbeiter mit Microsoft 365](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
-| Schlüsselfunktion | Beschreibung |
-|:-------|:-----|
-| Verbunden | Von überall auf der Welt und jederzeit können Remote-Mitarbeiter zugreifen: <ul><li>Cloud-basierte Dienste und Daten in Ihrem Microsoft 365-Abonnement. </li><li>Organisationsressourcen, wie sie z. B. in lokalen Anwendungsrechenzentren verfügbar sind.</li></ul> |
-| Sicher | Die Anmeldungen werden durch die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) und die integrierten Sicherheitsfeatures von Microsoft 365 und Windows 10 geschützt und schützen vor Schadsoftware, bösartigen Angriffen und Datenverlust. |
-| Verwaltet | Die Geräte Ihrer aus der Ferne arbeitenden Mitarbeiter können mit Sicherheitseinstellungen, zulässigen Apps und zur Einhaltung der Systemintegrität aus der Cloud verwaltet werden. |
-| Kooperativ und produktiv | Ihre aus der Ferne arbeitenden Mitarbeiter können so produktiv wie die lokal arbeitenden sein – und das auf sehr kooperative Weise mit: <ul><li>Onlinebesprechungen und Chatsitzungen mit Teams. </li><li>Freigegebene Arbeitsbereiche für cloudbasierte Dateispeicherung mit globalem Zugriff und Zusammenarbeit in Echtzeit mit SharePoint und OneDrive. </li><li>Gemeinsame Aufgaben und Workflows, um die Arbeit aufzuteilen und Dinge zu erledigen. </li></ul> |
-|||
+Schauen Sie sich dieses Video an, um einen Überblick über den Bereitstellungsprozess zu erhalten.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4F1af]
+
+Diese Lösung bietet die folgenden Hauptfunktionen.
+
+- Verbunden
+
+  Von überall auf der Welt und jederzeit können Remote-Mitarbeiter zugreifen: 
+
+  - Cloud-basierte Dienste und Daten in Ihrem Microsoft 365-Abonnement. 
+  - Organisationsressourcen, wie sie z. B. in lokalen Anwendungsrechenzentren verfügbar sind.
+
+- Sicher
+
+  Die Anmeldungen werden durch die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) und die integrierten Sicherheitsfeatures von Microsoft 365 und Windows 10 geschützt und schützen vor Schadsoftware, bösartigen Angriffen und Datenverlust.
+
+- Verwaltet
+
+  Die Geräte Ihrer aus der Ferne arbeitenden Mitarbeiter können mit Sicherheitseinstellungen, zulässigen Apps und zur Einhaltung der Systemintegrität aus der Cloud verwaltet werden.
+
+- Kooperativ und produktiv
+
+  Ihre aus der Ferne arbeitenden Mitarbeiter können so produktiv wie die lokal arbeitenden sein – und das auf sehr kooperative Weise mit:
+  - Onlinebesprechungen und Chatsitzungen mit Teams. 
+  - Freigegebene Arbeitsbereiche für cloudbasierte Dateispeicherung mit globalem Zugriff und Zusammenarbeit in Echtzeit mit SharePoint und OneDrive.
+  - Gemeinsame Aufgaben und Workflows, um die Arbeit aufzuteilen und Dinge zu erledigen. 
 
 Für einen flüssigen Anmeldevorgang sollten Ihre lokalen AD DS-Benutzerkonten (Active Directory Domain Services) mit Azure Active Directory (Azure AD) synchronisiert werden. Um Ihre Windows 10-Geräte zu schützen, sollten sie in Intune registriert werden. Hier ist eine allgemeine Übersicht über die Infrastruktur.
 

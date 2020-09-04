@@ -7,17 +7,17 @@ author: markjjo
 manager: laurawi
 ms.date: 6/19/2017
 audience: ITPro
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: In-situ-Speicher, Beweissicherungsverfahren und Microsoft 365-Aufbewahrungsrichtlinien ermöglichen das Aufbewahren von Postfachinhalten zur Erfüllung behördlicher Compliance-und eDiscovery-Anforderungen.
-ms.openlocfilehash: 07959edc89aa9d3335b9af501743eae4a11a6aa1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 62029ff742f9fe4aec1fed23d74b01b145da6cfe
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634863"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358483"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>Speichern von Bcc-Empfängern und Empfängern aus erweiterten Verteilergruppen für eDiscovery
   
@@ -72,7 +72,7 @@ Szenario 2: Bob sendet eine E-Mail an John (An/Cc) und Jack (direkt über BCC od
 
  **F. Wann und wo werden die Bcc-Empfänger-Informationen gespeichert?**
   
-A: Informationen über einen Bcc-Empfänger werden standardmäßig in der ursprünglichen Nachricht im Postfach des Absenders gespeichert. Wenn es sich bei dem Bcc-Empfänger um eine Verteilergruppe handelt, wird die Mitgliedschaft in Verteilergruppen nur erweitert, wenn das Postfach des Absenders gespeichert ist oder einer Microsoft 365-Aufbewahrungsrichtlinie zugewiesen ist.
+A. Informationen über einen Bcc-Empfänger werden standardmäßig in der ursprünglichen Nachricht im Postfach des Absenders gespeichert. Wenn es sich bei dem Bcc-Empfänger um eine Verteilergruppe handelt, wird die Mitgliedschaft in Verteilergruppen nur erweitert, wenn das Postfach des Absenders gespeichert ist oder einer Microsoft 365-Aufbewahrungsrichtlinie zugewiesen ist.
   
  **F. Wann und wo wird die Liste der Empfänger in erweiterten Verteilergruppen gespeichert?**
   
@@ -82,9 +82,9 @@ A. Die Mitgliedschaft in einer Verteilergruppe wird zu dem Zeitpunkt erweitert, 
   
 A. Nein. Diese Informationen sind nicht in den Nachrichtenkopfzeilen enthalten und nicht für die Empfänger unter An/Cc sichtbar. Der Absender kann das Bcc-Feld in der ursprünglichen Nachricht sehen, die in seinem Postfach gespeichert wird. Compliance Officers können diese Informationen sehen, wenn Sie das Postfach des Absenders durchsuchen.
   
- **F. wie kann ich sicherstellen, dass erweiterte Verteilergruppenempfänger immer beibehalten werden?**
+ **F.. Wie kann ich sicherstellen, dass erweiterte Verteilergruppenempfänger immer beibehalten werden?**
   
-A: Um sicherzustellen, dass erweiterte Verteilergruppenmitglieder immer mit einer Nachricht beibehalten werden, [platzieren Sie alle Postfächer in der Warteschleife](https://technet.microsoft.com/library/4c141604-3210-44cc-b98e-f3e0f15613b8.aspx) , oder erstellen Sie eine organisationsweite Microsoft 365-Aufbewahrungsrichtlinie. 
+A. Um sicherzustellen, dass erweiterte Verteilergruppenmitglieder immer mit einer Nachricht beibehalten werden, [platzieren Sie alle Postfächer in der Warteschleife](https://technet.microsoft.com/library/4c141604-3210-44cc-b98e-f3e0f15613b8.aspx) , oder erstellen Sie eine organisationsweite Microsoft 365-Aufbewahrungsrichtlinie. 
   
  **F. Welche Arten von Gruppen werden unterstützt?**
   

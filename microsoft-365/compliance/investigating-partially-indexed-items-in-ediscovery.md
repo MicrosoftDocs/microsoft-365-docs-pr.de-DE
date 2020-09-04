@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 1/26/2018
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -18,12 +18,12 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie, wie Sie teilweise indizierte (oder nicht indexierte) Elemente in Exchange, SharePoint und OneDrive in Ihrer Organisation verwalten können.
-ms.openlocfilehash: ed85a9351aad340c5840b6b9b9ea6e55833ed527
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 4c2da954316450e22f481f1a5093077be79cc67e
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817524"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357377"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Untersuchen von teilweise indizierten Elementen in eDiscovery
 
@@ -43,13 +43,13 @@ Obwohl es variiert, haben die meisten Organisationen Kunden weniger als 1% des I
   
 ## <a name="why-does-the-partially-indexed-item-count-change-for-a-search"></a>Warum ändert sich die teilweise indizierte Elementanzahl für eine Suche?
 
-Nachdem Sie eine Inhaltssuche im Security & Compliance Center ausgeführt haben, werden die Gesamtzahl und die Größe der teilweise indizierten Elemente an den durchsuchten Speicherorten in den Suchergebnis Statistiken aufgeführt, die in den detaillierten Statistiken für die Suche angezeigt werden. Hinweis Diese werden als nicht *indizierte Elemente* in den Suchstatistiken bezeichnet. Hier sind einige Dinge, die sich auf die Anzahl der teilweise indizierten Elemente auswirken, die in den Suchergebnissen zurückgegeben werden: 
+Nachdem Sie eine Inhaltssuche im Security & Compliance Center ausgeführt haben, werden die Gesamtzahl und die Größe der teilweise indizierten Elemente an den durchsuchten Speicherorten in den Suchergebnis Statistiken aufgeführt, die in den detaillierten Statistiken für die Suche angezeigt werden. Hinweis Diese werden als nicht  *indizierte Elemente*  in den Suchstatistiken bezeichnet. Hier sind einige Dinge, die sich auf die Anzahl der teilweise indizierten Elemente auswirken, die in den Suchergebnissen zurückgegeben werden: 
   
 - Wenn ein Element teilweise indiziert wird und mit der Suchabfrage übereinstimmt, ist es sowohl in der Anzahl (und der Größe) von Suchergebnis Elementen als auch in teilweise indizierten Elementen enthalten. Wenn die Ergebnisse der gleichen Suche jedoch exportiert werden, ist das Element nur mit einer Reihe von Suchergebnissen enthalten; Es ist nicht als teilweise indiziertes Element enthalten.
     
 - Wenn Sie einen Datumsbereich für eine Suchabfrage angeben (indem Sie ihn in die Stichwortabfrage oder mithilfe einer Bedingung einbeziehen), ist ein teilweise indiziertes Element, das nicht mit dem Datumsbereich übereinstimmt, nicht Bestandteil der Anzahl der teilweise indizierten Elemente. Nur die teilweise indizierten Elemente, die innerhalb des Datumsbereichs liegen, sind in der Anzahl der teilweise indizierten Elemente enthalten.
     
- **Hinweis:** Teilweise indizierte Elemente, die sich in SharePoint-und OneDrive-Websites befinden, *sind nicht* in der Schätzung der teilweise indizierten Elemente enthalten, die in den detaillierten Statistiken für die Suche angezeigt werden. Teilweise indizierte Elemente können jedoch exportiert werden, wenn Sie die Ergebnisse einer Inhaltssuche exportieren. Wenn Sie beispielsweise nur Websites in einer Inhaltssuche durchsuchen, wird die geschätzte Anzahl der teilweise indizierten Elemente 0 (null) sein. 
+ **Hinweis:** Teilweise indizierte Elemente, die sich in SharePoint-und OneDrive-Websites befinden,  *sind nicht*  in der Schätzung der teilweise indizierten Elemente enthalten, die in den detaillierten Statistiken für die Suche angezeigt werden. Teilweise indizierte Elemente können jedoch exportiert werden, wenn Sie die Ergebnisse einer Inhaltssuche exportieren. Wenn Sie beispielsweise nur Websites in einer Inhaltssuche durchsuchen, wird die geschätzte Anzahl der teilweise indizierten Elemente 0 (null) sein. 
   
 ## <a name="calculating-the-ratio-of-partially-indexed-items-in-your-organization"></a>Berechnen des Verhältnisses von teilweise indizierten Elementen in Ihrer Organisation
 
@@ -95,7 +95,7 @@ Fehler Tags bestehen aus zwei Informationselementen, dem Fehler und dem Dateityp
 ```
 
    
- `parseroutputsize`ist der Fehler und `xls` ist der Dateityp der Datei, in der der Fehler aufgetreten ist. In Fällen, in denen der Dateityp nicht erkannt wurde oder der Dateityp nicht auf den Fehler angewendet wurde, wird der Wert `noformat` anstelle des Dateityps angezeigt. 
+ `parseroutputsize` ist der Fehler und  `xls` ist der Dateityp der Datei, in der der Fehler aufgetreten ist. In Fällen, in denen der Dateityp nicht erkannt wurde oder der Dateityp nicht auf den Fehler angewendet wurde, wird der Wert  `noformat` anstelle des Dateityps angezeigt. 
   
 Im folgenden finden Sie eine Liste der Indizierungsfehler und eine Beschreibung der möglichen Fehlerursache.
   
@@ -118,7 +118,7 @@ Im folgenden finden Sie eine Liste der Indizierungsfehler und eine Beschreibung 
 | `retrieverrms` <br/> |Fehler beim Decodieren einer RMS-geschützten Nachricht durch den Inhaltsabruf.  <br/> |
 | `wordbreakertruncated` <br/> |Während der Indizierung wurden im Dokument zu viele Wörter identifiziert. Verarbeitung der Eigenschaft beim Erreichen des Grenzwerts angehalten, und die Eigenschaft wird abgeschnitten.  <br/> |
    
-In den Fehler Feldern wird beschrieben, welche Felder vom Verarbeitungsfehler betroffen sind, der im Feld Fehler Tags aufgeführt ist. Wenn Sie eine Eigenschaft wie or durchsuchen `subject` `participants` , wirken sich Fehler im Textkörper der Nachricht nicht auf die Ergebnisse Ihrer Suche aus. Dies kann hilfreich sein, wenn Sie genau ermitteln, welche teilweise indizierten Elemente Sie möglicherweise noch genauer untersuchen müssen.
+In den Fehler Feldern wird beschrieben, welche Felder vom Verarbeitungsfehler betroffen sind, der im Feld Fehler Tags aufgeführt ist. Wenn Sie eine Eigenschaft wie or durchsuchen  `subject`  `participants` , wirken sich Fehler im Textkörper der Nachricht nicht auf die Ergebnisse Ihrer Suche aus. Dies kann hilfreich sein, wenn Sie genau ermitteln, welche teilweise indizierten Elemente Sie möglicherweise noch genauer untersuchen müssen.
   
 ## <a name="using-a-powershell-script-to-determine-your-organizations-exposure-to-partially-indexed-email-items"></a>Verwenden eines PowerShell-Skripts, um die Exposition ihrer Organisation gegenüber teilweise indizierten e-Mail-Elementen zu ermitteln
 
@@ -188,6 +188,6 @@ Beachten Sie Folgendes:
     
 2. A List Error Tags und die entsprechenden Dateitypen, für die der Fehler aufgetreten ist.
   
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 [Teilweise indizierte Elemente in der Inhaltssuche in Office 365](partially-indexed-items-in-content-search.md)

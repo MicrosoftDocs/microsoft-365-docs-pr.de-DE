@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Verwenden Sie das Erkennungs Modell für Anwalts Client-Berechtigungen, um die Computer Lern basierte Erkennung von privilegierten Inhalten zu verwenden, wenn Inhalte in einem erweiterten eDiscovery-Fall überprüft werden.
-ms.openlocfilehash: e8e64fac2994b515bf6bc582673fa7e47d427d02
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: 73a0efeece7bc331045e9bbe1a1da56f9fd24700
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528390"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358041"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>Einrichten der Erkennung von Anwalts Mandanten-Berechtigungen in Advanced eDiscovery
 
@@ -33,13 +33,13 @@ Wenn die Erkennung der Anwalts-Client-Rechte aktiviert ist, werden alle Dokument
 
 - Privilegierte Inhalte – das Modell verwendet Maschinelles Lernen, um die Wahrscheinlichkeit zu ermitteln, dass das Dokumentinhalte enthält, die in der Natur legal sind.
 
-- Teilnehmer – im Rahmen der Einrichtung der Anwalts-Client-Berechtigungs Erkennung müssen Sie eine Liste der Anwälte für Ihre Organisation übermitteln. Das Modell vergleicht dann die Teilnehmer des Dokuments mit der anwaltsliste, um festzustellen, ob ein Dokument mindestens einen Anwalts Teilnehmer hat.
+- Teilnehmer – im Rahmen der Einrichtung der Anwalts-Client-Berechtigungs Erkennung müssen Sie eine Liste der Anwälte für Ihre Organisation übermitteln. Das Modell vergleicht dann die Teilnehmer des Dokuments mit der Liste der Rechtsanwälte, um festzustellen, ob mindestens ein Teilnehmer des Dokuments ein Rechtsanwalt ist.
 
 Das Modell erzeugt für jedes Dokument die folgenden drei Eigenschaften:
 
 - **AttorneyClientPrivilegeScore:** Die Wahrscheinlichkeit, dass das Dokument in der Natur legal ist; die Werte für die Partitur liegen zwischen **0** und **1**.
 
-- **HasAttorney:** Diese Eigenschaft wird auf **true** festgelegt, wenn einer der Dokument Teilnehmer in der anwaltsliste aufgeführt ist; Andernfalls ist der Wert **false**. Der Wert ist auch auf " **false** " festgelegt, wenn Ihre Organisation keine anwaltsliste hochgeladen hat.
+- **HasAttorney:** Diese Eigenschaft wird auf **true** festgelegt, wenn einer der Dokument Teilnehmer in der anwaltsliste aufgeführt ist; Andernfalls ist der Wert **false**. Der Wert wird auch auf **false** festgelegt, wenn Ihre Organisation keine Anwaltsliste hochgeladen hat.
 
 - **Isprivilege:** Diese Eigenschaft wird auf **true** festgelegt, wenn der Wert für **AttorneyClientPrivilegeScore** oberhalb des Schwellenwerts liegt *oder* wenn das Dokument über einen Anwalts Teilnehmer verfügt; Andernfalls wird der Wert auf **false**festgelegt.
 
@@ -65,7 +65,7 @@ Eine Person, die ein eDiscovery-Administrator in Ihrer Organisation ist (ein Mit
 
 3. Wählen Sie auf der Registerkarte **Analytics-Einstellungen** die Option **Attorney-Client-Berechtigungen verwalten**aus.
 
-4. Verwenden Sie auf der Seite " **Attorney-Client-Privilege-** Flyout" die Umschaltfläche, um das Feature zu aktivieren, und wählen Sie dann **Speichern**aus.
+4. Klicken Sie auf der Flyoutseite **Anwaltsgeheimnisse** auf die Umschaltfläche, um das Feature zu aktivieren, und wählen Sie dann **Speichern** aus.
 
 ### <a name="step-2-upload-a-list-of-attorneys-optional"></a>Schritt 2: Hochladen einer Liste von Anwälten (optional)
 
@@ -73,7 +73,7 @@ Um das Erkennungs Modell "Attorney-Client-Berechtigung" vollständig zu nutzen u
 
 So laden Sie eine anwaltsliste für das Erkennungs Modell "Attorney-Client-Berechtigung" hoch:
 
-1. Erstellen Sie eine CSV-Datei (ohne Kopfzeile), und fügen Sie die e-Mail-Adresse für jede entsprechende Person in einer separaten Zeile hinzu. Speichern Sie diese Datei auf Ihrem lokalen Computer.
+1. Erstellen Sie eine CSV-Datei (ohne Kopfzeile), und fügen Sie die E-Mail-Adresse jeder relevanten Person in einer separaten Zeile hinzu. Speichern Sie die Datei auf Ihrem lokalen Computer.
 
 2. Wählen Sie auf der Website für die **Erweiterte eDiscovery** -Startseite in der Kachel **Einstellungen** die Option **experimentelle Features konfigurieren**aus, und wählen Sie dann **Attorney-Client-Berechtigungseinstellung verwalten**aus.
 
@@ -91,7 +91,7 @@ Führen Sie die Schritte in diesem Abschnitt aus, um die Erkennung von Anwalts M
 
 ### <a name="step-1-create-a-smart-tag-group-with-attorney-client-privilege-detection-model"></a>Schritt 1: Erstellen einer smarttaggruppe mit dem Anwalt-Client-Berechtigungs Erkennungs Modell
 
-Eine der wichtigsten Methoden zum Anzeigen der Ergebnisse der Erkennung von Anwalts Client-Berechtigungen in Ihrem Überprüfungsprozess ist die Verwendung einer smarttaggruppe. Eine smarttaggruppe gibt die Ergebnisse der Anwalts-Client-Berechtigungs Erkennung an und zeigt die Ergebnisse Inline neben den Tags in einer smarttaggruppe an. Auf diese Weise können Sie während der Dokumentüberprüfung schnell potenziell privilegierte Dokumente identifizieren. Darüber hinaus können Sie die Tags in der smarttaggruppe auch verwenden, um Dokumente als privilegiertes oder als nicht privilegiertes Tag zu kennzeichnen. Weitere Informationen zu Smarttags finden Sie unter [Einrichten von Smart Tags in Advanced eDiscovery](smart-tags.md).
+Eine der wichtigsten Methoden zum Anzeigen der Ergebnisse der Erkennung von Anwaltsgeheimnissen in Ihrem Überprüfungsprozess ist die Verwendung einer Smarttaggruppe. Eine Smarttaggruppe zeigt die Ergebnisse der Erkennung von Anwaltsgeheimnissen an und listet die Ergebnisse in der Zeile neben den Kategorien in einer Smarttaggruppe auf. Auf diese Weise können Sie während der Dokumentüberprüfung schnell potenziell privilegierte Dokumente identifizieren. Darüber hinaus können Sie auch die Tags der Smarttaggruppe verwenden, um Dokumente als privilegiert oder nicht privilegiert zu kennzeichnen. Weitere Informationen zu Smarttags finden Sie unter [Einrichten von Smart Tags in Advanced eDiscovery](smart-tags.md).
 
 1. Wählen Sie in der Überprüfungsgruppe, die die Dokumente enthält, die Sie in Schritt 1 analysiert haben, die Option **Review-Gruppe verwalten** aus, und wählen Sie dann **Tags verwalten**aus.
  
@@ -119,7 +119,7 @@ Nach der Analyse des Überprüfungs Satzes und der Einrichtung von Smarttags bes
 
 - Wenn das Dokument über einen Teilnehmer verfügt, der in der anwaltsliste Ihrer Organisation gefunden wird, wird der Bezeichnungs **Anwalt** neben dem entsprechenden Smarttag angezeigt (in diesem Fall ist dies auch das standardmäßige **positive** Tag).
 
-- Wenn das Dokumentinhalte enthält, die möglicherweise legal sind *und* ein Teilnehmer in der anwaltsliste gefunden wird, werden sowohl die **rechtlichen Inhalte** als auch rechts **Anwalts** Bezeichnungen angezeigt. 
+- Wenn das Dokumentinhalte enthält, die möglicherweise legal sind *und* ein Teilnehmer in der anwaltsliste gefunden wird, werden sowohl die **rechtlichen Inhalte**  als auch rechts **Anwalts** Bezeichnungen angezeigt. 
 
 Wenn das Modell feststellt, dass ein Dokument keine Inhalte enthält, die in der Natur legal sind oder keinen Teilnehmer aus der anwaltsliste enthalten, wird im taggingbereich keine Bezeichnung angezeigt.
 

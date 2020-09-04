@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Benutzer mit Vertraulichkeits Bezeichnungen in Office-Apps für Desktop, Mobile und das Internet arbeiten und welche apps Sensitivitäts Bezeichnungen unterstützen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c3e3bf903905ca241053ef110fb92bd220f3233f
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: 513a544239890f2299a7208d2ba2c20c4507a7ef
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797629"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357777"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Verwenden von Vertraulichkeitsbezeichnungen in Office-Apps
 
@@ -39,9 +39,9 @@ Um Sensitivitäts Bezeichnungen bei diesen eigenständigen Editionen von Office 
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>Unterstützung für Sensitivitäts Bezeichnungs Funktionen in apps
 
-Für jede Funktion wird in den folgenden Tabellen die minimale Version aufgelistet, die Sie benötigen, um die Vertraulichkeits Bezeichnungen mithilfe der integrierten Beschriftung zu unterstützen. Oder, wenn die Bezeichnungs Funktion in der öffentlichen Vorschau oder unter Review für eine zukünftige Version ist.
+Für jede Funktion wird in den folgenden Tabellen die minimale Office-Version aufgelistet, die Sie für diese APP benötigen, um Sensitivitäts Bezeichnungen mithilfe der integrierten Beschriftung zu unterstützen. Oder, wenn die Bezeichnungs Funktion in der öffentlichen Vorschau oder unter Review für eine zukünftige Version ist. Verwenden Sie die [Microsoft 365-Roadmap](https://aka.ms/MIPC/Roadmap) für Details zu zukünftigen Versionen.
 
-Neue Versionen der apps werden zu unterschiedlichen Zeiten für unterschiedliche Aktualisierungs Kanäle zur Verfügung gestellt. Weitere Informationen, einschließlich der Vorgehensweise zum Konfigurieren des Update Kanals, damit Sie eine neue Bezeichnungs Funktion testen können, die Sie interessieren, finden Sie unter [Overview of Update Channels for Microsoft 365 apps](https://docs.microsoft.com/DeployOffice/overview-update-channels). Neue Funktionen in der privaten Vorschau sind nicht in der Tabelle enthalten, Sie können jedoch möglicherweise an diesen Vorschaubildern teilnehmen, indem Sie Ihre Organisation für das [private Preview-Programm für Microsoft Information Protection](https://aka.ms/mip-preview)nominieren.
+Neue Versionen von Office-Apps werden zu unterschiedlichen Zeiten für unterschiedliche Aktualisierungs Kanäle zur Verfügung gestellt. Weitere Informationen, einschließlich der Vorgehensweise zum Konfigurieren des Update Kanals, damit Sie eine neue Bezeichnungs Funktion testen können, die Sie interessieren, finden Sie unter [Overview of Update Channels for Microsoft 365 apps](https://docs.microsoft.com/DeployOffice/overview-update-channels). Neue Funktionen in der privaten Vorschau sind nicht in der Tabelle enthalten, Sie können jedoch möglicherweise an diesen Vorschaubildern teilnehmen, indem Sie Ihre Organisation für das [private Preview-Programm für Microsoft Information Protection](https://aka.ms/mip-preview)nominieren.
 
 > [!NOTE]
 > Die Namen der Update Kanäle für Office-Apps wurden kürzlich geändert. Beispiel: monatlicher Kanal ist jetzt der aktuelle Kanal, und Office Insider ist jetzt Beta Kanal. Weitere Informationen finden Sie unter [Changes to Update Channels for Microsoft 365 apps](https://docs.microsoft.com/deployoffice/update-channels-changes).
@@ -52,7 +52,7 @@ Zusätzliche Funktionen sind verfügbar, wenn Sie den Azure Information Protecti
 
 Für IOS und Android: Wenn diese eine Mindestversion aufgeführt sind, wird die Empfindlichkeits beschriftungsfunktion auch in der [Office-App](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/)unterstützt.
 
-|Funktion                                                                                                        |Windows Desktop |Mac-Desktop |iOS    |Android      |Netz                                                         |
+|Funktion                                                                                                        |Windows Desktop |Mac-Desktop |iOS    |Android      |Web                                                         |
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
 |[Manuelles zuweisen, ändern oder Entfernen von Bezeichnungen](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Ja – Opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Anwenden einer Standardbezeichnung](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Ja – Opt-in](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |

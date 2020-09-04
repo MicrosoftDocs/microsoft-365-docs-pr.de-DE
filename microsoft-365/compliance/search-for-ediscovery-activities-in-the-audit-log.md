@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Erfahren Sie, welche Ereignisse protokolliert werden, wenn Benutzer, denen eDiscovery-Berechtigungen zugewiesen sind, Inhaltssuche und zentrale eDiscovery-Aufgaben im Security & Compliance Center ausführen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 671fdebd75dfdaaf09deebf320b9fe4cfab0ca1c
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 529e1a0ac3dc66ac15bd1b3fbcde466fb36d5f4e
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818874"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357545"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>Suchen nach eDiscovery-Aktivitäten im Überwachungsprotokoll
 

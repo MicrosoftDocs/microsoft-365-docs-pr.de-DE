@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 ms.collection:
 - SPO_Content
@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom: seo-marvel-apr2020
 description: Informationen zum Ausführen eines Skripts zum Hinzufügen von Postfächern & OneDrive für Unternehmen Websites zu einem neuen Haltestatus, der einem eDiscovery-Fall im Security & Compliance Center zugeordnet ist.
-ms.openlocfilehash: 55ad3c8c8a4a6b77df4c2d3409fee6e5b43cc5f6
-ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
+ms.openlocfilehash: 454fd4ea4517a46410c9d0922cc83b141fdbd893
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45391485"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357675"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>Verwenden eines Skripts zum Hinzufügen von Benutzern zu einem Haltestatus in einem zentralen eDiscovery-Fall
 
@@ -81,7 +81,7 @@ Es folgt ein PowerShell-Befehl (den Sie mit der Remote-PowerShell ausführen, di
 Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbox'} | Select-Object PrimarySmtpAddress > HoldUsers.txt
 ```
 
-Nachdem Sie diesen Befehl ausgeführt haben, öffnen Sie die Textdatei, und entfernen Sie die Kopfzeile, die den Eigenschaftennamen enthält `PrimarySmtpAddress` . Entfernen Sie dann alle e-Mail-Adressen außer denjenigen für die Benutzer, die Sie dem Haltestatus hinzufügen möchten, den Sie in Schritt 3 erstellen. Stellen Sie sicher, dass keine leeren Zeilen vor oder nach der Liste der e-Mail-Adressen vorhanden sind.
+Nachdem Sie diesen Befehl ausgeführt haben, öffnen Sie die Textdatei, und entfernen Sie die Kopfzeile, die den Eigenschaftennamen enthält  `PrimarySmtpAddress` . Entfernen Sie dann alle e-Mail-Adressen außer denjenigen für die Benutzer, die Sie dem Haltestatus hinzufügen möchten, den Sie in Schritt 3 erstellen. Stellen Sie sicher, dass keine leeren Zeilen vor oder nach der Liste der e-Mail-Adressen vorhanden sind.
   
 ## <a name="step-3-run-the-script-to-create-a-hold-and-add-users"></a>Schritt 3: Ausführen des Skripts zum Erstellen eines Haltestatus und Hinzufügen von Benutzern
 
@@ -89,7 +89,7 @@ Wenn Sie das Skript in diesem Schritt ausführen, werden Sie aufgefordert, die f
   
 - **Ihre Benutzeranmeldeinformationen:** Das Skript verwendet Ihre Anmeldeinformationen zum Herstellen einer Verbindung mit dem Security & Compliance Center mit Remote-PowerShell. Außerdem werden diese Anmeldeinformationen für den Zugriff auf SharePoint Online verwendet, um die OneDrive für Unternehmen-URLs für die Liste der Benutzer abzurufen.
 
-- **Name Ihrer meine Website Domäne:** Die meine Website Domäne ist die Domäne, die alle OneDrive für Unternehmen Websites in Ihrer Organisation enthält. Wenn beispielsweise die URL für Ihre meine Website Domäne lautet **https://contoso-my.sharepoint.com** , geben Sie ein, `contoso` Wenn Sie vom Skript aufgefordert werden, den Namen Ihrer meine Website Domäne einzugeben.
+- **Name Ihrer meine Website Domäne:** Die meine Website Domäne ist die Domäne, die alle OneDrive für Unternehmen Websites in Ihrer Organisation enthält. Wenn beispielsweise die URL für Ihre meine Website Domäne lautet **https://contoso-my.sharepoint.com** , geben Sie ein,  `contoso` Wenn Sie vom Skript aufgefordert werden, den Namen Ihrer meine Website Domäne einzugeben.
 
 - **Name der Anfrage:** Der Name eines vorhandenen Falls. Mit dem Skript wird ein neuer Haltebereich erstellt, der diesem Fall zugeordnet ist.
 

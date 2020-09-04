@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen Data Connector zum Importieren und Archivieren von Daten aus dem Bloomberg-Nachrichten e-Mail-Tool in Microsoft 365 einrichten. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren, damit Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten der drittanbieterdaten Ihrer Organisation verwenden können.
-ms.openlocfilehash: f9793db545b5298663da7bbfa39a0878854e070d
-ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
+ms.openlocfilehash: b8b144905ad3ff47f54c06985fca9cfef6b70590
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255862"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358291"
 ---
 # <a name="set-up-a-connector-to-archive-bloomberg-message-data-preview"></a>Einrichten eines Connectors zum Archivieren von Bloomberg-Nachrichtendaten (Vorschau)
 
@@ -43,7 +43,7 @@ In der folgenden Übersicht wird erläutert, wie Sie einen Connector zum Archivi
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-Viele der Implementierungsschritte, die zum Archivieren von Bloomberg-Nachrichtendaten erforderlich sind, sind extern bei Microsoft 365 und müssen abgeschlossen sein, bevor Sie den Connector im Compliance Center erstellen können.
+Einige der erforderlichen Implementierungsschritte zum Archivieren von Bloomberg-Nachrichtendaten liegen außerhalb von Microsoft 365 und müssen abgeschlossen sein, bevor Sie den Connector im Compliance Center erstellen können.
 
 - Ihre Organisation muss einwilligen, dass der Office 365 Import Dienst auf Postfachdaten in Ihrer Organisation zugreifen kann. Um dieser Anforderung zuzustimmen, gehen Sie zu [dieser Seite](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), melden Sie sich mit den Anmeldeinformationen eines Office 365 globalen Administrators an, und nehmen Sie dann die Anforderung an. Sie müssen diesen Schritt ausführen, bevor Sie den Bloomberg Message Connector in Schritt 3 erfolgreich erstellen können.
 

@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 f1_keywords:
 - ms.o365.cc.CustomizeExport
 ms.service: O365-seccomp
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exportieren Sie die Suchergebnisse aus einer Inhaltssuche im Compliance Center des Sicherheits & auf einen lokalen Computer. E-Mail-Ergebnisse werden als PST-Dateien exportiert. Inhalte aus SharePoint-und OneDrive für Unternehmen-Websites werden als systemeigene Office-Dokumente exportiert. '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6fda7c103b90664fc6c31c3f0436b6d360468537
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 97073c95af986afcbe932dfc2b5bc840d5e2dc5c
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817754"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357933"
 ---
 # <a name="export-content-search-results"></a>Exportieren von Inhaltssuchergebnissen
 
@@ -45,7 +45,7 @@ Das Exportieren der Ergebnisse einer Inhaltssuche umfasst das Vorbereiten der Er
     
   - 32-Bit-oder 64-Bit-Versionen von Windows 7 und höheren Versionen
     
-  - Microsoft .NET Framework 4,7
+  - Microsoft .NET Framework 4.7
     
 - Sie müssen einen der folgenden unterstützten Browser verwenden, um das eDiscovery-Export Tool<sup>1</sup>auszuführen:
 
@@ -63,13 +63,13 @@ Das Exportieren der Ergebnisse einer Inhaltssuche umfasst das Vorbereiten der Er
     
 - Wenn Sie Suchergebnisse exportieren, werden die Daten vorübergehend in einem von Microsoft bereitgestellten Azure-Speicherort in der Microsoft-Cloud gespeichert, bevor Sie auf Ihren lokalen Computer heruntergeladen werden. Stellen Sie sicher, dass Ihre Organisation eine Verbindung mit dem Endpunkt in Azure herstellen kann, also ** \* . BLOB.Core.Windows.net** (der Platzhalter stellt einen eindeutigen Bezeichner für den Export dar). Die Suchergebnis Daten werden zwei Wochen nach ihrer Erstellung aus dem Azure-Speicherort gelöscht. 
     
-- Wenn Ihre Organisation einen Proxy Server für die Kommunikation mit dem Internet verwendet, müssen Sie die Proxyservereinstellungen auf dem Computer definieren, den Sie zum Exportieren der Suchergebnisse verwenden (sodass das Export Tool von Ihrem Proxy Server authentifiziert werden kann). Öffnen Sie dazu die Datei *machine.config* an dem Speicherort, der Ihrer Windows-Version entspricht. 
+- Wenn Ihre Organisation einen Proxy Server für die Kommunikation mit dem Internet verwendet, müssen Sie die Proxyservereinstellungen auf dem Computer definieren, den Sie zum Exportieren der Suchergebnisse verwenden (sodass das Export Tool von Ihrem Proxy Server authentifiziert werden kann). Öffnen Sie dazu die Datei  *machine.config*  an dem Speicherort, der Ihrer Windows-Version entspricht. 
     
   - **32-Bit:**`%windir%\Microsoft.NET\Framework\[version]\Config\machine.config`
     
   - **64-Bit:**`%windir%\Microsoft.NET\Framework64\[version]\Config\machine.config`
     
-    Fügen Sie die folgenden Zeilen zur *machine.config* Datei irgendwo zwischen dem `<configuration>` -und- `</configuration>` Tags hinzu. Achten Sie darauf, ersetzen `ProxyServer` und `Port` mit den richtigen Werten für Ihre Organisation, beispielsweise `proxy01.contoso.com:80` . 
+    Fügen Sie die folgenden Zeilen zur  *machine.config*  Datei irgendwo zwischen dem  `<configuration>` -und-  `</configuration>` Tags hinzu. Achten Sie darauf, ersetzen  `ProxyServer` und  `Port` mit den richtigen Werten für Ihre Organisation, beispielsweise  `proxy01.contoso.com:80` . 
     
     ```text
     <system.net>
@@ -289,7 +289,7 @@ Hier finden Sie weitere Informationen zum Exportieren von Suchergebnissen.
   
 - Wenn der Dateipfadname einer Nachricht den maximalen Zeichen Grenzwert für Windows überschreitet, wird der Dateiname abgeschnitten. Der ursprüngliche Dateipfadname wird jedoch im Manifest und in ResultsLog aufgeführt.
     
-- Wie bereits erläutert, werden e-Mail-Suchergebnisse in einen Ordner im Dateisystem exportiert. Der Ordnerpfad für einzelne Nachrichten würde den Ordnerpfad im Postfach des Benutzers replizieren. Bei einer Suche mit dem Namen "ContosoCase101" würde beispielsweise Nachrichten im Posteingang eines Benutzers im Ordnerpfad gespeichert `~ContosoCase101\\<date of export\Exchange\user@contoso.com (Primary)\Top of Information Store\Inbox` . 
+- Wie bereits erläutert, werden e-Mail-Suchergebnisse in einen Ordner im Dateisystem exportiert. Der Ordnerpfad für einzelne Nachrichten würde den Ordnerpfad im Postfach des Benutzers replizieren. Bei einer Suche mit dem Namen "ContosoCase101" würde beispielsweise Nachrichten im Posteingang eines Benutzers im Ordnerpfad gespeichert  `~ContosoCase101\\<date of export\Exchange\user@contoso.com (Primary)\Top of Information Store\Inbox` . 
     
 - Wenn Sie e-Mail-Nachrichten in einer PST-Datei exportieren, die alle Nachrichten in einem einzelnen Ordner enthält, werden der Ordner " **Gelöschte Elemente** " und der Ordner " **Suchordner** " auf der obersten Ebene des PST-Ordners aufgeführt. Diese Ordner sind leer. 
   
@@ -311,7 +311,7 @@ Hier finden Sie weitere Informationen zum Exportieren von Suchergebnissen.
   
  ### <a name="filenames-of-exported-items"></a>Dateinamen von exportierten Elementen
   
-- Für den vollständigen Pfadnamen für e-Mail-Nachrichten und Website Dokumente, die auf Ihren lokalen Computer exportiert werden, gibt es eine Grenze von 260 Zeichen (durch das Betriebssystem auferlegt). Der vollständige Pfadname für exportierte Elemente enthält den ursprünglichen Speicherort des Elements und den Speicherort des Ordners auf dem lokalen Computer, in den die Suchergebnisse heruntergeladen werden. Wenn Sie beispielsweise angeben, dass die Suchergebnisse `C:\Users\Admin\Desktop\SearchResults` im eDiscovery-Export Tool heruntergeladen werden sollen, lautet der vollständige Pfadname für ein heruntergeladenes e-Mail-Element `C:\Users\Admin\Desktop\SearchResults\ContentSearch1\03.15.2017-1242PM\Exchange\sarad@contoso.com (Primary)\Top of Information Store\Inbox\Insider trading investigation.msg` .
+- Für den vollständigen Pfadnamen für e-Mail-Nachrichten und Website Dokumente, die auf Ihren lokalen Computer exportiert werden, gibt es eine Grenze von 260 Zeichen (durch das Betriebssystem auferlegt). Der vollständige Pfadname für exportierte Elemente enthält den ursprünglichen Speicherort des Elements und den Speicherort des Ordners auf dem lokalen Computer, in den die Suchergebnisse heruntergeladen werden. Wenn Sie beispielsweise angeben, dass die Suchergebnisse  `C:\Users\Admin\Desktop\SearchResults` im eDiscovery-Export Tool heruntergeladen werden sollen, lautet der vollständige Pfadname für ein heruntergeladenes e-Mail-Element  `C:\Users\Admin\Desktop\SearchResults\ContentSearch1\03.15.2017-1242PM\Exchange\sarad@contoso.com (Primary)\Top of Information Store\Inbox\Insider trading investigation.msg` .
     
     Wenn die 260-Zeichen Grenze überschritten wird, wird der vollständige Pfadname für ein Element abgeschnitten.
     
@@ -319,11 +319,11 @@ Hier finden Sie weitere Informationen zum Exportieren von Suchergebnissen.
     
   - Wenn der vollständige Pfadname nach der Kürzung des Datei namens noch zu lang ist, wird das Element von seinem aktuellen Speicherort in den übergeordneten Ordner verschoben. Wenn der Pfadname immer noch zu lang ist, wird der Prozess wiederholt: kürzen Sie den Dateinamen, und wenn nötig, wieder in den übergeordneten Ordner zu gelangen. Dieser Vorgang wird wiederholt, bis der vollständige Pfadname unter dem Grenzwert von 260 Zeichen liegt.
     
-  - Wenn bereits ein gekürzter vollständiger Pfadname vorhanden ist, wird am Ende des Datei namens eine Versionsnummer hinzugefügt. Beispiel: `statusmessage(2).msg` .
+  - Wenn bereits ein gekürzter vollständiger Pfadname vorhanden ist, wird am Ende des Datei namens eine Versionsnummer hinzugefügt. Beispiel:  `statusmessage(2).msg` .
     
-    Um dieses Problem zu vermeiden, sollten Sie die Suchergebnisse an einen Speicherort mit einem kurzen Pfadnamen herunterladen. Beispielsweise würde das Herunterladen von Suchergebnissen in einen Ordner mit dem Namen `C:\Results` weniger Zeichen zu den Pfadnamen von exportierten Elementen hinzufügen, als diese in einen Ordner mit dem Namen herunterzuladen `C:\Users\Admin\Desktop\Results` .
+    Um dieses Problem zu vermeiden, sollten Sie die Suchergebnisse an einen Speicherort mit einem kurzen Pfadnamen herunterladen. Beispielsweise würde das Herunterladen von Suchergebnissen in einen Ordner mit dem Namen  `C:\Results` weniger Zeichen zu den Pfadnamen von exportierten Elementen hinzufügen, als diese in einen Ordner mit dem Namen herunterzuladen  `C:\Users\Admin\Desktop\Results` .
     
-- Wenn Sie Website Dokumente exportieren, ist es auch möglich, dass der ursprüngliche Dateiname eines Dokuments geändert wird. Dies geschieht speziell für Dokumente, die aus einer SharePoint-oder OneDrive für Unternehmen-Website gelöscht wurden, die in den Haltestatus versetzt wurde. Nachdem ein Dokument auf einer Warteschleife gelöscht wurde, wird das gelöschte Dokument automatisch in die Aufbewahrungs Archiv-Bibliothek für die Website verschoben (das erstellt wurde, als die Website gespeichert wurde). Wenn das gelöschte Dokument in die Aufbewahrungs Archiv-Bibliothek verschoben wird, wird eine zufällig generierte und eindeutige ID an den ursprünglichen Dateinamen des Dokuments angehängt. Wenn beispielsweise der Dateiname eines Dokuments lautet `FY2017Budget.xlsx` und dieses Dokument später gelöscht und in die Aufbewahrungs Archiv-Bibliothek verschoben wird, wird der Dateiname des Dokuments, das in die Aufbewahrungs Archiv-Bibliothek verschoben wird, in etwa so geändert `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` . Wenn ein Dokument in der Aufbewahrungs Archiv-Bibliothek mit der Abfrage einer Inhaltssuche übereinstimmt und Sie die Ergebnisse dieser Suche exportieren, hat die exportierte Datei den geänderten Dateinamen; in diesem Beispiel wäre der Dateiname des exportierten Dokuments `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` .
+- Wenn Sie Website Dokumente exportieren, ist es auch möglich, dass der ursprüngliche Dateiname eines Dokuments geändert wird. Dies geschieht speziell für Dokumente, die aus einer SharePoint-oder OneDrive für Unternehmen-Website gelöscht wurden, die in den Haltestatus versetzt wurde. Nachdem ein Dokument auf einer Warteschleife gelöscht wurde, wird das gelöschte Dokument automatisch in die Aufbewahrungs Archiv-Bibliothek für die Website verschoben (das erstellt wurde, als die Website gespeichert wurde). Wenn das gelöschte Dokument in die Aufbewahrungs Archiv-Bibliothek verschoben wird, wird eine zufällig generierte und eindeutige ID an den ursprünglichen Dateinamen des Dokuments angehängt. Wenn beispielsweise der Dateiname eines Dokuments lautet  `FY2017Budget.xlsx` und dieses Dokument später gelöscht und in die Aufbewahrungs Archiv-Bibliothek verschoben wird, wird der Dateiname des Dokuments, das in die Aufbewahrungs Archiv-Bibliothek verschoben wird, in etwa so geändert  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` . Wenn ein Dokument in der Aufbewahrungs Archiv-Bibliothek mit der Abfrage einer Inhaltssuche übereinstimmt und Sie die Ergebnisse dieser Suche exportieren, hat die exportierte Datei den geänderten Dateinamen; in diesem Beispiel wäre der Dateiname des exportierten Dokuments  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` .
     
     Wenn ein Dokument auf einer Website, das in der Warteschleife gespeichert ist, geändert wird (und die Versionsverwaltung für die Dokumentbibliothek in der Website aktiviert wurde), wird automatisch eine Kopie der Datei in der Aufbewahrungsspeicher Bibliothek erstellt. In diesem Fall wird auch eine zufällig generierte und eindeutige ID an den Dateinamen des Dokuments angehängt, das in die Aufbewahrungs Bibliothek kopiert wird.
     

@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Zeigen Sie eine Tabelle an, in der die Metadatenfelder für Dokumente in einem in Data Investigations (Preview) festgelegten Nachweis aufgeführt sind.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3e13d62446cff3efdacaa5f8e1ade8a37006d922
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 4462b2031bc50f3d167b9340b6df5dba5a412d78
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035697"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357625"
 ---
 # <a name="document-metadata-fields-in-data-investigations-preview"></a>Dokumentmetadaten-Felder in Daten Untersuchungen (Vorschau)
 
@@ -129,4 +129,4 @@ In der folgenden Tabelle sind die Metadatenfelder für Dokumente in einem in ein
 |Relevanz-Tag (Problem)      | Ja (relevanceTag_issueNum)                     |                         |             |
 |||||
 
-  \*Wenn in einem Dokument eingebettete Werte vorhanden sind, priorisiert die Suche für diese Felder diese Werte; Andernfalls wird versucht, den Wert aus Office 365 anzuzeigen.
+  \* Wenn in einem Dokument eingebettete Werte vorhanden sind, priorisiert die Suche für diese Felder diese Werte; Andernfalls wird versucht, den Wert aus Office 365 anzuzeigen.
