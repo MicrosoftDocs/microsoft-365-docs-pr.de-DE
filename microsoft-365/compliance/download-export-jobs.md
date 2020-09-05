@@ -1,5 +1,5 @@
 ---
-title: Herunterladen von Exportaufträgen für einen Fall
+title: Herunterladen von Exportaufträgen für einen erweiterten eDiscovery-Fall
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,19 +14,19 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
+ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-mar2020
 description: Installieren und verwenden Sie den Azure Storage Explorer zum Herunterladen von Dokumenten, die aus einer Überprüfungsgruppe in Advanced eDiscovery exportiert wurden.
-ms.openlocfilehash: 617ef0b27d5cab4098c505eaefb935ba8ae4ae2a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 4b09521b4a72fc8fda68f5892c899fe76a066809
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035677"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399162"
 ---
-# <a name="download-export-jobs"></a>Herunterladen von Exportaufträgen
+# <a name="download-export-jobs-in-an-advanced-ediscovery-case"></a>Herunterladen von Exportaufträgen in einem erweiterten eDiscovery-Fall
 
-Wenn Sie Dokumente aus einer Überprüfungsgruppe in einem erweiterten eDiscovery-Fall exportieren, werden die Dokumente in einen von Microsoft bereitgestellten Azure-Speicherort oder an einen Azure-Speicherort hochgeladen, der von Ihrer Organisation verwaltet wird. Der Typ des verwendeten Azure-Speicherorts hängt davon ab, welche Option beim Exportieren der Dokumente ausgewählt wurde. 
+Wenn Sie Dokumente aus einer Überprüfungsgruppe in einem erweiterten eDiscovery-Fall exportieren, werden die Dokumente in einen von Microsoft bereitgestellten Azure-Speicherort oder an einen Azure-Speicherort hochgeladen, der von Ihrer Organisation verwaltet wird. Der Typ des verwendeten Azure-Speicherorts hängt davon ab, welche Option beim Exportieren der Dokumente ausgewählt wurde.
 
 In diesem Artikel wird beschrieben, wie Sie mithilfe des Microsoft Azure Speicher-Explorers eine Verbindung mit einem Azure-Speicherort herstellen, um die exportierten Dokumente zu durchsuchen und herunterzuladen. Weitere Informationen zum Azure Storage-Explorer finden Sie unter [Quick Start: Verwenden des Azure Storage Explorers](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
 
@@ -40,7 +40,7 @@ Der nächste Schritt besteht darin, die SAS-URL (Shared Access Signature) zu erh
 
 1. Wechseln Sie auf der Seite **Erweiterte eDiscovery** zu dem Fall, und klicken Sie dann auf die Registerkarte **Exporte** .
 
-2. Klicken Sie auf der Registerkarte **Exports** auf den Exportauftrag, den Sie herunterladen möchten.
+2. Klicken Sie auf der Registerkarte **Exporte** auf den Exportvorgang, den Sie herunterladen möchten.
 
 3. Kopieren Sie auf der Flyout-Seite unter **Standorte**die angezeigte SAS-URL. Falls erforderlich, können Sie Sie in einer Datei speichern, damit Sie in Schritt 3 darauf zugreifen können.
  
@@ -50,31 +50,31 @@ Der nächste Schritt besteht darin, die SAS-URL (Shared Access Signature) zu erh
 
 Im letzten Schritt wird der Azure-Speicher-Explorer und die SAS-URL verwendet, um eine Verbindung mit dem Azure-Speicherort herzustellen und die Dokumente herunterzuladen, die Sie auf einen lokalen Computer exportiert haben.
 
-1.  Öffnen Sie den Azure Storage Explorer, den Sie in Schritt 1 installiert haben.
+1. Öffnen Sie den Azure Storage Explorer, den Sie in Schritt 1 installiert haben.
 
 2. Klicken Sie auf das Symbol **Konto hinzufügen** . Alternativ können Sie mit der rechten Maustaste auf **Speicherkonten**klicken.
 
    ![Klicken Sie auf das Symbol Konto hinzufügen.](../media/AzureStorageConnect.png)
 
-3.  Klicken Sie auf der Seite **Verbindung mit Azure-Speicher herstellen** auf **einen SAS-URI (Shared Access Signature) verwenden** , und klicken Sie dann auf **weiter**.
+3. Klicken Sie auf der Seite **Verbindung mit Azure-Speicher herstellen** auf **einen SAS-URI (Shared Access Signature) verwenden** , und klicken Sie dann auf **weiter**.
 
     ![Klicken Sie auf SAS-URI (Shared Access Signature) verwenden, und klicken Sie dann auf Weiter.](../media/AzureStorageConnect2.png)
 
-4.  Klicken Sie auf der Seite **mit SAS-URI anfügen** in das Feld URI, und fügen Sie dann die SAS-URL ein, die Sie in Schritt 2 abgerufen haben. 
+4. Klicken Sie auf der Seite **mit SAS-URI anfügen** in das Feld URI, und fügen Sie dann die SAS-URL ein, die Sie in Schritt 2 abgerufen haben. 
 
     ![Fügen Sie die SAS-URL in das Feld URI ein.](../media/AzureStorageConnect3.png)
 
-    Beachten Sie, dass ein Teil der SAS-URL im Feld **Anzeigename** angezeigt wird. Dieser wird als Anzeigename des Containers verwendet, der unter den **Speicherkonten** erstellt wurde, nachdem Sie eine Verbindung mit dem Speicherort hergestellt haben. Dieser Name besteht aus der ID des erweiterten eDiscovery-Falls und einem eindeutigen Bezeichner. Sie können den standardmäßigen Anzeigenamen beibehalten oder ändern. Wenn Sie den Namen ändern, muss der Anzeigename eindeutig sein.
+    Beachten Sie, dass ein Teil der SAS-URL im Feld **Anzeigename** angezeigt wird. Dieser wird als Anzeigename des Containers verwendet, der unter den **Speicherkonten** erstellt wurde, nachdem Sie eine Verbindung mit dem Speicherort hergestellt haben. Dieser Name besteht aus der ID des Advanced eDiscovery-Falls und aus einem eindeutigen Bezeichner. Sie können den standardmäßigen Anzeigenamen beibehalten oder ändern. Wenn Sie ihn ändern, muss der Anzeigename eindeutig sein.
 
-5.  Klicken Sie auf **Weiter**.
+5. Klicken Sie auf **Weiter**.
 
     Die Seite **Verbindungszusammenfassung** wird angezeigt.
-   
+
     ![Klicken Sie auf der Seite Verbindungszusammenfassung auf verbinden, um eine Verbindung mit dem Azure-Speicherort herzustellen.](../media/AzureStorageConnect4.png)
 
-6. Überprüfen Sie auf der Seite zusammen **Fassung der Verbindung** die Verbindungsinformationen, und klicken Sie dann auf **verbinden**. 
+6. Überprüfen Sie auf der Seite zusammen **Fassung der Verbindung** die Verbindungsinformationen, und klicken Sie dann auf **verbinden**.
 
-    Der **Knoten BLOB-Container** (unter **Speicherkonten** > **(angefügte Container)** \> wird geöffnet. 
+    Der Knoten **BLOB-Container** (unter **Speicherkonten**  >  **(angefügte Container)** \> wird geöffnet.
 
     ![Exportieren von Aufträgen im Knoten BLOBs-Container](../media/AzureStorageConnect5.png)
 
@@ -88,9 +88,9 @@ Im letzten Schritt wird der Azure-Speicher-Explorer und die SAS-URL verwendet, u
 
    Der Exportauftrags Ordner enthält die folgenden Elemente. Die tatsächlichen Elemente im Exportordner werden durch die Exportoptionen bestimmt, die beim Erstellen des Exportauftrags konfiguriert wurden. Weitere Informationen finden Sie unter [Exportieren von Dokumenten aus einem Überprüfungs Satzes](export-documents-from-review-set.md).
 
-    - Export_load_file. CSV: Diese CSV-Datei ist ein Detail Exportbericht mit Informationen zu den einzelnen exportierten Dokumenten. Die Datei besteht aus einer Spalte für jede Metadata-Eigenschaft für ein Dokument. Eine Liste und eine Beschreibung der Metadaten, die in diesem Bericht enthalten sind, finden Sie in der Spalte **exportierter Feldname** in der Tabelle in [Document Metadata fields in Advanced eDiscovery](document-metadata-fields.md).
+    - Export_load_file.csv: Diese CSV-Datei ist ein Detail Exportbericht mit Informationen zu den einzelnen exportierten Dokumenten. Die Datei besteht aus einer Spalte für jede Metadata-Eigenschaft für ein Dokument. Eine Liste und eine Beschreibung der Metadaten, die in diesem Bericht enthalten sind, finden Sie in der Spalte **exportierter Feldname** in der Tabelle in [Document Metadata fields in Advanced eDiscovery](document-metadata-fields.md).
     
-    - Summary. txt: eine Textdatei, die eine Zusammenfassung des Exports einschließlich Export Statistiken enthält.
+    - Summary.txt: eine Textdatei, die eine Zusammenfassung des Exports einschließlich Export Statistiken enthält.
     
     - Extracted_text_files: dieser Ordner enthält eine Text Dateiversion jedes exportierten Dokuments.
      
@@ -98,17 +98,17 @@ Im letzten Schritt wird der Azure-Speicher-Explorer und die SAS-URL verwendet, u
     
     - Error_files: dieser Ordner enthält die folgenden Elemente, wenn der Exportauftrag Fehler Dateien enthält: 
         
-      - ExtractionError. CSV: Diese CSV-Datei enthält die verfügbaren Metadaten für Dateien, die nicht ordnungsgemäß aus dem übergeordneten Element extrahiert wurden.
+      - ExtractionError.csv: Diese CSV-Datei enthält die verfügbaren Metadaten für Dateien, die nicht ordnungsgemäß aus dem übergeordneten Element extrahiert wurden.
         
       - ProcessingError: dieser Ordner enthält Dokumente mit Verarbeitungsfehlern. Dieser Inhalt befindet sich auf einer Elementebene, was bedeutet, dass bei einer Anlage ein Verarbeitungsfehler vorliegt, das Dokument, das die Anlage enthält, ebenfalls in diesem Ordner enthalten sein wird.
  
-8. Wenn Sie alle Inhalte im Export exportieren möchten, wählen Sie den Ordner exportieren aus, und klicken Sie dann auf **herunterladen**.
+8. Wenn Sie alle Inhalte im Export exportieren möchten, wählen Sie den Exportordner aus, und klicken Sie dann auf **Herunterladen**.
 
-9. Geben Sie den Speicherort an, an dem Sie die exportierten Dateien herunterladen möchten, und klicken Sie dann auf Ordner auswählen.
+9. Geben Sie den Speicherort an, an den Sie die exportierten Dateien herunterladen möchten, und klicken Sie dann auf Ordner auswählen.
 
     Der Azure Storage Explorer startet den Exportvorgang. Der Status des Herunterladens der exportierten Elemente wird im Bereich " **Aktivitäten** " angezeigt. Nach Abschluss des Downloads wird eine Meldung angezeigt.
 
     ![Eine Meldung wird angezeigt, wenn der Download abgeschlossen ist.](../media/AzureStorageConnect8.png)
 
 > [!NOTE]
-> Anstatt den gesamten Exportauftrag herunterzuladen, können Sie bestimmte Elemente zum Herunterladen auswählen. Anstatt Elemente herunterzuladen, können Sie auf ein Element doppelklicken, um es anzuzeigen.
+> Statt den gesamten Exportauftrag herunterzuladen, können Sie bestimmte Elemente zum Herunterladen auswählen. Anstatt Elemente herunterzuladen, können Sie auch auf ein Element doppelklicken, um es anzuzeigen.

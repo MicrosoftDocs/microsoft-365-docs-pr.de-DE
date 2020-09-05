@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Administratoren können einen Connector zum Importieren und Archivieren von Text getrennten Daten aus Globanet in Microsoft 365 einrichten. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren, damit Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten der drittanbieterdaten Ihrer Organisation verwenden können.
-ms.openlocfilehash: 989c0a657d9a30156e5991d5b09e389c0b044332
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: e57e9693da77a246bafcdf30561fd1414761355f
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361860"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399296"
 ---
 # <a name="set-up-a-connector-to-archive-text-delimited-data-preview"></a>Einrichten eines Connectors zum Archivieren von Text getrennten Daten (Vorschau)
 
@@ -42,7 +42,7 @@ In der folgenden Übersicht wird erläutert, wie Sie mithilfe eines Konnektors d
 
 4. Der Connector importiert die konvertierten Nachrichtenelemente in die Postfächer bestimmter Benutzer, wobei der Wert der *Email* -Eigenschaft der automatischen Benutzerzuordnung wie in Schritt 3 beschrieben wird. Ein neuer Unterordner im Posteingangsordner mit dem Namen " **Text-Delimited** " wird in den Benutzerpostfächern erstellt, und die Nachrichtenelemente werden in diesen Ordner importiert. Der Connector verwendet den Wert der *Email* -Eigenschaft. Jede Nachricht enthält diese Eigenschaft, die mit der e-Mail-Adresse jedes Teilnehmers der Nachricht aufgefüllt wird.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Erstellen Sie ein Globanet-Merge1-Konto, indem Sie die allgemeinen Geschäftsbedingungen für den Text getrennten Connector akzeptieren. Wenden Sie sich dazu an den [Globanet-Kunden Support](https://globanet.com/contact-us). Sie müssen sich bei diesem Konto anmelden, wenn Sie den Connector in Schritt 1 erstellen.
 
@@ -64,13 +64,13 @@ Der erste Schritt besteht darin, auf die Seite " **Daten Konnektoren** " im Micr
 
 ## <a name="step-2-configure-the-text-delimited-connector-on-the-globanet-merge1-site"></a>Schritt 2: Konfigurieren des Text getrennten Konnektors auf der Globanet-Merge1-Website
 
-Der zweite Schritt besteht darin, den Text getrennten Connector in der Merge1-Website zu konfigurieren. Informationen zum Konfigurieren des Text getrennten Konnektors auf der Globanet-Merge1-Website finden Sie unter [Merge1 Connector-Benutzerhandbuch für Drittanbieter](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Text-Delimited%20User%20Guide%20.pdf).
+Der zweite Schritt besteht darin, den Text getrennten Connector in der Merge1-Website zu konfigurieren. Informationen zum Konfigurieren des Text getrennten Konnektors auf der Globanet-Merge1-Website finden Sie unter [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Text-Delimited%20User%20Guide%20.pdf).
 
 Nachdem Sie auf **& fertig stellen**klicken, werden Sie zum Microsoft 365 Compliance Center auf die Seite **Benutzerzuordnung** des Connector-Assistenten zurückgegeben.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Schritt 3: Zuordnen von Benutzern und Abschließen des Connector-Setups
 
-Führen Sie die folgenden Schritte aus, um Benutzer zuzuordnen und den Connector zu vervollständigen, der im Microsoft 365 Compliance Center eingerichtet wurde:
+Führen Sie die folgenden Schritte aus, um Benutzer zuzuordnen und das Connector-Setup im Microsoft 365 Compliance Center abzuschließen:
 
 1. Aktivieren Sie auf der Seite **externe Benutzer auf Microsoft 365-Benutzer zuordnen** die Option Automatische Benutzerzuordnung. Die Text getrennten Quellelemente enthalten eine Eigenschaft mit dem Namen " *e-Mail*", die e-Mail-Adressen für Benutzer in Ihrer Organisation enthält. Wenn der Connector diese Adresse einem Microsoft 365-Benutzer zuordnen kann, werden die Elemente in das Postfach dieses Benutzers importiert.
 

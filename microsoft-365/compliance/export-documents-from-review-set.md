@@ -15,71 +15,94 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Hier erfahren Sie, wie Sie Inhalte aus einem Überprüfungspaket für Präsentationen oder externe Überprüfungen auswählen und exportieren oder herunterladen.
+description: Hier erfahren Sie, wie Sie Inhalte aus einer Überprüfungsgruppe für Präsentationen oder externe Überprüfungen auswählen und exportieren.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 29c2224a1ce0a92bca3b2057352f6f82fdc7afde
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 855f1b8fef7a1df6ed86f058b71e5027851b5f0d
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034093"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399176"
 ---
 # <a name="export-documents-from-a-review-set"></a>Exportieren von Dokumenten aus einem Prüfdateisatz
 
-Sie können Inhalte für die Präsentation oder externe Überprüfung aus einem Überprüfungs Sätze mit einer der folgenden Methoden exportieren:
+Mit dem Export können Benutzer die Inhalte anpassen, die im Downloadpaket enthalten sind. Das Export-Tool stellt eine Konfigurationsseite mit den folgenden Einstellungen bereit:
 
-- [Dokumente herunterladen](#download-documents-from-a-review-set)
- 
-- [Exportieren von Dokumenten](#export-documents-from-a-review-set)
+![Optionen zum Exportieren von Elementen aus einer Überprüfungsgruppe](../media/bcfc72c7-4a01-4697-9e16-2965b7f04fdb.png)
 
-## <a name="download-documents-from-a-review-set"></a>Herunterladen von Dokumenten aus einem Überprüfungspaket
+## <a name="export-options"></a>Exportoptionen
 
-Download bietet eine einfache Möglichkeit zum Herunterladen von Inhalten aus einer Überprüfungsgruppe im systemeigenen Format. Es nutzt die Datentransfer Funktionen des Browsers, sodass nach dem Download eine Browser Ansage angezeigt wird. Mit dieser Methode heruntergeladene Dateien werden in eine Containerdatei gezippt und werden Dateien auf Elementebene sein. Wenn Sie also eine Anlage auswählen, erhalten Sie automatisch die e-Mail-Adresse, die mit der Anlage eingeschlossen ist. Wenn Sie eine Excel-Kalkulationstabelle auswählen, die in ein Word-Dokument eingebettet wurde, erhalten Sie das Word-Dokument mit eingebettetem Excel-Arbeitsblatt. Durch heruntergeladene Elemente wird das Datum der letzten Änderung beibehalten, das als Dateieigenschaft angezeigt werden kann.
+- Export Name: Name des Exportauftrags.
 
-Um Inhalte aus einem Überprüfungs herunterzuladen, wählen Sie zunächst die Dateien aus, die Sie herunterladen möchten, und klicken Sie dann im Menü Aktionen auf "herunterladen".
+- Beschreibung: frei Text Feld, in dem Sie eine Beschreibung hinzufügen können.
 
-![Screenshot einer automatisch generierten Computerbeschreibung](../media/eDiscoDownload.png)
+- Exportieren Sie diese Dokumente:
 
-## <a name="export-documents-from-a-review-set"></a>Exportieren von Dokumenten aus einem Prüfdateisatz
+  - Nur ausgewählte Dokumente: exportiert nur die aktuell ausgewählten Dokumente.
+  
+  - Alle Dokumente in der Überprüfungsgruppe: exportiert alle Dokumente in der Überprüfungsgruppe.
 
-Mit dem Export können Benutzer die Inhalte anpassen, die im Downloadpaket enthalten sind. Es stellt eine Konfigurationsseite mit den folgenden Einstellungen bereit:
+- Metadaten
+  
+  - Datei laden – diese Datei enthält Metadaten für jede Datei. Weitere Informationen dazu, welche Felder enthalten sind, finden Sie unter [Document Metadata fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md) . Diese Datei kann normalerweise von den eDiscovery-Tools von Drittanbietern aufgenommen werden.
+  
+  - Tags – Wenn diese Option ausgewählt ist, werden Markierungsinformationen in die Datei "Laden" eingeschlossen.
 
-### <a name="metadata-file"></a>Metadaten-Datei
-
-Dies kann als ihre "Laden Datei" betrachtet werden, die Metadaten enthält, die den exportierten Dateien zugeordnet sind. Eine Liste der exportierten Felder, die in der Metadatendatei zur Verfügung stehen, finden Sie unter [Document Metadata fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md). Diese Datei kann normalerweise von Tools von Drittanbietern aufgenommen werden.
-
-### <a name="tag-data"></a>Tag-Daten
-
-Dieser Inhalt würde als Felder in der Metadatendatei hinzugefügt werden. Sie enthält alle in Überprüfungs Sätzen angewendeten Tag-Informationen.
-
-### <a name="text-files"></a>Textdateien
-
-Text Dateien können für jede Datei generiert werden, die aus einem Überprüfungs Satz exportiert wurde. Häufig sind diese Dateien für Service Partner erforderlich, wenn Sie Daten in Drittanbietertools aufnehmen.
-
-### <a name="redacted-files"></a>Behandelte Dateien
-
-Wenn während der Überprüfung redigierte PDF-Dateien generiert werden, stehen diese Dateien während des Exports zur Verfügung. Sie können entscheiden, ob Sie nur systemeigene Dateien exportieren oder die systemeigenen Dateien ersetzen möchten, die für die PDF-Dateien erforderlich sind, die die tatsächlichen Aktionen enthalten.
-
-### <a name="export-location"></a>Export Speicherort
-
-Exportierte Inhalte werden entweder an ein von Microsoft bereitgestelltes Azure-BLOB zugestellt, oder das BLOB eines Kunden kann verwendet werden, wenn die Details beim Export angegeben werden.
-
-### <a name="export-structure"></a>Export Struktur
-
-Wenn Inhalte aus einem Überprüfungs Satzes exportiert werden, ist der Inhalt in der folgenden Struktur organisiert.
-
-  - Stammordner – Download-ID
+- Inhalt
+  
+  - Systemeigene Dateien: Aktivieren Sie dieses Kontrollkästchen, um die systemeigenen Dateien einzubeziehen.
+  
+  - Unterhaltungsoptionen
     
-      - Exportieren\_der\_Datei "file. CSV = Metadata"
+    - Unterhaltungsdateien – exportieren Sie rekonstruierte Chatnachrichten. In diesem Format werden Unterhaltungen in einem Formular dargestellt, das den Benutzern in der systemeigenen Anwendung ähnelt.
     
-      - Summary. txt = eine Zusammenfassungsdatei mit Export Statistiken
+    - Einzelne Chatnachrichten – exportieren Sie die ursprünglichen Unterhaltungsdateien so, wie Sie in Microsoft 365 gespeichert sind.
+
+- Optionen
+
+  - Textdateien – enthalten extrahierten Textversionen von systemeigenen Dateien.
+  
+  - Ersetzen Sie die bearbeiteten natives durch konvertierte PDFs-wenn im Rahmen der Überprüfung die erstellten PDF-Dateien generiert werden, stehen diese Dateien für den Export zur Verfügung. Sie können auswählen, dass nur die systemeigenen Dateien exportiert werden sollen (indem Sie diese Option nicht auswählen), oder Sie können diese Option auswählen, um die PDF-Dateien zu exportieren, die die tatsächlichen Aktionen enthalten.
+
+- Ausgabeoptionen (exportierte Inhalte stehen entweder direkt über einen Webbrowser herunter oder können an ein Azure-Speicherkonto gesendet werden. Die ersten beiden Optionen ermöglichen das direkte herunterladen.)
+  
+  - Loose files and PST (e-Mail wird zu PST hinzugefügt, wenn möglich) – Dateien werden in einem Format exportiert, das der ursprünglichen Verzeichnisstruktur ähnelt, die Benutzern in ihren systemeigenen Anwendungen angezeigt wird.  Weitere Informationen finden Sie im Abschnitt [Loose files and PST Export Structure](#loose-files-and-pst-export-structure) .
+  
+  - Komprimierte Verzeichnisstruktur – Dateien werden exportiert und werden in den Download eingeschlossen.
+  
+  - Komprimierte Verzeichnisstruktur, die in Ihr Azure-Speicherkonto exportiert wurde-Dateien werden in das Azure-Speicher-abrechnen Ihrer Organisation exportiert.
+
+## <a name="loose-files-and-pst-export-structure"></a>Lose Dateien und PST-Exportstruktur
+
+Wenn Sie diese Exportoption auswählen, wird der exportierte Inhalt in der folgenden Struktur organisiert:
+
+- Stammordner – dieser Ordner mit dem Namen ExportName.zip
+  
+  - Export_load_file.csv-Metadata-Datei.
+  
+  - Summary.csv-eine Zusammenfassungsdatei, die auch Export Statistiken enthält.
+  
+  - Exchange – dieser Ordner enthält alle Inhalte aus Exchange im systemeigenen Dateiformat. Natives-Dateien werden durch redigierte PDFs ersetzt, wenn Sie die Option " **natives mit konvertierten PDFs ersetzen** " ausgewählt haben.
+  
+  - SharePoint = dieser Ordner enthält alle systemeigenen Inhalte aus SharePoint in einem systemeigenen Dateiformat. Natives-Dateien werden durch redigierte PDFs ersetzt, wenn Sie die Option " **natives mit konvertierten PDFs ersetzen** " ausgewählt haben.
+
+## <a name="condensed-directory-structure"></a>Komprimierte Verzeichnisstruktur
+
+- Stammordner-dieser Ordner hat den Namen ExportName.zip
+  
+  - Export_load_file.csv-Metadata-Datei.
+  
+  - Summary.txt-eine Zusammenfassungsdatei, die auch Export Statistiken enthält.
+  
+  - Input_or_native_files-dieser Ordner enthält alle systemeigenen Dateien, die exportiert wurden. Wenn Sie redigierte PDF-Dateien exportieren, werden Sie nicht in PST-Dateien abgelegt. Stattdessen werden Sie einem getrennten Ordner hinzugefügt.
+  
+  - Error_files-dieser Ordner enthält die folgenden Fehler Dateien, wenn Sie im Export enthalten sind:
     
-      - Input\_oder Native\_files = enthält alle systemeigenen Dateien
+    - ExtractionError. Eine CSV-Datei, die alle verfügbaren Metadaten von Dateien enthält, die nicht ordnungsgemäß aus übergeordneten Dateien extrahiert wurden.
     
-      - Error\_files = enthält alle Fehler Dateien, die im Export enthalten sind.
-        
-          - ExtractionError – eine CSV-Datei, die alle verfügbaren Metadaten von Dateien enthält, die nicht ordnungsgemäß aus übergeordneten Dateien extrahiert wurden
-        
-          - ProcessingError – Inhalte mit Verarbeitungsfehlern. Dieser Inhalt ist eine Elementebene, was bedeutet, dass bei einer Anlage ein Verarbeitungsfehler auftritt, wird die e-Mail-Nachricht, die die Anlage enthält, in diesen Ordner aufgenommen.
-    
-      - Extrahierte\_Text\_Dateien = enthält alle extrahierten Textdateien, die bei der Verarbeitung generiert wurden.
+    - ProcessingError – diese Datei enthält eine Liste von Dokumenten mit Verarbeitungsfehlern. Dieser Inhalt ist auf Elementebene angegeben, was bedeutet, dass in diesem Ordner die e-Mail-Nachricht mit der Anlage enthalten ist, wenn eine Anlage zu einem Verarbeitungsfehler geführt hat.
+  
+  - Extracted_text_files-dieser Ordner enthält alle extrahierten Textdateien, die bei der Verarbeitung generiert wurden.
+
+> [!NOTE]
+> Export Aufträge werden für die Lebensdauer des Falls aufbewahrt und können heruntergeladen werden, solange der Fall nicht gelöscht wird.

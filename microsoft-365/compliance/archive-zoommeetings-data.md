@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Administratoren können einen Connector zum Importieren und Archivieren von Daten aus Globanet-Zoom Besprechungen in Microsoft 365 einrichten. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren, damit Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten der drittanbieterdaten Ihrer Organisation verwenden können.
-ms.openlocfilehash: 6c040d6955b8b3ef737fdccd648bd5993fc5c135
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: c053137c67276fa76dd84c38e1aca602a0b9c151
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361982"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399142"
 ---
 # <a name="set-up-a-connector-to-archive-zoom-meetings-data-preview"></a>Einrichten eines Connectors zum Archivieren von Zoom Besprechungsdaten (Vorschau)
 
@@ -40,7 +40,7 @@ In der folgenden Übersicht wird erläutert, wie Sie einen Connector zum Archivi
 
 4. Der Connector importiert die konvertierten Besprechungselemente in die Postfächer bestimmter Benutzer, wobei der Wert der *e-Mail* -Eigenschaft und die automatische Benutzerzuordnung, wie in Schritt 3 beschrieben, verwendet werden. Ein neuer Unterordner im Ordner "Posteingang" mit dem Namen " **Zoom Meetings** " wird in Benutzerpostfächern erstellt, und die Besprechungselemente werden in diesen Ordner importiert. Der Connector verwendet den Wert der *Email* -Eigenschaft. Jedes Besprechungselement enthält diese Eigenschaft, die mit der e-Mail-Adresse jedes Teilnehmers der Besprechung aufgefüllt wird.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Erstellen Sie ein Globanet-Merge1-Konto, indem Sie die allgemeinen Geschäftsbedingungen für einen Slack eDiscovery Connector akzeptieren. Wenden Sie sich dazu an den [Globanet-Kunden Support](https://globanet.com/contact-us). Sie müssen sich bei diesem Konto anmelden, wenn Sie den Connector in Schritt 1 erstellen.
 
@@ -74,7 +74,7 @@ Der erste Schritt besteht darin, auf die **Daten-Konnektoren** im Microsoft 365 
 
 ## <a name="step-2-configure-the-zoom-meetings-connector"></a>Schritt 2: Konfigurieren des Zoom Besprechung-Konnektors
 
-Der zweite Schritt besteht darin, den Zoom Besprechungen-Konnektor auf der Merge1-Website zu konfigurieren. Weitere Informationen zum Konfigurieren des Zoom Besprechung-Konnektors in der Globanet-Merge1-Website finden Sie unter [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf).
+Der zweite Schritt besteht darin, den Zoom Besprechungen-Konnektor auf der Merge1-Website zu konfigurieren. Weitere Informationen zum Konfigurieren des Zoom Besprechung-Konnektors auf der Globanet Merge1-Website finden Sie unter [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf).
 
 Nachdem Sie auf **& fertig stellen**klicken, werden Sie zurück zum Microsoft 365 Compliance Center auf die Seite **Benutzerzuordnung** im Connector-Assistenten umgeleitet.
 

@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Administratoren können einen Connector zum Importieren und Archivieren von Reuters-EIKON-Daten aus Globanet in Microsoft 365 einrichten. Mit diesem Connector können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren, damit Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten der drittanbieterdaten Ihrer Organisation verwenden können.
-ms.openlocfilehash: ee28cd33e6c4531bf769a1e178d733eff453cb75
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: a5cd6e6266c9e5d8b74f50a5712e436e6225c9df
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47362014"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399338"
 ---
 # <a name="set-up-a-connector-to-archive-reuters-eikon-data-preview"></a>Einrichten eines Connectors zum Archivieren von Reuters-EIKON-Daten (Vorschau)
 
@@ -28,7 +28,7 @@ Nachdem die Reuters-EIKON-Daten in Benutzerpostfächern gespeichert wurden, kön
 
 ## <a name="overview-of-archiving-reuters-eikon-data"></a>Übersicht über die Archivierung von Reuters-EIKON-Daten
 
-In der folgenden Übersicht wird erläutert, wie Sie einen Connector zum Archivieren der Reuters-EIKON-Informationen in Microsoft 365 verwenden.
+In der folgenden Übersicht wird der Vorgang der Verwendung eines Connectors zum Archivieren von Reuters-EIKON-Daten in Microsoft 365 erläutert.
 
 ![Archivierungs Workflow für Reuters-EIKON-Daten](../media/ReutersEikonConnectorWorkflow.png)
 
@@ -40,7 +40,7 @@ In der folgenden Übersicht wird erläutert, wie Sie einen Connector zum Archivi
 
 4. Der Connector importiert Elemente in die Postfächer bestimmter Benutzer, indem er den Wert der *Email* -Eigenschaft der automatischen Benutzerzuordnung wie in [Schritt 3](#step-3-map-users-and-complete-the-connector-setup)beschrieben verwendet. Ein Unterordner im Ordner "Posteingang" **Reuters EIKON** wird in den Benutzerpostfächern erstellt, und die Elemente werden in diesen Ordner importiert. Der Connector verwendet den Wert der *Email* -Eigenschaft. Jedes Reuters-EIKON-Element enthält diese Eigenschaft, die mit der e-Mail-Adresse jedes Teilnehmers des Elements aufgefüllt wird.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Erstellen Sie ein Globanet-Merge1-Konto, indem Sie die allgemeinen Geschäftsbedingungen für einen Slack eDiscovery Connector akzeptieren. Wenden Sie sich dazu an den [Globanet-Kunden Support](https://globanet.com/contact-us). Sie müssen sich bei diesem Konto anmelden, wenn Sie den Connector in Schritt 1 erstellen.
 
@@ -62,13 +62,13 @@ Der erste Schritt besteht darin, auf die Seite " **Daten Konnektoren** " im Micr
 
 ## <a name="step-2-configure-the-reuters-eikon-connector-on-the-globanet-merge1-site"></a>Schritt 2: Konfigurieren des Reuters EIKON-Connectors auf der Globanet-Merge1-Website
 
-Der zweite Schritt besteht darin, den Reuters EIKON-Connector auf der Merge1-Website zu konfigurieren. Informationen zum Konfigurieren des Reuters EIKON-Connectors in der Globanet-Merge1-Website finden Sie unter [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Reuters%20Eikon%20User%20Guide%20.pdf).
+Der zweite Schritt besteht darin, den Reuters EIKON-Connector auf der Merge1-Website zu konfigurieren. Informationen zum Konfigurieren des Reuters EIKON-Connectors auf der Globanet-Merge1-Website finden Sie unter [Merge1 Connector-Benutzerhandbuch für Drittanbieter](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Reuters%20Eikon%20User%20Guide%20.pdf).
 
 Nachdem Sie auf **& fertig stellen**klicken, werden Sie zurück zum Microsoft 365 Compliance Center auf die Seite **Benutzerzuordnung** im Connector-Assistenten umgeleitet.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Schritt 3: Zuordnen von Benutzern und Abschließen des Connector-Setups
 
-Führen Sie die folgenden Schritte aus, um Benutzer zuzuordnen und den Connector zu vervollständigen, der im Microsoft 365 Compliance Center eingerichtet wurde:
+Führen Sie die folgenden Schritte aus, um Benutzer zuzuordnen und das Connector-Setup im Microsoft 365 Compliance Center abzuschließen:
 
 1. Aktivieren Sie auf der Seite **externe Benutzer auf Microsoft 365-Benutzer zuordnen** die Option Automatische Benutzerzuordnung. Die Reuters-EIKON-Elemente enthalten eine Eigenschaft mit dem Namen " *e-Mail*", die e-Mail-Adressen für Benutzer in Ihrer Organisation enthält. Wenn der Connector diese Adresse einem Microsoft 365-Benutzer zuordnen kann, werden die Elemente in das Postfach dieses Benutzers importiert.
 

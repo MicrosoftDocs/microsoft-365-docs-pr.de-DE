@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Administratoren können einen Connector zum Importieren und Archivieren von Daten aus dem Arbeitsplatz von Facebook einrichten, das auf der Merge1-Website von Globanet in Microsoft 365 archiviert wird. Das Einrichten eines Connectors erfordert die Verwendung von Globanet mit diesem Connector können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren, damit Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten der drittanbieterdaten Ihrer Organisation verwenden können.
-ms.openlocfilehash: b57ad60133fdb7cee7db24781755bda032b10a89
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: e7cdb81b2b676424c289c42490fe23e7b5441239
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47362004"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399132"
 ---
 # <a name="set-up-a-connector-to-archive-workplace-from-facebook-data-preview"></a>Einrichten eines Connectors zum Archivieren eines Arbeitsplatzes aus Facebook-Daten (Vorschau)
 
@@ -40,7 +40,7 @@ In der folgenden Übersicht wird der Vorgang der Verwendung eines Connectors zum
 
 4. Der Connector importiert die konvertierten Elemente in die Postfächer bestimmter Benutzer, wobei der Wert der *Email* -Eigenschaft der automatischen Benutzerzuordnung wie in Schritt 3 beschrieben wird. Ein Unterordner im Posteingangsordner namens " **Workplace from Facebook** " wird erstellt, und die Arbeitsplatz Elemente werden in diesen Ordner importiert. Der Connector verwendet den Wert der *Email* -Eigenschaft. Jedes Arbeitsplatz Element enthält diese Eigenschaft, die mit der e-Mail-Adresse jedes Chat-oder Post-Teilnehmers aufgefüllt wird.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Erstellen Sie ein Merge1-Konto, indem Sie die allgemeinen Geschäftsbedingungen für den Arbeitsplatz von Facebook Connector akzeptieren. Hier müssen Sie sich an den [Globanet-Kunden Support](https://globanet.com/contact-us/)wenden. Sie müssen sich bei diesem Konto anmelden, wenn Sie den Connector in Schritt 1 erstellen.
 
@@ -72,7 +72,7 @@ Nachdem Sie auf **& fertig stellen**klicken, werden Sie zurück zum Microsoft 36
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Schritt 3: Zuordnen von Benutzern und Abschließen des Connector-Setups
 
-Führen Sie die folgenden Schritte aus, um Benutzer zuzuordnen und den Connector zu vervollständigen, der im Microsoft 365 Compliance Center eingerichtet wurde:
+Führen Sie die folgenden Schritte aus, um Benutzer zuzuordnen und das Connector-Setup im Microsoft 365 Compliance Center abzuschließen:
 
 1. Aktivieren Sie auf der Seite **externe Benutzer auf Microsoft 365-Benutzer zuordnen** die Option Automatische Benutzerzuordnung. Die Arbeitsplatz Elemente enthalten eine Eigenschaft mit dem Namen " *e-Mail* ", die e-Mail-Adressen für Benutzer in Ihrer Organisation enthält. Wenn der Connector diese Adresse einem Microsoft 365-Benutzer zuordnen kann, werden die Elemente in das Postfach dieses Benutzers importiert.
 
