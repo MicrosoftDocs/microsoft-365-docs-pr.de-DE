@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 75d709cc1f98a12bb6f5a5b6539583a33be500b6
-ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
+ms.openlocfilehash: ae0105fd5eba134c7896daef34136748802e9010
+ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255745"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47394681"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Proaktive Suche nach Bedrohungen mit der erweiterten Suche in Microsoft Threat Protection
 
@@ -39,7 +39,7 @@ Bei der erweiterten Suche handelt es sich um ein abfragebasiertes Tool für die 
 
 Sie können die gleichen Abfragen für die Bedrohungssuche verwenden, um benutzerdefinierte Erkennungsregeln zu erstellen. Diese Regeln werden automatisch ausgeführt, um nach verschiedenen Ereignissen und Systemzuständen zu suchen, darunter mutmaßliche Sicherheitsvorfälle und falsch konfigurierte Computer, und auf diese zu reagieren.
 
-Das Feature ähnelt der [erweiterten Suche in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview), mit der Ausnahme, dass Advanced Hunting im Microsoft 365 Security Center Abfragen unterstützt, die Daten aus verschiedenen Arbeitsbereichen betrachten, einschließlich Daten zu Geräten, e-Mails, Apps und Identitäten von Microsoft Defender ATP, Office 365 ATP, Microsoft Cloud App Security und Azure ATP. Um die erweiterte Suche verwenden zu können, [aktivieren Sie Microsoft Threat Protection](mtp-enable.md).
+Diese Funktion ähnelt der [erweiterten Suche in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview), außer dass Advanced Hunting in Microsoft Threat Protection – verfügbar im Microsoft 365 Security Center – unterstützt Abfragen, die in Daten aus verschiedenen Arbeitsbereichen, einschließlich Daten über Geräte, e-Mails, Apps und Identitäten von Microsoft Defender ATP, Office 365 ATP, Microsoft Cloud App Security und Azure ATP suchen. Um die erweiterte Suche verwenden zu können, [aktivieren Sie Microsoft Threat Protection](mtp-enable.md).
 
 ## <a name="get-started-with-advanced-hunting"></a>Erste Schritte mit der erweiterten Suche
 
