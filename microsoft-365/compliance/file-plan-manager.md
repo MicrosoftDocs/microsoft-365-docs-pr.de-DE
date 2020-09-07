@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Der Dateiplan bietet erweiterte Verwaltungsfunktionen für Aufbewahrungsbezeichnungen.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 96150005421f6c2e28183c6e4417edd64b80a814
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: eb35915861c08588fab309210a49585a49d1b9da
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126878"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399212"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>Dateiplan zum Verwalten von Aufbewahrungsbezeichnungen verwenden
 
@@ -108,11 +108,11 @@ Zum Einstieg gibt es einige besondere Werte für die folgenden Dateiplandeskript
 
 Beispiel für Dateiplandeskriptoren beim Erstellen oder Bearbeiten einer Aufbewahrungsbezeichnung:
 
-![Dateiplandeskriptoren](../media/file-plan-descriptors.png)
+![Dateiplandeskriptoren beim Erstellen oder Bearbeiten einer Aufbewahrungsbezeichnung](../media/file-plan-descriptors.png)
 
 Beispielansicht der Spalten mit Dateiplandeskriptoren:
 
-![file-plan-descriptors-on-labels-tab.png](../media/file-plan-descriptors-on-labels-tab.png)
+![Spalten mit Dateiplandeskriptoren](../media/file-plan-descriptors-on-labels-tab.png)
 
 ## <a name="export-all-retention-labels-to-analyze-or-enable-offline-reviews"></a>Exportieren aller Aufbewahrungsbezeichnungen zum Analysieren oder Aktivieren von Offline-Überprüfungen
 

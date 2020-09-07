@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Konfigurieren Sie Vertraulichkeitsbezeichnungen für die Verschlüsselung, die Ihre Daten durch Einschränken von Zugriff und Nutzung schützt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dc7f1e181fcc2ffda6cd9b36596c164f49d23452
-ms.sourcegitcommit: 6ad2e4164ed59d5a58a0df9cb8413531c1be0986
+ms.openlocfilehash: e3604518be47e35590792689c46bb036cbeb8965
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47334858"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399264"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Einschränken des Zugriffs auf Inhalte mithilfe von Vertraulichkeitsbezeichnungen zur Verschlüsselung 
 
@@ -170,7 +170,7 @@ Wenn Sie alle Benutzer und Gruppen in Ihrer Organisation auswählen oder das Ver
 
 Als bewährte Methode sollten Sie besser Gruppen anstelle von Benutzern verwenden. Dadurch wird die Konfiguration einfacher.
 
-##### <a name="requirements-and-limitations-for-add-any-authenticated-users"></a>Voraussetzungen und Einschränkungen für **Hinzufügen von allen authentifizierten Benutzern**
+##### <a name="requirements-and-limitations-for-add-any-authenticated-users"></a>Voraussetzungen und Einschränkungen für „Hinzufügen von allen authentifizierten Benutzern“
 
 Diese Einstellung schränkt den Zugriff der Benutzer auf den Inhalt nicht ein, der von der Bezeichnung verschlüsselt wird, während sie den Inhalt weiterhin verschlüsselt und Ihnen Optionen zum Einschränken des Inhalts (Berechtigungen) und zum Zugriff auf (Ablauf und Offlinezugriff) bietet. Die Anwendung, die die verschlüsselten Inhalte öffnet, muss die verwendete Authentifizierung unterstützen können. Aus diesem Grund funktionieren Partner-Sozialnetwerkanbieter wie Google und die Authentifizierung mit einer Einmalkennung nur für E-Mail und nur dann, wenn Sie Exchange Online verwenden. Microsoft-Konten können mit Office 365-Apps und dem [Azure Information Protection-Viewer](https://portal.azurerms.com/#/download)verwendet werden.
 
@@ -213,7 +213,7 @@ Weitere Informationen finden Sie unter [Rights Management-Aussteller und Rights 
 > [!NOTE]
 > Dieses Feature ist derzeit in Public Preview. Weitere Informationen finden Sie unter [Ankündigung der öffentlichen Vorschau der Double Key-Verschlüsselung für Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-public-preview-of-double-key-encryption-for-microsoft/ba-p/1534451).
 
-Wählen Sie diese Option erst, nachdem Sie den Dienst Doppelschlüssel-Verschlüsselung konfiguriert haben und Sie diese Doppelschlüssel-Verschlüsselung für Dateien und E-Mails verwenden müssen, die mit diesem Label versehen werden sollen.
+Wählen Sie diese Option erst, nachdem Sie den Dienst Doppelschlüssel-Verschlüsselung konfiguriert haben und Sie diese Doppelschlüssel-Verschlüsselung für Dateien verwenden müssen, die mit diesem Label versehen werden sollen.
 
 Weitere Informationen, Voraussetzungen und Konfigurationsanweisungen finden Sie unter [Double Key Encryption (DKE)](double-key-encryption.md).
 

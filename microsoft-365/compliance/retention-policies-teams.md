@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie Näheres über Aufbewahrungsrichtlinien, die für Microsoft Teams gelten.
-ms.openlocfilehash: 3dcc0e3ea94d002f603b44b777d7666a65b4a725
-ms.sourcegitcommit: c692bdc186fb29499816e8bb2addcddef34d23d3
+ms.openlocfilehash: cc0d422220d4f3c2ca667a4f0076eb9e62d90518
+ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46818317"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47394692"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Informationen zur Aufbewahrung für Microsoft Teams
 
@@ -118,4 +118,6 @@ Wir arbeiten kontinuierlich an der Verbesserung der Aufbewahrungsfunktionen in M
 
 ## <a name="configuration-guidance"></a>Konfigurationsleitfaden
 
-Wenn Sie die Aufbewahrung in Microsoft 365 konfigurieren möchten, lesen Sie [Erste Schritte mit Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](get-started-with-retention.md).
+Wenn Sie die Konfiguration der Datenaufbewahrung in Microsoft 365 zum ersten Mal durchführen möchten, lesen Sie [Erste Schritte mit Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](get-started-with-retention.md).
+
+Wenn Sie bereit sind, eine Aufbewahrungsrichtlinie für Teams zu erstellen, lesen Sie [Erstellen und Konfigurieren von Aufbewahrungsrichtlinien](create-retention-policies.md).
