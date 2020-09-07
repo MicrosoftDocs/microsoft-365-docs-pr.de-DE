@@ -1,10 +1,10 @@
 ### YamlMime:Hub
-title: Microsoft 365-Hilfecenter für Administratoren und IT-Experten
-summary: Entdecken Sie die Hilfe-und Schulungsressourcen für Microsoft 365.
+title: Microsoft 365-Dokumentation
+summary: Finden Sie die Lösungen, Szenarien und Ressourcen, die Sie für die ersten Schritte mit Microsoft 365 für Ihr Unternehmen oder Ihre Organisation benötigen.
 brand: m365
 metadata:
-  title: Microsoft 365-Hilfecenter für Administratoren und IT-Experten
-  description: Einrichten, Bereitstellen und Verwalten von Microsoft 365 zur Unterstützung Ihrer Organisation, eines kleinen Unternehmens, einer Kampagne oder von Lehrkräften sowie Schülern und Studenten
+  title: Microsoft 365-Dokumentation
+  description: Finden Sie die Lösungen, Szenarien und Ressourcen, die Sie für die ersten Schritte mit Microsoft 365 für Ihr Unternehmen oder Ihre Organisation benötigen.
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.topic: hub-page
@@ -13,61 +13,241 @@ metadata:
   ms.author: robmazz
   ms.date: 11/08/2019
   localization_priority: Priority
-  ms.openlocfilehash: a7d2dfe479d51d67c526dbe1bed2bc3dc5c56546
-  ms.sourcegitcommit: 7f765670cb6970fdf7ddbad464ed3f8fe704bfaf
+  ms.openlocfilehash: 2f414fe4556735a367bab9f08d8496f48843cb9e
+  ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 06/27/2020
-  ms.locfileid: "44909288"
+  ms.lasthandoff: 09/04/2020
+  ms.locfileid: "47399111"
 highlightedContent:
   items:
-  - title: Schulung für Administratoren und IT-Experten
-    itemType: learn
-    url: https://docs.microsoft.com/learn/m365/
-  - title: Schulung für Endbenutzer
-    itemType: learn
-    url: https://support.office.com/modernworkplace
-  - title: Einrichten Ihres Unternehmens in der Cloud
-    itemType: learn
-    url: https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
-  - title: Testumgebungsanleitungen für IT-Experten
+  - title: Fördern von Remotemitarbeitern
     itemType: how-to-guide
-    url: ./enterprise/m365-enterprise-test-lab-guides.md
-  - title: Microsoft 365 Tech Community
+    url: solutions/empower-people-to-work-remotely.md
+  - title: Remote Lernen mit Microsoft Teams
     itemType: get-started
-    url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
-  - title: Ressourcen für Entwickler
-    itemType: reference
-    url: https://developer.microsoft.com/microsoft-365
+    url: /MicrosoftTeams/remote-learning-edu
+  - title: Erweitern Sie Ihre Kenntnisse mit Microsoft Learn
+    itemType: learn
+    url: /learn/m365/
+  - title: Starten Sie Ihr Kleinunternehmen mit Microsoft 365
+    itemType: quickstart
+    url: https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
+productDirectory:
+  title: Microsoft 365-Lösungen und -Szenarien
+  items:
+  - title: Microsoft 365-Lösungen
+    imageSrc: https://docs.microsoft.com/office/media/icons/secure-document-blue.svg
+    links:
+    - url: solutions/empower-people-to-work-remotely.md
+      text: Fördern von Remotemitarbeitern
+    - url: solutions/setup-secure-collaboration-with-teams.md
+      text: Sichere Zusammenarbeit einrichten
+    - url: solutions/deploy-threat-protection.md
+      text: Bereitstellen des Bedrohungsschutzes
+    - url: solutions/information-protection-deploy.md
+      text: Bereitstellen des Informationsschutzes für Datenschutzbestimmungen
+    - url: campaigns/index.md
+      text: Microsoft 365 für Kampagnen (Sicherheitsleitfaden für alle Kleinunternehmen)
+  - title: Besprechungen und Kommunikation
+    imageSrc: https://docs.microsoft.com/office/media/icons/call-phone-blue.svg
+    links:
+    - url: /MicrosoftTeams/quick-start-meetings-live-events
+      text: Besprechungen und Liveereignisse in Microsoft Teams
+    - url: /MicrosoftTeams/business-voice/whats-business-voice
+      text: Microsoft 365 Business Voice
+    - url: /MicrosoftTeams/cloud-voice-landing-page
+      text: Cloud Voice in Microsoft Teams
+    - url: /SkypeForBusiness/hybrid/msft-telephony-solutions
+      text: Microsoft-Telefonielösungen
+  - title: Zusammenarbeiten mit Ihrem Team
+    imageSrc: https://docs.microsoft.com/office/media/icons/users-people.svg
+    links:
+    - url: solutions/collaborate-with-people-outside-your-organization.md
+      text: Konfigurieren der externen Freigabe
+    - url: /sharepoint/plan-intranet
+      text: Planen eines intelligenten SharePoint-Intranets
+    - url: /sharepoint/deploy-file-collaboration
+      text: Zusammenarbeit an Dateien in SharePoint
+    - url: /onedrive/plan-onedrive-enterprise
+      text: OneDrive-Leitfaden für Unternehmen
+  - title: Ressourcen für die Architektur
+    imageSrc: https://docs.microsoft.com/office/media/icons/cloud-architecture2.svg
+    links:
+    - url: solutions/productivity-illustrations.md
+      text: Darstellungen zu Microsoft 365-Produktivitätslösungen
+    - url: solutions/cloud-architecture-models.md
+      text: Microsoft Cloud-Architekturmodelle
+    - url: solutions/design-principles.md
+      text: Planungsgrundsätze für Unternehmensarchitekturen
+  - title: Sichern Sie Ihre Organisation
+    imageSrc: https://docs.microsoft.com/office/media/icons/security-blue.svg
+    links:
+    - url: security/top-security-tasks-for-remote-work.md
+      text: Die wichtigsten Aufgaben für Sicherheitsteams zur Unterstützung der Arbeit von zu Hause aus
+    - url: solutions/configure-teams-three-tiers-protection.md
+      text: Konfigurieren von drei Schutzebenen mit Microsoft Teams
+    - url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases
+      text: Bereitstellen von Microsoft Defender Advanced Threat Protection
+    - url: security/office-365-security/office-365-atp.md
+      text: Bereitstellen von Office 365 Advanced Threat Protection
+    - url: enterprise/microsoft-365-policies-configurations.md
+      text: Konfigurieren des Identitäts- und Gerätezugriffschutzes
+  - title: Schutz Ihrer Informationen und Einhaltung gesetzlicher Vorschriften
+    imageSrc: https://docs.microsoft.com/office/media/icons/certificate-blue.svg
+    links:
+    - url: compliance/compliance-quick-tasks.md
+      text: Schnelle Aufgaben für die ersten Schritte mit Microsoft 365 Compliance
+    - url: compliance/protect-information.md
+      text: Verwalten des Informationsschutzes
+    - url: compliance/manage-information-governance.md
+      text: Verwalten der Informationsgovernance
+    - url: compliance/overview-data-investigations.md
+      text: Verwalten der internen und externen Untersuchungen
+    - url: compliance/insider-risk-management.md
+      text: Verwalten der Insider-Risiken
+  - title: Bereitstellen und Verwalten von Desktops und Geräten
+    imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
+    links:
+    - url: /DeployOffice/plan-microsoft-365-apps
+      text: Bereitstellen von Microsoft 365 Apps
+    - url: /windows/deployment/
+      text: Bereitstellen von Windows 10
+    - url: /microsoft-365/managed-desktop/
+      text: Microsoft Managed Desktop
+    - url: /mem/intune/fundamentals/what-is-intune
+      text: Geräteverwaltung mit Microsoft Intune
+  - title: Migrieren zu Microsoft 365
+    imageSrc: https://docs.microsoft.com/office/media/icons/migration-blue.svg
+    links:
+    - url: /MicrosoftTeams/journey-skypeforbusiness-teams
+      text: Migrieren zu Microsoft Teams
+    - url: /sharepointmigration/migrate-to-sharepoint-online
+      text: Migrieren von Inhalten zu SharePoint, OneDrive und Teams
+    - url: /Exchange/mailbox-migration/mailbox-migration
+      text: Migrieren mehrerer E-Mail-Konten zu Microsoft 365
+  - title: Branchenspezifische Lösungen und Szenarien
+    imageSrc: https://docs.microsoft.com/office/media/icons/on-premises-blue.svg
+    links:
+    - url: solutions/financial-services-secure-collaboration.md
+      text: Sicherheit und Compliance für Finanzdienstleister
+    - url: solutions/energy-secure-collaboration.md
+      text: Sicherheit und Compliance für Energie- und Versorgungsdienste
+    - url: /MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc
+      text: Teams für Organisationen im Gesundheitswesen
+    - url: /MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page
+      text: Microsoft Teams für Bildungseinrichtungen
+    - url: /MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page
+      text: Microsoft Teams für Behörden
+    - url: /MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams
+      text: Unterstützung von Remote-Mitarbeitern von Behörden in Microsoft Teams
 additionalContent:
   sections:
-  - title: Hilfe zu Microsoft 365
-    summary: Wählen Sie eine Karte aus, um mehr über Microsoft 365 zu erfahren.
+  - title: Alle Apps und Dienste
+    summary: Dokumentation aller Apps und Produkte in Microsoft 365.
     items:
-    - title: Microsoft 365 Admin Center
+    - title: Microsoft 365
       summary: Richten Sie Microsoft 365-Dienste für Ihre Organisation ein und verwalten Sie sie.
-      url: ./admin/index.yml
-    - title: Microsoft 365 Business Premium
-      summary: Konzipiert für kleine und mittlere Unternehmen. Führen Sie Ihr Unternehmen mit der neuesten Version von Windows und Office-Apps wie Excel und Outlook. Nutzen Sie die Vorteile von Datenschutz und Sicherheit für alle Ihre Geräte im Unternehmen.
-      url: ./business/index.yml
-    - title: Microsoft 365 Enterprise
-      summary: Konzipiert für große Organisationen. Schützen Sie Ihr Unternehmen, und verändern Sie die Art und Weise, wie Sie mit Office-App, Windows 10 und Enterprise Mobility + Security arbeiten.
-      url: ./enterprise/index.yml
-    - title: Microsoft 365 Lösungs- und Architektur-Center
-      summary: Grundlegendes zum Design der Lösung und Architektur, das für Ihre Organisation geeignet ist.
-      url: ./solutions/index.yml
-    - title: Microsoft 365 Education
-      summary: Konzipiert für Lehrkräfte, um Kreativität und Zusammenarbeit zu fördern sowie eine einfache und sichere Umgebung in einer einzelnen, bezahlbaren Lösung für das Bildungswesen bereitzustellen.
-      url: https://docs.microsoft.com/education/
-    - title: Microsoft 365 Compliance
-      summary: Unterstützen Sie Ihre Organisation bei der Verwaltung von Informationen, beim Schutz vor Risiken und bei der Einhaltung von gesetzlichen oder behördlichen Standards.
-      url: ./compliance/index.yml
-    - title: Microsoft 365 Security
-      summary: Informieren Sie sich über die robusten Sicherheitslösungen und -dienste in Microsoft 365 Security, damit Sie Ihr Unternehmen auf allen Angriffsflächen besser schützen können.
-      url: ./security/index.yml
-    - title: Microsoft 365 für Kampagnen
-      summary: Mit dieser empfohlenen Konfiguration für Microsoft 365 for Business sind Ihre Kampagnen- oder Geschäftsdaten und Ihre Kommunikation sicher.
-      url: ./campaigns/index.md
-    - title: Microsoft Managed Desktop
-      summary: Microsoft Managed Desktop bringt Microsoft 365 Enterprise, die cloudbasierte Geräteverwaltung von Microsoft und die Sicherheitsüberwachung zusammen und ermöglicht, dass sich Ihre IT-Teams auf die wichtigsten Geschäftsanforderungen konzentrieren können.
-      url: ./managed-desktop/index.yml
+      links:
+      - text: Microsoft 365 Admin Center
+        url: admin/index.yml
+      - text: Microsoft 365 Business Premium
+        url: business/index.yml
+      - text: Microsoft 365 Enterprise
+        url: enterprise/index.yml
+      - text: Microsoft 365-Compliance
+        url: compliance/index.yml
+      - text: Microsoft 365 Security Center
+        url: security/index.yml
+      - text: Microsoft Managed Desktop
+        url: managed-desktop/index.yml
+      - text: Problembehandlung und Support
+        url: /office/troubleshoot
+    - title: Microsoft Teams
+      links:
+      - text: Administrator-Dokumentation
+        url: /MicrosoftTeams/Teams-overview
+      - text: Sicherheit und Compliance in Teams
+        url: /MicrosoftTeams/security-compliance-overview
+      - text: Upgrade von Skype for Business auf Microsoft Teams
+        url: /MicrosoftTeams/journey-skypeforbusiness-teams
+      - text: Weitere Artikel >
+        url: /MicrosoftTeams
+    - title: Bereitstellen von Office
+      links:
+      - text: Microsoft 365 Apps
+        url: /DeployOffice/plan-microsoft-365-apps
+      - text: Office für Mac
+        url: /DeployOffice/mac
+      - text: Office 2019
+        url: /DeployOffice/office2019
+      - text: Weitere Artikel >
+        url: /DeployOffice
+    - title: SharePoint
+      links:
+      - text: SharePoint Online
+        url: /sharepoint/sharepoint-online
+      - text: SharePoint Server
+        url: /sharepoint/sharepoint-server
+      - text: Hybrid
+        url: /sharepoint/hybrid/hybrid
+      - text: PowerShell-Referenz für SharePoint
+        url: /powershell/sharepoint
+      - text: Weitere Artikel >
+        url: /sharepoint
+    - title: OneDrive
+      links:
+      - text: Planen, bereitstellen und verwalten
+        url: /onedrive/onedrive
+      - text: More OneDrive >
+        url: /onedrive
+    - title: Outlook und Exchange
+      links:
+      - text: Outlook für iOS und Android
+        url: https://resources.techcommunity.microsoft.com/outlook-mobile-adoption/
+      - text: Exchange Online
+        url: /Exchange/exchange-online
+      - text: Weitere Exchange >
+        url: /Exchange
+    - title: Planner und Project
+      links:
+      - text: Planner Administratorhilfe
+        url: /office365/planner/planner-admin-home
+      - text: Project für das Web
+        url: /project-for-the-web/projectforweb-admin-home
+      - text: Weitere Project >
+        url: /Project
+    - title: Yammer
+      links:
+      - text: Administratorhilfe
+        url: /yammer/yammer-landing-page
+    - title: Kaizala
+      links:
+      - text: Erste Schritte
+        url: /Kaizala
+    - title: Microsoft Stream
+      links:
+      - text: Hilfedokumentation
+        url: /stream/
+    - title: Skype for Business
+      links:
+      - text: IT Pro Dokumentation
+        url: /skypeforbusiness
+    - title: Office Online Server
+      links:
+      - text: Erste Schritte
+        url: /officeonlineserver
+  - title: Verwandte Leitfäden und Ressourcen
+    items:
+    - title: Entwickler
+      summary: Im Microsoft 365 Dev Center finden Sie Lernprogramme, Verweise und weitere Ressourcen für Entwickler.
+      url: https://developer.microsoft.com/microsoft-365
+    - title: Endbenutzer
+      summary: Auf support.microsoft.com finden Sie Schulungs-, Anleitungs- und Hilfeinhalte für Benutzer von Microsoft 365.
+      url: https://support.microsoft.com/microsoft-365
+    - title: Lehrkräfte
+      summary: Lernen Sie, wie Sie Kreativität freisetzen, Teamarbeit fördern und mit Microsoft 365 Education sicher und einfach arbeiten können.
+      url: /education
+    - title: Tech Community
+      summary: Treten Sie der Microsoft 365 Tech Community bei, um Erfahrungen auszutauschen, sich zu engagieren und von Experten zu lernen.
+      url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
