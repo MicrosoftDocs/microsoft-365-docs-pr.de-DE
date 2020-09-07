@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e2324cdbb4c47cff3b5e315b4c6b294258b11e24
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: c6f876ee3285f68f6488f83fdc978e175c26f3eb
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066288"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357291"
 ---
 # <a name="trusted-information-security-assessment-exchange-tisax-germany"></a>Trusted Information Security Assessment Exchange (TISAX) Deutschland
 
@@ -49,9 +49,9 @@ Die TISAX-Bewertung konzentrierte sich auf die folgenden Microsoft-Dienste:
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
 - Intune
-- [Microsoft 365- und Power BI-Clouddienste als in einem firmenspezifischen Office 365-Plan oder einer -Anwendungssuite enthalten](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9f756cce-b15d-45a9-94d7-6a583dee4401&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
+- [Microsoft Power BI, entweder als eigenständige registrierte Version oder als Teil eines Plans bzw. einer Suite von Office 365 oder Microsoft Dynamics 365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9f756cce-b15d-45a9-94d7-6a583dee4401&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 
-## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
+## <a name="audits-reports-and-certificates"></a>Audits, Berichte und Zertifikate
 
 Branchenvertreter, die bei ENX registriert sind, finden Details zur TISAX-Bewertung von Microsoft Cloud Services im Leistungsumfang auf dem [ENX-Portal](https://portal.enx.com/de-DE/). Um nach Microsoft-Bewertungsergebnissen zu suchen, melden Sie sich bei Ihrem bestehenden TISAX-Konto an und suchen Sie nach Microsoft. Alternativ können Sie Ihre Suche auch über die folgenden Informationen einschränken:
 
