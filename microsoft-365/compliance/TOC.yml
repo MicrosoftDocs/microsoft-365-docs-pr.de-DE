@@ -548,10 +548,10 @@
         - name: Exportieren von Falldaten
           href: exporting-data-ediscover20.md
           items:
+            - name: Herunterladen von Dokumenten aus einem Prüfdateisatz
+              href: download-documents-from-review-set.md
             - name: Exportieren von Dokumenten aus einem Prüfdateisatz
               href: export-documents-from-review-set.md
-            - name: Herunterladen von Exportaufträgen
-              href: download-export-jobs.md
         - name: Verwalten von Aufträgen
           href: managing-jobs-ediscovery20.md
         - name: Konfigurieren von Falleinstellungen
