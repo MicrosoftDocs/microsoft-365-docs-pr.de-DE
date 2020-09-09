@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Was sind bewährte Methoden für Exchange Online Protection (EoP) und ATP-Sicherheitseinstellungen (Advanced Threat Protection)? Was sind die aktuellen Empfehlungen für Standardschutz? Was sollte verwendet werden, wenn Sie strenger sein möchten? Und welche Extras erhalten Sie, wenn Sie auch Advanced Threat Protection (ATP) verwenden?
-ms.openlocfilehash: ea1c04c503fa6ecac66a6378ec466c7ea6cc4133
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 1022accb992fbc0aee92b8da97f9d8a48cbe35f2
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653577"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405383"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Empfohlene Einstellungen für EoP und Office 365 ATP-Sicherheit
 
@@ -146,7 +146,7 @@ Zusätzliche Sicherheitsvorteile bieten ein Office 365 Advanced Threat Protectio
 Office 365 ATP enthält die Richtlinien für sichere Anlagen und sichere Links, um zu verhindern, dass e-Mails mit potenziell böswilligen Anlagen zugestellt werden, und um Benutzer daran zu hindern, auf potenziell nicht sichere URLs zu klicken.
 
 > [!IMPORTANT]
-> Advanced Anti-Phishing ist einer der Vorteile eines Office 365 ATP-Abonnements. Obwohl es standardmäßig aktiviert ist, ***müssen*** Sie mindestens eine Anti-Phishing-Richtlinie konfigurieren, bevor Sie mit dem Filtern von e-Mails beginnen kann. Vergessen Sie nicht, die Anti-Phishing-Richtlinien zu konfigurieren, könnte Benutzern riskante e-Mails verfügbar gemacht werden. Achten Sie darauf, Ihre Anti-Phishing-Richtlinien zu konfigurieren, nachdem Sie ein Office 365 ATP-Abonnement hinzugefügt haben.
+> Advanced Anti-Phishing ist einer der Vorteile eines Office 365 ATP-Abonnements. Die standardmäßige ATP-Anti-Phishing-Richtlinie bietet [Spoof-Schutz](set-up-anti-phishing-policies.md#spoof-settings) für alle Empfänger. Die verfügbaren Schutzeinstellungen für den [Identitätswechsel](#impersonation-settings-in-atp-anti-phishing-policies) für bestimmte Absender oder sendende Domänen sind in der Standardrichtlinie jedoch nicht konfiguriert oder aktiviert. Zum Aktivieren des Identitätswechsel Schutzes müssen Sie mindestens eine ATP-Anti-Phishing-Richtlinie konfigurieren.
 
 Wenn Sie Ihrem EoP ein Office 365 ATP-Abonnement hinzugefügt haben, legen Sie die folgenden Konfigurationen fest.
 
@@ -213,14 +213,14 @@ Informationen zum Konfigurieren dieser Einstellungen finden Sie unter [Einrichte
 |Name des Sicherheitsfeatures|Standard|Strict|Kommentar|
 |---|---|---|---|
 |**Verwenden von sicheren Links in: Office 365-Anwendungen** <br/><br/> _EnableSafeLinksForO365Clients_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`|Verwenden Sie ATP-sichere Links in Office 365-Desktop-und Mobile-Clients (IOS und Android).|
-|**Verwenden von sicheren Links in: Office-Webzugriffs-Gefährten** <br/><br/> _EnableSafeLinksForWebAccessCompanion_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`|Verwenden Sie ATP-sichere Links in Office-Webanwendungen.|
+|**Verwenden von sicheren Links in: Office-Webzugriffs-Gefährten** <br/><br/> _EnableSafeLinksForWebAccessCompanion_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`|Verwenden Sie ATP-sichere Links in Office-Webanwendungen. Beachten Sie, dass diese Einstellung nicht konfigurierbar ist.|
 |**Nicht nachverfolgen, wenn Benutzer auf sichere Links klicken** <br/><br/> _TrackClicks_|Off <br/><br/> `$true`|Off <br/><br/> `$true`||
 |**Nicht zulassen, dass Benutzer über sichere Links auf die ursprüngliche URL klicken** <br/><br/> _AllowClickThrough_|Ein <br/><br/> `$false`|Ein <br/><br/> `$false`||
 |
 
 #### <a name="safe-links-policy-settings-in-custom-policies-for-specific-users"></a>Richtlinieneinstellungen für sichere Links in benutzerdefinierten Richtlinien für bestimmte Benutzer
 
-**Hinweis**: in PowerShell verwenden Sie die Cmdlets [New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) und [Sets-SafeLinksPolicy] ( https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy ] für diese Einstellungen.
+**Hinweis**: in PowerShell verwenden Sie die Cmdlets [New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) und [Sets-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) für diese Einstellungen.
 
 ****
 
@@ -249,7 +249,7 @@ Informationen zum Konfigurieren dieser Einstellungen finden Sie unter [Einrichte
 |---|---|---|---|
 |**Aktivieren von ATP für SharePoint, OneDrive und Microsoft Teams** <br/><br/> _EnableATPForSPOTeamsODB_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
 |**Aktivieren sicherer Dokumente für Office-Clients**<bt/><br/> _EnableSafeDocs_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||Diese Einstellung ist nur mit Microsoft 365 E5-oder Microsoft 365 E5-Sicherheits Lizenzen verfügbar. Weitere Informationen finden Sie unter [sichere Dokumente in Office 365 Advanced Threat Protection](safe-docs.md).|
-|**Personen können durch die geschützte Ansicht klicken, selbst wenn die Datei von sicheren Dokumenten als bösartig gekennzeichnet** wurde.<bt/><br/> _AllowSafeDocsOpen_|Off <br/><br/> `$false`|Off <br/><br/> `$false`||
+|**Personen können durch die geschützte Ansicht klicken, selbst wenn die Datei von sicheren Dokumenten als bösartig gekennzeichnet** wurde. <bt/><br/> _AllowSafeDocsOpen_|Off <br/><br/> `$false`|Off <br/><br/> `$false`||
 |
 
 #### <a name="safe-attachments-policy-settings-in-custom-policies-for-specific-users"></a>Richtlinieneinstellungen für sichere Anlagen in benutzerdefinierten Richtlinien für bestimmte Benutzer
@@ -260,7 +260,7 @@ Informationen zum Konfigurieren dieser Einstellungen finden Sie unter [Einrichte
 
 |Name des Sicherheitsfeatures|Standard|Strict|Kommentar|
 |---|---|---|---|
-|**Sichere Anlagen unbekannte Malware Antwort** <br/><br/> _Aktion_|Block <br/><br/> `Block`|Block <br/><br/> `Block`||
+|**Sichere Anlagen unbekannte Malware Antwort** <br/><br/> _Aktion_|Blockieren <br/><br/> `Block`|Blockieren <br/><br/> `Block`||
 |**Umleitungs Anlage bei Erkennung** : **Umleitung aktivieren** <br/><br/> _Redirect_ <br/><br/> _RedirectAddress_|Ein, und geben Sie eine e-Mail-Adresse an. <br/><br/> `$true` <br/><br/> eine e-Mail-Adresse|Ein, und geben Sie eine e-Mail-Adresse an. <br/><br/> `$true` <br/><br/> eine e-Mail-Adresse|Umleiten von Nachrichten an einen Sicherheitsadministrator zur Überarbeitung.|
 |**Wenden Sie die obige Auswahl an, wenn bei der Malwareüberprüfung nach Anlagen ein Timeout oder ein Fehler auftritt.** <br/><br/> _ActionOnError_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
 |

@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Hier finden Sie Informationen zu verschiedenen Berichtsfeatures in Microsoft 365, einschließlich Azure Active Directory und Exchange Online.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3beb327bd5cb995c378a414e19cc54dea8ad1304
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 59a7569518ad3e4704b3528d175c092b0a19b819
+ms.sourcegitcommit: 294a51ef0ff48dddb659c602e047d7fd98f91172
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332736"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47407916"
 ---
 # <a name="microsoft-365-reporting-features"></a>Microsoft 365-Berichterstellungsfeatures
 
@@ -71,9 +71,9 @@ Exchange Online Überwachungsberichte enthalten Details zum Postfachzugriff und 
 
 ## <a name="device-compliance-reports"></a>Geräte Kompatibilitätsberichte
 
-Sie verwalten und sichern mit Ihrem Abonnement verbundene Mobile Geräte mithilfe von Microsoft 365 Mobile Device Management (MDM). Mobile Geräte, die für den Zugriff auf Arbeits-e-Mails, Kalender, Kontakte und Dokumente verwendet werden, spielen eine wichtige Rolle, um sicherzustellen, dass die Mitarbeiter jederzeit und von überall arbeiten können. Es ist wichtig, dass Sie die Informationen Ihrer Organisation schützen. Sie verwenden Microsoft 365 MDM, um Gerätesicherheitsrichtlinien und Zugriffsregeln festzulegen. Wenn Sie verloren gehen oder gestohlen werden, verwenden Sie auch Microsoft 365 MDM, um mobile Geräte abzuwischen.
+Sie verwalten und sichern mit Ihrem Abonnement verbundene Mobile Geräte mithilfe von Basic Mobility and Security für Microsoft 365. Mobile Geräte, die für den Zugriff auf Arbeits-e-Mails, Kalender, Kontakte und Dokumente verwendet werden, spielen eine wichtige Rolle, um sicherzustellen, dass die Mitarbeiter jederzeit und von überall arbeiten können. Es ist wichtig, dass Sie die Informationen Ihrer Organisation schützen. Sie verwenden grundlegende Mobilität und Sicherheit für Microsoft 365, um Gerätesicherheitsrichtlinien und Zugriffsregeln festzulegen. Wenn Sie verloren gehen oder gestohlen werden, verwenden Sie auch grundlegende Mobilität und Sicherheit für Microsoft 365, um mobile Geräte abzuwischen.
 
-MDM-Konformitätsberichte bieten eine Übersicht über Richtlinien, die von einer Organisation eingerichtet wurden, um mobile Geräte zu sichern, die auf Microsoft 365-Daten zugreifen. Der Bericht ermöglicht das Filtern von Geräten durch den Kompatibilitätsstatus, gemeldete Verstöße, blockierte Geräte und wie viele Geräte aufgrund von Sicherheitsrichtlinien gelöscht wurden. Weitere Informationen finden Sie unter [Übersicht über die Verwaltung mobiler Geräte für Microsoft 365](https://support.microsoft.com/office/overview-of-mobile-device-management-mdm-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a).
+Grundlegende Mobilitäts-und Sicherheits Kompatibilitätsberichte bieten einen Überblick über Richtlinien, die von einer Organisation zur Sicherung mobiler Geräte eingerichtet wurden, die auf Microsoft 365-Daten zugreifen. Der Bericht ermöglicht das Filtern von Geräten durch den Kompatibilitätsstatus, gemeldete Verstöße, blockierte Geräte und wie viele Geräte aufgrund von Sicherheitsrichtlinien gelöscht wurden. Weitere Informationen finden Sie unter [Overview of Basic Mobility and Security for Microsoft 365](https://support.microsoft.com/office/overview-of-basic-mobility-and-security-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a).
 
 ## <a name="data-loss-prevention"></a>Verhinderung von Datenverlust
 

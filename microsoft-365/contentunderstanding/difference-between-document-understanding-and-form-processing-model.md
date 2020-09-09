@@ -11,12 +11,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Beschreibt den wesentlichen Unterschied zwischen Dokument Verständnis und Formular Verarbeitungs Modellen.
-ms.openlocfilehash: 7c480b91c1ddd75016b4bd35faa3d5692cacd103
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: 972fa9e8446a44f6220baa7cde3f484172c50da6
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612738"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405618"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models-preview"></a>Unterschied zwischen Dokument verstehen und Formular Verarbeitungs Modellen (Vorschau)
 
@@ -31,7 +31,7 @@ Mit dem Inhalts Verständnis können Sie *Modelle* erstellen, um die benötigten
 - [Dokument verstehen von Modellen](document-understanding-overview.md)
 - [Formular Verarbeitungsmodelle](form-processing-overview.md)
 
-Während beide Modelle für gewöhnlich denselben Zweck verwendet werden, gibt es wesentliche Unterschiede, die sich auf die zu verwendenden Optionen auswirken.
+Während beide Modelle für gewöhnlich denselben Zweck verwendet werden, gibt es wesentliche Unterschiede, die sich auf die zu verwendende Option auswirken.
 
 
 ## <a name="structured-versus-unstructured-and-semi-structured-content"></a>Strukturierter Vergleich von unstrukturierten und semi-strukturierten Inhalten

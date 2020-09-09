@@ -11,12 +11,12 @@ ms.service: ''
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: ba8cb8ceb3c98019099bfe5438d274c9d2b32280
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: d6495f297f09ddc167d7c36835ac82a15abc91ac
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612548"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405651"
 ---
 # <a name="set-up-knowledge-management-preview"></a>Einrichten der Wissensverwaltung (Vorschau)
 
@@ -62,7 +62,7 @@ So richten Sie Ihr Wissensnetzwerk ein:
 
     ![Erste Schritte](../media/content-understanding/k-get-started.png) </br>
 
-4. Auf der Seite **Wählen Sie aus, wie das Wissensnetzwerk Themen finden kann** , konfigurieren Sie die Themen Ermittlung. Wählen Sie im Abschnitt **SharePoint-Themen Quellen auswählen** aus, welche SharePoint-Websites während der Ermittlung als Quellen für Ihre Themen gecrawlt werden sollen. Hierzu zählen Folgende:</br>
+4. Auf der Seite **Wählen Sie aus, wie das Wissensnetzwerk Themen finden kann** , konfigurieren Sie die Themen Ermittlung. Wählen Sie im Abschnitt **SharePoint-Themen Quellen auswählen** aus, welche SharePoint-Websites während der Ermittlung als Quellen für Ihre Themen gecrawlt werden sollen. Dies umfasst Folgendes:</br>
     a. **Alle Websites**: alle SharePoint-Websites in Ihrem Mandanten. Dadurch werden aktuelle und zukünftige Websites erfasst.</br>
     b. **Alle, außer ausgewählte Websites**: Geben Sie die Namen der Websites ein, die Sie ausschließen möchten.  Sie können auch eine Liste der Websites hochladen, von denen Sie die Ermittlung deaktivieren möchten. In Zukunft erstellte Websites werden als Quellen für die Themen Ermittlung hinzugefügt. </br>
     c. **Nur ausgewählte Websites**: Geben Sie die Namen der Websites ein, die Sie einschließen möchten. Sie können auch eine Liste der Websites hochladen. In der Zukunft erstellte Websites werden nicht als Quellen für die Themen Ermittlung einbezogen. </br>
@@ -71,11 +71,27 @@ So richten Sie Ihr Wissensnetzwerk ein:
    
 5. Im Abschnitt **Themen nach Name ausschließen** können Sie auswählen, dass Themen Namen eingeschlossen werden sollen, die nicht in den ermittelten Ergebnissen enthalten sein sollen. Verwenden Sie diese Einstellung, um zu verhindern, dass vertrauliche Themen als Teil des Wissensnetzwerks einbezogen werden. Zu den Optionen gehören:</br>
     a. **Keine Themen ausschließen** </br>
-    b. **Thema ausschließen, das diese Begriffe enthält**: Wenn Sie Themen haben, die Sie Benutzern nicht als Teil des Wissensnetzwerks angezeigt werden sollen.
-   -Laden Sie die bereitgestellte Vorlage herunter.
-   – Geben Sie die Namen der Themen ein, die Sie ausschließen möchten. Sie müssen den Übereinstimmungs als exakt oder partiell angeben. Exakte Übereinstimmung bedeutet, dass Themen, die dem genauen Ausdruck entsprechen, ausgeschlossen werden. Partielle Übereinstimmung ist strenger und bedeutet, dass Themen, die den Begriff enthalten, ausgeschlossen werden. Wenn Sie beispielsweise *doc* als Namen des Themas eingeben, wird die *doc-Assembly* ausgeschlossen, wenn *docker* dies nicht tut. Bei Themen Namen wird die Groß-/Kleinschreibung nicht berücksichtigt.  
-        – Wählen Sie diese Option aus  **+**   , um die abgeschlossene CSV-Datei zu importieren. Wählen Sie dann **hochladen**aus. Wenn Ihre Datei erfolgreich verarbeitet wurde, wird ein grünes Häkchen angezeigt. Wählen Sie **Weiter** aus.</br>
+    b. **Themen nach Namen ausschließen**: Wenn Sie Themen haben, die den Benutzern nicht als Teil des Wissensnetzwerks angezeigt werden sollen.</br>
 
+    ![Themen ausschließen](../media/content-understanding/topics-excluded-by-name.png) </br>
+
+    #### <a name="how-to-exclude-topics-by-name"></a>So schließen Sie Themen nach Namen aus    
+
+    Wenn Sie Themen ausschließen müssen, wählen Sie nach dem auswählen **von Themen nach Namen ausschließen** **die Option CSV-Vorlage herunterladen**aus. Verwenden Sie die Excel. CSV-Vorlage, um eine Liste von Themen einzuschließen, die von den Ermittlungsergebnissen ausgeschlossen werden sollen.
+
+    ![Themen in CSV-Vorlage ausschließen](../media/content-understanding/csv1.png) </br>
+
+    Geben Sie in der CSV-Vorlage die folgenden Informationen zu den Themen ein, die Sie ausschließen möchten:
+
+    - **Name**: Geben Sie den Namen des Themas ein, das Sie ausschließen möchten. Sie können auf zwei Arten vorgehen:</br>
+        - Exakte Übereinstimmung: Sie können den genauen Namen oder das Akronym angeben (beispielsweise *contoso* oder *ATL*).</br>
+        - Partielle Übereinstimmung: Sie können alle Themen ausschließen, die ein bestimmtes Wort enthalten.  Beispielsweise schließt *Bogen* alle Themen mit dem Wort *Bogen* in ihm aus, wie *Bogen Kreis*, *Plasma Schweißen*oder *Schulungs Bogen*. Beachten Sie, dass die Themen, in denen der Text als Teil eines Wortes eingeschlossen ist, wie etwa die *Architektur*, nicht ausgeschlossen werden.</br>
+    - **Expansion (optional)**: Wenn Sie ein Akronym ausschließen möchten, geben Sie die Wörter ein, für die die Abkürzung steht.</br>
+    - **MatchType-Exact/Partial**: Geben Sie an, ob es sich bei dem von Ihnen eingegebenen Namen um einen *genauen* oder *partiellen* Übereinstimmungs handelt.</br>
+
+    Nachdem Sie die CSV-Vorlagendatei abgeschlossen und gespeichert haben, wählen Sie **Durchsuchen** aus, um Sie zu suchen und auszuwählen.
+    
+    Wählen Sie **Weiter** aus.</br>
 
 6. Auf der Seite " **Wer kann Themen sehen" und "wo Sie diese anzeigen können** " Konfigurieren Sie die Sichtbarkeit des Themas. In der Liste der Benutzer, die **Themen in der Wissensnetzwerk Einstellung anzeigen können** , wählen Sie aus, wer Zugriff auf Themen Details haben soll, wie beispielsweise hervorgehobene Themen, Themenkarten, Themen Antworten auf der Suche und Themenseiten. Sie können Folgendes auswählen:</br>
     a. **Jeder in Ihrer Organisation**</br>

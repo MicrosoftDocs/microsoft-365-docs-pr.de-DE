@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Holen Sie sich die neuesten hardwarebasierten Isolierungen. Verhindern Sie, dass aktuelle und neue Angriffe wie Exploits oder böswillige Links die Produktivität von Mitarbeitern und die Unternehmenssicherheit beeinträchtigen.
-ms.openlocfilehash: d0a89e8f8874c9ad298bf862384019b9e1ace0bf
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 32a8705255bf4ae4f0e3678de9cd812b64107cfd
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867428"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405541"
 ---
 # <a name="application-guard-for-office-public-preview-for-admins"></a>Application Guard für Office (Public Preview) für Administratoren
 
@@ -45,7 +45,7 @@ Microsoft Defender Application Guard für Office (Application Guard für Office)
 
 * **Windows 10**: Windows 10 Enterprise Edition, Client Build Version 2004 (20H1) Build 19041
 * **Office**: Office Beta Channel Build Version 2008 16.0.13212 oder höher
-* **Update Paket**: kumulative monatliche Sicherheitsupdates für Windows 10 [KB4566782](https://support.microsoft.com/help/4566782/windows-10-update-kb4566782) 
+* **Update Paket**: kumulative monatliche Sicherheitsupdates für Windows 10 [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756) 
 
 Ausführliche Systemanforderungen finden Sie unter [System Requirements for Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). Weitere Informationen zu Builds für Office-Insider-Vorschau finden Sie unter [Erste Schritte bei der Bereitstellung von Office-Insider-Builds](https://insider.office.com/business/deploy).
 
@@ -56,28 +56,9 @@ Ausführliche Systemanforderungen finden Sie unter [System Requirements for Micr
 
 ### <a name="enable-application-guard-for-office"></a>Aktivieren von Application Guard für Office
 
-1.  Herunterladen und Installieren von **kumulativen monatlichen Sicherheitsupdates für Windows 10 KB4566782**. 
+1.  Herunterladen und Installieren von **kumulativen monatlichen Sicherheitsupdates für Windows 10 KB4571756**. 
 
-2. Herunterladen und installieren [**von Application Guard für Office-Feature-Aktivierungspaket**](https://download.microsoft.com/download/e/4/c/e4c1180a-fcff-462a-8324-4151c44973a8/Windows%20Preview%20-%20WDAG%20Office%20070920%2001.msi). Dieses Paket installiert eine Gruppenrichtlinie namens "KB4559004 Issue 001 Preview" unter **Computer Benutzerkonfiguration\Administrative Templates**. Legen Sie diese Gruppenrichtlinie auf **aktiviert**fest.
-     ![Editor für lokale Gruppenrichtlinien](../../media/ag01-deploy.png)
-
-     ![KB4559004 Issue 001 Preview](../../media/ag02-deploy.png)
-
-    Sie können auch die folgenden reg-Schlüssel direkt festlegen: 
-    
-    ```
-    reg add HKLM\SYSTEM\CurrentControlSet\Policies\Microsoft\FeatureManagement\Overrides /v 3457697930 /t REG_DWORD /d 1 
-    ```
-    ```
-    reg add HKLM\SYSTEM\CurrentControlSet\Policies\Microsoft\FeatureManagement\Overrides /v 94539402 /t REG_DWORD /d 1 
-    ```
-    Führen Sie dann diesen PowerShell-Befehl aus: 
-    
-    ```powershell
-    Get-ScheduledTask -TaskName "ReconcileFeatures" -TaskPath "\Microsoft\Windows\Flighting\FeatureConfig\" | Start-ScheduledTask 
-    ```
-
-3.  Wählen Sie **Microsoft Defender Application Guard** unter Windows-Features aus, und klicken Sie auf **OK**. Durch Aktivieren des Application Guard-Features wird ein Systemneustart aufgefordert. Sie können entscheiden, ob Sie jetzt oder nach Schritt 4 einen Neustart durchführen möchten.
+2.  Wählen Sie **Microsoft Defender Application Guard** unter Windows-Features aus, und klicken Sie auf **OK**. Durch Aktivieren des Application Guard-Features wird ein Systemneustart aufgefordert. Sie können entscheiden, ob Sie jetzt oder nach Schritt 3 einen Neustart durchführen möchten.
 
     ![Dialogfeld "Windows-Features" mit AG](../../media/ag03-deploy.png)
     
@@ -87,7 +68,7 @@ Ausführliche Systemanforderungen finden Sie unter [System Requirements for Micr
     Enable-WindowsOptionalFeature -online -FeatureName Windows-Defender-ApplicationGuard 
     ```
 
-4.  Suchen Sie nach dem Microsoft Defender Application Guard im Managed Mode-Gruppenrichtlinien unter **Computer Configuration \\ Administrative Templates \\ Windows Components \\ Microsoft Defender Application Guard**. Aktivieren Sie diese Richtlinie, indem Sie den Wert unter Optionen als **2** oder **3** festlegen und dann **OK** oder über **nehmen**auswählen.
+3.  Suchen Sie nach dem Microsoft Defender Application Guard im Managed Mode-Gruppenrichtlinien unter **Computer Configuration \\ Administrative Templates \\ Windows Components \\ Microsoft Defender Application Guard**. Aktivieren Sie diese Richtlinie, indem Sie den Wert unter Optionen als **2** oder **3** festlegen und dann **OK** oder über **nehmen**auswählen.
 
     ![Aktivieren von AG im verwalteten Modus](../../media/ag04-deploy.png)
   
@@ -98,7 +79,7 @@ Ausführliche Systemanforderungen finden Sie unter [System Requirements for Micr
     <br>Wert: **2**
 
 
-5.  Starten Sie das System neu.
+4.  Starten Sie das System neu.
 
 ### <a name="set-diagnostics--feedback-to-send-full-data"></a>Festlegen der Diagnose & Feedback zum Senden vollständiger Daten
 

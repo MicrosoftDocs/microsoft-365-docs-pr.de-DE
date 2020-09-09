@@ -11,12 +11,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Erfahren Sie mehr über die Formularverarbeitung in Project Cortex.
-ms.openlocfilehash: dbea06cdf2dbb232a7ea48c78d7ea968dd18b9c0
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: 44ae5d9cbfbabc5615a751dba5f6c13290fc7b35
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612726"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405628"
 ---
 # <a name="form-processing-overview-preview"></a>Übersicht über die Formularverarbeitung (Vorschau)
 > [!Note]
@@ -29,9 +29,9 @@ Unternehmen erhalten häufig Rechnungen in großen Mengen und aus einer Vielzahl
 
 Sie können beispielsweise ein Formular Verarbeitungsmodell erstellen, mit dem alle Bestelldokumente identifiziert werden, die in die Dokumentbibliothek hochgeladen werden. Und aus jeder Bestellung können Sie bestimmte Daten extrahieren und anzeigen, die für Sie wichtig sind, beispielsweise *Bestellnummer*, *Datum*oder *Gesamtkosten*.
 
-Sie verwenden Beispieldateien, um Ihr Modell zu trainieren und die Informationen zu definieren, die aus dem Formular extrahiert werden sollen. Das Layout Ihres Dokuments wird durch Schulung Ihres Modells erlernt. Für die ersten Schritte benötigen Sie nur fünf Formular Dokumente. Im AI-Gebäude werden Ihre Beispieldateien für Schlüssel-Wert-Paare analysiert, und Sie können auch manuell erkennen, welche möglicherweise nicht erkannt wurden.  Mit AI Builder können Sie die Genauigkeit Ihres Modells in ihren Beispieldateien testen.
+Sie verwenden Beispieldateien, um Ihr Modell zu trainieren und die Informationen zu definieren, die aus dem Formular extrahiert werden sollen. Das Layout Ihres Dokuments wird durch Schulung Ihres Modells erlernt. Für die ersten Schritte benötigen Sie nur fünf Formular Dokumente. AI Builder analysiert Ihre Beispieldateien auf Schlüssel-Wert-Paare, und Sie können auch manuell erkennen, welche möglicherweise nicht erkannt wurden.  Mit AI Builder können Sie die Genauigkeit Ihres Modells in ihren Beispieldateien testen.
 
-Nachdem Sie Ihr Modell trainiert und veröffentlicht haben, erstellen Sie einen Power- [Automatisierungs Fluss](https://docs.microsoft.com/power-automate/getting-started) , der ausgeführt wird, wenn eine Datei in die SharePoint-Dokumentbibliothek hochgeladen wird und Daten extrahiert, die im Modell identifiziert wurden. Die extrahierten Daten werden in den Spalten in der Dokumentbibliotheksansicht Ihres Modells angezeigt.
+Nachdem Sie Ihr Modell trainiert und veröffentlicht haben, erstellen Sie einen Power- [Automatisierungs Fluss](https://docs.microsoft.com/power-automate/getting-started), um ihn zu verwenden. Der Fluss wird ausgeführt, wenn eine Datei in die SharePoint-Dokumentbibliothek hochgeladen wird und Daten extrahiert, die im Modell identifiziert wurden. Die extrahierten Daten werden in den Spalten in der Dokumentbibliotheksansicht Ihres Modells angezeigt.
 
 Ein Office 365 Administrator muss die [Formularverarbeitung](https://docs.microsoft.com/microsoft-365/contentunderstanding/set-up-content-understanding?view=o365-worldwide#to-set-up-content-understanding) für die SharePoint-Dokumentbibliothek aktivieren, damit Benutzer [ein Formular Verarbeitungsmodell](create-a-form-processing-model.md) in dieser erstellen können.
 

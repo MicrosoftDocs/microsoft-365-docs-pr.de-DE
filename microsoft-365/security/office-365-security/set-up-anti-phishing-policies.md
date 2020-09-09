@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die Anti-Phishing-Richtlinien informieren, die in Exchange Online Protection (EoP) und Office 365 Advanced Threat Protection (Office 365 ATP) zur Verfügung stehen.
-ms.openlocfilehash: 7118bca15102fd52e7825ee873187fa11d9fc0f9
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: a68baf8f2598b8ca0cd13e45d18919ecfdccdacc
+ms.sourcegitcommit: 294a51ef0ff48dddb659c602e047d7fd98f91172
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308195"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47407928"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-Phishing-Richtlinien in Microsoft 365
 
@@ -106,21 +106,23 @@ Die folgenden spoofeinstellungen stehen unter Anti-Phishing-Richtlinien und ATP-
     - [Verwalten von isolierten Nachrichten und Dateien als Administrator in Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Suchen und Freigeben von isolierten Nachrichten als Benutzer in Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-- Nicht **authentifizierter Absender**: siehe die Beschreibung im nächsten Abschnitt.
+- Nicht **authentifizierter Absender**: Informationen finden Sie im nächsten Abschnitt.
 
 ### <a name="unauthenticated-sender"></a>Nicht authentifizierter Absender
 
 Die nicht authentifizierte Absender Identifikation ist Teil der [spoofeinstellungen](#spoof-settings) , die in Anti-Phishing-Richtlinien und ATP-AntiPhishing-Richtlinien zur Verfügung stehen, wie im vorherigen Abschnitt beschrieben.
 
-Die Einstellung nicht **authentifizierter Absender** aktiviert oder deaktiviert die Unbekannte Absender Identifikation in Outlook. Insbesondere gilt:
+Die Einstellung nicht **authentifizierter Absender** aktiviert oder deaktiviert die nicht authentifizierte Absender Identifikation in Outlook. Insbesondere gilt:
 
-- Dem Foto des Absenders wird ein Fragezeichen (?) hinzugefügt, wenn die Nachricht keine SPF-oder DKIM-Prüfungen übergibt **und** die Nachricht nicht DMARC oder die [kombinierte Authentifizierung](email-validation-and-authentication.md#composite-authentication)übergibt.
+- Dem Foto des Absenders wird ein Fragezeichen (?) hinzugefügt, wenn die Nachricht keine SPF-oder DKIM-Prüfungen übergibt **und** die Nachricht nicht DMARC oder die [kombinierte Authentifizierung](email-validation-and-authentication.md#composite-authentication)übergibt. Durch Deaktivieren der nicht authentifizierten Absender Identifikation wird verhindert, dass das Fragezeichen dem Foto des Absenders hinzugefügt wird.
 
-- Das Via-Tag (Chris@contoso.com <u>über</u> Michelle@fabrikam.com) wird hinzugefügt, wenn die Domäne in der von-Adresse (der Absender der Nachricht, der in e-Mail-Clients angezeigt wird) sich von der Domäne in der DKIM-Signatur oder der **e-Mail-** Adresse unterscheidet. Weitere Informationen zu diesen Adressen finden Sie unter [Übersicht über Standards für e-Mail-Nachrichten](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)
+- Das Via-Tag (Chris@contoso.com <u>über</u> Michelle@fabrikam.com) wird hinzugefügt, wenn die Domäne in der von-Adresse (der Absender der Nachricht, der in e-Mail-Clients angezeigt wird) sich von der Domäne in der DKIM-Signatur oder der **e-Mail-** Adresse unterscheidet. Weitere Informationen zu diesen Adressen finden Sie unter [Übersicht über Standards für e-Mail-Nachrichten](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
 
-Um zu verhindern, dass diese Bezeichner Nachrichten von bestimmten Absendern hinzugefügt werden, stehen Ihnen die folgenden Optionen zur Verfügung:
+  Durch Deaktivieren der nicht authentifizierten Absender Identifikation wird nicht verhindert, dass das via-Tag hinzugefügt wird, wenn sich die Domäne in der von-Adresse von der Domäne in der DKIM-Signatur oder der e-Mail-Adresse unterscheidet.
 
-- Zulassen, dass Absender Spoofing in der Spoof Intelligence-Richtlinie vortäuscht. Anweisungen finden Sie unter [configure Spoof Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
+Um zu verhindern, dass das Fragezeichen oder das über-Tag zu Nachrichten von bestimmten Absendern hinzugefügt wird, stehen Ihnen die folgenden Optionen zur Verfügung:
+
+- Zulassen, dass Absender Spoofing in der Spoof Intelligence-Richtlinie vortäuscht. Durch diese Aktion wird verhindert, dass das via-Tag in Nachrichten vom Absender angezeigt wird, wenn die nicht authentifizierte Absender Identifikation deaktiviert ist. Anweisungen finden Sie unter [configure Spoof Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
 
 - [Konfigurieren Sie die e-Mail-Authentifizierung](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) für die Absenderdomäne.
   
