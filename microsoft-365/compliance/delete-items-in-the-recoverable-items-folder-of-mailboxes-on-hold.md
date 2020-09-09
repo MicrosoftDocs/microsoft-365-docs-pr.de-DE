@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: Erfahren Sie, wie Administratoren Elemente im Ordner "Wiederherstellbare Elemente" eines Benutzers für ein Exchange Online Postfach löschen können, selbst wenn das Postfach legal aufbewahrt wird.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 52cfe237bb05bc151058a41914af5725bdacee18
-ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
+ms.openlocfilehash: d0983a3ce10a3980f23af68736acac1382ef938f
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47321962"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405466"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>Löschen von Elementen im Ordner „Wiederherstellbare Elemente“ für cloudbasierte aufzubewahrende Postfächer
 
@@ -292,7 +292,7 @@ Im folgenden finden Sie eine Übersicht über den Prozess zum Suchen und Lösche
 
 3. Verwenden Sie das Cmdlet **New-ComplianceSearch** (in Security & Compliance Center PowerShell), oder verwenden Sie das Inhaltssuche-Tool im Compliance Center, um eine Inhaltssuche zu erstellen, die Elemente aus dem Ordner "Wiederherstellbare Elemente" des Zielbenutzers zurückgibt. Sie können dies tun, indem Sie die Ordner-Nr in der Suchabfrage für alle Unterordner, die Sie durchsuchen möchten, hinzufügen. Die folgende Abfrage gibt beispielsweise alle Nachrichten in den Unterordnern purges und eDiscoveryHolds zurück:
 
-   ```powershell
+   ```text
    folderid:<folder ID of Purges subfolder> OR folderid:<folder ID of DiscoveryHolds subfolder>
    ```
 
@@ -307,8 +307,15 @@ Im folgenden finden Sie eine Übersicht über den Prozess zum Suchen und Lösche
    New-ComplianceSearchAction -SearchName "RecoverableItems" -Purge -PurgeType HardDelete
    ```
 
-   > [!NOTE]
-   > Es werden maximal 10 Elemente (pro Postfach) gelöscht, wenn Sie den vorherigen Befehl ausführen. Das bedeutet, dass Sie den Befehl möglicherweise mehrmals ausführen müssen, `New-ComplianceSearchAction -Purge` um die Elemente zu löschen, die Sie im Ordner "Wiederherstellbare Elemente" löschen möchten.
+5. Es werden maximal 10 Elemente pro Postfach gelöscht, wenn Sie den vorherigen Befehl ausführen. Das bedeutet, dass Sie den Befehl möglicherweise mehrere Male ausführen müssen, `New-ComplianceSearchAction -Purge` um alle Elemente zu löschen, die Sie im Ordner "Wiederherstellbare Elemente" löschen möchten. Um zusätzliche Elemente zu löschen, müssen Sie zuerst die vorherige Säuberungsaktion für die Konformitäts Suche entfernen. Hierzu führen Sie das Cmdlet aus `Remove-ComplianceSearchAction` . Um beispielsweise die Löschaktion zu löschen, die im vorherigen Schritt ausgeführt wurde, führen Sie den folgenden Befehl aus:
+
+   ```powershell
+   Remove-ComplianceSearchAction "RecoverableItems_Purge"
+   ```
+
+   Anschließend können Sie eine neue Löschaktion für die Konformitäts Suche erstellen, um weitere Elemente zu löschen. Sie müssen jede Löschaktion löschen, bevor Sie ein neues erstellen.
+
+   Wenn Sie eine Liste der Compliance-Suchaktionen abrufen möchten, können Sie das `Get-ComplianceSearchAction` Cmdlet ausführen. Löschaktionen werden durch `_Purge` Anfügen an den Such Namen identifiziert.
 
 ### <a name="verify-that-items-were-deleted"></a>Überprüfen, ob Elemente gelöscht wurden
 

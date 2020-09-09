@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In diesem Artikel wird beschrieben, wie Sie mit der Verwendung von Advanced eDiscovery in Microsoft 365 beginnen. Nachdem Sie einige kurze Schritte ausgeführt haben, ist das erweiterte eDiscovery-Tooleinsatz fähig. Der erste Schritt besteht darin, einen Fall zu erstellen und dann erweiterte eDiscovery-Funktionen und-Funktionen zu verwenden.
-ms.openlocfilehash: cc593009337a9b78285fbcf98ad78dbf1899bce1
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 47647c2f4f944812fa066be272a39ded77099c75
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357505"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405419"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>Erste Schritte mit Advanced eDiscovery
 
@@ -141,7 +141,7 @@ Um den Einstieg in die Verwendung von Advanced eDiscovery zu erleichtern, finden
 
    - Die Daten im Exchange-Postfach des Verwalters, im OneDrive-Konto und in allen Microsoft Teams-oder Jammer Gruppen, in denen die Depotbank Mitglied ist, können in dem Fall als Freiheitsentzug-Daten "gekennzeichnet" werden.
   
-   - Depotdaten werden erneut indiziert (durch einen Prozess mit dem Namen *Advanced Indexing*). Dies hilft beim Optimieren der Suche im nächsten Schritt.
+   - Depotdaten werden neu indiziert (durch einen Prozess mit dem Namen *Advanced Indexing*). Dies hilft beim Optimieren der Suche im nächsten Schritt.
   
    - Sie können Depotdaten aufbewahren. Dadurch werden Daten beibehalten, die für den Fall während der Untersuchung relevant sein können.
   
