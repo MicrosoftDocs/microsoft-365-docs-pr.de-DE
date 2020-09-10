@@ -1,0 +1,45 @@
+- name: Microsoft Bookings
+  href: bookings-overview.md
+  items:
+    - name: Setup
+      items:
+        - name: Zugriff auf Buchungen erhalten
+          href: get-access.md
+        - name: Eingeben Ihrer Unternehmensinformationen
+          href: enter-business-information.md
+        - name: Definieren Ihrer Dienstangebote
+          href: define-service-offerings.md
+        - name: Planen von Geschäftsschließungen und Zeitaufwand
+          href: schedule-closures-time-off-vacation.md
+        - name: Festlegen Ihrer Planungsrichtlinien
+          href: set-scheduling-policies.md
+        - name: Anpassen und Veröffentlichen Ihrer Buchungsseite
+          href: customize-booking-page.md
+        - name: Manuelle Buchung erstellen
+          href: create-a-manual-booking.md
+        - name: Planen von Geschäftsschließungen und Zeitaufwand
+          href: schedule-closures-time-off-vacation.md
+        - name: Mitarbeiterstunden
+          href: employee-hours.md
+        - name: Hinzufügen von benutzerdefinierten und erforderlichen Fragen zur Buchungsseite
+          href: add-questions.md
+        - name: Festlegen der Pufferzeit
+          href: set-buffer-time.md
+        - name: Metriken und Aktivitätsverfolgung
+          href: metrics-and-activity-tracking.md
+        - name: Festlegen von Sprache und Zeitzone
+          href: set-language-time-zones.md
+    - name: Abrufen der App "Buchungen"
+      href: get-bookings-app.md
+    - name: Reservierungen-APP und virtuelle Besuche in Microsoft Teams
+      href: 'https://docs.microsoft.com/en-us/microsoftteams/bookings-app-admin?toc=/microsoft-365/bookings/toc.json&bc=/microsoft-365/bookings/breadcrumb/toc.json'
+    - name: Vergleichsdiagramm-webapp versus Microsoft Teams-App
+      href: comparison-chart.md
+    - name: Löschen eines Buchungs Kalenders
+      href: delete-calendar.md
+    - name: Aktivieren oder Deaktivieren von Microsoft-Buchungen
+      href: turn-bookings-on-or-off.md
+    - name: Berichtsinformationen für Microsoft-Buchungen
+      href: reporting-info.md
+    - name: Häufig gestellte Fragen zu Microsoft-Buchungen (FAQ)
+      href: bookings-faq.md

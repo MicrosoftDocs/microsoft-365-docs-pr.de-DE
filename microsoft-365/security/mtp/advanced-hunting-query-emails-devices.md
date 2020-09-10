@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: ccb7b049ee3bc2aa25847886b57341ae936d20b9
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: c24f5891573b8541a97a35d228c57642766fe4a0
+ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649343"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47419144"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Jagen nach Bedrohungen auf Geräten, e-Mails, Apps und Identitäten
 
@@ -62,9 +62,6 @@ EmailEvents
 
 Sie können Kontonamen und andere Kontoinformationen abrufen, indem Sie die [IdentityInfo-Tabelle](advanced-hunting-identityinfo-table.md)zusammenführen oder beitreten. Die folgende Abfrage ruft die Liste der Phishing-und Schadsoftware-Erkennungen in der [EmailEvents-Tabelle](advanced-hunting-emailevents-table.md) ab und verknüpft diese Informationen dann mit der `IdentityInfo` Tabelle, um detaillierte Informationen zu den einzelnen Empfängern zu erhalten. 
 
->[!Tip]
-> Diese Abfrage verwendet, `kind=inner` um einen [Inner Join](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor)anzugeben, der die Deduplizierung von linksseitigen Werten oder die Empfänger-e-Mail-Adressen verhindert.
-
 ```kusto
 EmailEvents
 | where Timestamp > ago(7d)
@@ -81,6 +78,9 @@ Department, City, Country
 
 ### <a name="get-device-information"></a>Abrufen von Geräteinformationen
 Das [Advanced Hunting-Schema](advanced-hunting-schema-tables.md) stellt umfangreiche Geräteinformationen in verschiedenen Tabellen zur Verfügung. Beispielsweise bietet die [deviceInfo-Tabelle](advanced-hunting-deviceinfo-table.md) umfassende Geräteinformationen basierend auf Ereignisdaten, die regelmäßig aggregiert werden. Diese Abfrage verwendet die `DeviceInfo` Tabelle, um zu überprüfen, ob sich ein potenziell gefährdeter Benutzer ( `<account-name>` ) an einem Gerät angemeldet hat, und listet dann die Warnungen auf, die auf diesen Geräten ausgelöst wurden.
+
+>[!Tip]
+> Diese Abfrage verwendet, `kind=inner` um einen [Inner Join](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor)anzugeben, der die Deduplizierung von Werten für linke Seiten verhindert `DeviceId` .
 
 ```kusto
 DeviceInfo

@@ -3,7 +3,7 @@ title: Schützen Ihrer globalen Administratorkonten in Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/15/2020
+ms.date: 09/08/2020
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Dieser Artikel enthält Informationen zum Schutz des globalen Administratorzugriffs auf Ihr Microsoft 365-Abonnement.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 08e0960e7150395b2997dbd9ff0a1818822e17e2
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: fb8f85b3ee5c0f72c2dd93517e68784459c32e7e
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695961"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416386"
 ---
 # <a name="protect-your-microsoft-365-global-administrator-accounts"></a>Schützen Ihrer globalen Administratorkonten in Microsoft 365
 
@@ -43,13 +43,14 @@ Microsoft bietet Funktionen zum Schutz Ihrer Organisation, Sie sind jedoch nur w
     
 2. Konfigurieren Sie die mehrstufige Authentifizierung für ihre dedizierten globalen Administratorkonten von Microsoft 365, und verwenden Sie die stärkste Form der sekundären Authentifizierung.
     
-> [! Hinweise] Obwohl sich dieser Artikel auf globale Administratorkonten konzentriert, sollten Sie berücksichtigen, ob zusätzliche Konten mit umfangreichen Berechtigungen für den Zugriff auf die Daten in Ihrem Abonnement, wie eDiscovery-Administrator-oder Sicherheits-oder Kompatibilitäts Administratorkonten, auf die gleiche Weise geschützt werden sollten. <br > Es kann ein globales Administratorkonto erstellt werden, ohne dass Lizenzen hinzugefügt werden.
+> [!Note]
+> Obwohl sich dieser Artikel auf globale Administratorkonten konzentriert, sollten Sie berücksichtigen, ob zusätzliche Konten mit umfangreichen Berechtigungen für den Zugriff auf die Daten in Ihrem Abonnement wie eDiscovery-Administrator-oder Sicherheits-oder Compliance-Administratorkonten auf die gleiche Weise geschützt werden sollten. <br > Es kann ein globales Administratorkonto erstellt werden, ohne dass Lizenzen hinzugefügt werden.
   
-## <a name="step-1-create-dedicated-microsoft-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>Schritt 1. Erstellen Dedizierter globaler Administratorkonten von Microsoft 365, die nur bei Bedarf verwendet werden
+## <a name="step-1-create-dedicated-microsoft-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>Schritt 1: Erstellen Dedizierter globaler Administratorkonten von Microsoft 365, die nur bei Bedarf verwendet werden
 
 Es gibt relativ wenige administrative Aufgaben wie das Zuweisen von Rollen zu Benutzerkonten, die globale Administratorrechte erfordern. Führen Sie daher die folgenden Schritte aus, anstatt alltägliche Benutzerkonten zu verwenden, denen die globale Administratorrolle zugewiesen wurde:
   
-1. Bestimmen Sie die Gruppe von Benutzerkonten, denen die globale Administratorrolle zugewiesen wurde. Sie können dies mit dem Befehl Azure Active (Azure AD) Directory PowerShell for Graph tun:
+1. Bestimmen Sie die Gruppe von Benutzerkonten, denen die globale Administratorrolle zugewiesen wurde. Sie können dies mit dem folgenden Azure Active (Azure AD) Directory PowerShell for Graph-Befehl tun:
   
   ```powershell
   Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
@@ -120,15 +121,15 @@ Wenn Sie eine größere Organisation sind, die ein Microsoft 365-Hybrid Identit�
     
 Wenn die Sicherheitsinfrastruktur für die gewünschte stärkere Überprüfungsmethode für Microsoft 365 MFA nicht vorhanden und funktionsfähig ist, wird dringend empfohlen, dass Sie dedizierte globale Administratorkonten mit MFA mithilfe der Microsoft Authenticator-APP, eines Telefonanrufs oder eines Textnachrichten Überprüfungscodes konfigurieren, der an ein Smartphone für Ihre globalen Administratorkonten als Interims Sicherheitsmaßnahme gesendet wird. Lassen Sie Ihre dedizierten globalen Administratorkonten nicht ohne den zusätzlichen Schutz, der von MFA bereitgestellt wird.
   
-Weitere Informationen finden Sie unter [Planen der mehrstufigen Authentifizierung für Microsoft 365-Bereitstellungen](https://docs.microsoft.com/office365/admin/security-and-compliance/multi-factor-authentication-plan).
+Weitere Informationen finden Sie unter [MFA für Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365).
   
 Informationen zum Herstellen einer Verbindung mit Microsoft 365-Diensten mit MFA und PowerShell finden Sie in den folgenden Artikeln:
 
 - [PowerShell für Microsoft 365 für Benutzerkonten, Gruppen und Lizenzen](connect-to-microsoft-365-powershell.md)
 - [Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-powershell-install)
-- [Exchange Online](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell?view=exchange-ps#connect-to-exchange-online-powershell-by-using-mfa)
+- [Exchange Online](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-using-mfa)
 - [SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online#to-connect-with-multifactor-authentication-mfa)
-- [Skype for Business Online] Manage-Skype-for-Business-Online-with-Microsoft-365-PowerShell # Connect-using-a-Skype-for-Business-Online-Administrator-Account-with-Multi-Factor-Authentication)
+- [Skype for Business Online](manage-skype-for-business-online-with-microsoft-365-powershell.md#connect-using-a-skype-for-business-online-administrator-account-with-multi-factor-authentication)
 
 ## <a name="additional-protections-for-enterprise-organizations"></a>Zusätzliche Schutzmaßnahmen für Unternehmensorganisationen
 

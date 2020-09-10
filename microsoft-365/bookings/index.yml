@@ -1,0 +1,41 @@
+### YamlMime:Hub
+title: Microsoft Bookings
+summary: Hier erfahren Sie, wie Sie Microsoft-Buchungen einrichten, um Kunden auf Termin Basisdienste bereitzustellen.
+brand: m365
+metadata:
+  title: Microsoft Bookings
+  description: Hier erfahren Sie, wie Sie Microsoft-Buchungen einrichten, um Kunden auf Termin Basisdienste bereitzustellen.
+  ms.service: bookings
+  ms.topic: hub-page
+  author: dmaguire
+  ms.author: dmaguire
+  manager: serdars
+  audience: Admin
+  ms.date: 09/04/2020
+  ms.openlocfilehash: 8c7158c72700a7db866051a4de10bbc890ad4478
+  ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 09/09/2020
+  ms.locfileid: "47419663"
+additionalContent:
+  sections:
+  - items:
+    - title: Was ist Microsoft-Buchungen?
+      summary: Planen und Verwalten von Terminen mit einem webbasierten Buchungskalender und einer APP, einschließlich Outlook-Integration für Ihre Mitarbeiter und automatisierte Benachrichtigungs-e-Mails.
+      url: bookings-overview.md
+    - title: Eingeben Ihrer Unternehmensinformationen
+      summary: Geben Sie Ihre Seite über uns erstellen ein, einschließlich Firmenname, Adresse, Telefonnummer, Website-URL, Logo und Geschäftszeiten in Microsoft-Buchungen.
+      url: enter-business-information.md
+    - title: Abrufen der App "Buchungen"
+      summary: Ändern Sie das Farbdesign, und legen Sie fest, wie Ihre externe Buchungsseite für den Kunden aussieht.
+      url: customize-booking-page.md
+    - title: Hinzufügen von Mitarbeitern zu Buchungen
+      summary: Erstellen Sie Ihre Mitarbeiterliste, und verwalten Sie Mitarbeiterdetails wie Name, Telefonnummer und e-Mail-Adresse.
+      url: add-staff.md
+    - title: Planen von Betriebsferien, arbeitsfreier Zeit und Urlaubszeit
+      summary: Planen von Office-Schließungen und Abwesenheit von Mitarbeitern aus dem Buchungskalender, sodass Mitarbeiter während der angegebenen Zeiträume als nicht verfügbar markiert sind.
+      url: schedule-closures-time-off-vacation.md
+    - title: Arbeitszeiten von Mitarbeitern in Microsoft-Buchungen
+      summary: Festlegen von Arbeitszeiten und Verfügbarkeit von Mitarbeitern in Microsoft-Buchungen.
+      url: employee-hours.md
