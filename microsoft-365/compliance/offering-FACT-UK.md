@@ -3,7 +3,7 @@ title: Partnerverbund gegen Copyright Diebstahl (Fakt)
 description: Microsoft Azure wurde die Zertifizierung aus dem Verbund gegen Copyright Theft in Großbritannien erreicht.
 keywords: Microsoft 365, Compliance, Angebote
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e8d7ce93438ce3699dd30ac8b5f0f8818045eaf5
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: acc0ab379cdd93d873cc0b1eb2f0d729eff251c8
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066398"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416111"
 ---
 # <a name="federation-against-copyright-theft-fact"></a>Partnerverbund gegen Copyright Diebstahl (Fakt)
 

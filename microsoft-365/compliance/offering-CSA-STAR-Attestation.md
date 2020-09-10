@@ -3,7 +3,7 @@ title: Cloud Security Alliance (CSA) STAR-Nachweis
 description: Azure und Intune erhielten auf der Basis einer unabhängigen Prüfung den Cloud Security Alliance STAR-Nachweis.
 keywords: Microsoft 365, Compliance, Angebote
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 0db45966c1473d27854ff4f695d1d9696435d075
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: 33fd2cef596144c48dcc76594d8d466e09481dd4
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254404"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415615"
 ---
 # <a name="cloud-security-alliance-csa-star-attestation"></a>Cloud Security Alliance (CSA) STAR-Nachweis
 
@@ -45,7 +45,7 @@ Microsoft Azure und Microsoft Intune erhielten den CSA STAR-Nachweis. Der STAR-N
 - Microsoft Graph
 - Intune
 - Microsoft Managed Desktop
-- Power Automate-Clouddienst (ehemalig Microsoft Flow) als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan bzw. einer -Anwendungssuite enthalten
+- Power Automate-Clouddienst (ehemals Microsoft Flow) als eigenständiger Dienst oder in einem Office 365- oder Dynamics 365-Plan bzw. -Anwendungssuite enthalten
 - PowerApps-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan oder einer -Anwendungssuite enthalten 
 - Power BI
 

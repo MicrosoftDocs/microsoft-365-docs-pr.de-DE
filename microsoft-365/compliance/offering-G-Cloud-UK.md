@@ -3,7 +3,7 @@ title: Vereinigtes Königreich Government-Cloud (G-Cloud)
 description: Der Crown Commercial Service hat die Microsoft Cloud Services-Klassifizierung in Government Cloud v. 6 erneuert.
 keywords: Microsoft 365, Compliance, Angebote
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6392c591ab5db083f00da97c50e6c388e8656815
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 2d0498ab48190758f6f21f538eefe131fb1edd70
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560772"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416051"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>Vereinigtes Königreich Government-Cloud (G-Cloud)
 
@@ -39,7 +39,7 @@ Die Benennung von Microsoft-Diensten für den digitalen Marktplatz bedeutet, das
 
  [14 Cloud-Sicherheitssteuerelemente für die britische Cloud mithilfe von Microsoft Azure](https://azure.microsoft.com/resources/14-cloud-security-controls-for-uk-cloud-using-microsoft-azure/) bietet Kunden Strategien, um ihre Dienste in Azure zu verlagern und ihren Verpflichtungen im Vereinigten Königreich nachzukommen, die von der CESG/NSCS-Aufgabe erfüllt sind. Das Whitepaper bietet eine Übersicht darüber, wie Azure verwendet werden kann, um die 14 in den Cloud-Sicherheitsprinzipalen beschriebenen Steuerelemente zu beheben, und erläutert, wie sich Kunden schneller umstellen und mehr erreichen können, während Sie Microsoft Azure Dienste einführen.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Microsoft Cloud App Security

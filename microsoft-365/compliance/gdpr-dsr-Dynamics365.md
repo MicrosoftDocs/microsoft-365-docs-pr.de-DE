@@ -3,7 +3,7 @@ title: Auskunftsrecht betroffener Personen für Dynamics 365 im Rahmen der DSGVO
 description: Lernen Sie, wie Sie personenbezogene Daten finden und behandeln und wie Sie auf DSR- und CCPA-Anforderungen von Dynamics 365-Kunden reagieren können.
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO, CCPA
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -18,12 +18,12 @@ hideEdit: true
 ms.custom:
 - seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 04ecbd6e52a56ea83f3b2e2eaebd02de20cfbe52
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: a5237f845239414a9b26a6da7028e323a11ea850
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817664"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416599"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>Auskunftsrecht betroffener Personen für Dynamics 365 im Rahmen der DSGVO und CCPA
 

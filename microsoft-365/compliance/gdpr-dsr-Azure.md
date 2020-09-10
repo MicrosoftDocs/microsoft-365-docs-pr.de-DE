@@ -3,7 +3,7 @@ title: Anträge betroffener Personen für Azure im Rahmen der DSGVO und des CCPA
 description: Erlernen Sie die Verwendung von Microsoft-Produkten, -Diensten und -Verwaltungstools, um nach personenbezogenen Daten zu suchen und auf DSRs zu reagieren.
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO, CCPA
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -17,12 +17,12 @@ ms.collection:
 hideEdit: true
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 47aca22a5766b39bce513772874bca56de3420c5
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: b22baa48293e48567d801227996d080e8ee1cce2
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035453"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416649"
 ---
 # <a name="azure-data-subject-requests-for-the-gdpr-and-ccpa"></a>Anträge betroffener Personen für Azure im Rahmen der DSGVO und des CCPA
 
@@ -75,12 +75,12 @@ Anträge betroffener Personen bezüglich eines MSA-Kontos selbst, **unabhängig 
 
 ### <a name="executing-dsrs-against-customer-data"></a>Abwickeln von Anträgen betroffener Personen bezüglich Kundendaten
 
-Microsoft bietet die Möglichkeit, auf bestimmte Kundendaten über das Azure-Portal und auch direkt über bereits vorhandene Anwendungsprogrammierschnittstellen (APIs) oder Benutzeroberflächen (UI) für bestimmte Dienste (auch bezeichnet als *Produkterfahrungen*) zuzugreifen und diese zu löschen und zu exportieren. Details zu diesen Produkterfahrungen finden Sie in der jeweiligen Referenzdokumentation des entsprechenden Dienstes.
+Microsoft bietet die Möglichkeit, auf bestimmte Kundendaten über das Azure-Portal und auch direkt über bereits vorhandene Anwendungsprogrammierschnittstellen (APIs) oder Benutzeroberflächen (UI) für bestimmte Dienste (auch bezeichnet als *Produkterfahrungen*) zuzugreifen und diese zu löschen und zu exportieren. Details zu diesen Produkterfahrungen finden Sie in der jeweiligen Referenzdokumentation der entsprechenden Dienste.
 
 >[!IMPORTANT]  
-> Dienste, die produktinterne DSRs unterstützen, müssen direkt über die API oder die Benutzeroberfläche unter Beschreibung zutreffender CRUD („create, read, update, delete“)-Operationen angesprochen werden. Folglich muss die Ausführung von DSRs innerhalb eines bestimmten Diensts zusätzlich zur Ausführung eines DSR innerhalb des Azure-Portals durchgeführt werden, um eine Anforderung für einen gegebenes Datensubjekt vollständig auszuführen. Weitere Details finden Sie in der Referenzdokumentation der einzelnen Dienste.
+> Dienste, die produktinterne Anträge betroffener Personen unterstützen, erfordern die direkte Verwendung der Anwendungsprogrammierschnittstelle (API) oder der Benutzeroberfläche (UI) des Dienstes, die anwendbare CRUD-Vorgänge (Erstellen, Lesen, Aktualisieren und Löschen) beschreiben. Aus diesem Grund muss die Ausführung von Anträgen betroffener Personen in einem bestimmten Dienst zusätzlich zur Ausführung eines Antrags einer betroffenen Person im Azure-Portal erfolgen, damit ein Antrag einer bestimmten betroffenen Person vollständig abgeschlossen werden kann. Weitere Details finden Sie in der Referenzdokumentation der jeweiligen Dienste.
 
-### <a name="step-1-discover"></a>Schritt 1: Ermittlung
+### <a name="step-1-discover"></a>Schritt 1: Ermittlung
 
 Der erste Schritt bei der Reaktion auf einen Antrag einer betroffenen Person besteht darin, die personenbezogenen Daten zu finden, die Gegenstand des Antrags sind. Dieser erste Schritt – Suchen und Überprüfen der betroffenen personenbezogenen Daten – ist nützlich, um festzustellen, ob ein Antrag einer betroffenen Person die Anforderungen Ihrer Organisation bezüglich für die Anerkennung oder Ablehnung eines solchen Antrags erfüllt. So könnten Sie beispielsweise nach dem Suchen und Überprüfen der betroffenen personenbezogenen Daten zu dem Schluss kommen, dass der Antrag nicht die Anforderungen Ihrer Organisation erfüllt, da er sich auf die Rechte und Freiheiten anderer auswirken kann.
 
@@ -114,7 +114,7 @@ Microsoft bietet die Möglichkeit, Kundendaten direkt über bereits vorhandene A
 
 ### <a name="step-2-access"></a>Schritt 2: Zugriff
 
-Nachdem Sie Kundendaten gefunden haben, die persönliche Daten enthalten, die potenziell für DSR in Frage kommen können, müssen Sie und Ihre Organisation entscheiden, welche Daten dem Datensubjekt zur Verfügung gestellt werden sollen. Sie können ihnen eine Kopie des tatsächlichen Dokuments, eine entsprechend redigierte Version oder einen Screenshot der Teile bereitstellen, die Sie für die Freigabe als angemessen erachtet haben. Sie müssen für jede dieser Antworten auf eine Zugriffsanforderung eine Kopie des Dokuments oder eines anderen Elements abrufen, das die infrage kommenden Daten enthält.
+Nachdem Sie Kundendaten mit personenbezogenen Daten gefunden haben, die möglicherweise mit einem Antrag einer betroffenen Person zusammenhängen, liegt es an Ihnen und Ihrer Organisation, zu entscheiden, welche Daten Sie der betroffenen Person zur Verfügung stellen. Sie können ihr eine Kopie des tatsächlichen Dokuments, eine entsprechend geschwärzte Version oder einen Screenshot mit dem Bereich, den Sie als zur Freigabe geeignet eingestuft haben, zur Verfügung stellen. Bei jeder dieser Reaktionen auf eine Zugriffsanforderung müssen Sie eine Kopie des Dokuments oder des anderen Elements, das die entsprechenden Daten enthält, abrufen.
 
 Wenn Sie der betroffenen Person eine Kopie zur Verfügung stellen, müssen Sie personenbezogene Daten zu anderen betroffenen Personen und sämtliche vertraulichen Informationen möglicherweise entfernen oder schwärzen.
 

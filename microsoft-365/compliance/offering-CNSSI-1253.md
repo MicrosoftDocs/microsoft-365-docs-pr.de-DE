@@ -3,7 +3,7 @@ title: Ausschuss für nationale Sicherheitssysteme – Anweisung Nr. 1253 (CNSSI
 description: Azure Government entspricht CNSSI 1253-Sicherheitskontrollen für US-Regierungssysteme, die eine hohe Vertraulichkeit, hohe Integrität und hohe Verfügbarkeit erfordern.
 keywords: Microsoft 365, Compliance, Angebote
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 59bb5fd9e692cc5c69a4baf1cdc14cc200dba7a6
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: d84f31f38fb8e4ff71de067ca30abc39b58704fc
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066268"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415596"
 ---
 # <a name="committee-on-national-security-systems-instruction-no-1253-cnssi-1253"></a>Ausschuss für nationale Sicherheitssysteme – Anweisung Nr. 1253 (CNSSI 1253)
 
@@ -43,7 +43,7 @@ Die Compliance von Azure Government mit den anspruchsvollen Anforderungen an CNS
 
 - [Azure-Regierung](https://aka.ms/AzureCompliance)
 
-## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
+## <a name="audits-reports-and-certificates"></a>Audits, Berichte und Zertifikate
 
 Azure Government CNSSI 1253 Bescheinigung der Einhaltung der CNSSI 1253 High-High-High-Baseline
 

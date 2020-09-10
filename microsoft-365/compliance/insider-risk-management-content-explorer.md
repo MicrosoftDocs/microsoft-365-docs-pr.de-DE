@@ -3,7 +3,7 @@ title: Insider Risikomanagement-Inhalts-Explorer
 description: Informationen zum Insider Risk Management-Inhalts-Explorer in Microsoft 365
 keywords: Microsoft 365, Insider-Risikomanagement, Risikomanagement, Compliance
 localization_priority: Normal
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: dee4ed05f4210530dddeff8ac62ee3f39903abca
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 1523e80f187cd7df6d8e44b91b85c39608e2f49c
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199818"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416489"
 ---
 # <a name="insider-risk-management-content-explorer"></a>Insider Risikomanagement-Inhalts-Explorer
 
@@ -61,7 +61,7 @@ Verwenden Sie zum Hinzufügen oder Entfernen von Spaltenüberschriften für die 
 | **Sender** | Der Absender einer E-Mail-Nachricht. |
 | **Absender/Autor** | Bei E-Mails: Die Person, die eine Nachricht gesendet hat.  Für Dokumente die im Feld Autor zitierte Person aus Office-Dokumenten. Sie können mehr als einen Namen eingeben, getrennt durch Kommas. Mindestens zwei Werte sind durch den or-Operator logisch miteinander verbunden. |
 | **Sent** | Das Datum, an dem eine E-Mail vom Absender gesendet wurde. Dieses Feld ist dieselbe Eigenschaft wie die Eigenschaft "gesendete e-Mail". |
-| **Size** | Für e-Mail und Dokumente die Größe des Elements (in Byte). |
+| **Größe** | Für e-Mail und Dokumente die Größe des Elements (in Byte). |
 | **Betreff** | Der Text in der Betreffzeile einer E-Mail. |
 | **Betreff/Titel** | Bei E-Mails: Der Text in der Betreffzeile einer Nachricht.   Für Dokumente der Titel des Dokuments. Wie bereits erläutert, ist die Title-Eigenschaft in Microsoft Office Dokumenten angegebene Metadaten. Sie können den Namen von mehr als einem Betreff/Titel eingeben, getrennt durch Kommas. Mindestens zwei Werte sind durch den or-Operator logisch miteinander verbunden. |
 | **Themenliste** | Für Analyse berechnete Themenliste. |
@@ -103,7 +103,7 @@ Erweitern Sie für erweiterte Filter-und Such Tools den Bereich **Filter** auf d
 |:---------------------|:----------------|
 | **Date** | Bei E-Mails: Das Datum, an dem die Nachricht vom Empfänger empfangen oder vom Absender gesendet wurde.   Für Dokumente das Datum, an dem ein Dokument zuletzt geändert wurde. |
 | **Absender/Autor** | Bei E-Mails: Die Person, die eine Nachricht gesendet hat.  Für Dokumente die im Feld Autor zitierte Person aus Office-Dokumenten. Sie können mehr als einen Namen eingeben, getrennt durch Kommas. Mindestens zwei Werte sind durch den **or** -Operator logisch miteinander verbunden. |
-| **Size** | Für e-Mail und Dokumente die Größe des Elements (in Byte). |
+| **Größe** | Für e-Mail und Dokumente die Größe des Elements (in Byte). |
 | **Betreff/Titel** | Bei E-Mails: Der Text in der Betreffzeile einer Nachricht.   Für Dokumente der Titel des Dokuments. Bei der Title-Eigenschaft in Documents handelt es sich um in Microsoft Office Dokumenten angegebene Metadaten. Sie können den Namen von mehr als einem Betreff/Titel eingeben, getrennt durch Kommas. Mindestens zwei Werte sind durch den or-Operator logisch miteinander verbunden. |
 
 ### <a name="email-property-conditions"></a>Bedingungen für die e-Mail-Eigenschaft

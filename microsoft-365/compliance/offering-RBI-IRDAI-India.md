@@ -3,7 +3,7 @@ title: Reserve Bank of India (RBI) und Insurance Regulatory and Development Auth
 description: Microsoft hat Leitlinien veröffentlicht, um Finanzinstituten in Indien bei der Cloud-Einführung zu helfen.
 keywords: Microsoft 365, Compliance, Angebote
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d76289740a117979ec4ac2d91a2e24782995d0fb
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: c037a36154f14cc0db2092bc2eeea6344b5544ff
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066182"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416071"
 ---
 # <a name="reserve-bank-of-india-rbi-and-insurance-regulatory-and-development-authority-of-india-irdai"></a>Reserve Bank of India (RBI) und Insurance Regulatory and Development Authority of India (irdai)
 
@@ -55,12 +55,12 @@ Die Microsoft-Prüfliste hilft Finanzunternehmen in Indien, die Due-Diligence-Be
 ## <a name="how-to-implement"></a>Implementierung
 
 - [Compliance-Checkliste für Indien](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides): Finanzunternehmen können Unterstützung bei der Durchführung von Risikobewertungen von Microsoft Business Cloud Services erhalten.
-- [Leitfaden für Risikobewertung und Compliance](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers): Erstellen Sie ein Governance-Modell für die Risikobewertung von Microsoft-Clouddiensten und die Benachrichtigung der Aufsichtsbehörden.
+- [Leitfaden für Risikobewertung und Compliance](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers): Erstellen Sie ein Governance-Modell für die Risikobewertung von Microsoft Cloud Services und die Benachrichtigung der Aufsichtsbehörden.
 - [Finanzielle Anwendungsfälle für Azure](https://docs.microsoft.com/azure/industry/financial/): Verwenden von Fallübersichten, Lernprogrammen und anderen Ressourcen zum Erstellen von Azure-Lösungen für Finanzdienstleistungen.
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
-**Gibt es verbindliche Bedingungen, die in den Vertrag mit dem Clouddienstanbieter aufgenommen werden müssen?**
+**Gibt es verbindliche Bedingungen, die in den Vertrag mit dem Cloud-Dienstanbieter aufgenommen werden müssen?**
 
 Ja. In den oben genannten Richtlinien sind einige spezifische Punkte aufgeführt, die Finanzinstitute in Ihre Cloud-Dienstleistungsverträge einbeziehen müssen. Teil 2 der [Prüfliste](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) (Seite 70) ordnet diese gegen die Abschnitte in den Microsoft-Vertragsdokumenten an, in denen Sie behandelt werden.
 

@@ -3,7 +3,7 @@ title: Securities and Exchange Commission – Regulation Systems Compliance and 
 description: Die Sci-Regeln gelten für Sci-Entitäten, die solche Selbstregulierungsorganisationen (SRO) als Lager-und Options Austausch, registrierte Clearingstellen und alternative Handelssysteme (ATS) umfassen.
 keywords: Microsoft 365, Compliance, Angebote
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e2b314934a51c16ab4e907b7d9f6208e7de21641
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: fd4817f31aa91698a77de45fd8315b3f84431289
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065710"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415929"
 ---
 # <a name="securities-and-exchange-commission-regulation-systems-compliance-and-integrity-sci"></a>Securities and Exchange Commission: Regulation Systems Compliance and Integrity (SCI)
 
@@ -52,7 +52,7 @@ Dieses Dokument enthält eine umfassende Prüfliste der kritischen regelmäßige
 - [Reglement Sci Implementation Guide](https://servicetrust.microsoft.com/ViewPage/TrustDocumentsV3?command=Download&downloadType=Document&downloadId=a69ce0c1-7b7e-44e9-9143-867241e6b2f9&tab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913&docTab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913_FAQ_and_White_Papers): Maps Azure-Funktionen gegen die Verordnung und Details der gemeinsamenverantwortung für die Compliance.
 - [Entwerfen von zuverlässigen Azure-Anwendungen](https://docs.microsoft.com/azure/architecture/resiliency/): eine kurze Übersicht über das Erstellen von Zuverlässigkeit in jedem Schritt des Azure-Anwendungsdesigns.
 - [Entwerfen hoch verfügbarer Anwendungen](https://docs.microsoft.com/azure/storage/common/storage-designing-ha-apps-with-ragrs): wie Entwickler helfen können, sicherzustellen, dass Ihre Azure-Speicheranwendungen hoch verfügbar sind.
-- [Leitfaden für Risikobewertung und Compliance](https://aka.ms/RiskGovernanceGuide): Erstellen Sie ein Governance-Modell für die Risikobewertung von Microsoft-Clouddiensten und die Benachrichtigung der Aufsichtsbehörden.
+- [Leitfaden für Risikobewertung und Compliance](https://aka.ms/RiskGovernanceGuide): Erstellen Sie ein Governance-Modell für die Risikobewertung von Microsoft Cloud Services und die Benachrichtigung der Aufsichtsbehörden.
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
@@ -70,7 +70,7 @@ Finanzorganisationen oder Sci-Entitäten, die dieser Verordnung unterliegen, kö
 - [Business Continuity and Disaster Recovery (BCDR): Azure gepaart Regionen](https://docs.microsoft.com/azure/best-practices-availability-paired-regions)
 - [Compliance-Map der regulatorischen Prinzipien für Cloud Computing und Microsoft Online Services](https://aka.ms/FinServ-Guide-US)
 - [Microsoft Cloud Financial Services Compliance Program](https://aka.ms/FSCP-Print)
-- [Financial Services Compliance in Azure](https://aka.ms/FinServ-Compliance-Azure)
+- [Compliance der Finanzdienstleistungs in Azure](https://aka.ms/FinServ-Compliance-Azure)
 - [Microsoft Financial Services](https://aka.ms/FinServ-Compliance)
 - [Microsoft-und sec-Regel 17a-4](offering-SEC-17a-4.md)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

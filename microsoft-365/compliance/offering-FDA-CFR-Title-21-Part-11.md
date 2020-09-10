@@ -3,7 +3,7 @@ title: Food and Drug Administration CFR Title 21 Part 11
 description: Microsoft unterstützt Kunden bei der Einhaltung dieser US-amerikanischen Lebensmittel-und Medikamenten Verwaltungsvorschriften.
 keywords: Microsoft 365, Compliance, Angebote
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1b24460940d583eeb9ed431b61453e87a218a816
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: fa93c78d240c243911e21e687ef5d02c29b714b2
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066378"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417339"
 ---
 # <a name="food-and-drug-administration-cfr-title-21-part-11"></a>Food and Drug Administration CFR Title 21 Part 11
 
@@ -50,12 +50,12 @@ Erfahren Sie, wie Sie Ihre FDA CFR Title 21-Bereitstellung beschleunigen: [herun
 Obwohl es keine Zertifizierung für die Einhaltung des CFR-Titels 21 Teil 11 gibt, wurden die folgenden Microsoft Enterprise Cloud-Dienste unabhängigen Drittanbieter-Überprüfungen unterzogen, die Kunden bei ihren Compliance-Bemühungen unterstützen können. Diese Dienste umfassen Folgendes:
 
 - Azure: Cloud-Dienste, Speicher, Datenverkehrs Manager, virtuelle Computer und virtuelles Netzwerk
-- Azure-DevOps
+- Azure DevOps
 - Intune
 - [Dynamics 365 und Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
 - Office 365 und Office 365 U.S. Government
 
-## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
+## <a name="audits-reports-and-certificates"></a>Audits, Berichte und Zertifikate
 
 Die Überwachungsberichte für SOC 1 und SOC 2 Type 2, ISO/IEC 27001 und ISO/IEC 27018-Standards bescheinigen der Effektivität der von Microsoft implementierten Steuerelemente und können Kunden bei der Einhaltung von FDA CFR Title 21 Part 11 unterstützen.
 

@@ -3,7 +3,7 @@ title: Standardvertragsklauseln der Europäischen Union
 description: Microsoft bietet Kunden die EU-Standardvertragsklauseln, die Garantien in Bezug auf die Übertragung personenbezogener Daten enthalten.
 keywords: Microsoft 365, Compliance, Angebote
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 9d678ca5ee9b8a8ebf4feadfb27826caa533967e
-ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
+ms.openlocfilehash: b4767b9cc3d267020fee1c44876bf47442d0cea2
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773862"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415493"
 ---
 # <a name="european-union-model-clauses"></a>Standardvertragsklauseln der Europäischen Union
 

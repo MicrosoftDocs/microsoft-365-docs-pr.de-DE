@@ -3,7 +3,7 @@ title: Informationspflicht bei Verletzung des Schutzes personenbezogener Daten i
 description: Wie Microsoft Sie vor Verletzungen des Schutzes personenbezogener Daten schützt und wie Microsoft reagiert und Sie benachrichtigt, wenn eine Verletzung auftritt.
 keywords: Office 365, Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: ae69a8330f5daec275247e718f7eb66a5f0f8bf9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 30e32a38d380806e56f08303eef4f5adbfc47d10
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633440"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416819"
 ---
 # <a name="breach-notification-under-the-gdpr"></a>Informationspflicht bei Verletzung des Schutzes personenbezogener Daten im Rahmen der Datenschutz-Grundverordnung (DSGVO)
 

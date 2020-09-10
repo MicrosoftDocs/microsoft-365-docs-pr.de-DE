@@ -3,7 +3,7 @@ title: U.S.-Abschnitt 508
 description: Microsoft bietet detaillierte Zugänglichkeits Übereinstimmungs Berichte für viele seiner Cloud-Dienste, die die Barrierefreiheitsfunktionen dieser Dienste beschreiben.
 keywords: Microsoft 365, Compliance, Angebote
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7f61248fc6e31d0982eedd153aa71ae3eed71de5
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 1037232f7e72bd6d82cd0818dfad2ca2722144ec
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066298"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415343"
 ---
 # <a name="us-section-508"></a>U.S.-Abschnitt 508
 

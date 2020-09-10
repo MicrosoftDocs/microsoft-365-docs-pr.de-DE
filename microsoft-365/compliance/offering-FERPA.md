@@ -3,7 +3,7 @@ title: Family Educational Rights and Privacy Act (FERPA)
 description: Microsoft richtet sich an die Anforderungen des US-produkterziehungs Gesetzes für Familie und Datenschutz.
 keywords: Microsoft 365, Compliance, Angebote
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c7d3120f7094e91157c5a20df435c1c1438677bf
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: cbf8b04fe4e3d301d3ee79c09895093f97c2e785
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254268"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417349"
 ---
 # <a name="family-educational-rights-and-privacy-act-ferpa"></a>Family Educational Rights and Privacy Act (FERPA)
 
@@ -41,7 +41,7 @@ FERPA erfordert oder erkennen keine Audits oder andere Zertifizierungen, sodass 
 
 Aufgrund dieser vertraglichen Verpflichtungen können Kunden, die FERPA unterliegen – sowohl Bildungseinrichtungen als auch Drittanbieter, denen Sie Zugriff auf vertrauliche Kursteilnehmerdaten gewähren – zuverlässig Microsoft Business Cloud-Dienste zum verarbeiten, speichern und übertragen dieser Daten verwenden.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
 
 Dienste, für die Microsoft sich verpflichtet, als "Schul Beamter" mit berechtigten Bildungs Interessen in Kundendaten festgelegt zu werden, umfassen Folgendes:
 
@@ -53,7 +53,7 @@ Dienste, für die Microsoft sich verpflichtet, als "Schul Beamter" mit berechtig
 - Azure DevOps Services
 - Windows Defender ATP
 
-## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
+## <a name="audits-reports-and-certificates"></a>Audits, Berichte und Zertifikate
 
 FERPA erfordert oder erkennen keine Überwachungen oder Zertifizierungen.
 

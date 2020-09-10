@@ -3,7 +3,7 @@ title: US DOE 10 CFR Part 810
 description: Kunden, die den Export Kontrollanforderungen von US DOE 10 CFR Part 810 unterliegen, können Azure Government verwenden.
 keywords: Microsoft 365, Compliance, Angebote
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b34babe60781858b85a3c76280c2126094442851
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: a809ae91bbe1302ae4087b3a430dea87e2c913a1
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066438"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415695"
 ---
 # <a name="us-doe-10-cfr-part-810"></a>US DOE 10 CFR Part 810
 

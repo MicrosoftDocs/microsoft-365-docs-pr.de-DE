@@ -3,7 +3,7 @@ title: Cloud Security Alliance (CSA) STAR-Zertifizierung
 description: Azure, Intune und Power BI erhielten die Cloud Security Alliance STAR-Zertifizierung auf Gold-Ebene.
 keywords: Microsoft 365, Compliance, Angebote
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 897fc513d0f129a273f87107dc8e85127890ee6e
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: a5da8e0168b58011a696f1f602d21e410e2a1eb6
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254394"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415604"
 ---
 # <a name="cloud-security-alliance-csa-star-certification"></a>Cloud Security Alliance (CSA) STAR-Zertifizierung
 

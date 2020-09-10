@@ -3,7 +3,7 @@ title: Ministerium für Elektronik und Informationstechnologie (MeitY)
 description: Microsoft erhielt eine vollständige Akkreditierung durch das Ministerium für Elektronik und Informationstechnologie in Indien.
 keywords: Microsoft 365, Compliance, Angebote
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 86a3e7ce703881452d3d112aace3b418bf0984af
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: b73e701c870bcd43672f43f9fe51d3e5fb10c615
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066096"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417489"
 ---
 # <a name="ministry-of-electronics-and-information-technology-meity"></a>Ministerium für Elektronik und Informationstechnologie (MeitY)
 
@@ -29,7 +29,7 @@ Das Ministerium für Elektronik und Informationstechnologie (MeitY), eine Agentu
 
 MeitY stellt eine Akkreditierung (bezeichnet von MeitY als "empanelment") von Cloud-Dienstanbietern bereit, die erfordert, dass Cloud-Dienste als konform mit einer vordefinierten Reihe von Standards und Richtlinien für Sicherheit, Interoperabilität, Daten Portabilität, Vereinbarung zum Service Level und vertragliche Geschäftsbedingungen zertifiziert werden. Von MeitY akkreditierte Auditoren Überprüfen der Compliance durch das Durchführen von Audits von Cloud-Dienstanbietern.
 
-Sobald akkreditiert, werden Cloud-Dienstanbieter in einem Government Cloud Services-Verzeichnis aufgeführt, in dem öffentliche Organisationen akkreditierte Cloud-Dienste vergleichen und beschaffen können. Das Verzeichnis ist ein Dienst der [MeghRaj Cloud Initiative](https://meity.gov.in/content/gi-cloud-meghraj) (oder GI \[Government of India\] Cloud), die den Einsatz von Cloud Computing in der Regierung fördert und die Implementierung von IT-Diensten des öffentlichen Sektors steuert.
+Sobald akkreditiert, werden Cloud-Dienstanbieter in einem Government Cloud Services-Verzeichnis aufgeführt, in dem öffentliche Organisationen akkreditierte Cloud-Dienste vergleichen und beschaffen können. Das Verzeichnis ist ein Dienst der [MeghRaj Cloud Initiative](https://meity.gov.in/content/gi-cloud-meghraj) (oder GI \[ Government of India \] Cloud), die den Einsatz von Cloud Computing in der Regierung fördert und die Implementierung von IT-Diensten des öffentlichen Sektors steuert.
 
 ## <a name="microsoft-and-ministry-of-electronics-and-information-technology-meity"></a>Microsoft und Ministerium für Elektronik und Informationstechnologie (MeitY)
 

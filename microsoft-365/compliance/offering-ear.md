@@ -3,7 +3,7 @@ title: US-Export Verwaltungsvorschriften (EAR)
 description: Microsoft-Cloud-Dienste helfen Kunden, die den US-Export Verwaltungsvorschriften (EAR) unterliegen, Ihre Compliance-Anforderungen zu erfüllen und das Export Kontroll Risiko zu managen.
 keywords: Microsoft 365, Compliance, Angebote
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1adf0bab35c921dd416028747b0309e5ad5f3055
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4ad12f785a76f6ee733cb3b459ad58370a330f51
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601962"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416061"
 ---
 # <a name="us-export-administration-regulations-ear"></a>US-Export Verwaltungsvorschriften (EAR)
 
@@ -27,7 +27,7 @@ ms.locfileid: "41601962"
 
 Das US Department of Commerce erzwingt die Export Verwaltungsvorschriften (EAR) über das [Bureau of Industry and Security (bis)](https://www.bis.doc.gov/). Das Ohr regelt und auferlegt Steuerelemente für den Export und den Wiederexport der meisten kommerziellen Güter, Software und Technologien, einschließlich "Dual-Use"-Elemente, die sowohl für kommerzielle und militärische Zwecke als auch für bestimmte Verteidigungs Elemente verwendet werden können.
 
-Die bis-Anleitung besagt, dass, wenn Daten oder Software in die Cloud hochgeladen oder zwischen Benutzer Knoten übertragen werden, der Kunde, nicht der Cloud-Anbieter, der "Exporteur" ist, der dafür verantwortlich ist, sicherzustellen, dass die Übertragung, Speicherung und der Zugriff auf diese Daten oder Software entspricht dem Ohr.
+Die bis-Anleitung besagt, dass, wenn Daten oder Software in die Cloud hochgeladen oder zwischen Benutzer Knoten übertragen werden, der Kunde, nicht der Cloud-Anbieter, der "Exporteur" ist, der dafür verantwortlich ist, sicherzustellen, dass die Übertragung, Speicherung und der Zugriff auf diese Daten oder Software mit dem Ohr übereinstimmt.
 
 [Gemäß der BIZ](https://www.bis.doc.gov/index.php/documents/regulation-docs/412-part-734-scope-of-the-export-administration-regulations/file)bezieht sich der *Export* auf die Übertragung geschützter Technologien oder technischer Daten an ein fremdes Ziel oder dessen Veröffentlichung an eine ausländische Person in den Vereinigten Staaten (wird auch als *Export*bezeichnet). Das Ohr steuert im großen und ganzen:
 
@@ -41,7 +41,7 @@ Die [letzte Regel](https://www.federalregister.gov/documents/2016/06/03/2016-127
 
 ## <a name="microsoft-and-the-ear"></a>Microsoft und das Ohr
 
-Microsoft-Technologien,-Produkte und-Dienste unterliegen den US-Export Verwaltungsvorschriften (EAR). Zwar gibt es keine Konformitätszertifizierung für das Ohr, Microsoft Azure, Microsoft Azure Regierung und Microsoft Office 365 Government (GCCHigh-und DoD-Umgebungen) bieten wichtige Features und Tools, die berechtigten Kunden helfen, die dem Ear Manage Export unterstützen. Steuern von Risiken und erfüllen der Compliance-Anforderungen
+Microsoft-Technologien,-Produkte und-Dienste unterliegen den US-Export Verwaltungsvorschriften (EAR). Zwar gibt es keine Konformitätszertifizierung für das Ohr, Microsoft Azure, Microsoft Azure Government und Microsoft Office 365 Government (GCCHigh and DoD Environments) bieten wichtige Features und Tools, um berechtigten Kunden zu helfen, die das Ohr Manage Export Control Risks unterstützen und die Compliance-Anforderungen erfüllen.
 
 Die US-Commerce-Abteilung, die das Ohr erzwingt, hat die Position übernommen, dass Kunden, nicht Cloud-Dienstanbieter wie Microsoft, als Exporteure eigener Kundendaten betrachtet werden. Während die meisten Kundendaten nicht als "Technologie" oder "Technische Daten" gelten, die den Ear-Exportkontrollen unterliegen, sind die Microsoft-bereichsübergreifenden Cloud-Dienste so strukturiert, dass Kunden die potenziellen Export Steuerungs Risiken besser managen und deutlich abschwächen. Microsoft empfiehlt die Verwendung von Government Cloud Services für berechtigte Kunden in der Regel, jedoch nicht ausschließlich. Mit der entsprechenden Planung können Kunden die folgenden Tools und ihre eigenen internen Verfahren verwenden, um die vollständige Einhaltung der US-Exportkontrollen zu gewährleisten.
 
@@ -49,7 +49,7 @@ Die US-Commerce-Abteilung, die das Ohr erzwingt, hat die Position übernommen, d
 - **End-to-End-Verschlüsselung**. Durch die Nutzung der End-to-End-Verschlüsselung Safe Harbor für physikalische Speicherorte, die im Ohr angegeben sind, bieten Microsoft-bezogene Cloud-Dienste Verschlüsselungsfunktionen, die zum Schutz vor Export Steuerungs Risiken beitragen können. Sie bieten Kunden außerdem eine [Breite Palette von Optionen zum Verschlüsseln von Daten](https://aka.ms/Azure-Encryption-Overview) in der Übertragung und im Ruhezustand sowie die Flexibilität, zwischen Verschlüsselungsoptionen auszuwählen.
 - **Tools und Protokolle zur Verhinderung nicht autorisierter Exporte**. Die Verwendung von Verschlüsselung hilft auch vor potenziellen Exporten (oder als Wiederexport) unter dem Ohr zu schützen, da selbst wenn eine nicht-US-Person Zugriff auf verschlüsselte Daten hat, nichts offenbart wird, wenn Sie die Daten nicht lesen oder verstehen können, während Sie verschlüsselt werden; Daher gibt es keine "Freigabe" von kontrollierten Daten.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
 
 - [Azure und Azure Government](https://aka.ms/AzureCompliance)
 - [Office 365 Government (gcc-High und DoD)](https://aka.ms/Office-365-Export-Controls)
@@ -66,7 +66,7 @@ Die US-Commerce-Abteilung, die das Ohr erzwingt, hat die Position übernommen, d
 
 **Was muss ich tun, um Exportkontrollen bei der Verwendung von Microsoft Cloud Services einzuhalten?**
 
-Unter dem Ohr gilt: Wenn Daten auf einen cloudserver wie die Microsoft-Cloud hochgeladen werden, wird der Kunde, der die Daten besitzt – nicht der Anbieter für Cloud-Dienste – als Exporteur betrachtet. Aus diesem Grund muss der Besitzer der Daten – d. h. der Microsoft-Kunde – sorgfältig prüfen, wie die Verwendung der Microsoft-Cloud dazu führen kann, dass US-Steuerelemente exportiert werden, und bestimmen, ob die Daten, die Sie verwenden oder dort speichern möchten, möglicherweise Ear-Kontrollen unterliegen. , und wenn ja, welche Steuerelemente angewendet werden. Erfahren Sie mehr darüber, wie [Azure](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=c24c11f2-2cd4-444a-9160-19762855ad3a&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) und [Office 365](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE1s5kI) Cloud-Dienste Kunden dabei unterstützen können, Ihre vollständige Compliance mit den US-Exportkontrollen sicherzustellen.
+Unter dem Ohr gilt: Wenn Daten auf einen cloudserver wie die Microsoft-Cloud hochgeladen werden, wird der Kunde, der die Daten besitzt – nicht der Anbieter für Cloud-Dienste – als Exporteur betrachtet. Aus diesem Grund muss der Besitzer der Daten – d. h. der Microsoft-Kunde – sorgfältig prüfen, wie die Verwendung der Microsoft-Cloud dazu führen kann, dass US-Steuerelemente exportiert werden, und bestimmen, ob eine der Daten, die Sie verwenden oder dort speichern möchten, möglicherweise Ear-Steuerelementen unterliegt, und wenn ja, welche Steuerelemente angewendet werden. Erfahren Sie mehr darüber, wie [Azure](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=c24c11f2-2cd4-444a-9160-19762855ad3a&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) und [Office 365](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE1s5kI) Cloud-Dienste Kunden dabei unterstützen können, Ihre vollständige Compliance mit den US-Exportkontrollen sicherzustellen.
 
 **Unterliegen Microsoft-Technologien,-Produkte und-Dienste dem Ohr?**
 

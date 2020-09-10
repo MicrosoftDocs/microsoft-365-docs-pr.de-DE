@@ -3,7 +3,7 @@ title: Insider Risikomanagement-Fälle
 description: Informationen zu Insider Risikomanagement-Fällen in Microsoft 365
 keywords: Microsoft 365, Insider-Risikomanagement, Risikomanagement, Compliance
 localization_priority: Normal
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 52b80c85fcd9ddb22330c1103e3df908a217e8f2
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 8667c625de4c83c98efd8f1cf20f3db57ed0d4c5
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199931"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416559"
 ---
 # <a name="insider-risk-management-cases"></a>Insider Risikomanagement-Fälle
 
@@ -93,7 +93,7 @@ Der Bereich **Fall Details** ist auf allen Registerkarten für die Fallverwaltun
 Auf der Registerkarte **Benachrichtigungen** werden die aktuellen Warnungen zusammengefasst, die in der Anfrage enthalten sind. Neue Warnungen werden möglicherweise zu einem vorhandenen Fall hinzugefügt, und Sie werden der **Benachrichtigungs** Warteschlange hinzugefügt, sobald Sie zugewiesen sind. Die folgenden Warnungs Attribute werden in der Warteschlange aufgeführt:
 
 - Status
-- Schweregrad
+- Severity
 - Erkannte Zeit
 
 Wählen Sie in der Warteschlange eine Warnung aus, um die **Warnungs Detail** Seite anzuzeigen.
@@ -101,7 +101,7 @@ Wählen Sie in der Warteschlange eine Warnung aus, um die **Warnungs Detail** Se
 Verwenden Sie das Search-Steuerelement, um Warnungsnamen nach bestimmten Text zu durchsuchen, und verwenden Sie den Warnungsfilter, um Fälle anhand der folgenden Attribute zu sortieren:
 
 - Status
-- Schweregrad
+- Severity
 - Zeitpunkt der Erkennung, Startdatum und Enddatum
 
 Verwenden Sie das Filter-Steuerelement, um Warnungen nach verschiedenen Attributen zu filtern, einschließlich:

@@ -4,7 +4,7 @@ description: Dieses Dokument stellt Datenverantwortlichen Informationen über Pr
 keywords: DPIA, Microsoft Professional Services, Microsoft 365-Dokumentation, DSGVO
 robots: NOINDEX,NOFOLLOW
 ms.localizationpriority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 1f7f8edd2c22741f21beaddac437cb24378bba41
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 1f9e63e26c65b45047f9e26ed03109ceefe4298d
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "41594505"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416699"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-professional-services"></a>Datenschutz-Folgenabschätzung: Leitfaden für Datenverantwortliche, die Microsoft Professional Services verwenden
 

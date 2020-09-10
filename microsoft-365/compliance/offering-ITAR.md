@@ -3,7 +3,7 @@ title: Internationaler Handel mit Rüstungs Vorschriften (ITAR)
 description: Azure Government unterstützt Kunden beim Bau von US International Traffic in regs-fähigen Systemen.
 keywords: Microsoft 365, Compliance, Angebote
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c19b10b436d40364d15ce6bf8569d18b0a0e7b7b
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 6019e215e99af672f7e938b11abdac8732c152fa
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065730"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417639"
 ---
 # <a name="international-traffic-in-arms-regulations-itar"></a>Internationaler Handel mit Rüstungs Vorschriften (ITAR)
 

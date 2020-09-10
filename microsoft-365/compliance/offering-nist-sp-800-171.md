@@ -3,7 +3,7 @@ title: NIST SP 800 – 171
 description: Microsoft-Cloud-Dienste entsprechen den NIST-SP 800 – 171-Richtlinien, um kontrollierte nicht klassifizierte Informationen (CUI) in nicht föderalen Informationssystemen zu schützen.
 keywords: Microsoft 365, Compliance, Angebote
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 47e001fafedbdcaab6e1aa6365789bc309d9f65c
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 757541aa86049106ad06f02419fee02033c6a0e3
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065810"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417067"
 ---
 # <a name="nist-sp-800171"></a>NIST SP 800 – 171
 
@@ -49,7 +49,7 @@ Jede Entität, die die US-Regierung Cui verarbeitet oder speichert – Forschung
 - Intune
 - [Office 365 US Government Community Cloud (gcc), Office 365 gcc High und DoD](https://aka.ms/o365-compliance-framework)
 
-## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
+## <a name="audits-reports-and-certificates"></a>Audits, Berichte und Zertifikate
 
 - [Azure Government Bescheinigung über die Einhaltung von NIST SP 800 – 171](https://aka.ms/Azure-NIST-800-171)
 

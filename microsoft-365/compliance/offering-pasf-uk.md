@@ -3,7 +3,7 @@ title: Polizei gesicherte Anlagen (PASF) Vereinigtes Königreich
 description: Microsoft Business Cloud Services unterstützen britische Strafverfolgungsbehörden, die von der Polizei gesicherte Einrichtungen zum Verarbeiten und Speichern Ihrer Daten in der Cloud benötigen.
 keywords: Microsoft 365, Compliance, Angebote
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3207d0d29c837064ac5c27cc7022a8d0d7e63a22
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 828a16ce825a21a532a22d60cd0005db10c97a75
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065790"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416397"
 ---
 # <a name="police-assured-secure-facilities-pasf-united-kingdom"></a>Polizei gesicherte Anlagen (PASF) Vereinigtes Königreich
 
@@ -43,7 +43,7 @@ Diese Zertifizierungen werden durch die Maßnahmen unterstützt, die wir ergreif
 - [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
 - [Microsoft 365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9f756cce-b15d-45a9-94d7-6a583dee4401&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 
-## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
+## <a name="audits-reports-and-certificates"></a>Audits, Berichte und Zertifikate
 
 Das NPIRMT überwacht jedes Jahr ein Azure-Rechenzentrum, das jährlich durch die vier Microsoft-Rechenzentren in Großbritannien geleitet wird. Die NPIRMT-Bewertung, dass Microsoft-Rechenzentren PASF sind, steht über das Home Office für Strafverfolgungs Kunden zur Verfügung, die eine eigene Risikobewertung von Azure und anderen Microsoft Cloud-Diensten durchführen.
 
@@ -62,5 +62,5 @@ Ja. Die Strafverfolgungsbehörden können die NPIRMT-Bewertung von Azure verwend
 - [Akkreditierungs Richtlinie für nationale Policing](http://library.college.police.uk/docs/APP-National-Policing-Accreditation-Policy-2013.pdf)
 - [Azure-Einrichtungen,-Räumlichkeiten und physische Sicherheit](https://azure.microsoft.com/blog/azure-layered-approach-to-physical-security/)
 - [Microsoft-und ISO/IEC 27001:2013-ISM-Standards](offering-iso-27001.md)
-- [Nutzungsbedingungen für Microsoft-Onlinedienste](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
+- [Microsoft Online Services-Nutzungsbedingungen](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
