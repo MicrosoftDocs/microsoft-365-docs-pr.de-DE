@@ -1,0 +1,52 @@
+### YamlMime:Landing
+title: Microsoft Bookings
+summary: Planen und Verwalten von Terminen mit Microsoft-Buchungen. Umfasst die Integration in Outlook und automatisierte Benachrichtigungen.
+metadata:
+  title: Microsoft Bookings
+  description: Planen und Verwalten von Terminen mit Microsoft-Buchungen. Umfasst die Integration in Outlook und automatisierte Benachrichtigungen.
+  ms.service: bookings
+  ms.topic: landing-page
+  author: dmaguire
+  ms.author: dmaguire
+  manager: serdars
+  audience: Admin
+  ms.date: 07/21/2020
+  ms.openlocfilehash: 7fb9456dfeb6481aebe1f81307a30c4cfad0ec02
+  ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 09/09/2020
+  ms.locfileid: "47419704"
+landingContent:
+- title: Informationen zu Microsoft-Buchungen
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Was ist Microsoft-Buchungen?
+      url: bookings-overview.md
+  - linkListType: download
+    links:
+    - text: Abrufen der App "Buchungen"
+      url: get-bookings-app.md
+- title: Einrichten von Microsoft Bookings
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Eingeben Ihrer Unternehmensinformationen
+      url: enter-business-information.md
+    - text: Festlegen Ihrer Planungsrichtlinien
+      url: set-scheduling-policies.md
+    - text: Definieren Ihrer Dienstangebote
+      url: define-service-offerings.md
+    - text: Festlegen der Arbeitszeiten für Mitarbeiter
+      url: employee-hours.md
+    - text: Anpassen und Veröffentlichen Ihrer Buchungsseite
+      url: customize-booking-page.md
+    - text: Erstellen Ihrer Buchungen und Festlegen der Mitarbeiter dafür
+      url: create-a-manual-booking.md
+- title: Personen zum Buchen von Terminen einladen
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Anpassen Ihrer Buchungsseite
+      url: customize-booking-page.md
