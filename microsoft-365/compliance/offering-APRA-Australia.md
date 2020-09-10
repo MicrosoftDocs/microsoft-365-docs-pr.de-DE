@@ -3,7 +3,7 @@ title: Australische Aufsichts Regulierungsbehörde (APRA)
 description: Microsoft-Richtlinien zur Unterstützung von Finanzdienstleistungskunden bei der Einhaltung der Outsourcing-Standards der australischen Aufsichts Regulierungsbehörde.
 keywords: Microsoft 365, Compliance, Angebote
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b344f9c4d750c6e6571c0e76be0c9db0c421271b
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: fb964bd6dcf229f362476b68ad87d05053e87f74
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065890"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417749"
 ---
 # <a name="australian-prudential-regulation-authority-apra"></a>Australische Aufsichts Regulierungsbehörde (APRA)
 

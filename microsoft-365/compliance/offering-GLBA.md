@@ -3,7 +3,7 @@ title: Gramm-Leach-Bliley Act (GLBA)
 description: Microsoft hilft den Kunden von Finanzdienstleistungen, die Datenschutz-und Sicherheitsanforderungen des Gramm-Leach-Bliley Act (GLBA) einzuhalten.
 keywords: Microsoft 365, Compliance, Angebote
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: bbc5f9e74e67dc121b151684145bd41635af1ca0
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 1b3cf1017a3ed64cecafe269e313ab5a6980af25
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066550"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417729"
 ---
 # <a name="gramm-leach-bliley-act-glba"></a>Gramm-Leach-Bliley Act (GLBA)
 

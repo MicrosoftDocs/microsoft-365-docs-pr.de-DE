@@ -3,7 +3,7 @@ title: Datenschutz-Grundverordnung
 description: Erfahren Sie mehr zur technischen Unterstützung von Microsoft für die Datenschutz-Grundverordnung (DSGVO) und erhalten Sie hilfreiche Informationen.
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5d1e6730d215fcef6bd0cad6244c82b960ed39ce
-ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
+ms.openlocfilehash: cd17ac35c732189fe8699d75ceb054cc4c900364
+ms.sourcegitcommit: eb3c30d53a5434d8bad7c8f48a5612f3e2675945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44800020"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422453"
 ---
 # <a name="general-data-protection-regulation-summary"></a>Zusammenfassung Datenschutz-Grundverordnung
 
@@ -209,7 +209,7 @@ Microsoft verwendet seit langem die Standardvertragsklauseln (auch als Modellkla
 
 **Was sind die anderen Microsoft Compliance-Angebote?**
 
-Als globales Unternehmen mit Kunden in fast allen Ländern der Welt verfügt Microsoft über ein robustes Compliance-Portfolio zur Unterstützung unserer Kunden. Eine vollständige Liste unserer Compliance-Angebote einschließlich FedRamp, HIPAA/HITECH, ISO 27001, ISO 27002, ISO 27018, NIST 800-171, UK G-Cloud und viele andere finden Sie unter unseren [Themen für Compliance-Angebote](offering-home.md).
+Als globales Unternehmen mit Kunden in fast allen Ländern der Welt verfügt Microsoft über ein robustes Compliance-Portfolio zur Unterstützung unserer Kunden. Eine vollständige Liste unserer Compliance-Angebote einschließlich FedRamp, HIPAA/HITECH, ISO 27001, ISO 27002, ISO 27018, NIST 800-171, UK G-Cloud und viele andere finden Sie unter unseren [Themen für Compliance-Angebote](offering-home.yml).
 
 **Wie wirkt sich die DSGVO auf mein Unternehmen aus?**
 

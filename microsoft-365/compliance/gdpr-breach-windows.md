@@ -4,7 +4,7 @@ description: Wie der Datenauftragsverarbeiterdienst für Windows Enterprise Schu
 keywords: Datenauftragsverarbeiterdienst für Windows Enterprise, Microsoft 365, Microsoft 365-Dokumentation, DSGVO
 localization_priority: Priority
 ROBOTS: NOINDEX, NOFOLLOW
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -15,12 +15,12 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: c98d89e1b2bb231c600c663e20893dd4f790a779
-ms.sourcegitcommit: 4789b261eb029d7c965421a1260acc110e6385db
+ms.openlocfilehash: fcf3aff200d65c71538975533cb110c89f3bb92d
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45387432"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417949"
 ---
 # <a name="data-processor-service-for-windows-enterprise-breach-notification-under-the-gdpr"></a>Benachrichtigung des Datenauftragsverarbeiterdiensts für Windows Enterprise über eine Datenschutzverletzung gemäß DSGVO
 

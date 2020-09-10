@@ -3,7 +3,7 @@ title: Datenschutz-Folgenabschätzung
 description: Diese Dokumente stellen den Datenverantwortlichen Informationen bereit, die ihnen helfen, zu bestimmen, ob eine Datenschutz-Folgeabschätzung erforderlich ist, und wenn ja, welche Informationen sie enthalten soll.
 keywords: Datenschutz-Folgenabschätzung, DPIA (Data Protection Impact Assessment), Dynamics 365, Microsoft Professional Services, Microsoft 365, Microsoft 365-Dokumentation, DSGVO
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 21bda86075b2ab1e542e482e8c0a1edee640035e
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 8bedb6e913e55cdd4cd44d8f343df1ec0433fdf8
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558075"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417969"
 ---
 # <a name="data-protection-impact-assessment-for-the-gdpr"></a>Datenschutz-Folgenabschätzungen im Rahmen der DSGVO
 
@@ -43,7 +43,7 @@ Unter der DSGVO sind Datenverantwortliche dazu aufgerufen, eine Datenschutz-Folg
 
 Der DPIA-Leitfaden gilt für Office 365, Azure, Dynamics 365 und Microsoft-Support sowie Professional Services. Der Leitfaden umfasst Folgendes:
 
-**Wann ist eine DPIA erforderlich**
+**Wann ist eine DPIA erforderlich?**
 
 Die nachstehend aufgeführten Risikofaktoren sollten bei den Überlegungen zur Durchführung einer DPIA berücksichtigt werden. Weitere potenzielle Faktoren und weitere Details finden Sie in Teil 1 der einzelnen Richtlinien.  
 

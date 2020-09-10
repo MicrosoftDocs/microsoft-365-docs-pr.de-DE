@@ -3,7 +3,7 @@ title: Azure und Dynamics 365-Prüflisten zu den Verantwortlichkeiten für die D
 description: Ermöglicht den bequemen Zugriff auf Informationen, die Sie bei Verwendung von Microsoft Azure zur Unterstützung der DSGVO unter Umständen benötigen.
 keywords: ARC Azure, Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -17,12 +17,12 @@ ms.collection:
 hideEdit: true
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dd94ab9bfcc4ca1c9e8f6b99364fa99dde5ff644
-ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
+ms.openlocfilehash: eb2d4ca52acce338e3afb31852409d441e52cfe0
+ms.sourcegitcommit: eb3c30d53a5434d8bad7c8f48a5612f3e2675945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46815260"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422463"
 ---
 # <a name="azure-and-dynamics-365-accountability-readiness-checklist-for-the-gdpr"></a>Azure und Dynamics 365-Prüflisten zu den Verantwortlichkeiten für die DSGVO
 
@@ -144,7 +144,7 @@ Weitere Dokumentationen im Zusammenhang mit der DSGVO finden Sie unter [https://
 | 11 <a name="11"> </a> | [Wichtige Informationen aus Azure für die Datenschutz-Folgenabschätzung in Bezug auf Kundendaten](https://aka.ms/DPIAAzure) |
 | 12 <a name="12"> </a> | [SOC 2 Typ 2 Überwachungsbericht [12]](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=3c7123a5-f507-48b7-8dce-cd948e6150e6&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC_%2F_SSAE_16_Reports) |
 | 13 <a name="13"> </a> | [Microsoft Azure (gesamt) ISO/IEC 27001:2013 ISMS Statement of Applicability](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
-| 14 <a name="14"> </a> | [Microsoft Trust Center – Complianceangebote](offering-home.md)  |
+| 14 <a name="14"> </a> | [Microsoft Trust Center – Complianceangebote](offering-home.yml)  |
 | 15 <a name="15"> </a> | [Microsoft DPO Information](https://aka.ms/GDPRDPO) |
 | 16 <a name="16"> </a> | [Wichtige Informationen aus Dynamics 365 für die Auswirkungen auf den Datenschutz von Kunden](https://servicetrust.microsoft.com/ViewPage/GDPRDPIA?command=Download&downloadType=Document&downloadId=ef2902bb-3137-4f4a-8ca6-af35afaa6bec&docTab=2ba9a350-555c-11e8-b74a-77b1f31da06e_DPIA) |
 | 17 <a name="17"> </a> | [Überwachung und Berichterstellung in Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-use-comprehensive-auditing) |

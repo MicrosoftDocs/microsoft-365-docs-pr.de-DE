@@ -3,7 +3,7 @@ title: Microsoft-Support und Professional Services für Anträge betroffener Per
 description: Erfahren Sie, wie Microsoft-Support und Professional Services Daten für Anträge betroffener Personen für die DSGVO und den CCPA bearbeiten.
 keywords: Professional Services, Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO, CCPA
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e8bbdcc6140ffac298942f81899a4c872cc05584
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 496a84b153d017eb69ba5b18443e4331c00c4dd7
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036310"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416579"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr-and-ccpa"></a>Microsoft-Support und Professional Services für Anträge betroffener Personen für die DSGVO und den CCPA
 
@@ -133,7 +133,7 @@ Während er relevante Daten ausfindig macht und sich die Unterstützung von Micr
 
 Um bestimmte Engagements zu identifizieren, müssen Kunden Engagement-übergreifend suchen. Bei Premier-Kunden hat der Contract Service Manager ("CSM") für einen Kunden Einblick in alle Supportanfragen, die unter diesem Vertragsplan erstellt werden. Bei Nicht-Premier-Kunden sind entsprechende Portale für den Support im Rahmen von Engagements verfügbar, z. B. über Supportbereiche von Onlinediensten.
 
-![Suchen in SMC](../media/Prof-Serv-DSR-Doc-Final_image3.png)Der CSM kann das Portal unter Support.Microsoft.Com ([https://support.microsoft.com/\<local Sprachkürzel\>/premier](https://support.microsoft.com/%3clocal%20language%20code%3e/premier)) ("SMC") aufrufen und Supportanfragen auswählen und prüfen. (Hinweis: Ersetzen Sie das Sprachkürzel in der URL durch Ihr lokales Sprachkürzel).
+![Suchen in SMC](../media/Prof-Serv-DSR-Doc-Final_image3.png)Der CSM kann das Portal unter „Support.Microsoft.Com“ ([https://support.microsoft.com/\<local language code\>/premier](https://support.microsoft.com/%3clocal%20language%20code%3e/premier)) („SMC“) aufrufen sowie Supportanfragen auswählen und prüfen. (Hinweis: Ersetzen Sie das Sprachkürzel in der URL durch Ihr lokales Sprachkürzel).
 
 >[!IMPORTANT]
 >Zusätzlich zum Fallverlauf der Supportfälle in SMC besitzen Kunden möglicherweise auch personenbezogene Daten eines Endbenutzers in Dateien, die von Microsoft während eines Support-Engagements erfasst (oder mit Erlaubnis des Kunden aus dem Onlinedienst entfernt) wurden. Beispiele hierfür sind Kopien der Exchange-Postfächer des Kunden, Azure-VMs oder Datenbanken. Diese personenbezogenen Daten sind im Fallverlauf, d. h. im Ticket, für ein bestimmtes Engagement möglicherweise nicht erwähnt. Um diese Daten überprüfen zu können, muss der Kundenkontakt ein Kontakt mit spezifischer Authentifizierung (über AAD oder MSA) sein, der eine URL für einen Arbeitsbereich im Data Transfer and Management Tool (DTM) des Microsoft-Supports erhalten hat. Ein Kundenkontakt hat zwar Zugriff auf die Dateien, es ist aber keine Übersicht verfügbar, und SMC gibt nicht an, ob Dateien vorhanden sind.
