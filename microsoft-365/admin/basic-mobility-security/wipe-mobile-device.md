@@ -18,18 +18,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: Verwenden Sie die integrierte grundlegende Mobilität und Sicherheit, um Informationen von registrierten Geräten zu entfernen.
-ms.openlocfilehash: 4d854c7d4d81cd0b49ec7f81a49de5478b08f049
-ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
+ms.openlocfilehash: 4627b0cb2d0963ae724c425a6a7ea6279f271856
+ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47336891"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47429950"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Wischen eines mobilen Geräts in grundlegender Mobilität und Sicherheit
 
 Mithilfe von integrierter grundlegender Mobilität und Sicherheit für Microsoft 365 können Sie nur organisatorische Informationen entfernen oder ein Factory-Reset durchführen, um alle Informationen von einem mobilen Gerät zu löschen und in den Werkseinstellungen wiederherzustellen.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Vorabinformationen
 
 Mobile Geräte können vertrauliche Organisationsinformationen speichern und den Zugriff auf die Microsoft 365-Ressourcen Ihrer Organisation ermöglichen. Um die Informationen Ihrer Organisation zu schützen, können Sie Firmendaten zurücksetzen oder entfernen:
     
@@ -39,7 +39,7 @@ Mobile Geräte können vertrauliche Organisationsinformationen speichern und den
 
 - **Wenn ein Gerät gelöscht wird (Factory zurücksetzen oder Entfernen von Unternehmensdaten)**, wird das Gerät aus der Liste der verwalteten Geräte entfernt.
     
-- **Automatisches Zurücksetzen eines Geräts**: Sie können eine grundlegende Mobilitäts-und Sicherheitsrichtlinie einrichten, mit der ein Gerät automatisch zurückgesetzt wird, nachdem der Benutzer erfolglos versucht hat, das Gerätekennwort eine bestimmte Anzahl von Malen einzugeben. Führen Sie dazu die Schritte unter [Create Device Security Policies in Basic Mobility and Security](create-device-security-policies-in-basic-mmobility-and-security.md)aus.
+- **Automatisches Zurücksetzen eines Geräts**: Sie können eine grundlegende Mobilitäts-und Sicherheitsrichtlinie einrichten, mit der ein Gerät automatisch zurückgesetzt wird, nachdem der Benutzer erfolglos versucht hat, das Gerätekennwort eine bestimmte Anzahl von Malen einzugeben. Führen Sie dazu die Schritte unter [Create Device Security Policies in Basic Mobility and Security](create-device-security-policies.md)aus.
     
 - **Wenn Sie die Benutzeroberfläche kennen möchten** , wenn Sie Ihr Gerät löschen, lesen Sie  [Was ist der Einfluss von Benutzern und Geräten?](#whats-the-user-and-device-impact).   
 
@@ -91,4 +91,4 @@ Die Löschung wird sofort an das Mobile Gerät gesendet, und das Gerät ist in A
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Einrichten von grundlegender Mobilität und Sicherheit](set-up-basic-mobility-and-security.md)
+[Einrichten von grundlegender Mobilität und Sicherheit](set-up.md)

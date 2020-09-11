@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,13 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: In diesem Artikel erfahren Sie, wie Sie mit Microsoft-zertifizierten Lösungsanbietern (Partnern) zusammenarbeiten, um Produkte und Dienste für Ihre Organisation oder Schule zu erwerben und zu verwalten.
-keywords: Partner, Lösungsanbieter
-ms.openlocfilehash: 752c9e0237bbdde7be996b5675848e948e866dce
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6cce3640a321d1eab31d527369a303cfde646718
+ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402594"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47430022"
 ---
 # <a name="manage-partner-relationships"></a>Verwalten von Partnerbeziehungen
 
@@ -34,9 +33,13 @@ ms.locfileid: "44402594"
 
 Sie können mit Microsoft-zertifizierten Lösungsanbietern (Partnern) zusammenarbeiten, um Produkte und Dienste für Ihre Organisation oder Schule zu erwerben und zu verwalten. Es gibt ein paar Schritte, wenn es darum geht, Dinge einzurichten.
 
-- Administratoren suchen und kontaktieren einen Partner mithilfe des Formulars unter <a href="https://www.microsoft.com/en-us/solution-providers/home" target="_blank">https://www.microsoft.com/en-us/solution-providers/home</a> .
-- Partner senden eine e-Mail-Anforderung an Kunden, um eine Partnerbeziehung herzustellen.
-- Kunden akzeptieren die Einladung im Microsoft 365 Admin Center und beginnen mit dem Partner zu arbeiten.
+1. Administratoren suchen und kontaktieren einen Partner mithilfe des Formulars unter <a href="https://www.microsoft.com/solution-providers/home" target="_blank">https://www.microsoft.com/solution-providers/home</a> .
+2. Partner senden eine e-Mail-Anforderung an Kunden, um eine Partnerbeziehung herzustellen.
+3. Kunden akzeptieren die Einladung im Microsoft 365 Admin Center und beginnen mit dem Partner zu arbeiten.
+
+## <a name="before-you-begin"></a>Vorabinformationen
+
+Sie müssen entweder ein globaler Administrator oder ein abrechnungsadministrator sein, um diese Schritte ausführen zu können. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-can-a-partner-do-for-my-organization-or-school"></a>Was kann ein Partner für meine Organisation oder Schule tun?
 
@@ -50,7 +53,6 @@ Es gibt verschiedene Möglichkeiten, mit denen ein Partner zusammenarbeiten kann
 | Partner | Sie geben Ihrem Partner ein Benutzerkonto in Ihrem Mandanten und arbeiten mit anderen Microsoft-Diensten in Ihrem Auftrag zusammen. |
 | Advisor | Partner können Kennwörter zurücksetzen und Supportvorfälle für Sie verarbeiten. |
 | Microsoft Products & Service Agreement (MPSA)-Partner | Wenn Sie mit mehreren Partnern über das MPSA-Programm zusammengearbeitet haben, können Sie zulassen, dass die Einkäufe voneinander angezeigt werden. |
-| OEM-PC-Partner | Partner können Geräte-IDs für PCs hochladen, die Sie [mit Autopilot verwalten](https://docs.microsoft.com/microsoft-store/add-profile-to-devices). |
 | Branchenpartner (Linien of Business) | Partner können Branchen-apps entwickeln, übermitteln und verwalten, die für Ihre Organisation oder Schule spezifisch sind. |
 
 ## <a name="find-a-partner"></a>Partner suchen
@@ -82,24 +84,16 @@ Wenn Sie bereits über einen Partner verfügen, aber noch keinen Microsoft-Kunde
 4. Wählen Sie **Annehmen** aus.
 5. Die Liste der Partner, mit denen Sie gerade arbeiten, wird angezeigt. Wählen Sie einen Partner aus, um Details anzuzeigen.
 
-## <a name="remove-partner-admin-privileges"></a>Entfernen von Partneradministrator rechten
+## <a name="remove-partner-admin-roles"></a>Entfernen von Partneradministrator Rollen
 
-Je nach Anforderung des Partners umfasst ein Teil der Annahme der Einladung, dass delegierte Administratorprivilegien für diese erteilt werden. Weitere Informationen finden Sie unter [Delegierte Administratorrechte in Azure AD](https://docs.microsoft.com/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad).
+Je nachdem, welche Anforderung der Partner gestellt hat, stimmen Sie zu, wenn Sie die Einladung annehmen, Ihnen globale und Helpdesk-Administratorrollen zuzuweisen. Wenn Sie diese Administratorrollen einem Partner zuweisen, erteilen Sie Ihnen automatisch Delegierte Administratorrechte in Azure AD. Weitere Informationen finden Sie unter [Delegierte Administratorrechte in Azure AD](https://docs.microsoft.com/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad).
 
-Wenn Sie keine Administratorrechte an den Partner delegieren möchten, können Sie die Einladung abbrechen, anstatt Sie zu akzeptieren.
+Wenn Sie dem Partner die Administratorrollen nicht zuweisen möchten, kündigen Sie die Einladung an, statt sie zu akzeptieren.
 
-Wenn Sie Administratorrechte an einen Partner delegieren, können Sie diese Berechtigungen jederzeit entfernen. Durch das Entfernen von Administratorrechten wird die Partnerbeziehung nicht entfernt. Sie können auch weiterhin mit Ihnen zusammenarbeiten, beispielsweise als Reseller.
+Sie können Administratorrollen jederzeit von einem Partner entfernen. Durch das Entfernen der Administratorrollen wird die Partnerbeziehung nicht entfernt. Sie können weiterhin mit Ihnen in einer anderen Kapazität wie einem Reseller zusammenarbeiten. Wenn Sie entscheiden, dass Sie nicht mehr mit einem Partner zusammenarbeiten möchten, wenden Sie sich an Ihren Partner, um die Beziehung zu beenden.
 
-1. Wechseln Sie im Admin Center zur Seite **Rechnungs**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Abrechnungskonten</a> .
-2. Wählen Sie auf der Seite **Abrechnungskonten** die Registerkarte **Partner Beziehungen** aus.
+1. Wechseln Sie im Admin Center zur Seite **Abrechnungs**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Partner Beziehungen</a> .
+2. Wählen Sie auf der Seite **Partner Beziehungen** die Zeile aus, die den Namen des Partners enthält, den Sie entfernen möchten.
 3. Wählen Sie die Zeile aus, die den Namen des Partners enthält.
-4. Wählen Sie auf der Seite Partner die Option **Administratorrollen entfernen**aus.
-
-## <a name="delete-a-partner-relationship"></a>Löschen einer Partnerbeziehung
-
-Wenn Sie entscheiden, dass Sie nicht mehr mit einem Partner zusammenarbeiten möchten, können Sie die Beziehung beenden. Sie können jedoch nur Beziehungen löschen, bei denen es sich bei dem Partner entweder um einen delegierten Administrator oder einen Berater handelt. Wenden Sie sich für alle anderen Partnertypen an Ihren Partner, um die Beziehung zu beenden.
-
-1. Wechseln Sie im Admin Center zur Seite **Rechnungs**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Abrechnungskonten</a> .
-2. Wählen Sie auf der Seite **Abrechnungskonten** die Registerkarte **Partner Beziehungen** aus.
-3. Wählen Sie die Zeile aus, die den Namen des Partners enthält.
-4. Wählen Sie auf der Seite Partner Detail die Option **Partner löschen**aus.
+4. Wählen Sie auf der Seite Partner die Option **Rollen entfernen**aus.
+5. Wählen Sie im Dialogfeld **Rollen entfernen?** die Option **Ja**aus.
