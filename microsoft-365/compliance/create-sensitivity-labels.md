@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Eine Anforderung für alle Microsoft Information Protection-Lösungen: Erstellen, Konfigurieren und Veröffentlichen Sie Vertraulichkeitsbezeichnungen, um die Dokumente und E-Mails Ihres Unternehmens zu klassifizieren und zu schützen.'
-ms.openlocfilehash: 77d0f99a3e35a62b001395d7491f45d84e95cbd3
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 71e7724873a783f72e8a4088e85f82be68ae75f8
+ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560510"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47427004"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Erstellen und Konfigurieren von Vertraulichkeitsbezeichnungen und deren Richtlinien
 
@@ -71,7 +71,7 @@ Der globale Administrator für Ihre Organisation verfügt über vollständige Be
 
 Um eine vorhandene Bezeichnung zu bearbeiten, markieren Sie sie, und wählen Sie dann die Schaltfläche **Bezeichnung bearbeiten** aus:
 
-![Bearbeiten einer Vertraulichkeitsbezeichnung](../media/edit-sensitivity-label-full.png)
+![Schaltfläche „Etikett bearbeiten“ zum Bearbeiten einer Vertraulichkeitskennzeichnung](../media/edit-sensitivity-label-full.png)
 
 Über diese Schaltfläche wird der Assistent **Vertraulichkeitsbezeichnung bearbeiten** gestartet, mit dem Sie alle Bezeichnungseinstellungen in Schritt 3 ändern können.
 
@@ -87,7 +87,7 @@ Solange Sie Ihre Bezeichnungen noch nicht veröffentlicht haben, stehen sie in A
 
 ### <a name="additional-label-settings-with-security--compliance-center-powershell"></a>Zusätzliche Bezeichnungseinstellungen mit Security & Compliance Center PowerShell
 
-Zusätzliche Bezeichnungseinstellungen sind mit dem Cmdlet [Set-Label](https://docs.microsoft.com/powershell/module/exchange/set-label?view=exchange-ps) von [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) verfügbar.
+Zusätzliche Bezeichnungseinstellungen sind mit dem Cmdlet [Set-Label](https://docs.microsoft.com/powershell/module/exchange/set-label) von [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell) verfügbar.
 
 Beispiel:
 
@@ -107,7 +107,7 @@ Als Ergebnis dieser Konfiguration sehen Benutzer, die Office-Apps mit einer dies
 
 Für die zu unterstützenden Sprachen verwenden Sie die Office [Sprachen-IDs](https://docs.microsoft.com/deployoffice/office2016/language-identifiers-and-optionstate-id-values-in-office-2016#language-identifiers) (auch als Sprach-Tags bezeichnet), und geben Sie Ihre eigene Übersetzung für den Bezeichnungsnamen und die QuickInfo an.
 
-Bevor Sie die Befehle in PowerShell ausführen, müssen Sie zunächst [eine Verbindung zu Security & Compliance Center PowerShell herstellen](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+Bevor Sie die Befehle in PowerShell ausführen, müssen Sie zunächst [eine Verbindung zu Security & Compliance Center PowerShell herstellen](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 
 ```powershell
@@ -178,22 +178,22 @@ Benutzer sehen die neuen Bezeichnungen innerhalb einer Stunde in ihren Office-Ap
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>Zusätzliche Bezeichnungsrichtlinieneinstellungen mit Security & Compliance Center PowerShell
 
-Zusätzliche Bezeichnungsrichtlinieneinstellungen sind mit dem Cmdlet [Set-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy?view=exchange-ps) von [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) verfügbar.
+Zusätzliche Bezeichnungsrichtlinieneinstellungen sind mit dem Cmdlet [Set-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy) von [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell) verfügbar.
 
 Nur für den Azure Information Protection-Client für einheitliche Bezeichnungen können Sie [erweiterte Einstellungen](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) festlegen, die das Festlegen einer anderen Standardbezeichnung für Outlook und das Implementieren von Popupmeldungen in Outlook zum Warnen, Rechtfertigen oder Blockieren des Versendens von E-Mails umfassen. Die vollständige Liste finden Sie unter [Verfügbare erweiterte Einstellungen für Bezeichnungsrichtlinien](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies) im Administratorhandbuch für diesen Client.
 
 ## <a name="use-powershell-for-sensitivity-labels-and-their-policies"></a>Verwenden von PowerShell für Vertraulichkeitsbezeichnungen und deren Richtlinien
 
-Sie können jetzt [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) verwenden, um alle Einstellungen zu erstellen und zu konfigurieren, die in Ihrem Admin Center für Bezeichnungen angezeigt werden. Das bedeutet, dass Sie PowerShell nicht nur für Einstellungen verwenden können, die in den Admin Centers für Bezeichnungen nicht verfügbar sind, sondern dass Sie jetzt auch die Erstellung und Verwaltung von Vertraulichkeitsbezeichnungen und Richtlinien für Vertraulichkeitsbezeichnungen vollständig per Skript durchführen können. 
+Sie können jetzt [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell) verwenden, um alle Einstellungen zu erstellen und zu konfigurieren, die in Ihrem Admin Center für Bezeichnungen angezeigt werden. Das bedeutet, dass Sie PowerShell nicht nur für Einstellungen verwenden können, die in den Admin Centers für Bezeichnungen nicht verfügbar sind, sondern dass Sie jetzt auch die Erstellung und Verwaltung von Vertraulichkeitsbezeichnungen und Richtlinien für Vertraulichkeitsbezeichnungen vollständig per Skript durchführen können. 
 
 In der folgenden Dokumentation finden Sie die unterstützten Parameter und Werte:
 
-- [New-Label](https://docs.microsoft.com/powershell/module/exchange/new-label?view=exchange-ps)
-- [New-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/new-labelpolicy?view=exchange-ps)
-- [Set-Label](https://docs.microsoft.com/powershell/module/exchange/set-label?view=exchange-ps)
-- [Set-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy?view=exchange-ps)
+- [New-Label](https://docs.microsoft.com/powershell/module/exchange/new-label)
+- [New-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/new-labelpolicy)
+- [Set-Label](https://docs.microsoft.com/powershell/module/exchange/set-label)
+- [Set-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy)
 
-Sie können auch [Remove-Label](https://docs.microsoft.com/powershell/module/exchange/remove-label?view=exchange-ps) und [Remove-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-labelpolicy?view=exchange-ps) verwenden, wenn Sie das Löschen von Vertraulichkeitsbezeichnungen oder Richtlinien für Vertraulichkeitsbezeichnungen per Skript durchführen müssen. Bevor Sie jedoch Vertraulichkeitsbezeichnungen löschen, sollten Sie den folgenden Abschnitt lesen.
+Sie können auch [Remove-Label](https://docs.microsoft.com/powershell/module/exchange/remove-label) und [Remove-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-labelpolicy) verwenden, wenn Sie das Löschen von Vertraulichkeitsbezeichnungen oder Richtlinien für Vertraulichkeitsbezeichnungen per Skript durchführen müssen. Bevor Sie jedoch Vertraulichkeitsbezeichnungen löschen, sollten Sie den folgenden Abschnitt lesen.
 
 ## <a name="removing-and-deleting-labels"></a>Entfernen und Löschen von Bezeichnungen
 
