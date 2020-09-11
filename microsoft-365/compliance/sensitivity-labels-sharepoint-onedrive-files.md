@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Administratoren können die Unterstützung für die Sensitivitäts Bezeichnung für Word-, Excel-und PowerPoint-Dateien in SharePoint und OneDrive aktivieren.
-ms.openlocfilehash: d049cdd61d2155267f4e55c612885929e27adaaa
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: 650673bd85ab8a7597c9dcd644872fab2b045e72
+ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845721"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47426972"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive
 
@@ -130,7 +130,7 @@ Der globale Administrator für Ihre Organisation verfügt über vollständige Be
 
 ### <a name="use-powershell-to-enable-support-for-sensitivity-labels"></a>Verwenden von PowerShell zum Aktivieren der Unterstützung für Vertraulichkeits Bezeichnungen
 
-Als Alternative zur Verwendung des Compliance Centers können Sie die Unterstützung für Sensitivitäts Bezeichnungen mithilfe des Cmdlets " [SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) " aus SharePoint Online PowerShell aktivieren.
+Als Alternative zur Verwendung des Compliance Centers können Sie die Unterstützung für Sensitivitäts Bezeichnungen mithilfe des Cmdlets " [SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant) " aus SharePoint Online PowerShell aktivieren.
 
 Wenn Sie über Microsoft 365 Multi-Geo verfügen, müssen Sie PowerShell verwenden, um diese Unterstützung für alle geografischen Standorte zu aktivieren.
 
@@ -156,11 +156,11 @@ Bevor Sie den PowerShell-Befehl ausführen, um Sensitivitäts Bezeichnungen für
 
 #### <a name="run-the-powershell-command-to-enable-support-for-sensitivity-labels"></a>Ausführen des PowerShell-Befehls zum Aktivieren der Unterstützung für Vertraulichkeits Bezeichnungen
 
-Verwenden Sie zum Aktivieren der neuen Funktionen das Cmdlet " [SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) " mit dem Parameter " *EnableAIPIntegration* ":
+Verwenden Sie zum Aktivieren der neuen Funktionen das Cmdlet " [SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant) " mit dem Parameter " *EnableAIPIntegration* ":
 
 1. Stellen Sie eine Verbindung mit SharePoint her, indem Sie ein Arbeits-oder Schulkonto mit globalen Administrator-oder SharePoint-Administratorrechten in Microsoft 365 verwenden. Eine Anleitung dazu finden Sie unter [Erste Schritte mit der Microsoft Office SharePoint Online-Verwaltungsshell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
-    Hinweis: Wenn Sie über Microsoft 365 Multi-Geo verfügen, verwenden Sie den Parameter-URL mit [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice?view=sharepoint-ps), und geben Sie die Website-URL SharePoint Online Administration Center für einen ihrer geografischen Standorte an.
+    Hinweis: Wenn Sie über Microsoft 365 Multi-Geo verfügen, verwenden Sie den Parameter-URL mit [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice), und geben Sie die Website-URL SharePoint Online Administration Center für einen ihrer geografischen Standorte an.
 
 2. Führen Sie den folgenden Befehl aus, und drücken Sie **Y** , um Folgendes zu bestätigen:
 
@@ -210,7 +210,7 @@ Um beispielsweise nach allen Dokumenten zu suchen, die als "vertraulich" bezeich
 
 `InformationProtectionLabelId: 8faca7b8-8d20-48a3-8ea2-0f96310a848e`
 
-Verwenden Sie das [Get-Label-](https://docs.microsoft.com/powershell/module/exchange/get-label?view=exchange-ps) Cmdlet, um die GUIDs für Ihre Vertraulichkeits Bezeichnungen abzurufen:
+Verwenden Sie das [Get-Label-](https://docs.microsoft.com/powershell/module/exchange/get-label) Cmdlet, um die GUIDs für Ihre Vertraulichkeits Bezeichnungen abzurufen:
 
 1. Stellen Sie [zunächst eine Verbindung mit Office 365 Security & Compliance Center PowerShell her](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
@@ -228,7 +228,7 @@ Weitere Informationen zur Verwendung von verwalteten Eigenschaften finden Sie un
 
 Wenn Sie diese neuen Funktionen deaktivieren, werden Dateien, die Sie nach dem Aktivieren von Sensitivitäts Bezeichnungen für SharePoint und OneDrive hochgeladen haben, weiterhin durch die Bezeichnung geschützt, da die Beschriftungseinstellungen weiterhin erzwungen werden. Wenn Sie Sensitivitäts Bezeichnungen auf neue Dateien anwenden, nachdem Sie diese neuen Funktionen deaktiviert haben, können die Volltextsuche, eDiscovery und die gemeinsame Dokumenterstellung nicht mehr verwendet werden.
 
-Um diese neuen Funktionen zu deaktivieren, müssen Sie PowerShell verwenden. Verwenden Sie die SharePoint Online [-](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) Verwaltungsshell und das Cmdlet "SPOTenant", und geben Sie den gleichen *EnableAIPIntegration* -Parameter wie im Abschnitt [Verwenden von PowerShell zum Aktivieren der Unterstützung für Sensitivitäts Bezeichnungen](#use-powershell-to-enable-support-for-sensitivity-labels) beschrieben an. Legen Sie dieses Mal den Parameterwert auf false fest, und drücken Sie **Y** , um Folgendes zu bestätigen:
+Um diese neuen Funktionen zu deaktivieren, müssen Sie PowerShell verwenden. Verwenden Sie die SharePoint Online [-](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant) Verwaltungsshell und das Cmdlet "SPOTenant", und geben Sie den gleichen *EnableAIPIntegration* -Parameter wie im Abschnitt [Verwenden von PowerShell zum Aktivieren der Unterstützung für Sensitivitäts Bezeichnungen](#use-powershell-to-enable-support-for-sensitivity-labels) beschrieben an. Legen Sie dieses Mal den Parameterwert auf false fest, und drücken Sie **Y** , um Folgendes zu bestätigen:
 
 ```PowerShell
 Set-SPOTenant -EnableAIPIntegration $false
@@ -236,6 +236,6 @@ Set-SPOTenant -EnableAIPIntegration $false
 
 Wenn Sie über Microsoft 365 Multi-Geo verfügen, müssen Sie diesen Befehl für jeden ihrer geografischen Standorte ausführen.
 
-## <a name="next-steps"></a>Weitere Schritte
+## <a name="next-steps"></a>Nächste Schritte
 
 Nachdem Sie die Sensitivitäts Bezeichnungen für Office-Dateien in SharePoint und OneDrive aktiviert haben, sollten Sie diese Dateien automatisch mithilfe von Richtlinien mit automatischer Benennung bezeichnen. Weitere Informationen finden Sie unter [Anwenden einer Vertraulichkeits Bezeichnung auf Inhalte automatisch](apply-sensitivity-label-automatically.md).

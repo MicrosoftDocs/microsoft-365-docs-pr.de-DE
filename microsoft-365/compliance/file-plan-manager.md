@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Der Dateiplan bietet erweiterte Verwaltungsfunktionen für Aufbewahrungsbezeichnungen.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: eb35915861c08588fab309210a49585a49d1b9da
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: a92f835658bdeedbc64d3d4f2349900e30ec6dda
+ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399212"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47427024"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>Dateiplan zum Verwalten von Aufbewahrungsbezeichnungen verwenden
 
@@ -163,7 +163,7 @@ So importieren Sie neue Aufbewahrungsbezeichnungen und ändern vorhandene Aufbew
    |CitationUrl|Zeichenfolge|Diese Eigenschaft gibt die URL an, die in der Dateiplanbeschreibung **Bereitstellung/Zitat** angezeigt wird.|
    |CitationJurisdiction|String|Diese Eigenschaft gibt die Zuständigkeiten oder die Agentur an, die im Dateiplandeskriptor **Bereitstellungs/Zitat** angezeigt wird. Beispielsweise „Securities and Exchange Commission, SEC (Börsenaufsichtsbehörde)“|
    |Behördlich|Zeichenfolge|Leer lassen. Diese Eigenschaft wird derzeit nicht verwendet.|
-   |EventType|Zeichenfolge|Diese Eigenschaft gibt die Aufbewahrungsregel an, die der Bezeichnung zugeordnet ist. Sie können einen beliebigen Wert verwenden, der die Regel eindeutig identifiziert. Zum Beispiel:</br>**Name**</br>**Distinguished name (DN)**</br>**GUID** </br>Mit dem Cmdlet [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancerule?view=exchange-ps) können Sie die verfügbaren Aufbewahrungsregeln anzeigen. Da die EventType-Werte individuell für eine Organisation sind, können Sie beim Export der Bezeichnungen aus einer Organisation nicht die Werte für die EventType-Eigenschaft aus dieser Organisation verwenden, um Bezeichnungen in eine andere Organisation zu importieren.|
+   |EventType|Zeichenfolge|Diese Eigenschaft gibt die Aufbewahrungsregel an, die der Bezeichnung zugeordnet ist. Sie können einen beliebigen Wert verwenden, der die Regel eindeutig identifiziert. Zum Beispiel:</br>**Name**</br>**Distinguished name (DN)**</br>**GUID** </br>Mit dem Cmdlet [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancerule) können Sie die verfügbaren Aufbewahrungsregeln anzeigen. Da die EventType-Werte individuell für eine Organisation sind, können Sie beim Export der Bezeichnungen aus einer Organisation nicht die Werte für die EventType-Eigenschaft aus dieser Organisation verwenden, um Bezeichnungen in eine andere Organisation zu importieren.|
    |||
 
    Nachfolgend finden Sie ein Beispiel für die Vorlage mit den Informationen zu Aufbewahrungsbezeichnungen.

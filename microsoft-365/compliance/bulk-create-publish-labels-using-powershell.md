@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Weitere Informationen zum Erstellen und Veröffentlichen von Aufbewahrungsbezeichnungen mithilfe von PowerShell über die Befehlszeile, unabhängig vom Microsoft 365 Compliance Center.
-ms.openlocfilehash: 416746bb849020d76bcf950d397768239d17baf1
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 5b8bb7a08c9794139e840d59f9238d858e15dd4e
+ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126366"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47426982"
 ---
 # <a name="create-and-publish-retention-labels-by-using-powershell"></a>Erstellen und Veröffentlichen von Aufbewahrungsbezeichnungen mithilfe von PowerShell
 
@@ -736,7 +736,7 @@ if ($ResultCSV)
 
 ## <a name="step-4-run-the-powershell-script"></a>Schritt 4: Ausführen des PowerShell-Skripts
 
-Zuerst, [Herstellen einer Verbindung mit Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps).
+Zuerst, [Herstellen einer Verbindung mit Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 Führen Sie dann das Skript aus, durch das die Aufbewahrungsbezeichnungen erstellt und veröffentlicht werden:
   
