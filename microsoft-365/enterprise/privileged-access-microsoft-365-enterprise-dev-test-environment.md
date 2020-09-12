@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: Verwenden Sie diese Test Umgebungs Anleitung, um die privilegierte Zugriffsverwaltung für Ihre Microsoft 365 für Enterprise-Testumgebung zu aktivieren.
-ms.openlocfilehash: 28fd27c3059fe25da5da8aaf8700b84c5989b408
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: d8d92aa86076e323e4b5bb5c8eb1385edcac420c
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695146"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545942"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-for-enterprise-test-environment"></a>Privilegierte Zugriffsverwaltung für Ihre Microsoft 365 für Enterprise-Testumgebung
 
@@ -62,7 +62,7 @@ In dieser Phase stellen Sie sicher, dass die Richtlinie für privilegierten Zugr
 
 ### <a name="test-ability-to-execute-a-task-not-defined-in-a-privileged-access-policy"></a>Testen der Fähigkeit zum Ausführen einer Aufgabe, die nicht in einer privilegierten Zugriffsrichtlinie definiert ist
 
-Stellen Sie zunächst eine Verbindung mit der Exchange-Verwaltungs-PowerShell mit den Anmeldeinformationen eines als globaler Administrator konfigurierten Benutzers in Ihrer Testumgebung her, und versuchen Sie, eine neue Journal Regel zu erstellen. Der [New-JournalRule-](https://docs.microsoft.com/powershell/module/exchange/new-journalrule?view=exchange-ps) Vorgang ist derzeit nicht in einer privilegierten Zugriffsrichtlinie für Ihre Organisation definiert.
+Stellen Sie zunächst eine Verbindung mit der Exchange-Verwaltungs-PowerShell mit den Anmeldeinformationen eines als globaler Administrator konfigurierten Benutzers in Ihrer Testumgebung her, und versuchen Sie, eine neue Journal Regel zu erstellen. Der [New-JournalRule-](https://docs.microsoft.com/powershell/module/exchange/new-journalrule) Vorgang ist derzeit nicht in einer privilegierten Zugriffsrichtlinie für Ihre Organisation definiert.
 
 1. Öffnen Sie auf Ihrem lokalen Computer, und melden Sie sich beim Exchange Online Remote-PowerShell-Modul bei der **Microsoft Corporation**  >  **Microsoft Exchange Online Remote-PowerShell-Modul** mit dem globalen Administratorkonto für Ihre Testumgebung an.
 

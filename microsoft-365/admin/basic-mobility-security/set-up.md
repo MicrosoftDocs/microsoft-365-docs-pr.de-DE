@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Richten Sie grundlegende Mobilität und Sicherheit ein, um die mobilen Geräte ihrer Benutzer zu sichern und zu verwalten.
-ms.openlocfilehash: cb010668d95e51edfbc913caa308ddd830d674e2
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: 079593381d6395c18cd80f3eeab2e16837a2d27a
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430178"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545808"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>Einrichten von grundlegender Mobilität und Sicherheit
 
@@ -36,11 +36,10 @@ Die Geräteverwaltung ist Teil des Security & Compliance Centers, sodass Sie dor
 ## <a name="activate-the-basic-mobility-and-security-service"></a>Aktivieren des grundlegenden Mobilitäts-und Sicherheitsdiensts
 
 1. Melden Sie sich bei Microsoft 365 mit ihrem globalen Administratorkonto an.
-    
 
 2. Wechseln Sie zu [Activate Basic Mobility and Security](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx).
-    
-    Es kann einige Zeit dauern, bis die grundlegende Mobilität und Sicherheit aktiviert ist. Nach Abschluss dieses Vorgangs erhalten Sie eine e-Mail, in der die nächsten Schritte erläutert werden.
+
+   Es kann einige Zeit dauern, bis die grundlegende Mobilität und Sicherheit aktiviert ist. Nach Abschluss dieses Vorgangs erhalten Sie eine e-Mail, in der die nächsten Schritte erläutert werden.
 
 ## <a name="set-up-mobile-device-management"></a>Einrichten der Verwaltung mobiler Geräte
 
@@ -58,38 +57,36 @@ Nachdem Sie die beiden CNAME-Einträge hinzugefügt haben, kehren Sie zum Securi
 
 Um IOS-Geräte wie iPad und iPhones zu verwalten, müssen Sie ein APNs-Zertifikat erstellen.
 
-1. Melden Sie sich bei Microsoft 365 mit ihrem globalen Administratorkonto an.   
+1. Melden Sie sich bei Microsoft 365 mit ihrem globalen Administratorkonto an.
 
-2. Geben Sie im Browsertyp Folgendes ein:  [https://protection.office.com](https://protection.office.com/) .  
+2. Geben Sie im Browsertyp Folgendes ein:  [https://protection.office.com](https://protection.office.com/) .
 
-3. Wählen Sie **Data Loss Prevention**   >  **Device Management**aus, und wählen Sie **APNs-Zertifikat für IOS-Geräte**aus.   
+3. Wählen Sie **Data Loss Prevention**   >  **Device Management**aus, und wählen Sie **APNs-Zertifikat für IOS-Geräte**aus.
 
-4. Klicken Sie auf der Seite Einstellungen für den Apple Push Notification-Zertifikat auf **weiter**.  
+4. Klicken Sie auf der Seite Einstellungen für den Apple Push Notification-Zertifikat auf **weiter**.
 
 5. Wählen Sie **Download your CSR File**aus,   und speichern Sie die Zertifikatsignaturanforderung an einer beliebigen Stelle auf Ihrem Computer, an der Sie sich erinnern. Wählen Sie **weiter**aus.
-    
+
 6. Auf der Seite APNs-Zertifikat erstellen:
-    
-    - Wählen Sie Apple APNS Portal aus, um das Apple Push Certificates-Portal zu öffnen.
-    - Sign in with an Apple ID.
 
-    >[!IMPORTANT]
-    >Use a company Apple ID associated with an email account that will remain with your organization even if the user who manages the account leaves. Save this ID because you'll need to use the same ID when it's time to renew the certificate.
+   - Wählen Sie Apple APNS Portal aus, um das Apple Push Certificates-Portal zu öffnen.
+   - Sign in with an Apple ID.
 
-    - Wählen Sie Zertifikat erstellen aus, und akzeptieren Sie die Nutzungsbedingungen.
-    
-    - Browseto die Zertifikatsignaturanforderung, die Sie von Microsoft 365 und selectUpload auf Ihren Computer heruntergeladen haben.
-    
-    - Download beginntThe APN-Zertifikat, das vom Apple Push Certificate Portal auf Ihrem Computer erstellt wurde.
+     > [!IMPORTANT]
+     > Use a company Apple ID associated with an email account that will remain with your organization even if the user who manages the account leaves. Save this ID because you'll need to use the same ID when it's time to renew the certificate.
 
-    >[!TIP]
-    >If you're having trouble downloading the certificate, refresh your browser.
+   - Wählen Sie Zertifikat erstellen aus, und akzeptieren Sie die Nutzungsbedingungen.
+   - Wechseln Sie zu der Zertifikatsignaturanforderung, die Sie von Microsoft 365 und selectUpload auf Ihren Computer heruntergeladen haben.
+   - Download the APN certificate created by the Apple Push Certificate Portal to your computer.
 
-7. Wechseln Sie zurück zu Microsoft 365, und wählen Sie **weiter**aus.   
+     > [!TIP]
+     > If you're having trouble downloading the certificate, refresh your browser.
 
-8.  Browse to the APN certificate you downloaded from the Apple Push Certificates Portal.   
+7. Wechseln Sie zurück zu Microsoft 365, und wählen Sie **weiter**aus.
 
-9. Wählen Sie  **Fertig stellen**aus.  
+8.  Browse to the APN certificate you downloaded from the Apple Push Certificates Portal.
+
+9. Wählen Sie  **Fertig stellen**aus.
 
 ### <a name="step-3-recommended-set-up-multi-factor-authentication"></a>Schritt 3: (empfohlen) Einrichten der mehrstufigen Authentifizierung
 
@@ -103,25 +100,30 @@ Nachdem Sie MFA eingerichtet haben, kehren Sie zum Security & Compliance Center 
 
 Der nächste Schritt ist das Erstellen und Bereitstellen von Gerätesicherheitsrichtlinien, die zum Schutz Ihrer Microsoft 365-Organisationsdaten beitragen. Sie können beispielsweise dazu beitragen, Datenverluste zu vermeiden, wenn ein Benutzer sein Gerät verliert, indem er eine Richtlinie zum Sperren von Geräten nach fünf Minuten Inaktivität und Abwischen von Geräten nach drei Anmeldefehlern erstellt.
 
-1. Melden Sie sich bei Microsoft 365 mit ihrem globalen Administratorkonto an. 
+1. Melden Sie sich bei Microsoft 365 mit ihrem globalen Administratorkonto an.
 
 2. Wählen Sie [Mobile Geräteverwaltung aktivieren](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx)aus. Wenn der Dienst aktiviert ist, wird anstelle der Aktivierungsschritte ein Link zum Verwalten von [Geräten](https://admin.microsoft.com/adminportal/home#/MifoDevices)angezeigt   .
-    
+
 3. Wechseln Sie zu **Geräterichtlinien**.
 
-     :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Grundlegende Sicherheits-und mobilitätsrichtlinien Einstellungen":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Grundlegende Sicherheits-und mobilitätsrichtlinien Einstellungen":::
 
 4. Erstellen und Bereitstellen von für Ihre Organisation geeigneten Gerätesicherheitsrichtlinien, indem Sie die Schritte unter [Create Device Security Policies in Basic Mobility and Security](create-device-security-policies.md)ausführen.
 
->[!TIP]
-    - Wenn Sie eine neue Richtlinie erstellen, möchten Sie möglicherweise festlegen, dass die Richtlinie Zugriffs-und Richtlinienverstöße zulässt, bei denen ein Benutzergerät nicht mit der Richtlinie konform ist. Auf diese Weise können Sie sehen, wie viele mobile Geräte von der Richtlinie betroffen sind, ohne den Zugriff auf Microsoft 365 zu blockieren.<br/>– Bevor Sie eine neue Richtlinie für alle Benutzer in Ihrer Organisation bereitstellen, sollten Sie Sie auf den Geräten testen, die von einer kleinen Anzahl von Benutzern verwendet werden.<br/>– Informieren Sie Ihre Organisation vor dem Bereitstellen von Richtlinien darüber, welche potenziellen Auswirkungen das Registrieren eines Geräts in grundlegende Mobilität und Sicherheit haben kann. Je nachdem, wie Sie die Richtlinien einrichten, können Geräte, die nicht den Richtlinien entsprechen (nicht konforme Geräte), den Zugriff auf Microsoft 365 sperren. Für nicht konforme Geräte sind möglicherweise auch apps installiert, Fotos und andere persönliche Informationen, die auf einem registrierten Gerät gelöscht werden können, wenn das Gerät gelöscht wird. Weitere Informationen finden Sie unter [wischen eines mobilen Geräts in Basic Mobility and Security](wipe-mobile-device.md).
-    
+> [!TIP]
+>
+> - Wenn Sie eine neue Richtlinie erstellen, möchten Sie möglicherweise festlegen, dass die Richtlinie Zugriffs-und Richtlinienverstöße zulässt, bei denen ein Benutzergerät nicht mit der Richtlinie konform ist. Auf diese Weise können Sie sehen, wie viele mobile Geräte von der Richtlinie betroffen sind, ohne den Zugriff auf Microsoft 365 zu blockieren.
+>
+> - Bevor Sie eine neue Richtlinie für alle Benutzer in Ihrer Organisation bereitstellen, sollten Sie Sie auf den Geräten testen, die von einer kleinen Anzahl von Benutzern verwendet werden.
+>
+> - Lassen Sie Ihre Organisation vor dem Bereitstellen von Richtlinien auch die potenziellen Auswirkungen der Registrierung eines Geräts in grundlegende Mobilität und Sicherheit kennen. Je nachdem, wie Sie die Richtlinien einrichten, können Geräte, die nicht den Richtlinien entsprechen (nicht konforme Geräte), den Zugriff auf Microsoft 365 sperren. Für nicht konforme Geräte sind möglicherweise auch apps installiert, Fotos und andere persönliche Informationen, die auf einem registrierten Gerät gelöscht werden können, wenn das Gerät gelöscht wird. Weitere Informationen finden Sie unter [wischen eines mobilen Geräts in Basic Mobility and Security](wipe-mobile-device.md).
+
 ## <a name="make-sure-users-enroll-their-devices"></a>Sicherstellen, dass Benutzer ihre Geräte registrieren
 
 Nachdem Sie eine Richtlinie für die Verwaltung mobiler Geräte erstellt und bereitgestellt haben, erhält jeder lizenzierte Microsoft 365-Benutzer in Ihrer Organisation, auf den die Geräterichtlinie angewendet wird, eine Registrierungsnachricht, wenn Sie sich das nächste Mal bei Microsoft 365 von Ihrem mobilen Gerät aus anmelden. Sie müssen die Registrierungs-und Aktivierungsschritte abschließen, bevor Sie auf Microsoft 365-e-Mails und-Dokumente zugreifen können. Weitere Informationen finden Sie unter [Registrieren Ihres mobilen Geräts mit Basic Mobility and Security](enroll-your-mobile-device.md).
 
->[!IMPORTANT]
->Wenn die bevorzugte Sprache eines Benutzers vom Registrierungsvorgang nicht unterstützt wird, erhalten Benutzer möglicherweise Registrierungs Benachrichtigungen und Schritte auf Ihren mobilen Geräten in einer anderen Sprache. Nicht alle in Microsoft 365 unterstützten Sprachen werden derzeit für den Registrierungsprozess auf mobilen Geräten unterstützt.
+> [!IMPORTANT]
+> Wenn die bevorzugte Sprache eines Benutzers vom Registrierungsvorgang nicht unterstützt wird, erhalten Benutzer möglicherweise Registrierungs Benachrichtigungen und Schritte auf Ihren mobilen Geräten in einer anderen Sprache. Nicht alle in Microsoft 365 unterstützten Sprachen werden derzeit für den Registrierungsprozess auf mobilen Geräten unterstützt.
 
 Benutzer mit Android-oder IOS-Geräten sind erforderlich, um die Unternehmens Portal-App im Rahmen des Registrierungsprozesses zu installieren.
 

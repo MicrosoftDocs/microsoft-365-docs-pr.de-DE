@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 9c289006fc1501865b0cf5529c308a0986895504
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: 2dfaf33a837a74d92ec9bbbbb7f04b726e7f3744
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898140"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547859"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Richtlinienempfehlungen für sichere E-Mails
 
@@ -33,13 +33,15 @@ Diese Empfehlungen erfordern, dass Ihre Benutzer moderne e-Mail-Clients verwende
 
 ## <a name="updating-common-policies-to-include-email"></a>Aktualisieren allgemeiner Richtlinien zum Einschließen von e-Mails
 
-Das folgende Diagramm veranschaulicht die allgemeinen Richtlinien für Identitäts-und Geräte Zugriff und gibt an, welche Richtlinien aktualisiert werden müssen, um e-Mails zu schützen. Beachten Sie das Hinzufügen einer neuen Regel für Exchange Online zum Blockieren von ActiveSync-Clients. Dadurch wird die Verwendung von Outlook Mobile erzwungen.
+Das folgende Diagramm zeigt, welche Richtlinien aus den allgemeinen Identitäts-und Gerätezugriffs Richtlinien aktualisiert werden können, um e-Mails zu schützen.
 
-![Zusammenfassung der Richtlinienaktualisierungen zum Schutz von e-Mails](../media/identity-access-ruleset-mail.png)
+[![Zusammenfassung der Richtlinienaktualisierungen für den Schutz des Zugriffs auf Teams und deren abhängigen Dienste](../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png)
 
-[Anzeigen einer größeren Version dieses Bilds](https://raw.githubusercontent.com/MicrosoftDocs/microsoft-365-docs/public/microsoft-365/media/identity-access-ruleset-mail.png)
+[Anzeigen einer größeren Version dieses Bilds](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png)
 
-Wenn Sie Exchange Online und Outlook in den Bereich der Richtlinien einbezogen haben, wenn Sie Sie eingerichtet haben, müssen Sie nur die neue Richtlinie erstellen, um ActiveSync-Clients zu blockieren. Überprüfen Sie die in der folgenden Tabelle aufgeführten Richtlinien, und nehmen Sie entweder die empfohlenen Ergänzungen vor, oder bestätigen Sie, dass diese bereits enthalten sind. Jede Regel verweist auf die zugehörigen Konfigurationsanweisungen in [allgemeinen Identitäts-und Gerätezugriffs Richtlinien](identity-access-policies.md).
+Beachten Sie das Hinzufügen einer neuen Richtlinie für Exchange Online zum Blockieren von ActiveSync-Clients. Dadurch wird die Verwendung von Outlook Mobile erzwungen.
+
+Wenn Sie Exchange Online und Outlook in den Bereich der Richtlinien einbezogen haben, wenn Sie Sie eingerichtet haben, müssen Sie nur die neue Richtlinie erstellen, um ActiveSync-Clients zu blockieren. Überprüfen Sie die in der folgenden Tabelle aufgeführten Richtlinien, und nehmen Sie entweder die empfohlenen Ergänzungen vor, oder bestätigen Sie, dass diese bereits enthalten sind. Jede Richtlinie verweist auf die zugehörigen Konfigurationsanweisungen in [allgemeinen Identitäts-und Gerätezugriffs Richtlinien](identity-access-policies.md).
 
 |Schutzebene|Richtlinien|Weitere Informationen|
 |:---------------|:-------|:----------------|
@@ -55,7 +57,7 @@ Wenn Sie Exchange Online und Outlook in den Bereich der Richtlinien einbezogen h
 
 ## <a name="block-activesync-clients"></a>Blockieren von ActiveSync-Clients
 
-Mit dieser Richtlinie wird verhindert, dass ActiveSync-Clients andere bedingte Zugriffsregeln umgehen. Die Regelkonfiguration gilt nur für ActiveSync-Clients. Wenn Sie die Option **[App-Schutzrichtlinie anfordern](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)** auswählen, blockiert diese Richtlinie ActiveSync-Clients. Details zum Erstellen dieser Richtlinie finden Sie unter [erfordern von App-Schutzrichtlinien für Cloud-App-Zugriff mit bedingtem Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
+Mit dieser Richtlinie wird verhindert, dass ActiveSync-Clients andere Richtlinien für bedingten Zugriff umgehen. Die Richtlinienkonfiguration gilt nur für ActiveSync-Clients. Wenn Sie die Option **[App-Schutzrichtlinie anfordern](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)** auswählen, blockiert diese Richtlinie ActiveSync-Clients. Details zum Erstellen dieser Richtlinie finden Sie unter [erfordern von App-Schutzrichtlinien für Cloud-App-Zugriff mit bedingtem Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
 
 1. Befolgtes "Schritt 2: Konfigurieren einer Azure AD Richtlinie für den bedingten Zugriff für Exchange Online mit ActiveSync (EAS)" in [Szenario 1: Office 365 apps erfordern genehmigte apps mit App-Schutzrichtlinien](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), wodurch verhindert wird, dass Exchange ActiveSync-Clients die Standardauthentifizierung für die Verbindung mit Exchange Online nutzen.
 
@@ -67,4 +69,9 @@ Weitere Informationen finden Sie unter [Einrichten neuer Office 365 Nachrichten 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-[Weitere Informationen zu Richtlinienempfehlungen zum Schutz von SharePoint-Websites und -Dokumenten](sharepoint-file-access-policies.md)
+![Schritt 4: Richtlinien für Microsoft 365 Cloud-apps](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+
+Konfigurieren von Richtlinien für bedingten Zugriff für:
+
+- [Microsoft Teams](teams-access-policies.md)
+- [SharePoint](secure-email-recommended-policies.md)

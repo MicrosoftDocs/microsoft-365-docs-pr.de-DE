@@ -16,16 +16,16 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 41ead64a7a94dcd5afb22a311d7637326949fc7c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 4dde82ef9deb4d515ea5223470f7c96c1fe28a26
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685654"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546356"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Richtlinien Empfehlungen für das Sichern von teamchats,-Gruppen und-Dateien
 
-In diesem Artikel wird beschrieben, wie Sie die empfohlenen Identitäts-und Gerätezugriffs Richtlinien implementieren, um Microsoft Teams-Chats, Gruppen und Inhalte wie Dateien und Kalender zu schützen. Dieser Leitfaden basiert auf den [allgemeinen Richtlinien für Identitäts-und Geräte Zugriff](identity-access-policies.md)mit zusätzlichen Informationen, die für Teams spezifisch sind. Da Teams in unsere anderen Produkte integriert werden, finden Sie weitere Informationen unter [Richtlinien Empfehlungen zum Sichern von SharePoint-Websites und-Dateien](sharepoint-file-access-policies.md) und [Richtlinien Empfehlungen zum Sichern von e-Mails](secure-email-recommended-policies.md).
+In diesem Artikel wird beschrieben, wie Sie die empfohlenen Identitäts-und Gerätezugriffs Richtlinien implementieren, um Microsoft Teams-Chats,-Gruppen und-Inhalte wie Dateien und Kalender zu schützen. Dieser Leitfaden basiert auf den [allgemeinen Richtlinien für Identitäts-und Geräte Zugriff](identity-access-policies.md)mit zusätzlichen Informationen, die für Teams spezifisch sind. Da Teams in unsere anderen Produkte integriert werden, finden Sie weitere Informationen unter [Richtlinien Empfehlungen zum Sichern von SharePoint-Websites und-Dateien](sharepoint-file-access-policies.md) und [Richtlinien Empfehlungen zum Sichern von e-Mails](secure-email-recommended-policies.md).
 
 Diese Empfehlungen basieren auf drei verschiedenen Ebenen der Sicherheit und des Schutzes für Teams, die basierend auf der Granularität Ihrer Anforderungen angewendet werden können: Baseline, sensibel und stark reguliert. Weitere Informationen zu diesen Sicherheitsebenen und den empfohlenen Richtlinien, auf die diese Empfehlungen verweisen, finden Sie unter [Identitäts-und Gerätezugriffs Konfigurationen](microsoft-365-policies-configurations.md).
 
@@ -38,25 +38,27 @@ Sie müssen abhängige Dienste nicht für den Einstieg in Microsoft Teams aktivi
 - Microsoft 365-Gruppen
 - SharePoint-Teamwebsites
 - OneDrive for Business
-- Postfächer
+- Exchange-Postfächer
 - Stream Videos and Planner Plans (wenn diese Dienste aktiviert sind)
 
 ## <a name="updating-common-policies-to-include-teams"></a>Aktualisieren allgemeiner Richtlinien für die Einbeziehung von Teams
 
-Das folgende Diagramm veranschaulicht die empfohlenen Richtlinien für den Schutz von Chat, Gruppen und Inhalten in Microsoft Teams. Das Bleistiftsymbol gibt an, welche Richtlinien erneut besucht werden müssen, um sicherzustellen, dass Teams und abhängige Dienste in der Zuweisung von Cloud-Apps enthalten sind.
+Um Chat, Gruppen und Inhalte in Microsoft Teams zu schützen, zeigt das folgende Diagramm, welche Richtlinien aus den allgemeinen Richtlinien für Identitäts-und Geräte Zugriff zu aktualisieren sind. Stellen Sie sicher, dass für jede zu aktualisierende Richtlinie Teams und abhängige Dienste in der Zuweisung von Cloud-Apps enthalten sind.
 
-![Ein Diagramm, in dem gezeigt wird, wie Microsoft Teams auf verschiedenen Geräten verwendet werden.](../media/identity-access-ruleset-teams.png)
+[![Zusammenfassung der Richtlinienaktualisierungen für den Schutz des Zugriffs auf Teams und deren abhängigen Dienste](../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)
+
+[Anzeigen einer größeren Version dieses Bilds](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)
 
 Hierbei handelt es sich um die abhängigen Dienste, die in die Zuweisung von Cloud-Apps für Teams einbezogen werden sollen:
 
-- Microsoft Teams
-- SharePoint Online und OneDrive for Business
+- Microsoft Teams
+- SharePoint und OneDrive for Business
 - Exchange Online
 - Skype for Business Online
 - Microsoft-Datenstrom (Besprechungsaufzeichnungen)
 - Microsoft Planner (planerische Aufgaben und Plandaten)
 
-In der folgenden Tabelle sind die Richtlinien aufgeführt, die erneut besucht werden müssen, sowie Links zu den einzelnen Richtlinien in [allgemeinen Identitäts-und Gerätezugriffs Richtlinien](identity-access-policies.md), die eine breitere Regelsatz für alle Office-Anwendungen aufweisen.
+Diese Tabelle enthält eine Liste der Richtlinien, die erneut besucht werden müssen, sowie Links zu den einzelnen Richtlinien in den allgemeinen [Identitäts-und Gerätezugriffs Richtlinien](identity-access-policies.md), bei denen die umfassendere Richtlinie für alle Office-Anwendungen festgelegt ist.
 
 |Schutzebene|Richtlinien|Weitere Informationen für die Implementierung von Teams|
 |:---------------|:-------|:----------------|
@@ -76,13 +78,13 @@ In der folgenden Tabelle sind die Richtlinien aufgeführt, die erneut besucht we
 
 Als Referenz zeigt das folgende Diagramm die Dienste, auf denen Teams basiert. Weitere Informationen und weitere Illustrationen finden Sie unter [Microsoft Teams und verwandte Produktivitätsdienste in Microsoft 365 für IT-Architekten](../solutions/productivity-illustrations.md).
 
-![Diagramm mit Abhängigkeiten von Teams in SharePoint Online, OneDrive für Unternehmen und Exchange.](../media/identity-access-logical-architecture-teams.png)
+![Diagramm mit Microsoft Teams-Abhängigkeiten von SharePoint, OneDrive für Unternehmen und Exchange](../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
 
 ## <a name="enabling-guest-and-external-access-for-teams"></a>Aktivieren von Gast-und externem Zugriff für Teams
 
 In Azure AD sind Gast-und externe Benutzer identisch. Der Benutzertyp für diese beiden Typen ist Gast. Gastbenutzer sind B2B-Benutzer. Microsoft Teams unterscheidet zwischen Gastbenutzern und externen Benutzern in der app. Zwar ist es wichtig zu verstehen, wie diese in Microsoft Teams behandelt werden, aber beide Benutzertypen sind in Azure AD B2B-Benutzer, und die empfohlenen Richtlinien für B2B-Benutzer gelten für beide. Empfohlene Richtlinien zum Zulassen des Gastzugriffs finden Sie unter [Richtlinien für das Zulassen von Gast-und externen B2B-Zugriffen](identity-access-policies-guest-access.md).
 
-### <a name="guest-access-in-teams"></a>Gastzugriff in Microsoft Teams
+### <a name="guest-access-in-teams"></a>Gastzugriff in Teams
 
 Zusätzlich zu den Richtlinien für Benutzer, die für Ihr Unternehmen oder Ihre Organisation intern sind, können Administratoren den Gastzugriff aktivieren, um Personen, die sich außerhalb Ihres Unternehmens oder Ihrer Organisation befinden, für den Zugriff auf Microsoft Teams-Ressourcen und die Interaktion mit internen Personen für Gruppenunterhaltungen, Chats und Besprechungen zu ermöglichen. Weitere Informationen zum Gastzugriff finden Sie unter folgendem Link: [Teams Gastzugriff](https://docs.microsoft.com/microsoftteams/guest-access)
 
@@ -120,6 +122,10 @@ Weitere Informationen zu app-Berechtigungsrichtlinien finden Sie [unter Verwalte
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-[Informationen zum Aktivieren des bedingten Zugriffs für Exchange Online](secure-email-recommended-policies.md)
+![Schritt 4: Richtlinien für Microsoft 365 Cloud-apps](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
+Konfigurieren von Richtlinien für bedingten Zugriff für:
+
+- [Exchange Online](secure-email-recommended-policies.md)
+- [SharePoint](secure-email-recommended-policies.md)
 

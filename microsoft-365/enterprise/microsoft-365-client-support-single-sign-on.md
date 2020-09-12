@@ -5,7 +5,7 @@ author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - Strat_O365_Enterprise
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: In diesem Artikel erfahren Sie, welche Plattformen, Clients und PowerShell-Module einmaliges Anmelden für Microsoft 365 unterstützen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8ab973fcfb0cc61378ee06c115264e308d8ec3ad
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 6f6398736c8ead072374fbc14ee04eec63d3ad18
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332004"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546410"
 ---
 # <a name="microsoft-365-client-app-support--single-sign-on"></a>Microsoft 365-Client-App-Unterstützung – einmaliges Anmelden
 
@@ -59,7 +59,7 @@ Die neuesten Versionen der folgenden Clients unterstützen einmaliges Anmelden:
 
 | | | | | | |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| ![Azure-Symbol](../media/o365-azure-64x64.png) <br> [Azure AD <br> PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) | ![Exchange-Symbol](../media/o365-exchange-64x64.png) <br> [Exchange Online <br> PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps) | ![SharePoint-Symbol](../media/o365-sharepoint-64x64.png) <br> [SharePoint Online <br> PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+| ![Azure-Symbol](../media/o365-azure-64x64.png) <br> [Azure AD <br> PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) | ![Exchange-Symbol](../media/o365-exchange-64x64.png) <br> [Exchange Online <br> PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell) | ![SharePoint-Symbol](../media/o365-sharepoint-64x64.png) <br> [SharePoint Online <br> PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
 > [!NOTE]
 > <sup>1</sup> Unterstützung für Edge-und Kaizala in ios in Kürze verfügbar. <br>

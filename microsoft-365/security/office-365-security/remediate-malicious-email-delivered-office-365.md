@@ -4,7 +4,7 @@ author: msfttracyp
 ms.author: tracyp
 manager: dansimp
 ms.topic: article
-ms.service: Microsoft Threat Protection
+ms.service: O365-seccomp
 audience: admin
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Behebung von Bedrohungen
 appliesto:
 - Microsoft Threat Protection
-ms.openlocfilehash: 44f20b29dcc88b1d991f9e93929aacc0e8aece32
-ms.sourcegitcommit: c76c025fe75cd9c06eccbf9c7fc887b09da36659
+ms.openlocfilehash: 2542f7af8a34088a79aae8a14f7ccdb8ea8fd121
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46903883"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547240"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Beheben von in Office 365 zugestellten böswilligen e-Mails
 
@@ -39,7 +39,6 @@ Um beispielsweise Nachrichtenkopfzeilen anzeigen oder e-Mail-Inhalte herunterlad
 |Verwenden von Threat Explorer (und Echtzeiterkennung) zum Analysieren von Bedrohungen |Globaler Administrator <br> Sicherheitsadministrator <br> Sicherheitsleseberechtigter|Nein|
 |Verwenden von Threat Explorer (und Echtzeiterkennung) zum Anzeigen von Kopfzeilen für e-Mail-Nachrichten und zum Herunterladen von isolierten e-Mail-Nachrichten in der Vorschau|Globaler Administrator <br> Sicherheitsadministrator <br>Sicherheitsleseberechtigter|Nein|
 |Verwenden von Threat Explorer zum Anzeigen von Kopfzeilen und Herunterladen von an Postfächern zugestellten e-Mails|Globaler Administrator <br>Sicherheitsadministrator <br> Sicherheitsleseberechtigter <br> Vorschau|Ja|
-
 
 > [!NOTE]
 > Vorschau ist eine *Rolle*, keine *Rollengruppe*. Die Vorschau Rolle muss einer vorhandenen Rollengruppe für Office 365 hinzugefügt werden. Die *globale Administrator Rolle* wird im [Microsoft 365 Admin Center](https://admin.microsoft.com)zugewiesen. Die Rollen "Sicherheits Administrator" und "Sicherheits Leser" werden in den [Sicherheits-und Compliance Centern](https://protection.office.com)zugewiesen. Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Security and Compliance Centers](permissions-in-the-security-and-compliance-center.md).
@@ -93,7 +92,7 @@ Das Wartungs Center zeigt alle Korrekturaktionen für die letzten 30 Tage an. Du
 
    - **Keine Aktion**möglich: e-Mails an den folgenden Speicherorten können in Korrekturaktionen nicht bearbeitet oder verschoben werden:
 
-     - Quarantäne
+     - Quarantine
      - Hart gelöschter Ordner
      - Lokal/extern
      - Fehlgeschlagen/gelöscht

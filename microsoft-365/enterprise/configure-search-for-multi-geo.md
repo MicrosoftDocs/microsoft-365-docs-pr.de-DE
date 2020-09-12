@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: Hier erfahren Sie, wie Sie die Suche in einer Multi-Geo-Umgebung konfigurieren. Nur einige Clients, beispielsweise OneDrive für Unternehmen, können Ergebnisse in einer Multi-Geo-Umgebung zurückgeben.
-ms.openlocfilehash: 22c71661e8f3b643a1fd7afa33b38584a1cd1be5
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: e213e93cfbc967a723b4d27f4b36a83fe6687da9
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695067"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547152"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Konfigurieren der Suche für Microsoft 365 Multi-Geo
 
@@ -30,15 +30,11 @@ Ein Benutzer an einem geografischen Standort kann zum Beispiel nach Inhalten an 
 
 Diese Clients können von allen geografischen Standorten Ergebnisse zurückgeben:
 
--   OneDrive for Business
-
--   Delve
-
--   Die SharePoint-Homepage
-
--   Das Suchcenter
-
--   Benutzerdefinierte Suchanwendungen, die die SharePoint-Suche-API verwenden
+- OneDrive for Business
+- Delve
+- Die SharePoint-Homepage
+- Das Suchcenter
+- Benutzerdefinierte Suchanwendungen, die die SharePoint-Suche-API verwenden
 
 ### <a name="onedrive-for-business"></a>OneDrive for Business
 
@@ -135,14 +131,12 @@ Einige Suchfunktionen, die Sie möglicherweise bereits kennen, werden in einer M
 
 Alle Suchclients verwenden die vorhandenen SharePoint-Suche-REST-APIs für die Interaktion mit den Suchindizes.
 
-<img src="../media/configure-search-for-multi-geo-image1-1.png" />
+![Diagramm, in dem gezeigt wird, wie SharePoint-Such Rest-APIs mit den Suchindizes interagieren](../media/configure-search-for-multi-geo-image1-1.png)
 
 1. Ein Suchclient ruft den REST-Endpunkt für die Suche mit der Abfrageeigenschaft „EnableMultiGeoSearch= true“ auf.
 2. Die Abfrage wird an alle geografischen Standorte im Mandanten gesendet.
 3. Die Suchergebnisse von jedem geografischen Standort werden zusammengeführt und bewertet.
 4. Der Client erhält einheitliche Suchergebnisse.
-
-
 
 <span id="_Set_up_a" class="anchor"><span id="_Ref501388384" class="anchor"></span></span>Beachten Sie, dass die Suchergebnisse erst dann zusammengeführt werden, wenn die Ergebnisse von allen geografischen Standorten abgerufen wurden. Dies bedeutet, dass Multi-Geo-Suchen im Vergleich zu den Suchen in einer Umgebung mit nur einem geografischen Standort eine zusätzliche Wartezeit aufweisen.
 
@@ -151,29 +145,32 @@ Alle Suchclients verwenden die vorhandenen SharePoint-Suche-REST-APIs für die I
 
 Jedes Suchcenter verfügt über mehrere Suchsparten, und Sie müssen jede Sparte einzeln einrichten.
 
-1.  Stellen Sie sicher, dass Sie diese Schritte mit einem Konto ausführen, das über die Berechtigung zum Bearbeiten der Suchergebnisseite und des Suchergebnisse-Webparts verfügt.
+1. Stellen Sie sicher, dass Sie diese Schritte mit einem Konto ausführen, das über die Berechtigung zum Bearbeiten der Suchergebnisseite und des Suchergebnisse-Webparts verfügt.
 
-2.  Navigieren Sie zur Seite mit den Suchergebnissen (siehe [Liste](https://support.office.com/article/174d36e0-2f85-461a-ad9a-8b3f434a4213) der Suchergebnisseiten).
+2. Navigieren Sie zur Seite mit den Suchergebnissen (siehe [Liste](https://support.office.com/article/174d36e0-2f85-461a-ad9a-8b3f434a4213) der Suchergebnisseiten).
 
-3.  Wählen Sie die Sparte, die Sie einrichten möchten, klicken Sie in der oberen rechten Ecke auf das Zahnradsymbol für **Einstellungen**, und klicken Sie auf **Seite bearbeiten**. Die Seite mit den Suchergebnissen wird im Bearbeitungsmodus geöffnet.
+3. Wählen Sie die Sparte, die Sie einrichten möchten, klicken Sie in der oberen rechten Ecke auf das Zahnradsymbol für **Einstellungen**, und klicken Sie auf **Seite bearbeiten**. Die Seite mit den Suchergebnissen wird im Bearbeitungsmodus geöffnet.
 
-     ![](../media/configure-search-for-multi-geo-image2.png)
-1.  Bewegen Sie im Suchergebnisse-Webpart den Mauszeiger in die obere rechte Ecke des Webparts, klicken Sie auf den Pfeil, und klicken Sie dann im Menü auf **Webpart bearbeiten**. Der Toolbereich für das Suchergebnisse-Webpart wird unter dem Menüband oben rechts auf der Seite geöffnet. ![](../media/configure-search-for-multi-geo-image3.png)
+   ![Bearbeiten der Seitenauswahl in Einstellungen](../media/configure-search-for-multi-geo-image2.png)
 
-1.  Wählen Sie im Webpart-Toolbereich im Abschnitt **Einstellungen** unter **Einstellungen für das Ergebnissteuerelement** die Option **Multi-Geo-Ergebnisse anzeigen**, damit das Suchergebnisse-Webpart Ergebnisse von allen geografischen Standorten anzeigt.
+4. Bewegen Sie im Suchergebnisse-Webpart den Mauszeiger in die obere rechte Ecke des Webparts, klicken Sie auf den Pfeil, und klicken Sie dann im Menü auf **Webpart bearbeiten**. Der Toolbereich für das Suchergebnisse-Webpart wird unter dem Menüband oben rechts auf der Seite geöffnet.
 
-2.  Klicken Sie auf **OK**, um Ihre Änderungen zu speichern und den Webpart-Toolbereich zu schließen.
+   ![Bearbeiten der Webparts-Auswahl](../media/configure-search-for-multi-geo-image3.png)
 
-3.  Überprüfen Sie Ihre Änderungen an dem Suchergebnisse-Webpart, indem Sie im Hauptmenü auf der Registerkarte „Seite“ auf **Einchecken** klicken.
+5. Wählen Sie im Webpart-Toolbereich im Abschnitt **Einstellungen** unter **Einstellungen für das Ergebnissteuerelement** die Option **Multi-Geo-Ergebnisse anzeigen**, damit das Suchergebnisse-Webpart Ergebnisse von allen geografischen Standorten anzeigt.
 
-4.  Veröffentlichen Sie die Änderungen über den Link in der Notiz oben auf der Seite.
+6. Klicken Sie auf **OK**, um Ihre Änderungen zu speichern und den Webpart-Toolbereich zu schließen.
+
+7. Überprüfen Sie Ihre Änderungen an dem Suchergebnisse-Webpart, indem Sie im Hauptmenü auf der Registerkarte „Seite“ auf **Einchecken** klicken.
+
+8. Veröffentlichen Sie die Änderungen über den Link in der Notiz oben auf der Seite.
 
 <span id="_Get_custom_search" class="anchor"><span id="_Ref501388387" class="anchor"></span></span>
 ## <a name="get-custom-search-applications-to-show-results-from-all-or-some-geo-locations"></a>Anzeigen von Ergebnissen von allen oder einigen geografischen Standorten in benutzerdefinierten Suchanwendungen
 
 Benutzerdefinierte Anwendungen rufen Ergebnisse von allen oder einigen geografischen Standorten ab, indem Sie Abfrageparameter mit der Anforderung an die SharePoint-Suche-REST-API angeben. Je nach Abfrageparameter wird die Abfrage in alle geografischen Standorte oder in einige geografischen Standorte aufgefächert. Wenn nur einige geografischen Standorte abgefragt werden sollen, können Sie die Auffächerung nur für diese einschränken. Wenn die Anforderung erfolgreich ist, gibt die SharePoint-Suche-REST-API die Antwortdaten zurück.
 
-**Anforderung**
+### <a name="requirement"></a>Anforderung
 
 Sie müssen für jeden geografischen Standort sicherstellen, dass allen Benutzer in der Organisation die Berechtigungsstufe **Lesen** für die Stammwebsite erteilt wurde (z. B. contoso**APAC**.sharepoint.com/ und contoso**EU**.sharepoint.com/). [Weitere Informationen zu Berechtigungen](https://support.office.com/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
 
@@ -230,14 +227,12 @@ MultiGeoSearchStatus – Dies ist eine Eigenschaft, die die SharePoint-Suche-API
 <td align="left">Teilweise</td>
 <td align="left">Teilweise Ergebnisse von einem oder mehreren geografischen Standorten. Die Ergebnisse sind aufgrund eines vorübergehenden Fehlers unvollständig.</td>
 </tr>
-
 </tbody>
 </table>
 
 ### <a name="query-using-the-rest-service"></a>Abfrage mithilfe des REST-Diensts
 
 Mit einer GET-Anforderung geben Sie die Abfrageparameter in der URL an. Mit einer POST-Anforderung übergeben Sie die Abfrageparameter im Text im JSON-Format.
-
 
 #### <a name="request-headers"></a>Anforderungsheader
 
@@ -269,8 +264,9 @@ https:// \<tenant\> / \_ -API/Search/Query? querytext = ' Website ' &Clienttype 
 
 #### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a>Beispiel für eine POST-Anforderung, die für **alle** geografischen Standorte aufgefächert wird
 
+```text
     {
-        "request": {
+    "request": {
             "__metadata": {
             "type": "Microsoft.Office.Server.Search.REST.SearchRequest"
         },
@@ -289,11 +285,11 @@ https:// \<tenant\> / \_ -API/Search/Query? querytext = ' Website ' &Clienttype 
         "ClientType": "my_client_id"
         }
     }
-
+```
 
 #### <a name="sample-post-request-thats-fanned-out-to-some-geo-locations"></a>Beispiel für eine POST-Anforderung, die für **einige** geografische Standorte aufgefächert wird
 
-
+```text
     {
         "request": {
             "Querytext": "SharePoint",
@@ -318,13 +314,15 @@ https:// \<tenant\> / \_ -API/Search/Query? querytext = ' Website ' &Clienttype 
             }
         }
     }
+```
 
 ### <a name="query-using-csom"></a>Abfrage mithilfe von CSOM
 
 Im Folgenden finden Sie ein Beispiel für eine CSOM-Abfrage, die für **alle** geografischen Standorte aufgefächert wird:
 
-    var keywordQuery = new KeywordQuery(ctx);
-    keywordQuery.QueryText = query.SearchQueryText;
-    keywordQuery.ClientType = <enter a string here>;
-    keywordQuery["EnableMultiGeoSearch"] = true;
-
+```text
+var keywordQuery = new KeywordQuery(ctx);
+keywordQuery.QueryText = query.SearchQueryText;
+keywordQuery.ClientType = <enter a string here>;
+keywordQuery["EnableMultiGeoSearch"] = true;
+```

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie die Häufigkeit Ihrer Abrechnung für Ihr Geschäfts Abonnement ändern.
-ms.openlocfilehash: 439e5b9c7e3c628b2b0834b624696e6c2ae19bb6
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 0a4dccd69092c849637a5c79bd1bfe6d7faa1202
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430002"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545930"
 ---
 # <a name="change-your-billing-frequency"></a>Ändern der Abrechnungs Häufigkeit
 
@@ -40,7 +40,6 @@ ms.locfileid: "45430002"
 Wenn Sie ein Abonnement kaufen, wählen Sie monatliche oder jährliche Abrechnung. Führen Sie die folgenden Schritte aus, um zu ändern, wie oft ein Abonnement in Rechnung gestellt wird.
 
 1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
-
-2. Suchen Sie das Abonnement, das Sie ändern möchten. Wählen Sie im Abschnitt **Abrechnung** neben entweder **monatlich** oder in Rechnung gestellt **jährlich**die Option **Bearbeiten**aus.
-
-3. Wählen Sie die Option aus, wie oft eine Abrechnung erfolgen soll, und wählen Sie dann **ändern**aus.
+2. Wählen Sie auf der Registerkarte **Produkte** das Abonnement aus, das Sie ändern möchten.
+3. Wählen Sie auf der Seite Abonnementdetails im Abschnitt **Abonnement-und Zahlungseinstellungen** die Option **Abrechnungs Häufigkeit bearbeiten**aus.
+4. Wählen Sie im Bereich **Abrechnungs Häufigkeit bearbeiten** die Option für die Anzahl der Fakturierungen aus, und wählen Sie dann **ändern**aus.

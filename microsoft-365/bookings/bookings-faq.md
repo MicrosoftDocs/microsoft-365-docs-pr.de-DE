@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Häufig gestellte Fragen zu Microsoft-Buchungen.
-ms.openlocfilehash: db04c2759187f66503bcc28660b5177f636eaa6c
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: ee0de2d1412aa5ec38759a3a2512de05b9e02621
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419723"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545716"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Häufig gestellte Fragen zu Microsoft-Buchungen
 
@@ -180,7 +180,7 @@ Es gibt keine Provision zum Festlegen der Zeitzone für Mitarbeiter in Buchungen
 
 ### <a name="can-email-notifications-be-sent-as-the-tenant-domain-name"></a>Können e-Mail-Benachrichtigungen als Mandanten Domänenname gesendet werden?
 
-Die e-Mail-Adressen werden auf der Microsoft 365-Einstellungsebene gesteuert und verwaltet und hängen von den dort verwendeten Domänen Konfigurationseinstellungen ab. Weitere Informationen finden Sie [hier](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-accepteddomain?view=exchange-ps).
+Die e-Mail-Adressen werden auf der Microsoft 365-Einstellungsebene gesteuert und verwaltet und hängen von den dort verwendeten Domänen Konfigurationseinstellungen ab. Weitere Informationen finden Sie [hier](https://docs.microsoft.com/powershell/module/exchange/get-accepteddomain).
 
 ### <a name="is-the-ability-to-send-sms-messages-dependent-on-a-different-service-or-specific-configuration"></a>Können SMS-Nachrichten von einem anderen Dienst oder einer bestimmten Konfiguration gesendet werden?
 
@@ -366,7 +366,7 @@ Wenn dieser Fehler nach einem längeren Zeitraum angezeigt wird oder Sie ihn hä
 
   - [Anpassen und Veröffentlichen Ihrer Buchungsseite](customize-booking-page.md)
 
-  - [Konfiguration des Mandanten Postfachs](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-accepteddomain?view=exchange-ps)
+  - [Konfiguration des Mandanten Postfachs](https://docs.microsoft.com/powershell/module/exchange/get-accepteddomain)
 
   - [Gruppenbuchungen](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)
 

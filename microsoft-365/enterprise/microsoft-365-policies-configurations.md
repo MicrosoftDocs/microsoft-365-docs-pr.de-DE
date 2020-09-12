@@ -17,12 +17,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 72344e1918a85de65ab7de8a60b7ace0b2629ac6
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 375e58214e19960d3e3100a0c1051fe7c4924aae
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332749"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546642"
 ---
 # <a name="identity-and-device-access-configurations"></a>Konfigurationen für den Identitäts- und Gerätezugriff
 
@@ -73,10 +73,9 @@ In diesem Leitfaden erfahren Sie, wie Sie den Schutz von Identitäten und Gerät
 
 Es ist wichtig, konsistente Schutzebenen für Daten, Identitäten und Geräte zu verwenden. Wenn Sie beispielsweise diesen Leitfaden implementieren, müssen Sie Ihre Daten auf vergleichbaren Ebenen schützen. 
 
-Der **Identitäts-und Geräteschutz für Office 365** Architekturmodell zeigt Ihnen, welche Funktionen vergleichbar sind.
+Der **Identitäts-und Geräteschutz für das Microsoft 365-** Architekturmodell zeigt Ihnen, welche Funktionen vergleichbar sind.
 
-![Miniaturansicht für Poster "Identitäts-und Geräteschutz für Office 365"](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)<br/>
-[PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=55032)
+[![Daumen Bild für den Identitäts-und Geräteschutz für das Microsoft 365-Poster](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [Als PDF anzeigen](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Als PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| herunterladen [Als Visio herunterladen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)  
 
 Weitere Informationen finden Sie unter [Deploy Information Protection for Data Privacy Regulations](../solutions/information-protection-deploy.md) Solution zum Schutz der in Microsoft 365 gespeicherten Informationen.
 
@@ -105,10 +104,11 @@ Azure Ad bietet eine umfassende Sammlung von Funktionen zur Identitätsverwaltun
 |:-------|:-----|:-------|
 | [Mehrstufige Authentifizierung (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks) | Für MFA müssen Benutzer zwei Arten der Überprüfung bereitstellen, beispielsweise ein Benutzerkennwort sowie eine Benachrichtigung über die Microsoft Authenticator-APP oder einen Anruf. MFA reduziert das Risiko, dass gestohlene Anmeldeinformationen für den Zugriff auf Ihre Umgebung verwendet werden können, erheblich. Microsoft 365 verwendet den Azure-mehrstufigen Authentifizierungsdienst für MFA-basierte Anmeldungen. | Microsoft 365 E3 oder E5 |
 | [Bedingter Zugriff](/azure/active-directory/conditional-access/overview) | Azure AD wertet die Bedingungen der Benutzeranmeldung aus und verwendet Richtlinien für den bedingten Zugriff, um den zulässigen Zugriff zu bestimmen. In diesem Leitfaden erfahren Sie beispielsweise, wie Sie eine Richtlinie für den bedingten Zugriff erstellen, um die Geräte Konformität für den Zugriff auf vertrauliche Daten zu erfordern. Dadurch wird das Risiko erheblich reduziert, dass ein Hacker mit seinem eigenen Gerät und die gestohlenen Anmeldeinformationen auf Ihre vertraulichen Daten zugreifen können. Außerdem werden vertrauliche Daten auf den Geräten geschützt, da die Geräte bestimmte Anforderungen an die Integrität und Sicherheit erfüllen müssen. | Microsoft 365 E3 oder E5 |
-| [Azure Ad Gruppen](/azure/active-directory/fundamentals/active-directory-manage-groups) | Bedingte Zugriffsregeln, Geräteverwaltung mit InTune und sogar Berechtigungen für Dateien und Websites in Ihrer Organisation beruhen auf der Zuweisung zu Benutzerkonten oder Azure Ad Gruppen. Es wird empfohlen, Azure Ad Gruppen zu erstellen, die den von Ihnen implementierten Schutzebenen entsprechen. Beispielsweise sind Ihre Führungskräfte wahrscheinlich höhere Wert Ziele für Hacker. Daher ist es sinnvoll, die Benutzerkonten dieser Mitarbeiter einer Azure Ad Gruppe hinzuzufügen und diese Gruppe den Richtlinien für bedingten Zugriff und anderen Richtlinien zuzuweisen, die eine höhere Schutzebene für den Zugriff erzwingen. | Microsoft 365 E3 oder E5 |
-| [Geräteregistrierung](/azure/active-directory/devices/overview) | Sie registrieren ein Gerät in Azure AD, um eine Identität für das Gerät zu erstellen. Diese Identität wird verwendet, um das Gerät zu authentifizieren, wenn ein Benutzer sich anmeldet und Regeln für den bedingten Zugriff anwendet, die Domänenbeitritt oder kompatible PCs erfordern. Für diesen Leitfaden verwenden wir die Geräteregistrierung, um Domänenbeitritt von Windows-Computern automatisch zu registrieren. Die Geräteregistrierung ist eine Voraussetzung für die Verwaltung von Geräten mit InTune. | Microsoft 365 E3 oder E5 |
+| [Azure Ad Gruppen](/azure/active-directory/fundamentals/active-directory-manage-groups) | Bedingte Zugriffsrichtlinien, Geräteverwaltung mit InTune und sogar Berechtigungen für Dateien und Websites in Ihrer Organisation beruhen auf der Zuweisung zu Benutzerkonten oder Azure Ad Gruppen. Es wird empfohlen, Azure Ad Gruppen zu erstellen, die den von Ihnen implementierten Schutzebenen entsprechen. Beispielsweise sind Ihre Führungskräfte wahrscheinlich höhere Wert Ziele für Hacker. Daher ist es sinnvoll, die Benutzerkonten dieser Mitarbeiter einer Azure Ad Gruppe hinzuzufügen und diese Gruppe den Richtlinien für bedingten Zugriff und anderen Richtlinien zuzuweisen, die eine höhere Schutzebene für den Zugriff erzwingen. | Microsoft 365 E3 oder E5 |
+| [Geräteregistrierung](/azure/active-directory/devices/overview) | Sie registrieren ein Gerät in Azure AD, um eine Identität für das Gerät zu erstellen. Diese Identität wird verwendet, um das Gerät zu authentifizieren, wenn ein Benutzer sich anmeldet und Richtlinien für bedingten Zugriff anwendet, die Domänenbeitritt oder kompatible PCs erfordern. Für diesen Leitfaden verwenden wir die Geräteregistrierung, um Domänenbeitritt von Windows-Computern automatisch zu registrieren. Die Geräteregistrierung ist eine Voraussetzung für die Verwaltung von Geräten mit InTune. | Microsoft 365 E3 oder E5 |
 | [Azure AD Identity Protection](/azure/active-directory/identity-protection/overview) | Ermöglicht Ihnen das Erkennen potenzieller Sicherheitsanfälligkeiten, die sich auf die Identitäten Ihrer Organisation auswirken, und die Konfiguration der automatischen Behebungs Richtlinie auf niedrigem, mittlerem und hohem Anmelde-und Benutzer Risiko. Dieser Leitfaden basiert auf dieser Risikobewertung, um Richtlinien für bedingten Zugriff für mehrstufige Authentifizierung anzuwenden. Dieser Leitfaden enthält auch eine Richtlinie für den bedingten Zugriff, bei der Benutzer Ihr Kennwort ändern müssen, wenn für Ihr Kontoaktivitäten mit hohem Risiko erkannt werden. | Microsoft 365 E5, Microsoft 365 E3 mit dem Identity & Threat Protection-Add-on, EMS E5 oder Azure Premium P2-Lizenzen |
 | [Self-Service Password Reset (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks) | Ermöglichen Sie Ihren Benutzern, ihre Kennwörter sicher und ohne Helpdesk-Eingriff zurückzusetzen, indem Sie die Überprüfung von mehreren Authentifizierungsmethoden bereitstellen, die der Administrator steuern kann. | Microsoft 365 E3 oder E5 |
+| [Azure AD Kennwortschutz](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad). Erkennen und blockieren Sie bekannte schwache Kennwörter und deren Varianten sowie zusätzliche schwache Ausdrücke, die für Ihre Organisation spezifisch sind. Standardmäßige globale gesperrte Kenn Wortlisten werden automatisch auf alle Benutzer in einem Azure AD Mandanten angewendet. Sie können zusätzliche Einträge in einer benutzerdefinierten Liste gesperrter Kennwörter definieren. Wenn Benutzer ihre Kennwörter ändern oder zurücksetzen, werden diese gesperrten Kenn Wortlisten überprüft, um die Verwendung sicherer Kennwörter zu erzwingen. |  Microsoft 365 E3 oder E5 |
 ||||
 
 ![Komponenten des Identitäts-und Gerätezugriffs.](../media/microsoft-365-policies-configurations/identity-device-access-components.png)
@@ -123,7 +123,7 @@ Azure Ad bietet eine umfassende Sammlung von Funktionen zur Identitätsverwaltun
 
 In diesem Leitfaden erfahren Sie, wie Sie empfohlene Richtlinien erstellen, um die Verwendung genehmigter apps zu erzwingen und zu ermitteln, wie diese apps mit ihren Geschäftsdaten verwendet werden können.
 
-### <a name="microsoft-365"></a>Microsoft 365
+### <a name="microsoft-365"></a>Microsoft 365
 
 Dieser Leitfaden zeigt Ihnen, wie Sie eine Reihe von Richtlinien implementieren, um den Zugriff auf Microsoft 365-Cloud-Dienste zu schützen, einschließlich Microsoft Teams, Exchange Online, SharePoint Online und OneDrive für Unternehmen. Zusätzlich zur Implementierung dieser Richtlinien sollten Sie auch den Schutzgrad für Ihren Mandanten mit diesen Ressourcen erhöhen:
 

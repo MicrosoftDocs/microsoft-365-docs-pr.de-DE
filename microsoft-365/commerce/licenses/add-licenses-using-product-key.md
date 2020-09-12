@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,19 +18,16 @@ ms.custom:
 - TopSMBIssues
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 ms.assetid: 4fb4bd7e-3920-4ce0-98fb-0c06e3fedf53
 ROBOTS: NOINDEX
-description: Erfahren Sie, wie Sie Lizenzen zu Ihrem Abonnement hinzufügen.
-ms.openlocfilehash: 370ed833a1c7c5142c7725666885a945e1524b53
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Hier erfahren Sie, wie Sie Ihrem Abonnement mit einem Product Key Lizenzen hinzufügen oder diese erweitern.
+ms.openlocfilehash: 583014c98207f98abc55248159aafd371c96b6c0
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44404010"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545784"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>Hinzufügen von Lizenzen zu oder verlängern eines Abonnements, das für die Verwendung eines Product Keys bezahlt wurde
 
@@ -44,17 +41,13 @@ Prepaid-Lizenzen werden Ihnen als 25-stelliger alphanumerischer Code ausgestellt
 ::: moniker range="o365-worldwide"
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
-
-2. Suchen Sie nach dem Abonnement, dem Sie Lizenzen hinzufügen möchten. Wählen Sie im Abschnitt **Lizenzen** die Option **Weitere Lizenzen hinzufügen**aus.
-
-3. Wählen Sie im **Bereich weitere Lizenzen hinzufügen**die Option **neuen und nicht verwendeten Product Key verwenden**aus, und wählen Sie dann **weiter**aus.
-
-4. Geben Sie den Product Key ein, und wählen Sie dann **weiter**aus.
-
+2. Wählen Sie auf der Registerkarte **Produkte** das Abonnement aus, dem Sie Lizenzen hinzufügen möchten.
+3. Wählen Sie auf der Seite Abonnementdetails im Abschnitt **Lizenzen** die Option **Weitere Lizenzen hinzufügen**aus.
+4. Wählen Sie im **Bereich weitere Lizenzen hinzufügen**die Option **neuen und nicht verwendeten Product Key verwenden**aus, und wählen Sie dann **weiter**aus.
+5. Geben Sie den Product Key ein, und wählen Sie dann **weiter**aus.
     > [!NOTE]
     > Wenn Sie mehr als einen Product Key hinzufügen möchten, können Sie **Weiteren Product Key hinzufügen** auswählen und diesen dann eingeben.
-  
-5. Überprüfen Sie Ihre Bestelldetails, und wählen Sie dann **einlösen**aus.
+6. Überprüfen Sie Ihre Bestelldetails, und wählen Sie dann **einlösen**aus.
 
 ::: moniker-end
 
@@ -101,17 +94,13 @@ Prepaid-Lizenzen werden Ihnen als 25-stelliger alphanumerischer Code ausgestellt
 ::: moniker range="o365-worldwide"
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
-
-2. Suchen Sie das Abonnement, das Sie erweitern möchten. Wählen Sie im Abschnitt **Abrechnung** die Option **End-Datum verlängern**aus.
-
-3. Wählen Sie im Bereich **Abonnement verlängern** die Option **neuen und nicht verwendeten Product Key verwenden**aus, und wählen Sie dann **weiter**aus.
-
-4. Geben Sie den Product Key ein, und wählen Sie dann **weiter**aus.
-
+2. Wählen Sie auf der Registerkarte **Produkte** das Abonnement aus, das Sie erweitern möchten.
+3. Wählen Sie auf der Seite Abonnementdetails im Abschnitt **Abonnement-und Zahlungseinstellungen** die Option **Enddatum verlängern**aus.
+4. Wählen Sie auf der Seite **Benutzerlizenzen erneuern oder hinzufügen** die Option **neuen und nicht verwendeten Product Key verwenden**aus, und wählen Sie dann **weiter**aus.
+5. Geben Sie den Product Key ein, und wählen Sie dann **weiter**aus.
     > [!NOTE]
     > Wenn Sie mehr als einen Product Key hinzufügen möchten, können Sie **Weiteren Product Key hinzufügen** auswählen und diesen dann eingeben.
-  
-5. Überprüfen Sie Ihre Bestelldetails, und wählen Sie dann **einlösen**aus.
+6. Überprüfen Sie Ihre Bestelldetails, und wählen Sie dann **einlösen**aus.
 
 ::: moniker-end
 

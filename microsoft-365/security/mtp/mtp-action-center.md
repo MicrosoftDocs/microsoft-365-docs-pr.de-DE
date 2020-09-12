@@ -3,7 +3,7 @@ title: Aufrufen des Info-Centers zum Anzeigen und Genehmigen der Aufgaben für d
 description: Verwenden Sie das Info-Center, um Details zur automatisierten Untersuchung und ausstehenden Genehmigungsaktionen anzuzeigen.
 keywords: Info-Center, Bedrohungsschutz, Untersuchung, Warnung, Ausstehend, automatisiert, Erkennung
 search.appverid: met150
-ms.prod: M365-security-compliance
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 77bc0f088a9779396a56a9cc8cc9ae6ecbdadea7
-ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
+ms.openlocfilehash: 2dc641d22432e245980b905051bddd3b7dd4ed07
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46503103"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547986"
 ---
 # <a name="the-action-center"></a>Das Info-Center
 

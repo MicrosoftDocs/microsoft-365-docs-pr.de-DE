@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: In diesem Artikel erfahren Sie, wie Sie Microsoft 365-Benutzer,-Lizenzen und 365-apps mit PowerShell verwalten.
-ms.openlocfilehash: 0af4a47b713da1f0316ae4be91fb7c6472f0e625
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: ef6146744909755efb974ee57f34ae3b924a7f2c
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47429902"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547914"
 ---
 # <a name="manage-microsoft-365-with-powershell"></a>Verwalten von Microsoft 365 mit PowerShell
 
@@ -47,7 +47,7 @@ Wählen Sie in den folgenden Themen aus, um Informationen zur Verwendung von Pow
 
     Beginnen Sie hier, wenn Sie die Microsoft 365-Module installiert haben und Automatisierungs Befehle zum Verwalten von SharePoint verwenden möchten.
 
-- [**Exchange Online PowerShell**](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)
+- [**Exchange Online PowerShell**](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)
 
     Beginnen Sie hier, wenn Sie die Automatisierungsbefehle zum Verwalten von Exchange Online verwenden möchten.
 
@@ -55,7 +55,7 @@ Wählen Sie in den folgenden Themen aus, um Informationen zur Verwendung von Pow
 
     Beginnen Sie hier, wenn Sie die PowerShell 365-Module installiert haben und Ihre e-Mails von bereits vorhandenen Systemen migrieren möchten.
 
-- [**Security & Compliance Center**](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell)
+- [**Security & Compliance Center**](https://docs.microsoft.com/powershell/exchange/scc-powershell)
 
     Beginnen Sie hier, wenn Sie Automatisierungs Befehle zum Verwalten der Sicherheit & Compliance Center PowerShell verwenden möchten.
 

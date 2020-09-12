@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 7c83d3f202851008e93c3f3e9d0c7bc89c49bf20
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: a1e85b2089663208e8b6004462211263a1b27242
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308367"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547795"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>Zur Identität und darüber hinaus – ein Architektur Standpunkt
 
@@ -117,7 +117,7 @@ Wir verfolgen den Traum von [einmaligem Anmelden (Single Sign-on](https://docs.m
 
 
 
-### <a name="authorization"></a>Autorisierung
+### <a name="authorization"></a>Authorization
 
 Pro [Wikipedia](https://en.wikipedia.org/wiki/Authorization)"zu autorisieren" ist das Definieren einer Zugriffsrichtlinie. Viele Menschen betrachten Sie als die Möglichkeit, Zugriffssteuerelemente auf ein Objekt (Datei, Dienst usw.) zu definieren. In der aktuellen Welt der Cyber-Bedrohungen entwickelt sich dieses Konzept schnell zu einer dynamischen Richtlinie, die auf verschiedene Bedrohungs Vektoren reagieren und die Zugriffssteuerungen als Reaktion auf diese schnell anpassen kann. Wenn ich beispielsweise von einem ungewöhnlichen Standort auf mein Bankkonto zuzugreifen, erhalte ich zusätzliche Bestätigungsschritte. Um dies zu erreichen, müssen wir nicht nur die Richtlinie selbst, sondern auch das Ökosystem der Erkennung von Bedrohungen und Signal Korrelations Methoden in Frage stellen.
 
@@ -272,7 +272,7 @@ Office 365 verfügt über ein [einheitliches Überwachungsprotokoll](https://doc
 
 Beispiele für Microsoft 365-Protokolle, auf die über andere APIs zugegriffen wird, sind folgende:
 - [Azure AD](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-settings) (Aktivitäten, die nicht mit Office 365 in Zusammenhangstehen)
-- [Exchange-Nachrichtenverfolgung](https://docs.microsoft.com/powershell/module/exchange/get-messagetrace?view=exchange-ps)
+- [Exchange-Nachrichtenverfolgung](https://docs.microsoft.com/powershell/module/exchange/get-messagetrace)
 - Oben beschriebene Threat/UEBA-Systeme (beispielsweise Azure AD Identity Protection, Microsoft Cloud App Security, Microsoft Defender ATP, etc.)
 - [Microsoft Information Protection](https://docs.microsoft.com/microsoft-365/compliance/data-classification-activity-explorer?view=o365-worldwide)
 - [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)

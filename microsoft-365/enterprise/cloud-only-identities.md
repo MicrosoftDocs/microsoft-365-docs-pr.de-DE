@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Beschreibt, wie Benutzer und Gruppen erstellt werden, wenn Ihr Microsoft 365-Abonnement nur eine Cloud-Identität verwendet.
-ms.openlocfilehash: 4c8e7d4a29f548fca2fef9696f488dc333743ef9
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 6ec727ea3648f1daa3af42763e5f497715b987a2
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690427"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547758"
 ---
 # <a name="microsoft-365-cloud-only-identity"></a>Microsoft 365 Cloud-only Identity
 
@@ -55,7 +55,7 @@ Sie können Gruppen in Azure AD für verschiedene Zwecke verwenden, die die Verw
 
 - Verwenden Sie Gruppenbasierte Lizenzierungen, um Ihren Benutzerkonten automatisch Lizenzen für Microsoft 365 zuzuweisen, sobald diese als Mitglieder hinzugefügt werden.
 - Hinzufügen von Benutzerkonten zu bestimmten Gruppen dynamisch basierend auf Benutzerkonto Attributen wie Abteilungsname.
-- Stellen Sie Benutzer automatisch als SaaS-Anwendungen (Software as a Service) zur Verfügung und schützen Sie den Zugriff auf diese Anwendungen mit mehrstufiger Authentifizierung (MFA) und anderen Regeln für bedingten Zugriff.
+- Automatische Bereitstellung von Benutzern für Software as a Service (SaaS)-Anwendungen und zum Schutz des Zugriffs auf diese Anwendungen mit mehrstufiger Authentifizierung (MFA) und anderen Richtlinien für bedingten Zugriff.
 - Bereitstellungsberechtigungen und Zugriffsebenen für SharePoint Online Teamwebsites.
 
 Sie erstellen neue ***Benutzer*** mit:

@@ -20,23 +20,23 @@ search.appverid:
 - GEA150
 description: Erfahren Sie mehr über die Microsoft Office-App für Android für Office 365, betrieben von 21Vianet, und wie Sie Sie für Kunden in China herunterladen können.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 4ebb044835321a91109659ca9e58094345bc0d0c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b2c35c2f9b4ea8e10ace3c9426aed7aadefe0b1d
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399062"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545796"
 ---
 # <a name="office-app-for-android-for-office-365-operated-by-21vianet"></a>Office-App für Android für Office 365 betrieben von 21Vianet
 
-Die Microsoft Office-App für Android kombiniert Word-, Excel-und PowerPoint-Mobile Apps in einer einzelnen APP, die für Android-Telefone zum Download zur Verfügung steht. Mit der Office-App für Android können Sie eine Verbindung mit Office 365 genauso herstellen wie mit der Mobile Apps von Word, Excel und PowerPoint. Der Download der Office-App für Android wirkt sich nicht auf vorhandene Installationen von Word, Excel und PowerPoint aus.
+Die Microsoft Office-App für Android kombiniert Word-, Excel-und PowerPoint-Mobile Apps in einer einzelnen APP, die für Android-Telefone zum Download zur Verfügung steht. Mit der Office-App für Android können Sie eine Verbindung mit Office 365 genauso wie mit dem Word-, Excel-und PowerPoint-Mobile Apps herstellen. Der Download der Office-App für Android wirkt sich nicht auf vorhandene Installationen von Word, Excel und PowerPoint aus.
 
-Einige Office-App für Android-Funktionen stehen für Office 365, die von 21Vianet-Kunden betrieben werden, nicht zur Verfügung:
+Einige Office-App für Android-Funktionen sind für Office 365, die von 21Vianet-Kunden betrieben werden, nicht verfügbar:
 
 - Bild in Text und Bild in Tabelle 
 - Konvertieren von Fotos in Word-Dokumente aus dem Objektiv 
 - Aktion "Dateien übertragen" 
-- Hinweise bleiben lokal und nicht mit dem Server synchronisiert
+- Hinweise bleiben lokal und werden nicht mit dem Server synchronisiert
 - Link Vorschau in Scan QR
 - Live Persona Cards im Abschnitt "Me"
 - Klassifizierung, Etikettierung und Schutz (CLP)

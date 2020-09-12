@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 043f5882dcaa15576317958523d6e57d4667ef45
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: ae4a8b51111c53c2245005a5d863354737335ae2
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308085"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546185"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Darstellungen zu Microsoft 365-Produktivitätslösungen
 
@@ -57,13 +57,13 @@ Je nach Ihrer Umgebung eignen sich einige Tools für bestimmte Architekturen bes
 
 
 <a name="BKMK_O365IDP"></a>
-### <a name="identity-and-device-protection-for-office-365"></a>Identität- und Geräteschutz für Office 365
+### <a name="identity-and-device-protection-for-microsoft-365"></a>Identitäts-und Geräteschutz für Microsoft 365
 
-Empfohlene Funktionen zum Schutz von Identitäten und Geräten, die auf Office 365, andere SaaS-Dienste und lokale Anwendungen zugreifen, die mit dem Azure AD-Anwendungsproxy veröffentlicht werden.
+Empfohlene Funktionen zum Schutz von Identitäten und Geräten, die auf Microsoft 365, andere Saas-Dienste und lokale Anwendungen zugreifen, die mit Azure AD-Anwendungs Proxy veröffentlicht werden.
 
 |**Item**|**Beschreibung**|
 |:-----|:-----|
-|[![Modellposter: Identität- und Geräteschutz für Office 365 und andere SaaS-Programme](../media/solutions-architecture-center/O365-Identity-device-protection-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=55032) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657)  \| [Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=55032) <br/> Aktualisiert: November 2018|Es ist wichtig, konsistente Schutzebenen für Daten, Identitäten und Geräte zu verwenden. In diesem Dokument wird gezeigt, welche Funktionen mit weiteren Informationen über die Funktionen zum Schutz von Identitäten und Geräten vergleichbar sind.  <br/> |
+|[![Modell Poster: Identitäts-und Geräteschutz für Microsoft 365](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [Als PDF anzeigen](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Als PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| herunterladen [Als Visio herunterladen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)   <br/> Aktualisiert am 2020|Es ist wichtig, konsistente Schutzebenen für Daten, Identitäten und Geräte zu verwenden. Dieses Modell zeigt Ihnen, welche Funktionen mit weiteren Informationen zu Funktionen zum Schutz von Identitäten und Geräten vergleichbar sind.  <br/> |
    
 <!--
 

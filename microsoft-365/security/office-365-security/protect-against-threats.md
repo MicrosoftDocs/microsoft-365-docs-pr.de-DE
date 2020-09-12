@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratoren können Informationen zum Bedrohungsschutz in Microsoft 365 und konfigurieren, wie Sie für Ihre Organisation verwendet werden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8b96ba1735f94e80450fa4f604fc45dc60b80d12
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: a78bbea2d11360bbfa48fa3da01391471b2e0a4d
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417122"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547362"
 ---
 # <a name="protect-against-threats"></a>Schutz vor Bedrohungen
 
@@ -230,17 +230,17 @@ Arbeitslasten wie SharePoint, OneDrive und Teams werden für die Zusammenarbeit 
 
 5. Überprüfen Sie (und bearbeiten Sie gegebenenfalls die Richtlinien für [sichere Anlagen](set-up-atp-safe-attachments-policies.md) Ihrer Organisation und [Richtlinien für sichere Links](set-up-atp-safe-links-policies.md)).
 
-6. Empfohlen Führen Sie als globaler Administrator oder SharePoint Online Administrator das Cmdlet " **[SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** " aus, wobei der Parameter " _DisallowInfectedFileDownload_ " auf " *true*" festgelegt ist.
+6. Empfohlen Führen Sie als globaler Administrator oder SharePoint Online Administrator das Cmdlet " **[SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** " aus, wobei der Parameter _DisallowInfectedFileDownload_ auf festgelegt ist `$true` .
 
-   - Durch Festlegen des Parameters auf *true* werden alle Aktionen (außer DELETE) für erkannte Dateien blockiert. Personen können erkannte Dateien nicht öffnen, kopieren oder freigeben.
+   - `$true` alle Aktionen (außer DELETE) für erkannte Dateien werden blockiert. Personen können erkannte Dateien nicht öffnen, kopieren oder freigeben.
+   - `$false` blockiert alle Aktionen außer DELETE und Download. Personen können wählen, das Risiko zu akzeptieren und eine erkannte Datei herunterzuladen.
 
-   - Durch Festlegen des Parameters auf *false* werden alle Aktionen außer DELETE und Download blockiert. Personen können wählen, das Risiko zu akzeptieren und eine erkannte Datei herunterzuladen.
-   > [!TIP] Weitere Informationen zur Verwendung von PowerShell mit Microsoft 365 finden Sie unter [Verwalten von Microsoft 365 mit PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell).
+   > [!TIP]
+   > Weitere Informationen zur Verwendung von PowerShell mit Microsoft 365 finden Sie unter [Verwalten von Microsoft 365 mit PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell).
 
 7. Lassen Sie bis zu 30 Minuten zu, bis Ihre Änderungen auf alle Microsoft 365-Rechenzentren verteilt wurden.
 
-
-#### <a name="now-set-up-alerts-for-detected-files"></a>Jetzt Benachrichtigungen für erkannte Dateien einrichten
+### <a name="now-set-up-alerts-for-detected-files"></a>Jetzt Benachrichtigungen für erkannte Dateien einrichten
 
 Um eine Benachrichtigung zu erhalten, wenn eine Datei in SharePoint Online, OneDrive für Unternehmen oder Microsoft Teams als bösartig identifiziert wurde, können Sie eine Warnung einrichten.
 
@@ -266,9 +266,10 @@ Weitere Informationen zu Warnungen finden Sie unter [Erstellen von Aktivitäts W
 
 > [!NOTE]
 > Wenn Sie die Konfiguration abgeschlossen haben, verwenden Sie die folgenden Links, um Arbeits Auslastungs Untersuchungen zu starten:
->- [Anzeigen von Informationen zu bösartigen Dateien, die in SharePoint, OneDrive oder Microsoft Teams erkannt wurden](malicious-files-detected-in-spo-odb-or-teams.md)
->- [Vorgehensweise beim finden einer schädlichen Datei in SharePoint Online, OneDrive oder Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
->- [Verwalten von isolierten Nachrichten und Dateien als Administrator in Microsoft 365](manage-quarantined-messages-and-files.md) 
+>
+> - [Anzeigen von Informationen zu bösartigen Dateien, die in SharePoint, OneDrive oder Microsoft Teams erkannt wurden](malicious-files-detected-in-spo-odb-or-teams.md)
+> - [Vorgehensweise beim finden einer schädlichen Datei in SharePoint Online, OneDrive oder Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
+> - [Verwalten von isolierten Nachrichten und Dateien als Administrator in Microsoft 365](manage-quarantined-messages-and-files.md)
 
 ## <a name="part-6---additional-settings-to-configure"></a>Part 6-zusätzliche Einstellungen für die Konfiguration
 

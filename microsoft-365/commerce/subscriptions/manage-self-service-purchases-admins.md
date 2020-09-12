@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Administratoren können sich mit der Verwaltung von Self-Service-Käufen von Benutzern in Ihrer Organisation vertraut machen.
-ms.openlocfilehash: f10f525f8efc6bc63e2fa042c299a6d03c77d0cb
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: ca25bf0c3e3539196e81dcc289592028cc4dfa47
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47429998"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546674"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Self-Service-Einkäufe (Administrator) verwalten
 
@@ -38,13 +38,13 @@ Sie können auch steuern, ob Benutzer in Ihrer Organisation Self-Service-Käufe 
 ## <a name="view-self-service-subscriptions"></a>Anzeigen von Self-Service-Abonnements
 
 1. Wechseln Sie im Admin Center zur Seite **Fakturierung**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
-2. Klicken Sie neben **Ergebnisse Verfeinern**in der Dropdownliste **Kontotyp** auf **Self-Service**.
+2. Wählen Sie auf der Registerkarte **Produkte** das Filtersymbol aus, und wählen Sie dann **Self-Service**aus.
 3. Um weitere Details zu einem Abonnement anzuzeigen, wählen Sie eines aus der Liste aus.
 
 ## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>Anzeigen, wer über Lizenzen für ein Self-Service-Abonnement für den Kauf verfügt
 
 1. Wechseln Sie im Admin Center zur Seite **Abrechnungs**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Lizenzen</a> .
-2. Klicken Sie auf das Filtersymbol, und wählen Sie dann **Self-Service**aus.
+2. Wählen Sie das Filtersymbol aus, und wählen Sie dann **Self-Service**aus.
 3. Wählen Sie ein Produkt aus, um den Personen zugewiesene Lizenzen anzuzeigen.
     > [!NOTE]
     > Wenn es mehrere Käufe für ein Produkt gibt, wird dieses Produkt nur einmal aufgeführt, und die Spalte **verfügbare Menge** zeigt die Summe aller Abonnements an, die für dieses Produkt erworben wurden.
@@ -67,13 +67,12 @@ Weitere Informationen finden Sie unter [use AllowSelfServicePurchase for the MSC
 
 Sie können vorhandene Lizenzen zuweisen oder zusätzliche Abonnements über vorhandene Vereinbarungen für Benutzer erwerben, die Self-Service-Käufen zugewiesen sind. Nachdem Sie diese zentral erworbenen Lizenzen zugewiesen haben, können Sie anfordern, dass die Käufer Ihre vorhandenen Abonnements kündigen.
 
-1. Melden Sie sich mit ihrem globalen Administrator-oder abrechnungsadministrator Konto beim <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Admin Center</a> an.
-2. Wechseln Sie zur Seite **Abrechnungs**  >  -<a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Einkaufsdienste</a> .
-3. Suchen und wählen Sie das Produkt aus, das Sie kaufen möchten, und wählen Sie dann **kaufen**aus.
-4. Führen Sie die restlichen Schritte aus, um den Kauf abzuschließen.
-5. Befolgen Sie die Schritte unter [anzeigen, wer über Lizenzen für ein Self-Service-Abonnement verfügt](#view-who-has-licenses-for-a-self-service-purchase-subscription) , um eine Liste der in Schritt 6 zu referenzierenden Benutzer zu exportieren.
-6. Zuweisen von Lizenzen zu allen Personen, die eine Lizenz im anderen Abonnement haben. Vollständige Schritte finden Sie unter [Zuweisen von Lizenzen zu Benutzern](../../admin/manage/assign-licenses-to-users.md).
-7. Wenden Sie sich an die Person, die das Self-Service-Abonnement erworben hat, und bitten Sie Sie, diese zu stornieren.
+1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** \> - <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Einkaufsdienste</a> .
+2. Suchen und wählen Sie das Produkt aus, das Sie kaufen möchten, und wählen Sie dann **kaufen**aus.
+3. Führen Sie die restlichen Schritte aus, um den Kauf abzuschließen.
+4. Befolgen Sie die Schritte unter [anzeigen, wer über Lizenzen für ein Self-Service-Abonnement verfügt](#view-who-has-licenses-for-a-self-service-purchase-subscription) , um im nächsten Schritt eine Liste der Benutzer zu exportieren, auf die verwiesen wird.
+5. Zuweisen von Lizenzen zu allen Personen, die eine Lizenz im anderen Abonnement haben. Vollständige Schritte finden Sie unter [Zuweisen von Lizenzen zu Benutzern](../../admin/manage/assign-licenses-to-users.md).
+6. Wenden Sie sich an die Person, die das Self-Service-Abonnement erworben hat, und bitten Sie Sie, [diese zu stornieren](manage-self-service-purchases-users.md#cancel-a-subscription).
 
 ## <a name="take-over-a-self-service-purchase-subscription"></a>Übernehmen eines Self-Service-Kauf Abonnements
 

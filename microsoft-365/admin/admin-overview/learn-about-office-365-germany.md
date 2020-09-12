@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: Erfahren Sie mehr über Office 365 Deutschland.
-ms.openlocfilehash: 694f1a2ebbe3740c09cb306a26729b6482497d0b
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: a9ad8f88f48315c77d17ca51855d75d1c443f6f2
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307277"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545918"
 ---
 # <a name="learn-about-office-365-germany"></a>Weitere Informationen zu Office 365 Deutschland
 
@@ -35,11 +35,11 @@ ms.locfileid: "47307277"
 
 Office 365 Deutschland war eine differenzierte Option für die in Europa verfügbaren Office 365 Dienste. Sie hat dazu beigetragen, dass die Anforderungen der am häufigsten regulierten Kunden in Deutschland, der Europäischen Union (EU) und der Europäischen Freihandelszone (EFTA) erfüllt werden, indem unsere branchenführenden Produktivitätsdienste für digitale Arbeit, aus deutschen Rechenzentren mit Daten Wohnsitz in Deutschland und strenge Datenzugriffs-und Kontrollmaßnahmen über ein eindeutiges Daten Treuhänder Modell unter deutscher Rechtsprechung bereitgestellt werden
   
-Der Vertrauensnehmer der Daten, T-Systems International, bei dem es sich um ein unabhängiges deutsches Unternehmen und eine Niederlassung der Deutschen Telekom handelt, steuert den physischen und logischen Zugriff auf Kundendaten. Auf Kundendaten kann nur mit Genehmigung oder unter Aufsicht des Vertrauensnehmers zugegriffen werden, der sich nach deutschen Recht richtet.
+Der Vertrauensnehmer der Daten, T-Systems International, bei dem es sich um ein unabhängiges deutsches Unternehmen und eine Niederlassung der Deutschen Telekom handelt, steuert den physischen und logischen Zugriff auf Kundendaten. Auf Kundendaten kann ohne Genehmigung oder Beaufsichtigung durch den Daten Treuhänder, der dem deutschen Recht unterliegt, nicht zugegriffen werden.
   
-Die Kundenanforderungen haben sich verschoben, und die Isolierung Office 365 Deutschland hat ihre Fähigkeit, die Flexibilität und Konsistenz zu adressieren, die die Kundenwünschen, eingeschränkt. Seit August 2018 werden keine neuen Kunden mehr angenommen oder neue Dienste aus dem derzeit verfügbaren Microsoft Cloud Germany bereitgestellt. Weitere Informationen finden Sie in diesem Blogbeitrag: [Microsoft, um Cloud-Dienste aus neuen Datencentern in Deutschland in 2019 zu liefern, um die sich entwickelnden Kundenanforderungen zu erfüllen](https://go.microsoft.com/fwlink/p/?linkid=839016).
+Die Kundenanforderungen haben sich verschoben, und die Isolierung Office 365 Deutschland hat ihre Fähigkeit, die Flexibilität und Konsistenz, die die Kundenwünschen, zu begrenzen, auferlegt. Seit August 2018 werden keine neuen Kunden mehr angenommen oder neue Dienste aus dem derzeit verfügbaren Microsoft Cloud Germany bereitgestellt. Weitere Informationen finden Sie in diesem Blogbeitrag: [Microsoft für die Bereitstellung von Cloud-Diensten aus neuen Datencentern in Deutschland in 2019, um die sich entwickelnden Kundenanforderungen zu erfüllen](https://go.microsoft.com/fwlink/p/?linkid=839016).
   
-## <a name="what-microsoft-online-services-are-available-in-office-365-germany"></a>Welche Microsoft-Onlinedienste sind in Office 365 Deutschland enthalten?
+## <a name="which-microsoft-online-services-are-available-in-office-365-germany"></a>Welche Microsoft Online Services sind in Office 365 Deutschland verfügbar?
 
 Office 365 Deutschland Plan Angebote werden in dieser isolierten Umgebung so weit wie möglich an globale Angebote angepasst. Ausgeschlossen sind Yammer-bezogene Pläne, Pläne, die sich dem Ende ihres Lebenszyklus nähern, und Pläne, die im Rahmen gemeinnütziger Programmen zur Verfügung gestellt werden. Office 365 E5, SPE und andere Dienste werden nach der allgemeinen Verfügbarkeit von Office 365 Deutschland verfügbar sein. 
   
@@ -89,7 +89,7 @@ Die folgenden Dienste und Features sind in einigen [Abonnementplänen von Office
   
 ## <a name="general-information"></a>Allgemeine Informationen
 
-|||
+|Element|Informationen|
 |-----|-----|
 |Anmeldeportal  <br/> |[https://portal.office.de](https://portal.office.de)  <br/> |
 |Abonnements, Abrechnung und technischer Support  <br/> |Deutschland-basierter Support in deutscher und englischer Sprache weitere Informationen finden Sie unter [Contact Support for Business Products-admin Help](../contact-support-for-business-products.md).  <br/> |

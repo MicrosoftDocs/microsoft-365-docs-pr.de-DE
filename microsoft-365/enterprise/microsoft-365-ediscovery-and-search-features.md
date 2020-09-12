@@ -16,14 +16,14 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Eine Übersicht über die eDiscovery-Funktion und andere Suchfeatures in Microsoft 365 zur Überwachung der Verwendung und Transparenz.
-ms.openlocfilehash: ea7b221ab8fe2ff41d089bb344d2dce58002d0f5
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: d18d3d4776c434788ee8fef7fb8be9edf339ff04
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47331859"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547770"
 ---
-# <a name="microsoft-365-ediscovery-and-search-features-overview"></a>Microsoft 365 eDiscovery-und Suchfeatures (Übersicht) 
+# <a name="microsoft-365-ediscovery-and-search-features-overview"></a>Microsoft 365 eDiscovery-und Suchfeatures (Übersicht)
 
 ## <a name="ediscovery"></a>eDiscovery
 
@@ -67,6 +67,6 @@ Ausführliche Schritte zum Durchsuchen von Microsoft 365-Überwachungsprotokolle
 
 ## <a name="search-unified-audit-log"></a>Durchsuchen des einheitlichen Überwachungsprotokolls
 
-Verwenden Sie die Überwachungsprotokoll-Suchfunktion, um das einheitliche Überwachungsprotokoll zu durchsuchen. Microsoft 365 bietet auch die Möglichkeit zum Durchsuchen dieses Protokolls mithilfe von Remote-PowerShell. Das [Cmdlet Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/Search-UnifiedAuditLog?view=exchange-ps) in Exchange Online PowerShell wird verwendet, um das vereinheitlichte Überwachungsprotokoll von Ereignissen in Bezug auf Benutzervorgänge aus Exchange Online, SharePoint Online, OneDrive für Unternehmen und Azure AD zu durchsuchen. 
+Verwenden Sie die Überwachungsprotokoll-Suchfunktion, um das einheitliche Überwachungsprotokoll zu durchsuchen. Microsoft 365 bietet auch die Möglichkeit zum Durchsuchen dieses Protokolls mithilfe von Remote-PowerShell. Das [Cmdlet Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) in Exchange Online PowerShell wird verwendet, um das vereinheitlichte Überwachungsprotokoll von Ereignissen in Bezug auf Benutzervorgänge aus Exchange Online, SharePoint Online, OneDrive für Unternehmen und Azure AD zu durchsuchen.
 
 Sie können nach allen Ereignissen in einem bestimmten Datumsbereich suchen oder die Ergebnisse auf der Grundlage bestimmter Kriterien filtern, beispielsweise einer bestimmten Aktion, des Benutzers, der die Aktion ausgeführt hat, oder des Zielobjekts. Administratoren können bis zu drei gleichzeitig ausgeführte Exchange Online PowerShell-Sitzungen verwenden, um große Datumsbereichs suchen aufzuteilen.

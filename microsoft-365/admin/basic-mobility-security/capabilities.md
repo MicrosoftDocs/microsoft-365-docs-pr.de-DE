@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Grundlegende Mobilität und Sicherheit können Ihnen helfen, Mobile Geräte zu sichern und zu verwalten.
-ms.openlocfilehash: a88afd539209d20046a778f8c6d16cadd51b5a9a
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: aed4f4c2d252e487d24496ac00f3de24bc57ab55
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430193"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545896"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Funktionen der grundlegenden Mobilität und Sicherheit
 
@@ -166,9 +166,9 @@ Die folgende Option kann Benutzer daran hindern, auf Ihre Microsoft 365-e-Mails 
 |Verbindung mit Speicherwechselmedien blockieren |Ja|Ja|Nein|
 |Bluetooth-Verbindungen blockieren |Ja|Ja|Nein|
 
-##  <a name="additional-settings"></a>Zusätzliche Einstellungen 
+## <a name="additional-settings"></a>Zusätzliche Einstellungen
 
-Sie können die folgenden zusätzlichen Richtlinieneinstellungen mithilfe von PowerShell-Cmdlets festlegen. Weitere Informationen finden Sie unter [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps).
+Sie können die folgenden zusätzlichen Richtlinieneinstellungen mithilfe von Sicherheits & Compliance Center-PowerShell-Cmdlets festlegen. Weitere Informationen finden Sie unter [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/scc-powershell).
 
 |**Name der Einstellung**|**IOS 7,1 und höher**|**Android 5 und höher**|
 |:-----|:-----|:-----|

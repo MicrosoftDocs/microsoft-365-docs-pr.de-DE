@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: In diesem Artikel erfahren Sie, wie Sie eine SharePoint-Website an einen anderen geografischen Standort in ihrer Multi-Geo-Umgebung umstellen und die Erwartungen an die Änderungen an Ihre Benutzer weitergeben.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e96c422b1d2685c9fe3d4c8c45aa8437a6776621
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 819496b9f7612afa1db902e6fc5a0844e99d7a8e
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690267"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545636"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Verschieben einer SharePoint-Website an einen anderen geografischen Standort
 
@@ -36,13 +36,13 @@ Die folgenden Website-Typen können zwischen geografischen Standorten verschoben
 Sie müssen ein globaler Administrator oder SharePoint-Administrator sein, um eine Website zwischen geografischen Standorten zu verschieben.
 
 Bei der Verschiebung des geografischen Standorts einer SharePoint-Websites gibt es ein Zeitfenster von etwa 4 bis 6 Stunden, indem Schreibschutz besteht (abhängig vom Websiteinhalt).
- 
+
 ## <a name="best-practices"></a>Bewährte Methoden
 
-- Probieren Sie das Verschieben einer SharePoint-Website mit einer Testwebsite aus, um sich mit dem Verfahren vertraut zu machen. 
-- Überprüfen Sie, ob die Website vor dem Planen oder Ausführen der Verschiebung verschoben werden kann. 
+- Probieren Sie das Verschieben einer SharePoint-Website mit einer Testwebsite aus, um sich mit dem Verfahren vertraut zu machen.
+- Überprüfen Sie, ob die Website vor dem Planen oder Ausführen der Verschiebung verschoben werden kann.
 - Planen Sie die geografische Verschiebung von Websites möglichst außerhalb der Arbeitszeiten, um die Auswirkungen auf die Benutzer möglichst gering zu halten.
-- Teilen Sie den Benutzer, die von der Verschiebung betroffen sind, vorher mit, was passiert. 
+- Teilen Sie den Benutzer, die von der Verschiebung betroffen sind, vorher mit, was passiert.
 
 ## <a name="communicating-to-your-users"></a>Kommunikation mit Benutzern
 
@@ -62,10 +62,11 @@ Sie können das Verschieben von SharePoint-Websites im voraus planen (wie weiter
 
 - Sie können bis zu 4.000 Verschiebungen zugleich planen.
 - Wenn mit dem Verschieben begonnen wird, können Sie weitere planen, bis zu maximal jeweils 4.000 ausstehenden Verschiebungen in der Warteschlange.
- 
+
 Um das Verschieben einer SharePoint-Website für einen späteren Zeitpunkt zu planen, schließen Sie beim Beginn der Verschiebung einen der folgenden Parameter ein:
+
 - `PreferredMoveBeginDate` – Die Verschiebung beginnt wahrscheinlich zu diesem Zeitpunkt.
-- `PreferredMoveEndDate` – Die Verschiebung wird wahrscheinlich bis zu diesem Zeitpunkt abgeschlossen sein. 
+- `PreferredMoveEndDate` – Die Verschiebung wird wahrscheinlich bis zu diesem Zeitpunkt abgeschlossen sein.
 
 Die Uhrzeit muss für beide Parameter in koordinierter Weltzeit (UTC) angegeben werden.
 
@@ -73,19 +74,22 @@ Die Uhrzeit muss für beide Parameter in koordinierter Weltzeit (UTC) angegeben 
 
 Die geografische Verschiebung von SharePoint-Websites setzt voraus, dass Sie eine Verbindung mit der SharePoint-Admin-URL an dem Standort herstellen, an dem sich die Website befindet, und die Verschiebung von hier aus durchführen.
 
-Wenn die URL der Website z. B. https://contosohealthcare.sharepoint.com/sites/Turbines lautet, stellen Sie eine Verbindung mit der SharePoint-Admin-URL unter https://contosohealthcare-admin.sharepoint.com: her.
+Wenn beispielsweise die Website-URL lautet <https://contosohealthcare.sharepoint.com/sites/Turbines> , stellen Sie eine Verbindung mit der SharePoint-Administrator-URL her unter <https://contosohealthcare-admin.sharepoint.com> :
 
-`Connect-SPOService -url https://contosohealthcare-admin.sharepoint.com`
+```powershell
+Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
+```
 
-![](../media/move-onedrive-between-geo-locations-image1.png)
- 
+![SharePoint Online-Verwaltungsshell-Fenster mit dem Befehl "Connect-SPOService"](../media/move-onedrive-between-geo-locations-image1.png)
+
 ### <a name="validating-the-environment"></a>Überprüfen der Umgebung
 
 Wir empfehlen, vor der Planung einer Websiteverschiebung eine Prüfung durchzuführen, um sicherzustellen, dass die Website verschoben werden kann.
 
 Das Verschieben von Websites wird nicht unterstützt mit:
--    Business Connectivity Services
--    InfoPath-Formularen 
+
+- Business Connectivity Services
+- InfoPath-Formularen
 - Angewendete IRM-Vorlagen (Information Rights Management)
 
 Um sicherzustellen, dass alle geografischen Standorte kompatibel sind, führen Sie `Get-SPOGeoMoveCrossCompatibilityStatus` aus. Hiermit werden alle geografischen Standorte aufgeführt, und es wird angezeigt, ob die Umgebung mit dem geografischen Zielstandort kompatibel ist.
@@ -102,15 +106,17 @@ Es wird *Erfolg* zurückgegeben, wenn die Website verschoben werden kann, oder *
 
 Standardmäßig ändert sich die anfängliche URL für die Website in die URL des geografischen Zielstandorts. Beispiel:
 
-https://Contoso.sharepoint.com/sites/projectx in https://ContosoEUR.sharepoint.com/sites/projectx
+<https://Contoso.sharepoint.com/sites/projectx> in <https://ContosoEUR.sharepoint.com/sites/projectx>
 
 Bei Websites, denen keine Microsoft 365-Gruppe zugeordnet ist, können Sie die Website mit dem `-DestinationUrl`-Parameter umbenennen. Zum Beispiel:
 
-https://Contoso.sharepoint.com/sites/projectx in https://ContosoEUR.sharepoint.com/sites/projecty
+<https://Contoso.sharepoint.com/sites/projectx> in <https://ContosoEUR.sharepoint.com/sites/projecty>
 
 Führe Sie Folgendes aus, um mit der Verschiebung der Website zu beginnen:
 
-`Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationDataLocation <DestinationDataLocation> -DestinationUrl <DestinationSiteURL>`
+```powershell
+Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationDataLocation <DestinationDataLocation> -DestinationUrl <DestinationSiteURL>
+```
 
 ![Screenshot des PowerShell-Fensters mit dem Cmdlet „Start-SPOSiteContentMove“](../media/multi-geo-sharepoint-site-move-powershell.png)
 
@@ -124,7 +130,8 @@ So Legen Sie den PDL einer Microsoft 365-Gruppe fest:
 Set-SPOUnifiedGroup -PreferredDataLocation <PDL> -GroupAlias <GroupAlias>
 Get-SPOUnifiedGroup -GroupAlias <GroupAlias>
 ```
-Nachdem Sie den bevorzugten Datenspeicherort aktualisiert haben, können Sie mit der Websiteverschiebung beginnen: 
+
+Nachdem Sie den bevorzugten Datenspeicherort aktualisiert haben, können Sie mit der Websiteverschiebung beginnen:
 
 ```PowerShell
 Start-SPOUnifiedGroupMove -GroupAlias <GroupAlias> -DestinationDataLocation <DestinationDataLocation>
@@ -139,19 +146,22 @@ Sie können die Verschiebung des geografischen Standorts einer SharePoint-Websit
 Sie können den Status einer Websiteverschiebung an den geografischen Standort oder von dem geografischen Standort, mit dem Sie verbunden sind, mit den folgenden Cmdlets ermitteln:
 
 - [Get-SPOSiteContentMoveState](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spositecontentmovestate) (Websites, die nicht mit Gruppen verbunden sind)
-- Get-SPOUnifiedGroupMoveState (Websites, die mit Gruppen verbunden sind)
+- [Get-SPOUnifiedGroupMoveState](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spounifiedgroupmovestate) (Gruppen verbundene Websites)
 
 Verwenden Sie den `-SourceSiteUrl`-Parameter, um die Website anzugeben, für die Sie den Verschiebungsstatus anzeigen möchten.
 
 Die Statuswerte der Verschiebung werden in der folgenden Tabelle beschrieben.
 
+****
+
 |Status|Beschreibung|
-|:-----|:----------|
+|---|---|
 |Bereit zum Auslösen|Die Verschiebung wurde noch nicht begonnen.|
 |Geplant|Die Verschiebung befindet sich in der Warteschlange, wurde aber noch nicht begonnen.|
 |In Bearbeitung (n/4)|Die Verschiebung wird ausgeführt, wenn einer der folgenden Statuswerte angezeigt wird: Validation (1/4), Backup (2/4), Restore (3/4), Cleanup (4/4).|
 |Success|Die Verschiebung wurde erfolgreich ausgeführt.|
 |Failed|Beim Verschieben ist ein Fehler aufgetreten.|
+|
 
 Sie können auch die Option `-Verbose` anwenden, um weitere Informationen zur Verschiebung anzuzeigen.
 
@@ -215,4 +225,4 @@ PowerApps müssen am Zielstandort neu erstellt werden.
 
 ### <a name="data-movement-between-geo-locations"></a>Verschieben von Daten zwischen geografischen Standorten
 
-SharePoint verwendet Azure Blob-Speicher für Inhalte, während die mit den Websites verknüpften Metadaten und die zugehörigen Dateien in SharePoint gespeichert werden. Nachdem die Website von ihrem Quellstandort an den Zielstandort verschoben wurde, verschiebt der Dienst auch den zugehörigen Blob-Speicher. Der Blob-Speicher wird in ungefähr 40 Tagen vollständig verschoben. 
+SharePoint verwendet Azure Blob-Speicher für Inhalte, während die mit den Websites verknüpften Metadaten und die zugehörigen Dateien in SharePoint gespeichert werden. Nachdem die Website von ihrem Quellstandort an den Zielstandort verschoben wurde, verschiebt der Dienst auch den zugehörigen Blob-Speicher. Der Blob-Speicher wird in ungefähr 40 Tagen vollständig verschoben.
