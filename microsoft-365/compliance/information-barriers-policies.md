@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: Hier erfahren Sie, wie Sie Richtlinien für Informationsbarrieren in Microsoft Teams definieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 024b10f86cb38532dc441ebd9c88c050fe2839b7
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: dcf7fd496098032bad075c1679f0081ddf29caef
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308074"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547443"
 ---
 # <a name="define-information-barrier-policies"></a>Definieren von Richtlinien für Informationsbarrieren
 
@@ -71,7 +71,7 @@ Stellen Sie zusätzlich zu den [erforderlichen Lizenzen und Berechtigungen](info
 - Keine adressbuchrichtlinien – stellen Sie vor dem definieren und Anwenden von Richtlinien für Informationsbarrieren sicher, dass keine Exchange-adressbuchrichtlinien vorhanden sind. Informationsbarrieren basieren auf der Adressbuchrichtlinien, aber die beiden Arten von Richtlinien sind nicht kompatibel. Wenn Sie solche Richtlinien verwenden, müssen Sie zuerst [Ihre adressbuchrichtlinien entfernen](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) . Sobald Richtlinien für Informationsbarrieren aktiviert sind und das hierarchische Adressbuch aktiviert ist, werden alle Benutzer, die nicht in einem Segment mit Informationsbarrieren ***enthalten sind*** , das [hierarchische Adressbuch](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books) in Exchange Online sehen.
 
 - PowerShell – derzeit werden Richtlinien für Informationsbarrieren im Office 365 Security & Compliance Center mithilfe von PowerShell-Cmdlets definiert und verwaltet. In diesem Artikel werden zwar einige Beispiele bereitgestellt, aber Sie müssen mit PowerShell-Cmdlets und-Parametern vertraut sein. Außerdem benötigen Sie das Azure PowerShell-Modul.
-    - [Herstellen einer Verbindung mit Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
+    - [Herstellen einer Verbindung mit Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
     - [Installieren des Azure PowerShell-Moduls](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.3.2)
 
 - Zustimmung des Administrators für Informationsbarrieren in Microsoft Teams – Wenn Ihre Richtlinien vorhanden sind, können Informationsbarrieren Personen aus Chatsitzungen entfernen, in denen Sie sich nicht befinden sollen. Dadurch wird sichergestellt, dass Ihre Organisation mit den Richtlinien und Vorschriften konform bleibt. Verwenden Sie das folgende Verfahren, um Richtlinien für Informationsbarrieren zu aktivieren, die in Microsoft Teams erwartungsgemäß funktionieren. 
@@ -258,7 +258,7 @@ Mit PowerShell können Sie den Status von Benutzerkonten, Segmenten, Richtlinien
 |Segmente     |Verwenden Sie das Cmdlet **Get-OrganizationSegment** .<p>Syntax `Get-OrganizationSegment` <p>Dadurch wird eine Liste aller Segmente angezeigt, die für Ihre Organisation definiert sind.         |
 |Richtlinien für Informationsbarrieren     |Verwenden Sie das Cmdlet **Get-InformationBarrierPolicy** . <p> Syntax `Get-InformationBarrierPolicy` <p>Dadurch wird eine Liste der definierten Richtlinien für Informationsbarrieren angezeigt, die definiert wurden, und deren Status.       |
 |Die neueste Informations Barriere-Richtlinienanwendung     | Verwenden Sie das Cmdlet **Get-InformationBarrierPoliciesApplicationStatus** . <p>Syntax `Get-InformationBarrierPoliciesApplicationStatus`<p>    Dadurch werden Informationen darüber angezeigt, ob die Richtlinienanwendung abgeschlossen, ein Fehler aufgetreten ist oder ausgeführt wird.       |
-|Alle Informations Barrier Policy-Anwendungen|Verwenden `Get-InformationBarrierPoliciesApplicationStatus -All $true`<p>Dadurch werden Informationen darüber angezeigt, ob die Richtlinienanwendung abgeschlossen, ein Fehler aufgetreten ist oder ausgeführt wird.|
+|Alle Informations Barrier Policy-Anwendungen|`Get-InformationBarrierPoliciesApplicationStatus -All $true` verwenden<p>Dadurch werden Informationen darüber angezeigt, ob die Richtlinienanwendung abgeschlossen, ein Fehler aufgetreten ist oder ausgeführt wird.|
 
 <!-- IN the " The most recent information barrier policy application, add link to troubleshooting topic -->
 

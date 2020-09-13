@@ -16,12 +16,12 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: Administratoren können Informationen zum Erstellen von Nachrichtenfluss Regeln (Transportregeln) zum Verschlüsseln und Entschlüsseln von Nachrichten mit Office 365 Nachrichtenverschlüsselung erlernen.
-ms.openlocfilehash: 869448ff1f5161fc71d332c1b5956015dca50fa2
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: b36a924b41da645bd0fb823c25173fea6e7e2313
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351792"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546169"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>Definieren von Nachrichtenfluss Regeln zum Verschlüsseln von e-Mail Nachrichten
 
@@ -114,7 +114,7 @@ Mithilfe der Exchange-Verwaltungskonsole können Sie e-Mail-Flussregeln zum Ausl
 
 7. Wählen Sie unter **Folgendes ausführen die**Option **Nachrichtensicherheit** \> **Entfernen Office 365 Nachrichtenverschlüsselung und Rechte Schutz**aus.
 
-8. Wählen Sie **Speichern**.
+8. Klicken Sie auf **Speichern**.
 
 ## <a name="create-mail-flow-rules-for-office-365-message-encryption-without-the-new-capabilities"></a>Erstellen von Nachrichtenfluss Regeln für Office 365 Nachrichtenverschlüsselung ohne die neuen Funktionen
 
@@ -154,7 +154,7 @@ Wenn Sie Ihre Organisation noch nicht in die neuen OM-Funktionen verschoben habe
 
 ### <a name="use-exchange-online-powershell-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-the-new-ome-capabilities"></a>Verwenden Exchange Online PowerShell zum Erstellen einer e-Mail-Fluss Regel zum Verschlüsseln von e-Mail-Nachrichten ohne die neuen OM-Funktionen
 
-1. Stellen Sie eine Verbindung mit Exchange Online PowerShell her. Weitere Informationen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+1. Stellen Sie eine Verbindung mit Exchange Online PowerShell her. Weitere Informationen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Erstellen Sie mithilfe des Cmdlets **New-TransportRule** eine Regel, und legen Sie den Parameter _ApplyOME_ auf fest `$true` .
 
@@ -194,11 +194,11 @@ Wenn Ihre E-Mail-Benutzer verschlüsselte Nachrichten senden, können Empfänger
 
 7. Wählen Sie unter **Folgendes ausführen**die Option **Nachrichtensicherheit ändern** aus, um \> **die vorherige Version von OM zu entfernen**.
 
-8. Wählen Sie **Speichern**.
+8. Klicken Sie auf **Speichern**.
 
 #### <a name="use-exchange-online-powershell-to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Verwenden Exchange Online PowerShell zum Erstellen einer Regel zum Entfernen der Verschlüsselung aus e-Mail-Antworten, die ohne die neuen OM-Funktionen verschlüsselt wurden
 
-1. Stellen Sie eine Verbindung mit Exchange Online PowerShell her. Weitere Informationen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+1. Stellen Sie eine Verbindung mit Exchange Online PowerShell her. Weitere Informationen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Erstellen Sie mithilfe des Cmdlets **New-TransportRule** eine Regel, und legen Sie den Parameter _RemoveOME_ auf fest `$true` .
 

@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: In diesem Artikel erfahren Sie, wie Sie eine DLP-Richtlinie entsprechend den Anforderungen Ihrer Organisation erstellen, testen und optimieren.
-ms.openlocfilehash: b8e82e1304cb411a1e73e6f7bdc02fecdda9784f
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: ef88da90d8e009d3ea634c9142d7d917fbfd288a
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46648782"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546935"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Erstellen, Testen und Optimieren einer DLP-Richtlinie
 
@@ -218,7 +218,7 @@ Wenn Ihre DLP-Richtlinie vertrauliche Informationstypen genau und effektiv zu Ih
 
 ![Option zum Aktivieren der Richtlinie](../media/DLP-create-test-tune-turn-on-policy.png)
  
-Wenn Sie darauf warten, dass die Richtlinie wirksam wird, [stellen Sie eine Verbindung mit dem Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) her, und führen Sie das [Get-DlpCompliancePolicy-Cmdlet](https://docs.microsoft.com/powershell/module/exchange/get-dlpcompliancepolicy?view=exchange-ps) aus, um den DistributionStatus anzuzeigen.
+Wenn Sie darauf warten, dass die Richtlinie wirksam wird, [stellen Sie eine Verbindung mit dem Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) her, und führen Sie das [Get-DlpCompliancePolicy-Cmdlet](https://docs.microsoft.com/powershell/module/exchange/get-dlpcompliancepolicy) aus, um den DistributionStatus anzuzeigen.
 
 ![Ausführen des Cmdlets in PowerShell](../media/DLP-create-test-tune-PowerShell.png)
 

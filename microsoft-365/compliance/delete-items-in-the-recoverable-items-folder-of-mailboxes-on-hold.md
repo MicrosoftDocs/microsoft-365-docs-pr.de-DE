@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: Erfahren Sie, wie Administratoren Elemente im Ordner "Wiederherstellbare Elemente" eines Benutzers für ein Exchange Online Postfach löschen können, selbst wenn das Postfach legal aufbewahrt wird.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d0983a3ce10a3980f23af68736acac1382ef938f
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: 5f111a19e3baf57f2b6f2e2254df97d21689de2e
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405466"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546149"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>Löschen von Elementen im Ordner „Wiederherstellbare Elemente“ für cloudbasierte aufzubewahrende Postfächer
 
@@ -226,7 +226,7 @@ Weitere Informationen zu Bezeichnungen finden Sie unter Informationen [zu Aufbew
 
 ### <a name="ediscovery-holds"></a>eDiscovery-Aufbewahrung
   
-Führen Sie die folgenden Befehle in [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) aus, um den Haltebereich für einen eDiscovery-Fall (so genannte *eDiscovery Holds*) zu identifizieren, der auf das Postfach angewendet wird. Verwenden Sie die GUID (ohne das  `UniH` Präfix eingeschlossen) für den eDiscovery-Haltebereich, den Sie in Schritt 1 identifiziert haben. Der zweite Befehl zeigt den Namen des eDiscovery-Falls an, dem der Haltebereich zugeordnet ist. der dritte Befehl zeigt den Namen des Haltestatus an.
+Führen Sie die folgenden Befehle in [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) aus, um den Haltebereich für einen eDiscovery-Fall (so genannte *eDiscovery Holds*) zu identifizieren, der auf das Postfach angewendet wird. Verwenden Sie die GUID (ohne das  `UniH` Präfix eingeschlossen) für den eDiscovery-Haltebereich, den Sie in Schritt 1 identifiziert haben. Der zweite Befehl zeigt den Namen des eDiscovery-Falls an, dem der Haltebereich zugeordnet ist. der dritte Befehl zeigt den Namen des Haltestatus an.
   
 ```powershell
 $CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>

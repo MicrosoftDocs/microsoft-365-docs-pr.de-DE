@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Haben Sie eine Frage zur Funktionsweise der neuen Nachrichtenschutzfunktionen? Hier finden Sie eine Antwort.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 927b81c3a1ce049f1a2427bbbf1d306608be35cb
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: efccbdf2be33fb771e7e68ba5a0b3dafa82d9ce8
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798187"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546059"
 ---
 # <a name="message-encryption-faq"></a>Häufig gestellte Fragen zur Nachrichtenverschlüsselung
 
@@ -120,7 +120,7 @@ Für Outlook im Internet, Outlook für IOS und Outlook für Android können Sie 
 
 Outlook-Desktop unterstützt keine systemeigene Verschlüsselung von PDF-Dateianlagen. Stattdessen müssen Sie Exchange-Nachrichtenfluss Regeln oder DLP einrichten, um zuerst die Verschlüsselung auf PDF-Anlagen anzuwenden. Wenn Sie e-Mails von Outlook Desktop mit einer PDF-Anlage senden, sendet der Client die Nachricht zuerst mit der Anlage an den Dienst. Wenn der Dienst die Datei empfängt, wendet der Dienst den Schutz der Datenverlust Richtlinie (Data Loss Prevention, DLP) oder der Nachrichtenfluss Regel in Exchange Online an. Als nächstes sendet Exchange Online die Nachricht mit dem geschützten PDF-Dateianhang.
 
-Führen Sie den folgenden Befehl in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)aus, um die Verschlüsselung für PDF-Anlagen zu aktivieren:
+Führen Sie den folgenden Befehl in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)aus, um die Verschlüsselung für PDF-Anlagen zu aktivieren:
 
 ```powershell
 Set-IRMConfiguration -EnablePdfEncryption $true

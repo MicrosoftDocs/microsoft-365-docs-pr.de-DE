@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Verwenden Sie Office 365 erweiterte Nachrichtenverschlüsselung, um Ihre e-Mail-Sicherheit zu erweitern, indem Sie ein Ablaufdatum für e-Mails über eine benutzerdefinierte Marken Vorlage festlegen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e929ce1d948a83a98cca6fa35a65b80a2fc9ef15
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 0dcf9c82f9204f1357b49411d0ca87e87007eb96
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818688"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546159"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-office-365-advanced-message-encryption"></a>Festlegen eines Ablaufdatums für E-Mails, die mit der erweiterten Office 365-Nachrichtenverschlüsselung verschlüsselt wurden.
 
@@ -40,7 +40,7 @@ Bei Office 365 erweiterten Nachrichtenverschlüsselung wendet der Office 365 den
 
 ## <a name="create-a-custom-branding-template-to-force-mail-expiration-by-using-powershell"></a>Erstellen einer benutzerdefinierten Branding-Vorlage zum Erzwingen des e-Mail-Ablaufs mithilfe von PowerShell
 
-1. Stellen Sie eine [Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) mit einem Konto her, das über globale Administratorberechtigungen in Ihrer Organisation verfügt.
+1. Stellen Sie eine [Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) mit einem Konto her, das über globale Administratorberechtigungen in Ihrer Organisation verfügt.
 
 2. Führen Sie das Cmdlet New-OMEConfiguration aus.
 
@@ -50,9 +50,9 @@ Bei Office 365 erweiterten Nachrichtenverschlüsselung wendet der Office 365 den
 
 Dabei gilt:
 
-- `Identity`ist der Name der benutzerdefinierten Vorlage.
+- `Identity` ist der Name der benutzerdefinierten Vorlage.
 
-- `ExternalMailExpiryInDays`Gibt an, wie viele Tage e-Mails von Empfängern aufbewahrt werden können, bevor Sie ablaufen. Sie können einen beliebigen Wert zwischen 1 bis 730 Tagen verwenden.
+- `ExternalMailExpiryInDays` Gibt an, wie viele Tage e-Mails von Empfängern aufbewahrt werden können, bevor Sie ablaufen. Sie können einen beliebigen Wert zwischen 1 bis 730 Tagen verwenden.
 
 ## <a name="more-information-about-office-365-advanced-message-encryption"></a>Weitere Informationen zu Office 365 erweiterte Nachrichtenverschlüsselung
 
