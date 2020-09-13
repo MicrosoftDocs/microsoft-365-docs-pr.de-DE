@@ -12,12 +12,12 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Information-Worker in Ihrer Organisation verarbeiten im Lauf eines Arbeitstags viele Arten von vertraulichen Informationen. Dokumentfingerabdrücke erleichtern Ihnen den Schutz dieser Informationen durch Identifikation von Standardformularen, die in Ihrer gesamten Organisation verwendet werden. In diesem Thema werden die Konzepte hinter dem Dokument Fingerabdruck und das Erstellen eines mithilfe von PowerShell beschrieben.
-ms.openlocfilehash: 37b5649e357f24993e41ae93db6737d980ce0c72
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 0c1fb86e4176c042a6ed772b2a18fc14ca81efcd
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352022"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547141"
 ---
 # <a name="document-fingerprinting"></a>Dokumentfingerabdrücke
 
@@ -45,7 +45,7 @@ Im folgenden Beispiel wird gezeigt, was passiert, wenn Sie einen Dokumentfingera
   
 ### <a name="example-of-a-patent-document-matching-a-document-fingerprint-of-a-patent-template"></a>Beispiel für ein Patentdokument, das zum Fingerabdruck einer Patentvorlage passt
 
-![Document-Fingerprinting-Diagram. png](../media/Document-Fingerprinting-diagram.png)
+![Document-Fingerprinting-diagram.png](../media/Document-Fingerprinting-diagram.png)
   
 Die Patent Vorlage enthält die leeren Felder "Patent Title", "Inventors" und "Description" sowie Beschreibungen für jedes dieser Felder, also das Wortmuster. Wenn Sie die ursprüngliche Patent Vorlage hochladen, befindet Sie sich in einem der unterstützten Dateitypen und im nur-Text-Format. DLP wandelt dieses Wortmuster in einen Fingerabdruck des Dokuments um, bei dem es sich um eine kleine Unicode-XML-Datei mit einem eindeutigen Hashwert handelt, der den ursprünglichen Text darstellt, und der Fingerabdruck wird als Datenklassifizierung in Active Directory gespeichert. (Als Sicherheitsmaßnahme wird das Originaldokument selbst nicht im Dienst gespeichert; es wird nur der Hashwert gespeichert, und das ursprüngliche Dokument kann nicht aus dem Hashwert rekonstruiert werden.) Der Patent Fingerabdruck wird dann zu einem vertraulichen Informationstyp, den Sie einer DLP-Richtlinie zuordnen können. Nachdem Sie den Fingerabdruck einer DLP-Richtlinie zugeordnet haben, erkennt DLP alle ausgehenden e-Mails mit Dokumenten, die dem Patent Fingerabdruck entsprechen, und behandelt diese entsprechend der Richtlinie Ihrer Organisation. 
 
@@ -65,7 +65,7 @@ Das Dokumentieren von Fingerabdrücken erkennt in den folgenden Fällen keine ve
 
 ## <a name="use-powershell-to-create-a-classification-rule-package-based-on-document-fingerprinting"></a>Verwenden von PowerShell zum Erstellen eines Klassifizierungsregel Pakets basierend auf dem Dokument Fingerabdruck
 
-Beachten Sie, dass Sie derzeit nur mithilfe von PowerShell im Security Compliance Center einen Dokument Fingerabdruck erstellen können &amp; . Informationen zum Herstellen einer Verbindung finden Sie unter [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+Beachten Sie, dass Sie derzeit nur mithilfe von PowerShell im Security Compliance Center einen Dokument Fingerabdruck erstellen können &amp; . Informationen zum Herstellen einer Verbindung finden Sie unter [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 DLP verwendet Klassifizierungsregel Pakete, um vertrauliche Inhalte zu erkennen. Zum Erstellen eines Klassifizierungsregel Pakets basierend auf einem Dokument Fingerabdruck verwenden Sie die Cmdlets **New-DlpFingerprint** und **New-DlpSensitiveInformationType** . Da die Ergebnisse von **New-DlpFingerprint** nicht außerhalb der Daten Klassifizierungsregel gespeichert werden, führen Sie immer **New-DlpFingerprint** und **New-DlpSensitiveInformationType** oder **festlegen-DlpSensitiveInformationType** in derselben PowerShell-Sitzung aus. Im folgenden Beispiel wird ein neuer Dokumentfingerabdruck basierend auf der Datei "C:\Eigene Dateien\Contoso Employee Template.docx" erstellt. Sie speichern den neuen Fingerabdruck als Variable, damit Sie ihn mit dem Cmdlet **New-DlpSensitiveInformationType** in derselben PowerShell-Sitzung verwenden können.
   
@@ -90,13 +90,13 @@ Fügen Sie abschließend das Daten Klassifizierungsregel Paket "Contoso Customer
 New-DlpComplianceRule -Name "ContosoConfidentialRule" -Policy "ConfidentialPolicy" -ContentContainsSensitiveInformation @{Name="Contoso Customer Confidential"} -BlockAccess $True
 ```
 
-Sie können das Daten Klassifizierungsregel Paket auch in Nachrichtenfluss Regeln in Exchange Online verwenden, wie im folgenden Beispiel dargestellt. Zum Ausführen dieses Befehls müssen Sie zunächst [eine Verbindung mit Exchange Online PowerShell herstellen](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Beachten Sie auch, dass es Zeit dauert, bis das Regelpaket vom Security &amp; Compliance Center mit dem Exchange Admin Center synchronisiert wird.
+Sie können das Daten Klassifizierungsregel Paket auch in Nachrichtenfluss Regeln in Exchange Online verwenden, wie im folgenden Beispiel dargestellt. Zum Ausführen dieses Befehls müssen Sie zunächst [eine Verbindung mit Exchange Online PowerShell herstellen](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Beachten Sie auch, dass es Zeit dauert, bis das Regelpaket vom Security &amp; Compliance Center mit dem Exchange Admin Center synchronisiert wird.
   
 ```powershell
 New-TransportRule -Name "Notify :External Recipient Contoso confidential" -NotifySender NotifyOnly -Mode Enforce -SentToScope NotInOrganization -MessageContainsDataClassification @{Name=" Contoso Customer Confidential"}
 ```
 
-DLP erkennt jetzt Dokumente, die dem Fingerabdruck des Dokuments "Contoso Customer Form. docx" entsprechen.
+DLP erkennt jetzt Dokumente, die mit dem Fingerabdruck des Kunden Form.docx Document von Contoso übereinstimmen.
   
 Informationen zu Syntax und Parametern finden Sie unter:
 

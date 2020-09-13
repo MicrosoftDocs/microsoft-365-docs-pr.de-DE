@@ -5,18 +5,18 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
-ms.service: o365-seccomp
 localization_priority: Normal
 description: 'Erfahren Sie mehr über das Microsoft 365 Compliance Center: was es enthält, wie Sie es erhalten, die nächsten Schritte und mehr.'
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 835c05a701169614d15c3b50294a56cdad331fac
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 5b0b9372563721071ed8282bf507d96e5eee2aea
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126838"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547483"
 ---
 # <a name="microsoft-365-compliance-center"></a>Microsoft 365 Compliance Center
 

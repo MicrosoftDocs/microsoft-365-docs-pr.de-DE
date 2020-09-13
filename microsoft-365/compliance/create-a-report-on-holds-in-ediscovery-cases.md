@@ -20,12 +20,12 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: Hier erfahren Sie, wie Sie einen Bericht mit Informationen zu allen Haltebereichen generieren, die eDiscovery-Fällen zugeordnet sind.
-ms.openlocfilehash: 4da2b93ad9055363a5f8a7d61eff04270dfd00dc
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: 35e432104e7c1358887eb89ae96b9bb0d1d12a0f
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845867"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546977"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>Erstellen eines Berichts zu Haltebereichen in eDiscovery-Fällen
 
@@ -43,7 +43,7 @@ Eine ausführliche Beschreibung der im Bericht enthaltenen Informationen finden 
 
 ## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>Schritt 1: Herstellen einer Verbindung mit der Security & Compliance Center PowerShell
 
-Der erste Schritt besteht darin, eine Verbindung mit Security & Compliance Center PowerShell für Ihre Organisation herzustellen. Schrittweise Anleitungen erhalten Sie unter [Herstellen einer Verbindung mit Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+Der erste Schritt besteht darin, eine Verbindung mit Security & Compliance Center PowerShell für Ihre Organisation herzustellen. Schrittweise Anleitungen erhalten Sie unter [Herstellen einer Verbindung mit Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 ## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Schritt 2: Ausführen des Skripts zum Melden von Haltestatus für eDiscovery-Fälle
 

@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie Spam an Benutzer-Junk-e-Mail-Ordner in einer Exchange Online Protection Hybrid-Umgebung weiterleiten.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5d8ba6aae599ee4dd327bd1ec82b46e8f3ee3ca8
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 15acc9ad87fa0c785998895d026dae036d9ddd7b
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679120"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547664"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Konfigurieren von eigenständigen EoP zur Zustellung von Spam an den Junk-e-Mail-Ordner in Hybrid Umgebungen
 
@@ -33,11 +33,11 @@ Wenn Sie ein eigenständiger Exchange Online Schutz-Kunde (EoP) in einer Hybridu
 
 Insbesondere müssen Sie Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) in Ihrer lokalen Exchange-Organisation mit Bedingungen erstellen, die Nachrichten mit einem der folgenden EoP-Antispam-Header und-Werte und Aktionen, die die SCL-Bewertung (Spam Confidence Level) dieser Nachrichten festlegen, auf 6 finden:
 
-- `X-Forefront-Antispam-Report: SFV:SPM`(Nachricht als Spam durch Spamfilterung gekennzeichnet)
+- `X-Forefront-Antispam-Report: SFV:SPM` (Nachricht als Spam durch Spamfilterung gekennzeichnet)
 
-- `X-Forefront-Antispam-Report: SFV:SKS`(Nachricht als Spam durch Nachrichtenfluss Regeln in EoP vor Spamfilterung markiert)
+- `X-Forefront-Antispam-Report: SFV:SKS` (Nachricht als Spam durch Nachrichtenfluss Regeln in EoP vor Spamfilterung markiert)
 
-- `X-Forefront-Antispam-Report: SFV:SKB`(Nachricht als Spam durch Spamfilterung gekennzeichnet, da sich die e-Mail-Adresse des Absenders oder die e-Mail-Domäne in der Liste blockierter Absender oder in der Liste der blockierten Domänen in EoP befindet)
+- `X-Forefront-Antispam-Report: SFV:SKB` (Nachricht als Spam durch Spamfilterung gekennzeichnet, da sich die e-Mail-Adresse des Absenders oder die e-Mail-Domäne in der Liste blockierter Absender oder in der Liste der blockierten Domänen in EoP befindet)
 
 Weitere Informationen zu diesen Headerwerten finden Sie unter [Anti-Spam Message Headers](anti-spam-message-headers.md).
 
@@ -59,7 +59,7 @@ In diesem Thema wird beschrieben, wie Sie diese Nachrichtenfluss Regeln in der E
   Ausführliche Informationen finden Sie unter [Exchange Spam Confidence Level (SCL) Schwellenwerte](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/scl).
 
   - Gibt an, ob die Junk-e-Mail-Regel für das Postfach aktiviert ist (der Parameterwert _Enabled_ ist $true im Cmdlet " [MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration) " im Exchange-Verwaltungsshell). Es handelt sich um die Junk-e-Mail-Regel, die die Nachricht nach der Zustellung in den Junk-e-Mail-Ordner verschiebt. Standardmäßig ist die Junk-e-Mail-Regel für Postfächer aktiviert. Weitere Informationen finden Sie unter [Configure Exchange antispam settings on mailboxes](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings).
-  
+
 - Informationen zum Öffnen des EAC auf einem Exchange Server finden Sie unter [Exchange Admin Center in Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center). Informationen zum Öffnen des Exchange-Verwaltungsshell finden Sie unter [Öffnen des Exchange-Verwaltungsshell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - Weitere Informationen zu Nachrichtenfluss Regeln in lokalen Exchange finden Sie in den folgenden Themen:
@@ -78,7 +78,7 @@ In diesem Thema wird beschrieben, wie Sie diese Nachrichtenfluss Regeln in der E
 
 3. Konfigurieren Sie auf der daraufhin geöffneten Seite **Neue Regel** die folgenden Einstellungen:
 
-   - **Name**: Geben Sie einen eindeutigen, beschreibenden Namen für die Regel ein. Zum Beispiel:
+   - **Name**: Geben Sie einen eindeutigen, beschreibenden Namen für die Regel ein. Beispiel:
 
      - EoP SFV: SPM zu SCL-Bewertung 6
 
@@ -94,7 +94,7 @@ In diesem Thema wird beschrieben, wie Sie diese Nachrichtenfluss Regeln in der E
 
      - Klicken Sie auf **Text eingeben**. Geben Sie im angezeigten Dialogfeld **Kopfzeile angeben** den Namen **X-Forefront-Antispam-Report** ein, und klicken Sie dann auf **OK**.
 
-     - Klicken Sie auf **Wörter eingeben**. Geben Sie im daraufhin angezeigten Dialogfeld **Wörter oder Ausdrücke angeben** einen der EoP-Spam Headerwerte ein (**SFV: SPM**, **SFV: SKS**oder **SFV: SKB**), klicken Sie auf Add-Symbol **Hinzufügen** ![ ](../../media/ITPro-EAC-AddIcon.png) , und klicken Sie dann auf **OK**.
+     - Klicken Sie auf  **Wörter eingeben**. Geben Sie im daraufhin angezeigten Dialogfeld **Wörter oder Ausdrücke angeben** einen der EoP-Spam Headerwerte ein (**SFV: SPM**, **SFV: SKS**oder **SFV: SKB**), klicken Sie auf Add-Symbol **Hinzufügen** ![ ](../../media/ITPro-EAC-AddIcon.png) , und klicken Sie dann auf **OK**.
 
    - **Gehen Sie folgen**dermaßen vor: Wählen Sie **ändern die Nachrichteneigenschaften** \> **Festlegen der SCL-Bewertung (Spam Confidence Level)**.
 
@@ -112,7 +112,7 @@ Verwenden Sie die folgende Syntax, um die drei Nachrichtenfluss Regeln zu erstel
 New-TransportRule -Name "<RuleName>" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "<EOPSpamFilteringVerdict>" -SetSCL 6
 ```
 
-Zum Beispiel:
+Beispiel:
 
 ```Powershell
 New-TransportRule -Name "EOP SFV:SPM to SCL 6" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SPM" -SetSCL 6

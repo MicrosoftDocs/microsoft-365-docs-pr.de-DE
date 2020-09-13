@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie mehr über Kunden Lockbox-Anforderungen, mit denen Sie steuern können, wie ein Microsoft-Supporttechniker auf Ihre Daten zugreifen kann, wenn Sie auf ein Problem stoßen.
-ms.openlocfilehash: 67662c34ed3aedb22c3462a2ba8aff9e338e07c6
-ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
+ms.openlocfilehash: d71fbaa42fba49bd0f06b26d34d2257f8a4a60ba
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46794254"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546501"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Kunden-Lockbox in Office 365
 
@@ -101,7 +101,7 @@ Sie können die Steuerelemente für die Kunden-Lockbox im Microsoft 365 Admin Ce
     ![Genehmigen oder Verweigern von Kunden-Lockbox-Anforderungen](../media/CustomerLockbox8.png)
 
 > [!NOTE]
-> Verwenden Sie das Cmdlet "AccessToCustomerDataRequest", um Microsoft 365 Kunden-Lockbox-Anfragen zu genehmigen, zu verweigern oder zu kündigen, die den Zugriff auf Ihre Daten durch Microsoft-Supporttechniker steuern. Weitere Informationen finden Sie unter [Sets-AccessToCustomerDataRequest](https://docs.microsoft.com/powershell/module/exchange/set-accesstocustomerdatarequest?view=exchange-ps).
+> Verwenden Sie das Cmdlet "AccessToCustomerDataRequest", um Microsoft 365 Kunden-Lockbox-Anfragen zu genehmigen, zu verweigern oder zu kündigen, die den Zugriff auf Ihre Daten durch Microsoft-Supporttechniker steuern. Weitere Informationen finden Sie unter [Sets-AccessToCustomerDataRequest](https://docs.microsoft.com/powershell/module/exchange/set-accesstocustomerdatarequest).
 
 
 ## <a name="auditing-customer-lockbox-requests"></a>Überwachung von Kunden-Lockbox-Anforderungen

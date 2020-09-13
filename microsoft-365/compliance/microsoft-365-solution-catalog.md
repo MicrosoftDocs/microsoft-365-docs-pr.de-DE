@@ -7,16 +7,16 @@ author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.service: o365-seccomp
+ms.service: O365-seccomp
 localization_priority: Normal
 description: 'Erfahren Sie mehr über den Microsoft 365-Lösungskatalog: was er enthält, wie Sie ihn erhalten, die nächsten Schritte und mehr.'
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c2fad2726b7e923f871c0307f17f28ea3f99b1bd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f396801d4241b06c5523e4f3312c9ce597ac015e
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637947"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547563"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Microsoft 365-Lösungskatalog
 
@@ -89,7 +89,7 @@ Stellen Sie zunächst sicher, dass Sie über die entsprechenden Lizenzen und Ber
 
 Wir arbeiten ständig daran, dem Microsoft 365 Compliance Center und dem Lösungskatalog neue Funktionen hinzuzufügen. Wenn Sie eine bestimmte Lösung im Navigationsbereich nicht finden können, ist sie in Ihrem Abonnement (noch) nicht verfügbar.
 
-Wenn Sie eine vorhandene Compliance-Lösung suchen und diese im Microsoft 365 Compliance Center noch nicht verfügbar ist, können Sie jederzeit auf Lösungen im vorhandenen Security &amp; Compliance Center zugreifen, indem Sie zu [https://protection.office.com](https://protection.office.com)wechseln. Alternativ können Sie im linken Navigationsbereich des Microsoft 365 Compliance Centers auf die Registerkarte **Weitere Ressourcen** klicken und die Office 365 Security & Compliance Center-Karte auswählen.  
+Wenn Sie eine vorhandene Compliance-Lösung suchen und diese im Microsoft 365 Compliance Center noch nicht verfügbar ist, können Sie jederzeit auf Lösungen im vorhandenen Security &amp; Compliance Center zugreifen, indem Sie zu wechseln [https://protection.office.com](https://protection.office.com) . Alternativ können Sie im linken Navigationsbereich des Microsoft 365 Compliance Centers auf die Registerkarte **Weitere Ressourcen** klicken und die Office 365 Security & Compliance Center-Karte auswählen.  
 
 ## <a name="next-steps"></a>Nächste Schritte
 

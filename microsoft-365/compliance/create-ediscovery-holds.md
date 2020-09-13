@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sie können einen Haltebereich erstellen, der einem zentralen eDiscovery-Fall zugeordnet ist, um Inhalte beizubehalten, die möglicherweise für eine Untersuchung relevant sind.
-ms.openlocfilehash: d68ca8a15713e20184e39af447cb03ccb5c9e7d7
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: bf04fd0f0637247e4637b5d3fce82f911ca51f0e
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798061"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546881"
 ---
 # <a name="create-an-ediscovery-hold"></a>Erstellen eines eDiscovery-Speichers
 
@@ -151,7 +151,7 @@ Beachten Sie beim Platzieren von Teams und Office 365 Gruppen in einer eDiscover
 
 - Wie bereits erläutert, müssen Sie das Postfach und die SharePoint-Website angeben, die einer Gruppe oder einem Team zugeordnet sind, um Inhalte zu platzieren, die in Teams und Office 365 Gruppen gespeichert sind.
 
-- Führen Sie das Cmdlet **Get-Unifiedgroup** in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) aus, um Eigenschaften für Teams und Office 365 Gruppen anzuzeigen. Dies ist eine gute Möglichkeit, die URL für die Website abzurufen, die einem Team oder einer Office 365 Gruppe zugeordnet ist. Mit dem folgenden Befehl werden z. B. ausgewählte Eigenschaften für die Office 365-Gruppe „Geschäftsleitung“ angezeigt:
+- Führen Sie das Cmdlet **Get-Unifiedgroup** in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) aus, um Eigenschaften für Teams und Office 365 Gruppen anzuzeigen. Dies ist eine gute Möglichkeit, die URL für die Website abzurufen, die einem Team oder einer Office 365 Gruppe zugeordnet ist. Mit dem folgenden Befehl werden z. B. ausgewählte Eigenschaften für die Office 365-Gruppe „Geschäftsleitung“ angezeigt:
 
     ```text
     Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
@@ -211,9 +211,9 @@ In der folgenden Tabelle sind die Grenzwerte für eDiscovery-Fälle und Case-Hol
   |:-----|:-----|
   |Maximale Anzahl von Fällen für eine Organisation  <br/> |Keine Begrenzung  <br/> |
   |Maximale Anzahl von eDiscovery-Haltestatus für eine Organisation  <br/> |10.000  <br/> |
-  |Maximale Anzahl von Postfächern in einer einzelnen eDiscovery-Aufbewahrung  <br/> |1.000  <br/> |
+  |Maximale Anzahl von Postfächern in einer einzelnen eDiscovery-Aufbewahrung  <br/> |1,000  <br/> |
   |Maximale Anzahl von SharePoint-und OneDrive für Unternehmen-Websites in einem einzelnen eDiscovery-Haltebereich  <br/> |100  <br/> |
-  |Maximale Anzahl der auf der eDiscovery-Startseite angezeigten Fälle und die maximale Anzahl von Elementen, die auf den Registerkarten Holds, suchen und Exportieren in einem Fall angezeigt werden. <sup>1</sup> |1.000|
+  |Maximale Anzahl der auf der eDiscovery-Startseite angezeigten Fälle und die maximale Anzahl von Elementen, die auf den Registerkarten Holds, suchen und Exportieren in einem Fall angezeigt werden. <sup>1</sup> |1,000|
   |||
 
    > [!NOTE]

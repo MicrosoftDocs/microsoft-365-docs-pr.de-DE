@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 40910c00a91a1e98d01fe2e25a4f9aed828a024a
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 2c654cb0ec2afd138c7c9fb4b339b53a8522e5e4
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357974"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547204"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Erforderliche Arbeit für die Implementierung von Identitäts-und Gerätezugriffs Richtlinien
 
@@ -40,7 +40,7 @@ In der folgenden Tabelle sind die erforderlichen Features und deren Konfiguratio
 
 | Konfiguration | Ausnahmen |
 | :------------- | :-----------: |
-|  [Konfigurieren der Kenn Wort Hash Synchronisierung](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).  Dies muss aktiviert sein, um durchgesickerte Anmeldeinformationen zu erkennen und Sie für den risikobasierten bedingten Zugriff zu tätigen. **Hinweis:** Dies ist erforderlich, unabhängig davon, ob in Ihrer Organisation eine hybride Verbundauthentifizierung verwendet wird. |  Rein cloudbasiert |
+|  [Konfigurieren Sie PHS](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).  Dies muss aktiviert sein, um durchgesickerte Anmeldeinformationen zu erkennen und Sie für den risikobasierten bedingten Zugriff zu tätigen. **Hinweis:** Dies ist erforderlich, unabhängig davon, ob in Ihrer Organisation die Verbundauthentifizierung verwendet wird. |  Rein cloudbasiert |
 | [Aktivieren Sie das nahtlose einmalige Anmelden](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso) , um Benutzer automatisch zu signieren, wenn Sie sich auf Ihren Organisations Geräten befinden, die mit Ihrem Organisationsnetzwerk verbunden sind. | Nur Cloud und Verbund  |
 | [Konfigurieren Sie benannte Netzwerke](https://docs.microsoft.com/azure/active-directory/active-directory-known-networks-azure-portal). Azure AD Identitätsschutz erfasst und analysiert alle verfügbaren Sitzungsdaten, um ein Risikoergebnis zu generieren. Es wird empfohlen, die öffentlichen IP-Bereiche Ihrer Organisation für Ihr Netzwerk in der Konfiguration Azure AD benannte Netzwerke anzugeben. Für den Datenverkehr, der aus diesen Bereichen stammt, wird ein verringertes Risikoergebnis erzielt, und Datenverkehr von außerhalb der Organisationsumgebung erhält ein höheres Risikoergebnis. | |
 |[Registrieren Sie alle Benutzer für Self-Service Password Reset (SSPR) und mehrstufige Authentifizierung (MFA)](https://docs.microsoft.com/azure/active-directory/authentication/concept-registration-mfa-sspr-converged). Es wird empfohlen, dass Sie vor der Zeit Benutzer für die Azure Multi-Factor Authentication registrieren. Azure AD Identitätsschutz nutzt die mehrstufige Azure-Authentifizierung, um eine zusätzliche Sicherheitsüberprüfung durchzuführen. Für eine optimale Anmelde Erfahrung empfehlen wir außerdem, dass Benutzer die [Microsoft Authenticator-App](https://docs.microsoft.com/azure/active-directory/user-help/microsoft-authenticator-app-how-to) und die Microsoft-Unternehmens Portal-App auf Ihren Geräten installieren. Diese können aus dem App Store für jede Plattform installiert werden. | |
@@ -49,7 +49,7 @@ In der folgenden Tabelle sind die erforderlichen Features und deren Konfiguratio
 | [Konfigurieren des Kenn Wort Rückschreibens für lokale Ad](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started). Durch das Kenn Wort Rückschreiben können Azure AD festlegen, dass Benutzer ihre lokalen Kennwörter ändern müssen, wenn eine risikoreiche Konto Gefährdung erkannt wird. Sie können dieses Feature mit Azure AD Connect auf zwei Arten aktivieren: entweder aktivieren Sie das Rückschreiben von **Kennwörtern** im optionalen Features-Bildschirm des Setup-Assistenten für Azure AD Connect, oder aktivieren Sie es über Windows PowerShell. | Rein cloudbasiert |
 | [Konfigurieren Sie Azure AD Kennwortschutz](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad). Azure AD Kennwortschutz erkennt und blockiert bekannte schwache Kennwörter und deren Varianten und kann auch zusätzliche schwache Ausdrücke blockieren, die für Ihre Organisation spezifisch sind. Standardmäßige globale gesperrte Kenn Wortlisten werden automatisch auf alle Benutzer in einem Azure AD Mandanten angewendet. Sie können zusätzliche Einträge in einer benutzerdefinierten Liste gesperrter Kennwörter definieren. Wenn Benutzer ihre Kennwörter ändern oder zurücksetzen, werden diese gesperrten Kenn Wortlisten überprüft, um die Verwendung sicherer Kennwörter zu erzwingen. | |
 | [Aktivieren Sie Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection). Mit Azure AD Identity Protection können Sie potenzielle Sicherheitsrisiken erkennen, die sich auf die Identitäten Ihrer Organisation auswirken, und eine automatisierte Behebungs Richtlinie auf niedrigem, mittlerem und hohem Anmelde Risiko und Benutzer Risiko konfigurieren.  | |
-| **Aktivieren Sie die moderne Authentifizierung** für [Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) und [Skype for Business Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx). Die moderne Authentifizierung ist eine Voraussetzung für die Verwendung der mehrstufigen Authentifizierung (MFA). Die moderne Authentifizierung ist für Office 2016 Clients, SharePoint Online und OneDrive für Unternehmen standardmäßig aktiviert. |  |
+| **Aktivieren Sie die moderne Authentifizierung** für [Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) und [Skype for Business Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx). Die moderne Authentifizierung ist eine Voraussetzung für die Verwendung von MFA. Die moderne Authentifizierung ist für Office 2016 Clients, SharePoint und OneDrive für Unternehmen standardmäßig aktiviert. |  |
 |||
 
 ## <a name="recommended-client-configurations"></a>Empfohlene Clientkonfigurationen

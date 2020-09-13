@@ -16,12 +16,12 @@ description: Hier erfahren Sie, wie Sie ein Postfach auf das Beweissicherungsver
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 9c62dfcd9e4cf1e3cc75e029b250c7abe80de6df
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 4bcb857095a63c06caa6e9762496ca74afeead04
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818044"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546987"
 ---
 # <a name="create-a-litigation-hold"></a>Erstellen einer Aufbewahrung für juristische Zwecke
 
@@ -68,7 +68,7 @@ Hier finden Sie die Schritte zum Aufbewahren eines Postfachs für das Beweissich
 
 ### <a name="create-a-litigation-hold-using-powershell"></a>Erstellen eines beweissicherungsverfahrens mithilfe von PowerShell
 
-Sie können auch ein Beweissicherungsverfahren erstellen, indem Sie den folgenden Befehl in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)ausführen:
+Sie können auch ein Beweissicherungsverfahren erstellen, indem Sie den folgenden Befehl in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)ausführen:
 
 ```powershell
 Set-Mailbox <username> -LitigationHoldEnabled $true

@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 ms.custom: seo-marvel-apr2020
 description: Die postfachüberwachungsprotokollierung ist in Microsoft 365 (auch als standardmäßige postfachüberwachung oder postfachüberwachung aktiviert) standardmäßig aktiviert. Dies bedeutet, dass bestimmte Aktionen, die von Postfachbesitzern, Stellvertretern und Administratoren ausgeführt werden, automatisch in einem postfachüberwachungsprotokoll protokolliert werden, in dem Sie nach Aktivitäten für das Postfach suchen können.
-ms.openlocfilehash: 5b1aaab6db56d989c36cd977122d4e5843587aac
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 7c0a4417496bcf18362dbcfe53b751c549ef98b9
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817834"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545841"
 ---
 # <a name="manage-mailbox-auditing"></a>Verwalten der Postfächern
 
@@ -43,9 +43,9 @@ Hier sind einige Vorteile der postfachüberwachung standardmäßig aktiviert:
 >* Das wichtigste, was Sie über die Veröffentlichung der postfachüberwachung in der Standardeinstellung wissen sollten, ist: Sie müssen nichts Unternehmen, um die postfachüberwachung zu verwalten. Um weitere Informationen zu erhalten, die postfachüberwachung von den Standardeinstellungen anzupassen oder Sie ganz zu deaktivieren, kann Ihnen dieses Thema helfen.
 >- Standardmäßig sind nur Post Fach Überwachungsereignisse für E5-Benutzer in Überwachungsprotokoll suchen im Security & Compliance Center oder über die API für die Office 365-Verwaltungsaktivität verfügbar. Weitere Informationen finden Sie im Abschnitt [Weitere Informationen](#more-information) in diesem Thema.
 
-## <a name="verify-mailbox-auditing-on-by-default-is-turned-on"></a>Überprüfen, ob die postfachüberwachung standardmäßig aktiviert ist
+## <a name="verify-mailbox-auditing-on-by-default-is-turned-on"></a>Überprüfen, ob die Postfachüberwachung standardmäßig aktiviert ist
 
-Um zu überprüfen, ob die postfachüberwachung für Ihre Organisation standardmäßig aktiviert ist, führen Sie den folgenden Befehl in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)aus:
+Um zu überprüfen, ob die postfachüberwachung für Ihre Organisation standardmäßig aktiviert ist, führen Sie den folgenden Befehl in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)aus:
 
 ```PowerShell
 Get-OrganizationConfig | Format-List AuditDisabled
@@ -115,7 +115,7 @@ In der folgenden Tabelle werden die Postfachaktionen beschrieben, die in der pos
 |**HardDelete**|Eine Nachricht wurde endgültig aus dem Ordner "Wiederherstellbare Elemente" gelöscht.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**MailItemsAccessed**|Auf e-Mail-Daten wird über e-Mail-Protokolle und-Clients zugegriffen. Dieser Wert steht nur für Benutzer von E5-oder E5-Konformitäts Abonnements zur Verfügung. Ausführliche Informationen finden Sie unter [Access to wichtige Events for Investigations](advanced-audit.md#access-to-crucial-events-for-investigations).|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**MailboxLogin**|Der Benutzer hat sich bei seinem Postfach angemeldet. |||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**MessageBind**|Eine Nachricht wurde im Vorschaubereich angezeigt oder von einem Administrator geöffnet. **Hinweis**: Obwohl dieser Wert als Post Fach Aktion akzeptiert wird, werden diese Aktionen nicht mehr protokolliert.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|**MessageBind**|Eine Nachricht wurde im Vorschaufenster angezeigt oder von einem Administrator geöffnet. **Hinweis**: Obwohl dieser Wert als Post Fach Aktion akzeptiert wird, werden diese Aktionen nicht mehr protokolliert.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |**ModifyFolderPermissions**|**Hinweis**: Obwohl dieser Wert als Post Fach Aktion akzeptiert wird, ist er bereits in der **UpdateFolderPermissions** -Aktion enthalten und wird nicht separat überwacht. Mit anderen Worten: Verwenden Sie diesen Wert nicht.||||
 |**Verschieben**|Eine Nachricht wurde in einen anderen Ordner verschoben.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**MoveToDeletedItems**|Eine Nachricht wurde gelöscht und in den Ordner „Gelöschte Objekte“ verschoben.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
@@ -313,9 +313,9 @@ Wenn Sie die postfachüberwachung für Ihre Organisation wieder aktivieren möch
 Set-OrganizationConfig -AuditDisabled $false
 ```
 
-## <a name="bypass-mailbox-audit-logging"></a>Umgehen der postfachüberwachungsprotokollierung
+## <a name="bypass-mailbox-audit-logging"></a>Umgehen der Postfachüberwachungsprotokollierung
 
-Derzeit können Sie die postfachüberwachung für bestimmte Postfächer nicht deaktivieren, wenn die postfachüberwachung standardmäßig in Ihrer Organisation aktiviert ist. Beispielsweise wird das Festlegen der *AuditEnabled* -Postfacheigenschaft auf **false** ignoriert.
+Derzeit können Sie die Postfachüberwachung nicht für bestimmte Postfächer deaktivieren, wenn die Postfachüberwachung in Ihrer Organisation standardmäßig aktiviert ist. Beispielsweise wird das Festlegen der *AuditEnabled* -Postfacheigenschaft auf **false** ignoriert.
 
 Sie können jedoch weiterhin das Cmdlet " **MailboxAuditBypassAssociation** " in Exchange Online PowerShell verwenden, um zu verhindern *, dass alle Post Fach* Aktionen durch die angegebenen Benutzer protokolliert werden, unabhängig davon, wo die Aktionen ausgeführt werden. Beispiel:
 
@@ -331,7 +331,7 @@ Um die postfachüberwachungsprotokollierung für einen bestimmten Benutzer zu um
 Set-MailboxAuditBypassAssociation -Identity <MailboxIdentity> -AuditByPassEnabled $true
 ```
 
-Führen Sie den folgenden Befehl aus, um zu überprüfen, ob die Überwachung für den angegebenen Benutzer umgangen wird:
+Um zu überprüfen, ob die Überwachung für den angegebenen Benutzer umgangen wird, führen Sie den folgenden Befehl aus:
 
 ```PowerShell
 Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List AuditByPassEnabled

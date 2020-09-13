@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 titleSuffix: Office 365 Compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 54ff4012767b156bc72289473e289fa4d93d1a2c
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 74244b5288043a1d1bc62e0ae09ee8c25ff7d4e1
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352158"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546777"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>Konfigurieren von Aufsichtsrichtlinien in Office 365
 
@@ -54,7 +54,7 @@ Führen Sie die folgenden Schritte aus, um die Überwachung in Ihrer Organisatio
 
 - **Schritt 2 (erforderlich)**: [Beaufsichtigung in Ihrer Organisation verfügbar machen](#step-2-make-supervision-available-in-your-organization-required)
 
-    Fügen Sie sich selbst der Rollengruppe aufsichtsüberprüfung hinzu, damit Sie Richtlinien einrichten können. Jeder, dem diese Rolle zugewiesen ist, kann im Security & Compliance Center auf die **Aufsichts** Seite zugreifen. Wenn beschreibbar-e-Mail auf Exchange Online gehostet wird, muss jeder Prüfer über [Remote-PowerShell-Zugriff auf Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)verfügen.
+    Fügen Sie sich selbst der Rollengruppe aufsichtsüberprüfung hinzu, damit Sie Richtlinien einrichten können. Jeder, dem diese Rolle zugewiesen ist, kann im Security & Compliance Center auf die **Aufsichts** Seite zugreifen. Wenn beschreibbar-e-Mail auf Exchange Online gehostet wird, muss jeder Prüfer über [Remote-PowerShell-Zugriff auf Exchange Online](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell)verfügen.
 
 - **Schritt 3 (optional)**: [Erstellen benutzerdefinierter vertraulicher Informationstypen und benutzerdefinierter Schlüsselwörter Wörterbücher](#step-3-create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional)
 
@@ -83,7 +83,7 @@ Wenn Sie eine Microsoft 365-Gruppe für beaufsichtigte Benutzer auswählen, übe
 
 Um beaufsichtigte Benutzer in großen Unternehmensorganisationen zu verwalten, müssen Sie möglicherweise alle Benutzer über große Gruppen hinweg überwachen. Sie können PowerShell verwenden, um eine Verteilergruppe für eine globale Aufsichtsrichtlinie für die zugewiesene Gruppe zu konfigurieren. Auf diese Weise können Sie Tausende von Benutzern mit einer einzigen Richtlinie überwachen und die Aufsichtsrichtlinie so aktualisieren, dass neue Mitarbeiter Ihrer Organisation beitreten.
 
-1. Erstellen Sie eine dedizierte [Verteilergruppe](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup?view=exchange-ps) für Ihre globale Aufsichtsrichtlinie mit den folgenden Eigenschaften: Stellen Sie sicher, dass diese Verteilergruppe nicht für andere Zwecke oder andere Office 365 Dienste verwendet wird.
+1. Erstellen Sie eine dedizierte [Verteilergruppe](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup) für Ihre globale Aufsichtsrichtlinie mit den folgenden Eigenschaften: Stellen Sie sicher, dass diese Verteilergruppe nicht für andere Zwecke oder andere Office 365 Dienste verwendet wird.
 
     - **MemberDepartRestriction = geschlossen**. Stellt sicher, dass sich Benutzer nicht aus der Verteilergruppe entfernen können.
     - **MemberJoinRestriction = geschlossen**. Stellt sicher, dass Benutzer sich nicht der Verteilergruppe hinzufügen können.
@@ -146,7 +146,7 @@ Weitere Informationen zu Rollengruppen und Berechtigungen finden Sie unter [Bere
 
 ### <a name="enable-remote-powershell-access-for-reviewers-if-email-is-hosted-on-exchange-online"></a>Aktivieren des Remote-PowerShell-Zugriffs für Bearbeiter (wenn e-Mail auf Exchange Online gehostet wird)
 
-1. Befolgten Sie die Anweisungen unter [Aktivieren oder Deaktivieren des Zugriffs auf Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
+1. Befolgten Sie die Anweisungen unter [Aktivieren oder Deaktivieren des Zugriffs auf Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell).
 
 ## <a name="step-3-create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional"></a>Schritt 3: Erstellen benutzerdefinierter vertraulicher Informationstypen und benutzerdefinierter Schlüsselwörter Wörterbücher (optional)
 

@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 28d47ae30d47430744729705d9ace2e1ea0a6b97
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 8c4b136f30da0499b31102683f1a903e71813142
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419168"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547222"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Allgemeine Identitäts- und Gerätezugriffsrichtlinien
 
@@ -62,11 +62,11 @@ Um Ihnen Zeit zum Ausführen dieser Aufgaben zu geben, empfehlen wir, die Basisr
 
 Identifizieren Sie vor dem Konfigurieren von Richtlinien die Azure Ad Gruppen, die Sie für jede Schutzebene verwenden. Normalerweise gilt der Basisplan-Schutz für alle in der Organisation. Für einen Benutzer, der sowohl für den grundlegenden als auch für den vertraulichen Schutz enthalten ist, werden alle grundlegenden Richtlinien sowie die vertraulichen Richtlinien angewendet. Der Schutz ist kumulativ, und die restriktivste Richtlinie wird erzwungen. 
 
-Eine empfohlene Vorgehensweise besteht darin, eine Azure Ad Gruppe für bedingten Zugriffs Ausschluss zu erstellen. Fügen Sie diese Gruppe allen bedingten Zugriffsregeln im Abschnitt **Zuweisungen** in den Wert **Exclude** der **Benutzer und Gruppen** hinzu. Dadurch erhalten Sie eine Methode zum Bereitstellen des Zugriffs auf einen Benutzer, während Sie Zugriffsprobleme beheben. Dies wird nur als temporäre Lösung empfohlen. Überwachen Sie diese Gruppe auf Änderungen, und stellen Sie sicher, dass die Ausschlussgruppe nur wie beabsichtigt verwendet wird. 
+Eine empfohlene Vorgehensweise besteht darin, eine Azure Ad Gruppe für bedingten Zugriffs Ausschluss zu erstellen. Fügen Sie diese Gruppe allen Richtlinien für bedingten Zugriff im Abschnitt **Zuweisungen** der Einstellung **Benutzer und Gruppen** **ausschließen** hinzu. Dadurch erhalten Sie eine Methode zum Bereitstellen des Zugriffs auf einen Benutzer, während Sie Zugriffsprobleme beheben. Dies wird nur als temporäre Lösung empfohlen. Überwachen Sie diese Gruppe auf Änderungen, und stellen Sie sicher, dass die Ausschlussgruppe nur wie beabsichtigt verwendet wird. 
 
 Im folgenden finden Sie ein Beispiel für Gruppenzuweisung und-Ausschlüsse für die Notwendigkeit eines MFA.
 
-![Beispiel für Gruppenzuweisung und-Ausschlüsse für MFA-Regeln](../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
+![Beispiel Gruppenzuweisung und-Ausschlüsse für MFA-Richtlinien](../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
 
 Hier sind die Ergebnisse:
 
@@ -82,7 +82,7 @@ Hier sind die Ergebnisse:
 
 Seien Sie vorsichtig, wenn Sie Gruppen und Benutzern höhere Schutzebenen zuweisen. Mitglieder der streng geheimen Projekt x-Gruppe müssen beispielsweise jedes Mal, wenn Sie sich anmelden, MFA verwenden, auch wenn Sie nicht an hoch regulierten Inhalten für Project x arbeiten.  
 
-Alle Azure Ad Gruppen, die als Teil dieser Empfehlungen erstellt wurden, müssen als Microsoft 365-Gruppen erstellt werden. Dies ist wichtig für die Bereitstellung von Sensitivitäts Bezeichnungen beim Sichern von Dokumenten in Microsoft Teams und SharePoint Online.
+Alle Azure Ad Gruppen, die als Teil dieser Empfehlungen erstellt wurden, müssen als Microsoft 365-Gruppen erstellt werden. Dies ist wichtig für die Bereitstellung von Sensitivitäts Bezeichnungen beim Sichern von Dokumenten in Microsoft Teams und SharePoint.
 
 ![Bildschirmaufnahme zum Erstellen von Microsoft 365-Gruppen](../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
 
@@ -105,7 +105,7 @@ Im Abschnitt **Zuweisungen** :
 |:---|:---------|:-----|:----|
 |Benutzer und Gruppen|Einschließen| **Wählen Sie Benutzer und Gruppen > Benutzer und Gruppen**aus: bestimmte Gruppen mit Zielbenutzer Konten auswählen. |Beginnen Sie mit der Gruppe, die Pilotbenutzer Konten enthält.|
 ||Ausschließen| **Benutzer und Gruppen**: Wählen Sie die Ausnahmegruppe für bedingten Zugriff aus. Dienstkonten (app-Identitäten).|Die Mitgliedschaft sollte auf der Grundlage der erforderlichen, temporären Änderungen geändert werden.|
-|Cloud-Apps oder-Aktionen| **Cloud-apps > include** | **Auswählen von apps**: Wählen Sie die Apps aus, auf die diese Regel angewendet werden soll. Wählen Sie beispielsweise Exchange Online aus.||
+|Cloud-Apps oder-Aktionen| **Cloud-apps > include** | **Auswählen von apps**: Wählen Sie die Apps aus, auf die diese Richtlinie angewendet werden soll. Wählen Sie beispielsweise Exchange Online aus.||
 |Bedingungen| | |Konfigurieren Sie Bedingungen, die für Ihre Umgebung und Ihre Anforderungen spezifisch sind.|
 ||Anmelderisiko||Lesen Sie den Leitfaden in der folgenden Tabelle.|
 |||||
@@ -194,6 +194,8 @@ Wählen Sie schließlich **auf** für **Richtlinie erzwingen**aus, und wählen S
 
 Verwenden Sie dazu das Tool [What if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) , um die Richtlinie zu testen.
 
+Verwenden Sie diese Richtlinie in Verbindung mit dem [Konfigurieren Azure AD Kennwortschutzes](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad), mit dem bekannte schwache Kennwörter und ihre Varianten sowie zusätzliche schwache Ausdrücke, die für Ihre Organisation spezifisch sind, erkannt und blockiert werden. Durch die Verwendung Azure AD Kennwortschutzes wird sichergestellt, dass geänderte Kennwörter stark sind.
+
 ## <a name="apply-app-data-protection-policies"></a>Anwenden von App-Datenschutzrichtlinien
 
 App-Schutzrichtlinien (app) definieren, welche apps zulässig sind und welche Aktionen Sie mit den Daten Ihrer Organisation durchführen können. Mit den in App verfügbaren Auswahlmöglichkeiten können Organisationen den Schutz ihren spezifischen Anforderungen anpassen. Für einige ist es möglicherweise nicht offensichtlich, welche Richtlinieneinstellungen erforderlich sind, um ein vollständiges Szenario zu implementieren. Um Organisationen die Priorisierung mobiler Clientendpunkte zu erleichtern, hat Microsoft die Taxonomie für das App-Datenschutz Framework für IOS-und Android-Mobile App Verwaltung eingeführt. 
@@ -221,11 +223,11 @@ Um eine neue APP-Schutzrichtlinie für jede Plattform (IOS und Android) in Micro
 
 ## <a name="require-approved-apps-and-app-protection"></a>Erfordern von genehmigten apps und App-Schutz
 
-Zum Erzwingen der APP-Schutzrichtlinien, die Sie in InTune angewendet haben, müssen Sie eine Regel für bedingten Zugriff erstellen, um genehmigte Client-apps und die in den App-Schutzrichtlinien festgelegten Bedingungen zu erfordern. 
+Zum Erzwingen der APP-Schutzrichtlinien, die Sie in InTune angewendet haben, müssen Sie eine Richtlinie für den bedingten Zugriff erstellen, um genehmigte Client-apps und die in den App-Schutzrichtlinien festgelegten Bedingungen zu erfordern. 
 
 Das Erzwingen von App-Schutzrichtlinien erfordert eine Reihe von Richtlinien, die unter in [erfordern von App-Schutzrichtlinien für Cloud-App-Zugriff mit bedingtem Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)beschrieben werden. Diese Richtlinien sind jeweils in dieser empfohlenen Gruppe von Richtlinien für Identitäts-und Zugriffs Konfigurationen enthalten.
 
-Um die Regel für bedingten Zugriff zu erstellen, für die genehmigte apps und App-Schutz erforderlich sind, führen Sie "Schritt 1: Konfigurieren einer Azure AD Richtlinie für den bedingten Zugriff für Microsoft 365" in [Szenario 1: Microsoft 365-apps erfordern genehmigte apps mit App-Schutzrichtlinien](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), die Outlook für IOS und Android ermöglichen, aber verhindert, dass OAuth-fähige Exchange ActiveSync-Clients eine Verbindung Exchange Online mit
+Um die Richtlinie für den bedingten Zugriff zu erstellen, für die genehmigte apps und der APP-Schutz erforderlich sind, führen Sie "Schritt 1: Konfigurieren einer Azure AD Richtlinie für den bedingten Zugriff für Microsoft 365" in [Szenario 1: Microsoft 365-apps erfordern genehmigte apps mit App-Schutzrichtlinien](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), die Outlook für IOS und Android ermöglichen, aber verhindert, dass OAuth-fähige Exchange ActiveSync-Exchange Online Clients
 
    > [!NOTE]
    > Diese Richtlinie stellt sicher, dass Mobile Benutzer mithilfe der entsprechenden apps auf alle Office-Endpunkte zugreifen können.
@@ -234,7 +236,7 @@ Wenn Sie mobilen Zugriff auf Exchange Online ermöglichen, implementieren Sie [B
 
  Diese Richtlinien nutzen die Grant-Steuerelemente [erfordern eine genehmigte Client-App](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) und [erfordern eine APP-Schutzrichtlinie](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy).
 
-Schließlich wird durch das Blockieren der Legacy Authentifizierung für andere Client-apps auf IOS-und Android-Geräten sichergestellt, dass diese Clients keine bedingten Zugriffsregeln umgehen können. Wenn Sie die Anleitungen in diesem Artikel befolgen, haben Sie bereits [Blockierte Clients konfiguriert, die die moderne Authentifizierung nicht unterstützen](#block-clients-that-dont-support-modern-authentication).
+Schließlich wird durch das Blockieren der Legacy Authentifizierung für andere Client-apps auf IOS-und Android-Geräten sichergestellt, dass diese Clients keine bedingten Zugriffsrichtlinien umgehen können. Wenn Sie die Anleitungen in diesem Artikel befolgen, haben Sie bereits [Blockierte Clients konfiguriert, die die moderne Authentifizierung nicht unterstützen](#block-clients-that-dont-support-modern-authentication).
 
 <!---
 With Conditional Access, organizations can restrict access to approved (modern authentication capable) iOS and Android client apps with Intune app protection policies applied to them. Several Conditional Access policies are required, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).

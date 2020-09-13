@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.custom: seo-marvel-apr2020
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: 7ebb2673d1d275075cf32cd18996837ec4024622
-ms.sourcegitcommit: b144e8ba1ab0c40fa7e0e8e893b5cb44aa2d8243
+ms.openlocfilehash: 27c4d4603396089cb58cfed192f09d0db70cac5a
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47282603"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547585"
 ---
 # <a name="supervision-policies"></a>Aufsichtsrichtlinien
 
@@ -143,7 +143,7 @@ Weitere Informationen zu vertraulichen Informationsdetails und den Mustern, die 
 
 #### <a name="custom-keyword-dictionaries"></a>Benutzerdefinierte Schlüsselwörter Wörterbücher
 
-Konfigurieren Sie benutzerdefinierte Keyword-Wörterbücher (oder Lexika), um eine einfache Verwaltung von Schlüsselwörtern für Ihre Organisation oder Industrie bereitzustellen. Stichwort Wörterbücher unterstützen bis zu 100KB Begriffe (nach Komprimierung) im Wörterbuch und unterstützen jede Sprache. Die Mandanten Grenze ist auch nach der Komprimierung 100KB. Bei Bedarf können Sie mehrere benutzerdefinierte Schlüsselwörter Wörterbücher auf eine einzelne Richtlinie anwenden oder über ein einzelnes Schlüssel Wörterbuch pro Richtlinie verfügen. Diese Wörterbücher werden in einer Aufsichtsrichtlinie zugewiesen und können aus einer Datei (wie einer CSV-oder txt-Liste) oder aus einer Liste, [die Sie im Compliance Center importieren](create-a-keyword-dictionary.md)können, bezogen werden.
+Konfigurieren Sie benutzerdefinierte Keyword-Wörterbücher (oder Lexika), um eine einfache Verwaltung von Schlüsselwörtern für Ihre Organisation oder Industrie bereitzustellen. Stichwort Wörterbücher unterstützen bis zu 100KB Begriffe (nach Komprimierung) im Wörterbuch und unterstützen jede Sprache. Die Mandantengrenze liegt nach der Komprimierung ebenfalls bei 100 KB. Bei Bedarf können Sie mehrere benutzerdefinierte Schlüsselwörter Wörterbücher auf eine einzelne Richtlinie anwenden oder über ein einzelnes Schlüssel Wörterbuch pro Richtlinie verfügen. Diese Wörterbücher werden in einer Aufsichtsrichtlinie zugewiesen und können aus einer Datei (wie einer CSV-oder txt-Liste) oder aus einer Liste, [die Sie im Compliance Center importieren](create-a-keyword-dictionary.md)können, bezogen werden.
 
 #### <a name="offensive-language"></a>Anstößige Sprache
 
@@ -159,7 +159,7 @@ Das Modell bietet keine erschöpfende Liste der beleidigenden Sprache. Außerdem
 
 Das Offensive Sprachmodell überwacht e-Mails nach dem Sentiment, das den folgenden Sprachtypen zugeordnet ist:
 
-|**Typ**|**Beschreibung**|
+|**Type**|**Beschreibung**|
 |:-----|:-----|
 | **Weltlichkeiten** | Ausdrücke, die die meisten Menschen in Verlegenheit bringen. |
 | **Bögen** | Ausdrücke, die Vorurteile gegenüber bestimmten Gruppen (beispielsweise Rasse, ethnische Zugehörigkeit, sexuelle Orientierung, Behinderung) Ausdrücken. |
@@ -301,7 +301,7 @@ In diesem Beispiel werden die Updateaktivitäten für Ihre Richtlinien für die 
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionPolicyCreated,SupervisionPolicyUpdated,SupervisionPolicyDeletedAuditData
 ```
 
-Zusätzlich zu den in den Überwachungsberichten und-Protokollen bereitgestellten Informationen können Sie auch das Cmdlet [Get-SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/get-supervisoryreviewactivity?view=exchange-ps) PowerShell verwenden, um eine vollständige detaillierte Auflistung aller Aufsichtsrichtlinien Aktivitäten zurückzugeben.
+Zusätzlich zu den in den Überwachungsberichten und-Protokollen bereitgestellten Informationen können Sie auch das Cmdlet [Get-SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/get-supervisoryreviewactivity) PowerShell verwenden, um eine vollständige detaillierte Auflistung aller Aufsichtsrichtlinien Aktivitäten zurückzugeben.
 
 ## <a name="ready-to-get-started"></a>Sind Sie bereit loszulegen?
 

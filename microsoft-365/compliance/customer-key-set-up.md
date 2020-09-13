@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie den Kundenschlüssel für Microsoft 365 für Exchange Online-, Skype for Business-, SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Dateien einrichten.
-ms.openlocfilehash: 94403e1d76fbc6fdf06d784fbb7bb9025dc06fc0
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: 8181ccfc988a10813f13e0b61d15f83eef57db76
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324211"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546757"
 ---
 # <a name="set-up-customer-key"></a>Einrichten des Kunden Schlüssels
 
@@ -402,7 +402,7 @@ Nicht vergessen! Beim Erstellen einer Datenverschlüsselungsrichtlinie (DEP) geb
   
 Um eine Datenverschlüsselungsrichtlinie (DEP) zu erstellen, führen Sie bitte folgende Schritte aus:
   
-1. Stellen Sie auf Ihrem lokalen Computer mithilfe eines Arbeits-oder Schul Kontos, das über globale Administratorberechtigungen in Ihrer Organisation verfügt, eine [Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) in einem Windows PowerShell Fenster her.
+1. Stellen Sie auf Ihrem lokalen Computer mithilfe eines Arbeits-oder Schul Kontos, das über globale Administratorberechtigungen in Ihrer Organisation verfügt, eine [Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) in einem Windows PowerShell Fenster her.
 
 2. Um eine Datenverschlüsselungsrichtlinie zu erstellen, verwenden Sie das Cmdlet „New-DataEncryptionPolicy“, indem Sie den folgenden Befehl eingeben.
 
@@ -486,7 +486,7 @@ Um eine Datenverschlüsselungsrichtlinie (DEP) zu erstellen, müssen Sie mithilf
 
 ### <a name="validate-file-encryption"></a>Überprüfen der Dateiverschlüsselung
 
- Um die Verschlüsselung von SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Dateien zu überprüfen, stellen Sie [eine Verbindung mit SharePoint Online PowerShell her](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps), und verwenden Sie dann das Cmdlet Get-SPODataEncryptionPolicy, um den Status Ihres Mandanten zu überprüfen. Die _State_ -Eigenschaft gibt den Wert **registriert** zurück, wenn die Verschlüsselung von Kunden Schlüsseln aktiviert ist und alle Dateien an allen Standorten verschlüsselt wurden. Wenn die Verschlüsselung noch ausgeführt wird, bietet dieses Cmdlet Informationen darüber, welcher Prozentsatz der Websites abgeschlossen ist.
+ Um die Verschlüsselung von SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Dateien zu überprüfen, stellen Sie [eine Verbindung mit SharePoint Online PowerShell her](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell), und verwenden Sie dann das Cmdlet Get-SPODataEncryptionPolicy, um den Status Ihres Mandanten zu überprüfen. Die _State_ -Eigenschaft gibt den Wert **registriert** zurück, wenn die Verschlüsselung von Kunden Schlüsseln aktiviert ist und alle Dateien an allen Standorten verschlüsselt wurden. Wenn die Verschlüsselung noch ausgeführt wird, bietet dieses Cmdlet Informationen darüber, welcher Prozentsatz der Websites abgeschlossen ist.
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
