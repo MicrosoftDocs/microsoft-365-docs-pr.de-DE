@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Verwenden Sie das Security & Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen und Benutzer- und Administratoraktivitäten anzuzeigen, die es in Ihrer Organisation gegeben hat. '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d65b64f80dc9d8c3c799e8044d6fc5d3dfec4321
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 21a8ea6f930efcd106c541021c9b9bd47af43f23
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357807"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547251"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Security & Compliance Center
 
@@ -828,14 +828,14 @@ In der folgenden Tabelle sind Ereignisse aufgelistet, die sich aus Bezeichnungsa
 
 |Anzeigename|Vorgang|Beschreibung|
 |:-----|:-----|:-----|
-| Einstellungen für eine Aufbewahrungsrichtlinie konfiguriert |NewRetentionComplianceRule |Der Administrator hat die Aufbewahrungseinstellungen für eine neue Aufbewahrungsrichtlinie konfiguriert. Die Aufbewahrungseinstellungen umfassen, wie lange Elemente aufbewahrt werden und was mit Elementen geschieht, wenn die Aufbewahrungsfrist abläuft (z. B. Elemente löschen, Elemente aufbewahren oder Elemente aufbewahren und anschließend löschen). Diese Aktivität entspricht auch dem Ausführen des Cmdlets [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule).|
+| Einstellungen für eine Aufbewahrungsrichtlinie konfiguriert |NewRetentionComplianceRule |Der Administrator hat die Aufbewahrungseinstellungen für eine neue Aufbewahrungsrichtlinie konfiguriert. Die Aufbewahrungseinstellungen umfassen, wie lange Elemente aufbewahrt werden und was mit Elementen geschieht, wenn die Aufbewahrungsfrist abläuft (z. B. Elemente löschen, Elemente aufbewahren oder Elemente aufbewahren und anschließend löschen). Diese Aktivität entspricht auch dem Ausführen des Cmdlets [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancerule).|
 | Aufbewahrungsbezeichnung erstellt |NewComplianceTag |Der Administrator hat eine neue Aufbewahrungsbezeichnung erstellt.|
 | Aufbewahrungsrichtlinie erstellt |NewRetentionCompliancePolicy|Der Administrator hat eine neue Aufbewahrungsrichtlinie erstellt.|
 | Einstellungen für eine Aufbewahrungsrichtlinie gelöscht| RemoveRetentionComplianceRule<br/>| Der Administrator hat die Konfigurationseinstellungen einer Aufbewahrungsrichtlinie gelöscht. Höchstwahrscheinlich wird diese Aktivität protokolliert, wenn ein Administrator eine Aufbewahrungsrichtlinie löscht oder das Cmdlet [Remove-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/Remove-RetentionComplianceRule) ausführt.|
 | Aufbewahrungsbezeichnung gelöscht |RemoveComplianceTag | Der Administrator hat eine Aufbewahrungsbezeichnung gelöscht.|
 | Aufbewahrungsrichtlinie gelöscht |RemoveRetentionCompliancePolicy<br/> |Der Administrator hat eine Aufbewahrungsrichtlinie gelöscht. |
 | Option "Regulatorischer Datensatz" für Aufbewahrungsbezeichnungen aktiviert<br/> |SetRestrictiveRetentionUI |Der Administrator hat das Cmdlet [Set-RegulatoryComplianceUI](https://docs.microsoft.com/powershell/module/exchange/set-regulatorycomplianceui) ausgeführt, sodass ein Administrator die Option für die Benutzeroberflächenkonfiguration für eine Aufbewahrungsbezeichnung auswählen kann, um Inhalte als regulatorischen Datensatz zu kennzeichnen.|
-| Einstellungen für eine Aufbewahrungsrichtlinie aktualisiert | SetRetentionComplianceRule | Der Administrator hat die Aufbewahrungseinstellungen für eine vorhandene Aufbewahrungsrichtlinie geändert. Die Aufbewahrungseinstellungen umfassen, wie lange Elemente aufbewahrt werden und was mit Elementen geschieht, wenn die Aufbewahrungsfrist abläuft (z. B. Elemente löschen, Elemente aufbewahren oder Elemente aufbewahren und anschließend löschen). Diese Aktivität entspricht auch dem Ausführen des Cmdlets [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancerule). |
+| Einstellungen für eine Aufbewahrungsrichtlinie aktualisiert | SetRetentionComplianceRule | Der Administrator hat die Aufbewahrungseinstellungen für eine vorhandene Aufbewahrungsrichtlinie geändert. Die Aufbewahrungseinstellungen umfassen, wie lange Elemente aufbewahrt werden und was mit Elementen geschieht, wenn die Aufbewahrungsfrist abläuft (z. B. Elemente löschen, Elemente aufbewahren oder Elemente aufbewahren und anschließend löschen). Diese Aktivität entspricht auch dem Ausführen des Cmdlets [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule). |
 | Aufbewahrungsbezeichnung aktualisiert |SetComplianceTag  | Der Administrator hat eine vorhandene Aufbewahrungsbezeichnung aktualisiert.|
 | Aufbewahrungsrichtlinie aktualisiert |SetRetentionCompliancePolicy |Der Administrator hat eine vorhandene Aufbewahrungsrichtlinie aktualisiert. Updates, die dieses Ereignis auslösen, sind beispielsweise das Hinzufügen oder Ausschließen von Inhaltsspeicherorten, auf die die Aufbewahrungsrichtlinie angewendet ist.|
 

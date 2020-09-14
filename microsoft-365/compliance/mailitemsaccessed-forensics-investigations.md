@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Verwenden Sie die MailItemsAccessed-Postfachüberwachungsaktion, um forensische Untersuchungen kompromittierter Benutzerkonten auszuführen.
-ms.openlocfilehash: cd76a49e1f7b6e52d2a21e74162781771a8552a1
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 908c2a22b05d7daef8d55c7e0aac61f25489692a
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327649"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546291"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>Verwenden der erweiterten Überwachung zur Untersuchung kompromittierter Konten
 
@@ -67,7 +67,7 @@ Ein Beispiel für die Darstellung der IsThrottled-Eigenschaft in einem Überwach
 
 Bei der Postfachüberwachung werden Überwachungseinträge für den Zugriff auf E-Mail-Nachrichten generiert, damit Sie sicher sein können, dass E-Mail-Nachrichten nicht kompromittiert wurden. Aus diesem Grund wird in Situationen, in denen nicht sicher ist, ob auf bestimmte Daten zugegriffen wurde, davon ausgegangen, dass ein Zugriff erfolgt ist, indem alle E-Mail-Access-Aktivitäten aufgezeichnet werden.
 
-Die Verwendung von MailItemsAccessed-Überwachungsdatensätzen für forensische Zwecke erfolgt in der Regel nach dem Beheben einer Datenverletzung und dem Entfernen des Angreifers. Um mit der Untersuchung zu beginnen, sollten Sie die Gruppe von Postfächern identifizieren, die kompromittiert wurden, und den Zeitrahmen ermitteln, in dem der Angreifer auf Postfächer in Ihrer Organisation zugreifen konnte. Anschließend können Sie die Cmdlets **Search-UnifiedAuditLog** oder **Search-MailboxAuditLog** in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) verwenden, um Überwachungsdatensätze zu durchsuchen, die der Datenverletzung entsprechen. 
+Die Verwendung von MailItemsAccessed-Überwachungsdatensätzen für forensische Zwecke erfolgt in der Regel nach dem Beheben einer Datenverletzung und dem Entfernen des Angreifers. Um mit der Untersuchung zu beginnen, sollten Sie die Gruppe von Postfächern identifizieren, die kompromittiert wurden, und den Zeitrahmen ermitteln, in dem der Angreifer auf Postfächer in Ihrer Organisation zugreifen konnte. Anschließend können Sie die Cmdlets **Search-UnifiedAuditLog** oder **Search-MailboxAuditLog** in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) verwenden, um Überwachungsdatensätze zu durchsuchen, die der Datenverletzung entsprechen. 
 
 Sie können einen der folgenden Befehle ausführen, um nach MailItemsAccessed-Überwachungsdatensätzen zu suchen:
 
