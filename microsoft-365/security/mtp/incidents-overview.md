@@ -1,5 +1,5 @@
 ---
-title: Untersuchen von Vorfällen in Microsoft Threat Protection
+title: Übersicht über Vorfälle in Microsoft Threat Protection
 description: Untersuchen Sie Vorfälle, die auf Geräten, bei Benutzern und in Postfächern auftreten.
 keywords: Vorfälle, Warnungen, untersuchen, Korrelation, Angriff, Computer, Geräte, Benutzer, Identitäten, Identität, Postfach, E-Mail, 365, Microsoft, m365
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 29eeb5f0699321441543057040b434c4dad61925
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 805b83262bd9d91500dc7e8b6b82542dfbc7e9c5
+ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235114"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47649937"
 ---
 # <a name="incidents-overview-in-microsoft-threat-protection"></a>Übersicht über Vorfälle in Microsoft Threat Protection
 

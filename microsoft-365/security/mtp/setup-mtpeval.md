@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 6cba773d0c4bea259db151d5a8f1d8e03954a045
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.openlocfilehash: 69a883263952b7c20225659ae023399e0242606d
+ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717295"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47650069"
 ---
 # <a name="set-up-your-microsoft-threat-protection-trial-lab-environment"></a>Einrichten Ihrer Microsoft Threat Protection-Testumgebung 
 
@@ -36,19 +36,19 @@ Das Erstellen einer Microsoft Threat Protection-Test Umgebungsumgebung und deren
     <td align="center" style="width:25%; border:0;" >
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval?view=o365-worldwide"> 
         <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab environment" title="Vorbereiten des Microsoft Threat Protection-Evaluierungs Labors" />
-      <br/>Phase 1: Vorbereiten</a><br>
+      <br/>Phase 1: Vorbereiten </a><br>
     </td>
      <td align="center"bgcolor="#d5f5e3">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval?view=o365-worldwide">
         <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab environment" title="Einrichten Ihres Microsoft Threat Protection-Evaluierungs Labors" />
-      <br/>Phase 2: Setup</a><br>
+      <br/>Phase 2: Setup </a><br>
     </td>
     <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide">
         <img src="../../media/config-onboard.png" alt="
 Configure each Microsoft Threat Protection pillar for your Microsoft Threat Protection trial lab environment and onboard your endpoints" title="
 Konfigurieren der einzelnen Microsoft Threat Protection-Pfeiler für Ihre Microsoft Threat Protection-Test Umgebungsumgebung und die Bereitstellung an Bord ihrer Endpunkte" />
-      <br/>Phase 3: Konfigurieren von & Onboard</a><br>
+      <br/>Phase 3: Konfigurieren von & Onboard </a><br>
 </td>
 
 
@@ -149,6 +149,4 @@ In dieser Phase werden Sie zu folgenden Themen geführt:
 
 
 ## <a name="next-step"></a>Nächster Schritt
-|||
-|:-------|:-----|
-|![Phase 3: Konfigurieren von & Onboard](../../media/config-onboard.png) <br>[Phase 3: Konfigurieren von & Onboard](config-mtpeval.md) | Konfigurieren Sie die einzelnen Microsoft Threat Protection-Pfeiler für Ihr Microsoft Threat Protection-Evaluierungslabor und ihre Endpunkte an Bord.
+![Phase 3: Konfigurieren von & Onboard](../../media/config-onboard.png) <br>[Phase 3: Konfigurieren von & Onboard](config-mtpeval.md) <br>Konfigurieren Sie die einzelnen Microsoft Threat Protection-Pfeiler für Ihr Microsoft Threat Protection-Evaluierungslabor und ihre Endpunkte an Bord.

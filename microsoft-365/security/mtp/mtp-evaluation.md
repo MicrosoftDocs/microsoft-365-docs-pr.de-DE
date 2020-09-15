@@ -1,5 +1,5 @@
 ---
-title: Auswerten von Microsoft Threat Protection
+title: Microsoft Threat Protection evaluieren
 description: Richten Sie Ihre Microsoft Threat Protection-Testumgebung ein, um zu testen, wie die koordinierte Bedrohungsschutz Lösung zum Schutz von Geräten, Identitäten, Daten und Anwendungen Ihrer Organisation helfen kann.
 keywords: Microsoft Threat Protection-Testversion, testen Sie Microsoft Threat Protection, bewerten Sie Microsoft Threat Protection, Microsoft Threat Protection Evaluation Lab, Cyber Security, Advanced persistent Threat, Enterprise Security, Devices, Device, Identity, users, Data, Applications, Incidents, Automated Investigation and Remediation, Advanced Hunting
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: f6ee8147965a29b87d84690535116f096e4c6006
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: a9d7b514aac8d1a769c0dabf6dcdb54f4bcb447b
+ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049639"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47649961"
 ---
 # <a name="create-a-microsoft-threat-protection-trial-lab-environment"></a>Erstellen einer Microsoft Threat Protection-Testlaborumgebung 
 
@@ -67,7 +67,7 @@ Im folgenden finden Sie einen Bereich für dieses Test Lab-Umgebungs Handbuch:
 -   Konfigurieren aller Microsoft Threat Protection-Säulen basierend auf bewährten Methoden
     -   Office 365 Advanced Threat Protection
     -   Azure Advanced Threat Protection
-    -   Microsoft Cloud App Security
+    -   Microsoft Cloud App-Sicherheit
     -   Microsoft Defender Advanced Threat Protection
 
 ## <a name="out-of-scope"></a>Nicht inbegriffen
@@ -78,6 +78,5 @@ Im Rahmen dieses Bereitstellungshandbuchs liegen folgende Schritte vor:
 -   Penetrationstests in der Produktionsumgebung
 
 ## <a name="next-step"></a>Nächster Schritt
-|||
-|:-------|:-----|
-|![Phase 1: Vorbereiten](../../media/prepare.png) <br>[Phase 1: Vorbereiten](prepare-mtpeval.md) | Vorbereiten der Microsoft Threat Protection-Evaluierungslabor Umgebung
+![Phase 1: Vorbereiten](../../media/prepare.png) <br>[Phase 1: Vorbereiten](prepare-mtpeval.md) 
+<br> Vorbereiten der Microsoft Threat Protection-Evaluierungslabor Umgebung
