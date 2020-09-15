@@ -1,52 +1,34 @@
 ---
-title: Konfigurieren von Microsoft Threat Protection-Säulen für die Testlaborumgebung
-description: Konfigurieren von Microsoft Threat Protection-Säulen, Office 365 ATP, Azure ATP, Microsoft Cloud App Security und Microsoft Defender ATP für Ihre Testlaborumgebung
-keywords: Konfigurieren der Microsoft Threat Protection-Testversion, Microsoft Threat Protection-Testkonfiguration, Konfigurieren von Microsoft Threat Protection-Säulen, Microsoft Threat Protection-Säulen
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dolmont
-author: DulceMontemayor
-ms.localizationpriority: medium
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.openlocfilehash: 8a435b220343bd0353f2e0ef85ddf856ebf3e8aa
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049940"
+Title: Konfigurieren von Microsoft Threat Protection-Säulen für das Test Labor oder die Pilotumgebung Beschreibung: Configure Microsoft Threat Protection Pillars: Office 365 ATP, Azure ATP, Microsoft Cloud App Security und Microsoft Defender ATP, für Ihre Test Labor-oder Pilotumgebung.
+Stichwörter: Konfigurieren der Microsoft Threat Protection-Testversion, Microsoft Threat Protection-Testkonfiguration, Konfigurieren des Microsoft Threat Protection-Pilotprojekts, Konfigurieren von Microsoft Threat Protection-Säulen, Microsoft Threat Protection-Säulen Suche. Produkt: eADQiWindows 10XVcnh Search. appverid: met150 ms. Prod: W10 ms. mktglfcycl: Deploy ms. sitesec: Library ms. PageType: Security ms. Author: dolmont  
+Autor: DulceMontemayor ms. localizationpriority: Medium Manager: dansimp Audience: ITPro ms. Collection: M365-Security-Compliance ms. Topic: article 
 ---
-# <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-environment"></a>Konfigurieren von Microsoft Threat Protection-Säulen für Ihre Testlaborumgebung
+
+# <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-or-pilot-environment"></a>Konfigurieren von Microsoft Threat Protection-Säulen für Ihre Test Labor-oder Pilotumgebung
 
 **Gilt für:**
 - Microsoft Threat Protection
 
 
-Das Erstellen einer Microsoft Threat Protection-Test Umgebungsumgebung und deren Bereitstellung ist ein dreistufiger Prozess:
+Das Erstellen eines Microsoft Threat Protection-Testlabors oder einer Pilotumgebung und deren Bereitstellung ist ein dreistufiger Prozess:
 
 <br>
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;" >
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval?view=o365-worldwide"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab environment" title="Vorbereiten Ihrer Microsoft Threat Protection-Testumgebung" />
-      <br/>Phase 1: Vorbereiten</a><br>
+        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab or pilot environment" title="Vorbereiten Ihrer Testlabor-oder Pilotumgebung für den Microsoft Threat Protection-Test" />
+      <br/>Phase 1: Vorbereiten </a><br>
     </td>
      <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval?view=o365-worldwide">
-        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab environment" title="Einrichten Ihrer Microsoft Threat Protection-Testumgebung" />
-      <br/>Phase 2: Setup</a><br>
+        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab or pilot environment" title="Einrichten Ihres Microsoft Threat Protection-Testlabors oder einer Pilotumgebung" />
+      <br/>Phase 2: Setup </a><br>
     </td>
     <td align="center" bgcolor="#d5f5e3">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide">
-        <img src="../../media/config-onboard.png" alt="Configure & Onboard" title="Konfigurieren der einzelnen Microsoft Threat Protection-Pfeiler für Ihre Microsoft Threat Protection-Test Umgebungsumgebung und Onboard-Endpunkte" />
-      <br/>Phase 3: Konfigurieren von & Onboard</a><br>
+        <img src="../../media/config-onboard.png" alt="Configure & Onboard" title="Konfigurieren der einzelnen Microsoft Threat Protection-Pfeiler für Ihr Microsoft Threat Protection-Test Labor oder Ihre Pilotumgebung sowie Onboard-Endpunkte" />
+      <br/>Phase 3: Konfigurieren von & Onboard </a><br>
 </td>
 
 
@@ -75,7 +57,7 @@ In diesem Abschnitt erhalten Sie Informationen zu configure:
 >[!NOTE]
 >Überspringen Sie diesen Schritt, wenn Sie bereits Office 365 Advanced Threat Protection aktiviert haben. 
 
-Es gibt ein PowerShell-Modul namens *Office 365 Advanced Threat Protection Recommended Configuration Analyzer (Orca)* , mit dem einige dieser Einstellungen ermittelt werden können. Wenn Sie als Administrator in Ihrem Mandanten ausgeführt wird, hilft Get-ORCAReport bei der Erstellung einer Bewertung der Anti-Spam-, Anti-Phishing-und anderer Nachrichten Hygiene Einstellungen. Sie können dieses Modul aus herunterladen https://www.powershellgallery.com/packages/ORCA/ . 
+Es gibt ein PowerShell-Modul mit dem Namen *Office 365 Advanced Threat Protection Recommended Configuration Analyzer (Orca)* , mit dem einige dieser Einstellungen ermittelt werden können. Wenn Sie als Administrator in Ihrem Mandanten ausgeführt wird, hilft Get-ORCAReport bei der Erstellung einer Bewertung der Anti-Spam-, Anti-Phishing-und anderer Nachrichten Hygiene Einstellungen. Sie können dieses Modul aus herunterladen https://www.powershellgallery.com/packages/ORCA/ . 
 
 1. Navigieren Sie zu [Office 365 Security & Compliance Center](https://protection.office.com/homepage)  >  **Threat Management**  >  **Policy**.
 ![Image of_Office 365 Security & Compliance Center Threat Management-Richtlinie (Seite)](../../media/mtp-eval-32.png) <br>
@@ -101,7 +83,7 @@ Es gibt ein PowerShell-Modul namens *Office 365 Advanced Threat Protection Recom
  
 7. Wählen Sie als nächstes die Richtlinie **ATP-sichere Links** aus, und klicken Sie dann auf das Bleistiftsymbol, um die Standardrichtlinie zu bearbeiten.
 
-8. Stellen Sie sicher, dass die Option nicht **nachverfolgen, wenn Benutzer auf sichere Links klicken** ausgewählt ist, während die restlichen Optionen ausgewählt sind. Details finden Sie unter [Einstellungen für sichere Links](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp?view=o365-worldwide) . Klicken Sie auf **Speichern**. 
+8. Stellen Sie sicher, dass die Option nicht **nachverfolgen, wenn Benutzer auf sichere Links klicken** ausgewählt ist, während die restlichen Optionen ausgewählt sind. Details finden Sie unter [Einstellungen für sichere Links](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp) . Klicken Sie auf **Speichern**. 
 ![Image of_Office 365 Security & Compliance Center Seite, die zeigt, dass die Option nicht nachverfolgt werden kann, wenn Benutzer auf sicher klicken nicht ausgewählt ist.](../../media/mtp-eval-38.png) <br>
 
 9. Wählen Sie als nächstes die **Antischadsoftware-** Richtlinie aus, wählen Sie die Standardeinstellung aus, und wählen Sie das Bleistiftsymbol aus.
@@ -141,13 +123,13 @@ Es gibt ein PowerShell-Modul namens *Office 365 Advanced Threat Protection Recom
 7. Klicken Sie im Sensor Bereitstellungs auf **weiter** .
 <br>![Image of_Azure Advanced Threat Protection-Seite, auf der Sie auf Weiter klicken, um dem Azure ATP-Sensor-Assistenten zu entsprechen](../../media/mtp-eval-48.png) <br>
  
-8. Kopieren Sie die Zugriffstaste so, wie Sie Sie als nächstes im Assistenten eingeben müssen.
+8. Kopieren Sie die Zugriffstaste, da Sie Sie als nächstes im Assistenten eingeben müssen.
 ![Seite "Bild of_the Sensoren", auf der Sie die Zugriffstaste kopieren sollten, die Sie auf der nächsten Seite des Azure ATP-Sensor-Setup-Assistenten eingeben müssen](../../media/mtp-eval-49.png) <br>
  
 9. Kopieren Sie den Zugriffsschlüssel in den Assistenten, und klicken Sie auf **Installieren**. 
 <br>![Image of_Azure Advanced Threat Protection Azure ATP-Sensor-Assistent-Seite, auf der Sie die Zugriffstaste eingeben und dann auf die Schaltfläche "installieren" klicken sollten](../../media/mtp-eval-50.png) <br>
 
-10. Herzlichen Glückwunsch, Sie haben Azure Advanced Threat Protection auf Ihrem Domänencontroller erfolgreich konfiguriert.
+10. Herzlichen Glückwunsch, Sie haben Azure Advanced Threat Protection erfolgreich auf Ihrem Domänencontroller konfiguriert.
 ![Image of_Azure Advanced Threat Protection Azure ATP-Sensor-Assistent-Installationsabschluss, in dem Sie auf die Schaltfläche Fertig stellen klicken sollten](../../media/mtp-eval-51.png) <br>
  
 11. Wählen Sie im Abschnitt [Azure Azure ATP](https://go.microsoft.com/fwlink/?linkid=2040449) -Einstellungen die Option **Windows Defender ATP**aus, und aktivieren Sie dann die Umschaltfläche. Klicken Sie auf **Speichern**. 
@@ -170,8 +152,8 @@ Es gibt ein PowerShell-Modul namens *Office 365 Advanced Threat Protection Recom
 >[!NOTE]
 >Wenn diese Eingabeaufforderung nicht angezeigt wird, kann dies bedeuten, dass Ihre Azure ATP-Datenintegration bereits aktiviert wurde. Wenn Sie sich jedoch nicht sicher sind, wenden Sie sich an Ihren IT-Administrator, um dies zu bestätigen. 
 
-3. Wechseln Sie zu **Einstellungen**, aktivieren Sie die **Azure ATP-Integration** , und klicken Sie dann auf **Speichern**. 
-![Bild of_the Einstellungsseite, auf der Sie die Azure ATP-Integration umschalten und dann auf Speichern klicken sollten](../../media/mtp-eval-55.png) <br>
+3. Wechseln Sie zu **Einstellungen**, aktivieren Sie die **Azure ATP Integration** Toggle, und klicken Sie dann auf **Speichern**. 
+![Seite Image of_the Settings, auf der Sie die Azure ATP-Integration aktivieren und dann auf Speichern klicken.](../../media/mtp-eval-55.png) <br>
 >[!NOTE]
 >Für neue Azure ATP-Instanzen wird diese Integrations Toggle automatisch aktiviert. Vergewissern Sie sich, dass Ihre Azure ATP-Integration aktiviert wurde, bevor Sie mit dem nächsten Schritt fortfahren.
  
@@ -243,11 +225,11 @@ Klicken Sie auf **Weiter**.
 <br>
 
 Wechseln Sie zu [Microsoft 365 Security Center](https://security.microsoft.com/homepage). Navigieren Sie zu **Einstellungen** , und wählen Sie dann **Microsoft Threat Protection**aus.
-<br>![Screenshot der Option "Image of_Microsoft Threat Protection" auf der Seite "Microsoft 365 Security Center Settings"](../../media/mtp-eval-72b.png) <br>
+<br>![Screenshot der Option "Image of_Microsoft Threat Protection" auf der Seite "Microsoft 365 Security Center Settings" ](../../media/mtp-eval-72b.png) <br>
 
 Eine umfassendere Anleitung finden Sie unter [Aktivieren von Microsoft Threat Protection](mtp-enable.md). 
 
-Herzlichen Glückwunsch! Sie haben soeben Ihre Microsoft Threat Protection Test Lab-Umgebung erstellt. Jetzt können Sie sich mit der Microsoft Threat Protection-Benutzeroberfläche vertraut machen. In diesem Artikel erfahren Sie, wie Sie die einzelnen Dashboards für Ihre täglichen Aufgaben im Zusammenarbeit mit Sicherheitsfunktionen verwenden können: [Microsoft Threat Protection – interaktive Anleitung](https://aka.ms/MTP-Interactive-Guide).
+Herzlichen Glückwunsch! Sie haben soeben Ihr Microsoft Threat Protection-Test Labor oder Ihre Pilotumgebung erstellt. Jetzt können Sie sich mit der Microsoft Threat Protection-Benutzeroberfläche vertraut machen. In diesem Artikel erfahren Sie, wie Sie die einzelnen Dashboards für Ihre täglichen Aufgaben im Zusammenarbeit mit Sicherheitsfunktionen verwenden können: [Microsoft Threat Protection – interaktive Anleitung](https://aka.ms/MTP-Interactive-Guide).
 
 Als nächstes können Sie einen Angriff simulieren und sehen, wie die produktübergreifenden Funktionen erkennen, Warnungen erstellen und automatisch auf einen Datei übergreifenden Angriff auf einen Endpunkt reagieren.
 

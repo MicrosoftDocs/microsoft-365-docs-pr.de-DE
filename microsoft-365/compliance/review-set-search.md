@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: In diesem Artikel erfahren Sie, wie Sie eine Abfrage in einem Überprüfungspaket erstellen und ausführen, um Daten für eine effizientere Überprüfung in einem erweiterten eDiscovery-Fall zu organisieren.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 871630af4b8b19e5fad1a062129782e36b9706f5
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 508e8e9fdb4a558a998a33aa561dc3755edcc40d
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527435"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816718"
 ---
 # <a name="query-the-data-in-a-review-set"></a>Abfragen der Daten in einem Prüfdateisatz
 
@@ -30,7 +30,7 @@ In den meisten Fällen ist es hilfreich, die Daten in einer Überprüfungsgruppe
 
 ## <a name="creating-and-running-a-query-in-a-review-set"></a>Erstellen und Durchführen einer Abfrage in einem Überprüfungs Satzes
 
-Klicken Sie zum Erstellen und Ausführen einer Abfrage für die Dokumente in einem Prüfdateisatz auf **Neue Abfrage** im Prüfdateisatz. Nachdem Sie die Abfrage benannt und die Bedingungen definiert haben, klicken Sie auf **Speichern** , um die Abfrage zu speichern und auszuführen. Wenn Sie eine zuvor gespeicherte Abfrage ausführen möchten, klicken Sie auf eine gespeicherte Abfrage.
+Wenn Sie eine Abfrage für die Dokumente in einem Überprüfungs Satzes erstellen und ausführen möchten, wählen Sie **neue Abfrage** in der Überprüfungsgruppe aus. Nachdem Sie die Abfrage benannt und die Bedingungen definiert haben, wählen Sie **Speichern** aus, um die Abfrage zu speichern und auszuführen. Wenn Sie eine zuvor gespeicherte Abfrage ausführen möchten, wählen Sie eine gespeicherte Abfrage aus.
 
 ![Überprüfen von Mengen Abfragen](../media/AeDReviewSetQueries.png)
 
@@ -56,9 +56,9 @@ Es gibt mehrere Arten von Konditions Karten:
 
 Zusätzlich zu den Konditions Karten können Sie eine KQL-ähnliche Abfragesprache in der Stichwörter Karte verwenden, um Ihre Abfrage zu erstellen. Die Abfragesprache für Review-Mengen Abfragen unterstützt Standard boolesche Operatoren wie **and**, **or**, **Not**und **near**. Außerdem wird ein Platzhalter mit einem einzelnen Zeichen (?) und ein mehr stelliger Platzhalter (*) unterstützt.
 
-## <a name="using-filters"></a>Verwenden von Filtern
+## <a name="filters"></a>Filter
 
-Zusätzlich zu den Abfragen, die Sie speichern können, können Sie mithilfe von Filtersätzen für eine Überprüfungs Satz Abfrage schnell zusätzliche Bedingungen anwenden. Auf diese Weise können Sie die durch eine Prüfdateisatz-Abfrage angezeigten Ergebnisse weiter verfeinern.
+Zusätzlich zu den Abfragen, die Sie speichern können, können Sie mithilfe von Filtersätzen für eine Überprüfungs Satz Abfrage schnell zusätzliche Bedingungen anwenden. Mithilfe von Filtern können Sie die Ergebnisse, die von einer Abfrage mit Überprüfungs Sätzen angezeigt werden, weiter verfeinern.
 
 ![Überprüfen von Filtersätzen](../media/AeDReviewSetFilters.png)
 

@@ -7,22 +7,21 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 description: Hier finden Sie Informationen zu Methoden zum Überprüfen der Daten in ihren beweisen, beispielsweise zum Anzeigen in systemeigenen, Text-oder near-nativen Formaten.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f094718bd14ee86ff8fdae482e86c22ecfbdc483
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 9df5c1f0fd15cb320e8359d09ab39202700dbc4b
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034609"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816728"
 ---
 # <a name="review-the-data-in-evidence"></a>Überprüfen von Nachweisdaten
 
@@ -34,12 +33,12 @@ Um Dokumente zu gruppieren und weitere Unterstützung für Ihre Überprüfung zu
 
 ## <a name="view-documents-in-evidence"></a>Anzeigen von Dokumenten in Evidence
 
-Mit den Daten Ermittlungen (Preview) können Sie Inhalte in verschiedenen Viewern anzeigen, wobei jeder Betrachter einen anderen Zweck hat. Diese Viewer sind:
+Mit dem Tool zur Datenermittlung (Vorschau) können Sie Inhalte in mehreren unterschiedlichen Viewern anzeigen, wobei jeder Betrachter einen anderen Zweck hat. Diese Viewer sind:
 
 - Dateimetadaten
 - Systemeigene Ansicht
-- Text Ansicht
-- Ansicht mit Anmerkungen versehen
+- Textansicht
+- Kommentaransicht
 
 Um auf einen dieser Viewer zuzugreifen, wählen Sie einfach ein Dokument in einem Beweissatzes aus.
 
@@ -53,14 +52,14 @@ Im folgenden finden Sie ein Beispiel für die Datei Metadaten für ein Dokument.
 
 ## <a name="native-view"></a>Systemeigene Ansicht
 
-Der systemeigene Viewer zeigt die genaueste Ansicht eines Dokuments im systemeigenen Format an. Native View wird für Hunderte von Dateitypen unterstützt und ist für die Anzeige von Dokumenten in der wahrsten nativen Umgebung möglich. Für Microsoft Office Dateien verwendet der systemeigene Viewer die Webversion von Office-Apps. Auf diese Weise können Sie Inhalte wie Kommentare in verschiedenen Office-Dokumenten, Formeln und ausgeblendeten Zeilen/Spalten in Excel und die Notizenansicht in PowerPoint anzeigen.
+Der systemeigene Viewer zeigt die genaueste Ansicht eines Dokuments in seinem systemeigenen Format an. Native View wird für Hunderte von Dateitypen unterstützt und ist für die Anzeige von Dokumenten in der wahrsten nativen Umgebung möglich. Für Microsoft Office Dateien verwendet der systemeigene Viewer die Webversion von Office-Apps. Auf diese Weise können Sie Inhalte wie Kommentare in verschiedenen Office-Dokumenten, Formeln und ausgeblendeten Zeilen/Spalten in Excel und die Notizenansicht in PowerPoint anzeigen.
 
 ![Systemeigene Ansicht
 ](../media/Reviewimage3.png)
 
-## <a name="text-view"></a>Text Ansicht
+## <a name="text-view"></a>Textansicht
 
-Der Text Betrachter bietet eine Ansicht des extrahierten Texts einer Datei. Eingebettete Bilder und Formatierungen werden ignoriert, aber diese Ansicht ist sehr nützlich, wenn Sie versuchen, den Inhalt eines Dokuments schnell zu überprüfen und zu verstehen. Die Text Ansicht umfasst auch die folgenden Features:
+Der Text-Viewer bietet eine Ansicht des extrahierten Texts einer Datei. Eingebettete Bilder und Formatierungen werden ignoriert, diese Ansicht ist jedoch hilfreich, wenn Sie versuchen, den Inhalt eines Dokuments schnell zu überprüfen und zu verstehen. Die Textansicht bietet außerdem die folgenden Features:
 
   - Ein Leistungsindikator, der das verweisen auf bestimmte Teile eines Dokuments erleichtert.
 
@@ -70,7 +69,7 @@ Der Text Betrachter bietet eine Ansicht des extrahierten Texts einer Datei. Eing
 
 **Beispiel für einen Leistungsindikator und eine Hervorhebung von Suchtreffern in Text und ScrollBar**
 
-![Text Ansicht
+![Textansicht
 ](../media/Reviewimage4.png)
 
 **Beispiel für die diff-Ansicht**
@@ -78,7 +77,7 @@ Der Text Betrachter bietet eine Ansicht des extrahierten Texts einer Datei. Eing
 ![Vergleichsansicht
 ](../media/Reviewimage5.png)
 
-## <a name="annotate-view"></a>Ansicht mit Anmerkungen versehen
+## <a name="annotate-view"></a>Kommentaransicht
 
 Die Ansicht Anmerkungen enthält Features, mit denen Sie während des Überprüfungsprozesses Markup für ein Dokument anwenden können. Dazu gehören die folgenden Tools:
 
@@ -102,7 +101,7 @@ Die anmerkungsansicht bietet auch die folgende Navigationsfunktionalität:
 
 **Beispiel für die Ansicht "anmerken"**
 
-![Ansicht mit Anmerkungen versehen](../media/Reviewimage1.png)
+![Kommentaransicht](../media/Reviewimage1.png)
 
 > [!NOTE]
 > Anmerkungen werden auf eine Kopie des Dokuments angewendet, die dem Beweissatz hinzugefügt wurde. Die ursprünglichen Dokumente im Live-Dienst werden nicht kommentiert.

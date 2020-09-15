@@ -1,5 +1,5 @@
 ---
-title: Schnelle Aufgaben für erste Schritte mit der Microsoft 365-Compliance
+title: Schnelle Aufgaben für die ersten Schritte mit Microsoft 365 Compliance
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -12,14 +12,14 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Erfahren Sie mehr über Aufgaben, die Ihnen helfen, die Compliance in Microsoft 365 schnell zu beginnen.
-ms.openlocfilehash: 26d10840382d044e8126745daec32948571a1be9
-ms.sourcegitcommit: e891c7c25f351f10f250af3f483f68594976ddc9
+ms.openlocfilehash: 1702c05b271c0e8b5456c1a93f8bf1dc28f7fbd9
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45153688"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816814"
 ---
-# <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Schnelle Aufgaben für erste Schritte mit der Microsoft 365-Compliance
+# <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Schnelle Aufgaben für die ersten Schritte mit Microsoft 365 Compliance
 
 Wenn Sie neu bei der Microsoft 365-Konformität sind und sich Fragen, wo Sie beginnen sollten, enthält dieser Artikel Anleitungen zu den Grundlagen und priorisiert wichtige Compliance-Aufgaben. In diesem Artikel erfahren Sie, wie Sie schnell mit der Verwaltung und Überwachung Ihrer Daten beginnen, Informationen schützen und Insider Risiken minimieren können.
 
@@ -87,9 +87,9 @@ Mit einer [Aufbewahrungsrichtlinie](retention.md) können Sie proaktiv entscheid
 
 Wenn Inhalte einer Aufbewahrungsrichtlinie unterliegen, können Personen weiterhin mit dem Inhalt bearbeiten und arbeiten, als ob nichts geändert würde. Der Inhalt wird an seiner ursprünglichen Stelle aufbewahrt. Aber wenn jemand Inhalte bearbeitet oder löscht, die der Aufbewahrungsrichtlinie unterliegen, wird eine Kopie des ursprünglichen Inhalts an einem sicheren Ort gespeichert, an dem Sie aufbewahrt wird, während die Aufbewahrungsrichtlinie für diese Inhalte aktiv ist.
 
-Sie können eine Aufbewahrungsrichtlinie schnell für mehrere Standorte in Ihrer Microsoft 365-Umgebung einsetzen: Exchange-Mail und öffentliche Ordner, SharePoint-Websites, OneDrive-Konten und Microsoft 365-Gruppen. Als "organisationsweite Aufbewahrungsrichtlinie" bezeichnet, gibt es keine Beschränkungen für die Anzahl von Postfächern oder Websites, die in der Richtlinie enthalten sein können. Wenn Sie jedoch spezifischer vorgehen müssen, können Sie dies tun, indem Sie eine Aufbewahrungsrichtlinie für bestimmte Standorte konfigurieren und dann Websites oder Benutzer hinzufügen oder ausschließen.
+Sie können schnell eine Aufbewahrungsrichtlinie für mehrere Standorte in Ihrer Microsoft 365-Umgebung wie Exchange-Mail, SharePoint-Websites, OneDrive-Konten und Microsoft 365-Gruppen platzieren. Es gibt keine Beschränkungen für die Anzahl von Postfächern oder Websites, die diese Richtlinie automatisch enthalten kann. Wenn Sie jedoch selektiver sein müssen, können Sie dies durch Konfigurieren einer Aufbewahrungsrichtlinie für bestimmte Speicherorte und einschließen oder Ausschließen von Websites oder Benutzern erreichen.
 
-Eine Schritt-für-Schritt-Anleitung zum Konfigurieren einer Aufbewahrungsrichtlinie finden Sie unter [Erstellen und Konfigurieren von Aufbewahrungs](create-retention-policies.md)Richtlinien. Informationen zur Lizenzierung von Datensatzverwaltung finden Sie unter [Microsoft 365 Licensing Guidance for Security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management).
+Eine Schritt-für-Schritt-Anleitung zum Konfigurieren einer Aufbewahrungsrichtlinie finden Sie unter [Erstellen und Konfigurieren von Aufbewahrungs](create-retention-policies.md)Richtlinien. Wenn Sie die Konfiguration der Datenaufbewahrung in Microsoft 365 zum ersten Mal durchführen möchten, lesen Sie [Erste Schritte mit Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](get-started-with-retention.md).
 
 ## <a name="task-8-configure-sensitive-information-and-offensive-language-policies"></a>Aufgabe 8: Konfigurieren von vertraulichen Informationen und Richtlinien für anstößige Sprachen
 
@@ -137,13 +137,13 @@ Nachdem Sie die Grundlagen für die Verwaltung der Richtlinientreue für Ihre Or
 
 Während Aufbewahrungsrichtlinien auf Containerebene auf Standorte wie SharePoint-Websites und Exchange-Postfächer angewendet werden, ermöglichen [Aufbewahrungs Bezeichnungen](retention.md#retention-labels) spezifischere Zielgruppenadressierung für Ihre Aufbewahrungs-und Löschungsrichtlinien. Beispielsweise auf der Ebene des Dokuments oder der e-Mail-Nachricht, die Endbenutzer zusätzlich zur automatischen Anwendung durch Administratoren manuell anwenden können. Sie können auch eine Aufbewahrungs Bezeichnung auf eine Dokumentbibliothek, einen Ordner oder eine Dokumentenmappe in SharePoint anwenden, sodass alle Dokumente, die an diesem Speicherort gespeichert sind, die standardmäßige Aufbewahrungs Bezeichnung erben.
 
-Darüber hinaus unterstützen Aufbewahrungs Bezeichnungen die [Datensatzverwaltung](records-management.md) , um Inhalte als Datensatz zu kennzeichnen. Wenn dies geschieht, kann die Bezeichnung nicht geändert oder entfernt und die Inhalte können nicht bearbeitet oder gelöscht werden. Diese Einschränkungen sind möglicherweise erforderlich, um Ihre Organisation bei der Einhaltung behördlicher Anforderungen zu unterstützen.
+Darüber hinaus unterstützen Aufbewahrungs Bezeichnungen die [Datensatzverwaltung](records-management.md) , um Inhalte als Datensatz zu kennzeichnen. In diesem Fall legt die Bezeichnung zusätzliche Einschränkungen für die Inhalte fest, die möglicherweise erforderlich sind, um Ihrer Organisation die Einhaltung behördlicher Anforderungen zu erleichtern.
 
 Eine Schritt-für-Schritt-Anleitung zum Erstellen und Veröffentlichen von Aufbewahrungs Bezeichnungen finden Sie in den folgenden Anleitungen:
-- [Erstellen von Aufbewahrungs Bezeichnungen und anwenden in apps](create-apply-retention-labels.md)
-- [Automatisches Anwenden einer Aufbewahrungs Bezeichnung auf Inhalte](apply-retention-labels-automatically.md)
+- [Erstellen von Aufbewahrungsbezeichnungen und Anwenden in Apps](create-apply-retention-labels.md)
+- [Automatisches Anwenden einer Aufbewahrungsbezeichnung auf Inhalte](apply-retention-labels-automatically.md)
 
-Informationen zur Lizenzierung von Datensatzverwaltung finden Sie unter [Microsoft 365 Licensing Guidance for Security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management).
+Erste Schritte mit der Datensatzverwaltung finden Sie unter [Erste Schritte mit der Datensatzverwaltung](get-started-with-records-management.md).
 
 ### <a name="identify-and-define-sensitive-information-types"></a>Identifizieren und Definieren von Typen für vertrauliche Informationen
 
@@ -151,7 +151,7 @@ Definieren Sie Typen vertraulicher Informationen basierend auf dem Muster, das i
 
 Eine Schritt-für-Schritt-Anleitung zum Definieren von benutzerdefinierten Typen vertraulicher Informationen finden Sie unter [Erstellen eines benutzerdefinierten vertraulichen Informationstyps im Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/create-a-custom-sensitive-information-type).
 
-### <a name="prevent-data-loss"></a>Verhindern von Datenverlust
+### <a name="prevent-data-loss"></a>Datenverlust verhindern
 
 Mit den [Richtlinien zur Verhinderung von Datenverlust (Data Loss Prevention, DLP)](data-loss-prevention-policies.md) können Sie vertrauliche Informationen in Ihrer Microsoft 365-Organisation identifizieren, überwachen und automatisch schützen. Verwenden Sie DLP-Richtlinien, um vertrauliche Elemente in Microsoft-Diensten zu identifizieren, die unbeabsichtigte Freigabe von vertraulichen Elementen zu verhindern und Benutzer dabei zu unterstützen, die Kompatibilität zu verbleiben, ohne den Workflow zu unterbrechen.
 

@@ -17,12 +17,12 @@ ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 ms.custom:
 - seo-marvel-apr2020
 description: Hier erfahren Sie, wie Sie die verschiedenen Aufbewahrungs Typen identifizieren können, die in einem Exchange Online Postfach in Microsoft 365 gespeichert werden können.
-ms.openlocfilehash: 1cd947f70c57d453b038ac419abccde006f393ae
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: a76b02f6345421871c759e1b31bf19207b474e2a
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547453"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816824"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Identifizieren des Haltebereichs für ein Exchange Online-Postfach
 
@@ -40,11 +40,9 @@ Microsoft 365 bietet verschiedene Möglichkeiten, mit denen Ihre Organisation ve
 
   Es gibt zwei Arten von Microsoft 365-Aufbewahrungsrichtlinien, die Postfächern zugewiesen werden können.
 
-    - **Spezifische Aufbewahrungsrichtlinien für Standorte:** Hierbei handelt es sich um Richtlinien, die den Inhaltsspeicherorten bestimmter Benutzer zugewiesen sind. Verwenden Sie das Cmdlet **Get-Mailbox** in Exchange Online PowerShell, um Informationen zu Aufbewahrungsrichtlinien abzurufen, die bestimmten Postfächern zugewiesen sind.
+    - **Spezifische Aufbewahrungsrichtlinien für Standorte:** Hierbei handelt es sich um Richtlinien, die den Inhaltsspeicherorten bestimmter Benutzer zugewiesen sind. Verwenden Sie das Cmdlet **Get-Mailbox** in Exchange Online PowerShell, um Informationen zu Aufbewahrungsrichtlinien abzurufen, die bestimmten Postfächern zugewiesen sind. Weitere Informationen zu dieser Art von Aufbewahrungsrichtlinie finden Sie im Abschnitt [eine Richtlinie mit bestimmten Einschlüssen oder Ausschlüssen](create-retention-policies.md#a-policy-with-specific-inclusions-or-exclusions) aus der Aufbewahrungsrichtlinien Dokumentation.
 
-    - **Organisationsweite Aufbewahrungsrichtlinien:** Dabei handelt es sich um Richtlinien, die allen Inhaltsspeicherorten in Ihrer Organisation zugewiesen sind. Verwenden Sie das Cmdlet **Get-OrganizationConfig** in Exchange Online PowerShell, um Informationen zu organisationsweiten Aufbewahrungsrichtlinien zu erhalten.
-    
-  Weitere Informationen finden Sie unter [Anwenden einer Aufbewahrungsrichtlinie auf eine gesamte Organisation oder einen bestimmten Speicherort](create-retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) Abschnitt.
+    - **Organisationsweite Aufbewahrungsrichtlinien:** Dabei handelt es sich um Richtlinien, die allen Inhaltsspeicherorten in Ihrer Organisation zugewiesen sind. Verwenden Sie das Cmdlet **Get-OrganizationConfig** in Exchange Online PowerShell, um Informationen zu organisationsweiten Aufbewahrungsrichtlinien zu erhalten. Weitere Informationen zu dieser Art von Aufbewahrungsrichtlinie finden Sie im Abschnitt [eine Richtlinie, die für gesamte Standorte](create-retention-policies.md#a-policy-that-applies-to-entire-locations) aus der Aufbewahrungsrichtlinien Dokumentation gilt.
 
 - **[Microsoft 365-Aufbewahrungs Bezeichnungen](retention.md):** wenn ein Benutzer eine Microsoft 365-Aufbewahrungs Bezeichnung anwendet (eine, die für das Aufbewahren von Inhalten oder das aufbewahren und Löschen von Inhalten konfiguriert ist *), wird* ein Aufbewahrungsplatz im Postfach abgelegt, als ob das Postfach in einem Beweissicherungsverfahren abgelegt oder einer Microsoft 365-Aufbewahrungsrichtlinie zugewiesen wurde. Weitere Informationen finden Sie unter [Identifizieren von Postfächern in der Warteschleife, da eine Aufbewahrungs Bezeichnung auf einen Ordner oder ein Element](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) Abschnitt in diesem Artikel angewendet wurde.
 
@@ -203,7 +201,7 @@ Um die Verzögerung zu entfernen, bevor Sie abläuft, können Sie je nach der Ei
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
 
-Oder:
+Oder
  
 ```powershell
 Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
@@ -217,7 +215,7 @@ Um die Verzögerung für ein inaktives Postfach zu entfernen, führen Sie einen 
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
 ```
 
-Oder:
+Oder
 
 ```powershell
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplied

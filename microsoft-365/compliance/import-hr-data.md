@@ -14,20 +14,20 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Administratoren können einen Daten Konnektor einrichten, um Mitarbeiterdaten aus dem Personalwesen (HR) Ihrer Organisation nach Microsoft 365 zu importieren. Auf diese Weise können Sie Personaldaten in Richtlinien für das Insider Risikomanagement verwenden, um die Aktivität bestimmter Benutzer zu ermitteln, die eine interne Bedrohung für Ihre Organisation darstellen können.
-ms.openlocfilehash: 78832d74a7d61577e5ec49c290e19bdec758a0b3
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: a8eaeda3bc883de55a2c588e39557b4517ae3cc5
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289250"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47817161"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-preview"></a>Einrichten eines Connectors zum Importieren von HR-Daten (Vorschau)
 
-Sie können einen Daten Konnektor im Microsoft 365 Compliance Center einrichten, um Personaldaten (HR) im Zusammenhang mit Ereignissen wie dem Rücktritt eines Benutzers oder einer Änderung der Auftragsstufe eines Benutzers zu importieren. Diese HR-Daten können dann von der [Insider Risk Management-Lösung](insider-risk-management.md) verwendet werden, um Risikoindikatoren zu generieren, die Sie bei der Identifizierung möglicher böswilliger Aktivitäten oder von Datendiebstahl durch Benutzer innerhalb Ihrer Organisation unterstützen können.
+Sie können einen Daten Konnektor im Microsoft 365 Compliance Center einrichten, um Personaldaten (HR) im Zusammenhang mit Ereignissen wie dem Rücktritt eines Benutzers oder einer Änderung der Auftragsstufe eines Benutzers zu importieren. Die HR-Daten können dann von der [Insider Risk Management-Lösung](insider-risk-management.md) verwendet werden, um Risikoindikatoren zu generieren, die Sie bei der Identifizierung möglicher böswilliger Aktivitäten oder von Datendiebstahl durch Benutzer innerhalb Ihrer Organisation unterstützen können.
 
 Einrichten eines Connectors für HR-Daten, die von Insider Risiko-Verwaltungsrichtlinien zum Generieren von Risikoindikatoren verwendet werden können, besteht darin, eine CSV-Datei zu erstellen, die die HR-Daten enthält. Erstellen einer APP in Azure Active Directory, die für die Authentifizierung verwendet wird, Erstellen eines HR-Daten-Konnektors im Microsoft 365 Compliance Center und anschließendes Ausführen eines Skripts (geplant), das die HR-Daten in CSV-Dateien in die Microsoft-Cloud einnimmt, damit Sie für Insider verfügbar ist Risikomanagementlösung.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Bestimmen Sie, welche HR-Szenarien und Daten in Microsoft 365 importiert werden sollen. Auf diese Weise können Sie bestimmen, wie viele CSV-Dateien und HR-Konnektoren Sie erstellen und wie Sie die CSV-Dateien generieren und strukturieren müssen. Die von Ihnen importierten HR-Daten werden durch die Richtlinien für das Insider Risikomanagement bestimmt, die Sie implementieren möchten. Weitere Informationen finden Sie unter Schritt 1.
 
@@ -91,8 +91,8 @@ In der folgenden Tabelle werden die einzelnen Spalten in der CSV-Datei für die 
 | **Spalte**  |  **Beschreibung**|
 |:------------|:----------------|
 |**EmailAddress**| Gibt die e-Mail-Adresse (UPN) des terminierten Benutzers an.|
-| **ResignationDate** | Gibt das Datum an, an dem die Arbeit des Benutzers in Ihrer Organisation offiziell gekündigt wurde. Dies kann beispielsweise das Datum sein, an dem der Benutzer seinen Hinweis zum Verlassen ihrer Organisation gegeben hat. Dieses Datum kann unterschiedlich sein als das Datum des letzten Arbeitstags des Benutzers. Sie müssen das folgende Datumsformat verwenden: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , das ist das [ISO 8601-Format für Datum und Uhrzeit](https://www.iso.org/iso-8601-date-and-time-format.html).|
-| **LastWorkingDate** | Gibt den letzten Tag der Arbeit für den terminierten Benutzer an. Sie müssen das folgende Datumsformat verwenden: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , das ist das [ISO 8601-Format für Datum und Uhrzeit](https://www.iso.org/iso-8601-date-and-time-format.html).|
+| **ResignationDate** | Gibt das Datum an, an dem die Arbeit des Benutzers in Ihrer Organisation offiziell gekündigt wurde. Dies kann beispielsweise das Datum sein, an dem der Benutzer seinen Hinweis zum Verlassen ihrer Organisation gegeben hat. Dieses Datum kann unterschiedlich sein als das Datum des letzten Arbeitstags des Benutzers. Verwenden Sie das folgende Datumsformat: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , also das [ISO 8601-Format für Datum und Uhrzeit](https://www.iso.org/iso-8601-date-and-time-format.html).|
+| **LastWorkingDate** | Gibt den letzten Tag der Arbeit für den terminierten Benutzer an. Verwenden Sie das folgende Datumsformat: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , also das [ISO 8601-Format für Datum und Uhrzeit](https://www.iso.org/iso-8601-date-and-time-format.html).|
 |||
 
 ### <a name="csv-file-for-job-level-changes-data"></a>CSV-Datei für geänderte Daten auf Auftragsebene
@@ -110,8 +110,8 @@ In der folgenden Tabelle werden die einzelnen Spalten in der CSV-Datei für Änd
 | **Spalte**|**Beschreibung**|
 |:--------- |:------------- |
 | **EmailAddress**  | Gibt die e-Mail-Adresse des Benutzers (UPN) an.|
-| **EffectiveDate** | Gibt das Datum an, an dem die Auftragsstufe des Benutzers offiziell geändert wurde. Sie müssen das folgende Datumsformat verwenden: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , das ist das [ISO 8601-Format für Datum und Uhrzeit](https://www.iso.org/iso-8601-date-and-time-format.html).|
-| **Bemerkungen**| Gibt die Hinweise an, die von Evaluator zur Änderung der Auftragsebene bereitgestellt wurden. Hierbei handelt es sich um einen Text Parameter mit einem Grenzwert von 200 Zeichen. Dieser Parameter ist optional. Sie müssen es nicht in die CSV-Datei einschließen.|
+| **EffectiveDate** | Gibt das Datum an, an dem die Auftragsstufe des Benutzers offiziell geändert wurde. Verwenden Sie das folgende Datumsformat: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , also das [ISO 8601-Format für Datum und Uhrzeit](https://www.iso.org/iso-8601-date-and-time-format.html).|
+| **Bemerkungen**| Gibt die Hinweise an, die von Evaluator zur Änderung der Auftragsebene bereitgestellt wurden. Sie können einen Grenzwert von 200 Zeichen eingeben. Dieser Parameter ist optional. Sie müssen es nicht in die CSV-Datei einschließen.|
 | **OldLevel**| Gibt die Auftragsebene des Benutzers vor der Änderung an. Hierbei handelt es sich um einen frei Text Parameter, der eine hierarchische Taxonomie für Ihre Organisation enthalten kann. Dieser Parameter ist optional. Sie müssen es nicht in die CSV-Datei einschließen.|
 | **Ebene**| Gibt die Auftragsebene des Benutzers an, nachdem er geändert wurde. Hierbei handelt es sich um einen frei Text Parameter, der eine hierarchische Taxonomie für Ihre Organisation enthalten kann. Dieser Parameter ist optional. Sie müssen es nicht in die CSV-Datei einschließen.|
 |||
@@ -131,7 +131,7 @@ In der folgenden Tabelle werden die einzelnen Spalten in der CSV-Datei für Leis
 | **Spalte**|**Beschreibung**|
 |:----------|:--------------|
 | **EmailAddress**  | Gibt die e-Mail-Adresse des Benutzers (UPN) an.|
-| **EffectiveDate** | Gibt das Datum an, an dem der Benutzer offiziell über das Ergebnis seiner Leistungsüberprüfung informiert wurde. Dies kann das Datum sein, an dem der Leistungsüberprüfungszyklus beendet wurde. Sie müssen das folgende Datumsformat verwenden: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , das ist das [ISO 8601-Format für Datum und Uhrzeit](https://www.iso.org/iso-8601-date-and-time-format.html).|
+| **EffectiveDate** | Gibt das Datum an, an dem der Benutzer offiziell über das Ergebnis seiner Leistungsüberprüfung informiert wurde. Dies kann das Datum sein, an dem der Leistungsüberprüfungszyklus beendet wurde. Verwenden Sie das folgende Datumsformat: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , also das [ISO 8601-Format für Datum und Uhrzeit](https://www.iso.org/iso-8601-date-and-time-format.html).|
 | **Bemerkungen**| Gibt alle Hinweise an, die der Evaluator dem Benutzer für die Leistungsüberprüfung zur Verfügung gestellt hat. Hierbei handelt es sich um einen Text Parameter mit einem Grenzwert von 200 Zeichen. Dieser Parameter ist optional. Sie müssen es nicht in die CSV-Datei einschließen.|
 | **Rating**| Gibt die für die Leistungsüberprüfung angegebene Bewertung an. Dies ist ein Text Parameter und kann beliebigen Freiformtext enthalten, den Ihre Organisation verwendet, um die Auswertung zu erkennen. Beispiel: "3 met Erwartungen" oder "2 unterdurchschnittlich". Hierbei handelt es sich um einen Text Parameter mit einem Grenzwert von 25 Zeichen. Dieser Parameter ist optional. Sie müssen es nicht in die CSV-Datei einschließen.|
 |||

@@ -17,13 +17,13 @@ ms.custom:
 search.appverid:
 - MET150
 description: Hier finden Sie Antworten auf häufig gestellte Fragen zu Self-Service-Käufen.
-ms.date: 08/12/2020
-ms.openlocfilehash: 78a7082a966a866f18ac2aa378198dbb33d8c158
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.date: 09/15/2020
+ms.openlocfilehash: 81143dfe3794bc4f42bea879905bf08750f498b4
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653701"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816925"
 ---
 # <a name="self-service-purchase-faq"></a>FAQ zum Self-Service-Kauf
 
@@ -32,7 +32,7 @@ Mit Self-Service Purchase können Benutzer neue Technologien ausprobieren und L�
 Self-Service Purchase steht für Power Platform (Power BI, Power apps und Power Automation), Project und Visio zur Verfügung.
 
 > [!NOTE]
-> Self-Service Purchase steht in Indien nicht zur Verfügung und ist für Regierungs-oder Bildungskunden nicht verfügbar.
+> Self-Service-Erwerb ist in Indien oder für Regierungs-und Bildungskunden nicht verfügbar. Project und Visio stehen nicht für Self-Service-Käufe in Brasilien und der Demokratischen Republik Kongo zur Verfügung.
 
 ## <a name="making-a-self-service-purchase"></a>Erstellen eines Self-Service-Kaufs
 

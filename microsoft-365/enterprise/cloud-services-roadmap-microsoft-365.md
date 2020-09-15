@@ -13,18 +13,18 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Die Roadmap zum Einrichten Ihrer Cloud-Dienste für Microsoft 365.
-ms.openlocfilehash: 4e9630ad84b5e442f0c8fd6ab95ca9d0c48c780a
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: 9d28b03f17aa0b9de955af824939d0db28faa057
+ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315765"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47775135"
 ---
 # <a name="cloud-services-roadmap-for-microsoft-365"></a>Roadmap für Cloud-Dienste für Microsoft 365
 
 Um die Vorteile für Kreativität, Teamarbeit und Produktivität von Microsoft 365 für Unternehmen zu erhalten, stellen Sie die Cloud-Dienste bereit, die den Anforderungen Ihrer Organisation am besten entsprechen.
 
-Wenn Sie über serverbasierte Bereitstellungen für Exchange, SharePoint oder Skype for Business verfügen, lesen Sie die [Roadmap für Client-und Server Software](client-server-software-roadmap-microsoft-365.md) , um Ihre gesamte Organisation zu Microsoft 365 for Enterprise zu migrieren. Diese Roadmap umfasst Microsoft Office Clientprodukte, lokale Office Server-Produkte und Microsoft Windows-basierte Geräte.
+Wenn Sie über serverbasierte Bereitstellungen für Exchange, SharePoint oder Skype for Business verfügen und ihre gesamte Organisation zu Microsoft 365 for Enterprise migrieren möchten, lesen Sie die [Roadmap für Client-und Server Software](client-server-software-roadmap-microsoft-365.md). Diese Roadmap umfasst Microsoft Office Clientprodukte, lokale Office Server-Produkte und Microsoft Windows- &ndash; basierte Geräte.
 
 ## <a name="deploy"></a>Bereitstellen
 
@@ -56,12 +56,12 @@ So verwalten Sie Ihre Cloud-Dienste:
 
 ## <a name="how-microsoft-does-cloud-services-for-microsoft-365"></a>Funktionsweise von Microsoft Cloud Services für Microsoft 365
 
-Um zu sehen, wie die IT-Abteilung von Microsoft bereitgestellt wurde oder Microsoft 365 Cloud-Dienste verwaltet:
+Informationen darüber, wie Microsoft IT bereitgestellt wurde oder die Microsoft 365 Cloud-Dienste verwaltet:
 
-1. Wechseln Sie zum [Microsoft IT-Showcase](https://www.microsoft.com/itshowcase).
+1. Wechseln [Sie zu Microsoft IT Showcase](https://www.microsoft.com/itshowcase).
 2. Wählen Sie **Such Inhalt**aus.
-3. Wählen Sie im Abschnitt **Ergebnisse Verfeinern**die Option **IT pro** unter **Benutzergruppe**und den Cloud-Dienst aus, den Sie unter **Produkt**interessiert sind.
+3. Wählen Sie unter **Ergebnisse Verfeinern**die Option **IT pro** unter **Benutzergruppe**aus, und wählen Sie dann unter **Produkt**einen cloudbasierten Dienst aus.
 
 ## <a name="next-step"></a>Nächster Schritt
 
-Starten Sie die Implementierung von Cloud-Diensten mit [Get Ready](configure-services-and-applications.md).
+Starten Sie die Cloud-Dienstimplementierung. Anleitungen finden Sie unter [configure Microsoft 365 Enterprise Services and Applications](configure-services-and-applications.md).

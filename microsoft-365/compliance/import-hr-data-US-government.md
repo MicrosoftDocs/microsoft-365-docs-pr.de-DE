@@ -15,18 +15,18 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Administratoren in der US Government Cloud können einen Daten Konnektor einrichten, um Mitarbeiterdaten aus dem Personal System (HR) Ihrer Organisation nach Microsoft 365 zu importieren. Auf diese Weise können Sie Personaldaten in Richtlinien für das Insider Risikomanagement verwenden, um die Aktivität bestimmter Benutzer zu ermitteln, die eine interne Bedrohung für Ihre Organisation darstellen können.
-ms.openlocfilehash: 2f41426003fcf3b6afe14d24cf7176fa4668ad44
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 30a3730bcb2d4f41df28c47fdb9ab35e9d012540
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289816"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47817165"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government-preview"></a>Einrichten eines Connectors zum Importieren von HR-Daten in US Government (Vorschau)
 
 Sie können einen Daten Konnektor im Microsoft 365 Compliance Center einrichten, um Personalressourcen Daten in ihre US-Regierungsorganisation zu importieren. Zu den Personaldaten gehören das Datum, an dem ein Mitarbeiter seinen Rücktritt eingereicht hat, und das Datum des letzten Tages des Mitarbeiters. Diese HR-Daten können dann von Microsoft Information Protection-Lösungen wie der [Insider Risikomanagement-Lösung](insider-risk-management.md)verwendet werden, um Ihre Organisation vor böswilligen Aktivitäten oder Datendiebstahl in Ihrer Organisation zu schützen. Das Einrichten eines HR-Konnektors besteht darin, eine app in Azure Active Directory zu erstellen, die für die Authentifizierung über Connector verwendet wird, das Erstellen einer CSV-Zuordnungsdateien, die Ihre HR-Daten enthalten, das Erstellen eines datenkonnektors im Compliance Center und das anschließende Ausführen eines Skripts (geplant), das die HR-Daten in der CSV-Datei in die Microsoft-Cloud einnimmt. Anschließend wird der Data Connector vom Insider Risk Management-Tool verwendet, um auf die HR-Daten zuzugreifen, die in Ihre Microsoft 365 US Government-Organisation importiert wurden.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Ihre Organisation muss einwilligen, dass der Office 365-Import Dienst auf Daten in Ihrer Organisation zugreifen kann. Um dieser Anforderung zuzustimmen, gehen Sie zu [dieser Seite](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), melden Sie sich mit den Anmeldeinformationen eines globalen Administrators von Microsoft 365 an, und nehmen Sie dann die Anforderung an. Sie müssen diesen Schritt ausführen, bevor Sie den HR-Connector in Schritt 3 erfolgreich erstellen können.
 
@@ -65,11 +65,11 @@ In der folgenden Tabelle werden die einzelnen Spalten in der CSV-Datei beschrieb
 |**Spaltenname**|**Beschreibung**|
 |:-----|:-----|
 | **EmailAddress** <br/> |Gibt die e-Mail-Adresse des terminierten Mitarbeiters an.|
-| **TerminationDate** <br/> |Gibt das Datum an, an dem die Erwerbstätigkeit der Person in Ihrer Organisation offiziell gekündigt wurde. Dies kann beispielsweise das Datum sein, an dem der Mitarbeiter seine Nachricht über das verlassen Ihrer Organisation mitgeteilt hat. Dieses Datum kann unterschiedlich sein als das Datum des letzten Arbeitstags des Benutzers. Sie müssen das folgende Datumsformat verwenden: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , das ist das [ISO 8601-Format für Datum und Uhrzeit](https://www.iso.org/iso-8601-date-and-time-format.html).|
-|**LastWorkingDate**|Gibt den letzten Tag der Arbeit für den terminierten Mitarbeiter an. Sie müssen das folgende Datumsformat verwenden: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , das ist das [ISO 8601-Format für Datum und Uhrzeit](https://www.iso.org/iso-8601-date-and-time-format.html).|
+| **TerminationDate** <br/> |Gibt das Datum an, an dem die Erwerbstätigkeit der Person in Ihrer Organisation offiziell gekündigt wurde. Dies kann beispielsweise das Datum sein, an dem der Mitarbeiter seine Nachricht über das verlassen Ihrer Organisation mitgeteilt hat. Dieses Datum kann unterschiedlich sein als das Datum des letzten Arbeitstags des Benutzers. Verwenden Sie das folgende Datumsformat: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , also das [ISO 8601-Format für Datum und Uhrzeit](https://www.iso.org/iso-8601-date-and-time-format.html).|
+|**LastWorkingDate**|Gibt den letzten Tag der Arbeit für den terminierten Mitarbeiter an. Verwenden Sie das folgende Datumsformat: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , also das [ISO 8601-Format für Datum und Uhrzeit](https://www.iso.org/iso-8601-date-and-time-format.html).|
 |||
 
-Nachdem Sie die CSV-Datei mit den erforderlichen HR-Daten erstellt haben, speichern Sie Sie auf dem gleichen System wie das Skript, das Sie in Schritt 4 ausführen. Sie sollten auch eine Updatestrategie implementieren, um sicherzustellen, dass die CSV-Datei immer die aktuellsten Informationen enthält, sodass bei jedem Ausführen des Skripts die aktuellsten Mitarbeiter Terminierungsdaten in die Microsoft-Cloud hochgeladen werden.
+Nachdem Sie die CSV-Datei mit den erforderlichen HR-Daten erstellt haben, speichern Sie Sie auf dem gleichen System wie das Skript, das Sie in Schritt 4 ausführen. Stellen Sie sicher, dass Sie eine Updatestrategie implementieren, damit die CSV-Datei immer die aktuellsten Informationen enthält. Dadurch wird sichergestellt, dass unabhängig von der Ausführung des Skripts die aktuellsten Mitarbeiter Terminierungsdaten in die Microsoft-Cloud hochgeladen werden.
 
 ## <a name="step-3-create-the-hr-connector"></a>Schritt 3: Erstellen des HR-Connectors
 
@@ -139,11 +139,11 @@ Der letzte Schritt beim Einrichten eines HR-Konnektors besteht darin, ein Beispi
 
    |**Parameter**|**Beschreibung**
    |:-----|:-----|:-----|
-   |`tenantId`|Dies ist die ID für Ihre Microsoft 365-Organisation, die Sie in Schritt 1 erhalten haben. Sie können die Mandanten-ID für Ihre Organisation auch auf dem Blatt " **Übersicht** " im Azure AD Admin Center abrufen. Dies wird verwendet, um Ihre Organisation zu identifizieren.|
-   |`appId` |Dies ist die Azure AD Anwendungs-ID für die APP, die Sie in Azure AD in Schritt 1 erstellt haben. Dies wird von Azure AD für die Authentifizierung verwendet, wenn das Skript versucht, auf Ihre Microsoft 365-Organisation zuzugreifen. |
-   |`appSecret`|Dies ist der Azure AD geheime Anwendungsschlüssel für die APP, die Sie in Azure AD in Schritt 1 erstellt haben. Dies wird auch für die Authentifizierung verwendet.|
-   |`jobId`|Dies ist die Auftrags-ID für den HR-Konnektor, den Sie in Schritt 3 erstellt haben. Dies wird verwendet, um die HR-Daten, die in die Microsoft-Cloud hochgeladen werden, mit dem HR-Connector zuzuordnen.|
-   |`csvFilePath`|Dies ist der Dateipfad für die CSV-Datei (gespeichert auf dem gleichen System wie das Skript), die Sie in Schritt 2 erstellt haben. Versuchen Sie, Leerzeichen im Dateipfad zu vermeiden; Verwenden Sie andernfalls einfache Anführungszeichen.|
+   |`tenantId`|Die ID für Ihre Microsoft 365-Organisation, die Sie in Schritt 1 erhalten haben. Sie können die Mandanten-ID für Ihre Organisation auch auf dem Blatt " **Übersicht** " im Azure AD Admin Center abrufen. Dies wird verwendet, um Ihre Organisation zu identifizieren.|
+   |`appId` |Die Azure AD Anwendungs-ID für die APP, die Sie in Azure AD in Schritt 1 erstellt haben. Dies wird von Azure AD für die Authentifizierung verwendet, wenn das Skript versucht, auf Ihre Microsoft 365-Organisation zuzugreifen. |
+   |`appSecret`|Der geheime Azure AD Anwendungsschlüssel für die APP, die Sie in Azure AD in Schritt 1 erstellt haben. Dies wird auch für die Authentifizierung verwendet.|
+   |`jobId`|Die Auftrags-ID für den HR-Konnektor, den Sie in Schritt 3 erstellt haben. Dies wird verwendet, um die HR-Daten, die in die Microsoft-Cloud hochgeladen werden, mit dem HR-Connector zuzuordnen.|
+   |`csvFilePath`|Der Dateipfad für die CSV-Datei (auf dem gleichen System wie das Skript gespeichert), die Sie in Schritt 2 erstellt haben. Versuchen Sie, Leerzeichen im Dateipfad zu vermeiden; Verwenden Sie andernfalls einfache Anführungszeichen.|
    |||
    
    Im folgenden finden Sie ein Beispiel für die Syntax für das HR-Connector-Skript mit Istwerten für jeden Parameter:
