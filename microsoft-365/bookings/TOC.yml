@@ -32,7 +32,7 @@
     - name: Abrufen der App "Buchungen"
       href: get-bookings-app.md
     - name: Reservierungen-APP und virtuelle Besuche in Microsoft Teams
-      href: 'https://docs.microsoft.com/en-us/microsoftteams/bookings-app-admin?toc=/microsoft-365/bookings/toc.json&bc=/microsoft-365/bookings/breadcrumb/toc.json'
+      href: 'https://docs.microsoft.com/microsoftteams/bookings-app-admin?toc=/microsoft-365/bookings/toc.json&bc=/microsoft-365/bookings/breadcrumb/toc.json'
     - name: Vergleichsdiagramm-webapp versus Microsoft Teams-App
       href: comparison-chart.md
     - name: Löschen eines Buchungs Kalenders
