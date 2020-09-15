@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Fügen Sie Ihre Domäne zu Microsoft 365 im Microsoft 365 Admin Center hinzu, indem Sie einen DNS-Eintrag auf Ihrem DNS-Host hinzufügen. Der Setup-Assistent führt Sie nun durch den Vorgang.
-ms.openlocfilehash: 3da99644f339eac2db6f1904e4eb50a7f584bc80
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: a9a0c12d5207db210b4a08ce58abeb44270c8506
+ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315717"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47775159"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Hinzufügen einer Domäne zu Microsoft 365
 
@@ -83,34 +83,26 @@ ms.locfileid: "47315717"
     
 5. Wählen Sie aus, wie Sie überprüfen möchten, ob Sie die Domäne besitzen.
     
-    1. Wenn Ihre Domänenregistrierungsstelle die [Domäne Connect](#domain-connect-registrars-integrating-with-microsoft-365)verwendet, wählen Sie weiter **Anmelden**aus,  >  **Next** und Microsoft [wird Ihre Einträge automatisch einrichten](../get-help-with-domains/domain-connect.md).
+    1. Wenn Ihre Domänenregistrierungsstelle die [Domäne Connect](#domain-connect-registrars-integrating-with-microsoft-365)verwendet, [richtet Microsoft Ihre Datensätze automatisch](../get-help-with-domains/domain-connect.md) ein, indem Sie sich bei Ihrer Registrierungsstelle anmelden und die Verbindung mit Microsoft 365 bestätigen. Sie werden an das Admin Center zurückgegeben, und Microsoft prüft dann automatisch Ihre Domäne.
+    2. Sie können einen TXT-Eintrag zur Überprüfung Ihrer Domäne verwenden. Wählen Sie dies und dann **Weiter** aus, um Anleitungen dazu anzuzeigen, wie Sie diesen DNS-Eintrag zur Website Ihrer Registrierungsstelle hinzufügen. Nachdem Sie den Eintrag hinzugefügt haben, kann die Überprüfung bis zu 30 Minuten dauern. 
+    3. Sie können der Website Ihrer Domäne eine Textdatei hinzufügen. Wählen Sie aus, und laden Sie die Datei. txt aus dem Setup-Assistenten, und laden Sie die Datei dann in den Ordner auf oberster Ebene Ihrer Website hoch. Der Pfad zur Datei sollte wie folgt aussehen: `http://mydomain.com/ms39978200.txt` . Wir bestätigen, dass Sie die Domäne besitzen, indem Sie die Datei auf Ihrer Website suchen.
     
-    2. Sie können auch eine E-Mail mit einem Prüfcode an den registrierten Kontakt für die Domäne senden lassen. Wenn Sie diese E-Mail nicht erkennen oder keinen Zugriff darauf haben, können Sie die dritte Option verwenden.
+6. Wählen Sie aus, wie Sie die DNS-Änderungen vornehmen möchten, die Microsoft für die Verwendung Ihrer Domäne benötigt.
     
-    3. Sie können einen TXT-Eintrag zur Überprüfung Ihrer Domäne verwenden. Wählen Sie dies und dann **Weiter** aus, um Anleitungen dazu anzuzeigen, wie Sie diesen DNS-Eintrag zur Website Ihrer Registrierungsstelle hinzufügen. Nachdem Sie den Eintrag hinzugefügt haben, kann die Überprüfung bis zu 30 Minuten dauern. 
-
-    4. Sie können der Website Ihrer Domäne eine Textdatei hinzufügen. Wählen Sie aus, und laden Sie die Datei. txt aus dem Setup-Assistenten, und laden Sie die Datei dann in den Ordner auf oberster Ebene Ihrer Website hoch. Der Pfad zur Datei sollte wie folgt aussehen: `http://mydomain.com/ms39978200.txt` . Wir bestätigen, dass Sie die Domäne besitzen, indem Sie die Datei auf Ihrer Website suchen.
-    
-6. Wählen Sie aus, wie Sie die erforderlichen DNS-Änderungen vornehmen möchten, damit Office Ihre Domäne verwenden kann.
-    
-    1. Wählen Sie **DNS-Einträge für mich hinzufügen** aus, wenn Office Ihr DNS automatisch konfigurieren soll. 
-    
-  
+    1. Wählen Sie **Hinzufügen der DNS-Einträge für mich** aus, wenn Ihre Registrierungsstelle die [Domäne Connect](#domain-connect-registrars-integrating-with-microsoft-365)unterstützt, und Microsoft [wird Ihre Datensätze automatisch einrichten](../get-help-with-domains/domain-connect.md) , indem Sie sich bei Ihrer Registrierungsstelle anmelden und die Verbindung mit Microsoft 365 bestätigen.
     2. Wählen Sie **Ich werde die DNS-Einträge selbst hinzufügen** , wenn Sie nur bestimmte Microsoft 365-Dienste an Ihre Domäne anfügen möchten oder wenn Sie diese für jetzt überspringen möchten und dies später tun möchten. **Wählen Sie diese Option aus, wenn Sie genau wissen, was Sie tun.**
-    
-7. Wenn Sie ausgewählt haben, dass Sie *DNS-Einträge selbst hinzufügen* möchten, wählen Sie **Weiter** aus. Anschließend wird eine Seite mit allen Einträgen angezeigt, die Sie zur Website Ihrer Registrierungsstelle hinzufügen müssen, um Ihre Domäne einzurichten. 
-    
-  
-  
+
+7. Wenn Sie *selbst DNS-Einträge hinzugefügt*  haben, wählen Sie **weiter** aus, und es wird eine Seite mit allen Datensätzen angezeigt, die Sie Ihrer Registrierungsstellen Website hinzufügen müssen, um Ihre Domäne einzurichten. 
+
     Wenn das Portal Ihre Registrierungsstelle nicht erkennt, können Sie [diesen allgemeinen Anleitungen folgen](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
     
     Suchen Sie in der Liste der [hostspezifischen Anweisungen](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions) Ihren Host, und führen Sie die Schritte zum Hinzufügen aller benötigten Datensätze aus. 
     
     Wenn Sie den DNS-Hostinganbieter oder die Domänenregistrierungsstelle für Ihre Domäne nicht kennen, lesen Sie [Finden Ihrer Domänenregistrierungsstelle oder Ihres DNS-Hostinganbieters](../get-help-with-domains/find-your-domain-registrar.md).
     
-    Wenn Sie auf einen späteren Zeitpunkt warten möchten, scrollen Sie bis ans Ende, und wählen Sie **Diesen Schritt überspringen** aus.
+    Wenn Sie später warten möchten, deaktivieren Sie entweder alle Dienste, und klicken Sie auf **weiter**, oder wählen Sie im Abschnitt vorherige Domäne-Verbindung **Weitere Optionen** aus, und wählen Sie **diese Option jetzt überspringen**aus.
     
-8. Wählen Sie **Fertig stellen** aus. Sie haben es geschafft! 
+8. Wählen Sie **Fertig stellen** aus. Sie haben es geschafft!
 
 ## <a name="add-or-edit-custom-dns-records"></a>Hinzufügen oder Bearbeiten von benutzerdefinierten DNS-Einträgen
 
@@ -140,15 +132,16 @@ Im Assistenten bestätigen wir lediglich, dass Sie die Domäne besitzen und dann
 ### <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>Domänen Verbindungs Registrierungsstellen, die in Microsoft 365 integriert sind
 
 - [1 &amp; 1 Ionos](https://www.1and1.com/)
-- [123reg wußte](https://www.123-reg.co.uk/)
+- [EuroDNS](https://www.eurodns.com/)
 - [Cloudflare](https://www.cloudflare.com/)
 - [GoDaddy](https://www.godaddy.com/)
 - [WordPress](https://wordpress.com/)
 - [Plesk](https://www.plesk.com/)
 - [MediaTemple](https://mediatemple.net/)
 - SecureServer oder WildWestDomains (GoDaddy Reseller mit SecureServer DNS-Hosting)
-    - [Maddog-Domänen](https://www.maddogdomains.com/)
-    - [CheapNames](https://www.cheapnames.com)
+    - Beispiele:
+        - [DomainsPricedRight](https://www.domainspricedright.com/products/domain-registration)
+        - [DomainRightNow](https://www.domainrightnow.com/)
 
 ### <a name="what-happens-to-my-email-and-website"></a>Was geschieht mit meiner e-Mail und Website?
 

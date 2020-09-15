@@ -13,20 +13,20 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Die Roadmap zum Einrichten Ihrer Mandanten für Microsoft 365.
-ms.openlocfilehash: 540d1bc53ac06b85d22a8a60a62e51761e10339c
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: 7834e8b7f9ff8a1b33f2f2a7ccc4a499e4da7c69
+ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315753"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47775147"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Mandanten-Roadmap für Microsoft 365
 
-Ihr Microsoft 365-Mandant ist die Gruppe von Diensten, die Ihrer Organisation zugewiesen sind. Dieser Mandant ist normalerweise mit einem oder mehreren Ihrer DNS-Domänennamen verknüpft und fungiert als zentraler Container für unterschiedliche Abonnements und die Lizenzen, die Sie Benutzerkonten zuweisen. 
+Ihr Microsoft 365-Mandant ist die Gruppe von Diensten, die Ihrer Organisation zugewiesen sind. Normalerweise ist dieser Mandant einem oder mehreren Ihrer DNS-Domänennamen zugeordnet und fungiert als zentraler Container für unterschiedliche Abonnements und die darin enthaltenen Lizenzen, die Sie Benutzerkonten zuweisen.
 
 Wenn Sie einen Microsoft 365-Mandanten erstellen, weisen Sie ihn einem bestimmten geografischen Standort zu. Sie können auch einen Mandanten mit mehreren geografischen Standorten haben und den Mandanten von einem Standort an einen anderen Speicherort verlagern.
 
-Eine gut geplante und ausgeführte Mandanten Konfiguration ist für die Vorbereitung auf die grundlegenden Dienste von Netzwerk und Identität entscheidend.
+Um ihren Mandanten für die grundlegenden Dienste von Netzwerk und Identität vorzubereiten, ist es wichtig, die Mandanten Konfiguration sorgfältig zu planen und auszuführen.
 
 ## <a name="plan"></a>Plan
 
@@ -50,13 +50,13 @@ Um ihren Mandanten bereitzustellen, [fügen Sie die DNS-Domänen](https://docs.m
 
 Mit Microsoft 365 Multi-Geo kann Ihr Unternehmen seine Microsoft 365-Präsenz auf mehrere geografische Regionen und/oder Länder innerhalb des vorhandenen Mandanten erweitern.
 
-[Beginnen Sie](microsoft-365-multi-geo.md) mit dem Verständnis, der Planung, der Konfiguration und der Verwaltung von Microsoft 365 Multi-Geo.
+Informationen zu Microsoft 365 Multi-Geo, einschließlich der Planung, Konfiguration und Verwaltung, finden Sie [hier](microsoft-365-multi-geo.md).
 
 ## <a name="move-a-tenants-geographic-locations"></a>Migrieren der geografischen Standorte eines Mandanten
 
 Microsoft öffnet weiterhin die neuen geografischen Standorte für das Rechenzentrum (GEOS) für Microsoft 365-Dienste. In diesem neuen Datencenter-GEOS wird Kapazität hinzugefügt und Ressourcen zur Unterstützung von Kundenanforderungen und Nutzungs Wachstum berechnet. Darüber hinaus bieten die neuen Rechenzentrumsregionen die Aufbewahrung von Kundenkerndaten innerhalb der Geografie.
 
-Beginnen Sie mit dem Verständnis und der Anforderung einer Geo-Datenverschiebung mit [Verschiebung der Kern Daten in das neue Microsoft 365 Datacenter Geo](moving-data-to-new-datacenter-geos.md).
+Informationen zu Microsoft 365 Datacenter Geo, einschließlich der Vorgehensweise zum Anfordern einer Geo-Datenverlagerung, [finden Sie hier](moving-data-to-new-datacenter-geos.md).
 
 ## <a name="next-step"></a>Nächster Schritt
 
