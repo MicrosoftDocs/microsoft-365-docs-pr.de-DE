@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie Näheres über Aufbewahrungsrichtlinien, die für Microsoft Teams gelten.
-ms.openlocfilehash: cc0d422220d4f3c2ca667a4f0076eb9e62d90518
-ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
+ms.openlocfilehash: 04ca027b9ce8ad1b36e0d4e60c4e10308a822a63
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47394692"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816738"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Informationen zur Aufbewahrung für Microsoft Teams
 
@@ -100,10 +100,6 @@ Wenn der Benutzer Dateien in Teams gespeichert hat, lesen Sie den Abschnitt [Äq
 ## <a name="limitations"></a>Einschränkungen
 
 Wir arbeiten kontinuierlich an der Verbesserung der Aufbewahrungsfunktionen in Microsoft Teams. Es gibt einige Einschränkungen, die Sie beachten sollten, wenn Sie die Aufbewahrung von Nachrichten und Chats für Teams-Kanäle verwenden:
-
-- **Microsoft Teams ist nicht in einer organisationsweiten Richtlinie eingeschlossen**. Wenn Sie eine organisationsweite Richtlinie erstellen, sind Teams-Kanal-Nachrichten und Teams-Chats nicht enthalten, da diese eine separate Aufbewahrungsrichtlinie erfordern.
-
-- **Microsoft Teams unterstützt nicht die erweiterte Archivierung**. Wenn Sie beim Erstellen einer Aufbewahrungsrichtlinie die [erweiterten Einstellungen zum Ermitteln von Inhalten, die bestimmte Bedingungen erfüllen](create-retention-policies.md#advanced-settings-to-identify-content-that-meets-specific-conditions), auswählen, sind die Microsoft Teams-Speicherorte nicht verfügbar. Die Aufbewahrung in Teams gilt für alle Chat- und Kanalnachrichteninhalte, wenn Sie diese Standorte auswählen.
 
 - **Wenn Sie eine Aufbewahrungsrichtlinie für Microsoft Teams-Kanalnachrichten konfigurieren, werden Microsoft Teams-Nachrichten in privaten Kanälen nicht einbezogen**. Zurzeit werden private Kanäle von Aufbewahrungsrichtlinien nicht unterstützt. 
 
