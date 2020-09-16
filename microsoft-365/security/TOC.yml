@@ -7,21 +7,6 @@
           href: top-security-tasks-for-remote-work.md
         - name: Microsoft 365 Security für geschäftliche Entscheidungsträger
           href: Microsoft-365-security-for-bdm.md
-        - name: Chief Information Security Officer (CISO) – Workshop-Schulung
-          href: ./office-365-security/ciso-workshop.md
-          items:
-            - name: 'Modul 1: Microsoft Internetsicherheit-Briefing'
-              href: ./office-365-security/ciso-workshop-module-1.md
-            - name: 'Modul 2: Security Management'
-              href: ./office-365-security/ciso-workshop-module-2.md
-            - name: Modul 3 – Identität und Zugriff für nicht vertrauenswürdige Benutzer
-              href: ./office-365-security/ciso-workshop-module-3.md
-            - name: 'Modul 4a: Bedrohungsschutzstrategie, Teil I'
-              href: ./office-365-security/ciso-workshop-module-4a.md
-            - name: 'Modul 4b: Bedrohungsschutzstrategie, Teil II'
-              href: ./office-365-security/ciso-workshop-module-4b.md
-            - name: 'Modul 5: Information Protection'
-              href: ./office-365-security/ciso-workshop-module-5.md
     - name: Konfigurationen für den Identitäts- und Gerätezugriff
       href: ../enterprise/microsoft-365-policies-configurations.md
       items:
@@ -87,7 +72,7 @@
               href: mtp/generate-test-alert.md
         - name: Schrittanleitungen
           items:
-            - name: Erstellen einer Testlaborumgebung
+            - name: Erstellen einer Testlabor- oder Pilotumgebung
               href: mtp/mtp-evaluation.md
             - name: Bereitstellen unterstützter Dienste
               href: mtp/deploy-supported-services.md
@@ -219,22 +204,62 @@
                   href: mtp/monitor-devices.md
                 - name: App-Überwachung und Berichterstellung
                   href: mtp/monitor-apps.md
+            - name: APIs
+              items: null
+        - name: Referenz
+          items:
             - name: Berechtigungen und Einstellungen
               items:
                 - name: Zugriff verwalten
                   href: mtp/mtp-permissions.md
                 - name: Festlegen der Zeitzone
                   href: mtp/mtp-time-zone.md
-            - name: Anzeigen von Geräteprofilen
-              href: mtp/device-profile.md
-            - name: Feedback geben
-              href: mtp/feedback.md
-            - name: Erstellen von ServiceNow-Tickets und -Aufgaben
+                - name: Anzeigen von Geräteprofilen
+                  href: mtp/device-profile.md
+                - name: Feedback geben
+                  href: mtp/feedback.md
+                - name: Erstellen von ServiceNow-Tickets und -Aufgaben
+                  items:
+                    - name: Übersicht über die ServiceNow-Integration
+                      href: ./mtp/tickets.md
+                    - name: ServiceNow-Tickets im Sicherheitscenter
+                      href: ./mtp/tickets-security-center.md
+            - name: Microsoft Threat Protection-APIs (Vorschau)
               items:
-                - name: Übersicht über die ServiceNow-Integration
-                  href: ./mtp/tickets.md
-                - name: ServiceNow-Tickets im Sicherheitscenter
-                  href: ./mtp/tickets-security-center.md
+                - name: Übersicht über Microsoft Threat Protection-APIs (Vorschau)
+                  href: mtp/api-overview.md
+                - name: Erste Schritte mit Microsoft Threat Protection-APIs (Vorschau)
+                  items:
+                    - name: Microsoft Threat Protection API-Lizenz und Nutzungsbedingungen
+                      href: mtp/api-terms.md
+                    - name: Zugriff auf Microsoft Threat Protection-APIs
+                      href: mtp/api-access.md
+                    - name: Beispiel für Hello World
+                      href: mtp/api-hello-world.md
+                    - name: Zugriff mit Anwendungskontext
+                      href: mtp/api-create-app-web.md
+                    - name: Zugriff mit Benutzerkontext
+                      href: mtp/api-create-app-user-context.md
+                    - name: Zugriff mit Partneranwendungen
+                      href: mtp/api-partner-access.md
+                    - name: Andere API-Ressourcen
+                      href: mtp/api-articles.md
+                - name: Microsoft Threat Protection-APIs und Schema (Vorschau)
+                  items:
+                    - name: Unterstützte Microsoft Threat Protection-APIs
+                      href: mtp/api-supported.md
+                    - name: Häufige Rest-API-Fehlercodes
+                      href: mtp/api-error-codes.md
+                    - name: Erweiterte Suche-API
+                      href: mtp/api-advanced-hunting.md
+                    - name: Vorfall-APIs
+                      items:
+                        - name: Vorfall-Methoden und Eigenschaften
+                          href: mtp/api-incident.md
+                        - name: Auflisten von Vorfällen
+                          href: mtp/api-list-incidents.md
+                        - name: Aktualisieren von Vorfällen
+                          href: mtp/api-update-incidents.md
     - name: Sicherheit in Office 365
       items:
         - name: Erste Schritte

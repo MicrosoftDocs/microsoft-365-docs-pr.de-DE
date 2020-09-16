@@ -1,5 +1,5 @@
 
-|**Geografischer Standort**             |**Code**|**eDiscovery Datenspeicherort**      |
+|  Geografischer Standort               |  Code  |  eDiscovery Datenspeicherort        |
 |:----------------------------|:-------|:---------------------------------|
 |Asien-Pazifik                 |APC     |Rechenzentren in Südost- oder Ostasien|
 |Australien                    |AUS     |Rechenzentren in Südost- oder Ostasien|

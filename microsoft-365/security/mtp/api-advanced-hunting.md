@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 92d5d2840963ae00ae0f03e3359f287371f770ee
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: 9e92a0328d2e7fb9cfe7461241dd866081926876
+ms.sourcegitcommit: 62a8c226422eac9c085cc886b4836b037f95ef6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650342"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47825374"
 ---
 # <a name="advanced-hunting-apis"></a>Erweiterte Jagd-APIs
 
@@ -37,8 +37,10 @@ ms.locfileid: "47650342"
 ## <a name="limitations"></a>Einschränkungen
 1. Sie können nur eine Abfrage für Daten der letzten 30 Tage ausführen.
 2. Die Ergebnisse umfassen maximal 100.000 Zeilen.
-3. Die Anzahl der Ausführungen ist pro Mandanten limitiert: bis zu 15 Anrufe pro Minute, 15 Minuten Spielzeit stündlich und 4 Stunden Spielzeit pro Tag.
+3. Die Anzahl der Ausführungen ist pro Mandanten limitiert: bis zu 10 Anrufe pro Minute, 10 Minuten Spielzeit stündlich und 4 Stunden Spielzeit pro Tag.
 4. Die maximale Ausführungszeit einer einzelnen Anforderung beträgt 10 Minuten.
+5. 429 Antwort stellt eine erreichende Kontingentgrenze nach der Anzahl der Anforderungen oder der CPU dar. Der 429-Antworttext gibt auch die Zeit an, bis das Kontingent erneuert wird. 
+
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [zugreifen auf die Microsoft Threat Protection-APIs](api-access.md) .
