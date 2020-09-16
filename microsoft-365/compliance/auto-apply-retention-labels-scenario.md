@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Die Verwendung von Aufbewahrungsbezeichnungen zur Verwaltung des Lebenszyklus von Dokumenten in SharePoint, mithilfe von Metadaten zur Klassifizierung von Inhalten, automatisch angewendeten Beschriftungen und ereignisbasierter Aufbewahrung zum Start der Aufbewahrungsdauer.
-ms.openlocfilehash: d02c8102dc53f455c5e0620acf1f8a9a7529bf08
-ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
+ms.openlocfilehash: 321043a8a33d274ed9e7caecfb167b9587ceae1d
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47336690"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47817222"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>Verwenden von Aufbewahrungsbezeichnungen zur Verwaltung des Lebenszyklus von in SharePoint gespeicherten Dokumenten
 
@@ -99,17 +99,17 @@ Hier ist der [Aktenplan](file-plan-manager.md) für die Aufbewahrungsbezeichnung
 
 - **Name:** Produktspezifikation
 
-- **Beschreibung für Administratoren:** 5 Jahre nach Einstellung der Produktion aufbewahren, automatische Löschung, ereignisbasierte Aufbewahrung, Ereignistyp ist *Einstellung des Produkts*.
+- **Beschreibung für Benutzer:** für 5 Jahre nach Produktionsstopp aufbewahren.
 
-- **Beschreibung für Nutzer:** für 5 Jahre nach Produktionsstopp aufbewahren.
+- **Beschreibung für Administratoren:** 5 Jahre nach Einstellung der Produktion aufbewahren, automatische Löschung, ereignisbasierte Aufbewahrung, Ereignistyp ist *Einstellung des Produkts*.
 
 - **Aufbewahrungsaktion:** Aufbewahren und löschen.
 
 - **Aufbewahrungsdauer:** 5 Jahre (1.825 Tage).
 
-- **Datensatzbezeichnung**: Konfigurieren Sie die Aufbewahrungsbezeichnung, um Inhalte als [Datensatz](records-management.md#records) zu kennzeichnen. (Dokumente, die als *Datensatz* klassifiziert sind, können von Benutzern nicht geändert oder gelöscht werden.)
+- ** Datensatzbezeichnung**: Konfigurieren Sie die Aufbewahrungsbezeichnung so, dass Elemente als [Datensatz](records-management.md#records) gekennzeichnet werden. Das bedeutet, dass die mit der Bezeichnung versehenen Dokumente dann nicht mehr von Benutzern geändert oder gelöscht werden können.
 
-- **Dateiplandeskriptoren:** (Zur Vereinfachung des Szenarios werden keine Dateideskriptoren bereitgestellt)
+- **Dateiplandeskriptoren:** Zur Vereinfachung des Szenarios werden keine optionalen Dateideskriptoren bereitgestellt.
 
 Der folgende Screenshot zeigt die Einstellungen, wenn Sie die Aufbewahrungsbezeichnung der Produktspezifikation im Microsoft 365 Compliance-Center erstellen. Sie können den Ereignistyp der *Einstellung des Produkts* erstellen, wenn Sie die Aufbewahrungsbezeichnung erstellen. Informationen hierzu finden Sie in dem im folgenden Abschnitt dargestellten Verfahren.
 
@@ -120,34 +120,30 @@ Der folgende Screenshot zeigt die Einstellungen, wenn Sie die Aufbewahrungsbezei
 
 ### <a name="create-an-event-type-when-you-create-a-retention-label"></a>Erstellen Sie einen Ereignistyp, wenn Sie eine Aufbewahrungsbezeichnung erstellen
 
-1. Wählen Sie aus der Dropdownliste **Inhalte basierend auf aufbewahren oder löschen**, wählen Sie**ein Ereignis** aus.
-
-2. Klicken Sie auf **Ereignistyp auswählen**.
+1. Wählen Sie auf der Seite **Aufbewahrungseinstellungen definieren** des Assistenten zum Erstellen von Aufbewahrungsbezeichnungen nach **Aufbewahrungszeitraum starten basierend auf** die Option **Neuen Ereignistyp erstellen** aus:
     
     ![Erstellen Sie einen neuen Ereignistyp für das Dialogfeld „Bezeichnung der Produktspezifikation“](../media/SPRetention6.png)
 
-3. Wählen Sie **Ereignistyp auswählen** und wählen Sie dann **Neue Ereignistypen erstellen** auf der Seite **Ereignistyp auswählen** aus.
+3. Geben Sie auf der Seite **Ereignistyp benennen** den Namen für den Ereignistyp **Produkteinstellung** und eine optionale Beschreibung ein. Wählen Sie dann **Weiter**, **Senden** und **Fertig** aus.
 
-4. Erstellen Sie einen Ereignistyp namens ***Einstellung des Produkts***, geben Sie eine Beschreibung ein, und klicken Sie auf **Ende**.
-
-5. Wählen Sie auf der Seite **Ereignistyp auswählen** den Ereignistyp **Einstellung des Produkts** aus, den Sie erstellt haben, und klicken Sie dann auf **Hinzufügen**.
-
-   So sehen die Einstellungen für die Aufbewahrungsbezeichnung der Produktspezifikation aus. 
-
+4. Zurück auf der Seite **Aufbewahrungseinstellungen definieren** wählen Sie aus der Dropdownliste für **Aufbewahrungszeitraum starten basierend auf** den erstellten Ereignistyp **Produkteinstellung** aus.
+    
+    So sehen die Einstellungen für die Aufbewahrungsbezeichnung der Produktspezifikation aus: 
+    
    ![Einstellungen für die neue Bezeichnung „Produktspezifikation“](../media/SPRetention7.png)
 
-6. **Diese Bezeichnung erstellen** auswählen. 
+6. Wählen Sie **Bezeichnung erstellen** aus. Wenn die Optionen zum Veröffentlichen der Bezeichnung auf der nächsten Seite angezeigt werden, können Sie die Bezeichnung entweder automatisch anwenden oder einfach nur speichern: Wählen Sie **Bezeichnung vorerst nur speichern** und dann **Fertig** aus. 
+    
+    > [!TIP]
+    > Ausführlichere Schritte finden Sie unter[Erstellen einer Bezeichnung, deren Aufbewahrungsdauer auf einem Ereignis basiert](event-driven-retention.md#step-1-create-a-label-whose-retention-period-is-based-on-an-event).
 
-   > [!TIP]
-   > Ausführlichere Schritte finden Sie unter[Erstellen einer Bezeichnung, deren Aufbewahrungsdauer auf einem Ereignis basiert](event-driven-retention.md#step-1-create-a-label-whose-retention-period-is-based-on-an-event).
+Nun wird gezeigt, wie die Aufbewahrungsbezeichnung automatisch auf den Inhalt der Produktspezifikation angewendet wird.
 
-Nun wird die Aufbewahrungsbezeichnung automatisch auf den Inhalt der Produktspezifikation angewendet.
-
-## <a name="auto-apply-retention-labels-to-classify-content"></a>Automatisches Anwenden von Aufbewahrungsbezeichnungen, um Inhalte zu klassifizieren
+## <a name="auto-apply-retention-labels-to-documents"></a>Automatisch auf Dokumente angewendete Aufbewahrungsbezeichnungen
 
 Wir werden KQL (Keyword Query Language) verwenden, um die Aufbewahrungsbezeichnungen, die wir erstellt haben, [automatisch anzuwenden](apply-retention-labels-automatically.md). KQL ist die Sprache, die verwendet wird, um Suchanfragen zu erstellen. In KQL können Sie mithilfe von Schlüsselwörtern oder verwalteten Eigenschaften suchen. Ausführlichere Informationen finden Sie in der [KQL-Syntaxreferenz (Keyword Query Language)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
-Im Grunde möchten wir Microsoft 365 mitteilen, „die Aufbewahrungsbezeichnung der *Produktspezifikation* auf alle Dokumente anzuwenden, die über den **Status** ***Endgültig*** verfügen und den **Dokumententypen** ***Produktspezifikation*** besitzen“. Erinnern Sie sich daran, dass **Status** und **Dokumenttyp** die Sitespalten sind, die Sie für den Inhaltstyp "Produktdokumentation" im Abschnitt [Informationsarchitektur](#information-architecture) definiert haben. Um dies zu tun, müssen wir das Suchschema konfigurieren.
+Im Grunde möchten wir Microsoft 365 mitteilen, „die Aufbewahrungsbezeichnung der **Produktspezifikation** auf alle Dokumente anzuwenden, die über den **Status** **Endgültig** verfügen und den **Dokumententypen** **Produktspezifikation** besitzen“. Erinnern Sie sich daran, dass **Status** und **Dokumenttyp** die Sitespalten sind, die Sie für den Inhaltstyp "Produktdokumentation" im Abschnitt [Informationsarchitektur](#information-architecture) definiert haben. Um dies zu tun, müssen wir das Suchschema konfigurieren.
 
 Wenn SharePoint Inhalte indiziert, werden automatisch gecrawlte Eigenschaften für jede Sitespalte generiert. In diesem Szenario interessieren uns die Eigenschaften **Dokumenttyp** und **Status**. Wir benötigen Dokumente in der Bibliothek mit dem richtigen Inhaltstyp und ausgefüllten Sitespalten, damit bei der Suche die durchforsteten Eigenschaften erstellt werden können.
 
@@ -217,47 +213,47 @@ Geben Sie nun im Suchfeld **RefinableString00:"Product Specification" AND Refina
 
 ### <a name="create-auto-apply-label-policies"></a>Erstellen Sie Bezeichnungsrichtlinien für die automatische Anwendung
 
-Nachdem wir überprüft haben, dass die KQL-Abfrage funktioniert, erstellen wir eine Bezeichnungsrichtlinie, die eine KQL-Abfrage verwendet, um die Produktspezifikations-Aufbewahrungsbezeichnung automatisch auf die entsprechenden Dokumente anzuwenden.
+Nachdem wir überprüft haben, dass die KQL-Abfrage funktioniert, erstellen wir eine Bezeichnungsrichtlinie für die automatische Anwendung, die eine KQL-Abfrage verwendet, um die Aufbewahrungsbezeichnung „Produktspezifikation“ automatisch auf die entsprechenden Dokumente anzuwenden.
 
 1. Wechseln Sie im [Compliance Center](https://compliance.microsoft.com/homepage)zu **Datensatzverwaltung** > **Bezeichnungsrichtlinien** > **Automatisch eine Bezeichnung anwenden**.
 
    [ ![Auswählen der Option „Bezeichnung automatisch anwenden“ auf der Bezeichnungsseite](../media/SPRetention16.png) ](../media/SPRetention16.png#lightbox)
 
-2. Klicken Sie auf der Assistenten-Seite **Automatisch anzuwendende Bezeichnung auswählen** auf **Automatisch anzuwendende Bezeichnung auswählen**.
+2. Geben Sie im Assistenten zum Erstellen einer automatischen Bezeichnungsrichtlinie auf der Seite **Richtlinie für die automatische Bezeichnung benennen** einen Namen wie z. B. **Bezeichnung „Produktspezifikation“ automatisch anwenden** und eine optionale Beschreibung ein. Wählen Sie dann **Weiter** aus.
 
-3. Wählen Sie aus der Liste der Bezeichnungen **Produktspezifikation** aus. Wählen Sie dann **Hinzufügen** und **Weiter** aus.
-
-4. Wählen Sie **Bezeichnung auf Inhalt anwenden, der bestimmte Wörter oder Ausdrücke enthält** aus, und klicken Sie dann auf **Weiter**.
-
+3. Wählen Sie auf der Seite **Inhaltstyp auswählen, auf den diese Bezeichnung angewendet werden soll**, dann **Bezeichnung auf Inhalt anwenden, der bestimmte Wörter oder Ausdrücke oder Eigenschaften enthält** und schließlich **Weiter** aus.
+    
    [ ![Auswählen der Option „Bezeichnung auf Inhalt anwenden, der bestimmte Wörter oder Ausdrücke enthält“](../media/SPRetention17.png) ](../media/SPRetention17.png#lightbox)
+    
+   Mit dieser Option können Sie dieselbe KQL-Suchabfrage bereitstellen, die wir im vorherigen Abschnitt getestet haben. Die Abfrage gibt alle Produktspezifikationsdokumente zurück, die den Status *Endgültig* haben. Wenn wir dieselbe Abfrage in der Bezeichnungsrichtlinie für die automatische Anwendung verwenden, wird die Aufbewahrungsbezeichnung der Produktspezifikation automatisch auf alle Dokumente angewendet, die ihr entsprechen.
 
-   Im nächsten Schritt stellen Sie dieselbe KQL-Suchabfrage bereit, die wir im vorherigen Abschnitt getestet haben. Diese Abfrage gibt alle Produktspezifikationsdokumente zurück, die den Status *Endgültig* haben. Wenn wir dieselbe Abfrage in der Bezeichnungsrichtlinie verwenden, wird die Aufbewahrungsbezeichnung der Produktspezifikation automatisch auf alle Dokumente angewendet, die ihr entsprechen.
-
-5. Geben Sie im Feld **Schlüsselwortabfrage-Editor** ***RefinableString00:"Product Specification" AND RefinableString01:Final*** ein, und klicken Sie dann auf **Weiter**.
+4. Geben Sie auf der Seite **Bezeichnungen auf Inhalte anwenden, die dieser Abfrage entsprechen** den Code **RefinableString00:"Product Specification" AND RefinableString01:Final** ein, und klicken Sie dann auf **Weiter**.
 
    ![Angeben der Abfrage im Feld „Schlüsselwortabfrage-Editor“](../media/SPRetention19.png)
 
-6. Geben Sie einen Namen (z. B. ***Bezeichnung „Produktspezifikation“ automatisch anwenden***) und eine optionale Beschreibung für die Bezeichnungsrichtlinie ein, und klicken Sie dann auf **Weiter**.
-
-7. Wählen Sie auf der Assistenten-Seite **Speicherorte auswählen** die Inhaltsspeicherorte aus, auf die Sie die Richtlinie anwenden möchten. In diesem Szenario wenden wir die Richtlinie nur auf SharePoint-Standorte an, da alle Produktionsdokumente in SharePoint-Dokumentbibliotheken gespeichert werden. Klicken Sie daher auf **Mich bestimmte Speicherorte auswählen lassen** und ändern Sie dann den Status für **Exchange-E-Mails**, **OneDrive-Konten** und **Microsoft 365-Gruppen** auf „aus“. Stellen Sie sicher, dass der Status für SharePoint-Websites auf „ein“ gestellt ist. 
-
+5. Wählen Sie auf der Seite **Speicherorte zum Anwenden der Richtlinie auswählen** die Inhaltsspeicherorte aus, auf die Sie die Richtlinie anwenden möchten. In diesem Szenario wenden wir die Richtlinie nur auf SharePoint-Standorte an, da alle Produktionsdokumente in SharePoint-Dokumentbibliotheken gespeichert werden. Schalten Sie den Status für **Exchange-E-Mail-**, **OneDrive-Konten** und **Office 365-Gruppen** auf **Aus**. Stellen Sie sicher, dass der Status für SharePoint-Websites auf **Ein** festgelegt ist, bevor Sie **Weiter** auswählen: 
+    
     ![Auswählen von bestimmten Websites, auf die Bezeichnungen automatisch angewendet werden](../media/SPRetentionSPlocations.png)
-
+    
    > [!TIP]
-   > Anstatt die Richtlinie auf alle SharePoint-Websites anzuwenden, können Sie auf **Websites auswählen** klicken und die URLs für bestimmte SharePoint-Websites hinzufügen.
+   > Anstatt die Richtlinie auf alle SharePoint-Websites anzuwenden, können Sie **Website auswählen** auswählen und die URLs für bestimmte SharePoint-Websites hinzufügen.
 
-8. Klicken Sie auf **Weiter**, um die Seite **Einstellungen überprüfen** anzuzeigen.
+6. Wählen Sie auf der Seite **Bezeichnung für automatische Anwendung auswählen** die Option **Bezeichnung hinzufügen** aus.
+
+7. Wählen Sie aus der Liste der Aufbewahrungsbezeichnungen **Produktspezifikation** aus. Wählen Sie dann **Hinzufügen** und **Weiter** aus.
+
+8. Überprüfen Sie Ihre Einstellungen:
 
     ![Einstellungen zur automatischen Anwendung der Bezeichnung](../media/SPRetention18.png)
 
-9. Klicken Sie auf **Automatisch anwenden**, um die Bezeichnungsrichtlinie zu erstellen.
-
+9. Wählen Sie **Senden** aus, um die Bezeichnungsrichtlinie für die automatische Anwendung zu erstellen.
+    
    >[!NOTE]
    >Es dauert bis zu 7 Tage, um die Produktspezifikationsbezeichnung automatisch auf alle Dokumente anzuwenden, die der KQL-Suchabfrage entsprechen.
 
 ### <a name="verify-that-the-retention-label-was-automatically-applied"></a>Überprüfen Sie, ob die Aufbewahrungsbezeichnung automatisch angewendet wurde
 
-Verwenden Sie nach 7 Tagen den[ Aktivität-Explorer](data-classification-activity-explorer.md) im Compliance Center, um zu sehen, dass die von uns erstellte Bezeichnungsrichtlinie die Aufbewahrungsbezeichnungen automatisch auf die Produktdokumente angewendet hat.
+Verwenden Sie nach 7 Tagen den [Aktivitäten-Explorer](data-classification-activity-explorer.md) im Compliance Center, um zu überprüfen, ob die erstellte Bezeichnungsrichtlinie für die automatische Anwendung die Aufbewahrungsbezeichnungen automatisch auf die Produktdokumente angewendet hat.
 
 Überprüfen Sie auch die Eigenschaften der Dokumente in der Dokumentbibliothek. Im Informationsbereich können Sie sehen, dass die Aufbewahrungsbezeichnung auf ein ausgewähltes Dokument angewendet wird.
 
