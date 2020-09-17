@@ -16,22 +16,21 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Erste Schritte mit automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection-Plan 2.
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: 14742df5d9dbd2f65a032250696dbc7c61210562
-ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
+ms.openlocfilehash: 0587c2d58410d7a0bc4a581f156a2cbfc06701a9
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47336679"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949698"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>Erste Schritte mit der automatisierten Untersuchung und Reaktion (Air) in Office 365
 
 Der Plan 2 von [Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) enthält leistungsstarke Funktionen für die automatische Untersuchung und Reaktion (Air), mit denen Sie die Zeit und den Aufwand Ihres Sicherheits Betriebs in Ihrem Team sparen können. Office 365 Wenn Warnungen ausgelöst werden, liegt es an Ihrem Sicherheits Betriebsteam, diese Warnungen zu überprüfen, zu priorisieren und darauf zu reagieren. Das Einhalten des Umfangs eingehender Warnungen kann überwältigend sein. Die Automatisierung einiger dieser Informationen kann helfen. Mit Air kann sich Ihr Sicherheits Betriebsteam auf Aufgaben mit höherer Priorität konzentrieren, ohne die ausgelösten Warnungen aus den Augen zu verlieren.
 
-Dieser Artikel enthält Informationen zu folgenden Themen:
-
-- Der [gesamte Luftstrom](#the-overall-flow-of-air)
-- [So erhalten Sie Luft](#how-to-get-air)
-- Die [erforderlichen Berechtigungen](#required-permissions-to-use-air-capabilities) zum Konfigurieren oder Verwenden von Air-Funktionen
+Inhalt dieses Artikels:
+- Der [gesamte Luftstrom](#the-overall-flow-of-air) ;
+- [Gewusst wie: Abrufen von Luft](#how-to-get-air); und 
+- Die [erforderlichen Berechtigungen](#required-permissions-to-use-air-capabilities) zum Konfigurieren oder Verwenden von Air-Funktionen. 
 
 ## <a name="the-overall-flow-of-air"></a>Der gesamte Luftstrom
 

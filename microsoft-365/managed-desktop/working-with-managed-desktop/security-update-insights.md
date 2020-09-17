@@ -4,21 +4,22 @@ description: ''
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ef2d5c897709e7f7d2484d032b7471031be77d74
-ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
+ms.openlocfilehash: 772d1d52e977a067ff9bc3517de9cb2ae6c8c9a3
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42341255"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950367"
 ---
 # <a name="windows-security-update-insights"></a>Informationen zu Windows-Sicherheitsupdates
 Diese Ansicht bietet eine Übersicht über den Status von Sicherheitsupdates für Ihre von Microsoft verwalteten Desktop Geräte. 
 
 Um Verwendungsdaten anzuzeigen, wählen Sie die Registerkarte <strong>Windows-Sicherheitsupdates</strong> aus.
 
-![Windows-Sicherheitsupdate Bereich: Balkendiagramme des Gerätestatus und der Update Version in der linken Spalte, Aktualisierungs Bereitstellungsfortschritt im Zeitverlauf in der mittleren Spalte und Prozentsatz aktiver Geräte nach Bereitstellungsgruppe sowie die Anzahl der Tage, die für die Bereitstellung der 95% erreicht wurden Target in der rechten Spalte.](../../media/update-insights.jpg)
+![Windows-Sicherheitsupdate Bereich: Balkendiagramme des Gerätestatus und der Update Version in der linken Spalte, Aktualisierungs Bereitstellungsfortschritt im Zeitverlauf in der mittleren Spalte und Prozentsatz aktiver Geräte nach Bereitstellungsgruppe sowie die Anzahl der Tage, die zum Erreichen des Bereitstellungsziels "95%" in der rechten Spalte verwendet wurden.](../../media/update-insights.jpg)
 
 ## <a name="device-status"></a>Gerätestatus
 

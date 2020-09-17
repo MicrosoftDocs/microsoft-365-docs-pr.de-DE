@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Überwachen und Verwalten der Freigabe von Inhalten, unabhängig davon, ob Sie eine Dispositions Überprüfung oder Inhalte verwenden, wird automatisch entsprechend den von Ihnen konfigurierten Einstellungen gelöscht.
-ms.openlocfilehash: 5751857f8b3bf0a7f63df73e9bfaa244897bf429
-ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
+ms.openlocfilehash: 6789ab1abe54b76f22462a47326b07a213f19b0c
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47321994"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950389"
 ---
 # <a name="disposition-of-content"></a>Disposition von Inhalten
 
@@ -122,7 +122,7 @@ Inhalte, die auf eine Dispositions Überprüfung warten, werden erst gelöscht, 
 > [!NOTE]
 > Der Rollout für den Nachweis der Verfügung für Datensätze in SharePoint und OneDrive ist abgeschlossen.
 >
-> Der Nachweis der Verfügung für Datensätze in Exchange wurde gerade erst gestartet, um den Rollout auszuführen. Wenn dieser Rollout abgeschlossen ist, werden wir diesen Hinweis aktualisieren.
+> Rollout für den Nachweis der Verfügung für Datensätze in Exchange ist fast abgeschlossen, wenn wir diese Notiz entfernen werden.
 
 Verwenden Sie die Registerkarte **Disposition** auf der Seite **Datensatzverwaltung** , um Datensätze zu identifizieren, die jetzt entweder automatisch oder nach einer Dispositions Überprüfung gelöscht werden. Diese Elemente zeigen **Datensätze** an, die in der Spalte **Typ** angeordnet sind. Zum Beispiel:
 

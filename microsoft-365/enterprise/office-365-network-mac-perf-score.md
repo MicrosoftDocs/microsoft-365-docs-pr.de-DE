@@ -14,18 +14,18 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 Netzwerkbewertung (Vorschau)
-ms.openlocfilehash: aacbdf73da9552a12bde250e51544f1de533637c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 15eb514980bb53bd32380e44b6bfa174670f6b85
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695982"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948316"
 ---
 # <a name="microsoft-365-network-assessment-preview"></a>Microsoft 365 Netzwerkbewertung (Vorschau)
 
-In der Microsoft 365 Admin Center-Verbindung mit der Microsoft 365-Seite destillieren **Netzwerkbewertungen** ein Aggregat vieler Netzwerk Leistungs Metriken in einer Momentaufnahme ihres Unternehmensnetzwerk Status, dargestellt durch einen Points-Wert von 1-100. Netzwerkbewertungen sind sowohl für den gesamten Mandanten als auch für jeden geografischen Standort ausgelegt, von dem aus Benutzer eine Verbindung mit Ihrem Mandanten herstellen, sodass Microsoft 365-Administratoren eine einfache Möglichkeit haben, eine Gestalt der Netzwerkintegrität des Unternehmens sofort zu erfassen und schnell einen detaillierten Bericht für einen beliebigen globalen Office-Standort aufzurufen.
+In der Microsoft 365 Admin Center-Verbindung mit der Microsoft 365-Seite wird mithilfe von **Netzwerkbewertungen** ein Aggregat zahlreicher Netzwerk Leistungs Metriken in einer Momentaufnahme ihres Umkreis-Integritätsstatus des Unternehmensnetzwerks, dargestellt durch einen Points-Wert von 0-100, destilliert. Netzwerkbewertungen sind sowohl für den gesamten Mandanten als auch für jeden geografischen Standort ausgelegt, von dem aus Benutzer eine Verbindung mit Ihrem Mandanten herstellen, sodass Microsoft 365-Administratoren eine einfache Möglichkeit haben, eine Gestalt der Netzwerkintegrität des Unternehmens sofort zu erfassen und schnell einen detaillierten Bericht für einen beliebigen globalen Office-Standort aufzurufen.
 
-Der Wert Netzwerk Bewertungspunkte ist eine durchschnittliche Messung der Wartezeit, der Bandbreite, der Downloadgeschwindigkeit und der Verbindungs Qualitäts Metriken, die zum Zeitpunkt der Anzeige Live kompiliert wurden. Leistungs Metriken für in Microsoft befindliche Netzwerke werden von diesen Messungen ausgeschlossen, um sicherzustellen, dass die Bewertungsergebnisse eindeutig und für das Unternehmensnetzwerk spezifisch sind.
+Der Wert Netzwerk Bewertungspunkte ist eine durchschnittliche Messung der TCP-Wartezeit, der Downloadgeschwindigkeit und der Qualitäts Metriken für die UDP-Verbindung, die bei der Anzeige Live kompiliert wurden. Leistungs Metriken für in Microsoft befindliche Netzwerke werden von diesen Messungen ausgeschlossen, um sicherzustellen, dass die Bewertungsergebnisse eindeutig und für das Unternehmensnetzwerk spezifisch sind.
 
 ![Netzwerk Bewertungs Wert](../media/m365-mac-perf/m365-mac-perf-overview-score-top.png)
 
@@ -42,7 +42,7 @@ Bei jeder Netzwerkbewertung, unabhängig davon, ob Sie auf den Mandanten oder ei
 
 Der **Bewertungs Aufschlüsselung** im Bereich zeigt die Bewertung für jede der Komponenten Arbeitsauslastungen.
 
-Der **Bewertungsverlauf** zeigt die letzten 30 Tage der Bewertung und die Benchmark an.
+Der **Bewertungsverlauf** zeigt die letzten 30 Tage der Bewertung und die Benchmark an. Sie können auch über die Registerkarte Verlauf bis zu zwei Jahre über den Metriken-Verlauf für alle Office-Standorte Berichten.
 
 ## <a name="tenant-network-assessments-and-office-location-network-assessments"></a>Assessments für Mandanten Netzwerke und Netzwerkbewertungen für Office-Standorte
 
@@ -52,15 +52,48 @@ Wir zeigen einen Wert für die Netzwerkbewertung für den gesamten Microsoft 365
 
 ## <a name="exchange-online"></a>Exchange Online
 
-Für Exchange Online wird die TCP-Wartezeit vom Clientcomputer auf den Exchange-Front-End-Server gemessen. Dies kann durch die Entfernung beeinträchtigt werden, über die das Netzwerk über die Kunden LAN und WAN reist. Es kann auch durch Netzwerk-zwischengeschaltete Geräte oder Dienste beeinträchtigt werden, die die Konnektivität verzögern oder dazu führen, dass Pakete erneut gesendet werden.
+Für Exchange Online wird die TCP-Wartezeit vom Clientcomputer auf den Exchange-Front-End-Server gemessen. Dies kann durch die Entfernung beeinträchtigt werden, über die das Netzwerk über die Kunden LAN und WAN reist. Es kann auch durch Netzwerk-zwischengeschaltete Geräte oder Dienste beeinträchtigt werden, die die Konnektivität verzögern oder dazu führen, dass Pakete erneut gesendet werden. Der Median (auch als 50-Perzentil-oder P50-Measure bezeichnet) wird für alle Messungen in den vorherigen drei Tagen verwendet.
+
+Die Exchange Online Bewertung erfolgt anhand der folgenden Tabelle. Alle TCP-Latenz Nummern zwischen den Schwellenwerten werden linear innerhalb des Bands zugewiesen.
+
+| TCP-Wartezeit   | Points |
+| :------------ | :----- |
+| 10ms oder niedriger  | 100    |
+| 25ms          | 80     |
+| 100 MS         | 60     |
+| 200ms         | 40     |
+| 300ms         | 20     |
+| 350ms oder mehr | 0      |
 
 ## <a name="sharepoint-online"></a>SharePoint Online
 
-Für SharePoint Online wird die Downloadgeschwindigkeit gemessen, die ein Benutzer für den Zugriff auf ein Dokument zur Verfügung stellt. Dies kann durch die verfügbare Bandbreite zwischen dem Clientcomputer und dem Netzwerk von Microsoft auf Netzwerk Schaltkreisen beeinträchtigt werden. Es wird auch häufig von Netzwerküberlastung beeinflusst, die in Engpässen bei komplexen Netzwerkgeräten oder in schlechten WLAN-Abdeckungsbereichen vorhanden ist.
+Für SharePoint Online wird die Downloadgeschwindigkeit gemessen, die ein Benutzer für den Zugriff auf ein Dokument über SharePoint Online oder OneDrive zur Verfügung stellt. Dies kann durch die verfügbare Bandbreite zwischen dem Clientcomputer und dem Netzwerk von Microsoft auf Netzwerk Schaltkreisen beeinträchtigt werden. Es wird auch häufig von Netzwerküberlastung beeinflusst, die in Engpässen bei komplexen Netzwerkgeräten oder in schlechten WLAN-Abdeckungsbereichen vorhanden ist. Die Downloadgeschwindigkeit wird in Megabyte pro Sekunde gemessen, bei dem es sich um etwa einen Zehntel einer Schaltung mit Megabit pro Sekunde handelt. Das 25. Perzentil (auch als P25-Measure bezeichnet) wird für alle Messungen in den vorherigen drei Tagen übernommen.
 
-## <a name="microsoft-teams"></a>Microsoft Teams
+Die SharePoint Online Bewertung erfolgt anhand der folgenden Tabelle. Jede Download Geschwindigkeits Nummer zwischen den Schwellenwerten wird linear innerhalb des Bands zugewiesen.
 
-Für Microsoft Teams wird die Netzwerkqualität als UDP-Wartezeit, UDP-Jitter und UDP-Paketverlust gemessen. UDP wird für die Audio-und Video Medien Konnektivität für Anrufe und Konferenzen für Microsoft Teams verwendet. Dies kann durch die gleichen Faktoren wie Wartezeit und Downloadgeschwindigkeit sowie Verbindungs Lücken in der UDP-Unterstützung eines Netzwerks beeinträchtigt werden, da UDP separat mit dem häufigeren TCP-Protokoll konfiguriert wird.
+| Download Geschwindigkeit | Points |
+| :------------- | :----- |
+| 20Mbps oder mehr | 100    |
+| 14MBps         | 80     |
+| 8MBps          | 60     |
+| 4MBps          | 40     |
+| 2Mbps          | 20     |
+| 0MBps          | 0      |
+
+## <a name="microsoft-teams"></a>Microsoft Teams
+
+Für Microsoft Teams wird die Netzwerkqualität als UDP-Wartezeit, UDP-Jitter und UDP-Paketverlust gemessen. UDP wird für die Audio-und Video Medien Konnektivität für Anrufe und Konferenzen für Microsoft Teams verwendet. Dies kann durch die gleichen Faktoren wie Wartezeit und Downloadgeschwindigkeit sowie Verbindungs Lücken in der UDP-Unterstützung eines Netzwerks beeinträchtigt werden, da UDP separat mit dem häufigeren TCP-Protokoll konfiguriert wird. Der Median (auch als 50-Perzentil-oder P50-Measure bezeichnet) wird für alle Messungen in den vorherigen drei Tagen verwendet. 
+
+Die Microsoft Teams-Bewertung erfolgt anhand der folgenden Tabelle. Alle drei UDP-Messungen müssen über dem angegebenen Schwellenwert liegen, um die angezeigten Punkte zu erreichen. Es gibt keine Bewertungen für einen einzelnen Standort innerhalb eines Bands.
+
+| UDP-Paketverlust | UDP-Wartezeit | UDP-Jitter | Points |
+| :-------------- | :---------- | :--------- | :----- |
+| 0,25%           | 60ms        | 15ms       | 100    |
+| 1,00%           | 120ms       | 40ms       | 80     |
+| 1,50%           | 240ms       | 65ms       | 60     |
+| 3,00%           | 275ms       | 80ms       | 40     |
+| 5,00%           | 350ms       | 150ms      | 20     |
+| Höher      | Höher  | Höher | 0      |
 
 ## <a name="related-topics"></a>Verwandte Themen
 

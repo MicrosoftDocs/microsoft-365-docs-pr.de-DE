@@ -1,5 +1,5 @@
 ---
-title: Empfehlungen zur Netzwerkleistung im Microsoft 365 Admin Center (Vorschau)
+title: Netzwerkkonnektivität im Microsoft 365 Admin Center (Vorschau)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -14,16 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Übersicht über die Netzwerkkonnektivität im Microsoft 365 Admin Center (Vorschau)
-ms.openlocfilehash: 2f7e922f1e9abd68ebe51d26ef270760a7c446e2
-ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
+ms.openlocfilehash: f8eff2248fb7abce75c27f227a2c5e7ec7219046
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46815243"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948413"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Netzwerkkonnektivität im Microsoft 365 Admin Center (Vorschau)
 
-Das Microsoft 365 Admin Center includesaggregated jetzt die von Ihrem Microsoft 365-Mandanten gesammelten Netzwerk Verbindungs Metriken und ist nur für administrative Benutzer in Ihrem Mandanten verfügbar. **Netzwerk Einschätzungen** und **Netzwerk Einblicke** werden im Microsoft 365 Admin Center unter "Integrität" angezeigt **| Konnektivität**.
+Das Microsoft 365 Admin Center enthält jetzt aggregierte Metriken für die Netzwerkkonnektivität, die von Ihrem Microsoft 365-Mandanten gesammelt und nur für administrative Benutzer in Ihrem Mandanten verfügbar sind. **Netzwerk Einschätzungen** und **Netzwerk Einblicke** werden im Microsoft 365 Admin Center unter "Integrität" angezeigt **| Konnektivität**.
 
 ![Seite "Netzwerkleistung"](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
@@ -35,9 +35,9 @@ Es gibt drei Optionen für das Einholen von Netzwerkbewertungen von Ihren Office
 
 ### <a name="1-enable-windows-location-services"></a>1. Aktivieren der Windows-Standortdienste
 
-Für diese Option müssen mindestens zwei Computer an jedem Bürostandort mit Unterstützung für die Voraussetzungen vorhanden sein. OneDrive für Windows, Version 19,232 oder höher, müssen auf jedem Computer installiert sein. Weitere Informationen zu OneDrive-Versionen finden Sie in den [Anmerkungen zur OneDrive-Version](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0). Netzwerk Messungen sollten in naher Zukunft in anderen Office 365-Clientanwendungen hinzugefügt werden.
+Für diese Option müssen mindestens zwei Computer an jedem Bürostandort mit Unterstützung für die Voraussetzungen vorhanden sein. OneDrive für Windows, Version **19,232** oder höher, müssen auf jedem Computer installiert sein. Weitere Informationen zu OneDrive-Versionen finden Sie in den [Anmerkungen zur OneDrive-Version](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0). Netzwerk Messungen sollten in naher Zukunft in anderen Office 365-Clientanwendungen hinzugefügt werden.
 
-Windows-Standortdienst muss auf den Computern zugestimmt werden. Sie können dies testen, indem Sie die **Maps** -App durchführen und sich selbst Auffinden. Es kann auf einem einzelnen Computer mit Einstellungen für **Settings**  ->  den**Datenschutz**  ->  **Speicherort** aktiviert werden, in dem die Einstellung "Apps für den Zugriff auf Ihren Standort zulassen" aktiviert sein muss. Die Zustimmung zum Windows-Standortdienst kann auf PCs mit MDM oder Gruppenrichtlinien mit der Einstellung _LetAppsAccessLocation_bereitgestellt werden.
+Windows-Standortdienst muss auf den Computern zugestimmt werden. Sie können dies testen, indem Sie die **Maps** -App durchführen und sich selbst Auffinden. Es kann auf einem einzelnen Computer mit Einstellungen aktiviert werden **| Datenschutz | Speicherort** , an dem die Einstellung _für Apps für den Zugriff auf Ihren Standort zulässt,_ muss aktiviert sein. Die Zustimmung zum Windows-Standortdienst kann auf PCs mit MDM oder Gruppenrichtlinien mit der Einstellung _LetAppsAccessLocation_bereitgestellt werden.
 
 Sie müssen keine Speicherorte im Admin Center mit dieser Methode hinzufügen, da diese automatisch in der Stadt Lösung identifiziert werden. Es ist nicht möglich, mehrere Office-Standorte in einer Stadt mithilfe von Windows-Ortungsdiensten anzuzeigen.
 
@@ -47,7 +47,7 @@ Mess Muster und Office-Standorte sollten 24 Stunden nach der Erfüllung dieser V
 
 ### <a name="2-add-locations-and-provide-lan-subnet-information"></a>2. Hinzufügen von Speicherorten und Bereitstellen von LAN-Subnetz-Informationen
 
-Für diese Option sind weder Windows-Standortdienste noch WLAN erforderlich. Sie benötigen OneDrive für die Windows-Version 20.161.0811.0001 oder höher, installiert auf jedem commputer-Standort.
+Für diese Option sind weder Windows-Standortdienste noch WLAN erforderlich. Sie müssen OneDrive für Windows, Version 20,161 oder höher, auf jedem Computer am Speicherort installiert haben.
 
 Sie müssen auch Standorte auf der Seite Admin Center-Netzwerkkonnektivität hinzufügen oder diese aus einer CSV-Datei importieren. Die hinzugefügten Speicherorte müssen Ihre Office LAN-Subnetz-Informationen enthalten.
 
@@ -118,14 +118,14 @@ Auf der Registerkarte Details auf der Seite Office-Standort werden die spezifisc
 
 ## <a name="csv-import-for-lan-subnet-office-locations"></a>CSV-Import für LAN-Subnetze-Office-Standorte
 
-Für das LAN-Subnetz-Identifikations Büro müssen Sie jeden locaiton im Voraus hinzufügen. Anstatt einzelne Office-Standorte auf der Registerkarte **Standorte** hinzuzufügen, können Sie Sie aus einer CSV-Datei importieren. Sie können diese Daten möglicherweise von anderen Orten abrufen, die Sie gespeichert haben, wie etwa das Dashboard für Anrufqualität oder Active Directory Websites und Dienste
+Für das LAN-Subnetz-Identifikations Büro müssen Sie jeden Standort im Voraus hinzufügen. Anstatt einzelne Office-Standorte auf der Registerkarte **Standorte** hinzuzufügen, können Sie Sie aus einer CSV-Datei importieren. Sie können diese Daten möglicherweise von anderen Orten abrufen, die Sie gespeichert haben, wie etwa das Dashboard für Anrufqualität oder Active Directory Websites und Dienste
 
 In der CSV-Datei wird ein Ort mit der festgestellten Stadt als " **Stadt**" bezeichnet, und eine manuell hinzugefügte Office-Position ist mit der Bezeichnung **Location**versehen
 
 1. Klicken Sie im Fenster Haupt _Konnektivität mit Microsoft 365_ auf die Registerkarte **Speicherorte** .
 1. Klicken Sie auf die Schaltfläche **importieren** direkt oberhalb der Liste Orte. Das Flyout **Office-Speicherorte importieren** wird angezeigt.
 
-   ![CSV-Import-Fehlermeldung](../media/m365-mac-perf/m365-mac-perf-import.png)
+   ![CSV-Importnachricht](../media/m365-mac-perf/m365-mac-perf-import.png)
 
 1. Klicken Sie auf den Link **aktuelle Office-Standorte herunterladen (CSV)** , um die Liste der aktuellen Speicherorte in eine CSV-Datei zu exportieren, und speichern Sie Sie auf Ihrer lokalen Festplatte. Auf diese Weise erhalten Sie eine ordnungsgemäß formatierte CSV-Datei mit Spaltenüberschriften, an die Sie Orte hinzufügen können. Sie können die vorhandenen exportierten Speicherorte unverändert lassen. Sie werden nicht dupliziert, wenn Sie die aktualisierte CSV importieren. Wenn Sie die Adresse eines vorhandenen Speicherorts ändern möchten, wird diese beim Importieren der CSV-Datei aktualisiert. Sie können die Adresse eines entdeckten Orts nicht ändern.
 1. Öffnen Sie die CSV-Datei, und fügen Sie Ihre Standorte hinzu, indem Sie die folgenden Felder in einer neuen Position für jeden Ort ausfüllen, den Sie hinzufügen möchten. Lassen Sie alle anderen Felder leer; Werte, die Sie in andere Felder eingeben, werden ignoriert.
@@ -143,7 +143,7 @@ In der CSV-Datei wird ein Ort mit der festgestellten Stadt als " **Stadt**" beze
 
    ![CSV-Import-Ready-Nachricht](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
-## <a name="faq"></a>Häufig gestellte Fragen
+## <a name="faq"></a>Häufig gestellte Fragen (FAQ)
 
 ### <a name="what-is-a-microsoft-365-service-front-door"></a>Was ist ein Microsoft 365-Dienst-Haustür?
 
@@ -169,3 +169,5 @@ Der Internet Ausgangsstandort ist der Ort, an dem Ihr Netzwerkdatenverkehr Ihr U
 [Microsoft 365 Connectivity Test im M365 Admin Center (Vorschau)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365 Network Connectivity Location Services (Vorschau)](office-365-network-mac-location-services.md)
+
+[Microsoft 365 Network Connectivity Test Tool (Vorschau)](office-365-network-mac-perf-onboarding-tool.md)

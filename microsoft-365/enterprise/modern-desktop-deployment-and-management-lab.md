@@ -1,5 +1,5 @@
 ---
-title: Deployment Lab Kit für Windows und Office
+title: Lab-Kit für Windows und Office Deployment
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -15,14 +15,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie mehr über das Deployment Lab Kit für Windows und Office und wo Sie darauf zugreifen.
-ms.openlocfilehash: 751d2a04daa707049c59b9b7cabb18ca06a598d1
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 09441f879fa41d1b920aae7d37625d0a52160d84
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685498"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949880"
 ---
-# <a name="windows-and-office-deployment-lab-kit"></a>Deployment Lab Kit für Windows und Office
+# <a name="windows-and-office-deployment-lab-kit"></a>Lab-Kit für Windows und Office Deployment
 
 Diese Übungseinheiten sollen Ihnen helfen, die Bereitstellung und Verwaltung von Desktops mit Windows 10 Enterprise und Microsoft 365-Apps für Unternehmen zu planen, zu testen und zu validieren. Die Übungseinheiten umfassen Microsoft Endpoint Configuration Manager, Desktop Analyse, Office-Anpassungs Tool, OneDrive, Windows Autopilot und vieles mehr.
 
@@ -32,7 +32,7 @@ Dieses Kit wird dringend für Unternehmen empfohlen, die sich auf Windows 8 Upgr
 
 ## <a name="a-complete-lab-environment"></a>Vollständige Übungsumgebung
 
-Die Übung umfasst eine automatisch bereitgestellte virtuelle Umgebung, einschließlich Domänen-Desktop-Clients, Domänencontroller, Internetgateway und einer vollständig konfigurierten Configuration Manager-Instanz. Sie beinhaltet die neuesten Evaluierungsversionen der folgenden Produkte:
+Die Übung umfasst eine automatisch bereitgestellte virtuelle Umgebung, einschließlich Domänen-Desktop-Clients, Domänencontroller, Internetgateway und einer vollständig konfigurierten Configuration Manager-Instanz. Das Lab enthält die neuesten Evaluierungsversionen der folgenden Produkte:
 
   - NEU! Windows 10 Enterprise, Version 2004
   - Windows 7 Enterprise
@@ -53,70 +53,36 @@ DARÜBERHINAUS kann die Übung mit Tests für folgende Produkte verbunden werden
 
 Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Verwaltungsszenarien. Die Übungen wurden für die neuesten Versionen von Intune und Configuration Manager aktualisiert. 
 
-### <a name="device-and-app-readiness"></a>Geräte- und App-Bereitschaft
+### <a name="plan-and-prepare-infrastructure"></a>Planen und Vorbereiten der Infrastruktur 
+Desktop Analytics   
+Cloud Management Gateway & Cloud-Verteilungspunkt für Mandanten Anfügung, gemeinsame Verwaltung und Verlagerung von Arbeitslasten    
+Remotezugriff
 
-  - Desktop Analytics
-  - Bereitstellen und Aktualisieren des neuen Microsoft Edge 
-  - Installieren und Konfigurieren des Cloud Management-Gateways (CMG) 
-  - Internet Explorer-Modus 
-  - Application Guard 
+### <a name="prepare-configuration"></a>Vorbereiten der Konfiguration   
+Optimieren der Windows 10-Update Zustellung mit Windows 10 mithilfe der Gruppenrichtlinien Wartung von Windows 10 mithilfe von Microsoft InTune-Dienst für Windows 10 mit Configuration Manager, der Microsoft 365-Apps für Unternehmen mithilfe von Configuration Manager bedient, der Microsoft 365-Apps für Unternehmen mit InTune bedient    
+Sicherheit und Compliance 
 
-### <a name="directory-and-network-readiness"></a>Verzeichnis- und Netzwerkbereitschaft
+### <a name="prepare-applications"></a>Vorbereiten von Anwendungen    
+Readiness Toolkit für Office    
+MSIX Verpackung und Konvertierung von Win32-Anwendungen 
 
-  - Optimieren der Auslieferung des Windows 10-Updates 
-  - Configuration Manager und Microsoft Intune Co-Management
-  - Remotezugriff (VPN)
+### <a name="deploy-windows-10"></a>Bereitstellen von Windows 10   
+Tasksequenzen zur Bereitstellung von Betriebssystemen in Configuration Manager-BS-Bereitstellungstasksequenzen in MDT Windows Autopilot bereitstellen und Verwalten des neuen Microsoft Edge    
 
-### <a name="office-and-lob-app-delivery"></a>Auslieferung von Office- und Branchen-Apps
+### <a name="deploy-microsoft-365-apps-for-enterprise"></a>Bereitstellung von Microsoft 365 Apps for Enterprise    
+Verwaltete Cloud-Bereitstellung    
+Lokal verwaltete Bereitstellung  
+Microsoft 365-Apps für Enterprise-Bereitstellung auf nicht AD-verbundenen Geräten   
+Enterprise-verwaltete Bereitstellung mithilfe von Configuration Manager Enterprise Managed Deployment mit Microsoft InTune    
+Lob-Bereitstellung und-Verwaltung mit Microsoft InTune Bereitstellen von Microsoft Teams
 
-  - Microsoft 365 Apps for Enterprise
-  - Unternehmensverwaltete Bereitstellung mit Configuration Manager und Microsoft Intune
-  - Anwendungsbereitstellung und -verwaltung mit Microsoft Intune
-  - App-Bereitstellung und Self-Service-Installation mit Microsoft Store für Unternehmen
-  - NEU! Installieren von Microsoft Teams 
-
-### <a name="user-file-and-settings-migration"></a>Migration von Benutzerdateien und -einstellungen
-
-  - Dateimigration aus bekannten Ordnern 
-  - Tool für die Migration des Benutzerstatus 
-  - Enterprise State Roaming
-  - Startmenüanpassung und UWP-App-Entfernung 
-  - User Experience Virtualization (UE-V) 
-
-### <a name="security-and-compliance"></a>Sicherheit und Richtlinientreue
-
-  - BitLocker-Geräteverschlüsselung
-  - Windows Defender Antivirus
-  - Windows Hello for Business
-  - Konvertierung von BIOS zu UEFI
-  - Windows Defender Application Guard
-  - Windows Defender Exploit Guard
-  - Windows Defender Application Control
-  - Windows Defender Advanced Threat Protection
-  - NEU! Endpunktsicherheit 
-
-### <a name="os-deployment-and-feature-updates"></a>Bereitstellung des Betriebssystems und Featureupdates
-
-  - Erstellung von Betriebssystemimages
-  - Aufgabensequenzen für Betriebssystembereitstellung in Configuration Manager 
-  - Aufgabensequenzen für Betriebssystembereitstellung in MDT
-  - Windows Autopilot
-  - Bereitstellungspakete 
-
-### <a name="windows-and-office-as-a-service"></a>Windows und Office als Dienst
-  - Verwalten von Windows-Updates über Gruppenrichtlinien
-  - Warten von Windows 10 mit Configuration Manager und Intune
-  - Wartung von Microsoft 365 Apps for Enterprise mit Configuration Manager
-  - NEU! Office-Updates mit Configuration Manager und Intune
-  
-### <a name="windows-virtual-desktop"></a>Windows Virtual Desktop
-  - Windows Virtual Desktop: Vorbereiten, Bereitstellen, Optimieren 
-
+### <a name="deploy-windows-virtual-desktop"></a>Bereitstellen des virtuellen Windows-Desktops  
+ 
 ### <a name="download-the-windows-and-office-deployment-lab-kit"></a>Herunterladen des Deployment Lab Kit für Windows und Office
 
 [Herunterladen des Deployment Lab Kit für Windows und Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-*Verwenden Sie eine große Bandbreite, um diesen Inhalt zur Optimierung Ihrer Download-Erfahrung herunterzuladen. Die automatische Bereitstellung dauert 30 bis 45 Minuten. Die Übungsumgebung erfordert ein Minimum von 16 GB verfügbarem Arbeitsspeicher und 150 GB freien Festplattenspeicherplatz. Für eine optimale Leistung werden 32 GB verfügbarer Speicher empfohlen. Die Übung läuft am 12. September 2020 ab. Eine neue Version wird vor dem Ablauf veröffentlicht.*
+*Verwenden Sie eine breite Bandbreite, um diese Inhalte herunterzuladen, um Ihre Download Umgebung zu verbessern und 30-45 Minuten für die automatische Bereitstellung zu ermöglichen. Die Lab-Umgebung erfordert mindestens 16 GB verfügbaren Arbeitsspeicher und 150 GB freien Speicherplatz. Für eine optimale Leistung wird 32 GB verfügbarer Arbeitsspeicher empfohlen. Das Lab läuft am 4. Dezember 2020 ab. Eine neue Version wird vor Ablauf veröffentlicht.*
 
 ## <a name="additional-guidance"></a>Zusätzliche Anleitung
 

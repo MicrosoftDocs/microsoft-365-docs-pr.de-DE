@@ -21,12 +21,12 @@ ms.collection:
 - SPO_Content
 description: Sie können die Verwaltung von Informationsrechten (Information Rights Management, IRM) zum Steuern und schützen von Dateien verwenden, die aus Listen oder Bibliotheken heruntergeladen werden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 11d12eda6f2cb8de5c94b6952a8a194b06471473
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: de0105bf61b4abbddd938a4ec7286c1919bf3985
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818474"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948483"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>Anwenden der Verwaltung von Informationsrechten (Information Rights Management, IRM) auf eine Liste oder Bibliothek
 
@@ -70,10 +70,10 @@ Sie können die Verwaltung von Informationsrechten (Information Rights Managemen
 |:-----|:-----|
 |Zulassen, dass Benutzer Dokumente aus dieser Liste oder Bibliothek drucken können  <br/> |Aktivieren Sie das Kontrollkästchen **Betrachter dürfen das Drucken erlauben** .  <br/> |
 |Zulassen, dass Personen mit mindestens der Berechtigung "Elemente anzeigen" eingebetteten Code oder Makros in einem Dokument ausführen können.  <br/> |Aktivieren Sie das Kontrollkästchen **Viewer dürfen Skripts und Bildschirm Lesefunktionen für heruntergeladene Dokumente ausführen** .  <br/> Wenn Sie diese Option auswählen, können Benutzercode ausführen, um den Inhalt eines Dokuments zu extrahieren.           |
-|Erfordern, dass Personen Ihre Anmeldeinformationen in bestimmten Intervallen überprüfen.  <br/> Wählen Sie diese Option aus, wenn Sie den Zugriff auf Inhalte auf einen bestimmten Zeitraum beschränken möchten. Wenn Sie diese Option auswählen, laufen die Ausstellungs Lizenzen der Personen für den Zugriff auf den Inhalt nach der angegebenen Anzahl von Tagen ab, und die Benutzer müssen zum Server zurückkehren, um Ihre Anmeldeinformationen zu überprüfen und eine neue Kopie herunterzuladen.  <br/> |Aktivieren Sie das Kontrollkästchen **Benutzer müssen Ihre Anmeldeinformationen mit diesem Intervall (Tage) überprüfen** , und geben Sie dann die Anzahl der Tage an, für die das Dokument angezeigt werden soll.  <br/> |
+|Wählen Sie diese Option aus, wenn Sie den Zugriff auf Inhalte auf einen bestimmten Zeitraum beschränken möchten. Wenn Sie diese Option auswählen, laufen die Ausstellungs Lizenzen der Personen für den Zugriff auf den Inhalt nach der angegebenen Anzahl von Tagen ab, und die Benutzer müssen zum Server zurückkehren, um Ihre Anmeldeinformationen zu überprüfen und eine neue Kopie herunterzuladen.  <br/> |Aktivieren Sie das Kontrollkästchen **nach dem Download werden Dokument Zugriffsrechte nach Ablauf dieser Anzahl von Tagen ablaufen (1-365)** , und geben Sie dann die Anzahl der Tage an, für die das Dokument angezeigt werden soll.  <br/> |
 | Verhindern, dass Personen Dokumente hochladen, die IRM nicht unterstützen, für diese Liste oder Bibliothek.  <br/>  Wenn Sie diese Option auswählen, können Benutzer keine der folgenden Dateitypen hochladen:  <br/>  Dateitypen, für die keine entsprechenden IRM-Schutzkomponenten auf allen Front-End-Webservern installiert sind.  <br/>  Dateitypen, die SharePoint Server 2010 nicht entschlüsseln können.  <br/>  Dateitypen, die in einem anderen Programm IRM-geschützt sind  <br/> |Aktivieren Sie das Kontrollkästchen **Benutzer dürfen keine Dokumente hochladen, die IRM nicht unterstützen** .  <br/> |
 |Entfernen Sie eingeschränkte Berechtigungen aus dieser Liste oder Bibliothek an einem bestimmten Datum.  <br/> |Aktivieren Sie das Kontrollkästchen **Einschränken des Zugriffs auf die Bibliothek** deaktivieren, und wählen Sie dann das gewünschte Datum aus.  <br/> |
-|Steuern Sie das Intervall, in dem Anmeldeinformationen für das Programm zwischengespeichert werden, das zum Öffnen des Dokuments lizenziert ist.  <br/> |Geben Sie im **Intervall zum Festlegen von Gruppen Schutz und Anmeldeinformationen**das Intervall für die Zwischenspeicherung von Anmeldeinformationen in Tagen ein.  <br/> |
+|Steuern Sie das Intervall, in dem Anmeldeinformationen für das Programm zwischengespeichert werden, das zum Öffnen des Dokuments lizenziert ist.  <br/> |Aktivieren Sie das Kontrollkästchen **Benutzer müssen Ihre Anmeldeinformationen über dieses Intervall (Tage) überprüfen** , und geben Sie dann das Intervall für die Zwischenspeicherung von Anmeldeinformationen in Tagen ein.  <br/> |
 |Gruppen Schutz zulassen, damit Benutzer mit Mitgliedern derselben Gruppe teilen können.  <br/> |Wählen Sie **Gruppen Schutz zulassen**aus, und geben Sie den Namen der Gruppe für die Freigabe ein.  <br/> |
    
 8. Klicken Sie nach Abschluss der Auswahl der gewünschten Optionen auf **OK**.

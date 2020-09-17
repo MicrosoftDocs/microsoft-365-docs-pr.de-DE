@@ -16,18 +16,18 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die Anti-Phishing-Richtlinien informieren, die in Exchange Online Protection (EoP) und Office 365 Advanced Threat Protection (Office 365 ATP) zur Verfügung stehen.
-ms.openlocfilehash: a68baf8f2598b8ca0cd13e45d18919ecfdccdacc
-ms.sourcegitcommit: 294a51ef0ff48dddb659c602e047d7fd98f91172
+ms.openlocfilehash: 06307efdc1df03d918e7f0b48c42f6e8ecb1dd79
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47407928"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950604"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-Phishing-Richtlinien in Microsoft 365
 
 Richtlinien zum Konfigurieren von Einstellungen zum Schutz vor Phishing stehen in Microsoft 365-Organisationen mit Exchange Online-Postfächern, eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächern und Office 365 Advanced Threat Protection (Office 365 ATP)-Organisationen zur Verfügung.
 
-ATP-Anti-Phishing-Richtlinien sind nur in Organisationen verfügbar, die Office 365 ATP haben. Zum Beispiel:
+ATP-Anti-Phishing-Richtlinien sind nur in Organisationen verfügbar, die Office 365 ATP haben. Beispiel:
 
 - Microsoft 365 Enterprise E5, Microsoft 365 Education A5, etc.
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
@@ -188,6 +188,9 @@ Die folgenden Identitätswechseleinstellungen sind nur in Richtlinien für ATP-A
   - **Imitierte Benutzer**: die Absenderadresse enthält einen geschützten Benutzer.
   - **Imitierte Domänen**: die Absenderadresse enthält eine geschützte Domäne.
   - **Ungewöhnliche Zeichen**: die from-Adresse enthält ungewöhnliche Zeichensätze (beispielsweise mathematische Symbole und Text oder eine Mischung aus Groß-und Kleinbuchstaben) in einem geschützten Absender oder in einer Domäne.
+
+  > [!NOTE]
+  > Selbst wenn die Sicherheitstipps für Identitätswechsel deaktiviert sind, können Sie eine e-Mail-Fluss Regel (auch als Transportregel bezeichnet) verwenden, um Nachrichten eine Nachrichtenkopfzeile mit dem Namen **X-MS-Exchange-EnableFirstContactSafetyTip** hinzuzufügen. Es werden spezielle Sicherheitstipps angezeigt, in denen Empfänger benachrichtigt werden, dass Sie häufig keine e-Mails vom Absender erhalten, oder in Fällen, in denen der Empfänger zum ersten Mal eine e-Mail vom Absender erhält.
 
 - **Post Fach Intelligenz**: aktiviert oder deaktiviert künstliche Intelligenz (AI), die Benutzer-e-Mail-Muster mit ihren häufigen Kontakten bestimmt. Diese Einstellung unterstützt die KI zwischen legitimen und gefälschten e-Mails von diesen Kontakten. Die Post Fach Intelligenz steht nur für Exchange Online Postfächer zur Verfügung.
 

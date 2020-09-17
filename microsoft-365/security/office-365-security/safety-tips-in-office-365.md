@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie EoP und Office 365 Sie mit Spam, Phishing und Schadsoftware schützen, indem Sie oben in e-Mails einen Sicherheitstipp hinzufügen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e13e9cce325dfd3f8312c1d68459ab3c423c1fbb
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: b4bcfd2bf05f2f5ae7a51fbc2488cb1aa6e7d2c9
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827481"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949632"
 ---
 # <a name="safety-tips-in-email-messages"></a>Sicherheitstipps in E-Mail-Nachrichten
 
@@ -38,12 +38,6 @@ Der Sicherheitstipp – eine farbcodierte Nachricht – warnt Sie vor potenziell
     ![Screenshot, der einen roten Sicherheitstipp zeigt.](../../media/5078a0be-e556-44a1-b169-09d780d26898.png)
 
     Ein roter Sicherheitstipp in einer e-Mail bedeutet, dass die Nachricht, die Sie erhalten haben, etwas Verdächtiges enthält, beispielsweise einen Phishing-Betrug. Es wird empfohlen, diese Art von e-Mail-Nachrichten aus dem Posteingang zu löschen, ohne Sie zu öffnen.
-
-- Spam (gelber Sicherheitstipp).
-
-    ![Screenshot, der eine gelbe Sicherheitsspitze zeigt.](../../media/793c9265-ea44-48fd-a98f-804fadd4163b.png)
-
-    Ein gelber Sicherheitstipp in einer e-Mail bedeutet, dass die Nachricht als Spam gekennzeichnet wurde. Wenn Sie den Absender der Nachricht nicht erkennen und ihm vertrauen, laden Sie keine Anlagen oder Bilder herunter, und klicken Sie auf keine Links in der Nachricht. In Outlook im Internet können Sie in der gelben Leiste eines Junk-e-Mail-Elements auf **IT es not Spam** klicken, um die Nachricht in Ihren Posteingang zu verschieben. Wenn der gelbe Sicherheitstipp in einer Nachricht angezeigt wird, die an Ihren Posteingang zugestellt wurde, ist Sie wahrscheinlich da, weil Sie das Verschieben von Spam in Ihren Junk-e-Mail-Ordner deaktiviert haben.
 
 - Safe Mail (grüner Sicherheitstipp).
 

@@ -10,12 +10,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: e7eb3eaa6961993f8c77645c8d6760e6701817e2
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 33a2bf0b85b9b8561a5dcf32eae6e4cd0cb53765
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547938"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950484"
 ---
 # <a name="privacy-and-personal-data"></a>Datenschutz und personenbezogene Daten
 
@@ -128,7 +128,7 @@ Im folgenden Abschnitt wird erläutert, wie Controller bei der Suche, dem Zugrif
 
 ### <a name="it-admin-contact-information"></a>Kontaktinformationen für IT-Administratoren
 
-Ein mandantenadministrator kann seine personenbezogenen Daten direkt im Abschnitt "admin Contact" des Microsoft Managed Desktop-Portals anzeigen, korrigieren und löschen.
+Ein mandantenadministrator kann seine persönlichen Daten (beispielsweise eigene Kontaktinformationen) direkt im Abschnitt "admin Contact" des Microsoft Managed Desktop-Portals anzeigen, korrigieren und löschen.
 
 ### <a name="user-related-personal-data"></a>Benutzerbezogene personenbezogene Daten
 

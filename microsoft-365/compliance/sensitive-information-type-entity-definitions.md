@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: Die Verhinderung von Datenverlust im Security &amp; Compliance Center umfasst 80 Typen für vertrauliche Informationen, die Sie in ihren DLP-Richtlinien verwenden können. Dieses Thema enthält eine Liste aller dieser vertraulichen Informationstypen und zeigt, was eine DLP-Richtlinie sucht, wenn sie den jeweiligen Typen erkennt.
-ms.openlocfilehash: 9df6bd1918ec8f4c3b5f55d864468d17be31b119
-ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
+ms.openlocfilehash: 8716a6d4e29f94ff3d7bedaaadece2449fcec8a3
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47775100"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950283"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Entitätsdefinitionen für Typen vertraulicher Informationstypen
 
@@ -684,8 +684,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - fuhrerschein
 - Fuhrerschein Republik Osterreich
 
-## <a name="austria-national-identification-number"></a>Österreichische nationale Identifikationsnummer
-Diese vertrauliche Informationstyp Entität steht nur im vertraulichen Informationstyp "EU-nationale Identifikationsnummer" zur Verfügung.
+## <a name="austria-identity-card"></a>Österreich-Personalausweis
 
 ### <a name="format"></a>Format
 
@@ -711,13 +710,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Ein Schlüsselwort aus  `Keywords_austria_eu_national_id_card` wurde gefunden. 
    
 ```xml
-<!-- EU austria_eu_national_id -->
-<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
+      <!-- Austria Identity Card -->
+      <Entity id="5ec06c3b-007e-4820-8343-7ff73b889735" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_austria_eu_national_id_card" />
           <Match idRef="Keywords_austria_eu_national_id_card" />
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
@@ -835,7 +834,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - versicherungsnummer
 
 ## <a name="austria-tax-identification-number"></a>Österreichische Steueridentifikationsnummer
-Diese vertrauliche Informationstyp Entität ist nur für den Typ der vertraulichen Informationen der EU-Steuernummer verfügbar.
 
 ### <a name="format"></a>Format
 
@@ -861,20 +859,20 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 - Die  `Func_austria_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
 - Ein Schlüsselwort aus  `Keywords_austria_eu_tax_file_number` wurde gefunden. 
     
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Die  `Func_austria_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+      <!-- Austria Tax Identification Number -->
+      <Entity id="4fd58d22-af28-4451-b18a-6f722430a56d" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_austria_eu_tax_file_number" />
           <Match idRef="Keywords_austria_eu_tax_file_number" />
         </Pattern>
-<Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="65">
           <IdMatch idRef="Func_austria_eu_tax_file_number" />
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
@@ -1493,20 +1491,19 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Fuehrerschein-Nr
 
 ## <a name="belgium-national-number"></a>Belgische Landesnummer
-Diese vertrauliche Informationstyp Entität ist im vertraulichen Informationstyp "EU-nationale Identifikationsnummer" enthalten und steht als eigenständige vertrauliche Informationstyp Entität zur Verfügung.
 
 ### <a name="format"></a>Format
 
-11 Ziffern plus Trennzeichen
+11 Ziffern und optionale Trennzeichen
 
 ### <a name="pattern"></a>Muster
 
 11 Ziffern plus Trennzeichen:
-- sechs Ziffern und zwei Punkte im Format yy. MM. DD für das Geburtsdatum 
-- ein Bindestrich 
+- sechs Ziffern und zwei optionale Zeiträume im Format yy. MM. DD für das Geburtsdatum 
+- Ein optionales Trennzeichen von Punkt, Bindestrich, Leerzeichen 
 - drei aufeinanderfolgende Ziffern (ungerade für Männer, sogar für Frauen) 
-- einen Zeitraum 
-- zwei Ziffern, die eine Prüfziffer sind
+- Ein optionales Trennzeichen von Punkt, Bindestrich, Leerzeichen 
+- zwei Prüfziffern
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -1519,14 +1516,21 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Ein Schlüsselwort aus Keyword_belgium_national_number wurde gefunden.
 - Die Prüfsumme stimmt.
 
+Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+- Die Funktion Func_belgium_national_number sucht nach Inhalten, die mit dem Muster übereinstimmen.
+- Die Prüfsumme stimmt.
+
 ```xml
 <!-- Belgium National Number -->
-  <Entity id="fb969c9e-0fd1-4b18-8091-a2123c5e6a54" recommendedConfidence="75" patternsProximity="300">
-   <Pattern confidenceLevel="75">
-     <IdMatch idRef="Func_belgium_national_number"/>
-     <Match idRef="Keyword_belgium_national_number"/>
-  </Pattern>
-</Entity>
+       <Entity id="fb969c9e-0fd1-4b18-8091-a2123c5e6a54" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_belgium_national_number" />
+          <Match idRef="Keyword_belgium_national_number" />
+        </Pattern>
+        <Pattern confidenceLevel="65">
+          <IdMatch idRef="Func_belgium_national_number" />
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
@@ -1695,107 +1699,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - identifizierbare nationale
 - identifiantnational #
 - numéronational #
-
-## <a name="belgium-tax-identification-number"></a>Belgische Steueridentifikationsnummer
-Diese vertrauliche Informationstyp Entität steht nur für den Identificaiton-Informationstyp "EU-Steuernummer" zur Verfügung.
-
-### <a name="format"></a>Format
-
-11 Ziffern ohne Leerzeichen und Trennzeichen
-  
-### <a name="pattern"></a>Muster
-
-11 Ziffern:
-  
-- zwei Ziffern
-- a "0" oder "1"
-- eine Ziffer
-- a "0" oder "1" oder "2" oder "3" 
-- sechs Ziffern
-    
-### <a name="checksum"></a>Prüfsumme
-
-Nicht zutreffend
-  
-### <a name="definition"></a>Definition
-
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläre Ausdruck  `Regex_belgium_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus  `Keywords_belgium_eu_tax_file_number` wurde gefunden. 
-    
-```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="75">
-          <IdMatch idRef="Regex_belgium_eu_tax_file_number" />
-          <Match idRef="Keywords_belgium_eu_tax_file_number" />
-        </Pattern>
-</Entity>
-```
-
-### <a name="keywords"></a>Schlüsselwörter
-
-#### <a name="keywords_belgium_eu_tax_file_number"></a>Keywords_belgium_eu_tax_file_number
-
-- belasten von Mal
-- BNN #
-- BNN
-- Carte d ' identité
-- identifizierbare nationale
-- identifiantnational #
-- identificatie
-- Identifizierung
-- Identifikation
-- identifikationsnummer
-- identifizierung
-- identité
-- identiteit
-- identiteitskaart
-- Identität
-- Inschrift
-- nationale Nummer
-- National Register
-- nationalnumber #
-- nationalnumber
-- NIF #
-- NIF
-- Numéro d'assuré
-- Numéro de Registre National
-- numéro de sécurité
-
-- numéro d'identification
-- numéro d'immatriculation
-- Numéro National
-- numéronational #
-- persönliche ID-Nummer
-- Personalausweis
-- personalidnumber #
-- Registratie
-- Registrierung
-- registrationsnumme
-- Registrierung
-- social security number
-
-- SSN #
-- SSN
-- Steuernummer
-- tax id
-
-- Steueridentifikationsnummer
-- Steueridentifikationsnummer
-- Steuernummer #
-- Steuernummer
-- Steuernummer
-- Steuerregistrierungsnummer
-- per Taxi #
-- taxidno #
-- taxidnumber #
-- taxno #
-- taxnumber #
-- taxnumber
-- Tin-ID
-- Tin Nein
-- Zinn #
 
 
 ## <a name="belgium-value-added-tax-number"></a>Belgische Mehrwertsteuernummer
@@ -2114,8 +2017,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - шофьорска книжка
 
 
-## <a name="bulgaria-national-identification-number"></a>Bulgarische nationale Identifikationsnummer
-Diese vertrauliche Informationstyp Entität steht nur im vertraulichen Informationstyp "EU-nationale Identifikationsnummer" zur Verfügung.
+## <a name="bulgaria-uniform-civil-number"></a>Bulgarien Uniform Civil Number
 
 ### <a name="format"></a>Format
 
@@ -2138,26 +2040,31 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Die  `Func_bulgaria_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus  `Keywords_bulgaria_national_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_bulgaria_eu_national_id_card` wurde gefunden. 
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Die  `Func_bulgaria_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
-<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
+      <!-- Bulgaria Uniform Civil Number -->
+      <Entity id="100d58b1-0a35-4fb1-aa89-e4a86fb53fcc" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_bulgaria_eu_national_id_card" />
-          <Match idRef="Keywords_bulgaria_national_number" />
+          <Match idRef="Keywords_bulgaria_eu_national_id_card" />
         </Pattern>
-<Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_bulgaria_eu_national_id_card" />
+          <Any minMatches="0" maxMatches="0">
+            <Match idRef="Keywords_bulgaria_eu_telephone_number" />
+            <Match idRef="Keywords_bulgaria_eu_mobile_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywords_bulgaria_national_number"></a>Keywords_bulgaria_national_number
+#### <a name="keywords_bulgaria_eu_national_id_card"></a>Keywords_bulgaria_eu_national_id_card
 
 - BNN #
 - BNN
@@ -2244,94 +2151,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Bulgarische Passnummer
 - Passport-Nummer
 - номер на паспорта
-
-
-## <a name="bulgaria-tax-identification-number"></a>Steueridentifikationsnummer (Bulgarien)
-Diese vertrauliche Informationstyp Entität ist nur im vertraulichen Informationstyp EU-Steueridentifikationsnummer verfügbar.
-
-### <a name="format"></a>Format
-
-zehn Ziffern ohne Leerzeichen und Trennzeichen
-  
-### <a name="pattern"></a>Muster
-
-zehn Ziffern
-  
-### <a name="checksum"></a>Prüfsumme
-
-Ja
-  
-### <a name="definition"></a>Definition
-
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die  `Func_bulgaria_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus  `Keywords_bulgaria_eu_tax_file_number` wurde gefunden. 
-
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die  `Func_bulgaria_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-
-```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_bulgaria_eu_tax_file_number" />
-          <Match idRef="Keywords_bulgaria_eu_tax_file_number" />
-        </Pattern>
- <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_bulgaria_eu_tax_file_number" />
-        </Pattern>
-</Entity>
-```
-
-### <a name="keywords"></a>Schlüsselwörter
-
-#### <a name="keywords_bulgaria_eu_tax_file_number"></a>Keywords_bulgaria_eu_tax_file_number
-
-- BNN #
-- BNN
-- BUCN #
-- BUCN
-- edinen grazhdanski Nomen
-- EGN #
-- EGN
-- identification number
-
-- 
-national id
-- nationale Nummer
-- nationalnumber #
-- nationalnumber
-- persönliche ID
-- persönliches Nein
-- persönliche Nummer
-- personalidnumber #
-- social security number
-
-- SSN #
-- SSN
-- Uniform Civil ID
-- Uniform Civil Nein
-- einheitliche Zivil Telefonnummer
-- uniformcivilno #
-- uniformcivilno
-- uniformcivilnumber #
-- uniformcivilnumber
-- eindeutige Staats Bürgerschafts Nummer
-- егн #
-- егн
-- единен граждански номер
-- идентификационен номер
-- личен номер
-- лична идентификация
-- лично не
-- национален номер
-- номер на гражданството
-- униформ-ID
-- униформ-граждански-ID
-- униформ граждански не
-- униформ граждански номер
-- униформгражданскиid #
-- униформгражданскине. #
 
 
 ## <a name="canada-bank-account-number"></a>Kanada Bank Kontonummer
@@ -3554,7 +3373,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 11 Ziffern:
 - zehn Ziffern 
-- letzte Ziffer ist eine Prüfziffer für den Zweck des internationalen Datenaustauschs, die Buchstaben HR werden vor den elf Ziffern hinzugefügt.
+- letzte Ziffer ist eine Prüfziffer
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -3564,7 +3383,7 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Die Funktion Func_croatia_oib_number sucht nach Inhalten, die mit dem Muster übereinstimmen.
-- Ein Schlüsselwort aus Keyword_croatia_oib_number wurde gefunden.
+- Ein Schlüsselwort aus Keywords_croatia_eu_tax_file_number wurde gefunden.
 - Die Prüfsumme stimmt.
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
@@ -3572,26 +3391,51 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Die Prüfsumme stimmt.
 
 ```xml
-<!-- Croatia Personal Identification (OIB) Number -->
-<Entity id="31983b6d-db95-4eb2-a630-b44bd091968d" recommendedConfidence="85" patternsProximity="300">
-  <Pattern confidenceLevel="85">
-     <IdMatch idRef="Func_croatia_oib_number"/>
-     <Match idRef="Keyword_croatia_oib_number"/>
-  </Pattern>
-  <Pattern confidenceLevel="75">
-     <IdMatch idRef="Func_croatia_oib_number"/>
-  </Pattern>
-</Entity>
+      <!-- Croatia Personal Identification (OIB) Number -->
+      <Entity id="31983b6d-db95-4eb2-a630-b44bd091968d" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_croatia_oib_number" />
+          <Match idRef="Keywords_croatia_eu_tax_file_number" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_croatia_oib_number" />
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keyword_croatia_oib_number"></a>Keyword_croatia_oib_number
 
-- Personal Identification Number
-- Osobni identifikacijski broj 
-- OIB 
+- majstorski Broj građana
+- Bürgermeister Nummer
+- Nacionalni identifikacijski Broj
+- nationale Identifikationsnummer
+- OIB #
+- OIB
+- osobna iskaznica
+- Osobni-ID
+- Osobni identifikacijski Broj
+- persönliche Identifikationsnummer
+- porezni Broj
+- porezni identifikacijski Broj
+- tax id
 
+- Steueridentifikationsnummer
+- Steueridentifikationsnummer
+- Steuernummer #
+- Steuernummer
+- Steuernummer
+- Steuerregistrierungsnummer
+- per Taxi #
+- taxidno #
+- taxidnumber #
+- taxno #
+- taxnumber #
+- taxnumber
+- Tin-ID
+- Tin Nein
+- Zinn #
 
 ## <a name="croatia-social-security-number-or-equivalent-identification"></a>Kroatische Sozialversicherungsnummer oder gleichwertige Kennzeichnung
 Diese vertrauliche Informationstyp Entität ist nur in der Sozialversicherungsnummer der EU oder einem entsprechenden ID-vertraulichen Informationstyp verfügbar.
@@ -3655,81 +3499,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Osobni identifikacijski Broj
 
    
-## <a name="croatia-tax-identification-number"></a>Kroatische Steueridentifikationsnummer
-Diese vertrauliche Informationstyp Entität ist nur im Steuer Identificaiton Nummer vertraulichen Informationstyp der EU verfügbar.
-
-### <a name="format"></a>Format
-
-11 Ziffern ohne Leerzeichen oder Trennzeichen
-  
-### <a name="pattern"></a>Muster
-
-11 Ziffern:
-  
-- zehn Ziffern, nach dem Zufallsprinzip ausgewählt
-- eine Prüfziffer
-    
-### <a name="checksum"></a>Prüfsumme
-
-Ja
-  
-### <a name="definition"></a>Definition
-
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die  `Func_croatia_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus  `Keywords_croatia_eu_tax_file_number` wurde gefunden. 
-
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die  `Func_croatia_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-
-```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_croatia_eu_tax_file_number" />
-          <Match idRef="Keywords_croatia_eu_tax_file_number" />
-        </Pattern>
-<Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_croatia_eu_tax_file_number" />
-        </Pattern>
-</Entity>
-```
-
-### <a name="keywords"></a>Schlüsselwörter
-
-#### <a name="keywords_croatia_eu_tax_file_number"></a>Keywords_croatia_eu_tax_file_number
-
-- majstorski Broj građana
-- Bürgermeister Nummer
-- Nacionalni identifikacijski Broj
-- nationale Identifikationsnummer
-- OIB #
-- OIB
-- osobna iskaznica
-- Osobni-ID
-- Osobni identifikacijski Broj
-- persönliche Identifikationsnummer
-- porezni Broj
-- porezni identifikacijski Broj
-- tax id
-
-- Steueridentifikationsnummer
-- Steueridentifikationsnummer
-- Steuernummer #
-- Steuernummer
-- Steuernummer
-- Steuerregistrierungsnummer
-- per Taxi #
-- taxidno #
-- taxidnumber #
-- taxno #
-- taxnumber #
-- taxnumber
-- Tin-ID
-- Tin Nein
-- Zinn #
-
-
 ## <a name="cyprus-drivers-license-number"></a>Zypern-Führerscheinnummer
 Diese Typen Entität für vertrauliche Informationen ist nur im vertraulichen Informationstyp für den EU-Führerscheinnummer verfügbar.
 
@@ -3779,8 +3548,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - άδεια οδήγησης
 
 
-## <a name="cyprus-national-identification-number"></a>Zyprische nationale Identifikationsnummer
-Diese vertrauliche Informationstyp Entität steht nur im vertraulichen Informationstyp "EU-nationale Identifikationsnummer" zur Verfügung.
+## <a name="cyprus-identity-card"></a>Zypern-Personalausweis
 
 ### <a name="format"></a>Format
 
@@ -3801,12 +3569,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Ein Schlüsselwort aus  `Keywords_cyprus_eu_national_id_card` wurde gefunden. 
     
 ```xml 
-<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
+      <!-- Cyprus Identity Card -->
+      <Entity id="3ba8afe5-7a6c-4929-8247-0001b6878438" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_cyprus_eu_national_id_card" />
           <Match idRef="Keywords_cyprus_eu_national_id_card" />
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
@@ -3863,7 +3632,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 
 ## <a name="cyprus-tax-identification-number"></a>Zyprische Steueridentifikationsnummer
-Diese vertrauliche Informationstyp Entität ist nur im vertraulichen Informationstyp EU-Steueridentifikationsnummer verfügbar.
 
 ### <a name="format"></a>Format
 
@@ -3873,7 +3641,7 @@ acht Ziffern und ein Buchstabe im angegebenen Muster
 
 acht Ziffern und ein Buchstabe:
   
-- a "0" 
+- a "0" oder "9"
 - sieben Ziffern
 - ein Buchstabe (ohne Berücksichtigung der Groß-/Kleinschreibung)
     
@@ -3891,16 +3659,16 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Die  `Func_cyprus_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+      <!-- Cyprus Tax Identification Number -->
+      <Entity id="40e64bd9-55f3-4a09-9bd6-1db18dced9dd" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_cyprus_eu_tax_file_number" />
           <Match idRef="Keywords_cyprus_eu_tax_file_number" />
         </Pattern>
-Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_cyprus_eu_tax_file_number" />
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
@@ -3933,7 +3701,6 @@ Pattern confidenceLevel="75">
 - κωδικός φορολογικού μητρώου
 - φορολογική ταυτότητα
 - φορολογικού κωδικού
-- Steuernummer
 
 
 ## <a name="czech-drivers-license-number"></a>Tschechische Führerscheinnummer
@@ -4035,7 +3802,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 
 ## <a name="czech-personal-identity-number"></a>Tschechische Personalausweisnummer
-Diese vertrauliche Informationen Typ Entität ist in der EU-National Identification Number Bundle enthalten und steht als eigenständige vertrauliche Informationen Typ Entität zur Verfügung.
 
 ### <a name="format"></a>Format
 
@@ -4044,19 +3810,11 @@ neun Ziffern mit optionalem Schrägstrich (altes Format) zehn Ziffern mit option
 ### <a name="pattern"></a>Muster
 
 neun Ziffern (altes Format):
-- neun Ziffern
-
-ODER
-
 - sechs Ziffern, die das Geburtsdatum darstellen.
 - Schrägstrich
 - drei Ziffern
 
 zehn Ziffern (neues Format):
-- zehn Ziffern
-
-ODER
-
 - sechs Ziffern, die das Geburtsdatum darstellen.
 - Schrägstrich 
 - vier Ziffern, wobei die letzte Ziffer eine Prüfziffer ist
@@ -4073,19 +3831,76 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 - Ein Schlüsselwort aus Keyword_czech_id_card wurde gefunden.
 - Die Prüfsumme stimmt.
 
+Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+
+- Die Funktion Func_czech_id_card_new_format sucht nach Inhalten, die mit dem Muster übereinstimmen.
+- Die Prüfsumme stimmt.
+
 ```xml
 <!-- Czech Personal Identity Number -->
-<Entity id="60c0725a-4eb6-455b-9dda-05d8a7396497"      patternsProximity="300" recommendedConfidence="85">
-   <Pattern confidenceLevel="85">
-      <IdMatch idRef="Func_czech_id_card" />
-      <Match idRef="Keyword_czech_id_card" />
-   </Pattern>
-</Entity>
+      <!-- Czech Personal Identity Number -->
+      <Entity id="60c0725a-4eb6-455b-9dda-05d8a7396497" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_czech_id_card" />
+          <Match idRef="Keyword_czech_id_card" />
+        </Pattern>
+        <Version minEngineVersion="15.20.3000.000">
+          <Pattern confidenceLevel="75">
+            <IdMatch idRef="Func_czech_id_card_new_format" />
+          </Pattern>
+        </Version>
+      </Entity>
 ```
 ### <a name="keywords"></a>Schlüsselwörter
 
-- Tschechische Personalausweisnummer
-- Rodné číslo
+#### <a name="keyword_czech_id_card"></a>Keyword_czech_id_card
+
+- Geburtsnummer
+- Tschechische Republik ID
+- czechidno #
+- daňové číslo
+- identifikační číslo
+- Identität Nein
+- Identitätsnummer
+- identityno #
+- identityno
+- Versicherungsnummer
+- nationale Identifikationsnummer
+- nationalnumber #
+- nationale Nummer
+- osobní číslo
+- personalidnumber #
+- persönliche ID-Nummer
+- persönliche Identifikationsnummer
+- persönliche Nummer
+- PID #
+- pid
+- pojištění číslo
+- rč
+- rodne cislo
+- rodné číslo
+- SSN
+- SSN #
+- social security number
+
+- tax id
+
+- Steueridentifikationsnummer
+- Steueridentifikationsnummer
+- Steuernummer #
+- Steuernummer
+- Steuernummer
+- Steuerregistrierungsnummer
+- per Taxi #
+- taxidno #
+- taxidnumber #
+- taxno #
+- taxnumber #
+- taxnumber
+- Tin-ID
+- Tin Nein
+- Zinn #
+- eindeutige Identifikationsnummer
 
 
 ## <a name="czech-social-security-number-or-equivalent-identification"></a>Tschechische Sozialversicherungsnummer oder gleichwertige Identifikation
@@ -4148,84 +3963,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - rč
 - rodné číslo
 - rodne cislo
-
-
-## <a name="czech-tax-identification-number"></a>Tschechische Steueridentifikationsnummer
-Diese vertrauliche Informationstyp Entität ist nur im vertraulichen Informationstyp EU-Steueridentifikationsnummer verfügbar.
-
-### <a name="format"></a>Format
-
-neun oder zehn Ziffern mit einem optionalen Backslash
-  
-### <a name="pattern"></a>Muster
-
-neun oder zehn Ziffern mit einem optionalen backslashl:
-  
-- sechs Ziffern 
-- ein Backslash (optional)
-- drei oder vier Ziffern
-    
-### <a name="checksum"></a>Prüfsumme
-
-Nicht zutreffend
-  
-### <a name="definition"></a>Definition
-
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläre Ausdruck  `Regex_czech_republic_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus  `Keywords_czech_republic_eu_tax_file_number` wurde gefunden. 
-    
-```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="75">
-          <IdMatch idRef="Regex_czech_republic_eu_tax_file_number" />
-          <Match idRef="Keywords_czech_republic_eu_tax_file_number" />
-        </Pattern>
-</Entity>
-```
-
-### <a name="keywords"></a>Schlüsselwörter
-
-#### <a name="keywords_czech_republic_eu_tax_file_number"></a>Keywords_czech_republic_eu_tax_file_number
-
-- Tschechische Republik ID
-- czechidno #
-- daňové číslo
-- identifikační číslo
-- Identität Nein
-- Identitätsnummer
-- identityno #
-- identityno
-- Versicherungsnummer
-- nationale Identifikationsnummer
-- nationale Nummer
-- osobní číslo
-- persönliche ID-Nummer
-- persönliche Nummer
-- PID #
-- pid
-- pojištění číslo
-- rodné číslo
-- tax id
-
-- Steueridentifikationsnummer
-- Steueridentifikationsnummer
-- Steuernummer #
-- Steuernummer
-- Steuernummer
-- Steuerregistrierungsnummer
-- per Taxi #
-- taxidno #
-- taxidnumber #
-- taxno #
-- taxnumber #
-- taxnumber
-- Tin-ID
-- Tin Nein
-- Zinn #
-- eindeutige Identifikationsnummer
-- Steuernummer
 
 
 ## <a name="denmark-drivers-license-number"></a>Dänische Führerscheinnummer
@@ -4342,18 +4079,26 @@ Ja
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläre Ausdruck Regex_denmark_id findet Inhalte, die mit dem Muster übereinstimmen.
+- Der reguläre Ausdruck Func_denmark_eu_tax_file_number findet Inhalte, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus Keyword_denmark_id wurde gefunden.
+- Die Prüfsumme stimmt.
+
+Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+- Der reguläre Ausdruck Func_denmark_eu_tax_file_number findet Inhalte, die mit dem Muster übereinstimmen.
 - Die Prüfsumme stimmt.
 
 ```xml
 <!-- Denmark Personal Identification Number -->
-<Entity id="6c4f2fef-56e1-4c00-8093-88d7a01cf460" recommendedConfidence="75" patternsProximity="300">
-  <Pattern confidenceLevel="75">
-     <IdMatch idRef="Regex_denmark_id"/>
-     <Match idRef="Keyword_denmark_id"/>
-  </Pattern>
-</Entity>
+      <!-- Denmark Personal Identification Number -->
+      <Entity id="6c4f2fef-56e1-4c00-8093-88d7a01cf460" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_denmark_eu_tax_file_number" />
+          <Match idRef="Keyword_denmark_id" />
+        </Pattern>
+        <Pattern confidenceLevel="65">
+          <IdMatch idRef="Func_denmark_eu_tax_file_number" />
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
@@ -4376,15 +4121,23 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Identitätsnummer
 - krankenkassennummer
 - National-Nr. #
+- nationalnumber #
+- nationale Nummer
+- personalidnumber #
 - personalidentityno #
+- persönliche ID-Nummer
 - personnummer
 - personnummer #
 - reisekrankenversicherungskartenummer
 - rejsesygesikringskort
+- SSN
+- SSN #
 - Skat-ID
 - Skate Kode
 - Skate Nummer
 - skattenummer
+- social security number
+
 - sundhedsforsikringskort
 - sundhedsforsikringsnummer
 - sundhedskort
@@ -4411,6 +4164,19 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Steuernummer #
 - Tin-ID
 - Tin Nein
+- cpr.nr
+- cprnr
+- cprnummer
+- personnr
+- personregister
+- sygesikringsbevis
+- sygesikringsbevisnr
+- sygesikringsbevisnummer
+- sygesikringskort
+- sygesikringskortnr
+- sygesikringskortnummer
+- sygesikringsnr
+- sygesikringsnummer
 
 
 ## <a name="denmark-social-security-number-or-equivalent-identification"></a>Dänemark Sozialversicherungsnummer oder gleichwertige Kennzeichnung
@@ -4469,104 +4235,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - personalidnumber #
 - CPR-Nummer
 - personnummer
-
-
-## <a name="denmark-tax-identification-number"></a>Dänische Steueridentifikationsnummer
-Diese vertrauliche Informationstyp Entität ist nur im vertraulichen Informationstyp EU-Steueridentifikationsnummer verfügbar.
-
-### <a name="format"></a>Format
-
-zehn Ziffern mit einem Bindestrich
-  
-### <a name="pattern"></a>Muster
-
-zehn Ziffern mit einem Bindestrich:
-  
-- sechs Ziffern, die dem Geburtsdatum entsprechen (TTMMJJ)
-- ein Bindestrich
-- vier Ziffern, die einer Sequenznummer entsprechen, wobei die erste Ziffer dem Jahrhundert der Geburt entspricht und die letzte Ziffer dem Geschlecht der Person entspricht (ungerade für männliche und sogar für weiblich)
-    
-### <a name="checksum"></a>Prüfsumme
-
-Ja
-  
-### <a name="definition"></a>Definition
-
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die  `Func_denmark_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus  `Keywords_denmark_eu_tax_file_number` wurde gefunden. 
-    
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die  `Func_denmark_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-    
-```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_denmark_eu_tax_file_number" />
-          <Match idRef="Keywords_denmark_eu_tax_file_number" />
-        </Pattern> 
-<Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_denmark_eu_tax_file_number" />
-        </Pattern>
-</Entity>
-```
-
-### <a name="keywords"></a>Schlüsselwörter
-
-#### <a name="keywords_denmark_eu_tax_file_number"></a>Keywords_denmark_eu_tax_file_number
-
-- Centrale personregister
-- civilt registreringssystem
-- CPR
-- CPR #
-- Gesundheitskarte Nummer
-- gesundheitsversicherungkarte Nummer
-- Integritäts Karte
-- Krankenversicherungskarten Nummer
-- Krankenversicherungsnummer
-- identification number
-
-- identifikationsnummer
-- identifikationsnummer #
-- Identitätsnummer
-- krankenkassennummer
-- National-Nr. #
-- personalidentityno #
-- personnummer
-- personnummer #
-- reisekrankenversicherungskartenummer
-- rejsesygesikringskort
-- Skat-ID
-- Skate Kode
-- Skate Nummer
-- skattenummer
-- sundhedsforsikringskort
-- sundhedsforsikringsnummer
-- sundhedskort
-- sundhedskortnummer
-- sygesikring
-- sygesikringkortnummer
-- Steuercode
-- Krankenversicherungskarte für Reisen
-- uniqueidentityno #
-- Steuernummer
-- Steuerregistrierungsnummer
-- tax id
-
-- Steueridentifikationsnummer
-- per Taxi #
-- taxnumber #
-- Steuernummer
-- taxno #
-- taxnumber
-- Steueridentifikationsnummer
-- Zinn #
-- taxidno #
-- taxidnumber #
-- Steuernummer #
-- Tin-ID
-- Tin Nein
 
 
 ## <a name="drug-enforcement-agency-dea-number"></a>Drug Enforcement Agency (DEA)-Nummer
@@ -4659,8 +4327,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - permis de conduire
 
 
-## <a name="estonia-national-identification-number"></a>Estnische nationale Identifikationsnummer
-Diese vertrauliche Informationstyp Entität steht nur im vertraulichen Informationstyp "EU-nationale Identifikationsnummer" zur Verfügung.
+## <a name="estonia-personal-identification-code"></a>Estland Personal Identification Code
 
 ### <a name="format"></a>Format
 
@@ -4671,7 +4338,6 @@ Diese vertrauliche Informationstyp Entität steht nur im vertraulichen Informati
 11 Ziffern:
   
 - eine Ziffer, die Geschlecht und Jahrhundert der Geburt entspricht (ungerade Zahl männlich, gerade Zahl weiblich; 1-2:19. Jahrhundert; 3-4:20th Century; 5-6:21st Century)
-    
 - sechs Ziffern, die dem Geburtsdatum entsprechen (JJMMTT)
 - drei Ziffern, die einer Seriennummer entsprechen, die Personen trennt, die am gleichen Datum geboren wurden
 - eine Prüfziffer
@@ -4690,16 +4356,20 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Die  `Func_estonia_eu_national_id_card` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
- 
-<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
+      <!-- Estonia Personal Identification Code -->
+      <Entity id="bfb26de6-dad5-4d48-ab72-4789cdd0654c" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_estonia_eu_national_id_card" />
           <Match idRef="Keywords_estonia_eu_national_id_card" />
         </Pattern>
-<Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_estonia_eu_national_id_card" />
-</Pattern>
-</Entity>
+          <Any minMatches="0" maxMatches="0">
+            <Match idRef="Keywords_estonia_eu_telephone_number" />
+            <Match idRef="Keywords_estonia_eu_mobile_number" />
+          </Any>
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
@@ -4778,86 +4448,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Estnische Passnummer
 - Passport-Nummer
 - Eesti kodaniku Pass
-
-
-## <a name="estonia-tax-identification-number"></a>Estland Steueridentifikationsnummer
-Diese vertrauliche Informationstyp Entität ist nur im vertraulichen Informationstyp EU-Steueridentifikationsnummer verfügbar.
-
-### <a name="format"></a>Format
-
-11 Ziffern ohne Leerzeichen oder Trennzeichen
-  
-### <a name="pattern"></a>Muster
-
-11 Ziffern:
-  
-- Eine Ziffer, die dem Geschlecht und dem Jahrhundert der Geburt entspricht, wobei eine ungerade Zahl männlich ist und die gerade Zahl weiblich wie folgt angibt: 1, 2 für das 19. Jahrhundert; 3,4 für das 20. Jahrhundert; und 5, 6 für das 21. Jahrhundert 
-    
-- sechs Ziffern, die dem Geburtsdatum entsprechen (JJMMTT)
-- drei Ziffern, die einer Seriennummer entsprechen, die Personen trennt, die am gleichen Datum geboren wurden
-- eine Prüfziffer
-    
-### <a name="checksum"></a>Prüfsumme
-
-Ja
-  
-### <a name="definition"></a>Definition
-
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die  `Func_estonia_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus  `Keywords_estonia_eu_tax_file_number` wurde gefunden. 
-    
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die  `Func_estonia_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-    
-```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_estonia_eu_tax_file_number" />
-          <Match idRef="Keywords_estonia_eu_tax_file_number" />
-        </Pattern>
-<Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_estonia_eu_tax_file_number" />
-        </Pattern>
-</Entity>
-```
-
-### <a name="keywords"></a>Schlüsselwörter
-
-#### <a name="keywords_estonia_eu_tax_file_number"></a>Keywords_estonia_eu_tax_file_number
-
-- ID-Kaart
-- IK
-- isikukood #
-- isikukood
-- maksu-ID
-- maksukohustuslase identifitseerimisnumber
-- maksunumber
-- nationale Identifikationsnummer
-- nationale Nummer
-- persönlicher Code
-- persönliche ID-Nummer
-- persönlicher Identifikationscode
-- persönliche Identifikationsnummer
-- personalidnumber #
-- tax id
-
-- Steueridentifikationsnummer
-- Steueridentifikationsnummer
-- Steuernummer #
-- Steuernummer
-- Steuernummer
-- Steuerregistrierungsnummer
-- per Taxi #
-- taxidno #
-- taxidnumber #
-- taxno #
-- taxnumber #
-- taxnumber
-- Tin-ID
-- Tin Nein
-- Zinn #
 
 ## <a name="eu-debit-card-number"></a>EU-Debitkartennummern
 
@@ -5247,14 +4837,14 @@ Hierbei handelt es sich um die Entitäten im vertraulichen Informationstyp des E
 
 Hierbei handelt es sich um die Entitäten im vertraulichen Informationstyp "EU-nationale Identifikationsnummer".
 
-- [Österreich](#austria-national-identification-number)
+- [Österreich](#austria-identity-card)
 - [Belgien](#belgium-national-number)
-- [Bulgarien](#bulgaria-national-identification-number)
+- [Bulgarien](#bulgaria-uniform-civil-number)
 - [Kroatien](#croatia-identity-card-number)
-- [Zypern](#cyprus-national-identification-number)
+- [Zypern](#cyprus-identity-card)
 - [Tschechisch](#czech-personal-identity-number)
 - [Dänemark](#denmark-personal-identification-number)
-- [Estland](#estonia-national-identification-number)
+- [Estland](#estonia-personal-identification-code)
 - [Finnland](#finland-national-identification-number)
 - [Frankreich](#france-national-identification-card-cni)
 - [Deutschland](#germany-identity-card-number)
@@ -5334,14 +4924,7 @@ Dabei handelt es sich um die Entitäten, die sich in der EU-Sozialversicherungsn
 Diese Entitäten befinden sich im vertraulichen Informationstyp "EU-Steueridentifikationsnummer".
 
 - [Österreich](#austria-tax-identification-number)
-- [Belgien](#belgium-tax-identification-number)
-- [Bulgarien](#bulgaria-tax-identification-number)
-- [Kroatien](#croatia-tax-identification-number)
 - [Zypern](#cyprus-tax-identification-number)
-- [Tschechisch](#czech-tax-identification-number)
-- [Dänemark](#denmark-tax-identification-number)
-- [Estland](#estonia-tax-identification-number)
-- [Finnland](#finland-tax-identification-number)
 - [Frankreich](#france-tax-identification-number)
 - [Deutschland](#germany-tax-identification-number)
 - [Griechenland](#greece-tax-identification-number)
@@ -5472,7 +5055,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 
 ## <a name="finland-national-identification-number"></a>Finnische nationale Identifikationsnummer
-Diese vertrauliche Informationstyp Entität ist im vertraulichen Informationstyp "EU-nationale Identifikationsnummer" enthalten und steht als eigenständige vertrauliche Informationstyp Entität zur Verfügung.
 
 ### <a name="format"></a>Format
 
@@ -5497,14 +5079,21 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 - ein Schlüsselwort aus Keyword_finnish_national_id wurde gefunden.
 - die Prüfsummen Übergabe
 
+Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+- die Funktion Func_finnish_national_id sucht nach Inhalten, die mit dem Muster übereinstimmen.
+- die Prüfsummen Übergabe
+
 ```xml
-<!-- Finnish National ID-->
-<Entity id="338FD995-4CB5-4F87-AD35-79BD1DD926C1" patternsProximity="300" recommendedConfidence="85">
-  <Pattern confidenceLevel="85">
+      <!-- Finnish National ID-->
+      <Entity id="338FD995-4CB5-4F87-AD35-79BD1DD926C1" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_finnish_national_id" />
           <Match idRef="Keyword_finnish_national_id" />
-  </Pattern>
-</Entity>
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_finnish_national_id" />
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
@@ -5670,104 +5259,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Hetu
 
 
-## <a name="finland-tax-identification-number"></a>Finnland Steueridentifikationsnummer
-Diese vertrauliche Informationstyp Entität ist nur im vertraulichen Informationstyp EU-Steueridentifikationsnummer verfügbar.
-
-### <a name="format"></a>Format
-
-eine Kombination aus 11 Zeichen aus Ziffern, Buchstaben und Plus-und Minuszeichen
-  
-### <a name="pattern"></a>Muster
-
-eine Kombination aus 11 Zeichen aus Ziffern, Buchstaben und Plus-und Minuszeichen:
-- sechs Ziffern
-- eine der folgenden Optionen: ein Pluszeichen, ein Minuszeichen oder der Buchstabe "a" (Groß-/Kleinschreibung nicht beachtet), wobei das Pluszeichen zwischen 1800-1899 geboren wird, das Minuszeichen zwischen 1900-1999 und "a" geboren ist 2000 und nach
-- drei Ziffern
-- ein Buchstabe oder eine Zahl
-    
-### <a name="checksum"></a>Prüfsumme
-
-Ja
-  
-### <a name="definition"></a>Definition
-
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die  `Func_finland_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus  `Keywords_finland_eu_tax_file_number` wurde gefunden. 
-    
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die  `Func_finland_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-    
-```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_finland_eu_tax_file_number" />
-          <Match idRef="Keywords_finland_eu_tax_file_number" />
-        </Pattern>
-<Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_finland_eu_tax_file_number" />
-        </Pattern>
-</Entity>
-```
-
-### <a name="keywords"></a>Schlüsselwörter
-
-#### <a name="keywords_finland_eu_tax_file_number"></a>Keywords_finland_eu_tax_file_number
-
-- ainutlaatuinen henkilökohtainen tunnus
-- henkilökohtainen tunnus
-- henkilötunnus
-- henkilötunnusnumero #
-- henkilötunnusnumero
-- Hetu
-- ID Nein
-- ID-Nummer
-- identification number
-
-- identiteetti numero
-- Identitätsnummer
-- idnumber
-- der Kok henkilötunnus
-- kansallisen henkilökortin
-- nationale ID-Karte
-- nationale ID-Nr.
-- persönliche ID
-- persönlicher Identitätscode
-- personalidnumber #
-- personbeteckning
-- personnummer
-- social security number
-
-- sosiaaliturvatunnus
-- Suomen der Kok henkilötunnus
-- tax id
-
-- Steueridentifikationsnummer
-- Steueridentifikationsnummer
-- Steuernummer #
-- Steuernummer
-- Steuernummer
-- Steuerregistrierungsnummer
-- per Taxi #
-- taxidno #
-- taxidnumber #
-- taxno #
-- taxnumber #
-- taxnumber
-- Tin-ID
-- Tin Nein
-- Zinn #
-- tunnistenumero
-- tunnus numero
-- tunnusluku
-- tunnusnumero
-- verokortti
-- veronumero
-- verotunniste
-- verotunnus
-
-
 ## <a name="france-drivers-license-number"></a>Frankreich Führerscheinnummer
 Diese vertrauliche Informationstyp Entität ist im Sicherheits Informationstyp des EU-Führerscheins Nummer verfügbar und steht als eigenständige vertrauliche Informationstyp Entität zur Verfügung.
 
@@ -5865,7 +5356,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 
 ## <a name="france-national-identification-card-cni"></a>Nationale Identitätskarte von Frankreich (CNI)
-Diese vertrauliche Informationstyp Entität ist im vertraulichen Informationstyp "EU-nationale Identifikationsnummer" enthalten und steht als eigenständige vertrauliche Informationstyp Entität zur Verfügung.
 
 ### <a name="format"></a>Format
 
@@ -5883,17 +5373,21 @@ Nein
 
 Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Der reguläre Ausdruck Regex_france_cni findet Inhalte, die dem Muster entsprechen.
+- Ein Schlüsselwort aus Keywords_france_eu_national_id_card wurde gefunden.
 
 ```xml
-<!-- France CNI -->
-<Entity id="f741ac74-1bc0-4665-b69b-f0c7f927c0c4" patternsProximity="300" recommendedConfidence="65">
-  <Pattern confidenceLevel="65">
+    <!-- France CNI -->
+    <Entity id="f741ac74-1bc0-4665-b69b-f0c7f927c0c4" patternsProximity="300" recommendedConfidence="65">
+      <Pattern confidenceLevel="65">
         <IdMatch idRef="Regex_france_cni" />
-  </Pattern>
-</Entity>
+        <Match idRef="Keywords_france_eu_national_id_card" />
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
+
+#### <a name="keywords_france_eu_national_id_card"></a>Keywords_france_eu_national_id_card
 
 - card number
 
@@ -6044,24 +5538,30 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 - code sécu 
 
 ## <a name="france-tax-identification-number"></a>Frankreich Steueridentifikationsnummer
-Diese vertrauliche Informationstyp Entität ist nur im vertraulichen Informationstyp EU-Steueridentifikationsnummer verfügbar.
 
 ### <a name="format"></a>Format
 
-13 Ziffern für einzelne Personen und neun Ziffern für Entitäten
+13 Ziffern
   
 ### <a name="pattern"></a>Muster
 
-13 Ziffern für einzelne Personen:
+13 Ziffern
   
-- eine Ziffer, die 0, 1, 2 oder 3 sein muss
-- 12 Ziffern
-    
-neun Ziffern für Entitäten
+- Eine Ziffer, die 0, 1, 2 oder 3 sein muss
+- 1 Ziffer
+- Ein Leerzeichen (optional) 
+- 2 Ziffern 
+- Ein Leerzeichen (optional) 
+- 3 Ziffern 
+- Ein Leerzeichen (optional) 
+- 3 Ziffern 
+- Ein Leerzeichen (optional) 
+- 3 Prüfziffern 
+
   
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht zutreffend
+Ja
   
 ### <a name="definition"></a>Definition
 
@@ -6073,16 +5573,21 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Die  `Func_france_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+      <!-- France Tax Identification Number (numéro SPI.) -->
+      <Entity id="ed59e77e-171d-442c-9ec1-88e2ebcb5b0a" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_france_eu_tax_file_number" />
           <Match idRef="Keywords_france_eu_tax_file_number" />
         </Pattern>
- <Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_france_eu_tax_file_number" />
+          <Any minMatches="0" maxMatches="0">
+            <Match idRef="Keywords_france_eu_telephone_number" />
+            <Match idRef="Keywords_france_eu_mobile_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
+
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
@@ -6315,8 +5820,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 
 ## <a name="germany-identity-card-number"></a>Deutsche Personalausweisnummer
-- Diese vertrauliche Informationstyp Entität ist im vertraulichen Informationstyp "EU-nationale Identifikationsnummer" enthalten und steht als eigenständige vertrauliche Informationstyp Entität zur Verfügung.
-- Diese vertrauliche Informationstyp Entität ist in der Sozialversicherungsnummer der EU oder einem entsprechenden ID-Typ für vertrauliche Informationen enthalten.
 
 ### <a name="format"></a>Format
 
@@ -6459,7 +5962,6 @@ bnationalit. t
 
 
 ## <a name="germany-tax-identification-number"></a>Deutschland Steueridentifikationsnummer
-Diese vertrauliche Informationstyp Entität ist nur im vertraulichen Informationstyp EU-Steueridentifikationsnummer verfügbar.
 
 ### <a name="format"></a>Format
 
@@ -6469,7 +5971,13 @@ Diese vertrauliche Informationstyp Entität ist nur im vertraulichen Information
 
 11 Ziffern:
   
-- zehn Ziffern 
+- Zwei Ziffern 
+- Ein optionales Leerzeichen
+- Drei Ziffern 
+- Ein optionales Leerzeichen
+- Drei Ziffern 
+- Ein optionales Leerzeichen
+- Zwei Ziffern
 - eine Prüfziffer
     
 ### <a name="checksum"></a>Prüfsumme
@@ -6486,16 +5994,16 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Die  `Func_germany_eu_tax_file_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+      <!-- Germany Tax Identification Number -->
+      <Entity id="43316a89-9880-40cf-b980-04bc7eefcec5" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_germany_eu_tax_file_number" />
           <Match idRef="Keywords_germany_eu_tax_file_number" />
         </Pattern>
-<Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_germany_eu_tax_file_number" />
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
@@ -6637,7 +6145,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 
 ## <a name="greece-national-id-card"></a>Griechenland National Ausweiskarte
-Diese vertrauliche Informationstyp Entität ist im vertraulichen Informationstyp "EU-nationale Identifikationsnummer" enthalten und steht als eigenständige vertrauliche Informationstyp Entität zur Verfügung.
 
 ### <a name="format"></a>Format
 
@@ -6665,14 +6172,20 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 - Der reguläre Ausdruck Regex_greece_id_card findet Inhalte, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus Keyword_greece_id_card wurde gefunden.
 
+Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+- Der reguläre Ausdruck Regex_greece_id_card findet Inhalte, die mit dem Muster übereinstimmen.
+
 ```xml
-<!-- Greece National ID Card -->
-<Entity id="82568215-1da1-46d3-874a-d2294d81b5ac" recommendedConfidence="85" patternsProximity="300">
-  <Pattern confidenceLevel="85">
-     <IdMatch idRef="Regex_greece_id_card"/>
-     <Match idRef="Keyword_greece_id_card"/>
-  </Pattern>
-</Entity>
+      <!-- Greece National ID Card -->
+      <Entity id="82568215-1da1-46d3-874a-d2294d81b5ac" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_greece_id_card" />
+          <Match idRef="Keyword_greece_id_card" />
+        </Pattern>
+        <Pattern confidenceLevel="65">
+          <IdMatch idRef="Regex_greece_id_card" />
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
@@ -6733,8 +6246,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ## <a name="greece-tax-identification-number"></a>Griechenland Steueridentifikationsnummer
 
-Diese vertrauliche Informationstyp Entität ist nur im vertraulichen Informationstyp EU-Steueridentifikationsnummer verfügbar.
-
 ### <a name="format"></a>Format
 
 Neun Ziffern ohne Leerzeichen und Trennzeichen
@@ -6755,13 +6266,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Ein Schlüsselwort aus  `Keywords_greece_eu_tax_file_number` wurde gefunden. 
     
 ```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+      <!-- Greek Tax Identification Number -->
+      <Entity id="15a54a5a-53d4-4080-ad43-a2a4fe1d3bf7" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_greece_eu_tax_file_number" />
           <Match idRef="Keywords_greece_eu_tax_file_number" />
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
