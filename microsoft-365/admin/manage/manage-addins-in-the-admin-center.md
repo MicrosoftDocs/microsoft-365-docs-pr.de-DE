@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Hier erfahren Sie, wie Sie Add-Ins für Benutzer und Gruppen in Ihrer Organisation mithilfe einer zentralisierten Bereitstellung im Admin Center bereitstellen können.
-ms.openlocfilehash: caaea8404c099f56704d21684323a4b20e61f52d
-ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
+ms.openlocfilehash: 10bca6776173c07a28b097f44c641c3e65a0cf6c
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45103099"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948700"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Verwalten von Add-Ins im Admin Center
 
@@ -152,7 +152,7 @@ Wenn das bereitgestellte Add-in keine Add-in-Befehle unterstützt oder wenn Sie 
 
 [Bereitstellen von Add-Ins im Admin Center](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins)
 
-Weitere Informationen zum Erstellen von [Office-Add-Ins](https://go.microsoft.com/fwlink/p/?linkid=846362)
+Weitere Informationen zum Erstellen von [Office-Add-Ins](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)
   
 [Verwenden Sie PowerShell-Cmdlets für zentralisierte Bereitstellung zum Verwalten von Add-ins](https://docs.microsoft.com/office365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins).
   

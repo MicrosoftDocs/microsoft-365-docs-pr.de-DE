@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Informationen zum Abrufen eines Microsoft Forms-Aktivitätsberichts mithilfe des Microsoft 365 Reports-Dashboards im Microsoft 365 Admin Center.
-ms.openlocfilehash: f835533fb626c8d6e7bd408b90abaa558304e20b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 78b09edfbfeb83c056af16787085b7c4cfe93fc6
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387753"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949204"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Microsoft 365-Berichte in der Admin Center-Formular Aktivität
 
@@ -47,7 +47,7 @@ Sie können eine Ansicht der Formular Aktivitäten Ihrer Benutzer anzeigen, inde
 
 ![Formular Aktivitätsbericht](../../media/adminformsactivity.png)
 
-|||
+|Element|Beschreibung|
 |:-----|:-----|
 |1.  <br/> |Der **Formular Aktivitäts** Bericht kann für Trends in den letzten 7 Tagen, 30 Tagen, 90 Tagen oder 180 Tagen angezeigt werden. Wenn Sie im Bericht jedoch einen bestimmten Tag auswählen, werden in der Tabelle (7) Daten für bis zu 28 Tage ab dem aktuellen Datum angezeigt (nicht ab dem Datum, an dem der Bericht generiert wurde).  <br/> |
 |2.  <br/> |Die Daten in den einzelnen Berichten decken in der Regel die letzten 24 bis 48 Stunden ab.  <br/> |

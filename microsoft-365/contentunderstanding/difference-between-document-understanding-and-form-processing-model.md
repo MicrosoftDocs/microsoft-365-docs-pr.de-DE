@@ -6,17 +6,17 @@ manager: pamgreen
 ms.date: 8/1/2020
 audience: admin
 ms.topic: article
-ms.service: ''
+ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Beschreibt den wesentlichen Unterschied zwischen Dokument Verständnis und Formular Verarbeitungs Modellen.
-ms.openlocfilehash: 972fa9e8446a44f6220baa7cde3f484172c50da6
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: ceea3a6e7898d8971ea458222d6164b496fcb8b7
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405618"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950060"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models-preview"></a>Unterschied zwischen Dokument verstehen und Formular Verarbeitungs Modellen (Vorschau)
 

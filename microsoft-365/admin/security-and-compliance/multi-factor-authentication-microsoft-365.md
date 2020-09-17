@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Erfahren Sie mehr über die mehrstufige Authentifizierung in Microsoft 365.
-ms.openlocfilehash: 71a61c51d2813880cad782d132679fa413ada987
-ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
+ms.openlocfilehash: bca84e949e696b483b567bf5f72233840023abca
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45083586"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948712"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>Mehrstufige Authentifizierung für Microsoft 365
 
@@ -59,7 +59,7 @@ Diese Methoden basieren auf Ihrem Microsoft 365-Plan.
 |---------|---------|----------|
 | Alle Microsoft 365-Pläne | Verwenden Sie Sicherheitsstandards, die MFA für alle Benutzerkonten erfordern. <br> Sie können auch MFA auf Benutzerkonten Basis benötigen, dies wird jedoch nicht empfohlen. | Kleinunternehmen |
 | Microsoft 365 Business Premium <br><br> Microsoft 365 E3 <br><br> Azure Active Directory (Azure AD) Premium P1-Lizenzen | Verwenden Sie Richtlinien für bedingten Zugriff, um MFA für Benutzerkonten zu erfordern, die auf Gruppenmitgliedschaften, Apps oder anderen Kriterien basieren. | Small Business to Enterprise |
-| Microsoft 365 E5 <br><br> Azure AD Premium P2-Lizenzen | Verwenden Sie Azure AD Identitätsschutz, um MFA basierend auf Anmelde Risikokriterien zu erfordern. |  Unternehmen |
+| Microsoft 365 E5 <br><br> Azure AD Premium P2-Lizenzen | Verwenden Sie Azure AD Identitätsschutz, um MFA basierend auf Anmelde Risikokriterien zu erfordern. |  Enterprise |
 ||||
 
 ### <a name="security-defaults"></a>Sicherheitsstandards
@@ -119,7 +119,7 @@ Unternehmen sollten [Allgemeine Richtlinien für den bedingten Zugriff](https://
 
 - [MFA für Administratoren erforderlich](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
 - [MFA für alle Nutzer erforderlich](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
-- [Blockieren von Legacy-Authentifizierung](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
+- [Legacy Authentifizierung blockieren](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
 
 Weitere Informationen finden Sie in dieser [Übersicht über den bedingten Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
 
@@ -134,7 +134,7 @@ Sie können Azure AD Identitätsschutz und risikobasierte Richtlinien für bedin
 
 Weitere Informationen finden Sie in dieser [Übersicht über den Azure AD-Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection).
 
-### <a name="mfa-for-an-individual-user-account-not-recommended"></a>MFA für ein einzelnes Benutzerkonto (nicht empfohlen)
+### <a name="legacy-per-person-mfa-not-recommended"></a>Vermächtnis pro Person MFA (nicht empfohlen)
 
 Sie sollten entweder Sicherheitsstandards oder Richtlinien für bedingten Zugriff verwenden, um MFA für Ihre Benutzerkonto-Anmeldungen zu benötigen. Wenn eine dieser Funktionen jedoch nicht verwendet werden kann, empfiehlt Microsoft für alle Größen Abonnements dringend die Verwendung von MFA für Benutzerkonten mit Administratorrollen, vor allem mit der globalen Administratorrolle. 
 
@@ -152,7 +152,7 @@ Diese Tabelle zeigt die Ergebnisse der Aktivierung von MFA mit Sicherheitsstanda
 |:-------|:-----|:-------|:-------|
 | **Sicherheitsstandards** | Richtlinien für bedingten Zugriff können nicht verwendet werden |   Richtlinien für den bedingten Zugriff können verwendet werden | Microsoft Authenticator-App |
 | **Richtlinien für bedingten Zugriff** |Wenn welche aktiviert sind, können Sie die Sicherheitsstandards nicht aktivieren | Wenn alle deaktiviert sind, können Sie die Sicherheitsstandards aktivieren | Nutzerdefiniert bei der MFA-Registrierung |
-| **Einstellung pro Benutzerkonto (nicht empfohlen)** | Überschreibt Sicherheitsstandards und Richtlinien für bedingten Zugriff, für die die MFA bei jedem anmelden erforderlich ist. | Durch Sicherheitsstandards und Richtlinien für bedingten Zugriff außer Kraft gesetzt | Nutzerdefiniert bei der MFA-Registrierung|
+| **Vermächtnis pro Person MFA (nicht empfohlen)** | Überschreibt Sicherheitsstandards und Richtlinien für bedingten Zugriff, für die die MFA bei jedem anmelden erforderlich ist. | Durch Sicherheitsstandards und Richtlinien für bedingten Zugriff außer Kraft gesetzt | Nutzerdefiniert bei der MFA-Registrierung|
 ||||
 
 Wenn Sicherheitsstandards aktiviert sind, werden alle neuen Benutzer zur MFA-Registrierung und zur Verwendung der Microsoft Authenticator-App bei der nächsten Anmeldung aufgefordert.
@@ -171,4 +171,3 @@ Im Microsoft 365 Admin Center können Sie die MFA-Einstellungen für einzelne Be
 ## <a name="your-next-step"></a>Der nächste Schritt
 
 [Einrichten von MFA für Microsoft 365](set-up-multi-factor-authentication.md)
-

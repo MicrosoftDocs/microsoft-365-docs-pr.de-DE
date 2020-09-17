@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: 12ac7d0a3d07749e16443e645f50de8fda185658
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: b9e900baf02e9fc866fe6fe520ad1e40ccd565de
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866779"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950700"
 ---
 # <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a>Integrieren von ServiceNow-Tickets in das Microsoft 365 Security Center und Compliance Center
 
@@ -32,7 +32,7 @@ ms.locfileid: "46866779"
 
 ServiceNow ist eine beliebte Cloud Computing-Plattform, mit der Unternehmen digitale Workflows für Unternehmensvorgänge verwalten können. Ihre now-Plattform umfasst IT-Workflows, Mitarbeiter Workflows und Kunden Workflows. [Erfahren Sie mehr über ServiceNow](https://www.servicenow.com/)
 
-Microsoft hat eine Partnerschaft mit ServiceNow getroffen, um IT-Administratoren die Verwaltung Ihrer Tickets und Aufgaben auf beiden Plattformen zu erleichtern. Das [Microsoft 365 Security Center](overview-security-center.md) und das [Microsoft 365 Compliance Center](https://docs.microsoft.commicrosoft-365/compliance/microsoft-365-compliance-center) werden erweitert, sodass Tickets in ServiceNow nativ erstellt und nachverfolgt werden können.
+Microsoft hat eine Partnerschaft mit ServiceNow getroffen, um IT-Administratoren die Verwaltung Ihrer Tickets und Aufgaben auf beiden Plattformen zu erleichtern. Das [Microsoft 365 Security Center](overview-security-center.md) und das [Microsoft 365 Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) werden erweitert, sodass Tickets in ServiceNow nativ erstellt und nachverfolgt werden können.
 
 - [**Verwalten von ServiceNow-Tickets im Sicherheitscenter**](tickets-security-center.md)
 - **Verwalten von ServiceNow-Tickets im Compliance Center** (demnächst verfügbar)

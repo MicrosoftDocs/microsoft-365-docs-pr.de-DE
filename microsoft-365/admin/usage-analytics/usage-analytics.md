@@ -19,22 +19,21 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Erhalten Sie einen Überblick darüber, wie Ihre Organisation Microsoft 365-Dienste zur Kommunikation und Zusammenarbeit einnimmt.
-ms.openlocfilehash: 6619205fb62cce3ba7c62c3df773f650dc125dac
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fecaed3aa9fc2d0990cb3e7b416cee1bfab21d7e
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402022"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948628"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Analysen zur Nutzung von Microsoft 365
 ---
-Microsoft 365-Verwendungsanalyse ist noch nicht für Microsoft 365 US Government Community verfügbar.
- 
+
 ## <a name="overview-of-microsoft-365-usage-analytics"></a>Übersicht über die Microsoft 365-Nutzungsanalyse
 
 Verwenden Sie Microsoft 365 Usage Analytics in Power BI, um Einblicke in Ihre Organisation zu gewinnen, die die verschiedenen Dienste innerhalb von Microsoft 365 zur Kommunikation und Zusammenarbeit anwendet. Sie können Microsoft 365-Nutzungsdaten visualisieren und analysieren, benutzerdefinierte Berichte erstellen und die Einblicke in Ihrer Organisation freigeben und Einblicke in die Verwendung von Microsoft 365 durch bestimmte Regionen oder Abteilungen gewinnen.
   
-Microsoft 365 Usage Analytics ist eine Vorlagen-APP, die Ihnen Zugriff auf ein vordefiniertes Dashboard ermöglicht, das eine produktübergreifende Ansicht der letzten 12 Monate bietet und eine Reihe von vordefinierten Berichten enthält. Jeder Bericht bietet Ihnen spezifische Einblicke in die Nutzung. Benutzerspezifische Informationen stehen für den letzten vollständigen Kalendermonat zur Verfügung.
+Microsoft 365 Usage Analytics ist eine Vorlagen-APP, die Ihnen Zugriff auf ein vordefiniertes Dashboard ermöglicht, das eine produktübergreifende Ansicht der letzten 12 Monate bietet und eine Reihe von vordefinierten Berichten enthält. Jeder Bericht liefert Ihnen spezifische Erkenntnisse zur Nutzung. Benutzerspezifische Informationen sind für den letzten vollen Kalendermonat verfügbar.
   
 Das [Datenmodell](usage-analytics-data-model.md) , das die Vorlagen-App ausmacht, enthält Benutzerattribute aus Active Directory, die die Möglichkeit zum Pivotieren in bestimmten Berichten ermöglichen. Die folgenden Active Directory-Attribute sind enthalten: Standort, Abteilung und Unternehmen. 
   
@@ -136,7 +135,7 @@ Darüber hinaus sind Benutzerebene Details in der Vorlagen-app nur für den letz
 
 ### <a name="when-should-i-use-the-template-app-and-when-the-usage-reports"></a>Wann sollte ich die Vorlagen-App verwenden und wann werden die Nutzungsberichte verwendet?
 
-Die [Aktivitätsberichte](../activity-reports/activity-reports.md) sind ein guter Ausgangspunkt, um die Verwendung und Einführung von Microsoft 365 zu verstehen. Die Vorlagen-App kombiniert die Microsoft 365-Nutzungsdaten mit den Active Directory Informationen Ihrer Organisation und ermöglicht Administratoren das Analysieren des Datasets mithilfe der Visual Analytics-Funktionen von Power BI. Auf diese Weise können Administratoren nicht nur Microsoft 365-Nutzungsdaten visualisieren und analysieren, sondern auch durch Active Directory Eigenschaften wie Abteilungen, Standort usw. schneiden. Sie können auch benutzerdefinierte Berichte erstellen und die Einblicke in Ihrer Organisation freigeben. 
+Die [Aktivitätsberichte](../activity-reports/activity-reports.md)  sind ein guter Ausgangspunkt, um die Verwendung und Einführung von Microsoft 365 zu verstehen. Die Vorlagen-App kombiniert die Microsoft 365-Nutzungsdaten mit den Active Directory Informationen Ihrer Organisation und ermöglicht Administratoren das Analysieren des Datasets mithilfe der Visual Analytics-Funktionen von Power BI. Auf diese Weise können Administratoren nicht nur Microsoft 365-Nutzungsdaten visualisieren und analysieren, sondern auch durch Active Directory Eigenschaften wie Abteilungen, Standort usw. schneiden. Sie können auch benutzerdefinierte Berichte erstellen und die Einblicke in Ihrer Organisation freigeben. 
 
 ### <a name="how-often-is-the-data-refreshed"></a>Wie oft werden die Daten aktualisiert? 
 

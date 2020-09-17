@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 2c654cb0ec2afd138c7c9fb4b339b53a8522e5e4
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 034dd31309c783e8b231a113d2bda5ccb1888d5b
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547204"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950760"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Erforderliche Arbeit für die Implementierung von Identitäts-und Gerätezugriffs Richtlinien
 
@@ -116,6 +116,6 @@ Hier sind einige zusätzliche Empfehlungen:
 
 ## <a name="next-step"></a>Nächster Schritt
 
-![Schritt 2: Konfigurieren der allgemeinen Identitäts-und Zugriffsrichtlinien für den bedingten Zugriff](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)
+[![Schritt 2: Konfigurieren der allgemeinen Identitäts-und Zugriffsrichtlinien für den bedingten Zugriff](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)](identity-access-policies.md)
 
 [Konfigurieren der allgemeinen Richtlinien für Identitäts-und Geräte Zugriff](identity-access-policies.md)

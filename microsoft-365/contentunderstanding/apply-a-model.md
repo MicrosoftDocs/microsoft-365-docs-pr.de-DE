@@ -6,17 +6,17 @@ manager: pamgreen
 ms.date: 8/1/2020
 audience: admin
 ms.topic: article
-ms.service: ''
+ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Hier erfahren Sie, wie Sie ein veröffentlichtes Modell auf eine SharePoint-Dokumentbibliothek anwenden.
-ms.openlocfilehash: 0658710704273ed04e9f2067413d1141773ef4aa
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: 8a4931f4b7a936caeb99d7f8c07deefdac62919b
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612680"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950248"
 ---
 # <a name="apply-a-document-understanding-model-preview"></a>Anwenden eines Dokument Verständnisses für das Modell (Vorschau)
 

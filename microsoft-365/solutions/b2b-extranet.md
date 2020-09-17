@@ -15,12 +15,12 @@ ms.custom: ''
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Hier erfahren Sie, wie Sie eine B2B-Extranet-Website oder ein Team mit verwalteten Gastbenutzern aus einer Partnerorganisation erstellen.
-ms.openlocfilehash: 4f8eb33ad9b41f552975d4158a61ec4cedcfa9cc
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 83252241833f3dfe663cc70eae28a5df1214cce0
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46526982"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949384"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>Erstellen eines B2B-Extranets mit verwalteten Gästen
 
@@ -31,6 +31,12 @@ Mit dieser Methode zum Freigeben von Ressourcen für die Zusammenarbeit kann die
 In diesem Artikel werden die Schritte beschrieben, um ein Ressourcenpaket (in diesem Fall eine Website oder ein Team) zu erstellen, das Sie über ein Self-Service Access-Registrierungsmodell für eine Partnerorganisation freigeben können. 
 
 Bevor Sie beginnen, erstellen Sie die Website oder das Team, die Sie für die Partnerorganisation freigeben möchten, und aktivieren Sie Sie für die Gast Freigabe. Weitere Informationen finden Sie unter [Zusammenarbeit mit Gästen in einer Website](collaborate-in-site.md) oder [Zusammenarbeit mit Gästen in einem Team](collaborate-as-team.md) . Außerdem wird empfohlen, dass Sie [eine Umgebung für sichere Gast Freigaben erstellen](create-secure-guest-sharing-environment.md) , in der Sie Informationen zu Sicherheits-und Kompatibilitätsfeatures erhalten, die Sie bei der Zusammenarbeit mit Gästen zur Verwaltung Ihrer Steuerungsrichtlinien verwenden können.
+
+## <a name="license-requirements"></a>Lizenzanforderungen
+
+Für die Verwendung dieses Features ist eine Azure AD Premium P2-Lizenz erforderlich. 
+
+Spezielle Clouds wie Azure Deutschland und Azure China 21Vianet sind derzeit nicht zur Verwendung verfügbar.
 
 ## <a name="video-demonstration"></a>Videodemonstration
 
@@ -124,4 +130,3 @@ Nachdem Sie den Link kopiert haben, können Sie ihn für Ihren Kontakt in der Pa
 ## <a name="see-also"></a>Siehe auch
 
 [Erstellen einer sicheren Umgebung für die Gastfreigabe](create-secure-guest-sharing-environment.md)
-

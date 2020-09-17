@@ -17,30 +17,29 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 72d02bafa168e48c2d588771f5289da09e6d6000
-ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
+ms.openlocfilehash: 4ee07abe7ce1432921a843d713d0f9b914631174
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46794231"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949312"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
 **Gilt für:**
 - Microsoft Threat Protection
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+Verwenden Sie die `AssignedIPAddresses()` -Funktion, um schnell die neuesten IP-Adressen zu erhalten, die einem Gerät zugewiesen wurden. Wenn Sie ein Timestamp-Argument angeben, ruft diese Funktion die neuesten IP-Adressen zur angegebenen Zeit ab. 
 
-Verwenden Sie die- `AssignedIPAddresses()` Funktion, um schnell die neuesten IP-Adressen zu erhalten, die einem Gerät oder den neuesten IP-Adressen von einem bestimmten Zeitpunkt zugewiesen wurden. Diese Funktion gibt eine Tabelle mit den folgenden Spalten zurück:
+Diese Funktion gibt eine Tabelle mit den folgenden Spalten zurück:
 
 | Spalte | Datentyp | Beschreibung |
 |------------|-------------|-------------|
-| Zeitstempel | Datum/Uhrzeit | Spätester Zeitpunkt, zu dem das Gerät mit der IP-Adresse beobachtet wurde |
-| IPAddress | string | Vom Gerät verwendete IP-Adresse |
-| IPType | string | Gibt an, ob es sich bei der IP-Adresse um eine öffentliche oder private Adresse handelt. |
-| NetworkAdapterType | int | Netzwerkadaptertyp, der von dem Gerät verwendet wird, dem die IP-Adresse zugewiesen wurde. Informationen zu den möglichen Werten finden Sie in [dieser Aufzählung](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2)  |
-| ConnectedNetworks | int | Netzwerke, mit denen der Adapter mit der zugewiesenen IP-Adresse verbunden ist. Jedes JSON-Array enthält den Netzwerknamen, die Kategorie (öffentlich, privat oder Domäne), eine Beschreibung und ein Flag, das angibt, ob es öffentlich mit dem Internet verbunden ist. |
-
+| `Timestamp` | datetime | Spätester Zeitpunkt, zu dem das Gerät mit der IP-Adresse beobachtet wurde |
+| `IPAddress` | Zeichenfolge | Vom Gerät verwendete IP-Adresse |
+| `IPType` | Zeichenfolge | Gibt an, ob es sich bei der IP-Adresse um eine öffentliche oder private Adresse handelt. |
+| `NetworkAdapterType` | int | Netzwerkadaptertyp, der von dem Gerät verwendet wird, dem die IP-Adresse zugewiesen wurde. Informationen zu den möglichen Werten finden Sie in [dieser Aufzählung](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype) |
+| `ConnectedNetworks` | int | Netzwerke, mit denen der Adapter mit der zugewiesenen IP-Adresse verbunden ist. Jedes JSON-Array enthält den Netzwerknamen, die Kategorie (öffentlich, privat oder Domäne), eine Beschreibung und ein Flag, das angibt, ob es öffentlich mit dem Internet verbunden ist. |
 
 ## <a name="syntax"></a>Syntax
 
@@ -50,12 +49,12 @@ AssignedIPAddresses(x, y)
 
 ## <a name="arguments"></a>Argumente
 
-- **x** – `DeviceId` oder `DeviceName` Wert, der das Gerät identifiziert
-- **y** – `Timestamp` (DateTime)-Wert, der den bestimmten Zeitpunkt angibt, an dem die neuesten IP-Adressen abgerufen werden sollen. Wenn nicht angegeben, gibt die Funktion die neuesten IP-Adressen zurück.
+- **x**– `DeviceId` oder `DeviceName` Wert, der das Gerät identifiziert
+- **y**– `Timestamp` (DateTime)-Wert, in dem die Funktion angewiesen wird, die aktuellsten zugewiesenen IP-Adressen von einem bestimmten Zeitpunkt zu erhalten. Wenn nicht angegeben, gibt die Funktion die neuesten IP-Adressen zurück.
 
 ## <a name="examples"></a>Beispiele
 
-### <a name="get-the-list-of-ip-addresses-used-by-a-device-as-of-24-hours-ago"></a>Abrufen der Liste der IP-Adressen, die von einem Gerät seit 24 Stunden verwendet werden
+### <a name="get-the-list-of-ip-addresses-used-by-a-device-24-hours-ago"></a>Abrufen der Liste der IP-Adressen, die von einem Gerät verwendet werden vor 24 Stunden
 
 ```kusto
 AssignedIPAddresses('example-device-name', ago(1d))

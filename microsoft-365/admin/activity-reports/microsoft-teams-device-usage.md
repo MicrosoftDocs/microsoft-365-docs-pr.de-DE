@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365-Berichte im Admin Center-Microsoft Teams-Geräteverwendung
+title: Microsoft Teams-Gerätenutzung
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 917b3e1d-203e-4439-8539-634e80196687
 description: Erhalten Sie Einblicke in die Microsoft Teams-apps, die in Ihrer Organisation verwendet werden, indem Sie den Microsoft Teams-App-Nutzungsbericht aus Microsoft 365-Berichten erhalten.
-ms.openlocfilehash: c2070f13c790f2a66c5849e68fc2fe3579ffa3e3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 9c96f4fce962b49081cc93ff802b1e2bc250ec98
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387718"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949108"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Microsoft 365-Berichte im Admin Center-Microsoft Teams-Geräteverwendung
 
@@ -40,7 +40,7 @@ Im Microsoft 365 **Reports** -Dashboard wird die Aktivitätsübersicht für die 
 1. Wechseln Sie im Admin Center zur Seite **Berichte** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Verwendung</a>.
 
     
-2. Wählen Sie in der Dropdownliste **Bericht auswählen** die Option **Microsoft Teams** - \> **Gerätenutzung**aus.
+2. Wählen Sie in der Dropdownliste **Bericht auswählen** die Option  **Microsoft Teams** - \> **Gerätenutzung**aus.
   
 ## <a name="interpret-the-microsoft-teams-app-usage-report"></a>Interpretieren des Berichts "Microsoft Teams-App-Verwendung"
 
@@ -48,7 +48,7 @@ Die Microsoft Teams-App-Verwendung wird in den Diagrammen **Benutzer** und **Ver
   
 ![Microsoft 365 Reports-Nutzung der Microsoft Teams-App](../../media/de35c4de-76b4-4109-a806-66774665499b.png)
   
-|||
+|Element|Beschreibung|
 |:-----|:-----|
 |1.  <br/> |Im Bericht **Microsoft Teams-Gerätenutzung** werden die Trends über die letzten 7 Tage, 30 Tage, 90 Tage oder 180 Tage angezeigt. Wenn Sie im Bericht jedoch einen bestimmten Tag auswählen, werden in der Tabelle (7) Daten für bis zu 28 Tage ab dem aktuellen Datum angezeigt (nicht ab dem Datum, an dem der Bericht generiert wurde).  <br/> |
 |2.  <br/> |Die Daten in den einzelnen Berichten decken in der Regel die letzten 24 bis 48 Stunden ab.  <br/> |

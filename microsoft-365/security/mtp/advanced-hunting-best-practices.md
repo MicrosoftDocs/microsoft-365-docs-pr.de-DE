@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 3ca475ef6dbdbd66af47216c4130d748788730c2
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 2259158c566223c39a6b533483551f95c2fa0824
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419132"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949300"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Bewährte Methoden für Erweiterte Suchanfragen
 
@@ -31,7 +31,12 @@ ms.locfileid: "47419132"
 
 Wenden Sie diese Empfehlungen an, um schneller Ergebnisse zu erzielen und Timeouts beim durchführen komplexer Abfragen zu vermeiden. Weitere Informationen zur Verbesserung der Abfrageleistung finden Sie in[Bewährte Methoden für Kusto Anfragen](https://docs.microsoft.com/azure/kusto/query/best-practices).
 
-## <a name="general-guidance"></a>Allgemeine Hinweise
+## <a name="understand-cpu-resource-limits"></a>Grundlegendes zu CPU-Ressourcen Grenzwerten
+Je nach Größe hat jeder Mandant Zugriff auf eine festgelegte Menge an CPU-Ressourcen, die für die Ausführung von erweiterten Jagd Abfragen reserviert sind. Ausführliche Informationen zu verschiedenen Service-Grenzwerten finden [Sie unter Advanced Hunting Limits](advanced-hunting-limits.md).
+
+Kunden, die mehrere Abfragen regelmäßig ausführen, sollten den Verbrauch nachverfolgen und den Optimierungs Leit Faden in diesem Artikel anwenden, um die durch Überschreitung der Grenzwerte verursachten Unterbrechungen zu verringern.
+
+## <a name="general-optimization-tips"></a>Allgemeine Optimierungstipps
 
 - **Größe neuer Abfragen**– Wenn Sie vermuten, dass eine Abfrage ein umfangreiches Resultset zurückgibt, bewerten Sie Sie zunächst mithilfe des [Count-Operators](https://docs.microsoft.com/azure/data-explorer/kusto/query/countoperator). Use [Limit](https://docs.microsoft.com/azure/data-explorer/kusto/query/limitoperator) oder sein Synonym `take` , um große Resultsets zu vermeiden.
 - **Filter früh anwenden**– Anwenden von Zeit Filtern und anderen Filtern, um das DataSet zu reduzieren, insbesondere vor der Verwendung von Transformations-und Analysefunktionen wie [SUBSTRING ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/substringfunction), [Replace ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/replacefunction), [Trim ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/trimfunction), [ToUpper ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/toupperfunction)oder [parse_json ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction). Im Beispiel unten wird die Analysefunktion [extractjson ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractjsonfunction) verwendet, nachdem die Anzahl der Datensätze durch die Filteroperatoren reduziert wurde.
@@ -255,9 +260,7 @@ Informationen zu allen unterstützten Analysefunktionen finden [Sie unter Kusto 
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Dokumentation zur Kusto-Abfragesprache](https://docs.microsoft.com/azure/data-explorer/kusto/query/)
+- [Diensteinschränkungen](advanced-hunting-limits.md)
+- [Behandeln von erweiterten Jagd Fehlern](advanced-hunting-errors.md)
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
 - [Lernen der Abfragesprache](advanced-hunting-query-language.md)
-- [Arbeiten mit Abfrageergebnissen](advanced-hunting-query-results.md)
-- [Verwenden freigegebener Abfragen](advanced-hunting-shared-queries.md)
-- [Suchen auf Geräten, in E-Mails, Apps und Identitäten](advanced-hunting-query-emails-devices.md)
-- [Grundlegendes zum Schema](advanced-hunting-schema-tables.md)

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 94dd92ec-ea73-43c6-b51f-2a11fd78aa31
 description: Nutzen Sie den Bericht zur Yammer-Gruppenaktivität, um sich über die Anzahl der Yammer-Gruppen, die in Ihrer Organisation erstellt und verwendet werden, sowie über deren Aktivitäten zu informieren.
-ms.openlocfilehash: a5a9d3d8820241cc3d99a4a08e647bd05dafd5ef
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: a8fb1ed4a22420723fa28b7d5a175e2ccf777e77
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387441"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948844"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-groups-activity-report"></a>Microsoft 365-Berichte im Admin Center-Aktivitätsbericht "Jammer Gruppen"
 
@@ -45,7 +45,7 @@ Im Microsoft 365 **Reports** -Dashboard wird die Aktivitätsübersicht für die 
 
 Sie können sich einen Überblick über die Aktivitäten von Yammer-Gruppen verschaffen, indem Sie sich die Diagramme **Gruppen** und **Aktivität** ansehen.<br/>![Diagramm "Yammer-Gruppenaktivität"](../../media/4ba4ea03-2f74-4d86-8c63-2b18477c9769.png)
   
-|||
+|Element|Beschreibung|
 |:-----|:-----|
 |1.  <br/> |Im Bericht **Yammer-Gruppenaktivität** werden die Trends über die letzten 7 Tage, 30 Tage, 90 Tage oder 180 Tage angezeigt. Wenn Sie im Bericht jedoch einen bestimmten Tag auswählen, werden in der Tabelle (7) Daten für bis zu 28 Tage ab dem aktuellen Datum angezeigt (nicht ab dem Datum, an dem der Bericht generiert wurde).  <br/> |
 |2.  <br/> |Die Daten in den einzelnen Berichten decken in der Regel die letzten 24 bis 48 Stunden ab. <br/> |

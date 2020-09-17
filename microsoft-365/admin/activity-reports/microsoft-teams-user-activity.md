@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 07f67fc4-c0a4-4d3f-ad20-f40c7f6db524
 description: Hier erfahren Sie, wie Sie den Microsoft Teams-Benutzer Aktivitätsbericht abrufen und Einblicke in die Teams-Aktivitäten in Ihrer Organisation erhalten.
-ms.openlocfilehash: 59fdeec9979b939524279d938e97baf6993d3cb0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f4becffe44a8ad5998c0b199b3079dfaa7b04738
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387669"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948976"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Microsoft 365-Berichte im Admin Center-Microsoft Teams-Benutzeraktivität
 
@@ -44,7 +44,7 @@ Im Microsoft 365 **Reports** -Dashboard wird die Aktivitätsübersicht für die 
 
 Die Microsoft Teams-Benutzeraktivität wird in den Diagrammen **Aktivität** und **Benutzer** grafisch dargestellt.<br/>![Microsoft 365 Reports-Microsoft Teams-Benutzeraktivität.](../../media/40359f81-25f7-416d-bb1e-37289133ef6b.png)
   
-|||
+|Element|Beschreibung|
 |:-----|:-----|
 |1.  <br/> |Im Bericht **Microsoft Teams-Benutzeraktivität** werden die Trends über die letzten 7 Tage, 30 Tage, 90 Tage oder 180 Tage angezeigt. Wenn Sie im Bericht jedoch einen bestimmten Tag auswählen, werden in der Tabelle (7) Daten für bis zu 28 Tage ab dem aktuellen Datum angezeigt (nicht ab dem Datum, an dem der Bericht generiert wurde).  <br/> |
 |2.  <br/> |Die Daten in den einzelnen Berichten decken in der Regel die letzten 24 bis 48 Stunden ab.  <br/> |

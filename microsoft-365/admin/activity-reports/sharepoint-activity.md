@@ -21,12 +21,12 @@ search.appverid:
 - BSA160
 ms.assetid: a91c958f-1279-499d-9959-12f0de08dc8f
 description: Rufen Sie den SharePoint-Aktivitäts Verwendungsbericht ab, um die Aktivität aller SharePoint-Benutzer, die Anzahl der freigegebenen Dateien und die Speicherauslastung zu kennen.
-ms.openlocfilehash: de4d4951f98e722a3608e9bccf2c4a1dbfc388d0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b0c628300647e83889e273268bef7abd9e337ed4
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387489"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948868"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-activity"></a>Microsoft 365-Berichte im Admin Center – SharePoint-Aktivität
 
@@ -53,7 +53,7 @@ Wenn Sie den Umfang der Aktivität für die einzelnen SharePoint-Websites und di
 
 Sie können einen Einblick in die SharePoint-Aktivität erhalten, indem Sie die Ansichten **Dateien** und **Benutzer** betrachten.<br/> ![SharePoint Activity Report](../../media/96ee85af-f213-499b-9e2b-22912bd0b8c2.png)
   
-|||
+|Element|Beschreibung|
 |:-----|:-----|
 |1.  <br/> |Im Bericht **SharePoint-Aktivität** werden die Trends über die letzten 7 Tage, 30 Tage, 90 Tage oder 180 Tage angezeigt. Wenn Sie im Bericht jedoch einen bestimmten Tag auswählen, werden in der Tabelle (7) Daten für bis zu 28 Tage ab dem aktuellen Datum angezeigt (nicht ab dem Datum, an dem der Bericht generiert wurde).  <br/> |
 |2.  <br/> |Die Daten in den einzelnen Berichten decken in der Regel die letzten 24 bis 48 Stunden ab.  <br/> |

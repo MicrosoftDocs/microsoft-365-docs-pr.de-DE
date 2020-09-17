@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-infoprotection
 ms.custom: ''
 description: Verwenden Sie Microsoft 365-Aufbewahrungs Bezeichnungen und-Richtlinien zum Verwalten personenbezogener Daten in Ihrer Microsoft 365-Umgebung.
-ms.openlocfilehash: a7a0d6e00d29d80dfd0cb72ba217177aa6029a2c
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 766995b9c758d4ae8cbf7140fb259d208cfb7771
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522301"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949252"
 ---
 # <a name="govern-information-subject-to-data-privacy-regulation"></a>Steuern der Informationen unterliegen der Datenschutzverordnung
 
@@ -81,27 +81,13 @@ Denken Sie dabei an Folgendes:
 
 - Wenn die personenbezogenen Informationstypen in Ihrer Umgebung besser bekannt sind, legen Sie Aufbewahrungs-und Lösch Zeitpläne für diese Art von Inhalten fest, und passen Sie Ihre Informationsarchitektur an, um die Steuerung dieser Art von Informationen zu vereinfachen. Isolieren Sie beispielsweise persönliche Informationen in separaten Websites, Bibliotheken oder Ordnern mit gesteuertem Zugriff.
 
-### <a name="retention-policies"></a>Aufbewahrungsrichtlinien
+### <a name="retention-policies-and-retention-labels"></a>Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
-Erstellen und Bereitstellen von [Aufbewahrungsrichtlinien](../compliance/retention-policies.md) für Inhalte in Websites, die automatisch angewendet werden.
-
-Für den Datenschutz für Websites, die personenbezogene Daten enthalten oder erwartet werden, geben Sie Aufbewahrungs-oder Löschregeln zur Behebung von Organisationsstandards an.
-
-### <a name="retention-labels"></a>Aufbewahrungsbezeichnungen
-
-Erstellen und Bereitstellen von [Aufbewahrungs Bezeichnungen](../compliance/labels.md) für Inhalt und e-Mail.
-
-Für den Datenschutz von Websites, Bibliotheken, Ordnern und e-Mails, die personenbezogene Daten enthalten oder erwartet werden, geben Sie automatische Aufbewahrungs-oder Löschregeln zur Behebung von Organisationsstandards an.
+Verwenden Sie [Aufbewahrungsrichtlinien und Aufbewahrungs Bezeichnungen](../compliance/retention.md) zum aufbewahren oder Löschen von Inhalten in Microsoft 365, die personenbezogene Daten enthalten oder erwartet werden.
 
 ### <a name="records-management"></a>Datensatzverwaltung
 
-Erstellen und Bereitstellen von Aufbewahrungs Bezeichnungen für die Datensatzverwaltung basierend auf einem Zeitplan für die Datensatzaufbewahrung und einem Dateiplan.
+Verwenden Sie Aufbewahrungs Bezeichnungen, die Inhalte als Datensatz deklarieren, um eine Daten [Satz Verwaltungslösung](../compliance/records-management.md) für Daten in Microsoft 365 zu implementieren.
 
-Für den Datenschutz werden Datensubjekt Anforderungen (DSRs), die von der Rechtsabteilung empfangen werden, als Datensatz deklariert und auf unbestimmte Zeit gespeichert, um die Aufbewahrungspflichten für gesetzliche Aktivitäten einzuhalten.
+Für den Datenschutz werden Datensubjekt Anfragen (DSRs), die von der Rechtsabteilung empfangen werden, als Datensatz deklariert und können auf unbestimmte Zeit gespeichert oder mit einem Nachweis entsorgt werden, um die Aufbewahrungspflichten für gesetzliche Aktivitäten einzuhalten.
 
-Weitere Informationen finden Sie in den folgenden Ressourcen: 
-
-- [Datensatzverwaltung](../compliance/records-management.md)
-- [Dateiplan-Manager](../compliance/file-plan-manager.md)
-- [Ereignisbasierte Aufbewahrung für die Datensatzverwaltung](../compliance/automate-event-driven-retention.md)
-- [Disposition von Inhalten](../compliance/disposition-reviews.md)

@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 87c24ae2-82e0-4d1e-be01-c3bcc3f18c60
 description: Erfahren Sie, wie Sie einen Office-Aktivierungsbericht erhalten, um zu erfahren, welche Benutzer Ihr Office-Abonnement aktiviert haben, und um Benutzer zu identifizieren, die möglicherweise zusätzliche Hilfe benötigen.
-ms.openlocfilehash: 3b7d3e599d31377fb11a07623a53a3c75dced129
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 228d8a6437cecfad8e7600a354ca31ddd6b0e6c4
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387741"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949144"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-office-activations"></a>Microsoft 365-Berichte im Admin Center – Microsoft Office Aktivierungen
 
@@ -48,9 +48,9 @@ Sie erhalten einen Überblick über die Office-Aktivierungen Ihrer Organisation,
   
 ![Anzahl der Office-Aktivierungen](../../media/8c0ae08d-2d71-4437-9147-12c345bb5e9d.png)
   
-|||
+|Element|Beschreibung|
 |:-----|:-----|
-|1   <br/> |Der Bericht "Office-Aktivierungen" enthält den aktuellen Status der Office-Lizenzaktivierungsdaten [zum Datum der Erstellung des Berichts, wie oben rechts im Diagramm angegeben].  <br/> |
+|1  <br/> |Der Bericht "Office-Aktivierungen" enthält den aktuellen Status der Office-Lizenzaktivierungsdaten [zum Datum der Erstellung des Berichts, wie oben rechts im Diagramm angegeben].  <br/> |
 |2  <br/> |Die Daten in den einzelnen Berichten decken in der Regel die letzten 24 bis 48 Stunden ab.  <br/> |
 |3  <br/> |Im Diagramm **Aktivierungen** wird die Anzahl der Office-Aktivierungen auf Desktops und mobilen Geräten angezeigt.  <br/> |
 |4   <br/> |Im Diagramm **Benutzer** werden die Anzahl der aktivierten Benutzer und die Benutzer angezeigt, die das Office-Abonnement auf ihren Desktops oder mobilen Geräten aktiviert haben.  <br/> |

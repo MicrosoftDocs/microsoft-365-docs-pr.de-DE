@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Informationen zum Hinzufügen von Benutzern und Zuweisen von Lizenzen zu Microsoft 365 gleichzeitig.
 ms.date: 07/01/2020
-ms.openlocfilehash: 6745285600b6c5a62b4327d7174b2c249ff5276c
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 95f84ead009b7510699e467bf5f12bf32d8097d8
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307373"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948796"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Hinzufügen von Benutzern und gleichzeitiges Zuweisen von Lizenzen
 
@@ -37,7 +37,7 @@ ms.locfileid: "47307373"
 
 ::: moniker-end
 
-Die Personen in Ihrem Team benötigen jeweils ein Benutzerkonto, bevor Sie sich anmelden und auf [Microsoft 365 for Business](https://go.microsoft.com/fwlink/?LinkID=519395)zugreifen können. Die einfachste Methode zum Hinzufügen von Benutzerkonten besteht darin, sie im Microsoft 365 Admin Center nacheinander hinzuzufügen. Nachdem Sie diesen Schritt durchführen, verfügen Ihre Benutzer über Microsoft 365-Lizenzen, Anmeldeinformationen und Microsoft 365-Postfächer.
+Die Personen in Ihrem Team benötigen jeweils ein Benutzerkonto, bevor Sie sich anmelden und auf [Microsoft 365 for Business](https://www.microsoft.com/microsoft-365/business)zugreifen können. Die einfachste Methode zum Hinzufügen von Benutzerkonten besteht darin, sie im Microsoft 365 Admin Center nacheinander hinzuzufügen. Nachdem Sie diesen Schritt durchführen, verfügen Ihre Benutzer über Microsoft 365-Lizenzen, Anmeldeinformationen und Microsoft 365-Postfächer.
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
@@ -54,7 +54,7 @@ Zum Hinzufügen von Benutzern und Zuweisen von Lizenzen müssen Sie ein globaler
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+1. Wechseln Sie zum Admin Center unter <https://admin.microsoft.com>.
 2. Wählen Sie **Benutzer** > **Aktive Benutzer** und **Benutzer hinzufügen** aus.
 3. Geben Sie im Bereich **Grundlagen einrichten** die grundlegenden Benutzerinformationen ein, und wählen Sie dann **weiter**aus.
     - **Name** Geben Sie den vor-und Nachnamen, den Anzeigenamen und den Benutzernamen ein.
@@ -70,7 +70,7 @@ Zum Hinzufügen von Benutzern und Zuweisen von Lizenzen müssen Sie ein globaler
 
 ::: moniker range="o365-germany"
 
-1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.
+1. Wechseln Sie zum Admin Center unter <https://portal.office.de/adminportal>.
 2. Wählen Sie **Benutzer** > **Aktive Benutzer** und **Benutzer hinzufügen** aus.
 3. Geben Sie im Bereich **Neuer Benutzer** die nachstehenden Informationen ein. Wenn Sie fertig sind, wählen Sie **Hinzufügen**aus.
     - **Name** Geben Sie den Vornamen, Nachnamen, Anzeigenamen und Benutzernamen ein. 
@@ -84,7 +84,7 @@ Zum Hinzufügen von Benutzern und Zuweisen von Lizenzen müssen Sie ein globaler
 
 ::: moniker range="o365-21vianet"
 
-1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
+1. Wechseln Sie zum Admin Center unter <https://portal.partner.microsoftonline.cn>.
 2. Wählen Sie **Benutzer** > **Aktive Benutzer** und **Benutzer hinzufügen** aus.
 3. Geben Sie im Bereich **Neuer Benutzer** die nachstehenden Informationen ein. Wenn Sie fertig sind, wählen Sie **Hinzufügen**aus.
     - **Name** Geben Sie den Vornamen, Nachnamen, Anzeigenamen und Benutzernamen ein. 
@@ -99,7 +99,7 @@ Zum Hinzufügen von Benutzern und Zuweisen von Lizenzen müssen Sie ein globaler
 ## <a name="add-multiple-users-at-the-same-time"></a>Gleichzeitiges Hinzufügen mehrerer Benutzer
 
 Sie können eine der folgenden Methoden verwenden, um mehrere Benutzer gleichzeitig hinzuzufügen:
-  
+
 - **Mithilfe einer Kalkulationstabelle können Sie Benutzer in Massen hinzufügen.** Weitere Informationen hierzu finden Sie unter [Gleichzeitiges Hinzufügen von mehreren Benutzern](https://docs.microsoft.com/microsoft-365/enterprise/add-several-users-at-the-same-time).
 - **Automatisieren Sie das Hinzufügen von Konten und Zuweisen von Lizenzen.** Siehe [Erstellen von Benutzerkonten mit Microsoft 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/create-user-accounts-with-microsoft-365-powershell). Wählen Sie diese Methode aus, wenn Sie mit der Nutzung von Windows PowerShell-Cmdlets bereits vertraut sind.
 - **Sie verwenden Active Directory?** [Einrichten der Verzeichnissynchronisierung für Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization). Verwenden Sie das Azure AD Connect-Tool, um Active Directory Benutzerkonten (und andere Active Directory-Objekte) in Microsoft 365 zu replizieren. Bei der Synchronisierung werden nur die Benutzerkonten hinzugefügt. Sie müssen den synchronisierten Benutzern Lizenzen zuweisen, bevor Sie e-Mails und andere Office-Apps verwenden können.

@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Dieser Artikel enthält Links zu Informationen zum Planen, testen und Migrieren von Netzwerken zu Office 365.
-ms.openlocfilehash: 1e6973f93c65012f4ca007332a47cc6b9e67b3b0
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2b08b05b8863fd9351510878f9438264bb2999f5
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690841"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948448"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Netzwerk- und Migrationsplanung für Office 365
 
@@ -51,7 +51,7 @@ Führen Sie die folgenden Schritte aus, um die Bandbreite zu schätzen:
     
 2. Ermitteln Sie, welche Office 365 Dienste und Features für Clients verfügbar sein sollen. Sie haben wahrscheinlich Gruppen von Personen mit unterschiedlichen Diensten oder Nutzungsprofilen.
     
-3. Messen Sie die Netzwerkverwendung für eine Pilotgruppe von Clients. Stellen Sie sicher, dass die Pilot Clients für die verschiedenen Profile von Personen in der Organisation sowie für die verschiedenen geografischen Standorte repräsentativ sind. Sie können Ihre Ergebnisse gegen unsere alten Rechner für [Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-the-exchange-client-network-bandwidth-calculator-beta/ba-p/601744) und [Skype for Business](https://go.microsoft.com/fwlink/p/?LinkId=321551) oder die [Fallstudie](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365) , die wir in unserem eigenen Netzwerk durchgeführt haben, überprüfen. 
+3. Messen Sie die Netzwerkverwendung für eine Pilotgruppe von Clients. Stellen Sie sicher, dass die Pilot Clients für die verschiedenen Profile von Personen in der Organisation sowie für die verschiedenen geografischen Standorte repräsentativ sind. Sie können Ihre Ergebnisse gegen unsere alten Rechner für [Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-the-exchange-client-network-bandwidth-calculator-beta/ba-p/601744) und [Microsoft Teams](https://docs.microsoft.com/microsoftteams/prepare-network) oder die [Fallstudie](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365) , die wir in unserem eigenen Netzwerk durchgeführt haben, überprüfen. 
     
 4. Verwenden Sie die Messungen der Pilotgruppe, um die Anforderungen der gesamten Organisation hochzurechnen und erneut zu testen, um die Schätzungen zu überprüfen, bevor Sie Änderungen an Ihrem Netzwerk vornehmen.
     

@@ -6,17 +6,17 @@ manager: pamgreen
 ms.date: 8/1/2020
 audience: admin
 ms.topic: article
-ms.service: ''
+ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Erstellen Sie ein Formular Verarbeitungsmodell in Project Cortex.
-ms.openlocfilehash: 733baf24d8a484571ba9882fdda2633dc2ce0504
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: cec3b9a8b1b58237c4beb745377709d4938a2dba
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612774"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950144"
 ---
 # <a name="create-a-form-processing-model-preview"></a>Erstellen eines Formular Verarbeitungsmodells (Vorschau)
 
@@ -48,7 +48,7 @@ Der erste Schritt beim Erstellen eines Formular Verarbeitungsmodells besteht dar
 1. Wählen Sie in Ihrer Dokumentbibliothek das Menü **automatisieren** aus, wählen Sie **AI Builder**aus, und wählen Sie dann **Formular Verarbeitungsmodell erstellen**aus.
 
     ![Erstellen eines AI-Generator Modells](../media/content-understanding/create-ai-builder-model.png)</br>
-2. Geben Sie im Bereich **Neues Formular Verarbeitungsmodell** im Feld **Name** einen Namen für Ihr Modell ein (beispielsweise Bestel *Lungen*).
+2. Geben Sie im Bereich **Neues Formular Verarbeitungsmodell** im Feld  **Name** einen Namen für Ihr Modell ein (beispielsweise Bestel *Lungen*).
 
     ![Neues Formular Verarbeitungsmodell](../media/content-understanding/new-form-model.png)</br> 
 

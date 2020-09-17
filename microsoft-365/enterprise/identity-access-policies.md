@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 8c4b136f30da0499b31102683f1a903e71813142
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 1512ba01f78d901177254fce86d0154e97e36496
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547222"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950802"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Allgemeine Identitäts- und Gerätezugriffsrichtlinien
 
@@ -35,6 +35,10 @@ Das folgende Diagramm zeigt die empfohlenen Richtlinien. Es wird angezeigt, auf 
 
 [ ![ Allgemeine Richtlinien für das Konfigurieren von Identitäts-und Geräte Zugriff](../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png) 
  [Siehe eine größere Version dieses Abbilds](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+
+Hier finden Sie eine einseitige PDF-Zusammenfassung mit Links zu den einzelnen Richtlinien:
+
+[![Daumen Bild für Identitäts-und Geräteschutz für Microsoft 365 Handout](../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br/>  [Als PDF anzeigen](../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Als PDF herunterladen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)  
 
 Im Rest dieses Artikels wird beschrieben, wie Sie diese Richtlinien konfigurieren. 
 
@@ -184,7 +188,7 @@ Im zweiten Abschnitt " **Zuweisungen** ":
 
 | Typ | Eigenschaften | Werte                  | Aktion |
 |:-----|:-----------|:------------------------|:------|
-| Access | **Zugriff zulassen** |  | Auswählen  |
+| Zugriff | **Zugriff zulassen** |  | Auswählen  |
 |      |     | **Kennwortänderung erforderlich** | Prüfen  |
 |||||
 
@@ -374,7 +378,6 @@ So erfordern Sie die Kompatibilität für alle Geräte:
 
 ## <a name="next-step"></a>Nächster Schritt
 
-![Schritt 3: Richtlinien für Gast-und externe Benutzer](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)
-
+[![Schritt 3: Richtlinien für Gast-und externe Benutzer](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)](identity-access-policies-guest-access.md)
 
 [Informationen zu Richtlinien Empfehlungen für Gast-und externe Benutzer](identity-access-policies-guest-access.md)

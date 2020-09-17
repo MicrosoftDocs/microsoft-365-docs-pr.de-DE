@@ -17,12 +17,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: be35663fc32a2d214e1ca0ae91161079a5f672a3
-ms.sourcegitcommit: a13f43a3e981c90f1e0b9805c9c16a56f67fc650
+ms.openlocfilehash: 686d31c64394094530099edb97bbd10912a58cb8
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47651144"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949892"
 ---
 # <a name="identity-and-device-access-configurations"></a>Konfigurationen für den Identitäts- und Gerätezugriff
 
@@ -114,8 +114,8 @@ Azure Ad bietet eine umfassende Sammlung von Funktionen zur Identitätsverwaltun
 | [Azure Ad Gruppen](/azure/active-directory/fundamentals/active-directory-manage-groups) | Bedingte Zugriffsrichtlinien, Geräteverwaltung mit InTune und sogar Berechtigungen für Dateien und Websites in Ihrer Organisation beruhen auf der Zuweisung zu Benutzerkonten oder Azure Ad Gruppen. Es wird empfohlen, Azure Ad Gruppen zu erstellen, die den von Ihnen implementierten Schutzebenen entsprechen. Beispielsweise sind Ihre Führungskräfte wahrscheinlich höhere Wert Ziele für Hacker. Daher ist es sinnvoll, die Benutzerkonten dieser Mitarbeiter einer Azure Ad Gruppe hinzuzufügen und diese Gruppe den Richtlinien für bedingten Zugriff und anderen Richtlinien zuzuweisen, die eine höhere Schutzebene für den Zugriff erzwingen. | Microsoft 365 E3 oder E5 |
 | [Geräteregistrierung](/azure/active-directory/devices/overview) | Sie registrieren ein Gerät in Azure AD, um eine Identität für das Gerät zu erstellen. Diese Identität wird verwendet, um das Gerät zu authentifizieren, wenn ein Benutzer sich anmeldet und Richtlinien für bedingten Zugriff anwendet, die Domänenbeitritt oder kompatible PCs erfordern. Für diesen Leitfaden verwenden wir die Geräteregistrierung, um Domänenbeitritt von Windows-Computern automatisch zu registrieren. Die Geräteregistrierung ist eine Voraussetzung für die Verwaltung von Geräten mit InTune. | Microsoft 365 E3 oder E5 |
 | [Azure AD Identity Protection](/azure/active-directory/identity-protection/overview) | Ermöglicht Ihnen das Erkennen potenzieller Sicherheitsanfälligkeiten, die sich auf die Identitäten Ihrer Organisation auswirken, und die Konfiguration der automatischen Behebungs Richtlinie auf niedrigem, mittlerem und hohem Anmelde-und Benutzer Risiko. Dieser Leitfaden basiert auf dieser Risikobewertung, um Richtlinien für bedingten Zugriff für mehrstufige Authentifizierung anzuwenden. Dieser Leitfaden enthält auch eine Richtlinie für den bedingten Zugriff, bei der Benutzer Ihr Kennwort ändern müssen, wenn für Ihr Kontoaktivitäten mit hohem Risiko erkannt werden. | Microsoft 365 E5, Microsoft 365 E3 mit dem Identity & Threat Protection-Add-on, EMS E5 oder Azure Premium P2-Lizenzen |
-| [Self-Service Password Reset (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks) | Ermöglichen Sie Ihren Benutzern, ihre Kennwörter sicher und ohne Helpdesk-Eingriff zurückzusetzen, indem Sie die Überprüfung von mehreren Authentifizierungsmethoden bereitstellen, die der Administrator steuern kann. | Microsoft 365 E3 oder E5 |
-| [Azure AD Kennwortschutz](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad). Erkennen und blockieren Sie bekannte schwache Kennwörter und deren Varianten sowie zusätzliche schwache Ausdrücke, die für Ihre Organisation spezifisch sind. Standardmäßige globale gesperrte Kenn Wortlisten werden automatisch auf alle Benutzer in einem Azure AD Mandanten angewendet. Sie können zusätzliche Einträge in einer benutzerdefinierten Liste gesperrter Kennwörter definieren. Wenn Benutzer ihre Kennwörter ändern oder zurücksetzen, werden diese gesperrten Kenn Wortlisten überprüft, um die Verwendung sicherer Kennwörter zu erzwingen. |  Microsoft 365 E3 oder E5 |
+| [Zurücksetzen von Kennwörtern durch den Benutzer (Self-Service Password Reset, SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks) | Ermöglichen Sie Ihren Benutzern, ihre Kennwörter sicher und ohne Helpdesk-Eingriff zurückzusetzen, indem Sie die Überprüfung von mehreren Authentifizierungsmethoden bereitstellen, die der Administrator steuern kann. | Microsoft 365 E3 oder E5 |
+| [Azure AD Kennwortschutz](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) | Erkennen und blockieren Sie bekannte schwache Kennwörter und deren Varianten sowie zusätzliche schwache Ausdrücke, die für Ihre Organisation spezifisch sind. Standardmäßige globale gesperrte Kenn Wortlisten werden automatisch auf alle Benutzer in einem Azure AD Mandanten angewendet. Sie können zusätzliche Einträge in einer benutzerdefinierten Liste gesperrter Kennwörter definieren. Wenn Benutzer ihre Kennwörter ändern oder zurücksetzen, werden diese gesperrten Kenn Wortlisten überprüft, um die Verwendung sicherer Kennwörter zu erzwingen. |  Microsoft 365 E3 oder E5 |
 ||||
 
 ![Komponenten des Identitäts-und Gerätezugriffs.](../media/microsoft-365-policies-configurations/identity-device-access-components.png)
@@ -130,7 +130,7 @@ Azure Ad bietet eine umfassende Sammlung von Funktionen zur Identitätsverwaltun
 
 In diesem Leitfaden erfahren Sie, wie Sie empfohlene Richtlinien erstellen, um die Verwendung genehmigter apps zu erzwingen und zu ermitteln, wie diese apps mit ihren Geschäftsdaten verwendet werden können.
 
-### <a name="microsoft-365"></a>Microsoft 365
+### <a name="microsoft-365"></a>Microsoft 365
 
 Dieser Leitfaden zeigt Ihnen, wie Sie eine Reihe von Richtlinien implementieren, um den Zugriff auf Microsoft 365-Cloud-Dienste zu schützen, einschließlich Microsoft Teams, Exchange Online, SharePoint Online und OneDrive für Unternehmen. Zusätzlich zur Implementierung dieser Richtlinien sollten Sie auch den Schutzgrad für Ihren Mandanten mit diesen Ressourcen erhöhen:
 

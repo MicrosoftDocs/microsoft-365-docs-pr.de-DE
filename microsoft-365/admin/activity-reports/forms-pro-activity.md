@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Erfahren Sie, wie Sie einen Microsoft Forms pro-Aktivitätsbericht mithilfe des Microsoft 365 Reports-Dashboards im Microsoft 365 Admin Center erhalten.
-ms.openlocfilehash: df03f3f0300dcd923f43987ee786981b1653b1ce
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 58c7a76c49b7c925a4e7851f7e81c7f47d465d3a
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387705"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949192"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-pro-activity"></a>Microsoft 365-Berichte im Admin Center-Formulare pro-Aktivität
 
@@ -47,7 +47,7 @@ Sie können eine Ansicht der Formulare pro-Aktivität Ihres Benutzers abrufen, i
 
 ![Formular Aktivitätsbericht](../../media/formsproactivity.png)
 
-|||
+|Element|Beschreibung|
 |:-----|:-----|
 |1.  <br/> |Der **Formular pro** -Aktivitätsbericht kann für Trends in den letzten 7 Tagen, 30 Tagen, 90 Tagen oder 180 Tagen angezeigt werden. Wenn Sie im Bericht jedoch einen bestimmten Tag auswählen, werden in der Tabelle (7) Daten für bis zu 28 Tage ab dem aktuellen Datum angezeigt (nicht ab dem Datum, an dem der Bericht generiert wurde).   <br/> |
 |2.  <br/> |Die Daten in jedem Bericht sind in der Regel so aktuell wie die letzten 48 Stunden.  <br/> |

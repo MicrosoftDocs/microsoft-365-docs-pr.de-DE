@@ -22,12 +22,12 @@ search.appverid:
 - ODB160
 ms.assetid: 8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353
 description: Rufen Sie den OneDrive-Verwendungsbericht für Ihre Organisation ab, und kennen Sie die Aktivitäten aller OneDrive-Benutzer, die Anzahl der freigegebenen Dateien und die Speicherauslastung.
-ms.openlocfilehash: 9de2260049d901b401bd62a9e4d05191222b97a3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: dd5ac1c52d2226b12c75dc92c3407012251a90da
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387537"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948925"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-activity"></a>Microsoft 365-Berichte im Admin Center – OneDrive für Unternehmen Aktivität
 
@@ -56,7 +56,7 @@ Sie können einen Einblick in die OneDrive for Business-Aktivität erhalten, ind
   
 ![OneDrive Activity Report](../../media/316b2a03-8e42-447c-aae8-080813eebe84.png)
   
-|||
+|Element|Beschreibung|
 |:-----|:-----|
 |1.  <br/> |Im Bericht **OneDrive for Business-Aktivität** werden die Trends über die letzten 7 Tage, 30 Tage, 90 Tage oder 180 Tage angezeigt. Wenn Sie im Bericht jedoch einen bestimmten Tag auswählen, werden in der Tabelle (7) Daten für bis zu 28 Tage ab dem aktuellen Datum angezeigt (nicht ab dem Datum, an dem der Bericht generiert wurde).  <br/> |
 |2.  <br/> |Die Daten in den einzelnen Berichten decken in der Regel die letzten 24 bis 48 Stunden ab. <br/>|

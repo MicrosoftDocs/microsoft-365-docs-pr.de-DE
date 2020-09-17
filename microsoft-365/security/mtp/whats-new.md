@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 1a2a8cd91d0cc32dc5a10b1eb1dd28714cd4f6c4
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: da3fd8b97899e302c9b7b24a5c0677534b579981
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45429966"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47947984"
 ---
 # <a name="whats-new-in-microsoft-threat-protection"></a>Neues in Microsoft Threat Protection
 
@@ -30,10 +30,13 @@ RSS-Feed: erhalten Sie benachrichtigt, wenn diese Seite aktualisiert wird, indem
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
 ```
+## <a name="september-2020"></a>September 2020
+- [AssignedIPAddresses ()-Funktion](advanced-hunting-assignedipaddresses-function.md) <br> Verwenden Sie diese Funktion in Ihren [erweiterten](advanced-hunting-overview.md) Suchabfragen, um schnell die neuesten IP-Adressen zu erhalten, die einem Gerät oder den aktuellen IP-Adressen zu einem bestimmten Zeitpunkt zugewiesen wurden.
+
 ## <a name="july-2020"></a>Juli 2020
-- [Fileprofile ()-Funktion](advanced-hunting-fileprofile-function.md) <br> Verwenden Sie diese Funktion in Ihren [erweiterten Jagd](advanced-hunting-overview.md) Abfragen, um Ergebnisse mit umfassenden Dateiinformationen zu bereichern.
+- [Fileprofile ()-Funktion](advanced-hunting-fileprofile-function.md) <br> Verwenden Sie diese Funktion in ihren erweiterten Jagd Abfragen, um Ergebnisse mit umfassenden Dateiinformationen zu bereichern.
 - [Identitäts-und App-Tabellen](advanced-hunting-schema-tables.md)<br> Erhalten Sie Einblick in Authentifizierungsereignisse, Active Directory Abfragen und App-bezogene Aktivitäten mit den Tabellen [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md), [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)und [AppFileEvents](advanced-hunting-appfileevents-table.md) im erweiterten Jagd Schema.
-- [Suche starten](advanced-hunting-go-hunt.md)<br> Schnelles pivotieren von der Untersuchung eines Vorfalls zur Überprüfung eines bestimmten Ereignisses, eines Benutzers, eines Geräts oder anderer Entitätstypen mithilfe abfragebasierter [Erweiterter Jagd](advanced-hunting-overview.md) Funktionen.
+- [Suche starten](advanced-hunting-go-hunt.md)<br> Schnelles pivotieren von der Untersuchung eines Vorfalls zur Überprüfung eines bestimmten Ereignisses, eines Benutzers, eines Geräts oder anderer Entitätstypen mithilfe abfragebasierter erweiterter Jagd Funktionen.
 
 ## <a name="june-2020"></a>Juni 2020
 - Twitter-Feed <br> Holen Sie sich die neuesten Sicherheitsforschung, Threat Intelligence, Produktneuigkeiten und vieles mehr-direkt im Dashboard.

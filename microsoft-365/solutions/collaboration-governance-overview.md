@@ -14,12 +14,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Hier erfahren Sie, wie Sie verwandte Features in Microsoft 365-Gruppen, Teams, SharePoint und jammern steuern.
-ms.openlocfilehash: cdef9a4f939c20b34bf32efb5a258deddd885d0e
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: b217dc089eb150d01eed9cd720b2caa290d54bf1
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662629"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950712"
 ---
 # <a name="overview-of-collaboration-governance-in-microsoft-365"></a>Übersicht über die Collaboration-Steuerung in Microsoft 365
 
@@ -108,16 +108,16 @@ Sehen Sie sich diese Konferenzsitzungen an, um weitere Informationen zur Steueru
 
 Erfahren Sie mehr über die Grundlagen und neuen Innovationen in Microsoft 365-Gruppen, einschließlich Verwaltung und Steuerung im Maßstab, bewährte Methoden für die Nutzung und Einführung sowie Self-Service.
 
-- [Umarmen von Microsoft 365-Gruppen](https://myignite.techcommunity.microsoft.com/sessions/81553)
+- [Umarmen von Microsoft 365-Gruppen](https://www.youtube.com/watch?v=dAamBF1gb7M)
 
 **Governance**
 
 Hier erfahren Sie, wie Sie den Ablauf Zyklus von Gruppen einrichten, Benennungsrichtlinien, Klassifikations Bezeichnungen, Zusammenarbeit mit externen Gästen und Berechtigungen zur Gruppenerstellung verwalten.
 
-- [Transformieren der Zusammenarbeit und bekämpfen von Shadow IT mit Office 365 Gruppen](https://myignite.techcommunity.microsoft.com/sessions/81554)
+- [Transformieren der Zusammenarbeit und bekämpfen von Shadow IT mit Office 365 Gruppen](https://www.youtube.com/watch?v=Bhf_bKx3lAg)
 
 **Kundenbeispiel**
 
 Sehen Sie sich ein Beispiel hinter den Kulissen an, wie Microsoft 365-Gruppen, SharePoint, Teams und jammern zusammenarbeiten, um eine globale Plattform für die Zusammenarbeit bereitzustellen.
 
-- [Suchen nach ihrer Zusammenarbeit Sweet Spot mit Office 365 Gruppen, SharePoint, Teams und jammern](https://myignite.techcommunity.microsoft.com/sessions/84289)
+- [Suchen nach ihrer Zusammenarbeit Sweet Spot mit Office 365 Gruppen, SharePoint, Teams und jammern](https://www.youtube.com/watch?v=Rx9eVwqXeQk)

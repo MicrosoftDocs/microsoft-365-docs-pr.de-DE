@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Datenverschiebungen sind Back-End-Vorgänge, die auftreten, wenn Microsoft Dienste und zugehörige Daten für Ihren Mandanten in ein neues Rechenzentrum Geo verschiebt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9f87628d6bbc65fe4122999f6d0fde809fed51b8
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: acd2601d32617c56019ca8b4bf8688ce40f5d76a
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690493"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950272"
 ---
 # <a name="during-and-after-your-data-move"></a>Während und nach der Datenverschiebung
 
@@ -45,8 +45,8 @@ Sehen Sie sich das Microsoft 365-Nachrichten Center an, um zu bestätigen, dass 
 |Vereinigte Arabische Emirate  <br/> |1. Juli 2022  <br/> |
 |Südafrika  <br/> |1. Juli 2022  <br/> |
 |Schweiz, Liechtenstein  <br/> |1. Juli 2022  <br/> |
-|Deutschland  <br/> |Geplant  <br/> |
 |Norwegen  <br/> |1. November 2022  <br/> |
+|Deutschland  <br/> |Geplant  <br/> |
 
 ## <a name="exchange-online"></a>Exchange Online
 

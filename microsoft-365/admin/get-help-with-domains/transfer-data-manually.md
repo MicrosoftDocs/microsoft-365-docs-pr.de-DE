@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: Hier erfahren Sie, wie Sie Daten manuell zwischen zwei Microsoft 365-Konten übertragen, wenn Sie den Plan oder den Firmennamen geändert oder mehrere Abonnements in einem kombiniert haben.
-ms.openlocfilehash: 91ea4140f0460e1f8cc1243f1b5f203738dcc9ee
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1297e2d55692262be55b166dacc56cb89cc6c8a0
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685510"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948724"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>Manuelles Übertragen von Daten zwischen zwei Konten
 
@@ -106,3 +106,7 @@ Bitten Sie die Benutzer, [Ihre E-Mails, Kontakte, Aufgaben und Kalenderdaten zu 
 ### <a name="onedrive-for-business-data"></a>OneDrive for Business-Daten:
 
 Bitten Sie die Benutzer, [OneDrive für Unternehmen Inhalte auf Ihren Computer](https://support.microsoft.com/office/59b1de2b-519e-4d3a-8f45-51647cf291cd)zu kopieren/zu synchronisieren, und fügen Sie Sie dann Ihrem neuen Abonnement wieder hinzu.
+
+### <a name="onenote"></a>OneNote 
+
+Fordern Sie die Benutzer auf, [OneNote zu sichern](https://support.microsoft.com/office/back-up-notes-f58b34b0-611d-435e-87fa-7942a1767af4?ui=en-us&rs=en-us&ad=us) und [Notizen aus einer Sicherung](https://support.microsoft.com/en-us/office/restore-notes-from-a-backup-5daf9cb0-6769-4998-a5de-f044fdd0d831?ui=en-us&rs=en-us&ad=us) in ihren neuen Abonnements wiederherzustellen.

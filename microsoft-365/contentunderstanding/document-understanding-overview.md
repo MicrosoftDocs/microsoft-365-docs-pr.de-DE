@@ -6,17 +6,17 @@ manager: pamgreen
 ms.date: 08/1/2020
 audience: admin
 ms.topic: article
-ms.service: ''
+ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Erhalten Sie einen Überblick über das Dokument Verständnis in Project Cortex.
-ms.openlocfilehash: bdebc8a8726a7b9a77eb9a1095f83e937cf36cb1
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: c1e4092164ee96d4f244f10be9ebab62a2c8da5b
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612714"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950048"
 ---
 # <a name="document-understanding-overview-preview"></a>Dokument Verständnis Übersicht (Vorschau)
 > [!Note] 
@@ -36,7 +36,7 @@ Sie können Ihrem Dokument *Klassifizierungen* und *Extraktions* Module hinzufü
 
 - Klassifizierungen werden verwendet, um Dokumente zu identifizieren und zu klassifizieren, die in die Dokumentbibliothek hochgeladen werden. Beispielsweise kann eine Klassifizierung "geschult" werden, um alle *Vertrags Erneuerungs* Dokumente zu identifizieren, die in die Bibliothek hochgeladen werden. Der Inhaltstyp "Vertragserneuerung" wird von Ihnen beim Erstellen ihrer Klassifizierung definiert.
 
-- Extraktions Module ziehen Informationen aus diesen Dokumenten. Beispielsweise werden für alle Vertrags Erneuerungs Dokumente, die in Ihrer Dokumentbibliothek identifiziert werden, in ihrer Ansicht Spalten angezeigt, in denen auch das *Start Datum* und der *Client* des Diensts für jedes Vertrags Erneuerungs Dokument angezeigt wird. 
+- Extraktions Module ziehen Informationen aus diesen Dokumenten. Beispielsweise werden für alle Vertrags Erneuerungs Dokumente, die in Ihrer Dokumentbibliothek identifiziert werden, in ihrer Ansicht Spalten angezeigt, in denen auch das *Start Datum* und der  *Client* des Diensts für jedes Vertrags Erneuerungs Dokument angezeigt wird. 
 
 Sie verwenden Beispieldateien, um Ihre Klassifizierungen und Extraktoren in Ihrem Modell zu trainieren und zu testen. Beispieldateien bieten ihre Modellbeispiele, wonach Sie suchen müssen, wenn Sie versuchen, Daten aus Dateien zu identifizieren und daraus zu extrahieren. Sie möchten beispielsweise Ihre Klassifizierungen und Extraktoren für die Vertragserneuerung mit Beispielen von Vertrags Erneuerungs Dokumenten trainieren, mit denen Ihr Unternehmen zusammenarbeitet. Sie können auch Beispieldateien verwenden, um die Effektivität Ihres Modells zu testen.
 

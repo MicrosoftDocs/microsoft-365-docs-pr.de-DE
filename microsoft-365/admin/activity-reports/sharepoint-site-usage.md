@@ -21,12 +21,12 @@ search.appverid:
 - BSA160
 ms.assetid: 4ecfb843-e5d5-464d-8bf6-7ed512a9b213
 description: 'Rufen Sie den Bericht über die SharePoint-Websitenutzung ab, um zu erfahren, wie viele Dateien Benutzer in SharePoint-Websites speichern, wie viele aktiv verwendet werden und wie viel Speicher insgesamt verbraucht wird. '
-ms.openlocfilehash: b39f1588f5c0c68a5972aab3039a8d7d901f9dc5
-ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
+ms.openlocfilehash: 8c2428a49a42a1d259c69297feff13e5c00a9b8e
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44689300"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948856"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Microsoft 365-Berichte im Admin Center – Verwendung von SharePoint-Websites
 
@@ -47,7 +47,7 @@ Microsoft 365-Berichte im Admin Center werden für gcc High-und DoD-Mandanten ni
 
 ![SharePoint Site Usage Report](../../media/4f88fb7d-9aa8-470e-9e23-e31caaf77d78.png)
   
-|||
+|Element|Beschreibung|
 |:-----|:-----|
 |1.  <br/> |Im Bericht zur **SharePoint-Nutzung** werden die Trends über die letzten 7 Tage, 30 Tage, 90 Tage oder 180 Tage angezeigt. Wenn Sie im Bericht jedoch einen bestimmten Tag auswählen, werden in der Tabelle (7) Daten für bis zu 28 Tage ab dem aktuellen Datum angezeigt (nicht ab dem Datum, an dem der Bericht generiert wurde).  <br/> |
 |2.  <br/> |Die Daten in den einzelnen Berichten decken in der Regel die letzten 24 bis 48 Stunden ab. <br/> |

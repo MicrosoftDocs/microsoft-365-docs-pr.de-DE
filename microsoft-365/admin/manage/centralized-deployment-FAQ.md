@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lesen Sie die Antworten auf häufige Fragen zur zentralisierten Bereitstellung im Microsoft 365 Admin Center.
-ms.openlocfilehash: b1b5ccbb5373bf5d536208efdfe487bc0c872f25
-ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
+ms.openlocfilehash: 555496f15663b6607ebc785498bdc94b5e51b9c9
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45102884"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948688"
 ---
 # <a name="centralized-deployment-faq"></a>FAQ zur zentralen Bereitstellung
 
@@ -94,8 +94,10 @@ Wir empfehlen, den ISV-Entwickler für das kostenpflichtige Add-in zu erreichen,
     
 ## <a name="which-admin-role-do-i-need-to-manage-add-ins-for-my-organization"></a>Welche Administratorrolle muss ich für die Verwaltung von Add-Ins für meine Organisation übernehmen?  
 
-Sie müssen über die globale Administratorrolle zum Verwalten von Add-Ins verfügen. Wenn Sie die Person sind, die Ihr Microsoft 365 for Business-Abonnement erworben hat, sind Sie der globale Administrator. 
+Globaler Administrator ist die empfohlene Rolle bei vollständigem Zugriff auf den Lebenszyklus der Add-in-Verwaltung. Andere Administratorrollen haben einen begrenzten Zugriff auf den Lebenszyklus der Add-in-Bereitstellung. Wenn Sie die Person sind, die Ihr Microsoft 365 for Business-Abonnement erworben hat, sind Sie der globale Administrator. 
  
 Ihr Abonnement verfügt über eine Reihe von Administratorrollen, die Sie anderen Benutzern in Ihrer Organisation zuweisen können. Jede Administratorrolle ordnet allgemeine Geschäftsfunktionen zu und gibt Personen in Ihrer Organisation Berechtigungen zum Ausführen bestimmter Aufgaben im Microsoft 365 Admin Center.  
  
 Weitere Informationen finden Sie unter [Zuweisen von Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide).  
+
+

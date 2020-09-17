@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 502dc87b45c42f0ae95ea9da898c4d4589b19671
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: 1e779e0da89ea49fb4ed390b20a6fb67ffd3b162
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47649949"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47947996"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Vorschaufunktionen für Microsoft Threat Protection
 
@@ -50,7 +50,7 @@ Aktivieren Sie die Einstellung Vorschau der Benutzeroberfläche, um zu den erste
 
 3. **Vorschau-Features**aktivieren aktivieren Sie die  >  **Vorschaufunktionen**. 
 
-3. Klicken Sie auf **Speichern**.
+3. Wählen Sie **Speichern** aus.
 
 Sie wissen, dass Sie die Vorschaufunktionen aktiviert haben, wenn Sie sehen, dass das Kontrollkästchen **Vorschau-Features aktivieren** aktiviert ist. 
 
@@ -59,7 +59,6 @@ Die folgenden Features und Verbesserungen sind derzeit in der Vorschau verfügba
 
 - **[Microsoft Threat Protection-APIs](api-overview.md)** – mit den Microsoft Threat Protection-APIs auf Lop-Ebene können Sie Workflows basierend auf den freigegebenen Vorfällen und erweiterten Jagd Tabellen automatisieren. 
 - **[IdentityDirectoryEvents-Tabelle in Advanced Hunting](advanced-hunting-identitydirectoryevents-table.md)** – Ereignisse finden, die einen lokalen Domänencontroller mit Active Directory (AD) umfassen. Diese Tabelle behandelt eine Reihe von identitätsbezogenen Ereignissen sowie Systemereignisse auf dem Domänencontroller.
-- **[AssignedIPAddresses ()-Funktion](advanced-hunting-assignedipaddresses-function.md)** – verwenden Sie diese Funktion in Advanced Hunting, um schnell die neuesten IP-Adressen zu erhalten, die einem Gerät oder den aktuellen IP-Adressen zu einem bestimmten Zeitpunkt zugewiesen wurden.
 - **[Aktionen in der erweiterten Suche durchführen](advanced-hunting-take-action.md)** – enthalten schnell Bedrohungen oder adressieren gefährdete Objekte, die Sie in [Advanced Hunting](advanced-hunting-overview.md)finden.
 - **[In-Portal-Schemareferenz](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : Informationen zu erweiterten Jagd Schema Tabellen erhalten Sie direkt im Sicherheitscenter. Neben Tabellen-und Spaltenbeschreibungen bietet diese praktische Referenzinformationen zu unterstützten Ereignistypen ( `ActionType` Werten) und Beispielabfragen.
 

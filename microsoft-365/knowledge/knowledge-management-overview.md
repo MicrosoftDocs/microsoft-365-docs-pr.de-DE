@@ -6,17 +6,17 @@ manager: pamgreen
 ms.date: 8/1/2020
 audience: admin
 ms.topic: article
-ms.service: ''
+ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Übersicht über das Wissensmanagement in Project Cortex.
-ms.openlocfilehash: 6ced55e8886c08219d7296e2709a2ffc2f09078d
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: 80750ee94248b21b8ac7bd3869830a7986de34b9
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612596"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949372"
 ---
 # <a name="knowledge-management-0verview-preview"></a>Knowledge Management 0verview (Vorschau)
 

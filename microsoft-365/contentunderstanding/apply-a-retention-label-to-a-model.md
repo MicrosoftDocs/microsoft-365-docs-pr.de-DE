@@ -6,17 +6,17 @@ manager: pamgreen
 ms.date: 10/1/2020
 audience: admin
 ms.topic: article
-ms.service: ''
+ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Hier erfahren Sie, wie Sie eine Aufbewahrungs Bezeichnung auf ein Dokument Verständnis Modell anwenden.
-ms.openlocfilehash: 3781edf0ab8c013de5ae2fdb7a7d33e012bf249b
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: 875c2124fd9712ab7f04f5e0960f79644127242c
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405694"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950108"
 ---
 # <a name="apply-a-retention-label-to-a-document-understanding-model-preview"></a>Anwenden einer Aufbewahrungs Bezeichnung auf ein Dokument grundlegendes Modell (Vorschau)
 

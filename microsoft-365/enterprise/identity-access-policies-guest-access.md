@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: a88fc5f46a6dafda72a24ba5e80587b24a216955
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: c61526139111885ec345bc4a4dd3cd6b147370e6
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546476"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950808"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>Richtlinien für das Zulassen von Gast-und externen B2B-Zugriff
 
@@ -55,7 +55,9 @@ Wenn Sie Gäste und externe Benutzer in Richtlinien für bedingten Zugriff einsc
 ### <a name="guests-vs-external-users"></a>Gäste vs. externe Benutzer
 In Azure AD sind Gast-und externe Benutzer identisch. Der Benutzertyp für diese beiden Typen ist Gast. Gastbenutzer sind B2B-Benutzer.
 
-Microsoft Teams unterscheidet zwischen Gastbenutzern und externen Benutzern innerhalb der APP, aber dies sind beide B2B-Benutzer bei der Authentifizierung. Weitere Informationen zu Microsoft Teams-Gast-und externen Benutzern finden Sie unter [Aktivieren von Gast-und externem Zugriff für Teams](teams-access-policies.md#enabling-guest-and-external-access-for-teams).
+Microsoft Teams unterscheidet zwischen Gastbenutzern und externen Benutzern in der app. Gastbenutzer haben Azure AD B2B-Konten und können Teams hinzugefügt werden. Externe Benutzer können nur an anrufen, Chats und Besprechungen teilnehmen. Weitere Informationen finden Sie in [diesem Vergleich zwischen Gast und externen Benutzern für Teams](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access).
+
+Weitere Informationen zum Sichern von Identitäts-und Geräte Zugriff für Microsoft Teams finden Sie unter [Richtlinien Empfehlungen für das Sichern von teamchats, Gruppen und Dateien](teams-access-policies.md) .
 
 ### <a name="require-mfa-always-for-guest-and-external-users"></a>MFA immer für Gast und externe Benutzer erforderlich
 Diese Richtlinie fordert Gäste auf, sich für MFA in Ihrem Mandanten zu registrieren, unabhängig davon, ob Sie für MFA in Ihrem Wohnsitz Mandanten registriert sind. Beim Zugriff auf Ressourcen in Ihrem Mandanten müssen Gäste und externe Benutzer MFA für jede Anforderung verwenden. 

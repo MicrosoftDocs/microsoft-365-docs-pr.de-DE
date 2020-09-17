@@ -7,16 +7,16 @@ manager: pamgreen
 ms.date: 08/01/2020
 audience: admin
 ms.topic: article
-ms.service: ''
+ms.service: o365-administration
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: e4a9917464e22c6220d26619e7b5ca60f090abb7
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: 82a1b1990f464a892b8216caa26e0422b093bf37
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612490"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948054"
 ---
 # <a name="work-with-topics-in-the-topic-center-preview"></a>Arbeiten mit Themen im Themen Center (Vorschau)
 
@@ -70,7 +70,7 @@ So erstellen Sie ein neues Thema:
     c. Geben Sie im Abschnitt **kurze Beschreibung** eine Beschreibung des Themas ein oder zwei Sätze ein. Dieser Text wird für die zugeordnete Themenkarte verwendet.</br>
     d. Geben Sie im Abschnitt **Personen** die Namen der Experten für Sachverständige für das Thema ein.</br>
     e. Wählen Sie im Abschnitt **Dateien und Seiten** die Option **Hinzufügen** aus, und wählen Sie dann auf der nächsten Seite zugeordnete OneDrive-Dateien oder SharePoint Online Seiten aus.</br>
-    f. Wählen Sie im Abschnitt **Websites** die Option **Hinzufügen**aus. Wählen Sie im Bereich **Websites** , der angezeigt wird, die Websites aus, die dem Thema zugeordnet sind.</br>
+    f. Wählen Sie im Abschnitt **Websites** die Option **Hinzufügen**aus. Wählen Sie im Bereich  **Websites** , der angezeigt wird, die Websites aus, die dem Thema zugeordnet sind.</br>
 
     ![Neue Themen Seite](../media/content-understanding/k-new-topic-page.png) </br>
 3. Wenn Sie der Seite weitere Komponenten hinzufügen müssen, wie Text, Bilder, Webparts, Links usw., wählen Sie das Canvas-Symbol in der Mitte der Seite aus, um Sie zu suchen und hinzuzufügen.

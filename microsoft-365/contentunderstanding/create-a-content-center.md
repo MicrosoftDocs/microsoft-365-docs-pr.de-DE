@@ -6,17 +6,17 @@ manager: pamgreen
 ms.date: 8/1/2020
 audience: admin
 ms.topic: article
-ms.service: ''
+ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Hier erfahren Sie, wie Sie ein inhaltscenter erstellen.
-ms.openlocfilehash: 5332ffa195519aebd5ae8dd2c26d7d62fd9b3267
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: ae10cdae2fe84abf72cf09141798b628d88a504a
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612750"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950096"
 ---
 # <a name="create-a-content-center-preview"></a>Erstellen eines inhaltscenters (Vorschau)
 

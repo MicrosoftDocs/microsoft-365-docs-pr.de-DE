@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
 description: Erfahren Sie, wie Sie einen e-Mail-Aktivitätsbericht mithilfe des Microsoft 365 Reports-Dashboards im Microsoft 365 Admin Center erhalten.
-ms.openlocfilehash: a864b997d607b06391c1a2a5d4725bc8d074de87
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b2b322fe7e35c3fa7e4a5966919321b329004d92
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387777"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948232"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---email-activity"></a>Microsoft 365-Berichte im Admin Center-e-Mail-Aktivität
 
@@ -48,7 +48,7 @@ Sie erhalten einen Einblick in die E-Mail-Aktivitäten Ihrer Benutzer, indem Sie
   
 ![E-Mail-Aktivitätsbericht](../../media/2317f03d-2d71-46bf-a5c7-d94dbc8cfbe1.png)
   
-|||
+|Element|Beschreibung|
 |:-----|:-----|
 |1.  <br/> |Im Bericht **E-Mail-Aktivität** werden die Trends über die letzten 7 Tage, 30 Tage, 90 Tage oder 180 Tage angezeigt. Wenn Sie im Bericht jedoch einen bestimmten Tag auswählen, werden in der Tabelle (7) Daten für bis zu 28 Tage ab dem aktuellen Datum angezeigt (nicht ab dem Datum, an dem der Bericht generiert wurde).  <br/> |
 |2.  <br/> |Die Daten in den einzelnen Berichten decken in der Regel die letzten 24 bis 48 Stunden ab.  <br/> |

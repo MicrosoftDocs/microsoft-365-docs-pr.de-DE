@@ -18,19 +18,19 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: c45b7d1b01ee776e9519d67ee52d36b8f48bf0ef
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 9fc4c99254f4f27b476930a555b237be093bff24
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552354"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950724"
 ---
 # <a name="automated-investigation-and-response-capabilities-in-microsoft-threat-protection"></a>Automatisierte Ermittlungs-und Antwortfunktionen in Microsoft Threat Protection
 
 **Gilt für:**
 - Microsoft Threat Protection
 
-Wenn Sicherheitswarnungen ausgelöst werden, liegt es an Ihrem Sicherheits Betriebsteam, diese Warnungen zu untersuchen und Maßnahmen zum Schutz Ihrer Organisation zu ergreifen. Die Priorisierung und Untersuchung von Warnungen kann sehr zeitaufwändig sein, insbesondere dann, wenn ständig neue Benachrichtigungen während einer laufenden Untersuchung eingehen. Sicherheitsteams können sich angesichts des enormen Volumens der Bedrohungen, die sie überwachen müssen, überfordert fühlen. Automatische Ermittlungs-und Antwortfunktionen (auch als *Automatische selbst Heilungs* Funktionen bezeichnet) in Microsoft Threat Protection können hilfreich sein. 
+Wenn Sicherheitswarnungen ausgelöst werden, liegt es an Ihrem Sicherheits Betriebsteam, diese Warnungen zu untersuchen und Maßnahmen zum Schutz Ihrer Organisation zu ergreifen. Die Priorisierung und Untersuchung von Warnungen kann sehr zeitaufwändig sein, insbesondere dann, wenn ständig neue Benachrichtigungen während einer laufenden Untersuchung eingehen. Sicherheitsteams können sich angesichts des enormen Volumens der Bedrohungen, die sie überwachen müssen, überfordert fühlen. Automatische Ermittlungs-und Antwortfunktionen (auch als *selbst Heilungs* Funktionen bezeichnet) in Microsoft Threat Protection können hilfreich sein. 
 
 Sehen Sie sich das folgende Video an, um zu erfahren, wie automatisierte Selbstheilungsfunktionen funktionieren:
 
@@ -72,7 +72,7 @@ Während eine Untersuchung läuft, werden alle anderen zugehörigen Warnungen zu
 
 ## <a name="requirements-for-automated-investigation-and-response-in-microsoft-threat-protection"></a>Anforderungen für die automatische Untersuchung und Reaktion in Microsoft Threat Protection
 
-|Erfordernis |Details |
+|Anforderung |Details |
 |--|--|
 |Abonnementanforderungen |Eine der folgenden Varianten: <br/>-Microsoft 365 E5 <br/>-Microsoft 365 a5 <br/>-Microsoft 365 E5-Sicherheit<br/>-Microsoft 365 a5-Sicherheit<br/>-Office 365 E5 Plus Enterprise Mobility + Security E5 plus Windows E5<br/><br/>Weitere Informationen finden Sie unter [Microsoft Threat Protection License Requirements](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites?#licensing-requirements).|
 |Netzwerkanforderungen |- [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) muss aktiviert sein<br/>- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) (MCAS) muss konfiguriert sein<br/>- [MCAS muss in Azure ATP sein](https://docs.microsoft.com/cloud-app-security/aatp-integration) |

@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
 description: Erfahren Sie, wie Sie den Bericht über die Postfachnutzung über die Aktivitäten der Benutzer mit einem Benutzerpostfach informieren.
-ms.openlocfilehash: 15da09574b2273e119ba9cf2c132d2e9596e9a64
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 0b0c57bda813e1600866513df86b7c973dcdffdc
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387681"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949132"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>Microsoft 365-Berichte im Admin Center-Postfachnutzung
 
@@ -44,7 +44,7 @@ Der **Bericht zur Postfachnutzung** enthält Informationen zu Benutzern mit eine
 
 Sie können die **Postfachnutzung** in Ihrer Organisation anzeigen, indem Sie sich die Diagramme **Postfach**, **Speicher** und **Kontingent** anschauen. 
   
-|||
+|Element|Beschreibung|
 |:-----|:-----|
 |1.  <br/> |Im Bericht **Postfachnutzung** werden die Trends über die letzten 7 Tage, 30 Tage, 90 Tage oder 180 Tage angezeigt. Wenn Sie im Bericht jedoch einen bestimmten Tag auswählen, werden in der Tabelle Daten für bis zu 28 Tage ab dem aktuellen Datum angezeigt (nicht ab dem Datum, an dem der Bericht generiert wurde).  <br/> |
 |2.  <br/> |Die Daten in den einzelnen Berichten decken in der Regel die letzten 24 bis 48 Stunden ab.  <br/> |

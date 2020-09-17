@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
 description: Holen Sie sich die Microsoft 365 admin-APP, und erfahren Sie, wie Sie Ihre Online-Organisation von Ihrem Telefon oder Tablet aus verwalten.
-ms.openlocfilehash: 287aafb0be3161c5f100211d6d8169fd133d427b
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 1ad44ccc379b5115ad36e657708eed38f58dca34
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780541"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948808"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Informationen zum Microsoft 365-Administrator Mobile App
 
@@ -88,6 +88,10 @@ Die Zahlen stehen für die Gesamtzahl der Nachrichten der letzten Woche und nich
 ### <a name="how-can-i-share-the-service-incidents-and-messages-with-the-rest-of-my-organization"></a>Wie kann ich Dienstvorfälle und Nachrichten für die restliche Organisation freigeben?
 
 Wenn Sie einen bestimmten Dienst Vorfall oder eine Nachricht auswählen, befindet sich die Option "freigeben" in der oberen rechten Ecke. Derzeit wird die Freigabe per E-Mail unterstützt.
+  
+### <a name="can-i-use-this-app-with-multiple-accounts-or-tenants"></a>Kann ich diese APP mit mehreren Konten oder Mandanten verwenden?
+
+Ja, Sie können mehrere Konten oder Mandanten einrichten.
   
 ### <a name="my-app-is-acting-funny-what-can-i-do-to-troubleshoot-weird-app-behavior"></a>Meine App zeigt ein merkwürdiges Verhalten. Was kann ich tun, um Probleme mit merkwürdigem App-Verhalten zu beheben?
 

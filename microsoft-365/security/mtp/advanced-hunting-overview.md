@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ae0105fd5eba134c7896daef34136748802e9010
-ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
+ms.openlocfilehash: 47035b5c988dba551948334c0c93d08b779c0d38
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47394681"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950736"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Proaktive Suche nach Bedrohungen mit der erweiterten Suche in Microsoft Threat Protection
 
@@ -32,14 +32,14 @@ ms.locfileid: "47394681"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Bei der erweiterten Suche handelt es sich um ein abfragebasiertes Tool für die Bedrohungssuche, mit dem Sie Rohdaten von bis zu 30 Tagen erkunden können. Sie können Ereignisse in Ihrem Netzwerk proaktiv prüfen, um interessante Indikatoren und Entitäten zu ermitteln. Der flexible Zugriff auf Daten ermöglicht eine uneingeschränkte Suche nach bekannten und potenziellen Bedrohungen.
+Bei der erweiterten Suche handelt es sich um ein abfragebasiertes Tool für die Bedrohungssuche, mit dem Sie Rohdaten von bis zu 30 Tagen erkunden können. Sie können proaktiv Ereignisse in Ihrem Netzwerk überprüfen, um Bedrohungs Indikatoren und Entitäten zu finden. Der flexible Zugriff auf Daten ermöglicht eine uneingeschränkte Suche nach bekannten und potenziellen Bedrohungen.
 <p></p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bp7O]
 
-Sie können die gleichen Abfragen für die Bedrohungssuche verwenden, um benutzerdefinierte Erkennungsregeln zu erstellen. Diese Regeln werden automatisch ausgeführt, um nach verschiedenen Ereignissen und Systemzuständen zu suchen, darunter mutmaßliche Sicherheitsvorfälle und falsch konfigurierte Computer, und auf diese zu reagieren.
+Sie können die gleichen Abfragen für die Bedrohungssuche verwenden, um benutzerdefinierte Erkennungsregeln zu erstellen. Diese Regeln werden automatisch ausgeführt, um auf mutmaßliche Verstöße, falsch konfigurierte Computer und andere Ergebnisse zu prüfen und auf diese zu reagieren.
 
-Diese Funktion ähnelt der [erweiterten Suche in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview), außer dass Advanced Hunting in Microsoft Threat Protection – verfügbar im Microsoft 365 Security Center – unterstützt Abfragen, die in Daten aus verschiedenen Arbeitsbereichen, einschließlich Daten über Geräte, e-Mails, Apps und Identitäten von Microsoft Defender ATP, Office 365 ATP, Microsoft Cloud App Security und Azure ATP suchen. Um die erweiterte Suche verwenden zu können, [aktivieren Sie Microsoft Threat Protection](mtp-enable.md).
+Diese Funktion ähnelt der [erweiterten Suche in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview). Diese Funktion steht im Microsoft 365 Security Center zur Verfügung und unterstützt Abfragen, die eine breitere Datenmenge von Microsoft Defender ATP, Office 365 ATP, Microsoft Cloud App Security und Azure ATP überprüfen. Um die erweiterte Suche verwenden zu können, [aktivieren Sie Microsoft Threat Protection](mtp-enable.md).
 
 ## <a name="get-started-with-advanced-hunting"></a>Erste Schritte mit der erweiterten Suche
 
@@ -47,31 +47,30 @@ Es wird empfohlen, mehrere Schritte durchzugehen, um schnell mit der Verwendung 
 
 | Lernziel | Beschreibung | Ressource |
 |--|--|--|
-| **Gespür für die Sprache** | Die erweiterte Suche basiert auf der [Kusto-Abfragesprache](https://docs.microsoft.com/azure/kusto/query/)und unterstützt dieselbe Syntax und dieselben Operatoren. Beginnen Sie, die Abfragesprache zu erlernen, indem Sie die erste Abfrage ausführen. | [Übersicht über die Abfragesprache](advanced-hunting-query-language.md) |
+| **Erlernen der Sprache** | Die erweiterte Suche basiert auf der [Kusto-Abfragesprache](https://docs.microsoft.com/azure/kusto/query/)und unterstützt dieselbe Syntax und dieselben Operatoren. Beginnen Sie, die Abfragesprache zu erlernen, indem Sie die erste Abfrage ausführen. | [Übersicht über die Abfragesprache](advanced-hunting-query-language.md) |
 | **Informationen zur Verwendung der Abfrageergebnisse** | Hier finden Sie Informationen zu Diagrammen und verschiedenen Möglichkeiten zum Anzeigen oder Exportieren Ihrer Ergebnisse. Erfahren Sie, wie Sie Abfragen schnell optimieren, Drilldowns ausführen, um umfassendere Informationen zu erhalten, und Reaktions Aktionen durchführen können. | - [Arbeiten mit Abfrageergebnissen](advanced-hunting-query-results.md)<br>- [Ausführen von Aktionen für Abfrageergebnisse](advanced-hunting-take-action.md) |
-| **Grundlegendes zum Schema** | Verschaffen Sie sich einen allgemeinen Überblick über die Tabellen im Schema und die zugehörigen Spalten. Auf diese Weise können Sie bestimmen, wo nach Daten gesucht wird und wie Sie Ihre Abfragen erstellen. | [Schemareferenz](advanced-hunting-schema-tables.md) |
-| **Nutzen von vordefinierten Abfragen** | Erkunden Sie Sammlungen vordefinierten Abfragen, die unterschiedliche Bedrohungssuchszenarien umfassen. | - [Verwenden freigegebener Abfragen](advanced-hunting-shared-queries.md)<br>- [Go Hunt](advanced-hunting-go-hunt.md) |
-| **Optimieren von Abfragen** | Erfahren Sie, wie Sie effiziente Abfragen und Abfragen erstellen, die Daten aus E-Mails und Geräten kombinieren. | - [Bewährte Methoden für Abfragen](advanced-hunting-best-practices.md) <br>- [Jagd auf Geräte und e-Mails](advanced-hunting-query-emails-devices.md) |
-| **Erstellen benutzerdefinierter Erkennungsregeln** | Erfahren Sie, wie Sie erweiterte Jagd Abfragen verwenden können, um Warnungen auszulösen und Reaktions Aktionen automatisch anzuwenden. | - [Übersicht über benutzerdefinierte Erkennungen](custom-detections-overview.md)<br>- [Benutzerdefinierte Erkennungsregeln](custom-detection-rules.md) |
+| **Grundlegendes zum Schema** | Verschaffen Sie sich einen allgemeinen Überblick über die Tabellen im Schema und die zugehörigen Spalten. Erfahren Sie, wo Sie beim Erstellen Ihrer Abfragen nach Daten suchen. | [Schemareferenz](advanced-hunting-schema-tables.md) |
+| **Holen Sie sich Experten-Tipps und Beispiele** | Trainieren Sie kostenlos mit Anleitungen von Microsoft-Experten. Erkunden Sie Sammlungen vordefinierten Abfragen, die unterschiedliche Bedrohungssuchszenarien umfassen. | - [Experten-Schulungen erhalten](advanced-hunting-expert-training.md)<br>- [Verwenden freigegebener Abfragen](advanced-hunting-shared-queries.md)<br>- [Go Hunt](advanced-hunting-go-hunt.md)<br>- [Jagen nach Bedrohungen auf Geräten, e-Mails, Apps und Identitäten](advanced-hunting-query-emails-devices.md) |
+| **Optimieren von Abfragen und behandeln von Fehlern** | Hier erfahren Sie, wie Sie effiziente und fehlerfreie Abfragen erstellen. | - [Bewährte Methoden für Abfragen](advanced-hunting-best-practices.md)<br>- [Behandeln von Fehlern](advanced-hunting-errors.md) |
+| **Erstellen benutzerdefinierter Erkennungsregeln** | Erfahren Sie, wie Sie erweiterte Jagd Abfragen verwenden können, um Warnungen auszulösen und automatisch Reaktions Aktionen zu ergreifen. | - [Übersicht über benutzerdefinierte Erkennungen](custom-detections-overview.md)<br>- [Benutzerdefinierte Erkennungsregeln](custom-detection-rules.md) |
 
 ## <a name="get-access"></a>Zugriff abrufen
-Um Advanced Hunting oder andere [Microsoft Threat Protection](microsoft-threat-protection.md) -Funktionen verwenden zu können, müssen Sie in Azure AD eine entsprechende Rolle zugewiesen haben. Beachten Sie, dass Ihr Zugriff auf Endpunkt Daten durch rollenbasierte Zugriffssteuerungseinstellungen in Microsoft Defender ATP beeinflusst wird. [Lesen Sie mehr über die Verwaltung des Zugriffs auf Microsoft Threat Protection.](mtp-permissions.md)
+Um Advanced Hunting oder andere [Microsoft Threat Protection](microsoft-threat-protection.md) -Funktionen verwenden zu können, benötigen Sie eine entsprechende Rolle in Azure Active Directory. Außerdem wird der Zugriff auf die Endpunkt Daten durch die Einstellungen für die rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC) in Microsoft Defender ATP bestimmt. [Lesen Sie mehr über die Verwaltung des Zugriffs auf Microsoft Threat Protection.](mtp-permissions.md)
 
 ## <a name="data-freshness-and-update-frequency"></a>Datenaktualität und Aktualisierungshäufigkeit
 Erweiterte Jagd Daten können in zwei verschiedene Typen kategorisiert werden, die jeweils unterschiedlich konsolidiert werden.
 
-- **Ereignis-oder Aktivitätsdaten** – füllt Tabellen zu Warnungen, Sicherheitsereignissen, Systemereignissen und Routinetests auf. Advanced Hunting erhält diese Daten fast unmittelbar nach der erfolgreichen Übermittlung der Sensoren an die entsprechenden Cloud-Dienste. Beispielsweise können Sie mit dem Abfragen von Ereignisdaten von gesunden Sensoren auf Arbeitsstationen oder Domänencontrollern beginnen, fast unmittelbar nachdem Sie auf Microsoft Defender ATP und Azure ATP verfügbar sind.
-- **Entitätsdaten** – füllt Tabellen mit konsolidierten Informationen zu Benutzern und Geräten auf. Diese Daten stammen sowohl aus relativ statischen Datenquellen wie Active Directory Einträgen als auch aus dynamischen Quellen wie Ereignisprotokollen. Um neue Daten bereitzustellen, werden Tabellen alle 15 Minuten mit neuen Informationen aktualisiert, wobei Zeilen hinzugefügt werden, die möglicherweise nicht vollständig aufgefüllt werden. Alle 24 Stunden werden Daten konsolidiert, um einen Datensatz einzufügen, der die neuesten, umfassendsten Datensätze zu jeder Entität enthält.
+- **Ereignis-oder Aktivitätsdaten**– füllt Tabellen zu Warnungen, Sicherheitsereignissen, Systemereignissen und Routinetests auf. Advanced Hunting erhält diese Daten fast unmittelbar nach der erfolgreichen Übermittlung der Sensoren an die entsprechenden Cloud-Dienste. Beispielsweise können Sie Ereignisdaten von gesunden Sensoren auf Arbeitsstationen oder Domänencontrollern fast unmittelbar nach der Verfügbarkeit in Microsoft Defender ATP und Azure ATP Abfragen.
+- **Entitätsdaten**– füllt Tabellen mit konsolidierten Informationen zu Benutzern und Geräten auf. Diese Daten stammen sowohl aus relativ statischen Datenquellen als auch aus dynamischen Quellen wie Active Directory Einträgen und Ereignisprotokollen. Um neue Daten bereitzustellen, werden Tabellen alle 15 Minuten mit neuen Informationen aktualisiert, wobei Zeilen hinzugefügt werden, die möglicherweise nicht vollständig aufgefüllt wurden. Alle 24 Stunden werden Daten konsolidiert, um einen Datensatz einzufügen, der die neuesten, umfassendsten Datensätze zu jeder Entität enthält.
 
 ## <a name="time-zone"></a>Zeitzone
-Alle Zeit Informationen in Advanced Hunting befinden sich in der UTC-Zeitzone.
+Zeit Informationen in Advanced Hunting befinden sich in der UTC-Zeitzone.
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Lernen der Abfragesprache](advanced-hunting-query-language.md)
-- [Arbeiten mit Abfrageergebnissen](advanced-hunting-query-results.md)
-- [Ausführen von Aktionen in Abfrageergebnissen](advanced-hunting-take-action.md)
+- [Experten-Schulungen erhalten](advanced-hunting-expert-training.md)
 - [Verwenden freigegebener Abfragen](advanced-hunting-shared-queries.md)
-- [Suchen auf Geräten, in E-Mails, Apps und Identitäten](advanced-hunting-query-emails-devices.md)
 - [Grundlegendes zum Schema](advanced-hunting-schema-tables.md)
 - [Anwenden bewährter Methoden für Abfragen](advanced-hunting-best-practices.md)
 - [Benutzerdefinierte Erkennungen – Übersicht](custom-detections-overview.md)
+

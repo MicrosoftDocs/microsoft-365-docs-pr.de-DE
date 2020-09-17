@@ -1,22 +1,22 @@
 ---
 title: 'Verwalten Ihres Wissens Verwaltungsnetzwerks (Vorschau) '
 description: Einrichten der Wissensverwaltung
-author: efrene
-ms.author: efrene
-manager: pamgreen
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: serdars
 ms.date: 08/01/2020
 audience: admin
 ms.topic: article
-ms.service: ''
+ms.service: o365-administration
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: af53f4d563d286ad29138f935fbb69aa10b902ca
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: 3ca180dba82e677dbc0d9f112b713df14820ce61
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612620"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950772"
 ---
 # <a name="manage-your-knowledge-management-network-preview"></a>Verwalten Ihres Wissens Verwaltungsnetzwerks (Vorschau)
 
@@ -53,7 +53,7 @@ Sie müssen über globale Administrator-oder SharePoint-Administratorberechtigun
 Wählen Sie die Registerkarte **Thema Ermittlung** aus, wenn Sie Ihre Auswahlmöglichkeiten für SharePoint-Themen Quellen aktualisieren möchten. Mit dieser Einstellung können Sie die SharePoint-Websites in Ihrem Mandanten auswählen, die durchforstet und für Themen abgebaut werden.
 
 1. Wählen Sie auf der Registerkarte **Thema Discovery** unter **SharePoint-Themen Quellen auswählen**die Option **Bearbeiten**aus.
-2. Wählen Sie auf der Seite **SharePoint-Themen Quellen auswählen** aus, welche SharePoint-Websites während der Ermittlung als Quellen für Ihre Themen gecrawlt werden sollen. Hierzu zählen Folgende:</br>
+2. Wählen Sie auf der Seite **SharePoint-Themen Quellen auswählen** aus, welche SharePoint-Websites während der Ermittlung als Quellen für Ihre Themen gecrawlt werden sollen. Dies umfasst Folgendes:</br>
     a. **Alle Websites**: alle SharePoint-Websites in Ihrem Mandanten. Dadurch werden aktuelle und zukünftige Websites erfasst.</br>
     b. **Alle, außer ausgewählte Websites**: Geben Sie die Namen der Websites ein, die Sie ausschließen möchten.  Sie können auch eine Liste der Websites hochladen, für die Sie die Ermittlung deaktivieren möchten. In der Zukunft erstellte Websites werden als Quellen für die Themen Ermittlung hinzugefügt. </br>
     c. **Nur ausgewählte Websites**: Geben Sie die Namen der Websites ein, die Sie einschließen möchten. Sie können auch eine Liste der Websites hochladen. In der Zukunft erstellte Websites werden nicht als Quellen für die Themen Ermittlung einbezogen. </br>
