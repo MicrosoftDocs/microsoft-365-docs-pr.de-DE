@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Administratoren können sich über die Anti-Spoofing-Funktionen informieren, die in Exchange Online Protection (EOP) verfügbar sind und die dazu beitragen können, Phishing-Angriffe von gefälschten Absendern und Domänen abzuschwächen.
-ms.openlocfilehash: 46adb8b666bd9f73cbd76860f58efedc8d3c1c59
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: b4d1feda06aa0bd21b72b9642dea845693e20756
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868879"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949750"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Schutz vor Spoofing in EOP
 
@@ -143,7 +143,7 @@ Um Nachrichten aus Diskussionslisten dabei zu helfen, die Anti-Spoofing-Prüfung
 
   - Lesen Sie die Anweisungen in diesem Blogbeitrag: [A tip for mailing list operators to interoperate with DMARC to avoid failures](https://blogs.msdn.microsoft.com/tzink/2017/03/22/a-tip-for-mailing-list-operators-to-interoperate-with-dmarc-to-avoid-failures/).
 
-  - Ziehen Sie es in Erwägung, Updates für diesen Mailinglistserver zu installieren, damit ARC unterstützt wird. Informationen dazu finden Sie unter [https://arc-spec.org](https://arc-spec.org/)
+  - Erwägen Sie bitte, Updates für diesen Verteilerserver zu installieren, damit ARC unterstützt wird. Informationen dazu finden Sie unter <http://arc-spec.org>.
 
 - Ihre Organisation ist nicht Eigentümer der Diskussionsliste:
 

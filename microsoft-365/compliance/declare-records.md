@@ -17,22 +17,22 @@ search.appverid:
 - MOE150
 - MET150
 description: Datensätze mithilfe von Aufbewahrungsbezeichnungen deklarieren.
-ms.openlocfilehash: d637817e8d1bcc8c72bfe011dfd288ac4e2d0298
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: 841c5197addff704016e344ba7ae44355c872f72
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778515"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47817101"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Datensätzen mithilfe von Aufbewahrungsbezeichnungen deklarieren
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
 
-Um Elemente als Datensatz zu deklarieren, verwenden Sie [Aufbewahrungsbezeichnungen](retention.md#retention-labels), die den Inhalt als Datensatz markieren. Sie können diese Bezeichnungen entweder veröffentlichen, damit Benutzer und Administratoren sie manuell auf Inhalte anwenden können, oder diese Bezeichnungen automatisch auf Inhalte anwenden, die Sie als Datensatz markieren möchten.
+Um Dokumente und E-Mails als Datensatz zu deklarieren, verwenden Sie [Aufbewahrungsbezeichnungen](retention.md#retention-labels), die Elemente als Datensatz markieren. Sie können diese Bezeichnungen entweder veröffentlichen, damit Benutzer und Administratoren sie manuell auf Inhalte anwenden können, oder diese Bezeichnungen automatisch auf Inhalte anwenden, die Sie als Datensatz markieren möchten.
 
 ## <a name="configuring-retention-labels-to-declare-records"></a>Aufbewahrungsetiketten zum Deklarieren von Datensätzen konfigurieren
 
-Wenn Sie eine Aufbewahrungsbezeichnung erstellen oder konfigurieren, wählen Sie die Option aus, um den Inhalt als Datensatz zu markieren.
+Wenn Sie eine Aufbewahrungsbezeichnung erstellen oder konfigurieren, wählen Sie die Option aus, um Elemente als Datensatz zu markieren.
 
 >[!NOTE] 
 > Die Option zum Markieren des Inhalts als Datensatz ist nicht verfügbar, wenn Sie Aufbewahrungsbezeichnungen aus **Information Governance** im Microsoft 365 Compliance Center erstellen oder konfigurieren. Verwenden Sie stattdessen **Datensatzverwaltung**.
@@ -41,9 +41,9 @@ So erstellen Sie eine neue Aufbewahrungsbezeichnung, die den Inhalt als Datensat
 
 1. Gehen Sie im [Microsoft 365 Compliance Center](https://compliance.microsoft.com) zu **Datensatzverwaltung** \> **Ablageplan**. Wählen Sie von der Seite **Dateiplan** **Eine Bezeichnung erstellen**.
 
-2. Wählen Sie auf der Seite **Bezeichnungseinstellungen** im Assistenten die Option zum Klassifizieren von Inhalten als Datensatz aus.
+2. Wählen Sie im Assistenten auf der Seite **Aufbewahrungseinstellungen definieren** die Option, Elemente als Datensätze festzulegen:
     
-   ![Aktivieren Sie das Kontrollkästchen „Bezeichnung zum Klassifizieren von Inhalt als „Datensatz“ verwenden“](../media/recordversioning6.png)
+   ![Wählen Sie die Aufbewahrungseinstellung aus, um Elemente als Datensatz zu markieren](../media/recordversioning6.png)
 
 3. Wenden Sie die Aufbewahrungsbezeichnung nach Bedarf auf SharePoint- oder OneDrive-Dokumente und Exchange-E-Mails an. Für Anweisungen:
     
