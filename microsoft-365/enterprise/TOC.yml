@@ -49,7 +49,7 @@
             - name: Microsoft 365-Optimierung für Benutzer in China
               href: microsoft-365-networking-china.md
             - name: Optimieren des Microsoft 365-Datenverkehrs für Remotemitarbeiter mit dem nativen Windows 10-VPN-Client
-              href: 'https://docs.microsoft.com/en-us/windows/security/identity-protection/vpn/vpn-office-365-optimization'
+              href: 'https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-office-365-optimization'
         - name: ExpressRoute für Office 365
           href: azure-expressroute.md
           items:
@@ -271,6 +271,8 @@
       items:
         - name: Domäne hinzufügen
           href: 'https://docs.microsoft.com/microsoft-365/admin/setup/add-domain'
+        - name: Setup-Leitfaden
+          href: setup-guides-for-microsoft-365.md
     - name: Multi-Geo
       items:
         - name: Microsoft 365 Multi-Geo
