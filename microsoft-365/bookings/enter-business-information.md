@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
 description: Befolgen Sie diese Anweisungen zum Erstellen Ihrer Seite über uns, einschließlich Firmenname, Adresse, Telefonnummer, Website-URL, Logo und Geschäftszeiten in Microsoft-Buchungen.
-ms.openlocfilehash: 65de115f2217948b1e57a1642ca3c6a105675898
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 0424794d4627d7c6770f86f32d81d4653f889163
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419670"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962501"
 ---
 # <a name="enter-your-business-information"></a>Eingeben Ihrer Unternehmensinformationen
 
@@ -25,7 +25,7 @@ Die Informationen, die Sie hier angeben, werden auf der Seite "Kunden und Client
    ![Abbildung einer Geschäfts Informationsseite (Beispiel) in Microsoft-Buchungen](../media/bookings-business-info.png)
 
 > [!NOTE]
-> Reservierungen sind standardmäßig für Kunden mit den Abonnements Microsoft 365 Business Standard, Microsoft 365 a3 oder Microsoft 365 a5 aktiviert. Reservierungen stehen auch Kunden mit Office 365 Enterprise E3 und Office 365 Enterprise E5 zur Verfügung, Sie sind jedoch standardmäßig deaktiviert. Die ersten Schritte finden Sie unter [Get Access to Microsoft Booking](get-access.md). Informationen zum Aktivieren oder Deaktivieren von Buchungen finden Sie unter [Aktivieren oder Deaktivieren von Buchungen für Ihre Organisation](turn-bookings-on-or-off.md).
+> Die ersten Schritte finden Sie unter [Get Access to Microsoft Booking](get-access.md). Informationen zum Aktivieren oder Deaktivieren von Buchungen finden Sie unter [Aktivieren oder Deaktivieren von Buchungen für Ihre Organisation](turn-bookings-on-or-off.md).
 
 ## <a name="provide-business-name-and-contact-information"></a>Angeben von Unternehmensname und Kontaktinformationen
 
@@ -41,7 +41,7 @@ Die Informationen, die Sie hier angeben, werden auf der Seite "Kunden und Client
 
 1. Geben Sie die **Datenschutzrichtlinie** und die **Begriffe & Bedingungen** -URLs ein.
 
-1. Klicken Sie auf **Speichern**.
+1. Wählen Sie **Speichern** aus.
 
 ## <a name="set-your-business-hours"></a>Festlegen Ihrer Geschäftszeiten
 
@@ -69,7 +69,7 @@ Beispielsweise haben Sie Mitarbeiterbesprechungen jeden Donnerstag von 1 Uhr bis
 
    ![Bild der Geschäftszeiten-Benutzeroberfläche mit hinzugefügten Stunden](../media/bookings-split-shift-hours.png)
 
-1. Klicken Sie auf Speichern.
+1. Wählen Sie Speichern aus.
 
     Wenn ein Kunde Ihre Buchungsseite besucht, sieht er, dass Ihr Unternehmen an Donnerstagen zwischen 13:00 und 14:30 Uhr geschlossen ist.
 

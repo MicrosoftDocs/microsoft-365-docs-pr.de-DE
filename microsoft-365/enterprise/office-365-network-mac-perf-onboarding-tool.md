@@ -3,7 +3,7 @@ title: Microsoft 365 Network Connectivity Test (Vorschau)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/15/2020
+ms.date: 09/17/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,23 +14,23 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 Network Connectivity Test (Vorschau)
-ms.openlocfilehash: 0a5e7831b28488e793488f572fd830d47a0f3f9a
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 2197f3361efee51dfa2bd170b0c8d8e94709d3e8
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948544"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962398"
 ---
 # <a name="microsoft-365-network-connectivity-test-preview"></a>Microsoft 365 Network Connectivity Test (Vorschau)
 
 Das Microsoft 365 Network Connectivity Test Tool befindet sich unter <https://connectivity.office.com> . Es handelt sich um ein außerordentliches Tool für die Netzwerkbewertung und Informationen zum Netzwerk Einblicke, die im Microsoft 365 Admin Center unter **Health | Menü Konnektivität** .
 
+![Connectivity-Test Tool](../media/m365-mac-perf/m365-mac-perf-test-tool-page.png)
+
 >[!NOTE]
 >Das Tool zum Testen von Netzwerkkonnektivität unterstützt Mandanten in WW Commercial und Deutschland, aber nicht gcc moderat, gcc High, DoD oder China.
 
 Die Einblicke in das Netzwerk im Microsoft 365 Admin Center basieren auf regelmäßigen produktbezogenen Messungen für Ihren Microsoft 365-Mandanten, die täglich aggregiert werden. Im Vergleich dazu werden die Netzwerk Einblicke aus dem Microsoft 365 Network Connectivity Test lokal und einmal im Tool ausgeführt. Tests, die im Produkt ausgeführt werden können, sind limitiert, und durch das lokale Testen des Benutzers können weitere Daten gesammelt werden, was zu tieferen Einblicken führt. Betrachten Sie dann, dass das Netzwerk Einblicke in das Microsoft 365 Admin Center zeigt, dass es ein Netzwerkproblem für die Verwendung von Microsoft 365 an einem bestimmten Standort gibt. Der Microsoft 365-Verbindungstest kann helfen, die Ursache dieses Problems zu ermitteln, das zu einer empfohlenen Aktion zur Verbesserung der Netzwerkleistung führt.
-
-![Netzwerkverbindungstest Tool](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
 
 Es wird empfohlen, dass diese zusammen verwendet werden, wenn der Status der Netzwerkqualität für jeden Office-Standort im Microsoft 365 Admin Center beurteilt werden kann und nach der Bereitstellung von Tests basierend auf dem Microsoft 365-Verbindungstest weitere Einzelheiten gefunden werden können.
 

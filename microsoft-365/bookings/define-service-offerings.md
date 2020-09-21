@@ -9,21 +9,18 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
 description: Anweisungen zum Eingeben von Dienstangebots Informationen, einschließlich Dienstname, Beschreibung, Standort, Dauer und Preis. Sie können auch die Mitarbeiter kategorisieren, die qualifiziert sind, den betreffenden Dienst zu leisten.
-ms.openlocfilehash: 60b77633b9845b3c269f6773c1fb8a26256fbdc5
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 095188546c01149a793a478a3cbd5ac9fbeb5524
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419686"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962537"
 ---
 # <a name="define-your-service-offerings-in-bookings"></a>Definieren Ihrer Dienstangebote in Buchungen
 
 Wenn Sie Ihre Dienstangebote in Microsoft-Buchungen definieren, legen Sie einen Dienstnamen, eine Beschreibung, einen Standort fest (Wählen Sie aus, ob Sie persönlich zusammentreffen oder eine Onlinebesprechung haben möchten), die Dauer, die Standarderinnerungen an Kunden und Mitarbeiter, interne Hinweise zum Dienst und Preise. Sie können auch die Mitarbeiter kategorisieren, die qualifiziert sind, den betreffenden Dienst zu leisten. Wenn Kunden dann zu ihrer Geschäftswebsite kommen, um einen Termin zu buchen, können Sie genau sehen, welche Arten von Terminen zur Verfügung stehen, die Person auswählen, für die Sie den Dienst bereitstellen möchten, und wie viel Ihr Dienst Kosten wird.
 
 Sie können auch benutzerdefinierte Informationen und URLs zur e-Mail-Bestätigung und Erinnerungen hinzufügen, die Sie senden, wenn jemand über Ihre Buchungsseite einen Dienst Bucht.
-
-> [!NOTE]
-> Reservierungen sind standardmäßig für Kunden mit den Abonnements Microsoft 365 Business Standard, Microsoft 365 a3 oder Microsoft 365 a5 aktiviert. Reservierungen stehen auch Kunden mit Office 365 Enterprise E3 und Office 365 Enterprise E5 zur Verfügung, Sie sind jedoch standardmäßig deaktiviert. Die ersten Schritte finden Sie unter [Get Access to Microsoft Booking](get-access.md). Informationen zum Aktivieren oder Deaktivieren von Buchungen finden Sie unter [Aktivieren oder Deaktivieren von Buchungen für Ihre Organisation](turn-bookings-on-or-off.md).
 
 ## <a name="create-the-service-details"></a>Erstellen der Dienstdetails
 

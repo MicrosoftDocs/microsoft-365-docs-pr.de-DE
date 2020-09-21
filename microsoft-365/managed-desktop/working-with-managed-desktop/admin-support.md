@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: fb786383e448ad3f5c78b22f3cdbf282c2c9f906
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 972430f5637f1160c330bed1558b79c8273171c5
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289721"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104582"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Administratorunterstützung für Microsoft Managed Desktop
 
@@ -24,10 +24,11 @@ Sie können Support Tickets oder Feedback Anforderungen über das Microsoft Mana
 >Stellen Sie sicher, dass Sie [einen Administratorkontakt](../get-started/add-admin-contacts.md) für App-Verpackungen, Geräte, Sicherheit und andere einrichten. Sie können keine Supportanfragen in einen dieser Bereiche übermitteln, wenn kein Administratorkontakt konfiguriert ist.
 
 **So übermitteln Sie eine Supportanfrage**
-1. Melden Sie sich beim [Microsoft Managed Desktop-Verwaltungsportal](https://aka.ms/mwaasportal)an. 
-2. Wählen Sie **unter Supportanfragen**die Option **+ Neues Support Ticket**aus.
-3. Wählen Sie den **Support Anforderungstyp** aus, der der benötigten Hilfe entspricht. In der folgenden Tabelle werden die Optionen erläutert. 
-4. Wählen Sie den **schwere**Grad aus. Weitere Informationen finden Sie unter [Support Request Severity Definitions](#sev). 
+1. Melden Sie sich bei [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) an, und navigieren Sie zum Menü **Problembehandlung und Support** .
+2. Suchen Sie nach dem Abschnitt Microsoft Managed Desktop, wählen Sie **Sevice Request**aus.
+3. Wählen Sie **unter Supportanfragen**die Option **+ Neues Support Ticket**aus.
+4. Wählen Sie den **Support Anforderungstyp** aus, der der benötigten Hilfe entspricht. In der folgenden Tabelle werden die Optionen erläutert. 
+5. Wählen Sie den **schwere**Grad aus. Weitere Informationen finden Sie unter [Support Request Severity Definitions](#sev). 
 
 Unterstützung von Anforderungstyp | Geeignet in folgender Situation
 --- | ---
@@ -58,7 +59,7 @@ Weitere Details:
 
 Wir freuen uns über Ihr Feedback und verwenden es, um die Administrator Unterstützung zu verbessern.
 
-Wenn sich ein **Ticket im Status "** behoben" oder " **gelöst** " befindet, können Sie Ihr Feedback zu ihren Erfahrungen mit diesem speziellen Problem freigeben. Wechseln Sie dazu im Administratorportal zur Seite **Support Anfragen** . Wählen Sie das jeweilige Ticket aus. Wählen Sie im einfliegen, das auf der rechten Seite angezeigt wird, die Registerkarte **Feedback** aus, und geben Sie die angeforderten Informationen an. Achten Sie darauf, keine persönlichen Informationen in das Feedback Formular einzubeziehen. Weitere Informationen zum Datenschutz finden Sie in der [Microsoft-Datenschutzerklärung](https://privacy.microsoft.com/privacystatement).
+Wenn sich ein **Ticket im Status "** behoben" oder " **gelöst** " befindet, können Sie Ihr Feedback zu ihren Erfahrungen mit diesem speziellen Problem freigeben. Wechseln Sie dazu auf der Seite **Dienstanforderungen** im Menü **Problembehandlung und Support** des Mem-Portals. Wählen Sie das jeweilige Ticket aus. Die Ticket Details werden im Fly-in auf der rechten Seite angezeigt, wählen Sie die Registerkarte **Feedback** aus, und geben Sie die gewünschten Informationen an. Achten Sie darauf, keine persönlichen Informationen in das Feedback Formular einzubeziehen. Weitere Informationen zum Datenschutz finden Sie in der [Microsoft-Datenschutzerklärung](https://privacy.microsoft.com/privacystatement).
 
 ![Feedback Formular](../../media/feedback_form.png)
 
@@ -67,4 +68,4 @@ Wenn sich ein **Ticket im Status "** behoben" oder " **gelöst** " befindet, kö
 ## <a name="additional-resources"></a>Weitere Ressourcen
 - [Benutzerunterstützung für Microsoft Managed Desktop](end-user-support.md). 
 - [Unterstützung für Microsoft Managed Desktop](../service-description/support.md). 
-- Wenn Sie bereits Microsoft Managed Desktop abonniert haben, finden Sie im Microsoft Managed Desktop Admin Guide im Abschnitt **Online Ressourcen** des [Microsoft Managed Desktop admin-Portals](https://aka.ms/mwaasportal)ausführliche Verfahren, Ablauf, Arbeitsanweisungen und FAQs.
+- Wenn Sie bereits Microsoft Managed Desktop abonniert haben, finden Sie im Microsoft Managed Desktop Admin Guide auf der Seite **Online Ressourcen** unter dem Abschnitt **Microsoft Managed Desktop** im Menü **Mandantenverwaltung** in [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)detaillierte Verfahren, Ablauf, Arbeitsanweisungen und FAQs.

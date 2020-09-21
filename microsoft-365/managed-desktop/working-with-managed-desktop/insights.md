@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: bcb47a7d5e5dc0880ade6a7e5900d1019e13a8d7
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 6b19c5cd1766c07e106897cefeb495f1b98bb548
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529767"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104388"
 ---
 # <a name="work-with-insights"></a>Arbeiten mit Einblicken
 
-Microsoft Managed Desktop stellt eine Reihe von Dashboards bereit, die IT-Administratoren in Ihrem Mandanten verwenden können, um verschiedene Aspekte der Geräte Auffüllung zu verstehen. Sie können über das Microsoft 365 Admin Center darauf zugreifen.
+Microsoft Managed Desktop stellt eine Reihe von Dashboards bereit, die IT-Administratoren in Ihrem Mandanten verwenden können, um verschiedene Aspekte der Geräte Auffüllung zu verstehen. Sie können direkt im [Microsoft 365 Admin Center](https://admin.microsoft.com/adminportal/home?previewoff=false#/microsoftmanageddesktop)darauf zugreifen.
 
 Mit diesen Dashboards können Sie die Antworten auf Fragen wie die folgenden finden:
 
@@ -31,10 +31,9 @@ Mit diesen Dashboards können Sie die Antworten auf Fragen wie die folgenden fin
 - Wie lautet der aktuelle Status von Sicherheitsupdates auf Geräten?
 - Wie lange dauert es, bis 95% der Geräte mit dem aktuellen Sicherheitsupdate auf dem neuesten Stand sind?
 
-Wenn Sie über das Microsoft 365 Admin Center auf diese Ansichten zugreifen möchten, wählen Sie Details im Bereich **Berichte** **anzeigen** aus:
+Um auf diese Ansichten vom [Microsoft Endopint-Manager](https://endpoint.microsoft.com/)zuzugreifen, klicken Sie auf der Startseite auf die Registerkarte Microsoft Managed Desktop nvaigate und wählen Sie **Details anzeigen** im Bereich **Berichte** aus:
 
-![Admin Center mit Berichtsbereich in der oberen rechten Ecke, einschließlich der Geräte Berichts Karte und des Links "Details anzeigen".](../../media/insights_overview.png)
-
+<!--Update picture to show in MEM [Admin center with Reports area in the upper right including the device reports card and the "view details" link.](../../media/insights_overview.png)-->!
 
 
 ## <a name="usage-insights"></a>Benutzungseinblicke

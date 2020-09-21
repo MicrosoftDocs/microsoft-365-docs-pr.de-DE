@@ -9,19 +9,16 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: Befolgen Sie diese Anweisungen, um einen Termin zu erstellen und einen Mitarbeiter über die Microsoft-Buchungs-App zuzuweisen.
-ms.openlocfilehash: d0538b1c3e19a6bc78c997ff3e681ac30aa074ff
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: dffc63b1f638c551e40d22852b1ba6a73c5be869
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419697"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962561"
 ---
 # <a name="create-a-manual-booking"></a>Manuelle Buchung erstellen
 
 Buchungen können auf zwei verschiedene Arten geplant und die Mitarbeiter dafür festgelegt werden. Die erste Möglichkeit besteht darin, dass der Kunde eine eigenständige Buchungsseite oder eine eingebettete Buchungsseite verwendet, die Sie zu Ihrer Website hinzufügen. Die andere Möglichkeit besteht darin, dass Sie oder einer ihrer Mitarbeiter die Buchungen manuell eingeben, beispielsweise wenn ein Kunde einen Termin anruft. Der vorliegende Artikel befasst sich mit dem Szenario "manuelle Eingabe".
-
-> [!NOTE]
-> Reservierungen sind standardmäßig für Kunden mit den Abonnements Microsoft 365 Business Standard, Microsoft 365 a3 oder Microsoft 365 a5 aktiviert. Reservierungen stehen auch Kunden mit Office 365 Enterprise E3 und Office 365 Enterprise E5 zur Verfügung, Sie sind jedoch standardmäßig deaktiviert. Die ersten Schritte finden Sie unter [Get Access to Microsoft Booking](get-access.md). Informationen zum Aktivieren oder Deaktivieren von Buchungen finden Sie unter [Aktivieren oder Deaktivieren von Buchungen für Ihre Organisation](turn-bookings-on-or-off.md).
 
 1. Wählen Sie in Microsoft 365 das App-Startfeld aus, und wählen Sie dann **Buchungen**aus.
 

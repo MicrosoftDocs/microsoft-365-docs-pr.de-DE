@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: Festlegen von Arbeitszeiten und Verfügbarkeit von Mitarbeitern in Microsoft-Buchungen.
-ms.openlocfilehash: 656b52992f4da32ae334809bd1a3ee4dd3b89652
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 140ab5732b051931666824cd4290a38c0b11fd65
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419674"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962525"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>Arbeitszeiten von Mitarbeitern in Microsoft-Buchungen
 
@@ -23,9 +23,6 @@ Durch Festlegen der Arbeitszeiten für Mitarbeiter wird sichergestellt, dass die
 Auf der Seite **Mitarbeiter** können Sie die Arbeitszeiten von Mitarbeitern an die Anforderungen Ihres Unternehmens und ihrer Mitarbeiter anpassen.
 
 Wenn Sie für Mitarbeiter arbeitsfreie Zeiten buchen möchten, damit die Kunden diese Personen während ihrer Abwesenheit nicht buchen können, finden Sie entsprechende Anweisungen unter [Planen von Betriebsferien, arbeitsfreier Zeit und Urlaubszeit](schedule-closures-time-off-vacation.md).
-
-> [!NOTE]
-> Reservierungen sind standardmäßig für Kunden mit den Abonnements Microsoft 365 Business Standard, Microsoft 365 a3 oder Microsoft 365 a5 aktiviert. Reservierungen stehen auch Kunden mit Office 365 Enterprise E3 und Office 365 Enterprise E5 zur Verfügung, Sie sind jedoch standardmäßig deaktiviert. Die ersten Schritte finden Sie unter [Get Access to Microsoft Booking](get-access.md). Informationen zum Aktivieren oder Deaktivieren von Buchungen finden Sie unter [Aktivieren oder Deaktivieren von Buchungen für Ihre Organisation](turn-bookings-on-or-off.md).
 
 ## <a name="customize-employee-working-hours"></a>Anpassen der Arbeitszeiten für Mitarbeiter
 
@@ -47,7 +44,7 @@ Sehen Sie sich dieses Video an, oder führen Sie die folgenden Schritte aus, um 
 
 1. Klicken Sie **+** , um Start-und End-Time-Selektoren hinzuzufügen.
 
-1. Klicken Sie auf Speichern.
+1. Wählen Sie Speichern aus.
 
 ## <a name="set-an-employees-days-off"></a>Festlegen von freien Tagen für einen Mitarbeiter
 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5fde3c6d5fd14bd0e4d108030ffaa8e5aeb5ed5c
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: d64edc9d80722080db18c45127bfc82110d1ea9e
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289320"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131537"
 ---
 # <a name="plan-for-communication-compliance"></a>Planen der Kommunikationscompliance
 
@@ -66,7 +66,7 @@ Berücksichtigen Sie bei der Planung von Kommunikations Konformitätsrichtlinien
 - Um das Setup zu vereinfachen, sollten Sie Gruppen für Personen erstellen, die Ihre Kommunikation überprüfen müssen. Wenn Sie mit Gruppen arbeiten; möglicherweise benötigen Sie mehrere. Zum Beispiel, wenn Sie die Kommunikation zwischen zwei verschiedenen Personengruppen überprüfen möchten oder wenn Sie eine Gruppe angeben möchten, die nicht überwacht wird.
 - Konfigurieren Sie den Prozentsatz der zu überprüfenden Kommunikation mit 100%, um sicherzustellen, dass Richtlinien alle Probleme in der Kommunikation für Ihre Organisation einfangen.
 - Sie können die Kommunikation von [Drittanbieterquellen](communication-compliance-feature-reference.md#supported-communication-types) für Daten überprüfen, die in Postfächer in Ihrer Microsoft 365-Organisation importiert wurden. Um eine Überprüfung der Kommunikation in diesen Plattformen einzuschließen, müssen Sie einen Connector für diese Dienste konfigurieren, bevor die Richtlinienbedingungen für Nachrichten von der Kommunikationsrichtlinie überwacht werden.
-- Richtlinien können andere Überwachungs Sprachen als Englisch in benutzerdefinierten Richtlinien für die Kommunikations Konformität unterstützen. Erstellen Sie ein [benutzerdefiniertes Keyword-Wörterbuch](communication-compliance-feature-reference.md#custom-keyword-dictionaries) mit anstößigen Wörtern in der Sprache Ihrer Wahl, oder erstellen Sie mithilfe von Lern baren [Klassifizierungen](classifier-getting-started-with.md) in Microsoft 365 ein eigenes Computer Lernmodell.
+- Richtlinien können andere Überwachungs Sprachen als Englisch in benutzerdefinierten Richtlinien für die Kommunikations Konformität unterstützen. Erstellen Sie ein [benutzerdefiniertes Keyword-Wörterbuch](communication-compliance-feature-reference.md#custom-keyword-dictionaries) mit anstößigen Wörtern in der Sprache Ihrer Wahl, oder erstellen Sie mithilfe von Lern baren [Klassifizierungen](classifier-get-started-with.md) in Microsoft 365 ein eigenes Computer Lernmodell.
 - Alle Organisationen haben unterschiedliche Kommunikationsstandards und Richtlinienanforderungen. Überwachen Sie nach bestimmten Schlüsselwörtern mithilfe von [Richtlinien für Kommunikationsrichtlinien Bedingungen](communication-compliance-feature-reference.md#conditional-settings) oder Monitor für bestimmte Arten von Informationen mit [benutzerdefinierten Typen vertraulicher Informationen](create-a-custom-sensitive-information-type.md).
 
 ## <a name="ready-to-get-started"></a>Sind Sie bereit loszulegen?

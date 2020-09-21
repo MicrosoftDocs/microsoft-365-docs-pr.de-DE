@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Anhand des Dashboards für die Datenklassifizierung können Sie sehen, wie viele vertrauliche Daten in Ihrer Organisation gefunden und klassifiziert wurden.
-ms.openlocfilehash: 3198a1981ed7d4d5428452b55aeb22b234712354
-ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
+ms.openlocfilehash: aff6d2c30fe8036448a8816426896f080b86b9e6
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46588217"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948505"
 ---
 # <a name="know-your-data---data-classification-overview"></a>Kennen Sie Ihre Daten – Überblick über die Datenklassifizierung
 
@@ -49,7 +49,7 @@ Die Datenklassifizierung scannt Ihre vertraulichen Inhalte und bezeichneten Inha
 
 Jedem Konto, das auf die Datenklassifizierung zugreift und sie verwendet, muss eine Lizenz aus einem dieser Abonnements zugewiesen sein:
 
-- Microsoft 365 (E5)
+- Microsoft 365 (E5/A5)
 - Office 365 (E5)
 - Advanced Compliance (E5)-Add-on
 - Advanced Threat Intelligence (E5)-Add-on

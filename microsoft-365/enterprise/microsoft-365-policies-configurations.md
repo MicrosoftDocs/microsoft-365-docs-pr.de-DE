@@ -17,18 +17,18 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 686d31c64394094530099edb97bbd10912a58cb8
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: cef17142d90a15f10e82fd51c4c22202bf7ecf00
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949892"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131578"
 ---
 # <a name="identity-and-device-access-configurations"></a>Konfigurationen für den Identitäts- und Gerätezugriff
 
 Der moderne Sicherheitsumfang Ihrer Organisation reicht nun über das Netzwerk hinaus und umfasst Benutzer, die von einem beliebigen Standort mit einer Vielzahl von Geräten auf Cloud-basierte apps zugreifen. Ihre Sicherheitsinfrastruktur muss ermitteln, ob eine bestimmte Zugriffsanforderung erteilt werden soll und unter welchen Bedingungen. 
 
-Diese Bestimmung sollte auf der Benutzerkontoanmeldung, dem verwendeten Gerät, den apps, auf die der Benutzer zuzugreifen versucht, dem Standort, von dem die Zugriffsanforderung erfolgt, und einer Bewertung des Risikos der Anforderung basieren. Diese Funktion stellt sicher, dass nur genehmigte Benutzer und Geräte auf Ihre kritischen Ressourcen zugreifen können.
+Diese Bestimmung sollte auf dem Benutzerkonto der Anmeldung, dem verwendeten Gerät, der APP, die der Benutzer für den Zugriff verwendet, dem Standort, von dem die Zugriffsanforderung erfolgt, und einer Bewertung des Risikos der Anforderung basieren. Diese Funktion stellt sicher, dass nur genehmigte Benutzer und Geräte auf Ihre kritischen Ressourcen zugreifen können.
 
 In dieser Artikelreihe werden eine Reihe von erforderlichen Konfigurationen für den Identitäts-und Geräte Zugriff sowie eine Reihe von bedingten Zugriffen auf Azure Active Directory (Azure AD), Microsoft InTune und andere Richtlinien zum Sichern des Zugriffs auf Microsoft 365 für Enterprise-Cloud-apps und-Dienste, andere Saas-Dienste und lokale Anwendungen beschrieben, die mit Azure AD-Anwendungs Proxy veröffentlicht werden.
 

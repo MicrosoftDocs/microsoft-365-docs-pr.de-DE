@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 2d6dab7ae722b6e64b782596e51e0898ddc2cccc
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 8af782095ada41f0472e1df338ced7ebe76c97fe
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289687"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104412"
 ---
-# <a name="getting-help-for-users"></a>Aufrufen von Hilfe für Benutzer
+# <a name="getting-help-for-users"></a>Hilfe für Benutzer
 
 Es gibt zwei Möglichkeiten, wie Benutzer in Ihrer Organisation Unterstützung für Ihre Microsoft Managed Desktop-Geräte erhalten können: **Abrufen der Hilfe** -APP oder Telefonsupport. Beide Supportoptionen stehen Benutzern 24 Stunden am Tag, 7 Tage die Woche zur Verfügung.
  
@@ -71,4 +71,4 @@ Benutzer mit Microsoft Managed Desktop-Geräten haben auch Zugriff auf gebühren
 ## <a name="additional-resources"></a>Weitere Ressourcen
 - [Administrator Unterstützung für Microsoft Managed Desktop](admin-support.md). 
 - [Unterstützung für Microsoft Managed Desktop](../service-description/support.md).
-- Wenn Sie bereits Microsoft Managed Desktop abonniert haben, finden Sie im Microsoft Managed Desktop Admin Guide im Abschnitt **Online Ressourcen** des [Microsoft Managed Desktop admin-Portals](https://aka.ms/mwaasportal)ausführliche Verfahren, Ablauf, Arbeitsanweisungen und FAQs.
+- Wenn Sie bereits Microsoft Managed Desktop abonniert haben, finden Sie im Microsoft Managed Desktop Admin Guide im Abschnitt " **Online Ressourcen** " unter dem Abschnitt "Microsoft Managed Desktop" des Menüs " **Mandantenverwaltung** " in [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)detaillierte Verfahren, Prozessabläufe, Arbeitsanweisungen und FAQs.

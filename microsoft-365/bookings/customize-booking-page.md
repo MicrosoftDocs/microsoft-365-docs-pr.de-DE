@@ -9,19 +9,16 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: Ändern Sie das Farbdesign ihrer Buchungsseite in der Microsoft Reservations-app.
-ms.openlocfilehash: f76fee71194cb210f879617b8898e6fd8c9d7b92
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: b33be0cb71998d45e50a66f89f98daa4af175865
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419694"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962513"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>Anpassen und Veröffentlichen Ihrer Buchungsseite
 
 Auf der Seite "Buchung" können Sie festlegen, wie Ihre externe Buchungsseite für den Kunden aussieht. Nachdem Sie Ihre Buchungsseite angepasst und veröffentlicht haben, werden Sie von ihren Kunden zum Buchen von Terminen mit Ihnen verwendet.
-
-> [!NOTE]
-> Reservierungen sind standardmäßig für Kunden mit den Abonnements Microsoft 365 Business Standard, Microsoft 365 a3 oder Microsoft 365 a5 aktiviert. Reservierungen stehen auch Kunden mit Office 365 Enterprise E3 und Office 365 Enterprise E5 zur Verfügung, Sie sind jedoch standardmäßig deaktiviert. Die ersten Schritte finden Sie unter [Get Access to Microsoft Booking](get-access.md). Informationen zum Aktivieren oder Deaktivieren von Buchungen finden Sie unter [Aktivieren oder Deaktivieren von Buchungen für Ihre Organisation](turn-bookings-on-or-off.md).
 
 Um Ihre Buchungsseite anzupassen, melden Sie sich bei [Office.com](https://office.com)an, und wechseln Sie dann zur **Bookings** \> **Buchungsseite**für Buchungen. Sie können die Buchungsseite mit den folgenden Optionen anpassen. Nachdem Sie Ihre Buchungsseite eingerichtet haben, können Sie Sie veröffentlichen, damit Kunden mit der Buchung von Terminen beginnen können.
 

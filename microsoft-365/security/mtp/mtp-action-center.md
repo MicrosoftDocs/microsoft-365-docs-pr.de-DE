@@ -18,12 +18,14 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 2dc641d22432e245980b905051bddd3b7dd4ed07
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.reviewer: evaldm, isco
+ms.date: 09/16/2020
+ms.openlocfilehash: 4d4aa8afc7a17d2f9f0ae2d48404d7a3da553d47
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547986"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962263"
 ---
 # <a name="the-action-center"></a>Das Info-Center
 
@@ -92,11 +94,8 @@ Um ausstehende Aktionen im Info-Center zu genehmigen oder abzulehnen, müssen Si
 > [!NOTE]
 > Benutzer, denen in Azure Active Directory die Rolle Globaler Administrator zugewiesen ist, können alle ausstehenden Aktionen im Info-Center genehmigen oder ablehnen. Als bewährte Methode sollte Ihre Organisation jedoch die Anzahl der Personen einschränken, denen die Rolle des globalen Administrators zugewiesen ist. Es wird empfohlen, die oben aufgeführten Rollen Sicherheitsadministrator, Aktive Wartungsaktionen und Suchen und Löschen für Info-Center-Berechtigungen zu verwenden.
 
-## <a name="next-steps"></a>Nächste Schritte 
+## <a name="next-steps"></a>Weitere Schritte 
 
-- [Weitere Informationen zu Vorfällen in Microsoft Threat Protection](incidents-overview.md)
-
+- [Genehmigen oder Ablehnen ausstehender Aktionen im Anschluss an eine automatisierte Untersuchung](mtp-autoir-actions.md)
 - [Anzeigen der Ergebnisse einer automatischen Untersuchung](mtp-autoir-results.md)
-
-- [Weitere Informationen zur Suche in Microsoft Threat Protection](advanced-hunting-overview.md)
 

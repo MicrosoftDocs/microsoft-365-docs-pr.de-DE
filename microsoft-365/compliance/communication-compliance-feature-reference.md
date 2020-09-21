@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 1aaa73fdc56662335904cbaa152429ea90d6bb08
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 757b1fcdae69e98ec45bb29e669ceda8f8cb8f98
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289354"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131635"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referenz zur Kommunikation Compliance-Feature
 
@@ -189,7 +189,7 @@ Die *adulten*, *rassigen*und *blutigen* Bild Klassifizierungen überprüfen Date
 
 Die integrierten Schulungs-und globalen Klassifizierungen bieten keine erschöpfende Liste von Begriffen oder Bildern in diesen Bereichen. Außerdem ändern sich die Sprach-und Kulturstandards ständig, und in Anbetracht dieser Gegebenheiten behält sich Microsoft das Recht vor, die Klassifizierungen nach eigenem Ermessen zu aktualisieren. Während Klassifizierungen Ihre Organisation bei der Überwachung dieser Bereiche unterstützen können, sind Klassifizierungen nicht dazu gedacht, die einzige Möglichkeit zur Überwachung oder Adressierung solcher Sprachen oder Bilder in Ihrer Organisation bereitzustellen. Ihre Organisation, nicht Microsoft, bleibt für alle Entscheidungen im Zusammenhang mit dem Scannen und Blockieren von Sprache und Bildern in diesen Bereichen verantwortlich.
 
-Informationen zu Schulungs Klassifizierern in Microsoft 365 finden Sie unter [Erste Schritte mit Schulungs Klassifizierern](classifier-getting-started-with.md).
+Informationen zu Schulungs Klassifizierern in Microsoft 365 finden Sie unter [Erste Schritte mit Schulungs Klassifizierern](classifier-get-started-with.md).
 
 ### <a name="conditional-settings"></a>Bedingte Einstellungen
 <a name="ConditionalSettings"> </a>
@@ -200,7 +200,7 @@ In der folgenden Tabelle werden die einzelnen Bedingungen näher erläutert.
   
 |**Bedingung**|**Verwendung**|
 |:-----|:-----|
-| **Inhalt entspricht einer dieser Klassifizierungen** | Auf die Richtlinie anwenden, wenn Klassifizierer in einer Nachricht eingeschlossen oder ausgeschlossen werden. Einige Klassifizierungen sind in Ihrem Mandanten vordefiniert, und benutzerdefinierte Klassifizierungen müssen separat konfiguriert werden, bevor Sie für diese Bedingung verfügbar sind. Nur eine Klassifizierung kann als Bedingung in einer Richtlinie definiert werden. Weitere Informationen zum Konfigurieren von Klassifizierungen finden Sie unter [Klassifizierer](classifier-getting-started-with.md). |
+| **Inhalt entspricht einer dieser Klassifizierungen** | Auf die Richtlinie anwenden, wenn Klassifizierer in einer Nachricht eingeschlossen oder ausgeschlossen werden. Einige Klassifizierungen sind in Ihrem Mandanten vordefiniert, und benutzerdefinierte Klassifizierungen müssen separat konfiguriert werden, bevor Sie für diese Bedingung verfügbar sind. Nur eine Klassifizierung kann als Bedingung in einer Richtlinie definiert werden. Weitere Informationen zum Konfigurieren von Klassifizierungen finden Sie unter erfahren Sie mehr [über Lernende Klassifizierungen (Preview)](classifier-learn-about.md). |
 | **Inhalt enthält alle diese vertraulichen Info Typen** | Auf die Richtlinie anwenden, wenn vertrauliche Informationstypen in einer Nachricht enthalten oder ausgeschlossen werden. Einige Klassifizierungen sind in Ihrem Mandanten vordefiniert, und benutzerdefinierte Klassifizierungen können separat oder als Teil des Bedingungs Zuordnungsprozesses konfiguriert werden. Jeder vertrauliche Informationstyp, den Sie auswählen, wird separat angewendet, und nur einer dieser Typen für vertrauliche Informationen muss für die Richtlinie gelten, die auf die Nachricht angewendet werden soll. Weitere Informationen zu benutzerdefinierten vertraulichen Informationstypen finden Sie unter [benutzerdefinierte vertrauliche Informationstypen](custom-sensitive-info-types.md). |
 | **Nachricht wird von einer dieser Domänen empfangen**  <br><br> **Nachricht wird von keiner dieser Domänen empfangen** | Wenden Sie die Richtlinie an, um bestimmte Domänen oder e-Mail-Adressen in empfangene Nachrichten einzubeziehen oder auszuschließen. Geben Sie jede Domäne oder e-Mail-Adresse ein, und trennen Sie mehrere Domänen oder e-Mail-Adressen durch ein Komma. Jede eingegebene Domäne oder e-Mail-Adresse wird separat angewendet, nur eine Domäne oder e-Mail-Adresse muss für die Richtlinie gelten, die auf die Nachricht angewendet werden soll. <br><br> Wenn Sie alle e-Mails von einer bestimmten Domäne überprüfen möchten, aber Nachrichten ausschließen möchten, die keine Überprüfung (Newsletter, Ankündigungen usw.) benötigen, müssen Sie konfigurieren, dass eine **Nachricht nicht von einer dieser Domänen Bedingungen empfangen wird** , die die e-Mail-Adresse ausschließt (Beispiel "Newsletter@contoso.com"). |
 | **Nachricht wird an eine dieser Domänen gesendet.**  <br><br> **Nachricht wird nicht an eine dieser Domänen gesendet** | Wenden Sie die Richtlinie an, um bestimmte Domänen oder e-Mail-Adressen in gesendete Nachrichten einzuschließen oder auszuschließen. Geben Sie jede Domäne oder e-Mail-Adresse ein, und trennen Sie mehrere Domänen oder e-Mail-Adressen durch ein Komma. Jede Domäne oder e-Mail-Adresse wird separat angewendet, nur eine Domäne oder e-Mail-Adresse muss für die Richtlinie gelten, die auf die Nachricht angewendet werden soll. <br><br> Wenn Sie alle an eine bestimmte Domäne gesendeten e-Mails überprüfen möchten, jedoch gesendete Nachrichten ausschließen möchten, die keine Überprüfung benötigen, müssen Sie zwei Bedingungen konfigurieren: <br> -Eine **Nachricht wird an eine dieser Domänen Bedingungen gesendet** , die die Domäne definiert ("contoso.com") und <br> -Eine **Nachricht wird nicht an eine dieser Domänen Bedingungen gesendet** , die die e-Mail-Adresse ("Subscriptions@contoso.com") ausschließen. |
@@ -217,7 +217,7 @@ In der folgenden Tabelle werden die einzelnen Bedingungen näher erläutert.
 Jedes Wort, das Sie eingeben und mit einem Komma trennen, wird separat angewendet (nur ein Wort muss gelten, damit die Richtlinienbedingung auf die e-Mail oder Anlage angewendet wird). Verwenden wir beispielsweise die Bedingung, **Nachricht enthält eines dieser Wörter**, wobei die Schlüsselwörter "Banker", "vertraulich" und "Insiderhandel" durch ein Komma getrennt sind (Banker, Confidential, "Insiderhandel"). Die Richtlinie gilt für alle Nachrichten, die das Wort "Banker", "vertraulich" oder den Ausdruck "Insiderhandel" enthalten. Nur eins der Wörter oder einer der Ausdrücke muss vorkommen, damit die Richtlinienbedingung zutrifft. Wörter in der Nachricht oder Anlage müssen genau übereinstimmen, die Sie eingeben.
 
 >[!IMPORTANT]
->Wenn Sie eine benutzerdefinierte Wörterbuchdatei importieren, muss jedes Wort oder jeder Ausdruck mit einem Wagenrücklauf und in einer separaten Zeilen getrennt werden. <br> Zum Beispiel: <br><br>
+>Wenn Sie eine benutzerdefinierte Wörterbuchdatei importieren, muss jedes Wort oder jeder Ausdruck mit einem Wagenrücklauf und in einer separaten Zeilen getrennt werden. <br> Beispiel: <br><br>
 >*Banker* <br>
 >*vertraulich* <br>
 >*Insiderhandel*
@@ -243,7 +243,7 @@ Der Schutz der Privatsphäre von Benutzern mit Richtlinien Übereinstimmungen is
 Für Benutzer mit einer Übereinstimmung mit Kommunikations Kompatibilität können Sie in den Einstellungen für die **Kommunikations Kompatibilität**eine der folgenden Einstellungen auswählen:
 
 - **Anonyme Versionen von**Benutzernamen anzeigen: Benutzernamen werden anonymisiert, um zu verhindern, dass Administratoren, Analysten, Daten Ermittler und Bearbeiter sehen, wem die Richtlinienwarnungen zugeordnet sind. Beispielsweise würde ein Benutzer "Grace Taylor" mit einem randomisierten Pseudonym wie "AnonIS8-988" in allen Bereichen der Kommunikations Konformitäts Erfahrung angezeigt. Wenn Sie diese Einstellung wählen, werden alle Benutzer mit aktuellen und früheren Richtlinienübereinstimmungen anonymisiert und gelten für alle Richtlinien. Benutzerprofilinformationen in den Benachrichtigungsdetails zur Kommunikations Konformität sind nicht verfügbar, wenn diese Option ausgewählt wird. Benutzernamen werden jedoch beim Hinzufügen neuer Benutzer zu vorhandenen Richtlinien oder beim Zuweisen von Benutzern zu neuen Richtlinien angezeigt. Wenn Sie diese Einstellung deaktivieren, werden Benutzernamen für alle Benutzer angezeigt, die aktuelle oder vergangene Richtlinien Übereinstimmungen aufweisen.
-- **Anonyme Versionen von Benutzernamen nicht anzeigen**: Benutzernamen werden für alle aktuellen und letzten Richtlinien Übereinstimmungen für Benachrichtigungen zur Kommunikations Konformität angezeigt. Benutzerprofilinformationen (Name, Titel, Alias und Organisation oder Abteilung) werden für den Benutzer für alle Warnungen und Fälle im Insider Risikomanagement angezeigt.
+- **Anonyme Versionen von Benutzernamen nicht anzeigen**: Benutzernamen werden für alle aktuellen und letzten Richtlinien Übereinstimmungen für Benachrichtigungen zur Kommunikations Konformität angezeigt. Benutzerprofilinformationen (Name, Titel, Alias und Organisation oder Abteilung) werden für den Benutzer für alle Benachrichtigungen zur Kommunikations Konformität angezeigt.
 
 ## <a name="notice-templates"></a>Benachrichtigungsvorlagen
 
@@ -334,16 +334,91 @@ Wenn Sie den in einer Warnungs Richtlinie für eine bestimmte Kommunikations Kon
 
 7. Wählen Sie **Schließen** aus, um die Seite Warnungsrichtlinien Details zu beenden.
 
+## <a name="power-automate-flows-preview"></a>Power Automation Flows (Vorschau)
+
+[Microsoft Power Automation](https://docs.microsoft.com/power-automate/getting-started) ist ein Workflowdienst, der Aktionen zwischen Anwendungen und Diensten automatisiert. Durch die Verwendung von Flows aus Vorlagen oder manuell erstellt, können Sie allgemeine Aufgaben automatisieren, die mit diesen Anwendungen und Diensten verbunden sind. Wenn Sie Power Automation Flows für die Kommunikations Konformität aktivieren, können Sie wichtige Aufgaben für Warnungen und Benutzer automatisieren. Sie können Power-Automatisierungs Flüsse so konfigurieren, dass Vorgesetzte benachrichtigt werden, wenn Benutzer über Kommunikations Konformitäts Benachrichtigungen und andere Anwendungen verfügen.
+
+Kunden mit Microsoft 365-Abonnements, die die Kompatibilität mit der Kommunikation einbeziehen, benötigen keine zusätzlichen Power-Automatisierungs Lizenzen, um die empfohlene standardmäßige Kommunikations Kompatibilitäts Power-Automatisierungs Vorlage zu verwenden. Die Standardvorlage kann angepasst werden, um Ihre Organisation zu unterstützen und die wichtigsten Szenarien für die Kommunikations Konformität zu behandeln. Wenn Sie sich für die Verwendung von Premium Power Automation-Funktionen in diesen Vorlagen entscheiden, eine benutzerdefinierte Vorlage mit dem Microsoft 365-Konformitäts-Konnektor erstellen oder Power automatisieren-Vorlagen für andere Kompatibilitäts Bereiche in Microsoft 365 verwenden, benötigen Sie möglicherweise zusätzliche Power automatisieren-Lizenzen.
+
+![Kommunikation Compliance Power automatisieren](../media/communication-compliance-power-automate.png)
+
+Die folgende Power-Automatisierungs Vorlage wird Kunden zur Unterstützung der Prozessautomatisierung für Kommunikationsrichtlinien Warnungen bereitgestellt:
+
+- Benachrichtigungs **-Manager, wenn ein Benutzer über eine Benachrichtigung über die Kommunikations Konformität verfügt**: einige Organisationen müssen möglicherweise eine sofortige Verwaltungs Benachrichtigung erhalten, wenn ein Benutzer über eine Benachrichtigung über die Kommunikations Konformität verfügt. Wenn dieser Ablauf konfiguriert und ausgewählt ist, wird dem Manager für den Fall Benutzer eine e-Mail-Nachricht mit den folgenden Informationen zu allen Warnungen gesendet:
+    - Zutreffende Richtlinie für die Warnung
+    - Datum/Uhrzeit der Warnung
+    - Schweregrad der Warnung
+
+### <a name="create-a-power-automate-flow"></a>Erstellen eines Power-Automatisierungs Flusses
+
+Um einen Power-Automatisierungs Fluss aus einer empfohlenen Standardvorlage zu erstellen, verwenden Sie die Option **Power Automation** Flows verwalten aus dem **Automatisierungs** Steuerelement, wenn Sie direkt in einer Warnung arbeiten. Zum Erstellen eines Power-Automatisierungs Flusses mit **Power-Automatisierungs Fluss verwalten**müssen Sie Mitglied mindestens einer Rollengruppe für die Kommunikations Kompatibilität sein.
+
+Führen Sie die folgenden Schritte aus, um einen Power-Automatisierungs Fluss aus einer Standardvorlage zu erstellen:
+
+1. Wechseln Sie im Microsoft 365 Compliance Center zu **Compliance**  >  -**Richtlinien** für Kommunikation, und wählen Sie die Richtlinie mit der Warnung aus, die Sie überprüfen möchten.
+2. Wählen Sie in der Richtlinie die Registerkarte **Ausstehend** aus, und wählen Sie eine ausstehende Warnung aus.
+3. Wählen Sie im Menü Benachrichtigungsaktion die Option **Power Automation** aus.
+4. Wählen Sie auf der Seite **Power automatisieren** eine Standardvorlage aus den Abschnitt **Kommunikations Kompatibilitäts Vorlagen** aus, die Sie auf der Seite mögen.
+5. Der Flow listet die für den Fluss erforderlichen eingebetteten Verbindungen auf und wird angezeigt, wenn die Verbindungsstatus verfügbar sind. Aktualisieren Sie bei Bedarf alle Verbindungen, die nicht als verfügbar angezeigt werden. Wählen Sie **weiter**aus.
+6. Standardmäßig sind die empfohlenen Flows mit den empfohlenen Kommunikationsrichtlinien und den Microsoft 365-Dienst Datenfeldern vorkonfiguriert, die zum Abschließen der zugewiesenen Aufgabe für den Fluss erforderlich sind. Passen Sie bei Bedarf die Fluss Komponenten mithilfe des Steuerelements " **Erweiterte Optionen anzeigen** " und Konfigurieren der verfügbaren Eigenschaften für die Fluss Komponente an.
+7. Fügen Sie bei Bedarf zusätzliche Schritte zum Ablauf hinzu, indem Sie die Schaltfläche **neuer Schritt** auswählen. In den meisten Fällen sollte diese Änderung für die empfohlenen Standardvorlagen nicht erforderlich sein.
+8. Wählen Sie **Entwurf speichern** aus, um den Fluss zur späteren Konfiguration zu speichern, oder wählen Sie **Speichern** aus, um die Konfiguration für den Fluss abzuschließen.
+9. Wählen Sie **Schließen** aus, um zur Seite Power Automation Flow zurückzukehren. Die neue Vorlage wird auf der Registerkarte **meine Abläufe** als Fluss aufgeführt und ist automatisch über das Power Automation-Steuerelement für den Benutzer verfügbar, der den Fluss beim Arbeiten mit Kommunikations Konformitätswarnungen erstellt hat.
+
+### <a name="share-a-power-automate-flow"></a>Freigeben eines Power-Automatisierungs Flusses
+
+Standardmäßig sind Power Automation Flows, die von einem Benutzer erstellt werden, nur für diesen Benutzer verfügbar. Damit andere Benutzer der Kommunikations Konformität Zugriff haben und einen Fluss verwenden können, muss der Fluss vom Flow Creator gemeinsam verwendet werden. Um einen Fluss freizugeben, verwenden Sie das **Power Automation** -Steuerelement, wenn Sie direkt in einer Warnung arbeiten.
+
+Zum Freigeben eines Power-Automatisierungs Flusses müssen Sie Mitglied mindestens einer Rollengruppe für die Kommunikations Kompatibilität sein.
+Führen Sie die folgenden Schritte aus, um einen Power-Automatisierungs Fluss freizugeben:
+
+1. Wechseln Sie im Microsoft 365 Compliance Center zu **Compliance**  >  -**Richtlinien** für Kommunikation, und wählen Sie die Richtlinie mit der Warnung aus, die Sie überprüfen möchten.
+2. Wählen Sie in der Richtlinie die Registerkarte **Ausstehend** aus, und wählen Sie eine ausstehende Warnung aus.
+3. Wählen Sie im Menü Benachrichtigungsaktion die Option **Power Automation** aus.
+4. Wählen Sie auf der Seite **Power Automation Flows** die Registerkarte **meine Flows** oder **Team Flows** aus.
+5. Wählen Sie den freizugebenden Fluss aus, und wählen Sie dann im Menü Fluss Optionen die Option **Freigeben** aus.
+6. Geben Sie auf der Seite Fluss Freigabe den Namen des Benutzers oder der Gruppe ein, den Sie als Besitzer für den Datenfluss hinzufügen möchten.
+7. Wählen Sie im Dialogfeld **Verbindung verwendet** die Option **OK** aus, um zu bestätigen, dass der hinzugefügte Benutzer oder die Gruppe Vollzugriff auf den Fluss haben wird.
+
+### <a name="edit-a-power-automate-flow"></a>Bearbeiten eines Power-Automatisierungs Flusses
+
+Wenn Sie einen Fluss bearbeiten müssen, verwenden Sie das **Power Automation** -Steuerelement, wenn Sie direkt in einer Warnung arbeiten. Zum Bearbeiten eines Power-Automatisierungs Flusses müssen Sie Mitglied mindestens einer Rollengruppe für die Kommunikations Kompatibilität sein.
+
+Führen Sie die folgenden Schritte aus, um einen Power-Automatisierungs Fluss zu bearbeiten:
+
+1. Wechseln Sie im Microsoft 365 Compliance Center zu **Compliance**  >  -**Richtlinien** für Kommunikation, und wählen Sie die Richtlinie mit der Warnung aus, die Sie überprüfen möchten.
+2. Wählen Sie in der Richtlinie die Registerkarte **Ausstehend** aus, und wählen Sie eine ausstehende Warnung aus.
+3. Wählen Sie im Menü Benachrichtigungsaktion die Option **Power Automation** aus.
+4. Wählen Sie auf der Seite **Strom Automatisierungs Flüsse** auswählen den zu bearbeitenden Fluss aus. Wählen Sie im Menü Flusssteuerung die Option **Bearbeiten** aus.
+5. Wählen Sie die **Auslassungs**  >  **Einstellungen** aus, um eine Fluss Komponenteneinstellung zu ändern, oder **Auslassungs**Punkte  >  **Löschen** , um eine Fluss Komponente zu löschen.
+6. Klicken Sie auf **Speichern** und dann auf **Schließen** , um die Bearbeitung des Flusses abzuschließen.
+
+### <a name="delete-a-power-automate-flow"></a>Löschen eines Power-Automatisierungs Flusses
+
+Wenn Sie einen Fluss löschen müssen, verwenden Sie das **Power Automation** -Steuerelement, wenn Sie direkt in einer Warnung arbeiten. Zum Löschen eines Power-Automatisierungs Flusses müssen Sie Mitglied mindestens einer Rollengruppe für die Kommunikations Kompatibilität sein.
+
+Führen Sie die folgenden Schritte aus, um einen Power-Automatisierungs Fluss zu löschen:
+
+1. Wechseln Sie im Microsoft 365 Compliance Center zu **Compliance**  >  -**Richtlinien** für Kommunikation, und wählen Sie die Richtlinie mit der Warnung aus, die Sie überprüfen möchten.
+2. Wählen Sie in der Richtlinie die Registerkarte **Ausstehend** aus, und wählen Sie eine ausstehende Warnung aus.
+3. Wählen Sie im Menü Benachrichtigungsaktion die Option **Power Automation** aus.
+4. Wählen Sie auf der Seite **Strom Automatisierungs Flüsse** auswählen den zu löschenden Fluss aus. Wählen Sie im Menü Flusssteuerung die Option **Löschen** aus.
+5. Wählen Sie im Dialogfeld Löschbestätigung die Option **Löschen** aus, um den Fluss zu entfernen, oder wählen Sie **Abbrechen** aus, um die Löschaktion zu beenden.
+
 ## <a name="reports-preview"></a>Berichte (Vorschau)
 
-Das Dashboard für neue **Berichte** ist der zentrale Ort zum Anzeigen aller Kompatibilitätsberichte für die Kommunikation. Berichts-Widgets bieten eine schnelle Übersicht über die am häufigsten benötigten Einblicke für eine allgemeine Bewertung des Status von Kommunikations Compliance-Aktivitäten. In den Berichts-Widgets enthaltene Informationen sind nicht exportierbar.
+Das Dashboard für neue **Berichte** ist der zentrale Ort zum Anzeigen aller Kompatibilitätsberichte für die Kommunikation. Berichts-Widgets bieten eine schnelle Übersicht über die am häufigsten benötigten Einblicke für eine Gesamtbewertung des Status von Kommunikations Compliance-Aktivitäten. In den Berichts-Widgets enthaltene Informationen sind nicht exportierbar. Detaillierte Berichte bieten ausführliche Informationen zu bestimmten Bereichen der Kommunikations Konformität und bieten die Möglichkeit zum Filtern, gruppieren, Sortieren und Exportieren von Informationen bei der Überprüfung.
 
-Das Dashboard **Berichte** enthält die folgenden Berichts-Widgets:
+Das **Dashboard Berichte** enthält die folgenden Berichts-Widgets und Links zu detaillierten Berichten:
 
-- **Aktuelle Richtlinien Übereinstimmungen**: zeigt die Anzahl der Übereinstimmungen mit aktiver Richtlinie im Zeitverlauf an.
-- **Aufgelöste Elemente nach Richtlinie**: zeigt die Anzahl von Richtlinien Übereinstimmungs Benachrichtigungen an, die über einen Zeitraum nach Richtlinien aufgelöst werden.
-- **Benutzer mit den meisten Richtlinien Übereinstimmungen**: zeigt die Benutzer (oder anonymisierten Benutzernamen) und die Anzahl der Richtlinien Übereinstimmungen für einen bestimmten Zeitraum an.
-- **Richtlinie mit den meisten Übereinstimmungen**: zeigt die Richtlinien und die Anzahl der Übereinstimmungen für einen bestimmten Zeitraum an, der für Übereinstimmungen am höchsten und am niedrigsten ist.
+- **Aktuelle Richtlinie entspricht** Widget: zeigt die Anzahl der Übereinstimmungen mit aktiver Richtlinie im Zeitverlauf an.
+- **Auflösen von Elementen nach Richtlinie** Widget: zeigt die Anzahl von Richtlinien Übereinstimmungs Benachrichtigungen an, die über einen Zeitraum nach Richtlinien aufgelöst werden.
+- **Benutzer mit dem meisten Richtlinien Übereinstimmungs** Widget: zeigt die Benutzer (oder anonymisierten Benutzernamen) und die Anzahl der Richtlinien Übereinstimmungen für einen bestimmten Zeitraum an.
+- **Richtlinie mit den meisten Übereinstimmungen** Widget: zeigt die Richtlinien und die Anzahl der Übereinstimmungen für einen bestimmten Zeitraum an, der für Übereinstimmungen am höchsten und am niedrigsten ist.
+- **Eskalationen nach Richtlinien** Widget: zeigt die Anzahl der Eskalationen pro Richtlinie in einem bestimmten Zeitraum an.
+- **Richtlinieneinstellungen und Status** detaillierter Bericht: bietet einen detaillierten Überblick über die Richtlinienkonfiguration und-Einstellungen sowie den allgemeinen Status der einzelnen Richtlinien (Übereinstimmungen und Aktionen) für Nachrichten. Verwenden Sie die *Export* Option, um eine zu erstellen. CSV-Datei mit den Berichtsdetails.
+- **Elemente und Aktionen pro Richtlinien** Detailbericht: überprüfen und Exportieren von übereinstimmenden Elementen und Korrekturaktionen pro Richtlinie. Verwenden Sie die *Export* Option, um eine zu erstellen. CSV-Datei mit den Berichtsdetails.
+- **Element und Aktionen pro Standort** detaillierter Bericht: überprüfen und Exportieren von übereinstimmenden Elementen und Korrekturaktionen pro Microsoft 365-Standort. Verwenden Sie die *Export* Option, um eine zu erstellen. CSV-Datei mit den Berichtsdetails.
 
 ## <a name="audit"></a>Überwachung
 

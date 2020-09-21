@@ -19,19 +19,19 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 Advanced Threat Protection umfasst sichere Anlagen, sichere Links, erweiterte Antiphishing-Tools, Berichterstellungstools und Threat Intelligence-Funktionen.
-ms.openlocfilehash: 2241f48877019cb20484aea0dd1fcf7b9e7b8bb5
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 184ab53059a73de534d9a67a45fc41b20a73f13f
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653605"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949685"
 ---
-# <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
+# <a name="office-365-advanced-threat-protection-atp"></a>Office 365 Advanced Threat Protection (ATP)
 
 > [!IMPORTANT]
 > Dieser Artikel richtet sich an Geschäftskunden, die über [Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) verfügen. Wenn Sie Outlook.com, Microsoft 365 Family oder Microsoft 365 Single verwenden und Informationen zu sicheren Links oder sicheren Anlagen in Outlook benötigen, lesen Sie [Erweiterte Outlook.com-Sicherheit für Microsoft 365-Abonnenten](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Office 365 Advanced Threat Protection (ATP) schützt Ihre Organisation vor bösartigen Bedrohungen durch E-Mail-Nachrichten, Links (URLs) und Zusammenarbeitstools. ATP enthält folgende Elemente:
+Office 365 Advanced Threat Protection (ATP) schützt Ihre Organisation vor bösartigen Bedrohungen durch E-Mail-Nachrichten, Links (URLs), und Zusammenarbeitstools. ATP enthält folgende Elemente:
 
 - **[Richtlinien zum Schutz vor Bedrohungen](#configure-atp-policies)**: Definieren Sie Richtlinien zum Schutz vor Bedrohungen, um den geeigneten Schutzgrad für Ihre Organisation festzulegen.
 
@@ -40,6 +40,25 @@ Office 365 Advanced Threat Protection (ATP) schützt Ihre Organisation vor bösa
 - **[Untersuchung von und Antwort auf Bedrohungen](#use-threat-investigation-and-response-capabilities)**: Verwenden Sie brandneue Tools, um Bedrohungen zu untersuchen, zu verstehen, zu simulieren und zu verhindern.
 
 - **[Funktionen für automatische Untersuchung und Reaktion](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)**: Sparen Sie Zeit und Mühe beim Untersuchen und Beheben von Bedrohungen.
+
+## <a name="getting-started"></a>Erste Schritte
+
+Wenn Sie noch nicht mit Office 365 Advanced Threat Protection vertraut sind, oder einfach gleich *loslegen* möchten, könnte es hilfreich für Sie sein, die erste ATP-Konfiguration in einzelne Schritte aufzuteilen, zu recherchieren, und sich Berichte anzuschauen, die in diesem Artikel erwähnt werden. Folgendermaßen können Sie die erste Konfiguration in kleine Abschnitte aufteilen:
+
+- Konfigurieren Sie alles mit ‚*Anti-*‘ im Namen.
+    - Antischadsoftware
+    - Antiphishing
+    - Antispam
+- Richten Sie alles mit ‚*sicher*‘ im Namen ein.
+    - Sichere Links
+    - Sichere Anlagen
+- Sichern Sie die Workloads (z. B. SharePoint Online, OneDrive, und Teams) 
+- Schutz durch automatische Bereinigung zur Nullstunde
+
+Wenn Sie durch praktische Beispiele lernen möchten, [klicken Sie auf diesen Link](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide&preserve-view=true). 
+
+> [!NOTE]
+> Es gibt in ATP zwei verschiedene Plantypen. Sie erkennen, dass Sie **Plan 1** haben, wenn Sie über ‚Echtzeiterkennnungen‘ verfügen, und **Plan 2**, wenn Sie über den Sicherheitsrisiken-Explorer verfügen. Ihr Plan hat Auswirkungen darauf, welche Tools Sie sehen. Daher sollten Sie sich sicher sein, welchen Plan Sie haben, bevor Sie mit dem Lernen anfangen.
 
 ## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP Plan 1 und Plan 2
 
@@ -52,7 +71,7 @@ In der folgenden Tabelle sind die Inhalte der einzelnen Pläne zusammengefasst.
 |<br/>Konfigurations-, Schutz- und Erkennungsfunktionen: <ul><li>[Sichere Anlagen](atp-safe-attachments.md)</li><li>[Sichere Links](atp-safe-links.md)</li><li>[ATP für SharePoint, OneDrive und Microsoft Teams](atp-for-spo-odb-and-teams.md)</li><li>[ATP Antiphishingschutz](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)</li><li>[Echtzeiterkennungen](threat-explorer.md)</li></ul>|Office 365 ATP Plan 1 – Funktionen<br/>--- plus ---<br/>Automatisierungs-, Untersuchungs-, Fehlerbehebungs- und Schulungsfunktionen:</li><li>[Bedrohungs-Tracker](threat-trackers.md)</li><li>[Sicherheitsrisiken-Explorer](threat-explorer.md)</li><li>[Automatische Untersuchung und Reaktion](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)</li><li>[Angriffssimulator](attack-simulator.md)</li></ul>|
 |
 
-- Office 365 ATP Plan 2 ist in Office 365 E5, Office 365 A5 und Microsoft 365 E5 enthalten.
+- Office 365 ATP Plan 2 ist in Office 365 E5, Office 365 A5, Microsoft 365 E5 Security, und Microsoft 365 E5 enthalten.
 
 - Office 365 ATP Plan 1 ist in Microsoft 365 Business Premium enthalten.
 
@@ -68,6 +87,8 @@ Mit Office 365 ATP kann das Sicherheitsteam Ihrer Organisation den Schutz durch 
 
 > [!TIP]
 > Eine schnelle Liste der zu definierenden Richtlinien finden Sie unter [Schutz vor Bedrohungen](protect-against-threats.md).
+
+## <a name="advanced-threat-protection-policies"></a>Advanced Threat Protection-Richtlinien
 
 Die Richtlinien, die für Ihre Organisation definiert sind, bestimmen das Verhalten und den Schutzgrad für vordefinierte Bedrohungen. Richtlinienoptionen sind äußerst flexibel. Beispielsweise kann das Sicherheitsteam Ihrer Organisation einen fein abgestuften Bedrohungsschutz auf Benutzer-, Organisations-, Empfänger- und Domänenebene festlegen. Es ist wichtig, dass Sie Ihre Richtlinien regelmäßig überprüfen, da täglich neue Bedrohungen und Herausforderungen entstehen.
 

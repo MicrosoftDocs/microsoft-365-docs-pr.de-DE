@@ -15,12 +15,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie domänenbasierte Nachrichtenauthentifizierung, Berichterstellung und Konformität (DMARC) konfigurieren, um von Ihrer Organisation gesendete Nachrichten zu validieren.
-ms.openlocfilehash: 09c06d30d118078e310c5e3d0743ef5236ec77ba
-ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
+ms.openlocfilehash: 1f014a221334925f5b9c90371d552eb64d026c1f
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46632117"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949432"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Verwenden von DMARC zum Überprüfen von E-Mails
 
@@ -206,7 +206,7 @@ Wenn Sie eine DMARC-Ablehnungsrichtlinie veröffentlichen (p=reject), kann kein 
 
 ## <a name="how-microsoft-365-handles-inbound-email-that-fails-dmarc"></a>So behandelt Microsoft 365 eingehende E-Mail-Nachrichten, die DMARC-Prüfungen nicht bestehen
 
-Wenn die DMARC-Richtlinie des sendenden Servers `p=reject` lautet, kennzeichnet EOP die Nachricht als Spoof, anstatt sie abzulehnen. Mit anderen Worten, Microsoft 365 behandelt im Hinblick auf eingehende E-Mails `p=reject` und `p=quarantine` auf die gleiche Weise. Administratoren können die Aktion definieren, die auf Nachrichten, die in der [Anti-Phishing-Richtlinie](set-up-anti-phishing-policies.md) als Spoof klassifiziert werden, angewendet werden soll.
+Wenn die DMARC-Richtlinie des sendenden Servers `p=reject`ist, markiert [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) die Nachricht als Spoofing, anstatt Sie abzulehnen. Mit anderen Worten, Microsoft 365 behandelt im Hinblick auf eingehende E-Mails `p=reject` und `p=quarantine` auf die gleiche Weise. Administratoren können die Aktion definieren, die auf Nachrichten, die in der [Anti-Phishing-Richtlinie](set-up-anti-phishing-policies.md) als Spoof klassifiziert werden, angewendet werden soll.
 
 Microsoft 365 ist so konfiguriert, da einige autorisierte E-Mail-Nachrichten die DMARC-Prüfung möglicherweise nicht bestehen. Eine Nachricht besteht die DMARC-Prüfung zum Beispiel möglicherweise nicht, wenn sie an eine Mailingliste gesendet wird, die die Nachricht an alle Teilnehmer auf der Liste weiterleitet. Wenn Microsoft 365 diese Nachrichten ablehnen würde, könnten autorisierte E-Mail-Nachrichten für Benutzer verloren gehen, ohne dass die Benutzer sie auf andere Weise abrufen können. Diese Nachrichten bestehen die DMARC-Prüfung daher weiterhin nicht, werden jedoch als Spam gekennzeichnet und nicht abgelehnt. Falls gewünscht, können Benutzer diese Nachrichten immer noch anhand einer der folgenden Methoden in ihrem Posteingang erhalten:
 

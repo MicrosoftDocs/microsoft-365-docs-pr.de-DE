@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c3f8aec244b1b0685b8293fda0b048d662c7cef2
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 2c7c7d75fad58cab0cd6d19a16a97667ea3641a1
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529361"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104488"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>Referenz zu konfigurierbaren Einstellungen – Microsoft Managed Desktop
 
@@ -33,9 +33,9 @@ Diese Anforderungen müssen für ein Desktophintergrundbild erfüllt sein:
 ### <a name="customize-and-deploy-desktop-background-picture"></a>Anpassen und Bereitstellen von Desktophintergrundbildern
 
 **So fügen Sie ein benutzerdefiniertes Desktophintergrundbild hinzu**
-1. Anmelden beim [Microsoft Managed Desktop-Verwaltungsportal](https://aka.ms/mwaasportal)
-2. Wählen Sie unter **Einstellungen**die Option **konfigurierbar**aus.
-3. Wählen Sie im **konfigurierbaren** Arbeitsbereich **Desktop Hintergrundbild**aus. 
+1. Melden Sie sich bei [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) an, und navigieren Sie zum Menü **Geräte**
+2. Suchen Sie nach dem Abschnitt Microsoft Managed Desktop, und wählen Sie **Einstellungen**aus.
+3. Wählen Sie im Arbeitsbereich **Einstellungen** die Option **Desktop Hintergrundbild**aus. 
 4. Geben Sie den Speicherort des Bilds ein, das Sie verwenden möchten. 
 5. Wählen Sie **Stufe Bereitstellung** aus, um die Änderungen zu speichern und in der Test Gruppe bereitzustellen. 
 
@@ -49,9 +49,9 @@ Sie müssen den vollqualifizierten Domänennamen (Fully Qualified Domain Name, F
 ### <a name="customize-and-deploy-browser-start-pages"></a>Anpassen und Bereitstellen von Browser Startseiten
 
 **So fügen Sie eine Browser Startseite hinzu**
-1. Anmelden beim [Microsoft Managed Desktop-Verwaltungsportal](https://aka.ms/mwaasportal)
-2. Wählen Sie unter **Einstellungen**die Option **konfigurierbar**aus.
-3. Wählen Sie im **konfigurierbaren** Arbeitsbereich **Browser Startseiten**aus. 
+1. Melden Sie sich bei [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) an, und navigieren Sie zum Menü **Geräte**
+2. Suchen Sie nach dem Abschnitt Microsoft Managed Desktop, und wählen Sie **Einstellungen**aus.
+3. Wählen Sie im Arbeitsbereich **Einstellungen** die Option **Browser Startseiten**aus. 
 4. Wählen Sie **Startseite hinzufügen**aus.
 5. Geben Sie auf der **Seite Browser Start hinzufügen**die URL für die Website ein, die Sie verwenden möchten, und wählen Sie dann **Startseite hinzufügen**aus. 
 6. Wiederholen Sie die Schritte 1-5 für weitere Browser Startseiten. 
@@ -80,11 +80,11 @@ Diese bewährten Methoden werden angeboten, um Kunden bei der Entscheidungsfindu
 
 **So fügen Sie einen Listenspeicherort für den Unternehmensstandort Modus hinzu**
 
-1.  Anmelden beim [Microsoft Managed Desktop-Verwaltungsportal](https://aka.ms/mwaasportal)
-2.  Wählen Sie unter **Einstellungen**die Option **konfigurierbar**aus.
-3.  Wählen Sie im **konfigurierbaren** Arbeitsbereich den **Unternehmens Modus Site List Location**aus. 
-4.  Geben Sie den HTTPS-Speicherort für Ihre Website Liste ein. 
-5.  Wählen Sie **Stufe Bereitstellung** aus, um die Änderungen zu speichern und in der Test Gruppe bereitzustellen.
+1. Melden Sie sich bei [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) an, und navigieren Sie zum Menü **Geräte**
+2. Suchen Sie nach dem Abschnitt Microsoft Managed Desktop, und wählen Sie **Einstellungen**aus.
+3. Wählen Sie im Bereich **Einstellungen** den Standort **Listenspeicherort des Unternehmens Modus**aus. 
+4. Geben Sie den HTTPS-Speicherort für Ihre Website Liste ein. 
+5. Wählen Sie **Stufe Bereitstellung** aus, um die Änderungen zu speichern und in der Test Gruppe bereitzustellen.
 
 ## <a name="trusted-sites"></a>Vertrauenswürdige Sites
 
@@ -102,18 +102,18 @@ Geben Sie den vollqualifizierten Domänennamen (Fully Qualified Domain Name, FQD
 
 **So fügen Sie eine vertrauenswürdige Website hinzu**
 
-1. Anmelden beim [Microsoft Managed Desktop-Verwaltungsportal](https://aka.ms/mwaasportal)
-2. Wählen Sie unter **Einstellungen**die Option **konfigurierbar**aus.
-3. Wählen Sie im **konfigurierbaren** Arbeitsbereich **vertrauenswürdige Websites**aus, und wählen Sie **vertrauenswürdige Website hinzufügen**aus. 
+1. Melden Sie sich bei [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) an, und navigieren Sie zum Menü **Geräte**
+2. Suchen Sie nach dem Abschnitt Microsoft Managed Desktop, und wählen Sie **Einstellungen**aus.
+3. Wählen Sie im Bereich **Einstellungen** die Option **vertrauenswürdige Websites**aus, und wählen Sie **vertrauenswürdige Website hinzufügen**aus. 
 4. Geben Sie auf **vertrauenswürdige Website hinzufügen**die URL ein, wählen Sie eine Sicherheitszone aus, und wählen Sie dann **vertrauenswürdige Website hinzufügen**aus. 
 5. Wiederholen Sie die Schritte 1-4 für jede vertrauenswürdige Website, die Sie hinzufügen möchten. 
 6. Wählen Sie **Stufe Bereitstellung** aus, um die Änderungen zu speichern und in der Test Gruppe bereitzustellen.
 
 **So entfernen Sie eine vertrauenswürdige Website**
 
-1. Anmelden beim [Microsoft Managed Desktop-Verwaltungsportal](https://aka.ms/mwaasportal)
-2. Wählen Sie unter **Einstellungen**die Option **konfigurierbar**aus.
-3. Wählen Sie im **konfigurierbaren** Arbeitsbereich **vertrauenswürdige Websites**aus. 
+1. Melden Sie sich bei [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) an, und navigieren Sie zum Menü **Geräte**
+2. Suchen Sie nach dem Abschnitt Microsoft Managed Desktop, und wählen Sie **Einstellungen**aus.
+3. Wählen Sie im Arbeitsbereich **Einstellungen** die Option **vertrauenswürdige Websites**aus. 
 4. Wählen Sie die Website aus, die Sie löschen möchten, und wählen Sie dann **Löschen**aus. 
 5. Wiederholen Sie die Schritte 1-4 für jede vertrauenswürdige Website, die Sie löschen möchten. 
 6. Wählen Sie **Stufe Bereitstellung** aus, um die Änderungen zu speichern und in der Test Gruppe bereitzustellen.
@@ -136,14 +136,14 @@ Diese Anforderungen müssen für Proxy Server-und Proxy Standort Ausnahmen erfü
 
 **So fügen Sie eine einzelne Proxy Standort Ausnahme hinzu**
 
-1. Anmelden beim [Microsoft Managed Desktop-Verwaltungsportal](https://aka.ms/mwaasportal)
-2. Wählen Sie unter **Einstellungen**die Option **konfigurierbar**aus.
-3. Wählen Sie im **konfigurierbaren** Arbeitsbereich **Proxy**aus. 
+1. Melden Sie sich bei [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) an, und navigieren Sie zum Menü **Geräte**
+2. Suchen Sie nach dem Abschnitt Microsoft Managed Desktop, und wählen Sie **Einstellungen**aus.
+3. Wählen Sie im Arbeitsbereich **Einstellungen** die Option **Proxy**aus. 
 4. Geben Sie die **Adresse** und **Port Nummer** für Ihren Proxy Server ein, und wählen Sie dann **Proxyausnahme hinzufügen**aus. 
 5. Geben Sie die URL einer gültigen HTTP-Website ein, und wählen Sie dann **Proxyausnahme hinzufügen**aus. 
 6. Wiederholen Sie die Schritte 1-5 für jede vertrauenswürdige Website, die Sie hinzufügen möchten. 
 7. Wählen Sie **Stufe Bereitstellung** aus, um die Änderungen zu speichern und in der Test Gruppe bereitzustellen.
 
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
+## <a name="additional-resources"></a>Weitere Ressourcen
 - [Übersicht über konfigurierbare Einstellungen](config-setting-overview.md) 
 - [Bereitstellen konfigurierbarer Einstellungen](config-setting-deploy.md)

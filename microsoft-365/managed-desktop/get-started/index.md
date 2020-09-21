@@ -4,17 +4,18 @@ description: Schritte zum Einrichten von Geräten und zum Konfigurieren von Azur
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 1c5edfd096694324082bdd4fcb70b85b0dd1f5f0
-ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.openlocfilehash: 02f12174ef3b8a55f9642bba41c845952b1c1c48
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "38020398"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950544"
 ---
 # <a name="get-started-with-microsoft-managed-desktop"></a>Erste Schritte mit Microsoft Managed Desktop
 
-Nachdem Sie sich für den Dienst registriert haben, führen Sie die folgenden Schritte aus, um die Administrator-Kontakte zu bestätigen, die Einstellungen für den bedingten Zugriff anzupassen, Benutzerlizenzen zuzuweisen, Enterprise State Roaming zu aktivieren, Geräte abzurufen und einzurichten, Benutzer vorzubereiten und Apps auf Geräten bereitzustellen.
+Nachdem Sie sich jetzt für den Dienst angemeldet haben, führen Sie die folgenden Schritte aus, um Administratorkontakte zu bestätigen, Einstellungen für den bedingten Zugriff anzupassen, Benutzern Lizenzen zuzuweisen, Enterprise State Roaming zu aktivieren, Geräte abzurufen und einzurichten, Benutzer vorzubereiten und Apps auf Geräten bereitzustellen.
 
 > [!NOTE]
 > Es wird empfohlen, dieser Reihenfolge zu folgen, aber Sie haben ein gewisses Maß an Flexibilität in der Abfolge.

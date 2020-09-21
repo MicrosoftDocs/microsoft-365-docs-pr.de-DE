@@ -9,21 +9,18 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 94af3e22-aca6-4e91-8b91-1cd5a02a9ea8
 description: Ändern Sie Ihre Sprach-und Zeitzoneneinstellungen in Microsoft-Buchungen. Wenn Buchungen zur falschen Zeit erstellt werden, können Buchungen für die falsche Zeitzone festgelegt werden.
-ms.openlocfilehash: 07e5dde2a896610ee079063943aff24ec69ba721
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 3e7709666d6426b11c275e46a18d43e7b7ab3526
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419645"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962431"
 ---
 # <a name="set-language-and-time-zones-in-microsoft-bookings"></a>Festlegen von Sprache und Zeitzonen in Microsoft Bookings
 
 Wenn Sie Microsoft-Buchungen verwenden und Buchungen zur falschen Zeit erstellt werden, müssen Ihre Zeitzoneneinstellungen möglicherweise geändert werden. Wenn sich einige Buchungen in der falschen Sprache befinden, müssen Sie möglicherweise die Spracheinstellungen ändern.
 
 Es gibt zwei separate sprach-und Zeitzoneneinstellungen für Buchungen. Die erste Einstellung steuert die Sprache und Zeitzone des Buchungs Kalenders und wird mithilfe der Einstellungen für Outlook im Internet für den persönlichen Kalender des angemeldeten Benutzers festgelegt. Die zweite Einstellung wirkt sich auf die Self-Service-Buchungsseite aus, die Ihre Kunden verwenden und wird mithilfe einer Seite "regionale Einstellungen" festgelegt, die Sprache und Zeitzone nur für diese Seite steuert.
-
-> [!NOTE]
-> Reservierungen sind standardmäßig für Kunden mit den Abonnements Microsoft 365 Business Standard, Microsoft 365 a3 oder Microsoft 365 a5 aktiviert. Reservierungen stehen auch Kunden mit Office 365 Enterprise E3 und Office 365 Enterprise E5 zur Verfügung, Sie sind jedoch standardmäßig deaktiviert. Die ersten Schritte finden Sie unter [Get Access to Microsoft Booking](get-access.md). Informationen zum Aktivieren oder Deaktivieren von Buchungen finden Sie unter [Aktivieren oder Deaktivieren von Buchungen für Ihre Organisation](turn-bookings-on-or-off.md).
 
 ## <a name="setting-language-and-time-zone-for-a-booking-calendar"></a>Festlegen der Sprache und Zeitzone für einen Buchungskalender
 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: cd796a6bd5faebc87b2f7c9cab36fe17be41fe2e
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: 43edaec282cc1efb9f4ab7d9e92ed0a779d255ab
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597466"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131557"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Kommunikations Kompatibilität in Microsoft 365
 
@@ -70,7 +70,7 @@ Communication Compliance in Microsoft 365 bietet verschiedene wichtige Features,
 Durch intelligente anpassbare Vorlagen in der Kommunikations Konformität können Sie Maschinelles Lernen anwenden, um Kommunikations Verletzungen in Ihrer Organisation intelligent zu erkennen.
 
 - **Anpassbare vorkonfigurierte Vorlagen**: neue Richtlinienvorlagen helfen bei der Lösung der häufigsten Kommunikationsrisiken. Die anfängliche Richtlinienerstellung und die nachfolgende Aktualisierung sind jetzt schneller mit vordefinierter antibelästigungs-und anstößiger Sprache, vertraulichen Informationen und Vorlagen für behördliche Konformität.
-- **Neue Unterstützung für das maschinelle Lernen**: eingebaute Bedrohung, Belästigung, Profanität und Bild [Klassifizierungen](classifier-getting-started-with.md) helfen, falsch positive Ergebnisse in überprüften Nachrichten zu reduzieren, wodurch die Zeit der Bearbeiter während der Untersuchung und des Korrekturprozesses gespart wird.
+- **Neue Unterstützung für das maschinelle Lernen**: eingebaute Bedrohung, Belästigung, Profanität und Bild [Klassifizierungen](classifier-get-started-with.md) helfen, falsch positive Ergebnisse in überprüften Nachrichten zu reduzieren, wodurch die Zeit der Bearbeiter während der Untersuchung und des Korrekturprozesses gespart wird.
 - **Verbesserter Condition Builder**: das Konfigurieren von Richtlinienbedingungen wird nun zu einer einzigen integrierten Erfahrung im Richtlinien-Assistenten vereinfacht, wodurch die Verwirrung bei der Anwendung von Bedingungen auf Richtlinien verringert wird.
 
 ### <a name="flexible-remediation-workflows"></a>Flexible Korrektur Workflows

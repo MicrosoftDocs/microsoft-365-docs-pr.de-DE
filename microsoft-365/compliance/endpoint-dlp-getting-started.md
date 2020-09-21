@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Richten Sie Microsoft 365 Endpunkt-DLP (Data Loss Prevention, Verhinderung von Datenverlust) ein, um Dateiaktivitäten zu überwachen und schützende Maßnahmen für diese Dateien auf Endpunkten anzuwenden.
-ms.openlocfilehash: 43ab2a30570f153f16819ede2eeed1f0e091da74
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 08e2bd43b4337087b401244b7dc4cf80a26aaf06
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949845"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131669"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention-preview"></a>Endpunkt-DLP (Vorschau) – Erste Schritte
 
@@ -90,7 +90,7 @@ Vergewissern Sie sich, dass die Windows 10-Geräte, auf die Sie Endpunkt-DLP anw
 
 Wenn Sie das Onboarding von noch nicht eingebundenen Geräten vornehmen möchten, laden Sie das entsprechende Skript herunter, und installieren Sie es auf diesen Geräten. Wenden Sie das [Verfahren zum Onboarding von Geräten](endpoint-dlp-getting-started.md#onboarding-devices) an.
 
-Wenn bereits Geräte in [Microsoft Defender Advanced Threat Protection (MDATP)](https://docs.microsoft.com/windows/security/threat-protection/) eingebunden sind, werden sie in der Liste der verwalteten Geräte angezeigt. Folgen Sie dem [Verfahren bei in MDATP eingebundenen Geräten](endpoint-dlp-getting-started.md#with-devices-onboarded-into-mdatp).
+Wenn bereits Geräte in [Microsoft Defender für Endpunkt](https://docs.microsoft.com/windows/security/threat-protection/) eingebunden sind, werden sie in der Liste der verwalteten Geräte angezeigt. Folgen Sie der Vorgehensweise unter [Bei Geräten, die in Microsoft Defender für Endpunkt eingebunden sind](endpoint-dlp-getting-started.md#with-devices-onboarded-into-microsoft-defender-for- endpoint).
 
 ### <a name="onboarding-devices"></a>Onboarding von Geräten
 
@@ -109,7 +109,7 @@ In diesem Bereitstellungsszenario werden Sie das Onboarding von noch nicht einge
 5. Wählen Sie die Art der Bereitstellung auf diesen zusätzlichen Geräten aus der Liste der **Bereitstellungsmethoden** und anschließend **Paket herunterladen** aus.
 
    ![Bereitstellungsmethode](../media/endpoint-dlp-getting-started-3-deployment-method.png)
-6. Führen Sie die unter [Onboarding-Tools und -Methoden für Windows 10-Computer](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) beschriebenen entsprechenden Verfahren aus. Über diesen Link gelangen Sie zu einer Zielseite, auf der MDATP-Prozeduren beschrieben werden, die dem in Schritt 5 ausgewählten Bereitstellungspaket entsprechen:
+6. Führen Sie die unter [Onboarding-Tools und -Methoden für Windows 10-Computer](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) beschriebenen entsprechenden Verfahren aus. Über diesen Link gelangen Sie zu einer Zielseite, auf der Microsoft Defender für Endpunkt-Prozeduren beschrieben werden, die dem in Schritt 5 ausgewählten Bereitstellungspaket entsprechen:
     - Onboarding von Windows 10-Computern mithilfe von Gruppenrichtlinien
     - Onboarding von Windows-Computern mithilfe von Microsoft Endpoint Configuration Manager
     - Onboarding von Windows 10-Computern mit Tools für die Verwaltung von Mobilgeräten
@@ -121,16 +121,16 @@ Nach Abschluss des Endpunkt-Onboardings sollten diese in der Liste der Geräte a
 > [!NOTE]
 > Diese Funktion erfordert eine Lizenz. Ohne die erforderliche Lizenz werden keine Daten angezeigt und es ist kein Zugriff auf sie möglich.
 
-### <a name="with-devices-onboarded-into-mdatp"></a>Bei in MDATP eingebundenen Geräten
+### <a name="with-devices-onboarded-into-microsoft-defender-for-endpoint"></a>Bei Geräten, die in Microsoft Defender für Endpunkt eingebunden sind
 
-In diesem Szenario ist MDATP bereits installiert, und Endpunkte senden Protokolle. Alle diese Endpunkte werden in der Liste der verwalteten Geräte angezeigt. Über das [Geräte-Onboarding](endpoint-dlp-getting-started.md#onboarding-devices) können Sie weiterhin neue Geräte in Endpunkt-DLP einbinden, um die Abdeckung zu erweitern.
+In diesem Szenario ist Microsoft Defender für Endpunkt bereits installiert, und Endpunkte senden Protokolle. Alle diese Endpunkte werden in der Liste der verwalteten Geräte angezeigt. Über das [Geräte-Onboarding](endpoint-dlp-getting-started.md#onboarding-devices) können Sie weiterhin neue Geräte in Endpunkt-DLP einbinden, um die Abdeckung zu erweitern.
 
 1. Öffnen Sie das [Microsoft Compliance Center](https://compliance.microsoft.com).
 2. Öffnen Sie die Seite "Einstellungen", und wählen Sie **Geräteüberwachung aktivieren** aus.
-3. Wählen Sie **Geräteverwaltung** aus, um die Liste der **Geräte** zu öffnen. Es sollte die Liste der Geräte angezeigt werden, die bereits Berichte für MDATP erstellen. ![Geräteverwaltung](../media/endpoint-dlp-getting-started-2-device-management.png)
+3. Wählen Sie **Geräteverwaltung** aus, um die Liste der **Geräte** zu öffnen. Es sollte die Liste der Geräte angezeigt werden, die bereits Berichte für Microsoft Defender für Endpunkt erstellen. ![Geräteverwaltung](../media/endpoint-dlp-getting-started-2-device-management.png)
 4. Wenn Sie zusätzliche Geräte einbinden möchten, wählen Sie **Onboarding** aus.
 5. Wählen Sie die Art der Bereitstellung auf diesen zusätzlichen Geräten aus der Liste der **Bereitstellungsmethoden** und anschließend **Paket herunterladen** aus.
-6. Führen Sie die unter [Onboarding-Tools und -Methoden für Windows 10-Computer](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) beschriebenen entsprechenden Verfahren aus. Über diesen Link gelangen Sie zu einer Zielseite, auf der MDATP-Prozeduren beschrieben werden, die dem in Schritt 5 ausgewählten Bereitstellungspaket entsprechen:
+6. Führen Sie die unter [Onboarding-Tools und -Methoden für Windows 10-Computer](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) beschriebenen entsprechenden Verfahren aus. Über diesen Link gelangen Sie zu einer Zielseite, auf der Microsoft Defender für Endpunkt-Prozeduren beschrieben werden, die dem in Schritt 5 ausgewählten Bereitstellungspaket entsprechen:
     - Onboarding von Windows 10-Computern mithilfe von Gruppenrichtlinien
     - Onboarding von Windows-Computern mithilfe von Microsoft Endpoint Configuration Manager
     - Onboarding von Windows 10-Computern mit Tools für die Verwaltung von Mobilgeräten

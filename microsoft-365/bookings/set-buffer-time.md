@@ -9,21 +9,18 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 271f43e4-b8f7-4d63-8059-b5747679bb7e
 description: Legen Sie die Pufferzeit vor oder nach einem Termin in Microsoft-Buchungen fest, um Zeit zum Bereinigen oder Zurücksetzen von Geräten zu gewähren.
-ms.openlocfilehash: dceb777f9ddba9f1ddabfee00608813afae57a86
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 882ab0340fe56976429ed8294f2fa386b801941f
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419647"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962347"
 ---
 # <a name="set-buffer-time-in-microsoft-bookings"></a>Festlegen von Pufferzeit in Microsoft Bookings
 
 Für einige Ihrer Termine ist möglicherweise Zeit erforderlich, bevor oder nachdem Sie sich mit Ihrem Kunden getroffen haben, um Ihren Raum und Ihr Equipment einzurichten, zu bereinigen oder zurückzusetzen. Oder wenn Sie zwischen Kundenterminen unterwegs sind, benötigen Sie möglicherweise Zeit, um sicherzustellen, dass Sie und Ihr Team zwischen den Terminen Reisen können, ohne dass der Kunde gewartet wird.
 
 Sie können die Pufferzeit vor dem Start von Terminen, nach dem Termin Ende oder beides festlegen, um den Mitarbeitern die zusätzliche Zeit zu geben, die Sie für die Vorbereitung Ihres nächsten Termins benötigen.
-
-> [!NOTE]
-> Reservierungen sind standardmäßig für Kunden mit den Abonnements Microsoft 365 Business Standard, Microsoft 365 a3 oder Microsoft 365 a5 aktiviert. Reservierungen stehen auch Kunden mit Office 365 Enterprise E3 und Office 365 Enterprise E5 zur Verfügung, Sie sind jedoch standardmäßig deaktiviert. Die ersten Schritte finden Sie unter [Get Access to Microsoft Booking](get-access.md). Informationen zum Aktivieren oder Deaktivieren von Buchungen finden Sie unter [Aktivieren oder Deaktivieren von Buchungen für Ihre Organisation](turn-bookings-on-or-off.md).
 
 ## <a name="set-buffer-time-defaults"></a>Festlegen von Standardeinstellungen für die Pufferzeit
 

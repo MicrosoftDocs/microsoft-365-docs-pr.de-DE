@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 Endpunkt-DLP erweitert die Überwachung von Dateiaktivitäten sowie schützende Maßnahmen für diese Dateien auf Endpunkte. Die Dateien werden in den Microsoft 365 Compliance-Lösungen angezeigt. '
-ms.openlocfilehash: 2423f45fefe994fbaf5704074c49ce862a59340e
-ms.sourcegitcommit: df59c83174d845b8ddec48b9be2659fbfb58bb7f
+ms.openlocfilehash: 7403f20fa7c97c63be0e5001e8d3f5b37b409eee
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46517496"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131547"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention-preview"></a>Informationen zu Microsoft 365 Endpunkt-DLP (Data Loss Prevention, Verhinderung von Datenverlust) (Vorschau)
 
@@ -120,7 +120,7 @@ Wenn eine Datei beispielsweise auf einen USB-Wechseldatenträger kopiert wird, w
 - Gerätename
 - Art des Zielspeicherorts
 - Anwendung, über die die Kopie erstellt wurde
-- MDATP-Geräte-ID (sofern zutreffend)
+- Microsoft Defender für Endpunkt-Geräte-ID (sofern zutreffend)
 - Hersteller des Wechselmediums
 - Modell des Wechselmediums
 - Seriennummer des Wechselmediums
