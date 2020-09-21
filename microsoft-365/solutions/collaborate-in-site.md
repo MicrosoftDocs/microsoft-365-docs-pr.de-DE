@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Hier finden Sie Informationen zu den Microsoft 365-Konfigurationsschritten, die zum Einrichten einer SharePoint-Website für die Zusammenarbeit mit Gästen erforderlich sind.
-ms.openlocfilehash: c04114218342a2d65b318c71d061c2a0ed815fab
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: d5a868e57753a6eb05f74b4873ed64ef0a70878e
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797816"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171268"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Zusammenarbeit mit Gästen in einer Website
 
@@ -39,18 +39,18 @@ Dieses Video zeigt die in diesem Dokument beschriebenen Konfigurationsschritte.<
 
 Die Freigabe in Microsoft 365 wird auf der höchsten Ebene durch die [Einstellungen für organisatorische Beziehungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations)gesteuert. Wenn die Gast Freigabe in Azure AD deaktiviert oder eingeschränkt ist, werden alle Freigabeeinstellungen, die Sie in Microsoft 365 konfigurieren, außer Kraft gesetzt.
 
-Überprüfen Sie die Einstellungen für Organisationsbeziehungen, um sicherzustellen, dass die Freigabe für Gäste nicht blockiert wird.
+Überprüfen Sie die Einstellungen für die externe Zusammenarbeit, um sicherzustellen, dass die Freigabe für Gäste nicht blockiert wird.
 
-![Screenshot der Seite mit den Einstellungen für die Azure Active Directory-Organisationsbeziehungen](../media/azure-ad-organizational-relationships-settings.png)
+![Screenshot von Azure Active Directory Seite "Einstellungen für externe Zusammenarbeit"](../media/azure-ad-organizational-relationships-settings.png)
 
-So legen Sie Einstellungen für die Organisationsbeziehung fest
+So legen Sie Einstellungen für die externe Zusammenarbeit fest:
+
 
 1. Melden Sie sich bei Microsoft Azure an an [https://portal.azure.com](https://portal.azure.com) .
 2. Klicken Sie im linken Navigationsbereich auf **Azure Active Directory**.
-3. Klicken Sie im Bereich **Übersicht** auf **Organisationsbeziehungen**.
-4. Klicken Sie im Bereich **Organisationsbeziehungen** auf **Einstellungen**.
-5. Stellen Sie sicher, dass **Administratoren und Benutzer in der Rolle "Gast einladender" eingeladen** werden und **Mitglieder einladen können** , beide auf " **Ja**" festgelegt sind.
-6. Wenn Sie Änderungen vorgenommen haben, klicken Sie auf **Speichern**.
+3. Wählen Sie **externe Identitäten** aus, und klicken Sie auf **Einstellungen für externe Zusammenarbeit**.
+4. Stellen Sie im Bereich **Einstellungen für Gast invite** sicher, dass **Administratoren und Benutzer in der Rolle "Gast** einladender" eingeladen werden können und dass **Mitglieder eingeladen** werden können, und dass Sie auf " **Ja**" festgelegt sind.
+5. Wenn Sie Änderungen vorgenommen haben, klicken Sie auf **Speichern**.
 
 Beachten Sie die Einstellungen im Abschnitt Einschränkungen für die **Zusammenarbeit** . Stellen Sie sicher, dass die Domänen der Gäste, mit denen Sie zusammenarbeiten möchten, nicht blockiert werden.
 
@@ -146,4 +146,3 @@ So laden Sie Gäste zu einer Gruppe ein
 [Erstellen einer sicheren Gastfreigabeumgebung](create-secure-guest-sharing-environment.md)
 
 [Erstellen eines B2B-Extranets mit verwalteten Gästen](b2b-extranet.md)
-

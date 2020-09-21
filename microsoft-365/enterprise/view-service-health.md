@@ -26,16 +26,16 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Zeigen Sie den Integritätsstatus von Microsoft 365-Diensten an, bevor Sie den Support aufrufen, um zu sehen, ob eine aktive Dienstunterbrechung vorliegt.
-ms.openlocfilehash: 49f7d3afd3c19cd4e9b6486db580082fe933b997
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 20e19072e1a851fba20e556be696146b8ad57a2f
+ms.sourcegitcommit: 392f60efa0921c64ac1462dd63985cd156e6498a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690811"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "48134075"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Überprüfen des Microsoft 365-Dienststatus
 
-[![Hinweis, der Sie darüber informiert, dass sich das Admin Center ändert und Sie unter "aka.ms/aboutM365preview" weitere Details finden.](../media/O365-Admin-AdminCenterChanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview?view=o365-worldwide)
+[![Hinweis, der Sie darüber informiert, dass sich das Admin Center ändert und Sie unter "aka.ms/aboutM365preview" weitere Details finden.](../media/O365-Admin-AdminCenterChanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview?view=o365-worldwide&preserve-view=true)
 
 Sie können die Integrität Ihrer Microsoft-Dienste, einschließlich Office im Internet, jammern, Microsoft Dynamics CRM und Cloud-Dienste für die Verwaltung mobiler Geräte, auf der Seite **Dienst Integrität** im [Microsoft 365 Admin Center](https://go.microsoft.com/fwlink/p/?linkid=2024339)anzeigen. Wenn bei einem Clouddienst Probleme auftreten, können Sie den Dienststatus überprüfen, um festzustellen, ob es sich um ein bekanntes Problem handelt, für das bereits an einer Lösung gearbeitet wird, bevor Sie den Support anrufen oder Zeit für die Problembehandlung aufwenden.
 
@@ -46,7 +46,7 @@ Wenn Sie sich nicht im Serviceportal anmelden können, können Sie auf der [Dien
 1. Wechseln Sie zum Microsoft 365 Admin Center unter [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339) , und melden Sie sich mit einem Administratorkonto an.
 
     > [!NOTE]
-    > Personen, denen die Rolle eines globalen Administrators oder Serviceadministrators zugewiesen ist, können den Dienststatus anzeigen. Damit Exchange-, SharePoint- und Skype for Business-Administratoren den Dienststatus anzeigen können, muss ihnen auch die Rolle des Dienstadministrators zugewiesen sein. Weitere Informationen zu Rollen, die den Dienststatus anzeigen können, finden Sie unter [Informationen zu Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide#roles-available-in-the-microsoft-365-admin-center).
+    > Personen, denen die Rolle eines globalen Administrators oder Serviceadministrators zugewiesen ist, können den Dienststatus anzeigen. Damit Exchange-, SharePoint- und Skype for Business-Administratoren den Dienststatus anzeigen können, muss ihnen auch die Rolle des Dienstadministrators zugewiesen sein. Weitere Informationen zu Rollen, die den Dienststatus anzeigen können, finden Sie unter [Informationen zu Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true#roles-available-in-the-microsoft-365-admin-center).
   
 2. Wenn Sie nicht das neue Admin Center verwenden, klicken Sie auf der **Start** Seite auf die Schaltfläche **neuen Admin Center** -Schalter in der oberen rechten Ecke testen.
 
@@ -64,7 +64,9 @@ Auf der Registerkarte **Verlauf** wird der Verlauf von Vorfällen und Empfehlung
 
 Wenn ein Problem mit einem Microsoft 365-Dienst auftritt und diese auf der Seite **Dienststatus** nicht aufgeführt sind, können Sie uns darüber informieren, indem Sie **ein Problem melden**auswählen und das kurze Formular ausfüllen. Wir werden uns mit verwandten Daten und Berichten aus anderen Organisationen beschäftigen, um zu sehen, wie weit verbreitet das Problem ist und ob es von unserem Dienst stammt. Wenn dies der Fall ist, fügen wir ihn als neuen Vorfall oder eine neue Empfehlung auf der Seite **Dienst Integrität** hinzu, auf der Sie die Lösung nachverfolgen können. Wenn es in der Liste nicht innerhalb von 30 Minuten angezeigt wird, sollten Sie sich an den Support wenden, um das Problem zu beheben.
 
-Wenn Sie sich für e-Mail-Benachrichtigungen über neue Vorfälle, die sich auf ihren Mandanten und Statusänderungen für einen aktiven Vorfall auswirken, registrieren möchten, wählen Sie **Einstellungen**aus, klicken Sie auf **mir Service Heath Notifications in e-Mail senden**und geben Sie Folgendes an
+Um die Ansicht anzupassen, welche Dienste im Dashboard angezeigt werden, wählen Sie **Preferences**  >  **benutzerdefinierte Ansicht**Einstellungen aus, und deaktivieren Sie die Kontrollkästchen für die Dienste, die aus der Dashboardansicht für den Dienstzustand gefiltert werden sollen. Stellen Sie sicher, dass das Kontrollkästchen für jeden Dienst aktiviert ist, den Sie überwachen möchten.    
+
+Wenn Sie sich für e-Mail-Benachrichtigungen über neue Vorfälle, die sich auf ihren Mandanten und Statusänderungen für einen aktiven Vorfall auswirken, registrieren möchten, wählen Sie e-Mail- **Einstellungen**aus  >  **Email**, klicken Sie auf **mir Service Heath Notifications in e-Mail senden**und geben
 
 - Bis zu zwei e-Mail-Adressen.
 - Ob Benachrichtigungen für Vorfälle oder Warnungen gewünscht werden
@@ -80,7 +82,7 @@ Wenn Sie sich für e-Mail-Benachrichtigungen über neue Vorfälle, die sich auf 
 
 Wenn Sie in der Ansicht **Alle Dienste** den Dienststatus auswählen, wird eine Zusammenfassungsansicht der Empfehlungen oder Vorfälle angezeigt.
   
-![Screenshot der Dienstempfehlung](../media/service-health-advisory.png)
+[![Ein Screenshot mit der Dienst Empfehlung ](../media/service-health-advisory.png)](../media/service-health-advisory.png#lightbox)
 
 Die Empfehlungs- oder Vorfallzusammenfassung enthält folgende Informationen:
 
@@ -150,4 +152,4 @@ Weitere Informationen zu unserer Verpflichtung zur Verfügbarkeit finden Sie unt
 ## <a name="related-topics"></a>Verwandte Themen
 
 [Aktivitätsberichte im Microsoft 365 Admin Center](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) 
- [Nachrichtencenter-Einstellungen](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide#preferences11)
+ [Nachrichtencenter-Einstellungen](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide&preserve-view=true#preferences11)

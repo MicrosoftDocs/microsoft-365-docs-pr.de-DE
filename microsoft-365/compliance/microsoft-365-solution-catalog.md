@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: 'Erfahren Sie mehr über den Microsoft 365-Lösungskatalog: was er enthält, wie Sie ihn erhalten, die nächsten Schritte und mehr.'
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f396801d4241b06c5523e4f3312c9ce597ac015e
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: ff445711dfd57ec69305c3f8cc7d01e05a66a1cc
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547563"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48132169"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Microsoft 365-Lösungskatalog
 
@@ -101,6 +101,6 @@ Wenn Sie eine vorhandene Compliance-Lösung suchen und diese im Microsoft 365 Co
 
 - **Microsoft Information Protection**: Erfahren Sie, wie Sie mithilfe von Microsoft 365-Lösungen vertrauliche Informationen unabhängig davon, wo sie sich befinden oder unterwegs sind, entdecken, klassifizieren und schützen können.
     - **Lernen Sie Microsoft Cloud App Security kennen und richten Sie es ein**. Näheres dazu finden Sie unter [Schnellstart: Erste Schritte mit Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security).
-    - **Erste Schritte mit Klassifizierern**. Das Klassifizieren von Inhalten und deren anschließende Bezeichnung, damit sie geschützt sind und ordnungsgemäß gehandhabt werden, ist der Ausgangspunkt für einen optimalen Schutz von Daten. Näheres erfahren Sie unter [Erste Schritte mit trainierbaren Klassifizierern](classifier-getting-started-with.md).
+    - **Erste Schritte mit Klassifizierern**. Das Klassifizieren von Inhalten und deren anschließende Bezeichnung, damit sie geschützt sind und ordnungsgemäß gehandhabt werden, ist der Ausgangspunkt für einen optimalen Schutz von Daten. Weitere Informationen finden Sie unter [erfahren Sie mehr über Lernende Klassifizierungen (Preview)](classifier-learn-about.md).
 
 - **Besuchen Sie den Microsoft 365-Lösungskatalog möglichst oft**, und sehen Sie sich etwaige neue Lösungen an, die Ihnen bei der Compliance-Einhaltung helfen können. Melden Sie sich bei [https://compliance.microsoft.com](https://compliance.microsoft.com) an, und wählen Sie dann im linken Navigationsbereich **Katalog** aus.

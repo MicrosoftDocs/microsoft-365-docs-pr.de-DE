@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Hier erfahren Sie, wie Sie Add-Ins für Benutzer und Gruppen in Ihrer Organisation mithilfe einer zentralisierten Bereitstellung im Admin Center bereitstellen können.
-ms.openlocfilehash: aec2adab7735a2be5670210abf05f88f081fe4ed
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 5806b2a33446a8e273c2aaf78e082c6fd753bbe4
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47306526"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171280"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Bereitstellen von Add-Ins im Admin Center
 
@@ -64,6 +64,9 @@ Bevor Sie beginnen, lesen Sie [ermitteln, ob die zentrale Bereitstellung von Add
 1. Wechseln Sie im Admin Center zur Seite **Einstellungen** \> **-Add-ins** .
     
 2. Wählen Sie oben auf der Seite **Add-in bereitstellen** aus, und wählen Sie dann **weiter**aus.
+ 
+    > [!NOTE]
+    > Das Admin Center wird mit integrierten Apps auf die Bereitstellungsumgebung aktualisiert. Wenn die oben beschriebenen Schritte nicht angezeigt werden, wechseln Sie zum Abschnitt zentralisierte bereit **Settings**Stellung, indem Sie auf  >  **integrierte apps**für Einstellungen gehen. Wählen Sie oben auf der Seite **integrierte apps** die Option **Add-ins**aus.
     
 3. Wählen Sie eine Option aus und folgen Sie den Anweisungen. 
   

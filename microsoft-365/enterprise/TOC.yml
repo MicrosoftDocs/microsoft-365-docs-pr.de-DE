@@ -358,6 +358,8 @@
           href: prepare-a-non-routable-domain-for-directory-synchronization.md
         - name: Einrichten der Verzeichnissynchronisierung
           href: set-up-directory-synchronization.md
+        - name: Sichere Benutzeranmeldungen
+          href: microsoft-365-secure-sign-in.md
         - name: Hybridlösungen
           items:
             - name: Übersicht

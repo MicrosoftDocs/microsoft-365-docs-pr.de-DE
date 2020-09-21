@@ -8,7 +8,7 @@ ms.topic: article
 f1.keywords:
 - NOCSH
 ms.author: heidip
-ms.date: 09/12/2020
+ms.date: 09/18/2020
 ms.reviewer: anmorgan
 ms.custom:
 - it-pro
@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: fc2b83fc167a9385383d7085ed6d1e8db15abd42
-ms.sourcegitcommit: a13f43a3e981c90f1e0b9805c9c16a56f67fc650
+ms.openlocfilehash: 570ef098a3989bf42d641b78e325414350b8e5a5
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47651132"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48132112"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Richtlinien Empfehlungen für das Sichern von teamchats,-Gruppen und-Dateien
 
@@ -54,7 +54,7 @@ Hierbei handelt es sich um die abhängigen Dienste, die in die Zuweisung von Clo
 - Microsoft Teams
 - SharePoint und OneDrive for Business
 - Exchange Online
-- Skype for Business Online
+- Skype for Business Online
 - Microsoft-Datenstrom (Besprechungsaufzeichnungen)
 - Microsoft Planner (planerische Aufgaben und Plandaten)
 
@@ -71,28 +71,49 @@ Diese Tabelle enthält eine Liste der Richtlinien, die erneut besucht werden mü
 |        |[Kompatible PCs erforderlich](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Schließen Sie Teams und abhängige Dienste in diese Richtlinie ein.|
 |**Vertraulich**|[MFA erforderlich, wenn das Anmelde Risiko *niedrig*, *Mittel* oder *hoch* ist](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Microsoft Teams verfügt über Gastzugriff und Regeln für den externen Zugriff, die Sie später in diesem Artikel erfahren sollten. Schließen Sie Teams und abhängige Dienste in diese Richtlinie ein.|
 |         |[Erfordern von kompatiblen PCs *und* mobilen Geräten](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Schließen Sie Teams und abhängige Dienste in diese Richtlinie ein.|
-|**Streng geregelt**|[*Immer* MFA erforderlich](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Unabhängig von der Benutzeridentität wird MFA von Ihrer Organisation verwendet. Schließen Sie Teams und abhängige Dienste in diese Richtlinie ein.
+|**Streng geregelt**|[*Immer* MFA erforderlich](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Unabhängig von der Benutzeridentität wird MFA von Ihrer Organisation verwendet. Schließen Sie Teams und abhängige Dienste in diese Richtlinie ein. |
 | | |
 
 ## <a name="teams-dependent-services-architecture"></a>Architektur der Teams-abhängigen Dienste
 
 Als Referenz zeigt das folgende Diagramm die Dienste, auf denen Teams basiert. Weitere Informationen und weitere Illustrationen finden Sie unter [Microsoft Teams und verwandte Produktivitätsdienste in Microsoft 365 für IT-Architekten](../solutions/productivity-illustrations.md).
 
-![Diagramm mit Microsoft Teams-Abhängigkeiten von SharePoint, OneDrive für Unternehmen und Exchange](../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
+[![Diagramm mit Microsoft Teams-Abhängigkeiten von SharePoint, OneDrive für Unternehmen und Exchange](../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
 
-## <a name="enabling-guest-and-external-access-for-teams"></a>Aktivieren von Gast-und externem Zugriff für Teams
+[Anzeigen einer größeren Version dieses Bilds](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
 
-In Azure AD sind Gast-und externe Benutzer identisch. Der Benutzertyp für diese beiden Typen ist Gast. Gastbenutzer sind B2B-Benutzer. Microsoft Teams unterscheidet zwischen Gastbenutzern und externen Benutzern in der app. Zwar ist es wichtig zu verstehen, wie diese in Microsoft Teams behandelt werden, aber beide Benutzertypen sind in Azure AD B2B-Benutzer, und die empfohlenen Richtlinien für B2B-Benutzer gelten für beide. Empfohlene Richtlinien zum Zulassen des Gastzugriffs finden Sie unter [Richtlinien für das Zulassen von Gast-und externen B2B-Zugriffen](identity-access-policies-guest-access.md).
+## <a name="guest-and-external-access-for-teams"></a>Gast-und externer Zugriff für Teams
+
+Microsoft Teams definiert Folgendes:
+
+- **Gastzugriff** verwendet ein Azure AD B2B-Konto für einen Gast oder einen externen Benutzer, der als Mitglied eines Teams hinzugefügt werden kann und über alle Berechtigungen verfügt, die auf die Kommunikation und die Ressourcen des Teams zugreifen können.
+
+- **Externer Zugriff** ist für einen externen Benutzer, der über kein Azure AD B2B-Konto verfügt. Externer Zugriff kann Einladungen und Teilnahme an anrufen, Chats und Besprechungen umfassen, umfasst jedoch nicht die Teammitgliedschaft und den Zugriff auf die Ressourcen des Teams.
+
+Richtlinien für den bedingten Zugriff gelten nur für Gastzugriff in Microsoft Teams, da ein entsprechendes Azure AD B2B-Konto vorhanden ist.
+
+<!--
+In Azure AD, guest and external users are the same. The user type for both of these is Guest. Guest users are B2B users. Microsoft Teams differentiates between guest users and external users in the app. While it's important to understand how each of these are treated in Teams, both types of users are B2B users in Azure AD and the recommended policies for B2B users apply to both. 
+
+--> 
+
+Empfohlene Richtlinien für den Zugriff für Gast-und externe Benutzer mit einem Azure AD B2B-Konto finden Sie unter [Richtlinien für das Zulassen von Gast-und externen B2B-Konto Zugriffen](identity-access-policies-guest-access.md).
 
 ### <a name="guest-access-in-teams"></a>Gastzugriff in Teams
 
-Zusätzlich zu den Richtlinien für Benutzer, die für Ihr Unternehmen oder Ihre Organisation intern sind, können Administratoren den Gastzugriff aktivieren, um Personen, die sich außerhalb Ihres Unternehmens oder Ihrer Organisation befinden, für den Zugriff auf Microsoft Teams-Ressourcen und die Interaktion mit internen Personen für Gruppenunterhaltungen, Chats und Besprechungen zu ermöglichen. Weitere Informationen zum Gastzugriff finden Sie unter folgendem Link: [Teams Gastzugriff](https://docs.microsoft.com/microsoftteams/guest-access)
+Zusätzlich zu den Richtlinien für Benutzer, die für Ihr Unternehmen oder Ihre Organisation intern sind, können Administratoren den Gastzugriff aktivieren, um Personen, die sich außerhalb Ihres Unternehmens oder Ihrer Organisation befinden, für den Zugriff auf Microsoft Teams-Ressourcen und die Interaktion mit internen Personen für Gruppenunterhaltungen, Chats und Besprechungen zu ermöglichen. 
+
+Weitere Informationen zum Gastzugriff und zur Implementierung finden Sie unter  [Teams Gastzugriff](https://docs.microsoft.com/microsoftteams/guest-access).
 
 ### <a name="external-access-in-teams"></a>Externer Zugriff in Microsoft Teams
 
-Der externe Zugriff ist manchmal mit Gastzugriff verwechselt, daher ist es wichtig zu beachten, dass diese beiden nicht internen Zugriffsmechanismen tatsächlich ganz unterschiedlich sind. Während Gastzugriff auf Benutzerebene erfolgt (Sie fügen jeweils jeweils einen Benutzer hinzu), ermöglicht ein Administrator den externen Zugriff, sodass Sie alle Benutzer einer externen Domäne gleichzeitig zu Microsoft Teams hinzufügen können. Diese externen Benutzer haben jedoch weniger Zugriff und Funktionalität als eine Person, die über Gastzugriff hinzugefügt wurde. Externe Benutzer können über Microsoft Teams mit ihren internen Benutzern chatten.
+Der externe Zugriff ist manchmal mit Gastzugriff verwechselt, daher ist es wichtig zu beachten, dass diese beiden nicht internen Zugriffsmechanismen tatsächlich ganz unterschiedlich sind. 
 
-Weitere Informationen zum externen Zugriff und dazu, wie Sie ihn bei Bedarf implementieren können, finden Sie unter [Manage External Access in Microsoft Teams](https://docs.microsoft.com/microsoftteams/manage-external-access) .
+Externer Zugriff ist eine Möglichkeit für Microsoft Teams-Benutzer aus einer ganzen externen Domäne, Besprechungen mit ihren Benutzern in Microsoft Teams zu finden, anzurufen, zu chatten und einzurichten. Microsoft Teams-Administratoren konfigurieren den externen Zugriff auf Organisationsebene. Weitere Informationen finden Sie unter [Verwalten von externem Zugriff in Microsoft Teams](https://docs.microsoft.com/microsoftteams/manage-external-access).
+
+Benutzer mit externem Zugriff haben weniger Zugriff und Funktionalität als eine Person, die über Gastzugriff hinzugefügt wurde. Beispielsweise können externe Benutzer mit ihren internen Benutzern mit Microsoft Teams chatten, aber nicht auf Team Kanäle, Dateien oder andere Ressourcen zugreifen.
+
+Der externe Zugriff verwendet keine Azure AD B2B-Benutzerkonten und verwendet daher keine Richtlinien für den bedingten Zugriff. 
 
 ## <a name="teams-policies"></a>Teams-Richtlinien
 

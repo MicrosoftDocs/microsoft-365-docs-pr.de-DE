@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 Network Insights (Vorschau)
-ms.openlocfilehash: e3730704b6672c931b7538659a38f218e769dd0a
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 682c888fefb9bec9725e470d62019c857fc2de07
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962371"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171338"
 ---
 # <a name="microsoft-365-network-insights-preview"></a>Microsoft 365 Network Insights (Vorschau)
 
@@ -157,7 +157,7 @@ Dies deutet darauf hin, dass bei der Mehrzahl Ihrer Benutzer wahrscheinlich Prob
 
 ### <a name="what-should-i-do"></a>Was soll ich machen?
 
-Aktivieren Sie die Sichtbarkeit der Office-standortnetzwerk Konnektivität, falls noch nicht geschehen. Sie möchten ermitteln, welche Büros von einer schlechten Netzwerkverbindung betroffen sind, die sich auf Exchange auswirkt und Wege finden, um den impactred zu verbessern, der die Benutzer mit dem Netzwerk von Microsoft verbindet.
+Aktivieren Sie die Sichtbarkeit der Office-standortnetzwerk Konnektivität, falls noch nicht geschehen. Sie möchten ermitteln, welche Büros von einer schlechten Netzwerkverbindung betroffen sind, die sich auf Exchange auswirkt, und Wege finden, um den Netzwerkperimeter bei jedem zu verbessern, der die Benutzer mit dem Netzwerk von Microsoft verbindet.
 
 ## <a name="sharepoint-sampled-connections-impacted-by-connectivity-issues"></a>Durch Verbindungsprobleme beeinträchtigte SharePoint-Stichproben Verbindungen
 
@@ -169,7 +169,7 @@ Dies deutet darauf hin, dass die Mehrzahl der Benutzer wahrscheinlich Probleme m
 
 ### <a name="what-should-i-do"></a>Was soll ich machen?
 
-Aktivieren Sie die Sichtbarkeit der Office-standortnetzwerk Konnektivität, falls noch nicht geschehen. Sie möchten ermitteln, welche Büros von einer schlechten Netzwerkkonnektivität betroffen sind, die sich auf SharePoint auswirkt und Wege finden, um den impactred zu verbessern, der die Benutzer mit dem Netzwerk von Microsoft verbindet.
+Aktivieren Sie die Sichtbarkeit der Office-standortnetzwerk Konnektivität, falls noch nicht geschehen. Sie möchten ermitteln, welche Büros von einer schlechten Netzwerkkonnektivität betroffen sind, die sich auf SharePoint auswirkt, und Wege finden, um den Netzwerkperimeter bei jedem zu verbessern, der die Benutzer mit dem Netzwerk von Microsoft verbindet.
 
 ## <a name="related-topics"></a>Verwandte Themen
 
@@ -177,6 +177,6 @@ Aktivieren Sie die Sichtbarkeit der Office-standortnetzwerk Konnektivität, fall
 
 [Microsoft 365 Netzwerkbewertung (Vorschau)](office-365-network-mac-perf-score.md)
 
-[Microsoft 365 Connectivity Test im M365 Admin Center (Vorschau)](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365 Network Connectivity Test Tool (Vorschau)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365 Network Connectivity Location Services (Vorschau)](office-365-network-mac-location-services.md)

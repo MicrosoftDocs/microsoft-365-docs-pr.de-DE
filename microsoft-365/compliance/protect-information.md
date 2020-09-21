@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: Implementieren Sie die Funktionen von Microsoft Information Protection (MIP) mithilfe der Microsoft 365-Konformität, damit Sie vertrauliche Informationen überall dort, wo Sie leben oder Reisen, erkennen, klassifizieren und schützen können.
-ms.openlocfilehash: ac4499fceae1e4f754753cf91beaf106d855c517
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: f867391243302d0ce912ae5d740ed761ea7317b7
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308346"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131965"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection in Microsoft 365
 
@@ -41,7 +41,7 @@ Um Ihre Datenlandschaft zu verstehen und wichtige Daten in ihrer Hybridumgebung 
 |Funktion|Welche Probleme werden behoben?|Erste Schritte|
 |:------|:------------|:--------------------|:-----------------------------|
 |[Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md)| Identifiziert vertrauliche Daten mithilfe integrierter oder benutzerdefinierter regulärer Ausdrücke oder einer Funktion, zusammen mit Bestätigungs beweisen, die Schlüsselwörter, Konfidenz Stufen und Nähe enthalten.| [Anpassen eines benutzerdefinierten vertraulichen Informationstyps](customize-a-built-in-sensitive-information-type.md)|
-|[Trainierbare Klassifizierer (Vorschau)](classifier-getting-started-with.md)| Klassifizieren von Daten für Sie, indem Sie eine der integrierten Klassifizierungen verwenden oder eine Klassifizierung mit Ihrem eigenen Inhalt trainieren | [Erstellen einer Schulungs klassifizierten Klassifizierung (Vorschau)](classifier-creating-a-trainable-classifier.md) |
+|[Trainierbare Klassifizierer (Vorschau)](classifier-learn-about.md)| Klassifizieren von Daten für Sie, indem Sie eine der integrierten Klassifizierungen verwenden oder eine Klassifizierung mit Ihrem eigenen Inhalt trainieren | [Erste Schritte mit trainierbaren Klassifizierern (Vorschau)](classifier-get-started-with.md) |
 |[Datenklassifikation](data-classification-overview.md) | Identifiziert Elemente, die eine Vertraulichkeits Bezeichnung, eine Aufbewahrungs Bezeichnung aufweisen oder als vertraulicher Informationstyp in Ihrer Organisation klassifiziert wurden, sowie die Aktionen, die Ihre Benutzer für diese Unternehmen.  | [Erste Schritte mit dem Inhalts-Explorer](data-classification-content-explorer.md)<br /><br /> [Erste Schritte mit dem Aktivitäten-Explorer](data-classification-activity-explorer.md) |
 
 ## <a name="protect-your-data"></a>Schützen Sie Ihre Daten

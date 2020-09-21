@@ -19,21 +19,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
-description: Hier erfahren Sie, wie Sie das Kennwort zurücksetzen und eine Benachrichtigungs-e-Mail an einen neuen Microsoft 365-Benutzer senden.
-ms.openlocfilehash: d39a448cdea9e986c46fbebc1d4cfcdf63882daf
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+description: Hier erfahren Sie, wie Sie das Kennwort zurücksetzen und eine e-Mail an einen neuen Microsoft 365-Benutzer senden.
+ms.openlocfilehash: 206e38929183fc280134a42e3febead2483d0f76
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361819"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131746"
 ---
 # <a name="resend-a-users-password---admin-help"></a>Erneutes Senden eines Benutzerkennworts – Administratorhilfe
 
 In diesem Artikel wird erklärt, wie Sie die Benachrichtigungs-e-Mail an einen neuen Benutzer in Office 365 senden. Dies kann vorkommen, wenn Sie einen neuen Benutzer erstellen und keine e-Mail mit Ihrem neuen Kennwort erhalten. Dies erfolgt durch Zurücksetzen des Kennworts des Benutzers.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
-Dieser Artikel richtet sich an Personen, die eine Kennwortablaufrichtlinie für ein Unternehmen, eine Schule/Uni oder eine gemeinnützige Organisation festlegen. Um diese Schritte ausführen zu können, müssen Sie sich mit Ihrem Microsoft 365-Administratorkonto anmelden. [Was ist ein Administratorkonto?](../admin-overview/admin-overview.md).
+Dieser Artikel richtet sich an Personen, die eine Kennwortablaufrichtlinie für ein Unternehmen, eine Schule/Uni oder eine gemeinnützige Organisation festlegen. Um diese Schritte auszuführen, müssen Sie sich mit Ihrem Microsoft 365-Administratorkonto anmelden. [Was ist ein Administratorkonto?](../admin-overview/admin-overview.md)
 
 Sie müssen ein [globaler Administrator oder Kenn Wort Administrator](about-admin-roles.md) sein, um diese Schritte ausführen zu können.
 

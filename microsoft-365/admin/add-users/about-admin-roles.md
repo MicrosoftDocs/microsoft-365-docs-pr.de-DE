@@ -21,19 +21,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
-description: Administratorrollen sind Geschäftsfunktionen zugeordnet. Über sie werden Berechtigungen für bestimmte Aufgaben im Admin Center erteilt. Der Dienstadministrator öffnet beispielsweise Supporttickets bei Microsoft.
-ms.openlocfilehash: d80207ac264cb1b649f631d358c86809c2992a8e
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+description: Administratorrollen sind Geschäftsfunktionen zugeordnet. Über sie werden Berechtigungen für bestimmte Aufgaben im Admin Center erteilt. So kann beispielsweise der Dienstadministrator Supporttickets über das Admin Center öffnen.
+ms.openlocfilehash: 35fee24a2e9de6c00f37e93c59851b7e760baa19
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361773"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131782"
 ---
 # <a name="about-admin-roles"></a>Info zu Administratorrollen
 
 Ihr Microsoft 365- oder Office 365-Abonnement bietet eine Reihe von Administratorrollen, die Sie Benutzern in Ihrer Organisation mithilfe von Microsoft 365 Admin Center zuweisen können. Jede Administratorrolle ist häufig genutzten Geschäftsfunktionen zugeordnet. Über diese Rollen erhalten Personen in Ihrer Organisation die Berechtigung zum Ausführen bestimmter Aufgaben in den Admin Centern.
 
 Im Microsoft 365 Admin Center können Sie Azure AD-Rollen und Microsoft Intune-Rollen verwalten. Bei diesen Rollen handelt es sich jedoch um eine Teilmenge der Rollen, die im Azure AD-Portal und im Intune Admin Center verfügbar sind.
+
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Suchen Sie nach der vollständigen Liste der detaillierten Azure AD-Rollenbeschreibungen, die Sie im Microsoft 365 Admin Center verwalten können? Diese finden Sie unter "Administratorrollenberechtigungen in Azure Active Directory". [Administratorrollenberechtigungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 

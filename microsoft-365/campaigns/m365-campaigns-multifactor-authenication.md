@@ -3,7 +3,7 @@ title: Einrichten einer mehrstufigen Authentifizierung
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
-author: samanro
+author: sirkkuw
 manager: scotv
 ms.audience: Admin
 ms.topic: conceptual
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten der mehrstufigen Authentifizierung.
-ms.openlocfilehash: a0bf5167ae6b5268f7bfeabd4ae554ae5f279dbe
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: feb0a4be07b09ed3e8f00c6d19edca3355f374ab
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527150"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131954"
 ---
 # <a name="set-up-multifactor-authentication"></a>Einrichten einer mehrstufigen Authentifizierung
 

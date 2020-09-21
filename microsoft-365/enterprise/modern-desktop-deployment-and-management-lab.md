@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie mehr über das Deployment Lab Kit für Windows und Office und wo Sie darauf zugreifen.
-ms.openlocfilehash: 09441f879fa41d1b920aae7d37625d0a52160d84
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: bf49a815c0d3d952187f863120865ab3aa4674fc
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949880"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171410"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Lab-Kit für Windows und Office Deployment
 
@@ -54,35 +54,47 @@ DARÜBERHINAUS kann die Übung mit Tests für folgende Produkte verbunden werden
 Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Verwaltungsszenarien. Die Übungen wurden für die neuesten Versionen von Intune und Configuration Manager aktualisiert. 
 
 ### <a name="plan-and-prepare-infrastructure"></a>Planen und Vorbereiten der Infrastruktur 
-Desktop Analytics   
-Cloud Management Gateway & Cloud-Verteilungspunkt für Mandanten Anfügung, gemeinsame Verwaltung und Verlagerung von Arbeitslasten    
-Remotezugriff
+- Desktop Analytics 
+- Cloud-Management-Gateway & Cloud-Verteilungspunkt 
+- Arbeitslasten für Mandanten Anfügung, Co-Management und Switching  
+- Remotezugriff (VPN) 
 
 ### <a name="prepare-configuration"></a>Vorbereiten der Konfiguration   
-Optimieren der Windows 10-Update Zustellung mit Windows 10 mithilfe der Gruppenrichtlinien Wartung von Windows 10 mithilfe von Microsoft InTune-Dienst für Windows 10 mit Configuration Manager, der Microsoft 365-Apps für Unternehmen mithilfe von Configuration Manager bedient, der Microsoft 365-Apps für Unternehmen mit InTune bedient    
-Sicherheit und Compliance 
+- Optimieren der Windows 10-Update Zustellung   
+- Wartung von Windows 10 mithilfe von Gruppenrichtlinien
+- Wartung von Windows 10 mit Microsoft InTune   
+- Wartung von Windows 10 mit Configuration Manager   
+- Wartung von Microsoft 365-Apps für Unternehmen mithilfe von Configuration Manager   
+- Wartung von Microsoft 365-Apps für Unternehmen mit InTune  
+- Sicherheit und Compliance   
 
 ### <a name="prepare-applications"></a>Vorbereiten von Anwendungen    
-Readiness Toolkit für Office    
-MSIX Verpackung und Konvertierung von Win32-Anwendungen 
+- Readiness Toolkit für Office  
+- MSIX Verpackung und Konvertierung von Win32-Anwendungen   
 
 ### <a name="deploy-windows-10"></a>Bereitstellen von Windows 10   
-Tasksequenzen zur Bereitstellung von Betriebssystemen in Configuration Manager-BS-Bereitstellungstasksequenzen in MDT Windows Autopilot bereitstellen und Verwalten des neuen Microsoft Edge    
+- Tasksequenzen der Betriebssystembereitstellung in Configuration Manager
+- Tasksequenzen der Betriebssystembereitstellung in MDT   
+- Windows Autopilot
+- Bereitstellen und Verwalten des neuen Microsoft Edge  
 
 ### <a name="deploy-microsoft-365-apps-for-enterprise"></a>Bereitstellung von Microsoft 365 Apps for Enterprise    
-Verwaltete Cloud-Bereitstellung    
-Lokal verwaltete Bereitstellung  
-Microsoft 365-Apps für Enterprise-Bereitstellung auf nicht AD-verbundenen Geräten   
-Enterprise-verwaltete Bereitstellung mithilfe von Configuration Manager Enterprise Managed Deployment mit Microsoft InTune    
-Lob-Bereitstellung und-Verwaltung mit Microsoft InTune Bereitstellen von Microsoft Teams
+- Verwaltete Cloud-Bereitstellung  
+- Lokal verwaltete Bereitstellung    
+- Microsoft 365-Apps für Enterprise-Bereitstellung auf nicht AD-verbundenen Geräten 
+- Enterprise-verwaltete Bereitstellung mithilfe von Configuration Manager
+- Enterprise-verwaltete Bereitstellung mithilfe von Microsoft InTune  
+- Lob-Bereitstellung und-Verwaltung mit Microsoft InTune
+- Bereitstellen von Microsoft Teams
 
 ### <a name="deploy-windows-virtual-desktop"></a>Bereitstellen des virtuellen Windows-Desktops  
+- Vorbereiten, bereitstellen, optimieren
  
 ### <a name="download-the-windows-and-office-deployment-lab-kit"></a>Herunterladen des Deployment Lab Kit für Windows und Office
 
 [Herunterladen des Deployment Lab Kit für Windows und Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-*Verwenden Sie eine breite Bandbreite, um diese Inhalte herunterzuladen, um Ihre Download Umgebung zu verbessern und 30-45 Minuten für die automatische Bereitstellung zu ermöglichen. Die Lab-Umgebung erfordert mindestens 16 GB verfügbaren Arbeitsspeicher und 150 GB freien Speicherplatz. Für eine optimale Leistung wird 32 GB verfügbarer Arbeitsspeicher empfohlen. Das Lab läuft am 4. Dezember 2020 ab. Eine neue Version wird vor Ablauf veröffentlicht.*
+*Verwenden Sie eine breite Bandbreite, um diese Inhalte herunterzuladen, um Ihre Download Umgebung zu verbessern und 30-45 Minuten für die automatische Bereitstellung zu ermöglichen. Die Lab-Umgebung erfordert mindestens 16 GB verfügbaren Arbeitsspeicher und 150 GB freien Speicherplatz. Für eine optimale Leistung wird 32 GB verfügbarer Arbeitsspeicher empfohlen. Das Lab läuft am 5. Dezember 2020 ab. Eine neue Version wird vor Ablauf veröffentlicht.*
 
 ## <a name="additional-guidance"></a>Zusätzliche Anleitung
 

@@ -18,20 +18,20 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Administratoren erfahren hier, wie EOP E-Mail-Authentifizierung (SPF, DKIM und DMARC) verwendet, um Spoofing, Phishing und Spam zu verhindern.
-ms.openlocfilehash: 0f4eb15df218050f7e582b1cc727522c04da594b
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 1e4ad82dd1c57e089b36e39afde346c47043c546
+ms.sourcegitcommit: eb905c5b4d7e71fc930a207357295b0160c4f065
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949868"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "48137047"
 ---
 # <a name="email-authentication-in-eop"></a>E-Mail-Authentifizierung in EOP
 
 E-Mail-Authentifizierung (auch als E-Mail-Validierung bezeichnet) ist eine Gruppe von Standards, die versucht, Spoofing (E-Mail-Nachrichten von gefälschten Absendern) entgegen zu wirken. In allen Microsoft 365-Organisationen nutzt EOP folgende Standards, um eingehende e-Mails zu überprüfen:
 
-- [SPF](how-office-365-uses-spf-to-prevent-spoofing.md)
+- [SPF](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing?view=o365-worldwide)
 
-- [DKIM](support-for-validation-of-dkim-signed-messages.md)
+- [DKIM](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email?view=o365-worldwide)
 
 - [DMARC](use-dmarc-to-validate-email.md)
 
@@ -204,4 +204,12 @@ Wenn Sie E-Mails einer Domäne hosten oder eine Hostinginfrastruktur anbieten, d
 
 Die Zustellbarkeit an Microsoft ist auch nicht garantiert, wenn Sie E-Mails, die von Ihrer Plattform stammen, authentifizieren. Es wird jedoch zumindest sichergestellt, dass Ihre E-Mail nicht als Junk-E-Mail von Microsoft eingestuft wird, weil sie nicht authentifiziert ist.
 
+## <a name="related-links"></a>Verwandte Links
+
 Weitere Informationen zu bewährten Methoden für Dienstanbieter finden Sie unter [M3AAWG Mobile Messaging Best Practices for Service Providers](https://www.m3aawg.org/sites/default/files/m3aawg-mobile-messaging-best-practices-service-providers-2015-08_0.pdf).
+
+Erfahren Sie, wie Office 365 SPF verwendet und die DKIM-Überprüfung unterstützt:
+
+- [Weitere Informationen zu SPF](how-office-365-uses-spf-to-prevent-spoofing.md)
+
+- [Weitere Informationen zu DKIM](support-for-validation-of-dkim-signed-messages.md)

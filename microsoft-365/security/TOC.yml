@@ -110,22 +110,30 @@
               items:
                 - name: Übersicht über die erweiterte Suche
                   href: mtp/advanced-hunting-overview.md
-                - name: Lernen der Abfragesprache
-                  href: mtp/advanced-hunting-query-language.md
-                - name: Erhalten Sie eine fachliche Schulung
-                  href: mtp/advanced-hunting-expert-training.md
-                - name: Anwenden bewährter Methoden für Abfragen
-                  href: mtp/advanced-hunting-best-practices.md
+                - name: 'Lernen, trainieren, & Beispiele abrufen'
+                  items:
+                    - name: Lernen der Abfragesprache
+                      href: mtp/advanced-hunting-query-language.md
+                    - name: Erhalten Sie ein fachliches Training
+                      href: mtp/advanced-hunting-expert-training.md
+                    - name: Verwenden freigegebener Abfragen
+                      href: mtp/advanced-hunting-shared-queries.md
+                    - name: 'Suchen auf Geräten, in E-Mails, Apps und Identitäten'
+                      href: mtp/advanced-hunting-query-emails-devices.md
                 - name: Arbeiten mit Abfrageergebnissen
                   href: mtp/advanced-hunting-query-results.md
                 - name: Ausführen von Aktionen in Abfrageergebnissen
                   href: mtp/advanced-hunting-take-action.md
-                - name: Verwenden freigegebener Abfragen
-                  href: mtp/advanced-hunting-shared-queries.md
-                - name: 'Suchen auf Geräten, in E-Mails, Apps und Identitäten'
-                  href: mtp/advanced-hunting-query-emails-devices.md
                 - name: Suche starten
                   href: mtp/advanced-hunting-go-hunt.md
+                - name: Optimieren & Fehlerbehandlung
+                  items:
+                    - name: Anwenden bewährter Methoden für Abfragen
+                      href: mtp/advanced-hunting-best-practices.md
+                    - name: Fehlerbehandlung
+                      href: mtp/advanced-hunting-errors.md
+                    - name: Dienstbeschränkungen
+                      href: mtp/advanced-hunting-limits.md
                 - name: Erweitern der Datenabdeckung
                   href: mtp/advanced-hunting-extend-data.md
                 - name: Datenschema

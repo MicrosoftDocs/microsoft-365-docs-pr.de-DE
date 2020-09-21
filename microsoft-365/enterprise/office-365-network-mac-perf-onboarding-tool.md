@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 Network Connectivity Test (Vorschau)
-ms.openlocfilehash: 2197f3361efee51dfa2bd170b0c8d8e94709d3e8
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 40a46ecb39366c64c99077e90bb35c5056f36b9d
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962398"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171350"
 ---
 # <a name="microsoft-365-network-connectivity-test-preview"></a>Microsoft 365 Network Connectivity Test (Vorschau)
 
@@ -37,13 +37,33 @@ Es wird empfohlen, dass diese zusammen verwendet werden, wenn der Status der Net
 >[!IMPORTANT]
 >Netzwerk Einblicke, Leistungsempfehlungen und Bewertungen im Microsoft 365 Admin Center befinden sich derzeit im Vorschaustatus und stehen nur für Microsoft 365-Mandanten zur Verfügung, die im Feature Preview-Programm registriert wurden.
 
-## <a name="the-advanced-tests-client-application"></a>Die Clientanwendung für erweiterte Tests
+## <a name="what-happens-at-each-test-step"></a>Was geschieht bei jedem Test Schritt
+
+### <a name="office-location-identification"></a>Office-Standortidentifikation
+
+Wenn Sie auf die Schaltfläche Test ausführen klicken, wird die Seite zum Ausführen des Tests angezeigt, und der Office-Standort wird identifiziert. Sie können Ihren Standort nach Ort, Bundesland und Land eingeben, oder Sie können ihn über den Webbrowser erkennen lassen. Wenn Sie ihn erkennen, fordern wir den breiten-und Längengrad des Webbrowsers an und begrenzen die Genauigkeit auf 300m um 300m vor der Verwendung. Dies ist der Fall, da es nicht erforderlich ist, den Standort genauer als das Gebäude für die Netzwerkleistung zu identifizieren. 
+
+### <a name="javascript-tests"></a>JavaScript-Tests
+
+Nach der Office-Standort Identifizierung führen wir einen TCP-Latenz Test in JavaScript aus, und wir fordern Daten vom Dienst zur Verwendung und empfohlenen Office 365 Dienst-Front-Door-Server an. Wenn diese abgeschlossen sind, werden Sie auf der Karte und auf der Registerkarte "Details" angezeigt, wo Sie vor dem nächsten Schritt angezeigt werden können.
+
+### <a name="download-the-advanced-tests-client-application"></a>Herunterladen der Clientanwendung für erweiterte Tests
+
+Als nächstes starten wir den Download der Clientanwendung für erweiterte Tests. Wir setzen auf den Benutzer, um die Clientanwendung zu starten, und Sie müssen auch .net Core installiert haben.
 
 Der Microsoft 365-Netzwerkverbindungstest besteht aus zwei Teilen. die Website <https://connectivity.office.com> und eine herunterladbare Windows-Clientanwendung, die erweiterte Netzwerkverbindungstests ausführt. Bei den meisten Tests muss die Anwendung ausgeführt werden. Die Ergebnisse werden während der Ausführung wieder in die Webseite aufgefüllt.
 
 Sie werden aufgefordert, die erweiterte Clienttestanwendung von der Website herunterzuladen, nachdem die Webbrowser Tests abgeschlossen wurden. Öffnen und führen Sie die Datei aus, wenn Sie dazu aufgefordert werden.
 
 ![Clientanwendung für erweiterte Tests](../media/m365-mac-perf/m365-mac-perf-open-run-file.png)
+
+### <a name="start-the-advanced-tests-client-application"></a>Starten der Clientanwendung für erweiterte Tests
+
+Sobald die Clientanwendung gestartet wird, wird die Webseite aktualisiert, damit diese angezeigt wird und die Testdaten beginnen, auf der Webseite empfangen zu werden. Es wird jedes Mal aktualisiert, wenn neue Daten empfangen werden, und Sie können die Daten bei ihrer Ankunft überprüfen.
+
+### <a name="advanced-tests-completed-and-test-report-upload"></a>Erweiterte Tests abgeschlossen und Testbericht hochladen
+
+Sobald die Tests abgeschlossen sind, wird die Webseite und der Client für erweiterte Tests beide auf diese Angabe hinweisen, und wenn der Benutzer im Testbericht angemeldet ist, wird er in den Mandanten "Customers" hochgeladen.
 
 ## <a name="sharing-your-test-report"></a>Freigeben des Testberichts
 
@@ -111,7 +131,7 @@ Dadurch wird festgestellt, ob Sie ein VPN verwenden, um eine Verbindung mit Offi
 
 #### <a name="vpn-split-tunnel"></a>Geteilten VPN-Tunnel
 
-Jede Route für die Optimierung der Kategorie für Exchange Online, SharePoint Online und Microsoft Teams wird getestet, um festzustellen, ob Sie auf dem VPN getunnelt ist oder nicht. Bei einer geteilten Arbeitsauslastung wird das VPN vollständig vermieden. Eine getunnelt-Arbeitsauslastung wird über das VPN gesendet. Für eine selektive getunnelt-Arbeitsauslastung wurden einige Routen über das VPN und einige ausgeteilte Pfade gesendet. Ein übergebenes Ergebnis zeigt an, ob alle Arbeitsauslastungen verteilt sind oder selektive getunnelt.
+Jede Route für die Optimierung der Kategorie für Exchange Online, SharePoint Online und Microsoft Teams wird getestet, um festzustellen, ob Sie auf dem VPN getunnelt ist oder nicht. Bei einer geteilten Arbeitsauslastung wird das VPN vollständig vermieden. Eine getunnelte Arbeitsauslastung wird über das VPN gesendet. Bei einer selektiven getunnelten Arbeitsauslastung wurden einige Routen über das VPN gesendet, und einige werden getrennt. Ein übergebenes Ergebnis zeigt an, ob alle Arbeitsauslastungen ausgeteilt oder selektiv getunnelt werden.
 
 #### <a name="customers-in-your-metropolitan-area-with-better-performance"></a>Kunden in ihrer Metropolregion mit besserer Leistung
 
@@ -207,28 +227,6 @@ Wenn ein SSL-Zertifikat gefunden wird, das nicht von Microsoft bereitgestellt wi
 
 In diesem Abschnitt werden die Ergebnisse eines ICMP-Traceroutes für die Exchange Online-Dienst-Haustür, die Haustür des SharePoint Online-Diensts und die Haustür des Microsoft Teams-Diensts dargestellt. Er wird nur für Informationen bereitgestellt, und es gibt keine zugeordnete Netzwerk Einblicke. Es werden drei Traceroutes bereitgestellt. Ein traceroute zu _Outlook.office365.com_, ein traceroute an das SharePoint-Front-End von Kunden oder _Microsoft.SharePoint.com_ , wenn nicht angegeben, und ein traceroute zu _World.tr.Teams.Microsoft.com_.
 
-## <a name="what-happens-at-each-test-step"></a>Was geschieht bei jedem Test Schritt
-
-### <a name="office-location-identification"></a>Office-Standortidentifikation
-
-Wenn Sie auf die Schaltfläche Test ausführen klicken, wird die Seite zum Ausführen des Tests angezeigt, und der Office-Standort wird identifiziert. Sie können Ihren Standort nach Ort, Bundesland und Land eingeben, oder Sie können ihn über den Webbrowser erkennen lassen. Wenn Sie ihn erkennen, fordern wir den breiten-und Längengrad des Webbrowsers an und begrenzen die Genauigkeit auf 300m um 300m vor der Verwendung. Dies ist der Fall, da es nicht erforderlich ist, den Standort genauer als das Gebäude für die Netzwerkleistung zu identifizieren. 
-
-### <a name="javascript-tests"></a>JavaScript-Tests
-
-Nach der Office-Standort Identifizierung führen wir einen TCP-Latenz Test in JavaScript aus, und wir fordern Daten vom Dienst zur Verwendung und empfohlenen Office 365 Dienst-Front-Door-Server an. Wenn diese abgeschlossen sind, werden Sie auf der Karte und auf der Registerkarte "Details" angezeigt, wo Sie vor dem nächsten Schritt angezeigt werden können.
-
-### <a name="download-the-advanced-tests-client-application"></a>Herunterladen der Clientanwendung für erweiterte Tests
-
-Als nächstes starten wir den Download der Clientanwendung für erweiterte Tests. Wir setzen auf den Benutzer, um die Clientanwendung zu starten, und Sie müssen auch .net Core installiert haben.
-
-### <a name="start-the-advanced-tests-client-application"></a>Starten der Clientanwendung für erweiterte Tests
-
-Sobald die Clientanwendung gestartet wird, wird die Webseite aktualisiert, damit diese angezeigt wird und die Testdaten beginnen, auf der Webseite empfangen zu werden. Es wird jedes Mal aktualisiert, wenn neue Daten empfangen werden, und Sie können die Daten bei ihrer Ankunft überprüfen.
-
-### <a name="advanced-tests-completed-and-test-report-upload"></a>Erweiterte Tests abgeschlossen und Testbericht hochladen
-
-Sobald die Tests abgeschlossen sind, wird die Webseite und der Client für erweiterte Tests beide auf diese Angabe hinweisen, und wenn der Benutzer im Testbericht angemeldet ist, wird er in den Mandanten "Customers" hochgeladen.
-
 ## <a name="connectivity-reports"></a>Verbindungsberichte
 
 Wenn Sie angemeldet sind, können Sie frühere Berichte überprüfen, die Sie ausgeführt haben. Sie können Sie auch freigeben oder aus der Liste löschen.
@@ -251,7 +249,7 @@ Es handelt sich derzeit um eine Vorschau, und wir planen, Updates regelmäßig b
 
 ### <a name="what-is-required-to-run-the-advanced-test-client"></a>Was ist erforderlich, um den Advanced Test-Client auszuführen?
 
-Der erweiterte Testclient erfordert .net Core 3,1 Desktop Runtime. Wenn Sie den Advanced Test-Client ohne installiert ausführen, werden Sie zur [Seite .net Core 3,1 Installer](https://dotnet.microsoft.com/download/dotnet-core/3.1)weitergeleitet. Stellen Sie sicher, dass Sie die Desktop Laufzeit und nicht das SDK oder die ASP.net-Kern Laufzeit installieren, die höher auf der Seite sind. Administrator Berechtigungen für den Computer sind reuqired zur Installation von .net Core. 
+Der erweiterte Testclient erfordert .net Core 3,1 Desktop Runtime. Wenn Sie den Advanced Test-Client ohne installiert ausführen, werden Sie zur [Seite .net Core 3,1 Installer](https://dotnet.microsoft.com/download/dotnet-core/3.1)weitergeleitet. Stellen Sie sicher, dass Sie die Desktop Laufzeit und nicht das SDK oder die ASP.net-Kern Laufzeit installieren, die höher auf der Seite sind. Administrator Berechtigungen für den Computer sind erforderlich, um .net Core zu installieren. 
 
 ### <a name="what-is-microsoft-365-service-front-door"></a>Was ist Microsoft 365-Dienst-Haustür?
 

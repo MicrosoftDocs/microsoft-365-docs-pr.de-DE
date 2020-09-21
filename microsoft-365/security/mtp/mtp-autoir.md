@@ -1,7 +1,7 @@
 ---
-title: Automatisierte Ermittlungs-und Antwortfunktionen in Microsoft Threat Protection
-description: Erhalten Sie einen Überblick über die Funktionen der automatischen Untersuchung und Reaktion in Microsoft Threat Protection.
-keywords: automatisch, Untersuchung, Warnung, Trigger, Aktion, Wartung
+title: Automatische Untersuchung und Reaktion in Microsoft Threat Protection
+description: Erhalten Sie einen Überblick über die automatisierten Ermittlungs-und Antwortfunktionen, die auch als Selbstheilung bezeichnet werden, in Microsoft Threat Protection
+keywords: automatisiert, Untersuchung, Warnung, Trigger, Aktion, Korrektur, Selbstheilung
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -18,25 +18,33 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 9fc4c99254f4f27b476930a555b237be093bff24
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.date: 09/16/2020
+ms.reviewer: evaldm, isco
+ms.openlocfilehash: f2a0a439996f13cea3823815aceb9dd1c235e2f2
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950724"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962665"
 ---
-# <a name="automated-investigation-and-response-capabilities-in-microsoft-threat-protection"></a>Automatisierte Ermittlungs-und Antwortfunktionen in Microsoft Threat Protection
+# <a name="automated-investigation-and-response-in-microsoft-threat-protection"></a>Automatische Untersuchung und Reaktion in Microsoft Threat Protection
 
 **Gilt für:**
 - Microsoft Threat Protection
 
-Wenn Sicherheitswarnungen ausgelöst werden, liegt es an Ihrem Sicherheits Betriebsteam, diese Warnungen zu untersuchen und Maßnahmen zum Schutz Ihrer Organisation zu ergreifen. Die Priorisierung und Untersuchung von Warnungen kann sehr zeitaufwändig sein, insbesondere dann, wenn ständig neue Benachrichtigungen während einer laufenden Untersuchung eingehen. Sicherheitsteams können sich angesichts des enormen Volumens der Bedrohungen, die sie überwachen müssen, überfordert fühlen. Automatische Ermittlungs-und Antwortfunktionen (auch als *selbst Heilungs* Funktionen bezeichnet) in Microsoft Threat Protection können hilfreich sein. 
+Wenn Sicherheitswarnungen ausgelöst werden, liegt es an Ihrem Sicherheits Betriebsteam, diese Warnungen zu untersuchen und Maßnahmen zum Schutz Ihrer Organisation zu ergreifen. Die Priorisierung und Untersuchung von Warnungen kann sehr zeitaufwändig sein, insbesondere dann, wenn ständig neue Benachrichtigungen während einer laufenden Untersuchung eingehen. Sicherheitsteams können sich angesichts des enormen Volumens der Bedrohungen, die sie überwachen müssen, überfordert fühlen. Automatische Untersuchung und Antwortfunktionen mit Selbstheilung in Microsoft Threat Protection können helfen.
 
-Sehen Sie sich das folgende Video an, um zu erfahren, wie automatisierte Selbstheilungsfunktionen funktionieren:
+Sehen Sie sich das folgende Video an, um zu erfahren, wie die Selbstheilung funktioniert:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4BzwB]
 
-Die automatische Untersuchung und Antwort ähnelt einem virtuellen Analysten in Ihrem Security Operations Center.
+In Microsoft Threat Protection funktioniert die automatische Untersuchung und Reaktion mit Selbstheilungsfunktionen auf Ihren Geräten, e-Mail & Inhalt und Identitäten. Microsoft Threat Protection vereint Funktionen von: 
+- [Automatische Untersuchung und Korrektur in Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [Automatische Untersuchung und Reaktion in Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
+- [Erkennung erweiterter Azure-Bedrohungen](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)
+- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
+ 
+In diesem Artikel wird beschrieben, wie automatisierte Untersuchungen und Antworten funktionieren. Informationen zum Konfigurieren dieser Funktionen finden Sie unter [Configure Automated Investigation and Response Capabilities in Microsoft Threat Protection](mtp-configure-auto-investigation-response.md).
 
 ## <a name="your-virtual-analyst"></a>Ihr virtueller Analyst
 
@@ -62,25 +70,14 @@ Bei einer ausgelösten Warnung wird ein Vorfall erstellt, der eine automatisiert
 
 Bei jeder Untersuchung werden Urteile (*böswillige*, *verdächtige*oder *nicht gefundene Bedrohungen*) für jedes untersuchte Beweisstück generiert. Je nach Art der Bedrohung und dem daraus resultierenden Urteil werden Korrekturaktionen automatisch oder nach Genehmigung durch das Sicherheits Betriebsteam Ihrer Organisation durchgeführt. Ausstehende und abgeschlossene Aktionen werden im [Info-Center](mtp-action-center.md) aufgelistet.
 
-> [!TIP]
-> Wenn Sie glauben, dass durch automatisierte Ermittlungs-und Antwortfunktionen in Microsoft Threat Protection etwas übersehen oder fälschlicherweise erkannt wurde, lassen Sie es uns wissen! Weitere Informationen finden Sie unter [How to Report false positives/negatives in Automated Investigation and Response Features in Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
-
 Während eine Untersuchung läuft, werden alle anderen zugehörigen Warnungen zur Untersuchung hinzugefügt, bis diese abgeschlossen ist. Wenn eine beschuldigte Entität an anderer Stelle angezeigt wird, wird auch diese Entität in die automatische Untersuchung aufgenommen, und es wird ein allgemeines Sicherheitsplaybook ausgeführt. 
 
 > [!NOTE]
-> Nicht jede Warnung löst eine automatisierte Untersuchung aus, und nicht jede Untersuchung führt zu automatisierten Korrekturaktionen. Dies hängt davon ab, wie die automatische Untersuchung und Antwort für Ihre Organisation konfiguriert ist. 
+> Nicht jede Warnung löst eine automatisierte Untersuchung aus, und nicht jede Untersuchung führt zu automatisierten Korrekturaktionen. Dies hängt davon ab, wie die automatische Untersuchung und Antwort für Ihre Organisation konfiguriert ist. Weitere Informationen finden Sie unter [Configure Automated Investigation and Response Capabilities in Microsoft Threat Protection](mtp-configure-auto-investigation-response.md).
 
-## <a name="requirements-for-automated-investigation-and-response-in-microsoft-threat-protection"></a>Anforderungen für die automatische Untersuchung und Reaktion in Microsoft Threat Protection
 
-|Anforderung |Details |
-|--|--|
-|Abonnementanforderungen |Eine der folgenden Varianten: <br/>-Microsoft 365 E5 <br/>-Microsoft 365 a5 <br/>-Microsoft 365 E5-Sicherheit<br/>-Microsoft 365 a5-Sicherheit<br/>-Office 365 E5 Plus Enterprise Mobility + Security E5 plus Windows E5<br/><br/>Weitere Informationen finden Sie unter [Microsoft Threat Protection License Requirements](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites?#licensing-requirements).|
-|Netzwerkanforderungen |- [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) muss aktiviert sein<br/>- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) (MCAS) muss konfiguriert sein<br/>- [MCAS muss in Azure ATP sein](https://docs.microsoft.com/cloud-app-security/aatp-integration) |
-|Windows-Computeranforderungen |-Windows 10, Version 1709 oder höher (siehe [Windows 10 – Versionsinformationen](https://docs.microsoft.com/windows/release-information/)) mit den folgenden konfigurierten Threat Protection-Diensten:<br/>- [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) <br/>- [Windows Defender-Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) |
-|Schutz für e-Mail-Inhalte und Office-Dateien |[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) konfiguriert |
-|Berechtigungen |– Zum Konfigurieren der automatischen Untersuchung und Antwort muss die Rolle globaler Administrator oder Sicherheitsadministrator entweder in Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) oder im Microsoft 365 Admin Center () zugewiesen sein [https://admin.microsoft.com](https://admin.microsoft.com) .<br/><br/>-Für die Verwendung von automatisierten Ermittlungs-und Antwortfunktionen siehe [erforderliche Berechtigungen für Aktionen des Aufgaben Centers](mtp-action-center.md#required-permissions-for-action-center-tasks). |
+## <a name="next-steps"></a>Weitere Schritte
 
-## <a name="next-steps"></a>Nächste Schritte
-
-- [Genehmigen oder Ablehnen von Aktionen im Zusammenhang mit der automatischen Untersuchung und Reaktion](mtp-autoir-actions.md)
+- [Weitere Informationen finden Sie unter Voraussetzungen für automatisierte Untersuchungen und Antworten in Microsoft Threat Protection](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-threat-protection)
+- [Konfigurieren der automatischen Untersuchung und Reaktion für Ihre Organisation](mtp-configure-auto-investigation-response.md)
 - [Erfahren Sie mehr über das Info-Center](mtp-action-center.md)

@@ -1,9 +1,29 @@
 ---
-Title: Konfigurieren von Microsoft Threat Protection-Säulen für das Test Labor oder die Pilotumgebung Beschreibung: Configure Microsoft Threat Protection Pillars: Office 365 ATP, Azure ATP, Microsoft Cloud App Security und Microsoft Defender ATP, für Ihre Test Labor-oder Pilotumgebung.
-Stichwörter: Konfigurieren der Microsoft Threat Protection-Testversion, Microsoft Threat Protection-Testkonfiguration, Konfigurieren des Microsoft Threat Protection-Pilotprojekts, Konfigurieren von Microsoft Threat Protection-Säulen, Microsoft Threat Protection-Säulen Suche. Produkt: eADQiWindows 10XVcnh Search. appverid: met150 ms. Prod: W10 ms. mktglfcycl: Deploy ms. sitesec: Library ms. PageType: Security ms. Author: dolmont  
-Autor: DulceMontemayor ms. localizationpriority: Medium Manager: dansimp Audience: ITPro ms. Collection: M365-Security-Compliance ms. Topic: article 
+title: Konfigurieren von Microsoft Threat Protection-Säulen für die Test Labor-oder Pilotumgebung
+description: Konfigurieren Sie Microsoft Threat Protection-Säulen wie Office 365 ATP, Azure ATP, Microsoft Cloud App Security und Microsoft Defender ATP für Ihre Test Labor-oder Pilotumgebung.
+keywords: Konfigurieren von Microsoft Threat Protection-Testversion, Microsoft Threat Protection-Testkonfiguration, Microsoft Threat Protection-Pilotprojekt konfigurieren, Microsoft Threat Protection-Säulen konfigurieren, Microsoft Threat Protection-Säulen
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
+ms.prod: microsoft-365-enterprise
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+f1.keywords:
+- NOCSH
+ms.author: dolmont
+author: DulceMontemayor
+ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: article
+ms.openlocfilehash: 4d751ec5eb786a91d62ab11988132bfed076984d
+ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47956261"
 ---
-
 # <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-or-pilot-environment"></a>Konfigurieren von Microsoft Threat Protection-Säulen für Ihre Test Labor-oder Pilotumgebung
 
 **Gilt für:**
@@ -43,7 +63,7 @@ Die Vorbereitung ist für eine erfolgreiche Bereitstellung entscheidend. In dies
 
 ## <a name="microsoft-threat-protection-pillars"></a>Microsoft Threat Protection-Säulen
 Microsoft Threat Protection besteht aus vier Pfeilern. Auch wenn ein Pfeiler bereits einen Mehrwert für die Sicherheit ihrer Netzwerkorganisation bieten kann, bietet die Aktivierung der vier Microsoft-Bedrohungsschutz-Pfeiler Ihrer Organisation den größten Nutzen.
-
+<br>
 ![Image of_Microsoft Threat Protection-Lösung für Benutzer, Azure Advanced Threat Protection, für Endpoint Microsoft Defender Advanced Threat Protection, für Cloud-apps, Microsoft Cloud App Security und für Daten, Office 365 Advanced Threat Protection  ](../../media/mtp-eval-31.png) <br>
 
 In diesem Abschnitt erhalten Sie Informationen zu configure:
@@ -121,7 +141,7 @@ Es gibt ein PowerShell-Modul mit dem Namen *Office 365 Advanced Threat Protectio
 <br>![Image of_Azure Advanced Threat Protection-Seite, auf der Sie auf Weiter klicken, um dem Azure ATP-Sensor-Assistenten zu entsprechen](../../media/mtp-eval-47.png) <br>
  
 7. Klicken Sie im Sensor Bereitstellungs auf **weiter** .
-<br>![Image of_Azure Advanced Threat Protection-Seite, auf der Sie auf Weiter klicken, um dem Azure ATP-Sensor-Assistenten zu entsprechen](../../media/mtp-eval-48.png) <br>
+<br>![Image of_Azure Advanced Threat Protection-Seite, auf der Sie auf Weiter klicken sollten, um zur nächsten Seite zu wechseln](../../media/mtp-eval-48.png) <br>
  
 8. Kopieren Sie die Zugriffstaste, da Sie Sie als nächstes im Assistenten eingeben müssen.
 ![Seite "Bild of_the Sensoren", auf der Sie die Zugriffstaste kopieren sollten, die Sie auf der nächsten Seite des Azure ATP-Sensor-Setup-Assistenten eingeben müssen](../../media/mtp-eval-49.png) <br>
@@ -233,5 +253,6 @@ Herzlichen Glückwunsch! Sie haben soeben Ihr Microsoft Threat Protection-Test L
 
 Als nächstes können Sie einen Angriff simulieren und sehen, wie die produktübergreifenden Funktionen erkennen, Warnungen erstellen und automatisch auf einen Datei übergreifenden Angriff auf einen Endpunkt reagieren.
 
-## <a name="next-steps"></a>Nächste Schritte
-[Generieren Sie eine Testwarnung](generate-test-alert.md).
+## <a name="next-step"></a>Nächster Schritt
+|![Angriffs Simulationsphase](../../media/mtp/run-sim.png) <br>[Angriffs Simulationsphase](mtp-pilot-simulate.md) | Führen Sie die Angriffssimulation für Ihre Microsoft Threat Protection-Pilotumgebung aus.
+|:-------|:-----|

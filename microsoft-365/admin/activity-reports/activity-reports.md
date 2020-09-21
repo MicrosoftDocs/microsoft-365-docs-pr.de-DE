@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Erhalten Sie einen regelmäßigen Bericht darüber, wie Personen in Ihrer Organisation Microsoft 365-Dienste verwenden. Im Dashboard "Verwendungsübersicht" können Sie die einzelnen Diagramme weiter aufschlüsseln, um weitere Erkenntnisse zu erhalten.
-ms.openlocfilehash: f0dcb1fac17a39d1125f9188028d714962c9797d
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: e1748cf25fd36787727b0f00f6ddf6553bd454ab
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948208"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104449"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Microsoft 365-Berichte im Admin Center
 
@@ -58,9 +58,8 @@ Sehen Sie sich dieses Video an, um eine Übersicht darüber zu erhalten, wie Sie
 
 ::: moniker-end
 
-   
-2. Wählen Sie oben im Dashboard **Einen Bericht auswählen** aus, um aus einer Liste aller verfügbaren Berichte auszuwählen. Alternativ können Sie auch ein Widget für die Anzeige einer Aktivität auf einen Blick für einen Dienst (z. B. E-Mail, OneDrive) auswählen, um weitere Informationen anzuzeigen. <br/>![Das Dashboard "Verwendung"](../../media/usage-report-dashboard.png)
-  
+2. Klicken Sie auf die Schaltfläche **Mehr anzeigen** auf der Aktivitätskarte "Auf-einen-Blick" für einen Dienst (z. B. E-Mail oder OneDrive), um die Berichtsdetailseite anzuzeigen. Dort werden verschiedene Berichte für den Dienst auf Registerkarten bereitgestellt. <br/>![Das Dashboard "Verwendung"](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
+
 ## <a name="who-can-see-reports"></a>Wer kann Berichte sehen
 
 Personen, die über die folgenden Berechtigungen verfügen: 
@@ -147,7 +146,7 @@ Je nach Abonnement stehen die folgenden Berichte zur Verfügung.
 
 ::: moniker range="o365-worldwide"
 
-- [Microsoft Teams-Benutzeraktivität für Department of Defense and Government Community Cloud](microsoft-teams-user-activity.md)
+- [Microsoft Teams-Benutzeraktivität für "US Government"](microsoft-teams-user-activity.md)
 
 ::: moniker-end
 
@@ -159,7 +158,7 @@ Je nach Abonnement stehen die folgenden Berichte zur Verfügung.
 
 ::: moniker range="o365-worldwide"
 
-- [Microsoft Teams-Benutzeraktivität für Department of Defense and Government Community Cloud](microsoft-teams-device-usage.md)
+- [Microsoft Teams-Geräteverwendung für "US Government"](microsoft-teams-device-usage.md)
 
 ::: moniker-end
 

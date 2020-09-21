@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen, um zu behalten, was Sie benötigen, und zu löschen, was Sie nicht benötigen.
-ms.openlocfilehash: 7787d3e2e3dead737d7a0e5ed083a851a349d561
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 3d5bf971f65be5fd6ef4fdbed46cc41827657a54
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816757"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48132135"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
@@ -83,7 +83,7 @@ Im Gegensatz zu Aufbewahrungsrichtlinien bleiben die Aufbewahrungseinstellungen 
  
 - Optionen zum Starten des Aufbewahrungszeitraums ab dem Zeitpunkt, ab dem die Inhalte bezeichnet wurden, statt anhand des Inhaltsalters oder dem Datum der letzten Änderung.
 
-- Verwenden Sie [trainierbare Klassifizierer](classifier-getting-started-with.md), um die zu bezeichnenden Inhalte zu identifizieren.
+- Verwenden Sie [trainierbare Klassifizierer](classifier-learn-about.md), um die zu bezeichnenden Inhalte zu identifizieren.
 
 - Wenden Sie eine Standardbezeichnung für SharePoint-Dokumente an.
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Anhand des Dashboards für die Datenklassifizierung können Sie sehen, wie viele vertrauliche Daten in Ihrer Organisation gefunden und klassifiziert wurden.
-ms.openlocfilehash: aff6d2c30fe8036448a8816426896f080b86b9e6
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 725dc5d2e9e5cf0638a54c5ee46d77b321ae4796
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948505"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131723"
 ---
 # <a name="know-your-data---data-classification-overview"></a>Kennen Sie Ihre Daten – Überblick über die Datenklassifizierung
 
@@ -34,7 +34,7 @@ Als Microsoft 365-Administrator oder Compliance-Administrator können Sie Inhalt
 - Die Speicherorte Ihrer vertraulichen und aufbewahrten Daten.
 
 Diese Merkmale können Sie auch auf der Datenklassifizierungsseite verwalten:
-- [trainierbare Klassifizierungsmerkmale](classifier-getting-started-with.md)
+- [trainierbare Klassifizierungsmerkmale](classifier-learn-about.md)
 - [Typen vertraulicher Informationen](what-the-sensitive-information-types-look-for.md)
 
 Sie finden die Datenklassifizierung im **Microsoft 365 Compliance Center** oder unter **Microsoft 365 Security Center** > **Klassifizierung** > **Datenklassifizierung**.
@@ -137,4 +137,4 @@ Der Zweck der Berichterstellung über die Datenklassifizierung besteht darin, Tr
 - [Weitere Informationen zu Vertraulichkeitsbezeichnungen](sensitivity-labels.md)
 - [Weitere Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](retention.md)
 - [Entitätsdefinitionen für Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md)
-- [Erste Schritte mit trainierbaren Klassifizierern (Vorschau)](classifier-getting-started-with.md)
+- [Weitere Informationen zu trainierbaren Klassifizierern (Vorschau)](classifier-learn-about.md)

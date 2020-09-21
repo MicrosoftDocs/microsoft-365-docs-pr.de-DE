@@ -15,52 +15,69 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: c61526139111885ec345bc4a4dd3cd6b147370e6
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 6d6562f528b36acdfbc28da9647d3356a0f585af
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950808"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48132158"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>Richtlinien für das Zulassen von Gast-und externen B2B-Zugriff
 
-In diesem Artikel wird beschrieben, wie Sie die empfohlenen allgemeinen Richtlinien für Identitäts-und Geräte Zugriff anpassen können, um den Zugriff auf B2B-Konten (Business-to-Business) zu ermöglichen (Gast-und externe Benutzer). Dieser Leitfaden basiert auf den [allgemeinen Richtlinien für Identitäts-und Geräte Zugriff](identity-access-policies.md).
+In diesem Artikel wird beschrieben, wie Sie die empfohlenen allgemeinen Identitäts-und Gerätezugriffs Richtlinien anpassen können, um den Zugriff für Gast-und externe Benutzer zuzulassen, die über ein Business-to-Business-Konto (B2B) von Azure Active Directory (Azure AD) verfügen. Dieser Leitfaden basiert auf den [allgemeinen Richtlinien für Identitäts-und Geräte Zugriff](identity-access-policies.md).
 
 Diese Empfehlungen sind darauf ausgelegt, auf die **grundlegende** Schutzebene anzuwenden. Sie können jedoch auch die Empfehlungen basierend auf der Granularität Ihrer Anforderungen für **sensiblen** und **streng reglementierten** Schutz anpassen. 
 
-Durch die Bereitstellungeines Pfads für B2B-Benutzer zur Authentifizierung bei Ihrem Azure-Active Directory (Azure AD)-Mandanten erhalten diese Benutzer keinen Zugriff auf Ihre gesamte Umgebung. B2B-Benutzer haben nur Zugriff auf Ressourcen, die für Sie (beispielsweise Dateien) innerhalb der in den Richtlinien für bedingten Zugriff gewährten Dienste freigegeben werden.
+Durch die Bereitstellungeines Pfads für B2B-Konten zur Authentifizierung bei Ihrem Azure AD Mandanten erhalten diese Konten keinen Zugriff auf Ihre gesamte Umgebung. B2B-Benutzer und ihre Konten haben nur Zugriff auf Ressourcen, die für Sie (beispielsweise Dateien) innerhalb der in bedingten Zugriffsrichtlinien gewährten Dienste freigegeben werden.
 
 ## <a name="updating-the-common-policies-to-allow-and-protect-guest-and-external-access"></a>Aktualisieren der allgemeinen Richtlinien zum zulassen und schützen von Gast und externem Zugriff 
 
-Zum Schutz von Gast und externem Zugriff zeigt das folgende Diagramm, welche Richtlinien hinzugefügt oder aus den allgemeinen Richtlinien für Identitäts-und Geräte Zugriff aktualisiert werden sollen. 
+Um Gast-und externen Zugriff mit Azure AD B2B-Konten zu schützen, zeigt das folgende Diagramm, welche Richtlinien hinzugefügt oder von den allgemeinen Richtlinien für Identitäts-und Geräte Zugriff aktualisiert werden sollen. 
 
 [![Zusammenfassung der Richtlinienupdates zum Schützen des Gastzugriffs](../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)
 
 [Anzeigen einer größeren Version dieses Bilds](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)
 
-In der folgenden Tabelle sind die Richtlinien aufgeführt, die Sie entweder aktualisieren oder neu erstellen müssen. Die allgemeinen Richtlinien verweisen auf die zugehörigen Konfigurationsanweisungen im Artikel [Allgemeine Richtlinien für Identitäts-und Geräte Zugriff](identity-access-policies.md) .
+In der folgenden Tabelle sind die Richtlinien aufgeführt, die Sie entweder erstellen und aktualisieren müssen. Die allgemeinen Richtlinien verweisen auf die zugehörigen Konfigurationsanweisungen im Artikel [Allgemeine Richtlinien für Identitäts-und Geräte Zugriff](identity-access-policies.md) .
 
 |Schutzebene|Richtlinien|Weitere Informationen|
 |:---------------|:-------|:----------------|
-|**Basisplan**|[MFA immer für Gast und externe Benutzer erforderlich](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Erstellen Sie diese neue Richtlinie, und wenden Sie Sie nur auf Gäste und externe Benutzer an. Lassen Sie unter **Anmelde Risiko**alle Optionen deaktiviert, damit die mehrstufige Authentifizierung (MFA) immer erzwungen wird.|
+|**Basisplan**|[MFA immer für Gast und externe Benutzer erforderlich](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Erstellen Sie diese neue Richtlinie, und konfigurieren Sie Folgendes: <ul><li> Wählen Sie für **Zuordnungen > Benutzer und Gruppen > einschließen**die **Option Benutzer und Gruppen auswählen**aus, und wählen Sie dann **alle Gast-und externen Benutzer**aus. </li><li> Lassen Sie für **Zuordnungen > Bedingungen > Anmeldung**die Option Alle Optionen deaktiviert, damit die mehrstufige Authentifizierung (MFA) immer erzwungen wird.</li>|
 |        |[MFA erforderlich, wenn das Anmelde Risiko *Mittel* groß oder *hoch* ist](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Ändern Sie diese Richtlinie, um Gast-und externe Benutzer auszuschließen.|
 |        |[Kompatible PCs erforderlich](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Ändern Sie diese Richtlinie, um Gast-und externe Benutzer auszuschließen.|
 
-Wenn Sie Gäste und externe Benutzer in Richtlinien für bedingten Zugriff einschließen oder ausschließen möchten, klicken Sie auf die Registerkarte **einschließen** oder **ausschließen** , und aktivieren Sie **alle Gäste und externe Benutzer**.
+Wenn Sie Gast-und externe Benutzer in Richtlinien für den bedingten Zugriff einbeziehen oder ausschließen möchten, überprüfen Sie für **Zuordnungen > Benutzer und Gruppen, die > einschließen** oder **ausschließen**, **alle Gast-und externen Benutzer**.
 
-![Bildschirmaufzeichnung von Steuerelementen zum Ausschließen von Gästen](../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
+![Bildschirmaufzeichnung von Steuerelementen zum Ausschließen von Gast-und externen Benutzern](../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
 
 ## <a name="more-information"></a>Weitere Informationen
 
-### <a name="guests-vs-external-users"></a>Gäste vs. externe Benutzer
-In Azure AD sind Gast-und externe Benutzer identisch. Der Benutzertyp für diese beiden Typen ist Gast. Gastbenutzer sind B2B-Benutzer.
+### <a name="guest-and-external-access-with-microsoft-teams"></a>Gast-und externer Zugriff mit Microsoft Teams
 
-Microsoft Teams unterscheidet zwischen Gastbenutzern und externen Benutzern in der app. Gastbenutzer haben Azure AD B2B-Konten und können Teams hinzugefügt werden. Externe Benutzer können nur an anrufen, Chats und Besprechungen teilnehmen. Weitere Informationen finden Sie in [diesem Vergleich zwischen Gast und externen Benutzern für Teams](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access).
+Microsoft Teams definiert Folgendes:
 
-Weitere Informationen zum Sichern von Identitäts-und Geräte Zugriff für Microsoft Teams finden Sie unter [Richtlinien Empfehlungen für das Sichern von teamchats, Gruppen und Dateien](teams-access-policies.md) .
+- **Gastzugriff** verwendet ein Azure AD B2B-Konto, das als Mitglied eines Teams hinzugefügt werden kann und über alle Berechtigungen für den Zugriff auf die Kommunikation und die Ressourcen des Teams verfügt.
+
+- **Externer Zugriff** ist für einen externen Benutzer, der über kein B2B-Konto verfügt. Externer Zugriff kann Einladungen und Teilnahme an anrufen, Chats und Besprechungen umfassen, umfasst jedoch nicht die Teammitgliedschaft und den Zugriff auf die Ressourcen des Teams.
+
+Weitere Informationen finden Sie in [diesem Vergleich zwischen Gast und externem Zugriff für Teams](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access).
+
+Richtlinien für den bedingten Zugriff gelten nur für Gastzugriff in Microsoft Teams, da ein entsprechendes Azure AD B2B-Konto vorhanden ist.
+
+Weitere Informationen zum Sichern von Identitäts-und Gerätezugriffs Richtlinien für Teams finden Sie unter [Richtlinien Empfehlungen für das Sichern von teamchats, Gruppen und Dateien](teams-access-policies.md) .
+
+<!--
+ount treats guest and external users that have an Azure AD B2B account differently than external access  .
+
+
+to a meeting, call, or chat with
+
+
+differentiates between guest users and external users within the app. Guest users have Azure AD B2B accounts and can be added to teams. External users can only participate in calls, chats, and meetings. 
+--> 
 
 ### <a name="require-mfa-always-for-guest-and-external-users"></a>MFA immer für Gast und externe Benutzer erforderlich
-Diese Richtlinie fordert Gäste auf, sich für MFA in Ihrem Mandanten zu registrieren, unabhängig davon, ob Sie für MFA in Ihrem Wohnsitz Mandanten registriert sind. Beim Zugriff auf Ressourcen in Ihrem Mandanten müssen Gäste und externe Benutzer MFA für jede Anforderung verwenden. 
+Diese Richtlinie fordert Gäste auf, sich für MFA in Ihrem Mandanten zu registrieren, unabhängig davon, ob Sie für MFA in Ihrem Wohnsitz Mandanten registriert sind. Beim Zugriff auf Ressourcen in Ihrem Mandanten müssen Gast-und externe Benutzer MFA für jede Anforderung verwenden. 
 
 ### <a name="excluding-guest-and-external-users-from-risk-based-mfa"></a>Ausschließen von Gast-und externen Benutzern aus risikobasierter MFA
 Während Organisationen risikobasierte Richtlinien für B2B-Benutzer mithilfe Azure AD Identitätsschutzes erzwingen können, gibt es Einschränkungen bei der Implementierung von Azure AD Identity Protection für Benutzer der B2B-Zusammenarbeit in einem Ressourcenverzeichnis, da ihre Identität in Ihrem Basisverzeichnis vorhanden ist. Aufgrund dieser Einschränkungen empfiehlt Microsoft, Gastbenutzer von risikobasierten MFA-Richtlinien auszuschließen, und diese Benutzer müssen immer MFA verwenden. 

@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 60c1a39e350a9a1d5d43c9b59ab12c4a6ad3f12a
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: c3323192e0095ad6693241390cff81d42be9cce1
+ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47817181"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47956243"
 ---
 # <a name="set-up-your-microsoft-threat-protection-trial-lab-environment"></a>Einrichten Ihrer Microsoft Threat Protection-Testumgebung 
 
@@ -121,7 +121,7 @@ In dieser Phase werden Sie zu folgenden Themen geführt:
 ## <a name="enable-microsoft-365-trial-subscription"></a>Microsoft 365-Testabonnement aktivieren
 
 >[!NOTE]
->Wenn Sie sich für eine Testversion registrieren, erhalten Sie 25 Benutzerlizenzen, die für einen Monat verwendet werden. Weitere Informationen finden Sie unter [Testen oder kaufen eines M365-Abonnements](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide#try-or-buy-a-microsoft-365-subscription-1) .
+>Wenn Sie sich für eine Testversion registrieren, erhalten Sie 25 Benutzerlizenzen, die für einen Monat verwendet werden. Weitere Informationen finden Sie unter [Testen oder kaufen eines M365-Abonnements](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365#try-or-buy-a-microsoft-365-subscription-1) .
 
 1. Klicken Sie im [Microsoft 365 Admin Center](https://admin.microsoft.com/)auf **Abrechnung** , und navigieren Sie zu **Dienste kaufen**.
 
@@ -149,4 +149,5 @@ In dieser Phase werden Sie zu folgenden Themen geführt:
 
 
 ## <a name="next-step"></a>Nächster Schritt
-![Phase 3: Konfigurieren von & Onboard](../../media/config-onboard.png) <br>[Phase 3: Konfigurieren von & Onboard](config-mtpeval.md) <br>Konfigurieren Sie jede Microsoft Threat Protection-Säule für Ihr Microsoft Threat Protection-Test Labor oder Ihre Pilotumgebung und an Bord ihrer Endpunkte.
+|![Phase 3: Konfigurieren von & Onboard](../../media/config-onboard.png) <br>[Phase 3: Konfigurieren von & Onboard](config-mtpeval.md) | Konfigurieren Sie jede Microsoft Threat Protection-Säule für Ihr Microsoft Threat Protection-Test Labor oder Ihre Pilotumgebung und an Bord ihrer Endpunkte.
+|:-------|:-----|

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratoren können Informationen zu den Nachrichtenfluss Berichten erhalten, die im Dashboard Berichte im Security & Compliance Center verfügbar sind.
 ms.custom: ''
-ms.openlocfilehash: 772aec3c18e3e6343bdfd4831252d03a46961735
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 3db9130083565d77bb84b4b31ec63eee5cc7a7c9
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949620"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171398"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Anzeigen von Nachrichtenfluss Berichten im Dashboard "Berichte" im Security & Compliance Center
 
@@ -238,7 +238,7 @@ Sie können diese Filter ändern, indem Sie auf **Filter** klicken oder auf eine
 Die Datentabelle enthält die folgenden Informationen:
 
 - **Richtung**
-- **Type**
+- **Typ**
 - **24 Stunden**
 - **3 Tage**
 - **7 Tage**
@@ -399,7 +399,7 @@ Jede exportierte CSV-Datei ist auf 150.000 Zeilen limitiert. Wenn die Daten mehr
 
 ## <a name="sent-and-received-email-report"></a>Gesendete und empfangene e-Mail-Berichte
 
-Der Bericht **gesendeten und empfangenen e-Mail-Nachrichten** ist ein intelligenter Bericht, in dem Informationen zu eingehenden und ausgehenden e-Mails angezeigt werden, einschließlich Spamerkennungen, Schadsoftware und als "gut" identifizierte e-Mails. Der Unterschied zwischen diesem Bericht und dem Nachrichten [Fluss Statusbericht](#mailflow-status-report) lautet: dieser Bericht enthält keine Daten zu Nachrichten, die durch den Edge-Schutz blockiert wurden.
+Der Bericht **gesendeten und empfangenen e-Mail-Nachrichten** ist ein intelligenter Bericht, in dem Informationen zu eingehenden und ausgehenden e-Mails angezeigt werden, einschließlich Spamerkennungen, Schadsoftware und als "gut" identifizierte e-Mails. Der Unterschied zwischen diesem Bericht und dem Nachrichten [Fluss Statusbericht](#mailflow-status-report) lautet: dieser Bericht enthält keine Daten zu Nachrichten, die durch den Edge-Schutz blockiert wurden. Es ist wichtig zu verstehen, dass eine Nachricht, die an fünf Empfänger gesendet wird, als eine Nachricht gezählt wird.
 
 Die Aggregatansicht und die Detailansicht des Berichts erlauben eine Filterung von 90 Tagen.
 
@@ -445,7 +445,7 @@ Klicken Sie auf **Bericht anzeigen**, um zur Berichtsansicht zurückzukehren.
 Wenn Sie auf **Tabelle Details anzeigen** in der Ansicht **aufschlüsseln nach: Richtung** oder **aufschlüsseln nach: Richtungs** Ansicht klicken, werden die folgenden Informationen angezeigt:
 
 - **Datum (UTC)**
-- **Type**
+- **Typ**
 - **Richtung**
 - **Nachrichtenanzahl**
 

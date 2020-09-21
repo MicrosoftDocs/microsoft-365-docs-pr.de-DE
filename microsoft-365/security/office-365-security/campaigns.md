@@ -17,16 +17,16 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über die Kampagnenansichten in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 72662519177f4ac43e3de04e9755fd99f5ffb03f
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 60ec8ea1d2c164905e7b57f4b518ea3f80e7986c
+ms.sourcegitcommit: dcbcd5ef278949c777059b0aa6db072e821f72dd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867199"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48173308"
 ---
 # <a name="campaign-views-in-office-365-atp"></a>Kampagnenansichten in Office 365 ATP
 
-Kampagnen Ansichten sind ein Feature in Advanced Threat Protection (ATP) Plan 2 (beispielsweise Microsoft 365 E5 oder Organisationen mit einem ATP Plan 2-Add-on). Campaing-Ansichten im Security & Compliance Center identifiziert und kategorisiert Phishing-Angriffe im Dienst. Kampagnenansichten können Ihnen bei Folgendem helfen:
+Kampagnen Ansichten sind ein Feature in Advanced Threat Protection (ATP) Plan 2 (beispielsweise Microsoft 365 E5 oder Organisationen mit einem ATP Plan 2-Add-on). Kampagnen Ansichten im Security & Compliance Center identifiziert und kategorisiert Phishing-Angriffe im Dienst. Kampagnenansichten können Ihnen bei Folgendem helfen:
 
 - Phishing-Angriffe effektiv untersuchen und darauf reagieren.
 - Besseres Verständnis des Umfangs des Angriffs.
@@ -47,7 +47,7 @@ Microsoft nutzt die großen Mengen an Anti-Phishing-, Antispam-und Antischadsoft
 
 Eine Kampagne kann von kurzer Dauer sein oder mehrere Tage, Wochen oder Monate mit aktiven und inaktiven Zeitspannen umfassen. Möglicherweise wird eine Kampagne für ihre jeweilige Organisation gestartet, oder Ihre Organisation kann Teil einer größeren Kampagne in mehreren Unternehmen sein.
 
-## <a name="campaign-views-the-security--compliance-center"></a>Kampagnen Ansichten das Security & Compliance Center
+## <a name="campaign-views-in-the-security--compliance-center"></a>Kampagnen Ansichten im Security & Compliance Center
 
 Kampagnen Ansichten stehen im [Security & Compliance Center](https://protection.office.com) unter **Threat Management** \> **Campaigns**oder direkt unter zur Verfügung <https://protection.office.com/campaigns> .
 
@@ -222,7 +222,7 @@ Das Diagramm enthält die folgenden Informationen:
   |---|---|---|
   |**Zulässig**|`SFV:SKN` <br/><br/> `SFV:SKI`|Die Nachricht wurde vor der Auswertung durch Spamfilterung als nicht-Spam-und/oder übersprungene Filterung markiert. Beispielsweise wurde die Nachricht von einer e-Mail-Fluss Regel (auch als Transportregel bezeichnet) als nicht Spam gekennzeichnet.<br/><br/>Die Nachricht hat aus anderen Gründen die Spamfilterung übersprungen. Beispielsweise scheint sich der Absender und der Empfänger in derselben Organisation zu befinden.|
   |**Gesperrt**|`SFV:SKS`|Die Nachricht wurde als Spam markiert, bevor Sie von der Spamfilterung ausgewertet wurde. Beispielsweisedurch eine Nachrichtenfluss Regel.|
-  |**Erkannt**|`SFV:SPM`|Die Nachricht wurde von der Spamfilterung als Spam markiert.|
+  |**Erkannt**|`SFV:SPM`|Die Nachricht wurde vom Spamfilter als Spam markiert.|
   |**Nicht erkannt**|`SFV:NSPM`|Die Nachricht wurde durch Spamfilterung als nicht Spam gekennzeichnet.|
   |**Veröffentlicht**|`SFV:SKQ`|Die Nachricht hat die Spamfilterung übersprungen, da Sie aus der Quarantäne freigegeben wurde.|
   |**Mandanten zulässig**<sup>\*</sup>|`SFV:SKA`|Die Nachricht hat die Spamfilterung aufgrund der Einstellungen in einer Anti-Spam-Richtlinie übersprungen. Beispielsweise war der Absender in der Liste Zugelassene Absender oder zugelassene Domäne.|

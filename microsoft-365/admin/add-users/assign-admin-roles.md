@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Hier erfahren Sie, wie Sie einem Benutzer oder mehreren Benutzern in Ihrem Unternehmen Administratorrollen zuweisen, damit diese bestimmte Aufgaben im Admin Center ausführen können.
-ms.openlocfilehash: f5449bdb6b05e2a29393ad8e389c562953efd710
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 6d7a09ca9c515494eaf18ea144b7f67ce0003890
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307319"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131758"
 ---
 # <a name="assign-admin-roles"></a>Zuweisen von Administratorrollen
 
@@ -42,11 +42,11 @@ Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](ab
 
 Wenn Sie neue Benutzer hinzufügen, wenn Sie Ihnen keine Administratorrolle zuweisen, befinden Sie sich in der *Benutzerrolle* und verfügen nicht über Administratorrechte für eines der Microsoft Admin Center. Wenn Sie jedoch Hilfe beim erledigen von Aufgaben benötigen, können Sie einem Benutzer eine Administratorrolle zuweisen. Wenn Sie beispielsweise eine Person benötigen, die das Zurücksetzen von Kennwörtern unterstützt, sollten Sie Ihnen nicht die globale Administratorrolle zuweisen, sondern Ihnen die kennwortadministratorrolle zuweisen. Zu viele globale Administratoren mit unbegrenztem Zugriff auf Ihre Daten und Ihr Onlinegeschäft zu ernennen, stellt ein Sicherheitsrisiko dar.
 
-Sehen Sie sich ein kurzes Video über das Hinzufügen eines Administrators an.<br><br>
+## <a name="watch-add-an-adminbrbr"></a>Watch: Fügen Sie einen Administrator hinzu.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
 
 ## <a name="assign-admin-roles"></a>Zuweisen von Administratorrollen 
 
@@ -100,7 +100,6 @@ Sie können Benutzern eine Rolle auf zwei verschiedene Arten zuweisen:
 
 ::: moniker-end
 
-
 ## <a name="assign-admin-roles-to-multiple-users"></a>Zuweisen von Administratorrollen zu mehreren Benutzern
 
 Wenn Sie PowerShell kennen, lesen Sie [Zuweisen von Rollen zu Benutzerkonten mit PowerShell](https://go.microsoft.com/fwlink/?linkid=854257). PowerShell ist ideal für die Zuweisung von Rollen zu mehreren hundert Benutzern geeignet.
@@ -108,7 +107,6 @@ Wenn Sie PowerShell kennen, lesen Sie [Zuweisen von Rollen zu Benutzerkonten mit
 Verwenden Sie die folgenden Anweisungen, um dutzenden Benutzern Rollen zuzuweisen.
 
 ::: moniker range="o365-worldwide"
-
 
 ## <a name="check-your-permissions"></a>Überprüfen der Berechtigungen
 

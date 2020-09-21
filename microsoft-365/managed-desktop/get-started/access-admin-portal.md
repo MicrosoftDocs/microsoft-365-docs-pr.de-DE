@@ -9,18 +9,26 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 2ac0bb01c1a941d460e92c7e75e765ceb85b2bc0
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: f57911276d74c6945027077404e1f83c2f5072fd
+ms.sourcegitcommit: eb905c5b4d7e71fc930a207357295b0160c4f065
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546574"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "48137035"
 ---
 # <a name="access-the-admin-portal"></a>Zugreifen auf das Verwaltungsportal
 
 Ihr Gateway zum Microsoft Managed Desktop-Dienst ist das Microsoft [Azure-Portal](https://portal.azure.com). Weitere Informationen zum verwenden und Anpassen Ihrer Azure-Portal-Erfahrung im Allgemeinen finden Sie in der [Azure-Portal Dokumentation](https://docs.microsoft.com/azure/azure-portal/). Verfügbar in Vorschau jetzt können Sie auch Microsoft Managed Desktop im [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)finden. Wenn Sie mit den Funktionen dieses Portals für die Geräteverwaltung nicht vertraut sind, lesen Sie die [Microsoft Endpoint Manager-Dokumentation](https://docs.microsoft.com/mem/).
 
-Ihr Administratorkonto benötigt spezifische Berechtigungen, um auf die administrativen Funktionen von Microsoft Managed Desktop im Azure-Portal oder Microsoft Endpoint Manager zugreifen zu können. Sie können den Administratorzugriff auf diese Features in Ihrer Organisation mithilfe der rollenbasierten Zugriffssteuerung (Role-Based Access Control, RBAC) verwalten. Mehrere Azure AD Administratorrollen und integrierte benutzerdefinierte Rollen stehen zur Verfügung, um eine präzisere Steuerung verschiedener Features im Verwaltungsportal von Microsoft Managed Desktop bereitzustellen. Weitere Informationen zu Azure Active Directory Rollen finden Sie unter [Administrator Role Permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). Im Gegensatz zu Aad-Administratorrollen, die für eine Vielzahl von Microsoft-Produkten und-Diensten gelten, sind benutzerdefinierte rollenspezifisch für Microsoft Managed Desktop und garantieren nur den Zugriff auf die Administratorfunktionen für diesen Dienst. Administratoren können Benutzer benutzerdefinierte Rollen einzeln oder in Kombination mit Aad-Administratorrollen zuweisen, um Microsoft Managed Desktop-Berechtigungen zu vorhandenen Administratorkonten hinzuzufügen.
+> [!NOTE]
+> Wie auch immer Sie sich für den Zugriff auf Microsoft Managed Desktop entscheiden, in [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) oder im [Azure-Portal](https://portal.azure.com)werden die folgenden Browser unterstützt:
+> - Microsoft Edge (neueste Version)
+> - Microsoft Internet Explorer 11
+> - Safari (neueste Version, nur Mac)
+> - Chrome (neueste Version)
+> - Firefox (neueste Version)
+
+Ihr Administratorkonto benötigt spezifische Berechtigungen, um auf die administrativen Funktionen von Microsoft Managed Desktop im Azure-Portal oder Microsoft Endpoint Manager zugreifen zu können. Sie können den Administratorzugriff auf diese Features in Ihrer Organisation mithilfe der rollenbasierten Zugriffssteuerung (Role-Based Access Control, RBAC) verwalten. Mehrere Azure Active Directory (Azure AD)-Administratorrollen und integrierte benutzerdefinierte Rollen stehen zur Verfügung, um eine präzisere Steuerung verschiedener Features im Verwaltungsportal von Microsoft Managed Desktop bereitzustellen. Weitere Informationen zu Azure Active Directory Rollen finden Sie unter [Administrator Role Permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). Im Gegensatz zu Azure AD Administratorrollen, die für eine Vielzahl von Microsoft-Produkten und-Diensten gelten, sind benutzerdefinierte rollenspezifisch für Microsoft Managed Desktop und garantieren nur den Zugriff auf die Administratorfunktionen für diesen Dienst. Administratoren können Benutzer benutzerdefinierte Rollen einzeln oder in Kombination mit Azure AD Administratorrollen zuweisen, um Microsoft Managed Desktop-Berechtigungen zu vorhandenen Administratorkonten hinzuzufügen.
 
 Jede der folgenden Rollen kann zugewiesen werden, um unterschiedliche Zugriffsebenen bereitzustellen:
 

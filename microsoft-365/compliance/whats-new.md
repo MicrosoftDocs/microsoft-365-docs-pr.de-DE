@@ -1,5 +1,5 @@
 ---
-title: Neuerungen in der Microsoft 365-Compliance
+title: Neuerungen in Microsoft 365 Compliance
 f1.keywords:
 - NOCSH
 ms.author: brendonb
@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 description: Unabhängig davon, ob neue Lösungen zum Compliance Center hinzugefügt werden, vorhandene Funktionen auf der Grundlage Ihres Feedbacks aktualisiert werden oder eine aktualisierte Dokumentation bereitgestellt wird, hilft Ihnen Microsoft 365, die ständig wechselnde Compliance-Landschaft zu überwachen. Finden Sie heraus, was wir diesen Monat vorhaben.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 750d8274faa5e68f8d36006f8ccf6d7fa55f8250
-ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
+ms.openlocfilehash: 7d5e1bb67d6adc1b3c25aea8f468a23ed5c1019a
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47336668"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48132035"
 ---
-# <a name="whats-new-in-microsoft-365-compliance"></a>Neuerungen in der Microsoft 365-Compliance
+# <a name="whats-new-in-microsoft-365-compliance"></a>Neuerungen in Microsoft 365 Compliance
 
 Unabhängig davon, ob neue Lösungen zum [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md)hinzugefügt, vorhandene Features auf der Grundlage Ihres Feedbacks aktualisiert werden oder eine aktualisierte Dokumentation bereitgestellt wird, hilft Ihnen Microsoft 365, die ständig wechselnde Compliance-Landschaft zu überwachen. Sehen Sie sich die folgenden Informationen an, um zu erfahren, was in der Microsoft 365-Compliance heute neu ist. 
 
@@ -269,7 +269,7 @@ Hier ist eine Zusammenfassung der neuen Lösungen, die Sie vorfinden. Behalten S
 |Lösungskatalog (Vorschau) <br/>|Der Lösungskatalog ist Ihre zentrale Anlaufstelle, um unsere Compliance- und Risikomanagementlösungen zu erkunden, sich darüber zu informieren und rasch einzusteigen. Der Katalog gliedert sich in drei Compliancekategorien, von denen jede Details zu den Lösungen enthält, die diese Kategorie ausmachen. Zu den Kategorien zählen Informationsschutz und Governance, Insider-Risikomanagement sowie Entdeckung und Reaktion <br/>|[Übersicht über den Lösungskatalog (Vorschau)](microsoft-365-solution-catalog.md)|
 |Kommunikationscompliance (Vorschau) <br/>|Die Kommunikationcompliance ist Bestandteil der neuen Kategorie "Insider-Risikomanagement", die Ihnen hilft, Kommunikationsrisiken zu minimieren, indem Sie unzulässige Nachrichten in Ihrer Organisation erkennen und erfassen sowie Abhilfemaßnahmen treffen. Die Lösung erweitert die Möglichkeiten von Aufsichtsrichtlinien in Office 365 durch die Einführung verschiedener neuer Verbesserungen wie intelligenten Vorlagen, flexiblen Abhilfe-Workflows und umsetzbaren Erkenntnissen. <br/>|[Kommunikationscompliance in Microsoft 365 (Vorschau)](communication-compliance.md)|
 |Datenklassifizierung (Vorschau) <br/>|Unsere neue Seite „Datenklassifizierung“ enthält aussagekräftige Erkenntnisse und Tools, die Ihnen bei der Ermittelung und Auswertung helfen, wie vertrauliche Informationen und Bezeichnungen (Aufbewahrung und Vertraulichkeit) in Inhalten im gesamten Unternehmen verwendet werden. Überprüfen Sie Inhalte, die vertrauliche Informationen enthalten oder auf die Bezeichnungen angewendet wurden, untersuchen Sie die Bezeichnungsaktivitäten an Microsoft 365-Speicherorten, erstellen Sie benutzerdefinierte Typen vertraulicher Informationen und vieles mehr.<br/>|[Übersicht über die Datenklassifizierung (Vorschau)](data-classification-overview.md)|
-|Trainierbare Klassifizierer (Vorschau) <br/>|Dieses leistungsstarke neue Tool verwendet unser Machine Learning-Modul, um Kategorien von Inhalten in Ihrer Organisation zu identifizieren, z. B. regulatorische Dokumente oder Mitarbeiterverträge. Nach der Erstellung können Klassifizierer in mehreren Compliancelösungen verwendet werden, um verwandte Inhalte zu erkennen und zu klassifizieren, zu schützen, aufzubewahren und mehr.<br/>|[Erste Schritte mit trainierbaren Klassifizierern (Vorschau)](classifier-getting-started-with.md)|
+|Trainierbare Klassifizierer (Vorschau) <br/>|Dieses leistungsstarke neue Tool verwendet unser Machine Learning-Modul, um Kategorien von Inhalten in Ihrer Organisation zu identifizieren, z. B. regulatorische Dokumente oder Mitarbeiterverträge. Nach der Erstellung können Klassifizierer in mehreren Compliancelösungen verwendet werden, um verwandte Inhalte zu erkennen und zu klassifizieren, zu schützen, aufzubewahren und mehr.<br/>|[Informationen zu Schulungs Klassifizierern (Vorschau)](classifier-learn-about.md)|
 
 #### <a name="updated-compliance-solutions"></a>Aktualisierte Compliancelösungen
 

@@ -19,15 +19,15 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Erfahren Sie, wie Sie Ihre Organisation vor Kennwortangriffen schützen und warum Sie häufig verwendete Kennwörter verbieten und die risikobasierte mehrstufige Authentifizierung aktivieren sollten.
-ms.openlocfilehash: 1d6e399acb83751ec6a45eb0c811dedec394127e
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 0ae26dc27cc698c24d999acde03f63f9cfead081
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45015923"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131942"
 ---
 # <a name="password-policy-recommendations"></a>Empfehlungen für Kennwortrichtlinien
- 
+
 Als Administrator einer Organisation sind Sie für das Einrichten der Kennwortrichtlinie für Benutzer in Ihrer Organisation verantwortlich. das Festlegen der Kennwortrichtlinie kann kompliziert und verwirrend sein, und dieser Artikel enthält Empfehlungen, wie Sie Ihre Organisation besser vor Kennwortangriffen schützen können.
   
 Um zu ermitteln, wie oft Microsoft 365-Kennwörter in Ihrer Organisation ablaufen, lesen Sie die Informationen unter [Festlegen der Kennwortablaufrichtlinie für Microsoft 365](../manage/set-password-expiration-policy.md).
@@ -78,11 +78,11 @@ Dies sind einige der am häufigsten verwendeten Kennwortverwaltungspraktiken, ab
   
 ### <a name="password-expiration-requirements-for-users"></a>Anforderungen für den Ablauf von Benutzerkennwörtern
 
-Anforderungen für den Ablauf von Kennwörtern schaden mehr als dass sie nützen, da diese Anforderungen die Benutzer dazu veranlassen, vorhersagbare Passwörter zu wählen, die aus aufeinanderfolgenden Wörtern und Zahlen bestehen, die eng miteinander verwandt sind. In diesen Fällen kann das nächste Kennwort anhand des vorherigen Kennwortes vorhergesagt werden. Anforderungen für den Ablauf von Kennwörtern bieten keine Vorteile hinsichtlich der Abwehr von Angriffen, da Cyberkriminelle Anmeldeinformationen, sobald sie diese herausgefunden haben, fast immer sofort verwenden.
+Anforderungen für den Ablauf von Kennwörtern schaden mehr als dass sie nützen, da diese Anforderungen die Benutzer dazu veranlassen, vorhersagbare Passwörter zu wählen, die aus aufeinanderfolgenden Wörtern und Zahlen bestehen, die eng miteinander verwandt sind. In diesen Fällen kann das nächste Kennwort anhand des vorherigen Kennwortes vorhergesagt werden. Anforderungen für den Ablauf von Kennwörtern bieten keine Vorteile hinsichtlich der Abwehr von Angriffen, da Cyberkriminelle Anmeldeinformationen, sobald sie diese herausgefunden haben, fast immer sofort verwenden. Weitere Informationen finden Sie unter [Zeit zum Überdenken der obligatorischen Kennwortänderungen](https://go.microsoft.com/fwlink/p/?linkid=861018).
   
 ### <a name="requiring-long-passwords"></a>Anforderung an die Länge von Kennwörtern
 
-Anforderung an die Länge von Kennwörtern (mehr als ca. 10 Zeichen) können zu einem vorhersehbaren und nicht wünschenswerten Benutzerverhalten führen. Benutzer, die gezwungen werden, ein Kennwort mit 16 Zeichen zu verwenden, neigen beispielsweise dazu, sich wiederholende Muster wie **viervierviervier** oder **KennwortKennwort** auszuwählen, die die Anforderung an die Zeichenlänge erfüllen, aber nicht schwer zu erraten sind. Darüber hinaus erhöhen Längenanforderungen die Wahrscheinlichkeit, dass Benutzer andere unsichere Methoden verwenden, wie z. B., ihre Kennwörter aufzuschreiben, wiederzuverwenden oder unverschlüsselt in ihren Dokumenten zu speichern. Um Benutzer zu ermutigen, eindeutige Kennwörter zu erstellen, empfehlen wir eine angemessene Mindestlängenanforderung von 8 Zeichen. 
+Anforderung an die Länge von Kennwörtern (mehr als ca. 10 Zeichen) können zu einem vorhersehbaren und nicht wünschenswerten Benutzerverhalten führen. Benutzer, die gezwungen werden, ein Kennwort mit 16 Zeichen zu verwenden, neigen beispielsweise dazu, sich wiederholende Muster wie **viervierviervier** oder **KennwortKennwort** auszuwählen, die die Anforderung an die Zeichenlänge erfüllen, aber nicht schwer zu erraten sind. Darüber hinaus erhöhen Längenanforderungen die Wahrscheinlichkeit, dass Benutzer andere unsichere Methoden verwenden, wie z. B., ihre Kennwörter aufzuschreiben, wiederzuverwenden oder unverschlüsselt in ihren Dokumenten zu speichern. Um Benutzer zu ermutigen, eindeutige Kennwörter zu erstellen, empfehlen wir eine angemessene Mindestlängenanforderung von 8 Zeichen.
   
 ### <a name="requiring-the-use-of-multiple-character-sets"></a>Fordern der Verwendung von mehreren Zeichensätzen
 
@@ -131,8 +131,6 @@ Durch die risikobasierte mehrstufige Authentifizierung wird sichergestellt, dass
 - [Zeit zum Überdenken der obligatorischen Kennwortänderungen](https://go.microsoft.com/fwlink/p/?linkid=861018)
 
 - [Liste der schlechtesten Kennwörter 2015](https://go.microsoft.com/fwlink/p/?linkid=861020)
-
-- [Herunterladen von Dateien aus dem Internet](https://go.microsoft.com/fwlink/p/?linkid=861029)
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
