@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 518afae2d241cca5fdff054faeb07d25e37eb585
-ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.openlocfilehash: aa4767deac30641e39880c2eeb001c2dc884540a
+ms.sourcegitcommit: dcbcd5ef278949c777059b0aa6db072e821f72dd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47956434"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48173320"
 ---
 # <a name="run-your-microsoft-threat-protection-attack-simulations"></a>Ausführen von Microsoft Threat Protection-Angriffssimulationen  
 
@@ -33,9 +33,9 @@ Nachdem Sie Ihre Pilotumgebung vorbereitet haben, ist es an der Zeit, die Micros
 
 In dieser Simulation beginnt unser Beispielszenario mit einem PowerShell-Skript. Möglicherweise wird ein Benutzer zum Ausführen eines Skripts ausgetrickst. Oder das Skript kann von einer Remoteverbindung mit einem anderen Computer als einem zuvor infizierten Gerät ausgeführt werden – dem Angreifer, der versucht, sich seitlich im Netzwerk zu positionieren. Die Erkennung dieser Skripts kann schwierig sein, da Administratoren auch häufig Skripts remote ausführen, um verschiedene administrative Aktivitäten auszuführen.
 
-Während der Simulation injiziert der Angriff Shellcode in einen scheinbar unschuldigen Prozess. In diesem Szenario verwenden wir notepad.exe. Wir haben diesen Prozess für die Simulation ausgewählt, aber Angreifer werden wahrscheinlicher auf einen langwierigen Systemprozess wie svchost.exe Zielen. Der Shellcode fährt dann mit dem Command-and-Control (C2)-Server des Angreifers in Verbindung, um Anweisungen zum Fortfahren zu erhalten. Außerdem versucht das Skript, Aufklärungs Abfragen für den Domänencontroller (DC) auszuführen. Dadurch kann ein Angreifer Informationen zu aktuellen Benutzeranmeldeinformationen abrufen. Wenn Angreifer über diese Informationen verfügen, können Sie sich seitlich im Netzwerk umziehen, um zu einem bestimmten vertraulichen Konto zu gelangen.
-
 ![Datei übergreifender PowerShell-Angriff mit Prozess Injektion und SMB-Aufklärung-Angriffs Diagramm](../../media/mtp/mtpdiydiagram.png)
+
+Während der Simulation injiziert der Angriff Shellcode in einen scheinbar unschuldigen Prozess. In diesem Szenario verwenden wir notepad.exe. Wir haben diesen Prozess für die Simulation ausgewählt, aber Angreifer werden wahrscheinlicher auf einen langwierigen Systemprozess wie svchost.exe Zielen. Der Shellcode fährt dann mit dem Command-and-Control (C2)-Server des Angreifers in Verbindung, um Anweisungen zum Fortfahren zu erhalten. Außerdem versucht das Skript, Aufklärungs Abfragen für den Domänencontroller (DC) auszuführen. Dadurch kann ein Angreifer Informationen zu aktuellen Benutzeranmeldeinformationen abrufen. Wenn Angreifer über diese Informationen verfügen, können Sie sich seitlich im Netzwerk umziehen, um zu einem bestimmten vertraulichen Konto zu gelangen.
 
 >[!IMPORTANT]
 >Um optimale Ergebnisse zu erzielen, folgen Sie den Anweisungen zur Angriffssimulation so genau wie möglich.
@@ -109,9 +109,9 @@ Wenn Sie die Funktion für automatische Vorfall-und Reaktionsfunktionen in Aktio
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-Wenn Sie zur SOC Analyst-Perspektive wechseln, können Sie nun mit der Untersuchung des Angriffs im Microsoft Threat Protection-Portal beginnen. 
+Wenn Sie zur SOC Analyst-Perspektive wechseln, können Sie nun mit der Untersuchung des Angriffs im Microsoft 365 Security Center-Portal beginnen. 
 
-1.  Öffnen Sie die Vorfall Warteschlange des [Microsoft Threat Protection-Portals](https://security.microsoft.com/incidents) von jedem Gerät aus.
+1.  Öffnen Sie die Warteschlange des [Microsoft 365-Sicherheits Center-Portals](https://security.microsoft.com/incidents) von jedem Gerät aus.
 
 2.  Navigieren Sie im Menü zu **Vorfälle** . 
 
@@ -230,7 +230,7 @@ Klicken Sie auf den Benutzernamen, um die Profilseite des Benutzers zu öffnen, 
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4BzwB]
 
-Navigieren Sie zurück zu dem Vorfall im Microsoft Threat Protection-Portal. Die Registerkarte unter **suchungen** auf der Seite **Vorfall** zeigt die automatisierten Untersuchungen, die von Azure ATP und Microsoft Defender ATP ausgelöst wurden. Im folgenden Screenshot wird nur die automatische Untersuchung angezeigt, die von Microsoft Defender ATP ausgelöst wurde. Standardmäßig korrigiert Microsoft Defender ATP automatisch die in der Warteschlange gefundenen Artefakte, die eine Korrektur erfordern.
+Navigieren Sie zurück zu dem Vorfall im Microsoft 365-Sicherheits Center-Portal. Die Registerkarte unter **suchungen** auf der Seite **Vorfall** zeigt die automatisierten Untersuchungen, die von Azure ATP und Microsoft Defender ATP ausgelöst wurden. Im folgenden Screenshot wird nur die automatische Untersuchung angezeigt, die von Microsoft Defender ATP ausgelöst wurde. Standardmäßig korrigiert Microsoft Defender ATP automatisch die in der Warteschlange gefundenen Artefakte, die eine Korrektur erfordern.
 
 ![Screenshot von automatisierten Untersuchungen im Zusammenhang mit dem Vorfall](../../media/mtp/fig14.png)
 
@@ -255,7 +255,7 @@ Schließen Sie den Vorfall, nachdem die Untersuchung abgeschlossen und zur Korre
 
 Klicken Sie auf **Vorfall verwalten**. Legen Sie den Status auf **Vorfall auflösen** fest, und wählen Sie die entsprechende Klassifizierung aus.
 
-Nachdem der Vorfall behoben wurde, werden alle zugehörigen Warnungen in Microsoft Threat Protection und in den dazugehörigen Portalen geschlossen.
+Nachdem der Vorfall behoben wurde, werden alle zugehörigen Warnungen im Microsoft 365 Security Center und in den dazugehörigen Portalen geschlossen.
 
 ![Screenshot der Seite "Vorfälle" mit dem Dialogfeld "Vorfall verwalten", in dem Sie auf den Switch klicken können, um den Vorfall zu lösen](../../media/mtp/fig16.png) 
 
@@ -289,7 +289,7 @@ Für dieses Szenario ist ein einzelnes internes Postfach und Gerät erforderlich
 1.  Öffnen Sie das Security.Microsoft.com-Portal.
 2.  Navigieren Sie zu **Hunting > Advanced Hunting**.
 
-    ![Screenshot der erweiterten Suche in der Navigationsleiste des M365-Sicherheits Portals](../../media/mtp/fig17.png) 
+    ![Screenshot der erweiterten Suche in der Navigationsleiste des M365 Security Center-Portals](../../media/mtp/fig17.png) 
 
 3.  Erstellen Sie eine Abfrage, die mit dem Erfassen von e-Mail-Ereignissen beginnt.
     a.  Wählen Sie im Bereich Abfrage die Option neu aus.
