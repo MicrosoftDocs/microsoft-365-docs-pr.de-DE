@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren erfahren, wie Sie mithilfe des Angriffs Simulators simulierte Phishing-und Kennwortangriffe in Ihren Microsoft 365 E5-oder ATP-Plan-2-Organisationen ausführen können.
-ms.openlocfilehash: 9fc28cdecc07f5325918e3d5176e52d1051a626c
-ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
+ms.openlocfilehash: 86d365036daa4f24d2c2e3b8e64b5836e291889f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47426993"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200389"
 ---
 # <a name="attack-simulator-in-atp"></a>Angriffs Simulator in ATP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Wenn Ihre Organisation Office 365 Advanced Threat Protection (ATP) Plan 2, einschließlich der [Funktionen zur Ermittlung und Reaktion von Bedrohungen](office-365-ti.md), verfügt, können Sie den Angriffs Simulator im Security & Compliance Center verwenden, um realistische Angriffsszenarien in Ihrer Organisation auszuführen. Diese simulierten Angriffe können Sie bei der Identifizierung und Suche nach anfälligen Benutzern unterstützen, bevor ein echter Angriff Ihr Endergebnis beeinträchtigt. Lesen Sie diesen Artikel, um mehr zu erfahren.
 

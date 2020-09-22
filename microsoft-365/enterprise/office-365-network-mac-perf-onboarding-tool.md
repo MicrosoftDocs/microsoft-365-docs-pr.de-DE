@@ -1,9 +1,9 @@
 ---
-title: Microsoft 365 Network Connectivity Test (Vorschau)
+title: Microsoft 365 Network Connectivity Test Tool (Vorschau)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/17/2020
+ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,15 +13,15 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Microsoft 365 Network Connectivity Test (Vorschau)
-ms.openlocfilehash: 40a46ecb39366c64c99077e90bb35c5056f36b9d
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+description: Microsoft 365 Network Connectivity Test Tool (Vorschau)
+ms.openlocfilehash: 72f42a71ec44d165a24187edaf03aa62d330479b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171350"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200817"
 ---
-# <a name="microsoft-365-network-connectivity-test-preview"></a>Microsoft 365 Network Connectivity Test (Vorschau)
+# <a name="microsoft-365-network-connectivity-test-tool-preview"></a>Microsoft 365 Network Connectivity Test Tool (Vorschau)
 
 Das Microsoft 365 Network Connectivity Test Tool befindet sich unter <https://connectivity.office.com> . Es handelt sich um ein außerordentliches Tool für die Netzwerkbewertung und Informationen zum Netzwerk Einblicke, die im Microsoft 365 Admin Center unter **Health | Menü Konnektivität** .
 
@@ -193,7 +193,7 @@ Während des 15MB-Downloads Messen wir die TCP-Wartezeit für die SharePoint-Die
 
 Dies zeigt den DNS-Namen und die IP-Adresse des SharePoint-Dienst-Front-Door-Servers an, an den Sie weitergeleitet wurden. Er wird nur für Informationen bereitgestellt, und es gibt keine zugeordnete Netzwerk Einblicke.
 
-### <a name="microsoft-teams"></a>Microsoft Teams
+### <a name="microsoft-teams"></a>Microsoft Teams
 
 In diesem Abschnitt werden Testergebnisse im Zusammenhang mit Microsoft Teams aufgeführt.
 
@@ -249,7 +249,7 @@ Es handelt sich derzeit um eine Vorschau, und wir planen, Updates regelmäßig b
 
 ### <a name="what-is-required-to-run-the-advanced-test-client"></a>Was ist erforderlich, um den Advanced Test-Client auszuführen?
 
-Der erweiterte Testclient erfordert .net Core 3,1 Desktop Runtime. Wenn Sie den Advanced Test-Client ohne installiert ausführen, werden Sie zur [Seite .net Core 3,1 Installer](https://dotnet.microsoft.com/download/dotnet-core/3.1)weitergeleitet. Stellen Sie sicher, dass Sie die Desktop Laufzeit und nicht das SDK oder die ASP.net-Kern Laufzeit installieren, die höher auf der Seite sind. Administrator Berechtigungen für den Computer sind erforderlich, um .net Core zu installieren. 
+Der erweiterte Testclient erfordert .net Core 3,1 Desktop Runtime. Wenn Sie den Advanced Test-Client ohne installiert ausführen, werden Sie zur [Seite .net Core 3,1 Installer](https://dotnet.microsoft.com/download/dotnet-core/3.1)weitergeleitet. Stellen Sie sicher, dass Sie die Desktop Laufzeit und nicht das SDK oder die ASP.net-Kern Laufzeit installieren, die höher auf der Seite sind. Administrator Berechtigungen für den Computer sind erforderlich, um .net Core zu installieren.
 
 ### <a name="what-is-microsoft-365-service-front-door"></a>Was ist Microsoft 365-Dienst-Haustür?
 
@@ -267,7 +267,7 @@ Der Internet Ausgangsstandort ist der Ort, an dem Ihr Netzwerkdatenverkehr Ihr U
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Empfehlungen zur Netzwerkleistung im Microsoft 365 Admin Center (Vorschau)](office-365-network-mac-perf-overview.md)
+[Netzwerkkonnektivität im Microsoft 365 Admin Center (Vorschau)](office-365-network-mac-perf-overview.md)
 
 [Microsoft 365 Network Performance Insights (Vorschau)](office-365-network-mac-perf-insights.md)
 

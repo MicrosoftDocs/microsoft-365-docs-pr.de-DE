@@ -15,14 +15,17 @@ search.appverid:
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: Administratoren können sich über die Verwendung von S/MIME (Secure/Multipurpose Internet Mail Extensions) in Exchange Online informieren, um e-Mails zu verschlüsseln und Digital zu signieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ca865fa8ef658b4715d18e09fe9cbc1cffb201e6
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: 8dce3e3fa3d24e1773f51f96e19a58d8a3b2efce
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845920"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200607"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>S/MIME für die Nachrichtensignierung und-Verschlüsselung in Exchange Online
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 S/MIME (Secure/Multipurpose Internet Mail Extensions) ist eine allgemein akzeptierte Methode (oder genauer gesagt ein Protokoll) zum Senden von digital signierten und verschlüsselten Nachrichten. S/MIME ermöglicht Ihnen das Verschlüsseln und digitale Signieren von E-Mails. Wenn Sie S/MIME mit einer e-Mail-Nachricht verwenden, hilft es den Personen, die diese Nachricht erhalten, sicherzustellen, dass das, was Sie in Ihrem Posteingang sehen, die exakte Nachricht ist, die mit dem Absender gestartet wurde. Außerdem können Benutzer, die Nachrichten empfangen, sicher sein, dass die Nachricht vom jeweiligen Absender stammt und nicht von einer Person, die vorgibt, der Absender zu sein. Dafür bietet S/MIME kryptografische Sicherheitsdienste, wie Authentifizierung, Nachrichtenintegrität und Ursprungszulassung (anhand von digitalen Signaturen). Es hilft auch, die Datenschutz-und Datensicherheit (mithilfe von Verschlüsselung) für elektronisches Messaging zu verbessern. Genauere Hintergrundinformationen zur Geschichte und Architektur von S/MIME im Kontext von E-Mails finden Sie unter [Informationen zu S/MIME](https://docs.microsoft.com/previous-versions/tn-archive/aa995740(v=exchg.65)).
 

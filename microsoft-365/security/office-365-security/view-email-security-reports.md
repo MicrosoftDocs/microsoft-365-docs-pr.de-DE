@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie e-Mail-Sicherheitsberichte für Ihre Organisation suchen und verwenden. E-Mail-Sicherheitsberichte sind im Security & Compliance Center verfügbar.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a87cee31b4e0251aea8eb39640d37184ccd0ee96
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 588c30ca07684636661c7946b2418b75574c8cbd
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104522"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199217"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Anzeigen von E-Mail-Sicherheitsberichten im Security & Compliance Center
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Im [Security & Compliance Center](https://protection.office.com) stehen eine Vielzahl von Berichten zur Verfügung, um zu sehen, wie e-Mail-Sicherheitsfunktionen wie Antispam-, Antischadsoftware-und Verschlüsselungsfeatures in Microsoft 365 Ihre Organisation schützen. Wenn Sie über die [erforderlichen Berechtigungen](#what-permissions-are-needed-to-view-these-reports)verfügen, können Sie diese Berichte im Security & Compliance Center anzeigen, indem Sie **Reports** zum \> **Dashboard**Berichte wechseln. Wenn Sie direkt zum Dashboard Berichte wechseln möchten, öffnen Sie <https://protection.office.com/insightdashboard> .
 
@@ -58,13 +61,13 @@ Wenn Sie auf **Detailtabelle anzeigen**klicken, werden die folgenden Details ang
 
 - **Erstellungszeit**
 - **Benutzer-ID**
-- **Aktion**
+- **Action**
 
 Klicken Sie auf **Bericht anzeigen**, um zur Berichtsansicht zurückzukehren.
 
 ## <a name="encryption-report"></a>Verschlüsselungs Bericht
 
-Der **Verschlüsselungs Bericht** steht in EoP (Abonnements mit Postfächern in Exchange Online oder eigenständigen EoP ohne Exchange Online Postfächer) zur Verfügung. Das Sicherheitsteam Ihrer Organisation kann Informationen in diesem Bericht verwenden, um Muster zu identifizieren und Richtlinien für vertrauliche e-Mail-Nachrichten proaktiv anzuwenden oder anzupassen. Beispiel:
+Der **Verschlüsselungs Bericht** steht in EoP (Abonnements mit Postfächern in Exchange Online oder eigenständigen EoP ohne Exchange Online Postfächer) zur Verfügung. Das Sicherheitsteam Ihrer Organisation kann Informationen in diesem Bericht verwenden, um Muster zu identifizieren und Richtlinien für vertrauliche e-Mail-Nachrichten proaktiv anzuwenden oder anzupassen. Zum Beispiel:
 
 - Wenn eine große Anzahl von von Benutzern verschlüsselten e-Mail-Nachrichten angezeigt wird, möchten Sie möglicherweise eine Verschlüsselungsrichtlinie zum Automatisieren der Verschlüsselung für bestimmte Anwendungsfälle hinzufügen. Weitere Informationen finden Sie unter [Definieren von Nachrichtenfluss Regeln zum Verschlüsseln von e-Mail-Nachrichten in Microsoft 365](../../compliance/define-mail-flow-rules-to-encrypt-email.md).
 
@@ -96,7 +99,7 @@ Sie können die folgenden Filter für das Diagramm verwenden:
   - **Nicht weiterleiten**
   - **Nur verschlüsseln**
   - **Vorheriges OM**
-  - **Benutzerdefiniert**
+  - **Custom**
 
   Wenn Sie auf **Filter**klicken, können Sie das Diagramm mit den folgenden Filtern ändern:
 
@@ -221,7 +224,7 @@ Wenn Sie in einer Berichtsansicht auf **Detailtabelle anzeigen** klicken, werden
 - **Absenderadresse**
 - **Empfängeradresse**
 - **Ereignistyp**
-- **Aktion**
+- **Action**
 - **Betreff**
 
 Wenn Sie in einer Detailtabelle auf **Filter** klicken, können Sie die Ergebnisse mit den folgenden Filtern ändern:
@@ -260,7 +263,7 @@ Wenn Sie auf **Detailtabelle anzeigen**klicken, werden die folgenden Details ang
 - **Gefälschter Absender**
 - **Echter Absender**
 - **Sender-IP**
-- **Aktion**
+- **Action**
 - **Nachrichtenanzahl**
 
 Klicken Sie auf **Bericht anzeigen**, um zur Berichtsansicht zurückzukehren.
@@ -371,7 +374,7 @@ Wenn Sie auf **Detailtabelle anzeigen**klicken, hängt die Anzeige der angezeigt
 - **Anzeigen von Daten nach: Inhalt \> Schadsoftware**:
 
   - **Date**
-  - **Ort**
+  - **Standort**
   - **Regie**
   - **Name der Schadsoftware**
 

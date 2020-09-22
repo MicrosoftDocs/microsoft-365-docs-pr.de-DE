@@ -15,14 +15,17 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 90d9fcc45e768abd5fddef948fcafdaf9e77f5fb
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: eb765cf353569e9907352fb3146a12ffe7b34df4
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866719"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199959"
 ---
 # <a name="monitor-and-view-reports-in-the-microsoft-365-security-center"></a>Überwachen und Anzeigen von Berichten im Microsoft 365 Security Center
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 Das Microsoft 365 Security Center bietet eine Zusammenfassung der Schutz-und Sicherheitsstatus in Ihrer Microsoft 365-Umgebung.
 

@@ -15,14 +15,17 @@ ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie Threat Explorer und den Bericht über Echt Zeit Erkennungen verwenden, um Bedrohungen im Security Compliance Center zu untersuchen und auf diese zu reagieren &amp; .
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5064c3a250ba9e7dcf48d6bc360102b3ab4b8504
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 5500a7bff0766159384604e9973b5ad81b3dbc6f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656945"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200107"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Ansichten im Threat Explorer und Echt Zeit Erkennungen
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ![Sicherheitsrisiken-Explorer](../../media/ThreatExplorerFirstOpened.png)
 

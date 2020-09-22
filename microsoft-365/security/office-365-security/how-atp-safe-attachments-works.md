@@ -17,14 +17,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie Sie Ihre Organisation vor bösartigen Dateien mit ATP-Tresoranlagen für Office 365 schützen können.
-ms.openlocfilehash: f4f355d4def1f108a72854c3796e0e9373cb5ef1
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: d13674a5d3e769fc10a1f5fd2fd80a4f07c063de
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819400"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201473"
 ---
 # <a name="how-atp-safe-attachments-works"></a>Funktionsweise sicherer Anlagen in ATP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Das Feature "ATP-sichere Anlagen" prüft e-Mail-Anlagen für Personen in Ihrer Organisation. Wenn eine Richtlinie für ATP-sichere Anlagen vorhanden ist und von dieser Richtlinie erfasste Personen Ihre e-Mails in Office 365 anzeigen, werden Ihre e-Mail-Anlagen überprüft, und es werden entsprechende Aktionen basierend auf Ihren Richtlinien für ATP-sichere Anlagen ausgeführt. Je nachdem, wie Ihre Richtlinien definiert sind, können Personen weiter arbeiten, ohne jemals zu wissen, dass Sie bösartige Dateien gesendet haben.
   

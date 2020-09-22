@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b6ac30f7e32bbec80952ad4f2104032886b11503
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 65e3a2609bc41ddeda95134874e5873e184a2a54
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45016343"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201159"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Aktivieren von Microsoft Threat Protection
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Gilt für:**
 - Microsoft Threat Protection

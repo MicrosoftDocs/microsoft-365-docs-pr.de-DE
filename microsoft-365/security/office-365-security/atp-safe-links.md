@@ -25,14 +25,17 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: In diesem Artikel erfahren Sie, wie Sie sichere Links zum Schutz Ihrer Organisation vor Phishing und anderen Angriffen verwenden.
-ms.openlocfilehash: d9b3c981cb282c286a5b6edcea367c8c57ffd4d3
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 486c19fa0ba47baadf7b3418608a644407e6e1d0
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307637"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200433"
 ---
 # <a name="atp-safe-links"></a>ATP-sichere Links
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ## <a name="overview-of-office-365-atp-safe-links"></a>Übersicht über Office 365 sichere ATP-Links
 

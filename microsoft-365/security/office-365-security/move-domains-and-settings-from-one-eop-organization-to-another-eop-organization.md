@@ -14,14 +14,17 @@ ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 ms.custom:
 - seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie, wie Sie Domänen und Einstellungen von einer Microsoft Exchange Online Protection (EoP)-Organisation (Mandant) zu einer anderen migrieren.
-ms.openlocfilehash: a33042631a5a5371e2d120f76f49cb2a46a638a3
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 141fb85bb7120f4e547c27f399d254847b19e3c2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827689"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200503"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>Verschieben von Domänen und Einstellungen zwischen EOP-Organisationen
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Änderungen in den Geschäftsanforderungen können manchmal erfordern, dass eine Microsoft Exchange Online Protection (EOP)-Organisation (ein Mandant) in zwei separate Organisationen unterteilt wird, zwei Organisationen in einer zusammengefasst oder Ihre Domänen und EOP-Einstellungen von einer Organisation zu einer anderen verschoben werden. Das Verschieben einer EOP-Organisaton zu einer zweiten EOP-Organisation kann ein Problem darstellen, doch mit ein paar einfachen Remote Windows PowerShell-Skripts und etwas Vorbereitung kann dies in einem relativ kleinen Wartungszeitfenster erreicht werden.
 
@@ -63,7 +66,7 @@ Die einfachste Möglichkeit zum Sammeln aller Einstellungen ist die Verwendung v
 
 Als Nächstes können Sie alle Einstellungen sammeln und sie in eine XML-Datei exportieren, um sie in den Zielmandanten zu importieren. Im Allgemeinen können Sie bei jeder Einstellung die Ausgabe des Cmdlets **Get** in das Cmdlet **Export-Clixml** übergeben, um die Einstellungen in XML-Dateien zu speichern, wie im folgenden Beispielcode dargestellt.
 
-Erstellen Sie in eigenständiger EoP-PowerShell ein Verzeichnis mit dem Namen Export an einem Speicherort, der leicht zu finden und in dieses Verzeichnis geändert werden kann. Beispiel:
+Erstellen Sie in eigenständiger EoP-PowerShell ein Verzeichnis mit dem Namen Export an einem Speicherort, der leicht zu finden und in dieses Verzeichnis geändert werden kann. Zum Beispiel:
 
 ```PowerShell
 mkdir C:\EOP\Export

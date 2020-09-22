@@ -3,7 +3,7 @@ title: Netzwerkkonnektivität im Microsoft 365 Admin Center (Vorschau)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/17/2020
+ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Übersicht über die Netzwerkkonnektivität im Microsoft 365 Admin Center (Vorschau)
-ms.openlocfilehash: 644efe53e862f6bbe98be7dca889bc3637084521
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: a51cfba962ff884afa634473c0523e49a92a56f5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171362"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200797"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Netzwerkkonnektivität im Microsoft 365 Admin Center (Vorschau)
 
@@ -63,7 +63,7 @@ Mess Muster und Office-Standorte sollten 24 Stunden nach der Erfüllung dieser V
 
 ### <a name="3-manually-gather-test-reports-with-the-microsoft-365-network-connectivity-test-tool"></a>3. Manuelles Sammeln von Testberichten mit dem Microsoft 365 Network Connectivity Test Tool
 
-Für diese Option müssen Sie eine Person an jedem Standort identifizieren. Bitten Sie Sie, zu [Microsoft 365 Network Connectivity Test](https://connectivity.office.com) auf einem Windows-Computer zu wechseln, für den Sie über Administratorrechte verfügen. Auf der Website müssen Sie sich bei Ihrem Office 365 Konto für dieselbe Organisation anmelden, für die Sie die Ergebnisse anzeigen möchten. Klicken Sie dann auf Testlauf ausführen. Während des Tests gibt es eine heruntergeladene Verbindungstest-exe. Sie müssen diese ebenfalls öffnen und ausführen. Sobald die Tests abgeschlossen sind, wird das Testergebnis in Office 365 hochgeladen.
+Für diese Option müssen Sie eine Person an jedem Standort identifizieren. Bitten Sie Sie, zu [Microsoft 365 Network Connectivity Test](https://connectivity.office.com) auf einem Windows-Computer zu wechseln, auf dem Sie über Administratorberechtigungen verfügen. Auf der Website müssen Sie sich bei Ihrem Office 365 Konto für dieselbe Organisation anmelden, für die Sie die Ergebnisse anzeigen möchten. Anschließend sollten Sie auf **Testlauf ausführen**klicken. Während des Tests gibt es eine heruntergeladene Verbindungstest-exe. Sie müssen diese ebenfalls öffnen und ausführen. Sobald die Tests abgeschlossen sind, wird das Testergebnis in Office 365 hochgeladen.
 
 Test Berichte werden mit einem Speicherort verknüpft, wenn Sie mit LAN-Subnetz-Informationen hinzugefügt wurden, andernfalls werden Sie nur am Ort der Stadt angezeigt.
 
@@ -174,7 +174,7 @@ Die Microsoft 365-Dienst-Haustür ist ein Einstiegspunkt im globalen Microsoft-N
 
 ### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>Was ist eine optimale Haustür für den Microsoft 365-Dienst?
 
-Eine optimale Microsoft 365-Dienst-Haustür ist eine, die Ihrem Netzwerk Ausgang am nächsten ist, in der Regel in ihrer Stadt oder in ihrer Metro-Region. Verwenden Sie den [Microsoft 365 Connectivity Test](office-365-network-mac-perf-onboarding-tool.md) , um den Speicherort Ihrer Haustür für den in-use-Microsoft 365-Dienst und die optimale Dienst-Haustür zu ermitteln. Wenn das Tool feststellt, dass Ihre in-use-Haustür optimal ist, verbinden Sie sich optimal mit dem globalen Netzwerk von Microsoft.
+Eine optimale Microsoft 365-Dienst-Haustür ist eine, die Ihrem Netzwerk Ausgang am nächsten ist, in der Regel in ihrer Stadt oder in ihrer Metro-Region. Verwenden Sie das [Microsoft 365 Connectivity Test Tool (Preview)](office-365-network-mac-perf-onboarding-tool.md) , um den Standort Ihres Microsoft 365-Dienst-Front-Door und der optimalen Service-Haustür zu ermitteln. Wenn das Tool feststellt, dass Ihre in-use-Haustür optimal ist, verbinden Sie sich optimal mit dem globalen Netzwerk von Microsoft.
 
 ### <a name="what-is-an-internet-egress-location"></a>Was ist ein Internet Ausstieg-Standort?
 
@@ -186,8 +186,6 @@ Der Internet Ausgangsstandort ist der Ort, an dem Ihr Netzwerkdatenverkehr Ihr U
 
 [Microsoft 365 Netzwerkbewertung (Vorschau)](office-365-network-mac-perf-score.md)
 
-[Microsoft 365 Connectivity Test im M365 Admin Center (Vorschau)](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365 Connectivity Test Tool (Vorschau)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365 Network Connectivity Location Services (Vorschau)](office-365-network-mac-location-services.md)
-
-[Microsoft 365 Network Connectivity Test Tool (Vorschau)](office-365-network-mac-perf-onboarding-tool.md)

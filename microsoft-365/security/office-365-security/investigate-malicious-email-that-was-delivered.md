@@ -19,14 +19,17 @@ ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie mithilfe von Bedrohungs Ermittlungs-und-Antwortfunktionen böswillige e-Mails suchen und untersuchen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 91f16c3aa7ba98467c52fb25e0597f346a810003
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 120cc32a2736858a0f0d99ab37f1d51c70a6071c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949264"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201913"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Untersuchen schädlicher e-Mails, die in Office 365 bereitgestellt wurden
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 [Office 365 Advanced Threat Protection](office-365-atp.md) ermöglicht es Ihnen, Aktivitäten zu untersuchen, die Personen in Ihrer Organisation gefährden, sowie Maßnahmen zum Schutz Ihrer Organisation zu ergreifen. Wenn Sie beispielsweise Teil des Sicherheitsteams Ihrer Organisation sind, können Sie nach verdächtigen e-Mail-Nachrichten suchen und diese untersuchen, die übermittelt wurden. Sie können dies mithilfe von [Threat Explorer (oder Echtzeiterkennung)](threat-explorer.md)durchführen.
 

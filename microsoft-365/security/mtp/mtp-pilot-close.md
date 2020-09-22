@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: d6e9dbc214cdbb7aaf6bf8922ca4eaf986f8a91c
-ms.sourcegitcommit: dcbcd5ef278949c777059b0aa6db072e821f72dd
+ms.openlocfilehash: 0a0c0c1dae1d7f03aa9c8328b3fb1b4bae587b9e
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48173284"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199709"
 ---
 # <a name="closing-and-summarizing-your-microsoft-threat-protection-pilot"></a>Schließen und zusammenfassen Ihres Microsoft Threat Protection-Pilotprojekts  
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Gilt für:**
 - Microsoft Threat Protection

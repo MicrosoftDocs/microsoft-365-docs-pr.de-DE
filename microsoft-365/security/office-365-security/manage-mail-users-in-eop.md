@@ -13,14 +13,17 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: In diesem Artikel erfahren Sie, wie Sie e-Mail-Benutzer in Exchange Online Protection (EoP) verwalten, einschließlich der Verwendung der Verzeichnissynchronisierung, der Exchange-Verwaltungskonsole und PowerShell zum Verwalten von Benutzern.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 64b7effadd96b6dc025677139c4303acd538dadb
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 56e6f8955b5993fb4b5064aa92cdde80a4c67ffe
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827075"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201783"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>Verwalten von E-Mail-Benutzern in EOP als eigenständige Lösung
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 In Organisationen mit eigenständigen Exchange Online Schutz (EoP) ohne Exchange Online Postfächer sind e-Mail-Benutzer der grundlegende Typ des Benutzerkontos. Ein e-Mail-Benutzer verfügt über Kontoanmeldeinformationen in ihrer eigenständigen EoP-Organisation und kann auf Ressourcen zugreifen (Berechtigungen zugewiesen). Die e-Mail-Adresse eines e-Mail-Benutzers ist extern (beispielsweise in Ihrer lokalen e-Mail-Umgebung).
 
@@ -113,7 +116,7 @@ Verwenden Sie die Registerkarte **Kontaktinformationen** , um die Kontaktinforma
   - **Office**
   - **Telefon (privat)**
   - **Webseite**
-  - **Notizen**
+  - **Hinweise**
 
 #### <a name="organization"></a>Organization (Organisation)
 

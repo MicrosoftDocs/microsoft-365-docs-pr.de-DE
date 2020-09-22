@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: d9dcd07a4fc63130d015bf31270d1de9212f9a53
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 3682044ab100d396719e3b7ffe5a6331852d0d55
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649187"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201219"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>Verwenden von freigegebenen Abfragen bei der erweiterten Suche
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Gilt für:**
 - Microsoft-Bedrohungsschutz
@@ -72,6 +75,6 @@ Microsoft-Sicherheitsexperten Teilen regelmäßig Abfragen zur erweiterten Suche
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
 - [Lernen der Abfragesprache](advanced-hunting-query-language.md)
 - [Arbeiten mit Abfrageergebnissen](advanced-hunting-query-results.md)
-- [Jagd auf Geräte, e-Mails, Apps und Identitäten](advanced-hunting-query-emails-devices.md)
+- [Suchen auf Geräten, in E-Mails, Apps und Identitäten](advanced-hunting-query-emails-devices.md)
 - [Grundlegendes zum Schema](advanced-hunting-schema-tables.md)
 - [Anwenden bewährter Methoden für Abfragen](advanced-hunting-best-practices.md)

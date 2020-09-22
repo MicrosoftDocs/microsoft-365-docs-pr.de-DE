@@ -15,14 +15,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: da3fd8b97899e302c9b7b24a5c0677534b579981
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d5a7cc491b0a8547848f4e341a605ae0c4b87cc9
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47947984"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201279"
 ---
 # <a name="whats-new-in-microsoft-threat-protection"></a>Neues in Microsoft Threat Protection
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 Die folgenden Features sind allgemein verfügbar (GA) in der neuesten Version von Microsoft Threat Protection.
 

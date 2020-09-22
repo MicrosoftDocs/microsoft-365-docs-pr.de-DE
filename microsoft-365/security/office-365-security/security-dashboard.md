@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Verwenden Sie das neue Sicherheits Dashboard, um Office 365 Bedrohungsschutz Status zu überprüfen und Sicherheitswarnungen anzuzeigen und zu bearbeiten.
-ms.openlocfilehash: 7edfcfefc379aa30b7028097b21522d63cd26268
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: 1bef6d0496c39d5157bbc40893d2710e89d1c734
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434267"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200073"
 ---
 # <a name="security-dashboard"></a>Sicherheits Dashboard
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ## <a name="basic-functions-and-how-to-open-security-dashboard"></a>Grundlegende Funktionen und Öffnen des Sicherheits Dashboards
 
@@ -102,7 +105,7 @@ Beispielsweise können Sie sehen, dass Phishing-e-Mails zugestellt werden, weil 
 
 ## <a name="threat-investigation-and-response"></a>Untersuchung von und Antwort auf Bedrohungen
 
-Wenn das Abonnement Ihrer Organisation [Office 365 Advanced Threat Protection-Plan 2](office-365-ti.md)enthält, enthält Ihr Sicherheits Dashboard einen Abschnitt mit erweiterten Tools für die Untersuchung und Reaktion auf Bedrohungen. Zu diesen Tools zählen [automatisierte Ermittlungs-und Antwortfunktionen](automated-investigation-response-office.md). Automatisierte Untersuchungen und Antworten können in Szenarien wie der [schnellen Adressierung kompromittierter Benutzerkonten](address-compromised-users-quickly.md)hilfreich sein.
+Wenn das Abonnement Ihrer Organisation  [Office 365 Advanced Threat Protection-Plan 2](office-365-ti.md)enthält, enthält Ihr Sicherheits Dashboard einen Abschnitt mit erweiterten Tools für die Untersuchung und Reaktion auf Bedrohungen. Zu diesen Tools zählen [automatisierte Ermittlungs-und Antwortfunktionen](automated-investigation-response-office.md). Automatisierte Untersuchungen und Antworten können in Szenarien wie der [schnellen Adressierung kompromittierter Benutzerkonten](address-compromised-users-quickly.md)hilfreich sein.
 
 Weitere Informationen finden Sie unter [Erste Schritte mit der automatisierten Untersuchung und Antwort (Air) in Office 365](office-365-air.md).
 

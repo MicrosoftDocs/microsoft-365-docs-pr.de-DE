@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie EoP und Office 365 Sie mit Spam, Phishing und Schadsoftware schützen, indem Sie oben in e-Mails einen Sicherheitstipp hinzufügen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b4bcfd2bf05f2f5ae7a51fbc2488cb1aa6e7d2c9
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 3da52a8ef2913c30c281fec74f92142847e29792
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949632"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201983"
 ---
 # <a name="safety-tips-in-email-messages"></a>Sicherheitstipps in E-Mail-Nachrichten
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Exchange Online Protection (EoP) und Microsoft 365 schützen Sie mit Spam, Phishing und Malware Prävention. Heute sind einige dieser Angriffe so gut gestaltet, dass Sie legitim erscheinen. Das Senden von Nachrichten an den Junk-e-Mail-Ordner ist nicht immer ausreichend. Wenn Sie nun Ihre e-Mails in Outlook oder Outlook im Internet oder in einem beliebigen e-Mail-Client überprüfen, überprüft EoP automatisch den Absender und fügt einen Sicherheitshinweis oben in der e-Mail hinzu.
 

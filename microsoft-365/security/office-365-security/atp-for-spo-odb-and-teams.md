@@ -21,14 +21,17 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Erfahren Sie mehr über Office 365 Advanced Threat Protection für Dateien in SharePoint Online, OneDrive für Unternehmen und Microsoft Teams.
-ms.openlocfilehash: e4a711d6554ffcb8e291d5b2154120d078995e94
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 9831b61fafc7cb4696fbad3d569f061612f85fe1
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44815409"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199039"
 ---
 # <a name="atp-for-sharepoint-onedrive-and-microsoft-teams"></a>ATP für SharePoint, OneDrive und Microsoft Teams
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ## <a name="overview-of-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Übersicht über Office 365 ATP für SharePoint, OneDrive und Microsoft Teams
 
@@ -52,7 +55,7 @@ Weitere Informationen finden Sie unter [Office 365 ATP für SharePoint, OneDrive
 
 ## <a name="keep-these-points-in-mind"></a>Beachten Sie diese Punkte
 
-- ATP wird nicht jede einzelne Datei in SharePoint Online, OneDrive für Unternehmen oder Microsoft Teams überprüfen. Dies ist so vorgesehen. Dateien werden asynchron durch einen Prozess überprüft, der Freigabe-und Gast Aktivitätsereignisse zusammen mit intelligenten Heuristiken und Bedrohungs Signalen verwendet, um bösartige Dateien zu identifizieren.
+- ATP wird nicht jede einzelne Datei in SharePoint Online, OneDrive für Unternehmen oder Microsoft Teams überprüfen. Es handelt sich hierbei um ein beabsichtigtes Verhalten. Dateien werden asynchron durch einen Prozess überprüft, der Freigabe-und Gast Aktivitätsereignisse zusammen mit intelligenten Heuristiken und Bedrohungs Signalen verwendet, um bösartige Dateien zu identifizieren.
 
 - Stellen Sie sicher, dass Ihre SharePoint-Websites so konfiguriert sind, dass Sie die [moderne Benutzeroberfläche](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience)verwenden. Wenn eine Datei als bösartig und blockiert identifiziert wird, können die Benutzer sehen, dass dies in der modernen Benutzeroberfläche aufgetreten ist, jedoch nicht in der klassischen Ansicht. ATP-Schutz wendet an, ob die moderne Erfahrung oder die klassische Ansicht verwendet wird; visuelle Indikatoren, die eine Datei blockiert, sind jedoch nur in der modernen Benutzeroberfläche vorhanden.
 

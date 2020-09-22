@@ -12,14 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: Administratoren können erfahren, wie Sie Berechtigungen in der Exchange-Verwaltungskonsole (EAC) in Exchange Online Protection zuweisen oder entfernen.
-ms.openlocfilehash: 8d452eb85d59bbe82cc6685d652617bc857c1ddf
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: fb1e0979b77c38d852f35817e01135af888eac68
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825689"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201901"
 ---
 # <a name="manage-role-groups-in-standalone-eop"></a>Verwalten von Rollengruppen in EOP als eigenständige Lösung
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 In Organisationen mit eigenständigen Exchange Online Schutz (EoP) ohne Exchange Online Postfächer können Sie die Exchange-Verwaltungskonsole verwenden, um Benutzer zu Rollengruppen hinzuzufügen. Durch das Hinzufügen von Benutzern zu einer Rollengruppe erhalten die Benutzerberechtigungen für bestimmte Administratoraufgaben. Sie können Benutzer auch aus Rollengruppen entfernen.
 

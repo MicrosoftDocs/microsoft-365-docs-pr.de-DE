@@ -14,14 +14,17 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
 description: Erfahren Sie, wie Sie den Prozess der Erkennung und Adressierung kompromittierter Benutzerkonten mit automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection Plan 2 beschleunigen können.
-ms.openlocfilehash: 5a1dd64a0b30bb230af0d96432ae9542ce0370d8
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: fa648b33180cab7d70348dc4d1d6e64930ecff99
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656909"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201231"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Adressieren von kompromittierten Benutzerkonten mit automatisierter Untersuchung und Antwort
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 [Office 365 Advanced Threat Protection Plan 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide#office-365-atp-plan-1-and-plan-2) enthält leistungsstarke Funktionen für die [Automatische Untersuchung und Reaktion](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) (Air). Solche Funktionen können Ihr Sicherheits Betriebsteam viel Zeit und Mühe beim Umgang mit Bedrohungen speichern. Microsoft verbessert weiterhin die Sicherheitsfunktionen. In letzter Zeit wurden die Air-Funktionen erweitert, um ein kompromittiertes Benutzer Sicherheits-Textbuch (derzeit in der Vorschau) einzuschließen. Lesen Sie diesen Artikel, um mehr über das kompromittierte User Security-Manuskript zu erfahren. Und lesen Sie den Blogbeitrag beschleunigen Sie die [Zeit zum erkennen und reagieren auf Benutzer Kompromisse und Grenzwerte für Verstöße mit Office 365 ATP](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) , um weitere Informationen zu erhalten.
 

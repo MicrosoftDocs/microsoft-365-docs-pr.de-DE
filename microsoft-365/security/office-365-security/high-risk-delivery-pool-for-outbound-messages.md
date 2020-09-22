@@ -16,14 +16,17 @@ ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie die Zustellungs Pools verwendet werden, um die Reputation von e-Mail-Servern in Microsoft 365-Rechenzentren zu schützen.
-ms.openlocfilehash: 83ea21a9230240f1339513efc75587f3d84733cb
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: b3016be7c1887536fe3e742b5ab4ec598b6a5f89
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827737"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201489"
 ---
 # <a name="outbound-delivery-pools"></a>Pools für die Zustellung ausgehender Nachrichten
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 E-Mail-Server in den Microsoft 365-Rechenzentren sind möglicherweise vorübergehend für das Senden von Spam schuldig. Beispielsweise eine Schadsoftware oder ein böswilliger Spamangriff in einer lokalen e-Mail-Organisation, die ausgehende e-Mails über Microsoft 365 sendet oder Microsoft 365-Konten kompromittiert. Angreifer versuchen auch, die Erkennung durch Weiterleiten von Nachrichten über die Microsoft 365-Weiterleitung zu vermeiden.
 

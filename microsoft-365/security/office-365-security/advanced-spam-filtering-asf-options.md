@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die ASF-Einstellungen (Advanced Spam Filter) informieren, die in Anti-Spam-Richtlinien in Exchange Online Protection (EoP) zur Verfügung stehen.
-ms.openlocfilehash: 6a670a9aba2204035646840d0f128ca9a90ece15
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: f2c58349bc1ffd2bb231eadf83bd4d70582925a2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867221"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199947"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Einstellungen für erweiterte Spam Filter (ASF) in EoP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!NOTE]
 > ASF-Einstellungen, die derzeit in Anti-Spam-Richtlinien verfügbar sind, werden gerade veraltet. Es wird empfohlen, diese Einstellungen nicht in Anti-Spam-Richtlinien zu verwenden. Die Funktionalität dieser ASF-Einstellungen wird in andere Teile des Filter Stapels integriert. Weitere Informationen finden Sie unter [EoP Anti-Spam Policy Settings](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).

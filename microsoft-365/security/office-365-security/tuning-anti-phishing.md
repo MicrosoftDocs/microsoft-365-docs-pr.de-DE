@@ -12,14 +12,17 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Administratoren können lernen, die Gründe zu identifizieren, warum und wie eine Phishing-Nachricht in Microsoft 365 durchgekommen ist, und was Sie tun müssen, um weitere Phishing-Nachrichten zukünftig zu verhindern.
-ms.openlocfilehash: b0fbb29489cece6d708811c5c8d8d60450938f0c
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: c62d09a1cf8b586b5c1d4393d7316d6d6d0cc96d
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825209"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201675"
 ---
 # <a name="tune-anti-phishing-protection"></a>Optimieren des Schutzes gegen Phishing
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Obwohl Microsoft 365 mit einer Vielzahl von Antiphishingfunktionen ausgeliefert wird, die standardmäßig aktiviert sind, ist es möglich, dass einige Phishing-Nachrichten weiterhin zu ihren Postfächern gelangen. In diesem Thema wird beschrieben, was Sie tun können, um zu ermitteln, warum eine Phishing-Nachricht durchgekommen ist, und was Sie tun können, um die antiphishingeinstellungen in Ihrer Microsoft 365-Organisation anzupassen, _ohne versehentlich die Dinge noch schlimmer zu machen_.
 

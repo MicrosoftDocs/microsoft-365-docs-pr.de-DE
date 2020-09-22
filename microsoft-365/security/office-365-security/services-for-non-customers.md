@@ -16,14 +16,17 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: Damit Benutzer das Vertrauen in der Verwendung von E-Mails nicht verlieren, hat Microsoft verschiedene Richtlinien und Technologien zum Schutz von Benutzern eingeführt.
-ms.openlocfilehash: 74389d3b975a0ffaebdc1619be40fd3ac74d72f4
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: e9389d52ee1d6c1c0bbab8630778749a6ed6005f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652657"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199577"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Dienste für nicht-Kunden, die e-Mails an Microsoft 365 senden
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 E-Mail-Missbrauch, Junk-E-Mails und betrügerische E-Mails (Phishing) belasten weiterhin das gesamte E-Mail-Ökosystem. Um die Vertrauenswürdigkeit von Benutzern bei der Verwendung von e-Mail zu unterstützen, hat Microsoft verschiedene Richtlinien und Technologien eingeführt, um den Schutz unserer Benutzer zu gewährleisten. Allerdings weiß Microsoft, dass seriösen E-Mails nicht negativ beeinträchtigt werden sollten. Aus diesem Grund haben wir eine Reihe von Diensten eingerichtet, mit denen Absender ihre Fähigkeit, e-Mails an Microsoft 365-Benutzer zu übermitteln, durch proaktives Verwalten Ihrer Absenderzuverlässigkeit verbessern können.
 

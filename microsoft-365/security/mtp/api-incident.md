@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 310e3105c973223ea79373d770eb10f7753b917e
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: ac149ca7263b8ef8bb37a7dd18bf0787a3114b37
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650330"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201303"
 ---
 # <a name="incident-resource-type"></a>Vorfall-Ressourcentyp
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Gilt für:**
 - Microsoft Threat Protection
@@ -38,8 +41,8 @@ ms.locfileid: "47650330"
 
 Methode |Rückgabetyp |Beschreibung
 :---|:---|:---
-[Vorfälle auflisten](api-list-incidents.md) | [Vorfall](api-incident.md) Liste | Abrufen einer Liste von Vorfällen.
-[Vorfall aktualisieren](api-update-incidents.md) | [Vorfall](api-incident.md) | Aktualisieren eines bestimmten Vorfalls.
+[Auflisten von Vorfällen](api-list-incidents.md) | [Vorfall](api-incident.md) Liste | Abrufen einer Liste von Vorfällen.
+[Aktualisieren von Vorfällen](api-update-incidents.md) | [Vorfall](api-incident.md) | Aktualisieren eines bestimmten Vorfalls.
 
 
 ## <a name="properties"></a>Eigenschaften
@@ -48,12 +51,12 @@ Eigenschaft |    Typ    |    Beschreibung
 :---|:---|:---
 Vorfall-Nr | long | Vorfall eindeutige ID.
 redirectIncidentId | Nullable Long | Die Vorfall-ID, mit der der aktuelle Vorfall zusammengeführt wurde.
-Vorfallname | Zeichenfolge | Der Name des Vorfalls.
+Vorfallname | string | Der Name des Vorfalls.
 createdTime | DateTimeOffset | Das Datum und die Uhrzeit (in UTC), an denen der Vorfall erstellt wurde.
 Last Update time | DateTimeOffset | Datum und Uhrzeit (in UTC) der Vorfall wurde zuletzt aktualisiert.
-assignedTo | Zeichenfolge | Besitzer des Vorfalls.
+assignedTo | string | Besitzer des Vorfalls.
 Schweregrad | Enum | Schweregrad des Vorfalls. Mögliche Werte sind: ```UnSpecified``` , ```Informational``` , ```Low``` ```Medium``` und ```High``` .
-status | Enum | Gibt den aktuellen Status des Vorfalls an. Mögliche Werte sind: ```Active``` ```Resolved``` und ```Redirected``` .
+Status | Enum | Gibt den aktuellen Status des Vorfalls an. Mögliche Werte sind: ```Active``` ```Resolved``` und ```Redirected``` .
 classification | Enum | Spezifikation des Vorfalls. Mögliche Werte sind: ```Unknown```, ```FalsePositive``` und ```TruePositive```.
 Bestimmung | Enum | Gibt die Ermittlung des Vorfalls an. Mögliche Werte: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware```, ```Other```.
 tags | Zeichenfolgenliste | Liste der Vorfall Tags.

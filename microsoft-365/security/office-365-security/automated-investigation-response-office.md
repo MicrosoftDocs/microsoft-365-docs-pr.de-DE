@@ -16,14 +16,17 @@ ms.collection: M365-security-compliance
 ms.date: 08/21/2020
 description: Hier erhalten Sie einen Überblick über die automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection-Plan 2.
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: 27a2330d5f1ff339aabf6a0fccb94a15dec30852
-ms.sourcegitcommit: 37da941919036a714da42eaa039682ccbe0da670
+ms.openlocfilehash: d6793793a663e562b05df7e8458a6a8933e5ee47
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2020
-ms.locfileid: "46860721"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200345"
 ---
 # <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-365"></a>Eine Übersicht über die automatische Untersuchung und Reaktion (Air) in Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Wenn Sicherheitswarnungen ausgelöst werden, liegt es an Ihrem Sicherheits Betriebsteam, diese Warnungen zu untersuchen und Maßnahmen zum Schutz Ihrer Organisation zu ergreifen. Manchmal können sich Sicherheits Operations Teams von der Menge der ausgelösten Warnungen überfordert fühlen. Die Funktionen für die automatische Untersuchung und Reaktion (Air) in Office 365 Advanced Threat Protection (Office 365 ATP) können helfen. 
 
@@ -148,7 +151,7 @@ Beispielsweise hat eine Organisation kürzlich eine Möglichkeit für Ihr Sicher
 
 - [Erste Schritte mit Air](office-365-air.md)
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 - [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=)
 

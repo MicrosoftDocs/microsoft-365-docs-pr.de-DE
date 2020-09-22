@@ -16,14 +16,17 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über Threat Tracker, einschließlich neuer bemerkenswerter Tracker, damit Ihre Organisation weiterhin auf Sicherheitsbedenken eingeht.
-ms.openlocfilehash: 13e8463d88250fe76474311e9df394577949989e
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: e4e157e64da92cf3c9178af1223fbc6c85e3fd95
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755064"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201795"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Aufzeichnungen von Bedrohungen – neu und wichtig
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 [Office 365 Bedrohungs Ermittlungs-und-Antwort](office-365-ti.md) Funktionen ermöglichen es dem Sicherheitsteam Ihrer Organisation, Cyber-Bedrohungen zu ermitteln und Maßnahmen zu ergreifen. Zu den Funktionen für die Untersuchung und die Reaktionsfähigkeit von Office 365 Threat Tracker gehören auch bemerkenswerte Tracker. Lesen Sie diesen Artikel, um einen Überblick über diese neuen Features und die nächsten Schritte zu erhalten. 
 

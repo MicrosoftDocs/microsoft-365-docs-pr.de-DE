@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Dieser Artikel enthält Informationen zur Problembehandlung bei Problemen beim Senden von e-Mails an Posteingänge in Microsoft 365 & bewährte Methoden für Massenversand an Microsoft 365-Kunden.
-ms.openlocfilehash: 4243f46746cb21425fc2dc7493c69818f095e71f
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 52b4bb333a92dcaa21f45977b3d59a96053a69c2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307579"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201733"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>An Microsoft 365 gesendete E-Mail zur Problembehandlung
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Dieser Artikel enthält Informationen zur Problembehandlung für Absender, bei denen Probleme auftreten, wenn Sie versuchen, e-Mails an Posteingänge in Microsoft 365 und bewährte Methoden für Massenversand an Kunden zu senden.
 

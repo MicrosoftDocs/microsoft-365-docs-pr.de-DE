@@ -14,14 +14,17 @@ ms.assetid: e109077e-cc85-4c19-ae40-d218ac7d0548
 ms.custom:
 - seo-marvel-apr2020
 description: Der Administrator kann Informationen zu den Optionen zum Konfigurieren von Nachrichtenfluss und Routing in Exchange Online Protection (EoP) erhalten.
-ms.openlocfilehash: c58981afaadf2c4083b6a6db99c74cf9544715c3
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: e1c821e3de8dd7dd18c192522bd18fd32a395dca
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827725"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200703"
 ---
 # <a name="mail-flow-in-eop"></a>Nachrichtenfluss in EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 In Microsoft 365-Organisationen mit Exchange Online Postfächern oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer werden alle an Ihre Organisation gesendeten Nachrichten über EoP geleitet, bevor Ihre Mitarbeiter Sie sehen. Sie haben Optionen zum Weiterleiten von Nachrichten, die EoP zur Verarbeitung übergeben, bevor Sie an die Postfächer der Arbeitskraft weitergeleitet werden.
 

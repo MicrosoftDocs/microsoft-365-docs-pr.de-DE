@@ -14,14 +14,17 @@ ms.collection: M365-security-compliance.
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
-ms.openlocfilehash: 81ad3ab0d3bc20a49128fa6ed45ff62195b32bc7
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: f7bcfa4f08bee51408de33964f1dfd1e1db3bd33
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47963855"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199745"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-threat-protection"></a>Konfigurieren von automatisierten Ermittlungs-und Antwortfunktionen in Microsoft Threat Protection
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 Microsoft Threat Protection umfasst leistungsstarke [automatisierte Ermittlungs-und Antwortfunktionen](mtp-autoir.md) , mit denen Ihr Sicherheits Betriebsteam viel Zeit und Mühe sparen kann. Mit der Selbstheilung simulieren diese Funktionen die Schritte, die ein Sicherheitsanalytiker ausführen würde, um Bedrohungen zu untersuchen und zu reagieren, und zwar nur schneller und mit mehr Skalierungsmöglichkeiten. In diesem Artikel wird beschrieben, wie Sie die automatische Untersuchung und Antwort in Microsoft Threat Protection konfigurieren.
 

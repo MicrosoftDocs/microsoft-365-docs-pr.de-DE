@@ -20,14 +20,17 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.date: 09/16/2020
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 205809bac14cc82e850ea1cbc0349256432bfe68
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 232d19cb0bcb6a2f91c1bdad15d842ec7396499c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962585"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201051"
 ---
 # <a name="remediation-actions-following-automated-investigations-in-microsoft-threat-protection"></a>Behebungsaktionen nach automatisierten Untersuchungen im Microsoft Threat Protection
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Gilt für:**
 - Microsoft Threat Protection
@@ -63,8 +66,8 @@ In der folgenden Tabelle sind mögliche Urteile und Ergebnisse aufgelistet:
 > - [Konfigurieren von automatisierten Ermittlungs-und Antwortfunktionen in Microsoft Threat Protection](mtp-configure-auto-investigation-response.md)
 > - [So beheben Sie Bedrohungen auf Geräten](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
-## <a name="next-steps"></a>Weitere Schritte
+## <a name="next-steps"></a>Nächste Schritte
 
-- [Besuchen des Aktions Centers](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
+- [Aufrufen des Aktionszentrums](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
 - [Genehmigen oder Ablehnen ausstehender Aktionen](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir-actions)
 - [Behandeln von falsch positiven/negativen Ergebnissen in automatisierten Ermittlungs-und Antwortfunktionen](mtp-autoir-report-false-positives-negatives.md)
