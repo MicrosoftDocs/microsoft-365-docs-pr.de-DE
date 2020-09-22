@@ -17,14 +17,17 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über die Kampagnenansichten in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 60ec8ea1d2c164905e7b57f4b518ea3f80e7986c
-ms.sourcegitcommit: dcbcd5ef278949c777059b0aa6db072e821f72dd
+ms.openlocfilehash: 881dcde1157877eb015d9700bcbcd08fd3336192
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48173308"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203479"
 ---
 # <a name="campaign-views-in-office-365-atp"></a>Kampagnenansichten in Office 365 ATP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Kampagnen Ansichten sind ein Feature in Advanced Threat Protection (ATP) Plan 2 (beispielsweise Microsoft 365 E5 oder Organisationen mit einem ATP Plan 2-Add-on). Kampagnen Ansichten im Security & Compliance Center identifiziert und kategorisiert Phishing-Angriffe im Dienst. Kampagnenansichten können Ihnen bei Folgendem helfen:
 

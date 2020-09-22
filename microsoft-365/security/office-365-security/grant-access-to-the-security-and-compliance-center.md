@@ -19,14 +19,17 @@ search.appverid:
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Benutzer müssen Berechtigungen im Microsoft 365 Security & Compliance Center zugewiesen werden, bevor Sie alle Sicherheits-und Kompatibilitätsfeatures verwalten können.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b51007221257b9adac46c31295e13b20b12342ab
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: 5d586684d44545f7aea94c30f5474b1fe5fa4651
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868921"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202807"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Freigeben des Benutzerzugriffs auf das Security & Compliance Center
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Benutzer müssen im Security & Compliance Center Berechtigungen zugewiesen werden, bevor Sie alle Sicherheits-und Kompatibilitätsfeatures verwalten können. Als globaler Administrator oder Mitglied der Mitglied-Rollengruppe im Security & Compliance Center können Sie diese Berechtigungen Benutzern erteilen. Benutzer können nur die Sicherheits-oder Kompatibilitätsfeatures verwalten, auf die Sie Zugriff haben.
 

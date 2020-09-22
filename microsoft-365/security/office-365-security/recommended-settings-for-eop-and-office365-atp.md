@@ -16,14 +16,17 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Was sind bewährte Methoden für Exchange Online Protection (EoP) und ATP-Sicherheitseinstellungen (Advanced Threat Protection)? Was sind die aktuellen Empfehlungen für Standardschutz? Was sollte verwendet werden, wenn Sie strenger sein möchten? Und welche Extras erhalten Sie, wenn Sie auch Advanced Threat Protection (ATP) verwenden?
-ms.openlocfilehash: 1022accb992fbc0aee92b8da97f9d8a48cbe35f2
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: 78dc1673d20affdfab9228883dbce3b08e8efbb5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405383"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202711"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Empfohlene Einstellungen für EoP und Office 365 ATP-Sicherheit
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 **Exchange Online Protection (EoP)** ist das Herzstück der Sicherheit für Microsoft 365-Abonnements und verhindert, dass böswillige e-Mails die Posteingänge ihrer Mitarbeiter erreichen. Bei neuen, anspruchsvolleren Angriffen, die täglich auftreten, sind häufig verbesserte Schutzmaßnahmen erforderlich. **Office 365 Advanced Threat Protection (ATP)** ATP-Plan 1 oder ATP-Plan 2 enthalten zusätzliche Features, die Administratoren mehr Ebenen der Sicherheit, Steuerung und Untersuchung bieten.
 
@@ -119,7 +122,7 @@ Informationen zum Erstellen und Konfigurieren von Anti-Malware-Richtlinien finde
 
 |Name des Sicherheitsfeatures|Standard|Strict|Kommentar|
 |---|---|---|---|
-|**Möchten Sie Empfänger Benachrichtigen, wenn Ihre Nachrichten unter Quarantäne gestellt werden?** <br/><br/> _Aktion_|Nein <br/><br/> _DeleteMessage_|Nein <br/><br/> _DeleteMessage_|Wenn Schadsoftware in einer e-Mail-Anlage erkannt wird, wird die Nachricht isoliert und kann nur von einem Administrator freigegeben werden.|
+|**Möchten Sie Empfänger Benachrichtigen, wenn Ihre Nachrichten unter Quarantäne gestellt werden?** <br/><br/> _Action_|Nein <br/><br/> _DeleteMessage_|Nein <br/><br/> _DeleteMessage_|Wenn Schadsoftware in einer e-Mail-Anlage erkannt wird, wird die Nachricht isoliert und kann nur von einem Administrator freigegeben werden.|
 |**Filter "allgemeine Anlagentypen"** <br/><br/> _EnableFileFilter_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`|Diese Einstellung isoliert Nachrichten, die ausführbare Anlagen basierend auf dem Dateityp enthalten, unabhängig vom Anlage Inhalt.|
 |**Malware Zero-Hour Auto Purge** <br/><br/> _ZapEnabled_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
 |**Interne Absender** der nicht zugestellten Nachricht Benachrichtigen <br/><br/> _EnableInternalSenderNotifications_|Deaktiviert <br/><br/> `$false`|Deaktiviert <br/><br/> `$false`||
@@ -260,7 +263,7 @@ Informationen zum Konfigurieren dieser Einstellungen finden Sie unter [Einrichte
 
 |Name des Sicherheitsfeatures|Standard|Strict|Kommentar|
 |---|---|---|---|
-|**Sichere Anlagen unbekannte Malware Antwort** <br/><br/> _Aktion_|Blockieren <br/><br/> `Block`|Blockieren <br/><br/> `Block`||
+|**Sichere Anlagen unbekannte Malware Antwort** <br/><br/> _Action_|Blockieren <br/><br/> `Block`|Blockieren <br/><br/> `Block`||
 |**Umleitungs Anlage bei Erkennung** : **Umleitung aktivieren** <br/><br/> _Redirect_ <br/><br/> _RedirectAddress_|Ein, und geben Sie eine e-Mail-Adresse an. <br/><br/> `$true` <br/><br/> eine e-Mail-Adresse|Ein, und geben Sie eine e-Mail-Adresse an. <br/><br/> `$true` <br/><br/> eine e-Mail-Adresse|Umleiten von Nachrichten an einen Sicherheitsadministrator zur Überarbeitung.|
 |**Wenden Sie die obige Auswahl an, wenn bei der Malwareüberprüfung nach Anlagen ein Timeout oder ein Fehler auftritt.** <br/><br/> _ActionOnError_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
 |

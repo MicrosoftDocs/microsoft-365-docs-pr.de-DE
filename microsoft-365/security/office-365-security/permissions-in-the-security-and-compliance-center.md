@@ -18,14 +18,17 @@ search.appverid:
 - MET150
 description: Administratoren können sich über die Berechtigungen informieren, die im Security & Compliance Center in Microsoft 365 zur Verfügung stehen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c1738438601712199b9a8e7365338d03e17621f0
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: 6dab91169b260ea3dae47034ec5c15ebeb2462a4
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171314"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202687"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>Berechtigungen im Security & Compliance Center
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Mit dem Security & Compliance Center können Sie Personen, die Compliance-Aufgaben wie Geräteverwaltung, Verhinderung von Datenverlust, eDiscovery, Aufbewahrung usw. ausführen, Berechtigungen erteilen. Diese Personen können nur die Aufgaben ausführen, denen Sie explizit Zugriff gewähren. Für den Zugriff auf das Security & Compliance Center müssen Benutzer ein globaler Administrator oder Mitglied einer oder mehrerer Sicherheits & Compliance Center-Rollengruppen sein.
 

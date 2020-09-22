@@ -16,14 +16,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie die Junk-e-Mail-Einstellungen in Exchange Online Postfächern konfigurieren. Viele dieser Einstellungen stehen Benutzern in Outlook oder Outlook im Internet zur Verfügung.
-ms.openlocfilehash: 171eca8535958f01a7f749ad678e6ea9dd83d80c
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 632c6f37b80cdc38b513f66ad42e4a5c25b41f25
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825713"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203347"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Konfigurieren der Junk-E-Mail-Einstellungen für Exchange Online-Postfächer
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 In Microsoft 365-Organisationen mit Postfächern in Exchange Online werden die Einstellungen für die Antispam-Organisation durch Exchange Online Protection (EoP) gesteuert. Weitere Informationen finden Sie unter [Anti-Spam Protection in EoP](anti-spam-protection.md).
 

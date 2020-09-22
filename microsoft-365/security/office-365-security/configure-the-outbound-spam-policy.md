@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können erfahren, wie Sie ausgehende Spam Richtlinien in Exchange Online Protection (EoP) anzeigen, erstellen, ändern und löschen.
-ms.openlocfilehash: ebeebe3486ad4dad926ad72509154904700e320a
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 2c7a48280487944352f4ee8afc1e7f0596186a3d
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949348"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203299"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Konfigurieren der ausgehenden Spamfilterung in EoP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 In Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer werden ausgehende e-Mail-Nachrichten, die über EoP gesendet werden, automatisch auf Spam und ungewöhnliche Sendeaktivitäten überprüft.
 

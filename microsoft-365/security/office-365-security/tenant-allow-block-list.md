@@ -15,14 +15,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie URL-Einträge in der Liste Mandanten-Allow/Block im Security & Compliance Center konfigurieren.
-ms.openlocfilehash: 888a96f23daf2cf47847466ad4080f310be7f9b4
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: eb9dcc5b239aae1366a0a2e0eebd68b3f0082e6b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845942"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202339"
 ---
 # <a name="manage-urls-in-the-tenant-allowblock-list"></a>Verwalten von URLs in der Zulassungs-/Sperrliste des Mandanten
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!NOTE]
 > Die in diesem Thema beschriebenen Funktionen befinden sich in der Vorschau, können sich ändern und sind nicht in allen Organisationen verfügbar.
@@ -432,7 +435,7 @@ Die folgenden Einträge sind ungültig:
   - contoso
   - \*contoso.\*
   - \*. com
-  - \*.PDF
+  - \*. PDF
 
 - **Platzhalter für Text oder ohne Leerzeichen**:
 

@@ -19,14 +19,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Benutzer können erfahren, wie sie in Exchange Online Protection (EOP) isolierte (unter Quarantäne gestellte) Nachrichten anzeigen und verwalten, die sie hätten empfangen sollen.
-ms.openlocfilehash: 21e04021267d64c48219cbffc46f36739b8035c0
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 03bcb0518b75d9a35aae1b6664b410b521adf940
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826613"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202843"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Suchen und Freigeben von isolierten Nachrichten als Benutzer in EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 In Microsoft 365-Organisationen mit Postfächern in Exchange Online oder in eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer, enthält die Quarantäne potenziell gefährliche oder unerwünschte Nachrichten. Weitere Informationen finden Sie unter [Quarantäne in EOP](quarantine-email-messages.md).
 

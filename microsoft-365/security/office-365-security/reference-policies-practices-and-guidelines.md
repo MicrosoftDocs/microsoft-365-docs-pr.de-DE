@@ -16,14 +16,17 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft hat verschiedene Richtlinien und Verfahren entwickelt und mehrere bewährte Methoden für die Industrie eingeführt, um unsere Benutzer vor missbräuchlichen, unerwünschten oder böswilligen e-Mails zu schützen.
-ms.openlocfilehash: 5b815678fc7462df5448447624d6f7c0c63d6eb6
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: b971823201fb805c9e17da8402250065d274668d
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949656"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202375"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Referenz: Richtlinien, Methoden und Anleitungen
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Microsoft ist bestrebt, die vertrauenswürdigste Benutzerfreundlichkeit im Internet bereitzustellen. Daher hat Microsoft verschiedenen Richtlinien, Verfahren entwickelt und mehrere bewährte Branchenmethoden übernommen, um unsere Benutzer vor beleidigenden, unerwünschten oder schädlichen E-Mails zu schützen. Absender, die versuchen, e-Mails an Benutzer zu senden, sollten sicherstellen, dass Sie die Anleitungen in diesem Artikel vollständig verstehen und befolgen, um diese Bemühungen zu unterstützen und potenzielle Zustellungsprobleme zu vermeiden.
 

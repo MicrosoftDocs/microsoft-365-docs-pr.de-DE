@@ -18,14 +18,17 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Administratoren erfahren hier, wie EOP E-Mail-Authentifizierung (SPF, DKIM und DMARC) verwendet, um Spoofing, Phishing und Spam zu verhindern.
-ms.openlocfilehash: 1e4ad82dd1c57e089b36e39afde346c47043c546
-ms.sourcegitcommit: eb905c5b4d7e71fc930a207357295b0160c4f065
+ms.openlocfilehash: d490caf600fef9d9caab79a1a97ec29637e10d66
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "48137047"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202975"
 ---
 # <a name="email-authentication-in-eop"></a>E-Mail-Authentifizierung in EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 E-Mail-Authentifizierung (auch als E-Mail-Validierung bezeichnet) ist eine Gruppe von Standards, die versucht, Spoofing (E-Mail-Nachrichten von gefälschten Absendern) entgegen zu wirken. In allen Microsoft 365-Organisationen nutzt EOP folgende Standards, um eingehende e-Mails zu überprüfen:
 

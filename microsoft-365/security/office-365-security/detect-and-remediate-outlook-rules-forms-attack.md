@@ -17,14 +17,17 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie die Outlook-Regeln und Injektionen von benutzerdefinierten Formularen in Office 365 erkennen und beheben können.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9b5551b8cbda85ac3940bc8f43ec2d7b7eccdb1
-ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
+ms.openlocfilehash: 7d879d34a925354084e08d82f5e1724725c18825
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44811050"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203071"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Erkennen und Beheben von Outlook-Regeln und benutzerdefinierten Formularen Injektionsangriffe
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 **Zusammenfassung** Hier erfahren Sie, wie Sie die Outlook-Regeln und Injektionen von benutzerdefinierten Formularen in Office 365 erkennen und beheben können.
 
@@ -227,9 +230,9 @@ Beachten Sie, dass es auch bei installierten Patches und Updates möglich ist, d
 
 Sie können sehen, ob "Anwendung starten" durch eine Außerkraftsetzung in der Registrierung erneut aktiviert wurde, indem Sie die Informationen in [How to View the System Registry by using 64-Bit Windows](https://support.microsoft.com/help/305097)verwenden. Überprüfen Sie diese Unterschlüssel:
 
-- **Outlook 2016**:`HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Security\`
+- **Outlook 2016**: `HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Security\`
 
-- **Outlook 2013**:`HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Outlook\Security\`
+- **Outlook 2013**: `HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Outlook\Security\`
 
 Suchen Sie nach dem Schlüssel EnableUnsafeClientMailRules. Wenn er vorhanden und auf 1 festgelegt ist, wurde der Outlook-Sicherheitspatch außer Kraft gesetzt, und der Computer ist anfällig für den Angriff auf Form/Regel. Wenn der Wert 0 ist, wird die Aktion "Anwendung starten" deaktiviert. Wenn die aktualisierte und gepatchte Version von Outlook installiert ist und dieser Registrierungsschlüssel nicht vorhanden ist, ist ein System nicht anfällig für diese Angriffe.
 

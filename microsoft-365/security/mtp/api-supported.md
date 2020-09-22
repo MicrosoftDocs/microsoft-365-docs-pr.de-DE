@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 49fa182a6142748ca7769411fe74389f365ba75f
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: fda90945f09abfadfe56ea11469687130d88b2a7
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650312"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203695"
 ---
 # <a name="supported-microsoft-threat-protection-apis"></a>Unterstützte Microsoft Threat Protection-APIs 
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 **Gilt für:**
 - Microsoft Threat Protection
 
@@ -52,5 +55,5 @@ ms.locfileid: "47650312"
 
 Thema | Beschreibung
 :---|:---
-[Erweiterte Jagd-API](api-advanced-hunting.md) | Ausführen erweiterter Jagd Abfragen aus der API.
+[Erweiterte Suche-API](api-advanced-hunting.md) | Ausführen erweiterter Jagd Abfragen aus der API.
 [Vorfall-APIs](api-incident.md) | Führen Sie Vorfall bezogene API-Aufrufe wie: Listen Vorfälle, Update Vorfall und vieles mehr aus.

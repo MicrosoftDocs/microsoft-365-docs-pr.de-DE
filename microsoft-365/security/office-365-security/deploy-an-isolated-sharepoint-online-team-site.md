@@ -16,14 +16,17 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: Verwenden Sie dieses Schritt-für-Schritt-Bereitstellungshandbuch, um eine isolierte SharePoint Online Teamwebsite in Microsoft Office 365 zu erstellen und zu konfigurieren.
-ms.openlocfilehash: 3465ec28db8c2045bad6e6c48112861818629524
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: f2800e74149e79e5c3f0444799f454ab8b3caf69
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308415"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203131"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Bereitstellen einer isolierten SharePoint Online-Teamwebsite
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
  **Zusammenfassung:** Mithilfe dieser schrittweisen Anleitung können Sie eine neue isolierte SharePoint Online-Teamwebsite bereitstellen.
   
@@ -161,7 +164,7 @@ In dieser Phase erstellen Sie die isolierte SharePoint Online-Website und konfig
   
 Erstellen Sie zuerst mit den folgenden Schritten die SharePoint Online-Teamwebsite.
   
-1. Melden Sie sich beim Microsoft 365 Admin Center mit einem Konto an, das auch für die Verwaltung der SharePoint Online Teamwebsite (SharePoint Online Administrator) verwendet wird. Hilfe finden Sie unter [Wo kann ich mich bei Office 365 anmelden?](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Melden Sie sich beim Microsoft 365 Admin Center mit einem Konto an, das auch für die Verwaltung der SharePoint Online Teamwebsite (SharePoint Online Administrator) verwendet wird. Hilfe finden Sie unter [Where to sign in to Office 365 (Wo kann ich mich bei Office 365 anmelden?)](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
 2. Klicken Sie im Microsoft 365 Admin Center unter **Admin**Centers auf **SharePoint**.
 

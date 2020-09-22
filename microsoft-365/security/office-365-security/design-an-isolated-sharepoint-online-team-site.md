@@ -18,14 +18,17 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: Entwerfen Sie isolierte SharePoint Online Teamwebsites, einschließlich bestimmen von Berechtigungsstufen, Zuweisen von Berechtigungen für Benutzer mit Zugriffsgruppen und geschachtelten Azure Ad Gruppen.
-ms.openlocfilehash: d26f55d9e037d86eac28e5cf21c56406eae5cc19
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 035952c1921443d86602eb94e3965acee86ae3e8
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653005"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203119"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>Entwerfen einer isolierten SharePoint Online-Teamwebsite
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
  **Zusammenfassung:** Lernen Sie die Schritte zum Entwerfen von isolierten SharePoint Online-Teamwebsites kennen.
 

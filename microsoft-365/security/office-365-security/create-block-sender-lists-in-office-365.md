@@ -13,14 +13,17 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: Administratoren können sich über die verfügbaren und bevorzugten Optionen informieren, um eingehende Nachrichten in Exchange Online Protection (EoP) zu blockieren.
-ms.openlocfilehash: 9b676f96ccdff8be1fa49841a9e0ce44bb59964c
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 7894a6cfe665539fa8c00f5911c4a588b9cf7ebc
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827313"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203191"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>Erstellen blockierter Absenderlisten in EoP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 In Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer bietet EoP mehrere Möglichkeiten zum Blockieren von e-Mails von unerwünschten Absendern. Zu diesen Optionen gehören blockierte Absender in Outlook, blockierte Absenderlisten oder blockierte Domänenlisten in den antispamregeln, Exchange-Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) und die IP-Sperrliste (Verbindungsfilterung). Sie können diese Optionen gemeinsam als _Blockierte Absenderlisten_betrachten.
 

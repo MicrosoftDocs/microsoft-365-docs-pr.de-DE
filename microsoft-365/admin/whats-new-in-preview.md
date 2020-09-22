@@ -21,12 +21,12 @@ description: Microsoft 365 Admin Center – erfahren Sie mehr über die Features
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 7504fa085c6dd5413a1dcddbb71f3d015ded72c1
-ms.sourcegitcommit: 97ef8f846939c3d31bb0638edf07bb89463ace0b
+ms.openlocfilehash: 64c9939f7dd6c4370b80e74987263942dad0e62f
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47300455"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208903"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Neuerungen im Microsoft 365 Admin Center
 
@@ -49,17 +49,121 @@ Und wenn Sie wissen möchten, was mit anderen Microsoft-Cloud-Diensten neu ist:
 - [Aktive Websites im SharePoint Online Admin Center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 - [Office-Updates](https://docs.microsoft.com/OfficeUpdates/)
 
+## <a name="ignite-2020-august--september"></a>Ignite 2020 (August & September)
+
+Willkommen bei Microsoft Ignite – unserem ersten Online-Ignite. Wir hoffen, Sie in einer unserer Sitzungen zu sehen: [Microsoft Ignite 2020-Sitzungs Katalog](https://myignite.microsoft.com/sessions). Hier sind nur einige der Dinge, über die wir bei Ignite sprechen werden. 
+> [!NOTE]
+> Nicht alle Features werden sofort für alle verfügbar sein. Wenn Sie die neuen Features nicht sehen, [fügen Sie Targeted Release hinzu](manage/release-options-in-office-365.md).
+
+### <a name="multi-tenant-management"></a>Multi-Mandantenverwaltung
+
+Wir haben eine Reihe von Funktionen für Multi-mandantenadministratoren wie Sie entwickelt, um Ihre Arbeit schneller und effizienter zu machen.
+
+- **Ihre Mandanten**: Wechseln Sie schnell zwischen den Mandanten, die Sie verwalten.
+- **Alle Mandanten**: eine neue Seite, auf der Sie schnell die Integrität aller Dienste Ihrer Mandanten, offener Dienstanfragen, Produkte und Abrechnung, Empfohlene Einrichtungsaufgaben und die Anzahl der Benutzer in diesem Mandanten anzeigen können.
+- **Setup**: die Seite Multi-Mandanten-Setup zeigt eine Listenansicht der Setup Seite an, die jedoch für viele Mandanten organisiert ist. Sie können sehen, welche Funktionen nicht aktiviert sind, welche Aufgaben für alle Mandanten abgeschlossen werden, Vorgänge, die Mandanten noch ausführen müssen. Diese Ansicht hilft Ihnen, die Funktions Akzeptanz zu überwachen und sicherzustellen, dass die empfohlenen Sicherheitssetup Aufgaben immer ausgeführt werden.
+- **Dienst Integrität**: in der Dienst Integritäts Ansicht wird angezeigt, ob sich Vorfälle oder Warnungen auf die Mandanten auswirken. Es wird Ihnen sogar mitteilen, wie viele Ihrer verwalteten Mandanten betroffen sind. Wählen Sie einfach einen Vorfall aus, um weitere Informationen auf der Registerkarte Übersicht zu erhalten, und wechseln Sie dann zur Registerkarte betroffene Mandanten, um einen Drilldown durchführen und diesen Mandanten zu unterstützen.
+- Mandanten **übergreifende Postfächer Migrationen** sind jetzt in der öffentlichen Vorschau ein neuer Dienst, mit dem Sie Postfächer zwischen Mandanten verschieben können, ohne dass extern und dann Onboard-Postfächer erforderlich sind. 
+- **Mandantenübergreifende Domänen Freigabe**: in Kürze können Sie an einer privaten Vorschau für Funktionen teilnehmen, die es Ihnen ermöglichen, eine Domäne in mehreren Mandanten freizugeben. Wenn Contoso beispielsweise "Flügel Spielzeug" erwirbt, kann Contoso die Domäne mit dem Flügelspiel Spielzeug teilen, damit die Benutzer in beiden Mandanten "contoso.com" als e-Mail-Adressen verwenden können.
+
+![Dienst Integritäts Seite für Mandanten, bei dem ein Vorfall ausgewählt ist und die Registerkarte betroffene Mandanten geöffnet ist. Das Navigationsmenü enthält alle Mandanten, Setup und Dienst Integrität als die einzigen Optionen.](../media/MAC-WN-MTinServiceHealth.png)
+
+### <a name="monitor-your-most-important-accounts"></a>Überwachen Ihrer wichtigsten Konten
+
+Sie können fehlerhafte oder verzögerte e-Mail-Nachrichten, die an Ihre Benutzer mit hohem geschäftlichem Einfluss wie Ihr CEO gesendet werden, überwachen und nachverfolgen. Sie können Prioritäten Konten nachverfolgen, indem Sie Benutzer zu Ihrer Liste mit Prioritäten Konten im Microsoft 365 Admin Center hinzufügen. Hinzufügen von Führungskräften, Führungskräften, Managern oder anderen Benutzern, die Zugriff auf vertrauliche Informationen oder Informationen mit hoher Priorität haben
+
+Prioritäts Konten stehen nur Organisationen zur Verfügung, die die folgenden Anforderungen erfüllen:
+
+- Office 365 E3 oder Microsoft 365 E3 oder Office 365 E5 oder Microsoft 365 E5.
+- Mindestens 10.000 Lizenzen und mindestens 50 monatlich aktive Exchange Online Benutzer.
+
+![Setup Seite für das Feature: Überwachen der wichtigsten Konten](../media/MAC-WN-PriorityAccounts.png)
+
+Es gibt zwei Möglichkeiten, um den Einstieg zu erhalten:
+
+- Wechseln Sie zu **Benutzer**, und wählen Sie dann im Menü weitere Aktionen die Option **Prioritäten Konten verwalten** aus, um Benutzer zur Liste hinzuzufügen.
+- Wechseln Sie zu **Setup**, suchen Sie nach der Setup Aufgabe **Überwachen Ihrer wichtigsten Konten**, und wählen Sie dann **Erste Schritte**aus.
+
+Weitere Informationen zu Prioritäts Konten finden Sie unter über [Wachen von Prioritäts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) Konten und [e-Mail-Problemen für Prioritäts Konten](https://docs.microsoft.com/Exchange/mail-flow-best-practices/mail-flow-insights/mfi-email-issues-for-priority-accounts).
+
+### <a name="search-faster-and-get-better-results-from-any-page"></a>Schneller suchen und auf jeder Seite bessere Ergebnisse erzielen
+
+Wir haben mit dem Rollout einer neuen Suchumgebung für das Admin Center begonnen, und wir können nicht darauf warten, dass Sie es ausprobieren. ![Das Suchfeld wurde in den Bannerbereich verschoben. Alt + S für die Suche auf einer beliebigen Seite.](../media/MAC-WN-GlobalSearch.png)
+
+- Das Suchfeld wurde in den Kopfbereich verschoben, in dem es "Microsoft 365 Admin Center" heißt, sodass Sie nun von einer beliebigen Seite aus suchen und nicht nur auf der Startseite. Wir haben sogar eine Verknüpfung: **ALT + S**.
+- Die Suche ist intelligenter und bietet Ihnen bessere Ergebnisse, sogar noch schneller. Versuchen Sie, "2FA" einzugeben, um loszulegen.
+- Suchergebnisse werden nach dem Typ des Elements oder der Aktion organisiert, die Sie ausführen können.
+  - **Benutzer**: Wählen Sie den Namen des Benutzers aus, und Sie können diesen Benutzer direkt dort bearbeiten. Wenn Sie das Menü weitere Aktionen neben dem Namen auswählen, können Sie das Kennwort zurücksetzen. Sie können nach Anzeigename, Nachname, Vorname, Benutzername oder primäre e-Mail-Adresse und e-Mail-Aliase suchen. Aber um eine exakte Übereinstimmung zu erhalten, suchen Sie nach primärer e-Mail-Adresse oder Benutzername.
+  - **Gruppen**: Bearbeiten Sie die Gruppe von einer beliebigen Seite, fügen Sie Mitglieder hinzu, und weisen Sie Besitzern zu.
+  - **Actions**: ähnlich wie Sie nach einem Benutzer suchen und dann Ihr Kennwort zurücksetzen können, können Sie auch "Kennwort zurücksetzen" auf jeder Seite durchsuchen und dann ein oder mehrere Kennwörter für Benutzer zurücksetzen.
+  - **Navigation**: mithilfe der Ergebnisse unter Navigation können Sie schnell zu einer Seite im Admin Center gelangen. Wenn Sie beispielsweise "Roles" Durchsuchen, gelangen Sie zur Seite "Rollen" für Azure AD Rollen.
+  - **Einstellungen**: Suchen Sie nach beliebigen Einstellungen im Zusammenhang mit Ihrer Organisation, den von Ihnen abonnierten Diensten sowie Sicherheits-und Datenschutzeinstellungen. 
+  - **Domänen**: Sie können schnell Links zu Ihren Domänen finden, und dann gelangen Sie über den Link zu der Übersicht und der Integritäts Seite dieser Domäne.
+  - **Dokumentation**: Wenn ein Ergebnis für Sie nicht gefunden werden kann, werden wir versuchen, eine Dokumentation zu finden, die Ihnen hilft. Es dauert etwas länger, bis die kuratierte Artikelliste eine Übereinstimmung findet, also warten Sie eine Sekunde, damit die Suche die Ergebnisse findet. 
+  - **Feedback**: haben Sie nicht gefunden, wonach Sie gesucht haben? Senden Sie uns Feedback von der Suche. Im Admin Center werden Suchfunktionen für weitere Seiten und mehr Features hinzugefügt.
+
+### <a name="microsoft-365-admin-mobile-app"></a>Microsoft 365 Administrator Mobile App
+
+Mit dem [Microsoft 365-Administrator Mobile App](https://www.microsoft.com/microsoft-365/business/manage-office-365-admin-app), das in Ihrem Abonnement enthalten ist, können Sie Microsoft 365 von Ihrem mobilen Gerät aus verwalten, damit Sie sich von Ihrem Schreibtisch aus für tägliche Aufgaben verlassen können. Tatsächlich gibt es über 90 Features in der APP--und wir haben noch ein paar hinzugefügt:
+
+- **Unterstützung für die Microsoft InTune-Richtlinien für die Verwaltung mobiler Anwendungen und für den bedingten Zugriff**: Sie können jetzt Ihr persönliches Gerät zum Verwalten von Microsoft 365 verwenden, selbst wenn Ihre Organisation die Mobile Anwendungsverwaltung und die bedingten Zugriffsrichtlinien von InTune aktiviert hat.
+- **Benachrichtigungen im Nachrichtencenter**: Aktivieren Sie Benachrichtigungen für das Nachrichtencenter unter **Einstellungen**  >  **Notifications** , wenn Sie über neue Nachrichtencenter-Beiträge benachrichtigt werden möchten. Durch Benachrichtigungen möchten wir sicherstellen, dass Sie über wichtige Informationen und Ereignisse in Ihrem Mandanten informiert bleiben.
+- Benachrichtigungen zur **Abrechnung**: Sie können Benachrichtigungen auch bei **Einstellungs**  >  **Benachrichtigungen** aktivieren, wenn Sie Abrechnungs Benachrichtigungen auf Ihrem Gerät erhalten möchten, wenn ein Abonnement demnächst abläuft.
+- **Dunkler Modus**: Willkommen auf der dunklen Seite des Mobile App. Dies war eines der am häufigsten angeforderten Features. Wechseln Sie zu **Einstellungen**  >  **Designs** , um es zu aktivieren.
+- **Ein Problem melden**: Sie können jetzt ein Problem in der APP melden oder von anderen Administratoren gemeldete Probleme anzeigen. Besuchen Sie den **Dienststatus** , um ihn zu überprüfen.
+
+![Die Integritäts Seite in der Microsoft 365-Administrator-App mit Benachrichtigungen für das Nachrichtencenter, Dienststatus, Abrechnungs Benachrichtigungen.](../media/MAC-WN-AdminMobileApp.png)
+
+### <a name="usage-recommendations-for-small-and-medium-businesses"></a>Verwendungsempfehlungen für kleine und mittelständische Unternehmen
+
+Kleine und mittelständische Unternehmen erhalten möglicherweise eine Empfehlung auf der **Start** Seite, wenn einige der Personen in der Organisation keine Teams, OneDrive oder Office-Apps aktiv verwenden. Wenn Sie die Empfehlung anzeigen, können Sie Microsoft Training schnell an inaktive Benutzer senden, damit Sie mit der APP beginnen und sicherstellen, dass Sie den vollständigen Wert aus ihren Abonnements erhalten.
+
+### <a name="remote-work-collection"></a>Remote-Arbeits Sammlung
+
+Im Oktober fügen wir eine Remote-Arbeits Sammlung hinzu, um Besitzern von Kleinunternehmen und deren Mitarbeitern zu helfen, Online zu arbeiten und Remote zu arbeiten.  Das **Remote work Essentials** -Setup ist eine kuratierte Liste aller Features, die Microsoft empfiehlt, Remote-Arbeit sicher zu aktivieren und effektiv zusammenzuarbeiten. In ein paar Wochen können Sie es in **Setup**  >  **Remote work Essentials**ausprobieren.
+
+![Seite "Remote work Essentials" im Setup mit 7 nicht gestarteten Aufgaben.](../media/MAC-WN-RemoteWork.png)
+
+Weitere Informationen zum sicheren zulassen von Remote-Arbeit und eine praktische Webadresse, die sich leicht merken und freigeben lässt, finden Sie unter [aka.ms/Remote-Business](https://aka.ms/remote-business).
+
+### <a name="need-help-moving-to-more-admin-centers"></a>Benötigen Sie Hilfe? Wechseln zu weiteren Verwaltungszentren
+
+Wir untersuchen und aktualisieren die Inhalte und Tools ständig, damit Sie mit den Änderungen im Produkt Schritt halten können. Wir verfügen nun über viele weitere Diagnosetools, die Ihnen helfen, Probleme schnell und effizient zu lösen. Hier sind einige, die vor kurzem hinzugefügt wurden:
+
+- Ändern der Einschränkungsrichtlinie für Exchange-Webdienste
+- Überprüfen des Status der Microsoft Teams-Protestierung und Validierung für bestimmte Benutzer
+- Beheben von Problemen mit DKIM-Setup
+- Diagnostizieren von InTune-Benutzer Registrierungsfehlern
+
+Und wir stellen die neue und verbesserte Supporterfahrung bereit, die Sie bereits im Microsoft 365 Admin Center für einige der anderen Admin Center sehen. Administratoren von Teams und Security and Compliance Admin Center verfügen bereits über diese neue Erfahrung. In Kürze werden die **Exchange-Verwaltungskonsole**, das **SharePoint Admin Center**und **Office.com** mit dieser neuen Hilfe Erfahrung für Administratoren aktualisiert.
+
+### <a name="manage-changes-with-microsoft-planner"></a>Verwalten von Änderungen mit Microsoft Planner
+
+Im Mai haben wir angekündigt, dass Sie bald Nachrichtencenter-Beiträge an Microsoft Planner synchronisieren können und jetzt für alle Benutzer verfügbar sind.  Sie können jetzt Aufgaben aus Nachrichten erstellen, Sie zuweisen und nach Abschluss nachverfolgen. Beim ersten Mal wählen Sie **Planer-Synchronisierung** aus, die Sie zum Herstellen einer Verbindung mit dem entsprechenden Plan benötigen.
+
+![Seite "Nachrichtencenter" mit hervorgehobener "Planer-Synchronisierung" in der Befehlsleiste neben der Schaltfläche "Einstellungen".](../media/MAC-WN-MCPlannerSync.png)
+
+Wenn Sie mehr darüber erfahren möchten, lesen Sie diesen Artikel und das Video, um zu sehen, wie es funktioniert: nach [Verfolgen von Nachrichtencenter-Beiträgen im Planer](https://docs.microsoft.com/Office365/Planner/track-message-center-tasks-planner)
+
+### <a name="documentation-training-and-videos"></a>Dokumentation, Schulung und Videos
+
+- Ganz neu und rechtzeitig für Microsoft Ignite –[der virtuelle Hub](https://adoption.microsoft.com/virtual-hub/). Tiefer Sprung in das technische Training für IT-Experten und Entwickler. Finden Sie schnell rund 20 neue Videos im Rahmen von #SIDETRACKED, dem Namen der Ignite-Administrator-Spur in diesem Jahr.
+- [Neuerungen bei Microsoft 365](https://www.youtube.com/watch?v=OVjb2lGJ4GU&t=2s) -Video Serien: in diesem Monat decken wir neue Features ab, die in Whiteboards für Teams und im Internet verfügbar sind, wie Sie die Benutzer Bereitstellung auf Azure AD automatisieren, neue Power-Trigger und-Aktionen in Microsoft Teams automatisieren und vieles mehr. Und bleiben Sie für den nächsten Monat dran, wo wir eine Zusammenfassung aller tollen Dinge bei Ignite haben!
+- Wir haben eine Neugestaltung der [Microsoft 365-Dokumentations](https://docs.microsoft.com/microsoft-365) Seite durch geschafft, die sich zunächst auf Lösungen konzentriert. Wir werden neue Lösungen hervorheben, wenn Sie auf dieser Seite verfügbar werden, also halten Sie Ausschau.
+
+![Neue Startseite für Microsoft 365-Lösungsdokumentation mit Lösungen wie "Empower Remote Workers".](../media/MAC-WN-M365Docspage.png)
+
 ## <a name="july-2020"></a>Juli 2020
 
 ### <a name="getting-ready-for-ignite-2020"></a>Vorbereitungen für Ignite 2020
 
-Während wir in die Ignite Season bei Microsoft umziehen, werden wir nicht so viele Features freigeben, dass wir während unserer Sitzungen viel besprechen müssen. 
+Während wir in die Ignite Season bei Microsoft umziehen, werden wir nicht so viele Features freigeben, dass wir während unserer Sitzungen viel besprechen müssen.
 
 Das nächste Update für diesen Artikel wird am Tag des ersten Starts unseres ersten Online-ignites sein. In diesem Jahr können Sie kostenlos teilnehmen! Check it out, Get signed up: [Microsoft Ignite 2020](https://www.microsoft.com/ignite).
 
 ### <a name="your-products"></a>Ihre Produkte
 
-Es wurde eine Menge Arbeit in der Abonnementverwaltung getan, um die Seite schneller zu laden, schneller zu finden, was Sie suchen, und um die acessibility-Standards ([WCAG 2,1 Guidelines](http://www.w3.org/TR/WCAG21/)) zu erfüllen.
+In der Abonnementverwaltung wurden viele Aufgaben ausgeführt, um die Seite schneller zu laden, schneller zu finden, was Sie suchen, und um die Standards für die Barrierefreiheit im Internet ([WCAG 2,1 Guidelines](http://www.w3.org/TR/WCAG21/)) zu erfüllen.
 
 - **Tabellen Umgestaltung**: die Tabelle wurde neu gestaltet, sodass Sie ähnliche Abonnements gruppieren können. Wechseln Sie zu **Abrechnung**  >  **ihrer Produkte**.
 - **Produkt Details**: Weitere Details zu ihren Abonnements erhalten Sie, indem Sie das Produkt in der Liste auswählen.
@@ -73,7 +177,7 @@ Die Domänenverwaltung kann kompliziert sein, und wir haben ein neues Feature ve
 
 :::image type="content" source="../media/MAC-WN-DomainDNS.PNG" alt-text="Seite "Domänendetails" für contoso.com":::
 
-### <a name="docs-training-and-videos"></a>Dokumente, Schulungen und Videos
+### <a name="docs-training-and-videos-july-2020"></a>Dokumente, Schulungen und Videos (Juli 2020)
 
 [Was ist neu in Microsoft 365](https://youtu.be/m1Nu8WJgCDY) Video Series: in diesem Monat decken wir die neue Jammer Erfahrung für das Internet und Mobile, die Integration der Jammer Gemeinschaften-App für Microsoft Teams, neue Richtlinien Pakete zur Unterstützung von Mitarbeitern und Führungskräften in erster Linie und vieles mehr.
 
@@ -91,7 +195,7 @@ Vor ein paar Monaten haben wir eine Einstellung hinzugefügt, mit der Sie die ne
 
 ### <a name="new-update-channel-for-office"></a>Neuer Update Kanal für Office
 
-Am 12. Mai kündigten wir die Verfügbarkeit eines neuen Update Kanals für Office an: Monthly Enterprise Channel. Dieser Update Kanal bietet ihren Benutzern neue Office-Funktionen einmal monatlich am zweiten Dienstag des Monats.
+Am 12. Mai kündigten wir die Verfügbarkeit eines neuen Update Kanals für Office an: Monthly Enterprise Channel. Dieser Update Kanal stellt Ihren Benutzern neue Office-Funktionen einmal monatlich am zweiten Dienstag des Monats zur Verfügung.
 
 Wenn Sie den Benutzern die Selbstinstallation von Office über das Portal gestatten, können Sie für diese Benutzer den monatlichen Enterprise-Kanal auswählen. Um dies zu tun, melden Sie sich beim Microsoft 365 Admin Center an, und wechseln Sie zu **alle Einstellungen anzeigen**  > **Settings**  >  **org Settings**  >  **Services**  >  **Office Software Download Settings**. Wenn Sie **einmal monatlich (monatlicher Enterprise-Kanal)** auswählen, werden alle neuen selbst Installationen von Office für die Verwendung des monatlichen Enterprise-Kanals konfiguriert.
 
@@ -128,11 +232,11 @@ In diesem Monat haben wir eine neue Website mit dem [https://docs.microsoft.com]
 - **Was ist neu in Microsoft 365 Video Series**: diesen Monat decken wir die neue Supporterfahrung in den Teams admin und Security and Compliance Center, Planner Integration in das Nachrichten Center und das neue 3X3-Video Layout in Microsoft Teams ab. 
 - Die Seite [Microsoft 365 Admin Center Help](https://docs.microsoft.com/microsoft-365/admin/) Hub wurde aktualisiert, um Ihnen zu helfen, schneller zu finden, was Sie benötigen. Wenn Sie diese Seite jetzt betrachten, haben wir eine Karte hinzugefügt, um Sie über wichtige Updates und Änderungen zu informieren.
 
-## <a name="april-2020"></a>April 2020
+## <a name="april-2020"></a>April 2020
 
 ### <a name="intune-roles-management"></a>InTune-Rollenverwaltung
 
-[April 2020](#april-2020)
+[April 2020](#april-2020)
 
 Nun, wir haben es geschafft! Wir haben den zweiten Schritt hin zu einer einheitlichen Rollen Erfahrung unternommen, und Sie können jetzt InTune-Rollen im Microsoft 365 Admin Center verwalten. Sie können auch Features wie die Suche nach Rollen und das Anzeigen von Rollen Berechtigungen nutzen. Dies bedeutet, dass Sie nicht zwei separate Tools zum Verwalten von Rollen für Microsoft 365 und InTune benötigen. Wenn Sie sich beim Microsoft 365 Admin Center anmelden, sehen Sie, dass auf der Seite "Rollen" zwei Pivots vorhanden sind: eine für Azure AD und eine für InTune.
 
@@ -257,7 +361,7 @@ Wir haben viel Feedback von Partnern und Administratoren über die Herausforderu
 ![Screen Capture: oben auf der Startseite wird der Name des Organisationsprofils mit dem Switcher-Symbol angezeigt.](../media/MAC-Organization-switcher.png)
 
 2. Wählen Sie im Organisations Wechsler die org aus, die Sie verwalten möchten.
-![Screen Capture: oben auf der Startseite wird der Name des Organisationsprofils mit dem Switcher-Symbol angezeigt.](../media/MAC-OrgSwitcherSelected.png)
+![Screen Capture: mein Organizations-Mandanten Switcher mit konsolidiertem Messenger-Mandanten hervorgehoben](../media/MAC-OrgSwitcherSelected.png)
 
 Das ist buchstäblich!!!
 
@@ -437,7 +541,7 @@ Es wurde ein anderer unserer anfänglichen Setup-Assistenten aktualisiert: Micro
 Wir haben einige Updates für Abrechnung und Abonnements in diesem Monat:
 
 - Gerätebasierte Abonnements: Sie können **Microsoft 365 apps for Education (Geräte)** Lizenzen den Geräten im Microsoft 365 Admin Center zuweisen oder aufheben. **Microsoft 365 apps for Education (Gerät)** ist eine Add-on-Lizenz, mit der Sie einem Gerät eine Lizenz zuweisen können. Wechseln Sie zu **Abrechnung**  >  **ihrer Produkte** , um die Lizenz zu finden und zu kaufen.
-- Benutzerbasierte Lizenzverwaltung: Wir haben die Art und Weise aktualisiert, in der **Benutzer**  >  **aktive Benutzer** der neuen Formatvorlage Lizenzen zuweisen. Weitere Informationen finden Sie hier:
+- Benutzerbasierte Lizenzverwaltung: Wir haben die Art und Weise aktualisiert, in der **Benutzer**  >  **aktive Benutzer** der neuen Formatvorlage Lizenzen zuweisen. Weitere Informationen finden Sie unter:
   - [Zuweisen von Lizenzen für Benutzer](manage/assign-licenses-to-users.md)
   - [Entfernen der Zuweisung von Benutzerlizenzen](manage/remove-licenses-from-users.md)
 
@@ -541,7 +645,7 @@ Möglicherweise wird in Ihrem Admin Center ein neues Empfehlungs Popup angezeigt
 - **InTune-Geräteschutz** : Wenn Ihre Lizenzen InTune enthalten und wir feststellen, dass Sie die Einrichtung von InTune oder Ihre Geräte nicht abgeschlossen haben, wird empfohlen, dass Sie eine InTune-Richtlinie erstellen, um die Dateien Ihrer Organisation zu schützen, wenn Benutzer von ihren mobilen Geräten aus darauf zugreifen.
 - **Monatliche Office-Feature-Updates** – wir haben Feedback von unseren sehr kleinen Kunden bekommen, dass Ihre Benutzer, wenn Sie monatliche Office-Feature-Updates erhalten, glücklicher sind. Wenn Sie also ein sehr kleines Unternehmen sind und Ihre Office-Feature-Updates derzeit alle sechs Monate erhalten, wird diese Empfehlung angezeigt.
 
-**Einstellungen** <br>
+**Settings** <br>
 Was die Einstellungen anbetrifft, gibt es einige Änderungen. Meistens aktualisieren Sie einfach die vorhandenen Einstellungen auf den neuen Admin Center-Stil. Wenn wir fortfahren und neue Einstellungen hinzufügen, die Sie noch nie zuvor gesehen haben, werden wir Sie hier ansprechen. Und wir haben eine vollständige Einstellung, die Sie ankündigen müssen: **moderne Authentifizierung**. Ja, es gibt eine neue Einstellung zum Aktivieren der **modernen Authentifizierung**! Zum Auschecken wechseln Sie zu **Einstellungen**  >  **Dienste & Add-ins**  >  **moderne Authentifizierung**.
 
 ## <a name="april-2019"></a>April 2019

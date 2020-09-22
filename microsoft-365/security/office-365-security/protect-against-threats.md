@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: Administratoren können Informationen zum Bedrohungsschutz in Microsoft 365 und konfigurieren, wie Sie für Ihre Organisation verwendet werden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a78bbea2d11360bbfa48fa3da01391471b2e0a4d
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 1ad74e9bdcd7b937873108d2ba049c16db8c235b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547362"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202579"
 ---
 # <a name="protect-against-threats"></a>Schutz vor Bedrohungen
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Hier ist eine Schnellstartanleitung, die die Konfiguration von Advanced Threat Protection in Chunks unterteilt. Wenn Sie mit den Features zum Schutz vor Bedrohungen in Office 365 vertraut sind, nicht sicher sind, wo Sie beginnen sollten, oder wenn Sie am besten *lernen, verwenden*Sie diese Anleitung als Prüfliste und als Ausgangspunkt.
 

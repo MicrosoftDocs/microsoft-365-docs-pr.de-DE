@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Erfahren Sie mehr über die Verwendung von zentralisierten Add-Ins, um Add-Ins für Benutzer und Gruppen in Ihrer Organisation bereitzustellen.
-ms.openlocfilehash: c7f8b7bf71dbdaaf1c850c801a5145d3ab47a65c
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: 6339858871834637c0b8fdd1b16c17b534026de9
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171292"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48207886"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Verwalten von Add-Ins im Admin Center
 
@@ -60,6 +60,9 @@ Sie können auch ein Add-in löschen, das bereitgestellt wurde.
 
 1. Wechseln Sie im Admin Center zur Seite **Einstellungen**für  >  **Dienste &-Add-ins** .
 
+     > [!NOTE]
+    > Das Admin Center wird mit integrierten Apps auf die Bereitstellungsumgebung aktualisiert. Wenn die oben beschriebenen Schritte nicht angezeigt werden, wechseln Sie zum Abschnitt zentralisierte bereit **Settings**Stellung, indem Sie auf  >  **integrierte apps**für Einstellungen gehen. Wählen Sie oben auf der Seite **integrierte apps** die Option **Add-ins**aus.
+
 2. Wählen Sie das bereitgestellte Add-in aus.
 
 3. Klicken Sie auf **Add-in löschen**. Entfernen Sie die Add-In-Schaltfläche in der unteren rechten Ecke.
@@ -71,6 +74,9 @@ Sie können auch ein Add-in löschen, das bereitgestellt wurde.
 Nach der Bereitstellung können Administratoren auch den Benutzer Zugriff auf Add-Ins verwalten.
 
 1. Wechseln Sie im Admin Center zur Seite **Einstellungen**für  >  **Dienste &-Add-ins** .
+
+     > [!NOTE]
+    > Das Admin Center wird mit integrierten Apps auf die Bereitstellungsumgebung aktualisiert. Wenn die oben beschriebenen Schritte nicht angezeigt werden, wechseln Sie zum Abschnitt zentralisierte bereit **Settings**Stellung, indem Sie auf  >  **integrierte apps**für Einstellungen gehen. Wählen Sie oben auf der Seite **integrierte apps** die Option **Add-ins**aus.
 
 2. Wählen Sie das bereitgestellte Add-in aus.
 
@@ -88,6 +94,9 @@ Als Organisation möchten Sie möglicherweise verhindern, dass neue Office-Add-I
 **So deaktivieren Sie die Add-in-Akquisition**
   
 1. Wechseln Sie im Admin Center zur Seite **Einstellungen** \> [Dienste &amp; Add-Ins](https://go.microsoft.com/fwlink/p/?linkid=2053743).
+
+     > [!NOTE]
+    > Das Admin Center wird mit integrierten Apps auf die Bereitstellungsumgebung aktualisiert. Wenn die oben beschriebenen Schritte nicht angezeigt werden, wechseln Sie zum Abschnitt zentralisierte bereit **Settings**Stellung, indem Sie auf  >  **integrierte apps**für Einstellungen gehen. Wählen Sie oben auf der Seite **integrierte apps** die Option **Add-ins**aus.
     
 3. Wählen Sie **Benutzereigene Apps und Dienste aus**.
     

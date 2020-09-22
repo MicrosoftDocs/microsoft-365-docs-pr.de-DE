@@ -20,14 +20,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können Informationen zur Quarantäne in Exchange Online Protection (EoP) erhalten, die potenziell gefährliche oder unerwünschte Nachrichten enthält.
-ms.openlocfilehash: d2ccf174ae929c6db14f2a5319e9594495c0778e
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 77eea3140fb96faec4fb5a749422c2bd9da85b45
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826801"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202471"
 ---
 # <a name="quarantined-email-messages-in-eop"></a>Isolierte e-Mail-Nachrichten in EoP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 In Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer steht die Quarantäne zur Verfügung, um potenziell gefährliche oder unerwünschte Nachrichten zu speichern.
 

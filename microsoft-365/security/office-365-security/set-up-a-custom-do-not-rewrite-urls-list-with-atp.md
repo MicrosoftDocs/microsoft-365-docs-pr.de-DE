@@ -19,14 +19,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Hier erfahren Sie, wie Sie benutzerdefinierte blockierte URLs für Benutzer einrichten und eine Liste mit URLs für eine Gruppe von Benutzern in Office 365 Richtlinien für ATP-sichere Links erstellen.
-ms.openlocfilehash: 9ec9c92e038aee33c716405916df009e3f4c60c5
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: ff2ce18897d7bd1d3890335a237e32bffd1a77e6
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825233"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202351"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>Einrichten einer benutzerdefinierten Liste "do-not-Rewrite-URLs" mithilfe von ATP-Safe-Links
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!IMPORTANT]
 > Dieser Artikel richtet sich an Geschäftskunden, die über [Office 365 Advanced Threat Protection](office-365-atp.md) verfügen. Wenn Sie ein Privatbenutzer sind, der nach Informationen zu sicheren Links in Outlook sucht, lesen Sie [Erweiterte Outlook.com-Sicherheit](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).

@@ -14,14 +14,17 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie die AntiPhishing-Richtlinien erstellen, ändern und löschen, die in Exchange Online Protection (EoP)-Organisationen mit oder ohne Exchange Online Postfächern verfügbar sind.
-ms.openlocfilehash: 3b83bcd3c60dbd779d727a79f6689fdf0004d340
-ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
+ms.openlocfilehash: 66c02513966eda45c4993a28904667f11be225f5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255757"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203395"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Konfigurieren von Anti-Phishing-Richtlinien in EoP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 In Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer gibt es eine standardmäßige Anti-Phishing-Richtlinie, die eine beschränkte Anzahl von Antispoofing-Funktionen enthält, die standardmäßig aktiviert sind. Weitere Informationen finden Sie unter [Spoof Settings in Anti-Phishing Policies](set-up-anti-phishing-policies.md#spoof-settings).
 
@@ -149,7 +152,7 @@ Verwenden Sie die folgenden Verfahren, um Richtlinien zum Schutz vor Phishing zu
    - **Name**
    - **Beschreibung**
    - **Angewendet auf**
-   - **Ihre Einstellungen überprüfen**
+   - **Überprüfen der Einstellungen**
 
    Wenn Sie fertig sind, klicken Sie auf jeder Seite auf **Speichern** .
 

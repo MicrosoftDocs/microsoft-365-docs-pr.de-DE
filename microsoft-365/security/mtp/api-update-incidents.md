@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e790f4f415575323cfdd5fc15db41baa8b59c7f6
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: 8ad47453c7163bfac99c17f42986b818cdca603f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650310"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203629"
 ---
 # <a name="update-incidents-api"></a>Update Incidents-API
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Gilt für:**
 - Microsoft Threat Protection
@@ -50,7 +53,7 @@ Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Wei
 
 Berechtigungstyp |   Berechtigung  |   Anzeigename der Berechtigung
 :---|:---|:---
-Anwendung |   Incident. ReadWrite. all |    "Alle Vorfälle lesen und schreiben"
+Application |   Incident. ReadWrite. all |    "Alle Vorfälle lesen und schreiben"
 Delegiert (Geschäfts-, Schul- oder Unikonto) | Incident. ReadWrite | ' Lesen und Schreiben von Vorfällen '
 
 >[!NOTE]
@@ -68,7 +71,7 @@ PATCH /api/incidents/{id}
 
 Name | Typ | Beschreibung
 :---|:---|:---
-Authorization | Zeichenfolge | Bearer {Token}. **Erforderlich**.
+Authorization | String | Bearer {Token}. **Erforderlich**.
 Content-Type | Zeichenfolge | application/json. **Erforderlich**.
 
 
@@ -80,7 +83,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 Eigenschaft | Typ | Beschreibung
 :---|:---|:---
 status | Enum | Gibt den aktuellen Status der Warnung an. Mögliche Werte sind: ```Active``` ```Resolved``` und ```Redirected``` .
-assignedTo | Zeichenfolge | Besitzer des Vorfalls.
+assignedTo | string | Besitzer des Vorfalls.
 classification | Enum | Spezifikation der Warnung. Mögliche Werte sind: ```Unknown```, ```FalsePositive``` und ```TruePositive```.
 Bestimmung | Enum | Gibt die Bestimmung der Warnung an. Mögliche Werte: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware```, ```Other```.
 tags | Zeichenfolgenliste | Liste der Vorfall Tags.
@@ -114,4 +117,4 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 
 ## <a name="related-topic"></a>Verwandtes Thema
 - [Vorfall-APIs](api-incident.md)
-- [Vorfälle auflisten](api-list-incidents.md)
+- [Auflisten von Vorfällen](api-list-incidents.md)

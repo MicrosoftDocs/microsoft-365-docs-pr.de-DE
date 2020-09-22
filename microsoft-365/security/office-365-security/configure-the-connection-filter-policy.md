@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können erfahren, wie Sie die Verbindungsfilterung in Exchange Online Protection (EoP) konfigurieren, um e-Mails von e-Mail-Servern zuzulassen oder zu blockieren.
-ms.openlocfilehash: 45213ff36c7efc76a83a2c520e0369211ffecf53
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: d69ec30c9d6d812bf3bbcc6dc5b6df332d9dd0b5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827845"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203371"
 ---
 # <a name="configure-connection-filtering"></a>Konfigurieren von Verbindungsfiltern
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Wenn Sie ein Microsoft 365-Kunde mit Postfächern in Exchange Online oder einem eigenständigen Exchange Online Schutz-Kunden (EoP) ohne Exchange Online Postfächer sind, verwenden Sie die Verbindungsfilterung in EoP (insbesondere die standardmäßige Verbindungsfilter Richtlinie), um gute oder ungültige Quell-e-Mail-Server anhand ihrer IP-Adressen zu identifizieren. Die Hauptkomponenten der Standardverbindungsfilter-Richtlinie sind:
 

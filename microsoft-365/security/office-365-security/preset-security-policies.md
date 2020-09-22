@@ -14,14 +14,17 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratoren erfahren, wie Sie Standard mäßige und strenge Richtlinieneinstellungen über die Schutzfunktionen von Exchange Online Protection (EoP) und Office 365 Advanced Threat Protection (ATP) anwenden können.
-ms.openlocfilehash: a2f0472d8dd44c90fd5db14e71d2db0d5d323b50
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 35be2b1ebfcf7ef8b7aad5cc2d4b3dd7032806b2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825257"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202603"
 ---
 # <a name="preset-security-policies-in-eop-and-office-365-atp"></a>Voreingestellte Sicherheitsrichtlinien in EoP und Office 365 ATP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Vordefinierte Sicherheitsrichtlinien bieten einen zentralisierten Standort, um alle empfohlenen Spam-, Schadsoftware-und Phishing-Richtlinien gleichzeitig auf Benutzer anzuwenden. Die Richtlinieneinstellungen können nicht konfiguriert werden. Stattdessen werden Sie von uns festgelegt und basieren auf unseren Beobachtungen und Erfahrungen in den Rechenzentren für ein Gleichgewichtzwischen dem aufhalten schädlicher Inhalte von Benutzern, ohne Ihre Arbeit zu unterbrechen.
 

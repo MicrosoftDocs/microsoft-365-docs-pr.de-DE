@@ -16,14 +16,17 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die verfügbaren und bevorzugten Optionen informieren, um eingehende Nachrichten in Exchange Online Protection (EoP) zuzulassen.
-ms.openlocfilehash: f182027b153ee73e33131b39066e512c9303fcbd
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: b1eda98e081338a981be1d1f5991578b49c574fd
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827111"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203167"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Erstellen sicherer Absenderlisten in EoP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Wenn Sie ein Microsoft 365-Kunde mit Postfächern in Exchange Online oder ein eigenständiger Exchange Online Schutz (EoP)-Kunde ohne Exchange Online Postfächer sind, bietet EoP mehrere Möglichkeiten, um sicherzustellen, dass Benutzer e-Mails von vertrauenswürdigen Absendern empfangen können. Zu diesen Optionen gehören Exchange-Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet), Outlook-sichere Absender, die IP-Zulassungsliste (Verbindungsfilterung) und zugelassene Absenderlisten oder zugelassene Domänenlisten in den Antispam-Richtlinien. Sie können diese Optionen gemeinsam als _sichere Absenderlisten_betrachten.
 

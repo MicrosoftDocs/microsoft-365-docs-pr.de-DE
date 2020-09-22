@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: Beim Einrichten Ihrer Richtlinien für das Feature "ATP-sichere Anlagen", wählen Sie die Option "Dynamische Zustellung" aus, um Nachrichtenverzögerungen zu vermeiden und Personen in die Lage zu versetzen, Anlagen in der Vorschau zu betrachten, die gescannt werden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7e2da24ebac5863ab7852fdf8f9c7af8d507698b
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: c0b19317babbd433ba0914ca2385cf6c9b40d89b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430351"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203035"
 ---
 # <a name="dynamic-delivery-and-previewing-with-atp-safe-attachments"></a>Dynamische Zustellung und Vorschau mit ATP-sicheren Anlagen
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ## <a name="basic-features-of-dynamic-delivery"></a>Grundlegende Features der dynamischen Zustellung
 

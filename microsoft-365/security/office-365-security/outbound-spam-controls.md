@@ -19,14 +19,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können Informationen zu den ausgehenden Spam Steuerelementen in Exchange Online Protection (EoP) und was tun, wenn Sie Massensendungen senden müssen.
-ms.openlocfilehash: 99502e7fb55419dedb4d0f7d4a7e6c4591eff859
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 1097b768b955f2fa99c552ceda7564bef33a1aa7
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208923"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202387"
 ---
 # <a name="outbound-spam-protection-in-eop"></a>Ausgehenden Spam Schutz in EoP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 In Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer nehmen wir die Verwaltung von ausgehenden Spam-Mails ernst. Ein Kunde, der absichtlich oder unabsichtlich Spam aus seiner Organisation sendet, kann die Reputation des gesamten Diensts beeinträchtigen und die e-Mail-Zustellung für andere Kunden beeinträchtigen.
 
@@ -40,7 +43,7 @@ In diesem Thema werden die Steuerelemente und Benachrichtigungen beschrieben, di
 
 ## <a name="how-eop-controls-outbound-spam"></a>Wie EoP ausgehende Spam Steuerelemente steuert
 
-- **Trennung des ausgehenden e-Mail-Datenverkehrs**: jede ausgehende Nachricht, die über den Dienst gesendet wird, wird auf Spam überprüft. Wenn die Nachricht als Spam eingestuft wird, wird Sie von einem sekundären, nicht seriösen IP-Adresspool mit dem Namen " _hoher Risiko-Zustellungs Pool_" übermittelt. Weitere Informationen finden Sie unter [hochriskanter Zustellungs Pool für ausgehende Nachrichten](high-risk-delivery-pool-for-outbound-messages.md).
+- **Trennung des ausgehenden e-Mail-Datenverkehrs**: jede ausgehende Nachricht, die über den Dienst gesendet wird, wird auf Spam überprüft. Wenn die Nachricht als Spam eingestuft wird, wird Sie von einem sekundären, nicht seriösen IP-Adresspool mit dem Namen " _hoher Risiko-Zustellungs Pool_" übermittelt. Weitere Informationen finden Sie unter [Zustellungspool mit höherem Risiko für ausgehende Nachrichten](high-risk-delivery-pool-for-outbound-messages.md).
 
 - Über **Wachen der Reputation der Quell-IP-Adresse**: Microsoft 365 fragt verschiedene IP-Sperrlisten von Drittanbietern ab. Eine Warnung wird generiert, wenn eine der IP-Adressen, die für ausgehende e-Mails verwendet werden, in diesen Listen angezeigt wird. Auf diese Weise können wir schnell reagieren, wenn Spam unsere Reputation verschlechtert hat. Wenn eine Warnung generiert wird, haben wir eine interne Dokumentation, in der erläutert wird, wie Sie die IP-Adressen aus Sperrlisten entfernen (deaufgelistet).
 
@@ -48,7 +51,7 @@ In diesem Thema werden die Steuerelemente und Benachrichtigungen beschrieben, di
 
 - **Deaktivieren von Konten, die zu viele e-Mails zu schnell senden** <sup>\*</sup> : Zusätzlich zu den Grenzwerten, die nach Nachrichten suchen, die als Spam gekennzeichnet sind, gibt es auch Grenzwerte, mit denen Konten blockiert werden, wenn Sie eine allgemeine Grenze für ausgehende Nachrichten erreichen, unabhängig vom Spamfilter Urteil für ausgehende Nachrichten. Ein kompromittiertes Konto kann den vom Spamfilter verpassten Zero-Day (zuvor nicht erkannte) Spam senden. Da es schwierig sein kann, eine legitime Massen-e-Mail-Kampagne vs. eine Spam Kampagne zu identifizieren, helfen diese Grenzwerte, mögliche Schäden zu minimieren.
 
-<sup>\*</sup>Wir werben nicht für die genauen Grenzwerte, sodass Spammer das System nicht spielen können, und daher können wir die Grenzwerte je nach Bedarf erweitern oder verringern. Die Grenzwertesind hoch genug, um zu verhindern, dass ein durchschnittlicher Geschäftsbenutzer Sie jemals überschreitet, und Sie sind niedrig genug, um den durch einen Spammer verursachten Schaden zu reduzieren.
+<sup>\*</sup> Wir werben nicht für die genauen Grenzwerte, sodass Spammer das System nicht spielen können, und daher können wir die Grenzwerte je nach Bedarf erweitern oder verringern. Die Grenzwertesind hoch genug, um zu verhindern, dass ein durchschnittlicher Geschäftsbenutzer Sie jemals überschreitet, und Sie sind niedrig genug, um den durch einen Spammer verursachten Schaden zu reduzieren.
 
 ## <a name="recommendations-for-customers-who-want-to-send-mass-mailings-through-eop"></a>Empfehlungen für Kunden, die Massensendungen über EoP senden möchten
 

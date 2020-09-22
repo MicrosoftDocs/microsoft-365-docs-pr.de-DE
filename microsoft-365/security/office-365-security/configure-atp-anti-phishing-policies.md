@@ -14,14 +14,17 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie die erweiterten Anti-Phishing-Richtlinien erstellen, ändern und löschen, die in Organisationen mit Office 365 Advanced Threat Protection (Office 365 ATP) verfügbar sind.
-ms.openlocfilehash: 83f100cab12c91af1405ffc5f386ff51028710a9
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: a4b5dc5beac23e267f6b0e5070d91301b589ad4c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547652"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203383"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>Konfigurieren der ATP Antiphishing-Richtlinien
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ATP-Anti-Phishing-Richtlinien sind Teil [Office 365 Advanced Threat Protection](office-365-atp.md). Durch ATP-Richtlinien zum Schutz vor Phishing können Sie Ihre Organisation vor böswilligen Identitätswechsel basierten Phishing-Angriffen und anderen Arten von Phishing-Angriffen schützen. Weitere Informationen zu den Unterschieden zwischen Anti-Phishing-Richtlinien in Exchange Online Protection (EoP) und ATP Anti-Phishing Policies finden Sie unter [Anti-Phishing Protection](anti-phishing-protection.md).
 
@@ -147,7 +150,7 @@ Verwenden Sie die folgenden Verfahren, um ATP-AntiPhishing-Richtlinien zu änder
    - **Name**
    - **Beschreibung**
    - **Angewendet auf**
-   - **Ihre Einstellungen überprüfen**
+   - **Überprüfen der Einstellungen**
 
    Wenn Sie fertig sind, klicken Sie auf jeder Seite auf **Speichern** .
 

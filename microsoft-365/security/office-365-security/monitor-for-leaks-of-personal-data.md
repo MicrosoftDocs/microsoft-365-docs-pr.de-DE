@@ -18,14 +18,17 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Lernen Sie drei Tools kennen, mit denen Sie Lecks für personenbezogene Daten aufspüren können.
-ms.openlocfilehash: ef6e1b2edecc8ee8318f1b1e6228e9931b8c66c5
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 67cce80435aa0f01f496ec67d617f0a2dfff8ec8
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351885"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202699"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Überwachen auf Lecks für personenbezogene Daten
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Es gibt viele Tools, die zum Überwachen der Verwendung und Übertragung personenbezogener Daten verwendet werden können. In diesem Thema werden drei Tools beschrieben, die gut funktionieren.
 

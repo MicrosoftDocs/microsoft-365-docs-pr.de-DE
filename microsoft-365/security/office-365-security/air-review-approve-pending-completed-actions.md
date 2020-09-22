@@ -15,14 +15,17 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Erfahren Sie mehr Überkorrektur Aktionen in automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection-Plan 2.
-ms.openlocfilehash: c44b0a535e6838258d3efa63010d7ccc63009af9
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: 2f1d6a1dccfaece6a52ec33fd86ea244fbb6c4fe
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804826"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202447"
 ---
 # <a name="view-pending-or-completed-remediation-actions-following-an-automated-investigation-in-office-365"></a>Anzeigen ausstehender oder abgeschlossener Korrekturaktionen nach einer automatisierten Untersuchung in Office 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 
 ![Seite "Luft Ermittlungsaktionen"](../../media/air-investigationactionspage.png)
@@ -36,7 +39,7 @@ Während Sie die [Details einer Untersuchung](air-view-investigation-results.md)
 
 1. Gehen Sie zu [https://protection.office.com](https://protection.office.com), und melden Sie sich an. Sie gelangen auf das Sicherheits & Compliance Center.
 
-2. Wechseln Sie zu **Threat Management** > **Investigations**.
+2. Wechseln Sie zu **Threat Management**  >  **Investigations**.
 
 3. Wählen Sie in der Liste der Untersuchungen ein Element in der Spalte **ID** aus. 
 

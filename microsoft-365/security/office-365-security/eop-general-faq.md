@@ -14,14 +14,17 @@ ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
 ms.custom:
 - seo-marvel-apr2020
 description: Hier finden Sie Antworten auf die häufigsten allgemeinen Fragen zum Exchange Online Protection (EoP) Cloud-Hosted Email Filtering Service.
-ms.openlocfilehash: 42162ea841f876fc5e958d67fab61dbe4bffe9de
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: aa0b881250466c71cb05123216fcf9eccc64018d
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827761"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202915"
 ---
 # <a name="eop-general-faq"></a>EOP – Allgemeine häufig gestellte Fragen
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Hier werden die häufigsten allgemeinen Fragen zu Exchange Online Protection (EoP) Cloud-Hosted e-Mail-Filterdienst beantwortet. Themen mit weiteren häufig gestellten Fragen (FAQs) finden Sie unter den folgenden Links:
 
