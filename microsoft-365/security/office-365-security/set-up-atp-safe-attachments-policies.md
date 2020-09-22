@@ -18,21 +18,24 @@ ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie Richtlinien für sichere Anlagen zum Schutz Ihrer Organisation vor bösartigen Dateien in e-Mails definieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a8b69d114b1387a1ef76d962424149c1db93ce04
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 5f9f1a6cc250fdd336e48c19c6cb5d73e9a05800
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656628"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197223"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Einrichten Office 365 Richtlinien für ATP-sichere Anlagen
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!IMPORTANT]
 > Dieser Artikel richtet sich an Geschäftskunden, die über [Office 365 Advanced Threat Protection](office-365-atp.md) verfügen. Wenn Sie ein Privatbenutzer sind, der nach Informationen zu sicheren Anlagen in Outlook sucht, lesen Sie [Erweiterte Outlook.com-Sicherheit](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Personen senden, empfangen und teilen regelmäßig Anlagen wie Dokumente, Präsentationen, Tabellenkalkulationen und vieles mehr. Es ist nicht immer einfach zu erkennen, ob eine Anlage sicher oder böswillig ist, indem nur eine e-Mail-Nachricht angezeigt wird. Und das letzte, was Sie möchten, ist eine böswillige Anlage, die durchkommt und verheerende Verwüstungen für Ihre Organisation anrichtet. Glücklicherweise kann [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) hilfreich sein. Sie können Richtlinien für [ATP-sichere Anlagen](atp-safe-attachments.md) einrichten, um sicherzustellen, dass Ihre Organisation vor Angriffen durch nicht sichere e-Mail-Anlagen geschützt ist.
 
-## <a name="what-to-do"></a>Nächste Schritte
+## <a name="what-to-do"></a>Vorgehensweise
 
 1. Überprüfen der Voraussetzungen
 
@@ -97,7 +100,7 @@ Bei der Einrichtung Ihrer Richtlinien für ATP-sichere Anlagen wählen Sie unter
 |---|---|---|
 |**Off**|Scannt keine Anlagen für Schadsoftware  <br/> Verzögert die Nachrichtenzustellung nicht|Deaktivieren Sie die Überprüfung für ausgewählte Empfänger.  <br/> Vermeiden Sie unnötige Verzögerungen beim Weiterleiten interner e-Mails.  <br/> **Diese Option wird für die meisten Benutzer nicht empfohlen. Sie sollten diese Option nur verwenden, um die Überprüfung der ATP-Tresoranlagen für Empfänger zu deaktivieren, die nur e-Mails von vertrauenswürdigen Absendern erhalten.**|
 |**Überwachen**|Sendet Nachrichten mit Anlagen und verfolgt dann, was mit erkannter Schadsoftware geschieht.|Ermitteln, wo erkannte Schadsoftware in Ihrer Organisation eingeht|
-|**Block**|Verhindert, dass Nachrichten mit erkannten Schadsoftware-Anlagen fortgesetzt werden  <br/> Sendet Nachrichten mit erkannter Schadsoftware [in Quarantäne in Office 365, in](manage-quarantined-messages-and-files.md) denen ein Sicherheitsadministrator oder Analyst diese Nachrichten überprüfen und freigeben (oder löschen) kann.  <br/> Automatisches Blockieren zukünftiger Nachrichten und Anlagen|Schützen Ihrer Organisation vor wiederholten Angriffen mit denselben Schadsoftware-Anlagen|
+|**Blockieren**|Verhindert, dass Nachrichten mit erkannten Schadsoftware-Anlagen fortgesetzt werden  <br/> Sendet Nachrichten mit erkannter Schadsoftware [in Quarantäne in Office 365, in](manage-quarantined-messages-and-files.md) denen ein Sicherheitsadministrator oder Analyst diese Nachrichten überprüfen und freigeben (oder löschen) kann.  <br/> Automatisches Blockieren zukünftiger Nachrichten und Anlagen|Schützen Ihrer Organisation vor wiederholten Angriffen mit denselben Schadsoftware-Anlagen|
 |**Replace**|Entfernt erkannte Schadsoftware-Anlagen  <br/> Benachrichtigt Empfänger, dass Anlagen entfernt wurden.  <br/> Sendet Nachrichten mit erkannter Schadsoftware [in Quarantäne in Office 365, in](manage-quarantined-messages-and-files.md) denen ein Sicherheitsadministrator oder Analyst diese Nachrichten überprüfen und freigeben (oder löschen) kann.|Erhöhen der Sichtbarkeit für Empfänger, die Anlagen aufgrund erkannter Schadsoftware entfernt haben|
 |**Dynamische Zustellung**|Sendet sofort Nachrichten  <br/> Ersetzt Anlagen durch eine Platzhalterdatei, bis die Überprüfung abgeschlossen ist, und fügt dann die Anlagen erneut an, wenn keine Schadsoftware erkannt wird.  <br/> Enthält Funktionen zur Vorschau der Anlage für die meisten PDFs und Office-Dateien während der Überprüfung  <br/> Sendet Nachrichten mit erkannter Schadsoftware in Quarantäne, in denen ein Sicherheitsadministrator oder Analyst diese Nachrichten überprüfen und freigeben (oder löschen) kann.  <br/> [Informationen zur dynamischen Zustellung und Vorschau mit ATP-sicheren Anlagen](dynamic-delivery-and-previewing.md) <br/> |Vermeiden von Nachrichten Verzögerungen beim Schutz von Empfängern vor bösartigen Dateien  <br/> Aktivieren von Empfängern zum Anzeigen einer Vorschau von Anlagen im abgesicherten Modus, während der Scan stattfindet|
 |**Umleitung aktivieren**|Gilt, wenn die Option Monitor, Block oder ersetzen ausgewählt ist.  <br/> Sendet Anlagen an eine angegebene e-Mail-Adresse, die von Sicherheitsadministratoren oder Analysten untersucht werden kann.|Aktivieren von Sicherheitsadministratoren und Analysten zum Recherchieren verdächtiger Anlagen|

@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 5bc49ddfa93a06bc8f3d84ce7b8492681ee65cb7
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 20133e0f5dda3abc583adf66cc20a1d8fde190cf
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950927"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198001"
 ---
 # <a name="handle-advanced-hunting-errors"></a>Behandeln von erweiterten Jagd Fehlern
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 Erweiterte Suche zeigt Fehler an, die auf Syntaxfehler und bei Abfragen mit [vordefinierten Grenzwerten](advanced-hunting-limits.md)benachrichtigt werden. In der folgenden Tabelle finden Sie Tipps zum beheben oder vermeiden von Fehlern. 
 
@@ -40,6 +43,6 @@ Erweiterte Suche zeigt Fehler an, die auf Syntaxfehler und bei Abfragen mit [vor
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Bewährte Methoden für die erweiterte Suche](advanced-hunting-best-practices.md)
-- [Diensteinschränkungen](advanced-hunting-limits.md)
+- [Dienstbeschränkungen](advanced-hunting-limits.md)
 - [Grundlegendes zum Schema](advanced-hunting-schema-tables.md)
 - [Kusto-Abfragesprache (Übersicht)](https://docs.microsoft.com/azure/data-explorer/kusto/query/)

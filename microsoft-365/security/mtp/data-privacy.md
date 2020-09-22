@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1e67d4a4af84da9651f091f45eddaa01f467e06c
-ms.sourcegitcommit: 2fbcecaa60e9f551738b9235bd380af807a6681a
+ms.openlocfilehash: 90e889928e9bb49c5325036b22d7caacc76f362f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44339902"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199441"
 ---
 # <a name="microsoft-threat-protection-data-security-and-privacy"></a>Microsoft Threat Protection Datensicherheit und Datenschutz
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Gilt für:**
 - Microsoft Threat Protection

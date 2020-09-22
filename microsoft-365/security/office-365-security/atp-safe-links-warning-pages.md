@@ -16,14 +16,17 @@ ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 ms.collection:
 - M365-security-compliance
 description: Erhalten Sie eine Übersicht über Warn Seiten, die möglicherweise angezeigt werden, wenn Office 365 Advanced Threat Protection funktioniert.
-ms.openlocfilehash: 00052c7212f9f469ca94d83ed53851b65904fd8e
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 7fbca71e7c000cc73b71feeaa777042278e35c4b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588288"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198797"
 ---
 # <a name="atp-safe-links-warning-pages"></a>Warnungsseiten für ATP-sichere Links
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!IMPORTANT]
 > Dieser Artikel richtet sich an Geschäftskunden, die über [Office 365 Advanced Threat Protection](office-365-atp.md) verfügen. Wenn Sie Outlook.com, Microsoft 365-Familie oder Microsoft 365 Personal verwenden und nach Informationen zu sicheren Links in Outlook suchen, lesen Sie [Erweiterte Outlook.com-Sicherheit](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).

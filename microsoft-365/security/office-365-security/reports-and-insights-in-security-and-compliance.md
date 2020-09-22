@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über die intelligenten Berichte und Einblicke, die im Security & Compliance Center zur Verfügung stehen, und wie Sie diese zum Anzeigen und Durchsuchen von Daten und zum Ausführen von schnell Aktionen verwenden können.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5d100aca53f3683d477fd15469ae53ecb7a2901b
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 7f8094c46868118bb88858dab6cd12b2427382be
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652777"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196335"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>Intelligente Berichte und Einblicke im Security & Compliance Center
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Wenn Sie Teil des Microsoft for 365 for Business-Sicherheitsteams in Ihrer Organisation sind und über die erforderlichen Berechtigungen verfügen, die [im Security & Compliance Center zugewiesen](permissions-in-the-security-and-compliance-center.md)sind, können Sie auf eine Vielzahl von Berichten zugreifen, einschließlich Smart Reports und Insights. Lesen Sie diesen Artikel, um einen Überblick über diese Berichte und Erkenntnisse zu erhalten, und wo Sie weitere Informationen zu bestimmten Berichten finden.
 

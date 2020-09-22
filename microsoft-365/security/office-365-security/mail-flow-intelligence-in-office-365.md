@@ -13,14 +13,17 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Administratoren können sich über die Fehlercodes informieren, die der Nachrichtenzustellung mithilfe von Connectors (auch als Nachrichtenfluss-Intelligence bezeichnet) zugeordnet sind.
-ms.openlocfilehash: e8427f3e0341ccb381121b6cdc83d20727713d4c
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 0d73ea1fe64cda3c3f29f7bd437bba4e93f37529
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307917"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198503"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>Intelligenter Nachrichtenfluss in EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 In Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer verwenden Sie in der Regel einen Connector zum Weiterleiten von e-Mail-Nachrichten von EoP an Ihre lokale e-Mail-Umgebung. Sie können auch einen Connector verwenden, um Nachrichten von Microsoft 365 an eine Partnerorganisation weiterzuleiten. Wenn Microsoft 365 diese Nachrichten nicht über den Connector übertragen kann, werden Sie in Microsoft 365 in die Warteschlange eingereiht. Microsoft 365 wird weiterhin die Zustellung für jede Nachricht für 24 Stunden wiederholen. Nach 24 Stunden läuft die Nachricht in der Warteschlange ab, und die Nachricht wird an den ursprünglichen Absender in einem Unzustellbarkeitsbericht (auch als NDR oder Unzustellbarkeitsnachricht bezeichnet) zurückgegeben.
 

@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: Integrieren Sie den Siem-Server Ihrer Organisation mit Office 365 Advanced Threat Protection und den zugehörigen Threat-Ereignissen in die API für die Office 365-Aktivitätsverwaltung.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8e9dcf24adfb227d0c454b4f5952c879cea511f7
-ms.sourcegitcommit: 37da941919036a714da42eaa039682ccbe0da670
+ms.openlocfilehash: cfb76485fec8eca2f2b62da59fa2d18a56177bba
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2020
-ms.locfileid: "46860689"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203651"
 ---
 # <a name="siem-integration-with-advanced-threat-protection"></a>Siem-Integration mit erweitertem Bedrohungsschutz
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Wenn Ihre Organisation einen Siem-Server (Security Incident and Event Management) verwendet, können Sie Office 365 Advanced Threat Protection (Office 365 ATP) mit Ihrem Siem-Server integrieren. Sie können diese Integration mithilfe der API für die [Office 365 Aktivitätsverwaltung](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)einrichten. 
 
@@ -61,7 +64,7 @@ In der folgenden Tabelle sind die Werte von **AuditLogRecordType** zusammengefas
 > [!IMPORTANT]
 > Sie müssen ein globaler Administrator sein oder der Sicherheitsadministrator Rolle für das Security & Compliance Center zugewiesen sein, um Siem-Integration mit Office 365 Advanced Threat Protection einzurichten.<br/>Die Überwachungsprotokollierung muss für Ihre Microsoft 365-Umgebung aktiviert sein. Informationen dazu finden Sie unter [Aktivieren oder Deaktivieren der Überwachungsprotokoll Suche](../../compliance/turn-audit-log-search-on-or-off.md).
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Untersuchung von und Antwort auf Bedrohungen in Office 365](office-365-ti.md)
 

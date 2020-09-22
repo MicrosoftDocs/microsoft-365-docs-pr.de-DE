@@ -19,14 +19,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie mehr über die Funktionen zur Ermittlung und Reaktion von Bedrohungen in Office 365 Advanced Threat Protection-Plan.
-ms.openlocfilehash: 6c009a756b30d4b35159b98b145b19b72c9ab541
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: c37129c7c3801ab1e55bd59f9c40c9e65f9cbd8d
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656671"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198433"
 ---
 # <a name="threat-investigation-and-response"></a>Untersuchung von und Antwort auf Bedrohungen
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Funktionen zur Ermittlung und Reaktion von Bedrohungen in [Office 365 Advanced Threat Protection](office-365-atp.md) -Hilfe Sicherheitsanalysten und Administratoren schützen die Microsoft 365 for Business-Benutzer Ihrer Organisation durch:
 - Vereinfachen der Identifizierung, Überwachung und Verständlichkeit von Cyberangriffe

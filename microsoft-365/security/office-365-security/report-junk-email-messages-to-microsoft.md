@@ -16,14 +16,17 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: Administratoren können Informationen zu den unterschiedlichen Möglichkeiten zum Melden von guten und schlechten Nachrichten und Dateien an Microsoft zur Analyse erhalten.
-ms.openlocfilehash: cff9d1b3524200fba9d7ba1775e0b9851027158d
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: 040f998b09f280fc2b6bdfdac327313f9cc65c3c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315863"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203654"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>Melden von Nachrichten und Dateien an Microsoft
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 In Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer haben sowohl Benutzer als auch Administratoren verschiedene Methoden zum Melden von e-Mail-Nachrichten und Dateien an Microsoft.
 

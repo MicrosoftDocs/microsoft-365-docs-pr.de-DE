@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 8a866e08d9aa098e484d3738159217511fcbfc0b
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: c0bd20ee9b100fcdc53ebf2e5d755ca38c6df545
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650340"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197751"
 ---
 # <a name="additional-protection-apis"></a>Zusätzliche Schutz-APIs
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Gilt für:**
 - Microsoft Threat Protection

@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-infoprotection
 ms.custom: ''
 description: Verhindern von Verletzungen personenbezogener Daten mit Identitäts-, Geräte-und Bedrohungsschutz Diensten von Microsoft 365.
-ms.openlocfilehash: a309b5d0ba5f939cf89a31d7ac91ca3aac25ce0d
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: a0efdcfe8e9d27e19b6cf1355a6d0943b7cdaa59
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46520981"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195663"
 ---
 # <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>Verwenden von Identitäts-, Geräte-und Bedrohungsschutz für die Datenschutzverordnung
 
@@ -33,22 +33,22 @@ Während die Datenschutzbestimmungen sich in ihrer Besonderheit unterscheiden, i
 
 - Personenbezogene Daten werden in einer Weise verarbeitet, die eine angemessene Sicherheit der personenbezogenen Daten einschließlich des Schutzes vor unbefugter oder unrechtmäßiger Verarbeitung sowie vor versehentlichem Verlust, Zerstörung oder Beschädigung durch geeignete technische oder organisatorische Maßnahmen ("Integrität und Vertraulichkeit") gewährleistet.
 
-Da Verletzungen von personenbezogenen Daten häufig durch Administrator-oder Endbenutzerkonto Kompromisse und böswilligen Systemzugriff verursacht werden. Beispielsweise kann ein Administratorkonto-hacken dazu führen, dass Kundenkreditkartennummern oder andere persönliche Informationen ausgefiltert werden. Es sollten alle allgemein anerkannten Identitäts-, Geräte-und Bedrohungsschutz Funktionen, die mit Microsoft 365 verfügbar sind, implementiert werden, was sich in der Konformitätsbewertung widerspiegelt.
+Da Verletzungen von personenbezogenen Daten häufig durch Administrator-oder Endbenutzerkonto Kompromisse und böswilligen Systemzugriff verursacht werden. Beispielsweise kann ein Administratorkonto-hacken dazu führen, dass Kundenkreditkartennummern oder andere persönliche Informationen ausgefiltert werden. Der in Microsoft 365 allgemein empfohlene Identitäts-, Geräte-und Bedrohungsschutz sollte möglicherweise implementiert werden, was sich in der Konformitätsbewertung im Compliance-Manager widerspiegelt.
 
-## <a name="using-the-results-of-your-assessment-work-and-compliance-score"></a>Verwenden der Ergebnisse ihrer Beurteilungs Arbeit und der Konformitätsbewertung
+## <a name="using-the-results-of-your-assessment-work-and-compliance-manager"></a>Verwenden der Ergebnisse ihrer Assessment Work and Compliance Manager
 
-Die Konformitätsbewertung umfasst Identitäts-, Geräte-und Bedrohungsschutz mithilfe dieser Kategorien:
+Compliance-Manager umfasst Identitäts-, Geräte-und Bedrohungsschutz mithilfe dieser Kategorien:
 
 - Identity entspricht der **Steuerelement Zugriffs** Kategorie
 - Gerät entspricht der Kategorie " **Geräte verwalten** "
 - Bedrohungsschutz entspricht der Kategorie " **Schutz vor Bedrohungen** "
  
-Wenn diese in unserem Beispielsatz mit vier wichtigen Datenschutzbestimmungen ausgewählt wurden, gibt das Kompatibilitäts Ergebnis 90 Verbesserungs Aktionen an, von denen die meisten eine "27" erzielt haben. Da eine solche große Zahl durch die Konformitätsbewertung für diese Kategorien aufgerufen wird, werden einige der häufigsten hier aufgeführten als Referenz aufgeführt.
+Wenn diese in unserem Beispielsatz mit vier wichtigen Datenschutzbestimmungen ausgewählt wurden, gibt Compliance-Manager 90 Verbesserungs Aktionen an, von denen die meisten eine "27" erzielt haben. Da eine solche große Zahl vom Compliance-Manager für diese Kategorien aufgerufen wird, werden einige der häufigsten hier aufgeführten als Referenz aufgeführt.
 
 Verwenden Sie [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/) für Identity und die Kategorie **Steuerelement Zugriff** , mit der Sie folgende Möglichkeiten haben:
 
 - Implementieren der Wiedergabe-resistenten Authentifizierung (um "Menschen in der Mitte"-Angriffe zu verhindern)
-- Legacy Authentifizierung blockieren.
+- Blockieren Sie die Legacyauthentifizierung.
 - Konfigurieren von Risikorichtlinien für Benutzer Risiken und Benutzeranmeldungen
 - Aktivieren Sie den bedingten Zugriff und die mehrstufige Authentifizierung (MFA) für Administratoren und nicht-Administratoren.
 - Konfigurieren und Erzwingen von Kennwortrichtlinien

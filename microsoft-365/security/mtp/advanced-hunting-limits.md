@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: e3fbe29076d541df68dc39754960386fe935c7bc
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: aaba01f5970c9abf55f5fae760d1ba1fed8ba914
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950949"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199877"
 ---
 # <a name="advanced-hunting-service-limits"></a>Grenzwerte für erweiterte Jagd Dienste
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Gilt für:**
 - Microsoft Threat Protection

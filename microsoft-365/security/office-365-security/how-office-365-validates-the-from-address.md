@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: Administratoren können sich über die Arten von e-Mail-Adressen informieren, die von Exchange Online Protection (EoP) und Outlook.com akzeptiert oder abgelehnt werden, um Phishing zu verhindern.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c67cf5855f2b0a99cf8d03bb6d7ba8557329b300
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: e0afd05c80bb4de665d23b17c7089631dad93c78
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827421"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196059"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Wie EoP die Absenderadresse überprüft, um Phishing zu verhindern
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Phishing-Angriffe stellen eine ständige Bedrohung für jede e-Mail-Organisation dar. Zusätzlich zur Verwendung [gefälschter Absender-e-Mail-Adressen](anti-spoofing-protection.md)verwenden Angreifer häufig Werte in der von-Adresse, die Internetstandards verletzen. Um diese Art von Phishing zu verhindern, benötigen Exchange Online Protection (EoP) und Outlook.com nun eingehende Nachrichten, um eine RFC-konforme von-Adresse hinzuzufügen, wie in diesem Thema beschrieben. Diese Erzwingung wurde im November 2017 aktiviert.
 
@@ -110,7 +113,7 @@ Sie können den Wert nicht verwenden `From: <>` , um automatische Antworten zu u
 
 - Der NULL-MX-Eintrag für diese Domäne besteht aus einem einzelnen Zeitraum.
 
-Beispiel:
+Zum Beispiel:
 
 ```text
 noreply.contoso.com IN MX .

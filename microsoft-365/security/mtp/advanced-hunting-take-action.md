@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4ebf220472db69d48127b805256e15246bd400cb
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 14785e032d6e4a7a0868308f4029df623456af2a
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552737"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197893"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>Aktionen für erweiterte Jagd Abfrageergebnisse ausführen
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Gilt für:**
 - Microsoft Threat Protection
@@ -55,10 +58,10 @@ Wenn Sie mehr darüber erfahren möchten, wie diese Reaktions Aktionen über Mic
 ## <a name="quarantine-files"></a>Quarantänedateien
 Sie können die *Quarantäne* -Aktion für Dateien bereitstellen, damit Sie automatisch isoliert werden, wenn Sie auftreten. Wenn Sie diese Aktion auswählen, können Sie zwischen den folgenden Spalten wählen, um zu ermitteln, welche Dateien in der Abfrage zu Quarantäne gehören:
 
-- `SHA1`— In den meisten erweiterten Jagd Tabellen ist dies der SHA-1 der Datei, der von der aufgezeichneten Aktion betroffen war. Wenn beispielsweise eine Datei kopiert wurde, wäre dies die kopierte Datei.
-- `InitiatingProcessSHA1`— In den meisten erweiterten Jagd Tabellen ist dies die Datei, die für das Initiieren der aufgezeichneten Aktion zuständig ist. Wenn beispielsweise ein untergeordneter Prozess gestartet wurde, wäre dies der übergeordnete Prozess. 
-- `SHA256`– Dies ist das SHA-256-Äquivalent der Datei, die durch die Spalte identifiziert wird `SHA1` .
-- `InitiatingProcessSHA256`– Dies ist das SHA-256-Äquivalent der Datei, die durch die Spalte identifiziert wird `InitiatingProcessSHA1` .
+- `SHA1` — In den meisten erweiterten Jagd Tabellen ist dies der SHA-1 der Datei, der von der aufgezeichneten Aktion betroffen war. Wenn beispielsweise eine Datei kopiert wurde, wäre dies die kopierte Datei.
+- `InitiatingProcessSHA1` — In den meisten erweiterten Jagd Tabellen ist dies die Datei, die für das Initiieren der aufgezeichneten Aktion zuständig ist. Wenn beispielsweise ein untergeordneter Prozess gestartet wurde, wäre dies der übergeordnete Prozess. 
+- `SHA256` – Dies ist das SHA-256-Äquivalent der Datei, die durch die Spalte identifiziert wird `SHA1` .
+- `InitiatingProcessSHA256` – Dies ist das SHA-256-Äquivalent der Datei, die durch die Spalte identifiziert wird `InitiatingProcessSHA1` .
 
 Weitere Informationen zur Verwendung von Quarantäneaktionen und zur Wiederherstellung von Dateien finden [Sie unter Informationen zu Antwort Aktionen für Dateien](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts).
 

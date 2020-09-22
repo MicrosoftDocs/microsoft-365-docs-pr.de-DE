@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 3d59f987ae4d670e3d7c6f1638f8090ffc3ba7fe
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 6922f50906013cfbfa3bd63c69fff3e89ed46cd5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649307"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196821"
 ---
 # <a name="identityinfo"></a>IdentityInfo
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Gilt für:**
 - Microsoft Threat Protection
@@ -39,26 +42,26 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | Spaltenname | Datentyp | Beschreibung |
 |-------------|-----------|-------------|
 | `AccountObjectId` | string | Eindeutiger Bezeichner für das Konto in Azure AD |
-| `AccountUpn` | string | Benutzerprinzipalname (UPN) des Kontos |
-| `OnPremSid` | string | Lokale Sicherheits-ID (SID) des Kontos |
-| `CloudSid` | string | Cloud-Sicherheits-ID des Kontos |
-| `GivenName` | string | Vorname oder Vorname des Kontobenutzers |
-| `Surname` | string | Nachname, Familienname oder Nachname des Kontobenutzers |
-| `AccountDisplayName` | string | Name des Kontobenutzers, der im Adressbuch angezeigt wird. Normalerweise eine Kombination aus einem angegebenen oder Vornamen, einer mittleren Initiation und einem Nachnamen oder Nachnamen. |
-| `Department` | string | Name der Abteilung, zu der der Benutzer des Kontos gehört |
-| `JobTitle` | string | Position des Kontobenutzers |
-| `AccountName` | string | Benutzername des Kontos |
-| `AccountDomain` | string | Domäne des Kontos |
-| `EmailAddress` | string | SMTP-Adresse des Kontos |
-| `SipProxyAddress` | string | SIP-Adresse (Voice over IP, VoIP) des Sitzungs Initiierungs Protokolls des Kontos |
-| `City` | string | Ort, an dem sich der Benutzer des Kontos befindet |
-| `Country` | string | Land/Region, in dem sich der Benutzer des Kontos befindet |
-| `IsAccountEnabled` | Boolescher Wert | Gibt an, ob das Konto aktiviert ist oder nicht. |
+| `AccountUpn` | Zeichenfolge | Benutzerprinzipalname (UPN) des Kontos |
+| `OnPremSid` | Zeichenfolge | Lokale Sicherheits-ID (SID) des Kontos |
+| `CloudSid` | Zeichenfolge | Cloud-Sicherheits-ID des Kontos |
+| `GivenName` | Zeichenfolge | Vorname oder Vorname des Kontobenutzers |
+| `Surname` | Zeichenfolge | Nachname, Familienname oder Nachname des Kontobenutzers |
+| `AccountDisplayName` | Zeichenfolge | Name des Kontobenutzers, der im Adressbuch angezeigt wird. Normalerweise eine Kombination aus einem angegebenen oder Vornamen, einer mittleren Initiation und einem Nachnamen oder Nachnamen. |
+| `Department` | Zeichenfolge | Name der Abteilung, zu der der Benutzer des Kontos gehört |
+| `JobTitle` | Zeichenfolge | Position des Kontobenutzers |
+| `AccountName` | Zeichenfolge | Benutzername des Kontos |
+| `AccountDomain` | Zeichenfolge | Domäne des Kontos |
+| `EmailAddress` | Zeichenfolge | SMTP-Adresse des Kontos |
+| `SipProxyAddress` | Zeichenfolge | SIP-Adresse (Voice over IP, VoIP) des Sitzungs Initiierungs Protokolls des Kontos |
+| `City` | Zeichenfolge | Ort, an dem sich der Benutzer des Kontos befindet |
+| `Country` | Zeichenfolge | Land/Region, in dem sich der Benutzer des Kontos befindet |
+| `IsAccountEnabled` | boolean | Gibt an, ob das Konto aktiviert ist oder nicht. |
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
 - [Lernen der Abfragesprache](advanced-hunting-query-language.md)
 - [Verwenden freigegebener Abfragen](advanced-hunting-shared-queries.md)
-- [Jagd auf Geräte, e-Mails, Apps und Identitäten](advanced-hunting-query-emails-devices.md)
+- [Suchen auf Geräten, in E-Mails, Apps und Identitäten](advanced-hunting-query-emails-devices.md)
 - [Grundlegendes zum Schema](advanced-hunting-schema-tables.md)
 - [Anwenden bewährter Methoden für Abfragen](advanced-hunting-best-practices.md)

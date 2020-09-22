@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: b9afecb3d0efce93ae5d5725bba71d8d9719d17f
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 496deff5d2fda47b7ffac4bc87e98bf28e90ea50
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430411"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196965"
 ---
 # <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>Schnelle Suche nach Entitäts-oder Ereignisinformationen mit Go Hunt
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Gilt für:**
 - Microsoft Threat Protection
@@ -37,7 +40,7 @@ Die *Go Hunt* -Aktion steht in verschiedenen Abschnitten des Sicherheitscenters 
 
     ![Bild mit Postfachdetails mit der Option "Go Hunt"](../../media/mtp-ah/go-hunt-email.png)
 
-- Auf der Seite "Vorfall" können Sie auch auf eine Liste von Entitäten unter der Registerkarte "Beweise" zugreifen. Wenn Sie eine dieser Entitäten auswählen, erhalten Sie eine Option, um schnell nach Informationen zu dieser Entität zu jagen.
+- Auf der Seite Vorfall können Sie auch auf eine Liste von Entitäten unter der Registerkarte Beweise zugreifen. Wenn Sie eine dieser Entitäten auswählen, können Sie schnell nach Informationen zu dieser Entität suchen.
 
     ![Bild mit ausgewählter Datei mit der Option "Go Hunt" auf der Registerkarte "Beweise"](../../media/mtp-ah/go-hunt-evidence-file.png)
 

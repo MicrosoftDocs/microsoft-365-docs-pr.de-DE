@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die Unterschiede zwischen Junk-e-Mails (Spam) und Massen-e-Mails (Gray Mail) in Exchange Online Protection (EoP) informieren.
-ms.openlocfilehash: 17e6223175013678f389c0d7624cc4e4f4476f98
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 1e11f897a145f7b34acc81e1d132d6babac08979
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826729"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195475"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email-in-eop"></a>Was ist der Unterschied zwischen Junk-e-Mail und Massen-e-Mails in EoP?
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 In Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer Fragen Kunden manchmal: "Was ist der Unterschied zwischen Junk-e-Mail und Massen-e-Mails?" In diesem Thema wird der Unterschied erläutert und die Steuerelemente beschrieben, die in EoP zur Verfügung stehen.
 

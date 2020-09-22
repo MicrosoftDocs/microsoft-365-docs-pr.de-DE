@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: Administratoren erfahren, wie die Spoof Intelligence-Einblicke funktionieren, und wie Sie schnell ermitteln können, welche Absender legitimerweise nicht authentifizierte e-Mails senden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1f04baca3761e44acfd26c09cdc0d5283db13697
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: 6fc934491606a53ebfb4bae4f46ab9e1ee93467b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726505"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198571"
 ---
 # <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>Exemplarische Vorgehensweise – ATP-Spoof Intelligence Insight in Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 In Microsoft 365-Organisationen mit Advanced Threat Protection (ATP) können Sie die Spoof Intelligence-Einblicke verwenden, um schnell festzustellen, welche Absender legitimerweise nicht authentifizierte e-Mails senden. Durch die Möglichkeit, gefälschte Nachrichten zu senden, können Sie das Risiko verringern, dass falsch positive Ergebnisse an Ihre Benutzer gesendet werden. Sie können auch die Spoof Intelligence-Einblicke verwenden, um zugelassene Domänen Paare zu überwachen und zu verwalten, um eine zusätzliche Sicherheitsebene bereitzustellen und zu verhindern, dass unsichere Nachrichten in Ihrer Organisation eingehen.
 
@@ -41,10 +44,10 @@ Diese exemplarische Vorgehensweise ist eine von mehreren für das Security & Com
 
 - Sie müssen Berechtigungen zugewiesen haben, bevor Sie die Verfahren in diesem Thema ausführen können. Um die Spoof Intelligence-Einblicke verwenden zu können, müssen Sie Mitglied einer der folgenden Rollengruppen sein:
 
-  - **Organisationsverwaltung** oder **Sicherheits Administrator** im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-  - **Organisationsverwaltung** oder **Hygiene Verwaltung** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
-  - **Sicherheits Leser** im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-  - **Organisationsverwaltung mit Ansichts** Schutz in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - **Organisationsverwaltung** oder **Sicherheitsadministrator** im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+  - **Organisationsverwaltung** oder **Nachrichtenschutz** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - **Security Reader** im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+  - **Schreibgeschützte Organisationsverwaltung** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - Sie aktivieren und deaktivieren Spoof Intelligence in ATP Anti-Phishing Policies. Weitere Informationen finden Sie unter [configure ATP Anti-Phishing Policies in Microsoft 365](configure-atp-anti-phishing-policies.md).
 
@@ -68,7 +71,7 @@ Diese exemplarische Vorgehensweise ist eine von mehreren für das Security & Com
 
    - **Insight-Modus**. Wenn Sie eine Spoof-Richtlinie aktiviert haben, zeigt Ihnen die Einsicht, wie viele e-Mails in den letzten 30 Tagen von unseren Spoof Intelligence-Funktionen betroffen waren.
 
-   - **Was ist, wenn-Modus**. Wenn Sie keine Spoof-Richtlinie aktiviert haben, zeigt Ihnen die Einsicht, wie viele e-Mails von unseren Spoof Intelligence-Funktionen in den letzten 30 Tagen betroffen *wären* .
+   - **Was ist, wenn-Modus**. Wenn Sie keine Spoof-Richtlinie aktiviert haben, zeigt Ihnen die Einsicht, wie viele e-Mails von unseren Spoof Intelligence-Funktionen in den letzten 30 Tagen betroffen  *wären*  .
 
    In beiden Fällen werden die in der Insight angezeigten gefälschten Domänen in zwei Kategorien unterteilt: **verdächtige Domänen Paare** und **nicht verdächtige Domänen Paare**. Diese Kategorien werden weiter in drei verschiedene Buckets unterteilt, die Sie überprüfen können.
 
@@ -102,7 +105,7 @@ Sie können eine Domäne aus der Liste sicherer Absender von AllowedToSpoof hinz
 
 Dadurch wird die eindeutige Kombination aus Domänen Paaren der gefälschten Domäne und der sendenden Infrastruktur geändert, und es wird keine Abdeckung für die gesamte Spoofing-Domäne oder die sendende Infrastruktur isoliert bereitgestellt.
 
-Wenn Sie beispielsweise das folgende Domänenpaar zur Absender Zulassungsliste "AllowedToSpoof" hinzufügen: die *spoofed-Domäne* "gmail.com" und die *Sendeinfrastruktur* "TMS *. MX.com",* dann dürfen nur e-Mails von diesem Domänenpaar Spoofing durchführen. Andere Absender, die versuchen, "gmail.com" und andere Domänen zu spoofen, die "TMS.MX.com" Spoof versuchen, werden weiterhin durch Spoof Intelligence geschützt.
+Wenn Sie beispielsweise das folgende Domänenpaar zur Absender Zulassungsliste "AllowedToSpoof" hinzufügen: die  *spoofed-Domäne*  "gmail.com" und die *Sendeinfrastruktur* "TMS *. MX.com",* dann dürfen nur e-Mails von diesem Domänenpaar Spoofing durchführen. Andere Absender, die versuchen, "gmail.com" und andere Domänen zu spoofen, die "TMS.MX.com" Spoof versuchen, werden weiterhin durch Spoof Intelligence geschützt.
 
 ## <a name="related-topics"></a>Verwandte Themen
 

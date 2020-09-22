@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 88074de8792124557c65b5be074e3b02bfec2511
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: d9d3ffad156d5a27f1931c3b6ec295b022dea296
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797886"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198013"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Gilt für:**
 - Microsoft Threat Protection
@@ -40,12 +43,12 @@ Wenn Sie weitere Informationen zu einzelnen e-Mail-Nachrichten erhalten möchten
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Datum und Uhrzeit der Aufzeichnung des Ereignisses |
 | `EventId` | string | Eindeutiger Bezeichner für das Ereignis |
-| `NetworkMessageId` | string | Eindeutiger Bezeichner für die von Microsoft 365 generierte e-Mail |
+| `NetworkMessageId` | Zeichenfolge | Eindeutiger Bezeichner für die von Microsoft 365 generierte e-Mail |
 | `InternetMessageId` | string | Öffentlich sichtbarer Bezeichner für die E-Mail-Nachricht, die vom sendenden E-Mail-System festgelegt wird |
 | `Action` | string | Für die Entität ausgeführte Aktion |
-| `ActionType` | string | Typ der Aktivität, die das Ereignis ausgelöst hat: manuelle Korrektur, Phishing-zap, Malware-zap |
-| `ActionTrigger` | string | Gibt an, ob eine Aktion von einem Administrator (manuell oder durch Genehmigung einer ausstehenden automatisierten Aktion) oder durch einen speziellen Mechanismus wie zap oder dynamische Zustellung ausgelöst wurde. |
-| `ActionResult` | string | Ergebnis der Aktion |
+| `ActionType` | Zeichenfolge | Typ der Aktivität, die das Ereignis ausgelöst hat: manuelle Korrektur, Phishing-zap, Malware-zap |
+| `ActionTrigger` | Zeichenfolge | Gibt an, ob eine Aktion von einem Administrator (manuell oder durch Genehmigung einer ausstehenden automatisierten Aktion) oder durch einen speziellen Mechanismus wie zap oder dynamische Zustellung ausgelöst wurde. |
+| `ActionResult` | Zeichenfolge | Ergebnis der Aktion |
 | `RecipientEmailAddress` | string | E-Mail-Adresse des Empfängers oder E-Mail-Adresse des Empfängers nach Erweiterung der Verteilerliste |
 | `DeliveryLocation` | string | Der Ort, an den die E-Mail zugestellt wurde: "Posteingang/Ordner", "lokal"/"extern", "Junk", "Quarantäne", "Fehler", „Verloren“ oder "Gelöschte Elemente" |
 

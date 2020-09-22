@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 07c010a78d297a4a3c932c0d9a0e32cce0c43bfa
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 66e978b28f03e30cc2157aae2508874b73b01a40
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560907"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197977"
 ---
 # <a name="extend-advanced-hunting-coverage-with-the-right-settings"></a>Erweiterte Jagd Abdeckung mit den richtigen Einstellungen erweitern
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Gilt für:**
 - Microsoft Threat Protection

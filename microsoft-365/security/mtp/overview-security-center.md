@@ -14,14 +14,17 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: f831e952b20d04796f69a6c3c00ba4d69d332951
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 425956ebd4c3badc54f074b779997d530e2ee1a5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867233"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200991"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 Security Center – Übersicht
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 Die Verwaltung der Sicherheit Ihres Unternehmens, um Sie vor einer ständig wachsenden Bedrohungslandschaft zu schützen, bringt viele Herausforderungen mit sich. Möglicherweise verfügen Sie über zu viele Sicherheitslösungen mit verschiedenen Stellen, um viele Steuerelemente zu konfigurieren. Sie können mit dem wissen, welche Steuerelemente am effektivsten sind und die neue Herausforderungen für Ihre Mitarbeiter einführen, in Konflikt treten. Es kann für Sicherheitsteams schwierig sein, das richtige Gleichgewichtzwischen Sicherheit und Produktivität zu finden.
 
@@ -68,6 +71,6 @@ In diesem Artikel erfahren Sie, wie Sie Ihre Sicherheitsanforderungen überwache
 - [Proaktive Suche nach Bedrohungen](advanced-hunting-overview.md) für Intrusionsversuche und Verletzungs Aktivitäten, die sich auf Ihre e-Mails, Daten, Geräte und Konten auswirken
 - Grund [Legendes zu den neuesten Angriffs Kampagnen](latest-attack-campaigns.md) und-Techniken mit Threat Analytics
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 - [Microsoft-Sicherheitsportale](portals.md)

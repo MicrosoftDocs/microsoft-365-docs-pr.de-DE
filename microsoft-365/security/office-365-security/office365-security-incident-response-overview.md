@@ -18,14 +18,17 @@ search.appverid:
 description: In dieser Lösung erfahren Sie, wie die häufigsten Cyber-Angriffe in Microsoft 365 Aussehen und wie Sie darauf reagieren können.
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: c6f5087799a0e3a06d0849f99e9911cf77260e1b
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 221303d43620e89b8200392961d8aa0916c82763
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818795"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198703"
 ---
 # <a name="security-incident-response"></a>Reaktion auf Sicherheitsvorfälle
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
  **Zusammenfassung:** In dieser Lösung erfahren Sie, welche Indikatoren für die häufigsten Cyber-Angriffe in Office 365 gelten, wie Sie einen bestimmten Angriff positiv bestätigen und wie Sie darauf reagieren.
 

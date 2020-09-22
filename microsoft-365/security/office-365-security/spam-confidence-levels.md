@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die SCL-Bewertung (Spam Confidence Level) informieren, die auf Nachrichten in Exchange Online Protection (EoP) angewendet wird.
-ms.openlocfilehash: 44687b8234e38e7f818aee908d1b65f382c908fe
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: fbd892b0171cee71f516d7ca3b26b91da664af79
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827397"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202233"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>SCL (Spam Confidence Level) in EoP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 In Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer werden eingehende Nachrichten über die Spamfilterung in EoP durchlaufen und einem Spam-Faktor zugewiesen. Das Ergebnis wird einer individuellen SCL-Bewertung (Spam Confidence Level) zugeordnet, die der Nachricht in einer X-Kopfzeile hinzugefügt wird. Eine höhere SCL-Bewertung gibt an, dass eine Nachricht eher Spam ist. EoP nimmt auf der Nachricht basierend auf der SCL-Bewertung Aktionen vor.
 
@@ -45,7 +48,7 @@ Sie werden feststellen, dass die SCL-Bewertung 2, 3, 4, 7 und 8 nicht von der Sp
 
 Mithilfe von Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) können Sie die SCL-Bewertung für Nachrichten Stempeln. Wenn Sie eine e-Mail-Fluss Regel zum Festlegen der SCL-Bewertung verwenden, lösen die Werte 5 oder 6 die Spam Filterungs Aktion für **Spam**aus, und die Werte 7, 8 oder 9 lösen die Spam Filterungs Aktion für **Spam mit hoher Vertrauens**Würdigkeit aus. Weitere Informationen finden Sie unter [Verwenden von Nachrichtenfluss Regeln zum Festlegen der SCL-Bewertung (Spam Confidence Level) in Nachrichten](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
 
-Ähnlich wie bei der SCL-Bewertung identifiziert die Massen Reklamations Stufe (BCL) ungültige Massen-e-Mails (auch als _graue e-Mail_bezeichnet). Eine höhere BCL gibt an, dass eine Massen-e-Mail-Nachricht häufiger Beschwerden generiert (und daher eher Spam ist). Sie konfigurieren den BCL-Schwellenwert in Anti-Spam-Richtlinien. Weitere Informationen finden Sie unter [configure Anti-Spam Policies in EoP](configure-your-spam-filter-policies.md), [Bulk Complaint Level (BCL) in EoP)](bulk-complaint-level-values.md)und [worin besteht der Unterschied zwischen Junk-e-Mail und Massen-e-Mails?](what-s-the-difference-between-junk-email-and-bulk-email.md).
+Ähnlich wie bei der SCL-Bewertung identifiziert die Massen Reklamations Stufe (BCL) ungültige Massen-e-Mails (auch als _graue e-Mail_bezeichnet). Ein höheres BCL-Niveau zeigt an, dass eine als Massensendung gesendete E-Mail mit größerer Wahrscheinlichkeit zu Beschwerden führen wird (und daher eher als Spam einzustufen ist). Sie konfigurieren den BCL-Schwellenwert in Anti-Spam-Richtlinien. Weitere Informationen finden Sie unter [configure Anti-Spam Policies in EoP](configure-your-spam-filter-policies.md), [Bulk Complaint Level (BCL) in EoP)](bulk-complaint-level-values.md)und [worin besteht der Unterschied zwischen Junk-e-Mail und Massen-e-Mails?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 
 |<!-- -->|
 |---|

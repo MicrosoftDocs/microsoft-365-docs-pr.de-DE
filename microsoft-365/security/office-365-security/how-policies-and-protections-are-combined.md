@@ -16,14 +16,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die Anwendungsreihenfolge von Schutzmaßnahmen in Exchange Online Protection (EoP) und darüber informieren, wie der Prioritätswert in Schutzrichtlinien festlegt, welche Richtlinie angewendet wird.
-ms.openlocfilehash: 9556d2262eb59224357e20027a1f0e63404081f2
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: e2da22bfbe0e7df70cf8d8b0d8cfd09eaf6e2ee3
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827409"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196047"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Reihenfolge und Priorität des e-Mail-Schutzes
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 In Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer werden eingehende e-Mails möglicherweise von mehreren Schutzformen gekennzeichnet. Beispielsweise die integrierten EoP-Anti-Phishing-Richtlinien, die allen Microsoft 365-Kunden zur Verfügung stehen, und die robusteren ATP-Richtlinien für die Anti-Phishing, die auch für Office 365 Advanced Threat Protection (Office 365 ATP)-Kunden verfügbar sind. Nachrichten werden auch durch mehrere Erkennungs Scans für Schadsoftware, Spam, Phishing, usw. geleitet. Angesichts all dieser Aktivitäten kann es einige Verwirrung darüber geben, welche Richtlinie angewendet wird.
 
@@ -38,7 +41,7 @@ Es gibt zwei Hauptfaktoren, die bestimmen, welche Richtlinie auf eine Nachricht 
   |Priorität|E-Mail-Schutz|Kategorie|Verwalten von|
   |---|---|---|---|
   |1|Schadsoftware|Kat: MALW|[Konfigurieren von Anti-Malware-Richtlinien in EoP](configure-anti-malware-policies.md)|
-  |2|Phishing|Kat: PHSH|[Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)|
+  |2 |Phishing|Kat: PHSH|[Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)|
   |3|Spam mit hoher Vertrauenswürdigkeit|Kat: HSPM|[Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)|
   |4 |Spoofing|Kat: Spoof|[Konfigurieren von Spoof Intelligence in EoP](learn-about-spoof-intelligence.md)|
   |5 |Spam|Kat: SPM|[Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)|
@@ -60,7 +63,7 @@ Nehmen Sie sich beispielsweise die folgenden ATP-Richtlinien für die antiphishi
   |ATP-Anti-Phishing-Richtlinie|Priorität|Benutzeridentitätswechsel|Anti-Spoofing|
   |---|---|---|---|
   |Richtlinie A|1|Ein|Off|
-  |Richtlinie B|2|Off|Ein|
+  |Richtlinie B|2 |Off|Ein|
   |
 
 1. Die Nachricht wird als spoof gekennzeichnet und behandelt, da Spoofing eine höhere Priorität (4) als der Benutzeridentitätswechsel (8) hat.

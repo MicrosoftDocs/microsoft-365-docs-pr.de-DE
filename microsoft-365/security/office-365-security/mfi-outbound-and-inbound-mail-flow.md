@@ -12,14 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: Administratoren können sich über den ausgehenden und eingehenden Nachrichtenfluss Insight im Nachrichtenfluss-Dashboard im Security & Compliance Center informieren.
-ms.openlocfilehash: 87ea7faed2e2387c31fdb06abaf242a2a3aea76e
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 33bfe3882c274fa655d17c80aba007e8d246b250
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357422"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199301"
 ---
 # <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>Einblicke in den ausgehenden und eingehenden Nachrichtenfluss im Security & Compliance Center
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Der Einblicke für **ausgehende und eingehende e-Mails** im [Nachrichtenfluss-Dashboard](mail-flow-insights-v2.md) im [Security & Compliance Center](https://protection.office.com) kombiniert die Informationen aus dem [connectorbericht](view-mail-flow-reports.md#connector-report) und dem früheren TLS-Übersichts **Bericht** an einem zentralen Ort.
 
@@ -52,6 +55,6 @@ Sie können auf den Link **connectorbericht** klicken, um zum [connectorbericht]
 
 Für TLS 1,0-Verbindungen müssen Sie Ihren e-Mail-Server oder den Server Ihres Partners wirklich aktualisieren oder reparieren lassen, um Probleme zu vermeiden, wenn die TLS 1,0-Unterstützung in Microsoft 365 schließlich veraltet ist.
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 Informationen zu weiteren Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

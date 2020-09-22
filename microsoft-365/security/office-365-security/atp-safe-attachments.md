@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 - seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie mehr über das Feature "ATP-sichere Anlagen" für Office 365 und wie Sie das Feature für Ihr Abonnement abrufen.
-ms.openlocfilehash: 16b9ae47ead318e200cdf1e5e5beb58c2bc396bc
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 1ff7021f1c9fa64d3f04cbcac7231733399ad2b8
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656993"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198775"
 ---
 # <a name="atp-safe-attachments"></a>Sichere Anlagen in ATP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ## <a name="overview-of-office-365-atp-safe-attachments"></a>Übersicht über Office 365 sichere ATP-Anhänge
 

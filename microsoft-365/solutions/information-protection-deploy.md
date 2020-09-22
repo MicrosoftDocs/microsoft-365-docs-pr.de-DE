@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: Konfigurieren Sie die Sicherheits-und Dienstinfrastruktur, um Ihre Informationen zu schützen und Datenschutzbestimmungen einzuhalten.
-ms.openlocfilehash: 640ce075515c687c037cb0e4ab3e03e3beda81dc
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 2b249b3b43f1b520e42be4b6e5f9d684c718dc79
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522289"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195639"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>Bereitstellen des Informationsschutzes für Datenschutzbestimmungen mit Microsoft 365
 
@@ -38,8 +38,7 @@ Verwenden Sie die folgenden Microsoft 365-Funktionen und-Features, um die Kriter
 
 | Funktion oder Feature | Beschreibung | Lizenzierung |
 |:-------|:-----|:-------|
-| Compliance-Manager | Verwalten gesetzlicher Compliance-Aktivitäten im Zusammenhang mit Microsoft-Cloud-Diensten mit diesem workflowbasierten Tool für die Risikobewertung im Microsoft Service Trust Portal. | Microsoft 365 E3 und E5 |
-| Compliance-Bewertung (Vorschau) | Sehen Sie sich eine Gesamtbewertung Ihrer aktuellen Compliance-Konfiguration sowie Empfehlungen zur Verbesserung im Microsoft 365 Compliance Center an. | Microsoft 365 E3 und E5 |
+| Compliance-Manager | Verwalten Sie behördliche Compliance-Aktivitäten, erhalten Sie eine Gesamtpunktzahl Ihrer aktuellen Konformitäts Konfiguration und finden Sie Empfehlungen für Verbesserungen in diesem workflowbasierten Risiko Bewertungstool im Microsoft 365 Compliance Center. | Microsoft 365 E3 und E5 |
 | Erweiterter Office-Bedrohungsschutz (ATP) | Schützen Sie Ihre Microsoft 365-Apps und-Daten vor Angriffen, beispielsweise E-Mails, Office-Dokumente und Tools für die Zusammenarbeit. | Microsoft 365 E3 und E5 | 
 | Vertraulichkeitsbezeichnungen | Sie können die Daten Ihrer Organisation klassifizieren und schützen, ohne die Produktivität der Benutzer und ihre Fähigkeit zur Zusammenarbeit zu behindern, indem Sie Bezeichnungen mit unterschiedlichen Schutzgraden für E-Mails, Dateien oder Websites platzieren. | Microsoft 365 E3 und E5 |
 | Schutz vor Datenverlust (DLP) | Sie können eine riskante, unbeabsichtigte oder unangebrachte Freigabe erkennen, warnen und blockieren. Beispielsweise die Weitergabe von Daten, die persönliche Informationen enthalten, sowohl intern als auch extern. | Microsoft 365 E3 und E5 | 
@@ -68,13 +67,13 @@ Die Bewertung der Datenschutzbestimmungen und der Risiken, denen Ihre Organisati
 
 Weitere Informationen finden Sie unter [bewerten von Datenschutzrisiken und identifizieren vertraulicher Elemente](information-protection-deploy-assess.md).
 
-## <a name="track-use-compliance-score-and-compliance-manager"></a>Track: Use Compliance Score and Compliance Manager 
+## <a name="track-use-compliance-manager"></a>Track: Verwenden des Compliance-Managers
 
-Compliance-Score und Compliance-Manager bieten eine integrierte Reihe von Tools, die im Microsoft 365 Compliance Admin Center und in Services Trust Portal zur Verfügung stehen. Gemeinsam bieten Ihnen diese Tools eine integrierte Möglichkeit zum Nachverfolgen und Verwalten von Verbesserungs Aktionen insgesamt sowie in Bezug auf mehrere Datenschutzbestimmungen, denen Sie unterliegen.
+Compliance-Manager, verfügbar im Microsoft 365 Compliance Center, bietet Ihnen eine integrierte Möglichkeit zum Nachverfolgen und Verwalten von Verbesserungs Aktionen insgesamt sowie in Bezug auf mehrere Datenschutzbestimmungen, die für Sie gelten.
 
-Mit den Tools können Sie auch integrierte Bewertungs Vorlagen verwenden, die für jede Verordnung spezifisch sind, wobei Sie Aktionselemente für jede ausgewählte Bewertungs Vorlage nachverfolgen sowie bestimmte regulatorische Steuerelemente anzeigen und diese mit bestimmten Aktionen verknüpfen können.
+Nutzen Sie die in den einzelnen Verordnungen spezifischen Bewertungs Vorlagen, in denen Sie Aktionselemente für jede ausgewählte Bewertungs Vorlage nachverfolgen sowie bestimmte regulatorische Steuerelemente anzeigen und mit bestimmten Aktionen verknüpfen können.
 
-Weitere Informationen finden Sie unter [use Compliance Score and Compliance Manager zur Verwaltung von Verbesserungs Aktionen](information-protection-deploy-compliance.md).
+Weitere Informationen finden Sie unter [Verwenden des Compliance-Managers zum Verwalten von Verbesserungs Aktionen](information-protection-deploy-compliance.md).
 
 ## <a name="prevent-use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>Verhindern: Verwenden von Identitäts-, Geräte-und Bedrohungsschutz für die Datenschutzverordnung
 

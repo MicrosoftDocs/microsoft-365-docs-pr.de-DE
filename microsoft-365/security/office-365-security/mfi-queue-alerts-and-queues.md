@@ -11,14 +11,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Administratoren können erfahren, wie Sie das Warteschlangen-Widget im Nachrichtenfluss-Dashboard im Security & Compliance Center verwenden, um den nicht erfolgreichen e-Mail-Fluss an Ihre lokalen oder Partnerorganisationen über ausgehende Connectors zu überwachen.
-ms.openlocfilehash: bcd78a50f017aae65e82185bf167ea7a227656fa
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 3291a21828215d0a2a99c2226147bb1b748b8469
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357388"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199289"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>Warteschlangen Einblicke im Security & Compliance Center
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Wenn Nachrichten nicht über Connectors von Ihrer Organisation an Ihre lokalen oder Partner-e-Mail-Server gesendet werden können, werden die Nachrichten in Microsoft 365 in die Warteschlange eingereiht. Häufige Beispiele, die diese Bedingung verursachen, sind:
 
@@ -87,6 +90,6 @@ Das gleiche Flyout wird angezeigt, nachdem Sie in den Details einer **verzögert
 
 ![Nachrichten wurden im Security & Compliance Center mit Warnungsdetails verzögert](../../media/mfi-queued-messages-alert-details.png)
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 Informationen zu weiteren Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).
