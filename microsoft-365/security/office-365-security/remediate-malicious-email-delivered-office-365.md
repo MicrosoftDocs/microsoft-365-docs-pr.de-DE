@@ -14,14 +14,17 @@ search.appverid: MET150
 description: Behebung von Bedrohungen
 appliesto:
 - Microsoft Threat Protection
-ms.openlocfilehash: 2542f7af8a34088a79aae8a14f7ccdb8ea8fd121
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 526a88409514127d4fb484f88632bf3185004854
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547240"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197441"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Beheben von in Office 365 zugestellten böswilligen e-Mails
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Die Wiederherstellung bedeutet, dass eine vorgeschriebene Aktion gegen eine Bedrohung erfolgt. Böswillige e-Mails, die an Ihre Organisation gesendet werden, können durch das System, durch eine automatische Bereinigung (Zero-Hour Auto-Purge) oder durch Sicherheitsteams durch Korrekturaktionen wie *Verschieben in den Posteingang*, verschieben in *Junk*, *verschieben zu gelöschten Elementen*, *Soft Delete*oder *Hard Delete*bereinigt werden. Mit Office Advanced Threat Protection (Office ATP) P2/E5 können Sicherheitsteams Bedrohungen in e-Mail-und Collaboration-Funktionen durch manuelle und automatisierte Untersuchung beheben.
 
@@ -92,7 +95,7 @@ Das Wartungs Center zeigt alle Korrekturaktionen für die letzten 30 Tage an. Du
 
    - **Keine Aktion**möglich: e-Mails an den folgenden Speicherorten können in Korrekturaktionen nicht bearbeitet oder verschoben werden:
 
-     - Quarantine
+     - Quarantäne
      - Hart gelöschter Ordner
      - Lokal/extern
      - Fehlgeschlagen/gelöscht

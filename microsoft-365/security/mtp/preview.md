@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1e779e0da89ea49fb4ed390b20a6fb67ffd3b162
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: f01f76ac591b4c2be9873fa87ec416939158acd3
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47947996"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195503"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Vorschaufunktionen für Microsoft Threat Protection
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Gilt für:**
 - Microsoft Threat Protection
@@ -50,7 +53,7 @@ Aktivieren Sie die Einstellung Vorschau der Benutzeroberfläche, um zu den erste
 
 3. **Vorschau-Features**aktivieren aktivieren Sie die  >  **Vorschaufunktionen**. 
 
-3. Wählen Sie **Speichern** aus.
+3. Klicken Sie auf **Speichern**.
 
 Sie wissen, dass Sie die Vorschaufunktionen aktiviert haben, wenn Sie sehen, dass das Kontrollkästchen **Vorschau-Features aktivieren** aktiviert ist. 
 

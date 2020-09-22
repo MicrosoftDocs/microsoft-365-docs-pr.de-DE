@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c3e5b758336f1a6ac57fcfcb448de93b7473591d
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: a62d90004d00e8c553f1b011e77b871df7cd94f4
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650338"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197797"
 ---
 # <a name="access-microsoft-threat-protection-apis-on-behalf-of-user"></a>Zugriff auf Microsoft Threat Protection-APIs im Namen des Benutzers
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Gilt für:**
 - Microsoft Threat Protection

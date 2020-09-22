@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 2259158c566223c39a6b533483551f95c2fa0824
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: af9579b94314375aa786782ea477bb11b0cd9c0b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949300"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198211"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Bewährte Methoden für Erweiterte Suchanfragen
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Gilt für:**
 - Microsoft Threat Protection
@@ -260,7 +263,7 @@ Informationen zu allen unterstützten Analysefunktionen finden [Sie unter Kusto 
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Dokumentation zur Kusto-Abfragesprache](https://docs.microsoft.com/azure/data-explorer/kusto/query/)
-- [Diensteinschränkungen](advanced-hunting-limits.md)
+- [Dienstbeschränkungen](advanced-hunting-limits.md)
 - [Behandeln von erweiterten Jagd Fehlern](advanced-hunting-errors.md)
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
 - [Lernen der Abfragesprache](advanced-hunting-query-language.md)

@@ -12,14 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: Administratoren können erfahren, wie Sie das Administrator-Überwachungsprotokoll in eigenständiger Exchange Online Schutz (EoP) anzeigen und durchsuchen.
-ms.openlocfilehash: 8890ab8f2f2db01ed6bd22657a9bea8f77b25d08
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 9fe2c742083cde1ca36f6a04cd357a473a10aeac
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825077"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196543"
 ---
 # <a name="view-the-admin-audit-log-in-standalone-eop"></a>Anzeigen des Administratorüberwachungsprotokolls in EOP als eigenständige Lösung
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 In Organisationen mit eigenständigen Exchange Online Schutz (EoP) ohne Exchange Online Postfächer können Sie die Exchange-Verwaltungskonsole (EAC) oder die eigenständige EoP-PowerShell verwenden, um nach Einträgen im Administrator-Überwachungsprotokoll zu suchen und diese anzuzeigen.
 
@@ -78,7 +81,7 @@ Search-AdminAuditLog [-Cmdlets <Cmdlet1,Cmdlet2,...CmdletN>] [-Parameters <Param
 
 - Sie können den Parameter _para_ meters nur zusammen mit dem _Cmdlets_ -Parameter verwenden.
 
-- Der Parameter _ObjectIDs_ filtert die Ergebnisse nach dem Objekt, das vom Cmdlet geändert wurde. Ein gültiger Wert hängt davon ab, wie das Objekt im Überwachungsprotokoll dargestellt wird. Beispiel:
+- Der Parameter _ObjectIDs_ filtert die Ergebnisse nach dem Objekt, das vom Cmdlet geändert wurde. Ein gültiger Wert hängt davon ab, wie das Objekt im Überwachungsprotokoll dargestellt wird. Zum Beispiel:
 
   - Name
   - Kanonischer Distinguished Name (beispielsweise contoso.com/users/Akia Al-Zuhairi)

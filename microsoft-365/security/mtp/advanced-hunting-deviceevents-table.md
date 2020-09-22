@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: e5f17da63f7bb0306c4b5899771d2e324770705c
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: dd49cc0bab2013a0f786266aa87d5575e2b4a2fd
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798026"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198235"
 ---
 # <a name="deviceevents"></a>DeviceEvents
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Gilt für:**
 - Microsoft Threat Protection
@@ -50,43 +53,43 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `SHA1` | string | SHA-1 der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
 | `SHA256` | string | SHA-256 der Datei, auf die die aufgezeichnete Aktion angewendet wurde. Dieses Feld wird in der Regel nicht ausgefüllt – Verwenden Sie die SHA1-Spalte, wenn verfügbar. |
 | `MD5` | string | MD5-Hash der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
-| `AccountDomain` | string | Domäne des Kontos |
-| `AccountName` | string | Benutzername des Kontos |
-| `AccountSid` | string | Sicherheits-ID (SID) des Kontos |
+| `AccountDomain` | Zeichenfolge | Domäne des Kontos |
+| `AccountName` | Zeichenfolge | Benutzername des Kontos |
+| `AccountSid` | Zeichenfolge | Sicherheits-ID (SID) des Kontos |
 | `RemoteUrl` | string | URL oder vollqualifizierter Domänenname (FQDN), mit der bzw. dem eine Verbindung hergestellt wurde |
 | `RemoteDeviceName` | string | Name des Computers, der auf dem betroffenen Computer einen Remotevorgang ausgeführt hat. Je nachdem, welches Ereignis gemeldet wird, kann dieser Name ein vollqualifizierter Domänenname (FQDN), ein NetBIOS-Name oder ein Hostname ohne Domäneninformationen sein. |
 | `ProcessId` | int | Prozess-ID (PID) des neu erstellten Prozesses |
-| `ProcessCommandLine` | string | Befehlszeile, die zum Erstellen des neuen Prozesses verwendet wird |
+| `ProcessCommandLine` | Zeichenfolge | Befehlszeile, die zum Erstellen des neuen Prozesses verwendet wird |
 | `ProcessCreationTime` | Datum/Uhrzeit | Datum und Uhrzeit der Erstellung des Prozesses |
-| `ProcessTokenElevation` | string | Tokentyp, der angibt, dass die Benutzerzugriffssteuerung (UAC) auf den neu erstellten Prozess angewendet wird oder nicht vorhanden ist |
-| `LogonId` | string | Bezeichner für eine Anmeldesitzung. Dieser Bezeichner ist auf demselben Computer nur zwischen Neustarts eindeutig. |
-| `RegistryKey` | string | Registrierungsschlüssel, auf den die aufgezeichnete Aktion angewendet wurde |
-| `RegistryValueName` | string | Name des Registrierungswerts, auf den die aufgezeichnete Aktion angewendet wurde |
-| `RegistryValueData` | string | Daten des Registrierungswerts, auf den die aufgezeichnete Aktion angewendet wurde |
+| `ProcessTokenElevation` | Zeichenfolge | Tokentyp, der angibt, dass die Benutzerzugriffssteuerung (UAC) auf den neu erstellten Prozess angewendet wird oder nicht vorhanden ist |
+| `LogonId` | Zeichenfolge | Bezeichner für eine Anmeldesitzung. Dieser Bezeichner ist auf demselben Computer nur zwischen Neustarts eindeutig. |
+| `RegistryKey` | Zeichenfolge | Registrierungsschlüssel, auf den die aufgezeichnete Aktion angewendet wurde |
+| `RegistryValueName` | Zeichenfolge | Name des Registrierungswerts, auf den die aufgezeichnete Aktion angewendet wurde |
+| `RegistryValueData` | Zeichenfolge | Daten des Registrierungswerts, auf den die aufgezeichnete Aktion angewendet wurde |
 | `RemoteIP` | string | IP-Adresse, mit der eine Verbindung hergestellt wurde |
 | `RemotePort` | int | TCP-Port auf dem Remotegerät, mit dem eine Verbindung hergestellt wurde |
-| `LocalIP` | string | IP-Adresse, die dem lokalen Computer zugewiesen ist, der während der Kommunikation verwendet wird |
+| `LocalIP` | Zeichenfolge | IP-Adresse, die dem lokalen Computer zugewiesen ist, der während der Kommunikation verwendet wird |
 | `LocalPort` | int | TCP-Port auf dem lokalen Computer, der während der Kommunikation verwendet wird |
-| `FileOriginUrl` | string | URL, von der die Datei heruntergeladen wurde |
-| `FileOriginIP` | string | IP-Adresse, von der die Datei heruntergeladen wurde |
-| `AdditionalFields` | string | Weitere Informationen zum Ereignis im JSON-Array Format |
-| `InitiatingProcessSHA1` | string | SHA-1 des Prozesses (Image-Datei), der das Ereignis initiiert hat |
-| `InitiatingProcessSHA256` | string | SHA-256 des Prozesses (Image-Datei), der das Ereignis initiiert hat. Dieses Feld wird in der Regel nicht ausgefüllt – Verwenden Sie die SHA1-Spalte, wenn verfügbar. |
+| `FileOriginUrl` | Zeichenfolge | URL, von der die Datei heruntergeladen wurde |
+| `FileOriginIP` | Zeichenfolge | IP-Adresse, von der die Datei heruntergeladen wurde |
+| `AdditionalFields` | Zeichenfolge | Weitere Informationen zum Ereignis im JSON-Array Format |
+| `InitiatingProcessSHA1` | Zeichenfolge | SHA-1 des Prozesses (Image-Datei), der das Ereignis initiiert hat |
+| `InitiatingProcessSHA256` | Zeichenfolge | SHA-256 des Prozesses (Image-Datei), der das Ereignis initiiert hat. Dieses Feld wird in der Regel nicht ausgefüllt – Verwenden Sie die SHA1-Spalte, wenn verfügbar. |
 | `InitiatingProcessFileName` | string | Name des Prozesses, der das Ereignis initiiert hat |
-| `InitiatingProcessFolderPath` | string | Ordner mit dem Prozess (Image-Datei), der das Ereignis initiiert hat |
+| `InitiatingProcessFolderPath` | Zeichenfolge | Ordner mit dem Prozess (Image-Datei), der das Ereignis initiiert hat |
 | `InitiatingProcessId` | int | Prozess-ID (PID) des Prozesses, der das Ereignis initiiert hat |
-| `InitiatingProcessCommandLine` | string | Befehlszeile, die zum Ausführen des Prozesses verwendet wird, der das Ereignis initiiert hat |
+| `InitiatingProcessCommandLine` | Zeichenfolge | Befehlszeile, die zum Ausführen des Prozesses verwendet wird, der das Ereignis initiiert hat |
 | `InitiatingProcessCreationTime` | Datum/Uhrzeit | Datum und Uhrzeit des Starts des Prozesses, der das Ereignis initiiert hat |
 | `InitiatingProcessParentId` | int | Prozess-ID (PID) des übergeordneten Prozesses, der den für das Ereignis verantwortlichen Prozess hervorgerufen hat |
-| `InitiatingProcessParentFileName` | string | Name des übergeordneten Prozesses, der den für das Ereignis verantwortlichen Prozess hervorgerufen hat |
+| `InitiatingProcessParentFileName` | Zeichenfolge | Name des übergeordneten Prozesses, der den für das Ereignis verantwortlichen Prozess hervorgerufen hat |
 | `InitiatingProcessParentCreationTime` | Datum/Uhrzeit | Datum und Uhrzeit, zu denen das übergeordnete Element des für das Ereignis Verantwortlichen Prozesses gestartet wurde. |
-| `InitiatingProcessMD5` | string | MD5-Hash des Prozesses (Image-Datei), der das Ereignis initiiert hat |
-| `InitiatingProcessAccountDomain` | string | Domäne des Kontos, das den für das Ereignis verantwortlichen Prozess ausgeführt hat |
-| `InitiatingProcessAccountName` | string | Benutzername des Kontos, das den für das Ereignis verantwortlichen Prozess ausgeführt hat |
-| `InitiatingProcessAccountSid` | string | Sicherheits-ID (SID) des Kontos, das den für das Ereignis verantwortlichen Prozess ausgeführt hat |
-| `InitiatingProcessLogonId` | string | Bezeichner für eine Anmeldesitzung des Prozesses, der das Ereignis initiiert hat. Dieser Bezeichner ist auf demselben Computer nur zwischen Neustarts eindeutig. |
+| `InitiatingProcessMD5` | Zeichenfolge | MD5-Hash des Prozesses (Image-Datei), der das Ereignis initiiert hat |
+| `InitiatingProcessAccountDomain` | Zeichenfolge | Domäne des Kontos, das den für das Ereignis verantwortlichen Prozess ausgeführt hat |
+| `InitiatingProcessAccountName` | Zeichenfolge | Benutzername des Kontos, das den für das Ereignis verantwortlichen Prozess ausgeführt hat |
+| `InitiatingProcessAccountSid` | Zeichenfolge | Sicherheits-ID (SID) des Kontos, das den für das Ereignis verantwortlichen Prozess ausgeführt hat |
+| `InitiatingProcessLogonId` | Zeichenfolge | Bezeichner für eine Anmeldesitzung des Prozesses, der das Ereignis initiiert hat. Dieser Bezeichner ist auf demselben Computer nur zwischen Neustarts eindeutig. |
 | `ReportId` | long | Ereignisbezeichner basierend auf einem Repeating-Indikator. Um eindeutige Ereignisse zu identifizieren, muss diese Spalte zusammen mit den Gerätename-und timestamp-Spalten verwendet werden. |
-| `AppGuardContainerId` | string | Bezeichner für den virtualisierten Container, der von Application Guard zum Isolieren von Browseraktivitäten verwendet wird |
+| `AppGuardContainerId` | Zeichenfolge | Bezeichner für den virtualisierten Container, der von Application Guard zum Isolieren von Browseraktivitäten verwendet wird |
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)

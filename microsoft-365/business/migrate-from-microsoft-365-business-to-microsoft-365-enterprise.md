@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Erfahren Sie, wie Sie Ihr Unternehmen von Microsoft 365 Business Premium auf Microsoft 365 E3 migrieren.
-ms.openlocfilehash: 6a795d96ccae7e054e7e52d4fd60a4e73b3c71dd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fbd5c0710bffa92cfc17447094bb9b2683641d5f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401990"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195517"
 ---
 # <a name="migrate-from-microsoft-365-business-premium-to-microsoft-365-e3"></a>Migrieren von Microsoft 365 Business Premium zu Microsoft 365 E3
 
@@ -79,13 +79,13 @@ In dieser Tabelle sind die Unterschiede zwischen Microsoft 365 Business Premium 
 | Enterprise CAL Suite (Exchange, SharePoint, Skype, Windows, Microsoft Endpoint Configuration Manager, Windows Rights Management)| |         ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
 | **Compliance**        | | | 
 | Unbegrenzte e-Mail-Archivierung    | ![Im Lieferumfang von Microsoft 365 Business Premium enthalten](../media/check-mark.png)    | ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
-| Kompatibilitätsbewertung/Compliance-Manager    | ![Im Lieferumfang von Microsoft 365 Business Premium enthalten](../media/check-mark.png)    | ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
+| Compliance-Manager    | ![Im Lieferumfang von Microsoft 365 Business Premium enthalten](../media/check-mark.png)    | ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
 | eDiscovery    | ![Im Lieferumfang von Microsoft 365 Business Premium enthalten](../media/check-mark.png)    | ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
 | Compliance-Aufbewahrungs-und Beweissicherungsverfahren    | ![Im Lieferumfang von Microsoft 365 Business Premium enthalten](../media/check-mark.png)    | ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
 | Aufbewahrungstags und Aufbewahrungsrichtlinien für die Messaging-Datensatzverwaltung    | ![Im Lieferumfang von Microsoft 365 Business Premium enthalten](../media/check-mark.png)    | ![Im Lieferumfang von Microsoft 365 E3 enthalten](../media/check-mark.png) | 
 ||||
 
-\*Benutzer, denen Zugriff auf Saas-apps zugewiesen wurde, können SSO-Zugriff auf bis zu 10 apps erhalten. Administratoren können SSO konfigurieren und den Benutzer Zugriff auf verschiedene Saas-apps ändern, aber SSO-Zugriff ist nur für 10 apps pro Benutzer gleichzeitig zulässig. Alle Office 365 apps werden als einzelne APP gezählt.
+\* Benutzer, denen Zugriff auf Saas-apps zugewiesen wurde, können SSO-Zugriff auf bis zu 10 apps erhalten. Administratoren können SSO konfigurieren und den Benutzer Zugriff auf verschiedene Saas-apps ändern, aber SSO-Zugriff ist nur für 10 apps pro Benutzer gleichzeitig zulässig. Alle Office 365 apps werden als einzelne APP gezählt.
 
 ## <a name="migration"></a>Migration
 

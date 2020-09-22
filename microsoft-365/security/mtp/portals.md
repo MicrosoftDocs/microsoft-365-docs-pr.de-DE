@@ -14,14 +14,17 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: e44411fdc14279dac92b8829503fd636e3225600
-ms.sourcegitcommit: 51f040a4edb8dd52521a5d7b0f7a975986a1af10
+ms.openlocfilehash: c4cb142e06835101eae94365ef2d36ea8287ca9b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46608233"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195593"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Microsoft-Sicherheits Portale und Admin Center
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 Während das [Microsoft 365 Security Center](overview-security-center.md) die neue Heimat für die Überwachung und Verwaltung der Sicherheit in ihren Identitäten, Daten, Geräten und Apps ist, müssen Sie für bestimmte spezielle Aufgaben auf verschiedene Portale zugreifen.
 
 > [!TIP] 
@@ -32,7 +35,7 @@ Während das [Microsoft 365 Security Center](overview-security-center.md) die ne
 Sicherheits Operatoren und Administratoren können zu den folgenden Portalen wechseln, um sicherheitsspezifische Einstellungen zu verwalten, mögliche Bedrohungsaktivitäten zu untersuchen, auf aktive Bedrohungen zu reagieren und mit IT-Administratoren zusammenzuarbeiten, um Probleme zu beheben.
 <p></p>
 
-| Portal Name | Beschreibung | Link |
+| Portal Name | Beschreibung | Linkdatenbank |
 |---|---|---| 
 | Microsoft 365 Security Center | Überwachen und reagieren auf Bedrohungsaktivität und Stärkung der Sicherheitsposition in ihren Identitäten, e-Mails, Daten, Endpunkten und Apps mit [Microsoft Threat Protection](microsoft-threat-protection.md) | [security.microsoft.com](https://security.microsoft.com/) |
 | Microsoft Defender-Sicherheits Center | Überwachen und reagieren auf Bedrohungsaktivität auf ihren Endpunkten mithilfe von [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) bereitgestellten Funktionen | [securitycenter.windows.com](https://securitycenter.microsoft.com/) |
@@ -47,7 +50,7 @@ Sicherheits Operatoren und Administratoren können zu den folgenden Portalen wec
 Diese Portale sind zwar nicht speziell für die Verwaltung der Sicherheit ausgelegt, unterstützen jedoch verschiedene Arbeitslasten und Aufgaben, die sich auf Ihre Sicherheit auswirken können. Besuchen Sie diese Portale, um Identitäten, Berechtigungen, Geräteeinstellungen und Daten Behandlungsrichtlinien zu verwalten.
 <p></p>
 
-| Portal Name | Beschreibung | Link | 
+| Portal Name | Beschreibung | Linkdatenbank | 
 |---|---|---| 
 | Azure-Portal | Anzeigen und Verwalten von [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) und all ihren [Azure-Ressourcen](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)  | [portal.azure.com](https://portal.azure.com/) |
 | Microsoft 365 Compliance Center | Verwalten von Daten Bearbeitungsrichtlinien und sicherstellen der [Einhaltung von Vorschriften](https://docs.microsoft.com/microsoft-365/compliance/offering-home?view=o365-worldwide) | [compliance.microsoft.com](https://compliance.microsoft.com/) |

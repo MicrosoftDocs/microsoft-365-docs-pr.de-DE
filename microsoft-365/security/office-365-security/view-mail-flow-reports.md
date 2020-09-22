@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: Administratoren können Informationen zu den Nachrichtenfluss Berichten erhalten, die im Dashboard Berichte im Security & Compliance Center verfügbar sind.
 ms.custom: ''
-ms.openlocfilehash: 3db9130083565d77bb84b4b31ec63eee5cc7a7c9
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: d33bd62e9a06385bf3448b7744031ae030dbe3ca
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171398"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195843"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Anzeigen von Nachrichtenfluss Berichten im Dashboard "Berichte" im Security & Compliance Center
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Zusätzlich zu den Nachrichtenfluss Berichten, die im [Nachrichtenfluss-Dashboard](mail-flow-insights-v2.md) im Security & Compliance Center zur Verfügung stehen, stehen im Dashboard Berichte eine Vielzahl zusätzlicher Nachrichtenübermittlungs Berichte zur Verfügung, mit denen Sie Ihre Microsoft 365-Organisation überwachen können.
 
@@ -135,7 +138,7 @@ Wenn Sie auf **Detailtabelle anzeigen**klicken, hängt die Anzeige der angezeigt
   - **Absenderadresse**
   - **Empfängeradresse**
   - **Schweregrad**
-  - **Richtung**
+  - **Direction**
 
 - **Anzeigen von Daten nach: DLP Exchange-Transportregeln**:
 
@@ -146,7 +149,7 @@ Wenn Sie auf **Detailtabelle anzeigen**klicken, hängt die Anzeige der angezeigt
   - **Absenderadresse**
   - **Empfängeradresse**
   - **Schweregrad**
-  - **Richtung**
+  - **Direction**
 
 Wenn Sie in einer Detailtabellen Ansicht auf **Filter** klicken, können Sie die Ergebnisse mit den folgenden Filtern ändern:
 
@@ -237,7 +240,7 @@ Sie können diese Filter ändern, indem Sie auf **Filter** klicken oder auf eine
 
 Die Datentabelle enthält die folgenden Informationen:
 
-- **Richtung**
+- **Direction**
 - **Typ**
 - **24 Stunden**
 - **3 Tage**
@@ -446,7 +449,7 @@ Wenn Sie auf **Tabelle Details anzeigen** in der Ansicht **aufschlüsseln nach: 
 
 - **Datum (UTC)**
 - **Typ**
-- **Richtung**
+- **Direction**
 - **Nachrichtenanzahl**
 
 Wenn Sie in einer Detailtabellen Ansicht auf **Filter** klicken, können Sie die Ergebnisse mit den folgenden Filtern ändern:

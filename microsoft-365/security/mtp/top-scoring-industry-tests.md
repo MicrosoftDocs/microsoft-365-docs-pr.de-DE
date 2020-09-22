@@ -14,18 +14,21 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 40d0ffa779b0ab13a0bdd887b12d69c20892662d
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: e518f91b264680e3d356b1e6158f4b9740ed52a2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399349"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196095"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Top-Scoring in Branchen Tests
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 [Microsoft Threat Protection](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) -Technologien erzielen bei unabhängigen Tests stets hohe Punktzahl und demonstrieren die Stärke der Funktionen für den Unternehmens Bedrohungsschutz. Microsoft zielt darauf ab, über diese Testergebnisse transparent zu sein. Auf dieser Seite werden die Ergebnisse zusammengefasst, und es wird eine Analyse bereitgestellt.
 
-## <a name="microsoft-threat-protection"></a>Microsoft Threat Protection
+## <a name="microsoft-threat-protection"></a>Microsoft Bedrohungsschutz
 
 [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) ist eine einheitliche, vor-und nach Verletzung von Enterprise Defense Suite. Es koordiniert die Erkennung, Verhinderung, Untersuchung und Antwort über alle Endpunkte, Identitäten, e-Mails und Anwendungen hinweg und bietet einen integrierten Schutz Gegenanspruchs volle Angriffe.
 

@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 23f35c087d55208f7251a6b921cfe7532616742a
-ms.sourcegitcommit: 62a8c226422eac9c085cc886b4836b037f95ef6d
+ms.openlocfilehash: 7db1854534964928b622a7c2f47d07654472f048
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47840759"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197965"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>Holen Sie sich Expert Training on Advanced Hunting
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Gilt für:**
 - Microsoft Threat Protection

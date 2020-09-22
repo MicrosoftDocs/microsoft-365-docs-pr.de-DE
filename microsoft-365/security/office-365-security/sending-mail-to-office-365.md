@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie Sie als externer Absender die Möglichkeit zur Zustellung von e-Mails an Benutzer in Microsoft 365 verbessern können. Erfahren Sie auch, wie Junk-e-Mails & Phishing-versuchen als externer Benutzer gemeldet werden.
-ms.openlocfilehash: f20d5d64bccb69db47c159a8166fa3532b51e3db
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 0c0a981d12fa5b8159789a69597f83eb15d9b194
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825185"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196797"
 ---
 # <a name="sending-mail-to-microsoft-365"></a>Senden von e-Mails an Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Diese Artikel helfen externen Absendern, ihre Reputation zu verbessern und die Möglichkeit zu erhöhen, e-Mails an Benutzer in Microsoft 365 zu übermitteln. Sie stellen außerdem einige Informationen dazu bereit, wie Sie Junk-e-Mails und Phishing-Versuche melden können, selbst wenn Sie kein Microsoft 365-Benutzer sind.
 

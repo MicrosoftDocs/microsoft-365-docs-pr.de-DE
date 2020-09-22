@@ -19,14 +19,17 @@ ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie mithilfe der Warnungsfunktionen im Office 365 Security & Compliance Center Warnungen anzeigen und verwalten können, einschließlich der Verwaltung erweiterter Benachrichtigungen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c51d5d58b1af64a5066e6176fb2533c91bcf6f01
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 2e53d61b2bbbf241683379916362a9d33fa5ace8
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653353"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197655"
 ---
 # <a name="alerts-in-the-security--compliance-center"></a>Warnungen im Security & Compliance Center
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Verwenden Sie die Warnungsfunktionen im Security & Compliance Center, um Warnungen für Ihre Organisation anzuzeigen und zu verwalten, einschließlich der Verwaltung von erweiterten Warnungen im Rahmen der [Microsoft Cloud App Security Overview](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security).
 
@@ -61,5 +64,5 @@ In der folgenden Tabelle werden die Tools beschrieben, die unter **Warnungen** i
 |Tool|Beschreibung|
 |---|---|
 |[Benachrichtigungen verwalten](../../compliance/create-activity-alerts.md)|Verwenden Sie Aktivitäts Warnungen zum Senden von e-Mail-Benachrichtigungen an sich selbst oder andere Administratoren, wenn Benutzer bestimmte Aktivitäten in Office 365 durchführen. Aktivitäts Warnungen ähneln dem Durchsuchen des Überwachungsprotokolls nach Ereignissen, mit der Ausnahme, dass Sie eine e-Mail-Nachricht erhalten, wenn ein Ereignis, für das Sie eine Warnung erstellt haben, Eintritt.|
-|[Erweiterte Benachrichtigungen verwalten](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Verwenden Sie das Feature " **Erweiterte Benachrichtigungen verwalten** " von Office 365 Cloud-App-Sicherheit, um Richtlinien einzurichten, die Sie auf verdächtige und anomale Aktivitäten in Office 365 aufmerksam machen können. Nachdem Sie benachrichtigt wurden, können Sie Situationen untersuchen, die möglicherweise problematisch sind, und bei Bedarf Maßnahmen ergreifen, um Sicherheitsprobleme zu beheben.|
+|[Erweiterte Benachrichtigungen verwalten ](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Verwenden Sie das Feature " **Erweiterte Benachrichtigungen verwalten** " von Office 365 Cloud-App-Sicherheit, um Richtlinien einzurichten, die Sie auf verdächtige und anomale Aktivitäten in Office 365 aufmerksam machen können. Nachdem Sie benachrichtigt wurden, können Sie Situationen untersuchen, die möglicherweise problematisch sind, und bei Bedarf Maßnahmen ergreifen, um Sicherheitsprobleme zu beheben.|
 |

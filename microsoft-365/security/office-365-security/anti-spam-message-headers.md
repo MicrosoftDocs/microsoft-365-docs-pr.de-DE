@@ -16,14 +16,17 @@ ms.collection:
 - M365-security-compliance
 description: Administratoren können mehr über die Nachrichtenkopfzeilen erfahren, die Nachrichten von Exchange Online Protection (EOP) hinzugefügt werden. Diese Kopfzeilenfelder enthalten Informationen zu der Nachricht und deren Verarbeitung.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a5423ccf658843ab22f30dcef99fe0a0c34d512f
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 71cefb4a26751b92dd8b5e5a308bbc18b1a5c221
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867187"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197501"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Antispam-Nachrichtenkopfzeilen in Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 In allen Microsoft 365-Organisationen überprüft Exchange Online Protection (EOP) alle eingehenden Nachrichten auf Spam, Malware und andere Bedrohungen. Die Ergebnisse dieser Scans werden den folgenden Kopfzeilenfeldern in Nachrichten hinzugefügt:
 
