@@ -14,11 +14,11 @@ localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 f1.keywords:
 - NOCSH
-description: Datenverschiebungen sind Back-End-Vorgänge, die auftreten, wenn Microsoft Dienste und zugehörige Daten für Ihren Mandanten in ein neues Rechenzentrum Geo verschiebt.
+description: Bei Datenverschiebungen handelt es sich um Back-End-Vorgänge, die stattfinden, wenn Microsoft Dienste und zugeordnete Daten für Ihren Mandanten in eine neue Rechenzentrumsregion verschiebt.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: acd2601d32617c56019ca8b4bf8688ce40f5d76a
 ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 09/17/2020
 ms.locfileid: "47950272"
@@ -30,7 +30,7 @@ Datenverschiebungen sind eine Back-End-Operation mit minimalen Auswirkungen auf 
 > [!NOTE]
 > Die Verschiebungen werden zu unterschiedlichen Zeiten für jeden Dienst ausgeführt. Dadurch sehen Sie die beschriebene eingeschränkte Funktionalität für jeden Dienst zu unterschiedlichen Zeiten. 
   
-Sehen Sie sich das Microsoft 365-Nachrichten Center an, um zu bestätigen, dass Moves für jede Exchange Online, SharePoint Online, Teams und Skype for Business abgeschlossen sind. Wie die folgende Tabelle zeigt, kann es bis zu 24 Monate nach dem Ende der Registrierungsperiode dauern, um alle angeforderten Datenverschiebungen für alle Kunden in einem bestimmten Geo abzuschließen. Wenn Sie nach dem Wechsel Probleme mit Ihrem Mandanten feststellen, wenden Sie sich an den [Support](https://go.microsoft.com/fwlink/p/?LinkID=522459) , um Hilfe zu erhalten. 
+Halten Sie im Microsoft 365-Nachrichtencenter Ausschau nach der Bestätigung, dass die Verschiebungen für Exchange Online, SharePoint Online, Microsoft Teams und Skype for Business abgeschlossen sind. Wie die folgende Tabelle zeigt, kann es bis zu 24 Monate nach dem Ende der Registrierungsperiode dauern, um alle angeforderten Datenverschiebungen für alle Kunden in einem bestimmten Geo abzuschließen. Sollten nach der Verschiebung Probleme bei Ihrem Mandanten auftreten, wenden Sie sich an den [Support](https://go.microsoft.com/fwlink/p/?LinkID=522459), um Hilfe zu erhalten. 
   
 
 |**Kunden mit Anmeldeland in**|**Alle Verschiebungen abgeschlossen bis**|
@@ -71,17 +71,17 @@ Wenn SharePoint Online verschoben wird, werden auch Daten für die folgenden Die
     
 - Project für Microsoft 365
     
-- Microsoft 365-Video Dienste
+- Microsoft 365-Videodienste
     
 - Office im S-Browser
     
 - Microsoft 365 Apps for Enterprise
     
-- Visio pro für Microsoft 365
+- Visio Pro für Microsoft 365
     
-Nachdem wir die Verschiebung Ihrer SharePoint Online-Daten abgeschlossen haben, werden möglicherweise einige der folgenden Effekte angezeigt.
+Nach der Verschiebung Ihrer SharePoint Online-Daten könnten u. U. die folgenden Auswirkungen auftreten.
   
-### <a name="microsoft-365-video-services"></a>Microsoft 365-Video Dienste
+### <a name="microsoft-365-video-services"></a>Microsoft 365-Videodienste
 
 - Die Datenverschiebung für Video dauert länger als die Verschiebungen für den Rest Ihrer Inhalte in SharePoint Online.
     
@@ -109,16 +109,16 @@ Die folgenden Suchfunktionen sind betroffen:
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Zusätzlich zu Exchange Online, SharePoint Online und OneDrive für Unternehmen migriert Microsoft Teams-Daten in das lokale Rechenzentrum.
+Neben Exchange Online, SharePoint Online und OneDrive for Business werden Microsoft Teams-Daten in das lokale Rechenzentrum migriert.
 
 - Teams-Chatnachrichten, einschließlich privater Nachrichten und Kanalmeldungen.
 - Bilder, die in Teams-Chats verwendet wurden.
 
-Teams-Dateien werden in SharePoint Online gespeichert, und Teams-Chatdateien werden in OneDrive for Business gespeichert. Voicemail, Kalender, Chatverlauf und Kontakte werden in Exchange Online gesichert. In vielen Fällen werden Exchange Online, SharePoint Online und OneDrive für Unternehmen bereits vom Kunden im lokalen Rechenzentrum Geo verwendet und sind ebenfalls Teil des Microsoft 365-Migrationsprogramms für berechtigte Kunden Länder.
+Teams-Dateien werden in SharePoint Online gespeichert, und Teams-Chatdateien werden in OneDrive for Business gespeichert. Voicemail, Kalender, Chatverlauf und Kontakte werden in Exchange Online gesichert. In vielen Fällen werden Exchange Online, SharePoint Online und OneDrive for Business bereits vom Kunden in der lokalen Rechenzentrumsregion verwendet und sind auch Teil des Microsoft 365-Migrationsprogramms für berechtigte Kundenländer.
 
 ## <a name="skype-for-business"></a>Skype for Business
 
-Skype for Business Moves stehen für Australien, Japan, Indien, Kanada, Großbritannien und Südkorea zur Verfügung.
+Skype for Business-Verschiebungen sind für Australien, Japan, Indien, Kanada, Vereinigtes Königreich und Südkorea verfügbar.
 
 Alle Benutzer werden während des Cut-Over aus der Skype for Business-Clientsoftware abgemeldet. Durch die automatische Anmeldung wird die Verbindung innerhalb von zwei Minuten wiederhergestellt.
   

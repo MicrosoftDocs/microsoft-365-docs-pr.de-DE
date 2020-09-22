@@ -70,10 +70,24 @@
               href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service'
             - name: Generieren einer Testwarnung
               href: mtp/generate-test-alert.md
+        - name: Ausführen eines Pilotprojekts in der Produktion
+          items:
+            - name: Pilotprojekt – Übersicht
+              href: mtp/mtp-pilot.md
+            - name: Plan
+              href: mtp/mtp-pilot-plan.md
+            - name: Vorbereiten
+              href: mtp/prepare-mtpeval.md
+            - name: Angriff simulieren
+              href: mtp/mtp-pilot-simulate.md
+            - name: Schließen und zusammenfassen
+              href: mtp/mtp-pilot-close.md
         - name: Schrittanleitungen
           items:
             - name: Erstellen einer Testlabor- oder Pilotumgebung
               href: mtp/mtp-evaluation.md
+            - name: Ausführen eines Pilot-Playbooks
+              href: mtp/mtp-pilot.md
             - name: Bereitstellen unterstützter Dienste
               href: mtp/deploy-supported-services.md
             - name: Aktivieren von Microsoft Threat Protection
@@ -94,16 +108,18 @@
                       href: mtp/manage-incidents.md
             - name: Automatische Untersuchung und Reaktion
               items:
-                - name: AIR-Übersicht
+                - name: Übersicht der automatischen Untersuchung und Reaktion
                   href: mtp/mtp-autoir.md
-                - name: Wartungsaktionen
+                - name: Konfigurieren der Funktionen der automatischen Untersuchung und Reaktion
+                  href: mtp/mtp-configure-auto-investigation-response.md
+                - name: Korrekturaktionen nach automatischen Untersuchungen
                   href: mtp/mtp-remediation-actions.md
-                - name: Das Info-Center
+                - name: Aufrufen des Aktionszentrums
                   href: mtp/mtp-action-center.md
-                - name: Anzeigen der Details und Ergebnisse einer automatischen Untersuchung
-                  href: mtp/mtp-autoir-results.md
-                - name: Genehmigen oder Ablehnen ausstehender Aktionen
+                - name: Genehmigen oder Ablehnen ausstehender Korrekturaktionen
                   href: mtp/mtp-autoir-actions.md
+                - name: Anzeigen von Details und Ergebnissen von automatischen Untersuchungen
+                  href: mtp/mtp-autoir-results.md
                 - name: Melden falsch-positiver/negativer Ergebnisse
                   href: mtp/mtp-autoir-report-false-positives-negatives.md
             - name: Erweiterte Suche
@@ -214,8 +230,6 @@
                   href: mtp/monitor-devices.md
                 - name: App-Überwachung und Berichterstellung
                   href: mtp/monitor-apps.md
-            - name: APIs
-              items: null
         - name: Referenz
           items:
             - name: Berechtigungen und Einstellungen
