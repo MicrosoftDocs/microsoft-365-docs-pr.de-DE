@@ -3,7 +3,7 @@ title: Implementieren eines geteilten VPN-Tunnels für Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 9/21/2020
+ms.date: 9/22/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Implementierung von VPN-Split-Tunneling für Office 365
-ms.openlocfilehash: bfdc11ffe4244ec0ac83bb1c0470476aafeec939
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: af5c2ea35df921abe8eaa9a85ab2ab244931c098
+ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171422"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48214878"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Implementieren eines geteilten VPN-Tunnels für Office 365
 
@@ -37,7 +37,7 @@ Eine Zeit lang waren VPN-Modelle, bei denen alle Verbindungen vom Gerät des Rem
 
 Für die Verbindung zu verteilten und leistungsempfindlichen Cloud-Anwendungen ist die Verwendung von Tunnelerzwingung in VPNs äußerst suboptimal, aber die negativen Auswirkungen davon mögen von einigen Unternehmen akzeptiert worden sein, um den Ist-Zustand aus Sicherheitssicht zu erhalten. Ein Beispieldiagramm für dieses Szenario ist unten zu sehen:
 
-![Split-Tunnel-VPN – Konfiguration](../media/vpn-split-tunneling/vpn-ent-challenge.png)
+![Split-Tunnel-VPN – Konfiguration](../media/vpn-split-tunneling/enterprise-network-traditional.png)
 
 Dieses Problem nimmt seit einigen Jahren zu, und viele Kunden berichten von einer signifikanten Verschiebung der Netzwerkverkehrsmuster. Der Datenverkehr, der früher in lokal betrieben wurde, stellt nun eine Verbindung mit externen Cloud-Endpunkten her. Zahlreiche Microsoft-Kunden berichten, dass früher etwa 80 % ihres Netzwerkverkehrs auf eine interne Quelle entfielen (in der obigen Abbildung durch die gepunktete Linie dargestellt). Im Jahr 2020 liegt diese Zahl nun bei etwa 20 % oder weniger, da sie große Workloads in die Cloud verlagert haben, diese Trends sind bei anderen Unternehmen nicht ungewöhnlich. Im Laufe der Zeit wird das oben beschriebene Modell mit fortschreitender Cloud-Journey immer umständlicher und nicht mehr tragfähig, was ein Unternehmen daran hindert, auf dem Weg in eine „Cloud First World“ agil zu sein.
 
@@ -95,7 +95,7 @@ In diesem Abschnitt finden Sie die einfachen Schritte, die erforderlich sind, um
 
 Das folgende Diagramm veranschaulicht, wie die empfohlene VPN-Split-Tunnellösung funktioniert:
 
-![Split-Tunnel-VPN – Lösungsdetails](../media/vpn-split-tunneling/vpn-split-detail.png)
+![Split-Tunnel-VPN – Lösungsdetails](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
 
 ### <a name="1-identify-the-endpoints-to-optimize"></a>1. Ermitteln der zu optimierenden Endpunkte
 
@@ -109,9 +109,6 @@ URLS in dieser Kategorie besitzen die folgenden Merkmale:
 - Sind bandbreiten- und/oder latenzempfindlich
 - Sind in der Lage, die erforderlichen Sicherheitselemente im Dienst und nicht inline im Netzwerk bereitzustellen
 - Ungefähr 70 bis 80 % des Verkehrsaufkommens des Office 365-Diensts
-
->[!NOTE]
->Microsoft hat sich verpflichtet, die Änderungen an den **Optimieren**-Endpunkten für Office 365 bis mindestens **30. Juni 2020** einzustellen, damit sich die Kunden auf andere Herausforderungen konzentrieren können, anstatt die Endpunkt-Whitelist nach der ursprünglichen Implementierung beizubehalten. Dieser Artikel wird aktualisiert, um alle zukünftigen Änderungen zu berücksichtigen.
 
 Weitere Informationen zu Office 365-Endpunkten und deren Kategorisierung und Verwaltung finden Sie im Artikel [Verwalten von Office 365-Endpunkten](managing-office-365-endpoints.md).
 

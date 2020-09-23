@@ -3,7 +3,7 @@ title: Übersicht über geteilte VPN-Tunnel mit Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/3/2020
+ms.date: 9/22/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Anleitung zum Verwenden des geteilten VPN-Tunnels mit Office 365 zur Optimierung der Office 365-Konnektivität für Remotebenutzer.
-ms.openlocfilehash: aad7932abb6b96a518b069ec24e836d2b5d234a1
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: cda9333c7edbcc323544290c2ba946a8464f9c57
+ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696011"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48214757"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunneling"></a>Optimieren der Office 365-Konnektivität für Remotebenutzer mithilfe eines geteilten VPN-Tunnels
 <!---
@@ -89,16 +89,13 @@ Die festgelegten Endpunkte können auf den erzwungenen VPN-Tunnel aufgeteilt wer
 
 Sicherheitselemente, wie z. B. DLP, AV-Schutz, Authentifizierung und Zugriffssteuerung, können für diese Endpunkte auf verschiedenen Ebenen innerhalb des Diensts wesentlich effizienter bereitgestellt werden. Da auch der Großteil des Datenverkehrvolumens von der VPN-Lösung weggeleitet wird, setzt dies VPN-Kapazität für kritischen geschäftlichen Datenverkehr frei, der immer noch darauf angewiesen ist. Außerdem dürfte es in vielen Fällen nicht mehr notwendig sein, ein langwieriges und kostspieliges Aktualisierungsprogramm zu durchlaufen, um diese neue Arbeitsweise handhaben zu können.
 
-![Konfiguration eines geteilten VPN-Tunnels](../media/vpn-split-tunneling/vpn-model-2.png)
+![VPN-Konfigurationsdetails für geteilte Tunnel](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
 
 _Abbildung 3: eine geteilte VPN-Tunnellösung mit definierten Office 365-Ausnahmen, die direkt an den Dienst gesendet werden. Aller anderer Datenverkehr wird unabhängig vom Ziel zurück in das Unternehmensnetzwerk gezwungen._
 
 Aus der Sicherheitsperspektive verfügt Microsoft über eine Reihe von Sicherheitsfunktionen, die verwendet werden können, um eine ähnliche oder sogar verbesserte Sicherheit zu bieten als die, die durch eine Inline-Inspektion durch lokale Sicherheitsstapel erreicht wird. Der Blogbeitrag des Microsoft Security-Teams [Alternative Möglichkeiten für Sicherheitsexperten und IT-Mitarbeiter, moderne Sicherheitskontrollen in den heutigen, einzigartigen Remotearbeitsszenarios zu erreichen](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/) bietet eine klare Zusammenfassung der verfügbaren Funktionen. Ausführlichere Anleitungen finden Sie in diesem Artikel. Über Microsofts Implementierung von geteilten VPN-Tunneling können Sie auch unter [Betrieb über VPN: Wie Microsoft seine Remotemitarbeiter in Verbindung hält](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv) lesen.
 
 In vielen Fällen kann diese Umsetzung innerhalb weniger Stunden erreicht werden, was eine rasche Lösung eines der dringendsten Probleme ermöglicht, mit denen Organisationen konfrontiert sind, wenn sie schnell großmaßstäbig auf Remotearbeit umstellen. Implementierungsanleitungen für den geteilten VPN-Tunnel finden Sie unter [Implementierung des geteilten VPN-Tunnels für Office 365](microsoft-365-vpn-implement-split-tunnel.md).
-
->[!NOTE]
->Microsoft hat sich verpflichtet, die Änderungen an den **Optimize**-Endpunkten für Office 365 bis mindestens **30. Juni 2020** einzustellen, damit sich die Kunden auf andere Herausforderungen konzentrieren können, anstatt die Endpunkt-Whitelist nach der ursprünglichen Implementierung beizubehalten.
 
 ## <a name="related-topics"></a>Verwandte Themen
 
