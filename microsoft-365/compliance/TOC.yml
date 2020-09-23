@@ -107,12 +107,14 @@
           href: what-the-dlp-functions-look-for.md
     - name: Trainierbare Klassifizierungsmerkmale
       items:
+        - name: Weitere Informationen zu trainierbaren Klassifizierern (Vorschau)
+          href: classifier-learn-about.md
         - name: Erste Schritte mit trainierbaren Klassifizierern (Vorschau)
-          href: classifier-getting-started-with.md
-        - name: Verwenden eines integrierten Klassifizierers (Vorschau)
-          href: classifier-using-a-ready-to-use-classifier.md
-        - name: Erstellen und Trainieren eines Klassifizierers (Vorschau)
-          href: classifier-creating-a-trainable-classifier.md
+          href: classifier-get-started-with.md
+        - name: Neutrainieren eines Klassifizierers in der Kommunikationscompliance (Vorschau)
+          href: classifier-how-to-retrain-comms-compliance.md
+        - name: Neutrainieren eines Klassifizierers im Inhalts-Explorer (Vorschau)
+          href: classifier-how-to-retrain-content-explorer.md
     - name: Datenklassifizierung
       items:
         - name: Grundlegendes zur Datenklassifizierung
