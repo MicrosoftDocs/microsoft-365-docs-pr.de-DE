@@ -12,12 +12,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Erfahren Sie mehr über Aufgaben, die Ihnen helfen, die Compliance in Microsoft 365 schnell zu beginnen.
-ms.openlocfilehash: 1702c05b271c0e8b5456c1a93f8bf1dc28f7fbd9
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: d2399b65e6f8d2765d3fc8691b0e395f113092f1
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816814"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200838"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Schnelle Aufgaben für die ersten Schritte mit Microsoft 365 Compliance
 
@@ -31,7 +31,7 @@ Nachdem Sie diese grundlegenden Kompatibilitäts Aufgaben abgeschlossen haben, s
 
 Es ist wichtig, zu verwalten, wer in Ihrer Organisation über Zugriff auf das Microsoft 365 Compliance Center verfügt, um Inhalte anzuzeigen und Verwaltungsaufgaben auszuführen. Microsoft 365 bietet administrative Rollen, die speziell für die Compliance und für die Verwendung der im Microsoft 365 Compliance Center enthaltenen Tools verwendet werden.
 
-Beginnen Sie mit dem Zuweisen von Konformitäts Berechtigungen für die Personen in Ihrer Organisation, damit diese diese Aufgaben ausführen und verhindern können, dass nicht autorisierte Personen Zugriff auf Bereiche außerhalb ihrer Aufgaben haben. Sie sollten sicherstellen, dass Sie die richtigen Personen dem **Compliance Data Administrator** und den Administratorrollen für den **Compliance Administrator** zugewiesen haben, bevor Sie mit der Konfiguration und Implementierung von Compliance-Lösungen in Microsoft 365 beginnen. Außerdem müssen Sie die Benutzer der Azure-Active Directory globalen Leserrolle zuweisen, um Daten in der Kompatibilitätsbewertung anzuzeigen.
+Beginnen Sie mit dem Zuweisen von Konformitäts Berechtigungen für die Personen in Ihrer Organisation, damit diese diese Aufgaben ausführen und verhindern können, dass nicht autorisierte Personen Zugriff auf Bereiche außerhalb ihrer Aufgaben haben. Sie sollten sicherstellen, dass Sie die richtigen Personen dem **Compliance Data Administrator** und den Administratorrollen für den **Compliance Administrator** zugewiesen haben, bevor Sie mit der Konfiguration und Implementierung von Compliance-Lösungen in Microsoft 365 beginnen. Sie müssen auch Benutzer der Azure Active Directory globalen Leserrolle zuweisen, um Daten im Compliance-Manager anzuzeigen.
 
 Eine Schritt-für-Schritt-Anleitung zum Konfigurieren von Berechtigungen und Zuweisen von Personen zu Administratorrollen finden Sie unter [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
@@ -39,9 +39,9 @@ Eine Schritt-für-Schritt-Anleitung zum Konfigurieren von Berechtigungen und Zuw
 
 Es ist schwierig zu wissen, wohin Sie wechseln müssen, wenn Sie nicht wissen, wo Sie sich befinden. Die Erfüllung der Compliance-Anforderungen umfasst das Verständnis ihres aktuellen Risikograds und die erforderlichen Aktualisierungen für diese immer ändernden Zeiten. Unabhängig davon, ob Ihre Organisation für Compliance-Anforderungen neu ist oder über umfassende Erfahrung mit Standards und Vorschriften verfügt, die Ihre Branche steuern, ist es das beste, was Sie zur Verbesserung der Compliance tun können, um zu verstehen, wo Ihre Organisation steht.
 
-[Microsoft Compliance Score](compliance-score.md) kann Ihnen helfen, die Compliance-Haltung ihrer Organisation zu verstehen und Bereiche hervorzuheben, die möglicherweise Verbesserungen erforderlich sind. Compliance Score verwendet ein zentralisiertes Dashboard, um eine risikobasierte Bewertung zu berechnen, und misst Ihren Fortschritt bei der Durchführung von Aktionen, die zur Verringerung von Risiken hinsichtlich des Datenschutzes und der regulatorischen Standards beitragen. Sie können auch die Kompatibilitätsbewertung als Tool verwenden, um alle Risikobewertungen nachzuverfolgen. Es bietet Workflowfunktionen, die Sie bei der effizienten Durchführung ihrer Risikobewertungen mithilfe eines allgemeinen Tools unterstützen.
+[Microsoft Compliance Manager](compliance-manager.md) kann Ihnen helfen, die Compliance-Haltung ihrer Organisation zu verstehen und Bereiche hervorzuheben, die möglicherweise Verbesserungen erforderlich sind. Compliance-Manager verwendet ein zentralisiertes Dashboard, um eine risikobasierte Bewertung zu berechnen, und misst Ihren Fortschritt bei der Durchführung von Aktionen, die zur Verringerung von Risiken hinsichtlich des Datenschutzes und der regulatorischen Standards beitragen. Sie können auch den Compliance-Manager als Tool verwenden, um alle ihre Risikobewertungen nachzuverfolgen. Es bietet Workflowfunktionen, die Sie bei der effizienten Durchführung ihrer Risikobewertungen mithilfe eines allgemeinen Tools unterstützen.
 
-Eine Schritt-für-Schritt-Anleitung für die ersten Schritte mit der Konformitätsbewertung finden Sie unter [Einrichten der Konformitätsbewertung](compliance-score-setup.md).
+Eine Schritt-für-Schritt-Anleitung für die ersten Schritte mit dem Compliance-Manager finden Sie unter [Erste Schritte mit Compliance-Manager](compliance-manager-setup.md).
 
 >[!IMPORTANT]
 >Sicherheit und Compliance sind für die meisten Organisationen eng integriert. Es ist wichtig, dass Ihre Organisation grundlegende Sicherheits-, Bedrohungsschutz-und Identitäts-und Zugriffs Verwaltungsbereiche anspricht, um eine umfassende Verteidigungsstrategie für Sicherheit und Compliance zu bieten.

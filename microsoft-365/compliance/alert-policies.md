@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: Erstellen Sie Warnungsrichtlinien im Security and Compliance Center in Office 365 und Microsoft 365, um potenzielle Bedrohungen, Datenverlust und Berechtigungsprobleme zu überwachen.
-ms.openlocfilehash: 5f4c715058c7fd9a98dc268b18cc487af4c1ae10
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 4b12457b051b19aa1eaca0d92b342ab8a7b34134
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962676"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200584"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Warnungsrichtlinien im Security & Compliance Center
 
@@ -109,7 +109,7 @@ In der folgenden Tabelle werden die verfügbaren Standard Warnungsrichtlinien un
 
 In der Tabelle werden außerdem die Office 365 Enterprise und Office 365 US Government-Plan angegeben, der für jeden erforderlich ist. Einige standardmäßige Warnungsrichtlinien sind verfügbar, wenn Ihre Organisation zusätzlich zu einem E1/F1/G1-oder E3/G3-Abonnement über das entsprechende Add-on-Abonnement verfügt.
 
-|**Standardmäßige Warnungs Richtlinie**|**Beschreibung**|**Kategorie**|**Office 365 Enterprise Abonnement**|
+|**Standardmäßige Warnungs Richtlinie**|**Beschreibung**|**Category**|**Office 365 Enterprise Abonnement**|
 |:-----|:-----|:-----|:-----|
 |**Ein potenziell böswilliger URL-Klick wurde erkannt.**|Generiert eine Warnung, wenn ein Benutzer, der durch [Office 365 sichere ATP-Links](../security/office-365-security/atp-safe-links.md) in Ihrer Organisation geschützt wird, auf einen bösartigen Link klickt. Dieses Ereignis wird ausgelöst, wenn URL-Urteils Änderungen durch Office 365 ATP identifiziert werden oder wenn Benutzer die Office 365 ATP-sichere Links Seiten außer Kraft setzen (basierend auf der Microsoft 365 for Business ATP-Richtlinie für sichere Links in Ihrer Organisation). Diese Warnungs Richtlinie weist eine Einstellung mit **hohem** Schweregrad auf. Für Office 365 ATP P2, E5, G5-Kunden, löst diese Warnung automatisch die [Automatische Untersuchung und Antwort in Office 365 aus](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air). Weitere Informationen zu Ereignissen, die diese Warnung auslösen, finden Sie unter [Einrichten Office 365 ATP-Richtlinien für sichere Links](../security/office-365-security/set-up-atp-safe-links-policies.md).|Bedrohungsverwaltung|E5/G5 oder Office 365 Add-on-Abonnement für ATP P2|
 |**Ergebnis der Administrator Übermittlung abgeschlossen**|Generiert eine Warnung, wenn eine [Administrator Übermittlung](../security/office-365-security/admin-submission.md) den erneuten Scan der übermittelten Entität abgeschlossen hat. Eine Warnung wird jedes Mal ausgelöst, wenn ein erneutes Scanergebnis aus einer Administrator Übermittlung gerendert wird. Diese Warnungen sollen Sie daran erinnern, [die Ergebnisse früherer Übermittlungen zu überprüfen](https://protection.office.com/reportsubmission), Benutzer gemeldete Nachrichten zu übermitteln, um die neuesten Urteile zur Richtlinienüberprüfung und erneuten Überprüfung zu erhalten, und Ihnen helfen, festzustellen, ob die Filterrichtlinien in Ihrer Organisation die beabsichtigte Auswirkung haben. Diese Richtlinie weist eine Einstellung mit **niedrigem** Schweregrad auf.|Bedrohungsverwaltung|E1/F1, E3 oder E5|
@@ -205,7 +205,7 @@ In der folgenden Tabelle sind die Rollen aufgeführt, die zum Anzeigen von Warnu
 
 Informationen zur Kategorie, der eine standardmäßige Warnungs Richtlinie zugewiesen ist, finden Sie in der Tabelle im Abschnitt [standardmäßige Warnungsrichtlinien](#default-alert-policies) .
 
-|&nbsp;|Informationsverwaltung|Verhinderung von Datenverlust|Nachrichtenübermittlung|Berechtigungen|Bedrohungsverwaltung|Sonstige|
+|Rolle|Informationsverwaltung|Verhinderung von Datenverlust|Nachrichtenübermittlung|Berechtigungen|Bedrohungsverwaltung|Sonstige|
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Überwachungsprotokolle|||||||
 |Fallverwaltung|||||||

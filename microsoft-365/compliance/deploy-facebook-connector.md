@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Administratoren können einen systemeigenen Connector einrichten, um Facebook-Geschäfts Seiten in Microsoft 365 zu importieren und zu archivieren. Nachdem diese Daten in Microsoft 365 importiert wurden, können Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien verwenden, um die Steuerung der Facebook-Daten Ihrer Organisation zu verwalten.
-ms.openlocfilehash: 240ce3a90cf46a05ab5d6030b9318d42d23904d8
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: 065a5c6a1276c1ce37aa48137caf6627e76c8db0
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434235"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200860"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>Bereitstellen eines Connectors zum Archivieren von Facebook-Geschäfts Seiten Daten
 
@@ -190,7 +190,7 @@ Dieser Artikel enthält den schrittweisen Prozess zur Bereitstellungeines Connec
 
 1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com) und klicken Sie dann im linken Navigationsbereich auf **Datenverbindungen** .
 
-2. Klicken Sie auf der Seite **Daten Konnektoren (Vorschau)** unter **Facebook Business Pages**auf **Ansicht**.
+2. Klicken Sie auf der Seite **Daten Konnektoren** unter **Facebook Business Pages**auf **Ansicht**.
 
 3. Klicken Sie auf der Seite **Facebook-Geschäfts Seiten** auf **Connector hinzufügen**.
 

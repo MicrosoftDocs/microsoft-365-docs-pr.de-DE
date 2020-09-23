@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: Die Verhinderung von Datenverlust im Security &amp; Compliance Center umfasst 80 Typen für vertrauliche Informationen, die Sie in ihren DLP-Richtlinien verwenden können. Dieses Thema enthält eine Liste aller dieser vertraulichen Informationstypen und zeigt, was eine DLP-Richtlinie sucht, wenn sie den jeweiligen Typen erkennt.
-ms.openlocfilehash: 7985d52bcf0cbd4e3e86bc240abb8f692e733743
-ms.sourcegitcommit: 327163f70eac0de568ebe3c9a97a744c3ed408cb
+ms.openlocfilehash: 5d776fcf816359fd30c750b9bebe536269a2b6c5
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 09/22/2020
-ms.locfileid: "48177123"
+ms.locfileid: "48208097"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Entitätsdefinitionen für Typen vertraulicher Informationstypen
 
@@ -33,14 +33,6 @@ Für Typen vertraulicher Informationen ist eines der folgenden Abonnements erfor
 - Microsoft 365 E3
 - Microsoft 365 E5
 
-Typen vertraulicher Informationen können in verwendet werden:
-- Richtlinien zur Verhinderung von Datenverlust
-- Kommunikation Compliance polcies
-- Information Governance
-- Datensatzverwaltung
-- Microsoft Cloud-App-Sicherheit
-
-  
 ## <a name="aba-routing-number"></a>ABA-Routingnummer
 
 ### <a name="format"></a>Format

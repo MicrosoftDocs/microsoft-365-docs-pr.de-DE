@@ -14,20 +14,20 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Administratoren können einen Daten Konnektor einrichten, um Mitarbeiterdaten aus dem Personalwesen (HR) Ihrer Organisation nach Microsoft 365 zu importieren. Auf diese Weise können Sie Personaldaten in Richtlinien für das Insider Risikomanagement verwenden, um die Aktivität bestimmter Benutzer zu ermitteln, die eine interne Bedrohung für Ihre Organisation darstellen können.
-ms.openlocfilehash: a8eaeda3bc883de55a2c588e39557b4517ae3cc5
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 31afa01a518028e7ec25116e947b4e0d6dc94dac
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47817161"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201544"
 ---
-# <a name="set-up-a-connector-to-import-hr-data-preview"></a>Einrichten eines Connectors zum Importieren von HR-Daten (Vorschau)
+# <a name="set-up-a-connector-to-import-hr-data"></a>Einrichten eines Connectors zum Importieren von Personaldaten
 
 Sie können einen Daten Konnektor im Microsoft 365 Compliance Center einrichten, um Personaldaten (HR) im Zusammenhang mit Ereignissen wie dem Rücktritt eines Benutzers oder einer Änderung der Auftragsstufe eines Benutzers zu importieren. Die HR-Daten können dann von der [Insider Risk Management-Lösung](insider-risk-management.md) verwendet werden, um Risikoindikatoren zu generieren, die Sie bei der Identifizierung möglicher böswilliger Aktivitäten oder von Datendiebstahl durch Benutzer innerhalb Ihrer Organisation unterstützen können.
 
 Einrichten eines Connectors für HR-Daten, die von Insider Risiko-Verwaltungsrichtlinien zum Generieren von Risikoindikatoren verwendet werden können, besteht darin, eine CSV-Datei zu erstellen, die die HR-Daten enthält. Erstellen einer APP in Azure Active Directory, die für die Authentifizierung verwendet wird, Erstellen eines HR-Daten-Konnektors im Microsoft 365 Compliance Center und anschließendes Ausführen eines Skripts (geplant), das die HR-Daten in CSV-Dateien in die Microsoft-Cloud einnimmt, damit Sie für Insider verfügbar ist Risikomanagementlösung.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Bestimmen Sie, welche HR-Szenarien und Daten in Microsoft 365 importiert werden sollen. Auf diese Weise können Sie bestimmen, wie viele CSV-Dateien und HR-Konnektoren Sie erstellen und wie Sie die CSV-Dateien generieren und strukturieren müssen. Die von Ihnen importierten HR-Daten werden durch die Richtlinien für das Insider Risikomanagement bestimmt, die Sie implementieren möchten. Weitere Informationen finden Sie unter Schritt 1.
 
@@ -219,7 +219,7 @@ Nachdem Sie diesen Schritt ausgeführt haben, müssen Sie unbedingt die Auftrags
 
 1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com/) und klicken Sie dann im linken Navigationsbereich auf **Datenverbindungen** .
 
-2. Klicken Sie auf der Seite **Daten Konnektoren (Vorschau)** unter **HR**auf **Ansicht**.
+2. Klicken Sie auf der Seite **Daten Konnektoren** unter **HR**auf **Ansicht**.
 
 3. Klicken Sie auf der Seite **HR Custom** auf **Connector hinzufügen**.
 
