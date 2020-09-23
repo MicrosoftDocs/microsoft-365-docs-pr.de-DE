@@ -1,6 +1,6 @@
 ---
 title: Voraussetzungen für Microsoft Managed Desktop
-description: ''
+description: Lizenzen, Azure-Konten, Authentifizierungseinstellungen und Einstellungen von Microsoft 365, die vor der Registrierung in Microsoft Managed Desktop eingerichtet werden müssen
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 4850aabfac0774f899d6497543b74ff77c446523
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 1c03d9028205ea392bade15e6dec354bff0be96e
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361951"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235394"
 ---
 # <a name="prerequisites-for-microsoft-managed-desktop"></a>Voraussetzungen für Microsoft Managed Desktop
 
@@ -23,7 +23,6 @@ ms.locfileid: "47361951"
 
 In diesem Thema werden die Infrastrukturanforderungen beschrieben, die Sie erfüllen müssen, um den Erfolg mit Microsoft Managed Desktop sicherzustellen. 
 
-Microsoft Kurzhilfe steht Ihnen zur Verfügung, um Sie bei der Erfüllung dieser Anforderungen zu unterstützen und Sie bei der Vorbereitung der Teilnahme an Microsoft Managed Desktop zu unterstützen Weitere Informationen finden Sie unter [Microsoft](https://fasttrack.microsoft.com/about)Kurzdaten. 
 
 Bereich | Erforderliche Details
 --- | ---
@@ -33,7 +32,7 @@ Azure Active Directory |    Azure Active Directory (Azure AD) muss entweder die 
 Authentifizierung |    Wenn Azure AD nicht die Quelle der primären Authentifizierung für Benutzerkonten ist, müssen Sie eine dieser in Azure AD Connect konfigurieren:<br>-Kennworthash Synchronisierung<br>-Pass-Through-Authentifizierung<br>– Ein externer Identitätsanbieter (einschließlich Windows Server ADFS und nicht-Microsoft-Vertriebenen), der für Azure AD Integrationsanforderungen konfiguriert ist. Weitere Informationen finden Sie in den [Richtlinien](https://www.microsoft.com/download/details.aspx?id=56843) . <br><br>Beim Festlegen von Authentifizierungsoptionen mit Azure AD Connect wird auch das Kenn Wort Rückschreiben empfohlen. Weitere Informationen finden Sie unter [Kenn Wort Rück schreibe](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-writeback). <br><br>Wenn ein externer Identitätsanbieter implementiert ist, müssen Sie die Lösung überprüfen:<br>-Erfüllt Azure AD Integrationsanforderungen<br>-Unterstützt Azure AD bedingten Zugriff, um die Konfiguration der MMD-Geräte Konformitätsrichtlinie zu ermöglichen<br>-Aktiviert die Geräteregistrierung und die Verwendung von Microsoft 365-Diensten oder-Features, die als Teil von Microsoft Managed Desktop erforderlich sind. <br><br>Weitere Informationen zu Authentifizierungsoptionen mit Azure AD finden Sie unter [Azure AD Connect User Sign-in Options](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-user-signin).
 Microsoft 365 | OneDrive für Unternehmen müssen für Microsoft Managed Desktop-Benutzer aktiviert sein.<br><br>Obwohl es nicht erforderlich ist, sich bei Microsoft Managed Desktop anzumelden, wird dringend empfohlen, die folgenden Dienste in die Cloud zu migrieren:<br>-E-Mail: Migrieren Sie zu cloudbasierten Postfächern, Exchange Online oder konfigurieren Sie mit Exchange Online Hybriden mit Exchange 2013 oder höher, lokal.<br>-Dateien und Ordner: Migrieren Sie zu OneDrive für Unternehmen oder SharePoint Online.<br>-Tools für die Online Zusammenarbeit: Migration zu Microsoft Teams.
 Geräteverwaltung | Microsoft Managed Desktop-Geräte erfordern eine Verwaltung mit Microsoft InTune. InTune muss als Verwaltungsautorität für mobile Geräte festgelegt sein.<br><br>Weitere Informationen finden Sie unter [Microsoft InTune](https://www.microsoft.com/cloud-platform/microsoft-intune). 
-Datensicherung und-Wiederherstellung | Microsoft Managed Desktop erfordert das Synchronisieren von Dateien mit OneDrive für Unternehmen Schutz. Alle Dateien, die nicht mit OneDrive für Unternehmen synchronisiert wurden, werden von Microsoft Managed Desktop nicht garantiert und gehen möglicherweise während des Geräteaustauschs verloren oder unterstützen Anrufe, die ein Zurücksetzen des Geräts erfordern.<br><br>Obwohl dies nicht erforderlich ist, empfiehlt Microsoft Managed Desktop dringend die Migration von zugeordneten Netzlaufwerken zur entsprechenden Cloud-Lösung. Weitere Informationen finden Sie unter [Prepare Mapped Drives for Microsoft Managed Desktop](mapped-drives.md)
+Datensicherung und-Wiederherstellung |  Microsoft Managed Desktop erfordert das Synchronisieren von Dateien mit OneDrive für Unternehmen Schutz. Alle Dateien, die nicht mit OneDrive für Unternehmen synchronisiert wurden, werden von Microsoft Managed Desktop nicht garantiert und gehen möglicherweise während des Geräteaustauschs verloren oder unterstützen Anrufe, die ein Zurücksetzen des Geräts erfordern.<br><br>Obwohl dies nicht erforderlich ist, empfiehlt Microsoft Managed Desktop dringend die Migration von zugeordneten Netzlaufwerken zur entsprechenden Cloud-Lösung. Weitere Informationen finden Sie unter [Prepare Mapped Drives for Microsoft Managed Desktop](mapped-drives.md)
 
 Wenn Sie die ersten Schritte mit Microsoft Managed Desktop abgeschlossen haben, wenden Sie sich an Ihren Microsoft-Konto-Manager. 
 

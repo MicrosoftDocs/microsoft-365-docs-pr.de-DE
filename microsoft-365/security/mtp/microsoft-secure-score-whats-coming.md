@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c6643b30327b7f362c4649c2be1b1eea81ff3523
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 2d9d166c8e9fd16b09964c75a3b6bace05265120
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203628"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235466"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Was kommt mit Microsoft Secure Score
 
@@ -33,8 +33,10 @@ Wir nehmen in naher Zukunft einige Änderungen vor, um [Microsoft Secure Score](
 
 ## <a name="proposed-changes"></a>Vorgeschlagene Änderungen
 
-### <a name="september-2020"></a>September 2020
-- Keine Änderungen geplant
+### <a name="october-2020"></a>Oktober 2020
+
+#### <a name="remove-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>Verbesserungsmaßnahme für Microsoft Defender Advanced Threat Protection entfernen
+- Microsoft Defender-SmartScreen-Windows Store-App-Webinhalts Überprüfung festlegen, um zu warnen
 
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
