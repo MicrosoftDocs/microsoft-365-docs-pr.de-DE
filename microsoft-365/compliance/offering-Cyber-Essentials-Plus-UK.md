@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6b0d28c853c540e72c4287b141097f12ddf23419
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 54f1c4006450d47e974c4775720c91d8c6bea764
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415575"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208587"
 ---
 # <a name="united-kingdom-cyber-essentials-plus"></a>Vereinigtes Königreich Cyber Essentials Plus
 
@@ -46,6 +46,10 @@ Das [Azure Cyber Essentials Plus-Zertifikat](https://aka.ms/AzureCyberEPlusCert)
 
 - [Azure Cyber Essentials Plus-Konformitätsbericht](https://aka.ms/AzureCyberEPlusReport)
 - [Azure Cyber Essentials Plus-Zertifizierung](https://aka.ms/AzureCyberEPlusCert)
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Bewerten des Risikos mithilfe von Microsoft Compliance-Manager
+
+[Microsoft Compliance Manager](compliance-manager.md) ist ein Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) , mit dem Sie die Compliance-Haltung ihrer Organisation besser verstehen und Maßnahmen zur Verringerung von Risiken unterstützen können. Compliance-Manager bietet eine Premium-Vorlage für die Erstellung einer Bewertung für diese Verordnung. Suchen Sie die Vorlage auf der Seite " **Bewertungs Vorlagen** " im Compliance-Manager. Hier erfahren Sie, wie Sie [Assessments im Compliance-Manager erstellen](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressourcen
 

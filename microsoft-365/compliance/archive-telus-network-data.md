@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Administratoren können einen TeleMessage-Konnektor zum Importieren und Archivieren von SMS-Daten aus dem Telus-Netzwerk in Microsoft 365 einrichten. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren, damit Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten der drittanbieterdaten Ihrer Organisation verwenden können.
-ms.openlocfilehash: cfb15d7f7c6783d2a155587342e9224f4648d2cc
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 49178d50550df64df77f92dfa5725ec02432aab7
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361840"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196722"
 ---
-# <a name="set-up-a-connector-to-archive-telus-network-data-preview"></a>Einrichten eines Connectors zum Archivieren von Telus-Netzwerkdaten (Vorschau)
+# <a name="set-up-a-connector-to-archive-telus-network-data"></a>Einrichten eines Connectors zum Archivieren von Telus-Netzwerkdaten
 
 Verwenden Sie den TeleMessage Connector im Microsoft 365 Compliance Center, um SMS-Daten (Short Messaging Service) aus dem Telus-Netzwerk Ihrer Organisation zu importieren und zu archivieren. Nachdem Sie einen Connector eingerichtet und konfiguriert haben, wird dieser einmal täglich mit dem Telus-Netzwerk Ihrer Organisation verbunden und importiert SMS-Daten in Postfächer in Microsoft 365.
 
@@ -88,4 +87,4 @@ Nachdem Sie die im vorherigen Abschnitt beschriebenen Voraussetzungen erfüllt h
 
 ## <a name="known-issues"></a>Bekannte Probleme
 
-- Zurzeit wird kein Import von Anlagen unterstützt, die größer als 10 MB sind, aber die Unterstützung größerer Elemente wird zu einem späteren Zeitpunkt zur Verfügung stehen.
+- Zurzeit wird das Importieren von Anlagen oder Elementen, die größer als 10 MB sind, nicht unterstützt. Unterstützung für größere Elemente wird zu einem späteren Zeitpunkt zur Verfügung stehen.

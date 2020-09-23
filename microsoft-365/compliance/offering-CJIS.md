@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5680cc1bf8f3a0290f82baaccea1de7b982317a7
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 4ca7654482251d86c44a3956c71f704a0cc3f2d4
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416417"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208617"
 ---
 # <a name="criminal-justice-information-services-cjis-security-policy"></a>Sicherheitsrichtlinie für Strafverfolgungs-Informationsdienste (CJIS)
 
@@ -77,6 +77,10 @@ Microsoft unterzeichnet eine Informations Vereinbarung mit einer staatlichen CJI
 **Wo beginne ich mit dem Compliance-Aufwand meiner Agentur?**
 
 [CJIS-Sicherheitsrichtlinie](https://aka.ms/cjis-security-policy) umfasst die Vorsichtsmaßnahmen, die Ihre Agentur zum Schutz von CJI ergreifen muss. Darüber hinaus können Sie mit Ihrem Microsoft-Konto Vertreter Kontakt mit denjenigen aufnehmen, die mit den Anforderungen Ihrer Gerichtsbarkeit vertraut sind.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Bewerten des Risikos mithilfe von Microsoft Compliance-Manager
+
+[Microsoft Compliance Manager](compliance-manager.md) ist ein Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) , mit dem Sie die Compliance-Haltung ihrer Organisation besser verstehen und Maßnahmen zur Verringerung von Risiken unterstützen können. Compliance-Manager bietet eine Premium-Vorlage für die Erstellung einer Bewertung für diese Verordnung. Suchen Sie die Vorlage auf der Seite " **Bewertungs Vorlagen** " im Compliance-Manager. Hier erfahren Sie, wie Sie [Assessments im Compliance-Manager erstellen](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressourcen
 

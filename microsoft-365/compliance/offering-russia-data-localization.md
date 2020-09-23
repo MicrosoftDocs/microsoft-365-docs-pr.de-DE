@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c8c5e78cfd7d531b2c2ee46ae4f28367240a87ca
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 29c56d525375162926d34bd298bbbd660964438d
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415991"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208157"
 ---
 # <a name="russian-personal-data-localization-requirements"></a>Anforderungen für die Lokalisierung russischer personenbezogener Daten
 
@@ -40,6 +40,10 @@ Microsoft lädt Kunden ein, Microsoft Online Services – Microsoft Azure, Micro
 ### <a name="managing-user-identity-and-access-for-microsoft-online-services"></a>Verwalten der Benutzeridentität und des Zugriffs für Microsoft Online Services
 
 Für Microsoft Online Services wie Microsoft Azure, Microsoft 365, Dynamics 365 und Power Platform werden die Benutzerüberprüfung und die Zugriffsverwaltung über [Azure Active Directory (AAD)](https://azure.microsoft.com/services/active-directory/)ausgeführt. Beachten Sie, dass Fälle, in denen ein Microsoft-Kunde ein lokales Identifikations Verwaltungssystem für Microsoft-Cloud-Dienste verwendet (wie die Windows Server-Active Directory (AD) oder ein anderes ID-Verwaltungssystem), der Kunde die Möglichkeit hat, dieses System schnell über Azure AD Connect mit dem Azure-Active Directory (AAD) zu integrieren. Weitere Informationen finden Sie unter der [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/cloud-provisioning/) -Option. Microsoft-Kunden können außerdem Anwendungen und Lösungen von Drittanbietern verwenden, um Ihre Benutzer zu verwalten und Ihr lokales Identifikationssystem mit dem Azure AD zu integrieren.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Bewerten des Risikos mithilfe von Microsoft Compliance-Manager
+
+[Microsoft Compliance Manager](compliance-manager.md) ist ein Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) , mit dem Sie die Compliance-Haltung ihrer Organisation besser verstehen und Maßnahmen zur Verringerung von Risiken unterstützen können. Compliance-Manager bietet eine Premium-Vorlage für die Erstellung einer Bewertung für diese Verordnung. Suchen Sie die Vorlage auf der Seite " **Bewertungs Vorlagen** " im Compliance-Manager. Hier erfahren Sie, wie Sie [Assessments im Compliance-Manager erstellen](compliance-manager-assessments.md).
 
 ## <a name="questions-and-support"></a>Fragen und Support
 

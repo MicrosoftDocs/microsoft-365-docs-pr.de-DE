@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Administratoren können einen Connector zum Importieren und Archivieren von Daten aus Globanet FX Connect in Microsoft 365 einrichten. Mit diesem Connector können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren, damit Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten der drittanbieterdaten Ihrer Organisation verwenden können.
-ms.openlocfilehash: d22313ab1de1700c14ee4b35f6a0e3dbcae73ae3
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: e56c0bc1ab16d9790e56bf0baf054057121ff94c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405586"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197246"
 ---
-# <a name="set-up-a-connector-to-archive-fx-connect-data-preview"></a>Einrichten eines Connectors zum Archivieren von FX Connect-Daten (Vorschau)
+# <a name="set-up-a-connector-to-archive-fx-connect-data"></a>Einrichten eines Connectors zum Archivieren von FX Connect-Daten
 
 Verwenden Sie einen Globanet-Connector im Microsoft 365 Compliance Center zum Importieren und Archivieren von Daten aus der FX Connect-Zusammenarbeitsplattform in Benutzerpostfächer in Ihrer Microsoft 365-Organisation. Globanet bietet einen [FX Connect](https://globanet.com/fx-connect/) -Connector, der zum Erfassen von FX Connect-Elementen und zum Importieren dieser Elemente in Microsoft 365 konfiguriert ist. Der Connector wandelt die Inhalte aus FX Connect, wie beispielsweise Trades, Nachrichten und andere Details aus dem FX Connect-Konto Ihrer Organisation, in ein e-Mail-Nachrichtenformat um und importiert diese Elemente dann in das Postfach des Benutzers in Microsoft 365.
 
@@ -40,7 +39,7 @@ In der folgenden Übersicht wird erläutert, wie Sie einen Connector zum Archivi
 
 4. Der Connector importiert Elemente in die Postfächer bestimmter Benutzer, indem er den Wert der *Email* -Eigenschaft der automatischen Benutzerzuordnung wie in [Schritt 3](#step-3-map-users-and-complete-the-connector-setup)beschrieben verwendet. Ein Unterordner im Posteingang-Ordner mit dem Namen **FX Connect** wird in den Benutzerpostfächern erstellt, und die Elemente werden in diesen Ordner importiert. Der Connector verwendet den Wert der *Email* -Eigenschaft. Jedes FX Connect-Element enthält diese Eigenschaft, die mit der e-Mail-Adresse jedes Teilnehmers des Elements aufgefüllt wird.
 
-## <a name="before-you-begin"></a>Vorabinformationen
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Erstellen Sie ein Globanet-Merge1-Konto für Microsoft-Connectors.  Wenden Sie sich dazu an den [Globanet-Kunden Support](https://globanet.com/ms-connectors-contact). Sie müssen sich bei diesem Konto anmelden, wenn Sie den Connector in Schritt 1 erstellen.
 
@@ -90,4 +89,4 @@ Nachdem Sie den FX Connect-Connector erstellt haben, können Sie den Connectorst
 
 ## <a name="known-issues"></a>Bekannte Probleme
 
-- Zurzeit wird kein Import von Anlagen unterstützt, die größer als 10 MB sind, aber die Unterstützung größerer Elemente wird zu einem späteren Zeitpunkt zur Verfügung stehen.
+- Zurzeit wird das Importieren von Anlagen oder Elementen, die größer als 10 MB sind, nicht unterstützt. Unterstützung für größere Elemente wird zu einem späteren Zeitpunkt zur Verfügung stehen.

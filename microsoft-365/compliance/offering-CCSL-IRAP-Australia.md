@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 0ff270c27c4b3d1a376b8b9ddefd1177cdd7823f
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 03a48dc757b8028fe0391bdc8f0469b8632f0f61
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417329"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208647"
 ---
 # <a name="australian-government-information-security-registered-assessor-program-irap"></a>Australian Government Information Security registered Auditor Program (IRAP)
 
@@ -50,7 +50,7 @@ Die Bewertung der Microsoft-Dienste in Australien umfasst die vier verfügbaren 
 
 Für jede Bewertung engagierte sich Microsoft mit einem ACSC IRAP Assessor, der die Sicherheitskontrollen und-Prozesse untersuchte, die vom IT-Betriebsteam von Microsoft, physikalischen Rechenzentren, Intrusionserkennung, Kryptografie, Domänen-und Netzwerksicherheit, Zugriffssteuerung und Informations Sicherheitsrisikomanagement von Dienstleistungen im Bereich verwendet wurden. Die IRAP-Bewertungen haben festgestellt, dass die Microsoft-Systemarchitektur auf soliden Sicherheitsprinzipien basiert und dass die anwendbaren ISM-Steuerelemente (Australia Government Information Security Manual) im Rahmen unserer bewerteten Dienste vorhanden und vollständig wirksam sind.
 
-Das vom ISM verwendete Risikomanagement-Framework zieht vom [nationalen Institut für Standards und Technologie (NIST) Special Publication (SP) 800-37 rev. 2](https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final), "Risk Management Framework für Informationssysteme und Organisationen: ein System Lebenszyklus-Ansatz für Sicherheit und Datenschutz" aus. Innerhalb dieses Risikomanagement-Frameworks können Risiken und Auswahl von Sicherheitskontrollen anhand einer Vielzahl von Risikomanagementstandards wie der [internationalen Organisation für Standardisierung (ISO) 31000:2018, Risk Management – Guidelines](https://www.iso.org/standard/65694.html)ermittelt werden. Das vom ISM verwendete Risikomanagement-Framework umfasst im großen und ganzen sechs Schritte:
+Das vom ISM verwendete Risikomanagement-Framework bezieht sich auf das [nationale Institute of Standards and Technology (NIST) Special Publication (SP) 800-37 rev. 2](https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final), "Risk Management Framework für Informationssysteme und Organisationen: ein System Lebenszyklus-Ansatz für Sicherheit und Datenschutz". Innerhalb dieses Risikomanagement-Frameworks können Risiken und Auswahl von Sicherheitskontrollen anhand einer Vielzahl von Risikomanagementstandards wie der [internationalen Organisation für Standardisierung (ISO) 31000:2018, Risk Management-Guidelines](https://www.iso.org/standard/65694.html)durchlaufen werden. Das vom ISM verwendete Risikomanagement-Framework umfasst im großen und ganzen sechs Schritte:
 
 - Definieren des Systems
 - Auswählen von Sicherheitssteuerelementen
@@ -86,9 +86,9 @@ Beginnen Sie mit dem, [Was ist IRAP?](https://www.cyber.gov.au/irap/what-irap) u
 - [Wer bietet IRAP-Schulungen an?](https://acsc.gov.au/infosec/irap/training.htm)
 - [Informationen zu Compliance-und nicht Compliance-Anforderungen](https://acsc.gov.au/infosec/irap/compliance.htm)
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Verwenden von Microsoft Compliancebewertungen zur Einschätzung des Risikos
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Bewerten des Risikos mithilfe von Microsoft Compliance-Manager
 
-[Microsoft Compliancebewertung](compliance-score.md) ist ein Preview-Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), das Ihnen dabei hilft, den Compliance-Status Ihrer Organisation zu bestimmen und Maßnahmen zur Senkung von Risiken zu ergreifen. Nachdem Sie die [Kompatibilitätsbewertung eingerichtet](compliance-score-setup.md)haben, wählen Sie die vorkonfigurierte [IRAP-Vorlage](https://go.microsoft.com/fwlink/?linkid=2117913) aus dem Dropdownmenü **Vorlage** aus, damit Ihre Organisation die Anforderungen für diese Verordnung erfüllt.
+[Microsoft Compliance Manager](compliance-manager.md) ist ein Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) , mit dem Sie die Compliance-Haltung ihrer Organisation besser verstehen und Maßnahmen zur Verringerung von Risiken unterstützen können. Compliance-Manager bietet eine Premium-Vorlage für die Erstellung einer Bewertung für diese Verordnung. Suchen Sie die Vorlage auf der Seite " **Bewertungs Vorlagen** " im Compliance-Manager. Hier erfahren Sie, wie Sie [Assessments im Compliance-Manager erstellen](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressourcen
 

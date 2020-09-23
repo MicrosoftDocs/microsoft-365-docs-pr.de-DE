@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: cbf8b04fe4e3d301d3ee79c09895093f97c2e785
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 89f7e0ca95144e783b70e23c21008dcc46328522
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417349"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208457"
 ---
 # <a name="family-educational-rights-and-privacy-act-ferpa"></a>Family Educational Rights and Privacy Act (FERPA)
 
@@ -68,6 +68,10 @@ Dieses US-Bundesgesetz beauftragt den Schutz der Privatsphäre der Bildungsunter
 - [Bundes Register: FERPA-Abschluss Regel](https://aka.ms/ferpa-reg) (Dezember 2011)
 - [FERPA allgemeiner Leitfaden für Eltern](https://www2.ed.gov/policy/gen/guid/fpco/ferpa/parents.html)
 
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Bewerten des Risikos mithilfe von Microsoft Compliance-Manager
+
+[Microsoft Compliance Manager](compliance-manager.md) ist ein Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) , mit dem Sie die Compliance-Haltung ihrer Organisation besser verstehen und Maßnahmen zur Verringerung von Risiken unterstützen können. Compliance-Manager bietet eine Premium-Vorlage für die Erstellung einer Bewertung für diese Verordnung. Suchen Sie die Vorlage auf der Seite " **Bewertungs Vorlagen** " im Compliance-Manager. Hier erfahren Sie, wie Sie [Assessments im Compliance-Manager erstellen](compliance-manager-assessments.md).
+
 ## <a name="resources"></a>Ressourcen
 
 - [Family Education Rights and Privacy Act](https://www.ed.gov/policy/gen/guid/fpco/ferpa/index.html)
@@ -75,5 +79,5 @@ Dieses US-Bundesgesetz beauftragt den Schutz der Privatsphäre der Bildungsunter
 - [Bundes Register: FERPA-Abschluss Regel](https://aka.ms/ferpa-reg)
 - [FERPA-Implementierungshandbuch für Microsoft Azure](https://aka.ms/azureferpa)
 - [Azure FERPA Compliance Framework-Zuordnung](https://aka.ms/AzureFERPAMapping)
-- [Microsoft Online Services-Nutzungsbedingungen](https://aka.ms/Online-Services-Terms)
+- [Nutzungsbedingungen für Microsoft-Onlinedienste](https://aka.ms/Online-Services-Terms)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

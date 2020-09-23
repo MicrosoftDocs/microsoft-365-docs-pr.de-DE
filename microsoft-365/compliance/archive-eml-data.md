@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Administratoren können einen Connector zum Importieren und Archivieren von eml-Daten aus Globanet in Microsoft 365 einrichten. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren, damit Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten der drittanbieterdaten Ihrer Organisation verwenden können.
-ms.openlocfilehash: 99b32960b46853ed4766c255e36df05c8fe9086a
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: c11d66774a61fa20a533b5c906b3c8601659c1fe
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405596"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200218"
 ---
-# <a name="set-up-a-connector-to-archive-eml-data-preview"></a>Einrichten eines Connectors zum Archivieren von eml-Daten (Vorschau)
+# <a name="set-up-a-connector-to-archive-eml-data"></a>Einrichten eines Connectors zum Archivieren von eml-Daten
 
 Verwenden Sie einen Globanet-Connector im Microsoft 365 Compliance Center, um eml-Daten in Benutzerpostfächer in Ihrer Microsoft 365-Organisation zu importieren und zu archivieren. EML ist die Dateierweiterung für eine e-Mail-Nachricht, die in einer Datei gespeichert ist. Der Connector wandelt den Inhalt eines Elements aus dem Quellformat in ein e-Mail-Nachrichtenformat um und importiert dann das Element in ein Benutzerpostfach.
 
@@ -40,7 +39,7 @@ In der folgenden Übersicht wird der Vorgang der Verwendung eines Connectors zum
 
 4. Der Connector importiert die konvertierten Nachrichtenelemente in die Postfächer bestimmter Benutzer, wobei der Wert der *Email* -Eigenschaft des in [Schritt 3](#step-3-map-users-and-complete-the-connector-setup)beschriebenen automatischen Benutzer Zuordnungsprozesses verwendet wird. Während dieses Prozesses wird ein Unterordner im Posteingang-Ordner mit dem Namen **eml**in den Benutzerpostfächern erstellt, und die EML-Elemente werden in diesen Ordner importiert. Der Connector verwendet den Wert der *Email* -Eigenschaft. Jede Nachricht enthält diese Eigenschaft, die mit der e-Mail-Adresse jedes Teilnehmers des Inhaltselements aufgefüllt wird.
 
-## <a name="before-you-begin"></a>Vorabinformationen
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Erstellen Sie ein Globanet-Merge1-Konto für Microsoft-Connectors. Wenden Sie sich dazu an den [Globanet-Kunden Support](https://globanet.com/ms-connectors-contact). Sie müssen sich bei diesem Konto anmelden, wenn Sie den Connector in Schritt 1 erstellen.
 
@@ -90,4 +89,4 @@ Nachdem Sie den eml-Connector erstellt haben, können Sie den Connectorstatus im
 
 ## <a name="known-issues"></a>Bekannte Probleme
 
-- Zurzeit wird kein Import von Anlagen unterstützt, die größer als 10 MB sind, aber die Unterstützung größerer Elemente wird zu einem späteren Zeitpunkt zur Verfügung stehen.
+- Zurzeit wird das Importieren von Anlagen oder Elementen, die größer als 10 MB sind, nicht unterstützt. Unterstützung für größere Elemente wird zu einem späteren Zeitpunkt zur Verfügung stehen.

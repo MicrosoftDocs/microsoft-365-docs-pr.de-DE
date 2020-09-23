@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c037a36154f14cc0db2092bc2eeea6344b5544ff
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: aac61dc6686e318d21a6aa6cb1ee86704879f51b
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416071"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208197"
 ---
 # <a name="reserve-bank-of-india-rbi-and-insurance-regulatory-and-development-authority-of-india-irdai"></a>Reserve Bank of India (RBI) und Insurance Regulatory and Development Authority of India (irdai)
 
@@ -31,7 +31,7 @@ Leitfaden für Outsourcing und Risikomanagement umfasst Folgendes:
 
 - [Guidelines on Managing Risk and Code of Conduct in Outsourcing of Financial Services by Banks](https://rbidocs.rbi.org.in/rdocs/notification/PDFs/73713.pdf) (RBI) befassen sich mit den Risiken, denen regulierte Banken beim Outsourcing von Finanzdienstleistungen ausgesetzt wären, und helfen sicherzustellen, dass das Outsourcing die Aufsichtsrolle der RBI nicht behindert. Die RBI erfordert keine vorherige Genehmigung für Banken, die Finanzdienstleistungen auslagern möchten; wichtige Bankfunktionen wie interne Audit-und Compliance-Funktionen sollten jedoch nicht ausgelagert werden.
 - [Richtlinien zu Informationssicherheit, elektronischem Bankwesen, Technologierisiko Management und Cyber-Betrug](https://rbidocs.rbi.org.in/rdocs/content/PDFs/GBS300411F.pdf) (RBI). Finanzinstitute müssen Outsourcing-Vereinbarungen melden, in denen Umfang und Art der Aktivitäten signifikant sind oder eine umfassende Datenfreigabe mit Dienstleistern außerhalb Indiens erfordern. Diese Anleitung gilt insbesondere, wenn Betriebsdaten außerhalb von Indien gespeichert oder verarbeitet werden.
-- [Outsourcing von Aktivitäten durch die indische Versicherungsaufsicht](https://www.irdai.gov.in/ADMINCMS/cms/frmGeneral_Layout.aspx?page=PageNo3149&flag=1) (irdai). Jedes Jahr müssen Versicherungsorganisationen das Outsourcing an irdai von bestimmten Unterstützungsfunktionen der Kernaktivitäten innerhalb von 45 Tagen nach Abschluss des Geschäftsjahres melden. (Auf der Seite 7 in der Microsoft- [Prüfliste](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) wird beschrieben, was "Supportfunktionen von Kernaktivitäten" darstellt.
+- [Outsourcing von Aktivitäten durch die indische Versicherungsaufsicht](https://www.irdai.gov.in/ADMINCMS/cms/frmGeneral_Layout.aspx?page=PageNo3149&flag=1) (irdai). Jedes Jahr müssen Versicherungsorganisationen das Outsourcing an irdai von bestimmten Unterstützungsfunktionen der Kernaktivitäten innerhalb von 45 Tagen nach Abschluss des Geschäftsjahres melden. (Auf der Seite 7 in der Microsoft- [Prüfliste](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) wird beschrieben, was "Unterstützungsfunktionen von Kernaktivitäten" darstellt.
 
 Finanzunternehmen, die Cloud-Dienste verwenden, müssen auch die Datenschutzregeln einhalten, einschließlich der [Informationstechnologie (angemessene Sicherheitsmethoden und-Verfahren sowie vertrauliche Informationen zu personenbezogenen Daten oder Informationen), 2011](https://meity.gov.in/sites/upload_files/dit/files/GSR313E_10511\(1\).pdf) (MeitY). Entwickelt zur Stärkung der indischen Datenschutz Gesetze Regeln diese Regeln den Schutz und Umgang mit vertraulichen personenbezogenen Daten.
 
@@ -60,9 +60,13 @@ Die Microsoft-Prüfliste hilft Finanzunternehmen in Indien, die Due-Diligence-Be
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
-**Gibt es verbindliche Bedingungen, die in den Vertrag mit dem Cloud-Dienstanbieter aufgenommen werden müssen?**
+**Gibt es verbindliche Bedingungen, die in den Vertrag mit dem Clouddienstanbieter aufgenommen werden müssen?**
 
 Ja. In den oben genannten Richtlinien sind einige spezifische Punkte aufgeführt, die Finanzinstitute in Ihre Cloud-Dienstleistungsverträge einbeziehen müssen. Teil 2 der [Prüfliste](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) (Seite 70) ordnet diese gegen die Abschnitte in den Microsoft-Vertragsdokumenten an, in denen Sie behandelt werden.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Bewerten des Risikos mithilfe von Microsoft Compliance-Manager
+
+[Microsoft Compliance Manager](compliance-manager.md) ist ein Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) , mit dem Sie die Compliance-Haltung ihrer Organisation besser verstehen und Maßnahmen zur Verringerung von Risiken unterstützen können. Compliance-Manager bietet eine Premium-Vorlage für die Erstellung einer Bewertung für diese Verordnung. Suchen Sie die Vorlage auf der Seite " **Bewertungs Vorlagen** " im Compliance-Manager. Hier erfahren Sie, wie Sie [Assessments im Compliance-Manager erstellen](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressourcen
 

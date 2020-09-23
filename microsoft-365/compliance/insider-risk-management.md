@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: d7e06eb025513caa2d4ad61f7b9d8b2a9e0d2cba
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 92b8802325ea6d80241d59bd506051ad048b8422
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199575"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208677"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Insider Risikomanagement in Microsoft 365
 
@@ -81,7 +81,7 @@ Sie können aus den folgenden [Richtlinienvorlagen auswählen, um schnell mit de
 Warnungen werden automatisch von Risikoindikatoren generiert, die Richtlinienbedingungen entsprechen und im [Alerts-Dashboard](insider-risk-management-alerts.md)angezeigt werden. Dieses Dashboard ermöglicht eine schnelle Ansicht aller Warnungen, die überprüft werden müssen, Warnungen werden über einen Zeitraum geöffnet, und es werden Warnungs Statistiken für Ihre Organisation angezeigt. Alle Richtlinienwarnungen werden mit den folgenden Informationen angezeigt, damit Sie schnell den Status vorhandener Warnungen und neuer Warnungen ermitteln können, die eine Aktion erfordern:
 
 - Status
-- Schweregrad
+- Severity
 - Erkannte Zeit
 - Fall
 - Fall Status
@@ -115,7 +115,7 @@ Nachdem Fälle untersuchtwurden, können Bearbeiter schnell zur Lösung des Fall
 In den schwerwiegenderen Situationen müssen Sie möglicherweise die Fall Informationen für Insider Risk Management für andere Bearbeiter oder Dienste in Ihrer Organisation freigeben. Das Insider Risikomanagement ist eng mit anderen Microsoft 365-Compliance-Lösungen integriert, die Ihnen bei der End-to-End-Risiko Lösung helfen.
 
 - **Advanced eDiscovery**: eskalieren eines Falls zur Untersuchung können Sie Daten und die Verwaltung der Anfrage in Advanced eDiscovery in Microsoft 365 übertragen. Advanced eDiscovery bietet einen End-to-End-Workflow zum Beibehalten, Sammeln, Überprüfen, Analysieren und Exportieren von Inhalten, die auf die internen und externen Ermittlungen Ihrer Organisation abgestimmt sind. Dies ermöglicht es juristischen Teams, den gesamten Warnungs-Workflow für die gesetzliche Aufbewahrungspflicht zu verwalten. Weitere Informationen zu den Advanced eDiscovery-Fällen finden Sie unter [Übersicht über Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
-- **ServiceNow (Vorschau)**: ServiceNow ist eine beliebte Cloud Computing-Plattform, die Organisationen bei der Verwaltung digitaler Workflows für Unternehmensvorgänge unterstützt. Das Insider Risikomanagement unterstützt das Freigeben von Fall Benachrichtigungen mit Ihrem ServiceNow-Dienst und ermöglicht Ihnen das Erstellen von Vorfällen und Änderungsanforderungen in Bezug auf einzelne Insider Risiko Fälle. Weitere Informationen zum Freigeben von Warnungsinformationen mit ServiceNow finden Sie unter [Freigeben eines Falls mit ServiceNow](insider-risk-management-cases.md#share-a-case).
+- **ServiceNow (Vorschau)**: ServiceNow ist eine beliebte Cloud Computing-Plattform, die Organisationen bei der Verwaltung digitaler Workflows für Unternehmensvorgänge unterstützt. Das Insider Risikomanagement unterstützt das Freigeben von Fall Benachrichtigungen mit Ihrem ServiceNow-Dienst und ermöglicht Ihnen das Erstellen von Vorfällen und Änderungsanforderungen in Bezug auf einzelne Insider Risiko Fälle. Weitere Informationen zum Freigeben von Warnungsinformationen mit ServiceNow finden Sie unter [Freigeben eines Falls mit ServiceNow](insider-risk-management-cases.md#share-the-case).
 - **Office 365 Management APIs Integration (Preview)**: das Insider Risikomanagement unterstützt das Exportieren von Warnungsinformationen in die Security Information and Event Management (SIEM)-Dienste über die Office 365 Management-APIs. Wenn Sie Zugriff auf die Warnungsinformationen auf der Plattform haben, ist die optimale Lösung für die Risikoprozesse Ihrer Organisation eine größere Flexibilität beim Handeln bei Risiko Aktivitäten. Weitere Informationen zum Exportieren von Warnungsinformationen mit Office 365-Verwaltungs-APIs finden Sie unter [Export Alerts](insider-risk-management-settings.md#export-alerts-preview).
 
 ## <a name="scenarios"></a>Szenarien

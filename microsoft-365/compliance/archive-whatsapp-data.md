@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Administratoren können einen TeleMessage-Konnektor einrichten, um WhatsApp-Daten in Microsoft 365 zu importieren und zu archivieren. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren, damit Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten der drittanbieterdaten Ihrer Organisation verwenden können.
-ms.openlocfilehash: fbd0e30cf8016da9479d5f1e24715d2e2aaa628c
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: a8a3465ca3f728290b69cf9b6c5d0820daf00221
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361870"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199158"
 ---
-# <a name="set-up-a-connector-to-archive-whatsapp-data-preview"></a>Einrichten eines Connectors zum Archivieren von WhatsApp-Daten (Vorschau)
+# <a name="set-up-a-connector-to-archive-whatsapp-data"></a>Einrichten eines Connectors zum Archivieren von WhatsApp-Daten
 
 Verwenden Sie den TeleMessage Connector im Microsoft 365 Compliance Center, um WhatsApp-Anrufe, Chats, Anhänge, Dateien und gelöschte Nachrichten zu importieren und zu archivieren. Nachdem Sie einen Connector eingerichtet und konfiguriert haben, stellt er einmal täglich eine Verbindung mit dem Tele Nachrichtenkonto Ihrer Organisation her und importiert die mobile Kommunikation der Mitarbeiter mit dem TeleMessage whatsapp-Telefon Archiver oder dem TeleMessage whatsapp Cloud Archiver zu Postfächern in Microsoft 365.
 
@@ -86,4 +85,4 @@ Nachdem Sie die im vorherigen Abschnitt beschriebenen Voraussetzungen erfüllt h
 
 ## <a name="known-issues"></a>Bekannte Probleme
 
-- Zurzeit wird kein Import von Anlagen unterstützt, die größer als 10 MB sind, aber die Unterstützung größerer Elemente wird zu einem späteren Zeitpunkt zur Verfügung stehen.
+- Zurzeit wird das Importieren von Anlagen oder Elementen, die größer als 10 MB sind, nicht unterstützt. Unterstützung für größere Elemente wird zu einem späteren Zeitpunkt zur Verfügung stehen.

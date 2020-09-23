@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Administratoren können einen TeleMessage-Konnektor einrichten, um SMS-und MMS-Daten aus dem Verizon-Netzwerk in Microsoft 365 zu importieren und zu archivieren. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren, damit Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten der drittanbieterdaten Ihrer Organisation verwenden können.
-ms.openlocfilehash: c088adbd0e0a5d4a46b3f7ddb3d64d3f8c32c8dc
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 8d3d23a4383f15b9390db3fb84b20a5566a28b8d
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361830"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196554"
 ---
-# <a name="set-up-a-connector-to-archive-verizon-network-data-preview"></a>Einrichten eines Connectors zum Archivieren von Verizon-Netzwerkdaten (Vorschau)
+# <a name="set-up-a-connector-to-archive-verizon-network-data"></a>Einrichten eines Connectors zum Archivieren von Verizon-Netzwerkdaten
 
 Verwenden Sie den TeleMessage Connector im Microsoft 365 Compliance Center zum Importieren und Archivieren von Kurznachrichtendienst (SMS) und MMS-Daten (Multimedia Messaging Service) aus Verizon Network. Nachdem Sie einen Connector eingerichtet und konfiguriert haben, wird dieser einmal täglich mit dem Verizon-Netzwerk Ihrer Organisation verbunden und importiert SMS-und MMS-Daten in Postfächer in Microsoft 365.
 
@@ -88,4 +87,4 @@ Nachdem Sie die im vorherigen Abschnitt beschriebenen Voraussetzungen erfüllt h
 
 ## <a name="known-issues"></a>Bekannte Probleme
 
-- Zurzeit wird kein Import von Anlagen unterstützt, die größer als 10 MB sind, aber die Unterstützung größerer Elemente wird zu einem späteren Zeitpunkt zur Verfügung stehen.
+- Zurzeit wird das Importieren von Anlagen oder Elementen, die größer als 10 MB sind, nicht unterstützt. Unterstützung für größere Elemente wird zu einem späteren Zeitpunkt zur Verfügung stehen.

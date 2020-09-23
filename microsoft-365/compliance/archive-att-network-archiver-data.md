@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Administratoren können einen TeleMessage-Konnektor zum Importieren und Archivieren von SMS-und MMS-Daten aus dem Mobilfunknetz von&T einrichten. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren, damit Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten der drittanbieterdaten Ihrer Organisation verwenden können.
-ms.openlocfilehash: dfcc59c6ed7beb088ca738c50112cf40a0ebe511
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 87974fd18f0e0a7c824e81231418ccf1c838b636
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47362076"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200250"
 ---
-# <a name="set-up-a-connector-to-archive-att-smsmms-data-preview"></a>Einrichten eines Connectors zum Archivieren bei&T-SMS/MMS-Daten (Vorschau)
+# <a name="set-up-a-connector-to-archive-att-smsmms-data"></a>Einrichten eines Connectors zum Archivieren bei&T-SMS/MMS-Daten
 
 Verwenden Sie einen TeleMessage Connector im Microsoft 365 Compliance Center, um SMS-und MMS-Daten aus dem Mobilfunknetz von&T zu importieren und zu archivieren. Nachdem Sie einen Connector eingerichtet und konfiguriert haben, stellt er eine Verbindung mit dem&T-Netzwerk Ihres Unternehmens täglich her und importiert SMS-und MMS-Daten in Postfächer in Microsoft 365.
 
@@ -88,4 +87,4 @@ Nachdem Sie die im vorherigen Abschnitt beschriebenen Voraussetzungen erfüllt h
 
 ## <a name="known-issues"></a>Bekannte Probleme
 
-- Zurzeit wird kein Import von Anlagen unterstützt, die größer als 10 MB sind, aber die Unterstützung größerer Elemente wird zu einem späteren Zeitpunkt zur Verfügung stehen.
+- Zurzeit wird das Importieren von Anlagen oder Elementen, die größer als 10 MB sind, nicht unterstützt. Unterstützung für größere Elemente wird zu einem späteren Zeitpunkt zur Verfügung stehen.

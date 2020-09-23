@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1bdd6770c033abe7a2bf714029b2a4075fada249
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: e279d8e075538582ea282e1c6d1493685a817b2a
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415737"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208125"
 ---
 # <a name="california-consumer-privacy-act-ccpa"></a>California Consumer Privacy Act (CCPA)
 
@@ -68,7 +68,7 @@ Um mit ihrer CCPA-Reise beginnen zu können, sollten Sie sich auf die Ermittlung
 
 **Worin unterscheiden sich DSGVO und CCPA?**
 
-Es gibt viele Unterschiede. Es ist einfacher, sich auf die Gemeinsamkeiten zu konzentrieren, einschließlich:
+Es gibt viele Unterschiede. Es ist einfacher, sich auf die Ähnlichkeiten zu konzentrieren, einschließlich:
 
 - Transparenz/Offenlegungspflichten;
 - Verbraucher-Rechte für den Zugriff, Löschung und Empfang einer Kopie von Daten,
@@ -93,9 +93,9 @@ Das CCPA erfordert unter anderem regulierte Unternehmen, die persönliche Inform
 - CCPA führt elterliche Zustimmungsverpflichtungen im Einklang mit dem Children's Online Privacy Protection Act (COPPA) für Kinder unter 13 Jahren ein.
 - Für Kinder zwischen 13 und 16 Jahren auferlegt CCPA eine neue Verpflichtung, die Zustimmung des Kindes zu erhalten.
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Verwenden von Microsoft Compliancebewertungen zur Einschätzung des Risikos
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Bewerten des Risikos mithilfe von Microsoft Compliance-Manager
 
-[Microsoft Compliancebewertung](compliance-score.md) ist ein Preview-Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), das Ihnen dabei hilft, den Compliance-Status Ihrer Organisation zu bestimmen und Maßnahmen zur Senkung von Risiken zu ergreifen. Nachdem Sie die [Kompatibilitätsbewertung eingerichtet](compliance-score-setup.md)haben, wählen Sie die vorkonfigurierte [CCPA-Vorlage](https://go.microsoft.com/fwlink/?linkid=2118004) aus dem Dropdownmenü **Vorlage** aus, damit Ihre Organisation die Anforderungen für diese Verordnung erfüllt.
+[Microsoft Compliance Manager](compliance-manager.md) ist ein Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) , mit dem Sie die Compliance-Haltung ihrer Organisation besser verstehen und Maßnahmen zur Verringerung von Risiken unterstützen können. Compliance-Manager bietet eine Premium-Vorlage für die Erstellung einer Bewertung für diese Verordnung. Suchen Sie die Vorlage auf der Seite " **Bewertungs Vorlagen** " im Compliance-Manager. Hier erfahren Sie, wie Sie [Assessments im Compliance-Manager erstellen](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressourcen
 

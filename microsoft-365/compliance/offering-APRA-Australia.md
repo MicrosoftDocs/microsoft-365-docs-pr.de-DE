@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: fb964bd6dcf229f362476b68ad87d05053e87f74
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 079fb69eb4d8fd41b9493d8bf992084640f2835a
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417749"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208657"
 ---
 # <a name="australian-prudential-regulation-authority-apra"></a>Australische Aufsichts Regulierungsbehörde (APRA)
 
@@ -87,6 +87,10 @@ Wenn die Cloud-Dienste als "erhöhtes oder extrem inhärentes Risiko" eingestuft
 **Sind Übermittlungen von Daten außerhalb von Australien zulässig?**
 
 Ja. Allgemeine Datenschutzgesetze (die in allen Sektoren gelten, nicht nur für Finanzinstitute) erlauben Transfers außerhalb Australiens unter bestimmten Bedingungen. Microsoft stimmt den vertraglichen Bestimmungen in Übereinstimmung mit den australischen Datenschutzgrundsätzen zu, damit Datenübertragungen außerhalb Australiens bei Verwendung von Microsoft Cloud Services zulässig sind. Viele unserer australischen Financial Services-Kunden profitieren jedoch von den Cloud-Diensten, die von unseren australischen Rechenzentren zur Verfügung gestellt werden, für die wir spezifische vertragliche Verpflichtungen zur Speicherung von Datenkategorien in der australischen Geographie treffen. Diese Verpflichtungen werden in der [Compliance-Checkliste](https://www.microsoft.com/cms/api/am/binary/RE3ez0C)weiter erläutert.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Bewerten des Risikos mithilfe von Microsoft Compliance-Manager
+
+[Microsoft Compliance Manager](compliance-manager.md) ist ein Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) , mit dem Sie die Compliance-Haltung ihrer Organisation besser verstehen und Maßnahmen zur Verringerung von Risiken unterstützen können. Compliance-Manager bietet eine Premium-Vorlage für die Erstellung einer Bewertung für diese Verordnung. Suchen Sie die Vorlage auf der Seite " **Bewertungs Vorlagen** " im Compliance-Manager. Hier erfahren Sie, wie Sie [Assessments im Compliance-Manager erstellen](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressourcen
 

@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen Data Connector zum Importieren und Archivieren von Daten aus dem Bloomberg-Nachrichten e-Mail-Tool in Microsoft 365 einrichten. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren, damit Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten der drittanbieterdaten Ihrer Organisation verwenden können.
-ms.openlocfilehash: b8b144905ad3ff47f54c06985fca9cfef6b70590
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: cc14bd9d76e04fe3e285f63b5dce9dbb1f680794
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358291"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200228"
 ---
-# <a name="set-up-a-connector-to-archive-bloomberg-message-data-preview"></a>Einrichten eines Connectors zum Archivieren von Bloomberg-Nachrichtendaten (Vorschau)
+# <a name="set-up-a-connector-to-archive-bloomberg-message-data"></a>Einrichten eines Connectors zum Archivieren von Bloomberg-Nachrichtendaten
 
 Verwenden Sie einen Daten Konnektor im Microsoft 365 Compliance Center zum Importieren und Archivieren von Finanz Dienstleistungs-e-Mail-Daten aus dem [Bloomberg-Nachrichten](https://www.bloomberg.com/professional/product/collaboration/) Zusammenarbeits Tool. Nachdem Sie einen Connector eingerichtet und konfiguriert haben, stellt er eine Verbindung mit der Bloomberg Secure FTP (SFTP)-Website Ihrer Organisation täglich her und importiert e-Mail-Elemente in Postfächer in Microsoft 365.
 

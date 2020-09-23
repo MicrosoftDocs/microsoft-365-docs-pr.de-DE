@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen Connector zum Importieren und Archivieren von Daten aus dem ICE-Chat-Tool in Microsoft 365 einrichten. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren, damit Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten der drittanbieterdaten Ihrer Organisation verwenden können.
-ms.openlocfilehash: b6b31c0ef9b083aa6432e35029fc14be1a817733
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 94a2d35b9bb8d3a0edae0eebeae53d7dd7b04af2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358227"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196368"
 ---
-# <a name="set-up-a-connector-to-archive-ice-chat-data-preview"></a>Einrichten eines Connectors zum Archivieren von Ice-Chat Daten (Vorschau)
+# <a name="set-up-a-connector-to-archive-ice-chat-data"></a>Einrichten eines Connectors zum Archivieren von Ice-Chat Daten
 
 Verwenden Sie einen systemeigenen Connector im Microsoft 365 Compliance Center zum Importieren und Archivieren von Finanz Dienstleistungs-Chat Daten aus dem ICE Chat-Zusammenarbeits Tool. Nachdem Sie einen Connector eingerichtet und konfiguriert haben, stellt er eine Verbindung mit der ICE Chat Secure FTP (SFTP)-Website Ihrer Organisation einmal täglich her, wandelt den Inhalt von Chat Nachrichten in ein e-Mail-Nachrichtenformat um und importiert diese Elemente anschließend in Postfächer in Microsoft 365.
 
@@ -59,7 +59,7 @@ Der erste Schritt besteht darin, eine Kopie der öffentlichen Schlüssel für Se
 
 1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com) und klicken Sie im linken Navigationsbereich auf **Daten-Konnektoren** .
 
-2. Klicken Sie auf der Seite **Daten Konnektoren (Vorschau)** unter **Ice Chat**auf **Ansicht**.
+2. Klicken Sie auf der Seite **Daten Konnektoren** unter **Ice Chat**auf **Ansicht**.
 
 3. Klicken Sie auf der Seite **Ice Chat** auf **Connector hinzufügen**.
 

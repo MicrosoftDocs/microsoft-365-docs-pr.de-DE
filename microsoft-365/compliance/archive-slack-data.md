@@ -11,18 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Administratoren können einen Connector zum Importieren und Archivieren von Daten aus Globanet slack in Microsoft 365 einrichten. Mit diesem Connector können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren, damit Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten der drittanbieterdaten Ihrer Organisation verwenden können.
-ms.openlocfilehash: 6466beb6115037ff726b1e5fd3350032bceb2230
-ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.openlocfilehash: 532b8a8eb4331d66e1c7522d79bde2b5b6b0a02f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47957034"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196769"
 ---
-# <a name="set-up-a-connector-to-archive-slack-data-preview"></a>Einrichten eines Connectors zum Archivieren von Puffer Daten (Vorschau)
+# <a name="set-up-a-connector-to-archive-slack-data"></a>Einrichten eines Connectors zum Archivieren von Puffer Daten
 
-Verwenden Sie einen Globanet-Connector im Microsoft 365 Compliance Center zum Importieren und Archivieren von drittanbieterdaten aus Social Media-, Instant Messaging-und Dokument Zusammenarbeits Plattformen zu Postfächern in Ihrer Microsoft 365-Organisation. Globanet bietet einen [Puffer Daten-Konnektor](https://globanet.com/slack/) im Microsoft 365 Compliance Center, den Sie für die Erfassung von Elementen aus der Drittanbieter-Datenquelle konfigurieren können (regelmäßig) und dann diese Elemente nach Microsoft 365 importieren. Slack ruft Nachrichten und Dateien von der Slack-API ab und wandelt sie in ein e-Mail-Nachrichtenformat um und importiert Sie dann in Benutzerpostfächer in Microsoft 365.
+Verwenden Sie einen Globanet-Connector im Microsoft 365 Compliance Center zum Importieren und Archivieren von drittanbieterdaten aus Social Media-, Instant Messaging-und Dokument Zusammenarbeits Plattformen zu Postfächern in Ihrer Microsoft 365-Organisation. Globanet stellt einen Puffer Anschluss bereit, der so konfiguriert ist, dass er Elemente aus der Drittanbieter-Datenquelle (regelmäßig) erfasst und diese Elemente dann nach Microsoft 365 importiert. Slack ruft Nachrichten und Dateien von der Slack-API ab und wandelt sie in ein e-Mail-Nachrichtenformat um und importiert dann das Element in Benutzerpostfächer.
 
 Nachdem Puffer Daten in Benutzerpostfächern gespeichert wurden, können Sie Microsoft 365-Compliance-Features wie Beweissicherungsverfahren, eDiscovery, Aufbewahrungsrichtlinien und Aufbewahrungs Bezeichnungen sowie die Kompatibilität der Kommunikation anwenden. Die Verwendung eines Puffer Anschlusses zum Importieren und Archivieren von Daten in Microsoft 365 kann dazu beitragen, dass Ihre Organisation mit behördlichen und behördlichen Richtlinien konform bleibt.
 
@@ -40,7 +39,7 @@ In der folgenden Übersicht wird erläutert, wie Sie einen Connector zum Archivi
 
 4. Der Connector importiert die konvertierten Chatnachrichten Elemente in die Postfächer bestimmter Benutzer, wobei der Wert der *e-Mail* -Eigenschaft und die automatische Benutzerzuordnung, wie in Schritt 3 beschrieben, verwendet werden. Ein neuer Unterordner im Posteingangsordner mit dem Namen **Slack** wird in den Benutzerpostfächern erstellt, und die Chatnachrichten Elemente werden in diesen Ordner importiert. Der Connector verwendet den Wert der *Email* -Eigenschaft. Jede Chatnachricht enthält diese Eigenschaft, die mit der e-Mail-Adresse jedes Teilnehmers der Chatnachricht aufgefüllt wird.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Erstellen Sie ein Globanet-Merge1-Konto für Microsoft-Connectors. Wenden Sie sich dazu an den [Globanet-Kunden Support](https://globanet.com/ms-connectors-contact). Sie müssen sich bei diesem Konto anmelden, wenn Sie den Connector in Schritt 1 erstellen.
 
@@ -92,4 +91,4 @@ Nachdem Sie den Puffer Verbinder erstellt haben, können Sie den Connectorstatus
 
 ## <a name="known-issues"></a>Bekannte Probleme
 
-- Zurzeit wird das Importieren von Anlagen und Elementen, die größer als 10 MB sind, nicht unterstützt. Unterstützung für größere Elemente wird zu einem späteren Zeitpunkt zur Verfügung stehen.
+- Zurzeit wird das Importieren von Anlagen oder Elementen, die größer als 10 MB sind, nicht unterstützt. Unterstützung für größere Elemente wird zu einem späteren Zeitpunkt zur Verfügung stehen.

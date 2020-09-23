@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 8667c625de4c83c98efd8f1cf20f3db57ed0d4c5
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 2ba67f833a7a4ee14b53adf38db786bb344a40bb
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416559"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208851"
 ---
 # <a name="insider-risk-management-cases"></a>Insider Risikomanagement-Fälle
 
@@ -127,6 +127,15 @@ Die Registerkarte**Benutzeraktivität** ist eines der leistungsstärksten Werkze
 4. **Chronologie der Risiko Aktivität**: die vollständige Chronologie aller mit dem Fall verbundenen Risikowarnungen wird aufgeführt, einschließlich aller Details, die in der entsprechenden Warnungs Blase verfügbar sind.
 5. **Case-Aktionen**: Optionen zum Auflösen der Groß-/Kleinschreibung befinden sich auf der Symbolleiste für den Fall Vorgang. Sie können einen Fall lösen, eine e-Mail-Benachrichtigung an den Benutzer senden oder den Fall für eine Daten-oder Benutzer Ermittlung eskalieren.
 
+### <a name="activity-explorer-preview"></a>Aktivitäts-Explorer (Vorschau)
+
+>[!IMPORTANT]
+>Die Registerkarte Aktivitäts-Explorer steht im Bereich Fallverwaltung für Benutzer mit auslösenden Ereignissen zur Verfügung, nachdem dieses Feature in Ihrer Organisation verfügbar ist.
+
+Auf der Registerkarte **Aktivitäts-Explorer** können Risikoanalysten und Ermittler Aktivitätsdetails im Zusammenhang mit Risikowarnungen überprüfen. Im Rahmen der Fall Verwaltungsaktionen müssen beispielsweise Ermittler und Analysten möglicherweise alle mit dem Fall verbundenen Risiko Aktivitäten für weitere Details überprüfen. Mit dem **Aktivitäts-Explorer**können Bearbeiter schnell eine Zeitachse der erkannten riskanten Aktivität überprüfen und alle Risiko Aktivitäten identifizieren und Filtern, die mit Warnungen verbunden sind.
+
+Weitere Informationen zum Aktivitäts-Explorer finden Sie im Artikel zum Thema [Insider Risk Management Alerts](insider-risk-management-alerts.md#activity-explorer-preview) .
+
 ### <a name="content-explorer"></a>Inhalts-Explorer
 
 Auf der Registerkarte **Inhalts-Explorer** können Risikoanalysten und Ermittler Kopien aller einzelnen Dateien und e-Mail-Nachrichten überprüfen, die mit Risikowarnungen verbunden sind. Wenn beispielsweise eine Warnung erstellt wird, wenn ein Benutzer Hunderte von Dateien aus SharePoint Online herunterlädt und die Aktivität eine Richtlinien Warnung auslöst, werden alle heruntergeladenen Dateien für die Warnung erfasst und aus den ursprünglichen Speicherquellen in den Fall Insider Risk Management kopiert.
@@ -196,15 +205,42 @@ So eskalieren Sie einen Fall an eine Benutzer Ermittlung:
 1. Wechseln Sie im [Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu **Insider Risk Management** , und wählen Sie die Registerkarte **Fälle** aus.
 2. Wählen Sie einen Fall aus, und wählen Sie dann auf der Symbolleiste für den Fall Vorgang die Schaltfläche **zur Untersuchung eskalieren aus** .
 3. Geben Sie im Dialogfeld **zur Untersuchung eskalieren** einen Namen für die Untersuchung des neuen Benutzers ein. Geben Sie bei Bedarf Hinweise zu dem Fall ein, und wählen Sie **eskalieren**aus.
+4. Überprüfen Sie die Hinweis Felder, und aktualisieren Sie nach Bedarf. Durch die hier eingegebenen Werte werden die Werte der Vorlage außer Kraft gesetzt.
 5. Wählen Sie **bestätigen** aus, um den Benutzer Ermittlungs Fall zu erstellen, oder klicken Sie auf **Abbrechen** , um das Dialogfeld zu schließen, ohne einen neuen Ermittlungs Fall für Benutzer zu erstellen.
 
 Nachdem der Fall des Insider Risikomanagements an einen neuen Benutzer Ermittlungs Fall eskaliert wurde, können Sie den neuen Fall im **eDiscovery**  >  Microsoft 365 Compliance Center im Bereich eDiscovery**Advanced** überprüfen.
 
-### <a name="share-a-case"></a>Freigeben einer Anfrage
+### <a name="run-automated-tasks-with-power-automate-flows-for-the-case"></a>Ausführen von automatisierten Aufgaben mit Power Automation Flows für den Fall
 
-Wenn Sie einen Insider Risk Management-Fall freigeben, können Prüfer und Besprechungen problemlos mit anderen Compliance-Beteiligten in Ihrer Organisation zusammenarbeiten. Sie können einen Link zu einem Insider Risk Management-Fall schnell für externe Beteiligte aus dem Fallmanagement Bereich freigeben. Für den Zugriff auf den Fall Insider Risk Management aus dem Link müssen Beteiligte in einer der Rollengruppen für Insider Risikomanagement enthalten sein.
+Mit den empfohlenen Power-Automatisierungs Flüssen können Risiko Ermittler und Analysten schnell Aktionen durchführen:
 
-Die folgenden Freigabeoptionen stehen zur Verfügung: 
+- Anfordern von Informationen von HR oder Unternehmen über einen Benutzer in einem Fall mit Insider Risiken
+- Benachrichtigen des Managers, wenn ein Benutzer über eine Insider Risiko Warnung verfügt
+- Hinzufügen von Kalendererinnerungen zur Nachverfolgung bei einem Insider Risikofall
+
+Zum Ausführen, verwalten oder Erstellen von Power Automation Flows für ein Insider Risk Management-Fall:
+
+1. Wählen Sie auf der Symbolleiste für den Fall Vorgang **automatisieren** aus. 
+2. Wählen Sie den auszuführenden Power-Automatisierungs Fluss aus, und wählen Sie **Ablaufsteuerung**aus. 
+3. Klicken Sie nach Abschluss des Ablaufs auf **Fertig**.
+
+Weitere Informationen zu Power Automation Flows für Insider Risk Management finden Sie unter [Erste Schritte mit Einstellungen für das Insider Risikomanagement](insider-risk-management-settings.md#power-automate-flows-preview).
+
+### <a name="view-or-create-a-microsoft-teams-team-for-the-case"></a>Anzeigen oder Erstellen eines Teams von Microsoft Teams für den Fall
+
+Wenn Microsoft Teams-Integration für Insider Risk Management in Einstellungen aktiviert ist, wird ein Microsoft Teams-Team automatisch jedes Mal erstellt, wenn eine Warnung bestätigt wird und ein Fall erstellt wird. Risiko Ermittler und Analysten können Microsoft Teams schnell öffnen und direkt zum Team für einen Fall navigieren, indem Sie in der Symbolleiste für den Fall Aktion die Option **Microsoft Teams-Team anzeigen** auswählen.
+
+Für Fälle, die vor dem Aktivieren der Microsoft-Team Integration geöffnet wurden, können Risiko Ermittler und Analysten ein neues Microsoft Teams-Team für einen Fall erstellen, indem Sie auf der Symbolleiste für den Fall Aktion die Option **Microsoft Teams-Team erstellen** auswählen.
+
+Wenn ein Fall aufgelöst wird, wird das zugehörige Microsoft-Team automatisch archiviert (ausgeblendet und schreibgeschützt).
+
+Weitere Informationen zu Microsoft Teams für das Insider Risikomanagement finden Sie unter [Erste Schritte mit Einstellungen für das Insider Risikomanagement](insider-risk-management-settings.md#microsoft-teams-preview).
+
+### <a name="share-the-case"></a>Freigeben der Groß-/Kleinschreibung
+
+Durch die Freigabe eines Insider Risikomanagement-Falles können Risikoprüfer und Analysten problemlos mit anderen Compliance-Beteiligten in Ihrer Organisation zusammenarbeiten. Sie können einen Link zu einem Insider Risk Management-Fall schnell für externe Beteiligte aus dem Fallmanagement Bereich freigeben. Für den Zugriff auf den Fall Insider Risk Management aus dem Link müssen Beteiligte in einer der Rollengruppen für Insider Risikomanagement enthalten sein.
+
+Die folgenden Freigabeoptionen stehen zur Verfügung:
 
 - **ServiceNow**: Nachdem Sie den Microsoft 365 ServiceNow-Connector für Ihre Microsoft 365-Organisation konfiguriert haben, können Sie problemlos einen Link für den Fall freigeben, einen Vorfall öffnen oder eine Änderung an ihrer ServiceNow-Organisation anfordern. Wenn Sie den Fall für ServiceNow freigeben möchten **Share**, wählen Sie  >  **ServiceNow** aus der Fall Aktion freigeben aus. Die ServiceNow-Integration mit Insider Risk Management-Unterstützung umfasst die folgenden Fall Informationen und Aktionen:
     - **Vorgangsname**: der Name für den neuen ServiceNow-Vorgang.

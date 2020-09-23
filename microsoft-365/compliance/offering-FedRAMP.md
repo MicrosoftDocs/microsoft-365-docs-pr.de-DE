@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c91c71f199ef36c1c9a0da023c7b26d6cb64282e
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 94e83110ef9761f551fd1401884dbba58a8df107
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415779"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208437"
 ---
 # <a name="federal-risk-and-authorization-management-program-fedramp"></a>FedRAMP (Federal Risk and Authorization Management Program)
 
@@ -109,9 +109,9 @@ Eine Übersicht über die Schritte, die Bundesbehörden ausführen müssen, um F
 
 Ja. Sie können die Zertifizierungen von Microsoft Cloud Services als Grundlage für jedes Programm oder jede Initiative verwenden, für die eine ATO-Instanz von einer Bundesregierung benötigt wird. Sie müssen jedoch eigene Berechtigungen für Komponenten außerhalb dieser Dienste erzielen.
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Verwenden von Microsoft Compliancebewertungen zur Einschätzung des Risikos
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Bewerten des Risikos mithilfe von Microsoft Compliance-Manager
 
-[Microsoft Compliancebewertung](compliance-score.md) ist ein Preview-Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), das Ihnen dabei hilft, den Compliance-Status Ihrer Organisation zu bestimmen und Maßnahmen zur Senkung von Risiken zu ergreifen. Nachdem Sie die [Kompatibilitätsbewertung eingerichtet](compliance-score-setup.md)haben, wählen Sie die vorkonfigurierte [FedRAMP-Vorlage](https://go.microsoft.com/fwlink/?linkid=2118102) aus dem Dropdownmenü **Vorlage** aus, damit Ihre Organisation die Anforderungen für diese Verordnung erfüllt.
+[Microsoft Compliance Manager](compliance-manager.md) ist ein Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) , mit dem Sie die Compliance-Haltung ihrer Organisation besser verstehen und Maßnahmen zur Verringerung von Risiken unterstützen können. Compliance-Manager bietet eine Premium-Vorlage für die Erstellung einer Bewertung für diese Verordnung. Suchen Sie die Vorlage auf der Seite " **Bewertungs Vorlagen** " im Compliance-Manager. Hier erfahren Sie, wie Sie [Assessments im Compliance-Manager erstellen](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressourcen
 

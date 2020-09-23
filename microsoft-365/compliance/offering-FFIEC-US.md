@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 34feea4f90ddbb4036bb08c5548696f4fcd649a9
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: ccefeeb9b09ce35ed38587077d19be13d00b31b2
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417319"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208467"
 ---
 # <a name="federal-financial-institutions-examination-council-ffiec"></a>Federal Financial Institutions Examination Council (FFIEC)
 
@@ -47,7 +47,7 @@ Zur weiteren Unterstützung bei der Erfüllung der FFIEC-Anforderungen bieten Mi
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Power BI-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365-Plan bzw. einer -Anwendungssuite enthalten
+- Power BI-Clouddienst entweder als eigenständiger Dienst oder als Bestandteil eines Office 365 Markenplans oder einer Office 365 Suite
 
 ## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
 
@@ -57,11 +57,11 @@ Azure-und Office 365 SOC-Bestätigungs Berichte.
 
 **Kann ich die Microsoft-Konformität mit SOC-Standards verwenden, um die FFIEC-Compliance-Verpflichtungen für meine Institution zu erfüllen?**
 
-Um Sie bei der Erfüllung dieser Verpflichtungen zu unterstützen, stellt Microsoft die Einzelheiten zur Einhaltung unserer SOC-Standards wie oben beschrieben zur Verfügung. Letztlich liegt es jedoch an Ihnen, festzustellen, ob unsere Dienste den spezifischen Gesetzen und Bestimmungen entsprechen, die für Ihre Institution gelten. Das FFIEC rät außerdem davon ab, dass Benutzer von Überwachungsberichten oder-Überprüfungen nicht allein auf die im Bericht enthaltenen Informationen Vertrauen sollten, um die interne Kontrollumgebung des TSP zu überprüfen. Sie sollten zusätzliche Überprüfungs-und Überwachungsverfahren verwenden, die in der [Broschüre "Outsourcing Technology](https://ithandbook.ffiec.gov/it-booklets/outsourcing-technology-services.aspx) " des FFIEC-IT-Prüfungs Handbuchs näher erläutert werden. "
+Um Sie bei der Erfüllung dieser Verpflichtungen zu unterstützen, stellt Microsoft die Einzelheiten zur Einhaltung unserer SOC-Standards wie oben beschrieben zur Verfügung. Letztlich liegt es jedoch an Ihnen, festzustellen, ob unsere Dienste den spezifischen Gesetzen und Bestimmungen entsprechen, die für Ihre Institution gelten. Das FFIEC rät außerdem dazu, dass Benutzer von Überwachungsberichten oder-Überprüfungen nicht allein auf die im Bericht enthaltenen Informationen Vertrauen sollten, um die interne Kontrollumgebung des TSP zu überprüfen. Sie sollten zusätzliche Überprüfungs-und Überwachungsverfahren verwenden, die in der [Broschüre "Outsourcing Technology](https://ithandbook.ffiec.gov/it-booklets/outsourcing-technology-services.aspx) " des FFIEC-IT-Prüfungs Handbuchs ausführlicher erläutert werden.
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Verwenden von Microsoft Compliancebewertungen zur Einschätzung des Risikos
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Bewerten des Risikos mithilfe von Microsoft Compliance-Manager
 
-[Microsoft Compliancebewertung](compliance-score.md) ist ein Preview-Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), das Ihnen dabei hilft, den Compliance-Status Ihrer Organisation zu bestimmen und Maßnahmen zur Senkung von Risiken zu ergreifen. Nachdem Sie die [Kompatibilitätsbewertung eingerichtet](compliance-score-setup.md)haben, wählen Sie im Dropdownmenü **Vorlage** die Vorlage vorkonfigurierte [FFIEC Office 365 Vorlage](https://go.microsoft.com/fwlink/?linkid=2117912) und [FFIEC InTune](https://go.microsoft.com/fwlink/?linkid=2118101) aus, damit Ihre Organisation die Anforderungen für diese Verordnung erfüllt.
+[Microsoft Compliance Manager](compliance-manager.md) ist ein Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) , mit dem Sie die Compliance-Haltung ihrer Organisation besser verstehen und Maßnahmen zur Verringerung von Risiken unterstützen können. Compliance-Manager bietet eine Premium-Vorlage für die Erstellung einer Bewertung für diese Verordnung. Suchen Sie die Vorlage auf der Seite " **Bewertungs Vorlagen** " im Compliance-Manager. Hier erfahren Sie, wie Sie [Assessments im Compliance-Manager erstellen](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressourcen
 

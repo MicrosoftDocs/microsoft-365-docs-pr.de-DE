@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Administratoren können einen Connector zum Importieren und Archivieren von Daten aus Globanet-Zoom Besprechungen in Microsoft 365 einrichten. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren, damit Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten der drittanbieterdaten Ihrer Organisation verwenden können.
-ms.openlocfilehash: c7052e7f51108cac93ad8d87402a07acd12df28a
-ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.openlocfilehash: a94d0a776af05b609816d3fdbfede869018fa30a
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47956232"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196358"
 ---
-# <a name="set-up-a-connector-to-archive-zoom-meetings-data-preview"></a>Einrichten eines Connectors zum Archivieren von Zoom Besprechungsdaten (Vorschau)
+# <a name="set-up-a-connector-to-archive-zoom-meetings-data"></a>Einrichten eines Connectors zum Archivieren von Zoom Besprechungsdaten
 
 Verwenden Sie einen Globanet-Connector im Microsoft 365 Compliance Center, um Daten aus Zoom Besprechungen in Benutzerpostfächer in Ihrer Microsoft 365-Organisation zu importieren und zu archivieren. Globanet bietet einen [Zoom-Besprechungs](https://globanet.com/zoom/) -Konnektor, der so konfiguriert ist, dass er Elemente aus der Drittanbieter-Datenquelle (regelmäßig) erfasst und diese Elemente nach Microsoft 365 importiert. Der Connector wandelt den Inhalt der Besprechungen (einschließlich Chats, aufgezeichneten Dateien und Metadaten) aus dem Konto "Zoom Besprechungen" in ein e-Mail-Nachrichtenformat um und importiert diese Elemente dann in Benutzerpostfächer in Microsoft 365.
 
@@ -40,7 +39,7 @@ In der folgenden Übersicht wird erläutert, wie Sie einen Connector zum Archivi
 
 4. Der Connector importiert die konvertierten Besprechungselemente in die Postfächer bestimmter Benutzer, wobei der Wert der *e-Mail* -Eigenschaft und die automatische Benutzerzuordnung, wie in Schritt 3 beschrieben, verwendet werden. Ein neuer Unterordner im Ordner "Posteingang" mit dem Namen " **Zoom Meetings** " wird in Benutzerpostfächern erstellt, und die Besprechungselemente werden in diesen Ordner importiert. Der Connector verwendet den Wert der *Email* -Eigenschaft. Jedes Besprechungselement enthält diese Eigenschaft, die mit der e-Mail-Adresse jedes Teilnehmers der Besprechung aufgefüllt wird.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Erstellen Sie ein Globanet-Merge1-Konto für Microsoft-Connectors. Wenden Sie sich dazu an den [Globanet-Kunden Support](https://globanet.com/ms-connectors-contact). Sie müssen sich bei diesem Konto anmelden, wenn Sie den Connector in Schritt 1 erstellen.
 
@@ -102,6 +101,6 @@ Nachdem Sie den Zoom Besprechungen-Konnektor erstellt haben, können Sie den Con
 
 ## <a name="known-issues"></a>Bekannte Probleme
 
-- Zurzeit wird kein Import von Anlagen unterstützt, die größer als 10 MB sind, aber die Unterstützung größerer Elemente wird zu einem späteren Zeitpunkt zur Verfügung stehen.
+- Zurzeit wird das Importieren von Anlagen oder Elementen, die größer als 10 MB sind, nicht unterstützt. Unterstützung für größere Elemente wird zu einem späteren Zeitpunkt zur Verfügung stehen.
 
 - Damit der Zoom-Besprechungs-Konnektor funktioniert, müssen Sie Aufzeichnungen beim Einrichten von Zoom Besprechungen aktivieren.

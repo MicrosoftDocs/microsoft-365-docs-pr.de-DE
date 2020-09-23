@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: bb1452bc0f33b56cd9fee6bb4846a8e623c0b96a
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 37da9f692b3556bf887d742ece3b99cdc1da60a2
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416849"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208407"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Health Insurance Portability and Accountability (HIPAA) & HITECH Acts
 
@@ -102,9 +102,9 @@ Um Kunden bei dieser Aufgabe zu unterstützen, hat Microsoft die folgenden Leitf
 - [Praktischer Leitfaden zum Entwerfen von sicheren Gesundheitslösungen mit Microsoft Azure](https://aka.ms/azureindustrysecurity) hilft Ihnen, besser zu verstehen, was für die erfolgreiche, sichere Einführung eines Clouddiensts nötig ist.
 - [Die Behandlung der HIPAA-Sicherheits- und Datenschutzanforderungen in der Microsoft-Cloud](https://smb.blob.core.windows.net/smbproduction/Content/Microsoft_Cloud_Healthcare_HIPAA_Security_Privacy.pdf) bietet einen kurzen Überblick über die Vorschriften. Außerdem wird eine detaillierte Analyse der Funktionsweise von Cloud-Diensten von Microsoft mit Methoden erstellt, die diesen Anforderungen entsprechen, sowie Anleitungen zum Erstellen von Compliance-fähigen Lösungen.
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Verwenden von Microsoft Compliancebewertungen zur Einschätzung des Risikos
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Bewerten des Risikos mithilfe von Microsoft Compliance-Manager
 
-[Microsoft Compliancebewertung](compliance-score.md) ist ein Preview-Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), das Ihnen dabei hilft, den Compliance-Status Ihrer Organisation zu bestimmen und Maßnahmen zur Senkung von Risiken zu ergreifen. Verwenden Sie nach dem [Einrichten der Compliancebewertung](compliance-score-setup.md) die vorkonfigurierte [HIPAA Office 365-Vorlage](https://go.microsoft.com/fwlink/?linkid=2118005) und die [HIPAA Intune-Vorlage](https://go.microsoft.com/fwlink/?linkid=2118006) aus dem Dropdownmenü **Vorlage**, um Ihrer Organisation zu helfen, die Anforderungen dieser Verordnung zu erfüllen.
+[Microsoft Compliance Manager](compliance-manager.md) ist ein Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) , mit dem Sie die Compliance-Haltung ihrer Organisation besser verstehen und Maßnahmen zur Verringerung von Risiken unterstützen können. Compliance-Manager bietet eine Premium-Vorlage für die Erstellung einer Bewertung für diese Verordnung. Suchen Sie die Vorlage auf der Seite " **Bewertungs Vorlagen** " im Compliance-Manager. Hier erfahren Sie, wie Sie [Assessments im Compliance-Manager erstellen](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressourcen
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 90670c8102afe0dcf0814726bde36bd422e802a9
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: be40c207f5f09c97d1a0a4da5cf56e2caf2c51b7
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417087"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208167"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>National Institute of Standards and Technology (NIST) Cyber Framework (CSF)
 
@@ -97,9 +97,9 @@ Die in-Scope-Dienste der NIST CSF-Zertifizierung sind Exchange Online Archivieru
 
 Microsoft bietet die umfassendsten Angebote im Vergleich zu anderen Anbietern von Cloud-Diensten. Um mit unseren umfassenden Compliance-angeboten in verschiedenen Regionen und Branchen Schritt halten zu können, schließen wir Services im Rahmen unserer Assurance-Bemühungen basierend auf der Marktnachfrage, dem Kundenfeedback und dem Produktlebenszyklus ein. Wenn ein Dienst nicht im aktuellen Bereich eines bestimmten Compliance-Angebots enthalten ist, ist Ihre Organisation dafür verantwortlich, die Risiken anhand Ihrer Compliance-Verpflichtungen zu bewerten und die Art und Weise zu bestimmen, wie Sie Daten in diesem Dienst verarbeiten. Wir sammeln kontinuierlich Feedback von Kunden und arbeiten mit Regulatoren und Auditoren zusammen, um unsere Compliance-Abdeckung so zu erweitern, dass Ihre Sicherheits-und Compliance-Anforderungen erfüllt werden.
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Verwenden von Microsoft Compliancebewertungen zur Einschätzung des Risikos
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Bewerten des Risikos mithilfe von Microsoft Compliance-Manager
 
-[Microsoft Compliancebewertung](compliance-score.md) ist ein Preview-Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), das Ihnen dabei hilft, den Compliance-Status Ihrer Organisation zu bestimmen und Maßnahmen zur Senkung von Risiken zu ergreifen. Nachdem Sie die [Kompatibilitätsbewertung eingerichtet](compliance-score-setup.md)haben, wählen Sie die vorkonfigurierte [NIST-CSF-Vorlage](https://go.microsoft.com/fwlink/?linkid=2117917) aus dem Dropdownmenü **Vorlage** aus, damit Ihre Organisation die Anforderungen für diese Verordnung erfüllt.
+[Microsoft Compliance Manager](compliance-manager.md) ist ein Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) , mit dem Sie die Compliance-Haltung ihrer Organisation besser verstehen und Maßnahmen zur Verringerung von Risiken unterstützen können. Compliance-Manager bietet eine Premium-Vorlage für die Erstellung einer Bewertung für diese Verordnung. Suchen Sie die Vorlage auf der Seite " **Bewertungs Vorlagen** " im Compliance-Manager. Hier erfahren Sie, wie Sie [Assessments im Compliance-Manager erstellen](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressourcen
 

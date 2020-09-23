@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Administratoren können einen TeleMessage-Konnektor einrichten, um SMS-und MMS-Daten aus dem O2-Mobilfunknetz in Microsoft 365 zu importieren und zu archivieren. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren, damit Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten der drittanbieterdaten Ihrer Organisation verwenden können.
-ms.openlocfilehash: afcb7708cacd2ec04f79cdb03ce3d799232014a7
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 39a56e58bd9259b31138a4acf58a5ea5f432bc15
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47362024"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196300"
 ---
-# <a name="set-up-a-connector-to-archive-o2-network-data-preview"></a>Einrichten eines Connectors zum Archivieren von O2-Netzwerkdaten (Vorschau)
+# <a name="set-up-a-connector-to-archive-o2-network-data"></a>Einrichten eines Connectors zum Archivieren von O2-Netzwerkdaten
 
 Verwenden Sie einen TeleMessage-Konnektor im Microsoft 365 Compliance Center, um SMS-Nachrichten (Short Messaging Service) und Sprachanrufe aus dem O2-Mobilfunknetz zu importieren und zu archivieren. Nachdem Sie einen Connector eingerichtet und konfiguriert haben, stellt er einmal täglich eine Verbindung mit dem O2-Netzwerk Ihrer Organisation her und importiert SMS-und Sprachanrufe in Postfächer in Microsoft 365.
 
@@ -88,4 +87,4 @@ Nachdem Sie die im vorherigen Abschnitt beschriebenen Voraussetzungen erfüllt h
 
 ## <a name="known-issues"></a>Bekannte Probleme
 
-- Zurzeit wird kein Import von Anlagen unterstützt, die größer als 10 MB sind, aber die Unterstützung größerer Elemente wird zu einem späteren Zeitpunkt zur Verfügung stehen.
+- Zurzeit wird das Importieren von Anlagen oder Elementen, die größer als 10 MB sind, nicht unterstützt. Unterstützung für größere Elemente wird zu einem späteren Zeitpunkt zur Verfügung stehen.

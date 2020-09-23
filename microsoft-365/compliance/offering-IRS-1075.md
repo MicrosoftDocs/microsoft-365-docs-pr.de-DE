@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 83c66bfce39698cfea7833433d337fe7411e0ebe
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: bf1297fb955a2f66de0d6e5677668952c8808c5c
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416345"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208377"
 ---
 # <a name="us-internal-revenue-service-publication-1075"></a>US Internal Revenue Service Publication 1075
 
@@ -75,6 +75,10 @@ Ja, wenn Ihre Organisation die Zulassungsvoraussetzungen für Azure Government u
 **Kann ich die Azure-oder Office 365 Public Cloud-Umgebungen verwenden und trotzdem mit IRS 1075 kompatibel sein?**
 
 Nein. Die einzigen Umgebungen, in denen FTI gespeichert und verarbeitet werden kann, sind Azure Government oder Office 365 U.S. Government. Regierungskunden müssen die Voraussetzungen für die Verwendung dieser Umgebungen erfüllen.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Bewerten des Risikos mithilfe von Microsoft Compliance-Manager
+
+[Microsoft Compliance Manager](compliance-manager.md) ist ein Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) , mit dem Sie die Compliance-Haltung ihrer Organisation besser verstehen und Maßnahmen zur Verringerung von Risiken unterstützen können. Compliance-Manager bietet eine Premium-Vorlage für die Erstellung einer Bewertung für diese Verordnung. Suchen Sie die Vorlage auf der Seite " **Bewertungs Vorlagen** " im Compliance-Manager. Hier erfahren Sie, wie Sie [Assessments im Compliance-Manager erstellen](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressourcen
 

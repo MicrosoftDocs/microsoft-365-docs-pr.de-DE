@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5ee3e77624650f0a5c1b913081620695cdc13142
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 54d188aa84cd6bc2614489dbbc3a969d30b40342
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417037"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208417"
 ---
 # <a name="health-information-trust-alliance-hitrust-common-security-framework-csf"></a>Integritätsinformationen Trust Alliance (HITRUST) Common Security Framework (CSF)
 
@@ -102,6 +102,10 @@ Ja, Sie finden Empfohlene Kundenaktionen in Compliance Score, Cross-Microsoft-Cl
 **Wie kann ich mit Microsoft kommunizieren?**
 
 Melden Sie sich beim® Tool HITRUST MyCSF an, und füllen Sie Ihre Bewertung für Ihre auf Microsoft Azure gehostete Lösung vorab mit den Steuerelementen vollständig geerbt oder Shared Responsibility für Azure aus. Ein Microsoft HITRUST-Administrator schließt dann seinen Teil der Bewertung mithilfe seines Kontos im MyCSF-®-Tool ab.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Bewerten des Risikos mithilfe von Microsoft Compliance-Manager
+
+[Microsoft Compliance Manager](compliance-manager.md) ist ein Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) , mit dem Sie die Compliance-Haltung ihrer Organisation besser verstehen und Maßnahmen zur Verringerung von Risiken unterstützen können. Compliance-Manager bietet eine Premium-Vorlage für die Erstellung einer Bewertung für diese Verordnung. Suchen Sie die Vorlage auf der Seite " **Bewertungs Vorlagen** " im Compliance-Manager. Hier erfahren Sie, wie Sie [Assessments im Compliance-Manager erstellen](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressourcen
 

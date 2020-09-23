@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: 'Erfahren Sie mehr über den Microsoft 365-Lösungskatalog: was er enthält, wie Sie ihn erhalten, die nächsten Schritte und mehr.'
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ff445711dfd57ec69305c3f8cc7d01e05a66a1cc
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: a560193bf7ee2911b90332f84eef2d60027cbbf9
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132169"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198358"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Microsoft 365-Lösungskatalog
 
@@ -93,7 +93,7 @@ Wenn Sie eine vorhandene Compliance-Lösung suchen und diese im Microsoft 365 Co
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- **Überprüfen Sie Ihre Microsoft-Compliancebewertung**. Dabei handelt es sich um einen personalisierten, risikobasierten Score, der Ihnen dabei hilft, den Compliance-Status Ihrer Organisation im Hinblick auf die wichtigsten Standards und Bestimmungen zu bestimmen. Sie enthält empfohlene Maßnahmen, die Sie ergreifen können, um den allgemeinen Compliance-Status zu verbessern, und bietet Workflowfunktionen, die Ihnen helfen, diese Maßnahmen effizient umzusetzen. Weitere Informationen hierzu finden Sie unter [Compliancebewertung (Vorschau)](compliance-score.md).
+- **Besuchen Sie den Microsoft Compliance-Manager**, der Ihnen hilft, den Zustand Ihrer Organisation bezüglich der Einhaltung wichtiger Standards und Richtlinien zu verstehen. Sie enthält empfohlene Maßnahmen, die Sie ergreifen können, um den allgemeinen Compliance-Status zu verbessern, und bietet Workflowfunktionen, die Ihnen helfen, diese Maßnahmen effizient umzusetzen. Weitere Informationen finden Sie unter [Compliance-Manager](compliance-manager.md).
 
 - **Konfigurieren Sie Richtlinien für Insider-Risiken** zur Minimierung interner Risiken und zum Erkennen, Untersuchen und Reagieren auf riskante Aktivitäten in Ihrer Organisation. Weitere Informationen finden Sie unter [Insider-Risikomanagement](insider-risk-management.md).
 

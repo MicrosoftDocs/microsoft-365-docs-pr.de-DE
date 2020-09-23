@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Erfahren Sie, wie Sie auf das Microsoft-Dienst Vertrauensstellungs Portal zugreifen und es verwenden, um Sicherheits-, Datenschutz-und Compliance-Verfahren zu unterstützen.
-ms.openlocfilehash: 40c80c0256f730784373a0ff96474d02dbf175c5
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: a3a46884a41be31779b82a74bc2b6750dea697c5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547473"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197762"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Erste Schritte mit dem Microsoft Service Trust-Portal
 
@@ -35,7 +35,7 @@ Das Dienst Vertrauensstellungs Portal enthält Details zur Implementierung von S
 
 Vorhandene Kunden können auf das Dienst Vertrauensstellungs Portal unter <https://aka.ms/STP> mit einem der folgenden Online Abonnements (Testversion oder bezahlt) zugreifen:
 
-- Microsoft 365
+- Microsoft 365
 - Dynamics 365
 - Azure
 
@@ -68,11 +68,8 @@ Der Link **Service Trust Portal** zeigt die Startseite an. Es bietet eine schnel
 
 ### <a name="compliance-manager"></a>Compliance-Manager
 
-Compliance-Manager ist ein Workflow basiertes Risiko Bewertungstool, mit dem Sie die behördlichen Compliance-Aktivitäten Ihrer Organisation im Zusammenhang mit Microsoft-Cloud-Diensten wie Microsoft 365, Dynamics 365 und Azure nachverfolgen, zuweisen und überprüfen können. Verwenden Sie den Compliance-Manager, um die Einhaltung gesetzlicher Vorschriften innerhalb des Modells der Cloud mit gemeinsamer Verantwortung zu verwalten. Je nach der Version von Compliance-Manager, die Sie verwenden möchten, lesen Sie die folgenden Artikel, um weitere Informationen zu erhalten:
-
-- [Microsoft Compliance-Manager (klassisch)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
-
-- [Microsoft Compliance-Manager (Vorschau)](compliance-manager-overview.md)
+> [!IMPORTANT]
+> Compliance-Manager wurde vom Dienst Vertrauensstellungs Portal an den neuen Speicherort im [Microsoft 365 Compliance Center](https://compliance.microsoft.com/)verschoben. Alle Kundendaten wurden an den neuen Standort verschoben, sodass Sie den Compliance-Manager ohne Unterbrechung weiter verwenden können. In der [Compliance-Manager-Dokumentation](compliance-manager.md) finden Sie Informationen zum Setup und zu neuen Features. Obwohl die klassische Version von Compliance-Manager im Dienst Vertrauensstellungs Portal bleibt, werden alle Benutzer aufgefordert, den Compliance-Manager im Microsoft 365 Compliance Center zu verwenden.
 
 ### <a name="trust-documents"></a>Vertrauensstellungsdokumente
 
@@ -110,15 +107,9 @@ Mit diesem neuen Feature können Sie Dokumente speichern (oder *anheften*), soda
 
 Wechseln Sie zu **Weitere > Administrator** , um auf administrative Funktionen zuzugreifen, die nur für das globale Administratorkonto verfügbar sind. Diese Option ist nur sichtbar, wenn Sie als globaler Administrator angemeldet sind. Im Pulldown-Menü **Admin** gibt es zwei Optionen:
 
-- **Einstellungen:** Auf dieser Seite können Sie dem Compliance-Manager rollenbasierten Zugriff (als *Benutzerrollen*bezeichnet) zuweisen.  Weitere Informationen finden Sie unter:
+- **Einstellungen:** Auf dieser Seite können Sie Benutzerrollen für Compliance-Manager (klassisch) zuweisen.
 
-  - [Berechtigungen im Compliance-Manager (klassisch)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#permissions-and-role-based-access-control)
-
-  - [Berechtigungen im Compliance-Manager (Vorschau)](compliance-manager-overview.md#permissions)
-
-  Sie können auch konfigurieren, ob Aktionen im Compliance-Manager basierend auf dem Status der gleichen Aktion in "Secure Score" aktualisiert werden. Diese Funktion wird nur unterstützt, wenn Sie die neueste Version von Compliance-Manager verwenden. Weitere Informationen finden Sie unter [Controlling Automatic Secure Score Updates](working-with-compliance-manager.md#controlling-automatic-secure-score-updates).
-
-- **Datenschutzeinstellungen für den Benutzer:** Auf dieser Seite können Sie einen Bericht exportieren, der Aktionselement Zuweisungen im Compliance-Manager für einen bestimmten Benutzer enthält. Sie können auch alle Aktionselemente einem anderen Benutzer zuweisen und das zugewiesene Aktionselement aus dem angegebenen Benutzer entfernen. Weitere Informationen finden Sie unter [Datenschutzeinstellungen](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#user-privacy-settings)für den Benutzer.
+- **Datenschutzeinstellungen für den Benutzer:** Auf dieser Seite können Sie einen Bericht exportieren, der Aktionselement Zuweisungen in Compliance-Manager (klassisch) für einen bestimmten Benutzer enthält. Sie können auch alle Aktionselemente einem anderen Benutzer zuweisen und das zugewiesene Aktionselement aus dem angegebenen Benutzer entfernen.
 
 ### <a name="search"></a>Suche
 
@@ -126,9 +117,9 @@ Klicken Sie auf das Lupensymbol in der oberen rechten Ecke der Seite Vertrauens 
 
 ![Service Trust Portal – Suchen in Dokumenten mit angewendetem Filter](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
 
-Standardmäßig gibt die Th-Suche Dokument Ergebnisse zurück. Sie können die Ergebnisse mithilfe der Dropdownlisten filtern, um die Liste der angezeigten Dokumente zu verfeinern. Sie können mehrere Filter verwenden, um die Liste der Dokumente einzugrenzen. Filter umfassen die spezifischen Cloud-Dienste, Kategorien von Compliance-oder Sicherheitsmethoden, Regionen und Branchen. Klicken Sie auf den Link Dokumentname, um das Dokument herunterzuladen.
+Standardmäßig gibt die Suche die Dokument Ergebnisse zurück. Sie können die Ergebnisse mithilfe der Dropdownlisten filtern, um die Liste der angezeigten Dokumente zu verfeinern. Sie können mehrere Filter verwenden, um die Liste der Dokumente einzugrenzen. Filter umfassen die spezifischen Cloud-Dienste, Kategorien von Compliance-oder Sicherheitsmethoden, Regionen und Branchen. Klicken Sie auf den Link Dokumentname, um das Dokument herunterzuladen.
 
-Zum Auflisten von Steuerelementen aus Bewertungen im Compliance-Manager, die Ihre Suchbegriffe betreffen, klicken Sie auf **Compliance-Manager**. In den Suchergebnissen wird das Datum, an dem die Bewertung erstellt wurde, der Name der Bewertungs Gruppierung, der entsprechende Microsoft-clouddienst und die Angabe, ob das Steuerelement von Microsoft oder von Kunden verwaltet wird, angezeigt. Klicken Sie auf den Namen des Steuerelements, um das Steuerelement im Kompatibilitäts-Manager im Assessment anzuzeigen.
+Klicken Sie auf **Compliance-Manager**, um Steuerelemente aus Assessments im Compliance-Manager (klassisch) aufzulisten, die Ihre Suchbegriffe betreffen. In den Suchergebnissen wird das Datum, an dem die Bewertung erstellt wurde, der Name der Bewertungs Gruppierung, der entsprechende Microsoft-clouddienst und die Angabe, ob das Steuerelement von Microsoft oder von Kunden verwaltet wird, angezeigt. Klicken Sie auf den Namen des Steuerelements, um das Steuerelement im Assessment im Compliance-Manager (klassisch) anzuzeigen.
 
 ![Service Trust Portal – Suchen in Compliance-Manager-Steuerelementen](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
 

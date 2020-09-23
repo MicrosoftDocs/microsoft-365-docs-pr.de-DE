@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9a5eb61d6009dd5a7ab2f66eb3ef712196368010
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 224221950104b5dee6a6e8f179db34ee6fad014e
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416729"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208771"
 ---
 # <a name="insider-risk-management-users-dashboard"></a>Benutzerdashboard für das Insider Risikomanagement
 
@@ -45,7 +45,7 @@ Das **benutzerdashboard** zeigt automatisch alle Benutzer mit auslösenden Indik
 
 Das **benutzerdashboard** ermöglicht das vorübergehende Hinzufügen von Benutzern zu einer vorhandenen Insider Risiko-Verwaltungsrichtlinie nach einem ungewöhnlichen Ereignis außerhalb des Insider Risikomanagement-Workflows. Das vorübergehende Hinzufügen von Benutzern ist auch eine Möglichkeit zum Hinzufügen von Benutzern zu einer Richtlinie für das Insider Risikomanagement zum Testen der Richtlinie, selbst wenn kein erforderlicher Connector konfiguriert ist.
 
-Wenn ein Benutzer einer Richtlinie manuell hinzugefügt wird, werden die Benutzeraktivitäten für die vorhergehenden 90 Tage ausgewertet und zur Zeitachse der **Benutzeraktivität** hinzugefügt. Beispiel: ein Benutzer, der sich derzeit nicht in einer Insider Risiko Richtlinie befindet und der Benutzer über Datenverlust Aktivitäten verfügt, die der Rechtsabteilung in Ihrer Organisation gemeldet wurden. Die Rechtsabteilung empfiehlt, dass Sie neue kurzfristige Überwachungsanforderungen für den Benutzer konfigurieren. Sie können den Benutzer vorübergehend Ihrer *Datenverlust* Richtlinie für einen bestimmten Zeitraum (Aktivierungsfenster) zuweisen. Alle Benutzer, die vorübergehend hinzugefügt werden, werden im **benutzerdashboard** angezeigt, da für die Auslöse Indikator Anforderungen verzichtet wird.
+Wenn ein Benutzer einer Richtlinie manuell hinzugefügt wird, werden die Benutzeraktivitäten für die vorhergehenden 90 Tage ausgewertet und zur Zeitachse der **Benutzeraktivität** hinzugefügt. Beispielsweise haben Sie einen Benutzer, der sich derzeit nicht in einer Insider Risiko Richtlinie befindet, und der Benutzer hat Datenverlust Aktivitäten an die Rechtsabteilung in Ihrer Organisation gemeldet. Die Rechtsabteilung empfiehlt, dass Sie neue kurzfristige Überwachungsanforderungen für den Benutzer konfigurieren. Sie können den Benutzer vorübergehend Ihrer *Datenverlust* Richtlinie für einen bestimmten Zeitraum (Aktivierungsfenster) zuweisen. Alle Benutzer, die vorübergehend hinzugefügt werden, werden im **benutzerdashboard** angezeigt, da für die Auslöse Indikator Anforderungen verzichtet wird.
 
 >[!NOTE]
 >Es kann mehrere Stunden dauern, bis neue manuell hinzugefügte Benutzer im **Dashboard Benutzer**angezeigt werden. Aktivitäten für die letzten 90 Tage für diese Benutzer können bis zu 24 Stunden dauern, bis Sie angezeigt werden. Um Aktivitäten für manuell hinzugefügte Benutzer anzuzeigen, wählen Sie den Benutzer im **Dashboard Benutzer** aus, und öffnen Sie die Registerkarte **Benutzeraktivität** im Detailbereich.
@@ -104,3 +104,17 @@ Führen Sie die folgenden Schritte aus, um einen Benutzer zu einer vorhandenen I
 
 >[!NOTE]
 >Es kann mehrere Stunden dauern, bis neue manuell hinzugefügte Benutzer im **Dashboard Benutzer**angezeigt werden. Aktivitäten für die letzten 90 Tage für diese Benutzer können bis zu 24 Stunden dauern, bis Sie angezeigt werden. Um Aktivitäten für manuell hinzugefügte Benutzer anzuzeigen, wählen Sie den Benutzer im **Dashboard Benutzer** aus, und öffnen Sie die Registerkarte **Benutzeraktivität** im Detailbereich.
+
+## <a name="run-automated-tasks-with-power-automate-flows-for-a-user"></a>Ausführen von automatisierten Aufgaben mit Power Automation Flows für einen Benutzer
+
+Mit den empfohlenen Power-Automatisierungs Flüssen können Risiko Ermittler und Analysten schnell Aktionen durchführen:
+
+- Benachrichtigen der Benutzer, wenn Sie einer Insider Risiko Richtlinie hinzugefügt werden
+
+So können Sie Power Automation Flows für einen Insider Risk Management-Benutzer ausführen, verwalten oder erstellen:
+
+1. Wählen Sie auf der Symbolleiste für Benutzeraktionen **automatisieren** aus.
+2. Wählen Sie den auszuführenden Power-Automatisierungs Fluss aus, und wählen Sie **Ablaufsteuerung**aus.
+3. Klicken Sie nach Abschluss des Ablaufs auf **Fertig**.
+
+Weitere Informationen zu Power Automation Flows für Insider Risk Management finden Sie unter [Erste Schritte mit Einstellungen für das Insider Risikomanagement](insider-risk-management-settings.md#power-automate-flows-preview).

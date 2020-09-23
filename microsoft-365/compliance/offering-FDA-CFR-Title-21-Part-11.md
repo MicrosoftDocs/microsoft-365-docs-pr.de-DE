@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: fa93c78d240c243911e21e687ef5d02c29b714b2
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 59e11a5e0142647003ea4b0e9f1876ebedb37d00
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417339"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208447"
 ---
 # <a name="food-and-drug-administration-cfr-title-21-part-11"></a>Food and Drug Administration CFR Title 21 Part 11
 
@@ -71,7 +71,7 @@ Mithilfe der formellen Überprüfungen, die von Drittanbietern für SOC 1 Typ 2,
 
 Von Microsoft implementierte überwachte Steuerelemente tragen zur Sicherstellung der Vertraulichkeit, Integrität und Verfügbarkeit von Daten bei und entsprechen den geltenden regulatorischen Anforderungen in Titel 21 Teil 11, die als Aufgabe von Microsoft festgelegt wurden. In den Qualifizierungs Richtlinien für Azure und Office 365 wird detailliert beschrieben, wie die Microsoft-Überwachungssteuerelemente diesen Anforderungen entsprechen.
 
-**Wie kann ich Kopien der Berichte des Prüfers erhalten?**
+**Wie kann ich Kopien der Berichte des Auditors erhalten?**
 
 Das [Vertrauensstellungsportal](https://aka.ms/stphelp) stellt unabhängig geprüfte Complianceberichte zur Verfügung. Sie können das Portal verwenden, um Überwachungsberichte anzufordern, damit ihre Prüfer die Cloud-Dienst Ergebnisse von Microsoft mit ihren eigenen rechtlichen und behördlichen Anforderungen vergleichen können.
 
@@ -79,9 +79,13 @@ Das [Vertrauensstellungsportal](https://aka.ms/stphelp) stellt unabhängig gepr�
 
 Ja. Die unabhängigen Konformitätsberichte von Drittanbietern der Standards IEC/ISO 27001, ISO/IEC 27018, SOC 1 und SOC 2 Zeugen von der Effektivität von Microsoft-Steuerelementen. Microsoft Enterprise Cloud-Kunden können die in diesen verwandten Berichten beschriebenen überwachten Steuerelemente als Teil ihrer eigenen CFR Title 21 Part 11 Risk Analysis and Qualification Bemühungen verwenden. Kunden, die unter Einhaltung der FDA-Richtlinie Anwendungen erstellen und bereitstellen, sind dafür verantwortlich, dass Ihre Anwendungen FDA-Anforderungen erfüllen.
 
-**Was sind die Aufgaben von Microsoft für die Einhaltung dieses Standards?**
+**Welche Pflichten hat Microsoft im Hinblick auf die Wahrung der Compliance mit diesem Standard?**
 
 Microsoft stellt sicher, dass die Enterprise Cloud-Dienste die in den Regeln für [Online Dienste](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31) und den anwendbaren Vereinbarungen zum Service Level (SLAs) definierten Bedingungen erfüllen. Diese bestimmen unsere Verantwortung für die Implementierung und Verwaltung von Steuerelementen, die zur Sicherung und Überwachung des Systems geeignet sind.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Bewerten des Risikos mithilfe von Microsoft Compliance-Manager
+
+[Microsoft Compliance Manager](compliance-manager.md) ist ein Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) , mit dem Sie die Compliance-Haltung ihrer Organisation besser verstehen und Maßnahmen zur Verringerung von Risiken unterstützen können. Compliance-Manager bietet eine Premium-Vorlage für die Erstellung einer Bewertung für diese Verordnung. Suchen Sie die Vorlage auf der Seite " **Bewertungs Vorlagen** " im Compliance-Manager. Hier erfahren Sie, wie Sie [Assessments im Compliance-Manager erstellen](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressourcen
 

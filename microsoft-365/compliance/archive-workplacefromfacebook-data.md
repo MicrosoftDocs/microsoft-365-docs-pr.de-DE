@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Administratoren können einen Connector zum Importieren und Archivieren von Daten aus dem Arbeitsplatz von Facebook einrichten, das auf der Merge1-Website von Globanet in Microsoft 365 archiviert wird. Das Einrichten eines Connectors erfordert die Verwendung von Globanet mit diesem Connector können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren, damit Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten der drittanbieterdaten Ihrer Organisation verwenden können.
-ms.openlocfilehash: 4bef408f7da93f2ade18fe126d3a1dedaa413a65
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: cea8f7549bbf1ed19bc3de6fe4d1e1c63f1be4cd
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405486"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195582"
 ---
-# <a name="set-up-a-connector-to-archive-workplace-from-facebook-data-preview"></a>Einrichten eines Connectors zum Archivieren eines Arbeitsplatzes aus Facebook-Daten (Vorschau)
+# <a name="set-up-a-connector-to-archive-workplace-from-facebook-data"></a>Einrichten eines Connectors zum Archivieren eines Arbeitsplatzes aus Facebook-Daten
 
 Verwenden Sie einen Globanet-Connector im Microsoft 365 Compliance Center zum Importieren und Archivieren von Daten aus dem Arbeitsplatz von Facebook in Benutzerpostfächer in Ihrer Microsoft 365-Organisation. Globanet bietet einen [Arbeitsplatz von Facebook](https://globanet.com/workplace/) Connector, der zum Erfassen von Elementen aus der Drittanbieter-Datenquelle (regelmäßig) und zum Importieren dieser Elemente in Microsoft 365 konfiguriert ist. Der Connector wandelt die Inhalte wie Chats, Anlagen, Beiträge und Videos vom Arbeitsplatz in ein e-Mail-Nachrichtenformat um und importiert diese Elemente dann in Benutzerpostfächer in Microsoft 365.
 
@@ -40,7 +39,7 @@ In der folgenden Übersicht wird der Vorgang der Verwendung eines Connectors zum
 
 4. Der Connector importiert die konvertierten Elemente in die Postfächer bestimmter Benutzer, wobei der Wert der *Email* -Eigenschaft der automatischen Benutzerzuordnung wie in Schritt 3 beschrieben wird. Ein Unterordner im Posteingangsordner namens " **Workplace from Facebook** " wird erstellt, und die Arbeitsplatz Elemente werden in diesen Ordner importiert. Der Connector verwendet den Wert der *Email* -Eigenschaft. Jedes Arbeitsplatz Element enthält diese Eigenschaft, die mit der e-Mail-Adresse jedes Chat-oder Post-Teilnehmers aufgefüllt wird.
 
-## <a name="before-you-begin"></a>Vorabinformationen
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Erstellen Sie ein Globanet-Merge1-Konto für Microsoft-Connectors. Wenden Sie sich dazu an den [Globanet-Kunden Support](https://globanet.com/ms-connectors-contact). Sie müssen sich bei diesem Konto anmelden, wenn Sie den Connector in Schritt 1 erstellen.
 
@@ -94,4 +93,4 @@ Nachdem Sie den Arbeitsplatz über Facebook Connector erstellt haben, können Si
 
 ## <a name="known-issues"></a>Bekannte Probleme
 
-- Zurzeit wird kein Import von Anlagen unterstützt, die größer als 10 MB sind, aber die Unterstützung größerer Elemente wird zu einem späteren Zeitpunkt zur Verfügung stehen.
+- Zurzeit wird das Importieren von Anlagen oder Elementen, die größer als 10 MB sind, nicht unterstützt. Unterstützung für größere Elemente wird zu einem späteren Zeitpunkt zur Verfügung stehen.
