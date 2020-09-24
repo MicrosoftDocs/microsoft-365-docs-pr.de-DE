@@ -17,14 +17,17 @@ search.appverid:
 - MET150
 description: Mithilfe des Microsoft 365 Security Centers oder des Microsoft 365 Compliance Centers können Sie Berechtigungen zentral für alle Aufgaben im Zusammenhang mit Sicherheit und Compliance verwalten.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c18f50fcad7b934e02c2110fa05196874ab0169a
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 43c98e0b710f5b88c17e089fd974e924728f27f3
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307773"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202675"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Berechtigungen im neuen Microsoft 365 Compliance Center und Microsoft 365 Security Center
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Ihre Organisation muss Sicherheits- und Complianceszenarios verwalten, die alle Microsoft 365-Dienste umfassen. Und Sie benötigen die Flexibilität, die richtigen Administratorberechtigungen für die richtigen Personen in der IT-Gruppe Ihrer Organisation bereitzustellen. Mithilfe des Microsoft 365 Security Centers oder des Microsoft 365 Compliance Centers können Sie Berechtigungen zentral für alle Aufgaben im Zusammenhang mit Sicherheit und Compliance verwalten.
 
@@ -63,7 +66,7 @@ Benutzer mit dieser Rolle verfügen über Berechtigungen zum Verwalten von Compl
 |In diesem Dienst...|Der Complianceadministrator kann...|
 |---|---|
 |[**Microsoft 365 Compliance Center**](https://compliance.microsoft.com/)|Schützen und Verwalten Ihrer Organisationsdaten für Microsoft 365-Dienste <br/><br/> Verwalten von Konformitätwarnungen|
-|[**Compliancebewertung**](https://docs.microsoft.com/microsoft-365/compliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|Nachverfolgen, Zuweisen und Überprüfen der Einhaltung gesetzlicher Vorschriften durch Ihre Organisation|
+|[**Compliance-Manager**](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager)|Nachverfolgen, Zuweisen und Überprüfen der Einhaltung gesetzlicher Vorschriften durch Ihre Organisation|
 |[**Security & Compliance Center**](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|Verwalten der Datengovernance <br/><br/> Durchführen von Untersuchungen zu rechtlichen Aspekten und Daten <br/><br/> Verwalten von DRS-Anforderungen.|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Anzeigen aller Intune-Überwachungsdaten|
 |[**Cloud-App-Sicherheit**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Verfügt über schreibgeschützten Zugriff und kann Warnungen verwalten <br/><br/> Kann Dateirichtlinien erstellen und ändern und Dateigovernanceaktionen zulassen <br/><br/> Kann alle unter „Datenverwaltung“ integrierten Berichte anzeigen|
@@ -71,14 +74,14 @@ Benutzer mit dieser Rolle verfügen über Berechtigungen zum Verwalten von Compl
 
 ### <a name="compliance-data-administrator"></a>Compliancedatenadministrator
 
-Benutzer mit dieser Rolle verfügen über Berechtigungen zum Schützen und Nachverfolgen von Daten im Microsoft 365 Compliance Center, Microsoft 365 Admin Center und in Azure. Die Benutzer können auch alle Features im Exchange Admin Center, in Compliancebewertung sowie im Teams und Skype for Business Admin Center verwalten und Supporttickets für Azure und Microsoft 365 erstellen.
+Benutzer mit dieser Rolle verfügen über Berechtigungen zum Schützen und Nachverfolgen von Daten im Microsoft 365 Compliance Center, Microsoft 365 Admin Center und in Azure. Die Benutzer können auch alle Features im Exchange Admin Center, Compliance-Manager sowie im Teams und Skype for Business Admin Center verwalten und Supporttickets für Azure und Microsoft 365 erstellen.
 
 ****
 
 |In diesem Dienst...|Der Compliancedatenadministrator kann...|
 |---|---|
 |[**Microsoft 365 Compliance Center**](https://compliance.microsoft.com/)|Schützen und Verwalten Ihrer Organisationsdaten für Microsoft 365-Dienste <br/><br/> Verwalten von Konformitätwarnungen <br/><br/> Verwalten von Vertraulichkeitsbezeichnungen|
-|[**Compliancebewertung**](https://docs.microsoft.com/microsoft-365/compliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|Nachverfolgen, Zuweisen und Überprüfen der Einhaltung gesetzlicher Vorschriften durch Ihre Organisation|
+|[**Compliance-Manager**](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager)|Nachverfolgen, Zuweisen und Überprüfen der Einhaltung gesetzlicher Vorschriften durch Ihre Organisation|
 |[**Security & Compliance Center**](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|Verwalten der Datengovernance <br/><br/> Durchführen von Untersuchungen zu rechtlichen Aspekten und Daten <br/><br/> Verwalten von DRS-Anforderungen. <br/><br/> Verwalten von Vertraulichkeitsbezeichnungen|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control) (in Kürze verfügbar)|Anzeigen aller Intune-Überwachungsdaten|
 |[**Cloud-App-Sicherheit**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Verwenden von schreibgeschützten Berechtigungen zum Anzeigen von Informationen <br/>Verwalten von Benachrichtigungen <br/><br/> Erstellen und Ändern von Dateirichtlinien und Zulassen von Dateigovernanceaktionen <br/><br/> Anzeigen aller unter „Datenverwaltung“ integrierten Berichte|
@@ -173,7 +176,7 @@ Indem Sie einen Benutzer einer der Microsoft 365 Compliance- oder Sicherheitsrol
 |Azure Active Directory (Azure AD) und Azure AD Identity Protection|[Azure AD-Administratorrollen](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Azure Advanced Threat Protection|[Azure ATP-Rollengruppen](https://docs.microsoft.com/azure-advanced-threat-protection/atp-role-groups)|
 |Azure Information Protection|[Azure AD-Administratorrollen](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Compliancebewertung|[Rollen er Compliancebewertung](https://docs.microsoft.com/microsoft-365/compliance/compliance-score-setup#set-user-permissions-and-assign-roles)|
+|Compliance-Manager|[Compliance-Manager](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager-setup#set-user-permissions-and-assign-roles)|
 |Exchange Online|[Rollenbasierte Zugriffssteuerung in Exchange](https://docs.microsoft.com/exchange/understanding-role-based-access-control-exchange-2013-help)|
 |Intune|[Rollenbasierte Zugriffssteuerung von Intune](https://docs.microsoft.com/intune/role-based-access-control)|
 |Managed Desktop|[Azure AD-Administratorrollen](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
