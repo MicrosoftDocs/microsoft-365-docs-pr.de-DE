@@ -498,6 +498,8 @@
               href: ./office-365-security/attack-simulator.md
             - name: Sichere Dokumente in Office 365 ATP
               href: ./office-365-security/safe-docs.md
+            - name: Benutzertags in Office 365 ATP
+              href: ./office-365-security/user-tags.md
             - name: Sicherheitsrisiken-Explorer (und Echtzeit-Erkennung)
               href: ./office-365-security/threat-explorer.md
               items:
