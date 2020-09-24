@@ -2,8 +2,8 @@
 title: Erstellen und Verwenden einer Vorlage, um Benutzer hinzuzufügen
 f1.keywords:
 - NOCSH
-ms.author: v-sharos
-author: shars
+ms.author: sirkkuw
+author: Sirkkuw
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Sie können eine Vorlage erstellen und verwenden, um Zeit zu sparen und Einstellungen zu standardisieren, wenn Sie mehrere Benutzer hinzufügen.
-ms.openlocfilehash: 29953eb97476799d74e883ed8b20bd5f3382cbf4
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 92d3bd68a57291586da27eb2d578a26c53d20d78
+ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45022145"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48245857"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Erstellen und Verwenden einer Vorlage, um Benutzer hinzuzufügen
 
@@ -49,7 +49,7 @@ Wenn Sie nach dem Hinzufügen eines Benutzers eine Vorlage erstellen, werden die
 Die folgenden Informationen sind benutzerspezifisch und werden in der Vorlage nicht gespeichert:
 
 - Vor- und Nachname
-- Distinguished Name (DN)
+- Anzeigename
 - Benutzername
 - Auswahl, um das Kennwort in einer e-Mail zu senden und an wen die Kennwort-e-Mail gesendet wird
 - Mobiltelefonnummer

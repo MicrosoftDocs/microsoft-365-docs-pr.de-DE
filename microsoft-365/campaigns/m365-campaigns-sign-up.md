@@ -2,8 +2,8 @@
 title: Registrieren für Microsoft 365 für Kampagnen
 f1.keywords:
 - NOCSH
-ms.author: supotter
-author: supotter
+ms.author: sirkkuw
+author: Sirkkuw
 manager: scotv
 ms.audience: Admin
 ms.topic: article
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Schritt-für-Schritt-Anmeldung für Microsoft 365 für Kampagnen. Schützen Sie Ihre Kampagne vor Cyber Bedrohungen für e-Mail, Daten und Kommunikation.
-ms.openlocfilehash: 0628ac1a2e8bf6d12bd4a196df11775ebcc2d583
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: a66380ea5b657d1ce231dd4a56b333087140c777
+ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527114"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48245869"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>Registrieren für Microsoft 365 für Kampagnen 
 
@@ -57,7 +57,7 @@ Hier erfahren Sie, wie Sie Ihre Registrierung für Microsoft 365 für Kampagnen 
     > [!NOTE]
     > Wenn Ihre Kampagne oder Partei keine Domäne besitzt und Sie sich für die gewünschte Domäne entschieden haben, können Sie Sie jetzt kaufen, indem Sie Sie auswählen.
 
-4. Nach **weisen. Sie sind. Nicht. A. Robot. Seite**:
+4. Nach **weisen. Sie sind. Not. A. Robot. Seite**:
     1. Halten Sie Ihr Telefon für verfügbar, und wählen Sie **Text Me** (oder **rufen Sie mich an** , wenn Sie es bevorzugen). Geben Sie dann Ihre Telefonnummer ein. 
     2. Wenn Sie **Text Me**auswählen, erhalten Sie einen Bestätigungscode. Oder wir rufen Sie mit einem Code an, wenn Sie " **Anruf mich**" auswählen.
     3. Geben Sie den Code aus ihrer Textnachricht (oder Anruf) ein, und wählen Sie **weiter**aus. Erwarten Sie eine kurze Wartezeit. 

@@ -2,9 +2,9 @@
 title: Unterschied zwischen dem Setup-Assistenten und der Setup-Seite
 f1.keywords:
 - NOCSH
-ms.author: v-sharos
-author: shars
-manager: mnirkhe
+ms.author: sirkkuw
+author: Sirkkuw
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Erfahren Sie mehr über den Unterschied zwischen dem Setup-Assistenten und der Seite Setup.
-ms.openlocfilehash: eecc86b1d2a23ea2940a68c9edee3e33a5f5339e
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: dd04920c1c686cd0082b0d3c11cc7869e5d3f4eb
+ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398858"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48245925"
 ---
 # <a name="difference-between-the-setup-wizard-and-the-setup-page"></a>Unterschied zwischen dem Setup-Assistenten und der Setup-Seite
 

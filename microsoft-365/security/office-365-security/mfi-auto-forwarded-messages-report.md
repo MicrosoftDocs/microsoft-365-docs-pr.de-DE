@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: Administratoren können sich über den Bericht über automatisch weitergeleitete Nachrichten im Nachrichtenfluss-Dashboard im Security & Compliance Center informieren.
-ms.openlocfilehash: b5255a95718fa6624c85e93a19c8accf9c3dcdb2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: d4b772e6392e0af22e6bed475970f637ed03dcb1
+ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199359"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48245947"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>Einblicke automatisch weitergeleiteter Nachrichten im Security & Compliance Center
 
@@ -35,7 +35,7 @@ Wenn Sie auf die Anzahl der Nachrichten im Widget klicken, wird ein Flyout-Berei
 
   - **Nachrichtenfluss Regeln**
   - **Nach Posteingangsregeln**
-  - **Durch SMTP-Weiterleitung**
+  - **Durch SMTP-Weiterleitung**: Dies ist die automatische Weiterleitung, die Administratoren in einem Postfach konfigurieren können, wie unter [Configure Mail Forwarding for a Mailbox](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)beschrieben.
   - Einen Link zum [Weiterleitungs Bericht](view-mail-flow-reports.md#forwarding-report) für weitere Details.
 
 - **Automatisch weitergeleitete Nachrichten nach Domänen und Benutzern**:
