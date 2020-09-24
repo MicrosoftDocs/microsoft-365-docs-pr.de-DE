@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Überwachen und Verwalten der Freigabe von Inhalten, unabhängig davon, ob Sie eine Dispositions Überprüfung oder Inhalte verwenden, wird automatisch entsprechend den von Ihnen konfigurierten Einstellungen gelöscht.
-ms.openlocfilehash: 6789ab1abe54b76f22462a47326b07a213f19b0c
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 3ef98e07df37d429567534e252c15abee69d0044
+ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950389"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48245936"
 ---
 # <a name="disposition-of-content"></a>Disposition von Inhalten
 
@@ -75,7 +75,7 @@ Sie können eine Übersicht über alle ausstehenden Dispositionen auf der Regist
 
 ![Ausstehende Dispositionen in der Datensatzverwaltung (Übersicht)](../media/dispositions-overview.png)
 
-Wenn Sie die Option **alle ausstehenden Dispositionen anzeigen**auswählen, werden Sie zur Seite **Disposition** geleitet. Zum Beispiel:
+Wenn Sie die Option **alle ausstehenden Dispositionen anzeigen**auswählen, werden Sie zur Seite **Disposition** geleitet. Beispiel:
 
 ![Seite "Dispositions" im Microsoft 365 Compliance Center](../media/disposition-tab.png)
 
@@ -119,12 +119,7 @@ Inhalte, die auf eine Dispositions Überprüfung warten, werden erst gelöscht, 
 
 ## <a name="disposition-of-records"></a>Disposition von Datensätzen
 
-> [!NOTE]
-> Der Rollout für den Nachweis der Verfügung für Datensätze in SharePoint und OneDrive ist abgeschlossen.
->
-> Rollout für den Nachweis der Verfügung für Datensätze in Exchange ist fast abgeschlossen, wenn wir diese Notiz entfernen werden.
-
-Verwenden Sie die Registerkarte **Disposition** auf der Seite **Datensatzverwaltung** , um Datensätze zu identifizieren, die jetzt entweder automatisch oder nach einer Dispositions Überprüfung gelöscht werden. Diese Elemente zeigen **Datensätze** an, die in der Spalte **Typ** angeordnet sind. Zum Beispiel:
+Verwenden Sie die Registerkarte **Disposition** auf der Seite **Datensatzverwaltung** , um Datensätze zu identifizieren, die jetzt entweder automatisch oder nach einer Dispositions Überprüfung gelöscht werden. Diese Elemente zeigen **Datensätze** an, die in der Spalte **Typ** angeordnet sind. Beispiel:
 
 ![Elemente, die ohne eine Dispositions Überprüfung verworfen wurden](../media/records-disposed2.png)
 

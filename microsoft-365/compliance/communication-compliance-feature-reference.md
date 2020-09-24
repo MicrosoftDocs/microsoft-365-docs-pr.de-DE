@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 757b1fcdae69e98ec45bb29e669ceda8f8cb8f98
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: e1e1677c929ef0de5d47dbb98ef8987a8fba548d
+ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131635"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48245902"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referenz zur Kommunikation Compliance-Feature
 
@@ -251,7 +251,7 @@ Sie können Benachrichtigungsvorlagen erstellen, wenn Sie Benutzern eine e-Mail-
 
 Notices-Vorlagen sind benutzerdefinierte e-Mail-Vorlagen, in denen Sie die folgenden Nachrichtenfelder im Bereich **Kommunikations Kompatibilitätseinstellungen** definieren können:
 
-|**Field**|**Required**| **Details** |
+|**Feld**|**Required**| **Details** |
 |:-----|:-----|:-----|
 |**Vorlagenname** | Ja | Anzeigename für die Notizvorlage, die Sie im Benachrichtigungs Workflow während der Wiederherstellung auswählen, unterstützt Textzeichen. |
 | **Absenderadresse** | Ja | Die Adresse von einem oder mehreren Benutzern oder Gruppen, die die Nachricht mit einer Richtlinienübereinstimmung an den Benutzer senden, ausgewählt aus dem Active Directory für Ihr Abonnement. |
@@ -285,7 +285,7 @@ Mit den Kommunikations Kompatibilitäts filtern können Sie Warnmeldungen für s
 
 |**Filter**|**Details**|
 |:-----|:-----|
-| **Date** | Das Datum, an dem die Nachricht von einem Benutzer in Ihrer Organisation gesendet oder empfangen wurde. |
+| **Date** | Das Datum, an dem die Nachricht von einem Benutzer in Ihrer Organisation gesendet oder empfangen wurde. Wenn Sie einen einzelnen Tag filtern möchten, wählen Sie einen Datumsbereich aus, der mit dem Tag beginnt, für den Sie Ergebnisse erhalten möchten, und beenden Sie den folgenden Tag. Wenn Sie beispielsweise Ergebnisse für 9/20/2020 Filtern wollten, wählen Sie einen Filter Datumsbereich von 9/20/2020-9/21/2020 aus.|
 | **File-Klasse** | Die Klasse der Nachricht auf der Grundlage des Nachrichtentyps, entweder *Nachricht* oder *Anlage*. |
 | **Weist eine Anlage auf** | Das Attachment-vorhanden sein in der Nachricht. |
 | **Elementklasse** | Die Quelle der Nachricht basierend auf dem Nachrichtentyp, e-Mail, Microsoft Team Chat, Bloomberg usw. Weitere Informationen zu allgemeinen Elementtypen und Nachrichtenklassen finden Sie unter [Elementtypen und Nachrichtenklassen](https://docs.microsoft.com/office/vba/outlook/concepts/forms/item-types-and-message-classes). |
@@ -293,7 +293,7 @@ Mit den Kommunikations Kompatibilitäts filtern können Sie Warnmeldungen für s
 | **Empfänger** | Der Benutzer, an den die Nachricht gesendet wurde. |
 | **Sender** | Die Person, die die Nachricht gesendet hat. |
 | **Absenderdomäne** | Die Domäne, die die Nachricht gesendet hat. |
-| **Größe** | Die Größe der Nachricht in KB. |
+| **Size** | Die Größe der Nachricht in KB. |
 | **Betreff/Titel** | Der Nachrichtenbetreff oder der Chat Titel. |
 | **Tags** | Die einer Nachricht zugewiesenen Tags, entweder *fragwürdig*, *kompatibel*oder *nicht kompatibel*. |
 | **Eskaliert an** | Der Benutzername der Person, die im Rahmen einer Nachrichten Eskalations Aktion enthalten ist. |
@@ -429,7 +429,7 @@ In einigen Fällen müssen Sie Aufsichtsbehörden oder Compliance-Prüfern Infor
 
 Wählen Sie zum Anzeigen von Updateaktivitäten für die Kommunikationsrichtlinien Aktualisierung auf der Hauptseite für eine Richtlinie das Steuerelement **Export Richtlinienupdates** aus. Sie müssen den *globalen* Administrator-oder *Kommunikationsrichtlinien-Administrator* Rollen zugewiesen sein, um Aktualisierungsaktivitäten zu exportieren. Mit dieser Aktion wird eine Überwachungsdatei im CSV-Format generiert, die die folgenden Informationen enthält:
 
-|**Field**|**Details**|
+|**Feld**|**Details**|
 |:-----|:-----|
 | **CreationDate** | Das Datum, an dem die Update Aktivität in einer Richtlinie ausgeführt wurde. |
 | **UserIds** | Der Benutzer, der die Aktualisierungsaktivität in einer Richtlinie ausgeführt hat. |
@@ -438,7 +438,7 @@ Wählen Sie zum Anzeigen von Updateaktivitäten für die Kommunikationsrichtlini
 
 Zum **Anzeigen der Aktivitäten** zur Kommunikation-Konformitätsüberprüfung für eine Richtlinie wählen Sie auf der Übersichtsseite für eine bestimmte Richtlinie das Steuerelement zum **Überprüfen von Aktivitäten exportieren** aus. Sie müssen über die Administratorrollen für den *globalen Administrator* oder die *Kommunikations Konformität* verfügen, um Prüfungsaktivitäten zu exportieren. Mit dieser Aktion wird eine Überwachungsdatei im CSV-Format generiert, die die folgenden Informationen enthält:
 
-|**Field**|**Details**|
+|**Feld**|**Details**|
 |:-----|:-----|
 | **CreationDate** | Das Datum, an dem die Überprüfungsaktivität in einer Richtlinie ausgeführt wurde. |
 | **UserIds** | Der Benutzer, der die Überprüfungsaktivität in einer Richtlinie ausgeführt hat. |
