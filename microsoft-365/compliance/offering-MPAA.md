@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 43e7cc1231e88144e1f03f81de6e2355a582a785
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 8440d510e5f6f2e1e90e4f3e9a7368cd00f0f802
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417919"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208277"
 ---
 # <a name="motion-picture-association-of-america-mpaa"></a>Motion Picture Association of America (MPAA)
 
@@ -59,6 +59,10 @@ Die Richtlinien der MPAA stellen großen Filmstudiozulieferern und -partnern ein
 **Muss sich meine Organisation dennoch einer MPAA-Prüfung unterziehen oder können wir die Azure-Prüfung verwenden?**
 
 Produktionseinrichtungen, Unternehmen für visuelle Effekte und andere Servicepartner sollten mit ihren Produzenten und Regisseuren zusammenarbeiten, um die neuen Sicherheitsanforderungen zu verstehen und zu entscheiden, ob eine formale MPAA-Prüfung notwendig ist. Die Compliance mit MPAA-Richtlinien ist zwar freiwillig, doch Microsoft hat sich für eine unabhängige Bewertung entschieden, sodass Medienkunden auf die Inhaltssicherheit und die Schutzfunktionen von Azure vertrauen können. Azure verwaltet jedoch nicht die individuellen Cloudumgebungen der Kunden, die weiteren MPAA-Regelungen unterliegen können. Auf diese lässt sich am besten durch eine eigene Prüfung Ihrer Umgebung eingehen.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Verwenden von Microsoft Compliance-Manager zur Einschätzung des Risikos
+
+[Microsoft Compliance-Manager](compliance-manager.md) ist ein Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), das Ihnen dabei hilft, den Compliance-Status Ihrer Organisation zu ermitteln und Maßnahmen zur Senkung von Risiken zu ergreifen. Compliance-Manager bietet eine sehr hilfreiche Vorlage für die Erstellung einer Bewertung für diese Verordnung. Die Vorlage finden Sie auf der Seite **Bewertungsvorlagen** in Compliance-Manager. Erfahren Sie, wie Sie [Bewertungen im Compliance-Manager erstellen](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressourcen
 

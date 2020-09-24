@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7001a17af7932a7aafa7cceac207b772b42b55d9
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 9d1f259894fff720452de52c45424f086a31a6bb
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417163"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208177"
 ---
 # <a name="north-american-electric-reliability-corporation-nerc"></a>North American Electric Reliability Corporation (NERC)
 
@@ -80,6 +80,10 @@ Zur Einschätzung der Eignung von Azure und Azure Government für Daten und Work
 Die NERC [CIP-Standards](https://www.nerc.com/pa/Stand/Reliability%20Standards%20Complete%20Set/RSCompleteSet.pdf) und das [Glossar](https://www.nerc.com/pa/Stand/Glossary%20of%20Terms/Glossary_of_Terms.pdf) besagen, dass BES Cyber Assets Echtzeitfunktionen zur Überwachung oder Kontrolle des BES durchführen und bei Beschädigung den zuverlässigen Betrieb des BES innerhalb von 15 Minuten stören würden. Zur ordnungsgemäßen Anpassung von BES Cyber Assets und Protected Cyber Assets an das Cloud Computing müssten bestehende Definitionen in den NERC CIP-Standards [überarbeitet werden](https://www.nerc.com/pa/Stand/Pages/Project%202016-02%20Modifications%20to%20CIP%20Standards.aspx). Allerdings gibt es viele Workloads, die CIP-sensitive Daten betreffen und nicht unter die 15-Minuten-Regel fallen, einschließlich der umfassenden Kategorie der BES Cyber System Information (BCSI).
 
 Das NERC Unternehmen ERO [veröffentlichte](https://www.nerc.com/pa/comp/guidance/Pages/default.aspx) eine Compliance Monitoring and Enforcement Program (CMEP)-[Praxisleitlinie](https://www.nerc.com/pa/comp/guidance/CMEPPracticeGuidesDL/ERO%20Enterprise%20CMEP%20Practice%20Guide%20_%20BCSI%20-%20v0.2%20CLEAN.pdf), welche die CMEP-Mitarbeiter des Unternehmens ERO beim Bewerten des Prozesses einer registrierten Entität zur Autorisierung des Zugriffs auf designierte BCSI-Speicherorte und aller von der registrierten Entität implementierten Zugriffskontrollen anleitet. Darüber hinaus hat NERC die Implementierungsdetails der Azure-Sicherheitskontrollen sowie FedRAMP-Überwachungsnachweise hinsichtlich der Standards NERC CIP-004-6 und CIP-011-2 überprüft, die für BCSI gelten. Basierend auf dem von ERO ausgegebenen Praxisleitfaden und den überprüften FedRAMP-Kontrollen, die sicherstellen sollen, dass registrierte Entitäten ihre Daten verschlüsseln, sind keine zusätzlichen Anleitungen oder Erläuterungen erforderlich, damit registrierte Entitäten BCSI und zugeordnete Workloads in der Cloud bereitstellen können. Allerdings sind registrierte Entitäten letztlich für die Compliance mit NERC CIP-Standards gemäß ihren eigenen Fakten und Gegebenheiten verantwortlich.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Verwenden von Microsoft Compliance-Manager zur Einschätzung des Risikos
+
+[Microsoft Compliance-Manager](compliance-manager.md) ist ein Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), das Ihnen dabei hilft, den Compliance-Status Ihrer Organisation zu ermitteln und Maßnahmen zur Senkung von Risiken zu ergreifen. Compliance-Manager bietet eine sehr hilfreiche Vorlage für die Erstellung einer Bewertung für diese Verordnung. Die Vorlage finden Sie auf der Seite **Bewertungsvorlagen** in Compliance-Manager. Erfahren Sie, wie Sie [Bewertungen im Compliance-Manager erstellen](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressourcen
 

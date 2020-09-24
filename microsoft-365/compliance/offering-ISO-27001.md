@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a1c30856cf0fb4b2a183b26639bd3f41ae7d9bc5
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 3dc182ce799078e50087699aa3ca88c3abbcf769
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417709"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208427"
 ---
 # <a name="isoiec-270012013-information-security-management-standards"></a>ISO/IEC 27001:2013 Information Security Management Standards
 
@@ -126,9 +126,9 @@ Die Übernahme von ISO/IEC 27001 ist eine strategische Verpflichtung. Ein guter 
 
 Ja. Wenn Ihr Unternehmen eine Zertifizierung nach ISO/IEC 27001 für Installationen benötigt, die in Microsoft-Diensten bereitgestellt werden, können Sie die entsprechende Zertifizierung für Ihre Compliancebewertung verwenden. Sie sind jedoch dafür verantwortlich, einen Auditor mit der Prüfung der Kontrollen und Prozesse in Ihrer eigenen Organisation und Ihrer Implementierung im Hinblick auf ISO/IEC 27001-Compliance zu beauftragen.
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Verwenden von Microsoft Compliancebewertungen zur Einschätzung des Risikos
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Verwenden von Microsoft Compliance-Manager zur Einschätzung des Risikos
 
-[Microsoft Compliancebewertung](compliance-score.md) ist ein Preview-Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), das Ihnen dabei hilft, den Compliance-Status Ihrer Organisation zu bestimmen und Maßnahmen zur Senkung von Risiken zu ergreifen. Verwenden Sie nach dem [Einrichten der Compliancebewertung](compliance-score-setup.md) die vorkonfigurierte [ISO 27001-Vorlage](https://go.microsoft.com/fwlink/?linkid=2117914) aus dem Dropdownmenü **Vorlage**, um Ihrer Organisation zu helfen, die Anforderungen dieser Verordnung zu erfüllen.
+[Microsoft Compliance-Manager](compliance-manager.md) ist ein Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), das Ihnen dabei hilft, den Compliance-Status Ihrer Organisation zu ermitteln und Maßnahmen zur Senkung von Risiken zu ergreifen. Compliance Manager enthält eine vordefinierte Bewertung für diese Verordnung für Kunden mit Enterprise E5. Die Vorlage zur Erstellung der Bewertung finden Sie auf der Seite **Bewertungsvorlagen** in Compliance-Manager. Erfahren Sie, wie Sie [Bewertungen im Compliance-Manager erstellen](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressourcen
 

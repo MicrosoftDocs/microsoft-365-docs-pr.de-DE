@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-remotework
 ms.custom: ''
 description: Verwenden Sie die Sicherheits- und Compliance-Dienste von Microsoft 365 zum Schutz Ihrer Apps, Daten und Geräte für Remotemitarbeiter.
-ms.openlocfilehash: 223de710b924fc213e30fd9a6e246b3fec2344c0
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: f2743e9f7d2f102231531e7a9146a0f26727e1d4
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560463"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200943"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>Schritt 3: Bereitstellen von Sicherheit und Compliance für Remotemitarbeiter
 
@@ -68,7 +68,7 @@ Einhaltung interner Richtlinien oder behördlicher Vorschriften mit diesen Compl
 | Aufbewahrungsbezeichnungen und Bezeichnungsrichtlinien | Implementieren Sie Kontrollmechanismen für die Informationsgovernance, z. B. wie lange Daten aufbewahrt werden und die Anforderungen für die Speicherung von persönlichen Daten von Kunden, um die Richtlinien oder Datenvorschriften Ihrer Organisation einzuhalten. | Microsoft 365 E3 oder E5 |
 | Office-Nachrichtenverschlüsselung (Office Message Encryption, OME) | Senden und empfangen von verschlüsselten E-Mails zwischen Personen innerhalb und außerhalb Ihrer Organisation, die geregelte Daten enthalten, z. B. persönliche Daten von Kunden. | Microsoft 365 E3 oder E5 |
 | Compliance-Manager | Verwalten gesetzlicher Compliance-Aktivitäten im Zusammenhang mit Microsoft-Cloud-Diensten mit diesem workflowbasierten Tool für die Risikobewertung im Microsoft Service Trust Portal. | Microsoft 365 E3 oder E5 |
-| Compliancebewertung (Vorschau) | Sehen Sie sich eine Gesamtbewertung Ihrer aktuellen Compliance-Konfiguration sowie Empfehlungen zur Verbesserung im Microsoft 365 Compliance Center an. | Microsoft 365 E3 oder E5 |
+| Compliance-Manager | Sehen Sie sich eine Gesamtbewertung Ihrer aktuellen Compliance-Konfiguration sowie Empfehlungen zur Verbesserung im Microsoft 365 Compliance Center an. | Microsoft 365 E3 oder E5 |
 | Kommunikationscompliance  | Erkennen, Erfassen und Ergreifen von Abhilfemaßnahmen für unangebrachte Nachrichten in Ihrer Organisation. | Microsoft 365 E5 oder Microsoft 365 E3 mit den Compliance- oder Insider-Risikomanagement-Add-Ons |
 | Insider-Risikomanagement |  Erkennen und untersuchen Sie bösartige und unbeabsichtigte Risiken in Ihrer Organisation, und reagieren Sie darauf. Microsoft 365 kann diese Arten von Risiken sogar dann erkennen, wenn ein Mitarbeiter ein nicht verwaltetes Gerät verwendet. | Microsoft 365 E5 oder Microsoft 365 E3 mit den Compliance- oder Insider-Risikomanagement-Add-Ons |
 ||||

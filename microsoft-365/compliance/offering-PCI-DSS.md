@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: ad755398afc80f829561854217f1295ce8fff6f5
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 1151fd74e5f40a91107467b6004049081c4a9a69
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417859"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208237"
 ---
 # <a name="payment-card-industry-pci-data-security-standard-dss"></a>Payment Card Industry (PCI) Data Security Standard (DSS)
 
@@ -60,7 +60,7 @@ PCI-DSS-Lösung mit dem PCI-DSS-Blueprint von Azure Security and Compliance noch
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
-**Warum steht auf dem Deckblatt der Attestation of Compl (AoC) „Juni 2018“?**
+**Warum steht auf dem Deckblatt der Attestation of Compliance (AoC) „Juni 2018“?**
 
 Das Datum Juni 2018 auf dem Deckblatt ist der Zeitpunkt, an dem die AoC-Vorlage veröffentlicht wurde. Das Datum der Bescheinigung können Sie dem Abschnitt 2 entnehmen.
 
@@ -93,6 +93,10 @@ Derzeit ist OneDrive for Business und SharePoint Online nur in den Vereinigten S
 **Was ist in OneDrive for Business und SharePoint Online enthalten?**
 
 Derzeit werden nur Dateien und Dokumente, die zu OneDrive for Business und SharePoint Online hochgeladen wurden, mit PCI DSS beanstandet.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Verwenden von Microsoft Compliance-Manager zur Einschätzung des Risikos
+
+[Microsoft Compliance-Manager](compliance-manager.md) ist ein Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), das Ihnen dabei hilft, den Compliance-Status Ihrer Organisation zu ermitteln und Maßnahmen zur Senkung von Risiken zu ergreifen. Compliance-Manager bietet eine sehr hilfreiche Vorlage für die Erstellung einer Bewertung für diese Verordnung. Die Vorlage finden Sie auf der Seite **Bewertungsvorlagen** in Compliance-Manager. Erfahren Sie, wie Sie [Bewertungen im Compliance-Manager erstellen](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressourcen
 

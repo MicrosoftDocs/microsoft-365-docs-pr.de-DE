@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 2e470972e1d1549bff5cce107666a930a9b29969
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 29af3729260d3d87f0cf17b83beec70da6fb7931
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416233"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208387"
 ---
 # <a name="iso-223012012-business-continuity-management-standard"></a>ISO 22301:2012 – Standard für Business Continuity Management 
 
@@ -70,6 +70,10 @@ Das [Service Trust Portal](https://aka.ms/stphelp) stellt unabhängig überprüf
 **Kann ich die ISO 22301-Compliance von Microsoft-Diensten für den Zertifizierungsprozess meiner Organisation verwenden?**
 
 Ja. Wenn Ihr Unternehmen eine Zertifizierung nach ISO 22301 für Installationen benötigt, die in Microsoft-Diensten bereitgestellt werden, können Sie die Azure- und Office 365-Zertifizierungen für Ihre Compliancebewertung verwenden. Sie sind jedoch dafür verantwortlich, einen Auditor mit der Prüfung der Kontrollen, Prozesse und Implementierungen im Hinblick auf die ISO 22301-Compliance innerhalb Ihrer eigenen Organisation und für Ihre eigenen Anwendungen zu beauftragen.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Verwenden von Microsoft Compliance-Manager zur Einschätzung des Risikos
+
+[Microsoft Compliance-Manager](compliance-manager.md) ist ein Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), das Ihnen dabei hilft, den Compliance-Status Ihrer Organisation zu ermitteln und Maßnahmen zur Senkung von Risiken zu ergreifen. Compliance-Manager bietet eine sehr hilfreiche Vorlage für die Erstellung einer Bewertung für diese Verordnung. Die Vorlage finden Sie auf der Seite **Bewertungsvorlagen** in Compliance-Manager. Erfahren Sie, wie Sie [Bewertungen im Compliance-Manager erstellen](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressourcen
 

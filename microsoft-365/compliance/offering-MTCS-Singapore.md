@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 47cc5cf10f048640ead85d239881fa9b2603e699
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 3757d400d16b324f512c60059c8d8b762916894c
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417499"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208257"
 ---
 # <a name="multi-tier-cloud-security-mtcs-standard-for-singapore"></a>Multi-Tier Cloud Security (MTCS) Standard für Singapur
 
@@ -42,7 +42,7 @@ Nach strengen Bewertungen durch die MTCS-Zertifizierungsstelle wurden die Cloud 
 
 Microsoft Azure-Dienste (IaaS und PaaS), Microsoft Dynamics 365-Dienste (SaaS) und Microsoft Office 365-Dienste (SaaS) wurden auf Stufe 3 zertifiziert. Eine Zertifizierung der Stufe 3 bedeutet, dass die im Umfang enthaltenen Microsoft Cloud Services wichtige Daten für regulierte Organisationen mit strengsten Sicherheitsanforderungen hosten kann. Sie wird von der Regierung Singapurs für bestimmte Implementierungen von Cloudlösungen verlangt.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
 
 - [Azure](https://go.microsoft.com/fwlink/p/?linkid=2092718)
 - [Dynamics 365](https://go.microsoft.com/fwlink/p/?linkid=2051700)
@@ -96,6 +96,10 @@ Der [MTCS-Zertifizierungsablauf](https://go.microsoft.com/fwlink/p/?linkid=20994
 **Kann ich die Compliance von Microsoft für den Zertifizierungsprozess meiner Organisation verwenden?**
 
 Ja. Wenn Sie Ihre Dienste, die auf diesen Microsoft-Clouddiensten aufbauen, zertifizieren lassen müssen, können Sie die MTCS-Zertifizierung verwenden, um den Umfang der Prüfung Ihrer IT-Infrastruktur auf das relevante Ausmaß zu beschränken. Sie sind jedoch dafür verantwortlich, einen Auditor mit der Prüfung Ihrer Implementierung unter Wahrung der Compliance zu beauftragen. Außerdem sind Sie für die Kontrollen und Prozesse in Ihrer eigenen Organisation zuständig.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Verwenden von Microsoft Compliance-Manager zur Einschätzung des Risikos
+
+[Microsoft Compliance-Manager](compliance-manager.md) ist ein Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), das Ihnen dabei hilft, den Compliance-Status Ihrer Organisation zu ermitteln und Maßnahmen zur Senkung von Risiken zu ergreifen. Compliance-Manager bietet eine sehr hilfreiche Vorlage für die Erstellung einer Bewertung für diese Verordnung. Die Vorlage finden Sie auf der Seite **Bewertungsvorlagen** in Compliance-Manager. Erfahren Sie, wie Sie [Bewertungen im Compliance-Manager erstellen](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressourcen
 

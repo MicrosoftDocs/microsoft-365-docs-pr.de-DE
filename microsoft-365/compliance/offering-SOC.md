@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: cdc8835989ada5ebe4089c4d7fed5fd8cf064673
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: a648673d06300190695db52d14e85f114bfe0e87
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415422"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208146"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -90,7 +90,7 @@ Microsoft Cloud Services werden mindestens jährlich anhand der Standards SOC 1
 - [Office 365 Core – SSAE 18 SOC 1-Bericht](https://aka.ms/o365SOC-1)
 - [Office 365 Core – SSAE 18 SOC 2-Bericht](https://aka.ms/o365SOC-2)
 - [Office 365 Core – SSAE 18 SOC 3-Bericht](https://aka.ms/o365SOC-3)
-- [Office 365 Microservices T1 – SSAE 18 SOC2-Bericht (Typ I)](https://aka.ms/o365-MS-SOC-2-type1)
+- [Office 365 Microservices T1-SSAE 18 SOC2-Bericht (Typ I)](https://aka.ms/o365-MS-SOC-2-type1)
 - [Kunden-Lockbox SOC 1 SSAE 16-Auditbericht](https://aka.ms/Office365CustomerLockboxSOCAuditReport)
 - [Yammer SOC 2 AT 101-Auditbericht (Typ I)](https://aka.ms/YammerSOC2Type1AuditReport)
 - [Yammer SOC 2-Bericht (Typ II)](https://aka.ms/yammerSOC-2)
@@ -121,9 +121,9 @@ Ja. Wenn Sie Ihre Anwendungen und Daten zu im Umfang enthaltenen Microsoft Cloud
 
 Das [SOC-Toolkit für Dienstorganisationen](https://aka.ms/soc-toolkit) ist eine nützliche Ressource, um die SOC-Berichterstellungsprozesse zu verstehen und ihren Einsatz in Ihrer Organisation zu fördern.
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Verwenden von Microsoft Compliancebewertungen zur Einschätzung des Risikos
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Verwenden von Microsoft Compliance-Manager zur Einschätzung des Risikos
 
-[Microsoft Compliancebewertung](compliance-score.md) ist ein Preview-Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), das Ihnen dabei hilft, den Compliance-Status Ihrer Organisation zu bestimmen und Maßnahmen zur Senkung von Risiken zu ergreifen. Verwenden Sie nach dem [Einrichten der Compliancebewertung](compliance-score-setup.md) die vorkonfigurierte [SOC 1-Vorlage](https://go.microsoft.com/fwlink/?linkid=2117918) und die [SOC 2-Vorlage](https://go.microsoft.com/fwlink/?linkid=2117919) aus dem Dropdownmenü **Vorlage**, um Ihrer Organisation zu helfen, die Anforderungen dieser Verordnung zu erfüllen.
+[Microsoft Compliance-Manager](compliance-manager.md) ist ein Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), das Ihnen dabei hilft, den Compliance-Status Ihrer Organisation zu ermitteln und Maßnahmen zur Senkung von Risiken zu ergreifen. Compliance-Manager bietet eine sehr hilfreiche Vorlage für die Erstellung einer Bewertung für diese Verordnung. Die Vorlage finden Sie auf der Seite **Bewertungsvorlagen** in Compliance-Manager. Erfahren Sie, wie Sie [Bewertungen im Compliance-Manager erstellen](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressourcen
 
