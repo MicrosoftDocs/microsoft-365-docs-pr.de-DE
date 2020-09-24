@@ -9,18 +9,18 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5314cf21d94513cfab664279d11438e86e67231e
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 7674777214cb5684bb02039f739458352bc701ad
+ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530187"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48262279"
 ---
 # <a name="compliance"></a>Compliance
 
 Wenn Sie Microsoft Managed Desktop IT-as-a-Service verwenden, bietet Ihnen Microsoft eine umfassende Palette an Compliance-angeboten. Diese Anstrengung hilft Ihrer Organisation, die verschiedenen Compliance-Anforderungen einzuhalten.
 
-## <a name="compliance-offerings"></a>Compliance-Angebote
+## <a name="compliance-coverage"></a>Konformitäts Abdeckung
 
 Microsoft Managed Desktop hat folgende Zertifizierungen erreicht:
 

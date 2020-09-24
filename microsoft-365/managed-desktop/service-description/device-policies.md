@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 319b26261f623a7e19e5bb8fbcd0b5d8a50d10a8
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: a76bae70adeb07d9ea0574a25bac14f89a0a790d
+ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289709"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48262217"
 ---
 # <a name="device-configuration"></a>Gerätekonfiguration
 
@@ -42,7 +42,7 @@ Update Bereitstellung | Verwenden Sie Windows Update für Unternehmen, um die sc
 Gemessene Verbindungen | Standardmäßig sind Aktualisierungen über gemessene Verbindungen (wie LTE-Netzwerke) deaktiviert, obwohl jeder Benutzer dieses Feature in **Einstellungen > Updates > Erweiterte Optionen**unabhängig voneinander aktivieren kann. Wenn Sie zulassen möchten, dass alle Benutzer Aktualisierungen über gemessene Verbindungen aktivieren, [Senden Sie eine Änderungsanforderung](../working-with-managed-desktop/admin-support.md), die diese Einstellung für alle Geräte aktiviert.
 | Gerätekompatibilität | Diese Richtlinien sind für alle von Microsoft verwalteten Desktop Geräte konfiguriert. Ein Gerät wird als nicht kompatibel gemeldet, wenn es von der erforderlichen Sicherheitskonfiguration abdriftet.
 
-## <a name="diagnostic-data"></a>Diagnosedaten
+## <a name="windows-diagnostic-data"></a>Windows-Diagnosedaten
 
  Geräte werden so konfiguriert, dass Microsoft unter einer bekannten kommerziellen ID erweiterte Diagnosedaten bereitstellt. Als Teil von Microsoft Managed Desktop können IT-Administratoren diese Einstellungen nicht ändern. Für Kunden in dsgvo-Regionen (General Data Protection Regulation) können Benutzer den Umfang der bereitgestellten Diagnosedaten reduzieren, aber es wird eine Verringerung der Dienstleistung geben. Beispielsweise kann Microsoft Managed Desktop die erforderlichen Daten zum Durchlaufen von Einstellungen und Richtlinien nicht erfassen, um Leistungs-und Sicherheitsanforderungen optimal zu erfüllen. Weitere Informationen finden Sie unter [Konfigurieren von Windows-Diagnosedaten in Ihrer Organisation.](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
 
