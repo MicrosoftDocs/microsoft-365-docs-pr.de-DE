@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Freigegebene Postfächer werden verwendet, wenn mehrere Personen auf dasselbe Postfach zugreifen müssen. Erfahren Sie, was Sie wissen müssen, bevor Sie ein freigegebenes Postfach erstellen.
-ms.openlocfilehash: 8ca942d35d54fc8cc635e401c250ce409b9af0dd
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: f6feae1662093ffea2537a62c5e8fdf28c622166
+ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780313"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269349"
 ---
 # <a name="about-shared-mailboxes"></a>Info zu freigegebenen Postfächern
 
@@ -50,7 +50,7 @@ Bevor Sie [ein freigegebenes Postfach erstellen](create-a-shared-mailbox.md), so
 
 - **Administratorrollen:** Benutzer mit globalen Administrator-oder Exchange-Administratorrollen können freigegebene Postfächer erstellen.
 
-- **Abonnementanforderungen:** Um ein freigegebenes Postfach zu erstellen, müssen Sie einen Microsoft 365 for Business-Plan abonnieren, der e-Mails enthält (Exchange Online Dienst). Das Microsoft 365 apps for Business-Abonnement enthält keine e-Mails; Microsoft 365 Business Standard funktioniert nicht.
+- **Abonnementanforderungen:** Um ein freigegebenes Postfach zu erstellen, müssen Sie einen Microsoft 365 for Business-Plan abonnieren, der e-Mails enthält (Exchange Online Dienst). Das Microsoft 365 apps for Business-Abonnement enthält keine e-Mails. Microsoft 365 Business Standard enthält e-Mail.
 
 - **Anmelden:** Ein freigegebenes Postfach ist nicht für die direkte Anmeldung durch das zugehörige Benutzerkonto vorgesehen. Sie sollten die Anmeldung für das freigegebene Postfachkonto immer blockieren und blockiert lassen.
 

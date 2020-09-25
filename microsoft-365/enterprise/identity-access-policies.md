@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 1512ba01f78d901177254fce86d0154e97e36496
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 6a8ab25a1bce4355e63482b8450412884a9f0faf
+ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950802"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269405"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Allgemeine Identitäts- und Gerätezugriffsrichtlinien
 
@@ -170,6 +170,8 @@ Wählen Sie schließlich **auf** für **Richtlinie aktivieren**aus, und wählen 
 
 Verwenden Sie dazu das Tool [What if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) , um die Richtlinie zu testen.
 
+Für Exchange Online können Sie Authentifizierungsrichtlinien verwenden, um die [Standardauthentifizierung zu deaktivieren](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online), wodurch alle Clientzugriffs Anforderungen für die Verwendung der modernen Authentifizierung erzwungen werden.
+
 ## <a name="high-risk-users-must-change-password"></a>Nutzer mit hohem Risiko müssen das Kennwort ändern
 
 Um sicherzustellen, dass alle gefährdeten Benutzerkonten mit hohem Risiko gezwungen werden, beim Anmelden eine Kennwortänderung durchzuführen, müssen Sie die folgende Richtlinie anwenden.
@@ -266,7 +268,7 @@ Sie müssen für jede PC-, Telefon-oder Tablet-Plattform eine Richtlinie erstell
 - Android-Geräteadministrator
 - Android Enterprise
 - IOS/iPads
-- MacOS
+- macOS
 - Windows 8.1 und höher
 - Windows 10 und höher
 

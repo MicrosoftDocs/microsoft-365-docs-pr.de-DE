@@ -14,7 +14,9 @@
       href: use-your-free-azure-ad-subscription-in-office-365.md
     - name: Planen von Sicherheit und Compliance in Office 365
       href: plan-for-security-and-compliance.md
-- name: Insider-Risiken verwalten
+    - name: Erweiterbarkeit der Compliance
+      href: compliance-extensibility.md
+- name: Verwalten der Insider-Risiken
   items:
     - name: Insider-Risikomanagement
       items:
@@ -258,6 +260,8 @@
               href: retention-policies-sharepoint.md
             - name: Aufbewahrung für Microsoft Teams
               href: retention-policies-teams.md
+            - name: Aufbewahrung für Yammer
+              href: retention-policies-yammer.md
             - name: Aufbewahrung für Exchange
               href: retention-policies-exchange.md
         - name: Erste Schritte mit der Aufbewahrung
@@ -310,8 +314,52 @@
               href: archive-instant-bloomberg-data.md
             - name: LinkedIn
               href: archive-linkedin-data.md
+            - name: Physikalische Badgeverleihungsdaten
+              href: import-physical-badging-data.md
             - name: Twitter
               href: archive-twitter-data-with-sample-connector.md
+        - name: Globanet-Datenverbinder
+          items:
+            - name: EML
+              href: archive-eml-data.md
+            - name: FX Connect
+              href: archive-fxconnect-data.md
+            - name: Reuters Eikon
+              href: archive-reuterseikon-data.md
+            - name: Slack
+              href: archive-slack-data.md
+            - name: Symphony
+              href: archive-symphony-data.md
+            - name: Texttrennzeichen
+              href: archive-text-delimited-data.md
+            - name: Webex Teams
+              href: archive-webexteams-data.md
+            - name: Workplace von Facebook
+              href: archive-workplacefromfacebook-data.md
+            - name: Zoom Besprechungen
+              href: archive-zoommeetings-data.md
+            - name: Slack
+              href: archive-slack-data.md
+            - name: Zoom Besprechungen
+              href: archive-zoommeetings-data.md
+        - name: TeleMessage Datenconnectors
+          items:
+            - name: Android
+              href: archive-android-archiver-data.md
+            - name: AT&T-Netzwerk
+              href: archive-att-network-archiver-data.md
+            - name: Bell-Netzwerk
+              href: archive-bell-network-data.md
+            - name: Enterprise-Nummer
+              href: archive-enterprise-number-data.md
+            - name: O2-Netzwerk
+              href: archive-o2-network-data.md
+            - name: TELUS-Netzwerk
+              href: archive-telus-network-data.md
+            - name: Verizon-Netzwerk
+              href: archive-verizon-network-data.md
+            - name: WhatsApp
+              href: archive-whatsapp-data.md
         - name: Zusammenarbeit mit einem Partner zum Archivieren von Drittanbieterdaten
           href: work-with-partner-to-archive-third-party-data.md
         - name: Nach Drittanbieterdaten suchen
@@ -794,31 +842,30 @@
       href: alert-policies.md
 - name: Verwalten von Compliancerisiken
   items:
+    - name: Compliance-Manager
+      items:
+        - name: Informationen zu Compliance-Manager
+          href: compliance-manager.md
+        - name: Compliance-Manager-Schnellstart
+          href: compliance-manager-quickstart.md
+        - name: Erste Schritte mit Compliance-Manager
+          href: compliance-manager-setup.md
+        - name: Erstellen und Verwalten von Bewertungen
+          href: compliance-manager-assessments.md
+        - name: Arbeiten mit Evaluierungsvorlagen
+          href: compliance-manager-templates.md
+        - name: Compliance-Manager-Vorlagenliste
+          href: compliance-manager-templates-list.md
+        - name: Zuweisen und Durchführen von Verbesserungsaktionen
+          href: compliance-manager-improvement-actions.md
+        - name: Berechnung des Konformitätswerts
+          href: compliance-score-calculation.md
+        - name: Häufig gestellte Fragen (FAQ)
+          href: compliance-manager-faq.md
+        - name: Compliance-Manager (klassisch)
+          href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: Microsoft Service Trust Portal
       href: get-started-with-service-trust-portal.md
-    - name: Compliancebewertung und Compliance-Manager (Vorschau)
-      items:
-        - name: Compliancebewertung (Vorschau)
-          href: compliance-score.md
-        - name: Einrichten der Compliancebewertung
-          href: compliance-score-setup.md
-        - name: Anpassen der Compliancebewertung mit Bewertungen
-          href: compliance-score-assessments.md
-        - name: Zuweisen und Durchführen von Arbeiten mit Verbesserungsaktionen
-          href: compliance-score-improvement-actions.md
-        - name: So wird Ihre Bewertung berechnet
-          href: compliance-score-methodology.md
-        - name: Häufig gestellte Fragen (FAQ)
-          href: compliance-score-faq.md
-        - name: Compliance-Manager (Vorschau)
-          href: compliance-manager-overview.md
-          items:
-            - name: Neuerungen beim Compliance-Manager (Vorschau)
-              href: compliance-manager-release-notes.md
-            - name: Arbeiten mit Compliance-Manager (Vorschau)
-              href: working-with-compliance-manager.md
-            - name: Compliance-Manager (klassisch)
-              href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: 'DSGVO: Tool für Anträge betroffener Personen'
       href: manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md
     - name: Schutz von Informationen in Office 365 für die DSGVO

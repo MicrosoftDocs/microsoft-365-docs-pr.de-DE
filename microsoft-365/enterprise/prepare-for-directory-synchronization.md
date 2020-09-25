@@ -26,16 +26,16 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Beschreibt, wie Sie die Bereitstellung von Benutzern auf Microsoft 365 mithilfe der Verzeichnissynchronisierung und die langfristigen Vorteile der Verwendung dieser Methode vorbereiten.
-ms.openlocfilehash: 790ea72879a40681447a2ca2ef883c7c601ba475
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: c9d4368d1939b9c6feedf5146f9d168f18d5d5b1
+ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546686"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269417"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Vorbereiten der Verzeichnissynchronisierung mit Microsoft 365
 
-*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Microsoft 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
 Zu den Vorteilen der Hybriden Identitäts-und Verzeichnissynchronisierung in Ihrer Organisation gehören:
 
