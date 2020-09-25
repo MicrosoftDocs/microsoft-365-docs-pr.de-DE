@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erstellen Sie Assessments in Microsoft Compliance Manager, um die Anforderungen von Vorschriften und Zertifizierungen zu erfüllen, die für Ihre Organisation wichtig sind.
-ms.openlocfilehash: 5bbdba66d2288c173827062aade3bbd196d77040
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: d09103f58be3a5fa39b57ca35da411e8046aace5
+ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204458"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48262290"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Erstellen und Verwalten von Bewertungen im Compliance-Manager
 
@@ -206,6 +206,9 @@ Führen Sie die folgenden Schritte aus, um eine Bewertung zu löschen:
 3. Ein Fenster wird angezeigt, in dem Sie aufgefordert werden, zu bestätigen, dass der Test endgültig gelöscht werden soll. Wählen Sie **Bewertung löschen** aus, um das Fenster zu schließen. Sie erhalten ein Bestätigungsfenster, dass Ihre Bewertung aus dem Compliance-Manager gelöscht wurde.
 
 Wenn Sie die einzige Bewertung in einer Gruppe löschen, wird diese Gruppe auch aus dem Compliance-Manager gelöscht.
+
+> [!NOTE]
+> Alle Ihre Bewertungen können nicht gelöscht werden. Organisationen benötigen mindestens eine Bewertung, damit Compliance-Manager ordnungsgemäß funktioniert. Wenn die Bewertung, die Sie löschen möchten, die einzige ist, fügen Sie eine weitere Bewertung hinzu, bevor Sie die andere Bewertung löschen.
 
 ## <a name="monitor-assessment-progress-and-controls"></a>Überwachen des Status der Bewertung und der Steuerelemente
 

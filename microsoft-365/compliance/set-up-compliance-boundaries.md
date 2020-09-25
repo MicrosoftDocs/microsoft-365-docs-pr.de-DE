@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Erfahren Sie, wie Sie mithilfe von Kompatibilitäts Grenzen logische Grenzen erstellen, die die Benutzerinhalts Speicherorte steuern, die ein eDiscovery-Manager in Microsoft 365 durchsuchen kann.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a8aaa1128788ba8f2f4ece7fb54f886595770c01
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 1c0d0b4b8c5c43945efad737165acdd2612d33b7
+ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357767"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269394"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Einrichten von Compliance-Grenzen für eDiscovery-Untersuchungen
 
@@ -55,7 +55,7 @@ Hier ist der Prozess zum Einrichten von Kompatibilitäts Grenzen:
 [Schritt 4: Erstellen eines Such Berechtigungs Filters zum Erzwingen der Konformitäts Grenze](#step-4-create-a-search-permissions-filter-to-enforce-the-compliance-boundary)
 
 [Schritt 5: Erstellen eines eDiscovery-Falls für eine Intra-Agency-Untersuchung](#step-5-create-an-ediscovery-case-for-intra-agency-investigations)
-  
+
 ## <a name="step-1-identify-a-user-attribute-to-define-your-agencies"></a>Schritt 1: Identifizieren eines Benutzer Attributs zur Definition ihrer Agenturen
 
 Der erste Schritt besteht darin, ein zu verwendender Azure Active Directory-Attribut auszuwählen, mit dem Ihre Agenturen definiert werden. Dieses Attribut wird verwendet, um den Such Berechtigungsfilter zu erstellen, mit dem ein eDiscovery-Manager so eingeschränkt wird, dass nur die inhaltsspeicherorte von Benutzern durchsucht werden, denen ein bestimmter Wert für dieses Attribut zugewiesen ist. Angenommen, Contoso entscheidet, das **Department** -Attribut zu verwenden. Der Wert für dieses Attribut für Benutzer in der vierten Coffee-Tochtergesellschaft wäre  `FourthCoffee`  und der Wert für die Benutzer in der Weingut-Tochtergesellschaft `CohoWinery` . In Schritt 4 verwenden Sie dieses  `attribute:value`  Paar (beispielsweise *Department: fourthcoffee*), um die Benutzerinhalts Speicherorte zu begrenzen, die eDiscovery-Manager durchsuchen können. 

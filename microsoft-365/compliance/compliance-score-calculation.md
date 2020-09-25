@@ -15,17 +15,19 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Microsoft Compliance Manager eine personalisierte Bewertung basierend auf Aktionen berechnet, die zur Behebung von Risiken und zur Verbesserung der Compliance-Haltung ergriffen werden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9fd71b4953dc40a3c1e7601f42f595488fcef98b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f1707e0117d0a61f572716f21d13a02821955401
+ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204410"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48262268"
 ---
 # <a name="compliance-score-calculation"></a>Berechnung der Konformitätsbewertung
 
+**In diesem Artikel:** Erfahren Sie, wie Compliance-Manager eine Konformitätsbewertung für Ihre Organisation berechnet. In diesem Artikel wird erläutert, wie **Sie Ihre Partitur interpretieren**, was die **grundlegende datenschutzbewertung** umfasst, die **kontinuierliche Überwachung**und **wie verschiedene Arten von Aktionen verwaltet und bewertet werden**.
+
 > [!IMPORTANT]
-> Empfehlungen vom Compliance-Manager sollten nicht als Garantie für die Compliance interpretiert werden. Es liegt an Ihnen, die Effektivität von Kunden Kontrollen pro ihrer regulatorischen Umgebung zu bewerten und zu validieren. Diese Dienste unterliegen den allgemeinen Geschäftsbedingungen in den [Online Dienstbedingungen](https://go.microsoft.com/fwlink/?linkid=2108910). Siehe auch [Microsoft 365 Lizenzierung Leitfaden für Sicherheit und Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+> Empfehlungen des Compliance-Managers sollten nicht als eine Garantie für Compliance interpretiert werden. Es liegt an Ihnen, die Effektivität von Kunden Kontrollen pro ihrer regulatorischen Umgebung zu bewerten und zu validieren. Diese Dienste unterliegen den allgemeinen Geschäftsbedingungen in den [Online Dienstbedingungen](https://go.microsoft.com/fwlink/?linkid=2108910). Siehe auch [Microsoft 365 Lizenzierung Leitfaden für Sicherheit und Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="how-to-read-your-compliance-score"></a>Vorgehensweise zum Lesen der Konformitätsbewertung
 
