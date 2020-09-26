@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Erfahren Sie, wie Sie eine neue Untersuchung in Data Investigations (Preview) im Microsoft 365 Compliance Center erstellen, konfigurieren und speichern.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1dae733a2e6dacfc2cc871cc9b589927d306599a
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 740f9ff3e5d183f21744c69116bb0f23818d7f6c
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46526911"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285751"
 ---
 # <a name="create-a-new-investigation-in-data-investigations-preview"></a>Erstellen einer neuen Untersuchung in Data Investigations (Preview)
 

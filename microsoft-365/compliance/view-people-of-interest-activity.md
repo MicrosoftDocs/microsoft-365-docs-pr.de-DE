@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
 description: Verwenden Sie das Tool für die Daten Ermittlungen (Preview) People of Interest Management in ihrer Untersuchung, indem Sie die Aktivität für Personen mit Interesse aufrufen und durchsuchen.
-ms.openlocfilehash: 0c651a493356ded32ade5ae0a349f64b98d43542
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: e5369307894726c37d465fad6c29c1dac0e7391c
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434300"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285931"
 ---
 # <a name="view-the-audit-activity-of-people-of-interest"></a>Anzeigen der Überwachungsaktivität von Personen von Interesse
 
@@ -47,7 +47,7 @@ Ihnen wurde in Exchange Online eine entweder die Rolle „Überwachungsprotokoll
 
    4. Konfigurieren Sie die folgenden Suchkriterien: 
 
-      a. **Aktivitäten** – klicken Sie auf die Dropdownliste, um die Aktivitäten anzuzeigen, nach denen Sie suchen können. Nachdem Sie die Suche ausgeführt haben, werden nur die Überwachungseinträge für die ausgewählten Aktivitäten angezeigt. Wenn Sie **Ergebnisse für alle Aktivitäten anzeigen** auswählen, werden die Ergebnisse für alle Aktivitäten angezeigt, die den anderen Suchkriterien entsprechen.
+      a. **Aktivitäten** – klicken Sie auf die Dropdownliste, um die Aktivitäten anzuzeigen, nach denen Sie suchen können. Nachdem Sie die Suche ausgeführt haben, werden nur die Überwachungsdatensätze für die ausgewählten Aktivitäten angezeigt. Wenn Sie **Ergebnisse für alle Aktivitäten anzeigen** auswählen, werden die Ergebnisse für alle Aktivitäten angezeigt, die den anderen Suchkriterien entsprechen.
 
       b. **Start Datum und Enddatum** – wählen Sie einen Datums-und Zeitbereich aus, um die Ereignisse anzuzeigen, die innerhalb dieses Zeitraums aufgetreten sind. Die letzten sieben Tage sind standardmäßig ausgewählt. Das Datum und die Uhrzeit werden im UTC-Format (Coordinated Universal Time) angezeigt. Der maximale Datumsbereich, den Sie angeben können, ist ein Jahr.
 
@@ -59,7 +59,7 @@ Ihnen wurde in Exchange Online eine entweder die Rolle „Überwachungsprotokoll
 
 Die Ergebnisse einer Überwachungsprotokoll Suche werden unter Ergebnisse auf der Seite Überwachungsprotokoll für Personen mit Interesse angezeigt. Es werden maximal 5.000 (neueste) Ereignisse in Schritten von 150 Ereignissen angezeigt. Zum Anzeigen weiterer Ereignisse können Sie die Bildlaufleiste im Bereich Ergebnisse verwenden oder UMSCHALT+ENDE drücken, um die nächsten 150 Ereignisse anzuzeigen.
 
-Die Ergebnisse enthalten die folgenden Informationen zu jedem Ereignis, das von der Suche zurückgegeben wird.
+Die Ergebnisse enthalten die folgenden Informationen zu den einzelnen Ereignissen, die bei der Suche zurückgegeben werden.
 
 - **Datum**: Das Datum und die Uhrzeit (im UTC-Format), zu der das Ereignis auftrat.
 
@@ -67,11 +67,11 @@ Die Ergebnisse enthalten die folgenden Informationen zu jedem Ereignis, das von 
 
 - **Benutzer**: Der Benutzer (oder das Dienstkonto), der die Aktion ausführte, durch die das Ereignis ausgelöst wurde.
 
-- **Aktivität**: Die vom Benutzer ausgeführte Aktivität. Dieser Wert entspricht den Aktivitäten, die Sie in der Dropdownliste Aktivitäten ausgewählt haben. Bei einem Ereignis aus dem Exchange-Administratorüberwachungsprotokoll ist der Wert in dieser Spalte ein Exchange-Cmdlet.
+- **Aktivität**: Die vom Benutzer ausgeführte Aktivität. Dieser Wert entspricht den Aktivitäten, die Sie in der Dropdownliste "Aktivitäten" ausgewählt haben. Bei einem Ereignis aus dem Exchange-Administratorüberwachungsprotokoll ist der Wert in dieser Spalte ein Exchange-Cmdlet.
 
 - **Element**: Das Objekt, das als Ergebnis der entsprechenden Aktivität erstellt oder geändert wurde. Dies kann z. B. die Datei sein, die angezeigt oder geändert wurde, oder das Benutzerkonto, das aktualisiert wurde. Nicht alle Aktivitäten haben in dieser Spalte einen Wert.
 
-- **Detail**: Weitere Details zu einer Aktivität. Auch hier haben nicht alle Aktivitäten einen Wert.
+- **Detail**: Zusätzliches Detail zu einer Aktivität. Auch hier weisen nicht alle Aktivitäten einen Wert auf.
 
 ## <a name="step-3-filter-the-search-results"></a>Schritt 3: Filtern der Suchergebnisse
 

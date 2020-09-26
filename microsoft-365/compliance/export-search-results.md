@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exportieren Sie die Suchergebnisse aus einer Inhaltssuche im Compliance Center des Sicherheits & auf einen lokalen Computer. E-Mail-Ergebnisse werden als PST-Dateien exportiert. Inhalte aus SharePoint-und OneDrive für Unternehmen-Websites werden als systemeigene Office-Dokumente exportiert. '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 59b0d723c93bddd607c12172ee0fed81650a09b0
-ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
+ms.openlocfilehash: a809a5880a247c66cd96daf7ae44efea13c04704
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269593"
+ms.locfileid: "48277465"
 ---
 # <a name="export-content-search-results"></a>Exportieren von Inhaltssuchergebnissen
 
@@ -317,7 +317,7 @@ Hier finden Sie weitere Informationen zum Exportieren von Suchergebnissen.
 
   ![eDiscovery-Export Tool](../media/eDiscoveryExportTool.png)
 
-  Klicken Sie in das Feld Exportschlüssel, und drücken Sie dann `CTRL + V` , um den Exportschlüssel einzufügen (das Skript kopiert den Exportschlüssel in die Zwischenablage, sodass Sie ihn in das Feld einfügen können). Klicken Sie auf **Durchsuchen** , um den Speicherort anzugeben, an dem Sie die Suchergebnisdateien herunterladen möchten, und starten Sie dann den Download.
+  Klicken Sie in das Feld Exportschlüssel, und drücken Sie dann `CTRL + V` , um den Exportschlüssel einzufügen (das Skript kopiert den Exportschlüssel in die Zwischenablage). Klicken Sie auf **Durchsuchen** , um den Speicherort anzugeben, an dem Sie die Dateien herunterladen möchten, und starten Sie dann den Download.
 
   Wie bereits erwähnt, wird empfohlen, Suchergebnisse aufgrund der hohen Datenträgeraktivität (Lese-und Schreibvorgänge) auf ein lokales Laufwerk herunterzuladen. Laden Sie die Suchergebnisse nicht auf ein zugeordnetes Netzlaufwerk oder einen anderen Netzwerkspeicherort herunter.
 

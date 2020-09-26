@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: In diesem Artikel erfahren Sie, wie Sie die erweiterte Indizierung verwenden, um sicherzustellen, dass alle Daten, die Sie untersuchen möchten, erfasst werden.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6e72ec4a41d5b32ef3837e52f21836207c6f66e1
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 7b0bb1a757ac70466fb43f2385485ce6da1dc741
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527577"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285961"
 ---
 # <a name="advanced-indexing-of-data-for-an-investigation"></a>Erweiterte Indizierung von Daten für eine Untersuchung
 

@@ -14,17 +14,16 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 description: Suchstatistiken sind eine effektive Möglichkeit, Ihre Suchergebnisse zu überprüfen und unter Status auf der Flyout-Seite mit den Suchdetails anzuzeigen.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: dc6aea96e86388ae7ecfa0fa545bc5571eeff0cd
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 24de99cf0a7ae21b5966811b988c93d64abd5148
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035837"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48286091"
 ---
-# <a name="search-statistics"></a>Suchstatistiken
+# <a name="search-statistics-in-data-investigations-preview"></a>Suchstatistik in Daten Untersuchungen (Vorschau)
 
 Eine effektive Möglichkeit zum Überprüfen Ihrer Suchergebnisse bei der Untersuchung eines Daten Vorfalls besteht darin, die Statistiken zu Ihren Suchergebnissen anzuzeigen, um sicherzustellen, dass Sie Ihren Erwartungen entsprechen. Wenn eine Suche als abgeschlossen ausgeführt wird, werden die folgenden allgemeinen Statistiken unter **Status** auf der Flyout-Seite "Suchdetails" angezeigt:
 

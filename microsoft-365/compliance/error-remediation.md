@@ -14,17 +14,16 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 description: In diesem Artikel erfahren Sie, wie Sie mithilfe der Fehlerbehebung Daten Probleme in Daten Untersuchungen (Preview) korrigieren können, die eine ordnungsgemäße Verarbeitung von Inhalten verhindern könnten.
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: fe77f918a7471bf36df7727f890ea043976e44db
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: c6c62bb1a3191e369d553df5eb451d4656e704d7
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817814"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48286031"
 ---
 # <a name="error-remediation-when-processing-data-for-an-investigation"></a>Fehlerkorrektur beim Verarbeiten von Daten für eine Untersuchung
 
@@ -43,7 +42,7 @@ Verwenden Sie den folgenden Workflow, um Dateien mit Fehlern in Daten Ermittlung
 
 3. Klicken Sie auf **+ neue Fehlerkorrektur**.
 
-    ![Fehlerbehebung](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
+    ![Klicken Sie auf die Schaltfläche neue Fehlerkorrektur.](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
     Die Fehlerbehebungssitzung beginnt, beginnend mit einer Vorbereitungsphase, in der die Dateien mit Fehlern an einen sicheren Azure-Speicherort kopiert werden, damit Sie heruntergeladen werden können.
 
@@ -51,9 +50,9 @@ Verwenden Sie den folgenden Workflow, um Dateien mit Fehlern in Daten Ermittlung
 
 4. Nachdem die Vorbereitung abgeschlossen ist, klicken Sie auf **Weiter: Dateien herunterladen** , um den Download fortzusetzen.
 
-    ![Herunterladen von Dateien](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
+    ![Herunterladen der Dateien, die eine Korrektur erfordern](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
-5. Geben Sie zum Herunterladen von Dateien den **Ziel Pfad für den Download**an. Dies ist ein Pfad auf dem lokalen Computer, auf dem die Datei heruntergeladen werden soll.  Der Standardpfad,%USERPROFILE%\Downloads\errors, verweist auf den Ordner "Downloads" des angemeldeten Benutzers; Dies kann bei Bedarf geändert werden.
+5. Geben Sie für den Download von Dateien den **Zielpfad für den Download** an. Dies ist ein Pfad auf dem lokalen Computer, auf dem die Datei heruntergeladen werden soll.  Der Standardpfad,%USERPROFILE%\Downloads\errors, verweist auf den Ordner "Downloads" des angemeldeten Benutzers; Dies kann bei Bedarf geändert werden.
 
     >[!NOTE]
     >Es wird empfohlen, einen lokalen Dateipfad anstelle eines Remotenetzwerk Pfads zu verwenden, um eine optimale Leistung zu erzielen.
@@ -61,11 +60,11 @@ Verwenden Sie den folgenden Workflow, um Dateien mit Fehlern in Daten Ermittlung
     > [!NOTE]
     > Wenn Sie AzCopy nicht installiert haben, gehen Sie zu [Erste Schritte mit AzCopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy) , um es zu installieren.
 
-6. Kopieren Sie den vordefinierten Befehl **, indem Sie auf in Zwischenablage kopieren**klicken. Starten Sie eine Windows-Eingabeaufforderung, fügen Sie den Befehl ein, und drücken Sie dann die **Eingabe**Taste.  
+6. Kopieren Sie den vordefinierten Befehl, indem Sie auf **In Zwischenablage kopieren** klicken. Starten Sie eine Windows-Eingabeaufforderung, fügen Sie den Befehl ein, und drücken Sie dann die **Eingabe**Taste.  
 
     Die Dateien werden heruntergeladen.
 
-    ![Vorbereiten der Fehlerbehebung](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
+    ![Informationen zu den heruntergeladenen Dateien an der Eingabeaufforderung](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
     > [!NOTE]
     > Wenn beim Ausführen dieses Befehls Probleme auftreten, lesen Sie [Troubleshooting AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md).
@@ -77,13 +76,13 @@ Verwenden Sie den folgenden Workflow, um Dateien mit Fehlern in Daten Ermittlung
 
 8. Kehren Sie nun zu Daten Untersuchungen (Vorschau) zurück, und klicken Sie auf **Weiter: Dateien hochladen**.  Dadurch gelangen Sie zum nächsten Schritt, in dem Sie die Dateien jetzt hochladen können.
 
-    ![Hochladen von Dateien](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
+    ![Die Registerkarte "Dateien hochladen"](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
 9. Geben Sie den Speicherort der korrigierten Dateien in das Textfeld **Pfad zum Speicherort der Dateien** ein, und klicken Sie dann auf **in Zwischenablage kopieren**.
 
 10. Fügen Sie den Befehl in eine Windows-Eingabeaufforderung ein, und drücken **Sie die EINGABETASTE** , um die Dateien hochzuladen.
 
-    ![ff2ff691-629f-4065-9b37-5333f937daf6.png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
+    ![Informationen über hochgeladene Dateien an der Eingabeaufforderung](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
 11. Kehren Sie schließlich zu Daten Untersuchungen (Vorschau) zurück, und klicken Sie auf **Weiter: Process files**.
 

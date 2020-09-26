@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,14 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: Das Markieren von Dokumenten in einer Überprüfungsgruppe hilft, unnötigen Inhalt zu entfernen und relevante Inhalte in einem erweiterten eDiscovery-Fall zu identifizieren.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 445bf9a0ee5959c4972920a74e7bd1596d9edca1
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 83e7a3c9c097968c4d773e6e2092bb3c50154cc3
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034549"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285281"
 ---
-# <a name="tag-documents-in-a-review-set"></a>Markieren von Dokumenten in einem Prüfdateisatz
+# <a name="tag-documents-in-a-review-set-in-advanced-ediscovery"></a>Markieren von Dokumenten in einer Überprüfungsgruppe in Advanced eDiscovery
 
 Das Organisieren von Inhalten in einem Überprüfungs Satzes ist wichtig, um verschiedene Workflows im eDiscovery-Prozess abzuschließen. Dies umfasst Folgendes:
 
@@ -64,7 +64,7 @@ Wenn Sie ein Dokument in einem Überprüfungs Satzes anzeigen, können Sie die T
 
 ![Klicken Sie auf Tag Panel, um das Tag-Panel anzuzeigen](../media/Singledoctag.png)
 
-Auf diese Weise können Sie Tags auf das Dokument anwenden, das im Viewer angezeigt wird.
+Auf diese Weise können Sie Tags auf das im Viewer angezeigte Dokument anwenden.
 
 ### <a name="bulk-tagging"></a>Massen Markierung
 

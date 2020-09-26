@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Sie können einen Verarbeitungsfehler in einem Dokument in einer Überprüfungsgruppe in Advanced eDiscovery beheben, ohne den Prozess der Massen Fehlerkorrektur durchführen zu müssen.
-ms.openlocfilehash: 3c50f9dcd1448ee36edd0e82e5b2c2879c11d6b5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: c318148900d891304ebcb9b4a88abfe52f43c05e
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069667"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285841"
 ---
-# <a name="single-item-error-remediation"></a>Korrektur von Fehlern einzelner Elemente
+# <a name="single-item-error-remediation-in-advanced-ediscovery"></a>Fehlerbehebung einzelner Elemente in Advanced eDiscovery
 
 Durch die Fehlerkorrektur können erweiterte eDiscovery-Benutzerdaten Probleme beheben, durch die verhindert wird, dass Advanced eDiscovery die Inhalte ordnungsgemäß verarbeitet. Beispielsweise können Dateien, die kennwortgeschützt sind, nicht verarbeitet werden, da diese Dateien gesperrt oder verschlüsselt sind. Zuvor konnten Sie Fehler in Massen mithilfe [dieses Workflows](error-remediation-when-processing-data-in-advanced-ediscovery.md)nur beheben. Manchmal ist es jedoch nicht sinnvoll, Fehler in mehreren Dateien zu beheben, wenn Sie sich nicht sicher sind, ob eine dieser Dateien auf den Fall reagiert, den Sie untersuchen. Es ist auch möglicherweise nicht sinnvoll, Fehler zu beheben, bevor Sie die Datei Metadaten (beispielsweise den Dateispeicherort oder die Zugriffsberechtigung) überprüfen konnten, damit Sie Vorabentscheidungen zur Reaktionsfähigkeit treffen können. Ein neues Feature namens " *Single Item Error Remediation* " gibt eDiscovery-Managern die Möglichkeit, die Metadaten von Dateien mit einem Verarbeitungsfehler anzuzeigen und den Fehler bei Bedarf direkt in der Überprüfungsgruppe zu beheben. In diesem Artikel wird erläutert, wie Sie Dateien mit Verarbeitungsfehlern in einem Überprüfungs Satz identifizieren, ignorieren und korrigieren.
 
@@ -53,7 +53,7 @@ In einigen Fällen müssen Sie möglicherweise einen Verarbeitungsfehler in Doku
 
 Führen Sie die folgenden Schritte aus, um ein einzelnes Dokument zu korrigieren:
 
-1. Klicken Sie auf Download**Original** herunterladen, um eine Kopie der Datei auf einen lokalen Computer herunterzuladen. **** > 
+1. Klicken **Sie**auf Download  >  **Original** herunterladen, um eine Kopie der Datei auf einen lokalen Computer herunterzuladen.
 
    ![Herunterladen des Dokuments mit dem Verarbeitungsfehler](../media/SIERimage5.png)
 

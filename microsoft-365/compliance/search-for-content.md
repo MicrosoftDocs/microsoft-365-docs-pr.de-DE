@@ -13,14 +13,14 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: Verwenden Sie das eDiscovery-Tool für die Inhaltssuche im Security & Compliance Center, um e-Mails in Exchange-Postfächern, Dokumenten in SharePoint-Websites und OneDrive-Speicherorten und Chatnachrichten in Skype for Business schnell zu finden.
-ms.openlocfilehash: 2b874181fdfc5bce69227acc279e12bffe70c069
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c02bcf627cec46b52ba9ff449a0d39b185ce4a0a
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632920"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285981"
 ---
-# <a name="search-for-content"></a>Suchen nach Inhalten
+# <a name="search-for-content-using-the-content-search-tool"></a>Suchen nach Inhalten mithilfe des Inhalts Such Tools
 
 Verwenden Sie das Tool für die Inhaltssuche im Security & Compliance Center, um e-Mails schnell in Exchange-Postfächern, Dokumenten in SharePoint-Websites und OneDrive-Speicherorten sowie Chatnachrichten in Skype for Business zu finden. Sie können das Inhalts Such Tool verwenden, um nach e-Mails, Dokumenten und Chat Unterhaltungen in Collaboration-Tools wie Microsoft Teams und Microsoft 365-Gruppen zu suchen.
   
@@ -36,7 +36,7 @@ Der erste Schritt besteht darin, mithilfe des Inhalts Such Tools inhaltsspeicher
     
 - [Ausführen einer ID-Listensuche](csv-file-for-an-id-list-content-search.md) zum Suchen nach bestimmten e-Mail-Nachrichten 
     
-- [Durchsuchen von Cloud-basierten Postfächern](search-cloud-based-mailboxes-for-on-premises-users.md) für lokale Benutzer in Microsoft 365
+- [Durchsuchen von Cloud-basierten Postfächern ](search-cloud-based-mailboxes-for-on-premises-users.md) für lokale Benutzer in Microsoft 365
 
 - [Anzeigen von Schlüsselwort Statistiken](view-keyword-statistics-for-content-search.md) für die Ergebnisse einer Suche und verfeinern der Abfrage bei Bedarf 
     
@@ -79,7 +79,7 @@ Die Inhaltssuche ist einfach zu verwenden, ist aber auch ein leistungsfähiges T
 
 Manchmal müssen Sie erweiterte, komplexere und sich wiederholende Inhalts Suchaufgaben durchführen. In diesen Fällen ist es einfacher und schneller, PowerShell-Befehle im Security & Compliance Center zu verwenden. Um dies zu vereinfachen, haben wir eine Reihe von Security & Compliance Center PowerShell-Skripts erstellt, die Sie bei der Durchführung komplexer Inhaltssuche-bezogener Aufgaben unterstützen.
   
-- [Durchsuchen bestimmter Post Fach-und Websiteordner](use-content-search-for-targeted-collections.md) (als *gezielte Sammlung* bezeichnet), wenn Sie sicher sind, dass sich auf einen Fall reagierende Elemente in diesem Ordner befinden 
+- [Durchsuchen bestimmter Post Fach-und Websiteordner](use-content-search-for-targeted-collections.md) (als  *gezielte Sammlung*  bezeichnet), wenn Sie sicher sind, dass sich auf einen Fall reagierende Elemente in diesem Ordner befinden 
     
 - [Durchsuchen des Post Fach-und OneDrive-Speicherorts](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) nach einer Liste von Benutzern 
     

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Erfahren Sie, wie Sie mithilfe von Kompatibilitäts Grenzen logische Grenzen erstellen, die die Benutzerinhalts Speicherorte steuern, die ein eDiscovery-Manager in Microsoft 365 durchsuchen kann.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1c0d0b4b8c5c43945efad737165acdd2612d33b7
-ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
+ms.openlocfilehash: 19165af60d7813134952589831bf94a91bfe7f40
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269394"
+ms.locfileid: "48277101"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Einrichten von Compliance-Grenzen für eDiscovery-Untersuchungen
 
@@ -70,7 +70,10 @@ Im folgenden finden Sie eine Liste der Azure Active Directory Benutzerattribute,
 
 - Büro
 
-- C (zweistelliger Landes Code)
+- C (Ländervorwahl mit zwei Buchstaben) <sup>*</sup>
+
+  > [!NOTE]
+  > <sup>*</sup> Dieses Attribut wird der CountryOrRegion-Eigenschaft zugeordnet, die durch Ausführen des Cmdlets **Get-User** in Exchange Online PowerShell zurückgegeben wird. Das Cmdlet gibt den lokalisierten Ländernamen zurück, der aus dem aus zwei Buchstaben bestehenden Ländercode übersetzt wird. Weitere Informationen finden Sie in der Beschreibung des CountryOrRegion-Parameters im Referenzartikel zum Cmdlet " [Sets-User](https://docs.microsoft.com/powershell/module/exchange/set-user) ".
 
 Obwohl mehr Benutzerattribute verfügbar sind, insbesondere für Exchange-Postfächer, sind die oben aufgeführten Attribute die einzigen, die derzeit von OneDrive unterstützt werden.
   
@@ -243,7 +246,7 @@ Beachten Sie beim Suchen und Exportieren von Inhalten in Multi-Geo-Umgebungen di
 
 ## <a name="using-compliance-boundaries-for-sharepoint-hub-sites"></a>Verwenden von Kompatibilitäts Grenzen für SharePoint-Hub-Websites
 
-[SharePoint-Hub-Websites](https://docs.microsoft.com/sharepoint/dev/features/hub-site/hub-site-overview) richten sich häufig nach den gleichen geografischen oder behördlichen Grenzen, denen eDiscovery-Konformitäts Grenzen folgen. Das bedeutet, dass Sie die Website-ID-Eigenschaft des Hub-Standorts verwenden können, um eine Konformitäts Grenze zu erstellen. Verwenden Sie dazu das Cmdlet [Get-SPOHubSite](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spohubsite?view=sharepoint-ps#examples) in SharePoint Online PowerShell, um die Website-ID für den Hub-Standort abzurufen, und verwenden Sie dann diesen Wert für die Abteilungs-ID-Eigenschaft, um einen Such Berechtigungsfilter zu erstellen.
+[SharePoint-Hub-Websites](https://docs.microsoft.com/sharepoint/dev/features/hub-site/hub-site-overview) richten sich häufig nach den gleichen geografischen oder behördlichen Grenzen, denen eDiscovery-Konformitäts Grenzen folgen. Das bedeutet, dass Sie die Website-ID-Eigenschaft des Hub-Standorts verwenden können, um eine Konformitäts Grenze zu erstellen. Verwenden Sie dazu das Cmdlet [Get-SPOHubSite](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spohubsite#examples) in SharePoint Online PowerShell, um die Website-ID für den Hub-Standort abzurufen, und verwenden Sie dann diesen Wert für die Abteilungs-ID-Eigenschaft, um einen Such Berechtigungsfilter zu erstellen.
 
 Verwenden Sie die folgende Syntax, um einen Such Berechtigungsfilter für eine SharePoint-Hub-Website zu erstellen:
 

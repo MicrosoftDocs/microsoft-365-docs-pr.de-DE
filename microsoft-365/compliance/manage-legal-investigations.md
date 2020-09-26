@@ -17,12 +17,12 @@ ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
 description: Verwenden Sie eDiscovery-Fälle im Security & Compliance Center in Office 365, um die rechtliche Untersuchung Ihres Unternehmens zu verwalten.
-ms.openlocfilehash: 0e39c2cfb865e6cf649bf1ff7702d97bd29352b9
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: edc9835cdbefa611af4c0906be5d3e1d0404c635
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44815502"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285651"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>Verwalten von rechtlichen Untersuchungen in Microsoft 365
 
@@ -52,7 +52,7 @@ Wie im vorherigen Abschnitt, in dem Skripts für Inhalts Suchszenarien aufgefüh
   
 ## <a name="manage-legal-investigations-with-the-advanced-ediscovery-solution-in-microsoft-365"></a>Verwalten von rechtlichen Untersuchungen mit der erweiterten eDiscovery-Lösung in Microsoft 365
 
-Die erweiterte eDiscovery-Lösung in Microsoft 365 baut auf den vorhandenen eDiscovery-und Analysefunktionen in Office 365 auf. Diese neue Lösung, die als *Erweiterte eDiscovery*bezeichnet wird, bietet einen End-to-End-Workflow zum aufbewahren, sammeln, überprüfen, analysieren und Exportieren von Inhalten, die auf interne und externe Untersuchungen in Ihrer Organisation reagieren. Außerdem können Legal Teams den gesamten Workflow für rechtliche Aufbewahrungs Benachrichtigungen verwalten, um mit in einem Fall beteiligten Verwaltern zu kommunizieren.
+Die Advanced eDiscovery-Lösung in Microsoft 365 basiert auf den vorhandenen eDiscovery- und Analysefunktionen in Office 365. Diese neue Lösung mit dem Namen *Advanced eDiscovery* bietet einen End-to-End-Workflow zum Beibehalten, Sammeln, Überprüfen, Analysieren und Exportieren von Inhalten, die auf die internen und externen Ermittlungen Ihrer Organisation abgestimmt sind. Außerdem können Rechtsteams den gesamten Benachrichtigungs-Workflow einsehen, der für juristische Zwecke aufbewahrt wurde, und so mit den an einem Fall beteiligten Verwahrern kommunizieren.
 
 Advanced eDiscovery erfordert ein E5-Abonnement für Ihre Microsoft 365-oder Office 365-Organisation. Weitere Informationen zur Lizenzierung finden Sie unter [Erste Schritte mit Advanced eDiscovery](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses).
 
@@ -68,7 +68,7 @@ Im folgenden finden Sie eine kurze Übersicht über den integrierten Workflow in
 
 - [Sammeln von Daten](collecting-data-for-ediscovery.md) für einen Fall und Hinzufügen des [Add-Ins zu einer Überprüfungsgruppe](collecting-data-for-ediscovery.md#add-search-results-to-a-review-set) zur weiteren Untersuchung
 
-- [Anzeigen](view-documents-in-review-set.md) von Dokumenten, [Abfrage](review-set-search.md) Daten und [Tag](tagging-documents.md) -Elementen in einem Überprüfungs Satzes
+- [Anzeigen ](view-documents-in-review-set.md) von Dokumenten, [Abfrage](review-set-search.md) Daten und [Tag](tagging-documents.md) -Elementen in einem Überprüfungs Satzes
 
 - [Analysieren von Case-Daten](analyzing-data-in-review-set.md) mit erweiterten Analysetools
 

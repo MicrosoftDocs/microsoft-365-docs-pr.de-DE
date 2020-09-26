@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: In diesem Artikel erfahren Sie, wie Sie analytische Tools wie die Erkennung von Duplikaten, e-Mail-Threads und Designs verwenden, um Ihre Untersuchungen zu beschleunigen.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e7c5103adabadf88028351f0314bcdfaa2cd4d0f
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 7a97f5ce7aefdd230a3c7a671155a7b73b2e8e19
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035847"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285341"
 ---
 # <a name="run-analytics-to-investigate-faster"></a>Durchführen von Analysen zur schnelleren Untersuchung
 

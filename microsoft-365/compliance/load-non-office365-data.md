@@ -14,17 +14,16 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 description: In diesem Artikel erfahren Sie, wie Sie das nicht Office 365 Inhalts Importfeature verwenden können, um nicht Office 365 Dokumente in einer Datenermittlung in Beweise hochzuladen.
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 9bfebc6aad9bc37d7d78ec4a0d50e6de967ac7d1
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: b6d8c2f65a1fa3a43fa2ac4bf3821cc6c1fac514
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44815482"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285371"
 ---
 # <a name="load-non-microsoft-365-data-into-evidence"></a>Laden von nicht von Microsoft 365 Daten in Beweise
 
@@ -61,7 +60,7 @@ Wenn Sie das Feature "nicht-Microsoft 365 hochladen" wie in diesem Verfahren bes
 4. Geben Sie im Schritt **Upload Files** den **Pfad zum Speicherort der Dateien**an, wo sich die nicht von Microsoft 365 Daten befinden, die Sie importieren möchten.  Durch Festlegen des richtigen Speicherorts wird sichergestellt, dass der AzCopy-Befehl ordnungsgemäß aktualisiert wird.
 
 > [!NOTE]
-> Wenn Sie AzCopy nicht bereits installiert haben, können Sie dies hier tun:https://docs.microsoft.com/azure/storage/common/storage-use-azcopy
+> Wenn Sie AzCopy nicht bereits installiert haben, können Sie dies hier tun: https://docs.microsoft.com/azure/storage/common/storage-use-azcopy
 
 5. Kopieren Sie den vordefinierten Befehl, indem Sie auf den Link **in Zwischenablage kopieren** klicken. Starten Sie eine Windows-Eingabeaufforderung, fügen Sie den Befehl ein, und drücken Sie die EINGABETASTE.  Die Dateien werden in den sicheren Azure-BLOB-Speicher für den nächsten Schritt hochgeladen.
 

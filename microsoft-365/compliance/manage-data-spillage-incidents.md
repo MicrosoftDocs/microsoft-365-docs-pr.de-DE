@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In diesem Artikel wird beschrieben, wie Sie mithilfe des Tools für die neue Daten Untersuchung (Preview) im Security & Compliance Center einen Vorfall mit Datenüberlauf verwalten.
-ms.openlocfilehash: a544eb1e021faa82d00ac46a7d64a3eb368cc323
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8151cfa04d166ccc180f01d9bb88322ba6157d82
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635935"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285571"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Verwalten eines Ereignisses zur Verschütten von Daten in Microsoft 365
 
@@ -141,6 +141,6 @@ So löschen Sie eine Untersuchung:
 
 1. Klicken Sie auf der Registerkarte **Einstellungen** auf **Ermittlungsinformationen**.
 
-2. Klicken Sie auf **Untersuchung löschen**. 
+2. Klicken Sie auf  **Untersuchung löschen**. 
 
 Wenn Sie die Untersuchung nicht löschen müssen oder wenn Sie die Informationen speichern möchten, die Sie während der Untersuchung gesammelt haben, können Sie auf **Fall schließen**klicken. Später können Sie abgeschlossene Untersuchungen erneut öffnen.

@@ -1,5 +1,5 @@
 ---
-title: Erstellen von Suchabfragen-Daten Untersuchungen
+title: Erstellen von Suchabfragen in Daten Untersuchungen
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,20 +17,20 @@ search.appverid:
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: Verwenden Sie Stichwörter und Bedingungen, um den Suchbereich bei der Suche nach Daten mithilfe von Daten Untersuchung in Microsoft 365 einzuschränken.
-ms.openlocfilehash: 95466d0e7c7109001fef001cc0d5bca5b6d658ed
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: b2d77ef23e7427fd5f770a27166dc571f853191d
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034113"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285761"
 ---
-# <a name="build-search-queries"></a>Erstellen von Suchabfragen
+# <a name="build-search-queries-in-data-investigations-preview"></a>Erstellen von Suchabfragen in Daten Untersuchungen (Vorschau)
 
-Beim Erstellen von Suchabfragen können Sie Schlüsselwörter verwenden, um bestimmte Inhalte und Bedingungen zu finden, um den Umfang der Suche einzuschränken, um Elemente zurückzugeben, die für Ihre Untersuchung am relevantesten sind.
+Beim Erstellen von Suchabfragen können Sie mithilfe von Schlüsselwörtern bestimmte Inhalte finden und mithilfe von Bedingungen den Umfang der Suche so einschränken, dass nur Elemente zurückgegeben werden, die für Ihre Untersuchung am relevantesten sind.
 
 ![Verwenden von Stichwörtern und Bedingungen zum Einschränken der Ergebnisse einer Suche](../media/SearchQueryBox.png)
 
-## <a name="keyword-searches"></a>Stichwortsuche
+## <a name="keyword-searches"></a>Schlüsselwortsuchen
 
 Geben Sie eine Stichwortabfrage in das Feld **Schlüsselwörter** in der Suchabfrage ein. Sie können Schlüsselwörter, Eigenschaften von e-Mail-Nachrichten wie gesendete und empfangene Datumsangaben oder Dokumenteigenschaften angeben, beispielsweise Dateinamen oder das Datum, an dem ein Dokument zuletzt geändert wurde. Sie können auch komplexere Abfragen mit booleschen Operatoren wie **AND**, **OR**, **NOT** und **NEAR** verwenden. Sie können auch nach vertraulichen Informationen wie Sozialversicherungsnummern in Dokumenten in SharePoint und OneDrive (nicht in e-Mail-Nachrichten) suchen oder nach Dokumenten suchen, die extern freigegeben wurden. Wenn Sie das Feld **Schlüsselwörter** leer lassen, sind alle Inhalte, die sich an den angegebenen Inhaltsspeicherorten befinden, in den Suchergebnissen enthalten.
     

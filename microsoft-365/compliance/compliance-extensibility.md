@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie mehr über das Erweitern von Microsoft 365-Kompatibilitätslösungen mithilfe von Drittanbieter-Daten-Konnektoren und Microsoft Graph-APIs.
-ms.openlocfilehash: 284125db8243b10f5c8de7e0a37c1b7284709c28
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8eeb83013ec412ed82973b37c4c10e2250f5eaf8
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204400"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285741"
 ---
 # <a name="microsoft-365-compliance-extensibility"></a>Microsoft 365-Compliance-Erweiterbarkeit
 
@@ -77,7 +77,7 @@ Die Funktionen zur [Verhinderung von Datenverlust (Data Loss Prevention, DLP)](d
 
 Diese beiden APIs bilden die Microsoft Graph-API für Teams DLP. Sie können zunächst die [Beispiel-App](https://github.com/microsoftgraph/csharp-webhook-with-resource-data)ausprobieren. Weitere Informationen zu Microsoft Teams-Messaging-webhooks finden Sie in der [Dokumentation](https://docs.microsoft.com/graph/api/subscription-post-subscriptions).
 
-Die Lizenzierungsanforderungen für Teams DLP finden Sie unter [Microsoft 365-Lizenzierungsrichtlinien für Sicherheits & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
+Die Lizenzierungsanforderungen für Teams DLP finden Sie unter [Microsoft 365-Lizenzierungsrichtlinien für Sicherheits & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-data-loss-prevention-for-teams).
 
 ### <a name="microsoft-graph-api-for-ediscovery-preview"></a>Microsoft Graph-API für eDiscovery (Vorschau)
 

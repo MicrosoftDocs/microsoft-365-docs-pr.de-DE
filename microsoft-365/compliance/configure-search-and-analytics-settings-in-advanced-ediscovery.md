@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren der Such-und Analyse Einstellungen-eDiscovery
+title: Konfigurieren von Such-und Analyse Einstellungen – Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,39 +16,39 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
-description: Konfigurieren Sie erweiterte eDiscovery-Einstellungen, die für alle Überprüfungs Sätze in einem Fall gelten. Dies umfasst Einstellungen für Analyse und OCR.
-ms.openlocfilehash: eb934146b065454b54d797e47f7a643b95be546d
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Konfigurieren Sie erweiterte eDiscovery-Einstellungen, die für alle Überprüfungs Sätze in einem Fall gelten. Dies umfasst Einstellungen für die Analyse und die optische Zeichenerkennung.
+ms.openlocfilehash: dfacab79f635a817b127614f524d00b0297981fb
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033675"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48277083"
 ---
-# <a name="configure-search-and-analytics-settings"></a>Konfigurieren der Such- und Analyseeinstellungen
+# <a name="configure-search-and-analytics-settings-in-advanced-ediscovery"></a>Konfigurieren von Such-und Analyse Einstellungen in Advanced eDiscovery
 
 Sie können Einstellungen für jeden erweiterten eDiscovery-Fall konfigurieren, um die folgenden Funktionen zu steuern.
 
-- Nahe Duplikate und e-Mail-Threading
+- Erkennung von Quasiduplikaten und E-Mail-Threading
 
 - Designs
 
-- Abfrage "automatisch generierte Überprüfungs Satz"
+- Automatisch generierte Prüfdateisatz-Abfrage
 
-- Text ignorieren
+- Ignorieren von Text
 
-- Optische Zeichenerkennung
+- Optical Character Recognition (optische Zeichenerkennung)
 
-So konfigurieren Sie Such-und Analyse Einstellungen für einen Fall:
+So konfigurieren Sie die Such-und Analyseeinstellungen für einen Fall:
 
-1. Wählen Sie auf der Seite **Erweiterte eDiscovery** die Groß-/Kleinschreibung aus.
+1. Wählen Sie auf der Seite **Advanced eDiscovery** den Fall aus.
 
-2. Klicken Sie auf der Registerkarte **Einstellungen** unter **Search & Analytics**auf **auswählen**.
+2. Klicken Sie unter der Registerkarte **Einstellungen** unter **Suche und Analysen** auf **Auswählen**.
 
    Die Seite Fall Einstellungen wird angezeigt. Diese Einstellungen werden in einem Fall auf alle Überprüfungs Sätze angewendet.
 
    ![Konfigurieren von Analyse-und Sucheinstellungen für einen erweiterten eDiscovery-Fall](../media/AeDCaseSettings.png)
 
-## <a name="near-duplicates-and-email-threading"></a>Nahe Duplikate und e-Mail-Threading
+## <a name="near-duplicates-and-email-threading"></a>Erkennung von Quasiduplikaten und E-Mail-Threading
 
 In diesem Abschnitt können Sie Parameter für die doppelte Erkennung, in der Nähe der doppelten Erkennung und beim e-Mail-Threading festlegen. Weitere Informationen finden Sie [in der Nähe der doppelten Erkennung](near-duplicates.md) und des [e-Mail-Threadings](email-threading.md).
 
@@ -70,21 +70,29 @@ In diesem Abschnitt können Sie Parameter für Designs festlegen. Weitere Inform
 
 - **Anpassen der maximalen Anzahl von Designs dynamisch:** In bestimmten Situationen kann es in einem Überprüfungs möglicherweise nicht genügend Dokumente geben, um die gewünschte Anzahl von Designs zu erstellen. Wenn diese Einstellung aktiviert ist, passt Advanced eDiscovery die maximale Anzahl von Designs dynamisch an, anstatt zu versuchen, die maximale Anzahl von Designs zu erzwingen.
 
-## <a name="review-set-query"></a>Abfrage "Sätze überprüfen"
+## <a name="review-set-query"></a>Prüfdateisatz-Abfrage
 
 Wenn Sie das Kontrollkästchen **für Überprüfung gespeicherte Suche nach Analyse automatisch erstellen** aktivieren, wird Advanced eDiscovery autogenet Review Sets Query benannt **zur Überprüfung.** 
 
 ![Die automatisch generierte Abfrage zur Überprüfung](../media/AeDForReviewQuery.png)
 
-Diese Abfrage filtert im wesentlichen doppelte Elemente aus dem Überprüfungs Satzes. Auf diese Weise können Sie die eindeutigen Elemente in der Überprüfungsgruppe überprüfen. Diese Abfrage wird nur erstellt, wenn Sie Analytics für eine Überprüfungsgruppe in dem Fall ausführen. Weitere Informationen zum Überprüfen von Mengen Abfragen finden Sie unter [Abfragen der Daten in einem Überprüfungs Satzes](review-set-search.md).
+Diese Abfrage filtert im wesentlichen doppelte Elemente aus dem Überprüfungs Satzes. Auf diese Weise können Sie die eindeutigen Elemente in der Überprüfungsgruppe überprüfen. Diese Abfrage wird nur erstellt, wenn Sie einen Prüfdateisatz innerhalb des Falls einer Analyse unterziehen. Weitere Informationen zum Überprüfen von Mengen Abfragen finden Sie unter [Abfragen der Daten in einem Überprüfungs Satzes](review-set-search.md).
 
-## <a name="ignore-text"></a>Text ignorieren
+## <a name="ignore-text"></a>Ignorieren von Text
 
-Es gibt Situationen, in denen ein bestimmter Text die Qualität der Analyse verringert, beispielsweise langwierige Haftungsausschlüsse, die zu e-Mail-Nachrichten hinzugefügt werden, unabhängig vom Inhalt der e-Mail. Wenn Sie Text kennen, der ignoriert werden soll, können Sie ihn von Analytics ausschließen, indem Sie die Textzeichenfolge und die Analysefunktionalität (nahe Duplikate, e-Mail-Threading, Designs und Relevanz) angeben, für die der Text ausgeschlossen werden soll. Das Verwenden regulärer Ausdrücke (Regex) als ignorierter Text wird ebenfalls unterstützt. 
+Es gibt Situationen, in denen ein bestimmter Text die Qualität der Analyse verringert, beispielsweise langwierige Haftungsausschlüsse, die zu e-Mail-Nachrichten hinzugefügt werden, unabhängig vom Inhalt der e-Mail. Wenn Sie wollen, dass bestimmte Textzeichenfolgen ignoriert werden soll, können Sie diese aus der Analyse ausschließen, indem Sie die Textzeichenfolgen und die Analysefunktionen (Erkennung von Quasiduplikaten, E-Mail-Threading, Designs und Relevanz) angeben, für die der Text ausgeschlossen werden soll. Das Verwenden regulärer Ausdrücke (Regex) als ignorierter Text wird ebenfalls unterstützt. 
 
-## <a name="optical-character-recognition-ocr"></a>Optische Zeichenerkennung (OCR)
+## <a name="optical-character-recognition-ocr"></a>Optical Character Recognition (OCR; optische Zeichenerkennung)
 
-Wenn diese Einstellung aktiviert ist, wird OCR für Bilddateien ausgeführt, die zu Überprüfungs Sätzen hinzugefügt werden, sodass Bildtext überprüft, durchsucht, markiert und analysiert werden kann. Sie können den extrahierten Text im Text Betrachter der ausgewählten Bilddatei im überprüfungsordner anzeigen. Weitere Informationen finden Sie unter:
+Wenn diese Einstellung aktiviert ist, wird die OCR-Verarbeitung für Bilddateien ausgeführt. Die OCR-Verarbeitung wird in den folgenden Situationen ausgeführt:
+
+- Wenn Verwalter und [Datenquellen ohne Freiheitsentzug](non-custodial-data-sources.md) einem Fall hinzugefügt werden. Die OCR-Verarbeitung wird während des erweiterten Indizierungsprozesses ausgeführt. Dies bedeutet, dass Text in Bilddateien, der mit den Suchkriterien übereinstimmt, in einer Sammlungs Suche zurückgegeben wird.
+
+- Wenn Inhalte aus anderen Datenquellen (die nicht einer Depotstelle zugeordnet sind und dem Fall in einer Datenquelle ohne Freiheitsentzug hinzugefügt werden) zu einem Überprüfungs Satzes hinzugefügt werden.
+
+Nachdem dem Überprüfungs Satzes Daten hinzugefügt wurden, kann der Bildtext überprüft, durchsucht, markiert und analysiert werden. Sie können den extrahierten Text im Text Betrachter der ausgewählten Bilddatei im überprüfungsordner anzeigen. Weitere Informationen finden Sie unter:
+
+- [Erweiterte Indizierung der Daten von Verwaltungsberechtigten](indexing-custodian-data.md)
 
 - [Hinzufügen von Suchergebnissen zu einem Prüfdateisatz](add-data-to-review-set.md#optical-character-recognition)
 

@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Zeigen Sie eine Tabelle an, in der die Metadatenfelder für Dokumente in einem in Data Investigations (Preview) festgelegten Nachweis aufgeführt sind.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4462b2031bc50f3d167b9340b6df5dba5a412d78
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: f365ca6381fee2713f6e1c8e68eb9b1cd8e1fb88
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357625"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285391"
 ---
 # <a name="document-metadata-fields-in-data-investigations-preview"></a>Dokumentmetadaten-Felder in Daten Untersuchungen (Vorschau)
 

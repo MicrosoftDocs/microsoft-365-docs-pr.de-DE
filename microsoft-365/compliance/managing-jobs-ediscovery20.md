@@ -7,21 +7,20 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 description: Erweiterte eDiscovery-Aufträge unterstützen Sie beim Nachverfolgen des Status von langwierigen Prozessen im Zusammenhang mit der Ausführung verschiedener erweiterter eDiscovery-Aufgaben.
-ms.openlocfilehash: a3367a17444ab99cb7c32af455d4564380dfd591
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d41ac3572c462b85ff8f0bac0cc7205a5c012ce9
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632950"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285169"
 ---
 # <a name="manage-jobs-in-advanced-ediscovery"></a>Verwalten von Aufträgen in Advanced eDiscovery
 
@@ -33,7 +32,7 @@ Im folgenden finden Sie eine Liste der Aufträge (in der Regel langwierige Proze
 |Hinzufügen von Daten zu einem anderen Überprüfungs Satzes | Ein Benutzer fügt in demselben Fall Dokumente aus einem Überprüfungs Satzes zu einem anderen Überprüfungs Sätze hinzu. Weitere Informationen finden Sie unter [Hinzufügen von Daten zu einem Überprüfungs Sätze aus einem anderen Überprüfungs Sätze](add-data-to-review-set-from-another-review-set.md).|
 |Hinzufügen von nicht-Microsoft 365-Daten zu einem Überprüfungs Satzes | Ein Benutzer lädt nicht-Microsoft 365-Daten in einen Überprüfungs-Datensatz hoch. Die Daten werden auch während dieses Prozesses indiziert. Beispielsweise werden Dateien von einem lokalen Dateiserver oder einem Clientcomputer in einen Überprüfungs-Datensatz hochgeladen. Weitere Informationen finden Sie unter [Laden von nicht-Microsoft 365-Daten in einen Überprüfungs Satzes](load-non-office365-data.md).| 
 |Hinzufügen von wiederherzustellenden Daten zu einem Überprüfungs Satzes | Daten mit Verarbeitungsfehlern werden wiederhergestellt und in einen Überprüfungs Satz zurückgeladen. Weitere Informationen finden Sie unter:</br>• [Fehlerkorrektur bei der Verarbeitung von Daten](error-remediation-when-processing-data-in-advanced-ediscovery.md)</br>• [Fehlerbehebung für einzelne Elemente](single-item-error-remediation.md)| 
-|Vergleichen von Lastsätzen | Ein Benutzer prüft die Unterschiede zwischen verschiedenen Lastsätzen in einem Überprüfungs Satz. Bei einem Lastsatz handelt es sich um eine Instanz des Hinzufügens von Daten zu einem Überprüfungs Satzes. Wenn Sie beispielsweise die Ergebnisse von zwei unterschiedlichen Suchvorgängen zu demselben Überprüfungs Sätzen hinzufügen, würde jeder einen Lastsatz darstellen. Weitere Informationen finden Sie unter [Manage Last Sets](manage-load-sets.md). |
+|Vergleichen von Lastsätzen | Ein Benutzer prüft die Unterschiede zwischen verschiedenen Lastsätzen in einem Überprüfungs Satz. Ein Ladesatz ist eine Instanz beim Hinzufügen von Daten zu einem Prüfdateisatz. Wenn Sie beispielsweise die Ergebnisse von zwei unterschiedlichen Suchvorgängen zu demselben Überprüfungs Sätzen hinzufügen, würde jeder einen Lastsatz darstellen. Weitere Informationen finden Sie unter [Manage Last Sets](manage-load-sets.md). |
 |Wiederherstellung von Unterhaltungen|Wenn ein Benutzer einer Konversations Überprüfungsgruppe die Ergebnisse einer Suche hinzufügt, werden Sofortnachrichtenunterhaltungen (auch als *Thread Unterhaltung*bezeichnet) in Diensten wie Microsoft Teams in einer PDF-Datei rekonstruiert. Dieser Auftrag wird auch ausgelöst, wenn ein Benutzer auf **Aktion klickt > unter Haltungs-PDFs** in einem Überprüfungs Satzes zu erstellen. Weitere Informationen finden Sie unter [Review Conversations in Advanced eDiscovery](conversation-review-sets.md).
 |Konvertieren von behandelten Dokumenten in PDF|Nachdem ein Benutzer ein Dokument in einem Überprüfungs Satz kommentiert und einen Teil davon verarbeitet hat, kann er die Konvertierung des Dokuments in eine PDF-Datei auswählen. Dadurch wird sichergestellt, dass der behandelte Teil nicht sichtbar ist, wenn das Dokument zur Präsentation exportiert wird. Weitere Informationen finden Sie unter [View Documents in a Review Sets](annotating-and-redacting-documents.md). |
 |Schätzen von Suchergebnissen | Nachdem ein Benutzer eine neue Suche erstellt und ausgeführt hat (oder eine vorhandene Suche erneut ausführt), durchsucht das Such Tool den Index nach Elementen, die mit der Suchabfrage übereinstimmen, und bereitet eine Schätzung vor, die die Anzahl und die Gesamtgröße aller Elemente durch die Suche sowie die Anzahl der durchsuchten Datenquellen enthält.  Weitere Informationen finden Sie unter [Sammeln von Daten für einen Fall](collecting-data-for-ediscovery.md). | 

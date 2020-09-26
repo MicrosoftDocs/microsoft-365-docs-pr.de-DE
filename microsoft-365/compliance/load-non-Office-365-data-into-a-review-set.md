@@ -1,5 +1,5 @@
 ---
-title: Laden von nicht von Microsoft 365 Daten in einen Überprüfungs-Datensatz
+title: Laden von nicht von Microsoft 365 stammenden Daten in einen Prüfdateisatz
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -7,26 +7,25 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 description: In diesem Artikel erfahren Sie, wie Sie nicht von Microsoft 365 Daten in einen Überprüfungs für die Analyse in einem erweiterten eDiscovery-Fall importieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9b506edc55da1916ae908eaa7ca619ba7300f87
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: ad70207bdc015107a5aba074e2df06a42c0618b3
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44815462"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285861"
 ---
-# <a name="load-non-microsoft-365-data-into-a-review-set"></a>Laden von nicht von Microsoft 365 Daten in einen Überprüfungs-Datensatz
+# <a name="load-non-microsoft-365-data-into-a-review-set"></a>Laden von nicht von Microsoft 365 stammenden Daten in einen Prüfdateisatz
 
-Nicht alle Dokumente, die Sie in Advanced eDiscovery analysieren müssen, befinden sich in Microsoft 365. Mit der nicht-Microsoft 365-datenimportfunktion in Advanced eDiscovery können Sie Dokumente, die sich nicht in Microsoft 365 befinden, in einen Überprüfungs-Datensatz hochladen. In diesem Artikel erfahren Sie, wie Sie Ihre nicht-Microsoft 365-Dokumente in Advanced eDiscovery for Analysis integrieren.
+Nicht alle Dokumente, die Sie in Advanced eDiscovery analysieren müssen, befinden sich in Microsoft 365. Mit dem Microsoft 365-Datenimport-Feature in Advanced eDiscovery können Sie Dokumente, die sich nicht in Microsoft 365 befinden, in einen Prüfdateisatz hochladen. In diesem Artikel erfahren Sie, wie Sie Ihre nicht-Microsoft 365-Dokumente in Advanced eDiscovery for Analysis integrieren.
 
 ## <a name="requirements-to-upload-non-office-365-content"></a>Anforderungen zum Hochladen nicht Office 365der Inhalte
 
@@ -38,9 +37,9 @@ Bei Verwendung des in diesem Artikel beschriebenen Features zum Hochladen nicht 
 
 - Verwalter müssen dem Fall hinzugefügt werden, bevor Sie Sie hochladen und den nicht von Microsoft 365 Daten zuordnen können.
 
-- Nicht-Microsoft 365-Daten müssen einen Dateityp aufweisen, der von Advanced eDiscovery unterstützt wird. Weitere Informationen finden Sie unter [Supported file types in Advanced eDiscovery](supported-filetypes-ediscovery20.md).
+- Nicht von Microsoft 365 stammende Daten müssen einen Dateityp aufweisen, der von Advanced eDiscovery unterstützt wird. Weitere Informationen finden Sie unter [Unterstützte Dateitypen in Advanced eDiscovery](supported-filetypes-ediscovery20.md).
 
-- Alle Dateien, die in einen Überprüfungs Sätze hochgeladen werden, müssen sich in Ordnern befinden, in denen jeder Ordner einer bestimmten Depotbank zugeordnet ist. Für die Namen dieser Ordner muss Folgendes Benennungsformat verwendet werden: *Alias@Domainname*. Das Alias@Domainname muss der Microsoft 365-Alias und die Domäne des Benutzers sein. Sie können alle Alias@Domainname Ordner in einem Stammordner sammeln. Der Stammordner kann nur die Alias@Domainname Ordner enthalten. Lose Dateien im Stammordner werden nicht unterstützt.
+- Alle Dateien, die in einen Prüfdateisatz hochgeladen werden, müssen sich in Ordnern befinden, wobei jeder Ordner einem bestimmten Verwahrer zugeordnet ist. Für die Namen dieser Ordner muss das folgende Namensformat verwendet werden: *alias@domainname*. Bei „alias@domainname“ muss es sich um den Microsoft 365-Alias und die Domäne des Benutzers handeln. Sie können alle Alias@Domainname Ordner in einem Stammordner sammeln. Der Stammordner kann nur die Alias@Domainname Ordner enthalten. Lose Dateien im Stammordner werden nicht unterstützt.
 
    Die Ordnerstruktur für die Daten, die nicht von Microsoft 365 hochgeladen werden sollen, würde dem folgenden Beispiel ähneln:
 
@@ -63,13 +62,13 @@ Bei Verwendung des in diesem Artikel beschriebenen Features zum Hochladen nicht 
 
 2. Klicken Sie auf **Überprüfungs Sätze**, und wählen Sie dann den Überprüfungs Satz aus, um die nicht von Microsoft 365 Daten hochzuladen.  Wenn Sie keinen Überprüfungs Sätze haben, können Sie einen erstellen. 
  
-3. Klicken Sie in der Überprüfungsgruppe auf **Überarbeitungs Gruppe verwalten**, und klicken Sie dann auf der **Daten Kachel nicht von Microsoft 365** auf **Uploads anzeigen** .
+3. Klicken Sie im Prüfdateisatz auf **Prüfdateisatz verwalten**, und klicken Sie dann auf der Kachel **Nicht von Microsoft 365 stammende Daten** auf **Uploads anzeigen**.
 
-4. Klicken Sie auf **Dateien hochladen** , um den Datenimport-Assistenten zu starten.
+4. Klicken Sie auf **Dateien hochladen**, um den Datenimport-Assistenten zu starten.
 
    ![Dateien hochladen](../media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
 
-   Im ersten Schritt des Assistenten wird ein sicherer von Microsoft bereitgestellter Azure-Speicherort für den Upload der Dateien vorbereitet.  Wenn die Vorbereitung abgeschlossen ist, wird die Schaltfläche **Weiter: Dateien hochladen** aktiviert.
+   Der erste Schritt im Assistenten bereitet einen von Microsoft bereitgestellten sicheren Azure-Speicherort vor, in den die Dateien hochgeladen werden sollen.  Wenn die Vorbereitung abgeschlossen ist, wird die Schaltfläche **Weiter: Dateien hochladen** aktiviert.
 
    ![Nicht-Microsoft-365-Import: Prepare](../media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
  
@@ -90,7 +89,7 @@ Bei Verwendung des in diesem Artikel beschriebenen Features zum Hochladen nicht 
    > [!NOTE]
    > Wie bereits erwähnt, müssen Sie AzCopy v 8.1 verwenden, um den Befehl, der auf der Seite **Dateien hochladen** bereitgestellt wird, erfolgreich zu verwenden. Wenn der angegebene AzCopy-Befehl fehlschlägt, finden Sie weitere Informationen unter [Troubleshoot AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md).
 
-8. Wechseln Sie zurück zum Security & Compliance Center, und klicken Sie auf **Weiter: Dateien** im Assistenten verarbeiten.  Dadurch werden Verarbeitung, Textextraktion und Indizierung der nicht von Microsoft 365 Dateien initiiert, die in den Azure-Speicherort hochgeladen wurden.  
+8. Wechseln Sie zurück zum Security & Compliance Center, und klicken Sie auf **Weiter: Dateien** im Assistenten verarbeiten.  Die Verarbeitung, Textextraktion und Indizierung der nicht von Microsoft 365 stammenden Dateien, die in den Azure-Speicherort hochgeladen wurden, wird gestartet.  
 
 9. Verfolgen Sie den Fortschritt der Verarbeitung der Dateien auf der Seite " **Prozessdateien** " oder auf der Registerkarte " **Aufträge** ", indem Sie einen Auftrag mit dem Namen **Hinzufügen von nicht-Microsoft 365-Daten zu einem Überprüfungs Satzes**anzeigen.  Nachdem der Auftrag abgeschlossen ist, sind die neuen Dateien in der Überprüfungsgruppe verfügbar.
 

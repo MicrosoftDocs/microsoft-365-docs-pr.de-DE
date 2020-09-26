@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In diesem Artikel wird beschrieben, wie Sie die erforderlichen Berechtigungen für die Verwendung des Tools zur Datenermittlung in Microsoft 365 einrichten.
-ms.openlocfilehash: 47a7923d38cfa0ea3bad6c4c266f580f8104c429
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 85a800c3e21c270f46de78bdef77d7b7a98e0eca
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637757"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285441"
 ---
 # <a name="assign-permissions-for-data-investigations-preview"></a>Zuweisen von Berechtigungen für Daten Untersuchungen (Vorschau)
 
@@ -29,7 +29,7 @@ Für den Zugriff auf eine Daten Untersuchung im Office 365 oder Microsoft 365 Co
 
 So weisen Sie Berechtigungen für die Datenermittlung zu:
 
-1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
+1. Wechseln Sie zu, [https://protection.office.com](https://protection.office.com) und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
 
 2. Klicken Sie im Security & Compliance Center auf **Berechtigungen**.
 

@@ -1,5 +1,5 @@
 ---
-title: Anzeigen von Dokumenten in einem Überprüfungs Satzes
+title: Anzeigen von Dokumenten in einer Überprüfungsgruppe in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,14 +16,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
-description: ''
-ms.openlocfilehash: 9b180fa30e65ff72be76297ef856dce71c3807ff
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Sie können Dokumente in einer Überprüfungsgruppe in Advanced eDiscovery mit Anmerkungen versehen und redact.
+ROBOTS: NOINDEX, NOFOLLOW
+ms.openlocfilehash: 664045a3df50cdceb650208459c122049dba7c7c
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035071"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285541"
 ---
-# <a name="view-documents-in-a-review-set"></a>Anzeigen von Dokumenten in einem Prüfdateisatz
+# <a name="annotate-and-redact-documents-in-a-review-set-in-advanced-ediscovery"></a>Beschriften und redact von Dokumenten in einer Überprüfungsgruppe in Advanced eDiscovery
 
 Inhalt bald verfügbar.

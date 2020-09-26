@@ -8,7 +8,7 @@ manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
 description: Erfahren Sie, wie Sie die Regel definieren, um bestimmten Text zu ignorieren, wenn Sie die Analyse-und Prozessmodule in Advanced eDiscovery verwenden.
-ms.openlocfilehash: fd7b1f3236c88faf792a97146bbed35802f6c695
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: e167cc2877ca6e1ecb2b4ac896e2000b0441be59
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936892"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285851"
 ---
 # <a name="set-ignore-text-option-for-analyze-in-advanced-ediscovery-classic"></a>Option Text ignorieren festlegen für Analyse in Advanced eDiscovery (klassisch)
 
@@ -36,13 +36,12 @@ Wenn das Feature Text ignorieren zuvor für Module definiert wurde, die bereits 
 
 Mehrere Text Filter ignorieren werden in der Reihenfolge angewendet, in der Sie eingegeben wurden. Um die Reihenfolge zu ändern, in der Sie angewendet werden, müssen Sie gelöscht und in der gewünschten Reihenfolge erneut eingegeben werden.
   
-Wenn es sich beispielsweise um den Textinhalt handelt: "Dave Bob Alice Carol Eve", im folgenden finden Sie Beispiele für Ignore-Texteinträge und die Ergebnisse:
-  
-||||
-|:-----|:-----|:-----|
-|**Text Einträge ignorieren** <br/> |**==\>** <br/> |**Ergebnisse** <br/> |
-|"Alice", "Bob Carol"  <br/> |==\>  <br/> |"Dave Eve"  <br/> |
-|"Alice", "Bob Alice Carol"  <br/> |==\>  <br/> |"Dave Bob Carol Eve"  <br/> |
+Wenn es sich beispielsweise um den Textinhalt handelt: "Dave Bob Alice Carol Eve", im folgenden finden Sie Beispiele für Ignore-Texteinträge und die Ergebnisse, die diese Einträge erzeugen:
+
+|**Text Einträge ignorieren** <br/> |**Ergebnisse** <br/> |
+|:-----|:-----|
+|"Alice", "Bob Carol"  <br/> |"Dave Eve"  <br/> |
+|"Alice", "Bob Alice Carol"  <br/> |"Dave Bob Carol Eve"  <br/> |
    
 Der zweite Ignore-Texteintrag ist nicht implementiert, da die Zeichenfolge nicht als solches gefunden wird, nachdem der erste Text ignoriert wurde.
   
@@ -90,7 +89,7 @@ Reguläre Ausdrücke werden für die Verwendung beim Definieren von Ignore-Text 
     
     der reguläre Ausdruck zum Entfernen des obigen Haftungsausschlusses sollte wie folgt aussehen: 
     
-    **\/\\*\\Diese Nachricht enthält vertrauliche Informationen \. (. | \s) \* Wenn eine Überprüfung erforderlich ist, fordern Sie eine Hardcopy-Version \. an.\/\\*\\**
+    **\/\\*\\ Diese Nachricht enthält vertrauliche Informationen \. (. | \s) \* Wenn eine Überprüfung erforderlich ist, fordern Sie eine Hardcopy-Version \. an. \/\\*\\**
     
 - Regeln für reguläre Ausdrücke:
     

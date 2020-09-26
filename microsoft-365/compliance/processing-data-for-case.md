@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,17 +17,17 @@ search.appverid:
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Hier finden Sie eine Übersicht über die Verarbeitung verschiedener Datenarten im erweiterten eDiscovery-Tool in Office 365.
-ms.openlocfilehash: 0725b38af00ec787869090c5a57f5a865fb421e7
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+description: Übersicht über die Verarbeitung verschiedener Datenarten in Advanced eDiscovery.
+ms.openlocfilehash: c82363a846334ccf47fc28cf0aaa25e92f2bbea9
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527405"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285241"
 ---
 # <a name="work-with-processing-errors-in-advanced-ediscovery"></a>Arbeiten mit Verarbeitungsfehlern in Advanced eDiscovery
 
-*Verarbeitung* ist der Prozess der Datei Identifikation, Erweiterung eingebetteter Dokumente und Anlagen, Textextraktion und OCR (optische Zeichenerkennung) von Bilddateien und der nachfolgenden Indizierung dieses Inhalts.  
+*Verarbeitung* ist der Prozess der Datei Identifikation, Erweiterung eingebetteter Dokumente und Anlagen, Textextraktion und optischer Zeichenerkennung (Optical Character Recognition, OCR)) von Bilddateien und der nachfolgenden Indizierung dieses Inhalts.  
 
 Wenn Sie einem Fall auf der Registerkarte **Quellen** Verwalter und nicht Depotbank-Datenquellen hinzufügen, werden alle teilweise indizierten Elemente von Microsoft 365 verarbeitet, damit Sie vollständig durchsuchbar sind. Ebenso wird dieser Inhalt auch verarbeitet, wenn einem Überprüfungs Text aus Microsoft 365-und nicht-Microsoft 365-Datenquellen Inhalt hinzugefügt wird.
 

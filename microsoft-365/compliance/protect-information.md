@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: Implementieren Sie die Funktionen von Microsoft Information Protection (MIP) mithilfe der Microsoft 365-Konformität, damit Sie vertrauliche Informationen überall dort, wo Sie leben oder Reisen, erkennen, klassifizieren und schützen können.
-ms.openlocfilehash: f867391243302d0ce912ae5d740ed761ea7317b7
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: d69395523cb656d23e44b577f01338eb78c7b386
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131965"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48277526"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection in Microsoft 365
 
@@ -52,7 +52,7 @@ Verwenden Sie die folgenden Funktionen, um flexible Schutzaktionen wie Verschlü
 |:------|:------------|---------------------|:----------------------------|
 |[Vertraulichkeitsbezeichnungen](sensitivity-labels.md)| Eine einzelne Lösung für apps, Dienste und Geräte zum bezeichnen und Schützen Ihrer Daten beim Reisen innerhalb und außerhalb Ihrer Organisation <br /><br />Beispielszenario: [anwenden und Anzeigen von Sensitivitäts Bezeichnungen in Power BI und schützen der Daten beim Export](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|[ Erste Schritte mit Sensitivitäts Bezeichnungen](get-started-with-sensitivity-labels.md) |
 |[Azure Information Protection-Client für einheitliche Bezeichnungen](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)| Für Windows-Computer werden die Vertraulichkeits Bezeichnungen für zusätzliche Features und Funktionen erweitert, die das bezeichnen und schützen aller Dateitypen im Datei-Explorer und in PowerShell umfassen.<br /><br /> Beispiel zusätzliche Features: [benutzerdefinierte Konfigurationen für den Azure Information Protection Unified Labeling-Client](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Azure Information Protection Unified Labeling-Client Administratorhandbuch](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide)|
-|[Verschlüsselung mit Doppelschlüssel](double-key-encryption.md)| Unter allen Umständen können nur Sie geschützte Inhalte entschlüsseln, oder für behördliche Anforderungen müssen Sie Verschlüsselungsschlüssel in einer geografischen Grenze halten. | [Bereitstellen der doppelten Schlüssel Verschlüsselung](double-key-encryption.md#deploy-double-key-encryption)|
+|[Verschlüsselung mit Doppelschlüssel](double-key-encryption.md)| Unter allen Umständen können nur Sie geschützte Inhalte entschlüsseln, oder für behördliche Anforderungen müssen Sie Verschlüsselungsschlüssel in einer geografischen Grenze halten. | [Bereitstellen der doppelten Schlüssel Verschlüsselung](double-key-encryption.md)|
 |[Office 365-Nachrichtenverschlüsselung](ome.md) (OME)| Verschlüsselt e-Mail-Nachrichten und angefügte Dokumente, die an einen beliebigen Benutzer auf einem Gerät gesendet werden, sodass nur autorisierte Empfänger e-Mail-Informationen lesen können.  <br /><br />Beispielszenario: [widerrufen von e-Mails, die durch erweiterte Nachrichtenverschlüsselung verschlüsselt wurden](revoke-ome-encrypted-mail.md) | [Erste Schritte mit Office 365 Nachrichtenverschlüsselung](set-up-new-message-encryption-capabilities.md)|
 |[Dienstverschlüsselung mit dem Kundenschlüssel](customer-key-overview.md) | Schützt vor dem Anzeigen von Daten durch nicht autorisierte Systeme oder Mitarbeiter und ergänzt die BitLocker-Datenträgerverschlüsselung in Microsoft-Rechenzentren | [Einrichten des Kundenschlüssels für Office 365](customer-key-set-up.md)|
 |[Verwaltung von SharePoint-Informationsrechten (IRM)](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists)|Schützt SharePoint-Listen und-Bibliotheken so, dass beim Auschecken eines Dokuments die heruntergeladene Datei geschützt ist, sodass nur autorisierte Benutzer die Datei gemäß den von Ihnen angegebenen Richtlinien anzeigen und verwenden können | [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)|
