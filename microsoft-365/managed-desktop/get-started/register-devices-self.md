@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 550f7dd35b3990a08da4c2bb9dd3042ff084b185
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 225cb8b74a50fa8308cc14e8ad35283e6a7aa044
+ms.sourcegitcommit: e9f32675061cd1cf4a3e2dada393e10d7c552efe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104400"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48279566"
 ---
 # <a name="register-new-devices-yourself"></a>Selbstregistrieren neuer Geräte
 
@@ -84,14 +84,14 @@ Wählen Sie in [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)im l
 Führen Sie die folgenden Schritte aus:
 
 1. Geben Sie im Feld **Dateiupload**einen Pfad zu der CSV-Datei an, die Sie zuvor erstellt haben.
-3. Wählen Sie **Geräte registrieren**aus. Das System fügt die Geräte zu ihrer Geräteliste auf dem Blade- **Gerät**hinzu, das als **AutopilotRegistrationRequested**gekennzeichnet ist. Die Registrierung dauert in der Regel weniger als 10 Minuten, und wenn das Gerät erfolgreich ist, wird es **für den Benutzer bereit** angezeigt, sodass es bereit ist und darauf wartet, dass ein Benutzer mit der Verwendung beginnt.
+3. Wählen Sie **Geräte registrieren**aus. Das System fügt die Geräte zu ihrer Geräteliste auf dem Blade- **Gerät**hinzu, das als " **Registrierung ausstehend**" gekennzeichnet wird. Die Registrierung dauert in der Regel weniger als 10 Minuten, und wenn das Gerät erfolgreich ist, wird es **für den Benutzer bereit** angezeigt, sodass es bereit ist und darauf wartet, dass ein Benutzer mit der Verwendung beginnt.
 
 
 Sie können den Fortschritt der Geräteregistrierung auf der Hauptseite überwachen. Mögliche Zustände, die dort gemeldet werden, umfassen:
 
 | Status | Beschreibung |
 |---------------|-------------|
-| AutopilotRegistrationRequested | Die Registrierung ist noch nicht abgeschlossen. Überprüfen Sie später erneut. |
+| Registrierung ausstehend | Die Registrierung ist noch nicht abgeschlossen. Überprüfen Sie später erneut. |
 | Registrierung fehlgeschlagen | Die Registrierung konnte nicht abgeschlossen werden. Weitere Informationen erhalten Sie unter [Problembehandlung bei der Geräteregistrierung](#troubleshooting-device-registration) . |
 | Benutzer einsatzfähig | Die Registrierung wurde erfolgreich ausgeführt, und das Gerät kann nun für den Benutzer bereitgestellt werden. Microsoft Managed Desktop führt Sie durch die erstmalige Einrichtung, sodass Sie keine weiteren Vorbereitungen treffen müssen. |
 | Aktiv | Das Gerät wurde dem Benutzer zugestellt und Sie haben sich bei Ihrem Mandanten registriert. Dies deutet auch darauf hin, dass das Gerät regelmäßig verwendet wird. |

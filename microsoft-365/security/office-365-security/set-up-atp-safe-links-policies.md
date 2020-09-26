@@ -17,24 +17,23 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Richten Sie Richtlinien für sichere Links ein, um Ihre Organisation vor bösartigen Links in Word-, Excel-, PowerPoint-und Visio-Dateien sowie in e-Mail-Nachrichten zu schützen.
-ms.openlocfilehash: 8c72473a9b1337e1d932ec7235ed12e79f0c48f6
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 76d0aba026b96251a64163ef7d7f518fe0b1e1b1
+ms.sourcegitcommit: e9f32675061cd1cf4a3e2dada393e10d7c552efe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201759"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48279576"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Einrichten Office 365 Richtlinien für ATP-sichere Links
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
 > [!IMPORTANT]
 > Dieser Artikel richtet sich an Geschäftskunden, die über [Office 365 Advanced Threat Protection](office-365-atp.md) verfügen. Wenn Sie ein Privatbenutzer sind, der nach Informationen zu sicheren Links in Outlook sucht, lesen Sie [Erweiterte Outlook.com-Sicherheit](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-[ATP-sichere Links](atp-safe-links.md), ein Feature von [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), können Ihnen helfen, Ihre Organisation vor bösartigen Links zu schützen, die in Phishing-und anderen Angriffen verwendet werden. Wenn Sie über die erforderlichen [Berechtigungen für das Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)verfügen, können Sie Richtlinien für ATP-sichere Links einrichten, um sicherzustellen, dass Ihre Organisation geschützt ist, wenn Personen auf Webadressen (URLs) klicken. Ihre Richtlinien für ATP-sichere Links können so konfiguriert werden, dass Sie URLs in e-Mails und URLs in Office-Dokumenten überprüfen.
+[ATP-sichere Links](atp-safe-links.md) sind ein Feature in [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), mit dem Sie Ihre Organisation vor bösartigen linksschützen können, die in Phishing-und anderen Angriffen verwendet werden. Wenn Sie über die erforderlichen [Berechtigungen für das Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)verfügen, können Sie Richtlinien für ATP-sichere Links einrichten, um sicherzustellen, dass Ihre Organisation geschützt ist, wenn Personen auf Webadressen (URLs) klicken. Ihre Richtlinien für ATP-sichere Links können so konfiguriert werden, dass Sie URLs in e-Mails und URLs in Office-Dokumenten überprüfen. ATP-sichere Links scannt eingehende e-Mails für bekannte bösartige Hyperlinks und für Anhänge, die Schadsoftware enthalten. Dieses Feature umschreibt gescannte URLs in das Standard-URL-Formatpräfix von Microsoft <https://nam01.safelinks.protection.outlook.com> . Nachdem ein Link neu geschrieben wurde, wird er auf mögliche schädliche Inhalte hin analysiert. Wenn ATP-sichere Links aktiviert sind und ein Benutzer auf einen Link in einer e-Mail klickt und die URL durch die Liste der benutzerdefinierten blockierten URLs in Ihrer Organisation blockiert wurde oder wenn die URL als bösartig eingestuft wird, wird eine Warnseite geöffnet.
 
-Wenn ATP-sichere Links aktiviert sind und ein Benutzer auf einen Link in einer e-Mail klickt und die URL durch die Liste der benutzerdefinierten blockierten URLs in Ihrer Organisation blockiert wurde oder wenn die URL als bösartig eingestuft wird, wird eine Warnseite geöffnet.
+Sobald die ATP-Sicherheits Links eine URL umgeschrieben haben, wird die URL erneut geschrieben, wenn die Nachricht weitergeleitet oder beantwortet wird. Zusätzliche Links, die der geantworteten oder weitergeleiteten Nachricht hinzugefügt werden, werden nicht umgeschrieben.
 
 [Neue Features werden kontinuierlich zu ATP hinzugefügt](office-365-atp.md#new-features-in-office-365-atp). Wenn neue Features hinzugefügt werden, müssen Sie möglicherweise Anpassungen an Ihren bestehenden Richtlinien für ATP-sichere Links vornehmen.
 
