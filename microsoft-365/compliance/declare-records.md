@@ -17,51 +17,72 @@ search.appverid:
 - MOE150
 - MET150
 description: Datensätze mithilfe von Aufbewahrungsbezeichnungen deklarieren.
-ms.openlocfilehash: 841c5197addff704016e344ba7ae44355c872f72
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 490f81ba9c1d2d291539107650ec3c3f5938eba8
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47817101"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198924"
 ---
-# <a name="declare-records-by-using-retention-labels"></a><span data-ttu-id="1932f-103">Datensätzen mithilfe von Aufbewahrungsbezeichnungen deklarieren</span><span class="sxs-lookup"><span data-stu-id="1932f-103">Declare records by using retention labels</span></span>
+# <a name="declare-records-by-using-retention-labels"></a><span data-ttu-id="7d209-103">Datensätzen mithilfe von Aufbewahrungsbezeichnungen deklarieren</span><span class="sxs-lookup"><span data-stu-id="7d209-103">Declare records by using retention labels</span></span>
 
-><span data-ttu-id="1932f-104">*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*</span><span class="sxs-lookup"><span data-stu-id="1932f-104">*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*</span></span>
+><span data-ttu-id="7d209-104">*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*</span><span class="sxs-lookup"><span data-stu-id="7d209-104">*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*</span></span>
 
-<span data-ttu-id="1932f-105">Um Dokumente und E-Mails als Datensatz zu deklarieren, verwenden Sie [Aufbewahrungsbezeichnungen](retention.md#retention-labels), die Elemente als Datensatz markieren.</span><span class="sxs-lookup"><span data-stu-id="1932f-105">To declare documents and emails as a record, you use [retention labels](retention.md#retention-labels) that mark items as a record.</span></span> <span data-ttu-id="1932f-106">Sie können diese Bezeichnungen entweder veröffentlichen, damit Benutzer und Administratoren sie manuell auf Inhalte anwenden können, oder diese Bezeichnungen automatisch auf Inhalte anwenden, die Sie als Datensatz markieren möchten.</span><span class="sxs-lookup"><span data-stu-id="1932f-106">You can either publish those labels so that users and administrators can manually apply them to content, or auto-apply those labels to content that you want to mark as a record.</span></span>
+<span data-ttu-id="7d209-105">Um Dokumente und E-Mails als [Datensatz](records-management.md#records) zu deklarieren, verwenden Sie [Aufbewahrungsbezeichnungen](retention.md#retention-labels), die Elemente als **Datensatz** oder **regulatorischen Datensatz** markieren.</span><span class="sxs-lookup"><span data-stu-id="7d209-105">To declare documents and emails as [records](records-management.md#records), you use [retention labels](retention.md#retention-labels) that mark the content as a **record** or a **regulatory record**.</span></span>
 
-## <a name="configuring-retention-labels-to-declare-records"></a><span data-ttu-id="1932f-107">Aufbewahrungsetiketten zum Deklarieren von Datensätzen konfigurieren</span><span class="sxs-lookup"><span data-stu-id="1932f-107">Configuring retention labels to declare records</span></span>
+> [!NOTE]
+> <span data-ttu-id="7d209-106">Die regulatorischen Datensätze befinden sich derzeit in der Vorschau.</span><span class="sxs-lookup"><span data-stu-id="7d209-106">Regulatory records are currently in preview.</span></span>
 
-<span data-ttu-id="1932f-108">Wenn Sie eine Aufbewahrungsbezeichnung erstellen oder konfigurieren, wählen Sie die Option aus, um Elemente als Datensatz zu markieren.</span><span class="sxs-lookup"><span data-stu-id="1932f-108">When you create or configure a retention label, select the option to mark items as a record.</span></span>
+<span data-ttu-id="7d209-107">Wenn Sie nicht sicher sind, ob Sie einen Datensatz oder regulatorischen Datensatz verwenden sollen, lesen Sie [Vergleichen von Einschränkungen für die zulässigen und blockierten Aktionen](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).</span><span class="sxs-lookup"><span data-stu-id="7d209-107">If you're not sure whether to use a record or a regulatory record, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).</span></span> <span data-ttu-id="7d209-108">Wenn Sie regulatorischen Datensatz verwenden müssen, müssen Sie zuerst einen PowerShell-Befehl ausführen, wie im nächsten Abschnitt beschrieben.</span><span class="sxs-lookup"><span data-stu-id="7d209-108">If you need to use regulatory records, you must first run a PowerShell command, as described in the next section.</span></span>
+
+<span data-ttu-id="7d209-109">Danach können Sie diese Bezeichnungen entweder in einer Aufbewahrungsrichtlinie veröffentlichen (sodass Benutzer und Administratoren diese manuell auf Inhalte anwenden können) oder für Bezeichnungen, mit denen Elemente als Datensätze markiert werden. Wenden Sie diese Bezeichnungen automatisch auf Inhalte an, die Sie als Datensatz deklarieren möchten.</span><span class="sxs-lookup"><span data-stu-id="7d209-109">You can then either publish those labels in a retention label policy so that users and administrators can apply them to content, or for labels that mark items as records (but not regulatory records), auto-apply those labels to content that you want to declare a record.</span></span>
+
+## <a name="how-to-display-the-option-to-mark-content-as-a-regulatory-record"></a><span data-ttu-id="7d209-110">So zeigen Sie die Option zum Markieren von Inhalten als regulatorischen Datensatz an</span><span class="sxs-lookup"><span data-stu-id="7d209-110">How to display the option to mark content as a regulatory record</span></span>
 
 >[!NOTE] 
-> <span data-ttu-id="1932f-109">Die Option zum Markieren des Inhalts als Datensatz ist nicht verfügbar, wenn Sie Aufbewahrungsbezeichnungen aus **Information Governance** im Microsoft 365 Compliance Center erstellen oder konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="1932f-109">The option to mark the content as a record is not available when you create or configure retention labels from **Information Governance** in the Microsoft 365 compliance center.</span></span> <span data-ttu-id="1932f-110">Verwenden Sie stattdessen **Datensatzverwaltung**.</span><span class="sxs-lookup"><span data-stu-id="1932f-110">Instead, you must use **Records Management**.</span></span>
+> <span data-ttu-id="7d209-111">Bei dem folgenden Verfahren handelt es sich um eine überwachbare Aktion, die Protokollierung **Option für die Festlegung von Auflagen für Aufbewahrungsbezeichnungen** im Abschnitt [Aufbewahrungsrichtlinie und Aufbewahrungsaktivitäten](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities) des Überwachungsprotokolls.</span><span class="sxs-lookup"><span data-stu-id="7d209-111">The following procedure is an auditable action, logging **Enabled regulatory record option for retention labels** in the [Retention policy and retention label activities](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities) section of the audit log.</span></span>
 
-<span data-ttu-id="1932f-111">So erstellen Sie eine neue Aufbewahrungsbezeichnung, die den Inhalt als Datensatz kennzeichnet:</span><span class="sxs-lookup"><span data-stu-id="1932f-111">To create a new retention label that marks the content as a record:</span></span>
+<span data-ttu-id="7d209-112">Standardmäßig wird die Aufbewahrungsbezeichnungsoption zum Markieren von Inhalten als regulatorischer Datensatz im Aufbewahrungsbezeichnungs-Assistenten nicht angezeigt.</span><span class="sxs-lookup"><span data-stu-id="7d209-112">By default, the retention label option to mark content as a regulatory record isn't displayed in the retention label wizard.</span></span> <span data-ttu-id="7d209-113">Wenn Sie diese Option anzeigen möchten, müssen Sie zuerst einen PowerShell-Befehl ausführen:</span><span class="sxs-lookup"><span data-stu-id="7d209-113">To display this option, you must first run a PowerShell command:</span></span>
 
-1. <span data-ttu-id="1932f-112">Gehen Sie im [Microsoft 365 Compliance Center](https://compliance.microsoft.com) zu **Datensatzverwaltung** \> **Ablageplan**.</span><span class="sxs-lookup"><span data-stu-id="1932f-112">In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Records Management** \> **File Plan**.</span></span> <span data-ttu-id="1932f-113">Wählen Sie von der Seite **Dateiplan** **Eine Bezeichnung erstellen**.</span><span class="sxs-lookup"><span data-stu-id="1932f-113">On the **File plan** page, select **Create a label**.</span></span>
+1. <span data-ttu-id="7d209-114">[Herstellen einer Verbindung mit der Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).</span><span class="sxs-lookup"><span data-stu-id="7d209-114">[Connect to the Office 365 Security & Compliance Center Powershell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).</span></span>
 
-2. <span data-ttu-id="1932f-114">Wählen Sie im Assistenten auf der Seite **Aufbewahrungseinstellungen definieren** die Option, Elemente als Datensätze festzulegen:</span><span class="sxs-lookup"><span data-stu-id="1932f-114">On the **Define retention settings** page in the wizard, choose the option to mark items as records:</span></span>
+2. <span data-ttu-id="7d209-115">Führen Sie das folgende Cmdlet aus:</span><span class="sxs-lookup"><span data-stu-id="7d209-115">Run the following cmdlet:</span></span>
     
-   ![Wählen Sie die Aufbewahrungseinstellung aus, um Elemente als Datensatz zu markieren](../media/recordversioning6.png)
+    ```powershell
+    Set-RegulatoryComplianceUI -Enabled $true
+    ````
+    <span data-ttu-id="7d209-116">Es wird keine Bestätigung angezeigt, und die Einstellung wird sofort wirksam.</span><span class="sxs-lookup"><span data-stu-id="7d209-116">There is no prompt to confirm and the setting takes effect immediately.</span></span>
 
-3. <span data-ttu-id="1932f-116">Wenden Sie die Aufbewahrungsbezeichnung nach Bedarf auf SharePoint- oder OneDrive-Dokumente und Exchange-E-Mails an.</span><span class="sxs-lookup"><span data-stu-id="1932f-116">Apply the retention label to SharePoint or OneDrive documents and Exchange emails, as needed.</span></span> <span data-ttu-id="1932f-117">Für Anweisungen:</span><span class="sxs-lookup"><span data-stu-id="1932f-117">For instructions:</span></span>
-    
-    - [<span data-ttu-id="1932f-118">Erstellen von Aufbewahrungsbezeichnungen und Anwenden in Apps</span><span class="sxs-lookup"><span data-stu-id="1932f-118">Create retention labels and apply them in apps</span></span>](create-apply-retention-labels.md)
-    
-    - [<span data-ttu-id="1932f-119">Automatisches Anwenden einer Aufbewahrungsbezeichnung auf Inhalte</span><span class="sxs-lookup"><span data-stu-id="1932f-119">Apply a retention label to content automatically</span></span>](apply-retention-labels-automatically.md)
+<span data-ttu-id="7d209-117">Wenn Sie es sich anders überlegen, können Sie sie erneut ausblenden, indem Sie dasselbe Cmdlet mit dem Wert **false** ausführen: `Set-RegulatoryComplianceUI -Enabled $false`</span><span class="sxs-lookup"><span data-stu-id="7d209-117">If you change your mind about seeing this option in the retention label wizard, you can hide it again by running the same cmdlet with the **false** value: `Set-RegulatoryComplianceUI -Enabled $false`</span></span> 
 
-## <a name="applying-the-configured-retention-label-to-content"></a><span data-ttu-id="1932f-120">Anwenden der konfigurierten Aufbewahrungsbezeichnung auf Inhalte</span><span class="sxs-lookup"><span data-stu-id="1932f-120">Applying the configured retention label to content</span></span>
+## <a name="configuring-retention-labels-to-declare-records"></a><span data-ttu-id="7d209-118">Aufbewahrungsbezeichnugen zum Deklarieren von Datensätzen konfigurieren</span><span class="sxs-lookup"><span data-stu-id="7d209-118">Configuring retention labels to declare records</span></span>
 
-<span data-ttu-id="1932f-121">Wenn Aufbewahrungsbezeichnungen, die Inhalte als Datensatz markieren, Benutzern zur Verfügung gestellt werden, um sie in Apps anzuwenden:</span><span class="sxs-lookup"><span data-stu-id="1932f-121">When retention labels that mark content as a record are made available for users to apply them in apps:</span></span>
+<span data-ttu-id="7d209-119">Wenn Sie eine Aufbewahrungsbezeichnung aus der **Datensatzverwaltung**s-Lösung im Microsoft 365 Compliance Center erstellen oder bearbeiten, haben Sie die Möglichkeit, Elemente als Datensatz zu kennzeichnen.</span><span class="sxs-lookup"><span data-stu-id="7d209-119">When you create or edit a retention label from the **Records Management** solution in the Microsoft 365 compliance center, you have the option to mark items as a record.</span></span> <span data-ttu-id="7d209-120">Wenn Sie den PowerShell-Befehl aus dem vorherigen Abschnitt ausgeführt haben, können Sie alternativ Elemente als regulatorischen Datensatz festlegen.</span><span class="sxs-lookup"><span data-stu-id="7d209-120">If you ran the PowerShell command from the previous section, you can alternatively mark items as a regulatory record.</span></span>
 
-- <span data-ttu-id="1932f-122">Bei Exchange kann jeder Benutzer mit Schreibzugriff auf das Postfach diese Bezeichnung anwenden.</span><span class="sxs-lookup"><span data-stu-id="1932f-122">For Exchange, any user with write-access to the mailbox can apply these labels.</span></span> 
-- <span data-ttu-id="1932f-123">Bei SharePoint und OneDrive kann jeder Benutzer in der Standardgruppe "Mitglieder" (Berechtigungsstufe "Beitrag") diese Bezeichnung anwenden.</span><span class="sxs-lookup"><span data-stu-id="1932f-123">For SharePoint and OneDrive, any user in the default Members group (the Contribute permission level) can apply these labels.</span></span>
+<span data-ttu-id="7d209-121">Zum Beispiel:</span><span class="sxs-lookup"><span data-stu-id="7d209-121">For example:</span></span>
 
-<span data-ttu-id="1932f-124">Beispiel für ein Dokument, das mithilfe einer Aufbewahrungsbezeichnung als Datensatz markiert wurde:</span><span class="sxs-lookup"><span data-stu-id="1932f-124">Example of a document marked as record by using a retention label:</span></span>
+![Konfigurieren einer Aufbewahrungsbezeichnung zum Markieren von Inhalten als Datensatz oder regulatorisch](../media/recordversioning6.png)
+
+<span data-ttu-id="7d209-123">Wenden Sie die Aufbewahrungsbezeichnung nach Bedarf auf Microsoft Office SharePoint Online oder OneDrive-Dokumente und Exchange-E-Mails an.</span><span class="sxs-lookup"><span data-stu-id="7d209-123">Using this retention label, you can now apply it to SharePoint or OneDrive documents and Exchange emails, as needed.</span></span> 
+
+<span data-ttu-id="7d209-124">Vollständige Anweisungen:</span><span class="sxs-lookup"><span data-stu-id="7d209-124">For full instructions:</span></span>
+
+- [<span data-ttu-id="7d209-125">Erstellen von Aufbewahrungsbezeichnungen und Anwenden in Apps</span><span class="sxs-lookup"><span data-stu-id="7d209-125">Create retention labels and apply them in apps</span></span>](create-apply-retention-labels.md)
+
+- <span data-ttu-id="7d209-126">[Automatisches Anwenden einer Aufbewahrungsbezeichnung auf Inhalte](apply-retention-labels-automatically.md) (wird bei regulatorischen Datensätzen nicht unterstützt)</span><span class="sxs-lookup"><span data-stu-id="7d209-126">[Apply a retention label to content automatically](apply-retention-labels-automatically.md) (not supported for regulatory records)</span></span>
+
+
+## <a name="applying-the-configured-retention-label-to-content"></a><span data-ttu-id="7d209-127">Anwenden der konfigurierten Aufbewahrungsbezeichnung auf Inhalte</span><span class="sxs-lookup"><span data-stu-id="7d209-127">Applying the configured retention label to content</span></span>
+
+<span data-ttu-id="7d209-128">Wenn Aufbewahrungsbezeichnungen, die Inhalte als Datensatz oder regulatorischen Datensatz markieren, Benutzern zur Verfügung gestellt werden, um sie in Apps anzuwenden:</span><span class="sxs-lookup"><span data-stu-id="7d209-128">When retention labels that mark items as a record or regulatory record are made available for users to apply them in apps:</span></span>
+
+- <span data-ttu-id="7d209-129">Bei Exchange kann jeder Benutzer mit Schreibzugriff auf das Postfach diese Bezeichnung anwenden.</span><span class="sxs-lookup"><span data-stu-id="7d209-129">For Exchange, any user with write-access to the mailbox can apply these labels.</span></span> 
+- <span data-ttu-id="7d209-130">Bei SharePoint und OneDrive kann jeder Benutzer in der Standardgruppe "Mitglieder" (Berechtigungsstufe "Beitrag") diese Bezeichnung anwenden.</span><span class="sxs-lookup"><span data-stu-id="7d209-130">For SharePoint and OneDrive, any user in the default Members group (the Contribute permission level) can apply these labels.</span></span>
+
+<span data-ttu-id="7d209-131">Beispiel für ein Dokument, das mithilfe einer Aufbewahrungsbezeichnung als Datensatz markiert wurde:</span><span class="sxs-lookup"><span data-stu-id="7d209-131">Example of a document marked as record by using a retention label:</span></span>
 
 ![Detailbereich für ein als Datensatz markiertes Dokument](../media/recordversioning7.png)
 
-## <a name="next-steps"></a><span data-ttu-id="1932f-126">Weitere Schritte</span><span class="sxs-lookup"><span data-stu-id="1932f-126">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="7d209-133">Weitere Schritte</span><span class="sxs-lookup"><span data-stu-id="7d209-133">Next steps</span></span>
 
-<span data-ttu-id="1932f-127">Eine Liste von Szenarios, die von der Datensatzverwaltung unterstützt werden, finden Sie unter [Häufige Szenarios für die Datensatzverwaltung](get-started-with-records-management.md#common-scenarios-for-records-management).</span><span class="sxs-lookup"><span data-stu-id="1932f-127">For a list of scenarios supported by records management, see [Common scenarios for records management](get-started-with-records-management.md#common-scenarios-for-records-management).</span></span>
+<span data-ttu-id="7d209-134">Eine Liste von Szenarios, die von der Datensatzverwaltung unterstützt werden, finden Sie unter [Häufige Szenarios für die Datensatzverwaltung](get-started-with-records-management.md#common-scenarios-for-records-management).</span><span class="sxs-lookup"><span data-stu-id="7d209-134">For a list of scenarios supported by records management, see [Common scenarios for records management](get-started-with-records-management.md#common-scenarios-for-records-management).</span></span>
