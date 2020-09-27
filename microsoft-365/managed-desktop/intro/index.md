@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: a126627a4c4d96b2b6918cefb0630801b3674383
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: b877a35133be13cd6783659f1e5d981633338be8
+ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950496"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269373"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Was ist Microsoft Managed Desktop?
 
@@ -44,7 +44,7 @@ Unsere Richtlinien und Sicherheitsgrundlagen bieten Ihren Benutzern folgende Vor
 - Die Bootzeiten für Microsoft Managed Desktop-Geräte sind etwa ein Viertel so lang.
 - Mindestens die doppelte Akkulaufzeit
 - Etwa ein Drittel so viele Geräte stürzen pro Jahr ab
-- Gerätemobilität durch [Enterprise State Roaming](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview), sodass Benutzer unabhängig vom Gerät, bei dem sie sich anmelden möchten, die gleiche Erfahrung machen können
+- Gerätemobilität durch [Enterprise State Roaming](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview), sodass Benutzer unabhängig von dem Gerät, an dem sie sich anmelden, die gleiche Erfahrung machen können
 
 Ihre IT-Administratoren profitieren von folgenden Funktionen:
 

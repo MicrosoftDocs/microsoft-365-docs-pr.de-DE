@@ -17,43 +17,64 @@ search.appverid:
 - MOE150
 - MET150
 description: Datensätze mithilfe von Aufbewahrungsbezeichnungen deklarieren.
-ms.openlocfilehash: 841c5197addff704016e344ba7ae44355c872f72
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 490f81ba9c1d2d291539107650ec3c3f5938eba8
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47817101"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198924"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Datensätzen mithilfe von Aufbewahrungsbezeichnungen deklarieren
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
 
-Um Dokumente und E-Mails als Datensatz zu deklarieren, verwenden Sie [Aufbewahrungsbezeichnungen](retention.md#retention-labels), die Elemente als Datensatz markieren. Sie können diese Bezeichnungen entweder veröffentlichen, damit Benutzer und Administratoren sie manuell auf Inhalte anwenden können, oder diese Bezeichnungen automatisch auf Inhalte anwenden, die Sie als Datensatz markieren möchten.
+Um Dokumente und E-Mails als [Datensatz](records-management.md#records) zu deklarieren, verwenden Sie [Aufbewahrungsbezeichnungen](retention.md#retention-labels), die Elemente als **Datensatz** oder **regulatorischen Datensatz** markieren.
 
-## <a name="configuring-retention-labels-to-declare-records"></a>Aufbewahrungsetiketten zum Deklarieren von Datensätzen konfigurieren
+> [!NOTE]
+> Die regulatorischen Datensätze befinden sich derzeit in der Vorschau.
 
-Wenn Sie eine Aufbewahrungsbezeichnung erstellen oder konfigurieren, wählen Sie die Option aus, um Elemente als Datensatz zu markieren.
+Wenn Sie nicht sicher sind, ob Sie einen Datensatz oder regulatorischen Datensatz verwenden sollen, lesen Sie [Vergleichen von Einschränkungen für die zulässigen und blockierten Aktionen](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked). Wenn Sie regulatorischen Datensatz verwenden müssen, müssen Sie zuerst einen PowerShell-Befehl ausführen, wie im nächsten Abschnitt beschrieben.
+
+Danach können Sie diese Bezeichnungen entweder in einer Aufbewahrungsrichtlinie veröffentlichen (sodass Benutzer und Administratoren diese manuell auf Inhalte anwenden können) oder für Bezeichnungen, mit denen Elemente als Datensätze markiert werden. Wenden Sie diese Bezeichnungen automatisch auf Inhalte an, die Sie als Datensatz deklarieren möchten.
+
+## <a name="how-to-display-the-option-to-mark-content-as-a-regulatory-record"></a>So zeigen Sie die Option zum Markieren von Inhalten als regulatorischen Datensatz an
 
 >[!NOTE] 
-> Die Option zum Markieren des Inhalts als Datensatz ist nicht verfügbar, wenn Sie Aufbewahrungsbezeichnungen aus **Information Governance** im Microsoft 365 Compliance Center erstellen oder konfigurieren. Verwenden Sie stattdessen **Datensatzverwaltung**.
+> Bei dem folgenden Verfahren handelt es sich um eine überwachbare Aktion, die Protokollierung **Option für die Festlegung von Auflagen für Aufbewahrungsbezeichnungen** im Abschnitt [Aufbewahrungsrichtlinie und Aufbewahrungsaktivitäten](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities) des Überwachungsprotokolls.
 
-So erstellen Sie eine neue Aufbewahrungsbezeichnung, die den Inhalt als Datensatz kennzeichnet:
+Standardmäßig wird die Aufbewahrungsbezeichnungsoption zum Markieren von Inhalten als regulatorischer Datensatz im Aufbewahrungsbezeichnungs-Assistenten nicht angezeigt. Wenn Sie diese Option anzeigen möchten, müssen Sie zuerst einen PowerShell-Befehl ausführen:
 
-1. Gehen Sie im [Microsoft 365 Compliance Center](https://compliance.microsoft.com) zu **Datensatzverwaltung** \> **Ablageplan**. Wählen Sie von der Seite **Dateiplan** **Eine Bezeichnung erstellen**.
+1. [Herstellen einer Verbindung mit der Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
-2. Wählen Sie im Assistenten auf der Seite **Aufbewahrungseinstellungen definieren** die Option, Elemente als Datensätze festzulegen:
+2. Führen Sie das folgende Cmdlet aus:
     
-   ![Wählen Sie die Aufbewahrungseinstellung aus, um Elemente als Datensatz zu markieren](../media/recordversioning6.png)
+    ```powershell
+    Set-RegulatoryComplianceUI -Enabled $true
+    ````
+    Es wird keine Bestätigung angezeigt, und die Einstellung wird sofort wirksam.
 
-3. Wenden Sie die Aufbewahrungsbezeichnung nach Bedarf auf SharePoint- oder OneDrive-Dokumente und Exchange-E-Mails an. Für Anweisungen:
-    
-    - [Erstellen von Aufbewahrungsbezeichnungen und Anwenden in Apps](create-apply-retention-labels.md)
-    
-    - [Automatisches Anwenden einer Aufbewahrungsbezeichnung auf Inhalte](apply-retention-labels-automatically.md)
+Wenn Sie es sich anders überlegen, können Sie sie erneut ausblenden, indem Sie dasselbe Cmdlet mit dem Wert **false** ausführen: `Set-RegulatoryComplianceUI -Enabled $false` 
+
+## <a name="configuring-retention-labels-to-declare-records"></a>Aufbewahrungsbezeichnugen zum Deklarieren von Datensätzen konfigurieren
+
+Wenn Sie eine Aufbewahrungsbezeichnung aus der **Datensatzverwaltung**s-Lösung im Microsoft 365 Compliance Center erstellen oder bearbeiten, haben Sie die Möglichkeit, Elemente als Datensatz zu kennzeichnen. Wenn Sie den PowerShell-Befehl aus dem vorherigen Abschnitt ausgeführt haben, können Sie alternativ Elemente als regulatorischen Datensatz festlegen.
+
+Zum Beispiel:
+
+![Konfigurieren einer Aufbewahrungsbezeichnung zum Markieren von Inhalten als Datensatz oder regulatorisch](../media/recordversioning6.png)
+
+Wenden Sie die Aufbewahrungsbezeichnung nach Bedarf auf Microsoft Office SharePoint Online oder OneDrive-Dokumente und Exchange-E-Mails an. 
+
+Vollständige Anweisungen:
+
+- [Erstellen von Aufbewahrungsbezeichnungen und Anwenden in Apps](create-apply-retention-labels.md)
+
+- [Automatisches Anwenden einer Aufbewahrungsbezeichnung auf Inhalte](apply-retention-labels-automatically.md) (wird bei regulatorischen Datensätzen nicht unterstützt)
+
 
 ## <a name="applying-the-configured-retention-label-to-content"></a>Anwenden der konfigurierten Aufbewahrungsbezeichnung auf Inhalte
 
-Wenn Aufbewahrungsbezeichnungen, die Inhalte als Datensatz markieren, Benutzern zur Verfügung gestellt werden, um sie in Apps anzuwenden:
+Wenn Aufbewahrungsbezeichnungen, die Inhalte als Datensatz oder regulatorischen Datensatz markieren, Benutzern zur Verfügung gestellt werden, um sie in Apps anzuwenden:
 
 - Bei Exchange kann jeder Benutzer mit Schreibzugriff auf das Postfach diese Bezeichnung anwenden. 
 - Bei SharePoint und OneDrive kann jeder Benutzer in der Standardgruppe "Mitglieder" (Berechtigungsstufe "Beitrag") diese Bezeichnung anwenden.

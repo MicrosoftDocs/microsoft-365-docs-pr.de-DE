@@ -17,16 +17,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Erstellen Sie Aufbewahrungsbezeichnungen und veröffentlichen Sie diese automatisch, damit Sie diese Bezeichnungen automatisch auf Inhalte anwenden können, die Sie beibehalten möchten und nicht benötigte Inhalte löschen können.
-ms.openlocfilehash: dc525a9f7a2ea97f61f03320495eea737465cfd9
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: 9ab456cd5b1f5f1bf47a1e24a3d7e58b7992ede0
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171303"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196378"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aufbewahrungsbezeichnungen automatisch anwenden, um Inhalte beizubehalten oder zu löschen
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
+
+> [!NOTE]
+> Dieses Szenario wird für [regulatorische Datensätze](records-management.md#records) nicht unterstützt.
 
 Eines der leistungsstärksten Features von [Aufbewahrungsbezeichnungen](retention.md) ist die Möglichkeit, diese automatisch auf Inhalte anzuwenden, die bestimmte Bedingungen erfüllen. In diesem Fall müssen die Personen in Ihrer Organisation die Bezeichnungen nicht selber anwenden. Das wird von Microsoft 365 erledigt.
   
@@ -39,6 +42,9 @@ Das automatische Anwenden von Aufbewahrungsbezeichnungen ist aus den folgenden G
 - Benutzer müssen nicht mehr über Governance-Richtlinien Bescheid wissen, sondern können sich stattdessen auf ihre Arbeit konzentrieren.
     
 Sie können Aufbewahrungsbezeichnungen automatisch auf Inhalte anwenden, wenn diese Inhalte vertrauliche Informationen, Schlüsselwörter oder durchsuchbare Eigenschaften aufweisen oder [trainierbaren Klassifizierungsmerkmalen](classifier-get-started-with.md) entsprechen.
+
+> [!TIP]
+> Verwenden Sie jetzt in der Vorschau durchsuchbare Eigenschaften, um [Aufnahmen von Teams-Besprechungen](#microsoft-teams-meeting-recordings) zu ermitteln.
 
 Folgende Prozesse können eine Aufbewahrungsbezeichnung entsprechend dieser Bedingungen automatisch anwenden:
 
@@ -80,7 +86,7 @@ Die Navigationsanweisungen sind davon abhängig, ob Sie die [Datensatzverwaltung
     
     - Informationen zu den Dateiplanbeschreibungen finden Sie unter [Verwenden des Dateiplans zum Verwalten von Aufbewahrungsbezeichnungen](file-plan-manager.md).
     
-    - Wenn Sie die Aufbewahrungsbezeichnung verwenden möchten, um einen [Datensatz](records-management.md#records) zu deklarieren, aktivieren Sie die Option **Elemente als Datensatz kennzeichnen**.
+    - Wenn Sie Datensätze mithilfe der Aufbewahrungsbezeichnung deklarieren möchten, wählen Sie **Elemente als Datensätze markieren** oder **Elemente als regulatorische Datensätze markieren** aus. Weitere Informationen finden Sie unter [Aufbewahrungsbezeichnungen zum Deklarieren von Datensätzen konfigurieren](declare-records.md#configuring-retention-labels-to-declare-records).
 
 3. Nachdem Sie die Bezeichnung erstellt haben und Ihnen die Optionen zum Veröffentlichen der Bezeichnung, zum automatischen Anwenden der Bezeichnung oder zum Speichern der Bezeichnung angezeigt werden: Wählen Sie **Diese Bezeichnung automatisch auf einen bestimmten Inhaltstyp anwenden** und dann **Fertig** aus, um den Assistenten zum Erstellen automatischer Bezeichnungen zu starten, der Sie direkt zu Schritt 2 des folgenden Verfahrens führt.
 
@@ -162,6 +168,29 @@ Beispiele für Abfragen:
 |Exchange   | `recipients:garthf@contoso.com` |
 |SharePoint | `contenttype:contract` |
 |SharePoint | `site:https://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract`|
+
+##### <a name="microsoft-teams-meeting-recordings"></a>Aufnahmen von Microsoft Teams-Besprechungen
+
+> [!NOTE]
+> Die Möglichkeit zum Aufbewahren und Löschen von Teams-Besprechungen wird in der Vorschau eingeführt und funktioniert nicht, bis Aufnahmen auf OneDrive oder Microsoft Office SharePoint Online gespeichert werden. Weitere Informationen finden Sie unter [Verwenden von OneDrive for Business und SharePoint Online oder Stream für Besprechungsaufzeichnungen](https://docs.microsoft.com/MicrosoftTeams/tmr-meeting-recording-change).
+
+Wenn Sie Aufnahmen von Microsoft Teams-Besprechungen ermitteln möchten, die in den OneDrive-Konten von Benutzern oder in SharePoint gespeichert sind, geben Sie im **Stichwortabfrage-Editor**Folgendes an:
+
+``` 
+ProgID:Media AND ProgID:Meeting
+```
+
+Diese Aufbewahrungsbezeichnung müssen Sie auch auf den OneDrive-Konten oder Microsoft Office SharePoint Online-Sites der jeweiligen Benutzer veröffentlichen, indem Sie eine Bezeichnungsrichtlinie erstellen. Meistens werden die Besprechungsaufnahmen auf OneDrive gespeichert, aber Kanalbesprechungen werden in Microsoft Office SharePoint Online gespeichert.
+
+Wenn Sie die Richtlinie für die automatische Anwendung gespeichert haben:
+
+1. Wählen Sie die Registerkarte **Bezeichnungsrichtlinien** > **Veröffentlichen von Bezeichnungen**.
+
+2. Wenn Sie aufgefordert werden, eine Bezeichnung auszuwählen, wählen Sie diejenige aus, die Sie mit der KQL-Abfrage erstellt haben, um die Teams-Besprechungen zu ermitteln.
+
+3. Wenn Sie zur Angabe des Speicherorts aufgefordert werden, wählen Sie **Microsoft Office SharePoint Online-Sites** und **OneDrive-Konten** aus. Sie können die Standardeinstellung **Alle** beibehalten oder einzelne Speicherorte angeben, z. B. bestimmte OneDrive-Konten ein- oder ausschließen.
+
+4. Schließen Sie den Assistenten ab, und speichern Sie diese Bezeichnungsrichtlinie.
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>Automatisches Anwenden von Bezeichnungen auf Inhalte mithilfe von trainierbare Klassifizierungen
 
