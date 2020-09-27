@@ -16,17 +16,17 @@ search.appverid:
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Erfahren Sie, wie Sie Compliance Manager im Microsoft-Vertrauens-Portal verwenden, um den Datenschutz und die gesetzlichen Vorschriften zu erfüllen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: aedadc682bd45f363f1e97599383dd901c3eae7f
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 1e530acb5ca22fd67d94fea47aa37973d62e767c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45016256"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198536"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft Compliance-Manager (klassisch)
 
-> [!NOTE]
-> Diese Dokumentation beschreibt eine frühere Version dieses Produkts. Benutzern wird *dringend abgeraten, diese Version von Compliance Manager*zu verwenden. **Wenn Sie die aktuelle Vorschauversion von Compliance Manager verwenden, lesen Sie die [Dokumentation zum Compliance Manager (Vorschau)](working-with-compliance-manager.md).**
+> [!IMPORTANT]
+> **Compliance Manager ist jetzt allgemein im [Microsoft 365 Compliance Center](https://compliance.microsoft.com/) verfügbar. Wir empfehlen Kunden dringend, den Compliance Manager (klassisch) nicht mehr zu verwenden und zum neuen Compliance Manager zu wechseln, um von dessen reichhaltiger Benutzererfahrung und aktualisierter Kontrollzuordnung zu profitieren. Bitte lesen Sie unsere [Compliance Manager-Dokumentation](compliance-manager.md), um den neuen Compliance Manager im Microsoft 365 Compliance Center einzurichten und zu verwenden.**
 
  *Der Compliance-Manager ist nicht in Office 365, betrieben von 21Vianet, Office 365 Deutschland, Office 365 US Government Community High (GCC) High oder Office 365 Department of Defense verfügbar.*
   
@@ -43,9 +43,6 @@ Für Compliance-Manager gilt Folgendes:
 - Er bietet ein sicheres Repository zum Hochladen und Verwalten von Nachweisen oder anderen Artefakten im Zusammenhang mit Complianceaktivitäten.
     
 - Er generiert ausführliche Berichte in Microsoft Excel, in denen die von Microsoft und Ihrer Organisation durchgeführten Complianceaktivitäten dokumentiert werden, und die Prüfern, Regulierungsbehörden und anderen Beteiligten an der Compliance zur Verfügung gestellt werden können.
-
-Eine kurze Demo von Compliance-Manager finden Sie in diesem Video zu [Compliance-Manager](https://www.youtube.com/watch?v=r1vs8NdSXKQ).
-
     
 > [!IMPORTANT]
 > Der Compliance-Manager ist ein Dashboard, das eine Zusammenfassung des Status von Datenschutz und Compliance sowie Empfehlungen zur Verbesserungen des Datenschutzes und der Compliance bereitstellt. Die im Compliance-Manager bereitgestellt Kundenaktionen sind Empfehlungen. Es liegt in der Verantwortung jeder Organisation, die Effektivität dieser Empfehlungen in ihrer jeweiligen Regulierungsumgebung vor der Implementierung zu bewerten. Im Compliance-Manager enthaltene Empfehlungen sollten nicht als Garantie für Compliance verstanden werden.
@@ -831,11 +828,3 @@ Compliance-Manager ist so konzipiert, dass eine regelmäßige Aktualisierung sta
 |B.8.4.7  <br/> |8.5.7  <br/> |
 |B.8.4.8  <br/> |8.5.8  <br/> |
 |
-   
-## <a name="see-also"></a>Siehe auch
-
-- [Compliance-Manager interaktiv Leitfaden](https://content.cloudguides.com/guides/Compliance%20Manager)
-
-- [Ankündigung: Allgemeine Verfügbarkeit von Compliance-Manager](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-Compliance-Manager-general-availability/ba-p/161922)
-
-- [Mit Microsoft 365 erhalten Sie einen effizienten Informationsschutz zum Einhalten der DSGVO](https://blogs.office.com/2018/02/22/microsoft-365-provides-an-information-protection-strategy-to-help-with-the-gdpr)

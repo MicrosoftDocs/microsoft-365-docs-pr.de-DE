@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c289b8c3ad2e177a9c2ee575014d8682da553352
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: a01a0599776c33d46850bcd0a5fbc6c3377056fa
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417689"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208297"
 ---
 # <a name="isoiec-270172015-code-of-practice-for-information-security-controls"></a>ISO/IEC 27017:2015 Verhaltenskodex für Informationssicherheitskontrollen
 
@@ -27,11 +27,11 @@ ms.locfileid: "47417689"
 
 Der ISO/IEC 27017:2015-Verhaltenskodex ist als Referenz für Organisationen vorgesehen, um sie während der Implementierung eines Systems für die Verwaltung der Cloud Computing-Informationssicherheit gemäß ISO/IEC 27002:2013 bei der Auswahl von Informationssicherheitskontrollen für Clouddienste zu unterstützen. Er kann auch von Cloud Service-Anbietern als Leitfaden zum Implementieren von allgemein anerkannten Schutzkontrollen verwendet werden.
 
-Dieser internationale Standard stellt zusätzliche cloudspezifische Implementierungsanweisungen gemäß ISO/IEC 27002 zur Verfügung und bietet weitere Kontrollen, um cloudspezifische Bedrohungen der Informationssicherheit und Risiken in Bezug auf die Abschnitte 5 bis 18 in ISO/IEC 27002: 2013 für Kontrollen, Implementierungsrichtlinien und andere Informationen zu mindern. Insbesondere stellt dieser Standard Anleitungen zu 37 Kontrollen in ISO/IEC 27002 zur Verfügung und enthält außerdem sieben neue Kontrollen, die nicht in ISO/IEC 27002 dupliziert sind. Diese neuen Kontrollen beziehen sich auf die folgenden wichtigen Bereiche:
+Dieser internationale Standard bietet zusätzliche cloudspezifische Implementierungsanleitungen auf der Grundlage von ISO/IEC 27002 und stellt zusätzliche Kontrollen für Kontrollen, Implementierungsanleitungen und andere Informationen zur Verfügung, um cloudspezifischen Bedrohungen und Risiken der Informationssicherheit zu begegnen, die sich auf die Abschnitte 5–18 in ISO/IEC 27002: 2013 beziehen. Insbesondere stellt dieser Standard Anleitungen zu 37 Kontrollen in ISO/IEC 27002 zur Verfügung und enthält außerdem sieben neue Kontrollen, die nicht in ISO/IEC 27002 dupliziert sind. Diese neuen Kontrollen beziehen sich auf die folgenden wichtigen Bereiche:
 
 - Gemeinsame Rollen und Pflichten innerhalb einer Cloud Computing-Umgebung
 - Entfernen und Rückgabe von Kundenressourcen in Cloud Services nach Vertragsende
-- Schutz und Trennung der virtuellen Umgebung eines Kunden von der Umgebung anderer Kunden
+- Schutz und Trennung der virtuellen Umgebung eines Kunden von den Umgebungen anderer Kunden
 - Erfordernisse zur Stärkung virtueller Maschinen um Geschäftsanforderungen zu erfüllen
 - Verfahren für administrative Abläufe einer Cloud Computing-Umgebung
 - Überwachung relevanter Aktivitäten innerhalb einer Cloud Computing-Umgebung durch den Kunden
@@ -73,17 +73,21 @@ Für wen gilt der Standard?
 
 Dieser Verhaltenskodex stellt Kontrollen und Implementierungsanleitungen für Anbieter und Kunden von Clouddiensten bereit. Er ist ähnlich strukturiert wie ISO/IEC 27002:2013.
 
-**Wo kann ich die Complianceinformationen von Microsoft für ISO/IEC 27017:2015 anzeigen?**
+**Wo kann ich Microsofts Konformitätsinformationen für ISO/IEC 27017:2015 einsehen?**
 
 Sie können das [ISO/IEC 27017:2015-Zertifikat](https://aka.ms/azureiso27017) für Azure, Intune und Power BI herunterladen.
 
-**Kann ich die ISO/IEC 27017-Compliance von Microsoft-Diensten für den Zertifizierungsprozess meiner Organisation verwenden?**
+**Kann ich die ISO/IEC 27017-Konformität von Microsoft-Diensten im Zertifizierungsprozess meiner Organisation nutzen?**
 
 Ja. Wenn Ihr Unternehmen eine Zertifizierung für Installationen anstrebt, die in einem der im Umfang enthaltenen Microsoft Enterprise Cloud Services bereitgestellt werden, können Sie die entsprechenden Zertifizierungen von Microsoft für Ihre Compliancebewertung verwenden. Sie sind jedoch dafür verantwortlich, einen Auditor mit der Prüfung Ihrer Implementierung unter Wahrung der Compliance zu beauftragen. Außerdem sind Sie für die Kontrollen und Prozesse in Ihrer eigenen Organisation zuständig.
 
 **Wie erhalte ich Kopien der entsprechenden Prüfberichte?**
 
 Im [Service Trust Portal](https://aka.ms/stphelp) erhalten Sie unabhängige Prüfberichte von Dritten und weitere zugehörige Dokumentation. Sie können diese Dokumentation aus dem Portal herunterladen und prüfen, um Unterstützung bei der Erfüllung Ihrer eigenen gesetzlichen Anforderungen zu erhalten.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Verwenden Sie den Microsoft Compliance Manager, um Ihr Risiko einzuschätzen
+
+[Microsoft Compliance Manager](compliance-manager.md) ist eine Funktion im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), die Ihnen hilft, die Compliance-Position Ihres Unternehmens zu verstehen und Maßnahmen zu ergreifen, um Risiken zu reduzieren. Compliance Manager bietet eine Premiumvorlage für die Erstellung einer Bewertung für diese Verordnung. Suchen Sie die Vorlage auf der Seite **Bewertungsvorlagen** im Compliance Manager. Erfahren Sie, wie Sie [Bewertungen in Compliance Manager](compliance-manager-assessments.md) erstellen.
 
 ## <a name="resources"></a>Ressourcen
 

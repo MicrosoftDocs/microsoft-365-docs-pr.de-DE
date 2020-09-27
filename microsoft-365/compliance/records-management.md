@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Mit der Datensatzverwaltung in Microsoft 365 können Sie Ihre Aufbewahrungszeitpläne auf einen Dateiplan anwenden, der die Aufbewahrung, die Datensatzdeklaration und die Löschung verwaltet.
-ms.openlocfilehash: d8ea68d8fbbf67928bae4f6d09712658f364e3ef
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: 677196f23430ec19f23c50e05fcc193fde420ca0
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868910"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200492"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Weitere Informationen zur Datensatzverwaltung in Microsoft 365
 
@@ -53,7 +53,7 @@ Zusätzlich zur Onlinedokumentation können Sie sich bei Bedarf die [Webinaraufz
 
 ## <a name="records"></a>Datensätze
 
-Wenn Inhalt als Datensatz markiert ist:
+Wenn Inhalt zum Datensatz erklärt wird:
 
 - Die Elemente werden hinsichtlich der [zulässigen oder blockierten Aktionen](#compare-restrictions-for-what-actions-are-allowed-or-blocked) eingeschränkt.
 
@@ -61,31 +61,31 @@ Wenn Inhalt als Datensatz markiert ist:
 
 - Sie haben einen Verfügungsnachweis, wenn die Elemente am Ende ihrer Aufbewahrungsfrist gelöscht werden.
 
-Verwenden Sie [Aufbewahrungsbezeichnungen](retention.md#retention-labels), um Inhalte als Datensätze zu kennzeichnen. Sie können diese Bezeichnungen entweder veröffentlichen, damit Benutzer und Administratoren sie manuell auf Inhalte anwenden können, oder diese Bezeichnungen automatisch auf Inhalte anwenden, die Sie als Datensatz markieren möchten.
+Sie verwenden [Aufbewahrungsbezeichnungen](retention.md#retention-labels), um Inhalte als **Datensatz** oder **regulatorischen Datensatz** (derzeit in der Vorschau) zu kennzeichnen. Der Unterschied zwischen diesen beiden wird im nächsten Abschnitt erläutert. Sie können diese Bezeichnungen entweder veröffentlichen, so dass Benutzer und Administratoren sie manuell auf Inhalte anwenden können, oder Sie können diese Labels automatisch auf Inhalte anwenden, die Sie als Datensatz oder regulatorischen Datensatz markieren möchten.
 
-Durch die Verwendung von Aufbewahrungsbezeichnungen zum Markieren von Inhalten als Datensätze können Sie eine einzige und konsistente Strategie für die Verwaltung von Datensätzen in Ihrer Microsoft 365-Umgebung implementieren.
+Durch die Verwendung von Aufbewahrungsbezeichungen zur Deklaration von Aufzeichnungen können Sie eine einheitliche und konsistente Strategie für die Verwaltung von Datensätzen in Ihrer Microsoft 365-Umgebung implementieren.
 
-### <a name="compare-restrictions-for-what-actions-are-allowed-or-blocked"></a>Vergleichen Sie die Einschränkungen für die zulässigen oder blockierten Aktionen
+### <a name="compare-restrictions-for-what-actions-are-allowed-or-blocked"></a>Vergleichen Sie Einschränkungen dazu, welche Aktionen erlaubt oder blockiert sind.
 
-Verwenden Sie die folgende Tabelle, um zu ermitteln, welche Einschränkungen für den Inhalt durch das Anwenden einer Standardaufbewahrungsbezeichnung und von Aufbewahrungsbezeichnungen, die den Inhalt als Datensatz kennzeichnen, gelten. 
+Verwenden Sie die folgende Tabelle, um zu ermitteln, welche inhaltlichen Einschränkungen sich aus der Anwendung einer Standard-Aufbewahrungsbezeichnung und von Aufbewahrungsbezeichnungen ergeben, die den Inhalt als Datensatz oder regulatorischen Datensatz kennzeichnen. 
 
-Eine standardmäßige Aufbewahrungsbezeichnung verfügt über Aufbewahrungseinstellungen und Aktionen, markiert Inhalte aber nicht als Datensatz.
+Eine Standard-Aufbewahrungsbezeichnung verfügt über Aufbewahrungseinstellungen und -aktionen, kennzeichnet den Inhalt jedoch nicht als Datensatz oder alsregulatorischen Datensatz.
 
 >[!NOTE] 
 > Der Vollständigkeit halber enthält die Tabelle Spalten für einen gesperrten und entsperrten Datensatz, die für SharePoint und OneDrive gelten, jedoch nicht für Exchange. Die Möglichkeit zum Sperren und Entsperren eines Datensatzes verwendet die [Datensatzversionsverwaltung](record-versioning.md), die für Exchange-Elemente nicht unterstützt wird. Für alle Exchange-Elemente, die als Datensatz markiert sind, ist das Verhalten der Spalte **Datensatz gesperrt** und der Spalte **Datensatz entsperrt** nicht relevant.
 
 
-|Aktion| Aufbewahrungsbezeichnung |Datensatz – gesperrt| Datensatz – entsperrt|
-|:-----|:-----|:-----|:-----|:-----|
-|Inhalt bearbeiten|Zulässig | **Gesperrt** | Zulässig|
-|Bearbeiten Sie Eigenschaften, einschließlich Umbenennen|Allowed |Zulässig | Allowed|
-|Löschen|Zulässig <sup>1</sup> |**Gesperrt** | **Gesperrt**|
-|Kopie|Allowed |Zulässig | Allowed|
-|Innerhalb eines Containers bewegen<sup>2</sup>|Allowed |Zulässig | Allowed|
-|Über Container hinweg bewegen <sup>2</sup>|Zulässig |Zulässig, wenn nie entsperrt | Zulässig|
-|Öffnen/Lesen|Allowed |Zulässig | Allowed|
-|Ändern der Bezeichnung|Zulässig |Zulässig – nur Container-Administrator | Zulässig – nur Container-Administrator|
-|Bezeichnung entfernen|Zulässig |Zulässig – nur Container-Administrator | Zulässig – nur Container-Administrator|
+|Aktion| Aufbewahrungsbezeichnung |Datensatz – gesperrt| Datensatz – entsperrt| Regulatorischer Datensatz |
+|:-----|:-----|:-----|:-----|:-----|:-----|
+|Inhalt bearbeiten|Zulässig | **Gesperrt** | Allowed | **Gesperrt**|
+|Bearbeiten Sie Eigenschaften, einschließlich Umbenennen|Allowed |Zulässig | Allowed| **Gesperrt**|
+|Löschen|Zulässig <sup>1</sup> |**Gesperrt** |**Gesperrt**| **Gesperrt**|
+|Kopie|Allowed |Zulässig | Zulässig| Allowed|
+|Innerhalb eines Containers bewegen<sup>2</sup>|Allowed |Zulässig | Zulässig| Allowed|
+|Über Container hinweg bewegen <sup>2</sup>|Zulässig |Zulässig, wenn nie entsperrt | Allowed| **Gesperrt**|
+|Öffnen/Lesen|Allowed |Zulässig | Zulässig| Allowed|
+|Ändern der Bezeichnung|Zulässig |Zulässig – nur Container-Administrator | Zulässig – nur Container-Administrator| **Gesperrt**
+|Bezeichnung entfernen|Zulässig |Zulässig – nur Container-Administrator | Zulässig – nur Container-Administrator| **Gesperrt**
 
 Fußnoten:
 
@@ -95,10 +95,19 @@ Nachricht, die ein Benutzer sieht, wenn er versucht, ein beschriftetes Dokument 
 
 ![Nachricht, dass das Element nicht aus SharePoint gelöscht wurde](../media/d0020726-1593-4a96-b07c-89b275e75c49.png)
 
-
 <sup>2</sup> Zu den Containern gehören SharePoint-Dokumentbibliotheken und Exchange-Postfächer.
 
-## <a name="next-steps"></a>Weitere Schritte
+>[!IMPORTANT] 
+> Der wichtigste Unterschied für einen regulatorischen Datensatz besteht darin, dass nach der Anwendung auf den Inhalt niemand, nicht einmal ein globaler Administrator, die Bezeichnung entfernen kann. 
+>
+> Darüber hinaus gelten für Aufbewahrungsbezeichnungen, die für regulatorische Datensätze konfiguriert sind, die folgenden administrativen Einschränkungen:
+> - Die Aufbewahrungsfrist kann nach dem Speichern der Bezeichnung nicht verkürzt, sondern nur verlängert werden.
+> - Diese Bezeichnungen werden nicht durch Autobezeichnungsrichtlinien unterstützt und müssen mit Hilfe von [Richtlinien für Aufbewahrungsbezeichnungen](create-apply-retention-labels.md) angewendet werden. 
+> - Nachdem Sie diese Bezeichnungen zu einer Richtlinie für Aufbewahrungsbezeichnungen hinzugefügt und gespeichert haben, können Sie sie nicht von Speicherorten entfernen, sondern nur Speicherorte hinzufügen.
+> 
+> Vergewissern Sie sich aufgrund dieser irreversiblen Aktionen, dass Sie wirklich regulatorische Datensätze verwenden müssen, bevor Sie diese Option für Ihre Aufbewahrungsbezeichnungen wählen. Um eine versehentliche Konfiguration zu verhindern, ist diese Option nicht standardmäßig verfügbar, sondern muss zunächst mithilfe von PowerShell aktiviert werden. Anweisungen sind in [Deklarieren von Datensätzen unter Verwendung von Aufbewahrungsbezeichnungen](declare-records.md) enthalten.
+
+## <a name="next-steps"></a>Nächste Schritte
 
 Siehe [Erste Schritte mit der Datensatzverwaltung](get-started-with-records-management.md).
 

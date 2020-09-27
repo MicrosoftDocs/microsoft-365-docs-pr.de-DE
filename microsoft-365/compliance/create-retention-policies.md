@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mithilfe einer Aufbewahrungsrichtlinie können Sie die Inhalte, die Benutzer mit E-Mails, Dokumenten und Unterhaltungen generieren, sehr effizient verwalten. Bewahren Sie auf, was Sie wollen, und werden Sie los, was Sie nicht mehr wollen.
-ms.openlocfilehash: 8663da0a93bb4781af747d810200d4a2a777acb4
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: f9c8ff4287f0970f8571d3ced7d612515b03c08e
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948173"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198492"
 ---
 # <a name="create-and-configure-retention-policies"></a>Erstellen und Konfigurieren von Aufbewahrungsrichtlinien
 
@@ -50,11 +50,14 @@ Obwohl eine Aufbewahrungsrichtlinie mehrere Speicherorte unterstützt, können S
 - Öffentliche Exchange-Ordner
 - Teams-Kanalnachrichten
 - Teams-Chats
+- Nachrichten in der Yammer-Community
+- Private Nachrichten in Yammer
 
-Wenn Sie beim Erstellen einer Aufbewahrungsrichtlinie einen der Teams-Speicherorte auswählen, werden die anderen Speicherorte automatisch ausgeschlossen. Die folgenden Anweisungen sind daher davon abhängig, ob Sie die Teams-Speicherorte einschließen müssen:
+Wenn Sie beim Erstellen einer Aufbewahrungsrichtlinie die Teams- oder Yammer-Speicherorte auswählen, werden die anderen Speicherorte automatisch ausgeschlossen. Daher hängen die zu befolgenden Anweisungen davon ab, ob Sie die Teams oder die Yammer-Speicherorte einschließen müssen:
 
 - [Anweisungen für eine Aufbewahrungsrichtlinie für Teams-Speicherorte](#retention-policy-for-teams-locations)
-- [Anweisungen für eine Aufbewahrungsrichtlinie für andere Speicherorte als Teams](#retention-policy-for-locations-other-than-teams)
+- [Anweisungen für eine Aufbewahrungsrichtlinie für Yammer-Speicherorte](#retention-policy-for-yammer-locations)
+- [Anweisungen für eine Aufbewahrungsrichtlinie für andere Speicherorte als Teams und Yammer ](#retention-policy-for-locations-other-than-teams-and-yammer)
 
 Wenn Sie über mehr als eine Aufbewahrungsrichtlinie verfügen und außerdem Aufbewahrungsbezeichnungen verwenden, lesen Sie [Grundsätze der Aufbewahrung, oder was hat Vorrang?](retention.md#the-principles-of-retention-or-what-takes-precedence), um das Ergebnis zu verstehen, wenn mehrere Aufbewahrungseinstellungen für dieselben Inhalte gelten.
 
@@ -93,7 +96,56 @@ Wenn Sie Teamwebsites haben, die mit keiner Microsoft 365-Gruppe verbunden sind,
 
 Es kann vorkommen, dass eine Aufbewahrungsrichtlinie, die auf Microsoft 365-Gruppen, SharePoint-Websites oder OneDrive-Konten angewendet wird, eine Datei löscht, die in einer Teams Chat- oder Kanalnachricht erwähnt wird, bevor diese Nachrichten gelöscht werden. In diesem Szenario wird die Datei in der Microsoft Teams-Nachricht weiterhin angezeigt, aber wenn Benutzer die Datei auswählen, wird der Fehler "Datei nicht gefunden" angezeigt. Dieses Verhalten gilt nicht für Aufbewahrungsrichtlinien. Dies kann auch passieren, wenn ein Benutzer eine Datei aus SharePoint oder OneDrive manuell löscht.
 
-### <a name="retention-policy-for-locations-other-than-teams"></a>Aufbewahrungsrichtlinie für andere Speicherorte als Teams
+### <a name="retention-policy-for-yammer-locations"></a>Aufbewahrungsrichtlinie für Yammer-Speicherorte
+
+> [!NOTE]
+> Die Aufbewahrungsrichtlinien für Yammer werden in Kürze eingeführt. Wenn Sie die neuen Speicherorte für Yammer noch nicht sehen, versuchen Sie es in ein paar Tagen noch einmal.
+>
+> Um diese Funktion nutzen zu können, muss Ihr Yammer-Netzwerk im [nativen Modus](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) und nicht im Hybridmodus arbeiten.
+
+1. Wählen Sie im [Microsoft 365 Compliance Center](https://compliance.microsoft.com/) die Option **Richtlinien** > **Aufbewahrung** aus.
+
+2. Wählen Sie **Neue Aufbewahrungsrichtlinie**, um eine neue Aufbewahrungsrichtlinie zu erstellen.
+
+3. Geben Sie auf der Assistentenseite **Entscheiden, ob Inhalte beibehalten werden, gelöscht werden oder beides** die Konfigurationsoptionen für das Beibehalten und Löschen von Inhalten an. 
+    
+    Sie können eine Aufbewahrungsrichtlinie erstellen, die Inhalte nur aufbewahrt, ohne sie zu löschen, die sie aufbewahrt und nach einem festgelegten Zeitraum löscht, oder Inhalte nur nach einem bestimmten Zeitraum löscht. Weitere Informationen finden Sie unter [Einstellungen für die Aufbewahrung und Löschung von Inhalten](#settings-for-retaining-and-deleting-content) auf dieser Seite.
+    
+    Wählen Sie nicht **Erweiterte Aufbewahrungseinstellungen verwenden**, da diese Option für Yammer-Speicherorte nicht unterstützt wird. 
+
+4. Wählen Sie auf der Seite **Speicherorte auswählen** die Option **Bestimmte Standorte auswählen**. Aktivieren Sie dann einen oder beide Speicherorte für Yammer: **Yammer-Communitynachricht** und **Private Yammer-Nachrichten**.
+    
+    Standardmäßig sind alle Communitys und Benutzer ausgewählt, aber Sie können dies verfeinern, indem Sie Communitys und Benutzer angeben, die ein- oder -ausgeschlossen werden sollen.
+    
+    Für private Yammer-Nachrichten: 
+    - Wenn Sie den Standard auf **Alle ** belassen, werden Azure B2B-Gastbenutzer nicht berücksichtigt. 
+    - Durch Wählen von **Benutzer auswählen** können Sie eine Aufbewahrungsrichtlinie auf externe Benutzer anwenden, wenn Sie deren Konto kennen.
+
+5. Schließen Sie den Assistenten ab, um Ihre Einstellungen zu speichern.
+
+Weitere Informationen darüber, wie die Aufbewahrungsrichtlinien bei Yammer funktionieren, finden Sie unter [Informationen zur Aufbewahrung bei Yammer](retention-policies-yammer.md).
+
+#### <a name="additional-retention-policies-needed-to-support-yammer"></a>Zusätzliche Aufbewahrungsrichtlinien zur Unterstützung von Yammer erforderlich
+
+Yammer ist mehr als nur Communitynachrichten und private Nachrichten. Um E-Mail-Nachrichten für Ihr Yammer-Netzwerk aufzubewahren und zu löschen, konfigurieren Sie eine zusätzliche Aufbewahrungsrichtlinie, die alle Microsoft 365-Gruppen umfasst, die für Yammer verwendet werden, indem Sie den Speicherort für**Office 365-Gruppen** verwenden. 
+
+Um Dateien, die in Yammer gespeichert sind, aufzubewahren und zu löschen, benötigen Sie eine Aufbewahrungsrichtlinie, die die **SharePoint-Websites** oder die Speicherorte der **OneDrive-Konten** umfasst:
+
+- Dateien, die in privaten Nachrichten gemeinsam genutzt werden, werden im OneDrive-Konto des Benutzers gespeichert, der die Datei freigegeben hat. 
+
+- Dateien, die in Communitys hochgeladen werden, werden auf der SharePoint-Website für die Yammer-Community gespeichert.
+
+Es ist möglich, dass eine Aufbewahrungsrichtlinie, die auf SharePoint-Websites oder OneDrive-Konten angewendet wird, eine Datei löschen kann, auf die in einer Yammer-Nachricht verwiesen wird, bevor diese Nachrichten gelöscht werden. In diesem Szenario wird die Datei immer noch in der Yammer-Meldung angezeigt, aber wenn Benutzer die Datei auswählen, erhalten sie die Fehlermeldung „Datei nicht gefunden“. Dieses Verhalten gilt nicht spezifisch für Aufbewahrungsrichtlinien und kann auch auftreten, wenn ein Benutzer eine Datei manuell aus SharePoint oder OneDrive löscht.
+
+### <a name="retention-policy-for-locations-other-than-teams-and-yammer"></a>Aufbewahrungsrichtlinie für andere Speicherorte als Teams oder Yammer
+
+Verwenden Sie die folgenden Anweisungen für Aufbewahrungsrichtlinien, die für alle diese Dienste gelten:
+
+- Exchange: E-Mail und öffentliche Ordner
+- SharePoint: Websites
+- OneDrive: Konten
+- Microsoft 365-Gruppen
+- Skype for Business
 
 1. Wählen Sie im [Microsoft 365 Compliance Center](https://compliance.microsoft.com/) die Option **Richtlinien** > **Aufbewahrung** aus.
 

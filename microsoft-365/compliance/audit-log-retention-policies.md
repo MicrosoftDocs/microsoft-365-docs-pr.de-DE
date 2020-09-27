@@ -17,20 +17,20 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Aufbewahrungsrichtlinien für Überwachungsprotokolle sind Bestandteil der neuen erweiterten Überwachungsfunktionen in Microsoft 365. Mit einer Aufbewahrungsrichtlinie für Überwachungsprotokolle können Sie festlegen, wie lange Überwachungsprotokolle in Ihrer Organisation aufbewahrt werden sollen.
-ms.openlocfilehash: a657e3cac4c6b0620d7c5c69247154776ce60ffe
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 62d6fa47d19eaa9ae12e84879b5bf19a81afe8ae
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547019"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199539"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Verwalten von Aufbewahrungsrichtlinien für Überwachungsprotokolle
 
-Sie können Aufbewahrungsrichtlinien für Überwachungsprotokolle im Security & Compliance Center erstellen und verwalten. Aufbewahrungsrichtlinien für Überwachungsprotokolle sind Bestandteil der neuen erweiterten Überwachungsfunktionen in Microsoft 365. Mit einer Aufbewahrungsrichtlinie für Überwachungsprotokolle können Sie festlegen, wie lange Überwachungsprotokolle in Ihrer Organisation aufbewahrt werden sollen. Überwachungsprotokolle können bis zu einem Jahr aufbewahrt werden. Sie können Richtlinien nach folgenden Kriterien erstellen:
+Sie können Aufbewahrungsrichtlinien für Überwachungsprotokolle im Security & Compliance Center erstellen und verwalten. Aufbewahrungsrichtlinien für Überwachungsprotokolle sind Bestandteil der neuen erweiterten Überwachungsfunktionen in Microsoft 365. Mit einer Aufbewahrungsrichtlinie für Überwachungsprotokolle können Sie festlegen, wie lange Überwachungsprotokolle in Ihrer Organisation aufbewahrt werden sollen. Sie können Überwachungsprotokolle bis zu 10 Jahre lang aufbewahren. Sie können Richtlinien nach folgenden Kriterien erstellen:
 
 - Alle Aktivitäten in einem oder mehreren Microsoft 365-Diensten
 
-- Bestimmte Aktivitäten (in einem bestimmten Dienst), die von allen Benutzern oder von bestimmten Benutzern ausgeführt werden
+- Bestimmte Aktivitäten (in einem Microsoft 365-Dienst), die von allen Benutzern oder von bestimmten Benutzern ausgeführt werden
 
 - Eine Prioritätsstufe, die angibt, welche Richtlinie Vorrang hat, wenn es in Ihrer Organisation mehrere Richtlinien gibt
 
@@ -39,7 +39,7 @@ Sie können Aufbewahrungsrichtlinien für Überwachungsprotokolle im Security & 
 Die erweiterte Überwachung in Microsoft 365 stellt eine Standardaufbewahrungsrichtlinie für Überwachungsprotokolle für alle Organisationen bereit. Diese Richtlinie bewahrt alle Exchange-, SharePoint- und Azure Active Directory-Überwachungsdatensätze für ein Jahr auf. Diese Standardrichtlinie bewahrt Überwachungsdatensätze auf, die den Wert **AzureActiveDirectory**, **Exchange**oder **SharePoint** für die **Workload**-Eigenschaft (der Dienst, in dem die Aktivität aufgetreten ist) enthalten. Die Standardrichtlinie kann nicht geändert werden. Im Abschnitt [Weitere Informationen](#more-information) in diesem Artikel finden Sie eine Liste der Datensatztypen für die einzelnen Workloads, die in der Standardrichtlinie enthalten sind.
 
 > [!NOTE]
-> Die standardmäßige Aufbewahrungsrichtlinie für Überwachungsprotokolle gilt nur für Überwachungseinträge für Aktivitäten, die von Benutzern ausgeführt werden, denen eine Office 365- oder Microsoft 365 E5-Lizenz zugewiesen wurde, oder die über eine Microsoft 365 E5 Compliance-Add-on-Lizenz verfügen. Wenn es in Ihrer Organisation nicht-E5-Benutzer gibt, werden die entsprechenden Überwachungsdatensätze für 90 Tage aufbewahrt.
+> Die Standardrichtlinie zur Aufbewahrung von Überwachungsprotokollen gilt nur für Überwachungsdatensätze für Aktivitäten, die von Benutzern durchgeführt werden, denen eine Office 365- oder Microsoft 365 E5-Lizenz zugewiesen ist, oder die über eine Microsoft 365 E5 Compliance- oder E5 eDiscovery- und Überwachungs-Add-on-Lizenz verfügen. Wenn es in Ihrer Organisation nicht-E5-Benutzer gibt, werden die entsprechenden Überwachungsdatensätze für 90 Tage aufbewahrt.
 
 ## <a name="before-you-create-an-audit-log-retention-policy"></a>Vor dem Erstellen einer Aufbewahrungsrichtlinie für Überwachungsprotokolle
 
@@ -53,46 +53,48 @@ Die erweiterte Überwachung in Microsoft 365 stellt eine Standardaufbewahrungsri
 
 ## <a name="create-an-audit-log-retention-policy-in-the-compliance-center"></a>Erstellen einer Aufbewahrungsrichtlinie für Überwachungsprotokolle im Compliance Center
 
-1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com), und melden Sie sich mit dem Benutzerkonto an, dem die Rolle "Organisationskonfiguration"im Security & Compliance Center zugewiesen ist.
+1. Wechseln Sie zu [https://compliance.microsoft.com](https://compliance.microsoft.com), und melden Sie sich mit dem Benutzerkonto an, dem die Rolle "Organisationskonfiguration"im Security & Compliance Center zugewiesen ist.
 
-2. Klicken Sie im Security & Compliance Center im linken Bereich auf **Suchen**  > **Überwachungsprotokollsuche**.
+2. Klicken Sie im linken Bereich des Microsoft 365 Compliance Center auf **Alle anzeigen** und dann auf **Überwachung**.
 
-    Die Seite **Überwachungsprotokollsuche** wird angezeigt.
+    Die Seite **Überwachung** wird angezeigt.
 
-    ![Die Seite "Überwachungsprotokollsuche"](../media/AuditLogRetentionPolicy1.png)
+    ![Die Suchseite des Überwachungsprotokolls im Compliance Center](../media/AuditLogRetentionPolicy1.png)
 
-3. Klicken Sie auf **Neue Aufbewahrungsrichtlinie für die Überwachung**, und führen Sie dann auf der Flyoutseite die folgenden Felder aus:
+3. Klicken Sie auf **Richtlinie zur Überwachungsaufbewahrung erstellen**, und füllen Sie dann die folgenden Felder auf der Flyout-Seite aus:
 
     ![Flyoutseite "Aufbewahrungsrichtlinien für die Überwachung"](../media/AuditLogRetentionPolicy2.png)
 
-   a. **Name:** Der Name der Aufbewahrungsrichtlinie für Überwachungsprotokolle. Dieser Name muss in Ihrer Organisation eindeutig sein.
+   1. **Name:** Der Name der Aufbewahrungsrichtlinie für Überwachungsprotokolle. Dieser Name muss in Ihrer Organisation eindeutig sein.
 
-   b. **Beschreibung:** Optional, aber hilfreich, um Informationen zur Richtlinie bereitzustellen, z. B. den Datensatztyp oder den Workload, die in der Richtlinie angegebenen Benutzer sowie die Dauer.
+   2. **Beschreibung:** Optional, aber hilfreich, um Informationen zur Richtlinie bereitzustellen, z. B. den Datensatztyp oder den Workload, die in der Richtlinie angegebenen Benutzer sowie die Dauer.
 
-   c. **Datensatztypen:** Der Überwachungsdatensatztyp, für den die Richtlinie gilt. Wenn Sie mehr als einen Datensatztyp auswählen, können Sie keine Aktivitäten auswählen, da die Richtlinie für alle Aktivitäten der ausgewählten Datensatztypen gilt. Wenn Sie diese Eigenschaft leer lassen, müssen Sie außerdem einen Benutzer im Feld **Benutzer** auswählen.
+   3. **Benutzer:** Wählen Sie einen oder mehrere Benutzer aus, auf die die Richtlinie angewendet werden soll. Wenn Sie dieses Feld leer lassen, gilt die Richtlinie für alle Benutzer. Wenn Sie die **Datensatzart** leer lassen, müssen Sie einen Benutzer auswählen.
 
-   d. **Aktivitäten:** In diesem Feld können Sie Aktivitäten aus dem ausgewählten Datensatztyp auswählen. Sie können bestimmte Aktivitäten auswählen, auf die die Richtlinie angewendet werden soll. Wenn Sie keine bestimmten Aktivitäten auswählen, gilt die Richtlinie für alle Aktivitäten des ausgewählten Datensatztyps.
+   4. **Datensatzart: ** die Art des Überwachungsdatensatzes, auf den sich die Richtlinie bezieht Wenn Sie diese Eigenschaft leer lassen, müssen Sie im Feld **Benutzer** einen Benutzer auswählen. Sie können einen einzelnen oder mehrere Datensatztypen auswählen:
 
-   e. **Benutzer:** Wählen Sie einen oder mehrere Benutzer aus, auf die die Richtlinie angewendet werden soll. Wenn Sie dieses Feld leer lassen, gilt die Richtlinie für alle Benutzer. Wenn Sie das Feld **Datensatztypen** leer lassen, müssen Sie einen Benutzer auswählen.
+   - Wenn Sie einen einzelnen Datensatztyp auswählen, wird das Feld **Aktivitäten** dynamisch angezeigt. Mithilfe der Drop-down-Liste können Sie Aktivitäten des ausgewählten Datensatztyps auswählen, auf die die Richtlinie angewendet werden soll. Wenn Sie keine bestimmten Aktivitäten auswählen, gilt die Richtlinie für alle Aktivitäten des ausgewählten Datensatztyps.
 
-   f. **Dauer:** Wie lange die Überwachungsprotokolle aufbewahrt werden, die den Kriterien der Richtlinie entsprechen.
+   - Wenn Sie mehrere Datensatztypen auswählen, können Sie keine Aktivitäten auswählen. Die Richtlinie wird auf alle Aktivitäten des ausgewählten Datensatztyps angewendet.
 
-   g. **Priorität:** Dieser Wert bestimmt die Reihenfolge, in der Aufbewahrungsrichtlinien für Überwachungsprotokolle in Ihrer Organisation angewandt werden. Ein höherer Wert weist auf eine höhere Priorität hin.  So würde beispielsweise eine Richtlinie mit einem Prioritätswert von **5** Vorrang vor einer Richtlinie mit einem Prioritätswert von **0**haben. Wie zuvor erläutert, hat jede benutzerdefinierte Aufbewahrungsrichtlinie für Überwachungsprotokolle Vorrang vor der Standardrichtlinie für Ihre Organisation.
+   5. **Dauer:** die Zeitdauer, wie lange die Überwachungsprotokolle aufbewahrt werden, die den Kriterien der Richtlinie entsprechen
+
+   6. **Priorität:** Dieser Wert bestimmt die Reihenfolge, in der Aufbewahrungsrichtlinien für Überwachungsprotokolle in Ihrer Organisation angewandt werden. Ein höherer Wert weist auf eine höhere Priorität hin.  So würde beispielsweise eine Richtlinie mit einem Prioritätswert von **5** Vorrang vor einer Richtlinie mit einem Prioritätswert von **0**haben. Wie zuvor erläutert, hat jede benutzerdefinierte Aufbewahrungsrichtlinie für Überwachungsprotokolle Vorrang vor der Standardrichtlinie für Ihre Organisation.
 
 4. Klicken Sie auf **Speichern**, um die neue Aufbewahrungsrichtlinie für Überwachungsprotokolle zu erstellen.
 
-Zurzeit gibt es keine Bestätigung, dass die Aufbewahrungsrichtlinie erfolgreich erstellt wurde. Im nächsten Abschnitt erfahren Sie, wie Sie die Eigenschaften von Aufbewahrungsrichtlinien für Überwachungsprotokolle einsehen können.
+Die neue Überwachungs-Aufbewahrungsrichtlinie wird auf der Registerkarte **Überwachungs-Aufbewahrungsrichtlinien** aufgelistet.
 
 ## <a name="create-an-audit-log-retention-policy-in-powershell"></a>Erstellen einer Aufbewahrungsrichtlinie für Überwachungsprotokolle in PowerShell
 
-Aufbewahrungsrichtlinien für Überwachungsprotokolle können auch mithilfe von Security & Compliance Center PowerShell erstellt werden. 
+Aufbewahrungsrichtlinien für Überwachungsprotokolle können auch mithilfe von Security & Compliance Center PowerShell erstellt werden.
 
 1. [Stellen Sie eine Verbindung mit der Security & Compliance Center PowerShell her](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
-2. Führen Sie zum Erstellen einer neuen Aufbewahrungsrichtlinie den folgenden Befehl aus: 
+2. Führen Sie zum Erstellen einer neuen Aufbewahrungsrichtlinie den folgenden Befehl aus:
 
    ```powershell
-   New-UnifiedAuditLogRetentionPolicy -Name "Microsoft Teams Audit Policy" -Description "One year retention policy for all Microsoft Teams activities" -RecordTypes MicrosoftTeams -RetentionDuration TwelveMonths -Priority 100
+   New-UnifiedAuditLogRetentionPolicy -Name "Microsoft Teams Audit Policy" -Description "One year retention policy for all Microsoft Teams activities" -RecordTypes MicrosoftTeams -RetentionDuration TenYears -Priority 100
    ```
 
     In diesem Beispiel wird eine Aufbewahrungsrichtlinie für Überwachungsprotokolle namens "Microsoft Teams Audit Policy" mit diesen Einstellungen erstellt:
@@ -101,7 +103,7 @@ Aufbewahrungsrichtlinien für Überwachungsprotokolle können auch mithilfe von 
 
    - Bewahrt alle Microsoft Teams-Aktivitäten auf (gemäß der Definition durch den *RecordType*-Parameter).
 
-   - Bewahrt Microsoft Teams-Überwachungsprotokolle ein Jahr lang auf.
+   - Bewahrt Microsoft Teams-Überwachungsprotokolle 10 Jahre lang auf.
 
    - Eine Priorität von 100.
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: ad72be958e8d028ff40dcbd483accd0dbe5c0527
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: d35e9893c54367bc62de65300613853408070c33
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415759"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208267"
 ---
 # <a name="national-bank-of-belgium-nbb-and-the-financial-services-and-markets-authority-fsma"></a>Die Belgische Nationalbank (National Bank of Belgium, NBB) und die Aufsichtsbehörde für Finanzdienstleistungen und -märkte (Financial Services and Markets Authority, FSMA)
 
@@ -29,7 +29,7 @@ Zu den wichtigsten Finanzaufsichtsbehörden in Belgien zählt die [Belgische Nat
 
 Die Belgische Nationalbank ist für die Beaufsichtigung von Kreditinstituten, Versicherungen, Aktienhändler und anderen Finanzinstitutionen verantwortlich. Als Zentralbank Belgiens führt die NBB eine Geldpolitik für Belgien und trägt zur Stabilität des Finanzsystems bei. Neben der NBB beaufsichtigt die FSMA die belgischen Finanzmärkte, Finanzdienstleister einschließlich Investmentfirmen und Zusatzversorgungen. Zu ihren Aufgaben gehört die Überwachung der Finanzinformationen, die von Unternehmen verbreitet werden, und der Produkte, die sie den Verbrauchern anbieten, sowie der Einhaltung der Geschäftsgebaren.
 
-Die NBB und die FSMA handelt in Abstimmung mit der Europäischen Bankaufsichtsbehörde (EBA), die „eine unabhängige Behörde ist, die sich für eine wirksame und kohärente aufsichtsrechtliche Regulierung und Aufsicht im gesamten EU-Bankensektor einsetzt“. Zu diesem Zweck veröffentlichte die EBA ihre [Empfehlungen zum Outsourcing ab Cloud-Dienstanbieter](https://eba.europa.eu/documents/10180/2170121/Final+draft+Recommendations+on+Cloud+Outsourcing+%28EBA-Rec-2017-03%29.pdf/5fa5cdde-3219-4e95-946d-0c0d05494362), die einen umfassenden Ansatz für das Cloud Computing durch Finanzinstitute in der EU vorgaben.
+Die BNB und die FSMA handeln in Abstimmung mit der Europäischen Bankaufsichtsbehörde (EBA), einer unabhängigen EU-Behörde, die sich für eine effektive und konsistente aufsichtsrechtliche Regulierung und Beaufsichtigung des gesamten europäischen Bankensektors einsetzt.“ Zu diesem Zweck veröffentlichte die EBA ihre [Empfehlungen zum Outsourcing an Cloud-Dienstanbieter](https://eba.europa.eu/documents/10180/2170121/Final+draft+Recommendations+on+Cloud+Outsourcing+%28EBA-Rec-2017-03%29.pdf/5fa5cdde-3219-4e95-946d-0c0d05494362), die einen umfassenden Ansatz für das Cloud Computing durch Finanzinstitute in der EU vorgeben.
 
 Es gibt mehrere Voraussetzungen und Richtlinien, die Finanzinstitute in Belgien beachten sollten, wenn sie ihre Geschäftsfunktionen in die Cloud verlagern, darunter:
 
@@ -64,11 +64,15 @@ Die Microsoft-Checkliste unterstützt Finanzunternehmen in Belgien bei der Durch
 
 **Ist eine behördliche Genehmigung erforderlich?**
 
-Nein. Allerdings müssen Finanzinstitute die BNB und FSMA benachrichtigen, wenn eine Unterbrechung der Outsourcing-Vereinbarung vorliegt, die erhebliche Auswirkungen auf den Geschäftsbetrieb, den Ruf, die Rentabilität oder die Fähigkeit des Risikomanagements und die Einhaltung geltender Gesetze und Bestimmungen haben könnte.
+Nein. Finanzinstitute müssen jedoch die BNB und die FSMA im Falle einer Unterbrechung einer Auslagerungsvereinbarung benachrichtigen, die das Potenzial hat, den Geschäftsbetrieb, den Ruf oder die Rentabilität des Instituts oder seine Fähigkeit zum Risikomanagement und zur Einhaltung der geltenden Gesetze und Vorschriften erheblich zu beeinträchtigen.
 
 **Gibt es verbindliche Bedingungen, die in den Vertrag mit dem Cloud-Dienstanbieter aufgenommen werden müssen?**
 
 Ja. Es gibt bestimmte Punkte, die Finanzinstitute unbedingt in Ihre Clouddienstverträge aufnehmen müssen. Teil 2 der [Microsoft-Checkliste](https://aka.ms/FinServ-Guide-Belgium) (Seite 49) bildet diese mit den Abschnitten in den Microsoft-Vertragsdokumenten ab, an die sie gerichtet sind.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Verwenden Sie den Microsoft Compliance Manager, um Ihr Risiko einzuschätzen
+
+[Microsoft Compliance Manager](compliance-manager.md) ist eine Funktion im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), die Ihnen hilft, die Compliance-Position Ihres Unternehmens zu verstehen und Maßnahmen zu ergreifen, um Risiken zu reduzieren. Compliance Manager bietet eine Premiumvorlage für die Erstellung einer Bewertung für diese Verordnung. Suchen Sie die Vorlage auf der Seite **Bewertungsvorlagen** im Compliance Manager. Erfahren Sie, wie Sie [Bewertungen in Compliance Manager](compliance-manager-assessments.md) erstellen.
 
 ## <a name="resources"></a>Ressourcen
 

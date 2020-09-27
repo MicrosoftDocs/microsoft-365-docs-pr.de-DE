@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cd17ac35c732189fe8699d75ceb054cc4c900364
-ms.sourcegitcommit: eb3c30d53a5434d8bad7c8f48a5612f3e2675945
+ms.openlocfilehash: a1c04718c1ebb798319a83155a6c70f72b0847de
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422453"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208811"
 ---
 # <a name="general-data-protection-regulation-summary"></a>Zusammenfassung Datenschutz-Grundverordnung
 
@@ -56,6 +56,10 @@ Die folgenden Aufgaben sind erforderlich, um die DSGVO-Standards zu erfüllen. F
 - **[Datenschutzfolgenabschätzungen](gdpr-data-protection-impact-assessments.md)**. Datenverantwortliche sind unter der DSGVO dazu aufgerufen, eine Datenschutzfolgenabschätzung für Prozesse vorzubereiten, die „wahrscheinlich zu einem hohen Risiko für die Rechte und Freiheiten natürlicher Personen führen“.
 
 Wie weiter oben erwähnt, bieten der empfohlene DSGVO-Aktionsplan und die Prüflisten zu Rechenschaftspflicht einen Leitfaden zur Implementierung oder Bewertung der Konformität von DSGVO bei der Verwendung von Microsoft-Produkten und -Diensten.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Verwenden Sie den Microsoft Compliance Manager, um Ihr Risiko einzuschätzen
+
+[Microsoft Compliance Manager](compliance-manager.md) ist eine Funktion im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), die Ihnen hilft, die Compliance-Position Ihres Unternehmens zu verstehen und Maßnahmen zu ergreifen, um Risiken zu reduzieren. Der Compliance Manager verfügt über eine vorgefertigte Bewertung für diese Vorschrift für Enterprise E5-Kunden. Die Vorlage für die Erstellung der Bewertung finden Sie auf der Seite **Bewertungsvorlagen** im Compliance Manager. Erfahren Sie, wie Sie [Bewertungen im Compliance Manager erstellen](compliance-manager-assessments.md).
 
 ## <a name="data-subject-request-dsr"></a>Antrag einer betroffenen Person
 
@@ -177,7 +181,7 @@ Microsoft hat Richtlinien und Prozeduren implementiert, um Sie umgehend zu benac
 
 ## <a name="accountability-readiness-checklists-for-the-gdpr"></a>Prüflisten zu Rechenschaftspflicht für die DSGVO
 
-Diese [Prüflisten](gdpr-arc.md) ermöglichen einen bequemen Zugriff auf Informationen, die Sie bei der Einhaltung der DSGVO bei Verwendung von Microsoft-Produkten benötigen. Sie können die Elemente in dieser Prüfliste mit [Microsoft Compliance-Score](compliance-score.md) verwalten, indem Sie auf die „Kontroll-ID“ und den „Kontrolltitel“ unter den „Vom Kunden verwalteten Steuerelementen“ in der DSGVO-Kachel verweisen.
+Diese [Prüflisten](gdpr-arc.md) ermöglichen einen bequemen Zugriff auf Informationen, die Sie bei der Einhaltung der DSGVO bei Verwendung von Microsoft-Produkten benötigen. Sie können Checklistenelemente mit [Microsoft Compliance Manager](compliance-manager.md) verwalten, indem Sie unter „Vom Kunden verwaltete Steuerelemente“ in der GDPR-Kachel auf die Kontroll-ID und den Kontrolltitel verweisen.
 
 ## <a name="gdpr-faqs"></a>Häufig gestellte Fragen zur DSGVO
 

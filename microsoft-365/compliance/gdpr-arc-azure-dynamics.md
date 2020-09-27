@@ -17,12 +17,12 @@ ms.collection:
 hideEdit: true
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: eb2d4ca52acce338e3afb31852409d441e52cfe0
-ms.sourcegitcommit: eb3c30d53a5434d8bad7c8f48a5612f3e2675945
+ms.openlocfilehash: 2083b7b6ed208f5681f4e19c276c1d7425999854
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422463"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201522"
 ---
 # <a name="azure-and-dynamics-365-accountability-readiness-checklist-for-the-gdpr"></a>Azure und Dynamics 365-Prüflisten zu den Verantwortlichkeiten für die DSGVO
 
@@ -33,7 +33,7 @@ Die Prüfliste zu den Verantwortlichkeiten bietet eine bequeme Möglichkeit, auf
 - [ISO/IEC CD 27701](https://shop.bsigroup.com/ProductDetail/?pid=000000000030351736) Anforderungen für die Sicherheitstechnik.
 - [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) für Datenschutzanforderungen.
 
-Sie können die Objekte in dieser Prüfliste mit dem Compliance-Score [[16](gdpr-arc-Azure.md#16)] verwalten, indem Sie auf die Kontroll-ID und den Kontrolltitel unter "Customer Managed Controls" in der DSGVO-Kachel verweisen. Diese Kontrollstruktur wird auch verwendet, um die Präsentation der internen Kontrollen zu organisieren, die Microsoft Azure und Dynamics 365 zur Unterstützung der DSGVO implementiert, die Sie vom [Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/TrustDocuments) herunterladen können.
+Sie können die Elemente in dieser Checkliste mit dem Compliance Manager [[16](gdpr-arc-Azure.md#16)] verwalten, indem Sie auf die Kontroll-ID und den Kontrolltitel unter „Vom Kunden verwaltete Steuerelemente“ in der DSGVO-Kachel verweisen. Diese Kontrollstruktur wird auch verwendet, um die Präsentation der internen Kontrollen zu organisieren, die Microsoft Azure und Dynamics 365 zur Unterstützung der DSGVO implementiert, die Sie vom [Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/TrustDocuments) herunterladen können.
 
 Diese Steuerelementstruktur wird auch verwendet, um die Darstellung der [internen Steuerelemente zu organisieren, die Microsoft Dynamics 365 zur Unterstützung der DSGVO implementiert](https://aka.ms/gdprcontrols).
 

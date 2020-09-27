@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 0fbef84ca8f4d8993ca40b48b25effaf44e141f5
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 8c2c1e516e0d2c338104d36bb227e877d490ecb7
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416161"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208637"
 ---
 # <a name="cloud-computing-compliance-controls-catalog-c5"></a>Cloud Computing Compliance Controls Catalog (C5)
 
@@ -29,9 +29,9 @@ Im Jahr 2016 erstellte das Bundesamt für Sicherheit in der Informationstechnik
 
 Ziel des C5-Katalogs ist ein einheitlicher Sicherheitsrahmen für die Zertifizierung von Clouddienstanbietern und die Zusicherung für Kunden, dass ihre Daten sicher verwaltet werden.
 
-Der C5 basiert auf international anerkannten IT-Sicherheitsstandards wie ISO/IEC 27001:2013, der Cloud Security Alliance Cloud Controls Matrix 3.0.1 und den eigenen IT-Grundschutz-Katalogen des BSI. Der Katalog besteht aus 114 Anforderungen in 17 Bereichen – z. B. der Organisation von Informationssicherheit und physischer Sicherheit – mit Sicherheitsanforderungen, die für alle Clouddienstanbieter gelten, und zusätzlichen Anforderungen für die Verarbeitung streng vertraulicher Daten und für Situationen, die hohe Verfügbarkeit erfordern.
+C5 basiert auf international anerkannten IT-Sicherheitsstandards wie ISO/IEC 27001:2013, der Cloud Security Alliance Cloud Controls Matrix 3.0.1 und den BSI-eigenen IT-Grundschutzkatalogen. Der Katalog besteht aus 114 Anforderungen in 17 Bereichen – z. B. der Organisation von Informationssicherheit und physischer Sicherheit – mit Sicherheitsanforderungen, die für alle Clouddienstanbieter gelten, und zusätzlichen Anforderungen für die Verarbeitung streng vertraulicher Daten und für Situationen, die hohe Verfügbarkeit erfordern.
 
-Das BSI legt auch großen Wert auf Transparenz. Im Rahmen einer Prüfung muss der Cloudanbieter eine detaillierte Systembeschreibung abgeben und Umfeldparameter übermitteln, die Auskunft über Datenlokation, Diensterbringung, Gerichtsstandort, Zertifizierungen sowie Ermittlungs- und Offenbarungspflichten gegenüber staatlichen Stellen geben. Aufgrund der geschaffenen Transparenz wird dem Kunden die Entscheidung erleichtert, ob Clouddienste den gesetzlichen Vorschriften (zum Beispiel im Datenschutz), den eigenen Richtlinien oder auch der Gefährdungslage bezüglich Wirtschaftsspionage entsprechen.
+Das BSI legt auch großen Wert auf Transparenz. Als Teil einer Prüfung muss der Cloudanbieter eine detaillierte Systembeschreibung beifügen und Umgebungsparameter wie Gerichtsbarkeit und Datenverarbeitungsstandort, Bereitstellung von Diensten und andere für die Clouddienste ausgestellte Zertifizierungen sowie Informationen über die Offenlegungspflichten des Cloudanbieters gegenüber Behörden offenlegen. Aufgrund der geschaffenen Transparenz wird dem Kunden die Entscheidung erleichtert, ob Clouddienste den gesetzlichen Vorschriften (zum Beispiel im Datenschutz), den eigenen Richtlinien oder auch der Gefährdungslage bezüglich Wirtschaftsspionage entsprechen.
 
 ## <a name="microsoft-and-c5"></a>Microsoft und C5
 
@@ -52,13 +52,17 @@ Microsoft Cloud Services werden mindestens einmal jährlich anhand des Standards
 
 Ja. Sie können die Bescheinigung der Microsoft Cloud Services als Grundlage für Programme oder Initiativen nutzen, für die der C5 erforderlich ist. Für Komponenten außerhalb dieser Dienste oder Komponenten, die auf diesen Diensten basieren, müssen Sie jedoch eine eigene C5-Bescheinigung einholen.
 
-**Was ist der Unterschied zwischen dem C5 und den IT-Grundschutz-Katalogen?**
+**Was ist der Unterschied zwischen C5 und den IT-Grundschutzkatalogen?**
 
 Der IT-Grundschutz bietet die spezifische Methodik, um Organisationen dabei zu unterstützen, Sicherheitsmaßnahmen für IT-Systeme zu erkennen und umzusetzen. Außerdem stellt er eines der Elemente dar, auf denen die C5-Standards basieren. Der C5 umfasst eine Reihe von Prüfungsstandards für Clouddienstanbieter. Die Einzelheiten der Umsetzung bleiben jedoch dem Clouddienstanbieter selbst überlassen.
 
 **Was ist die Microsoft Cloud Deutschland?**
 
 Bei der Microsoft Cloud Deutschland handelt es sich um eine souveräne Cloud mit deutschen Rechenzentrumsstandorten. Es gelten deutsche Datenschutzgesetze, welche die Übertragung von personenbezogenen Daten in andere Länder beschränken und Schutz vor Zugriff durch Behörden anderer Gerichtsbarkeiten bieten, die nationales Recht verletzen könnten. Über ein einzigartiges Datentreuhändermodell nach deutschem Recht bietet Azure Deutschland entsprechend Azure-Dienste aus deutschen Rechenzentren mit Datenhaltung in Deutschland sowie strengen Datenzugriff- und Kontrollmaßnahmen.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Verwenden Sie den Microsoft Compliance Manager, um Ihr Risiko einzuschätzen
+
+[Microsoft Compliance Manager](compliance-manager.md) ist eine Funktion im [Microsoft 365 Compliance Center, die Ihnen](microsoft-365-compliance-center.md) hilft, die Compliance-Position Ihres Unternehmens zu verstehen und Maßnahmen zu ergreifen, um Risiken zu reduzieren. Compliance Manager bietet eine Premiumvorlage für die Erstellung einer Bewertung für diese Verordnung. Suchen Sie die Vorlage auf der Seite **Bewertungsvorlagen** im Compliance Manager. Erfahren Sie, wie Sie [Bewertungen in Compliance Manager erstellen](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressourcen
 

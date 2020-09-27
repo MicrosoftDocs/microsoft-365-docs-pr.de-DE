@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 19a05cd9d9605904ad12e6f0d244d7cf0afce006
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 24820526b6ba58c82c2412ed3d0902eecb60b5b6
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417057"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208107"
 ---
 # <a name="personal-data-protection-act-pdpa-argentina"></a>Datenschutzgesetz (Personal Data Protection Act, PDPA) Argentinien
 
@@ -27,7 +27,7 @@ ms.locfileid: "47417057"
 
 In Übereinstimmung mit der argentinischen Nationalverfassung wurde im Jahr 2000 das [Gesetz zum Schutz personenbezogener Daten 25.326](http://www.jus.gob.ar/media/3201023/personal_data_protection_act25326.pdf) (PDPA) ([Ley de Protección de los Datos Personales](http://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/64790/norma.htm)) erlassen, um zum Schutz der personenbezogenen Daten beizutragen und Einzelpersonen Zugang zu allen in öffentlichen und privaten Datenbanken und Registern gespeicherten Informationen zu gewähren. Die argentinische Agentur für den Zugang zu öffentlichen Informationen ([Agencia de Acceso a la Información Pública](https://www.argentina.gob.ar/aaip), AAIP) innerhalb des Kabinettschefs der Ministerien ist für die Durchsetzung dieses Gesetzes zuständig.
 
-Die PDPA steht im Einklang mit dem europäischen Gesetzgebungsmodell zum Datenschutz, und Argentinien war das erste Land Lateinamerikas, das eine Qualifizierung als „angemessen“ für Datenübertragungen aus der EU erhielt.
+Das PDPA steht im Einklang mit dem europäischen Gesetzgebungsmodell zum Schutz der Privatsphäre, und Argentinien war das erste Land in Lateinamerika, das eine „Angemessenheits“-Qualifikation für Datentransfers aus der EU erreichte.
 
 Im Jahr 2016 erließ das AAIP eine neue Verordnung, die [Provision 60-E/2016](http://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/267922/norma.htm) (Spanisch), welche die grenzüberschreitende Übermittlung personenbezogener Daten regelt. Im Rahmen dieser Richtlinie genehmigte sie Musterformulare (die teilweise auf dem Datenübertragungsmodell in der EU basieren) für solche Übertragungen an für die Datenverarbeitung Verantwortliche und Datenverarbeiter.
 
@@ -35,9 +35,9 @@ Im Jahr 2016 erließ das AAIP eine neue Verordnung, die [Provision 60-E/2016](ht
 
 Microsoft verpflichtet sich vertraglich durch die [Microsoft Online Services-Bestimmungen](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31), dass unsere In-Scope Business Cloud Services technische und organisatorische Sicherheitsvorkehrungen getroffen haben, die unseren Kunden helfen können, den argentinischen Datenschutzgesetz (PDPA) 25.326 einzuhalten. Microsoft stellt auch eine Datenübertragungsvereinbarung zur Verfügung, um die Einhaltung der Bestimmung 60-E/2016 zu erleichtern, welche die grenzüberschreitende Übermittlung personenbezogener Daten regelt. Dies bedeutet, dass Microsoft-Kunden Microsoft Azure, Microsoft Dynamics 365 und Microsoft 365 in einer Weise nutzen können, die der PDPA in Argentinien entspricht.
 
-Die in den Business Clouddiensten implementierten technischen und organisatorischen Sicherheitsmaßnahmen würden auch andere Regeln in der PDPA unterstützen, wie das Verbot der sekundären Nutzung der personenbezogenen Daten der betroffenen Person und das Verbot der Übermittlung personenbezogener Daten in Länder, die kein angemessenes Schutzniveau bieten.
+Die technischen und organisatorischen Sicherheitsmaßnahmen, die in den Business-Clouddiensten umgesetzt werden, würden auch andere Regeln des PDPA unterstützen, wie z. B. das Verbot jeder sekundären Nutzung der persönlichen Daten einer betroffenen Person und das Verbot der Übertragung persönlicher Daten in Länder, die kein angemessenes Schutzniveau bieten.
 
-Die Microsoft-Datenübertragungsvereinbarung ist eine Änderung (Änderungs-ID M314) der Datenverarbeitungsbedingungen in unseren Online-Service-Bedingungen. Sie fügt wichtige Verpflichtungen hinzu, einschließlich der Tatsache, dass Microsoft den Kunden über jede rechtsverbindliche Aufforderung zur Offenlegung personenbezogener Daten informiert, seine Datenverarbeitungseinrichtungen auf Verlangen des Kunden entweder durch den Kunden oder einen unabhängigen Dritten zur Prüfung vorlegt und eine vorherige schriftliche Zustimmung für den Einsatz von Subunternehmern einholt.
+Die Microsoft-Datenübertragungsvereinbarung ist eine Änderung (Änderungs-ID M314) der Datenverarbeitungsbedingungen in unseren Online-Service-Bedingungen. Sie fügt wichtige Zusagen hinzu, darunter, dass Microsoft den Kunden über jede rechtsverbindliche Aufforderung zur Offenlegung persönlicher Daten informiert, seine Datenverarbeitungseinrichtungen auf Wunsch des Kunden entweder durch den Kunden oder einen unabhängigen Dritten einer Prüfung unterzieht und die vorherige schriftliche Zustimmung für den Einsatz von Subunternehmern einholt.
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
 
@@ -55,6 +55,10 @@ Die Microsoft-Datenübertragungsvereinbarung ist eine Änderung (Änderungs-ID M
 **Wie hat DSGVO das Personal Data Protection Act geändert?**
 
 Ende 2018 hat Argentinien noch keine DSGVO-bezogenen Vorschriften erlassen, aber es hat einen neuen Datenschutzgesetzesentwurf ausgearbeitet – der bereits dem Kongress von der Exekutive vorgelegt und vom Repräsentantenhaus überarbeitet wurde –, um sein Datenschutzgesetz mit der DSGVO in Einklang zu bringen. Sie befasst sich mit Unterschieden wie der Definition der betroffenen Personen und den Bedenken hinsichtlich der grenzüberschreitenden Übermittlung personenbezogener Daten.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Verwenden Sie den Microsoft Compliance Manager, um Ihr Risiko einzuschätzen
+
+[Microsoft Compliance Manager](compliance-manager.md) ist eine Funktion im [Microsoft 365 Compliance Center, die Ihnen](microsoft-365-compliance-center.md) hilft, die Compliance-Position Ihres Unternehmens zu verstehen und Maßnahmen zu ergreifen, um Risiken zu reduzieren. Compliance Manager bietet eine Premiumvorlage für die Erstellung einer Bewertung für diese Verordnung. Suchen Sie die Vorlage auf der Seite **Bewertungsvorlagen** im Compliance Manager. Erfahren Sie, wie Sie [Bewertungen in Compliance Manager erstellen](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressourcen
 
