@@ -37,10 +37,10 @@ Zum Verwalten von Löschungsprüfungen und zum bestätigen, dass Datensätze gel
 
 Wenn Sie im Microsoft 365 Compliance Center auf die Registerkarte **Disposition** erfolgreich zugreifen möchten, müssen die Benutzer über die Administratorrolle der **Dispositionsverwaltung** verfügen. Diese Rolle ist Bestandteil der standardmäßigen Administratorrollengruppen **Compliance-Administrator** und **Compliance-Datenadministrator**.
 
-Wenn Sie Benutzern diese erforderliche Dispositionsverwaltungsrolle erteilen möchten, fügen Sie diese zu einer dieser Standardrollengruppen hinzu, oder erstellen Sie eine benutzerdefinierte Rollengruppe (z. b. "Dispositionsprüfer"), und gewähren Sie dieser Gruppe die Funktion "Dispositionsverwaltung".  
+Wenn Sie Benutzern diese erforderliche Dispositionsverwaltungsrolle erteilen möchten, fügen Sie diese zu einer dieser Standardrollengruppen hinzu, oder erstellen Sie eine benutzerdefinierte Rollengruppe (z. B. "Dispositionsprüfer"), und gewähren Sie dieser Gruppe die Funktion "Dispositionsverwaltung".  
 
 > [!NOTE]
-> Sogar einem globalen Administrator muss die Rolle** "Dispositionsverwaltung"** zugewiesen werden. 
+> Sogar einem globalen Administrator muss die Rolle **Dispositionsverwaltung** zugewiesen werden. 
 
 Anweisungen finden Sie unter [Gewähren des Zugriffs auf das Office 365 Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
@@ -52,11 +52,11 @@ Vergewissern Sie sich, dass die Überwachung mindestens einen Tag vor der ersten
 
 Wenn Inhalte das Ende des Aufbewahrungszeitraums erreichen, kann es verschiedene Gründe geben, die Inhalte zu überprüfen, um zu entscheiden, ob sie unbedenklich gelöscht ("verworfen") werden können. Beispielsweise können folgende Aktivitäten erforderlich werden:
   
-- Die Löschung relevanter Inhalte im Falle eines Rechtsstreits oder einer Prüfung auszusetzen.
+- Aussetzten der Löschung relevanter Inhalte im Falle eines Rechtsstreits oder einer Prüfung.
     
 - Entfernen von Inhalten aus der Dispositionsliste, um sie in einem Archiv zu speichern, wenn die Inhalte historischen Wert haben oder für Forschungszwecke von Interesse sind.
     
-- Weisen Sie den Inhalten einen anderen Aufbewahrungszeitraum zu, vielleicht, weil die ursprünglichen Aufbewahrungseinstellungen eine vorübergehende oder vorläufige Lösung waren.
+- Das Zuweisen eines anderen Aufbewahrungszeitraums für die Inhalte, vielleicht, weil die ursprünglichen Aufbewahrungseinstellungen eine vorübergehende oder vorläufige Lösung waren.
     
 - Rückgabe der Inhalte an Kunden oder Übertragung an eine andere Organisation.
 
@@ -75,7 +75,7 @@ Sie können eine Übersicht aller ausstehenden Löschungen auf der Registerkarte
 
 ![Ausstehende Löschungen in der Übersicht der Datensatzverwaltung](../media/dispositions-overview.png)
 
-Wenn Sie **alle ausstehenden Dispositionen anzeigen** auswählen, werden Sie zur Seite **Disposition** geleitet. Beispiel:
+Wenn Sie **Alle ausstehenden Löschungen anzeigen** auswählen, werden Sie zur Seite **Disposition** geleitet. Beispiel:
 
 ![Seite "Dispositionen" im Microsoft 365 Compliance Center](../media/disposition-tab.png)
 
@@ -88,7 +88,7 @@ Das folgende Diagramm zeigt den grundlegenden Arbeitsablauf einer Löschungsprü
   
 Das Auslösen einer Löschungsprüfung am Ende des Aufbewahrungszeitraums ist eine Konfigurationsoption, die nur mit einer Aufbewahrungsbezeichnung verfügbar ist. Diese Option steht nicht für eine Aufbewahrungsrichtlinie zur Verfügung. Weitere Informationen zu diesen beiden Aufbewahrungslösungen finden Sie unter [Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](retention.md).
 
-Von der Seite ** "Aufbewahrungseinstellungen definieren"** für eine Aufbewahrungsbezeichnung:
+Von der Seite **Aufbewahrungseinstellungen definieren** für eine Aufbewahrungsbezeichnung:
 
 ![Aufbewahrungseinstellungen für eine Bezeichnung](../media/disposition-review-option.png)
  
@@ -96,13 +96,13 @@ Nachdem Sie die Option **Löschungsprüfung auslösen** ausgewählt haben, geben
 
 ![Angeben von Dispositionsprüfern](../media/disposition-reviewers.png)
 
-Geben Sie für die Prüfer einen Benutzer oder eine E-Mail-aktivierte Sicherheitsgruppe an. Microsoft 365-Gruppen ([vormals Office 365-Gruppen](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) werden für diese Option nicht unterstützt.
+Geben Sie als Prüfer einen Benutzer oder eine E-Mail-aktivierte Sicherheitsgruppe an. Microsoft 365-Gruppen ([vormals Office 365-Gruppen](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) werden für diese Option nicht unterstützt.
 
 ### <a name="viewing-and-disposing-of-content"></a>Anzeigen und Verwerfen von Inhalten
 
 Wenn ein Prüfer per E-Mail benachrichtigt wird, dass Inhalte zur Überprüfung bereitstehen, wechseln sie zur Registerkarte **Disposition** aus der **Datensatzverwaltung** im Microsoft 365 Compliance Center. Die Prüfer können sehen, wie viele Elemente für jede Aufbewahrungsbezeichnung auf Disposition warten und dann eine Aufbewahrungsbezeichnung auswählen, um den gesamten Inhalt dieser Bezeichnung anzuzeigen.
 
-Nachdem Sie eine Aufbewahrungsbezeichnung ausgewählt haben, werden alle ausstehende Löschungen für diese Bezeichnung auf der Registerkarte **ausstehende Löschung** angezeigt. Wählen Sie ein oder mehrere Elemente aus, bei dem Sie dann eine Aktion auswählen und einen Begründungskommentar eingeben können:
+Nachdem Sie eine Aufbewahrungsbezeichnung ausgewählt haben, werden alle ausstehenden Löschungen für diese Bezeichnung auf der Registerkarte **Ausstehende Löschung** angezeigt. Wählen Sie ein oder mehrere Elemente aus, für welches Sie dann eine Aktion auswählen und einen Begründungskommentar eingeben können:
 
 ![Dispositionsoptionen](../media/retention-disposition-options.png)
 
@@ -116,26 +116,26 @@ Wenn Sie über Berechtigungen für den Speicherort und den Inhalt verfügen, kö
 
 Die E-Mail-Benachrichtigungen werden wöchentlich automatisch an Prüfer gesendet. Dieser geplante Vorgang bedeutet: Wenn der Inhalt das Ende des Aufbewahrungszeitraums erreicht, kann es bis zu sieben Tage dauern, bis Prüfer die E-Mail-Benachrichtigung erhalten, dass Inhalte auf Disposition warten.
   
-Alle Dispositionsaktionen können überwacht werden, und der vom Prüfer eingegebene Begründungstext wird gespeichert und in der Spalte **Kommentar** auf der Seite **verworfene Elemente** angezeigt.
+Alle Dispositionsaktionen können überwacht werden, und der vom Prüfer eingegebene Begründungstext wird gespeichert und in der Spalte **Kommentar** auf der Seite **Verworfene Elemente** angezeigt.
   
 ### <a name="how-long-until-disposed-content-is-permanently-deleted"></a>Zeitspanne bis zur endgültigen Löschung verworfener Inhalte
 
-Inhalte, für die eine Löschungsprüfung ansteht, werden erst gelöscht, nachdem ein Prüfer die endgültige Löschung der Inhalte entschieden hat. Wenn der Prüfer diese Option auswählt, wird der Inhalt auf der SharePoint-Website oder dem OneDrive-Konto für den Standard Bereinigungsprozess qualifiziert, der in [wie die Verwendung von Aufbewahrungseinstellungen für gehaltene Inhalte funktioniert](retention.md#how-retention-settings-work-with-content-in-place).
+Inhalte, für die eine Löschungsprüfung ansteht, werden erst gelöscht, nachdem ein Prüfer die endgültige Löschung der Inhalte entschieden hat. Wenn der Prüfer diese Option auswählt, wird der Inhalt auf der SharePoint-Website oder dem OneDrive-Konto für den Standardbereinigungsprozess qualifiziert, der in [Funktionsweise von Aufbewahrungseinstellungen bei vorhandenem Inhalt](retention.md#how-retention-settings-work-with-content-in-place) beschrieben ist.
 
 ## <a name="disposition-of-records"></a>Disposition von Datensätzen
 
-Verwenden Sie die Registerkarte **Disposition** von der Seite **Datensatzverwaltung**, um Datensätze zu identifizieren, die jetzt automatisch oder nach einer Löschungsprüfung gelöscht werden. Diese Elemente zeigen **verworfene Datensätze** in der Spalte **Typ** an. Beispiel:
+Verwenden Sie die Registerkarte **Disposition** von der Seite **Datensatzverwaltung**, um Datensätze zu identifizieren, die jetzt automatisch oder nach einer Löschungsprüfung gelöscht werden. Diese Elemente zeigen **Verworfene Datensätze** in der Spalte **Typ** an. Beispiel:
 
 ![Elemente, die ohne eine Löschungsprüfung verworfen wurden](../media/records-disposed2.png)
 
-Elemente, die in der Registerkarte **verworfene Elemente** für Datensatzbezeichnungen angezeigt werden, werden bis zu sieben Jahre nach der Verwerfung des Elements gespeichert, und es wird ein Limit von 1 Million Elementen pro Datensatz für diesen Zeitraum angezeigt. Wenn sich die **Anzahl** das Limit von 1 Million nähert und Sie einen Dispositionsnachweis benötigen, wenden Sie sich an [Microsoft-Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+Elemente, die in der Registerkarte **Verworfene Elemente** für Datensatzbezeichnungen angezeigt werden, werden bis zu sieben Jahre nach der Verwerfung des Elements gespeichert, und es wird ein Limit von 1 Million Elementen pro Datensatz für diesen Zeitraum angezeigt. Wenn sich die **Anzahl** dem Limit von 1 Million nähert und Sie einen Dispositionsnachweis benötigen, wenden Sie sich an [Microsoft-Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
 > [!NOTE]
-> Diese Funktionalität basiert auf Informationen aus dem [einheitlichen Überwachungsprotokolls](search-the-audit-log-in-security-and-compliance.md) und erfordert daher, dass die Überwachung [aktiviert und durchsuchbar ist](turn-audit-log-search-on-or-off.md) damit die entsprechenden Ereignisse erfasst werden.
+> Diese Funktionalität basiert auf Informationen aus dem [einheitlichen Überwachungsprotokoll](search-the-audit-log-in-security-and-compliance.md) und erfordert daher, dass die Überwachung [aktiviert und durchsuchbar ist](turn-audit-log-search-on-or-off.md) damit die entsprechenden Ereignisse erfasst werden.
     
 ## <a name="filter-and-export-the-views"></a>Filtern und Exportieren von Ansichten
 
-Wenn Sie auf der Seite **Disposition** eine Aufbewahrungsbezeichnung auswählen, können Sie mit der Registerkarte **ausstehende Löschung** (sofern zutreffend) und der Registerkarte **verworfene Elemente** die Ansichten filtern, damit Sie Elemente leichter finden können. 
+Wenn Sie auf der Seite **Disposition** eine Aufbewahrungsbezeichnung auswählen, können Sie mit der Registerkarte **Ausstehende Löschung** (sofern zutreffend) und der Registerkarte **Verworfene Elemente** die Ansichten filtern, damit Sie Elemente leichter finden können. 
 
 Bei ausstehenden Löschungen basiert der Zeitraum auf dem Ablaufdatum. Bei verworfenen Elementen basiert der Zeitraum auf dem Löschdatum.
   
