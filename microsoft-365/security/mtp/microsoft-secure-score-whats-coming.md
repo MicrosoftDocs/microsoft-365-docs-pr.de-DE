@@ -1,7 +1,7 @@
 ---
 title: Was kommt mit Microsoft Secure Score
 description: Beschreibt, welche neuen Änderungen an Microsoft Secure Score im Microsoft 365 Security Center vorgenommen werden.
-keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Sicherheitsbewertung, Security Center, Verbesserungsmaßnahmen
+keywords: Microsoft Secure Score, Secure Score, Office 365 Secure Score, Microsoft Security Score, Microsoft 365 Security Center, Improvement Actions
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 2d9d166c8e9fd16b09964c75a3b6bace05265120
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: e4a9e5f1606b91e4cd41f29b37db2707f4c7df17
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235466"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295082"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Was kommt mit Microsoft Secure Score
 

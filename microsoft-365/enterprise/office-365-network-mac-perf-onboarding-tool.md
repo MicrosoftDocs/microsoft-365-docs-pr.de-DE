@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 Network Connectivity Test Tool (Vorschau)
-ms.openlocfilehash: 72f42a71ec44d165a24187edaf03aa62d330479b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 2be48f42c8529334b55b311e6f202d9f3b25ff9e
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200817"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295526"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool-preview"></a>Microsoft 365 Network Connectivity Test Tool (Vorschau)
 
@@ -173,7 +173,7 @@ Auf dieser Seite werden die besten Exchange-Dienst-Haustür Standorte nach Ort f
 
 Dies zeigt den DNS-Namen und die IP-Adresse des Exchange-Dienst-Front-Door-Servers an, an den Sie weitergeleitet wurden. Er wird nur für Informationen bereitgestellt, und es gibt keine zugeordnete Netzwerk Einblicke.
 
-### <a name="sharepoint-online"></a>SharePoint Online
+### <a name="sharepoint-online"></a>Microsoft Office SharePoint Online
 
 In diesem Abschnitt werden die Testergebnisse im Zusammenhang mit SharePoint Online und OneDrive.
 
@@ -193,7 +193,7 @@ Während des 15MB-Downloads Messen wir die TCP-Wartezeit für die SharePoint-Die
 
 Dies zeigt den DNS-Namen und die IP-Adresse des SharePoint-Dienst-Front-Door-Servers an, an den Sie weitergeleitet wurden. Er wird nur für Informationen bereitgestellt, und es gibt keine zugeordnete Netzwerk Einblicke.
 
-### <a name="microsoft-teams"></a>Microsoft Teams
+### <a name="microsoft-teams"></a>Microsoft Teams
 
 In diesem Abschnitt werden Testergebnisse im Zusammenhang mit Microsoft Teams aufgeführt.
 
@@ -205,7 +205,7 @@ Diese testet die UDP-Konnektivität mit der Haustür des Microsoft Teams-Diensts
 
 Zeigt den UDP-Paketverlust, der in einem 10 Sekunden Test-Audioanruf vom Client an die Haustür des Microsoft Teams-Diensts gemessen wurde. Dies sollte bei einem Durchgang unter **1,00%** liegen.
 
-### <a name="latency"></a>Wartezeit
+#### <a name="latency"></a>Wartezeit
 
 Zeigt die gemessene UDP-Wartezeit, die niedriger als **100M**sein sollte.
 
@@ -239,7 +239,7 @@ Dies zeigt erhebliche gesundheitliche Probleme mit dem globalen Microsoft-Netzwe
 
 ![Netzwerk Integritätsstatus](../media/m365-mac-perf/m365-mac-perf-status-page.png)
 
-## <a name="faq"></a>Häufig gestellte Fragen (FAQ)
+## <a name="faq"></a>Häufig gestellte Fragen
 
 Hier finden Sie Antworten auf einige unserer häufig gestellten Fragen.
 

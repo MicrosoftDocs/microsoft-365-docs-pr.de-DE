@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie e-Mail-Sicherheitsberichte für Ihre Organisation suchen und verwenden. E-Mail-Sicherheitsberichte sind im Security & Compliance Center verfügbar.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 588c30ca07684636661c7946b2418b75574c8cbd
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: b26dd18754a96d1879a2f57ae9742ae1d1a36ce4
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199217"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295538"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Anzeigen von E-Mail-Sicherheitsberichten im Security & Compliance Center
 
@@ -67,7 +67,7 @@ Klicken Sie auf **Bericht anzeigen**, um zur Berichtsansicht zurückzukehren.
 
 ## <a name="encryption-report"></a>Verschlüsselungs Bericht
 
-Der **Verschlüsselungs Bericht** steht in EoP (Abonnements mit Postfächern in Exchange Online oder eigenständigen EoP ohne Exchange Online Postfächer) zur Verfügung. Das Sicherheitsteam Ihrer Organisation kann Informationen in diesem Bericht verwenden, um Muster zu identifizieren und Richtlinien für vertrauliche e-Mail-Nachrichten proaktiv anzuwenden oder anzupassen. Zum Beispiel:
+Der **Verschlüsselungs Bericht** steht in EoP (Abonnements mit Postfächern in Exchange Online oder eigenständigen EoP ohne Exchange Online Postfächer) zur Verfügung. Das Sicherheitsteam Ihrer Organisation kann Informationen in diesem Bericht verwenden, um Muster zu identifizieren und Richtlinien für vertrauliche e-Mail-Nachrichten proaktiv anzuwenden oder anzupassen. Beispiel:
 
 - Wenn eine große Anzahl von von Benutzern verschlüsselten e-Mail-Nachrichten angezeigt wird, möchten Sie möglicherweise eine Verschlüsselungsrichtlinie zum Automatisieren der Verschlüsselung für bestimmte Anwendungsfälle hinzufügen. Weitere Informationen finden Sie unter [Definieren von Nachrichtenfluss Regeln zum Verschlüsseln von e-Mail-Nachrichten in Microsoft 365](../../compliance/define-mail-flow-rules-to-encrypt-email.md).
 
@@ -364,8 +364,13 @@ Die folgenden Ansichten sind verfügbar:
 Wenn Sie auf **Filter**klicken, können Sie den Bericht mit den folgenden Filtern ändern:
 
 - **Start Datum** und **Enddatum**
-- Erkennungswert
-- **Geschützt durch** (nur Office 365 ATP): **ATP** oder **EoP**. Beachten Sie, dass diese filterbare Eigenschaft in **View Data by: Content \> Schadsoftware**nicht verfügbar ist.
+- **Erkennung**
+- **Geschützt von**: **ATP** oder **EoP**
+- **Tag**: Filtern nach Tag, um Benutzer oder Gruppen zurückzugeben, für die ein bestimmtes Tag angewendet wurde. Weitere Informationen zu Benutzer Tags finden Sie unter [User Tags](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide).
+- **Domäne**
+
+> [!NOTE]
+> **Geschützt von**, **Tag** und **Domäne** sind nur Office 365 ATP. Diese filterbaren Eigenschaften stehen in **View Data by: Content \> Schadsoftware**nicht zur Verfügung.
 
 ### <a name="details-table-view-for-the-threat-protection-status-report"></a>Detailtabellen Ansicht für den Threat Protection-Statusbericht
 
@@ -378,7 +383,12 @@ Wenn Sie auf **Detailtabelle anzeigen**klicken, hängt die Anzeige der angezeigt
   - **Regie**
   - **Name der Schadsoftware**
 
-- **Daten anzeigen nach: Übersicht**: keine **Detailtabellen** -Schaltfläche anzeigen verfügbar.
+Wenn Sie in dieser Ansicht auf **Filter** klicken, können Sie den Bericht mit den folgenden Filtern ändern:
+
+- **Start Datum** und **Enddatum**
+- **Erkennung**
+
+**Daten anzeigen nach: Übersicht**: keine **Detailtabellen** -Schaltfläche anzeigen verfügbar.
 
 - Alle anderen Diagramme:
 
@@ -389,12 +399,16 @@ Wenn Sie auf **Detailtabelle anzeigen**klicken, hängt die Anzeige der angezeigt
   - **Erkannt von**
   - **Zustellungsstatus**
   - **Kompromiss Quelle**
+  - **Tags**
 
 Wenn Sie auf **Filter**klicken, können Sie den Bericht mit den folgenden Filtern ändern:
 
 - **Start Datum** und **Enddatum**
-- Erkennungswert
-- **Geschützt durch** (nur Office 365 ATP): **ATP** oder **EoP**. Beachten Sie, dass diese filterbare Eigenschaft in **View Data by: Content \> Schadsoftware**nicht verfügbar ist.
+- **Erkennung**
+- **Geschützt durch** (nur Office 365 ATP): **ATP** oder **EoP**
+- **Tag**: Filtern nach Tag, um Benutzer oder Gruppen zurückzugeben, für die ein bestimmtes Tag angewendet wurde. Weitere Informationen zu Benutzer Tags finden Sie unter [User Tags](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide).
+- **Domäne**
+- **Empfänger** (Beachten Sie, dass diese filterbare Eigenschaft nur in der Detailtabellen Ansicht verfügbar ist)
 
 ## <a name="top-malware-report"></a>Höchst schädlicher Bericht
 

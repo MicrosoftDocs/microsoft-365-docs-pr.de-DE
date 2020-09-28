@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Implementierung von VPN-Split-Tunneling für Office 365
-ms.openlocfilehash: af5c2ea35df921abe8eaa9a85ab2ab244931c098
-ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
+ms.openlocfilehash: ff79138d44c98d76af1a3d9c374159b0fae4c7ed
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48214878"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295274"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Implementieren eines geteilten VPN-Tunnels für Office 365
 
@@ -274,7 +274,7 @@ Dieser Abschnitt enthält Links zu ausführlichen Leitfäden für die Implementi
 - **Pulse Secure**: [VPN-Tunneling: Konfigurieren von geteilten Tunneln zum Ausschließen von Office365-Anwendungen](https://kb.pulsesecure.net/articles/Pulse_Secure_Article/KB44417)
 - **Check Points VPN**: [Konfigurieren des geteilten Tunnels für Office 365 und andere SaaS-Anwendungen](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk167000)
 
-## <a name="faq"></a>Häufig gestellte Fragen (FAQ)
+## <a name="faq"></a>Häufig gestellte Fragen
 
 Das Microsoft-Sicherheits Team hat [einen Artikel](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/) veröffentlicht, in dem die wichtigsten Möglichkeiten für Sicherheitsexperten erläutert werden, und es können moderne Sicherheitssteuerelemente in den eindeutigen Remote-arbeitsszenarien von heute erreicht werden. Darüber hinaus finden Sie im Folgenden einige der häufigsten Kundenfragen und Antworten zu diesem Thema.
 
@@ -325,6 +325,10 @@ Port 80 wird nur für Dinge wie die Umleitung auf eine Port 443-Sitzung verwende
 ### <a name="does-this-advice-apply-to-users-in-china-using-a-worldwide-instance-of-office-365"></a>Gilt dieser Ratschlag für Benutzer in der VR China, die eine weltweite Instanz von Office 365 benutzen?
 
 **Nein**, es ist nicht der Fall. Der einzige Vorbehalt zu den obigen Ratschlägen sind Benutzer in der VR China, die eine Verbindung zu einer weltweiten Instanz von Office 365 herstellen. Aufgrund des häufigen Auftretens von grenzüberschreitenden Netzwerküberlastungen in der Region kann die Leistung des direkten Internetaustritts variabel sein. Die meisten Kunden in der Region arbeiten mit einem VPN, um den Datenverkehr in das Unternehmensnetzwerk zu bringen und ihre autorisierte MPLS-Leitung oder einen ähnlichen Weg zum Ausgang außerhalb des Landes über einen optimierten Pfad zu nutzen. Dies wird in dem Artikel [Office 365-Leistungsoptimierung für Benutzer in de VR China](microsoft-365-networking-china.md) näher erläutert.
+
+### <a name="does-split-tunnel-configuration-work-for-teams-running-in-a-browser"></a>Funktioniert die Konfiguration mit geteilten Tunneln für Microsoft Teams, die in einem Browser laufen?
+
+**Nein**, es ist nicht der Fall. Es funktioniert nur auf Microsoft Teams-Client Version 1.3.00.13565 oder höher. Diese Version enthält Verbesserungen in der Art und Weise, wie der Client verfügbare Netzwerkpfade erkennt.
 
 ## <a name="related-topics"></a>Verwandte Themen
 

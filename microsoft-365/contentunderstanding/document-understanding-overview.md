@@ -1,26 +1,25 @@
 ---
-title: Dokument Verständnis Übersicht (Vorschau)
+title: Dokument Verständnis Übersicht
 ms.author: efrene
 author: efrene
 manager: pamgreen
 ms.date: 08/1/2020
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
-description: Erhalten Sie einen Überblick über das Dokument Verständnis in Project Cortex.
-ms.openlocfilehash: c1e4092164ee96d4f244f10be9ebab62a2c8da5b
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+description: Erhalten Sie einen Überblick über das Dokument Verständnis in Microsoft SharePoint Syntex.
+ms.openlocfilehash: dd8731759d8f1cbea57d171fa7a803ffc4f1baa7
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950048"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48294760"
 ---
-# <a name="document-understanding-overview-preview"></a>Dokument Verständnis Übersicht (Vorschau)
-> [!Note] 
-> Project Cortex befindet sich derzeit in der Vorschau. [Erfahren Sie mehr über Project Cortex](https://aka.ms/projectcortex).
+# <a name="document-understanding-overview"></a>Dokument Verständnis Übersicht
+
 
 </br>
 
@@ -28,17 +27,17 @@ ms.locfileid: "47950048"
 
 </br>
 
-Document Understanding verwendet AI-Modelle, um die Klassifizierung von Dateien und das Extrahieren von Informationen zu automatisieren. Es funktioniert am besten mit unstrukturierten Dokumenten wie Buchstaben oder Verträgen. Die Dokumente sollten Text enthalten, der anhand von Ausdrücken oder Mustern identifiziert werden kann. Der identifizierte Text kann sowohl den Typ der Datei (seine Klassifizierung) als auch die Inhalte bestimmen, die extrahiert werden sollen (Extraktoren).
+Document Understanding verwendet künstliche Intelligenz Modelle (AI), um die Klassifizierung von Dateien und die Extraktion von Informationen zu automatisieren. Es funktioniert am besten mit unstrukturierten Dokumenten wie Briefen oder Verträgen. Diese Dokumente müssen Text enthalten, der auf der Grundlage von Ausdrücken oder Mustern identifiziert werden kann. Der identifizierte Text bestimmt sowohl den Typ der Datei (seine Klassifizierung) als auch die Inhalte, die extrahiert werden sollen (Extraktionsprogramme).
 
-Dokument Understanding Models werden in einer SharePoint-Website mit dem Namen "inhaltscenter" erstellt und verwaltet. Bei Anwendung auf eine SharePoint-Dokumentbibliothek wird das Modell einem Inhaltstyp zugeordnet, der Spalten zum Speichern der extrahierten Informationen enthält. Der Inhaltstyp, den Sie erstellen, wird im Inhaltstypen Katalog von SharePoint gespeichert. Sie können auch vorhandene Inhaltstypen verwenden, um Ihr Schema zu verwenden.
+Dokument Understanding Models werden in einer SharePoint-Website mit dem Namen " *inhaltscenter*" erstellt und verwaltet. Bei Anwendung auf eine SharePoint-Dokumentbibliothek wird das Modell einem Inhaltstyp zugeordnet hat Spalten zum Speichern der extrahierten Informationen. Der Inhaltstyp, den Sie erstellen, wird im Inhaltstypen Katalog von SharePoint gespeichert. Sie können auch die Verwendung vorhandener Inhaltstypen für die Verwendung Ihres Schemas auswählen.
 
-Sie können Ihrem Dokument *Klassifizierungen* und *Extraktions* Module hinzufügen, die die folgenden Schritte verstehen: 
+Hinzufügen von *Klassifizierungen* und *Extraktionen* zu Ihrem Dokument Understanding Models to do the folgenden: 
 
 - Klassifizierungen werden verwendet, um Dokumente zu identifizieren und zu klassifizieren, die in die Dokumentbibliothek hochgeladen werden. Beispielsweise kann eine Klassifizierung "geschult" werden, um alle *Vertrags Erneuerungs* Dokumente zu identifizieren, die in die Bibliothek hochgeladen werden. Der Inhaltstyp "Vertragserneuerung" wird von Ihnen beim Erstellen ihrer Klassifizierung definiert.
 
-- Extraktions Module ziehen Informationen aus diesen Dokumenten. Beispielsweise werden für alle Vertrags Erneuerungs Dokumente, die in Ihrer Dokumentbibliothek identifiziert werden, in ihrer Ansicht Spalten angezeigt, in denen auch das *Start Datum* und der  *Client* des Diensts für jedes Vertrags Erneuerungs Dokument angezeigt wird. 
+- Extraktions Module ziehen Informationen aus diesen Dokumenten. Beispielsweise werden für alle in Ihrer Dokumentbibliothek identifizierten Vertrags Erneuerungs Dokumente in der Ansicht Spalten angezeigt, die auch den *Start Termin* und den  *Client* des Diensts für jedes Vertrags Erneuerungs Dokument anzeigen. 
 
-Sie verwenden Beispieldateien, um Ihre Klassifizierungen und Extraktoren in Ihrem Modell zu trainieren und zu testen. Beispieldateien bieten ihre Modellbeispiele, wonach Sie suchen müssen, wenn Sie versuchen, Daten aus Dateien zu identifizieren und daraus zu extrahieren. Sie möchten beispielsweise Ihre Klassifizierungen und Extraktoren für die Vertragserneuerung mit Beispielen von Vertrags Erneuerungs Dokumenten trainieren, mit denen Ihr Unternehmen zusammenarbeitet. Sie können auch Beispieldateien verwenden, um die Effektivität Ihres Modells zu testen.
+Mithilfe von Beispieldateien können Sie Ihre Klassifizierungen und Extraktoren in Ihrem Modell trainieren und testen. Beispieldateien bieten ihre Modellbeispiele, wonach Sie suchen müssen, wenn Sie versuchen, Daten aus Dateien zu identifizieren und daraus zu extrahieren. Sie möchten beispielsweise Ihre Klassifizierungen und Extraktionsprogramme für die Vertragserneuerung mit Beispielen von Vertrags Erneuerungs Dokumenten trainieren, mit denen Ihr Unternehmen zusammenarbeitet. Sie können auch Beispieldateien verwenden, um die Effektivität Ihres Modells zu testen.
 
 Verwenden Sie nach der Veröffentlichung Ihres Modells das inhaltscenter, um es auf eine beliebige SharePoint-Dokumentbibliothek anzuwenden, auf die Sie Zugriff haben.  
 
@@ -51,7 +50,3 @@ Verwenden Sie nach der Veröffentlichung Ihres Modells das inhaltscenter, um es 
 [Anwenden eines Modells](apply-a-model.md)   
 [Unterschied zwischen einem Dokument Verständnis und einem Formular Verarbeitungsmodell](difference-between-document-understanding-and-form-processing-model.md)  
 [Übersicht über die Formularverarbeitung](form-processing-overview.md)
-
-
-
-

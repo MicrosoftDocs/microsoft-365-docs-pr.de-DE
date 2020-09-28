@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Informationen zum Migrieren Ihres Unternehmens zu Microsoft 365 Business Premium von Office 365 E3.
-ms.openlocfilehash: d72f0c52a745ff973868b6fdaa95efa1a37a3dbd
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: f3f3894a2a5cb69f9f91825d89db4f4b857fac5c
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44785928"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295288"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migrieren von Office 365 E3 zu Microsoft 365 Business Premium 
 
@@ -45,7 +45,7 @@ In dieser Tabelle sind die Unterschiede zwischen Microsoft 365 Business Premium 
 | Office-Apps<sup>1</sup>    | Microsoft 365 Apps for Business    | Microsoft 365 Apps for Enterprise | 
 | **Apps für die Cloud-Produktivität**        | | | 
 | Exchange Online und Outlook    | 50 GB Speichergrenzwert pro Postfach und unbegrenzte Exchange Online Archivierung    | 100 GB Speichergrenzwert pro Postfach und unbegrenzte Exchange Online Archivierung | 
-| Microsoft Teams    | ![Im Lieferumfang von Microsoft 365 Business Premium enthalten](../media/check-mark.png)    | ![Im Lieferumfang von Office 365 E3 enthalten](../media/check-mark.png) | 
+| Teams    | ![Im Lieferumfang von Microsoft 365 Business Premium enthalten](../media/check-mark.png)    | ![Im Lieferumfang von Office 365 E3 enthalten](../media/check-mark.png) | 
 | OneDrive for Business    | 1 TB Speichergrenzwert pro Benutzer    | Unbegrenzt | 
 | Jammern, SharePoint Online, Planer, Stream    | ![Im Lieferumfang von Microsoft 365 Business Premium enthalten](../media/check-mark.png)    | ![Im Lieferumfang von Office 365 E3 enthalten](../media/check-mark.png) | 
 | StaffHub    | ![Im Lieferumfang von Microsoft 365 Business Premium enthalten](../media/check-mark.png)    | ![Im Lieferumfang von Office 365 E3 enthalten](../media/check-mark.png) | 
@@ -114,6 +114,11 @@ Sie können diese Schritte auch auf der Seite Geräte ausführen:
   - Weitere Informationen finden Sie unter [Einrichten von Windows-Geräten für Microsoft 365 Business Premium-Benutzer](set-up-windows-devices.md) für Schritte für Windows-Geräte. 
     
   - Weitere Informationen finden Sie unter [Einrichten von mobilen Geräten für Microsoft 365 Business Premium-Benutzer](set-up-mobile-devices.md) für Schritte für Android-Telefone und iPhones. 
+  
+### <a name="mailbox-size"></a>Postfachgröße
+
+Microsoft 365 Business Premium verfügt über einen Speichergrenzwert von 50 GB bei Verwendung von Exchange Online Plan 1. Wenn einer Ihrer Benutzer 50 GB Postfachspeicher überschreitet, wird bei der Migration zu Microsoft 365 Business Premium empfohlen, dass Sie diesem Benutzer einen Exchange Online Plan 2 zuweisen und den Exchange Online Plan 1 entfernen, da es nicht möglich ist, beides zuzuweisen.
+
 
 ### <a name="threat-protection"></a>Bedrohungsschutz
 

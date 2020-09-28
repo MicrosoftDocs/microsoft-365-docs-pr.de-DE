@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: In diesem Artikel erfahren Sie, wie Sie Ihre Domäne in Microsoft 365 hinzufügen und einrichten, damit ihre Dienste wie e-Mail und Skype for Business Online ihren eigenen Domänennamen verwenden.
-ms.openlocfilehash: 6a99ee90db3bb71038309175b32bd4d96097aa5a
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 34e4db5748f9d4c1f1864db09071374bcec73e1d
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662232"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295058"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Ändern von Namenservern zum Einrichten von Microsoft 365 mit einer beliebigen Domänenregistrierungsstelle
 
@@ -122,8 +122,8 @@ Wenn Sie die Namenserver der Domäne auf der Website Ihrer Domänenregistrierung
 |:-----|:-----|
 |Erster Namenserver  <br/> |ns1.bdm.microsoftonline.com  <br/> |
 |Zweiter Namenserver  <br/> |ns2.bdm.microsoftonline.com  <br/> |
-|Dritter Namenserver  <br/> |ns2.bdm.microsoftonline.com  <br/> |
-|Vierter Namenserver  <br/> |ns2.bdm.microsoftonline.com  <br/> |
+|Dritter Namenserver  <br/> |ns3.bdm.microsoftonline.com  <br/> |
+|Vierter Namenserver  <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
    > [!TIP]
    > Es empfiehlt sich, alle vier Datensätze hinzuzufügen, aber wenn Ihre Registrierungsstelle nur zwei unterstützt, fügen Sie **ns1.BDM.microsoftonline.com** und **ns2.BDM.microsoftonline.com**hinzu. 
@@ -170,7 +170,7 @@ Hier einige weitere Schritte, die beispielsweise für E-Mail- und Websitehosting
 
 4. Wählen Sie den Typ des DNS-Eintrags aus, den Sie hinzufügen möchten, und geben Sie die Informationen für den neuen Datensatz ein.
 
-5. Wählen Sie **Speichern** aus.
+5. Klicken Sie auf **Speichern**.
     
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Dann sind Ihre Microsoft-e-Mails und andere Dienste für die Verwendung Ihrer Domäne festgelegt. 

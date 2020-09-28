@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Informieren Sie sich über die Gruppen und ihre Aktivitäten über einen Microsoft 365-Gruppenbericht.
-ms.openlocfilehash: 1d329efa4fe7cdf12b6c7452b6480d237fb3d5c1
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: b45582388103e843e2893cfceb9aa1106cb9ce76
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948988"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295094"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365-Berichte im Admin Center-Microsoft 365-Gruppen
 
@@ -37,8 +37,8 @@ Im Microsoft 365 **Reports** -Dashboard wird die Aktivitätsübersicht für die 
 
 1. Wechseln Sie im Admin Center zur Seite **Berichte** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Verwendung</a>.
 
-    
-2. Wählen Sie in der Dropdownliste **Bericht auswählen** den Eintrag **Office 365** \> **Gruppenaktivität** aus.
+2. Wählen Sie unter **aktive Benutzer – Microsoft 365-Dienste**die Option **mehr anzeigen** aus.
+3. Wählen Sie in der Dropdownliste **Bericht auswählen** den Eintrag **Office 365** \> **Gruppenaktivität** aus.
   
 ## <a name="interpret-the-groups-report"></a>Interpretieren des Gruppenberichts
 
@@ -61,4 +61,3 @@ Sie können sich einen Überblick über die Aktivitäten von Gruppen verschaffen
 |11.  <br/> |Sie können die Berichtsdaten auch im CSV-Format in eine Excel-Datei exportieren, indem Sie den Link **Exportieren** auswählen. Dadurch werden Daten aller Benutzer exportiert, und Sie können einfache Sortier- und Filtervorgänge zur weiteren Analyse ausführen. Bei weniger als 2.000 Benutzern können Sie innerhalb der Tabelle im Bericht selbst sortieren und filtern. Bei mehr als 2.000 Benutzern müssen Sie die Daten zum Filtern und Sortieren exportieren.  <br/> |
 |||
    
-

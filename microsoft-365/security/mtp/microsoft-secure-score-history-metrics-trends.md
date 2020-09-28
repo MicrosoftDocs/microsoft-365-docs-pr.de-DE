@@ -1,7 +1,7 @@
 ---
 title: Verfolgen des Microsoft Secure Score-Verlaufs und erreichen der Ziele
-description: Erhalten Sie Einblicke in Aktivitäten, die ihre sichere Bewertung beeinträchtigt haben. Trends entdecken und Ziele festlegen.
-keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Sicherheitsbewertung, Security Center, Verbesserungsmaßnahmen
+description: Erhalten Sie Einblicke in Aktivitäten, die Ihre Microsoft Secure-Bewertung beeinträchtigt haben. Trends entdecken und Ziele festlegen.
+keywords: Microsoft Secure Score, Secure Score, Office 365 Secure Score, Microsoft Security Score, Microsoft 365 Security Center, Improvement Actions
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 6c31ea1f7217babd4949bee843b091bb767e210e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 4f5d0a59372fb32b2802a094c247e45740ba3946
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196289"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295250"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Verfolgen des Microsoft Secure Score-Verlaufs und erreichen der Ziele
 
