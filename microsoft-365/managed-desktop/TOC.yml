@@ -95,6 +95,8 @@
               href: get-started/register-reused-devices-self.md
         - name: Vorbereiten Ihrer Benutzer für die Verwendung von Geräten
           href: get-started/get-started-devices.md
+        - name: Eindruck beim ersten Ausführen mit Autopilot und der Registrierungsstatusseite
+          href: get-started/esp-first-run.md
         - name: Erste Schritte mit dem App-Steuerelement
           href: get-started/get-started-app-control.md
         - name: Bereitstellen von Apps
