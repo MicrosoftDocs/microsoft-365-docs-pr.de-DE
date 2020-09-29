@@ -13,12 +13,12 @@ metadata:
   ms.author: robmazz
   ms.date: 11/08/2019
   localization_priority: Priority
-  ms.openlocfilehash: 8f7fff018e14b58aa65800af8f854c939cf0de89
-  ms.sourcegitcommit: eb3c30d53a5434d8bad7c8f48a5612f3e2675945
+  ms.openlocfilehash: d01e49aad4a30ddece688bba5ad24a68dedb40dd
+  ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 09/09/2020
-  ms.locfileid: "47422399"
+  ms.lasthandoff: 09/25/2020
+  ms.locfileid: "48277426"
 highlightedContent:
   items:
   - title: Fördern von Remotemitarbeitern
@@ -71,6 +71,8 @@ productDirectory:
       text: Zusammenarbeit an Dateien in SharePoint
     - url: /onedrive/plan-onedrive-enterprise
       text: OneDrive-Leitfaden für Unternehmen
+    - url: solutions/collaboration-governance-overview.md
+      text: Zusammenarbeitsgovernance
   - title: Ressourcen für die Architektur
     imageSrc: https://docs.microsoft.com/office/media/icons/cloud-architecture2.svg
     links:
@@ -183,9 +185,9 @@ additionalContent:
         url: /DeployOffice/office2019
       - text: Weitere Artikel >
         url: /DeployOffice
-    - title: SharePoint
+    - title: Microsoft Office SharePoint Online
       links:
-      - text: SharePoint Online
+      - text: SharePoint in Microsoft 365
         url: /sharepoint/sharepoint-online
       - text: SharePoint Server
         url: /sharepoint/sharepoint-server
