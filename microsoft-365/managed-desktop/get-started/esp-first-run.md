@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: d4083e48033787ca46ad2374ea461b4a77d21e0d
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 84656e2f0ae9d148c61c27af2a53e157cd44c171
+ms.sourcegitcommit: e6283e7c32ba9628fc45e9abc5cd4d21fb3f7ca9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295859"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48299239"
 ---
 # <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>First-Run-Erfahrung mit Autopilot und der Registrierungs Status Seite
 
@@ -46,9 +46,10 @@ Microsoft Managed Desktop verwendet diese Einstellungen im Autopilot-Profil, das
 |Typ des Benutzerkontos     |  Standard       |
 |Weiße Hand Schuh-OOBE zulassen     |  Ja       |
 |Gerätenamen Vorlage anwenden     | Ja        |
-|Geben Sie einen Namen ein.     | MMD-% Rand: 7%        |
+|Geben Sie einen Namen ein.     | MMD-% Rand: 11%        |
 
-
+> [!NOTE]
+> Während "weißer Handschuh" rovisioning nur für Kunden aktiviert ist, die ESP aktiviert haben, wird er derzeit nicht in Microsoft Managed Desktop unterstützt.
 
 ## <a name="enrollment-status-page-settings"></a>Einstellungen für die Registrierungs Status Seite
 
