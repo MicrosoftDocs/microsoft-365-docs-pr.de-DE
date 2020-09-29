@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f01f76ac591b4c2be9873fa87ec416939158acd3
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
-ms.translationtype: HT
+ms.openlocfilehash: 51b764e660ae36ae3476809b5fe6dae1c4ca0891
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195503"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304962"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Microsoft Threat Protection-Vorschaufeatures
 
@@ -42,7 +42,7 @@ Erfahren Sie mehr über die neuen Features in der Microsoft Threat Protection-Vo
 Weitere Informationen zu neuen Funktionen, die allgemein verfügbar sind, finden Sie unter [Neuigkeiten in Microsoft Threat Protection](whats-new.md).
 
 ## <a name="turn-on-preview-features"></a>Vorschaufeatures aktivieren
-Sie haben Zugriff auf kommende Features, zu denen Sie Feedback geben können, um das Gesamterlebnis zu verbessern, bevor die Featuers allgemein verfügbar sind.
+Sie haben Zugriff auf kommende Features, über die Sie Feedback geben können, um die allgemeine Erfahrung zu verbessern, bevor Features allgemein verfügbar sind.
 
 Aktivieren Sie die Einstellung für die Vorschauerfahrung, um zu den ersten zu gehören, die kommende Features ausprobieren.
 
@@ -61,7 +61,6 @@ Sie wissen, dass Sie Vorschaufeatures aktiviert haben, wenn Sie sehen, dass das 
 Die folgenden Features und Verbesserungen sind derzeit in der Vorschau verfügbar:
 
 - **[Microsoft Threat Protection-APIs](api-overview.md)** – die Microsoft Threat Protection-APIs auf Lop-Ebene ermöglichen Ihnen die Automatisierung von Workflows basierend auf den geteilten und erweiterten Tabellen für die Bedrohungssuche. 
-- **[Tabelle „IdentityDirectoryEvents“ in der erweiterten Bedrohungssuche](advanced-hunting-identitydirectoryevents-table.md)** – suchen Sie Ereignisse, die einen lokalen Domänencontroller mit Active Directory (AD) betreffen. Diese Tabelle befasst sich mit einer Reihe von identitätsbezogenen Ereignissen sowie mit Systemereignissen auf dem Domänencontroller.
-- **[Ergreifen Sie Maßnahmen in der erweiterten Bedrohungssuche](advanced-hunting-take-action.md)** – dämmen Sie Bedrohungen schnell ein, oder befassen Sie sich mit kompromittierten Objekten, die Sie in der [erweiterten Bedrohungssuche](advanced-hunting-overview.md) finden.
-- **[In-Portal-Schema-Referenz](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** – erhalten Sie Informationen zu Tabellen der erweiterten Bedrohungssuche direkt im Sicherheitscenter. Zusätzlich zu Tabellen- und Spaltenbeschreibungen bietet diese bequeme Referenz Informationen zu unterstützten Ereignistypen (`ActionType`-Werte) und Beispielabfragen.
+- **[Aktionen in der erweiterten Suche durchführen](advanced-hunting-take-action.md)**– enthalten schnell Bedrohungen oder adressieren gefährdete Objekte, die Sie in [Advanced Hunting](advanced-hunting-overview.md)finden.
+- **[In-Portal-Schemareferenz](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**: Informationen zu erweiterten Jagd Schema Tabellen erhalten Sie direkt im Sicherheitscenter. Neben Tabellen-und Spaltenbeschreibungen enthält dieser Verweis unterstützte Ereignistypen ( `ActionType` Werte) und Beispielabfragen.
 

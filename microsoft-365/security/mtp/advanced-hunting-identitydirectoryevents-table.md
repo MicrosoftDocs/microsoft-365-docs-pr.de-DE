@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4a698bc0d6a7c1ebadec44357b932e9b56dc0a3c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 118d96b797e9d46b4a9912f919cafbba680a9609
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196845"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305282"
 ---
 # <a name="identitydirectoryevents"></a>IdentityDirectoryEvents
 
@@ -31,8 +31,6 @@ ms.locfileid: "48196845"
 
 **Gilt für:**
 - Microsoft Threat Protection
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Die `IdentityDirectoryEvents` Tabelle im [Advanced Hunting](advanced-hunting-overview.md) -Schema enthält Ereignisse, die einen lokalen Domänencontroller mit Active Directory (AD) umfassen. In dieser Tabelle werden verschiedene identitätsbezogene Ereignisse erfasst, wie Kennwortänderungen, Kennwortablauf und Benutzerprinzipalnamen (User Principal Name, UPN) geändert. Außerdem werden Systemereignisse auf dem Domänencontroller erfasst, wie die Planung von Aufgaben und die PowerShell-Aktivität. Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
 
@@ -45,27 +43,27 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Datum und Uhrzeit der Aufzeichnung des Ereignisses |
 | `ActionType` | string | Typ der Aktivität, die das Ereignis ausgelöst hat. Details finden Sie [in der in-Portal-Schemareferenz](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) . |
-| `Application` | Zeichenfolge | Anwendung, die die aufgezeichnete Aktion ausgeführt hat |
-| `TargetAccountUpn` | Zeichenfolge | Benutzerprinzipalname (User Principal Name, UPN) des Kontos, auf das die aufgezeichnete Aktion angewendet wurde |
-| `TargetAccountDisplayName` | Zeichenfolge | Anzeigename des Kontos, auf das die aufgezeichnete Aktion angewendet wurde |
-| `TargetDeviceName` | Zeichenfolge | Vollqualifizierter Domänenname (FQDN) des Geräts, auf das die aufgezeichnete Aktion angewendet wurde |
-| `DestinationDeviceName` | Zeichenfolge | Name des Geräts, auf dem die Serveranwendung ausgeführt wird, die die aufgezeichnete Aktion verarbeitet hat |
-| `DestinationIPAddress` | Zeichenfolge | IP-Adresse des Geräts, auf dem die Serveranwendung ausgeführt wird, die die aufgezeichnete Aktion verarbeitet hat |
-| `DestinationPort` | Zeichenfolge | Ziel Port der Aktivität |
-| `Protocol` | Zeichenfolge | Während der Kommunikation verwendete Protokolle |
-| `AccountName` | Zeichenfolge | Benutzername des Kontos |
-| `AccountDomain` | Zeichenfolge | Domäne des Kontos |
-| `AccountUpn` | Zeichenfolge | Benutzerprinzipalname (UPN) des Kontos |
-| `AccountSid` | Zeichenfolge | Sicherheits-ID (SID) des Kontos |
-| `AccountObjectId` | Zeichenfolge | Eindeutiger Bezeichner für das Konto in Azure AD |
-| `AccountDisplayName` | Zeichenfolge | Name des Kontobenutzers, der im Adressbuch angezeigt wird. Normalerweise eine Kombination aus einem angegebenen oder Vornamen, einer mittleren Initiation und einem Nachnamen oder Nachnamen. |
-| `DeviceName` | Zeichenfolge | Vollqualifizierter Domänenname (FQDN) des Geräts |
-| `IPAddress` | Zeichenfolge | Dem Gerät während der Kommunikation zugewiesene IP-Adresse |
-| `Port` | Zeichenfolge | Während der Kommunikation verwendeter TCP-Port |
-| `Location` | Zeichenfolge | Ort, Land oder anderer geografischer Standort, der dem Ereignis zugeordnet ist |
-| `ISP` | Zeichenfolge | Internet Dienstanbieter, der der IP-Adresse zugeordnet ist |
+| `Application` | string | Anwendung, die die aufgezeichnete Aktion ausgeführt hat |
+| `TargetAccountUpn` | string | Benutzerprinzipalname (User Principal Name, UPN) des Kontos, auf das die aufgezeichnete Aktion angewendet wurde |
+| `TargetAccountDisplayName` | string | Anzeigename des Kontos, auf das die aufgezeichnete Aktion angewendet wurde |
+| `TargetDeviceName` | string | Vollqualifizierter Domänenname (FQDN) des Geräts, auf das die aufgezeichnete Aktion angewendet wurde |
+| `DestinationDeviceName` | string | Name des Geräts, auf dem die Serveranwendung ausgeführt wird, die die aufgezeichnete Aktion verarbeitet hat |
+| `DestinationIPAddress` | string | IP-Adresse des Geräts, auf dem die Serveranwendung ausgeführt wird, die die aufgezeichnete Aktion verarbeitet hat |
+| `DestinationPort` | string | Ziel Port der Aktivität |
+| `Protocol` | string | Während der Kommunikation verwendete Protokolle |
+| `AccountName` | string | Benutzername des Kontos |
+| `AccountDomain` | string | Domäne des Kontos |
+| `AccountUpn` | string | Benutzerprinzipalname (UPN) des Kontos |
+| `AccountSid` | string | Sicherheits-ID (SID) des Kontos |
+| `AccountObjectId` | string | Eindeutiger Bezeichner für das Konto in Azure Active Directory |
+| `AccountDisplayName` | string | Name des Kontobenutzers, der im Adressbuch angezeigt wird. Normalerweise eine Kombination aus einem angegebenen oder Vornamen, einer mittleren Initiation und einem Nachnamen oder Nachnamen. |
+| `DeviceName` | string | Vollqualifizierter Domänenname (FQDN) des Geräts |
+| `IPAddress` | string | Dem Gerät während der Kommunikation zugewiesene IP-Adresse |
+| `Port` | string | Während der Kommunikation verwendeter TCP-Port |
+| `Location` | string | Ort, Land oder anderer geografischer Standort, der dem Ereignis zugeordnet ist |
+| `ISP` | string | Internet Dienstanbieter, der der IP-Adresse zugeordnet ist |
 | `ReportId` | long | Eindeutiger Bezeichner für das Ereignis |
-| `AdditionalFields` | Zeichenfolge | Zusätzliche Informationen zur Entität oder zum Ereignis |
+| `AdditionalFields` | string | Zusätzliche Informationen zur Entität oder zum Ereignis |
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)

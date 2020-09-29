@@ -10,12 +10,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Einrichten des Inhalts Verständnisses in Project Cortex
-ms.openlocfilehash: f0a26f0044e578928730cf4930f1524e86dff9f3
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 31c6b6dd31b3f1bc47deb8424dd847cc0af6d429
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48294870"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304780"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Einrichten von SharePoint-Syntex
 
@@ -107,27 +107,7 @@ Wenn Sie 300 oder mehr SharePoint-Syntex-Lizenzen für SharePoint-Syntex in Ihre
 
 Sie können die Kapazität des AI-Generators schätzen, die für Sie mit dem [AI Builder-Rechner](https://powerapps.microsoft.com/ai-builder-calculator)geeignet ist.
 
-1. Wechseln Sie zum [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/resources/capacity) , um ihre Guthaben und Ihre Nutzung zu überprüfen.
-
-    > [!NOTE]
-    > Aktivieren Sie diese Einstellung für eine SharePoint-Dokumentbibliothek wirkt sich nicht auf vorhandene Modelle aus, die auf die Bibliothek angewendet werden, oder auf die Möglichkeit, Dokument Verständnis Modelle auf eine Bibliothek anzuwenden. 
-    
-2. Auf der Seite **inhaltscenter erstellen** können Sie eine SharePoint-inhaltscenter-Website erstellen, für die Benutzerdokument Verständnis Modelle erstellen und verwalten können. </br>
-    a. Geben Sie unter **Websitename**den gewünschten Namen für die inhaltscenter-Website ein.</br>
-    b. Die **Websiteadresse** zeigt die URL für Ihre Website an, basierend auf dem Websitenamen.</br>
-
-    > [!NOTE] 
-    > Während Sie eine beliebige unterstützte Sprache auswählen können, können Inhalts Verständnis Modelle nur für Englisch erstellt werden.</br>
-
-      ![Inhaltscenter erstellen](../media/content-understanding/admin-cu-create-cc.png)</br>
-
-3. Wählen Sie **Weiter** aus.
-
-4. Schauen Sie sich auf der Seite **Fertig stellen und überprüfen** die ausgewählte Einstellung an, und wählen Sie, um Änderungen vorzunehmen. Wenn Sie mit Ihrer Auswahl zufrieden sind, wählen Sie **aktivieren**aus.
-
-5. Die Seite **Inhalt verstehen aktiviert** wird angezeigt und bestätigt, dass das System Ihre Formular Verarbeitungseinstellungen hinzugefügt und die Inhalts Center-Website erstellt hat. Wählen Sie **Fertig** aus.
-
-6. Sie kehren zu Ihrer Seite zum **Automatisieren von Inhalten** zurück. Auf dieser Seite können Sie **Verwalten** auswählen, um Änderungen an Ihren Konfigurationseinstellungen vorzunehmen. 
+Wechseln Sie zum [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/resources/capacity) , um ihre Guthaben und Ihre Nutzung zu überprüfen.
 
 ## <a name="see-also"></a>Siehe auch
 

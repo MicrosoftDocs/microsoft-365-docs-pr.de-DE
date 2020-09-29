@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: d5a7cc491b0a8547848f4e341a605ae0c4b87cc9
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8b9176fea67583fbdce647b2a3c37cf1d6fde7ed
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201279"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304858"
 ---
 # <a name="whats-new-in-microsoft-threat-protection"></a>Neues in Microsoft Threat Protection
 
@@ -34,12 +34,13 @@ RSS-Feed: erhalten Sie benachrichtigt, wenn diese Seite aktualisiert wird, indem
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
 ```
 ## <a name="september-2020"></a>September 2020
-- [AssignedIPAddresses ()-Funktion](advanced-hunting-assignedipaddresses-function.md) <br> Verwenden Sie diese Funktion in Ihren [erweiterten](advanced-hunting-overview.md) Suchabfragen, um schnell die neuesten IP-Adressen zu erhalten, die einem Gerät oder den aktuellen IP-Adressen zu einem bestimmten Zeitpunkt zugewiesen wurden.
+- [IdentityDirectoryEvents-Tabelle](advanced-hunting-identitydirectoryevents-table.md) <br> Suchen Sie nach Ereignissen, die einen lokalen Domänencontroller mit Active Directory (AD) umfassen. Diese [Erweiterte Jagd](advanced-hunting-overview.md) Schematabelle umfasst eine Reihe von identitätsbezogenen Ereignissen und Systemereignissen auf dem Domänencontroller.
+- [AssignedIPAddresses ()-Funktion](advanced-hunting-assignedipaddresses-function.md) <br> Verwenden Sie diese Funktion in ihren erweiterten Suchabfragen, um schnell die neuesten IP-Adressen zu erhalten, die einem Gerät zugewiesen sind, oder die aktuellen IP-Adressen aus einer bestimmten Zeit.
 
 ## <a name="july-2020"></a>Juli 2020
 - [Fileprofile ()-Funktion](advanced-hunting-fileprofile-function.md) <br> Verwenden Sie diese Funktion in ihren erweiterten Jagd Abfragen, um Ergebnisse mit umfassenden Dateiinformationen zu bereichern.
 - [Identitäts-und App-Tabellen](advanced-hunting-schema-tables.md)<br> Erhalten Sie Einblick in Authentifizierungsereignisse, Active Directory Abfragen und App-bezogene Aktivitäten mit den Tabellen [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md), [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)und [AppFileEvents](advanced-hunting-appfileevents-table.md) im erweiterten Jagd Schema.
-- [Suche starten](advanced-hunting-go-hunt.md)<br> Schnelles pivotieren von der Untersuchung eines Vorfalls zur Überprüfung eines bestimmten Ereignisses, eines Benutzers, eines Geräts oder anderer Entitätstypen mithilfe abfragebasierter erweiterter Jagd Funktionen.
+- [Suche starten](advanced-hunting-go-hunt.md)<br> Schnelles pivotieren von der Untersuchung eines Vorfalls bis hin zur Prüfung eines bestimmten Ereignisses, eines Benutzers, eines Geräts oder anderer Entitätstypen auf Erweiterter Suche.
 
 ## <a name="june-2020"></a>Juni 2020
 - Twitter-Feed <br> Holen Sie sich die neuesten Sicherheitsforschung, Threat Intelligence, Produktneuigkeiten und vieles mehr-direkt im Dashboard.
