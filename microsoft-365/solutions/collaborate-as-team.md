@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Hier finden Sie Informationen zu den Microsoft 365-Konfigurationsschritten, die zum Einrichten eines Teams für die Zusammenarbeit mit Gästen in Teams erforderlich sind.
-ms.openlocfilehash: f22404ea412085ed697f76219509c1382318e7d4
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: e8d1c75c6172168fc2b0a4b351591289c893869a
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797770"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48322177"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Zusammenarbeit mit Gästen in einem Team
 
@@ -47,7 +47,7 @@ So legen Sie Einstellungen für die Organisationsbeziehung fest
 
 1. Melden Sie sich bei Microsoft Azure an an [https://portal.azure.com](https://portal.azure.com) .
 2. Klicken Sie im linken Navigationsbereich auf **Azure Active Directory**.
-3. Klicken Sie im Bereich **Übersicht** auf **externe Identitäten**.
+3. Klicken Sie im Bereich **Übersicht** auf **Externe Identitäten**.
 4. Klicken Sie im Bereich **Organisations Identitäten** auf **Einstellungen für externe Zusammenarbeit**.
 5. Stellen Sie sicher, dass **Administratoren und Benutzer in der Rolle "Gast einladender" eingeladen** werden und **Mitglieder einladen können** , beide auf " **Ja**" festgelegt sind.
 6. Wenn Sie Änderungen vorgenommen haben, klicken Sie auf **Speichern**.
@@ -105,7 +105,7 @@ Wenn Sie die Datei-und Ordnerfreigabe für nicht authentifizierte Personen zulas
 So legen Sie Freigabeeinstellungen für SharePoint-Organisationsebene fest
 
 1. Klicken Sie im Microsoft 365 Admin Center in der linken Navigationsleiste unter **Admin Centers**auf **SharePoint**.
-2. Klicken Sie im SharePoint Admin Center links in der Navigation auf **Freigabe**.
+2. Erweitern Sie im SharePoint Admin Center in der linken Navigationsleiste den Knoten **Richtlinien** , und klicken Sie dann auf **Freigabe**.
 3. Stellen Sie sicher, dass die externe Freigabe für SharePoint auf " **jeder** " oder " **neue und vorhandene Gäste**" festgelegt ist.
 4. Wenn Sie Änderungen vorgenommen haben, klicken Sie auf **Speichern**.
 
@@ -131,7 +131,7 @@ So legen Sie die Standard Link Einstellungen für die SharePoint-Organisationseb
 2. Wählen Sie unter **Datei-und Ordner Links**den standardmäßigen Freigabe Link aus, den Sie verwenden möchten.
 3. Wenn Sie Änderungen vorgenommen haben, klicken Sie auf **Speichern**.
 
-## <a name="create-a-team"></a>Ein Team erstellen
+## <a name="create-a-team"></a>Team erstellen
 
 Der nächste Schritt besteht darin, das Team zu erstellen, das Sie für die Zusammenarbeit mit Gästen verwenden möchten.
 

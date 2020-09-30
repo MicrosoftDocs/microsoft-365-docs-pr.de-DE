@@ -9,18 +9,18 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 1588a2c91bcbe0bd381acb6be4f9bd5562810860
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 5198691a38b179a5491a36de95531edb9f32d691
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530247"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48322223"
 ---
 # <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>Voraussetzungen von Druckressourcen für Microsoft Managed Desktop
 
 Wenn Sie bereit sind, sich für die Registrierung in Microsoft Managed Desktop vorzubereiten, sollten Sie Ihre Druckanforderungen auswerten und den richtigen Ansatz für Ihre Umgebung bestimmen. Sie haben drei Optionen:
  
-- Stellen Sie die Microsoft Hybrid Cloud Print Solution bereit, damit Microsoft Managed Desktop-Geräte Drucker leichter entdecken können. Weitere Informationen finden Sie unter [Deploy Windows Server Hybrid Cloud Print](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-deploy).
+- Stellen Sie die Microsoft Universal Print Solution bereit, damit Microsoft Managed Desktop-Geräte Drucker leichter entdecken können. Weitere Informationen finden Sie unter [What is Universal Print](https://docs.microsoft.com/universal-print/fundamentals/universal-print-whatis).
 - Stellen Sie Drucker direkt mithilfe eines benutzerdefinierten PowerShell-Skripts bereit. Führen Sie dazu die Schritte im Abschnitt [lokale Drucker einrichten](#set-up-local-printers) aus.
 - Verwenden Sie eine nicht von Microsoft bereitgestellte Cloud-Drucklösung, die mit Windows 10-Geräten kompatibel ist, die einer Azure Active Directory Domäne beigetreten sind. Die Lösung muss den Softwareanforderungen für Microsoft Managed Desktop entsprechen. Weitere Informationen finden Sie unter [Microsoft Managed Desktop App Requirements](../service-description/mmd-app-requirements.md).
  

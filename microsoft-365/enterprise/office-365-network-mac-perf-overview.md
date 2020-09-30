@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Übersicht über die Netzwerkkonnektivität im Microsoft 365 Admin Center (Vorschau)
-ms.openlocfilehash: 52d1995572a3ae0220ac8529862ba69d5bca8cdb
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: 91c931eba5c9f5bdb9f45185581019cc9c754ed2
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235538"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48322199"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Netzwerkkonnektivität im Microsoft 365 Admin Center (Vorschau)
 
@@ -157,8 +157,8 @@ In der CSV-Datei wird eine erkannte Stadt Position in der userEntered-Spalte als
    1. **Adresse** (erforderlich): die physische Adresse des Büros
    1. **Latitude** (optional): aufgefüllt von Bing Maps Lookup der Adresse, wenn leer
    1. **Längengrad** (optional): aufgefüllt von Bing Maps Lookup der Adresse, wenn leer
-   1. Ausgehende **IP-Adressbereiche 1-5** (optional): Geben Sie für jeden Bereich den Leitungsnamen gefolgt von einer durch Leerzeichen getrennten Liste gültiger IPv4-oder IPv6-CIDR-Adressen ein. Diese Werte werden verwendet, um mehrere Office-Standorte zu unterscheiden, bei denen dieselben IP-Adressen für LAN-Subnetze verwendet werden.
-   1. **LanIps** (erforderlich): Listet die LAN-Subnetz-Bereiche auf, die an diesem Standort verwendet werden.
+   1. Ausgehende **IP-Adressbereiche 1-5** (optional): Geben Sie für jeden Bereich den Leitungsnamen gefolgt von einer durch Leerzeichen getrennten Liste gültiger IPv4-oder IPv6-CIDR-Adressen ein. Diese Werte werden verwendet, um mehrere Office-Standorte zu unterscheiden, bei denen dieselben IP-Adressen für LAN-Subnetze verwendet werden. Ausgehende IP-Adressbereiche alle müssen Netzwerkgröße/24 sein, und die/24 ist nicht in der Eingabe enthalten.
+   1. **LanIps** (erforderlich): Listet die LAN-Subnetz-Bereiche auf, die an diesem Standort verwendet werden. Für LAN-Subnetz-IDs muss eine CIDR-Netzwerkgröße angegeben werden, in der sich die Netzwerkgröße zwischen/8 und/29 befinden kann. Mehrere LAN-Subnetze können durch ein Komma oder ein Semikolon voneinander getrennt werden.
 1. Wenn Sie Ihre Office-Standorte hinzugefügt und die Datei gespeichert haben, klicken Sie neben dem Feld **abgeschlossen hochladen** auf die Schaltfläche **Durchsuchen** , und wählen Sie die gespeicherte CSV-Datei aus.
 1. Die Datei wird automatisch überprüft. Wenn Validierungsfehler vorliegen, wird die Fehlermeldung angezeigt, _dass in der Importdatei einige Fehler aufgetreten sind. Überprüfen Sie die Fehler, korrigieren Sie die Importdatei, und versuchen Sie es dann erneut._ Klicken Sie auf den Link **Fehlerdetails öffnen** , um eine Liste der spezifischen Feld Überprüfungsfehler anzuzeigen.
 
@@ -168,7 +168,7 @@ In der CSV-Datei wird eine erkannte Stadt Position in der userEntered-Spalte als
 
    ![CSV-Import-Ready-Nachricht](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
-## <a name="faq"></a>Häufig gestellte Fragen (FAQ)
+## <a name="faq"></a>Häufig gestellte Fragen
 
 ### <a name="what-is-a-microsoft-365-service-front-door"></a>Was ist ein Microsoft 365-Dienst-Haustür?
 

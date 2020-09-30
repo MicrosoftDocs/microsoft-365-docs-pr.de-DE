@@ -1,4 +1,4 @@
-- name: Erste Schritte mit dem Inhalts Verständnis
+- name: Erste Schritte mit Microsoft SharePoint Syntex
   items:
     - name: Einführung in Microsoft SharePoint Syntex
       href: microsoft-sharepoint-syntex-overview.md
@@ -16,7 +16,7 @@
       href: create-a-classifier.md
     - name: Erstellen eines Extraktions Moduls
       href: create-an-extractor.md
-    - name: Beschreibungs Typen (Übersicht)
+    - name: Erklärungs Typen
       href: explanation-types-overview.md
     - name: Anwenden eines Modells
       href: apply-a-model.md
@@ -26,9 +26,11 @@
       href: apply-a-retention-label-to-a-model.md
     - name: Modell Nutzungsanalyse
       href: model-usage-analytics.md
+    - name: Terminologiespeicher-Taxonomie beim Erstellen eines Extraktors nutzen
+      href: leverage-term-store-taxonomy.md
 - name: Setup und Verwaltung
   items:
-    - name: Einrichten des Inhalts Verständnisses
+    - name: Inhaltsverständnis einrichten
       href: set-up-content-understanding.md
     - name: Bild Kennzeichnung
       href: image-tagging.md
