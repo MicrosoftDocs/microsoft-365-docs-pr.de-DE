@@ -8,27 +8,29 @@ author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
+ms.date: 09/29/2020
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: Erste Schritte mit automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection-Plan 2.
-ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: adee64461d06b46f467682835a493a7eebe89aef
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: Erste Schritte mit automatisierten Ermittlungs-und Antwortfunktionen in Microsoft Defender für Office 365.
+ms.custom:
+- air
+- seo-marvel-mar2020
+ms.openlocfilehash: b844e4817bc77d7f6f4e99df53fc4b14c7e7110c
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202651"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48308887"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>Erste Schritte mit der automatisierten Untersuchung und Reaktion (Air) in Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
-Der Plan 2 von [Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) enthält leistungsstarke Funktionen für die automatische Untersuchung und Reaktion (Air), mit denen Sie die Zeit und den Aufwand Ihres Sicherheits Betriebs in Ihrem Team sparen können. Office 365 Wenn Warnungen ausgelöst werden, liegt es an Ihrem Sicherheits Betriebsteam, diese Warnungen zu überprüfen, zu priorisieren und darauf zu reagieren. Das Einhalten des Umfangs eingehender Warnungen kann überwältigend sein. Die Automatisierung einiger dieser Informationen kann helfen. Mit Air kann sich Ihr Sicherheits Betriebsteam auf Aufgaben mit höherer Priorität konzentrieren, ohne die ausgelösten Warnungen aus den Augen zu verlieren.
+[Microsoft Defender für Office 365](office-365-atp.md) enthält leistungsstarke Funktionen für die automatische Untersuchung und Reaktion (Air), mit denen Sie Zeit und Aufwand für Sicherheitsvorgänge aufsparen können. Wenn Warnungen ausgelöst werden, liegt es an Ihrem Sicherheits Betriebsteam, diese Warnungen zu überprüfen, zu priorisieren und darauf zu reagieren. Das Einhalten des Umfangs eingehender Warnungen kann überwältigend sein. Die Automatisierung einiger dieser Informationen kann helfen. Mit Air kann sich Ihr Sicherheits Betriebsteam auf Aufgaben mit höherer Priorität konzentrieren, ohne die ausgelösten Warnungen aus den Augen zu verlieren.
 
 Inhalt dieses Artikels:
 - Der [gesamte Luftstrom](#the-overall-flow-of-air) ;
@@ -73,7 +75,7 @@ Während und nach einem automatisierten Ermittlungsprozess kann Ihr Sicherheitst
 
 ## <a name="how-to-get-air"></a>So erhalten Sie Luft
 
-Office 365 Air-Funktionen sind in [Office 365 Advanced Threat Protection-Plan 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2)enthalten. Ihre [Office 365 ATP-Richtlinien sollten jedoch so konfiguriert werden](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats) , dass die Luft wie erwartet funktioniert. Stellen Sie außerdem sicher, dass Sie die [Warnungsrichtlinien](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)Ihrer Organisation überprüfen und möglicherweise konfigurieren. 
+Air-Funktionen sind in [Microsoft Defender für Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2)enthalten. Ihre [Richtlinien müssen jedoch so konfiguriert werden](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats) , dass die Luft wie erwartet funktioniert. Stellen Sie außerdem sicher, dass Sie die [Warnungsrichtlinien](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)Ihrer Organisation überprüfen und möglicherweise konfigurieren. 
 
 Microsoft 365 bietet zahlreiche integrierte Warnungsrichtlinien, die die Identifizierung von Exchange-Administratorberechtigungen, Malwareaktivitäten, potenziellen externen und internen Bedrohungen sowie Risiken bei der Informationssteuerung ermöglichen. Mehrere der [standardmäßigen Warnungsrichtlinien](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies) können automatisierte Untersuchungen auslösen. Hierzu gehören:
 
@@ -100,12 +102,12 @@ Berechtigungen werden über bestimmte Rollen erteilt, wie Sie in der folgenden T
 |So richten Sie Air-Features ein |Eine der folgenden Rollen: <br/>-Globaler Administrator<br/>-Sicherheits Administrator <br/>Diese Rollen können in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im [Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)zugewiesen werden. |
 |So genehmigen oder ablehnen Sie Empfohlene Aktionen|Eine der folgenden Rollen, die in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im [Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)zugewiesen ist):<br/>-Globaler Administrator <br/>-Sicherheits Administrator<br/>-Sicherheits Leser <br/>--- und ---<br/>-Suchen und löschen (diese Rolle wird nur im [Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)zugewiesen. Möglicherweise müssen Sie dort eine neue Rollengruppe erstellen und die Such-und Lösch Rolle dieser neuen Rollengruppe hinzufügen.)
 
-[Office 365 ATP Plan 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2) -Lizenzen sollten zugewiesen werden:
+[Microsoft Defender für Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2) -Lizenzen sollte Folgendes zugewiesen werden:
 - Sicherheitsadministratoren (einschließlich globaler Administratoren)
 - Das Sicherheits Betriebsteam Ihrer Organisation (einschließlich Sicherheits Lesern und Benutzern mit der Rolle "suchen und löschen")
 - Endbenutzer
 
-Darüber hinaus müssen [Office 365 ATP-Richtlinien](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) definiert und angewendet werden, damit der Schutz erfolgt.
+Darüber hinaus müssen [Microsoft Defender für Office 365-Richtlinien](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) definiert und angewendet werden, damit der Schutz in Kraft tritt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
@@ -115,6 +117,6 @@ Darüber hinaus müssen [Office 365 ATP-Richtlinien](https://docs.microsoft.com/
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-- [Automatische Untersuchung und Korrektur in Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [Automatische Untersuchung und Korrektur in Microsoft Defender für Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
-- [Automatische Untersuchung und Reaktion in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [Automatische Untersuchung und Antwort in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

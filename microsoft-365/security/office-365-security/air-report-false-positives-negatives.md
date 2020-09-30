@@ -1,6 +1,6 @@
 ---
-title: Vorgehensweise Melden von falsch positiven oder falschen negativen Ergebnissen in Office 365 automatischen Untersuchung und Antwort
-description: Wurde von Office 365 Advanced Threat Protection etwas übersehen oder falsch erkannt? Hier erfahren Sie, wie Sie falsch positive Ergebnisse oder falsch negative Informationen zur Analyse an Microsoft übermitteln.
+title: Vorgehensweise Melden von falsch positiven oder falschen negativen Ergebnissen nach der automatischen Untersuchung in Microsoft Defender für Office 365
+description: Wurde etwas verpasst oder fälschlicherweise von Air in Microsoft Defender für Office 365 erkannt? Hier erfahren Sie, wie Sie falsch positive Ergebnisse oder falsch negative Informationen zur Analyse an Microsoft übermitteln.
 keywords: automatisiert, Untersuchung, Warnung, Auslöser, Aktion, Korrektur, falsch positiv, falsch negativ
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -11,20 +11,21 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-ms.date: 05/15/2020
+ms.date: 09/29/2020
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
-ms.custom: autoir
-ms.openlocfilehash: 66b81a474ff81df57c0b2a59672b17061f7235cb
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.custom:
+- autoir
+ms.openlocfilehash: fa6b4ae03a3cf62398a270d65a29e6b4c955173a
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196077"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48308932"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Vorgehensweise Melden von falsch positiven/negativen Ergebnissen in automatisierten Ermittlungs-und Antwortfunktionen
 
@@ -32,7 +33,7 @@ ms.locfileid: "48196077"
 
 
 **Gilt für:**
-- Office 365 Advanced Threat Protection
+- Microsoft Defender für Office 365
 
 Haben [automatisierte Funktionen für die Untersuchung und Reaktion (Air) Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office) vermissen oder fälschlicherweise etwas erkannt? Es gibt Schritte, die Sie ausführen können, um es zu beheben. Sie können:
 - [Melden einer falsch positiven/negativen Meldung an Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
@@ -43,7 +44,7 @@ Verwenden Sie diesen Artikel als Leitfaden.
 
 ## <a name="report-a-false-positivenegative-to-microsoft-for-analysis"></a>Melden einer falsch positiven/negativen Meldung an Microsoft zur Analyse
 
-Wenn Office 365 eine e-Mail-Nachricht, eine e-Mail-Anlage, eine URL in einer e-Mail-Nachricht oder eine URL in einer Office-Datei verpasst haben, können Sie [mutmaßliche Spam, Phishing, URLs und Dateien für die Office 365 Überprüfung an Microsoft übermitteln](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission).
+Wenn Air in Microsoft Defender für Office 365 eine e-Mail-Nachricht, eine e-Mail-Anlage, eine URL in einer e-Mail-Nachricht oder eine URL in einer Office-Datei verpasst hat, können Sie [mutmaßliche Spam, Phishing, URLs und Dateien für die Office 365 Prüfung an Microsoft übermitteln](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission).
 
 Sie können [eine Datei auch zur Malware Analyse an Microsoft übermitteln](https://www.microsoft.com/wdsi/filesubmission).
 
@@ -51,7 +52,7 @@ Sie können [eine Datei auch zur Malware Analyse an Microsoft übermitteln](http
 
 Wenn eine Warnung durch eine legitime Verwendung ausgelöst wird oder die Warnung ungenau ist, können Sie [Warnungen im Cloud-App-Sicherheitsportal verwalten](https://docs.microsoft.com/cloud-app-security/managing-alerts).
 
-Wenn Ihre Organisation neben Office 365 auch [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) verwendet und eine Datei, eine IP-Adresse, eine URL oder eine Domäne als Schadsoftware auf einem Gerät behandelt wird, können Sie [einen benutzerdefinierten Indikator mit der Aktion "zulassen" für Ihr Gerät erstellen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
+Wenn Ihre Organisation [Microsoft Defender für Endpoint](https://docs.microsoft.com/windows/security/threat-protection) zusätzlich zu Office 365 verwendet, und eine Datei, IP-Adresse, URL oder Domäne als Schadsoftware auf einem Gerät behandelt wird, obwohl Sie sicher ist, können Sie [einen benutzerdefinierten Indikator mit der Aktion "zulassen" für Ihr Gerät erstellen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
 
 ## <a name="undo-a-remediation-action"></a>Rückgängigmachen einer Korrekturaktion
 
@@ -90,6 +91,6 @@ Im Wartungscenter können Sie Korrekturaktionen sehen, die ausgeführt wurden, u
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
+[Microsoft Defender für Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
 
-[Erste Schritte mit der automatisierten Untersuchung und Reaktion (Air) in Office 365](office-365-air.md)
+[Air in Microsoft Defender für Office 365](office-365-air.md)

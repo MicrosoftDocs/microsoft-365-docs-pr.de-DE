@@ -15,12 +15,13 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Während und nach einer automatischen Untersuchung in Microsoft 365 können Sie die Ergebnisse und die wichtigsten Ergebnisse anzeigen.
-ms.openlocfilehash: 6137edf741dc2ef21ec4e046b1985dd3f85b5720
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.date: 09/29/2020
+ms.openlocfilehash: df0eaa54d8bc1c9cd6c91b6b36958e1eb0d2bfd6
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197691"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48309106"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Details und Ergebnisse einer automatisierten Untersuchung in Microsoft 365
 
@@ -144,10 +145,14 @@ Angesichts der schieren Menge an e-Mails, die Benutzer in einer Organisation sen
 
 kann erhebliche Zeit in Anspruch nehmen. Dieses Verfahren wird von Air jetzt automatisiert, sodass Zeit und Aufwand für das Sicherheitsteam Ihres Unternehmens gespart werden.
 
-Während des e-Mail-Analyse Schritts können zwei verschiedene Arten von e-Mail-Clustern identifiziert werden: Ähnlichkeits Cluster und Indikator Cluster.
+Während des e-Mail-Analyse Schritts können drei verschiedene Arten von e-Mail-Clustern identifiziert werden: Ähnlichkeits Cluster (alle Untersuchungen), Indikator Cluster (alle Untersuchungen) und Postfach-Benutzer Cluster.
 
 - Ähnlichkeits Cluster sind e-Mail-Nachrichten, die durch die Suche nach e-Mails mit ähnlichen Absender-und Inhaltsattributen identifiziert werden. Diese Cluster werden basierend auf den ursprünglichen Entdeckungs Ergebnissen auf schädliche Inhalte ausgewertet. E-Mail-Cluster mit ausreichenden bösartigen e-Mail-Erkennungen werden als böswillig betrachtet.
-- Indikator Cluster sind e-Mail-Nachrichten, die durch die Suche nach der gleichen Indikator Entität (Datei Hash oder URL) aus der ursprünglichen e-Mail identifiziert werden. Wenn die ursprüngliche Datei/URL-Entität als bösartig identifiziert wird, wendet Air das Indikator Urteil auf den gesamten Cluster von e-Mail-Nachrichten an, die diese Entität enthalten. Eine als Schadsoftware bezeichnete Datei bedeutet, dass der Cluster von e-Mail-Nachrichten mit dieser Datei als Schadsoftware-e-Mail-Nachrichten behandelt wird.
+- Indikator Cluster sind e-Mail-Nachrichten, die durch die Suche nach der gleichen Indikator Entität (Datei Hash oder URL) aus der ursprünglichen e-Mail identifiziert werden. Wenn die ouserriginal-Datei/URL-Entität als bösartig identifiziert wird, wendet Air das Indikator Urteil auf den gesamten Cluster von e-Mail-Nachrichten an, die diese Entität enthalten. Eine als Schadsoftware bezeichnete Datei bedeutet, dass der Cluster von e-Mail-Nachrichten mit dieser Datei als Schadsoftware-e-Mail-Nachrichten behandelt wird.
+- Postfachcluster sind e-Mail-Nachrichten im Zusammenhang mit dem Benutzer, der an einer Benutzer Kompromiss Ermittlung beteiligt ist.  Beachten Sie, dass diese e-Mail-Cluster zur weiteren Analyse durch das Sicherheits Betriebsteam verwendet werden und keine e-Mail-Korrekturaktionen generieren.  Das Kompromiss Textbuch-Postfach/Benutzer Cluster überprüft die e-Mails, die von dem Benutzer gesendet werden, der analysiert wird, um die potenziellen Auswirkungen der von dem Postfach gesendeten e-Mails zu verstehen:
+    - Vom Postfach/Benutzer gesendete böswillige e-Mails, die eine mögliche Gefährdung des Postfachs/des Kontos anzeigen, und zeigen, dass andere Benutzer/Postfächer potenziell von böswilligen Abgesandten als Teil eines Kompromisses betroffen sind.
+    - Vom Postfach/Benutzer gesendete verdächtige e-Mails, die alle vom Postfach gesendeten Spam/Massen-e-Mails anzeigen, die möglicherweise mit potenziellen Kompromissen verbunden sind oder zumindest potenzielle unerwünschte Aktivitäten aus dem e-Mail-Konto angeben.
+    - Saubere e-Mails, die vom Postfach/Benutzer gesendet werden und dem Sicherheits Betriebsteam eine Ansicht der gesendeten legitimen Benutzer-e-Mails bereitstellen, aber möglicherweise die Datenfilterung einschließen, wenn das e-Mail-Konto kompromittiert wird.
 
 Das Ziel des Clusterings besteht darin, andere verwandte e-Mail-Nachrichten zu suchen und zu finden, die von demselben Absender als Teil eines Angriffs oder einer Kampagne gesendet werden.  In einigen Fällen kann die legitime e-Mail eine Untersuchung auslösen (beispielsweise meldet ein Benutzer eine Marketing-e-Mail).  In diesen Szenarien sollte das e-Mail-Clustering erkennen, dass e-Mail-Cluster nicht bösartig sind – wenn dies entsprechend erfolgt, wird keine Bedrohung angegeben, und es wird **keine** e-Mail-Entfernung empfohlen.
 
@@ -155,7 +160,7 @@ Auf der Registerkarte **e** -Mail werden auch e-Mail-Elemente im Zusammenhang mi
 
 Die auf der Registerkarte e-Mail angegebene e-Mail-Anzahl stellt derzeit die Gesamtsumme aller e-Mail-Nachrichten dar, die auf der Registerkarte **e-Mail** angezeigt werden. Da e-Mail-Nachrichten in mehreren Clustern vorhanden sind, ist die tatsächliche Gesamtanzahl der identifizierten e-Mail-Nachrichten (und von Korrekturaktionen betroffen) die Anzahl der eindeutigen e-Mail-Nachrichten, die in allen Clustern und e-Mail-Nachrichten der ursprünglichen Empfänger vorhanden sind.
 
-Sowohl Explorer als auch Air count-e-Mails pro Empfänger, da sich die Sicherheits Urteile, Aktionen und Zustellungsorte pro Empfänger unterscheiden. Eine ursprüngliche e-Mail-Nachricht, die an drei Benutzer gesendet wird, zählt also insgesamt drei e-Mail-Nachrichten statt einer e-Mail. Hinweis Es kann Fälle geben, in denen eine e-Mail zwei oder mehr Mal gezählt wird, da die e-Mail möglicherweise mehrere Aktionen enthält und mehrere Kopien der e-Mail vorhanden sein können, sobald alle Aktionen ausgeführt werden. Beispielsweise kann eine Malware-e-Mail, die bei der Zustellung erkannt wird, sowohl eine blockierte (isolierte) e-Mail-Nachricht als auch eine ersetzte e-Mail verursachen (Bedrohungs Datei wurde durch eine Warnungsdatei ersetzt und dann an das Postfach des Benutzers zugestellt). Da es buchstäblich zwei Kopien der e-Mail im System gibt, werden beide möglicherweise in Cluster Zählungen gezählt.
+Sowohl Explorer als auch Air zählen e-Mail-Nachrichten pro Empfänger, da sich die Sicherheits Urteile, Aktionen und Zustellungsorte auf Empfängerbasis unterscheiden. Eine ursprüngliche e-Mail-Nachricht, die an drei Benutzer gesendet wird, zählt also insgesamt drei e-Mail-Nachrichten statt einer e-Mail. Es kann vorkommen, dass eine e-Mail zwei oder mehr Mal gezählt wird, beispielsweise wenn eine e-Mail mehrere Aktionen enthält oder wenn mehrere Kopien der e-Mail vorhanden sind, wenn alle Aktionen ausgeführt werden. Beispielsweise kann eine Malware-e-Mail, die bei der Zustellung erkannt wird, sowohl eine blockierte (isolierte) e-Mail-Nachricht als auch eine ersetzte e-Mail verursachen (Bedrohungs Datei wurde durch eine Warnungsdatei ersetzt und dann an das Postfach des Benutzers gesendet). Da es buchstäblich zwei Kopien der e-Mail im System gibt, werden beide möglicherweise in Cluster Zählungen gezählt.
 
 E-Mail-Anzahlen werden zum Zeitpunkt der Untersuchung berechnet, und einige Zählungen werden neu berechnet, wenn Sie Ermittlungs Flyouts (basierend auf einer zugrunde liegenden Abfrage) öffnen. Die e-Mail-Anzahl, die für die e-Mail-Cluster auf der Registerkarte e-Mail angezeigt wird, und der Wert für die e-Mail-Menge im Cluster Flyout werden zum Zeitpunkt der Untersuchung berechnet und nicht geändert. Die e-Mail-Anzahl, die am unteren Rand der Registerkarte e-Mail-Nachrichten im e-Mail-Cluster-Flyout und der Anzahl der im Explorer angezeigten e-Mail-Nachrichten angezeigt wird So würde ein e-Mail-Cluster, der eine ursprüngliche Menge von 10 e-Mail-Nachrichten anzeigt, eine e-Mail-Listen Summe von 15 anzeigen, wenn fünf weitere e-Mail-Nachrichten zwischen der Ermittlungs Analysephase und dem Zeitpunkt, zu dem der Administrator  Ebenso können alte Untersuchungen mit größerer Anzahl beginnen, als Forscher Abfragen anzeigen, da ATP P2 Daten nach 7 Tagen für Versuche und 30 Tage für bezahlte Lizenzen abläuft.  Das Anzeigen der Anzahl der historischen und aktuellen Zählungen in unterschiedlichen Ansichten wird durchgeführt, um die e-Mail-Auswirkungen zum Zeitpunkt der Untersuchung und die aktuellen Auswirkungen bis zur Ausführung der Wiederherstellung anzugeben.
 
@@ -232,7 +237,7 @@ Sie können:
 |Untersuchung der DLP-Verstöße|Untersuchen von Verletzungen, die durch [Datenverlust Verhinderung](../../compliance/data-loss-prevention-policies.md) (DLP) erkannt wurden|
 |Extraktion von e-Mail-Indikatoren|Extrahieren von Indikatoren aus der Kopfzeile, dem Textkörper und dem Inhalt einer e-Mail-Nachricht zur Untersuchung|
 |Datei Hash Zuverlässigkeit|Erkennen von Anomalien basierend auf Datei Hashes für Benutzer und Computer in Ihrer Organisation|
-|E-Mail-Cluster Identifikation|E-Mail-Clusteranalyse basierend auf Kopf, Text, Inhalt und URLs|
+|E-Mail-Cluster Identifikation|E-Mail-Clusteranalyse basierend auf Kopf, Text, Inhalt, Dateien und URLs|
 |Volume-Analyse des e-Mail-Clusters|E-Mail-Clusteranalyse basierend auf ausgehenden Nachrichtenfluss Volumen Mustern|
 |Untersuchung der e-Mail-Delegation|Untersuchen des Zugriffs auf Postfächer für Benutzerpostfächer im Zusammenhang mit dieser Untersuchung|
 |Untersuchung von Nachrichten Weiterleitungsregeln|Untersuchen aller e-Mail-Weiterleitungsregeln für Benutzerpostfächer in Bezug auf diese Untersuchung|

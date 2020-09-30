@@ -19,22 +19,22 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Zusammenfassung: '
-ms.openlocfilehash: a4252a357891fc978d8b40747c5ad5741786b290
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2e5e5053ff1539b3fa92175115c8c9db3abc81ce
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690257"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48309047"
 ---
 # <a name="how-to-opt-in-for-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Anmelden für die Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen
 
 >[!Note]
->Dieser Artikel gilt nur für Kunden mit Daten in der Microsoft Cloud Germany/Deutschland.
+>Dieser Artikel gilt nur für Microsoft Cloud Germany (Microsoft Cloud Deutschland)-Kunden.
 >
 
 ## <a name="how-to-request-migration"></a>So fordern Sie die Migration an
 
-Für berechtigte Kunden welche Dienste in Microsoft Cloud Germany nutzen bzw. bereitgestellt haben, wird eine Seite im Microsoft 365 Admin Center angezeigt, über die sich der Administator des Mandanten/Tenant des Kunden für die Migration anmelden kann.
+Für berechtigte Kunden mit in Microsoft Cloud Deutschland bereitgestelltem Dienst wird eine Seite im Microsoft 365 Admin Center angezeigt, über die ein Kunde mandantenadministrator sich für die Migration anmelden kann.
 
 Um auf die Seite im Microsoft 365 Admin Center zuzugreifen, erweitern Sie im Navigationsbereich auf der linken Seite **Einstellungen**, und klicken Sie dann auf **Organisationsprofil**.
 
@@ -54,7 +54,13 @@ Sobald ein Administrator im Namen Ihres Mandanten die Aktivierung vorgenommen ha
 
 ## <a name="what-happens-after-opting-in-for-migration"></a>Was geschieht, nachdem ich die Migration aktiviert habe?
 
-Die Migrationen von Kunden die sich für die Migration durch Microsoft angemeldet haben (Anmeldung wie oben beschrieben), werden voraussichtlich in 2020 durchgeführt.  Als Ergebnis der Migration werden die wichtigsten Kundendaten und -abonnements in die neuen deutschen Regionen verschoben.  Microsoft sendet während des gesamten Migrationsprozesses Updates im Nachrichtencenter.
+Migrationen beginnen Anfang 2021 für Organisationen, die sich für den Microsoft-gesteuerten Ansatz entscheiden und vor dem Microsoft Cloud Germany (Microsoft Cloud Deutschland) am 29. Oktober 2021 abgeschlossen sind.  Als Ergebnis der Migration werden die wichtigsten Kundendaten und -abonnements in die neuen deutschen Regionen verschoben.  Microsoft sendet während des gesamten Migrationsprozesses Updates im Nachrichtencenter.  Weitere Informationen finden Sie in den Artikeln, auf die unten verwiesen wird.
+
+## <a name="what-happens-if-the-customer-tenant-administrator-does-not-opt-in-for-migration-in-admin-center"></a>Was geschieht, wenn der Kunde mandantenadministrator sich nicht für die Migration in Admin Center entscheidet?
+
+Die Online-Dienste-Bedingungen wurden mit Begriffen geändert, die Microsoft die Migration Ihrer Microsoft 365-, Dynamics 365-und Power BI-Daten und-Abonnements von Microsoft Cloud Deutschland in ein neues Rechenzentrum ermöglichen sollen. Diese Bedingungen treten in einem Microsoft Cloud Deutschland (Microsoft Cloud Deutschland)-Abonnement auf, das seit dem 1. Mai 2020 erneuert wurde.  Der Kunde mandantenadministrator erhält eine Benachrichtigung in e-Mail-und Nachrichten Center, in der er darauf hinweist, dass das Anmelden bei der Migration automatisch für eine von Microsoft unterstützte Migration gilt. Dieser Hinweis wird mindestens 30 Tage vor dem automatischen Anmelden gesendet.  Nach der Migration werden alle Kommunikations-und Statusaktualisierungen an Kundenmandanten Administratoren im Message Center gesendet.
+
+Kunden-und Partner mandantenadministratoren wird empfohlen, sich für die Migration in Admin Center anzumelden, damit der Migrationsprozess so schnell wie möglich beginnen kann.
 
 ## <a name="more-information"></a>Weitere Informationen
 
