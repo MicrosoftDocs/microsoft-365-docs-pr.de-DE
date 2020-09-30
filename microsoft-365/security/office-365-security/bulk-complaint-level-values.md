@@ -16,17 +16,16 @@ ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
 description: Administratoren können Informationen zu den Werten für die Massen Konformitätsstufe (BCL) erhalten, die in Exchange Online Protection (EoP) verwendet werden.
-ms.openlocfilehash: d59bb152de075bb807e3cae72839fe459d7da40f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 53d0ae5fb23fb68ef970a07b2b5d8c4220775de7
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203527"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318216"
 ---
 # <a name="bulk-complaint-level-bcl-in-eop"></a>Massen Reklamations Ebene (BCL) in EoP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 In Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer weist EoP eingehenden Nachrichten von Massen versandern eine Massen konforme Ebene (BCL) zu. Die BCL wird der Nachricht in einer X-Kopfzeile hinzugefügt und ähnelt der [SCL-Bewertung (Spam Confidence Level)](spam-confidence-levels.md) , die zum Identifizieren von Nachrichten als Spam verwendet wird. Eine höhere BCL gibt an, dass eine Massen Nachricht häufiger Beschwerden generiert (und daher eher Spam ist). Microsoft verwendet sowohl interne als auch Drittanbieterquellen, um Massen-e-Mails zu identifizieren und den entsprechenden BCL zu ermitteln.
 
@@ -42,6 +41,8 @@ Die BCL-Schwellenwerte werden in der folgenden Tabelle beschrieben.
 |:---:|---|
 |0|Die Nachricht stammt nicht von einem Massen-E-Mail-Absender.|
 |1, 2, 3|Die Nachricht stammt von einem Massen-E-Mail-Absender, aber führt zu wenigen Beschwerden.|
-|4, 5, 6, 7|Die Nachricht stammt von einem Massen-E-Mail-Absender und führt zu einer gemischten Anzahl von Beschwerden.|
+|4, 5, 6, 7<sup>\*</sup>|Die Nachricht stammt von einem Massen-E-Mail-Absender und führt zu einer gemischten Anzahl von Beschwerden.|
 |8, 9|Die Nachricht stammt von einem Massen Absender, der eine hohe Anzahl von Beschwerden generiert.|
 |
+
+<sup>\*</sup> Dies ist der Standardschwellenwert, der in Anti-Spam-Richtlinien verwendet wird.

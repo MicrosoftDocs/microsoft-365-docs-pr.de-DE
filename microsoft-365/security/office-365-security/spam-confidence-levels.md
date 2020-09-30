@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die SCL-Bewertung (Spam Confidence Level) informieren, die auf Nachrichten in Exchange Online Protection (EoP) angewendet wird.
-ms.openlocfilehash: fbd892b0171cee71f516d7ca3b26b91da664af79
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 51d00b36ae826676f436c0a74617ddbbadf7a30a
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202233"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318240"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>SCL (Spam Confidence Level) in EoP
 
@@ -50,6 +50,6 @@ Mithilfe von Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) könn
 
 Ähnlich wie bei der SCL-Bewertung identifiziert die Massen Reklamations Stufe (BCL) ungültige Massen-e-Mails (auch als _graue e-Mail_bezeichnet). Ein höheres BCL-Niveau zeigt an, dass eine als Massensendung gesendete E-Mail mit größerer Wahrscheinlichkeit zu Beschwerden führen wird (und daher eher als Spam einzustufen ist). Sie konfigurieren den BCL-Schwellenwert in Anti-Spam-Richtlinien. Weitere Informationen finden Sie unter [configure Anti-Spam Policies in EoP](configure-your-spam-filter-policies.md), [Bulk Complaint Level (BCL) in EoP)](bulk-complaint-level-values.md)und [worin besteht der Unterschied zwischen Junk-e-Mail und Massen-e-Mails?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 
-|<!-- -->|
-|---|
-|![Das kurze Symbol für LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New to Microsoft 365?** Entdecken Sie ﻿kostenlose Video Kurse für **Microsoft 365-Administratoren und IT-Experten**, die Ihnen von LinkedIn Learning angeboten werden.|
+****
+
+![Das kurze Symbol für LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New to Microsoft 365?** Entdecken Sie ﻿kostenlose Video Kurse für **Microsoft 365-Administratoren und IT-Experten**, die Ihnen von LinkedIn Learning angeboten werden.

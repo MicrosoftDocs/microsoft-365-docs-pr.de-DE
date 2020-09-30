@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 0a0c0c1dae1d7f03aa9c8328b3fb1b4bae587b9e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: dbd20263fce059bc57b6a19b58f15e3f5223b4e7
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199709"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318204"
 ---
 # <a name="closing-and-summarizing-your-microsoft-threat-protection-pilot"></a>Schließen und zusammenfassen Ihres Microsoft Threat Protection-Pilotprojekts  
 
@@ -37,6 +37,7 @@ Sie haben soeben einen Advanced Memory-only-Angriff simuliert, bei dem Code Remo
 Sie haben das Ende des Prozesses erreicht, nachdem alle Tests abgeschlossen sind.
 
 Die endgültige Ausgabe sollte wie folgt aussehen:
+
 - Eine abgeschlossene Scorecard
 - Ausführlicher Bericht über die Ergebnisse des Pilotprojekts
 - Eine Entscheidung im Hinblick auf die Weiterentwicklung
@@ -45,9 +46,8 @@ Diese Informationen sollten sowohl internen Beteiligten (die Sie während der [V
 
 Wir hoffen, dass Ihnen diese Simulation gefallen hat und Sie ermutigt werden, mit der Implementierung Ihres gelernten zu beginnen.
 
-
 ## <a name="next-step"></a>Nächster Schritt
-||
-|:-------|
-|Durchsuchen Sie das [Microsoft 365-Lösungs-und Architektur Center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) , um zu verstehen, wie Sie die richtige Lösung und Architektur für Ihre Organisation entwerfen.
 
+****
+
+Durchsuchen Sie das [Microsoft 365-Lösungs-und Architektur Center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) , um zu verstehen, wie Sie die richtige Lösung und Architektur für Ihre Organisation entwerfen.
