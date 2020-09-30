@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 775a3d21697103d6ed0b891aef605197741d3dbd
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 1c12618b92a84cb7861d1df243a689cd1cf8a17c
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208117"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304835"
 ---
 # <a name="trusted-information-security-assessment-exchange-tisax-germany"></a>Trusted Information Security Assessment Exchange (TISAX) Deutschland
 
 ## <a name="about-tisax"></a>Über TISAX
 
-Um die immer weiter zunehmende Vernetzung in der Automobilindustrie zu sichern, hat der [Verband der Automobilindustrie](https://www.dict.cc/deutsch-englisch/Verband.html) (VDA) einen Kriterienkatalog zur Bewertung der Informationssicherheit entwickelt. Das VDA Information Security Assessment ([Deutsch](https://www.vda.de/de/themen/sicherheit-und-standards/informationssicherheit/informationssicherheit-sicherheitsanforderungen.html) und [Englisch](https://www.vda.de/en/topics/safety-and-standards/information-security/information-security-requirements)) basiert auf den Grundlagen der internationalen Normen ISO/IEC 27001 und 27002, die an die Automobilindustrie angepasst sind. Im Jahr 2017 wurde es aktualisiert, um die Kontrollen für die Nutzung von Clouddiensten abzudecken.
+Um die immer weiter zunehmende Vernetzung in der Automobilindustrie zu sichern, hat der [Verband der Automobilindustrie](https://www.vda.de) (VDA) einen Kriterienkatalog zur Bewertung der Informationssicherheit entwickelt. Das VDA Information Security Assessment ([Deutsch](https://www.vda.de/de/themen/sicherheit-und-standards/informationssicherheit/informationssicherheit-sicherheitsanforderungen.html) und [Englisch](https://www.vda.de/en/topics/safety-and-standards/information-security/information-security-requirements)) basiert auf den Grundlagen der internationalen Normen ISO/IEC 27001 und 27002, die an die Automobilindustrie angepasst sind. Im Jahr 2017 wurde es aktualisiert, um die Kontrollen für die Nutzung von Clouddiensten abzudecken.
 
 VDA-Mitgliedsunternehmen nutzten dieses Instrument sowohl für interne Sicherheitsbewertungen als auch für Bewertungen von Lieferanten, Dienstleistern und anderen Partnern, die sensible Informationen in ihrem Auftrag verarbeiten. Da diese Auswertungen jedoch von jedem Unternehmen einzeln durchgeführt wurden, verursachte dies eine Belastung der Partner und doppelten Aufwand der VDA-Mitglieder.
 
@@ -75,7 +75,7 @@ ENX stellt die Zertifizierungsbestätigung nur registrierten Branchenvertretern 
 
 ## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Verwenden von Microsoft Compliance-Manager zur Einschätzung des Risikos
 
-[Microsoft Compliance-Manager](compliance-manager.md) ist ein Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), das Ihnen dabei hilft, den Compliance-Status Ihrer Organisation zu ermitteln und Maßnahmen zur Senkung von Risiken zu ergreifen. Compliance-Manager bietet eine sehr hilfreiche Vorlage für die Erstellung einer Bewertung für diese Verordnung. Die Vorlage finden Sie auf der Seite **Bewertungsvorlagen** in Compliance-Manager. Erfahren Sie, wie Sie [Bewertungen im Compliance-Manager erstellen](compliance-manager-assessments.md).
+[Microsoft Compliance Manager](compliance-manager.md) ist eine Funktion im [Microsoft 365 Compliance Center, die Ihnen](microsoft-365-compliance-center.md) hilft, die Compliance-Position Ihres Unternehmens zu verstehen und Maßnahmen zu ergreifen, um Risiken zu reduzieren. Compliance Manager bietet eine Premiumvorlage für die Erstellung einer Bewertung für diese Verordnung. Suchen Sie die Vorlage auf der Seite **Bewertungsvorlagen** im Compliance Manager. Erfahren Sie, wie Sie [Bewertungen in Compliance Manager erstellen](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressourcen
 

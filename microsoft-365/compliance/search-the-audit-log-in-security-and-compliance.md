@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: Verwenden Sie das Security & Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen und Benutzer- und Administratoraktivitäten anzuzeigen, die es in Ihrer Organisation gegeben hat.
+description: Verwenden Sie das Office 365 Security & Compliance Center oder das Microsoft 365 Compliance Center, um das vereinheitlichte Überwachungsprotokoll zu durchsuchen und die Benutzer- und Administratoraktivitäten in Ihrem Unternehmen anzuzeigen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7051e03ca4751d6e97d9af9228765be9e1af6ebe
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 48d40cff907480f05dff8ba1c5c1584fc8289b1b
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197348"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48286041"
 ---
-# <a name="search-the-audit-log-in-the-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Security & Compliance Center
+# <a name="search-the-audit-log-in-the-compliance-center"></a>Das Überwachungsprotokoll im Compliance Center suchen
 
-Wollen Sie herausfinden, ob ein Benutzer ein bestimmtes Dokument angezeigt oder ein Element aus seinem Postfach gelöscht hat? Dann verwenden Sie das Security & Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen und Benutzer- und Administratoraktivitäten anzuzeigen, die es in Ihrer Organisation gegeben hat. Warum ein einheitliches Überwachungsprotokoll? Weil Sie so nach folgenden Arten von [Benutzer- und Administratoraktivitäten](#audited-activities) in Office 365 suchen können:
+Wollen Sie herausfinden, ob ein Benutzer ein bestimmtes Dokument angezeigt oder ein Element aus seinem Postfach gelöscht hat? Dann verwenden Sie das Security & Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen und Benutzer- und Administratoraktivitäten anzuzeigen, die es in Ihrer Organisation gegeben hat. Warum ein einheitliches Überwachungsprotokoll? Weil Sie in Microsoft 365 nach den folgenden Arten von [Benutzer- und Verwaltungsaktivitäten](#audited-activities) suchen können:
 
 - Benutzeraktivitäten in SharePoint Online und OneDrive for Business
 
@@ -36,7 +36,7 @@ Wollen Sie herausfinden, ob ein Benutzer ein bestimmtes Dokument angezeigt oder 
 
 - Administratoraktivitäten in SharePoint Online
 
-- Administratoraktivitäten in Azure Active Directory (dem Verzeichnisdienst für Office 365)
+- Administratoraktivitäten in Azure Active Directory (der Verzeichnisdienst für Microsoft 365)
 
 - Administratoraktivitäten in Exchange Online (Exchange-Administratorüberwachungsprotokollierung)
 

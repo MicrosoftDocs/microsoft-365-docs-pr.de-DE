@@ -151,8 +151,10 @@
       items:
         - name: Grundlagen zur Verschlüsselung
           href: encryption.md
-        - name: Double Key Encryption (Vorschau)
+        - name: Double Key Encryption (DKE)
           href: double-key-encryption.md
+        - name: Double Key Encryption – häufig gestellte Fragen
+          href: double-key-encryption-overview.md
         - name: Office 365-Dienstverschlüsselung
           href: office-365-service-encryption.md
         - name: Kundenschlüssel
@@ -340,10 +342,6 @@
               href: archive-workplacefromfacebook-data.md
             - name: Zoom Besprechungen
               href: archive-zoommeetings-data.md
-            - name: Slack
-              href: archive-slack-data.md
-            - name: Zoom Besprechungen
-              href: archive-zoommeetings-data.md
         - name: TeleMessage Datenconnectors
           items:
             - name: Android
@@ -390,8 +388,6 @@
           href: restore-an-inactive-mailbox.md
         - name: Löschen eines inaktiven Postfachs
           href: delete-an-inactive-mailbox.md
-    - name: Videos vom Data Governance-Team
-      href: 'https://go.microsoft.com/fwlink/?linkid=867039'
     - name: Datensatzverwaltung
       items:
         - name: Mehr zur Datensatzverwaltung
@@ -425,7 +421,7 @@
               href: configure-edge-to-export-search-results.md
             - name: Suchen nach und Löschen von E-Mail-Nachrichten
               href: search-for-and-delete-messages-in-your-organization.md
-            - name: Durchsuchen der cloudbasierten Postfächer lokaler Benutzer
+            - name: Suchen nach Teams-Chatdaten für lokale Benutzer
               href: search-cloud-based-mailboxes-for-on-premises-users.md
             - name: Massenbearbeitung mehrerer Inhaltssuchen
               href: bulk-edit-content-searches.md
