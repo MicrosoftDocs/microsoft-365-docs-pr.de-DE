@@ -28,6 +28,10 @@
       href: model-usage-analytics.md
     - name: Terminologiespeicher-Taxonomie beim Erstellen eines Extraktors nutzen
       href: leverage-term-store-taxonomy.md
+- name: Einführung
+  items:
+    - name: Erste Schritte mit der Einführung
+      href: adoption-getstarted.md
 - name: Setup und Verwaltung
   items:
     - name: Inhaltsverständnis einrichten
