@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 9d1f259894fff720452de52c45424f086a31a6bb
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: f4394a66242a981ab179b07f45e82132f68968d7
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208177"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305355"
 ---
 # <a name="north-american-electric-reliability-corporation-nerc"></a>North American Electric Reliability Corporation (NERC)
 
@@ -83,11 +83,12 @@ Das NERC Unternehmen ERO [veröffentlichte](https://www.nerc.com/pa/comp/guidanc
 
 ## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Verwenden von Microsoft Compliance-Manager zur Einschätzung des Risikos
 
-[Microsoft Compliance-Manager](compliance-manager.md) ist ein Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), das Ihnen dabei hilft, den Compliance-Status Ihrer Organisation zu ermitteln und Maßnahmen zur Senkung von Risiken zu ergreifen. Compliance-Manager bietet eine sehr hilfreiche Vorlage für die Erstellung einer Bewertung für diese Verordnung. Die Vorlage finden Sie auf der Seite **Bewertungsvorlagen** in Compliance-Manager. Erfahren Sie, wie Sie [Bewertungen im Compliance-Manager erstellen](compliance-manager-assessments.md).
+[Microsoft Compliance Manager](compliance-manager.md) ist eine Funktion im [Microsoft 365 Compliance Center, die Ihnen](microsoft-365-compliance-center.md) hilft, die Compliance-Position Ihres Unternehmens zu verstehen und Maßnahmen zu ergreifen, um Risiken zu reduzieren. Compliance Manager bietet eine Premiumvorlage für die Erstellung einer Bewertung für diese Verordnung. Suchen Sie die Vorlage auf der Seite **Bewertungsvorlagen** im Compliance Manager. Erfahren Sie, wie Sie [Bewertungen in Compliance Manager erstellen](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressourcen
 
 - [NERC-Complianceleitfaden](https://www.nerc.com/pa/comp/guidance/)
+- [NERC Cyber Security – Supply Chain Risikomanagement](https://www.nerc.com/pa/Stand/Pages/CIP0131RI.aspx)
 - [NERC-Compliance und Durchsetzung](https://www.nerc.com/pa/comp/Pages/default.aspx)
 - [NERC-Organisation und Zertifizierung](https://www.nerc.com/pa/comp/Pages/Registration.aspx)
 - [Microsoft und FedRAMP](offering-fedramp.md)

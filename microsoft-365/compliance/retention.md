@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen, um zu behalten, was Sie benötigen, und zu löschen, was Sie nicht benötigen.
-ms.openlocfilehash: d8b9ff7bea32f489a5cce5f64626908e8ec56fa1
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 49d61a7bbc376121f5a91c1692f292b83abea779
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197338"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48308943"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
@@ -104,7 +104,7 @@ Aufbewahrungsrichtlinien können auf die folgenden Speicherorte angewendet werde
 - Öffentliche Exchange-Ordner
 - Teams-Kanalnachrichten
 - Teams-Chats
-- Nachrichten in der Yammer-Gemeinschaft
+- Nachrichten in der Yammer-Community
 - Private Nachrichten in Yammer
 
 Sie können eine einzelne Richtlinie sehr effizient auf mehrere Speicherorte oder auf bestimmte Speicherorte oder Benutzer anwenden.
@@ -230,7 +230,7 @@ Eine E-Mail-Nachricht oder ein Dokument kann jeweils nur über eine Aufbewahrung
     
 - Wenn dem Inhalt eine Bezeichnung für die veröffentlichte Aufbewahrung zugewiesen wurde, kann diese nicht durch eine automatische anwendbare Bezeichnung ersetzt werden.
     
-- Wenn es mehrere Regeln gibt, durch die eine Bezeichnung automatisch zugewiesen wird, und ein Inhalt die Bedingungen verschiedener Regeln erfüllt, wird die Aufbewahrungsbezeichnung für die älteste Regel angewendet.
+- Wenn es mehrere Regeln gibt, durch die eine Bezeichnung automatisch zugewiesen wird, und ein Inhalt die Bedingungen verschiedener Regeln erfüllt, wird die Aufbewahrungsbezeichnung für die älteste Regel (nach Erstellungsdatum) angewendet.
     
 Um zu verstehen, wie und warum eine Aufbewahrungsbezeichnung und nicht eine andere angewendet wird, ist es hilfreich, den Unterschied zwischen der expliziten und der impliziten Zuweisung einer Bezeichnung nachzuvollziehen:
 

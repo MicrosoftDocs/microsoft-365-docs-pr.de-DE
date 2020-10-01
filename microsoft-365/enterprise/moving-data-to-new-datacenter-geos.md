@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Informieren Sie sich über die neuen Regionen der Office 365-Rechenzentren und erfahren Sie, wie Sie die Option „Data Residency“ verwenden können, um einen Umzug Ihrer Kerndaten in eine neue Region anzufordern.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9c1c838f52627e0ff2eee5b7fdbeef7aee55b137
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
-ms.translationtype: HT
+ms.openlocfilehash: 17b8d5c828a8c528aba180c260510345e77226d5
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690258"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333712"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Verschieben von Kerndaten in neue Standorte der Microsoft 365-Rechenzentren
 
@@ -39,28 +39,23 @@ Bestandskunden, die ihre Kundenkerndaten in einer bereits vorhandenen Rechenzent
 |**Japan**| Asien/Pazifik | Japan | Dezember 2014 |
 |**Australien, Neuseeland, Fidschi**| Asien/Pazifik | Australien | März 2015 |
 |**Indien**| Asien/Pazifik | Indien | Oktober 2015 |
-|**Kanada**| Nordamerika | Kanada | Mai 2016 |
-|**Vereinigtes Königreich**| Europa | Vereinigtes Königreich | September 2016 |
+|**Kanada**| Vereinigte Staaten | Kanada | Mai 2016 |
+|**Vereinigtes Königreich**| Europäische Union | Vereinigtes Königreich | September 2016 |
 |**Südkorea**| Asien/Pazifik | Südkorea | April 2017 |
-|**Frankreich**| Europa | Frankreich | März 2018 |
-|**Vereinigte Arabische Emirate**| Europa | Vereinigte Arabische Emirate | Juni 2019 |
-|**Südafrika**| Europa | Südafrika | Juli 2019 |
-|**Schweiz, Liechtenstein**| Europa | Schweiz | Dezember 2019 |
-|**Deutschland**| Europa | Deutschland | Dezember 2019 |
-|**Norwegen**| Europa | Norwegen | April 2020 |
-  
-Für Neukunden oder nach der Verfügbarkeit der neuen Rechenzentrumsregion erstellte Office 365-Mandanten werden die ruhenden Kundenkerndaten automatisch in der neuen Rechenzentrumsregion gespeichert.
+|**Frankreich**| Europäische Union | Frankreich | März 2018 |
+|**Vereinigte Arabische Emirate**| Europäische Union | Vereinigte Arabische Emirate | Juni 2019 |
+|**Südafrika**| Europäische Union | Südafrika | Juli 2019 |
+|**Schweiz, Liechtenstein**| Europäische Union | Schweiz | Dezember 2019 |
+|**Deutschland**| Europäische Union | Deutschland | Dezember 2019 |
+|**Norwegen**| Europäische Union | Norwegen | April 2020 |
 
+Ab dem 1. Oktober 2020 Kunden mit einem Office 365 Education-Abonnement, das im Mandanten enthalten ist, keinen Migrations Anspruch.
 
->[!Note]
->Die Rechenzentrumsregion Deutschland wurde im Dezember 2019 gestartet. Für neue Microsoft 365-Kunden, deren Mandanten eine deutsche Anmeldeadresse zugeordnet ist, werden die ruhenden Kundenkerndaten in Deutschland gespeichert. Wir planen, in Zukunft für deutsche Kunden die Migration von Europa nach Deutschland anzubieten. Derzeit können Kunden von Microsoft Cloud Germany/Deutschland die Migration zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen anfordern. Weitere Informationen finden Sie unter [Anmelden für die Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen](https://aka.ms/office365germanymoveoptin).
->
-  
 Eine vollständige Liste aller Rechenzentrumsregionen, Rechenzentren und Standorte ruhender Kundendaten ist als Teil der [interaktiven Rechenzentrumskarten](https://office.com/datamaps) verfügbar. 
   
 ## <a name="data-residency-option"></a>Datenaufbewahrungsoption
 
-Wir bieten bestehenden Microsoft 365-Kunden eine Data Residency-Option an, die von den oben aufgeführten Rechenzentrumsregionen abgedeckt werden. Mit dieser Option können Kunden mit Datenaufbewahrungsanforderungen eine frühe Migration der ruhenden Kundenkerndaten ihrer Organisation zu ihrer neuen Rechenzentrumsregion anfordern.  Microsoft bietet allen berechtigten Kunden, die eine frühe Migration anfordern, einen zugesicherten Stichtag während des Registrierungsfensters.  Auf der Seite [Anfordern der Datenverschiebung](request-your-data-move.md) finden Sie weitere Details zum Registrierungsfenster für Ihre Geografie und den Registrierungsschritten des Programms.  Bis zum Abschluss der Datenverschiebungen können bis zu 24 Monate ab dem Anforderungszeitraum vergehen.
+Wir stellen eine Option für den Datenschutz für berechtigte Microsoft 365-Kunden bereit, die unter das in der obigen Tabelle aufgeführte Datacenter-GEOS fallen. Mit dieser Option können berechtigte Kunden mit Daten Wohnsitz Anforderungen eine Migration der wichtigsten Kundendaten Ihrer Organisation in Rest an Ihre neue Rechenzentrums-Geo-Datenbank anfordern.  Microsoft bietet allen berechtigten Kunden, die während des Registrierungsfensters eine Migration anfordern, eine zugesicherte Frist an.  Lesen Sie auf der Seite [Vorgehensweise zum Anfordern ihrer Datenverlagerung](request-your-data-move.md) weitere Details zum Fenster Registrierung öffnen für die Geo-Datencenter und die Schritte zum Registrieren in das Programm.  Datenverschiebungen können bis zu 24 Monate dauern, bis der Anforderungs Zeitraum abgeschlossen ist.
 
 Mit der neuen Rechenzentrumsregion stellen wir keine eigenen Funktionen, Features oder Compliancezertifizierungen bereit.
     

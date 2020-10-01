@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Bei Datenverschiebungen handelt es sich um Back-End-Vorgänge, die stattfinden, wenn Microsoft Dienste und zugeordnete Daten für Ihren Mandanten in eine neue Rechenzentrumsregion verschiebt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: acd2601d32617c56019ca8b4bf8688ce40f5d76a
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
-ms.translationtype: HT
+ms.openlocfilehash: d2e63dd046f62f07e367b3632f96bf7261b99c9c
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950272"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333700"
 ---
 # <a name="during-and-after-your-data-move"></a>Während und nach der Datenverschiebung
 
@@ -30,8 +30,7 @@ Datenverschiebungen sind eine Back-End-Operation mit minimalen Auswirkungen auf 
 > [!NOTE]
 > Die Verschiebungen werden zu unterschiedlichen Zeiten für jeden Dienst ausgeführt. Dadurch sehen Sie die beschriebene eingeschränkte Funktionalität für jeden Dienst zu unterschiedlichen Zeiten. 
   
-Halten Sie im Microsoft 365-Nachrichtencenter Ausschau nach der Bestätigung, dass die Verschiebungen für Exchange Online, SharePoint Online, Microsoft Teams und Skype for Business abgeschlossen sind. Wie die folgende Tabelle zeigt, kann es bis zu 24 Monate nach dem Ende der Registrierungsperiode dauern, um alle angeforderten Datenverschiebungen für alle Kunden in einem bestimmten Geo abzuschließen. Sollten nach der Verschiebung Probleme bei Ihrem Mandanten auftreten, wenden Sie sich an den [Support](https://go.microsoft.com/fwlink/p/?LinkID=522459), um Hilfe zu erhalten. 
-  
+Sehen Sie sich das Microsoft 365-Nachrichten Center zur Bestätigung an, wenn Moves für jeden Exchange Online, SharePoint Online und Teamchat Dienst abgeschlossen werden. Wie in der folgenden Tabelle dargestellt, kann es bis zu 24 Monate nach dem Ende des Registrierungszeitraums dauern, um die wichtigsten Kundendaten bei Rest-Verschiebungen an das neue Rechenzentrum Geo zu vervollständigen.   
 
 |**Kunden mit Anmeldeland in**|**Alle Verschiebungen abgeschlossen bis**|
 |:-----|:-----|
@@ -46,7 +45,7 @@ Halten Sie im Microsoft 365-Nachrichtencenter Ausschau nach der Bestätigung, da
 |Südafrika  <br/> |1. Juli 2022  <br/> |
 |Schweiz, Liechtenstein  <br/> |1. Juli 2022  <br/> |
 |Norwegen  <br/> |1. November 2022  <br/> |
-|Deutschland  <br/> |Geplant  <br/> |
+|Deutschland  <br/> |1. April 2023  <br/> |
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -67,13 +66,9 @@ Wenn SharePoint Online verschoben wird, werden auch Daten für die folgenden Die
   
 - One Drive for Business
     
-- Project Online
-    
-- Project für Microsoft 365
-    
 - Microsoft 365-Videodienste
     
-- Office im S-Browser
+- Office in einem Browser
     
 - Microsoft 365 Apps for Enterprise
     
@@ -109,7 +104,7 @@ Die folgenden Suchfunktionen sind betroffen:
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Neben Exchange Online, SharePoint Online und OneDrive for Business werden Microsoft Teams-Daten in das lokale Rechenzentrum migriert.
+Zusätzlich zu Exchange Online, SharePoint Online und OneDrive für Unternehmen migriert Microsoft Teams-Chatdienst Daten in das lokale Rechenzentrum.
 
 - Teams-Chatnachrichten, einschließlich privater Nachrichten und Kanalmeldungen.
 - Bilder, die in Teams-Chats verwendet wurden.
@@ -118,20 +113,7 @@ Teams-Dateien werden in SharePoint Online gespeichert, und Teams-Chatdateien wer
 
 ## <a name="skype-for-business"></a>Skype for Business
 
-Skype for Business-Verschiebungen sind für Australien, Japan, Indien, Kanada, Vereinigtes Königreich und Südkorea verfügbar.
-
-Alle Benutzer werden während des Cut-Over aus der Skype for Business-Clientsoftware abgemeldet. Durch die automatische Anmeldung wird die Verbindung innerhalb von zwei Minuten wiederhergestellt.
-  
-|**Funktionen, die während der gesamten Verschiebung ausgeführt werden können**|**Funktionen, die während eines Teils der Verschiebung eingeschränkt sein können**|
-|:-----|:-----|
-| Chat und Sprachanrufe  <br/>  Benutzer können Kontakte hinzufügen, Kontaktgruppen hinzufügen, Besprechungen hinzufügen, ihren Standort festlegen und "Notiz eingeben" ändern.  <br/>  Die Einstellungen des Audiokonferenzanbieters (ACP) werden in das Ziel-Geo-Rechenzentrum kopiert. Wenn der ACP-Anbieter im Ziel-Rechenzentrum vorhanden ist, wird er funktionieren. Andernfalls wird er nicht funktionieren.  <br/> | Mandantenadministrator TRPS (Tenant Remote PowerShell) ist für Administratoren nicht verfügbar, um Sitzungen zu erstellen.  <br/>  Mandantenadministrator LAC steht Administratoren nicht zur Verfügung, um sich anzumelden und Benutzereinstellungen zu ändern.  <br/> |
-   
-|**Nach der Verschiebung**|
-|:-----|
-| Besprechungsdaten (hochgeladene Präsentationen usw.) werden nicht verschoben und müssen neu hochgeladen werden.  <br/>  Ältere Lync-Clients, wie z. B. der Lync 2010-Client und der Lync for Mac 2011-Client, sind dafür bekannt, dass sie DNS-Informationen für den Dienst zwischenspeichern, was zu Problemen bei der Anmeldung führt. Das Löschen des DNS-Caches kann erforderlich sein, wenn der Benutzer nicht auf dem neuesten Skype for Business-Windows-Client befindet. Siehe [Behandeln von Skype for Business Online-DNS-Konfigurationsproblemen in Office 365](https://docs.microsoft.com/skypeforbusiness/troubleshoot/online-configuration/dns-configuration-issue). Benutzer des Lync for Mac-Clients sollten [diese Anweisungen](https://support.microsoft.com/kb/2629861) befolgen.  <br/> |
-   
-### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>Verschiebungen von Skype for Business, an denen ein Audiokonferenzanbieter eines Drittanbieters beteiligt ist
-Zusatzdienste von Audiokonferenzanbietern von Drittanbietern für Skype for Business sind nicht für Benutzer verfügbar, die in neuen geospezifischen Rechenzentren untergebracht sind.  Bestehende Kunden, die einen Audiokonferenzanbieter eines Drittanbieters nutzen, sollten nicht die Verschiebung in ein neues geospezifisches Rechenzentrum beantragen.  Neue Kunden, die in den neuen geospezifischen Rechenzentren eingesetzt werden, müssen die Verschiebung in ein regionales Rechenzentrum beantragen, um einen Audiokonferenzanbieter eines Drittanbieters nutzen zu können.
+Skype for Business Verschiebungen sind nicht mehr verfügbar.  [Skype for Business Online wird](https://docs.microsoft.com/lifecycle/announcements/skype-for-business-online-retirement) am 31. Juli 2021 zurückgezogen. Nach dieser Zeit kann auf den Dienst nicht mehr zugegriffen werden. 
   
 ## <a name="related-topics"></a>Verwandte Themen 
  

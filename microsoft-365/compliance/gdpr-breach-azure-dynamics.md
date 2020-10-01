@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 838e2ee09ea80f07c637eeebd1229b63f01ad00b
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: c262e496313ec5f59e9e369d8622f4698a9a585a
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415899"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305199"
 ---
 # <a name="azure-and-dynamics-365-breach-notification-under-the-gdpr"></a>Azure and Dynamics 365-Benachrichtigungen bei Sicherheitsverletzungen im Rahmen der DSGVO
 
@@ -38,7 +38,7 @@ Microsoft ist nicht verantwortlich für die Überwachung oder Reaktion auf Siche
 
 Azure reagiert auf eine potenzielle Datenschutzverletzung entsprechend dem Prozess für die Reaktion auf Sicherheitsvorfälle, der Teil des Vorfallmanagementplans von Microsoft Azure ist. Die Reaktion auf Sicherheitsvorfälle seitens Azure erfolgt in fünf Stufen: Erkennung, Analyse, Diagnose, Stabilisierung und Abschluss. Das Team für die Reaktion auf Sicherheitsvorfälle kann im Verlauf der Untersuchung zwischen den Stufen der Diagnose und der Stabilisierung wechseln. Nachfolgend finden Sie eine Übersicht über die Vorgehensweise bei Sicherheitsvorfällen:
 
-|**Stufe**|**Beschreibung**|
+|**Stage**|**Beschreibung**|
 | ------- | ------------- |
 | ***1 – Erkennung*** | Erste Anzeichen für einen potenziellen Vorfall. |
 | ***2 – Analyse*** | Ein abrufbereites Mitglied des Teams für die Reaktion auf Sicherheitsvorfälle analysiert die Auswirkungen und den Schweregrad des Ereignisses. Basierend auf den Nachweisen kann die Analyse zur einer Eskalation an das Sicherheitsteam führen. |
@@ -83,7 +83,7 @@ Während der gesamten Untersuchung arbeitet das Sicherheitsteam eng mit weltweit
 
 Microsoft überprüft, ob das Risiko für Kunden und Unternehmen erfolgreich gebannt wurde und ob Abhilfemaßnahmen implementiert wurden. Bei Bedarf werden Notfallverfahren zum Beheben unmittelbarer Sicherheitsrisiken im Zusammenhang mit dem Ereignis ausgeführt.
 
-Microsoft führt zudem eine interne nachträgliche Analyse für Datenschutzverstöße durch. Als Teil dieser Analyse wird die Angemessenheit der Reaktions- und Betriebsprozesse ausgewertet und alle Verbesserungen, die an den Reaktions- und Betriebsprozessen für Sicherheitsvorfälle oder an zugehörigen Prozessen von Microsoft vorgenommen werden sollten, werden ermittelt und implementiert. Interne nachträgliche Analysen für Datenschutzverstöße sind streng vertrauliche Datensätze, die Kunden nicht zur Verfügung gestellt werden. Es kann jedoch vorkommen, dass die nachträglichen Vorgänge in anderen Kunden-Ereignisbenachrichtigungen zusammengefasst und einbezogen werden. Diese Berichte werden externen Auditoren zur Überprüfung als Teil des routinemäßigen Überwachungszyklus von Azure bereitgestellt.
+Microsoft führt zudem eine interne nachträgliche Analyse für Datenschutzverstöße durch. Als Teil dieser Analyse wird die Angemessenheit der Reaktions- und Betriebsprozesse ausgewertet und alle Verbesserungen, die an den Reaktions- und Betriebsprozessen für Sicherheitsvorfälle oder an zugehörigen Prozessen von Microsoft vorgenommen werden sollten, werden ermittelt und implementiert. Interne nachträgliche Analysen für Datenschutzverstöße sind streng vertrauliche Datensätze, die Kunden nicht zur Verfügung gestellt werden. Sie können aber zusammengefasst und in andere Ereignisbenachrichtigungen für Kunden eingeschlossen werden. Diese Berichte werden externen Auditoren zur Überprüfung als Teil des routinemäßigen Überwachungszyklus von Azure bereitgestellt.
 
 ## <a name="customer-notification"></a>Kundenbenachrichtigung
 
@@ -107,6 +107,6 @@ Microsoft Dynamics 365 nutzt die Cloud-Service-Infrastruktur und integrierten Si
 
 Das Microsoft Dynamics 365-Angebot befolgt dieselben technischen und organisatorischen Maßnahmen, die ein oder mehrere Microsoft Azure-Dienstteams zur Sicherung gegen Datenverletzungsprozesse ergreifen. Daher sind alle Informationen, die im Benachrichtigungsdokument "Microsoft Azure-Datenverletzung" dokumentiert sind, analog zu Microsoft Dynamics 365.
 
-## <a name="learn-more"></a>Weitere Informationen
+## <a name="learn-more"></a>Mehr erfahren
 
 [Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview)

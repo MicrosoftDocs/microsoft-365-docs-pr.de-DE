@@ -14,17 +14,16 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie die erweiterten Anti-Phishing-Richtlinien erstellen, ändern und löschen, die in Organisationen mit Office 365 Advanced Threat Protection (Office 365 ATP) verfügbar sind.
-ms.openlocfilehash: 2986102b549b7302a7a4ac533f80846d832aeb41
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: c08046bdc9e72bc824dc28acdf2443c9071236a0
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/01/2020
-ms.locfileid: "48328071"
+ms.locfileid: "48333546"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>Konfigurieren der ATP Antiphishing-Richtlinien
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 ATP-Anti-Phishing-Richtlinien sind Teil [Office 365 Advanced Threat Protection](office-365-atp.md). Durch ATP-Richtlinien zum Schutz vor Phishing können Sie Ihre Organisation vor böswilligen Identitätswechsel basierten Phishing-Angriffen und anderen Arten von Phishing-Angriffen schützen. Weitere Informationen zu den Unterschieden zwischen Anti-Phishing-Richtlinien in Exchange Online Protection (EoP) und ATP Anti-Phishing Policies finden Sie unter [Anti-Phishing Protection](anti-phishing-protection.md).
 
@@ -63,7 +62,7 @@ Um die Effektivität des Anti-Phishing-Schutzes zu verbessern, können Sie benut
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Bevor Sie die in diesem Artikel besprochenen Verfahren ausführen können, müssen Ihnen Berechtigungen zugewiesen werden:
+- Sie müssen Berechtigungen zugewiesen haben, bevor Sie die Verfahren in diesem Artikel ausführen können:
 
   - Zum Hinzufügen, ändern und Löschen von ATP-Richtlinien zum Schutz vor Phishing müssen Sie Mitglied einer der folgenden Rollengruppen sein:
 
@@ -176,6 +175,8 @@ Verwenden Sie die folgenden Verfahren, um ATP-AntiPhishing-Richtlinien zu änder
 
      - **Automatisches einschließen der Domänen, die ich besitze**: der Standardwert ist **Off**. Um Sie zu aktivieren, schieben Sie die Umschaltfläche auf **ein**.
      - **Benutzerdefinierte Domänen einschließen**: der Standardwert ist **Off**. Um Sie zu aktivieren, schieben Sie die Umschaltfläche auf **ein**, und geben Sie im Feld **Domänen hinzufügen** den Domänennamen ein (beispielsweise contoso.com), drücken Sie die EINGABETASTE, und wiederholen Sie den Vorgang bei Bedarf.
+
+       **Hinweis**: im Security & Compliance Center können Sie maximal 20 Domänen eingeben. In Exchange Online PowerShell können Sie maximal 50 Domänen eingeben.
 
    - **Aktionen**: Klicken Sie auf **Bearbeiten**
 

@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 9e7853fb44cc9ccd8c233cc2fee71eaef91a5c1c
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: e4750e063c0f049c5f3faa1667aafb7f1afa6586
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415879"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305179"
 ---
 # <a name="gdpr-breach-notification"></a>Benachrichtigung über DSGVO-Verstöße
 
@@ -30,7 +30,7 @@ Die Datenschutz-Grundverordnung (DSGVO) führt neue Regeln für Unternehmen, Reg
 
 ## <a name="what-constitute-a-breach-of-personal-data-under-the-gdpr"></a>Was stellt eine Verletzung personenbezogener Daten im Rahmen der DSGVO dar?
 
-Personenbezogene Daten beziehen sich auf alle Informationen im Zusammenhang mit einer Person, die verwendet werden können, um diese Person direkt oder indirekt zu identifizieren. Eine Verletzung personenbezogener Daten stellt „einen Sicherheitsverstoß dar, der zur zufälligen oder unrechtmäßigen Zerstörung, zu Verlust, Veränderung, unbefugter Weitergabe oder unberechtigtem Zugang zu übermittelten, gespeicherten oder anderweitig verarbeiteten personenbezogenen Daten führt.
+Personenbezogene Daten beziehen sich auf alle Informationen im Zusammenhang mit einer Person, die verwendet werden können, um diese Person direkt oder indirekt zu identifizieren. Eine Verletzung personenbezogener Daten stellt „einen Sicherheitsverstoß dar, der zur zufälligen oder unrechtmäßigen Zerstörung, zu Verlust, Veränderung, unbefugter Weitergabe oder unberechtigtem Zugang zu übermittelten, gespeicherten oder anderweitig verarbeiteten personenbezogenen Daten führt“.
 
 ## <a name="terminology"></a>Begrifflichkeiten
 

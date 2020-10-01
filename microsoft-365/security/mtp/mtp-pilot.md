@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 88d92558d86e0aa2e90ef04d88a3cd4676386f15
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 250c125648f734a13899a58dd22ee3bffb0921a9
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195627"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333734"
 ---
 # <a name="run-your-pilot-microsoft-threat-protection-project"></a>Ausführen des Pilotprojekts "Microsoft Threat Protection" 
 
@@ -56,7 +56,7 @@ Bei der Ausführung eines Microsoft Threat Protection-Pilotprojekts gibt es vier
 |Phase | Beschreibung | 
 |:-------|:-----|
 | ![Planung](../../media/mtp/plan.png)<br>[Planung](mtp-pilot-plan.md)| Erfahren Sie, was Sie vor der Ausführung Ihres Microsoft Threat Protection-Pilotprojekts zu prüfen haben: <br><br>-Scope <br> -Anwendungsfälle <br>– Anforderungen <br>-Testplan <br> -Erfolgskriterien <br> -Scorecard 
-| ![Vorbereitung](../../media/prepare.png) <br>[Vorbereitung](mtp-evaluation.md)|  Greifen Sie auf das Microsoft 365 Security Center zu, um Ihre Microsoft Threat Protection-Pilotumgebung einzurichten. Sie werden zu folgenden Themen geführt:<br><br>-Identifizieren von Beteiligten und suchen der Anmeldung für ihr Pilotprojekt <br> -Umgebungs Überlegungen <br>-Access <br>-Azure-Active Directory-Setup <br> -Konfigurations Reihenfolge <br> -Registrieren für Microsoft 365 E5-Testversion <br> -Domäne konfigurieren <br>-Zuweisen von Microsoft 365 E5-Lizenzen <br> -Abschließen des Setup-Assistenten im Portal|
+| ![Vorbereitung](../../media/mtp/prep.png) <br>[Vorbereitung](mtp-evaluation.md)|  Greifen Sie auf das Microsoft 365 Security Center zu, um Ihre Microsoft Threat Protection-Pilotumgebung einzurichten. Sie werden zu folgenden Themen geführt:<br><br>-Identifizieren von Beteiligten und suchen der Anmeldung für ihr Pilotprojekt <br> -Umgebungs Überlegungen <br>-Access <br>-Azure-Active Directory-Setup <br> -Konfigurations Reihenfolge <br> -Registrieren für Microsoft 365 E5-Testversion <br> -Domäne konfigurieren <br>-Zuweisen von Microsoft 365 E5-Lizenzen <br> -Abschließen des Setup-Assistenten im Portal|
 | ![Angriffssimulation](../../media/mtp/run-sim.png) <br>[Angriffssimulation](mtp-pilot-simulate.md) | Um einen Angriff zu simulieren, werden Sie zu folgenden Themen geführt:<br><br>-Überprüfen der Anforderungen an die Testumgebung <br>-Simulation ausführen <br>-Untersuchen eines Vorfalls <br>-Beheben des Vorfalls 
 | ![Schließen und Zusammenfassung](../../media/mtp/close.png) <br>[Schließen und Zusammenfassung](mtp-pilot-close.md) | Wenn Sie das Ende des Prozesses erreicht haben, werden Sie zu folgenden Themen geführt:<br><br>– Durchlaufen der endgültigen Ausgabe<br>-Präsentieren ihrer Ausgaben für Ihre Stakeholder <br>-Feedback geben <br>– Nächste Schritte ausführen 
 

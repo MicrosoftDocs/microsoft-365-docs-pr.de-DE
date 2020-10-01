@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: a52ba30aa9b89dc78e9bd5a538cb530cd7bf6e00
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: 21e6e3294b8fe722214d567963223b9e62737e34
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48305366"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333678"
 ---
 # <a name="planning-your-pilot-microsoft-threat-protection-project"></a>Planen des Pilotprojekts für Microsoft Threat Protection 
 
@@ -31,8 +31,49 @@ ms.locfileid: "48305366"
 
 **Gilt für:**
 - Microsoft Threat Protection
+<br>
+<table border="0" width="100%" align="center">
+  <tr style="text-align:center;">
+    <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
+      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-plan"> 
+        <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft Threat Protection project" title="Planen des Pilotprojekts für Microsoft Threat Protection" />
+      <br/>Plan</a><br>
+    </td>
+    <td align="center">
+      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval">
+        <img src="../../media/mtp/prep.png" alt="Prepare your Microsoft Threat Protection trial lab or pilot environment" title="Vorbereiten Ihrer Testlabor-oder Pilotumgebung für den Microsoft Threat Protection-Test" />
+      <br/>Vorbereiten</a><br>
+    </td>
+    <td align="center">
+      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate">
+        <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft Threat Protection attack simulations" title="Ausführen von Microsoft Threat Protection-Angriffssimulationen" />
+     <br/>Angriff simulieren</a><br>
+    </td>
+    <td align="center">
+      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-close">
+        <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft Threat Protection pilot" title="Schließen und zusammenfassen Ihres Microsoft Threat Protection-Pilotprojekts" />
+     <br/>Schließen und zusammenfassen</a><br>
+    </td>
+  </tr>
+  <tr>
+    <td style="width:25%; border:0;">
+   
+    </td>
+    <td valign="top" style="width:25%; border:0;">
+    
+</td>
+    <td valign="top" style="width:25%; border:0;">
 
-Um sicherzustellen, dass das Pilotprojekt erfolgreich verläuft, ist es wichtig, dass Sie die Genehmigungen ihrer Beteiligten am Anfang sorgfältig planen und erhalten. Zu den Planungselementen gehören das Identifizieren von Bereich, Anwendungsfällen, Anforderungen und Erfolgskriterien.. 
+</td>    
+    <td valign="top" style="width:25%; border:0;">
+
+</td>
+  </tr>
+</table>
+
+Sie befinden sich derzeit in der Planungsphase.
+
+Um sicherzustellen, dass das Pilotprojekt erfolgreich verläuft, ist es wichtig, dass Sie die Genehmigungen ihrer Beteiligten am Anfang sorgfältig planen und erhalten. Zu den Planungselementen gehören das Identifizieren von Umfang, Anwendungsfällen, Anforderungen und Erfolgskriterien.
 
 In diesem Leitfaden wird erläutert, wie Sie Ihr Pilotprojekt planen. 
 
@@ -53,7 +94,7 @@ Die Typen der auszuwertenden Betriebssysteme sollten auch basierend auf der orga
 
 ## <a name="use-cases"></a>Anwendungsfälle
 
-Anwendungsfälle stellen Anweisungen dar, wie das zu testende Tool von den vorgesehenen Benutzern verwendet werden soll. Diese können als Benutzergeschichten aus der Sicht einer bestimmten Person formuliert werden, beispielsweise als SOC-Analyst. Beispiel:
+Anwendungsfälle stellen Anweisungen dar, wie das zu testende Tool von den vorgesehenen Benutzern verwendet werden soll. Diese können als Benutzergeschichten aus der Sicht einer bestimmten Person formuliert werden, beispielsweise als SOC-Analyst. Zum Beispiel:
 - Als SOC-Analyst muss ich Warnungen und Ereignisse für Geräte, Benutzer und Postfächer in meinem Netzwerk anzeigen, korrelieren, bewerten und verwalten. [Vorfallverwaltung]
 - Als SOC-Analyst muss ich das Tool und den Prozess zum automatischen untersuchen und reagieren auf böswillige Ereignisse in meinem Netzwerk haben. [Auto IR]
 - Als SOC-Analyst muss ich Daten aus meiner Umgebung suchen, um bekannte und potenzielle Bedrohungen sowie verdächtige Aktivitäten zu finden. [Erweiterte Suche]
@@ -85,5 +126,5 @@ Eine Möglichkeit, alle Elemente Ihres Plans zusammenzuführen, kann das Erstell
 
 
 ## <a name="next-step"></a>Nächster Schritt
-|![Vorbereitungsphase](../../media/prepare.png) <br>[Vorbereitungsphase](prepare-mtpeval.md) | Vorbereiten der Microsoft Threat Protection-Pilotumgebung
+|![Vorbereitungsphase](../../media/mtp/prep.png) <br>[Vorbereitungsphase](prepare-mtpeval.md) | Vorbereiten der Microsoft Threat Protection-Pilotumgebung
 |:-------|:-----|
