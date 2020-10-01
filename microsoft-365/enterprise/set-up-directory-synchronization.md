@@ -3,7 +3,7 @@ title: Einrichten der Verzeichnissynchronisierung für Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/15/2020
+ms.date: 09/30/2020
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: In diesem Artikel erfahren Sie, wie Sie die Verzeichnissynchronisierung zwischen Microsoft 365 und Ihrem lokalen Active Directory einrichten.
-ms.openlocfilehash: 3a846a6c558f221c1869dce6da27e3d34680f75d
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 308774dcdbaffc1096ab6ad144484e6920accdfa
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690343"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327093"
 ---
 # <a name="set-up-directory-synchronization-for-microsoft-365"></a>Einrichten der Verzeichnissynchronisierung für Microsoft 365
 
@@ -35,7 +35,7 @@ ms.locfileid: "46690343"
 
 Microsoft 365 verwendet einen Azure Active Directory (Azure AD)-Mandanten, um Identitäten für die Authentifizierung und Berechtigungen für den Zugriff auf Cloud-basierte Ressourcen zu speichern und zu verwalten. 
 
-Wenn Sie über eine lokale Active Directory-Domänendienste (AD DS) verfügen, können Sie Ihre AD DS Benutzerkonten, Gruppen und Kontakte mit dem Azure AD Mandanten Ihres Microsoft 365-Abonnements synchronisieren. Dies ist eine hybride Identität für Microsoft 365. Dies sind ihre Komponenten.
+Wenn Sie über eine lokale Active Directory-Domänendienste (AD DS) Domäne oder Gesamtstruktur verfügen, können Sie Ihre AD DS Benutzerkonten, Gruppen und Kontakte mit dem Azure AD Mandanten Ihres Microsoft 365-Abonnements synchronisieren. Dies ist eine hybride Identität für Microsoft 365. Dies sind ihre Komponenten.
 
 ![Komponenten der Verzeichnissynchronisierung für Microsoft 365](../media/about-microsoft-365-identity/hybrid-identity.png)
 
@@ -51,7 +51,7 @@ Azure AD Connect wird auf einem lokalen Server ausgeführt und synchronisiert Ih
 
 - Verbundauthentifizierung
 
-  Azure AD leitet den Clientcomputer um, der die Authentifizierung anfordert, um einen anderen Identitätsanbieter zu kontaktieren.
+  Azure AD bezieht sich auf den Clientcomputer, der die Authentifizierung anfordert, an einen anderen Identitätsanbieter.
 
 Weitere Informationen finden Sie unter [Hybrididentitäten](plan-for-directory-synchronization.md).
   

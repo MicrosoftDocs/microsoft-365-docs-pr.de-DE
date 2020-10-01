@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Suchen und Verwenden von Berichten für Office 365 Advanced Threat Protection im Security &amp; Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 90da02c8aa3d50f62bdf4be8c466962da828b23d
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 16fef101f722a23b3a64d91c85c2f946c67036f0
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196585"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328033"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Anzeigen von Berichten für Office 365 Advanced Threat Protection
 
@@ -36,7 +36,7 @@ Office 365 Advanced Threat Protection (ATP)-Organisationen (beispielsweise Micro
 
 ## <a name="advanced-threat-protection-file-types-report"></a>Advanced Threat Protection-Bericht zu Dateitypen
 
-Der Bericht über **Erweiterte Bedrohungsschutz-Dateitypen** zeigt Ihnen den Typ der Dateien an, die von [ATP-sicheren Anlagen](atp-safe-attachments.md)als bösartig erkannt wurden.
+Der Bericht über **Erweiterte Bedrohungsschutz-Dateitypen** zeigt Ihnen den Typ der Dateien an, die von [sicheren Anlagen](atp-safe-attachments.md)als schädlich erkannt wurden.
 
  Die aggregierte Ansicht des Berichts ermöglicht eine Filterung von 90 Tagen, während in der Detailansicht nur 10 Tage Filterung zulässig ist.
 
@@ -62,7 +62,7 @@ Die folgenden Ansichten sind verfügbar:
   - **Böswillige ausführbare Anlagen**
   - **Sonstige**
 
-  Wenn Sie den Mauszeiger über einen bestimmten Tag (Datenpunkt) bewegen, sehen Sie die Aufschlüsselung der Typen von bösartigen Dateien, die von [ATP-Safe Attachments](atp-safe-attachments.md) und [Anti-Malware Protection in EoP](anti-malware-protection.md)erkannt wurden.
+  Wenn Sie den Mauszeiger über einen bestimmten Tag (Datenpunkt) bewegen, sehen Sie die Aufschlüsselung der Typen von bösartigen Dateien, die durch [sichere Anlagen](atp-safe-attachments.md) und [Schutz vor Schadsoftware in EoP](anti-malware-protection.md)erkannt wurden.
 
   ![Datei Ansicht im Bericht "ATP-Dateitypen"](../../media/atp-file-types-report-file-view.png)
 
@@ -76,7 +76,7 @@ Die folgenden Ansichten sind verfügbar:
   - **Zugriff blockieren**
   - **Ersetzte Nachrichten**
   - **Überwachte Nachrichten**
-  - **Durch dynamische e-Mail-Zustellung ersetzt**: Weitere Informationen finden Sie unter [dynamische Zustellung und Vorschau mit ATP-Tresoranlagen](dynamic-delivery-and-previewing.md).
+  - **Durch dynamische e-Mail-Zustellung ersetzt**: Weitere Informationen finden Sie unter [Dynamic Delivery in Policies for Safe Attachments](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).
 
   ![Nachrichtenansicht im Bericht "ATP-Dateitypen"](../../media/atp-file-types-report-message-view.png)
 
@@ -138,7 +138,7 @@ Die folgenden Ansichten sind verfügbar:
   - **Zugriff blockieren**
   - **Ersetzte Nachrichten**
   - **Überwachte Nachrichten**
-  - **Durch dynamische e-Mail-Zustellung ersetzt**: Weitere Informationen finden Sie unter [dynamische Zustellung und Vorschau mit ATP-Tresoranlagen](dynamic-delivery-and-previewing.md).
+  - **Durch dynamische e-Mail-Zustellung ersetzt**: Weitere Informationen finden Sie unter [Dynamic Delivery in Policies for Safe Attachments](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).
 
   ![Nachrichtenansicht im Bericht "ATP-Dateitypen"](../../media/atp-file-types-report-message-view.png)
 
@@ -158,7 +158,7 @@ Die folgenden Ansichten sind verfügbar:
   - **Böswillige ausführbare Anlagen**
   - **Sonstige**
 
-  Wenn Sie den Mauszeiger über einen bestimmten Tag (Datenpunkt) bewegen, sehen Sie die Aufschlüsselung der Typen von bösartigen Dateien, die von [ATP-Safe Attachments](atp-safe-attachments.md) und [Anti-Malware Protection in EoP](anti-malware-protection.md)erkannt wurden.
+  Wenn Sie den Mauszeiger über einen bestimmten Tag (Datenpunkt) bewegen, sehen Sie die Aufschlüsselung der Typen von bösartigen Dateien, die durch [sichere Anlagen](atp-safe-attachments.md) und [Schutz vor Schadsoftware in EoP](anti-malware-protection.md)erkannt wurden.
 
   ![Datei Ansicht im Bericht "ATP-Dateitypen"](../../media/atp-file-types-report-file-view.png)
 
@@ -206,7 +206,7 @@ Der **Statusbericht "Threat Protection** " ist eine einzelne Ansicht, in der Inf
 
 ## <a name="url-threat-protection-report"></a>URL-Bedrohungsschutz Bericht
 
-Der **Bericht über den URL-Bedrohungsschutz** bietet zusammenfassende und Trend Ansichten für erkannte Bedrohungen und Aktionen, die im Rahmen der [ATP-Sicherheits Links](atp-safe-links.md)für URL-Klicks ausgeführt werden. In diesem Bericht werden keine klickdaten von Benutzern angezeigt, bei denen die Richtlinie für sichere Links angewendet die Option **Benutzerklicks nicht nachverfolgen** aktiviert hat.
+Der **Bericht über den URL-Bedrohungsschutz** bietet zusammenfassende und Trend Ansichten für erkannte Bedrohungen und Aktionen, die bei URL-Klicks im Rahmen von [sicheren Links](atp-safe-links.md)ausgeführt werden. In diesem Bericht werden keine klickdaten von Benutzern angezeigt, bei denen die Richtlinie für sichere Links angewendet die Option **Benutzerklicks nicht nachverfolgen** aktiviert hat.
 
 Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center](https://protection.office.com), wechseln Sie **Reports** zum \> **Dashboard** Berichte, und wählen Sie **URL-Schutzbericht**aus. Wenn Sie direkt zum Bericht wechseln möchten, öffnen Sie <https://protection.office.com/reportv2?id=URLProtectionActionReport> .
 
@@ -234,7 +234,7 @@ Der **URL Threat Protection** -Bericht enthält zwei aggregierte Ansichten, die 
 
   ![Aktionsansicht für URL-Klick Schutz im URL Threat Protection-Bericht](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
-- **URL-Klick nach Anwendung**: zeigt die Anzahl der URL-Klicks von Anwendungen an, die Office 365 ATP-sichere Links unterstützen:
+- **URL-Klick nach Anwendung**: zeigt die Anzahl der URL-Klicks von Anwendungen an, die sichere Links unterstützen:
 
   - **E-Mail-Client**
   - **PowerPoint**
@@ -255,9 +255,9 @@ Der **URL Threat Protection** -Bericht enthält zwei aggregierte Ansichten, die 
 Wenn Sie auf **Details-Tabelle anzeigen**klicken, bietet der Bericht eine nahezu Echtzeitansicht aller Klicks, die innerhalb der Organisation für die letzten 7 Tage mit den folgenden Details geschehen:
 
 - **Klicken Sie auf Zeit**
-- **Benutzer**
+- **Benutzende**
 - **URL**
-- **Action**
+- **Aktion**
 - **App**
 
 Wenn Sie in der Detailtabellen Ansicht auf **Filter** klicken, können Sie nach denselben Kriterien wie in der Berichtsansicht filtern, auch nach **Domänen** oder **Empfängern** , die durch Kommas getrennt sind.
@@ -275,7 +275,7 @@ Zusätzlich zu den in diesem Thema beschriebenen ATP-Berichten stehen verschiede
 |**Explorer** (ATP-Plan 2) oder **Echt Zeit Erkennungen** (ATP-Plan 1)|[Sicherheitsrisiken-Explorer (und Echtzeit-Erkennung)](threat-explorer.md)|
 |**E-Mail-Sicherheitsberichte**wie der Bericht über die häufigsten Absender und Empfänger, der Bericht "Spoof-e-Mail" und der Spam Erkennungs Bericht.|[Anzeigen von E-Mail-Sicherheitsberichten im Security & Compliance Center](view-email-security-reports.md)|
 |**Nachrichtenfluss Berichte**, wie der Weiterleitungs Bericht, der e-Mail-Fluss Statusbericht und der Bericht über die obersten Absender und Empfänger.|[Anzeigen von Nachrichtenfluss Berichten im Security & Compliance Center](view-mail-flow-reports.md)|
-|**URL-Ablaufverfolgung für ATP-sichere Links** (nur PowerShell). Die Ausgabe dieses Cmdlets zeigt die Ergebnisse der Aktionen für ATP-sichere Links in den letzten sieben Tagen an.|[Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
+|**URL-Ablaufverfolgung für sichere Links** (nur PowerShell). Die Ausgabe dieses Cmdlets zeigt die Ergebnisse von Aktionen für sichere Links in den letzten sieben Tagen an.|[Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
 |**Ergebnisse von e-Mail-Datenverkehr für EoP und ATP** (nur PowerShell). Die Ausgabe dieses Cmdlets enthält Informationen zu Domäne, Datum, Ereignistyp, Richtung, Aktion und Nachrichtenanzahl.|[Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport)|
 |**E-Mail-Detailberichte für EoP und ATP-Erkennungen** (nur PowerShell). Die Ausgabe dieses Cmdlets enthält Details zu bösartigen Dateien oder URLs, Phishing-versuchen, Identitätswechsel und anderen potenziellen Bedrohungen in e-Mails oder Dateien.|[Get-MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|
 |
@@ -306,7 +306,7 @@ Weitere Informationen hierzu finden Sie in den folgenden Ressourcen:
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>Was geschieht, wenn die Berichte keine Daten anzeigen?
 
-Wenn Sie keine Daten in ihren ATP-Berichten sehen, überprüfen Sie, ob Ihre Richtlinien ordnungsgemäß eingerichtet sind. In Ihrer Organisation müssen Richtlinien für [ATP-sichere Links](set-up-atp-safe-links-policies.md) und [ATP-Richtlinien für sichere Anlagen](set-up-atp-safe-attachments-policies.md) definiert sein, damit ATP-Schutz vorhanden ist. Weitere Informationen finden Sie unter [Anti-Spam and Anti-Malware Protection in Office 365](anti-spam-and-anti-malware-protection.md).
+Wenn Sie keine Daten in ihren ATP-Berichten sehen, überprüfen Sie, ob Ihre Richtlinien ordnungsgemäß eingerichtet sind. In Ihrer Organisation müssen [Richtlinien für sichere Links](set-up-atp-safe-links-policies.md) und Richt [Linien für sichere Anlagen](set-up-atp-safe-attachments-policies.md) definiert sein, damit ATP-Schutz vorhanden ist. Siehe auch [Anti-Spam and Anti-Malware Protection](anti-spam-and-anti-malware-protection.md).
 
 ## <a name="related-topics"></a>Verwandte Themen
 

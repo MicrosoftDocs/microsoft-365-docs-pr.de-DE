@@ -16,12 +16,12 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über Threat Tracker, einschließlich neuer bemerkenswerter Tracker, damit Ihre Organisation weiterhin auf Sicherheitsbedenken eingeht.
-ms.openlocfilehash: e4e157e64da92cf3c9178af1223fbc6c85e3fd95
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c631a6d9ad56c2bd155a9aa24b3758eb30d10cf7
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201795"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327153"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Aufzeichnungen von Bedrohungen – neu und wichtig
 
@@ -88,22 +88,20 @@ Beachten Sie, dass Sie uns jederzeit Feedback zu diesen oder anderen Sicherheits
   
 ## <a name="trackers-and-office-365-advanced-threat-protection"></a>Tracker und Office 365 Advanced Threat Protection
 
-Mit unserer ersten bemerkenswerten Bedrohung heben wir fortgeschrittene Malware-Bedrohungen hervor, die durch [Office 365 sichere ATP-Anhänge](atp-safe-attachments.md)erkannt werden. Wenn Sie ein Office 365 Enterprise E5-Kunde sind und nicht [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) verwenden, sollten Sie in Ihrem Abonnement enthalten sein. ATP bietet auch dann einen Mehrwert, wenn andere Sicherheitstools e-Mail-Fluss mit Ihren Office 365 Diensten filtern. Allerdings funktionieren Anti-Spam-und [Office 365 ATP-sichere Links](atp-safe-links.md) -Funktionen am besten, wenn Ihre Haupt-e-Mail-Sicherheitslösung über Office 365 erfolgt. 
+Mit unserer ersten bemerkenswerten Bedrohung heben wir fortgeschrittene Malware-Bedrohungen hervor, die durch [sichere Anlagen](atp-safe-attachments.md)erkannt werden. Wenn Sie ein Office 365 Enterprise E5-Kunde sind und nicht [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) verwenden, sollten Sie in Ihrem Abonnement enthalten sein. ATP bietet auch dann einen Mehrwert, wenn andere Sicherheitstools e-Mail-Fluss mit Ihren Office 365 Diensten filtern. Allerdings funktionieren Antispam-und [sichere Links](atp-safe-links.md) -Funktionen am besten, wenn Ihre Haupt-e-Mail-Sicherheitslösung über Office 365.
   
 ![ATP im Security &amp; Compliance Center](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
   
-In der heutigen mit Bedrohungen gespickten Welt bedeutet das Durchführen von nur herkömmlichen Antimalware-Scans, dass Sie nicht gut genug vor Angriffen geschützt sind. Modernere Angreifer verwenden häufig verfügbare Tools zum Erstellen von neuen, verschleierten oder verzögerten Angriffen, die von herkömmlichen Signaturen-basierten Antischadsoftware-Modulen nicht erkannt werden. Das Feature "ATP-sichere Anlagen" übernimmt e-Mail-Anlagen und zündet Sie in einer virtuellen Umgebung an, um festzustellen, ob diese sicher oder böswillig sind. Dieser detonations Prozess öffnet jede Datei in einer virtuellen Computerumgebung und überwacht dann, was nach dem Öffnen der Datei geschieht. Unabhängig davon, ob es sich um eine PDF-Datei, eine komprimierte Datei oder ein Office-Dokument handelt, der böswillige Code kann in einer Datei ausgeblendet werden und nur aktiviert werden, wenn das Opfer Sie auf seinem Computer öffnet. Durch das detonieren und Analysieren der Datei im e-Mail-Fluss findet Office 365 ATP-Funktionen diese Bedrohungen basierend auf Verhaltensweisen, dateireputation und einer Reihe von heuristischen Regeln.
+In der heutigen mit Bedrohungen gespickten Welt bedeutet das Durchführen von nur herkömmlichen Antimalware-Scans, dass Sie nicht gut genug vor Angriffen geschützt sind. Modernere Angreifer verwenden häufig verfügbare Tools zum Erstellen von neuen, verschleierten oder verzögerten Angriffen, die von herkömmlichen Signaturen-basierten Antischadsoftware-Modulen nicht erkannt werden. Das Feature für sichere Anlagen verwendet e-Mail-Anlagen und zündet Sie in einer virtuellen Umgebung an, um festzustellen, ob diese sicher oder böswillig sind. Dieser detonations Prozess öffnet jede Datei in einer virtuellen Computerumgebung und überwacht dann, was nach dem Öffnen der Datei geschieht. Unabhängig davon, ob es sich um eine PDF-Datei, eine komprimierte Datei oder ein Office-Dokument handelt, der böswillige Code kann in einer Datei ausgeblendet werden und nur aktiviert werden, wenn das Opfer Sie auf seinem Computer öffnet. Durch das detonieren und Analysieren der Datei im e-Mail-Fluss findet Office 365 ATP-Funktionen diese Bedrohungen basierend auf Verhaltensweisen, dateireputation und einer Reihe von heuristischen Regeln.
   
-Mit dem neuen bemerkenswerten Bedrohungs Filter werden Elemente hervorgehoben, die kürzlich über ATP-sichere Anlagen erkannt wurden. Diese Erkennungen stellen Elemente dar, bei denen es sich um neue schädliche Dateien handelt, die zuvor von Microsoft 365 weder in Ihrem e-Mail-Fluss noch in der e-Mail anderer Kunden gefunden wurden. Achten Sie auf die Elemente im bemerkenswerten Threat Tracker, sehen Sie, wer von Ihnen anvisiert wurde, und überprüfen Sie die detonations Details auf der Registerkarte Erweiterte Analyse (gefunden durch Klicken auf den Betreff der e-Mail im Explorer). Hinweis Sie finden diese Registerkarte nur in e-Mails, die von der Funktion ATP Safe Attachments erkannt werden – dieser bemerkenswerte Tracker enthält diesen Filter, aber Sie können diesen Filter auch für andere Suchvorgänge im Explorer verwenden.
+Mit dem neuen bemerkenswerten Bedrohungs Filter werden Elemente hervorgehoben, die vor kurzem über sichere Anlagen erkannt wurden. Diese Erkennungen stellen Elemente dar, bei denen es sich um neue schädliche Dateien handelt, die zuvor von Microsoft 365 weder in Ihrem e-Mail-Fluss noch in der e-Mail anderer Kunden gefunden wurden. Achten Sie auf die Elemente im bemerkenswerten Threat Tracker, sehen Sie, wer von Ihnen anvisiert wurde, und überprüfen Sie die detonations Details auf der Registerkarte Erweiterte Analyse (gefunden durch Klicken auf den Betreff der e-Mail im Explorer). Hinweis Sie finden diese Registerkarte nur in e-Mails, die von der Funktion "sichere Anlagen" erkannt werden – dieser bemerkenswerte Tracker enthält diesen Filter, aber Sie können diesen Filter auch für andere Suchvorgänge im Explorer verwenden.
   
 ## <a name="next-steps"></a>Nächste Schritte
 
 - Wenn Ihre Organisation noch nicht über diese Office 365-und-Antwortfunktionen verfügt, finden Sie weitere Informationen unter [wie werden Office 365 Bedrohungs Ermittlung und-Antwortfunktionen abgerufen?](office-365-ti.md).
-    
-- Stellen Sie sicher, dass Ihrem Sicherheitsteam die richtigen Rollen und Berechtigungen zugewiesen sind. Sie müssen ein globaler Administrator sein, oder der Sicherheitsadministrator oder die Such-und Lösch Rolle im Security &amp; Compliance Center zugewiesen sein. Weitere Informationen finden Sie unter [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
-    
-- Achten Sie darauf, dass die neuen Tracker in Ihrer Microsoft 365-Umgebung angezeigt werden. Wenn verfügbar, finden Sie [hier](https://protection.office.com/)ihre Tracker. Wechseln Sie zu Threat **Management** \> **Threat Tracker**.
-    
-- Wenn Sie dies noch nicht getan haben, erfahren Sie mehr über und konfigurieren Sie [Office 365 Advanced Threat Protection](office-365-atp.md) für Ihre Organisation, einschließlich [Office 365 ATP-Sicherheits Links](atp-safe-links.md) und [Office 365 ATP-Safe-Anlagen](atp-safe-attachments.md).
-  
 
+- Stellen Sie sicher, dass Ihrem Sicherheitsteam die richtigen Rollen und Berechtigungen zugewiesen sind. Sie müssen ein globaler Administrator sein, oder der Sicherheitsadministrator oder die Such-und Lösch Rolle im Security &amp; Compliance Center zugewiesen sein. Weitere Informationen finden Sie unter [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
+
+- Achten Sie darauf, dass die neuen Tracker in Ihrer Microsoft 365-Umgebung angezeigt werden. Wenn verfügbar, finden Sie [hier](https://protection.office.com/)ihre Tracker. Wechseln Sie zu Threat **Management** \> **Threat Tracker**.
+
+- Wenn Sie dies noch nicht getan haben, erfahren Sie mehr über und konfigurieren Sie [Office 365 Advanced Threat Protection](office-365-atp.md) für Ihre Organisation, einschließlich [sicherer Links](atp-safe-links.md) und [sicherer Anlagen](atp-safe-attachments.md).

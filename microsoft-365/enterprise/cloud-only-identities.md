@@ -3,7 +3,7 @@ title: Microsoft 365 Cloud-only Identity
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Beschreibt, wie Benutzer und Gruppen erstellt werden, wenn Ihr Microsoft 365-Abonnement nur eine Cloud-Identität verwendet.
-ms.openlocfilehash: 6ec727ea3648f1daa3af42763e5f497715b987a2
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 111c42e644913a8f7f6e41d4e8bf65685263f757
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547758"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327927"
 ---
 # <a name="microsoft-365-cloud-only-identity"></a>Microsoft 365 Cloud-only Identity
 
@@ -58,17 +58,9 @@ Sie können Gruppen in Azure AD für verschiedene Zwecke verwenden, die die Verw
 - Automatische Bereitstellung von Benutzern für Software as a Service (SaaS)-Anwendungen und zum Schutz des Zugriffs auf diese Anwendungen mit mehrstufiger Authentifizierung (MFA) und anderen Richtlinien für bedingten Zugriff.
 - Bereitstellungsberechtigungen und Zugriffsebenen für SharePoint Online Teamwebsites.
 
-Sie erstellen neue ***Benutzer*** mit:
+## <a name="next-steps-for-cloud-only-identity"></a>Nächste Schritte für Cloud-only Identity
 
-- [Das Microsoft 365 Admin Center](https://docs.microsoft.com/office365/admin/add-users/add-users)
-- [PowerShell für Microsoft 365](create-user-accounts-with-microsoft-365-powershell.md)
-
-Sie erstellen neue ***Gruppen*** mit:
-
-- [Das Microsoft 365 Admin Center](https://docs.microsoft.com/office365/admin/create-groups/create-groups)
-- [PowerShell für Microsoft 365](manage-microsoft-365-groups-with-powershell.md)
-
-
-## <a name="next-step-for-cloud-only-identity"></a>Nächster Schritt für Cloud-only Identity
-
-[Zuweisen von Lizenzen zu Benutzerkonten](assign-licenses-to-user-accounts.md)
+- [Verwalten von Benutzerkonten](manage-microsoft-365-accounts.md)
+- [Zuweisen von Lizenzen zu Benutzerkonten](assign-licenses-to-user-accounts.md)
+- [Verwalten von Gruppen und Gruppenmitgliedschaften](manage-microsoft-365-groups.md)
+- [Verwalten von Kennwörtern für Benutzerkonten](manage-microsoft-365-passwords.md)

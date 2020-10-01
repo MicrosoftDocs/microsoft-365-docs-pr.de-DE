@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die Anti-Phishing-Richtlinien informieren, die in Exchange Online Protection (EoP) und Office 365 Advanced Threat Protection (Office 365 ATP) zur Verfügung stehen.
-ms.openlocfilehash: 945b346a5ebd4a85776d87c019ee1a06aec73635
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 498b6e27b3fca66e388eaa27ba7895056ef7f0fc
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195915"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326937"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-Phishing-Richtlinien in Microsoft 365
 
@@ -30,7 +30,7 @@ ms.locfileid: "48195915"
 
 Richtlinien zum Konfigurieren von Einstellungen zum Schutz vor Phishing stehen in Microsoft 365-Organisationen mit Exchange Online-Postfächern, eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächern und Office 365 Advanced Threat Protection (Office 365 ATP)-Organisationen zur Verfügung.
 
-ATP-Anti-Phishing-Richtlinien sind nur in Organisationen verfügbar, die Office 365 ATP haben. Zum Beispiel:
+ATP-Anti-Phishing-Richtlinien sind nur in Organisationen verfügbar, die Office 365 ATP haben. Beispiel:
 
 - Microsoft 365 Enterprise E5, Microsoft 365 Education A5, etc.
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
@@ -220,4 +220,4 @@ Die folgenden erweiterten Phishing-Schwellenwerte sind nur in ATP-AntiPhishing-R
 
 - **4-am aggressivsten**: Nachrichten, die als Phishing mit niedrigem, mittlerem oder hohem Maß an Zuverlässigkeit identifiziert werden, werden so behandelt, als wären Sie mit einem sehr hohen Maß an Zuverlässigkeit identifiziert worden.
 
-Die Wahrscheinlichkeit, dass falsch positive Ergebnisse (gute Nachrichten, die als ungültig markiert werden) erhöht wird, wenn Sie diese Einstellung erhöhen. Informationen zu den empfohlenen Einstellungen finden Sie unter [Einstellungen für Anti-Phishing-Richtlinien für Office ATP](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings).
+Die Wahrscheinlichkeit, dass falsch positive Ergebnisse (gute Nachrichten, die als ungültig markiert werden) erhöht wird, wenn Sie diese Einstellung erhöhen. Informationen zu den empfohlenen Einstellungen finden Sie unter [ATP Anti-Phishing Policy Settings](recommended-settings-for-eop-and-office365-atp.md#atp-anti-phishing-policy-settings).

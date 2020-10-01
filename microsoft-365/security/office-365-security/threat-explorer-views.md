@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie Threat Explorer und den Bericht über Echt Zeit Erkennungen verwenden, um Bedrohungen im Security Compliance Center zu untersuchen und auf diese zu reagieren &amp; .
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5500a7bff0766159384604e9973b5ad81b3dbc6f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 1310baec402d9053e93b7166ca38cfcab11d73b2
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200107"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326985"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Ansichten im Threat Explorer und Echt Zeit Erkennungen
 
@@ -140,7 +140,7 @@ Wenn Sie in diesem Diagramm auf **ATP-Detonation** klicken, wird eine Ansicht wi
 
 ![Explorer gefiltert, um nur ATP-detonations Ergebnisse anzuzeigen](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
 
-In dieser Ansicht betrachten wir nun Daten für Dateien, die von [Office 365 ATP-Sicherheitsanlagen](atp-safe-attachments.md)gezündet wurden. Unter dem Diagramm können Details zu bestimmten e-Mail-Nachrichten mit Anlagen angezeigt werden, die durch ATP-sichere Anlagen erkannt wurden.
+In dieser Ansicht betrachten wir nun Daten für Dateien, die mit [sicheren Anlagen](atp-safe-attachments.md)gezündet wurden. Unter dem Diagramm können Details zu bestimmten e-Mail-Nachrichten mit Anlagen angezeigt werden, die von sicheren Anlagen erkannt wurden.
 
 ![Spezifische Details zu e-Mail-Nachrichten mit erkannten Anlagen](../../media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
 

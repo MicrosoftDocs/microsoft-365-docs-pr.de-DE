@@ -3,7 +3,7 @@ title: Schützen Ihrer globalen Administratorkonten in Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/08/2020
+ms.date: 09/30/2020
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Dieser Artikel enthält Informationen zum Schutz des globalen Administratorzugriffs auf Ihr Microsoft 365-Abonnement.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e51e75e811eefc001155bb2923b75a9dac9c0a90
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: 0b234c0e5c0ca352f26ff30213f22d59e07de274
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430010"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327249"
 ---
 # <a name="protect-your-microsoft-365-global-administrator-accounts"></a>Schützen Ihrer globalen Administratorkonten in Microsoft 365
 
@@ -46,11 +46,11 @@ Microsoft bietet Funktionen zum Schutz Ihrer Organisation, Sie sind jedoch nur w
 > [!Note]
 > Obwohl sich dieser Artikel auf globale Administratorkonten konzentriert, sollten Sie berücksichtigen, ob zusätzliche Konten mit umfangreichen Berechtigungen für den Zugriff auf die Daten in Ihrem Abonnement wie eDiscovery-Administrator-oder Sicherheits-oder Compliance-Administratorkonten auf die gleiche Weise geschützt werden sollten. <br > Es kann ein globales Administratorkonto erstellt werden, ohne dass Lizenzen hinzugefügt werden.
   
-## <a name="step-1-create-dedicated-microsoft-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>Schritt 1: Erstellen Dedizierter globaler Administratorkonten von Microsoft 365, die nur bei Bedarf verwendet werden
+## <a name="step-1-create-dedicated-microsoft-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>Schritt 1. Erstellen Dedizierter globaler Administratorkonten von Microsoft 365, die nur bei Bedarf verwendet werden
 
 Es gibt relativ wenige administrative Aufgaben wie das Zuweisen von Rollen zu Benutzerkonten, die globale Administratorrechte erfordern. Führen Sie daher die folgenden Schritte aus, anstatt alltägliche Benutzerkonten zu verwenden, denen die globale Administratorrolle zugewiesen wurde:
   
-1. Bestimmen Sie die Gruppe von Benutzerkonten, denen die globale Administratorrolle zugewiesen wurde. Sie können dies mit dem folgenden Azure Active (Azure AD) Directory PowerShell for Graph-Befehl tun:
+1. Bestimmen Sie die Gruppe von Benutzerkonten, denen die globale Administratorrolle zugewiesen wurde. Dies können Sie im Microsoft 365 Admin Center oder mit dem folgenden Azure Active (Azure AD) Directory PowerShell-Befehl für Graph ausführen:
   
   ```powershell
   Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
@@ -74,7 +74,7 @@ Es gibt relativ wenige administrative Aufgaben wie das Zuweisen von Rollen zu Be
     
 8. Melden Sie sich bei Microsoft 365 an.
     
-Das Ergebnis sollte wie folgt lauten:
+Die Ergebnisse sollten lauten:
   
 - Die einzigen Benutzerkonten in Ihrem Abonnement, die über die Berechtigungen eines globalen Administrators verfügen, befinden sich im neuen Satz der dedizierten Konten für globale Administratoren. Überprüfen Sie dies mit dem folgenden PowerShell-Befehl:
     
@@ -89,7 +89,7 @@ Ab diesem Moment melden Sie sich mit den dedizierten globalen Administratorkonte
 > [!NOTE]
 > Dafür sind zusätzliche Schritte erforderlich, um sich als alltägliches Benutzerkonto abzumelden und sich mit einem dedizierten globalen Administratorkonto anzumelden. Dies muss jedoch nur gelegentlich für globale Administrator Vorgänge erfolgen. Beachten Sie, dass die erneute Bereitstellung Ihres Microsoft 365-Abonnements nach einem Verstoß durch ein globales Administratorkonto viel mehr Schritte erfordert.
   
-## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-global-administrator-accounts-and-use-the-strongest-form-of-additional-verification"></a>Schritt 2: Konfigurieren Sie die mehrstufige Authentifizierung für ihre dedizierten globalen Administratorkonten von Microsoft 365, und verwenden Sie die stärkste Form der zusätzlichen Überprüfung.
+## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-global-administrator-accounts"></a>Schritt 2: Konfigurieren der mehrstufigen Authentifizierung für ihre dedizierten globalen Administratorkonten von Microsoft 365
 
 Mehrstufige Authentifizierung (MFA) erfordert zusätzliche Informationen über den Kontonamen und das Kennwort hinaus. Microsoft 365 unterstützt diese zusätzlichen Überprüfungsmethoden:
   
@@ -107,18 +107,10 @@ Mehrstufige Authentifizierung (MFA) erfordert zusätzliche Informationen über d
 >Für Organisationen, die die Standards des National Institute of Standards and Technology (NIST) einhalten müssen, ist die Verwendung eines Telefonanrufs oder von Textnachrichten basierten zusätzlichen Überprüfungsmethoden eingeschränkt. Klicken Sie [hier](https://pages.nist.gov/800-63-FAQ/#q-b01) , um Details anzuzeigen.
 >
 
-Wenn Sie ein kleines Unternehmen sind, das Benutzerkonten verwendet, die nur in der Cloud (dem reinen Cloud-Identitätsmodell) gespeichert sind, verwenden Sie die folgenden Schritte, um MFA mithilfe eines Telefonanrufs oder eines an ein Smartphone gesendeten Textnachrichten-Bestätigungscodes zu konfigurieren:
+Wenn Sie ein kleines Unternehmen sind, das Benutzerkonten verwendet, die nur in der Cloud (dem reinen Cloud-Identitätsmodell) gespeichert sind, [richten Sie MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) zum Konfigurieren von MFA mithilfe eines Telefonanrufs oder eines Textnachrichten Überprüfungscodes ein, der für jedes dedizierte globale Administratorkonto an ein Smartphone gesendet wird.
+    
+Wenn Sie eine größere Organisation sind, die ein Microsoft 365-Hybrid Identitätsmodell verwendet, haben Sie weitere Überprüfungsoptionen. Wenn die Sicherheitsinfrastruktur bereits für eine stärkere sekundäre Authentifizierungsmethode eingerichtet ist, [richten Sie MFA](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication) ein, und konfigurieren Sie jedes dedizierte globale Administratorkonto für die entsprechende Überprüfungsmethode.
   
-1. [Einrichten von MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
-    
-2. [Einrichten von MFA für Microsoft 365](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14) , um jedes dedizierte globale Administratorkonto für Telefonanrufe oder Textnachrichten als Überprüfungsmethode zu konfigurieren. 
-    
-Wenn Sie eine größere Organisation sind, die ein Microsoft 365-Hybrid Identitätsmodell verwendet, haben Sie weitere Überprüfungsoptionen. Wenn Sie die Sicherheitsinfrastruktur bereits für eine stärkere sekundäre Authentifizierungsmethode eingerichtet haben, führen Sie die folgenden Schritte aus:
-  
-1. [Einrichten von MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
-    
-2. [Richten Sie MFA für Ihre neuen globalen Administratorkonten](https://support.office.com/article/set-up-your-microsoft-365-sign-in-for-multi-factor-authentication-ace1d096-61e5-449b-a875-58eb3d74de14) ein, um jedes dedizierte globale Administratorkonto für die entsprechende Überprüfungsmethode zu konfigurieren. 
-    
 Wenn die Sicherheitsinfrastruktur für die gewünschte stärkere Überprüfungsmethode für Microsoft 365 MFA nicht vorhanden und funktionsfähig ist, wird dringend empfohlen, dass Sie dedizierte globale Administratorkonten mit MFA mithilfe der Microsoft Authenticator-APP, eines Telefonanrufs oder eines Textnachrichten Überprüfungscodes konfigurieren, der an ein Smartphone für Ihre globalen Administratorkonten als Interims Sicherheitsmaßnahme gesendet wird. Lassen Sie Ihre dedizierten globalen Administratorkonten nicht ohne den zusätzlichen Schutz, der von MFA bereitgestellt wird.
   
 Weitere Informationen finden Sie unter [MFA für Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365).
@@ -133,26 +125,47 @@ Informationen zum Herstellen einer Verbindung mit Microsoft 365-Diensten mit MFA
 
 ## <a name="additional-protections-for-enterprise-organizations"></a>Zusätzliche Schutzmaßnahmen für Unternehmensorganisationen
 
-Verwenden Sie nach den Schritten 1 und 2 diese zusätzlichen Methoden, um sicherzustellen, dass ihr globales Administratorkonto und die Konfiguration, die Sie verwenden, so sicher wie möglich sind.
+Verwenden Sie diese zusätzlichen Methoden, um sicherzustellen, dass ihr globales Administratorkonto und die Konfiguration, die Sie verwenden, so sicher wie möglich sind.
   
 ### <a name="privileged-access-workstation"></a>Workstation mit privilegiertem Zugriff
 
 Um sicherzustellen, dass die Ausführung von äußerst privilegierten Aufgaben so sicher wie möglich ist, verwenden Sie eine privilegierte Zugriffs Arbeitsstation (PAW). Bei einer PAW handelt es sich um einen dedizierten Computer, der nur für vertrauliche Konfigurationsaufgaben verwendet wird, beispielsweise für die Konfiguration von Microsoft 365, für die ein globales Administratorkonto erforderlich ist. Da dieser Computer nicht täglich für das Internet-browsen oder e-Mail verwendet wird, ist er besser vor Internetangriffen und-Bedrohungen geschützt.
   
 Anweisungen zum Einrichten einer Pfote finden Sie unter [https://aka.ms/cyberpaw](https://aka.ms/cyberpaw) .
-  
+
+Weitere Informationen zum Aktivieren von Azure PIM für Ihren Azure AD-Mandanten und für Administratorkonten finden Sie unter [Schritte zum Konfigurieren von PIM](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure).
+
+Weitere Informationen zum Entwickeln einer Roadmap, um den privilegierten Zugriff vor Cyberangriffen schützt, finden Sie unter [Schützen des privilegierten Zugriffs für hybride Cloudbereitstellungen in Azure AD](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices).
+
 ### <a name="azure-ad-privileged-identity-management"></a>Azure AD Privileged Identity Management
 
 Anstatt ihren globalen Administratorkonten dauerhaft die globale Administratorrolle zuweisen zu müssen, können Sie Azure AD privilegierte Identitätsverwaltung (PIM) verwenden, um bei Bedarf eine Just-in-Time-Zuweisung der globalen Administratorrolle zu aktivieren.
   
-Statt dass Ihre globalen Administratorkonten ein dauerhafter Administrator sind, werden Sie zu berechtigten Administratoren. Die globale Administratorrolle ist inaktiv, bis Sie von jemand benötigt wird. Anschließend führen Sie einen Aktivierungsprozess aus, um dem globalen Administratorkonto die globale Administratorrolle für eine vorgegebene Zeitspanne hinzuzufügen. Wenn die Zeit abgelaufen ist, entfernt PIM die globale Administratorrolle aus dem globalen Administratorkonto.
+Ihre globalen Administratorkonten gehen von permanenten Administratoren zu berechtigten Administratoren. Die globale Administratorrolle ist inaktiv, bis Sie von jemand benötigt wird. Anschließend führen Sie einen Aktivierungsprozess aus, um dem globalen Administratorkonto die globale Administratorrolle für eine vorgegebene Zeitspanne hinzuzufügen. Wenn die Zeit abgelaufen ist, entfernt PIM die globale Administratorrolle aus dem globalen Administratorkonto.
   
 Durch die Verwendung von PIM und diesen Prozess wird die Zeit erheblich verkürzt, die ihre globalen Administratorkonten anfällig für Angriffe und die Verwendung durch böswillige Benutzer sind.
 
-PIM steht mit Azure AD Premium P2 zur Verfügung, das in Microsoft 365 Enterprise E5 oder Enterprise Mobility + Security (EMS) E5 enthalten ist, oder Sie können einzelne Lizenzen für Ihre globalen Administratorkonten erwerben.
+PIM ist im Lieferumfang von Azure Active Directory Premium P2 verfügbar, das im Lieferumfang von Microsoft 365 E5 enthalten ist. Alternativ hierzu können Sie einzelne Azure Active Directory Premium P2-Lizenzen für Ihre Administratorkonten erwerben.
   
 Weitere Informationen finden Sie unter [Azure AD privilegierte Identitätsverwaltung](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure).
   
+
+### <a name="privileged-access-management"></a>Privileged Access Management
+
+Privileged Access Management wird durch Konfigurieren von Richtlinien aktiviert, die Just-in-Time-Zugriff für aufgabenbasierte Aktivitäten in Ihrem Mandanten angeben. Dadurch kann Ihre Organisation vor Sicherheitsverletzungen geschützt werden, bei denen vorhandene Privileged Access Management-Konten mit ständigem Zugriff auf vertrauliche Daten oder Zugriff auf kritische Konfigurationseinstellungen verwenden. Sie könnten beispielsweise eine Privileged Access Management-Richtlinie konfigurieren, die für den Zugriff und das Ändern von Postfacheinstellungen in der Organisation eine explizite Genehmigung in Ihrem Mandanten benötigt.
+
+In diesem Schritt aktivieren Sie Privileged Access Management in Ihrem Mandanten und konfigurieren Richtlinien für privilegierten Zugriff, die zusätzliche Sicherheit für aufgabenbasierten Zugriff auf Daten und Konfigurationseinstellungen für Ihre Organisation bereitstellen. Es gibt drei grundlegende Schritte, um mit dem privilegierten Zugriff in Ihrer Organisation zu beginnen:
+
+- Erstellen einer Gruppe einer genehmigenden Person
+- Aktivieren des privilegierten Zugriffs
+- Erstellen von Genehmigungsrichtlinien
+
+Durch die Verwaltung privilegierter Zugriffsrechte kann Ihre Organisation mit NULL stehenden rechten arbeiten und eine Verteidigungsstufe gegen Sicherheitsanfälligkeiten schaffen, die aufgrund eines solchen ständigen administrativen Zugriffs entstehen. Für privilegierten Zugriff sind Genehmigungen für die Ausführung von Aufgaben erforderlich, für die eine zugeordnete Genehmigungsrichtlinie definiert ist. Benutzer, die Aufgaben ausführen müssen, die in der Genehmigungsrichtlinie enthalten sind, müssen die Genehmigung für den Zugriff anfordern und erteilt werden.
+
+Informationen zum Aktivieren der Verwaltung privilegierten Zugriffs finden Sie unter [configure privileged Access Management](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration).
+
+Weitere Informationen finden Sie unter [privileged Access Management](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview).
+
 ### <a name="security-information-and-event-management-siem-software-for-microsoft-365-logging"></a>Security Information and Event Management (SIEM)-Software für Microsoft 365-Protokollierung
 
 Siem-Software, die auf einem Server ausgeführt wird, führt Echtzeitanalysen von Sicherheitswarnungen und Ereignissen durch, die von Anwendungen und Netzwerkhardware erstellt wurden. Damit Ihr Siem-Server Microsoft 365-Sicherheitswarnungen und-Ereignisse in seine Analyse-und Berichtsfunktionen einbeziehen kann, integrieren Sie Azure AD in Sie Seim. Weitere Informationen finden Sie unter [Introduction to Azure Log Integration](https://docs.microsoft.com/azure/security/security-azure-log-integration-overview).
@@ -165,6 +178,6 @@ Informationen zum Einrichten der Identität für Ihr Microsoft 365-Abonnement fi
 - [Vorbereiten der Verzeichnissynchronisierung](prepare-for-directory-synchronization.md) bei Verwendung der Hybrid Identität
 
   
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Mehr dazu
 
-[Microsoft 365-Sicherheits Wegweiser](https://docs.microsoft.com/office365/securitycompliance/security-roadmap).
+[Microsoft 365-Sicherheits Wegweiser](https://docs.microsoft.com/office365/securitycompliance/security-roadmap)

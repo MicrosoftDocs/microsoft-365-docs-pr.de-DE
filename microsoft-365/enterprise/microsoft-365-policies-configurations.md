@@ -6,7 +6,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-ms.date: 09/14/2020
+ms.date: 09/29/2020
 f1.keywords:
 - NOCSH
 ms.reviewer: martincoetzer
@@ -17,22 +17,22 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: cef17142d90a15f10e82fd51c4c22202bf7ecf00
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: b6e961dc8e7de6bfaf16508fa6c70f8a90fa4080
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131578"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327438"
 ---
 # <a name="identity-and-device-access-configurations"></a>Konfigurationen für den Identitäts- und Gerätezugriff
 
 Der moderne Sicherheitsumfang Ihrer Organisation reicht nun über das Netzwerk hinaus und umfasst Benutzer, die von einem beliebigen Standort mit einer Vielzahl von Geräten auf Cloud-basierte apps zugreifen. Ihre Sicherheitsinfrastruktur muss ermitteln, ob eine bestimmte Zugriffsanforderung erteilt werden soll und unter welchen Bedingungen. 
 
-Diese Bestimmung sollte auf dem Benutzerkonto der Anmeldung, dem verwendeten Gerät, der APP, die der Benutzer für den Zugriff verwendet, dem Standort, von dem die Zugriffsanforderung erfolgt, und einer Bewertung des Risikos der Anforderung basieren. Diese Funktion stellt sicher, dass nur genehmigte Benutzer und Geräte auf Ihre kritischen Ressourcen zugreifen können.
+Diese Bestimmung sollte auf dem Benutzerkonto der Anmeldung, dem verwendeten Gerät, der APP, die der Benutzer für den Zugriff verwendet, dem Standort, von dem die Zugriffsanforderung erfolgt, und einer Bewertung des Risikos der Anforderung basieren. Diese Funktion trägt dazu bei, sicherzustellen, dass nur autorisierte Benutzer und Geräte auf Ihre kritischen Ressourcen zugreifen können.
 
 In dieser Artikelreihe werden eine Reihe von erforderlichen Konfigurationen für den Identitäts-und Geräte Zugriff sowie eine Reihe von bedingten Zugriffen auf Azure Active Directory (Azure AD), Microsoft InTune und andere Richtlinien zum Sichern des Zugriffs auf Microsoft 365 für Enterprise-Cloud-apps und-Dienste, andere Saas-Dienste und lokale Anwendungen beschrieben, die mit Azure AD-Anwendungs Proxy veröffentlicht werden.
 
-Einstellungen und Richtlinien für den Identitäts-und Geräte Zugriff werden auf drei Ebenen empfohlen: Basisschutz, vertraulicher Schutz und Schutz für Umgebungen mit stark regulierten oder klassifizierten Daten. Diese Ebenen und die entsprechenden Konfigurationen bieten konsistente Schutzebenen für Ihre Daten, Identitäten und Geräte.
+Einstellungen und Richtlinien für den Identitäts-und Geräte Zugriff werden auf drei Ebenen empfohlen: Basisschutz, vertraulicher Schutz und Schutz für Umgebungen mit stark regulierten oder klassifizierten Daten. Diese Ebenen und die entsprechenden Konfigurationen bieten einheitliche Schutzniveaus für Ihre Daten, Identitäten und Geräte.
 
 Diese Funktionen und ihre Empfehlungen:
 
@@ -115,7 +115,7 @@ Azure Ad bietet eine umfassende Sammlung von Funktionen zur Identitätsverwaltun
 | [Geräteregistrierung](/azure/active-directory/devices/overview) | Sie registrieren ein Gerät in Azure AD, um eine Identität für das Gerät zu erstellen. Diese Identität wird verwendet, um das Gerät zu authentifizieren, wenn ein Benutzer sich anmeldet und Richtlinien für bedingten Zugriff anwendet, die Domänenbeitritt oder kompatible PCs erfordern. Für diesen Leitfaden verwenden wir die Geräteregistrierung, um Domänenbeitritt von Windows-Computern automatisch zu registrieren. Die Geräteregistrierung ist eine Voraussetzung für die Verwaltung von Geräten mit InTune. | Microsoft 365 E3 oder E5 |
 | [Azure AD Identity Protection](/azure/active-directory/identity-protection/overview) | Ermöglicht Ihnen das Erkennen potenzieller Sicherheitsanfälligkeiten, die sich auf die Identitäten Ihrer Organisation auswirken, und die Konfiguration der automatischen Behebungs Richtlinie auf niedrigem, mittlerem und hohem Anmelde-und Benutzer Risiko. Dieser Leitfaden basiert auf dieser Risikobewertung, um Richtlinien für bedingten Zugriff für mehrstufige Authentifizierung anzuwenden. Dieser Leitfaden enthält auch eine Richtlinie für den bedingten Zugriff, bei der Benutzer Ihr Kennwort ändern müssen, wenn für Ihr Kontoaktivitäten mit hohem Risiko erkannt werden. | Microsoft 365 E5, Microsoft 365 E3 mit dem Identity & Threat Protection-Add-on, EMS E5 oder Azure Premium P2-Lizenzen |
 | [Zurücksetzen von Kennwörtern durch den Benutzer (Self-Service Password Reset, SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks) | Ermöglichen Sie Ihren Benutzern, ihre Kennwörter sicher und ohne Helpdesk-Eingriff zurückzusetzen, indem Sie die Überprüfung von mehreren Authentifizierungsmethoden bereitstellen, die der Administrator steuern kann. | Microsoft 365 E3 oder E5 |
-| [Azure AD Kennwortschutz](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) | Erkennen und blockieren Sie bekannte schwache Kennwörter und deren Varianten sowie zusätzliche schwache Ausdrücke, die für Ihre Organisation spezifisch sind. Standardmäßige globale gesperrte Kenn Wortlisten werden automatisch auf alle Benutzer in einem Azure AD Mandanten angewendet. Sie können zusätzliche Einträge in einer benutzerdefinierten Liste gesperrter Kennwörter definieren. Wenn Benutzer ihre Kennwörter ändern oder zurücksetzen, werden diese gesperrten Kenn Wortlisten überprüft, um die Verwendung sicherer Kennwörter zu erzwingen. |  Microsoft 365 E3 oder E5 |
+| [Azure AD Kennwortschutz](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) | Erkennen und blockieren Sie bekannte schwache Kennwörter und deren Varianten sowie zusätzliche schwache Ausdrücke, die für Ihre Organisation spezifisch sind. Listen standardmäßig global gesperrter Kennwörter werden automatisch auf alle Benutzer in einem Azure AD-Mandanten angewendet. Sie können zusätzliche Einträge in einer benutzerdefinierten Liste gesperrter Kennwörter angeben. Wenn Benutzer ihre Kennwörter ändern oder zurücksetzen, werden diese Listen gesperrter Kennwörter überprüft, um die Verwendung von sicheren Kennwörtern zu erzwingen. |  Microsoft 365 E3 oder E5 |
 ||||
 
 ![Komponenten des Identitäts-und Gerätezugriffs.](../media/microsoft-365-policies-configurations/identity-device-access-components.png)
@@ -130,7 +130,7 @@ Azure Ad bietet eine umfassende Sammlung von Funktionen zur Identitätsverwaltun
 
 In diesem Leitfaden erfahren Sie, wie Sie empfohlene Richtlinien erstellen, um die Verwendung genehmigter apps zu erzwingen und zu ermitteln, wie diese apps mit ihren Geschäftsdaten verwendet werden können.
 
-### <a name="microsoft-365"></a>Microsoft 365
+### <a name="microsoft-365"></a>Microsoft 365
 
 Dieser Leitfaden zeigt Ihnen, wie Sie eine Reihe von Richtlinien implementieren, um den Zugriff auf Microsoft 365-Cloud-Dienste zu schützen, einschließlich Microsoft Teams, Exchange Online, SharePoint Online und OneDrive für Unternehmen. Zusätzlich zur Implementierung dieser Richtlinien sollten Sie auch den Schutzgrad für Ihren Mandanten mit diesen Ressourcen erhöhen:
 
@@ -162,6 +162,25 @@ In der folgenden Tabelle sind unsere Empfehlungen für die Verwendung dieser Fun
 Die obige Tabelle zeigt den Trend vieler Organisationen zur Unterstützung einer Kombination aus unternehmenseigenen Geräten sowie persönlichen oder BYODs, um die mobile Produktivität für die gesamte Belegschaft zu ermöglichen. Mit InTune-App-Schutzrichtlinien wird sichergestellt, dass e-Mails vor exfiltrating aus dem Outlook-Mobile App und anderen Office-Mobile Apps geschützt werden, sowohl auf organisationseigenen Geräten als auch auf BYODs.  
 
 Es wird empfohlen, dass unternehmenseigene Geräte von InTune oder von der Domäne verbunden verwaltet werden, um zusätzliche Schutzmaßnahmen und Steuerelemente anzuwenden. Je nach Daten Empfindlichkeit kann Ihre Organisation festlegen, dass BYODs für bestimmte Benutzer Populationen oder bestimmte apps nicht zulässig ist.
+
+## <a name="deployment-and-your-apps"></a>Bereitstellung und ihre apps
+
+Vor dem Konfigurieren und Rollout der Konfiguration für den Identitäts-und Geräte Zugriff für Ihre Azure AD integrierten Apps müssen Sie Folgendes tun: 
+
+- Entscheiden Sie, welche apps in Ihrer Organisation verwendet werden sollen, die Sie schützen möchten. 
+- Analysieren Sie diese Liste von apps, um die Gruppen von Richtlinien zu ermitteln, die angemessene Schutzstufen bieten. 
+
+  Sie sollten keine separaten Sätze von Richtlinien für jede APP erstellen, da deren Verwaltung umständlich werden kann. Microsoft empfiehlt, dass Sie Ihre apps gruppieren, die dieselben Schutzanforderungen für dieselben Benutzer aufweisen. 
+
+  Sie können beispielsweise eine Reihe von Richtlinien haben, die alle Microsoft 365-Apps für alle Benutzer zum grundlegenden Schutz und einen zweiten Richtliniensatz für alle vertraulichen Apps enthalten, beispielsweise die von Mitarbeitern oder Finanzabteilungen verwendeten, und diese auf diese Gruppen anwenden. 
+
+Nachdem Sie die Richtlinien für die apps bestimmt haben, die Sie sichern möchten, führen Sie die Richtlinien für die Benutzer inkrementell aus, um Probleme auf dem Weg zu behandeln.  
+
+Konfigurieren Sie beispielsweise die Richtlinien, die für alle Microsoft 365-Apps verwendet werden sollen, nur Exchange Online mit den zusätzlichen Änderungen für Exchange. Rollen Sie diese Richtlinien für die Benutzer aus, und arbeiten Sie mit allen Problemen. Fügen Sie dann Teams mit den weiteren Änderungen hinzu, und Rollen Sie diese für Ihre Benutzer aus. Fügen Sie dann SharePoint mit seinen zusätzlichen Änderungen hinzu. Fügen Sie weiterhin die restlichen apps hinzu, bis Sie diese grundlegenden Richtlinien so konfigurieren können, dass Sie alle Microsoft 365-apps einschließen. 
+
+Ebenso können Sie für Ihre vertraulichen apps den Richtliniensatz erstellen und jeweils eine APP hinzufügen und alle Probleme durchlaufen, bis Sie alle in der Richtlinie für vertrauliche App-Richtliniensätze enthalten sind. 
+
+Microsoft empfiehlt, keine Richtliniensätze zu erstellen, die für alle apps gelten, da dies zu unbeabsichtigten Konfigurationen führen kann. Beispielsweisekönnten Richtlinien, die alle apps blockieren, Ihre Administratoren aus dem Azure-Portal sperren, und Ausschlüsse können nicht für wichtige Endpunkte wie Microsoft Graph konfiguriert werden. 
 
 ## <a name="steps-in-the-process-of-configuring-identity-and-device-access"></a>Schritte beim Konfigurieren des Identitäts-und Gerätezugriffs
 

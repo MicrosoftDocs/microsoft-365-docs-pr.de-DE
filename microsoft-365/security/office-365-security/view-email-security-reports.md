@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie e-Mail-Sicherheitsberichte für Ihre Organisation suchen und verwenden. E-Mail-Sicherheitsberichte sind im Security & Compliance Center verfügbar.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b26dd18754a96d1879a2f57ae9742ae1d1a36ce4
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 7e594f758e0fb08b0b8718248466ecbc46903b82
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295538"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327009"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Anzeigen von E-Mail-Sicherheitsberichten im Security & Compliance Center
 
@@ -61,7 +61,7 @@ Wenn Sie auf **Detailtabelle anzeigen**klicken, werden die folgenden Details ang
 
 - **Erstellungszeit**
 - **Benutzer-ID**
-- **Action**
+- **Aktion**
 
 Klicken Sie auf **Bericht anzeigen**, um zur Berichtsansicht zurückzukehren.
 
@@ -224,7 +224,7 @@ Wenn Sie in einer Berichtsansicht auf **Detailtabelle anzeigen** klicken, werden
 - **Absenderadresse**
 - **Empfängeradresse**
 - **Ereignistyp**
-- **Action**
+- **Aktion**
 - **Betreff**
 
 Wenn Sie in einer Detailtabelle auf **Filter** klicken, können Sie die Ergebnisse mit den folgenden Filtern ändern:
@@ -263,16 +263,16 @@ Wenn Sie auf **Detailtabelle anzeigen**klicken, werden die folgenden Details ang
 - **Gefälschter Absender**
 - **Echter Absender**
 - **Sender-IP**
-- **Action**
+- **Aktion**
 - **Nachrichtenanzahl**
 
 Klicken Sie auf **Bericht anzeigen**, um zur Berichtsansicht zurückzukehren.
 
 ## <a name="threat-protection-status-report"></a>Threat Protection-Statusbericht
 
-Der **Statusbericht zum Bedrohungsschutz** ist sowohl in EoP als auch in Office 365 ATP verfügbar; die Berichte enthalten jedoch unterschiedliche Daten. EoP-Kunden können beispielsweise Informationen über in e-Mails erkannte Schadsoftware anzeigen, aber keine Informationen zu [schädlichen Dateien, die in SharePoint Online, OneDrive oder Microsoft Teams erkannt](atp-for-spo-odb-and-teams.md)wurden.
+Der **Statusbericht zum Bedrohungsschutz** ist sowohl in EoP als auch in Office 365 ATP verfügbar; die Berichte enthalten jedoch unterschiedliche Daten. EoP-Kunden können beispielsweise Informationen über in e-Mails erkannte Schadsoftware anzeigen, aber keine Informationen zu [bösartigen Dateien, die von ATP für SharePoint, OneDrive oder Microsoft Teams erkannt](atp-for-spo-odb-and-teams.md)wurden.
 
-Der Bericht enthält die Anzahl von e-Mail-Nachrichten mit bösartigen Inhalten wie Dateien oder Websiteadressen (URLs), die durch das Anti-Malware-Modul, die [Zero-Hour Auto Purge (zap)](zero-hour-auto-purge.md)und ATP-Features wie [ATP-sichere Links](atp-safe-links.md), [ATP-sichere Anlagen](atp-safe-attachments.md)und [ATP-AntiPhishing](set-up-anti-phishing-policies.md)blockiert wurden. Sie können diese Informationen verwenden, um Trends zu identifizieren oder zu bestimmen, ob Organisationsrichtlinien angepasst werden müssen. Es ist wichtig zu verstehen, dass wenn eine Nachricht an fünf Empfänger gesendet wird, wir Sie als fünf verschiedene Nachrichten und nicht eine Nachricht zählen.
+Der Bericht enthält die Anzahl von e-Mail-Nachrichten mit bösartigen Inhalten wie Dateien oder Websiteadressen (URLs), die von der Antischadsoftware-Engine, der [automatischen Säuberungs-Funktion (Zero-Hour)](zero-hour-auto-purge.md)und den ATP-Features wie [sichere Links](atp-safe-links.md), [sichere Anlagen](atp-safe-attachments.md)und [ATP-Anti-Phishing](set-up-anti-phishing-policies.md)blockiert wurden. Sie können diese Informationen verwenden, um Trends zu identifizieren oder zu bestimmen, ob Organisationsrichtlinien angepasst werden müssen. Es ist wichtig zu verstehen, dass wenn eine Nachricht an fünf Empfänger gesendet wird, wir Sie als fünf verschiedene Nachrichten und nicht eine Nachricht zählen.
 
 Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center](https://protection.office.com), wechseln Sie **Reports** zum \> **Dashboard** Berichte, und wählen Sie **Threat Protection Status**aus. Wenn Sie direkt zum Bericht wechseln möchten, öffnen Sie eine der folgenden URLs:
 
@@ -366,7 +366,7 @@ Wenn Sie auf **Filter**klicken, können Sie den Bericht mit den folgenden Filter
 - **Start Datum** und **Enddatum**
 - **Erkennung**
 - **Geschützt von**: **ATP** oder **EoP**
-- **Tag**: Filtern nach Tag, um Benutzer oder Gruppen zurückzugeben, für die ein bestimmtes Tag angewendet wurde. Weitere Informationen zu Benutzer Tags finden Sie unter [User Tags](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide).
+- **Tag**: Filtern nach Tag, um Benutzer oder Gruppen zurückzugeben, für die ein bestimmtes Tag angewendet wurde. Weitere Informationen zu Benutzer Tags finden Sie unter [User Tags](user-tags.md).
 - **Domäne**
 
 > [!NOTE]
@@ -406,7 +406,7 @@ Wenn Sie auf **Filter**klicken, können Sie den Bericht mit den folgenden Filter
 - **Start Datum** und **Enddatum**
 - **Erkennung**
 - **Geschützt durch** (nur Office 365 ATP): **ATP** oder **EoP**
-- **Tag**: Filtern nach Tag, um Benutzer oder Gruppen zurückzugeben, für die ein bestimmtes Tag angewendet wurde. Weitere Informationen zu Benutzer Tags finden Sie unter [User Tags](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide).
+- **Tag**: Filtern nach Tag, um Benutzer oder Gruppen zurückzugeben, für die ein bestimmtes Tag angewendet wurde. Weitere Informationen zu Benutzer Tags finden Sie unter [User Tags](user-tags.md).
 - **Domäne**
 - **Empfänger** (Beachten Sie, dass diese filterbare Eigenschaft nur in der Detailtabellen Ansicht verfügbar ist)
 

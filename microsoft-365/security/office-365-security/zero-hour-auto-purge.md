@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich darüber informieren, wie die automatische Bereinigung durch Null Stunden rückwirkend zugestellte Nachrichten in einem Exchange Online Postfach in den Junk-e-Mail-Ordner oder in die Quarantäne verschieben kann, die rückwirkend als Spam oder Phishing eingestuft wurden.
-ms.openlocfilehash: 66df614700dc5f9b9938200d384cc293a51e2f3c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 31e546ddf6e93ed0a265aef3737182cf30ae5a95
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202639"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327975"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Automatische Bereinigung ohne Stunden in Exchange Online
 
@@ -83,7 +83,7 @@ Weitere Informationen zum Konfigurieren von Spamfilter Urteilen finden Sie unter
 
 ### <a name="zap-considerations-for-office-365-advanced-threat-protection-office-365-atp"></a>Zap-Überlegungen für Office 365 Advanced Threat Protection (Office 365 ATP)
 
-Zap unter Quarantäne keine Nachrichten, die sich im Prozess der Überprüfung der [dynamischen Zustellung](dynamic-delivery-and-previewing.md) befinden, oder bei denen die Malware Filterung die Anlage bereits durch die **Malware Warnung #b0 ** Datei ersetzt hat. Wenn ein Phishing-oder Spam Signal für diese Arten von Nachrichten empfangen wird und das Filter Urteil in der Antispampolitik so eingestellt ist, dass eine Aktion in der Nachricht ausgeführt wird (in Junk-e-Mails verschieben, umleiten, löschen, isolieren), wird zap standardmäßig auf die Aktion "in Junk-e-Mail verschieben" angewendet.
+Zap unter Quarantäne keine Nachrichten, die sich im Prozess der [dynamischen Zustellung](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies) befinden, beim Scannen sicherer Anlagen, oder wenn die EoP-Malware Filterung die Anlage bereits durch die **Malware Warnung #b0 ** Datei ersetzt hat. Wenn ein Phishing-oder Spam Signal für diese Arten von Nachrichten empfangen wird und das Filter Urteil in der Antispampolitik so eingestellt ist, dass eine Aktion in der Nachricht ausgeführt wird (in Junk-e-Mails verschieben, umleiten, löschen oder isolieren), wird zap standardmäßig eine Aktion "in Junk-e-Mail verschieben" durchführen.
 
 ## <a name="how-to-see-if-zap-moved-your-message"></a>Wie Sie sehen, ob zap Ihre Nachricht verschoben hat
 

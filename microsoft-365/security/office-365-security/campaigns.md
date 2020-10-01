@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über die Kampagnenansichten in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 881dcde1157877eb015d9700bcbcd08fd3336192
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: df3b3c7a0e8d8f614e5f743b445af07916f1dfd5
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203479"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326591"
 ---
 # <a name="campaign-views-in-office-365-atp"></a>Kampagnenansichten in Office 365 ATP
 
@@ -87,7 +87,7 @@ Auf der Rest der Übersichtsseite werden auf der Registerkarte **Kampagne** die 
 
 - **Typ**: dieser Wert ist entweder **Phish** oder **Schadsoftware**.
 
-- **Untertyp**: dieser Wert enthält weitere Details zur Kampagne. Zum Beispiel:
+- **Untertyp**: dieser Wert enthält weitere Details zur Kampagne. Beispiel:
 
   - **Phishing**: sofern verfügbar, die Marke, die von dieser Kampagne als Phishing bezeichnet wird. Beispielsweise,,, `Microsoft` `365` `Unknown` , `Outlook` , oder `DocuSign` .
 
@@ -137,7 +137,7 @@ Die verfügbaren Kampagneneigenschaften werden in der folgenden Liste beschriebe
   - **Tags**
   - **System Überschreibungen**
 
-- Fortgeschritten
+- Erweitert
 
   - **Internet Nachrichten-ID**: verfügbar im Kopfzeilenfeld nach **richten-ID** im Nachrichtenkopf. Ein Beispielwert ist `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (Beachten Sie die spitzen Klammern).
   
@@ -264,9 +264,9 @@ Wenn ein Benutzer in der Phishing-Nachricht auf die Nutzlast-URL geklickt hat, w
 
 - **Zulässig**
 
-- **BlockPage**: der Empfänger hat auf die Nutzlast-URL geklickt, aber der Zugriff auf die bösartige Website wurde durch die Richtlinien für [ATP-sichere Links](atp-safe-links.md) in Ihrer Organisation blockiert.
+- **BlockPage**: der Empfänger hat auf die Nutzlast-URL geklickt, aber der Zugriff auf die bösartige Website wurde durch eine Richtlinie zu [sicheren Links](atp-safe-links.md) in Ihrer Organisation blockiert.
 
-- **BlockPageOverride**: der Empfänger hat auf die Nutzlast-URL in der Nachricht geklickt, die ATP-Sicherheits Links haben versucht, diese zu beenden, aber Sie durften den Block außer Kraft setzen. Überprüfen Sie Ihre [Richtlinien für sichere Links](set-up-atp-safe-links-policies.md) , um zu erfahren, warum Benutzer das Urteil "sichere Links" außer Kraft setzen und mit der bösartigen Website fortfahren können.
+- **BlockPageOverride**: der Empfänger hat auf die Nutzlast-URL in der Nachricht geklickt, sichere Links haben versucht, diese zu beenden, aber Sie durften den Block außer Kraft setzen. Überprüfen Sie Ihre [Richtlinien für sichere Links](set-up-atp-safe-links-policies.md) , um zu erfahren, warum Benutzer das Urteil "sichere Links" außer Kraft setzen und mit der bösartigen Website fortfahren können.
 
 - **PendingDetonationPage**: sichere Anlagen in Office 365 ATP wird gerade dabei sein, die Nutzlast-URL in einer virtuellen Computerumgebung zu öffnen und zu untersuchen.
 

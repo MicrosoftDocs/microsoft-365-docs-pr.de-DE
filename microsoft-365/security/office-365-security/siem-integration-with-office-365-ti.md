@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Integrieren Sie den Siem-Server Ihrer Organisation mit Office 365 Advanced Threat Protection und den zugehörigen Threat-Ereignissen in die API für die Office 365-Aktivitätsverwaltung.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cfb76485fec8eca2f2b62da59fa2d18a56177bba
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 544093960570fe0e68ac47dc7bf9965fba2d30a1
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203651"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327165"
 ---
 # <a name="siem-integration-with-advanced-threat-protection"></a>Siem-Integration mit erweitertem Bedrohungsschutz
 
@@ -46,7 +46,6 @@ Kürzlich wurden Ereignisse aus automatisierten Ermittlungs-und Antwortfunktione
 
 Der Siem-Server oder ein ähnliches System fragt die **Audit. allgemeine** Arbeitsauslastung für den Zugriff auf Erkennungsereignisse ab. Weitere Informationen finden Sie unter [Erste Schritte mit Office 365-Verwaltungs-APIs](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis). 
 
-
 ## <a name="enum-auditlogrecordtype---type-edmint32"></a>Enum: AuditLogRecordType - Typ: Edm.Int32
 
 ### <a name="auditlogrecordtype"></a>AuditLogRecordType
@@ -56,7 +55,7 @@ In der folgenden Tabelle sind die Werte von **AuditLogRecordType** zusammengefas
 |Wert|Elementname|Beschreibung|
 |---|---|---|
 |28|ThreatIntelligence|Phishing-und Schadsoftware-Ereignisse aus Exchange Online Schutz und Office 365 ATP.|
-|41|ThreatIntelligenceUrl|ATP-sichere Links Time-of-Block-und Block Außerkraftsetzungs Ereignisse aus Office 365 ATP.|
+|41|ThreatIntelligenceUrl|Sichere Links Time-of-Block-und Block Außerkraftsetzungs Ereignisse aus Office 365 ATP.|
 |47|ThreatIntelligenceAtpContent|Phishing-und Schadsoftware-Ereignisse für Dateien in SharePoint Online, OneDrive für Unternehmen und Microsoft Teams aus Office 365 ATP.|
 |64|AirInvestigation|Automatisierte Ermittlungs-und Antwortereignisse wie Ermittlungs Details und relevante Artefakte aus Office 365 ATP-Plan 2.|
 |
@@ -64,7 +63,7 @@ In der folgenden Tabelle sind die Werte von **AuditLogRecordType** zusammengefas
 > [!IMPORTANT]
 > Sie müssen ein globaler Administrator sein oder der Sicherheitsadministrator Rolle für das Security & Compliance Center zugewiesen sein, um Siem-Integration mit Office 365 Advanced Threat Protection einzurichten.<br/>Die Überwachungsprotokollierung muss für Ihre Microsoft 365-Umgebung aktiviert sein. Informationen dazu finden Sie unter [Aktivieren oder Deaktivieren der Überwachungsprotokoll Suche](../../compliance/turn-audit-log-search-on-or-off.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Mehr dazu
 
 [Untersuchung von und Antwort auf Bedrohungen in Office 365](office-365-ti.md)
 

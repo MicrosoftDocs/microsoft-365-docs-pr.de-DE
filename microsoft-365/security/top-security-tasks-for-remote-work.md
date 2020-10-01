@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: Schützen Sie Ihre geschäftlichen e-Mails und Daten vor Cyber-Bedrohungen, einschließlich Ransomware, Phishing und böswilligen Anlagen.
-ms.openlocfilehash: 6643228a3f71ba3c0c993577ba60b8e365b3d3df
-ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
+ms.openlocfilehash: 754f3eac884128e0707a02c15d4d3766f5fa4ca5
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48318228"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327795"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>Die 12 wichtigsten Aufgaben für Sicherheitsteams zur Unterstützung der Arbeit von zu Hause aus
 
@@ -100,14 +100,13 @@ Eine Übersicht, einschließlich einer Zusammenfassung der Pläne, finden Sie un
 
 Ihr globaler Administrator kann diese Schutzmaßnahmen konfigurieren:
 
-- [Einrichten von ATP-Safe-Links](office-365-security/set-up-atp-safe-links-policies.md)
-- [Einrichten von Richtlinien zu sicheren Anlagen in ATP](office-365-security/set-up-atp-safe-attachments-policies.md)
-- [Einrichten einer benutzerdefinierten Liste für URLs, die nicht neu geschrieben werden sollen](office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
-- [Einrichten einer benutzerdefinierten Liste für blockierte URLs](office-365-security/set-up-a-custom-blocked-urls-list-atp.md)
+- [Einrichten von Richtlinien für sichere Links](office-365-security/set-up-atp-safe-links-policies.md)
+- [Konfigurieren globaler Einstellungen für sichere Links](office-365-security/configure-global-settings-for-safe-links.md)
+- [Einrichten von Richtlinien für sichere Anlagen](office-365-security/set-up-atp-safe-attachments-policies.md)
 
 Sie müssen mit Ihrem Exchange Online Administrator und SharePoint Online Administrator zusammenarbeiten, um ATP für diese Arbeitslasten zu konfigurieren:
 
-- [Aktivieren von ATP für SharePoint, OneDrive und Microsoft Teams](office-365-security/turn-on-atp-for-spo-odb-and-teams.md)
+- [ATP für SharePoint, OneDrive und Microsoft Teams](office-365-security/atp-for-spo-odb-and-teams.md)
 
 ## <a name="4-configure-azure-advanced-threat-protection"></a>4: Konfigurieren von Azure Advanced Threat Protection
 
@@ -210,7 +209,7 @@ Microsoft 365 stellt die folgenden Ressourcen zur Verfügung, um Benutzer in Ihr
 |Konzept|Ressourcen|
 |---|---|
 |Microsoft 365|[Anpassbare Lern Pfade](https://docs.microsoft.com/office365/customlearning/) <p>Diese Ressourcen können Ihnen helfen, Schulungen für Endbenutzer in Ihrer Organisation zusammenzustellen.|
-|Sicherheit in Microsoft 365|[Lern Modul: Sichern Ihrer Organisation mit integrierter intelligenter Sicherheit von Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>In diesem Modul können Sie beschreiben, wie Microsoft 365-Sicherheitsfeatures zusammenarbeiten und die Vorteile dieser Sicherheitsfeatures artikulieren.|
+|Microsoft 365 Security Center|[Lern Modul: Sichern Ihrer Organisation mit integrierter intelligenter Sicherheit von Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>In diesem Modul können Sie beschreiben, wie Microsoft 365-Sicherheitsfeatures zusammenarbeiten und die Vorteile dieser Sicherheitsfeatures artikulieren.|
 |Mehrstufige Authentifizierung|[Überprüfung in zwei Schritten: Was ist die zusätzliche Überprüfungsseite?](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Dieser Artikel hilft Endbenutzern, die mehrstufige Authentifizierung zu verstehen, und warum Sie in Ihrer Organisation verwendet wird.|
 |
 

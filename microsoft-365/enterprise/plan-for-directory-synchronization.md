@@ -5,7 +5,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: conceptual
-ms.date: 06/09/2020
+ms.date: 09/30/2020
 ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Beschreibt die Verzeichnissynchronisierung mit Microsoft 365, Active Directory-Domänendienste Bereinigung und das Azure Active Directory Connect-Tool.
-ms.openlocfilehash: 2d3161fb835073a22743ea4f3b00ac508479f0f2
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 02b594f9db02df7e855a20dfc65b21ab2dbe91c0
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690537"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327379"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-microsoft-365"></a>Hybride Identitäts-und Verzeichnissynchronisierung für Microsoft 365
 
@@ -143,9 +143,5 @@ Die Verzeichnissynchronisierung ist für die folgenden Features und Funktionen e
 
 ## <a name="next-step"></a>Nächster Schritt
 
-Wenn Sie bereit sind, die Hybrid Identität bereitzustellen, lesen Sie [Vorbereiten der Bereitstellung von Benutzern](prepare-for-directory-synchronization.md).
+Wenn Sie bereit sind, die Hybrid Identität bereitzustellen, lesen Sie [Vorbereiten der Verzeichnissynchronisierung](prepare-for-directory-synchronization.md).
   
-## <a name="see-also"></a>Siehe auch
-
-[Übersicht zu Microsoft 365 Enterprise](microsoft-365-overview.md)
-

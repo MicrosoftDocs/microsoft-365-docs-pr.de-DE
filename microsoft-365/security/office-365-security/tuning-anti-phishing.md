@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Administratoren können lernen, die Gründe zu identifizieren, warum und wie eine Phishing-Nachricht in Microsoft 365 durchgekommen ist, und was Sie tun müssen, um weitere Phishing-Nachrichten zukünftig zu verhindern.
-ms.openlocfilehash: c62d09a1cf8b586b5c1d4393d7316d6d6d0cc96d
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 813a9c263d9cc620606c7a5e272e47bdaf1ff7a7
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201675"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328059"
 ---
 # <a name="tune-anti-phishing-protection"></a>Optimieren des Schutzes gegen Phishing
 
@@ -32,11 +32,11 @@ Wenn das Konto eines Empfängers aufgrund der Phishing-Nachricht kompromittiert 
 
 Wenn Ihr Abonnement Advanced Threat Protection (ATP) enthält, können Sie [Office 365 Threat Intelligence](office-365-ti.md) verwenden, um andere Benutzer zu identifizieren, die auch die Phishing-Nachricht erhalten haben. Sie haben zusätzliche Optionen zum Blockieren von Phishing-Nachrichten:
 
-- [ATP-sichere Links](set-up-atp-safe-links-policies.md)
+- [Sichere Links in Office 365 ATP](set-up-atp-safe-links-policies.md)
 
-- [Sichere Anlagen in ATP](set-up-atp-safe-attachments-policies.md)
+- [Sichere Anlagen in Office 365 ATP](set-up-atp-safe-attachments-policies.md)
 
-- [Richtlinien für ATP-Anti-Phishing in Microsoft 365](configure-atp-anti-phishing-policies.md). Beachten Sie, dass Sie die **erweiterten Phishing-Schwellenwerte** in der Richtlinie vorübergehend **von Standard** zu aggressiv **,** aggressiver oder **Most aggressive**aggressiver vergrössern können. **Aggressive**
+- [Anti-Phishing-Richtlinien in Office 365 ATP](configure-atp-anti-phishing-policies.md). Beachten Sie, dass Sie die **erweiterten Phishing-Schwellenwerte** in der Richtlinie vorübergehend **von Standard** zu aggressiv **,** aggressiver oder **Most aggressive**aggressiver vergrössern können. **Aggressive**
 
 Stellen Sie sicher, dass diese ATP-Funktionen aktiviert sind.
 

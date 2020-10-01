@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie mehr über die Verwendung von Explorer und Echt Zeit Erkennungen im Security &amp; Compliance Center, um Bedrohungen effektiv und effizient zu untersuchen und auf diese zu reagieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f6df9ce21f29cdeaf4943ba930668420a24344ca
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 32ff9f2c8d009b4c9b05c12ba4e785e59cb182e7
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201865"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328083"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer und Echtzeiterkennung
 
@@ -86,18 +86,18 @@ Außerdem sollten weitere Details im Produkt angezeigt werden. Beispielsweise di
 ### <a name="top-targeted-users"></a>Am häufigsten verwendete Benutzer
 
 Heute stellen wir die Liste der Top-Zielbenutzer in der Malware-Ansicht für e-Mails (im Abschnitt "Top-Malware Familien") bereit. Wir werden diese Ansicht auch in Phishing und alle e-Mail-Ansichten erweitern, wo Sie die ersten fünf Zielbenutzer zusammen mit der Anzahl der Versuche für jeden Benutzer für die entsprechende Ansicht anzeigen können (beispielsweise für die Phishing-Ansicht können Sie die Anzahl der Phishing-Versuche sehen).
-Außerdem können Sie die Liste der Zielbenutzer bis zu einem Grenzwert von 3000 zusammen mit der Anzahl der Versuche für die Offlineanalyse für jede e-Mail-Ansicht exportieren. Darüber hinaus wählen Sie Nein aus. von versuchen (beispielsweise 13 Versuche unten) würde eine gefilterte Ansicht in Threat Explorer öffnen, sodass Sie weitere Details in e-Mails und Bedrohungen für diesen Benutzer anzeigen können. 
+Außerdem können Sie die Liste der Zielbenutzer bis zu einem Grenzwert von 3000 zusammen mit der Anzahl der Versuche für die Offlineanalyse für jede e-Mail-Ansicht exportieren. Darüber hinaus wählen Sie Nein aus. von versuchen (beispielsweise 13 Versuche unten) würde eine gefilterte Ansicht in Threat Explorer öffnen, sodass Sie weitere Details in e-Mails und Bedrohungen für diesen Benutzer anzeigen können.
 
 ![Am häufigsten verwendete Benutzer](../../media/Top_Targeted_Users.png)
 
 
 ### <a name="exchange-transport-rules"></a>Exchange-Transportregeln
 Im Rahmen der Datenanreicherung sollten Sie auch alle unterschiedlichen Transportregeln anzeigen können, die auf eine Nachricht angewendet wurden. Diese Informationen werden in der e-Mail-Rasteransicht angezeigt (um dies anzuzeigen, wählen Sie Spaltenoptionen im Raster aus und fügen die Exchange-Transport Regel aus den Spaltenoptionen im Raster hinzu) sowie Details Flyout in der e-Mail.
-Sie können sowohl die GUID als auch den Namen der Transportregeln sehen, die auf die Nachricht angewendet wurden. Darüber hinaus können Sie Nachrichten mit dem Namen der Transportregel suchen. Dies wäre eine "Contains"-Suche, was bedeutet, dass Sie auch mithilfe von partiellen Suchvorgängen suchen können. 
+Sie können sowohl die GUID als auch den Namen der Transportregeln sehen, die auf die Nachricht angewendet wurden. Darüber hinaus können Sie Nachrichten mit dem Namen der Transportregel suchen. Dies wäre eine "Contains"-Suche, was bedeutet, dass Sie auch mithilfe von partiellen Suchvorgängen suchen können.
 
-#### <a name="important-note"></a>Wichtiger Hinweis: 
-Die Verfügbarkeit von ETR-Suche und-Namen hängt von der jeweiligen Rolle ab, die Ihnen zugewiesen wurde. Sie müssen über eine der folgenden Rollen/Berechtigungen verfügen, um die ETR-Namen und-Suche anzeigen zu können.  Wenn Ihnen keine der folgenden Rollen zugewiesen ist, können Sie die Namen der Transportregeln nicht anzeigen und Nachrichten mithilfe der ETR-Namen suchen. Sie können jedoch die ETR-Label-und GUID-Informationen in den e-Mail-Details anzeigen. Ihre anderen Erfahrungen rund um das Anzeigen von Datensätzen in e-Mail-Rastern, e-Mail-Flyouts, Filtern und Export werden nicht beeinträchtigt. 
- 
+#### <a name="important-note"></a>Wichtiger Hinweis:
+Die Verfügbarkeit von ETR-Suche und-Namen hängt von der jeweiligen Rolle ab, die Ihnen zugewiesen wurde. Sie müssen über eine der folgenden Rollen/Berechtigungen verfügen, um die ETR-Namen und-Suche anzeigen zu können.  Wenn Ihnen keine der folgenden Rollen zugewiesen ist, können Sie die Namen der Transportregeln nicht anzeigen und Nachrichten mithilfe der ETR-Namen suchen. Sie können jedoch die ETR-Label-und GUID-Informationen in den e-Mail-Details anzeigen. Ihre anderen Erfahrungen rund um das Anzeigen von Datensätzen in e-Mail-Rastern, e-Mail-Flyouts, Filtern und Export werden nicht beeinträchtigt.
+
 - Nur Exo – Verhinderung von Datenverlust: all
 - Nur Exo-O365SupportViewConfig: all
 - Aad oder Exo-Security Admin: all
@@ -105,13 +105,15 @@ Die Verfügbarkeit von ETR-Suche und-Namen hängt von der jeweiligen Rolle ab, d
 - Nur Exo-Transport Regeln: all
 - Nur Exo-Ansicht-Konfiguration: alle
 
-Im e-Mail-Raster, im Detail-Flyout und in der exportierten CSV-Datei werden die ETRs mit einem Namen/einer GUID angezeigt, wie unten dargestellt. 
+Im e-Mail-Raster, im Detail-Flyout und in der exportierten CSV-Datei werden die ETRs mit einem Namen/einer GUID angezeigt, wie unten dargestellt.
 
 ![Exchange-Transport Regeln](../../media/ETR_Details.png)
 
-### <a name="inbound-connectors"></a>Eingehende Connectors 
+### <a name="inbound-connectors"></a>Eingehende Connectors
 
-Connectors sind eine Sammlung von Anweisungen, mit denen die Art und Weise angepasst werden, in der Ihre e-Mail-nach Richt-oder Office 365 Organisation mit der Möglichkeit zum Anwenden von Sicherheitseinschränkungen oder-Steuerelementen in und aus Ihrer Microsoft 365-oder Im Threat Explorer haben Sie nun die Möglichkeit, die Connectors anzuzeigen, die sich auf eine e-Mail beziehen, sowie die Suche nach e-Mails unter Verwendung der Konnektornamen. Die Suche nach Konnektoren ist in der Natur "Contains", was bedeutet, dass partielle Stichwortsuche auch funktionieren sollte. In der Hauptraster Ansicht, im Detail Flyout und in der exportierten CSV werden die Konnektoren im Format Name/GUID wie unten gezeigt angezeigt: 
+Connectors sind eine Sammlung von Anweisungen, mit denen die Art und Weise angepasst werden, in der Ihre e-Mail-nach Richt-oder Office 365 Organisation mit der Möglichkeit zum Anwenden von Sicherheitseinschränkungen oder-Steuerelementen in und aus Ihrer Microsoft 365-oder Im Threat Explorer haben Sie nun die Möglichkeit, die Connectors anzuzeigen, die sich auf eine e-Mail beziehen, sowie die Suche nach e-Mails unter Verwendung der Konnektornamen.
+Die Suche nach Konnektoren ist in der Natur "Contains", was bedeutet, dass partielle Stichwortsuche auch funktionieren sollte.
+In der Hauptraster Ansicht, im Detail Flyout und in der exportierten CSV werden die Konnektoren im Format Name/GUID wie unten gezeigt angezeigt:
 
 ![Details zu Connectors](../../media/Connector_Details.png)
 
@@ -185,7 +187,7 @@ Sie können den gleichen Speicherort im Bericht über Echt Zeit Erkennungen wie 
 > [!TIP]
 > Network Message ID ordnet den Klick zurück zu bestimmten Mails zu, wenn Sie über den Explorer oder zugeordnete Tools von Drittanbietern über die Netzwerknachrichten-ID suchen. Durch die Suche über die Netzwerknachrichten-ID erhalten Administratoren die spezifische e-Mail-Adresse, die mit einem Klick Ergebnis verknüpft ist. Für eine schnellere und leistungsstärkere Analyse durch den Export mit wird die korrelierte Identifikation der Netzwerknachrichten-ID ermöglicht.
 
-![tp_ExportClickResultAndNetworkID.png](../../media/tp_ExportClickResultAndNetworkID.png)
+![Registerkarte "Klicks" im Explorer](../../media/tp_ExportClickResultAndNetworkID.png)
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Siehe in e-Mail erkannte Malware nach Technologie
 
@@ -211,7 +213,7 @@ Der Bericht wird aktualisiert, um die in e-Mail-Nachweise erkannten Ergebnisse m
 
 ## <a name="view-data-about-phishing-urls-and-click-verdict"></a>Anzeigen von Daten zu Phishing-URLs und klicken auf Urteil
 
-Angenommen, Sie möchten Phishing-Versuche über URLs in e-Mails sehen, einschließlich einer Liste von URLs, die zugelassen, blockiert und außer Kraft gesetzt wurden. Zum Identifizieren von URLs, auf die geklickt wurde, müssen [ATP-sichere Links](atp-safe-links.md) konfiguriert werden. Stellen Sie sicher, dass Sie [Richtlinien für ATP-sichere Links](set-up-atp-safe-links-policies.md) zum Zeitpunkt des Klick Schutzes und zur Protokollierung von Klick urteilen durch ATP-sichere Links eingerichtet haben.
+Angenommen, Sie möchten Phishing-Versuche über URLs in e-Mails sehen, einschließlich einer Liste von URLs, die zugelassen, blockiert und außer Kraft gesetzt wurden. Zum Identifizieren von URLs, auf die geklickt wurde, müssen [sichere Links](atp-safe-links.md) konfiguriert werden. Stellen Sie sicher, dass Sie [Richtlinien für sichere Links](set-up-atp-safe-links-policies.md) zum Zeitpunkt des Klick Schutzes und zur Protokollierung von Klick Urteilen über sichere Links eingerichtet haben.
 
 Um Phishing-URLs in Nachrichten und Klicks auf URLs in Phishing-Nachrichten zu überprüfen, verwenden Sie die [e-Mail-> Phishing-](threat-explorer-views.md#email--phish) Ansicht des Explorers (oder Echtzeiterkennung).
 
@@ -242,8 +244,7 @@ Um Phishing-URLs in Nachrichten und Klicks auf URLs in Phishing-Nachrichten zu �
    > [!NOTE]
    > Im Dialogfeld URL-Flyout wird die Filterung für e-Mail-Nachrichten entfernt, um Ihnen die vollständige Ansicht der URL-Exposition in Ihrer Umgebung anzuzeigen. Auf diese Weise können Sie nach e-Mail-Nachrichten im Explorer nach bestimmten URLs suchen, die potenzielle Bedrohungen darstellen, und dann Ihr Verständnis der URL-Exposition in Ihrer Umgebung (über das Dialogfeld URL-Details) erweitern, ohne der Explorer-Ansicht selbst URL-Filter hinzufügen zu müssen.
 
-
-**Interpretation verschiedener Klick Urteile**
+### <a name="interpretation-of-different-click-verdicts"></a>Interpretation verschiedener Klick Urteile
 
 Innerhalb der e-Mail-oder URL-Flyouts, der wichtigsten Klicks sowie in unseren Filter-Erlebnissen werden Ihnen unterschiedliche Klick-Werte als Teil Ihres Jagd Erlebnisses angezeigt. Im folgenden sind die möglichen Werte von Klick Urteilen und deren Interpretation aufgeführt:
 
@@ -254,7 +255,7 @@ Innerhalb der e-Mail-oder URL-Flyouts, der wichtigsten Klicks sowie in unseren F
 - **Blockiert außer Kraft gesetzt**: der Benutzer wurde für die Navigation zur URL gesperrt. der Benutzer hat den Block jedoch übersteuert, um zur URL zu navigieren.
 - **Ausstehender Urteilsspruch umgangen**: der Benutzer wurde mit der detonations Seite angezeigt; der Benutzer hat die Seite jedoch übersteuert, um zur URL zu navigieren.
 - **Fehler**: der Benutzer wurde mit der Fehlerseite angezeigt. Dies kann auch bedeuten, dass beim Erfassen des Urteils ein Fehler aufgetreten ist.
-- **Fehler**: beim Erfassen des Urteils ist eine unbekannte Ausnahme aufgetreten. Der Benutzer hat möglicherweise auf die URL geklickt. 
+- **Fehler**: beim Erfassen des Urteils ist eine unbekannte Ausnahme aufgetreten. Der Benutzer hat möglicherweise auf die URL geklickt.
 
 ## <a name="review-email-messages-reported-by-users"></a>Überprüfen von von Benutzern gemeldeten e-Mail-Nachrichten
 
@@ -288,7 +289,7 @@ Ausführliche Informationen hierzu finden Sie unter [Beispiel: ein Sicherheitsad
 Zusätzlich zu den in diesem Artikel beschriebenen Szenarien stehen Ihnen viele weitere Berichtsoptionen mit Explorer (oder Echtzeiterkennung) zur Verfügung.
 
 - [Suchen und Untersuchen von bösartigen E-Mails, die zugestellt wurden](investigate-malicious-email-that-was-delivered.md)
-- [Anzeigen schädlicher Dateien, die in SharePoint Online, OneDrive und Microsoft Teams erkannt wurden](malicious-files-detected-in-spo-odb-or-teams.md)
+- [Threat Protection-Statusbericht](view-email-security-reports.md#threat-protection-status-report)
 - [Erhalten einer Übersicht über die Ansichten in Threat Explorer (und Echtzeiterkennung)](threat-explorer-views.md)
 - [Automatische Untersuchung und Reaktion in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
 

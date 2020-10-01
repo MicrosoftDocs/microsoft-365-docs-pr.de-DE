@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Zusammenfassung: Die Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen verstehen.'
-ms.openlocfilehash: 9d74ec8dd942d022bf1b9d0301f415ef1f0c28e2
-ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
+ms.openlocfilehash: a77dc43c4c30992d2e50aad94878f9269573db52
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48308973"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327117"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Migration von Microsoft Cloud Deutschland zu Office 365 Diensten in den neuen Regionen des deutschen Rechenzentrums
 
@@ -267,6 +267,8 @@ Wenn Sie Fragen haben, können Sie uns oder Ihren Partner kontaktieren:
 - Wenn Sie Dynamics 365 Kunden Engagement und Power BI-Kunde sind und auch Office 365 haben, können Sie Fragen über den &quot; Link Need Help? &quot; des [Microsoft 365 Admin Center](https://portal.office.de/)übermitteln. Die Dynamics 365 Customer Engagement-Supportoptionen befinden sich [hier](https://docs.microsoft.com/dynamics365/get-started/support/). Die Power BI-Supportoptionen befinden sich [hier](https://powerbi.microsoft.com/support/).
 
 ## <a name="more-information"></a>Weitere Informationen
+
+Weitere Informationen zur Migration zu den neuen Regionen des deutschen Rechenzentrums kommen. Bookmarken Sie diese Seite, damit Sie einchecken und aktuell bleiben können.
 
 - [Hilfe zur Microsoft Cloud Deutschland-Migration Assistance](https://aka.ms/germanymigrateassist)
 - [So können Sie sich für die Migration anmelden](https://aka.ms/office365germanymoveoptin)
