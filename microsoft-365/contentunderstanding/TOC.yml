@@ -1,32 +1,34 @@
-- name: Erste Schritte mit Microsoft SharePoint Syntex
+- name: Informationen zu Microsoft SharePoint Syntex
   items:
-    - name: Einführung in Microsoft SharePoint Syntex
-      href: microsoft-sharepoint-syntex-overview.md
-    - name: Dokument Verständnis Übersicht
+    - name: Einführung in SharePoint Syntex
+      href: index.md
+    - name: Übersicht über das Dokumentenverständnis
       href: document-understanding-overview.md
     - name: Übersicht über die Formularverarbeitung
       href: form-processing-overview.md
-    - name: Unterschied zwischen Dokument verstehen und Formular Verarbeitungs Modellen
+    - name: Unterschied zwischen den Modellen "Dokumentenverständnis" und "Formularverarbeitung"
       href: difference-between-document-understanding-and-form-processing-model.md
+- name: Erste Schritte mit Modellen
+  items:
     - name: Informationen zu Modellen mithilfe des Beispielmodells
       href: learn-about-document-understanding-models-through-the-sample-model.md
-    - name: Erstellen eines inhaltscenters
+    - name: Erstellen eines Inhaltscenters
       href: create-a-content-center.md
     - name: Erstellen einer Klassifizierung
       href: create-a-classifier.md
-    - name: Erstellen eines Extraktions Moduls
+    - name: Erstellen eines Extraktors
       href: create-an-extractor.md
-    - name: Erklärungs Typen
+    - name: Beschreibungstypen
       href: explanation-types-overview.md
     - name: Anwenden eines Modells
       href: apply-a-model.md
-    - name: Erstellen eines Formular Verarbeitungsmodells
+    - name: Erstellen eines Formularverarbeitungsmodells
       href: create-a-form-processing-model.md
     - name: Anwenden einer Aufbewahrungs Bezeichnung
       href: apply-a-retention-label-to-a-model.md
-    - name: Modell Nutzungsanalyse
+    - name: Modellverwendungsanalysen
       href: model-usage-analytics.md
-    - name: Terminologiespeicher-Taxonomie beim Erstellen eines Extraktors nutzen
+    - name: Nutzung der Terminologiespeichertaxonomie beim Erstellen eines Extraktors
       href: leverage-term-store-taxonomy.md
 - name: Einführung
   items:
@@ -46,5 +48,5 @@
       href: skos-format-reference.md
     - name: Inhaltstyp an Hub verschieben
       href: push-content-type-to-hub.md
-    - name: Laufzeitspeicher Berichte
+    - name: Terminologiespeicherberichte
       href: term-store-analytics.md
