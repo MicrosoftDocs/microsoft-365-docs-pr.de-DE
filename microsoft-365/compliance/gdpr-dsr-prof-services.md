@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 496a84b153d017eb69ba5b18443e4331c00c4dd7
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 6052d4fd4c4f85696d18d7ccdd679fd98e9fc7c8
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416579"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304825"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr-and-ccpa"></a>Microsoft-Support und Professional Services für Anträge betroffener Personen für die DSGVO und den CCPA
 
@@ -33,7 +33,7 @@ Weitere Informationen zu Microsoft Professional Services erhalten Sie unter der 
 
 ### <a name="introduction-to-dsrs"></a>Einführung in Anträge betroffener Personen 
 
-Die Datenschutz-Grundverordnung (DSGVO) gewährt Personen (die in den Bestimmungen als *betroffene Personen* bezeichnet werden) das Recht zum Verwalten ihrer personenbezogenen Daten, die von einem Arbeitgeber oder von einer anderen Art von Behörde oder Organisation (als *Datenverantwortlicher* oder nur *Verantwortlicher* bezeichnet) erfasst werden. Personenbezogene Daten sind im Rahmen der DSGVO sehr weitgefasst als Daten definiert, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen. Die DSGVO erteilt betroffenen Personen bestimmte Rechte für ihre personenbezogenen Daten; dazu gehören das Kopieren der personenbezogenen Daten, das Anfordern von Korrekturen, das Einschränken der Verarbeitung oder das Löschen. Eine formale Anfrage einer betroffenen Person an einen Datenverantwortlichen im Hinblick auf eine bestimmte Aktion bezüglich ihrer personenbezogenen Daten wird als *Antrag einer betroffenen Person* bezeichnet. Zudem sind Unternehmen, die für einen Verantwortlichen arbeiten (als *Datenauftragsverarbeiter* oder nur *Auftragsverarbeiter*) bezeichnet), verpflichtet, den Verantwortlichen im Rahmen ihrer Möglichkeiten dabei zu unterstützen, den Anträgen betroffener Personen Folge zu leisten.
+Die Datenschutz-Grundverordnung (DSGVO) gewährt Personen (die in den Bestimmungen als *betroffene Personen* bezeichnet werden) das Recht zum Verwalten ihrer personenbezogenen Daten, die von einem Arbeitgeber oder von einer anderen Art von Behörde oder Organisation (als *Datenverantwortlicher* oder nur *Verantwortlicher* bezeichnet) erfasst werden. Personenbezogene Daten sind im Rahmen der DSGVO weitgefasst als Daten definiert, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen. Die DSGVO erteilt betroffenen Personen bestimmte Rechte für ihre personenbezogenen Daten; dazu gehören das Kopieren der personenbezogenen Daten, das Anfordern von Korrekturen, das Einschränken der Verarbeitung oder das Löschen. Eine formale Anfrage einer betroffenen Person an einen Datenverantwortlichen im Hinblick auf eine bestimmte Aktion bezüglich ihrer personenbezogenen Daten wird als *Antrag einer betroffenen Person* bezeichnet. Zudem sind Unternehmen, die für einen Verantwortlichen arbeiten (als *Datenauftragsverarbeiter* oder nur *Auftragsverarbeiter* bezeichnet), verpflichtet, den Verantwortlichen im Rahmen ihrer Möglichkeiten dabei zu unterstützen, den Anträgen betroffener Personen Folge zu leisten.
 
 In ähnlicher Weise bietet der California Consumer Privacy Act (CCPA) den kalifornischen Verbrauchern Datenschutzrechte und -pflichten, einschließlich von Rechten, die den Rechten von betroffenen Personen der DSGV entsprechen, wie z. B. das Recht auf Löschung, Zugriff und Empfang (Portabilität) der persönlichen Informationen.  Das CCPA ermöglicht außerdem bestimmte Offenlegungen, Schutz vor Diskriminierung bei der Wahl von Ausübungsrechten und Deaktivierungs-/Aktivierungsanforderungen für bestimmte Datentransfers, die als "Verkäufe" eingestuft werden. Die Definition von "Verkäufe" umfasst die Freigabe von Daten für eine angemessene Gegenleistung. Weitere Informationen zum CCPA finden Sie im ["California Consumer Privacy Act](offering-ccpa.md) und in den [häufig gestellten Fragen zum California Consumer Privacy Act](ccpa-faq.md).
 
@@ -41,7 +41,7 @@ In diesem Leitfaden wird erläutert, wie Sie personenbezogene Daten, die sich in
 
 Bei der Entwicklung und Implementierung einer festen Vorgehensweise für die Reaktion auf Anträge betroffener Personen müssen Kunden von Microsoft wissen, dass Support- und Beratungsdaten getrennt von Kundendaten in den Onlinediensten oder anderen Daten, die sie oder ihre betroffenen Personen an Microsoft übermittelt haben, gespeichert werden. Tools und Prozesse, die für Onlinedienste, das Microsoft-Datenschutz-Dashboard oder andere Microsoft-Systeme für die Reaktion auf Anträge betroffener Personen bereitgestellt wurden, können nicht verwendet werden, um auf Anträge betroffener Personen bezüglich personenbezogener Daten zu reagieren, die im Besitz von Microsoft-Support oder Professional Services sind.
 
-Sämtliche Anträge müssen wie nachfolgend beschrieben über einen Supportmitarbeiter erfolgen. Es gibt derzeit kein Selbstbedienungstool, mit dem Kunden Zugriff auf personenbezogene Daten in den Professional Services-Organisationen erhalten könnten.
+Sämtliche Anträge müssen wie später in diesem Artikel beschrieben über einen Supportmitarbeiter erfolgen. Es gibt derzeit kein Selbstbedienungstool, mit dem Kunden Zugriff auf personenbezogene Daten in den Professional Services-Organisationen erhalten könnten.
 
 #### <a name="overview-of-the-processes-outlined-in-this-guide"></a>Übersicht über die in diesem Leitfaden beschriebenen Prozesse
 
@@ -58,13 +58,13 @@ Nachstehend sind die für diesen Leitfaden relevanten Definitionen von Ausdrück
 
 - **Datenverantwortlicher:** Eine natürliche oder juristische Person, öffentliche Behörde, Agentur oder andere Stelle, die allein oder gemeinsam mit anderen die Zwecke und Mittel der Verarbeitung personenbezogener Daten bestimmt. Sofern die Zwecke und Mittel der Verarbeitung durch das Recht der Union oder der Mitgliedstaaten bestimmt werden, können der Datenverantwortliche bzw. die spezifischen Kriterien für dessen Benennung durch das Recht der Union oder des Mitgliedstaats angegeben werden.
 - **Personenbezogene Daten und betroffene Person:** Alle Informationen über eine identifizierte oder identifizierbare natürliche Person ("betroffene Person"). Eine identifizierbare natürliche Person ist eine Person, die direkt oder indirekt, insbesondere durch Zuordnung zu einer Kennung wie einem Namen, zu einer Kennnummer, zu Standortdaten, zu einer Online-Kennung oder zu einem oder mehreren besonderen Merkmalen identifiziert werden kann, die Ausdruck der physischen, physiologischen, genetischen, psychischen, wirtschaftlichen, kulturellen oder sozialen Identität dieser natürlichen Person sind.
-- **Verarbeiter:** Eine natürliche oder juristische Person, öffentliche Behörde, Agentur oder andere Stelle, die personenbezogene Daten im Auftrag des Verantwortlichen verarbeitet.
+- **Auftragsverarbeiter:** Eine natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, welche personenbezogene Daten im Auftrag des Verantwortlichen verarbeitet.
 
 #### <a name="additional-terms-and-definitions-that-may-be-helpful-in-understanding-this-guide"></a>Zusätzliche Begriffe und Definitionen, die möglicherweise hilfreich für das Verständnis dieses Leitfadens sind
 
 - **Support- und Beratungsdaten:** Alle Daten, einschließlich Text-, Ton-, Video-, Bilddateien und Software, die Microsoft vom Kunden selbst oder in seinem Auftrag im Rahmen einer Vereinbarung mit Microsoft übermittelt werden (oder deren Abruf über einen Onlinedienst vom Kunden gestattet wird), um Support oder Professional Services zu erhalten. Um das nochmal deutlich zu machen: Dazu zählen keine Daten, die Microsoft als Datenverantwortlicher erfasst, z. B. Kontaktdaten des Kunden.
 - **Kundenkontakt:** Personenbezogene Daten, die möglicherweise Bestandteil Ihrer Geschäftsbeziehung mit Microsoft sind, z. B. personenbezogene Daten, die in Ihren Kundenkontaktinformationen enthalten sind. Dazu gehören beispielsweise Ihr Name, Ihre E-Mail-Adresse oder die Telefonnummer des Premier Contract Service Managers (CSM), des globalen oder IT-Administrators für einen Onlinedienst oder vergleichbare Rollen.
-- **Pseudonymisierte Daten:** Wenn Sie den Microsoft-Support für die Enterprise-Produkte und -Dienste von Microsoft nutzen, generiert Microsoft Daten, die mit einer numerischen ID verknüpft sind, um den Support bereitzustellen. Diese werden häufig als "pseudonymisierte Daten" bezeichnet. Obwohl diese Daten nicht ohne Hinzuziehen weiterer Informationen einer bestimmten betroffenen Person zugeordnet werden können, ist es möglich, dass manche dieser Daten unter der DSGVO im weitesten Sinne als personenbezogen betrachtet werden. In Professional Services werden deshalb beim Ausfüllen oder beim Unterstützen des Ausfüllens von Anträgen betroffener Personen immer auch pseudonymisierte Daten berücksichtigt.
+- **Pseudonymisierte Daten:** Wenn Sie den Microsoft-Support für die Enterprise-Produkte und -Dienste von Microsoft nutzen, generiert Microsoft Daten, die mit einer numerischen ID verknüpft sind, um den Support bereitzustellen. Diese Informationen werden häufig als "pseudonymisierte Daten" bezeichnet. Obwohl diese Daten nicht ohne Hinzuziehen weiterer Informationen einer bestimmten betroffenen Person zugeordnet werden können, ist es möglich, dass manche dieser Daten unter der DSGVO im weitesten Sinne als personenbezogen betrachtet werden. In Professional Services werden deshalb beim Ausfüllen oder beim Unterstützen des Ausfüllens von Anträgen betroffener Personen immer auch pseudonymisierte Daten berücksichtigt.
 
 ### <a name="how-to-use-this-guide"></a>Verwenden dieses Leitfadens
 
@@ -89,7 +89,7 @@ Bei Eingang einer Anfrage eines Kundenkontakts zu einem Antrag einer betroffenen
 
 Damit auf Seiten des Kunden keine Betriebsunterbrechung entsteht, bearbeitet Microsoft Anträge betroffener Personen in Verbindung mit einem Engagement erst dann, wenn ein Ersatzkontakt bestätigt wurde. Nach Bestätigung eines neuen Kontakts ersetzt Microsoft den alten Kontakt in offenen Engagements durch den neuen Kontakt.
 
-Kunden können wählen, Änderungen an ihren während Professional Service-Engagements erfassten Daten über normale Support- oder Beratungskanäle separat von diesem Antrag einer betroffenen Person vorzunehmen. Microsoft kann z. B. auf Anfrage beim Löschen von Support-Engagements helfen (siehe unten im Abschnitt *Leitfaden zu Anträgen betroffener Personen für von Kunden bereitgestellte Daten*).
+Kunden können wählen, Änderungen an ihren während Professional Service-Engagements erfassten Daten über normale Support- oder Beratungskanäle separat von diesem Antrag einer betroffenen Person vorzunehmen. Microsoft kann z. B. auf Anfrage beim Löschen von Support-Engagements helfen (siehe Abschnitt *Leitfaden zu Anträgen betroffener Personen für von Kunden bereitgestellte Daten*).
 
 ***Beispiel zur Veranschaulichung***
 
@@ -176,7 +176,7 @@ Kunden können die Löschung der personenbezogenen Daten einer betroffenen Perso
 
 > Wichtiger Hinweis: **Dies kann dazu führen, dass historische Datensätze, die für die Organisation des Kunden wichtig sind, verloren gehen.
 
-*Option B – spezifische Kundenengagements.* Für spezifische Engagements, die der Kunde identifiziert hat und löschen lassen möchte, dürfen Sie keine Tickets aus SMC löschen. Dies kann sonst dazu führen, dass personenbezogene Daten in Protokollen und nachgelagerten Systemen verbleiben und nicht innerhalb des erforderlichen Zeitrahmens gelöscht werden. Identifizieren Sie stattdessen das Ticket oder die personenbezogenen Daten in dem Ticket, die gelöscht werden müssen, und wenden Sie sich an den Microsoft-Support, um sich beim Löschen dieser Daten unterstützen zu lassen.
+*Option B – spezifische Kundenengagements*. Für spezifische Engagements, die der Kunde identifiziert hat und löschen lassen möchte, dürfen Sie keine Tickets aus SMC löschen. Dies kann sonst dazu führen, dass personenbezogene Daten in Protokollen und nachgelagerten Systemen verbleiben und nicht innerhalb des erforderlichen Zeitrahmens gelöscht werden. Identifizieren Sie stattdessen das Ticket oder die personenbezogenen Daten in dem Ticket, die gelöscht werden müssen, und wenden Sie sich an den Microsoft-Support, um sich beim Löschen dieser Daten unterstützen zu lassen.
 
 ### <a name="microsoft-support-data-transfer-and-management-tool-dtm-instructions"></a>Anweisungen zum Data Transfer and Management Tool (DTM) des Microsoft-Supports
 
