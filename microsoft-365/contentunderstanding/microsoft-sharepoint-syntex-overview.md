@@ -3,92 +3,71 @@ title: Einführung in Microsoft SharePoint Syntex
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 08/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: Hier erfahren Sie, wie Sie Ressourcen für Microsoft SharePoint Syntex.
-ms.openlocfilehash: 0be1eed40f2c02479ff2dda657d1e6a2a781cf30
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+description: Hier erfahren Sie, wie Sie Ressourcen für Microsoft SharePoint Syntex finden.
+ms.openlocfilehash: 02e7cea135d478fe1e46a9ac5aec8726e054d9f0
+ms.sourcegitcommit: bf21a4caae0c01d93281744838f0aa50e1fb2a22
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48296108"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48323940"
 ---
-# <a name="introduction-to-sharepoint-syntex"></a>Einführung in SharePoint-Syntex
+# <a name="introduction-to-sharepoint-syntex"></a>Einführung in SharePoint Syntex
 
+SharePoint Syntex ist ein Office 365-Dienst, der Organisationen bei folgenden Aufgaben hilft:
 
-</br>
+- Fortgeschrittene KI und maschinelles Lehren nutzen, um menschliche Erfahrungen zu erweitern
+- Inhaltsverarbeitung automatisieren
+- Inhalte in Wissen umwandeln
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSu7] 
-
-</br>
-
-SharePoint Syntex ist ein Office 365 Dienst, mit dem Organisationen Folgendes unterstützen:
-
-- Verwenden von Advanced AI und maschinellem Unterricht zur Verstärkung der menschlichen Erfahrungen
-- Automatisieren der Inhaltsverarbeitung
-- Transformieren von Inhalten in wissen
-
-Die Ressourcen auf dieser Seite sind so konzipiert, dass Sie den Einstieg in das Erlernen und Verwenden von SharePoint-Syntex in Ihrer Organisation erhalten.
+Die Ressourcen auf dieser Seite sind dafür vorgesehen, Ihnen den Einstieg in die Nutzung von SharePoint Syntex in Ihrer Organisation zu erleichtern.
 
 ## <a name="get-started"></a>Erste Schritte
 
-Mithilfe der Ressourcen in diesem Abschnitt erfahren Sie mehr über die beiden von SharePoint Syntex verwendeten Methoden: Formularverarbeitung und Dokument Verständnis.
+Die Ressourcen in diesem Abschnitt helfen Ihnen, mehr über die beiden von SharePoint Syntex verwendeten Methoden zu erfahren: Formularverarbeitung und Dokumentverständnis.
 
-|**Wenn Sie sich für diese Informationen interessieren:**|**Wechseln Sie zu dieser Ressource:**|
+|**Gesuchte Informationen:**|**Hilfreiche Ressource:**|
 |:-----|:-----|
-|Weitere Informationen zur Formularverarbeitung und Dokument Verständnis|[Dokument Verständnis Übersicht](https://docs.microsoft.com/microsoft-365/contentunderstanding/document-understanding-overview)<br><br>[Übersicht über die Formularverarbeitung](https://docs.microsoft.com/microsoft-365/contentunderstanding/form-processing-overview)<br><br>|
-|Grundlegendes zu den Unterschieden zwischen den beiden Methoden|[Unterschied zwischen Dokument verstehen und Formular Verarbeitungs Modellen](/https://docs.microsoft.com/microsoft-365/contentunderstanding/difference-between-document-understanding-and-form-processing-model)|
-
-  
-## <a name="set-up-sharepoint-syntex"></a>Einrichten von SharePoint-Syntex
-
-Die Ressourcen in diesem Abschnitt helfen Ihrem Administrator in Ihrer Organisation, Microsoft SharePoint-Syntex in Ihrer Microsoft 365-Umgebung einzurichten und zu konfigurieren.
-
-|**Wenn Sie sich für diese Informationen interessieren:**|**Wechseln Sie zu dieser Ressource:**|
-|:-----|:-----|
-|Einrichten und Konfigurieren von SharePoint-Syntex|[Einrichten von Microsoft SharePoint Syntex](https://docs.microsoft.com/microsoft-365/contentunderstanding/set-up-content-understanding)|
-|||
- 
-## <a name="models"></a>Modelle
-
-Mithilfe der Ressourcen in diesem Abschnitt erfahren Sie, wie Sie Dokument Verständnis und Formular Verarbeitungsmodelle erstellen und konfigurieren.
-
-|**Wenn Sie sich für diese Informationen interessieren:**|**Wechseln Sie zu dieser Ressource:**|
-|:-----|:-----|
-|Informationen zum Arbeiten mit Modellen|[Erstellen eines inhaltscenters](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-content-center)<br><br>[Erstellen einer Klassifizierung](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-classifier)<br><br>[Erstellen eines Extraktions Moduls](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-an-extractor)<br><br>[Erstellen eines Formular Verarbeitungsmodells](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-form-processing-model)<br><br>[Erklärungs Typen](https://docs.microsoft.com/microsoft-365/contentunderstanding/form-processing-overview)<br><br>[Anwenden eines Dokument Verständnisses für das Modell](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-model)<br><br>[Informationen zu Dokument Verständnis Modellen im Beispielmodell](https://docs.microsoft.com/microsoft-365/contentunderstanding/learn-about-document-understanding-models-through-the-sample-model)<br><br>|
-|Anwenden einer Aufbewahrungs Bezeichnung auf Ihr Modell|[Unterschied zwischen Dokument verstehen und Formular Verarbeitungs Modellen](/https://docs.microsoft.com/microsoft-365/contentunderstanding/difference-between-document-understanding-and-form-processing-model)|
-
-
-
-
-## <a name="premium-services"></a>Premium-Dienste
-
-Eine SharePoint-Syntex-Lizenz bietet ihren Benutzern Premium-Inhaltsdienste, die Ihnen zusätzliche Funktionen in Ihrer Microsoft 365-Umgebung bieten. Die Ressourcen in diesem Abschnitt enthalten weitere Informationen zu diesen Funktionen und deren Verwendung.
-
-Weitere Informationen zu Premium-Inhaltsdiensten, die über SharePoint-Syntex bereitgestellt werden, finden Sie in der [Microsoft SharePoint Syntex-Dienstbeschreibung](). 
-
-
-|**Wenn Sie sich für diese Informationen interessieren:**|**Wechseln Sie zu dieser Ressource:**|
-|:-----|:-----|
-|xxxxxx|[Importieren eines Ausdruckssatzes mithilfe eines SKOS-basierten Formats](https://docs.microsoft.com/microsoft-365/contentunderstanding/import-term-set-skos)<br><br>[SKOS-Format Referenz für die SharePoint-Taxonomie](https://docs.microsoft.com/microsoft-365/contentunderstanding/skos-format-reference)<br><br>|
-|xxxxxx|[Pushen von Inhaltstypen an einen Hub](https://docs.microsoft.com/microsoft-365/contentunderstanding/push-content-type-to-hub)|
+|Weitere Informationen zu Formularverarbeitung und Dokumentenverständnis|[Übersicht über das Dokumentenverständnis](https://docs.microsoft.com/microsoft-365/contentunderstanding/document-understanding-overview)<br><br>[Übersicht über die Formularverarbeitung](https://docs.microsoft.com/microsoft-365/contentunderstanding/form-processing-overview)<br><br>|
+|Grundlegendes zu den Unterschieden zwischen den beiden Methoden|[Unterschied zwischen den Modellen "Dokumentenverständnis" und "Formularverarbeitung"](/https://docs.microsoft.com/microsoft-365/contentunderstanding/difference-between-document-understanding-and-form-processing-model)|
+|Ressourcen finden Sie im Microsoft Tech Community Resource Center.|[SharePoint Syntex: Inhaltsdienste in Microsoft 365](https://resources.techcommunity.microsoft.com/sharepoint-syntex/)|
 
 ## <a name="adoption"></a>Einführung
 
-Erfahren Sie mehr über die Verwendung und Implementierung von SharePoint-Syntex in Ihrer Organisation, damit Sie Ihre geschäftlichen Probleme lösen können.
+Erfahren Sie mehr darüber, wie Sie SharePoint Syntex in Ihrer Organisation verwenden und implementieren können, um Ihnen bei der Lösung Ihrer Geschäftsprobleme zu helfen: [Einführung von Microsoft SharePoint Syntex: Erste Schritte](adoption-getstarted.md).
 
-|**Wenn Sie sich für diese Informationen interessieren:**|**Wechseln Sie zu dieser Ressource:**|
+## <a name="set-up-sharepoint-syntex"></a>Einrichten von SharePoint Syntex
+
+Die Ressourcen in diesem Abschnitt helfen dem Administrator in Ihrer Organisation, Microsoft SharePoint Syntex in Ihrer Microsoft 365-Umgebung einzurichten und zu konfigurieren.
+
+|**Gesuchte Informationen:**|**Hilfreiche Ressource:**|
 |:-----|:-----|
-|Erfahren Sie, wie Sie mit der Planung für die Verwendung von SharePoint Syntex beginnen. |[SharePoint Syntex Adoption: Erste Schritte](https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted)<br><br>|
+|Einrichten und Konfigurieren von SharePoint Syntex|[Einrichten von Microsoft SharePoint Syntex](https://docs.microsoft.com/microsoft-365/contentunderstanding/set-up-content-understanding)|
+|Informationen zum Bild-Tagging und dessen Deaktivierung|[Bild-Tagging in SharePoint Syntex](https://docs.microsoft.com/microsoft-365/contentunderstanding/image-tagging)|
 
+## <a name="models"></a>Modelle
+
+Die Ressourcen in diesem Abschnitt helfen Ihren Benutzern zu lernen, wie sie Dokumentenverständnis- und Formularverarbeitungsmodelle erstellen und konfigurieren.
+
+|**Gesuchte Informationen:**|**Hilfreiche Ressource:**|
+|:-----|:-----|
+|Informationen zum Arbeiten mit Modellen|[Erstellen eines Inhaltscenters](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-content-center)<br><br>[Erstellen einer Klassifizierung](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-classifier)<br><br>[Erstellen eines Extraktors](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-an-extractor)<br><br>[Erstellen eines Formularverarbeitungsmodells](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-form-processing-model)<br><br>[Beschreibungstypen](https://docs.microsoft.com/microsoft-365/contentunderstanding/form-processing-overview)<br><br>[Anwenden eines Dokumentenverständnismodells](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-model)<br><br>[Erfahren Sie mehr über Dokumentenverständnismodelle anhand des Beispielmodells](https://docs.microsoft.com/microsoft-365/contentunderstanding/learn-about-document-understanding-models-through-the-sample-model)<br><br>|
+|Anwenden einer Aufbewahrungsbezeichnung auf das Modell|[Unterschied zwischen den Modellen "Dokumentenverständnis" und "Formularverarbeitung"](https://docs.microsoft.com/microsoft-365/contentunderstanding/difference-between-document-understanding-and-form-processing-model)|
+|Verwenden der Terminologiespeichertaxonomie des verwalteten Metadatendiensts beim Erstellen eines Extraktors|[Nutzung der Terminologiespeichertaxonomie beim Erstellen eines Extraktors](https://docs.microsoft.com/microsoft-365/contentunderstanding/leverage-term-store-taxonomy)|
+|Erfahren Sie, wie Sie Daten zu Ihren Modellen anzeigen können.|[Modellverwendungsanalysen](https://docs.microsoft.com/microsoft-365/contentunderstanding/model-usage-analytics)|
+
+## <a name="premium-services"></a>Premium-Dienste
+
+Mit einer SharePoint Syntex-Lizenz erhalten Ihre Benutzer Premium-Inhaltsdienste, die Ihnen zusätzliche Funktionalität in Ihrer Microsoft 365-Umgebung bieten. Die Ressourcen in diesem Abschnitt geben Ihnen weitere Einzelheiten zu diesen Features und ihrer Verwendung.
+
+|**Gesuchte Informationen:**|**Hilfreiche Ressource:**|
+|:-----|:-----|
+|Erfahren Sie mehr über das Importieren eines Datensatzes mit dem SKOS-basierten Format (Simple Knowledge Organization System)|[Importieren eines Ausdruckssatzes mithilfe eines SKOS-basierten Formats](https://docs.microsoft.com/microsoft-365/contentunderstanding/import-term-set-skos)<br><br>[SKOS-Formatreferenz für SharePoint-Taxonomie](https://docs.microsoft.com/microsoft-365/contentunderstanding/skos-format-reference)<br><br>|
+|Erfahren Sie, wie Sie Inhaltstypen konsistenter für SharePoint-Bibliotheken und -Listen verfügbar machen|[Senden von Inhaltstypen per Push auf einen Hub](https://docs.microsoft.com/microsoft-365/contentunderstanding/push-content-type-to-hub)|
+|Weitere Informationen über die für Sie verfügbaren Terminologiespeicherberichte|[Terminologiespeicherberichte](https://docs.microsoft.com/microsoft-365/contentunderstanding/term-store-analytics)|
 
 ## <a name="see-also"></a>Siehe auch
-
-
-
-
