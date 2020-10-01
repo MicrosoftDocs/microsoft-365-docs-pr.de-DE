@@ -1,5 +1,5 @@
 ---
-title: Informationen zu Schulungs Klassifizierern (Vorschau)
+title: Weitere Informationen zu trainierbaren Klassifizierern (Vorschau)
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Eine Microsoft 365-schulungsable-Klassifizierung ist ein Tool, mit dem Sie verschiedene Arten von Inhalten erkennen können, indem Sie positive und negative Beispiele für Ihre Untersuchung geben. Nach der Schulung der Klassifizierung bestätigen Sie, dass die Ergebnisse korrekt sind. Anschließend können Sie die Inhalte Ihrer Organisation durchsuchen und klassifizieren, um Aufbewahrungs-oder Vertraulichkeits Bezeichnungen anzuwenden oder Sie in Datenverlust Verhinderung (DLP) oder in Aufbewahrungsrichtlinien einzubeziehen.
-ms.openlocfilehash: 9a628eec748681e0a22911bf7cf3774895b10ead
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 8b086690faba23e1331e02d8844503c44e7617c0
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132350"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48322188"
 ---
 # <a name="learn-about-classifiers-preview"></a>Informationen zu Klassifizierungen (Vorschau)
 
@@ -75,10 +75,8 @@ Microsoft 365 verfügt über fünf vorab ausgebildete Klassifizierungen:
     - C++
     - Clojure
     - CoffeeScript
-    - CSS
     - OK
     - Haskell
-    - HTML
     - Java
     - JavaScript
     - Lua
