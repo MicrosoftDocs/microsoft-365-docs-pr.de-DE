@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 2408445598ab1e474ac1967be6e13f19887144a8
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 942097033fe5ed97449dbf3be93e8153f91a7961
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417899"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305025"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-office-365"></a>Datenschutz-Folgenabschätzung: Leitfaden für Datenverantwortliche, die Microsoft Office 365 verwenden 
 
@@ -29,7 +29,7 @@ Gemäß der Datenschutz-Grundverordnung (DSGVO) müssen Datenverantwortliche ein
 
 Dieses Dokument soll den Datenverantwortlichen Informationen über Office 365 bereitstellen, die ihnen helfen, zu bestimmen, ob eine Datenschutz-Folgenabschätzung erforderlich ist, und wenn ja, welche Informationen sie enthalten soll. Es gilt für Office 365-Anwendungen und Dienste, einschließlich, jedoch nicht beschränkt auf Exchange Online, SharePoint Online, OneDrive for Business, Yammer, Skype for Business und Power BI. (Siehe beispielsweise Tabelle 1 und 2 des Leitfadens für die Office 365-Anforderungen betroffener Personen für die DSGVO.) 
 
-## <a name="part-1--determining-whether-a-dpia-is-needed"></a>Teil 1 – Bestimmen, ob eine DPIA erforderlich ist
+## <a name="part-1-determining-whether-a-dpia-is-needed"></a>Teil 1: Bestimmen, ob eine DPIA erforderlich ist
 
 Artikel 35 der DSGVO legt fest, dass ein Datenverantwortlicher eine Datenschutz-Folgenabschätzung erstellen muss, wenn die Verarbeitung insbesondere bei Einsatz neuer Technologien und unter Berücksichtigung der Art, des Umfangs, des Kontextes und des Zwecks der Verarbeitung wahrscheinlich ein hohes Risiko für die Rechte und Freiheiten natürlicher Personen darstellt.“ Außerdem beschreibt er bestimmte Faktoren, die auf ein solches hohes Risiko hindeuten würden, die in der folgenden Tabelle untersucht werden. Beim Ermitteln, ob eine DPIA notwendig ist, sollte ein Datenverantwortlicher diese Faktoren angesichts seiner spezifischen Implementierung(en) und der Verwendung(en) von Office 365 berücksichtigen.
 
@@ -44,7 +44,7 @@ Artikel 35 der DSGVO legt fest, dass ein Datenverantwortlicher eine Datenschutz-
 >[!Note]
 ><sup>1</sup> Bezüglich der Kriterien der "umfangreichen" Verarbeitung von Daten wird in Absatz 91 der DSGVO Folgendes klar gestellt: "Die Verarbeitung personenbezogener Daten sollte nicht als umfangreich gelten, wenn die Verarbeitung personenbezogene Daten von Patienten oder von Mandanten betrifft und durch einen einzelnen Arzt, sonstigen Angehörigen eines Gesundheitsberufes oder Rechtsanwalt erfolgt. In diesen Fällen sollte eine Datenschutz-Folgenabschätzung nicht zwingend vorgeschrieben sein."
 
-## <a name="part-2--contents-of-a-dpia"></a>Teil 2 – Inhalte einer DPIA
+## <a name="part-2-contents-of-a-dpia"></a>Teil 2: Inhalte einer DPIA
 
 Artikel 35 Absatz 7 schreibt vor, dass eine Bewertung der Auswirkungen auf den Datenschutz die Zwecke der Verarbeitung und eine systematische Beschreibung der vorgesehenen Verarbeitung beschreibt.  In den Bewertungen der Auswirkungen auf den Datenschutz (DPIA) von Microsoft beinhaltet eine solche systematische Beschreibung Faktoren wie die Art der verarbeiteten Daten, die Dauer der Datenspeicherung, den Ort der Datenspeicherung und -übertragung und die Möglichkeit des Zugriffs Dritter auf die Daten.  Außerdem muss die DPIA Folgendes umfassen:
 

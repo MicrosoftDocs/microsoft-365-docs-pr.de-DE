@@ -16,12 +16,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 140d66c48feed0534c377fb03673bb575e62527d
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 440d8756e68b022b3b5e7bb4513e2cb3c199f335
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417939"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305045"
 ---
 # <a name="microsofts-data-protection-officer"></a>Datenschutzbeauftragter von Microsoft
 
@@ -29,11 +29,11 @@ Microsoft hat einen EU-Datenschutzbeauftragten (DSB) als unabhängigen Berater f
 
 ## <a name="qualifications"></a>Qualifikationen
 
-Bewerber für die DSB-Rolle müssen mindestens sieben Jahre Erfahrung im Bereich professioneller Datenschutz oder insgesamt zehn Jahre Erfahrung in den Bereichen Datenschutz, Sicherheit und Enterprise Risk Management aufweisen, um für die Position in Frage zu kommen. Zudem müssen Kandidaten über ausgewiesene Sachkenntnis zu internationalen Datenschutzvorschriften und -gepflogenheiten verfügen. 
+Bewerber für die Rolle eines Datenschutzbeauftragten müssen über mindestens sieben Jahre Erfahrung im Bereich professioneller Datenschutz oder insgesamt zehn Jahre Erfahrung in den Bereichen Datenschutz, Sicherheit und Risikomanagement in einem Unternehmen verfügen, um für die Position in Frage zu kommen. Zudem müssen Kandidaten über ausgewiesene Fachkenntnisse zu internationalen Datenschutzvorschriften und -praktiken verfügen. 
 
 ## <a name="nature-of-the-role"></a>Art der Rolle
 
-Der DSB ist angemessen und rechtzeitig an allen grundlegenden Angelegenheiten beteiligt, die im Zusammenhang mit dem Schutz von personenbezogenen Daten stehen. Dies erfolgt zum Teil durch die Rolle des DSB bei der Überprüfung und Beratung zu allen von Microsoft generierten Datenschutz-Folgenabschätzungen (DSFA). Da das DSFA-Programm zur Erfassung der gesamten Verarbeitung personenbezogener Daten bei Microsoft konzipiert ist, verfügt der DSB über unternehmensübergreifende Einsicht in die Verpflichtungen von Microsoft gemäß der DSGVO im Hinblick auf die Verarbeitung personenbezogener Daten durch Microsoft sowie über die Möglichkeit, Microsoft bezüglich dieser zu informieren und zu beraten. Dieser Mechanismus ermöglicht dem DSB auch die Überwachung der Einhaltung der geltenden Datenschutzbestimmungen einschließlich der DSGVO durch Microsoft sowie der internen Richtlinien und Kontrollen von Microsoft. 
+Der Datenschutzbeauftragter ist ordnungsgemäß und zeitnah in alle grundlegenden Angelegenheiten einzubeziehen, die mit dem Schutz personenbezogener Daten im Zusammenhang stehen. Dies erfolgt zum Teil durch die Rolle als Datenschutzbeauftragter bei der Überprüfung von und Beratung zu allen von Microsoft generierten Bewertungen der Auswirkungen auf den Datenschutz. Da das Programm zur Bewertung der Auswirkungen auf den Datenschutz derart konzipiert ist, dass die gesamte Verarbeitung personenbezogener Daten bei Microsoft erfasst wird, verfügt der Datenschutzbeauftragte über unternehmensübergreifende Einsicht in die Verpflichtungen von Microsoft gemäß der DSGVO im Hinblick auf die Verarbeitung personenbezogener Daten durch Microsoft sowie über die Möglichkeit, Microsoft bezüglich dieser zu informieren und zu beraten. Dieser Mechanismus ermöglicht dem Datenschutzbeauftragten auch die Überwachung der Einhaltung der geltenden Datenschutzbestimmungen, einschließlich der DSGVO, durch Microsoft sowie der internen Richtlinien und Kontrollen von Microsoft. 
 
 ## <a name="position-of-the-data-protection-officer"></a>Position des Datenschutzbeauftragten
 

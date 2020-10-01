@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 3352483f87c12996f00e8a75dfcba19581fdaf0c
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 29da829ddf20a24776ef40b7aefb02cdf1546669
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417909"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305055"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-dynamics-365"></a>Datenschutz-Folgenabschätzung: Leitfaden für Datenverantwortliche, die Dynamics 365 verwenden
 
@@ -30,7 +30,7 @@ Gemäß der Datenschutz-Grundverordnung (DSGVO) müssen Datenverantwortliche ein
 
 Dieses Dokument soll den Datenverantwortlichen Informationen über Dynamics 365 bereitstellen, die ihnen helfen, zu bestimmen, ob eine Datenschutz-Folgenabschätzung erforderlich ist, und wenn ja, welche Informationen sie enthalten soll.
 
-## <a name="part-1--determining-whether-a-dpia-is-needed"></a>Teil 1 – Bestimmen, ob eine DPIA erforderlich ist
+## <a name="part-1-determining-whether-a-dpia-is-needed"></a>Teil 1: Ermitteln, ob eine Bewertung der Auswirkungen auf den Datenschutz (DPIA) erforderlich ist
 
 Artikel 35 der DSGVO legt fest, dass ein Datenverantwortlicher eine Datenschutz-Folgenabschätzung erstellen muss, „wenn die Verarbeitung insbesondere bei Einsatz neuer Technologien und unter Berücksichtigung der Art, des Umfangs, des Kontextes und des Zwecks der Verarbeitung wahrscheinlich ein hohes Risiko für die Rechte und Freiheiten natürlicher Personen darstellt.“ Darüber hinaus werden bestimmte Faktoren aufgeführt, die auf ein derart hohes Risiko hinweisen würden, die in der folgenden Tabelle erläutert werden: Bei der Feststellung, ob ein DPIA erforderlich ist, sollte ein Datenverantwortlicher diese Faktoren zusammen mit anderen relevanten Faktoren angesichts seiner spezifischen Implementierung(en) und Verwendung(en) von Dynamics 365.
 
@@ -44,7 +44,7 @@ Artikel 35 der DSGVO legt fest, dass ein Datenverantwortlicher eine Datenschutz-
 >[!Note]
 ><sup>1</sup> Bezüglich der Kriterien der umfassenden Verarbeitung von Daten wird in Absatz 91 der DSGVO Folgendes klar gestellt: „Die Verarbeitung personenbezogener Daten sollte nicht als umfangreich gelten, wenn die Verarbeitung personenbezogene Daten von Patienten oder von Mandanten betrifft und durch einen einzelnen Arzt, sonstigen Angehörigen eines Gesundheitsberufes oder Rechtsanwalt erfolgt. In diesen Fällen sollte eine Datenschutz-Folgenabschätzung nicht zwingend vorgeschrieben sein."
 
-## <a name="part-2--contents-of-a-dpia"></a>Teil 2 – Inhalte einer DPIA
+## <a name="part-2-contents-of-a-dpia"></a>Teil 2: Inhalte einer Bewertung der Auswirkungen auf den Datenschutz (DPIA)
 
 Artikel 35 Absatz 7 schreibt vor, dass eine Bewertung der Auswirkungen auf den Datenschutz die Zwecke der Verarbeitung und eine systematische Beschreibung der vorgesehenen Verarbeitung beschreibt. Eine systematische Beschreibung einer umfassenden DPIA könnte Faktoren wie die Art der verarbeiteten Daten, die Dauer der Datenspeicherung, den Ort der Datenspeicherung und -übertragung und die Möglichkeit des Zugriffs Dritter auf die Daten beinhalten. Außerdem muss die DPIA Folgendes umfassen:
 

@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 87f956e0c9ae80610a61a7ed9496e2aa8b52ebb4
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 51abfe03db57a838cbf5e132027cce7927db439c
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416838"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305219"
 ---
 # <a name="microsoft-support-and-professional-services-and-breach-notification-under-the-gdpr"></a>Microsoft-Support, Dienstleistungen und Benachrichtigungen bei Sicherheitsverletzungen im Rahmen der DSGVO
 
@@ -28,7 +28,7 @@ Microsoft-Support und Professional Services nimmt seine Verpflichtungen im Rahme
 
 Microsoft Professional Services umfasst eine heterogene Gruppe aus technischen Architekten, Technikern, Beratern und Supportmitarbeitern, welche die Mission von Microsoft unterstützen, Kunden zu befähigen, mehr zu tun und mehr zu erreichen. Unser Professional Services-Team umfasst insgesamt mehr als 21.000 Berater, Berater für digitale Angelegenheiten, Premier-Support, Techniker und Vertriebsmitarbeiter in 191 Ländern, die 46 unterschiedliche Sprachen sprechen, mehrere Millionen Engagements pro Monat absolvieren und vor Ort oder über Telefon, Internet, Community und automatisierte Tools mit Kunden und Partnern interagieren. Die Organisation liefert umfangreiche Kenntnisse über das gesamte Spektrum des Microsoft-Portfolios hinweg, wofür ein weites Partnernetzwerk, technische Communitys, Tools, Diagnosen und Kanäle genutzt werden, die uns mit unseren Unternehmenskunden verbinden.
 
-Das Ziel des globalen Teams für die Reaktion auf Datenschutzverletzungen von Microsoft Professional Services ist (a) der Einsatz strenger Operationen und Prozesse zur Verhinderung von Datenschutzverletzungen, (b) der professionelle und effiziente Umgang mit Verletzungen, sollten sie auftreten, und (c) das Lernen aus diesen Datenschutzverletzungen durch regelmäßige nachträgliche Analysen und Programmverbesserungen. Die Prozesse und Ergebnisse des Teams für die Reaktion auf Datenschutzverletzungen von Microsoft Professional Services werden durch mehrere Sicherheits- und Compliance-Audits (z. B. ISO/IEC 27001) geprüft und zertifiziert.
+Ziele des globalen Teams für die Reaktion auf Datenschutzverletzungen von Microsoft Professional Services sind (a) der Einsatz strenger Operationen und Prozesse zur Verhinderung von Datenschutzverletzungen, (b) der professionelle und effiziente Umgang mit Verletzungen, sollten sie auftreten, und (c) das Lernen aus diesen Datenschutzverletzungen durch regelmäßige nachträgliche Analysen und Programmverbesserungen. Die Prozesse und Ergebnisse des Teams für die Reaktion auf Datenschutzverletzungen von Microsoft Professional Services werden durch mehrere Sicherheits- und Compliance-Audits (z. B. ISO/IEC 27001) geprüft und zertifiziert.
 
 ## <a name="data-protection-incident-response-overview"></a>Übersicht über die Reaktion auf Datenschutzverletzungen 
 
@@ -38,9 +38,9 @@ Microsoft Professional Services setzt sich für den Schutz seiner Kunden ein und
 
 Unser Benachrichtigungsprozess im Hinblick auf die Verletzung des Schutzes personenbezogener Daten beginnt, wenn wir deklarieren, dass eine [Verletzung des Schutzes personenbezogener Daten] stattgefunden hat.
 
-Damit eine Datenschutzverletzung deklariert werden kann, muss das Microsoft-Team für die Reaktion auf Datenschutzverletzungen festlegen, dass eine Datenschutzverletzung entsprechend der obenstehenden Definition erfolgt ist. Die Deklaration erfolgt, sobald alle relevanten Informationen verfügbar sind, damit festgelegt werden kann, dass eine Datenschutzverletzung aufgetreten ist.
+Damit eine Datenschutzverletzung deklariert werden kann, muss das Microsoft-Team für die Reaktion auf Datenschutzverletzungen festlegen, dass eine Datenschutzverletzung entsprechend der bereits dargelegten Definition erfolgt ist. Die Deklaration erfolgt, sobald alle relevanten Informationen verfügbar sind, damit festgelegt werden kann, dass eine Datenschutzverletzung aufgetreten ist.
 
-In Professional Services sind einige Ereignisse, die scheinbar Microsoft-Datenschutzverletzungen darstellen, in Wirklichkeit keine, da sie durch Aktionen des Kunden oder auf den Systemen eines Kunden aufgetreten sind. Microsoft führt keine Überwachungs- oder Reaktionsmaßnahmen für Datenschutzverletzungen durch, die im Verantwortlichkeitsbereich des Kunden auftreten. Wenn Microsoft jedoch eine kundengesteuerte Datenschutzverletzung erkennt, wird diese als kundengesteuerte Datenschutzverletzung klassifiziert, die das Team für die Reaktion auf Datenschutzverletzungen als "Ereignis" bezeichnet, der Kunde wird entsprechend informiert und erhält auf Anfrage Unterstützung bei den Reaktionsmaßnahmen, soweit dies im Rahmen der kundenseitigen Interaktion mit Microsoft vorgesehen ist. Einige Beispiele für kundenbezogene Datenschutzverletzungen sind das versehentliche Senden von Kundenkennwörtern und anderen sensiblen Daten an Microsoft, Anfragen zum Löschen von Daten und Betrugsfälle, denen der Kunde zum Opfer fällt.
+In Professional Services sind einige Ereignisse, die scheinbar Microsoft-Datenschutzverletzungen darstellen, in Wirklichkeit keine, da sie durch Aktionen des Kunden oder auf den Systemen eines Kunden aufgetreten sind. Microsoft führt keine Überwachungs- oder Reaktionsmaßnahmen für Datenschutzverletzungen durch, die im Verantwortlichkeitsbereich des Kunden auftreten. Wenn Microsoft jedoch eine kundengesteuerte Datenschutzverletzung erkennt, wird dieser Vorfall als kundengesteuerte Datenschutzverletzung klassifiziert, die das Team für die Reaktion auf Datenschutzverletzungen als ‚Ereignis‘ bezeichnet, der Kunde wird entsprechend informiert und erhält auf Anfrage Unterstützung bei den Reaktionsmaßnahmen, soweit dies im Rahmen der kundenseitigen Interaktion mit Microsoft vorgesehen ist. Einige Beispiele für kundenbezogene Datenschutzverletzungen sind das versehentliche Senden von Kundenkennwörtern und anderen sensiblen Daten an Microsoft, Anfragen zum Löschen von Daten und Betrugsfälle, denen der Kunde zum Opfer fällt.
 
 Einige Aktionen werden in diesem Prozess überhaupt nicht berücksichtigt, darunter allgemeine Fragen zu unseren Datenschutzrichtlinien oder -standards, Anträge von betroffenen Personen, Kündigungsanträge, Produktwunschlisten oder Fehlerberichte, die nicht im Zusammenhang mit dem Datenschutz stehen, Datenschutzverletzungen, die sich nicht auf Daten des Kunden beziehen, und Betrug gegenüber Microsoft.
 
@@ -54,7 +54,7 @@ Wenn Microsoft Professional Services eine Datenschutzverletzung identifiziert, e
 
 ### <a name="detection"></a>Erkennung
 
-Microsoft Professional Services prüft kontinuierlich auf neue Datenschutzverletzungen in allen Online- und Offline-Datenspeichern, die personenbezogene Daten enthalten. Wir verwenden verschiedene Methoden, um Datenschutzverletzungen zu erkennen, darunter automatisierte Warnungen, Kundenberichte, Berichte externer Parteien, Beobachtung von Anomalien und Anzeichen für böswillige Aktivitäten oder Hacker-Aktivitäten.
+Microsoft Professional Services prüft kontinuierlich auf neue Datenschutzverletzungen in allen Online- und Offline-Datenspeichern, die personenbezogene Daten enthalten. Wir verwenden verschiedene Methoden, um Datenschutzverletzungen zu erkennen, darunter automatisierte Warnungen, Kundenberichte, Berichte externer Parteien, Beobachtung von Anomalien und Anzeichen für bösartige Aktivitäten oder Hacker-Aktivitäten.
 
 Die von Microsoft Professional Services eingesetzten Erkennungsprozesse sind darauf ausgelegt, Datenschutzverletzungen zu erkennen und Untersuchungen auszulösen. Zum Beispiel:
 
@@ -65,7 +65,7 @@ Die von Microsoft Professional Services eingesetzten Erkennungsprozesse sind dar
 
 ### <a name="data-protection-incident-response-drills-testing-of-data-protection-incident-response-plan"></a>Übungen zur Reaktion auf Datenschutzverletzungen, Testen des Reaktionsplans für Datenschutzverletzungen
 
-Zusätzlich zu den laufenden Schulungen führt Professional Services jedes Jahr Übungen in Zusammenarbeit mit den entsprechenden internen Abteilungen durch, um die Eskalationsverfahren, Rollen und Verantwortlichkeiten im Falle von Datenschutzverletzungen an alle Mitglieder des Stabilisierungsteams zu kommunizieren. Dadurch werden die Projektbeteiligten auf Datenschutzverletzungen in der Realität vorbereitet – ganz gleich, ob diese sicherheitsbezogen, physisch oder datenschutzbezogen sind. Dies umfasst Übungen mit Vertretern des Teams für die Reaktion auf Datenschutzverletzungen sowie der Teams der Sicherheits-, Rechts- und Kommunikationsabteilungen.
+Zusätzlich zu den laufenden Schulung führt Professional Services jedes Jahr Übungen in Zusammenarbeit mit den entsprechenden internen Abteilungen durch, um die Eskalationsverfahren, Rollen und Verantwortlichkeiten im Falle von Datenschutzverletzungen an alle Mitglieder des Stabilisierungsteams zu kommunizieren. Durch die Schulung werden die Projektbeteiligten auf Datenschutzverletzungen in der Realität vorbereitet – ganz gleich, ob diese sicherheitsbezogen, physisch oder datenschutzbezogen sind. Die Schulung umfasst Übungen mit Vertretern des Teams für die Reaktion auf Datenschutzverletzungen sowie der Teams der Sicherheits-, Rechts- und Kommunikationsabteilungen.
 
 Nach den Übungen dokumentieren wir die Ergebnisse und die gewählten Abhilfemethoden.
 

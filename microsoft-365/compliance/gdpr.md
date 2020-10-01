@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a1c04718c1ebb798319a83155a6c70f72b0847de
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 0310226bba62995a6e72178fcf1fd2e96f462944
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208811"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304815"
 ---
 # <a name="general-data-protection-regulation-summary"></a>Zusammenfassung Datenschutz-Grundverordnung
 
@@ -129,7 +129,7 @@ Die DSGVO gibt vor, dass eine Datenschutzfolgenabschätzung Folgendes umfasst:
 Die DSGVO sieht vor, dass Sie als Datencontroller vor der Verarbeitung von Daten, die mit hoher Wahrscheinlichkeit ein großes Risiko für die Rechte und Freiheiten einzelner Personen darstellt, eine Datenschutz-Folgenabschätzung auszuführen. Dies gilt inbesondere dann, wenn bei der Datenverarbeitung neue Technologien eingesetzt werden. Im Folgenden finden Sie eine an die DSGVO angelehnte, nicht vollständige Liste von Fällen, in denen eine Datenschutz-Folgenabschätzung ausgeführt werden muss:
 
 - Automatisierte Verarbeitung zum Zweck der Profilerstellung und für ähnliche Aktivitäten, die rechtliche Auswirkungen haben oder sich in ähnlicher Weise wesentlich auf betroffene Personen auswirken;  
-- Verarbeitung spezieller Kategorien von personenbezogenen Daten, d. h. Daten, aus denen die ethnische Herkunft, die politische Gesinnung oder ähnliches hervorgeht, bzw. Daten über strafrechtliche Verurteilungen und Straftaten;  
+- Umfassende Verarbeitung spezieller Kategorien von personenbezogenen Daten, d. h. Daten, aus denen die ethnische Herkunft, die politische Gesinnung oder Ähnliches hervorgeht, bzw. Daten zu strafrechtlichen Verurteilungen und Straftaten;  
 - Systematische Überwachung eines öffentlich zugänglichen Bereichs.  
 
 Aus der DSGVO geht außerdem hervor, dass die Aufsichtsbehörde konsultiert werden muss, falls Datenverarbeitungsvorgänge ein hohes Risiko für betroffene Personen bergen, das Sie nicht durch geeignete Verfahren eindämmen können.
@@ -268,7 +268,7 @@ Die Einhaltung der DSGVO wird für die meisten Unternehmen Zeit und Geld kosten,
 
 Die DSGVO regelt die Erhebung, Speicherung, Nutzung und Weitergabe von „personenbezogenen Daten“. Personenbezogene Daten sind in der DSGVO allgemein als Daten definiert, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen.
 
-Zu den personenbezogenen Daten können unter anderem Online-Identifikatoren (z. B. IP-Adressen), Mitarbeiterinformationen, Vertriebsdatenbanken, Daten des Kundendienstes, Kundenfeedback-Formulare, Standortdaten, biometrische Daten, CCTV-Aufnahmen, Aufzeichnungen über Treueprogramme, Gesundheits- und Finanzinformationen und vieles mehr gehören. Sie kann sogar Informationen enthalten, die nicht persönlich zu sein scheinen – wie beispielsweise ein Foto einer Landschaft ohne Menschen – wenn diese Informationen durch eine Kontonummer oder einen eindeutigen Code mit einer identifizierbaren Person verbunden sind. Und selbst personenbezogene Daten, die pseudonymisiert wurden, können personenbezogene Daten sein, wenn das Pseudonym mit einer bestimmten Person in Verbindung gebracht werden kann. 
+Zu den personenbezogenen Daten können unter anderem Online-Identifikatoren (z. B. IP-Adressen), Mitarbeiterinformationen, Vertriebsdatenbanken, Daten des Kundendienstes, Kundenfeedback-Formulare, Standortdaten, biometrische Daten, CCTV-Aufnahmen, Aufzeichnungen über Treueprogramme, Gesundheits- und Finanzinformationen und vieles mehr gehören. Diese können sogar Informationen enthalten, die nicht personenbezogen zu sein scheinen – wie beispielsweise ein Foto einer Landschaft ohne Menschen – wenn diese Informationen durch eine Kontonummer oder einen eindeutigen Code mit einer identifizierbaren Person in Verbindung stehen. Und selbst personenbezogene Daten, die pseudonymisiert wurden, können personenbezogene Daten sein, wenn das Pseudonym mit einer bestimmten Person in Verbindung gebracht werden kann. 
 
 Die Verarbeitung bestimmter „spezieller“ Kategorien personenbezogener Daten – wie z. B. personenbezogene Daten, welche die rassische oder ethnische Herkunft einer Person offenbaren oder ihre Gesundheit oder sexuelle Ausrichtung betreffen – unterliegt strengeren Regeln als die Verarbeitung „gewöhnlicher“ personenbezogener Daten. Diese Auswertung der personenbezogenen Daten ist sehr faktenspezifisch, weshalb wir empfehlen, einen Experten zu beauftragen, um Ihre spezifischen Umstände zu beurteilen.
 
