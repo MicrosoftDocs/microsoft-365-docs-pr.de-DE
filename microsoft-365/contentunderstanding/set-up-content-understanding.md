@@ -1,117 +1,117 @@
 ---
-title: Einrichten von SharePoint-Syntex
+title: Einrichten von SharePoint Syntex
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: Einrichten des Inhalts Verständnisses in Project Cortex
-ms.openlocfilehash: 31c6b6dd31b3f1bc47deb8424dd847cc0af6d429
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
-ms.translationtype: MT
+search.appverid: MET150
+localization_priority: Priority
+description: Einrichten des Inhaltsverständnisses in Projekt Cortex
+ms.openlocfilehash: 7fb5998729c9f11902f8fdfaffa62b160928077c
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48304780"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48321349"
 ---
-# <a name="set-up-sharepoint-syntex"></a>Einrichten von SharePoint-Syntex
+# <a name="set-up-sharepoint-syntex"></a>Einrichten von SharePoint Syntex
 
-Administratoren können das Microsoft 365 Admin Center zum Einrichten und Microsoft SharePoint-Syntex verwenden. 
+Administratoren können das Microsoft 365 Admin Center verwenden, um [Microsoft SharePoint Syntex](document-understanding-overview.md) einzurichten. 
 
-Bevor Sie beginnen, sollten Sie Folgendes in Frage stellen:
+Denken Sie vor dem Beginn über Folgendes nach:
 
-- Auf welchen SharePoint-Websites wird die Formularverarbeitung aktiviert? Alle, einige, oder wählen Sie Websites aus?
-- Wie lautet der Name Ihres inhaltscenters und wer ist der primäre Websiteadministrator?
+- Auf welchen SharePoint-Websites wird die Formularverarbeitung aktiviert? Auf allen, auf einigen oder auf ausgewählten Websites?
+- Wie werden Sie Ihr Standard-Inhaltscenter nennen?
 
-Sie können Ihre Einstellungen nach dem ersten Setup im Microsoft 365 Admin Center ändern.
+Sie können Ihre Einstellungen nach der erstmaligen Einrichtung im Microsoft 365 Admin Center ändern.
 
-Der Inhalt in diesem Artikel ist für die Project Cortex private Preview. [Erfahren Sie mehr über Project Cortex](https://aka.ms/projectcortex).
+Der Inhalt in diesem Artikel richtet sich an die private Vorschau von Project Cortex. [Erfahren Sie mehr über Project Cortex](https://aka.ms/projectcortex).
 
-Stellen Sie vor dem einrichten sicher, dass Sie die beste Möglichkeit zum Einrichten und Konfigurieren des Inhalts Verständnisses in Ihrer Umgebung planen. Sie müssen beispielsweise Überlegungen zu den folgenden Namen von ausführen:
+Vergewissern Sie sich vor dem Einrichten, dass Sie die beste Möglichkeit zum Einrichten und Konfigurieren des Inhaltsverständnisses in Ihrer Umgebung planen. Sie müssen sich beispielsweise Gedanken über die Benennung von Folgendem machen:
 
-- Die SharePoint-Websites, für die die Formularverarbeitung aktiviert werden soll-alle, einige oder ausgewählte Websites
-- Ihr inhaltscenter und der Name des primären Websiteadministrators
+- Die SharePoint-Websites, für die Sie die Verarbeitung von Formularen aktivieren möchten – alle, einige oder ausgewählte Websites.
+- Ihr Inhaltscenter und der Name des primären Website-Administrators.
 
 ## <a name="requirements"></a>Anforderungen 
 
 > [!NOTE]
-> Sie müssen über globale Administrator-oder SharePoint-Administratorberechtigungen verfügen, um auf das Microsoft 365 Admin Center zugreifen und das Verständnis für Inhalte einrichten zu können.
+> Sie müssen über globale Administrator- oder SharePoint-Administratorberechtigungen verfügen, um auf das Microsoft 365 Admin Center zugreifen und das Inhaltsverständnis einrichten zu können.
 
-Als Administrator können Sie Änderungen an Ihren ausgewählten Einstellungen jederzeit nach dem Setup und während des Inhalts Grundlegendes zu Verwaltungseinstellungen im Microsoft 365 Admin Center vornehmen.
+Als Administrator können Sie nach dem Einrichten und in den Verwaltungseinstellungen für das Inhaltsverständnis im Microsoft 365 Admin Center jederzeit Änderungen an den ausgewählten Einstellungen vornehmen.
 
-## <a name="to-set-up-sharepoint-syntex"></a>So richten Sie SharePoint-Syntex ein
+## <a name="to-set-up-sharepoint-syntex"></a>So richten Sie SharePoint Syntex ein
 
-1. Wählen Sie im Microsoft 365 Admin Center die Option **Setup**aus, und zeigen Sie dann den Abschnitt **organisatorisches Wissen** an.
+1. Wählen Sie im Microsoft 365 Admin Center **Setup**aus, und zeigen Sie dann den Abschnitt **Organisationswissen** an.
 
-2. Wählen Sie im Abschnitt **organisatorisches Wissen** die Option **Inhalts Verständnis automatisieren**aus.<br/>
+2. Klicken Sie unter **Organisationswissen** auf **Inhaltsverständnis automatisieren**.<br/>
 
-    ![Setup Seite für organisatorisches Wissen](../media/content-understanding/admin-org-knowledge-options.png)</br>
+    ![Setupseite des Organisationswissens](../media/content-understanding/admin-org-knowledge-options.png)</br>
 
-3. Klicken Sie auf der Seite **SharePoint-Syntex automatisieren** auf **Erste Schritte** , um den Installationsvorgang zu durchlaufen.<br/>
+3. Klicken Sie auf der Seite **Inhaltsverständnis automatisieren** auf **Erste Schritte**, um den Setupvorgang zu durchlaufen.<br/>
 
     ![Setup starten](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
-4. Wählen Sie auf der Seite Bild Kennzeichnung aktivieren aus, ob Sie die [Bild Kennzeichnung](image-tagging.md)zulassen möchten.
+4. Wählen Sie auf der Seite zum Aktivieren der Bildkennzeichnung aus, ob Sie die [Bildkennzeichnung](image-tagging.md) zulassen möchten.
 
-    ![Screenshot von Bild Kennzeichnungs Optionen](../media/content-understanding/admin-content-understanding-setup-image-tagging.png)</br>
+    ![Screenshot der Optionen für die Bildkennzeichnung](../media/content-understanding/admin-content-understanding-setup-image-tagging.png)</br>
 
-5. Auf der Seite **Formularverarbeitung konfigurieren** können Sie auswählen, ob Benutzer in der Lage sein sollen, Ai Builder zum Erstellen von Formular Verarbeitungs Modellen in bestimmten SharePoint-Dokumentbibliotheken zu verwenden. Im Menüband der Dokumentbibliothek wird eine Menüoption zur Verfügung stehen, um **ein Formular Verarbeitungsmodell** in SharePoint-Dokumentbibliotheken zu erstellen, in denen es aktiviert ist.
+5. Auf der Seite **Formularverarbeitung konfigurieren** können Sie auswählen, ob Sie zulassen möchten, dass Benutzer Formularverarbeitungsmodelle in bestimmten SharePoint-Dokumentbibliotheken erstellen können. Im Menüband "Dokumentbibliothek" wird eine Menüoption zum **Erstellen eines Formularverarbeitungsmodells** in SharePoint-Dokumentbibliotheken verfügbar, in denen es aktiviert ist.
  
-     Für **welche SharePoint-Bibliotheken die Option zum Erstellen eines Formular Verarbeitungsmodells anzeigen soll**, können Sie Folgendes auswählen:</br>
-      - **Alle SharePoint-Bibliotheken** , um Sie allen SharePoint-Bibliotheken in Ihrer Organisation zur Verfügung zu stellen.</br>
-      - **Nur Bibliotheken an ausgewählten Websites**, und wählen Sie dann die Websites aus, in denen Sie verfügbar sein sollen.</br>
+     Für **Welche SharePoint-Bibliotheken sollen die Option zum Erstellen eines Formularverarbeitungsmodells anzeigen** können Sie Folgendes auswählen:</br>
+      - **Alle SharePoint-Bibliotheken**, damit die Option für alle SharePoint-Bibliotheken in Ihrer Organisation verfügbar gemacht wird.</br>
+      - **Nur Bibliotheken in ausgewählten Websites**. Wählen Sie dann die Websites aus, auf denen Sie die Option verfügbar machen möchten, oder laden Sie eine Liste mit bis zu 50 Websites hoch.</br>
+      - **Keine SharePoint-Bibliotheken**, wenn Sie die Option nicht auf Websites verfügbar machen möchten (Sie können dies nach der Einrichtung ändern).
 
    ![Konfigurieren der Formularverarbeitung](../media/content-understanding/admin-configforms.png)
 
    > [!Note]
-   > Das Aktivieren dieser Einstellung für eine SharePoint-Dokumentbibliothek wirkt sich nicht auf vorhandene Modelle aus, die auf die Bibliothek angewendet werden, oder auf die Möglichkeit, Dokument Verständnis Modelle auf eine Bibliothek anzuwenden. 
+   > Wenn Sie eine Website entfernen, nachdem sie hinzugefügt wurde, hat dies keine Auswirkung auf vorhandene Modelle, die auf die Bibliotheken auf dieser Website angewendet werden, oder die Möglichkeit, Dokumentverständnismodelle auf eine Bibliothek anzuwenden. 
     
-6. Auf der Seite **inhaltscenter erstellen** können Sie eine SharePoint-inhaltscenter-Website erstellen, auf der Ihre Benutzerdokument Verständnis Modelle erstellen und verwalten können. </br>
-    a. Geben Sie unter **Websitename**den Namen ein, den Sie Ihrer inhaltscenter-Website zuweisen möchten.</br>
-    b. Die **Websiteadresse** zeigt basierend auf dem, was Sie für den Websitenamen ausgewählt haben, die URL für Ihre Website an. Wenn Sie Sie ändern möchten, klicken Sie auf **Bearbeiten**.</br>
+6. Auf der Seite **Inhaltscenter erstellen** können Sie eine Website im SharePoint-Inhaltscenter erstellen, auf der Ihre Benutzer Modelle zum Dokumentverständnis erstellen und verwalten können. </br>
+    a. Geben Sie für den **Websitenamen** den Namen ein, den Sie Ihrer Inhaltscenter-Website zuweisen möchten.</br>
+    b. Die **Websiteadresse** zeigt die URL für Ihre Website basierend auf Ihrer Auswahl für den Websitenamen an. Wenn Sie die Einstellungen ändern möchten, klicken Sie auf **Bearbeiten**.</br>
 
-      ![Inhaltscenter erstellen](../media/content-understanding/admin-cu-create-cc.png)</br>
+      ![Erstellen eines Inhaltscenters](../media/content-understanding/admin-cu-create-cc.png)</br>
 
     Wählen Sie **Weiter** aus.
 
-7. Auf der Seite **überprüfen und fertig stellen** können Sie sich Ihre ausgewählte Einstellung ansehen und auswählen, dass Sie Änderungen vornehmen möchten. Wenn Sie mit Ihrer Auswahl zufrieden sind, wählen Sie **aktivieren**aus.
+7. Auf der Seite **Überprüfen und beenden** können Sie sich die ausgewählte Einstellung ansehen und Änderungen vornehmen. Wenn Sie mit Ihrer Auswahl zufrieden sind, wählen Sie **Aktivieren** aus.
 
-8. Klicken Sie auf der Seite Bestätigung auf **Fertig**.
+8. Klicken Sie auf der Bestätigungsseite auf **Fertig**.
 
-9. Sie kehren zu Ihrer Seite zum **Automatisieren von Inhalten** zurück. Auf dieser Seite können Sie **Verwalten** auswählen, um Änderungen an Ihren Konfigurationseinstellungen vorzunehmen. 
+9. Sie kehren zur Seite **Inhaltsverständnis automatisieren** zurück. Auf dieser Seite können Sie **Verwalten** auswählen, um Änderungen an Ihren Konfigurationseinstellungen vorzunehmen. 
 
 ## <a name="assign-licenses"></a>Lizenzen zuweisen
 
-Nachdem Sie die SharePoint-Syntex konfiguriert haben, müssen Sie Lizenzen für die Benutzer zuweisen, die die Formularverarbeitung und Dokument Verständnis Features verwenden sollen.
+Nachdem Sie SharePoint Syntex konfiguriert haben, müssen Sie Lizenzen für die Benutzer zuweisen, die SharePoint Syntex-Features verwenden werden.
 
-So weisen Sie Lizenzen zu:
+So weisen Sie Lizenzen zu
 
-1. Klicken Sie im Microsoft 365 Admin Center unter **Benutzer**auf **aktive Benutzer**.
+1. Klicken Sie im Microsoft 365 Admin Center auf **Benutzer** > **Aktive Benutzer**.
 
-2. Wählen Sie die Benutzer aus, die Sie lizenzieren möchten, und klicken Sie auf **Produktlizenzen verwalten**.
+2. Wählen Sie die Benutzer aus, denen Sie eine Lizenz zuweisen möchten, und klicken Sie dann auf **Produktlizenzen verwalten**.
 
-3. Wählen Sie **mehr zuweisen**aus.
+3. Wählen Sie **Weitere zuweisen** aus.
 
-4. Wählen Sie **Intelligent Content Services**aus. Stellen Sie sicher, dass unter **apps**die Option **Common Data Service for Intelligent Content Services** und **Intelligent Content Services** ausgewählt ist.
+4. Wählen Sie **Intelligente Inhaltsdienste** aus. Stellen Sie sicher, dass unter **Apps** die Optionen **Common Data Service für intelligente Inhaltsdienste** und **Intelligente Inhaltsdienste** aktiviert sind.
 
-    ![SharePoint-Syntex-Lizenzen im Microsoft 365 Admin Center](../media/content-understanding/sharepoint-syntex-licenses.png)
+    ![SharePoint Syntex-Lizenzen im Microsoft 365 Admin Center](../media/content-understanding/sharepoint-syntex-licenses.png)
 
 5. Klicken Sie auf **Änderungen speichern**.
 
-## <a name="ai-builder-credits"></a>Credits für AI Builder
+## <a name="ai-builder-credits"></a>KI-Generator-Punkte
 
-Wenn Sie 300 oder mehr SharePoint-Syntex-Lizenzen für SharePoint-Syntex in Ihrer Organisation haben, werden Ihnen 1 Million AI Builder Credits zugewiesen. Wenn Sie über weniger als 300 Lizenzen verfügen, müssen Sie die Credits von AI Builder erwerben, um die Formularverarbeitung verwenden zu können.
+Wenn Sie 300 oder mehr SharePoint Syntex-Lizenzen für SharePoint Syntex in Ihrer Organisation besitzen, werden Ihnen 1 Million KI-Generator-Punkte zugeteilt. Wenn Sie weniger als 300 Lizenzen besitzen, müssen Sie KI-Generator-Punkte erwerben, um die Formularverarbeitung zu verwenden.
 
-Sie können die Kapazität des AI-Generators schätzen, die für Sie mit dem [AI Builder-Rechner](https://powerapps.microsoft.com/ai-builder-calculator)geeignet ist.
+Sie können die für Sie geeignete KI-Generator-Kapazität mit dem [KI-Generator-Rechner](https://powerapps.microsoft.com/ai-builder-calculator) abschätzen.
 
-Wechseln Sie zum [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/resources/capacity) , um ihre Guthaben und Ihre Nutzung zu überprüfen.
+Wechseln Sie zum [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/resources/capacity), um Ihre Punkte und deren Nutzung zu überprüfen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen:
 
-[Übersicht über das Formular Verarbeitungsmodell](https://docs.microsoft.com/ai-builder/form-processing-model-overview)
+[Übersicht über das Formularverarbeitungsmodell](https://docs.microsoft.com/ai-builder/form-processing-model-overview)
 
-[Schritt-für-Schritt: Erstellen eines Dokument Verständnisses des Modells (Video)](https://www.youtube.com/watch?v=DymSHObD-bg)
+[Schrittweise Anleitung zum Erstellen eines Modells für das Dokumentverständnis (Video)](https://www.youtube.com/watch?v=DymSHObD-bg)
 
