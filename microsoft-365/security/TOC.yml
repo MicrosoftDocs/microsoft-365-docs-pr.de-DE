@@ -439,8 +439,6 @@
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
             - name: Übersicht über das Sicherheitsdashboard
               href: ./office-365-security/security-dashboard.md
-            - name: Anzeigen von Informationen über schädliche Dateien
-              href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
         - name: Office 365 Advanced Threat Protection
           href: ./office-365-security/office-365-atp.md
           items:
@@ -452,19 +450,23 @@
               items:
                 - name: Einrichtungsaufgaben für globale Administratoren
                   items:
-                    - name: Einrichten von Richtlinien für ATP-sichere Links
-                      href: ./office-365-security/set-up-atp-safe-links-policies.md
-                    - name: Einrichten von Richtlinien zu sicheren Anlagen in ATP
+                    - name: Einrichten von Richtlinien für sichere Anlagen in Office 365 ATP
                       href: ./office-365-security/set-up-atp-safe-attachments-policies.md
-                    - name: 'Einrichten einer benutzerdefinierten Liste für URLs, die nicht neu geschrieben werden sollen'
-                      href: ./office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp.md
-                    - name: Einrichten einer benutzerdefinierten Liste für blockierte URLs
-                      href: ./office-365-security/set-up-a-custom-blocked-urls-list-atp.md
+                    - name: Einrichten von Richtlinien für sichere Links in Office 365 ATP
+                      href: ./office-365-security/set-up-atp-safe-links-policies.md
+                    - name: Konfigurieren globaler Einstellungen für sichere Links in Office 365 ATP
+                      href: ./office-365-security/configure-global-settings-for-safe-links.md
                 - name: Einrichtungsaufgaben für Rollen-Administratoren
                   items:
                     - name: 'Aktivieren von ATP für SharePoint, OneDrive und Microsoft Teams'
                       href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
-            - name: Kampagnenansichten
+            - name: Sichere Anlagen in Office 365 ATP
+              href: ./office-365-security/atp-safe-attachments.md
+            - name: 'ATP für SharePoint, OneDrive und Microsoft Teams'
+              href: ./office-365-security/atp-for-spo-odb-and-teams.md
+            - name: Sichere Links in Office 365 ATP
+              href: ./office-365-security/atp-safe-links.md
+            - name: Kampagnenansichten in Office 365 ATP
               href: ./office-365-security/campaigns.md
             - name: Automatische Untersuchung und Reaktion
               items:
@@ -490,8 +492,6 @@
               href: ./office-365-security/view-reports-for-atp.md
             - name: Verstehen der neuesten Angriffe mithilfe von Bedrohungsanalyse
               href: ./mtp/latest-attack-campaigns.md
-            - name: Bedeutung von Warnungsseiten für ATP-sichere Links
-              href: ./office-365-security/atp-safe-links-warning-pages.md
             - name: Verwendung von Bedrohungs-Trackern
               href: ./office-365-security/threat-trackers.md
             - name: Angriffssimulator in Office 365 ATP
@@ -515,14 +515,6 @@
               items:
                 - name: Funktionsweise der automatischen Untersuchung und Reaktion
                   href: ./office-365-security/automated-investigation-response-office.md
-                - name: Funktionsweise des ATP-Features für sichere Links
-                  href: ./office-365-security/how-atp-safe-links-works.md
-                - name: Funktionsweise sicherer Anlagen in ATP
-                  href: ./office-365-security/how-atp-safe-attachments-works.md
-                - name: Details zu dynamischer Bereitstellung und Vorschau
-                  href: ./office-365-security/dynamic-delivery-and-previewing.md
-                - name: 'ATP für SharePoint, OneDrive und Microsoft Teams'
-                  href: ./office-365-security/atp-for-spo-odb-and-teams.md
                 - name: Wie die Untersuchung von und Reaktion auf Bedrohungen funktioniert
                   href: ./office-365-security/office-365-ti.md
         - name: Verwalten von Sicherheitsvorfällen
