@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch einem Dokument oder einer E-Mail zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: e28c3866ad674b4bf933bd83e0ebccc19657ca7b
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: c4f00c0a11b172671da456b27e0e33c081728614
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131803"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326746"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -75,7 +75,7 @@ Verwenden Sie die folgende Tabelle, um die Unterschiede im Verhalten der beiden 
 
 |Feature oder Verhalten|Bezeichnungseinstellung: automatisches Bezeichnen für Office-Anwendungen |Richtlinie: automatisches Bezeichnen|
 |:-----|:-----|:-----|
-|App-Abhängigkeit|[Ja](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |Nein |
+|App-Abhängigkeit|[Ja](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |Nein \* |
 |Nach Speicherort einschränken|Nein |Ja |
 |Bedingungen: trainierbare Klassifizierungen|Ja |Nein |
 |Bedingungen: Freigabeoptionen und zusätzliche E-Mail-Optionen|Nein |Ja |
@@ -85,6 +85,8 @@ Verwenden Sie die folgende Tabelle, um die Unterschiede im Verhalten der beiden 
 |Visuelle Markierungen anwenden |Ja |Ja (nur E-Mail) |
 |Außerkraftsetzen der IRM-Verschlüsselung ohne Bezeichnung angewendet|Ja, wenn der Benutzer das Mindestnutzungsrecht des Exportierens hat |Ja (nur E-Mail) |
 |Bezeichnen eingehender E-Mails|Nein |Ja (Verschlüsselung nicht angewendet) |
+
+\* Die Funktion „Automatisches Bezeichnen“ ist derzeit nicht in allen Regionen verfügbar. Wenn Ihr Mandant diese Funktion nicht unterstützt, wird die Registerkarte „Automatisches Bezeichnen“ im Admin Center für Bezeichnungen (Admin Labeling Center) nicht angezeigt.
 
 > [!NOTE]
 > Wenn der Inhalt manuell bezeichnet wurde, wird diese Bezeichnung niemals durch automatisches Bezeichnen ersetzt. Richtlinien der automatischen Bezeichnung können jedoch eine [Bezeichnung niedrigerer Priorität](sensitivity-labels.md#label-priority-order-matters) ersetzen, das durch die Verwendung der automatischen Bezeichnung für Office-Anwendungen angewendet wurde.
@@ -242,6 +244,8 @@ Schließlich können Sie den Simulationsmodus verwenden, um einen Näherungswert
     
     ![Registerkarte „Automatisches Bezeichnen“](../media/auto-labeling-tab.png)
     
+    > [!NOTE]
+    > Wenn die Registerkarte **Automatisches Bezeichnen** nicht angezeigt wird, steht diese Funktion in Ihrer Region derzeit nicht zur Verfügung.
 
 3. Wählen Sie **+ Richtlinie für die automatische Bezeichnung erstellen** aus. Dadurch wird der Assistent für neue Richtlinien gestartet:
     
