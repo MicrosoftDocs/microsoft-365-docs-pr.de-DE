@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 3fc563c762e7cd00888665b63e66159e4d3d9612
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 6d627dcf3d6ec8ca1d2aa76eab484361c25b529e
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196977"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338417"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -46,9 +46,9 @@ Die `FileProfile()` Funktion ist eine Anreicherungs Funktion in [Advanced Huntin
 | Signierers | Zeichenfolge | Informationen über den unterschreibenden der Datei |
 | Aussteller | Zeichenfolge | Informationen zur ausstellenden Zertifizierungsstelle (Certification Authority, ca) |
 | SignerHash | Zeichenfolge | Eindeutiger Hashwert zur Identifizierung der signierenden |
-| IsCertificateValid | boolean | Gibt an, ob das zum Signieren der Datei verwendete Zertifikat gültig ist. |
-| IsRootSignerMicrosoft | boolean | Gibt an, ob die Signatur des Stammzertifikats Microsoft lautet. |
-| IsExecutable | boolean | Gibt an, ob es sich bei der Datei um eine PE-Datei (Portable Executable) handelt |
+| IsCertificateValid | boolescher | Gibt an, ob das zum Signieren der Datei verwendete Zertifikat gültig ist. |
+| IsRootSignerMicrosoft | boolescher | Gibt an, ob die Signatur des Stammzertifikats Microsoft lautet. |
+| IsExecutable | boolescher | Gibt an, ob es sich bei der Datei um eine PE-Datei (Portable Executable) handelt |
 | Bedrohungsname | Zeichenfolge | Erkennungsname für Schadsoftware oder andere gefundene Bedrohungen |
 | Publisher | Zeichenfolge | Name der Organisation, die die Datei veröffentlicht hat |
 | Software Name | string | Name des Softwareprodukts |
@@ -61,8 +61,8 @@ invoke FileProfile(x,y)
 
 ## <a name="arguments"></a>Argumente
 
-- **x** – zu verwendende Datei-ID-Spalte: `SHA1` , `SHA256` `InitiatingProcessSHA1` oder `InitiatingProcessSHA256` ; Funktion verwendet, `SHA1` Wenn nicht angegeben
-- **y** – Grenzwert für die Anzahl der zu bereichenden Datensätze, 1-1000; Funktion verwendet 100, wenn nicht angegeben
+- **x**– zu verwendende Datei-ID-Spalte: `SHA1` , `SHA256` , `InitiatingProcessSHA1` , oder `InitiatingProcessSHA256` ; Funktion verwendet, `SHA1` Wenn nicht angegeben
+- **y**– Grenzwert für die Anzahl der zu bereichenden Datensätze, 1-1000; Funktion verwendet 100, wenn nicht angegeben
 
 ## <a name="examples"></a>Beispiele
 

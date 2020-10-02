@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: Erstellen Sie Warnungsrichtlinien im Security and Compliance Center in Office 365 und Microsoft 365, um potenzielle Bedrohungen, Datenverlust und Berechtigungsprobleme zu überwachen.
-ms.openlocfilehash: 4b12457b051b19aa1eaca0d92b342ab8a7b34134
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 9f05fe464b4945d739c5920282e45e07f9fcb344
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200584"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338428"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Warnungsrichtlinien im Security & Compliance Center
 
@@ -109,10 +109,11 @@ In der folgenden Tabelle werden die verfügbaren Standard Warnungsrichtlinien un
 
 In der Tabelle werden außerdem die Office 365 Enterprise und Office 365 US Government-Plan angegeben, der für jeden erforderlich ist. Einige standardmäßige Warnungsrichtlinien sind verfügbar, wenn Ihre Organisation zusätzlich zu einem E1/F1/G1-oder E3/G3-Abonnement über das entsprechende Add-on-Abonnement verfügt.
 
-|**Standardmäßige Warnungs Richtlinie**|**Beschreibung**|**Category**|**Office 365 Enterprise Abonnement**|
+| Standardmäßige Warnungs Richtlinie | Beschreibung | Kategorie | Office 365 Enterprise Abonnement |
 |:-----|:-----|:-----|:-----|
 |**Ein potenziell böswilliger URL-Klick wurde erkannt.**|Generiert eine Warnung, wenn ein Benutzer, der durch [Office 365 sichere ATP-Links](../security/office-365-security/atp-safe-links.md) in Ihrer Organisation geschützt wird, auf einen bösartigen Link klickt. Dieses Ereignis wird ausgelöst, wenn URL-Urteils Änderungen durch Office 365 ATP identifiziert werden oder wenn Benutzer die Office 365 ATP-sichere Links Seiten außer Kraft setzen (basierend auf der Microsoft 365 for Business ATP-Richtlinie für sichere Links in Ihrer Organisation). Diese Warnungs Richtlinie weist eine Einstellung mit **hohem** Schweregrad auf. Für Office 365 ATP P2, E5, G5-Kunden, löst diese Warnung automatisch die [Automatische Untersuchung und Antwort in Office 365 aus](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air). Weitere Informationen zu Ereignissen, die diese Warnung auslösen, finden Sie unter [Einrichten Office 365 ATP-Richtlinien für sichere Links](../security/office-365-security/set-up-atp-safe-links-policies.md).|Bedrohungsverwaltung|E5/G5 oder Office 365 Add-on-Abonnement für ATP P2|
 |**Ergebnis der Administrator Übermittlung abgeschlossen**|Generiert eine Warnung, wenn eine [Administrator Übermittlung](../security/office-365-security/admin-submission.md) den erneuten Scan der übermittelten Entität abgeschlossen hat. Eine Warnung wird jedes Mal ausgelöst, wenn ein erneutes Scanergebnis aus einer Administrator Übermittlung gerendert wird. Diese Warnungen sollen Sie daran erinnern, [die Ergebnisse früherer Übermittlungen zu überprüfen](https://protection.office.com/reportsubmission), Benutzer gemeldete Nachrichten zu übermitteln, um die neuesten Urteile zur Richtlinienüberprüfung und erneuten Überprüfung zu erhalten, und Ihnen helfen, festzustellen, ob die Filterrichtlinien in Ihrer Organisation die beabsichtigte Auswirkung haben. Diese Richtlinie weist eine Einstellung mit **niedrigem** Schweregrad auf.|Bedrohungsverwaltung|E1/F1, E3 oder E5|
+|**Manuelles untersuchen von e-Mails durch den Administrator ausgelöst**|Generiert eine Warnung, wenn ein Administrator die manuelle Untersuchung einer e-Mail aus dem Threat Explorer auslöst. Weitere Informationen finden Sie unter [Example: A Security Administrator Triggers a Investigation from Threat Explorer] ( https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) . Diese Warnung benachrichtigt Ihre Organisation, dass die Untersuchung gestartet wurde. Die Benachrichtigung enthält Informationen darüber, wer Sie ausgelöst hat, und enthält einen Link zu der Untersuchung. Diese Richtlinie weist eine Einstellung für den **Informations** Grad auf.|Bedrohungsverwaltung| E5/G5 oder Office 365 Add-on-Abonnement für ATP P2| 
 |**Erstellen der Weiterleitungs-/Umleitungsregel**|Generiert eine Warnung, wenn jemand in Ihrer Organisation eine Posteingangsregel für Ihr Postfach erstellt, die Nachrichten an ein anderes e-Mail-Konto weiterleitet oder leitet. Diese Richtlinie verfolgt nur Posteingangsregeln, die mit Outlook im Internet (früher als Outlook Web App bezeichnet) oder Exchange Online PowerShell erstellt wurden. Diese Richtlinie weist eine Einstellung mit **niedrigem** Schweregrad auf. Weitere Informationen zum Verwenden von Posteingangsregeln zum Weiterleiten und Umleiten von e-Mails in Outlook im Internet finden Sie unter [Use Rules in Outlook im Internet, um Nachrichten automatisch an ein anderes Konto weiter](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed)zuleiten.|Bedrohungsverwaltung|E1/F1/G1, E3/G3 oder E5/G5|
 |**eDiscovery-Suche gestartet oder exportiert**|Generiert eine Warnung, wenn ein Benutzer das Tool für die Inhaltssuche im Security and Compliance Center verwendet. Eine Warnung wird ausgelöst, wenn die folgenden Inhalts Suchaktivitäten ausgeführt werden: <br/><br/>* Eine Inhaltssuche wird gestartet<br/>* Die Ergebnisse einer Inhaltssuche werden exportiert.<br/>* Ein Inhalts Suchbericht wird exportiert.<br/><br/>Warnungen werden auch ausgelöst, wenn die vorherigen Inhalts Suchaktivitäten in Verbindung mit einem eDiscovery-Fall ausgeführt werden. Diese Richtlinie weist eine Einstellung mit **mittlerem** Schweregrad auf. Weitere Informationen zu Inhalts Suchaktivitäten finden Sie unter [Suchen nach eDiscovery-Aktivitäten im Überwachungsprotokoll](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities).|Bedrohungsverwaltung|E1/F1/G1, E3/G3 oder E5/G5|
 |**Erhöhung der Exchange-Administratorberechtigung**|Generiert eine Warnung, wenn jemandem Administratorrechte in Ihrer Exchange Online Organisation zugewiesen sind. Beispiel: Wenn ein Benutzer der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzugefügt wird. Diese Richtlinie weist eine Einstellung mit **niedrigem** Schweregrad auf.|Berechtigungen|E1/F1/G1, E3/G3 oder E5/G5|
@@ -238,17 +239,18 @@ Informationen zur Kategorie, der eine standardmäßige Warnungs Richtlinie zugew
 |Aufbewahrungsverwaltung mit Ansichts Schutz|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
 |||||||
 
-**Tipp:** Führen Sie die folgenden Befehle in Security & Compliance Center PowerShell aus, um die Rollen anzuzeigen, die den einzelnen Standardrollengruppen zugewiesen sind:
-
-```PowerShell
-$RoleGroups = Get-RoleGroup
-```
-
-```PowerShell
-$RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,"-----------------------"; Get-RoleGroup $_.Identity | Select-Object -ExpandProperty Roles}
-```
-
-Sie können auch die einer Rollengruppe zugewiesenen Rollen im Security & Compliance Center anzeigen. Wechseln Sie zur Seite **Berechtigungen** , und wählen Sie eine Rollengruppe aus. Die zugewiesenen Rollen werden auf der Flyout-Seite aufgelistet.
+> [!TIP]
+> Führen Sie die folgenden Befehle in Security & Compliance Center PowerShell aus, um die Rollen anzuzeigen, die den einzelnen Standardrollengruppen zugewiesen sind:
+> 
+> ```powershell
+> $RoleGroups = Get-RoleGroup
+> ```
+> 
+> ```powershell
+> $RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,"-----------------------"; Get-RoleGroup $_.Identity | Select-Object -ExpandProperty Roles}
+> ```
+> 
+> Sie können auch die einer Rollengruppe zugewiesenen Rollen im Security & Compliance Center anzeigen. Wechseln Sie zur Seite **Berechtigungen** , und wählen Sie eine Rollengruppe aus. Die zugewiesenen Rollen werden auf der Flyout-Seite aufgelistet.
 
 ## <a name="managing-alerts"></a>Verwalten von Warnungen
 
