@@ -9,43 +9,50 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: 'Informationen zum Anwenden einer Aufbewahrungsbezeichnung auf ein Dokumentverständnismodell '
-ms.openlocfilehash: 26e8aea3ef52e9d850dea2f2268858d8367f7408
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 6f616dc3d2ebd87bcc70ee01c9f3a88db60b6f17
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321277"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337241"
 ---
-# <a name="document-understanding-model-usage-analytics"></a><span data-ttu-id="e5684-103">Verwendungsanalysen von Dokumentverständnismodellen</span><span class="sxs-lookup"><span data-stu-id="e5684-103">Document understanding model usage analytics</span></span>
+# <a name="document-understanding-model-usage-analytics"></a><span data-ttu-id="edafd-103">Verwendungsanalysen von Dokumentverständnismodellen</span><span class="sxs-lookup"><span data-stu-id="edafd-103">Document understanding model usage analytics</span></span>
 
-<span data-ttu-id="e5684-104">Im Microsoft SharePoint Syntex-Inhaltscenter finden Sie Modellverwendungsanalysen, um weitere Informationen zur Verwendung von Modellen bereitzustellen, die aus dem Inhaltscenter veröffentlicht wurden.</span><span class="sxs-lookup"><span data-stu-id="e5684-104">Your Microsoft SharePoint Syntex content center provides you model usage analytics to provide more information about how your models that have been published from the content center are being used.</span></span> <span data-ttu-id="e5684-105">Dies umfasst eine Rollup der folgenden Informationen:</span><span class="sxs-lookup"><span data-stu-id="e5684-105">This includes a roll-up of the following information:</span></span>
+</br>
 
-- <span data-ttu-id="e5684-106">Wo Ihre Modelle angewendet werden</span><span class="sxs-lookup"><span data-stu-id="e5684-106">Where your models are being applied</span></span>
-- <span data-ttu-id="e5684-107">Wie viele Dateien werden im Zeitverlauf verarbeitet?</span><span class="sxs-lookup"><span data-stu-id="e5684-107">How many files are being processes over time</span></span>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GpJY]  
+
+</br>
+
+
+<span data-ttu-id="edafd-104">Im Microsoft SharePoint Syntex-Inhaltscenter finden Sie Modellverwendungsanalysen, um weitere Informationen zur Verwendung von Modellen bereitzustellen, die aus dem Inhaltscenter veröffentlicht wurden.</span><span class="sxs-lookup"><span data-stu-id="edafd-104">Your Microsoft SharePoint Syntex content center provides you model usage analytics to provide more information about how your models that have been published from the content center are being used.</span></span> <span data-ttu-id="edafd-105">Dies umfasst eine Rollup der folgenden Informationen:</span><span class="sxs-lookup"><span data-stu-id="edafd-105">This includes a roll-up of the following information:</span></span>
+
+- <span data-ttu-id="edafd-106">Wo Ihre Modelle angewendet werden</span><span class="sxs-lookup"><span data-stu-id="edafd-106">Where your models are being applied</span></span>
+- <span data-ttu-id="edafd-107">Wie viele Dateien werden im Zeitverlauf verarbeitet?</span><span class="sxs-lookup"><span data-stu-id="edafd-107">How many files are being processes over time</span></span>
 
  ![Modellanalyse](../media/content-understanding/model-analytics.png) </br>
 
-## <a name="total-model-percentage"></a><span data-ttu-id="e5684-109">Prozentsatz des Gesamtmodells</span><span class="sxs-lookup"><span data-stu-id="e5684-109">Total model percentage</span></span>
+## <a name="total-model-percentage"></a><span data-ttu-id="edafd-109">Prozentsatz des Gesamtmodells</span><span class="sxs-lookup"><span data-stu-id="edafd-109">Total model percentage</span></span>
 
    ![Prozentsatz des Gesamtmodells](../media/content-understanding/total-model-percentage.png) </br>
 
-<span data-ttu-id="e5684-111">Das **Gesamtmodell des prozentualen** Kreisdiagramms zeigt jedes veröffentlichte Modell als Prozentsatz der Gesamtzahl der Dateien an, die von allen veröffentlichten Modellen im Inhaltscenter verarbeitet wurden.</span><span class="sxs-lookup"><span data-stu-id="e5684-111">The **Total model percentage** pie chart displays each published model as a percentage of the total files processed by all published models on the content center.</span></span>
+<span data-ttu-id="edafd-111">Das **Gesamtmodell des prozentualen** Kreisdiagramms zeigt jedes veröffentlichte Modell als Prozentsatz der Gesamtzahl der Dateien an, die von allen veröffentlichten Modellen im Inhaltscenter verarbeitet wurden.</span><span class="sxs-lookup"><span data-stu-id="edafd-111">The **Total model percentage** pie chart displays each published model as a percentage of the total files processed by all published models on the content center.</span></span>
 
-<span data-ttu-id="e5684-112">Außerdem zeigt jedes Modell die **Vollständigkeitsrate** an, der Prozentsatz der hochgeladenen Dateien, die vom Modell erfolgreich analysiert wurden.</span><span class="sxs-lookup"><span data-stu-id="e5684-112">Each model also shows the **Completeness Rate**, the percentage of uploaded files that were successfully analyzed by the model.</span></span> <span data-ttu-id="e5684-113">Eine niedrige Vollständigkeitsrate kann bedeuten, dass es Probleme mit dem Modell oder den zu analysierenden Dateien gibt.</span><span class="sxs-lookup"><span data-stu-id="e5684-113">A low completeness rate may mean that there are issues with either the model or the files that are being analyzed.</span></span>
+<span data-ttu-id="edafd-112">Außerdem zeigt jedes Modell die **Vollständigkeitsrate** an, der Prozentsatz der hochgeladenen Dateien, die vom Modell erfolgreich analysiert wurden.</span><span class="sxs-lookup"><span data-stu-id="edafd-112">Each model also shows the **Completeness Rate**, the percentage of uploaded files that were successfully analyzed by the model.</span></span> <span data-ttu-id="edafd-113">Eine niedrige Vollständigkeitsrate kann bedeuten, dass es Probleme mit dem Modell oder den zu analysierenden Dateien gibt.</span><span class="sxs-lookup"><span data-stu-id="edafd-113">A low completeness rate may mean that there are issues with either the model or the files that are being analyzed.</span></span>
 
-## <a name="files-processed-over-time"></a><span data-ttu-id="e5684-114">Im Verlauf der Zeit verarbeitete Dateien</span><span class="sxs-lookup"><span data-stu-id="e5684-114">Files processed over time</span></span>
+## <a name="files-processed-over-time"></a><span data-ttu-id="edafd-114">Im Verlauf der Zeit verarbeitete Dateien</span><span class="sxs-lookup"><span data-stu-id="edafd-114">Files processed over time</span></span>
 
    ![Verarbeitete Dateien](../media/content-understanding/files-processed-over-time.png) </br>
 
-<span data-ttu-id="e5684-116">Das Datei-Balkendiagramm für \*\* Dateien, die im Verlauf der Zeit verarbeitet wurden\*\*, zeigt nicht nur die Anzahl der Dateien an, die über einen Zeitraum für jedes Modell verarbeitet wurden, sondern auch die Dokumentbibliotheken, auf die das Modell angewendet wurde.</span><span class="sxs-lookup"><span data-stu-id="e5684-116">The **Files processed over time** bar chart shows you not only the number of files processed over time for each model, but also shows you the document libraries to which the model was applied.</span></span>
+<span data-ttu-id="edafd-116">Das Datei-Balkendiagramm für \*\* Dateien, die im Verlauf der Zeit verarbeitet wurden\*\*, zeigt nicht nur die Anzahl der Dateien an, die über einen Zeitraum für jedes Modell verarbeitet wurden, sondern auch die Dokumentbibliotheken, auf die das Modell angewendet wurde.</span><span class="sxs-lookup"><span data-stu-id="edafd-116">The **Files processed over time** bar chart shows you not only the number of files processed over time for each model, but also shows you the document libraries to which the model was applied.</span></span>
 
    ![Balkendiagramm](../media/content-understanding/bar-chart-models.png) </br>
 
-## <a name="see-also"></a><span data-ttu-id="e5684-118">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="e5684-118">See Also</span></span>
-[<span data-ttu-id="e5684-119">Erstellen einer Klassifizierung</span><span class="sxs-lookup"><span data-stu-id="e5684-119">Create a classifier</span></span>](create-a-classifier.md)
+## <a name="see-also"></a><span data-ttu-id="edafd-118">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="edafd-118">See Also</span></span>
+[<span data-ttu-id="edafd-119">Erstellen einer Klassifizierung</span><span class="sxs-lookup"><span data-stu-id="edafd-119">Create a classifier</span></span>](create-a-classifier.md)
 
-[<span data-ttu-id="e5684-120">Erstellen eines Extraktors</span><span class="sxs-lookup"><span data-stu-id="e5684-120">Create an extractor</span></span>](create-an-extractor.md)
+[<span data-ttu-id="edafd-120">Erstellen eines Extraktors</span><span class="sxs-lookup"><span data-stu-id="edafd-120">Create an extractor</span></span>](create-an-extractor.md)
 
-[<span data-ttu-id="e5684-121">Übersicht über das Dokumentenverständnis</span><span class="sxs-lookup"><span data-stu-id="e5684-121">Document Understanding overview</span></span>](document-understanding-overview.md)
+[<span data-ttu-id="edafd-121">Übersicht über das Dokumentenverständnis</span><span class="sxs-lookup"><span data-stu-id="edafd-121">Document Understanding overview</span></span>](document-understanding-overview.md)
 
-[<span data-ttu-id="e5684-122">Erstellen eines Formularverarbeitungsmodells</span><span class="sxs-lookup"><span data-stu-id="e5684-122">Create a form processing model</span></span>](create-a-form-processing-model.md)  
+[<span data-ttu-id="edafd-122">Erstellen eines Formularverarbeitungsmodells</span><span class="sxs-lookup"><span data-stu-id="edafd-122">Create a form processing model</span></span>](create-a-form-processing-model.md)  
