@@ -1,6 +1,6 @@
 ---
 title: Importieren eines Ausdruckssatzes mithilfe eines SKOS-basierten Formats
-description: Informationen zum Importieren eines Ausdruckssatzes mithilfe eines SKOS-basierten Formats
+description: Erfahren Sie, wie Sie einen Ausdruckssatz mit einem SKOS-basierten Format importieren
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,43 +9,42 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: aaed88463f690853672780b48a8ee3857a956847
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 318497b8b1815b281eff7d781820616c9be9d5ed
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48296075"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48321241"
 ---
 # <a name="import-a-term-set-using-a-skos-based-format"></a>Importieren eines Ausdruckssatzes mithilfe eines SKOS-basierten Formats
 
-Sie können einen Ausdruckssätzen mit einem SKOS-basierten Format importieren. Ausführliche Informationen zum Format finden Sie unter [SharePoint Taxonomie SKOS Format Reference](skos-format-reference.md).
+Sie können einen Ausdruckssatz mit einem SKOS-basierten Format importieren. Ausführliche Informationen zum Format finden Sie unter [SharePoint-Taxonomie SKOS-Format Referenz](skos-format-reference.md).
 
-Es wird empfohlen, ihre Importdateien auf weniger als 20.000 Begriffe zu halten. Größere Dateien können die für die Überprüfung und den Import entstehende Zeit verlängern.
+Es wird empfohlen, Ihre Importdateien auf weniger als 20.000 Ausdrücke zu belassen. Größere Dateien können die Zeit für die Überprüfung und den Import verlängern.
 
-1. Erweitern Sie im SharePoint Admin Center die Option **Inhaltsdienste**, und klicken Sie dann auf **Terminologiespeicher**.
+1. Erweitern Sie im SharePoint Admin Center **Inhaltsdienste**, und klicken Sie dann auf **Terminologiespeicher**.
 
-2. Wählen Sie die Ausdrucksgruppe aus, in die Sie den Ausdruckssätze importieren möchten.
+2. Wählen Sie die Ausdrucksgruppe aus, in die Sie den Ausdruckssatz importieren möchten.
 
-3. Klicken Sie auf der Befehlsleiste auf **Ausdruckssätze importieren**.
+3. Klicken Sie auf der Befehlsleiste auf **Import Ausdruckssatz**.
  
-4.  Wenn Sie eine Beispieldatei herunterladen möchten, die als Vorlage verwendet werden soll, klicken Sie auf **Sample-Metadata. TTL** , um eine Beispieldatei abzurufen, in der das SKOS-basierte Format verwendet wird.
+4.  Wenn Sie eine Beispieldatei herunterladen möchten, die Sie als Vorlage verwenden möchten, klicken Sie auf **sample-metadata.ttl**, um eine Beispieldatei mit dem SKOS-basierten Format abzurufen.
  
-5.  Erstellen Sie die Importdatei, die die Ausdruckssätze enthält & Begriffe, die Sie importieren möchten.
+5.  Erstellen Sie die Importdatei mit den Ausdruckssätze & Ausdrücke, die Sie importieren möchten.
 
-6.  Wählen Sie unter **Dateiformat**die Option **SKOS (*. TTL)** aus.
+6.  Unter **Dateiformat**, wählen Sie **SKOS (*.ttl)** aus.
 
-7.  Klicken Sie auf **Durchsuchen** , navigieren Sie zu und fügen Sie die Importdatei hinzu.
+7.  Klicken Sie auf **Durchsuchen**, navigieren Sie zu Ihrer Importdatei, und fügen Sie sie hinzu.
 
 8.  Klicken Sie auf **Importieren**. Schließen Sie den Bereich erst, wenn der Import abgeschlossen ist.
 
-Bei einem erfolgreichen Import der Datei wird eine Erfolgsmeldung angezeigt, und der Laufzeitspeicher wird aktualisiert, und Sie können zu den neu erstellten Ausdruckssätzen navigieren.
+Bei einem erfolgreichen Import der Datei wird eine Erfolgsmeldung angezeigt, und der Terminologiespeicher wird aktualisiert, und Sie können zu den neu erstellten Ausdruckssätzen wechseln.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen:
 
 [Einführung in verwaltete Metadaten](https://docs.microsoft.com/sharepoint/managed-metadata)
 
-[Dokument Verständnis Übersicht](document-understanding-overview.md)
+[Übersicht über das Dokumentenverständnis](document-understanding-overview.md)
 
-[Importieren von Ausdruckssätzen (Websiteebene)](https://support.microsoft.com/office/168fbc86-7fce-4288-9a1f-b83fc3921c18)
+[Importieren von Ausdruckssatz (Websiteebene)](https://support.microsoft.com/office/168fbc86-7fce-4288-9a1f-b83fc3921c18)

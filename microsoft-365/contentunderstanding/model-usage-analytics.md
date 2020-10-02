@@ -1,56 +1,51 @@
 ---
-title: Dokument Grundlegendes zur Modell Nutzungsanalyse
+title: Verwendungsanalysen von Dokumentverständnismodellen
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 10/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: Informationen zum Anwenden einer Aufbewahrungs Bezeichnung auf ein Dokument grundlegendes Modell
-ms.openlocfilehash: a07e60d575e616b3a2765011a4fba84b4cff21ff
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+description: 'Informationen zum Anwenden einer Aufbewahrungsbezeichnung auf ein Dokumentverständnismodell '
+ms.openlocfilehash: 26e8aea3ef52e9d850dea2f2268858d8367f7408
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48296191"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48321277"
 ---
-# <a name="document-understanding-model-usage-analytics"></a>Dokument Grundlegendes zur Modell Nutzungsanalyse
+# <a name="document-understanding-model-usage-analytics"></a>Verwendungsanalysen von Dokumentverständnismodellen
 
-</br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSoL]
-
-</br>
-
-Ihr Microsoft SharePoint Syntex-inhaltscenter bietet Ihnen Modell Nutzungsanalysen, um weitere Informationen zur Verwendung der im inhaltscenter veröffentlichten Modelle bereitzustellen. Dies umfasst einen Rollup der folgenden Informationen:
+Im Microsoft SharePoint Syntex-Inhaltscenter finden Sie Modellverwendungsanalysen, um weitere Informationen zur Verwendung von Modellen bereitzustellen, die aus dem Inhaltscenter veröffentlicht wurden. Dies umfasst eine Rollup der folgenden Informationen:
 
 - Wo Ihre Modelle angewendet werden
-- Wie viele Dateien im Laufe der Zeit verarbeitet werden
+- Wie viele Dateien werden im Zeitverlauf verarbeitet?
 
  ![Modellanalyse](../media/content-understanding/model-analytics.png) </br>
 
-## <a name="total-model-percentage"></a>Gesamtmodell Prozentsatz
+## <a name="total-model-percentage"></a>Prozentsatz des Gesamtmodells
 
-   ![Gesamtmodell Prozentsatz](../media/content-understanding/total-model-percentage.png) </br>
+   ![Prozentsatz des Gesamtmodells](../media/content-understanding/total-model-percentage.png) </br>
 
-Im Kreisdiagramm **Gesamtmodell Prozentsatz** wird jedes veröffentlichte Modell als Prozentsatz der Gesamtzahl der Dateien angezeigt, die von allen veröffentlichten Modellen im inhaltscenter verarbeitet wurden.
+Das **Gesamtmodell des prozentualen** Kreisdiagramms zeigt jedes veröffentlichte Modell als Prozentsatz der Gesamtzahl der Dateien an, die von allen veröffentlichten Modellen im Inhaltscenter verarbeitet wurden.
 
-Jedes Modell zeigt auch die **vollendungs Rate**, den Prozentsatz der hochgeladenen Dateien, die vom Modell erfolgreich analysiert wurden. Eine niedrige Vollständigkeit Rate kann bedeuten, dass es Probleme mit dem Modell oder den Dateien gibt, die analysiert werden.
+Außerdem zeigt jedes Modell die **Vollständigkeitsrate** an, der Prozentsatz der hochgeladenen Dateien, die vom Modell erfolgreich analysiert wurden. Eine niedrige Vollständigkeitsrate kann bedeuten, dass es Probleme mit dem Modell oder den zu analysierenden Dateien gibt.
 
-## <a name="files-processed-over-time"></a>Dateien, die im Laufe der Zeit verarbeitet werden
+## <a name="files-processed-over-time"></a>Im Verlauf der Zeit verarbeitete Dateien
 
    ![Verarbeitete Dateien](../media/content-understanding/files-processed-over-time.png) </br>
 
-Die im Zeitbalken Diagramm **verarbeiteten Dateien** zeigen Ihnen nicht nur die Anzahl der Dateien an, die im Laufe der Zeit für jedes Modell verarbeitet wurden, sondern zeigt Ihnen auch die Dokumentbibliotheken an, auf die das Modell angewendet wurde.
+Das Datei-Balkendiagramm für ** Dateien, die im Verlauf der Zeit verarbeitet wurden**, zeigt nicht nur die Anzahl der Dateien an, die über einen Zeitraum für jedes Modell verarbeitet wurden, sondern auch die Dokumentbibliotheken, auf die das Modell angewendet wurde.
 
    ![Balkendiagramm](../media/content-understanding/bar-chart-models.png) </br>
 
 ## <a name="see-also"></a>Siehe auch
-[Erstellen einer Klassifizierung](create-a-classifier.md)</br>
-[Erstellen eines Extraktions Moduls](create-an-extractor.md)</br>
-[Dokument Verständnis Übersicht](document-understanding-overview.md)</br>
-[Erstellen eines Formular Verarbeitungsmodells](create-a-form-processing-model.md)  
+[Erstellen einer Klassifizierung](create-a-classifier.md)
+
+[Erstellen eines Extraktors](create-an-extractor.md)
+
+[Übersicht über das Dokumentenverständnis](document-understanding-overview.md)
+
+[Erstellen eines Formularverarbeitungsmodells](create-a-form-processing-model.md)  

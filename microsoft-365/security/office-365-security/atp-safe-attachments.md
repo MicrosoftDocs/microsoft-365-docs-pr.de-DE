@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - seo-marvel-apr2020
 description: Administratoren können sich über das Feature "sichere Anlagen" in Office 365 Advanced Threat Protection (ATP) informieren.
-ms.openlocfilehash: 6ff356f34f3e44752b5ad7f5fa433a8c72cd5083
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: c3dd64ce6f1d50cf30dfcc33f17021904791912c
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326531"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337205"
 ---
 # <a name="safe-attachments-in-office-365-atp"></a>Sichere Anlagen in Office 365 ATP
 
@@ -108,9 +108,7 @@ Im folgenden finden Sie einige Überlegungen zur dynamischen Zustellung und weit
 
 - Wenn der weitergeleitete Empfänger nicht durch eine Richtlinie für sichere Anlagen geschützt ist, werden die Nachricht und die Anlagen ohne sichere Anlagen Scans oder Anlagen Platzhalter zugestellt.
 
-## <a name="scenarios-where-safe-attachments-doesnt-scan-messages"></a>Szenarien, in denen sichere Anlagen keine Nachrichten überprüfen
-
-Es gibt Szenarien, in denen sichere Anlagen keine Nachrichten überprüfen können:
+Es gibt Szenarien, in denen die dynamische Zustellung Anlagen in Nachrichten nicht ersetzen kann. Diese Szenarien umfassen:
 
 - Nachrichten in öffentlichen Ordnern.
 
@@ -126,7 +124,7 @@ Es gibt Szenarien, in denen sichere Anlagen keine Nachrichten überprüfen könn
 
 - [S/MIME)](s-mime-for-message-signing-and-encryption.md) verschlüsselte Nachrichten.
 
-- Sie haben die dynamische Zustellungs Aktion in einer Richtlinie für sichere Anlagen konfiguriert, der Empfänger unterstützt jedoch keine dynamische Zustellung (beispielsweise ist der Empfänger ein Postfach in einer lokalen Exchange-Organisation). [Sichere Links in Office 365 ATP](set-up-atp-safe-links-policies.md) können jedoch Office-Dateianlagen überprüfen, die URLs enthalten (je nachdem, wie die sicheren Links konfiguriert sind).
+- Sie haben die dynamische Zustellungs Aktion in einer Richtlinie für sichere Anlagen konfiguriert, der Empfänger unterstützt jedoch keine dynamische Zustellung (beispielsweise ist der Empfänger ein Postfach in einer lokalen Exchange-Organisation). [Sichere Links in Office 365 ATP](set-up-atp-safe-links-policies.md) können jedoch Office-Dateianlagen überprüfen, die URLs enthalten (je nachdem, wie die [globalen Einstellungen für sichere Links](configure-global-settings-for-safe-links.md) konfiguriert sind).
 
 ## <a name="submitting-files-for-malware-analysis"></a>Übermitteln von Dateien für die Malware Analyse
 

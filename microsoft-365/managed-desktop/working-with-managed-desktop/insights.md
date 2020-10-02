@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 6b19c5cd1766c07e106897cefeb495f1b98bb548
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: b3ed56dd3e669dbd5a2c3f09d87dfd87fe680aff
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104388"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337181"
 ---
 # <a name="work-with-insights"></a>Arbeiten mit Einblicken
 
@@ -31,9 +31,9 @@ Mit diesen Dashboards können Sie die Antworten auf Fragen wie die folgenden fin
 - Wie lautet der aktuelle Status von Sicherheitsupdates auf Geräten?
 - Wie lange dauert es, bis 95% der Geräte mit dem aktuellen Sicherheitsupdate auf dem neuesten Stand sind?
 
-Um auf diese Ansichten vom [Microsoft Endopint-Manager](https://endpoint.microsoft.com/)zuzugreifen, klicken Sie auf der Startseite auf die Registerkarte Microsoft Managed Desktop nvaigate und wählen Sie **Details anzeigen** im Bereich **Berichte** aus:
+Um über den [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)auf diese Ansichten zuzugreifen, navigieren Sie auf der Startseite zur Registerkarte Microsoft Managed Desktop, und wählen Sie im Bereich **Berichte** die Option **Details anzeigen** aus:
 
-<!--Update picture to show in MEM [Admin center with Reports area in the upper right including the device reports card and the "view details" link.](../../media/insights_overview.png)-->!
+<!--Update picture to show in MEM [Admin center with Reports area in the upper right including the device reports card and the "view details" link.](../../media/insights_overview.png)-->
 
 
 ## <a name="usage-insights"></a>Benutzungseinblicke
@@ -54,7 +54,6 @@ Diese Ansicht zeigt Ihnen Informationen über den Energieverbrauch von apps und 
 Erfahren Sie mehr über [Batterie Einblicke](battery-insights.md).
 
 ## <a name="windows-security-update-insights"></a>Informationen zu Windows-Sicherheitsupdates
-
-In dieser Ansicht werden Informationen zum Status von Sicherheitsupdates für Ihre von Microsoft verwalteten Desktop Geräte angezeigt. Um diese Informationen anzuzeigen, wählen Sie die Registerkarte **Windows-Sicherheits-Udates** .
+In dieser Ansicht werden Informationen zum Status von Sicherheitsupdates für Ihre von Microsoft verwalteten Desktop Geräte angezeigt. Um diese Informationen anzuzeigen, wählen Sie die Registerkarte **Windows-Sicherheitsupdates** aus.
 
 Erfahren Sie mehr über [Einblicke in Sicherheitsupdates](security-update-insights.md).
