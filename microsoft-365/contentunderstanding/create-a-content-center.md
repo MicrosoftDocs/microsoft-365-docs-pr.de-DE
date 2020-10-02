@@ -3,24 +3,21 @@ title: Erstellen eines inhaltscenters in Microsoft SharePoint Syntex
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 8/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: Hier erfahren Sie, wie Sie ein inhaltscenter erstellen.
-ms.openlocfilehash: 62977bc5a34b041e9e958ff46e0dbc010d6bd822
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+description: Erhalten Sie Informationen zum Erstellen eines Inhaltscenters.
+ms.openlocfilehash: f65b542dfe9cbb945f347323053cee582deef25b
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295432"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48321833"
 ---
 # <a name="create-a-content-center-in-microsoft-sharepoint-syntex"></a>Erstellen eines inhaltscenters in Microsoft SharePoint Syntex
 
-Der Inhalt in diesem Artikel ist für die Project Cortex private Preview. [Erfahren Sie mehr über Project Cortex](https://aka.ms/projectcortex).</br>
 
 </br>
 
@@ -28,36 +25,43 @@ Der Inhalt in diesem Artikel ist für die Project Cortex private Preview. [Erfah
 
 </br>
 
-Zum Erstellen und Verwalten von Dokument Verständnis Modellen benötigen Sie zunächst ein inhaltscenter. Das inhaltscenter ist die Modell Erstellungs Schnittstelle und enthält außerdem Informationen darüber, auf welche Dokumentbibliotheken veröffentlichte Modelle angewendet wurden.</br>
+Zum Erstellen und Verwalten von Dokumentverständnismodellen benötigen Sie zuerst ein Inhaltscenter. Beim Inhaltscenter handelt es sich um die Modellerstellungsoberfläche. Es enthält aber auch Informationen dazu, auf welche Dokumentbibliotheken veröffentlichte Modelle angewendet wurden.</br>
 
-   ![Auswählen einer doc-Bibliothek](../media/content-understanding/content-center-page.png)</br>
+   ![Auswählen einer Dokumentbibliothek](../media/content-understanding/content-center-page.png)</br>
 
-Sie erstellen ein anfängliches inhaltscenter während des [Setups](set-up-content-understanding.md). Ein SharePoint-Administrator kann aber auch zusätzliche Center bei Bedarf erstellen. Während ein einzelnes inhaltscenter für Umgebungen geeignet ist, für die Sie eine Rollup aller Modell Aktivitäten durchführen möchten, können Sie zusätzliche Center für mehrere Abteilungen in Ihrer Organisation benötigen, die unterschiedliche Anforderungen und Anforderungen für Ihre Modelle haben können.
+Sie erstellen ein Standardinhaltscenter während des [Setups](set-up-content-understanding.md). Ein SharePoint-Administrator kann aber bei Bedarf auch zusätzliche Center erstellen. Während ein einzelnes Inhaltscenter für Umgebungen, für die Sie eine Rollup aller Modellaktivitäten durchführen möchten, möglicherweise in Ordnung ist, möchten Sie möglicherweise zusätzliche Zentren für mehrere Abteilungen in Ihrer Organisation einrichten, die möglicherweise unterschiedliche Bedürfnisse und Berechtigungsanforderungen an Ihre Modelle haben.
 
 > [!NOTE]
-> Ein SharePoint-Administrator kann eine inhaltscenter-Website erstellen, wie Sie eine [beliebige andere SharePoint-Website](https://docs.microsoft.com/sharepoint/create-site-collection) mithilfe einer Websitevorlage erstellen würde.
+> Ein SharePoint-Administrator kann eine Inhaltscenter-Website erstellen, wie er auch eine beliebige andere [SharePoint-Website](https://docs.microsoft.com/sharepoint/create-site-collection) über den Bereitstellungsbereich der Admin Center-Website erstellen würde.
 
-So erstellen Sie ein neues inhaltscenter:
+So erstellen Sie ein neues Inhaltscenter:
 
 1. Wechseln Sie im Microsoft 365 Admin Center zum SharePoint Admin Center.
-2. Wählen Sie im SharePoint Admin Center unter **Websites**die Option **aktive Websites**aus.
-3. Klicken Sie auf der Seite **aktive Websites** auf **Erstellen**, und wählen Sie dann **andere Optionen**aus.
-4. Wählen Sie im Menü **Vorlage auswählen** die Option **Inhalts Center**aus.
-5. Geben Sie für die neue Website einen **Websitenamen**, einen **primären Administrator**und eine **Sprache**an.</br>
+2. Wählen Sie im SharePoint Admin Center unter **Websites** die Option **Aktive Websites** aus.
+3. Klicken Sie auf der Seite **Aktive Websites** auf **Erstellen**, und wählen Sie dann **Sonstige Optionen** aus.
+4. Wählen Sie im Menü **Vorlage auswählen** die Option **Inhaltscenter** aus.
+5. Stellen Sie für die neue Website Angaben für **Websitename**, **Primärer Administrator** und **Sprache** bereit.</br>
 
 > [!NOTE] 
-> Optional können Sie eine inhaltscenter-Website auswählen, die in einer der verfügbaren Sprachen gerendert werden soll. Für englische Dateien können nur aktuelle Modelle erstellt werden.</br>
+> Sie können eine inhaltscenter-Website für die Darstellung in einer der verfügbaren Sprachen auswählen. Beachten Sie jedoch, dass zurzeit nur für englische Dateien Modelle erstellt werden können. Beachten Sie auch, dass die Standardsprache der Website nach der Erstellung (wie bei anderen Websitevorlagen) nicht mehr bearbeitet werden kann.</br>
 
-6. Wählen Sie **Fertig**aus.
-
-### <a name="give-access-to-additional-users"></a>Zugriff auf zusätzliche Benutzer gewähren
+6. Wählen Sie **Fertigstellen** aus.
  
-Nachdem Sie die Website erstellt haben, können Sie über das standardmäßige [SharePoint-Website Berechtigungsmodell](https://docs.microsoft.com/sharepoint/modern-experience-sharing-permissions)weiteren Benutzern Zugriff auf die Website gewähren.
+Nachdem Sie eine Inhaltscenter-Website erstellt haben, wird Sie im SharePoint Admin Center auf der Seite **Aktive Websites** angezeigt. 
+
+### <a name="give-access-to-additional-users"></a>Gewähren des Zugriffs für zusätzliche Benutzer
+ 
+Nachdem Sie die Website erstellt haben, können Sie zusätzlichen Benutzern den Zugriff auf die Website über das standardmäßige [SharePoint-Websiteberechtigungsmodell](https://docs.microsoft.com/sharepoint/modern-experience-sharing-permissions) gewähren.
 
 ## <a name="see-also"></a>Siehe auch
-[Erstellen einer Klassifizierung](create-a-classifier.md)</br>
-[Erstellen eines Extraktions Moduls](create-an-extractor.md)</br>
-[Erstellen eines inhaltscenters](create-a-content-center.md) 
- [Dokument Verständnis Übersicht](document-understanding-overview.md)</br>
-[Erstellen eines Formular Verarbeitungsmodells](create-a-form-processing-model.md)</br>
+[Erstellen einer Klassifizierung](create-a-classifier.md)
+
+[Erstellen eines Extraktors](create-an-extractor.md)
+
+[Erstellen eines Inhaltscenters](create-a-content-center.md)
+
+[Übersicht über das Dokumentenverständnis](document-understanding-overview.md)
+
+[Erstellen eines Formularverarbeitungsmodells](create-a-form-processing-model.md)
+
 [Anwenden eines Modells](apply-a-model.md)    

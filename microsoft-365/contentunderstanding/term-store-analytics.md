@@ -1,6 +1,6 @@
 ---
-title: Laufzeitspeicher Berichte
-description: Informationen zum Melden von Laufzeitspeicher Aktivitäten
+title: Terminologiespeicherberichte
+description: Erfahren Sie, wie Sie über Terminologiespeicher-Aktivitäten berichten.
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -8,38 +8,37 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 07b472eac9eba55f7a0a972ec818e0fbcb300552
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 75bd60aab424bdf391038a95055a6660ef2ceecc
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48296072"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48322211"
 ---
-# <a name="term-store-reports"></a>Laufzeitspeicher Berichte
+# <a name="term-store-reports"></a>Terminologiespeicherberichte
 
-Sie können im SharePoint Admin Center auf Berichte für den Laufzeitspeicher zugreifen. Erweitern Sie **Berichte**, und klicken Sie dann auf **Inhaltsdienste**.
+Sie können im SharePoint Admin Center auf Berichte für den Terminologiespeicher zugreifen. Erweitern Sie **Berichte**, und klicken Sie dann auf **Inhaltsdienste**.
 
-Die folgenden Berichte stehen zur Verfügung:
+Die folgenden Berichte sind verfügbar:
 
-### <a name="term-store-operations"></a>Laufzeitspeicher Vorgänge
+### <a name="term-store-operations"></a>Terminologiespeicher-Vorgänge
 
-Zeigen Sie die wichtigsten Vorgänge, die in einem Zeitraum von 15 Tagen in Ihrem Laufzeitspeicher stattfinden, an, und sehen Sie sich einen Trend der täglichen Volumes in diesem Zeitraum an. Dies ist hilfreich, wenn Sie die Art der Änderungen in Ihrem Terminologiespeicher auf einer hohen Ebene verstehen und unerwartete Trends bei den Volumen von Vorgängen erkennen möchten. 
+Hier finden Sie die wichtigsten Vorgänge, die innerhalb eines Zeitraums von 15 Tagen in Ihrem Terminologiespeicher stattgefunden haben, sowie einen Trend der täglichen Volumina in diesem Zeitraum. Dies ist nützlich, wenn Sie die Art der Änderungen in Ihrem Terminologiespeicher auf hoher Ebene erkennen und unerwartete Trends in der Anzahl der Vorgänge erkennen möchten. 
 
-### <a name="term-store-composition"></a>Ausdrucksspeicher Zusammensetzung
+### <a name="term-store-composition"></a>Terminologiespeicher-Zusammensetzung
 
-Zeigen Sie die Verteilung von Typen von Ausdrücken zwischen regulären verwalteten Ausdrücken und Enterprise-Schlüsselwörtern an. Wenn gewünscht, können Sie mehrere Stichwörter zu verwalteten Ausdrücken migrieren. Dies ist hilfreich, wenn Sie ermitteln möchten, ob Ihre Benutzerschlüssel Wörter aktiv verwenden. Sie können diese überprüfen, um potenzielle Kandidaten für verwaltete Ausdrücke zu identifizieren.
+Zeigen Sie die Verteilung der Terminologietypen zwischen regulären verwalteten Begriffen und Schlüsselwörtern für Unternehmen an. Bei Bedarf können Sie mehrere Stichwörter zu den verwalteten Begriffen verschieben. Dies ist nützlich, wenn Sie ermitteln möchten, ob Ihre Benutzer Stichwörter aktiv verwenden. Sie können sie überprüfen, um potenzielle Kandidaten für verwaltete Begriffe zu identifizieren.
 
-### <a name="open-and-closed-term-sets"></a>Offene und geschlossene Ausdruckssätze
+### <a name="open-and-closed-term-sets"></a>Geöffnete und geschlossene Terminologiesätze
 
-Zeigt die Verteilung offener und geschlossener Ausdruckssätze an. Dies ist hilfreich, wenn Sie wissen möchten, wie viele Ausdruckssätze Benutzern das Hinzufügen von Begriffen ermöglichen. Sie können Sie bei Bedarf in geschlossen konvertieren, beispielsweise wenn die Volumes unerwartet wachsen. 
+Zeigen Sie die Verteilung von geöffneten und geschlossenen Terminologiesätzen an. Dies ist nützlich, wenn Sie wissen möchten, wie viele Terminologiesätze Benutzern das Hinzufügen von Begriffen gestatten. Sie können sie auf Wunsch zu "Geschlossen" konvertieren, z. B. wenn die Mengen unerwartet anwachsen. 
 
-### <a name="terms-without-synonyms"></a>Ausdrücke ohne Synonyme
+### <a name="terms-without-synonyms"></a>Begriffe ohne Synonyme
 
-Zeigt die Anzahl der Ausdrücke in jeder der hinzugefügten Arbeitssprachen an, für die keine Synonyme definiert sind. Dies ist hilfreich, um Sprachen zu identifizieren, in denen Sie Synonyme definieren möchten. Synonyme helfen Endbenutzern, die richtigen Begriffe für die Kennzeichnung Ihres Inhalts zu finden.
+Zeigen Sie die Anzahl der Begriffe in den hinzugefügten Arbeitssprachen an, für die keine Synonyme definiert sind. Dies ist nützlich, um Sprachen zu ermitteln, in denen Sie Synonyme definieren sollten. Synonyme helfen den Endbenutzern, die richtigen Begriffe zum Taggen Ihrer Inhalte zu finden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen:
 
 
 
