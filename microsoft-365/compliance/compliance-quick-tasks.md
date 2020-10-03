@@ -9,15 +9,16 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
-- M365-security-compliance
+- m365-security-compliance
+- m365initiative-compliance
 localization_priority: Normal
 description: Erfahren Sie mehr über Aufgaben, die Ihnen helfen, die Compliance in Microsoft 365 schnell zu beginnen.
-ms.openlocfilehash: d2399b65e6f8d2765d3fc8691b0e395f113092f1
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 98526104d2ced7b86315b24bd2843701047a097c
+ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200838"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48341181"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Schnelle Aufgaben für die ersten Schritte mit Microsoft 365 Compliance
 
@@ -112,7 +113,7 @@ Eine Schritt-für-Schritt-Anleitung zur Verwendung des Inhalts-Explorers finden 
 
 ### <a name="activity-explorer"></a>Aktivitäten-Explorer
 Mit dem Aktivitäts-Explorer können Sie überwachen, was mit den vertraulichen Elementen ihrer klassifizierten und beschrifteten Elemente geschieht:
-- SharePoint
+- Microsoft Office SharePoint Online
 - Exchange
 - OneDrive
 

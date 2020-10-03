@@ -11,13 +11,16 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
-ms.openlocfilehash: 8c56b7b597ea76c74412f49afa896a0d2f1b69a1
-ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
+ms.collection:
+- m365-security-compliance
+- m365solution-insiderrisk
+- m365initiative-compliance
+ms.openlocfilehash: 5a1bd06e76564750c7b080182ac8ab93fc8d60de
+ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48214904"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48341223"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Erste Schritte mit Einstellungen für das Insider Risikomanagement
 
@@ -179,7 +182,7 @@ Die folgenden Felder und Werte werden für Warnungen beim Insider Risikomanageme
 | Name | Richtlinienname für die Richtlinie für das Insider Risikomanagement, die die Warnung generiert hat. |
 | PolicyId | Die GUID der Richtlinie für das Insider Risikomanagement, die die Warnung ausgelöst hat. |
 | Severity | Der Schweregrad der Warnung. Die Werte sind *hoch*, *Mittel*oder *niedrig*. |
-| Source | Die Quelle der Warnung. Der Wert ist *Office 365 Sicherheit & Compliance*. |
+| Quelle | Die Quelle der Warnung. Der Wert ist *Office 365 Sicherheit & Compliance*. |
 | Status | Der Status der Warnung. Werte sind *aktiv* (*Bedarf Überprüfung* im Insider Risiko), *Ermittlungen* (im Hinblick auf Insider Risiken*bestätigt* ), *aufgelöst* (im Hinblick auf Insider Risiken*aufgelöst* ), *entlassen* (im Hinblick auf Insider Risiken*entlassen* ). |
 | Version | Die Version des Sicherheits-und Konformitäts Warnungs Schemas. |
 
