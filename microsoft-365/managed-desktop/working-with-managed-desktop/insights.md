@@ -1,6 +1,6 @@
 ---
 title: Arbeiten mit Einblicken
-description: ''
+description: Übersicht über die verfügbaren Einblicke in Microsoft Managed Desktop
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b3ed56dd3e669dbd5a2c3f09d87dfd87fe680aff
-ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.openlocfilehash: ba91a33da9f4d2187938c27398d5ef7c1cacebcd
+ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48337181"
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "48350825"
 ---
 # <a name="work-with-insights"></a>Arbeiten mit Einblicken
 
@@ -31,9 +31,11 @@ Mit diesen Dashboards können Sie die Antworten auf Fragen wie die folgenden fin
 - Wie lautet der aktuelle Status von Sicherheitsupdates auf Geräten?
 - Wie lange dauert es, bis 95% der Geräte mit dem aktuellen Sicherheitsupdate auf dem neuesten Stand sind?
 
-Um über den [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)auf diese Ansichten zuzugreifen, navigieren Sie auf der Startseite zur Registerkarte Microsoft Managed Desktop, und wählen Sie im Bereich **Berichte** die Option **Details anzeigen** aus:
 
-<!--Update picture to show in MEM [Admin center with Reports area in the upper right including the device reports card and the "view details" link.](../../media/insights_overview.png)-->
+Um über den [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)auf diese Ansichten zuzugreifen, navigieren Sie auf der Startseite zur Registerkarte Microsoft Managed Desktop, und wählen Sie im Bereich **Berichterstellung** die Option **Details anzeigen** aus:
+
+
+![Admin Center-Hauptseite mit Berichterstattungs Bereich unten links und Link "Details anzeigen"](../../media/insights-main.png)
 
 
 ## <a name="usage-insights"></a>Benutzungseinblicke

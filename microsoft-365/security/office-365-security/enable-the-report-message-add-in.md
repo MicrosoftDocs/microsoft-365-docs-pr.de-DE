@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie das Add-in "Berichtsnachricht" für Outlook und Outlook im Internet für einzelne Benutzer oder die gesamte Organisation aktivieren.
-ms.openlocfilehash: 2e9d6ae87d0f6da7721c5c86d904a836d4610a5e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 601e3850bf046f3a0c807976fd173a6e0ec7ce2a
+ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196609"
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "48350623"
 ---
 # <a name="enable-the-report-message-add-in"></a>Aktivieren des Add-Ins „Nachrichten melden“
 
@@ -49,12 +49,12 @@ Wenn Sie globaler Administrator oder Exchange Online Administrator sind und Exch
 
   - Outlook im Web
   - Outlook 2013 SP1 oder höher
-  - Outlook 2016 für Mac
+  - Outlook 2016 für Mac
   - Outlook im Lieferumfang von Microsoft 365-Apps für Unternehmen
 
 - Das Add-in "Berichtsnachricht" steht für Postfächer in lokalen Exchange-Organisationen nicht zur Verfügung.
 
-- Sie können gemeldete Nachrichten so konfigurieren, dass Sie kopiert oder an ein von Ihnen angegebenes Postfach umgeleitet werden. Weitere Informationen finden Sie unter [Angeben eines Postfachs für Benutzer Übermittlungen von Spam-und Phishing-Nachrichten in Exchange Online](user-submission.md).
+- Sie können gemeldete Nachrichten so konfigurieren, dass Sie kopiert oder an ein von Ihnen angegebenes Postfach umgeleitet werden. Weitere Informationen finden Sie unter [User Submissions Policies](user-submission.md).
 
 - Ihr vorhandener Webbrowser sollte mit dem Add-in "Berichtsnachricht" funktionieren. Wenn Sie jedoch feststellen, dass das Add-in nicht verfügbar ist oder nicht wie erwartet funktioniert, versuchen Sie es mit einem anderen Browser.
 

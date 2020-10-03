@@ -6,8 +6,8 @@ ms.author: tracyp
 author: msfttracyp
 manager: dansimp
 audience: ITPro
-ms.topic: article
-ms.date: 02/06/2019
+ms.topic: how-to
+ms.date: ''
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -19,12 +19,12 @@ ms.collection:
 - SPO_Content
 description: Hier erfahren Sie, wie Sie ATP für SharePoint, OneDrive und Microsoft Teams aktivieren, einschließlich der Vorgehensweise zum Festlegen von Benachrichtigungen für erkannte Dateien.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1cd345ae74b81c23f92b9e9b7d712efa8b875503
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 0c717a89492ea1160f26f26f13be6c36f348c79c
+ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326901"
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "48350655"
 ---
 # <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Aktivieren von ATP für SharePoint, OneDrive und Microsoft Teams
 

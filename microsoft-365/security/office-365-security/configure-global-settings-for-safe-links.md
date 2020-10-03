@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.date: ''
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie globale Einstellungen (die Liste "folgende URLs blockieren" und Schutz für Office 365-Apps) für sichere Links in Office 365 Advanced Threat Protection (ATP) anzeigen und konfigurieren.
-ms.openlocfilehash: 6ca18bfb555419a8f4a61b55715f328ed7da5e88
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 50bef8a1edad50540c7212eb4259e17e2368a56c
+ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48328533"
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "48350877"
 ---
 # <a name="configure-global-settings-for-safe-links-in-office-365-atp"></a>Konfigurieren globaler Einstellungen für sichere Links in Office 365 ATP
 
