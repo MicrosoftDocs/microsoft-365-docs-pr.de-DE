@@ -8,15 +8,15 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
-description: Hier erfahren Sie, wie Sie in Microsoft SharePoint Syntex einen Extraktor erstellen.
-ms.openlocfilehash: d68cc8b8c337c1ae6740eb5775576a54279b8389
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+description: Erfahren Sie, wie Sie in Microsoft Office SharePoint Syntex einen Extraktor erstellen.
+ms.openlocfilehash: 260486c128ce76c31fe5f4a0994b4e103687b829
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321809"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338649"
 ---
-# <a name="create-an-extractor-preview"></a>Erstellen eines Extraktors (Vorschau)
+# <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Extraktor in Microsoft SharePoint Syntex erstellen
 
 
 </br>
@@ -122,9 +122,20 @@ Wenn Sie erneut **Keine Übereinstimmung** für Ihre beschrifteten Dateien erhal
 
 ## <a name="test-your-model"></a>Testen Ihres Modells
 
-Wenn Sie eine Übereinstimmung mit den beschrifteten Beispieldateien erhalten haben, können Sie nun das Modell für die restlichen nicht beschrifteten Beispieldateien testen. Dieser Schritt ist hilfreich, um vor der Verwendung des Modells zu testen, wie geeignet oder bereit es ist. Sie testen es dabei auf Dateien, die es noch nicht kennt.
+Wenn Sie eine Übereinstimmung mit den beschrifteten Beispieldateien erhalten haben, können Sie nun das Modell für die restlichen nicht beschrifteten Beispieldateien testen. Das ist ein optionaler aber nützlicher Schritt, um die "Tauglichkeit" oder die Bereitschaft des Modells vor seiner Verwendung zu bewerten. Dazu wird es an Dateien getestet, die das Modell noch nie gesehen hat.
 
 1. Klicken Sie auf der Startseite des Modells auf die Registerkarte **Test**. Dadurch wird das Modell für Ihre nicht beschrifteten Beispieldateien ausgeführt.
 2. In der Liste der **Testdateien** werden Ihre Beispieldateien angezeigt, um zu zeigen, ob das Modell die benötigten Informationen extrahieren kann. Mithilfe dieser Informationen können Sie ermitteln, wie effektiv Ihr Klassifizierer bei der Identifizierung Ihrer Dokumente ist.
 
     ![Testen Ihrer Dateien](../media/content-understanding/test-filies-extractor.png) 
+
+## <a name="see-also"></a>Siehe auch
+[Erstellen einer Klassifizierung](create-a-classifier.md)
+
+[Beschreibungstypen](explanation-types-overview.md)
+
+[Nutzung der Terminologiespeichertaxonomie beim Erstellen eines Extraktors](leverage-term-store-taxonomy.md)
+
+[Übersicht über das Dokumentenverständnis](document-understanding-overview.md)
+
+[Anwenden eines Modells](apply-a-model.md) 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Benötigen Sie eine Lösung für die Datensatzverwaltung für Microsoft 365, die hochwertige Inhalte für rechtliche, geschäftliche oder behördliche Verpflichtungen verwaltet, aber Sie sind sich nicht sicher, wo Sie anfangen sollen? Hier finden Sie einige praktische Anweisungen für die ersten Schritte.
-ms.openlocfilehash: 1983aca82bdab2ca7bb63d5a508dc3843ac1e322
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: fd3e3368b7a23cb31a8df4953268576de2419f89
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868900"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333851"
 ---
 # <a name="get-started-with-records-management"></a>Erste Schritte mit der Datensatzverwaltung
 
@@ -70,15 +70,16 @@ Anhand der folgenden Tabelle können Sie Ihre geschäftlichen Anforderungen ents
 |----------------|---------------|
 |Deklarieren eines Datensatzes |[Datensätze mithilfe von Aufbewahrungsbezeichnungen deklarieren](declare-records.md)|
 |Aktualisieren eines Datensatzes |[Versionsverwaltung zur Aktualisierung von Datensätzen verwenden, die in Microsoft Office SharePoint Online oder OneDrive gespeichert sind](record-versioning.md)|
-|Aufbewahrungs- und Löschaktionen für Dokumente und E-Mails manuell von Administratoren und Benutzer anwenden lassen: <br />-  SharePoint <br />– OneDrive <br />– Outlook und Outlook im Web|[Erstellen von Aufbewahrungsbezeichnungen und Anwenden in Apps](create-apply-retention-labels.md)|
-|Zulassen, dass Seitenadministratoren eine Standardaufbewahrungsbezeichnung für alle Inhalte in einer SharePoint-Bibliothek, einem Ordner oder einer Dokumentenmappe festlegen können|[Erstellen von Aufbewahrungsbezeichnungen und Anwenden in Apps](create-apply-retention-labels.md)|
-|Zulassen, dass Benutzer mithilfe von Outlook-Regeln eine Aufbewahrungsbezeichnung automatisch auf E-Mails anwenden können|[Erstellen von Aufbewahrungsbezeichnungen und Anwenden in Apps](create-apply-retention-labels.md)|
-|Aufbewahrungs- und Löschaktionen automatisch auf Dokumente und E-Mails anwenden |[Automatisches Anwenden einer Aufbewahrungsbezeichnung auf Inhalte](apply-retention-labels-automatically.md)|
+|Lassen Sie Admins und Benutzer manuell Aktionen zum Einbehalten und Löschen von Dokumenten und E-Mails anwenden: <br />-  SharePoint <br />– OneDrive <br />– Outlook und Outlook im Web|[Erstellen von Aufbewahrungsbezeichnungen und Anwenden in Apps](create-apply-retention-labels.md)|
+|Site-Administratoren können Aktionen für alle Inhalte in einer SharePoint-Bibliothek, einem Ordner oder einem Dokumentensatz standardmäßig beibehalten und löschen.|[Erstellen von Aufbewahrungsbezeichnungen und Anwenden in Apps](create-apply-retention-labels.md)|
+|Benutzer können mithilfe von Outlook-Regeln automatisch Aufbewahrungs- und Löschaktionen auf E-Mails anwenden|[Erstellen von Aufbewahrungsbezeichnungen und Anwenden in Apps](create-apply-retention-labels.md)|
+|Administratoren können Aktionen zum Aufbewahren und Löschen von Dokumenten auf ein Dokumentenverständnismodell anwenden, so dass diese automatisch auf identifizierte Dokumente in einer Microsoft Office SharePoint Online Bibliothek angewendet werden.|[Aufbewahrungsbezeichnungen erstellen und in Apps anwenden](create-apply-retention-labels.md)|
+|Automatische Anwendung von Aufbewahrungs- und Löschaktionen auf Dokumente und E-Mails |[Automatisches Anwenden einer Aufbewahrungsbezeichnung auf Inhalte](apply-retention-labels-automatically.md)|
 |Starten Sie den Aufbewahrungszeitraum mit einem bestimmten Ereignis, wie:  <br />– Mitarbeiter verlässt das Unternehmen <br />– Vertrag läuft aus <br />– Ende der Produktlebensdauer| [Aufbewahrung mit Eintritt eines Ereignisses starten](event-driven-retention.md)|
 |Verwalten des Lebenszyklus verschiedener Dokumenttypen in SharePoint| [Verwenden von Aufbewahrungsbezeichnungen zum Verwalten des Lebenszyklus von in SharePoint gespeicherten Dokumenten](auto-apply-retention-labels-scenario.md)|
-|Vergewissern Sie sich, dass das Löschen von Inhalten am Ende deren Aufbewahrungszeitraums von jemandem überprüft und genehmigt wird|[Dispositionsüberprüfungen](disposition.md#disposition-reviews) |
-|Vergewissern Sie sich, dass Sie für Inhalte, die am Ende deren Aufbewahrungszeitraums gelöscht werden, einen Dispositionsnachweis haben|[Disposition von Datensätzen](disposition.md#disposition-of-records) |
-| Überwachen Sie, wie und wo die Aufbewahrungsbezeichnungen angewendet werden | [Überwachen von Aufbewahrungsbezeichnungen](retention.md#monitoring-retention-labels) |
+|Stellen Sie sicher, dass Inhalte überprüft und genehmigt werden, bevor sie nach Ablauf der Aufbewahrungsfrist endgültig gelöscht werden|[Dispositionsüberprüfungen](disposition.md#disposition-reviews) |
+|Verfügungsnachweis für Inhalte haben, die am Ende ihrer Aufbewahrungsfrist endgültig gelöscht werden|[Disposition von Datensätzen](disposition.md#disposition-of-records) |
+|Einstellungen überwachen, wie und wo Aufbewahrungs- und Löschungseinstellungen auf Elemente angewendet werden | [Überwachen von Aufbewahrungsbezeichnungen](retention.md#monitoring-retention-labels) |
 
 ## <a name="end-user-documentation-for-records"></a>Dokumentation zu Datensätzen für Endbenutzer
 

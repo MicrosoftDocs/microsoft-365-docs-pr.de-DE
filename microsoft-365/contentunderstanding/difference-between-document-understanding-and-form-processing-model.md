@@ -1,66 +1,77 @@
 ---
-title: Unterschied zwischen Dokument verstehen und Formular Verarbeitungs Modellen
+title: Unterschied zwischen Dokumentverständnis- und Formularverarbeitungsmodellen
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 8/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: Beschreibung des Haupt Unterschieds zwischen Dokument Verständnis und Formular Verarbeitungs Modellen
-ms.openlocfilehash: 268a2fa4a0381e5822c17e5df22566c931d37f3c
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+description: Beschreibung des Unterschieds zwischen Dokumentverständnis- und Formularverarbeitungsmodellen
+ms.openlocfilehash: 71887aeeb66699b3d756317b33d52607f480aa7d
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48294748"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333872"
 ---
-# <a name="difference-between-document-understanding-and-form-processing-models"></a>Unterschied zwischen Dokument verstehen und Formular Verarbeitungs Modellen 
+# <a name="difference-between-document-understanding-and-form-processing-models"></a>Unterschied zwischen Dokumentverständnis- und Formularverarbeitungsmodellen 
 
-Der Inhalt in diesem Artikel ist für die Project Cortex private Preview. [Erfahren Sie mehr über Project Cortex](https://aka.ms/projectcortex).
 
-Mit dem Inhalts Verständnis in Project Cortex können Sie Dokumente, die in SharePoint-Dokumentbibliotheken hochgeladen werden, identifizieren und klassifizieren sowie relevante Informationen aus jeder Datei extrahieren.  Wenn beispielsweise Dateien in eine SharePoint-Dokumentbibliothek hochgeladen werden, werden alle Dateien, die als Bestel *Lungen* identifiziert werden, als solche klassifiziert und dann in einer benutzerdefinierten Dokumentbibliotheksansicht angezeigt. Darüber hinaus können Sie bestimmte Informationen aus jeder Datei abrufen (beispielsweise *Bestellnummer* und *Gesamtsumme*) und als Spalte in ihrer Dokumentbibliotheksansicht anzeigen. 
+Das Inhaltsverständnis-Feature in Microsoft SharePoint Syntex ermöglicht es Ihnen, in SharePoint-Dokumentbibliotheken hochgeladene Dokumente zu identifizieren und klassifizieren sowie relevante Informationen aus jeder Datei zu extrahieren.  Wenn Dateien beispielsweise in eine SharePoint-Dokumentbibliothek hochgeladen werden, werden alle Dateien, die als *Aufträge* erkannt werden, als solche klassifiziert und anschließend in einer benutzerdefinierten Dokumentbibliotheksansicht angezeigt. Darüber hinaus können aus jeder Datei bestimmte Informationen (z. B. *Auftragsnummer* und *Gesamtbetrag*) abgerufen und als Spalte in Ihrer Dokumentbibliotheksansicht angezeigt werden. 
 
-Mit dem Inhalts Verständnis können Sie *Modelle* erstellen, um die benötigten Informationen zu identifizieren und zu extrahieren. Hierbei handelt es sich um zwei Modelltypen, die Sie verwenden können:
+Das Inhaltsverständnis-Feature ermöglicht Ihnen das Erstellen von *Modellen*, um die benötigten Informationen zu finden und zu extrahieren. Modelle tragen dazu bei, geschäftliche Probleme bei der Suche, bei Geschäftsprozessen, Compliance und vielem mehr zu lösen.
 
-- [Dokument verstehen von Modellen](document-understanding-overview.md)
-- [Formular Verarbeitungsmodelle](form-processing-overview.md)
+Es gibt zwei Modelltypen, die Sie verwenden können:
 
-Während beide Modelle im Allgemeinen für denselben Zweck verwendet werden, wirken sich die unten aufgelisteten Hauptunterschiede darauf aus, welche Sie verwenden können.
+- [Informationen zu Dokumentverständnismodellen](document-understanding-overview.md)
+- [Formularverarbeitungsmodelle](form-processing-overview.md)
 
-## <a name="structured-versus-unstructured-and-semi-structured-content"></a>Strukturierter Vergleich von unstrukturierten und semi-strukturierten Inhalten
-
-Verwenden Sie Dokument Verständnis Modelle zum Identifizieren und Extrahieren von Daten aus unstrukturierten Dokumenten wie Briefen oder Verträgen, bei denen sich die Text Entitäten, die Sie extrahieren möchten, in Sätzen oder bestimmten Dokumentbereichen befinden. Beispielsweise kann ein unstrukturiertes Dokument ein Vertrags Erneuerungs schreiben sein, das auf unterschiedliche Weise geschrieben werden kann. Die Informationen sind jedoch konsistent im Textkörper jedes Vertrags Erneuerungs Dokuments vorhanden, beispielsweise in der Textzeichenfolge "Startdatum des Diensts", gefolgt von einem tatsächlichen Datum.   
-
-Verwenden Sie Formular Verarbeitungsmodelle, um Dateien zu identifizieren und Daten aus strukturierten oder semi-strukturierten Dokumenten wie Formularen oder Rechnungen zu extrahieren. Diese Dokumente müssen eindeutige Schlüssel/Wert-Paare aufweisen (beispielsweise *Date: 10/1/2020*) * oder Tabellendaten. Ein guter Kandidat für die Formularverarbeitung ist beispielsweise das Bestellformular eines Unternehmens, mit dem die Clients Informationen für bestimmte Felder bereitstellen müssen, die sich im gleichen Bereich des Dokumentlayouts befinden, beispielsweise *Name*, *Telefonnummer*, *Gesamtkosten*usw.  Ein Steuerformular ist ein gutes Beispiel für ein strukturiertes Dokument. 
-
-## <a name="where-they-are-created"></a>Wo Sie erstellt werden
-
-Dokument Understanding Models werden in einer SharePoint-inhaltscenter-Website erstellt und verwaltet. 
+Beide Modelle werden in der Regel für den gleichen Zweck verwendet, doch die unten aufgeführten wesentlichen Unterschiede bedingen, welches Sie verwenden können.
 
 > [!NOTE]
-> Sie müssen Zugriff auf eine inhaltscenter-Website haben, um ein Dokument Verständnis Modell zu erstellen oder eine auf eine SharePoint-Dokumentbibliothek anzuwenden. 
+> Weitere Informationen zu Beispielszenarien für Formularverarbeitung und Dokumentverständnis finden Sie unter [SharePoint Syntex – Leitfaden für die ersten Schritte](https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted#form-processing-scenario-example).
 
-Formular Verarbeitungsmodelle werden im PowerApps [AI Builder](https://docs.microsoft.com/ai-builder/overview)erstellt, die Erstellung wird jedoch direkt aus einer SharePoint-Dokumentbibliothek initiiert. Die Erstellung von Formular Verarbeitungs Modellen muss in Ihrer Dokumentbibliothek aktiviert sein, damit ein Benutzer ein Formular Verarbeitungsmodell für diese erstellen kann, und ein Administrator kann dies im Inhalt Understanding admin settings tun. Formular Verarbeitungsmodelle verwenden PowerAutomate-Flows, um Dateien zu verarbeiten, wenn Sie in die Dokumentbibliothek hochgeladen werden.
 
-Wenn Sie ein Dokument grundlegendes Modell erstellen, erstellen Sie einen neuen [SharePoint-Inhaltstyp](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) , der im Katalog der SharePoint-Inhaltstypen gespeichert wird. Sie können auch vorhandene Inhaltstypen verwenden, um Ihr Modell bei Bedarf zu definieren.
+## <a name="structured-versus-unstructured-and-semi-structured-content"></a>Strukturierte, unstrukturierte und teilstrukturierte Inhalte
 
-Formular Verarbeitungsmodelle werden im PowerApps [AI Builder](https://docs.microsoft.com/ai-builder/overview)erstellt, die Erstellung wird jedoch direkt aus einer SharePoint-Dokumentbibliothek initiiert. Die Erstellung von Formular Verarbeitungs Modellen muss in Ihrer Dokumentbibliothek aktiviert sein, damit ein Benutzer ein Formular Verarbeitungsmodell dafür erstellen kann. Oder ein Administrator kann dies im Inhalt Understanding admin settings tun. Formular Verarbeitungsmodelle verwenden PowerAutomate-Flows, um Dateien zu verarbeiten, wenn Sie in die Dokumentbibliothek hochgeladen werden.
+Verwenden Sie Dokumentverständnismodelle, um Daten aus unstrukturierten Dokumenten (z. B. Briefen oder Verträgen) zu identifizieren und zu extrahieren, bei denen sich die Textentitäten, die Sie extrahieren möchten, in Sätzen oder bestimmten Bereichen des Dokuments befinden. So könnte beispielsweise ein unstrukturiertes Dokument ein Vertragsverlängerungsdokument sein, das auf unterschiedliche Weise verfasst sein kann. Allerdings enthält der Text jedes Vertragsverlängerungsdokuments übereinstimmende Informationen, z. B. die Textzeichenfolge *Startdatum Dienst* und dann ein bestimmtes Datum.   
 
-Formular Verarbeitungsmodelle erstellen auch neue [SharePoint-Inhaltstypen](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978)und werden auch im SharePoint-Inhaltstypen Katalog gespeichert.
+Verwenden Sie Formularverarbeitungsmodelle, um Dateien zu identifizieren und Daten aus strukturierten oder teilstrukturierten Dokumenten wie Formularen oder Rechnungen zu extrahieren. Formularverarbeitungsmodelle werden trainiert, den Aufbau eines Formulars anhand von Beispieldokumenten zu erkennen, und lernen, nach den Daten zu suchen, die aus ähnlichen Orten extrahiert werden sollen, da Formulare einen strukturierten Aufbau aufweisen, in dem sich Entitäten an der selben Stelle befinden (beispielsweise eine Sozialversicherungsnummer in einem Steuerformular). 
 
-## <a name="where-they-can-be-applied"></a>Wo Sie angewendet werden können
+> [!NOTE]
+> Um ein Dokumentverständnismodell erstellen oder ein solches auf eine SharePoint-Dokumentbibliothek anwenden zu können, benötigen Sie Zugang zu eine Inhaltscenter-Website. 
 
-Sie können Dokument Verständnis Modelle auf SharePoint-Dokumentbibliotheken anwenden, auf die Sie Zugriff haben. Verwenden Sie das inhaltscenter, um ein Dokument grundlegendes Modell zu erstellen und es auf verschiedene Dokumentbibliotheken anzuwenden. Das inhaltscenter bietet Ihnen eine zentralere Kontrolle darüber, wie Dokument Verständnis Modelle verwendet werden und wo Sie angewendet werden. Hinweis Diese Informationen müssen auch in einem inhaltscenter aufrollen.
 
-Formular Verarbeitungsmodelle können derzeit nur auf die SharePoint-Dokumentbibliothek angewendet werden, aus der Sie Sie erstellt haben. Auf diese Weise können lizenzierte Benutzer mit Zugriff auf die Website ein Formular Verarbeitungsmodell erstellen.
+## <a name="where-they-are-created"></a>Wo die Modelle erstellt werden
+
+Dokumentverständnismodelle werden auf einer SharePoint-Inhaltscenter-Site erstellt und verwaltet. 
+
+> [!NOTE]
+> Weitere Informationen zu Eingabedokumenten finden Sie unter [Formularverarbeitungsmodelle – Voraussetzungen und Einschränkungen](https://docs.microsoft.com/ai-builder/form-processing-model-requirements). 
+
+Formularverarbeitungsmodelle werden in PowerApps [AI Builder](https://docs.microsoft.com/ai-builder/overview) erstellt, die Erstellung wird jedoch direkt aus einer SharePoint-Dokumentbibliothek heraus initiiert. Das Erstellen von Formularverarbeitungsmodellen muss in Ihrer Dokumentbibliothek aktiviert sein, damit ein Benutzer ein Formularverarbeitungsmodell dafür erstellen kann. Ein Administrator dies über die Administratoreinstellungen für das Inhaltsverständnis erledigen. Formularverarbeitungsmodelle verwenden PowerAutomate-Abläufe zum Verarbeiten von Dateien, wenn diese in die Dokumentbibliothek hochgeladen werden.
+
+Bei der Erstellung eines Dokumentverständnismodells erstellen Sie einen neuen [SharePoint-Inhaltstyp](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978), der im SharePoint-Inhaltstypenkatalog gespeichert wird. Bei Bedarf können Sie auch vorhandene Inhaltstypen verwenden, um das Modell zu definieren.
+
+Formularverarbeitungsmodelle werden in PowerApps [AI Builder](https://docs.microsoft.com/ai-builder/overview) erstellt, die Erstellung wird jedoch direkt aus einer SharePoint-Dokumentbibliothek heraus initiiert. Das Erstellen von Formularverarbeitungsmodellen muss in Ihrer Dokumentbibliothek aktiviert sein, damit ein Benutzer ein Formularverarbeitungsmodell dafür erstellen kann. Ein Administrator dies ggf. über die Administratoreinstellungen für das Inhaltsverständnis erledigen. Formularverarbeitungsmodelle verwenden PowerAutomate-Abläufe zum Verarbeiten von Dateien, wenn diese in die Dokumentbibliothek hochgeladen werden.
+
+Formularverarbeitungsmodelle generieren ebenfalls neue [SharePoint-Inhaltstypen](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978), die ebenfalls im SharePoint-Inhaltstypkatalog gespeichert werden.
+
+## <a name="where-they-can-be-applied"></a>Wo die Modelle angewendet werden können
+
+Sie können Dokumentverständnismodelle auf SharePoint-Dokumentbibliotheken anwenden, auf die Sie Zugriff haben. Verwenden Sie das Inhaltscenter, um ein Dokumentverständnismodell zu erstellen, und wenden Sie es auf verschiedene Dokumentbibliotheken an. Das Inhaltscenter ermöglicht eine zentralere Kontrolle darüber, wie Dokumentverständnismodelle verwendet und wo sie angewendet werden. Beachten Sie, dass diese Informationen auch bis zu einem Inhaltscenter reichen müssen.
+
+Formularverarbeitungsmodelle können derzeit nur auf die SharePoint-Dokumentbibliothek angewendet werden, über die sie erstellt wurden. Auf diese Weise können lizenzierte Benutzer, die auf die Site zugreifen können, ein Formularverarbeitungsmodell erstellen. Bitte beachten Sie, dass Ihr Administrator die Formularverarbeitung in einer SharePoint-Dokumentbibliothek aktivieren muss, damit sie für lizenzierte Benutzer zur Verfügung steht.
 
  ## <a name="see-also"></a>Siehe auch
-[Schulung: verbessern der Geschäftsleistung mit AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)</br>
-[Erstellen einer Klassifizierung](create-a-classifier.md)</br>
-[Erstellen eines Extraktions Moduls](create-an-extractor.md)</br>
-[Anwenden eines Dokument Verständnisses für das Modell](apply-a-model.md)</br>
-[Erstellen eines Formular Verarbeitungsmodells](create-a-form-processing-model.md)</br>
+[Schulungen: Verbessern der Geschäftsergebnisse mit AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)
+
+[Erstellen einer Klassifizierung](create-a-classifier.md)
+
+[Erstellen eines Extraktors](create-an-extractor.md)
+
+[Anwenden eines Dokumentverständnismodells](apply-a-model.md)
+
+[Erstellen eines Formularverarbeitungsmodells](create-a-form-processing-model.md)

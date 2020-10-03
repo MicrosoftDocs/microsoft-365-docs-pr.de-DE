@@ -1,24 +1,22 @@
 ---
-title: Dokument Verständnis Übersicht
+title: Übersicht über das Dokumentenverständnis
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 08/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: Erhalten Sie einen Überblick über das Dokument Verständnis in Microsoft SharePoint Syntex.
-ms.openlocfilehash: dd8731759d8f1cbea57d171fa7a803ffc4f1baa7
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+description: Hier erhalten Sie einen Überblick über das Dokumentverständnis-Feature in Microsoft SharePoint Syntex.
+ms.openlocfilehash: 1265dfa06db323e23d63a044a1a95a6b67c525cf
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48294760"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333558"
 ---
-# <a name="document-understanding-overview"></a>Dokument Verständnis Übersicht
+# <a name="document-understanding-overview"></a>Übersicht über das Dokumentenverständnis
 
 
 </br>
@@ -27,26 +25,36 @@ ms.locfileid: "48294760"
 
 </br>
 
-Document Understanding verwendet künstliche Intelligenz Modelle (AI), um die Klassifizierung von Dateien und die Extraktion von Informationen zu automatisieren. Es funktioniert am besten mit unstrukturierten Dokumenten wie Briefen oder Verträgen. Diese Dokumente müssen Text enthalten, der auf der Grundlage von Ausdrücken oder Mustern identifiziert werden kann. Der identifizierte Text bestimmt sowohl den Typ der Datei (seine Klassifizierung) als auch die Inhalte, die extrahiert werden sollen (Extraktionsprogramme).
+Das Dokumentverständnis-Feature verwendet KI-Modelle (künstliche Intelligenz), um die Klassifizierung von Dateien und das Extrahieren von Informationen zu automatisieren. Es eignet sich am besten für unstrukturierte Dokumente, z. B. Briefe oder Verträge. Diese Dokumente müssen Text enthalten, der anhand von Phrasen oder Mustern erkannt werden kann. Der erkannte Text bestimmt sowohl den Dateityp (seine Klassifizierung) als auch das, was extrahiert werden soll (die Extraktoren).
 
-Dokument Understanding Models werden in einer SharePoint-Website mit dem Namen " *inhaltscenter*" erstellt und verwaltet. Bei Anwendung auf eine SharePoint-Dokumentbibliothek wird das Modell einem Inhaltstyp zugeordnet hat Spalten zum Speichern der extrahierten Informationen. Der Inhaltstyp, den Sie erstellen, wird im Inhaltstypen Katalog von SharePoint gespeichert. Sie können auch die Verwendung vorhandener Inhaltstypen für die Verwendung Ihres Schemas auswählen.
+> [!NOTE]
+> Weitere Informationen zu Beispielszenarien für das Dokumentverständnis finden Sie unter [SharePoint Syntex – Leitfaden für die ersten Schritte](https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted#document-understanding-scenario-example).
 
-Hinzufügen von *Klassifizierungen* und *Extraktionen* zu Ihrem Dokument Understanding Models to do the folgenden: 
+Dokumentverständnismodelle werden auf einer Art von SharePoint-Site namens *Inhaltscenter* erstellt und verwaltet. Ein auf eine SharePoint-Dokumentbibliothek angewendetes Modell ist mit einem Inhaltstyp verknüpft und enthält Spalten zum Speichern der extrahierten Informationen. Der von Ihnen erstellte Inhaltstyp wird im SharePoint-Inhaltstypkatalog gespeichert. Sie können auch vorhandene Inhaltstypen verwenden, um deren Schema zu verwenden.
 
-- Klassifizierungen werden verwendet, um Dokumente zu identifizieren und zu klassifizieren, die in die Dokumentbibliothek hochgeladen werden. Beispielsweise kann eine Klassifizierung "geschult" werden, um alle *Vertrags Erneuerungs* Dokumente zu identifizieren, die in die Bibliothek hochgeladen werden. Der Inhaltstyp "Vertragserneuerung" wird von Ihnen beim Erstellen ihrer Klassifizierung definiert.
+Sie können Ihren Dokumentverständnismodellen *Klassifizierungen* und *Extraktoren* für folgende Zwecke hinzufügen: 
 
-- Extraktions Module ziehen Informationen aus diesen Dokumenten. Beispielsweise werden für alle in Ihrer Dokumentbibliothek identifizierten Vertrags Erneuerungs Dokumente in der Ansicht Spalten angezeigt, die auch den *Start Termin* und den  *Client* des Diensts für jedes Vertrags Erneuerungs Dokument anzeigen. 
+- Klassifizierungen werden verwendet, um Dokumente zu identifizieren und zu klassifizieren, die in die Dokumentbibliothek hochgeladen werden. So kann beispielsweise eine Klassifizierung "trainiert" werden, alle *Vertragsverlängerungsdokumente* zu erkennen, die in die Bibliothek hochgeladen werden. Der Inhaltstyp der Vertragsverlängerung wird von Ihnen bei der Erstellung der Klassifizierung definiert.
 
-Mithilfe von Beispieldateien können Sie Ihre Klassifizierungen und Extraktoren in Ihrem Modell trainieren und testen. Beispieldateien bieten ihre Modellbeispiele, wonach Sie suchen müssen, wenn Sie versuchen, Daten aus Dateien zu identifizieren und daraus zu extrahieren. Sie möchten beispielsweise Ihre Klassifizierungen und Extraktionsprogramme für die Vertragserneuerung mit Beispielen von Vertrags Erneuerungs Dokumenten trainieren, mit denen Ihr Unternehmen zusammenarbeitet. Sie können auch Beispieldateien verwenden, um die Effektivität Ihres Modells zu testen.
+- Extraktoren rufen Informationen aus diesen Dokumenten ab. Beispielsweise werden in Ihrer Ansicht für alle Vertragsverlängerungsdokumente, die in der Dokumentbibliothek erkannt wurden, Spalten angezeigt, die auch das *Dienst-Startdatum* und den *Kunden* für das jeweilige Vertragsverlängerungsdokument enthalten. 
 
-Verwenden Sie nach der Veröffentlichung Ihres Modells das inhaltscenter, um es auf eine beliebige SharePoint-Dokumentbibliothek anzuwenden, auf die Sie Zugriff haben.  
+Sie können Beispieldateien verwenden, um Ihre Klassifizierungen und Extraktoren im Modell zu trainieren und zu testen. Beispieldateien liefern Ihrem Modell Beispiele für das, wonach gesucht werden soll, wenn nach zu extrahierenden Daten in Dateien gesucht wird. So würden Sie beispielsweise Ihre Klassifizierungen und Extraktoren für Vertragsverlängerungen mit Beispielen für Vertragsverlängerungsdokumente trainieren, die in Ihrem Unternehmen verwendet werden. Sie können Beispieldateien auch dazu verwenden, die Effektivität Ihres Modells zu testen.
+
+Nach dessen Veröffentlichung können Sie das Modell über das Inhaltscenter auf eine beliebige SharePoint-Dokumentbibliothek anwenden, auf die Sie Zugriff haben.  
+
 
 
 ## <a name="see-also"></a>Siehe auch
-[Erstellen einer Klassifizierung](create-a-classifier.md)</br>
-[Erstellen eines Extraktions Moduls](create-an-extractor.md)</br>
-[Erstellen eines inhaltscenters](create-a-content-center.md) 
- [Erstellen eines Formular Verarbeitungsmodells](create-a-form-processing-model.md)</br>
+[Erstellen einer Klassifizierung](create-a-classifier.md)
+
+[Erstellen eines Extraktors](create-an-extractor.md)
+
+[Erstellen eines Inhaltscenters](create-a-content-center.md)
+
+[Erstellen eines Formularverarbeitungsmodells](create-a-form-processing-model.md)
+
 [Anwenden eines Modells](apply-a-model.md)   
-[Unterschied zwischen einem Dokument Verständnis und einem Formular Verarbeitungsmodell](difference-between-document-understanding-and-form-processing-model.md)  
+
+[Unterschied zwischen Dokumentverständnis- und Formularverarbeitungsmodellen](difference-between-document-understanding-and-form-processing-model.md)
+  
 [Übersicht über die Formularverarbeitung](form-processing-overview.md)
