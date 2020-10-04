@@ -1,56 +1,61 @@
 ---
-title: Terminologiespeicher-Taxonomie beim Erstellen eines Extraktors nutzen
+title: Nutzung der Terminologiespeichertaxonomie beim Erstellen eines Extraktors
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 10/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: Nutzen Sie die Terminologiespeicher-Taxonomie beim Erstellen eines Extraktors in Ihrem Dokument Understanding Model in Microsoft SharePoint Syntex.
-ms.openlocfilehash: 94f7a0389d2f06e0f8c1a60a341a02e43dfb2071
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+description: Nutzen Sie die Taxonomie von Terminologiespeicher, wenn Sie einen Extraktor in Ihrem Dokumentverständnismodell in Microsoft SharePoint Syntex erstellen.
+ms.openlocfilehash: f7219f6facc1d29242f7bd52743da92e13de3b89
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295860"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337277"
 ---
-# <a name="leverage-term-store-taxonomy-when-creating-an-extractor"></a>Terminologiespeicher-Taxonomie beim Erstellen eines Extraktors nutzen
-
-
-</br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSoL]
+# <a name="leverage-term-store-taxonomy-when-creating-an-extractor"></a>Nutzung der Terminologiespeichertaxonomie beim Erstellen eines Extraktors
 
 </br>
 
-Wenn Sie einen Extraktor in Ihrem Dokument Understanding Model in SharePoint Syntex erstellen, können Sie die Terminologiespeicher-Taxonomie für [verwaltete](https://docs.microsoft.com/sharepoint/managed-metadata#terms) Metadatendienst nutzen, um bevorzugte Ausdrücke für extrahierte Daten anzuzeigen.  
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GpJJ]  
 
-Beispielsweise identifiziert und klassifiziert Ihr Modell alle **Vertrags** Dokumente, die in die Dokumentbibliothek hochgeladen werden.  Darüber hinaus extrahiert das Modell auch einen **Vertrags Dienst** Wert aus jedem Vertrag und zeigt ihn in einer Spalte in der Bibliotheksansicht an. Unter den verschiedenen Contract Services-Werten in den Verträgen gibt es mehrere ältere Werte, die Ihr Unternehmen nicht mehr verwendet und umbenannt wurde. Beispielsweise sollten alle Verweise auf die Begriffe *Design*, *Grafiken*oder *Topographie* -Vertrags Dienste nun als *Creative*bezeichnet werden. Wenn Ihr Modell einen der veralteten Begriffe aus einem Vertragsdokument extrahiert, soll der aktuelle Ausdruck-Creative in ihrer Bibliotheksansicht angezeigt werden. Im folgenden Beispiel sehen wir beim Training des Modells, dass ein Beispieldokument den veralteten Ausdruck von *Design*enthält.
+</br>
+
+
+Wenn Sie in SharePoint Syntex einen Extraktor in Ihrem Dokumentverständnismodell erstellen, können Sie die Taxonomie des Terminologiespeichers der [Verwalteten Metadatendienste](https://docs.microsoft.com/sharepoint/managed-metadata#terms) nutzen, um bevorzugte Begriffe für die von Ihnen extrahierten Daten anzuzeigen.  
+
+Ihr Modell identifiziert und klassifiziert beispielsweise alle **Vertrags**dokumente, die in die Dokumentbibliothek hochgeladen werden.  Darüber hinaus extrahiert das Modell aus jedem Vertrag einen **Vertragsdienst**wert und zeigt ihn in einer Spalte in Ihrer Bibliotheksansicht an. Unter den verschiedenen Vertragsdienst-Werten in den Verträgen gibt es mehrere ältere Werte, die Ihr Unternehmen nicht mehr verwendet und die umbenannt wurden. So sollten beispielsweise alle Bezüge auf die Begriffe *Design*, *Grafiken*oder *Topographie*-Vertragsdienste als *Kreativ*bezeichnet werden. Wenn Ihr Modell einen der veralteten Begriffe aus einem Vertragsdokument extrahiert, soll der aktuelle Ausdruck – Kreativ – in Ihrer Bibliotheksansicht angezeigt werden. Im folgenden Beispiel sehen wir beim Trainieren des Modells, dass ein Beispieldokument den veralteten Begriff *Design* enthält.
 
    ![Terminologiespeicher](../media/content-understanding/design.png)</br>
 
 
-## <a name="term-set-synonyms"></a>Synonyme für Ausdruckssätze 
+## <a name="use-a-managed-metadata-column-in-your-extractor"></a>Verwenden Sie eine Spalte für verwaltete Metadaten in Ihrem Extraktor
 
-Ausdruckssätze werden im SharePoint Admin Center im Terminologiespeicher für verwaltete Metadatendienst konfiguriert. Im folgenden Beispiel ist der [Ausdruckssätze](https://docs.microsoft.com/sharepoint/managed-metadata#term-set) *Contract Services* so konfiguriert, dass er eine Reihe von Begriffen enthält, einschließlich *Creative*.  Die Details dafür zeigen, dass der Ausdruck drei Synonyme enthält (*Design*, *Grafiken*und *Topographie*), und die Synonyme sollten in *Creative*übersetzt werden.
+Ausdruckssätze werden im Terminologiespeicher für verwaltete Metadatendienste im SharePoint Online Admin Center konfiguriert. Im folgenden Beispiel ist der [Ausdruckssatz](https://docs.microsoft.com/sharepoint/managed-metadata#term-set) für *Vertragsdienste* so konfiguriert, dass er eine Reihe von Begriffen enthält, einschließlich *Kreativ*.  Die Details dafür zeigen, dass der Begriff drei Synonyme (*Design*, *Grafiken*und *Topographie*) aufweist, und die Synonyme sollten in *Kreativ* übersetzt werden. 
 
    ![Ausdruckssatz](../media/content-understanding/term-store.png)</br>
 
-<Mike, hier bin ich unsicher, wie ich dies beschreiben kann.  Welche Aktion weist das Modell darauf hin, dass beim Erstellen eines Extraktors zum Extrahieren und Anzeigen einer Vertrags Dienst Spalte die Spalte "markiert" ist, um den Ausdruckssätze für verwaltete Metadaten für Creative Services zu verwenden? >
+Es kann mehrere Gründe geben, warum Sie möglicherweise ein Synonym in Ihrem Ausdruckssatz verwenden möchten. Beispielsweise kann es veraltete Ausdrücke, umbenannte Ausdrücke oder Abweichungen zwischen den Abteilungen Ihres Unternehmens bei der Benennung geben.
 
-## <a name="configure-your-document-library-site-column-for-a-managed-metadata-field"></a>Konfigurieren der Website Spalte für die Dokumentbibliothek für ein verwaltetes Metadatenfeld
+Damit Sie das Feld für verwaltete Metadaten beim Erstellen Ihres Extraktors in Ihrem Modell auswählen können, müssen Sie es als [Site-Spalte für verwaltete Metadaten hinzufügen](https://support.microsoft.com/office/8fad9e35-a618-4400-b3c7-46f02785d27f). Nachdem Sie die Site-Spalte hinzugefügt haben, können Sie diese auswählen, wenn Sie den Extraktor für Ihr Modell erstellen.
+
+   ![Vertragsservice](../media/content-understanding/contract-services.png)</br>
 
 
-   ![Erstellen verwalteter Metadaten](../media/content-understanding/creative.png)</br>
+Nach dem Anwenden Ihres Modells auf die Dokumentbibliothek wird beim Hochladen von Dokumenten in die Bibliothek in der Spalte *Kreative Dienste* der bevorzugte Ausdruck (*Kreativ*) angezeigt, wenn der Extraktor einen der Werte des Synonyms ermittelt (*Design*, *Grafik* und *Topographie*).
+
+   ![Vertragsdienstspalte](../media/content-understanding/creative.png)</br>
+
 
 ## <a name="see-also"></a>Siehe auch
-[Einführung in verwaltete Metadaten](https://docs.microsoft.com/sharepoint/managed-metadata#terms)</br>
-[Erstellen eines Extraktions Moduls](create-an-extractor.md)</br>
-[Erstellen einer Spalte mit verwalteten Metadaten](https://support.microsoft.com/office/create-a-managed-metadata-column-8fad9e35-a618-4400-b3c7-46f02785d27f?redirectSourcePath=%252farticle%252fc2a06717-8105-4aea-890d-3082853ab7b7&ui=en-US&rs=en-US&ad=US)</br>
+[Einführung in Verwaltete Metadaten](https://docs.microsoft.com/sharepoint/managed-metadata#terms)
+
+[Erstellen eines Extraktors](create-an-extractor.md)
+
+[Erstellen einer verwalteten Metadatenspalte](https://support.microsoft.com/office/create-a-managed-metadata-column-8fad9e35-a618-4400-b3c7-46f02785d27f?redirectSourcePath=%252farticle%252fc2a06717-8105-4aea-890d-3082853ab7b7&ui=en-US&rs=en-US&ad=US)
 
 
 

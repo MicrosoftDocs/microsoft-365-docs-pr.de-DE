@@ -1,6 +1,6 @@
 ---
-title: Pushen von Inhaltstypen an einen Hub
-description: Informationen zum Pushen von Inhaltstypen an einen Hub
+title: Senden von Inhaltstypen per Push auf einen Hub
+description: Lernen wie Inhaltstypen per Push auf einen Hub gesendet wird
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -8,40 +8,46 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a852207bfd1a2a7643ce8895a533371d194954cf
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 6adaef77f6989d541f8028252c5bb1ec7db7a6fc
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48296099"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337193"
 ---
-# <a name="push-content-types-to-a-hub"></a>Pushen von Inhaltstypen an einen Hub
+# <a name="push-content-types-to-a-hub"></a>Senden von Inhaltstypen per Push auf einen Hub
 
-Damit SharePoint-Bibliotheken und-Listen wichtige Inhaltstypen konsistenter verfügbar gemacht werden, können Sie Sie an die ausgewählten Hubs weitergeben. Dadurch werden Sie automatisch neuen Listen und Bibliotheken hinzugefügt, die auf den dem Hub zugeordneten Websites erstellt wurden, sowie auf alle neuen Websites, die dem Hub hinzugefügt wurden.
+</br>
 
-Damit dieses Feature funktioniert, müssen die gepushten Inhaltstypen bereits veröffentlicht werden.
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GyeV]  
 
-So verschieben Sie Inhaltstypen in Hubs
+</br>
 
-1. Erweitern Sie im SharePoint Admin Center die Option **Inhaltsdienste**, und klicken Sie dann auf **Inhaltstypkatalog**.
 
-2. Klicken Sie auf den Inhaltstyp, den Sie in Hubs verschieben möchten.
+Um wichtige Inhaltstypen für SharePoint-Bibliotheken und -Listen durchweg verfügbar zu machen, können Sie sie an die von Ihnen ausgewählten Hubs senden. Dadurch werden sie automatisch zu allen neuen Listen und Bibliotheken hinzugefügt, die auf den mit dem Hub verknüpften Sites erstellt wurden, sowie zu allen neuen Sites, die dem Hub hinzugefügt wurden.
 
-3. Klicken Sie in der Befehlsleiste auf **Bearbeiten** .
+Damit diese Funktion funktioniert, müssen die geposteten Inhaltstypen bereits veröffentlicht sein.
+
+So übertragen Sie Inhaltstypen auf Hubs
+
+1. Erweitern Sie im SharePoint Admin Center **Inhaltsdienste**, und klicken Sie dann auf **Inhaltstyp-Galerie**.
+
+2. Klicken Sie auf den Inhaltstyp, den Sie an Hubs senden möchten.
+
+3. Klicken Sie in der Befehlsleiste auf **Bearbeiten**.
  
-4. Klicken Sie auf **Hub-Standorte auswählen**.
+4. Klicken Sie auf **Hub-Sites auswählen**.
  
-5. Wählen Sie die gewünschten Hub-Standorte aus, und klicken Sie dann auf **OK**.
+5. Wählen Sie die gewünschten Hub-Sites aus und klicken Sie auf **OK**.
  
 6. Klicken Sie auf **Speichern**.
 
-Wenn ein Inhaltstyp an einen vorhandenen Hub & seinen vorhandenen verbundenen Standorten zum ersten Mal übertragen wird, kann es bis zu einer Stunde dauern, bis der Hub oder die zugehörigen Standorte besucht werden, damit die Einstellungen am Standort aktualisiert werden können. Für alle neuen Zuordnungen zum Hub ist diese Wartezeit nicht erforderlich, und die Einstellungen werden in einigen Minuten wiedergegeben. 
+Wenn Sie einen Inhaltstyp zum ersten Mal auf einen vorhandenen Hub und die vorhandenen zugeordneten Sites übertragen, kann es bis zu einer Stunde dauern, bis die Einstellungen auf der Site aktualisiert werden. Neue Zuordnungen zum Hub erfordern diese Wartezeit nicht und die Einstellungen werden in wenigen Minuten wiedergegeben. 
 
-Sobald dieser konfiguriert ist, wird der Inhaltstyp mit diesen Einstellungen in ein paar Minuten in jedem neu zugeordneten Standort mit dem Hub zur Verfügung stehen. Sobald eine neue Liste oder Bibliothek erstellt wurde, wird der Inhaltstyp innerhalb weniger Minuten nach der Erstellung automatisch hinzugefügt. Ein gepushten Inhaltstyp wird nur dann zu einer Dokumentbibliothek hinzugefügt, wenn er direkt oder indirekt aus dem Dokumentinhaltstyp abgeleitet wird und ein Inhaltstyp nur einer Liste hinzugefügt wird, wenn er nicht direkt oder indirekt vom Dokumentinhaltstyp abgeleitet wird.
+Sobald dies konfiguriert ist, ist der Inhaltstyp mit diesen Einstellungen in wenigen Minuten auf jeder neu mit dem Hub verknüpften Site verfügbar. Sobald eine neue Liste oder Bibliothek erstellt wurde, wird der Inhaltstyp innerhalb weniger Minuten nach der Erstellung automatisch hinzugefügt. Ein übertragener Inhaltstyp wird einer Dokumentbibliothek nur hinzugefügt, wenn er direkt oder indirekt vom Dokumentinhaltstyp abgeleitet ist, und ein Inhaltstyp wird nur dann zu einer Liste hinzugefügt, wenn er nicht direkt oder indirekt vom Dokumentinhaltstyp abgeleitet ist.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen:
 
 
 
