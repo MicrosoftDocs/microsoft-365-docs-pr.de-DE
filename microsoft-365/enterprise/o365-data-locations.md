@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Zusammenfassung: Microsoft 365-Datenspeicherorte'
-ms.openlocfilehash: 125d58b0565bf0380a4b2578aea4db6b26596f14
-ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
+ms.openlocfilehash: 7a2fb85d0d7320770a1ab32efcd024a9e348795e
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269541"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337157"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -41,7 +41,7 @@ Informationen zu den vertraglichen Verpflichtungen in Bezug auf den Speicherort 
 Informationen zu Azure Active Directory-Datenspeicherorte finden Sie unter [AAD-Datenkarte](https://go.microsoft.com/fwlink/p/?linkid=2092972).
 
 
-Aufgrund der beispiellosen Umstände von COVID-19 und der Notwendigkeit, die Nachfrage nach Onlinediensten zu verwalten, können wir, wenn Ihre Organisation eine Bildungseinrichtung in Europa ist, Ihren Office 365-Mandanten in der Europäischen Union bereitstellen in, Ihre Daten an diesen übertragen und Ihre ruhenden Daten dort speichern.  Wenn es sich bei Ihrer Organisation um eine Bildungseinrichtung in Indien handelt, können wir Ihren Office 365-Mandanten in Indien, Europa oder den Vereinigten Staaten bereitstellen in, Ihre Daten an diesen übertragen und Ihre ruhenden Daten dort speichern.  Wenn es sich bei Ihrer Organisation um eine Bildungseinrichtung in Südafrika handelt, können wir Ihren Office 365-Mandanten in Südafrika oder Europa bereitstellen in, Ihre Daten an diesen übertragen und Ihre ruhenden Daten dort speichern. Unser Engagement für Compliance, Datenschutz und Sicherheit bleibt unverändert, während wir notwendige und umsichtige Maßnahmen zur Aufrechterhaltung der Dienstverfügbarkeit implementieren. Wir werden alle anwendbaren Gesetzen hinsichtlich des Datentransfers einhalten.
+Wenn die Rechnungsadresse des Kunden außerhalb Europas liegt und der Kunde ein Office 365 Education-Abonnement hat, kann Microsoft ungeachtet des Abschnitts „Standort der ruhenden Kundendaten für zentrale Onlinedienste“ der OST (Online Services Terms) den Office 365-Mandanten des Kunden überall in Europa oder Nordamerika bereitstellen, Kundendaten dorthin übertragen und ruhende Kundendaten dort speichern.  Wenn die Rechnungsadresse des Kunden innerhalb Europas liegt und der Kunde ein Office 365 Education-Abonnement hat, kann Microsoft ungeachtet des Abschnitts „Standort der ruhenden Kundendaten für zentrale Onlinedienste“ der OST (Online Services Terms) den Office 365-Mandanten des Kunden überall innerhalb der Europäischen Union bereitstellen, Kundendaten dorthin übertragen und ruhende Kundendaten dort speichern.
 
 
 
@@ -2283,7 +2283,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="guadeloupe"></a>Guadeloupe
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
