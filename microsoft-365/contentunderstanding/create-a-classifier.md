@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Informationen zum Erstellen eines Klassifizierers
-ms.openlocfilehash: 1225a4e57969b507ddd2ca7260050605c0db955e
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 948ece1a19b7e6049167c373b3200efd316a60cd
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321857"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338637"
 ---
 # <a name="create-a-classifier-in-microsoft-sharepoint-syntex"></a>Erstellen eines Klassifizierers in Microsoft SharePoint Syntex
 
@@ -131,7 +131,7 @@ Wenn Sie **Keine Übereinstimmung** bei den bezeichneten Dateien erhalten, müss
 
 ## <a name="test-your-model"></a>Ihr Modell testen
 
-Wenn Sie eine Übereinstimmung mit den beschrifteten Beispieldateien erhalten haben, können Sie nun das Modell für Ihre restlichen nicht beschrifteten Beispieldateien testen, die das Modell noch nicht kennt.  Dieser Schritt ist optional.
+Wenn Sie eine Übereinstimmung mit den beschrifteten Beispieldateien erhalten haben, können Sie nun das Modell für Ihre restlichen nicht beschrifteten Beispieldateien testen, die das Modell noch nicht kennt.  Das ist ein optionaler aber nützlicher Schritt, um die "Tauglichkeit" oder die Bereitschaft des Modells vor seiner Verwendung zu bewerten. Dazu wird es an Dateien getestet, die das Modell noch nie gesehen hat.
 
 1. Wählen Sie auf der Homepage des Modells die Registerkarte **Test**. Dadurch wird das Modell für Ihre nicht beschrifteten Beispieldateien ausgeführt.
 2. In der Liste **Testdateien** werden Ihre Beispieldateien angezeigt und zeigen an, ob das Modell sie als positiv oder negativ vorhergesagt hat. Mithilfe dieser Informationen können Sie ermitteln, wie effektiv Ihr Klassifizierer bei der Identifizierung Ihrer Dokumente ist.
@@ -143,6 +143,6 @@ Wenn Sie eine Übereinstimmung mit den beschrifteten Beispieldateien erhalten ha
 
 [Übersicht über das Dokumentenverständnis](document-understanding-overview.md)
 
-[Erstellen eines Formularverarbeitungsmodells](create-a-form-processing-model.md)
+[Beschreibungstypen](explanation-types-overview.md)
 
 [Anwenden eines Modells](apply-a-model.md) 

@@ -71,7 +71,7 @@
               href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service'
             - name: Generieren einer Testwarnung
               href: mtp/generate-test-alert.md
-        - name: Ausführen eines Pilotprojekts in der Produktion
+        - name: Ausführen des Pilotprojekts in der Produktion
           items:
             - name: Pilotprojekt – Übersicht
               href: mtp/mtp-pilot.md
@@ -402,13 +402,13 @@
               href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md
             - name: Sichere Dokumente in Office 365 ATP
               href: ./office-365-security/safe-docs.md
-            - name: Einrichten von Richtlinien für ATP-sichere Links
+            - name: Einrichten von Richtlinien für sichere Links in Office 365 ATP
               href: ./office-365-security/set-up-atp-safe-links-policies.md
-            - name: Einrichten von Richtlinien zu sicheren Anlagen in ATP
+            - name: Einrichten von Richtlinien für sichere Anlagen in Office 365 ATP
               href: ./office-365-security/set-up-atp-safe-attachments-policies.md
             - name: Einrichten von SPF zum Verhindern von Spoofing
               href: ./office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md
-            - name: Angeben eines Postfachs für Benutzerübermittlungen
+            - name: Richtlinien für Benutzerübermittlungen
               href: ./office-365-security/user-submission.md
             - name: 'Aktivieren von ATP für SharePoint, OneDrive und Microsoft Teams'
               href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
@@ -495,6 +495,8 @@
               href: ./office-365-security/mail-flow-rules-transport-rules-0.md
             - name: Melden von Junk-E-Mails und Phishing in Outlook im Web
               href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
+            - name: Melden von Junk-E-Mails und Phishing in Outlook für iOS und Android
+              href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-for-ios-and-android.md
             - name: Ausführen eines Administrator-Rollengruppenberichts in EOP als eigenständige Lösung
               href: ./office-365-security/run-an-administrator-role-group-report-in-eop-eop.md
         - name: Untersuchen
