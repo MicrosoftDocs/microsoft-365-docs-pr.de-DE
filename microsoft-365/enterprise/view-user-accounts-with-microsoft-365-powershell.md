@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: In diesem Artikel erfahren Sie, wie Sie Ihre Microsoft 365-Benutzerkonten mit PowerShell auf unterschiedliche Weise anzeigen, auflisten oder anzeigen können.
-ms.openlocfilehash: ea631d12a95ca813ebf9da3286e36d724d51a2f7
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 4dba05ce440ec0d395fda58a12df3e9f751bb469
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696033"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357898"
 ---
 # <a name="view-microsoft-365-user-accounts-with-powershell"></a>Anzeigen von Microsoft 365-Benutzerkonten mit PowerShell
 
@@ -99,6 +99,21 @@ Als weiteres Beispiel können Sie den aktivierten Status eines bestimmten Benutz
 ```powershell
 Get-AzureADUser -ObjectID <sign-in name of the user account> | Select DisplayName,UserPrincipalName,AccountEnabled
 ```
+
+### <a name="view-account-synchronization-status"></a>Anzeigen des Status der Konto Synchronisierung
+
+Benutzerkonten weisen zwei Quellen auf; Windows Server Active Directory (AD), bei denen es sich um Konten handelt, die vom lokalen AD zur Cloud synchronisiert werden und Azure Ad die in der Cloud direkt erstellte Konten sind.
+
+```powershell
+Get-AzureADUser | Where {$_.DirSyncEnabled -eq $true}
+```
+Mit diesem Befehl wird PowerShell angewiesen, alle Benutzer abzurufen, bei denen das Attribut **DirSyncEnabled** auf true festgelegt ist. Es kann zum Abrufen von Konten verwendet werden, die von lokalen AD synchronisiert werden.
+
+
+```powershell
+Get-AzureADUser | Where {$_.DirSyncEnabled -ne $true}
+```
+Mit diesem Befehl wird PowerShell angewiesen, alle Benutzer abzurufen, bei denen das Attribut **DirSyncEnabled** auf false festgelegt ist. Es kann verwendet werden, um Cloud-only-Konten abzurufen.
 
 ### <a name="view-some-accounts-based-on-a-common-property"></a>Anzeigen einiger Konten basierend auf einer gemeinsamen Eigenschaft
 
@@ -305,4 +320,3 @@ Get-ADUser ([guid][System.Convert]::FromBase64String((Get-MsolUser -UserPrincipa
 [Verwalten von Microsoft 365 mit PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-microsoft-365-powershell.md)
-

@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f462e6018f03080b41e46f45629dc4bfe44b3ef9
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c9b495b70c8b61188b4db3175b54e406feb87fc8
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200017"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357842"
 ---
 # <a name="incidents-overview-in-microsoft-threat-protection"></a>Übersicht über Vorfälle in Microsoft Threat Protection
 
@@ -36,23 +36,26 @@ ms.locfileid: "48200017"
 
 
 
-Grundlage aller Vorfälle sind Warnungen. Warnungen werden erstellt, wenn in Ihrem Netzwerk ein bösartiges Ereignis oder eine schädliche Aktivität erkannt wird. Einzelne Warnungen bieten wertvolle Anhaltspunkte dafür, was bei einzelnen Ereignissen oder Entitäten geschieht. Angriffe nutzen allerdings in der Regel verschiedene Angriffsvektoren zur Durchführung einer Sicherheitsverletzung. Die einzelnen Anhaltspunkte zusammenzustellen, kann eine herausfordernde und zeitraubende Aufgabe sein. 
+Vorfälle basieren auf entsprechenden Warnungen. Warnungen werden erstellt, wenn in Ihrem Netzwerk ein bösartiges Ereignis oder eine schädliche Aktivität erkannt wird. Einzelne Warnungen liefern wertvolle Anhaltspunkte für einen fortlaufenden Angriff. Angriffe verwenden jedoch in der Regel verschiedene Vektoren und Techniken für die Durchführung einer Sicherheitsverletzung. Einzelne Anhaltspunkte zusammen zu stellen, kann herausfordernd und zeitaufwändig sein.
 
-Microsoft Threat Protection verknüpft die Anhaltspunkte einzelner Warnungen. Im Microsoft 365 Security Center werden bösartige Ereignisse für die folgenden Entitäten angezeigt:
-- Geräte
-- Benutzer
-- Postfächer
+Dieses kurze Video bietet einen Überblick über Vorfälle in Microsoft Threat Protection.
+<br>
 
-Verdächtige Ereignisse, die Merkmale aufweisen, Teil eines größeren Angriffs zu sein, werden in einen Vorfall aggregiert. 
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-Sie erfahren genau, wo ein Angriff begonnen hat, und erhalten weitere Details, die den Umfang des Angriffs verdeutlichen.
+Bei einem Vorfall handelt es sich um eine Sammlung korrelierter Warnungen, aus denen sich die Geschichte eines Angriffs zusammensetzt. Böswillige und verdächtige Ereignisse, die sich in unterschiedlichen Geräten, Benutzern und Post Fach Entitäten im Netzwerk befinden, werden automatisch von Microsoft Threat Protection aggregiert. Durch das Gruppieren von zugehörigen Warnungen in einen Vorfall erhalten Sicherheits Verteidiger eine umfassende Ansicht eines Angriffs. 
 
-Die Plattform bietet Sicherheitsdefender mit geeigneten visuellen Objekte und Datendarstellungen, um komplexe entitätsübergreifende Bedrohungen zu verstehen und zu behandeln. 
+Beispielsweise können Sicherheits Verteidiger sehen, wo der Angriff gestartet wurde, welche Taktik verwendet wurde und wie weit der Angriff in das Netzwerk verlaufen ist. Sie können auch den Umfang des Angriffs sehen, wie viele Geräte, Benutzer und Postfächer betroffen waren, wie schwerwiegend die Auswirkungen waren, und andere Details zu betroffenen Entitäten.
 
-Sie verfügen nicht nur über einen Einblick in den Umfang eines Angriffs, sondern auch über Zugriff auf Dienste, mit denen Sie taktische Schritte zur Eindämmung eines Vorfalls unternehmen können.
+Wenn diese Option aktiviert ist, kann Microsoft Threat Protection die einzelnen Warnungen automatisch mithilfe von Automatisierung und künstlicher Intelligenz untersuchen und lösen. Sicherheits Verteidiger können auch zusätzliche korrekturschritte ausführen, um den Angriff direkt aus der Vorfallansicht zu lösen. 
+
+Vorfälle aus den letzten 30 Tagen werden in der Vorfall Warteschlange angezeigt. Von hier aus können Sicherheits Verteidiger sehen, welche Vorfälle basierend auf der Risikostufe und anderen Faktoren priorisiert werden sollten. 
+
+Sicherheits Verteidiger können Vorfälle auch umbenennen, Sie einzelnen Analysten zuweisen, Vorfälle klassifizieren und Tags hinzufügen, um eine bessere und Benutzer spezifischere Vorfall Verwaltungserfahrung zu erzielen.
 
 
-## <a name="related-topics"></a>Verwandte Themen
+
+## <a name="see-also"></a>Siehe auch
 - [Priorisieren von Vorfällen](incident-queue.md)
 - [Untersuchen von Vorfällen](investigate-incidents.md)
 - [Verwalten von Vorfällen](manage-incidents.md)

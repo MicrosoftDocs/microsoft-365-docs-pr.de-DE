@@ -10,15 +10,17 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: M365-subscription-management
+ms.collection:
+- M365-subscription-management
+- M365initiative-coredeploy
 ms.custom: it-pro
 description: Die Roadmap zum Einrichten Ihrer Mandanten für Microsoft 365.
-ms.openlocfilehash: 7834e8b7f9ff8a1b33f2f2a7ccc4a499e4da7c69
-ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
+ms.openlocfilehash: e4b2af9143070caa1ebd8fd66ef9f367f85d3bb9
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47775147"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357910"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Mandanten-Roadmap für Microsoft 365
 
@@ -34,7 +36,6 @@ So planen Sie die Implementierung Ihres Mandanten:
 
 - [Grundlegendes zu Abonnements, Lizenzen und Azure Active Directory (Azure AD)-Mandanten](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 - [Grundlegendes zur Verwendung von Drittanbieter-SSL-Zertifikaten](plan-for-third-party-ssl-certificates.md)
-- [Access-Setup Handbücher im Microsoft 365 Admin Center](setup-guides-for-microsoft-365.md)
 - [Grundlegendes zu den Möglichkeiten, mit denen ein Microsoft 365-Mandant in Azure AD Dienste integriert ist](integrated-apps-and-azure-ads.md)
 - [Planen der Client-App-Unterstützung](microsoft-365-client-support-certificate-based-authentication.md)
 - [Bestimmen der Verwendung der modernen Hybrid Authentifizierung](hybrid-modern-auth-overview.md)
@@ -44,7 +45,7 @@ So planen Sie die Implementierung Ihres Mandanten:
 
 ## <a name="deploy"></a>Bereitstellen
 
-Um ihren Mandanten bereitzustellen, [fügen Sie die DNS-Domänen](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) für Ihre Organisation hinzu.
+Um ihren Mandanten bereitzustellen, [fügen Sie die DNS-Domänen](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) für Ihre Organisation hinzu, und verwenden Sie die [Setup Handbücher im Microsoft 365 Admin Center](setup-guides-for-microsoft-365.md).
 
 ## <a name="tenants-with-multiple-geographic-locations"></a>Mandanten mit mehreren geografischen Standorten
 

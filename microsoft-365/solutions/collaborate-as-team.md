@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Hier finden Sie Informationen zu den Microsoft 365-Konfigurationsschritten, die zum Einrichten eines Teams für die Zusammenarbeit mit Gästen in Teams erforderlich sind.
-ms.openlocfilehash: e8d1c75c6172168fc2b0a4b351591289c893869a
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: e92397c7b8d4a4192fb36a52a76679269be53b3b
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48322177"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357794"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Zusammenarbeit mit Gästen in einem Team
 
@@ -184,3 +184,5 @@ So laden Sie Gäste zu einem Team ein
 [Erstellen einer sicheren Gastfreigabeumgebung](create-secure-guest-sharing-environment.md)
 
 [Erstellen eines B2B-Extranets mit verwalteten Gästen](b2b-extranet.md)
+
+[SharePoint-und OneDrive-Integration mit Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)
