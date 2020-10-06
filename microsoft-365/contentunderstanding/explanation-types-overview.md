@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Weitere Informationen über Erklärungstypen in Microsoft SharePoint Syntex
-ms.openlocfilehash: 7d78337fd91bc7e5a71bccd4867f019ae663417a
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 43272504912451e4690cb8b7fe351462371bb252
+ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321797"
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "48350303"
 ---
 # <a name="introduction-to-explanation-types"></a>Einführung in Erklärungstypen
 
@@ -68,7 +68,7 @@ Wenn Sie in Ihrer Musterliste Groß-/Kleinschreibungsanforderungen haben, haben 
    ![Nur genaue Groß-/Kleinschreibung](../media/content-understanding/exact-caps.png)
 
 > [!NOTE]
-> Statt die Erklärung der Musterliste manuell zu erstellen, verwenden Sie die [Erklärungsbibliothek](), um vorgefertigte Musterlistenvorlagen für allgemeine Musterlisten zu verwenden, wie z. B. *Datum*, *Telefonnummer*, *Kreditkartennummer* usw. 
+> Statt die Erklärung der Musterliste manuell zu erstellen, verwenden Sie die [Erklärungsbibliothek](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-explanation-templates), um vorgefertigte Musterlistenvorlagen für allgemeine Musterlisten zu verwenden, wie z. B. *Datum*, *Telefonnummer*, *Kreditkartennummer* usw. 
 
 ## <a name="proximity"></a>Näherung 
 
