@@ -13,13 +13,13 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-description: Sicherheit in Office 365, von EoP bis ATP-Pläne 1 und 2, Standard mäßige und strenge Sicherheitskonfigurationen und mehr, damit Sie verstehen, was Sie haben und wie Sie Ihre Eigenschaften sichern können.
-ms.openlocfilehash: bfce840aa05eaebecc1ec227c6c29bd11cb0a823
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+description: Sicherheit in Office 365, von EoP bis ATP-Pläne 1 und 2, Standard mäßige und strenge Sicherheitskonfigurationen und vieles mehr. Verstehen Sie, was Sie haben und wie Sie Ihre Eigenschaften sichern.
+ms.openlocfilehash: c5b357dc7a08eeef099b25172169d04cdb81e8c4
+ms.sourcegitcommit: 5abd5ef8c2903b4c3bd875da68049fde26768dcf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338732"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48359153"
 ---
 # <a name="office-365-security-overview"></a>Office 365 Sicherheit (Übersicht)
 
@@ -53,9 +53,9 @@ Aber im Hinblick auf die Architektur, beginnen wir mit dem Gedanken an jedes St�
 
 :::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="Placeholder graphic":::
 
-Obwohl ***jeder dieser*** Dienste ein bestimmtes Ziel unter schützen, erkennen, untersuchen und reagieren hervorhebt, können ***alle Dienste alle*** Ziele zum Schutz, erkennen, untersuchen und reagieren erfüllen.
+Obwohl jeder dieser Dienste ein Ziel aus unter Schutz, Erkennung, Untersuchung und Reaktion hervorhebt, können ***alle Dienste alle*** Ziele des ***Schutzes*** , Erkennens, Ermittelns und Reagierens ausführen.
 
-Der Kern Office 365 Sicherheit besteht in EoP Schutz. ATP P1 enthält EoP. ATP P2 enthält P1 und EOP. Die Struktur ist kumulativ. Deshalb sollten Sie beim Konfigurieren von ATP mit EoP beginnen und die Ebenen überarbeiten.
+Der Kern Office 365 Sicherheit besteht in EoP Schutz. ATP P1 enthält EoP. ATP P2 enthält P1 und EOP. Die Struktur ist kumulativ. Deshalb sollten Sie bei der Konfiguration dieses Produkts mit EoP beginnen und mit ATP arbeiten.
 
 Obwohl die e-Mail-Authentifizierungskonfiguration im öffentlichen DNS erfolgt, ist es wichtig, dieses Feature zu konfigurieren, um die Verteidigung vor Spoofing zu unterstützen. *Wenn Sie über EoP verfügen,* ***sollten Sie die [e-Mail-Authentifizierung konfigurieren](https://docs.microsoft.com/microsoft-365/security/office-365-security/email-validation-and-authentication)***.
 
@@ -83,7 +83,7 @@ Was das Hinzufügen von ATP-Plänen zu einem Vorteil des reinen EoP-Bedrohungs M
 beginnend mit **Exchange Online Schutz**:
 <p>
 
-|Verhindern/erkennen  |Untersuchen  |Reaktion  |
+|Verhindern/erkennen  |Untersuchen  |Reagieren  |
 |---------|---------|---------|
 | Zu den Technologien gehören:<ul><li>Spam</li><li>phishingfilterrichtlinie</li><li>Schadsoftware</li><li>Massen-e-Mail</li><li>Spoof Intelligence</li><li>Identitätswechsel Erkennung</li><li>Administrator Quarantäne</li><li>Administrator-und Benutzerübermittlungen falsch positiver und falsch negativer Ergebnisse</li><li>Allow/Block für URLs und Dateien</li><li>Berichte</li></u1>|<li>Durchsuchen von Überwachungsprotokollen</li><li>Nachrichtenablaufverfolgung</li>|<li>Automatische Bereinigung ohne Stunden (zap)</li><li>Einschränkung und Testen von Zulassungs-und Sperrlisten</li>|
 
@@ -94,7 +94,7 @@ Da diese Produkte kumulativ sind, wenn Sie ATP P1 auswerten und beschließen, es
 Gewinne mit **erweitertem Bedrohungsschutz, Plan 1** (bis Datum):
 <p>
 
-|Verhindern/erkennen  |Untersuchen  |Reaktion  |
+|Verhindern/erkennen  |Untersuchen  |Reagieren  |
 |---------|---------|---------|
 | Technologien umfassen alles in EoP Plus:<u1><li>Sichere Anlagen</li><li>Sichere Links<li>ATP-Schutz für Arbeitslasten (z. b. SharePoint Online, Teams, OneDrive für Unternehmen)</li><li>Zeit-zu-Klick-Schutz in e-Mails, Office-Clients und Teams</li><li>ATP-Anti-Phishing</li><li>Schutz von Benutzer-und Domänen Identitätswechsel</li><li>Warnungen und die Siem-Integrations-API für Warnungen</li>|<li>Siem-Integrations-API für Erkennungen</li><li>**Echt Zeit Erkennungstool**</li><li>URL-Ablaufverfolgung</li>|<li>Gleich</li></u1>
 
@@ -105,7 +105,7 @@ ATP P1 fügt auch **Echt Zeit Erkennungen** für Untersuchungen hinzu. Der Name 
 Gewinne mit **Advanced Threat Protection, Plan 2** (bis Datum):
 <p>
 
-|Verhindern/erkennen  |Untersuchen  |Reaktion  |
+|Verhindern/erkennen  |Untersuchen  |Reagieren  |
 |---------|---------|---------|
 | Zu den Technologien zählen alles in EoP und ATP P1 Plus:<u1><li>Gleich</li>|<li>**Sicherheitsrisiken-Explorer**</li><li>Nachverfolgungslisten für Bedrohungen</li><li>Kampagnen Ansichten</li>|<li>Automatische Untersuchung und Reaktion (Air)</li><li>Air from Threat Explorer</li><li>Air für kompromittierte Benutzer</li><li>Siem-Integrations-API für automatisierte Untersuchungen</li>
 
@@ -138,11 +138,11 @@ Diese Kurzübersicht hilft Ihnen zu verstehen, welche Funktionen mit den einzeln
 - Wenn Ihr aktuelles Abonnement Office 365 ATP nicht enthält und Sie es wünschen, [wenden Sie sich an den Vertrieb, um eine Testversion zu starten](https://go.microsoft.com/fwlink/p/?LinkId=518644), und erfahren Sie, wie ATP in Ihrer Organisation funktionieren kann.
 
 > [!TIP]
-> ***Insider Tipp***. Sie können das docs.Microsoft.com-Inhaltsverzeichnis verwenden, um mehr über EoP und ATP zu erfahren. Navigieren Sie zu [Office 365 Sicherheits](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap) Artikel, und Sie werden feststellen, dass die Inhaltsverzeichnis-Organisation mit Evaluierung und Bereitstellung (einschließlich Migration) beginnt und dann in den Themen Prävention, Erkennung, Untersuchung und Reaktion weiterentwickelt wird. <p> Diese Struktur ist unterteilt, sodass Sicherheits **Verwaltungs** Themen mit Themen zu **sicherheitsvorgängen** befolgt werden. Wenn Sie ein neues Mitglied einer der beiden Auftrags Rollen sind, verwenden Sie den Link in diesem Tipp und Ihr Wissen über das Inhaltsverzeichnis, um den Raum zu erlernen. Denken Sie daran, *Feedback Links* zu verwenden und die *Artikel bewerten* , wie Sie gehen. Feedback hilft uns, das zu verbessern, was wir Ihnen bieten.
+> ***Insider Tipp***. Sie können das docs.Microsoft.com-Inhaltsverzeichnis verwenden, um mehr über EoP und ATP zu erfahren. Navigieren Sie zurück zu dieser Seite, [Office 365 Übersicht über die Sicherheit](https://docs.microsoft.com/microsoft-365/security/office-365-security/?view=o365-worldwide), und Sie werden feststellen, dass die Inhaltsverzeichnis-Organisation in der Seitenleiste angezeigt wird. Er beginnt mit der Bereitstellung (einschließlich Migration) und wird dann in die Prävention, Erkennung, Untersuchung und Reaktion fortgesetzt. <p> Diese Struktur ist unterteilt, sodass Sicherheits **Verwaltungs** Themen mit Themen zu **sicherheitsvorgängen** befolgt werden. Wenn Sie ein neues Mitglied einer der beiden Auftrags Rollen sind, verwenden Sie den Link in diesem Tipp und Ihr Wissen über das Inhaltsverzeichnis, um den Raum zu erlernen. Denken Sie daran, *Feedback Links* zu verwenden und die *Artikel bewerten* , wie Sie gehen. Feedback hilft uns, das zu verbessern, was wir Ihnen bieten.
 
 ## <a name="where-to-go-next"></a>Weiter zu wechseln
 
-Wenn Sie ein Sicherheitsadministrator sind, müssen Sie möglicherweise DKIM oder DMARC für Ihre e-Mails konfigurieren, "strenge" Sicherheitsvorgaben für Ihre Prioritäts Benutzer bereitstellen, oder Sie suchen nach Neuerungen im Produkt. Wenn Sie mit Security OPS arbeiten, möchten Sie möglicherweise Echt Zeit Erkennungen oder Threat Explorer nutzen, um zu untersuchen und zu reagieren, oder um die Endbenutzer Erkennung mit dem Angriffs Simulator zu trainieren. Hier finden Sie einige zusätzliche Empfehlungen für das, was Sie als nächstes sehen sollten.
+Wenn Sie ein Sicherheitsadministrator sind, müssen Sie möglicherweise DKIM oder DMARC für Ihre e-Mails konfigurieren. Möglicherweise möchten Sie "strenge" Sicherheitsvoreinstellungen für Ihre Prioritäts Benutzer bereitstellen oder nach neuen Funktionen im Produkt suchen. Oder wenn Sie mit Security OPS arbeiten, können Sie Echt Zeit Erkennungen oder Threat Explorer nutzen, um zu untersuchen und zu reagieren oder die Endbenutzer Erkennung mit dem Angriffs Simulator zu trainieren. Wie dem auch sei, hier sind einige zusätzliche Empfehlungen dafür, was Sie als nächstes sehen sollten.
 
 [E-Mail-Authentifizierung, einschließlich SPF, DKIM und DMARC (mit Links zum Setup aller drei)](https://docs.microsoft.com/microsoft-365/security/office-365-security/email-validation-and-authentication)
 
