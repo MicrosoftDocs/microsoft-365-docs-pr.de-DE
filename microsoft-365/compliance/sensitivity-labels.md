@@ -22,12 +22,12 @@ description: Verwenden Sie Vertraulichkeitskennzeichnungen aus dem Microsoft Inf
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 349adfd181a86d04b8188d8bf76df8ae9dc5c3a6
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: 9a02b5b6f0e78a71ab598b860248422d751c8400
+ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338556"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48361962"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informationen zu Vertraulichkeitsbezeichnungen
 
@@ -44,9 +44,9 @@ Hier ein Beispiel zur Anzeige verfügbarer Vertraulichkeitsbezeichnungen aus der
 Um Vertraulichkeitsbezeichnungen anwenden zu können müssen die Benutzer mit ihrem Microsoft 365-Geschäfts-, -Schul- oder -Unikonto angemeldet sein.
 
 > [!NOTE]
-> Für US Government Community-Mandanten (GCC und GCC-HC) werden Vertraulichkeitsbezeichnungen derzeit nur für den Azure Information Protection-Client für einheitliche Bezeichnungen und den Scanner unterstützt. 
+> Für US Government-Mandanten (GCC, GCC-HC, und DoD) werden Vertraulichkeitsbezeichnungen derzeit nur für den Azure Information Protection-Client für einheitliche Bezeichnungen und den Scanner unterstützt. 
 > 
-> Weitere Informationen finden Sie im Blogbeitrag, [Announcing General Availability of Unified Labeling in GCC and GCC-H Environments](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-general-availability-of-unified-labeling-in-gcc-and/ba-p/1563215) (Ankündigung der allgemeinen Verfügbarkeit von einheitlichen Bezeichnungen in GCC- und GCC-H-Umgebungen).
+> Weitere Informationen finden Sie in der [Dienstbeschreibung des Azure Information Protection Premium Government ](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
 
 Sie können Vertraulichkeitsbezeichnungen zu Folgendem verwenden:
   
