@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Bestehende Office 365-Kunden müssen vor Ablauf der Frist für Ihr Land eine Anforderung stellen, damit die Microsoft 365-Dienste in den neuen geografischen Raum verschoben werden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 10c77fdde8583c9d791c9fed936f94aad8fc7264
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: 7f8f25fcaf3e8beb59ca43ad260e2636cf0c4949
+ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333884"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48361939"
 ---
 # <a name="how-to-request-your-data-move"></a>Anfordern der Datenverschiebung
 
@@ -31,7 +31,7 @@ Berechtigte Microsoft 365-Kunden fordern möglicherweise eine Migration für die
   
 ## <a name="when-can-i-request-a-move"></a>Wann kann ich eine Verschiebung anfordern?
 
-|**Kunden mit Anmeldeland in**|**Der Anforderungszeitraum beginnt**|**und endet**|
+| Kunden mit Anmeldeland in | Der Anforderungszeitraum beginnt | und endet |
 |:-----|:-----|:-----|
 |Japan  <br/> |1. Januar 2020  <br/> |30. Juni 2020  <br/> |
 |Australien, Neuseeland, Fidschi  <br/> |1. Januar 2020  <br/> |30. Juni 2020  <br/> |
@@ -44,7 +44,7 @@ Berechtigte Microsoft 365-Kunden fordern möglicherweise eine Migration für die
 |Südafrika  <br/> |25. Juli 2019  <br/> |30. Juni 2020  <br/> |
 |Schweiz, Liechtenstein  <br/> |10. Dezember 2019  <br/> |30. Juni 2020  <br/> |
 |Norwegen  <br/> |15. April 2020  <br/> |31. Oktober 2020  <br/> |
-|Deutschland  <br/> |1. Oktober 2020  <br/> |31. März 2021  <br/> |
+|Deutschland  <br/> |Geplant  <br/> |Geplant  <br/> |
 
 ## <a name="how-to-request-a-move"></a>So fordern Sie eine Migration an
 

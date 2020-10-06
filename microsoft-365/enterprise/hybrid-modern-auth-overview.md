@@ -4,7 +4,7 @@ ms.author: kvice
 ms.reviewer: smithre4
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/15/2020
+ms.date: 08/25/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie mehr über die moderne Hybrid Authentifizierung und die Voraussetzungen für die Verwendung mit lokalen Skype for Business-und Exchange-Servern.
-ms.openlocfilehash: 1e0330bd62d9098f11a12b44b46e9ace30b59420
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 82cd4203e2e9dc53c6add542c5f0ba90530b6548
+ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546444"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48361927"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Moderne Hybridauthentifizierung, Übersicht und Voraussetzungen für die Verwendung mit lokalen Skype for Business- und Exchange-Servern
 
@@ -143,18 +143,22 @@ Weitere Informationen zum Cmdlet "Get-CsOAuthConfiguration" finden Sie unter [Ge
   - Wenn Sie Exchange Server 2013 verwenden, müssen auf mindestens einem Server die Serverrollen „Postfach“ und „Clientzugriff“ installiert sein. Es ist zwar möglich, die Rollen „Postfach“ und „Clientzugriff“ auf separaten Servern zu installieren, es wird jedoch dringend empfohlen, beide Rollen auf demselben Server zu installieren, um zusätzliche Zuverlässigkeit und verbesserte Leistung bereitzustellen.
   - Wenn Sie Exchange Server 2016 oder eine spätere Version verwenden, muss auf mindestens einem Server die Serverrolle „Postfach“ installiert sein.
   - Es gibt kein Exchange Server 2007 oder 2010 in der Hybridumgebung.
-  - Alle Exchange-Server müssen über die neuesten kumulativen Updates verfügen. Weitere Informationen finden Sie unter [Upgrade von Exchange auf die neuesten kumulativen Updates](https://docs.microsoft.com/exchange/plan-and-deploy/install-cumulative-updates?view=exchserver-2019), um alle verfügbaren Updates zu finden und zu verwalten.
+  - Alle Exchange-Server müssen über die neuesten kumulativen Updates verfügen. Weitere Informationen finden Sie unter [Upgrade von Exchange auf die neuesten kumulativen Updates](https://docs.microsoft.com/exchange/plan-and-deploy/install-cumulative-updates), um alle verfügbaren Updates zu finden und zu verwalten.
 
 - **Exchange-Client- und Protokollanforderungen**
 
-  - Die folgenden Clients unterstützen die moderne Authentifizierung:
+    Die Verfügbarkeit der modernen Authentifizierung wird durch die Kombination aus Client, Protokoll und Konfiguration bestimmt. Wenn die moderne Authentifizierung nicht vom Client, Protokoll und/oder der Konfiguration unterstützt wird, nutzt der Client weiterhin die Legacy Authentifizierung.
+  
+    Die folgenden Clients und Protokolle unterstützen die moderne Authentifizierung mit lokalem Exchange, wenn die moderne Authentifizierung in der Umgebung aktiviert ist:
 
   |**Clients**|**Primary-Protokoll**|**Notizen**|
   |:-----|:-----|:-----|
-  |Outlook 2013 und Outlook 2016  <br/> |MAPI über HTTP  <br/> |MAPI über HTTP muss in Exchange aktiviert sein, um die moderne Authentifizierung mit diesen Clients (in der Regel aktiviert oder "wahr" für neue Installationen von Exchange 2013 Service Pack 1 und höher) zu nutzen. Weitere Informationen hierzu finden Sie unter [Funktionsweise der modernen Authentifizierung für Office 2013- und Office 2016-Client-Apps](modern-auth-for-office-2013-and-2016.md).  <br/> Stellen Sie sicher, dass Sie den mindestens erforderlichen Build von Outlook ausführen. Lesen Sie [Neueste Updates für Outlook-Versionen, die Windows Installer (MSI) verwenden](https://docs.microsoft.com/officeupdates/outlook-updates-msi).  <br/> |
-  |Outlook 2016 für Mac  <br/> |Exchange-Webdienste  <br/> |  <br/> |
-  |Outlook für iOS und Android  <br/> |  <br/> |Weiter Informationen finden Sie unter [Verwenden der modernen Hybridauthentifizierung mit Outlook für iOS und Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).  <br/> |
+  |Outlook 2013 und höher  <br/> |MAPI über HTTP  <br/> |MAPI über HTTP muss in Exchange aktiviert sein, um die moderne Authentifizierung mit diesen Clients (in der Regel aktiviert oder "wahr" für neue Installationen von Exchange 2013 Service Pack 1 und höher) zu nutzen. Weitere Informationen hierzu finden Sie unter [Funktionsweise der modernen Authentifizierung für Office 2013- und Office 2016-Client-Apps](modern-auth-for-office-2013-and-2016.md).  <br/> Stellen Sie sicher, dass Sie den mindestens erforderlichen Build von Outlook ausführen. Lesen Sie [Neueste Updates für Outlook-Versionen, die Windows Installer (MSI) verwenden](https://docs.microsoft.com/officeupdates/outlook-updates-msi).  <br/> |
+  |Outlook 2016 für Mac und höher  <br/> |Exchange-Webdienste  <br/> |  <br/> |
+  |Outlook für iOS und Android  <br/> | Microsoft-Synchronisierungstechnologie <br/> |Weiter Informationen finden Sie unter [Verwenden der modernen Hybridauthentifizierung mit Outlook für iOS und Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).  <br/> |
   |Exchange ActiveSync-Clients (z. B. iOS11 Mail)  <br/> |Exchange ActiveSync  <br/> |Bei Exchange ActiveSync-Clients, die die moderne Authentifizierung unterstützen, müssen Sie das Profil neu erstellen, um von der Standardauthentifizierung zur modernen Authentifizierung zu wechseln.  <br/> |
+
+    Clients und/oder Protokolle, die nicht aufgeführt sind (beispielsweise POP3), unterstützen die moderne Authentifizierung mit lokalem Exchange nicht und setzen auch nach der Aktivierung der modernen Authentifizierung in der Umgebung die Nutzung von Legacy Authentifizierungsmechanismen fort.
 
 - **Allgemeine Voraussetzungen**
   - Wenn Sie AD FS verwenden, sollten Sie Windows 2012 R2 AD FS 3.0 und höher für Verbund verwenden.
