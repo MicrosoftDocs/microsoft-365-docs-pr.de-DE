@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: 'Hier finden Sie die Schritte zum Übertragen einer Domäne von Microsoft an eine andere Registrierungsstelle. '
-ms.openlocfilehash: c5c1e98ed14c3ac975e55aadbff65e52165a6f8b
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: d960b57a2c82b804d61ead1c672c00f0543b3ae8
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289171"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370324"
 ---
 # <a name="transfer-a-domain-from-microsoft-to-another-host"></a>Übertragen einer Domäne von Microsoft auf einen anderen Host
 
@@ -55,13 +55,16 @@ Führen Sie die folgenden Schritte aus, um einen Code bei Microsoft 365 zu erhal
 
 7. Kopieren Sie den Autorisierungscode, und warten Sie etwa 30 Minuten, bis Ihr Domänen Übertragungsstatus auf der Registerkarte **Registrierung** auf für **Übertragung für entsperrt** geändert wurde, bevor Sie mit den nächsten Schritten fortfahren.
 
-8. Wechseln Sie zur Website der Domänenregistrierungsstelle, für die Sie Ihren Domänennamen weiterleiten möchten. Befolgen Sie die Anweisungen für die Übertragung einer Domäne (Suche nach Hilfe auf Ihrer Website).
+8. Wechseln Sie zur Website der Domänenregistrierungsstelle, für die Sie Ihren Domänennamen weiterleiten möchten. Befolgen Sie die Anweisungen für die Übertragung einer Domäne (Suche nach Hilfe auf Ihrer Website). Dies bedeutet normalerweise, dass Sie Überweisungsgebühren bezahlen und dem neuen Registrar die AuthCode geben, damit Sie die Übertragung initiieren können. Microsoft wird Ihnen eine e-Mail senden, um zu bestätigen, dass die Übertragungsanforderung empfangen wurde, und die Domäne wird innerhalb von 5 Tagen übertragen.
 
-Die Registerkarte Autorisierungscode **Registrierung** befindet sich auf der Seite  **Domänen** in Microsoft 365.
+    Die Registerkarte Autorisierungscode **Registrierung** befindet sich auf der Seite  **Domänen** in Microsoft 365.
+    
+    > [!TIP]
+    > . uk-Domänen erfordern ein anderes Verfahren. Wenden Sie sich an den Microsoft-Support, und fordern Sie eine **IPS-Tag-Änderung** an, die der Registrierungsstelle entspricht, für die Sie Ihre Domäne verwalten möchten. Nachdem sich das Tag geändert hat, wird die Domäne sofort an die neue Registrierungsstelle übertragen. Anschließend müssen Sie mit der neuen Registrierungsstelle zusammenarbeiten, um die Übertragung abzuschließen, wahrscheinlich Gebühren für die Übertragung zu bezahlen und die übertragene Domäne Ihrem Konto bei ihrer neuen Registrierungsstelle hinzuzufügen.
 
 9. Nach Abschluss der Übertragung erneuern Sie Ihre Domäne bei der neuen Domänenregistrierungsstelle.
 
-10. Um den Vorgang abzuschließen, wechseln Sie zurück zur Seite **Domänen** im Admin Center, und wählen Sie dann  **vollständige Domänen Übertragung**aus.
+10. Um den Vorgang abzuschließen, wechseln Sie zurück zur Seite **Domänen** im Admin Center, und wählen Sie dann  **vollständige Domänen Übertragung**aus. Dadurch wird die Domäne als nicht mehr erworben von Microsoft 365 gekennzeichnet, und das Domänen Abonnement wird deaktiviert. Die Domäne wird nicht aus dem Mandanten entfernt, und es werden keine Auswirkungen auf vorhandene Benutzer und Postfächer in der Domäne gehabt.
 
 > [!NOTE]
 > Erworbene Microsoft 365-Domänen sind nicht für Namenserver Änderungen oder die Übertragung der Domäne zwischen Microsoft 365-Organisationen berechtigt. Wenn eine dieser Anforderungen erforderlich ist, muss die Domänenregistrierung an eine andere Registrierungsstelle übertragen werden.

@@ -13,16 +13,35 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: a483a03fc913a019f58e80fb2713bb0367a6db44
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 9dec293a26cbc3d239a597e46815d60d79b9ac20
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546270"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370412"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Änderungsverlauf für Microsoft Managed Desktop-Dokumentation
 
 In diesem Artikel werden neue und aktualisierte Artikel in der [Dokumentation zu Microsoft Managed Desktop](index.yml)aufgelistet. "Aktualisierte" Artikel sind solche, die Material Ergänzungen oder Korrekturen vorgenommen haben – kleinere Korrekturen wie die Korrektur von Tippfehlern, Formatvorlagen oder Formatierungsproblemen werden nicht aufgeführt. Sie können den Verlauf bestimmter Commits (einschließlich der Details aller Änderungen) jederzeit anzeigen, indem Sie das [Repo auf GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)besuchen.
+
+
+## <a name="september-2020"></a>September 2020
+Neuer oder geänderter Artikel | Beschreibung
+--- | ---
+[Datenschutz und personenbezogene Daten](service-description/privacy-personal-data.md) | Neuer Artikel
+[Voraussetzungen von zugeordneten Laufwerken für Microsoft Managed Desktop](get-ready/mapped-drives.md) | Aktualisierter Artikel
+[Hilfe für Benutzer](working-with-managed-desktop/end-user-support.md) | Aktualisierter Artikel
+[Referenz zu konfigurierbaren Einstellungen – Microsoft Managed Desktop](working-with-managed-desktop/config-setting-ref.md) | Aktualisierter Artikel
+[Bereitstellen und Nachverfolgen von konfigurierbaren Einstellungen – Microsoft Managed Desktop](working-with-managed-desktop/config-setting-deploy.md) | Aktualisierter Artikel
+[Administratorunterstützung für Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Aktualisierter Artikel
+[Microsoft Teams](get-started/teams.md) | Neuer Artikel
+[Zugreifen auf das Verwaltungsportal](get-started/access-admin-portal.md) | Neuer Artikel
+[Voraussetzungen von Druckressourcen für Microsoft Managed Desktop](get-ready/printing.md) | Aktualisierter Artikel
+[Eindruck beim ersten Ausführen mit Autopilot und der Registrierungsstatusseite](get-started/esp-first-run.md) | Aktualisierter Artikel
+[Selbstregistrieren neuer Geräte](get-started/register-devices-self.md) | Aktualisierter Artikel
+[Vorbereiten von Zertifikaten und Netzwerkprofilen für Microsoft Managed Desktop](get-ready/certs-wifi-lan.md) | Aktualisierter Artikel
+[Voraussetzungen für Microsoft Managed Desktop](get-ready/prerequisites.md) | Aktualisierter Artikel
+[Mit Insights arbeiten](working-with-managed-desktop/insights.md) | Aktualisierter Artikel
 
 ## <a name="august-2020"></a>August 2020
 Neuer oder geänderter Artikel | Beschreibung

@@ -1,9 +1,8 @@
 ---
-title: Office 365 Networking-Partnerprogram
+title: Microsoft 365 Networking Partner Program
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/07/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,14 +16,14 @@ search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: Das Microsoft 365-Netzwerk Partner Programm ermöglicht, dass Ihr Gerät zertifiziert wird, wenn Sie mit Microsoft 365 arbeiten.
 hideEdit: true
-ms.openlocfilehash: fb4a7c9543c6928eefbd62fc6b94e6bdab93e86d
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 4f47b4d58dacf9578952f18668f2a0a89752f30f
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690737"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370358"
 ---
-# <a name="microsoft-365-networking-partner-program"></a>Office 365 Networking-Partnerprogram
+# <a name="microsoft-365-networking-partner-program"></a>Microsoft 365 Networking Partner Program
 
 Die Netzwerkkonnektivität hat direkten Einfluss auf die Fähigkeit Ihrer Benutzer, schnell zu arbeiten, effektiv zusammenzuarbeiten und Geschäftsprozesse mit Microsoft 365 zu rationalisieren. Für Kunden in jeder Phase ihrer digitalen Transformation ist Netzwerkentwurf ein wichtiger Aspekt, der proaktiv behandelt werden sollte, bevor Probleme sich negativ auf die Benutzeroberfläche auswirken.
 
@@ -40,4 +39,4 @@ Das Microsoft 365-Netzwerk Partner Programm bezeichnet qualifizierte Netzwerklö
 
 Wenn Sie ein Microsoft 365-Kunde sind, können Sie Ihren Netzwerk Lösungsanbieter über diese Seite unter auf dieses Programm aufmerksam machen [https://aka.ms/Office365NPP](https://aka.ms/Office365NPP) .
 
-Für Netzwerk Lösungsanbieter, die sich über das Microsoft 365-Netzwerk Partner Programm erkundigen möchten, füllen Sie [dieses Formular](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRyMNEapKtzJHu98R0YXYz1RUN0QxSUVEWTdRVTdIV1RTWjIzOVk0QkE4US4u)aus. Vielen Dank für Ihr Interesse und freuen uns auf eine schöne Partnerschaft.
+Für Netzwerk Lösungsanbieter, die sich über das Microsoft 365-Netzwerk Partner Programm erkundigen möchten, füllen Sie das Formular unter aus [https://aka.ms/NPPsignup](https://aka.ms/NPPsignup) . Vielen Dank für Ihr Interesse und freuen uns auf eine schöne Partnerschaft.
