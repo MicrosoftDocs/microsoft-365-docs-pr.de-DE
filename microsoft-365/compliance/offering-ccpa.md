@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e279d8e075538582ea282e1c6d1493685a817b2a
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 5294b63744ec64f9be566a4a447c56ccd7456136
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208125"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370301"
 ---
 # <a name="california-consumer-privacy-act-ccpa"></a>California Consumer Privacy Act (CCPA)
 
@@ -53,7 +53,7 @@ Wie in der Ost dargelegt, erfüllt Microsoft alle Gesetze und Verordnungen, die 
 
 Hier sind einige Schritte, die Sie ausführen können, um sich für die CCPA vorzubereiten:
 
-- Beginnen Sie mit der Nutzung der dsgvo-Bewertung in [Compliance Score](compliance-score.md) als Teil Ihres CCPA-Datenschutzprogramms.
+- Beginnen Sie mit der Nutzung der dsgvo-Bewertung im [Compliance-Manager](compliance-manager.md) als Teil Ihres CCPA-Datenschutzprogramms.
 - Einrichten eines Prozesses zur effizienten Reaktion auf Datensubjekt-Zugriffsanforderungen (DSARs) mithilfe des Tools für Datensubjekt Anforderungen.
 - Richten Sie Etiketten und Richtlinien ein, um vertrauliche Daten mit Microsoft Information Protection zu erkennen, zu klassifizieren und zu kennzeichnen und zu schützen.
 - Verwenden Sie E-Mail-Verschlüsselungsfunktionen, um vertrauliche Informationen weiter zu kontrollieren.
@@ -93,9 +93,9 @@ Das CCPA erfordert unter anderem regulierte Unternehmen, die persönliche Inform
 - CCPA führt elterliche Zustimmungsverpflichtungen im Einklang mit dem Children's Online Privacy Protection Act (COPPA) für Kinder unter 13 Jahren ein.
 - Für Kinder zwischen 13 und 16 Jahren auferlegt CCPA eine neue Verpflichtung, die Zustimmung des Kindes zu erhalten.
 
-## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Bewerten des Risikos mithilfe von Microsoft Compliance-Manager
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Verwenden von Microsoft Compliance-Manager zur Einschätzung des Risikos
 
-[Microsoft Compliance Manager](compliance-manager.md) ist ein Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) , mit dem Sie die Compliance-Haltung ihrer Organisation besser verstehen und Maßnahmen zur Verringerung von Risiken unterstützen können. Compliance-Manager bietet eine Premium-Vorlage für die Erstellung einer Bewertung für diese Verordnung. Suchen Sie die Vorlage auf der Seite " **Bewertungs Vorlagen** " im Compliance-Manager. Hier erfahren Sie, wie Sie [Assessments im Compliance-Manager erstellen](compliance-manager-assessments.md).
+[Microsoft Compliance Manager](compliance-manager.md) ist eine Funktion im [Microsoft 365 Compliance Center, die Ihnen](microsoft-365-compliance-center.md) hilft, die Compliance-Position Ihres Unternehmens zu verstehen und Maßnahmen zu ergreifen, um Risiken zu reduzieren. Compliance Manager bietet eine Premiumvorlage für die Erstellung einer Bewertung für diese Verordnung. Suchen Sie die Vorlage auf der Seite **Bewertungsvorlagen** im Compliance Manager. Erfahren Sie, wie Sie [Bewertungen in Compliance Manager erstellen](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressourcen
 

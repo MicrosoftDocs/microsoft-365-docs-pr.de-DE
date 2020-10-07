@@ -19,18 +19,18 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Erfahren Sie, wie Sie mithilfe von Kompatibilitäts Grenzen logische Grenzen erstellen, die die Benutzerinhalts Speicherorte steuern, die ein eDiscovery-Manager in Microsoft 365 durchsuchen kann.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 19165af60d7813134952589831bf94a91bfe7f40
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: c57689cc6e626b62ae976bac9f9771205431bc8a
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277101"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370401"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Einrichten von Compliance-Grenzen für eDiscovery-Untersuchungen
 
 Die Anleitungen in diesem Artikel können angewendet werden, wenn Sie entweder die Kern-eDiscovery oder die erweiterte eDiscovery zum Verwalten von Untersuchungen verwenden.
 
-Compliance-Grenzen erstellen logische Grenzen in einer Organisation, die die Benutzerinhalts Speicherorte (wie Postfächer, SharePoint-Websites und OneDrive-Konten) steuern, die eDiscovery-Manager durchsuchen können. Außerdem steuern Compliance-Grenzen, wer auf eDiscovery-Fälle zugreifen kann, die zur Verwaltung der rechtlichen, personellen oder sonstigen Untersuchungen in Ihrer Organisation verwendet werden. Die Notwendigkeit von Compliance-Grenzen ist häufig für multinationale Unternehmen erforderlich, die geografische und behördliche Bestimmungen respektieren müssen, und für Regierungen, die häufig in verschiedene Agenturen aufgeteilt sind. In Microsoft 365 unterstützen Compliance-Grenzen Sie bei der Durchführung von Inhalts suchen und der Verwaltung von Untersuchungen mit eDiscovery-Fällen bei der Erfüllung dieser Anforderungen.
+Compliance-Grenzen erstellen logische Grenzen in einer Organisation, die die Benutzerinhalts Speicherorte (wie Postfächer, OneDrive-Konten und SharePoint-Websites) steuern, die eDiscovery-Manager durchsuchen können. Außerdem steuern Compliance-Grenzen, wer auf eDiscovery-Fälle zugreifen kann, die zur Verwaltung der rechtlichen, personellen oder sonstigen Untersuchungen in Ihrer Organisation verwendet werden. Die Notwendigkeit von Compliance-Grenzen ist häufig für multinationale Unternehmen erforderlich, die geografische und behördliche Bestimmungen respektieren müssen, und für Regierungen, die häufig in verschiedene Agenturen aufgeteilt sind. In Microsoft 365 unterstützen Compliance-Grenzen Sie bei der Durchführung von Inhalts suchen und der Verwaltung von Untersuchungen mit eDiscovery-Fällen bei der Erfüllung dieser Anforderungen.
   
 Wir verwenden das Beispiel in der folgenden Abbildung, um zu erläutern, wie Kompatibilitäts Grenzen funktionieren.
   
@@ -56,11 +56,21 @@ Hier ist der Prozess zum Einrichten von Kompatibilitäts Grenzen:
 
 [Schritt 5: Erstellen eines eDiscovery-Falls für eine Intra-Agency-Untersuchung](#step-5-create-an-ediscovery-case-for-intra-agency-investigations)
 
+## <a name="before-you-set-up-compliance-boundaries"></a>Vor dem Einrichten von Compliance-Grenzen
+
+Sie müssen die folgenden Voraussetzungen erfüllen, bevor das Azure Active Directory (Azure AD)-Attribut, das Sie (in Schritt 1) identifizieren, erfolgreich mit dem OneDrive-Konto eines Benutzers synchronisiert werden kann (in Schritt 2):
+
+- Benutzern muss eine Exchange Online Lizenz und eine SharePoint Online Lizenz zugewiesen sein.
+
+- Benutzerpostfächer müssen mindestens 10 MB groß sein. Wenn das Postfach eines Benutzers kleiner als 10 MB ist, wird das zum Definieren Ihrer Agenturen verwendete Attribut nicht mit dem OneDrive-Konto des Benutzers synchronisiert.
+
+- Compliance-Grenzen und die Attribute, die zum Erstellen von Such Berechtigungs Filtern verwendet werden, erfordern, dass Azure Active Directory (Azure AD)-Attribute mit Benutzerpostfächern synchronisiert werden. Um zu überprüfen, ob die Attribute, die Sie verwenden möchten, synchronisiert wurden, führen Sie das Cmdlet [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user) in Exchange Online PowerShell aus. Die Ausgabe dieses Cmdlets zeigt die Azure AD Attribute an, die mit Exchange Online synchronisiert wurden.
+
 ## <a name="step-1-identify-a-user-attribute-to-define-your-agencies"></a>Schritt 1: Identifizieren eines Benutzer Attributs zur Definition ihrer Agenturen
 
-Der erste Schritt besteht darin, ein zu verwendender Azure Active Directory-Attribut auszuwählen, mit dem Ihre Agenturen definiert werden. Dieses Attribut wird verwendet, um den Such Berechtigungsfilter zu erstellen, mit dem ein eDiscovery-Manager so eingeschränkt wird, dass nur die inhaltsspeicherorte von Benutzern durchsucht werden, denen ein bestimmter Wert für dieses Attribut zugewiesen ist. Angenommen, Contoso entscheidet, das **Department** -Attribut zu verwenden. Der Wert für dieses Attribut für Benutzer in der vierten Coffee-Tochtergesellschaft wäre  `FourthCoffee`  und der Wert für die Benutzer in der Weingut-Tochtergesellschaft `CohoWinery` . In Schritt 4 verwenden Sie dieses  `attribute:value`  Paar (beispielsweise *Department: fourthcoffee*), um die Benutzerinhalts Speicherorte zu begrenzen, die eDiscovery-Manager durchsuchen können. 
+Der erste Schritt besteht darin, ein Azure AD zu verwendender Attribut auszuwählen, mit dem Ihre Agenturen definiert werden. Dieses Attribut wird verwendet, um den Such Berechtigungsfilter zu erstellen, mit dem ein eDiscovery-Manager so eingeschränkt wird, dass nur die inhaltsspeicherorte von Benutzern durchsucht werden, denen ein bestimmter Wert für dieses Attribut zugewiesen ist. Angenommen, Contoso entscheidet, das **Department** -Attribut zu verwenden. Der Wert für dieses Attribut für Benutzer in der vierten Coffee-Tochtergesellschaft wäre  `FourthCoffee`  und der Wert für die Benutzer in der Weingut-Tochtergesellschaft `CohoWinery` . In Schritt 4 verwenden Sie dieses  `attribute:value`  Paar (beispielsweise *Department: fourthcoffee*), um die Benutzerinhalts Speicherorte zu begrenzen, die eDiscovery-Manager durchsuchen können. 
   
-Im folgenden finden Sie eine Liste der Azure Active Directory Benutzerattribute, die Sie für Kompatibilitäts Grenzen verwenden können:
+Im folgenden finden Sie eine Liste der Azure AD Benutzerattribute, die Sie für Kompatibilitäts Grenzen verwenden können:
   
 - Company
 
@@ -79,20 +89,20 @@ Obwohl mehr Benutzerattribute verfügbar sind, insbesondere für Exchange-Postf�
   
 ## <a name="step-2-file-a-request-with-microsoft-support-to-synchronize-the-user-attribute-to-onedrive-accounts"></a>Schritt 2: Datei eine Anforderung mit dem Microsoft-Support, um das Benutzerattribut mit OneDrive-Konten zu synchronisieren
 
-Im nächsten Schritt wird eine Anforderung mit dem Microsoft-Support gespeichert, um das Azure Active Directory-Attribut zu synchronisieren, das Sie in Schritt 1 für alle OneDrive-Konten in Ihrer Organisation ausgewählt haben. Nach dieser Synchronisierung wird das Attribut (und sein Wert), das Sie in Schritt 1 ausgewählt haben, einer ausgeblendeten verwalteten Eigenschaft mit dem Namen zugeordnet `ComplianceAttribute` . Sie verwenden dieses Attribut, um den Such Berechtigungsfilter für OneDrive in Schritt 4 zu erstellen.
+Im nächsten Schritt wird eine Anforderung mit dem Microsoft-Support gespeichert, um das Azure AD Attribut zu synchronisieren, das Sie in Schritt 1 für alle OneDrive-Konten in Ihrer Organisation ausgewählt haben. Nach dieser Synchronisierung wird das Attribut (und sein Wert), das Sie in Schritt 1 ausgewählt haben, einer ausgeblendeten verwalteten Eigenschaft mit dem Namen zugeordnet `ComplianceAttribute` . Sie verwenden dieses Attribut, um den Such Berechtigungsfilter für OneDrive in Schritt 4 zu erstellen.
   
 Schließen Sie die folgenden Informationen ein, wenn Sie die Anforderung an den Microsoft-Support übermitteln:
   
 - Der Standarddomänenname Ihrer Organisation
 
-- Der Name des Azure Active Directory-Attributs (aus Schritt 1)
+- Der Name des Azure AD-Attributs (aus Schritt 1)
 
-- Der folgende Titel oder die Beschreibung des Zwecks der Supportanforderung: "aktivieren Sie OneDrive für Unternehmen Synchronisierung mit Azure Active Directory für Compliance-Sicherheitsfilter". Dadurch wird die Anforderung an das eDiscovery-Entwicklungsteam weitergeleitet, das die Anforderung implementiert.
+- Der folgende Titel oder die Beschreibung des Zwecks der Supportanforderung: "aktivieren OneDrive für Unternehmen Synchronisierung mit Azure AD für Compliance-Sicherheitsfilter". Dadurch wird die Anforderung an das eDiscovery-Entwicklungsteam weitergeleitet, das die Anforderung implementiert.
 
 Nachdem die technische Änderung vorgenommen wurde und das Attribut mit OneDrive synchronisiert wurde, sendet der Microsoft-Support Ihnen die Buildnummer, in der die Änderung vorgenommen wurde, und ein geschätztes Bereitstellungsdatum. Der Bereitstellungsprozess dauert in der Regel 4 bis 6 Wochen, nachdem Sie die Supportanfrage gesendet haben.
   
 > [!IMPORTANT]
-> Sie können Schritt 3 bis Schritt 5 abschließen, bevor diese Attributänderung bereitgestellt wird. Durch die Ausführung von Inhalts suchen werden jedoch keine Dokumente von OneDrive-Websites zurückgegeben, die im Such Berechtigungsfilter angegeben sind, bis die Änderung bereitgestellt wurde.
+> Sie können Schritt 3 bis Schritt 5 abschließen, bevor diese Attributänderung bereitgestellt wird. Durch die Ausführung von Inhalts suchen werden jedoch keine Dokumente aus OneDrive-Konten zurückgegeben, die in einem Such Berechtigungsfilter angegeben sind, bis die Attribut Synchronisierung bereitgestellt wurde.
   
 ## <a name="step-3-create-a-role-group-for-each-agency"></a>Schritt 3: Erstellen einer Rollengruppe für jede Agentur
 
@@ -211,12 +221,12 @@ Mit Such Berechtigungs filtern können Sie auch steuern, wohin Inhalte für den 
     |Lam  <br/> |Uns  <br/> |
     |||
 
-   Wenn Sie den **Region** -Parameter nicht für einen Such Berechtigungsfilter angeben, wird die standardmäßige SharePoint-Region der Organisation durchsucht. Suchergebnisse werden in das nächstgelegene Datencenter exportiert.
+   Wenn Sie den **Region** -Parameter nicht für einen Such Berechtigungsfilter angeben, wird die primäre SharePoint-Region der Organisation durchsucht. Suchergebnisse werden in das nächstgelegene Datencenter exportiert.
 
    Zur Vereinfachung des Konzepts steuert der **Region** -Parameter das Rechenzentrum, das zum Suchen von Inhalten in SharePoint und OneDrive verwendet wird. Dies gilt nicht für die Suche nach Inhalten in Exchange, da Exchange-Inhalts suchen nicht an den geografischen Standort von Rechenzentren gebunden sind. Außerdem kann der gleiche **Regions** Parameterwert auch das Rechenzentrum diktieren, durch das die Exporte weitergeleitet werden. Dies ist häufig erforderlich, um die Verlagerung von Daten über geografische Grenzen hinweg zu steuern.
 
 > [!NOTE]
-> Wenn Sie Advanced eDiscovery verwenden, steuert der **Region** -Parameter nicht die Region, aus der Daten exportiert werden. Außerdem ist die Suche nach Inhalten in SharePoint und OneDrive nicht an den geografischen Standort von Rechenzentren gebunden. Alle Rechenzentren werden durchsucht. Weitere Informationen zu Advanced eDiscovery finden Sie unter [Übersicht über die erweiterte eDiscovery-Lösung in Microsoft 365](overview-ediscovery-20.md).
+> Wenn Sie Advanced eDiscovery verwenden, steuert der **Region** -Parameter nicht die Region, aus der Daten exportiert werden. Daten werden aus dem primären Datencenter der Organisation exportiert. Außerdem ist die Suche nach Inhalten in SharePoint und OneDrive nicht an den geografischen Standort von Rechenzentren gebunden. Alle Rechenzentren werden durchsucht. Weitere Informationen zu Advanced eDiscovery finden Sie unter [Übersicht über die erweiterte eDiscovery-Lösung in Microsoft 365](overview-ediscovery-20.md).
 
 Im folgenden finden Sie Beispiele für die Verwendung des **Region** -Parameters beim Erstellen von Such Berechtigungs Filtern nach Kompatibilitäts Grenzen. Dabei wird davon ausgegangen, dass sich die Fourth Coffee-Tochtergesellschaft in Nordamerika befindet und dass sich die Weinkellerei in Europa befindet. 
   
@@ -234,9 +244,9 @@ Beachten Sie beim Suchen und Exportieren von Inhalten in Multi-Geo-Umgebungen di
 
 - Wenn ein eDiscovery-Manager in mehreren SharePoint-Regionen durchsuchen muss, müssen Sie ein anderes Benutzerkonto erstellen, mit dem der eDiscovery-Manager im Such Berechtigungsfilter die Region angibt, in der sich die SharePoint-Websites oder OneDrive-Konten befinden. Weitere Informationen zum Einrichten dieser Einstellung finden Sie im Abschnitt "Suchen nach Inhalten in einer SharePoint-Umgebung mit mehreren geografischen Inhalten" in der [Inhaltssuche](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment).
 
-- Bei der Suche nach Inhalten in SharePoint und OneDrive leitet der Parameter **Region** die Suche entweder an den Haupt-oder Satelliten Speicherort, an dem der eDiscovery-Manager eDiscovery-Untersuchungen durchführt. Wenn ein eDiscovery-Manager SharePoint-und OneDrive-Websites außerhalb der Region durchsucht, die im Such Berechtigungsfilter angegeben ist, werden keine Suchergebnisse zurückgegeben.
+- Bei der Suche nach Inhalten in SharePoint und OneDrive leitet der Parameter **Region** die Suche entweder an den primären oder den Satelliten Speicherort, an dem der eDiscovery-Manager eDiscovery-Untersuchungen durchführt. Wenn ein eDiscovery-Manager SharePoint-und OneDrive-Websites außerhalb der Region durchsucht, die im Such Berechtigungsfilter angegeben ist, werden keine Suchergebnisse zurückgegeben.
 
-- Beim Exportieren von Suchergebnissen werden Inhalte aus allen Inhaltsspeicherorten (einschließlich Exchange, Skype for Business, SharePoint, OneDrive und anderen Diensten, die Sie mithilfe des Inhalts Such Tools suchen können) in den Azure-Speicherort im Rechenzentrum hochgeladen, das durch den **Region** -Parameter angegeben wird. Auf diese Weise können Organisationen innerhalb der Compliance-Richtlinien bleiben, da Inhalte nicht über kontrollierte Grenzen hinweg exportiert werden können. Wenn im Such Berechtigungsfilter kein Bereich angegeben ist, wird der Inhalt in den Standardbereich der Organisation hochgeladen.
+- Beim Exportieren von Suchergebnissen werden Inhalte aus allen Inhaltsspeicherorten (einschließlich Exchange, Skype for Business, SharePoint, OneDrive und anderen Diensten, die Sie mithilfe des Inhalts Such Tools suchen können) in den Azure-Speicherort im Rechenzentrum hochgeladen, das durch den **Region** -Parameter angegeben wird. Auf diese Weise können Organisationen innerhalb der Compliance-Richtlinien bleiben, da Inhalte nicht über kontrollierte Grenzen hinweg exportiert werden können. Wenn im Such Berechtigungsfilter kein Bereich angegeben ist, wird der Inhalt in das primäre Datencenter der Organisation hochgeladen.
 
 - Sie können einen vorhandenen Such Berechtigungsfilter bearbeiten, um den Bereich hinzuzufügen oder zu ändern, indem Sie den folgenden Befehl ausführen:
 
@@ -271,6 +281,22 @@ Beachten Sie beim Verwalten von eDiscovery-Fällen und Untersuchungen zur Verwen
     Außerdem gelten Haltestatistiken nur für Inhaltsspeicherorte in der Organisation.
 
 - Suchberechtigungsfilter werden nicht auf öffentliche Exchange-Ordner angewendet.
+
+## <a name="more-information"></a>Weitere Informationen
+
+- Wenn ein Postfach delizensiert oder vorläufig gelöscht wird, werden Azure AD Attribute nicht mehr mit dem Postfach synchronisiert. Wenn das Postfach beim Löschen eines Haltestatus gespeichert wurde, werden die im Postfach aufbewahrten Inhalte weiterhin einer Kompatibilitäts Grenze oder einem Such Berechtigungsfilter unterworfen, basierend auf dem Zeitpunkt, zu dem die Azure AD Attribute zuletzt synchronisiert wurden, bevor das Postfach gelöscht wurde. 
+
+    Darüber hinaus wird die Synchronisierung zwischen dem Postfach des Benutzers und dem OneDrive-Konto beendet, wenn das Postfach delizensiert oder vorläufig gelöscht wird. Der zuletzt gestempelte Wert des Compliance-Attributs für das OneDrive-Konto bleibt erhalten.
+
+- Das Attribut Compliance wird alle sieben Tage vom Exchange-Postfach eines Benutzers auf sein OneDrive-Konto synchronisiert. Wie bereits erwähnt, tritt diese Synchronisierung nur auf, wenn dem Benutzer eine Exchange Online und SharePoint Online Lizenz zugewiesen ist und das Postfach des Benutzers mindestens 10 MB beträgt.
+
+- Wenn Kompatibilitäts Grenzen und Such Berechtigungsfilter sowohl für das Postfach eines Benutzers als auch für das OneDrive-Konto implementiert werden, wird empfohlen, das Postfach eines Benutzers und nicht das OneDrive-Konto zu löschen. Das heißt, wenn Sie das Postfach eines Benutzers löschen, sollten Sie auch das OneDrive-Konto des Benutzers entfernen.
+
+- Es gibt Situationen (beispielsweise ein zurückkehrender Mitarbeiter), bei denen ein Benutzer über zwei oder mehr OneDrive-Konten verfügen kann. In diesen Fällen wird nur das primäre OneDrive-Konto, das dem Benutzer in Azure AD zugeordnet ist, synchronisiert.
+
+- Compliance-Grenzen und Such Berechtigungsfilter hängen von Attributen ab, die auf Inhalten in Exchange, OneDrive und SharePoint und der nachfolgenden Indizierung dieses gestempelten Inhalts gestempelt werden. 
+
+- Es wird nicht empfohlen, Ausschlussfilter (beispielsweise `-not()` die Verwendung in einem Such Berechtigungsfilter) für eine inhaltsbasierte Konformitäts Grenze zu verwenden. Die Verwendung eines Ausschluss Filters kann unerwartete Ergebnisse haben, wenn Inhalte mit kürzlich aktualisierten Attributen nicht indiziert wurden. 
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
