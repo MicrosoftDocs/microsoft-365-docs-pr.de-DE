@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Übersicht über die Microsoft Produktivitätsbewertung
-ms.openlocfilehash: 7c323d51bcd8a1bead28677e399891ccd0a22950
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: 82dc26aea5c573b63bb66d087b332e3301e71409
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285189"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48376973"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Microsoft Productivity Score (Vorschau)
 
-Die Produktivitäts Bewertung unterstützt Organisationen beim Transformieren der Arbeit mit Einblicken in die Verwendung von Microsoft 365 und den Technologie Erfahrungen, die diese Benutzer unterstützen. Die Bewertung spiegelt die Leistung Ihrer Organisation anhand von Maßnahmen zur Mitarbeiter-und Technologie Erfahrung wider und vergleicht Ihre Bewertung mit Organisationen wie Ihrem.
+Die Produktivitäts Bewertung unterstützt Organisationen beim Transformieren der Arbeit mit Einblicken in die Verwendung von Microsoft 365 und den Technologie Erfahrungen, die diese Benutzer unterstützen. Die Bewertung spiegelt die Leistung Ihrer Organisation gegen Personen-und Technologie Erfahrungen wider und vergleicht Ihre Punktzahl mit Organisationen wie Ihrem.
 
 Die Partitur umfasst Folgendes:
 
@@ -39,18 +39,18 @@ Die Partitur umfasst Folgendes:
 
 Wir stellen Daten, Einblicke und Empfehlungen in zwei Bereichen zur Verfügung: 
 
-- **Mitarbeiter Erfahrung:** Wir messen, wie Personen an Inhalten zusammenarbeiten, wie Microsoft 365-Produkte für die Kommunikation verwendet werden und ob Microsoft 365 plattformübergreifend verwendet wird. 
+- **Personen Erfahrungen:** Wir messen, wie Personen an Inhalten zusammenarbeiten, wie Microsoft 365-Produkte für die Kommunikation verwendet werden und ob Microsoft 365 plattformübergreifend verwendet wird. 
 
     Diese Einblicke bieten wir, da Personen, die Online zusammenarbeiten, Zeit sparen. Mit der Freiheit, auf jedem Gerät zu arbeiten, sind Sie produktiver und zufriedener. Die flexible Kommunikation macht die Benutzer effizienter, bildet bessere Beziehungen, und Ihre Organisation ist einheitlicher. Hinweise finden Sie unter [Forrester Report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
-- **Technologie Erfahrung:** Die Produktivität hängt von der zuverlässigen und leistungsfähigen Technologie sowie der effizienten Nutzung von Microsoft 365 ab. Wir stellen [EndPoint Analytics](https://aka.ms/endpointanalytics)bereit, damit Sie besser verstehen, wie die Produktivität Ihrer Benutzer durch Leistungs-und Integritätsprobleme mit ihrer Endpunkt Hardware und-Software beeinträchtigt werden kann. Außerdem werden Empfohlene Maßnahmen zur Korrektur dieser Informationen sowie Microsoft 365-Netzwerkkonnektivitäts-Einblicke für Ihre Organisation bereitgestellt.
+- **Technologie-Erlebnisse:** Die Produktivität hängt von der zuverlässigen und leistungsfähigen Technologie sowie der effizienten Nutzung von Microsoft 365 ab. Wir stellen [EndPoint Analytics](https://aka.ms/endpointanalytics)bereit, damit Sie besser verstehen, wie die Produktivität Ihrer Benutzer durch Leistungs-und Integritätsprobleme mit ihrer Endpunkt Hardware und-Software beeinträchtigt werden kann. Außerdem werden Empfohlene Maßnahmen zur Korrektur dieser Informationen sowie Microsoft 365-Netzwerkkonnektivitäts-Einblicke für Ihre Organisation bereitgestellt.
 
 Eine Übersicht und erforderliche Details finden Sie unter [Was ist Endpoint Analytics](https://docs.microsoft.com/mem/analytics/overview) . Weitere Informationen zu den Einblicken in Microsoft 365 Netzwerkkonnektivität finden Sie [unter Übersicht über die Netzwerkkonnektivität](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview).
   
 
 ## <a name="how-the-score-is-calculated"></a>Berechnung der Bewertung
 
-Ihr Produktivitäts Ergebnis basiert auf den kombinierten Bewertungen ihrer Mitarbeiter-und Technologie Erlebnis Kategorien. Jede Kategorie wird gleich gewichtet, mit einer Gesamtsumme von 100 Punkten pro Kategorie. Die möglichen Punkte für das Produktivitäts Ergebnis sind 500.
+Ihr Produktivitäts Ergebnis basiert auf den kombinierten Ergebnissen ihrer Personen-und Technologie Erlebnis Kategorien. Jede Kategorie wird gleich gewichtet, mit einer Gesamtsumme von 100 Punkten pro Kategorie. Die möglichen Punkte für das Produktivitäts Ergebnis sind 500.
 
 ### <a name="score-categories"></a>Bewertungskategorien 
 
@@ -72,7 +72,7 @@ Ihre Punktzahl wird täglich aktualisiert und spiegelt Benutzeraktionen wider, d
 
 ## <a name="pre-requisites"></a>Voraussetzungen 
 
-Sie benötigen ein Microsoft 365 for Business-oder Office 365 for Enterprise-Abonnement, um Mitarbeiter Erfahrungsdaten zu erhalten, und Sie müssen mehr Instanzen basierte Cloud-Dienste verwenden. Um Endpoint Analytics-Daten für Ihren Mandanten zu erhalten, müssen Sie Microsoft InTune zu Ihrem Abonnement hinzufügen. InTune hilft Ihnen, die Daten Ihrer Organisation zu schützen, indem Geräte und apps verwaltet werden.       Sobald Sie InTune haben, können Sie die Endpunktanalyse in der InTune-Umgebung aktivieren. Erfahren Sie mehr über Microsoft InTune. 
+Sie benötigen ein Microsoft 365 for Business-oder Office 365 for Enterprise-Abonnement, um Daten für Personen zu erhalten, und Sie müssen mehr Instanzen basierte Cloud-Dienste verwenden. Um Endpoint Analytics-Daten für Ihren Mandanten zu erhalten, müssen Sie Microsoft InTune zu Ihrem Abonnement hinzufügen. InTune hilft Ihnen, die Daten Ihrer Organisation zu schützen, indem Geräte und apps verwaltet werden.       Sobald Sie InTune haben, können Sie die Endpunktanalyse in der InTune-Umgebung aktivieren. Erfahren Sie mehr über Microsoft InTune. 
 
 Um die Produktivitäts Bewertung für Ihre Organisation anzuzeigen, müssen Sie über eine der folgenden Rollen verfügen: 
 
@@ -94,17 +94,17 @@ Auf der Startseite der Produktivitäts Bewertung werden die Gesamtpunktzahl und 
 
 **Ihre Punktzahl** wird als Prozentwert sowie in Punkten angezeigt, sodass Sie Ihre Punkte (Zähler) und maximal mögliche Punkte (Nenner) sehen können.
 
-Anhand von **Peer-Benchmarks** können Sie Ihre Punktzahl mit Organisationen wie Ihrem vergleichen. Für die Kategorien "Employee Experience" wird die Vergleichs Vergleichs Maßnahme als durchschnittliche Anzahl von Measures in einer Gruppe ähnlicher Organisationen berechnet. Das Paket besteht aus Organisationen in Ihrer Region mit einer ähnlichen Anzahl von lizenzierten Benutzern, Lizenztypen, Industrie und Besitz mit Microsoft 365. 
+Anhand von **Peer-Benchmarks** können Sie Ihre Punktzahl mit Organisationen wie Ihrem vergleichen. Für die Kategorien "Personen Erfahrungen" wird die Vergleichs Vergleichsmessung als durchschnittliche Anzahl von Measures in einer Gruppe ähnlicher Organisationen berechnet. Das Paket besteht aus Organisationen in Ihrer Region mit einer ähnlichen Anzahl von lizenzierten Benutzern, Lizenztypen, Industrie und Besitz mit Microsoft 365. 
 
 Der Endpunktanalyse-Peer-Benchmark umfasst Ziele für die gerätestart Leistung und die empfohlene Softwarekonfiguration basierend auf aggregierten Median Werten für alle Mandanten.
 
 Für die Netzwerkkonnektivität beträgt die empfohlene Benchmark 80 Punkte.
 
-Der Abschnitt " **Score Breakdown** " bietet einen Überblick über Ihre Produktivitäts Bewertung mit Benchmarks für Mitarbeiter-und Technologie Erfahrungsbereiche.
+Im Abschnitt " **Score Breakdown** " finden Sie einen Überblick über Ihre Produktivitäts Bewertung mit Benchmarks von Personen-und Technologie Erfahrungsbereichen.
 
 Der Bewertungsverlauf zeigt, wie sich die Punktzahl in jeder Kategorie in den letzten 6 Monaten geändert hat.
 
-Die Bereiche **Employee Experience** und **Technology Experience** enthalten die primären Einblicke für die Kategorien in diesen Bereichen. Sie können auf jede Kategorie klicken, um tiefere Einblicke zu erhalten.
+Die Bereiche " **People Experiences** " und " **Technology Experiences** " enthalten die primären Einblicke für die Kategorien in diesen Bereichen. Sie können auf jede Kategorie klicken, um tiefere Einblicke zu erhalten.
 
 ## <a name="category-details-pages"></a>Rubriken-Detailseiten
 

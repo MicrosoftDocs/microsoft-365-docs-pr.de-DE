@@ -12,17 +12,17 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
+- m365solution-collabgovernance
 search.appverid:
 - MET150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: Hier erfahren Sie, wie Sie eine Benennungsrichtlinie für Microsoft 365-Gruppen erstellen.
-ms.openlocfilehash: 0072abf4f249af544e8234fdedec584a71c214a7
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 55faf5c61d577b35b34923efc7b65457fe46de29
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662660"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377605"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365 gruppenbenennungsrichtlinie
 

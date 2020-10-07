@@ -12,17 +12,17 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
+- m365solution-collabgovernance
 search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: Hier erfahren Sie, wie Sie Mitgliedern erlauben, e-Mails als Microsoft 365-Gruppe zu senden oder e-Mails im Namen einer Microsoft 365-Gruppe zu senden.
-ms.openlocfilehash: b660131798e60182435a69f479411cdec948bc99
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 9ccaeff49914dd5b510beb80f40a3a3b790ce831
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662635"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377593"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Mitgliedern das Senden als oder senden im Auftrag einer Gruppe gestatten
 
@@ -50,7 +50,7 @@ In diesem Abschnitt wird erläutert, wie Sie Benutzern das Senden von e-Mails al
     
 4. Wählen Sie im Abschnitt **Senden als** das Zeichen aus, **+** um die Benutzer hinzuzufügen, die Sie als Gruppe senden möchten. 
     
-    ![Wählen Sie das Pluszeichen aus, um die Benutzer hinzuzufügen, die Sie als Microsoft 365-Gruppe senden möchten.](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
+    ![Screenshot des Dialogfelds "Senden als"](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
   
 5. Geben Sie einen Namen ein, um einen Benutzer zu suchen, oder wählen Sie ihn aus der Liste aus. Wählen Sie **OK** und **Speichern**aus.
     
@@ -68,7 +68,7 @@ In diesem Abschnitt wird erläutert, wie Sie Benutzern das Senden von e-Mails im
     
 4. Wählen Sie im Abschnitt Senden im Auftrag das **+** Vorzeichen aus, um die Benutzer hinzuzufügen, die Sie als Gruppe senden möchten. 
     
-    ![Wählen Sie das Pluszeichen aus, um die Benutzer hinzuzufügen, die Sie als Microsoft 365-Gruppe senden möchten.](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
+    ![Screenshot des Dialogfelds "Senden im Auftrag von"](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
   
 5. Geben Sie einen Namen ein, um einen Benutzer zu suchen, oder wählen Sie ihn aus der Liste aus. Wählen Sie **OK** und **Speichern**aus.
     

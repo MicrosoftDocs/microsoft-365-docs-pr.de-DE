@@ -10,16 +10,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
+- m365solution-collabgovernance
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Gruppen Dienst Interaktionen
-ms.openlocfilehash: 9632debf1bc6fdd2fce061a4c535906410700175
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 235a897314a784ba3bb1ac50fe8bdfe9986a70d3
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662659"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377629"
 ---
 # <a name="groups-services-interactions"></a>Gruppen Dienst Interaktionen
 
@@ -174,7 +175,7 @@ Wenn ein Team erstellt wird, werden standardmäßig das Postfach und der Kalende
 
 - Unterhaltungen
 - Kanäle & Registerkarten
-- Meetings
+- Besprechungen
 
 **Können Teams eine Gruppe erstellen?**
 

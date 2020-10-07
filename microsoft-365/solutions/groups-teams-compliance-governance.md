@@ -10,16 +10,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
+- m365solution-collabgovernance
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Hier finden Sie Informationen zu Kompatibilitätsoptionen für Microsoft 365-Gruppen, Teams und SharePoint-Zusammenarbeit.
-ms.openlocfilehash: cc8f7391b03cc65ba66cca6cf010137e3843ab05
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 0383b0728d9b8ea12ce75de8bf0e250932d14ae5
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662649"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377533"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Kompatibilitätsoptionen für Microsoft 365-Gruppen, Teams und SharePoint-Zusammenarbeit
 
@@ -36,7 +37,7 @@ Die folgende Tabelle enthält eine Kurzübersicht über die in Microsoft 365 ver
 ||Klassifizieren von Gruppen und Teams|[Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites verwenden](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)|
 ||Automatisches Klassifizieren von vertraulichen Inhalten|[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)|
 ||Vertraulichen Inhalt verschlüsseln|[Einschränken des Zugriffs auf Inhalte mithilfe der Vertraulichkeitsbezeichnungen zur Verschlüsselung](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)|
-|Schutz von Daten|||
+|Information Protection|||
 ||Verhindern des Verlusts von vertraulichen Informationen|[Verhinderung von Datenverlust – Übersicht](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)|
 ||Schützen Sie vertrauliche Informationen im Chat.|[Verhinderung von Datenverlust und Microsoft Teams](https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams)|
 ||Definieren der vertraulichen Informationen Ihrer Organisation|[Benutzerdefinierte vertrauliche Informationstypen](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types)|
@@ -86,7 +87,7 @@ Zusätzliche Ressourcen:
 - [Weitere Informationen zu Vertraulichkeitsbezeichnungen](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)
 
 
-## <a name="information-protection"></a>Schutz von Daten
+## <a name="information-protection"></a>Information Protection
 
 Mit DLP-Richtlinien kann verhindert werden, dass vertrauliche Informationen in SharePoint, Exchange und Microsoft Teams versehentlich freigegeben werden. Sie können Richtlinien erstellen, mit denen auszuführende Aktionen (beispielsweise Sperrung des Zugriffs) basierend auf einem Regelsatz angegeben werden.
 

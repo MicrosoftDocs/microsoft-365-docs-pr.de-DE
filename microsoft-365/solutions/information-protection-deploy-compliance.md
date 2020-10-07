@@ -14,14 +14,15 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
+- m365solution-scenario
 ms.custom: ''
 description: In diesem Artikel erfahren Sie, wie Sie mit der Kompatibilitätsbewertung und dem Compliance-Manager ihr Schutzniveau für personenbezogene Daten verbessern.
-ms.openlocfilehash: b5a112b7614de23af8540346e26dac3b7a4fa1c9
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: 5b41fa9fc52253d415a22aaa3422a87c4f1bda7c
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333480"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377099"
 ---
 # <a name="use-compliance-manager-to-manage-improvement-actions"></a>Verwenden des Compliance-Managers zum Verwalten von Verbesserungs Aktionen
 

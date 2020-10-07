@@ -14,14 +14,15 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
+- m365solution-scenario
 ms.custom: ''
 description: Verhindern von Verletzungen personenbezogener Daten mit Identitäts-, Geräte-und Bedrohungsschutz Diensten von Microsoft 365.
-ms.openlocfilehash: a0efdcfe8e9d27e19b6cf1355a6d0943b7cdaa59
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 681ff807b734430ae864334b409fe11397f3089e
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195663"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377057"
 ---
 # <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>Verwenden von Identitäts-, Geräte-und Bedrohungsschutz für die Datenschutzverordnung
 

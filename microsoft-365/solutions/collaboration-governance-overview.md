@@ -10,16 +10,18 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
+- m365solution-overview
+- m365solution-collabgovernance
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Hier erfahren Sie, wie Sie verwandte Features in Microsoft 365-Gruppen, Teams, SharePoint und jammern steuern.
-ms.openlocfilehash: b217dc089eb150d01eed9cd720b2caa290d54bf1
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 8784f14530ec94a3151ef58589944947b5de9514
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950712"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377581"
 ---
 # <a name="overview-of-collaboration-governance-in-microsoft-365"></a>Übersicht über die Collaboration-Steuerung in Microsoft 365
 

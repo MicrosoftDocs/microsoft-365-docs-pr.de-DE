@@ -14,14 +14,15 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
+- m365solution-scenario
 ms.custom: ''
 description: Ermitteln Sie die Datenschutzbestimmungen, die relevanten Szenarien, ihre Bereitschaft und die Typen vertraulicher Informationen in Ihrer Microsoft 365-Umgebung.
-ms.openlocfilehash: 237039bfd853c0f58276926f29bda26981df6b8c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c2f8bd6587e399fd1e928575b3cd9dfb2a4565eb
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195747"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377115"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Bewerten von Datenschutzrisiken und identifizieren vertraulicher Elemente mit Microsoft 365
 
@@ -59,7 +60,7 @@ Für eine spätere Bezugnahme in den Artikeln dieser Gesamtlösung enthält dies
 
 | Verordnung | Artikel/Abschnitt | Auszug | Zutreffende Kategorien für technische Steuerelemente |
 |:-------|:-----|:-------|:-------|
-| DSGVO | Artikel 5 Absatz 1 Buchstabe f | Personenbezogene Daten werden in einer Weise verarbeitet, die eine angemessene Sicherheit der personenbezogenen Daten, einschließlich des Schutzes vor unbefugter oder unrechtmäßiger Verarbeitung und gegen versehentlichen Verlust, Zerstörung oder Beschädigung, durch geeignete technische oder organisatorische Maßnahmen ("Integrität und Vertraulichkeit") gewährleistet.  |  Alle <br> Identität <br> Gerät <br> Bedrohungsschutz <br> Schützen von Informationen <br> Informationen steuern <br> Entdecken und Reagieren |
+| DSGVO | Artikel 5 Absatz 1 Buchstabe f | Personenbezogene Daten werden in einer Weise verarbeitet, die eine angemessene Sicherheit der personenbezogenen Daten, einschließlich des Schutzes vor unbefugter oder unrechtmäßiger Verarbeitung und gegen versehentlichen Verlust, Zerstörung oder Beschädigung, durch geeignete technische oder organisatorische Maßnahmen ("Integrität und Vertraulichkeit") gewährleistet.  |  Alle <br> Identity <br> Gerät <br> Bedrohungsschutz <br> Schützen von Informationen <br> Informationen steuern <br> Entdecken und Reagieren |
 |  | Artikel (32) (1) (a) | Unter Berücksichtigung des Stands der Technik, der Kosten für die Durchführung und der Art, des Umfangs, des Kontexts und der Zwecke der Verarbeitung sowie des Risikos unterschiedlicher Wahrscheinlichkeit und schwere für die Rechte und Freiheiten natürlicher Personen müssen der Controller und der Verarbeiter geeignete technische und organisatorische Maßnahmen ergreifen, um ein dem Risiko entsprechendes Maß an Sicherheit zu gewährleisten. , einschließlich gegebenenfalls: (a) die Pseudonymisierung und Verschlüsselung personenbezogener Daten. | Schützen von Informationen |
 |  | Artikel (13) (2) (a) | "... der Steuerpflichtige muss zum Zeitpunkt der Erlangung personenbezogener Daten der betroffenen Person die folgenden weiteren Informationen zur Verfügung stellen, die erforderlich sind, um eine faire und transparente Verarbeitung sicherzustellen: (a) den Zeitraum, für den die personenbezogenen Daten gespeichert werden oder falls dies nicht möglich ist, die Kriterien, mit denen dieser Zeitraum ermittelt wird. | Informationen steuern |
 |  | Artikel (15) (1) (e) | Die betroffene Person hat das Recht, von der Controller-Bestätigung zu erfahren, ob personenbezogene Daten, die sich auf Sie beziehen, verarbeitet werden, und wenn dies der Fall ist, der Zugriff auf die personenbezogenen Daten und die folgenden Informationen: (e) das Recht, von der Steuerung eine Berichtigung oder Löschung personenbezogener Daten oder eine Einschränkung der Verarbeitung personenbezogener Daten in Bezug auf die betroffene Person anzufordern oder gegen diese Verarbeitung zu verstoßen | Entdecken und Reagieren |

@@ -9,19 +9,19 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
-- m365solution-3tiersprotection
 - m365solution-securecollab
+- m365solution-scenario
 ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Konfigurieren Sie Microsoft 365, um die Freigabe und zusätzliche Sicherheit zu ermöglichen, wenn Sie externe Benutzer zur Zusammenarbeit in Microsoft Teams einladen und SharePoint-Websites freigeben.
-ms.openlocfilehash: f8dc81ae32bed7a12daf21955ada60ab852d4617
-ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
+ms.openlocfilehash: 11359e2de358d5673da6c39ca2d419c94349a829
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255791"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377413"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Zusammenarbeit mit Personen außerhalb Ihrer Organisation
 

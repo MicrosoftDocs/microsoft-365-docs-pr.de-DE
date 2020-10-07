@@ -10,16 +10,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
+- m365solution-collabgovernance
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Informationen zum Steuern des Zugriffs in Microsoft 365-Gruppen, Teams und SharePoint.
-ms.openlocfilehash: 8b58016ffa421328e3c1442d4ed2364f2eedc37b
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: ec4e62f4d77b9aadbdc7457631ac1c4b498221c3
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662651"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377569"
 ---
 # <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>Steuern des Zugriffs in Microsoft 365-Gruppen,-Teams und-SharePoint
 

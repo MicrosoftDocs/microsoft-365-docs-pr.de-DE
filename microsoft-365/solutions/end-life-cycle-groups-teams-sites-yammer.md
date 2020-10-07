@@ -10,16 +10,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
+- m365solution-collabgovernance
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Ende der Lebenszyklusoptionen für Gruppen, Teams und jammern.
-ms.openlocfilehash: ab06f06cc65614ee313892a026c2f482d641791f
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 3720f63f99711a09d02675f10a7d639fe1bedc65
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662631"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377175"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>Ende der Lebenszyklusoptionen für Gruppen, Teams und jammern
 
@@ -52,7 +53,7 @@ Gruppen und Teams verbleiben 30 Tage lang im Status "Soft-Delete" und können je
 
 Es gibt drei wichtige Bereiche, die Team-und Gruppenbesitzer und IT-Administratoren beim Löschen einer Gruppe oder eines Teams berücksichtigen müssen.
 
-**Inhalt**
+**Content**
 
 Müssen die Inhalte beibehalten werden, nachdem das Team nicht mehr funktionsfähig oder noch nicht vorhanden ist? Genügt es, sich auf die Aufbewahrungsfunktionen von Microsoft 365 zu verlassen, oder handelt es sich um einen Teil des Inhalts in apps und Diensten, die keine Aufbewahrung anbieten? Muss der Inhalt für Zwecke der Datensatzverwaltung, für Archivierungszwecke oder für zukünftige Verwendungs-und Referenzzwecke aufbewahrt werden?
 
