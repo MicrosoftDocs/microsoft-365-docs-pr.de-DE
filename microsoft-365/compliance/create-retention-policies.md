@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mithilfe einer Aufbewahrungsrichtlinie können Sie die Inhalte, die Benutzer mit E-Mails, Dokumenten und Unterhaltungen generieren, sehr effizient verwalten. Bewahren Sie auf, was Sie wollen, und werden Sie los, was Sie nicht mehr wollen.
-ms.openlocfilehash: f9c8ff4287f0970f8571d3ced7d612515b03c08e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 40e405a8ab3ac2159b9a3c5ab8f633bb690d5c24
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198492"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384552"
 ---
 # <a name="create-and-configure-retention-policies"></a>Erstellen und Konfigurieren von Aufbewahrungsrichtlinien
 
@@ -259,19 +259,19 @@ Wenn eine Richtlinie beispielsweise alle Exchange-E-Mails und alle SharePoint-We
 
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>Richtlinien, die bestimmte Elemente einschließen oder ausschließen
 
-Sie können eine Aufbewahrungsrichtlinie auch nur auf bestimmte Benutzer, bestimmte Microsoft 365-Gruppen oder bestimmte Websites anwenden. Stellen Sie dafür sicher, dass der **Status** des entsprechenden Speicherorts **An** ist, und verwenden Sie dann die Links, um bestimmte Benutzer, Microsoft 365-Gruppen oder Websites ein- oder auszuschließen.
+Nur wenn Sie die optionale Konfiguration verwenden, um Ihre Aufbewahrungseinstellungen auf bestimmte Benutzer, bestimmte Microsoft 365-Gruppen oder bestimmte Websites auszudehnen, gibt es einige Einschränkungen, die zu beachten sind: 
 
-Allerdings gibt es bei der Verwendung dieser Konfiguration einige Einschränkungen, wenn Ihre Aufbewahrungsrichtlinie mehr als 1.000 bestimmte Objekte einschließt oder ausschließt:
-
-- Maximale Anzahl für die Aufbewahrungsrichtlinie:
+- Maximale Anzahl für eine Aufbewahrungsrichtlinie:
   - 1.000 Postfächer
   - 1.000 Microsoft 365-Gruppen
   - 1.000 Benutzer für private Teams-Chats
   - 100 Websites (OneDrive oder SharePoint)
 
-Für einen Mandanten wird eine maximale Anzahl von 10.000 Richtlinien unterstützt. Hierzu zählen Aufbewahrungsrichtlinien, Aufbewahrungsbezeichnungsrichtlinien und automatisch angewendete Aufbewahrungsrichtlinien.
+Die maximal unterstützte Anzahl von Richtlinien für einen Mandanten ist auf 10.000 begrenzt. Dazu gehören Aufbewahrungsrichtlinien, Richtlinien für Aufbewahrungsbezeichnungen und automatisch anzuwendende Aufbewahrungsrichtlinien.
 
-Sollten Ihre Aufbewahrungsrichtlinien voraussichtlich von diesen Beschränkungen betroffen sein, wählen Sie die Konfigurationsoptionen aus, die für ganze Speicherorte gelten.
+Wenn Ihre Aufbewahrungsrichtlinien wahrscheinlich diesen Beschränkungen unterliegen, verwenden Sie die Standardkonfiguration, die für den gesamten Speicherort gilt, da diese Richtlinien keine Einschränkungen aufweisen.
+
+Wenn Sie die optionale Konfiguration für den Bereich der Aufbewahrungseinstellungen verwenden möchten, stellen Sie sicher, dass der **Status** dieses Speicherorts **Ein** ist, und verwenden Sie dann die Links, um bestimmte Benutzer, Microsoft 365-Gruppen oder-Websites ein- oder auszuschließen.
 
 > [!WARNING]
 > Wenn Sie Einschlüsse konfigurieren und dann den letzten entfernen, wird die Konfiguration für den Speicherort auf **Alle** zurückgesetzt.  Vergewissern Sie sich, dass dies die von Ihnen beabsichtigte Konfiguration ist, bevor Sie die Richtlinie speichern.
