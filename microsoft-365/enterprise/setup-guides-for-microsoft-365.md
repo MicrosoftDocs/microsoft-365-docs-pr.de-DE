@@ -3,7 +3,6 @@ title: Einrichtungsanleitung für Microsoft 365- und Office 365-Dienste
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/15/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,22 +21,22 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Beschleunigen Sie die Planung und Konfiguration von Microsoft 365 oder Office 365 mit den Installationsanleitungen.
-ms.openlocfilehash: 106a659dd75ae14d38c393a9547b84630e458337
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: 67e24ae41806b4dc112387526177cb4bd84d0779
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357982"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384915"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Einrichtungsanleitung für Microsoft 365- und Office 365-Dienste
 
-Microsoft 365 und Office 365-Setup Handbücher bieten Administratoren maßgeschneiderte Anleitungen und Ressourcen für die Bereitstellung von apps und Diensten. Diese Anleitungen werden mit den gleichen bewährten Methoden erstellt, die sich Onboarding-Spezialisten in einzelnen Interaktionen teilen, und Sie sind für alle Administratoren im Microsoft 365 Admin Center verfügbar. Sie geben Informationen zum Produktsetup, zur Aktivierung von Sicherheitsfeatures, zur Bereitstellung von Tools für die Zusammenarbeit und zum Beschleunigen von erweiterten Bereitstellungen mit Skripts.
+Die Anleitungen für Microsoft 365 und Office 365-Setup bieten Ihnen maßgeschneiderte Anleitungen und Ressourcen für die Planung und Bereitstellung Ihrer Mandanten, Apps und Dienste. Diese Anleitungen werden mit den gleichen bewährten Methoden erstellt, die [Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365) -Onboarding-Spezialisten in einzelnen Interaktionen freigeben, und Sie sind für alle Administratoren im Microsoft 365 Admin Center verfügbar. Sie geben Informationen zum Produktsetup, zur Aktivierung von Sicherheitsfeatures, zur Bereitstellung von Tools für die Zusammenarbeit und zum Beschleunigen von erweiterten Bereitstellungen mit Skripts.
 
 ## <a name="how-to-access-setup-guides-in-the-microsoft-365-admin-center"></a>Vorgehensweise zugreifen auf Setup Handbücher im Microsoft 365 Admin Center
 
 Auf die Setup Handbücher können Sie auf der Seite [Setup Anleitung](https://aka.ms/setupguidance) im Microsoft 365 Admin Center zugreifen. Sie können den Status Ihres Fortschritts überwachen, und Sie haben die Möglichkeit, jederzeit zurückzukehren, um einen Leitfaden abzuschließen. So erreichen Sie die Seite " **Einrichtungsanleitungen** ":
 
-1. Wechseln Sie im [Admin Center](https://admin.microsoft.com/)zur **Start** Seite.
+1. Wechseln Sie im [Microsoft 365 Admin Center](https://admin.microsoft.com/)zur **Start** Seite.
 
 2. Hier finden Sie die **Schulungs & Karte "Guides** ". 
 
@@ -52,11 +51,11 @@ Auf die Setup Handbücher können Sie auf der Seite [Setup Anleitung](https://ak
 
 ## <a name="how-do-setup-guides-work-in-the-microsoft-365-admin-center"></a>Wie funktionieren Setup Handbücher im Microsoft 365 Admin Center?
 
-In jeder Anleitung finden Sie Schritt-für-Schritt-Anleitungen, Ressourcen, Artikel und bei Bedarf Skripts, die Sie zum vornehmen von Konfigurationsänderungen verwenden können. Diese Anleitungen bieten Ihnen eine Auswahl, die die spezifischen Anforderungen von kleinen und großen Organisationen widerspiegelt. Die bereitgestellten Anleitungen umfassen außerdem Unterstützung für neue und erfahrene Administratoren.
+In jeder Anleitung finden Sie Schritt-für-Schritt-Anleitungen, Ressourcen, Artikel und bei Bedarf Skripts, die Sie zum vornehmen von Konfigurationsänderungen verwenden können. Diese Anleitungen bieten Ihnen eine Auswahl, die die spezifischen Anforderungen von kleinen und großen Organisationen widerspiegelt. Darüber hinaus enthält der Leitfaden Unterstützung für neue und erfahrene Administratoren.
 
 ![Beispiel für eine Installationsanleitung](../media/setup-guides-for-microsoft-365/m365-setupguide-example.png)
 
-Sie können die Anleitungen verwenden, um weitere Informationen zu bestimmten Microsoft 365-und Office 365-Features während der Planungsphase zu erhalten oder Sie nach Abschluss einer Bereitstellung erneut zu besuchen, um eine Einstellung zu ändern.
+Sie können die Anleitungen verwenden, um mehr über bestimmte Microsoft 365-und Office 365-Features während der Planungsphase, während der Bereitstellung und des Rollouts zu erfahren, oder um Sie erneut zu besuchen, nachdem Sie eine Bereitstellung zum Ändern einer Einstellung abgeschlossen haben.
 
 ## <a name="guides-for-initial-setup"></a>Anleitungen für die Ersteinrichtung
 
@@ -74,7 +73,7 @@ Wenn Sie das Postfach eines Gmail-Benutzers zu Microsoft 365 migrieren, werden e
 
 ### <a name="microsoft-365-deployment-advisor"></a>Microsoft 365-Bereitstellungs Ratgeber
 
-Der [Microsoft 365-Bereitstellungs Ratgeber](https://aka.ms/microsoft365setupguide) bietet Geschäftskunden Anleitungen beim Einrichten von Produktivitätstools, Sicherheitsrichtlinien und Geräteverwaltungsfunktionen. Mit einem Microsoft 365 Business Premium-oder Microsoft 365 Enterprise-Abonnement können Sie diesen Ratgeber verwenden, um die Geräte Ihrer Organisation einzurichten und zu konfigurieren. 
+Der [Microsoft 365-Bereitstellungs Ratgeber](https://aka.ms/microsoft365setupguide) bietet Ihnen Anleitungen zum Einrichten von Produktivitätstools, Sicherheitsrichtlinien und Geräteverwaltungsfunktionen. Mit einem Microsoft 365 Business Premium-oder Microsoft 365 für Enterprise-Abonnement können Sie diesen Ratgeber verwenden, um die Geräte Ihrer Organisation einzurichten und zu konfigurieren. 
 
 Sie erhalten Anleitungen und Zugriff auf Ressourcen, um Ihre Cloud-Dienste zu aktivieren, Geräte auf die neueste unterstützte Version von Windows 10 zu aktualisieren und Geräte mit Azure Active Directory (Azure AD) an einem zentralen Standort zu verbinden.
 
@@ -83,7 +82,7 @@ Sie erhalten Anleitungen und Zugriff auf Ressourcen, um Ihre Cloud-Dienste zu ak
 
 Das [Remote work Setup Guide](https://aka.ms/remoteworksetup) bietet Organisationen die Tipps und Ressourcen, die Sie benötigen, um sicherzustellen, dass Ihre Benutzer erfolgreich Remote arbeiten können, Ihre Daten sicher sind und die Anmeldeinformationen der Benutzer geschützt sind. 
 
-Sie erhalten Anleitungen zum Optimieren des Geräte Datenverkehrs von Remotemitarbeitern sowohl auf Microsoft 365-Ressourcen in der Cloud als auch auf das Netzwerk Ihrer Organisation, wodurch die Belastung Ihrer VPN-Infrastruktur verringert wird. 
+Sie erhalten Anleitungen zum Optimieren des Geräte Datenverkehrs von Remotemitarbeitern sowohl auf Microsoft 365-Ressourcen in der Cloud als auch auf das Netzwerk Ihrer Organisation, wodurch die Belastung Ihrer RAS-VPN-Infrastruktur verringert wird. 
 
 ### <a name="windows-virtual-desktop-setup-guide"></a>Windows Virtual Desktop-Installationshandbuch
 
@@ -97,15 +96,19 @@ Das [Windows Virtual Desktop Setup Guide](https://aka.ms/wvdsetupguide) bietet A
 
 Das [Azure AD-Setup Handbuch](https://aka.ms/aadpguidance) enthält Informationen, um sicherzustellen, dass Ihre Organisation über eine starke Sicherheitsgrundlage verfügt. In diesem Leitfaden richten Sie die anfänglichen Features wie die Azure-rollenbasierte Zugriffssteuerung (Azure RBAC) für Administratoren, Azure AD Connect für Ihr lokales Verzeichnis und Azure AD Connect Health ein, damit Sie die Integrität ihrer Hybriden Identität während automatischer Synchronisierungen überwachen können. 
 
-Sie enthält außerdem wichtige Informationen zum Aktivieren von Self-Service-Kennwortzurücksetzungen, bedingtem Zugriff und integrierter Drittanbieter Anmeldung, einschließlich optionaler Advanced ID-Schutz und Automatisierung der Benutzer Bereitstellung.
+Sie enthält außerdem wichtige Informationen zum Aktivieren von Self-Service-Kennwortzurücksetzungen, bedingtem Zugriff und integrierter Drittanbieter Anmeldung einschließlich Optionaler erweiterter Identitätsschutz-und Benutzer bereitstellen-Automatisierung.
 
 ### <a name="plan-your-passwordless-deployment"></a>Planen der Bereitstellung von Kennwörtern
 
-Upgrade auf eine Alternative Anmeldemethode, mit der Benutzer sicher mit einer der folgenden Methoden für die Kenn Wort lose Authentifizierung auf Ihre Geräte zugreifen können: Windows Hello for Business, Microsoft Authenticator-APP oder Sicherheitsschlüssel. 
+Upgrade auf eine Alternative Anmeldemethode, mit der Benutzer sicher mit einer der folgenden Methoden für die Kenn Wort lose Authentifizierung auf Ihre Geräte zugreifen können: 
+
+- Windows Hello for Business
+- Der Microsoft Authenticator-App
+- Sicherheitsschlüssel 
 
 Verwenden Sie den Assistenten zum Bereitstellen von [Kennwörtern planen](https://aka.ms/passwordlesssetup) , um zu ermitteln, welche Authentifizierungsmethoden am besten zu verwenden sind, und erhalten Sie Anleitungen zur Bereitstellung. 
 
-### <a name="plan-your-self-service-password-reset-deployment"></a>Planen der Bereitstellung der Self-Service-Kennwortzurücksetzung
+### <a name="plan-your-self-service-password-reset-sspr-deployment"></a>Planen der Bereitstellung von Self-Service Password Reset (SSPR)
 
 Geben Sie Benutzern die Möglichkeit, Ihr Kennwort unabhängig voneinander zu ändern oder zurückzusetzen, wenn Ihr Konto gesperrt ist, oder wenn Sie Ihr Kennwort vergessen, ohne einen Helpdesk-Techniker kontaktieren zu müssen. 
 
@@ -187,4 +190,3 @@ Erstellen Sie mithilfe des [Handbuchs Office für Remotebenutzer bereitstellen](
 ### <a name="deploy-and-update-microsoft-365-apps-with-configuration-manager"></a>Bereitstellen und Aktualisieren von Microsoft 365-apps mit Configuration Manager
 
 Für Organisationen, die Configuration Manager verwenden, können Sie die [Microsoft 365-apps mit dem Configuration Manager-Ratgeber bereitstellen und aktualisieren](https://aka.ms/oppinstall) , um ein Skript zu erstellen, das Ihre Microsoft 365-apps-Bereitstellung mithilfe von bewährten Methoden für die Entwickler von Kurzarbeitern automatisch konfigurieren wird. Verwenden Sie dieses Handbuch, um Ihre Bereitstellungsgruppen zu erstellen, Ihre Office-Apps und-Features anzupassen, dynamische oder schlanke Installationen zu konfigurieren und dann das Skript auszuführen, um die Anwendungen, automatischen Bereitstellungsregeln und gerätesammlungen zu erstellen, die Sie für Ihre Bereitstellung benötigen. 
-

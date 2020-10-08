@@ -7,19 +7,19 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.date: 09/17/2020
+ms.date: 10/07/2020
 ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection: M365-security-compliance.
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
-ms.openlocfilehash: f7bcfa4f08bee51408de33964f1dfd1e1db3bd33
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f904512f9fd07e2065f3d27a5bd5adc56a3565d5
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199745"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384790"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-threat-protection"></a>Konfigurieren von automatisierten Ermittlungs-und Antwortfunktionen in Microsoft Threat Protection
 
@@ -52,8 +52,6 @@ Nachdem Sie alle eingerichtet haben, [Überprüfen Sie ausstehende und abgeschlo
 
 Ob automatische Untersuchungen ausgeführt werden und ob Korrekturaktionen automatisch oder nur bei Genehmigung für Ihre Geräte vorgenommen werden, hängt von bestimmten Einstellungen ab, beispielsweise von den Gerätegruppen Richtlinien Ihrer Organisation. Überprüfen Sie die für Ihre Gerätegruppen Richtlinien festgelegte Automatisierungsstufe.
 
-### <a name="to-review-or-change-your-device-group-policies"></a>So überprüfen oder ändern Sie Ihre Gerätegruppen Richtlinien
-
 1. Wechseln Sie zum Sicherheits Center von Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ), und melden Sie sich an.
 
 2. Wechseln Sie zu **Einstellungen**  >  **Berechtigungen**  >  **Gerätegruppen**. 
@@ -69,8 +67,6 @@ Ob automatische Untersuchungen ausgeführt werden und ob Korrekturaktionen autom
 Microsoft stellt integrierte [Warnungsrichtlinien](https://docs.microsoft.com/microsoft-365/compliance/alert-policies) bereit, mit denen bestimmte Risiken identifiziert werden können. Zu diesen Risiken gehören Exchange-Administratorberechtigungen, Malwareaktivitäten, potenzielle externe und interne Bedrohungen sowie Risiken bei der Informationssteuerung. Einige Warnungen können [automatisierte Untersuchungen und Antworten in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)auslösen. Stellen Sie sicher, dass Ihre [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) -Features ordnungsgemäß konfiguriert sind.
 
 Obwohl bestimmte Warnungen und Sicherheitsrichtlinien automatische Untersuchungen auslösen können, werden keine Korrekturaktionen für e-Mails und Inhalte automatisch durchgeführt. Stattdessen warten alle Korrekturaktionen für e-Mail-und e-Mail-Inhalte auf die Genehmigung durch Ihr Sicherheits Betriebsteam im [Action Center](mtp-action-center.md).
-
-### <a name="to-view-or-change-your-security-and-alert-policies-in-office-365"></a>So zeigen Sie Ihre Sicherheits-und Warnungsrichtlinien in Office 365 an oder ändern Sie
 
 Sicherheitseinstellungen in Office 365 helfen, e-Mails und Inhalte zu schützen. Um diese Einstellungen anzuzeigen oder zu ändern, befolgen Sie die Anweisungen unter [Protect Against Threats](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats).
 
@@ -88,13 +84,15 @@ Sicherheitseinstellungen in Office 365 helfen, e-Mails und Inhalte zu schützen.
 
 5. Stellen Sie sicher, dass die [Automatische Säuberungsaktion für den e-Mail-Schutz Null Stunden](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#zero-hour-auto-purge-for-email-in-eop) gültig ist. 
 
-8. (Dies ist optional) Überprüfen Sie Ihre [Office 365 Warnungsrichtlinien](https://docs.microsoft.com/microsoft-365/compliance/alert-policies) im Microsoft 365 Compliance Center ( [https://compliance.microsoft.com/compliancepolicies](https://compliance.microsoft.com/compliancepolicies) ). Mehrere standardmäßige Warnungsrichtlinien befinden sich in der Kategorie "Threat Management". Einige dieser Warnungen können automatisierte Untersuchungen und Antworten auslösen. Weitere Informationen finden Sie unter [default Alert Policies](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?#default-alert-policies).
+8. (Dies ist optional.) Überprüfen Sie Ihre [Office 365 Warnungsrichtlinien](https://docs.microsoft.com/microsoft-365/compliance/alert-policies) im Microsoft 365 Compliance Center ( [https://compliance.microsoft.com/compliancepolicies](https://compliance.microsoft.com/compliancepolicies) ). Mehrere standardmäßige Warnungsrichtlinien befinden sich in der Kategorie "Threat Management". Einige dieser Warnungen können automatisierte Untersuchungen und Antworten auslösen. Weitere Informationen finden Sie unter [default Alert Policies](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?#default-alert-policies).
  
 ## <a name="make-sure-microsoft-threat-protection-is-turned-on"></a>Stellen Sie sicher, dass Microsoft Threat Protection aktiviert ist.
 
 1. Wechseln Sie zum Microsoft 365 Security Center ( [https://security.microsoft.com](https://security.microsoft.com) ), und melden Sie sich an.
 
-2. Suchen Sie im Navigationsbereich nach **Incidents**, **Action Center**und **Hunting**, wie in der folgenden Abbildung dargestellt:<br/> :::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP auf":::
+2. Suchen Sie im Navigationsbereich nach **Incidents**, **Action Center**und **Hunting**, wie in der folgenden Abbildung dargestellt:
+
+   :::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP auf":::
 
    - Wenn Sie **Incidents**, **Action Center**und **Hunting**sehen, ist Microsoft Threat Protection aktiviert. Fahren Sie mit dem nächsten Verfahren fort, [überprüfen oder ändern Sie die Automatisierungsstufe für Gerätegruppen](#review-or-change-the-automation-level-for-device-groups).
 

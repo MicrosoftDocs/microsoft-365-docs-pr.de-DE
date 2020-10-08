@@ -16,18 +16,18 @@ f1.keywords:
 - NOCSH
 description: In diesem Artikel erfahren Sie, welche Plattformen, Clients und PowerShell-Module einmaliges Anmelden für Microsoft 365 unterstützen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6f6398736c8ead072374fbc14ee04eec63d3ad18
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: d0a45c30ffe736cf67e811bce6eb029d6fb50674
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546410"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384809"
 ---
 # <a name="microsoft-365-client-app-support--single-sign-on"></a>Microsoft 365-Client-App-Unterstützung – einmaliges Anmelden
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Einmaliges Anmelden (Single Sign-on, SSO) fügt Sicherheit und Bequemlichkeit hinzu, wenn sich Ihre Benutzer bei Anwendungen in Azure Active Directory (Azure AD) anmelden. Bei der einmaligen Anmeldung melden sich Benutzer mit einem Konto einmal an, um auf Domänen verbundene Geräte, Unternehmensressourcen, Software as a Service (SaaS)-Anwendungen und Webanwendungen zuzugreifen.
+Einmaliges Anmelden (Single Sign-on, SSO) fügt Sicherheit und Bequemlichkeit hinzu, wenn sich Ihre Benutzer bei Anwendungen in Azure Active Directory (Azure AD) anmelden. Bei der einmaligen Anmeldung melden sich Benutzer mit einem Konto einmal an, um auf lokale Active Directory-Domänendienste (AD DS) Domänenbeitritt, Software as a Service (SaaS)-Anwendungen und Webanwendungen zuzugreifen.
 
 Weitere Informationen finden Sie [unter Single Sign-on](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on).
 
@@ -40,7 +40,7 @@ Weitere Informationen finden Sie [unter Single Sign-on](https://docs.microsoft.c
  - IOS<sup>1</sup>
  - macOS<sup>4</sup>
 
-Weitere Informationen zur Plattformunterstützung in Microsoft 365 finden Sie unter [System Requirements for Microsoft 365](https://products.office.com/office-system-requirements).
+Weitere Informationen zur Plattformunterstützung in Microsoft 365 finden Sie unter [System Requirements for Microsoft 365](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 
 ## <a name="supported-clients"></a>Unterstützte Clients
 

@@ -3,7 +3,6 @@ title: Microsoft 365 Zusammenarbeit zwischen Mandanten
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/21/2020
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -20,12 +19,12 @@ f1.keywords:
 - NOCSH
 description: Erfahren Sie, wie Microsoft 365-Zusammenarbeit in Mandanten und Organisationen funktioniert, sodass verschiedene Organisationen sicher zusammenarbeiten können.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8064543f771927f539d09e3136663bb0df56d5be
-ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
+ms.openlocfilehash: 00eacfc21d3223b5b9a1ad420cd5d1d85bf4ea8e
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48214799"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384827"
 ---
 # <a name="microsoft-365-inter-tenant-collaboration"></a>Microsoft 365 Zusammenarbeit zwischen Mandanten
 
@@ -78,7 +77,7 @@ Microsoft 365 intertenant-Zusammenarbeitsoptionen umfassen die Verwendung eines 
 |Freigabeziel|Administratoraktion|Informationen zur Vorgehensweise|
 |:-----|:-----|:-----|
 |Zusammenarbeit in Teams Benutzern außerhalb Ihrer Organisation | Ein globaler Administrator für den einladenden Microsoft 365-Mandanten muss die externe Zusammenarbeit in Teams aktivieren. Globale Administratoren und Teambesitzer können nun jeden Gast, der über eine E-Mail-Adresse verfügt, einladen, um in Teams zusammenzuarbeiten.  <br/> Administratoren können auch bereits in Ihrem Mandanten vorhandene Gäste verwalten und bearbeiten. |  <ul><li> [Autorisieren des Gastzugriffs](https://docs.microsoft.com/microsoftteams/teams-dependencies) </li><li> [Aktivieren und Deaktivieren des Gastzugriffs in Teams](https://docs.microsoft.com/microsoftteams/set-up-guests) </li><li> [Verwenden von PowerShell zum Steuern des Gastzugriffs](https://docs.microsoft.com/microsoftteams/guest-access-powershell) </li><li> [Checkliste für den Gastzugriff](https://docs.microsoft.com/microsoftteams/guest-access-checklist) </li><li> [Anzeigen von Gastbenutzern](https://docs.microsoft.com/microsoftteams/view-guests) </li><li> [Bearbeiten von Gastbenutzerinformationen](https://docs.microsoft.com/microsoftteams/edit-guests-information) </li></ul> |
-|Teambesitzer können Gäste einladen und verwalten, wie sie innerhalb Ihrer Teams mit ihnen zusammenarbeiten.  </li><li> |Teambesitzer haben außerdem Kontrolle darüber, was die Gäste in ihren Teams tun können. |  <ul><li> [Hinzufügen von Gästen](https://support.office.com/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_addingguests&amp;ID0EAABAAA=Add_guests) </li><li> [Hinzufügen eines Gasts zu einem Team](https://docs.microsoft.com/microsoftteams/add-guests) </li><li> [Verwalten des Gastzugriffs in Microsoft Teams](https://docs.microsoft.com/microsoftteams/manage-guests) </li><li> [Anzeigen, wer in einem Team oder Kanal ist](https://support.office.com/article/see-who-s-on-a-team-or-in-a-channel-5c6be9be-9c45-4a0f-a1a0-f332b23cb6b7?ui=en-US&amp;rs=en-US&amp;ad=US) </li></ul> |
+|Teambesitzer können Gäste einladen und verwalten, wie sie innerhalb Ihrer Teams mit ihnen zusammenarbeiten.  |Teambesitzer haben außerdem Kontrolle darüber, was die Gäste in ihren Teams tun können. |  <ul><li> [Hinzufügen von Gästen](https://support.office.com/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_addingguests&amp;ID0EAABAAA=Add_guests) </li><li> [Hinzufügen eines Gasts zu einem Team](https://docs.microsoft.com/microsoftteams/add-guests) </li><li> [Verwalten des Gastzugriffs in Microsoft Teams](https://docs.microsoft.com/microsoftteams/manage-guests) </li><li> [Anzeigen, wer in einem Team oder Kanal ist](https://support.office.com/article/see-who-s-on-a-team-or-in-a-channel-5c6be9be-9c45-4a0f-a1a0-f332b23cb6b7?ui=en-US&amp;rs=en-US&amp;ad=US) </li></ul> |
 |Gäste anderer Mandanten können Inhalte in Teams anzeigen und mit anderen Mitgliedern zusammenarbeiten. | Keine. | [Gastzugriff](https://docs.microsoft.com/microsoftteams/guest-experience)| 
 
 ## <a name="power-bi-collaboration-options"></a>Optionen für die Zusammenarbeit in Power BI
@@ -93,18 +92,18 @@ Microsoft 365 intertenant-Zusammenarbeitsoptionen umfassen die Verwendung eines 
 
 Jede Organisation verwalte ihre eigenen Benutzerkonten, Identitäten, Sicherheitsgruppen, Abonnements, Lizenzen und Speicher. Personen verwenden die Features für die Zusammenarbeit in Microsoft 365 zusammen mit Freigaberichtlinien und Sicherheitseinstellungen, um Zugriff auf benötigte Informationen bereitzustellen und gleichzeitig die Kontrolle über Unternehmensressourcen beizubehalten.
   
-- **Benutzerkonten:** Es ist nicht möglich, Konten zwischen den Mandanten oder Partitionen in den lokalen Active Directory-Verzeichnisdiensten freizugeben oder zu duplizieren. 
+- **Benutzerkonten:** Konten können zwischen den Mandanten oder Partitionen im lokalen Active Directory-Domänendienste nicht freigegeben oder dupliziert werden. 
     
 - **Lizenz &amp; Abonnements:** in Microsoft 365 erteilen Lizenzen aus Lizenzierungs Plänen (auch SKUs oder Microsoft 365-Pläne genannt) Benutzern den Zugriff auf die Microsoft 365-Dienste, die für diese Pläne definiert sind. 
     
-- **Speicher:** In Microsoft 365-Plänen werden Softwarebeschränkungen und-Grenzwerte für SharePoint Online getrennt von Postfachspeicher Grenzen verwaltet. Speicherbegrenzungen für Postfächer werden mit Exchange Online eingerichtet und verwaltet. In beiden Fällen kann Speicher nicht von mehreren Mandanten gemeinsam genutzt werden. 
+- **Speicher:** In Microsoft 365-Lizenzierungs Plänen werden Softwaregrenzen und Grenzwerte für SharePoint Online getrennt von Postfachspeicher Grenzen verwaltet. Speicherbegrenzungen für Postfächer werden mit Exchange Online eingerichtet und verwaltet. In beiden Szenarien kann kein Speicher für Mandanten freigegeben werden. 
     
 ### <a name="can-we-share-domain-namespaces-across-microsoft-365-tenants"></a>Können Domänen Namespaces in Microsoft 365-Mandanten gemeinsam genutzt werden?
 
-Nein. Benutzerdefinierte Domänen, z. B. „fabrikam.com“ oder „tailspintoys.com“, können nur jeweils einem Mandanten zugeordnet sein und von diesem verwendet werden. Jeder Mandant muss einen eigenen Namespace haben; UPN-, SMTP- und SIP-Namespaces können nicht von Mandanten gemeinsam genutzt werden.
+Nein. Organisationsdomänen Namen wie fabrikam.com oder tailspintoys.com können nur mit einem einzelnen Microsoft 365-Mandanten verknüpft und verwendet werden. Jeder Mandant muss über einen eigenen Namespace verfügen. UPN-, SMTP-und SIP-Namespaces können nicht für Mandanten freigegeben werden.
   
 ### <a name="what-about-hybrid-components-and-microsoft-365-inter-tenant-collaboration"></a>Was ist mit Hybrid-Komponenten und Microsoft 365 Zusammenarbeit zwischen Mandanten?
 
 Lokale Hybridkomponenten, z. B. eine Exchange-Organisation und Azure AD Connect, können nicht auf mehrere Mandanten aufgeteilt werden.
-  
+ 
 

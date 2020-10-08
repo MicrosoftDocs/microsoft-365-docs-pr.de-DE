@@ -3,7 +3,6 @@ title: Planen des Upgrades von Office 2007- oder 2010 -Servern und -Clients
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/15/2020
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -17,25 +16,25 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: Dieser Artikel enthält Ressourcen für Benutzer, die Office 2007 oder Office 2010 bei der Planung des Upgrades unterstützen.
-ms.openlocfilehash: 0ad90235bf7ad862a1f0162f87dca7ee2df3d799
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 0b137b39d671b9746445f9e41a5859732574dbe4
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690533"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384565"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planen des Upgrades von Office 2007- oder Office 2010-Servern und -Clients
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Wenn Ihre Organisation ältere Versionen von Office-Produkten und -Servern verwendet, ist dies ein guter Zeitpunkt, um mit der Planung Ihres Upgrades zu beginnen. Office 2007-Produkte und -Dienste haben das [Ende des Supports](upgrade-from-office-2007-servers-and-products.md) erreicht. 
+Wenn Ihre Organisation ältere Versionen von Office-Produkten und -Servern verwendet, ist dies ein guter Zeitpunkt, um mit der Planung Ihres Upgrades zu beginnen. Office 2007-Produkte und -Dienste haben das [Ende des Supports](upgrade-from-office-2007-servers-and-products.md) erreicht. Für Office 2010-Produkte und-Dienste:
 
 - Der Support für Office 2010 und Exchange 2010 endet am **13. Oktober 2020**. 
 - Der Support für SharePoint 2010 und Project Server 2010 endet am **13. April 2021**. 
 
-Verwenden Sie die Ressourcen in diesem Artikel, um loszulegen.
+Weitere Informationen finden Sie unter [Upgrade von Office 2010-Servern und-Clients](upgrade-from-office-2010-servers-and-products.md).
 
-Weitere Informationen finden Sie unter [Upgrade von Office 2010-Servern und -Clients](upgrade-from-office-2010-servers-and-products.md).
+Verwenden Sie die Ressourcen in diesem Artikel, um mit dem Upgrade zu beginnen.
 
 ## <a name="what-is-microsoft-365"></a>Was ist Microsoft 365?
 
@@ -44,13 +43,14 @@ Weitere Informationen finden Sie unter [Upgrade von Office 2010-Servern und -Cli
 Microsoft 365 umfasst die Lizenzen und Funktionen, mit denen Sie sicherstellen können, dass Ihre Organisation mit dem neuesten Windows-Betriebssystem arbeitet und dass Ihre Geräte – einschließlich Windows, IOS und Android – registriert und mit Richtlinien gesichert werden, die Authentifizierung und Datenschutz erfordern. Darüber hinaus wird Windows 10 und Ihre Microsoft 365 apps for Enterprise (zuvor Office 365 ProPlus bezeichnet)-Client Software fortlaufend aktualisiert, um die neuesten Features und Sicherheitsupdates einzuschließen.
   
 Microsoft 365 bietet die Möglichkeit für den digitalen Wandel Ihres Unternehmens – mit ständig verbesserten Geräten und Produktivitätsumgebungen, die von der Microsoft Cloud bereitgestellt und gesichert werden.
-  
-|**Ressource**|**Beschreibung**|
+ 
+| Ressource | Beschreibung |
 |:-----|:-----|
-|[Microsoft 365](https://www.microsoft.com/microsoft-365) <br/> |Hier finden Sie Informieren zu den unterschiedlichen Versionen von Microsoft 365.  <br/> |
-|[Microsoft 365 Business-Dokumentation](https://docs.microsoft.com/microsoft-365/business/) <br/> |Hier finden Sie detaillierte Informationen zur Version von Microsoft 365 für kleine und mittelständische Unternehmen.  <br/> |
-|[Microsoft 365 Education-Dokumentation](https://docs.microsoft.com/microsoft-365/education/) <br/> |Hier finden Sie detaillierte Informationen zur Version von Microsoft 365 für Bildungseinrichtungen.  <br/> |
-|[Dokumentation zu Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/) <br/> |Hier finden Sie detaillierte Informationen zur Version von Microsoft 365 für Unternehmen.  <br/> |
+|[Microsoft 365](https://www.microsoft.com/microsoft-365) <br/> | Hier finden Sie Informieren zu den unterschiedlichen Versionen von Microsoft 365.  <br/> |
+|[Microsoft 365 Business-Dokumentation](https://docs.microsoft.com/microsoft-365/business/) <br/> | Hier finden Sie detaillierte Informationen zur Version von Microsoft 365 für kleine und mittelständische Unternehmen.  <br/> |
+|[Microsoft 365 Education-Dokumentation](https://docs.microsoft.com/microsoft-365/education/) <br/> | Hier finden Sie detaillierte Informationen zur Version von Microsoft 365 für Bildungseinrichtungen.  <br/> |
+|[Dokumentation zu Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/) <br/> | Hier finden Sie detaillierte Informationen zur Version von Microsoft 365 für Unternehmen.  <br/> |
+|||
 
 ## <a name="what-happens-if-i-dont-upgrade"></a>Was geschieht, wenn ich kein Upgrade durchführe?
 
@@ -94,7 +94,7 @@ Wenn Sie Office 2007 oder Office 2010 zu Hause verwenden, sollten Sie sich die f
 
 - **Testen Sie Microsoft 365 für die Verwendung zu Hause.** Verwenden Sie die [Microsoft 365-Familie](https://www.microsoft.com/microsoft-365/p/microsoft-365-family/cfq7ttc0k5dm?rtc=2&activetab=pivot:overviewtab) für private Haushalte. Starten Sie eine Testversion, und sehen Sie, wie die Microsoft 365-Produktfamilie funktioniert. Mit der Microsoft 365-Familie genießen Sie Cloud-Speicher mit OneDrive.
 
-   Mit dem [Ende des Supports für Windows 7 am 14. Januar 2020](https://www.microsoft.com/windowsforbusiness/end-of-windows-7-support) werden für die Versionen von Word, Excel, PowerPoint, Outlook, Publisher und Access, die mit Office 365 Home oder Office 365 Personal auf Windows 7-Geräten bereitgestellt werden, zwar weiterhin Sicherheitsupdates aber keine Featureupdates mehr bereitgestellt. Wenn Sie weiterhin Featureupdates für diese Anwendungen erhalten möchten, [aktualisieren Sie Ihre Windows 7-Geräte auf Windows 10](https://support.microsoft.com/help/12435/windows-10-upgrade-faq).
+   Mit dem [Ende der Unterstützung für Windows 7 am 14. Januar 2020](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support)werden die Versionen von Word, Excel, PowerPoint, Outlook, Publisher und Access, die mit Office 365 Home oder Office 365 persönliche Ausführung auf Windows 7 Geräten bereitgestellt werden, Sicherheitsupdates, aber keine Funktionsupdates erhalten. Wenn Sie weiterhin Featureupdates für diese Anwendungen erhalten möchten, [aktualisieren Sie Ihre Windows 7-Geräte auf Windows 10](https://support.microsoft.com/help/12435/windows-10-upgrade-faq).
     
 - **Kaufen Sie Office Home &amp; Student.** Wenn Sie diese Option wählen, erwerben Sie Office als Einmalkauf und installieren es dann auf Ihrem Windows-PC oder Mac. Hierbei handelt es sich nicht um ein Abonnement, sondern eine einmalige, dauerhafte Nutzungslizenz für einen Computer. Sehen Sie sich die [Anforderungen](https://office.com/systemrequirements) an, und wählen Sie dann die Version aus, die Sie verwenden möchten.
 
@@ -102,9 +102,9 @@ Wenn Sie Office 2007 oder Office 2010 zu Hause verwenden, sollten Sie sich die f
 
     - Wird auf Ihrem Windows-PC Windows 7, 8 oder 8.1 ausgeführt, und planen Sie derzeit kein Upgrade auf Windows 10, erwägen Sie, Office Home & Student 2016 (oder eine andere Edition von Microsoft Office) von einem autorisierten Händler zu erwerben.
      
-     - Die Unterstützung für Windows 7 wird [am 14. Januar 2020 beendet](https://www.microsoft.com/windowsforbusiness/end-of-windows-7-support), nachdem Microsoft keine Sicherheitsupdates oder-Unterstützung bereitstellen wird. Aktualisieren Sie Ihre Windows 7-Geräte auf Windows 10, um weiter Sicherheits- und Featureupdates sowie durchgängigen Support zu erhalten.
+     - Die Unterstützung für Windows 7 wird [am 14. Januar 2020 beendet](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support), nachdem Microsoft keine Sicherheitsupdates oder-Unterstützung bereitstellen wird. Aktualisieren Sie Ihre Windows 7-Geräte auf Windows 10, um weiter Sicherheits- und Featureupdates sowie durchgängigen Support zu erhalten.
 
-Sie müssen nicht unbedingt zum jetzigen Zeitpunkt ein Upgrade durchführen. Ihre Office-Apps können weiterhin ausgeführt werden. Zeitpläne für die Office-Supporttermine finden Sie [hier](https://go.microsoft.com/fwlink/p/?linkid=2085724). Bei einem Upgrade erhalten Sie jedoch Sicherheitsupdates oder neue und verbesserte Features.
+Sie müssen nicht unbedingt zum jetzigen Zeitpunkt ein Upgrade durchführen. Ihre Office-Apps können weiterhin ausgeführt werden. Zeitpläne für die Office-Supporttermine finden Sie [hier](https://support.microsoft.com/lifecycle/search/13615). Bei einem Upgrade erhalten Sie jedoch Sicherheitsupdates oder neue und verbesserte Features.
    
 ## <a name="next-step"></a>Nächster Schritt
 

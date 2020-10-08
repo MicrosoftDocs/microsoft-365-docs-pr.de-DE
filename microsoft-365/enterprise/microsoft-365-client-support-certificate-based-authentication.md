@@ -16,18 +16,18 @@ f1.keywords:
 - NOCSH
 description: In diesem Artikel finden Sie Details zur Microsoft 365-Client-App-Unterstützung für die zertifikatbasierte Authentifizierung..
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ac48305d634baa436eab7f2d9eeb520897f2a3d8
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 55d3fa4db6abcd7589cf9fadb9084144cd26c8d7
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47548010"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384947"
 ---
 # <a name="microsoft-365-client-app-support--certificate-based-authentication"></a>Microsoft 365-Client-App-Unterstützung – zertifikatbasierte Authentifizierung
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Die zertifikatbasierte Authentifizierung ermöglicht die Authentifizierung bei Azure Active Directory mit einem Clientzertifikat auf Windows-, Android-oder IOS-Geräten. Wenn Sie dieses Feature konfigurieren, müssen Sie keine Kombination aus Benutzername und Kennwort in bestimmte e-Mail-und Microsoft Office-Anwendungen auf Ihrem mobilen Gerät eingeben.
+Die zertifikatbasierte Authentifizierung ermöglicht die Authentifizierung bei Azure Active Directory (Azure AD) mit einem Clientzertifikat auf Windows-, Android-oder IOS-Geräten. Wenn Sie dieses Feature konfigurieren, müssen Sie keine Kombination aus Benutzername und Kennwort in bestimmte e-Mail-und Microsoft Office-Anwendungen auf Ihrem mobilen Gerät eingeben.
 
 Erfahren Sie mehr über die [zertifikatbasierte Authentifizierung](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started).
 
@@ -40,7 +40,7 @@ Erfahren Sie mehr über die [zertifikatbasierte Authentifizierung](https://docs.
  - iOS
  - macOS<sup>1</sup> <sup>2</sup>
 
-Weitere Informationen zur Plattformunterstützung in Microsoft 365 finden Sie unter [System Requirements for Microsoft 365](https://products.office.com/office-system-requirements).
+Weitere Informationen zur Plattformunterstützung in Microsoft 365 finden Sie unter [System Requirements for Microsoft 365](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 
 ## <a name="supported-clients"></a>Unterstützte Clients
 
@@ -49,7 +49,7 @@ Die neuesten Versionen der folgenden Clients unterstützen die zertifikatbasiert
 | | | | | | |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | ![Access-Symbol](../media/o365-access-64x64.png) <br> [Access](https://products.office.com/access) | ![Azure-Symbol](../media/o365-azure-64x64.png) <br> [Azure AD <br> Portal ](https://azure.microsoft.com/features/azure-portal/) | ![Symbol des Unternehmensportals](../media/o365-microsoft-64x64.png) <br> [Unternehmens <br> Portal ](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal) | ![Vertiefen (Symbol)](../media/o365-delve-64x64.png) <br> [Delve](https://products.office.com/business/intelligent-search) | ![Dynamics 365-Symbol](../media/o365-dynamics365-64x64.png) <br> [Dynamics 365](https://dynamics.microsoft.com) 
-| ![Edge-Symbol](../media/o365-edge-64x64.png) <br> [Edge](https://www.microsoft.com/windows/microsoft-edge) | ![Excel-Symbol](../media/o365-excel-64x64.png) <br> [Excel](https://products.office.com/excel) | ![Symbol "Formulare"](../media/o365-forms-64x64.png) <br> [Formulare](https://flow.microsoft.com/connectors/shared_microsoftforms/microsoft-forms/) | ![Kaizala-Symbol](../media/o365-kaizala-64x64.png) <br> [Kaizala](https://products.office.com/en/business/microsoft-kaizala) | ![Office.com-Symbol](../media/o365-office-64x64.png) <br> [Office.com](https://www.office.com/) 
+| ![Edge-Symbol](../media/o365-edge-64x64.png) <br> [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) | ![Excel-Symbol](../media/o365-excel-64x64.png) <br> [Excel](https://products.office.com/excel) | ![Symbol "Formulare"](../media/o365-forms-64x64.png) <br> [Formulare](https://flow.microsoft.com/connectors/shared_microsoftforms/microsoft-forms/) | ![Kaizala-Symbol](../media/o365-kaizala-64x64.png) <br> [Kaizala](https://products.office.com/en/business/microsoft-kaizala) | ![Office.com-Symbol](../media/o365-office-64x64.png) <br> [Office.com](https://www.office.com/) 
 | ![Office 365 Administrator Symbol](../media/o365-o365admin-64x64.png) <br> [Microsoft 365- <br> Administrator](https://products.office.com/business/manage-office-365-admin-app) | ![Linsen Symbol](../media/o365-lens-64x64.png) <br> [Office Lens](https://www.microsoft.com/p/office-lens/9wzdncrfj3t8?activetab=pivot%3Aoverviewtab) | ![OneDrive für Unternehmen Symbol](../media/o365-OneDrive-64x64.png) <br> [OneDrive<sup>1</sup>](https://products.office.com/onedrive-for-business/online-cloud-storage) |  ![OneNote-Symbol](../media/o365-OneNote-64x64.png) <br> [OneNote](https://products.office.com/onenote) | ![Outlook-Symbol](../media/o365-outlook-64x64.png) <br> [Outlook](https://products.office.com/outlook) 
 | ![Planner-Symbol](../media/o365-planner-64x64.png) <br> [Planner](https://products.office.com/business/task-management-software) | ![PowerApps-Symbol](../media/o365-powerapps-64x64.png) <br> [PowerApps<sup>3</sup>](https://powerapps.microsoft.com) | ![Power-Automatisierungs Symbol](../media/o365-flow-64x64.png) <br> [Power- <br> Automatisierung](https://flow.microsoft.com) | ![PowerBI-Symbol](../media/o365-powerbi-64x64.png) <br> [Power BI](https://powerbi.microsoft.com)| ![PowerPoint-Symbol](../media/o365-powerpoint-64x64.png) <br> [PowerPoint](https://products.office.com/powerpoint) 
 | ![Project-Symbol](../media/o365-project-64x64.png) <br> [Project](https://products.office.com/project) | ![Publisher-Symbol](../media/o365-publisher-64x64.png) <br> [Publisher](https://products.office.com/publisher) | ![SharePoint-Symbol](../media/o365-sharepoint-64x64.png) <br> [Share](https://products.office.com/sharepoint) | ![Skype for Business-Symbol](../media/o365-skypeforbusiness-64x64.png) <br> [Skype for <br> Business](https://www.skype.com/business/) | ![Symbol für Notizen](../media/o365-stickynotes-64x64.png) <br> [Kurznotizen](https://www.microsoft.com/p/microsoft-sticky-notes/9nblggh4qghw) 

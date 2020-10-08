@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: In diesem Artikel erfahren Sie, welche Plattformen, Clients und PowerShell-Module den bedingten Zugriff für Microsoft 365 unterstützen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fd4dcaeda27f12427f3175b7ec52e2fdb0c153da
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: d44dffd6da91be9e64953d1b744043114ba68183
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546512"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384923"
 ---
 # <a name="microsoft-365-client-app-support--conditional-access"></a>Microsoft 365-Client-App-Unterstützung – bedingter Zugriff
 
@@ -40,7 +40,7 @@ Erfahren Sie mehr über den [bedingten Zugriff mit Azure AD](https://docs.micros
  - iOS
  - macOS<sup>1</sup>
 
-Weitere Informationen zur Plattformunterstützung in Microsoft 365 finden Sie unter [System Requirements for Microsoft 365](https://products.office.com/office-system-requirements).
+Weitere Informationen zur Plattformunterstützung in Microsoft 365 finden Sie unter [System Requirements for Microsoft 365](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 
 ## <a name="supported-clients"></a>Unterstützte Clients
 
@@ -49,11 +49,11 @@ Die neuesten Versionen der folgenden Clients unterstützen bedingten Zugriff:
 | | | | | | |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | ![Azure-Symbol](../media/o365-azure-64x64.png) <br> [Azure AD <br> Portal ](https://azure.microsoft.com/features/azure-portal/) | ![Access-Symbol](../media/o365-access-64x64.png) <br> [Access](https://products.office.com/access) | ![Symbol des Unternehmensportals](../media/o365-microsoft-64x64.png) <br> [Unternehmens <br> Portal ](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal)  | ![Cortana-Symbol](../media/o365-cortana-64x64.png) <br> [Cortana](https://www.microsoft.com/cortana) | ![Vertiefen (Symbol)](../media/o365-delve-64x64.png) <br> [Delve](https://products.office.com/business/intelligent-search) 
-| ![Dynamics 365-Symbol](../media/o365-dynamics365-64x64.png) <br> [Dynamics 365](https://dynamics.microsoft.com) | ![Edge-Symbol](../media/o365-edge-64x64.png) <br> [Edge](https://www.microsoft.com/windows/microsoft-edge) | ![Exchange-Symbol](../media/o365-exchange-64x64.png) <br> [Exchange](https://products.office.com/exchange/exchange-online) | ![Excel-Symbol](../media/o365-excel-64x64.png) <br> [Excel](https://products.office.com/excel) | ![Symbol "Formulare"](../media/o365-forms-64x64.png) <br> [Formulare](https://flow.microsoft.com/connectors/shared_microsoftforms/microsoft-forms/) 
+| ![Dynamics 365-Symbol](../media/o365-dynamics365-64x64.png) <br> [Dynamics 365](https://dynamics.microsoft.com) | ![Edge-Symbol](../media/o365-edge-64x64.png) <br> [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) | ![Exchange-Symbol](../media/o365-exchange-64x64.png) <br> [Exchange](https://products.office.com/exchange/exchange-online) | ![Excel-Symbol](../media/o365-excel-64x64.png) <br> [Excel](https://products.office.com/excel) | ![Symbol "Formulare"](../media/o365-forms-64x64.png) <br> [Formulare](https://flow.microsoft.com/connectors/shared_microsoftforms/microsoft-forms/) 
 | ![Kaizala-Symbol](../media/o365-kaizala-64x64.png) <br> [Kaizala](https://products.office.com/en/business/microsoft-kaizala) | ![Office.com-Symbol](../media/o365-office-64x64.png) <br> [Office.com](https://www.office.com/) | ![Linsen Symbol](../media/o365-lens-64x64.png) <br> [Office Lens](https://www.microsoft.com/p/office-lens/9wzdncrfj3t8?activetab=pivot%3Aoverviewtab) | ![Office 365 Administrator Symbol](../media/o365-o365admin-64x64.png) <br> [Microsoft 365- <br> Administrator](https://products.office.com/business/manage-office-365-admin-app) | ![OneDrive für Unternehmen Symbol](../media/o365-OneDrive-64x64.png) <br> [OneDrive<sup>1</sup>](https://products.office.com/onedrive-for-business/online-cloud-storage) 
 | ![OneNote-Symbol](../media/o365-OneNote-64x64.png) <br> [OneNote](https://products.office.com/onenote) | ![Outlook-Symbol](../media/o365-outlook-64x64.png) <br> [Outlook](https://products.office.com/outlook) | ![Planner-Symbol](../media/o365-planner-64x64.png) <br> [Planner](https://products.office.com/business/task-management-software) | ![PowerApps-Symbol](../media/o365-powerapps-64x64.png) <br> [PowerApps](https://powerapps.microsoft.com) | ![Power-Automatisierungs Symbol](../media/o365-flow-64x64.png) <br> [Power- <br> Automatisierung](https://flow.microsoft.com)
 | ![PowerBI-Symbol](../media/o365-powerbi-64x64.png) <br> [Power BI](https://powerbi.microsoft.com) | ![PowerPoint-Symbol](../media/o365-powerpoint-64x64.png) <br> [PowerPoint](https://products.office.com/powerpoint) | ![Project-Symbol](../media/o365-project-64x64.png) <br> [Project](https://products.office.com/project) | ![Publisher-Symbol](../media/o365-publisher-64x64.png) <br> [Publisher](https://products.office.com/publisher) | ![SharePoint-Symbol](../media/o365-sharepoint-64x64.png) <br> [Share](https://products.office.com/sharepoint) 
-| ![Skype for Business-Symbol](../media/o365-skypeforbusiness-64x64.png) <br> [Skype for <br> Business](https://www.skype.com/business/) | ![Symbol für Notizen](../media/o365-stickynotes-64x64.png) <br> [Kurznotizen](https://www.microsoft.com/p/microsoft-sticky-notes/9nblggh4qghw) | ![Stream-Symbol](../media/o365-stream-64x64.png) <br> [Stream](https://stream.microsoft.com) | ![Sway-Symbol](../media/o365-sway-64x64.png) <br> [Sway](https://sway.com) | ![Teams-Symbol](../media/o365-teams-64x64.png) <br> [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software) 
+| ![Skype for Business-Symbol](../media/o365-skypeforbusiness-64x64.png) <br> [Skype for <br> Business](https://www.skype.com/business/) | ![Symbol für Notizen](../media/o365-stickynotes-64x64.png) <br> [Kurznotizen](https://www.microsoft.com/p/microsoft-sticky-notes/9nblggh4qghw) | ![Stream-Symbol](../media/o365-stream-64x64.png) <br> [Stream](https://stream.microsoft.com) | ![Sway-Symbol](../media/o365-sway-64x64.png) <br> [Sway](https://sway.com) | ![Teams-Symbol](../media/o365-teams-64x64.png) <br> [Teams](https://products.office.com/microsoft-teams/group-chat-software) 
 | ![To-do-Symbol](../media/o365-todo-64x64.png) <br> [Aufgabe](https://todo.microsoft.com) | ![Visio-Symbol](../media/o365-visio-64x64.png) <br> [Visio](https://products.office.com/visio/flowchart-software) | ![Word-Symbol](../media/o365-word-64x64.png) <br> [Word](https://products.office.com/word) | ![Yammer-Symbol](../media/o365-yammer-64x64.png) <br> [Yammer](https://products.office.com/yammer/yammer-overview)
 
 ## <a name="supported-powershell-modules"></a>Unterstützte PowerShell-Module

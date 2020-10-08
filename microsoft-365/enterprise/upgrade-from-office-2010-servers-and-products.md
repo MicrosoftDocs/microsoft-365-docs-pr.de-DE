@@ -3,7 +3,6 @@ title: Ressourcen, die Ihnen beim Upgrade von Office 2010-Servern und -Clients h
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/14/2020
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -24,12 +23,12 @@ f1.keywords:
 - NOCSH
 description: Beginnen Sie mit der Planung des Upgrades von Office 2010-Servern und-Clientanwendungen, da die Unterstützung bald endet und keine benutzerdefinierten Support Vereinbarungen verfügbar sind.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: da45f18c0cf39c06ea19dd348cbd77286152a885
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 7d45075431e23bf3aae0b6052b1db708e704134f
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949526"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384856"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ressourcen, die Ihnen beim Upgrade von Office 2010-Servern und -Clients helfen
 

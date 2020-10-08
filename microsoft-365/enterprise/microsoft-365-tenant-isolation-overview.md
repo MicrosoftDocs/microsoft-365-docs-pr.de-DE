@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Dieser Artikel enthält eine Zusammenfassung darüber, wie Microsoft die Mandanten Isolierung in Cloud-Diensten wie Microsoft 365 erzwingt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7aca35fc61d03e94225375fcf67970e13dd691c9
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: c9af522c71f3b089c8f2f198f861bcac8a0011a2
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332688"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384931"
 ---
 # <a name="tenant-isolation-in-microsoft-365"></a>Mandanten Isolierung in Microsoft 365
 
@@ -39,7 +39,7 @@ In Microsoft 365 wurden mehrere Schutzformen implementiert, um zu verhindern, da
 - Die logische Isolierung von Kundeninhalten innerhalb der einzelnen Mandanten für Microsoft 365-Dienste wird durch Azure Active Directory Autorisierung und rollenbasierte Zugriffssteuerung erreicht.
 - SharePoint Online bietet Daten Isolationsmechanismen auf Speicherebene.
 - Microsoft verwendet strenge physische Sicherheit, Hintergrundprüfung und eine mehrstufige Verschlüsselungsstrategie, um die Vertraulichkeit und Integrität von Kundeninhalten zu schützen. Alle Microsoft 365-Rechenzentren verfügen über biometrische Zugriffssteuerungen, wobei die meisten Palm Prints benötigen, um physischen Zugriff zu erhalten. Darüber hinaus müssen alle in den USA ansässigen Microsoft-Mitarbeiter eine standardmäßige Hintergrundüberprüfung im Rahmen des Einstellungsprozesses erfolgreich abschließen. Weitere Informationen zu den Steuerelementen, die für den administrativen Zugriff in Microsoft 365 verwendet werden, finden Sie unter [Microsoft 365 administrative Access Controls](microsoft-365-administrative-access-controls-overview.md).
-- Microsoft 365 verwendet dienstseitige Technologien zum Verschlüsseln von Kundeninhalten im Rest und in der Übertragung, einschließlich BitLocker, Verschlüsselung per Datei, Transport Layer Security (TLS) und IPSec (Internet Protocol Security). Spezifische Details zur Verschlüsselung in Microsoft 365 finden Sie unter [Datenverschlüsselungstechnologien in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview).
+- Microsoft 365 verwendet dienstseitige Technologien zum Verschlüsseln von Kundeninhalten im Rest und in der Übertragung, einschließlich BitLocker, Verschlüsselung per Datei, Transport Layer Security (TLS) und IPSec (Internet Protocol Security). Spezifische Details zur Verschlüsselung in Microsoft 365 finden Sie unter [Datenverschlüsselungstechnologien in Microsoft 365](../compliance/office-365-encryption-in-the-microsoft-cloud-overview.md).
 
 Zusammen bieten die oben aufgeführten Schutzmechanismen zuverlässige logische Isolierungs Steuerelemente, die den Schutz und die Minderung von Bedrohungen ermöglichen, gleichbedeutend mit der von der physischen Isolierung allein bereitgestellten.
 
