@@ -9,12 +9,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: f57911276d74c6945027077404e1f83c2f5072fd
-ms.sourcegitcommit: eb905c5b4d7e71fc930a207357295b0160c4f065
+ms.openlocfilehash: 5adf57c2397c4de3c5ea8622a2a9be7207ebf152
+ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "48137035"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48379302"
 ---
 # <a name="access-the-admin-portal"></a>Zugreifen auf das Verwaltungsportal
 
@@ -34,12 +34,12 @@ Jede der folgenden Rollen kann zugewiesen werden, um unterschiedliche Zugriffseb
 
 |Azure AD Rolle  |Berechtigungen für Microsoft Managed Desktops  |
 |---------|---------|
-|Globaler Administrator     | Administratoren mit dieser Rolle verfügen über **Lese-und Schreibberechtigungen** für alle Features im Verwaltungsportal von Microsoft Managed Desktop.         |
-|Globaler Leser     | Administratoren mit dieser Rolle verfügen über **schreibgeschützte Berechtigungen** für alle Features im Verwaltungsportal von Microsoft Managed Desktop.         |
-|InTune-Dienst Administrator     |  Administratoren mit dieser Rolle verfügen über **Lese-und Schreibberechtigungen** für alle Features im Verwaltungsportal von Microsoft Managed Desktop. **Änderung:** Ab September 2020 Administratoren mit dieser Rolle haben keinen Zugriff auf Microsoft Managed Desktop Security-Features.       |
-|Dienst Support Administrator     | Administratoren mit dieser Rolle verfügen über **Lese-und Schreibberechtigungen** für alle Features im Verwaltungsportal von Microsoft Managed Desktop. **Änderung:** Ab September 2020 Administratoren mit dieser Rolle haben keinen Zugriff auf Microsoft Managed Desktop Security-Features.         |
-|Sicherheitsadministrator | **(In der Vorschau von September 2020)** Administratoren mit dieser Rolle verfügen über schreibgeschützte Berechtigungen für alle Features und Schreibberechtigungen für sicherheitsbezogene Features in Microsoft Managed Desktop im Verwaltungsportal. |
-|Sicherheitsleseberechtigter | **(In der Vorschau von September 2020)**  Administratoren mit dieser Rolle verfügen über schreibgeschützte Berechtigungen für alle Features im Verwaltungsportal von Microsoft Managed Desktop.|
+|Globaler Administrator     | Administratoren mit dieser Rolle verfügen über **Lese-und Schreibberechtigungen für alle Features** im Verwaltungsportal von Microsoft Managed Desktop.         |
+|Globaler Leser     | Administratoren mit dieser Rolle verfügen über **schreibgeschützte Berechtigungen für alle Features** im Verwaltungsportal von Microsoft Managed Desktop.         |
+|InTune-Dienst Administrator     |  Administratoren mit dieser Rolle verfügen über **Lese-und Schreibberechtigungen für Features, die nicht im Zusammenhang** mit der Sicherheit im Verwaltungsportal von Microsoft Managed Desktop stehen.       |
+|Dienst Support Administrator     | Administratoren mit dieser Rolle verfügen über **Lese-und Schreibberechtigungen für Features, die nicht im Zusammenhang** mit der Sicherheit im Verwaltungsportal von Microsoft Managed Desktop stehen.         |
+|Sicherheitsadministrator | Administratoren mit dieser Rolle verfügen über **schreibgeschützte Berechtigungen für alle Features** und **Schreibberechtigungen für sicherheitsbezogene Features** in Microsoft Managed Desktop im Verwaltungsportal. |
+|Sicherheitsleseberechtigter |Administratoren mit dieser Rolle verfügen über **schreibgeschützte Berechtigungen für alle Features** im Verwaltungsportal von Microsoft Managed Desktop.|
 
 > [!IMPORTANT]
 > Nur die globale Administrator Rolle verfügt über die erforderlichen Berechtigungen zum *registrieren* Ihrer Organisation in Microsoft Managed Desktop. Achten Sie darauf, dass Azure Active Directory-Rollen Benutzerkontenberechtigungen für eine Vielzahl von Microsoft-Diensten erhalten. Nachdem Sie die Registrierung bei Microsoft Managed Desktop abgeschlossen haben, sollten Sie die Rolle immer mit den am *wenigsten* erforderlichen Rechten verwenden, um Ihre anderen Aufgaben auszuführen.
@@ -47,9 +47,9 @@ Jede der folgenden Rollen kann zugewiesen werden, um unterschiedliche Zugriffseb
  
 |Benutzerdefinierte Rolle  |Berechtigungen für Microsoft Managed Desktops  |
 |---------|---------|
-|Administrator des Microsoft Managed Desktop-Diensts  | **(In der Vorschau von September 2020)** Wenn dieser Rolle einem Benutzer zugewiesen ist, erhält der Administrator **Lese-& Schreibberechtigungen für Features, die nicht mit der Sicherheit** im Microsoft Managed Desktop-Verwaltungsportal in Zusammenhangstehen.  |
-|Microsoft Managed Desktop-Dienst Leser | **(In der Vorschau von September 2020)** Wenn Sie einem Benutzer zugewiesen ist, gibt diese Rolle dem Administrator **Leseberechtigungen für Features, die nicht mit der Sicherheit** im Microsoft Managed Desktop-Verwaltungsportal in Zusammenhangstehen. |
-|Microsoft Managed Desktop Security Manager | **(In der Vorschau von September 2020)** Wenn Sie einem Benutzer zugewiesen ist, gibt diese Rolle dem Administrator **& Schreibberechtigungen nur für sicherheitsbezogene Funktionen** im Microsoft Managed Desktop Admin-Portal lesen.   |
+|Administrator des Microsoft Managed Desktop-Diensts  | Wenn Sie einem Benutzer zugewiesen ist, erteilt diese Rolle dem Administrator **Lese-und Schreibberechtigungen für Features, die sich nicht auf die Sicherheit** im Microsoft Managed Desktop-Verwaltungsportal beziehen.  |
+|Microsoft Managed Desktop-Dienst Leser | Wenn Sie einem Benutzer zugewiesen ist, gibt diese Rolle dem Administrator **schreibgeschützte Berechtigungen für Features, die sich nicht auf die Sicherheit** im Microsoft Managed Desktop-Verwaltungsportal beziehen. |
+|Microsoft Managed Desktop Security Manager |Wenn Sie einem Benutzer zugewiesen ist, erteilt diese Rolle dem Administrator **Lese-und Schreibberechtigungen nur für sicherheitsbezogene Funktionen** im Verwaltungsportal von Microsoft Managed Desktop.   |
 
 > [!NOTE]
 > Zu den Sicherheitsfeatures zählen sicherheitsbezogene Kommunikation, Verwaltung von sicherheitskontakten, Verwaltung sicherheitsbezogener Supportanforderungen und Zugriff auf sicherheitsbezogene Berichte. 
