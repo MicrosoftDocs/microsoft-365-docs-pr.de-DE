@@ -113,8 +113,6 @@
               href: azure-integration.md
             - name: Azure ExpressRoute
               href: azure-expressroute.md
-            - name: Funktionsweise der modernen Authentifizierung in Office 2013- und Office 2016-Client-Apps
-              href: modern-auth-for-office-2013-and-2016.md
         - name: Client-App-Support
           items:
             - name: Zertifikatbasierte Authentifizierung
@@ -137,6 +135,8 @@
               href: configure-skype-for-business-for-hybrid-modern-authentication.md
             - name: Entfernen oder Deaktivieren von Skype for Business und Exchange
               href: remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md
+            - name: 'Office 2013, Office 2016 und Office 2019 Client-Apps'
+              href: modern-auth-for-office-2013-and-2016.md
         - name: Planen Sie Ihre Upgrades
           href: plan-upgrade-previous-versions-office.md
           items:
