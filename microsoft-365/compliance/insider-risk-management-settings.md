@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 5a1bd06e76564750c7b080182ac8ab93fc8d60de
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: c98c0081d95da19e79db03dc4b4fdb823a14e42c
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341223"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377270"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Erste Schritte mit Einstellungen für das Insider Risikomanagement
 
@@ -300,14 +300,14 @@ Kunden mit Microsoft 365-Abonnements, die das Insider Risikomanagement umfassen,
 
 Die folgenden Power-Automatisierungs Vorlagen werden für Kunden bereitgestellt, um die Prozessautomatisierung für Benutzer und Fälle des Insider Risikomanagements zu unterstützen:
 
-- **Benutzer benachrichtigen, wenn Sie einer Insider Risiko Richtlinie hinzugefügt**werden: Diese Vorlage richtet sich an Organisationen mit internen Richtlinien, Datenschutz oder behördlichen Anforderungen, die Benutzern mitgeteilt werden müssen, wenn Sie den Richtlinien für Insider Risk Management unterliegen. Wenn dieser Datenfluss für einen Benutzer auf der Seite Benutzer konfiguriert und ausgewählt ist, werden Benutzern und deren Managern eine e-Mail-Nachricht gesendet, wenn der Benutzer einer Richtlinie für Insider-Risikomanagement hinzugefügt wird. Diese Vorlage unterstützt auch das Aktualisieren einer SharePoint-Liste, die auf einer SharePoint-Website gehostet wird, um Details zur Benachrichtigung wie Datum/Uhrzeit und Nachrichtenempfänger nachzuverfolgen. Power Automation Flows mit dieser Vorlage stehen im **benutzerdashboard**zur Verfügung.
-- **Fordern Sie Informationen von HR oder Unternehmen über einen Benutzer in einem Insider Risikofall**an: Wenn Sie in einem Fall handeln, müssen Insider Risikoanalysten und Ermittler möglicherweise mit HR oder anderen Beteiligten zusammenarbeiten, um den Kontext der Fall Aktivitäten zu verstehen. Wenn dieser Ablauf konfiguriert und für einen Fall ausgewählt ist, senden Analysten und Prüfer eine e-Mail-Nachricht an die für diesen Ablauf konfigurierten HR-und Unternehmens Beteiligten. Jedem Empfänger wird eine Nachricht mit vorkonfigurierten oder anpassbaren Antwortoptionen gesendet. Wenn Empfänger eine Antwortoption auswählen, wird die Antwort als Fall Hinweis aufgezeichnet und enthält Informationen zu Empfänger-und Datum/Uhrzeit. Power Automation Flows mit dieser Vorlage stehen im **Cases-Dashboard**zur Verfügung.
+- **Benutzer benachrichtigen, wenn Sie einer Insider Risiko Richtlinie hinzugefügt**werden: Diese Vorlage richtet sich an Organisationen mit internen Richtlinien, Datenschutz oder behördlichen Anforderungen, die Benutzern mitgeteilt werden müssen, wenn Sie den Richtlinien für Insider Risk Management unterliegen. Wenn dieser Datenfluss für einen Benutzer auf der Seite Benutzer konfiguriert und ausgewählt ist, werden Benutzern und deren Managern eine e-Mail-Nachricht gesendet, wenn der Benutzer einer Richtlinie für Insider-Risikomanagement hinzugefügt wird. Diese Vorlage unterstützt auch das Aktualisieren einer SharePoint-Liste, die auf einer SharePoint-Website gehostet wird, um Details zur Benachrichtigung wie Datum/Uhrzeit und Nachrichtenempfänger nachzuverfolgen. Wenn Sie die Benutzer in den **Datenschutzeinstellungen**anonymisieren möchten, funktionieren die aus dieser Vorlage erstellten Flows nicht wie beabsichtigt, damit der Benutzerdaten Schutz beibehalten wird. Power Automation Flows mit dieser Vorlage stehen im **benutzerdashboard**zur Verfügung.
+- **Fordern Sie Informationen von HR oder Unternehmen über einen Benutzer in einem Insider Risikofall**an: Wenn Sie in einem Fall handeln, müssen Insider Risikoanalysten und Ermittler möglicherweise mit HR oder anderen Beteiligten zusammenarbeiten, um den Kontext der Fall Aktivitäten zu verstehen. Wenn dieser Ablauf konfiguriert und für einen Fall ausgewählt ist, senden Analysten und Prüfer eine e-Mail-Nachricht an die für diesen Ablauf konfigurierten HR-und Unternehmens Beteiligten. Jedem Empfänger wird eine Nachricht mit vorkonfigurierten oder anpassbaren Antwortoptionen gesendet. Wenn Empfänger eine Antwortoption auswählen, wird die Antwort als Fall Hinweis aufgezeichnet und enthält Informationen zu Empfänger-und Datum/Uhrzeit. Wenn Sie die Benutzer in den **Datenschutzeinstellungen**anonymisieren möchten, funktionieren die aus dieser Vorlage erstellten Flows nicht wie beabsichtigt, damit der Benutzerdaten Schutz beibehalten wird. Power Automation Flows mit dieser Vorlage stehen im **Cases-Dashboard**zur Verfügung.
 - Benachrichtigungs **-Manager, wenn ein Benutzer eine Insider Risiko Warnung hat**: einige Organisationen benötigen möglicherweise eine sofortige Verwaltungs Benachrichtigung, wenn ein Benutzer über eine Warnung beim Insider Risikomanagement verfügt. Wenn dieser Ablauf konfiguriert und ausgewählt ist, wird dem Manager für den Fall Benutzer eine e-Mail-Nachricht mit den folgenden Informationen zu allen Fall Benachrichtigungen gesendet: 
     - Zutreffende Richtlinie für die Warnung
     - Datum/Uhrzeit der Warnung
     - Schweregrad der Warnung
 
-    Der Flow aktualisiert automatisch die fallnotizen, dass die Nachricht gesendet wurde und dass der Fluss aktiviert wurde. Power Automation Flows mit dieser Vorlage stehen im **Cases-Dashboard**zur Verfügung.
+    Der Flow aktualisiert automatisch die fallnotizen, dass die Nachricht gesendet wurde und dass der Fluss aktiviert wurde. Wenn Sie die Benutzer in den **Datenschutzeinstellungen**anonymisieren möchten, funktionieren die aus dieser Vorlage erstellten Flows nicht wie beabsichtigt, damit der Benutzerdaten Schutz beibehalten wird. Power Automation Flows mit dieser Vorlage stehen im **Cases-Dashboard**zur Verfügung.
 
 - **Hinzufügen einer Kalender Erinnerung zur Nachverfolgung bei einem Insider Risikofall**: mit dieser Vorlage können Risikoprüfer und Analysten Kalendererinnerungen für Fälle zu Ihrem Office 365 Outlook-Kalender hinzufügen. Durch diesen Fluss wird verhindert, dass Benutzer den Workflow für den Insider Risikomanagement beenden oder aus dem Prozess für die Verarbeitung von Fällen und der Behandlung von veralteten Warnungen wechseln. Wenn dieser Fluss konfiguriert und ausgewählt ist, wird Office 365 Outlook-Kalender eine Erinnerung für den Benutzer hinzugefügt, der den Fluss ausführt. Power Automation Flows mit dieser Vorlage stehen im **Cases-Dashboard**zur Verfügung.
 
