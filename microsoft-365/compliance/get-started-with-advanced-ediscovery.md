@@ -10,18 +10,21 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-aed
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: In diesem Artikel wird beschrieben, wie Sie mit der Verwendung von Advanced eDiscovery in Microsoft 365 beginnen. Nachdem Sie einige kurze Schritte ausgeführt haben, ist das erweiterte eDiscovery-Tooleinsatz fähig. Der erste Schritt besteht darin, einen Fall zu erstellen und dann erweiterte eDiscovery-Funktionen und-Funktionen zu verwenden.
-ms.openlocfilehash: 47647c2f4f944812fa066be272a39ded77099c75
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: 64c8681a47c21a7a6bfa9d67677405f74d75a96f
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405419"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398494"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>Erste Schritte mit Advanced eDiscovery
 

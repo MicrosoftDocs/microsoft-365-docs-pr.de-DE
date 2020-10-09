@@ -17,12 +17,12 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: Diese Zielseite enthält Links und Planungsinformationen für Sicherheit und Compliance in Office 365.
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e4eae4dddb90983b811e0856a09dae79af83d226
-ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
+ms.openlocfilehash: 3684506b458ea2d40d3ff8b022bfb9e8154accf3
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45086656"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399034"
 ---
 # <a name="plan-for-security-amp-compliance"></a>Planen der Sicherheits &amp; Konformität
 
@@ -46,7 +46,7 @@ Der Schutz des Zugriffs auf Ihre Microsoft 365-Daten und-Dienste ist für die Ve
   
 - [Zugriffsschutz für Daten und Dienste in Office 365](protect-access-to-data-and-services.md)
     
-- [Sichere E-Mail-Richtlinien und Konfigurationen](https://docs.microsoft.com/microsoft-365/enterprise/secure-email-recommended-policies)
+- [Sichere E-Mail-Richtlinien und Konfigurationen](../security/office-365-security/secure-email-recommended-policies.md)
     
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=55032)
   
@@ -70,9 +70,9 @@ Das Security &amp; Compliance Center bietet Ihnen eine einzige Ansicht der Steue
 
 Verwenden Sie diese empfohlene Konfiguration als Ausgangspunkt für Zugriffssicherheitsszenarien auf Unternehmensniveau oder auf fortschrittlichem Niveau.
   
-- [Sichere E-Mail-Richtlinien und Konfigurationen](https://docs.microsoft.com/microsoft-365/enterprise/secure-email-recommended-policies)
+- [Sichere E-Mail-Richtlinien und Konfigurationen](../security/office-365-security/secure-email-recommended-policies.md)
     
-- [Contoso in der Microsoft-Cloud](https://aka.ms/cloudarchcontoso)
+- [Contoso in der Microsoft-Cloud](../enterprise/contoso-case-study.md)
     
 ## <a name="microsoft-365-admin-centers-and-dashboards"></a>Microsoft 365 Admin-Center und Dashboards
 

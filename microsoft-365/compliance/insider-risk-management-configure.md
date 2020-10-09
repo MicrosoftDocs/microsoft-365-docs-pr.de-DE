@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 4fcfec889b4b5005a172037a0df674b45a9e7281
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: 707f2b260ff9d4a452cdb65d75a1a8fe6a13af3f
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341433"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399170"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Erste Schritte mit dem Insider-Risikomanagement
 
@@ -31,7 +31,7 @@ Verwenden Sie Richtlinien für Insider Risk Management, um riskante Aktivitäten
 
 Weitere Informationen dazu, wie Sie mit Insider Risikorichtlinien Risiken in Ihrer Organisation verwalten können, finden Sie unter [Insider Risk Management in Microsoft 365](insider-risk-management.md).
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 Bevor Sie mit dem Insider Risk Management beginnen, sollten Sie Ihr [Microsoft 365-Abonnement](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) und alle Add-ons bestätigen. Für den Zugriff auf und die Verwendung des Insider Risikomanagements muss Ihre Organisation über eines der folgenden Abonnements oder Add-ons verfügen:
 
@@ -47,6 +47,9 @@ Benutzern, die in Richtlinien für das Insider Risikomanagement enthalten sind, 
 Wenn Sie keinen vorhandenen Microsoft 365 Enterprise E5-Plan haben und das Insider Risk Management testen möchten, können Sie Microsoft 365 zu Ihrem vorhandenen Abonnement [Hinzufügen](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) oder [sich für eine Testversion](https://www.microsoft.com/microsoft-365/enterprise) von Microsoft 365 Enterprise E5 registrieren.
 
 ## <a name="step-1-enable-permissions-for-insider-risk-management"></a>Schritt 1: Aktivieren von Berechtigungen für das Insider Risikomanagement
+
+>[!Important]
+>Nachdem Sie Ihre Rollengruppen konfiguriert haben, kann es bis zu 30 Minuten dauern, bis die Berechtigungen der Rollengruppe auf zugewiesene Benutzer in Ihrer Organisation angewendet werden.
 
 Es gibt vier Rollengruppen, die zum Konfigurieren von Berechtigungen zum Verwalten von Funktionen für das Insider Risikomanagement verwendet werden. Um diese Konfigurationsschritte fortzusetzen, müssen ihre mandantenadministratoren Sie zunächst der Administratorrollengruppe " **Insider Risk Management** **" oder "Insider Risk Management"** zuweisen. Für den Zugriff auf und die Verwaltung von Funktionen für das Insider-Risikomanagement nach der Erstkonfiguration müssen Benutzer Mitglied mindestens einer Rollengruppe für das Risikomanagement für Insider sein.
 

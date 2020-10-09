@@ -20,18 +20,18 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 262cb34bbe7f2923ecf8dce88208c70ba0b5b7f7
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: 20f1a0cc38338bb054618726b5a399d237a979d2
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341412"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399500"
 ---
 # <a name="get-started-with-communication-compliance"></a>Erste Schritte mit der Kommunikationscompliance
 
 Verwenden Sie Richtlinien für die Kommunikations Konformität, um die Benutzerkommunikation für die Prüfung durch interne oder externe Bearbeiter zu identifizieren. Weitere Informationen zur Überwachung der Kommunikation in Ihrer Organisation mithilfe von Kommunikationsrichtlinien finden Sie unter [Communication Compliance Policies in Microsoft 365](communication-compliance.md). Wenn Sie überprüfen möchten, wie Contoso eine Kommunikations Konformitätsrichtlinie für die Überwachung anstößiger Sprachen in Microsoft Teams, Exchange Online und jammern von Kommunikation schnell konfiguriert hat, lesen Sie diese [Fallstudie](communication-compliance-case-study.md).
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 Bevor Sie mit der Kommunikation Compliance beginnen, sollten Sie Ihr [Microsoft 365-Abonnement](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) und alle Add-ons bestätigen. Für den Zugriff auf und die Verwendung der Kommunikations Konformität muss Ihre Organisation über eines der folgenden Abonnements oder Add-ons verfügen:
 
@@ -57,7 +57,7 @@ Wenn Sie keinen Office 365 Enterprise E5-Plan haben und das Insider Risk Managem
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>Schritt 1 (erforderlich): Aktivieren von Berechtigungen für die Kommunikations Kompatibilität
 
 >[!Important]
->Standardmäßig haben globale Administratoren keinen Zugriff auf Features für die Kommunikations Kompatibilität. Die in diesem Schritt zugewiesenen Rollen sind erforderlich, bevor auf Kommunikations Kompatibilitätsfeatures zugegriffen werden kann.
+>Standardmäßig haben globale Administratoren keinen Zugriff auf Features für die Kommunikations Kompatibilität. Die in diesem Schritt zugewiesenen Rollen sind erforderlich, bevor auf Kommunikations Kompatibilitätsfeatures zugegriffen werden kann. Nachdem Sie Ihre Rollengruppen konfiguriert haben, kann es bis zu 30 Minuten dauern, bis die Berechtigungen der Rollengruppe auf zugewiesene Benutzer in Ihrer Organisation angewendet werden.
 
 Es gibt fünf Rollengruppen, die zum Konfigurieren von Berechtigungen zum Verwalten von Kommunikations Kompatibilitätsfeatures verwendet werden. Um die **Kommunikation Compliance** als Menüoption im Microsoft 365 Compliance Center zur Verfügung zu stellen und diese Konfigurationsschritte fortzusetzen, müssen Sie den Administratorrollengruppen " *Communication Compliance* " oder " *Communication Compliance"* zugewiesen sein. Für den Zugriff auf und die Verwaltung von Kommunikations Kompatibilitätsfeatures nach der anfänglichen Konfiguration müssen Benutzer Mitglied mindestens einer Rollengruppe für die Kommunikations Kompatibilität sein.
 

@@ -10,19 +10,22 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-aed
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: Dieser Artikel gibt eine Übersicht über Advanced eDiscovery in Microsoft 365, ein Tool für interne und externe Ermittlungen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5adf2a62aad5e7da476c2713fa18f9e8b6ab9329
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: d8a43d8a7f0b1803b374839d8ed0d7d82c6adace
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024787"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399054"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Übersicht über die Advanced eDiscovery-Lösung in Microsoft 365
 

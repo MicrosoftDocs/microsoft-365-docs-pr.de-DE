@@ -18,16 +18,16 @@ ms.collection:
 - M365-security-compliance
 description: Unabhängig davon, ob neue Lösungen zum Compliance Center hinzugefügt werden, vorhandene Funktionen auf der Grundlage Ihres Feedbacks aktualisiert werden oder eine aktualisierte Dokumentation bereitgestellt wird, hilft Ihnen Microsoft 365, die ständig wechselnde Compliance-Landschaft zu überwachen. Finden Sie heraus, was wir diesen Monat vorhaben.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 7d5e1bb67d6adc1b3c25aea8f468a23ed5c1019a
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: c33e136be55ea60f1e5954d4713b219045b1f0eb
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132035"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398526"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Neuerungen in Microsoft 365 Compliance
 
-Unabhängig davon, ob neue Lösungen zum [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md)hinzugefügt, vorhandene Features auf der Grundlage Ihres Feedbacks aktualisiert werden oder eine aktualisierte Dokumentation bereitgestellt wird, hilft Ihnen Microsoft 365, die ständig wechselnde Compliance-Landschaft zu überwachen. Sehen Sie sich die folgenden Informationen an, um zu erfahren, was in der Microsoft 365-Compliance heute neu ist. 
+Unabhängig davon, ob Sie dem [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md)neue Lösungen hinzufügen, vorhandene Features auf der Grundlage Ihres Feedbacks aktualisieren oder eine aktualisierte und aktualisierte Dokumentation bereitstellen, hilft Ihnen Microsoft 365, die ständig wechselnde Compliance-Landschaft zu überwachen. Sehen Sie sich die folgenden Informationen an, um zu erfahren, was in der Microsoft 365-Compliance heute neu ist. 
 
 > [!NOTE]
 > Einige Compliance-Features werden mit unterschiedlichen Geschwindigkeiten für unsere Kunden bereit gesetzt. Wenn Sie noch kein Feature sehen, versuchen Sie, sich selbst zu [Gezieltes Release](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365) hinzuzufügen.
@@ -36,6 +36,63 @@ Unabhängig davon, ob neue Lösungen zum [Microsoft 365 Compliance Center](micro
 > [!TIP]
 > Interessieren Sie sich dafür, was in anderen Admin Centers geschieht? Dann lesen Sie die folgenden Artikel:<br>[Neuerungen im Microsoft 365 Admin Center](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Aktive Websites im SharePoint Online Admin Center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Neues in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
 Besuchen Sie die [Microsoft 365-Roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap), um sich über Features von Microsoft 365 zu informieren, die eingeführt wurden, bereitgestellt werden, sich in der Entwicklung befinden, eingestellt oder zuvor veröffentlicht wurden.
+
+## <a name="august-2020"></a>August 2020
+
+### <a name="spotlight-insider-risk-and-communication-compliance-updates"></a>Spotlight: Compliance-Updates für Insider Risiken und-Kommunikation
+
+Einige neue und verbesserte Features haben die öffentliche Vorschau in diesem Monat erreicht:
+
+**Insider-Risikomanagement**
+
+- Schauen Sie sich unsere sechs neuen [Richtlinienvorlagen](insider-risk-management-policies.md#policy-templates)an:
+    - Datenverluste nach Prioritäts Benutzern
+    - Datenverluste durch verärgerte Benutzer
+    - Allgemeine Sicherheitsrichtlinienverletzungen
+    - Sicherheitsrichtlinienverletzungen durch Benutzer, die abgemeldet werden
+    - Sicherheitsrichtlinienverletzungen nach Prioritäts Benutzern
+    - Sicherheitsrichtlinienverletzungen durch verärgerte Benutzer
+
+- Die Integration mit [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) ermöglicht das Importieren und Filtern von Microsoft Defender ATP-Warnungen für Aktivitäten, die durch Richtlinien erkannt werden, die aus den neuen Richtlinienvorlagen für Sicherheitsverstöße ermittelt wurden. Es gibt auch eine zugehörige [Einstellung für Insider Risiken](insider-risk-management-settings.md#microsoft-defender-advanced-threat-protection-preview) , in der Sie Sicherheitswarnungen in das Insider Risikomanagement basierend auf dem Status "Microsoft Defender ATP Alert Triage" importieren können.
+
+    > [!NOTE]
+    > Um die ATP-Integration von Microsoft Defender (einschließlich der neuen Vorlagen für Sicherheitsrichtlinienverletzungen) nutzen zu können, müssen Sie Microsoft Defender ATP in Ihrer Organisation konfigurieren lassen. Sie müssen auch Microsoft Defender ATP for Insider Risk Management Integration aktivieren, indem Sie [Erweiterte Features in Microsoft Defender ATP konfigurieren](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center).
+ 
+- Passen Sie Indikator Schwellenwerte beim [Erstellen einer Richtlinie](insider-risk-management-policies.md#create-a-new-policy)an.
+- Einrichten von [Prioritäts Benutzergruppen](insider-risk-management-settings.md#priority-user-groups-preview) zum Definieren von Benutzern in Ihrer Organisation, deren Aktivität anhand von Faktoren wie Position, Zugriffsebene auf vertrauliche Informationen oder Risikoverlauf genauer zu Untersuchung erforderlich ist.
+- Verwenden Sie Office 365 Verwaltungs Aktivitäts-APIs, um [Insider Risiko-Warnungsdetails](insider-risk-management-settings.md#export-alerts-preview) in andere Anwendungen zu exportieren, die Ihre Organisation zum Verwalten oder Aggregieren von Insider Risikodaten verwenden kann.
+- Mithilfe neuer [Domäneneinstellungen](insider-risk-management-settings.md#domains-preview) können Sie Risikoebenen für Aktivitäten in bestimmten Domänen definieren und steuern.
+
+**Kommunikationscompliance**
+
+- Wenn Sie [Nachrichten in einer Warnung überprüfen](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action), können Sie jetzt unangemessene Nachrichten in Microsoft Teams-Kanälen, 1:1 und Gruppenchats entfernen. Entfernte Nachrichten und Inhalte werden durch einen richtlinientipp ersetzt, der erklärt, dass er aufgrund von vertraulichen Inhalten entfernt wurde.
+- Neue [Kommunikationsrollen](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance) (diese werden auch in den neuen Kommunikationsrichtlinien-Rollengruppen enthalten sein, die im September veröffentlicht werden).
+- Neue Kompatibilitätseinstellungen für Kommunikation mit Einstellungen für [Datenschutz](communication-compliance-feature-reference.md#privacy-preview) -und [Benachrichtigungsvorlagen](communication-compliance-feature-reference.md#notice-templates).
+- Neue [Klassifizierungen](communication-compliance-feature-reference.md#classifiers) zur Unterstützung der Erkennung von Erwachsenen, rassigen und blutigen Bildern.
+- Die neue Meldung "Pattern detected", die beim über [Prüfen von Nachrichten in einer Warnung](communication-compliance-investigate-remediate.md#step-2-examine-the-message-details) angezeigt wird, informiert Sie über wiederkehrende Instanzen desselben Verhaltens durch einen Benutzer.
+
+### <a name="sensitivity-labels"></a>Vertraulichkeitsbezeichnungen
+
+- Für US Government-Mandanten (GCC, GCC-HC, und DoD) werden Vertraulichkeitsbezeichnungen derzeit nur für den Azure Information Protection-Client für einheitliche Bezeichnungen und den Scanner unterstützt. Weitere Informationen finden Sie in der [Dienstbeschreibung des Azure Information Protection Premium Government ](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
+- Sie können nun [Security & Compliance Center PowerShell verwenden](create-sensitivity-labels.md#use-powershell-for-sensitivity-labels-and-their-policies) , um alle Einstellungen zu erstellen und zu konfigurieren, die in Ihrem Bezeichnungs-Admin Center angezeigt werden. Dies bedeutet, dass Sie zusätzlich zur Verwendung von PowerShell für Einstellungen, die in den Bezeichnungs-Admin Center nicht verfügbar sind, jetzt die Erstellung und Verwaltung von Vertraulichkeits Bezeichnungen und Richtlinien für die Sensitivitäts Kennzeichnung vollständig Skriptieren können.
+
+### <a name="records-management-content-overhaul"></a>Datensatzverwaltung: Überarbeitung der Inhalte
+
+Neue Dokumente für Bereitstellungsschritte, kennzeichnen von Inhalten als Datensätzen und Aufzeichnen der Versionsverwaltung:
+
+- [Erste Schritte mit der Datensatzverwaltung](get-started-with-records-management.md)
+- [Datensätze mithilfe von Aufbewahrungsbezeichnungen deklarieren](declare-records.md)
+- [Versionsverwaltung zur Aktualisierung von Datensätzen verwenden, die in Microsoft Office SharePoint Online oder OneDrive gespeichert sind](record-versioning.md)
+
+### <a name="retention-labels--policies"></a>Aufbewahrungs Bezeichnungen & Richtlinien
+
+Aufbewahrungs bezogene Administratoraktivitäten werden jetzt aufgezeichnet und können im Überwachungsprotokoll überprüft werden. Die vollständige Liste finden Sie unter [ Aufbewahrungsrichtlinie und Aufbewahrungsbezeichnungsaktivitäten](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities).
+
+### <a name="advanced-ediscovery"></a>Advanced eDiscovery
+
+- Wenn Sie einer [Überprüfungsgruppe eine Sammlung hinzufügen](add-data-to-review-set.md#define-options-to-scope-your-collection-for-review), können Sie jetzt moderne Anlagen (auch "Cloud Attachments" genannt) und SharePoint-Dokumentversionen einschließen.
+- Neue [direkte Download Exporterfahrung](export-documents-from-review-set.md), wodurch die Verwendung des Azure Storage Explorers zum Herunterladen von Groß-/Kleinschreibung nicht mehr erforderlich ist.
+
 
 ## <a name="july-2020"></a>Juli 2020
 
@@ -269,7 +326,7 @@ Hier ist eine Zusammenfassung der neuen Lösungen, die Sie vorfinden. Behalten S
 |Lösungskatalog (Vorschau) <br/>|Der Lösungskatalog ist Ihre zentrale Anlaufstelle, um unsere Compliance- und Risikomanagementlösungen zu erkunden, sich darüber zu informieren und rasch einzusteigen. Der Katalog gliedert sich in drei Compliancekategorien, von denen jede Details zu den Lösungen enthält, die diese Kategorie ausmachen. Zu den Kategorien zählen Informationsschutz und Governance, Insider-Risikomanagement sowie Entdeckung und Reaktion <br/>|[Übersicht über den Lösungskatalog (Vorschau)](microsoft-365-solution-catalog.md)|
 |Kommunikationscompliance (Vorschau) <br/>|Die Kommunikationcompliance ist Bestandteil der neuen Kategorie "Insider-Risikomanagement", die Ihnen hilft, Kommunikationsrisiken zu minimieren, indem Sie unzulässige Nachrichten in Ihrer Organisation erkennen und erfassen sowie Abhilfemaßnahmen treffen. Die Lösung erweitert die Möglichkeiten von Aufsichtsrichtlinien in Office 365 durch die Einführung verschiedener neuer Verbesserungen wie intelligenten Vorlagen, flexiblen Abhilfe-Workflows und umsetzbaren Erkenntnissen. <br/>|[Kommunikationscompliance in Microsoft 365 (Vorschau)](communication-compliance.md)|
 |Datenklassifizierung (Vorschau) <br/>|Unsere neue Seite „Datenklassifizierung“ enthält aussagekräftige Erkenntnisse und Tools, die Ihnen bei der Ermittelung und Auswertung helfen, wie vertrauliche Informationen und Bezeichnungen (Aufbewahrung und Vertraulichkeit) in Inhalten im gesamten Unternehmen verwendet werden. Überprüfen Sie Inhalte, die vertrauliche Informationen enthalten oder auf die Bezeichnungen angewendet wurden, untersuchen Sie die Bezeichnungsaktivitäten an Microsoft 365-Speicherorten, erstellen Sie benutzerdefinierte Typen vertraulicher Informationen und vieles mehr.<br/>|[Übersicht über die Datenklassifizierung (Vorschau)](data-classification-overview.md)|
-|Trainierbare Klassifizierer (Vorschau) <br/>|Dieses leistungsstarke neue Tool verwendet unser Machine Learning-Modul, um Kategorien von Inhalten in Ihrer Organisation zu identifizieren, z. B. regulatorische Dokumente oder Mitarbeiterverträge. Nach der Erstellung können Klassifizierer in mehreren Compliancelösungen verwendet werden, um verwandte Inhalte zu erkennen und zu klassifizieren, zu schützen, aufzubewahren und mehr.<br/>|[Informationen zu Schulungs Klassifizierern (Vorschau)](classifier-learn-about.md)|
+|Trainierbare Klassifizierer (Vorschau) <br/>|Dieses leistungsstarke neue Tool verwendet unser Machine Learning-Modul, um Kategorien von Inhalten in Ihrer Organisation zu identifizieren, z. B. regulatorische Dokumente oder Mitarbeiterverträge. Nach der Erstellung können Klassifizierer in mehreren Compliancelösungen verwendet werden, um verwandte Inhalte zu erkennen und zu klassifizieren, zu schützen, aufzubewahren und mehr.<br/>|[Weitere Informationen zu trainierbaren Klassifizierern (Vorschau)](classifier-learn-about.md)|
 
 #### <a name="updated-compliance-solutions"></a>Aktualisierte Compliancelösungen
 
@@ -313,9 +370,3 @@ Wenn Sie die Verschlüsselung für eine Vertraulichkeitsbezeichnung konfiguriere
 - Wenn die Bezeichnung auf **Word-, PowerPoint- und Excel-Dateien** angewendet wird, werden die Benutzer aufgefordert, bestimmten Benutzern und Gruppen Zugriffsberechtigungen zuzuweisen.
 
 Wechseln Sie zu [Einschränken des Zugriffs auf Inhalte mithilfe von Sensitivitäts Bezeichnungen zur Verschlüsselung anwenden](encryption-sensitivity-labels.md#let-users-assign-permissions) , um weitere Informationen zu erhalten.
-
-## <a name="august-2019"></a>August 2019
-
-### <a name="update-to-data-investigations"></a>Aktualisierung von Datenuntersuchungen
-
-Wenn Sie eine Datenuntersuchung durchführen, können Sie jetzt Elemente von den ursprünglichen Speicherorten löschen. Dies bedeutet, dass Sie Elemente aus Exchange-Postfächern, SharePoint-Websites und OneDrive-Konten in Ihrer ganzen Organisation löschen können. Da Sie die Elemente als Beweis gesammelt haben, wurden Kopien davon im Beweissatz aufbewahrt, die Sie weiter untersuchen oder einfach als Referenz behalten können. [Weitere Informationen](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) Wenn Sie eine Daten Untersuchung durchführen, können Sie jetzt Elemente aus ihren ursprünglichen Speicherorten löschen. Dies bedeutet, dass Sie Elemente aus Exchange-Postfächern, SharePoint-Websites und OneDrive-Konten in Ihrer ganzen Organisation löschen können. Da Sie die Elemente als Beweis gesammelt haben, wurden Kopien davon im Beweissatz aufbewahrt, die Sie weiter untersuchen oder einfach als Referenz behalten können. Wechseln Sie zu [manage a Data Spilling Incident in Microsoft 365](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) , um weitere Informationen zu erhalten. 

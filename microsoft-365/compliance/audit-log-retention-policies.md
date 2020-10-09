@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Aufbewahrungsrichtlinien für Überwachungsprotokolle sind Bestandteil der neuen erweiterten Überwachungsfunktionen in Microsoft 365. Mit einer Aufbewahrungsrichtlinie für Überwachungsprotokolle können Sie festlegen, wie lange Überwachungsprotokolle in Ihrer Organisation aufbewahrt werden sollen.
-ms.openlocfilehash: 62d6fa47d19eaa9ae12e84879b5bf19a81afe8ae
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: dba14d5a4132bc9c883c531ceeb83a2a8ff3c6cd
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199539"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398726"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Verwalten von Aufbewahrungsrichtlinien für Überwachungsprotokolle
 
@@ -82,8 +82,6 @@ Die erweiterte Überwachung in Microsoft 365 stellt eine Standardaufbewahrungsri
    6. **Priorität:** Dieser Wert bestimmt die Reihenfolge, in der Aufbewahrungsrichtlinien für Überwachungsprotokolle in Ihrer Organisation angewandt werden. Ein höherer Wert weist auf eine höhere Priorität hin.  So würde beispielsweise eine Richtlinie mit einem Prioritätswert von **5** Vorrang vor einer Richtlinie mit einem Prioritätswert von **0**haben. Wie zuvor erläutert, hat jede benutzerdefinierte Aufbewahrungsrichtlinie für Überwachungsprotokolle Vorrang vor der Standardrichtlinie für Ihre Organisation.
 
 4. Klicken Sie auf **Speichern**, um die neue Aufbewahrungsrichtlinie für Überwachungsprotokolle zu erstellen.
-
-Die neue Überwachungs-Aufbewahrungsrichtlinie wird auf der Registerkarte **Überwachungs-Aufbewahrungsrichtlinien** aufgelistet.
 
 ## <a name="create-an-audit-log-retention-policy-in-powershell"></a>Erstellen einer Aufbewahrungsrichtlinie für Überwachungsprotokolle in PowerShell
 

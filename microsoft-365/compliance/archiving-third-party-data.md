@@ -13,6 +13,8 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- m365solution-mig
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
@@ -20,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie, wie Sie drittanbieterdaten aus Social Media-Plattformen, Instant Messaging-Plattformen und Dokument Zusammenarbeits Plattformen zu Microsoft 365-Postfächern importieren.
-ms.openlocfilehash: a70747e9268b075f2c46072009b76f8071492fc7
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 7ce515e99e4ddded1cfeccd346bd33a445fe17d7
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200052"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398536"
 ---
 # <a name="archive-third-party-data"></a>Archivieren von Drittanbieterdaten
 
@@ -38,7 +40,7 @@ In der folgenden Tabelle sind die Drittanbieter-Daten-Konnektoren aufgeführt, d
 > [!TIP]
 > Klicken Sie auf den Link in der Spalte **drittanbieterdaten** , um die schrittweisen Anweisungen zum Erstellen eines Connectors für diesen Datentyp zu öffnen.
 
-|Drittanbieterdaten  |Beweissicherungsverfahren|eDiscovery  |Aufbewahrungseinstellungen  |Datensatzverwaltung  |Kommunikationscompliance  |Insider-Risikomanagement  |
+|Drittanbieterdaten  |Beweissicherungsverfahren|eDiscovery  |Aufbewahrungseinstellungen  |Datensatzverwaltung  |Kommunikationsbezogene Compliance  |Insider-Risikomanagement  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
 |[Android <sup>1</sup>](archive-android-archiver-data.md)     |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |[Bei&T Network <sup>1</sup>](archive-att-network-archiver-data.md)     |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
@@ -100,7 +102,7 @@ Sie können eine [Aufbewahrungsrichtlinie](retention.md) auf Benutzerpostfächer
 
 Mit dem Feature für die [Datensatzverwaltung](records-management.md) in Microsoft 365 können Sie drittanbieterdaten als Datensatz deklarieren. Dies kann manuell von Benutzern durchgeführt werden, die eine Aufbewahrungs Bezeichnung anwenden, die drittanbieterdaten in Ihrem Postfach als Datensatz kennzeichnet. Oder Sie können Aufbewahrungs Bezeichnungen automatisch anwenden, indem Sie vertrauliche Informationen, Stichwörter oder Inhaltstypen in drittanbieterdaten identifizieren.
 
-### <a name="communication-compliance"></a>Kommunikationscompliance
+### <a name="communication-compliance"></a>Kommunikationsbezogene Compliance
 
 Sie können die [Kommunikations Konformität](communication-compliance.md) verwenden, um drittanbieterdaten zu überprüfen, um sicherzustellen, dass Sie mit den Datenstandards Ihrer Organisation konform sind. Sie können dies tun, indem Sie Korrekturaktionen für ungeeignete Nachrichten in Ihrer Organisation erkennen, erfassen und ausführen. Beispielsweise können Sie die von Ihnen importierten drittanbieterdaten für anstößige Sprache, vertrauliche Informationen und behördliche Compliance überwachen.
 

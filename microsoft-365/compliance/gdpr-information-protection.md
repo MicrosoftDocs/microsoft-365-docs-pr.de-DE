@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8716af366e2ec75775f3e34cbd121fe14fbb11f1
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 2c9f0a97869f27cbcf5829a15f50bf2905472c28
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416799"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398484"
 ---
 # <a name="information-protection-for-gdpr-with-microsoft-365-capabilities"></a>Schutz von Daten für die DSGVO mit Microsoft 365-Funktionen
 
@@ -50,7 +50,7 @@ Azure Active Directory und andere Funktionen von Microsoft 365 bieten eine umfas
 
 Microsoft bietet eine empfohlene Konfiguration, die Sie als Ausgangspunkt verwenden können:
 
-- [Konfigurationen für den Identitäts- und Gerätezugriff](../enterprise/microsoft-365-policies-configurations.md): Empfohlene Richtlinienkonfigurationen, um drei Ebenen von Schutz zu erzielen (Baseline, vertraulich und stark reguliert). Dieser Leitfaden umfasst empfohlene Richtlinien für Exchange Online und SharePoint Online (einschließlich OneDrive for Business).
+- [Konfigurationen für den Identitäts- und Gerätezugriff](../security/office-365-security/microsoft-365-policies-configurations.md): Empfohlene Richtlinienkonfigurationen, um drei Ebenen von Schutz zu erzielen (Baseline, vertraulich und stark reguliert). Dieser Leitfaden umfasst empfohlene Richtlinien für Exchange Online und SharePoint Online (einschließlich OneDrive for Business).
 - [Sicherheitsanweisungen für politische Kampagnen, gemeinnützige Unternehmen und andere agile Organisationen](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o): Dies umfasst dieselbe Gruppe von Richtlinien, bietet jedoch mehr Führung für BYOD-Geräte und B2B-Konten.
 
 ## <a name="threat-protection"></a>Bedrohungsschutz
