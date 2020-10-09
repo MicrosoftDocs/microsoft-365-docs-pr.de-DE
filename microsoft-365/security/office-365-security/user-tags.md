@@ -15,18 +15,23 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie bestimmte Benutzergruppen mit Benutzer Tags in Office 365 ATP-Plan 2 identifiziert werden. Die Tag-Filterung ist für Warnungen, Berichte und Untersuchungen in Office 365 ATP verfügbar, um die getaggten Benutzer schnell zu identifizieren.
-ms.openlocfilehash: 9522499b3861f0f0e44fcbf09896a5c93feed95d
-ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.openlocfilehash: 16e756b95e16e40f4df738e825e842681c67e22c
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48337253"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399385"
 ---
 # <a name="user-tags-in-office-365-atp"></a>Benutzertags in Office 365 ATP
 
-Benutzer Tags sind Bezeichner für bestimmte Benutzergruppen in [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md). [Priority Accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) sind ein Typ von User-Tag. Wenn Ihre Organisation Office 365 ATP-Plan 2 (in Ihrem Abonnement oder als Add-on enthalten) hat, können Sie benutzerdefinierte Benutzer Tags zusätzlich zur Verwendung des Tags Priority Accounts erstellen.
+Benutzer Tags sind Bezeichner für bestimmte Benutzergruppen in [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md). Es gibt zwei Arten von Benutzer Tags:
 
-Nachdem Sie Tags auf bestimmte Benutzer angewendet haben, können Sie diese Tags als Filter in Warnungen, Berichten und Untersuchungen verwenden:
+- **System-Tags**: derzeit ist [Priority Accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) der einzige Typ des System Tags.
+- **Benutzerdefinierte Tags**: Sie erstellen diese Benutzer Tags selbst.
+
+Wenn Ihre Organisation Office 365 ATP-Plan 2 (in Ihrem Abonnement oder als Add-on enthalten) hat, können Sie benutzerdefinierte Benutzer Tags zusätzlich zur Verwendung des Tags Priority Accounts erstellen.
+
+Nachdem Sie System Tags oder benutzerdefinierte Tags auf Benutzer angewendet haben, können Sie diese Tags als Filter in Warnungen, Berichten und Untersuchungen verwenden:
 
 - [Warnungen im Security & Compliance Center](alerts.md)
 - [Threat Explorer und Echtzeiterkennung](threat-explorer.md)
@@ -39,9 +44,11 @@ In diesem Artikel wird erklärt, wie Sie Benutzer Tags im Security & Compliance 
 
 - Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Wenn Sie direkt zur Seite **Benutzer Tags** wechseln möchten, öffnen Sie <https://protection.office.com/userTags> .
 
-- Um Benutzer Tags zu erstellen, zu ändern oder zu entfernen, müssen Sie Mitglied der Rollengruppen " **Organisationsverwaltung** " oder " **Sicherheits Administrator** " im Security & Compliance Center sein. Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- Zum Erstellen, ändern oder entfernen **benutzerdefinierter Benutzer Tags**müssen Sie Mitglied der Rollengruppen " **Organisationsverwaltung** " oder " **Sicherheits Administrator** " im Security & Compliance Center sein. Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-- Sie können auch Prioritäts Konten im Microsoft 365 Admin Center verwalten und überwachen. Anweisungen finden Sie unter [Verwalten und Überwachen von Prioritäts Konten](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts).
+- Zum Konfigurieren von Prioritäts Konten (System-Tags) müssen Sie ein [globaler Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) oder ein [Exchange-Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)sein.
+
+  Sie können auch Prioritäts Konten im Microsoft 365 Admin Center verwalten und überwachen. Anweisungen finden Sie unter [Verwalten und Überwachen von Prioritäts Konten](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts).
 
 ## <a name="use-the-security-center-to-create-user-tags"></a>Erstellen von Benutzer Tags mithilfe des Sicherheitscenters
 

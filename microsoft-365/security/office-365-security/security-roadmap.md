@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: 'Die wichtigsten Empfehlungen aus dem Cyber-Team von Microsoft für die Implementierung von Sicherheitsfunktionen zum Schutz Ihrer Microsoft 365-Umgebung. '
-ms.openlocfilehash: 9bdddbbfbb20900a4645d2e17cf298ed018f4c6d
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: aae103b93409b2f7fee635b832fce8f10c3d9437
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197429"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399409"
 ---
 # <a name="security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>Security Roadmap – die wichtigsten Prioritäten für die ersten 30 Tage, 90 Tage und darüber hinaus
 
@@ -82,7 +82,7 @@ Die folgenden Maßnahmen erfordern etwas mehr Zeit für Planung und Implementier
 |---|---|
 |Sicherheitsverwaltung|* Check Secure Score für empfohlene Aktionen für Ihre Umgebung ( [https://securescore.office.com](https://securescore.office.com) ).  <br/>  * Weiterhin regelmäßige Überprüfung von Dashboards und Berichten im Microsoft 365 Security Center, in der Cloud-App-Sicherheit und in Siem-Tools. <br/> * Suchen und Implementieren von Softwareupdates <br/> * Durchführen von Angriffssimulationen für Spear-Phishing, Kenn Wort Spray und Brute-Force-Kennwortangriffe mithilfe von [Attack Simulator](attack-simulator.md) (im Lieferumfang von [Office 365 Threat Intelligence](office-365-ti.md)enthalten).  <br/> * Suchen Sie nach Freigabe Risiko, indem Sie die integrierten Berichte in Cloud App Security (auf der Registerkarte untersuchen) überprüfen. <br/> * Überprüfen Sie den Status von [Compliance-Manager](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager) auf Vorschriften, die für Ihre Organisation gelten (beispielsweise dsgvo, NIST 800-171).|
 |Bedrohungsschutz| Implementieren Sie erweiterte Schutzbestimmungen für Administratorkonten: <br/> * Konfigurieren von [rechten Zugriffs Arbeitsstationen](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations) (PAWs) für Administratoraktivitäten. <br/> * Konfigurieren [Azure AD privilegierten Identitätsverwaltung](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure). <br/> * Konfigurieren Sie ein Siem-Tool (Security Information and Event Management) zum Erfassen von Protokollierungsdaten aus Office 365, Cloud-App-Sicherheit und anderen Diensten, einschließlich AD FS. Im Überwachungsprotokoll werden Daten für nur 90 Tage gespeichert. Durch das Erfassen dieser Daten im Siem-Tool können Sie Daten für einen längeren Zeitraum speichern.|
-|Identitäts- und Zugriffsverwaltung|* Aktivieren und Erzwingen von MFA für alle Benutzer. <br/> * Implementieren Sie eine Reihe von [bedingten Zugriff und verwandte Richtlinien](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations). |
+|Identitäts- und Zugriffsverwaltung|* Aktivieren und Erzwingen von MFA für alle Benutzer. <br/> * Implementieren Sie eine Reihe von [bedingten Zugriff und verwandte Richtlinien](microsoft-365-policies-configurations.md). |
 |Information Protection| Anpassen und Implementieren von Richtlinien für den Informationsschutz Diese Ressourcen umfassen Beispiele: <br/> * [Office 365 Informationsschutz für dsgvo](https://aka.ms/o365gdpr) <br/> * [Konfigurieren von Microsoft Teams mit drei Schutzebenen](../../solutions/configure-teams-three-tiers-protection.md) <br/> <br> Verwenden Sie Richtlinien zur Verhinderung von Datenverlust und Überwachungstools in Microsoft 365 für Daten, die in Microsoft 365 (anstelle von Cloud-App-Sicherheit) gespeichert sind. <br><br>Verwenden Sie die Cloud-App-Sicherheit mit Microsoft 365 für erweiterte Warnungsfunktionen (außer Verhinderung von Datenverlust).|
 |
 

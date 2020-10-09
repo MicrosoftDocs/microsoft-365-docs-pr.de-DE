@@ -15,12 +15,12 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 description: Die Roadmap zum Einrichten der Geräteverwaltung für Microsoft 365.
-ms.openlocfilehash: 0efe7098f90064184f222acb671ae6f96c1b38d5
-ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
+ms.openlocfilehash: d359cae62fbd1bf2468ad753670ff8e385d6f25b
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48384761"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398961"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Roadmap für die Geräteverwaltung für Microsoft 365
 
@@ -54,10 +54,10 @@ Beginnen Sie auf der Grundlage ihrer Bewertung mit der Verwaltung Ihrer Geräte 
  
 ## <a name="identity-and-device-access-recommendations"></a>Empfehlungen für den Identitäts- und Gerätezugriff
 
-Microsoft stellt eine Reihe von Empfehlungen für [Identität und Gerätezugriff](microsoft-365-policies-configurations.md) bereit, um sicherzustellen, dass die Mitarbeiter sicher und produktiv arbeiten können. Verwenden Sie für den Geräte Zugriff die Empfehlungen und Einstellungen in den folgenden Artikeln:
+Microsoft stellt eine Reihe von Empfehlungen für [Identität und Gerätezugriff](../security/office-365-security/microsoft-365-policies-configurations.md) bereit, um sicherzustellen, dass die Mitarbeiter sicher und produktiv arbeiten können. Verwenden Sie für den Geräte Zugriff die Empfehlungen und Einstellungen in den folgenden Artikeln:
 
-- [Voraussetzungen](identity-access-prerequisites.md)
-- [Allgemeine Identitäts- und Gerätezugriffsrichtlinien](identity-access-policies.md)
+- [Voraussetzungen](../security/office-365-security/identity-access-prerequisites.md)
+- [Allgemeine Identitäts- und Gerätezugriffsrichtlinien](../security/office-365-security/identity-access-policies.md)
 
 ## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Funktionsweise von Contoso für die Geräteverwaltung für Microsoft 365
 

@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erstellen Sie eine Microsoft 365-Umgebung, um Identitäts- und Gerätezugriff zu testen.
-ms.openlocfilehash: 84af7747fc1d0e80e933397f4f0f96018ed246c3
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: b8e91a58bb6e1c00013b963c77151080a419b836
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327807"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398807"
 ---
 # <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>Identitäts- und Gerätezugriff für Ihre Microsoft 365-Testumgebung
 
 *Diese Test Umgebungs Anleitung kann nur für Microsoft 365 für Enterprise-Testumgebungen verwendet werden.*
 
-[Konfigurationen für den Identitäts-und Geräte Zugriff](microsoft-365-policies-configurations.md) sind eine Reihe von Features und Richtlinien für den bedingten Zugriff zum Schutz des Zugriffs auf alle Dienste, die in Azure Active Directory (Azure AD) integriert sind.
+[Konfigurationen für den Identitäts-und Geräte Zugriff](../security/office-365-security/microsoft-365-policies-configurations.md) sind eine Reihe von Features und Richtlinien für den bedingten Zugriff zum Schutz des Zugriffs auf alle Dienste, die in Azure Active Directory (Azure AD) integriert sind.
 
 So erstellen Sie eine Testumgebung, in der die allgemeinen Konfigurationen für den Identitäts-und Geräte Zugriff implementiert sind:
 

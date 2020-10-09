@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Wie Contoso die Sicherheitsfeatures in Microsoft 365 für Unternehmen verwendet.
-ms.openlocfilehash: 2244f13f8e8f56edbadd40d1e85cb309d70f7744
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: fbbf8dfc1de831c2ef949b71f1cbdf4e97a02baa
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686440"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399477"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Zusammenfassung von Microsoft 365 für Enterprise-Sicherheit für die Contoso Corporation
 
@@ -73,7 +73,7 @@ In Übereinstimmung mit den bewährten Sicherheitsmethoden und den Bereitstellun
 
 - Sicherer Zugriff auf Geräte und Anwendungen durch bedingte Zugriffsrichtlinien
 
-  Contoso verwendet [bedingte Zugriffsrichtlinien](microsoft-365-policies-configurations.md) für Identität, Geräte, Exchange Online und SharePoint. Bedingte Zugriffsrichtlinien für die Identität erfordern unter anderem die Änderung des Kennworts für Benutzer mit hohem Risiko und das Blockieren der Verwendung von Apps, die keine moderne Authentifizierung unterstützten, durch Clients. Geräterichtlinien umfassen die Definition von genehmigten Apps und erfordern kompatible PCs und mobile Geräte. Bedingte Zugriffsrichtlinien für Exchange Online umfassen das Blockieren von ActiveSync-Clients und das Einrichten der Nachrichtenverschlüsselung in Office 365. Bedingte Zugriffsrichtlinien für SharePoint umfassen zusätzlichen Schutz für vertrauliche und hochgradig regulierte Websites.
+  Contoso verwendet [bedingte Zugriffsrichtlinien](../security/office-365-security/microsoft-365-policies-configurations.md) für Identität, Geräte, Exchange Online und SharePoint. Bedingte Zugriffsrichtlinien für die Identität erfordern unter anderem die Änderung des Kennworts für Benutzer mit hohem Risiko und das Blockieren der Verwendung von Apps, die keine moderne Authentifizierung unterstützten, durch Clients. Geräterichtlinien umfassen die Definition von genehmigten Apps und erfordern kompatible PCs und mobile Geräte. Bedingte Zugriffsrichtlinien für Exchange Online umfassen das Blockieren von ActiveSync-Clients und das Einrichten der Nachrichtenverschlüsselung in Office 365. Bedingte Zugriffsrichtlinien für SharePoint umfassen zusätzlichen Schutz für vertrauliche und hochgradig regulierte Websites.
 
 - Windows Hello for Business
 

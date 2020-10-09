@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Verwenden Sie diese Test Umgebungs Anleitung, um zusätzliche Microsoft 365-Sicherheitseinstellungen für Ihre Microsoft 365 für Enterprise-Testumgebung zu aktivieren.
-ms.openlocfilehash: 06273bda00635a65ed9821b2bac23c3a3ee1366a
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 09a613261bc173cd71e9cc2dd58a32a9547ece21
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686802"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398949"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>Erhöhte Microsoft 365-Sicherheit für Ihre Microsoft 365 für Enterprise-Testumgebung
 
@@ -47,7 +47,7 @@ In dieser Phase aktivieren Sie die erhöhte Sicherheit von Microsoft 365 für Ih
 
 ### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>Konfigurieren von SharePoint Online zum Blockieren von apps, die keine moderne Authentifizierung unterstützen
 
-Für apps, die keine moderne Authentifizierung unterstützen, können keine [Identitäts-und Gerätezugriffs Konfigurationen](microsoft-365-policies-configurations.md) angewendet werden, was ein wichtiges Element für die Sicherung Ihres Microsoft 365-Abonnements und seiner digitalen Objekte ist. 
+Für apps, die keine moderne Authentifizierung unterstützen, können keine [Identitäts-und Gerätezugriffs Konfigurationen](../security/office-365-security/microsoft-365-policies-configurations.md) angewendet werden, was ein wichtiges Element für die Sicherung Ihres Microsoft 365-Abonnements und seiner digitalen Objekte ist. 
 
 1. Wechseln Sie zum Microsoft 365 Admin Center ( [https://portal.microsoft.com](https://portal.microsoft.com) ), und melden Sie sich bei Ihrem Microsoft 365 Test Lab-Abonnement mit ihrem globalen Administratorkonto an.
     

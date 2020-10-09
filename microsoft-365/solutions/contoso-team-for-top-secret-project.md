@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Zusammenfassung: Hier erfahren Sie, wie Contoso ein Team mit Sicherheitsisolation für ein streng geheimes Projekt verwendet, um eine neue Produkt-und Dienst Suite zu entwickeln.'
-ms.openlocfilehash: ba9a66d2419e81aeb1eac026b16c0475ac6d0614
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: 16d10f5d6e5b5939172c02746c9324eb20b6987e
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778586"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399489"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Isoliertes Team für ein streng geheimes Projekt der Contoso Corporation
 
@@ -40,7 +40,7 @@ Contoso-IT-Mitarbeiter haben ein [Team mit Sicherheitsisolierung](secure-teams-s
 
 ## <a name="step-1-created-a-private-team"></a>Schritt 1: Erstellen eines privaten Teams
 
-Um zunächst den Zugriff auf die zugrunde liegende SharePoint-Website für das Team zu schützen, haben die IT-Administratoren von Contoso die [empfohlenen SharePoint-Zugriffsrichtlinien](../enterprise/sharepoint-file-access-policies.md)konfiguriert.
+Um zunächst den Zugriff auf die zugrunde liegende SharePoint-Website für das Team zu schützen, haben die IT-Administratoren von Contoso die [empfohlenen SharePoint-Zugriffsrichtlinien](../security/office-365-security/sharepoint-file-access-policies.md)konfiguriert.
 
 Als nächstes hat ein IT-Administrator von Contoso ein neues privates Team namens "Project 2X" erstellt und die Benutzerkonten von Project 2X-Mitarbeitern als Mitglieder hinzugefügt. Außerdem haben Sie das Team so konfiguriert, dass nur Projekt-2X-Teambesitzer private Kanäle erstellen können.
 
@@ -51,7 +51,7 @@ Informationen zu den Konfigurationsdetails finden Sie unter [Erstellen eines pri
 Contoso-Administratoren haben eine neue Sensitivitäts Bezeichnung mit dem Namen " **Project 2X** " erstellt, die:
 
 - Aktivierte Verschlüsselung.
-- Erlaubte gemeinsame Author-Berechtigungen für das Projekt 2X Microsoft 365 Group.
+- Zulässige Co-Author Berechtigungen für das Projekt 2X Microsoft 365 Group.
 - Zulässige Viewer-Berechtigungen für die Führungskräfte Gruppe.
 - Blockierter Zugriff auf nicht verwaltete Geräte.
 
@@ -64,7 +64,7 @@ Informationen zu den Konfigurationsdetails finden Sie unter [Create a Sensitivit
 
 ## <a name="step-3-configured-the-underlying-sharepoint-site"></a>Schritt 3: Konfigurieren der zugrunde liegenden SharePoint-Website
 
-Um zunächst den Zugriff auf die zugrunde liegende SharePoint-Website für das Team zu schützen, haben die IT-Administratoren von Contoso die [empfohlenen SharePoint-Zugriffsrichtlinien](../enterprise/sharepoint-file-access-policies.md)konfiguriert.
+Um zunächst den Zugriff auf die zugrunde liegende SharePoint-Website für das Team zu schützen, haben die IT-Administratoren von Contoso die [empfohlenen SharePoint-Zugriffsrichtlinien](../security/office-365-security/sharepoint-file-access-policies.md)konfiguriert.
 
 Als nächstes haben Sie zusätzliche Berechtigungseinstellungen für die Website konfiguriert:
 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie, wie Contoso die Features für den Informationsschutz in Microsoft 365 für Unternehmen verwendet, um Ihre digitalen Objekte in der Cloud zu sichern.
-ms.openlocfilehash: 67404df9bb2056c226eeb9370190519fc0cc8f3b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1966fdec3de246ca54fd99ab018485b9ee817281
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686022"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399241"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Informationsschutz für die Contoso Corporation
 
@@ -78,9 +78,9 @@ Contoso hat die folgenden Schritte ausgeführt, um Microsoft 365 für Unternehme
 
 Contoso konfigurierte zusammen mit seiner Infrastruktur für die Verwaltung von Identitäten und mobilen Geräten sowie als Teil des Exchange Online- und SharePoint-Rollouts die folgenden Sätze von bedingten Zugriffsrichtlinien und wendete sie auf die entsprechenden Gruppen an:
 
-- [Richtlinien für den verwalteten und nicht verwalteten Zugriff auf Geräteanwendungen](identity-access-policies.md)
-- [Exchange Online-Zugriffsrichtlinien](secure-email-recommended-policies.md)
-- [SharePoint-Zugriffsrichtlinien](sharepoint-file-access-policies.md)
+- [Richtlinien für den verwalteten und nicht verwalteten Zugriff auf Geräteanwendungen](../security/office-365-security/identity-access-policies.md)
+- [Exchange Online-Zugriffsrichtlinien](../security/office-365-security/secure-email-recommended-policies.md)
+- [SharePoint-Zugriffsrichtlinien](../security/office-365-security/sharepoint-file-access-policies.md)
 
 Hier sehen Sie den von Contoso erstellten Satz von Informationsschutzrichtlinien.
 
@@ -102,7 +102,7 @@ Diese Richtlinien stellen Folgendes sicher:
 
 In der folgenden Tabelle werden die Datenebenen von Contoso den Informationen Schutzfeatures in Microsoft 365 für Unternehmen zugeordnet.
 
-| Ebene | Microsoft 365 Cloud Services | Windows 10 und Microsoft 365 Apps for Enterprise | Sicherheit und Compliance |
+| Stufe | Microsoft 365 Cloud Services | Windows 10 und Microsoft 365 Apps for Enterprise | Sicherheit und Compliance |
 |:-------|:-----|:-----|:-----|
 | Stufe 1: Baseline  | Bedingte Zugriffsrichtlinien für SharePoint und Exchange Online <BR> Berechtigungen für SharePoint-Websites | Vertraulichkeitsbezeichnungen <BR> BitLocker <BR> Windows Information Protection | Bedingte Zugriffsrichtlinien für Geräte und MAM-Richtlinien (Mobile Application Management) |
 | Stufe 2: Vertraulich | Stufe 1 plus: <BR> <BR> Vertraulichkeitsbezeichnungen <BR> Microsoft 365-Aufbewahrungsbezeichnungen auf SharePoint-Websites <BR> Verhinderung von Datenverlust für SharePoint und Exchange Online <BR> Isolierte SharePoint-Websites  | Stufe 1 plus: <BR> <BR> Vertraulichkeitsbezeichnungen auf digitalen Assets  | Stufe 1 |

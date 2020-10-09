@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: Schützen Sie Ihre geschäftlichen e-Mails und Daten vor Cyber-Bedrohungen, einschließlich Ransomware, Phishing und böswilligen Anlagen.
-ms.openlocfilehash: 754f3eac884128e0707a02c15d4d3766f5fa4ca5
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: c72090bebe92ea61d99772eccde041d011c05580
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327795"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398647"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>Die 12 wichtigsten Aufgaben für Sicherheitsteams zur Unterstützung der Arbeit von zu Hause aus
 
@@ -49,8 +49,8 @@ Für Kunden, die unsere Unternehmenspläne verwenden, empfiehlt Microsoft, die i
 |7 |[Konfigurieren des MFA-und bedingten Zugriffs für Gäste, einschließlich InTune-App-Schutz](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)||![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |8 |[Registrieren von PCs für die Geräteverwaltung und erfordern von kompatiblen PCs](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |9 |[Optimieren Ihres Netzwerks für Cloud-Konnektivität](#9-optimize-your-network-for-cloud-connectivity)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|10|[Benutzer trainieren](#10-train-users)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|11 |[Erste Schritte mit Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security)|||![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|10 |[Benutzer trainieren](#10-train-users)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|11|[Erste Schritte mit Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security)|||![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |12 |[Überwachen auf Bedrohungen und ergreifen von Aktionen](#12-monitor-for-threats-and-take-action)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
 
@@ -72,7 +72,7 @@ Die Anwendung dieser Richtlinien dauert nur ein paar Minuten, aber Sie können I
 |---|---|
 |Microsoft 365 Pläne (ohne Azure AD P1 oder P2)|[Aktivieren Sie die Sicherheitsstandards in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Zu den Sicherheitsstandards in Azure AD gehört MFA für Nutzer und Administratoren.|
 |Microsoft 365 E3 (mit Azure AD P1)|Verwenden Sie [Allgemeine Richtlinien für den bedingten Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common), um die folgenden Richtlinien zu konfigurieren: <br/>- [MFA für Administratoren erforderlich](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br/>- [MFA für alle Nutzer erforderlich](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br/> - [Blockieren von Legacy-Authentifizierung](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)|
-|Microsoft 365 E5 (mit Azure AD P2)|Nutzen Sie den Azure AD-Identity Protection, beginnen Sie mit der Implementierung des von Microsoft [empfohlenen Satzes von bedingtem Zugriff und zugehörigen Richtlinien](../enterprise/identity-access-policies.md), indem Sie die folgenden 2 Richtlinien nutzen:<br/> - [MFA erforderlich, wenn das Anmelderisiko mittel oder hoch ist](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br/>- [Blockieren von Clients, die die moderne Authentifizierung nicht unterstützen](../enterprise/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br/>- [Nutzer mit hohem Risiko müssen das Kennwort ändern](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)|
+|Microsoft 365 E5 (mit Azure AD P2)|Nutzen Sie den Azure AD-Identity Protection, beginnen Sie mit der Implementierung des von Microsoft [empfohlenen Satzes von bedingtem Zugriff und zugehörigen Richtlinien](./office-365-security/identity-access-policies.md), indem Sie die folgenden 2 Richtlinien nutzen:<br/> - [MFA erforderlich, wenn das Anmelderisiko mittel oder hoch ist](./office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br/>- [Blockieren von Clients, die die moderne Authentifizierung nicht unterstützen](./office-365-security/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br/>- [Nutzer mit hohem Risiko müssen das Kennwort ändern](./office-365-security/identity-access-policies.md#high-risk-users-must-change-password)|
 |
 
 ## <a name="2-protect-against-threats"></a>2: Schutz vor Bedrohungen
@@ -139,10 +139,10 @@ App Protection-Richtlinien umfassen viele Einstellungen. Glücklicherweise müss
 
 Sogar besser: Microsoft koordiniert dieses app-Schutz Framework mit einer Reihe von bedingten Zugriffen und verwandten Richtlinien, die wir allen Organisationen als Ausgangspunkt empfehlen. Wenn Sie MFA mithilfe der Anleitungen in diesem Artikel implementiert haben, sind Sie auf halbem Weg da!
 
-Um Mobile App Schutz zu konfigurieren, verwenden Sie die Anleitungen in [allgemeinen Richtlinien für Identitäts-und Geräte Zugriff](../enterprise/identity-access-policies.md):
+Um Mobile App Schutz zu konfigurieren, verwenden Sie die Anleitungen in [allgemeinen Richtlinien für Identitäts-und Geräte Zugriff](./office-365-security/identity-access-policies.md):
 
- 1. Verwenden Sie die Richt [Linien zum Anwenden von App-Datenschutzrichtlinien](../enterprise/identity-access-policies.md#apply-app-data-protection-policies) , um Richtlinien für IOS und Android zu erstellen. Stufe 2 (erweiterter Datenschutz) wird für den grundlegenden Schutz empfohlen.
- 2. Erstellen Sie eine Regel für bedingten Zugriff, um [genehmigte apps und App-Schutz zu erfordern](../enterprise/identity-access-policies.md#require-approved-apps-and-app-protection).
+ 1. Verwenden Sie die Richt [Linien zum Anwenden von App-Datenschutzrichtlinien](./office-365-security/identity-access-policies.md#apply-app-data-protection-policies) , um Richtlinien für IOS und Android zu erstellen. Stufe 2 (erweiterter Datenschutz) wird für den grundlegenden Schutz empfohlen.
+ 2. Erstellen Sie eine Regel für bedingten Zugriff, um [genehmigte apps und App-Schutz zu erfordern](./office-365-security/identity-access-policies.md#require-approved-apps-and-app-protection).
 
 ## <a name="7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection"></a>7: Konfigurieren Sie den MFA-und bedingten Zugriff für Gäste, einschließlich InTune-Mobile App Schutz
 
@@ -153,7 +153,7 @@ Wenn Sie den Microsoft 365 E5-Plan verwenden und den Azure Identity Protection f
 - Erstellen Sie eine neue Regel für bedingten Zugriff, sodass MFA immer für Gäste und externe Benutzer erforderlich ist.
 - Aktualisieren Sie die risikobasierte MFA-bedingte Zugriffsregel, um Gäste und externe Benutzer auszuschließen.
 
-Verwenden Sie die Anleitungen [zum Aktualisieren der allgemeinen Richtlinien zum zulassen und schützen von Gast und externem Zugriff](../enterprise/identity-access-policies-guest-access.md) , um zu verstehen, wie der Gastzugriff mit Azure AD funktioniert, und um die betroffenen Richtlinien zu aktualisieren.
+Verwenden Sie die Anleitungen [zum Aktualisieren der allgemeinen Richtlinien zum zulassen und schützen von Gast und externem Zugriff](./office-365-security/identity-access-policies-guest-access.md) , um zu verstehen, wie der Gastzugriff mit Azure AD funktioniert, und um die betroffenen Richtlinien zu aktualisieren.
 
 Die von Ihnen erstellten Schutzrichtlinien für InTune Mobile App zusammen mit der Regel für bedingten Zugriff, um genehmigte apps und App-Schutz zu erfordern, gelten für Gästekonten und tragen zum Schutz Ihrer Organisationsdaten bei.
 
@@ -171,12 +171,12 @@ Sie können auch die Vorteile dieser Lernprogramme nutzen:
 - [Verwenden von Autopilot zum Registrieren von Windows-Geräten in InTune](https://docs.microsoft.com/mem/intune/enrollment/tutorial-use-autopilot-enroll-devices)
 - [Verwenden Sie Apples Features für die unternehmensweite Geräteregistrierung in Apple Business Manager (ABM), um IOS/iPads-Geräte in InTune zu registrieren.](https://docs.microsoft.com/mem/intune/enrollment/tutorial-use-device-enrollment-program-enroll-ios)
 
-Verwenden Sie nach dem Registrieren von Geräten die Anleitungen unter [Allgemeine Identitäts-und Gerätezugriffs Richtlinien](../enterprise/identity-access-policies.md) , um diese Richtlinien zu erstellen:
+Verwenden Sie nach dem Registrieren von Geräten die Anleitungen unter [Allgemeine Identitäts-und Gerätezugriffs Richtlinien](./office-365-security/identity-access-policies.md) , um diese Richtlinien zu erstellen:
 
-- [Definieren von Richtlinien für Geräte Konformität](../enterprise/identity-access-policies.md#define-device-compliance-policies) – die empfohlenen Einstellungen für Windows 10 umfassen den Schutz vor Viren. Wenn Sie über Microsoft 365 E5 verfügen, verwenden Sie Microsoft Defender Advanced Threat Protection, um die Integrität von mitarbeitergeräten zu überwachen. Achten Sie darauf, dass Compliance-Richtlinien für andere Betriebssysteme Antivirenschutz und End-Punkt-Schutz Software umfassen.
-- [Kompatible PCs erfordern](../enterprise/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) – Dies ist die Regel für bedingten Zugriff in Azure AD, die die Geräte Konformitätsrichtlinien erzwingt.
+- [Definieren von Richtlinien für Geräte Konformität](./office-365-security/identity-access-policies.md#define-device-compliance-policies) – die empfohlenen Einstellungen für Windows 10 umfassen den Schutz vor Viren. Wenn Sie über Microsoft 365 E5 verfügen, verwenden Sie Microsoft Defender Advanced Threat Protection, um die Integrität von mitarbeitergeräten zu überwachen. Achten Sie darauf, dass Compliance-Richtlinien für andere Betriebssysteme Antivirenschutz und End-Punkt-Schutz Software umfassen.
+- [Kompatible PCs erfordern](./office-365-security/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) – Dies ist die Regel für bedingten Zugriff in Azure AD, die die Geräte Konformitätsrichtlinien erzwingt.
 
-Nur eine Organisation kann ein Gerät verwalten, daher müssen Sie die Gastkonten aus der Regel für bedingten Zugriff in Azure AD ausschließen. Wenn Sie Gast-und externe Benutzer nicht von Richtlinien ausschließen, die die Gerätekompatibilität erfordern, werden diese Benutzer durch diese Richtlinien blockiert. Weitere Informationen finden Sie unter [Aktualisieren der allgemeinen Richtlinien zum zulassen und schützen von Gast und externem Zugriff](../enterprise/identity-access-policies-guest-access.md).
+Nur eine Organisation kann ein Gerät verwalten, daher müssen Sie die Gastkonten aus der Regel für bedingten Zugriff in Azure AD ausschließen. Wenn Sie Gast-und externe Benutzer nicht von Richtlinien ausschließen, die die Gerätekompatibilität erfordern, werden diese Benutzer durch diese Richtlinien blockiert. Weitere Informationen finden Sie unter [Aktualisieren der allgemeinen Richtlinien zum zulassen und schützen von Gast und externem Zugriff](./office-365-security/identity-access-policies-guest-access.md).
 
 ## <a name="9-optimize-your-network-for-cloud-connectivity"></a>9: Optimieren Ihres Netzwerks für Cloud-Konnektivität
 
@@ -208,7 +208,7 @@ Microsoft 365 stellt die folgenden Ressourcen zur Verfügung, um Benutzer in Ihr
 
 |Konzept|Ressourcen|
 |---|---|
-|Microsoft 365|[Anpassbare Lern Pfade](https://docs.microsoft.com/office365/customlearning/) <p>Diese Ressourcen können Ihnen helfen, Schulungen für Endbenutzer in Ihrer Organisation zusammenzustellen.|
+|Microsoft 365|[Anpassbare Lern Pfade](https://docs.microsoft.com/office365/customlearning/) <p>Diese Ressourcen können Ihnen helfen, Schulungen für Endbenutzer in Ihrer Organisation zusammenzustellen.|
 |Microsoft 365 Security Center|[Lern Modul: Sichern Ihrer Organisation mit integrierter intelligenter Sicherheit von Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>In diesem Modul können Sie beschreiben, wie Microsoft 365-Sicherheitsfeatures zusammenarbeiten und die Vorteile dieser Sicherheitsfeatures artikulieren.|
 |Mehrstufige Authentifizierung|[Überprüfung in zwei Schritten: Was ist die zusätzliche Überprüfungsseite?](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Dieser Artikel hilft Endbenutzern, die mehrstufige Authentifizierung zu verstehen, und warum Sie in Ihrer Organisation verwendet wird.|
 |

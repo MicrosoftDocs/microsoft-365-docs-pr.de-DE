@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Hier erfahren Sie, wie Sie Teams mit grundlegendem Schutz bereitstellen.
-ms.openlocfilehash: 4a1843b687155cefd48bf3800be68c3e01abd7f5
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: ac6974b5625a4eff0fcd11a17c4607a7c2caf97f
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527860"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398865"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Konfigurieren von Teams mit grundlegendem Schutz
 
@@ -31,7 +31,7 @@ In diesem Artikel wird erläutert, wie Teams mit eine grundlegenden Schutzebene 
 
 ## <a name="initial-protections"></a>Erste Schutzmaßnahmen
 
-Als Erstes wird empfohlen, grundlegende Identitäts- und Gerätezugriffsrichtlinien zu konfigurieren. Einzelheiten hierzu finden Sie unter [Richtlinienempfehlungen zum Schützen von Teams-Chats, -Gruppen und -Dateien](https://docs.microsoft.com/microsoft-365/enterprise/teams-access-policies).
+Als Erstes wird empfohlen, grundlegende Identitäts- und Gerätezugriffsrichtlinien zu konfigurieren. Einzelheiten hierzu finden Sie unter [Richtlinienempfehlungen zum Schützen von Teams-Chats, -Gruppen und -Dateien](../security/office-365-security/teams-access-policies.md).
 
 Außerdem empfehlen wir die Aktivierung der grundlegenden erweiterten Bedrohungsschutzfeatures, um die Schadsoftware in Dokumenten, Anlagen und Links zu schützen. Wir empfehlen, jede der Optionen in der folgenden Tabelle zu aktivieren.
 

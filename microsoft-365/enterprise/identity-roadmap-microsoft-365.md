@@ -16,12 +16,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: ''
 description: Die Roadmap zur Identität für Microsoft 365.
-ms.openlocfilehash: 82c2adc753a3446b9ca4f070d8655f526465de55
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: 4daf673a35505652bdb8105f304dde8166512660
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357830"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398771"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Identitäts-Roadmap für Microsoft 365
 
@@ -60,10 +60,10 @@ So stellen Sie die Identitäts Implementierung bereit:
 
 ### <a name="identity-and-device-access-recommendations"></a>Empfehlungen für den Identitäts- und Gerätezugriff
 
-Um eine sichere und produktive Belegschaft sicherzustellen, bietet Microsoft eine Reihe von Empfehlungen für den [Identitäts-und Geräte Zugriff](microsoft-365-policies-configurations.md). Verwenden Sie für Identity die Empfehlungen und Einstellungen in den folgenden Artikeln:
+Um eine sichere und produktive Belegschaft sicherzustellen, bietet Microsoft eine Reihe von Empfehlungen für den [Identitäts-und Geräte Zugriff](../security/office-365-security/microsoft-365-policies-configurations.md). Verwenden Sie für Identity die Empfehlungen und Einstellungen in den folgenden Artikeln:
 
-- [Voraussetzungen](identity-access-prerequisites.md)
-- [Allgemeine Identitäts- und Gerätezugriffsrichtlinien](identity-access-policies.md)
+- [Voraussetzungen](../security/office-365-security/identity-access-prerequisites.md)
+- [Allgemeine Identitäts- und Gerätezugriffsrichtlinien](../security/office-365-security/identity-access-policies.md)
 
 ## <a name="manage"></a>Verwalten
 

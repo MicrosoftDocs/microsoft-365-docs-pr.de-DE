@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: die häufigsten Bedrohungs-und Angriffsszenarien, mit denen Organisationen derzeit in Ihren Microsoft 365-Umgebungen konfrontiert sind, sowie Empfohlene Aktionen zur Minderung dieser Risiken.
-ms.openlocfilehash: 2f7de328edbd0220e5627612430fca24641ace11
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 4181feeed97313ec1e8d916df994cc880cbffdf1
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547998"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399455"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365 Security for Business-Entscheidungsträger (BDMs)
 
@@ -68,7 +68,7 @@ Zu den bekannten Bedrohungen gehören Schadsoftware, kompromittierte Konten und 
 
 |Empfehlung  |E3  |E5  |
 |---------|---------|---------|
-|**Einrichten der mehrstufigen Authentifizierung und Verwenden von empfohlenen Richtlinien für den bedingten Zugriff, einschließlich der Anmelde Risikorichtlinien**. Microsoft empfiehlt und hat eine Reihe von Richtlinien getestet, die zusammenarbeiten, um alle Cloud-apps zu schützen, einschließlich Office 365 und Microsoft 365-Dienste. Siehe [Konfigurationen für den Identitäts-und Geräte Zugriff](../enterprise/microsoft-365-policies-configurations.md). | |![grünes Häkchen](../media/green-check-mark.png)|
+|**Einrichten der mehrstufigen Authentifizierung und Verwenden von empfohlenen Richtlinien für den bedingten Zugriff, einschließlich der Anmelde Risikorichtlinien**. Microsoft empfiehlt und hat eine Reihe von Richtlinien getestet, die zusammenarbeiten, um alle Cloud-apps zu schützen, einschließlich Office 365 und Microsoft 365-Dienste. Siehe [Konfigurationen für den Identitäts-und Geräte Zugriff](./office-365-security/microsoft-365-policies-configurations.md). | |![grünes Häkchen](../media/green-check-mark.png)|
 |**Mehrstufige Authentifizierung für alle Benutzer erforderlich**. Wenn Sie nicht über die erforderliche Lizenzierung zum Implementieren der empfohlenen Richtlinien für den bedingten Zugriff verfügen, benötigen Sie mindestens die mehrstufige Authentifizierung für alle Benutzer.|![grünes Häkchen](../media/green-check-mark.png)|![grünes Häkchen](../media/green-check-mark.png)|
 |**Erhöhen Sie das Schutzniveau vor Schadsoftware in Mail**. Ihre Office 365-oder Microsoft 365-Umgebung umfasst Schutz vor Schadsoftware, aber Sie können diesen Schutz verbessern, indem Sie Anlagen mit Dateitypen blockieren, die häufig für Schadsoftware verwendet werden.|![grünes Häkchen](../media/green-check-mark.png)|![grünes Häkchen](../media/green-check-mark.png)|
 |**Schützen Sie Ihre e-Mails vor gezielten Phishing-Angriffen**. Wenn Sie eine oder mehrere benutzerdefinierte Domänen für Ihre Office 365-oder Microsoft 365-Umgebung konfiguriert haben, können Sie den gezielten Schutz gegen Phishing konfigurieren. Der ATP-Schutz gegen Phishing, ein Teil Office 365 Advanced Threat Protection, kann zum Schutz Ihrer Organisation vor böswilligen Identitätswechsel basierten Phishing-Angriffen und anderen Phishing-Angriffen beitragen. Wenn Sie keine benutzerdefinierte Domäne konfiguriert haben, müssen Sie dies nicht tun.| |![grünes Häkchen](../media/green-check-mark.png)|
@@ -114,7 +114,7 @@ Microsoft 365 Information Protection-Funktionen können Ihnen dabei helfen herau
 
 |Empfehlung |E3|E5 |
 |---------|---------|---------|
-|**Überprüfen und optimieren Sie Ihren bedingten Zugriff und zugehörige Richtlinien, damit Sie sich an Ihre Ziele für ein Zero-Trust-Netzwerk ausrichten können**. Zum Schutz vor bekannten Bedrohungen gehört das Implementieren einer Reihe [empfohlener Richtlinien](../enterprise/microsoft-365-policies-configurations.md). Überprüfen Sie Ihre Implementierung dieser Richtlinien, um sicherzustellen, dass Sie Ihre apps und Daten vor Hackern schützen, die Zugriff auf Ihr Netzwerk erlangt haben. Beachten Sie, dass die empfohlene InTune-App-Schutzrichtlinie für Windows 10 Windows Information Protection (WIP) aktiviert. WIP schützt vor versehentlichen Verlusten ihrer Organisationsdaten über apps und Dienste wie e-Mail, soziale Netzwerke und die öffentliche Cloud. |         |![grünes Häkchen](../media/green-check-mark.png)|
+|**Überprüfen und optimieren Sie Ihren bedingten Zugriff und zugehörige Richtlinien, damit Sie sich an Ihre Ziele für ein Zero-Trust-Netzwerk ausrichten können**. Zum Schutz vor bekannten Bedrohungen gehört das Implementieren einer Reihe [empfohlener Richtlinien](./office-365-security/microsoft-365-policies-configurations.md). Überprüfen Sie Ihre Implementierung dieser Richtlinien, um sicherzustellen, dass Sie Ihre apps und Daten vor Hackern schützen, die Zugriff auf Ihr Netzwerk erlangt haben. Beachten Sie, dass die empfohlene InTune-App-Schutzrichtlinie für Windows 10 Windows Information Protection (WIP) aktiviert. WIP schützt vor versehentlichen Verlusten ihrer Organisationsdaten über apps und Dienste wie e-Mail, soziale Netzwerke und die öffentliche Cloud. |         |![grünes Häkchen](../media/green-check-mark.png)|
 |**Externe e-Mail-Weiterleitung deaktivieren**. Hacker, die Zugriff auf das Postfach eines Benutzers erhalten, können Ihre e-Mails stehlen, indem Sie das Postfach so festlegen, dass e-Mails automatisch weitergeleitet werden. Dies kann auch ohne das Bewusstsein des Benutzers geschehen. Sie können dies verhindern, indem Sie eine e-Mail-Fluss Regel konfigurieren.|![grünes Häkchen](../media/green-check-mark.png) |![grünes Häkchen](../media/green-check-mark.png)|
 |**Anonyme externe Kalenderfreigabe deaktivieren**. Standardmäßig ist die externe anonyme Kalenderfreigabe zulässig. [Deaktivieren Sie die Kalenderfreigabe](https://docs.microsoft.com/exchange/sharing/sharing-policies/modify-a-sharing-policy) , um potenzielle Lecks an vertraulichen Informationen zu verringern.|![grünes Häkchen](../media/green-check-mark.png) |![grünes Häkchen](../media/green-check-mark.png)|
 |**Konfigurieren von Richtlinien zur Verhinderung von Datenverlust für vertrauliche Daten** Erstellen Sie eine Richtlinie zur Verhinderung von Datenverlust im Security &amp; Compliance Center, um vertrauliche Daten wie Kreditkartennummern, Sozialversicherungsnummern und Kontonummern zu ermitteln und zu schützen. Microsoft 365 enthält zahlreiche vordefinierte Typen vertraulicher Informationen, die Sie in Richtlinien zur Verhinderung von Datenverlust verwenden können. Sie können auch eigene vertrauliche Informationstypen für vertrauliche Daten erstellen, die für Ihre Umgebung Benutzerdefiniert sind. |![grünes Häkchen](../media/green-check-mark.png)|![grünes Häkchen](../media/green-check-mark.png)|
