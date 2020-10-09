@@ -13,18 +13,18 @@ localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 - SPO_Content
+- m365solution-mip
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
-- m365solution-mip
-- m365initiative-compliance
 description: Sind Sie bereit für die Implementierung von Vertraulichkeitsbezeichnungen, um die Daten Ihrer Organisation zu schützen, aber nicht sicher, wo Sie beginnen sollten? Hier finden Sie einige praktische Anleitungen, die Ihnen auf dem Weg zu Bezeichnungen helfen.
-ms.openlocfilehash: 80149170fad47366178e9b899bbd5355c1d9e7db
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: 12da7f3dd5e6d0d4650d19a8cd5f6f41b51f2558
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338406"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398842"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Erste Schritte mit Vertraulichkeitsbezeichnungen
 
@@ -96,7 +96,9 @@ In allen Szenarien müssen Sie [Vertraulichkeitsbezeichnungen und deren Richtlin
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>Dokumentation für Endbenutzer zu Vertraulichkeitsbezeichnungen
 
-Die effektivste Dokumentation für Endbenutzer sind maßgeschneiderte Anleitungen und Anweisungen, die Sie für die von Ihnen ausgewählten Bezeichnungsnamen und -konfigurationen bereitstellen. Für grundlegende Anweisungen können Sie jedoch die folgenden Ressourcen verwenden:
+Die effektivste Dokumentation für Endbenutzer sind maßgeschneiderte Anleitungen und Anweisungen, die Sie für die von Ihnen ausgewählten Bezeichnungsnamen und -konfigurationen bereitstellen. Lesen Sie den folgenden Blogbeitrag für ein Downloadpaket, mit dem sie Benutzer trainieren und Einführungen nutzen können: [Endbenutzertraining in Vertraulichkeitsbezeichnungen in M365 – Wie Sie Ihre Einführung beschleunigen können](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-sensitivity-labels-in-m365-how-to/ba-p/1750880). 
+
+Für grundlegende Anweisungen können Sie auch die folgenden Ressourcen verwenden:
 
 - [Verwenden von Vertraulichkeitsbezeichnungen auf Ihre Dateien und E-Mails in Office](https://support.microsoft.com/de-DE/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
     - [Bekannte Probleme mit Vertraulichkeitsbezeichnungen in Office](https://support.microsoft.com/de-DE/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)

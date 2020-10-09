@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Benötigen Sie eine Lösung für die Datensatzverwaltung für Microsoft 365, die hochwertige Inhalte für rechtliche, geschäftliche oder behördliche Verpflichtungen verwaltet, aber Sie sind sich nicht sicher, wo Sie anfangen sollen? Hier finden Sie einige praktische Anweisungen für die ersten Schritte.
-ms.openlocfilehash: fd3e3368b7a23cb31a8df4953268576de2419f89
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: b7fc33e8a58857d839598cc74cdddc5247fd4a0d
+ms.sourcegitcommit: 7e8151ff74cb1cfc0dd59fadcac423c338415d77
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333851"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48390162"
 ---
 # <a name="get-started-with-records-management"></a>Erste Schritte mit der Datensatzverwaltung
 
@@ -73,7 +73,7 @@ Anhand der folgenden Tabelle können Sie Ihre geschäftlichen Anforderungen ents
 |Lassen Sie Admins und Benutzer manuell Aktionen zum Einbehalten und Löschen von Dokumenten und E-Mails anwenden: <br />-  SharePoint <br />– OneDrive <br />– Outlook und Outlook im Web|[Erstellen von Aufbewahrungsbezeichnungen und Anwenden in Apps](create-apply-retention-labels.md)|
 |Site-Administratoren können Aktionen für alle Inhalte in einer SharePoint-Bibliothek, einem Ordner oder einem Dokumentensatz standardmäßig beibehalten und löschen.|[Erstellen von Aufbewahrungsbezeichnungen und Anwenden in Apps](create-apply-retention-labels.md)|
 |Benutzer können mithilfe von Outlook-Regeln automatisch Aufbewahrungs- und Löschaktionen auf E-Mails anwenden|[Erstellen von Aufbewahrungsbezeichnungen und Anwenden in Apps](create-apply-retention-labels.md)|
-|Administratoren können Aktionen zum Aufbewahren und Löschen von Dokumenten auf ein Dokumentenverständnismodell anwenden, so dass diese automatisch auf identifizierte Dokumente in einer Microsoft Office SharePoint Online Bibliothek angewendet werden.|[Aufbewahrungsbezeichnungen erstellen und in Apps anwenden](create-apply-retention-labels.md)|
+|Administratoren können Aktionen zum Aufbewahren und Löschen von Dokumenten auf ein Dokumentenverständnismodell anwenden, so dass diese automatisch auf identifizierte Dokumente in einer Microsoft Office SharePoint Online Bibliothek angewendet werden.|[Erstellen von Aufbewahrungsbezeichnungen und Anwenden in Apps](create-apply-retention-labels.md)|
 |Automatische Anwendung von Aufbewahrungs- und Löschaktionen auf Dokumente und E-Mails |[Automatisches Anwenden einer Aufbewahrungsbezeichnung auf Inhalte](apply-retention-labels-automatically.md)|
 |Starten Sie den Aufbewahrungszeitraum mit einem bestimmten Ereignis, wie:  <br />– Mitarbeiter verlässt das Unternehmen <br />– Vertrag läuft aus <br />– Ende der Produktlebensdauer| [Aufbewahrung mit Eintritt eines Ereignisses starten](event-driven-retention.md)|
 |Verwalten des Lebenszyklus verschiedener Dokumenttypen in SharePoint| [Verwenden von Aufbewahrungsbezeichnungen zum Verwalten des Lebenszyklus von in SharePoint gespeicherten Dokumenten](auto-apply-retention-labels-scenario.md)|
@@ -85,6 +85,6 @@ Anhand der folgenden Tabelle können Sie Ihre geschäftlichen Anforderungen ents
 
 Aufbewahrungsbezeichnungen, die für die Datensatzverwaltung verwendet werden, sind in Microsoft 365-Apps in der Benutzeroberfläche vorhanden. Vergewissern Sie sich, Ihren Endbenutzern und Ihrem Helpdesk Anleitungen bereitstellen, bevor Sie Ihrem Produktionsnetzwerk Aufbewahrungsbezeichnungen bereitstellen.
 
-Die effektivste Art der Dokumentation für Endbenutzer umfasst maßgeschneiderte Anleitungen und Anweisungen zu den von Ihnen gewählten Namen und Konfigurationen von Aufbewahrungsbezeichnungen. Für grundlegende Anweisungen können Sie die folgenden Ressourcen nutzen:
+Die effektivste Art der Dokumentation für Endbenutzer umfasst maßgeschneiderte Anleitungen und Anweisungen zu den von Ihnen gewählten Namen und Konfigurationen von Aufbewahrungsbezeichnungen. Lesen Sie den folgenden Beitrag für ein Downloadpaket, mit dem sie Benutzer trainieren und Einführungen nutzen können: [Endbenutzertraining in Aufbewahrungsbezeichnungen in M365 – Wie Sie Ihre Einführung beschleunigen können](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861).
 
-- [Manuelles Anwenden von Aufbewahrungsbezeichnungen](create-apply-retention-labels.md#manually-apply-retention-labels)
+Sie können auch Grundanweisungen im folgenden Abschnitt finden: [Manuelles Anwenden von Aufbewahrungsbezeichnungen](create-apply-retention-labels.md#manually-apply-retention-labels).

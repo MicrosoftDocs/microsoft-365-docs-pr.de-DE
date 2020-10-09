@@ -13,18 +13,18 @@ localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 - SPO_Content
+- m365solution-mig
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
-- m365solution-mig
-- m365initiative-compliance
 description: Sie sind bereit, Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen zum Schutz der Daten Ihrer Organisation zu implementieren, sind sich aber nicht sicher, wie Sie dies bewerkstelligen sollten? Hier finden Sie einige praktische Anweisungen für die ersten Schritte.
-ms.openlocfilehash: 8ff6b05a675053009c3d42587e296ab240b2740d
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: ea5ccdbe0267c2b894e6b69cf8b048925af1b409
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338384"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399510"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Erste Schritte zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
@@ -81,6 +81,6 @@ Wenn Sie Aufbewahrungsbezeichnungen für die Datensatzverwaltung verwenden, gibt
 
 Aufbewahrungsbezeichnungen erscheinen im Gegensatz zu Aufbewahrungsrichtlinien in der Benutzeroberfläche von Microsoft 365-Apps. Vergewissern Sie sich, Ihren Endbenutzern und Ihrem Helpdesk Anleitungen bereitstellen, bevor Sie Ihrem Produktionsnetzwerk Aufbewahrungsbezeichnungen bereitstellen.
 
-Die effektivste Art der Dokumentation für Endbenutzer umfasst maßgeschneiderte Anleitungen und Anweisungen zu den von Ihnen gewählten Namen und Konfigurationen von Aufbewahrungsbezeichnungen. Für grundlegende Anweisungen können Sie die folgenden Ressourcen nutzen:
+Die effektivste Art der Dokumentation für Endbenutzer umfasst maßgeschneiderte Anleitungen und Anweisungen zu den von Ihnen gewählten Namen und Konfigurationen von Aufbewahrungsbezeichnungen. Lesen Sie den folgenden Blogbeitrag für ein Downloadpaket, mit dem sie Benutzer trainieren und Einführungen nutzen können: [Endbenutzertraining in Aufbewahrungsbezeichnungen in M365 – Wie Sie Ihre Einführung beschleunigen können](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861).
 
-- [Manuelles Anwenden von Aufbewahrungsbezeichnungen](create-apply-retention-labels.md#manually-apply-retention-labels)
+Sie können auch Grundanweisungen im folgenden Abschnitt finden: [Manuelles Anwenden von Aufbewahrungsbezeichnungen](create-apply-retention-labels.md#manually-apply-retention-labels).

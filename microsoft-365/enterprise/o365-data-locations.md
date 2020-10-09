@@ -3,7 +3,6 @@ title: Microsoft 365-Datenspeicherorte
 ms.author: deanw
 author: dmwmsft
 manager: laurawi
-ms.date: 07/22/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,19 +15,23 @@ ms.collection:
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: 'Zusammenfassung: Microsoft 365-Datenspeicherorte'
-ms.openlocfilehash: 7a2fb85d0d7320770a1ab32efcd024a9e348795e
-ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+description: Finden Sie Informationen dazu, wo in der ganzen Welt Ihre Microsoft 365-Kundendaten gespeichert werden
+ms.openlocfilehash: 9f651cf2bf042a59efcfc9b76fd4349c839e7423
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48337157"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384764"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
 -->
 
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Informationen dazu, wo Ihre Microsoft 365-Kundendaten gespeichert werden
+
+>[!Note]
+>Updates zu diesem Artikel werden von Microsoft streng kontrolliert. Direkte Bearbeitungen werden nicht veröffentlicht. Wenn Sie Änderungen vorschlagen möchten, senden Sie diese bitte am Ende des Artikels als Feedback.
+>
 
 In den nachstehenden Tabellen ist angegeben, an welchen globalen Microsoft-Cloud-Speicherorten ruhende Kundendaten für Microsoft 365-Dienste gespeichert werden. Erweitern Sie den Speicherort Ihres Rechnungsadresse-Landes, um zu ermitteln, wo Kundendaten für die einzelnen Dienste gespeichert werden.
 
@@ -106,6 +109,10 @@ Microsoft speichert keine ruhenden Intune-Kundendaten, die sich außerhalb der a
   - Preview-, Beta- oder andere Vorabversionen von Diensten, die Kundendaten in der Regel in den Vereinigten Staaten speichern, aber sie möglicherweise global speichern.
 
 Unabhängig davon steuert oder begrenzt Microsoft nicht die Geo-Funktion, mit der Kunden oder deren Endbenutzer auf Kundendaten zugreifen können. 
+
+### <a name="can-i-edit-the-information-in-this-article"></a>Kann ich die Informationen in diesem Artikel bearbeiten?
+
+Nein. Updates zu diesem Artikel werden von Microsoft streng kontrolliert. Direkte Bearbeitungen werden nicht veröffentlicht. Wenn Sie Änderungen vorschlagen möchten, senden Sie diese bitte am Ende des Artikels als Feedback.
 
 ## <a name="data-center-locations"></a>Standorte von Rechenzentren
 
@@ -2283,7 +2290,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="guadeloupe"></a>Guadeloupe
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Ort |
+| Dienst | Standort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
