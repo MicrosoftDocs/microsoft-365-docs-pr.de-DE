@@ -15,14 +15,15 @@ search.appverid:
 ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
+- m365-initiative-m365-defender
 description: Administratoren können häufig gestellte Fragen und Antworten zu unter Quarantäne gestellten Nachrichten in Exchange Online Protection (EoP) anzeigen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d52aa8b6d86421bbc03e03191d0e0ccd074ce782
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 00768b3584c854ef0648f75f1966a8fa331b2866
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202459"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413424"
 ---
 # <a name="quarantined-messages-faq"></a>Häufig gestellte Fragen zu Nachrichten in Quarantäne
 

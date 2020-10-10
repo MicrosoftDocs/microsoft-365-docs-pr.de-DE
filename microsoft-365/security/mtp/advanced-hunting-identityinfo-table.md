@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 6922f50906013cfbfa3bd63c69fff3e89ed46cd5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 94afa9e36ca75491511338297f02e8031333e53f
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196821"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48412742"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 
@@ -42,21 +44,21 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | Spaltenname | Datentyp | Beschreibung |
 |-------------|-----------|-------------|
 | `AccountObjectId` | string | Eindeutiger Bezeichner für das Konto in Azure AD |
-| `AccountUpn` | Zeichenfolge | Benutzerprinzipalname (UPN) des Kontos |
-| `OnPremSid` | Zeichenfolge | Lokale Sicherheits-ID (SID) des Kontos |
-| `CloudSid` | Zeichenfolge | Cloud-Sicherheits-ID des Kontos |
-| `GivenName` | Zeichenfolge | Vorname oder Vorname des Kontobenutzers |
-| `Surname` | Zeichenfolge | Nachname, Familienname oder Nachname des Kontobenutzers |
-| `AccountDisplayName` | Zeichenfolge | Name des Kontobenutzers, der im Adressbuch angezeigt wird. Normalerweise eine Kombination aus einem angegebenen oder Vornamen, einer mittleren Initiation und einem Nachnamen oder Nachnamen. |
-| `Department` | Zeichenfolge | Name der Abteilung, zu der der Benutzer des Kontos gehört |
-| `JobTitle` | Zeichenfolge | Position des Kontobenutzers |
-| `AccountName` | Zeichenfolge | Benutzername des Kontos |
-| `AccountDomain` | Zeichenfolge | Domäne des Kontos |
-| `EmailAddress` | Zeichenfolge | SMTP-Adresse des Kontos |
-| `SipProxyAddress` | Zeichenfolge | SIP-Adresse (Voice over IP, VoIP) des Sitzungs Initiierungs Protokolls des Kontos |
-| `City` | Zeichenfolge | Ort, an dem sich der Benutzer des Kontos befindet |
-| `Country` | Zeichenfolge | Land/Region, in dem sich der Benutzer des Kontos befindet |
-| `IsAccountEnabled` | boolean | Gibt an, ob das Konto aktiviert ist oder nicht. |
+| `AccountUpn` | string | Benutzerprinzipalname (UPN) des Kontos |
+| `OnPremSid` | string | Lokale Sicherheits-ID (SID) des Kontos |
+| `CloudSid` | string | Cloud-Sicherheits-ID des Kontos |
+| `GivenName` | string | Vorname oder Vorname des Kontobenutzers |
+| `Surname` | string | Nachname, Familienname oder Nachname des Kontobenutzers |
+| `AccountDisplayName` | string | Name des Kontobenutzers, der im Adressbuch angezeigt wird. Normalerweise eine Kombination aus einem angegebenen oder Vornamen, einer mittleren Initiation und einem Nachnamen oder Nachnamen. |
+| `Department` | string | Name der Abteilung, zu der der Benutzer des Kontos gehört |
+| `JobTitle` | string | Position des Kontobenutzers |
+| `AccountName` | string | Benutzername des Kontos |
+| `AccountDomain` | string | Domäne des Kontos |
+| `EmailAddress` | string | SMTP-Adresse des Kontos |
+| `SipProxyAddress` | string | SIP-Adresse (Voice over IP, VoIP) des Sitzungs Initiierungs Protokolls des Kontos |
+| `City` | string | Ort, an dem sich der Benutzer des Kontos befindet |
+| `Country` | string | Land/Region, in dem sich der Benutzer des Kontos befindet |
+| `IsAccountEnabled` | Boolescher Wert | Gibt an, ob das Konto aktiviert ist oder nicht. |
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)

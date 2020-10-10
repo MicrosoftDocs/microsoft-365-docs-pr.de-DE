@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: cb838e81752abddc9b8cc08bb9bd6f6c33e2beb0
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 17a7e2ed8e2124bc3ca820cedee7c4f89403d717
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198037"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413138"
 ---
 # <a name="emailevents"></a>EmailEvents
 

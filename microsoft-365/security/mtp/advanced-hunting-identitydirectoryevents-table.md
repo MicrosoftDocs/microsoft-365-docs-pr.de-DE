@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 118d96b797e9d46b4a9912f919cafbba680a9609
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: 9113d12face141b5e8005340af25061c98d5dfe3
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48305282"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48412850"
 ---
 # <a name="identitydirectoryevents"></a>IdentityDirectoryEvents
 

@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: ea6b65e5e6d676c5efb2622193197bae5b9ba1b2
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: 7f0b479051c46fe35ec9aea84b23ca0c4937fbfe
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338545"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48412322"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
@@ -39,8 +41,8 @@ Diese Funktion gibt eine Tabelle mit den folgenden Spalten zurück:
 | Spalte | Datentyp | Beschreibung |
 |------------|-------------|-------------|
 | `Timestamp` | datetime | Spätester Zeitpunkt, zu dem das Gerät mit der IP-Adresse beobachtet wurde |
-| `IPAddress` | Zeichenfolge | Vom Gerät verwendete IP-Adresse |
-| `IPType` | Zeichenfolge | Gibt an, ob es sich bei der IP-Adresse um eine öffentliche oder private Adresse handelt. |
+| `IPAddress` | string | Vom Gerät verwendete IP-Adresse |
+| `IPType` | string | Gibt an, ob es sich bei der IP-Adresse um eine öffentliche oder private Adresse handelt. |
 | `NetworkAdapterType` | int | Netzwerkadaptertyp, der von dem Gerät verwendet wird, dem die IP-Adresse zugewiesen wurde. Informationen zu den möglichen Werten finden Sie in [dieser Aufzählung](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype) |
 | `ConnectedNetworks` | int | Netzwerke, mit denen der Adapter mit der zugewiesenen IP-Adresse verbunden ist. Jedes JSON-Array enthält den Netzwerknamen, die Kategorie (öffentlich, privat oder Domäne), eine Beschreibung und ein Flag, das angibt, ob es öffentlich mit dem Internet verbunden ist. |
 

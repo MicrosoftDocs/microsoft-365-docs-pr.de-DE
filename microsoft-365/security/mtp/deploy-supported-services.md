@@ -14,17 +14,19 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 73d807a37f1c85e9d79353334cac4208b86bbdc2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 3a5db0b9709a9596ccd6560d7f2e546dd3753332
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198885"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413352"
 ---
 # <a name="deploy-supported-services"></a>Bereitstellen unterstützter Dienste
 
@@ -46,7 +48,7 @@ Eine Microsoft 365 E5, E5 Security, A5 oder A5-Sicherheitslizenz oder eine gült
 | Microsoft Defender ATP | Endpoint Protection-Suite um leistungsstarke Verhaltens Sensoren, Cloud Analytics und Threat Intelligence |
 | Office 365 ATP | Erweiterter Schutz für Ihre apps und Daten in Office 365, einschließlich e-Mail und anderer Tools für die Zusammenarbeit |
 | Azure ATP | Schutz vor fortgeschrittenen Bedrohungen, gefährdeten Identitäten und böswilligen Insidern mithilfe korrelierter Active Directory Signale |
-| Microsoft Cloud App Security | Identifizieren und bekämpfen von Bedrohungen in den Cloud-Diensten von Microsoft und Drittanbietern |
+| Microsoft Cloud App-Sicherheit | Identifizieren und bekämpfen von Bedrohungen in den Cloud-Diensten von Microsoft und Drittanbietern |
 
 ## <a name="deployed-services-and-functionality"></a>Bereitgestellte Dienste und Funktionen
 Bei der Bereitstellung von mehr unterstützten Diensten bietet Microsoft Threat Protection eine bessere Sichtbarkeit, Korrelation und Korrektur.
@@ -67,7 +69,7 @@ In der folgenden Tabelle ist aufgeführt, wie jeder unterstützte Dienst zusätz
 | Microsoft Defender ATP | -Endpunkt Zustände und Rohdaten Ereignisse<br />-Endpunkt Erkennungen und Warnungen, einschließlich Antivirus, EDR, Verringerung der Angriffsfläche<br />-Informationen zu Dateien und anderen Entitäten, die an Endpunkten beobachtet werden | Endpunkte |
 | Office 365 ATP | -Mail-und Postfachstatus und RAW-Ereignisse<br />-E-Mail-, Anlagen-und Link Erkennungen | -Postfächer<br />-Microsoft 365-Konten |
 | Azure ATP | -Active Directory Signale, einschließlich Authentifizierungsereignissen<br />-Identitätsbezogene Verhaltens Erkennungen | Identitäten |
-| Microsoft Cloud App Security | -Erkennung unsanktionierter Cloud-apps und-Dienste (Shadow IT)<br />-Belichtung von Daten an Cloud-apps<br />-Bedrohungsaktivität im Zusammenhang mit Cloud-apps | Cloud-Apps |
+| Microsoft Cloud App-Sicherheit | -Erkennung unsanktionierter Cloud-apps und-Dienste (Shadow IT)<br />-Belichtung von Daten an Cloud-apps<br />-Bedrohungsaktivität im Zusammenhang mit Cloud-apps | Cloud-Apps |
 
 ## <a name="deploy-the-services"></a>Bereitstellen der Dienste
 Für die Bereitstellung der einzelnen Dienste ist in der Regel ein Bereitstellungsaufwand für den Mandanten und eine anfängliche Konfiguration erforderlich. In der folgenden Tabelle erfahren Sie, wie diese Dienste bereitgestellt werden.
@@ -77,7 +79,7 @@ Für die Bereitstellung der einzelnen Dienste ist in der Regel ein Bereitstellun
 | Microsoft Defender ATP | [Microsoft Defender ATP-Bereitstellungshandbuch](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases) | *Siehe Anweisungen zur Vorstellungs Anweisung* |
 | Office 365 ATP | *None, mit Office 365* | [Konfigurieren von ATP-Richtlinien](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) |
 | Azure ATP | [Schnellstart: Erstellen Ihrer Azure ATP-Instanz](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) | *Siehe Anweisungen zur Vorstellungs Anweisung* |
-| Microsoft Cloud App Security | *Keine* | [Schnellstart: Erste Schritte mit der Microsoft Cloud-App-Sicherheit](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security) |
+| Microsoft Cloud App-Sicherheit | *Keine* | [Schnellstart: Erste Schritte mit der Microsoft Cloud-App-Sicherheit](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security) |
 
 Nachdem Sie die unterstützten Dienste bereitgestellt haben, [Aktivieren Sie Microsoft Threat Protection](mtp-enable.md).
 

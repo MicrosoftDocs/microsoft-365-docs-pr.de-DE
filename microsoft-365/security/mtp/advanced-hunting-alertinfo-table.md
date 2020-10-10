@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 61efedf8323833b65a5f0b0b857cd83a5c5b085a
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: ca89630a940ea56fd7ad968d1cba8a50dd9f4fa0
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198259"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413186"
 ---
 # <a name="alertinfo"></a>AlertInfo
 
@@ -46,8 +48,8 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `Category` | string | Typ des in der Warnung angegebenen Bedrohungsindikators bzw. der in der Warnung angegebenen Sicherheitsverletzungsaktivität |
 | `Severity` | string | Zeigt die potenziellen Auswirkungen (hoch, mittel oder gering) des in der Warnung angegebenen Bedrohungsindikators bzw. der in der Warnung angegebenen Sicherheitsverletzungsaktivität an |
 | `ServiceSource` | string | Produkt oder Dienst, der die Warnungsinformationen bereitgestellt hat |
-| `DetectionSource` | Zeichenfolge | Erkennungstechnologie oder Sensor, der die wichtige Komponente oder Aktivität identifiziert hat |
-| `AttackTechniques` | Zeichenfolge | Gehrungs ATT&ck Techniques, die mit der Aktivität verbunden sind, die die Warnung ausgelöst hat |
+| `DetectionSource` | string | Erkennungstechnologie oder Sensor, der die wichtige Komponente oder Aktivität identifiziert hat |
+| `AttackTechniques` | string | Gehrungs ATT&ck Techniques, die mit der Aktivität verbunden sind, die die Warnung ausgelöst hat |
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)

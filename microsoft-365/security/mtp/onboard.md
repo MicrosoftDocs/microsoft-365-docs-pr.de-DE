@@ -14,14 +14,16 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: conceptual
-ms.openlocfilehash: 0bc7ada54c0ce67ccbe1fded5970853672e08c1b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 774f3af001800f01ce956097f6b7441df2c0ddac
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201032"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413472"
 ---
 # <a name="configure-and-manage-microsoft-defender-atp-capabilities"></a>Konfigurieren und Verwalten der ATP-Funktionen von Microsoft Defender
 

@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Hier finden Sie Informationen zu den Microsoft 365-Konfigurationsschritten, die zum Einrichten einer SharePoint-Website für die Zusammenarbeit mit Gästen erforderlich sind.
-ms.openlocfilehash: 4f4b87a02c3ff3a1a7997aee69e3e1e95e4b2ed5
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: dbbf84539c1bef239abc76e142922976902a01ed
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357994"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48409036"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Zusammenarbeit mit Gästen in einer Website
 
@@ -37,20 +37,20 @@ Dieses Video zeigt die in diesem Dokument beschriebenen Konfigurationsschritte.<
 
 ## <a name="azure-external-collaboration-settings"></a>Einstellungen für Azure-externe Zusammenarbeit
 
-Die Freigabe in Microsoft 365 wird auf der höchsten Ebene durch die [Einstellungen für organisatorische Beziehungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations)gesteuert. Wenn die Gast Freigabe in Azure AD deaktiviert oder eingeschränkt ist, werden alle Freigabeeinstellungen, die Sie in Microsoft 365 konfigurieren, außer Kraft gesetzt.
+Die Freigabe in Microsoft 365 wird auf der höchsten Ebene durch die [Einstellungen für organisatorische Beziehungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations)gesteuert. Wenn die Gast Freigabe in Azure AD deaktiviert oder eingeschränkt ist, überschreibt diese Einstellung alle Freigabeeinstellungen, die Sie in Microsoft 365 konfigurieren.
 
 Überprüfen Sie die Einstellungen für die externe Zusammenarbeit, um sicherzustellen, dass die Freigabe für Gäste nicht blockiert wird.
 
 ![Screenshot von Azure Active Directory Seite "Einstellungen für externe Zusammenarbeit"](../media/azure-ad-organizational-relationships-settings.png)
 
-So legen Sie Einstellungen für die externe Zusammenarbeit fest:
+So legen Sie Einstellungen für die externe Zusammenarbeit fest
 
-
-1. Melden Sie sich bei Microsoft Azure an an [https://portal.azure.com](https://portal.azure.com) .
+1. Melden Sie sich bei Azure Active Directory unter an [https://aad.portal.azure.com](https://aad.portal.azure.com) .
 2. Klicken Sie im linken Navigationsbereich auf **Azure Active Directory**.
-3. Wählen Sie **externe Identitäten** aus, und klicken Sie auf **Einstellungen für externe Zusammenarbeit**.
-4. Stellen Sie im Bereich **Einstellungen für Gast invite** sicher, dass **Administratoren und Benutzer in der Rolle "Gast** einladender" eingeladen werden können und dass **Mitglieder eingeladen** werden können, und dass Sie auf " **Ja**" festgelegt sind.
-5. Wenn Sie Änderungen vorgenommen haben, klicken Sie auf **Speichern**.
+3. Klicken Sie auf **externe Identitäten**.
+4. Klicken Sie auf dem Bildschirm **Erste Schritte** im linken Navigationsbereich auf **Einstellungen für externe Zusammenarbeit**.
+5. Stellen Sie sicher, dass **Administratoren und Benutzer in der Rolle "Gast einladender" eingeladen** werden und **Mitglieder einladen können** , beide auf " **Ja**" festgelegt sind.
+6. Wenn Sie Änderungen vorgenommen haben, klicken Sie auf **Speichern**.
 
 Beachten Sie die Einstellungen im Abschnitt Einschränkungen für die **Zusammenarbeit** . Stellen Sie sicher, dass die Domänen der Gäste, mit denen Sie zusammenarbeiten möchten, nicht blockiert werden.
 
@@ -64,28 +64,27 @@ Moderne SharePoint-Websites verwenden Microsoft 365-Gruppen, um den Website Zugr
 
 So legen Sie die Gast Einstellungen für Microsoft 365-Gruppen fest
 
-1. Erweitern Sie im Microsoft 365 Admin Center in der linken Navigationsleiste **Einstellungen**.
-2. Klicken Sie auf **Dienste &-Add-ins**.
+1. Erweitern Sie im Microsoft 365 Admin Center im linken Navigationsbereich die Option **Einstellungen**.
+2. Klicken Sie auf **org-Einstellungen**.
 3. Klicken Sie in der Liste auf **Microsoft 365-Gruppen**.
-4. Stellen Sie sicher, dass die Gruppen **Mitglieder außerhalb Ihrer Organisation Zugriff auf Gruppeninhalte** haben und Gruppen **Besitzer Personen außerhalb Ihrer Organisation hinzufügen zulassen** Kontrollkästchen aktiviert sind.
+4. Stellen Sie sicher, dass die **Gruppenbesitzer zulassen Personen außerhalb Ihrer Organisation zu Microsoft 365-Gruppen hinzufügen** und die Kontrollkästchen Benutzer **Gruppenmitglieder können Zugriff auf Gruppeninhalte zulassen** aktiviert haben.
 5. Wenn Sie Änderungen vorgenommen haben, klicken Sie auf **Änderungen speichern**.
-
 
 ## <a name="sharepoint-organization-level-sharing-settings"></a>SharePoint-Freigabeeinstellungen auf Organisationsebene
 
 Damit Gästezugriff auf SharePoint-Websites haben, müssen die SharePoint-Freigabeeinstellungen auf Organisationsebene für die Freigabe für Gäste zulässig sein.
 
-Die Einstellungen auf Organisationsebene bestimmen, welche Einstellungen für einzelne Websites verfügbar sind. Websiteeinstellungen dürfen nicht so restriktiv wie die Einstellungen auf Organisationsebene sein.
+Die Einstellungen auf Organisationsebene bestimmen die Einstellungen, die für einzelne Websites verfügbar sind. Websiteeinstellungen dürfen nicht so restriktiv wie die Einstellungen auf Organisationsebene sein.
 
 Wenn Sie die Freigabe nicht authentifizierter Dateien und Ordner zulassen möchten, wählen Sie **jeden**aus. Wenn Sie sicherstellen möchten, dass sich alle Personen außerhalb Ihrer Organisation authentifizieren müssen, wählen Sie **neue und vorhandene Gäste**aus. Wählen Sie die frei zügigste Einstellung aus, die von einer beliebigen Website in Ihrer Organisation benötigt wird.
 
 ![Screenshot der SharePoint-Freigabeeinstellungen auf Organisationsebene](../media/sharepoint-organization-external-sharing-controls.png)
 
 
-So legen Sie Freigabeeinstellungen für SharePoint-Organisationsebene fest
+So legen Sie Freigabeeinstellungen für SharePoint auf Organisationsebene fest
 
-1. Klicken Sie im Microsoft 365 Admin Center in der linken Navigationsleiste unter **Admin Centers**auf **SharePoint**.
-2. Klicken Sie im SharePoint Admin Center links in der Navigation auf **Freigabe**.
+1. Klicken Sie im Microsoft 365 Admin Center im linken Navigationsbereich unter **Admin Centers**auf **SharePoint**.
+2. Klicken Sie im SharePoint Admin Center im linken Navigationsbereich unter **Richtlinien**auf **Freigabe**.
 3. Stellen Sie sicher, dass die externe Freigabe für SharePoint auf " **jeder** " oder " **neue und vorhandene Gäste**" festgelegt ist.
 4. Wenn Sie Änderungen vorgenommen haben, klicken Sie auf **Speichern**.
 
@@ -98,13 +97,13 @@ So erstellen Sie eine Website
 2. Klicken Sie auf **Erstellen**.
 3. Klicken Sie auf **Team Website**.
 4. Geben Sie einen Websitenamen ein, und geben Sie einen Namen für den Gruppenbesitzer (Websitebesitzer) ein.
-5. Wählen Sie unter **Erweiterte Einstellungen**aus, ob es sich um eine öffentliche oder private Website handeln soll.
+5. Wählen Sie unter **Erweiterte Einstellungen**aus, ob diese Website öffentlich oder privat sein soll.
 6. Klicken Sie auf **Weiter**.
 7. Klicken Sie auf **Fertig stellen**.
 
 Wir laden Benutzer später ein. Als nächstes ist es wichtig, die Freigabeeinstellungen auf Standortebene für diese Website zu überprüfen.
 
-## <a name="sharepoint-site-level-sharing-settings"></a>Freigabeeinstellungen für SharePoint-Websiteebene
+## <a name="sharepoint-site-level-sharing-settings"></a>SharePoint-Freigabeeinstellungen auf Websiteebene
 
 Überprüfen Sie die Freigabeeinstellungen auf Standortebene, um sicherzustellen, dass die gewünschten Zugriffstypen für diese Website zulässig sind. Wenn Sie beispielsweise die Einstellungen auf Organisationsebene auf " **jeder**" festlegen, aber alle Gäste für diese Website authentifizieren möchten, stellen Sie sicher, dass die Freigabeeinstellungen auf Standortebene auf " **neu" und "vorhandene Gäste**" festgelegt sind.
 
@@ -114,8 +113,8 @@ Beachten Sie, dass die Website nicht für nicht authentifizierte Personen freige
 
 So legen Sie Freigabeeinstellungen auf Websiteebene fest
 1. Erweitern Sie im SharePoint Admin Center links in der Navigation **Sites** und klicken Sie auf **Aktive Sites**.
-2. Wählen Sie die Website aus, die Sie soeben erstellt haben.
-3. Klicken Sie im Menüband auf **Freigabe**. 
+2. Wählen Sie die Website aus, die Sie freigeben möchten.
+3. Klicken Sie auf..., und klicken Sie auf **Freigabe**.
 4. Stellen Sie sicher, dass die Freigabe auf " **jeder** " oder " **neue und vorhandene Gäste**" festgelegt ist.
 5. Wenn Sie Änderungen vorgenommen haben, klicken Sie auf **Speichern**.
 
@@ -125,17 +124,19 @@ Die Einstellungen für die Gast Freigabe sind nun konfiguriert, sodass Sie mit d
 
 So laden Sie interne Benutzer zu einer Gruppe ein
 1. Navigieren Sie zu der Website, auf der Sie Benutzer hinzufügen möchten.
-2. Klicken Sie oben rechts auf **Mitglieder** .
+2. Klicken Sie in der oberen rechten Ecke auf **Mitglieder** -Link, der die Mitgliederanzahl kennzeichnet.
 3. Klicken Sie auf **Mitglieder hinzufügen**.
 4. Geben Sie die Namen oder e-Mail-Adressen der Benutzer ein, die Sie zur Website einladen möchten, und klicken Sie dann auf **Speichern**.
 
-Gastbenutzer können nicht von der Website hinzugefügt werden. Sie müssen Sie mit Outlook im Internet hinzufügen.
+Gastbenutzer können nicht von der Website hinzugefügt werden. Sie müssen Sie mit Outlook im Internet hinzufügen. Klicken Sie daher als Voraussetzung für das Hinzufügen und einladen von Gästen zu einer Gruppe auf die URL der Website in der Spalte **URL**  , um zur Website spezifischen Seite zu navigieren. Klicken Sie auf dieser Seite auf das **App-Startprogramm** Symbol, und wählen Sie **Outlook**aus. Auf diesem Bildschirm können Sie Gäste in eine Gruppe einladen, die nachfolgend beschrieben wird.
 
 So laden Sie Gäste zu einer Gruppe ein
-1. Klicken Sie in Outlook im Internet unter **Gruppen**auf die Gruppe, der Sie Mitglieder hinzufügen möchten.
-2. Öffnen Sie die Gruppen Visitenkarte, und klicken Sie dann unter **Weitere Optionen** (...) auf **Mitglieder hinzufügen**.
-3. Geben Sie die e-Mail-Adressen der Gäste ein, die Sie einladen möchten, und klicken Sie dann auf **Hinzufügen**.
-4. Klicken Sie auf **Schließen**.
+1. Klicken Sie unter **Gruppen**auf die Gruppe, für die Sie Gäste einladen möchten.
+2. Öffnen Sie die Gruppe Visitenkarte, klicken Sie auf **Mitglieder** Link in der oberen rechten Ecke (der Link, der die Mitgliederanzahl kennzeichnet).
+3. Klicken Sie auf **Mitglieder hinzufügen**.
+4. Geben Sie die e-Mail-Adressen der Gäste ein, die Sie einladen möchten, und klicken Sie dann auf **Hinzufügen**.
+5. Klicken Sie auf **Schließen**.
+Beachten Sie, dass Sie nur auf **Schließen** klicken müssen, wenn Sie nicht der Besitzer der Gruppe sind und daher nicht berechtigt sind, den Gast der Gruppe hinzuzufügen. In diesen Fällen wird die Anforderung zum Hinzufügen des Gasts in der Gruppe zur Genehmigung an den Gruppenbesitzer übergeben.
 
 ## <a name="see-also"></a>Siehe auch
 

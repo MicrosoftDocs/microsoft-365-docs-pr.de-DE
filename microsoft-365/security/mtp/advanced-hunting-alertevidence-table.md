@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: a7e2eca147bb956606380b9ac97a91b898830dd0
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: ec6fe3d080efb396ce0ecacadd3d5d9a8fa9f8d1
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197269"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413198"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
@@ -40,31 +42,31 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Datum und Uhrzeit der Aufzeichnung des Ereignisses |
 | `AlertId` | string | Eindeutiger Bezeichner der Warnung |
-| `ServiceSource` | Zeichenfolge | Produkt oder Dienst, der die Warnungsinformationen bereitgestellt hat |
-| `EntityType` | Zeichenfolge | Objekttyp, beispielsweise eine Datei, ein Prozess, ein Gerät oder ein Benutzer |
-| `EvidenceRole` | Zeichenfolge | Wie die Entität an einer Warnung beteiligt ist und angibt, ob Sie betroffen ist oder lediglich mit ihr zusammenhängen soll |
-| `EvidenceDirection` | Zeichenfolge | Gibt an, ob es sich bei der Entität um die Quelle oder das Ziel einer Netzwerkverbindung handelt. |
+| `ServiceSource` | string | Produkt oder Dienst, der die Warnungsinformationen bereitgestellt hat |
+| `EntityType` | string | Objekttyp, beispielsweise eine Datei, ein Prozess, ein Gerät oder ein Benutzer |
+| `EvidenceRole` | string | Wie die Entität an einer Warnung beteiligt ist und angibt, ob Sie betroffen ist oder lediglich mit ihr zusammenhängen soll |
+| `EvidenceDirection` | string | Gibt an, ob es sich bei der Entität um die Quelle oder das Ziel einer Netzwerkverbindung handelt. |
 | `FileName` | string | Name der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
 | `FolderPath` | string | Ordner mit der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
 | `SHA1` | string | SHA-1 der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
 | `SHA256` | string | SHA-256 der Datei, auf die die aufgezeichnete Aktion angewendet wurde. Dieses Feld wird in der Regel nicht aufgefüllt, wenn es verfügbar ist, verwenden Sie die SHA1-Spalte. |
 | `FileSize` | int | Größe der Datei in Bytes |
-| `ThreatFamily` | Zeichenfolge | Schadsoftware-Familie, unter der die verdächtige oder böswillige Datei oder der Prozess klassifiziert wurde |
+| `ThreatFamily` | string | Schadsoftware-Familie, unter der die verdächtige oder böswillige Datei oder der Prozess klassifiziert wurde |
 | `RemoteIP` | string | IP-Adresse, mit der eine Verbindung hergestellt wurde |
 | `RemoteUrl` | string | URL oder vollqualifizierter Domänenname (FQDN), mit der bzw. dem eine Verbindung hergestellt wurde |
 | `AccountName` | string | Benutzername des Kontos |
-| `AccountDomain` | Zeichenfolge | Domäne des Kontos |
-| `AccountSid` | Zeichenfolge | Sicherheits-ID (SID) des Kontos |
-| `AccountObjectId` | Zeichenfolge | Eindeutiger Bezeichner für das Konto in Azure Active Directory |
-| `DeviceId` | Zeichenfolge | Eindeutiger Bezeichner für das Gerät im Dienst |
+| `AccountDomain` | string | Domäne des Kontos |
+| `AccountSid` | string | Sicherheits-ID (SID) des Kontos |
+| `AccountObjectId` | string | Eindeutiger Bezeichner für das Konto in Azure Active Directory |
+| `DeviceId` | string | Eindeutiger Bezeichner für das Gerät im Dienst |
 | `DeviceName` | string | Vollqualifizierter Domänenname (FQDN) des Computers |
 | `LocalIP` | string | IP-Adresse, die dem lokalen Gerät zugewiesen ist, das während der Kommunikation verwendet wird |
 | `NetworkMessageId` | string | Eindeutiger Bezeichner für die von Office 365 generierte E-Mail |
 | `EmailSubject` | string | Betreff der E-Mail |
 | `ApplicationId` | string | Eindeutiger Bezeichner für die Anwendung |
-| `Application` | Zeichenfolge | Anwendung, die die aufgezeichnete Aktion ausgeführt hat |
-| `ProcessCommandLine` | Zeichenfolge | Befehlszeile, die zum Erstellen des neuen Prozesses verwendet wird |
-| `AdditionalFields` | Zeichenfolge | Weitere Informationen zum Ereignis im JSON-Array Format |
+| `Application` | string | Anwendung, die die aufgezeichnete Aktion ausgeführt hat |
+| `ProcessCommandLine` | string | Befehlszeile, die zum Erstellen des neuen Prozesses verwendet wird |
+| `AdditionalFields` | string | Weitere Informationen zum Ereignis im JSON-Array Format |
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)

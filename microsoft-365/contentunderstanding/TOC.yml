@@ -6,7 +6,7 @@
       href: document-understanding-overview.md
     - name: Übersicht über die Formularverarbeitung
       href: form-processing-overview.md
-    - name: Unterschied zwischen den Modellen "Dokumentenverständnis" und "Formularverarbeitung"
+    - name: Unterschied zwischen Dokumentverständnis- und Formularverarbeitungsmodellen
       href: difference-between-document-understanding-and-form-processing-model.md
 - name: Erste Schritte mit Modellen
   items:
@@ -14,11 +14,11 @@
       href: learn-about-document-understanding-models-through-the-sample-model.md
     - name: Erstellen eines Inhaltscenters
       href: create-a-content-center.md
-    - name: Erstellen einer Klassifizierung
+    - name: Erstellen eines Klassifizierers
       href: create-a-classifier.md
     - name: Erstellen eines Extraktors
       href: create-an-extractor.md
-    - name: Beschreibungstypen
+    - name: Erklärungstypen
       href: explanation-types-overview.md
     - name: Anwenden eines Modells
       href: apply-a-model.md
@@ -38,8 +38,6 @@
   items:
     - name: Inhaltsverständnis einrichten
       href: set-up-content-understanding.md
-    - name: Bild Kennzeichnung
-      href: image-tagging.md
 - name: Inhaltsdienste
   items:
     - name: Importieren mit SKOS

@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 6d627dcf3d6ec8ca1d2aa76eab484361c25b529e
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: a89622206917c6b343ce47638c443b789513367b
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338417"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48412178"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -37,20 +39,20 @@ Die `FileProfile()` Funktion ist eine Anreicherungs Funktion in [Advanced Huntin
 | Spalte | Datentyp | Beschreibung |
 |------------|-------------|-------------|
 | SHA1 | string | SHA-1 der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
-| SHA256 | Zeichenfolge | SHA-256 der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
-| MD5 | Zeichenfolge | MD5-Hash der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
+| SHA256 | string | SHA-256 der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
+| MD5 | string | MD5-Hash der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
 | FileSize | int | Größe der Datei in Bytes |
 | GlobalPrevalence | int | Anzahl der Instanzen der Entität, die von Microsoft Global beobachtet wurden |
 | GlobalFirstSeen | Datum/Uhrzeit | Datum und Uhrzeit, zu der die Entität erstmals von Microsoft Global beobachtet wurde |
 | GlobalLastSeen | Datum/Uhrzeit | Datum und Uhrzeit, zu der die Entität zuletzt von Microsoft Global beobachtet wurde |
-| Signierers | Zeichenfolge | Informationen über den unterschreibenden der Datei |
-| Aussteller | Zeichenfolge | Informationen zur ausstellenden Zertifizierungsstelle (Certification Authority, ca) |
-| SignerHash | Zeichenfolge | Eindeutiger Hashwert zur Identifizierung der signierenden |
-| IsCertificateValid | boolescher | Gibt an, ob das zum Signieren der Datei verwendete Zertifikat gültig ist. |
-| IsRootSignerMicrosoft | boolescher | Gibt an, ob die Signatur des Stammzertifikats Microsoft lautet. |
-| IsExecutable | boolescher | Gibt an, ob es sich bei der Datei um eine PE-Datei (Portable Executable) handelt |
-| Bedrohungsname | Zeichenfolge | Erkennungsname für Schadsoftware oder andere gefundene Bedrohungen |
-| Publisher | Zeichenfolge | Name der Organisation, die die Datei veröffentlicht hat |
+| Signierers | string | Informationen über den unterschreibenden der Datei |
+| Aussteller | string | Informationen zur ausstellenden Zertifizierungsstelle (Certification Authority, ca) |
+| SignerHash | string | Eindeutiger Hashwert zur Identifizierung der signierenden |
+| IsCertificateValid | Boolescher Wert | Gibt an, ob das zum Signieren der Datei verwendete Zertifikat gültig ist. |
+| IsRootSignerMicrosoft | Boolescher Wert | Gibt an, ob die Signatur des Stammzertifikats Microsoft lautet. |
+| IsExecutable | Boolescher Wert | Gibt an, ob es sich bei der Datei um eine PE-Datei (Portable Executable) handelt |
+| Bedrohungsname | string | Erkennungsname für Schadsoftware oder andere gefundene Bedrohungen |
+| Publisher | string | Name der Organisation, die die Datei veröffentlicht hat |
 | Software Name | string | Name des Softwareprodukts |
 
 ## <a name="syntax"></a>Syntax

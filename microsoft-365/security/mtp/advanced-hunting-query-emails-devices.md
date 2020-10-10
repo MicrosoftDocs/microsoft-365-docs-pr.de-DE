@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 5b2ef4881eabea7e546eb8cd3d164b372b0018ee
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 9f5468ccb853bbbe126198a14f7b824d953a2738
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199830"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48412634"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Jagen nach Bedrohungen auf Geräten, e-Mails, Apps und Identitäten
 

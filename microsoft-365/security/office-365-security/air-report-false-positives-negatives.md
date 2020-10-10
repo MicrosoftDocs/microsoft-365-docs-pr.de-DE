@@ -17,15 +17,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365-initiative-defender-office365
 ms.topic: conceptual
 ms.custom:
 - autoir
-ms.openlocfilehash: fa6b4ae03a3cf62398a270d65a29e6b4c955173a
-ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
+ms.openlocfilehash: b9f037e3e6d798122b8d3c7ffd3476e34bd5a76b
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48308932"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48411962"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Vorgehensweise Melden von falsch positiven/negativen Ergebnissen in automatisierten Ermittlungs-und Antwortfunktionen
 
@@ -67,7 +68,7 @@ Mit Threat Explorer kann Ihr Sicherheits Betriebsteam eine von einer Aktion betr
 
 ****
 
-|Szenario|Rückgängig-Optionen|Weitere Informationen|
+|Szenario|Rückgängig-Optionen|Mehr erfahren|
 |---|---|---|
 |Eine e-Mail-Nachricht wurde an den Junk-e-Mail-Ordner eines Benutzers weitergeleitet.|-Verschiebt die Nachricht in den Ordner "Gelöschte Elemente" des Benutzers.<br/>-Verschieben der Nachricht in den Posteingang des Benutzers <br/>-Nachricht löschen|[Suchen und untersuchen schädlicher e-Mails, die in Office 365 bereitgestellt wurden](https://docs.microsoft.com/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered)|
 |Eine e-Mail-Nachricht oder eine Datei wurde unter Quarantäne gestellt|-Freigeben der e-Mail oder Datei <br/>-Löschen der e-Mail oder Datei|[Verwalten von isolierten Nachrichten und Dateien als Administrator in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/manage-quarantined-messages-and-files)|
