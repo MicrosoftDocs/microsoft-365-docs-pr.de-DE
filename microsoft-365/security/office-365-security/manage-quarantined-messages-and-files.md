@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren erfahren, wie Sie isolierte Nachrichten für alle Benutzer in Exchange Online Protection (EoP) anzeigen und verwalten können. Administratoren in Organisationen mit Office 365 Advanced Threat Protection (Office 365 ATP) können auch unter Quarantäne gestellte Dateien in SharePoint Online, OneDrive für Unternehmen und Microsoft Teams verwalten.
-ms.openlocfilehash: 1969a282d5d083886b9ad5a8aae54896ea9b1fc1
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 7e9b49e7e7a90f5271a65bb26cecdd1a7ce2ab84
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202423"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417223"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Verwalten von isolierten Nachrichten und Dateien als Administrator in EOP
 
@@ -65,25 +65,15 @@ Sie können isolierte Nachrichten im Security & Compliance Center oder in PowerS
 3. Sie können die Ergebnisse sortieren, indem Sie auf eine verfügbare Spaltenüberschrift klicken. Klicken Sie auf **Spalten ändern**, um höchstens sieben Spalten anzuzeigen. Die Standardwerte sind mit einem Sternchen (<sup>\*</sup>) gekennzeichnet:
 
    - **Empfangen**<sup>\*</sup>
-
    - **Absender**<sup>\*</sup>
-
    - **Betreff**<sup>\*</sup>
-
    - **Quarantänegrund**<sup>\*</sup>
-
    - **Veröffentlicht?**<sup>\*</sup>
-
    - **Richtlinientyp**<sup>\*</sup>
-
    - **Empfänger**
-
    - **Nachrichten-ID**
-
    - **Name der Richtlinie**
-
    - **Größe**
-
    - **Richtung**
 
    Klicken Sie nach Abschluss des Vorgangs auf **Speichern**, oder klicken Sie auf **Als Standard festlegen**.
@@ -91,29 +81,19 @@ Sie können isolierte Nachrichten im Security & Compliance Center oder in PowerS
 4. Klicken Sie auf **Filter**, um die Ergebnisse zu filtern. Die verfügbaren Filter sind:
 
    - **Ablaufzeit**: Filtern von Nachrichten nach ihrem Ablauf aus der Quarantäne:
-
      - **Heute**
-
      - **Nächste 2 Tage**
-
      - **Nächste 7 Tage**
-
      - **Benutzerdefiniert**: Geben Sie ein **Anfangsdatum** und **Enddatum** ein.
 
    - **Empfangszeit**: Geben Sie ein **Anfangsdatum** und **Enddatum** ein.
 
    - **Quarantänegrund**:
-
      - **Richtlinie**: die Nachricht stimmte mit den Bedingungen einer Nachrichtenfluss Regel überein (auch als Transportregel bezeichnet).
-
      - **Massensendung**
-
-     - **Phishing**
-
+     - **Phishing**: das Spamfilter Urteil lautete, dass die Nachricht durch **Phishing-e-Mails** oder Anti-Phishing-schutzisoliert wurde ([Spoof-Einstellungen](set-up-anti-phishing-policies.md#spoof-settings) oder [Identitätswechsel Schutz](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)).
      - **Schadsoftware**
-
      - **Spam**
-
      - **Phishing mit hoher Zuverlässigkeit**
 
    - **E-Mail-Empfänger**: alle Benutzer oder nur an Sie gesendete Nachrichten. Endbenutzer können nur isolierte Nachrichten verwalten, die an Sie gesendet werden.
@@ -175,11 +155,8 @@ Nachdem Sie eine Nachricht ausgewählt haben, haben Sie mehrere Möglichkeiten, 
   - **Melden von Nachrichten an Microsoft zur Analyse**: diese Option ist standardmäßig aktiviert und meldet die irrtümlich unter Quarantäne gestellte Nachricht an Microsoft als falsch positiv. Wenn die Nachricht als Spam, Massen, Phishing oder mit Schadsoftware isoliert wurde, wird die Nachricht auch an das Microsoft-Spam Analyse Team gemeldet. Je nach Analyse können die Dienst weiten spamfilterregeln so angepasst werden, dass die Nachricht durchlassen wird.
 
   - Wählen Sie eine der folgenden Optionen aus:
-
     - **Freigeben von Nachrichten für alle Empfänger**
-
     - **Freigeben von Nachrichten an bestimmte Empfänger**
-
     - **Freigeben von Nachrichten für andere Personen**
 
   Klicken Sie nach Abschluss des Vorgangs auf **Nachrichten freigeben**.
@@ -195,7 +172,6 @@ Nachdem Sie eine Nachricht ausgewählt haben, haben Sie mehrere Möglichkeiten, 
 - **Vorschau der Nachricht anzeigen**: Wählen Sie im angezeigten Flyout-Fenster eine der folgenden Optionen:
 
   - **Quellansicht**: Zeigt die HTML-Version des Nachrichtentextes an, wobei alle Links deaktiviert sind.
-  
   - **Textansicht**: Zeigt den Nachrichtentext im Klartext an.
 
 - **Aus Quarantäne entfernen**: Nachdem Sie in der angezeigten Warnmeldung auf **Ja** klicken, wird die Nachricht sofort gelöscht, ohne an die ursprünglichen Empfänger gesendet zu werden.
@@ -245,37 +221,23 @@ In Organisationen mit ATP können Administratoren isolierte Dateien in SharePoin
 3. Sie können die Ergebnisse sortieren, indem Sie auf eine verfügbare Spaltenüberschrift klicken. Klicken Sie auf **Spalten ändern**, um höchstens sieben Spalten anzuzeigen. Die Standardspalten sind mit einem Sternchen ( <sup>\*</sup> ) gekennzeichnet:
 
    - **Benutzer**<sup>\*</sup>
-
    - **Speicherort**<sup>\*</sup>
-
    - **Dateiname**<sup>\*</sup>
-
    - **Datei-URL**<sup>\*</sup>
-
    - **Dateigröße**<sup>\*</sup>
-
    - **Läuft ab**<sup>\*</sup>
-
    - **Veröffentlicht?**<sup>\*</sup>
-
    - **Erkannt von**
-
    - **Geändert von Zeit**
 
 4. Klicken Sie auf **Filter**, um die Ergebnisse zu filtern. Die verfügbaren Filter sind:
 
    - **Ablaufzeit**: Filtern von Nachrichten nach ihrem Ablauf aus der Quarantäne:
-
      - **Heute**
-
      - **Nächste 2 Tage**
-
      - **Nächste 7 Tage**
-
      - Ein benutzerdefiniertes Datum/Zeitintervall.
-
    - **Empfangszeit**
-
    - **Quarantäne Grund**: der einzige verfügbare Wert ist **Schadsoftware**.
 
 Nachdem Sie eine bestimmte isolierte Datei gefunden haben, wählen Sie die Datei aus, um Details dazu anzuzeigen, und nehmen Sie Aktionen vor (beispielsweise anzeigen, freigeben, herunterladen oder Löschen der Nachricht).
@@ -293,29 +255,17 @@ Nachdem Sie eine bestimmte isolierte Datei gefunden haben, wählen Sie die Datei
 Wenn Sie eine Datei in der Liste auswählen, werden im **Detail** -Flyout-Bereich die folgenden Dateidetails angezeigt:
 
 - **Dateiname**
-
 - **Datei-URL**: URL, die den Speicherort der Datei definiert (beispielsweise in SharePoint Online).
-
 - **Böswilliger Inhalt erkannt in** Das Datum/die Uhrzeit, zu dem die Datei isoliert wurde.
-
 - **Expires**: das Datum, an dem die Datei aus der Quarantäne gelöscht wird.
-
 - **Erkannt von**: ATP (Advanced Threat Protection) oder Microsofts Anti-Malware Engine.
-
 - **Veröffentlicht?**
-
 - **Name der Schadsoftware**
-
 - **Dokument-ID**: ein eindeutiger Bezeichner für das Dokument.
-
 - **Dateigröße**: in Kilobyte (KB).
-
 - **Organisation** Die eindeutige ID Ihrer Organisation.
-
 - **Zuletzt geändert**
-
 - **Geändert von**: der Benutzer, der die Datei zuletzt geändert hat.
-
 - **Secure Hash Algorithm 256-Bit (SHA-256)-Wert**: Sie können diesen Hashwert verwenden, um die Datei in anderen Reputation Stores oder an anderen Speicherorten in Ihrer Umgebung zu identifizieren.
 
 ### <a name="take-action-on-quarantined-files"></a>Ausführen von Aktionen für isolierte Dateien
@@ -323,9 +273,7 @@ Wenn Sie eine Datei in der Liste auswählen, werden im **Detail** -Flyout-Bereic
 Wenn Sie eine Datei in der Liste auswählen, können Sie die folgenden Aktionen für die Datei im **Detail** -Flyout-Bereich ausführen:
 
 - **Dateien freigeben**: Wählen Sie (Standard) aus, oder heben Sie **die Auswahl von Berichtsdateien für Microsoft für die Analyse auf**, und klicken Sie dann auf **Dateien freigeben**.
-
 - **Datei herunterladen**
-
 - **Datei aus Quarantäne entfernen**
 
 Wenn Sie die Dateien nicht freigeben oder entfernen, werden Sie nach Ablauf der standardmäßigen Aufbewahrungszeit für Quarantäne gelöscht.
@@ -335,7 +283,6 @@ Wenn Sie die Dateien nicht freigeben oder entfernen, werden Sie nach Ablauf der 
 Wenn Sie mehrere isolierte Dateien in der Liste auswählen (bis zu 100), wird der Flyout-Bereich **Massenaktionen** angezeigt, in dem Sie die folgenden Aktionen ausführen können:
 
 - **Veröffentlichungsdateien**
-
 - **Dateien löschen**: Nachdem Sie in der angezeigten Warnmeldung auf **Ja** klicken, werden die Dateien sofort gelöscht.
 
 1. Melden Sie sich mit einem Arbeits-oder Schulkonto mit globalen Administratorrechten (oder geeigneten Sicherheits & Compliance Center-Rollen) in Ihrer Organisation an, und [wechseln Sie zum Security & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).

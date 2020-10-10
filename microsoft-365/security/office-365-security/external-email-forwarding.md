@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: f729aa816caf8fb07499037ee27fbfc37b7205b3
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c0a3849d330b508630eb60c7ee24cd8b498a32b8
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202879"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417225"
 ---
 # <a name="configuring-external-email-forwarding-in-office-365"></a>Konfigurieren der externen e-Mail-Weiterleitung in Office 365
 
@@ -28,7 +28,7 @@ ms.locfileid: "48202879"
 
 Die externe Weiterleitung wird von der *ausgehenden Anti-Spam-Richtlinie* gesteuert und auf der Grundlage der konfigurierten Einstellung auf Benutzer beschränkt. Derzeit werden 3 Einstellungen unterstützt:
 
-- **Automatic** – in diesem Modus ist das System für die Entscheidung zuständig, ob eine weitergeleitete Nachricht zulässig ist oder nicht.  Dies ist der Standardmodus, und in diesem Modus wird das System die automatische externe Weiterleitung blockieren.
+- **Automatic** – Dies wird vom System gesteuert: es ermöglicht das Filtern von ausgehenden Spam Funktionen zur Steuerung der automatischen externen e-Mail-Weiterleitung. Dies ist die Standardeinstellung.
 
 - **On** – automatische externe Weiterleitung ist zulässig und nicht eingeschränkt.
 
@@ -37,7 +37,7 @@ Die externe Weiterleitung wird von der *ausgehenden Anti-Spam-Richtlinie* gesteu
 Weitere Informationen zum Konfigurieren dieser Einstellungen finden Sie unter [Configure outbound Spam Filtering in EoP](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide&preserve-view=true) .
 
 > [!NOTE]
-> Durch das Deaktivieren der automatischen Weiterleitung werden auch Posteingangsregeln dsable, die Nachrichten an externe Adressen umleiten.
+> Durch das Deaktivieren der automatischen Weiterleitung werden auch Posteingangsregeln deaktiviert, die Nachrichten an externe Adressen umleiten.
 
 ## <a name="controlling-external-email-forwarding"></a>Steuern der externen e-Mail-Weiterleitung
 

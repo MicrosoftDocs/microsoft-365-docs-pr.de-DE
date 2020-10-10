@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-office365
 description: In diesem Artikel erfahren Sie mehr über die Verwendung von Explorer und Echt Zeit Erkennungen im Security &amp; Compliance Center, um Bedrohungen effektiv und effizient zu untersuchen und auf diese zu reagieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 20b13e177a69d981a4c6793d4810256e33158a35
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: ab691e88c8450e4f1ab898fe6a9d75d6682370a5
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48414262"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417378"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer und Echtzeiterkennung
 
@@ -48,6 +48,101 @@ Mit diesem Bericht haben Sie folgende Möglichkeiten:
 - [Starten eines automatisierten unter Such-und Antwort Prozesses aus einer Ansicht im Explorer](#start-automated-investigation-and-response) (nur ATP-Plan 2)
 - ... [Untersuchung schädlicher e-Mails und vieles mehr](#more-ways-to-use-explorer-or-real-time-detections)!
 
+## <a name="improvements-to-threat-hunting-experience-upcoming"></a>Verbesserungen bei der Jagd nach Bedrohungen (bevorstehende)
+
+### <a name="updated-threat-information-for-emails"></a>Aktualisierte Bedrohungsinformationen für e-Mails
+
+Wir haben uns auf Plattform-und Daten Qualitätsverbesserungen konzentriert, um die Datengenauigkeit und Konsistenz für e-Mail-Datensätze zu verbessern. Diese Updates umfassen die Konsolidierung der vorab Zustellung und der Übermittlung von Informationen (Beispielaktion, die in einer e-Mail als Teil des Zap-Prozesses ausgeführt wird) in einen einzelnen Datensatz zusammen mit hinzugefügtem Umfang wie Spam Urteil, Bedrohungen auf Entitätsebene (z. b. welche URL böswillig ist) und den neuesten Zustellungs Standorten. 
+
+Nach diesen Updates wird für jede Nachricht ein einzelner Eintrag angezeigt, unabhängig von den unterschiedlichen nach Zustellungs Ereignissen, die in der Nachricht stattfinden. Zu den Aktionen können zap, manuelle Korrektur (also Administratoraktion), dynamische Zustellung usw. gehören. 
+
+Neben Malware-und Phishing-Bedrohungen können Sie nun das Spam Urteil sehen, das einer e-Mail zugeordnet ist. In der e-Mail können Sie alle mit der e-Mail verbundenen Bedrohungen zusammen mit den entsprechenden Erkennungstechnologien sehen. Jede e-Mail kann 0, 1 oder mehrere Bedrohungen haben. Im Abschnitt Details des e-Mail-Flyouts werden die aktuellen Bedrohungen angezeigt. Außerdem würde das Erkennungstechnologie Feld für mehrere Bedrohungen (beispielsweise eine e-Mail mit Schadsoftware und Phishing) die Threat-Detection Zuordnung ergeben, was bedeutet, dass die Erkennungstechnologie zur Identifizierung der Bedrohung geführt hat.
+
+Die Reihe von Erkennungstechnologien wurde aktualisiert, um neue Erkennungsmethoden sowie Spamerkennungstechnologien sowie aross alle unterschiedlichen e-Mail-Ansichten (Schadsoftware, Phishing, alle e-Mail-Nachrichten) einzuschließen, Sie verfügen über dieselbe konsistente Gruppe von Erkennungstechnologien, um die Ergebnisse zu filtern. 
+
+**Hinweis**: die Urteils Analyse ist möglicherweise nicht unbedingt an Entitäten gebunden. Beispielsweise kann eine e-Mail als Phishing oder Spam klassifiziert werden, aber es gibt keine URLs, auf die ein Phishing/Spam-Urteil abgestempelt wurde. Dies liegt daran, dass unsere Filter auch Inhalte und andere Details für eine e-Mail auswerten, bevor Sie ein Urteil zuweisen. 
+ 
+#### <a name="threats-in-urls"></a>Bedrohungen in URLs
+
+Auf der Registerkarte e-Mail-Flyout-> Details können Sie nun die spezifische Bedrohung für eine URL anzeigen (Bedrohung für eine URL kann Malware, Phishing, Spam oder keine sein).
+
+![URL-Bedrohungen](../../media/URL_Threats.png)
+
+### <a name="updated-timeline-view-upcoming"></a>Aktualisierte Zeitachsenansicht (bevorstehende)
+
+![Aktualisierte Zeitachsenansicht](../../media/Email_Timeline.png)
+
+Zusätzlich zur Identifizierung aller Zustellungs-und Post Zustellungs Ereignisse gibt die Zeitachsenansicht auch Informationen zu der zu diesem Zeitpunkt identifizierten Bedrohung für eine Teilmenge dieser Ereignisse. Außerdem erhalten Sie weitere Informationen zu zusätzlichen Aktionen (beispielsweise zap, manuelle Korrektur) sowie das Ergebnis dieser Aktion. Die Zeitachsenansicht enthält Informationen über die ursprüngliche Zustellung und anschließend alle Ereignisse nach der Zustellung, die für eine e-Mail ausgeführt wurden.
+
+-   Quelle: Dies kann admin/System/User basierend auf der Quelle des Ereignisses sein.
+-   Ereignis: Dies umfasst Ereignisse der obersten Ebene wie Original Zustellung, manuelle Korrektur, Zap, Übermittlungen und dynamische Zustellung.
+-   Action: Dies umfasst die spezifische Aktion, die entweder im Rahmen von zap-oder admin-Aktionen durchgeführt wurde (beispielsweise Soft Delete).
+-   Bedrohungen: deckt die zu diesem Zeitpunkt identifizierten Bedrohungen (Schadsoftware, Phishing, Spam) ab.
+-   Ergebnis/Details: enthält weitere Informationen zum Ergebnis der Aktion, unabhängig davon, ob es im Rahmen der zap/admin-Aktion ausgeführt wurde.
+
+### <a name="original-and-latest-delivery-location"></a>Ursprünglicher und aktueller Zustellungs Speicherort
+
+Heute wird der Zustellungs Standort im e-Mail-Raster und im e-Mail-Flyout angezeigt. Das Feld Zustellungs Speicherort wird in Zukunft in den ursprünglichen Übermittlungsort umbenannt. Darüber hinaus führen wir auch ein weiteres Feld mit dem Namen letzter Zustellungs Speicherort ein. 
+
+Der ursprüngliche Übermittlungsort würde mehr Informationen darüber geben, wo anfänglich eine e-Mail zugestellt wurde. Der aktuelle Zustellungsort würde einen Ort enthalten, an dem eine e-Mail nach Systemaktionen wie zap-oder Administratoraktionen wie dem **Wechsel zu gelöschten Elementen**gelandet ist. Neuester Übermittlungsort dient dazu, Administratoren über den letzten bekannten Standort der Nachricht nach Zustellung oder System-admin-Aktionen zu informieren. Das Design umfasst keine Endbenutzer bezogenen Aktionen für die e-Mail. Beispiel: Wenn ein Benutzer eine Nachricht löscht oder die Nachricht in Archiv/PST verschiebt, wird der Speicherort der Nachricht "Zustellung" nicht aktualisiert. Wenn jedoch eine Systemaktion den Standort aktualisiert hat (z. b. zap, was dazu führt, dass eine e-Mail in die Quarantäne verschoben wird), wird der letzte Übermittlungsort als Quarantäne angezeigt. 
+
+![Aktualisierte Zustellungsorte](../../media/Updated_Delivery_Location.png)
+
+**Hinweis**: Es gibt nur wenige Fälle, in denen der Übermittlungsort und die Zustellungs Aktion als Wert "unbekannt" angezeigt werden können:
+
+- Möglicherweise wird der Übermittlungsort als zugestellt und der Übermittlungsort als unbekannt angezeigt. Dies geschieht, wenn die Nachricht zugestellt wurde, aber eine Posteingangsregel hat die Nachricht in einen Standardordner (Entwurf, Archiv usw.) anstelle der Posteingang-oder Junk-e-Mail-Ordner verschoben. 
+
+- Der aktuelle Übermittlungsort kann unbekannt sein, wenn eine Administrator/System-Aktion (beispielsweise zap, Administratoraktion) versucht wird, die Nachricht jedoch nicht gefunden wird. In der Regel geschieht die Aktion, nachdem der Benutzer die Nachricht verschoben oder gelöscht hat. Überprüfen Sie in diesen Fällen die Spalte Ergebnis/Details in der Zeitachsenansicht. Suchen Sie nach der Nachricht: Nachricht, die vom Benutzer verschoben oder gelöscht wurde.
+
+![Zustellungsorte für Zeitachse](../../media/Updated_Timeline_Delivery_Location.png)
+
+### <a name="additional-actions"></a>Zusätzliche Aktionen 
+
+Weitere Aktionen bestehen aus den Aktionen, die nach der Zustellung der e-Mail angewendet wurden, und kann zap, manuelle Korrektur (Aktion, die von einem Admi durchgeführt wird; n z.b., Soft Delete), dynamische Zustellung und erneute Verarbeitung (eine e-Mail wurde rückwirkend als gut erkannt) enthalten. 
+
+> [!NOTE]
+>
+> - Im Rahmen dieser Änderung wird der Wert "Remove by Zap", der derzeit im Zustellungs Aktionsfilter angezeigt wird, entfernt. Sie haben eine Möglichkeit, alle e-Mails mit dem zap-Versuch durch die zusätzlichen Aktionen zu suchen.
+>
+> -Es werden neue Felder und Werte für Erkennungstechnologien und zusätzliche Aktionen (insbesondere für zap-Szenarien) vorhanden sein. Bewerten Sie die vorhandenen gespeicherten Abfragen und nachverfolgten Abfragen, um sicherzustellen, dass Sie mit den neuen Werten funktionieren. 
+
+![Additional_Actions](../../media/Additional_Actions.png)
+
+### <a name="system-overrides"></a>System Überschreibungen 
+
+System Überschreibungen sind eine Methode zum Festlegen von Ausnahmen für den vorgesehenen Übermittlungsort einer Nachricht, indem Sie den vom System bereitgestellten Übermittlungs Speicherort (basierend auf den Bedrohungen und anderen Erkennungen, die von unserem Filter Stapel identifiziert werden) überschreiben. System Überschreibungen können über Mandanten-oder Benutzerrichtlinien festgelegt werden, um die von der Richtlinie vorgeschlagene Nachricht zuzustellen. Außerkraftsetzungen sind nützlich, um eine unbeabsichtigte Zustellung schädlicher Nachrichten aufgrund von Konfigurations Lücken zu identifizieren (beispielsweise eine sehr breite Richtlinie für sichere Absender, die von einem Benutzer festgelegt wird). Diese Außerkraftsetzungswerte können wie folgt lauten:
+
+- Durch Benutzerrichtlinie zulässig: Dies ist, wenn ein Benutzerdomänen oder Absender durch Erstellen von Richtlinien auf Postfachebene zulässt.
+- Durch Benutzerrichtlinie blockiert: Dies ist der Zeitpunkt, zu dem ein Benutzerdomänen oder Absender blockiert, indem er Richtlinien auf Postfachebene erstellt.
+- Zulässig durch org-Richtlinie: Dies ist der Zeitpunkt, zu dem die Sicherheitsteams der Organisation Richtlinien oder Exchange-Nachrichtenfluss Regeln (auch bekannt als Transportregeln) festlegen, um Absender und Domänen für Benutzer in Ihrer Organisation zuzulassen. Dies kann für eine Gruppe von Benutzern oder die gesamte Organisation sein.
+- Durch org-Richtlinie blockiert: Dies ist der Fall, wenn die Sicherheitsteams der Organisation Richtlinien oder Nachrichtenfluss Regeln festlegen, um Absender, Domänen, Nachrichten Sprachen oder Quell-IPs für Benutzer in Ihrer Organisation zu blockieren. Dies kann auch für eine Gruppe von Benutzern oder die gesamte Organisation erfolgen.
+- Durch die org-Richtlinie blockierte Dateierweiterung: Dies ist der Zeitpunkt, zu dem eine Dateitypen Erweiterung durch die Sicherheitsteams einer Organisation durch die Antischadsoftware-Richtlinieneinstellungen blockiert wird. Diese Werte werden nun in e-Mail-Details angezeigt, um bei Untersuchungen behilflich zu sein. Die Teams von Seeräubern können auch nach blockierten Dateierweiterungen filtern, indem Sie die Funktion für umfangreiche Filterung verwenden.
+
+![System_Overrides](../../media/System_Overrides.png)
+
+![System_Overrides_Grid](../../media/System_Overrides_Grid.png)
+
+### <a name="improvements-around-url-and-clicks-experience"></a>Verbesserungen bei der URL-und Klicks-Umgebung
+
+Der Verbesserungen im Hinblick auf die URL-und URL-Klicks Daten umfassen Folgendes:
+
+-   Anzeigen der vollständig angeklickten URL (einschließlich aller Abfrageparameter, die Teil der URL sind) im Abschnitt Klicks im URL-Flyout. Derzeit zeigen wir die URL-Domäne und den Pfad in der Titelleiste an. Diese Informationen werden erweitert, um die vollständige URL anzuzeigen.
+-   Fixes für URL-Filter (URL-URL-Domäne vs-URL-Domäne und-Pfad): Wir haben Aktualisierungen bei der Suche nach Nachrichten durchgeführt, die eine URL/Klick Urteil enthalten. Im Rahmen dieser Vorgehensweise haben wir die Unterstützung für protokollunabhängige Suchvorgänge aktiviert (was bedeutet, dass Sie direkt nach einer URL ohne http suchen können). Standardmäßig wird die URL-Suche dem http-Wert zugeordnet, sofern nicht explizit angegeben. Beispiel:
+
+  a.    Suchen Sie mit und ohne das `http://` Präfix in den Filterfeldern "URL", "URL-Domäne" und "URL-Domäne und-Pfad". Dieses Verhalten ist konsistent und sollte dasselbe Ergebnis aufweisen.
+  b.    Suchen Sie nach dem `https://` Präfix in "URL". Wenn diese nicht vorhanden `http://` ist, wird das Präfix angenommen.
+  c.     `/` am Anfang und Ende des "URL-Pfads" werden die Felder "URL-Domäne", "URL-Domäne" und "Pfad" ignoriert. `/` am Ende des Felds "URL" wird ignoriert. 
+
+### <a name="phish-confidence-level"></a>Phishing-Zuverlässigkeitsstufe
+
+Die Phishing-Zuverlässigkeitsstufe hilft bei der Identifizierung des Vertrauens Grads, mit dem eine e-Mail als Phishing kategorisiert wurde. Die beiden möglichen Werte sind hoch und normal. In der Anfangsphase ist dieser Filter nur in der Phishing-Ansicht von Threat Explorer verfügbar.
+
+![Phish_Confidence_Level](../../media/Phish_Confidence_Level.png)
+
+### <a name="zap-url-signal"></a>Zap-URL-Signal 
+
+Wird in der Regel für zap-Phishing-Warnungs Szenarien verwendet, in denen eine e-Mail als Phishing identifiziert und nach der Zustellung entfernt wurde. Dies wird verwendet, um die Benachrichtigung mit den entsprechenden Ergebnissen im Explorer zu verbinden. Es handelt sich um eine der IOCs für die Warnung. 
+
 ## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>Verbesserungen beim Threat Explorer und bei Real-Time Erkennungen erleben
 
 Im Rahmen der Verbesserung des Jagd Prozesses haben wir einige Aktualisierungen an Threat Explorer und Real-Time Erkennungen vorgenommen. Dabei handelt es sich um Verbesserungen der Erfahrung, wobei der Schwerpunkt darauf liegt, die Jagd Erfahrung konsistenter zu machen. Diese Änderungen werden im folgenden beschrieben:
@@ -59,13 +154,14 @@ Im Rahmen der Verbesserung des Jagd Prozesses haben wir einige Aktualisierungen 
 
 ### <a name="timezone-improvements"></a>Verbesserungen der Zeitzone
 
-Wir zeigen die Zeitzone für die e-Mail-Einträge innerhalb des Portals sowie für exportierte Daten an. Die Zeitzone wird in verschiedenen Bereichen wie dem e-Mail-Raster, dem Detail Flyout, der e-Mail-Zeitachse und ähnlichen e-Mails angezeigt, sodass die Zeitzone für das Resultset für den Benutzer eindeutig ist.
+Sie sehen die Zeitzone für die e-Mail-Einträge innerhalb des Portals sowie für exportierte Daten. Die Zeitzone wird in verschiedenen Bereichen wie dem e-Mail-Raster, dem Detail Flyout, der e-Mail-Zeitachse und ähnlichen e-Mails angezeigt, sodass die Zeitzone für das Resultset für den Benutzer eindeutig ist.
 
 ![Zeitzone im Explorer anzeigen](../../media/TimezoneImprovements.png)
 
 ### <a name="update-in-the-refresh-process"></a>Aktualisieren im Aktualisierungsprozess
 
 Wir haben Feedback rund um Verwirrung mit automatischer Aktualisierung gehört (beispielsweise für Datum, sobald Sie das Datum ändern, die Seite aktualisiert wird) und die manuelle Aktualisierung (für andere Filter). Auf ähnliche Weise führt das Entfernen von Filtern zu automatischer Aktualisierung, was dazu führt, dass beim Ändern der verschiedenen Filter beim Ändern der Abfrage inkonsistente Sucherfahrungen auftreten können. Um dies zu beheben, bewegen wir uns zu einem manuellen Filtermechanismus.
+
 Aus Erfahrungsgründen kann der Benutzer den unterschiedlichen Filterbereich (aus Filtersatz und Datum) anwenden und entfernen und die Schaltfläche aktualisieren drücken, um die Ergebnisse zu filtern, sobald Sie mit der Definition der Abfrage fertig sind. Die Schaltfläche Aktualisieren wurde auch aktualisiert, um Sie deutlich auf dem Bildschirm aufzurufen. Wir haben auch Tooltips und Produktdokumentationen zu dieser Änderung aktualisiert.
 
 ![Klicken Sie auf aktualisieren, um die Ergebnisse zu filtern](../../media/ManualRefresh.png)

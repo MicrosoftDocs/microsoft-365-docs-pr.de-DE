@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: Erfahren Sie, wie Sie Änderungen an Ihrem Organisationsprofil, beispielsweise Bezeichnung der Organisation, Adresse, Telefonnummer, technischer Kontakt und E-Mail-Adresse vornehmen können.
-ms.openlocfilehash: 7df4c95bde187dc4922bea3da908b9cd82c5f775
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: f306130e4578284a159c01436d6e2adc6b08add7
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780145"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417210"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Ändern der Adresse, des technischen Kontakts und anderer Informationen Ihrer Organisation
 
@@ -69,7 +69,7 @@ So ändern Sie weitere Informationen auf der Profilseite Ihres Unternehmens:
 
 ## <a name="change-your-alternate-email-address"></a>Ändern der alternativen e-Mail-Adresse
 
-Als Administrator können Sie Ihre alternative e-Mail-Adresse zum Zurücksetzen von Kennwörtern ändern.
+Als Administrator können Sie Ihre alternative e-Mail-Adresse für das Zurücksetzen von Kennwörtern ändern.
 
 1. Wechseln Sie zum <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 Admin Center</a>.
 

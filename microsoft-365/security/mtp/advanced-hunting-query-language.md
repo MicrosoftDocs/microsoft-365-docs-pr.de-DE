@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: ffa5e6abf7fb1cb0f93fe1c233ef7e3f0b023faf
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 35de1504d4d7ddd3512b6cc3e478b138c1f43c29
+ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48412622"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48418121"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Erlernen der Abfragesprache für die erweiterte Suche
 
@@ -34,7 +34,7 @@ ms.locfileid: "48412622"
 **Gilt für:**
 - Microsoft Threat Protection
 
-Die erweiterte Suche basiert auf der [Kusto-Abfragesprache](https://docs.microsoft.com/azure/kusto/query/). Sie können die Kusto-Syntax und-Operatoren verwenden, um Abfragen zu erstellen, die Informationen im speziellen [Schema](advanced-hunting-schema-tables.md)suchen. Wenn Sie diese Konzepte besser verstehen möchten, führen Sie Ihre erste Abfrage aus.
+Die erweiterte Suche basiert auf der [Kusto-Abfragesprache](https://docs.microsoft.com/azure/kusto/query/). Sie können Kusto-Operatoren und-Anweisungen verwenden, um Abfragen zu erstellen, die Informationen in einem speziellen [Schema](advanced-hunting-schema-tables.md)suchen. Wenn Sie diese Konzepte besser verstehen möchten, führen Sie Ihre erste Abfrage aus.
 
 ## <a name="try-your-first-query"></a>Testen Ihrer ersten Abfrage
 

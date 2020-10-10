@@ -17,14 +17,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-evalutatemtp
+- m365solution-scenario
+- m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: ec8e630c3669b3eb7af8cb012a0ca361f8c77f1e
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: 1a7b87432ce1eb16c29f462fb4865bfa5c5e2201
+ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48368013"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48418097"
 ---
 # <a name="closing-and-summarizing-your-microsoft-threat-protection-pilot"></a>Schließen und zusammenfassen Ihres Microsoft Threat Protection-Pilotprojekts  
 
@@ -76,7 +77,7 @@ ms.locfileid: "48368013"
 
 Sie befinden sich derzeit in der Abschluss-und Zusammenfassungs Phase.
 
-Sie haben soeben einen Advanced Memory-only-Angriff simuliert, bei dem Code Remote auf einem Domänencontroller ausgeführt wurde. Sie haben gesehen, wie Microsoft Defender ATP und Azure ATP Erkennung und Warnungen bei heimlichen böswilligen Aktivitäten erkennen. Sie haben auch gesehen, wie Warnungen aus unterschiedlichen Quellen zusammen mit anderen Kontextinformationen in einem einzigen Vorfall im Microsoft 365-Sicherheits Center-Portal zugestellt werden, sodass SOC-Analysten untersuchen und erforderliche Aktionen ausführen können. Sie haben auch eine erweiterte Jagd Abfrage erstellt, mit der eingehende e-Mails identifiziert werden, bei denen der Benutzer die Anlage geöffnet oder gespeichert und die Erkennung basierend auf dieser Abfrage erstellt hat.
+Sie haben soeben eine Advanced Memory-only-Angriffssimulation ausgeführt, die Code Remote auf einem Domänencontroller ausführt. Sie haben gesehen, wie Microsoft Defender ATP und Azure ATP Warnungen für heimliche böswillige Aktivitäten erkennen und erstellen. Sie haben auch gesehen, wie Benachrichtigungen aus unterschiedlichen Quellen zusammen mit anderen Kontextinformationen in einem einzelnen Vorfall im Microsoft 365 Security Center-Portal zugestellt werden. Durch diese Integration können SOC-Analysten untersuchen und erforderliche Maßnahmen ergreifen. Sie haben auch eine erweiterte Jagd Abfrage erstellt, mit der eingehende e-Mails identifiziert werden, bei denen der Benutzer die Anlage geöffnet oder gespeichert und die Erkennung basierend auf dieser Abfrage erstellt hat.
 
 Sie haben das Ende des Prozesses erreicht, nachdem alle Tests abgeschlossen sind.
 
@@ -86,9 +87,9 @@ Die endgültige Ausgabe sollte wie folgt aussehen:
 - Ausführlicher Bericht über die Ergebnisse des Pilotprojekts
 - Eine Entscheidung im Hinblick auf die Weiterentwicklung
 
-Diese Informationen sollten sowohl internen Beteiligten (die Sie während der [Vorbereitungs](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) Phase identifiziert haben) als auch Microsoft Contacts vorgestellt werden. Dadurch wird sichergestellt, dass Feedback zum Verbessern von Produkten und Dokumentation verwendet werden kann.
+Zeigen Sie die Berichte aus ihrer endgültigen Ausgabe sowohl interne beteiligte (die Sie während der [Vorbereitungs](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) Phase identifiziert haben) als auch Microsoft Contacts an. Durch diesen Aufwand wird sichergestellt, dass Feedback zum Verbessern von Produkten und Dokumentation verwendet werden kann.
 
-Wir hoffen, dass Ihnen diese Simulation gefallen hat und Sie ermutigt werden, mit der Implementierung Ihres gelernten zu beginnen.
+Wir hoffen, dass Ihnen diese Simulation gefallen hat. Beginnen Sie mit der Implementierung, was Sie in Ihrer Organisation auf breiter Ebene gelernt haben, um die integrierte Sicherheitslösung optimal zu nutzen.
 
 ## <a name="next-step"></a>Nächster Schritt
 Erfahren Sie mehr über die Microsoft Threat Protection-Säulen durch die folgenden interaktiven Leitfäden:

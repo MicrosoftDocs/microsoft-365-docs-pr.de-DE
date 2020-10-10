@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie Richtlinien für sichere Links und globale Einstellungen für sichere Links in Office 365 Advanced Threat Protection (ATP) anzeigen, erstellen, ändern und löschen.
-ms.openlocfilehash: b6b013364fc763450ac8bef0d06bd2fad8d55daa
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: cf60820297401de92781a48f22f70d1f503e3097
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350719"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417253"
 ---
 # <a name="set-up-safe-links-policies-in-office-365-atp"></a>Einrichten von Richtlinien für sichere Links in Office 365 ATP
 
@@ -88,9 +88,9 @@ Durch das Erstellen einer benutzerdefinierten Richtlinie für sichere Links im S
 
 4. Konfigurieren Sie auf der angezeigten Seite **Einstellungen** die folgenden Einstellungen:
 
-   - **Wählen Sie die Aktion für unbekannte potenziell bösartige URLs in Nachrichten**aus: SELECT **on**.
+   - **Wählen Sie die Aktion für unbekannte potenziell bösartige URLs in Nachrichten**aus: Wählen Sie **ein** aus, um den Schutz für sichere Links in e-Mail-Nachrichten zu aktivieren.
 
-   - **Wählen Sie die Aktion für unbekannte potenziell bösartige URLs in Nachrichten**aus: Wählen Sie **ein** oder lassen Sie den Standardwert **deaktiviert** ausgewählt.
+   - **Wählen Sie die Aktion für unbekannte oder potenziell schädliche URLs in Microsoft Teams**aus: Wählen Sie **ein** aus, um den Schutz für sichere Links für Links in Teams zu aktivieren.
 
    - Über **Prüfen der Echt Zeit-URL-Überprüfung auf verdächtige Links und Links, die auf Dateien verweisen**: Wählen Sie diese Einstellung aus, um die Echtzeitüberprüfung von Links in e-Mail-Nachrichten zu aktivieren.
 

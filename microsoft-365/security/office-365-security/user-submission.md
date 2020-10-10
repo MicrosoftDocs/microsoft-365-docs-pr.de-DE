@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-office365
 description: Administratoren können erfahren, wie Sie ein Postfach So konfigurieren, dass Spam-und Phishing-e-Mails erfasst werden, die von Benutzern gemeldet werden.
-ms.openlocfilehash: 8347463a4c3f41b6b6333d35c5b4207d1b94aabe
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: ab7f25c456a9321977721113c1e98d67d1529feb
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48412562"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417247"
 ---
 # <a name="user-submissions-policies"></a>Richtlinien für Benutzerübermittlungen
 
@@ -47,17 +47,17 @@ Durch das Übermitteln von Benutzern gemeldeten Nachrichten an ein benutzerdefin
 
 Verwenden Sie die folgenden Artikel, um die erforderlichen Voraussetzungen zu konfigurieren, damit Benutzer gemeldete Nachrichten an Ihr benutzerdefiniertes Postfach wechseln:
 
-- Überspringen Sie die Spamfilterung durch Erstellen einer Exchange-Nachrichtenfluss Regel zum Festlegen der Spam Zuverlässigkeitsstufe. Weitere Informationen finden Sie unter [Verwenden der Exchange-Verwaltungskonsole zum Erstellen einer e-Mail-Fluss Regel, die den SCL-Wert einer Nachricht festlegt](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages?view=o365-worldwide#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) , um den SCL auf **-1**festzulegen
+- Überspringen Sie die Spamfilterung für das benutzerdefinierte Postfach, indem Sie eine Exchange-Nachrichtenfluss Regel erstellen, um die Spam Zuverlässigkeitsstufe festzulegen. Weitere Informationen finden Sie unter [Verwenden der Exchange-Verwaltungskonsole zum Erstellen einer e-Mail-Fluss Regel, die den SCL-Wert einer Nachricht festlegt](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) , um den SCL auf **-1**festzulegen
 
-- Deaktivieren Sie die Überprüfung von Anlagen für Schadsoftware. Verwenden Sie [einrichten (oder bearbeiten) einer Richtlinie für ATP-sichere Anlagen](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-atp-safe-attachments-policies?view=o365-worldwide#step-2-set-up-or-edit-an-atp-safe-attachments-policy) zum Erstellen einer Richtlinie für sichere Anlagen mit der Einstellung **Off-Attachment wird nicht auf aktivierte Schadsoftware überprüft** .
+- Deaktivieren Sie das Überprüfen von Anlagen für Schadsoftware im benutzerdefinierten Postfach. Verwenden Sie zum [Einrichten von Richtlinien für sichere Anlagen in Office 365 ATP](set-up-atp-safe-attachments-policies.md) eine Richtlinie für sichere Anlagen mit **der Einstellung für** **sichere Anlagen unbekannte Schadsoftware-Antwort**erstellen.
 
-- Deaktivieren Sie die URL-Überprüfung für Nachrichten. Verwenden Sie [Richtlinien für ATP-sichere Links hinzufügen (oder bearbeiten), die für alle oder bestimmte e-Mail-Empfänger gelten](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-atp-safe-links-policies?view=o365-worldwide#step-3-add-or-edit-atp-safe-links-policies-that-apply-to-all-or-specific-email-recipients) , um eine Richtlinie für sichere Links zu erstellen, und **Wählen Sie die Aktion für unbekannte potenziell bösartige URLs in Nachrichten** auf **Off**aus.
+- Deaktivieren Sie die URL-Überprüfung für Nachrichten im benutzerdefinierten Postfach. Verwenden Sie [Richtlinien für sichere Links einrichten in Office 365 ATP](set-up-atp-safe-links-policies.md) , um eine Richtlinie für sichere Links mit **der Einstellung für** **Wählen Sie die Aktion für unbekannte potenziell bösartige URLs in Nachrichten**erstellen.
 
-- Erstellen Sie eine Richtlinie zum Schutz vor Schadsoftware, um die automatische Säuberungsaktion für Malware zu deaktivieren. Weitere Informationen finden Sie unter [Verwenden des Security & Compliance Center zum Erstellen von Antischadsoftware-Richtlinien](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide#use-the-security--compliance-center-to-create-anti-spam-policies) , um die **Automatische Bereinigung von Schadsoftware** auf **Off**festzulegen.
+- Erstellen Sie eine Richtlinie zum Schutz vor Schadsoftware, um die automatische Säuberungsaktion für Malware zu deaktivieren. Weitere Informationen finden Sie unter [Verwenden des Security & Compliance Center zum Erstellen von Antischadsoftware-Richtlinien](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) , um die **Automatische Bereinigung von Schadsoftware** auf **Off**festzulegen.
 
-- Erstellen Sie eine Spamfilter Richtlinie zum Deaktivieren der automatischen Säuberungs-e-Mail-Löschung (zap) für Spam Zap und Phishing zap. Weitere Informationen finden Sie unter [use the Security & Compliance Center zum Erstellen von Anti-Spam-Richtlinien](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide#use-the-security--compliance-center-to-create-anti-spam-policies) und deaktivieren **der Kontrollkästchen** für Spam Zap und Phishing zap.
+- Erstellen Sie eine Spamfilter Richtlinie, um die automatische Bereinigung (Zero-Hour) für Spam und Phishing im benutzerdefinierten Postfach zu deaktivieren. Weitere Informationen finden Sie unter [use the Security & Compliance Center zum Erstellen von Anti-Spam-Richtlinien](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) und deaktivieren **der Kontrollkästchen** für **Spam zap** und **Phishing zap**.
 
-- Deaktivieren Sie die Junk-e-Mail-Regel. Verwenden Sie zum Deaktivieren der Junk-e-Mail-Regel [Junk-e-Mail-Einstellungen in Exchange Online Postfächern konfigurieren](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes?view=o365-worldwide) Nach der Deaktivierung können EoP Nachrichten nicht in den Junk-e-Mail-Ordner basierend auf der Spamfilter-Urteils Aktion " **Nachricht in Junk-e-Mail-Ordner"** oder "Sammlung von Listen sicherer Adressen" im Postfach migrieren
+- Deaktivieren Sie die Junk-e-Mail-Regel im benutzerdefinierten Postfach. Verwenden Sie zum Deaktivieren der Junk-e-Mail-Regel [Junk-e-Mail-Einstellungen in Exchange Online Postfächern konfigurieren](configure-junk-email-settings-on-exo-mailboxes.md) Nach der Deaktivierung können EoP Nachrichten nicht in den Junk-e-Mail-Ordner basierend auf der Spamfilter-Urteils Aktion " **Nachricht in Junk-e-Mail-Ordner"** oder "Sammlung von Listen sicherer Adressen" im Postfach migrieren
 
 Nachdem Sie sichergestellt haben, dass Ihr Postfach alle anwendbaren Voraussetzungen erfüllt, [verwenden Sie das Sicherheits & Compliance Center, um das Postfach "Benutzer Übermittlungen" zu konfigurieren](#use-the-security--compliance-center-to-configure-the-user-submissions-mailbox) (in diesem Artikel).
 
@@ -118,7 +118,7 @@ Nachrichten, die an benutzerdefinierte Postfächer gesendet werden, müssen eine
 
 `SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
 
-were SafetyAPIAction ist einer der folgenden Integer-Werte:
+Dabei ist SafetyAPIAction einer der folgenden ganzzahligen Werte:
 
 - 1: Junk
 - 2: NotJunk

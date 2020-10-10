@@ -17,15 +17,15 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-office365
 ms.topic: conceptual
-ms.date: 09/10/2020
+ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: 5bbbda8b2fb13351d0b86d1670910cbaa52ad8cb
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: ab987652082c93a82fa5bcbd4667f26291c6e9d7
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48413258"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417284"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Neuerungen in Office 365 ATP
 
@@ -47,7 +47,8 @@ In diesem Artikel werden neue Features in der neuesten Version von Office 365 AT
 - [Manuelles Überschreiben von Filter Urteilen mithilfe der Liste "Mandanten zulassen/blockieren"](tenant-allow-block-list.md)
 - [Erweiterte Funktionen im Threat Explorer, einschließlich der wichtigsten Zielbenutzer, Transportregeln und Connectors](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Office 365 ATP-Plan 2)
 - Flächen Oberflächen Überschreibungs Informationen im [Threat Explorer](threat-explorer.md) (e-Mail wurde zugelassen/blockiert durch Mandanten-/Benutzerrichtlinie)
-- Aufdeckung von URL-Bedrohungen im [Threat Explorer](threat-explorer.md) (Malware, Phishing, Spam oder keine) 
+- Aufdeckung von URL-Bedrohungen im [Threat Explorer](threat-explorer.md#threats-in-urls) (Malware, Phishing, Spam oder keine) 
+- [Verbesserungen an der Jagd Erfahrung Threat Explorer](threat-explorer.md#improvements-to-threat-hunting-experience-upcoming) mit Updates rund um Bedrohungen, zusätzliche Aktionen, Zustellungsorte und aktualisierte Zeitachsenansicht
 
 ## <a name="julyaugust-2020"></a>Juli/August 2020 
 

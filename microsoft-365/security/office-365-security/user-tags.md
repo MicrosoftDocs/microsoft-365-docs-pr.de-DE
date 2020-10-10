@@ -15,14 +15,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie bestimmte Benutzergruppen mit Benutzer Tags in Office 365 ATP-Plan 2 identifiziert werden. Die Tag-Filterung ist für Warnungen, Berichte und Untersuchungen in Office 365 ATP verfügbar, um die getaggten Benutzer schnell zu identifizieren.
-ms.openlocfilehash: 16e756b95e16e40f4df738e825e842681c67e22c
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 475bf976a71fb688df8db9ac25f3b397c078d79a
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399385"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417283"
 ---
 # <a name="user-tags-in-office-365-atp"></a>Benutzertags in Office 365 ATP
+
+> [!NOTE]
+> Das Feature "Benutzer Tags" befindet sich in der Vorschau, steht nicht allen zur Verfügung und kann jederzeit geändert werden. Weitere Informationen zum Veröffentlichungszeitplan finden Sie in der [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap).
 
 Benutzer Tags sind Bezeichner für bestimmte Benutzergruppen in [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md). Es gibt zwei Arten von Benutzer Tags:
 

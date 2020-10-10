@@ -17,14 +17,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-evalutatemtp
+- m365solution-overview
+- m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 3d7156dfe65e9479f2505d196790800c6afd1f2a
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: af47f45ca4f3d14e835a39a334a9400002ac8560
+ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48367965"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48418073"
 ---
 # <a name="run-your-pilot-microsoft-threat-protection-project"></a>Ausführen des Pilotprojekts "Microsoft Threat Protection" 
 
@@ -39,7 +40,7 @@ Um den Nutzen und die Akzeptanz von Microsoft Threat Protection (MTP) effektiv z
 
 ## <a name="how-to-use-this-pilot-playbook"></a>Vorgehensweise zum Verwenden dieses Pilot Manuskripts
 
-Dieses Handbuch enthält eine Übersicht über Microsoft Threat Protection und schrittweise Anleitungen zum Einrichten Ihres Pilotprojekts. 
+Dieses Handbuch enthält eine Übersicht über Microsoft Threat Protection und Schritt-für-Schritt-Anleitungen zum Einrichten Ihres Pilotprojekts. 
 
 ![Phasen bei der Ausführung eines Microsoft Threat Protection-Pilotprojekts](../../media/pilotphases.png)
 

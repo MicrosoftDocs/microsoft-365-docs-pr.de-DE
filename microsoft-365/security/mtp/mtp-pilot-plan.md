@@ -17,14 +17,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-evalutatemtp
+- m365solution-scenario
+- m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 7d1870d1b8972009bed657f476810ca011dc2621
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: e62b4ec0ee6c9d05321accf269406e8127019f5b
+ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48367977"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48418109"
 ---
 # <a name="planning-your-pilot-microsoft-threat-protection-project"></a>Planen des Pilotprojekts für Microsoft Threat Protection 
 
@@ -96,7 +97,7 @@ Die Typen der auszuwertenden Betriebssysteme sollten auch basierend auf der orga
 
 ## <a name="use-cases"></a>Anwendungsfälle
 
-Anwendungsfälle stellen Anweisungen dar, wie das zu testende Tool von den vorgesehenen Benutzern verwendet werden soll. Diese können als Benutzergeschichten aus der Sicht einer bestimmten Person formuliert werden, beispielsweise als SOC-Analyst. Zum Beispiel:
+Anwendungsfälle stellen Anweisungen dar, wie das zu testende Tool von den vorgesehenen Benutzern verwendet werden soll. Diese können als Benutzergeschichten aus der Sicht einer bestimmten Person formuliert werden, beispielsweise als SOC-Analyst. Beispiel:
 - Als SOC-Analyst muss ich Warnungen und Ereignisse für Geräte, Benutzer und Postfächer in meinem Netzwerk anzeigen, korrelieren, bewerten und verwalten. [Vorfallverwaltung]
 - Als SOC-Analyst muss ich das Tool und den Prozess zum automatischen untersuchen und reagieren auf böswillige Ereignisse in meinem Netzwerk haben. [Auto IR]
 - Als SOC-Analyst muss ich Daten aus meiner Umgebung suchen, um bekannte und potenzielle Bedrohungen sowie verdächtige Aktivitäten zu finden. [Erweiterte Suche]
@@ -119,7 +120,7 @@ Die Erfolgskriterien sind letztendlich das balkenset, das anhand des Tests gemes
 
 Eine Möglichkeit, alle Elemente Ihres Plans zusammenzuführen, kann das Erstellen einer Scorecard sein. Eine Beispiel-Scorecard finden Sie weiter unten:
 
-|**Anwendungsfall**|**Anforderungen**|**Konfigurationsanforderungen**|**Testplan**|**Erwartetes Ergebnis**|**Test Status**|**Ergebnis**|**Hinweise**|
+| Anwendungsfall | Anforderungen | Konfigurationsanforderungen | Testplan | Erwartetes Ergebnis | Test Status | Bewertung | Anmerkungen |
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
 |Vorfallverwaltung|-Microsoft Threat Protection </br></br>-Azure ATP </br></br>-Microsoft Defender ATP </br></br>-Microsoft Cloud-App-Sicherheit (optional)|Weitere Informationen finden Sie unter [Voraussetzungen](https://aka.ms/mtp-trial-lab) für Vorbereitung, Einrichtung und Konfiguration. |[Angriff simulieren](mtp-pilot-simulate.md) <br></br>[Untersuchen des Vorfalls](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#investigate-an-incident) |Ermittler können den Umfang und die Auswirkungen des Vorfalls verstehen und den Vorfall verwalten.||||
 |AutoIR|-Microsoft Threat Protection </br></br>-Azure ATP </br></br>-Microsoft Defender ATP |Weitere Informationen finden Sie unter [Voraussetzungen](https://aka.ms/mtp-trial-lab) für Vorbereitung, Einrichtung und Konfiguration. <br>AutoIR aktivieren  |[Angriff simulieren](mtp-pilot-simulate.md) <br></br>[Automatische Untersuchung](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#automated-investigation-and-remediation) |Warnungen und Vorfälle werden von Microsoft Threat Protection automatisch behoben.||||
