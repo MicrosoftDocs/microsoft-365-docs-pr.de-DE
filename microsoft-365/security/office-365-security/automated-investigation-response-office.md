@@ -12,19 +12,21 @@ localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-defender-office365
 keywords: Automatische Vorfall Antwort, Untersuchung, Behebung, Bedrohungsschutz
 ms.date: 09/29/2020
 description: Erhalten Sie einen Überblick über die automatisierten Ermittlungs-und Antwortfunktionen in Microsoft Defender für Office 365
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: ce95b91aa67f76cf46ce3ed6285e24d3e9edd146
-ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
+ms.openlocfilehash: 850291966c2f2da51782d8e70de23ff4f06d6136
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48308954"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413962"
 ---
 # <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Eine Übersicht über die automatisierte Untersuchung und Antwort (Air) in Microsoft Defender für Office 365
 

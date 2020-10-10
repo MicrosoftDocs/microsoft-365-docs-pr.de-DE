@@ -15,14 +15,15 @@ search.appverid:
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
+- m365-initiative-defender-office365
 description: In diesem Artikel erfahren Sie mehr über die Verwendung von Explorer und Echt Zeit Erkennungen im Security &amp; Compliance Center, um Bedrohungen effektiv und effizient zu untersuchen und auf diese zu reagieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 32ff9f2c8d009b4c9b05c12ba4e785e59cb182e7
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 20b13e177a69d981a4c6793d4810256e33158a35
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48328083"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48414262"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer und Echtzeiterkennung
 
@@ -47,9 +48,9 @@ Mit diesem Bericht haben Sie folgende Möglichkeiten:
 - [Starten eines automatisierten unter Such-und Antwort Prozesses aus einer Ansicht im Explorer](#start-automated-investigation-and-response) (nur ATP-Plan 2)
 - ... [Untersuchung schädlicher e-Mails und vieles mehr](#more-ways-to-use-explorer-or-real-time-detections)!
 
-## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>Verbesserungen an Threat Explorer und Echt Zeit Erkennungen
+## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>Verbesserungen beim Threat Explorer und bei Real-Time Erkennungen erleben
 
-Im Rahmen der Verbesserung des Jagd Prozesses haben wir einige Updates für den Threat Explorer und Echt Zeit Erkennungen vorgenommen. Dabei handelt es sich um Verbesserungen der Erfahrung, wobei der Schwerpunkt darauf liegt, die Jagd Erfahrung konsistenter zu machen. Diese Änderungen werden im folgenden beschrieben:
+Im Rahmen der Verbesserung des Jagd Prozesses haben wir einige Aktualisierungen an Threat Explorer und Real-Time Erkennungen vorgenommen. Dabei handelt es sich um Verbesserungen der Erfahrung, wobei der Schwerpunkt darauf liegt, die Jagd Erfahrung konsistenter zu machen. Diese Änderungen werden im folgenden beschrieben:
 
 - [Verbesserungen der Zeitzone](#timezone-improvements)
 - [Aktualisieren im Aktualisierungsprozess](#update-in-the-refresh-process)
@@ -103,7 +104,7 @@ Die Verfügbarkeit von ETR-Suche und-Namen hängt von der jeweiligen Rolle ab, d
 - Aad oder Exo-Security Admin: all
 - Aad oder Exo-Security Reader: all
 - Nur Exo-Transport Regeln: all
-- Nur Exo-Ansicht-Konfiguration: alle
+- Nur Exo-View-Only Konfiguration: all
 
 Im e-Mail-Raster, im Detail-Flyout und in der exportierten CSV-Datei werden die ETRs mit einem Namen/einer GUID angezeigt, wie unten dargestellt.
 

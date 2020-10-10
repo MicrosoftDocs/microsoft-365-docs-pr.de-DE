@@ -14,17 +14,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e0c50f2c547dee9cd7ef0131efc30ff4925a1501
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 4e83f9877d76f09da002dec9857417c1de91619a
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196499"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413758"
 ---
 # <a name="manage-incidents-in-microsoft-threat-protection"></a>Verwalten von Vorfällen in Microsoft-Bedrohungsschutz
 

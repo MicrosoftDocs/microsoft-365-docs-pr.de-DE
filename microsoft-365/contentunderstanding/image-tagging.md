@@ -6,17 +6,20 @@ manager: serdars
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-search.appverid: MET150
-localization_priority: Priority
+search.appverid: ''
+localization_priority: Normal
+ROBOTS: NOINDEX, NOFOLLOW
 description: Mehr zu Bild-Tagging in SharePoint Syntex
-ms.openlocfilehash: 7b41422633934593de881bdb0c04f0a845a3fe5f
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
-ms.translationtype: HT
+ms.openlocfilehash: c6d7513db2fd6aadabe5d813f3b49073a8f8c933
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321253"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413734"
 ---
 # <a name="image-tagging-in-sharepoint-syntex"></a>Bild-Tagging in SharePoint Syntex
+
+(Bald verfügbar)
 
 Mit Bild-Tagging in SharePoint Syntex können Benutzer Bilder über die Suche finden, indem Sie nach Bild-Tags suchen und Workflows basierend auf Bild-Tags erstellen. Standardmäßig ist Bild-Tagging für Microsoft Office SharePoint Online und OneDrive aktiviert. Bilder, die an einen der beiden Standorte hochgeladen werden, werden automatisch gescannt und, falls verfügbar, werden anwendbare Tags aus einer Liste von 37 Basis-Tags angewendet. Benutzer können Bilder über die Suche finden, indem Sie Bild-Tags durchsuchen.
 

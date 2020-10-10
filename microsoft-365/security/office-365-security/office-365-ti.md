@@ -16,15 +16,16 @@ search.appverid:
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
+- m365-initiative-m365-defender
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie mehr über die Funktionen zur Ermittlung und Reaktion von Bedrohungen in Office 365 Advanced Threat Protection-Plan.
-ms.openlocfilehash: c37129c7c3801ab1e55bd59f9c40c9e65f9cbd8d
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: d3ebf1d2e425eb3699f972692c6b632f8f405019
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198433"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48414310"
 ---
 # <a name="threat-investigation-and-response"></a>Untersuchung von und Antwort auf Bedrohungen
 

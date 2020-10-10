@@ -11,16 +11,18 @@ ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e5f41eef243bbd5f475dc719071833c4c21111d2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: ec6ca9e178ab69e578ef2d84d3051a5df314c527
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199721"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48414334"
 ---
 # <a name="app-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>App-Überwachung und Berichterstellung im Microsoft 365 Security Center
 

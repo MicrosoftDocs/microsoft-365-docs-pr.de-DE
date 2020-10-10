@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: b874ef77dcf6efacd7adeff18553c0c8e6752bda
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 05812ec1c747c019bdba1c7ecffc2b33bd5f793a
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197073"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413878"
 ---
 # <a name="devicenetworkinfo"></a>DeviceNetworkInfo
 
@@ -44,17 +46,17 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `DeviceId` | string | Eindeutiger Bezeichner für den Computer im Dienst |
 | `DeviceName` | string | Vollqualifizierter Domänenname (FQDN) des Computers |
 | `ReportId` | long | Ereignisbezeichner basierend auf einem Repeating-Indikator. Um eindeutige Ereignisse zu identifizieren, muss diese Spalte zusammen mit den Gerätename-und timestamp-Spalten verwendet werden. |
-| `NetworkAdapterName` | Zeichenfolge | Name des Netzwerkadapters |
-| `MacAddress` | Zeichenfolge | Mac-Adresse des Netzwerkadapters |
-| `NetworkAdapterType` | Zeichenfolge | Typ des Netzwerkadapters. Informationen zu den möglichen Werten finden Sie in [dieser Aufzählung](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2) |
-| `NetworkAdapterStatus` | Zeichenfolge | Betriebsstatus des Netzwerkadapters. Informationen zu den möglichen Werten finden Sie in [dieser Aufzählung](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.operationalstatus?view=netframework-4.7.2) |
-| `TunnelType` | Zeichenfolge | Tunneling-Protokoll, wenn die Schnittstelle zu diesem Zweck verwendet wird, beispielsweise 6to4, Teredo, ISATAP, PPTP, SSTP und SSH |
-| `ConnectedNetworks` | Zeichenfolge | Netzwerke, mit denen der Adapter verbunden ist. Jedes JSON-Array enthält den Netzwerknamen, die Kategorie (öffentlich, privat oder Domäne), eine Beschreibung und ein Flag, das angibt, ob es öffentlich mit dem Internet verbunden ist. |
-| `DnsAddresses` | Zeichenfolge | DNS-Serveradressen im JSON-Array Format |
-| `IPv4Dhcp` | Zeichenfolge | IPv4-Adresse des DHCP-Servers |
-| `IPv6Dhcp` | Zeichenfolge | IPv6-Adresse des DHCP-Servers |
-| `DefaultGateways` | Zeichenfolge | Standardgateway-Adressen im JSON-Array Format |
-| `IPAddresses` | Zeichenfolge | JSON-Array, das alle dem Adapter zugewiesenen IP-Adressen zusammen mit dem jeweiligen Subnetz-Präfix und dem IP-Adressraum enthält, beispielsweise Public, private oder Link-Local |
+| `NetworkAdapterName` | string | Name des Netzwerkadapters |
+| `MacAddress` | string | Mac-Adresse des Netzwerkadapters |
+| `NetworkAdapterType` | string | Typ des Netzwerkadapters. Informationen zu den möglichen Werten finden Sie in [dieser Aufzählung](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2) |
+| `NetworkAdapterStatus` | string | Betriebsstatus des Netzwerkadapters. Informationen zu den möglichen Werten finden Sie in [dieser Aufzählung](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.operationalstatus?view=netframework-4.7.2) |
+| `TunnelType` | string | Tunneling-Protokoll, wenn die Schnittstelle zu diesem Zweck verwendet wird, beispielsweise 6to4, Teredo, ISATAP, PPTP, SSTP und SSH |
+| `ConnectedNetworks` | string | Netzwerke, mit denen der Adapter verbunden ist. Jedes JSON-Array enthält den Netzwerknamen, die Kategorie (öffentlich, privat oder Domäne), eine Beschreibung und ein Flag, das angibt, ob es öffentlich mit dem Internet verbunden ist. |
+| `DnsAddresses` | string | DNS-Serveradressen im JSON-Array Format |
+| `IPv4Dhcp` | string | IPv4-Adresse des DHCP-Servers |
+| `IPv6Dhcp` | string | IPv6-Adresse des DHCP-Servers |
+| `DefaultGateways` | string | Standardgateway-Adressen im JSON-Array Format |
+| `IPAddresses` | string | JSON-Array, das alle dem Adapter zugewiesenen IP-Adressen zusammen mit dem jeweiligen Subnetz-Präfix und dem IP-Adressraum enthält, beispielsweise Public, private oder Link-Local |
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
