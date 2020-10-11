@@ -17,13 +17,15 @@ ms.assetid: 0a322724-08ca-43db-b69a-afbfa20484cd
 ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
+- m365solution-mip
+- m365initiative-compliance
 description: Mit Office 365 werden Ihre Inhalte im Ruhezustand und in der Übertragung mit der stärksten Verschlüsselung, den verfügbaren Protokollen und Technologien verschlüsselt. Erhalten Sie eine Übersicht über die Verschlüsselung in Office 365.
-ms.openlocfilehash: d3977902dfc1ee726fac696ae8b9cc0470e7dda8
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 28a5b55e63c3b66725aaa4a21e5dc750105c7c5a
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47306434"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48408595"
 ---
 # <a name="encryption"></a>Verschlüsselung
 
@@ -69,6 +71,8 @@ Weitere Informationen hierzu finden Sie in den folgenden Ressourcen:
 - [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)
 
 - [Dienstverschlüsselung mit Kundenschlüssel in Office 365](customer-key-overview.md)
+
+- [Doppelschlüssel Verschlüsselung für Microsoft 365](double-key-encryption.md)
 
 ## <a name="how-do-i"></a>Gewusst wie...
 

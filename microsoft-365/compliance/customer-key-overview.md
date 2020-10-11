@@ -1,5 +1,5 @@
 ---
-title: Dienst Verschlüsselung mit Kundenschlüssel
+title: Dienstverschlüsselung mit dem Kundenschlüssel
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,16 +12,18 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
+- m365solution-mip
+- m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie, wie die Dienst Verschlüsselung mit dem Kundenschlüssel in Microsoft 365 verwendet werden kann.
-ms.openlocfilehash: 217e23eff89427e5bd30a1da4dd36729110ed563
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: fd00b910a9a33fb792c41c7f64f9721e2b5bd20f
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817954"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48408983"
 ---
-# <a name="service-encryption-with-customer-key"></a>Dienst Verschlüsselung mit Kundenschlüssel
+# <a name="service-encryption-with-customer-key"></a>Dienstverschlüsselung mit dem Kundenschlüssel
 
 Microsoft 365 bietet eine grundlegende, auf Volumen Ebene verschlüsselte Verschlüsselung, die über BitLocker und den verteilten Schlüssel-Manager (DKM) aktiviert ist. Microsoft 365 bietet eine zusätzliche Verschlüsselungsebene auf Anwendungsebene für Ihre Inhalte. Dieser Inhalt enthält Daten aus Exchange Online-, Skype for Business-, SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Dateien. Diese hinzugefügte Verschlüsselungsebene wird als Dienst Verschlüsselung bezeichnet.
 

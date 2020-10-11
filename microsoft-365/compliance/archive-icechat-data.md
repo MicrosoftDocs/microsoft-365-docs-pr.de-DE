@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen Connector zum Importieren und Archivieren von Daten aus dem ICE-Chat-Tool in Microsoft 365 einrichten. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren, damit Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten der drittanbieterdaten Ihrer Organisation verwenden können.
-ms.openlocfilehash: 94a2d35b9bb8d3a0edae0eebeae53d7dd7b04af2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: cd56e98aadc2b7328b733939ecc8951413309ba5
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196368"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48408765"
 ---
 # <a name="set-up-a-connector-to-archive-ice-chat-data"></a>Einrichten eines Connectors zum Archivieren von Ice-Chat Daten
 
@@ -41,7 +41,7 @@ In der folgenden Übersicht wird erläutert, wie Sie einen Connector zum Archivi
 
    Zusätzlich zur automatischen Benutzerzuordnung, die die Werte der *SenderEmail* -und der *RecipientEmail* -Eigenschaft verwendet (was bedeutet, dass der Connector eine Chatnachricht in das Postfach des Absenders und die Postfächer jedes Empfängers importiert), können Sie auch benutzerdefinierte Benutzerzuordnungen definieren, indem Sie eine CSV-Zuordnungsdatei hochladen. Diese Zuordnungsdatei enthält den ICE Chat *ImId* und die entsprechende Microsoft 365-Postfachadresse für jeden Benutzer in Ihrer Organisation. Wenn Sie die automatische Benutzerzuordnung aktivieren und eine benutzerdefinierte Zuordnungsdatei bereitstellen, wird der Connector für jedes Chat Element zuerst die benutzerdefinierte Zuordnungsdatei betrachten. Wenn ein gültiges Microsoft 365-Benutzerkonto, das dem ICE Chat-ImId eines Benutzers entspricht, nicht gefunden wird, verwendet der Connector die *SenderEmail* -und *RecipientEmail* -Eigenschaften des Chat Elements, um das Element in die Postfächer der Chat Teilnehmer zu importieren. Wenn der Connector weder in der benutzerdefinierten Zuordnungsdatei noch in den Eigenschaften *SenderEmail* und *RecipientEmail* einen gültigen Microsoft 365-Benutzer findet, wird das Element nicht importiert.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 Einige der erforderlichen Schritte zum Archivieren von Ice-Chat Daten liegen außerhalb von Microsoft 365 und müssen abgeschlossen sein, bevor Sie den Connector im Compliance Center erstellen können.
 

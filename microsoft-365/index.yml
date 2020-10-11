@@ -13,12 +13,12 @@ metadata:
   ms.author: robmazz
   ms.date: 11/08/2019
   localization_priority: Priority
-  ms.openlocfilehash: ad215b1b5115faaaf82f01488aaf864f4b2de392
-  ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+  ms.openlocfilehash: 2b25d2b290723378f0e7ec286a0928add997ea39
+  ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 10/03/2020
-  ms.locfileid: "48350247"
+  ms.lasthandoff: 10/09/2020
+  ms.locfileid: "48398703"
 highlightedContent:
   items:
   - title: Fördern von Remotemitarbeitern
@@ -93,7 +93,7 @@ productDirectory:
       text: Bereitstellen von Microsoft Defender Advanced Threat Protection
     - url: security/office-365-security/office-365-atp.md
       text: Bereitstellen von Office 365 Advanced Threat Protection
-    - url: enterprise/microsoft-365-policies-configurations.md
+    - url: security/office-365-security/microsoft-365-policies-configurations.md
       text: Konfigurieren des Identitäts- und Gerätezugriffschutzes
   - title: Schutz Ihrer Informationen und Einhaltung gesetzlicher Vorschriften
     imageSrc: https://docs.microsoft.com/office/media/icons/certificate-blue.svg
@@ -247,9 +247,12 @@ additionalContent:
     - title: Endbenutzer
       summary: Auf support.microsoft.com finden Sie Schulungs-, Anleitungs- und Hilfeinhalte für Benutzer von Microsoft 365.
       url: https://support.microsoft.com/microsoft-365
-    - title: Lehrkräfte
+    - title: Bildungseinrichtungen im IT-Bereich
       summary: Lernen Sie, wie Sie Kreativität freisetzen, Teamarbeit fördern und mit Microsoft 365 Education sicher und einfach arbeiten können.
       url: /education
+    - title: Lehrkräfte
+      summary: Hier finden Sie Schulungs-, Anleitungs- und Hilfeinhalte für Pädagogen, die Microsoft 365 Education verwenden.
+      url: https://support.microsoft.com/education
     - title: Tech Community
       summary: Treten Sie der Microsoft 365 Tech Community bei, um Erfahrungen auszutauschen, sich zu engagieren und von Experten zu lernen.
       url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
