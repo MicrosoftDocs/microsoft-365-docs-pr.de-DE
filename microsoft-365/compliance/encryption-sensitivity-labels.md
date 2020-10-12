@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 description: Konfigurieren Sie Vertraulichkeitsbezeichnungen für die Verschlüsselung, die Ihre Daten durch Einschränken von Zugriff und Nutzung schützt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6a1be64f98def6676e27e1e0c1b3f7e031b31cba
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a734d6f71a943964775477199025180d1a41426e
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196620"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48408625"
 ---
-# <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Einschränken des Zugriffs auf Inhalte mithilfe von Vertraulichkeitsbezeichnungen zur Verschlüsselung 
+# <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Einschränken des Zugriffs auf Inhalte mithilfe von Vertraulichkeitsbezeichnungen zur Verschlüsselung
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
 
@@ -68,7 +68,6 @@ Konfigurieren der Verschlüsselungsoptionen:
 
 ![Optionen für die Vertraulichkeitsbezeichnung zur Verschlüsselung](../media/encrytion-options-sensitivity-label.png)
 
-
 ### <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>Was mit einer vorhandenen Verschlüsselung geschieht, wenn eine Bezeichnung angewendet wird
 
 Wenn eine Vertraulichkeitsbezeichnung auf unverschlüsselte Inhalte angewendet wird, ist das Ergebnis der Verschlüsselungsoptionen, die Sie auswählen können, selbsterklärend. Wenn die Verschlüsselung beispielsweise auf **Keine** festgelegt ist, bleibt der Inhalt unverschlüsselt.
@@ -88,6 +87,7 @@ In der folgenden Tabelle wird dargestellt, was mit einer vorhandenen Verschlüss
 |**Bezeichnung mit von dem Administrator definierten Berechtigungen**|Die ursprüngliche Verschlüsselung wird entfernt|Es wird keine neue Verschlüsselung mit Bezeichnung angewendet|Die ursprüngliche Verschlüsselung wird entfernt|
 
 Beachten Sie, dass in den Fällen, in denen die neue Verschlüsselung mit Bezeichnungen angewendet oder die ursprüngliche Verschlüsselung entfernt wird, dies geschieht nur, wenn der Benutzer, der die Bezeichnung angewendet hat, über ein Nutzungsrecht oder eine Rolle verfügt, die diese Aktion unterstützt:
+
 - Die [Verwendungsberechtigung](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) Export oder Vollzugriff.
 - Die Rolle von [Rechteverwaltung-Aussteller oder -Besitzer](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)oder [Administrator](https://docs.microsoft.com/azure/information-protection/configure-super-users).
 
@@ -99,7 +99,7 @@ So kann beispielsweise die Person, die „Keine Weiterleitung“ an eine E-Mail-
 
 Wenn eine E-Mail-Nachricht mit einer beliebigen Methode verschlüsselt wird, erben unverschlüsselte Office-Dokumente, die mit der E-Mail verbunden sind, automatisch die gleichen Verschlüsselungseinstellungen.
 
-Dokumente, die bereits verschlüsselt und dann als Anlagen hinzugefügt wurden, erhalten immer die ursprüngliche Verschlüsselung. 
+Dokumente, die bereits verschlüsselt und dann als Anlagen hinzugefügt wurden, erhalten immer die ursprüngliche Verschlüsselung.
 
 ## <a name="configure-encryption-settings"></a>Konfigurieren von Verschlüsselungseinstellungen
 
@@ -112,10 +112,9 @@ Liegt beispielsweise eine Vertraulichkeitsbezeichnung namens **Streng vertraulic
 
 Wenn Sie hingegen über eine Vertraulichkeitsbezeichnung namens **Geschäftsverträge** verfügen und der Workflow in Ihrer Organisation erfordert, dass Ihre Mitarbeiter mit anderen Personen auf Ad-hoc-Basis an diesen Inhalten zusammenarbeiten, können Sie zulassen, dass Ihre Benutzer jeweils entscheiden, wer eine Berechtigung erhält, wenn sie diese Bezeichnung zuweisen. Diese Flexibilität fördert die Produktivität Ihrer Benutzer und verringert die Anfragen an Ihre Administratoren, Vertraulichkeitsbezeichnungen für spezifische Szenarios zu erstellen oder zu aktualisieren.
 
-Auswählen, ob Berechtigungen jetzt zugewiesen werden sollen oder ob Benutzer Berechtigungen zuweisen dürfen: 
+Auswählen, ob Berechtigungen jetzt zugewiesen werden sollen oder ob Benutzer Berechtigungen zuweisen dürfen:
 
 ![Option zum Hinzufügen von benutzer- oder administratordefinierten Berechtigungen](../media/sensitivity-label-user-or-admin-defined-permissions.png)
-
 
 ## <a name="assign-permissions-now"></a>Berechtigungen sofort zuweisen
 
@@ -162,7 +161,7 @@ Wenn Sie Berechtigungen zuweisen, können Sie folgende Optionen auswählen:
 - Jede spezifische Benutzer- oder E-Mail-fähige Sicherheits-, Verteiler- oder Microsoft 365-Gruppe ([ehemals Office 365-Gruppe](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) in Azure AD. Die Microsoft 365-Gruppe kann die statische oder [dynamische Mitgliedschaft](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule) haben. Sie können keine [dynamische Verteilergruppe aus Exchange](https://docs.microsoft.com/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups) verwenden, da dieser Gruppentyp nicht mit Azure AD synchronisiert wird und Sie keine Sicherheitsgruppe verwenden können, die nicht E-Mail-aktiviert ist.
 
 - Beliebige E-Mail-Adresse oder Domäne. Verwenden Sie diese Option, um alle Benutzer in einer anderen Organisation, die Azure AD verwendet, anzugeben, indem Sie einen beliebigen Domänennamen aus dieser Organisation eingeben. Sie können diese Option auch für Anbieter sozialer Dienste verwenden, indem Sie deren Domänennamen eingeben, z. B. **gmail.com****hotmail.com** oder **Outlook.com**.
-    
+
     > [!NOTE]
     > Wenn Sie eine Domäne aus einer Organisation angeben, die Azure AD verwendet, können Sie den Zugriff auf diese bestimmte Domäne nicht einschränken. Stattdessen werden alle überprüften Domänen in Azure AD für den Mandanten mit dem von Ihnen angegebenen Domänennamen automatisch einbezogen.
 
@@ -175,6 +174,7 @@ Als bewährte Methode sollten Sie besser Gruppen anstelle von Benutzern verwende
 Diese Einstellung schränkt den Zugriff der Benutzer auf den Inhalt nicht ein, der von der Bezeichnung verschlüsselt wird, während sie den Inhalt weiterhin verschlüsselt und Ihnen Optionen zum Einschränken des Inhalts (Berechtigungen) und zum Zugriff auf (Ablauf und Offlinezugriff) bietet. Die Anwendung, die die verschlüsselten Inhalte öffnet, muss die verwendete Authentifizierung unterstützen können. Aus diesem Grund funktionieren Partner-Sozialnetwerkanbieter wie Google und die Authentifizierung mit einer Einmalkennung nur für E-Mail und nur dann, wenn Sie Exchange Online verwenden. Microsoft-Konten können mit Office 365-Apps und dem [Azure Information Protection-Viewer](https://portal.azurerms.com/#/download)verwendet werden.
 
 Einige typische Szenarien für die Einstellung "Alle authentifizierten Benutzer":
+
 - Es ist Ihnen egal, wer auf den Inhalt zugreift, aber Sie möchten die Verwendung einschränken. So möchten Sie beispielsweise nicht, dass der Inhalt bearbeitet, kopiert oder gedruckt wird.
 - Sie müssen nicht einschränken, wer auf die Inhalte zugreift, aber Sie möchten bestätigen können, wer die Inhalte öffnet.
 - Sie fordern, dass der Inhalt im Standby und bei der Übermittlung verschlüsselt werden muss, aber es sind keine Zugriffskontrollen erforderlich.
@@ -223,10 +223,11 @@ Sie können mithilfe dieser Optionen Benutzern erlauben, Berechtigungen zuzuweis
 
 - In Outlook kann ein Benutzer Einschränkungen wählen, die der Option [Nicht weiterleiten](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) für Ihre gewählten Empfänger entsprechen.
 
-- In Word, PowerPoint und Excel wird ein Benutzer aufgefordert, ihre eigenen Berechtigungen für bestimmte Benutzer, Gruppen oder Organisationen auszuwählen. 
+- In Word, PowerPoint und Excel wird ein Benutzer aufgefordert, ihre eigenen Berechtigungen für bestimmte Benutzer, Gruppen oder Organisationen auszuwählen.
+
     > [!NOTE]
     > Diese Option für Word, PowerPoint und Excel wird vom Azure Information Protection-Clients mit einheitlichen Bezeichnungen unterstützt. Für Apps, die die integrierte Bezeichnung verwenden. [Überprüfen Sie, welche Apps diese Funktion unterstützen](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint).
-    > 
+    >
     > Ist diese Option ausgewählt, jedoch für die App eines Benutzers nicht unterstützt, wird die Bezeichnung dem Benutzer entweder nicht angezeigt oder die Bezeichnung wird zu Konsistenzzwecken angezeigt, kann jedoch nicht mit einer entsprechenden Erläuterung für die Benutzer angewendet werden.
 
 Wenn die Optionen unterstützt werden, verwenden Sie die folgende Tabelle, um zu ermitteln, wann Benutzer die Vertraulichkeitsbezeichnung sehen:
@@ -272,7 +273,6 @@ Bei der integrierten Bezeichnung sehen die Benutzer dasselbe Dialogfeld, wenn Si
 
 - MacOS: Registerkarte **Überprüfen** > **Schutz** > **Berechtigungen** > **eingeschränkter Zugriff**
 
-
 ## <a name="example-configurations-for-the-encryption-settings"></a>Beispielkonfigurationen für die Verschlüsselungseinstellungen
 
 Führen Sie für jedes der folgenden Beispiele die Konfiguration über die Seite **Verschlüsselung** des Assistenten aus, wenn Sie eine [Vertraulichkeitsbezeichnung erstellen oder bearbeiten](create-sensitivity-labels.md#create-and-configure-sensitivity-labels). Stellen Sie zunächst sicher, dass die **Verschlüsselung** auf **Übernehmen** festgelegt ist:
@@ -281,18 +281,17 @@ Führen Sie für jedes der folgenden Beispiele die Konfiguration über die Seite
 
 ### <a name="example-1-label-that-applies-do-not-forward-to-send-an-encrypted-email-to-a-gmail-account"></a>Beispiel 1: Bezeichnung, die "Nicht weiterleiten" beim Senden einer verschlüsselten E-Mail-Nachricht an ein Gmail-Konto anwendet
 
-Diese Bezeichnung wird nur in Outlook und Outlook im Web angezeigt und Sie müssen Exchange Online verwenden. Weisen Sie Benutzer an, diese Bezeichnung auszuwählen, wenn sie eine verschlüsselte E-Mail an Personen senden müssen, die ein Gmail-Konto (oder ein anderes E-Mail-Konto außerhalb Ihrer Organisation) verwenden. 
+Diese Bezeichnung wird nur in Outlook und Outlook im Web angezeigt und Sie müssen Exchange Online verwenden. Weisen Sie Benutzer an, diese Bezeichnung auszuwählen, wenn sie eine verschlüsselte E-Mail an Personen senden müssen, die ein Gmail-Konto (oder ein anderes E-Mail-Konto außerhalb Ihrer Organisation) verwenden.
 
-Ihre Benutzer geben die Gmail-Adresse in das Feld **An** ein.  Dann wählen sie die Bezeichnung aus, und die Option "Nicht weiterleiten" wird der E-Mail automatisch hinzugefügt. Das hat zur Folge, dass Empfänger die E-Mail nicht weiterleiten oder drucken, deren Inhalt nicht kopieren und die E-Mail nicht über die Option **Speichern unter** außerhalb Ihres Postfachs speichern können. 
+Ihre Benutzer geben die Gmail-Adresse in das Feld **An** ein.  Dann wählen sie die Bezeichnung aus, und die Option "Nicht weiterleiten" wird der E-Mail automatisch hinzugefügt. Das hat zur Folge, dass Empfänger die E-Mail nicht weiterleiten oder drucken, deren Inhalt nicht kopieren und die E-Mail nicht über die Option **Speichern unter** außerhalb Ihres Postfachs speichern können.
 
 1. Auf der Seite **Verschlüsselung**: Wählen Sie für **Jetzt Berechtigungen zuweisen oder die Benutzer entscheiden lassen?** die Option **Benutzern die Zuweisung von Berechtigungen überlassen, wenn sie die Bezeichnung anwenden** aus.
 
-3. Aktivieren Sie das Kontrollkästchen **In Outlook Einschränkungen durchsetzen, die der Option "Nicht weiterleiten" entsprechen**.
+2. Aktivieren Sie das Kontrollkästchen **In Outlook Einschränkungen durchsetzen, die der Option "Nicht weiterleiten" entsprechen**.
 
-4. Wenn das Kontrollkästchen **In Word, PowerPoint und Excel die Benutzer auffordern, Berechtigungen anzugeben** aktiviert ist, deaktivieren Sie es.
+3. Wenn das Kontrollkästchen **In Word, PowerPoint und Excel die Benutzer auffordern, Berechtigungen anzugeben** aktiviert ist, deaktivieren Sie es.
 
-5. Wählen Sie **Weiter** aus, und schließen Sie den Assistenten ab.
-
+4. Wählen Sie **Weiter** aus, und schließen Sie den Assistenten ab.
 
 ### <a name="example-2-label-that-restricts-read-only-permission-to-all-users-in-another-organization"></a>Beispiel 2: Bezeichnung, die die Nur-Lese-Berechtigung auf alle Benutzer in einer anderen Organisation beschränkt
 
@@ -302,22 +301,21 @@ Diese Bezeichnung eignet sich nicht für E-Mails.
 
 1. Auf der Seite **Verschlüsselung**: Wählen Sie für **Jetzt Berechtigungen zuweisen oder die Benutzer entscheiden lassen?** die Option **Berechtigungen sofort zuweisen** aus.
 
-3. Wählen Sie für **Offlinezugriff zulassen** die Option **Nie** aus.
+2. Wählen Sie für **Offlinezugriff zulassen** die Option **Nie** aus.
 
-4. Wählen Sie **Berechtigungen zuweisen** aus.
+3. Wählen Sie **Berechtigungen zuweisen** aus.
 
-3. Wählen Sie im Bereich **Berechtigungen zuweisen** die Option **Spezifische E-Mail-Adressen oder Domänen hinzufügen** aus.
+4. Wählen Sie im Bereich **Berechtigungen zuweisen** die Option **Spezifische E-Mail-Adressen oder Domänen hinzufügen** aus.
 
-4. Geben Sie in das Textfeld den Namen einer Domäne der anderen Organisation ein, z. B. **fabrikam.com**. Wählen Sie dann **Hinzufügen** aus.
+5. Geben Sie in das Textfeld den Namen einer Domäne der anderen Organisation ein, z. B. **fabrikam.com**. Wählen Sie dann **Hinzufügen** aus.
 
-5. Klicken Sie auf **Berechtigungen auswählen**.
+6. Klicken Sie auf **Berechtigungen auswählen**.
 
-6. Wählen Sie im Bereich **Berechtigungen auswählen** im Dropdownfeld **Viewer** aus und klicken Sie anschließend auf **Speichern**.
+7. Wählen Sie im Bereich **Berechtigungen auswählen** im Dropdownfeld **Viewer** aus und klicken Sie anschließend auf **Speichern**.
 
-6. Zurück im Bereich **Berechtigungen zuweisen** wählen Sie **Speichern** aus.
+8. Zurück im Bereich **Berechtigungen zuweisen** wählen Sie **Speichern** aus.
 
-7. Wählen Sie auf der Seite **Verschlüsselung** die Option **Weiter** aus, und schließen Sie den Assistenten ab.
-
+9. Wählen Sie auf der Seite **Verschlüsselung** die Option **Weiter** aus, und schließen Sie den Assistenten ab.
 
 ### <a name="example-3-add-external-users-to-an-existing-label-that-encrypts-content"></a>Beispiel 3: Hinzufügen externer Benutzer zu einer vorhandenen Bezeichnung, die Inhalt verschlüsselt
 
@@ -339,10 +337,9 @@ Die neuen Benutzer, die Sie hinzufügen, können Dokumente und E-Mails öffnen, 
 
 8. Wählen Sie auf der Seite **Verschlüsselung** die Option **Weiter** aus, und schließen Sie den Assistenten ab.
 
-
 ### <a name="example-4-label-that-encrypts-content-but-doesnt-restrict-who-can-access-it"></a>Beispiel 4: Bezeichnung, die Inhalte verschlüsselt, aber nicht einschränkt, wer darauf zugreifen kann
 
-Diese Konfiguration hat den Vorteil, dass Sie zur Verschlüsselung einer E-Mail oder eines Dokuments keine Benutzer, Gruppen oder Domänen angeben müssen. Der Inhalt wird trotzdem verschlüsselt, und Sie können Nutzungsrechte, ein Ablaufdatum und Offlinezugriff festlegen. 
+Diese Konfiguration hat den Vorteil, dass Sie zur Verschlüsselung einer E-Mail oder eines Dokuments keine Benutzer, Gruppen oder Domänen angeben müssen. Der Inhalt wird trotzdem verschlüsselt, und Sie können Nutzungsrechte, ein Ablaufdatum und Offlinezugriff festlegen.
 
 Verwenden Sie diese Konfiguration nur, wenn Sie nicht einschränken müssen, wer das geschützte Dokument oder die E-Mail öffnen kann. [Weitere Informationen zu dieser Einstellung](#requirements-and-limitations-for-add-any-authenticated-users)
 
@@ -352,8 +349,8 @@ Verwenden Sie diese Konfiguration nur, wenn Sie nicht einschränken müssen, wer
 
 3. Wählen Sie **Berechtigungen zuweisen** aus.
 
-4. Wählen Sie im Bereich **Berechtigungen zuweisen**die Option **Alle authentifizierten Benutzer hinzufügen** aus. 
-    
+4. Wählen Sie im Bereich **Berechtigungen zuweisen**die Option **Alle authentifizierten Benutzer hinzufügen** aus.
+
     **Benutzer und Gruppen** werden **Authentifizierte Benutzer** automatisch hinzugefügt. Sie können diesen Wert nicht ändern, sondern nur löschen, wodurch die Auswahl **Alle authentifizierten Benutzer hinzufügen** aufgehoben wird.
 
 5. Klicken Sie auf **Berechtigungen auswählen**.
@@ -369,26 +366,26 @@ Verwenden Sie diese Konfiguration nur, wenn Sie nicht einschränken müssen, wer
 Durch die Verschlüsselung Ihrer sensibelsten Dokumente und E-Mails können Sie sicherstellen, dass nur autorisierte Personen auf diese Daten zugreifen können. Es müssen jedoch einige Überlegungen berücksichtigt werden:
 
 - Wenn Ihre Organisation[Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) nicht gewählt hat:
-    
-    - werden Suche, eDiscovery und Delve bei verschlüsselten Dateien nicht funktionieren.
-    - funktionieren DLP-Richtlinien für die Metadaten dieser verschlüsselten Dateien (einschließlich Aufbewahrungsbezeichnungen), aber nicht für die Inhalte dieser Dateien (z. B. Kreditkartennummern innerhalb von Dateien).
-    - können Benutzer verschlüsselte Dateien mit Office im Web nicht öffnen. Wenn Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive aktiviert sind, können Benutzer Office im Web verwenden, um verschlüsselte Dateien zu öffnen, mit einigen [Einschränkungen](sensitivity-labels-sharepoint-onedrive-files.md#limitations), darunter die Verschlüsselung, die mit einem firmeneigenen Schlüssel (bekannt als „Hold your own key“ oder HYOK) angewendet wurde, [Verschlüsselung mit Doppelschlüssel](#double-key-encryption) und die Verschlüsselung, die unabhängig von einer Vertraulichkeitsbezeichnung angewendet wurde.
+
+  - werden Suche, eDiscovery und Delve bei verschlüsselten Dateien nicht funktionieren.
+  - funktionieren DLP-Richtlinien für die Metadaten dieser verschlüsselten Dateien (einschließlich Aufbewahrungsbezeichnungen), aber nicht für die Inhalte dieser Dateien (z. B. Kreditkartennummern innerhalb von Dateien).
+  - können Benutzer verschlüsselte Dateien mit Office im Web nicht öffnen. Wenn Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive aktiviert sind, können Benutzer Office im Web verwenden, um verschlüsselte Dateien zu öffnen, mit einigen [Einschränkungen](sensitivity-labels-sharepoint-onedrive-files.md#limitations), darunter die Verschlüsselung, die mit einem firmeneigenen Schlüssel (bekannt als „Hold your own key“ oder HYOK) angewendet wurde, [Verschlüsselung mit Doppelschlüssel](#double-key-encryption) und die Verschlüsselung, die unabhängig von einer Vertraulichkeitsbezeichnung angewendet wurde.
 
 - Damit mehrere Benutzer gleichzeitig eine verschlüsselte Datei bearbeiten können, müssen alle Office für Web verwenden. Wenn dies nicht der Fall ist und die Datei bereits geöffnet ist:
-    
-    - In Office-Apps (Windows, Mac, Android und IOS) wird Benutzern eine **„Datei wird verwendet“**-Nachricht mit dem Namen der Person angezeigt, die die Datei ausgecheckt hat. Sie können dann eine schreibgeschützte Kopie anzeigen oder eine Kopie der Datei speichern und bearbeiten sowie benachrichtigt werden, wenn die Datei verfügbar ist.
-    - In Office für Web wird Benutzern eine Fehlermeldung angezeigt, dass Sie das Dokument nicht zusammen mit anderen Personen bearbeiten können. Sie können dann **In der Leseansicht öffnen** auswählen.
+
+  - In Office-Apps (Windows, Mac, Android und IOS) wird Benutzern eine **„Datei wird verwendet“**-Nachricht mit dem Namen der Person angezeigt, die die Datei ausgecheckt hat. Sie können dann eine schreibgeschützte Kopie anzeigen oder eine Kopie der Datei speichern und bearbeiten sowie benachrichtigt werden, wenn die Datei verfügbar ist.
+  - In Office für Web wird Benutzern eine Fehlermeldung angezeigt, dass Sie das Dokument nicht zusammen mit anderen Personen bearbeiten können. Sie können dann **In der Leseansicht öffnen** auswählen.
 
 - Die Funktion [Automatisches Speichern](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) in Office-Apps (Windows-, Mac-, Android-und IOS) ist für verschlüsselte Dateien deaktiviert. Benutzern wird eine Meldung angezeigt, dass die Datei eingeschränkte Berechtigungen hat, die entfernt werden müssen, bevor das automatische Speichern aktiviert werden kann.
 
 - Das Öffnen verschlüsselter Dateien in Office-Anwendungen (Windows, Mac, Android und iOS) kann länger dauern.
 
 - Die folgenden Aktionen für verschlüsselte Dateien werden von Office-Apps (Windows, Mac, Android und IOS) nicht unterstützt und Benutzern wird eine Fehlermeldung angezeigt, dass etwas schief gelaufen ist. Allerdings kann die SharePoint-Funktionalität als Alternative verwendet werden:
-    
-    - Anzeigen, wiederherstellen und speichern von Kopien früherer Versionen. Alternativ können Benutzer diese Aktionen mit Office im Web durchführen, wenn sie Folgendes verwenden: [Aktivieren und Konfigurieren der Versionsverwaltung für eine Liste oder Bibliothek](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37). 
-    - Ändern des Namens oder des Speicherorts der Dateien. Alternativ können Benutzer in SharePoint [eine Datei, einen Ordner oder einen Link in einer Dokumentbibliothek umbenennen](https://support.microsoft.com/de-DE/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185).
 
-Für eine optimale Zusammenarbeit bei Dateien, die mit einer Vertraulichkeitsbezeichnung verschlüsselt sind, empfehlen wir die Verwendung von [Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) sowie Office im Web. 
+  - Anzeigen, wiederherstellen und speichern von Kopien früherer Versionen. Alternativ können Benutzer diese Aktionen mit Office im Web durchführen, wenn sie Folgendes verwenden: [Aktivieren und Konfigurieren der Versionsverwaltung für eine Liste oder Bibliothek](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37).
+  - Ändern des Namens oder des Speicherorts der Dateien. Alternativ können Benutzer in SharePoint [eine Datei, einen Ordner oder einen Link in einer Dokumentbibliothek umbenennen](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185).
+
+Für eine optimale Zusammenarbeit bei Dateien, die mit einer Vertraulichkeitsbezeichnung verschlüsselt sind, empfehlen wir die Verwendung von [Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) sowie Office im Web.
 
 ## <a name="important-prerequisites"></a>Wichtige Voraussetzungen
 
@@ -401,10 +398,10 @@ Damit Vertraulichkeitsbezeichnungen angewendet werden können, muss der Protecti
 ### <a name="configure-exchange-for-azure-information-protection"></a>Konfigurieren von Exchange für Azure Information Protection
 
 Exchange muss nicht für Azure Information Protection konfiguriert werden, bevor Benutzer in Outlook zum Verschlüsseln ihrer E-Mails Bezeichnungen anwenden können. Solange Exchange jedoch nicht für Azure Information Protection konfiguriert ist, erhalten Sie nicht die volle Funktionalität des Azure Rights Management-Schutzes mit Exchange.
- 
-Benutzer können beispielsweise verschlüsselte E-Mails nicht auf Mobiltelefonen oder mit Outlook im Web anzeigen, verschlüsselte E-Mails können nicht für die Suche indexiert werden, und Sie können Exchange Online DLP nicht für den Rights Management-Schutz konfigurieren. 
+
+Benutzer können beispielsweise verschlüsselte E-Mails nicht auf Mobiltelefonen oder mit Outlook im Web anzeigen, verschlüsselte E-Mails können nicht für die Suche indexiert werden, und Sie können Exchange Online DLP nicht für den Rights Management-Schutz konfigurieren.
 
 Um sicherzustellen, dass Exchange diese zusätzlichen Szenarien unterstützt, lesen Sie die folgenden Informationen:
 
 - Für Exchange Online lesen Sie die Anweisungen für [Exchange Online: Konfigurieren von IRM](https://docs.microsoft.com/azure/information-protection/configure-office365#exchangeonline-irm-configuration).
-- For das lokale Exchange müssen Sie den [RMS-Connector bereitstellen und Ihre Exchange-Server konfigurieren](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector). 
+- For das lokale Exchange müssen Sie den [RMS-Connector bereitstellen und Ihre Exchange-Server konfigurieren](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector).
