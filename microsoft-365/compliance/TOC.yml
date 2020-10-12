@@ -324,23 +324,33 @@
               href: archive-twitter-data-with-sample-connector.md
         - name: Globanet-Datenverbinder
           items:
+            - name: Cisco Jabber
+              href: archive-ciscojabberonmssql-data.md
             - name: EML
               href: archive-eml-data.md
             - name: FX Connect
               href: archive-fxconnect-data.md
+            - name: Jive
+              href: archive-jive-data.md
+            - name: Pivot
+              href: archive-pivot-data.md
             - name: Reuters Eikon
               href: archive-reuterseikon-data.md
-            - name: Slack
+            - name: Slack eDiscovery
               href: archive-slack-data.md
             - name: Symphony
               href: archive-symphony-data.md
             - name: Texttrennzeichen
               href: archive-text-delimited-data.md
+            - name: Webseiten
+              href: archive-webpagecapture-data.md
             - name: Webex Teams
               href: archive-webexteams-data.md
             - name: Workplace von Facebook
               href: archive-workplacefromfacebook-data.md
-            - name: Zoom Besprechungen
+            - name: XSLT/XML
+              href: archive-xslt-xml-data.md
+            - name: Zoom-Besprechungen
               href: archive-zoommeetings-data.md
         - name: TeleMessage Datenconnectors
           items:
@@ -824,8 +834,14 @@
           href: auditing-troubleshooting-scenarios.md
         - name: Verwenden der Freigabeüberwachung im Überwachungsprotokoll
           href: use-sharing-auditing.md
-        - name: Suchen nach eDiscovery-Aktivitäten im Überwachungsprotokoll
-          href: search-for-ediscovery-activities-in-the-audit-log.md
+        - name: Office 365-Verwaltungsaktivitäts-API
+          items:
+            - name: Office 365-Verwaltungsaktivitäts-API – Referenz
+              href: 'https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference'
+            - name: Office 365-Verwaltungsaktivitäts-API-Schema
+              href: 'https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema'
+            - name: Häufig gestellte Fragen und Problembehandlung der Office 365-Verwaltungsaktivitäts-API
+              href: 'https://docs.microsoft.com/office/office-365-management-api/troubleshooting-the-office-365-management-activity-api'
     - name: Postfachüberwachung
       href: enable-mailbox-auditing.md
     - name: Erweiterte Überwachung
