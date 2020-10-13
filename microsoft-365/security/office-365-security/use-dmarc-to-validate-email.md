@@ -14,14 +14,14 @@ search.appverid:
 ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 description: Erfahren Sie, wie Sie domänenbasierte Nachrichtenauthentifizierung, Berichterstellung und Konformität (DMARC) konfigurieren, um von Ihrer Organisation gesendete Nachrichten zu validieren.
-ms.openlocfilehash: d3069dfa8324daaaabd11388550b1c96e7a6cceb
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 4ff2c93e420957714815100243a6502e7ea087a7
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48412454"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446371"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Verwenden von DMARC zum Überprüfen von E-Mails
 

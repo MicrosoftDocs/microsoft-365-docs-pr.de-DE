@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: af47f45ca4f3d14e835a39a334a9400002ac8560
-ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
+ms.openlocfilehash: 4ec46891248c09f580b19d888573544ad2b4930f
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418073"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446867"
 ---
 # <a name="run-your-pilot-microsoft-threat-protection-project"></a>Ausführen des Pilotprojekts "Microsoft Threat Protection" 
 
@@ -35,7 +35,7 @@ ms.locfileid: "48418073"
 **Gilt für:**
 - Microsoft Threat Protection
 
-Um den Nutzen und die Akzeptanz von Microsoft Threat Protection (MTP) effektiv zu bestimmen, können Sie ein Pilotprojekt ausführen. Vor dem Aktivieren von Microsoft Threat Protection in Ihrer Produktionsumgebung und beginnend mit definierten Anwendungsfällen sollten Sie am besten einen Planungsprozess durchlaufen, um die Aufgaben zu ermitteln, die in diesem Pilotprojekt erfüllt sein müssen, und die Erfolgskriterien. 
+Um den Nutzen und die Akzeptanz von Microsoft Threat Protection (MTP) effektiv zu bestimmen, können Sie ein Pilotprojekt ausführen. Vor dem Aktivieren von Microsoft Threat Protection in Ihrer Produktionsumgebung und dem Starten der Anwendungsfälle empfiehlt es sich, die für ihr Pilotprojekt zu erledigenden Aufgaben zu ermitteln und die Erfolgskriterien festzulegen. 
 
 
 ## <a name="how-to-use-this-pilot-playbook"></a>Vorgehensweise zum Verwenden dieses Pilot Manuskripts

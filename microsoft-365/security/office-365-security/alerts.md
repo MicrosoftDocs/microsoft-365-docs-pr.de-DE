@@ -17,15 +17,15 @@ search.appverid:
 ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection:
 - M365-security-compliance
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 description: In diesem Artikel erfahren Sie, wie Sie mithilfe der Warnungsfunktionen im Office 365 Security & Compliance Center Warnungen anzeigen und verwalten können, einschließlich der Verwaltung erweiterter Benachrichtigungen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2c7277f3639a2c6561798e220e42045cd220cc7a
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 8867732611af275b45b14dc0894e24ed4c89d062
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48411950"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48447047"
 ---
 # <a name="alerts-in-the-security--compliance-center"></a>Warnungen im Security & Compliance Center
 

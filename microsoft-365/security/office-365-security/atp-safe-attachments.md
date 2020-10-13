@@ -16,15 +16,15 @@ search.appverid:
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection:
 - M365-security-compliance
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 - seo-marvel-apr2020
 description: Administratoren können sich über das Feature "sichere Anlagen" in Office 365 Advanced Threat Protection (ATP) informieren.
-ms.openlocfilehash: 634302c6e648dbad6e41026e374b382c25f3d34b
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: b8a74ac9cea56612d4669f3e68b1b2c83f23c7a4
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48411686"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446695"
 ---
 # <a name="safe-attachments-in-office-365-atp"></a>Sichere Anlagen in Office 365 ATP
 

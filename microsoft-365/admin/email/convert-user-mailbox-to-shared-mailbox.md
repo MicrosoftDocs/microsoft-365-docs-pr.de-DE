@@ -2,9 +2,9 @@
 title: Konvertieren eines Benutzerpostfachs in ein freigegebenes Postfach
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
-manager: mnirkhe
+ms.author: sharik
+author: SKjerland
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'Hier erfahren Sie, wie Sie ein privates Postfach in ein freigegebenes Postfach konvertieren, auf das mehrere Benutzer zugreifen können. '
-ms.openlocfilehash: 027236afb5a77e950083f254a154c491d6abc6ac
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: bc867c9b43656e40149eb7cd7a7e5ce186c10798
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341192"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445687"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Konvertieren eines Benutzerpostfachs in ein freigegebenes Postfach
 
@@ -57,7 +57,7 @@ Wenn Sie das Postfach eines Benutzers in ein freigegebenes Postfach konvertieren
 Alles, was Sie über freigegebene Postfächer wissen müssen, finden Sie unter [Informationen zu freigegebenen Postfächern](about-shared-mailboxes.md) und [Erstellen eines freigegebenen Postfachs](create-a-shared-mailbox.md).
 
 > [!NOTE]
-> Freigegebene Postfächer erfordern keine separate Lizenz. Wenn Sie jedoch das in-situ-Archiv aktivieren oder ein in-situ-Archiv oder ein Beweissicherungsverfahren für ein freigegebenes Postfach bereitstellen möchten, müssen Sie dem Postfach Exchange Online Archivierungs-oder Exchange Online Plan 2-Lizenz einen Exchange Online Plan 1 mit zuweisen.
+> Freigegebene Postfächer erfordern keine separate Lizenz. Wenn Sie jedoch In-Place Archiv aktivieren oder ein In-Place halten oder ein Beweissicherungsverfahren für ein freigegebenes Postfach speichern möchten, müssen Sie dem Postfach einen Exchange Onlineplan 1 mit Exchange Online Archivierungs-oder Exchange Online Plan 2-Lizenz zuweisen.
 
 
 ## <a name="convert-the-mailbox-of-a-deleted-user"></a>Konvertieren des Postfachs eines gelöschten Benutzers

@@ -12,12 +12,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 08b899582e6401c0950a1c7349b73130ee62acb4
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 355d933c98bba284302c94e0dc9f54ba7ca52762
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308207"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446511"
 ---
 # <a name="microsoft-cloud-for-enterprise-architects-illustrations"></a>Illustrationen zu Microsoft Cloud für Enterprise-Architekten
 
@@ -64,18 +64,25 @@ Diese Themenreihe illustriert mehrere Architekturansätze für Fusionen, Überna
 <a name="security"></a>
 ### <a name="microsoft-cloud-security-for-enterprise-architects"></a>Microsoft-Cloud-Sicherheit für Enterprise-Architekten
 
-Was IT-Architekten über die Sicherheit in Microsoft-Cloud-Diensten und -Plattformen wissen müssen.
+>[!Note]
+>Dieses Modell wird überarbeitet. Lesen Sie diesen Artikel in Zukunft für die aktualisierte Version.
+>
+
+<!--
+
+What IT architects need to know about security in Microsoft cloud services and platforms.
   
-|**Element**|**Beschreibung**|
+|**Item**|**Description**|
 |:-----|:-----|
-|[![Miniaturbild für Microsoft-Cloud-Sicherheitsmodell](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=48121) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842070)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=842071)  \| [Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=48121) <br/>Aktualisiert am 2018 | Dieses Modell enthält Folgendes: <ul><li>Die Rolle von Microsoft bei der Bereitstellung sicherer Dienste und Plattformen</li><li>Die Verantwortung des Kunden, Sicherheitsrisiken zu minimieren</li><li>Zertifizierungen der höchsten Sicherheit </li><li>Sicherheitsangebote, die von Microsoft Consulting Services bereitgestellt werden </ul><br/>|
+|[![Thumb image for Microsoft cloud security model](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=48121) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842070)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=842071)  \| [More languages](https://www.microsoft.com/download/details.aspx?id=48121) <br/>Updated December 2018 | This model contains: <ul><li>Microsoft's role in providing secure services and platforms</li><li>Customer responsibilities to mitigate security risks</li><li>Top security certifications </li><li>Security offerings provided by Microsoft consulting services </ul><br/>|
+
+--> 
 
 
 <a name="attacks"></a>
-### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>Häufige Angriffe und Microsoft-Funktionen zum Schutz Ihrer Organisation
-Erfahren Sie mehr über die häufigsten Cyberangriffe und wie Microsoft Ihrer Organisation in jeder Phase des Angriffs helfen kann. 
+### Häufige Angriffe und Microsoft-Funktionen, die Ihre Organisation schützen, erfahren Sie mehr über die häufigsten Cyber-Angriffe und darüber, wie Microsoft Ihre Organisation in jeder Phase eines Angriffs unterstützenkann. 
 
-|**Element**|**Beschreibung**|
+|**Item**|**Beschreibung**|
 |:-----|:-----|
 |[![Miniaturbild des Posters zu häufigen Angriffen.](../media/solutions-architecture-center/common-attacks-model-thumb.png) ](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> Aktualisiert am 2017 | Dieses Poster veranschaulicht den Weg häufiger Angriffe und beschreibt, welche Funktionen dabei helfen können, Angreifer in jeder Phase des Angriffs zu stoppen. <br/>|
 

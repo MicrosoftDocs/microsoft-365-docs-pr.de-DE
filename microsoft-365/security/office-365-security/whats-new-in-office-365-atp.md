@@ -15,17 +15,17 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 ms.topic: conceptual
 ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: ab987652082c93a82fa5bcbd4667f26291c6e9d7
-ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
+ms.openlocfilehash: 85813659d952fe936c8e8b41f2dc103a60116641
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48417284"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48447071"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Neuerungen in Office 365 ATP
 
@@ -106,7 +106,7 @@ In diesem Artikel werden neue Features in der neuesten Version von Office 365 AT
 
 Wussten Sie schon, dass Office 365 ATP in zwei Plänen verfügbar ist? [Hier finden Sie weitere Informationen zu den einzelnen Plänen](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen:
 
 [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap)
 

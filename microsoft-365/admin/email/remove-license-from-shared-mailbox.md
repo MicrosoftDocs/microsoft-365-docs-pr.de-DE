@@ -2,8 +2,8 @@
 title: Entfernen der Lizenz aus einem freigegebenen Postfach
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: sharik
+author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: 'Entfernen Sie die Lizenz aus einem freigegebenen Postfach, um Sie einem anderen Benutzer zuzuweisen. '
-ms.openlocfilehash: 401b334efeccf6d7c4caca20be3cc9767b2df945
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 43d32744afe42a8f244160ace20c1d989f501b28
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432219"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445495"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Entfernen einer Lizenz aus einem freigegebenen Postfach
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
@@ -72,14 +72,14 @@ Freigegebene Postfächer benötigen normalerweise keine Lizenz. Befolgen Sie die
 
  1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktive Benutzer</a>.
 
-   > [!NOTE]
-   > Sie müssen die Lizenz von der Seite "aktive Benutzer" entfernen. Sie können die Lizenz nicht von der Seite freigegebene Postfächer entfernen, da Lizenzen Benutzereinstellungen sind.
+    > [!NOTE]
+    > Sie müssen die Lizenz von der Seite "aktive Benutzer" entfernen. Sie können die Lizenz nicht von der Seite freigegebene Postfächer entfernen, da Lizenzen Benutzereinstellungen sind.
 
 2. Wählen Sie das freigegebene Postfach aus, und wählen Sie neben **Produktlizenzen** **Bearbeiten** aus.
 
 3. Legen Sie auf der Seite **Produktlizenzen** die Umschaltfläche für die Lizenz, die Sie entfernen möchten, auf **aus** fest.
 
-4. Klicken Sie auf **Speichern**.
+4. Wählen Sie **Speichern** aus.
 
 5. Wenn Sie zur Seite **aktive Benutzer** zurückkehren, wird der Status des freigegebenen Postfachs nicht **lizenziert**.
 
@@ -91,14 +91,14 @@ Freigegebene Postfächer benötigen normalerweise keine Lizenz. Befolgen Sie die
 
  1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktive Benutzer</a>.
 
-   > [!NOTE]
-   > Sie müssen die Lizenz von der Seite "aktive Benutzer" entfernen. Sie können die Lizenz nicht von der Seite freigegebene Postfächer entfernen, da Lizenzen Benutzereinstellungen sind.
+    > [!NOTE]
+    > Sie müssen die Lizenz von der Seite "aktive Benutzer" entfernen. Sie können die Lizenz nicht von der Seite freigegebene Postfächer entfernen, da Lizenzen Benutzereinstellungen sind.
 
 2. Wählen Sie das freigegebene Postfach aus, und wählen Sie neben **Produktlizenzen** **Bearbeiten** aus.
 
 3. Legen Sie auf der Seite **Produktlizenzen** die Umschaltfläche für die Lizenz, die Sie entfernen möchten, auf **aus** fest.
 
-4. Klicken Sie auf **Speichern**.
+4. Wählen Sie **Speichern** aus.
 
 5. Wenn Sie zur Seite **aktive Benutzer** zurückkehren, wird der Status des freigegebenen Postfachs nicht **lizenziert**.
 

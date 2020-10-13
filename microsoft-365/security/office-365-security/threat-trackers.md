@@ -15,14 +15,14 @@ search.appverid:
 ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 description: Erfahren Sie mehr über Threat Tracker, einschließlich neuer bemerkenswerter Tracker, damit Ihre Organisation weiterhin auf Sicherheitsbedenken eingeht.
-ms.openlocfilehash: fa5bc6f93eb4722f87828dd064c58e5da50a1297
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: a810dca8dd556d91196d48f387c799bbf89ef869
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48414190"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446489"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Aufzeichnungen von Bedrohungen – neu und wichtig
 

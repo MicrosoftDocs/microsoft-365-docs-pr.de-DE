@@ -15,15 +15,15 @@ search.appverid:
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 description: In diesem Artikel erfahren Sie mehr über die Verwendung von Explorer und Echt Zeit Erkennungen im Security &amp; Compliance Center, um Bedrohungen effektiv und effizient zu untersuchen und auf diese zu reagieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ab691e88c8450e4f1ab898fe6a9d75d6682370a5
-ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
+ms.openlocfilehash: bd437141f80b80370abeec7585596892f2434655
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48417378"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446570"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer und Echtzeiterkennung
 
@@ -127,7 +127,7 @@ System Überschreibungen sind eine Methode zum Festlegen von Ausnahmen für den 
 Der Verbesserungen im Hinblick auf die URL-und URL-Klicks Daten umfassen Folgendes:
 
 -   Anzeigen der vollständig angeklickten URL (einschließlich aller Abfrageparameter, die Teil der URL sind) im Abschnitt Klicks im URL-Flyout. Derzeit zeigen wir die URL-Domäne und den Pfad in der Titelleiste an. Diese Informationen werden erweitert, um die vollständige URL anzuzeigen.
--   Fixes für URL-Filter (URL-URL-Domäne vs-URL-Domäne und-Pfad): Wir haben Aktualisierungen bei der Suche nach Nachrichten durchgeführt, die eine URL/Klick Urteil enthalten. Im Rahmen dieser Vorgehensweise haben wir die Unterstützung für protokollunabhängige Suchvorgänge aktiviert (was bedeutet, dass Sie direkt nach einer URL ohne http suchen können). Standardmäßig wird die URL-Suche dem http-Wert zugeordnet, sofern nicht explizit angegeben. Beispiel:
+-   Fixes für URL-Filter (URL-URL-Domäne vs-URL-Domäne und-Pfad): Wir haben Aktualisierungen bei der Suche nach Nachrichten durchgeführt, die eine URL/Klick Urteil enthalten. Im Rahmen dieser Vorgehensweise haben wir die Unterstützung für protokollunabhängige Suchvorgänge aktiviert (was bedeutet, dass Sie direkt nach einer URL ohne http suchen können). Standardmäßig wird die URL-Suche dem http-Wert zugeordnet, sofern nicht explizit angegeben. Zum Beispiel:
 
   a.    Suchen Sie mit und ohne das `http://` Präfix in den Filterfeldern "URL", "URL-Domäne" und "URL-Domäne und-Pfad". Dieses Verhalten ist konsistent und sollte dasselbe Ergebnis aufweisen.
   b.    Suchen Sie nach dem `https://` Präfix in "URL". Wenn diese nicht vorhanden `http://` ist, wird das Präfix angenommen.

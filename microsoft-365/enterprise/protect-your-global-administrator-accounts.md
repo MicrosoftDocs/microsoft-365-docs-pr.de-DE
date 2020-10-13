@@ -10,7 +10,7 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
-- M365initiative-coredeploy
+- m365initiative-coredeploy
 search.appverid:
 - MET150
 - MOE150
@@ -22,12 +22,12 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Dieser Artikel enthält Informationen zum Schutz des globalen Administratorzugriffs auf Ihr Microsoft 365-Abonnement.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bcc1a09ca8e7c57d4d6c69400925df3531c53c4f
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: 15c497e02b139ea6af4aabba9f3e9ab65a1205be
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357806"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445407"
 ---
 # <a name="protect-your-microsoft-365-global-administrator-accounts"></a>Schützen Ihrer globalen Administratorkonten in Microsoft 365
 
@@ -48,7 +48,7 @@ Microsoft bietet Funktionen zum Schutz Ihrer Organisation, Sie sind jedoch nur w
 > [!Note]
 > Obwohl sich dieser Artikel auf globale Administratorkonten konzentriert, sollten Sie berücksichtigen, ob zusätzliche Konten mit umfangreichen Berechtigungen für den Zugriff auf die Daten in Ihrem Abonnement wie eDiscovery-Administrator-oder Sicherheits-oder Compliance-Administratorkonten auf die gleiche Weise geschützt werden sollten. <br > Es kann ein globales Administratorkonto erstellt werden, ohne dass Lizenzen hinzugefügt werden.
   
-## <a name="step-1-create-dedicated-microsoft-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>Schritt 1. Erstellen Dedizierter globaler Administratorkonten von Microsoft 365, die nur bei Bedarf verwendet werden
+## <a name="step-1-create-dedicated-microsoft-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>Schritt 1: Erstellen Dedizierter globaler Administratorkonten von Microsoft 365, die nur bei Bedarf verwendet werden
 
 Es gibt relativ wenige administrative Aufgaben wie das Zuweisen von Rollen zu Benutzerkonten, die globale Administratorrechte erfordern. Führen Sie daher die folgenden Schritte aus, anstatt alltägliche Benutzerkonten zu verwenden, denen die globale Administratorrolle zugewiesen wurde:
   
@@ -180,6 +180,6 @@ Informationen zum Einrichten der Identität für Ihr Microsoft 365-Abonnement fi
 - [Vorbereiten der Verzeichnissynchronisierung](prepare-for-directory-synchronization.md) bei Verwendung der Hybrid Identität
 
   
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen:
 
 [Microsoft 365-Sicherheits Wegweiser](https://docs.microsoft.com/office365/securitycompliance/security-roadmap)

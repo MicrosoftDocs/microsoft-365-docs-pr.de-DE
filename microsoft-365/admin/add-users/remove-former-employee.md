@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'Führen Sie diese Prüfliste aus, um einen Mitarbeiter aus Microsoft 365 zu entfernen und Daten zu sichern. '
-ms.openlocfilehash: 252442c36fd29b816626adb71b3ae38ae66f1f64
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: e8f0b61fae3656b7d700857e3cc7167cc121a77f
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324524"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445519"
 ---
 # <a name="remove-or-delete-a-former-employee"></a>Entfernen oder Löschen eines ehemaligen Mitarbeiters
 
@@ -49,7 +49,7 @@ Sehen Sie sich ein kurzes Video zum Entfernen eines Mitarbeiters an. <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR] 
 
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
 
 So verhindern Sie, dass ein Mitarbeiter sich anmeldet:
 
@@ -127,7 +127,7 @@ Es gibt zwei Möglichkeiten, wie Sie die Inhalte des Postfachs eines ehemaligen 
 
 2. Sie aktivieren vor dem Löschen des Benutzerkontos ein Beweissicherungsverfahren oder einen In-Situ-Speicher für das Postfach. Diese Option ist viel komplizierter als die erste, sie ist jedoch sinnvoll, wenn Ihr Enterprise-Plan die Archivierung und gesetzliche Aufbewahrungspflicht umfasst, die Möglichkeit besteht, in Rechtsstreitigkeiten zu geraten, und Sie über eine wirklich gute IT-Abteilung verfügen.
 
-    Nachdem Sie das Postfach in ein inaktives Postfach konvertiert haben, können Administratoren, Compliance Officer oder Records Manager in-Place-eDiscovery-Tools in Exchange Online verwenden, um auf den Inhalt zuzugreifen und diese zu durchsuchen.
+    Nachdem Sie das Postfach in ein inaktives Postfach konvertiert haben, können Administratoren, Compliance Officer oder Records Manager In-Place eDiscovery-Tools in Exchange Online verwenden, um auf den Inhalt zuzugreifen und ihn zu durchsuchen.
 
     Inaktive Postfächer können keine E-Mails empfangen und werden im freigegebenen Adressbuch Ihrer Organisation oder in anderen Listen nicht angezeigt.
 
@@ -140,7 +140,6 @@ In diesem Schritt weisen Sie die E-Mail-Adresse des ehemaligen Mitarbeiters eine
 - Das Erstellen eines freigegebenen Postfachs ist die kostengünstigere Methode, weil Sie für keine Lizenz bezahlen müssen, **solange das Postfach kleiner als 50 GB ist**. Bei über 50 GB müssen Sie dem Postfach eine Lizenz zuweisen.
 - Wenn Sie das Postfach in ein freigegebenes Postfach konvertieren, stehen auch alle alten E-Mails zur Verfügung. Dadurch kann eine Menge an Speicherplatz belegt werden.
 - Wenn Sie die E-Mail-Weiterleitung eingerichtet haben, werden nur  *neue*  an den ehemaligen Mitarbeiter gesendeten E-Mails jetzt an den aktuellen Mitarbeiter gesendet.
-- Bei der E-Mail-Weiterleitung muss das Konto des ehemaligen Mitarbeiters über eine Lizenz verfügen.
 
  > [!IMPORTANT]
  > Wenn Sie e-Mail-Weiterleitung oder ein freigegebenes Postfach einrichten, löschen Sie am Ende nicht das Konto des ehemaligen Mitarbeiters. Es muss nämlich vorhanden sein, damit die E-Mail-Weiterleitung oder das freigegebene Postfach funktionieren.
@@ -150,8 +149,8 @@ In diesem Schritt weisen Sie die E-Mail-Adresse des ehemaligen Mitarbeiters eine
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.
 2. Wählen Sie den Namen des Mitarbeiters aus, den Sie blockieren möchten, und wählen Sie dann die Registerkarte **e-Mail** aus.
 3. Wählen Sie unter **e-Mail-weiter**Leitung die Option **e-Mail Weiterleitung verwalten**aus.
-4. Aktivieren Sie **Alle an dieses Postfach gesendeten E-Mails weiterleiten**. Geben Sie im Feld **Weiterleitungsadresse** die E-Mail-Adresse des aktuellen Mitarbeiters (oder des freigegebenen Postfachs) ein, an den (oder das) die E-Mails weitergeleitet werden sollen.
-5. Klicken Sie auf **Speichern**.
+4. Aktivieren Sie **Alle an dieses Postfach gesendeten E-Mails weiterleiten**. Geben Sie in das Feld **Weiterleitungsadresse** die e-Mail-Adresse des aktuellen Mitarbeiters ein, der die e-Mail erhalten soll.
+5. Wählen Sie **Speichern** aus.
 6. Denken Sie daran, dass das Konto des ehemaligen Mitarbeiters nicht gelöscht werden sollte.
 
 ::: moniker-end
@@ -166,7 +165,7 @@ In diesem Schritt weisen Sie die E-Mail-Adresse des ehemaligen Mitarbeiters eine
 
 4. Aktivieren Sie **Alle an dieses Postfach gesendeten E-Mails weiterleiten**. Geben Sie im Feld **Weiterleitungsadresse** die E-Mail-Adresse des aktuellen Mitarbeiters (oder des freigegebenen Postfachs) ein, an den (oder das) die E-Mails weitergeleitet werden sollen.
   
-5. Klicken Sie auf **Speichern**.
+5. Wählen Sie **Speichern** aus.
 
 6. Denken Sie daran, dass das Konto des ehemaligen Mitarbeiters nicht gelöscht werden sollte.
 
@@ -182,7 +181,7 @@ In diesem Schritt weisen Sie die E-Mail-Adresse des ehemaligen Mitarbeiters eine
 
 4. Aktivieren Sie **Alle an dieses Postfach gesendeten E-Mails weiterleiten**. Geben Sie im Feld **Weiterleitungsadresse** die E-Mail-Adresse des aktuellen Mitarbeiters (oder des freigegebenen Postfachs) ein, an den (oder das) die E-Mails weitergeleitet werden sollen.
   
-5. Klicken Sie auf **Speichern**.
+5. Wählen Sie **Speichern** aus.
 
 6. Denken Sie daran, dass das Konto des ehemaligen Mitarbeiters nicht gelöscht werden sollte.
 
@@ -196,7 +195,7 @@ Wenn Ihr ehemaliger Mitarbeiter ein Organisations Telefon besaß, können Sie da
 2. Navigieren Sie im Exchange Admin Center zu **Empfänger** \> **Postfächer**.
 3. Wählen Sie den Benutzer aus, und wählen Sie unter **Mobile Geräte**die Option **Details anzeigen**aus.
 4. Wählen Sie auf der Seite **Details für mobile Geräte** unter **Mobile Geräte**das Mobile Gerät aus, wählen Sie Daten Zurücksetzungs Gerät **wischen**aus ![ ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) , und wählen Sie dann **blockieren**aus.
-5. Klicken Sie auf **Speichern**.
+5. Wählen Sie **Speichern** aus.
    > [!TIP]
    > Stellen Sie sicher, dass Sie den Benutzer aus Ihrem lokalen BlackBerry Enterprise-Dienst entfernen oder deaktivieren. Sie sollten auch alle BlackBerry-Geräte für den Benutzer deaktivieren. Lesen Sie den Abschnitt BlackBerry Business Cloud Services Administration Guide, wenn Sie bestimmte Schritte zum Deaktivieren des Benutzers benötigen.
 
@@ -283,7 +282,7 @@ Führen Sie die folgenden Schritte aus **, um die Anzahl der von Ihnen bezahlten
 2. Wählen Sie das Abonnement aus, aus dem Sie Lizenzen entfernen möchten.
 3. Wählen Sie auf der Seite Details die Option **Lizenzen entfernen**aus.
 4. Geben Sie im Bereich **Lizenzen entfernen** unter neue Menge im Feld **Gesamt Lizenzen** die Gesamtzahl der Lizenzen ein, die Sie für dieses Abonnement benötigen. Wenn Sie beispielsweise 25 Lizenzen haben und eine davon entfernen möchten, geben Sie 24 ein.
-5. Klicken Sie auf **Speichern**.
+5. Wählen Sie **Speichern** aus.
 ::: moniker-end
 
 ::: moniker range="o365-germany"

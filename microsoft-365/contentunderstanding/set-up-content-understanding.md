@@ -9,16 +9,16 @@ ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 localization_priority: Priority
 description: Einrichten des Inhaltsverständnisses in Projekt Cortex
-ms.openlocfilehash: 8217630d66a097fcc714be80bd4d3dcceb623370
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 410dd9550974ec7b5c1c5b4ae151bc92bf376544
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48413710"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446323"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Einrichten von SharePoint Syntex
 
-Administratoren können das Microsoft 365 Admin Center verwenden, um [Microsoft SharePoint Syntex](document-understanding-overview.md) einzurichten. 
+Administratoren können das Microsoft 365 Admin Center verwenden, um [Microsoft SharePoint Syntex](index.md) einzurichten. 
 
 Denken Sie vor dem Beginn über Folgendes nach:
 
@@ -26,8 +26,6 @@ Denken Sie vor dem Beginn über Folgendes nach:
 - Wie werden Sie Ihr Standard-Inhaltscenter nennen?
 
 Sie können Ihre Einstellungen nach der erstmaligen Einrichtung im Microsoft 365 Admin Center ändern.
-
-Der Inhalt in diesem Artikel richtet sich an die private Vorschau von Project Cortex. [Erfahren Sie mehr über Project Cortex](https://aka.ms/projectcortex).
 
 Vergewissern Sie sich vor dem Einrichten, dass Sie die beste Möglichkeit zum Einrichten und Konfigurieren des Inhaltsverständnisses in Ihrer Umgebung planen. Sie müssen sich beispielsweise Gedanken über die Benennung von Folgendem machen:
 

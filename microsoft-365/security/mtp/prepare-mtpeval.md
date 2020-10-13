@@ -15,14 +15,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: ac60415f38644c4630a181b1c8d696acced57ded
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: 79e30ee6fd68148543a63377d89fe2955f276f24
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48368001"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446731"
 ---
 # <a name="prepare-your-microsoft-threat-protection-trial-lab-or-pilot-environment"></a>Vorbereiten Ihrer Testlabor-oder Pilotumgebung für den Microsoft Threat Protection-Test
 
@@ -75,7 +76,7 @@ Die Vorbereitung ist für eine erfolgreiche Bereitstellung entscheidend. Dieser 
 Erfahren Sie mehr über die Lizenzierungs-, Hardware-und Softwareanforderungen und andere Konfigurationseinstellungen für die Einrichtung und Verwendung von Microsoft Threat Protection. Lesen Sie die Mindestanforderungen für [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites), [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements), [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description), [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites), [Microsoft Cloud App Security](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites).
 
 ## <a name="stakeholders-and-sign-off"></a>Interessengruppen und Abmelden
-Im folgenden Abschnitt werden alle Beteiligten identifiziert, die an dem Projekt beteiligt sind und die sich möglicherweise für die Evaluierung oder das Ausführen eines Pilotprojekts anmelden, überprüfen oder auf dem laufenden halten müssen.
+Identifizieren Sie alle Beteiligten, die an dem Projekt beteiligt sind und die sich möglicherweise für die Evaluierung oder die Ausführung eines Pilotprojekts anmelden, überprüfen oder informiert bleiben müssen.
 
 >[!NOTE]
 >Nicht alle Organisationen haben möglicherweise die Fälligkeit der Sicherheitsorganisation für solche Rollen. Wenden Sie sich in diesem Fall an Ihr Führungsteam unter Review and Approval Verantwortlichkeiten.
@@ -94,7 +95,7 @@ Hinzufügen von Beteiligten zur folgenden Tabelle entsprechend Ihrer Organisatio
 | Namen und e-Mail eingeben | **Leiter des Cyber Defense Operations Center (Cdoc)** *ein Vertreter des Cdoc-Teams, das dafür verantwortlich ist, zu definieren, wie diese Änderung mit den Prozessen im Kunden-Sicherheits Betriebsteam abgeglichen wird.*       | Also     |
 | Namen und e-Mail eingeben | **Security Architect** *ein Vertreter des Sicherheitsteams, das für die Definition dieser Änderung an der Kern Sicherheitsarchitektur in der Organisation verantwortlich ist.*                         | R      |
 | Namen und e-Mail eingeben | **Arbeitsplatz Architekt** *ein Vertreter des IT-Teams, der dafür verantwortlich ist, zu definieren, wie diese Änderung an der zentralen Arbeitsplatz Architektur in der Organisation ausgerichtet ist.*                             | R      |
-| Namen und e-Mail eingeben | **Security Analyst** *ein Vertreter des Cdoc-Teams, der eine Eingabe in Bezug auf die Erkennungsfunktionen, die Benutzeroberfläche und die allgemeine Nützlichkeit dieser Änderung aus Sicht der Sicherheitsvorgänge bereitstellen kann.* | I      |
+| Namen und e-Mail eingeben | **Security Analyst** *ein Vertreter des Cdoc-Teams, der aus Sicherheits betrieblichen Gründen Feedback zu den Erkennungsfunktionen, der Benutzererfahrung und zur allgemeinen Nützlichkeit dieser Änderung geben kann.* | I      |
 
 ## <a name="prepare-your-azure-active-directory"></a>Vorbereiten des Azure-Active Directory
 Überspringen Sie diesen Schritt, wenn Sie die Synchronisierung zwischen Active Directory und Azure Active Directory lokal aktiviert haben. Lesen Sie die Dokumentation zu bewährten Methoden aus Azure Active Directory. Die folgenden Schritte sind für die Evaluierung oder Ausführung eines Pilotprojekts für Microsoft Threat Protection optimiert.
@@ -127,13 +128,13 @@ Sie können nun [Benutzer und Gruppen zu Active Directory hinzufügen](https://d
 
 
 ## <a name="configuration-order"></a>Konfigurations Reihenfolge
-Die folgende Tabelle gibt die Reihenfolge an, die Microsoft für die Konfiguration der Microsoft Threat Protection-Komponenten für Ihre Test Labor-oder Pilot Umgebungs Bereitstellung empfiehlt.
+Die folgende Tabelle gibt die Bestellung an, die Microsoft für die Konfiguration der Microsoft Threat Protection-Komponenten für Ihre Test Labor-oder Pilot Umgebungs Bereitstellung empfiehlt.
 
 | Komponente                               | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Rangfolge der Konfigurations Reihenfolge |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-| Office 365 Advanced Threat Protection| Office 365 ATP schützt Ihre Organisation vor böswilligen Bedrohungen durch e-Mail-Nachrichten, Links (URLs) und Tools für die Zusammenarbeit. <br> [Weitere Informationen.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)                                                                                                                                                                                                                                             | 1                    |
-|Azure Advanced Threat Protection|Azure ATP verwendet Active Directory Signale, um erweiterte Bedrohungen, kompromittierte Identitäten und böswillige Insider Aktionen, die an Ihre Organisation gerichtet sind, zu identifizieren, zu erkennen und zu untersuchen. <br> [Weitere Informationen](https://docs.microsoft.com/azure-advanced-threat-protection/).| 2  |
-|Microsoft Cloud App-Sicherheit| Microsoft Cloud App Security ist ein Cloud Access Security Broker (CASB), der in mehreren Clouds arbeitet. Es bietet umfangreiche Sichtbarkeit, Kontrolle über Daten Reisen und ausgefeilte Analysen, um Bedrohungen für alle Cloud-Dienste zu identifizieren und zu bekämpfen. <br> [Weitere Informationen](https://docs.microsoft.com/cloud-app-security/).                                                                                                                                                                                                                                                                                                                                                                       |3                    |
+| Office 365 Advanced Threat Protection| Office 365 ATP schützt Ihre Organisation vor böswilligen Bedrohungen durch e-Mail-Nachrichten, Links (URLs) und Tools für die Zusammenarbeit. <br> [Weitere Informationen.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)                                                                                                                                                                                                                                             | 1                   |
+|Azure Advanced Threat Protection|Azure ATP verwendet Active Directory Signale, um erweiterte Bedrohungen, kompromittierte Identitäten und böswillige Insider Aktionen, die an Ihre Organisation gerichtet sind, zu identifizieren, zu erkennen und zu untersuchen. <br> [Weitere Informationen](https://docs.microsoft.com/azure-advanced-threat-protection/).| 2 |
+|Microsoft Cloud App-Sicherheit| Microsoft Cloud App Security ist ein Cloud Access Security Broker (CASB), der in mehreren Clouds arbeitet. Es bietet umfangreiche Sichtbarkeit, Kontrolle über Daten Reisen und ausgefeilte Analysen, um Bedrohungen für alle Cloud-Dienste zu identifizieren und zu bekämpfen. <br> [Weitere Informationen](https://docs.microsoft.com/cloud-app-security/).                                                                                                                                                                                                                                                                                                                                                                       |3                   |
 |Microsoft Defender Advanced Threat Protection | Die Microsoft Defender ATP-Funktionen für die Endpunkterkennung und Beantwortung bieten erweiterte Angriffserkennungen, die nahezu in Echtzeit umgesetzt werden können. Sicherheitsanalysten können Benachrichtigungen effektiv priorisieren, Einblick in den gesamten Umfang einer Verletzung erhalten und Aktionen ergreifen, um Bedrohungen zu beheben. <br> [Weitere Informationen.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                    |                                                                                                                                                                                                                                    
 
 ## <a name="next-step"></a>Nächster Schritt

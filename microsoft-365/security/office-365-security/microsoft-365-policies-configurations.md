@@ -17,12 +17,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 502ceb47a110dd7cd743281d518e542451413672
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: e07c1455cc2799481bc31871d2c3ee07b10492b9
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399692"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446183"
 ---
 # <a name="identity-and-device-access-configurations"></a>Konfigurationen für den Identitäts- und Gerätezugriff
 
@@ -118,7 +118,9 @@ Azure Ad bietet eine umfassende Sammlung von Funktionen zur Identitätsverwaltun
 | [Azure AD Kennwortschutz](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) | Erkennen und blockieren Sie bekannte schwache Kennwörter und deren Varianten sowie zusätzliche schwache Ausdrücke, die für Ihre Organisation spezifisch sind. Listen standardmäßig global gesperrter Kennwörter werden automatisch auf alle Benutzer in einem Azure AD-Mandanten angewendet. Sie können zusätzliche Einträge in einer benutzerdefinierten Liste gesperrter Kennwörter angeben. Wenn Benutzer ihre Kennwörter ändern oder zurücksetzen, werden diese Listen gesperrter Kennwörter überprüft, um die Verwendung von sicheren Kennwörtern zu erzwingen. |  Microsoft 365 E3 oder E5 |
 ||||
 
-![Komponenten des Identitäts-und Gerätezugriffs.](../../media/microsoft-365-policies-configurations/identity-device-access-components.png)
+Hier sind die Komponenten des Identitäts-und Gerätezugriffs, einschließlich InTune-und Azure AD-Objekten,-Einstellungen und-unter Diensten.
+
+![Komponenten für den Identitäts-und Geräte Zugriff](../../media/microsoft-365-policies-configurations/identity-device-access-components.png)
 
 ### <a name="microsoft-intune"></a>Microsoft Intune
 

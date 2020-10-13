@@ -1,6 +1,6 @@
 ---
 title: Ausführen von Microsoft Threat Protection-Angriffssimulationen
-description: Führen Sie Angriffssimulationen für Ihr Microsoft Threat Protection-Pilotprojekt aus, um zu sehen, wie es sich entfaltet und schnell angesprochen wird.
+description: Führen Sie Angriffssimulationen für Ihr Microsoft Threat Protection-Pilotprojekt aus, um zu sehen, wie es sich entfaltet und schnell korrigiert wird.
 keywords: Microsoft Threat Protection – Pilot Angriffssimulation, Ausführen von Microsoft Threat Protection – Pilot Angriffssimulation, simulieren des Angriffs in Microsoft Threat Protection, Microsoft Threat Protection Pilot Project, Cyber Security, Advanced persistent Threat, Enterprise Security, Devices, Device, Identity, users, Data, Applications, Incidents, Automated Investigation and Remediation, Advanced Hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: f165a34d5e9df2f3502a9d9c6230fed9b73b758b
-ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
+ms.openlocfilehash: 50b74cf46999c3ad52f536ba0dfe07508c993a39
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418145"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48447083"
 ---
 # <a name="run-your-microsoft-threat-protection-attack-simulations"></a>Ausführen von Microsoft Threat Protection-Angriffssimulationen  
 
@@ -76,13 +76,13 @@ ms.locfileid: "48418145"
 
 Sie befinden sich derzeit in der Angriffs Simulationsphase.
 
-Nachdem Sie Ihre Pilotumgebung vorbereitet haben, ist es an der Zeit, die Microsoft Threat Protection-Vorfallverwaltung und die automatisierten Ermittlungs-und Korrekturfunktionen zu testen. Wir unterstützen Sie bei der Simulation eines ausgeklügelten Angriffs, der fortschrittliche Techniken nutzt, um die Erkennung zu verbergen. Der Angriff listet die geöffneten SMB-Sitzungen (Server Message Block) auf Domänencontrollern auf und ruft aktuelle IP-Adressen der Benutzer Geräte ab. Diese Kategorie von Angriffen umfasst normalerweise keine Dateien, die auf dem Gerät des Benutzers abgelegt werden – Sie treten ausschließlich im Arbeitsspeicher auf. Sie "Leben außerhalb des Landes" mit vorhandenen System-und Verwaltungstools und fügen Ihren Code in Systemprozesse ein, um deren Ausführung auszublenden, sodass Sie die Erkennung umgehen und auf dem Gerät dauerhaft bleiben können.
+Nachdem Sie Ihre Pilotumgebung vorbereitet haben, ist es an der Zeit, die Microsoft Threat Protection-Vorfallverwaltung und die automatisierten Ermittlungs-und Korrekturfunktionen zu testen. Wir unterstützen Sie bei der Simulation eines ausgeklügelten Angriffs, der erweiterte Techniken nutzt, um die Erkennung zu verbergen. Der Angriff listet die geöffneten SMB-Sitzungen (Server Message Block) auf Domänencontrollern auf und ruft aktuelle IP-Adressen der Benutzer Geräte ab. Diese Kategorie von Angriffen umfasst normalerweise keine Dateien, die auf dem Gerät des Benutzers abgelegt werden – Sie treten ausschließlich im Arbeitsspeicher auf. Sie "Live aus dem Land" durch die Verwendung vorhandener System-und Verwaltungstools und durch injizieren Ihres Codes in Systemprozesse, um deren Ausführung auszublenden, können Sie durch ein solches Verhalten die Erkennung umgehen und auf dem Gerät dauerhaft bleiben.
 
 In dieser Simulation beginnt unser Beispielszenario mit einem PowerShell-Skript. Möglicherweise wird ein Benutzer zum Ausführen eines Skripts ausgetrickst. Oder das Skript kann von einer Remoteverbindung mit einem anderen Computer als einem zuvor infizierten Gerät ausgeführt werden – dem Angreifer, der versucht, sich seitlich im Netzwerk zu positionieren. Die Erkennung dieser Skripts kann schwierig sein, da Administratoren auch häufig Skripts remote ausführen, um verschiedene administrative Aktivitäten auszuführen.
 
 ![Datei übergreifender PowerShell-Angriff mit Prozess Injektion und SMB-Aufklärung-Angriffs Diagramm](../../media/mtp/mtpdiydiagram.png)
 
-Während der Simulation injiziert der Angriff Shellcode in einen scheinbar unschuldigen Prozess. In diesem Szenario verwenden wir notepad.exe. Wir haben diesen Prozess für die Simulation ausgewählt, aber Angreifer werden wahrscheinlicher auf einen langwierigen Systemprozess wie svchost.exe Zielen. Der Shellcode fährt dann mit dem Command-and-Control (C2)-Server des Angreifers in Verbindung, um Anweisungen zum Fortfahren zu erhalten. Außerdem versucht das Skript, Aufklärungs Abfragen für den Domänencontroller (DC) auszuführen. Dadurch kann ein Angreifer Informationen zu aktuellen Benutzeranmeldeinformationen abrufen. Wenn Angreifer über diese Informationen verfügen, können Sie sich seitlich im Netzwerk umziehen, um zu einem bestimmten vertraulichen Konto zu gelangen.
+Während der Simulation injiziert der Angriff Shellcode in einen scheinbar unschuldigen Prozess. Das Szenario erfordert die Verwendung von notepad.exe. Wir haben diesen Prozess für die Simulation ausgewählt, aber Angreifer würden wahrscheinlicher auf einen langwierigen Systemprozess wie svchost.exe Zielen. Der Shellcode fährt dann mit dem Command-and-Control (C2)-Server des Angreifers in Verbindung, um Anweisungen zum Fortfahren zu erhalten. Das Skript versucht, Aufklärungs Abfragen für den Domänencontroller (DC) auszuführen. Aufklärung ermöglicht einem Angreifer das Abrufen von Informationen zu aktuellen Benutzeranmeldeinformationen. Wenn Angreifer über diese Informationen verfügen, können Sie sich seitlich im Netzwerk umziehen, um zu einem bestimmten vertraulichen Konto zu gelangen.
 
 >[!IMPORTANT]
 >Um optimale Ergebnisse zu erzielen, folgen Sie den Anweisungen zur Angriffssimulation so genau wie möglich.
@@ -193,7 +193,7 @@ So zeigen Sie den Vorfall an:
 
 3.  Wählen Sie **Vorfall öffnen** aus, um weitere Informationen zum Vorfall zu erhalten.
 
-    Auf der Seite " **Vorfall** " werden alle Warnungen und Informationen im Zusammenhang mit dem Vorfall angezeigt. Dazu gehören die Entitäten und Objekte, die an der Warnung beteiligt sind, die Erkennungs Quelle der Warnungen (Azure ATP, EDR) und der Grund, warum Sie miteinander verknüpft wurden. Das Überprüfen der Vorfall Warnungsliste zeigt den Fortschritt des Angriffs an. In dieser Ansicht können Sie die einzelnen Warnungen anzeigen und untersuchen.
+    Auf der Seite " **Vorfall** " werden alle Warnungen und Informationen im Zusammenhang mit dem Vorfall angezeigt. Die Informationen umfassen die Entitäten und Objekte, die an der Warnung beteiligt sind, die Erkennungs Quelle der Warnungen (Azure ATP, EDR) und der Grund, warum Sie miteinander verknüpft wurden. Das Überprüfen der Vorfall Warnungsliste zeigt den Fortschritt des Angriffs an. In dieser Ansicht können Sie die einzelnen Warnungen anzeigen und untersuchen.
 
     Sie können auch im rechten Menü auf **Vorfall verwalten** klicken, den Vorfall markieren, ihn selbst zuweisen und Kommentare hinzufügen.
 
@@ -223,9 +223,9 @@ Damit die SoC-Analysten diese fortgeschrittenen Angriffe abfangen können, biete
 
 **Warnung: unerwartetes Verhalten, das von einem Prozess beobachtet wird, der ohne Befehlszeilenargumente ausgeführt wird (Quelle: Microsoft Defender ATP EDR)**
 
-Microsoft Defender ATP-Erkennungen Zielen häufig auf das häufigste Attribut einer Angriffstechnik ab. Dadurch wird die Dauerhaftigkeit gewährleistet und die Messlatte für Angreifer erhöht, um auf neuere Taktiken umzusteigen.
+Microsoft Defender ATP-Erkennungen Zielen häufig auf das häufigste Attribut einer Angriffstechnik ab. Diese Methode gewährleistet Langlebigkeit und erhöht die Messlatte für Angreifer, um zu neueren Taktiken zu wechseln.
 
-Wir verwenden umfangreiche Lernalgorithmen, um das normale Verhalten allgemeiner Prozesse in einer Organisation und weltweit zu etablieren und zu beobachten, wann diese Prozesse anomale Verhaltensweisen aufweisen. Diese anomalen Verhaltensweisen deuten häufig darauf hin, dass fremder Code eingeführt wurde und in einem ansonsten vertrauenswürdigen Prozess ausgeführt wird.
+Wir verwenden umfangreiche Lernalgorithmen, um das normale Verhalten allgemeiner Prozesse in einer Organisation und weltweit zu etablieren und zu beobachten, wann diese Prozesse anomales Verhalten aufweisen. Diese anomalen Verhaltensweisen deuten häufig darauf hin, dass fremder Code eingeführt wurde und in einem ansonsten vertrauenswürdigen Prozess ausgeführt werden.
 
 In diesem Szenario weist das Prozess <i>notepad.exe</i> ein anormales Verhalten auf, das die Kommunikation mit einem externen Speicherort unter Beteiligung betrifft. Dieses Ergebnis ist unabhängig von der spezifischen Methode, mit der der bösartige Code eingeführt und ausgeführt wird.
 
@@ -234,7 +234,7 @@ In diesem Szenario weist das Prozess <i>notepad.exe</i> ein anormales Verhalten 
 
 Beachten Sie, dass die Warnungsdetails die externe IP-Adresse enthalten – ein Indikator, den Sie als Pivot zum Erweitern der Untersuchung verwenden können.
 
-Klicken Sie in der Struktur des Warnungs Prozesses auf die IP-Adresse, um die Seite IP-Adressdetails anzuzeigen.
+Wählen Sie die IP-Adresse in der Warnungs Prozessstruktur aus, um die Seite IP-Adressdetails anzuzeigen.
 
 ![Screenshot der Warnung für unerwartetes Verhalten durch einen Prozess, der ohne Befehlszeilenargumente ausgeführt wird](../../media/mtp/fig8.png) 
 
@@ -252,25 +252,25 @@ Bei dieser Erkennung wird eine Warnung ausgelöst, wenn die SMB-Sitzungs Aufzäh
 
 
 ### <a name="review-the-device-timeline-microsoft-defender-atp"></a>Überprüfen der Geräte Zeitachse [Microsoft Defender ATP]
-Nachdem Sie die verschiedenen Warnungen in diesem Vorfall untersucht haben, navigieren Sie zurück zur Vorfall Seite, die Sie zuvor untersucht haben. Klicken Sie auf der Seite Vorfall auf die Registerkarte **Geräte** , um die an diesem Vorfall beteiligten Geräte zu überprüfen, die von Microsoft Defender ATP und Azure ATP gemeldet wurden.
+Nachdem Sie die verschiedenen Warnungen in diesem Vorfall untersucht haben, navigieren Sie zurück zur Vorfall Seite, die Sie zuvor untersucht haben. Wählen Sie auf der Seite Vorfall die Registerkarte **Geräte** aus, um die an diesem Vorfall beteiligten Geräte zu überprüfen, die von Microsoft Defender ATP und Azure ATP gemeldet wurden.
 
-Klicken Sie auf den Namen des Geräts, in dem der Angriff durchgeführt wurde, um die Entitäts Seite für das jeweilige Gerät zu öffnen. Auf dieser Seite können Sie Warnungen anzeigen, die ausgelöst wurden, und ähnliche Ereignisse.
+Wählen Sie den Namen des Geräts aus, in dem der Angriff durchgeführt wurde, um die Entitäts Seite für das jeweilige Gerät zu öffnen. Auf dieser Seite können Sie Warnungen anzeigen, die ausgelöst wurden, und ähnliche Ereignisse.
 
-Klicken Sie auf die Registerkarte **Zeitachse** , um die Geräte Zeitachse zu öffnen und alle Ereignisse und Verhaltensweisen anzuzeigen, die auf dem Gerät in chronologischer Reihenfolge mit den ausgelösten Warnungen beobachtet wurden.
+Wählen Sie die Registerkarte **Zeitachse** aus, um die Geräte Zeitachse zu öffnen und alle Ereignisse und Verhaltensweisen anzuzeigen, die auf dem Gerät in chronologischer Reihenfolge mit den ausgelösten Warnungen beobachtet wurden.
 
 ![Screenshot des Geräte Zeitplans mit Verhalten](../../media/mtp/fig11.png) 
 
 Das erweitern einiger interessanter Verhaltensweisen bietet nützliche Details wie Prozess Bäume.
 
-Scrollen Sie beispielsweise nach unten, bis Sie das Warnungsereignis " **verdächtige Prozess Injektion beobachtet**" finden. Klicken Sie auf die **powershell.exe injiziert zu notepad.exe Prozess** Ereignis darunter, um die vollständige Prozessstruktur für dieses Verhalten unter dem Diagramm " **Ereignis Entitäten** " im Seitenbereich anzuzeigen. Verwenden Sie die Suchleiste für die Filterung, falls erforderlich.
+Scrollen Sie beispielsweise nach unten, bis Sie das Warnungsereignis " **verdächtige Prozess Injektion beobachtet**" finden. Wählen Sie unter dem **powershell.exe zu notepad.exe Prozessereignis injiziert** aus, um die vollständige Prozessstruktur für dieses Verhalten unter dem Diagramm " **Ereignis Entitäten** " im Seitenbereich anzuzeigen. Verwenden Sie die Suchleiste für die Filterung, falls erforderlich.
 
 ![Screenshot der Prozessstruktur für das ausgewählte PowerShell-Datei Erstellungsverhalten](../../media/mtp/fig12.png)
 
 ### <a name="review-the-user-information-microsoft-cloud-app-security"></a>Überprüfen der Benutzerinformationen [Microsoft Cloud App security]
 
-Klicken Sie auf der Seite Vorfall auf die Registerkarte **Benutzer** , um die Liste der Benutzer anzuzeigen, die an dem Angriff beteiligt sind. Die Tabelle enthält zusätzliche Informationen zu den einzelnen Benutzern, einschließlich der **Untersuchung der Priorität** der einzelnen Benutzer.
+Wählen Sie auf der Seite Vorfall die Registerkarte **Benutzer** aus, um die Liste der Benutzer anzuzeigen, die an dem Angriff beteiligt sind. Die Tabelle enthält zusätzliche Informationen zu den einzelnen Benutzern, einschließlich der **Untersuchung der Priorität** der einzelnen Benutzer.
 
-Klicken Sie auf den Benutzernamen, um die Profilseite des Benutzers zu öffnen, auf der weitere Untersuchungen durchgeführt werden können. [Lesen Sie mehr über die Untersuchung riskanter Benutzer](https://docs.microsoft.com/cloud-app-security/tutorial-ueba#identify).
+Wählen Sie den Benutzernamen aus, um die Profilseite des Benutzers zu öffnen, auf der weitere Untersuchungen durchgeführt werden können. [Lesen Sie mehr über die Untersuchung riskanter Benutzer](https://docs.microsoft.com/cloud-app-security/tutorial-ueba#identify).
 <br>
 ![Screenshot der Cloud-App-Sicherheitsbenutzer Seite](../../media/mtp/fig13.png)
 
@@ -281,11 +281,11 @@ Klicken Sie auf den Benutzernamen, um die Profilseite des Benutzers zu öffnen, 
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4BzwB]
 
-Navigieren Sie zurück zu dem Vorfall im Microsoft 365-Sicherheits Center-Portal. Die Registerkarte unter **suchungen** auf der Seite **Vorfall** zeigt die automatisierten Untersuchungen, die von Azure ATP und Microsoft Defender ATP ausgelöst wurden. Im folgenden Screenshot wird nur die automatische Untersuchung angezeigt, die von Microsoft Defender ATP ausgelöst wurde. Standardmäßig korrigiert Microsoft Defender ATP automatisch die in der Warteschlange gefundenen Artefakte, die eine Korrektur erfordern.
+Navigieren Sie zurück zu dem Vorfall im Microsoft 365-Sicherheits Center-Portal. Die Registerkarte unter **suchungen** auf der Seite **Vorfall** zeigt die automatisierten Untersuchungen, die von Azure ATP und Microsoft Defender ATP ausgelöst wurden. Im folgenden Screenshot wird nur die automatische Untersuchung angezeigt, die von Microsoft Defender ATP ausgelöst wurde. Standardmäßig korrigiert Microsoft Defender ATP automatisch die in der Warteschlange gefundenen Artefakte, was eine Korrektur erfordert.
 
 ![Screenshot von automatisierten Untersuchungen im Zusammenhang mit dem Vorfall](../../media/mtp/fig14.png)
 
-Klicken Sie auf die Warnung, die eine Untersuchung ausgelöst hat, um die Seite **Ermittlungs Details** zu öffnen. Folgendes wird angezeigt:
+Wählen Sie die Warnung aus, die eine Untersuchung ausgelöst hat, um die Seite **Ermittlungs Details** zu öffnen. Die folgenden Details werden angezeigt:
 - Warnung (en), die die automatische Untersuchung ausgelöst haben.
 - Betroffene Benutzer und Geräte. Wenn auf zusätzlichen Geräten Indikatoren gefunden werden, werden diese zusätzlichen Geräte ebenfalls aufgeführt.
 - Liste der Beweise. Die gefundenen und analysierten Entitäten, beispielsweise Dateien, Prozesse, Dienste, Treiber und Netzwerkadressen. Diese Entitäten werden für mögliche Beziehungen mit der Warnung analysiert und als gutartig oder böswillig bewertet.
@@ -304,9 +304,9 @@ In der Liste der ausgeführten Prozesse auf dem Testgerät sehen Sie <i>notepad.
 
 Schließen Sie den Vorfall, nachdem die Untersuchung abgeschlossen und zur Korrektur bestätigt wurde.
 
-Klicken Sie auf **Vorfall verwalten**. Legen Sie den Status auf **Vorfall auflösen** fest, und wählen Sie die entsprechende Klassifizierung aus.
+Wählen Sie **Vorfall verwalten**aus. Legen Sie den Status auf **Vorfall auflösen** fest, und wählen Sie die entsprechende Klassifizierung aus.
 
-Nachdem der Vorfall behoben wurde, werden alle zugehörigen Warnungen im Microsoft 365 Security Center und in den dazugehörigen Portalen geschlossen.
+Wenn der Vorfall aufgelöst ist, werden alle zugeordneten Warnungen im Microsoft 365 Security Center und in den dazugehörigen Portalen geschlossen.
 
 ![Screenshot der Seite "Vorfälle" mit dem Dialogfeld "Vorfall verwalten", in dem Sie auf den Switch klicken können, um den Vorfall zu lösen](../../media/mtp/fig16.png) 
 
@@ -369,9 +369,9 @@ Für dieses Szenario ist ein einzelnes internes Postfach und Gerät erforderlich
 
     1.  Sehen Sie sich die Ergebnisse an, und prüfen Sie, ob Sie die geöffnete e-Mail identifizieren können.  Es kann bis zu 2 Stunden dauern, bis die Nachricht in Advanced Hunting angezeigt wird. Wenn die e-Mail-Umgebung groß ist und viele Ergebnisse vorliegen, möchten Sie möglicherweise die **Option Filter anzeigen** verwenden, um nach der Nachricht zu suchen. 
 
-        Im Beispiel wurde die e-Mail von einem Yahoo-Konto gesendet. Klicken Sie auf das **+** Symbol neben **Yahoo.com** im Abschnitt SenderFromDomain, und klicken Sie dann auf über **nehmen** , um die ausgewählte Domäne zur Abfrage hinzuzufügen.  Sie sollten die Domäne oder das e-Mail-Konto verwenden, das zum Senden der Testnachricht in Schritt 1 von Ausführen der Simulation verwendet wurde, um die Ergebnisse zu filtern.  Führen Sie die Abfrage erneut aus, um ein kleineres Resultset zu erhalten, um zu überprüfen, ob die Nachricht aus der Simulation angezeigt wird.
+   Im Beispiel wurde die e-Mail von einem Yahoo-Konto gesendet. Klicken Sie auf das **+** Symbol neben **Yahoo.com** im Abschnitt SenderFromDomain, und klicken Sie dann auf über **nehmen** , um die ausgewählte Domäne zur Abfrage hinzuzufügen.  Verwenden Sie das Domänen-oder e-Mail-Konto, das zum Senden der Testnachricht in Schritt 1 von Ausführen der Simulation verwendet wurde, um Ihre Ergebnisse zu filtern.  Führen Sie die Abfrage erneut aus, um ein kleineres Resultset zu erhalten, um zu überprüfen, ob die Nachricht aus der Simulation angezeigt wird.
    
-        ![Screenshot der Filter. Verwenden Sie Filter, um die Suche einzugrenzen, und suchen Sie schneller nach Ihren Wünschen.](../../media/mtp/fig20.png) 
+        ![Screenshot of the filters. Use filters to narrow down the search, and find what you’re looking for faster.](../../media/mtp/fig20.png) 
 
         ```console
         EmailEvents 
@@ -394,7 +394,7 @@ Für dieses Szenario ist ein einzelnes internes Postfach und Gerät erforderlich
 
 5.  Geben Sie als nächstes die Informationen über die Anlage (beispielsweise: Dateiname, Hashwerte) zu Ihrem Resultset hinzu. Um dies zu tun, fügen Sie die **EmailAttachmentInfo** -Tabelle. Die für den Beitritt zu verwendenden allgemeinen Felder sind in diesem Fall **NetworkMessageId** und **RecipientObjectId**.
 
-    Die folgende Abfrage enthält auch eine zusätzliche Verbindung "| **Project-Rename EmailTimestamp = Timestamp**", mit dem ermittelt werden kann, welcher Zeitstempel im Zusammenhang mit den im nächsten Schritt hinzugefügten e-Mail-und Timestamps im Zusammenhang mit Dateiaktionen steht.
+Die folgende Abfrage enthält auch eine zusätzliche Verbindung "| **Project-Rename EmailTimestamp = Timestamp**"damit wird ermittelt, welcher Zeitstempel im Zusammenhang mit den im nächsten Schritt hinzugefügten e-Mail-und Timestamps im Zusammenhang mit Dateiaktionen steht.
 
     ```console
     EmailEvents 
@@ -416,9 +416,9 @@ Für dieses Szenario ist ein einzelnes internes Postfach und Gerät erforderlich
     | where ActionType == "FileCreated"
     ```
 
-    Sie haben jetzt eine Abfrage erstellt, mit der alle eingehenden e-Mails identifiziert werden, bei denen der Benutzer die Anlage geöffnet oder gespeichert hat. Sie können diese Abfrage auch verfeinern, um nach bestimmten Sender Domänen, Dateigrößen, Dateitypen usw. zu filtern.
+Sie haben jetzt eine Abfrage erstellt, mit der alle eingehenden e-Mails identifiziert werden, bei denen der Benutzer die Anlage geöffnet oder gespeichert hat. Sie können diese Abfrage auch verfeinern, um nach bestimmten Sender Domänen, Dateigrößen, Dateitypen usw. zu filtern.
 
-7.  Funktionen sind eine besondere Art von Join, mit der Sie mehr TI-Daten zu einer Datei abrufen können, beispielsweise die Prävalenz, die Signaturgeber-und Ausstellerinformationen usw.  Um weitere Details zu der Datei zu erhalten, verwenden Sie die **fileprofile ()** -Funktion Bereicherung:
+7.  Funktionen stellen eine besondere Art von Join dar, mit der Sie mehr TI-Daten zu einer Datei wie etwa deren Prävalenz, Signaturgeber-und Ausstellerinformationen usw. abrufen können.  Um weitere Details zu der Datei zu erhalten, verwenden Sie die **fileprofile ()** -Funktion Bereicherung:
 
     ```console
     EmailEvents 
@@ -473,9 +473,9 @@ Bei benutzerdefinierten Erkennungen wird die Abfrage entsprechend der von Ihnen 
 
     ![Screenshot der Seite mit den Erkennungsregeln, auf der die Details zur Regel und zur Ausführung angezeigt werden](../../media/mtp/fig27b.png) 
 
-    Auf dieser Seite können Sie die Erkennungsregel auswählen, mit der eine Detailseite geöffnet wird. 
+Auf dieser Seite können Sie die Erkennungsregel auswählen, mit der eine Detailseite geöffnet wird. 
 
-    ![Screenshot der Seite "e-Mail-Anlagen", auf der Sie den Status der Regelausführung, ausgelöste Warnungen und Aktionen, Bearbeiten der Erkennung usw. sehen können](../../media/mtp/fig28.png) 
+    ![Screenshot of the email attachments page where you can see the status of the rule execution, triggered alerts and actions, edit the detection, and so on](../../media/mtp/fig28.png) 
 
 ### <a name="additional-advanced-hunting-walk-through-exercises"></a>Zusätzliche erweiterte Jagd-Übungsschritte
 

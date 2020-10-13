@@ -12,15 +12,15 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-- M365initiative-coredeploy
+- m365initiative-coredeploy
 ms.custom: it-pro
 description: Die Roadmap zum Einrichten Ihrer Mandanten für Microsoft 365.
-ms.openlocfilehash: e4b2af9143070caa1ebd8fd66ef9f367f85d3bb9
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: 0f1fa91bb81fd6cc87820f2b2d48e00e1b75a0c4
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357910"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446007"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Mandanten-Roadmap für Microsoft 365
 

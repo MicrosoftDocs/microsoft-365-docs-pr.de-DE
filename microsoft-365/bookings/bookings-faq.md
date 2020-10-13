@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Häufig gestellte Fragen zu Microsoft-Buchungen.
-ms.openlocfilehash: ee0de2d1412aa5ec38759a3a2512de05b9e02621
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 40605cfc7e5d30e12cd34a463a76e8d9c324efc7
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545716"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445451"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Häufig gestellte Fragen zu Microsoft-Buchungen
 
@@ -21,7 +21,7 @@ ms.locfileid: "47545716"
 
 ### <a name="what-is-microsoft-bookings"></a>Was ist Microsoft-Buchungen?
 
-Microsoft Booking ist eine Microsoft 365-APP, die das Planen und Verwalten von Terminen vereinfacht. Buchungen Incudes einen webbasierten Buchungskalender und integriert sich in Outlook, um den Kalender Ihres Mitarbeiters zu optimieren, sodass Ihre Kunden flexibel sein können, um eine Zeit zu buchen, die für Sie am besten geeignet ist. Durch automatische Benachrichtigungs-e-Mails werden keine Shows reduziert, und Organisationen sparen Zeit mit einer Reduzierung der wiederkehrenden Planungsaufgaben. Buchungen helfen Ihnen bei der einfachen Durchführung virtueller Termine über Skype oder Microsoft Teams und unterstützen Sie bei der täglichen Planung über die app "Buchungen" in Microsoft Teams. Durch die integrierte Anpassung können Buchungen so konzipiert werden, dass Sie den Anforderungen mehrerer Teile einer Organisation entsprechen.
+Microsoft Booking ist eine Microsoft 365-APP, die das Planen und Verwalten von Terminen vereinfacht. Reservierungen beinhalten einen webbasierten Buchungskalender und können in Outlook integriert werden, um den Kalender Ihres Mitarbeiters zu optimieren, sodass Ihre Kunden flexibel sein können, um eine Zeit zu buchen, die für Sie am besten geeignet ist. Durch automatische Benachrichtigungs-e-Mails werden keine Shows reduziert, und Organisationen sparen Zeit mit einer Reduzierung der wiederkehrenden Planungsaufgaben. Buchungen helfen Ihnen bei der einfachen Durchführung virtueller Termine über Skype oder Microsoft Teams und unterstützen Sie bei der täglichen Planung über die app "Buchungen" in Microsoft Teams. Durch die integrierte Anpassung können Buchungen so konzipiert werden, dass Sie den Anforderungen mehrerer Teile einer Organisation entsprechen.
 
 ### <a name="how-do-i-use-microsoft-bookings"></a>Wie verwende ich Microsoft-Buchungen?
 
@@ -174,7 +174,7 @@ Eine Einstellung mit dem Namen " **Maximale Vorlaufzeit** " bestimmt am weiteste
 
 Alle Zeiten befinden sich standardmäßig in der Geschäftszeit Zone (Ihre lokale Zeitzone). Dies bedeutet, dass alle Einstellungen, die Sie für einen Buchungskalender konfigurieren, wie etwa Arbeitsstunden, in dieser Zeitzone angezeigt werden. Die Self-Service-Seite hat die Möglichkeit, alle Termin Zeiten in der Zeitzone des Endbenutzers anzuzeigen, die bei Bedarf deaktiviert werden kann.Wenn **Zeitschlitze in der Geschäfts Zeitzone immer angezeigt** werden, bleibt die Kontrollkästchen auf der Seite "Buchungen" deaktiviert, und die Benutzer der Seite sehen Zeitschlitze in ihren eigenen lokalen Zeitzonen.
 
-:::image type="content" source="media/bookings-faq-region.png" alt-text="Reservierungen für Regions-und Zeitzoneneinstellungen":::
+:::image type="content" source="media/bookings-faq-region.png" alt-text="Planen in Buchungen":::
 
 Es gibt keine Provision zum Festlegen der Zeitzone für Mitarbeiter in Buchungen. Die Zeitzone des Personals und damit die Geschäftszeiten befinden sich in der Geschäftszeit Zone.
 
@@ -202,7 +202,7 @@ Ja, wir verfügen über eine Gruppen Buchungsfunktion, mit der mehrere Personen 
 
 Ja. Auf der Registerkarte "Buchungsseite" in der Webanwendung befindet sich ein Kontrollkästchen: **erfordern Sie ein Microsoft 365-oder Office 365-Konto aus meiner Organisation, um es zu buchen**. Wenn Sie dieses Kontrollkästchen aktivieren, wird der Zugriff auf Self-Service-Seiten auf diejenigen beschränkt, die sich in Ihrem Mandanten befinden. Auf den Buchungskalender, der in der Webanwendung für die Erstellung und Verwaltung liegt, kann nur von Personen zugegriffen werden, die der Seite mit Administrator-oder Viewer-Rollen als Mitarbeiter hinzugefügt wurden.
 
-:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Buchungsseite-Zugriffssteuerung bei Buchungen":::
+:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Planen in Buchungen":::
 
 ### <a name="how-frequently-does-the-home-page-update"></a>Wie häufig wird die Startseite aktualisiert?
 
@@ -214,7 +214,7 @@ Bei der Aufzeichnungsdauer innerhalb der Buchungen-Webanwendung wird immer eine 
 
 ### <a name="can-bookings-calendars-be-cloned-or-duplicated-and-can-they-be-templatized-for-easy-scaling"></a>Können Buchungen von Kalendern geklont oder dupliziert werden, und können Sie für einfache Skalierung Vorlagen?
 
-Die Möglichkeit, Seiten zu duplizieren, ist derzeit über PowerShell verfügbar. Der Vorgang besteht darin, die Graph-API zum Abrufen von Postfachdetails zu verwenden und diese Details dann zum Erstellen eines neuen Postfachs zu verwenden. API-Dokumentation finden Sie [hier](https://docs.microsoft.com/graph/api/resources/booking-api-overview?view=graph-rest-beta).
+Der Vorgang besteht darin, die Graph-API zum Abrufen von Postfachdetails zu verwenden und diese Details dann zum Erstellen eines neuen Postfachs zu verwenden. API-Dokumentation finden Sie [hier](https://docs.microsoft.com/graph/api/resources/booking-api-overview?view=graph-rest-beta).
 
 ### <a name="what-reporting-is-available-in-bookings"></a>Welche Berichte sind bei Buchungen verfügbar?
 
@@ -250,7 +250,7 @@ Jeder Buchungskalender wird unabhängig verwaltet. Es gibt keine konsolidierte A
 
 Der Zugriff auf die Webanwendung Buchungen umfasst die Authentifizierung über die reguläre Azure Active Directory (AAD)-Authentifizierung. Die Self-Service-Buchungsseite kann jeder Person mit dem Link zur Webseite zur Verfügung gestellt werden. Wenn jedoch die Einstellung **ein Microsoft 365-oder Office 365-Konto von meiner Organisation** zum Buchen erfordert ausgewählt ist, wird die Seite für die Verwendung nur innerhalb des Microsoft 365-Mandanten eingeschränkt (mithilfe der Aad-Authentifizierung).
 
-:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Buchungsseite-Zugriffssteuerung bei Buchungen":::
+:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Planen in Buchungen":::
 
 ### <a name="does-customer-data-leave-the-production-system-for-any-reason"></a>Verlassen Kundendaten das Produktionssystem aus irgendeinem Grund?
 

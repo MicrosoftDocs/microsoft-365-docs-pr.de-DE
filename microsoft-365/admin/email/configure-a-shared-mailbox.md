@@ -1,10 +1,10 @@
 ---
-title: Konfigurieren von Einstellungen für freigegebene Postfächer
+title: Konfigurieren der Einstellungen für das freigegebene Postfach
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
-manager: mnirkhe
+ms.author: sharik
+author: SKjerland
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,14 +21,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Nachdem Sie ein freigegebenes Postfach erstellt haben, sollten Sie einige Einstellungen für die Benutzer konfigurieren, beispielsweise e-Mail-Weiterleitung und automatische Antworten. Möglicherweise möchten Sie später andere Einstellungen ändern, beispielsweise den Postfachnamen oder die Mitglieder.
-ms.openlocfilehash: 3bde856f4db80192f5ed058a18c7942aa6a724b2
-ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
+ms.openlocfilehash: a007b3ca810bdfc00176e71a737a510230f18113
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44739199"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445675"
 ---
-# <a name="configure-shared-mailbox-settings"></a>Konfigurieren von Einstellungen für freigegebene Postfächer
+# <a name="configure-shared-mailbox-settings"></a>Konfigurieren der Einstellungen für das freigegebene Postfach
 
 Nachdem Sie [ein freigegebenes Postfach erstellt](create-a-shared-mailbox.md)haben, sollten Sie einige Einstellungen für die Postfachbenutzer konfigurieren, beispielsweise e-Mail-Weiterleitung und automatische Antworten. Möglicherweise möchten Sie später andere Einstellungen ändern, beispielsweise den Postfachnamen, Mitglieder oder Mitgliedsberechtigungen. 
 
@@ -56,7 +56,7 @@ Nachdem Sie [ein freigegebenes Postfach erstellt](create-a-shared-mailbox.md)hab
 
 3. Geben Sie einen neuen Namen ein, oder fügen Sie einen weiteren Alias hinzu. Wenn Sie die primäre e-Mail-Adresse ändern möchten, muss Ihr Postfach über mehr als einen e-Mail-Alias verfügen.
 
-4. Wählen Sie **Speichern**.
+4. Wählen Sie **Speichern** aus.
 
 ## <a name="forward-emails-that-are-sent-to-a-shared-mailbox"></a>Weiterleiten von E-Mails, die an ein freigegebenes Postfach gesendet wurden
 
@@ -82,9 +82,9 @@ Sie müssen dem freigegebenen Postfach keine Lizenz zuweisen, um an Sie gesendet
 
 2. Wählen Sie das freigegebene Postfach aus, das Sie bearbeiten möchten, und wählen Sie dann **e-Mail Weiterleitung** \> **Bearbeiten**aus.
     
-3. Legen Sie die Umschaltfläche **auf**ein und geben Sie eine e-Mail-Adresse ein, an die die Nachrichten weitergeleitet werden sollen. Es kann sich um eine beliebige gültige e-Mail-Adresse handeln. Um an mehrere Adressen weiterzuleiten, müssen Sie [eine Verteilergruppe](https://docs.microsoft.com/office365/admin/setup/create-distribution-lists?view=o365-worldwide) für die Adressen erstellen und dann den Namen der Gruppe in dieses Feld eingeben.
+3. Legen Sie die Umschaltfläche **auf**ein und geben Sie eine e-Mail-Adresse ein, an die die Nachrichten weitergeleitet werden sollen. Es kann sich um eine beliebige gültige e-Mail-Adresse handeln. Um an mehrere Adressen weiterzuleiten, müssen Sie [eine Verteilergruppe](https://docs.microsoft.com/office365/admin/setup/create-distribution-lists) für die Adressen erstellen und dann den Namen der Gruppe in dieses Feld eingeben.
     
-4. Wählen Sie **Speichern**.
+4. Wählen Sie **Speichern** aus.
 
 ## <a name="send-automatic-replies-from-a-shared-mailbox"></a>Senden von automatischen Antworten aus einem freigegebenen Postfach
 
@@ -114,7 +114,7 @@ Sie müssen dem freigegebenen Postfach keine Lizenz zuweisen, um an Sie gesendet
 
 5. Wenn Sie *auch* eine Antwort an Personen außerhalb Ihrer Organisation senden möchten, aktivieren Sie das Kontrollkästchen, die Antwort erhalten soll, und geben Sie den Text ein. Es ist nicht möglich, eine Antwort nur an Personen außerhalb Ihrer Organisation (ohne Einbeziehung von Personen innerhalb Ihrer Organisation) zu senden.
 
-6. Wählen Sie **Speichern**.
+6. Wählen Sie **Speichern** aus.
 
 ## <a name="allow-everyone-to-see-the-sent-email-the-replies"></a>Jedem erlauben, die gesendeten E-Mails (die Antworten) anzuzeigen
 
@@ -147,7 +147,7 @@ Wenn Sie zulassen möchten, dass alle Benutzer die gesendeten e-Mails anzeigen k
 
 3. Legen Sie die Umschaltfläche für alle apps, die Mitglieder für den Zugriff auf das freigegebene Postfach verwenden können, auf **ein** fest. Legen Sie die Umschaltfläche für alle apps, die Sie nicht verwenden möchten, auf **Off** fest. 
 
-4. Wählen Sie **Speichern**.
+4. Wählen Sie **Speichern** aus.
 
 
 ## <a name="put-a-shared-mailbox-on-litigation-hold"></a>Speichern eines freigegebenen Postfachs für das Beweissicherungsverfahren
@@ -178,7 +178,7 @@ Weitere Informationen zum Beweissicherungsverfahren finden Sie unter [Create a L
 
 4. Geben Sie optional eine Dauer, eine Notiz zum Haltestatus und eine URL mit weiteren Informationen ein.  
 
-5. Wählen Sie **Speichern**.
+5. Wählen Sie **Speichern** aus.
 
 
 ## <a name="add-or-remove-members"></a>Hinzufügen oder Entfernen von Mitgliedern
@@ -263,9 +263,9 @@ Wenn Sie das freigegebene Postfach nicht in der globalen Adressliste anzeigen m�
 
 2. Wählen Sie das freigegebene Postfach aus, das Sie bearbeiten möchten, und wählen Sie dann **in globale Adresslisten** \> **Bearbeitung**anzeigen aus.
 
-3. Legen Sie die Umschaltfläche **auf ein** oder **aus**fest. 
+3. Legen Sie die Umschaltfläche **auf ein**  oder **aus**fest. 
 
-4. Wählen Sie **Speichern**.
+4. Wählen Sie **Speichern** aus.
 
 > [!NOTE]
 > Wenn Sie ein freigegebenes Postfach aus der Adressliste ausblenden, ist es für neue freigegebene Post Fach Mitglieder unmöglich, das ausgeblendete Postfach Ihrem Outlook-Profil hinzuzufügen, bis das freigegebene Postfach erneut in der Adressliste angezeigt wird. 
