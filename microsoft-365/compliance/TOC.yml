@@ -250,6 +250,8 @@
           href: how-dlp-works-between-admin-centers.md
         - name: Verwenden von Vertraulichkeitsbezeichnungen als Bedingungen in DLP-Richtlinien (Vorschau)
           href: dlp-sensitivity-label-as-condition.md
+        - name: Verwenden von Richtlinien zur Verhinderung von Datenverlust für nicht von Microsoft stammende Cloud-Apps
+          href: dlp-use-policies-non-microsoft-cloud-apps.md
 - name: Verwalten der Informationsgovernance
   items:
     - name: Ihre Daten verwalten
