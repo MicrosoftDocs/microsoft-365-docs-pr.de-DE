@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: Die Verhinderung von Datenverlust im Security &amp; Compliance Center umfasst 80 Typen für vertrauliche Informationen, die Sie in ihren DLP-Richtlinien verwenden können. Dieses Thema enthält eine Liste aller dieser vertraulichen Informationstypen und zeigt, was eine DLP-Richtlinie sucht, wenn sie den jeweiligen Typen erkennt.
-ms.openlocfilehash: 8ee871ccde30d3ab71dbcb2d5183aafdf11482bd
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: adc1006628b8b4f13d30f2001fee0871b51b18ca
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235571"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48430432"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Entitätsdefinitionen für Typen vertraulicher Informationstypen
 
@@ -146,7 +146,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="format"></a>Format
 
-sechs bis TWN Ziffern mit oder ohne Bank Status Filialnummer
+sechs bis zehn Ziffern mit oder ohne Bank Status Filialnummer
 
 ### <a name="pattern"></a>Muster
 
@@ -768,7 +768,7 @@ Eine Kombination aus einem Buchstaben, sieben Ziffern und einem Leerzeichen:
     
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht zutreffend
+nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
@@ -1621,8 +1621,7 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 - Registrierung
 - registrationsnumme
 - Registrierung
-- social security number
-
+- Sozialversicherungsnummer
 - SSN #
 - SSN
 - Steuernummer
@@ -1657,7 +1656,7 @@ zwei Buchstaben und gefolgt von sechs Ziffern
   
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht zutreffend
+nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
@@ -2162,8 +2161,7 @@ national id
 - persönliches Nein
 - persönliche Nummer
 - personalidnumber #
-- social security number
-
+- Sozialversicherungsnummer
 - SSN #
 - SSN
 - Uniform Civil ID
@@ -3096,7 +3094,7 @@ master cards
 
 - carte blanche
 - CarteBlanche
-- credit card
+- Kreditkarte
 - CC #
 - cc #:
 - Ablaufdatum
@@ -3672,7 +3670,7 @@ zehn Ziffern
   
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht zutreffend
+nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
@@ -3787,7 +3785,7 @@ acht Ziffern und ein Buchstabe:
     
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht zutreffend
+nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
@@ -4037,8 +4035,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - rodné číslo
 - SSN
 - SSN #
-- social security number
-
+- Sozialversicherungsnummer
 - tax id
 
 - Steueridentifikationsnummer
@@ -4305,8 +4302,7 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 - Skate Kode
 - Skate Nummer
 - skattenummer
-- social security number
-
+- Sozialversicherungsnummer
 - sundhedsforsikringskort
 - sundhedsforsikringsnummer
 - sundhedskort
@@ -5321,8 +5317,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - personalidnumber #
 - personbeteckning
 - personnummer
-- social security number
-
+- Sozialversicherungsnummer
 - sosiaaliturvatunnus
 - tax id
 
@@ -7798,7 +7793,7 @@ zwei Buchstaben oder Ziffern, gefolgt von sieben Ziffern:
     
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht zutreffend
+nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
@@ -8550,8 +8545,7 @@ national id
 registration number
 - Umsatz Nummer
 - Sozialversicherungsnummer
-- social security number
-
+- Sozialversicherungsnummer
 - Landessteuer Code
 - Steuerdatei Nummer
 - tax id
@@ -8784,7 +8778,7 @@ acht Ziffern oder Buchstaben (Groß-/Kleinschreibung nicht beachtet)
   
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht zutreffend
+nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
@@ -9541,7 +9535,7 @@ neun Buchstaben oder Ziffern
   
 ### <a name="checksum"></a>Prüfsumme
 
-Nicht zutreffend
+nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
@@ -11276,8 +11270,7 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 - rč
 - rodne cislo
 - rodné číslo
-- social security number
-
+- Sozialversicherungsnummer
 - SSN #
 - SSN
 - személyi igazolvány szám
@@ -12631,8 +12624,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - pid
 - Versicherungsnummer
 - personalidno #
-- social security number
-
+- Sozialversicherungsnummer
 - persönliche ID-Nummer
 - persönliche Identifikationsnummer
 - insuranceno #
@@ -13133,8 +13125,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 - protection act
 - Versicherungs
-- social security number
-
+- Sozialversicherungsnummer
 - insurance application
 
 - medical application
