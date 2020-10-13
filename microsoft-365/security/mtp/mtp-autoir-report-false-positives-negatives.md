@@ -17,16 +17,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365-initiative-m365-defender
+- m365initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: f8d741cbc7215c18d096573fe6555dfe7709c58b
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: ecfd1bb9e5ff548c08aea322d12d626fa7fb6120
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48413638"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48429635"
 ---
 # <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Behandeln von falsch positiven/negativen Ergebnissen in automatisierten Ermittlungs-und Antwortfunktionen
 
@@ -84,7 +84,7 @@ Wenn eine Korrekturaktion auf einem Gerät (beispielsweise einem Windows 10-Ger�
 
 7. Um die Aktion rückgängig zu machen, wählen Sie **Korrektur löschen**aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen:
 
 - [Anzeigen der Details und Ergebnisse einer automatischen Untersuchung](mtp-autoir-results.md)
 - [Proaktive Suche nach Bedrohungen mit der erweiterten Suche in Microsoft Threat Protection](advanced-hunting-overview.md)

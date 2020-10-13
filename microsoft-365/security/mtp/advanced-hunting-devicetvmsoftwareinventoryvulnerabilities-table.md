@@ -17,14 +17,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365-initiative-m365-defender
+- m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: d8858fe9acd8183ad0d8644a9d5e4d70d32990a6
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 4571b5bb22ef8aa800607f81cc00f15c28172548
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48413222"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48429856"
 ---
 # <a name="devicetvmsoftwareinventoryvulnerabilities"></a>DeviceTvmSoftwareInventoryVulnerabilities
 

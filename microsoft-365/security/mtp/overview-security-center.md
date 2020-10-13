@@ -13,15 +13,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365-initiative-m365-defender
+- m365initiative-m365-defender
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 23f5fb935bb67efe8e08cb8be629aad242d856cb
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: ed91ca8a2300cf69cb78ae24ad61e9aebb4dcc85
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48413436"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48429419"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 Security Center – Übersicht
 
@@ -73,6 +73,6 @@ In diesem Artikel erfahren Sie, wie Sie Ihre Sicherheitsanforderungen überwache
 - [Proaktive Suche nach Bedrohungen](advanced-hunting-overview.md) für Intrusionsversuche und Verletzungs Aktivitäten, die sich auf Ihre e-Mails, Daten, Geräte und Konten auswirken
 - Grund [Legendes zu den neuesten Angriffs Kampagnen](latest-attack-campaigns.md) und-Techniken mit Threat Analytics
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen:
 
 - [Microsoft-Sicherheitsportale](portals.md)

@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-- m365-initiative-m365-defender
+- m365initiative-m365-defender
 description: Microsoft 365-Administratoren erfahren, wie Sie nach einem Ransomware-Angriff wiederherstellen können.
-ms.openlocfilehash: fd975c8708bcd6731c356ccc3307f5cdebd13bdb
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: c9a8e1035e00509f5c57b8699966544b60b7f9c1
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48413400"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48430609"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Wiederherstellen nach einem Ransomware-Angriff in Microsoft 365
 
@@ -128,7 +128,7 @@ Wenn Ihr Land nicht aufgeführt ist, wenden Sie sich an Ihre lokalen oder Bundes
 
 Sie können Phishing-Nachrichten melden, die Ransomware enthalten, indem Sie eine von mehreren Methoden verwenden. Weitere Informationen finden Sie unter [Melden von Nachrichten und Dateien an Microsoft](report-junk-email-messages-to-microsoft.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen:
 
 - [Ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)
 

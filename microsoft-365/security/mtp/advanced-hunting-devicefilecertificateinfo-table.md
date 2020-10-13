@@ -17,14 +17,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365-initiative-m365-defender
+- m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 3c9ee14fc316f767ad57fe32920dd3034a1cd795
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 926f129b95e1d9d6b07f56955bdf061884d4340b
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48412238"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48430107"
 ---
 # <a name="devicefilecertificateinfo"></a>DeviceFileCertificateInfo
 

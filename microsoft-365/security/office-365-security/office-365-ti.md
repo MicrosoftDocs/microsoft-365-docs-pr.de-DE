@@ -16,16 +16,16 @@ search.appverid:
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
-- m365-initiative-m365-defender
+- m365initiative-m365-defender
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie mehr über die Funktionen zur Ermittlung und Reaktion von Bedrohungen in Office 365 Advanced Threat Protection-Plan.
-ms.openlocfilehash: d3ebf1d2e425eb3699f972692c6b632f8f405019
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 4d51a172c3b6fb8641648ecd7a33e320b0a42b24
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48414310"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48431135"
 ---
 # <a name="threat-investigation-and-response"></a>Untersuchung von und Antwort auf Bedrohungen
 
@@ -116,7 +116,7 @@ Office 365 Advanced Threat Protection verwendet rollenbasierte Zugriffssteuerung
 |Integration von Office 365 Advanced Threat Protection Plan 2 mit Advanced Threat Protection von Microsoft Defender  <br/><br/> Integrieren von Office 365 Advanced Threat Protection Plan 2 mit einem Siem-Server|Entweder der **globale Administrator** oder die **Sicherheitsadministrator** Rolle, die entweder in Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) oder im Microsoft 365 Admin Center () zugewiesen ist [https://admin.microsoft.com](https://admin.microsoft.com) .<br/>--- **Plus** ---<br/>Eine entsprechende Rolle, die in weiteren Anwendungen zugewiesen ist (beispielsweise [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) oder Ihr Siem-Server)|
 |
 
-## <a name="next-steps"></a>Nächste Schritte
+## <a name="next-steps"></a>Weitere Schritte
 
 - [Informationen zu Threat Tracker – neu und bemerkenswert](threat-trackers.md)
 

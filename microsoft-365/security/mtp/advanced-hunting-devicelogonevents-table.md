@@ -17,14 +17,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365-initiative-m365-defender
+- m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 49f7c05283d17cde075b580b46cf3f36b169d8c1
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 2ec668ae3aba0a163ebc0c148bf3b35b07a71944
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48413102"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48429959"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 

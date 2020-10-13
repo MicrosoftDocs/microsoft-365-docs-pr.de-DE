@@ -17,14 +17,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365-initiative-m365-defender
+- m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 17a7e2ed8e2124bc3ca820cedee7c4f89403d717
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 63f12aaa84415b354fd257558612dbbe28e41360
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48413138"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48429455"
 ---
 # <a name="emailevents"></a>EmailEvents
 

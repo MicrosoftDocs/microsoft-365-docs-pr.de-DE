@@ -16,17 +16,17 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365-initiative-m365-defender
+- m365initiative-m365-defender
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 3a5db0b9709a9596ccd6560d7f2e546dd3753332
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 4e4036e1a1ee0ccf807dc5299b9842911f140478
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48413352"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48430811"
 ---
 # <a name="deploy-supported-services"></a>Bereitstellen unterstützter Dienste
 

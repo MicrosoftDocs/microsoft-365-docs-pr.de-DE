@@ -17,14 +17,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365-initiative-m365-defender
+- m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 265b3e6d502b706644486cab8052cb3a72a81fe8
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: adcfe0bb3cf42c5890e6ccc063bbaf3ba21827af
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48414142"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48431099"
 ---
 # <a name="deviceimageloadevents"></a>DeviceImageLoadEvents
 

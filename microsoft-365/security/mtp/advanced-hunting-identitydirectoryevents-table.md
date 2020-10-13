@@ -17,14 +17,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365-initiative-m365-defender
+- m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 9113d12face141b5e8005340af25061c98d5dfe3
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: d93ef3eb3bbf6def0f633aa0f69032e37d10c4c9
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48412850"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48430376"
 ---
 # <a name="identitydirectoryevents"></a>IdentityDirectoryEvents
 

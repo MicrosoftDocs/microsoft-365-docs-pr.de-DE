@@ -17,14 +17,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365-initiative-m365-defender
+- m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 7f0b479051c46fe35ec9aea84b23ca0c4937fbfe
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 462a4884e2b17f9ae75ea3bdc1531b180dcc5934
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48412322"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48430127"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 

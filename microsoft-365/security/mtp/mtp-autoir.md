@@ -16,17 +16,17 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365-initiative-m365-defender
+- m365initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
 ms.date: 09/16/2020
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: ee5616f79df35ebff2713538bae7fb42fd755287
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 32bf5f1ada91ae67f72bd26c7fe68fe91897be7c
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48413578"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48429359"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-threat-protection"></a>Automatische Untersuchung und Reaktion in Microsoft Threat Protection
 
@@ -80,7 +80,7 @@ Während eine Untersuchung läuft, werden alle anderen zugehörigen Warnungen zu
 > Nicht jede Warnung löst eine automatisierte Untersuchung aus, und nicht jede Untersuchung führt zu automatisierten Korrekturaktionen. Dies hängt davon ab, wie die automatische Untersuchung und Antwort für Ihre Organisation konfiguriert ist. Weitere Informationen finden Sie unter [Configure Automated Investigation and Response Capabilities in Microsoft Threat Protection](mtp-configure-auto-investigation-response.md).
 
 
-## <a name="next-steps"></a>Nächste Schritte
+## <a name="next-steps"></a>Weitere Schritte
 
 - [Weitere Informationen finden Sie unter Voraussetzungen für automatisierte Untersuchungen und Antworten in Microsoft Threat Protection](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-threat-protection)
 - [Konfigurieren der automatischen Untersuchung und Reaktion für Ihre Organisation](mtp-configure-auto-investigation-response.md)
