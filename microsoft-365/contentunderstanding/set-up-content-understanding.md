@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 localization_priority: Priority
 description: Einrichten des Inhaltsverständnisses in Projekt Cortex
-ms.openlocfilehash: 410dd9550974ec7b5c1c5b4ae151bc92bf376544
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 43ce7809237d32fb9d2da73e9e00bed9b9a8193e
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446323"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464062"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Einrichten von SharePoint Syntex
 
@@ -41,7 +41,7 @@ Als Administrator können Sie nach dem Einrichten und in den Verwaltungseinstell
 
 ## <a name="to-set-up-sharepoint-syntex"></a>So richten Sie SharePoint Syntex ein
 
-1. Wählen Sie im Microsoft 365 Admin Center **Setup**aus, und zeigen Sie dann den Abschnitt **Dateien und Inhalte** an.
+1. Wählen Sie im Microsoft 365 Admin Center **Setup**aus, und zeigen Sie dann den Abschnitt **Organisationswissen** an.
 
 2. Wählen Sie im Abschnitt **Dateien und Inhalte** > **Inhaltsverständnis automatisieren** aus.<br/>
 

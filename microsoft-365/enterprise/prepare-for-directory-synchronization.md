@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Beschreibt, wie Sie die Bereitstellung von Benutzern auf Microsoft 365 mithilfe der Verzeichnissynchronisierung und die langfristigen Vorteile der Verwendung dieser Methode vorbereiten.
-ms.openlocfilehash: 79d2a7932867531849ce75f8452b91e8c7ddd7b1
-ms.sourcegitcommit: 7e8151ff74cb1cfc0dd59fadcac423c338415d77
+ms.openlocfilehash: 41c2ff08c8e2ae11079e82d378110d10bd7cab3e
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48390173"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464240"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Vorbereiten der Verzeichnissynchronisierung mit Microsoft 365
 
@@ -100,7 +100,7 @@ Die Attribute, die Sie vorbereiten müssen, sind hier aufgelistet:
   - Wenn das Attribut im User-Objekt vorhanden ist, wird es mit Microsoft 365 synchronisiert, aber Microsoft 365 erfordert oder verwendet es nicht.
   - Maximale Anzahl der Zeichen: 64
 
-- **mail**
+- **Mail**
 
   - Der Attributwert muss innerhalb des Verzeichnisses eindeutig sein.
 
@@ -159,7 +159,7 @@ Die Attribute, die Sie vorbereiten müssen, sind hier aufgelistet:
   - Maximale Anzahl von Zeichen für den Domänennamen nach dem @-Zeichen (@): 48
   - Ungültige Zeichen: \% &amp; \* +/=? { } | \< \> ( ) ; : , [ ] " '
   - Zulässige Zeichen: a – z, a-z, 0 – 9, '. - _ ! # ^ ~
-  - Ein Umlaut ist ebenfalls ein ungültiges Zeichen.
+  - Buchstaben mit diakritischen Zeichen wie Umlauten, Akzenten und Tilden sind ungültige Zeichen.
   - Das @-Zeichen ist in jedem **userPrincipalName** -Wert erforderlich.
   - Das @-Zeichen darf nie das erste Zeichen in einem **userPrincipalName**-Wert sein.
   - Der Benutzername darf nicht mit einem Punkt (.), einem kaufmännischen und- &amp; Zeichen (), einem Leerzeichen oder einem @-Zeichen enden.

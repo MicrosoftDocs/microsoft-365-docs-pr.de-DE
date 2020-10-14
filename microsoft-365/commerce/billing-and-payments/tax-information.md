@@ -20,24 +20,32 @@ description: 'Erfahren Sie, wie viel Steuern für Ihr Microsoft 365 for Business
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: de5f05b50138606cd60e8c6ab1999a7ed2090dce
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: d3d1bc1239cb99da33f776e603356ccae95a2353
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434061"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464096"
 ---
 # <a name="tax-information"></a>Steuerinformationen
 
-Die anfallenden Steuern für Microsoft 365 Admin Center-Käufe, die Sie über Microsoft tätigen, werden anhand Ihrer Geschäftsadresse oder – sofern diese abweicht – anhand Ihrer Lieferadresse bestimmt. Wenn Sie sich in den Vereinigten Staaten befinden, müssen Sie eine Federal Employer Identification Number (fein) angeben.
+Wenn Sie Microsoft 365-Produkte und-Dienste kaufen, werden die Steuern, die Sie zahlen, durch eine von zwei Dingen bestimmt: Ihre Geschäftsadresse oder Ihre Versandadresse, falls Sie anders ist. Wenn sich Ihre Organisation in den USA befindet, müssen Sie eine Federal Employer Identification Number (fein) angeben.
 
-Unternehmen in diesen Ländern können Ihre Umsatzsteuernummer angeben:
+Unternehmen in den folgenden Ländern können Ihre MwSt-Nummer oder eine lokale Entsprechung angeben:
 
 :::row:::
     :::column:::
+- Armenien
+- Australien
 - Österreich
+- Bahamas
+- Bangladesch
+- Weißrussland
 - Belgien
+- Brasilien
 - Bulgarien
+- Chile
+- Kolumbien
 - Kroatien
 - Zypern
 - Tschechien
@@ -48,122 +56,100 @@ Unternehmen in diesen Ländern können Ihre Umsatzsteuernummer angeben:
 - Deutschland
 - Griechenland
 - Ungarn
+- Indien
+- Indonesien
 - Irland
+- Insel Man
 - Italien
-- Lettland
     :::column-end:::
     :::column:::
+- Korea
+- Lettland
 - Liechtenstein
 - Litauen
 - Luxemburg
+- Malaysia
 - Malta
+- Mexiko
 - Monaco
 - Niederlande
+- Neuseeland
 - Norwegen
 - Polen
 - Portugal
 - Rumänien
+- Saudi Arabien
 - Slowakei
+- Slowenien
 - Südafrika
 - Spanien
 - Schweden
 - Schweiz
+- Taiwan
+- Türkei
+- Vereinigte Arabische Emirate
 - Vereinigtes Königreich
     :::column-end:::
 :::row-end:::
 
-Diese Länder können Ihre MwSt-Nummer oder eine lokale Entsprechung auf Ihren Abrechnungskontoinformationen angeben.
-
-|Markt| Steuerkennzeichen |
-|------|----------------|
-| Australien | ABN (optional) |
-| Brasilien | CNPJ (erforderlich) |
-| Indien | GSTIN (optional), Pan-ID (erforderlich) |
-| Insel Man | USt-ID (optional) |
-| Neuseeland | GST-Registrierungsnummer (optional) |
-| Monaco | USt-ID (optional) |
-| Taiwan | USt-ID (optional) |
+* Für die meisten der aufgeführten Länder ist die Angabe einer Mehrwertsteuernummer oder einer lokalen Entsprechung optional. Für Brasilien und Indien ist die Steuer-ID-Nummer erforderlich.
 
 > [!Note]
 > Wenn Sie sich an den Support wenden müssen, müssen Sie Ihre fein, ihre Umsatzsteuernummer oder Ihr lokales Äquivalent an den Support-Mitarbeiter übergeben.
 
-## <a name="what-tax-will-i-be-charged"></a>Welche Steuern werden mir in Rechnung gestellt?
+## <a name="europe-the-middle-east-and-africa-emea"></a>Europa, Nahost und Afrika (EMEA)
 
-[] Finden Sie heraus, welchen Steuern Sie in den folgenden Regionen unterliegen. Sie können auch einen [Antrag auf Steuerbefreiung stellen](tax-information.md#apply-for-tax-exempt-status), indem Sie entsprechende Dokumente zum Beleg Ihres Antrags beibringen.
+Wenn Sie Microsoft 365-Dienste in der Europäischen Union kaufen, unterliegt dieser Kauf Value-Added Steuer (MwSt.).
   
-### <a name="europe-the-middle-east-and-africa-emea"></a>Europa, Nahost und Afrika (EMEA)
-
-Wenn Sie Microsoft 365-Dienste in der Europäischen Union kaufen, unterliegt diese Anschaffung der Mehrwertsteuer.
-  
-- Wenn Sie in einem Mitgliedsstaat der Europäischen Union ansässig sind und Ihre gültige lokale USt-ID nicht angeben, wendet Microsoft Ireland Operations Ltd. den aktuellen lokalen Mehrwertsteuersatz basierend auf dem Abrechnungsland an, das für Ihr Konto festgelegt ist.
+- Wenn Sie sich in einem Mitgliedstaat der Europäischen Union befinden und keine gültige lokale USt-ID angeben, wendet Microsoft Ireland Operations Ltd. den aktuellen lokalen MwSt-Satz an, der auf dem Abrechnungs Land basiert, auf das Ihr Konto festgelegt ist.
 
 - Wenn Sie in der Schweiz oder in Liechtenstein ansässig sind, wird der aktuell für die Schweiz gültige Mehrwertsteuersatz angewendet, ganz gleich, ob Sie Ihre USt-ID angeben oder nicht.
 
-- Wenn Sie in einem EMEA-Land außerhalb der Europäischen Union und der Schweiz/Liechtensteins ansässig sind, wird die Mehrwertsteuer von Microsoft Ireland Operations Ltd. nicht in Rechnung gestellt.
+- Wenn Sie sich in einem EMEA-Land außerhalb der Europäischen Union und der Schweiz/Liechtenstein befinden, wird die Mehrwertsteuer in der Regel nicht von der Microsoft Ireland Operations Ltd abgebucht.
 
-- Bevor wir Ihre USt-ID validieren können, muss sie im MwSt-Informationsaustauschsystem (MIAS) zur Überprüfung verfügbar sein. Wenn Ihre USt-ID nicht überprüft werden kann, wenden Sie sich an Ihre lokale Steuerbehörde.
+- Bevor wir Ihre USt-ID validieren können, muss sie im MwSt-Informationsaustauschsystem (MIAS) zur Überprüfung verfügbar sein. Wenn Ihre UST-ID nicht überprüft werden kann, wenden Sie sich an Ihre lokale Steuerbehörde.
 
-Entsprechend berechtigte Studierende und Lehrkräfte haben Anspruch auf Sonderpreise.In folgenden Fällen sind Sie möglicherweise für einen Mehrwertsteuernullsatz berechtigt:
+Sie können sich für eine Mehrwertsteuer-Nullbewertung qualifizieren, wenn:
   
-- **Wenn Sie sich in einem Mitgliedstaat der Europäischen Union außerhalb Irlands befinden:** Sie können Ihre gültige lokale USt-ID angeben. Dadurch wird Microsoft Ireland Operations Ltd. zur Mehrwertsteuererklärung für die Transaktion ohne MwSt. berechtigt. Allerdings haben Sie möglicherweise eine lokale Mehrwert steuererklärungs Pflicht, also erkundigen Sie sich bei ihren Steuerberatern, wenn Sie Bedenken haben. Anweisungen hierzu finden Sie weiter unten unter "Hinzufügen Ihrer MwSt-ID (nur für EU-Länder)".
+- **Sie befinden sich in einem Mitgliedstaat der Europäischen Union außerhalb Irlands:** Sie können Ihre gültige lokale USt-ID angeben. Dadurch kann die Transaktion von Microsoft Ireland Operations Ltd. zur Mehrwertsteuererklärung ohne MwSt. berechnet werden. Möglicherweise verfügen Sie jedoch über eine lokale MwSt-Abrechnungs Pflicht. Wenn Sie Bedenken haben, erkundigen Sie sich bei ihren Steuerberatern. Anweisungen finden Sie unter [Hinzufügen Ihrer MwSt-ID](#add-your-vat-id).
 
-- **Wenn Sie in Irland ansässig sind und eine entsprechende gültige Bescheinigung zur Befreiung von der Mehrwertsteuer vorlegen können:** Microsoft Ireland Operations Ltd. ist möglicherweise berechtigt, die Transaktion von der Mehrwertsteuer auszunehmen. Andernfalls wendet Microsoft Ireland Operations Ltd. den aktuellen irischen Mehrwertsteuersatz an - ganz gleich, ob Sie Ihre USt-ID angeben oder nicht.
+- **Sie sind in Irland und verfügen über die entsprechende gültige MwSt-Befreiungs Zertifizierung:** Microsoft Ireland Operations Ltd. ist berechtigt, die Transaktion von der Mehrwertsteuer zu befreien. Wenn Sie dies nicht tun, wendet Microsoft Ireland Operations Ltd. den aktuellen irischen MwSt-Satz an, unabhängig davon, ob Sie eine Umsatzsteuer-ID angeben oder nicht.
 
-::: moniker range="o365-worldwide"
+## <a name="asia-pacific-countries-apac"></a>Länder des asiatisch-pazifischen Raums (APAC)
 
-#### <a name="add-your-vat-id-eu-countries-only"></a>Angeben Ihrer USt-ID (nur EU Länder)
+Wenn Sie vom Microsoft Regional Sales Office in Rechnung gestellt werden, "Microsoft Regional Sales Pte. Ltd. " wird auf Ihrer Rechnung angezeigt, und Sie werden möglicherweise für alle zutreffenden Mehrwert-, Umsatz-oder ähnliche Steuern belastet.
+  
+Wenn Sie von einem der folgenden Standorte abgebucht werden, wird die aktuelle lokale Steuer angewendet. Der Ort ist [auf Ihrer Rechnung](view-your-bill-or-invoice.md)enthalten:
+  
+- Indien
+- Japan
+- Korea
+- Singapur
+- Taiwan
+
+## <a name="north-central-and-south-america"></a>Nord-, Mittel- und Südamerika
+
+In den Vereinigten Staaten, Kanada, Mexiko, Chile und Kolumbien gelten je nach Produktbeschaffenheit und Standort verschiedene Steuersätze.
+  
+Wenn Ihre Abrechnung von der Microsoft Corporation ausgeführt wird ([Siehe Rechnung](view-your-bill-or-invoice.md)), und Sie sich für Microsoft 365 außerhalb der USA, Kanadas, Puerto Rico, Chile und Kolumbien angemeldet haben, wird die Steuer in der Regel nicht belastet.
+
+## <a name="add-your-vat-id"></a>Mehrwertsteuer-ID hinzufügen
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
-
-2. Suchen Sie die Abonnementkarte für das Abonnement, das Sie aktualisieren möchten.
-
-3. Wählen Sie im Abschnitt **Einstellungen & Aktionen** die Option **Dienst Verwendungs Adresse bearbeiten**aus.
-
-4. Geben Sie auf der Seite **Dienst Verwendungs Adresse bearbeiten** im Feld **MwSt** .-Nummer Ihre Umsatzsteuer-ID, einschließlich des Präfixes, und ohne Leerzeichen ein. Wählen Sie **Save** aus.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-#### <a name="add-your-vat-id-eu-countries-only"></a>Angeben Ihrer USt-ID (nur EU Länder)
-  
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
-
-2. Wählen Sie den Namen des Abonnements aus, und wählen Sie dann **Weitere Aktionen** \> **Bearbeiten MwSt**.-Nummer aus.
-  
-3. Geben Sie auf der Seite **Dienst Verwendungs Adresse bearbeiten** im Feld **MwSt** .-Nummer Ihre Umsatzsteuer-ID, einschließlich des Präfixes, und ohne Leerzeichen ein. Wählen Sie **Save** aus.
-
-::: moniker-end
-
-### <a name="asia-pacific-countries-apac"></a>Länder des asiatisch-pazifischen Raums (APAC)
-
-Wenn Ihre Rechnung vom regionalen Microsoft-Vertriebsbüro gestellt wird, steht "Microsoft Regional Sales" auf Ihrer Rechnung. In diesem Fall wird Ihnen normalerweise keine Verbrauchs- oder Mehrwertsteuer in Rechnung gestellt, es sei denn, es handelt sich um einen Inlandsverkauf.
-  
-Wenn die Rechnung von einem anderen Standort ausgestellt wird, gilt die lokale Mehrwertsteuer. Folgendes wird [auf Ihrer Rechnung angezeigt](view-your-bill-or-invoice.md):
-  
-- Singapur für Singapur
-
-- Korea für Korea
-
-- Japan für Japan
-
-- Taiwan für Taiwan
-
-### <a name="north-central-and-south-america"></a>Nord-, Mittel- und Südamerika
-
-In den USA und Kanada gelten, je nach Standort, verschiedene Steuersätze. Wenn Sie sich in Puerto Rico befinden, wird die lokale Mehrwertsteuer angewendet.
-  
-Wenn Ihre Abrechnung von der Microsoft Corporation ausgeführt wird ([Siehe Rechnung](view-your-bill-or-invoice.md)), und Sie sich für Microsoft 365 außerhalb der USA, Kanadas und Puerto Ricos angemeldet haben, wird die Steuer in der Regel nicht belastet.
+2. Wählen Sie auf der Registerkarte **Produkte** das Abonnement aus, das Sie aktualisieren möchten.
+3. Wählen Sie auf der Seite Abonnementdetails im Abschnitt **Dienstnutzungsadresse** die Option **Dienst Verwendungs Adresse bearbeiten**aus.
+4. Geben Sie im Bereich **Dienst Verwendungs Adresse bearbeiten** im Feld MwSt.- **Nummer** Ihre Umsatzsteuer-ID, einschließlich des Präfixes, und ohne Leerzeichen ein.
+5. Klicken Sie auf **Speichern**.
 
 ## <a name="how-taxes-are-calculated"></a>Berechnung der Steuern
 
 Mehrwertsteuern werden anhand des VK-Preises berechnet und dann aggregiert.
 
-Zum Beispiel:
+Beispiel:
 
 >*(Einheitspreis X Steuersatz) X Quantity = Gesamtumsatz Steuer*
 
-- oder -
+oder
 
 >($1,29 X 0,095) X 100 = $12,25
 
@@ -171,14 +157,14 @@ Zum Beispiel:
 
 Wenn Sie sich für den steuerfreien Status in Ihrem Markt qualifizieren, [Starten Sie eine Serviceanfrage](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) , um den Steuerbefreiungsstatus für Ihre Organisation festzulegen.
 
-Halten Sie die folgende Dokumentation für Sie parat:
-
 |Land oder Gebietsschema | Dokumentation |
 |------------------|----------------|
-| Vereinigte Staaten | Mehrwertsteuer-Befreiungs Zertifikat |
 | Kanada | Befreiungs Zertifikat (oder gleichwertiges Genehmigungsschreiben) |
-| Irland | 13B/56A Tax Exemption Certificate|
+| Chile | Iva-Status/Rut (Registro Unico tributario) |
+| Kolumbien | Iva-Status/Rut (Registro Unico tributario) |
 | Internationale Organisationen, die von der Mehrwertsteuer freigestellt werden können | Zertifizierung/Brief Bestätigung von lokalen Steuerbehörden |
+| Irland | 13B/56A Tax Exemption Certificate|
+| Vereinigte Staaten | Mehrwertsteuer-Befreiungs Zertifikat |
 | Puerto Rico | Certificado de compras Exentas |
   
 ## <a name="related-content"></a>Verwandte Inhalte

@@ -3,7 +3,6 @@ title: Exchange 2010 – Roadmap zum Supportende
 ms.author: dstrome
 author: dstrome
 manager: laurawi
-ms.date: 09/16/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,22 +12,22 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 nähert sich dem Ende der Unterstützung. Verwenden Sie diese Planungs Roadmap als Leitfaden für die Vorbereitung des Upgrades auf Exchange Online oder eine neuere Version von Exchange Server lokal.
-ms.openlocfilehash: 128abd1e98c3e9d1ec4dd8a58683ee0ab019af18
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: dbae3fba3ddbff016e0e9434db4af6ca0a046b0d
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950820"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464252"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Exchange 2010 – Roadmap zum Supportende
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Am **13. Oktober 2020**werden Exchange Server 2010 das Ende der Unterstützung erreichen. Wenn Sie die Migration nicht bereits von Exchange 2010 zu Microsoft 365, Office 365 oder Exchange 2016 begonnen haben, ist es an der Zeit, mit der Planung zu beginnen.
+Exchange Server 2010 **hat am 13. Oktober 2020**das Ende der Unterstützung erreicht. Wenn Sie die Migration nicht bereits von Exchange 2010 zu Microsoft 365, Office 365 oder Exchange 2016 begonnen haben, ist es an der Zeit, mit der Planung zu beginnen.
 
 ## <a name="what-does-end-of-support-mean"></a>Was bedeutet das Ende der Unterstützung?
 
-Exchange Server, wie fast alle Microsoft-Produkte, verfügt über einen Support-Lebenszyklus, in dem wir neue Features, Fehlerbehebungen, Sicherheitsfixes usw. bereitstellen. Dieser Lebenszyklus dauert in der Regel 10 Jahre ab dem Datum der ersten Produktversion, und das Ende dieses Lebenszyklus wird als Ende der Unterstützung des Produkts bezeichnet. Wenn Exchange 2010 am 13. Oktober 2020 das Ende der Unterstützung erreicht, stellt Microsoft nicht mehr Folgendes bereit:
+Exchange Server, wie fast alle Microsoft-Produkte, verfügt über einen Support-Lebenszyklus, in dem wir neue Features, Fehlerbehebungen, Sicherheitsfixes usw. bereitstellen. Dieser Lebenszyklus dauert in der Regel 10 Jahre ab dem Datum der ersten Produktversion, und das Ende dieses Lebenszyklus wird als Ende der Unterstützung des Produkts bezeichnet. Da Exchange 2010 am 13. Oktober 2020 das Ende der Unterstützung erreicht hat, stellt Microsoft nicht mehr Folgendes bereit:
 
 - Technischer Support für Probleme, die auftreten können.
 - Fehlerbehebungen für entdeckte Probleme, die sich auf die Stabilität und Benutzerfreundlichkeit des Servers auswirken können.
@@ -49,8 +48,8 @@ Wenn Exchange 2010 das Ende der Unterstützung erreicht hat, ist dies eine gute 
 > [!IMPORTANT]
 > Wenn sich Ihre Organisation für die Migration von Postfächern zu Microsoft 365 entscheidet, aber Dirsync oder Azure AD eine Verbindung herstellen möchten, um die Verwaltung von Benutzerkonten aus lokalen Active Directory fortzusetzen, müssen Sie mindestens einen lokalen Exchange-Server beibehalten. Wenn der letzte Exchange-Server entfernt wird, können Sie in Exchange Online keine Änderungen an Exchange-Empfängern vornehmen. Dies liegt daran, dass die Autoritäts Quelle in Ihrem lokalen Active Directory bleibt und dass dort Änderungen vorgenommen werden müssen. In diesem Szenario stehen Ihnen die folgenden Optionen zur Ver:
 
-- (**Empfohlen**) Wenn Sie Ihre Postfächer zu Microsoft 365 migrieren und Ihre Server bis zum 13. Oktober 2020 aktualisieren können, verwenden Sie Exchange 2010, um eine Verbindung mit Microsoft 365 herzustellen und Postfächer zu migrieren. Migrieren Sie als nächstes Exchange 2010 zu Exchange 2016, und setzen Sie alle verbleibenden Exchange 2010-Server außer Betrieb.
-- Wenn Sie die Postfachmigration und das lokale Server Upgrade bis zum 13. Oktober 2020 nicht abschließen können, führen Sie zuerst ein Upgrade Ihrer lokalen Exchange 2010 Server auf Exchange 2016 durch, und verwenden Sie dann Exchange 2016, um eine Verbindung mit Microsoft 365 herzustellen und Postfächer zu migrieren.
+- (**Empfohlen**) Wenn Sie Ihre Postfächer zu Microsoft 365 migrieren und Ihre Server bis zum 13. Oktober 2020 aktualisieren konnten, verwenden Sie Exchange 2010, um eine Verbindung mit Microsoft 365 herzustellen und Postfächer zu migrieren. Migrieren Sie als nächstes Exchange 2010 zu Exchange 2016, und setzen Sie alle verbleibenden Exchange 2010-Server außer Betrieb.
+- Wenn Sie die Postfachmigration und das lokale Server Upgrade bis zum 13. Oktober 2020 nicht abschließen konnten, führen Sie zuerst ein Upgrade Ihrer lokalen Exchange 2010 Server auf Exchange 2016 durch, und verwenden Sie dann Exchange 2016, um eine Verbindung mit Microsoft 365 herzustellen und Postfächer zu migrieren.
 
 > [!NOTE]
 > Während Sie ein wenig komplizierter sind, können Sie auch Postfächer zu Microsoft 365 migrieren, während Sie Ihre lokalen Exchange 2010 Server zu Exchange 2016 migrieren.
@@ -65,7 +64,7 @@ In den folgenden Abschnitten werden die einzelnen Optionen näher erläutert.
 
 Die Migration Ihrer e-Mail-Adresse zu Microsoft 365 ist die beste und einfachste Option, die Sie beim Ruhestand Ihrer Exchange 2010-Bereitstellung unterstützt. Mit einer Migration zu Microsoft 365 können Sie einen einzelnen Hop von der alten Technologie zu modernen Funktionen machen, wie beispielsweise:
 
-- Compliance-Funktionen wie Aufbewahrungsrichtlinien, in-situ-und Beweissicherungsverfahren, in-situ-eDiscovery und vieles mehr.
+- Compliance-Funktionen wie Aufbewahrungsrichtlinien, In-Place und Beweissicherungsverfahren, in-situ-eDiscovery und vieles mehr.
 - Microsoft Teams
 - Power BI
 - Posteingang mit Relevanz

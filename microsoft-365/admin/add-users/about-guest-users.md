@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie die Liste "Gastbenutzer" im Microsoft 365 Admin Center aufgefüllt wird.
-ms.openlocfilehash: b22b23e27c1a0cbb241b75a9a9953537f9fcb819
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: c698332351d525c12659849826d9e822351a347d
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44786249"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48463978"
 ---
 # <a name="guest-users-in-microsoft-365-admin-center"></a>Gastbenutzer im Microsoft 365 Admin Center
 
@@ -41,7 +41,7 @@ Informationen zum Hinzufügen eines Gasts zu Microsoft Teams finden Sie im folge
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
-## <a name="join-a-team-as-a-guest"></a>Als Gast an einem Team teilnehmen
+## <a name="join-a-team-as-a-guest"></a>Treten Sie einem Team als Gast bei
 
 Um als Gast an einem Team teilzunehmen, sehen Sie sich das folgende Video an:<br><br>
 
@@ -51,7 +51,7 @@ Um als Gast an einem Team teilzunehmen, sehen Sie sich das folgende Video an:<br
 
 Informationen zum Hinzufügen von Gastbenutzern in der Azure-Active Directory finden Sie unter [Hinzufügen von Gast](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)Benutzern.
 
-Wenn Sie einen Benutzer hinzufügen, können Sie diese auch einer Gruppe zuweisen oder Ihnen Zugriff auf eine app in Ihrer Organisation gewähren. Nachdem Sie eine Benutzer im Azure AD-Portal hinzugefügt haben, wird dieser Benutzer auch auf der Seite "Gastbenutzer" im Microsoft 365 Admin Center aufgeführt.
+Wenn Sie einen Benutzer hinzufügen, können Sie diese auch einer Gruppe zuweisen oder Ihnen Zugriff auf eine app in Ihrer Organisation gewähren. Nachdem Sie einen Benutzer im Azure AD-Portal hinzugefügt haben, wird dieser Benutzer auch auf der Seite "Gastbenutzer" im Microsoft 365 Admin Center aufgeführt.
 Nachdem ein Benutzer der Liste "Gastbenutzer" hinzugefügt wurde, kann er Gruppen im Microsoft 365 Admin Center [hinzugefügt](../create-groups/manage-guest-access-in-groups.md#add-guests-to-a-microsoft-365-group-from-the-admin-center) werden.
 
 Weitere Informationen finden Sie unter [Hinzufügen von Gastbenutzern in loser Schüttung](https://docs.microsoft.com/azure/active-directory/b2b/tutorial-bulk-invite) , um mehrere Gäste zur Zusammenarbeit mit Ihrer Organisation einzuladen.

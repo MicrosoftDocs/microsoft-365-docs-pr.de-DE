@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Die Roadmap zum Einrichten der Client-und Server Software für Microsoft 365.
-ms.openlocfilehash: 898464222b8296cee3ab12fe7351295f39a23736
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d3401baa09d27ff9753f9a45ecb537c67701c0e9
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950568"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464408"
 ---
 # <a name="client-and-server-software-roadmap-for-microsoft-365"></a>Roadmap für Client-und Server Software für Microsoft 365
 
@@ -60,7 +60,7 @@ Microsoft 365 Apps for Enterprise installiert Updates automatisch und nutzt clou
 
 ### <a name="office-2010"></a>Office 2010
 
-Für Versionen von Office in Office 2010 wird der Support am **13. Oktober 2020** eingestellt. Weitere Informationen finden Sie unter [Office 2010 – Roadmap zum Ende des Supports](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap).
+Für Versionen von Office in der Office 2010-Version endete die Unterstützung am **13. Oktober 2020**. Weitere Informationen finden Sie unter [Office 2010 – Roadmap zum Ende des Supports](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap).
 
 Anstatt Ihre Computer, auf denen Office 2010 ausgeführt wird, mit Office 2013 oder Office 2016 zu aktualisieren (beide müssen manuell aktualisiert werden), sollten Sie Folgendes in Betracht ziehen: 
 
@@ -117,7 +117,7 @@ Anstatt Ihre Serverprodukte in Office 2007 durch Serverprodukte in Office 2010, 
 
 ### <a name="office-server-2010"></a>Office Server 2010
 
-Der Support für [Exchange Server 2010](exchange-2010-end-of-support.md) endet am **13. Oktober 2020**.
+Die Unterstützung für [Exchange Server 2010](exchange-2010-end-of-support.md) endete am **13. Oktober 2020**.
 
 Der Support für [SharePoint Server 2010](upgrade-from-sharepoint-2010.md) endet am **13. April 2021**.
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Ermitteln Sie, ob Ihr Mandant und die Benutzer die Anforderungen erfüllen, damit Sie die zentrale Bereitstellung für die Bereitstellung von Office-Add-Ins verwenden können.
-ms.openlocfilehash: c3e306789f5b1c09e835d8d2c5ebea668bf14874
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: c89cb801a5b2fcad87227feaf4228b0dcabcf609
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235418"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464050"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Ermitteln, ob die zentrale Bereitstellung von Add-Ins für Ihre Organisation funktioniert
 
@@ -46,7 +46,7 @@ Es kann bis zu 24 Stunden dauern, bis ein Add-in für alle Benutzer für den Cli
 ## <a name="requirements"></a>Anforderungen
 
 Für die zentrale Bereitstellung von Add-Ins müssen die Benutzer Microsoft 365-Apps für Enterprise oder Microsoft 365 Business Premium verwenden (und mit ihrer Organisations-ID bei Office angemeldet sein) und über Exchange Online und aktive Exchange Online-Postfächer verfügen. Ihr Abonnement Verzeichnis muss sich entweder in oder im Verbund mit Azure Active Directory befinden.
-Sie können die spezifischen Anforderungen für Office und Exchange unten anzeigen oder die[Kompatibilitätsprüfung für die zentrale Bereitstellung](#centralized-deployment-compatibility-checker)verwenden.
+Sie können die spezifischen Anforderungen für Office und Exchange unten anzeigen oder die [Kompatibilitätsprüfung für die zentrale Bereitstellung](#centralized-deployment-compatibility-checker)verwenden.
 
 Folgendes wird von der zentralen Bereitstellung nicht unterstützt:
   
@@ -134,7 +134,8 @@ Sobald die Ausführung des Tools abgeschlossen ist, wird eine Ausgabedatei im CS
     
 - Unterstütztes Postfach - Wenn das Postfach für OAuth aktiviert ist
 
-
+> [!NOTE]
+> Die mehrstufige Authentifizierung wird bei Verwendung des PowerShell-Moduls für die zentrale Bereitstellung nicht unterstützt.
   
 ## <a name="user-and-group-assignments"></a>Benutzer- und Gruppenzuordnungen
 
@@ -171,4 +172,3 @@ Wenn Sie oder Ihre Benutzer Probleme beim Laden des Add-ins bei der Verwendung v
 |Office  <br/> | Charles/Fiddler-Protokolle  <br/>  Mandanten-ID ( [So wird's gemacht](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id.aspx))  <br/>  CorrelationId. Zeigen Sie die Quelle einer der Office-Seiten an, und suchen Sie nach dem Wert der Korrelations-ID, und senden Sie ihn an Support:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |Rich Clients (Windows, Mac)  <br/> | Charles/Fiddler-Protokolle  <br/>  Erstellen von Nummern der Client-app (vorzugsweise als Screenshot aus **Datei/Konto**)  <br/> |
    
-
