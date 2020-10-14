@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie mehr über die Fall Limits, Indizierungs Grenzwerte und Such Grenzwerte, die für die erweiterte eDiscovery-Lösung in Microsoft 365 gelten.
-ms.openlocfilehash: c139480f18e0e6d94aae5a38d5fd636fbc62b2dc
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 7d676b568c7e4cddedeff02c62b4645619d53357
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358473"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446252"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Grenzwerte in Advanced eDiscovery
 
@@ -38,6 +38,8 @@ In der folgenden Tabelle sind die Grenzwerte für Fälle und Überprüfungs Sät
 |Die Gesamtmenge an Daten, die in alle Überprüfungs Sätze in der Organisation pro Tag geladen wurden.<br/> |2 TB <br/> |
 |Maximale Anzahl von Lasten Sätzen pro Fall.  <br/> |200 <br/> |
 |Maximale Anzahl von Überprüfungs Sätzen pro Fall.  <br/> |20 <br/> |
+|Maximale Anzahl von Transpondergruppen pro Fall.  <br/> |1000 <br/> |
+|Maximale Anzahl von Tags pro Fall.  <br/> |1000 <br/> |
 |||
 
 ## <a name="indexing-limits"></a>Indizierungsgrenzwerte
@@ -60,9 +62,9 @@ Die in diesem Abschnitt beschriebenen Grenzwerte beziehen sich auf die Verwendun
 |:-----|:-----|
 |Maximale Anzahl von Postfächern oder Websites, die in einer einzigen Suche durchsucht werden können.  <br/> |Keine Begrenzung  <br/> |
 |Maximale Anzahl von Suchvorgängen, die gleichzeitig ausgeführt werden können.  <br/> |Keine Begrenzung  <br/> | 
-|Maximale Anzahl von Suchvorgängen, die ein einzelner Benutzer gleichzeitig starten kann.  <br/> |10    <br/> | 
+|Maximale Anzahl von Suchvorgängen, die ein einzelner Benutzer gleichzeitig starten kann.  <br/> |10   <br/> | 
 |Maximale Anzahl von Zeichen für eine Suchabfrage (einschließlich Operatoren und Bedingungen).  <br/> |**Postfächer**: 10.000<br/>**Websites**: 4.000 beim Durchsuchen aller Websites oder 2.000 bei der Suche bis zu 20 Websites <sup>2</sup> <br/> |
-|Minimale Anzahl von Alphazeichen für Präfix Platzhalter; Beispiel ** \* eins** oder **festgelegt \* **. <br/> |3   <br/> |  
+|Minimale Anzahl von Alphazeichen für Präfix Platzhalter; Beispiel ** \* eins** oder **festgelegt \* **. <br/> |3  <br/> |  
 |Maximale Anzahl von Varianten, die zurückgegeben werden, wenn Präfix Platzhalter verwendet wird, um nach einem exakten Ausdruck zu suchen oder wenn ein Präfix Platzhalter und der **near** -Boolesche Operator verwendet werden.  <br/> |10.000 <sup>3</sup> <br/> |
 |Maximale Anzahl von Elementen pro Benutzerpostfach, die auf der Vorschauseite für Suchvorgänge angezeigt werden. Die neuesten Elemente werden angezeigt.   <br/> |100  <br/> |
 |Maximale Anzahl von Elementen aus allen Postfächern, die auf der Vorschauseite für Suchvorgänge angezeigt werden.  <br/> |1,000  <br/> |

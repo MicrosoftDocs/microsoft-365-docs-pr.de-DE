@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Unabhängig davon, ob neue Lösungen zum Compliance Center hinzugefügt werden, vorhandene Funktionen auf der Grundlage Ihres Feedbacks aktualisiert werden oder eine aktualisierte Dokumentation bereitgestellt wird, hilft Ihnen Microsoft 365, die ständig wechselnde Compliance-Landschaft zu überwachen. Finden Sie heraus, was wir diesen Monat vorhaben.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c33e136be55ea60f1e5954d4713b219045b1f0eb
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: b124e4c4d120d981766493034aba9bc6eefa7d9c
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398526"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446558"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Neuerungen in Microsoft 365 Compliance
 
@@ -170,7 +170,7 @@ Netzwerk Upload ist jetzt in den Vereinigten Arabischen Emiraten verfügbar.
 
 ### <a name="sensitivity-labels-new-privacy-option"></a>Vertraulichkeits Bezeichnungen: neue Datenschutzoption
 
-Wenn Sie [Standort-und Gruppeneinstellungen](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings) für eine Bezeichnung konfigurieren, können Sie nun die Option Datenschutz auf **None festlegen – Benutzer auswählen, wer auf die Website zugreifen kann**. Dies ist hilfreich, wenn Sie Inhalte im Container mithilfe einer Vertraulichkeits Bezeichnung schützen möchten, aber Benutzer weiterhin die Datenschutzeinstellung selbst konfigurieren können.
+Wenn Sie [Standort-und Gruppeneinstellungen](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings) für eine Bezeichnung konfigurieren, können Sie nun die Option Datenschutz auf **None festlegen – Benutzer auswählen, wer auf die Website zugreifen kann**. Dies ist hilfreich, wenn Sie Inhalte im Container mithilfe einer Vertraulichkeits Bezeichnung schützen möchten, aber Benutzer weiterhin die Datenschutzeinstellung selbst konfigurieren können.
 
 ## <a name="april-2020"></a>April 2020
 

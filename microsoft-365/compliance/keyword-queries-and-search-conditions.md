@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie mehr über e-Mail-und Dateieigenschaften, die Sie im Office 365 Security & Compliance Center durchsuchen können.
-ms.openlocfilehash: fb3d0b9d941658f2613344d00984dbe7846565a6
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 5445c9485d7076b3819c796028a311a523a92dde
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662299"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446194"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Stichwortabfragen und Suchbedingungen für die Inhaltssuche
 
@@ -54,11 +54,11 @@ In der folgenden Tabelle sind die Eigenschaften von e-Mail-Nachrichten aufgefüh
   
 |**Eigenschaft**|**Beschreibung der Eigenschaft**|**Beispiele**|**Von den Beispielen zurückgegebene Suchergebnisse**|
 |:-----|:-----|:-----|:-----|
-|AttachmentNames|Die Namen der an eine E-Mail angefügten Dateien.|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> attachmentnames:.pptx|Nachrichten, an die eine Datei namens Jahresbericht.ppt angehängt ist. Im zweiten Beispiel werden, wenn Sie das Platzhalterzeichen verwenden, Nachrichten mit dem Wort "Jahresbericht" im Dateinamen eines Anhangs zurückgegeben. Im dritten Beispiel werden alle Anlagen mit der PPTX-Dateierweiterung zurückgegeben.|
+|AttachmentNames|Die Namen der an eine E-Mail angefügten Dateien.|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> `attachmentnames:.pptx` |Nachrichten, an die eine Datei namens Jahresbericht.ppt angehängt ist. Im zweiten Beispiel werden, wenn Sie das Platzhalterzeichen verwenden, Nachrichten mit dem Wort "Jahresbericht" im Dateinamen eines Anhangs zurückgegeben. Im dritten Beispiel werden alle Anlagen mit der PPTX-Dateierweiterung zurückgegeben.|
 |Bcc|Das Feld "Bcc" einer e-Mail-Nachricht. <sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|In allen Beispielen werden Nachrichten mit dem Namen "Pilar Pinilla" im Bcc-Feld zurückgegeben.|
 |Kategorie| Die Kategorien, nach denen gesucht wird. Kategorien können von Benutzern mithilfe von Outlook oder Outlook im Internet (früher bekannt als Outlook Web App) definiert werden. Die folgenden Werte sind möglich:  <br/><br/>  blau  <br/>  grün  <br/>  orange  <br/>  violett  <br/>  rot  <br/>  gelb|`category:"Red Category"`|Nachrichten, denen in den Quellpostfächern die rote Kategorie zugewiesen wurde.|
 |Cc|Das Feld "CC" einer e-Mail-Nachricht. <sup>1</sup>|`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`|In beiden Beispielen werden Nachrichten mit Pilar Pinilla im Feld CC angegeben.|
-|Folderid|Die Ordner-ID (GUID) eines bestimmten Postfachordners. Wenn Sie diese Eigenschaft verwenden, müssen Sie das Postfach durchsuchen, in dem sich der angegebene Ordner befindet. Es wird nur der angegebene Ordner durchsucht. Alle Unterordner im Ordner werden nicht durchsucht. Zum Durchsuchen von Unterordnern müssen Sie die Folder-Eigenschaft für den Unterordner verwenden, den Sie durchsuchen möchten.  <br/> Weitere Informationen zum Suchen nach der Folder ID-Eigenschaft und zum Abrufen der Ordner-IDs für ein bestimmtes Postfach mithilfe eines Skripts finden Sie unter [Verwenden der Inhaltssuche für gezielte Auflistungen](use-content-search-for-targeted-collections.md).|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000`  <br/> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|Im ersten Beispiel werden alle Elemente im angegebenen Postfachordner zurückgegeben. Im zweiten Beispiel werden alle Elemente im angegebenen Postfachordner zurückgegeben, die von garthf@contoso.com gesendet oder empfangen wurden.|
+|Folderid|Die Ordner-ID (GUID) eines bestimmten Postfachordners. Wenn Sie diese Eigenschaft verwenden, müssen Sie das Postfach durchsuchen, in dem sich der angegebene Ordner befindet. Es wird nur der angegebene Ordner durchsucht. Alle Unterordner im Ordner werden nicht durchsucht. Zum Durchsuchen von Unterordnern müssen Sie die foldercode-Eigenschaft für den Unterordner verwenden, den Sie durchsuchen möchten.  <br/> Weitere Informationen zum Suchen nach der Folder ID-Eigenschaft und zum Abrufen der Ordner-IDs für ein bestimmtes Postfach mithilfe eines Skripts finden Sie unter [Verwenden der Inhaltssuche für gezielte Auflistungen](use-content-search-for-targeted-collections.md).|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000`  <br/> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|Im ersten Beispiel werden alle Elemente im angegebenen Postfachordner zurückgegeben. Im zweiten Beispiel werden alle Elemente im angegebenen Postfachordner zurückgegeben, die von garthf@contoso.com gesendet oder empfangen wurden.|
 |Von|Der Absender einer E-Mail-Nachricht.<sup>1</sup>|`from:pilarp@contoso.com`  <br/> `from:contoso.com`|Nachrichten, die vom angegebenen Benutzer oder einer bestimmten Domäne gesendet wurden.|
 |HasAttachment|Gibt an, ob eine Nachricht eine Anlage enthält. Verwenden Sie die Werte **true** oder **false**.|`from:pilar@contoso.com AND hasattachment:true`|Nachrichten, die vom angegebenen Benutzer mit Anlagen gesendet werden.|
 |Wichtigkeit|Die Wichtigkeit einer E-Mail-Nachricht, die ein Absender festlegen kann, wenn er eine Nachricht sendet. Standardmäßig werden Nachrichten mit normaler Wichtigkeit gesendet, außer wenn der Absender die Wichtigkeit auf **Hoch** oder **Niedrig** setzt.  |`importance:high`  <br/> `importance:medium`  <br/> `importance:low`|Nachrichten, deren Wichtigkeit auf "Hoch", "Mittel" bzw. "Niedrig" eingestellt ist.|
@@ -75,7 +75,18 @@ In der folgenden Tabelle sind die Eigenschaften von e-Mail-Nachrichten aufgefüh
 |||||
    
 > [!NOTE]
-> <sup>1</sup> für den Wert einer Recipient-Eigenschaft können Sie e-Mail-Adresse (auch als *Benutzerprinzipalname* oder UPN bezeichnet), Anzeigename oder Alias verwenden, um einen Benutzer anzugeben. Sie können z. B. annb@contoso.com, Annb oder „Ann Beebe“ verwenden, um den Benutzer Ann Beebe anzugeben.<br/><br/>Wenn Sie eine der Empfänger Eigenschaften durchsuchen (von, in, CC, BCC, Teilnehmern und Empfängern), versucht Microsoft 365, die Identität jedes Benutzers zu erweitern, indem Sie Sie in Azure Active Directory nach oben suchen.  Wenn der Benutzer in Azure Active Directory gefunden wird, wird die Abfrage erweitert, um die e-Mail-Adresse des Benutzers (oder UPN), den Alias, den Anzeigenamen und legacyExchangeDN einzuschließen.<br/><br/>Beispielsweise wird eine Abfrage wie `participants:ronnie@contoso.com` Erweitert zu `participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"` .<br/><br/>Um die Empfänger Erweiterung zu verhindern, können Sie ein Platzhalterzeichen (Sternchen) am Ende der e-Mail-Adresse in der Suchabfrage hinzufügen. Beispiel: `participants:ronnie@contoso.com*` .
+> <sup>1</sup> für den Wert einer Recipient-Eigenschaft können Sie e-Mail-Adresse (auch als *Benutzerprinzipalname* oder UPN bezeichnet), Anzeigename oder Alias verwenden, um einen Benutzer anzugeben. Sie können z. B. annb@contoso.com, Annb oder „Ann Beebe“ verwenden, um den Benutzer Ann Beebe anzugeben.
+
+### <a name="recipient-expansion"></a>Empfänger Erweiterung
+
+Beim Durchsuchen einer der Empfänger Eigenschaften (von, an, CC, BCC, Teilnehmern und Empfängern) versucht Microsoft 365, die Identität jedes Benutzers zu erweitern, indem er Sie in Azure Active Directory (Azure AD) aufsucht.  Wenn der Benutzer in Azure AD gefunden wird, wird die Abfrage erweitert, um die e-Mail-Adresse des Benutzers (oder UPN), den Alias, den Anzeigenamen und legacyExchangeDN einzuschließen. Beispielsweise wird eine Abfrage wie `participants:ronnie@contoso.com` Erweitert zu `participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"` .
+
+Um die Empfänger Erweiterung zu verhindern, fügen Sie am Ende der e-Mail-Adresse ein Jokerzeichen (Sternchen) hinzu, und verwenden Sie einen reduzierten Domänennamen; Stellen Sie beispielsweise sicher, dass `participants:"ronnie@contoso*"` die e-Mail-Adresse mit doppelten Anführungszeichen umgeben ist.
+
+Beachten Sie jedoch, dass das verhindern der Empfänger Erweiterung in der Suchabfrage dazu führen kann, dass relevante Elemente nicht in den Suchergebnissen zurückgegeben werden. E-Mail-Nachrichten in Exchange können in den Empfängerfeldern mit unterschiedlichen Textformaten gespeichert werden. Die Empfänger Erweiterung dient dazu, diese Tatsache zu verringern, indem Nachrichten zurückgegeben werden, die möglicherweise unterschiedliche Textformate enthalten. Das verhindern der Empfänger Erweiterung kann daher dazu führen, dass die Suchabfrage nicht alle Elemente zurückgibt, die möglicherweise für Ihre Untersuchung relevant sind.
+
+> [!NOTE]
+> Wenn Sie die von einer Suchabfrage zurückgegebenen Elemente aufgrund der Empfänger Erweiterung überprüfen oder reduzieren müssen, sollten Sie die Verwendung von Advanced eDiscovery in Frage stellen. Sie können nach Nachrichten suchen (wobei Sie die Empfänger Erweiterung nutzen), Sie zu einem Überprüfungs Satzes hinzufügen und dann mithilfe von Abfrage Sätzen oder filtern die Ergebnisse überprüfen oder einschränken. Weitere Informationen finden Sie unter [Sammeln von Daten für einen Fall](collecting-data-for-ediscovery.md) und [Abfragen der Daten in einem Überprüfungs Satzes](review-set-search.md).
 
 ## <a name="searchable-site-properties"></a>Durchsuchbare Websiteeigenschaften
 
@@ -99,7 +110,7 @@ Eine vollständige Liste der SharePoint-Eigenschaften, die durchsucht werden kö
 |SharedWithUsersOWSUser|Dokumente, die für den angegebenen Benutzer freigegeben wurden und auf der Seite für **mich freigegeben** auf der OneDrive für Unternehmen Website des Benutzers angezeigt werden. Dabei handelt es sich um Dokumente, die von anderen Personen in Ihrer Organisation explizit für den angegebenen Benutzer freigegeben wurden. Beim Exportieren von Dokumenten, die einer Suchabfrage entsprechen, die die SharedWithUsersOWSUser-Eigenschaft verwendet, werden die Dokumente aus dem ursprünglichen Inhaltsspeicherort der Person exportiert, die das Dokument gemeinsam mit dem angegebenen Benutzer freigegeben hat. Weitere Informationen finden Sie unter [Suchen nach Websiteinhalten, die in Ihrer Organisation freigegeben](#searching-for-site-content-shared-within-your-organization)sind.|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|In beiden Beispielen werden alle internen Dokumente zurückgegeben, die explizit für Garth fort freigegeben wurden und auf der Seite für **mich freigegeben** in Garth fort in OneDrive für Unternehmen Konto angezeigt werden.|
 |Website|Die URL einer Website oder Gruppen von Websites in Ihrer Organisation.|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|Im ersten Beispiel werden Elemente aus den OneDrive für Unternehmen Websites für alle Benutzer in der Organisation zurückgegeben. Im zweiten Beispiel werden Elemente von allen Teamwebsites zurückgegeben.|
 |Größe|Die Größe eines Elements in Byte.|`size>=1`  <br/> `size:1..10000`|Das erste Beispiel gibt Elemente zurück, die größer als 1 Byte sind. Das zweite Beispiel gibt Elemente von 1 bis 10.000 Bytes an Größe zurück.|
-|Title|Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in Microsoft Office Dokumenten angegeben sind. Er unterscheidet sich vom Dateinamen des Dokuments.|`title:"communication plan"`|Jedes Dokument, das den Ausdruck "Kommunikationsplan" in der Title Metadata-Eigenschaft eines Office-Dokuments enthält.|
+|Titel|Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in Microsoft Office Dokumenten angegeben sind. Er unterscheidet sich vom Dateinamen des Dokuments.|`title:"communication plan"`|Jedes Dokument, das den Ausdruck "Kommunikationsplan" in der Title Metadata-Eigenschaft eines Office-Dokuments enthält.|
 |||||
    
 ## <a name="searchable-contact-properties"></a>Durchsuchbare Kontakteigenschaften
@@ -128,7 +139,7 @@ In der folgenden Tabelle sind die Kontakteigenschaften aufgelistet, die indizier
 |OfficeLocation|Der Wert in der **Office** -oder **Office-Standort** Eigenschaft.|
 |OtherAddress|Der Wert für die **andere** Address-Eigenschaft.|
 |Nachname|Der Name in der **Last** Name-Eigenschaft.|
-|Title|Der Titel in der **Position Title** -Eigenschaft.|
+|Titel|Der Titel in der **Position Title** -Eigenschaft.|
 |||||
 
 ## <a name="searchable-sensitive-data-types"></a>Durchsuchbare vertrauliche Datentypen
@@ -195,7 +206,7 @@ Erstellen Sie eine Bedingung mithilfe allgemeiner Eigenschaften beim Durchsuchen
 |Absender/Autor|Bei E-Mails: Die Person, die eine Nachricht gesendet hat.  Für Dokumente die im Feld Autor zitierte Person aus Office-Dokumenten. Sie können mehr als einen Namen eingeben, getrennt durch Kommas. Mindestens zwei Werte sind durch den **or** -Operator logisch miteinander verbunden.|
 |Größe (in Byte)|Für e-Mail und Dokumente die Größe des Elements (in Byte).|
 |Betreff/Titel|Bei E-Mails: Der Text in der Betreffzeile einer Nachricht.   Für Dokumente der Titel des Dokuments. Wie bereits erläutert, ist die Title-Eigenschaft in Microsoft Office Dokumenten angegebene Metadaten. Sie können den Namen von mehr als einem Betreff/Titel eingeben, getrennt durch Kommas. Mindestens zwei Werte sind durch den **or** -Operator logisch miteinander verbunden.|
-|Konformitäts Bezeichnung|Für e-Mails und Dokumente werden Aufbewahrungs Bezeichnungen, die Nachrichten und Dokumenten automatisch durch automatische Bezeichnungsrichtlinien oder Aufbewahrungs Bezeichnungen zugewiesen wurden, die manuell von Benutzern zugewiesen wurden. Aufbewahrungs Bezeichnungen werden verwendet, um e-Mails und Dokumente für die Informationssteuerung zu klassifizieren und Aufbewahrungsregeln basierend auf den von der Bezeichnung definierten Einstellungen zu erzwingen. Sie können einen Teil des Namens der Aufbewahrungs Bezeichnung eingeben und einen Platzhalter verwenden oder den vollständigen Namen der Bezeichnung eingeben. Weitere Informationen zu Aufbewahrungs Bezeichnungen finden Sie unter Informationen [zu Aufbewahrungsrichtlinien und Aufbewahrungs Bezeichnungen](retention.md).|
+|Konformitäts Bezeichnung|Für e-Mails und Dokumente werden Aufbewahrungs Bezeichnungen, die Nachrichten und Dokumenten automatisch durch AutoLabel-Richtlinien oder Aufbewahrungs Bezeichnungen zugewiesen wurden, die manuell von Benutzern zugewiesen wurden. Aufbewahrungs Bezeichnungen werden verwendet, um e-Mails und Dokumente für die Informationssteuerung zu klassifizieren und Aufbewahrungsregeln basierend auf den von der Bezeichnung definierten Einstellungen zu erzwingen. Sie können einen Teil des Namens der Aufbewahrungs Bezeichnung eingeben und einen Platzhalter verwenden oder den vollständigen Namen der Bezeichnung eingeben. Weitere Informationen zu Aufbewahrungs Bezeichnungen finden Sie unter Informationen [zu Aufbewahrungsrichtlinien und Aufbewahrungs Bezeichnungen](retention.md).|
 |||
   
 ### <a name="conditions-for-mail-properties"></a>Bedingungen für E-Mail-Eigenschaften
@@ -222,7 +233,7 @@ Erstellen Sie eine Bedingung mithilfe von Dokumenteigenschaften beim Suchen nach
 |**Bedingung**|**Beschreibung**|
 |:-----|:-----|
 |Ursprung|Das Feld Autor aus Office-Dokumenten, das bleibt, wenn ein Dokument kopiert wird. Wenn ein Benutzer beispielsweise ein Dokument erstellt und die e-Mails an eine andere Person weitergeben, die es dann in SharePoint hoch lädt, behält das Dokument weiterhin den ursprünglichen Autor bei.|
-|Title|Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in Office-Dokumenten angegeben sind. Er unterscheidet sich von dem Dateinamen des Dokuments.|
+|Titel|Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in Office-Dokumenten angegeben sind. Er unterscheidet sich von dem Dateinamen des Dokuments.|
 |Erstellt|Das Datum, an dem ein Dokument erstellt wird.|
 |Zuletzt geändert|Das Datum, an dem ein Dokument zuletzt geändert wurde.|
 |Dateityp|Die Erweiterung einer Datei; beispielsweise docx, 1, PPTX oder xlsx. Dies ist die gleiche Eigenschaft wie die FileExtension-Website Eigenschaft.|
