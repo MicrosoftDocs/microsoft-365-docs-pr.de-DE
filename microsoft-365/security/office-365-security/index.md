@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Sicherheit in Office 365, von EoP bis ATP-Pläne 1 und 2, Standard mäßige und strenge Sicherheitskonfigurationen und vieles mehr. Verstehen Sie, was Sie haben und wie Sie Ihre Eigenschaften sichern.
-ms.openlocfilehash: 94fce99d029d21524bc60af4622fda7ee38980e7
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 256a24a7816a40e1bd60c687a875f84e605f5208
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430692"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456471"
 ---
 # <a name="office-365-security-overview"></a>Office 365 Sicherheit (Übersicht)
 
@@ -88,7 +88,7 @@ beginnend mit **Exchange Online Schutz**:
 |---------|---------|---------|
 | Zu den Technologien gehören:<ul><li>Spam</li><li>phishingfilterrichtlinie</li><li>Schadsoftware</li><li>Massen-e-Mail</li><li>Spoof Intelligence</li><li>Identitätswechsel Erkennung</li><li>Administrator Quarantäne</li><li>Administrator-und Benutzerübermittlungen falsch positiver und falsch negativer Ergebnisse</li><li>Allow/Block für URLs und Dateien</li><li>Berichte</li></u1>|<li>Durchsuchen von Überwachungsprotokollen</li><li>Nachrichtenablaufverfolgung</li>|<li>Automatische Bereinigung ohne Stunden (zap)</li><li>Einschränkung und Testen von Zulassungs-und Sperrlisten</li>|
 
-Wenn Sie in EoP graben möchten, wechseln Sie **[zu diesem Artikel](https://review.docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-21vianet&branch=tp_EOPOverview)**.
+Wenn Sie in EoP graben möchten, wechseln Sie **[zu diesem Artikel](https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-worldwide#:~:text=Exchange%20Online%20Protection%20%28EOP%29%20is%20the%20cloud-based%20filtering,is%20also%20available%20in%20the%20following%20on-premises%20scenarios%3A)**.
 
 Da diese Produkte kumulativ sind, wenn Sie ATP P1 auswerten und beschließen, es zu abonnieren, fügen Sie diese Fähigkeiten hinzu.
 

@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: Ändern Sie das Farbdesign ihrer Buchungsseite in der Microsoft Reservations-app.
-ms.openlocfilehash: b33be0cb71998d45e50a66f89f98daa4af175865
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: c930c06300a83ee17f1efdaaf42761ddfdebdd7b
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962513"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456375"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>Anpassen und Veröffentlichen Ihrer Buchungsseite
 
@@ -32,25 +32,25 @@ Im folgenden Abschnitt erhalten Sie Informationen zum Einrichten Ihrer Buchungss
 
     Die interne Buchungsseite sieht wie folgt aus:
 
-    :::image type="content" source="media/bookings-Self-Service_2.jpg" alt-text="Die Seite "Buchungen"":::
+    :::image type="content" source="media/bookings-Self-Service_2.jpg" alt-text="Die Seite &quot;Buchungen&quot;":::
 
 - **Buchungsseite – Zugriffssteuerung: ein Microsoft 365-Konto aus meiner Organisation muss gebucht werden**  Wenn Sie diese Option auswählen, können Sie nur Personen in Ihrer Organisation ihre Seite anzeigen oder Dienste buchen. Der Zugriff auf die Seite wird über Anmeldeinformationen überprüft, um sicherzustellen, dass der Besucher einem Konto innerhalb des Mandanten angehört.
 
-- **Buchungsseite – Zugriffssteuerung: Deaktivieren der Indizierung der Buchungsseite für die direkte Suchmaschine** Mit dieser Einstellung wird verhindert, dass Ihre Seite in den Suchergebnissen für Google, Bing oder andere Suchmodule angezeigt wird. Wenn Sie dieses Kontrollkästchen deaktivieren, wird sichergestellt, dass der Zugriff auf die Seite auf den generierten Seiten Link limitiert ist.
+- **Buchungsseite – Zugriffssteuerung: Deaktivieren der Indizierung der Buchungsseite für die direkte Suchmaschine** Mit dieser Einstellung wird verhindert, dass Ihre Seite in den Suchergebnissen für Google, Bing oder andere Suchmodule angezeigt wird. Durch Aktivieren dieses Kontrollkästchens wird sichergestellt, dass der Zugriff auf die Seite auf den generierten Seiten Link limitiert ist.
 
-- **Einwilligung zur Verwendung von Kundendaten** Wenn diese Option ausgewählt ist, wird der Text, in dem die Zustimmung des Benutzers oder des Kunden für Ihre Organisation zur Verwendung der Daten angefordert wird, auf der Self-Service-Seite angezeigt. Das Feld muss vom Benutzer überprüft werden, damit die Buchung abgeschlossen werden kann.
+- **Einwilligung zur Verwendung von Kundendaten** Wenn diese Option ausgewählt ist, wird der Text, in dem die Zustimmung des Benutzers oder des Kunden für Ihre Organisation zur Verwendung der Daten angefordert wird, auf der Seite Self-Service angezeigt. Das Feld muss vom Benutzer überprüft werden, damit die Buchung abgeschlossen werden kann.
 
 - **Planungsrichtlinie**, **e-Mail-Benachrichtigungen**und **Mitarbeiter** alle diese Einstellungen ähneln denen, die für jeden Dienst auf der Registerkarte Dienste verfügbar sind.
 
 - **Verfügbarkeit** Dies ist eine Option zum Festlegen bestimmter Zeit-und Datumsbereiche für die Verfügbarkeit eines Diensts. Andernfalls werden Buchungen standardmäßig zu ihren Geschäftszeiten. Sie können die **Verfügbarkeits** Option hier für Szenarien wie Feiertage oder längere Zeiträume verwenden.
 
-- **Anpassen Ihrer Seite** Wählen Sie Farben und Logos aus, die auf der Self-Service-Seite angezeigt werden, beispielsweise für die Markenkonsistenz.
+- **Anpassen Ihrer Seite** Wählen Sie Farben und Logos aus, die auf der Self-Service Seite angezeigt werden, beispielsweise für die Markenkonsistenz.
 
-- **Regions-und Zeitzoneneinstellungen** Hier können Sie Ihre Zeitzone und die Spracheinstellungen für die Self-Service-Seite festlegen. Es wird empfohlen, Ihre lokale Zeitzone festzulegen. Für Besucher Ihrer Self-Service-Seite erkennt die Buchung automatisch Ihre lokalen Zeitzonen und zeigt Ihnen die Verfügbarkeit in ihren eigenen Zeitzonen an. Wenn beispielsweise ein Termin um 1:00 Uhr PST verfügbar ist, wird jemandem in CST angezeigt, dass die verfügbare Zeit als 3:00PM CST angezeigt wird.
+- **Regions-und Zeitzoneneinstellungen** Hier können Sie Ihre Zeitzone und die Spracheinstellungen für die Self-Service Seite festlegen. Es wird empfohlen, Ihre lokale Zeitzone festzulegen. Für Besucher Ihrer Self-Service Seite erkennt die Buchung automatisch Ihre lokalen Zeitzonen und zeigt Ihnen die Verfügbarkeit in ihren eigenen Zeitzonen an. Wenn beispielsweise ein Termin um 1:00 Uhr PST verfügbar ist, wird jemandem in CST angezeigt, dass die verfügbare Zeit als 3:00PM CST angezeigt wird.
 
-Sobald Sie Ihre Buchungsseite veröffentlicht haben, sehen Kunden ihre Buchungsseite, auf der Sie Termine mit Ihnen buchen können. Die für die Buchung von Pag bekundete Seite sieht wie folgt aus:
+Sobald Sie Ihre Buchungsseite veröffentlicht haben, sehen Kunden ihre Buchungsseite, auf der Sie Termine mit Ihnen buchen können. Die Seite mit der Kunden Buchung sieht wie folgt aus:
 
-:::image type="content" source="media/bookings-self-service.jpg" alt-text="Seite "kundenorientierte Buchung"":::
+:::image type="content" source="media/bookings-self-service.jpg" alt-text="Die Seite &quot;Buchungen&quot;":::
 
 ## <a name="publish-the-booking-page"></a>Veröffentlichen der Buchungsseite
 
@@ -70,4 +70,4 @@ Schauen Sie sich dieses Video an, oder führen Sie die folgenden Schritte aus, u
 
 ## <a name="unpublish-the-booking-page"></a>Aufheben der Veröffentlichung der Buchungsseite
 
-1. Wenn Sie die Veröffentlichung der Buchungsseite aufheben möchten, wechseln Sie zur Seite Buchung, und wählen Sie **Veröffentlichung**aufheben aus.
+ - Wenn Sie die Veröffentlichung der Buchungsseite aufheben möchten, wechseln Sie zur Seite Buchung, und wählen Sie **Veröffentlichung**aufheben aus.

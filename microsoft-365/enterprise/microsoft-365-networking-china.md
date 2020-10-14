@@ -12,17 +12,17 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - remotework
-- M365initiative-CoreDeploy
+- m365initiative-coredeploy
 search.appverid: MET150
 f1.keywords:
 - NOCSH
 description: Dieser Artikel enthält Anleitungen für die Optimierung der Netzwerkleistung für China-Benutzer globaler Microsoft 365-Mandanten.
-ms.openlocfilehash: 1f5f51991c5950d46c9d835a98bea86bcb354366
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 9b397e60b4a3b80563ed31731a6f7aa8e0bdab7f
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327509"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456363"
 ---
 # <a name="microsoft-365-global-tenant-performance-optimization-for-china-users"></a>Microsoft 365 globale Mandanten Leistungsoptimierung für Benutzer in China
 

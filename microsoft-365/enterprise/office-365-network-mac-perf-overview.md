@@ -13,14 +13,14 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-- M365initiative-CoreDeploy
+- m365initiative-coredeploy
 description: Übersicht über die Netzwerkkonnektivität im Microsoft 365 Admin Center (Vorschau)
-ms.openlocfilehash: d3ca55a4d8357d10b79bd8e87ddc3350efa2845e
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: fcc70f7c76b92ecf113158cdac8eecdfb9852351
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326877"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456423"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Netzwerkkonnektivität im Microsoft 365 Admin Center (Vorschau)
 
@@ -53,13 +53,13 @@ Windows-Standortdienst muss auf den Computern zugestimmt werden. Sie können die
 
 Sie müssen keine Speicherorte im Admin Center mit dieser Methode hinzufügen, da diese automatisch in der Stadt Lösung identifiziert werden. Es ist nicht möglich, mehrere Office-Standorte in einer Stadt mithilfe von Windows-Ortungsdiensten anzuzeigen. Die Standortinformationen werden auch auf die nächsten 300 Meter um 300 Meter abgerundet, bevor Sie hochgeladen werden, sodass keine präziseren Standortinformationen für den Zugriff möglich sind.
 
-Die Computer sollten WLAN-Netzwerke anstelle eines Ethernet-Kabels aufweisen. Computer mit einem Ethernet-Kabel verfügen nicht über genaue Standortinformationen.
+Die Computer sollten über Wi-Fi Netzwerk anstelle eines Ethernet-Kabels verfügen. Computer mit einem Ethernet-Kabel verfügen nicht über genaue Standortinformationen.
 
 Mess Muster und Office-Standorte sollten 24 Stunden nach der Erfüllung dieser Voraussetzungen angezeigt werden.
 
 ### <a name="2-add-locations-and-provide-lan-subnet-information"></a>2. Hinzufügen von Speicherorten und Bereitstellen von LAN-Subnetz-Informationen
 
-Für diese Option sind weder Windows-Standortdienste noch WLAN erforderlich. Sie müssen OneDrive für Windows, Version **20,161** oder höher, auf jedem Computer am Speicherort installiert haben.
+Für diese Option sind weder Windows-Standortdienste noch Wi-Fi erforderlich. Sie müssen OneDrive für Windows, Version **20,161** oder höher, auf jedem Computer am Speicherort installiert haben.
 
 Sie müssen auch Standorte auf der Seite Admin Center-Netzwerkkonnektivität hinzufügen oder diese aus einer CSV-Datei importieren. Die hinzugefügten Speicherorte müssen Ihre Office LAN-Subnetz-Informationen enthalten.
 

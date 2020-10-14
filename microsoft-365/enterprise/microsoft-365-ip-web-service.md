@@ -11,7 +11,7 @@ localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-- M365initiative-CoreDeploy
+- m365initiative-coredeploy
 f1.keywords:
 - CSH
 ms.custom:
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Erfahren Sie, wie Sie den Office 365-IP-Adress- und URL-Webdienst nutzen können, um den Netzwerkverkehr von Office 365 besser zu identifizieren und zu differenzieren.
-ms.openlocfilehash: 55ad3330e1d75b2d52af63076840bc6db7294884
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 03e6eac86e66db6f9e94c3f98e6d7b565ffa0f14
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327521"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456459"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Office 365-IP-Adress- und -URL-Webdienst
 
