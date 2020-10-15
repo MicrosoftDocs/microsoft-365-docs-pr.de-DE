@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Konfigurieren Sie Vertraulichkeitsbezeichnungen für die Verschlüsselung, die Ihre Daten durch Einschränken von Zugriff und Nutzung schützt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a734d6f71a943964775477199025180d1a41426e
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: 3856b92126d660ed0cdbfd1280d778ac9f072424
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408625"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446156"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Einschränken des Zugriffs auf Inhalte mithilfe von Vertraulichkeitsbezeichnungen zur Verschlüsselung
 
@@ -43,34 +43,39 @@ Wenn ein Dokument oder eine E-Mail verschlüsselt ist, wird Zugriff auf den Inha
 Als Administrator können Sie bei der Konfigurierung einer Vertraulichkeitsbezeichnung für die Zwecke der Verschlüsselung eine der folgenden Optionen auswählen:
 
 - **Berechtigungen sofort zuweisen**, um genau zu bestimmen, welche Benutzer welche Berechtigungen für Inhalte mit dieser Bezeichnung erhalten.
-- **Benutzern die Zuweisung von Berechtigungen überlassen**, wenn sie die Bezeichnung auf Inhalte anwenden. Auf diese Weise ermöglichen Sie Personen in Ihrer Organisation eine gewisse Flexibilität, die sie möglicherweise benötigen, um untereinander zusammenarbeiten und ihre Aufgaben erfüllen zu können.
+- **Let users assign permissions** when they apply the label to content. This way, you can allow people in your organization some flexibility that they might need to collaborate and get their work done.
 
 Die Verschlüsselungseinstellungen stehen zur Verfügung, wenn Sie im Microsoft 365 Compliance Center, Microsoft 365 Security Center oder Security & Compliance Center [eine Vertraulichkeitsbezeichnung erstellen](create-sensitivity-labels.md).
 
 ## <a name="understand-how-the-encryption-works"></a>Grundlegendes zur Funktionsweise der Verschlüsselung
 
-Die Verschlüsselung verwendet den Azure Rights Management-Dienst (Azure RMS) aus Azure Information Protection. Diese Schutzlösung verwendet Verschlüsselungs-, Identitäts- und Autorisierungsrichtlinien. Weitere Informationen hierzu finden Sie unter [Was ist Azure Rights Management?](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) in der Dokumentation zum Azure Information Protection. 
+Encryption uses the Azure Rights Management service (Azure RMS) from Azure Information Protection. This protection solution uses encryption, identity, and authorization policies. To learn more, see [What is Azure Rights Management?](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) from the Azure Information Protection documentation. 
 
-Wenn Sie diese Verschlüsselungslösung verwenden, wird mit der Funktion **Administrator** sichergestellt, dass autorisierte Personen und Dienste die Daten, die für Ihre Organisation verschlüsselt wurden, immer lesen und überprüfen können. Bei Bedarf kann die Verschlüsselung darauf entfernt oder geändert werden. Weitere Informationen hierzu finden Sie unter [Konfigurieren von Administratoren für Azure Dienste zur Informationssicherung und -Recherche oder Datenwiederherstellung](https://docs.microsoft.com/azure/information-protection/configure-super-users).
+When you use this encryption solution, the **super user** feature ensures that authorized people and services can always read and inspect the data that has been encrypted for your organization. If necessary, the encryption can then be removed or changed. For more information, see [Configuring super users for Azure Information Protection and discovery services or data recovery](https://docs.microsoft.com/azure/information-protection/configure-super-users).
 
 ## <a name="how-to-configure-a-label-for-encryption"></a>Konfigurieren einer Bezeichnung für die Verschlüsselung
 
-[Erstellen oder bearbeiten Sie eine Vertraulichkeitsbezeichnung](create-sensitivity-labels.md#create-and-configure-sensitivity-labels), und wählen Sie auf der Seite **Verschlüsselung** des Assistenten eine der folgenden Optionen aus:
+1. Befolgen Sie die allgemeinen Anweisungen für die [Erstellung oder Bearbeitung einer Vertraulichkeitsbezeichnung](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) und stellen Sie sicher, dass als Bereich für die Bezeichnung **Dateien und E-Mails** ausgewählt ist: 
+    
+    ![Bereichsoptionen bei Vertraulichkeitsbezeichnungen für Dateien und E-Mails](../media/filesandemails-scope-options-sensitivity-label.png)
 
-- **Keine**: Die Standardeinstellung für eine neue Bezeichnung. Es wird keine neue Verschlüsselung angewendet.
-- **Anwenden**: Aktiviert die Verschlüsselung und danach geben Sie die Verschlüsselungseinstellungen an.
-- **Entfernen**: Entfernt die Verschlüsselung, wenn das Dokument oder die E-Mail verschlüsselt ist.
+2. Stellen Sie dann auf der Seite **Schutzeinstellungen für Dateien und E-Mails auswählen** sicher, dass Sie**Dateien und E-Mails verschlüsseln** auswählen.
+    
+    ![Schutzoptionen bei Vertraulichkeitsbezeichnungen für Dateien und E-Mails](../media/protection-options-sensitivity-label.png)
 
-> [!NOTE]
-> Die Option **Entfernen** wird nur vom Azure Information Protection-Clients mit einheitlichen Bezeichnungen unterstützt. Wenn Sie die integrierte Bezeichnung verwenden, wird in Office-Apps und Diensten eine Bezeichnung mit dieser Option angezeigt, und wenn diese Option ausgewählt wurde, ist das Verschlüsselungsverhalten identisch mit **Keine**.
-
-Konfigurieren der Verschlüsselungsoptionen:
-
-![Optionen für die Vertraulichkeitsbezeichnung zur Verschlüsselung](../media/encrytion-options-sensitivity-label.png)
+4.  Wählen Sie auf der Seite **Verschlüsselung** des Assistenten eine der folgenden Optionen aus:
+    
+    - **Verschlüsselung entfernen, wenn die Datei verschlüsselt ist**: Weitere Informationen zu diesem Szenario finden Sie in dem Abschnitt [Was geschieht mit einer bestehenden Verschlüsselung, wenn eine Bezeichnung angewendet wird?](#what-happens-to-existing-encryption-when-a-labels-applied). Es ist wichtig zu wissen, dass diese Einstellung zu einer Vertraulichkeitsbezeichnung führen kann, die Benutzer ohne ausreichende Berechtigungen unter Umständen nicht anwenden können.
+    
+    - **Konfigurieren der Verschlüsselungseinstellungen**: Die Verschlüsselung wird aktiviert, und die Verschlüsselungseinstellungen werden angezeigt:
+        
+        ![Optionen für die Vertraulichkeitsbezeichnung zur Verschlüsselung](../media/encrytion-options-sensitivity-label.png)
+        
+        Anweisungen für die Einstellungen finden Sie in dem folgenden Abschnitt [Konfigurieren von Verschlüsselungseinstellungen](#configure-encryption-settings).
 
 ### <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>Was mit einer vorhandenen Verschlüsselung geschieht, wenn eine Bezeichnung angewendet wird
 
-Wenn eine Vertraulichkeitsbezeichnung auf unverschlüsselte Inhalte angewendet wird, ist das Ergebnis der Verschlüsselungsoptionen, die Sie auswählen können, selbsterklärend. Wenn die Verschlüsselung beispielsweise auf **Keine** festgelegt ist, bleibt der Inhalt unverschlüsselt.
+Wenn eine Vertraulichkeitsbezeichnung auf unverschlüsselte Inhalte angewendet wird, ist das Ergebnis der Verschlüsselungsoptionen, die Sie auswählen können, selbsterklärend. Wenn Sie beispielsweise **Dateien und E-Mails verschlüsseln** nicht ausgewählt haben, bleiben die Inhalte unverschlüsselt.
 
 Allerdings ist der Inhalt möglicherweise bereits verschlüsselt. Ein anderer Benutzer kann beispielsweise Folgendes angewendet haben:
 
@@ -80,7 +85,7 @@ Allerdings ist der Inhalt möglicherweise bereits verschlüsselt. Ein anderer Be
 
 In der folgenden Tabelle wird dargestellt, was mit einer vorhandenen Verschlüsselung geschieht, wenn eine Vertraulichkeitsbezeichnung auf diese Inhalte angewendet wird:
 
-| |**Verschlüsselung: Keine**|**Verschlüsselung: Anwenden**|**Verschlüsselung: Entfernen**|
+| |**Verschlüsselung: nicht ausgewählt**|**Verschlüsselung: konfiguriert**|**Verschlüsselung: Entfernen**|
 |:-----|:-----|:-----|:-----|
 |**Von einem Benutzer festgelegte Berechtigungen**|Die ursprüngliche Verschlüsselung bleibt erhalten|Es wird keine neue Verschlüsselung mit Bezeichnung angewendet|Die ursprüngliche Verschlüsselung wird entfernt|
 |**Schutzvorlage**|Die ursprüngliche Verschlüsselung bleibt erhalten|Es wird keine neue Verschlüsselung mit Bezeichnung angewendet|Die ursprüngliche Verschlüsselung wird entfernt|
@@ -103,7 +108,7 @@ Dokumente, die bereits verschlüsselt und dann als Anlagen hinzugefügt wurden, 
 
 ## <a name="configure-encryption-settings"></a>Konfigurieren von Verschlüsselungseinstellungen
 
-Wenn Sie auf der Seite **Verschlüsselung** des Assistenten die Option **Anwenden** verwenden, um eine Vertraulichkeitsbezeichnung zu erstellen oder zu bearbeiten, wählen Sie eine der folgenden Optionen aus:
+Wenn Sie auf der Seite **Verschlüsselung** im Assistenten **Verschlüsselungseinstellungen konfigurieren** auswählen, um eine Vertraulichkeitsbezeichnung zu erstellen oder zu bearbeiten, wählen Sie eine der folgenden Optionen aus: 
 
 - **Berechtigungen sofort zuweisen**, damit Sie genau bestimmen können, welche Benutzer welche Berechtigungen für Inhalte mit dieser Bezeichnung erhalten. Weitere Informationen hierzu finden Sie im nächsten Abschnitt [Berechtigungen sofort zuweisen](#assign-permissions-now).
 - **Benutzern die Zuweisung von Berechtigungen überlassen**, wenn Ihre Benutzer die Bezeichnung auf Inhalte anwenden. Mit deiser Option ermöglichen Sie Personen in Ihrer Organisation eine gewisse Flexibilität, die sie möglicherweise benötigen, um untereinander zusammenarbeiten und ihre Aufgaben erfüllen zu können. Weitere Informationen hierzu finden Sie auf dieser Seite im Abschnitt [Benutzern die Zuweisung von Berechtigungen überlassen](#let-users-assign-permissions).
@@ -275,7 +280,7 @@ Bei der integrierten Bezeichnung sehen die Benutzer dasselbe Dialogfeld, wenn Si
 
 ## <a name="example-configurations-for-the-encryption-settings"></a>Beispielkonfigurationen für die Verschlüsselungseinstellungen
 
-Führen Sie für jedes der folgenden Beispiele die Konfiguration über die Seite **Verschlüsselung** des Assistenten aus, wenn Sie eine [Vertraulichkeitsbezeichnung erstellen oder bearbeiten](create-sensitivity-labels.md#create-and-configure-sensitivity-labels). Stellen Sie zunächst sicher, dass die **Verschlüsselung** auf **Übernehmen** festgelegt ist:
+Führen Sie für jedes der folgenden Beispiele die Konfiguration über die Seite **Verschlüsselung** des Assistenten aus, wenn **Verschlüsselungseinstellungen konfigurieren** ausgewählt ist:
 
 ![Anwenden der Verschlüsselungsoption im Assistenten für Vertraulichkeitsbezeichnungen](../media/apply-encryption-option.png)
 
@@ -391,17 +396,18 @@ Für eine optimale Zusammenarbeit bei Dateien, die mit einer Vertraulichkeitsbez
 
 Bevor Sie Verschlüsselung verwenden können, müssen Sie möglicherweise einige Konfigurationsaufgaben ausführen.
 
-### <a name="activate-protection-from-azure-information-protection"></a>Schutz vor Azure Information Protection aktivieren
+- Schutz vor Azure Information Protection aktivieren
+    
+    Damit Vertraulichkeitsbezeichnungen angewendet werden können, muss der Protection Service (Azure Rights Management) aus Azure Information Protection für Ihren Mandanten aktiviert werden. In neueren Mandanten ist dies die Standardeinstellung, möglicherweise müssen Sie den Dienst jedoch manuell aktivieren. Weitere Informationen finden Sie unter [Aktivieren des Schutzdienstes von Azure Information Protection](https://docs.microsoft.com/azure/information-protection/activate-service).
 
-Damit Vertraulichkeitsbezeichnungen angewendet werden können, muss der Protection Service (Azure Rights Management) aus Azure Information Protection für Ihren Mandanten aktiviert werden. In neueren Mandanten ist dies die Standardeinstellung, möglicherweise müssen Sie den Dienst jedoch manuell aktivieren. Weitere Informationen finden Sie unter [Aktivieren des Schutzdienstes von Azure Information Protection](https://docs.microsoft.com/azure/information-protection/activate-service).
+- Konfigurieren von Exchange für Azure Information Protection
+    
+    Exchange muss nicht für Azure Information Protection konfiguriert werden, bevor Benutzer in Outlook zum Verschlüsseln ihrer E-Mails Bezeichnungen anwenden können. Solange Exchange jedoch nicht für Azure Information Protection konfiguriert ist, erhalten Sie nicht die volle Funktionalität des Azure Rights Management-Schutzes mit Exchange.
+    
+    Benutzer können beispielsweise verschlüsselte E-Mails nicht auf Mobiltelefonen oder mit Outlook im Web anzeigen, verschlüsselte E-Mails können nicht für die Suche indexiert werden, und Sie können Exchange Online DLP nicht für den Rights Management-Schutz konfigurieren. 
+    
+    Um sicherzustellen, dass Exchange diese zusätzlichen Szenarien unterstützt, lesen Sie die folgenden Informationen:
+    
+    - Für Exchange Online lesen Sie die Anweisungen für [Exchange Online: Konfigurieren von IRM](https://docs.microsoft.com/azure/information-protection/configure-office365#exchangeonline-irm-configuration).
+    - For das lokale Exchange müssen Sie den [RMS-Connector bereitstellen und Ihre Exchange-Server konfigurieren](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector). 
 
-### <a name="configure-exchange-for-azure-information-protection"></a>Konfigurieren von Exchange für Azure Information Protection
-
-Exchange muss nicht für Azure Information Protection konfiguriert werden, bevor Benutzer in Outlook zum Verschlüsseln ihrer E-Mails Bezeichnungen anwenden können. Solange Exchange jedoch nicht für Azure Information Protection konfiguriert ist, erhalten Sie nicht die volle Funktionalität des Azure Rights Management-Schutzes mit Exchange.
-
-Benutzer können beispielsweise verschlüsselte E-Mails nicht auf Mobiltelefonen oder mit Outlook im Web anzeigen, verschlüsselte E-Mails können nicht für die Suche indexiert werden, und Sie können Exchange Online DLP nicht für den Rights Management-Schutz konfigurieren.
-
-Um sicherzustellen, dass Exchange diese zusätzlichen Szenarien unterstützt, lesen Sie die folgenden Informationen:
-
-- Für Exchange Online lesen Sie die Anweisungen für [Exchange Online: Konfigurieren von IRM](https://docs.microsoft.com/azure/information-protection/configure-office365#exchangeonline-irm-configuration).
-- For das lokale Exchange müssen Sie den [RMS-Connector bereitstellen und Ihre Exchange-Server konfigurieren](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector).
