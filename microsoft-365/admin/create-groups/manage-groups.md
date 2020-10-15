@@ -19,16 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Erfahren Sie mehr über das Verwalten von Microsoft 365-Gruppen, einschließlich Hinzufügen von Gruppenmitgliedern, Bearbeiten der e-Mail-Adresse, des Gruppennamens oder der Beschreibung und Anpassen der Funktionsweise der Gruppe.
-ms.openlocfilehash: 29eaa762116498799d4156b58c8f9bf466f04073
-ms.sourcegitcommit: e87015bf29ad15688137c785d93f2c79ca3208f4
+ms.openlocfilehash: 7cc9bc6eb79b305c7d20d8075b6dc287e4f8b5d7
+ms.sourcegitcommit: 88c2461b14cd16f74979f4bcd0a9ad18e4422cb3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48343271"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48469709"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Verwalten einer Gruppe im Microsoft 365 Admin Center
 
-Nachdem Sie [eine Microsoft 365-Gruppe erstellt](create-groups.md) und Gruppenmitglieder hinzugefügt haben, können Sie Ihre Gruppe konfigurieren. Sie können den Gruppennamen oder die Beschreibung bearbeiten, Besitzer oder Mitglieder verwalten und angeben, ob externe Absender die Gruppe per e-Mail senden können und ob Kopien von Gruppenunterhaltungen an Mitglieder gesendet werden sollen. 
+Nachdem Sie [eine Microsoft 365-Gruppe erstellt](create-groups.md) und Gruppenmitglieder hinzugefügt haben, können Sie Ihre Gruppe konfigurieren. Sie können den Gruppennamen oder die Beschreibung bearbeiten, Besitzer oder Mitglieder verwalten und angeben, ob externe Absender die Gruppe per e-Mail senden können und ob Kopien von Gruppenunterhaltungen an Mitglieder gesendet werden sollen.
+
+Wechseln Sie zum Microsoft 365 Admin Center unter [https://admin.microsoft.com](https://admin.microsoft.com) .
 
 ## <a name="edit-the-group-name-or-description"></a>Bearbeiten des Gruppennamens oder der Beschreibung
 
@@ -122,7 +124,7 @@ Gruppenmitglieder können diesen e-Mail-Empfang nicht mehr erhalten, indem Sie d
 
 3. Wählen Sie auf der Registerkarte **Einstellungen** die Option **Kopien von Gruppenunterhaltungen und Ereignissen an Gruppenmitglieder senden** aus, wenn Sie möchten, dass Mitglieder Kopien von Gruppen Nachrichten und Kalenderelementen in Ihrem eigenen Posteingang erhalten.
 
-4. Wählen Sie **Speichern** aus.
+4. Klicken Sie auf **Speichern**.
 
 ::: moniker-end
 
@@ -134,7 +136,7 @@ Gruppenmitglieder können diesen e-Mail-Empfang nicht mehr erhalten, indem Sie d
 
 3. **Senden Sie Kopien von Gruppenunterhaltungen und Ereignissen an die Posteingänge der Gruppenmitglieder** an, wenn Sie möchten, dass Mitglieder Kopien von Gruppen Nachrichten und Kalenderelementen in Ihrem eigenen Posteingang erhalten. **On**
 
-4. Wählen Sie **Speichern** aus.
+4. Klicken Sie auf **Speichern**.
 
 ::: moniker-end
 
@@ -146,7 +148,7 @@ Gruppenmitglieder können diesen e-Mail-Empfang nicht mehr erhalten, indem Sie d
 
 3. **Senden Sie Kopien von Gruppenunterhaltungen und Ereignissen an die Posteingänge der Gruppenmitglieder** an, wenn Sie möchten, dass Mitglieder Kopien von Gruppen Nachrichten und Kalenderelementen in Ihrem eigenen Posteingang erhalten. **On**
 
-4. Wählen Sie **Speichern** aus.
+4. Klicken Sie auf **Speichern**.
 
 ::: moniker-end
 
@@ -162,7 +164,7 @@ Diese Option eignet sich hervorragend, wenn Sie eine Firmen-e-Mail-Adresse wie I
 
 3. Wählen Sie in der Liste Admin Center-Gruppen den Namen der Gruppe aus, die Sie ändern möchten, und wählen Sie dann auf der Registerkarte **Einstellungen** die Option **externe Absender können diese Gruppe per e-Mail zulassen**aus.
     
-4. Wählen Sie **Speichern** aus.
+4. Klicken Sie auf **Speichern**.
 
 ::: moniker-end
 
@@ -174,7 +176,7 @@ Diese Option eignet sich hervorragend, wenn Sie eine Firmen-e-Mail-Adresse wie I
     
 3. Setzen Sie die Umschaltfläche **Personen von außerhalb der Organisation das Senden von E-Mail an die Gruppe gestatten** auf **Ein**.
     
-4. Wählen Sie **Speichern** aus.
+4. Klicken Sie auf **Speichern**.
 
 ::: moniker-end
 
@@ -186,7 +188,7 @@ Diese Option eignet sich hervorragend, wenn Sie eine Firmen-e-Mail-Adresse wie I
     
 3. Setzen Sie die Umschaltfläche **Personen von außerhalb der Organisation das Senden von E-Mail an die Gruppe gestatten** auf **Ein**.
     
-4. Wählen Sie **Speichern** aus.
+4. Klicken Sie auf **Speichern**.
 
 ::: moniker-end
 
