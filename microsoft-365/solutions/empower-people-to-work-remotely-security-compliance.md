@@ -5,7 +5,6 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 07/23/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -18,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Verwenden Sie die Sicherheits- und Compliance-Dienste von Microsoft 365 zum Schutz Ihrer Apps, Daten und Geräte für Remotemitarbeiter.
-ms.openlocfilehash: 1f59b83760c3df042bb3936becbd80e04f0db06e
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 36abe8b8dbd84a883d829308fc970258e7551f2e
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377211"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445881"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>Schritt 3: Bereitstellen von Sicherheit und Compliance für Remotemitarbeiter
 
@@ -89,5 +88,7 @@ Für Ihre Remotemitarbeiter haben Sie Folgendes implementiert:
   - Einhaltung regionaler Datenschutzbestimmungen
 
 ## <a name="next-step"></a>Nächster Schritt
+
+[![Schritt 4: Verwalten Ihrer Geräte, PCs und anderer Endpunkte](../media/empower-people-to-work-remotely/remote-workers-step-grid-4.png)](empower-people-to-work-remotely-manage-endpoints.md)
 
 Fahren Sie fort mit [Schritt 4](empower-people-to-work-remotely-manage-endpoints.md), um Ihre Geräte, PCs und andere Endpunkte zu verwalten.

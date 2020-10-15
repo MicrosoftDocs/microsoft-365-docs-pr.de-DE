@@ -5,7 +5,6 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 06/03/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -18,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Verwenden Sie Microsoft Endpoint Manager zur Verwaltung Ihrer Geräte, PCs und anderen Endgeräte.
-ms.openlocfilehash: 5c6e433918709a55f03d786891ec0fd7ac62a26b
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: b50279166b313742dbfbe8e75dd9788aac6b1daa
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377235"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445961"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Schritt 4. Bereitstellen der Endpunktverwaltung für Ihre Geräte, PCs und andere Endpunkte
 
@@ -95,5 +94,7 @@ Weitere Informationen finden Sie in dieser [Übersicht über Windows Autopilot](
 Sie verwenden die Suite der Funktionen und Möglichkeiten von Endpoint Manager, um mobile Geräte, Desktop-Computer, virtuelle Maschinen, eingebettete Geräte und Server zu verwalten.
 
 ## <a name="next-step"></a>Nächster Schritt
+
+[![Schritt 5: Bereitstellen von Produktivitätsanwendungen und -diensten für Remotemitarbeiter](../media/empower-people-to-work-remotely/remote-workers-step-grid-5.png)](empower-people-to-work-remotely-teams-productivity-apps.md)
 
 Fahren Sie mit [Schritt 5](empower-people-to-work-remotely-teams-productivity-apps.md) fort, um Ihre Remotemitarbeiter mit Microsoft 365 Produktivitäts-Apps wie Microsoft Teams auszustatten.
