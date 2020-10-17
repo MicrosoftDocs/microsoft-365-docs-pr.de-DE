@@ -21,12 +21,12 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: In diesem Artikel erfahren Sie, wie Sie PowerShell verwenden, um nicht lizenzierten Benutzern eine Microsoft 365-Lizenz zuzuweisen.
-ms.openlocfilehash: f042f8109bf9ac9b634bc66509c60a5181fb1af6
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: 8c3165b99477afa14e6d2b0da927b5f64c416ef1
+ms.sourcegitcommit: 3165329d1fb5a7fd866ff287bea3b6354ea2be18
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235618"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48580940"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>Zuweisen von Microsoft 365-Lizenzen zu Benutzerkonten mit PowerShell
 
@@ -34,9 +34,13 @@ ms.locfileid: "48235618"
 
 Benutzer können keine Microsoft 365-Dienste verwenden, bis Ihrem Konto eine Lizenz aus einem Lizenzierungs Plan zugewiesen wurde. Sie können PowerShell verwenden, um nicht lizenzierten Konten schnell Lizenzen zuzuweisen. 
 
->[!Note]
->Benutzerkonten muss ein Standort zugewiesen sein. Sie können dies über die Eigenschaften eines Benutzerkontos im Microsoft 365 Admin Center oder über PowerShell tun.
->
+Benutzerkonten muss zunächst ein Standort zugewiesen werden. Das Angeben eines Speicherorts ist ein erforderlicher Bestandteil des Erstellens eines neuen Benutzerkontos im [Microsoft 365 Admin Center](../admin/add-users/add-users.md). 
+
+Konten, die von Ihrem lokalen Active Directory-Domänendienste synchronisiert werden, haben standardmäßig keinen Speicherort angegeben. Sie können einen Speicherort für diese Konten aus konfigurieren:
+
+- Das Microsoft 365 Admin Center
+ - [PowerShell](configure-user-account-properties-with-microsoft-365-powershell.md)
+ - Das [Azure-Portal](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) (**Active Directory**  >  **Benutzer** > Benutzerkonto > **Profil**  >  **Kontaktinformationen**  >  **Land oder Region**).
 
 >[!Note]
 >[Informationen zum Zuweisen von Lizenzen zu Benutzerkonten](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users) mit dem Microsoft 365 Admin Center. Eine Liste mit weiteren Ressourcen finden Sie unter [Verwalten von Benutzern und Gruppen](https://docs.microsoft.com/microsoft-365/admin/add-users/).
@@ -111,7 +115,7 @@ Um den **UsageLocation** -Wert für ein Konto festzulegen, führen Sie diesen Be
 Set-MsolUser -UserPrincipalName "<Account>" -UsageLocation <CountryCode>
 ```
 
-Beispiel:
+Zum Beispiel:
 
 ```powershell
 Set-MsolUser -UserPrincipalName "belindan@litwareinc.com" -UsageLocation US
@@ -207,7 +211,7 @@ $userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty Assigned
 $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 [Verwalten von Benutzerkonten, Lizenzen und Gruppen mit PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   

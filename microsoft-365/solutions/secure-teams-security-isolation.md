@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Hier erfahren Sie, wie Sie ein Team mit einer eindeutigen Vertraulichkeitsbezeichnung für Sicherheit erstellen.
-ms.openlocfilehash: fdebfcbfa4aad68f381db4ffb8c9b83a5100187c
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 46bc63bab52bf75dc7c215510d49b4d985ff07c3
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398715"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487482"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Konfigurieren eines Teams mit Sicherheitsisolierung
 
@@ -42,11 +42,15 @@ Die Elemente der Konfiguration für ein Team mit Sicherheitsisolierung sind:
 > [!IMPORTANT]
 > Stellen Sie sicher, dass Sie die [Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Office 365-Gruppen und SharePoint-Websites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) aktiviert haben, bevor Sie mit den Schritten in diesem Artikel fortfahren.
 
+Schauen Sie sich dieses Video an, um einen Überblick über den Bereitstellungsprozess zu erhalten.
+<br>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGHf]
+
 <a name="poster"></a> Eine zweiseitige Zusammenfassung dieses Szenarios zeigt das [Poster „Microsoft Teams mit Sicherheitsisolierung“](../downloads/team-security-isolation-poster.pdf).
 
 [![Poster „Microsoft Teams mit Sicherheitsisolierung“](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 
-Sie können dieses Poster auch im [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf)-Format herunterladen und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
+Sie können dieses Poster auch im [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf)-Format herunterladen und in den Formaten „Brief“, „Legal“ oder „Tabloid“ (27,94 x 43,18 cm) ausdrucken.
 
 ## <a name="initial-protections"></a>Erste Schutzmaßnahmen
 

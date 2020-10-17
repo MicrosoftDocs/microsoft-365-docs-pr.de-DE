@@ -3,7 +3,6 @@ title: Konfigurieren der Eigenschaften von Microsoft 365-Benutzerkonten mit Powe
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/16/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,12 +18,12 @@ ms.custom:
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: 'Zusammenfassung: Verwenden Sie PowerShell für Microsoft 365, um die Eigenschaften einzelner oder mehrerer Benutzerkonten in Ihrem Microsoft 365-Mandanten zu konfigurieren.'
-ms.openlocfilehash: 6a435b3981efa8d8c2be7f6d983a1d062237f0db
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: ae797d67b47c637dc95176b92fad8090f8a7ab37
+ms.sourcegitcommit: 3165329d1fb5a7fd866ff287bea3b6354ea2be18
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690248"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48580928"
 ---
 # <a name="configure-microsoft-365-user-account-properties-with-powershell"></a>Konfigurieren der Eigenschaften von Microsoft 365-Benutzerkonten mit PowerShell
 
@@ -34,7 +33,7 @@ Obwohl Sie das Microsoft 365 Admin Center zum Konfigurieren von Eigenschaften f�
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Verwenden der Azure Active Directory PowerShell für Graph-Module
 
-Verwenden Sie zum Konfigurieren von Eigenschaften für Benutzerkonten mit der Azure Active Directory PowerShell das [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0)-Cmdlet und geben Sie die Eigenschaften an, die Sie festlegen bzw. ändern möchten. 
+Verwenden Sie zum Konfigurieren von Eigenschaften für Benutzerkonten mit der Azure Active Directory PowerShell das [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser)-Cmdlet und geben Sie die Eigenschaften an, die Sie festlegen bzw. ändern möchten. 
 
 Stellen Sie zunächst [eine Verbindung mit Ihrem Microsoft 365-Mandanten her](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
    
@@ -74,8 +73,11 @@ Sie identifizieren das Konto mit dem **-ObjectID**-Parameter und legen bestimmte
     
     Dies ist der zweistellige ISO 3166-1-Ländercode bzw. Regionscode (Alpha-2, A2).
     
-Informationen zu weiteren Parametern finden Sie unter [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0).
+Informationen zu weiteren Parametern finden Sie unter [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser).
 
+>[!Note]
+>Bevor Sie einem Benutzerkonto Lizenzen zuweisen können, müssen Sie einen Verwendungs Speicherort zuweisen.
+>
 
 Führen Sie den folgenden Befehl aus, um den Benutzerprinzipalnamen für Ihre Benutzerkonten anzuzeigen.
   
@@ -264,9 +266,9 @@ Mit diesem Befehl wird PowerShell an Folgendes angewiesen:
 - Suchen Sie alle Benutzerkonten, deren Abteilungs Eigenschaft auf "Accounting" festgelegt ist (**wobei {$ _. Department-EQ "Accounting"}**) und die resultierenden Informationen an den nächsten Befehl senden ( **|** ).
     
 - Legen Sie den Benutzerstandort auf Frankreich fest (**festlegen-MsolUser-UsageLocation "fr"**).
-    
 
-## <a name="see-also"></a>Siehe auch
+
+## <a name="see-also"></a>Weitere Artikel
 
 [Verwalten von Microsoft 365-Benutzerkonten, -Lizenzen und -Gruppen mit PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   

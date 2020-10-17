@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1001b5b209204785221aef40631e91f904136b0b
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 2cb1c8071e72a8a60a8bac1dd13bb2ce038a8ac0
+ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417479"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48476982"
 ---
 # <a name="trusight"></a>TruSight
 
@@ -33,9 +33,9 @@ TruSight ist ein Drittanbietertool zur Risikobewertung, das von führenden US-Ba
 
 Die Grundlage der TruSight-Methodik bildet der zuverlässige, standardisierte Fragebogen für bewährte Methoden (BPQ), der von den an der Gründung von TruSight beteiligten Banken erstellt und in Zusammenarbeit mit seinen Kunden und Branchenexperten aktualisiert wurde. Die 27 diversifizierten Steuerdomänen sind so konzipiert, dass sie den Anforderungen der Branche in den Kategorien Informations- und Cybersicherheit, Datenschutz, Unternehmensflexibilität sowie andere Domänen mit operationelle Risiken gerecht werden.
 
-Für Microsoft hat TruSight eine gründliche und umfassende lokale Bewertung von Microsoft Azure, Microsoft Dynamics 365 und Microsoft Office 365 durchgeführt, um den Entwurf und die Implementierung von Steuerungengemäß den BPQ-Anforderungen zu überprüfen. Zu den umfassenden Überprüfungsverfahren gehörten strukturierte Untersuchungen, Prüfungen von Richtlinien und Verfahren, Überprüfungen mit stützenden Beweisen sowie Beobachtungen dynamischer Steuerungen vor Ort.
+Für Microsoft hat TruSight eine gründliche und umfassende lokale Bewertung von Microsoft Azure, Microsoft Dynamics 365, Microsoft Power Platform und Microsoft 365 durchgeführt, um den Entwurf und die Implementierung von Steuerungen gemäß den BPQ-Anforderungen zu überprüfen. Zu den umfassenden Überprüfungsverfahren gehörten strukturierte Untersuchungen, Prüfungen von Richtlinien und Verfahren, Überprüfungen mit stützenden Beweisen sowie Beobachtungen dynamischer Steuerungen vor Ort.
 
-Im September 2018 veröffentlichte TruSight seine erste Risikobewertung von Microsoft-Clouddiensten, *Comprehensive Assessment of Microsoft Cloud*. Microsoft wird jetzt jährlichen TruSight-Überprüfungen unterzogen, um sicherzustellen, dass die Bewertung aktuell bleibt und neue behördliche Anforderungen und Technologieupdates in Microsoft-Diensten widergespiegelt werden. Die erste erweiterte Aktualisierung des Berichts wird für Herbst 2019 erwartet.
+Im September 2018 veröffentlichte TruSight seine erste Risikobewertung von Microsoft-Clouddiensten, *Comprehensive Assessment of Microsoft Cloud*. Microsoft wird jetzt jährlichen TruSight-Überprüfungen unterzogen, um sicherzustellen, dass die Bewertung aktuell bleibt und neue behördliche Anforderungen und Technologieupdates in Microsoft-Diensten widergespiegelt werden. TruSight hat seinen neuesten Bericht im Oktober 2020 veröffentlicht.
 
 Dank dieser gründlichen Bewertung durch TruSight haben Finanzdienstleister nun bei Bedarf Zugriff auf eine qualitativ hochwertige Bewertung von Microsoft-Clouddiensten, die auf einer standardisierten, von der Branche gestützten Methodik basiert, ohne dass hierfür die beträchtlichen Ressourcen aufgewendet werden müssen, die erforderlich wären, wenn sie diese selbst durchführen würden.
 

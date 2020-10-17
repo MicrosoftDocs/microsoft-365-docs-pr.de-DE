@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Beschleunigen Sie die Planung und Konfiguration von Microsoft 365 oder Office 365 mit den Installationsanleitungen.
-ms.openlocfilehash: fd9d9a3b65f3a4e47604299c47a85d8c5e551149
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 215f51af1fc553ef0710565af0a7c25111de8328
+ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446939"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48493697"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Einrichtungsanleitung für Microsoft 365- und Office 365-Dienste
 
@@ -90,6 +90,17 @@ Windows Virtual Desktop ist ein umfassender Desktop-und App-Virtualisierungs-Die
 
 Das [Windows Virtual Desktop Setup Guide](https://aka.ms/wvdsetupguide) bietet Administratoren Planungsressourcen und die Voraussetzungen für die Bereitstellung, Setup Anleitungen und zusätzliche Ressourcen. 
 
+### <a name="microsoft-edge-deployment-advisor"></a>Microsoft Edge-Bereitstellungs Ratgeber
+
+Microsoft Edge wurde von Grund auf neu aufgebaut, um Ihnen erstklassige Kompatibilität und Leistung, die Sicherheit und den Datenschutz zu bieten, die Sie verdienen, und neue Features, die Ihnen das Beste aus dem Internet bieten sollen.
+
+Der [Microsoft Edge-Bereitstellungs Ratgeber](https://aka.ms/edgeadvisor) unterstützt Sie beim Konfigurieren der Ermittlung der Unternehmenswebsite, um festzustellen, welche Websites in Ihrer Organisation möglicherweise den IE-Modus verwenden müssen, um wichtige Sicherheitsfeatures zu überprüfen und zu konfigurieren, Datenschutzrichtlinien und weitere Richtlinien entsprechend den Anforderungen Ihrer Organisation zu konfigurieren und den Webzugriff auf Ihren Geräten zu verwalten. Sie können Microsoft Edge auf einzelne Geräte herunterladen, oder wir zeigen Ihnen, wie Sie für mehrere Benutzer in Ihrer Organisation mit Configuration Manager oder Microsoft InTune bereitstellen.
+Windows Virtual Desktop ist ein umfassender Desktop-und App-Virtualisierungs-Dienst, der in der Cloud läuft. Es handelt sich um die einzige virtuelle Desktopinfrastruktur (VDI), die vereinfachte Verwaltung, mehrstufige Windows 10, Optimierungen für Microsoft 365-apps und Unterstützung für Remote Desktop Dienste-Umgebungen (RDS) bietet. Bereitstellen und Skalieren von Windows-Desktops und-apps in wenigen Minuten in Azure, um integrierte Sicherheits-und Compliance-Funktionen zu erhalten. 
+
+### <a name="intune-configuration-manager-co-management-setup-guide"></a>InTune-Konfigurations-Manager-Installationshandbuch für die gemeinsame Verwaltung
+
+Verwenden Sie das [InTune-Installationshandbuch für Konfigurations-Manager-Co-Management](https://aka.ms/comanagementsetup) für vorhandene Configuration Manager-Clientgeräte und neue internetbasierte Geräte, die Ihre Organisation mit Microsoft InTune und dem Konfigurations-Manager gemeinsam verwalten möchte. Mit diesem Bereitstellungshandbuch für die gemeinsame Verwaltung können Sie Windows 10-Geräte verwalten und den Geräten Ihrer Organisation neue Funktionen hinzufügen und gleichzeitig die Vorteile beider Lösungen erhalten.
+
 ## <a name="guides-for-authentication-and-access"></a>Leitfäden für Authentifizierung und Zugriff
 
 ### <a name="azure-ad-setup-guide"></a>Azure AD-Installationshandbuch
@@ -97,6 +108,10 @@ Das [Windows Virtual Desktop Setup Guide](https://aka.ms/wvdsetupguide) bietet A
 Das [Azure AD-Setup Handbuch](https://aka.ms/aadpguidance) enthält Informationen, um sicherzustellen, dass Ihre Organisation über eine starke Sicherheitsgrundlage verfügt. In diesem Leitfaden richten Sie die anfänglichen Features wie die Azure-rollenbasierte Zugriffssteuerung (Azure RBAC) für Administratoren, Azure AD Connect für Ihr lokales Verzeichnis und Azure AD Connect Health ein, damit Sie die Integrität ihrer Hybriden Identität während automatischer Synchronisierungen überwachen können. 
 
 Sie enthält außerdem wichtige Informationen zum Aktivieren von Self-Service-Kennwortzurücksetzungen, bedingtem Zugriff und integrierter Drittanbieter Anmeldung einschließlich Optionaler erweiterter Identitätsschutz-und Benutzer bereitstellen-Automatisierung.
+
+### <a name="sync-users-from-your-orgs-directory"></a>Synchronisieren von Benutzern aus dem Verzeichnis Ihrer Organisation
+
+Die [Synchronisierung von Benutzern aus dem Verzeichnis-Assistenten Ihrer Organisation](https://aka.ms/directorysyncsetup) führt Sie durch das Aktivieren der Verzeichnissynchronisierung. Dadurch werden Ihre lokalen und Cloud-Identitäten zusammengefasst, um den Zugriff und vereinfachte Verwaltung zu vereinfachen. Entsperren neuer Funktionen wie einmaliges Anmelden, Self-Service-Optionen, automatische Konto Bereitstellung, bedingte Zugriffssteuerung und Konformitätsrichtlinien Dadurch wird sichergestellt, dass Ihre Benutzer Zugriff auf die Ressourcen haben, die Sie von überall benötigen.
 
 ### <a name="plan-your-passwordless-deployment"></a>Planen der Bereitstellung von Kennwörtern
 

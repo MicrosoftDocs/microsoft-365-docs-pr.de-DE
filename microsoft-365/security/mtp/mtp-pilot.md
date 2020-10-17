@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 4ec46891248c09f580b19d888573544ad2b4930f
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: f49f1afe5461a4f2eff0a3049f1d14d1892f70ce
+ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446867"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48477020"
 ---
 # <a name="run-your-pilot-microsoft-threat-protection-project"></a>Ausführen des Pilotprojekts "Microsoft Threat Protection" 
 
@@ -41,6 +41,16 @@ Um den Nutzen und die Akzeptanz von Microsoft Threat Protection (MTP) effektiv z
 ## <a name="how-to-use-this-pilot-playbook"></a>Vorgehensweise zum Verwenden dieses Pilot Manuskripts
 
 Dieses Handbuch enthält eine Übersicht über Microsoft Threat Protection und Schritt-für-Schritt-Anleitungen zum Einrichten Ihres Pilotprojekts. 
+
+Microsoft Threat Protection ist eine einheitliche, vor-und nach Verletzung der Enterprise-Defense-Suite, die den Schutz, die Erkennung, Verhinderung, Untersuchung und Antwort über alle Endpunkte, Identitäten, e-Mails und Anwendungen hinweg einheitlich koordiniert und einen integrierten Schutz vor anspruchsvollen Angriffen bietet. Dies geschieht durch kombinieren und orchestrieren der folgenden Funktionen in einer einzigen Sicherheitslösung:
+  - Microsoft Defender für Endpoint, der neue Name für Microsoft Defender Advanced Threat Protection (Endpunkte)
+  - Microsoft Defender für Office 365, der neue Name für Office 365 ATP (e-Mail) 
+  - Microsoft Defender for Identity, der neue Name für Azure ATP (Identity) 
+  - Microsoft Cloud-App-Sicherheit (Apps)
+
+![Image of_Microsoft Threat Protection-Lösung für Benutzer, Azure Advanced Threat Protection, für Endpoint Microsoft Defender Advanced Threat Protection, für Cloud-apps, Microsoft Cloud App Security und für Daten, Office 365 Advanced Threat Protection  ](../../media/mtp/m365pillars.png)
+
+Mit der integrierten Microsoft Threat Protection-Lösung können Sicherheitsexperten die Bedrohungs Signale, die Microsoft Defender Advanced Threat Protection, Office 365 ATP, Azure ATP und Microsoft Cloud App Security erhält, zusammenfügen und den vollständigen Umfang und die Auswirkungen der Bedrohung bestimmen, wie Sie in die Umgebung eingedrungen ist, was Sie betrifft und wie Sie sich derzeit auf die Organisation auswirken. Microsoft Threat Protection führt automatische Aktionen aus, um den Angriff zu verhindern oder zu beenden und die betroffenen Postfächer, Endpunkte und Benutzeridentitäten selbst zu heilen. Ausführliche Informationen finden Sie in der [Microsoft Threat Protection-Übersicht](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) .
 
 ![Phasen bei der Ausführung eines Microsoft Threat Protection-Pilotprojekts](../../media/pilotphases.png)
 

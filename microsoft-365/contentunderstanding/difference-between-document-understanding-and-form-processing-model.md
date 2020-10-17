@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Beschreibung des Unterschieds zwischen Dokumentverständnis- und Formularverarbeitungsmodellen
-ms.openlocfilehash: 71887aeeb66699b3d756317b33d52607f480aa7d
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: 98d5e9463dedda96c02ed7c3ed80576638941816
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333872"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464228"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>Unterschied zwischen Dokumentverständnis- und Formularverarbeitungsmodellen 
 
@@ -55,8 +55,6 @@ Formularverarbeitungsmodelle werden in PowerApps [AI Builder](https://docs.micro
 
 Bei der Erstellung eines Dokumentverständnismodells erstellen Sie einen neuen [SharePoint-Inhaltstyp](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978), der im SharePoint-Inhaltstypenkatalog gespeichert wird. Bei Bedarf können Sie auch vorhandene Inhaltstypen verwenden, um das Modell zu definieren.
 
-Formularverarbeitungsmodelle werden in PowerApps [AI Builder](https://docs.microsoft.com/ai-builder/overview) erstellt, die Erstellung wird jedoch direkt aus einer SharePoint-Dokumentbibliothek heraus initiiert. Das Erstellen von Formularverarbeitungsmodellen muss in Ihrer Dokumentbibliothek aktiviert sein, damit ein Benutzer ein Formularverarbeitungsmodell dafür erstellen kann. Ein Administrator dies ggf. über die Administratoreinstellungen für das Inhaltsverständnis erledigen. Formularverarbeitungsmodelle verwenden PowerAutomate-Abläufe zum Verarbeiten von Dateien, wenn diese in die Dokumentbibliothek hochgeladen werden.
-
 Formularverarbeitungsmodelle generieren ebenfalls neue [SharePoint-Inhaltstypen](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978), die ebenfalls im SharePoint-Inhaltstypkatalog gespeichert werden.
 
 ## <a name="where-they-can-be-applied"></a>Wo die Modelle angewendet werden können
@@ -68,10 +66,10 @@ Formularverarbeitungsmodelle können derzeit nur auf die SharePoint-Dokumentbibl
  ## <a name="see-also"></a>Siehe auch
 [Schulungen: Verbessern der Geschäftsergebnisse mit AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)
 
-[Erstellen einer Klassifizierung](create-a-classifier.md)
 
-[Erstellen eines Extraktors](create-an-extractor.md)
 
-[Anwenden eines Dokumentverständnismodells](apply-a-model.md)
+[Übersicht über das Dokumentenverständnis](document-understanding-overview.md)
 
-[Erstellen eines Formularverarbeitungsmodells](create-a-form-processing-model.md)
+[Übersicht über die Formularverarbeitung](form-processing-overview.md)
+
+[Einführung in SharePoint Syntex](index.md)

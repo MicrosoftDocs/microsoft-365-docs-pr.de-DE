@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 localization_priority: Priority
 description: Einrichten des Inhaltsverständnisses in Projekt Cortex
-ms.openlocfilehash: 43ce7809237d32fb9d2da73e9e00bed9b9a8193e
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: 6078b41f8911301d343925c5bf895e881abddffe
+ms.sourcegitcommit: 88c2461b14cd16f74979f4bcd0a9ad18e4422cb3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464062"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48469721"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Einrichten von SharePoint Syntex
 
@@ -41,13 +41,14 @@ Als Administrator können Sie nach dem Einrichten und in den Verwaltungseinstell
 
 ## <a name="to-set-up-sharepoint-syntex"></a>So richten Sie SharePoint Syntex ein
 
-1. Wählen Sie im Microsoft 365 Admin Center **Setup**aus, und zeigen Sie dann den Abschnitt **Organisationswissen** an.
+1. Wählen Sie im Microsoft 365 Admin Center **Setup**aus, und zeigen Sie dann den Abschnitt **Dateien und Inhalte** an.
 
 2. Wählen Sie im Abschnitt **Dateien und Inhalte** > **Inhaltsverständnis automatisieren** aus.<br/>
 
 3. Klicken Sie auf der Seite **Inhaltsverständnis automatisieren** auf **Erste Schritte**, um den Setupvorgang zu durchlaufen.<br/>
 
-    ![Setup starten](../media/content-understanding/admin-content-understanding-get-started.png)</br>
+    > [!div class="mx-imgBorder"]
+    > ![Setup starten](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
 4. Auf der Seite **Formularverarbeitung konfigurieren** können Sie auswählen, ob Sie zulassen möchten, dass Benutzer Formularverarbeitungsmodelle in bestimmten SharePoint-Dokumentbibliotheken erstellen können. Im Menüband "Dokumentbibliothek" wird eine Menüoption zum **Erstellen eines Formularverarbeitungsmodells** in SharePoint-Dokumentbibliotheken verfügbar, in denen es aktiviert ist.
  
@@ -56,18 +57,22 @@ Als Administrator können Sie nach dem Einrichten und in den Verwaltungseinstell
       - **Nur Bibliotheken in ausgewählten Websites**. Wählen Sie dann die Websites aus, auf denen Sie die Option verfügbar machen möchten, oder laden Sie eine Liste mit bis zu 50 Websites hoch.</br>
       - **Keine SharePoint-Bibliotheken**, wenn Sie die Option nicht auf Websites verfügbar machen möchten (Sie können dies nach der Einrichtung ändern).
 
-   ![Konfigurieren der Formularverarbeitung](../media/content-understanding/admin-configforms.png)
+   > [!div class="mx-imgBorder"]
+   > ![Konfigurieren der Formularverarbeitung](../media/content-understanding/admin-configforms.png)
 
    > [!Note]
    > Wenn Sie eine Website entfernen, nachdem sie hinzugefügt wurde, hat dies keine Auswirkung auf vorhandene Modelle, die auf die Bibliotheken auf dieser Website angewendet werden, oder die Möglichkeit, Dokumentverständnismodelle auf eine Bibliothek anzuwenden. 
     
-5. Auf der Seite **Inhaltscenter erstellen** können Sie eine Website im SharePoint-Inhaltscenter erstellen, auf der Ihre Benutzer Modelle zum Dokumentverständnis erstellen und verwalten können. </br>
-    a. Geben Sie für den **Websitenamen** den Namen ein, den Sie Ihrer Inhaltscenter-Website zuweisen möchten.</br>
-    b. Die **Websiteadresse** zeigt die URL für Ihre Website basierend auf Ihrer Auswahl für den Websitenamen an. Wenn Sie die Einstellungen ändern möchten, klicken Sie auf **Bearbeiten**.</br>
+5. Auf der Seite **Inhaltscenter erstellen** können Sie eine Website im SharePoint-Inhaltscenter erstellen, auf der Ihre Benutzer Modelle zum Dokumentverständnis erstellen und verwalten können.
 
-      ![Erstellen eines Inhaltscenters](../media/content-understanding/admin-cu-create-cc.png)</br>
+    1. Geben Sie für den **Websitenamen** den Namen ein, den Sie Ihrer Inhaltscenter-Website zuweisen möchten.
+    
+    1. Die **Websiteadresse** zeigt die URL für Ihre Website basierend auf Ihrer Auswahl für den Websitenamen an. Wenn Sie die Einstellungen ändern möchten, klicken Sie auf **Bearbeiten**.
 
-    Wählen Sie **Weiter** aus.
+       > [!div class="mx-imgBorder"]
+       > ![Erstellen eines Inhaltscenters](../media/content-understanding/admin-cu-create-cc.png)</br>
+
+       Wählen Sie **Weiter** aus.
 
 6. Auf der Seite **Überprüfen und beenden** können Sie sich die ausgewählte Einstellung ansehen und Änderungen vornehmen. Wenn Sie mit Ihrer Auswahl zufrieden sind, wählen Sie **Aktivieren** aus.
 
@@ -89,7 +94,8 @@ So weisen Sie Lizenzen zu
 
 4. Wählen Sie **Intelligente Inhaltsdienste** aus. Stellen Sie sicher, dass unter **Apps** die Optionen **Common Data Service für intelligente Inhaltsdienste** und **Intelligente Inhaltsdienste** aktiviert sind.
 
-    ![SharePoint Syntex-Lizenzen im Microsoft 365 Admin Center](../media/content-understanding/sharepoint-syntex-licenses.png)
+    > [!div class="mx-imgBorder"]
+    > ![SharePoint Syntex-Lizenzen im Microsoft 365 Admin Center](../media/content-understanding/sharepoint-syntex-licenses.png)
 
 5. Klicken Sie auf **Änderungen speichern**.
 

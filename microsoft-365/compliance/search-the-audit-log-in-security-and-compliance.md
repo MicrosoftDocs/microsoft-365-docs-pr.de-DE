@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Verwenden Sie das Office 365 Security & Compliance Center oder das Microsoft 365 Compliance Center, um das vereinheitlichte Überwachungsprotokoll zu durchsuchen und die Benutzer- und Administratoraktivitäten in Ihrem Unternehmen anzuzeigen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 48d40cff907480f05dff8ba1c5c1584fc8289b1b
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: f1f2201d847001a5a9df4a367268f1f764367574
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48286041"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446638"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Das Überwachungsprotokoll im Compliance Center suchen
 
@@ -456,6 +456,24 @@ In der folgenden Tabelle sind die Datei- und Seitenaktivitäten in SharePoint On
 |Aufruf wird vom Client signalisiert|ClientViewSignaled|Ein Benutzerclient (z. B. eine Website oder einer mobile App) hat signalisiert, dass die angegebene Seite vom Benutzer aufgerufen wurde. Diese Aktivität wird häufig nach einem PagePrefetched-Ereignis für eine Seite protokolliert. <br/><br/>**Hinweis**: Da ClientViewSignaled-Ereignisse vom Client und nicht vom Server signalisiert werden, ist es möglich, dass das Ereignis nicht vom Server protokolliert wird und daher im Überwachungsprotokoll nicht auftaucht. Es ist auch möglich, dass die Informationen im Überwachungsdatensatz möglicherweise nicht zuverlässig sind. Da die Identität des Benutzers aber durch das Token überprüft wird, mit dem das Signal erstellt wurde, ist die im entsprechenden Überwachungsdatensatz aufgelistete Identität des Benutzers korrekt. |
 |(keine)|PagePrefetched|Der Client eines Benutzers (beispielsweise eine Website oder eine Mobile App) hat die angegebene Seite angefordert, um die Leistung zu verbessern, wenn der Benutzer zu ihr navigiert. Dieses Ereignis wird protokolliert, um anzugeben, dass der Seiteninhalt für den Client des Benutzers bereitgestellt wurden. Dieses Ereignis ist kein definitiver Hinweis darauf, dass der Benutzer zu der Seite navigiert ist. <br/><br/> Wenn der Seiteninhalt vom Client (gemäß der Anforderung des Benutzers) gerendert wird, sollte ein ClientViewSignaled-Ereignis generiert werden. Nicht alle Clients unterstützen Prefetches, und daher werden einige möglicherweise stattdessen als PageViewed-Ereignisse protokolliert.|
 ||||
+
+#### <a name="frequently-asked-questions-about-fileaccessed-and-filepreviewed-events"></a>Häufig gestellte Fragen zu den Ereignissen „FileAccessed“ und „FilePreviewed“
+
+**Könnten Nicht-Benutzer-Aktivitäten FilePreviewed-Überwachungsdatensätze auslösen, die einen Benutzer-Agent wie „OneDriveMpc-Transform_Thumbnail“ enthalten?**
+
+Wir kennen keine Szenarien, in denen Nicht-Benutzer-Aktionen Ereignisse wie dieses generieren. Benutzeraktionen wie das Öffnen einer Benutzerprofilkarte (durch Klicken auf den Namen oder die E-Mail-Adresse in einer Nachricht in Outlook im Web) würden ähnliche Ereignisse generieren.
+
+**Werden Aufrufe von „OneDriveMpc-Transform_Thumbnail“ immer absichtlich vom Benutzer ausgelöst?**
+
+Nein. Es kann jedoch vorkommen, dass ähnliche Ereignisse als Ergebnis eines Browser-Pre-Fetch protokolliert werden.
+
+**Wenn wir ein FilePreviewed-Ereignis sehen, das von einer bei Microsoft registrierten IP-Adresse stammt, bedeutet dies, dass die Vorschau auf dem Bildschirm des Benutzergeräts angezeigt wurde?**
+
+Nein. Das Ereignis könnte als Ergebnis eines Browser-Pre-Fetch protokolliert worden sein.
+
+**Gibt es Szenarien, in denen ein Benutzer, der die Vorschau eines Dokuments anzeigt, FileAccessed-Ereignisse generiert?**
+
+Sowohl das „FilePreviewed“- als auch das „FileAccessed“-Ereignis weist darauf hin, dass der Aufruf eines Benutzers das Lesen der Datei ausgelöst hat (oder das Lesen des Renderings einer Miniaturansicht der Datei). Diese Ereignisse sind zwar dazu gedacht, sich an der Vorschau- bzw. Zugriffs-Absicht zu orientieren, doch die Ereignisunterscheidung ist keine Garantie für die Absicht des Benutzers.
 
 #### <a name="the-appsharepoint-user-in-audit-records"></a>Der "app\@sharepoint"-Benutzer in Überwachungsdatensätzen
 

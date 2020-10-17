@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: 'Zusammenfassung: Verwenden Sie PowerShell, um die Eigenschaften des Skype for Business Online Benutzerkontos mit Richtlinien zu verwalten.'
-ms.openlocfilehash: 7657dae6fa1b27299e4cbc0cf6a311380cb90e9e
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 20a75fa1c131f693fcf30d20477af5c9ee7aed35
+ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690740"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48477041"
 ---
 # <a name="manage-skype-for-business-online-policies-with-powershell"></a>Verwalten von Skype for Business Online-Richtlinien mit PowerShell
 
@@ -30,19 +30,22 @@ Um viele Eigenschaften des Benutzerkontos für Skype for Business Online zu verw
 ## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 Bereiten Sie sich mithilfe dieser Anweisungen auf die Ausführung der Befehle vor (überspringen Sie die Schritte, die Sie bereits ausgeführt haben):
-  
-1. Laden Sie das [Connector-Modul für Skype for Business Online](https://www.microsoft.com/download/details.aspx?id=39366) herunter, und installieren Sie es.
+
+  > [!Note]
+  > Skype for Business Online Connector ist derzeit Teil des aktuellen Teams-PowerShell-Moduls. Wenn Sie die neueste PowerShell-Version von Microsoft Teams verwenden, müssen Sie den Skype for Business Online Connector nicht installieren.
+
+1. Installieren Sie das [PowerShell-Modul von Teams](https://docs.microsoft.com/microsoftteams/teams-powershell-install).
     
 2. Öffnen Sie eine Windows PowerShell-Eingabeaufforderung, und führen Sie die folgenden Befehle aus: 
-    
-```powershell
-Import-Module SkypeOnlineConnector
-$userCredential = Get-Credential
-$sfbSession = New-CsOnlineSession -Credential $userCredential
-Import-PSSession $sfbSession
-  ```
 
-Wenn Sie dazu aufgefordert werden, geben Sie den Namen und das Kennwort Ihres Skype for Business Online-Administratorkontos ein.
+   ```powershell
+   Import-Module MicrosoftTeams
+   $userCredential = Get-Credential
+   $sfbSession = New-CsOnlineSession -Credential $userCredential
+   Import-PSSession $sfbSession
+   ```
+
+   Wenn Sie dazu aufgefordert werden, geben Sie den Namen und das Kennwort Ihres Skype for Business Online-Administratorkontos ein.
     
 ## <a name="manage-user-account-policies"></a>Verwalten von Richtlinien für Benutzerkonten
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 1a7b87432ce1eb16c29f462fb4865bfa5c5e2201
-ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
+ms.openlocfilehash: e56ba8933947c37db3e558ef36dd6d305915040f
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418097"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487624"
 ---
 # <a name="closing-and-summarizing-your-microsoft-threat-protection-pilot"></a>Schließen und zusammenfassen Ihres Microsoft Threat Protection-Pilotprojekts  
 
@@ -87,7 +87,7 @@ Die endgültige Ausgabe sollte wie folgt aussehen:
 - Ausführlicher Bericht über die Ergebnisse des Pilotprojekts
 - Eine Entscheidung im Hinblick auf die Weiterentwicklung
 
-Zeigen Sie die Berichte aus ihrer endgültigen Ausgabe sowohl interne beteiligte (die Sie während der [Vorbereitungs](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) Phase identifiziert haben) als auch Microsoft Contacts an. Durch diesen Aufwand wird sichergestellt, dass Feedback zum Verbessern von Produkten und Dokumentation verwendet werden kann.
+Zeigen Sie die Berichte aus der endgültigen Ausgabe den internen Beteiligten (die Sie während der [Vorbereitungs](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) Phase identifiziert haben) und Microsoft Contacts an. Durch diesen Aufwand wird sichergestellt, dass Feedback zum Verbessern von Produkten und Dokumentation verwendet werden kann.
 
 Wir hoffen, dass Ihnen diese Simulation gefallen hat. Beginnen Sie mit der Implementierung, was Sie in Ihrer Organisation auf breiter Ebene gelernt haben, um die integrierte Sicherheitslösung optimal zu nutzen.
 

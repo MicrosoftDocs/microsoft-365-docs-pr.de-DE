@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Verwenden Sie Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in SharePoint- und Microsoft Teams-Websites sowie in Microsoft 365-Gruppen.
-ms.openlocfilehash: e8d9b3c4928172ace2bc63d5aa31d65c4145ad6a
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: ac6af4d82b3da507f1fe0081041b347b9f5e4a94
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430314"
+ms.locfileid: "48446848"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites verwenden
 
@@ -30,23 +30,23 @@ ms.locfileid: "48430314"
 
 Zusätzlich zur Verwendung von [Vertraulichkeitsbezeichnungen](sensitivity-labels.md), um Dokumente und E-Mails zu klassifizieren und zu schützen, können Sie Vertraulichkeitsbezeichnungen auch verwenden, um Inhalte in den folgenden Containern zu schützen: Microsoft Teams-Websites, Microsoft 365-Gruppen ([vormals Office 365-Gruppen](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) und SharePoint-Websites. Verwenden Sie für diese Klassifizierung und den Schutz auf Containerebene die folgenden Bezeichnungseinstellungen:
 
-- Datenschutz (öffentlich oder privat) für mit einer Microsoft 365-Gruppe verbundene Teamwebsites
+- Datenschutz (öffentlich oder privat) für Teamwebsites und Microsoft 365-Gruppen
 - Zugriff externer Benutzer
 - Zugriff von nicht verwalteten Geräten aus
 
 > [!IMPORTANT]
 > Die Einstellung **Zugriff von nicht verwalteten Geräten aus** funktioniert zusammen mit dem SharePoint-Feature [Zugriff von nicht verwalteten Geräten aus steuern ](/sharepoint/control-access-from-unmanaged-devices). Sie müssen dieses abhängige SharePoint-Feature konfigurieren, um eine Vertraulichkeitsbezeichnung zu verwenden, in der diese Einstellung konfiguriert wurde. Weitere Informationen hierzu finden Sie in den nachfolgenden Anweisungen.
 
-Wenn Sie diese Vertraulichkeitsbezeichnung auf einen unterstützten Container anwenden, wendet die Bezeichnung die konfigurierten Optionen automatisch auf die verbundene Website oder Gruppe an.
+Wenn Sie diese Vertraulichkeitsbezeichnung auf einen unterstützten Container anwenden, wendet die Bezeichnung die Klassifizierung und die konfigurierten Schutzeinstellungen automatisch auf die Website oder Gruppe an.
 
-Der Inhalt dieser Container erbt jedoch nicht die Beschriftungen für die Klassifizierung und Einstellungen wie visuelle Markierungen oder Verschlüsselung. Aktivieren Sie[Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), damit Benutzer Bezeichnungen auf ihre Dokumente in SharePoint- oder Teamwebsites anwenden können.
+Der Inhalt dieser Container erbt jedoch nicht die Beschriftungen für die Klassifizierung oder Einstellungen für Dateien und E-Mails, wie beispielsweise visuelle Markierungen oder Verschlüsselung. Aktivieren Sie[Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), damit Benutzer Bezeichnungen auf ihre Dokumente in SharePoint- oder Teamwebsites anwenden können.
 
 > [!NOTE]
 > Vertraulichkeitsbezeichnungen für Container werden von Office 365-Content Delivery Networks (CDNs) nicht unterstützt.
 
 ## <a name="using-sensitivity-labels-for-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Vertraulichkeitsbezeichnungen für Microsoft Teams, Microsoft 365-Gruppen und auf SharePoint-Websites verwenden
 
-Bevor Sie Vertraulichkeitsbezeichnungen aktivieren und für die neuen Einstellungen konfigurieren, können Benutzer Vertraulichkeitsbezeichnungen in ihren Apps anzeigen und anwenden. Beispielsweise aus Word:
+Bevor Sie Vertraulichkeitsbezeichnungen aktivieren und für die neuen Einstellungen konfigurieren, könnten Benutzer Vertraulichkeitsbezeichnungen in ihren Apps anzeigen und anwenden. Beispielsweise aus Word:
 
 ![Eine in der Word-Desktop-App angezeigte Vertraulichkeitsbezeichnung](../media/sensitivity-label-word.png)
 
@@ -68,42 +68,53 @@ Nachdem Sie Vertraulichkeitsbezeichnungen für Container aktiviert und konfiguri
     Execute-AzureAdLabelSync
     ```
 
-## <a name="how-to-configure-site-and-group-settings"></a>Website- und Gruppeneinstellungen konfigurieren
+## <a name="how-to-configure-groups-and-site-settings"></a>Konfigurieren von Gruppen und Websiteeinstellungen
 
-Sie können jetzt Vertraulichkeitsbezeichnungen erstellen oder bearbeiten, die für Websites und Gruppen verfügbar sein sollen. Durch Aktivieren der Vertraulichkeitsbezeichnungen für Container wird eine neue Seite im Assistenten für Vertraulichkeitsbezeichnungen verfügbar: **Website- und Gruppeneinstellungen**
+Die Aktivierung von Vertraulichkeitsbezeichnungen für Container bedeutet, dass Sie nun Schutzeinstellungen für Gruppen und Websiten im Assistenten für Vertraulichkeitsbezeichnungen konfigurieren können. Wenn Sie diesen Support noch nicht aktiviert haben, sind die Einstellungen zwar im Assistenten sichtbar, können aber nicht konfiguriert werden.
 
-Wenn Sie Hilfe beim Erstellen oder Bearbeiten einer Vertraulichkeitsbezeichnung benötigen, lesen Sie die Anweisungen unter [Erstellen und Konfigurieren von Vertraulichkeitsbezeichnungen](create-sensitivity-labels.md#create-and-configure-sensitivity-labels).
-
-Auf dieser neuen Seite **Website- und Gruppeneinstellungen** können Sie die Einstellungen konfigurieren:
-
-- **Datenschutz für mit einer Microsoft 365-Gruppe verbundene Teamwebsites**: Behalten Sie den Standardwert **Öffentlich – jeder in der Organisation kann auf die Site zugreifen** bei, wenn Sie möchten, dass jeder in Ihrer Organisation auf die Teamwebsite oder Gruppe zugreifen kann, auf der diese Bezeichnung angebracht ist.
-
-  Wählen Sie **Privat** aus, wenn Sie möchten, dass der Zugriff nur auf genehmigte Mitglieder in Ihrer Organisation beschränkt wird.
-
-  Wählen Sie **Keine – lassen Sie den Benutzer wählen, wer auf die Website zugreifen kann**, wenn Sie diese Standardeinstellung beibehalten, wenn Sie den Inhalt im Container mit Vertraulichkeitsbezeichnungen schützen möchten, die Benutzer aber trotzdem selbst Datenschutzeinstellungen konfigurieren können sollen.
-
-  Die Einstellungen von **Öffentlich** oder **Privat** setzen und sperren die Datenschutzeinstellung, wenn Sie diese Bezeichnung auf den Container aufbringen. Die von Ihnen gewählte Einstellung ersetzt alle vorherigen Datenschutzeinstellungen, die für das Team oder die Gruppe konfiguriert wurden, und sperrt den Datenschutzwert, so dass er nur geändert werden kann, wenn zuvor die Vertraulichkeitsbezeichnung vom Container entfernt wird. Nachdem Sie die Vertraulichkeitsbezeichnung entfernt haben, bleibt die Datenschutzeinstellung der Bezeichnung erhalten, aber Benutzer können sie jetzt wieder ändern.
-
-- **Zugriff für externe Benutzer**: Steuern Sie, ob der Gruppenbesitzer [Gäste zur Gruppe hinzufügen](/office365/admin/create-groups/manage-guest-access-in-groups) kann.
-
-- **Nicht verwaltete Geräte**: Diese Option verwendet das SharePoint-Feature, bei dem der bedingte Zugriff in Azure AD verwendet wird, um den Zugriff auf SharePoint- und OneDrive-Inhalte von nicht verwalteten Geräten aus zu sperren oder einzuschränken. Weitere Informationen finden Sie unter [Steuern des Zugriffs von nicht verwalteten Geräten](/sharepoint/control-access-from-unmanaged-devices). Die Option, die Sie für diese Bezeichnungseinstellung festlegen, entspricht der Ausführung eines PowerShell-Befehls für eine Website, wie in den Schritten 2-4 unter [Blockieren oder Einschränken des Zugriffs auf eine bestimmte SharePoint-Website oder OneDrive](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive)beschrieben.
+1. Befolgen Sie die allgemeinen Anweisungen für die [Erstellung oder Bearbeitung einer Vertraulichkeitsbezeichnung](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) und stellen Sie sicher, dass als Bereich für die Bezeichnung **Gruppen und Websiten** ausgewählt ist: 
     
-    Wenn Sie die abhängige Richtlinie für den bedingten Zugriff für SharePoint nicht so konfigurieren, wie unter [App-erzwungene Einschränkungen](https://docs.microsoft.com/sharepoint/app-enforced-restrictions) angeführt, ist die von Ihnen angegebene Option wirkungslos. Darüber hinaus hat sie keine Auswirkungen, wenn sie weniger stark einschränkt als eine konfigurierte Einstellung auf Mandanten-Ebene. Wenn Sie eine organisationsweite Einstellung für nicht verwaltete Geräte konfiguriert haben, wählen Sie eine identische oder restriktivere Bezeichnungseinstellung aus.
+    ![Bereichsoptionen bei Vertraulichkeitsbezeichnungen für Dateien und E-Mails](../media/groupsandsites-scope-options-sensitivity-label.png)
     
-    Wenn Ihr Mandant beispielsweise für **Eingeschränkten, reinen Web-Zugriff zulassen**konfiguriert ist, hat die Bezeichnungseinstellung „Vollzugriff“ keine Auswirkungen, da sie weniger restriktiv ist. Wählen Sie für diese Mandantenebende die Bezeichnungseinstellung, die den Zugriff blockiert (stärker restriktiv) oder die Bezeichnungseinstellung für eingeschränkten Zugriff (diese entspricht der Mandanteneinstellung).
+    Wenn nur dieser Bereich für die Bezeichnung ausgewählt ist, wird die Bezeichnung nicht in Office-Apps angezeigt, sie Vetraulichkeitsbezeichnungen unterstützen, und kann nicht auf Dateien und E-Mails angewendet werden. Eine solche Trennung von Bezeichnungen kann zwar sowohl für Benutzer als auch Administratoren hilfreich sein, jedoch auch die Komplexität der Bereitstellung von Bezeichnungen erhöhen.
     
-    Da Sie die SharePoint-Einstellungen unabhängig von den Bezeichnungseinstellungen konfigurieren können, wird im Assistenten für die Vertraulichkeitsbezeichnung nicht überprüft, ob die Abhängigkeiten eingestellt sind.
+    Beispielsweise müssen Sie die [Reihenfolge Ihrer Bezeichnungen](sensitivity-labels.md#label-priority-order-matters) sorgfältig überprüfen, da SharePoint erkennt, wenn ein Dokument mit Vertraulichkeitsbezeichnung auf eine Seite mit Vertraulichkeitsbezeichnung hochgeladen wird. In diesem Szenario werden automatisch ein Überwachungsereignis und eine E-Mail generiert, wenn die Vertraulichkeitsbezeichnung des Dokuments eine höhere Priorität aufweist als die Bezeichnung der Seite. Weitere Informationen findem Sie im Abschnitt [Überwachung von Vertraulichkeitsbezeichnungsaktivitäten](#auditing-sensitivity-label-activities) auf dieser Seite. 
 
-![Die Registerkarte "Website- und Gruppeneinstellungen"](../media/edit-sensitivity-label-site-group2.png)
+2. Wählen Sie dann auf der Seite**Definieren von Schutzeinstellungen für Gruppen und Websites** eine oder beide der verfügbaren Optionen aus:
+    
+    - **Einstellungen für den Datenschutz und Zugriff externer Benutzer**, um die Einstellungen für den **Datenschutz** und den **Zugriff externer Benutzer** zu konfigurieren.. 
+    - **Einstellungen für den Gerätezugriff und die externe Freigabe**, um die Einstellung für den **Zugriff von nicht verwalteten Geräten aus** zu konfigurieren..
+
+3. Wenn Sie **Einstellungen für den Datenschutz und Zugriff externer Benutzer** ausgewählt haben, konfigurieren Sie nun die folgenden Einstellungen:
+    
+    - **Datenschutz**: Behalten Sie die Standardeinstellung **Öffentlich** bei, wenn Sie möchten, dass jeder in Ihrer Organisation auf die Teamwebsite oder Gruppe, für die diese Bezeichnung angewendet wird, zugreifen kann.
+        
+        Wählen Sie **Privat** aus, wenn Sie möchten, dass der Zugriff nur auf genehmigte Mitglieder in Ihrer Organisation beschränkt wird.
+        
+        Wählen Sie **Keine** aus, wenn Sie den Inhalt im Container mit Vertraulichkeitsbezeichnungen schützen möchten, die Benutzer aber trotzdem selbst Datenschutzeinstellungen konfigurieren können sollen.
+        
+        Die Einstellungen von **Öffentlich** oder **Privat** setzen und sperren die Datenschutzeinstellung, wenn Sie diese Bezeichnung auf den Container aufbringen. Die von Ihnen gewählte Einstellung ersetzt alle vorherigen Datenschutzeinstellungen, die für das Team oder die Gruppe konfiguriert wurden, und sperrt den Datenschutzwert, so dass er nur geändert werden kann, wenn zuvor die Vertraulichkeitsbezeichnung vom Container entfernt wird. Nachdem Sie die Vertraulichkeitsbezeichnung entfernt haben, bleibt die Datenschutzeinstellung der Bezeichnung erhalten, aber Benutzer können sie jetzt wieder ändern.
+    
+    - **Zugriff externer Benutzer**: Legen Sie fest, ob der Gruppenbesitzer [Gäste zur Gruppe hinzufügen](/office365/admin/create-groups/manage-guest-access-in-groups) kann.
+
+4. Wenn Sie **Einstellungen für den Gerätezugriff und die externe Freigabe ** ausgewählt haben, konfigurieren Sie nun die folgende Einstellung:
+    
+    - **Zugriff von nicht verwalteten Geräten aus**: Diese Option verwendet das SharePoint-Feature, bei dem der bedingte Zugriff in Azure AD verwendet wird, um den Zugriff auf SharePoint- und OneDrive-Inhalte von nicht verwalteten Geräten aus zu sperren oder einzuschränken. Weitere Informationen finden Sie unter [Steuern des Zugriffs von nicht verwalteten Geräten aus](/sharepoint/control-access-from-unmanaged-devices) in der SharePoint-Dokumentation. Die Option, die Sie für diese Bezeichnungseinstellung festlegen, entspricht der Ausführung eines PowerShell-Befehls für eine Website, wie in den Schritten 2-4 im Abschnitt [Blockieren oder Einschränken des Zugriffs auf eine bestimmte SharePoint-Website oder OneDrive](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive)in der SharePoint-Anleitung.
+        
+        Weitere Informationen finden Sie unter [Weitere Informationen zu den Abhängigkeiten für die Option „Nicht verwaltete Geräte“](#more-information-about-the-dependencies-for-the-unmanaged-devices-option) am Ende dieses Abschnitts.
 
 > [!IMPORTANT]
-> Wenn Sie eine Bezeichnung auf ein Team, eine Gruppe oder eine Website anwenden, werden nur diese Website- und Gruppeneinstellungen wirksam. Andere Bezeichnungseinstellungen (z. B. Verschlüsselung und Inhaltskennzeichnung) werden nicht auf die Inhalte innerhalb des Teams, der Gruppen oder der Website angewendet.
->
-> Schrittweises Rollout für Mandanten: Wenn Benutzer Teams, Gruppen und Websites erstellen, stehen nur Bezeichnungen mit den Website- und Gruppeneinstellungen zur Auswahl. Wenn Sie derzeit eine Bezeichnung auf einen Container anwenden können, die Website- und Gruppeneinstellungen für die Bezeichnung jedoch nicht aktiviert sind, wird nur der Name der Bezeichnung auf den Container angewendet.
+> Wenn Sie eine Bezeichnung auf ein Team, eine Gruppe oder eine Website anwenden, werden nur diese Website- und Gruppeneinstellungen wirksam. Wenn der [Bereich der Bezeichnung](sensitivity-labels.md#label-scopes) Dateien und E-Mails umfasst, werden andere Bezeichnungseinstellungen wie Verschlüsselung und Inhaltskennzeichnung nicht auf die Inhalte innerhalb des Teams, der Gruppe oder der Website angewendet.
 
 Wenn Ihre Vertraulichkeitskennzeichnung noch nicht veröffentlicht wurde, veröffentlichen Sie diese jetzt, indem Sie sie[einer Richtlinie für Vertraulichkeitskennzeichnungen hinzufügen](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy). Diejenigen Benutzer, denen eine Richtlinie zur Vertraulichkeitskennzeichnung zugeordnet ist, die diese Kennzeichnung beinhaltet, können diese für Websites und Gruppen auswählen.
 
-Aus der Bezeichnungsrichtlinie gilt nur die Richtlinieneinstellung **Diese Bezeichnung standardmäßig auf Dokumente und E-Mail anwenden**, wenn Sie die Bezeichnung auf Container anwenden. Es werden keine anderen Richtlinieneinstellungen angewendet, beispielsweise obligatorische Bezeichnungen, das Anfordern von Benutzerbegründungen sowie ein Link zur benutzerdefinierten Hilfeseite.
+##### <a name="more-information-about-the-dependencies-for-the-unmanaged-devices-option"></a>Weitere Informationen zu den Abhängigkeiten für die Option „Nicht verwaltete Geräte“
+
+Wenn Sie die abhängige Richtlinie für den bedingten Zugriff für SharePoint nicht so konfigurieren, wie unter [App-erzwungene Einschränkungen](https://docs.microsoft.com/sharepoint/app-enforced-restrictions) angeführt, ist die von Ihnen angegebene Option wirkungslos. Darüber hinaus hat sie keine Auswirkungen, wenn sie weniger stark einschränkt als eine konfigurierte Einstellung auf Mandanten-Ebene. Wenn Sie eine organisationsweite Einstellung für nicht verwaltete Geräte konfiguriert haben, wählen Sie eine identische oder restriktivere Bezeichnungseinstellung aus
+
+Wenn Ihr Mandant beispielsweise für **Eingeschränkten, reinen Web-Zugriff zulassen**konfiguriert ist, hat die Bezeichnungseinstellung „Vollzugriff“ keine Auswirkungen, da sie weniger restriktiv ist. Wählen Sie für diese Mandantenebende die Bezeichnungseinstellung, die den Zugriff blockiert (stärker restriktiv) oder die Bezeichnungseinstellung für eingeschränkten Zugriff (diese entspricht der Mandanteneinstellung).
+
+Da Sie die SharePoint-Einstellungen unabhängig von den Bezeichnungseinstellungen konfigurieren können, wird im Assistenten für die Vertraulichkeitsbezeichnung nicht überprüft, ob die Abhängigkeiten eingestellt sind. Diese Abhängigkeiten können konfiguriert werden, nachdem die Bezeichnung erstellt und veröffentlicht wurde, oder sogar, wenn die Bezeichnung bereits angewendet wurde. Wenn die Bezeichnung jedoch bereits angewendet wurde, wird die Bezeichnungseinstellung erst dann wirksam, wenn der Benutzer sich das nächste mal authentifiziert.
 
 ## <a name="sensitivity-label-management"></a>Verwaltung von Vertraulichkeitsbezeichnungen
 
@@ -344,6 +355,9 @@ Informationen zum Verwalten der Koexistenz von Vertraulichkeitsbezeichnungen und
 
 ## <a name="auditing-sensitivity-label-activities"></a>Überwachen von Vertraulichkeitsbezeichnungsaktivitäten
 
+> [!IMPORTANT]
+> Wenn Sie Bezeichnungen trennen, indem Sie nur den Bereich **Gruppen und Websites** für Bezeichnungen auswählen, die Container schützen: Erwägen Sie aufgrund des Überwachungsereignisses **Vertraulichkeitskonflikt bei Dokument erkannt** und der E-Mail, die in diesem Abschnitt beschrieben wurden, [diese Bezeichnungen vor Bezeichnungen zu stellen](sensitivity-labels.md#label-priority-order-matters), für die der Bereich **Dateien und E-Mails** ausgewählt wurde. 
+
 Wenn jemand ein Dokument auf eine Website hochlädt, die mit einer Vertraulichkeitsbezeichnung geschützt ist, und das Dokument eine Vertraulichkeitsbezeichnung mit [höherer Priorität](sensitivity-labels.md#label-priority-order-matters) als die auf die Website angewendete Vertraulichkeitsbezeichnung aufweist, wird diese Aktion nicht blockiert. Angenommen, Sie haben die Bezeichnung **Allgemein** auf eine SharePoint-Website angewendet, und jemand lädt ein Dokument mit der Bezeichnung **Vertraulich** auf diese Site hoch. Da eine Vertraulichkeitsbezeichnung mit einer höheren Priorität Inhalte kennzeichnet, die eine höhere Vertraulichkeitsstufe aufweisen, als Inhalte mit einer niedrigeren Priorität, könnte dies ein Sicherheitsrisiko darstellen.
 
 Obwohl die Aktion nicht blockiert ist, wird sie überwacht und generiert automatisch eine E-Mail-Nachricht an die Person, die das Dokument hochgeladen hat und den Websiteadministrator. Als Resultat können der Benutzer und der Administrator Dokumente mit abweichender Bezeichnungspriorität identifizieren und bei Bedarf Maßnahmen ergreifen. Löschen oder verschieben Sie zum Beispiel das hochgeladene Dokument von der Website.
@@ -362,7 +376,7 @@ All diese Überwachungsereignisse sind in der Kategorie [Vertraulichkeitsbezeich
 
 Sie können Vertraulichkeitsbezeichnungen für Microsoft Teams, Office 365-Gruppen und SharePoint-Websites unter Verwendung der Anweisungen im Abschnitt [Aktivieren der Unterstützung von Vertraulichkeitsbezeichnungen in PowerShell](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell) deaktivieren. Wenn Sie das Feature jedoch deaktivieren möchten, geben Sie in Schritt 5 `$setting["EnableMIPLabels"] = "False"`an.
 
-Diese Aktion blendet zusätzlich die Seite **Websites und Gruppeneinstellungen** beim Erstellen oder Bearbeiten von Vertraulichkeitsbezeichnungen aus und setzt zurück, welche Eigenschaft Container für ihre Konfiguration verwenden. Wenn Sie Vertraulichkeitsbezeichnungen für Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites aktivieren, wird die Eigenschaft, die aus **Klassifizierung** (für [Azure AD-Gruppen Klassifizierung](#classic-azure-ad-group-classification)) verwendet wird, auf **Vertraulichkeit**umgestellt. Wenn Sie Vertraulichkeitsbezeichnungen für Container deaktivieren, ignorieren Container die Eigenschaft „Vertraulichkeit“ und verwenden wieder die Eigenschaft „Klassifizierung“.
+Diese Aktion sorgt dafür, dass all diese Einstellungen nicht mehr für Gruppen und Websites verfügbar sind, wenn Sie Vertraulichkeitsbezeichnungen erstellen oder bearbeiten. Außerdem wird zurückgesetzt, welche Eigenschaft Container für ihre Konfiguration verwenden. Wenn Sie Vertraulichkeitsbezeichnungen für Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites aktivieren, wird die Eigenschaft, die aus **Klassifizierung** (für [Azure AD-Gruppen Klassifizierung](#classic-azure-ad-group-classification)) verwendet wird, auf **Vertraulichkeit**umgestellt. Wenn Sie Vertraulichkeitsbezeichnungen für Container deaktivieren, ignorieren Container die Eigenschaft „Vertraulichkeit“ und verwenden wieder die Eigenschaft „Klassifizierung“.
 
 Das bedeutet, dass alle Bezeichnungseinstellungen von Websites und Gruppen, die zuvor auf Container angewendet wurden, nicht erzwungen werden und Container die Bezeichnungen nicht mehr anzeigen.
 

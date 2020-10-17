@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: f18a98b19b6a1920d1e4d2094ba0bab74f10035e
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: e3b29a8182e38fa05e5f791478157c978632fb13
+ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430139"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48477005"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Bewährte Methoden für Erweiterte Suchanfragen
 
@@ -56,7 +56,7 @@ Kunden, die mehrere Abfragen regelmäßig ausführen, sollten den Verbrauch nach
 
 - **Has Beats enthält**– um unnötige Suche nach Teilzeichenfolgen in Wörtern zu vermeiden, verwenden Sie den- `has` Operator anstelle von `contains` . [Informationen zu Zeichenfolgenoperatoren](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)
 - **In bestimmten Spalten suchen**– suchen Sie in einer bestimmten Spalte, anstatt Volltextsuchen in allen Spalten auszuführen. Verwenden Sie nicht `*` , um alle Spalten zu überprüfen.
-- **Groß-** und Kleinschreibung für die Geschwindigkeit – bei der Suche nach Groß-/Kleinschreibung werden spezifischere und meist leistungsfähigere Suchvorgänge durchgeführt. Namen von [Zeichenfolgenoperatoren](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)mit Berücksichtigung der Groß-/Kleinschreibung, beispielsweise `has_cs` und `contains_cs` , werden normalerweise mit beendet `_cs` . Sie können auch den gleich-Operator mit Berücksichtigung der groß `==` -/Kleinschreibung anstelle von verwenden `~=` .
+- **Groß-** und Kleinschreibung für die Geschwindigkeit – bei der Suche nach Groß-/Kleinschreibung werden spezifischere und meist leistungsfähigere Suchvorgänge durchgeführt. Namen von [Zeichenfolgenoperatoren](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)mit Berücksichtigung der Groß-/Kleinschreibung, beispielsweise `has_cs` und `contains_cs` , werden normalerweise mit beendet `_cs` . Sie können auch den gleich-Operator mit Berücksichtigung der groß `==` -/Kleinschreibung anstelle von verwenden `=~` .
 - **Analysieren, nicht extrahieren**– wenn möglich, verwenden Sie den [Analyse Operator](https://docs.microsoft.com/azure/data-explorer/kusto/query/parseoperator) oder eine Analysefunktion wie [parse_json ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction). Vermeiden `matches regex` Sie den Zeichenfolgenoperator oder die [extract ()-Funktion](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractfunction), die beide regulären Ausdruck verwenden. Reservieren Sie die Verwendung von regulärem Ausdruck für komplexere Szenarien. [Lesen Sie mehr über Analysefunktionen](#parse-strings)
 - **Filter Tables not Expressions**: Filtern Sie nicht nach einer berechneten Spalte, wenn Sie nach einer Tabellenspalte filtern können.
 - **Kein drei**stelliger Begriff – vermeiden Sie einen Vergleich oder eine Filterung mit Ausdrücken mit drei oder weniger Zeichen. Diese Begriffe sind nicht indiziert und entsprechen diesen, erfordern mehr Ressourcen.
@@ -253,7 +253,7 @@ SHA256,MalwareFilterVerdict,MalwareDetectionMethod
 ### <a name="parse-strings"></a>Analysieren von Zeichenfolgen
 Es gibt verschiedene Funktionen, die Sie verwenden können, um Zeichenfolgen effizient zu verarbeiten, die analysiert oder konvertiert werden müssen. 
 
-| String | Funktion | Verwendungsbeispiel |
+| Zeichenfolge | Funktion | Verwendungsbeispiel |
 |--|--|--|
 | Befehlszeilen | [parse_command_line ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-command-line) | Extrahieren Sie den Befehl und alle Argumente. | 
 | Paths | [parse_path ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsepathfunction) | Extrahieren Sie die Abschnitte eines Datei-oder Ordnerpfads. |

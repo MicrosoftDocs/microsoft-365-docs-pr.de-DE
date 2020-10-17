@@ -18,36 +18,36 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Verwenden Sie die folgenden Testumgebungsanleitungen, um Demos, Machbarkeitsstudien oder Entwicklungs-/Testumgebungen für Microsoft 365 Enterprise einzurichten.
-ms.openlocfilehash: 685bf25db330b4bf43a3a7258aeb43517c239e81
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: fefbb18fd108dceba6f387fb8244619c4bb1c167
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686766"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487470"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Testumgebungsanleitungen für Microsoft 365 Enterprise
 
 *Dies gilt sowohl für Microsoft 365 Enterprise als auch Office 365 Enterprise.*
 
-Mithilfe von Testumgebungsanleitungen können Sie schnell mehr zu Microsoft-Produkten erfahren. Sie enthalten Anweisungen zum Konfigurieren vereinfachter, aber repräsentativer Testumgebungen. Sie können diese Umgebungen für Demos, Anpassungen oder das Erstellen komplexer Machbarkeitsstudien für die Dauer eines Test- oder bezahlten Abonnements verwenden. 
+Mithilfe von Testumgebungsanleitungen können Sie schnell mehr zu Microsoft-Produkten erfahren. Sie enthalten Anweisungen zum Konfigurieren vereinfachter, aber repräsentativer Testumgebungen. Sie können diese Umgebungen für Demos, Anpassungen oder das Erstellen komplexer Machbarkeitsstudien für die Dauer eines Test- oder bezahlten Abonnements verwenden.
 
-Testumgebungsanleitungen sind modular aufgebaut. Sie bauen aufeinander auf, sodass mehrere Konfigurationen entstehen, die Ihren Lern- oder Testkonfigurationsanforderungen besser entsprechen. Diese praktische Erfahrung erweitert Ihre Kenntnisse der Bereitstellungsanforderungen neuer Produkte oder Szenarien, sodass Sie besser planen können, wie diese in der Produktionsumgebung gehostet werden sollen.
+TLGs sind modular aufgebaut. Sie basieren auf einander, um mehrere Konfigurationen zu erstellen, die ihren Lern-oder Test Konfigurationsanforderungen besser entsprechen. Das "Ich habe mich selbst und es funktioniert"-praktische Erfahrung hilft Ihnen, die Bereitstellungsanforderungen eines neuen Produkts oder Szenarios zu verstehen, damit Sie das Hosting in der Produktion besser planen können.
 
-Testumgebungsanleitungen ermöglichen die Erstellung repräsentativer Umgebungen zum Entwickeln und Testen von Anwendungen, auch als Entwicklungs-/Testumgebungen bezeichnet.
+Sie können auch TLGs verwenden, um repräsentative Umgebungen zum entwickeln und Testen von Anwendungen zu erstellen, die auch als Entwicklungs-/Testumgebungen bezeichnet werden.
   
 ![Testumgebungsanleitungen für die Microsoft-Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-Wechseln Sie zum [Test Labor Leitfaden](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) für eine visuelle Karte aller Artikel im Microsoft 365 for Enterprise Test Lab-Ratgeber Stapel.
+Für eine visuelle Zuordnung zu allen Artikeln im Stapel Microsoft 365 for Enterprise Test Lab Guide erweitern Sie die folgende Grafik, oder wechseln Sie zu [Microsoft 365 für Enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
-[![Testumgebungsanleitungen für Microsoft 365 Enterprise](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)
+[![Testumgebungsanleitungen für Microsoft 365 Enterprise](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../downloads/Microsoft365EnterpriseTLGStack.pdf)
 
 ## <a name="base-configuration"></a>Standardkonfiguration
 
-Zunächst erstellen Sie eine Testumgebung für [Microsoft 365 für Unternehmen](https://docs.microsoft.com/microsoft-365-enterprise/). Sie können zwei verschiedene Typen von Basiskonfigurationen erstellen:
+Erstellen Sie zunächst eine Testumgebung für [Microsoft 365 für Unternehmen](https://docs.microsoft.com/microsoft-365-enterprise/). Sie können zwei verschiedene Typen von Basiskonfigurationen erstellen:
 
-- Verwenden Sie die [einfache Standardkonfiguration](lightweight-base-configuration-microsoft-365-enterprise.md), wenn Sie die Features und Funktionen von Microsoft 365 Enterprise in einer reinen Cloudumgebung konfigurieren und demonstrieren möchten, die keine lokalen Komponenten umfasst.
+- [Einfache Basiskonfiguration](lightweight-base-configuration-microsoft-365-enterprise.md) : Verwenden Sie dies, wenn Sie Microsoft 365 für Enterprise-Features und-Funktionen in einer nur-Cloud-Umgebung konfigurieren und demonstrieren möchten, die keine lokalen Komponenten enthält.
 
-- Verwenden Sie die [simulierte Unternehmensstandardkonfiguration](simulated-ent-base-configuration-microsoft-365-enterprise.md), wenn Sie die Features und Funktionen von Microsoft 365 Enterprise in einer hybriden Cloudumgebung konfigurieren und demonstrieren möchten, die lokale Komponenten wie eine Active Directory Domain Services (AD DS)-Domäne verwendet.
+- [Simulierte unternehmensbasierte Konfiguration](simulated-ent-base-configuration-microsoft-365-enterprise.md) : Verwenden Sie dies, wenn Sie Microsoft 365 für Enterprise-Features und-Funktionen in einer hybriden Cloud-Umgebung konfigurieren und demonstrieren möchten, in der lokale Komponenten wie eine Active Directory-Domänendienste (AD DS) Domäne verwendet werden.
 
 Sie können auch Testumgebungen für Office 365 E5 erstellen, ohne die Microsoft 365 E5-Lizenz zu Ihrer Test- oder Produktionstestumgebung hinzuzufügen.
     
@@ -69,14 +69,14 @@ Wie Sie identitätsbezogene Features und Funktionen demonstrieren können, erfah
 
 - [Nahtloses einmaliges Anmelden in Azure AD](single-sign-on-m365-ent-test-environment.md)
   
-   Aktivieren und testen Sie das nahtlose einmalige Anmelden in Azure AD mit einem AD DS-Domänencontroller.
+   Aktivieren und testen Sie Azure AD nahtloses einmaliges Anmelden (Seamless SSO) mit einem AD DS Domänencontroller.
 
 - [Mehrstufige Authentifizierung](multi-factor-authentication-microsoft-365-test-environment.md)
   
    Aktivieren und testen Sie die Smartphone-basierte mehrstufige Authentifizierung für ein bestimmtes Benutzerkonto.
 
 - [Schützen von globalen Administratorkonten](protect-global-administrator-accounts-microsoft-365-test-environment.md)
- 
+
    Sperren Sie Ihre globalen Administratorkonten mit Richtlinien für bedingten Zugriff.
 
 - [Rückschreiben des Kennworts](password-writeback-m365-ent-test-environment.md)
@@ -99,7 +99,6 @@ Wie Sie identitätsbezogene Features und Funktionen demonstrieren können, erfah
 
    Erstellen Sie eine Umgebung, um empfohlene Konfigurationen für Identitäts- und Gerätezugriff sowie Richtlinien für bedingten Zugriff zu testen.
 
-
 ## <a name="mobile-device-management"></a>Verwaltung mobiler Geräte
 
 Eine Veranschaulichung von Features und Funktionen im Zusammenhang mit der Verwaltung mobiler Geräte finden Sie unter:
@@ -111,7 +110,6 @@ Eine Veranschaulichung von Features und Funktionen im Zusammenhang mit der Verwa
 - [Registrieren von iOS- und Android-Geräten](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
    
    Registrieren Sie iOS- oder Android-Geräte, und verwalten Sie sie remote.
-
 
 ## <a name="information-protection"></a>Schutz von Daten
 
@@ -128,5 +126,3 @@ Eine Veranschaulichung der schutzbezogenen Features und Funktionen finden Sie un
 - [Privileged Access Management](privileged-access-microsoft-365-enterprise-dev-test-environment.md)
     
    Konfigurieren von Privileged Access Management für Just-in-Time-Zugriff auf privilegierte Aufgaben mit erhöhten Rechten in Ihrer Organisation.
-
-

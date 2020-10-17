@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: In diesem Artikel erfahren Sie mehr über die Verwendung von Explorer und Echt Zeit Erkennungen im Security &amp; Compliance Center, um Bedrohungen effektiv und effizient zu untersuchen und auf diese zu reagieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bd437141f80b80370abeec7585596892f2434655
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 89708efa6a34b5ca7a302ba0ad331a2dac99f5d9
+ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446570"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48477154"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer und Echtzeiterkennung
 
@@ -48,29 +48,64 @@ Mit diesem Bericht haben Sie folgende Möglichkeiten:
 - [Starten eines automatisierten unter Such-und Antwort Prozesses aus einer Ansicht im Explorer](#start-automated-investigation-and-response) (nur ATP-Plan 2)
 - ... [Untersuchung schädlicher e-Mails und vieles mehr](#more-ways-to-use-explorer-or-real-time-detections)!
 
+## <a name="tags-in-threat-explorer"></a>Tags im Threat-Explorer
+
+> [!NOTE] 
+> Das Feature "Benutzer Tags" befindet sich in der Vorschau, steht nicht allen zur Verfügung und kann jederzeit geändert werden. Weitere Informationen zum Veröffentlichungszeitplan finden Sie in der Microsoft 365-Roadmap.
+
+Benutzer Tags sind Bezeichner für bestimmte Benutzergruppen in Microsoft Defender für Office 365. Weitere Informationen rund um Tags, Lizenzierung und Konfigurieren von Tags finden Sie hier: [User Tags in Office 365 ATP](user-tags.md).
+
+Im Threat Explorer können Sie Informationen zu Benutzer Tags in den folgenden Erfahrungen anzeigen:
+
+#### <a name="email-grid-view"></a>E-Mail-Rasteransicht
+
+Die im e-Mail-Raster angezeigte Tags-Spalte enthält alle Tags, die auf die Absender-oder Empfängerpostfächer angewendet wurden. Standardmäßig werden System Tags wie Priority-Konten zuerst angezeigt.
+
+![Filtern von Tags](../../media/tags-grid.png)
+
+#### <a name="filtering"></a>Filtern
+Wir haben jetzt Tags als Filter, damit Sie nur für Prioritäts Konten oder bestimmte Benutzer Tags Szenarien jagen können (und sogar Ergebnisse mit bestimmten Tags als Teil dieser Erfahrung ausschließen). Wenn Sie diese mit den verschiedenen anderen Filtern kombinieren, die wir bereitstellen, können Sie den Umfang der Untersuchung einschränken.
+
+![Filtern von Tags](../../media/tags-filter-normal.png)
+
+![Keine Filter-Tags](../../media/tags-filter-not.png)
+
+#### <a name="email-detail-flyout"></a>E-Mail-Detail Flyout
+Um die einzelnen Tags für Absender und Empfänger anzuzeigen, klicken Sie auf den Betreff. Das Flyout Nachrichtendetails wird geöffnet. Auf der Registerkarte Zusammenfassung werden die Absender-und Empfänger Tags separat angezeigt, sofern Sie für eine e-Mail vorhanden sind.
+Die Informationen zu einzelnen Tags für Absender und Empfänger erstreckt sich auch auf exportierte CSV-Datei, in der Sie diese Details in 2 separaten Spalten sehen können. 
+
+![E-Mail-Detail-Tags](../../media/tags-flyout.png)
+
+Tags-Informationen werden auch im Flyout URL-Klicks angezeigt. Um zu der URL auf Flyout zu gelangen, müssen Sie zu Phishing oder alle e-Mail-Ansicht, und dann auf die Registerkarte URLs oder URL-Klicks wechseln. Wenn Sie auf ein einzelnes URL-Flyout klicken, werden weitere Details zu Klicks für diese URL angezeigt, und dem Klick sind Tags zugeordnet. 
+
+![URL-Tags](../../media/tags-urls.png)
+
 ## <a name="improvements-to-threat-hunting-experience-upcoming"></a>Verbesserungen bei der Jagd nach Bedrohungen (bevorstehende)
 
 ### <a name="updated-threat-information-for-emails"></a>Aktualisierte Bedrohungsinformationen für e-Mails
 
-Wir haben uns auf Plattform-und Daten Qualitätsverbesserungen konzentriert, um die Datengenauigkeit und Konsistenz für e-Mail-Datensätze zu verbessern. Diese Updates umfassen die Konsolidierung der vorab Zustellung und der Übermittlung von Informationen (Beispielaktion, die in einer e-Mail als Teil des Zap-Prozesses ausgeführt wird) in einen einzelnen Datensatz zusammen mit hinzugefügtem Umfang wie Spam Urteil, Bedrohungen auf Entitätsebene (z. b. welche URL böswillig ist) und den neuesten Zustellungs Standorten. 
+Wir haben uns auf Plattform-und Daten Qualitätsverbesserungen konzentriert, um die Datengenauigkeit und Konsistenz für e-Mail-Datensätze zu verbessern. Diese Reihe von Updates umfasst die Konsolidierung von vorab Bereitstellungs-und Post Zustellungsinformationen (Beispielaktion, die in einer e-Mail als Teil des Zap-Prozesses ausgeführt wird) in einen einzelnen Datensatz zusammen mit hinzugefügtem Umfang wie Spam Urteil, Bedrohungen auf Entitätsebene (beispielsweise, welche URL böswillig war) und den neuesten Zustellungs Standorten. 
 
 Nach diesen Updates wird für jede Nachricht ein einzelner Eintrag angezeigt, unabhängig von den unterschiedlichen nach Zustellungs Ereignissen, die in der Nachricht stattfinden. Zu den Aktionen können zap, manuelle Korrektur (also Administratoraktion), dynamische Zustellung usw. gehören. 
 
 Neben Malware-und Phishing-Bedrohungen können Sie nun das Spam Urteil sehen, das einer e-Mail zugeordnet ist. In der e-Mail können Sie alle mit der e-Mail verbundenen Bedrohungen zusammen mit den entsprechenden Erkennungstechnologien sehen. Jede e-Mail kann 0, 1 oder mehrere Bedrohungen haben. Im Abschnitt Details des e-Mail-Flyouts werden die aktuellen Bedrohungen angezeigt. Außerdem würde das Erkennungstechnologie Feld für mehrere Bedrohungen (beispielsweise eine e-Mail mit Schadsoftware und Phishing) die Threat-Detection Zuordnung ergeben, was bedeutet, dass die Erkennungstechnologie zur Identifizierung der Bedrohung geführt hat.
 
-Die Reihe von Erkennungstechnologien wurde aktualisiert, um neue Erkennungsmethoden sowie Spamerkennungstechnologien sowie aross alle unterschiedlichen e-Mail-Ansichten (Schadsoftware, Phishing, alle e-Mail-Nachrichten) einzuschließen, Sie verfügen über dieselbe konsistente Gruppe von Erkennungstechnologien, um die Ergebnisse zu filtern. 
+Die Reihe von Erkennungstechnologien wurde aktualisiert, um neue Erkennungsmethoden sowie Spamerkennungstechnologien sowie für alle unterschiedlichen e-Mail-Ansichten (Schadsoftware, Phishing, alle e-Mail-Nachrichten) zu verwenden, Sie verfügen über denselben konsistenten Reihe von Erkennungstechnologien, um die Ergebnisse zu filtern. 
 
-**Hinweis**: die Urteils Analyse ist möglicherweise nicht unbedingt an Entitäten gebunden. Beispielsweise kann eine e-Mail als Phishing oder Spam klassifiziert werden, aber es gibt keine URLs, auf die ein Phishing/Spam-Urteil abgestempelt wurde. Dies liegt daran, dass unsere Filter auch Inhalte und andere Details für eine e-Mail auswerten, bevor Sie ein Urteil zuweisen. 
+> [!NOTE]
+> Die Urteils Analyse ist möglicherweise nicht unbedingt an Entitäten gebunden. Beispielsweise kann eine e-Mail als Phishing oder Spam klassifiziert werden, aber es gibt keine URLs, auf die ein Phishing/Spam-Urteil abgestempelt wurde. Dies liegt daran, dass unsere Filter auch Inhalte und andere Details für eine e-Mail auswerten, bevor Sie ein Urteil zuweisen. 
  
 #### <a name="threats-in-urls"></a>Bedrohungen in URLs
 
 Auf der Registerkarte e-Mail-Flyout-> Details können Sie nun die spezifische Bedrohung für eine URL anzeigen (Bedrohung für eine URL kann Malware, Phishing, Spam oder keine sein).
 
-![URL-Bedrohungen](../../media/URL_Threats.png)
+> [!div class="mx-imgBorder"]
+> ![URL-Bedrohungen](../../media/URL_Threats.png)
 
 ### <a name="updated-timeline-view-upcoming"></a>Aktualisierte Zeitachsenansicht (bevorstehende)
 
-![Aktualisierte Zeitachsenansicht](../../media/Email_Timeline.png)
+> [!div class="mx-imgBorder"]
+> ![Aktualisierte Zeitachsenansicht](../../media/Email_Timeline.png)
 
 Zusätzlich zur Identifizierung aller Zustellungs-und Post Zustellungs Ereignisse gibt die Zeitachsenansicht auch Informationen zu der zu diesem Zeitpunkt identifizierten Bedrohung für eine Teilmenge dieser Ereignisse. Außerdem erhalten Sie weitere Informationen zu zusätzlichen Aktionen (beispielsweise zap, manuelle Korrektur) sowie das Ergebnis dieser Aktion. Die Zeitachsenansicht enthält Informationen über die ursprüngliche Zustellung und anschließend alle Ereignisse nach der Zustellung, die für eine e-Mail ausgeführt wurden.
 
@@ -86,27 +121,31 @@ Heute wird der Zustellungs Standort im e-Mail-Raster und im e-Mail-Flyout angeze
 
 Der ursprüngliche Übermittlungsort würde mehr Informationen darüber geben, wo anfänglich eine e-Mail zugestellt wurde. Der aktuelle Zustellungsort würde einen Ort enthalten, an dem eine e-Mail nach Systemaktionen wie zap-oder Administratoraktionen wie dem **Wechsel zu gelöschten Elementen**gelandet ist. Neuester Übermittlungsort dient dazu, Administratoren über den letzten bekannten Standort der Nachricht nach Zustellung oder System-admin-Aktionen zu informieren. Das Design umfasst keine Endbenutzer bezogenen Aktionen für die e-Mail. Beispiel: Wenn ein Benutzer eine Nachricht löscht oder die Nachricht in Archiv/PST verschiebt, wird der Speicherort der Nachricht "Zustellung" nicht aktualisiert. Wenn jedoch eine Systemaktion den Standort aktualisiert hat (z. b. zap, was dazu führt, dass eine e-Mail in die Quarantäne verschoben wird), wird der letzte Übermittlungsort als Quarantäne angezeigt. 
 
-![Aktualisierte Zustellungsorte](../../media/Updated_Delivery_Location.png)
+> [!div class="mx-imgBorder"]
+> ![Aktualisierte Zustellungsorte](../../media/Updated_Delivery_Location.png)
 
-**Hinweis**: Es gibt nur wenige Fälle, in denen der Übermittlungsort und die Zustellungs Aktion als Wert "unbekannt" angezeigt werden können:
+> [!NOTE]
+> Es gibt nur wenige Fälle, in denen der Übermittlungsort und die Zustellungs Aktion als Wert "unbekannt" angezeigt werden können:
+> 
+> - Möglicherweise wird der Übermittlungsort als zugestellt und der Übermittlungsort als unbekannt angezeigt. Dies geschieht, wenn die Nachricht zugestellt wurde, aber eine Posteingangsregel hat die Nachricht in einen Standardordner (Entwurf, Archiv usw.) anstelle der Posteingang-oder Junk-e-Mail-Ordner verschoben. 
+> 
+> - Der aktuelle Übermittlungsort kann unbekannt sein, wenn eine Administrator/System-Aktion (beispielsweise zap, Administratoraktion) versucht wird, die Nachricht jedoch nicht gefunden wird. In der Regel geschieht die Aktion, nachdem der Benutzer die Nachricht verschoben oder gelöscht hat. Überprüfen Sie in diesen Fällen die Spalte Ergebnis/Details in der Zeitachsenansicht. Suchen Sie nach der Nachricht: Nachricht, die vom Benutzer verschoben oder gelöscht wurde.
 
-- Möglicherweise wird der Übermittlungsort als zugestellt und der Übermittlungsort als unbekannt angezeigt. Dies geschieht, wenn die Nachricht zugestellt wurde, aber eine Posteingangsregel hat die Nachricht in einen Standardordner (Entwurf, Archiv usw.) anstelle der Posteingang-oder Junk-e-Mail-Ordner verschoben. 
-
-- Der aktuelle Übermittlungsort kann unbekannt sein, wenn eine Administrator/System-Aktion (beispielsweise zap, Administratoraktion) versucht wird, die Nachricht jedoch nicht gefunden wird. In der Regel geschieht die Aktion, nachdem der Benutzer die Nachricht verschoben oder gelöscht hat. Überprüfen Sie in diesen Fällen die Spalte Ergebnis/Details in der Zeitachsenansicht. Suchen Sie nach der Nachricht: Nachricht, die vom Benutzer verschoben oder gelöscht wurde.
-
-![Zustellungsorte für Zeitachse](../../media/Updated_Timeline_Delivery_Location.png)
+> [!div class="mx-imgBorder"]
+> ![Zustellungsorte für Zeitachse](../../media/Updated_Timeline_Delivery_Location.png)
 
 ### <a name="additional-actions"></a>Zusätzliche Aktionen 
 
-Weitere Aktionen bestehen aus den Aktionen, die nach der Zustellung der e-Mail angewendet wurden, und kann zap, manuelle Korrektur (Aktion, die von einem Admi durchgeführt wird; n z.b., Soft Delete), dynamische Zustellung und erneute Verarbeitung (eine e-Mail wurde rückwirkend als gut erkannt) enthalten. 
+Weitere Aktionen bestehen aus den Aktionen, die nach der Zustellung der e-Mail angewendet wurden, und kann zap, manuelle Korrektur (Aktion, die von einem Administrator ausgeführt wird, beispielsweise "Soft Delete"), dynamischer Zustellung und erneuter Verarbeitung (eine e-Mail wurde rückwirkend als "gut" erkannt) enthalten. 
 
 > [!NOTE]
 >
 > - Im Rahmen dieser Änderung wird der Wert "Remove by Zap", der derzeit im Zustellungs Aktionsfilter angezeigt wird, entfernt. Sie haben eine Möglichkeit, alle e-Mails mit dem zap-Versuch durch die zusätzlichen Aktionen zu suchen.
 >
-> -Es werden neue Felder und Werte für Erkennungstechnologien und zusätzliche Aktionen (insbesondere für zap-Szenarien) vorhanden sein. Bewerten Sie die vorhandenen gespeicherten Abfragen und nachverfolgten Abfragen, um sicherzustellen, dass Sie mit den neuen Werten funktionieren. 
+> - Es werden neue Felder und Werte für Erkennungstechnologien und zusätzliche Aktionen (insbesondere für zap-Szenarien) vorhanden sein. Bewerten Sie die vorhandenen gespeicherten Abfragen und nachverfolgten Abfragen, um sicherzustellen, dass Sie mit den neuen Werten funktionieren. 
 
-![Additional_Actions](../../media/Additional_Actions.png)
+> [!div class="mx-imgBorder"]
+> ![Additional_Actions](../../media/Additional_Actions.png)
 
 ### <a name="system-overrides"></a>System Überschreibungen 
 
@@ -120,18 +159,23 @@ System Überschreibungen sind eine Methode zum Festlegen von Ausnahmen für den 
 
 ![System_Overrides](../../media/System_Overrides.png)
 
-![System_Overrides_Grid](../../media/System_Overrides_Grid.png)
+> [!div class="mx-imgBorder"]
+> ![System_Overrides_Grid](../../media/System_Overrides_Grid.png)
+
 
 ### <a name="improvements-around-url-and-clicks-experience"></a>Verbesserungen bei der URL-und Klicks-Umgebung
 
-Der Verbesserungen im Hinblick auf die URL-und URL-Klicks Daten umfassen Folgendes:
+Die Verbesserungen im Hinblick auf die URL-und URL-Klicks Daten umfassen Folgendes:
 
--   Anzeigen der vollständig angeklickten URL (einschließlich aller Abfrageparameter, die Teil der URL sind) im Abschnitt Klicks im URL-Flyout. Derzeit zeigen wir die URL-Domäne und den Pfad in der Titelleiste an. Diese Informationen werden erweitert, um die vollständige URL anzuzeigen.
--   Fixes für URL-Filter (URL-URL-Domäne vs-URL-Domäne und-Pfad): Wir haben Aktualisierungen bei der Suche nach Nachrichten durchgeführt, die eine URL/Klick Urteil enthalten. Im Rahmen dieser Vorgehensweise haben wir die Unterstützung für protokollunabhängige Suchvorgänge aktiviert (was bedeutet, dass Sie direkt nach einer URL ohne http suchen können). Standardmäßig wird die URL-Suche dem http-Wert zugeordnet, sofern nicht explizit angegeben. Zum Beispiel:
+ - Anzeigen der vollständig angeklickten URL (einschließlich aller Abfrageparameter, die Teil der URL sind) im Abschnitt Klicks im URL-Flyout. Derzeit zeigen wir die URL-Domäne und den Pfad in der Titelleiste an. Diese Informationen werden erweitert, um die vollständige URL anzuzeigen.
+ 
+ - Fixes für URL-Filter (URL-URL-Domäne vs-URL-Domäne und-Pfad): Wir haben Aktualisierungen bei der Suche nach Nachrichten durchgeführt, die eine URL/Klick Urteil enthalten. Im Rahmen dieser Vorgehensweise haben wir die Unterstützung für protokollunabhängige Suchvorgänge aktiviert (was bedeutet, dass Sie direkt nach einer URL ohne http suchen können). Standardmäßig wird die URL-Suche dem http-Wert zugeordnet, sofern nicht explizit angegeben. Beispiel:
 
-  a.    Suchen Sie mit und ohne das `http://` Präfix in den Filterfeldern "URL", "URL-Domäne" und "URL-Domäne und-Pfad". Dieses Verhalten ist konsistent und sollte dasselbe Ergebnis aufweisen.
-  b.    Suchen Sie nach dem `https://` Präfix in "URL". Wenn diese nicht vorhanden `http://` ist, wird das Präfix angenommen.
-  c.     `/` am Anfang und Ende des "URL-Pfads" werden die Felder "URL-Domäne", "URL-Domäne" und "Pfad" ignoriert. `/` am Ende des Felds "URL" wird ignoriert. 
+   1. Suchen Sie mit und ohne das `http://` Präfix in den Filterfeldern "URL", "URL-Domäne" und "URL-Domäne und-Pfad". Dieses Verhalten ist konsistent und sollte dasselbe Ergebnis aufweisen.
+   
+   1. Suchen Sie nach dem `https://` Präfix in "URL". Wenn diese nicht vorhanden `http://` ist, wird das Präfix angenommen.
+   
+   1. `/` am Anfang und Ende des "URL-Pfads" werden die Felder "URL-Domäne", "URL-Domäne" und "Pfad" ignoriert. `/` am Ende des Felds "URL" wird ignoriert. 
 
 ### <a name="phish-confidence-level"></a>Phishing-Zuverlässigkeitsstufe
 
@@ -156,7 +200,8 @@ Im Rahmen der Verbesserung des Jagd Prozesses haben wir einige Aktualisierungen 
 
 Sie sehen die Zeitzone für die e-Mail-Einträge innerhalb des Portals sowie für exportierte Daten. Die Zeitzone wird in verschiedenen Bereichen wie dem e-Mail-Raster, dem Detail Flyout, der e-Mail-Zeitachse und ähnlichen e-Mails angezeigt, sodass die Zeitzone für das Resultset für den Benutzer eindeutig ist.
 
-![Zeitzone im Explorer anzeigen](../../media/TimezoneImprovements.png)
+> [!div class="mx-imgBorder"]
+> ![Zeitzone im Explorer anzeigen](../../media/TimezoneImprovements.png)
 
 ### <a name="update-in-the-refresh-process"></a>Aktualisieren im Aktualisierungsprozess
 
@@ -164,19 +209,22 @@ Wir haben Feedback rund um Verwirrung mit automatischer Aktualisierung gehört (
 
 Aus Erfahrungsgründen kann der Benutzer den unterschiedlichen Filterbereich (aus Filtersatz und Datum) anwenden und entfernen und die Schaltfläche aktualisieren drücken, um die Ergebnisse zu filtern, sobald Sie mit der Definition der Abfrage fertig sind. Die Schaltfläche Aktualisieren wurde auch aktualisiert, um Sie deutlich auf dem Bildschirm aufzurufen. Wir haben auch Tooltips und Produktdokumentationen zu dieser Änderung aktualisiert.
 
-![Klicken Sie auf aktualisieren, um die Ergebnisse zu filtern](../../media/ManualRefresh.png)
+> [!div class="mx-imgBorder"]
+> ![Klicken Sie auf aktualisieren, um die Ergebnisse zu filtern](../../media/ManualRefresh.png)
 
 ### <a name="chart-drilldown-to-add-to-filters"></a>Zu filtern Hinzuzufügender Diagramm Drilldown
 
 Nun können Sie auf die Werte der Diagrammlegende klicken, um diesen Wert als Filter hinzuzufügen. Beachten Sie, dass Sie weiterhin auf die Schaltfläche Aktualisieren klicken müssen, um die Ergebnisse als Teil der oben beschriebenen Änderung zu filtern.
 
-![Drilldown durch Diagramme zum Filtern](../../media/ChartDrilldown.png)
+> [!div class="mx-imgBorder"]
+> ![Drilldown durch Diagramme zum Filtern](../../media/ChartDrilldown.png)
 
 ### <a name="in-product-information-updates"></a>In Produkt Informations Updates
 
 Außerdem sollten weitere Details im Produkt angezeigt werden. Beispielsweise die Gesamtzahl der Suchergebnisse im Raster (siehe unten) sowie Verbesserungen bei Beschriftungen, Fehlermeldungen und QuickInfos, um weitere Informationen zu filtern, Suchfunktionen und Resultsets zu erhalten.
 
-![In-Produktinformationen anzeigen](../../media/ProductInfo.png)
+> [!div class="mx-imgBorder"]
+> ![In-Produktinformationen anzeigen](../../media/ProductInfo.png)
 
 ## <a name="extended-capabilities-in-threat-explorer"></a>Erweiterte Funktionen im Threat-Explorer
 
@@ -185,7 +233,8 @@ Außerdem sollten weitere Details im Produkt angezeigt werden. Beispielsweise di
 Heute stellen wir die Liste der Top-Zielbenutzer in der Malware-Ansicht für e-Mails (im Abschnitt "Top-Malware Familien") bereit. Wir werden diese Ansicht auch in Phishing und alle e-Mail-Ansichten erweitern, wo Sie die ersten fünf Zielbenutzer zusammen mit der Anzahl der Versuche für jeden Benutzer für die entsprechende Ansicht anzeigen können (beispielsweise für die Phishing-Ansicht können Sie die Anzahl der Phishing-Versuche sehen).
 Außerdem können Sie die Liste der Zielbenutzer bis zu einem Grenzwert von 3000 zusammen mit der Anzahl der Versuche für die Offlineanalyse für jede e-Mail-Ansicht exportieren. Darüber hinaus wählen Sie Nein aus. von versuchen (beispielsweise 13 Versuche unten) würde eine gefilterte Ansicht in Threat Explorer öffnen, sodass Sie weitere Details in e-Mails und Bedrohungen für diesen Benutzer anzeigen können.
 
-![Am häufigsten verwendete Benutzer](../../media/Top_Targeted_Users.png)
+> [!div class="mx-imgBorder"]
+> ![Am häufigsten verwendete Benutzer](../../media/Top_Targeted_Users.png)
 
 
 ### <a name="exchange-transport-rules"></a>Exchange-Transportregeln
@@ -204,7 +253,8 @@ Die Verfügbarkeit von ETR-Suche und-Namen hängt von der jeweiligen Rolle ab, d
 
 Im e-Mail-Raster, im Detail-Flyout und in der exportierten CSV-Datei werden die ETRs mit einem Namen/einer GUID angezeigt, wie unten dargestellt.
 
-![Exchange-Transport Regeln](../../media/ETR_Details.png)
+> [!div class="mx-imgBorder"]
+> ![Exchange-Transport Regeln](../../media/ETR_Details.png)
 
 ### <a name="inbound-connectors"></a>Eingehende Connectors
 
@@ -212,7 +262,8 @@ Connectors sind eine Sammlung von Anweisungen, mit denen die Art und Weise angep
 Die Suche nach Konnektoren ist in der Natur "Contains", was bedeutet, dass partielle Stichwortsuche auch funktionieren sollte.
 In der Hauptraster Ansicht, im Detail Flyout und in der exportierten CSV werden die Konnektoren im Format Name/GUID wie unten gezeigt angezeigt:
 
-![Details zu Connectors](../../media/Connector_Details.png)
+> [!div class="mx-imgBorder"]
+> ![Details zu Connectors](../../media/Connector_Details.png)
 
 ## <a name="new-features-in-threat-explorer-and-real-time-detections"></a>Neue Features in Threat Explorer und Echt Zeit Erkennungen
 
@@ -284,7 +335,8 @@ Sie können den gleichen Speicherort im Bericht über Echt Zeit Erkennungen wie 
 > [!TIP]
 > Network Message ID ordnet den Klick zurück zu bestimmten Mails zu, wenn Sie über den Explorer oder zugeordnete Tools von Drittanbietern über die Netzwerknachrichten-ID suchen. Durch die Suche über die Netzwerknachrichten-ID erhalten Administratoren die spezifische e-Mail-Adresse, die mit einem Klick Ergebnis verknüpft ist. Für eine schnellere und leistungsstärkere Analyse durch den Export mit wird die korrelierte Identifikation der Netzwerknachrichten-ID ermöglicht.
 
-![Registerkarte "Klicks" im Explorer](../../media/tp_ExportClickResultAndNetworkID.png)
+> [!div class="mx-imgBorder"]
+> ![Registerkarte "Klicks" im Explorer](../../media/tp_ExportClickResultAndNetworkID.png)
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Siehe in e-Mail erkannte Malware nach Technologie
 
@@ -294,17 +346,20 @@ Angenommen, Sie möchten die von Microsoft 365-Technologie erkannte Schadsoftwar
 
 2. Wählen Sie im Menü **Ansicht** die Option **e-Mail-**  >  **Schadsoftware**aus.
 
-   ![Menü "Ansicht" für Explorer](../../media/ExplorerViewEmailMalwareMenu.png)
+   > [!div class="mx-imgBorder"]
+   > ![Menü "Ansicht" für Explorer](../../media/ExplorerViewEmailMalwareMenu.png)
 
 3. Klicken Sie auf **Absender**, und wählen Sie dann **Basis**  >  **Erkennungstechnologie**aus.
 
    Ihre Erkennungstechnologien stehen nun als Filter für den Bericht zur Verfügung.
 
-   ![Technologien zur Erkennung von Malware](../../media/ExplorerEmailMalwareDetectionTech.png)
+   > [!div class="mx-imgBorder"]
+   > ![Technologien zur Erkennung von Malware](../../media/ExplorerEmailMalwareDetectionTech.png)
 
 4. Wählen Sie eine Option aus, und klicken Sie dann auf die Schaltfläche **Aktualisieren** , um diesen Filter anzuwenden.
 
-   ![Ausgewählte Erkennungstechnologie](../../media/ExplorerEmailMalwareDetectionTechATP.png)
+   > [!div class="mx-imgBorder"]
+   > ![Ausgewählte Erkennungstechnologie](../../media/ExplorerEmailMalwareDetectionTechATP.png)
 
 Der Bericht wird aktualisiert, um die in e-Mail-Nachweise erkannten Ergebnisse mithilfe der ausgewählten Technologie-Option anzuzeigen. Von hier aus können Sie weitere Analysen durchführen.
 
@@ -318,15 +373,17 @@ Um Phishing-URLs in Nachrichten und Klicks auf URLs in Phishing-Nachrichten zu �
 
 2. Wählen Sie im Menü **Ansicht** die Option Phishing **per e-Mail**aus  >  **Phish**.
 
-   ![Menü "Ansicht" für Explorer](../../media/ExplorerViewEmailPhishMenu.png)
+   > [!div class="mx-imgBorder"]
+   > ![Menü "Ansicht" für Explorer](../../media/ExplorerViewEmailPhishMenu.png)
 
 3. Klicken Sie auf **Absender**, und wählen Sie dann **URLs**  >  **Klicken Sie auf Urteil**.
 
 4. Wählen Sie eine oder mehrere Optionen aus, beispielsweise " **blockiert** " und "über **schrieben**", und klicken Sie dann auf die Schaltfläche **Aktualisieren** , die sich in derselben Reihe befindet wie die Optionen zum Anwenden des Filters. (Aktualisieren Sie Ihr Browserfenster nicht.)
 
-   ![URLs und Klick Urteile](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
+   > [!div class="mx-imgBorder"]
+   > ![URLs und Klick Urteile](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
 
-    Der Bericht wird aktualisiert, um zwei unterschiedliche URL-Tabellen auf der Registerkarte URL unter dem Bericht anzuzeigen:
+   Der Bericht wird aktualisiert, um zwei unterschiedliche URL-Tabellen auf der Registerkarte URL unter dem Bericht anzuzeigen:
 
    - **Top-URLs** sind die URLs, die in den Nachrichten enthalten sind, nach denen Sie nach unten gefiltert haben, und die e-Mail-Zustellungs Aktion zählt für jede URL. In der Phishing-e-Mail-Ansicht enthält diese Liste normalerweise legitime URLs. Angreifer enthalten eine Mischung aus guten und ungültigen URLs in ihren Nachrichten, um Sie zu übermitteln, aber Sie machen die bösartigen Links für den Benutzer interessanter, auf Sie zuwerden. Die Tabelle der URLs wird nach der Gesamtzahl der e-Mails sortiert (Beachten Sie jedoch, dass diese Spalte ausgeblendet ist, um die Ansicht zu vereinfachen).
 
@@ -334,7 +391,8 @@ Um Phishing-URLs in Nachrichten und Klicks auf URLs in Phishing-Nachrichten zu �
 
    Die zwei URL-Tabellen zeigen die wichtigsten URLs in Phishing-e-Mails nach Zustellungs Aktion und Speicherort an, und Sie zeigen URL-Klicks an, die blockiert wurden (oder trotz einer Warnung besucht wurden), sodass Sie verstehen, welche möglichen fehlerhaften Links von Benutzern empfangen und mit den Benutzern in Interaktion stehen. Von hier aus können Sie weitere Analysen durchführen. Beispielsweise können Sie unter dem Diagramm die häufigsten URLs in e-Mail-Nachrichten sehen, die in der Umgebung Ihrer Organisation blockiert wurden.
 
-   ![Blockierte Explorer-URLs](../../media/ExplorerPhishClickVerdictURLs.png)
+   > [!div class="mx-imgBorder"]
+   > ![Blockierte Explorer-URLs](../../media/ExplorerPhishClickVerdictURLs.png)
 
    Wählen Sie eine URL aus, um ausführlichere Informationen anzuzeigen.
 
@@ -362,13 +420,15 @@ Angenommen, Sie möchten e-Mail-Nachrichten anzeigen, die Benutzer in Ihrer Orga
 
 2. Wählen Sie im Menü **Ansicht** die Option **e-Mail-** über  >  **mittlungen**aus.
 
-   ![Menü "Ansicht" für Explorer](../../media/explorer-view-menu-email-user-reported.png)
+   > [!div class="mx-imgBorder"]
+   > ![Menü "Ansicht" für Explorer](../../media/explorer-view-menu-email-user-reported.png)
 
 3. Klicken Sie auf **Absender**, und wählen Sie **Standard**  >  **Berichtstyp**aus.
 
 4. Wählen Sie eine Option wie **Phishing**aus, und klicken Sie dann auf die Schaltfläche **Aktualisieren** .
 
-   ![Vom Benutzer gemeldetes Phishing](../../media/EmailUserReportedReportType.png)
+   > [!div class="mx-imgBorder"]
+   > ![Vom Benutzer gemeldetes Phishing](../../media/EmailUserReportedReportType.png)
 
 Der Bericht wird aktualisiert, um Daten über e-Mail-Nachrichten anzuzeigen, die Personen in Ihrer Organisation als Phishing-Versuch gemeldet haben. Sie können diese Informationen verwenden, um weitere Analysen durchzuführen und bei Bedarf Ihre [ATP-Anti-Phishing-Richtlinien](configure-atp-anti-phishing-policies.md)anzupassen.
 

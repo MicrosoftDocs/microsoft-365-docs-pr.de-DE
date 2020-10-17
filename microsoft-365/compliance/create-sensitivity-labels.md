@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Eine Anforderung für alle Microsoft Information Protection-Lösungen: Erstellen, Konfigurieren und Veröffentlichen Sie Vertraulichkeitsbezeichnungen, um die Dokumente und E-Mails Ihres Unternehmens zu klassifizieren und zu schützen.'
-ms.openlocfilehash: b11f2c089f445c73ec43a6030d756c7da4d2f26c
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 2476c1f7e73c4da5699dcd8b297e251ab13b0798
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546891"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445420"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Erstellen und Konfigurieren von Vertraulichkeitsbezeichnungen und deren Richtlinien
 
@@ -61,19 +61,27 @@ Der globale Administrator für Ihre Organisation verfügt über vollständige Be
     
     Hinweis: Standardmäßig verfügen Mandanten über keine Bezeichnungen, und Sie müssen sie erstellen. Die Bezeichnungen im Beispielbild zeigen Standardbezeichnungen, die [aus Azure Information Protection migriert wurden](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
 
-3. Folgen Sie für die Bezeichnungseinstellungen den Eingabeaufforderungen im Assistenten.
+3. Auf der Seite **Bereich für diese Bezeichnung festlegen** bestimmen die ausgewählten Optionen, welchen Bereich die Bezeichnung für die von Ihnen konfigurierten Einstellungen umfasst, und wo die veröffentlichten Bezeichnungen sichtbar sind:
+    
+    ![Bereiche für Vertraulichkeitsbezeichnungen](../media/sensitivity-labels-scopes.png)
+    
+    - Wenn Sie **Dateien und E-Mails** ausgewählt haben, können Sie in diesem Assistenten Einstellungen für Apps konfigurieren, die Vertraulichkeitsbezeichnungen unterstützen, darunter Office Word und Outlook. Wenn Sie diese Option nicht ausgewählt haben, zeigt der Assistent die erste Seite dieser Einstellungen zwar an, diese können aber nicht konfiguriert werden. Außerdem können die Bezeichnungen nicht von Benutzern in diesen Apps ausgewählt werden.
+    
+    - Wenn Sie **Gruppen und Websites** ausgewählt haben, können Sie in diesem Assistenten Einstellungen konfigurieren, die für Microsoft 365-Gruppen sowie Seiten für Teams und SharePoint gelten. Wenn Sie diese Option nicht ausgewählt haben, zeigt der Assistent die erste Seite dieser Einstellungen zwar an, diese können aber nicht konfiguriert werden. Außerdem können die Bezeichnungen nicht von Benutzern in diesen Gruppen und auf diesen Seiten ausgewählt werden.
+
+4. Folgen Sie für die Bezeichnungseinstellungen den Eingabeaufforderungen im Assistenten.
     
     Weitere Informationen zu den Bezeichnungseinstellungen finden Sie unter [Wirkung von Vertraulichkeitsbezeichnungen](sensitivity-labels.md#what-sensitivity-labels-can-do) in den Übersichtsinformationen sowie im Assistenten in der Hilfe zu den einzelnen Einstellungen.
 
-4. Wiederholen Sie diese Schritte, um weitere Bezeichnungen zu erstellen. Wenn Sie jedoch eine Unterbezeichnung erstellen möchten, wählen Sie zuerst die übergeordnete Bezeichnung sowie **...** für **Weitere Aktionen** und dann **Unterbezeichnung hinzufügen** aus.
+5. Wiederholen Sie diese Schritte, um weitere Bezeichnungen zu erstellen. Wenn Sie jedoch eine Unterbezeichnung erstellen möchten, wählen Sie zuerst die übergeordnete Bezeichnung sowie **...** für **Weitere Aktionen** und dann **Unterbezeichnung hinzufügen** aus.
 
-5. Wenn Sie alle benötigten Bezeichnungen erstellt haben, bringen Sie sie bei Bedarf durch Verschieben nach oben oder unten in die gewünschte Reihenfolge. Wenn Sie die Reihenfolge der Bezeichnungen ändern möchten, wählen Sie **...** für **Weitere Aktionen** und dann **Nach oben** oder **Nach unten** aus. Weitere Informationen hierzu finden Sie unter [Priorität der Bezeichnungen (Reihenfolge wesentlich)](sensitivity-labels.md#label-priority-order-matters) aus den Übersichtsinformationen.
+6. Wenn Sie alle benötigten Bezeichnungen erstellt haben, bringen Sie sie bei Bedarf durch Verschieben nach oben oder unten in die gewünschte Reihenfolge. Wenn Sie die Reihenfolge der Bezeichnungen ändern möchten, wählen Sie **...** für **Weitere Aktionen** und dann **Nach oben** oder **Nach unten** aus. Weitere Informationen hierzu finden Sie unter [Priorität der Bezeichnungen (Reihenfolge wesentlich)](sensitivity-labels.md#label-priority-order-matters) aus den Übersichtsinformationen.
 
 Um eine vorhandene Bezeichnung zu bearbeiten, markieren Sie sie, und wählen Sie dann die Schaltfläche **Bezeichnung bearbeiten** aus:
 
 ![Schaltfläche „Etikett bearbeiten“ zum Bearbeiten einer Vertraulichkeitskennzeichnung](../media/edit-sensitivity-label-full.png)
 
-Über diese Schaltfläche wird der Assistent **Vertraulichkeitsbezeichnung bearbeiten** gestartet, mit dem Sie alle Bezeichnungseinstellungen in Schritt 3 ändern können.
+Über diese Schaltfläche wird der Assistent **Vertraulichkeitsbezeichnung bearbeiten** gestartet, mit dem Sie alle Bezeichnungseinstellungen in Schritt 4 ändern können.
 
 Löschen Sie eine Bezeichnung nur dann, wenn Sie die Auswirkungen für die Benutzer verstehen. Weitere Informationen finden Sie im Abschnitt [Entfernen und Löschen von Bezeichnungen](#removing-and-deleting-labels). 
 
@@ -160,11 +168,13 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 5. Folgen Sie den Eingabeaufforderungen, um die Richtlinieneinstellungen zu konfigurieren.
     
+    Die Richtlinieneinstellungen, die Sie sehen, entspricht dem von Ihnen festgelegten Bereich der Bezeichnungen. Wenn Sie beispielsweise Bezeichnungen ausgewählt haben, denen nur der Bereich **Dateien und E-Mails** zugewiesen ist, sehen Sie die Richtlinieneinstellungen **Diese Bezeichnung standardmäßig auf Gruppen und Websites anwenden** und **Benutzer auffordern, ihren Gruppen und Websites eine Bezeichnung zuzuweisen** nicht.
+    
     Weitere Informationen zu diesen Einstellungen finden Sie unter [Wirkung von Bezeichnungsrichtlinien](sensitivity-labels.md#what-label-policies-can-do) in den Übersichtsinformationen sowie im Assistenten in der Hilfe zu den einzelnen Einstellungen.
 
-7. Wiederholen Sie diese Schritte, wenn Sie für verschiedene Benutzer oder Standorte unterschiedliche Richtlinieneinstellungen benötigen. Sie möchten z. B. zusätzliche Bezeichnungen für eine Gruppe von Benutzern oder eine andere Standardbezeichnung für eine Untergruppe von Benutzern festlegen.
+7. Wiederholen Sie diese Schritte, wenn Sie für verschiedene Benutzer oder Bereiche unterschiedliche Richtlinieneinstellungen benötigen. Sie möchten z. B. zusätzliche Bezeichnungen für eine Gruppe von Benutzern oder eine andere Standardbezeichnung für eine Untergruppe von Benutzern festlegen. Oder Sie haben Bezeichnungen so konfiguriert, dass ihnen unterschiedliche Bereiche zugewiesen sind.
 
-8. Wenn Sie mehrere Bezeichnungsrichtlinie erstellen, die zu einem Konflikt für einen Benutzer oder Standort führen könnten, überprüfen Sie die Reihenfolge der Richtlinien und verschieben Sie einzelne Richtlinien gegebenenfalls nach oben oder unten. Wenn Sie die Reihenfolge der Bezeichnungsrichtlinien ändern möchten, wählen Sie **...** für **Weitere Aktionen** und dann **Nach oben** oder **Nach unten** aus. Weitere Informationen hierzu finden Sie unter [Priorität der Bezeichnungsrichtlinien (Reihenfolge wesentlich)](sensitivity-labels.md#label-policy-priority-order-matters) aus den Übersichtsinformationen.
+8. Wenn Sie mehrere Bezeichnungsrichtlinie erstellen, die zu einem Konflikt für einen Benutzer führen könnten, überprüfen Sie die Reihenfolge der Richtlinien und verschieben Sie einzelne Richtlinien gegebenenfalls nach oben oder unten. Wenn Sie die Reihenfolge der Bezeichnungsrichtlinien ändern möchten, wählen Sie **...** für **Weitere Aktionen** und dann **Nach oben** oder **Nach unten** aus. Weitere Informationen hierzu finden Sie unter [Priorität der Bezeichnungsrichtlinien (Reihenfolge wesentlich)](sensitivity-labels.md#label-policy-priority-order-matters) aus den Übersichtsinformationen.
 
 Nach Abschluss des Assistenten wird die Bezeichnungsrichtlinie automatisch veröffentlicht. Um Änderungen an einer veröffentlichten Richtlinie vorzunehmen, bearbeiten Sie diese einfach. Es gibt keine spezielle Aktion zum Veröffentlichen oder Wiederveröffentlichen, die Sie auswählen können.
 

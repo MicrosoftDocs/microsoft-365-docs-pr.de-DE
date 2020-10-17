@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: Die Verhinderung von Datenverlust im Security &amp; Compliance Center umfasst 80 Typen für vertrauliche Informationen, die Sie in ihren DLP-Richtlinien verwenden können. Dieses Thema enthält eine Liste aller dieser vertraulichen Informationstypen und zeigt, was eine DLP-Richtlinie sucht, wenn sie den jeweiligen Typen erkennt.
-ms.openlocfilehash: adc1006628b8b4f13d30f2001fee0871b51b18ca
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 8482501dc978433587c431d18ec93b9e78fb8e03
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430432"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487493"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Entitätsdefinitionen für Typen vertraulicher Informationstypen
 
@@ -670,36 +670,155 @@ Nein
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
 - Der reguläre Ausdruck  `Regex_austria_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus  `Keywords_austria_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_austria_eu_driver's_license_number` wird gefunden. 
     
 ```xml
-<!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Austria Driver's License Number -->
+      <Entity id="682f18ce-44eb-482b-8198-2bcb96a0761e" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_austria_eu_driver's_license_number" />
-          <Match idRef="Keywords_austria_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_austria_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-    </Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driver'lic
+- driver'lics
+- Driver ' License
+- Driver ' Licenses
+- driver'licence
+- driver'licences
+- Driver ' lic
+- Treiber ' LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- lic-Treiber
+- LiCS des Treibers
+- Führerschein
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenzen #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- driver'lic #
+- driver'lics #
+- Driver ' License #
+- Driver ' Licenses #
+- driver'licence #
+- driver'licences #
+- Driver ' lic #
+- Treiber ' LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- lic-Treiber #
+- LiCS des Treibers #
+- Führerschein #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driving licence
+ 
+- Führerschein
+- dlno #
+- Driv lic
+- Driv-Läuse
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
+- Treiber-Läuse
+- Treiber-Läuse
+- Treiber-Läuse
+- treibende lic
+- Steuern von Läusen
+- Steuern von Lizenzen
+- driving licence
+
+- driving licences
+
+- Führerschein
+- DL Nein
+- dlno
+- DL-Nummer
+
+
 #### <a name="keywords_austria_eu_drivers_license_number"></a>Keywords_austria_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- Treiber Lizenznummer
-- Treiber Lizenz
-- Treiber lic.
-- drivers license
-- driver's licence
-- driver's license
-- Führerscheinnummer
-- Führerscheinnummer
-- Führerscheinnummer
-- dlno #
 - fuhrerschein
-- Fuhrerschein Republik Osterreich
+- führerschein
+- Führerscheine
+- Führerscheinnummer
+- Führerscheinnummern
 
 ## <a name="austria-identity-card"></a>Österreich-Personalausweis
 Dieser Typ vertraulicher Informationen ist nur für die Verwendung in verfügbar:
@@ -1501,41 +1620,163 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Der reguläre Ausdruck  `Regex_belgium_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus  `Keywords_belgium_eu_driver's_license_number` wurde gefunden.
+- Ein Schlüsselwort aus `Keywords_eu_driver's_license_number` oder `Keywords_belgium_eu_driver's_license_number` wird gefunden.
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Belgium Driver's License Number -->
+      <Entity id="d89fd329-9324-433c-b687-2c37bd5166f3" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_belgium_eu_driver's_license_number" />
-          <Match idRef="Keywords_belgium_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_belgium_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-**Keywords__belgium_eu_driver ' s_license_number**
 
-- DL #
-- driver license
-- Treiber Lizenznummer
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Treiber lic
+- Treiber LiCS
 - Treiber Lizenz
-- Treiber lic.
-- drivers license
-- drivers licence
-- driver's license
-- Führerscheinnummer
-- Führerscheinnummer
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driver'lic
+- driver'lics
+- Driver ' License
+- Driver ' Licenses
+- driver'licence
+- driver'licences
+- Driver ' lic
+- Treiber ' LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- lic-Treiber
+- LiCS des Treibers
+- Führerschein
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenzen #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- driver'lic #
+- driver'lics #
+- Driver ' License #
+- Driver ' Licenses #
+- driver'licence #
+- driver'licences #
+- Driver ' lic #
+- Treiber ' LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- lic-Treiber #
+- LiCS des Treibers #
+- Führerschein #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driving licence
+ 
+- Führerschein
 - dlno #
+- Driv lic
+- Driv-Läuse
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
+- Treiber-Läuse
+- Treiber-Läuse
+- Treiber-Läuse
+- treibende lic
+- Steuern von Läusen
+- Steuern von Lizenzen
+- driving licence
+
+- driving licences
+
+- Führerschein
+- DL Nein
+- dlno
+- DL-Nummer
+
+#### <a name="keywords_belgium_eu_drivers_license_number"></a>Keywords_belgium_eu_driver ' s_license_number
+
 - rijbewijs
 - rijbewijsnummer
+- führerschein
 - führerscheinnummer
+- füehrerscheinnummer
+- fuhrerschein
+- fuehrerschein
 - fuhrerscheinnummer
 - fuehrerscheinnummer
-- Führerschein-Nr
-- Fuehrerschein-Nr
-- Fuehrerschein-Nr
+- 
+permis de conduire
+- Numéro permis conduire
+
 
 ## <a name="belgium-national-number"></a>Belgische Landesnummer
 
@@ -2055,38 +2296,155 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Der reguläre Ausdruck  `Regex_bulgaria_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus  `Keywords_bulgaria_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_bulgaria_eu_driver's_license_number` wird gefunden. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
-             <Pattern confidenceLevel="75">
+      <!-- Bulgaria Driver's License Number -->
+      <Entity id="66d39258-94c2-43b2-804b-aa312258e54b" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_bulgaria_eu_driver's_license_number" />
-          <Match idRef="Keywords_bulgaria_eu_driver's_license_number" />
-        </Pattern> 
-</Entity>    
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_bulgaria_eu_driver's_license_number" />
+          </Any>
+        </Pattern>
+      </Entity>    
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywords_bulgaria_eu_drivers_license_number"></a>Keywords_bulgaria_eu_driver ' s_license_number
-- DL #
-- driver license
-- Treiber Lizenznummer
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Treiber lic
+- Treiber LiCS
 - Treiber Lizenz
-- Treiber lic.
-- drivers license
-- drivers licence
-- driver's license
-- Führerscheinnummer
-- Führerscheinnummer
-- Führerscheinnummer
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driver'lic
+- driver'lics
+- Driver ' License
+- Driver ' Licenses
+- driver'licence
+- driver'licences
+- Driver ' lic
+- Treiber ' LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- lic-Treiber
+- LiCS des Treibers
+- Führerschein
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenzen #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- driver'lic #
+- driver'lics #
+- Driver ' License #
+- Driver ' Licenses #
+- driver'licence #
+- driver'licences #
+- Driver ' lic #
+- Treiber ' LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- lic-Treiber #
+- LiCS des Treibers #
+- Führerschein #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driving licence
+ 
+- Führerschein
 - dlno #
+- Driv lic
+- Driv-Läuse
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
+- Treiber-Läuse
+- Treiber-Läuse
+- Treiber-Läuse
+- treibende lic
+- Steuern von Läusen
+- Steuern von Lizenzen
+- driving licence
+
+- driving licences
+
+- Führerschein
+- DL Nein
+- dlno
+- DL-Nummer
+
+
+#### <a name="keywords_bulgaria_eu_drivers_license_number"></a>Keywords_bulgaria_eu_driver ' s_license_number
+
 - свидетелство за управление на мпс
 - свидетелство за управление на моторно превозно средство
 - сумпс
 - шофьорска книжка
-
+- шофьорски книжки
 
 ## <a name="bulgaria-uniform-civil-number"></a>Bulgarien Uniform Civil Number
 Dieser Typ vertraulicher Informationen ist nur für die Verwendung in verfügbar:
@@ -3316,35 +3674,152 @@ Nein
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
 - Der reguläre Ausdruck  `Regex_croatia_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus  `Keywords_croatia_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus `Keywords_eu_driver's_license_number` oder `Keywords_croatia_eu_driver's_license_number` wird gefunden. 
 
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Croatia Driver's License Number -->
+      <Entity id="005b3ef1-47dd-4e68-bb02-c6db484d00f2" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_croatia_eu_driver's_license_number" />
-          <Match idRef="Keywords_croatia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_croatia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driver'lic
+- driver'lics
+- Driver ' License
+- Driver ' Licenses
+- driver'licence
+- driver'licences
+- Driver ' lic
+- Treiber ' LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- lic-Treiber
+- LiCS des Treibers
+- Führerschein
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenzen #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- driver'lic #
+- driver'lics #
+- Driver ' License #
+- Driver ' Licenses #
+- driver'licence #
+- driver'licences #
+- Driver ' lic #
+- Treiber ' LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- lic-Treiber #
+- LiCS des Treibers #
+- Führerschein #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driving licence
+ 
+- Führerschein
+- dlno #
+- Driv lic
+- Driv-Läuse
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
+- Treiber-Läuse
+- Treiber-Läuse
+- Treiber-Läuse
+- treibende lic
+- Steuern von Läusen
+- Steuern von Lizenzen
+- driving licence
+
+- driving licences
+
+- Führerschein
+- DL Nein
+- dlno
+- DL-Nummer
+
+
 #### <a name="keywords_croatia_eu_drivers_license_number"></a>Keywords_croatia_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- Treiber Lizenznummer
-- Treiber Lizenz
-- Treiber lic.
-- drivers license
-- drivers licence
-- driver's license
-- Führerscheinnummer
-- Führerscheinnummer
-- Führerscheinnummer
-- dlno #
 - vozačka dozvola
+- vozačke dozvole
 
 
 ## <a name="croatia-identity-card-number"></a>Kroatische Personalausweisnummer
@@ -3622,34 +4097,152 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Der reguläre Ausdruck  `Regex_cyprus_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus  `Keywords_cyprus_eu_driver's_license_number` wurde gefunden.
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_cyprus_eu_driver's_license_number` wird gefunden.
 
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Cyprus Driver's License Number -->
+      <Entity id="356fa104-f9ac-4aff-a0e4-2e6e65ea06c4" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_cyprus_eu_driver's_license_number" />
-          <Match idRef="Keywords_cyprus_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_cyprus_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driver'lic
+- driver'lics
+- Driver ' License
+- Driver ' Licenses
+- driver'licence
+- driver'licences
+- Driver ' lic
+- Treiber ' LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- lic-Treiber
+- LiCS des Treibers
+- Führerschein
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenzen #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- driver'lic #
+- driver'lics #
+- Driver ' License #
+- Driver ' Licenses #
+- driver'licence #
+- driver'licences #
+- Driver ' lic #
+- Treiber ' LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- lic-Treiber #
+- LiCS des Treibers #
+- Führerschein #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driving licence
+ 
+- Führerschein
+- dlno #
+- Driv lic
+- Driv-Läuse
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
+- Treiber-Läuse
+- Treiber-Läuse
+- Treiber-Läuse
+- treibende lic
+- Steuern von Läusen
+- Steuern von Lizenzen
+- driving licence
+
+- driving licences
+
+- Führerschein
+- DL Nein
+- dlno
+- DL-Nummer
+
 #### <a name="keywords_cyprus_eu_drivers_license_number"></a>Keywords_cyprus_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- Treiber Lizenznummer
-- Treiber Lizenz
-- Treiber lic.
-- drivers license
-- drivers licence
-- Führerscheinnummer
-- Führerscheinnummer
-- Führerscheinnummer
-- dlno #
 - άδεια οδήγησης
+- αριθμό άδειας οδήγησης
+- άδειες οδήγησης
 
 
 ## <a name="cyprus-identity-card"></a>Zypern-Personalausweis
@@ -3852,7 +4445,8 @@ zwei Buchstaben, gefolgt von sechs Ziffern
 
 acht Buchstaben und Ziffern:
   
-- zwei Buchstaben (Groß-/Kleinschreibung nicht beachtet)
+- Buchstabe "E" (Groß-/Kleinschreibung nicht beachtet)
+- einen Brief
 - ein Leerzeichen (optional)
 - sechs Ziffern
 
@@ -3864,37 +4458,153 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Der reguläre Ausdruck  `Regex_czech_republic_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus  `Keywords_czech_republic_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_czech_republic_eu_driver's_license_number` wird gefunden. 
 
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <Entity id="86b40d3b-d8ea-4c36-aab0-ef9416a6769c" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_czech_republic_eu_driver's_license_number" />
-          <Match idRef="Keywords_czech_republic_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_czech_republic_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driver'lic
+- driver'lics
+- Driver ' License
+- Driver ' Licenses
+- driver'licence
+- driver'licences
+- Driver ' lic
+- Treiber ' LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- lic-Treiber
+- LiCS des Treibers
+- Führerschein
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenzen #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- driver'lic #
+- driver'lics #
+- Driver ' License #
+- Driver ' Licenses #
+- driver'licence #
+- driver'licences #
+- Driver ' lic #
+- Treiber ' LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- lic-Treiber #
+- LiCS des Treibers #
+- Führerschein #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driving licence
+ 
+- Führerschein
+- dlno #
+- Driv lic
+- Driv-Läuse
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
+- Treiber-Läuse
+- Treiber-Läuse
+- Treiber-Läuse
+- treibende lic
+- Steuern von Läusen
+- Steuern von Lizenzen
+- driving licence
+
+- driving licences
+
+- Führerschein
+- DL Nein
+- dlno
+- DL-Nummer
+
 #### <a name="keywords_czech_republic_eu_drivers_license_number"></a>Keywords_czech_republic_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- Treiber Lizenznummer
-- Treiber Lizenz
-- Treiber lic.
-- drivers license
-- drivers licence
-- driver's license
-- Führerscheinnummer
-- Führerscheinnummer
-- Führerscheinnummer
-- Führerscheinnummer
-- dlno #
 - řidičský prúkaz
+- řidičské průkazy
+- číslo řidičského průkazu
+- čísla řidičských průkazů
 
 
 ## <a name="czech-passport-number"></a>Tschechische Passnummer
@@ -4131,40 +4841,155 @@ acht Ziffern
   
 ### <a name="checksum"></a>Prüfsumme
 
-Ja
+Nein
   
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Der reguläre Ausdruck  `Regex_denmark_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus  `Keywords_denmark_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_denmark_eu_driver's_license_number` wird gefunden. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Denmark Driver's License Number -->
+      <Entity id="98a95812-6203-451a-a220-d39870ebef0e" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_denmark_eu_driver's_license_number" />
-          <Match idRef="Keywords_denmark_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_denmark_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driver'lic
+- driver'lics
+- Driver ' License
+- Driver ' Licenses
+- driver'licence
+- driver'licences
+- Driver ' lic
+- Treiber ' LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- lic-Treiber
+- LiCS des Treibers
+- Führerschein
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenzen #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- driver'lic #
+- driver'lics #
+- Driver ' License #
+- Driver ' Licenses #
+- driver'licence #
+- driver'licences #
+- Driver ' lic #
+- Treiber ' LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- lic-Treiber #
+- LiCS des Treibers #
+- Führerschein #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driving licence
+ 
+- Führerschein
+- dlno #
+- Driv lic
+- Driv-Läuse
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
+- Treiber-Läuse
+- Treiber-Läuse
+- Treiber-Läuse
+- treibende lic
+- Steuern von Läusen
+- Steuern von Lizenzen
+- driving licence
+
+- driving licences
+
+- Führerschein
+- DL Nein
+- dlno
+- DL-Nummer
+
 #### <a name="keywords_denmark_eu_drivers_license_number"></a>Keywords_denmark_eu_driver ' s_license_number
 
-- | DL #
-- driver license
-- Treiber Lizenznummer
-- Treiber Lizenz
-- Treiber lic.
-- drivers license
-- drivers licence
-- driver's license
-- Führerscheinnummer
-- Führerscheinnummer
-- Führerscheinnummer
-- dlno #
 - kørekort
 - kørekortnummer
 
@@ -4461,35 +5286,153 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Der reguläre Ausdruck  `Regex_estonia_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus  `Keywords_estonia_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_estonia_eu_driver's_license_number` wird gefunden. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Estonia Driver's License Number -->
+      <Entity id="51da8171-da70-4cc1-9d65-055a59ca4f83" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_estonia_eu_driver's_license_number" />
-          <Match idRef="Keywords_estonia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_estonia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driver'lic
+- driver'lics
+- Driver ' License
+- Driver ' Licenses
+- driver'licence
+- driver'licences
+- Driver ' lic
+- Treiber ' LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- lic-Treiber
+- LiCS des Treibers
+- Führerschein
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenzen #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- driver'lic #
+- driver'lics #
+- Driver ' License #
+- Driver ' Licenses #
+- driver'licence #
+- driver'licences #
+- Driver ' lic #
+- Treiber ' LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- lic-Treiber #
+- LiCS des Treibers #
+- Führerschein #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driving licence
+ 
+- Führerschein
+- dlno #
+- Driv lic
+- Driv-Läuse
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
+- Treiber-Läuse
+- Treiber-Läuse
+- Treiber-Läuse
+- treibende lic
+- Steuern von Läusen
+- Steuern von Lizenzen
+- driving licence
+
+- driving licences
+
+- Führerschein
+- DL Nein
+- dlno
+- DL-Nummer
+
 #### <a name="keywords_estonia_eu_drivers_license_number"></a>Keywords_estonia_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- Treiber Lizenznummer
-- Treiber Lizenznummer
-- Treiber Lizenz
-- Treiber lic.
-- drivers license
-- drivers licence
-- driver's license
-- Führerscheinnummer
-- Führerscheinnummer
-- dlno #
-- permis de conduire
+--permis de conduire
+- juhilubade numbrid
+- juhiloa-Nummer
+- juhiluba
 
 
 ## <a name="estonia-personal-identification-code"></a>Estland Personal Identification Code
@@ -5142,15 +6085,16 @@ Diese Typen Entität für vertrauliche Informationen ist nur im vertraulichen In
 
 ### <a name="format"></a>Format
 
-zehn Ziffern mit einem Bindestrich
+zehn Ziffern und Buchstaben, die einen Bindestrich enthalten
   
 ### <a name="pattern"></a>Muster
 
-zehn Ziffern mit einem Bindestrich:
+zehn Ziffern und Buchstaben, die einen Bindestrich enthalten:
   
 - sechs Ziffern 
 - ein Bindestrich
-- vier Ziffern 
+- drei Ziffern 
+- eine Ziffer oder ein Buchstabe
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -5160,35 +6104,159 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Der reguläre Ausdruck  `Regex_finland_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus  `Keywords_finland_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_finland_eu_driver's_license_number` wird gefunden. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Finland Driver's License Number -->
+      <Entity id="bb3b27a3-79bd-4ac4-81a7-f9fca3c7d1a7" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_finland_eu_driver's_license_number" />
-          <Match idRef="Keywords_finland_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_finland_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driver'lic
+- driver'lics
+- Driver ' License
+- Driver ' Licenses
+- driver'licence
+- driver'licences
+- Driver ' lic
+- Treiber ' LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- lic-Treiber
+- LiCS des Treibers
+- Führerschein
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenzen #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- driver'lic #
+- driver'lics #
+- Driver ' License #
+- Driver ' Licenses #
+- driver'licence #
+- driver'licences #
+- Driver ' lic #
+- Treiber ' LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- lic-Treiber #
+- LiCS des Treibers #
+- Führerschein #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driving licence
+ 
+- Führerschein
+- dlno #
+- Driv lic
+- Driv-Läuse
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
+- Treiber-Läuse
+- Treiber-Läuse
+- Treiber-Läuse
+- treibende lic
+- Steuern von Läusen
+- Steuern von Lizenzen
+- driving licence
+
+- driving licences
+
+- Führerschein
+- DL Nein
+- dlno
+- DL-Nummer
+
+
 #### <a name="keywords_finland_eu_drivers_license_number"></a>Keywords_finland_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- Treiber Lizenznummer
-- Treiber Lizenz
-- Treiber lic.
-- drivers license
-- drivers licence
-- driver's license
-- Führerscheinnummer
-- Führerscheinnummer
-- Führerscheinnummer
-- dlno #
 - ajokortti
+- permis de conduire
+- ajokortin numero
+- kuljettaja lic.
+- körkort
+- körkortnummer
+- Förare lic.
+- ajokortit
+- ajokortin numero
 
 
 ## <a name="finland-european-health-insurance-number"></a>Finnische Krankenversicherungsnummer in Europa
@@ -5496,36 +6564,154 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - die Funktion Func_french_drivers_license sucht nach Inhalten, die mit dem Muster übereinstimmen.
-- mindestens eine der folgenden zutrifft zu:
 - ein Schlüsselwort aus Keyword_french_drivers_license wurde gefunden.
-- die Funktion Func_eu_date findet ein Datum im richtigen Datumsformat.
 
 ```xml
-<!-- France Driver's License Number -->
-<Entity id="18e55a36-a01b-4b0f-943d-dc10282a1824" patternsProximity="300" recommendedConfidence="75">
-  <Pattern confidenceLevel="75">
+    <!-- France Driver's License Number -->
+    <Entity id="18e55a36-a01b-4b0f-943d-dc10282a1824" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_french_drivers_license" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_french_drivers_license" />
-          <Match idRef="Func_eu_date" />
-        </Any>
-  </Pattern>
-</Entity>
+        <Match idRef="Keyword_french_drivers_license" />
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keyword_french_drivers_license"></a>Keyword_french_drivers_license
 
-- drivers licence
-- drivers license
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driver'lic
+- driver'lics
+- Driver ' License
+- Driver ' Licenses
+- driver'licence
+- driver'licences
+- Driver ' lic
+- Treiber ' LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
 - Führerschein
-- driving license
-- permis de conduire
-- licence number
-- license number
-- licence numbers
-- license numbers
+- Führerscheine
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- lic-Treiber
+- LiCS des Treibers
+- Führerschein
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenzen #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- driver'lic #
+- driver'lics #
+- Driver ' License #
+- Driver ' Licenses #
+- driver'licence #
+- driver'licences #
+- Driver ' lic #
+- Treiber ' LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- lic-Treiber #
+- LiCS des Treibers #
+- Führerschein #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driving licence
+ 
+- Führerschein
+- dlno #
+- Driv lic
+- Driv-Läuse
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
+- Treiber-Läuse
+- Treiber-Läuse
+- Treiber-Läuse
+- treibende lic
+- Steuern von Läusen
+- Steuern von Lizenzen
+- driving licence
+
+- driving licences
+
+- Führerschein
+- DL Nein
+- dlno
+- DL-Nummer
+- 
+permis de conduire
+- 
+licence number
+- Lizenznummer
+- 
+licence numbers
+- 
+
+license numbers
+- numéros de LICENCE
 
 
 ## <a name="france-health-insurance-number"></a>Französische Krankenversicherungsnummer
@@ -5929,124 +7115,177 @@ Ja
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Die Funktion Func_german_drivers_license findet Inhalte, die dem Muster entsprechen.
-- Mindestens eine der folgenden Bedingungen trifft zu:
-    - Ein Schlüsselwort aus Keyword_german_drivers_license_number wurde gefunden.
-    - Ein Schlüsselwort aus Keyword_german_drivers_license_collaborative wurde gefunden.
-    - Ein Schlüsselwort aus Keyword_german_drivers_license wurde gefunden.
+- Ein Schlüsselwort aus Keyword_german_drivers_license_number wurde gefunden.
 - Die Prüfsumme stimmt.
 
 ```xml
-<!-- Germany Driver's License Number -->
-<Entity id="91da9335-1edb-45b7-a95f-5fe41a16c63c" patternsProximity="300" recommendedConfidence="75">
-  <Pattern confidenceLevel="75">
+    <!-- German Driver's License Number -->
+    <Entity id="91da9335-1edb-45b7-a95f-5fe41a16c63c" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_german_drivers_license" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_german_drivers_license_number" />
-          <Match idRef="Keyword_german_drivers_license_collaborative" />
-          <Match idRef="Keyword_german_drivers_license" />
-        </Any>
-  </Pattern>
-</Entity>
+        <Match idRef="Keyword_german_drivers_license" />
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keyword_german_drivers_license_number"></a>Keyword_german_drivers_license_number
 
-- Führerschein
-- Fuhrerschein
-- Fuehrerschein
-- Führerscheinnummer
-- Fuhrerscheinnummer
-- Fuehrerscheinnummer
-- Führerschein- 
-- Fuhrerschein- 
-- Fuehrerschein- 
-- FührerscheinnummerNr
-- FuhrerscheinnummerNr
-- FuehrerscheinnummerNr
-- FührerscheinnummerKlasse
-- FuhrerscheinnummerKlasse
-- FuehrerscheinnummerKlasse
-- Führerschein- Nr
-- Fuhrerschein- Nr
-- Fuehrerschein- Nr 
-- Führerschein- Klasse 
-- Fuhrerschein- Klasse 
-- Fuehrerschein- Klasse
-- FührerscheinnummerNr 
-- FuhrerscheinnummerNr 
-- FuehrerscheinnummerNr 
-- FührerscheinnummerKlasse 
-- FuhrerscheinnummerKlasse 
-- FuehrerscheinnummerKlasse 
-- Führerschein- Nr 
-- Fuhrerschein- Nr 
-- Fuehrerschein- Nr 
-- Führerschein- Klasse 
-- Fuhrerschein- Klasse 
-- Fuehrerschein- Klasse 
-- DL 
-- DLS
-- Driv Lic 
-- Driv Licen 
-- Driv License
-- Driv Licenses 
-- Driv Licence 
-- Driv Licences 
-- Driv Lic 
-- Driver Licen 
-- Driver License 
-- Driver Licenses 
-- Driver Licence 
-- Driver Licences 
-- Drivers Lic 
-- Drivers Licen 
-- Drivers License 
-- Drivers Licenses 
-- Drivers Licence 
-- Drivers Licences 
-- Driver's Lic 
-- Driver's Licen 
-- Driver's License 
-- Driver's Licenses 
-- Driver's Licence 
-- Driver's Licences 
-- Driving Lic 
-- Driving Licen 
-- Driving License 
-- Driving Licenses 
-- Driving Licence 
-- Driving Licences
-
-#### <a name="keyword_german_drivers_license_collaborative"></a>Keyword_german_drivers_license_collaborative
-
-- Nr-Führerschein 
-- Nr-Fuhrerschein 
-- Nr-Fuehrerschein 
-- No-Führerschein 
-- No-Fuhrerschein 
-- No-Fuehrerschein 
-- N-Führerschein 
-- N-Fuhrerschein 
-- N-Fuehrerschein
-- Nr-Führerschein 
-- Nr-Fuhrerschein 
-- Nr-Fuehrerschein 
-- No-Führerschein 
-- No-Fuhrerschein 
-- No-Fuehrerschein 
-- N-Führerschein 
-- N-Fuhrerschein 
-- N-Fuehrerschein 
-
-#### <a name="keyword_german_drivers_license"></a>Keyword_german_drivers_license
-
 - ausstellungsdatum
 - ausstellungsort
-- Ausstellende Behöde
-- Ausstellende Behorde
-- ausstellende behoerde
+- 
+Ausstellende Behöde
+- 
+Ausstellende Behorde
+- 
+
+ausstellende behoerde
+- führerschein
+- fuhrerschein
+- fuehrerschein
+- führerscheinnummer
+- fuhrerscheinnummer
+- fuehrerscheinnummer
+- führerschein- 
+- fuhrerschein- 
+- fuehrerschein- 
+- führerscheinnummernr
+- fuhrerscheinnummernr
+- fuehrerscheinnummernr
+- führerscheinnummerklasse
+- fuhrerscheinnummerklasse
+- fuehrerscheinnummerklasse
+- Nr-Führerschein
+- Nr-Fuhrerschein
+- Nr-Fuehrerschein
+- No-Führerschein
+- No-Fuhrerschein
+- No-Fuehrerschein
+- n-Führerschein
+- n-Fuhrerschein
+- n-Fuehrerschein
+- 
+permis de conduire
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driver'lic
+- driver'lics
+- Driver ' License
+- Driver ' Licenses
+- driver'licence
+- driver'licences
+- Driver ' lic
+- Treiber ' LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- lic-Treiber
+- LiCS des Treibers
+- Führerschein
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenzen #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- driver'lic #
+- driver'lics #
+- Driver ' License #
+- Driver ' Licenses #
+- driver'licence #
+- driver'licences #
+- Driver ' lic #
+- Treiber ' LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- lic-Treiber #
+- LiCS des Treibers #
+- Führerschein #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driving licence
+ 
+- Führerschein
+- dlno #
+- Driv lic
+- Driv-Läuse
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
+- Treiber-Läuse
+- Treiber-Läuse
+- Treiber-Läuse
+- treibende lic
+- Steuern von Läusen
+- Steuern von Lizenzen
+- driving licence
+
+- driving licences
+
+- Führerschein
+- dlno
 
 
 ## <a name="germany-identity-card-number"></a>Deutsche Personalausweisnummer
@@ -6321,36 +7560,154 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Der reguläre Ausdruck  `Regex_greece_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus  `Keywords_greece_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_greece_eu_driver's_license_number` wird gefunden. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Greece Driver's License Number -->
+      <Entity id="7a2200b5-aacf-4e3c-ab36-136d3e68b7da" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_greece_eu_driver's_license_number" />
-          <Match idRef="Keywords_greece_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_greece_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driver'lic
+- driver'lics
+- Driver ' License
+- Driver ' Licenses
+- driver'licence
+- driver'licences
+- Driver ' lic
+- Treiber ' LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- lic-Treiber
+- LiCS des Treibers
+- Führerschein
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenzen #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- driver'lic #
+- driver'lics #
+- Driver ' License #
+- Driver ' Licenses #
+- driver'licence #
+- driver'licences #
+- Driver ' lic #
+- Treiber ' LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- lic-Treiber #
+- LiCS des Treibers #
+- Führerschein #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driving licence
+ 
+- Führerschein
+- dlno #
+- Driv lic
+- Driv-Läuse
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
+- Treiber-Läuse
+- Treiber-Läuse
+- Treiber-Läuse
+- treibende lic
+- Steuern von Läusen
+- Steuern von Lizenzen
+- driving licence
+
+- driving licences
+
+- Führerschein
+- DL Nein
+- dlno
+- DL-Nummer
+
+
 #### <a name="keywords_greece_eu_drivers_license_number"></a>Keywords_greece_eu_driver ' s_license_number
 
-- dlL #
-- driver license
-- Treiber Lizenznummer
-- Treiber Lizenz
-- Treiber lic.
-- drivers license
-- drivers licence
-- driver's license
-- Führerscheinnummer
-- Führerscheinnummer
-- Führerscheinnummer
-- dlno #
 - δεια οδήγησης
 - Adeia odigisis
+- Άδεια οδήγησης
+- Δίπλωμα οδήγησης
 
 
 ## <a name="greece-national-id-card"></a>Griechenland National Ausweiskarte
@@ -6646,35 +8003,152 @@ Nein
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
 - Der reguläre Ausdruck  `Regex_hungary_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus  `Keywords_hungary_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_hungary_eu_driver's_license_number` wird gefunden. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <Entity id="9d31c46b-6e6b-444c-aeb1-6dd7e604bb24" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_hungary_eu_driver's_license_number" />
-          <Match idRef="Keywords_hungary_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_hungary_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driver'lic
+- driver'lics
+- Driver ' License
+- Driver ' Licenses
+- driver'licence
+- driver'licences
+- Driver ' lic
+- Treiber ' LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- lic-Treiber
+- LiCS des Treibers
+- Führerschein
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenzen #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- driver'lic #
+- driver'lics #
+- Driver ' License #
+- Driver ' Licenses #
+- driver'licence #
+- driver'licences #
+- Driver ' lic #
+- Treiber ' LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- lic-Treiber #
+- LiCS des Treibers #
+- Führerschein #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driving licence
+ 
+- Führerschein
+- dlno #
+- Driv lic
+- Driv-Läuse
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
+- Treiber-Läuse
+- Treiber-Läuse
+- Treiber-Läuse
+- treibende lic
+- Steuern von Läusen
+- Steuern von Lizenzen
+- driving licence
+
+- driving licences
+
+- Führerschein
+- DL Nein
+- dlno
+- DL-Nummer
+
+
 #### <a name="keywords_hungary_eu_drivers_license_number"></a>Keywords_hungary_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- Treiber Lizenznummer
-- Treiber Lizenz
-- Treiber lic.
-- drivers license
-- drivers licence
-- driver's license
-- Führerscheinnummer
-- Führerscheinnummer
-- Führerscheinnummer
-- dlno #
 - vezetoi engedely
+- vezetői engedély
+- vezetői engedélyek
 
 
 ## <a name="hungary-personal-identification-number"></a>Ungarische persönliche Identifikationsnummer
@@ -7362,36 +8836,152 @@ Nein
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
 - Der reguläre Ausdruck  `Regex_ireland_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus  `Keywords_ireland_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_ireland_eu_driver's_license_number` wird gefunden. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Ireland Driver's License Number -->
+      <Entity id="e01bccd9-eb4d-414f-ace1-e9b6a4c4a2ca" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_ireland_eu_driver's_license_number" />
-          <Match idRef="Keywords_ireland_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_ireland_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driver'lic
+- driver'lics
+- Driver ' License
+- Driver ' Licenses
+- driver'licence
+- driver'licences
+- Driver ' lic
+- Treiber ' LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- lic-Treiber
+- LiCS des Treibers
+- Führerschein
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenzen #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- driver'lic #
+- driver'lics #
+- Driver ' License #
+- Driver ' Licenses #
+- driver'licence #
+- driver'licences #
+- Driver ' lic #
+- Treiber ' LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- lic-Treiber #
+- LiCS des Treibers #
+- Führerschein #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driving licence
+ 
+- Führerschein
+- dlno #
+- Driv lic
+- Driv-Läuse
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
+- Treiber-Läuse
+- Treiber-Läuse
+- Treiber-Läuse
+- treibende lic
+- Steuern von Läusen
+- Steuern von Lizenzen
+- driving licence
+
+- driving licences
+
+- Führerschein
+- DL Nein
+- dlno
+- DL-Nummer
+
+
 #### <a name="keywords_ireland_eu_drivers_license_number"></a>Keywords_ireland_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- Treiber Lizenznummer
-- Treiber Lizenz
-- Treiber lic.
-- drivers license
-- drivers licence
-- driver's license
-- Führerscheinnummer
-- Führerscheinnummer
-- Führerscheinnummer
-- dlno #
 - ceadúnas tiomána
-
+- ceadúnais tiomána
 
 ## <a name="ireland-passport-number"></a>Irland Passnummer
 
@@ -7654,10 +9244,10 @@ eine Kombination aus 10 Buchstaben und Ziffern
 
 ### <a name="pattern"></a>Muster
 
-- eine Kombination aus 10 Buchstaben und Ziffern:
+eine Kombination aus 10 Buchstaben und Ziffern:
 - ein Buchstabe (Groß-/Kleinschreibung wird nicht berücksichtigt) 
 - der Buchstabe "A" oder "V" (Groß-/Kleinschreibung nicht beachtet) 
-- sieben Buchstaben (Groß-/Kleinschreibung nicht beachtet), Ziffern oder das Unterstrichzeichen 
+- sieben Ziffern
 - ein Buchstabe (Groß-/Kleinschreibung wird nicht berücksichtigt)
 
 ### <a name="checksum"></a>Prüfsumme
@@ -7686,8 +9276,11 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 #### <a name="keyword_italy_drivers_license_number"></a>Keyword_italy_drivers_license_number
 
-- numero di patente di guida 
+- numero di Patente
 - patente di guida 
+- Patente Guida
+- patenti di Guida
+- patenti Guida
 
 ## <a name="italy-fiscal-code"></a>Steuercode Italien
 Dieser Typ vertraulicher Informationen ist nur für die Verwendung in verfügbar:
@@ -7981,36 +9574,24 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Debit Acct # 
 - Debit Acct No. 
 - Debit Account No. 
-- 口座番号を当座預金口座の確認 
-- #アカウントの確認, 勘定番号の確認 
-- #勘定の確認 
-- 勘定番号の確認 
-- 口座番号の確認 
-- 銀行口座番号 
-- 銀行口座 
-- 銀行口座＃ 
-- 銀行の勘定番号 
-- 銀行のacct＃ 
-- 銀行の勘定いいえ 
+- 口座番号
+- 銀行口座
 - 銀行口座番号
-- 普通預金口座番号 
-- 預金口座 
-- 貯蓄口座＃ 
-- 貯蓄勘定の数 
-- 貯蓄勘定＃ 
-- 貯蓄勘定番号 
-- 普通預金口座番号 
-- 引き落とし口座番号 
-- 口座番号 
-- 口座番号＃ 
-- デビットのacct番号 
-- デビット勘定＃ 
-- デビットACCTの番号 
-- デビット口座番号 
+- 総合口座
+- 普通預金口座
+- 普通口座
+- 当座預金口座
+- 当座口座
+- 預金口座
+- 振替口座
+- 銀行
+- バンク
 
 #### <a name="keyword_jp_bank_branch_code"></a>Keyword_jp_bank_branch_code
 
-Otemachi
+- 支店番号
+- 支店コード
+- 店番号
 
 ## <a name="japan-drivers-license-number"></a>Japanische Führerscheinnummer
 
@@ -8046,31 +9627,41 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 #### <a name="keyword_jp_drivers_license_number"></a>Keyword_jp_drivers_license_number
 
-- DL # 
-- DL 
-- DLS # 
-- DLS 
-- driver license 
-- driver licenses 
-- drivers license 
-- driver's license 
-- drivers licenses 
-- driver's licenses 
-- driving licence 
-- lic # 
-- LIC 
-- LiCS # 
-- state id 
-- state identification 
-- state identification number 
-- 低所得国＃ 
-- 免許証 
-- 状態ID
-- 状態の識別 
-- 状態の識別番号 
-- 運転免許 
-- 運転免許証 
-- 運転免許証番号 
+- driverlicense
+- driverslicense
+- driver'slicense
+- driverslicenses
+- driver'slicenses
+- driverlicenses
+- DL #
+- DLS #
+- lic #
+- LiCS #
+- 運転免許証
+- 運転免許
+- 免許証
+- 免許
+- 運転免許証番号
+- 運転免許番号
+- 免許証番号
+- 免許番号
+- 運転免許証ナンバー
+- 運転免許ナンバー
+- 免許証ナンバー
+- 運転免許証no
+- 運転免許no
+- 免許証no
+- 免許no
+- 運転経歴証明書番号
+- 運転経歴証明書
+- 運転免許証No.
+- 運転免許No.
+- 免許証No.
+- 免許No.
+- 運転免許証 #
+- 運転免許 #
+- 免許証 #
+- 免許 #
 
 
 ## <a name="japan-my-number---corporate"></a>Japan meine Nummer-Corporate
@@ -8232,10 +9823,22 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 #### <a name="keyword_jp_passport"></a>Keyword_jp_passport
 
-- パスポート 
-- パスポート番号 
-- パスポートのNum 
-- パスポート＃ 
+- Pass
+- Passnummer
+- Passport-Nummer
+- Passport#
+
+- パスポート
+- パスポート番号
+- パスポートナンバー
+- パスポート＃
+- パスポート #
+- パスポートNo.
+- 旅券番号
+- 旅券番号＃
+- 旅券番号 ♯
+- 旅券ナンバー
+
 
 ## <a name="japan-residence-card-number"></a>Japanische Residenz Kartennummer
 
@@ -8278,6 +9881,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Residenzkarte Nein
 - Aufenthaltskarte #
 - 在留カード番号
+- 在留カード
+- 在留番号
 
 ## <a name="japan-resident-registration-number"></a>Japan Resident Registrationsnummer
 
@@ -8314,16 +9919,15 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keyword_jp_resident_registration_number"></a>Keyword_jp_resident_registration_number
 
 - Resident Registration Number
-- Resident Register Number 
 - Residents Basic Registry Number 
 - Resident Registration No. 
 - Resident Register No. 
 - Residents Basic Registry No. 
 - Basic Resident Register No. 
-- 住民登録番号、登録番号をレジデント 
-- 住民基本登録番号、登録番号 
-- 住民基本レジストリ番号を常駐 
-- 登録番号を常駐住民基本台帳登録番号 
+- 外国人登録証明書番号
+- 証明書番号
+- 登録番号
+- 外国人登録証
 
    
 ## <a name="japan-social-insurance-number-sin"></a>Japan Sozialversicherungsnummer (Sin)
@@ -8375,8 +9979,22 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Social Insurance No. 
 - Social Insurance Num 
 - Social Insurance Number 
-- 社会保険のテンキー 
-- 社会保険番号 
+- 健康保険被保険者番号
+- 健保番号
+- 基礎年金番号
+- 雇用保険被保険者番号
+- 雇用保険番号
+- 保険証番号
+- 社会保険番号
+- 社会保険No.
+- 社会保険
+- 介護保険
+- 介護保険被保険者番号
+- 健康保険被保険者整理番号
+- 雇用保険被保険者整理番号
+- 厚生年金
+- 厚生年金被保険者整理番号
+
 
 ## <a name="latvia-drivers-license-number"></a>Lettland Führerscheinnummer
 Diese Typen Entität für vertrauliche Informationen ist nur im vertraulichen Informationstyp für den EU-Führerscheinnummer verfügbar.
@@ -8400,35 +10018,153 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Der reguläre Ausdruck  `Regex_latvia_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus  `Keywords_latvia_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_latvia_eu_driver's_license_number` wird gefunden. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Latvia Driver's License Number -->
+      <Entity id="ec996de0-30f2-46b1-b192-4d2ff8805fa7" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_latvia_eu_driver's_license_number" />
-          <Match idRef="Keywords_latvia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_latvia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driver'lic
+- driver'lics
+- Driver ' License
+- Driver ' Licenses
+- driver'licence
+- driver'licences
+- Driver ' lic
+- Treiber ' LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- lic-Treiber
+- LiCS des Treibers
+- Führerschein
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenzen #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- driver'lic #
+- driver'lics #
+- Driver ' License #
+- Driver ' Licenses #
+- driver'licence #
+- driver'licences #
+- Driver ' lic #
+- Treiber ' LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- lic-Treiber #
+- LiCS des Treibers #
+- Führerschein #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driving licence
+ 
+- Führerschein
+- dlno #
+- Driv lic
+- Driv-Läuse
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
+- Treiber-Läuse
+- Treiber-Läuse
+- Treiber-Läuse
+- treibende lic
+- Steuern von Läusen
+- Steuern von Lizenzen
+- driving licence
+
+- driving licences
+
+- Führerschein
+- DL Nein
+- dlno
+- DL-Nummer
+
+
 #### <a name="keywords_latvia_eu_drivers_license_number"></a>Keywords_latvia_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- Treiber Lizenznummer
-- Treiber Lizenz
-- Treiber lic.
-- drivers license
-- drivers licence
-- driver's license
-- Führerscheinnummer
-- Führerscheinnummer
-- Führerscheinnummer
-- dlno #
 - autovadītāja apliecība
+- autovadītāja apliecības
+- vadītāja apliecība
 
 ## <a name="latvia-personal-code"></a>Persönlicher Code in Lettland
 
@@ -8646,35 +10382,153 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Der reguläre Ausdruck  `Regex_lithuania_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus  `Keywords_lithuania_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_lithuania_eu_driver's_license_number` wird gefunden. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Lithuania Driver's License Number -->
+      <Entity id="86f7628b-e0f4-4dc3-9fbc-e4300e4c7d78" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_lithuania_eu_driver's_license_number" />
-          <Match idRef="Keywords_lithuania_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_lithuania_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driver'lic
+- driver'lics
+- Driver ' License
+- Driver ' Licenses
+- driver'licence
+- driver'licences
+- Driver ' lic
+- Treiber ' LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- lic-Treiber
+- LiCS des Treibers
+- Führerschein
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenzen #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- driver'lic #
+- driver'lics #
+- Driver ' License #
+- Driver ' Licenses #
+- driver'licence #
+- driver'licences #
+- Driver ' lic #
+- Treiber ' LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- lic-Treiber #
+- LiCS des Treibers #
+- Führerschein #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driving licence
+ 
+- Führerschein
+- dlno #
+- Driv lic
+- Driv-Läuse
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
+- Treiber-Läuse
+- Treiber-Läuse
+- Treiber-Läuse
+- treibende lic
+- Steuern von Läusen
+- Steuern von Lizenzen
+- driving licence
+
+- driving licences
+
+- Führerschein
+- DL Nein
+- dlno
+- DL-Nummer
+
+
 #### <a name="keywords_lithuania_eu_drivers_license_number"></a>Keywords_lithuania_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- Treiber Lizenznummer
-- Treiber Lizenz
-- Treiber lic.
-- drivers license
-- drivers licence
-- driver's license
-- Führerscheinnummer
-- Führerscheinnummer
-- Führerscheinnummer
-- dlno #
 - Vairuotojo pažymėjimas
+- Vairuotojo pažymėjimo Numeris
+- vairuotojo pažymėjimo numeriai
 
 ## <a name="lithuania-personal-code"></a>Persönlicher Code in Litauen
 Dieser Typ vertraulicher Informationen ist nur für die Verwendung in verfügbar:
@@ -8839,35 +10693,152 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Der reguläre Ausdruck  `Regex_luxemburg_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus  `Keywords_luxemburg_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_luxemburg_eu_driver's_license_number` wird gefunden. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Luxemburg Driver's License Number -->
+      <Entity id="89daf717-1544-4860-9a2e-fc9166dd8852" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_luxemburg_eu_driver's_license_number" />
-          <Match idRef="Keywords_luxemburg_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_luxemburg_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driver'lic
+- driver'lics
+- Driver ' License
+- Driver ' Licenses
+- driver'licence
+- driver'licences
+- Driver ' lic
+- Treiber ' LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- lic-Treiber
+- LiCS des Treibers
+- Führerschein
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenzen #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- driver'lic #
+- driver'lics #
+- Driver ' License #
+- Driver ' Licenses #
+- driver'licence #
+- driver'licences #
+- Driver ' lic #
+- Treiber ' LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- lic-Treiber #
+- LiCS des Treibers #
+- Führerschein #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driving licence
+ 
+- Führerschein
+- dlno #
+- Driv lic
+- Driv-Läuse
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
+- Treiber-Läuse
+- Treiber-Läuse
+- Treiber-Läuse
+- treibende lic
+- Steuern von Läusen
+- Steuern von Lizenzen
+- driving licence
+
+- driving licences
+
+- Führerschein
+- DL Nein
+- dlno
+- DL-Nummer
+
+
 #### <a name="keywords_luxemburg_eu_drivers_license_number"></a>Keywords_luxemburg_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- Treiber Lizenznummer
-- Treiber Lizenz
-- Treiber lic.
-- drivers license
-- drivers licence
-- driver's license
-- Führerscheinnummer
-- Führerscheinnummer
-- Führerscheinnummer
-- dlno #
 - fahrerlaubnis
+- Führerschäin
 
 ## <a name="luxemburg-national-identification-number-natural-persons"></a>Luxemburgische nationale Identifikationsnummer (natürliche Personen)
 Dieser Typ vertraulicher Informationen ist nur für die Verwendung in verfügbar:
@@ -9168,35 +11139,153 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Der reguläre Ausdruck  `Regex_malta_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus  `Keywords_malta_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_malta_eu_driver's_license_number` wird gefunden. 
     
 ```xml
-<!-- EU Driver's License Number -->
- <Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Malta Driver's License Number -->
+      <Entity id="a3bdaa4a-8371-4735-8fa5-56ee0fb4afc4" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_malta_eu_driver's_license_number" />
-          <Match idRef="Keywords_malta_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_malta_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driver'lic
+- driver'lics
+- Driver ' License
+- Driver ' Licenses
+- driver'licence
+- driver'licences
+- Driver ' lic
+- Treiber ' LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- lic-Treiber
+- LiCS des Treibers
+- Führerschein
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenzen #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- driver'lic #
+- driver'lics #
+- Driver ' License #
+- Driver ' Licenses #
+- driver'licence #
+- driver'licences #
+- Driver ' lic #
+- Treiber ' LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- lic-Treiber #
+- LiCS des Treibers #
+- Führerschein #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driving licence
+ 
+- Führerschein
+- dlno #
+- Driv lic
+- Driv-Läuse
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
+- Treiber-Läuse
+- Treiber-Läuse
+- Treiber-Läuse
+- treibende lic
+- Steuern von Läusen
+- Steuern von Lizenzen
+- driving licence
+
+- driving licences
+
+- Führerschein
+- DL Nein
+- dlno
+- DL-Nummer
+
+
 #### <a name="keywords_malta_eu_drivers_license_number"></a>Keywords_malta_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- Treiber Lizenznummer
-- Treiber Lizenz
-- Treiber lic.
-- drivers license
-- drivers licence
-- driver's license
-- Führerscheinnummer
-- Führerscheinnummer
-- Führerscheinnummer
-- dlno #
 - Liċenzja TAS-Sewqan
+- liċenzji TAS-sewwieq
+
 
 ## <a name="malta-identity-card-number"></a>Malta-Personalausweisnummer
 Dieser Typ vertraulicher Informationen ist nur für die Verwendung in verfügbar:
@@ -9489,37 +11578,156 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Der reguläre Ausdruck  `Regex_netherlands_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus  `Keywords_netherlands_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_netherlands_eu_driver's_license_number` wird gefunden. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Netherlands Driver's License Number -->
+      <Entity id="6247fbea-ab80-4be5-8233-308b7c031401" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_netherlands_eu_driver's_license_number" />
-          <Match idRef="Keywords_netherlands_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_netherlands_eu_driver's_license_number" />
+            </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driver'lic
+- driver'lics
+- Driver ' License
+- Driver ' Licenses
+- driver'licence
+- driver'licences
+- Driver ' lic
+- Treiber ' LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- lic-Treiber
+- LiCS des Treibers
+- Führerschein
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenzen #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- driver'lic #
+- driver'lics #
+- Driver ' License #
+- Driver ' Licenses #
+- driver'licence #
+- driver'licences #
+- Driver ' lic #
+- Treiber ' LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- lic-Treiber #
+- LiCS des Treibers #
+- Führerschein #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driving licence
+ 
+- Führerschein
+- dlno #
+- Driv lic
+- Driv-Läuse
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
+- Treiber-Läuse
+- Treiber-Läuse
+- Treiber-Läuse
+- treibende lic
+- Steuern von Läusen
+- Steuern von Lizenzen
+- driving licence
+
+- driving licences
+
+- Führerschein
+- DL Nein
+- dlno
+- DL-Nummer
+
+
 #### <a name="keywords_netherlands_eu_drivers_license_number"></a>Keywords_netherlands_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- Treiber Lizenznummer
-- Treiber Lizenz
-- Treiber lic.
-- drivers license
-- drivers licence
-- driver's license
-- Führerscheinnummer
-- Führerscheinnummer
-- Führerscheinnummer
-- dlno #
 - permis de conduire
 - rijbewijs
 - rijbewijsnummer
+- rijbewijzen
+- rijbewijs Nummer
+- rijbewijsnummers
 
 
 ## <a name="netherlands-passport-number"></a>Niederländische Passnummer
@@ -9754,7 +11962,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
       <Entity id="1a97fc2b-dd2f-48f1-bc4e-2ddf25813956" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_new_zealand_bank_account_number" />
-          <Match idRef="Keywords_new_zealand_bank_account_number" />
+          <Match idRef="Keywords_new_zFealand_bank_account_number" />
         </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_new_zealand_bank_account_number" />
@@ -10174,35 +12382,152 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Der reguläre Ausdruck  `Regex_poland_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus  `Keywords_poland_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_poland_eu_driver's_license_number` wird gefunden. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Poland Driver's License Number -->
+      <Entity id="24d51f99-ee9e-4060-a077-cae58cab1ee4" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_poland_eu_driver's_license_number" />
-          <Match idRef="Keywords_poland_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_poland_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driver'lic
+- driver'lics
+- Driver ' License
+- Driver ' Licenses
+- driver'licence
+- driver'licences
+- Driver ' lic
+- Treiber ' LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- lic-Treiber
+- LiCS des Treibers
+- Führerschein
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenzen #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- driver'lic #
+- driver'lics #
+- Driver ' License #
+- Driver ' Licenses #
+- driver'licence #
+- driver'licences #
+- Driver ' lic #
+- Treiber ' LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- lic-Treiber #
+- LiCS des Treibers #
+- Führerschein #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driving licence
+ 
+- Führerschein
+- dlno #
+- Driv lic
+- Driv-Läuse
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
+- Treiber-Läuse
+- Treiber-Läuse
+- Treiber-Läuse
+- treibende lic
+- Steuern von Läusen
+- Steuern von Lizenzen
+- driving licence
+
+- driving licences
+
+- Führerschein
+- DL Nein
+- dlno
+- DL-Nummer
+
+
 #### <a name="keywords_poland_eu_drivers_license_number"></a>Keywords_poland_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- Treiber Lizenznummer
-- Treiber Lizenz
-- Treiber lic.
-- drivers license
-- drivers licence
-- driver's license
-- Führerscheinnummer
-- Führerscheinnummer
-- Führerscheinnummer
-- dlno #
 - Prawo jazdy
+- Prawa jazdy
 
 ## <a name="poland-identity-card"></a>Polen-Personalausweis
 
@@ -10540,17 +12865,24 @@ Diese Typen Entität für vertrauliche Informationen ist nur im vertraulichen In
 
 ### <a name="format"></a>Format
 
-zwei Buchstaben, gefolgt von sieben Zahlen im angegebenen Muster
+zwei Muster – zwei Buchstaben, gefolgt von 5-8 Ziffern mit Sonderzeichen
   
 ### <a name="pattern"></a>Muster
 
-zwei Buchstaben, gefolgt von sieben Zahlen mit Sonderzeichen:
-  
-- zwei Buchstaben (Groß-/Kleinschreibung nicht beachtet) 
-- ein Bindestrich
-- sechs Ziffern
-- ein Leerzeichen
-- eine Ziffer
+Muster 1: zwei Buchstaben, gefolgt von 5/6 mit Sonderzeichen:
+- Zwei Buchstaben (Groß-/Kleinschreibung nicht beachtet)
+- Ein Bindestrich 
+- Fünf oder sechs Ziffern
+- Ein Leerzeichen
+- Eine Ziffer
+
+Muster 2: ein Buchstabe, gefolgt von 6/8 Ziffern mit Sonderzeichen:
+- Ein Buchstabe (ohne Berücksichtigung der Groß-/Kleinschreibung)
+- Ein Bindestrich 
+- Sechs oder acht Ziffern
+- Ein Leerzeichen
+- Eine Ziffer
+
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -10560,35 +12892,160 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Der reguläre Ausdruck  `Regex_portugal_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus  `Keywords_portugal_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_portugal_eu_driver's_license_number` wird gefunden. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Portugal Driver's License Number -->
+      <Entity id="977f1e5a-2c33-4bcc-b516-95bb275cff23" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_portugal_eu_driver's_license_number" />
-          <Match idRef="Keywords_portugal_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_portugal_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driver'lic
+- driver'lics
+- Driver ' License
+- Driver ' Licenses
+- driver'licence
+- driver'licences
+- Driver ' lic
+- Treiber ' LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- lic-Treiber
+- LiCS des Treibers
+- Führerschein
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenzen #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- driver'lic #
+- driver'lics #
+- Driver ' License #
+- Driver ' Licenses #
+- driver'licence #
+- driver'licences #
+- Driver ' lic #
+- Treiber ' LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- lic-Treiber #
+- LiCS des Treibers #
+- Führerschein #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driving licence
+ 
+- Führerschein
+- dlno #
+- Driv lic
+- Driv-Läuse
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
+- Treiber-Läuse
+- Treiber-Läuse
+- Treiber-Läuse
+- treibende lic
+- Steuern von Läusen
+- Steuern von Lizenzen
+- driving licence
+
+- driving licences
+
+- Führerschein
+- DL Nein
+- dlno
+- DL-Nummer
+
+
 #### <a name="keywords_portugal_eu_drivers_license_number"></a>Keywords_portugal_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- Treiber Lizenznummer
-- Treiber Lizenz
-- Treiber lic.
-- drivers license
-- drivers licence
-- driver's license
-- Führerscheinnummer
-- Führerscheinnummer
-- Führerscheinnummer
-- dlno #
 - Carteira de motorista
+- Carteira motorista
+- Carteira de habilitação
+- Carteira habilitação
+- número de Licença
+- número Licença
+- permissão de CONDUÇÃO
+- permissão condução
+- Licença CONDUÇÃO Portugal
+- Carta de CONDUÇÃO
 
 ## <a name="portugal-passport-number"></a>Portugiesische Passnummer
 Diese vertrauliche Informationstyp Entität ist nur im vertraulichen Informationstyp EU-Passport-Nummer verfügbar.
@@ -10734,7 +13191,6 @@ ein Zeichen gefolgt von acht Ziffern
 ### <a name="pattern"></a>Muster
 
 ein Zeichen gefolgt von acht Ziffern:
-  
 - ein Buchstabe (ohne Unterscheidung nach Groß-/Kleinschreibung) oder Ziffern 
 - acht Ziffern
     
@@ -10746,35 +13202,156 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Der reguläre Ausdruck  `Regex_romania_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus  `Keywords_romania_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_romania_eu_driver's_license_number` wird gefunden. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Romania Driver's License Number -->
+      <Entity id="b5511ace-2fd8-4ae4-b6fc-c7c6e4689e3c" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_romania_eu_driver's_license_number" />
-          <Match idRef="Keywords_romania_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_romania_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driver'lic
+- driver'lics
+- Driver ' License
+- Driver ' Licenses
+- driver'licence
+- driver'licences
+- Driver ' lic
+- Treiber ' LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- lic-Treiber
+- LiCS des Treibers
+- Führerschein
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenzen #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- driver'lic #
+- driver'lics #
+- Driver ' License #
+- Driver ' Licenses #
+- driver'licence #
+- driver'licences #
+- Driver ' lic #
+- Treiber ' LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- lic-Treiber #
+- LiCS des Treibers #
+- Führerschein #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driving licence
+ 
+- Führerschein
+- dlno #
+- Driv lic
+- Driv-Läuse
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
+- Treiber-Läuse
+- Treiber-Läuse
+- Treiber-Läuse
+- treibende lic
+- Steuern von Läusen
+- Steuern von Lizenzen
+- driving licence
+
+- driving licences
+
+- Führerschein
+- DL Nein
+- dlno
+- DL-Nummer
+
+
 #### <a name="keywords_romania_eu_drivers_license_number"></a>Keywords_romania_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- Treiber Lizenznummer
-- Treiber Lizenz
-- Treiber lic.
-- drivers license
-- drivers licence
-- driver's license
-- Führerscheinnummer
-- Führerscheinnummer
-- Führerscheinnummer
-- dlno #
 - permis de conducere
+- permisului de conducere
+- permisului conducere
+- permisele de conducere
+- permisele conducere
+- permis conducere
 
 ## <a name="romania-personal-numeric-code-cnp"></a>Rumänischer persönlicher numerischer Code (CNP)
 Dieser Typ vertraulicher Informationen ist nur für die Verwendung in verfügbar:
@@ -11169,35 +13746,154 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Der reguläre Ausdruck  `Regex_slovakia_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus  `Keywords_slovakia_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_slovakia_eu_driver's_license_number` wird gefunden. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Slovakia Driver's License Number -->
+      <Entity id="14240c22-b6de-4ce5-a90b-137f74252513" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
-          <IdMatch idRef="Regex_slovaknia_eu_driver's_license_number" />
-          <Match idRef="Keywords_slovakia_eu_driver's_license_number" />
+          <IdMatch idRef="Regex_slovakia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_slovakia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driver'lic
+- driver'lics
+- Driver ' License
+- Driver ' Licenses
+- driver'licence
+- driver'licences
+- Driver ' lic
+- Treiber ' LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- lic-Treiber
+- LiCS des Treibers
+- Führerschein
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenzen #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- driver'lic #
+- driver'lics #
+- Driver ' License #
+- Driver ' Licenses #
+- driver'licence #
+- driver'licences #
+- Driver ' lic #
+- Treiber ' LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- lic-Treiber #
+- LiCS des Treibers #
+- Führerschein #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driving licence
+ 
+- Führerschein
+- dlno #
+- Driv lic
+- Driv-Läuse
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
+- Treiber-Läuse
+- Treiber-Läuse
+- Treiber-Läuse
+- treibende lic
+- Steuern von Läusen
+- Steuern von Lizenzen
+- driving licence
+
+- driving licences
+
+- Führerschein
+- DL Nein
+- dlno
+- DL-Nummer
+
+
 #### <a name="keywords_slovakia_eu_drivers_license_number"></a>Keywords_slovakia_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- Treiber Lizenznummer
-- Treiber Lizenz
-- Treiber lic.
-- drivers license
-- drivers licence
-- driver's license
-- Führerscheinnummer
-- Führerscheinnummer
-- Führerscheinnummer
-- dlno #
 - vodičský preukaz
+- vodičské preukazy
+- vodičského preukazu
+- vodičských preukazov
 
 ## <a name="slovakia-personal-number"></a>Slowakische Personalnummer
 Dieser Typ vertraulicher Informationen ist nur für die Verwendung in verfügbar:
@@ -11372,35 +14068,155 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Der reguläre Ausdruck  `Regex_slovenia_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus  `Keywords_slovenia_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_slovenia_eu_driver's_license_number` wird gefunden. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Slovenia Driver's License Number -->
+      <Entity id="d5bc089a-f2ee-433d-a6b1-5c253051d6f2" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_slovenia_eu_driver's_license_number" />
-          <Match idRef="Keywords_slovenia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_slovenia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driver'lic
+- driver'lics
+- Driver ' License
+- Driver ' Licenses
+- driver'licence
+- driver'licences
+- Driver ' lic
+- Treiber ' LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- lic-Treiber
+- LiCS des Treibers
+- Führerschein
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenzen #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- driver'lic #
+- driver'lics #
+- Driver ' License #
+- Driver ' Licenses #
+- driver'licence #
+- driver'licences #
+- Driver ' lic #
+- Treiber ' LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- lic-Treiber #
+- LiCS des Treibers #
+- Führerschein #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driving licence
+ 
+- Führerschein
+- dlno #
+- Driv lic
+- Driv-Läuse
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
+- Treiber-Läuse
+- Treiber-Läuse
+- Treiber-Läuse
+- treibende lic
+- Steuern von Läusen
+- Steuern von Lizenzen
+- driving licence
+
+- driving licences
+
+- Führerschein
+- DL Nein
+- dlno
+- DL-Nummer
+
+
 #### <a name="keywords_slovenia_eu_drivers_license_number"></a>Keywords_slovenia_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- Treiber Lizenznummer
-- Treiber Lizenz
-- Treiber lic.
-- drivers license
-- drivers licence
-- driver's license 
-- Führerscheinnummer
-- Führerscheinnummer
-- Führerscheinnummer
-- dlno #
 - vozniško dovoljenje
+- vozniška-številka-Lizenz
+- vozniških dovoljenj
+- številka vozniškega dovoljenja
+- številke vozniških dovoljenj
 
 ## <a name="slovenia-unique-master-citizen-number"></a>Slowenien Unique Master Citizen Number
 Dieser Typ vertraulicher Informationen ist nur für die Verwendung in verfügbar:
@@ -11733,58 +14549,180 @@ Ja
   
 ### <a name="definition"></a>Definition
 
+Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+- Die Funktion  `Func_spain_eu_DL_and_NI_number_citizen` oder `Func_spain_eu_DL_and_NI_number_foreigner` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_spain_eu_driver's_license_number` wird gefunden. 
+
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die  `Func_spain_eu_driver's_license_number` -Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus  `Keywords_spain_eu_driver's_license_number` wurde gefunden. 
+- Die Funktion  `Func_spain_eu_DL_and_NI_number_citizen` oder `Func_spain_eu_DL_and_NI_number_foreigner` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_spain_eu_driver's_license_number" />
-          <Match idRef="Keywords_spain_eu_driver's_license_number" />
+      <!-- Spain Driver's License Number -->
+      <Entity id="d5a82922-b501-4f40-8868-341321146aa2" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_citizen" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_spain_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_citizen" />
+        </Pattern>
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_foreigner" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_spain_eu_driver's_license_number" />
+          </Any>
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_foreigner" />
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driver'lic
+- driver'lics
+- Driver ' License
+- Driver ' Licenses
+- driver'licence
+- driver'licences
+- Driver ' lic
+- Treiber ' LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- lic-Treiber
+- LiCS des Treibers
+- Führerschein
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenzen #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- driver'lic #
+- driver'lics #
+- Driver ' License #
+- Driver ' Licenses #
+- driver'licence #
+- driver'licences #
+- Driver ' lic #
+- Treiber ' LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- lic-Treiber #
+- LiCS des Treibers #
+- Führerschein #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driving licence
+ 
+- Führerschein
+- dlno #
+- Driv lic
+- Driv-Läuse
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
+- Treiber-Läuse
+- Treiber-Läuse
+- Treiber-Läuse
+- treibende lic
+- Steuern von Läusen
+- Steuern von Lizenzen
+- driving licence
+
+- driving licences
+
+- Führerschein
+- DL Nein
+- dlno
+- DL-Nummer
+
+
 #### <a name="keywords_spain_eu_drivers_license_number"></a>Keywords_spain_eu_driver ' s_license_number
 
-- dlno #
-- DL #
-- Treiber lic.
-- Treiber Lizenz
-- driver license
-- drivers licence
-- drivers license
-- driver's licence
-- driver's license
-- Führerschein
-- driving license
-- Führerscheinnummer
-- Treiber Lizenznummer
-- Führerscheinnummer
-- Lizenznummer für Treiber
-- Führerscheinnummer
-- Führerscheinnummer
-- Führerscheinnummer
-- Führerscheinnummer
-- Führerschein
-- Führerscheinnummer
 - Permiso de conducción
 - permiso conducción
-- número licencia Conducir
-- número de carnet de Conducir
-- número Carnet Conducir
+- licencia de Conducir
 - licencia Conducir
-- número de Permiso de Conducir
-- número de Permiso Conducir
-- número Permiso Conducir
 - Permiso Conducir
-- licencia de Manejo
-- El Carnet de Conducir
+- Permiso de Conducir
+- Permisos de Conducir
+- Permisos Conducir
 - Carnet Conducir
+- Carnet de Conducir
+- licencia de Manejo
+- licencia Manejo
 
 ## <a name="spain-dni"></a>Spanien DNI
 Dieser Typ vertraulicher Informationen ist nur für die Verwendung in verfügbar:
@@ -12184,35 +15122,161 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Der reguläre Ausdruck  `Regex_sweden_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
-- Ein Schlüsselwort aus  `Keywords_sweden_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_sweden_eu_driver's_license_number` wird gefunden. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Sweden Driver's License Number -->
+      <Entity id="70088720-90dd-47f5-805e-5525f3567391" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_sweden_eu_driver's_license_number" />
-          <Match idRef="Keywords_sweden_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_sweden_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity> 
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-**Keywords_sweden_eu_driver ' s_license_number**
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
 
-- DL #
-- driver license
-- Treiber Lizenznummer
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Treiber lic
+- Treiber LiCS
 - Treiber Lizenz
-- Treiber lic.
-- drivers license
-- drivers licence
-- driver's license
-- Führerscheinnummer
-- Führerscheinnummer
-- Führerscheinnummer
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- driver'lic
+- driver'lics
+- Driver ' License
+- Driver ' Licenses
+- driver'licence
+- driver'licences
+- Driver ' lic
+- Treiber ' LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- lic-Treiber
+- LiCS des Treibers
+- Führerschein
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
+- DL #
+- DLS #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenzen #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Treiber lic #
+- Treiber LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- driver'lic #
+- driver'lics #
+- Driver ' License #
+- Driver ' Licenses #
+- driver'licence #
+- driver'licences #
+- Driver ' lic #
+- Treiber ' LiCS #
+- Treiber Lizenz #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- lic-Treiber #
+- LiCS des Treibers #
+- Führerschein #
+- Treiber Lizenzen #
+- Führerschein #
+- Führerscheine #
+- driving licence
+ 
+- Führerschein
 - dlno #
+- Driv lic
+- Driv-Läuse
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
+- Treiber-Läuse
+- Treiber-Läuse
+- Treiber-Läuse
+- treibende lic
+- Steuern von Läusen
+- Steuern von Lizenzen
+- driving licence
+
+- driving licences
+
+- Führerschein
+- DL Nein
+- dlno
+- DL-Nummer
+
+
+#### <a name="keywords_sweden_eu_drivers_license_number"></a>Keywords_sweden_eu_driver ' s_license_number
+
+- ajokortti
+- permis de conducere
+- ajokortin numero
+- kuljettajat lic.
+- Treiber lic.
 - körkort
+- numărul permisului de conducere
+-  שאָפער דערלויבעניש נומער
+- Förare lic.
+-  דריווערס דערלויבעניש
+- körkortsnummer
 
 ## <a name="sweden-national-id"></a>Schwedische National ID
 
@@ -12532,38 +15596,53 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
    
 #### <a name="keyword_swift"></a>Keyword_swift
 
-- international organization for standardization 9362 
-- iso 9362 
-- iso9362 
-- SWIFT\# 
-- Swiftcode 
-- swiftnumber 
-- swiftroutingnumber 
-- swift code 
-- swift number # 
-- swift routing number 
-- bic number 
-- bic code 
-- BIC \# 
-- BIC\# 
-- bank identifier code 
-- 標準化 9362 
-- 迅速＃ 
-- SWIFTコード 
-- SWIFT番号 
-- 迅速なルーティング番号 
-- BIC番号 
-- BICコード 
-- 銀行識別コードのための国際組織 
-- Organisation internationale de normalisation 9362 
-- rapide \# 
-- code SWIFT 
-- le numéro de swift 
-- swift numéro d'acheminement 
-- le numéro BIC 
-- \# BIC 
-- code identificateur de banque 
+- international organization for standardization 9362
 
+- iso 9362
+- iso9362
+- SWIFT #
+- Swiftcode
+- swiftnumber
+- swiftroutingnumber
+- SWIFT-Code
+- swift number #
+
+- swift routing number
+
+- bic number
+
+- bic code
+
+- bic #
+- BIC #
+- bank identifier code
+
+- Organisation internationale de normalisation 9362
+
+- rapide #
+
+- code SWIFT
+
+- le numéro de swift
+
+- swift numéro d'acheminement
+
+- le numéro BIC
+
+- # <a name="bic"></a>BIC
+- code identificateur de banque
+
+- SWIFTコード
+- SWIFT番号
+- BIC番号
+- BICコード
+- SWIFT-コード
+- SWIFT-番号
+- BIC-番号
+- BIC-コード
+- 金融機関識別コード
+- 金融機関コード
+- 銀行コード
 
 ## <a name="switzerland-ssn-ahv-number"></a>Schweiz SSN AHV-Nummer
 Dieser Typ vertraulicher Informationen ist nur für die Verwendung in verfügbar:
@@ -13095,24 +16174,18 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Die Funktion Func_uk_nino findet Inhalte, die dem Muster entsprechen.
-- Es wurde kein Schlüsselwort aus Keyword_uk_nino gefunden.
 
 ```xml
-<!-- U.K. NINO -->
-<Entity id="16c07343-c26f-49d2-a987-3daf717e94cc" patternsProximity="300" recommendedConfidence="75">
-    <Pattern confidenceLevel="85">
+    <!-- U.K. NINO -->
+    <Entity id="16c07343-c26f-49d2-a987-3daf717e94cc" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_uk_nino" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_uk_nino" />
-        </Any>
-    </Pattern>    
-     <Pattern confidenceLevel="75">
+        <Match idRef="Keyword_uk_nino" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_uk_nino" />
-        <Any minMatches="0" maxMatches="0">
-          <Match idRef="Keyword_uk_nino" />
-        </Any>
-    </Pattern>
-</Entity>
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter

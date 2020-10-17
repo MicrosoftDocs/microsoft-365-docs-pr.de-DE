@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch einem Dokument oder einer E-Mail zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: c4f00c0a11b172671da456b27e0e33c081728614
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 87b1078462d6315e6cf4ddeb95832f20eae67375
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326746"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445479"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -107,7 +107,11 @@ Weitere Informationen zu übergeordneten Bezeichnungen und Unterbezeichnungen fi
 
 Die automatische Zuweisung von Bezeichnungen in Office-Apps für Windows wird durch den Client mit einheitlichen Bezeichnungen von Azure Information Protection unterstützt. Für die integrierte Beschriftung in Office-Apps finden Sie diese Funktion unter [unterschiedliche Phasen der Verfügbarkeit für unterschiedliche Apps](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
-Die Einstellungen für das automatische Bezeichnen für Office-Apps sind verfügbar, wenn Sie [eine Vertraulichkeitsbezeichnung erstellen oder bearbeiten](create-sensitivity-labels.md). Sie können sich dafür entscheiden, Inhalten automatisch Vertraulichkeitsbezeichnungen zuzuordnen, wenn vertrauliche Informationen erkannt werden. Wählen Sie aus einer Liste von Typen vertraulicher Informationen oder trainierbarer Klassifizierungen aus:
+Die Einstellungen für das automatische Bezeichnen für Office-Apps sind verfügbar, wenn Sie [eine Vertraulichkeitsbezeichnung erstellen oder bearbeiten](create-sensitivity-labels.md). Stellen Sie sicher, dass **Dateien und E-Mails** für den Bereich der Bezeichnung ausgewählt ist: 
+
+![Bereichsoptionen bei Vertraulichkeitsbezeichnungen für Dateien und E-Mails](../media/filesandemails-scope-options-sensitivity-label.png)
+
+Wenn Sie den Assistenten durchlaufen, wird die Seite **Automatisches Bezeichnen für Office-Apps** angezeigt, auf der Sie aus einer Liste mit vertraulichen Informationstypen oder trainierbaren Klassifizierungsmerkmalen auswählen können:
 
 ![Bezeichnungsbedingungen für die automatische Zuweisung von Bezeichnungen in Office-Apps](../media/sensitivity-labels-conditions.png)
 
@@ -202,7 +206,7 @@ Vergewissern Sie sich, dass Sie die Voraussetzungen kennen, bevor Sie automatisc
     - Zum Zeitpunkt der Ausführung der Richtlinie zum automatischen Bezeichnen darf die Datei nicht von einem anderen Prozess oder Benutzer geöffnet sein. Eine Datei, die zur Bearbeitung ausgecheckt ist, fällt in diese Kategorie.
 
 - Wenn Sie vorhaben, anstelle der integrierten Vertraulichkeitstypen [benutzerdefinierte sensible Informationstypen](custom-sensitive-info-types.md) zu verwenden: 
-    - Benutzerdefinierte Vertraulichkeitsinformationstypen werden für Inhalte ausgewertet, die nach dem Speichern der benutzerdefinierten Vertraulichkeitsinformationstypen erstellt werden. 
+    - Benutzerdefinierte Vertraulichkeitsinformationstypen werden für Inhalte ausgewertet, die nach dem Speichern der benutzerdefinierten Vertraulichkeitsinformationstypen zu SharePoint oder OneDrive hinzugefügt wurden. 
     - Um neue benutzerdefinierte Typen sensibler Informationen zu testen, erstellen Sie diese, bevor Sie Ihre Richtlinie zum automatischen Bezeichnen erstellen, und erstellen Sie dann neue Dokumente mit Beispieldaten zum Testen.
 
 - Eine oder mehrere Vertraulichkeitsbezeichnungen wurden [erstellt und veröffentlicht](create-sensitivity-labels.md) (für mindestens einen Benutzer), den Sie für Ihre Richtlinie zum automatischen Bezeichnen auswählen können. Für diese Bezeichnungen:

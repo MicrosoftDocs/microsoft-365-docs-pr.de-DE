@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Hier erfahren Sie, wie Sie die Multi-Faktor-Authentifizierung für Ihre Organisation einrichten.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 34133f4204c1ee305b0a249a0ff8e0e9edaf5599
-ms.sourcegitcommit: e891c7c25f351f10f250af3f483f68594976ddc9
+ms.openlocfilehash: 320c66e6c9db7827c22cab67df57d75375f009d4
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45153677"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464014"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Einrichten der mehrstufigen Authentifizierung
   
@@ -96,12 +96,11 @@ Wenn bisher die veraltete MFA auf Benutzerbasis aktiviert ist, müssen Sie diese
 1. Wählen Sie auf der Seite "Mehrstufige Authentifizierung" jeden Benutzer aus, und setzen Sie Status für die mehrstufige Authentifizierung auf **Deaktiviert**.
 
 ## <a name="next-steps"></a>Nächste Schritte
-
 - [Wie sie sich für die zusätzliche Überprüfungsmethode registrieren](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
+- [Was ist mehrstufige Authentifizierung?](https://support.microsoft.com/help/4577374/what-is-multifactor-authentication)
 - [Wie sie sich nach der Registrierung anmelden](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
 - [Wie sie die zusätzliche Überprüfungsmethode ändern können](https://support.microsoft.com/office/956ec8d0-7081-4518-a701-f8414cc20831)
-- [Wie z. B. bei einem Wechsel des Smartphones vorgegangen werden muss](https://support.microsoft.com/office/6951be76-af50-49a4-847f-21391eaa59f2)
-- [Problembehandlung bei MFA-Anmeldungen](https://support.microsoft.com/office/6951be76-af50-49a4-847f-21391eaa59f2)
+
 
 
 

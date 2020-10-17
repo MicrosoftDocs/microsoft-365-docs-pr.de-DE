@@ -18,86 +18,87 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Zusammenfassung: Konfigurieren und Testen des nahtlosen einmaliges Anmeldens in Azure AD für Ihre Microsoft 365-Testumgebung.'
-ms.openlocfilehash: 3ba229a62f66cad715f604bab91cd12032da7be8
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: f98f82de50feb2a9f92d1ecc4775c5307b314a72
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685772"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487600"
 ---
 # <a name="azure-ad-seamless-single-sign-on-for-your-microsoft-365-test-environment"></a>Nahtloses einmaliges Anmelden in Azure AD für Ihre Microsoft 365-Testumgebung
 
 *Diese Test Umgebungs Anleitung kann sowohl für Microsoft 365 für Unternehmen als auch für Office 365 Enterprise Testumgebungen verwendet werden.*
 
-Beim nahtlosen einmaligen Anmelden von Azure AD werden Benutzer automatisch angemeldet, wenn sie auf ihren Computern oder Geräten arbeiten, die mit ihrem Organisationsnetzwerk verbunden sind. Das nahtlose einmalige Anmelden in Azure AD bietet Benutzern einfachen Zugriff auf cloudbasierte Anwendungen, ohne dass dafür zusätzliche lokale Komponenten erforderlich sind.
+Azure AD nahtlose Einzel Sign-On (Seamless SSO) automatisch Benutzer, wenn Sie sich auf ihren PCs oder Geräten befinden, die mit Ihrem Organisationsnetzwerk verbunden sind. Azure AD nahtloses SSO bietet Benutzern einfachen Zugriff auf Cloud-basierte Anwendungen, ohne dass zusätzliche lokale Komponenten erforderlich sind.
 
-Dieser Artikel beschreibt, wie Sie Ihre Microsoft 365-Testumgebung für das nahtlose einmalige Anmelden in Azure AD konfigurieren.
+In diesem Artikel wird beschrieben, wie Sie Ihre Microsoft 365-Testumgebung für Azure AD nahtloses SSO konfigurieren.
 
-Die Einrichtung besteht aus zwei Phasen:
-
-1.    Erstellen Sie die simulierte Microsoft 365-Testunternehmensumgebung mit Kennworthashsynchronisierung.
-2.    Konfigurieren Sie Azure AD Connect auf APP1 für das nahtlose einmalige Anmelden in Azure AD.
-    
+Das Einrichten Azure AD nahtlosen SSO umfasst zwei Phasen:
+- [Phase 1: Konfigurieren Sie Kennworthashsynchronisierung für Ihre Microsoft 365-Testumgebung](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
+- [Phase 2: Konfigurieren Sie Azure AD Connect auf APP1 für das nahtlose einmalige Anmelden in Azure AD.](#phase-2-configure-azure-ad-connect-on-app1-for-azure-ad-seamless-sso)
+   
 ![Testumgebungsanleitungen für die Microsoft-Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Klicken Sie [hier](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Microsoft 365 Enterprise zu erhalten.
+> Eine visuelle Zuordnung zu allen Artikeln im Microsoft 365 for Enterprise Test Lab Guide Stack finden Sie unter [Microsoft 365 for Enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
   
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Phase 1: Konfigurieren Sie Kennworthashsynchronisierung für Ihre Microsoft 365-Testumgebung
 
-Befolgen Sie die Anweisungen unter [Kennworthashsynchronisierung für Microsoft 365](password-hash-sync-m365-ent-test-environment.md). Hier ist die resultierende Konfiguration.
+Befolgen Sie die Anweisungen unter [Kennworthash Synchronisierung für Microsoft 365](password-hash-sync-m365-ent-test-environment.md). 
+
+Die resultierende Konfiguration sieht wie folgt aus:
   
 ![Das simulierte Unternehmen mit Kennworthashsynchronisierung für die Testumgebung](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
-Diese Konfiguration besteht aus:  
+Diese Konfiguration besteht aus: 
   
 - Eine Testversion oder ein kostenpflichtiges Abonnement für Microsoft 365 E5.
-- Einem vereinfachtem Unternehmensintranet mit Internetzugriff, das aus virtuellen DC1-, APP1- und CLIENT1-Computern in einem Subnetz eines virtuellen Azure-Netzwerks besteht. 
-- Azure AD Connect wird auf APP1 ausgeführt, um die Active Directory Domain Services (AD DS)-Domäne TESTLAB mit dem Azure AD-Mandanten Ihrer Microsoft 365-Abonnements in regelmäßigen Abständen zu synchronisieren.
+- Ein vereinfachtes Organisationsintranet, das mit dem Internet verbunden ist, das aus den virtuellen Computern DC1, App1 und CLIENT1 in einem Subnetz eines virtuellen Azure-Netzwerks besteht.
+- Azure AD Connect wird auf App1 ausgeführt, um die TESTLAB Active Directory-Domänendienste (AD DS) Domäne regelmäßig mit dem Azure AD Mandanten Ihres Microsoft 365-Abonnements zu synchronisieren.
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-azure-ad-seamless-sso"></a>Phase 2: Konfigurieren Sie Azure AD Connect auf APP1 für das nahtlose einmalige Anmelden in Azure AD.
 
-In dieser Phase konfigurieren Sie Azure AD Connect auf APP1 für das nahtlose einmalige Anmelden in Azure AD und vergewissern sich dann, dass es funktioniert.
+Konfigurieren Sie in dieser Phase Azure AD Connect on App1 für Azure AD nahtloses SSO, und überprüfen Sie dann, ob es funktioniert.
 
 ### <a name="configure-azure-ad-connect-on-app1"></a>Konfigurieren von Azure AD Connect auf APP1
 
 1. Melden Sie sich über das [Azure-Portal](https://portal.azure.com) mit Ihrem globalen Administratorkonto an, und stellen Sie dann mit dem Konto „TESTLAB\User1“ eine Verbindung zu APP1 her.
 
-2. Führen Sie Azure AD Connect über den Desktop von APP1 aus.
+2. Führen Sie auf dem App1-Desktop Azure AD Connect aus.
 
-3. Klicken Sie auf der Seite **Willkommen** auf **Konfigurieren**.
+3. Wählen Sie auf der **Willkommensseite** **configure**aus.
 
-4. Klicken Sie auf der Seite **Weitere Aufgaben** auf **Benutzeranmeldung ändern**, und klicken Sie dann auf **Weiter**.
+4. Wählen Sie auf der Seite **Weitere Aufgaben** die Option **Benutzeranmeldung ändern**aus, und wählen Sie dann **weiter**aus.
 
-5. Geben Sie auf der Seite **Mit Azure AD verbinden** die Anmeldeinformationen für das globale Administratorkonto ein, und klicken Sie dann auf **Weiter**.
+5. Geben Sie auf der Seite mit **Azure AD verbinden** die Anmeldeinformationen des globalen Administratorkontos ein, und wählen Sie dann **weiter**aus.
 
-6. Wählen Sie auf der Seite **Benutzeranmeldung** die Option **Einmaliges Anmelden aktivieren**, und klicken Sie dann auf **Weiter**.
+6. Wählen Sie auf der Seite **Benutzeranmeldung** die Option **einmaliges Anmelden aktivieren**aus, und wählen Sie dann **weiter**aus.
 
-7. Klicken Sie auf der Seite **Einmaliges Anmelden aktivieren** auf **Anmeldeinformationen eingeben**.
+7. Wählen Sie auf der Seite **einmaliges Anmelden aktivieren** die Option **Anmeldeinformationen eingeben**aus.
 
-8. Geben Sie im Dialogfeld **Windows-Sicherheit** den Benutzer **Benutzer1** und das Kennwort für das Konto „Benutzer1“ ein, und klicken Sie dann auf **OK**. Klicken Sie auf **Weiter**.
+8. Geben Sie im Dialogfeld **Windows** -Sicherheit **User1** und das Kennwort des user1-Kontos ein, klicken Sie auf **OK**, und wählen Sie dann **weiter**aus.
 
-9. Klicken Sie auf der Seite **Bereit zur Konfiguration** auf **Konfigurieren**.
+9. Wählen Sie auf der Seite " **vorbereiten zur Konfiguration** " die Option **configure**aus.
 
-10. Klicken Sie auf der Seite **Konfiguration abgeschlossen** auf **Beenden**.
+10. Wählen Sie auf der Seite **Konfiguration abgeschlossen** die Option **Beenden**aus.
 
-11. Klicken Sie im Azure-Portal im linken Bereich auf **Azure Active Directory > Azure AD Connect**. Überprüfen Sie, ob die Funktion **Einmaliges Anmelden** als **Aktiviert** angezeigt wird.
+11. Wählen Sie im Azure-Portal im linken Bereich **Azure Active Directory**  >  **Azure AD Connect**aus. Stellen Sie sicher, dass das **nahtlose Feature für einmaliges Anmelden** als **aktiviert**angezeigt wird.
 
-Testen Sie als nächstes die Möglichkeit, sich mit dem user1@testlab bei Ihrem Abonnement anzumelden <strong>.</strong>\<your public domain> Benutzername des User1-Kontos.
+Testen Sie als nächstes die Möglichkeit, sich mit dem user1@testlab bei Ihrem Abonnement anzumelden <strong>.</strong>\<*your public domain*> Benutzername des User1-Kontos.
 
-1. Klicken Sie in Internet Explorer auf APP1 auf das Symbol „Einstellungen“, und klicken Sie dann auf **Internetoptionen**.
+1. Wählen Sie unter Internet Explorer auf App1 das Symbol Einstellungen aus, und wählen Sie dann **Internet Optionen**aus.
  
-2. Klicken Sie unter **Internetoptionen** auf die Registerkarte **Sicherheit**.
+2. Wählen Sie unter **Internet Optionen**die Registerkarte **Sicherheit** aus.
 
-3. Klicken Sie auf **Lokales Intranet** und dann auf **Sites**.
+3. Wählen Sie **Lokales Intranet**aus, und wählen Sie dann **Sites**aus.
 
-4. Klicken Sie unter **Lokales Intranet** auf **Erweitert**.
+4. Wählen Sie im **lokalen Intranet**die Option **erweitert**aus.
 
-5. Geben Sie unter **Diese Website zur Zone hinzufügen** die Adresse **https<span>://</span>autologon.microsoftazuread-sso.com** ein, und klicken Sie auf **Hinzufügen > Schließen > OK > OK**.
+5. Geben Sie unter **diese Website zur Zone hinzufügen die**Option **https<span>://</span>Autologon.microsoftazuread-SSO.com**ein, und **Wählen Sie**  >  **Schließen**  >  **OK**  >  **OK**aus.
 
 6. Melden Sie sich ab, und melden Sie sich dann erneut an. Geben Sie dieses Mal ein anderes Konto an.
 
-7. Wenn Sie zur Anmeldung aufgefordert werden, geben Sie <strong>User1@testlab an.</strong>\<your public domain> Namen ein, und klicken Sie dann auf **weiter**. Sie sollten sich erfolgreich als "User1" anmelden können, ohne zur Eingabe eines Kennworts aufgefordert zu werden. Dies beweist, dass das nahtlose einmalige Anmelden mit Azure AD funktioniert.
+7. Wenn Sie zur Anmeldung aufgefordert werden, geben Sie <strong>User1@testlab an.</strong>\<*your public domain*> Name, und wählen Sie dann **weiter**aus. Sie sollten sich erfolgreich als "User1" anmelden können, ohne zur Eingabe eines Kennworts aufgefordert zu werden. Dies beweist, dass das nahtlose einmalige Anmelden mit Azure AD funktioniert.
 
 Beachten Sie, dass "User1" zwar über Administratorberechtigungen für die AD DS-Domäne TESTLAB verfügt, er aber kein globaler Administrator für Azure AD ist. Daher wird das Symbol **Admin** nicht als Option angezeigt.
 
@@ -105,13 +106,12 @@ Nachfolgend sehen Sie die daraus resultierende Konfiguration:
 
 ![Das simulierte Unternehmen mit einer Testumgebung mit Pass-Trought-Authentifizierung](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
 
- 
 Diese Konfiguration besteht aus: 
 
-- Eine Microsoft 365 E5-Testversion oder kostenpflichtige Abonnements mit der DNS-Domäne testlab.\<your domain name> registriert.
-- Einem vereinfachtem Unternehmensintranet mit Internetzugriff, das aus virtuellen DC1-, APP1- und CLIENT1-Computern in einem Subnetz eines virtuellen Azure-Netzwerks besteht. 
-- Azure AD Connect wird auf APP1 ausgeführt, um die Liste von Konten und Gruppen des Azure AD-Mandanten Ihrer Microsoft 365-Abonnements mit der AD DS-Domäne „TESTLAB“ zu synchronisieren. 
-- Das nahtlose einmalige Anmelden in Azure AD wird aktiviert, damit sich Computer im simulierten Intranet bei Microsoft 365-Cloudressourcen anmelden können, ohne ein Kennwort für ein Benutzerkonto anzugeben.
+- Eine Microsoft 365 E5-Testversion oder kostenpflichtige Abonnements mit der DNS-Domäne testlab.\<*your domain name*> registriert.
+- Ein vereinfachtes Organisationsintranet, das mit dem Internet verbunden ist, das aus den virtuellen Computern DC1, App1 und CLIENT1 in einem Subnetz eines virtuellen Azure-Netzwerks besteht.
+- Azure AD Connect wird auf APP1 ausgeführt, um die Liste von Konten und Gruppen des Azure AD-Mandanten Ihrer Microsoft 365-Abonnements mit der AD DS-Domäne „TESTLAB“ zu synchronisieren.
+- Azure AD nahtloses SSO ist aktiviert, sodass Computer im simulierten Intranet sich bei den Cloud-Ressourcen von Microsoft 365 anmelden können, ohne ein Benutzerkontokennwort anzugeben.
 
 ## <a name="next-step"></a>Nächster Schritt
 
@@ -124,5 +124,3 @@ Sehen Sie sich weitere [Identitäts](m365-enterprise-test-lab-guides.md#identity
 [Übersicht über Microsoft 365 Enterprise](microsoft-365-overview.md)
 
 [Dokumentation zu Microsoft 365 für Unternehmen](https://docs.microsoft.com/microsoft-365-enterprise/)
-
-
