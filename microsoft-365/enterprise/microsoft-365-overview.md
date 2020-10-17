@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2019
+ms.date: 10/15/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Bietet eine Einführung in die Komponenten, Pläne und Bereitstellungspfade für Microsoft 365 Enterprise.
-ms.openlocfilehash: 53cc91a2b5e756fcf4ec8fcc5371795bcfb8342c
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: d34ddd9b577f4baff4ebb77f84f48bf2b779c93c
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464348"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487152"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Übersicht über Microsoft 365 Enterprise
 
@@ -104,21 +104,21 @@ Sie können [dieses Poster herunterladen](https://github.com/MicrosoftDocs/micro
 
 ## <a name="plan-for-and-deploy"></a>Planen und Bereitstellen von
 
-Es gibt drei Möglichkeiten, um die Bereitstellung von Produkten, Features und Komponenten von Microsoft 365 Enterprise zu planen:
+Es gibt drei Möglichkeiten, die Produkte, Features und Komponenten von Microsoft 365 Enterprise zu planen und bereitzustellen:
 
-- In Zusammenarbeit mit FastTrack:
+- Zusammenarbeit mit FastTrack
 
    Mit FastTrack helfen Ihnen die Microsoft-Techniker, in Ihrem eigenen Tempo in die Cloud zu wechseln. Siehe [FastTrack für Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
 
-- Mithilfe von Microsoft Consulting Services oder eines [Microsoft-Partners](https://partner.microsoft.com/):
+- Mithilfe von Microsoft Consulting Services oder eines [Microsoft-Partners](https://partner.microsoft.com/)
 
    Berater können Ihre aktuelle Infrastruktur analysieren und Ihnen helfen, einen Plan zu entwickeln, der die gesamte Software und alle Dienste von Microsoft 365 Enterprise umfasst.
 
-- Selbstständig ausführen:
+- Selbstständig ausführen
 
-   Beginnen Sie mit [Networking-Roadmap](networking-roadmap-microsoft-365.md), um Ihre vorhandenen Infrastruktur- und Produktivitätslasten auszubauen oder zu überprüfen.
+   Beginnen Sie mit der [Networking-Roadmap](networking-roadmap-microsoft-365.md), um Ihre vorhandenen Infrastruktur- und Produktivitätslasten auszubauen oder zu überprüfen.
 
-Ein Beispiel dafür, wie eine fiktive, aber repräsentative multinationale Organisation Microsoft 365 Enterprise eingesetzt hat, finden Sie unter [Contoso Corporation](contoso-overview.md).
+Ein Beispiel dafür, wie eine fiktive, aber repräsentative multinationale Organisation Microsoft 365 Enterprise eingesetzt hat, finden Sie in der [Contoso Corporation-Fallstudie](contoso-overview.md).
 
 ## <a name="additional-microsoft-365-products"></a>Weitere Microsoft 365-Produkte
 
