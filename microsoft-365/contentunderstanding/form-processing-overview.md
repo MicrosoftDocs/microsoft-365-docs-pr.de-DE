@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Informationen zur Formularverarbeitung in Microsoft SharePoint Syntex
-ms.openlocfilehash: bbdf318b7d0c4a9f58cc79453dfaaf0daf5b9a5c
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: 7340e0c78db71fbb0acc05c2985b60f6bafbba80
+ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333902"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48493673"
 ---
 # <a name="form-processing-overview"></a>Übersicht über die Formularverarbeitung
 
@@ -33,17 +33,13 @@ Sie können z. B. ein Formularverarbeitungsmodell erstellen, das alle Auftragsdo
 
 ![Dokumentbibliotheksansicht](../media/content-understanding/doc-lib-done.png)</br>  
 
-Sie können auch Beispieldateien verwenden, um das Modell zu trainieren und die Informationen zu definieren, die aus dem Formular extrahiert werden sollen. Durch das Trainieren lernt das Modell den Aufbau Ihres Dokuments kennen, und es lernt, Daten aus ähnlichen Stellen in Ihren Formularen zu extrahieren, da diese einen ähnlich strukturierten Aufbau aufweisen. 
+Um das Modell zu trainieren und die Informationen zu definieren, die aus dem Formular extrahiert werden sollen, werden Beispieldateien verwendet. Ihr Modell lernt durch das Trainieren den Aufbau Ihres Dokuments kennen. Für den Anfang benötigen Sie nur fünf Formulare. AI Builder analysiert Ihre Beispieldateien auf Schlüssel-/Wertpaare, darüber hinaus können Sie manuell diejenigen ermitteln, die evtl. nicht erkannt wurden.  Im AI Builder können Sie die Genauigkeit Ihres Modells anhand Ihrer Beispieldateien testen.
 
 Für den Anfang benötigen Sie mindestens fünf Formulare. AI Builder analysiert Ihre Beispieldateien auf Schlüssel-/Wertpaare, und Sie können dann manuell diejenigen ermitteln, die evtl. nicht erkannt wurden.  Im AI Builder können Sie die Genauigkeit Ihres Modells anhand Ihrer Beispieldateien testen.
 
-Nachdem Sie Ihr Modell trainiert und veröffentlicht haben, verwenden Sie es, um einen [Power Automation-Ablauf](https://docs.microsoft.com/power-automate/getting-started) zu erstellen, der nach dem Hochladen einer Datei in die SharePoint-Dokumentbibliothek ausgeführt wird. Anschließend werden die im Modell identifizierten Daten extrahiert. Die extrahierten Daten werden in Spalten in der Dokumentbibliotheksansicht Ihres Modells angezeigt.
-
-Um das Modell zu trainieren und die Informationen zu definieren, die aus dem Formular extrahiert werden sollen, werden Beispieldateien verwendet. Ihr Modell lernt durch das Trainieren den Aufbau Ihres Dokuments kennen. Für den Anfang benötigen Sie nur fünf Formulare. AI Builder analysiert Ihre Beispieldateien auf Schlüssel-/Wertpaare, darüber hinaus können Sie manuell diejenigen ermitteln, die evtl. nicht erkannt wurden.  Im AI Builder können Sie die Genauigkeit Ihres Modells anhand Ihrer Beispieldateien testen.
-
 Nachdem Sie das Modell trainiert und veröffentlicht haben, erstellt das Modell einen [Power Automation-Ablauf](https://docs.microsoft.com/power-automate/getting-started). Der Ablauf wird ausgeführt, wenn eine Datei in die SharePoint-Dokumentbibliothek hochgeladen wird, und extrahiert Daten, die im Modell erkannt wurden. Die extrahierten Daten werden in Spalten in der Dokumentbibliotheksansicht Ihres Modells angezeigt.
 
-Damit Benutzer ein [Formularverarbeitungsmodell erstellen](create-a-form-processing-model.md) können, muss ein Office 365-Administrator die [Formularverarbeitung für die SharePoint-Dokumentbibliothek aktivieren](https://docs.microsoft.com/microsoft-365/contentunderstanding/set-up-content-understanding#to-set-up-content-understanding).
+Damit Benutzer ein [Formularverarbeitungsmodell erstellen](create-a-form-processing-model.md) können, muss ein Office 365-Administrator die [Formularverarbeitung für die SharePoint-Dokumentbibliothek aktivieren](https://docs.microsoft.com/microsoft-365/contentunderstanding/set-up-content-understanding#to-set-up-content-understanding). Sie können die Websites während des Setups oder nach dem Setup in den Verwaltungseinstellungen auswählen.
 
 
 
