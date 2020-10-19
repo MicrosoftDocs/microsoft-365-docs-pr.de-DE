@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Zusammenfassung: Verwenden Sie PowerShell zum Erstellen neuer SharePoint Online Websites und Hinzufügen von Benutzern und Gruppen zu diesen Websites.'
-ms.openlocfilehash: 4c4edbd68343f0eaf3a25a8c60a2af1e83b058b6
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 28a51cc39fe838f6c7f9c50e9d750d28e5d830c4
+ms.sourcegitcommit: 24ccb910ffac4d065c512a57c5decd9dd19ef4c1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690439"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "48594918"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-powershell"></a>Erstellen von SharePoint Online-Websites und Hinzufügen von Benutzern mit PowerShell
 
@@ -43,6 +43,9 @@ Erstellen Sie mehrere Websites mithilfe von PowerShell und eine CSV-Datei, die S
 Das PowerShell-Cmdlet importiert die CSV-Datei und leitet Sie in eine Schleife innerhalb der geschweiften Klammern, die die erste Zeile der Datei als Spaltenüberschriften liest. Das PowerShell-Cmdlet durchläuft dann die restlichen Datensätze, erstellt eine neue Websitesammlung für jeden Datensatz und weist die Eigenschaften der Websitesammlung entsprechend den Spaltenüberschriften zu.
 
 ### <a name="create-a-csv-file"></a>Erstellen einer CSV-Datei
+
+> [!NOTE]
+> Der Parameter Resource Quota funktioniert nur auf klassischen Websites. Wenn Sie diesen Parameter für eine moderne Website verwenden, wird möglicherweise eine Warnmeldung angezeigt, dass er veraltet ist. 
 
 1. Öffnen Sie den Editor und fügen Sie den folgenden Textblock ein:<br/>
 
@@ -164,4 +167,3 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 [Verwalten von Microsoft 365 mit PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-microsoft-365-powershell.md)
-

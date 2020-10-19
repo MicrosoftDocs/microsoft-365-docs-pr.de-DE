@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie e-Mail-Sicherheitsberichte für Ihre Organisation suchen und verwenden. E-Mail-Sicherheitsberichte sind im Security & Compliance Center verfügbar.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7e594f758e0fb08b0b8718248466ecbc46903b82
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 7d83e86c77eb148c4c55be3f363966ac3c756e87
+ms.sourcegitcommit: 24ccb910ffac4d065c512a57c5decd9dd19ef4c1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327009"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "48594885"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Anzeigen von E-Mail-Sicherheitsberichten im Security & Compliance Center
 
@@ -67,7 +67,7 @@ Klicken Sie auf **Bericht anzeigen**, um zur Berichtsansicht zurückzukehren.
 
 ## <a name="encryption-report"></a>Verschlüsselungs Bericht
 
-Der **Verschlüsselungs Bericht** steht in EoP (Abonnements mit Postfächern in Exchange Online oder eigenständigen EoP ohne Exchange Online Postfächer) zur Verfügung. Das Sicherheitsteam Ihrer Organisation kann Informationen in diesem Bericht verwenden, um Muster zu identifizieren und Richtlinien für vertrauliche e-Mail-Nachrichten proaktiv anzuwenden oder anzupassen. Beispiel:
+Der **Verschlüsselungs Bericht** steht in EoP (Abonnements mit Postfächern in Exchange Online oder eigenständigen EoP ohne Exchange Online Postfächer) zur Verfügung. Das Sicherheitsteam Ihrer Organisation kann Informationen in diesem Bericht verwenden, um Muster zu identifizieren und Richtlinien für vertrauliche e-Mail-Nachrichten proaktiv anzuwenden oder anzupassen. Zum Beispiel:
 
 - Wenn eine große Anzahl von von Benutzern verschlüsselten e-Mail-Nachrichten angezeigt wird, möchten Sie möglicherweise eine Verschlüsselungsrichtlinie zum Automatisieren der Verschlüsselung für bestimmte Anwendungsfälle hinzufügen. Weitere Informationen finden Sie unter [Definieren von Nachrichtenfluss Regeln zum Verschlüsseln von e-Mail-Nachrichten in Microsoft 365](../../compliance/define-mail-flow-rules-to-encrypt-email.md).
 
@@ -276,8 +276,8 @@ Der Bericht enthält die Anzahl von e-Mail-Nachrichten mit bösartigen Inhalten 
 
 Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center](https://protection.office.com), wechseln Sie **Reports** zum \> **Dashboard** Berichte, und wählen Sie **Threat Protection Status**aus. Wenn Sie direkt zum Bericht wechseln möchten, öffnen Sie eine der folgenden URLs:
 
-- Office 365 ATP: <https://protection.office.com/reportv2?id=ATPV2AggregateReport> .
-- EoP <https://protection.office.com/reportv2?id=ATPAggregateLightReport>
+- Office 365 ATP: <https://protection.office.com/reportv2?id=TPSAggregateReportATP>
+- EoP <https://protection.office.com/reportv2?id=TPSAggregateReport>
 
 ![Widget "Threat Protection Status" im Dashboard "Berichte"](../../media/threat-protection-status-report-widget.png)
 
@@ -301,6 +301,20 @@ Die folgenden Ansichten sind verfügbar:
   - **Datei Explosion**
 
   ![Ansicht "Inhalts-Malware" im Statusbericht "Threat Protection"](../../media/threat-protection-status-report-content-malware-view.png)
+
+- **Anzeigen von Daten nach: Nachrichten Überschreibung**: die folgenden Außerkraftsetzungs Grundinformationen werden angezeigt:
+
+  - **On-premises Skip**
+  - **IP-Adresse zulassen**
+  - **Nachrichtenfluss Regel**
+  - **Absender zulassen**
+  - **Domäne zulassen**
+  - **Zap nicht aktiviert**
+  - **Junk-e-Mail-Ordner nicht aktiviert**
+  - **Sicherer Absender des Benutzers**
+  - **Benutzer sichere Domäne**
+
+  ![Ansicht "Nachrichten Außerkraftsetzung" im Statusbericht "Threat Protection"](../../media/threat-protection-status-report-message-override-view.png)
 
 - **Aufschlüsseln nach: Erkennungstechnologie** und **Anzeigen von Daten nach: e-Mail \> Phishing**: die folgenden Informationen werden angezeigt:
 
@@ -361,16 +375,24 @@ Die folgenden Ansichten sind verfügbar:
 
 <sup>2</sup> Zero-Hour Auto Purge (zap) ist nicht in eigenständigen EoP verfügbar (funktioniert nur in Exchange Online Postfächern).
 
-Wenn Sie auf **Filter**klicken, können Sie den Bericht mit den folgenden Filtern ändern:
+Wenn Sie auf **Filter**klicken, sind die verfügbaren Filter abhängig vom Diagramm, das Sie untersucht haben:
+
+Für **Inhalts- \> Schadsoftware**können Sie den Bericht nach **Start Datum** und **Enddatum**und dem **Erkennungs** Wert ändern.
+
+Für die **Nachrichten Außerkraftsetzung**können Sie den Bericht mit den folgenden Filtern ändern:
+
+- **Start Datum** und **Enddatum**
+- **Außerkraftsetzungs Grund**
+- **Tag**: Filtern nach Tag, um Benutzer oder Gruppen zurückzugeben, für die ein bestimmtes Tag angewendet wurde. Weitere Informationen zu Benutzer Tags finden Sie unter [User Tags](user-tags.md).
+- **Domäne**
+
+Für alle anderen Ansichten können Sie den Bericht mit den folgenden Filtern ändern:
 
 - **Start Datum** und **Enddatum**
 - **Erkennung**
 - **Geschützt von**: **ATP** oder **EoP**
 - **Tag**: Filtern nach Tag, um Benutzer oder Gruppen zurückzugeben, für die ein bestimmtes Tag angewendet wurde. Weitere Informationen zu Benutzer Tags finden Sie unter [User Tags](user-tags.md).
 - **Domäne**
-
-> [!NOTE]
-> **Geschützt von**, **Tag** und **Domäne** sind nur Office 365 ATP. Diese filterbaren Eigenschaften stehen in **View Data by: Content \> Schadsoftware**nicht zur Verfügung.
 
 ### <a name="details-table-view-for-the-threat-protection-status-report"></a>Detailtabellen Ansicht für den Threat Protection-Statusbericht
 
@@ -379,14 +401,30 @@ Wenn Sie auf **Detailtabelle anzeigen**klicken, hängt die Anzeige der angezeigt
 - **Anzeigen von Daten nach: Inhalt \> Schadsoftware**:
 
   - **Date**
-  - **Standort**
+  - **Ort**
   - **Regie**
   - **Name der Schadsoftware**
+
+Wenn Sie in dieser Ansicht auf **Filter** klicken, können Sie den Bericht nach **Start Datum** und **Enddatum**und dem **Erkennungs** Wert ändern.
+
+- **Anzeigen von Daten nach: Nachrichten Außerkraftsetzung**:
+
+  - **Date**
+  - **Betreff**
+  - **Sender**
+  - **Recipients**
+  - **Erkannt von**
+  - **Außerkraftsetzungs Grund**
+  - **Kompromiss Quelle**
+  - **Tags**
 
 Wenn Sie in dieser Ansicht auf **Filter** klicken, können Sie den Bericht mit den folgenden Filtern ändern:
 
 - **Start Datum** und **Enddatum**
-- **Erkennung**
+- **Außerkraftsetzungs Grund**
+- **Tag**: Filtern nach Tag, um Benutzer oder Gruppen zurückzugeben, für die ein bestimmtes Tag angewendet wurde. Weitere Informationen zu Benutzer Tags finden Sie unter [User Tags](user-tags.md).
+- **Domäne**
+- **Empfänger** (Beachten Sie, dass diese filterbare Eigenschaft nur in der Detailtabellen Ansicht verfügbar ist)
 
 **Daten anzeigen nach: Übersicht**: keine **Detailtabellen** -Schaltfläche anzeigen verfügbar.
 
@@ -397,7 +435,7 @@ Wenn Sie in dieser Ansicht auf **Filter** klicken, können Sie den Bericht mit d
   - **Sender**
   - **Recipients**
   - **Erkannt von**
-  - **Zustellungsstatus**
+  - **Zustellungs Status**
   - **Kompromiss Quelle**
   - **Tags**
 
@@ -439,7 +477,7 @@ Der Bericht "vom **Benutzer gemeldete Nachrichten** " zeigt Informationen über 
 
 Für jede Nachricht stehen Details zur Verfügung, einschließlich des Zustellungs Grundes, einer solchen Spam Richtlinienausnahme oder Nachrichtenfluss Regel, die für Ihre Organisation konfiguriert ist. Um Details anzuzeigen, wählen Sie ein Element in der Liste Benutzer Berichte aus, und zeigen Sie dann die Informationen auf den Registerkarten **Zusammenfassung** und **Details** an.
 
-![Der Bericht über Benutzer Berichte zeigt Nachrichten an, die als Junk-, nicht als Junk-oder Phishing-Versuche bezeichnet werden.](../../media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
+![Im Bericht User-Reported Nachrichten werden Nachrichten angezeigt, die als Junk-, nicht als Junk-oder Phishing-Versuche bezeichnet werden.](../../media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
 
 Führen Sie einen der folgenden Schritte aus, um diesen Bericht im [Security & Compliance Center](https://protection.office.com)anzuzeigen:
 
