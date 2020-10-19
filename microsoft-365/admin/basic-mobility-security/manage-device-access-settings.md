@@ -42,7 +42,7 @@ ms.locfileid: "47430176"
     
 4. <span data-ttu-id="f12e0-113">Wählen Sie **blockieren**aus.</span><span class="sxs-lookup"><span data-stu-id="f12e0-113">Select **Block**.</span></span>
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="Kontrollkästchen "grundlegender Mobilitäts-und Sicherheitsblock Zugriff"":::
+    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="Kontrollkästchen &quot;grundlegender Mobilitäts-und Sicherheitsblock Zugriff&quot;":::
 
 5. <span data-ttu-id="f12e0-115">Wählen Sie **Speichern**aus.</span><span class="sxs-lookup"><span data-stu-id="f12e0-115">Select **Save**.</span></span> 
 

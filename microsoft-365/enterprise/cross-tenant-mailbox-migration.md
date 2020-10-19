@@ -143,7 +143,7 @@ ms.locfileid: "48277489"
 
 8. <span data-ttu-id="a3b1b-215">Melden Sie sich mit ihren globalen Administratoranmeldeinformationen an.</span><span class="sxs-lookup"><span data-stu-id="a3b1b-215">Sign in with your Global Admin credentials.</span></span> <span data-ttu-id="a3b1b-216">Wenn der folgende Bildschirm angezeigt wird, wählen Sie **akzeptieren**aus.</span><span class="sxs-lookup"><span data-stu-id="a3b1b-216">When the following screen is presented, select **Accept**.</span></span>
 
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-dialog.png" alt-text="Dialogfeld "Berechtigungen akzeptieren"":::
+    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-dialog.png" alt-text="Dialogfeld &quot;Berechtigungen akzeptieren&quot;":::
     
 9. <span data-ttu-id="a3b1b-218">Wechseln Sie zurück zur PowerShell-Remote Sitzung, und drücken Sie die EINGABETASTE, um fortzufahren.</span><span class="sxs-lookup"><span data-stu-id="a3b1b-218">Switch back to the Remote PowerShell session and hit Enter to proceed.</span></span>
 
@@ -162,7 +162,7 @@ ms.locfileid: "48277489"
 
 1.  <span data-ttu-id="a3b1b-223">Melden Sie sich bei Ihrem Postfach als vom Zieladministrator während des Setups angegebene-ResourceTenantAdminEmail an.</span><span class="sxs-lookup"><span data-stu-id="a3b1b-223">Sign in to your mailbox as the -ResourceTenantAdminEmail specified by the target admin during their setup.</span></span> <span data-ttu-id="a3b1b-224">Suchen Sie nach der e-Mail-Einladung des Zielmandanten, und wählen Sie dann die Schaltfläche **Erste Schritte** aus.</span><span class="sxs-lookup"><span data-stu-id="a3b1b-224">Find the email invitation from the target tenant, and then select the **Get Started** button.</span></span>
 
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/invited-by-target-tenant.png" alt-text="Dialogfeld "Sie wurden eingeladen"":::
+    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/invited-by-target-tenant.png" alt-text="Dialogfeld &quot;Sie wurden eingeladen&quot;":::
 
 2. <span data-ttu-id="a3b1b-226">Wählen Sie **annehmen** aus, um die Einladung zu akzeptieren.</span><span class="sxs-lookup"><span data-stu-id="a3b1b-226">Select **Accept** to accept the invitation.</span></span>
 

@@ -39,7 +39,7 @@ ms.locfileid: "46868944"
 
 <span data-ttu-id="5f396-117">Administratoren und Nachrichtenabsender können Nachrichten widerrufen, die mit der Verschlüsselung verschlüsselt werden, die direkt in Outlook im Internet angewendet wird.</span><span class="sxs-lookup"><span data-stu-id="5f396-117">Admins and message senders can revoke messages that are encrypted using encryption applied directly from Outlook on the web.</span></span> <span data-ttu-id="5f396-118">Beispielsweise werden Nachrichten mit der Option "nur verschlüsseln" verschlüsselt.</span><span class="sxs-lookup"><span data-stu-id="5f396-118">For example, messages encrypted with the Encrypt Only option.</span></span>
 
-:::image type="content" source="../media/adhocencryptionrevoke.png" alt-text="Screenshot mit der Option "nur verschlüsseln" in Outlook im Internet.":::
+:::image type="content" source="../media/adhocencryptionrevoke.png" alt-text="Screenshot mit der Option &quot;nur verschlüsseln&quot; in Outlook im Internet.":::
 
 ## <a name="recipient-experience-for-revoked-encrypted-emails"></a><span data-ttu-id="5f396-120">Empfänger Erfahrung für gesperrte verschlüsselte e-Mails</span><span class="sxs-lookup"><span data-stu-id="5f396-120">Recipient experience for revoked encrypted emails</span></span>
 

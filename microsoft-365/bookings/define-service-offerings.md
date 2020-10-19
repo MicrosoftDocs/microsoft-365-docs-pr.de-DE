@@ -62,7 +62,7 @@ ms.locfileid: "47962537"
         - <span data-ttu-id="e0482-139">**Buchung stornieren** Dadurch wird die Buchung storniert und aus dem Kalender des Mitarbeiters entfernt.</span><span class="sxs-lookup"><span data-stu-id="e0482-139">**Cancel booking** This cancels the booking and removes it from the staff's calendar.</span></span>
         - <span data-ttu-id="e0482-140">**Neue Buchung** Diese Option bringt den Benutzer zur Self-Service-Seite, wobei alle Dienste und Mitarbeiter aufgelistet sind, um eine neue Buchung zu planen.</span><span class="sxs-lookup"><span data-stu-id="e0482-140">**New booking** This option brings the user to the Self-Service page with all services and staff listed, for scheduling a new booking.</span></span>
 
-        :::image type="content" source="media/bookings-manage-booking-button.jpg" alt-text="Die Schaltfläche "Buchungen verwalten" in Buchungen":::
+        :::image type="content" source="media/bookings-manage-booking-button.jpg" alt-text="Die Schaltfläche &quot;Buchungen verwalten&quot; in Buchungen":::
 
         <span data-ttu-id="e0482-142">Es wird nur empfohlen, diese Einstellung aktiviert zu lassen, wenn Sie mit Kunden vertraut sind, die auf die Self-Service-Seite zugreifen.</span><span class="sxs-lookup"><span data-stu-id="e0482-142">We only recommend leaving this setting enabled if you are comfortable with customers accessing the Self-Service page.</span></span>
 

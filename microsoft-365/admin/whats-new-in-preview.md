@@ -175,7 +175,7 @@ ms.locfileid: "48208903"
 
 <span data-ttu-id="51320-236">Die Domänenverwaltung kann kompliziert sein, und wir haben ein neues Feature veröffentlicht, um es einfacher zu machen.</span><span class="sxs-lookup"><span data-stu-id="51320-236">Domain management can be complicated, and we've released a new feature to make that easier.</span></span> <span data-ttu-id="51320-237">Wechseln Sie zu Einstellungen > Domänen, und wählen Sie dann eine Domäne aus, um weitere Informationen zu Ihrer Domäne und der Domänenintegrität zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="51320-237">Go to Settings > Domains and then select a domain to get more information about your domain and the domain's health.</span></span>
 
-:::image type="content" source="../media/MAC-WN-DomainDNS.PNG" alt-text="Seite "Domänendetails" für contoso.com":::
+:::image type="content" source="../media/MAC-WN-DomainDNS.PNG" alt-text="Seite &quot;Domänendetails&quot; für contoso.com":::
 
 ### <a name="docs-training-and-videos-july-2020"></a><span data-ttu-id="51320-239">Dokumente, Schulungen und Videos (Juli 2020)</span><span class="sxs-lookup"><span data-stu-id="51320-239">Docs, training, and videos (July 2020)</span></span>
 
