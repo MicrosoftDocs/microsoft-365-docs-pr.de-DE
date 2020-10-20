@@ -7,7 +7,7 @@ author: msfttracyp
 manager: dansimp
 ms.date: ''
 audience: Admin
-ms.topic: hub-page
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 Advanced Threat Protection umfasst sichere Anlagen, sichere Links, erweiterte Antiphishing-Tools, Berichterstellungstools und Threat Intelligence-Funktionen.
-ms.openlocfilehash: d66df7cca12b0ddb89dec32fcb96017457712f86
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 8acf38cc61f2789c407a80200b97269043bab95e
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48431027"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600517"
 ---
 # <a name="office-365-advanced-threat-protection-atp"></a>Office 365 Advanced Threat Protection (ATP)
 

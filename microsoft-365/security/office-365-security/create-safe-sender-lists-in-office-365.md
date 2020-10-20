@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die verfügbaren und bevorzugten Optionen informieren, um eingehende Nachrichten in Exchange Online Protection (EoP) zuzulassen.
-ms.openlocfilehash: b1eda98e081338a981be1d1f5991578b49c574fd
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 4009dcd506921b473e938828e5bdc10411c06ce2
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203167"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600321"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Erstellen sicherer Absenderlisten in EoP
 
@@ -71,7 +71,7 @@ Im folgenden Beispiel wird davon ausgegangen, dass Sie e-Mails von contoso.com b
 
    > [!IMPORTANT]
    >
-   > - Konfigurieren Sie nie configure-Nachrichtenfluss Regeln *nur* mit der Absenderdomäne als Bedingung zum Überspringen der Spamfilterung. Dadurch wird die Wahrscheinlichkeit *erheblich* erhöht, dass Angreifer die sendende Domäne spoofen können (oder die vollständige e-Mail-Adresse imitieren), die gesamte Spamfilterung überspringen und Absender Authentifizierungsprüfungen überspringen, damit die Nachricht im Posteingang des Empfängers eingeht.
+   > - Konfigurieren Sie nie Nachrichtenfluss Regeln *nur* mit der Absenderdomäne als Bedingung zum Überspringen der Spamfilterung. Dadurch wird die Wahrscheinlichkeit *erheblich* erhöht, dass Angreifer die sendende Domäne spoofen können (oder die vollständige e-Mail-Adresse imitieren), die gesamte Spamfilterung überspringen und Absender Authentifizierungsprüfungen überspringen, damit die Nachricht im Posteingang des Empfängers eingeht.
    >
    > - Verwenden Sie keine Domänen, die Sie besitzen (auch als akzeptierte Domänen bezeichnet) oder beliebte Domänen (beispielsweise Microsoft.com) als Bedingungen in Nachrichtenfluss Regeln. Dies wird als hohes Risiko betrachtet, da dadurch Möglichkeiten für Angreifer zum Senden von e-Mails geschaffen werden, die ansonsten gefiltert würden.
    >
@@ -97,7 +97,7 @@ Im folgenden Beispiel wird davon ausgegangen, dass Sie e-Mails von contoso.com b
 
 ## <a name="use-outlook-safe-senders"></a>Verwenden von sicheren Outlook-Absendern
 
-Anstelle einer Organisations Einstellung können Benutzer oder Administratoren die Absender-e-Mail-Adressen der Liste sicherer Absender im Postfach hinzufügen. Anweisungen finden Sie unter [Konfigurieren von Junk-e-Mail-Einstellungen für Exchange Online Postfächer in Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Dies ist in den meisten Situationen nicht wünschenswert, da Absender Teile des Filter Stapels umgehen müssen. Obwohl Sie dem Absender Vertrauen, sind die Absender Dosen weiterhin gefährdet und können schädlichen Inhalt senden. Am besten lassen Sie unsere Filter tun, was erforderlich ist, um jede Nachricht zu überprüfen, und melden Sie dann [falsch positiv/negativ an Microsoft](report-junk-email-messages-to-microsoft.md) , wenn sich unsere Filter falsch verstanden haben. Die Umgehung des Filter Stapels stört auch [zap](zero-hour-auto-purge.md).
+Anstelle einer Organisations Einstellung können Benutzer oder Administratoren die Absender-e-Mail-Adressen der Liste sicherer Absender im Postfach hinzufügen. Anweisungen finden Sie unter [Konfigurieren von Junk-e-Mail-Einstellungen für Exchange Online Postfächer in Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Dies ist in den meisten Situationen nicht wünschenswert, da Absender Teile des Filter Stapels umgehen müssen. Obwohl Sie dem Absender Vertrauen, kann der Absender dennoch kompromittiert werden und schädlichen Inhalt senden. Am besten lassen Sie unsere Filter tun, was erforderlich ist, um jede Nachricht zu überprüfen, und melden Sie dann [falsch positiv/negativ an Microsoft](report-junk-email-messages-to-microsoft.md) , wenn sich unsere Filter falsch verstanden haben. Die Umgehung des Filter Stapels stört auch [zap](zero-hour-auto-purge.md).
 
 Wenn Nachrichten Spamfilterung aufgrund der Liste sicherer Absender eines Benutzers überspringen, enthält das Kopfzeilenfeld **X-Forefront-Antispam-Report** den Wert `SFV:SFE` , der angibt, dass die Spam-, spoof-und Phishing-Filterung umgangen wurde.
 

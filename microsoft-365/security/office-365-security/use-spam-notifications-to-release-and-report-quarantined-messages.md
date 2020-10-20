@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können Informationen zu Endbenutzer-Spambenachrichtigungen für isolierte Nachrichten in Exchange Online Protection (EoP) erhalten.
-ms.openlocfilehash: 9d1da6c4db245ecb065a5a076f2bc6a9c275c494
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 0440056e8e31d24e659f9d0ff6662f86f31a6189
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195819"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600297"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>Verwenden von Spambenachrichtigungen für Benutzer zum Freigeben und melden von Nachrichten in Quarantäne
 
@@ -58,3 +58,6 @@ Eine spambenachrichtigung für Endbenutzer enthält für jede isolierte Nachrich
 - **Review**: Klicken Sie auf diesen Link, um im Security & Compliance Center auf Quarantäne zu wechseln, wo Sie (je nachdem, warum die Nachricht unter Quarantäne gestellt wurde) die isolierten Nachrichten anzeigen, freigeben, löschen oder melden können. Weitere Informationen finden Sie unter [Suchen und Freigeben von Nachrichten in Quarantäne als Benutzer in EoP](find-and-release-quarantined-messages-as-a-user.md).
 
 ![Beispiel-spambenachrichtigung für Endbenutzer](../../media/end-user-spam-notification.png)
+
+> [!NOTE]
+> Ein blockierter Absender kann Ihnen weiterhin e-Mails senden. Alle Nachrichten von diesem Absender, die es in Ihrem Postfach vornehmen, werden sofort in den Ordner Junk-e-Mail verschoben. Zukünftige Nachrichten von diesem Absender werden in den Junk-e-Mail-Ordner oder in die Endbenutzer Quarantäne verschoben. Wenn Sie diese Nachrichten bei der Ankunft löschen möchten, statt sie zu isolieren, verwenden Sie [Nachrichtenfluss Regeln](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (auch als Transportregeln bezeichnet), um die Nachrichten bei der Ankunft zu löschen.

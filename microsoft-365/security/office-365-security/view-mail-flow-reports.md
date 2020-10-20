@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratoren können Informationen zu den Nachrichtenfluss Berichten erhalten, die im Dashboard Berichte im Security & Compliance Center verfügbar sind.
 ms.custom: ''
-ms.openlocfilehash: d33bd62e9a06385bf3448b7744031ae030dbe3ca
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 801463877db2e022ab84c3187367587c61f71090
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195843"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600592"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Anzeigen von Nachrichtenfluss Berichten im Dashboard "Berichte" im Security & Compliance Center
 
@@ -241,7 +241,7 @@ Sie können diese Filter ändern, indem Sie auf **Filter** klicken oder auf eine
 Die Datentabelle enthält die folgenden Informationen:
 
 - **Direction**
-- **Typ**
+- **Type**
 - **24 Stunden**
 - **3 Tage**
 - **7 Tage**
@@ -320,13 +320,23 @@ Die Datentabelle enthält die folgenden Informationen, die in absteigender Datum
 
 - **Date**
 - **E-Mail insgesamt**
-- **Kantenschutz**
-- **Anti-Malware, Datei Zuverlässigkeit, Dateityp Block**
-- **Anti-Phishing, URL-Reputation, Marken Identitätswechsel, Spoofing**
-- **Antispam-, Massen-e-Mail-Filterung**
-- **Benutzer-und Domänen Identitätswechsel (ATP)**
-- **Datei-und URL-Detonation (ATP)**
-- **Schutz nach Zustellung und zap (ATP) oder zap (EoP)**
+- **Kantenschutz** 
+- **Anti-Malware, Datei Zuverlässigkeit, Dateityp Block**:
+  - **Dateireputation**: Nachrichten, die aufgrund der Identifizierung einer angehängten Datei durch andere Microsoft-Kunden gefiltert wurden.
+  - **Dateityp Block**: Nachrichten, die aufgrund des Typs der in der Nachricht identifizierten schädlichen Datei gefiltert wurden.      
+- **Anti-Phishing, URL-Reputation, Marken Identitätswechsel, Spoofing**:
+  - **URL-Reputation**: Nachrichten, die aufgrund der Identifizierung der URL durch andere Microsoft-Kunden gefiltert wurden.
+  - **Marken Identitätswechsel**: Nachrichten, die aufgrund der Nachricht aus bekannten Absender der Markenidentität gefiltert wurden.
+  - **Anti-Spoof**: Nachrichten, die aufgrund der Nachricht gefiltert werden, die versucht, eine Domäne zu fälschen, zu der der Empfänger gehört, oder eine Domäne, die der Absender der Nachricht nicht besitzt.  
+- **Anti-Spam, Massen-e-Mail-Filterung**:
+  - **Massen-e-Mail-Filterung**: Nachrichten, die aufgrund eines Versuchs zur Zustellung von Massen-e-Mails an die Empfänger gefiltert wurden. 
+- **Benutzer-und Domänen Identitätswechsel (ATP)**:
+  - **Benutzeridentitätswechsel**: Nachrichten, die aufgrund eines Versuchs zur Identitätswechsel eines Benutzers (Nachrichtenabsender) gefiltert wurden, der in den Identitätswechsel-Schutzeinstellungen einer Anti-Phishing-Richtlinie definiert ist.
+  - **Domänen Identitätswechsel**: Nachrichten, die aufgrund eines Versuchs zur Identitätswechsel einer Domäne gefiltert wurden, die in den Identitätswechsel-Schutzeinstellungen einer Anti-Phishing-Richtlinie definiert ist. 
+- **Datei-und URL-Detonation (ATP)**:
+  - **Datei Explosion**: Nachrichten, die von einer Richtlinie für sichere Anlagen gefiltert werden.
+  - **URL-Detonation**: Nachricht, gefiltert nach einer Richtlinie zu sicheren Links.  
+- **Schutz nach Zustellung und zap (ATP) oder zap (EoP)**: Zap gibt die automatische Bereinigung der Nullstunde an.
 
 Wenn Sie eine Zeile in der Datentabelle auswählen, wird im Flyout eine weitere Aufschlüsselung der e-Mail-Anzahl angezeigt.
 
@@ -378,8 +388,10 @@ Die Datentabelle enthält die folgenden Informationen, die in absteigender Datum
 - **Date**
 - **E-Mail insgesamt**
 - **Edge gefiltert**
-- **Anti-Malware-Modul, sichere Anlagen, Regelfilter**
-- **DMARC, Identitätswechsel, Spoofing, Phishing-Filterung**
+- **Anti-Malware-Modul, sichere Anlagen, Regelfilter**:
+  - **Regel gefiltert**: Nachrichten, die aufgrund von Nachrichtenfluss Regeln gefiltert wurden (auch als Transportregeln bezeichnet).
+- **DMARC, Identitätswechsel, Spoofing, Phishing-Filterung**:
+  - **DMARC**: Nachrichten, die aufgrund der Nachricht, deren DMARC-Authentifizierungsüberprüfung fehlgeschlagen ist, gefiltert wurden. 
 - **URL-detonations Erkennung**
 - **Anti-Spam gefiltert**
 - **Zap entfernt**
@@ -448,7 +460,7 @@ Klicken Sie auf **Bericht anzeigen**, um zur Berichtsansicht zurückzukehren.
 Wenn Sie auf **Tabelle Details anzeigen** in der Ansicht **aufschlüsseln nach: Richtung** oder **aufschlüsseln nach: Richtungs** Ansicht klicken, werden die folgenden Informationen angezeigt:
 
 - **Datum (UTC)**
-- **Typ**
+- **Type**
 - **Direction**
 - **Nachrichtenanzahl**
 

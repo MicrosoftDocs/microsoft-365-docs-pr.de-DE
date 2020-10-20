@@ -20,12 +20,12 @@ ms.topic: conceptual
 ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: 85813659d952fe936c8e8b41f2dc103a60116641
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 55a5ec4a2bfd562b581be9565022483d227f68be
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48447071"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600505"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Neuerungen in Office 365 ATP
 
@@ -46,9 +46,9 @@ In diesem Artikel werden neue Features in der neuesten Version von Office 365 AT
 - [Überprüfen der Richtlinien mithilfe der Konfigurationsanalyse](configuration-analyzer-for-security-policies.md)
 - [Manuelles Überschreiben von Filter Urteilen mithilfe der Liste "Mandanten zulassen/blockieren"](tenant-allow-block-list.md)
 - [Erweiterte Funktionen im Threat Explorer, einschließlich der wichtigsten Zielbenutzer, Transportregeln und Connectors](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Office 365 ATP-Plan 2)
-- Flächen Oberflächen Überschreibungs Informationen im [Threat Explorer](threat-explorer.md) (e-Mail wurde zugelassen/blockiert durch Mandanten-/Benutzerrichtlinie)
-- Aufdeckung von URL-Bedrohungen im [Threat Explorer](threat-explorer.md#threats-in-urls) (Malware, Phishing, Spam oder keine) 
-- [Verbesserungen an der Jagd Erfahrung Threat Explorer](threat-explorer.md#improvements-to-threat-hunting-experience-upcoming) mit Updates rund um Bedrohungen, zusätzliche Aktionen, Zustellungsorte und aktualisierte Zeitachsenansicht
+- Flächen Oberflächen Überschreibungen Informationen im [Threat Explorer](threat-explorer.md) (e-Mail wurde zugelassen/blockiert durch Mandanten-/Benutzerrichtlinie) (Office 365 ATP-Plan 2)
+- Aufdeckung von URL-Bedrohungen im [Threat-Explorer](threat-explorer.md#threats-in-urls) (Malware, Phishing, Spam oder keine) (Office 365 ATP-Plan 2)
+- [Verbesserungen an der Jagd Erfahrung Threat Explorer](threat-explorer.md#improvements-to-threat-hunting-experience-upcoming) mit Updates rund um Bedrohungen, zusätzliche Aktionen, Zustellungsorte und aktualisierte Zeitachsenansicht (Office 365 ATP-Plan 2)
 
 ## <a name="julyaugust-2020"></a>Juli/August 2020 
 
@@ -106,9 +106,8 @@ In diesem Artikel werden neue Features in der neuesten Version von Office 365 AT
 
 Wussten Sie schon, dass Office 365 ATP in zwei Plänen verfügbar ist? [Hier finden Sie weitere Informationen zu den einzelnen Plänen](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
 
-## <a name="see-also"></a>Weitere Informationen:
+## <a name="see-also"></a>Siehe auch
 
 [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap)
 
 [Office 365 ATP-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
-

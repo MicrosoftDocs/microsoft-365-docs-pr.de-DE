@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie e-Mail-Sicherheitsberichte für Ihre Organisation suchen und verwenden. E-Mail-Sicherheitsberichte sind im Security & Compliance Center verfügbar.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7d83e86c77eb148c4c55be3f363966ac3c756e87
-ms.sourcegitcommit: 24ccb910ffac4d065c512a57c5decd9dd19ef4c1
+ms.openlocfilehash: 58c29d37d4f7deab17b2c24bfd7fb74e5ba9cb45
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "48594885"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600565"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Anzeigen von E-Mail-Sicherheitsberichten im Security & Compliance Center
 
@@ -297,8 +297,8 @@ Die folgenden Ansichten sind verfügbar:
 
 - **Anzeigen von Daten nach: Inhalt \> Schadsoftware**<sup>1</sup>: die folgenden Informationen werden für Office 365 ATP-Organisationen angezeigt:
 
-  - **Anti-Malware-Modul**
-  - **Datei Explosion**
+  - **Anti-Malware-Modul**: Abfangen schädlicher Dateien in SharePoint Online, OneDrive und Microsoft Teams durch Anti-Malware.
+  - **Datei Explosion**: Detonation schädlicher Dateien in SharePoint Online, OneDrive und Microsoft Teams durch sichere Anlagen.
 
   ![Ansicht "Inhalts-Malware" im Statusbericht "Threat Protection"](../../media/threat-protection-status-report-content-malware-view.png)
 
@@ -318,28 +318,28 @@ Die folgenden Ansichten sind verfügbar:
 
 - **Aufschlüsseln nach: Erkennungstechnologie** und **Anzeigen von Daten nach: e-Mail \> Phishing**: die folgenden Informationen werden angezeigt:
 
-  - **ATP-generierte URL-Reputation**<sup>1</sup>
-  - **Erweiterter Phish-Filter**
-  - **Fälschungsschutz: DMARC-Fehler**
-  - **Anti-Spoofing: Intra-org**
-  - **Anti-Spoofing: externe Domäne**
-  - **Marken Identitätswechsel**
-  - **Domänen Identitätswechsel**<sup>1</sup>
-  - **EoP-URL-Reputation**
-  - **Allgemeiner Phish-Filter**
+  - **ATP-generierte URL-Reputation**<sup>1</sup>: Reputation der böswilligen URL, die bei ATP-Explosionen in anderen ATP-Kunden generiert wurde.
+  - **Erweiterter Phishing-Filter**: Phishing-Signale basierend auf dem maschinellen lernen.
+  - **Anti-Spoof-DMARC-Fehler**: DMARC-Authentifizierungsfehler bei Nachrichten.
+  - **Anti-Spoof-Intra-org**: Absender versucht, die Empfängerdomäne vorzutäuschen.
+  - **Anti-Spoof-externe Domäne**: Absender versucht, eine andere Domäne zu spoofen.
+  - **Marken Identitätswechsel**: Identitätswechsel von bekannten Marken, die auf Absendern basieren.
+  - **Domänen Identitätswechsel**<sup>1</sup>: Identitätswechsel von Domänen, die der Kunde besitzt oder definiert.
+  - **EoP-URL-Reputation**: böswillige URL-Reputation.
+  - **Allgemeiner Phishing-Filter**: Phishing-Signale basierend auf Analysten Regeln. 
   - **Sonstige**
-  - **Phishing-zap**<sup>2</sup>
+  - **Phishing-zap**<sup>2</sup>: Nullstunde automatische Bereinigung von Phishing-Nachrichten.
   - **URL Detonation**<sup>1</sup>
-  - **Benutzeridentitätswechsel**<sup>1</sup>
+  - **Benutzeridentitätswechsel**<sup>1</sup>: Identitätswechsel von Benutzern, die vom Administrator definiert oder über die Post Fach Intelligenz erlernt wurden.
 
   ![Erkennungstechnologie-Ansicht für Phishing-e-Mails im Statusbericht "Threat Protection"](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
 
 - **Aufschlüsseln nach: Erkennungstechnologie** und **Anzeigen von Daten nach: e-Mail- \> Schadsoftware**: die folgenden Informationen werden angezeigt:
 
-  - **ATP-generierte dateireputation**<sup>1</sup>
-  - **Anti-Malware-Modul**<sup>1</sup>
-  - **Anti-Malware-Richtlinien Dateityp-Block**
-  - **Datei Detonation**<sup>1</sup>
+  - **ATP-generierte dateireputation**<sup>1</sup>: alle bösartigen Dateien, die durch ATP-Explosionen generiert wurden.
+  - **Anti-Malware Engine**<sup>1</sup>: Erkennung von Antischadsoftware-Engines.
+  - **Anti-Malware Policy-Dateityp Block**: Dies sind e-Mail-Nachrichten, die aufgrund der Art der in der Nachricht identifizierten bösartigen Datei herausgefiltert wurden.
+  - **Datei Detonation**<sup>1</sup>: Datei detonations Fänge durch sichere Anlagen.  
   - **Böswillige dateireputation**
   - **Malware zap**<sup>2</sup>
   - **Sonstige**

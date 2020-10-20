@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: c0a3849d330b508630eb60c7ee24cd8b498a32b8
-ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
+ms.openlocfilehash: 78ba5183667f4e5c6f713182969338f3ef2e7262
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48417225"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600529"
 ---
 # <a name="configuring-external-email-forwarding-in-office-365"></a>Konfigurieren der externen e-Mail-Weiterleitung in Office 365
 
@@ -28,7 +28,7 @@ ms.locfileid: "48417225"
 
 Die externe Weiterleitung wird von der *ausgehenden Anti-Spam-Richtlinie* gesteuert und auf der Grundlage der konfigurierten Einstellung auf Benutzer beschränkt. Derzeit werden 3 Einstellungen unterstützt:
 
-- **Automatic** – Dies wird vom System gesteuert: es ermöglicht das Filtern von ausgehenden Spam Funktionen zur Steuerung der automatischen externen e-Mail-Weiterleitung. Dies ist die Standardeinstellung.
+- **Automatic** – automatische externe Weiterleitung wird blockiert. Die interne automatische Weiterleitung von Nachrichten funktioniert weiterhin. Dies ist die Standardeinstellung.
 
 - **On** – automatische externe Weiterleitung ist zulässig und nicht eingeschränkt.
 

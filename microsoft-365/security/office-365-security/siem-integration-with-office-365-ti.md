@@ -18,19 +18,19 @@ ms.collection:
 - M365-security-compliance
 description: Integrieren Sie den Siem-Server Ihrer Organisation mit Office 365 Advanced Threat Protection und den zugehörigen Threat-Ereignissen in die API für die Office 365-Aktivitätsverwaltung.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 544093960570fe0e68ac47dc7bf9965fba2d30a1
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: c4c92fc45546d3d8022a3925baa9c10f9bd0090b
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327165"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600553"
 ---
 # <a name="siem-integration-with-advanced-threat-protection"></a>Siem-Integration mit erweitertem Bedrohungsschutz
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Wenn Ihre Organisation einen Siem-Server (Security Incident and Event Management) verwendet, können Sie Office 365 Advanced Threat Protection (Office 365 ATP) mit Ihrem Siem-Server integrieren. Sie können diese Integration mithilfe der API für die [Office 365 Aktivitätsverwaltung](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)einrichten. 
+Wenn Ihre Organisation einen Siem-Server (Security Information and Event Management) verwendet, können Sie Office 365 Advanced Threat Protection (Office 365 ATP) mit Ihrem Siem-Server integrieren. Sie können diese Integration mithilfe der API für die [Office 365 Aktivitätsverwaltung](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)einrichten. 
 
 Mit der Siem-Integration können Sie Informationen wie Malware oder von Office 365 ATP erkannte Phishing in ihren Siem-Server Berichten anzeigen. 
 
@@ -63,10 +63,9 @@ In der folgenden Tabelle sind die Werte von **AuditLogRecordType** zusammengefas
 > [!IMPORTANT]
 > Sie müssen ein globaler Administrator sein oder der Sicherheitsadministrator Rolle für das Security & Compliance Center zugewiesen sein, um Siem-Integration mit Office 365 Advanced Threat Protection einzurichten.<br/>Die Überwachungsprotokollierung muss für Ihre Microsoft 365-Umgebung aktiviert sein. Informationen dazu finden Sie unter [Aktivieren oder Deaktivieren der Überwachungsprotokoll Suche](../../compliance/turn-audit-log-search-on-or-off.md).
 
-## <a name="see-also"></a>Mehr dazu
+## <a name="see-also"></a>Siehe auch
 
 [Untersuchung von und Antwort auf Bedrohungen in Office 365](office-365-ti.md)
 
 [Automatische Untersuchung und Reaktion (Air) in Office 365](automated-investigation-response-office.md)
-
 

@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie das Add-in "Berichtsnachricht" für Outlook und Outlook im Internet für einzelne Benutzer oder die gesamte Organisation aktivieren.
-ms.openlocfilehash: 601e3850bf046f3a0c807976fd173a6e0ec7ce2a
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: b061d9db44b08a65b59481035c055a1b75eb6e3c
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350623"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600369"
 ---
 # <a name="enable-the-report-message-add-in"></a>Aktivieren des Add-Ins „Nachrichten melden“
 
@@ -41,7 +41,7 @@ Administratoren können das Add-in "Berichtsnachricht" für die Organisation akt
 
 Wenn Sie ein einzelner Benutzer sind, können Sie [das Add-in "Berichtsnachricht" für sich selbst aktivieren](#get-the-report-message-add-in-for-yourself).
 
-Wenn Sie globaler Administrator oder Exchange Online Administrator sind und Exchange für die Verwendung der OAuth-Authentifizierung konfiguriert ist, können Sie [das Add-in "Berichtsnachricht" für Ihre Organisation aktivieren](#get-and-enable-the-report-message-add-in-for-your-organization). Das Add-in "Berichtsnachricht" ist jetzt über eine [zentralisierte Bereitstellung](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins)verfügbar.
+Wenn Sie globaler Administrator oder Exchange Online Administrator sind und Exchange für die Verwendung der OAuth-Authentifizierung konfiguriert ist, können Sie [das Add-in "Berichtsnachricht" für Ihre Organisation aktivieren](#get-and-enable-the-report-message-add-in-for-your-organization). Der Berichtsnachrichten Add-In ist jetzt über [zentralisierte Bereitstellung](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins)verfügbar.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
@@ -49,7 +49,7 @@ Wenn Sie globaler Administrator oder Exchange Online Administrator sind und Exch
 
   - Outlook im Web
   - Outlook 2013 SP1 oder höher
-  - Outlook 2016 für Mac
+  - Outlook 2016 für Mac
   - Outlook im Lieferumfang von Microsoft 365-Apps für Unternehmen
 
 - Das Add-in "Berichtsnachricht" steht für Postfächer in lokalen Exchange-Organisationen nicht zur Verfügung.
@@ -91,7 +91,7 @@ Informationen zur Verwendung des Add-Ins finden Sie unter [Verwenden des Bericht
 > [!NOTE]
 > Es kann bis zu 12 Stunden dauern, bis das Add-in in Ihrer Organisation angezeigt wird.
 
-1. Wechseln Sie im Microsoft 365 Admin Center zur Seite **Dienste &-Add-ins** <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> , und klicken Sie dann auf **Add-in bereitstellen**.
+1. Wechseln Sie im Microsoft 365 Admin Center zur Seite **Einstellungen, integrierte apps &-Add-ins** <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> , und klicken Sie dann auf **Add-in bereitstellen**.
 
    ![Seite "Dienste und Add-Ins" im Microsoft 365 Admin Center](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
@@ -151,7 +151,7 @@ Wenn Sie Benutzer über das Add-in "Berichtsnachricht" informieren, fügen Sie e
 
 1. Wechseln Sie im Microsoft 365 Admin Center zur Seite **Dienste &-Add-ins** unter <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> .
 
-   ![Seite "Dienste und Add-Ins" im neuen Microsoft 365 Admin Center](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![Seite "Dienste" und "Add-Ins" im neuen Microsoft 365 Admin Center](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
 2. Suchen Sie das Add-in **Berichtsnachricht** , und wählen Sie es aus.
 
