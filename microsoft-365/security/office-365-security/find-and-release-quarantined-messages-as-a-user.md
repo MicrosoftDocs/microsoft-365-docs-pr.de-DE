@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Benutzer können erfahren, wie sie in Exchange Online Protection (EOP) isolierte (unter Quarantäne gestellte) Nachrichten anzeigen und verwalten, die sie hätten empfangen sollen.
-ms.openlocfilehash: 03bcb0518b75d9a35aae1b6664b410b521adf940
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 2a8e37dc430af5b3d3c47179c721d83832f01184
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202843"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600345"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Suchen und Freigeben von isolierten Nachrichten als Benutzer in EOP
 
@@ -100,6 +100,11 @@ Als Benutzer können Sie unter Quarantäne gestellte Nachrichten anzeigen, freig
      - **Spam**
 
      - **Phishing**
+     
+   - **Richtlinientyp**: Filtern von Nachrichten nach Richtlinientyp:
+     - **Antiphishing-Richtlinie**
+     - **Richtlinie für gehostete Inhaltsfilter**
+     
 
    Klicken Sie auf **Löschen**, um den Filter zu löschen. Um das Filter-Flyout auszublenden, klicken Sie erneut auf **Filter**.
 
@@ -108,6 +113,8 @@ Als Benutzer können Sie unter Quarantäne gestellte Nachrichten anzeigen, freig
    - **Nachrichten-ID**: Die globale eindeutige ID der Nachricht. Wenn Sie eine Nachricht in der Liste auswählen, wird der Wert **Nachrichten-ID** im Flyout-Fenster **Details** angezeigt, der angezeigt wird. Administratoren können [Nachrichtenverfolgung](message-trace-scc.md) verwenden, um Nachrichten und die entsprechenden Nachrichten-ID-Werte zu suchen.
 
    - **E-Mail-Adresse des Absenders**: Die E-Mail-Adresse eines einzelnen Absenders.
+   
+   - **Richtlinienname**: Verwenden Sie den vollständigen Namen der Nachricht. Bei der Suche wird nicht zwischen Groß- und Kleinschreibung unterschieden.
 
    - **E-Mail-Adresse des Empfängers**: Die E-Mail-Adresse eines einzelnen Empfängers.
 
