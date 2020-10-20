@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: c98c0081d95da19e79db03dc4b4fdb823a14e42c
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: ffa2d54385249a22d672be0c2591c3b4171bd10d
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377270"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600380"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Erste Schritte mit Einstellungen für das Insider Risikomanagement
 
@@ -59,7 +59,7 @@ Warnungen werden durch Richtlinien ausgelöst, wenn Benutzeraktivitäten im Zusa
 Richtlinien Indikatoren werden in die folgenden Bereiche segmentiert. Sie können die Indikatoren zum Aktivieren und Anpassen von Indikator Ereignis Grenzwerten für jede Indikator Ebene beim Erstellen einer Insider Risiko Richtlinie auswählen:
 
 - **Office-Indikatoren**: dazu gehören Richtlinien Indikatoren für SharePoint-Websites, Teams und e-Mail-Nachrichten.
-- **Geräte Indikatoren**: dazu gehören Richtlinien Indikatoren für Aktivitäten wie das Freigeben von Dateien über das Netzwerk oder mit Geräten. Indikatoren umfassen Aktivitäten mit Microsoft Office Dateien,. CSV-Dateien und. PDF-Dateien. Wenn Sie **Geräte Indikatoren**auswählen, wird die Aktivität nur für Geräte mit Windows 10 Build 1809 oder höher verarbeitet. Weitere Informationen zum Konfigurieren von Geräten für die Integration in Insider Risiken finden Sie unter [Erste Schritte mit Endpoint DLP](endpoint-dlp-getting-started.md).
+- **Geräte Indikatoren**: dazu gehören Richtlinien Indikatoren für Aktivitäten wie das Freigeben von Dateien über das Netzwerk oder mit Geräten. Indikatoren umfassen Aktivitäten mit Microsoft Office Dateien,. CSV-Dateien und. PDF-Dateien. Wenn Sie **Geräte Indikatoren**auswählen, wird die Aktivität nur für Geräte mit Windows 10 Build 1809 oder höher verarbeitet. Weitere Informationen zum Konfigurieren von Geräten für die Integration in Insider Risiken finden Sie im Abschnitt [enable Device Indicators and Borders Devices](insider-risk-management-settings.md#OnboardDevices) .
 - **Indikator für Sicherheitsrichtlinienverletzungen**: dazu zählen Indikatoren von Microsoft Defender ATP im Zusammenhang mit der Installation nicht genehmigter oder böswilliger Software oder der Umgehung von Sicherheitskontrollen. Um Warnungen im Insider Risk Management zu erhalten, müssen Sie über eine aktive Microsoft Defender ATP-Lizenz und die Integration aktivierter Insider Risiken verfügen. Weitere Informationen zum Konfigurieren von Microsoft Defender ATP für die Integration von Insider Risikomanagement finden Sie unter [configure Advanced Features in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
 - **Risiko Bewertungs Verstärker**: dazu gehören das Erhöhen der Risikobewertung für ungewöhnliche Aktivitäten oder vergangene Richtlinienverletzungen. Durch Aktivieren der Risiko Bewertungs Steigerung erhöhen Sie die Risikobewertung und die Wahrscheinlichkeit, dass Warnungen für diese Arten von Aktivitäten aktiviert werden. Risiko Bewertungs Verstärker können nur ausgewählt werden, wenn mindestens ein Indikator oben ausgewählt ist.
 
@@ -71,6 +71,73 @@ Wenn Sie die in allen Insider Risikorichtlinien aktivierten Insider-Risikorichtl
 
 >[!NOTE]
 >Es kann mehrere Stunden dauern, bis neue manuell hinzugefügte Benutzer im **Dashboard Benutzer**angezeigt werden. Aktivitäten für die letzten 90 Tage für diese Benutzer können bis zu 24 Stunden dauern, bis Sie angezeigt werden. Um Aktivitäten für manuell hinzugefügte Benutzer anzuzeigen, wählen Sie den Benutzer im **Dashboard Benutzer** aus, und öffnen Sie die Registerkarte **Benutzeraktivität** im Detailbereich.
+
+### <a name="enable-device-indicators-and-onboard-devices"></a>Aktivieren von Geräte anzeigen und Onboard-Geräten
+<a name="OnboardDevices"> </a>
+
+Um die Überwachung von Risiko Aktivitäten auf Geräten zu ermöglichen und Richtlinien Indikatoren für diese Aktivitäten einzuschließen, müssen Ihre Geräte die folgenden Anforderungen erfüllen, und Sie müssen die folgenden Onboarding-Schritte ausführen.
+
+#### <a name="step-1-prepare-your-endpoints"></a>Schritt 1: Vorbereiten der Endpunkte
+
+Stellen Sie sicher, dass die Windows 10-Geräte, die Sie für die Berichterstellung im Insider Risikomanagement planen, diese Anforderungen erfüllen.
+
+1. Es muss Windows 10 x64 Build 1809 oder höher ausgeführt werden.
+2. Alle Geräte müssen in [Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join), oder in Azure AD Hybrid eingebunden sein.
+3. Installieren Sie Microsoft Chromium Edge Browser auf dem Endgerät, um Aktionen für die Cloud-Upload-Aktivität zu überwachen. Weitere Informationen finden Sie unter [Herunterladen des auf Chromium basierenden neuen Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
+
+#### <a name="step-2-onboarding-devices"></a>Schritt 2: Onboarding Devices
+<a name="OnboardStep2"> </a>
+
+Sie müssen die Geräteüberwachung und das Onboarding ihrer Endpunkte aktivieren, bevor Sie die Aktivitäten für das Insider Risikomanagement auf einem Gerät überwachen können. Beide Aktionen werden im Microsoft 365 Compliance-Portal durchgeführt.
+
+Wenn Sie Onboard-Geräte benötigen, die noch nicht angemeldet sind, laden Sie das entsprechende Skript herunter und stellen Sie wie in den folgenden Schritten beschrieben bereit.
+
+Wenn bereits Geräte in [Microsoft Defender für Endpunkt](https://docs.microsoft.com/windows/security/threat-protection/) eingebunden sind, werden sie in der Liste der verwalteten Geräte angezeigt. Führen [Sie Schritt 3: Wenn Sie Geräte in Microsoft Defender für Endpoint im nächsten Abschnitt onboarded haben](insider-risk-management-settings.md#OnboardStep3) .
+
+In diesem Bereitstellungsszenario werden Sie Onboard-Geräte, die noch nicht an Bord waren, und Sie möchten nur Insider Risiko Aktivitäten auf Windows 10-Geräten überwachen.
+
+1. Öffnen Sie das [Microsoft Compliance Center](https://compliance.microsoft.com).
+2. Öffnen Sie die Seite "Einstellungen", und wählen Sie **Geräte-Onboarding** aus.
+
+   > [!NOTE]
+   > In der Regel dauert es zwar nur ungefähr eine Minute, bis das Geräte-Onboarding aktiviert ist, warten Sie aber mindestens 30 Minuten, bevor Sie sich an den Microsoft-Support wenden.
+
+3. Wählen Sie **Geräteverwaltung** aus, um die Liste der **Geräte** zu öffnen. Die Liste ist leer, solange keine Geräte eingebunden sind.
+4. Wählen Sie **Onboarding** aus, um mit dem Onboarding-Prozess zu beginnen.
+5. Wählen Sie die Art der Bereitstellung auf diesen zusätzlichen Geräten aus der Liste der **Bereitstellungsmethoden** und anschließend **Paket herunterladen** aus.
+6. Führen Sie die unter [Onboarding-Tools und -Methoden für Windows 10-Computer](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) beschriebenen entsprechenden Verfahren aus. Über diesen Link gelangen Sie zu einer Zielseite, auf der Microsoft Defender für Endpunkt-Prozeduren beschrieben werden, die dem in Schritt 5 ausgewählten Bereitstellungspaket entsprechen:
+    - Onboarding von Windows 10-Computern mithilfe von Gruppenrichtlinien
+    - Onboarding von Windows-Computern mithilfe von Microsoft Endpoint Configuration Manager
+    - Onboarding von Windows 10-Computern mit Tools für die Verwaltung von Mobilgeräten
+    - Onboarding von Windows 10-Computern mithilfe eines lokalen Skripts
+    - Onboarding von nicht-persistenten Computern einer VD-Infrastruktur (Virtual Desktop)
+
+Sobald "Fertig" und "Endpunkt" onboarded ist, sollte er in der Liste "Geräte" angezeigt werden, und der Endpunkt beginnt mit der Berichterstellung über Überwachungs Aktivitätsprotokolle an das Insider Risikomanagement.
+
+> [!NOTE]
+> Diese Funktion erfordert eine Lizenz. Ohne die erforderliche Lizenz werden keine Daten angezeigt und es ist kein Zugriff auf sie möglich.
+
+#### <a name="step-3-if-you-have-devices-onboarded-into-microsoft-defender-for-endpoint"></a>Schritt 3: Wenn Geräte in Microsoft Defender für Endpoint integriert sind
+<a name="OnboardStep3"> </a>
+
+Wenn Microsoft Defender für Endpoint bereits bereitgestellt ist und Endpunkte in Berichten, werden alle diese Endpunkte in der Liste verwalteter Geräte angezeigt. Sie können fortfahren, neue Geräte in das Insider Risk Management einzusetzen, um die Abdeckung mithilfe des Abschnitts [Schritt 2: Onboarding Devices](insider-risk-management-settings.md#OnboardStep2) zu erweitern.
+
+1. Öffnen Sie das [Microsoft Compliance Center](https://compliance.microsoft.com).
+2. Öffnen Sie die Seite "Einstellungen", und wählen Sie **Geräteüberwachung aktivieren** aus.
+3. Wählen Sie **Geräteverwaltung** aus, um die Liste der **Geräte** zu öffnen. Es sollte die Liste der Geräte angezeigt werden, die bereits Berichte für Microsoft Defender für Endpunkt erstellen.
+4. Wenn Sie zusätzliche Geräte einbinden möchten, wählen Sie **Onboarding** aus.
+5. Wählen Sie die Art der Bereitstellung auf diesen zusätzlichen Geräten aus der Liste der **Bereitstellungsmethoden** und anschließend **Paket herunterladen** aus.
+6. Führen Sie die unter [Onboarding-Tools und -Methoden für Windows 10-Computer](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) beschriebenen entsprechenden Verfahren aus. Über diesen Link gelangen Sie zu einer Zielseite, auf der Microsoft Defender für Endpunkt-Prozeduren beschrieben werden, die dem in Schritt 5 ausgewählten Bereitstellungspaket entsprechen:
+    - Onboarding von Windows 10-Computern mithilfe von Gruppenrichtlinien
+    - Onboarding von Windows-Computern mithilfe von Microsoft Endpoint Configuration Manager
+    - Onboarding von Windows 10-Computern mit Tools für die Verwaltung von Mobilgeräten
+    - Onboarding von Windows 10-Computern mithilfe eines lokalen Skripts
+    - Onboarding von nicht-persistenten Computern einer VD-Infrastruktur (Virtual Desktop)
+
+Sobald "Fertig" und "Endpunkt" onboarded ist, sollte er in der Tabelle " **Geräte** " angezeigt werden, und der Endpunkt beginnt mit der Berichterstellung über Überwachungs Aktivitätsprotokolle an das Insider Risikomanagement.
+
+> [!NOTE]
+>Diese Funktion erfordert eine Lizenz. Ohne die erforderliche Lizenz werden keine Daten angezeigt und es ist kein Zugriff auf sie möglich.
 
 ### <a name="indicator-level-settings-preview"></a>Einstellungen auf Indikator Ebene (Vorschau)
 
@@ -182,7 +249,7 @@ Die folgenden Felder und Werte werden für Warnungen beim Insider Risikomanageme
 | Name | Richtlinienname für die Richtlinie für das Insider Risikomanagement, die die Warnung generiert hat. |
 | PolicyId | Die GUID der Richtlinie für das Insider Risikomanagement, die die Warnung ausgelöst hat. |
 | Severity | Der Schweregrad der Warnung. Die Werte sind *hoch*, *Mittel*oder *niedrig*. |
-| Quelle | Die Quelle der Warnung. Der Wert ist *Office 365 Sicherheit & Compliance*. |
+| Source | Die Quelle der Warnung. Der Wert ist *Office 365 Sicherheit & Compliance*. |
 | Status | Der Status der Warnung. Werte sind *aktiv* (*Bedarf Überprüfung* im Insider Risiko), *Ermittlungen* (im Hinblick auf Insider Risiken*bestätigt* ), *aufgelöst* (im Hinblick auf Insider Risiken*aufgelöst* ), *entlassen* (im Hinblick auf Insider Risiken*entlassen* ). |
 | Version | Die Version des Sicherheits-und Konformitäts Warnungs Schemas. |
 

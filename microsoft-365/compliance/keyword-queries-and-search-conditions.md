@@ -21,33 +21,32 @@ search.appverid:
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
-description: Erfahren Sie mehr über e-Mail-und Dateieigenschaften, die Sie im Office 365 Security & Compliance Center durchsuchen können.
-ms.openlocfilehash: 5445c9485d7076b3819c796028a311a523a92dde
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+description: Erfahren Sie mehr über die e-Mail-und Dateieigenschaften, die Sie mithilfe der Such-und eDiscovery-Tools in Microsoft 365 durchsuchen können.
+ms.openlocfilehash: 4ca444c7e1d7b90f76e8c3f1b23afc7edad8e44b
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446194"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600448"
 ---
-# <a name="keyword-queries-and-search-conditions-for-content-search"></a>Stichwortabfragen und Suchbedingungen für die Inhaltssuche
+# <a name="keyword-queries-and-search-conditions-for-content-search-and-ediscovery"></a>Stichwortabfragen und Suchbedingungen für die Inhaltssuche und eDiscovery
 
-In diesem Thema werden die e-Mail-und Dokumenteigenschaften beschrieben, nach denen Sie in e-Mail-Elementen in Exchange Online suchen können, sowie Dokumente, die in SharePoint und OneDrive für Unternehmen Websites gespeichert sind, indem Sie die Inhaltssuche im Security & Compliance Center verwenden. Sie können auch die ** \* -ComplianceSearch-** Cmdlets in Security & Compliance Center PowerShell verwenden, um nach diesen Eigenschaften zu suchen. Im Thema wird außerdem Folgendes beschrieben:   
+In diesem Thema werden die e-Mail-und Dokumenteigenschaften beschrieben, nach denen Sie in e-Mail-Elementen in Exchange Online suchen können, sowie Dokumente, die in SharePoint und OneDrive für Unternehmen Websites gespeichert sind, indem Sie die Inhaltssuche im Microsoft 365 Compliance Center verwenden. Sie können auch die ** \* -ComplianceSearch-** Cmdlets in Security & Compliance Center PowerShell verwenden, um nach diesen Eigenschaften zu suchen. Im Thema wird außerdem Folgendes beschrieben:
   
 - Verwenden Sie boolesche Suchoperatoren, Suchbedingungen und andere Suchabfrage Techniken, um Ihre Suchergebnisse zu verfeinern.
-    
-- Suchen nach vertraulichen Datentypen und benutzerdefinierten vertraulichen Datentypen in SharePoint und OneDrive für Unternehmen.
-    
-- Suchen nach Websiteinhalten, die für Benutzer außerhalb Ihrer Organisation freigegeben sind
-    
-Eine Schritt-für-Schritt-Anleitung zum Erstellen einer Inhaltssuche finden Sie unter [Inhaltssuche in Office 365](content-search.md).
 
-  
+- Suchen nach vertraulichen Datentypen und benutzerdefinierten vertraulichen Datentypen in SharePoint und OneDrive für Unternehmen.
+
+- Suchen nach Websiteinhalten, die für Benutzer außerhalb Ihrer Organisation freigegeben sind
+
+Eine Schritt-für-Schritt-Anleitung zum Erstellen einer Inhaltssuche finden Sie unter [Inhaltssuche](content-search.md).
+
 > [!NOTE]
-> Die Inhaltssuche im Security & Compliance Center und die entsprechenden ** \* -ComplianceSearch-** Cmdlets in Security & Compliance Center PowerShell verwenden die Schlüsselwortabfrage Sprache (KQL). Ausführlichere Informationen finden Sie unter [Keyword Query Language Syntax Reference](https://go.microsoft.com/fwlink/?LinkId=269603). 
+> Inhaltssuche im Microsoft 365 Compliance Center und den entsprechenden ** \* -ComplianceSearch-** Cmdlets in Security & Compliance Center PowerShell verwenden Sie die Schlüsselwortabfrage Sprache (KQL). Ausführlichere Informationen finden Sie unter [Keyword Query Language Syntax Reference](https://go.microsoft.com/fwlink/?LinkId=269603). 
   
 ## <a name="searchable-email-properties"></a>Durchsuchbare E-Mail-Eigenschaften
 
-In der folgenden Tabelle sind die Eigenschaften von e-Mail-Nachrichten aufgeführt, die mithilfe der Inhalts Suchfunktion im Security & Compliance Center oder mithilfe des Cmdlets **New-ComplianceSearch** oder **ComplianceSearch** durchsucht werden können. Die Tabelle enthält ein Beispiel für die  _property:value_-Syntax für jede Eigenschaft und eine Beschreibung der für jedes Beispiel zurückgegebenen Suchergebnisse. Sie können diese  `property:value` Paare in das Feld Schlüsselwörter für eine Inhaltssuche eingeben. 
+In der folgenden Tabelle sind die Eigenschaften von e-Mail-Nachrichten aufgeführt, die mithilfe der Inhaltssuche im Microsoft 365 Compliance Center oder mithilfe des Cmdlets **New-ComplianceSearch** oder **ComplianceSearch** durchsucht werden können. Die Tabelle enthält ein Beispiel für die  _property:value_-Syntax für jede Eigenschaft und eine Beschreibung der für jedes Beispiel zurückgegebenen Suchergebnisse. Sie können diese  `property:value` Paare in das Feld Schlüsselwörter für eine Inhaltssuche eingeben. 
 
 > [!NOTE]
 > Beim Durchsuchen von e-Mail-Eigenschaften ist es nicht möglich, nach Elementen zu suchen, in denen die angegebene Eigenschaft leer oder leer ist. Wenn Sie beispielsweise die *Eigenschaft: Wert-* paar von **Subject: ""** verwenden, um nach e-Mail-Nachrichten mit einer leeren Betreffzeile zu suchen, werden keine Ergebnisse zurückgegeben. Dies gilt auch beim Durchsuchen von Website-und Kontakteigenschaften.
@@ -112,13 +111,13 @@ Eine vollständige Liste der SharePoint-Eigenschaften, die durchsucht werden kö
 |Größe|Die Größe eines Elements in Byte.|`size>=1`  <br/> `size:1..10000`|Das erste Beispiel gibt Elemente zurück, die größer als 1 Byte sind. Das zweite Beispiel gibt Elemente von 1 bis 10.000 Bytes an Größe zurück.|
 |Titel|Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in Microsoft Office Dokumenten angegeben sind. Er unterscheidet sich vom Dateinamen des Dokuments.|`title:"communication plan"`|Jedes Dokument, das den Ausdruck "Kommunikationsplan" in der Title Metadata-Eigenschaft eines Office-Dokuments enthält.|
 |||||
-   
+
 ## <a name="searchable-contact-properties"></a>Durchsuchbare Kontakteigenschaften
 
 In der folgenden Tabelle sind die Kontakteigenschaften aufgelistet, die indiziert werden und nach denen Sie die Inhaltssuche verwenden können. Dies sind die Eigenschaften, die Benutzern zur Verfügung stehen, um für die Kontakte (auch persönliche Kontakte genannt) zu konfigurieren, die sich im persönlichen Adressbuch des Postfachs eines Benutzers befinden. Um nach Kontakten zu suchen, können Sie die zu durchsuchenden Postfächer auswählen und dann eine oder mehrere Kontakteigenschaften in der Stichwortabfrage verwenden.
   
 > [!TIP]
-> Um nach Werten zu suchen, die Leerzeichen oder Sonderzeichen enthalten, verwenden Sie doppelte Anführungszeichen (""), um den Ausdruck einzuhalten; Beispiel:  `businessaddress:"123 Main Street"` . 
+> Um nach Werten zu suchen, die Leerzeichen oder Sonderzeichen enthalten, verwenden Sie doppelte Anführungszeichen (""), um den Ausdruck einzuhalten; Beispiel: `businessaddress:"123 Main Street"` .
   
 |**Eigenschaft**|**Beschreibung der Eigenschaft**|
 |:-----|:-----|
@@ -144,18 +143,19 @@ In der folgenden Tabelle sind die Kontakteigenschaften aufgelistet, die indizier
 
 ## <a name="searchable-sensitive-data-types"></a>Durchsuchbare vertrauliche Datentypen
 
-Sie können das Feature für die Inhaltssuche im Security and Compliance Center verwenden, um nach vertraulichen Daten wie Kreditkartennummern oder Sozialversicherungsnummern zu suchen, die in Dokumenten auf SharePoint und OneDrive für Unternehmen Websites gespeichert sind. Sie können dies tun, indem Sie die  `SensitiveType` -Eigenschaft und den Namen eines vertraulichen Informationstyps in einer Stichwortabfrage verwenden. Die Abfrage gibt beispielsweise  `SensitiveType:"Credit Card Number"` Dokumente zurück, die eine Kreditkartennummer enthalten. Die Abfrage  `SensitiveType:"U.S. Social Security Number (SSN)"` gibt Dokumente zurück, die eine Sozialversicherungsnummer der USA enthalten. Wenn Sie eine Liste der vertraulichen Datentypen anzeigen möchten, nach denen Sie suchen können, gehen Sie zu **Klassifizierungs** \> **Typen für vertrauliche Informationen** im Security & Compliance Center. Sie können auch das Cmdlet **Get-DlpSensitiveInformationType** in der PowerShell Security & Compliance Center verwenden, um eine Liste vertraulicher Informationstypen anzuzeigen. 
-  
-Sie können die  `SensitiveType` -Eigenschaft auch verwenden, um nach dem Namen eines benutzerdefinierten vertraulichen Informationstyps zu suchen, den Sie (oder ein anderer Administrator) für Ihre Organisation erstellt haben. Sie können die Spalte **Publisher** auf der Seite **vertrauliche Informationstypen** im Security & Compliance Center (oder in der **Publisher** -Eigenschaft in PowerShell) verwenden, um zwischen integrierten und benutzerdefinierten Typen vertraulicher Informationen zu unterscheiden. Weitere Informationen finden Sie unter [Erstellen eines benutzerdefinierten vertraulichen Informationstyps](create-a-custom-sensitive-information-type.md).
+Sie können das Feature für die Inhaltssuche im Compliance Center verwenden, um nach vertraulichen Daten wie Kreditkartennummern oder Sozialversicherungsnummern zu suchen, die in Dokumenten auf SharePoint und OneDrive für Unternehmen Websites gespeichert sind. Sie können dies tun, indem Sie die `SensitiveType` -Eigenschaft und den Namen eines vertraulichen Informationstyps in einer Stichwortabfrage verwenden. Die Abfrage gibt beispielsweise `SensitiveType:"Credit Card Number"` Dokumente zurück, die eine Kreditkartennummer enthalten. Die Abfrage  `SensitiveType:"U.S. Social Security Number (SSN)"` gibt Dokumente zurück, die eine Sozialversicherungsnummer der USA enthalten. Um eine Liste der vertraulichen Datentypen anzuzeigen, nach denen Sie suchen können, wechseln **Data classifications** Sie zu \> **vertrauliche Informationstypen** für Daten Klassifikationen im Microsoft 365 Compliance Center. Sie können auch das Cmdlet **Get-DlpSensitiveInformationType** in Security & Compliance Center PowerShell verwenden, um eine Liste vertraulicher Informationstypen anzuzeigen.
   
 Weitere Informationen zum Erstellen von Abfragen mithilfe der  `SensitiveType` -Eigenschaft finden Sie unter [Formular Abfragen zum Auffinden vertraulicher Daten, die auf Websites gespeichert](form-a-query-to-find-sensitive-data-stored-on-sites.md)sind.
 
-> [!NOTE]
-> Sie können keine vertraulichen Datentypen und die `SensitiveType` Search-Eigenschaft verwenden, um nach vertraulichen Daten zu suchen, die sich in Exchange Online Postfächern bei-Rest befinden. Sie können jedoch Datenverlust Verhinderung (DLP)-Richtlinien verwenden, um vertrauliche e-Mail-Daten während der Übertragung zu schützen. Weitere Informationen finden Sie unter [Übersicht über Richtlinien zur Verhinderung von Datenverlust](data-loss-prevention-policies.md) und [Suchen nach personenbezogenen Daten](search-for-and-find-personal-data.md).
+### <a name="limitations-for-searching-sensitive-data-types"></a>Einschränkungen beim Durchsuchen von vertraulichen Datentypen
+
+- Sie können nur die `SensitiveType` -Eigenschaft verwenden, um nach integrierten vertraulichen Info-Datentypen zu suchen. Sie können nicht nach benutzerdefinierten vertraulichen Datentypen suchen, die Sie (oder ein anderer Administrator) für Ihre Organisation erstellt haben. Verwenden Sie die Spalte **Publisher** auf der Registerkarte **vertrauliche Informationstypen** im Compliance Center (oder in der **Publisher** -Eigenschaft in PowerShell), um zwischen integrierten und benutzerdefinierten Typen vertraulicher Informationen zu unterscheiden. Integrierte vertrauliche Datentypen werden durch den Wert **Microsoft Corporation** in der Spalte **Publisher** identifiziert.
+  
+- Sie können keine vertraulichen Info-Datentypen und die `SensitiveType` Search-Eigenschaft verwenden, um bei-Rest in Exchange Online Postfächern nach vertraulichen Daten zu suchen. Sie können jedoch Datenverlust Verhinderung (DLP)-Richtlinien verwenden, um vertrauliche e-Mail-Daten während der Übertragung zu schützen. Weitere Informationen finden Sie unter [Übersicht über Richtlinien zur Verhinderung von Datenverlust](data-loss-prevention-policies.md) und [Suchen nach personenbezogenen Daten](search-for-and-find-personal-data.md).
   
 ## <a name="search-operators"></a>Suchoperatoren
 
-Boolesche Suchoperatoren wie **and**, **or**und **Not**helfen Ihnen bei der Definition präziser Suchvorgänge, indem Sie bestimmte Wörter in die Suchabfrage einbeziehen oder ausschließen. Andere Techniken, beispielsweise die Verwendung von eigenschaftsoperatoren (beispielsweise \> = oder..), Anführungszeichen, Klammern und Platzhalter, unterstützen Sie beim Verfeinern einer Suchabfrage. In der folgenden Tabelle sind die Operatoren aufgeführt, die Sie zum einschränken oder Erweitern von Suchergebnissen verwenden können. 
+Boolesche Suchoperatoren wie **and**, **or**und **Not**helfen Ihnen bei der Definition präziser Suchvorgänge, indem Sie bestimmte Wörter in die Suchabfrage einbeziehen oder ausschließen. Andere Techniken, beispielsweise die Verwendung von eigenschaftsoperatoren (beispielsweise `>=` or `..` ), Anführungszeichen, Klammern und Platzhalter, unterstützen Sie beim Verfeinern einer Suchabfrage. In der folgenden Tabelle sind die Operatoren aufgeführt, die Sie zum einschränken oder Erweitern von Suchergebnissen verwenden können. 
   
 |**Operator**|**Verwendung**|**Beschreibung**|
 |:-----|:-----|:-----|
