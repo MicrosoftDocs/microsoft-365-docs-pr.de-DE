@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie Benutzer zwischen Abonnements migrieren.
 ms.date: 07/01/2020
-ms.openlocfilehash: d110ee7c49befa34f5a2cd3bb44dc114aec25b62
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 79f3e4636ff047c4d6f27d83e3644913a8fbb0b5
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45016544"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48647795"
 ---
 # <a name="move-users-to-a-different-subscription"></a>Verschieben von Benutzern zu einem anderen Abonnement
 
@@ -40,7 +40,7 @@ Wenn Sie über mehr als ein Abonnement verfügen, Benutzer mit einer Lizenz für
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-Sie müssen ein globaler, Lizenz-oder Benutzer Administrator sein, um Lizenzen zuweisen zu können. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen von Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
+Sie müssen ein globaler, Lizenz- oder Benutzeradministrator sein, um Lizenzen zuweisen zu können. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen von Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
 
 ## <a name="move-users-to-a-different-subscription"></a>Verschieben von Benutzern zu einem anderen Abonnement
 

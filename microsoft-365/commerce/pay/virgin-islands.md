@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wo die Zahlung für Ihr Abonnement gesendet werden soll.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: cbf6d6bcccc26d4b43b9e23b0a577b3878faad00
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 62ae33afde81d2beccabc9836c3ad94182705d6e
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401894"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48648011"
 ---
 # <a name="payment-information-for-virgin-islands-us"></a>Zahlungsinformationen für Virgin Islands, USA
 

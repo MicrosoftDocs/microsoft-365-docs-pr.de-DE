@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: Ändern Sie Abonnements manuell, indem Sie ein neues Abonnement kaufen und sicherstellen, dass beide Abonnements aufgelistet und aktiv sind.
-ms.openlocfilehash: 20f5492a816c6c819456ac2ca4aa0f20da24eccd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 09557b3556db1e6f17d7a4cd54a88ba34d0f0bd7
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403282"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48647819"
 ---
 # <a name="change-plans-manually"></a>Manuelles Ändern von Plänen
 

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,12 +18,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie ﻿kostenlose Self-Service-Anmelde Abonnements für Ihre Organisation verwalten.
-ms.openlocfilehash: 81c67292a394c62d6057022babb88aa8796b9b3d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fb70d0c40d4358abc227c8f6ff4a0e0dce1a7265
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403246"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48647831"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>Verwalten von Self-Service-Anmelde Abonnements
 
@@ -44,7 +44,7 @@ Verwenden Sie das Cmdlet " [**MsolCompanySettings**](https://docs.microsoft.com/
 > [!IMPORTANT]
 > Wenn Sie ein Self-Service-Anmelde Abonnement löschen, werden alle Benutzer daran gehindert, auf Ihre Daten zuzugreifen und alle Daten und e-Mails zu löschen.
 
-1. Wechseln Sie im Admin Center zur Seite **Fakturierung**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
 2. Suchen Sie nach dem Self-Service-Anmelde Abonnement, das Sie löschen möchten. Wählen Sie im Abschnitt **Einstellungen & Aktionen** die Option **Abonnement löschen**aus.
 3. Aktivieren Sie im Bereich **Abonnement löschen** das Kontrollkästchen, und wählen Sie dann **Abonnement löschen**aus.
 

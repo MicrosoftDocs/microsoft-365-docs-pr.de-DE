@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: Wechseln Sie manuell Microsoft 365 for Business-Abonnements, indem Sie ein neues Abonnement kaufen und sicherstellen, dass beide Abonnements aufgelistet und aktiv sind.
-ms.openlocfilehash: 6d6f28dc45f1d5c8efc7202f1be718f8517cf12f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3712f01502362e68d05e6a2eadfcac588f6092b7
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403198"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48647759"
 ---
 # <a name="switch-microsoft-365-for-business-plans-manually"></a>Manuelles Wechseln von Microsoft 365 for Business-Plänen
 

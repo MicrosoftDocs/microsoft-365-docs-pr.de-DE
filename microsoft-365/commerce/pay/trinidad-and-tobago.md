@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wo die Zahlung für Ihr Abonnement gesendet werden soll.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c9ee373b77d8b653ef514f3f7a531c69217ea108
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4ae8e1163cd559f40984617243cf334a922ce504
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400810"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48648311"
 ---
 # <a name="payment-information-for-trinidad-and-tobago"></a>Zahlungsinformationen für Trinidad und Tobago
 

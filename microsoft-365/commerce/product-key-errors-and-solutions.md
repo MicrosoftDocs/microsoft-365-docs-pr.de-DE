@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
@@ -25,12 +25,12 @@ description: 'In diesem Artikel erfahren Sie, wie Sie Probleme beheben können, 
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: dd3ac00061d1e509dddbc83c8ba3c4631100b63e
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 533a2390d602f42602a7846b4f1e23302a957e74
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818647"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48647891"
 ---
 # <a name="problems-with-your-microsoft-365-for-business-product-key"></a>Probleme mit Ihrem Product Key für Microsoft 365 for Business?
 
@@ -52,7 +52,7 @@ Wenn beim Versuch, einen Product Key für **Microsoft 365 for Business**einzulö
 | "Die Anforderung kann momentan nicht verarbeitet werden. Warten Sie einige Minuten, und versuchen Sie es dann erneut." | Wenn nachfolgende Versuche mehr als 15 Minuten dieselbe Fehlermeldung verursachen, [wenden Sie sich](../admin/contact-support-for-business-products.md)an den Support. |
 | "Das von Ihnen gewünschte Abonnement ist nicht verfügbar. Dies kann eine der folgenden Ursachen haben: Das Angebot ist nicht verfügbar. - Der Dienst ist in Ihrem Land nicht verfügbar. - Sie können die gleiche Testversion nicht ein zweites Mal verwenden/auswählen. Wenn das Problem weiterhin besteht, wenden Sie sich an den Microsoft Support." | [Wenden Sie sich an den Support](../admin/contact-support-for-business-products.md). Wenn Sie mit einem Partner zusammenarbeiten, wenden Sie sich wegen Support an Ihren Partner. |
 | "Sie haben mehr Lizenzen hinzugefügt als dieses Angebot zulässt. Maximal sind \<x\> Benutzerlizenzen. Entfernen Sie diesen Product Key, und geben Sie einen ein, mit dem weniger Benutzerlizenzen hinzugefügt werden." | Wenden Sie sich an Ihren Händler oder Partner. Sie haben mehr Lizenzen erworben, als mit diesem Microsoft 365-Abonnement verwendet werden können. |
-| "Sie müssen globaler oder Abrechnungsadministrator sein, um einen Product Key einlösen zu können." | Stellen Sie sicher, dass Ihre Berechtigungen entweder als Abrechnung oder als globaler Administrator festgelegt sind. Um dies zu überprüfen, [melden Sie sich bei Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) mit ihrem geschäftlichen oder Schulkonto an, und wechseln Sie zum Admin Center. <br/><br/>Wählen Sie im Admin Center **Benutzer** \> **Aktive Benutzer** aus. Wählen Sie in **Filter** die Option **Globale Administratoren** oder **Abrechnungsadministratoren** aus.  <br/><br/>Stellen Sie sicher, dass Sie in den Suchergebnissen aufgeführt sind. |
+| "Sie müssen globaler oder Abrechnungsadministrator sein, um einen Product Key einlösen zu können." | Stellen Sie sicher, dass Ihre Berechtigungen entweder als Abrechnung oder als globaler Administrator festgelegt sind. Um dies zu überprüfen,  [melden Sie sich bei Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) mit ihrem geschäftlichen oder Schulkonto an, und wechseln Sie zum Admin Center. <br/><br/>Wählen Sie im Admin Center **Benutzer** \> **Aktive Benutzer** aus. Wählen Sie in **Filter** die Option **Globale Administratoren** oder **Abrechnungsadministratoren** aus.  <br/><br/>Stellen Sie sicher, dass Sie in den Suchergebnissen aufgeführt sind. |
    
 > [!NOTE]
 > Wenn Sie Microsoft 365 über einen Partner kaufen, sendet Microsoft Ihnen eine e-Mail mit Anweisungen, um Ihren Product Key zu erhalten und Ihr Abonnement im [Volumen Lizenzierungs-Service Center](https://go.microsoft.com/fwlink/p/?LinkID=282016)zu aktivieren. Weitere Informationen zur Volumenlizenzierung finden Sie unter [Hilfe für bestehende Volumenlizenzierungskunden](https://go.microsoft.com/fwlink/p/?LinkId=534992). 

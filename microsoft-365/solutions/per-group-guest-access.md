@@ -1,5 +1,5 @@
 ---
-title: Blockieren von Gastbenutzern aus einer bestimmten Gruppe
+title: Verhindern, dass Gastbenutzer einer bestimmten Gruppe hinzugefügt werden
 ms.reviewer: arvaradh
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,21 +14,23 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: Blockieren von Gastbenutzern aus einer bestimmten Gruppe
-ms.openlocfilehash: 17e5f8f9ab4107a12a0607dca3795d54b7be012c
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+description: Hier erfahren Sie, wie Sie verhindern, dass Gastbenutzer einer bestimmten Gruppe hinzugefügt werden.
+ms.openlocfilehash: 91c7560186fb0b954075e9ff9c997b34121951cd
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377306"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651350"
 ---
-# <a name="block-guest-users-from-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Blockieren von Gastbenutzern aus einem bestimmten Microsoft 365-Gruppen-oder Microsoft Teams-Team
+# <a name="prevent-guest-users-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Verhindern, dass Gastbenutzer einem bestimmten Microsoft 365-Gruppen-oder Microsoft Teams-Team hinzugefügt werden
 
-Wenn Sie den Gastzugriff für die meisten Gruppen und Teams gewähren möchten, jedoch über einige, in denen Sie Gastzugriff verhindern möchten, können Sie den Gastzugriff für einzelne Gruppen und Teams blockieren. (Das Blockieren des Gastzugriffs auf ein Team erfolgt durch Blockieren des Gastzugriffs auf die zugeordnete Gruppe.)
+Wenn Sie den Gastzugriff für die meisten Gruppen und Teams gewähren möchten, jedoch über einige, in denen Sie Gastzugriff verhindern möchten, können Sie den Gastzugriff für einzelne Gruppen und Teams blockieren. (Das Blockieren des Gastzugriffs auf ein Team erfolgt durch Blockieren des Gastzugriffs auf die zugeordnete Gruppe.) Dadurch wird verhindert, dass neue Gäste hinzugefügt werden, aber Gäste, die sich bereits in der Gruppe oder im Team befinden, werden nicht entfernt.
 
 Wenn Sie Sensitivitäts Bezeichnungen in Ihrer Organisation verwenden, empfehlen wir die Verwendung zur Steuerung des Gastzugriffs pro Gruppe. Informationen zur Vorgehensweise finden [Sie unter Verwenden von Sensitivitäts Bezeichnungen zum Schutz von Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites). Dies ist die empfohlene Vorgehensweise.
 
-Sie können auch Gastzugriff auf einzelne Gruppen mithilfe von Microsoft PowerShell blockieren.
+## <a name="change-group-settings-using-microsoft-powershell"></a>Ändern von Gruppeneinstellungen mithilfe von Microsoft PowerShell
+
+Sie können auch das Hinzufügen neuer Gäste zu einzelnen Gruppen mithilfe von PowerShell verhindern.
 
 Sie müssen die Vorschauversion von [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (Module Name **AzureADPreview**) verwenden, um die Einstellung Gastzugriff auf Gruppenebene zu ändern:
 
