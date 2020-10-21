@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 972eccccb7fd8bebe3e6a1cb0d7a427f20b3a586
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 2352d7005d6e558e73bae1ddaa768307cc9ad84e
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44397454"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48641747"
 ---
 # <a name="contact-support-for-kazakhstan"></a>Wenden Sie sich an den Support für Kasachstan
 
@@ -30,13 +30,13 @@ ms.locfileid: "44397454"
 ## <a name="hours"></a>Stunden
 ### <a name="billing-support"></a>Abrechnungssupport:
 
-Russisch: Mo-Fr 10.00-19.00 Uhr Moskau
+Russisch: Mon-Fri 10 – 19 Uhr Moskau
 
-Englisch: Mo-Fr 9 – 17 Uhr London
+Englisch: Mon-Fri 9.00-17.00 Uhr London
 
 ### <a name="technical-support"></a>Technischer Support:
 
-Russisch: Mo-Fr 7.00-20.00 Uhr Moskau
+Russisch: Mon-Fri 7.00-20.00 Uhr Moskau
 
 Englisch: rund um die Uhr
 

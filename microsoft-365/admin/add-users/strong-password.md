@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: In diesem Artikel erfahren Sie, wie Sie mithilfe von Windows PowerShell sichere Kennwortanforderungen für Ihre Benutzer festlegen können.
-ms.openlocfilehash: 1634e2f0de2cdd2cac5e1928adbef54457e50716
-ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
+ms.openlocfilehash: 9f6fd61396d99245ffeabf757d3cb65c5d5cb85e
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48626143"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646619"
 ---
 # <a name="set-strong-password-requirement-for-users"></a>Festlegen einer strengen Kennwortanforderung für Benutzer
 
-In diesem Artikel wird erklärt, wie Sie sichere Kennwortanforderungen für Ihre Benutzer festlegen. Sie müssen diese Schritte mithilfe von PowerShell ausführen.
+In diesem Artikel wird erläutert, wie Sie strenge Kennwortanforderungen für Ihre Benutzer deaktivieren. Starke Kennwortanforderungen sind in Ihrer Microsoft 365 for Business-Organisation standardmäßig aktiviert. Ihre Organisation verfügt möglicherweise über Anforderungen zum Deaktivieren sicherer Kennwörter. Führen Sie die folgenden Schritte aus, um sichere Kennwortanforderungen zu deaktivieren. Sie müssen diese Schritte mithilfe von PowerShell ausführen.
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
@@ -42,15 +42,15 @@ Sie müssen auch eine Verbindung mit Microsoft 365 mit PowerShell herstellen.
 
 1. Stellen [Sie eine Verbindung mit Microsoft 365 mit PowerShell her](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
-2. Mithilfe von PowerShell können Sie mit dem folgenden Befehl sichere Kennwortanforderungen für alle Benutzer aktivieren:
+2. Mithilfe von PowerShell können Sie mit dem folgenden Befehl sichere Kennwortanforderungen für alle Benutzer deaktivieren:
 
     ```powershell
-    Get-MsolUser | Set-MsolUser -StrongPasswordRequired $true
+    Get-MsolUser | Set-MsolUser -StrongPasswordRequired $false
 
-3. You can turn on strong password requirements for specific users with this command:
+3. You can turn of strong password requirements for specific users with this command:
 
     ```powershell
-    Set-MsolUser –UserPrincipalName –StrongPasswordRequired  $true
+    Set-MsolUser –UserPrincipalName –StrongPasswordRequired  $false
     ```
 
 > [!NOTE]

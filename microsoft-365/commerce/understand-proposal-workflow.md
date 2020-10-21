@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informationen zu Vorschlägen, die Sie beim Kauf von Microsoft-Produkten und-Diensten unterstützen.
 ROBOTS: NOINDEX
-ms.openlocfilehash: 6de3f116b9266ad8f2d4d245cc0ac4b7422bbf4d
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: d0e8c6fd9973573d4e49f7512e4394f7534bd97c
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419112"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646799"
 ---
 # <a name="understand-the-proposal-workflow"></a>Grundlegendes zum Vorschlagsworkflow
 
@@ -89,7 +89,7 @@ Die folgende Tabelle enthält Begriffe und Definitionen, die in Ihrem Vorschlag 
 | Vorhandene Vereinbarungen | Jede Vereinbarung, die Ihre Organisation bereits mit Microsoft eingerichtet hat. Dabei kann es sich um eine Enterprise-Vereinbarung, eine Microsoft-Produkt &-Dienstvereinbarung oder eine Microsoft-Kundenvereinbarung, aber nicht nur um Sie, verfügen. |
 | Microsoft-Kundenvertrag (MCA) | Eine Vereinbarung, in der die Geschäftsbedingungen des Kontos aufgeführt sind, das Ihre Organisation mit Microsoft geführt hat. |
 | Microsoft-Mitarbeiter | Ein autorisierter Microsoft-Mitarbeiter, der einen Vorschlag für Sie und Ihre Organisation vorbereitet. |
-| Organisation | Eine juristische Person, die Microsoft-Produkte,-Technologien oder-Dienste verwendet. |
+| Organization (Organisation) | Eine juristische Person, die Microsoft-Produkte,-Technologien oder-Dienste verwendet. |
 | Vorbereitet von | Die e-Mail-Adresse des Microsoft-Vertreters, der den Vorschlag vorbereitet hat. |
 | Ergänzende Ausdrücke | Änderungen an der MCA, die für Ihre Organisation spezifische Ausdrücke enthalten. Um zusätzliche Ausdrücke zu akzeptieren, müssen Sie DocuSign verwenden, um eine elektronische Signatur aufzuzeichnen. |
 

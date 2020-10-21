@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ab3738c4c2cddd60f3eb51298b0a8386196cadfd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: ea1b6a2cad7e6b449005d79137a75685bf94d9c1
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44397346"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48641639"
 ---
 # <a name="contact-support-for-lebanon"></a>Kontaktieren des Supports für Libanon
 
@@ -36,13 +36,13 @@ Geben Sie Code 7702
 ## <a name="hours"></a>Stunden
 ### <a name="billing-support"></a>Abrechnungssupport:
 
-Arabisch: So-Do 10.00-18.00 Uhr
+Arabisch: Sun-Thu 10 – 18 Uhr
 
-Englisch: Mo-Fr 10.00-18.00 Uhr
+Englisch: Mon-Fri 10 – 18 Uhr
 
 ### <a name="technical-support"></a>Technischer Support:
 
-Arabisch: So-Do 10.00-18.00 Uhr
+Arabisch: Sun-Thu 10 – 18 Uhr
 
 Englisch: rund um die Uhr
 

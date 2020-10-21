@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5649cca563d4b69a4bc86a424c4f3a969e78f6ed
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 8a815c4605094b10d210e35ab5eabb4b7f7fd9ca
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44395898"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48640859"
 ---
 # <a name="contact-support-for-morocco"></a>Kontakt Support für Marokko
 
@@ -34,17 +34,17 @@ Geben Sie Code 7700
 ## <a name="hours"></a>Stunden
 ### <a name="billing-support"></a>Abrechnungssupport:
 
-Arabisch: So-Do 8.00-16.00 Uhr
+Arabisch: Sun-Thu 8.00-16.00 Uhr
 
-Französisch: Mo-Fr 8.00-16.00 Uhr
+Französisch: Mon-Fri 8.00-16.00 Uhr
 
-Englisch: Mo-Fr 8.00-16.00 Uhr
+Deutsch: Mon-Fri 8.00-16.00 Uhr
 
 ### <a name="technical-support"></a>Technischer Support:
 
-Arabisch: So-Do 8.00-16.00 Uhr
+Arabisch: Sun-Thu 8.00-16.00 Uhr
 
-Französisch: Mo-Fr 7.00-20.00 Uhr
+Französisch: Mon-Fri 7.00-20.00 Uhr
 
 Englisch: rund um die Uhr
 

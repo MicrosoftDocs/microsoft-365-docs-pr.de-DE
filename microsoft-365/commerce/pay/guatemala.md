@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wo die Zahlung für Ihr Abonnement gesendet werden soll.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0a91335fd5ed53d5a8da7cf70380b16e6344e09f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 76acf9d82701721d5d26d3a22a382fa171243281
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44404406"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48647399"
 ---
 # <a name="payment-information-for-guatemala"></a>Zahlungsinformationen für Guatemala
 
