@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie die Junk-e-Mail-Einstellungen in Exchange Online Postfächern konfigurieren. Viele dieser Einstellungen stehen Benutzern in Outlook oder Outlook im Internet zur Verfügung.
-ms.openlocfilehash: 632c6f37b80cdc38b513f66ad42e4a5c25b41f25
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: ed1513dc16caa25edfe0acd62db59304d90e76c5
+ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203347"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48626155"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Konfigurieren der Junk-E-Mail-Einstellungen für Exchange Online-Postfächer
 
@@ -36,13 +36,13 @@ Es gibt aber auch spezifische Antispam-Einstellungen, die Administratoren für e
 
   - **Verschieben von Nachrichten in den Junk-e-Mail-Ordner auf der Grundlage von Anti-Spam-Richtlinien**: Wenn eine Antispampolitik mit dem Vorgang **Nachricht in Junk-e-Mail verschieben** für ein Spamfilter Urteil konfiguriert ist, verschiebt die Junk-e-Mail-Filterregel die Nachricht in den Junk-e-Mail-Ordner, nachdem die Nachricht an das Postfach gesendet wurde. Weitere Informationen zu Spamfilter Urteilen in Anti-Spam-Richtlinien finden Sie unter [configure Anti-Spam Policies in EoP](configure-your-spam-filter-policies.md). Ebenso verschiebt die Junk-e-Mail-Filterregel die Nachricht in den Ordner Junk-e-Mail-Nachricht **in Junk-e** -Mail-Spamfilter-Urteils Aktionen, wenn Zero-Hour Auto Purge (zap) feststellt, dass eine zugestellte Nachricht Spam oder Phishing ist. Weitere Informationen zu zap finden Sie unter [Zero-Hour Auto Purge (zap) in Exchange Online](zero-hour-auto-purge.md).
 
-  - **Junk-e-Mail-Einstellungen, die Benutzer in Outlook oder Outlook im Internet für sich selbst konfigurieren**: die _Sammlung_ von Listen sicherer Adressen ist die Liste sicherer Absender, die Liste Sichere Empfänger und die Liste Absender blockieren für jedes Postfach. Die Einträge in diesen Listen bestimmen, ob die Junk-e-Mail-Regel die Nachricht in den Posteingang oder in den Junk-e-Mail-Ordner verschiebt. Benutzer können die Sammlung von Listen sicherer Adressen für Ihr eigenes Postfach in Outlook oder Outlook im Internet (früher bekannt als Outlook Web App) konfigurieren. Administratoren können die Sammlung von Listen sicherer Adressen für das Postfach eines beliebigen Benutzers konfigurieren.
+  - **Junk-e-Mail-Einstellungen, die Benutzer in Outlook oder Outlook im Internet für sich selbst konfigurieren**: die _Sammlung_ von Listen sicherer Adressen ist die Liste sicherer Absender, die Liste Sichere Empfänger und die Liste der blockierten Absender für jedes Postfach. Die Einträge in diesen Listen bestimmen, ob die Junk-e-Mail-Regel die Nachricht in den Posteingang oder in den Junk-e-Mail-Ordner verschiebt. Benutzer können die Sammlung von Listen sicherer Adressen für Ihr eigenes Postfach in Outlook oder Outlook im Internet (früher bekannt als Outlook Web App) konfigurieren. Administratoren können die Sammlung von Listen sicherer Adressen für das Postfach eines beliebigen Benutzers konfigurieren.
 
 Wenn die Junk-e-Mail-Regel für das Postfach aktiviert ist, kann EoP Nachrichten in den Junk-e-Mail-Ordner basierend auf der Spam Filterungs Entscheidungs Aktion Nachrichten **in den Junk-e-Mail-Ordner** oder in die Liste blockierter Absender im Postfach migrieren und verhindern, dass Nachrichten an den Junk-e-Mail-Ordner übermittelt werden (basierend auf
 
  Wenn die Junk-e-Mail-Regel für das Postfach deaktiviert ist, kann EoP Nachrichten nicht in den Junk-e-Mail-Ordner basierend auf der Spam Filterungs **Entscheidungs Aktion "Nachricht in Junk-e-Mail-Ordner"** oder "Sammlung von Listen sicherer Adressen" im Postfach
 
-Administratoren können Exchange Online PowerShell verwenden, um den Status der Junk-e-Mail-Regel für Postfächer zu deaktivieren, zu aktivieren und anzuzeigen. Administratoren können auch Exchange Online PowerShell zum Konfigurieren von Einträgen in der Sammlung von Listen sicherer Adressen für Postfächer verwenden (die Liste sicherer Absender, die Liste sicherer Empfänger und die Liste Absender blockieren).
+Administratoren können Exchange Online PowerShell verwenden, um den Status der Junk-e-Mail-Regel für Postfächer zu deaktivieren, zu aktivieren und anzuzeigen. Administratoren können auch Exchange Online PowerShell zum Konfigurieren von Einträgen in der Sammlung von Listen sicherer Adressen für Postfächer verwenden (die Liste sicherer Absender, die Liste sicherer Empfänger und die Liste blockierter Absender).
 
 > [!NOTE]
 > Nachrichten von Absendern, die Benutzer ihren eigenen Listen sicherer Absender hinzugefügt haben, überspringen die Verbindungsfilterung als Teil von EoP (der SCL-Wert ist-1). Wenn Sie verhindern möchten, dass Benutzer Ihrer Liste sicherer Absender in Outlook Einträge hinzufügen, verwenden Sie Gruppenrichtlinien wie im Abschnitt  [Informationen zu Junk-e-Mail-Einstellungen in Outlook](#about-junk-email-settings-in-outlook) weiter unten in diesem Thema beschrieben. Die Richtlinienfilterung, Inhaltsfilterung und ATP-Prüfungen (Advanced Threat Protection) werden weiterhin auf die Nachrichten angewendet.
@@ -104,7 +104,7 @@ Die Sammlung von Listen sicherer Adressen für ein Postfach umfasst die Liste si
 
 ****
 
-|Parameter für die Gruppe "MailboxJunkEmailConfiguration"|Einstellung für Outlook im Internet|
+|Parameter für Set-MailboxJunkEmailConfiguration|Einstellung für Outlook im Internet|
 |---|---|
 |_BlockedSendersAndDomains_|**E-Mails von diesen Absendern und Domänen in Junk-E-Mail-Ordner verschieben.**|
 |_ContactsTrusted_|**Meine Kontakte sind vertrauenswürdige Absender**|

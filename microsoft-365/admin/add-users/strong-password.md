@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: In diesem Artikel erfahren Sie, wie Sie mithilfe von Windows PowerShell sichere Kennwortanforderungen für Ihre Benutzer festlegen können.
-ms.openlocfilehash: 1230ff4b4235ac5acbc28aa823506dfa5af26c2d
-ms.sourcegitcommit: 3165329d1fb5a7fd866ff287bea3b6354ea2be18
+ms.openlocfilehash: 1634e2f0de2cdd2cac5e1928adbef54457e50716
+ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581020"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48626143"
 ---
 # <a name="set-strong-password-requirement-for-users"></a>Festlegen einer strengen Kennwortanforderung für Benutzer
 
@@ -42,10 +42,15 @@ Sie müssen auch eine Verbindung mit Microsoft 365 mit PowerShell herstellen.
 
 1. Stellen [Sie eine Verbindung mit Microsoft 365 mit PowerShell her](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
-2. Mithilfe von PowerShell können Sie mit dem folgenden Befehl sichere Kennwörter für bestimmte Benutzer deaktivieren:
+2. Mithilfe von PowerShell können Sie mit dem folgenden Befehl sichere Kennwortanforderungen für alle Benutzer aktivieren:
 
     ```powershell
-    Set-MsolUser –UserPrincipalName –StrongPasswordRequired  $false
+    Get-MsolUser | Set-MsolUser -StrongPasswordRequired $true
+
+3. You can turn on strong password requirements for specific users with this command:
+
+    ```powershell
+    Set-MsolUser –UserPrincipalName –StrongPasswordRequired  $true
     ```
 
 > [!NOTE]

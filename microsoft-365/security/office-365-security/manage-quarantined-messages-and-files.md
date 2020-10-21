@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren erfahren, wie Sie isolierte Nachrichten für alle Benutzer in Exchange Online Protection (EoP) anzeigen und verwalten können. Administratoren in Organisationen mit Office 365 Advanced Threat Protection (Office 365 ATP) können auch unter Quarantäne gestellte Dateien in SharePoint Online, OneDrive für Unternehmen und Microsoft Teams verwalten.
-ms.openlocfilehash: 5e1115157ef7d67bc7a3f626eb61d01ecc0986cb
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 65cf0a116dbed3dce93db8e34fa96d6ab68a9c9e
+ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600541"
+ms.locfileid: "48626167"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Verwalten von isolierten Nachrichten und Dateien als Administrator in EOP
 
@@ -70,6 +70,7 @@ Sie können isolierte Nachrichten im Security & Compliance Center oder in PowerS
    - **Quarantänegrund**<sup>\*</sup>
    - **Veröffentlicht?**<sup>\*</sup>
    - **Richtlinientyp**<sup>\*</sup>
+   - **Expires**
    - **Empfänger**
    - **Nachrichten-ID**
    - **Name der Richtlinie**
@@ -95,12 +96,12 @@ Sie können isolierte Nachrichten im Security & Compliance Center oder in PowerS
      - **Schadsoftware**
      - **Spam**
      - **Phishing mit hoher Zuverlässigkeit**
-     
-   - **Richtlinientyp**: Filtern von Nachrichten anhand des Richtlinientyps:
+
+   - **Richtlinientyp**: Filtern von Nachrichten nach Richtlinientyp:
      - **Anti-Malware-Richtlinie**
      - **Richtlinie für sichere Anlagen**
-     - **Anti-Phishing-Richtlinie**
-     - **Richtlinie für gehostete Inhaltsfilter**
+     - **Antiphishing-Richtlinie**
+     - **Richtlinie für gehostete Inhaltsfilter** (Anti-Spam-Richtlinie)
      - **Transport Regel**
 
    - **E-Mail-Empfänger**: alle Benutzer oder nur an Sie gesendete Nachrichten. Endbenutzer können nur isolierte Nachrichten verwalten, die an Sie gesendet werden.
@@ -115,11 +116,13 @@ Sie können isolierte Nachrichten im Security & Compliance Center oder in PowerS
 
    - **E-Mail-Adresse des Absenders**: Die E-Mail-Adresse eines einzelnen Absenders.
 
-   - **Richtlinienname**: Verwenden Sie den gesamten Richtliniennamen der Nachricht. Bei der Suche wird nicht zwischen Groß- und Kleinschreibung unterschieden.
+   - **Richtlinienname**: Verwenden Sie den vollständigen Namen der Nachricht. Bei der Suche wird nicht zwischen Groß- und Kleinschreibung unterschieden.
 
    - **E-Mail-Adresse des Empfängers**: Die E-Mail-Adresse eines einzelnen Empfängers.
 
    - **Betreff**: Verwenden Sie den gesamten Betreff der Nachricht. Bei der Suche wird nicht zwischen Groß- und Kleinschreibung unterschieden.
+  
+   - **Richtlinienname**: der Name der Richtlinie, die für die Quarantäne der Nachricht verantwortlich war.
 
    Nachdem Sie die Suchkriterien eingegeben haben, klicken Sie auf die ![Schaltfläche Aktualisieren](../../media/scc-quarantine-refresh.png) **Aktualisieren**, um die Ergebnisse zu filtern.
 
@@ -147,6 +150,8 @@ Wenn Sie eine E-Mail-Nachricht in der Liste auswählen, werden die folgenden Nac
 
 - **Quarantäne Grund**: zeigt an, ob eine Nachricht als **Spam**, **Massen**, **Phishing**, Übereinstimmung mit einer Nachrichtenfluss Regel (**Transport Regel**) identifiziert wurde oder als enthaltender **Schadsoftware**erkannt wurde.
 
+- **Empfängeranzahl**
+
 - **Empfänger**: Wenn die Nachricht mehrere Empfänger enthält, müssen Sie auf **Vorschau der Nachricht anzeigen** oder **Nachrichten** Kopfzeile anzeigen klicken, um die gesamte Liste der Empfänger anzuzeigen.
 
 - **Läuft ab**. Das Datum/die Uhrzeit, zu der die Nachricht automatisch und dauerhaft aus der Quarantäne gelöscht wird.
@@ -173,7 +178,6 @@ Nachdem Sie eine Nachricht ausgewählt haben, haben Sie mehrere Möglichkeiten, 
   Hinweise zum Freigeben von Nachrichten:
 
   - Sie können eine Nachricht nur einmal an denselben Empfänger freigeben.
-
   - Nur Empfänger, die die Nachricht nicht erhalten haben, werden in der Liste der potenziellen Empfänger angezeigt.
 
 - **Nachrichtenkopf anzeigen**: Wählen Sie diesen Link aus, um den Nachrichtenkopftext anzuzeigen. Um den Nachrichtenkopf im Detail zu analysieren, kopieren Sie den Nachrichtenkopftext in die Zwischenablage, und wählen Sie dann **Microsoft-Nachrichtenkopfanalyse** aus, um zur Remoteverbindungsuntersuchung zu wechseln (klicken Sie mit der rechten Maustaste, und wählen Sie **In neuer Registerkarte öffnen** aus, wenn Sie Microsoft 365 nicht verlassen möchten, um die Aufgabe auszuführen). Fügen Sie den Nachrichtenkopf auf der Seite in den Abschnitt "Nachrichtenkopfanalyse" ein, und wählen Sie dann **Kopfzeilen analysieren** aus:
@@ -219,13 +223,13 @@ Klicken Sie nach Abschluss des Vorgangs auf **Schließen**.
 > [!NOTE]
 > Die Verfahren für in Quarantäne befindliche Dateien in diesem Abschnitt stehen nur für ATP-Plan 1-und Plan 2-Abonnenten zur Verfügung.
 
-In Organisationen mit ATP können Administratoren isolierte Dateien in SharePoint Online, OneDrive für Unternehmen und Microsoft Teams verwalten.
+In Organisationen mit ATP können Administratoren isolierte Dateien in SharePoint Online, OneDrive für Unternehmen und Microsoft Teams verwalten. Informationen zum Aktivieren des Schutzes für diese Dateien finden Sie unter [Aktivieren von ATP für SharePoint, OneDrive und Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
 
 ### <a name="view-quarantined-files"></a>Anzeigen von isolierten Dateien
 
 1. Wechseln Sie im Security and Compliance Center zu **Bedrohungsmanagement** \> **Überprüfung** \> **Quarantäne**.
 
-2. Ändern Sie die Ansicht in den Standardwert **Dateien**unter **Quarantäne** . Sie können nach einem Feld sortieren, indem Sie auf eine verfügbare Spaltenüberschrift klicken.
+2. Ändern Sie die Ansicht in den Wert **Dateien**in **Quarantäne** . Sie können nach einem Feld sortieren, indem Sie auf eine verfügbare Spaltenüberschrift klicken.
 
 3. Sie können die Ergebnisse sortieren, indem Sie auf eine verfügbare Spaltenüberschrift klicken. Klicken Sie auf **Spalten ändern**, um höchstens sieben Spalten anzuzeigen. Die Standardspalten sind mit einem Sternchen ( <sup>\*</sup> ) gekennzeichnet:
 
@@ -248,6 +252,7 @@ In Organisationen mit ATP können Administratoren isolierte Dateien in SharePoin
      - Ein benutzerdefiniertes Datum/Zeitintervall.
    - **Empfangszeit**
    - **Quarantäne Grund**: der einzige verfügbare Wert ist **Schadsoftware**.
+   - **Richtlinientyp**
 
 Nachdem Sie eine bestimmte isolierte Datei gefunden haben, wählen Sie die Datei aus, um Details dazu anzuzeigen, und nehmen Sie Aktionen vor (beispielsweise anzeigen, freigeben, herunterladen oder Löschen der Nachricht).
 
@@ -293,8 +298,6 @@ Wenn Sie mehrere isolierte Dateien in der Liste auswählen (bis zu 100), wird de
 
 - **Veröffentlichungsdateien**
 - **Dateien löschen**: Nachdem Sie in der angezeigten Warnmeldung auf **Ja** klicken, werden die Dateien sofort gelöscht.
-
-1. Melden Sie sich mit einem Arbeits-oder Schulkonto mit globalen Administratorrechten (oder geeigneten Sicherheits & Compliance Center-Rollen) in Ihrer Organisation an, und [wechseln Sie zum Security & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-view-and-manage-quarantined-messages-and-files"></a>Verwenden Exchange Online PowerShell oder eigenständiger EoP PowerShell zum Anzeigen und Verwalten von isolierten Nachrichten und Dateien
 
