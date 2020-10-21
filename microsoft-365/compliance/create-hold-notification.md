@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Verwenden Sie das Kommunikationstool in einem erweiterten eDiscovery-Fall zum Senden, sammeln und Nachverfolgen von Benachrichtigungen über rechtliche Aufbewahrungsfristen.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 0bcbdef1c1393ff3e7f3baf30279909ed3a663f5
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 730b60c4d57f8fecb0e66f460942e9e890732c2c
+ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035787"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48626178"
 ---
 # <a name="create-a-legal-hold-notice"></a>Erstellen eines rechtlichen Aufbewahrungs Vermerks
 
@@ -46,7 +46,11 @@ Der erste Schritt besteht darin, die entsprechenden Details für rechtliche Aufb
 
     - **Name**: Dies ist der Name für die Kommunikation.
 
-    - **Ausstellenden Offizier**: in der Dropdownliste wird eine Liste der Fall Mitglieder angezeigt. Jede an Verwalter gesendete Nachricht wird im Namen des angegebenen ausstellenden Versands gesendet.
+    - **Ausstellenden Offizier**: in der Dropdownliste wird eine Liste der Fall Mitglieder angezeigt. Weitere Informationen zum Hinzufügen neuer Mitglieder zu einem Fall finden Sie unter [Create an Advanced eDiscovery Case](get-started-with-advanced-ediscovery.md#step-4-create-an-advanced-ediscovery-case). Jede an Verwalter gesendete Nachricht wird im Namen des angegebenen ausstellenden Versands gesendet.
+
+> [!NOTE]
+> Der ausstellende Offizier muss ein **aktives Postfach** aufweisen, das in der Dropdownliste der ausstellenden Referenten angezeigt wird.
+
 
 4. Klicken Sie auf **Weiter**.
 
@@ -89,7 +93,7 @@ So erstellen Sie eine Veröffentlichungs Benachrichtigung:
 
 5. Klicken Sie auf **Speichern**.
 
-### <a name="re-issuance-notification"></a>Erneute Veröffentlichungs Benachrichtigung
+### <a name="re-issuance-notification"></a>Re-Issuance Benachrichtigung
 
 Im Fall von Fortschritten müssen Verwalter möglicherweise zusätzliche oder weniger Daten aufbewahren, als zuvor angewiesen wurde. Nachdem Sie den Portalinhalt aktualisiert haben, wird die erneute Ausstellungs Benachrichtigung gesendet, und die Verwalter werden über etwaige Änderungen an Ihren Aufbewahrungspflichten benachrichtigt.
 
