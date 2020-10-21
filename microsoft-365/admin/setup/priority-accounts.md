@@ -13,12 +13,12 @@ ms.collection:
 - Adm_O365
 ms.custom: AdminSurgePortfolio
 description: Überwachen von fehlerhaften und verzögerten e-Mail-Nachrichten, die an oder von Konten mit hohem geschäftlichen Einfluss gesendet wurden.
-ms.openlocfilehash: 053246da7f57c46045bfc777bc4de981ce51c6e5
-ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
+ms.openlocfilehash: ce78316290f18f06337adc0e78a1b8992be7b425
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46794195"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644591"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>Verwalten und Überwachen von Prioritäts Konten
 
@@ -69,7 +69,7 @@ Sie können den e-Mail-Status Ihrer Prioritäts Konten im Microsoft 365 Admin Ce
 
 ## <a name="email-issues-for-priority-accounts"></a>E-Mail-Probleme für Prioritäts Konten
 
-Sie können e-Mail-Probleme für Prioritäts Konten nachverfolgen, indem Sie im Exchange Admin Center zum Bericht " **e-Mail-Probleme für Priorität** " wechseln. Weitere Informationen finden Sie unter [e-Mail-Probleme für Prioritäts Konten](https://review.docs.microsoft.com/en-us/Exchange/mail-flow-best-practices/mail-flow-insights/mfi-email-issues-for-priority-accounts?branch=Priority-chrisda).
+Sie können e-Mail-Probleme für Prioritäts Konten nachverfolgen, indem Sie im Exchange Admin Center zum Bericht " **e-Mail-Probleme für Priorität** " wechseln. Weitere Informationen finden Sie unter [e-Mail-Probleme für Prioritäts Konten](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report).
 
 ## <a name="remove-a-user-from-the-priority-accounts-list"></a>Entfernen eines Benutzers aus der Liste "Priority Accounts"
 

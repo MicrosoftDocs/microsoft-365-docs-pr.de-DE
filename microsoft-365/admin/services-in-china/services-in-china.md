@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: sharik
 author: skjerland
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: Erfahren Sie hier mehr über das von 21Vianet betriebene Office 365. Es erfüllt die Anforderungen an sichere, zuverlässige und skalierbare Clouddienste in China.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 133df44635927d185e72c7981953e07162d458a9
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 5906bf961e246f1d707b030ffb4c788da353200c
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45079737"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644651"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365, betrieben von 21Vianet
 

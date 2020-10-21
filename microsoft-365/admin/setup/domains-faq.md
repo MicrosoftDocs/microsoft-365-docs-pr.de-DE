@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Erfahren Sie mehr über Domänen, indem Sie Antworten auf Ihre häufig gestellten Fragen finden.
-ms.openlocfilehash: fe602c45059be1b273b7ebe3a11cd91adf89a479
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: b51b5fe56bbae56dd473dd831ec91e629d9233f3
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845844"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644584"
 ---
 # <a name="domains-faq"></a>FAQ zu Domänen
 
@@ -200,7 +200,7 @@ Wenn Sie Microsoft 365 mehrere Domänen hinzufügen, können Sie alle Dienste (w
 
 Informationen zum Verfahren zum Übertragen einer Domäne finden Sie unter [übertragen einer Domäne von Microsoft auf einen anderen Host](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host).
 
-## <a name="pilot-microsoft-365-from-my-custom-domain"></a>Microsoft 365-Pilot aus benutzerdefinierter Domäne
+## <a name="pilot-microsoft-365-from-my-custom-domain"></a>Testen von Microsoft 365 aus Ihrer benutzerdefinierten Domäne
 
 Das Verfahren zum pilotieren von Microsoft 365-e-Mail-Funktionen von einer benutzerdefinierten Domäne zu einem Microsoft 365-Postfach finden Sie unter [Pilot Microsoft 365 aus meiner benutzerdefinierten Domäne](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain).
 

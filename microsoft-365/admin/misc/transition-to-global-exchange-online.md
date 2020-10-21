@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.custom: AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
 description: Informationen zum Übergang von Microsoft Cloud Germany Exchange Online auf den globalen Exchange Online Dienst
-ms.openlocfilehash: 41628b3032f5b268d5e32501b393fef31663dfc3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 8de64e30205b07a0c20a8ae4f7cdedbf6cc6824f
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399230"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644855"
 ---
 # <a name="update-your-mx-records-to-transition-to-the-global-exchange-online-service"></a>Aktualisieren der MX-Einträge für den Übergang zum globalen Exchange Online Dienst
 

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Erfahren Sie mehr über den CNAME-Eintrag "MSOID" in Office 365, der Sie zum besten Server für Authentifizierungsprozesse leitet, sodass Sie eine schnellere Antwort erhalten.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 91643e4d9cf136d0f64aac89a877ee98e373727f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: ac9ad3ad9f860722760d59c54570a453146a3a93
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399026"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644639"
 ---
 # <a name="whats-the-purpose-of-the-office-365-cname-record-for-msoid"></a>Was ist der Zweck des CNAME-Eintrags für MSOID in Office 365?
 

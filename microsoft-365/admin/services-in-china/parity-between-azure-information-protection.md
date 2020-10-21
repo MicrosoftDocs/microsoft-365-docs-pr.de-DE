@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: sharik
 author: skjerland
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: Erfahren Sie mehr über Azure Information Protection für Office 365 betrieben von 21Vianet und wie diese für Kunden in China konfiguriert werden.
 monikerRange: o365-21vianet
-ms.openlocfilehash: ca30811e77f686b92b8cdd13d624182eb0d3039e
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: ad3420483701c83ffef65994996047de56a7085c
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445579"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644663"
 ---
 # <a name="parity-between-azure-information-protection-for-office-365-operated-by-21vianet-and-commercial-offerings"></a>Parität zwischen Azure Information Protection für Office 365 betrieben von 21Vianet und kommerziellen angeboten
 
@@ -55,12 +55,12 @@ Damit die Verschlüsselung ordnungsgemäß funktioniert, muss der RMS-Dienst fü
 
 - Überprüfen, ob der RMS aktiviert ist:
   1. Starten Sie PowerShell als Administrator.
-  2. Wenn das AIPService-Modul nicht installiert ist, führen Sie aus  `Install-Module AipService` .
+  2. Wenn das AIPService-Modul nicht installiert ist, führen Sie aus `Install-Module AipService` .
   3. Importieren Sie das Modul mithilfe von `Import-Module AipService` .
-  4. Stellen Sie eine Verbindung mit dem Dienst mithilfe von her  `Connect-AipService -environmentname azurechinacloud` .
-  5. Führen  `(Get-AipServiceConfiguration).FunctionalState`   Sie aus, und überprüfen Sie, ob der Status lautet  `Enabled` .
+  4. Stellen Sie eine Verbindung mit dem Dienst mithilfe von her `Connect-AipService -environmentname azurechinacloud` .
+  5. Führen `(Get-AipServiceConfiguration).FunctionalState` Sie aus, und überprüfen Sie, ob der Status lautet `Enabled` .
 
-- Wenn der Funktionszustand lautet  `Disabled` , führen Sie aus  `Enable-AipService` .
+- Wenn der Funktionszustand lautet `Disabled` , führen Sie aus `Enable-AipService` .
 
 ### <a name="dns-configuration-for-encryption-windows"></a>DNS-Konfiguration für die Verschlüsselung (Windows)
 
@@ -70,27 +70,27 @@ Darüber hinaus wird davon ausgegangen, dass sich Benutzer mit einem Benutzernam
 
 - Abrufen der RMS-ID:
   1. Starten Sie PowerShell als Administrator.
-  2. Wenn das AIPService-Modul nicht installiert ist, führen Sie aus  `Install-Module AipService` .
-  3. Stellen Sie eine Verbindung mit dem Dienst mithilfe von her  `Connect-AipService -environmentname azurechinacloud` .
-  4. Ausführen  `(Get-AipServiceConfiguration).RightsManagementServiceId`   , um die RMS-ID abzurufen.
+  2. Wenn das AIPService-Modul nicht installiert ist, führen Sie aus `Install-Module AipService` .
+  3. Stellen Sie eine Verbindung mit dem Dienst mithilfe von her `Connect-AipService -environmentname azurechinacloud` .
+  4. Ausführen `(Get-AipServiceConfiguration).RightsManagementServiceId` , um die RMS-ID abzurufen.
 
 - Melden Sie sich bei Ihrem DNS-Anbieter an, navigieren Sie zu den DNS-Einstellungen für die Domäne, und fügen Sie dann einen neuen SRV-Eintrag hinzu.
-  - Dienst = `_rmsredir`
-  - Protocol = `_http`
-  - Name = `_tcp`
-  - Target =  `[GUID].rms.aadrm.cn`   (wobei GUID die RMS-ID ist)
+  - Dienst = `_rmsredir`
+  - Protocol = `_http`
+  - Name = `_tcp`
+  - Target = `[GUID].rms.aadrm.cn` (wobei GUID die RMS-ID ist)
   - Priorität, Gewichtung, Sekunden, TTL = Standardwerte
 
-- Ordnen Sie die benutzerdefinierte Domäne dem Mandanten im [Azure-Portal](https://portal.azure.cn/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Domains)zu. Dadurch wird ein Eintrag in DNS hinzugefügt, der nach dem Hinzufügen des Werts zu den DNS-Einstellungen einige Minuten in Anspruch nehmen kann, um überprüft zu werden.
+- Ordnen Sie die benutzerdefinierte Domäne dem Mandanten im [Azure-Portal](https://portal.azure.cn/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Domains)zu. Dadurch wird ein Eintrag in DNS hinzugefügt, der nach dem Hinzufügen des Werts zu den DNS-Einstellungen einige Minuten in Anspruch nehmen kann, um überprüft zu werden.
 
 - Melden Sie sich beim Microsoft 365 Admin Center mit den entsprechenden globalen Administratoranmeldeinformationen an, und fügen Sie die Domäne (zum Beispiel `contoso.cn` ) für die Benutzererstellung hinzu. Im Verifizierungsprozess sind möglicherweise zusätzliche DNS-Änderungen erforderlich. Sobald die Überprüfung erfolgt ist, können Benutzer erstellt werden.
 
 ### <a name="dns-configuration-for-encryption-mac-ios-android"></a>DNS-Konfiguration für die Verschlüsselung (Mac, Ios, Android)
 
 - Melden Sie sich bei Ihrem DNS-Anbieter an, navigieren Sie zu den DNS-Einstellungen für die Domäne, und fügen Sie dann einen neuen SRV-Eintrag hinzu.
-  - Dienst = `_rmsdisco`
-  - Protocol = `_http`
-  - Name = `_tcp`
-  - Target = `api.aadrm.cn`
-  - Port = `80`
+  - Dienst = `_rmsdisco`
+  - Protocol = `_http`
+  - Name = `_tcp`
+  - Target = `api.aadrm.cn`
+  - Port = `80`
   - Priorität, Gewichtung, Sekunden, TTL = Standardwerte

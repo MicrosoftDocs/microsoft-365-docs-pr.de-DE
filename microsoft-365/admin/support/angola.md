@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d3d3ad8fb135006fc07e9195a90996958d4abb6b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 60709209f3d1d2686d5ef0b5e357fd4dca366a3e
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398726"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644339"
 ---
 # <a name="contact-support-for-angola"></a>Wenden Sie sich an den Support für Angola
 
@@ -34,7 +34,7 @@ Englisch: Mo-Fr 9:00 bis 17:00 Uhr
 
 ### <a name="technical-support"></a>Technischer Support:
 
-Portugiesisch: Mo-Fr 9.00-22.00 Uhr
+Portugiesisch: Mon-Fri 9.00-22.00 Uhr
 
 Englisch: rund um die Uhr
 

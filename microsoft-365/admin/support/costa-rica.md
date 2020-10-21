@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 277a28e1875daaf64f8ba4b55d733ee0b43e3f98
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4c64625fbe84210bb8f5aecdff92dfa0ebb9d3d0
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398162"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48643175"
 ---
 # <a name="contact-support-for-costa-rica"></a>Kontakt Support für Costa Rica
 
@@ -30,7 +30,7 @@ ms.locfileid: "44398162"
 ## <a name="hours"></a>Stunden
 ### <a name="billing-support"></a>Abrechnungssupport:
 
-Spanisch: Mo-Fr 9.00-17.00 Uhr
+Spanisch: Mon-Fri 9.00-17.00 Uhr
 
 ### <a name="technical-support"></a>Technischer Support:
 

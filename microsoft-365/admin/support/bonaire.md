@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 118948c6a6fcb61ee06f91534fc414c26cc17e99
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c9c4ece013eb6d59fad013f04f15e0f8684144da
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398474"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48643847"
 ---
 # <a name="contact-support-for-bonaire"></a>Kontaktieren des Supports für Bonaire
 
@@ -30,9 +30,9 @@ ms.locfileid: "44398474"
 ## <a name="hours"></a>Stunden
 ### <a name="billing-support"></a>Abrechnungssupport:
 
-Niederländisch: Mo-Fr 4 – 12 Uhr
+Niederländisch: Mon-Fri von 4 Uhr bis 12.00 Uhr
 
-Englisch: Mo-Fr 4 – 12 Uhr
+Englisch: Mon-Fri 4 Uhr-12.00 Uhr
 
 ### <a name="technical-support"></a>Technischer Support:
 
