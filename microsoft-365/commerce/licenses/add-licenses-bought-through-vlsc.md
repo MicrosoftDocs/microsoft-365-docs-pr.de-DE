@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 82ba88fa-ebdf-4d44-a7b3-cea82b25d71a
 ROBOTS: NOINDEX
 description: Informationen zum Hinzufügen von Lizenzen zu Ihrem Microsoft 365-Abonnement, das über den drittanbieterpartner erworben wurde und von Microsoft erkannt wurde.
-ms.openlocfilehash: a1761f01383e2321ca86c91bf0b998b697c566e3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7670a7eb8fffbb3aef8cc3e20f2170c1b2674bd4
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402130"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638243"
 ---
 # <a name="add-licenses-to-a-subscription-purchased-through-the-volume-licensing-service-center"></a>Hinzufügen von Lizenzen zu einem Abonnement, das über das Volume Licensing Service Center erworben wurde
 

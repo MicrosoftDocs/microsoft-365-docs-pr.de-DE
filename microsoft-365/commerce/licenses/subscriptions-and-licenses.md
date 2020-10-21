@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 description: Erfahren Sie mehr über Abonnements und Lizenzen in Microsoft 365 for Business.
 ms.date: 07/01/2020
-ms.openlocfilehash: 9f8576b00b942c4b38d6192770bd2128afb4b104
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 51d07e777fd5a9e44c864ea11bb00ddc8c1c70d1
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45015959"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638195"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Grundlegendes zu Abonnements und Lizenzen in Microsoft 365 for Business
 
-Wenn Sie ein Abonnement für Microsoft 365 for Business erwerben, registrieren Sie sich für eine Reihe von apps und Diensten, die Sie entweder monatlich oder jährlich bezahlen. Die Anwendungen und Dienste, die Sie im Rahmen Ihres Abonnements erhalten, hängen davon ab, welches Produkt Sie erworben haben, beispielsweise Microsoft 365 apps for Business oder Microsoft 365 Business Standard. Sie können sehen, was mit jedem Produkt auf der Seite [Microsoft 365 für kleine und mittelständische Unternehmen](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1) geliefert wird.
+Wenn Sie ein Abonnement für Microsoft 365 for Business erwerben, registrieren Sie sich für eine Reihe von apps und Diensten, die Sie entweder monatlich oder jährlich bezahlen. Die Anwendungen und Dienste, die Sie im Rahmen Ihres Abonnements erhalten, hängen davon ab, welches Produkt Sie erworben haben, beispielsweise Microsoft 365 apps for Business oder Microsoft 365 Business Standard. Sie können sehen, was mit jedem Produkt auf der Seite [Microsoft 365 für kleine und mittelständische Unternehmen](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1) geliefert wird.
 
 Wenn Sie ein Abonnement kaufen, geben Sie die Anzahl der Lizenzen an, die Sie benötigen, und zwar basierend auf der Anzahl der in Ihrer Organisation beschäftigten Mitarbeiter. Nachdem Sie ein Abonnement erworben haben, erstellen Sie Konten für Personen in Ihrer Organisation und weisen dann jeder Person eine Lizenz zu. Wenn sich die Anforderungen Ihrer Organisation ändern, können Sie zusätzliche Lizenzen für neue Benutzer erwerben, oder bestehende Lizenzen anderen Benutzern zuweisen, wenn jemand Ihre Organisation verlässt.
 
@@ -79,12 +79,12 @@ Verschiedene Typen von Administratoren können je nach den ihnen zugewiesenen Ro
 |Rechnungsadministrator  <br/> |Nein  <br/> |Nein  <br/> |Ja  <br/> |Nein  <br/> |
 |Globaler Administrator  <br/> |Ja  <br/> |Ja  <br/> |Ja  <br/> |Ja  <br/> |
 |Lizenzadministrator <br/> |Ja <br/>|Ja <br/> |Nein <br/> |Nein <br/> |
-|Dienst Support-Administrator  <br/> |Nein  <br/> |Nein  <br/> |Nein  <br/> |Nein  <br/> |
+|Dienstsupportadministrator  <br/> |Nein  <br/> |Nein  <br/> |Nein  <br/> |Nein  <br/> |
 |Benutzeradministrator  <br/> |Ja  <br/> |Ja  <br/> |Nein  <br/> |Ja  <br/> |
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
 [Erwerben oder Entfernen von Lizenzen für Ihr Geschäfts Abonnement](buy-licenses.md) (Artikel) \
 [Zuweisen von Lizenzen zu Benutzern](../../admin/manage/assign-licenses-to-users.md) (Artikel) \
-Aufheben [der Zuweisung von Lizenzen von Benutzern](../../admin/manage/remove-licenses-from-users.md) (Artikel) \
+[Aufheben der Zuweisung von Benutzerlizenzen](../../admin/manage/remove-licenses-from-users.md) (Artikel)\
 [Entfernen einer Lizenz aus einem freigegebenen Postfach](../../admin/email/remove-license-from-shared-mailbox.md) (Artikel)

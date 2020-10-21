@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -24,12 +24,12 @@ description: Erfahren Sie, wie Sie ein Add-on erwerben, um Ihrem Microsoft 365 f
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: e22c4193fffa1d97334f61e789265e75d55d53a3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: e73a3430dbcded25a15fad19815106a72798d8e8
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402190"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638387"
 ---
 # <a name="buy-or-edit-an-add-on"></a>Erwerben oder Bearbeiten eines Add-Ons
 
@@ -241,9 +241,9 @@ Informationen zu Skype for Business-Add-Ons finden Sie unter [Skype for Business
 |Office 365 Extra File Storage  <br/> | Microsoft 365 Apps for Business  <br/>  Microsoft 365 Business Basic  <br/>  Microsoft 365 Business Standard  <br/>  Office 365 Enterprise E1  <br/>  Office 365 Enterprise E2  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/>  Office 365 Enterprise E5  <br/>  Office für das Internet mit SharePoint-Plan 1  <br/>  Office für das Internet mit SharePoint-Plan 2  <br/>  SharePoint Online Plan 1  <br/>  SharePoint Online Plan 2  <br/> |
 |Telefonsystem  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/>  Office 365 Enterprise E5  <br/> |
 |Audiokonferenzen  <br/> |  Microsoft 365 Business Basic <br/> Microsoft 365 Business Standard <br/> Office 365 Enterprise E1 <br/> Office 365 Enterprise E3 <br/> Office 365 Enterprise E4 <br/> Office 365 Enterprise E5 ohne Audiokonferenz <br/> Microsoft 365 Business Premium <br/> Microsoft 365 E3 <br/> Microsoft 365 E5  <br/> |
-|Kommunikationsguthaben  <br/> | Office 365 Enterprise E5  <br/> |
-|Plan für Inlandsanrufe <br/> | Office 365 Enterprise E5  <br/> |
-|Plan für internationale Anrufe  <br/> | Office 365 Enterprise E5  <br/> |
+|Kommunikationsguthaben  <br/> | Office 365 Enterprise E5  <br/> |
+|Plan für Inlandsanrufe <br/> | Office 365 Enterprise E5  <br/> |
+|Plan für internationale Anrufe  <br/> | Office 365 Enterprise E5  <br/> |
   
 ## <a name="related-articles"></a>Verwandte Artikel
 

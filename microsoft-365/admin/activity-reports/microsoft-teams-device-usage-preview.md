@@ -1,5 +1,5 @@
 ---
-title: Microsoft Teams-Gerätenutzung
+title: Microsoft 365-Berichte im Admin Center-Microsoft Teams-Geräteverwendung
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erhalten Sie Einblicke in die Microsoft Teams-apps, die in Ihrer Organisation verwendet werden, indem Sie den Microsoft Teams-App-Nutzungsbericht aus Microsoft 365-Berichten erhalten.
-ms.openlocfilehash: 98b8d6241b94445c9cb47d2c464d47c5609efdfe
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: deda550b3ffc4209f718d36a3010605edbc1102b
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949078"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48636973"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Microsoft 365-Berichte im Admin Center-Microsoft Teams-Geräteverwendung
 
@@ -51,14 +51,15 @@ Sie können die Berichtsdaten auch im CSV-Format in eine Excel-Datei exportieren
 |Element|Beschreibung|
 |:-----|:-----|
 |**Metrik**|**Definition**|
-|Benutzername  <br/> |Der Anzeigename des Benutzers. Sie können auf den Anzeigenamen klicken, um zur Seite Einstellungen des Benutzers im Microsoft Teams Admin Center zu wechseln.  <br/> |
+|Benutzername  <br/> |Der Anzeigename des Benutzers.  <br/> |
 |Windows  <br/> |Ausgewählt, wenn der Benutzer im Microsoft Teams-Desktop Client auf einem Windows-basierten Computer aktiv war.  <br/> |
 |Mac  <br/> |Ausgewählt, wenn der Benutzer auf einem macOS-Computer im Microsoft Teams-Desktop Client aktiv war.  <br/> |
 |iOS  <br/> |Ausgewählt, wenn der Benutzer auf dem mobilen Microsoft Teams-Client für IOS aktiv war.  <br/> |
 |Android-Smartphone  <br/> | Ausgewählt, wenn der Benutzer auf dem mobilen Microsoft Teams-Client für Android aktiv war.  <br/> |
 |Chrome OS  <br/> |Ausgewählt, wenn der Benutzer im Microsoft Teams-Desktop Client auf einem Computer mit Chrome aktiv war.|
 |Linux  <br/> | Ausgewählt, wenn der Benutzer im Microsoft Teams-Desktop Client auf einem Linux-Computer aktiv war.  <br/> |
-|Web  <br/> |Ausgewählt, wenn der Benutzer im Microsoft Teams-WebClient auf Geräten aktiv war.|
+|Netz  <br/> |Ausgewählt, wenn der Benutzer im Microsoft Teams-WebClient auf Geräten aktiv war.|
 |Datum der letzten Aktivität (UTC)  <br/> |Das letzte Datum (UTC), an dem der Benutzer an einer Teams-Aktivität teilgenommen hat.  <br/> |
 |Lizenziert|Ausgewählt, wenn der Benutzer für die Verwendung von Microsoft Teams lizenziert ist.|
+|Gesamtanzahl der Teams-Aktivitäten|Gesamtanzahl der Teams-Aktivitäten über den ausgewählten Zeitraum. |
 |||

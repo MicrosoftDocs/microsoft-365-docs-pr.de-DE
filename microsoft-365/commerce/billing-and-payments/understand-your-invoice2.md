@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -25,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: Hier erfahren Sie, wie Sie Gebühren, Abrechnung und Zahlungsinformationen auf Ihrer Microsoft 365 for Business-Rechnung oder-Rechnung interpretieren und wie Sie die Bestellnummer ändern.
-ms.openlocfilehash: a46f108766ccfec4f7f6abaa2d48d38137311707
-ms.sourcegitcommit: 7f765670cb6970fdf7ddbad464ed3f8fe704bfaf
+ms.openlocfilehash: 3d71bab82be3fd9e4c633885dccaf357ccabb551
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "44909264"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638399"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Grundlegendes zu Ihrer Rechnung oder Rechnung für Microsoft 365 for Business
 
@@ -139,6 +139,6 @@ Wenn Sie per Rechnung bezahlen, können Sie Ihrem Abonnement die Auftragsnummer 
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Bezahlen Ihres Microsoft 365 for Business-Abonnements](pay-for-your-subscription.md)
+[Bezahlen Ihres Microsoft 365 Business-Abonnements](pay-for-your-subscription.md)
 
 [Minecraft Education Edition - Zahlungsoptionen](https://go.microsoft.com/fwlink/p/?linkid=838761)

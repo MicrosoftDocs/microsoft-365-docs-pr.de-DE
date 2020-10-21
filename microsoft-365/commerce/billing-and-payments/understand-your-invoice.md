@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie Ihre Rechnung oder Rechnung für Microsoft Business-Produkte lesen und verstehen.
 keywords: Abrechnungskonten, Organisationsinformationen, Rechnungen
-ms.openlocfilehash: f0575683cdcaf0ac76de80c93e0d7573e8c63bae
-ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
+ms.openlocfilehash: 80b7e4f14390e2f695dc753358f9e5bebe055bd0
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45391518"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638411"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Ihre Rechnung verstehen
 
@@ -42,7 +42,7 @@ Wenn Sie nur ein Microsoft 365-Abonnement haben, finden Sie weitere Informatione
 
 Oben auf der ersten Seite wird angegeben, wer für die Zahlung verantwortlich ist, wo die Rechnung gesendet wird, und eine Zusammenfassung der Gebühren.
 
-| Begriff | Beschreibung |
+| Ausdruck | Beschreibung |
 | --- | --- |
 | Verkauft an |Das Abrechnungskonto, das den Namen und die Adresse der für die Zahlung verantwortlichen juristischen Person identifiziert. Diese Informationen können auf der Seite " <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Abrechnungskonten</a> " verwaltet werden, auf der Sie die Kontovereinbarung finden und die Rollen und Berechtigungen verwalten können. |
 | Rechnung an |Gibt an, wer die Rechnung erhält. Diese Informationen können auf der Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Abrechnungsprofile</a> verwaltet werden. Das Abrechnungsprofil wird auch auf der Seite "Online Rechnung" im Abschnitt " **Rechnungszusammenfassung** " angezeigt. Weitere Informationen zu Abrechnungs Profilen und deren Verwendung zum Erstellen flexiblerer Abrechnungsoptionen für Ihre Organisation finden Sie unter [Manage Billing Profiles](manage-billing-profiles.md). |
@@ -55,7 +55,7 @@ Oben auf der ersten Seite wird angegeben, wer für die Zahlung verantwortlich is
 
 Die **Abrechnungszusammenfassung** zeigt die Zusammenfassung der Gebühren seit dem vorherigen Abrechnungszeitraum, alle angewandten Guthaben, Steuern und den fälligen Gesamtbetrag an.
 
-| Begriff | Beschreibung |
+| Ausdruck | Beschreibung |
 | --- | --- |
 | Gebühren|Die Gesamtzahl der für diesen Abrechnungszeitraum erworbenen Produkte und der zugehörigen Gebühren und steuern. Käufe werden aggregiert, um eine präzise Ansicht Ihrer Rechnung bereitzustellen. |
 | Mitwirkende |Guthaben, die Sie von Rücksendungen erhalten haben |
@@ -67,7 +67,7 @@ Die **Abrechnungszusammenfassung** zeigt die Zusammenfassung der Gebühren seit 
 
 Auf den Gebührenseiten werden die Kosten nach Produkt aufgeschlüsselt angezeigt. Für Azure-Kunden können die Gebühren nach dem Abschnitt "Rechnung" organisiert werden. Weitere Informationen zur Verwendung von Rechnungs Abschnitten für Azure-Produkte finden Sie unter [Invoice Sections](https://docs.microsoft.com/azure/billing/billing-mca-overview#invoice-sections) in [Erste Schritte mit Ihrem Microsoft-Kundenvertrags-Abrechnungskonto](https://docs.microsoft.com/azure/billing/billing-mca-overview). In jedem Produktauftrag werden die Kosten nach Dienst Familie aufgeschlüsselt.
 
-| Begriff |Beschreibung |
+| Ausdruck |Beschreibung |
 | --- | --- |
 | VK-Preis | Der effektive VK-Preis des Diensts (in der Preis Währung), der zum Berechnen des Entgelts verwendet wird. Dieser Preis ist für ein Produkt, eine Dienst Familie, ein Messgerät und ein Angebot eindeutig. |
 | Menge | Während des Abrechnungszeitraums erworbene oder konsumierte Menge |
