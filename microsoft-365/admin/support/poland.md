@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c6c918f552f0eb5300d6d082fecf265140cb2363
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6d5dac2a5796c1c342aead0d4b8433d1eb2d5bc7
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44391381"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48640307"
 ---
 # <a name="contact-support-for-poland"></a>Kontakt Support für Polen
 
@@ -30,13 +30,13 @@ ms.locfileid: "44391381"
 ## <a name="hours"></a>Stunden
 ### <a name="billing-support"></a>Abrechnungssupport:
 
-Polnisch: Mo-Fr 8.00-18.00 Uhr
+Polnisch: Mon-Fri 8.00-18.00 Uhr
 
-Englisch: Mo-Fr 8.00-18.00 Uhr
+Englisch: Mon-Fri 8.00-18.00 Uhr
 
 ### <a name="technical-support"></a>Technischer Support:
 
-Polnisch: Mo-Fr 8.00-18.00 Uhr
+Polnisch: Mon-Fri 8.00-18.00 Uhr
 
 Englisch: rund um die Uhr
 

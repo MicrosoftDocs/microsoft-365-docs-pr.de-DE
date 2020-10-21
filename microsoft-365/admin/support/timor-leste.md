@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1a0db9a54188fefe107c526e1b2ba821b8207527
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3154c0a84e4f9efe947a57a4ac646d916dc6c13a
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401618"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48639203"
 ---
 # <a name="contact-support-for-timor-leste"></a>Kontaktieren des Supports für Timor-Leste
 
@@ -30,9 +30,9 @@ ms.locfileid: "44401618"
 ## <a name="hours"></a>Stunden
 ### <a name="billing-support"></a>Abrechnungssupport:
 
-Portugiesisch: Mo-Fr 9.00-17.00 Uhr
+Portugiesisch: Mon-Fri 9.00-17.00 Uhr
 
-Englisch: Mo-Fr 9-5 Uhr
+Englisch: Mon-Fri 21.00-17:00 Uhr
 
 ### <a name="technical-support"></a>Technischer Support:
 
