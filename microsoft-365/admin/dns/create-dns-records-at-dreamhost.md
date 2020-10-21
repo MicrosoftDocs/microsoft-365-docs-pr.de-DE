@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9c0812e0-908b-4b41-a64b-77f0dbd3db7a
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter DreamHost for Microsoft einrichten.
-ms.openlocfilehash: 4b321138892cb4a7b5f67c37ed66f3baf0f6c45a
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 8ab617fd5d63b292a85289d2d51a0ae0fd3b26be
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400509"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646199"
 ---
 # <a name="create-dns-records-at-dreamhost-for-microsoft"></a>Erstellen von DNS-Einträgen bei DreamHost für Microsoft
 
@@ -64,7 +64,7 @@ Bevor Sie Ihre Domäne mit Microsoft verwenden können, müssen wir uns vergewis
     
     (You may have to scroll down.)
     
-    (Choose the **Type** value from the drop-down list.) 
+    (Wählen Sie in der Dropdownliste den Wert für **Type** aus.) 
     
     |**Name**|**Type**|**Wert**|**Kommentar**|
     |:-----|:-----|:-----|:-----|
@@ -127,7 +127,7 @@ Führen Sie die folgenden Schritte aus.
     
     |**MX-Eintrag (erforderlich)**|
     |:-----|
-    |0 *\<domain-key\>* . Mail.Protection.Outlook.com.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> Die 0 ist der MX-Prioritätswert. Fügen Sie ihn am Anfang des MX-Werts hinzu, vom Rest des Werts durch ein Leerzeichen getrennt.  <br/> **Hinweis:** Holen Sie sich Ihr *\<domain-key\>* Microsoft-Konto.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |
+    |0  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> Die 0 ist der MX-Prioritätswert. Fügen Sie ihn am Anfang des MX-Werts hinzu, vom Rest des Werts durch ein Leerzeichen getrennt.  <br/> **Hinweis:** Holen Sie sich Ihr  *\<domain-key\>*  Microsoft-Konto.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![DreamHost-BP-configure-2-3](../../media/90da1816-e186-4016-ab22-7962f8b86add.png)
   
@@ -163,9 +163,9 @@ Führen Sie die folgenden Schritte aus.
   
 4. Geben Sie im Abschnitt **Add a custom DNS record** in den Feldern für den neuen Eintrag die Werte aus der ersten Zeile der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen. 
     
-    (You may have to scroll down.)
+    (Möglicherweise müssen Sie nach unten scrollen.)
     
-    (Choose the **Type** value from the drop-down list.) 
+    (Wählen Sie in der Dropdownliste den Wert für **Type** aus.) 
     
     |**Name**|**Type**|**Wert**|**Kommentar**|
     |:-----|:-----|:-----|:-----|
@@ -188,7 +188,7 @@ Führen Sie die folgenden Schritte aus.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. Wenn es für Ihre Domäne bereits einen SPF-Eintrag gibt, erstellen Sie für Microsoft keinen neuen, Fügen Sie stattdessen die erforderlichen Microsoft-Werte zum aktuellen Datensatz hinzu, sodass Sie einen *einzelnen* SPF-Eintrag haben, der beide Wertegruppen enthält.
+> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. Wenn es für Ihre Domäne bereits einen SPF-Eintrag gibt, erstellen Sie für Microsoft keinen neuen, Fügen Sie stattdessen die erforderlichen Microsoft-Werte zum aktuellen Datensatz hinzu, sodass Sie einen  *einzelnen*  SPF-Eintrag haben, der beide Wertegruppen enthält.
   
 Führen Sie die folgenden Schritte aus.
   
@@ -206,9 +206,9 @@ Führen Sie die folgenden Schritte aus.
   
 4. Geben Sie im Abschnitt **Add a custom DNS record** in den Feldern für den neuen Eintrag die Werte aus der ersten Zeile der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen. 
     
-    (You may have to scroll down.)
+    (Möglicherweise müssen Sie nach unten scrollen.)
     
-    (Choose the **Type** value from the drop-down list.) 
+    (Wählen Sie in der Dropdownliste den Wert für **Type** aus.) 
     
     |**Name**|**Type**|**Wert**|**Kommentar**|
     |:-----|:-----|:-----|:-----|
@@ -242,9 +242,9 @@ Führen Sie die folgenden Schritte aus.
   
 4. Geben Sie im Abschnitt **Add a custom DNS record** in den Feldern für den neuen Eintrag die Werte aus der ersten Zeile der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen. 
     
-    (You may have to scroll down.)
+    (Möglicherweise müssen Sie nach unten scrollen.)
     
-    (Choose the **Type** value from the drop-down list.) 
+    (Wählen Sie in der Dropdownliste den Wert für **Type** aus.) 
     
     |**Name**|**Type**|**Wert**|**Kommentar**|
     |:-----|:-----|:-----|:-----|

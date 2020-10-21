@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -22,12 +22,12 @@ description: Erfahren Sie, was eine Domäne ist, und wie Sie eine Domäne erwerb
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: 9104c77218c483b61c57a38e37e8e2661db1aa15
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 0c59fb6bc5f9a7796c84a0370c771bf90102dec0
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399860"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645119"
 ---
 # <a name="what-is-a-domain"></a>Was ist eine Domäne?
 
@@ -45,7 +45,7 @@ Verwenden Sie Microsoft 365, um eine neue Domäne zu kaufen – wir richten alle
   
  **Verwenden einer Domäne, die Sie bereits besitzen:**
   
-Wenn Sie bereits eine Domäne wie *you@yourcompany besitzen. <span> com* Sie können es hinzufügen und sofort mit der Verwendung von OneDrive und Microsoft apps beginnen. Sie müssen sich ein paar Minuten Zeit nehmen, um E-Mail und Skype for Business einzurichten. 
+Wenn Sie bereits eine Domäne wie  *you@yourcompany besitzen. <span> com*  Sie können es hinzufügen und sofort mit der Verwendung von OneDrive und Microsoft apps beginnen. Sie müssen sich ein paar Minuten Zeit nehmen, um E-Mail und Skype for Business einzurichten. 
   
 > [!TIP]
 > Sie wissen nicht sicher, wo Ihre Domäne registriert ist? – [Hilfe zum Ermitteln Ihrer Domänenregistrierungsstelle anfordern](find-your-domain-registrar.md)

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter Cloudflare für Microsoft einrichten.
-ms.openlocfilehash: 9b717ddedaf6435f6599f4f75cc0fa7c4e618d59
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 301ed156584d9a9a2b84b88db7d6969ade5b34a2
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400545"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646151"
 ---
 # <a name="create-dns-records-at-cloudflare-for-microsoft"></a>Erstellen von DNS-Einträgen bei Cloudflare für Microsoft
 
@@ -91,7 +91,7 @@ Bevor Sie Ihre Domäne mit Microsoft verwenden können, müssen wir uns vergewis
     |TXT  <br/> |@  <br/> |30 Minuten  <br/> |MS=ms *XXXXXXXX*  <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihre spezifischen **Ziel-oder Punkt-zu-Adresse** -Werte aus der Tabelle.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)    |
   
     
-5. Wählen Sie **Speichern**.
+5. Klicken Sie auf **Speichern**.
   
   
 9. Warten Sie einige Minuten, bevor Sie fortfahren, damit der soeben erstellte Eintrag im Internet aktualisiert werden kann.
@@ -132,11 +132,11 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     |**Typ**|**Name**|**Mail server**|**Priorität**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |@  <br/> |*\<domain-key\>*. Mail.Protection.Outlook.com  <br/> **Hinweis:** Holen Sie sich Ihr *\<domain-key\>* Microsoft 365-Konto.   [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md) |1   <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/>|30 Minuten  <br/> |
+    |MX  <br/> |@  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Hinweis:** Holen Sie sich Ihr  *\<domain-key\>*  Microsoft 365-Konto.   [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md) |1  <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/>|30 Minuten  <br/> |
    
 
   
-5. Wählen Sie **Speichern**.
+5. Klicken Sie auf **Speichern**.
   
 9. Wenn es im Abschnitt **MX Records** andere MX-Einträge gibt, löschen Sie einen davon durch Klicken auf das Symbol **Löschen (X)**. 
   
@@ -171,7 +171,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
   
 5. Wählen Sie das Symbol für den **DNS-Datenverkehr** (Orange Cloud) aus, um die Cloudflare-Server zu umgehen.
   
-6. Wählen Sie **Speichern**.
+6. Klicken Sie auf **Speichern**.
   
 7. Fügen Sie die fünf anderen CNAME-Einträge hinzu.
 
@@ -197,7 +197,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     |TXT  <br/> |@  <br/> |30 Minuten  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Hinweis:** Es wird empfohlen, diesen Eintrag zu kopieren und einzufügen, damit alle Abstände korrekt übernommen werden.   |
 
  
-5. Wählen Sie **Speichern**.
+5. Klicken Sie auf **Speichern**.
     
 
   
@@ -219,11 +219,11 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
         
     |**Type**|**Service**|**Protocol**|**Name**|**TTL**|**Priority**|**Weight**|**Port**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV|_sip |TLS |Verwenden Sie Ihre *domain_name*; Beispiel: contoso.com  |30 Minuten | 100|1  |443 |sipfed.online.lync.com  |
-    |SRV|_sipfederationtls | TCP|Verwenden Sie Ihre *domain_name*; Beispiel: contoso.com   |30 Minuten |100 |1  |5061 | sipfed.online.lync.com |
+    |SRV|_sip |TLS |Verwenden Sie Ihre *domain_name*; Beispiel: contoso.com  |30 Minuten | 100|1 |443 |sipfed.online.lync.com  |
+    |SRV|_sipfederationtls | TCP|Verwenden Sie Ihre *domain_name*; Beispiel: contoso.com   |30 Minuten |100 |1 |5061 | sipfed.online.lync.com |
 
   
-5. Wählen Sie **Speichern**.
+5. Klicken Sie auf **Speichern**.
 
   
 6. Fügen Sie den anderen SRV-Eintrag hinzu, indem Sie die Werte aus der zweiten Zeile der Tabelle auswählen. 
