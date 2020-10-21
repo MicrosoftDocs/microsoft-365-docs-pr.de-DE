@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: e3b29a8182e38fa05e5f791478157c978632fb13
-ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
+ms.openlocfilehash: 29e5eb64445c6c5c45b8e1fd1633c030b5f32b86
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48477005"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649667"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Bewährte Methoden für Erweiterte Suchanfragen
 
@@ -36,10 +36,10 @@ ms.locfileid: "48477005"
 
 Wenden Sie diese Empfehlungen an, um schneller Ergebnisse zu erzielen und Timeouts beim durchführen komplexer Abfragen zu vermeiden. Weitere Informationen zur Verbesserung der Abfrageleistung finden Sie in[Bewährte Methoden für Kusto Anfragen](https://docs.microsoft.com/azure/kusto/query/best-practices).
 
-## <a name="understand-cpu-resource-limits"></a>Grundlegendes zu CPU-Ressourcen Grenzwerten
-Je nach Größe hat jeder Mandant Zugriff auf eine festgelegte Menge an CPU-Ressourcen, die für die Ausführung von erweiterten Jagd Abfragen reserviert sind. Ausführliche Informationen zu verschiedenen Service-Grenzwerten finden [Sie unter Advanced Hunting Limits](advanced-hunting-limits.md).
+## <a name="understand-cpu-resource-quotas"></a>Grundlegendes zu CPU-Ressourcen Kontingenten
+Je nach Größe hat jeder Mandant Zugriff auf eine festgelegte Menge an CPU-Ressourcen, die für die Ausführung von erweiterten Jagd Abfragen reserviert sind. Ausführliche Informationen zu verschiedenen Dienst Beschränkungen finden [Sie unter Erweiterte Jagd Kontingente und Nutzungsparameter](advanced-hunting-limits.md).
 
-Kunden, die mehrere Abfragen regelmäßig ausführen, sollten den Verbrauch nachverfolgen und den Optimierungs Leit Faden in diesem Artikel anwenden, um die durch Überschreitung der Grenzwerte verursachten Unterbrechungen zu verringern.
+Kunden, die mehrere Abfragen regelmäßig ausführen, sollten den Verbrauch nachverfolgen und die Optimierungs Anleitungen in diesem Artikel anwenden, um die Unterbrechung zu minimieren, die durch Überschreitung der Kontingente oder Nutzungsparameter verursacht wird.
 
 ## <a name="general-optimization-tips"></a>Allgemeine Optimierungstipps
 
@@ -265,7 +265,7 @@ Informationen zu allen unterstützten Analysefunktionen finden [Sie unter Kusto 
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Dokumentation zur Kusto-Abfragesprache](https://docs.microsoft.com/azure/data-explorer/kusto/query/)
-- [Dienstbeschränkungen](advanced-hunting-limits.md)
+- [Kontingente und Nutzungsparameter](advanced-hunting-limits.md)
 - [Behandeln von erweiterten Jagd Fehlern](advanced-hunting-errors.md)
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
 - [Lernen der Abfragesprache](advanced-hunting-query-language.md)

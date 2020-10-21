@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4d18015d644e5c8733fbc0146d23a360811cf4f4
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 06b00db58f3ec4f5ecb2676ba34a292674ed4459
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44397670"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48642227"
 ---
 # <a name="contact-support-for-haiti"></a>Kontaktieren des Supports für Haiti
 
@@ -30,13 +30,13 @@ ms.locfileid: "44397670"
 ## <a name="hours"></a>Stunden
 ### <a name="billing-support"></a>Abrechnungssupport:
 
-Französisch: Mo-Fr 3 – 11 Uhr
+Französisch: Mon-Fri 3 – 11 Uhr
 
-Englisch: Mo-Fr 3 – 11 Uhr
+Deutsch: Mon-Fri 3 – 11 Uhr
 
 ### <a name="technical-support"></a>Technischer Support:
 
-Französisch: Mo-Fr 2 – 15 Uhr
+Französisch: Mon-Fri 2 bis 3 Uhr
 
 Englisch: rund um die Uhr
 

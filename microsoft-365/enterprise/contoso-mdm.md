@@ -15,59 +15,59 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie, wie Contoso Microsoft InTune in Microsoft 365 für Unternehmen verwendet, um die Geräte und die darauf ausgeführten apps zu verwalten.
-ms.openlocfilehash: 40d9473bcadfa636f6fd2b2c6c861c27dae8497c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: d3f973827a9b05a415efe9225a2bdb3d83ccaf38
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685842"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649645"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Verwaltung mobiler Geräte bei Contoso
 
-Microsoft 365 für Unternehmen umfasst InTune und eine Gruppe von Azure-Diensten zur Unterstützung der Verwaltung und Sicherheit von mobilen Geräten und Anwendungen.
+Microsoft 365 für Unternehmen umfasst InTune und eine Gruppe von Azure-Diensten, die die Verwaltung mobiler Geräte und Anwendungen sowie die Sicherheit unterstützen.
 
-Bei Contoso arbeiten viele Mitarbeiter mit Mobilunterstützung, von denen einige Büros an Contoso-Standorten haben und einige nicht in Büros arbeiten. Das Unternehmen benötigte eine Möglichkeit, die Mitarbeiterproduktivität zu steigern und dabei gleichzeitig die auf diesen Geräten gespeicherten Contoso-Daten sowie das Anwendungsverhalten zu schützen.
+Contoso verfügt über viele Mobil aktivierte Mitarbeiter. Einige haben Niederlassungen an Contoso-Standorten und einige haben keine Büros. Contoso benötigte eine Möglichkeit, die Mitarbeiterproduktivität zu ermöglichen, aber die Geräte, die auf diesen Geräten gespeicherten Contoso-Daten und das Anwendungsverhalten sicher zu halten.
 
-## <a name="plan"></a>Planen
+## <a name="plan"></a>Plan
 
-Anfang der Analyse der Verwaltung mobiler Geräte für Microsoft 365 für Unternehmen identifizierte Contoso die folgenden InTune-Anwendungsfälle:
+Contoso hat die folgenden InTune-Anwendungsfälle für die Verwaltung mobiler Geräte für Microsoft 365 für Unternehmen identifiziert:
 
-- Schützen von Exchange Online-E-Mails und -Daten, damit von mobilen Geräten sicher auf diese zugegriffen werden kann
-- Implementieren eines BYOD-Programms (Bring Your Own Device) für Contoso-Mitarbeiter
-- Verteilen von Telefonen im Besitz der Organisation und gemeinsam genutzten Tablets mit beschränkter Nutzung an Contoso-Mitarbeiter
+- Schützen Sie Exchange Online e-Mails und Daten, damit Sie auf mobilen Geräten sicher zugänglich sind.
+- Implementieren Sie ein BYOD-Programm ("Holen Sie Ihr eigenes Gerät") für Contoso-Mitarbeiter.
+- Stellen Sie die unternehmenseigenen Telefone und die Limited-use Shared Tablets für Contoso-Mitarbeiter aus.
 
-Contoso verwendet Intune nicht für Folgendes:
+Contoso verwendet InTune nicht für Folgendes:
 
-- Mitarbeitern den sicheren Zugriff auf Microsoft 365 über einen nicht verwalteten öffentlichen Kiosk ermöglichen
-- Schützen von lokalen E-Mails und Daten, damit von mobilen Geräten sicher darauf zugegriffen werden kann, da es keine lokalen Microsoft Exchange-Server mehr gibt
+- Ermöglichen Sie Mitarbeitern den sicheren Zugriff auf Microsoft 365 von einem nicht verwalteten öffentlichen Kiosk aus.
+- Schützen Sie lokale e-Mails und Daten, damit Sie auf mobilen Geräten sicher zugegriffen werden kann, da keine lokalen Microsoft Exchange Server vorhanden sind.
 
 ## <a name="deploy"></a>Bereitstellen
 
 Contoso hat seine Infrastruktur für die Verwaltung mobiler Geräte folgendermaßen eingerichtet:
 
-- Intune wurde als MDM-Autorität (Mobile Geräteverwaltung) eingerichtet, und Intune wird auf Azure verwendet, um Inhalte und Geräte zu verwalten.
-- Es wurden Azure AD-Gruppen für Geräte zur Registrierung und Intune-Einstellungen sowie gerätebasierte Richtlinien für bedingten Zugriff erstellt.
+- Festlegen von InTune als MDM-Autorität (Mobile Device Management) und Verwenden von InTune in Azure zum Verwalten von Inhalten und Verwalten der Geräte
+- Erstellt Azure Active Directory (Azure AD) Gruppen für Geräte für die Registrierung und InTune-Einstellungen und gerätebasierte Richtlinien für bedingten Zugriff
 
-  Weitere Informationen finden Sie unter [Richtlinien für den bedingten Zugriff von Contoso](contoso-identity.md#conditional-access-policies-for-identity-and-device-access).
+  Weitere Informationen finden Sie unter [bedingte Zugriffsrichtlinien für Contoso](contoso-identity.md#conditional-access-policies-for-identity-and-device-access).
 
-- Die Apple-Geräteplattform wurde aktiviert, um Mitarbeiter mit iPads, iMacs, iPhones und iPhone-basierten Telefonen im Besitz des Unternehmens zu unterstützen.
+- Die Apple-Geräteplattform wurde aktiviert, um Mitarbeiter mit iPads, iMacs und iPhones sowie unternehmenseigenen iPhones zu unterstützen.
 - Es wurden Contoso-spezifische Nutzungsbedingungen erstellt, die während der Installation des Unternehmensportals für Contoso auf mobilen Geräten angezeigt werden.
-- Für Geräte, die nicht registriert sind, eine Reihe von MAM-Richtlinien (Mobile Application Management), die die Authentifizierung für den Zugriff auf Microsoft 365-Dienste erfordern
+- Für Geräte, die nicht registriert sind, wurde eine Reihe von MAM-Richtlinien (Mobile Application Management) implementiert, um die Authentifizierung für den Zugriff auf Microsoft 365-Dienste zu erfordern.
 - Es wurden Intune-Richtlinien erstellt, die Folgendes erzwingen:
-  - Zulässige Apps
-  - Geräteverschlüsselung, um nicht autorisierten Zugriff zu verhindern
-  - Eine sechsstellige PIN oder ein Kennwort
-  - Ein Zeitlimit für Inaktivität
-  - Schutz vor Viren und Schadsoftware und Signaturupdates mit Windows Defender auf Windows 10-Geräten
-  - Automatische Updates für Windows 10-Geräte, die die neuesten Sicherheitsupdates enthalten
-  - Verschieben von Zertifikaten auf verwaltete Geräte
+  - Zugelassene apps.
+  - Geräteverschlüsselung zur Verhinderung von nicht autorisiertem Zugriff.
+  - Eine sechsstellige PIN oder ein Kennwort.
+  - Ein Timeoutzeitraum für Inaktivität.
+  - Antiviren-und Malware Schutz sowie Signaturupdates mit Windows Defender auf Windows 10-Geräten.
+  - Automatische Updates auf Windows 10-Geräten, die die neuesten Sicherheitsupdates enthalten.
+  - Pushing Certificates to Managed Devices.
   - Eine klare Trennung der geschäftlichen und persönlichen Daten. Benutzer oder Administratoren können Unternehmensdaten selektiv vom Gerät löschen, aber persönliche Daten wie Bilder, persönliche E-Mail-Konten und persönliche Dateien unberührt lassen.
 
-Nach der Bereitstellung hat Contoso PCs sowie Smartphones und Tablets im Besitz des Unternehmens registriert, indem diese zu den entsprechenden Intune-Gerätegruppe hinzugefügt wurden, und es wurde ein BYOD-Programm eingeführt, im Rahmen dessen Mitarbeiter ihre persönlichen Geräte registrieren können. Registrierte Geräte erhielten Intune-Richtlinien, die zu verwalteten und geschützten Geräten und Anwendungen führten. Geräte, die nicht registriert wurden, weisen MAM-Richtlinien auf, in denen zulässige Anwendungen angegeben werden.
+Contoso hat bereitgestellte PCs und unternehmenseigene Smartphones und Tablets registriert, indem Sie Sie den entsprechenden InTune-Gerätegruppen hinzugefügt haben. Sie haben außerdem ein BYOD-Programm für Mitarbeiter eingerichtet, die Ihre persönlichen Geräte registrieren. Für registriertes Gerät werden InTune-Richtlinien empfangen, die verwaltete und gesicherte Geräte und deren Anwendungen zur Folge haben. Für Geräte, die nicht registriert sind, gibt es Richtlinien für Mobile Anwendungsverwaltung (MAM), die zugelassene Anwendungen angeben.
 
-Hier ist Contosos Bereitstellungsarchitektur für die Verwaltung mobiler Geräte.
+Hier ist die Bereitstellungsarchitektur für die Mobile Geräteverwaltung von contoso.
 
-![Contosos Bereitstellungsarchitektur für die Verwaltung mobiler Geräte](../media/contoso-mdm/contoso-mdm-fig1.png)
+![Bereitstellungsinfrastruktur für die Mobile Geräteverwaltung von Contoso](../media/contoso-mdm/contoso-mdm-fig1.png)
 
 ## <a name="next-step"></a>Nächster Schritt
 
