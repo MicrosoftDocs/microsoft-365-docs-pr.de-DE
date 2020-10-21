@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,27 +13,27 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0be0bfa06f16c51972903e0406f7bfe5b7b8ee70
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 871c70d0afed42069c07e08264beee586dfd4e27
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398750"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644363"
 ---
-# <a name="contact-support-for-american-samoa"></a><span data-ttu-id="9b9d0-103">Kontakt Support für Amerikanisch-Samoa</span><span class="sxs-lookup"><span data-stu-id="9b9d0-103">Contact support for American Samoa</span></span>
+# <a name="contact-support-for-american-samoa"></a><span data-ttu-id="9a4de-103">Kontakt Support für Amerikanisch-Samoa</span><span class="sxs-lookup"><span data-stu-id="9a4de-103">Contact support for American Samoa</span></span>
 
-<span data-ttu-id="9b9d0-104">[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="9b9d0-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="9a4de-104">[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="9a4de-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="9b9d0-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="9b9d0-105">Phone number</span></span>
-<span data-ttu-id="9b9d0-106">800-865-9408</span><span class="sxs-lookup"><span data-stu-id="9b9d0-106">800-865-9408</span></span>
+## <a name="phone-number"></a><span data-ttu-id="9a4de-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="9a4de-105">Phone number</span></span>
+<span data-ttu-id="9a4de-106">800-865-9408</span><span class="sxs-lookup"><span data-stu-id="9a4de-106">800-865-9408</span></span>
 
-## <a name="hours"></a><span data-ttu-id="9b9d0-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="9b9d0-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="9b9d0-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="9b9d0-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="9a4de-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="9a4de-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="9a4de-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="9a4de-108">Billing Support:</span></span>
 
-<span data-ttu-id="9b9d0-109">Englisch: Mo-Fr 6-14 Uhr</span><span class="sxs-lookup"><span data-stu-id="9b9d0-109">English: Mon-Fri 6 AM-2 PM</span></span>
+<span data-ttu-id="9a4de-109">Deutsch: Mon-Fri 6 – 14 Uhr</span><span class="sxs-lookup"><span data-stu-id="9a4de-109">English: Mon-Fri 6 AM-2 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="9b9d0-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="9b9d0-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="9a4de-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="9a4de-110">Technical Support:</span></span>
 
-<span data-ttu-id="9b9d0-111">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="9b9d0-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="9a4de-111">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="9a4de-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="9b9d0-112">Es gelten die Ortstarife.</span><span class="sxs-lookup"><span data-stu-id="9b9d0-112">Local call charges apply</span></span>
+<span data-ttu-id="9a4de-112">Es gelten die Ortstarife.</span><span class="sxs-lookup"><span data-stu-id="9a4de-112">Local call charges apply</span></span>

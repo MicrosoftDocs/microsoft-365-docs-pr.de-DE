@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -26,20 +26,20 @@ search.appverid:
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: Erfahren Sie, wie Sie Ihre Abonnements für Microsoft Business Premium, Microsoft 365 Business Standard, Microsoft 365 Business Basic, Microsoft 365 Apps für Unternehmen oder Office 365 Education einrichten.
-ms.openlocfilehash: 6aef028745aa9b2e2e20529dbea1193ea7cbf3aa
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: f832272aff5ba9c657eb8a6f58f3d9c330d7700c
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44778913"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644447"
 ---
-# <a name="set-up-microsoft-365-for-business"></a><span data-ttu-id="58166-103">Einrichten von Microsoft 365 für Unternehmen</span><span class="sxs-lookup"><span data-stu-id="58166-103">Set up Microsoft 365 for business</span></span>
+# <a name="set-up-microsoft-365-for-business"></a><span data-ttu-id="ea6ff-103">Einrichten von Microsoft 365 für Unternehmen</span><span class="sxs-lookup"><span data-stu-id="ea6ff-103">Set up Microsoft 365 for business</span></span>
 
-<span data-ttu-id="58166-104">Folgen Sie den Links, um Ihr Unternehmen oder Ihre [gemeinnützige Einrichtung](https://go.microsoft.com/fwlink/p/?LinkId=627221) mit [Microsoft 365 Business Standard](https://go.microsoft.com/fwlink/p/?LinkId=627220), Microsoft 365 Business Basic, Microsoft 365 Apps für Unternehmen oder Office 365 Education zum Laufen zu bringen.</span><span class="sxs-lookup"><span data-stu-id="58166-104">See the following links to get your business or [nonprofit](https://go.microsoft.com/fwlink/p/?LinkId=627221) up and running with [Microsoft 365 Business Standard](https://go.microsoft.com/fwlink/p/?LinkId=627220), Microsoft 365 Business Basic, Microsoft 365 Apps for business, or Office 365 Education.</span></span>
+<span data-ttu-id="ea6ff-104">Folgen Sie den Links, um Ihr Unternehmen oder Ihre [gemeinnützige Einrichtung](https://go.microsoft.com/fwlink/p/?LinkId=627221) mit [Microsoft 365 Business Standard](https://go.microsoft.com/fwlink/p/?LinkId=627220), Microsoft 365 Business Basic, Microsoft 365 Apps für Unternehmen oder Office 365 Education zum Laufen zu bringen.</span><span class="sxs-lookup"><span data-stu-id="ea6ff-104">See the following links to get your business or [nonprofit](https://go.microsoft.com/fwlink/p/?LinkId=627221) up and running with [Microsoft 365 Business Standard](https://go.microsoft.com/fwlink/p/?LinkId=627220), Microsoft 365 Business Basic, Microsoft 365 Apps for business, or Office 365 Education.</span></span>
   
-<span data-ttu-id="58166-105">Kein Unternehmen?</span><span class="sxs-lookup"><span data-stu-id="58166-105">Not a business?</span></span> <span data-ttu-id="58166-106">Informationen hierzu finden Sie unter [Einrichten von Microsoft 365 Family oder Microsoft 365 Single](https://support.microsoft.com/office/65415a24-3cbf-4f30-901d-9bf9eba7fce2).</span><span class="sxs-lookup"><span data-stu-id="58166-106">See [Set up for Microsoft 365 Family or Microsoft 365 Personal](https://support.microsoft.com/office/65415a24-3cbf-4f30-901d-9bf9eba7fce2).</span></span>
+<span data-ttu-id="ea6ff-105">Kein Unternehmen?</span><span class="sxs-lookup"><span data-stu-id="ea6ff-105">Not a business?</span></span> <span data-ttu-id="ea6ff-106">Informationen hierzu finden Sie unter [Einrichten von Microsoft 365 Family oder Microsoft 365 Single](https://support.microsoft.com/office/65415a24-3cbf-4f30-901d-9bf9eba7fce2).</span><span class="sxs-lookup"><span data-stu-id="ea6ff-106">See [Set up for Microsoft 365 Family or Microsoft 365 Personal](https://support.microsoft.com/office/65415a24-3cbf-4f30-901d-9bf9eba7fce2).</span></span>
   
-- [<span data-ttu-id="58166-107">Einrichten von Microsoft 365 Business Basic</span><span class="sxs-lookup"><span data-stu-id="58166-107">Set up Microsoft 365 Business Basic</span></span>](setup-business-basic.md)
-- [<span data-ttu-id="58166-108">Einrichten von Microsoft Business Standard</span><span class="sxs-lookup"><span data-stu-id="58166-108">Set up Microsoft Business Standard</span></span>](setup-business-standard.md)
-- [<span data-ttu-id="58166-109">Einrichten von Microsoft 365 Business Premium</span><span class="sxs-lookup"><span data-stu-id="58166-109">Set up Microsoft 365 Business Premium</span></span>](../../business/set-up.md)
-- [<span data-ttu-id="58166-110">Einrichten von Microsoft 365 Apps for Business</span><span class="sxs-lookup"><span data-stu-id="58166-110">Set up Microsoft 365 Apps for business</span></span>](setup-apps-for-business.md)
+- [<span data-ttu-id="ea6ff-107">Einrichten von Microsoft 365 Business Basic</span><span class="sxs-lookup"><span data-stu-id="ea6ff-107">Set up Microsoft 365 Business Basic</span></span>](setup-business-basic.md)
+- [<span data-ttu-id="ea6ff-108">Einrichten von Microsoft Business Standard</span><span class="sxs-lookup"><span data-stu-id="ea6ff-108">Set up Microsoft Business Standard</span></span>](setup-business-standard.md)
+- [<span data-ttu-id="ea6ff-109">Einrichten von Microsoft 365 Business Premium</span><span class="sxs-lookup"><span data-stu-id="ea6ff-109">Set up Microsoft 365 Business Premium</span></span>](../../business/set-up.md)
+- [<span data-ttu-id="ea6ff-110">Einrichten von Microsoft 365 Apps for Business</span><span class="sxs-lookup"><span data-stu-id="ea6ff-110">Set up Microsoft 365 Apps for business</span></span>](setup-apps-for-business.md)
