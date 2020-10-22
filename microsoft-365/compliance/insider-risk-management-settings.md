@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: ffa2d54385249a22d672be0c2591c3b4171bd10d
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 5b0353546a9bb923559ebd125393890180257baf
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600380"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651439"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Erste Schritte mit Einstellungen für das Insider Risikomanagement
 
@@ -81,7 +81,7 @@ Um die Überwachung von Risiko Aktivitäten auf Geräten zu ermöglichen und Ric
 
 Stellen Sie sicher, dass die Windows 10-Geräte, die Sie für die Berichterstellung im Insider Risikomanagement planen, diese Anforderungen erfüllen.
 
-1. Es muss Windows 10 x64 Build 1809 oder höher ausgeführt werden.
+1. Windows 10 x64 Build 1809 oder höher muss installiert sein, und das [Windows 10-Update (OS Build 17763,1075)](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818) muss vom 20. Februar 2020 installiert sein.
 2. Alle Geräte müssen in [Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join), oder in Azure AD Hybrid eingebunden sein.
 3. Installieren Sie Microsoft Chromium Edge Browser auf dem Endgerät, um Aktionen für die Cloud-Upload-Aktivität zu überwachen. Weitere Informationen finden Sie unter [Herunterladen des auf Chromium basierenden neuen Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
@@ -364,6 +364,9 @@ Führen Sie die folgenden Schritte aus, um ein physisches Objekt der Priorität 
 [Microsoft Power Automation](https://docs.microsoft.com/power-automate/getting-started) ist ein Workflowdienst, der Aktionen zwischen Anwendungen und Diensten automatisiert. Durch die Verwendung von Flows aus Vorlagen oder manuell erstellt, können Sie allgemeine Aufgaben automatisieren, die mit diesen Anwendungen und Diensten verbunden sind. Wenn Sie Power Automation Flows für Insider Risk Management aktivieren, können Sie wichtige Aufgaben für Fälle und Benutzer automatisieren. Sie können Power-Automatisierungs Flüsse so konfigurieren, dass Benutzer-, Benachrichtigungs-und Fall Informationen abgerufen und diese Informationen für beteiligte und andere Anwendungen freigegeben werden, sowie zum Automatisieren von Aktionen im Insider Risikomanagement, beispielsweise für das Veröffentlichen von fallnotizen. Power Automation Flows gelten für Fälle und für jeden Benutzer im Bereich einer Richtlinie.
 
 Kunden mit Microsoft 365-Abonnements, die das Insider Risikomanagement umfassen, benötigen keine zusätzlichen Power-Automatisierungs Lizenzen für die Verwendung der empfohlenen Insider Risk Management Power automatisieren-Vorlagen. Diese Vorlagen können angepasst werden, um Ihre Organisation zu unterstützen und Kern Szenarien für das Insider Risikomanagement zu behandeln. Wenn Sie sich für die Verwendung von Premium Power Automation-Funktionen in diesen Vorlagen entscheiden, eine benutzerdefinierte Vorlage mit dem Microsoft 365-Konformitäts-Konnektor erstellen oder Power automatisieren-Vorlagen für andere Kompatibilitäts Bereiche in Microsoft 365 verwenden, benötigen Sie möglicherweise zusätzliche Power automatisieren-Lizenzen.
+
+>[!IMPORTANT]
+>Erhalten Sie Aufforderungen zur zusätzlichen Lizenzüberprüfung beim Testen des Power-Automatisierungs Flusses? Möglicherweise hat Ihre Organisation noch keine dienstupdates für diese Vorschaufunktion erhalten. Updates werden bereitgestellt, und alle Organisationen mit Microsoft 365-Abonnements, die das Insider Risikomanagement umfassen, sollten Lizenzunterstützung für Flows haben, die von den empfohlenen Power-Automatisierungs Vorlagen bis zum 30. Oktober 2020 erstellt wurden.
 
 Die folgenden Power-Automatisierungs Vorlagen werden für Kunden bereitgestellt, um die Prozessautomatisierung für Benutzer und Fälle des Insider Risikomanagements zu unterstützen:
 

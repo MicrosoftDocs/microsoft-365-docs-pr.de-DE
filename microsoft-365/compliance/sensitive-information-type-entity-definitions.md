@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: Die Verhinderung von Datenverlust im Security &amp; Compliance Center umfasst 80 Typen für vertrauliche Informationen, die Sie in ihren DLP-Richtlinien verwenden können. Dieses Thema enthält eine Liste aller dieser vertraulichen Informationstypen und zeigt, was eine DLP-Richtlinie sucht, wenn sie den jeweiligen Typen erkennt.
-ms.openlocfilehash: 8482501dc978433587c431d18ec93b9e78fb8e03
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 288c53d5e9264942e12d5634cec172a65ee79ca6
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487493"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48656052"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Entitätsdefinitionen für Typen vertraulicher Informationstypen
 
@@ -60,14 +60,20 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Die Funktion Func_aba_routing findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_ABA_Routing wurde gefunden.
 
+Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+- Die Funktion Func_aba_routing findet Inhalte, die dem Muster entsprechen.
+
 ```xml
-<!-- ABA Routing Number -->
-<Entity id="cb353f78-2b72-4c3c-8827-92ebe4f69fdf" patternsProximity="300" recommendedConfidence="75">
+    <!-- ABA Routing Number -->
+    <Entity id="cb353f78-2b72-4c3c-8827-92ebe4f69fdf" patternsProximity="300" recommendedConfidence="75">
       <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_aba_routing" />
         <Match idRef="Keyword_ABA_Routing" />
       </Pattern>
- </Entity>
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Func_aba_routing" />
+      </Pattern>
+    </Entity>
 ```
 
 
@@ -75,37 +81,36 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 #### <a name="keyword_aba_routing"></a>Keyword_aba_routing
 
-- ABA
-- aba #
-- aba routing #
-- aba routing number
-- ABA #
-- abarouting #
 - aba number
+- ABA #
+- ABA
+- abarouting #
 - abaroutingnumber
-- american bank association routing #
-- american bank association routing number
 - americanbankassociationrouting #
 - americanbankassociationroutingnumber
-- bank routing number
 - bankrouting #
 - bankroutingnumber
+- Routing #
+- Routing Nein
+- Routingnummer
 - routing transit number
-- RTN 
-   
+- Routing #
+- RTN
+
+
 ## <a name="argentina-national-identity-dni-number"></a>Argentinische nationale Identitätsnummer (DNI)
 
 ### <a name="format"></a>Format
 
-Acht Ziffern, durch Punkte getrennt
+Acht Ziffern mit oder ohne Punkte
 
 ### <a name="pattern"></a>Muster
 
 Acht Ziffern:
 - zwei Ziffern
-- einen Zeitraum
+- ein optionaler Zeitraum
 - drei Ziffern
-- einen Zeitraum
+- ein optionaler Zeitraum
 - drei Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -133,14 +138,14 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
 - Argentina National Identity number 
-- Identität 
-- Identification National Identity Card 
+- cedula 
+- Cédula 
 - DNI 
-- Nic-nationales Personenregister 
 - Documento Nacional de Identidad 
+- Documento número 
+- Documento numero 
 - Registro Nacional de las Personas 
-- Identidad 
-- Identificación 
+- RNP 
    
 ## <a name="australia-bank-account-number"></a>Australische Bankkontennummer
 
@@ -697,8 +702,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverlicences
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
+- driver license
+- driver licenses
 - Treiber Lizenz
 - Treiber Lizenzen
 - driverslic
@@ -709,9 +714,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverslicenses
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
-- Treiber Lizenz
+- drivers license
+- drivers licenses
+- drivers licence
 - Treiber Lizenzen
 - driver'lic
 - driver'lics
@@ -733,9 +738,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'slicences
 - lic-Treiber
 - LiCS des Treibers
-- Führerschein
-- Treiber Lizenzen
-- Führerschein
+- driver's license
+- driver's licenses
+- driver's licence
 - Führerscheine
 - DL #
 - DLS #
@@ -786,9 +791,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Treiber Lizenzen #
 - Führerschein #
 - Führerscheine #
-- driving licence
- 
-- Führerschein
+- Führerschein 
+- driving license
 - dlno #
 - Driv lic
 - Driv-Läuse
@@ -803,9 +807,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Steuern von Läusen
 - Steuern von Lizenzen
 - driving licence
-
 - driving licences
-
 - Führerschein
 - DL Nein
 - dlno
@@ -866,8 +868,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keywords_austria_eu_national_id_card"></a>Keywords_austria_eu_national_id_card
 
 - Identitätsnummer
-- 
-national id
+- national id
 - Personalausweis Republik Österreich
 
 ## <a name="austria-passport-number"></a>Österreichische Passnummer
@@ -913,13 +914,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - Pass #
-- Pass #
+- Pass #
 - Passport-Nr
 - Pässe
 - passportno
 - Passport-Nummer
 - passportnumber
-- Passnummer
+- passport number
 - passportnumbers
 - Passport-Nummern
 
@@ -1043,7 +1044,6 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 - St.Nr.
 - Steuernummer
 - tax id
-
 - Steueridentifikationsnummer
 - Steueridentifikationsnummer
 - Steuernummer #
@@ -1648,8 +1648,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverlicences
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
+- driver license
+- driver licenses
 - Treiber Lizenz
 - Treiber Lizenzen
 - driverslic
@@ -1660,9 +1660,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverslicenses
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
-- Treiber Lizenz
+- drivers license
+- drivers licenses
+- drivers licence
 - Treiber Lizenzen
 - driver'lic
 - driver'lics
@@ -1684,9 +1684,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'slicences
 - lic-Treiber
 - LiCS des Treibers
-- Führerschein
-- Treiber Lizenzen
-- Führerschein
+- driver's license
+- driver's licenses
+- driver's licence
 - Führerscheine
 - DL #
 - DLS #
@@ -1737,9 +1737,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Treiber Lizenzen #
 - Führerschein #
 - Führerscheine #
-- driving licence
- 
-- Führerschein
+- Führerschein 
+- driving license
 - dlno #
 - Driv lic
 - Driv-Läuse
@@ -1754,9 +1753,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Steuern von Läusen
 - Steuern von Lizenzen
 - driving licence
-
 - driving licences
-
 - Führerschein
 - DL Nein
 - dlno
@@ -1773,8 +1770,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - fuehrerschein
 - fuhrerscheinnummer
 - fuehrerscheinnummer
-- 
-permis de conduire
+- permis de conduire
 - Numéro permis conduire
 
 
@@ -1850,7 +1846,6 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 - Numéro d'assuré
 - Numéro de Registre National
 - numéro de sécurité
-
 - numéro d'identification
 - numéro d'immatriculation
 - Numéro National
@@ -1862,12 +1857,11 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 - Registrierung
 - registrationsnumme
 - Registrierung
-- Sozialversicherungsnummer
+- social security number
 - SSN #
 - SSN
 - Steuernummer
 - tax id
-
 - Steueridentifikationsnummer
 - Steueridentifikationsnummer
 - Steuernummer #
@@ -1923,13 +1917,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - Pass #
-- Pass #
+- Pass #
 - Passport-Nr
 - Pässe
 - passportno
 - Passport-Nummer
 - passportnumber
-- Passnummer
+- passport number
 - passportnumbers
 - Passport-Nummern
 
@@ -2323,8 +2317,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverlicences
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
+- driver license
+- driver licenses
 - Treiber Lizenz
 - Treiber Lizenzen
 - driverslic
@@ -2335,9 +2329,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverslicenses
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
-- Treiber Lizenz
+- drivers license
+- drivers licenses
+- drivers licence
 - Treiber Lizenzen
 - driver'lic
 - driver'lics
@@ -2359,9 +2353,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'slicences
 - lic-Treiber
 - LiCS des Treibers
-- Führerschein
-- Treiber Lizenzen
-- Führerschein
+- driver's license
+- driver's licenses
+- driver's licence
 - Führerscheine
 - DL #
 - DLS #
@@ -2412,9 +2406,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Treiber Lizenzen #
 - Führerschein #
 - Führerscheine #
-- driving licence
- 
-- Führerschein
+- Führerschein 
+- driving license
 - dlno #
 - Driv lic
 - Driv-Läuse
@@ -2429,9 +2422,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Steuern von Läusen
 - Steuern von Lizenzen
 - driving licence
-
 - driving licences
-
 - Führerschein
 - DL Nein
 - dlno
@@ -2509,9 +2500,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - EGN #
 - EGN
 - identification number
-
-- 
-national id
+- national id
 - nationale Nummer
 - nationalnumber #
 - nationalnumber
@@ -2519,7 +2508,7 @@ national id
 - persönliches Nein
 - persönliche Nummer
 - personalidnumber #
-- Sozialversicherungsnummer
+- social security number
 - SSN #
 - SSN
 - Uniform Civil ID
@@ -2532,17 +2521,17 @@ national id
 - eindeutige Staats Bürgerschafts Nummer
 - егн #
 - егн
-- единен граждански номер
-- идентификационен номер
-- личен номер
-- лична идентификация
+- единен граждански номер
+- идентификационен номер
+- личен номер
+- лична идентификация
 - лично не
-- национален номер
+- национален номер
 - номер на гражданството
 - униформ-ID
 - униформ-граждански-ID
 - униформ граждански не
-- униформ граждански номер
+- униформ граждански номер
 - униформгражданскиid #
 - униформгражданскине. #
 
@@ -2585,13 +2574,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - Pass #
-- Pass #
+- Pass #
 - Passport-Nr
 - Pässe
 - passportno
 - Passport-Nummer
 - passportnumber
-- Passnummer
+- passport number
 - passportnumbers
 - Passport-Nummern
 
@@ -3333,28 +3322,20 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 
 #### <a name="keyword_cc_verification"></a>Keyword_cc_verification
 
-- 
-card verification
-
+- card verification
 - card identification number
 - CVN
 - cid
 - CVC2
 - CVV2
-- 
-pin block
+- pin block
 - security code
-
 - security number
-
 - security no
-
 - issue number
-
 - issue no
 - cryptogramme
-- 
-numéro de sécurité
+- numéro de sécurité
 - numero de securite
 - kreditkartenprüfnummer
 - kreditkartenprufnummer
@@ -3365,32 +3346,26 @@ numéro de sécurité
 - sicherheitsnummer
 - verfalldatum
 - codice di verifica
-- COD.Sicurezza
-- 
-cod sicurezza
+- COD. Sicurezza
+- cod sicurezza
 - n autorizzazione
 - Código
 - codigo
-- COD.SEG
-- 
-cod seg
+- COD. SEG
+- cod seg
 - código de segurança
-
 - codigo de seguranca
-
 - codigo de segurança
-
 - código de seguranca
-- cód.Segurança
-- COD.seguranca
-- COD.Segurança
-- cód.seguranca
-- cód Segurança
-- COD-Seguranca
-- COD-Segurança
-- cód seguranca
+- cód. Segurança
+- COD. seguranca
+- COD. Segurança
+- cód. seguranca
+- cód segurança
+- cod seguranca
+- cod segurança
+- cód seguranca
 - número de verificação
-
 - numero de verificacao
 - Ablauf
 - Gültig bis
@@ -3398,20 +3373,15 @@ cod seg
 - Gultig bis
 - gultigkeitsdatum
 - scadenza
-- 
-data scad
+- data scad
 - fecha de expiracion
-
 - fecha de venc
 - vencimiento
-- 
-válido hasta
+- válido hasta
 - valido hasta
 - VTO
-- 
-data de expiração
+- data de expiração
 - data de expiracao
-
 - data em que expira
 - validade
 - Valor
@@ -3420,9 +3390,9 @@ data de expiração
 - Transaktionsnummer
 - Referenznummer
 - セキュリティコード
-- セキュリティ コード
+- セキュリティ コード
 - セキュリティナンバー
-- セキュリティ ナンバー
+- セキュリティ ナンバー
 - セキュリティ番号
 
 #### <a name="keyword_cc_name"></a>Keyword_cc_name
@@ -3431,15 +3401,13 @@ data de expiração
 - american express
 - AmericanExpress
 - americano espresso
-
 - Visa
 - MasterCard
 - master card
 - Verwaltungskonsole
 - MasterCards gesichert
-- 
-master cards
-- Diner es Club
+- master cards
+- diner's Club
 - diners club
 - DinersClub
 - ermitteln
@@ -3449,33 +3417,26 @@ master cards
 - JCB
 - BrandSmart
 - japanese card bureau
-
 - carte blanche
 - CarteBlanche
-- Kreditkarte
+- credit card
 - CC #
 - cc #:
-- Ablaufdatum
+- expiration date
 - exp date
-
-- 
-expiry date
-- 
-date d’expiration
-- 
-date d'exp
-- 
-date expiration
+- expiry date
+- date d’expiration
+- date d'exp
+- date expiration
 - bank card
 - Bankcard
-- 
-card number
+- card number
 - card num
 - cardNumber
 - cardnumbers
 - card numbers
 - CreditCard
-- Kreditkarten
+- credit cards
 - creditCards
 - Angaben
 - card holder
@@ -3495,10 +3456,8 @@ card number
 - atm cards
 - atmcards
 - enroute
-- 
-en route
+- en route
 - card type
-
 - Cardmember acct
 - cardmember-Konto
 - Cardno
@@ -3509,22 +3468,14 @@ en route
 - Karten Mitgliedskonto
 - Cardmember acct.
 - card no.
-
 - Karte Nein
 - card number
-
 - carte bancaire
-
 - carte de crédit
-
 - carte de credit
-
 - numéro de carte
-
 - numero de carte
-
 - nº de la carte
-
 - nº de carte
 - kreditkarte
 - Karte
@@ -3538,91 +3489,57 @@ en route
 - kartennummer
 - kreditkartennummer
 - Kreditkarten-Nummer
-- 
-carta di credito
+- carta di credito
 - carta credito
-- n.Carta
+- n. Carta
 - n carta
-- Nr.Carta
-- 
-nr carta
+- Nr. Carta
+- nr carta
 - numero carta
-
 - numero della carta
-
 - numero di carta
-
 - tarjeta credito
-
 - tarjeta de credito
-
-- 
-tarjeta crédito
-- 
-tarjeta de crédito
+- tarjeta crédito
+- tarjeta de crédito
 - tarjeta de atm
-
 - tarjeta atm
-
 - tarjeta debito
-
 - tarjeta de debito
-
-- 
-tarjeta débito
-- 
-tarjeta de débito
+- tarjeta débito
+- tarjeta de débito
 - nº de tarjeta
-- Nein.de tarjeta
-- kein de Tarjeta
+- Nein. de tarjeta
+- no de tarjeta
 - numero de tarjeta
-
 - número de tarjeta
-
 - tarjeta no
 - tarjetahabiente
-- 
-cartão de crédito
+- cartão de crédito
 - cartão de credito
-
 - cartao de crédito
-
 - cartao de credito
-
 - cartão de débito
-
 - cartao de débito
-
 - cartão de debito
-
 - cartao de debito
-
 - débito automático
 - debito automatico
-
-- 
-número do cartão
+- número do cartão
 - numero do cartão
-
 - número do cartao
-
 - numero do cartao
-
 - número de cartão
-
 - numero de cartão
-
 - número de cartao
-
 - numero de cartao
-
-- nº do Cartão
+- nº do cartão
 - nº do cartao
-- nº.do cartão
-- keine do-Cartão
-- keine do cartao
-- Nein.do cartão
-- Nein.do cartao
+- nº. do cartão
+- no do cartão
+- no do cartao
+- Nein. do cartão
+- Nein. do cartao
 - クレジットカード番号
 - クレジットカードナンバー
 - クレジットカード＃
@@ -3634,23 +3551,23 @@ número do cartão
 - カード＃
 - アメックス
 - アメリカンエクスプレス
-- アメリカン エクスプレス
+- アメリカン エクスプレス
 - Visaカード
 - Visa-カード
 - マスターカード
-- マスター カード
+- マスター カード
 - マスター
 - ダイナースクラブ
-- ダイナース クラブ
+- ダイナース クラブ
 - ダイナース
 - 有効期限
 - 期限
 - キャッシュカード
-- キャッシュ カード
+- キャッシュ カード
 - カード名義人
 - カードの名義人
 - カードの名義
-- デビット カード
+- デビット カード
 - デビットカード
 
 
@@ -3701,8 +3618,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverlicences
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
+- driver license
+- driver licenses
 - Treiber Lizenz
 - Treiber Lizenzen
 - driverslic
@@ -3713,9 +3630,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverslicenses
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
-- Treiber Lizenz
+- drivers license
+- drivers licenses
+- drivers licence
 - Treiber Lizenzen
 - driver'lic
 - driver'lics
@@ -3737,9 +3654,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'slicences
 - lic-Treiber
 - LiCS des Treibers
-- Führerschein
-- Treiber Lizenzen
-- Führerschein
+- driver's license
+- driver's licenses
+- driver's licence
 - Führerscheine
 - DL #
 - DLS #
@@ -3790,9 +3707,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Treiber Lizenzen #
 - Führerschein #
 - Führerscheine #
-- driving licence
- 
-- Führerschein
+- Führerschein 
+- driving license
 - dlno #
 - Driv lic
 - Driv-Läuse
@@ -3807,9 +3723,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Steuern von Läusen
 - Steuern von Lizenzen
 - driving licence
-
 - driving licences
-
 - Führerschein
 - DL Nein
 - dlno
@@ -3860,17 +3774,16 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - majstorski Broj građana
 - Bürgermeister Nummer
 - Nacionalni identifikacijski Broj
-- nationale Identifikationsnummer
+- national identification number
 - OIB #
 - OIB
-- osobna iskaznica
+- osobna iskaznica
 - Osobni-ID
 - Osobni identifikacijski Broj
 - persönliche Identifikationsnummer
 - porezni Broj
 - porezni identifikacijski Broj
 - tax id
-
 - Steueridentifikationsnummer
 - Steueridentifikationsnummer
 - Steuernummer #
@@ -3926,13 +3839,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - Pass #
-- Pass #
+- Pass #
 - Passport-Nr
 - Pässe
 - passportno
 - Passport-Nummer
 - passportnumber
-- Passnummer
+- passport number
 - passportnumbers
 - Passport-Nummern
 
@@ -3989,17 +3902,16 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - majstorski Broj građana
 - Bürgermeister Nummer
 - Nacionalni identifikacijski Broj
-- nationale Identifikationsnummer
+- national identification number
 - OIB #
 - OIB
-- osobna iskaznica
+- osobna iskaznica
 - Osobni-ID
 - Osobni identifikacijski Broj
 - persönliche Identifikationsnummer
 - porezni Broj
 - porezni identifikacijski Broj
 - tax id
-
 - Steueridentifikationsnummer
 - Steueridentifikationsnummer
 - Steuernummer #
@@ -4124,8 +4036,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverlicences
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
+- driver license
+- driver licenses
 - Treiber Lizenz
 - Treiber Lizenzen
 - driverslic
@@ -4136,9 +4048,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverslicenses
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
-- Treiber Lizenz
+- drivers license
+- drivers licenses
+- drivers licence
 - Treiber Lizenzen
 - driver'lic
 - driver'lics
@@ -4160,9 +4072,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'slicences
 - lic-Treiber
 - LiCS des Treibers
-- Führerschein
-- Treiber Lizenzen
-- Führerschein
+- driver's license
+- driver's licenses
+- driver's licence
 - Führerscheine
 - DL #
 - DLS #
@@ -4213,9 +4125,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Treiber Lizenzen #
 - Führerschein #
 - Führerscheine #
-- driving licence
- 
-- Führerschein
+- Führerschein 
+- driving license
 - dlno #
 - Driv lic
 - Driv-Läuse
@@ -4230,9 +4141,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Steuern von Läusen
 - Steuern von Lizenzen
 - driving licence
-
 - driving licences
-
 - Führerschein
 - DL Nein
 - dlno
@@ -4288,7 +4197,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - ID-Kartennummer
 - Personalausweisnummer
 - KİMLİK karti
-- nationale Identifikationsnummer
+- national identification number
 - persönliche ID-Nummer
 - ταυτοτητασ
 
@@ -4332,13 +4241,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - Pass #
-- Pass #
+- Pass #
 - Passport-Nr
 - Pässe
 - passportno
 - Passport-Nummer
 - passportnumber
-- Passnummer
+- passport number
 - passportnumbers
 - Passport-Nummern
 
@@ -4407,7 +4316,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keywords_cyprus_eu_tax_file_number"></a>Keywords_cyprus_eu_tax_file_number
 
 - tax id
-
 - Steuer Identifikationscode
 - Steueridentifikationsnummer
 - Steueridentifikationsnummer
@@ -4428,10 +4336,10 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Zinn #
 - Vergi KİMLİK Kodu
 - Vergi KİMLİK numarası
-- αριθμός φορολογικού μητρώου
-- κωδικός φορολογικού μητρώου
-- φορολογική ταυτότητα
-- φορολογικού κωδικού
+- αριθμός φορολογικού μητρώου
+- κωδικός φορολογικού μητρώου
+- φορολογική ταυτότητα
+- φορολογικού κωδικού
 
 
 ## <a name="czech-drivers-license-number"></a>Tschechische Führerscheinnummer
@@ -4485,8 +4393,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverlicences
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
+- driver license
+- driver licenses
 - Treiber Lizenz
 - Treiber Lizenzen
 - driverslic
@@ -4497,9 +4405,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverslicenses
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
-- Treiber Lizenz
+- drivers license
+- drivers licenses
+- drivers licence
 - Treiber Lizenzen
 - driver'lic
 - driver'lics
@@ -4521,9 +4429,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'slicences
 - lic-Treiber
 - LiCS des Treibers
-- Führerschein
-- Treiber Lizenzen
-- Führerschein
+- driver's license
+- driver's licenses
+- driver's licence
 - Führerscheine
 - DL #
 - DLS #
@@ -4574,9 +4482,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Treiber Lizenzen #
 - Führerschein #
 - Führerscheine #
-- driving licence
- 
-- Führerschein
+- Führerschein 
+- driving license
 - dlno #
 - Driv lic
 - Driv-Läuse
@@ -4591,9 +4498,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Steuern von Läusen
 - Steuern von Lizenzen
 - driving licence
-
 - driving licences
-
 - Führerschein
 - DL Nein
 - dlno
@@ -4646,13 +4551,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - Pass #
-- Pass #
+- Pass #
 - Passport-Nr
 - Pässe
 - passportno
 - Passport-Nummer
 - passportnumber
-- Passnummer
+- passport number
 - passportnumbers
 - Passport-Nummern
 
@@ -4722,32 +4627,31 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Geburtsnummer
 - Tschechische Republik ID
 - czechidno #
-- daňové číslo
-- identifikační číslo
+- daňové číslo
+- identifikační číslo
 - Identität Nein
 - Identitätsnummer
 - identityno #
 - identityno
 - Versicherungsnummer
-- nationale Identifikationsnummer
+- national identification number
 - nationalnumber #
 - nationale Nummer
-- osobní číslo
+- osobní číslo
 - personalidnumber #
 - persönliche ID-Nummer
 - persönliche Identifikationsnummer
 - persönliche Nummer
 - PID #
 - pid
-- pojištění číslo
+- pojištění číslo
 - rč
-- rodne cislo
-- rodné číslo
+- rodne cislo
+- rodné číslo
 - SSN
 - SSN #
-- Sozialversicherungsnummer
+- social security number
 - tax id
-
 - Steueridentifikationsnummer
 - Steueridentifikationsnummer
 - Steuernummer #
@@ -4874,8 +4778,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverlicences
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
+- driver license
+- driver licenses
 - Treiber Lizenz
 - Treiber Lizenzen
 - driverslic
@@ -4886,9 +4790,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverslicenses
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
-- Treiber Lizenz
+- drivers license
+- drivers licenses
+- drivers licence
 - Treiber Lizenzen
 - driver'lic
 - driver'lics
@@ -4910,9 +4814,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'slicences
 - lic-Treiber
 - LiCS des Treibers
-- Führerschein
-- Treiber Lizenzen
-- Führerschein
+- driver's license
+- driver's licenses
+- driver's licence
 - Führerscheine
 - DL #
 - DLS #
@@ -4963,9 +4867,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Treiber Lizenzen #
 - Führerschein #
 - Führerscheine #
-- driving licence
- 
-- Führerschein
+- Führerschein 
+- driving license
 - dlno #
 - Driv lic
 - Driv-Läuse
@@ -4980,9 +4883,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Steuern von Läusen
 - Steuern von Lizenzen
 - driving licence
-
 - driving licences
-
 - Führerschein
 - DL Nein
 - dlno
@@ -5033,13 +4934,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - Pass #
-- Pass #
+- Pass #
 - Passport-Nr
 - Pässe
 - passportno
 - Passport-Nummer
 - passportnumber
-- Passnummer
+- passport number
 - passportnumbers
 - Passport-Nummern
 
@@ -5106,7 +5007,6 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 - Krankenversicherungskarten Nummer
 - Krankenversicherungsnummer
 - identification number
-
 - identifikationsnummer
 - identifikationsnummer #
 - Identitätsnummer
@@ -5127,7 +5027,7 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 - Skate Kode
 - Skate Nummer
 - skattenummer
-- Sozialversicherungsnummer
+- social security number
 - sundhedsforsikringskort
 - sundhedsforsikringsnummer
 - sundhedskort
@@ -5140,7 +5040,6 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 - Steuernummer
 - Steuerregistrierungsnummer
 - tax id
-
 - Steueridentifikationsnummer
 - per Taxi #
 - taxnumber #
@@ -5237,7 +5136,7 @@ zwei Buchstaben, gefolgt von sieben Ziffern
 
 Das Muster muss Folgendes enthalten:
 - ein Buchstabe (ohne Berücksichtigung der Groß-/Kleinschreibung) aus dieser Reihe möglicher Buchstaben: abcdefghjklmnprstux, bei dem es sich um einen Registrant-Code handelt 
-- ein Buchstabe (ohne Berücksichtigung der Groß-/Kleinschreibung), bei dem es sich um den ersten Buchstaben des letzten namens des Registranten handelt 
+- ein Buchstabe (ohne Berücksichtigung der Groß-/Kleinschreibung), bei dem es sich um den ersten Buchstaben des Nachnamens oder der Ziffer "9" des Registranten handelt
 - sieben Ziffern, wobei die letzte die Prüfziffer ist.
 
 ### <a name="checksum"></a>Prüfsumme
@@ -5248,20 +5147,41 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Die Funktion Func_dea_number findet Inhalte, die dem Muster entsprechen.
+- Ein Schlüsselwort aus `Keyword_dea_number` wurde gefunden.
+- Die Prüfsumme stimmt.
+
+Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+- Die Funktion Func_dea_number findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
 ```xml
-<!-- DEA Number -->
-<Entity id="9a5445ad-406e-43eb-8bd7-cac17ab6d0e4" recommendedConfidence="85" patternsProximity="300">
-  <Pattern confidenceLevel="85">
-     <IdMatch idRef="Func_dea_number"/>
-  </Pattern>
-</Entity>
+    <!-- DEA Number -->
+    <Entity id="9a5445ad-406e-43eb-8bd7-cac17ab6d0e4" patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_dea_number" />
+      </Pattern>
+      <Version minEngineVersion="15.20.1207.000" maxEngineVersion="15.20.3134.000">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_dea_number" />
+        </Pattern>
+      </Version>
+      <Version minEngineVersion="15.20.3135.000">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_dea_number" />
+          <Match idRef="Keyword_dea_number" />
+        </Pattern>
+      </Version>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-keine
+#### <a name="keyword_dea_number"></a>Keyword_dea_number
+
+- DEA
+- DEA #
+- Drug Enforcement Administration
+- Drug Enforcement Agency
 
 
 ## <a name="estonia-drivers-license-number"></a>Estnische Führerscheinnummer
@@ -5313,8 +5233,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverlicences
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
+- driver license
+- driver licenses
 - Treiber Lizenz
 - Treiber Lizenzen
 - driverslic
@@ -5325,9 +5245,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverslicenses
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
-- Treiber Lizenz
+- drivers license
+- drivers licenses
+- drivers licence
 - Treiber Lizenzen
 - driver'lic
 - driver'lics
@@ -5349,9 +5269,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'slicences
 - lic-Treiber
 - LiCS des Treibers
-- Führerschein
-- Treiber Lizenzen
-- Führerschein
+- driver's license
+- driver's licenses
+- driver's licence
 - Führerscheine
 - DL #
 - DLS #
@@ -5402,9 +5322,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Treiber Lizenzen #
 - Führerschein #
 - Führerscheine #
-- driving licence
- 
-- Führerschein
+- Führerschein 
+- driving license
 - dlno #
 - Driv lic
 - Driv-Läuse
@@ -5419,9 +5338,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Steuern von Läusen
 - Steuern von Lizenzen
 - driving licence
-
 - driving licences
-
 - Führerschein
 - DL Nein
 - dlno
@@ -5495,9 +5412,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - isikukood #
 - isikukood
 - maksu-ID
-- maksukohustuslase identifitseerimisnumber
+- maksukohustuslase identifitseerimisnumber
 - maksunumber
-- nationale Identifikationsnummer
+- national identification number
 - nationale Nummer
 - persönlicher Code
 - persönliche ID-Nummer
@@ -5505,7 +5422,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - persönliche Identifikationsnummer
 - personalidnumber #
 - tax id
-
 - Steueridentifikationsnummer
 - Steueridentifikationsnummer
 - Steuernummer #
@@ -5562,13 +5478,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - Pass #
-- Pass #
+- Pass #
 - Passport-Nr
 - Pässe
 - passportno
 - Passport-Nummer
 - passportnumber
-- Passnummer
+- passport number
 - passportnumbers
 - Passport-Nummern
 
@@ -6131,8 +6047,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverlicences
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
+- driver license
+- driver licenses
 - Treiber Lizenz
 - Treiber Lizenzen
 - driverslic
@@ -6143,9 +6059,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverslicenses
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
-- Treiber Lizenz
+- drivers license
+- drivers licenses
+- drivers licence
 - Treiber Lizenzen
 - driver'lic
 - driver'lics
@@ -6167,9 +6083,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'slicences
 - lic-Treiber
 - LiCS des Treibers
-- Führerschein
-- Treiber Lizenzen
-- Führerschein
+- driver's license
+- driver's licenses
+- driver's licence
 - Führerscheine
 - DL #
 - DLS #
@@ -6220,9 +6136,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Treiber Lizenzen #
 - Führerschein #
 - Führerscheine #
-- driving licence
- 
-- Führerschein
+- Führerschein 
+- driving license
 - dlno #
 - Driv lic
 - Driv-Läuse
@@ -6237,9 +6152,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Steuern von Läusen
 - Steuern von Lizenzen
 - driving licence
-
 - driving licences
-
 - Führerschein
 - DL Nein
 - dlno
@@ -6363,8 +6276,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-- ainutlaatuinen henkilökohtainen tunnus
-- henkilökohtainen tunnus
+- ainutlaatuinen henkilökohtainen tunnus
+- henkilökohtainen tunnus
 - henkilötunnus
 - henkilötunnusnumero #
 - henkilötunnusnumero
@@ -6372,12 +6285,11 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - ID Nein
 - ID-Nummer
 - identification number
-
 - identiteetti numero
 - Identitätsnummer
 - idnumber
 - der Kok henkilötunnus
-- kansallisen henkilökortin
+- kansallisen henkilökortin
 - nationale ID-Karte
 - nationale ID-Nr.
 - persönliche ID
@@ -6385,10 +6297,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - personalidnumber #
 - personbeteckning
 - personnummer
-- Sozialversicherungsnummer
+- social security number
 - sosiaaliturvatunnus
 - tax id
-
 - Steueridentifikationsnummer
 - Steueridentifikationsnummer
 - Steuernummer #
@@ -6452,13 +6363,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - Pass #
-- Pass #
+- Pass #
 - Passport-Nr
 - Pässe
 - passportno
 - Passport-Nummer
 - passportnumber
-- Passnummer
+- passport number
 - passportnumbers
 - Passport-Nummern
 
@@ -6588,8 +6499,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverlicences
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
+- driver license
+- driver licenses
 - Treiber Lizenz
 - Treiber Lizenzen
 - driverslic
@@ -6600,9 +6511,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverslicenses
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
-- Treiber Lizenz
+- drivers license
+- drivers licenses
+- drivers licence
 - Treiber Lizenzen
 - driver'lic
 - driver'lics
@@ -6624,9 +6535,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'slicences
 - lic-Treiber
 - LiCS des Treibers
-- Führerschein
-- Treiber Lizenzen
-- Führerschein
+- driver's license
+- driver's licenses
+- driver's licence
 - Führerscheine
 - DL #
 - DLS #
@@ -6677,9 +6588,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Treiber Lizenzen #
 - Führerschein #
 - Führerscheine #
-- driving licence
- 
-- Führerschein
+- Führerschein 
+- driving license
 - dlno #
 - Driv lic
 - Driv-Läuse
@@ -6694,23 +6604,16 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Steuern von Läusen
 - Steuern von Lizenzen
 - driving licence
-
 - driving licences
-
 - Führerschein
 - DL Nein
 - dlno
 - DL-Nummer
-- 
-permis de conduire
-- 
-licence number
-- Lizenznummer
-- 
-licence numbers
-- 
-
-license numbers
+- permis de conduire
+- licence number
+- license number
+- licence numbers
+- license numbers
 - numéros de LICENCE
 
 
@@ -6800,13 +6703,12 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keywords_france_eu_national_id_card"></a>Keywords_france_eu_national_id_card
 
 - card number
-
 - Carte nationale d ' identité
 - Carte nationale d'idenite No
 - CNI #
 - CNI
 - Compte Bancaire
-- nationale Identifikationsnummer
+- national identification number
 - nationale Identität
 - nationalidno #
 - Numéro assurance maladie
@@ -7006,7 +6908,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 - Numéro d'identification Fiscale
 - tax id
-
 - Steueridentifikationsnummer
 - Steueridentifikationsnummer
 - Steuernummer #
@@ -7134,22 +7035,18 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 - ausstellungsdatum
 - ausstellungsort
-- 
-Ausstellende Behöde
-- 
-Ausstellende Behorde
-- 
-
-ausstellende behoerde
+- Ausstellende Behöde
+- Ausstellende Behorde
+- ausstellende behoerde
 - führerschein
 - fuhrerschein
 - fuehrerschein
 - führerscheinnummer
 - fuhrerscheinnummer
 - fuehrerscheinnummer
-- führerschein- 
-- fuhrerschein- 
-- fuehrerschein- 
+- führerschein- 
+- fuhrerschein- 
+- fuehrerschein- 
 - führerscheinnummernr
 - fuhrerscheinnummernr
 - fuehrerscheinnummernr
@@ -7165,8 +7062,7 @@ ausstellende behoerde
 - n-Führerschein
 - n-Fuhrerschein
 - n-Fuehrerschein
-- 
-permis de conduire
+- permis de conduire
 - driverlic
 - driverlics
 - driverlicense
@@ -7175,8 +7071,8 @@ permis de conduire
 - driverlicences
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
+- driver license
+- driver licenses
 - Treiber Lizenz
 - Treiber Lizenzen
 - driverslic
@@ -7187,9 +7083,9 @@ permis de conduire
 - driverslicenses
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
-- Treiber Lizenz
+- drivers license
+- drivers licenses
+- drivers licence
 - Treiber Lizenzen
 - driver'lic
 - driver'lics
@@ -7211,9 +7107,9 @@ permis de conduire
 - driver'slicences
 - lic-Treiber
 - LiCS des Treibers
-- Führerschein
-- Treiber Lizenzen
-- Führerschein
+- driver's license
+- driver's licenses
+- driver's licence
 - Führerscheine
 - DL #
 - DLS #
@@ -7264,9 +7160,8 @@ permis de conduire
 - Treiber Lizenzen #
 - Führerschein #
 - Führerscheine #
-- driving licence
- 
-- Führerschein
+- Führerschein 
+- driving license
 - dlno #
 - Driv lic
 - Driv-Läuse
@@ -7281,9 +7176,7 @@ permis de conduire
 - Steuern von Läusen
 - Steuern von Lizenzen
 - driving licence
-
 - driving licences
-
 - Führerschein
 - dlno
 
@@ -7334,13 +7227,13 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 - Identifizierung
 - Identifikation
 - identifizierungsnummer
-- Personalausweis
+- identity card
 - Identitätsnummer
 - ID-Nummer
 - persönliche ID
 - Personalausweis
 - persönliche-ID-Nummer
-- persönliche identifikationsnummer
+- persönliche identifikationsnummer
 - persönliche-ID-Nummer
 
 
@@ -7457,7 +7350,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - steueridentifikationsnummer
 - Steuernummer
 - tax id
-
 - Steueridentifikationsnummer
 - Steueridentifikationsnummer
 - Steuernummer #
@@ -7587,8 +7479,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverlicences
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
+- driver license
+- driver licenses
 - Treiber Lizenz
 - Treiber Lizenzen
 - driverslic
@@ -7599,9 +7491,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverslicenses
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
-- Treiber Lizenz
+- drivers license
+- drivers licenses
+- drivers licence
 - Treiber Lizenzen
 - driver'lic
 - driver'lics
@@ -7623,9 +7515,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'slicences
 - lic-Treiber
 - LiCS des Treibers
-- Führerschein
-- Treiber Lizenzen
-- Führerschein
+- driver's license
+- driver's licenses
+- driver's licence
 - Führerscheine
 - DL #
 - DLS #
@@ -7676,9 +7568,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Treiber Lizenzen #
 - Führerschein #
 - Führerscheine #
-- driving licence
- 
-- Führerschein
+- Führerschein 
+- driving license
 - dlno #
 - Driv lic
 - Driv-Läuse
@@ -7693,9 +7584,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Steuern von Läusen
 - Steuern von Lizenzen
 - driving licence
-
 - driving licences
-
 - Führerschein
 - DL Nein
 - dlno
@@ -7762,7 +7651,7 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 - griechische nationale ID
 - griechische Personalausweis Karte
 - griechische Polizei-ID
-- Personalausweis
+- identity card
 - tautotita
 - ταυτότητα
 - ταυτότητας
@@ -7809,13 +7698,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - Pass #
-- Pass #
+- Pass #
 - Passport-Nr
 - Pässe
 - passportno
 - Passport-Nummer
 - passportnumber
-- Passnummer
+- passport number
 - passportnumbers
 - Passport-Nummern
 
@@ -7871,7 +7760,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - aφμ | aφμ αριθμός
 - aφμ
 - tax id
-
 - Steueridentifikationsnummer
 - Steueridentifikationsnummer
 - Steuernummer #
@@ -7890,9 +7778,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Tin-ID
 - Tin Nein
 - Zinn #
-- αριθμός φορολογικού μητρώου
-- τον αριθμό φορολογικού μητρώου
-- φορολογικού μητρώου νο
+- αριθμός φορολογικού μητρώου
+- τον αριθμό φορολογικού μητρώου
+- φορολογικού μητρώου νο
 
 
 ## <a name="hong-kong-identity-card-hkid-number"></a>Hong Kong Personalausweisnummer (HKID)
@@ -8029,8 +7917,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverlicences
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
+- driver license
+- driver licenses
 - Treiber Lizenz
 - Treiber Lizenzen
 - driverslic
@@ -8041,9 +7929,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverslicenses
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
-- Treiber Lizenz
+- drivers license
+- drivers licenses
+- drivers licence
 - Treiber Lizenzen
 - driver'lic
 - driver'lics
@@ -8065,9 +7953,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'slicences
 - lic-Treiber
 - LiCS des Treibers
-- Führerschein
-- Treiber Lizenzen
-- Führerschein
+- driver's license
+- driver's licenses
+- driver's licence
 - Führerscheine
 - DL #
 - DLS #
@@ -8118,9 +8006,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Treiber Lizenzen #
 - Führerschein #
 - Führerscheine #
-- driving licence
- 
-- Führerschein
+- Führerschein 
+- driving license
 - dlno #
 - Driv lic
 - Driv-Läuse
@@ -8135,9 +8022,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Steuern von Läusen
 - Steuern von Lizenzen
 - driving licence
-
 - driving licences
-
 - Führerschein
 - DL Nein
 - dlno
@@ -8210,12 +8095,11 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 - ID-Nummer
 - identification number
-
 - SZ IG
-- SZ.IG.
+- SZ. IG.
 - SZ. ig.
-- személyazonosító igazolvány
-- személyi igazolvány
+- személyazonosító igazolvány
+- személyi igazolvány
 
 
 ## <a name="hungary-passport-number"></a>Ungarn Passnummer
@@ -8258,13 +8142,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - Pass #
-- Pass #
+- Pass #
 - Passport-Nr
 - Pässe
 - passportno
 - Passport-Nummer
 - passportnumber
-- Passnummer
+- passport number
 - passportnumbers
 - Passport-Nummern
 
@@ -8393,14 +8277,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 #### <a name="keywords_hungary_eu_tax_file_number"></a>Keywords_hungary_eu_tax_file_number
 
-- adóazonosító szám
-- adóhatóság szám
+- adóazonosító szám
+- adóhatóság szám
 - adószám
 - Ungarisch Zinn
 - hungatiantin #
 - Steuerbehörde Nein
 - tax id
-
 - Steueridentifikationsnummer
 - Steueridentifikationsnummer
 - Steuernummer #
@@ -8478,7 +8361,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - hungarianvatno #
 - Steuer-Nr.
 - Mehrwertsteuer ÁFA
-- közösségi adószám
+- közösségi adószám
 - Általános forgalmi adó szám
 - hozzáadottérték adó
 - ÁFA szám
@@ -8493,29 +8376,39 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 ### <a name="pattern"></a>Muster
 
 10 Buchstaben oder Ziffern:
-- Fünf Buchstaben (Groß-/Kleinschreibung irrelevant)  
+- Drei Buchstaben (Groß-/Kleinschreibung nicht beachtet) 
+- Ein Buchstabe in C, P, H, F, A, T, B, L, J, G (Groß-/Kleinschreibung nicht beachtet)
+- Einen Brief
 - Vier Ziffern 
-- Ein Buchstabe, der eine alphabetische Prüfziffer ist
+- Ein Buchstabe (Groß-/Kleinschreibung wird nicht berücksichtigt)
 
 ### <a name="checksum"></a>Prüfsumme
 
-Ja
+Nein
 
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Der reguläre Ausdruck Regex_india_permanent_account_number findet Inhalte, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus Keyword_india_permanent_account_number wurde gefunden.
-- Die Prüfsumme stimmt.
+
+Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+- Der reguläre Ausdruck Regex_india_permanent_account_number findet Inhalte, die mit dem Muster übereinstimmen.
+
 
 ```xml
-<!-- India Permanent Account Number -->
-<Entity id="2602bfee-9bb0-47a5-a7a6-2bf3053e2804" recommendedConfidence="85" patternsProximity="300">
-  <Pattern confidenceLevel="85">
-     <IdMatch idRef="Regex_india_permanent_account_number"/>
-     <Match idRef="Keyword_india_permanent_account_number"/>
-  </Pattern>
-</Entity>
+      <!-- India Permanent Account Number -->
+      <Entity id="2602bfee-9bb0-47a5-a7a6-2bf3053e2804" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_india_permanent_account_number" />
+          <Match idRef="Keyword_india_permanent_account_number" />
+        </Pattern>
+        <Version minEngineVersion="15.20.3520.000">
+          <Pattern confidenceLevel="65">
+            <IdMatch idRef="Regex_india_permanent_account_number" />
+          </Pattern>
+        </Version>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
@@ -8534,7 +8427,8 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 ### <a name="pattern"></a>Muster
 
 12 Ziffern:
-- Vier Ziffern 
+- Eine Ziffer, die nicht 0 oder 1 ist
+- Drei Ziffern 
 - Eine optionales Leerzeichen oder ein Bindestrich  
 - Vier Ziffern 
 - Eine optionales Leerzeichen oder ein Bindestrich  
@@ -8571,10 +8465,12 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 ### <a name="keywords"></a>Schlüsselwörter
    
 #### <a name="keyword_india_aadhar"></a>Keyword_india_aadhar
-- Aadhar
-- Aadhaar
-- UID
+- aadhaar
+- aadhar
+- aadhar #
+- uid
 - आधार
+- uidai
    
 ## <a name="indonesia-identity-card-ktp-number"></a>Indonesien Personalausweisnummer (KTP)
 
@@ -8863,8 +8759,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverlicences
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
+- driver license
+- driver licenses
 - Treiber Lizenz
 - Treiber Lizenzen
 - driverslic
@@ -8875,9 +8771,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverslicenses
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
-- Treiber Lizenz
+- drivers license
+- drivers licenses
+- drivers licence
 - Treiber Lizenzen
 - driver'lic
 - driver'lics
@@ -8899,9 +8795,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'slicences
 - lic-Treiber
 - LiCS des Treibers
-- Führerschein
-- Treiber Lizenzen
-- Führerschein
+- driver's license
+- driver's licenses
+- driver's licence
 - Führerscheine
 - DL #
 - DLS #
@@ -8952,9 +8848,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Treiber Lizenzen #
 - Führerschein #
 - Führerscheine #
-- driving licence
- 
-- Führerschein
+- Führerschein 
+- driving license
 - dlno #
 - Driv lic
 - Driv-Läuse
@@ -8969,9 +8864,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Steuern von Läusen
 - Steuern von Lizenzen
 - driving licence
-
 - driving licences
-
 - Führerschein
 - DL Nein
 - dlno
@@ -9027,13 +8920,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - Pass #
-- Pass #
+- Pass #
 - Passport-Nr
 - Pässe
 - passportno
 - Passport-Nummer
 - passportnumber
-- Passnummer
+- passport number
 - passportnumbers
 - Passport-Nummern
 
@@ -9102,11 +8995,10 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 
 - Client Identitätsdienst
 - identification number
-
 - persönliche ID-Nummer
 - persönliche öffentliche Dienstnummer
 - persönlicher Dienst Nein
-- phearsanta seirbhíse poiblí
+- phearsanta seirbhíse poiblí
 - PPS Nein
 - PPS-Nummer
 - PPS num
@@ -9124,11 +9016,10 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 - rsin
 - seirbhís-aitheantais-Client
 - uimh
-- uimhir aitheantais chánach
-- uimhir aitheantais phearsanta
-- uimhir phearsanta seirbhíse poiblí
+- uimhir aitheantais chánach
+- uimhir aitheantais phearsanta
+- uimhir phearsanta seirbhíse poiblí
 - tax id
-
 - Steueridentifikationsnummer
 - Steueridentifikationsnummer
 - Steuernummer #
@@ -9232,8 +9123,23 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 #### <a name="keyword_israel_national_id"></a>Keyword_Israel_National_ID
 
-- מספר זהות 
-- National ID Number
+-   מספר זהות
+-   מספר זיה וי
+-   מספר זיהוי ישר אלי      
+-   זהותישר אלית
+-   هو ية اسرائيل ية عدد
+-   هوية إسرائ يلية
+-   رقم الهوية
+-   عدد هوية فريدة من نوعها
+-   idnumber #
+-   ID-Nummer
+-   Identität Nein        
+-   identitynumber #
+-   Identitätsnummer
+-   israeliidentitynumber       
+-   persönliche ID
+-   eindeutige ID  
+
    
 ## <a name="italy-drivers-license-number"></a>Italienische Führerscheinnummer
 Diese vertrauliche Informationen Typ Entität ist in der EU-Führerscheinnummer vertraulichen Informationstyp enthalten und ist als eigenständige vertrauliche Informationen Typ Entität zur Verfügung.
@@ -9351,7 +9257,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - personalcodeno #
 - Steuercode
 - tax id
-
 - Steueridentifikationsnummer
 - Steueridentifikationsnummer
 - Steueridentifikationsnummer
@@ -9412,13 +9317,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - Pass #
-- Pass #
+- Pass #
 - Passport-Nr
 - Pässe
 - passportno
 - Passport-Nummer
 - passportnumber
-- Passnummer
+- passport number
 - passportnumbers
 - Passport-Nummern
 
@@ -9824,10 +9729,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keyword_jp_passport"></a>Keyword_jp_passport
 
 - Pass
-- Passnummer
+- Passport Number
 - Passport-Nummer
 - Passport#
-
 - パスポート
 - パスポート番号
 - パスポートナンバー
@@ -10045,8 +9949,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverlicences
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
+- driver license
+- driver licenses
 - Treiber Lizenz
 - Treiber Lizenzen
 - driverslic
@@ -10057,9 +9961,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverslicenses
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
-- Treiber Lizenz
+- drivers license
+- drivers licenses
+- drivers licence
 - Treiber Lizenzen
 - driver'lic
 - driver'lics
@@ -10081,9 +9985,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'slicences
 - lic-Treiber
 - LiCS des Treibers
-- Führerschein
-- Treiber Lizenzen
-- Führerschein
+- driver's license
+- driver's licenses
+- driver's licence
 - Führerscheine
 - DL #
 - DLS #
@@ -10134,9 +10038,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Treiber Lizenzen #
 - Führerschein #
 - Führerscheine #
-- driving licence
- 
-- Führerschein
+- Führerschein 
+- driving license
 - dlno #
 - Driv lic
 - Driv-Läuse
@@ -10151,9 +10054,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Steuern von Läusen
 - Steuern von Lizenzen
 - driving licence
-
 - driving licences
-
 - Führerschein
 - DL Nein
 - dlno
@@ -10248,22 +10149,19 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - ID #
 - ID-Code
 - identification number
-
-- identifikācijas numurs
+- identifikācijas numurs
 - ID-Nummer
 - einzelne Nummer
 - a. Alva
 - Nacionālais-ID
-- 
-national id
+- national id
 - nationale Identifikationsnummer
 - nationale Identitätsnummer
 - national insurance number
-
 - nationalregisternummer
-- nodokļa numurs
+- nodokļa numurs
 - nodokļu-ID
-- nodokļu identifikācija numurs
+- nodokļu identifikācija numurs
 - persönliche Zertifikat Nummer
 - persönlicher Code
 - persönlicher ID-Code
@@ -10277,15 +10175,13 @@ national id
 - Personas KODS
 - Code für die Bevölkerungs Identifikation
 - öffentliche Dienstnummer
-- 
-registration number
+- registration number
 - Umsatz Nummer
-- Sozialversicherungsnummer
-- Sozialversicherungsnummer
+- social insurance number
+- social security number
 - Landessteuer Code
-- Steuerdatei Nummer
+- tax file number
 - tax id
-
 - Steueridentifikationsnummer
 - Steueridentifikationsnummer
 - Steuernummer #
@@ -10344,13 +10240,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - Pass #
-- Pass #
+- Pass #
 - Passport-Nr
 - Pässe
 - passportno
 - Passport-Nummer
 - passportnumber
-- Passnummer
+- passport number
 - passportnumbers
 - Passport-Nummern
 
@@ -10409,8 +10305,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverlicences
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
+- driver license
+- driver licenses
 - Treiber Lizenz
 - Treiber Lizenzen
 - driverslic
@@ -10421,9 +10317,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverslicenses
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
-- Treiber Lizenz
+- drivers license
+- drivers licenses
+- drivers licence
 - Treiber Lizenzen
 - driver'lic
 - driver'lics
@@ -10445,9 +10341,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'slicences
 - lic-Treiber
 - LiCS des Treibers
-- Führerschein
-- Treiber Lizenzen
-- Führerschein
+- driver's license
+- driver's licenses
+- driver's licence
 - Führerscheine
 - DL #
 - DLS #
@@ -10498,9 +10394,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Treiber Lizenzen #
 - Führerschein #
 - Führerscheine #
-- driving licence
- 
-- Führerschein
+- Führerschein 
+- driving license
 - dlno #
 - Driv lic
 - Driv-Läuse
@@ -10515,9 +10410,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Steuern von Läusen
 - Steuern von Lizenzen
 - driving licence
-
 - driving licences
-
 - Führerschein
 - DL Nein
 - dlno
@@ -10592,12 +10485,11 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - mokesčių identifikavimas Numeris
 - mokesčių identifikavimo Numeris
 - mokesčių Numeris
-- nationale Identifikationsnummer
+- national identification number
 - persönlicher Code
 - persönlicher numerischer Code
 - piliečio paslaugos Numeris
 - tax id
-
 - Steueridentifikationsnummer
 - Steueridentifikationsnummer
 - Steuernummer #
@@ -10658,13 +10550,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - Pass #
-- Pass #
+- Pass #
 - Passport-Nr
 - Pässe
 - passportno
 - Passport-Nummer
 - passportnumber
-- Passnummer
+- passport number
 - passportnumbers
 - Passport-Nummern
 
@@ -10720,8 +10612,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverlicences
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
+- driver license
+- driver licenses
 - Treiber Lizenz
 - Treiber Lizenzen
 - driverslic
@@ -10732,9 +10624,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverslicenses
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
-- Treiber Lizenz
+- drivers license
+- drivers licenses
+- drivers licence
 - Treiber Lizenzen
 - driver'lic
 - driver'lics
@@ -10756,9 +10648,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'slicences
 - lic-Treiber
 - LiCS des Treibers
-- Führerschein
-- Treiber Lizenzen
-- Führerschein
+- driver's license
+- driver's licenses
+- driver's licence
 - Führerscheine
 - DL #
 - DLS #
@@ -10809,9 +10701,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Treiber Lizenzen #
 - Führerschein #
 - Führerscheine #
-- driving licence
- 
-- Führerschein
+- Führerschein 
+- driving license
 - dlno #
 - Driv lic
 - Driv-Läuse
@@ -10826,9 +10717,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Steuern von Läusen
 - Steuern von Lizenzen
 - driving licence
-
 - driving licences
-
 - Führerschein
 - DL Nein
 - dlno
@@ -10910,7 +10799,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - persönliche Identität
 - personalidno #
 - personalidnumber #
-- persönliche identifikationsnummer
+- persönliche identifikationsnummer
 - eindeutige ID
 - eindeutige Identität
 - uniqueidkey #
@@ -11016,7 +10905,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Numéro d'étain
 - Numéro d'identification Fiscal Luxembourgeois
 - Numéro d'identification Fiscale
-- soziale Sicherheit
+- social security
 - sozialunterstützung
 - sozialversécherung
 - sozialversicherungsausweis
@@ -11027,7 +10916,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - steueridentifikationsnummer
 - Steuernummer
 - tax id
-
 - Steueridentifikationsnummer
 - Steueridentifikationsnummer
 - Steuernummer #
@@ -11166,8 +11054,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverlicences
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
+- driver license
+- driver licenses
 - Treiber Lizenz
 - Treiber Lizenzen
 - driverslic
@@ -11178,9 +11066,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverslicenses
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
-- Treiber Lizenz
+- drivers license
+- drivers licenses
+- drivers licence
 - Treiber Lizenzen
 - driver'lic
 - driver'lics
@@ -11202,9 +11090,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'slicences
 - lic-Treiber
 - LiCS des Treibers
-- Führerschein
-- Treiber Lizenzen
-- Führerschein
+- driver's license
+- driver's licenses
+- driver's licence
 - Führerscheine
 - DL #
 - DLS #
@@ -11255,9 +11143,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Treiber Lizenzen #
 - Führerschein #
 - Führerscheine #
-- driving licence
- 
-- Führerschein
+- Führerschein 
+- driving license
 - dlno #
 - Driv lic
 - Driv-Läuse
@@ -11272,9 +11159,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Steuern von Läusen
 - Steuern von Lizenzen
 - driving licence
-
 - driving licences
-
 - Führerschein
 - DL Nein
 - dlno
@@ -11391,13 +11276,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - Pass #
-- Pass #
+- Pass #
 - Passport-Nr
 - Pässe
 - passportno
 - Passport-Nummer
 - passportnumber
-- Passnummer
+- passport number
 - passportnumbers
 - Passport-Nummern
 
@@ -11477,7 +11362,6 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 - numru tat-Taxxa
 - persönlicher numerischer Code
 - tax id
-
 - Steueridentifikationsnummer
 - Steueridentifikationsnummer
 - Steuernummer #
@@ -11605,8 +11489,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverlicences
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
+- driver license
+- driver licenses
 - Treiber Lizenz
 - Treiber Lizenzen
 - driverslic
@@ -11617,9 +11501,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverslicenses
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
-- Treiber Lizenz
+- drivers license
+- drivers licenses
+- drivers licence
 - Treiber Lizenzen
 - driver'lic
 - driver'lics
@@ -11641,9 +11525,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'slicences
 - lic-Treiber
 - LiCS des Treibers
-- Führerschein
-- Treiber Lizenzen
-- Führerschein
+- driver's license
+- driver's licenses
+- driver's licence
 - Führerscheine
 - DL #
 - DLS #
@@ -11694,9 +11578,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Treiber Lizenzen #
 - Führerschein #
 - Führerscheine #
-- driving licence
- 
-- Führerschein
+- Führerschein 
+- driving license
 - dlno #
 - Driv lic
 - Driv-Läuse
@@ -11711,9 +11594,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Steuern von Läusen
 - Steuern von Lizenzen
 - driving licence
-
 - driving licences
-
 - Führerschein
 - DL Nein
 - dlno
@@ -11837,7 +11718,6 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 - Niederlande Tin
 - niederländische Zinn
 - tax id
-
 - Steueridentifikationsnummer
 - Steueridentifikationsnummer
 - Steueridentifikation Tal
@@ -11974,7 +11854,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 #### <a name="keyword_new_zealand_bank_account_number"></a>Keyword_new_zealand_bank_account_number
 
-- Kontonummer
+- account number
 - Bank Konto
 - bank_acct_id
 - bank_acct_branch
@@ -12040,7 +11920,7 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 - driverslicences
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
+- drivers licence
 - Treiber Lizenzen
 - driver'lic
 - driver'lics
@@ -12056,7 +11936,7 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 - driver'slicences
 - lic-Treiber
 - LiCS des Treibers
-- Führerschein
+- driver's licence
 - Führerscheine
 - driverlic #
 - driverlics #
@@ -12090,8 +11970,7 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 - LiCS des Treibers #
 - Führerschein #
 - Führerscheine #
-- 
-international driving permit
+- international driving permit
 - international driving permits
 - NZ Automobile Association
 - New Zealand Automotive Association
@@ -12253,7 +12132,7 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 
 #### <a name="keyword_new_zealand_social_welfare_number"></a>Keyword_new_zealand_social_welfare_number
 
-- soziale Wohlfahrt #
+- soziale Wohlfahrt #
 - soziale Wohlfahrt #
 - soziale Wohlfahrt Nr.
 - Sozialversicherungsnummer
@@ -12409,8 +12288,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverlicences
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
+- driver license
+- driver licenses
 - Treiber Lizenz
 - Treiber Lizenzen
 - driverslic
@@ -12421,9 +12300,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverslicenses
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
-- Treiber Lizenz
+- drivers license
+- drivers licenses
+- drivers licence
 - Treiber Lizenzen
 - driver'lic
 - driver'lics
@@ -12445,9 +12324,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'slicences
 - lic-Treiber
 - LiCS des Treibers
-- Führerschein
-- Treiber Lizenzen
-- Führerschein
+- driver's license
+- driver's licenses
+- driver's licence
 - Führerscheine
 - DL #
 - DLS #
@@ -12498,9 +12377,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Treiber Lizenzen #
 - Führerschein #
 - Führerscheine #
-- driving licence
- 
-- Führerschein
+- Führerschein 
+- driving license
 - dlno #
 - Driv lic
 - Driv-Läuse
@@ -12515,9 +12393,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Steuern von Läusen
 - Steuern von Lizenzen
 - driving licence
-
 - driving licences
-
 - Führerschein
 - DL Nein
 - dlno
@@ -12781,7 +12657,6 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 - Numer identyfikacji podatkowej
 - numeridentyfikacjipodatkowej #
 - tax id
-
 - Steueridentifikationsnummer
 - Steueridentifikationsnummer
 - Steuernummer #
@@ -12848,7 +12723,6 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 - ID-Nummer
 - Identifikationsnummer
 - identification number
-
 - Personalausweis Nr.
 - Personalausweisnummer
 - nationale ID-Karte
@@ -12919,8 +12793,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverlicences
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
+- driver license
+- driver licenses
 - Treiber Lizenz
 - Treiber Lizenzen
 - driverslic
@@ -12931,9 +12805,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverslicenses
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
-- Treiber Lizenz
+- drivers license
+- drivers licenses
+- drivers licence
 - Treiber Lizenzen
 - driver'lic
 - driver'lics
@@ -12955,9 +12829,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'slicences
 - lic-Treiber
 - LiCS des Treibers
-- Führerschein
-- Treiber Lizenzen
-- Führerschein
+- driver's license
+- driver's licenses
+- driver's licence
 - Führerscheine
 - DL #
 - DLS #
@@ -13008,9 +12882,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Treiber Lizenzen #
 - Führerschein #
 - Führerscheine #
-- driving licence
- 
-- Führerschein
+- Führerschein 
+- driving license
 - dlno #
 - Driv lic
 - Driv-Läuse
@@ -13025,9 +12898,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Steuern von Läusen
 - Steuern von Lizenzen
 - driving licence
-
 - driving licences
-
 - Führerschein
 - DL Nein
 - dlno
@@ -13089,13 +12960,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - Pass #
-- Pass #
+- Pass #
 - Passport-Nr
 - Pässe
 - passportno
 - Passport-Nummer
 - passportnumber
-- Passnummer
+- passport number
 - passportnumbers
 - Passport-Nummern
 
@@ -13163,7 +13034,6 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 - número de identificação fisca
 - numerisch-Geschäftsjahr
 - tax id
-
 - Steueridentifikationsnummer
 - Steueridentifikationsnummer
 - Steuernummer #
@@ -13229,8 +13099,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverlicences
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
+- driver license
+- driver licenses
 - Treiber Lizenz
 - Treiber Lizenzen
 - driverslic
@@ -13241,9 +13111,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverslicenses
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
-- Treiber Lizenz
+- drivers license
+- drivers licenses
+- drivers licence
 - Treiber Lizenzen
 - driver'lic
 - driver'lics
@@ -13265,9 +13135,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'slicences
 - lic-Treiber
 - LiCS des Treibers
-- Führerschein
-- Treiber Lizenzen
-- Führerschein
+- driver's license
+- driver's licenses
+- driver's licence
 - Führerscheine
 - DL #
 - DLS #
@@ -13318,9 +13188,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Treiber Lizenzen #
 - Führerschein #
 - Führerscheine #
-- driving licence
- 
-- Führerschein
+- Führerschein 
+- driving license
 - dlno #
 - Driv lic
 - Driv-Läuse
@@ -13335,9 +13204,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Steuern von Läusen
 - Steuern von Lizenzen
 - driving licence
-
 - driving licences
-
 - Führerschein
 - DL Nein
 - dlno
@@ -13414,11 +13281,10 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Versicherungsnummer
 - insurancenumber #
 - nationale ID #
-- 
-national id
-- nationale Identifikationsnummer
+- national id
+- national identification number
 - număr identificare Personal
-- număr identitate
+- număr identitate
 - număr Personal Unic
 - număridentitate #
 - număridentitate
@@ -13430,9 +13296,8 @@ national id
 - PIN #
 - PIN
 - Steuerdatei Nein
-- Steuerdatei Nummer
+- tax file number
 - tax id
-
 - Steueridentifikationsnummer
 - Steueridentifikationsnummer
 - Steuernummer #
@@ -13492,13 +13357,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - Pass #
-- Pass #
+- Pass #
 - Passport-Nr
 - Pässe
 - passportno
 - Passport-Nummer
 - passportnumber
-- Passnummer
+- passport number
 - passportnumbers
 - Passport-Nummern
 
@@ -13552,19 +13417,19 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 #### <a name="keyword_russia_passport_number_domestic"></a>Keyword_russia_passport_number_domestic
 
-- Passnummer
+- passport number
 - Passport-Nummer
-- Pass #
+- Pass #
 - Passport-ID
 - passportno #
 - passportnumber #
 - паспорт нет
 - паспорт-ID
-- pоссийской паспорт
+- pоссийской паспорт
 - Pусский номер паспорта
 - паспорт #
 - паспортid #
-- номер паспорта
+- номер паспорта
 - номерпаспорта #
 
 
@@ -13612,19 +13477,19 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 #### <a name="keywords_russia_passport_number_international"></a>Keywords_russia_passport_number_international
 
-- Passnummer
+- passport number
 - Passport-Nummer
-- Pass #
+- Pass #
 - Passport-ID
 - passportno #
 - passportnumber #
 - паспорт нет
 - паспорт-ID
-- pоссийской паспорт
+- pоссийской паспорт
 - Pусский номер паспорта
 - паспорт #
 - паспортid #
-- номер паспорта
+- номер паспорта
 - номерпаспорта #
 
 
@@ -13773,8 +13638,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverlicences
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
+- driver license
+- driver licenses
 - Treiber Lizenz
 - Treiber Lizenzen
 - driverslic
@@ -13785,9 +13650,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverslicenses
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
-- Treiber Lizenz
+- drivers license
+- drivers licenses
+- drivers licence
 - Treiber Lizenzen
 - driver'lic
 - driver'lics
@@ -13809,9 +13674,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'slicences
 - lic-Treiber
 - LiCS des Treibers
-- Führerschein
-- Treiber Lizenzen
-- Führerschein
+- driver's license
+- driver's licenses
+- driver's licence
 - Führerscheine
 - DL #
 - DLS #
@@ -13862,9 +13727,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Treiber Lizenzen #
 - Führerschein #
 - Führerscheine #
-- driving licence
- 
-- Führerschein
+- Führerschein 
+- driving license
 - dlno #
 - Driv lic
 - Driv-Läuse
@@ -13879,9 +13743,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Steuern von Läusen
 - Steuern von Lizenzen
 - driving licence
-
 - driving licences
-
 - Führerschein
 - DL Nein
 - dlno
@@ -13945,17 +13807,16 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 
 #### <a name="keywords_slovakia_eu_national_id_card"></a>Keywords_slovakia_eu_national_id_card
 
-- azonosító szám
+- azonosító szám
 - Geburtsnummer
 - číslo národnej identifikačnej karty
-- číslo občianského preukazu
-- daňové číslo
+- číslo občianského preukazu
+- daňové číslo
 - ID-Nummer
 - Identifikationsnummer
 - identification number
-
 - identifikačná Karta č
-- identifikačné číslo
+- identifikačné číslo
 - Personalausweis Nr.
 - Personalausweisnummer
 - Národná identifikačná značka č
@@ -13964,18 +13825,17 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 - Nemzeti személyazonosító igazolvány
 - personalidnumber #
 - rč
-- rodne cislo
-- rodné číslo
-- Sozialversicherungsnummer
+- rodne cislo
+- rodné číslo
+- social security number
 - SSN #
 - SSN
-- személyi igazolvány szám
-- személyi igazolvány száma
-- személyigazolvány szám
+- személyi igazolvány szám
+- személyi igazolvány száma
+- személyigazolvány szám
 - Steuerdatei Nein
-- Steuerdatei Nummer
+- tax file number
 - tax id
-
 - Steueridentifikationsnummer
 - Steueridentifikationsnummer
 - Steuernummer #
@@ -14031,13 +13891,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - Pass #
-- Pass #
+- Pass #
 - Passport-Nr
 - Pässe
 - passportno
 - Passport-Nummer
 - passportnumber
-- Passnummer
+- passport number
 - passportnumbers
 - Passport-Nummern
 
@@ -14095,8 +13955,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverlicences
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
+- driver license
+- driver licenses
 - Treiber Lizenz
 - Treiber Lizenzen
 - driverslic
@@ -14107,9 +13967,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverslicenses
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
-- Treiber Lizenz
+- drivers license
+- drivers licenses
+- drivers licence
 - Treiber Lizenzen
 - driver'lic
 - driver'lics
@@ -14131,9 +13991,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'slicences
 - lic-Treiber
 - LiCS des Treibers
-- Führerschein
-- Treiber Lizenzen
-- Führerschein
+- driver's license
+- driver's licenses
+- driver's licence
 - Führerscheine
 - DL #
 - DLS #
@@ -14184,9 +14044,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Treiber Lizenzen #
 - Führerschein #
 - Führerscheine #
-- driving licence
- 
-- Führerschein
+- Führerschein 
+- driving license
 - dlno #
 - Driv lic
 - Driv-Läuse
@@ -14201,9 +14060,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Steuern von Läusen
 - Steuern von Lizenzen
 - driving licence
-
 - driving licences
-
 - Führerschein
 - DL Nein
 - dlno
@@ -14269,32 +14126,30 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 #### <a name="keywords_slovenia_eu_national_id_card"></a>Keywords_slovenia_eu_national_id_card
 
-- edinstvena številka glavnega državljana
+- edinstvena številka glavnega državljana
 - EMŠO
 - Enotna maticna številka obcana
-- ID-Karte
+- id card
 - identification number
-
-- identifikacijska številka
-- Personalausweis
+- identifikacijska številka
+- identity card
 - Nacionalna-ID
 - Nacionalni-potni-Liste
-- 
-national id
-- osebna izkaznica
+- national id
+- osebna izkaznica
 - osebni koda
 - osebni ne
-- osebni številka
+- osebni številka
 - persönlicher Code
 - persönliche Nummer
 - persönlicher numerischer Code
-- številka državljana
+- številka državljana
 - eindeutige Bürgerzahl
 - eindeutige ID-Nummer
 - eindeutige Identitätsnummer
 - eindeutige Master Bürgerzahl
 - eindeutige Registrierungsnummer
-- uniqueidentityno #
+- uniqueidentityno #
 - uniqueidentityno #
 
 ## <a name="slovenia-passport-number"></a>Slowenische Passnummer
@@ -14340,13 +14195,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - Pass #
-- Pass #
+- Pass #
 - Passport-Nr
 - Pässe
 - passportno
 - Passport-Nummer
 - passportnumber
-- Passnummer
+- passport number
 - passportnumbers
 - Passport-Nummern
 
@@ -14407,13 +14262,12 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 
 #### <a name="keywords_slovenia_eu_tax_file_number"></a>Keywords_slovenia_eu_tax_file_number
 
-- davčna številka
+- davčna številka
 - identifikacijska številka beim Davka
-- številka davčne datoteke
+- številka davčne datoteke
 - Steuerdatei Nein
-- Steuerdatei Nummer
+- tax file number
 - tax id
-
 - Steueridentifikationsnummer
 - Steueridentifikationsnummer
 - Steuernummer #
@@ -14594,8 +14448,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverlicences
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
+- driver license
+- driver licenses
 - Treiber Lizenz
 - Treiber Lizenzen
 - driverslic
@@ -14606,9 +14460,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverslicenses
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
-- Treiber Lizenz
+- drivers license
+- drivers licenses
+- drivers licence
 - Treiber Lizenzen
 - driver'lic
 - driver'lics
@@ -14630,9 +14484,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'slicences
 - lic-Treiber
 - LiCS des Treibers
-- Führerschein
-- Treiber Lizenzen
-- Führerschein
+- driver's license
+- driver's licenses
+- driver's licence
 - Führerscheine
 - DL #
 - DLS #
@@ -14683,9 +14537,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Treiber Lizenzen #
 - Führerschein #
 - Führerscheine #
-- driving licence
- 
-- Führerschein
+- Führerschein 
+- driving license
 - dlno #
 - Driv lic
 - Driv-Läuse
@@ -14700,9 +14553,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Steuern von Läusen
 - Steuern von Lizenzen
 - driving licence
-
 - driving licences
-
 - Führerschein
 - DL Nein
 - dlno
@@ -14790,7 +14641,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Identidad Único
 - identidadúnico #
 - Versicherungsnummer
-- nationale Identifikationsnummer
+- national identification number
 - nationale Identität
 - National-Nr. #
 - nationalidno #
@@ -14847,13 +14698,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - Pass #
-- Pass #
+- Pass #
 - Passport-Nr
 - Pässe
 - passportno
 - Passport-Nummer
 - passportnumber
-- Passnummer
+- passport number
 - passportnumbers
 - Passport-Nummern
 
@@ -15003,9 +14854,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - spanishcifno #
 - spanishcifno
 - Steuerdatei Nein
-- Steuerdatei Nummer
+- tax file number
 - tax id
-
 - Steueridentifikationsnummer
 - Steueridentifikationsnummer
 - Steuernummer #
@@ -15149,8 +14999,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverlicences
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
+- driver license
+- driver licenses
 - Treiber Lizenz
 - Treiber Lizenzen
 - driverslic
@@ -15161,9 +15011,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driverslicenses
 - Treiber lic
 - Treiber LiCS
-- Treiber Lizenz
-- Treiber Lizenzen
-- Treiber Lizenz
+- drivers license
+- drivers licenses
+- drivers licence
 - Treiber Lizenzen
 - driver'lic
 - driver'lics
@@ -15185,9 +15035,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'slicences
 - lic-Treiber
 - LiCS des Treibers
-- Führerschein
-- Treiber Lizenzen
-- Führerschein
+- driver's license
+- driver's licenses
+- driver's licence
 - Führerscheine
 - DL #
 - DLS #
@@ -15238,9 +15088,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Treiber Lizenzen #
 - Führerschein #
 - Führerscheine #
-- driving licence
- 
-- Führerschein
+- Führerschein 
+- driving license
 - dlno #
 - Driv lic
 - Driv-Läuse
@@ -15255,9 +15104,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Steuern von Läusen
 - Steuern von Lizenzen
 - driving licence
-
 - driving licences
-
 - Führerschein
 - DL Nein
 - dlno
@@ -15330,7 +15177,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - ID #
 - Identifikationsnummer
 - identification number
-
 - identifikationsnumret #
 - identifikationsnumret
 - identitetshandling
@@ -15536,11 +15382,10 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - personnummer
 - Skate ID Nummer
 - skatt Identifikation
-- skattebetalarens identifikationsnummer
+- skattebetalarens identifikationsnummer
 - Sverige Tin
 - Steuerdatei
 - tax id
-
 - Steueridentifikationsnummer
 - Steueridentifikationsnummer
 - Steuernummer #
@@ -15597,41 +15442,28 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keyword_swift"></a>Keyword_swift
 
 - international organization for standardization 9362
-
 - iso 9362
 - iso9362
 - SWIFT #
 - Swiftcode
 - swiftnumber
 - swiftroutingnumber
-- SWIFT-Code
+- swift code
 - swift number #
-
 - swift routing number
-
 - bic number
-
 - bic code
-
 - bic #
 - BIC #
 - bank identifier code
-
 - Organisation internationale de normalisation 9362
-
 - rapide #
-
 - code SWIFT
-
 - le numéro de swift
-
 - swift numéro d'acheminement
-
 - le numéro BIC
-
-- # <a name="bic"></a>BIC
+- # <a name="bic"></a>BIC
 - code identificateur de banque
-
 - SWIFTコード
 - SWIFT番号
 - BIC番号
@@ -15703,7 +15535,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - pid
 - Versicherungsnummer
 - personalidno #
-- Sozialversicherungsnummer
+- social security number
 - persönliche ID-Nummer
 - persönliche Identifikationsnummer
 - insuranceno #
@@ -15715,8 +15547,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - einzigartige Identität nicht
 - sozialversicherungsnummer
 - Identifikation personnelle ID
-- 
-numéro de sécurité sociale
+- numéro de sécurité sociale
 
    
 ## <a name="taiwan-national-identification-number"></a>Taiwan nationale Identifikationsnummer
@@ -16193,26 +16024,19 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keyword_uk_nino"></a>Keyword_uk_nino
 
 - national insurance number
-
 - national insurance contributions
-
 - protection act
 - Versicherungs
-- Sozialversicherungsnummer
+- social security number
 - insurance application
-
 - medical application
-
 - social insurance
-
 - medical attention
-
-- soziale Sicherheit
+- social security
 - great britain
-
 - NI-Nummer
 - NI-Nr.
-- NI #
+- NI #
 - NI #
 - Versicherungs #
 - insurancenumber
@@ -16264,7 +16088,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Steuernummer
 - Steuerdatei
 - tax id
-
 - Steueridentifikationsnummer
 - Steueridentifikationsnummer
 - Steuernummer #
@@ -16284,11 +16107,11 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="format"></a>Format
 
-8-17 Ziffern
+6-17 Ziffern
 
 ### <a name="pattern"></a>Muster
 
-8-17 aufeinanderfolgende Ziffern
+6-17 aufeinanderfolgende Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -16525,41 +16348,33 @@ Nein
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Die Funktion Func_formatted_itin findet Inhalte, die dem Muster entsprechen.
-- Mindestens eine der folgenden Bedingungen trifft zu:
-    - Ein Schlüsselwort aus Keyword_itin wurde gefunden.
-    - Die Funktion Func_us_address findet eine Adresse im richtigen Format.
-    - Die Funktion Func_us_date findet ein Datum im richtigen Datumsformat.
-    - Ein Schlüsselwort aus Keyword_itin_collaborative wurde gefunden.
+- Ein Schlüsselwort aus Keyword_itin wurde gefunden.
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Die Funktion Func_unformatted_itin findet Inhalte, die dem Muster entsprechen.
-- Mindestens eine der folgenden Bedingungen trifft zu:
-    - Ein Schlüsselwort aus Keyword_itin_collaborative wurde gefunden.
-    - Die Funktion Func_us_address findet eine Adresse im richtigen Format.
-    - Die Funktion Func_us_date findet ein Datum im richtigen Datumsformat.
+- Ein Schlüsselwort aus Keyword_itin wurde gefunden.
+
+Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+- Die Funktion Func_formatted_itin oder Func_unformatted_itin findet Inhalte, die mit dem Muster übereinstimmen.
 
 ```xml
-<!-- U.S. Individual Taxpayer Identification Number (ITIN) -->
-<Entity id="e55e2a32-f92d-4985-a35d-a0b269eb687b" patternsProximity="300" recommendedConfidence="75">
-    <Pattern confidenceLevel="85">
+    <!-- U.S. Individual Taxpayer Identification Number (ITIN) -->
+    <Entity id="e55e2a32-f92d-4985-a35d-a0b269eb687b" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_formatted_itin" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_itin" />
-          <Match idRef="Func_us_address" />
-          <Match idRef="Func_us_date" />
-          <Match idRef="Keyword_itin_collaborative" />
-        </Any>
-    </Pattern>
-    <Pattern confidenceLevel="75">
+        <Match idRef="Keyword_itin" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_unformatted_itin" />
         <Match idRef="Keyword_itin" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_itin_collaborative" />
-          <Match idRef="Func_us_address" />
-          <Match idRef="Func_us_date" />
-        </Any>
-    </Pattern>
-</Entity>
+      </Pattern>
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Func_formatted_itin" />
+      </Pattern>
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Func_unformatted_itin" />
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>Schlüsselwörter
@@ -16570,6 +16385,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - tax id 
 - tax identification 
 - Itin 
+- i.t.i.n.
 - SSN 
 - Zinn 
 - social security 
@@ -16578,14 +16394,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - per Taxi 
 - individual taxpayer 
 
-#### <a name="keyword_itin_collaborative"></a>Keyword_itin_collaborative
-
-- Lizenz 
-- DL 
-- DOB 
-- Geburtsdatum 
-- Geburtstag 
-- Date of Birth 
 
 ## <a name="us-social-security-number-ssn"></a>US-Sozialversicherungsnummer (SSN)
 
@@ -16761,10 +16569,10 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keyword_ukraine_passport_domestic"></a>Keyword_ukraine_passport_domestic
 
 - Ukraine Reisepass
-- Passnummer
+- passport number
 - Passport-Nummer
-- паспорт України
-- номер паспорта
+- паспорт України
+- номер паспорта
 - персональний
 
 
@@ -16811,7 +16619,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keyword_ukraine_passport_international"></a>Keyword_ukraine_passport_international
 
 - Ukraine Reisepass
-- Passnummer
+- passport number
 - Passport-Nummer
-- паспорт України
-- номер паспорта
+- паспорт України
+- номер паспорта

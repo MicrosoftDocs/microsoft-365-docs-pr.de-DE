@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Hier erfahren Sie, wie Sie DLP-Richtlinien für nicht-Microsoft-Cloud-Apps verwenden.
-ms.openlocfilehash: dd5a7a4bc0725d0785daec6b7635047cd91f20a2
-ms.sourcegitcommit: 39af527404cb06e05c5aa4550dbec39aec133016
+ms.openlocfilehash: 0b588bf27738a0f9a8078999311294f74e5193c0
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "48422734"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649656"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps-preview"></a>Verwenden von Richtlinien zur Verhinderung von Datenverlust für nicht-Microsoft-Cloud-Apps (Vorschau)
 
@@ -45,7 +45,7 @@ Bevor Sie mit der Verwendung von DLP-Richtlinien für nicht-Microsoft-Cloud-apps
 
 ### <a name="prepare-your-cloud-app-security-environment"></a>Vorbereiten der Cloud-App-Sicherheitsumgebung
 
-DLP-Richtlinien für nicht-Microsoft-Cloud-Apps verwenden Cloud App Security DLP-Funktionen. Um Sie zu verwenden, sollten Sie Ihre Cloud-App-Sicherheitsumgebung vorbereiten. Anweisungen finden Sie unter [Festlegen von isntant-Sichtbarkeits-, Schutz-und Steuerungsaktionen für Ihre apps](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security#step-1-set-instant-visibility-protection-and-governance-actions-for-your-apps).
+DLP-Richtlinien für nicht-Microsoft-Cloud-Apps verwenden Cloud App Security DLP-Funktionen. Um Sie zu verwenden, sollten Sie Ihre Cloud-App-Sicherheitsumgebung vorbereiten. Anweisungen finden Sie unter [Festlegen von sofort Sichtbarkeits-, Schutz-und Steuerungsaktionen für Ihre apps](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security#step-1-set-instant-visibility-protection-and-governance-actions-for-your-apps).
 
 ### <a name="connect-a-non-microsoft-cloud-app"></a>Verbinden einer nicht-Microsoft-Cloud-App
 

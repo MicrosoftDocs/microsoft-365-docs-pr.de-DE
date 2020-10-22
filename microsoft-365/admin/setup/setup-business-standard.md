@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: sirkkuw
 author: sirkkuw
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Erfahren Sie, wie Sie Ihr Microsoft 365 Business Standard-Abonnement einrichten.
-ms.openlocfilehash: cfc198c749cfcaa76bc3fa6323e1dba8a46e7388
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: e69a3c75d77a8b4721558e72526a068df643f284
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324446"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644555"
 ---
 # <a name="set-up-microsoft-business-standard"></a>Einrichten von Microsoft Business Standard
 
@@ -40,7 +40,7 @@ Sehen Sie sich ein kurzes Video zum Einrichten von Microsoft 365 Business Standa
 
 Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) an.
   
- *Diese Schritte gelten für Unternehmen und [gemeinnützige Einrichtungen](https://go.microsoft.com/fwlink/p/?LinkId=627221), die über den **[Microsoft 365 Business Standard-Plan verfügen.](https://go.microsoft.com/fwlink/p/?LinkId=627220)***
+ *Diese Schritte gelten für Unternehmen und [gemeinnützige Organisationen](https://go.microsoft.com/fwlink/p/?LinkId=627221) die den **[Microsoft 365 Business Standard-Plan haben.](https://go.microsoft.com/fwlink/p/?LinkId=627220)**_
 
 Sehen Sie sich ein kurzes Video zum Einrichten von Microsoft 365 Business Standard (vormals Office 365 Business Premium) an.<br><br>
 
@@ -56,7 +56,7 @@ Wenn Sie Microsoft 365 Business Standard erwerben, haben Sie die Möglichkeit, e
 
 1. Melden Sie sich mit den Anmeldeinformationen des globalen Administrators bei [Microsoft 365 Admin Center](https://admin.microsoft.com) an. 
 
-2. Wählen Sie **Zu Setup wechseln** aus, um den Assistenten zu starten.
+2. Wählen Sie _*Zu Setup wechseln* aus, um den Assistenten zu starten.
 
 3. Auf der Seite **Office-Anwendungen installieren** können Sie die Apps optional auf Ihrem eigenen Computer installieren.
     

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 7f1d3e13aebe7c7924732922bbbfc7417622d8c5
-ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
+ms.openlocfilehash: 4ede013a1c9a9bd054fc6965cbb12b5bbabb0b5e
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48626188"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651407"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referenz zur Kommunikation Compliance-Feature
 
@@ -335,6 +335,9 @@ Wenn Sie den in einer Warnungs Richtlinie für eine bestimmte Kommunikations Kon
 [Microsoft Power Automation](https://docs.microsoft.com/power-automate/getting-started) ist ein Workflowdienst, der Aktionen zwischen Anwendungen und Diensten automatisiert. Durch die Verwendung von Flows aus Vorlagen oder manuell erstellt, können Sie allgemeine Aufgaben automatisieren, die mit diesen Anwendungen und Diensten verbunden sind. Wenn Sie Power Automation Flows für die Kommunikations Konformität aktivieren, können Sie wichtige Aufgaben für Warnungen und Benutzer automatisieren. Sie können Power-Automatisierungs Flüsse so konfigurieren, dass Vorgesetzte benachrichtigt werden, wenn Benutzer über Kommunikations Konformitäts Benachrichtigungen und andere Anwendungen verfügen.
 
 Kunden mit Microsoft 365-Abonnements, die die Kompatibilität mit der Kommunikation einbeziehen, benötigen keine zusätzlichen Power-Automatisierungs Lizenzen, um die empfohlene standardmäßige Kommunikations Kompatibilitäts Power-Automatisierungs Vorlage zu verwenden. Die Standardvorlage kann angepasst werden, um Ihre Organisation zu unterstützen und die wichtigsten Szenarien für die Kommunikations Konformität zu behandeln. Wenn Sie sich für die Verwendung von Premium Power Automation-Funktionen in diesen Vorlagen entscheiden, eine benutzerdefinierte Vorlage mit dem Microsoft 365-Konformitäts-Konnektor erstellen oder Power automatisieren-Vorlagen für andere Kompatibilitäts Bereiche in Microsoft 365 verwenden, benötigen Sie möglicherweise zusätzliche Power automatisieren-Lizenzen.
+
+>[!IMPORTANT]
+>Erhalten Sie Aufforderungen zur zusätzlichen Lizenzüberprüfung beim Testen des Power-Automatisierungs Flusses? Möglicherweise hat Ihre Organisation noch keine dienstupdates für diese Vorschaufunktion erhalten. Updates werden bereitgestellt, und alle Organisationen mit Microsoft 365-Abonnements, die die Kompatibilitäts Kompatibilität umfassen, sollten über Lizenzunterstützung für Flows verfügen, die von den empfohlenen Power-Automatisierungs Vorlagen bis zum 30. Oktober 2020 erstellt wurden.
 
 ![Kommunikation Compliance Power automatisieren](../media/communication-compliance-power-automate.png)
 

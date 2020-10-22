@@ -634,6 +634,8 @@
               href: attorney-privilege-detection.md
             - name: Prüfdateisätze für Unterhaltungen
               href: conversation-review-sets.md
+            - name: CJK Sprachunterstützung
+              href: ediscovery-cjk-support.md
             - name: Zuweisen von eDiscovery-Berechtigungen
               href: assign-ediscovery-permissions.md
             - name: Stichwortabfragen und Suchbedingungen

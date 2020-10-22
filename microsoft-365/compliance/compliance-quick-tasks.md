@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-compliance
 localization_priority: Normal
 description: Erfahren Sie mehr über Aufgaben, die Ihnen helfen, die Compliance in Microsoft 365 schnell zu beginnen.
-ms.openlocfilehash: 98526104d2ced7b86315b24bd2843701047a097c
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: a8fd5d72fd87fdbf9c8c3c6da094a58544efd6e8
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341181"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651361"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Schnelle Aufgaben für die ersten Schritte mit Microsoft 365 Compliance
 
@@ -68,13 +68,7 @@ Verwenden Sie Alert Policy und Alert Dashboard Tools, um benutzerdefinierte Warn
 
 Eine Schritt-für-Schritt-Anleitung zum Erstellen benutzerdefinierter Warnungsrichtlinien finden Sie unter [Warnungsrichtlinien im Security and Compliance Center](alert-policies.md).
 
-## <a name="task-5-configure-just-in-time-access-for-your-administrators"></a>Aufgabe 5: Just-in-Time-Zugriff für Ihre Administratoren konfigurieren
-
-Der Zugriff durch einige Benutzer auf vertrauliche Informationen oder wichtige Netzwerkkonfigurationseinstellungen ist ein potenzieller Weg für gefährdete Konten oder für interne Bedrohungen. Die [Verwaltung privilegierter Zugriffsrechte](privileged-access-management-overview.md) schützt Ihre Organisation vor Verstößen und hilft bei der Einhaltung bewährter Methoden, indem der ständige Zugriff auf vertrauliche Daten oder der Zugriff auf wichtige Konfigurationseinstellungen eingeschränkt wird. Anstelle von Administratoren, die über ständigen Zugriff verfügen, werden just-in-Time-Zugriffsregeln für Aufgaben implementiert, die erweiterte Berechtigungen benötigen. Durch die Aktivierung der privilegierten Zugriffsverwaltung in Microsoft 365 kann Ihre Organisation mit NULL stehenden rechten arbeiten und eine Verteidigungsstufe gegenständige administrative Zugriffs Sicherheitsrisiken bieten.
-
-Eine Schritt-für-Schritt-Anleitung zum Konfigurieren der privilegierten Zugriffsverwaltung finden Sie unter [Erste Schritte mit privilegierter Zugriffsverwaltung](privileged-access-management-configuration.md). Informationen zur Lizenzierung von privilegierten Zugriffs Verwaltungen finden Sie unter [Microsoft 365 Licensing Guidance for Security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#privileged-access-management-in-office-365).
-
-## <a name="task-6-classify-and-protect-sensitive-data"></a>Aufgabe 6: klassifizieren und schützen von vertraulichen Daten
+## <a name="task-5-classify-and-protect-sensitive-data"></a>Aufgabe 5: klassifizieren und schützen von vertraulichen Daten
 
 Im Rahmen ihrer Arbeit müssen Personen in Ihrer Organisation mit anderen Personen innerhalb und außerhalb der Organisation zusammenarbeiten. Dies bedeutet, dass Inhalte nicht mehr durch eine Firewall geschützt sind – sie können zwischen verschiedenen Geräten, Apps und Diensten hin- und herbewegt werden. Dies soll auf sichere und geschützte Weise geschehen, die den geschäftlichen Anforderungen und Compliancerichtlinien Ihrer Organisation entspricht.
 
@@ -82,7 +76,7 @@ Mit [Sensitivitäts Bezeichnungen](sensitivity-labels.md) können Sie die Daten 
 
 Eine Schritt-für-Schritt-Anleitung zum Konfigurieren und Verwenden von Sensitivitäts Bezeichnungen finden Sie unter [Erste Schritte mit Vertraulichkeits Bezeichnungen](get-started-with-sensitivity-labels.md). Informationen zur Lizenzierung von Sensitivitäts Bezeichnungen finden Sie unter [Microsoft 365 Licensing Guidance for Security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
-## <a name="task-7-configure-a-retention-policy"></a>Aufgabe 7: Konfigurieren einer Aufbewahrungsrichtlinie
+## <a name="task-6-configure-a-retention-policy"></a>Aufgabe 6: Konfigurieren einer Aufbewahrungsrichtlinie
 
 Mit einer [Aufbewahrungsrichtlinie](retention.md) können Sie proaktiv entscheiden, ob Sie Inhalte beibehalten, Inhalte löschen oder beides speichern möchten, und dann den Inhalt am Ende eines bestimmten Aufbewahrungszeitraums beibehalten und löschen. Diese Aktionen sind möglicherweise erforderlich, um Branchenvorschriften und interne Richtlinien einzuhalten und das Risiko im Fall eines Rechtsstreits oder einer Sicherheitsverletzung zu verringern.
 
@@ -92,7 +86,7 @@ Sie können schnell eine Aufbewahrungsrichtlinie für mehrere Standorte in Ihrer
 
 Eine Schritt-für-Schritt-Anleitung zum Konfigurieren einer Aufbewahrungsrichtlinie finden Sie unter [Erstellen und Konfigurieren von Aufbewahrungs](create-retention-policies.md)Richtlinien. Wenn Sie die Konfiguration der Datenaufbewahrung in Microsoft 365 zum ersten Mal durchführen möchten, lesen Sie [Erste Schritte mit Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](get-started-with-retention.md).
 
-## <a name="task-8-configure-sensitive-information-and-offensive-language-policies"></a>Aufgabe 8: Konfigurieren von vertraulichen Informationen und Richtlinien für anstößige Sprachen
+## <a name="task-7-configure-sensitive-information-and-offensive-language-policies"></a>Aufgabe 7: Konfigurieren von vertraulichen Informationen und Richtlinien für anstößige Sprachen
 
 Der Schutz vertraulicher Informationen sowie das erkennen und handeln von Belästigungs Ereignissen am Arbeitsplatz ist ein wichtiger Bestandteil der Einhaltung interner Richtlinien und Standards. Die [Kommunikations Kompatibilität](communication-compliance-feature-reference.md) in Microsoft 365 hilft, diese Risiken zu minimieren, indem Sie Ihnen helfen, schnell Wiederherstellungsaktionen für e-Mail-und Microsoft Teams-Kommunikation zu erkennen, zu erfassen und zu ergreifen. Dazu gehören unangemessene Kommunikation mit anstößigen Inhalten, Bedrohungen sowie Belästigung und Kommunikation, die vertrauliche Informationen innerhalb und außerhalb Ihrer Organisation gemeinsam nutzen.
 
@@ -102,7 +96,7 @@ Mit der vordefinierten Richtlinie für *vertrauliche Informationen* können Sie 
 
 Eine Schritt-für-Schritt-Anleitung zum Planen und Konfigurieren der Kommunikations Kompatibilität finden Sie unter [Planen der Kommunikation](communication-compliance-plan.md) Compliance und [Erste Schritte mit der Kommunikation Compliance](communication-compliance-configure.md). Informationen zur Lizenzierung von Kommunikationsrichtlinien finden Sie unter [Microsoft 365 Licensing Guidance for Security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance).
 
-## <a name="task-9-see-whats-happening-with-your-sensitive-items"></a>Aufgabe 9: sehen Sie, was mit Ihren vertraulichen Elementen passiert
+## <a name="task-8-see-whats-happening-with-your-sensitive-items"></a>Aufgabe 8: sehen Sie, was mit Ihren vertraulichen Elementen passiert
 
 Vertraulichkeits Bezeichnungen, vertrauliche Informationstypen, Aufbewahrungs Bezeichnungen und Richtlinien sowie Schulungs relevante Klassifizierungen können verwendet werden, um vertrauliche Elemente in Exchange, SharePoint und OneDrive zu klassifizieren und zu bezeichnen, wie Sie es in den vorherigen Aufgaben gesehen haben. Der letzte Schritt in ihrer schnellen Aufgabenstellung ist, zu sehen, welche Elemente beschriftet wurden und welche Aktionen Ihre Benutzer für diese vertraulichen Elemente durchführen. Diese Sichtbarkeit wird von [Inhalts-Explorer](data-classification-content-explorer.md) und [Aktivitäts-Explorer](data-classification-activity-explorer.md) bereitgestellt.
 
@@ -113,7 +107,7 @@ Eine Schritt-für-Schritt-Anleitung zur Verwendung des Inhalts-Explorers finden 
 
 ### <a name="activity-explorer"></a>Aktivitäten-Explorer
 Mit dem Aktivitäts-Explorer können Sie überwachen, was mit den vertraulichen Elementen ihrer klassifizierten und beschrifteten Elemente geschieht:
-- Microsoft Office SharePoint Online
+- SharePoint
 - Exchange
 - OneDrive
 

@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 ms.custom: seo-marvel-apr2020
 description: Die postfachüberwachungsprotokollierung ist in Microsoft 365 (auch als standardmäßige postfachüberwachung oder postfachüberwachung aktiviert) standardmäßig aktiviert. Dies bedeutet, dass bestimmte Aktionen, die von Postfachbesitzern, Stellvertretern und Administratoren ausgeführt werden, automatisch in einem postfachüberwachungsprotokoll protokolliert werden, in dem Sie nach Aktivitäten für das Postfach suchen können.
-ms.openlocfilehash: 7c0a4417496bcf18362dbcfe53b751c549ef98b9
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 8d91936f82070848dc65d1b160d4df0165875213
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545841"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649624"
 ---
 # <a name="manage-mailbox-auditing"></a>Verwalten der Postfächern
 
@@ -35,7 +35,7 @@ Hier sind einige Vorteile der postfachüberwachung standardmäßig aktiviert:
 
 - Sie müssen die überwachten Postfachaktionen nicht verwalten. Eine vordefinierte Gruppe von Postfachaktionen wird standardmäßig für jeden Anmeldetyp (Administrator, Stellvertreter und Besitzer) überwacht.
 
-- Wenn Microsoft eine neue Post Fach Aktion (insbesondere Aktionen, die zum Schutz Ihrer Organisation und zur Unterstützung bei forensischen Untersuchungen beitragen) veröffentlicht, wird die Aktion automatisch der Liste der Postfachaktionen hinzugefügt, die standardmäßig überwacht werden. Dies bedeutet, dass Sie keine Überwachung Hinzufügen neuer Aktionen für Postfächer benötigen.
+- Wenn Microsoft eine neue Post Fach Aktion freigibt, wird die Aktion möglicherweise automatisch der Liste der Postfachaktionen hinzugefügt, die standardmäßig überwacht werden (vorbehaltlich des Benutzers, der über die entsprechende Lizenz verfügt). Dies bedeutet, dass Sie keine Überwachung Hinzufügen neuer Aktionen für Postfächer benötigen.
 
 - Sie verfügen über eine konsistente Überwachungsrichtlinie für Postfächer in Ihrer Organisation (da Sie die gleichen Aktionen für alle Postfächerüber Wachen).
 
@@ -90,7 +90,7 @@ Anmeldetypen klassifizieren Sie den Benutzer, der die überwachten Aktionen für
 
     - eDiscovery oder erweiterte eDiscovery im Compliance Center.
 
-    - In-Place-eDiscovery in Exchange Online.
+    - In-Place eDiscovery in Exchange Online.
 
   - Auf das Postfach wird mithilfe des Exchange Server MAPI-Editors zugegriffen.
 
@@ -110,7 +110,7 @@ In der folgenden Tabelle werden die Postfachaktionen beschrieben, die in der pos
 |**ApplyRecord**|Ein Element wird als Datensatz gekennzeichnet.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**Kopieren**|Eine Nachricht wurde in einen anderen Ordner kopiert.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |**Create**|Ein Element wurde im Ordner "Kalender", "Kontakte", "Notizen" oder "Aufgaben" im Postfach erstellt (beispielsweise wird eine neue Besprechungsanfrage erstellt). Beachten Sie, dass das Erstellen, Senden oder Empfangen einer Nachricht nicht überwacht wird. Auch das Erstellen eines Postfachordners wird nicht überwacht.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Standard**||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**Default**||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**FolderBind**|Auf einen Postfachordner wurde zugegriffen. Diese Aktion wird auch protokolliert, wenn der Administrator oder der delegierte Benutzer das Postfach öffnet.<br/><br/> **Hinweis**: Überwachungseinträge für von Delegaten ausgeführte Ordner Bindungs Aktionen werden konsolidiert. Für den Zugriff auf einzelne Ordner innerhalb eines Zeitraums von 24 Stunden wird ein Überwachungseintrag generiert.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |**HardDelete**|Eine Nachricht wurde endgültig aus dem Ordner "Wiederherstellbare Elemente" gelöscht.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**MailItemsAccessed**|Auf e-Mail-Daten wird über e-Mail-Protokolle und-Clients zugegriffen. Dieser Wert steht nur für Benutzer von E5-oder E5-Konformitäts Abonnements zur Verfügung. Ausführliche Informationen finden Sie unter [Access to wichtige Events for Investigations](advanced-audit.md#access-to-crucial-events-for-investigations).|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
@@ -317,7 +317,7 @@ Set-OrganizationConfig -AuditDisabled $false
 
 Derzeit können Sie die Postfachüberwachung nicht für bestimmte Postfächer deaktivieren, wenn die Postfachüberwachung in Ihrer Organisation standardmäßig aktiviert ist. Beispielsweise wird das Festlegen der *AuditEnabled* -Postfacheigenschaft auf **false** ignoriert.
 
-Sie können jedoch weiterhin das Cmdlet " **MailboxAuditBypassAssociation** " in Exchange Online PowerShell verwenden, um zu verhindern *, dass alle Post Fach* Aktionen durch die angegebenen Benutzer protokolliert werden, unabhängig davon, wo die Aktionen ausgeführt werden. Beispiel:
+Sie können jedoch weiterhin das Cmdlet " **MailboxAuditBypassAssociation** " in Exchange Online PowerShell verwenden, um zu verhindern *, dass alle Post Fach* Aktionen durch die angegebenen Benutzer protokolliert werden, unabhängig davon, wo die Aktionen ausgeführt werden. Zum Beispiel:
 
 - Postfachbesitzer Aktionen, die von den umgangenen Benutzern ausgeführt werden, werden nicht protokolliert.
 

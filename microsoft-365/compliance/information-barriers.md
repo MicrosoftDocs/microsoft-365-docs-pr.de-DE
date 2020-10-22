@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/08/2019
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.collection:
 localization_priority: None
 description: Verwenden Sie Informationsbarrieren, um die Kommunikation mit Microsoft Teams in Ihrer Organisation sicherzustellen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7b223de8eba68d49a8cc0c90239305eb05bb1090
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: 0630dc607d6993598f356a7090a6be5890028499
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379189"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48636962"
 ---
 # <a name="information-barriers"></a>Informationsbarrieren
 
@@ -35,7 +35,7 @@ Informationsbarrieren werden jetzt in Microsoft Teams, SharePoint Online und One
 - Ein Forschungsteam sollte nur online mit einem Produktentwicklungsteam anrufen oder chatten
 
 > [!IMPORTANT]
-> Informationsbarrieren ***unterstützen nur*** zwei-Wege-Einschränkungen. Unidirektionale Einschränkungen wie Marketing können mit Day Traders kommunizieren, aber Day Trader können nicht mit Marketing kommunizieren ***wird nicht unterstützt***.
+> Informationsbarrieren ***unterstützen nur**zwei-Wege-Einschränkungen. Unidirektionale Einschränkungen wie Marketing können mit Day Traders kommunizieren, aber Tageshändler können nicht mit dem Marketing kommunizieren _ *_wird nicht unterstützt_* *.
 
 Für alle diese Beispielszenarien (und mehr) können Richtlinien für Informationsbarrieren definiert werden, um die Kommunikation in Microsoft Teams zu verhindern oder zuzulassen. Mithilfe solcher Richtlinien kann verhindert werden, dass Personen Anrufe oder Chats mit Personen durchlaufen, die Sie nicht haben sollten, oder dass Personen nur mit bestimmten Gruppen in Microsoft Teams kommunizieren können. Wenn die Richtlinien für Informationsbarrieren wirksam sind und Benutzer, die von diesen Richtlinien abgedeckt werden, versuchen, mit anderen Personen in Microsoft Teams zu kommunizieren, werden Überprüfungen durchgeführt, um die Kommunikation zu verhindern (oder zulassen) (gemäß den Richtlinien für Informationsbarrieren). Weitere Informationen zur Benutzererfahrung mit Informationsbarrieren finden Sie unter [Information Barriers in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams).
 
