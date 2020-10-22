@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0ed10b7088e38cbf5a2d9196508eae5cdc522a74
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 01a43b35d272aaebce4c6866e3edfb04664b1801
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529445"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48655723"
 ---
 # <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Microsoft Managed Desktop-Vorgänge und-Überwachung
 
@@ -72,7 +72,7 @@ Nicht alle Änderungen wirken sich gleichermaßen auf die Benutzer aus und erfor
 **Globale Administratoraktion erforderlich** | Manchmal |  Nur selten |    Nur selten 
 **Typ der Aktion** | Ändern der Einstellungen | Kommunizieren der Änderungen an Benutzer | Ändern der Administratoreinstellungen     
 **Erfordert Tests** | Überprüfen von Geschäftsanwendungen, einschließlich RAS-Diensten |  Manchmal – Testen des Fix im Hinblick auf die Prozesse und Anpassungen |   Nur selten 
-**Beispiele für Änderungen** | -Feature-Updates: vereinfachte Unterstützung von IT-Verwaltungs Portalen und Überprüfung<br>-Neue Features oder Anwendungen: halbjährliche Veröffentlichung eines Windows 10-Funktionsupdates | Hotfixes basierend auf den von Kunden gemeldeten Fehlern |  
+**Beispiele für Änderungen** | -Feature-Updates: vereinfachte Unterstützung von IT-Verwaltungs Portalen und Überprüfung<br>-Neue Features oder Anwendungen: Semi-Annual Version eines Windows 10-Feature-Updates | Hotfixes basierend auf den von Kunden gemeldeten Fehlern |  
 
 
 ## <a name="standard-operating-procedures"></a>Standard mäßige Betriebsverfahren
@@ -81,15 +81,15 @@ Der Microsoft Managed Desktop-Dienst wird von Microsoft in Ihrer Microsoft Cloud
 
 Für lokale Produkte übernimmt Ihre Organisation die gesamte Verantwortung für die Verwaltung von Setup sowie für Konfigurations-und Betriebsaktivitäten.
 
-Kategorien |    Microsoft wird | Kunde wird
+Categories |    Microsoft wird | Kunde wird
 --- | --- | ---
 Netzwerk (Proxy, Paketüberprüfung, VPN)  | Beraten und planen Sie Kunden, um Risiken für Geschäftsbenutzer zu minimieren. | -Erstellen Sie eine Supportanfrage, in der Informationen für eine geplante Konfigurationsänderung angefordert werden, einschließlich Konfigurationsdetails, Bereich, Zeitachse und anderer relevanter Details, die von Microsoft überprüft werden sollen.<br>-Wenden Sie nur eine Änderung an, wenn Microsoft Managed Desktop Operations bewertet und empfohlen wurde.
 Dienstkonten |-Implementieren, sicher speichern und Verwalten der Anmeldeinformationen.<br> – Kommunizieren Sie nicht autorisierten Zugriff oder die Verwendung dieser Anmeldeinformationen für Ihr Sicherheits Betriebsteam. | -Erstellen Sie eine Supportanfrage, in der Informationen für eine geplante Konfigurationsänderung angefordert werden, einschließlich Konfigurationsdetails, Bereich, Zeitachse und anderer relevanter Details, die von Microsoft überprüft werden sollen.<br>-Wenden Sie nur eine Änderung an, wenn Microsoft Managed Desktop Operations bewertet und empfohlen wurde.<br>-Zuweisen von Richtlinien, mehrstufiger Authentifizierung, bedingtem Zugriff oder Anwendungsbereitstellung zu den Microsoft Managed Desktop-Dienstkonten.<br>-Setzen Sie das Kennwort nicht zurück, oder verwenden Sie die Anmeldeinformationen.<br>-Öffnen Sie eine SEV C-Supportanfrage für Microsoft Managed Desktop Operations, wenn in InTune-oder Azure-Überwachungsprotokollen, die sich auf diese Dienstkonten beziehen, verdächtige Aktivitäten beobachtet werden.
-Gerätegruppen | -Implementieren und Verwalten der Mitgliedschaft von Geräten in Microsoft Managed Desktop-Gruppen.<br>-Verwenden Sie die Microsoft Managed Desktop-Gruppen, um die Zuweisung und Freigabe von Konfigurationen und Updates für Geräte zu verwalten. | -Erstellen Sie eine Supportanfrage, in der Informationen für eine geplante Konfigurationsänderung angefordert werden, einschließlich Konfigurationsdetails, Bereich, Zeitachse und anderer relevanter Details, die von Microsoft überprüft werden sollen.<br>-Wenden Sie nur eine Änderung an, wenn Microsoft Managed Desktop Operations bewertet und empfohlen wurde.<br>-Ändern Sie nicht die Mitgliedschaft einer beliebigen Microsoft Managed Desktop-Gruppe.<br>-Verwenden Sie die Gruppen nur zum Zuweisen von Unternehmens Zertifikaten für Dienste wie VPN, Windows Hello for Business oder e-Mail-Verschlüsselung oder für die Konfiguration von unternehmensweiten Wi-Fi-Profilen.<br>– Wenn die gemeinsame Verwaltung vorhanden ist, schließen Sie beim Bereitstellen des Configuration Manager-Clients explizit alle von Microsoft verwalteten Desktop Gruppen aus.
+Gerätegruppen | -Implementieren und Verwalten der Mitgliedschaft von Geräten in Microsoft Managed Desktop-Gruppen.<br>-Verwenden Sie die Microsoft Managed Desktop-Gruppen, um die Zuweisung und Freigabe von Konfigurationen und Updates für Geräte zu verwalten. | -Erstellen Sie eine Supportanfrage, in der Informationen für eine geplante Konfigurationsänderung angefordert werden, einschließlich Konfigurationsdetails, Bereich, Zeitachse und anderer relevanter Details, die von Microsoft überprüft werden sollen.<br>-Wenden Sie nur eine Änderung an, wenn Microsoft Managed Desktop Operations bewertet und empfohlen wurde.<br>-Ändern Sie nicht die Mitgliedschaft einer beliebigen Microsoft Managed Desktop-Gruppe.<br>-Verwenden Sie die Gruppen nur zum Zuweisen von Unternehmens Zertifikaten für Dienste wie VPN, Windows Hello for Business oder e-Mail-Verschlüsselung oder für die Konfiguration von Unternehmens Wi-Fi Profilen.<br>– Wenn die gemeinsame Verwaltung vorhanden ist, schließen Sie beim Bereitstellen des Configuration Manager-Clients explizit alle von Microsoft verwalteten Desktop Gruppen aus.
 Richtlinien |  -Implementieren und verwalten Sie die Microsoft Managed Desktop-Richtlinien, die den Konfigurationsstatus von Geräten in Service steuern.<br>– Bereitstellen von Updates, Richtlinien oder Fenstern, inkrementelle Verwendung von Gerätegruppen.<br> – Explizite Ausrichtung auf nicht von Microsoft verwaltete Desktop Gruppen ausschließen. | -Erstellen Sie eine Supportanfrage, in der Informationen für eine geplante Konfigurationsänderung angefordert werden, einschließlich Konfigurationsdetails, Bereich, Zeitachse und anderer relevanter Details, die von Microsoft überprüft werden sollen.<br>-Wenden Sie nur eine Änderung an, wenn Microsoft Managed Desktop Operations bewertet und empfohlen wurde.<br>-Nicht bearbeiten oder Zuweisen von Microsoft Managed Desktop-Richtlinien zu Geräten oder Benutzern, die nicht vom Microsoft Managed Desktop-Dienst verwaltet werden.
 Microsoft Defender Advanced Threat Protection   | Überwachen und untersuchen von Geräten im Rahmen des Microsoft Managed Desktop-Diensts. | -Erstellen Sie eine Supportanfrage, in der Informationen für eine geplante Konfigurationsänderung angefordert werden, einschließlich Konfigurationsdetails, Bereich, Zeitachse und anderer relevanter Details, die von Microsoft überprüft werden sollen.<br>-Nur eine Änderung anwenden, nachdem Microsoft Managed Desktop Operations bewertet und empfohlen wurde
 Microsoft Store für Unternehmen |  Konfigurieren und Verwalten des Windows Autopilot-Profils für den Microsoft Managed Desktop-Dienst. | -Erstellen Sie eine Supportanfrage, in der Informationen für eine geplante Konfigurationsänderung angefordert werden, einschließlich Konfigurationsdetails, Bereich, Zeitachse und anderer relevanter Details, die von Microsoft überprüft werden sollen.<br>-Wenden Sie nur eine Änderung an, wenn Microsoft Managed Desktop Operations bewertet und empfohlen wurde.<br>-Ändern Sie nicht die Konfiguration des Microsoft Managed Desktop-Windows-Autopilot-Profils, oder fügen Sie zugewiesene Geräte hinzu.
-Zertifikate | | -Erstellen einer Supportanforderung 60 Tage vor Ablauf eines Zertifikats, Anfordern von Informationen für eine geplante Konfigurationsänderung, einschließlich Konfigurationsdetails, Umfang, Zeitachse und anderer relevanter Details, die von Microsoft überprüft werden sollen.<br>-Wenden Sie nur eine Änderung an, wenn Microsoft Managed Desktop Operations bewertet und empfohlen wurde.<br>-Aktualisieren aller Zertifikate, die zum Konfigurieren von Zertifikat Profilen, VPN-Profilen und WLAN-Profilen erforderlich sind.
+Zertifikate | | -Erstellen einer Supportanforderung 60 Tage vor Ablauf eines Zertifikats, Anfordern von Informationen für eine geplante Konfigurationsänderung, einschließlich Konfigurationsdetails, Umfang, Zeitachse und anderer relevanter Details, die von Microsoft überprüft werden sollen.<br>-Wenden Sie nur eine Änderung an, wenn Microsoft Managed Desktop Operations bewertet und empfohlen wurde.<br>-Aktualisieren aller Zertifikate, die zum Konfigurieren von Zertifikat Profilen, VPN-Profilen und Wi-Fi Profilen erforderlich sind.
 
 
 

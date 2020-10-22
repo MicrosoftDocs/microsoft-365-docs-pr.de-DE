@@ -1,5 +1,5 @@
 ---
-title: Festlegen einer strengen Kennwortanforderung für Benutzer
+title: Deaktivieren strenger Kennwortanforderungen für Benutzer
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -21,14 +21,14 @@ search.appverid:
 - MET150
 - MOE150
 description: In diesem Artikel erfahren Sie, wie Sie mithilfe von Windows PowerShell sichere Kennwortanforderungen für Ihre Benutzer festlegen können.
-ms.openlocfilehash: 9f6fd61396d99245ffeabf757d3cb65c5d5cb85e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: f9a0b76d024cc18552657144e4ccf8de8a72f0d9
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646619"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48655735"
 ---
-# <a name="set-strong-password-requirement-for-users"></a>Festlegen einer strengen Kennwortanforderung für Benutzer
+# <a name="turn-off-strong-password-requirements-for-users"></a>Deaktivieren strenger Kennwortanforderungen für Benutzer
 
 In diesem Artikel wird erläutert, wie Sie strenge Kennwortanforderungen für Ihre Benutzer deaktivieren. Starke Kennwortanforderungen sind in Ihrer Microsoft 365 for Business-Organisation standardmäßig aktiviert. Ihre Organisation verfügt möglicherweise über Anforderungen zum Deaktivieren sicherer Kennwörter. Führen Sie die folgenden Schritte aus, um sichere Kennwortanforderungen zu deaktivieren. Sie müssen diese Schritte mithilfe von PowerShell ausführen.
 
