@@ -82,7 +82,7 @@
           href: services-in-china/apply-for-a-fapiao.md
         - name: Azure Information Protection-Parität
           href: services-in-china/parity-between-azure-information-protection.md
-    - name: Verwalten von Benutzern und Gruppen
+    - name: 'Benutzer, Gruppen und Kennwörter verwalten'
       href: add-users/index.yml
       items:
         - name: Benutzer
@@ -109,14 +109,6 @@
               href: add-users/get-access-to-and-back-up-a-former-user-s-data.md
             - name: Wiederherstellen eines Benutzers
               href: add-users/restore-user.md
-            - name: Zurücksetzen von Kennwörtern
-              href: add-users/reset-passwords.md
-            - name: 'Festlegen von Kennwörtern, sodass sie nie ablaufen'
-              href: add-users/set-password-to-never-expire.md
-            - name: 'Zulassen, dass Benutzer Kennwörter zurücksetzen'
-              href: add-users/let-users-reset-passwords.md
-            - name: Benutzerkennwörter erneut senden
-              href: add-users/resend-user-password.md
             - name: Vorlage zum Hinzufügen von Benutzern erstellen
               href: add-users/create-and-use-a-template-to-add-users.md
             - name: Aktualisieren Sie Benutzer auf die neuesten Apps
@@ -137,6 +129,20 @@
               href: create-groups/restore-deleted-group.md
             - name: Verwalten des Gastzugriffs auf Gruppen
               href: create-groups/manage-guest-access-in-groups.md
+        - name: Kennwörter
+          items:
+            - name: Kennwörter zurücksetzen
+              href: add-users/reset-passwords.md
+            - name: 'Zulassen, dass Benutzer Kennwörter zurücksetzen'
+              href: add-users/let-users-reset-passwords.md
+            - name: 'Festlegen von Kennwörtern, sodass sie nie ablaufen'
+              href: add-users/set-password-to-never-expire.md
+            - name: Benutzerkennwörter erneut senden
+              href: add-users/resend-user-password.md
+            - name: Sichere Kennwörter deaktivieren
+              href: add-users/strong-password.md
+            - name: Kennwortablaufrichtlinie einrichten
+              href: manage/set-password-expiration-policy.md
     - name: Verwalten von E-Mails und Kalendern
       href: email/index.yml
       items:

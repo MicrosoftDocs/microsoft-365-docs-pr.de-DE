@@ -269,6 +269,10 @@
       items:
         - name: Domäne hinzufügen
           href: 'https://docs.microsoft.com/microsoft-365/admin/setup/add-domain'
+    - name: Verwalten
+      items:
+        - name: Integritätsstatus des Microsoft 365-Diensts
+          href: microsoft-365-service-health.md
         - name: Setup-Leitfaden
           href: setup-guides-for-microsoft-365.md
     - name: Mehrere Mandanten
@@ -571,7 +575,7 @@
               href: view-user-accounts-with-microsoft-365-powershell.md
             - name: Konfigurieren von Eigenschaften
               href: configure-user-account-properties-with-microsoft-365-powershell.md
-            - name: Zuweisen von Rollen
+            - name: Administratorrollen zuweisen
               href: assign-roles-to-user-accounts-with-microsoft-365-powershell.md
             - name: Löschen und wiederherstellen
               href: delete-and-restore-user-accounts-with-microsoft-365-powershell.md
@@ -703,7 +707,7 @@
   items:
     - name: Übersicht
       href: contoso-overview.md
-    - name: Contosos IT-Infrastruktur und -Anforderungen
+    - name: IT-Infrastruktur und -Anforderungen von Contoso
       href: contoso-infra-needs.md
     - name: Netzwerk
       href: contoso-networking.md
@@ -719,8 +723,6 @@
       href: contoso-info-protect.md
     - name: Sicherheitszusammenfassung
       href: contoso-security-summary.md
-- name: Integritätsstatus des Microsoft 365-Diensts
-  href: microsoft-365-service-health.md
 - name: Microsoft 365-Compliance
   href: ../compliance/index.yml
 - name: Microsoft 365 Security Center

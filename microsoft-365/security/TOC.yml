@@ -151,7 +151,7 @@
                       href: mtp/advanced-hunting-best-practices.md
                     - name: Fehlerbehandlung
                       href: mtp/advanced-hunting-errors.md
-                    - name: Dienstbeschränkungen
+                    - name: Kontingente und Verwendungsparameter
                       href: mtp/advanced-hunting-limits.md
                 - name: Erweitern der Datenabdeckung
                   href: mtp/advanced-hunting-extend-data.md
