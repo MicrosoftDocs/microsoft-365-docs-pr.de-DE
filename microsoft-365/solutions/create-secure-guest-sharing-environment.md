@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: In diesem Artikel erfahren Sie mehr über die verfügbaren Optionen zum Erstellen einer sicheren Gastfreigabeumgebung in Microsoft 365.
-ms.openlocfilehash: 227c609329ae3cca4cc38e65984f1036bfe41068
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: d80dd00369b851768849e846449799ff443957f3
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527930"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681574"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Erstellen einer sicheren Gastfreigabeumgebung
 
@@ -165,7 +165,7 @@ So beschränken Sie den Gastzugriff auf reinen Webzugriff
 9. Klicken Sie auf dem Blatt **Cloud-Apps oder -Aktionen** auf **Fertig**.
 10. Klicken Sie unter **Zuweisungen** auf **Bedingungen**.
 11. Klicken Sie auf dem Blatt **Bedingungen** auf **Client-Apps**.
-12. Klicken Sie auf dem Blatt **Client-Apps** auf **Ja** bei **Konfigurieren**, und wählen Sie dann die Einstellungen **Mobile Apps und Desktopclients** und **Moderne Authentifizierungsclients** aus.</br>
+12. Klicken Sie auf dem Blatt **Client-Apps** auf **Ja** bei **Konfigurieren**, und wählen Sie dann die Einstellung **Mobile Apps und Desktopclients** aus.</br>
     ![Screenshot der Azure AD-Einstellungen für den bedingten Zugriff für Client-Apps](../media/azure-ad-conditional-access-client-mobile.png)
 13. Klicken Sie auf **Fertig** und anschließend auf dem Blatt **Bedingungen** erneut auf **Fertig**.
 14. Klicken Sie unter **Zugriffssteuerung** auf **Gewähren**.
