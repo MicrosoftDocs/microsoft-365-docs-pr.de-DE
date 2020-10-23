@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Hier finden Sie eine Übersicht über die benutzerdefinierten vertraulichen Informationstypen für DLP (Verhinderung von Datenverlust), z.B. primäres Muster, Zeichenabstand und Konfidenzniveau.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d21d0be23847a8fbd27b6082ca28cdca2d4eed05
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: e414d9a31869e9b1382f0713d6d70df745c41471
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379175"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681763"
 ---
 # <a name="custom-sensitive-information-types"></a>Benutzerdefinierten Typen vertraulicher Informationen
 
@@ -64,14 +64,6 @@ Zum Erstellen von benutzerdefinierten Typen für vertrauliche Informationen im S
 > - Chinesisch (traditionell)
 > - Koreanisch
 > - Japanisch
-> 
->Diese Vorschau ist nur in der kommerziellen Cloud verfügbar, und die Einführung ist beschränkt auf:
-> - Japan
-> - Korea
-> - China
-> - Hongkong (SAR)
-> - Macau (SAR)
-> - Taiwan
->
+
 >Diese Unterstützung ist für vertrauliche Informationstypen verfügbar. Mehr dazu finden Sie in den [Versionshinweisen (Vorschau) zur Unterstützung des Informationsschutzes für Doppelbyte-Zeichensätze](mip-dbcs-relnotes.md).
 

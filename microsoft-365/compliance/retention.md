@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen, um zu behalten, was Sie benötigen, und zu löschen, was Sie nicht benötigen.
-ms.openlocfilehash: 6dedb3209d16d5d9f18c1277821270f973cc16a6
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: fe28e51aa7d93872e5683c3682c110275ece3d54
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398982"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651429"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
@@ -276,7 +276,7 @@ Mithilfe der folgenden Tabelle können Sie anhand der Funktionen feststellen, ob
 |Aufbewahrung basierend auf Bedingungen angewendet <br /> – Typen vertraulicher Informationen, KQL-Abfragen, trainierbare Klassifizierungsmerkmale| Nein | Ja |
 |Aufbewahrung manuell angewendet | Nein | Ja |
 |Benutzeroberfläche-Anwesenheitsinformationen für Endbenutzer | Nein | Ja |
-|Wird beibehalten, wenn der Inhalt verschoben wird | Nein | Ja, innerhalb Microsoft 365 |
+|Wird beibehalten, wenn der Inhalt verschoben wird | Nein | Ja, innerhalb Ihres Microsoft 365-Mandanten |
 |Deklarieren eines Elements als Datensatz| Nein | Ja |
 |Beginnen Sie den Aufbewahrungszeitraum, wenn er mit einer Bezeichnung versehen ist oder auf einem Ereignis basiert | Nein | Ja |
 |Dispositionsüberprüfung | Nein| Ja |
@@ -353,27 +353,50 @@ Um die Cmdlets für die Aufbewahrun zu verwenden, müssen Sie zunächst [eine Ve
 
 - [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule)
 
+## <a name="when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds"></a>Verwenden von Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen oder eDiscovery-Aufbewahrung
+
+Aufbewahrungseinstellungen und [Haltebereiche, die Sie mit einem eDiscovery-Fall erstellen](create-ediscovery-holds.md), können zwar beide verhindern, dass Daten dauerhaft gelöscht werden, wurden aber für unterschiedliche Szenarien entwickelt.  Mithilfe des folgenden Leitfadens können Sie die Unterschiede nachvollziehen, und entscheiden, welches Sie benutzen möchten:
+
+- Aufbewahrungseinstellungen, die Sie in Aufbewahrungsrichtlinien festlegen, und Aufbewahrungsbezeichnungen sollen eine langfristige Strategie zur Informationsgovernance sicherstellen, und Daten zur Einhaltung von Compliance-Anforderungen aufbewahren oder löschen. Der Anwendungsbereich ist üblicherweise breit, wobei der Hauptfokus jedoch auf dem Speicherort und dem Inhalt liegt als auf einzelnen Benutzern. Der Beginn und das Ende des Aufbewahrungszeitraums sind konfigurierbar. Sie haben auch die Möglichkeit, Inhalte automatisch zu löschen, ohne dass zusätzlich ein Administrator eingreifen muss.
+
+- eDiscovery-Haltebereiche (entweder Core eDiscovery oder Advanced eDiscovery-Fälle) sind für eine begrenzte Dauer vorgesehen, um Daten für eine rechtliche Untersuchung aufzubewahren. Der Bereich ist spezifisch, der Fokus liegt auf Inhalten, deren Besitzer identifizierte Benutzer sind. Der Beginn und das Ende des Aufbewahrungszeitraums sind nicht konfigurierbar, sondern hängen von den Aktionen des einzelnen Administrators ab. Es gibt keine Option, Inhalte automatisch zu löschen, wenn der Haltebereich freigegeben wird.
+
+Zusammenfassender Vergleich der Aufbewahrung mit Haltebereichen:
+
+|Überlegungen|Aufbewahrung |eDiscovery-Haltebereiche|
+|:-----|:-----|:-----|:-----|
+|Geschäftliche Anforderung: |Compliance |Rechtliche Hinweise |
+|Zeitbereich: |Langfristig |Kurzfristig |
+|Fokus: |Breit, inhaltsbasiert |Spezifisch, benutzerbasiert |
+|Konfigurierbares Start-und Enddatum: |Ja |Nein |
+|Löschen von Inhalten: |Ja (optional) |Nein |
+|Verwaltungskosten: |Niedrig |Hoch |
+
+Wenn Inhalte sowohl Aufbewahrungseinstellungen als auch einem eDiscovery-Haltebereich unterliegen, hat die Aufbewahrung von Inhalten für den eDiscovery-Haltebereich immer Vorrang. Auf diese Art und Weise erstrecken sich die [Prinzipien der Aufbewahrung](#the-principles-of-retention-or-what-takes-precedence) auch auf eDiscovery-Haltebereiche, da Daten aufbewahrt werden, bis ein Administrator manuell die Sperre aufhebt. Trotz dieser Rangfolge sollten Sie eDiscovery-Haltebereiche nicht für die langfristige Informationsgovernance verwenden. Falls Ihnen das automatische Löschen von Daten Sorgen bereitet, können Sie Aufbewahrungseinstellungen so konfigurieren, dass Elemente dauerhaft beibehalten werden, oder die [Löschungsprüfung](disposition.md#disposition-reviews) mit Aufbewahrungsbezeichnungen verwenden.
+
+Wenn Sie ältere eDiscovery-Tools für die Aufbewahrung Ihrer Daten verwenden, sollten Sie sich die folgenden Ressourcen anschauen:
+
+- Exchange: 
+    - [In-Situ-Speicher und Beweissicherungsverfahren](https://go.microsoft.com/fwlink/?linkid=846124)
+    - [Identifizieren des Haltebereichs für ein Exchange Online-Postfach](https://docs.microsoft.com/microsoft-365/compliance/identify-a-hold-on-an-exchange-online-mailbox)
+
+- SharePoint und OneDrive: 
+    - [Hinzufügen von Inhalten zu einem Fall und temporäres Sperren von Quellen im eDiscovery Center](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center)
+
+- [Einstellung älterer eDiscovery-Tools](legacy-ediscovery-retirement.md)
+
 ## <a name="use-retention-policies-and-retention-labels-instead-of-older-features"></a>Verwenden von Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen anstelle älterer Features
 
-Wenn Sie Inhalte in Microsoft 365 für die Informationsverwaltung proaktiv aufbewahren oder löschen müssen, empfehlen wir Ihnen die Verwendung von Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen anstelle der folgenden älteren Features. 
-  
+Wenn Sie Inhalte in Microsoft 365 für die Informationsverwaltung proaktiv aufbewahren oder löschen müssen, empfehlen wir Ihnen die Verwendung von Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen anstelle der folgenden älteren Features.
+
 Wenn Sie derzeit diese älteren Features verwenden, werden sie weiterhin Seite an Seite mit den Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen arbeiten. Es wird jedoch empfohlen, in Zukunft stattdessen Aufbewahrungsrichtlinien und -bezeichnungen zu verwenden. Sie bieten einen einzigen Mechanismus, um die Aufbewahrung und Löschung von Inhalten in Microsoft 365 zentral zu verwalten.
 
 **Ältere Features von Exchange Online:**
 
-- [In-Situ-Speicher und Beweissicherungsverfahren](https://go.microsoft.com/fwlink/?linkid=846124) (eDiscovery-Sperre) 
-
-- [Identifizieren des Haltebereichs für ein Exchange Online-Postfach](identify-a-hold-on-an-exchange-online-mailbox.md)
-    
 - [Aufbewahrungstags und Aufbewahrungsrichtlinien](https://go.microsoft.com/fwlink/?linkid=846125), auch bekannt als [Messaging-Datensatzverwaltung](https://go.microsoft.com/fwlink/?linkid=846126) (Nur Löschen)
-    
-Siehe auch [Einstellung älterer eDiscovery-Tools](legacy-ediscovery-retirement.md).
-
 
 **Ältere Features von SharePoint und OneDrive:**
 
-- [Hinzufügen von Inhalten zu einem Fall und temporäres Sperren von Quellen im eDiscovery Center](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center) (eDiscovery-Sperre) 
-    
 - [Richtlinien zum Löschen von Dokumenten](https://support.office.com/article/Create-a-document-deletion-policy-in-SharePoint-Server-2016-4fe26e19-4849-4eb9-a044-840ab47458ff) (nur Löschvorgang)
     
 - [Konfigurieren der direkten Datensatzverwaltung](https://support.office.com/article/7707a878-780c-4be6-9cb0-9718ecde050a) (nur Aufbewahrung) 
@@ -382,10 +405,6 @@ Siehe auch [Einstellung älterer eDiscovery-Tools](legacy-ediscovery-retirement.
     
 - [Informationsverwaltungsrichtlinien](intro-to-info-mgmt-policies.md) (Nur Löschen)
      
-Wenn Sie bisher eines der eDiscovery-Archive zum Zwecke der Informationsgovernance verwendet haben, sollten Sie für proaktive Compliance stattdessen eine Aufbewahrungsrichtlinie verwenden. Verwenden Sie eDiscovery nur für Archive.
-  
-### <a name="retention-policies-and-sharepoint-content-type-policies-or-information-management-policies"></a>Aufbewahrungsrichtlinien und SharePoint-Inhaltstyprichtlinien oder Informationsverwaltungsrichtlinien
-
 Wenn Sie SharePoint-Websites für Inhaltstyprichtlinien oder Informationsverwaltungsrichtlinien so konfiguriert haben, dass Inhalte für eine Liste oder Bibliothek aufbewahrt werden, werden diese Richtlinien ignoriert, während eine Aufbewahrungsrichtlinie in Kraft ist. 
 
 ## <a name="related-information"></a>Verwandte Informationen

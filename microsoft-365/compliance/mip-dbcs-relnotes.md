@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Versionshinweise zur Unterstützung von Doppelbyte-Zeichensätzen.
-ms.openlocfilehash: 13bac873f2ba18bc166451ea73ec0d569fb30f68
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1c2244c49a92aa2c00fad06caa8194cf7e32220e
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695251"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681501"
 ---
 # <a name="support-for-double-byte-character-set-release-notes-preview"></a>Unterstützung für Versionshinweise zu Doppelbyte-Zeichensätzen (Vorschau)
 
@@ -29,15 +29,6 @@ ms.locfileid: "46695251"
 - Chinesisch (traditionell)
 - Koreanisch
 - Japanisch
-
-Diese Vorschau ist nur in der kommerziellen Cloud verfügbar, und die Einführung ist beschränkt auf:
-
-- Japan
-- Korea
-- China
-- Hongkong (SAR)
-- Macau (SAR)
-- Taiwan
 
 Diese Unterstützung ist für vertrauliche Informationstypen und Stichwort-Wörterbücher verfügbar und wird in den Lösungen Data Loss Prevention, Communications Compliance, Exchange Online, Microsoft Office SharePoint Online, Microsoft OneDrive for Business und Microsoft Teams widergespiegelt.
 

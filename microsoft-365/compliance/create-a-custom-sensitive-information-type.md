@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie benutzerdefinierten Typen für vertrauliche Informationen für DLP in der grafischen Benutzeroberfläche im Security & Compliance Center erstellen, ändern, entfernen und testen können.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0c54cd9d4969c87bbd83b3048883d8a84dd9bc59
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 59d16ed662ff1b577bbb6c8388c5d27836832c1f
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686659"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681721"
 ---
 <!-- rename md file to match the display name -->
 # <a name="create-a-custom-sensitive-information-type-in-the-security--compliance-center"></a>Erstellen eines benutzerdefinierten vertraulichen Informationstyps im Security & Compliance Center
@@ -39,14 +39,6 @@ Sie können auch benutzerdefinierte vertrauliche Informationstypen mithilfe von 
 > - Chinesisch (traditionell)
 > - Koreanisch
 > - Japanisch
-> 
->Diese Vorschau ist nur in der kommerziellen Cloud verfügbar, und die Einführung ist beschränkt auf:
-> - Japan
-> - Korea
-> - China
-> - Hongkong
-> - Macau
-> - Taiwan
 >
 >Diese Unterstützung ist für vertrauliche Informationstypen verfügbar. Weitere Informationen hierzu finden Sie in den [Versionshinweisen (Vorschau) zur Unterstützung des Informationsschutzes für Doppelbyte-Zeichensätze](mip-dbcs-relnotes.md).
 

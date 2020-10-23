@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 4ede013a1c9a9bd054fc6965cbb12b5bbabb0b5e
-ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
+ms.openlocfilehash: c1ef7a765f61ee2231fd99c47f076855225de3fb
+ms.sourcegitcommit: 31f25790b37dfb740530017ef1701db0c5134829
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48651407"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48740259"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referenz zur Kommunikation Compliance-Feature
 
@@ -183,7 +183,7 @@ Kommunikation Compliance integrierte Schulungs-und globale Klassifizierungen üb
 
 Die *adulten*, *rassigen*und *blutigen* Bild Klassifizierungen überprüfen Dateien in. JPEG,. PNG,. GIF und. BMP-Formate. Die Größe von Bilddateien muss kleiner als 4 MB sein, und die Abmessungen der Bilder müssen größer als 50x50 Pixel und größer als 50 Kilobyte (KB) sein, damit das Bild für die Auswertung qualifiziert wird. Die Bild Identifikation wird für Exchange Online e-Mail-Nachrichten und Microsoft Teams-Kanäle und-Chats unterstützt.
 
-Die integrierten Schulungs-und globalen Klassifizierungen bieten keine erschöpfende Liste von Begriffen oder Bildern in diesen Bereichen. Außerdem ändern sich die Sprach-und Kulturstandards ständig, und in Anbetracht dieser Gegebenheiten behält sich Microsoft das Recht vor, die Klassifizierungen nach eigenem Ermessen zu aktualisieren. Während Klassifizierungen Ihre Organisation bei der Überwachung dieser Bereiche unterstützen können, sind Klassifizierungen nicht dazu gedacht, die einzige Möglichkeit zur Überwachung oder Adressierung solcher Sprachen oder Bilder in Ihrer Organisation bereitzustellen. Ihre Organisation, nicht Microsoft, bleibt für alle Entscheidungen im Zusammenhang mit dem Scannen und Blockieren von Sprache und Bildern in diesen Bereichen verantwortlich.
+Die integrierten Schulungs-und globalen Klassifizierungen bieten keine erschöpfende Liste von Begriffen oder Bildern in diesen Bereichen. Außerdem ändern sich die Sprach-und Kulturstandards ständig, und in Anbetracht dieser Gegebenheiten behält sich Microsoft das Recht vor, die Klassifizierungen nach eigenem Ermessen zu aktualisieren. Während Klassifizierungen Ihre Organisation bei der Überwachung dieser Bereiche unterstützen können, sind Klassifizierungen nicht dazu gedacht, die einzige Möglichkeit zur Überwachung oder Adressierung solcher Sprachen oder Bilder in Ihrer Organisation bereitzustellen. Ihre Organisation, nicht Microsoft, bleibt für alle Entscheidungen im Zusammenhang mit der Überwachung, dem Scannen und der Sperrung von Sprache und Bildern in diesen Bereichen, einschließlich der Einhaltung der Datenschutzbestimmungen und anderer anwendbarer Gesetze, verantwortlich. Microsoft empfiehlt die Beratung mit Rechtsbeistand vor der Bereitstellung und Verwendung.
 
 Informationen zu Schulungs Klassifizierern in Microsoft 365 finden Sie unter [Erste Schritte mit Schulungs Klassifizierern](classifier-get-started-with.md).
 

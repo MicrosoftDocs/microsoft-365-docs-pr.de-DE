@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Grundlagen zum Erstellen eines Schlüsselwörterbuchs im Office 365 Security & Compliance Center.
-ms.openlocfilehash: 7fe425a1f8ac954c6c24752927b218fc7e6f37c7
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: e6f6043efd4c5f38b7e9fa2a92c4fcb7ceb91e45
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547009"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681635"
 ---
 # <a name="create-a-keyword-dictionary"></a>Schlüsselwörterbuch erstellen
 
@@ -35,14 +35,6 @@ Die Verhinderung von Datenverlust (DLP) kann Ihre vertraulichen Objekte identifi
 > - Chinesisch (traditionell)
 > - Koreanisch
 > - Japanisch
-> 
->Diese Vorschau ist nur in der kommerziellen Cloud verfügbar, und die Einführung ist beschränkt auf:
-> - Japan
-> - Korea
-> - China
-> - Hongkong (SAR)
-> - Macau (SAR)
-> - Taiwan
 >
 >Diese Unterstützung ist für vertrauliche Informationstypen verfügbar. Mehr dazu finden Sie in den [Versionshinweisen (Vorschau) zur Unterstützung des Informationsschutzes für Doppelbyte-Zeichensätze](mip-dbcs-relnotes.md).
 
