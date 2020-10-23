@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 07/01/2020
+ms.date: ''
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -14,49 +14,57 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: 78ba5183667f4e5c6f713182969338f3ef2e7262
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: c1a7cd4d8f00c9e2433601903efd1fba7bb587f9
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600529"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681732"
 ---
-# <a name="configuring-external-email-forwarding-in-office-365"></a>Konfigurieren der externen e-Mail-Weiterleitung in Office 365
+# <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Steuern der automatischen externen e-Mail-Weiterleitung in Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+Als Administrator haben Sie möglicherweise Unternehmens Anforderungen zum einschränken oder Steuern der automatischen Weiterleitung von Nachrichten an externe Empfänger (Empfänger außerhalb Ihrer Organisation). Die e-Mail-Weiterleitung kann nützlich sein, kann aber auch ein Sicherheitsrisiko darstellen, da Informationen möglicherweise offen gelegt werden. Angreifer können diese Informationen verwenden, um Ihre Organisation oder Ihre Partner anzugreifen.
 
-Die externe Weiterleitung wird von der *ausgehenden Anti-Spam-Richtlinie* gesteuert und auf der Grundlage der konfigurierten Einstellung auf Benutzer beschränkt. Derzeit werden 3 Einstellungen unterstützt:
+Die folgenden Arten der automatischen Weiterleitung stehen in Microsoft 365 zur Verfügung:
 
-- **Automatic** – automatische externe Weiterleitung wird blockiert. Die interne automatische Weiterleitung von Nachrichten funktioniert weiterhin. Dies ist die Standardeinstellung.
+- Benutzer können [Posteingangsregeln](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) so konfigurieren, dass Nachrichten automatisch an externe Absender weitergeleitet werden (absichtlich oder als Ergebnis eines kompromittierten Kontos).
 
-- **On** – automatische externe Weiterleitung ist zulässig und nicht eingeschränkt.
+- Administratoren können die [Post Fach Weiterleitung](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (auch bekannt als SMTP-Weiterleitung) so konfigurieren, dass Nachrichten automatisch an externe Empfänger weitergeleitet werden.
 
-- **Off** – die automatische externe Weiterleitung ist deaktiviert und führt zu einem Unzustellbarkeitsbericht (Non-Delivery Report, NDR) an den Endbenutzer.
+Sie können ausgehende Spamfilter-Richtlinien verwenden, um die automatische Weiterleitung an externe Empfänger zu steuern. Es stehen drei Einstellungen zur Verfügung:
 
-Weitere Informationen zum Konfigurieren dieser Einstellungen finden Sie unter [Configure outbound Spam Filtering in EoP](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide&preserve-view=true) .
+- **Automatic**: automatische externe Weiterleitung wird blockiert. Die interne automatische Weiterleitung von Nachrichten funktioniert weiterhin. Dies ist die Standardeinstellung.
+- **On**: automatische externe Weiterleitung ist zulässig und nicht eingeschränkt.
+- **Off**: die automatische externe Weiterleitung ist deaktiviert und führt zu einem Unzustellbarkeitsbericht (auch als NDR-oder bounc-Nachricht bezeichnet) an den Absender.
 
-> [!NOTE]
-> Durch das Deaktivieren der automatischen Weiterleitung werden auch Posteingangsregeln deaktiviert, die Nachrichten an externe Adressen umleiten.
+Anweisungen zum Konfigurieren dieser Einstellungen finden Sie unter [Configure outbound Spam Filtering in EoP](configure-the-outbound-spam-policy.md).
 
-## <a name="controlling-external-email-forwarding"></a>Steuern der externen e-Mail-Weiterleitung
+**Hinweise**:
 
-Als Administrator einer Organisation haben Sie möglicherweise Unternehmens-Anforderungen zum einschränken oder Steuern, wer e-Mails mithilfe von Posteingangsregeln oder SMTP-Weiterleitung außerhalb der Organisation automatisch weiterleiten kann. Die e-Mail-Weiterleitung kann ein nützliches Feature sein, kann aber auch durch die potenzielle Offenlegung von Informationen ein Risiko darstellen, auch durch Bereitstellen von Informationen für Angreifer, die zum Angriff auf die Organisation oder Ihre Partner genutzt werden können.
+- Durch das Deaktivieren der automatischen Weiterleitung werden auch Posteingangsregeln deaktiviert, die Nachrichten an externe Adressen umleiten.
 
-Office 365 lässt keine automatische externe Weiterleitung von Posteingangsregeln oder Mail Box-Konfiguration zu, die eine sichere Standardrichtlinie bereitstellt. Der Administrator kann diese Einstellungen jedoch für alle oder einige Benutzer in der Organisation ändern. Das Weiterleiten von Nachrichten zwischen internen Benutzern ist von einer solchen Änderung nicht betroffen.
+- Die automatische Weiterleitung von Nachrichten zwischen internen Benutzern ist von den Einstellungen in den Richtlinien für ausgehende Spamfilter nicht betroffen.
 
-> [!NOTE]
-> Das Deaktivieren der automatischen Weiterleitung an externe Adressen in Office 365 wird in Phasen mit Details, die über [Nachrichten Center](https://admin.microsoft.com/Adminportal/Home?source=applauncher&ref=/MessageCenter) -Beiträge mitgeteilt werden, ausgeführt. Um Administratoren bei der Vorbereitung auf diese Änderungen zu unterstützen, müssen Sie die Richtlinien vor der Zeit ändern, um sicherzustellen, dass Ihre Benutzer keine Unterbrechung finden.
+- Informationen zu Benutzern, die Nachrichten automatisch an externe Empfänger weiterleiten, finden Sie im [Bericht automatisch weitergeleitete Nachrichten](mfi-auto-forwarded-messages-report.md).
 
-Weitere Informationen zu Benutzern, die die automatische Weiterleitung (Posteingangsregeln oder SMTP-Weiterleitung) in Ihrer Organisation verwenden, finden Sie im [Bericht automatisch weitergeleitete Nachrichten](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report?view=o365-worldwide&preserve-view=true).
+## <a name="how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls"></a>Funktionsweise der Einstellungen für ausgehende Spamfilter Richtlinien für andere automatische e-Mail-Weiterleitungs Steuerelemente
 
-## <a name="how-does-this-policy-work-with-other-automatic-forwarding-controls"></a>Wie funktioniert diese Richtlinie mit anderen automatischen Weiterleitungs Steuerelementen?
+Als Administrator haben Sie möglicherweise bereits andere Steuerelemente konfiguriert, um die automatische e-Mail-Weiterleitung zuzulassen oder zu blockieren. Zum Beispiel:
 
-Als Administrator verfügen Sie möglicherweise bereits über andere Arten von Steuerelementen, wie das Blockieren der automatischen Weiterleitung in [Remotedomänen](https://docs.microsoft.com/exchange/mail-flow-best-practices/remote-domains/remote-domains) und die Verwendung einer Exchange-Transport Regel (ETR). Beide Steuerelemente sind unabhängig von dieser Funktion, beispielsweise wenn Sie die automatische Weiterleitung für eine Remotedomäne zulassen, die automatische Weiterleitung jedoch über die ausgehende Spam Richtlinie blockieren, wird das Ergebnis sein, dass die automatisch weitergeleitete Nachricht blockiert wird. Wenn Sie die automatische Weiterleitung in der ausgehenden Spam Richtlinie zulassen, Sie jedoch in einer ETR-oder Remotedomäne blockieren, wird die Nachricht durch eines dieser Steuerelemente blockiert. So können Sie beispielsweise die automatische Weiterleitung in der ausgehenden Spam Richtlinie zulassen und Remotedomänen verwenden, um die Domänen zu steuern, an die Benutzer Nachrichten automatisch weiterleiten können.
+- [Remote Domänen](https://docs.microsoft.com/exchange/mail-flow-best-practices/remote-domains/remote-domains) zum Zulassen oder Blockieren der automatischen e-Mail-Weiterleitung an einige oder alle externen Domänen.
+- Bedingungen und Aktionen in Exchange [-Nachrichtenfluss Regeln](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (auch bekannt als Transportregeln) zum erkennen und Blockieren von automatisch weitergeleiteten Nachrichten an externe Empfänger.
 
+Remote Domäneneinstellungen und Nachrichtenfluss Regeln sind unabhängig von den Einstellungen in den Richtlinien für ausgehende Spamfilter. Zum Beispiel:
+
+- Sie können die automatische Weiterleitung für eine Remotedomäne zulassen, aber Sie blockieren die automatische Weiterleitung in ausgehenden Spamfilter Richtlinien. In diesem Beispiel werden automatisch weitergeleitete Nachrichten blockiert.
+- Sie können die automatische Weiterleitung in ausgehenden Spamfilter Richtlinien zulassen, verwenden jedoch Nachrichtenfluss Regeln oder Remotedomäneneinstellungen, um automatisch weitergeleitete e-Mails zu blockieren. In diesem Beispiel werden die Nachrichtenfluss Regeln oder Remotedomäneneinstellungen automatisch weitergeleitete Nachrichten blockieren.
+
+Durch diese Funktions Unabhängigkeit können Sie (beispielsweise) die automatische Weiterleitung in ausgehenden Spamfilter Richtlinien zulassen, aber Remotedomänen verwenden, um die externen Domänen zu steuern, an die Benutzer Nachrichten weiterleiten können.
 
 ## <a name="the-blocked-email-forwarding-message"></a>Die Nachricht für blockierte e-Mail-Weiterleitung
 
-Wenn eine Nachricht als automatisch weitergeleitet erkannt wird und die Organisationsrichtlinie diese Aktivität *blockiert* , wird ein **Unzustellbarkeitsbericht (Non-Delivery Report, NDR)** zurück an den Endbenutzer generiert. Der Bericht zeigt an, dass die Nachricht nicht zugestellt wurde. Der NDR weist das folgende Format auf: 
+Wenn eine Nachricht als automatisch weitergeleitet erkannt wird und die Organisationsrichtlinie diese Aktivität *blockiert* , wird die Nachricht in einem Unzustellbarkeitsbericht an den Absender zurückgegeben, der die folgenden Informationen enthält:
 
-`5.7.520 Access Denied – Your administrator has disabled external forwarding – AS(XXXX)`
+`5.7.520 Access denied, Your organization does not allow external forwarding. Please contact your administrator for further assistance. AS(7555)`

@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Ende der Lebenszyklusoptionen für Gruppen, Teams und jammern.
-ms.openlocfilehash: 3720f63f99711a09d02675f10a7d639fe1bedc65
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 31383287f3288cbab68d6e249f98210dec62af2f
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377175"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681710"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>Ende der Lebenszyklusoptionen für Gruppen, Teams und jammern
 
@@ -225,7 +225,7 @@ Im Fall von Dateien, die in SharePoint in einer der oben genannten Bibliotheken 
 **Dateien verlagern**
 
 Darüber hinaus können Dateien an einen anderen Speicherort in SharePoint verschoben werden, beispielsweise an eine Bibliothek an einer anderen Website.
-Referenz https://support.office.com/en-us/article/move-or-copy-files-in-sharepoint-00e2f483-4df3-46be-a861-1f5f0c1a87bc
+Referenz https://support.office.com/article/move-or-copy-files-in-sharepoint-00e2f483-4df3-46be-a861-1f5f0c1a87bc
 
 **Liste exportieren** In SharePoint-Listen gespeicherte Daten können in [eine Excel-Kalkulationstabelle exportiert](https://support.office.com/article/bfb2ea48-6118-4fa9-abb6-cced9424e5d9)und erneut in eine Liste in einer anderen Website importiert werden.
 
