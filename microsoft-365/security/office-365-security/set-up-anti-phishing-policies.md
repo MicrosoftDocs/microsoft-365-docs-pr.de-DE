@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die Anti-Phishing-Richtlinien informieren, die in Exchange Online Protection (EoP) und Office 365 Advanced Threat Protection (Office 365 ATP) zur Verfügung stehen.
-ms.openlocfilehash: 1aeff889f5ced6429e7721518527e6f6725bb18b
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: f8e00c6162a40d6d81a0ef72f0ec655a4234a588
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399205"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681668"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-Phishing-Richtlinien in Microsoft 365
 
@@ -164,6 +164,9 @@ Die folgenden Identitätswechseleinstellungen sind nur in Richtlinien für ATP-A
   Wenn Sie der Liste der **zu schützenden Benutzer** interne oder externe e-Mail-Adressen hinzufügen, unterliegen Nachrichten von diesen **Absendern** den Identitätswechsel-Schutzprüfungen. Die Nachricht wird auf den Identitätswechsel überprüft, **Wenn** die Nachricht an einen **Empfänger** gesendet wird, auf den die Richtlinie angewendet wird (alle Empfänger für die Standardrichtlinie; **Auf** Empfänger in benutzerdefinierten Richtlinien angewendet). Wenn der Identitätswechsel in der e-Mail-Adresse des Absenders erkannt wird, werden die Aktionen des Identitätswechsel Schutzes für Benutzer auf die Nachricht angewendet (was ist mit der Nachricht zu tun, ob Sie Sicherheitstipps für imitierte Benutzer anzeigen usw.).
 
 - **Zu schützende Domänen**: verhindert, dass die angegebenen Domänen **in der Domäne des Nachrichtenabsenders**imitiert werden. Beispielsweise alle Domänen, die Sie besitzen ([akzeptierte Domänen](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) oder bestimmte Domänen (Domänen, die Sie besitzen oder Partnerdomänen). Diese Liste von **Absenderdomänen** , die vor Identitätswechsel geschützt sind, unterscheidet sich von der Liste der **Empfänger** , auf die die Richtlinie angewendet wird (alle Empfänger für die Standardrichtlinie; bestimmte Empfänger, die in der Einstellung **angewendet auf** im Abschnitt [Richtlinieneinstellungen](#policy-settings) konfiguriert sind).
+
+  > [!NOTE]
+  > Die maximale Anzahl geschützter Domänen, die Sie in allen Anti-Phishing-Richtlinien definieren können, ist 50. In anderen Worten: Sie können 50 geschützte Domänen in einer Richtlinie, 10 geschützte Domänen in 5 Richtlinien usw. haben.
 
   Standardmäßig sind keine Absenderdomänen für den Identitätswechsel Schutz in Domänen konfiguriert **, die geschützt werden sollen**. Daher werden standardmäßig keine Absenderdomänen durch den Identitätswechsel Schutz in der Standardrichtlinie oder in benutzerdefinierten Richtlinien behandelt.
 

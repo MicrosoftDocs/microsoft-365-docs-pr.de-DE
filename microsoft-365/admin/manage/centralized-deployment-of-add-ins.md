@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Ermitteln Sie, ob Ihr Mandant und die Benutzer die Anforderungen erfüllen, damit Sie die zentrale Bereitstellung für die Bereitstellung von Office-Add-Ins verwenden können.
-ms.openlocfilehash: c89cb801a5b2fcad87227feaf4228b0dcabcf609
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: af7a127d438e81d6ecd025b6a71b9d7e5df2ecc8
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464050"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681624"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Ermitteln, ob die zentrale Bereitstellung von Add-Ins für Ihre Organisation funktioniert
 
@@ -45,7 +45,7 @@ Es kann bis zu 24 Stunden dauern, bis ein Add-in für alle Benutzer für den Cli
   
 ## <a name="requirements"></a>Anforderungen
 
-Für die zentrale Bereitstellung von Add-Ins müssen die Benutzer Microsoft 365-Apps für Enterprise oder Microsoft 365 Business Premium verwenden (und mit ihrer Organisations-ID bei Office angemeldet sein) und über Exchange Online und aktive Exchange Online-Postfächer verfügen. Ihr Abonnement Verzeichnis muss sich entweder in oder im Verbund mit Azure Active Directory befinden.
+Die zentrale Bereitstellung von Add-ins erfordert, dass die Benutzer Microsoft 365-Apps für Microsoft 365 für Unternehmen oder Microsoft 365 for Business verwenden (und mit ihrer Organisations-ID bei Office angemeldet sind) und über Exchange Online und aktive Exchange Online-Postfächer verfügen. Ihr Abonnement Verzeichnis muss sich entweder in oder im Verbund mit Azure Active Directory befinden.
 Sie können die spezifischen Anforderungen für Office und Exchange unten anzeigen oder die [Kompatibilitätsprüfung für die zentrale Bereitstellung](#centralized-deployment-compatibility-checker)verwenden.
 
 Folgendes wird von der zentralen Bereitstellung nicht unterstützt:
@@ -61,11 +61,11 @@ Folgendes wird von der zentralen Bereitstellung nicht unterstützt:
 ### <a name="office-requirements"></a>Office-Anforderungen
 
 - Für Word-, Excel-und PowerPoint-Add-Ins müssen die Benutzer eine der folgenden Optionen verwenden:
-  - Auf einem Windows-Gerät Version 1704 oder höher von Microsoft 365 Apps für Unternehmen oder Microsoft 365 Business Premium.
+  - Auf einem Windows-Gerät, Version 1704 oder höher von Microsoft 365-Apps für Microsoft 365 für Unternehmen oder Microsoft 365 for Business.
   - Auf einem Mac, Version 15,34 oder höher.
 
 - Für Outlook müssen die Benutzer eine der folgenden Optionen verwenden: 
-  - Version 1701 oder höher von Microsoft 365 Apps für Unternehmen oder Microsoft 365 Business Premium.
+  - Version 1701 oder höher von Microsoft 365-Apps für Microsoft 365 für Unternehmen oder Microsoft 365 for Business.
   - Version 1808 oder höher von Office Professional Plus 2019 oder Office Standard 2019.
   - Version 16.0.4494.1000 oder höher von Office Professional Plus 2016 (MSI) oder Office Standard 2016 (MSI)\*
   - Version 15.0.4937.1000 oder höher von Office Professional Plus 2013 (MSI) oder Office Standard 2013 (MSI)\*
