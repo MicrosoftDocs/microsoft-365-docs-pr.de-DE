@@ -238,6 +238,8 @@
           href: create-test-tune-dlp-policy.md
         - name: Verwenden von Benachrichtigungen und Richtlinientipps in DLP-Richtlinien
           href: use-notifications-and-policy-tips.md
+        - name: Benachrichtigungen für DLP-Richtlinien konfigurieren und anzeigen (Preview)
+          href: dlp-configure-view-alerts-policies.md
         - name: Inhalt der DLP-Richtlinienvorlagen
           href: what-the-dlp-policy-templates-include.md
         - name: Erstellen einer DLP-Richtlinie zum Schützen von Dokumenten mit FCI oder anderen Eigenschaften
