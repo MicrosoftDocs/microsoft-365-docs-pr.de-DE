@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie mehr über die Dienste und Elementtypen, die Sie mit Vertraulichkeitsbezeichnungen als Bedingungen in DLP-Richtlinien verwenden können.
-ms.openlocfilehash: 561a6cbd7b8aeb9082862319c5cc6419fd79c896
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 2f8eb30e23d722a5e8faf7d0ddaca6b9a94e279b
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321110"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649634"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies-preview"></a>Verwenden von Vertraulichkeitsbezeichnungen als Bedingungen in DLP-Richtlinien (Vorschau)
 
@@ -38,7 +38,12 @@ Sie können [Vertraulichkeitsbezeichnungen](sensitivity-labels.md) als Bedingung
 
 Vertraulichkeitsbezeichnungen werden als Option in der Liste **Inhalt enthält** angezeigt.
 
-![Vertraulichkeitsbezeichnungen als Bedingung](../media/dlp-sensitivity-label-as-a-condition.png)
+> [!div class="mx-imgBorder"]
+> ![Vertraulichkeitsbezeichnungen als Bedingung](../media/dlp-sensitivity-label-as-a-condition.png)
+
+> [!IMPORTANT]
+> **Vertraulichkeitsbezeichnungen** als Bedingung werden nicht verfügbar sein, wenn Sie **Teams-Chat und Kanalnachrichten**als Ort für die Anwendung der DLP-Richtlinie ausgewählt haben.
+
 
 ## <a name="supported-items-scenarios-and-policy-tips"></a>Unterstützte Elemente, Szenarien und Richtlinientipps
 
@@ -46,7 +51,7 @@ Sie können Vertraulichkeitsbezeichnungen als Bedingungen für diese Elemente un
 
 ### <a name="supported-items"></a>unterstützte Elemente
 
-|Dienst  |Elementtyp  |verfügbar für Richtlinientipps  |durchsetzbar  |
+|Dienst  |Elementtyp  |Verfügbar für Richtlinientipps  |Durchsetzbar  |
 |---------|---------|---------|---------|
 |Exchange    |E-Mail-Nachricht         |ja         |ja         |
 |Exchange    |E-Mail-Anlage         |nein *         |nein *         |
@@ -64,16 +69,20 @@ Sie können Vertraulichkeitsbezeichnungen als Bedingungen für diese Elemente un
 ### <a name="supported-scenarios"></a>Unterstützte Szenarien
 
 - Der DLP-Administrator kann eine Liste aller Vertraulichkeitsbezeichnugen im Mandanten anzeigen, wenn er eine oder mehrere Vertraulichkeitsbezeichnungen als Bedingung einschließt.
+
 - Die Verwendung von Vertraulichkeitsbezeichnungen als Bedingung wird in allen Workloads unterstützt, wie in der obigen Supportmatrix angegeben.
+
 - DLP-Richtlinientipps werden weiterhin für Workloads (mit Ausnahme von Outlook Win32) angezeigt, die eine Vertraulichkeitsbezeichnung als Bedingung enthalten.
+
 - Vertraulichkeitsbezeichnungen werden auch als Bestandteil der Schadensbericht-E-Mail angezeigt, wenn eine DLP-Richtlinie mit einer Vertraulichkeitsbezeichnung als Bedingung übereinstimmt.
+
 - Details zur Vertraulichkeitsbezeichnung werden auch im Überwachungsprotokoll „DLP-Regelabgleich“ für eine Übereinstimmung mit einer DLP-Richtlinie angezeigt, die die Vertraulichkeitsbezeichnung als Bedingung enthält.
 
 
 ### <a name="support-policy-tips"></a>Support-Richtlinientipps
 
 
-|Workload  |unterstützte/nicht unterstützte Richtlinientipps  |
+|Workload  |Richtlinientipps unterstützt / nicht unterstützt  |
 |---------|---------|
 |OWA |    unterstützt     |
 |Outlook Win 32    |  nicht unterstützt       |
