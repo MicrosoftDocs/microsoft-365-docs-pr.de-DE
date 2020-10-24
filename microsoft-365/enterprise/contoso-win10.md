@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informationen dazu, wie Contoso Microsoft Endpoint Configuration Manager zur Bereitstellung von direkten Upgrades für Windows 10 Enterprise verwendete.
-ms.openlocfilehash: a100eb07408053fd270c26f388265696549fff9f
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 0543f24665048d0679bc1b099fdd0a2d431c1e54
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686418"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754247"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Bereitstellung von Windows 10 Enterprise für Contoso
 
@@ -55,15 +54,7 @@ Contoso verfügt über eine vorhandene Infrastruktur von Configuration Manager (
 
 ## <a name="planning-process"></a>Planungsprozess
 
-Vor der Bereitstellung hat Contoso die folgenden Ringe definiert:
-
-- Drei Ringe für die Überprüfung und das Staging der Bereitstellung 
-  - Ein Ring für Vorschau-Builds 
-  - Ein Ring für die Builds von neuen Versionen
-  - Ein Ring für einen früheren Build 
-- Ein Ring für die allgemeine Bereitstellung von Windows 10 Enterprise basierend auf Daten aus den Überprüfungsringen
-
-Contoso hat auch die Lösung für die Upgradebereitschaft von Windows Analytics verwendet, um installierte Apps und deren Kompatibilität mit Windows 10 Enterprise zu bestimmen.
+Contoso hat die Upgrade-Bereitschaft in Windows Analytics verwendet, um die Gruppe der installierten apps und deren Kompatibilität mit Windows 10 Enterprise zu ermitteln.
 
 ## <a name="deployment-process"></a>Bereitstellungsprozess
 
@@ -71,11 +62,11 @@ Um die Bereitstellung des direkten Upgrades von Windows 10 Enterprise abzuschlie
 
 1. Der Peercache für Configuration Manager wurde aktiviert.
 2. Es wurden angepasste Windows-Pakete basierend auf Images aus dem Volume Licensing Service Center erstellt.
-3. Configuration Manager wurde zur Bereitstellung der Windows-Pakete an Verteilungspunkten im Netzwerk verwendet, und es wurden Builds an den drei Ringen für Überprüfung und Staging der Bereitstellung bereitgestellt.
+3. Verwenden Sie den Konfigurations-Manager, um die Windows-Pakete für Verteilungspunkte in Ihrem Netzwerk bereitzustellen und Builds für die drei Bereitstellungsgruppen für Validierung und Bereitstellung bereitzustellen.
 4. Mithilfe der Lösungen für Geräteintegrität und Updatebereitschaft von Windows Analytics wurden der Erfolg von Computern und Geräten in den drei Ringen für Überprüfung und Staging der Bereitstellung bewertet.
-5. Contoso ermittelte (basierend auf den Windows Analytics-Informationen) die Version von Windows 10 Enterprise, die im Ring der Bereitstellung auf breiter Basis bereitgestellt werden soll.
-6. Es wurden die Bereitstellungsaufgabenfolgen von Configuration Manager ausgeführt, um das ausgewählte Windows-Paket im Ring der Bereitstellung auf breiter Basis bereitzustellen.
-7. Die Computer und Geräte im Ring der Bereitstellung auf breiter Basis wurden mithilfe der Lösungen für Geräteintegrität und Updatebereitschaft überwacht, die zur Behebung von Problemen bereitgestellt werden.
+5. Basierend auf den Windows Analytics-Informationen hat Contoso die Version von Windows 10 Enterprise festgelegt, die in der breiten Bereitstellungsgruppe bereitgestellt werden soll.
+6. Die Configuration Manager-Bereitstellungstasksequenzen wurden ausgeführt, um das ausgewählte Windows-Paket für die Breite Bereitstellungsgruppe bereitzustellen.
+7. Überwachte PCs und Geräte in der breiten Bereitstellungsgruppe mithilfe der Geräte Integrität und Update Compliance-Lösungen, um Probleme zu beheben.
 
 Hier ist Contosos Bereitstellungsarchitektur für das direkte Upgrade und fortlaufende Updates.
 
@@ -87,11 +78,11 @@ Diese Infrastruktur besteht aus:
   - Images für Windows 10 Enterprise-Pakete aus dem Microsoft Volume Licensing Center im Microsoft Network abruft.
   - Als zentraler Verwaltungspunkt für Bereitstellungspakete fungiert.
 - Regionale Verteilungspunkte befinden sich in der Regel in den regionalen Hub-Büros von Contoso.
-- Windows-PCs und Geräte an verschiedenen Standorten, die die Bereitstellungspakete für das direkte Upgrade oder für laufende Updates basierend auf der Ringmitgliedschaft empfangen und installieren.
+- Windows-PCs und-Geräte an verschiedenen Standorten, die die Bereitstellungspakete für das in-Place-Upgrade oder laufende Updates basierend auf der Gruppenmitgliedschaft empfangen und installieren.
 
 ## <a name="next-step"></a>Nächster Schritt
 
-[Erfahren Sie](contoso-o365pp.md), wie Contoso seine Configuration Manager-Infrastruktur verwendet, um das aktuelle Microsoft 365 Apps for Enterprise im gesamten Unternehmen bereitzustellen. 
+Erfahren Sie, wie Contoso seine Configuration Manager-Infrastruktur nutzt, um [aktuelle Microsoft 365-Apps für Unternehmen in Ihrer Organisation bereitzustellen und zu halten](contoso-o365pp.md) . 
 
 ## <a name="see-also"></a>Siehe auch
 

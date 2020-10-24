@@ -1,5 +1,5 @@
 ---
-title: Erste Schritte mit PowerShell für Microsoft 365
+title: Erste Schritte mit PowerShell für Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,19 +16,19 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
-description: 'Zusammenfassung: Hier finden Sie Informationen zum Wert von PowerShell für Microsoft 365, eine Verbindung mit Ihrem Microsoft 365-Mandanten und Hilfe.'
-ms.openlocfilehash: 3a57e5188dd4161442ee722a14c2546ef28ccb01
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+description: 'Zusammenfassung: grundlegende Informationen zum Wert von PowerShell für Microsoft 365, wie Sie mit Ihrem Microsoft 365-Mandanten verbunden werden und wo Sie Hilfe erhalten.'
+ms.openlocfilehash: 850d3eea1aa23937bf30795784405119ef6c167c
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47429974"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754456"
 ---
-# <a name="get-started-with-powershell-for-microsoft-365"></a>Erste Schritte mit PowerShell für Microsoft 365
+# <a name="get-started-with-powershell-for-microsoft-365"></a>Erste Schritte mit PowerShell für Microsoft 365
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Mithilfe von Befehlen und Skripts in PowerShell für Microsoft 365 können Sie Microsoft 365 verwalten und Ihre tägliche Arbeit optimieren. Erfahren Sie, warum PowerShell für Microsoft 365 entscheidend für die Verwaltung von Microsoft 365 ist, wie Sie eine Verbindung mit Ihrem Microsoft 365-Abonnement herstellen und Berichte erstellen, und wo Sie weitere Informationen und Hilfe von der Microsoft 365-Community erhalten.
+Mithilfe von Befehlen und Skripts in PowerShell für Microsoft 365 können Sie Microsoft 365 verwalten und Ihre tägliche Arbeit optimieren. Verwenden Sie die folgenden Informationen, um zu erfahren, warum PowerShell für Microsoft 365 entscheidend für die Verwaltung von Microsoft 365 ist, wie Sie eine Verbindung mit Ihrem Microsoft 365-Abonnement herstellen und Berichte erstellen, und wo Sie weitere Informationen aus der Microsoft 365-Community erhalten.
   
 Wählen Sie aus den folgenden Themen aus:
   
@@ -54,7 +54,7 @@ Wählen Sie aus den folgenden Themen aus:
     
 - [**Microsoft 365 Community-Ressourcen für PowerShell**](microsoft-365-powershell-community-resources.md)
     
-    Beginnen Sie hier, um eine Verbindung mit der PowerShell-Community herzustellen und Hilfe oder weitere Informationen zur Verwendung von PowerShell für Microsoft 365 zu erhalten.
+    Beginnen Sie hier, um eine Verbindung mit der PowerShell-Community herzustellen und weitere Informationen zur Verwendung von PowerShell für Microsoft 365 zu erhalten.
     
 ## <a name="related-topics"></a>Verwandte Themen
 

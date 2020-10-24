@@ -19,20 +19,22 @@ ms.custom:
 - O365ITProTrain
 - seo-marvel-apr2020
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
-description: In diesem Artikel erfahren Sie, wie Sie mithilfe verschiedener Module in PowerShell Microsoft 365-Benutzerkonten löschen.
-ms.openlocfilehash: 0c13b57c13fb3d01d648438a5d6973fea8b9db67
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+description: In diesem Artikel erfahren Sie, wie Sie in PowerShell unterschiedliche Module zum Löschen von Microsoft 365-Benutzerkonten verwenden.
+ms.openlocfilehash: 39bf57fe7e7aad1bdc9915e503107ad799515030
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235442"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754540"
 ---
 # <a name="delete-microsoft-365-user-accounts-with-powershell"></a>Löschen von Microsoft 365-Benutzerkonten mit PowerShell
 
-Sie können PowerShell für Microsoft 365 verwenden, um ein Benutzerkonto zu löschen und wiederherzustellen.
+Sie können PowerShell für Microsoft 365 zum Löschen und Wiederherstellen von Benutzerkonten verwenden.
 
 >[!Note]
->[Hier erfahren Sie, wie Sie ein Benutzerkonto](https://docs.microsoft.com/microsoft-365/admin/add-users/restore-user) im Microsoft 365 Admin Center wiederherstellen. Eine Liste mit weiteren Ressourcen finden Sie unter [Verwalten von Benutzern und Gruppen](https://docs.microsoft.com/microsoft-365/admin/add-users/).
+>Erfahren Sie, wie Sie [ein Benutzerkonto](https://docs.microsoft.com/microsoft-365/admin/add-users/restore-user) mithilfe des Microsoft 365 Admin Center wiederherstellen.
+>
+>Eine Liste mit weiteren Ressourcen finden Sie unter [Verwalten von Benutzern und Gruppen](https://docs.microsoft.com/microsoft-365/admin/add-users/).
 >   
    
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Verwenden der Azure Active Directory PowerShell für Graph-Module
@@ -45,14 +47,14 @@ Nachdem Sie eine Verbindung hergestellt haben, verwenden Sie die folgende Syntax
 Remove-AzureADUser -ObjectID <sign-in name>
 ```
 
-In diesem Beispiel wird das Benutzerkonto „fabricec@litwareinc.com“ entfernt.
+In diesem Beispiel wird das Benutzerkonto *fabricec \@ litwareinc.com*entfernt.
   
 ```powershell
 Remove-AzureADUser -ObjectID fabricec@litwareinc.com
 ```
 
 > [!NOTE]
-> Der Parameter **-objectID** im Cmdlet **Remove-AzureADUser** akzeptiert entweder den Anmeldenamen des Kontos, der auch als Benutzerprinzipalname bezeichnet wird, oder die Objekt-ID des Kontos.
+> Der Parameter *-objectID* im Cmdlet **Remove-AzureADUser** akzeptiert entweder den Anmeldenamen des Kontos, der auch als Benutzerprinzipalname oder Objekt-ID des Kontos bezeichnet wird.
   
 Um den Kontonamen basierend auf dem Namen des Benutzers anzuzeigen, verwenden Sie die folgenden Befehle:
   
@@ -61,7 +63,7 @@ $userName="<User name>"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-In diesem Beispiel wird der Kontoname für den Benutzer namens Caleb Sills angezeigt.
+In diesem Beispiel wird der Konto Name für den Benutzer *Caleb Sills*angezeigt.
   
 ```powershell
 $userName="Caleb Sills"
@@ -77,7 +79,7 @@ Remove-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userN
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Verwenden des Microsoft Azure Active Directory-Moduls für Windows PowerShell
 
-Wenn Sie ein Benutzerkonto mit dem Microsoft Azure AD-Modul für Windows PowerShell löschen, wird das Konto nicht endgültig gelöscht. Sie können das gelöschte Benutzerkonto innerhalb von 30 Tagen wiederherstellen.
+Wenn Sie ein Benutzerkonto über das Microsoft Azure Active Directory Modul für Windows PowerShell löschen, wird das Konto nicht endgültig gelöscht. Sie können das gelöschte Benutzerkonto innerhalb von 30 Tagen wiederherstellen.
 
 Stellen Sie zunächst [eine Verbindung mit Ihrem Microsoft 365-Mandanten her](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
@@ -88,10 +90,10 @@ Remove-MsolUser -UserPrincipalName <sign-in name>
 ```
 
 >[!Note]
->PowerShell Core unterstützt nicht das Microsoft Azure Active Directory-Modul für Windows PowerShell und Cmdlets mit **Msol** im Namen. Um diese Cmdlets weiterhin verwenden zu können, müssen Sie sie über Windows PowerShell ausführen.
+>PowerShell Core unterstützt das Microsoft Azure Active Directory Modul für Windows PowerShell Modul und Cmdlets mit *MSOL* nicht in Ihrem Namen. Führen Sie diese Cmdlets aus Windows PowerShell aus.
 >
 
-In diesem Beispiel wird das Benutzerkonto „BelindaN@litwareinc.com“ gelöscht.
+In diesem Beispiel wird das Benutzerkonto *BelindaN@litwareinc.com*gelöscht.
   
 ```powershell
 Remove-MsolUser -UserPrincipalName belindan@litwareinc.com
@@ -103,21 +105,20 @@ Wenn Sie ein gelöschtes Benutzerkonto innerhalb der Nachfrist von 30 Tagen wied
 Restore-MsolUser -UserPrincipalName <sign-in name>
 ```
 
-In diesem Beispiel wird das gelöschte Benutzerkonto „BelindaN@litwareinc.com“ wiederhergestellt.
+In diesem Beispiel wird das gelöschte Konto *belindan \@ litwareinc.com*wiederhergestellt.
   
 ```powershell
 Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
 ```
 
- **Hinweise:**
-  
-- Um die Liste der gelöschten Benutzer anzuzeigen, die wiederhergestellt werden können, führen Sie den folgenden Befehl aus:
-    
-  ```powershell
-  Get-MsolUser -All -ReturnDeletedUsers
-  ```
-
-- Wenn der ursprüngliche Benutzerprinzipalnamen des Benutzerkontos durch ein anderes Konto verwendet wird, verwenden Sie den _NewUserPrincipalName_-Parameter anstelle von _UserPrincipalName_, um einen anderen Benutzerprinzipalnamen anzugeben, wenn Sie das Benutzerkonto wiederherstellen.
+>[!Note]
+> Um die Liste der gelöschten Benutzer anzuzeigen, die wiederhergestellt werden können, führen Sie den folgenden Befehl aus:
+>    
+> ```powershell
+> Get-MsolUser -All -ReturnDeletedUsers
+> ```
+>
+> Wenn der ursprüngliche Benutzerprinzipalnamen des Benutzerkontos durch ein anderes Konto verwendet wird, verwenden Sie den _NewUserPrincipalName_-Parameter anstelle von _UserPrincipalName_, um einen anderen Benutzerprinzipalnamen anzugeben, wenn Sie das Benutzerkonto wiederherstellen.
 
 
 ## <a name="see-also"></a>Siehe auch

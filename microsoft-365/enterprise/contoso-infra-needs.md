@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Hier finden Sie Informationen zur grundlegenden Struktur der lokalen Contoso-IT-Infrastruktur und dazu, wie die geschäftlichen Anforderungen von Microsoft 365 für Unternehmen erfüllt werden.
-ms.openlocfilehash: bc2b34254da01a3d49085082ab8ee8632df2d434
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 767374097efa116f116cff6f6ddf96d075eb71ed
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637175"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754586"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Contoso-IT-Infrastruktur und geschäftliche Anforderungen
 
@@ -30,12 +29,10 @@ Contoso wechselt von einer lokalen, zentralisierten IT-Infrastruktur zu einem Cl
 
 Contoso nutzt eine weitestgehend zentrale lokale IT-Infrastruktur mit Anwendungsrechenzentren in der Pariser Zentrale.
 
-In Abbildung 1 ist die Hauptniederlassung mit Anwendungsdaten Centern, einer DMZ und dem Internet dargestellt.
+Hier finden Sie die Hauptniederlassung mit Anwendungsdaten Centern, eine DMZ und das Internet.
 
 ![Vorhandene Contoso-IT-Infrastruktur](../media/contoso-infra-needs/contoso-infra-needs-fig1.png)
 
-**Abbildung 1: vorhandene Contoso-IT-Infrastruktur**
- 
 In den lokalen Anwendungsrechenzentren wird Folgendes gehostet: 
 
 - Benutzerdefinierte Branchenanwendungen, die SQL Server und andere Linux-Datenbanken verwenden.
@@ -135,12 +132,12 @@ Die IT-Abteilung von Contoso hat vor der Bereitstellung die folgende Zuordnung d
 | Compliance |  |  |
 |  | Einhalten von regionalen gesetzlichen Vorschriften | Dsgvo-Features in Microsoft 365 |
 | Verwaltung |  |  |
-|  | Weniger IT-Aufwand für die Installation von Clientupdates | Bereitstellungsringe <BR> Windows 10 Enterprise-Updates <BR> Microsoft 365 Apps for Enterprise-Updates |
+|  | Weniger IT-Aufwand für die Installation von Clientupdates | Windows 10 Enterprise-Updates <BR> Microsoft 365 Apps for Enterprise-Updates |
 ||||
 
 ## <a name="next-step"></a>Nächster Schritt
 
-[Erfahren Sie mehr](contoso-networking.md) über das lokale Contoso Corporation-Netzwerk und wie es für den Zugriff und die Wartezeit auf Cloud-basierte Microsoft 365-Ressourcen optimiert wurde.
+Erfahren Sie mehr über das [lokale](contoso-networking.md) Contoso Corporation-Netzwerk und wie es für den Zugriff und die Wartezeit auf Cloud-basierte Microsoft 365-Ressourcen optimiert wurde.
 
 ## <a name="see-also"></a>Siehe auch
 

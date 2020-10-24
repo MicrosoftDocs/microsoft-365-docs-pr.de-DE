@@ -20,18 +20,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: In diesem Artikel erfahren Sie, wie Sie Ihre Microsoft 365-Benutzerkonten mit PowerShell auf unterschiedliche Weise anzeigen, auflisten oder anzeigen können.
-ms.openlocfilehash: 4dba05ce440ec0d395fda58a12df3e9f751bb469
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: 312e9fb983c4d1f4de8bc74586c88f1e669eb90a
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357898"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754072"
 ---
 # <a name="view-microsoft-365-user-accounts-with-powershell"></a>Anzeigen von Microsoft 365-Benutzerkonten mit PowerShell
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Sie können zwar das Microsoft 365 Admin Center verwenden, um die Konten für Ihren Microsoft 365-Mandanten anzuzeigen, aber Sie können auch PowerShell für Microsoft 365 verwenden und einige Dinge tun, die das Admin Center nicht kann.
+Sie können das Microsoft 365 Admin Center verwenden, um die Konten für Ihren Microsoft 365-Mandanten anzuzeigen. PowerShell für Microsoft 365 ermöglicht dies, bietet aber auch zusätzliche Funktionen.
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Verwenden der Azure Active Directory PowerShell für Graph-Module
 
@@ -45,7 +45,7 @@ Um die vollständige Liste der Benutzerkonten anzuzeigen, führen Sie den folgen
 Get-AzureADUser
 ```
 
-Es sollten Informationen ähnlich den folgenden angezeigt werden:
+Sie sollten ähnliche Informationen wie die folgenden erhalten:
   
 ```powershell
 ObjectId                             DisplayName                                           UserPrincipalName
@@ -60,7 +60,7 @@ be4bdddd-c790-424c-9f96-a0cf609b7815 Allan Deyoung                              
 
 ### <a name="view-a-specific-account"></a>Anzeigen eines bestimmten Kontos
 
-Um ein bestimmtes Benutzerkonto anzuzeigen, geben Sie den Anmeldekontonamen des Benutzerkontos ein, das auch als Benutzerprinzipalname (User Principal Name, UPN) bezeichnet wird, entfernen Sie die Zeichen "<" und ">", und führen Sie den folgenden Befehl aus:
+Führen Sie den folgenden Befehl aus, um ein bestimmtes Benutzerkonto anzuzeigen. Geben Sie den Anmeldekontonamen des Benutzerkontos ein, das auch als Benutzerprinzipalname (User Principal Name, UPN) bezeichnet wird. Entfernen Sie die Zeichen "<" und ">".
   
 ```powershell
 Get-AzureADUser -ObjectID <sign-in name of the user account>
@@ -74,9 +74,9 @@ Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com
 
 ### <a name="view-additional-property-values-for-a-specific-account"></a>Anzeigen zusätzlicher Eigenschaftswerte für ein bestimmtes Konto
 
-Standardmäßig zeigt das Cmdlet **Get-AzureADUser** nur die Eigenschaften ObjectID, DisplayName und userPrincipalName von Konten an.
+Standardmäßig zeigt das Cmdlet **Get-AzureADUser** nur die Eigenschaften *objectID*, *DisplayName*und *userPrincipalName* von Konten an.
 
-Um die Liste der anzuzeigenden Eigenschaften selektiver zu machen, können Sie das Cmdlet **Select** in Kombination mit dem Cmdlet **Get-AzureADUser** verwenden. Um die beiden Cmdlets zu kombinieren, verwenden wir das "Pipe"-Zeichen "|", das Azure Active Directory PowerShell für Graph anweist, die Ergebnisse eines Befehls zu übernehmen und an den nächsten Befehl zu senden. Es folgt ein Beispielbefehl, mit dem DisplayName, Department und UsageLocation für jedes Benutzerkonto angezeigt werden:
+Um die anzuzeigenden Eigenschaften selektiver zu machen, verwenden **Sie das SELECT** -Cmdlet in Kombination mit dem Cmdlet **Get-AzureADUser** . Um die beiden Cmdlets zu kombinieren, verwenden Sie das "Pipe"-Zeichen ("|"), das Azure Active Directory PowerShell für Graph anweist, die Ergebnisse eines Befehls zu übernehmen und an den nächsten Befehl zu senden. Im folgenden Beispiel wird der Befehl *DisplayName*, *Department*und *UsageLocation* für jedes Benutzerkonto angezeigt:
   
 ```powershell
 Get-AzureADUser | Select DisplayName,Department,UsageLocation
@@ -84,17 +84,17 @@ Get-AzureADUser | Select DisplayName,Department,UsageLocation
 
 Mit diesem Befehl wird PowerShell an Folgendes angewiesen:
   
-- Alle Informationen der Benutzerkonten abrufen (**Get-AzureADUser**) und an den nächsten Befehl senden (**|**).
+1. Alle Informationen zu den Benutzerkonten abrufen (**Get-AzureADUser**) und an den nächsten Befehl senden ( **|** ).
     
-- Zeigt nur den Namen des Benutzerkontos, die Abteilung und den Verwendungs Speicherort an ( **Wählen Sie DisplayName, Abteilung, UsageLocation** ).
+1.  Zeigt nur den Namen des Benutzerkontos, die Abteilung und den Verwendungs Speicherort an (**Wählen Sie DisplayName, Abteilung, UsageLocation**).
   
-Um alle Eigenschaften für Benutzerkonten anzuzeigen, verwenden Sie das **Select** -Cmdlet und das Platzhalterzeichen (*), um Sie alle für ein bestimmtes Benutzerkonto anzuzeigen. Hier ein Beispiel:
+Wenn Sie alle Eigenschaften für ein bestimmtes Benutzerkonto anzeigen möchten, verwenden **Sie das SELECT** -Cmdlet und das Platzhalterzeichen (*). Hier ein Beispiel:
   
 ```powershell
 Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select *
 ```
 
-Als weiteres Beispiel können Sie den aktivierten Status eines bestimmten Benutzerkontos überprüfen, indem Sie den folgenden Befehl ausführen:
+Führen Sie als weiteres Beispiel den folgenden Befehl aus, um den aktivierten Status eines bestimmten Benutzerkontos zu überprüfen:
   
 ```powershell
 Get-AzureADUser -ObjectID <sign-in name of the user account> | Select DisplayName,UserPrincipalName,AccountEnabled
@@ -102,22 +102,28 @@ Get-AzureADUser -ObjectID <sign-in name of the user account> | Select DisplayNam
 
 ### <a name="view-account-synchronization-status"></a>Anzeigen des Status der Konto Synchronisierung
 
-Benutzerkonten weisen zwei Quellen auf; Windows Server Active Directory (AD), bei denen es sich um Konten handelt, die vom lokalen AD zur Cloud synchronisiert werden und Azure Ad die in der Cloud direkt erstellte Konten sind.
+Benutzerkonten weisen zwei Quellen auf: 
+
+- Windows Server Active Directory (AD), bei denen es sich um Konten handelt, die vom lokalen AD zur Cloud synchronisiert werden.
+
+- Azure Active Directory (Azure AD) Ad-Konten, die direkt in der Cloud erstellt werden.
+
+
+Mit dem folgenden Befehl wird PowerShell angewiesen, alle Benutzer abzurufen, bei denen das Attribut *DirSyncEnabled* auf *true*festgelegt ist. Sie können es verwenden, um Konten zu finden, die von lokalen AD synchronisiert werden.
 
 ```powershell
 Get-AzureADUser | Where {$_.DirSyncEnabled -eq $true}
 ```
-Mit diesem Befehl wird PowerShell angewiesen, alle Benutzer abzurufen, bei denen das Attribut **DirSyncEnabled** auf true festgelegt ist. Es kann zum Abrufen von Konten verwendet werden, die von lokalen AD synchronisiert werden.
 
+Mit dem folgenden Befehl wird PowerShell angewiesen, alle Benutzer abzurufen, bei denen das Attribut *DirSyncEnabled* auf *false*festgelegt ist. Sie können damit nur Cloud-Konten suchen.
 
 ```powershell
-Get-AzureADUser | Where {$_.DirSyncEnabled -ne $true}
+Get-AzureADUser | Where {$_.DirSyncEnabled -ne $false}
 ```
-Mit diesem Befehl wird PowerShell angewiesen, alle Benutzer abzurufen, bei denen das Attribut **DirSyncEnabled** auf false festgelegt ist. Es kann verwendet werden, um Cloud-only-Konten abzurufen.
 
-### <a name="view-some-accounts-based-on-a-common-property"></a>Anzeigen einiger Konten basierend auf einer gemeinsamen Eigenschaft
+### <a name="view-accounts-based-on-a-common-property"></a>Anzeigen von Konten basierend auf einer gemeinsamen Eigenschaft
 
-Um die Liste der anzuzeigenden Konten selektiver zu machen, können Sie das Cmdlet **Where** in Kombination mit dem Cmdlet **Get-AzureADUser** verwenden. Um die beiden Cmdlets zu kombinieren, verwenden wir das "Pipe"-Zeichen "|", das Azure Active Directory PowerShell für Graph anweist, die Ergebnisse eines Befehls zu übernehmen und an den nächsten Befehl zu senden. Nachfolgend ist ein Beispielbefehl aufgeführt, mit dem nur die Benutzerkonten angezeigt werden, die über einen nicht angegebenen Verwendungsstandort verfügen:
+Um die Liste der anzuzeigenden Konten selektiver zu machen, können Sie das Cmdlet **Where** in Kombination mit dem Cmdlet **Get-AzureADUser** verwenden. Um die beiden Cmdlets zu kombinieren, verwenden Sie das "Pipe"-Zeichen ("|"), das Azure Active Directory PowerShell für Graph anweist, die Ergebnisse eines Befehls zu übernehmen und an den nächsten Befehl zu senden. Es folgt ein Beispielbefehl, in dem nur die Benutzerkonten angezeigt werden, die einen nicht angegebenen Verwendungs Speicherort aufweisen:
   
 ```powershell
 Get-AzureADUser | Where {$_.UsageLocation -eq $Null}
@@ -125,24 +131,24 @@ Get-AzureADUser | Where {$_.UsageLocation -eq $Null}
 
 Dieser Befehl weist Azure Active Directory PowerShell für Graph Folgendes zu:
   
-- Alle Informationen der Benutzerkonten abrufen (**Get-AzureADUser**) und an den nächsten Befehl senden (**|**).
+1. Alle Informationen zu den Benutzerkonten abrufen (**Get-AzureADUser**) und an den nächsten Befehl senden ( **|** ).
     
-- Suchen Sie alle Benutzerkonten mit einem nicht angegebenen Verwendungs Speicherort ( **wobei {$ \_ . UsageLocation-EQ $NULL}** ). In den geschweiften Klammern weist der Befehl PowerShell an, nur den kontensatz zu finden, in dem die UsageLocation-Benutzerkonto Eigenschaft ( ** $ \_ . UsageLocation** ) ist nicht angegeben ( **-EQ $NULL** ).
+1. Suchen Sie nach allen Benutzerkonten mit einem nicht angegebenen Verwendungs Speicherort (**wobei {$ \_ . UsageLocation-EQ $NULL}**). In den geschweiften Klammern weist der Befehl PowerShell an, nur die Konten zu finden, für die die UsageLocation-Benutzerkonto Eigenschaft (** $ \_ . UsageLocation**) ist nicht angegeben (**-EQ $NULL**).
     
-Die **UsageLocation**-Eigenschaft ist nur eine von vielen Eigenschaften, die einem Benutzerkonto zugeordnet ist. Um alle Eigenschaften für Benutzerkonten anzuzeigen, verwenden Sie das **Select** -Cmdlet und das Platzhalterzeichen (*), um Sie alle für ein bestimmtes Benutzerkonto anzuzeigen. Hier ein Beispiel:
+Die **UsageLocation**-Eigenschaft ist nur eine von vielen Eigenschaften, die einem Benutzerkonto zugeordnet ist. Um alle Eigenschaften für ein bestimmtes Benutzerkonto anzuzeigen, verwenden Sie das **Select** -Cmdlet und das Platzhalterzeichen (*). Hier ein Beispiel:
   
 ```powershell
 Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select *
 ```
 
-In dieser Liste steht das **City**-Objekt für den Namen einer Benutzerkontoeigenschaft. Dies bedeutet, dass Sie mit dem folgenden Befehl eine Liste aller Benutzerkonten für Benutzer, die in London leben, anzeigen können:
+Das **City**-Objekt steht z. B. für den Namen einer Benutzerkontoeigenschaft. Mit dem folgenden Befehl können Sie alle Konten von Benutzern auflisten, die in London Leben:
   
 ```powershell
 Get-AzureADUser | Where {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  Die Syntax für das in diesen Beispielen dargestellte Cmdlet **Where** ist **{$ \_ .** [Name der Benutzerkonten Eigenschaft] [Vergleichsoperator] Wert **}**. > [Vergleichsoperator] ist **-EQ** für gleich, **-ne** für ungleich, **-lt** für kleiner als, **-gt** für größer als und andere.  [value] ist normalerweise eine Zeichenfolge (eine Sequenz von Buchstaben, Zahlen und anderen Zeichen), ein numerischer Wert oder **$null** für Unspecified> siehe [Where](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Where?view=powershell-5.1) für weitere Informationen.
+>  Die Syntax für das Cmdlet **Where** in diesen Beispielen ist **{$ \_ .** [Name der Benutzerkonten Eigenschaft] [Vergleichsoperator] Wert **}**. > [Vergleichsoperator] ist **-EQ** für gleich, **-ne** für ungleich, **-lt** für kleiner als, **-gt** für größer als und andere.  [value] ist normalerweise eine Zeichenfolge (eine Sequenz von Buchstaben, Zahlen und anderen Zeichen), ein numerischer Wert oder **$null** für Unspecified. Weitere Informationen finden Sie unter [Where](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/where-object?view=powershell-7).
   
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Verwenden des Microsoft Azure Active Directory-Moduls für Windows PowerShell
@@ -158,10 +164,10 @@ Get-MsolUser
 ```
 
 >[!Note]
->PowerShell Core unterstützt nicht das Microsoft Azure Active Directory-Modul für Windows PowerShell und Cmdlets mit **Msol** im Namen. Um diese Cmdlets weiterhin verwenden zu können, müssen Sie sie über Windows PowerShell ausführen.
+>PowerShell Core unterstützt das Microsoft Azure Active Directory Modul für Windows PowerShell Modul und Cmdlets mit *MSOL* nicht in Ihrem Namen. Führen Sie diese Cmdlets aus Windows PowerShell aus.
 >
 
-Es sollten Informationen ähnlich den folgenden angezeigt werden:
+Sie sollten ähnliche Informationen wie die folgenden erhalten:
   
 ```powershell
 UserPrincipalName                     DisplayName           isLicensed
@@ -173,13 +179,13 @@ AnneWlitwareinc.onmicrosoft.com       Anne Wallace          True
 ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 ```
 
-Das **Get-MsolUser**-Cmdlet verfügt darüber hinaus über eine Reihe von Parametern zum Filtern der angezeigten Benutzerkonten. Führen Sie diesen Befehl beispielsweise für die Liste der nicht lizenzierten Benutzer (Benutzer, die Microsoft 365 hinzugefügt wurden, aber noch nicht für die Verwendung eines der Dienste lizenziert wurden) aus.
+Das **Get-MsolUser**-Cmdlet verfügt darüber hinaus über eine Reihe von Parametern zum Filtern der angezeigten Benutzerkonten. Führen Sie zum Beispiel für die Liste der nicht lizenzierten Benutzer (Benutzer, die Microsoft 365 hinzugefügt wurden, aber noch nicht für die Verwendung eines der Dienste lizenziert wurden) den folgenden Befehl aus:
   
 ```powershell
 Get-MsolUser -UnlicensedUsersOnly
 ```
 
-Es sollten Informationen ähnlich den folgenden angezeigt werden:
+Sie sollten ähnliche Informationen wie die folgenden erhalten:
   
 ```powershell
 UserPrincipalName                     DisplayName           isLicensed
@@ -188,19 +194,19 @@ BrianJ@litwareinc.onmicrosoft.com     Brian Johnson         False
 ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 ```
 
-Weitere Informationen zu zusätzlichen Parametern zum Filtern des angezeigten Satzes von Benutzerkonten finden Sie unter [Get-MsolUser](https://docs.microsoft.com/previous-versions/azure/dn194133(v=azure.100)).
+Informationen zu zusätzlichen Parametern zum Filtern der Gruppe von Benutzerkonten, die angezeigt werden, finden Sie unter [Get-MsolUser](https://docs.microsoft.com/previous-versions/azure/dn194133(v=azure.100)).
   
 ### <a name="view-a-specific-account"></a>Anzeigen eines bestimmten Kontos
 
-Um ein bestimmtes Benutzerkonto anzuzeigen, geben Sie den Anmeldenamen des Benutzerkontos des Benutzerkontos ein, das auch als Benutzerprinzipalname (User Principal Name, UPN) bezeichnet wird, entfernen Sie die Zeichen "<" und ">", und führen Sie den folgenden Befehl aus:
+Führen Sie den folgenden Befehl aus, um ein bestimmtes Benutzerkonto anzuzeigen. Geben Sie den Anmeldenamen des Benutzerkontos ein, das auch als Benutzerprinzipalname (User Principal Name, UPN) bezeichnet wird. Entfernen Sie die Zeichen "<" und ">".
   
 ```powershell
 Get-MsolUser -UserPrincipalName <sign-in name of the user account>
 ```
 
-### <a name="view-some-accounts-based-on-a-common-property"></a>Anzeigen einiger Konten basierend auf einer gemeinsamen Eigenschaft
+### <a name="view-accounts-based-on-a-common-property"></a>Anzeigen von Konten basierend auf einer gemeinsamen Eigenschaft
 
-Um die Liste der anzuzeigenden Konten selektiver zu machen, können Sie das Cmdlet **Where** in Kombination mit dem Cmdlet **Get-MsolUser** verwenden. Um die beiden Cmdlets zu kombinieren, verwenden wir das "Pipe"-Zeichen "|", das PowerShell anweist, die Ergebnisse eines Befehls zu übernehmen und an den nächsten Befehl zu senden. Nachfolgend ist ein Beispielbefehl aufgeführt, mit dem nur die Benutzerkonten angezeigt werden, die über einen nicht angegebenen Verwendungsstandort verfügen:
+Um die Liste der anzuzeigenden Konten selektiver zu machen, können Sie das Cmdlet **Where** in Kombination mit dem Cmdlet **Get-MsolUser** verwenden. Um die beiden Cmdlets zu kombinieren, verwenden Sie das "Pipe"-Zeichen ("|"), das PowerShell anweist, die Ergebnisse eines Befehls zu übernehmen und an den nächsten Befehl zu senden. Im folgenden Beispiel werden nur die Benutzerkonten angezeigt, die einen nicht angegebenen Verwendungs Speicherort aufweisen:
   
 ```powershell
 Get-MsolUser | Where {$_.UsageLocation -eq $Null}
@@ -208,11 +214,11 @@ Get-MsolUser | Where {$_.UsageLocation -eq $Null}
 
 Mit diesem Befehl wird PowerShell an Folgendes angewiesen:
   
-- Alle Informationen der Benutzerkonten abrufen (**Get-MsolUser**) und an den nächsten Befehl senden (**|**).
+1. Alle Informationen zu den Benutzerkonten abrufen (**Get-MsolUser**) und an den nächsten Befehl senden ( **|** ).
     
-- Suchen Sie alle Benutzerkonten mit einem nicht angegebenen Verwendungs Speicherort ( **wobei {$ \_ . UsageLocation-EQ $NULL}** ). In den geschweiften Klammern weist der Befehl PowerShell an, nur den kontensatz zu finden, in dem die UsageLocation-Benutzerkonto Eigenschaft ( ** $ \_ . UsageLocation** ) ist nicht angegeben ( **-EQ $NULL** ).
+1. Suchen Sie nach allen Benutzerkonten mit einem nicht angegebenen Verwendungs Speicherort (**wobei {$ \_ . UsageLocation-EQ $NULL}**). In den geschweiften Klammern weist der Befehl PowerShell an, nur die Gruppe von Konten zu finden, für die die UsageLocation-Benutzerkonto Eigenschaft (** $ \_ . UsageLocation**) ist nicht angegeben (**-EQ $NULL**).
     
-Es sollten Informationen ähnlich den folgenden angezeigt werden:
+Sie sollten ähnliche Informationen wie die folgenden erhalten:
   
 ```powershell
 UserPrincipalName                     DisplayName           isLicensed
@@ -222,22 +228,22 @@ ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 
 ```
 
-Die **UsageLocation**-Eigenschaft ist nur eine von vielen Eigenschaften, die einem Benutzerkonto zugeordnet ist. Um alle Eigenschaften für Benutzerkonten anzuzeigen, verwenden Sie das **Select** -Cmdlet und das Platzhalterzeichen (*), um Sie alle für ein bestimmtes Benutzerkonto anzuzeigen. Hier ein Beispiel:
+Die *UsageLocation*-Eigenschaft ist nur eine von vielen Eigenschaften, die einem Benutzerkonto zugeordnet ist. Um alle Eigenschaften für Benutzerkonten anzuzeigen, verwenden Sie das **Select** -Cmdlet und das Platzhalterzeichen (*), um Sie alle für ein bestimmtes Benutzerkonto anzuzeigen. Hier ein Beispiel:
   
 ```powershell
 Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select *
 ```
 
-In dieser Liste steht das **City**-Objekt für den Namen einer Benutzerkontoeigenschaft. Dies bedeutet, dass Sie mit dem folgenden Befehl eine Liste aller Benutzerkonten für Benutzer, die in London leben, anzeigen können:
+Das *City*-Objekt steht z. B. für den Namen einer Benutzerkontoeigenschaft. Mit dem folgenden Befehl können Sie alle Benutzerkonten für Benutzer auflisten, die in London Leben:
   
 ```powershell
 Get-MsolUser | Where {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  Die Syntax für das in diesen Beispielen dargestellte Cmdlet **Where** ist **{$ \_ .** [Name der Benutzerkonten Eigenschaft] [Vergleichsoperator] Wert **}**.  [Vergleichsoperator] is **-EQ** für gleich, **-ne** für ungleich, **-lt** für kleiner als, **-gt** für größer als und andere.  [value] ist normalerweise eine Zeichenfolge (eine Sequenz von Buchstaben, Zahlen und anderen Zeichen), ein numerischer Wert oder **$null** für Unspecified. Weitere Informationen finden Sie unter [Where](https://technet.microsoft.com/library/hh849715.aspx) for more.
+>  Die Syntax für das Cmdlet **Where** in diesen Beispielen ist **{$ \_ .** [Name der Benutzerkonten Eigenschaft] [Vergleichsoperator] Wert **}**.  [Vergleichsoperator] is **-EQ** für gleich, **-ne** für ungleich, **-lt** für kleiner als, **-gt** für größer als und andere.  [value] ist normalerweise eine Zeichenfolge (eine Sequenz von Buchstaben, Zahlen und anderen Zeichen), ein numerischer Wert oder **$null** für Unspecified. Weitere Informationen finden Sie unter [Where](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/where-object?view=powershell-7).
   
-Sie können den blockierten Status eines Benutzerkontos überprüfen, indem Sie den folgenden Befehl ausführen:
+Verwenden Sie den folgenden Befehl, um den blockierten Status eines Benutzerkontos zu überprüfen:
   
 ```powershell
 Get-MsolUser -UserPrincipalName <UPN of user account> | Select DisplayName,BlockCredential
@@ -245,7 +251,7 @@ Get-MsolUser -UserPrincipalName <UPN of user account> | Select DisplayName,Block
 
 ### <a name="view-additional-property-values-for-accounts"></a>Anzeigen zusätzlicher Eigenschaftswerte für Konten
 
-Das Cmdlet **Get-MsolUser** zeigt standardmäßig drei Eigenschaften von Benutzerkonten an:
+Standardmäßig werden mit dem Cmdlet **Get-MsolUser** diese drei Eigenschaften von Benutzerkonten angezeigt:
   
 - UserPrincipalName
     
@@ -253,7 +259,7 @@ Das Cmdlet **Get-MsolUser** zeigt standardmäßig drei Eigenschaften von Benutze
     
 - isLicensed
     
-Wenn Sie zusätzliche Eigenschaften benötigen, beispielsweise die Abteilung, für die der Benutzer arbeitet, und das Land/die Region, in der der Benutzer Microsoft 365-Dienste verwendet, können Sie **Get-MsolUser** in Kombination mit dem **Select** -Cmdlet ausführen, um die Liste der Benutzerkontoeigenschaften anzugeben. Hier ein Beispiel:
+Wenn Sie zusätzliche Eigenschaften benötigen, beispielsweise die Abteilung, in der der Benutzer arbeitet, und das Land/die Region, in der Sie Microsoft 365-Dienste verwenden, können Sie **Get-MsolUser** in Kombination mit dem **Select** -Cmdlet ausführen, um die Liste der Benutzerkontoeigenschaften anzugeben. Hier ein Beispiel:
   
 ```powershell
 Get-MsolUser | Select DisplayName, Department, UsageLocation
@@ -261,11 +267,11 @@ Get-MsolUser | Select DisplayName, Department, UsageLocation
 
 Mit diesem Befehl wird PowerShell an Folgendes angewiesen:
   
-- Alle Informationen der Benutzerkonten abrufen (**Get-MsolUser**) und an den nächsten Befehl senden (**|**).
+1. Alle Informationen zu den Benutzerkonten abrufen (**Get-MsolUser**) und an den nächsten Befehl senden ( **|** ).
     
-- Zeigt nur den Namen des Benutzerkontos, die Abteilung und den Verwendungs Speicherort an ( **Wählen Sie DisplayName, Abteilung, UsageLocation** ).
+1. Zeigt nur den Namen des Benutzerkontos, die Abteilung und den Verwendungs Speicherort an (**Wählen Sie DisplayName, Abteilung, UsageLocation**).
     
-Es sollten Informationen ähnlich den folgenden angezeigt werden:
+Sie sollten ähnliche Informationen wie die folgenden erhalten:
   
 ```powershell
 DisplayName             Department                       UsageLocation
@@ -278,13 +284,13 @@ Alex Darrow             Sales & Marketing                    US
 Scott Wallace           Operations
 ```
 
-Mit dem Cmdlet **"Select** " können Sie die Eigenschaften auswählen, die ein Befehl angezeigt werden soll. Wenn Sie alle Eigenschaften für Benutzerkonten anzeigen möchten, verwenden Sie das Platzhalterzeichen (*), um Sie alle für ein bestimmtes Benutzerkonto anzuzeigen. Hier ein Beispiel:
+Mit dem Cmdlet **"Select** " können Sie auswählen, welche Eigenschaften angezeigt werden sollen. Wenn Sie alle Eigenschaften für ein bestimmtes Benutzerkonto anzeigen möchten, verwenden Sie das Platzhalterzeichen (*). Hier ein Beispiel:
   
 ```powershell
 Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select *
 ```
 
-Um die Liste der anzuzeigenden Konten selektiver anzuzeigen, können Sie auch das Cmdlet " **Where** " verwenden. Nachfolgend ist ein Beispielbefehl aufgeführt, mit dem nur die Benutzerkonten angezeigt werden, die über einen nicht angegebenen Verwendungsstandort verfügen:
+Um die Liste der anzuzeigenden Konten selektiver anzuzeigen, können Sie auch das Cmdlet " **Where** " verwenden. Es folgt ein Beispielbefehl, in dem nur die Benutzerkonten angezeigt werden, die einen nicht angegebenen Verwendungs Speicherort aufweisen:
   
 ```powershell
 Get-MsolUser | Where {$_.UsageLocation -eq $Null} | Select DisplayName, Department, UsageLocation
@@ -292,13 +298,13 @@ Get-MsolUser | Where {$_.UsageLocation -eq $Null} | Select DisplayName, Departme
 
 Mit diesem Befehl wird PowerShell an Folgendes angewiesen:
   
-- Alle Informationen der Benutzerkonten abrufen (**Get-MsolUser**) und an den nächsten Befehl senden (**|**).
+1. Alle Informationen zu den Benutzerkonten abrufen (**Get-MsolUser**) und an den nächsten Befehl senden ( **|** ).
     
-- Suchen Sie alle Benutzerkonten mit einem nicht angegebenen Verwendungs Speicherort ( **wobei {$ \_ . UsageLocation-EQ $NULL}** ) und die resultierenden Informationen an den nächsten Befehl senden ( **|** ). Innerhalb der geschweiften Klammern weist der Befehl PowerShell an, nur den kontensatz zu finden, in dem die UsageLocation-Benutzerkonto Eigenschaft ( ** $ \_ . UsageLocation** ) ist nicht angegeben ( **-EQ $NULL** ).
+1. Suchen Sie nach allen Benutzerkonten mit einem nicht angegebenen Verwendungs Speicherort (**wobei {$ \_ . UsageLocation-EQ $NULL}**) und die resultierenden Informationen an den nächsten Befehl senden ( **|** ). In den geschweiften Klammern weist der Befehl PowerShell an, nur die Konten zu finden, für die die UsageLocation-Benutzerkonto Eigenschaft (** $ \_ . UsageLocation**) ist nicht angegeben (**-EQ $NULL**).
     
-- Zeigt nur den Namen des Benutzerkontos, die Abteilung und den Verwendungs Speicherort an ( **Wählen Sie DisplayName, Abteilung, UsageLocation** ).
+1. Zeigt nur den Namen des Benutzerkontos, die Abteilung und den Verwendungs Speicherort an (**Wählen Sie DisplayName, Abteilung, UsageLocation**).
     
-Es sollten Informationen ähnlich den folgenden angezeigt werden:
+Sie sollten ähnliche Informationen wie die folgenden erhalten:
   
 ```powershell
 DisplayName              Department                      UsageLocation
@@ -307,7 +313,10 @@ Brian Johnson
 Scott Wallace            Operations
 ```
 
-Wenn Sie die Verzeichnissynchronisierung zum Erstellen und Verwalten Ihrer Microsoft 365-Benutzer verwenden, können Sie das lokale Konto anzeigen, aus dem ein Microsoft 365-Benutzer projiziert wurde. Im folgenden wird davon ausgegangen, dass Azure AD Connect für die Verwendung des Standard Quell Ankers von objectGUID konfiguriert ist (Weitere Informationen zum Konfigurieren eines Quell Ankers finden Sie unter [Azure AD Connect: Design Concepts](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-design-concepts)), und es wird davon ausgegangen, dass das Active Directory-Domänendienste Modul für PowerShell installiert wurde (siehe Tools für die [Remoteverwaltung](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)):
+Wenn Sie die Verzeichnissynchronisierung zum Erstellen und Verwalten Ihrer Microsoft 365-Benutzer verwenden, können Sie das lokale Konto anzeigen, von dem ein Microsoft 365-Benutzer projiziert wurde. Im folgenden Beispiel wird davon ausgegangen, dass:
+
+- Azure AD Connect ist für die Verwendung des standardmäßigen Quell Ankers von objectGUID konfiguriert. (Weitere Informationen zum Konfigurieren eines Quell Ankers finden Sie unter [Azure AD Connect: Design Concepts](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-design-concepts)).
+- Das Active Directory-Domänendienste Modul für PowerShell wurde installiert (siehe [Remotetools](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)).
 
 ```powershell
 Get-ADUser ([guid][System.Convert]::FromBase64String((Get-MsolUser -UserPrincipalName <UPN of user account>).ImmutableID)).guid

@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Wie Contoso IDaaS (Identity as a Service) nutzt und eine cloudbasierte Authentifizierung für seine Mitarbeiter und eine Verbundauthentifizierung für Partner und Kunden bereitstellt.
-ms.openlocfilehash: 10db0a35024595c4dba9a33ad83ae75bcad3870c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: dea0f53ef1c3fdc2ea32256303c6120c614c904d
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637247"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754641"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identität für die Contoso Corporation
 
@@ -43,7 +42,7 @@ Contoso lässt Folgendes zu:
 - Kunden, Ihre Microsoft-, Facebook-oder Google Mail-Konten zu verwenden, um sich bei der öffentlichen Website des Unternehmens anzumelden.
 - Kreditoren und Partner, die ihre LinkedIn-, Salesforce-oder Google Mail-Konten verwenden, um sich beim Partner-Extranet des Unternehmens anzumelden.
 
-Hier ist die Contoso-DMZ mit einer öffentlichen Website, einem Partner-Extranet und einer Reihe von AD FS-Servern. Die DMZ ist mit dem Internet verbunden, das Kunden, Partner und Internetdienste enthält.
+Hier ist die Contoso-DMZ mit einer öffentlichen Website, einem Partner-Extranet und einer Reihe von Active Directory-Verbunddienste-Servern (AD FS). Die DMZ ist mit dem Internet verbunden, das Kunden, Partner und Internetdienste enthält.
 
 ![Contoso-Unterstützung für die Verbundauthentifizierung für Kunden und Partner](../media/contoso-identity/contoso-identity-fig2.png)
  
@@ -77,7 +76,7 @@ Im folgenden finden Sie eine Reihe von Contoso-Identitäts-und Geräte bedingten
  
 ## <a name="next-step"></a>Nächster Schritt
 
-[Erfahren Sie](contoso-win10.md) , wie Contoso seine Microsoft Endpoint Configuration Manager-Infrastruktur für die Bereitstellung und Verwaltung von Windows 10 Enterprise in seiner Organisation verwendet.
+Erfahren Sie, wie Contoso seine Microsoft Endpoint Configuration Manager-Infrastruktur für die [Bereitstellung und Verwaltung von Windows 10 Enterprise](contoso-win10.md) in seiner Organisation verwendet.
 
 ## <a name="see-also"></a>Siehe auch
 

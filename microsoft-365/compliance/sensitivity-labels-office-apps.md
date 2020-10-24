@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Benutzer mit Vertraulichkeits Bezeichnungen in Office-Apps für Desktop, Mobile und das Internet arbeiten und welche apps Sensitivitäts Bezeichnungen unterstützen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5207d0e3e7e6272ab4a498d1cd68ad1fe3865c39
-ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
+ms.openlocfilehash: 238dc5c0b54d09258f2f679bff5467052d3448f3
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48309207"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754563"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Verwenden von Vertraulichkeitsbezeichnungen in Office-Apps
 
@@ -52,13 +52,14 @@ Zusätzliche Funktionen sind verfügbar, wenn Sie den Azure Information Protecti
 
 Für IOS und Android: Wenn diese eine Mindestversion aufgeführt sind, wird die Empfindlichkeits beschriftungsfunktion auch in der [Office-App](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/)unterstützt.
 
-|Funktion                                                                                                        |Windows Desktop |Mac-Desktop |iOS    |Android      |Web                                                         |
+|Funktion                                                                                                        |Windows Desktop |Mac-Desktop |iOS    |Android      |Netz                                                         |
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
 |[Manuelles zuweisen, ändern oder Entfernen von Bezeichnungen](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Ja – Opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Anwenden einer Standardbezeichnung](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Ja – Opt-in](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
 |[Begründung zum Ändern einer Bezeichnung erforderlich](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Ja – Opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Hilfe Link zu einer benutzerdefinierten Hilfeseite bereitstellen](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Ja – Opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Inhalt markieren](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Ja – Opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Dynamische Markierungen mit Variablen](#dynamic-markings-with-variables)                                              | Vorschau: [Beta Kanal und aktueller Kanal (Vorschau)](https://office.com/insider)           | 16.42 +     | 2.42 + | 16.0.13328 + | Unter Review |
 |[Berechtigungen sofort zuweisen](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Ja – Opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Benutzern die Zuweisung von Berechtigungen überlassen](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | [Aktueller Kanal](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) (2003 +) | 16.35 +   | Unter Review   | Unter Review         | Unter Review                                                        |
 |[Anzeigen der Bezeichnungs Verwendung mit Label Analytics](label-analytics.md) und Senden von Daten für Administratoren                      | Unter Review            | Unter Review        | Unter Review   | Unter Review         | Unter Review                                                        |
@@ -76,6 +77,7 @@ Für IOS und Android: Wenn diese eine Mindestversion aufgeführt sind, wird die 
 |[Begründung zum Ändern einer Bezeichnung erforderlich](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Ja               |
 |[Hilfe Link zu einer benutzerdefinierten Hilfeseite bereitstellen](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Ja               |
 |[Inhalt markieren](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Ja               |
+|[Dynamische Markierungen mit Variablen](#dynamic-markings-with-variables)                                              | Unter Review                     | Unter Review                 | Unter Review         | Unter Review           | Unter Review               |
 |[Berechtigungen sofort zuweisen](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Ja               |
 |[Benutzern die Zuweisung von Berechtigungen überlassen](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Ja               |
 |[Anzeigen der Bezeichnungs Verwendung mit Label Analytics](label-analytics.md) und Senden von Daten für Administratoren                      | Unter Review                       | Unter Review                    | Unter Review           | Unter Review               | Unter Review               |
@@ -235,6 +237,27 @@ Zu den Szenarien, in denen eine Vertraulichkeits Bezeichnung außerhalb von Offi
 - Microsoft Cloud App-Sicherheit
 
 Bei diesen Szenarien kann ein Benutzer mit integrierter Beschriftung mithilfe seiner Office-Apps die Inhalts Markierungen der Beschriftung durch vorübergehendes entfernen oder Ersetzen der aktuellen Bezeichnung und anschließendes erneutes Anwenden der ursprünglichen Bezeichnung anwenden.
+
+### <a name="dynamic-markings-with-variables"></a>Dynamische Markierungen mit Variablen
+
+> [!IMPORTANT]
+> Derzeit unterstützen nicht alle apps auf allen Plattformen dynamische Inhalts Markierungen, die Sie für Kopfzeilen, Fußzeilen und Wasserzeichen angeben können. Für apps, die diese Funktion nicht unterstützen, wenden Sie die Markierungen als den Originaltext an, der in der Bezeichnungs Konfiguration angegeben ist, anstatt die Variablen aufzulösen.
+> 
+> Der Azure Information Protection Unified Labeling-Client unterstützt dynamische Markierungen. Informationen zur Beschriftung in Office finden Sie in den Tabellen im Abschnitt " [Funktionen](#support-for-sensitivity-label-capabilities-in-apps) " auf dieser Seite.
+
+Wenn Sie eine Vertraulichkeits Bezeichnung für Inhalts Markierungen konfigurieren, können Sie die folgenden Variablen in der Textzeichenfolge für die Kopfzeile, die Fußzeile oder das Wasserzeichen verwenden:
+
+| Variable | Beschreibung | Beispiel bei Anwendung der Bezeichnung |
+| -------- | ----------- | ------- |
+| `${Item.Label}` | Anzeigename der aktuellen Bezeichnung | **Allgemein**|
+| `${Item.Name}` | Name der aktuellen Datei oder e-Mail-Betreff | **Sales.docx** |
+| `${Item.Location}` | Aktueller Pfad und Dateiname des Dokuments oder der e-Mail-Betreff für eine e-Mail | **\\\Sales\2020\Q3\Report.docx**|
+| `${User.Name}` | Anzeigename des aktuellen Benutzers  | **Richard Simone** |
+| `${User.PrincipalName}` | Aktueller Benutzer Azure AD Benutzerprinzipalname (UPN) | **rsimone \@ contoso.com** |
+| `${Event.DateTime}` | Aktuelles Datum und Zeit für die lokale Zeitzone | **8/10/2020 1:30 Uhr** |
+
+> [!NOTE]
+> Bei der Syntax für diese Variablen wird die Groß-/Kleinschreibung beachtet.
 
 ## <a name="end-user-documentation"></a>Endbenutzerdokumentation
 

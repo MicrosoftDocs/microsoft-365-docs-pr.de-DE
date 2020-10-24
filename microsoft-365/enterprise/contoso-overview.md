@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,16 +14,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen der Contoso Corporation als Unternehmen und Informationen zu der mehrstufigen Struktur ihrer weltweiten Büros.
-ms.openlocfilehash: 402c8c1cbb1484d8a0ad2ce4159b90107856167d
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b0c00ed5657d914851f28278a2f4cf80660b53b0
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637079"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754268"
 ---
 # <a name="overview-of-contoso-corporation"></a>Übersicht über die Contoso Corporation
-
-![Die Contoso Corporation](../media/contoso-overview/contoso-icon.png)
 
 Die Contoso Corporation ist ein multinationales Unternehmen mit Hauptsitz in Paris. Das Unternehmen ist eine Produktions-, Vertriebs-und Support Organisation mit mehr als 100.000 Produkten.
 
@@ -38,7 +35,7 @@ Abbildung 1 zeigt die zentrale Niederlassung in Paris und regionale Hub-und Sate
  
 Contoso verfügt über drei Ebenen von Offices:
 
-- Zentrale
+- Headquarters
 
   Contoso Headquarters ist ein Unternehmens Campus am Stadtrand von Paris mit Dutzenden von Gebäuden für Verwaltungs-, Ingenieur-und Produktionseinrichtungen. Alle Contoso-Rechenzentren und deren Internetpräsenz sind in der Pariser zentrale untergebracht.
 
@@ -74,7 +71,7 @@ Die IT-Architekten von Contoso haben die folgenden Entwurfs Anforderungs Faktore
 
 ## <a name="next-step"></a>Nächster Schritt
 
-[Erfahren Sie mehr](contoso-infra-needs.md) über die lokale IT-Infrastruktur von Contoso Corporation und darüber, wie die geschäftlichen Anforderungen des Unternehmens mit Microsoft 365 for Enterprise behandelt werden.
+Erfahren Sie mehr über die [lokale IT-Infrastruktur](contoso-infra-needs.md) von Contoso Corporation und darüber, wie die geschäftlichen Anforderungen des Unternehmens mit Microsoft 365 for Enterprise behandelt werden.
 
 ## <a name="see-also"></a>Siehe auch
 

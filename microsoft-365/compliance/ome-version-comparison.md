@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: In diesem Artikel werden die Unterschiede zwischen verschiedenen Versionen Office 365 Nachrichtenverschlüsselung erläutert.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 32895f8aae8c6c23ab7f0e3d70d4caa73285fa9e
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: a52d0c0164dfddb9f678bffa088760a271bc28e3
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034875"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754129"
 ---
 # <a name="compare-versions-of-ome"></a>Vergleichen von OME-Versionen
 
@@ -37,13 +37,13 @@ In diesem Artikel werden Legacy-Office 365 Nachrichtenverschlüsselung (OM) mit 
 
 |                                   |Alte Features       |                   |Neue Features              |
 |-----------------------------------|-------------------|-------------------|--------------------------|
-|**Funktion**                     | **Legacy OME**    | **IRM**           | **Neue OM-Funktionen** |
+|**Funktionalität**                     | **Legacy OME**    | **IRM**           | **Neue OM-Funktionen** |
 |*Senden einer verschlüsselten e-Mail*        |Durch Exchange-Nachrichtenfluss Regeln|Von Outlook Desktop oder Outlook im Internet initiierter Endbenutzer; oder über Exchange-Nachrichtenfluss Regeln|Von Outlook Desktop, Outlook für Mac oder Outlook im Internet initiierter Endbenutzer; durch Exchange-Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) und Verhinderung von Datenverlust (DLP)|
-|*Vorlage für die Rechteverwaltung*       |   Nicht zutreffend      |Option und benutzerdefinierte Vorlagen nicht weiterleiten|Option "nicht weiterleiten", "nur verschlüsseln" und benutzerdefinierte Vorlagen|
+|*Vorlage für die Rechteverwaltung*       |   Nicht zutreffend      |Option und benutzerdefinierte Vorlagen nicht weiterleiten|Option, Encrypt-Only Option und benutzerdefinierte Vorlagen nicht weiterleiten|
 |*Empfängertyp*                   |Interne und externe Empfänger|Nur interne Empfänger         |Interne und externe Empfänger|
 |*Erfahrung für interne Empfänger*|Empfänger erhalten eine HTML-Nachricht, die Sie herunterladen und in einem Webbrowser oder Mobile APP öffnen.|Systemeigene Inline Erfahrung in Outlook-Clients|Systemeigene Inline Erfahrung für Empfänger in der gleichen Organisation mit Outlook-Clients.  Empfänger können die Nachricht aus dem OM-Portal mit anderen Clients als Outlook lesen (kein Download oder keine app erforderlich).|
 |*Erfahrung für externen Empfänger*|Empfänger erhalten eine HTML-Nachricht, die Sie herunterladen und in einem Webbrowser oder Mobile APP öffnen.|Nicht zutreffend|Systemeigene Inline Erfahrung für Microsoft 365-Empfänger. Alle anderen Empfänger können die Nachricht aus dem OM-Portal lesen (kein Download oder keine app erforderlich).|
-|*Anlagen Berechtigungen*           |Keine Einschränkungen für Anlagen|Anlagen sind geschützt|Anlagen sind für die Option "nicht weiterleiten" und benutzerdefinierte Vorlagen geschützt. Administratoren können wählen, ob Anlagen für die Option "nur verschlüsseln" geschützt sind oder nicht.|
+|*Anlagen Berechtigungen*           |Keine Einschränkungen für Anlagen|Anlagen sind geschützt|Anlagen sind für die Option "nicht weiterleiten" und benutzerdefinierte Vorlagen geschützt. Administratoren können wählen, ob Anlagen für die Encrypt-Only Option geschützt sind oder nicht.|
 |*Bringen Sie Ihre eigene Schlüssel Unterstützung (BYOK)*|Keine                |Keine               |BYOK unterstützt          |
 ||
 
@@ -51,7 +51,7 @@ In diesem Artikel werden Legacy-Office 365 Nachrichtenverschlüsselung (OM) mit 
 
 Die neuen Funktionen bieten folgende Vorteile:
 
-- Möglichkeit der Verwendung von "nur verschlüsseln" (was eine sichere Zusammenarbeit ermöglicht), keine Weiterleitung und benutzerdefinierte Einschränkungen.
+- Möglichkeit der Verwendung von Encrypt-Only (die sichere Zusammenarbeit ermöglicht), nicht weiterleiten und benutzerdefinierter Einschränkungen.
 - Absender können e-Mails, die mit den neuen Funktionen verschlüsselt sind, manuell über Outlook-Desktop, Outlook für Mac und Outlook auf den Webclients senden.
 - Microsoft 365-Empfänger erhalten eine Inline-Erfahrung in unterstützten Outlook-Clients verwenden. Alternativ können Administratoren entscheiden, Microsoft 365-Empfängern eine Markenerfahrung zu zeigen.
 - Konten außerhalb von Microsoft 365, wie Gmail, Yahoo und Microsoft-Konten, sind mit dem OM-Portal verbunden, was eine bessere Benutzerfreundlichkeit für diese Empfänger bietet. Alle anderen Identitäten verwenden einen einmaligen Code, um auf verschlüsselte Nachrichten zuzugreifen.
@@ -75,21 +75,19 @@ Informationen zur Verwendung der erweiterten Nachrichtenverschlüsselung finden 
 
 ## <a name="unique-characteristics-of-office-365-message-encryption-in-a-gcc-high-deployment"></a>Eindeutige Merkmale Office 365 Nachrichtenverschlüsselung in einer gcc-hoch Bereitstellung
 
-Office 365 erweiterte Nachrichtenverschlüsselung steht in einer gcc High-Umgebung nicht zur Verfügung. Sie können eine einzelne Marken Vorlage weiterhin in einer gcc-Umgebung mit hoher Qualität anpassen.
+Wenn Sie beabsichtigen, Office 365 Nachrichtenverschlüsselung in einer gcc-Umgebung zu verwenden, gibt es einige eindeutige Merkmale hinsichtlich der Empfänger Oberfläche.
 
-Wenn Sie Office 365 Nachrichtenverschlüsselung in einer gcc-High-Umgebung verwenden möchten, gibt es außerdem einige eindeutige Merkmale zur Empfänger Oberfläche.
-
-### <a name="encrypted-email-from-gcc-high-to-gcc-high-recipients"></a>Verschlüsselte e-Mail von gcc-hoch an gcc-hohe Empfänger
+### <a name="encrypted-email-between-gcc-high-and-gcc-high-recipients"></a>Verschlüsselte e-Mails zwischen gcc High und gcc High Recipients
 
 Absender können e-Mails manuell in Outlook für PC und Mac und Outlook im Internet verschlüsseln, oder Organisationen können eine Richtlinie zum Verschlüsseln von e-Mails mithilfe von Exchange-Nachrichtenfluss Regeln einrichten.
 
 Empfänger in gcc High erhalten dieselbe Inline Leseerfahrung in Outlook für PC und Mac sowie Outlook im Internet als alle anderen Benutzer.
 
-### <a name="encrypted-email-from-gcc-high-to-non-gcc-high-recipients"></a>Verschlüsselte e-Mail von gcc-hoch an nicht-gcc-hohe Empfänger
+### <a name="encrypted-email-between-gcc-high-and-non-gcc-high-recipients"></a>Verschlüsselte e-Mails zwischen gcc-High-und nicht-gcc-High-Empfängern
 
-Absender innerhalb von gcc High können verschlüsselte e-Mails außerhalb der gcc-Obergrenze senden.
+Absender innerhalb von gcc High können verschlüsselte e-Mails außerhalb der gcc-Obergrenze senden und umgekehrt.
 
-Alle Empfänger außerhalb von gcc High, einschließlich kommerzieller Microsoft 365-Benutzer, Outlook.com-Benutzer und anderer Benutzer anderer e-Mail-Anbieter wie Gmail und Yahoo, erhalten eine Wrapper-e-Mail. Mit dieser Wrapper-e-Mail wird der Empfänger an das OM-Portal umgeleitet, in dem der Empfänger die Nachricht lesen und beantworten kann.
+Alle Empfänger außerhalb von gcc High, einschließlich kommerzieller Microsoft 365-Benutzer, Outlook.com-Benutzer und anderer Benutzer anderer e-Mail-Anbieter wie Gmail und Yahoo, erhalten eine Wrapper-e-Mail. Mit dieser Wrapper-e-Mail wird der Empfänger an das OM-Portal umgeleitet, in dem der Empfänger die Nachricht lesen und beantworten kann. Dies gilt auch für Absender außerhalb von gcc High, die OM-verschlüsselte e-Mails an gcc High senden.
 
 ## <a name="coexistence-of-legacy-ome-and-the-new-capabilities-in-the-same-tenant"></a>Koexistenz von Legacy-OM und den neuen Funktionen im gleichen Mandanten
 

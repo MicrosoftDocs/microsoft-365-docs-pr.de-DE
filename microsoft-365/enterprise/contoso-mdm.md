@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie, wie Contoso Microsoft InTune in Microsoft 365 für Unternehmen verwendet, um die Geräte und die darauf ausgeführten apps zu verwalten.
-ms.openlocfilehash: d3f973827a9b05a415efe9225a2bdb3d83ccaf38
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 6d7783e8c2d9b78b63bf9eefe761fbc52d0b280f
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649645"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753993"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Verwaltung mobiler Geräte bei Contoso
 
@@ -71,7 +70,7 @@ Hier ist die Bereitstellungsarchitektur für die Mobile Geräteverwaltung von co
 
 ## <a name="next-step"></a>Nächster Schritt
 
-[Erfahren Sie](contoso-info-protect.md) , wie Contoso die Informationen Schutzfunktionen von Microsoft 365 für Unternehmen verwendet, um wichtige digitale Objekte in Ihrer Organisation zu klassifizieren, zu identifizieren und zu schützen.
+Erfahren Sie, wie Contoso die [Informationen Schutzfunktionen](contoso-info-protect.md) von Microsoft 365 für Unternehmen verwendet, um wichtige digitale Objekte in Ihrer Organisation zu klassifizieren, zu identifizieren und zu schützen.
 
 ## <a name="see-also"></a>Siehe auch
 

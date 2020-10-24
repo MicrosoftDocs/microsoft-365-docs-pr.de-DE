@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie, wie Contoso die Features für den Informationsschutz in Microsoft 365 für Unternehmen verwendet, um Ihre digitalen Objekte in der Cloud zu sichern.
-ms.openlocfilehash: 51740db9a0bb2e770e959fe8d9dcde15c042f5b8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a1aa08a20d284d3a003f4a406c37f2107ce19bd1
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637235"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754601"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Informationsschutz für die Contoso Corporation
 
@@ -115,7 +115,7 @@ Hier ist die resultierende Konfiguration des Contoso-Informationsschutzes.
 
 ## <a name="next-step"></a>Nächster Schritt
 
-[Erfahren Sie](contoso-security-summary.md) , wie Contoso die Sicherheitsfunktionen in Microsoft 365 für Unternehmen für Identitäts-und Zugriffsverwaltung, Bedrohungsschutz, Informationsschutz und Sicherheitsverwaltung verwendet.
+Erfahren Sie, wie Contoso die [Sicherheitsfunktionen in Microsoft 365 für Unternehmen](contoso-security-summary.md) für Identitäts-und Zugriffsverwaltung, Bedrohungsschutz, Informationsschutz und Sicherheitsverwaltung verwendet.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -16,16 +16,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
 description: In diesem Artikel finden Sie Community-Ressourcen zum Herstellen einer Verbindung mit ihren Kollegen und erhalten von Hilfe zu PowerShell für Microsoft 365.
-ms.openlocfilehash: 71900628a3870dc5d384fb5caa374b11d1e724d7
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 36130d3e0f32f73836698cfb276e2aca5d20de83
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694966"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754692"
 ---
 # <a name="microsoft-365-community-resources-for-powershell"></a>Microsoft 365 Community-Ressourcen für PowerShell
 
-Verwenden Sie diese Communities, um Ihnen eine Verbindung mit ihren Kollegen zu verschaffen und ihre PowerShell für Microsoft 365-Fragen schnell und korrekt zu beantworten. 
+Stellen Sie eine Verbindung zu diesen Communities her, um Ihre Kollegen zu erreichen und Antworten auf Ihre PowerShell für Microsoft 365-Fragen zu erhalten. 
   
 - [Microsoft 365 Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-365/ct-p/microsoft365)
     
@@ -36,4 +36,3 @@ Verwenden Sie diese Communities, um Ihnen eine Verbindung mit ihren Kollegen zu 
 [Verwalten von Microsoft 365 mit PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-microsoft-365-powershell.md)
-

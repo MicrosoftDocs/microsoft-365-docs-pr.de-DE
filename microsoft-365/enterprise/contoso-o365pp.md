@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen, wie Contoso Microsoft Endpoint Configuration Manager zum Bereitstellen von Microsoft 365 Apps for Enterprise verwendet.
-ms.openlocfilehash: 63993a27f23843fd2d75ef9bf08ae064ec46dc77
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2c02c28ddba7c24592ce09d87bf6f5c9df700a2a
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637163"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754346"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Microsoft 365 Apps for Enterprise-Bereitstellung für Contoso
 
@@ -40,7 +39,7 @@ Basierend auf Ihren Anforderungen hat Contoso die Bereitstellung von Windows 10 
 - Intelligent Language Pack-Bereitstellung, einschließlich der automatischen Bereitstellung der gleichen Sprache wie das Betriebssystem.
 - Eine vollständig unterstützte und einfach zu verwendende Methode zum Entfernen vorhandener Versionen von Office von einem Client während der Bereitstellung.
 
-Neben Configuration Manager hat Contoso das [Readiness Toolkit für Office-Add-in und VBA](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps), ein kostenloses Tool von Microsoft, verwendet, um Kompatibilitätsprobleme mit Ihren Office-Makros und-Add-Ins zu bewerten.
+Zusätzlich zu Configuration Manager hat Contoso das [Readiness Toolkit für Office-Add-Ins und VBA](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps), ein kostenloses Tool von Microsoft, verwendet, um Kompatibilitätsprobleme mit Ihren Office-Makros und-Add-Ins zu bewerten.
 
 ## <a name="managing-deployment-and-updates"></a>Verwalten der Bereitstellung und Updates
 
@@ -79,7 +78,7 @@ Hier finden Sie die Bereitstellungsarchitektur von Contoso Microsoft 365 apps fo
  
 ## <a name="next-step"></a>Nächster Schritt
 
-[Erfahren Sie](contoso-mdm.md) , wie Contoso Microsoft InTune in Microsoft 365 für Unternehmen verwendet, um die Geräte und die apps zu verwalten, die Sie in der Organisation ausführen.
+Erfahren Sie, wie Contoso [Microsoft InTune](contoso-mdm.md) in Microsoft 365 für Unternehmen verwendet, um die Geräte und die apps zu verwalten, die Sie in der Organisation ausführen.
 
 ## <a name="see-also"></a>Siehe auch
 

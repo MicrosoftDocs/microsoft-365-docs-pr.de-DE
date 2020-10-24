@@ -18,19 +18,19 @@ ms.custom:
 - PowerShell
 - seo-marvel-apr2020
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
-description: In diesem Artikel wird erläutert, wie Sie den Zugriff auf Microsoft 365-Konten mithilfe von PowerShell blockieren und aufheben.
-ms.openlocfilehash: a9ade2f41fb601da00ca1c2d1905ca0cb003dcb3
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Verwenden von PowerShell zum Blockieren und Aufheben der Blockierung des Zugriffs auf Microsoft 365-Konten.
+ms.openlocfilehash: c1a79d925965fafd796033182098e68e26a81473
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690527"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754680"
 ---
 # <a name="block-microsoft-365-user-accounts-with-powershell"></a>Blockieren von Microsoft 365-Benutzerkonten mit PowerShell
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Durch das Blockieren des Zugriffs auf ein Microsoft 365-Konto wird verhindert, dass sich Benutzer mit dem Konto anmelden und auf die Dienste und Daten in Ihrer Microsoft 365-Organisation zugreifen. Sie können PowerShell verwenden, um den Zugriff auf einzelne und mehrere Benutzerkonten zu blockieren.
+Wenn Sie den Zugriff auf ein Microsoft 365-Konto blockieren, verhindern Sie, dass sich jemand mit dem Konto anmeldet und auf die Dienste und Daten in Ihrer Microsoft 365-Organisation zugreift. Sie können PowerShell verwenden, um den Zugriff auf einzelne oder mehrere Benutzerkonten zu blockieren.
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Verwenden der Azure Active Directory PowerShell für Graph-Module
 
@@ -45,9 +45,9 @@ Set-AzureADUser -ObjectID <sign-in name of the user account> -AccountEnabled $fa
 ```
 
 > [!NOTE]
-> Der Parameter-ObjectID im Cmdlet "AzureAD" akzeptiert entweder den Konto Anmeldenamen, der auch als Benutzerprinzipalname bezeichnet wird, oder die Objekt-ID des Kontos. 
+> Der Parameter *-objectID* im Cmdlet " **AzureAD** " akzeptiert entweder den Konto Anmeldenamen, der auch als Benutzerprinzipalname bezeichnet wird, oder die Objekt-ID des Kontos.
   
-Dieses Beispiel blockiert den Zugriff auf das Benutzerkonto „fabricec@litwareinc.com“.
+In diesem Beispiel wird der Zugriff auf das Benutzerkonto *fabricec@litwareinc.com*blockiert.
   
 ```powershell
 Set-AzureADUser -ObjectID fabricec@litwareinc.com -AccountEnabled $false
@@ -67,7 +67,7 @@ Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipa
 
 ```
 
-In diesem Beispiel wird das Benutzerkonto UPN für den Benutzernamens Caleb Sills angezeigt.
+In diesem Beispiel wird das Benutzerkonto UPN für den Benutzer  *Caleb Sills*angezeigt.
   
 ```powershell
 $userName="Caleb Sills"
@@ -82,15 +82,15 @@ Set-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userName
 
 ```
 
-Sie können den blockierten Status eines Benutzerkontos jederzeit überprüfen, indem Sie den folgenden Befehl ausführen:
+Verwenden Sie den folgenden Befehl, um den blockierten Status eines Benutzerkontos zu überprüfen:
   
 ```powershell
 Get-AzureADUser -UserPrincipalName <UPN of user account> | Select DisplayName,AccountEnabled
 ```
 
-### <a name="block-access-to-multiple-user-accounts"></a>Blockieren des Zugriffs auf mehrere Benutzerkonten
+### <a name="block-multiple-user-accounts"></a>Blockieren mehrerer Benutzerkonten
 
-Um den Zugriff auf mehrere Benutzerkonten zu blockieren, erstellen Sie eine Textdatei mit einem Konto-Anmeldenamen in jeder Zeile wie die folgende:
+Wenn Sie den Zugriff für mehrere Benutzerkonten blockieren möchten, erstellen Sie eine Textdatei mit einem Konto-Anmeldenamen in jeder Zeile wie die folgende:
     
   ```powershell
 akol@contoso.com
@@ -98,7 +98,7 @@ tjohnston@contoso.com
 kakers@contoso.com
   ```
 
-In den folgenden Befehlen lautet die Beispieltextdatei C:\My Documents\Accounts.txt. Ersetzen Sie dies durch den Pfad und den Dateinamen Ihrer Textdatei.
+In den folgenden Befehlen lautet die Beispieltextdatei *C:\My Documents\Accounts.txt*. Ersetzen Sie diesen Dateinamen durch den Pfad und den Dateinamen Ihrer Textdatei.
   
 Um den Zugriff auf die in der Textdatei aufgelisteten Konten zu blockieren, führen Sie den folgenden Befehl aus:
     
@@ -106,7 +106,7 @@ Um den Zugriff auf die in der Textdatei aufgelisteten Konten zu blockieren, füh
 Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID $_ -AccountEnabled $false }
 ```
 
-Um den Zugriff auf die in der Textdatei aufgelisteten Konten wieder freizugeben, führen Sie den folgenden Befehl aus:
+Führen Sie den folgenden Befehl aus, um die Blockierung der in der Textdatei aufgelisteten Konten aufzuheben:
     
 ```powershell
 Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID $_ -AccountEnabled $true }
@@ -116,19 +116,18 @@ Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID
 
 Stellen Sie zunächst [eine Verbindung mit Ihrem Microsoft 365-Mandanten her](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
     
-### <a name="block-access-to-individual-user-accounts"></a>Blockieren des Zugriffs auf einzelne Benutzerkonten
+### <a name="block-individual-user-accounts"></a>Blockieren einzelner Benutzerkonten
 
-Verwenden Sie die folgende Syntax, um den Zugriff auf ein einzelnes Benutzerkonto zu blockieren:
+Verwenden Sie die folgende Syntax, um den Zugriff für ein einzelnes Benutzerkonto zu blockieren:
   
 ```powershell
 Set-MsolUser -UserPrincipalName <sign-in name of user account>  -BlockCredential $true
 ```
 
 >[!Note]
->PowerShell Core unterstützt nicht das Microsoft Azure Active Directory-Modul für Windows PowerShell und Cmdlets mit **Msol** im Namen. Um diese Cmdlets weiterhin verwenden zu können, müssen Sie sie über Windows PowerShell ausführen.
->
+>PowerShell Core unterstützt das Microsoft Azure Active Directory Modul für Windows PowerShell Modul und Cmdlets mit *MSOL* in Ihrem Namen nicht. Sie müssen diese Cmdlets aus Windows PowerShell ausführen.
 
-Dieses Beispiel blockiert den Zugriff auf das Benutzerkonto „fabricec@litwareinc.com“.
+In diesem Beispiel wird der Zugriff auf das Benutzerkonto *fabricec \@ litwareinc.com*blockiert.
   
 ```powershell
 Set-MsolUser -UserPrincipalName fabricec@litwareinc.com -BlockCredential $true
@@ -140,13 +139,13 @@ Führen Sie zum Aufheben der Blockierung des Benutzerkontos den folgenden Befehl
 Set-MsolUser -UserPrincipalName <sign-in name of user account>  -BlockCredential $false
 ```
 
-Sie können den blockierten Status eines Benutzerkontos jederzeit überprüfen, indem Sie den folgenden Befehl ausführen:
+Führen Sie den folgenden Befehl aus, um den blockierten Status eines Benutzerkontos zu überprüfen:
   
 ```powershell
 Get-MsolUser -UserPrincipalName <sign-in name of user account> | Select DisplayName,BlockCredential
 ```
 
-### <a name="block-access-to-multiple-user-accounts"></a>Blockieren des Zugriffs auf mehrere Benutzerkonten
+### <a name="block-access-for-multiple-user-accounts"></a>Blockieren des Zugriffs für mehrere Benutzerkonten
 
 Erstellen Sie zunächst eine Textdatei mit einem Konto in jeder Zeile wie folgt:
     
@@ -156,9 +155,9 @@ tjohnston@contoso.com
 kakers@contoso.com
 ```
 
-In den folgenden Befehlen lautet die Beispieltextdatei C:\My Documents\Accounts.txt. Ersetzen Sie dies durch den Pfad und den Dateinamen Ihrer Textdatei.
+In den folgenden Befehlen lautet die Beispieltextdatei *C:\My Documents\Accounts.txt*. Ersetzen Sie diesen Dateinamen durch den Pfad und den Dateinamen Ihrer Textdatei.
     
-Um den Zugriff auf die in der Textdatei aufgelisteten Konten zu blockieren, führen Sie den folgenden Befehl aus:
+Führen Sie den folgenden Befehl aus, um den Zugriff auf die in der Textdatei aufgeführten Konten zu blockieren:
     
   ```powershell
   Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-MsolUser -UserPrincipalName $_ -BlockCredential $true }

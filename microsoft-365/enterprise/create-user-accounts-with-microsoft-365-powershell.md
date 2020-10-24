@@ -18,32 +18,36 @@ ms.custom:
 - O365ITProTrain
 - seo-marvel-apr2020
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
-description: In diesem Artikel erfahren Sie, wie Sie mithilfe von PowerShell Benutzerkonten oder mehrere Microsoft 365-Benutzerkonten erstellen.
-ms.openlocfilehash: aedcc4adba6171a63a5ddaeb87b20150e72b2a76
-ms.sourcegitcommit: 3165329d1fb5a7fd866ff287bea3b6354ea2be18
+description: Verwenden von PowerShell zum Erstellen einzelner oder mehrerer Microsoft 365-Benutzerkonten.
+ms.openlocfilehash: d96de72ca3e7c4a439665c3ebf751a8fe25ce572
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48580952"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754210"
 ---
 # <a name="create-microsoft-365-user-accounts-with-powershell"></a>Erstellen von Microsoft 365-Benutzerkonten mit PowerShell
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Sie können PowerShell für Microsoft 365 zum effizienten Erstellen von Benutzerkonten verwenden, insbesondere für mehrere Benutzerkonten. Wenn Sie Benutzerkonten in PowerShell erstellen, sind bestimmte Kontoeigenschaften immer erforderlich. Andere Eigenschaften sind nicht erforderlich, um das Konto zu erstellen, sind aber dennoch wichtig. Diese Eigenschaften werden in der folgenden Tabelle beschrieben:
+Sie können PowerShell für Microsoft 365 verwenden, um Benutzerkonten effizient zu erstellen, einschließlich mehrerer Konten.
+
+Wenn Sie Benutzerkonten in PowerShell erstellen, sind bestimmte Kontoeigenschaften immer erforderlich. Andere Eigenschaften sind nicht erforderlich, aber wichtig. Informationen finden Sie in der folgenden Tabelle.
   
 |**Eigenschaftenname**|**Erforderlich?**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**Anzeigename** <br/> |Ja  <br/> |Dies ist der Anzeigename, der in Microsoft 365-Diensten verwendet wird. Zum Beispiel „Caleb Sills".  <br/> |
-|**UserPrincipalName** <br/> |Ja  <br/> |Hierbei handelt es sich um den Kontonamen, der für die Anmeldung bei Microsoft 365-Diensten verwendet wird. Zum Beispiel „CalebS@contoso.onmicrosoft.com".  <br/> |
+|**Anzeigename** <br/> |Ja  <br/> |Dies ist der Anzeigename, der in Microsoft 365-Diensten verwendet wird. Beispiel: *Caleb Sills*. <br/> |
+|**UserPrincipalName** <br/> |Ja  <br/> |Hierbei handelt es sich um den Kontonamen, der für die Anmeldung bei Microsoft 365-Diensten verwendet wird. Beispielsweise *Calebs \@ contoso.onmicrosoft.com*.  <br/> |
 |**FirstName** <br/> |Nein  <br/> ||
 |**Nachname** <br/> |Nein  <br/> ||
-|**LicenseAssignment** <br/> |Nein  <br/> |Hierbei handelt es sich um den Lizenzierungs Plan (auch als Lizenzplan oder SKU bezeichnet), von dem eine verfügbare Lizenz dem Benutzerkonto zugewiesen wird. Die Lizenz definiert die Microsoft 365-Dienste, die für das Konto verfügbar sind. Sie müssen einem Benutzer beim Erstellen des Kontos keine Lizenz zuweisen, aber für das Konto ist eine Lizenz für den Zugriff auf Microsoft 365-Dienste erforderlich. Sie haben 30 Tage Zeit, um das Benutzerkonto zu lizenzieren, nachdem Sie es erstellt haben. |
-|**Password** <br/> |Nein  <br/> | Wenn Sie kein Kennwort angeben, wird dem Benutzerkonto ein zufälliges Kennwort zugewiesen, und das Kennwort wird in den Ergebnissen des Befehls angezeigt. Wenn Sie ein Kennwort angeben, muss es aus 8 bis 16 ASCII-Textzeichen aus drei der folgenden Kategorien bestehen: Kleinbuchstaben, Großbuchstaben, Zahlen oder Symbole. <br/> |
-|**UsageLocation** <br/> |Nein  <br/> |Dies ist ein gültiger ISO 3166-1-Alpha-2-Ländercode. „US" steht zum Beispiel für die Vereinigten Staaten und „FR" für Frankreich. **Da einige Microsoft 365-Dienste in bestimmten Ländern nicht verfügbar sind, können Sie einem Benutzerkonto keine Lizenz zuweisen, es sei denn, das Konto hat diesen Wert konfiguriert.** Weitere Informationen finden Sie unter [Informationen zu Lizenzbeschränkungen](https://go.microsoft.com/fwlink/p/?LinkId=691730).  <br/> |
+|**LicenseAssignment** <br/> |Nein  <br/> |Hierbei handelt es sich um den Lizenzierungs Plan (auch als Lizenzplan oder SKU bezeichnet), von dem eine verfügbare Lizenz dem Benutzerkonto zugewiesen wird. Die Lizenz definiert die Microsoft 365-Dienste, die für das Konto verfügbar sind. Sie müssen einem Benutzer beim Erstellen des Kontos keine Lizenz zuweisen, aber das Konto muss über eine Lizenz für den Zugriff auf Microsoft 365-Dienste verfügen. Sie haben 30 Tage Zeit, um das Benutzerkonto zu lizenzieren, nachdem Sie es erstellt haben. |
+|**Password** <br/> |Nein  <br/> | Wenn Sie kein Kennwort angeben, wird dem Benutzerkonto ein zufälliges Kennwort zugewiesen, und das Kennwort wird in den Ergebnissen des Befehls angezeigt. Wenn Sie ein Kennwort angeben, muss es sich um 8 bis 16 ASCII-Textzeichen der folgenden Typen handeln: Kleinbuchstaben, Großbuchstaben, Zahlen und Symbole.<br/> |
+|**UsageLocation** <br/> |Nein  <br/> |Dies ist ein gültiger ISO 3166-1-Alpha-2-Ländercode. Beispielsweise *US* für die Vereinigten Staaten und *fr* für Frankreich. Es ist wichtig, diesen Wert anzugeben, da einige Microsoft 365-Dienste in bestimmten Ländern nicht verfügbar sind. Sie können einem Benutzerkonto keine Lizenz zuweisen, es sei denn, das Konto hat diesen Wert konfiguriert. Weitere Informationen finden Sie unter [Informationen zu Lizenzbeschränkungen](https://go.microsoft.com/fwlink/p/?LinkId=691730).<br/> |
 
 >[!Note]
->[Erfahren Sie, wie Sie Benutzerkonten](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users) mit dem Microsoft 365 Admin Center erstellen. Eine Liste mit weiteren Ressourcen finden Sie unter [Verwalten von Benutzern und Gruppen](https://docs.microsoft.com/microsoft-365/admin/add-users/).
+>[Erfahren Sie, wie Sie Benutzerkonten](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users) mithilfe des Microsoft 365 Admin Center erstellen.
+> 
+> Eine Liste mit weiteren Ressourcen finden Sie unter [Verwalten von Benutzern und Gruppen](https://docs.microsoft.com/microsoft-365/admin/add-users/).
 >   
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Verwenden der Azure Active Directory PowerShell für Graph-Module
@@ -58,7 +62,7 @@ $PasswordProfile.Password="<user account password>"
 New-AzureADUser -DisplayName "<display name>" -GivenName "<first name>" -SurName "<last name>" -UserPrincipalName <sign-in name> -UsageLocation <ISO 3166-1 alpha-2 country code> -MailNickName <mailbox name> -PasswordProfile $PasswordProfile -AccountEnabled $true
 ```
 
-In diesem Beispiel wird ein Konto für den US-amerikanischen Benutzer mit dem Namen „Caleb Sills“ erstellt:
+In diesem Beispiel wird ein Konto für den US-Benutzer *Caleb Sills*erstellt:
   
 ```powershell
 $PasswordProfile=New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
@@ -79,7 +83,7 @@ New-MsolUser -DisplayName <display name> -FirstName <first name> -LastName <last
 ```
 
 >[!Note]
->PowerShell Core unterstützt nicht das Microsoft Azure Active Directory-Modul für Windows PowerShell und Cmdlets mit **Msol** im Namen. Um diese Cmdlets weiterhin verwenden zu können, müssen Sie sie über Windows PowerShell ausführen.
+>PowerShell Core unterstützt das Microsoft Azure Active Directory Modul für Windows PowerShell Modul und Cmdlets mit *MSOL* in Ihrem Namen nicht. Führen Sie diese Cmdlets aus Windows PowerShell aus.
 >
 
 Mit dem folgenden Befehl erhalten Sie eine Liste der Namen der Lizenzierungspläne:
@@ -88,7 +92,7 @@ Mit dem folgenden Befehl erhalten Sie eine Liste der Namen der Lizenzierungsplä
 Get-MsolAccountSku
 ````
 
-In diesem Beispiel wird ein Konto für den US-amerikanischen Benutzer mit dem Namen „Caleb Sills" erstellt und eine Lizenz aus dem `contoso:ENTERPRISEPACK`-Lizenzierungsplan (Office 365 Enterprise E3) zugewiesen.
+In diesem Beispiel wird ein Konto für den US-Benutzer *Caleb Sills*erstellt, und dem `contoso:ENTERPRISEPACK` Lizenzierungs Plan (Office 365 Enterprise E3) wird eine Lizenz zugewiesen.
   
 ```powershell
 New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPrincipalName calebs@contoso.onmicrosoft.com -UsageLocation US -LicenseAssignment contoso:ENTERPRISEPACK
@@ -97,32 +101,32 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
 ### <a name="create-multiple-user-accounts"></a>Erstellen mehrerer Benutzerkonten
 
 1. Erstellen Sie eine durch Kommata getrennte Wertedatei (CSV), die die erforderlichen Informationen zum Benutzerkonto enthält. Beispiel:
-    
-  ```powershell
-  UserPrincipalName,FirstName,LastName,DisplayName,UsageLocation,AccountSkuId
-  ClaudeL@contoso.onmicrosoft.com,Claude,Loiselle,Claude Loiselle,US,contoso:ENTERPRISEPACK
-  LynneB@contoso.onmicrosoft.com,Lynne,Baxter,Lynne Baxter,US,contoso:ENTERPRISEPACK
-  ShawnM@contoso.onmicrosoft.com,Shawn,Melendez,Shawn Melendez,US,contoso:ENTERPRISEPACK
-  ```
 
- > [!NOTE]
->Die Spaltennamen und ihre Reihenfolge in der ersten Zeile der CSV-Datei sind willkürlich, aber stellen Sie sicher, dass die Daten im Rest der Datei mit der Reihenfolge der Spaltennamen übereinstimmen, und verwenden Sie die Spaltennamen für die Parameterwerte im PowerShell for Microsoft 365-Befehl.
+     ```powershell
+     UserPrincipalName,FirstName,LastName,DisplayName,UsageLocation,AccountSkuId
+     ClaudeL@contoso.onmicrosoft.com,Claude,Loiselle,Claude Loiselle,US,contoso:ENTERPRISEPACK
+     LynneB@contoso.onmicrosoft.com,Lynne,Baxter,Lynne Baxter,US,contoso:ENTERPRISEPACK
+     ShawnM@contoso.onmicrosoft.com,Shawn,Melendez,Shawn Melendez,US,contoso:ENTERPRISEPACK
+     ```
+
+   >[!NOTE]
+   >Die Spaltennamen und deren Reihenfolge in der ersten Zeile der CSV-Datei sind willkürlich. Stellen Sie jedoch sicher, dass die Reihenfolge der Daten im Rest der Datei mit der Reihenfolge der Spaltennamen übereinstimmt. Und verwenden Sie die Spaltennamen für die Parameterwerte im PowerShell-Befehl für Microsoft 365.
     
 2. Verwenden Sie die folgende Syntax:
     
-  ```powershell
-  Import-Csv -Path <Input CSV File Path and Name> | foreach {New-MsolUser -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -UserPrincipalName $_.UserPrincipalName -UsageLocation $_.UsageLocation -LicenseAssignment $_.AccountSkuId [-Password $_.Password]} | Export-Csv -Path <Output CSV File Path and Name>
-  ```
+    ```powershell
+     Import-Csv -Path <Input CSV File Path and Name> | foreach {New-MsolUser -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -UserPrincipalName $_.UserPrincipalName -UsageLocation $_.UsageLocation -LicenseAssignment $_.AccountSkuId [-Password $_.Password]} | Export-Csv -Path <Output CSV File Path and Name>
+    ```
 
-In diesem Beispiel werden die Benutzerkonten aus der Datei mit dem Namen „C:\My Documents\NewAccounts.csv“ erstellt, und die Ergebnisse werden in der Datei mit dem Namen „C:\My Documents\NewAccountResults.csv“ protokolliert.
+   In diesem Beispiel werden Benutzerkonten aus der Datei *C:\My Documents\NewAccounts.csv* erstellt und die Ergebnisse in einer Datei mit dem Namen *C:\My Documents\NewAccountResults.csv*protokolliert.
     
-  ```powershell
-  Import-Csv -Path "C:\My Documents\NewAccounts.csv" | foreach {New-MsolUser -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -UserPrincipalName $_.UserPrincipalName -UsageLocation $_.UsageLocation -LicenseAssignment $_.AccountSkuId} | Export-Csv -Path "C:\My Documents\NewAccountResults.csv"
-  ```
+    ```powershell
+    Import-Csv -Path "C:\My Documents\NewAccounts.csv" | foreach {New-MsolUser -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -UserPrincipalName $_.UserPrincipalName -UsageLocation $_.UsageLocation -LicenseAssignment $_.AccountSkuId} | Export-Csv -Path "C:\My Documents\NewAccountResults.csv"
+    ```
 
 3. Die Ergebnisse können Sie in der Ausgabedatei überprüfen. Es wurden keine Kennwörter angegeben, sodass die zufälligen Kennwörter, die von Microsoft 365 generiert wurden, in der Ausgabedatei angezeigt werden.
     
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Verwalten von Microsoft 365-Benutzerkonten, -Lizenzen und -Gruppen mit PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   
