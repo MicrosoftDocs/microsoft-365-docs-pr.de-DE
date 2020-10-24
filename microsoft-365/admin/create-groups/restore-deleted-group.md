@@ -1,10 +1,10 @@
 ---
-title: Wiederherstellen einer gelöschten Gruppe
+title: Wiederherstellen einer gelöschten Microsoft 365-Gruppe
 ms.reviewer: arvaradh
 f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,24 +20,14 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: Informationen zum Wiederherstellen einer gelöschten Microsoft 365-Gruppe.
-ms.openlocfilehash: 30e267a149bc18c2425d4ea38423b887116794c6
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 091697be54b1127a5cb336179733d51519947e14
+ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681646"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753243"
 ---
-# <a name="restore-a-deleted-group"></a>Wiederherstellen einer gelöschten Gruppe
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
-
-::: moniker-end
-
-> [!NOTE]
-> In diesem Artikel wird das Wiederherstellen nur von Microsoft 365 Gruppen beschrieben. Alle anderen Gruppen können nicht wiederhergestellt werden, nachdem Sie gelöscht wurden.
+# <a name="restore-a-deleted-microsoft-365-group"></a>Wiederherstellen einer gelöschten Microsoft 365-Gruppe
 
 Wenn Sie eine Gruppe gelöscht haben, wird Sie standardmäßig 30 Tage lang aufbewahrt. Dieser 30-Tage-Zeitraum wird als Aufbewahrungsfrist für das vorläufige Löschen betrachtet, weil ein Wiederherstellen der Gruppe während dieses Zeitraums noch möglich ist. Nach 30 Tagen werden die Gruppe und die zugehörigen Inhalte endgültig gelöscht und können nicht wiederhergestellt werden.
 
@@ -59,7 +49,12 @@ Beim Wiederherstellen einer Gruppe werden folgende Inhalte wiederhergestellt:
 
 - Jammern von Gruppen-und Gruppeninhalten (wenn die Microsoft 365-Gruppe aus jammern erstellt wurde)
 
-## <a name="restore-a-group-that-you-own-by-using-outlook-on-the-web"></a>Wiederherstellen einer eigenen Gruppe mithilfe von Outlook im Internet
+> [!NOTE]
+> In diesem Artikel wird das Wiederherstellen nur von Microsoft 365 Gruppen beschrieben. Alle anderen Gruppen können nicht wiederhergestellt werden, nachdem Sie gelöscht wurden.
+
+## <a name="restore-a-group"></a>Wiederherstellen einer Gruppe
+
+# <a name="outlook"></a>[Outlook](#tab/outlook)
 
 Wenn Sie der Besitzer einer Microsoft 365-Gruppe sind, können Sie die Gruppe selbst in Outlook im Internet wiederherstellen, indem Sie die folgenden Schritte ausführen:
 
@@ -69,7 +64,7 @@ Wenn Sie der Besitzer einer Microsoft 365-Gruppe sind, können Sie die Gruppe se
 
 Wenn die gelöschte Gruppe hier nicht angezeigt wird, wenden Sie sich an einen Administrator.
 
-## <a name="restore-a-group-in-the-microsoft-365-admin-center"></a>Wiederherstellen einer Gruppe im Microsoft 365 Admin Center
+# <a name="admin-center"></a>[Admin Center](#tab/admin-center)
 
 Wenn Sie globaler Administrator oder Gruppenadministrator sind, können Sie eine gelöschte Gruppe im Microsoft 365 Admin Center wiederherstellen:
 
@@ -79,28 +74,9 @@ Wenn Sie globaler Administrator oder Gruppenadministrator sind, können Sie eine
 
 > [!NOTE]
 > In einigen Fällen kann es bis zu 24 Stunden dauern, bis die Gruppe und alle Daten wiederhergestellt werden. 
-  
-## <a name="permanently-delete-a-microsoft-365-group"></a>Dauerhaftes Löschen einer Microsoft 365-Gruppe
 
-Manchmal möchten Sie vielleicht eine Gruppe endgültig löschen, ohne den Ablauf der 30-Tage-Frist für das vorläufige Löschen abzuwarten. Starten Sie hierzu PowerShell, und führen Sie den folgenden Befehl aus, um die Objekt-ID der Gruppe abzurufen:
-  
-```
-Get-AzureADMSDeletedGroup
-```
+---
 
-Notieren Sie sich die Objekt-ID der Gruppe(n), die Sie endgültig löschen möchten.
-  
-> [!CAUTION]
-> Durch das endgültige Löschen der Gruppe werden die Gruppe und alle zugehörigen Daten für immer entfernt. 
-  
-Führen Sie in PowerShell den folgenden Befehl aus, um die Gruppe endgültig zu löschen:
-  
-```
-Remove-AzureADMSDeletedDirectoryObject -Id <objectId>
-```
-
-Führen Sie zur Bestätigung, dass die Gruppe erfolgreich endgültig gelöscht wurde, das Cmdlet  *Get-AzureADMSDeletedGroup*  erneut aus, um sicherzustellen, dass die Gruppe nicht mehr in der Liste vorläufig gelöschter Gruppen angezeigt wird. In einigen Fällen kann es bis zu 24 Stunden dauern, bis die Gruppe und alle zugehörigen Daten endgültig gelöscht wurden. 
-  
 ## <a name="got-questions-about-microsoft-365-groups"></a>Haben Sie Fragen zu Microsoft 365-Gruppen?
 
 Besuchen Sie die [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups) , um Fragen zu veröffentlichen und an Unterhaltungen zu Microsoft 365-Gruppen teilzunehmen. 

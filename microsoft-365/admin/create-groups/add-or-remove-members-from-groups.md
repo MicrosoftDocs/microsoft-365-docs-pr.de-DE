@@ -4,7 +4,7 @@ ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,21 +21,14 @@ search.appverid:
 - BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Hier erfahren Sie, wie Sie einer Gruppe ein Mitglied hinzufügen, Mitglied aus der Gruppe entfernen und den Status von Gruppenbesitzern im Microsoft 365 Admin Center verwalten.
-ms.openlocfilehash: 1d11e527f4f8759511a64036a71e837689bcbcd3
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: a8739b6cd2005598acbfccbaff6131235ec480ee
+ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307313"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753313"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Hinzufügen oder Entfernen von Mitgliedern aus Microsoft 365-Gruppen mithilfe des Admin Centers
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
-
-::: moniker-end
 
 In Microsoft 365 erstellen Gruppenmitglieder in der Regel Ihre eigenen Gruppen, fügen sich selbst zu Gruppen hinzu, denen Sie beitreten möchten, oder werden von Gruppenbesitzern eingeladen. Wenn sich der Gruppenbesitz ändert oder Sie feststellen, dass ein Mitglied hinzugefügt oder entfernt werden soll, können Sie diese Änderung auch als Administrator vornehmen. Diese Änderungen können nur von einem globalen Administrator, einem Exchange-Administrator, einem Gruppenadministrator oder einem Benutzer Administrator vorgenommen werden. [Was ist eine Microsoft 365-Gruppe?](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
@@ -43,8 +36,6 @@ In Microsoft 365 erstellen Gruppenmitglieder in der Regel Ihre eigenen Gruppen, 
 > Wenn Sie kein Administrator sind, können Sie [Mitglieder mit Outlook hinzufügen oder entfernen](https://support.microsoft.com/office/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de).
   
 ## <a name="add-a-member-to-a-group-in-the-admin-center"></a>Hinzufügen eines Mitglieds zu einer Gruppe im Admin Center
-
-::: moniker range="o365-worldwide"
 
 1. Wechseln Sie im Admin Center zur Seite **Gruppen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppen</a>.  
 
@@ -56,39 +47,7 @@ In Microsoft 365 erstellen Gruppenmitglieder in der Regel Ihre eigenen Gruppen, 
 
 5. Klicken Sie auf **Speichern**.
 
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Gruppen** \> **Gruppen**.  
-
-2. Wählen Sie einen Gruppennamen aus.
-
-3. Wählen Sie im Detailbereich neben **Mitglieder**die Option **Bearbeiten**aus, und wählen Sie dann **Mitglieder hinzufügen**aus.
-
-4. Suchen Sie nach dem Namen des Mitglieds, das hinzugefügt werden soll, oder wählen Sie ihn aus.
-
-5. Klicken Sie auf **Speichern**.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Gruppen** \> **Gruppen**.
-
-2. Wählen Sie einen Gruppennamen aus.
-
-3. Wählen Sie im Detailbereich neben **Mitglieder**die Option **Bearbeiten**aus, und wählen Sie dann **Mitglieder hinzufügen**aus.
-
-4. Suchen Sie nach dem Namen des Mitglieds, das hinzugefügt werden soll, oder wählen Sie ihn aus.
-
-5. Klicken Sie auf **Speichern**.
-
-::: moniker-end
-
 ## <a name="add-a-group-to-a-member-in-the-admin-center"></a>Hinzufügen einer Gruppe zu einem Mitglied im Admin Center
-
-::: moniker range="o365-worldwide"
 
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.  
 
@@ -100,42 +59,10 @@ In Microsoft 365 erstellen Gruppenmitglieder in der Regel Ihre eigenen Gruppen, 
 
 5. Klicken Sie auf **Speichern**.
 
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktive Benutzer</a>.  
-
-2. Wählen Sie einen Benutzernamen aus.
-
-3. Wählen Sie im Detailbereich neben **Gruppenmitgliedschaften**die Option **Bearbeiten**aus, und wählen Sie dann **Mitgliedschaften hinzufügen**aus.
-
-4. Suchen oder wählen Sie den Namen der Gruppe aus, die Sie hinzufügen möchten.
-
-5. Klicken Sie auf **Speichern**.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktive Benutzer</a>.
-
-2. Wählen Sie einen Benutzernamen aus.
-
-3. Wählen Sie im Detailbereich neben **Gruppenmitgliedschaften**die Option **Bearbeiten**aus, und wählen Sie dann **Mitgliedschaften hinzufügen**aus.
-
-4. Suchen oder wählen Sie den Namen der Gruppe aus, die Sie hinzufügen möchten.
-
-5. Klicken Sie auf **Speichern**.
-
-::: moniker-end
-
 ## <a name="remove-a-member-from-a-group-in-the-admin-center"></a>Entfernen eines Mitglieds aus einer Gruppe im Admin Center
 
 > [!NOTE]
 > Wenn Sie ein Mitglied aus einer privaten Gruppe entfernen, dauert es 5 Minuten, bis der Benutzer aus der Gruppe ausgeschlossen wird (bis die Mitgliedschaftsänderungen vollständig auf alle Domänencontroller repliziert wurden).
-
-::: moniker range="o365-worldwide"
 
 1. Wechseln Sie im Admin Center zur Seite **Gruppen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppen</a>.
 
@@ -147,44 +74,12 @@ In Microsoft 365 erstellen Gruppenmitglieder in der Regel Ihre eigenen Gruppen, 
 
 5. Wählen Sie **Speichern** aus, um das Element zu entfernen.
 
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Gruppen** \> **Gruppen**.  
-
-2. Wählen Sie einen Gruppennamen aus.
-
-3. Wählen Sie im Detailbereich neben **Mitglieder**die Option **Bearbeiten**aus.
-
-4. Wählen Sie neben dem Mitglied, das Sie entfernen möchten, das X aus.
-
-5. Wählen Sie **Speichern** aus, um das Element zu entfernen.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Gruppen** \> **Gruppen**.
-
-2. Wählen Sie einen Gruppennamen aus.
-
-3. Wählen Sie im Detailbereich neben **Mitglieder**die Option **Bearbeiten**aus.
-
-4. Wählen Sie neben dem Mitglied, das Sie entfernen möchten, das X aus.
-
-5. Wählen Sie **Speichern** aus, um das Element zu entfernen.
-
-::: moniker-end
-
 ## <a name="manage-group-owner-status"></a>Verwalten des Status von Gruppenbesitzern
 
 Die Person, die eine Gruppe erstellt hat, ist standardmäßig der Gruppenbesitzer. Häufig hat eine Gruppe als Sicherungsunterstützung oder aus anderen Gründen mehrere Besitzer. Mitglieder können in den Status eines Besitzers hochgestuft und Besitzer können in den Status eines Mitglieds heruntergestuft werden.
   
 ### <a name="promote-a-member-to-owner-status-in-the-admin-center"></a>Heraufstufen eines Mitglieds in den Besitzer Status im Admin Center
 
-::: moniker range="o365-worldwide"
-
 1. Wechseln Sie im Admin Center zur Seite **Gruppen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppen</a>.
 
 2. Wählen Sie einen Gruppennamen aus.
@@ -196,45 +91,9 @@ Die Person, die eine Gruppe erstellt hat, ist standardmäßig der Gruppenbesitze
 5. Aktivieren Sie das Kontrollkästchen neben dem Namen des Mitglieds, das Sie hinzufügen möchten.
 
 6. Klicken Sie auf **Speichern**und dann auf **Schließen**.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Gruppen** \> **Gruppen**.
-
-2. Wählen Sie einen Gruppennamen aus.
-
-3. Wählen Sie im Detailbereich neben **Besitzer**die Option **Bearbeiten**aus.
-
-4. Suchen Sie nach einem Mitglied, oder wählen Sie **Besitzer hinzufügen**aus.
-
-5. Aktivieren Sie das Kontrollkästchen neben dem Namen des Mitglieds, das Sie hinzufügen möchten.
-
-6. Klicken Sie auf **Speichern**und dann auf **Schließen**.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Gruppen** \> **Gruppen**.  
-
-2. Wählen Sie einen Gruppennamen aus.
-
-3. Wählen Sie im Detailbereich neben **Besitzer**die Option **Bearbeiten**aus.
-
-4. Suchen Sie nach einem Mitglied, oder wählen Sie **Besitzer hinzufügen**aus.
-
-5. Aktivieren Sie das Kontrollkästchen neben dem Namen des Mitglieds, das Sie hinzufügen möchten.
-
-6. Klicken Sie auf **Speichern**und dann auf **Schließen**.
-
-::: moniker-end
 
 ### <a name="remove-owner-status-in-the-admin-center"></a>Entfernen des Besitzer Status im Admin Center
 
-::: moniker range="o365-worldwide"
-
 1. Wechseln Sie im Admin Center zur Seite **Gruppen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppen</a>.
 
 2. Wählen Sie einen Gruppennamen aus.
@@ -244,36 +103,6 @@ Die Person, die eine Gruppe erstellt hat, ist standardmäßig der Gruppenbesitze
 4. Wählen Sie neben dem Namen des Besitzers das X aus.
 
 5. Klicken Sie auf **Speichern**.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Gruppen** \> **Gruppen**.  
-
-2. Wählen Sie einen Gruppennamen aus.
-
-3. Wählen Sie im Detailbereich neben **Besitzer**die Option **Bearbeiten**aus.
-
-4. Wählen Sie neben dem Namen des Besitzers das X aus.
-
-5. Klicken Sie auf **Speichern**.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Gruppen** \> **Gruppen**.
-
-2. Wählen Sie einen Gruppennamen aus.
-
-3. Wählen Sie im Detailbereich neben **Besitzer**die Option **Bearbeiten**aus.
-
-4. Wählen Sie neben dem Namen des Besitzers das X aus.
-
-5. Klicken Sie auf **Speichern**.
-
-::: moniker-end
 
 ## <a name="more-on-managing-membership"></a>###Weitere Informationen zum Verwalten der Mitgliedschaft
 

@@ -15,7 +15,7 @@ description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region ko
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 087cd6e674e16eca7f74d901cb8ff3b52bb695a5
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48642503"

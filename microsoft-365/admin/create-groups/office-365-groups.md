@@ -4,7 +4,7 @@ ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie mehr über Microsoft 365 Gruppen.
-ms.openlocfilehash: 5d85204687641e74f9a705162df01cebd7eeee26
-ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.openlocfilehash: f3114fdd6eefae0fe226e25907716101dcb6a51f
+ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48337169"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753265"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Übersicht über Microsoft 365-Gruppen für Administratoren
 
@@ -108,7 +108,7 @@ Jedes Microsoft 365-Abonnement, das über Exchange Online und SharePoint Online 
 
 Wenn Sie über einen Exchange-only-Plan verfügen, können Sie weiterhin den freigegebenen Posteingang und die freigegebenen Kalenderfunktionen von Gruppen in Outlook abrufen, aber Sie erhalten nicht die Dokumentbibliothek, den Planer oder andere Funktionen.
 
-Microsoft 365 Gruppen arbeiten mit Azure Active Directory (AAD). Die von Ihnen erhaltenen Gruppenfeatures hängen davon ab, welches Azure Active Directory-Abonnement Sie besitzen und welche Lizenzen dem Organisator der Gruppe zugewiesen sind.
+Microsoft 365 Gruppen arbeiten mit Azure Active Directory. Die von Ihnen erhaltenen Gruppenfeatures hängen davon ab, welches Azure Active Directory-Abonnement Sie besitzen und welche Lizenzen dem Organisator der Gruppe zugewiesen sind.
 
 > [!IMPORTANT]
 > Wenn Sie über ein Azure AD Premium-Abonnement verfügen, können Benutzer für alle Gruppenfeatures der Gruppe beitreten, unabhängig davon, ob Ihnen eine Aad P1-Lizenz zugewiesen wurde oder nicht. Die Lizenzierung wird nicht erzwungen.
