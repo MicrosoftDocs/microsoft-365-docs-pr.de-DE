@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Ermöglichen Sie es Ihren Benutzern, mit Teams, Exchange, SharePoint und anderen Microsoft 365-Diensten produktiv zu arbeiten.
-ms.openlocfilehash: 879df16b379a82fcdc9478f8b3a787dd74384171
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 57e862769533b8c076513874e7f6daafdbe836da
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445822"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681408"
 ---
 # <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>Schritt 5: Bereitstellen von Produktivitätsanwendungen und -diensten für Remotemitarbeiter
 
@@ -30,7 +30,7 @@ Um produktiv zu sein, müssen die Mitarbeiter miteinander kommunizieren und zusa
 
 - Verwenden Sie Microsoft Teams, das einen gemeinsamen Kommunikationsknotenpunkt für Besprechungen, Chats und die Speicherung von Dateien für die Organisation, für die Abteilungen und für kleine Teams und Einzelpersonen bietet, damit die Benutzer in Verbindung bleiben, obwohl sie getrennt arbeiten. 
 - Verwenden Sie zum Austauschen von E-Mails und Verwalten von Kalendern, Kontakten und Aufgaben Exchange Online und den Outlook-Client.
-- Verwenden Sie zum Speichern und Zusammenarbeiten an Dateien SharePoint und OneDrive. Diese können Sie mit einem Webbrowser oder in Teams verwenden.
+- Verwenden Sie zum Speichern und Zusammenarbeiten an Dateien SharePoint und OneDrive. Diese können Sie innerhalb eines Webbrowsers oder in Teams verwenden.
 - Für das Erstellen neuer Inhalte oder die Zusammenarbeit an vorhandenen Inhalten sind die Microsoft 365-Apps Versionen von Word, PowerPoint, Excel und Outlook, die auf Ihrem lokalen Computer installiert sind und die laufenden Feature- und Sicherheitsupdates erhalten.
 
 ![Verwenden von Teams, Outlook, SharePoint, OneDrive und Microsoft 365-Apps, um produktiv zu bleiben](../media/empower-people-to-work-remotely/remote-workers-productivity-grid.png)
@@ -39,9 +39,9 @@ Um produktiv zu sein, müssen die Mitarbeiter miteinander kommunizieren und zusa
 
 Teams ermöglicht es Ihnen, an einem Ort zu chatten, sich zu treffen, anzurufen und zusammenzuarbeiten. Jeden Tag erledigen Millionen von Menschen ihre Arbeit in Teams, weil es alles zusammenbringt, was Sie brauchen, um aus der Ferne in einem Hub für Teamarbeit zu arbeiten. 
 
-Verwenden Sie [diesen Artikel](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams) zur Unterstützung ihrer Remotemitarbeiter in Teams. 
+Eine detaillierte Anleitung finden Sie unter [Unterstützung von Remotemitarbeitern in Microsoft Teams](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams). 
 
-Sehen Sie sich das [Teil 1-Video](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity) für Anleitungen und Demos zur Verwendung von Teams für die Remotearbeit an.
+Sehen Sie sich [Ermöglichen der hybriden Arbeit mit Microsoft Teams-Webcasts](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/) für eine Anleitung und Demos zur Verwendung von Teams für Remotearbeit an.
 
 ### <a name="chat-and-conversations"></a>Chat und Unterhaltungen
 
@@ -84,12 +84,12 @@ In [diesem Artikel](../security/office-365-security/sharepoint-file-access-polic
 
 Microsoft 365 Apps ist die produktivste und sicherste Office-Oberfläche für Unternehmen, die es Benutzern ermöglicht, nahtlos von praktisch überall aus zu arbeiten. Remotemitarbeiter können an einem Dokument mit mehreren Personen gleichzeitig zusammenarbeiten, Änderungen in Echtzeit anzeigen und mit anderen Personen auf jedem Laptop, PC oder mobilen Gerät zusammenarbeiten.
 
-In [diesem Artikel](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps) finden Sie Informationen zum Planen, Bereitstellen und Verwalten von Microsoft 365-Apps in ihrer Unternehmensumgebung.
+Weitere Informationen finden Sie im [Bereitstellungshandbuch für Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps).
 
 ## <a name="admin-technical-resources-for-productivity-apps-and-services"></a>Technische Ressourcen für Produktivitäts-Apps und -Dienste verwalten
 
 - [Unterstützung von Remotemitarbeitern in Microsoft Teams](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams)
-- [Teil 1: Video zu Teams für Remotemitarbeiter](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity)
+- [Ermöglichen der hybriden Arbeit mit Microsoft Teams-Webcasts](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/)
 - [Teams Customer Success Kit – herunterladen](https://www.microsoft.com/download/details.aspx?id=54244)
 - [Tools für die Einführung von Teams](https://docs.microsoft.com/microsoftteams/adopt-tools-and-downloads) 
 - [Erstellen einer Change Management-Strategie für Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy)

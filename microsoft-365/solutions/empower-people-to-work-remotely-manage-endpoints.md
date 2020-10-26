@@ -17,20 +17,20 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Verwenden Sie Microsoft Endpoint Manager zur Verwaltung Ihrer Geräte, PCs und anderen Endgeräte.
-ms.openlocfilehash: b50279166b313742dbfbe8e75dd9788aac6b1daa
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 72aa26c50f5d3c20409382f19d8beabb5d290023
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445961"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681480"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Schritt 4. Bereitstellen der Endpunktverwaltung für Ihre Geräte, PCs und andere Endpunkte
 
 Bei Remotemitarbeitern müssen Sie eine wachsende Anzahl von persönlichen Geräten unterstützen. Die Endpunktverwaltung ist ein richtlinienbasierter Sicherheitsansatz, bei dem Geräte bestimmte Kriterien erfüllen müssen, bevor sie Zugriff auf Ressourcen erhalten. Microsoft Endpoint Manager bietet moderne Verwaltungsfunktionen, um Ihre Daten in der Cloud und vor Ort sicher zu halten. 
 
-Endpoint Manager bietet Dienste und Tools für die Verwaltung von mobilen Geräten, Desktop-Computern, virtuellen Maschinen, eingebetteten Geräten und Servern durch die Kombination der folgenden Dienste, die Sie möglicherweise bereits kennen und nutzen.
+[Microsoft Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview) bietet Dienste und Tools für die Verwaltung von mobilen Geräten, Desktop-Computern, virtuellen Maschinen, eingebetteten Geräten und Servern durch die Kombination der folgenden Dienste, die Sie möglicherweise bereits kennen und nutzen.
 
-![Die Komponenten für die Endpunktverwaltung](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
+![Die Komponenten der Endpunktverwaltung für Microsoft 365](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
@@ -58,7 +58,7 @@ Weitere Informationen finden Sie in dieser [Übersicht über Co-Management](http
 
 ## <a name="desktop-analytics"></a>Desktop Analytics
 
-Desktop Analytics ist ein Cloud-basierter Dienst, der in Configuration Manager integriert ist und Ihnen Einblicke und Informationen liefert, damit Sie fundierte Entscheidungen über Ihre Windows-Clients treffen können. Es kombiniert Daten aus Ihrem Unternehmen mit Daten, die aus Millionen von Geräten aggregiert wurden, die mit Microsoft Cloud Services verbunden sind. 
+Desktop Analytics ist ein Cloud-basierter Dienst, der in Configuration Manager integriert ist und Ihnen Einblicke und Informationen liefert, damit Sie fundierte Entscheidungen über Ihre Windows-Clients treffen können. Es kombiniert Daten aus Ihrem Unternehmen mit Daten, die aus Millionen von anderen Geräten aggregiert wurden, die mit Microsoft Cloud Services verbunden sind. 
 
 Mithilfe von Desktop Analytics können Sie:
 
@@ -72,7 +72,7 @@ Weitere Informationen finden Sie in dieser [Übersicht über Desktop Analytics](
 
 ## <a name="windows-autopilot"></a>Windows Autopilot
 
-Windows Autopilot ist eine Self-Service-Plattform für die Bereitstellung von Windows ohne manuelles Eingreifen. Es ist eine Sammlung von Technologien, mit denen neue Geräte eingerichtet und vorkonfiguriert werden, damit sie für die Nutzung in der Produktion bereit stehen. Sie können Windows Autopilot auch zum Zurücksetzen, Ändern des Zwecks und Wiederherstellen von Geräten verwenden. 
+Windows Autopilot ist eine Self-Service-Plattform für die Bereitstellung von Windows ohne manuelles Eingreifen. Es ist eine Sammlung von Technologien, mit denen Sie neue Geräte eingerichtet und vorkonfiguriert können, damit sie für die Nutzung in der Produktion bereit stehen. Sie können Windows Autopilot auch zum Zurücksetzen, Ändern des Zwecks und Wiederherstellen von Geräten verwenden. 
 
 Windows Autopilot versetzt eine IT-Abteilung in die Lage, Geräte mithilfe einer geringen bis gar keiner zu verwaltenden Infrastruktur vorzukonfigurieren, und das über einen einfachen und schnellen Vorgang. 
 
@@ -83,9 +83,7 @@ Weitere Informationen finden Sie in dieser [Übersicht über Windows Autopilot](
 
 ## <a name="admin-technical-resources-for-endpoint-management"></a>Verwaltung technischer Ressourcen für die Endpunktverwaltung
 
-- [Teil 3: Video über die Verwaltung von Windows 10-Geräten für Remotemitarbeiter](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security)
-- [Teil 5: Video über die Verwaltung von Benutzerdesktops und Browsern für Remotemitarbeiter](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security)
-- [Bereitstellen einer Mobilitätsinfrastruktur für Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure)
+- [Roadmap für die Verwaltung mobiler Geräte für Microsoft 365](../enterprise/device-management-roadmap-microsoft-365.md)
 - [Registrieren verschiedener Gerätetypen für die mobile Geräteverwaltung](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
 - [Informieren Ihrer Endbenutzer über Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/end-user-educate)
  

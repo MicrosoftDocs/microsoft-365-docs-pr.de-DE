@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Verwenden Sie die Sicherheits- und Compliance-Dienste von Microsoft 365 zum Schutz Ihrer Apps, Daten und Geräte für Remotemitarbeiter.
-ms.openlocfilehash: 36abe8b8dbd84a883d829308fc970258e7551f2e
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 7607f3945d2e3c4e057162296df94dce4c611dbe
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445881"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681468"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>Schritt 3: Bereitstellen von Sicherheit und Compliance für Remotemitarbeiter
 
@@ -39,6 +39,8 @@ Remotearbeit benötigt diese Elemente der Sicherheit und Compliance:
 - Prävention von Datenverlust
 - Einhaltung regionaler Datenschutzbestimmungen
 
+Hier sind die Funktionen von Microsoft 365, die Sicherheits- und Compliance-Dienste für Remotemitarbeiter bereitstellen.
+
 ![Verwenden Sie diese Microsoft 365-Dienste, um sicher und konform zu bleiben.](../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png)
 
 ## <a name="security"></a>Sicherheit
@@ -54,7 +56,7 @@ Schützen Sie Ihre Apps und Daten mit diesen Sicherheitsfunktionen von Microsoft
 | Azure AD Identity Protection  | Automatisieren Sie die Erkennung und Behebung von identitätsbasierten Risiken. <br><br>Erstellen Sie risikobasierte bedingte Zugriffsrichtlinien, um die mehrstufige Authentifizierung (MFA) für riskante Anmeldungen zu erzwingen. | Microsoft 365 E5 oder E3 mit Azure AD Premium P2-Lizenzen |
 ||||
 
-Weitere Informationen finden Sie unter [Schnelle Aufgaben für die ersten Schritte mit Microsoft 365 Compliance](../compliance/compliance-quick-tasks.md).
+Weitere Informationen finden Sie unter [Die wichtigsten 12 Aufgaben für Sicherheitsteams zur Unterstützung der Arbeit von zu Hause aus](../security/top-security-tasks-for-remote-work.md).
 
 ## <a name="compliance"></a>Compliance
 
@@ -73,16 +75,16 @@ Einhaltung interner Richtlinien oder behördlicher Vorschriften mit diesen Compl
 | Insider-Risikomanagement |  Erkennen und untersuchen Sie bösartige und unbeabsichtigte Risiken in Ihrer Organisation, und reagieren Sie darauf. Microsoft 365 kann diese Arten von Risiken sogar dann erkennen, wenn ein Mitarbeiter ein nicht verwaltetes Gerät verwendet. | Microsoft 365 E5 oder Microsoft 365 E3 mit den Compliance- oder Insider-Risikomanagement-Add-Ons |
 ||||
 
-Weitere Informationen finden Sie unter [Die wichtigsten 12 Aufgaben für Sicherheitsteams zur Unterstützung der Arbeit von zu Hause aus](../security/top-security-tasks-for-remote-work.md).
+Weitere Informationen finden Sie unter [Schnelle Aufgaben für die ersten Schritte mit Microsoft 365 Compliance](../compliance/compliance-quick-tasks.md).
 
 ## <a name="results-of-step-3"></a>Ergebnisse von Schritt 3
 
 Für Ihre Remotemitarbeiter haben Sie Folgendes implementiert:
 
-- Sicherheit:
+- Sicherheit
   - Kontrollierter Zugriff auf Apps und Daten, die Remotemitarbeiter für Kommunikation und Zusammenarbeit verwenden
   - Schutz vor Schadsoftware für Cloud-Dienst Daten, E-Mail und Windows 10-Geräte 
-- Compliance:
+- Compliance
   - Einheitliche Bezeichnung für Vertraulichkeitslevel und Schutz
   - Richtlinien zur Prävention von Datenverlust
   - Einhaltung regionaler Datenschutzbestimmungen

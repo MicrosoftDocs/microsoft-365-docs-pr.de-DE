@@ -5,7 +5,6 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -18,20 +17,20 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Schulung Ihrer Benutzer und Gewährleistung einer schnellen Bearbeitung von Problemen.
-ms.openlocfilehash: b1dd55febcd23f6bb8413b0aa5c625f4b785babb
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: a987a08b2ebd27f7a9cc299e5c8fbae0376437a3
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377069"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681384"
 ---
 # <a name="step-6-train-remote-workers-and-address-usage-feedback"></a>Schritt 6: Schulung von Remotemitarbeitern und Ansprechen von Nutzungsrückmeldungen
 
 Schulen Sie Ihre Remotemitarbeiter in folgenden Bereichen:
 
 - Ordnungsgemäße Anmeldeverfahren durch MFA, einschließlich der Anmeldung einer zusätzlichen Überprüfungsmethode.
-- Verwendung von Geräten und Anwenden von Endpunktverwaltungsrichtlinien, um den Zugriff für nicht konforme Geräte zu blockieren.
-- Verwendung von zulässigen Apps und Anwenden von Endpunktverwaltungs-App-Richtlinien, um Apps zu blockieren.
+- Verwendung von Geräten und Anwenden von Endpunktverwaltungsrichtlinien, um den Zugriff für nicht konforme oder nicht verwaltete Geräte zu blockieren.
+- Verwendung von zulässigen Apps und Anwenden von Endpunktverwaltungs-App-Richtlinien, um einige Apps zu blockieren.
 - Sicherheitsfeatures von Windows 10 Enterprise.
 - Verwenden von [Teams](https://docs.microsoft.com/microsoftteams/training-microsoft-teams-landing-page) für Chats, videobasierte Konferenzen, Dokumentfreigabe und Thread-Unterhaltungen.
 - Verwenden von [Outlook](https://support.office.com/article/outlook-training-8a5b816d-9052-4190-a5eb-494512343cca) für E-Mails und Terminplanung.
@@ -39,14 +38,16 @@ Schulen Sie Ihre Remotemitarbeiter in folgenden Bereichen:
 
 Diese Schulung sollte praktische Übungen umfassen, damit die Mitarbeiter diese Funktionen und deren Ergebnisse ausprobieren können.
 
+Erstellen Sie ein Forum für Ihre Remotemitarbeiter, wo sie Fragen stellen oder Probleme lösen können, z. B. eine Teams oder eine Yammer-Gruppe.
+
 In den Wochen nach der Schulung:
 
-- Reagieren Sie umgehend auf Feedback von Remotemitarbeitern, und optimieren Sie die Richtlinien und Konfigurationen.
-- Analysieren Sie die Verwendung für Teams, E-Mail, SharePoint-Websites und OneDrive-Ordner, und vergleichen Sie diese mit den Nutzungserwartungen.
+- Reagieren Sie in Ihrem Forum schnell auf das Feedback von Remotemitarbeitern und passen Sie Ihre Richtlinien und Konfigurationen für Remotemitarbeiter nach Bedarf an.
+- Analysieren Sie die Verwendung für Teams, E-Mail, SharePoint-Websites und OneDrive-Ordner, und vergleichen Sie diese mit Ihren Erwartungen an die Benutzerakzeptanz.
 
 Dann schulen Sie Ihre Benutzer bei Bedarf erneut.
 
 ## <a name="results-of-step-6"></a>Ergebnisse von Schritt 6
 
-Ihre Remotemitarbeiter werden geschult, und es gibt ein reaktionsschnelles und offenes Forum für sie, in dem sie Feedback geben und Probleme mit Anwendungen und Diensten für Remotezugriff und Produktivität posten können.
+Ihre Remotemitarbeiter werden geschult, und es gibt ein reaktionsschnelles und offenes Forum für sie, in dem sie Feedback geben und Probleme mit Anwendungen für Remotezugriff und Produktivität posten können.
 

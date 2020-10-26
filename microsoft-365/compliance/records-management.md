@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Mit der Datensatzverwaltung in Microsoft 365 können Sie Ihre Aufbewahrungszeitpläne auf einen Dateiplan anwenden, der die Aufbewahrung, die Datensatzdeklaration und die Löschung verwaltet.
-ms.openlocfilehash: 497e8b9fce06ae64d9f4396f2db05e65274f61dd
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: e6e72a14d0d3e22823c8341145f64721831586f9
+ms.sourcegitcommit: 095b1f52f2e73e8d44195916984efeb0908c2ad8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399002"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48755564"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Weitere Informationen zur Datensatzverwaltung in Microsoft 365
 
@@ -106,7 +106,6 @@ Nachricht, die ein Benutzer sieht, wenn er versucht, ein beschriftetes Dokument 
 > Darüber hinaus gelten für Aufbewahrungsbezeichnungen, die für regulatorische Datensätze konfiguriert sind, die folgenden administrativen Einschränkungen:
 > - Die Aufbewahrungsfrist kann nach dem Speichern der Bezeichnung nicht verkürzt, sondern nur verlängert werden.
 > - Diese Bezeichnungen werden nicht durch Autobezeichnungsrichtlinien unterstützt und müssen mit Hilfe von [Richtlinien für Aufbewahrungsbezeichnungen](create-apply-retention-labels.md) angewendet werden. 
-> - Nachdem Sie diese Bezeichnungen zu einer Richtlinie für Aufbewahrungsbezeichnungen hinzugefügt und gespeichert haben, können Sie sie nicht von Speicherorten entfernen, sondern nur Speicherorte hinzufügen.
 > 
 > Vergewissern Sie sich aufgrund dieser irreversiblen Aktionen, dass Sie wirklich regulatorische Datensätze verwenden müssen, bevor Sie diese Option für Ihre Aufbewahrungsbezeichnungen wählen. Um eine versehentliche Konfiguration zu verhindern, ist diese Option nicht standardmäßig verfügbar, sondern muss zunächst mithilfe von PowerShell aktiviert werden. Anweisungen sind in [Deklarieren von Datensätzen unter Verwendung von Aufbewahrungsbezeichnungen](declare-records.md) enthalten.
 
