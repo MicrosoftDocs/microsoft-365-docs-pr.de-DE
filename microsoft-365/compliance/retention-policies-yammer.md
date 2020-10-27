@@ -17,18 +17,30 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie Näheres über Aufbewahrungsrichtlinien, die für Yammer gelten.
-ms.openlocfilehash: 2918efe63947ee17cd7f55f19876ae4b98de7a8a
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 84db671b475a9dade039136380cef0bc5bde7282
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204323"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754703"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Informationen zur Aufbewahrung für Yammer
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
 
 Die Informationen in diesem Artikel ergänzen den Beitrag [Informationen zu Aufbewahrungsrichtlinien](retention.md), da er spezifische Angaben für Yammer beinhaltet.
+
+Informationen zu anderen Arbeitsbereichen finden Sie unter:
+
+- [Informationen zur Aufbewahrung für SharePoint und OneDrive](retention-policies-sharepoint.md)
+- [Informationen zur Aufbewahrung für Microsoft Teams](retention-policies-teams.md)
+- [Informationen zur Aufbewahrung für Exchange](retention-policies-exchange.md)
+
+## <a name="whats-included-for-retention-and-deletion"></a>Lieferumfang für Aufbewahrung und Löschung
+
+Die folgenden Yammer-Elemente können mithilfe von Aufbewahrungsrichtlinien für Yammer beibehalten oder gelöscht werden: Community-Nachrichten und private Nachrichten.
+
+Reaktionen von anderen Personen in der Form von Emoticons sind in diesen Nachrichten nicht enthalten.
 
 ## <a name="how-retention-works-with-yammer"></a>Funktionsweise einer Aufbewahrungsrichtlinie mit Yammer
 
@@ -49,7 +61,7 @@ Wenn die Aufbewahrungsrichtlinie dem Aufbewahren und dann Löschen dient:
 
 Zu den zwei Pfaden im Diagramm:
 
-1. **Wenn eine Yammer-Nachricht während des Aufbewahrungszeitraums vom Benutzer bearbeitet oder gelöscht wird**, wird die Originalnachricht sofort in den Ordner "SubstrateHolds" kopiert (falls bearbeitet) oder verschoben (falls gelöscht). Die Nachricht wird dort bis zum Ablauf des Aufbewahrungszeitraums gespeichert und dann sofort endgültig gelöscht.
+1. **Wenn eine Yammer-Nachricht während des Aufbewahrungszeitraums vom Benutzer bearbeitet oder gelöscht wird** , wird die Originalnachricht sofort in den Ordner "SubstrateHolds" kopiert (falls bearbeitet) oder verschoben (falls gelöscht). Die Nachricht wird dort bis zum Ablauf des Aufbewahrungszeitraums gespeichert und dann sofort endgültig gelöscht.
 
 2. **Wenn eine Yammer-Nachricht nicht gelöscht wird** und für aktuelle Nachrichten nach der Bearbeitung: Die Nachrichten werden nach Ablauf des Aufbewahrungszeitraums in den Ordner "SubstrateHolds" verschoben. Dieser Vorgang dauert bis zu sieben Tage ab dem Ablaufdatum. Wenn sich die Nachricht im Ordner "SubstrateHolds" befindet, wird sie sofort endgültig gelöscht. 
 
@@ -60,15 +72,15 @@ Wenn die Aufbewahrungsrichtlinie dem reinen Aufbewahren oder dem reinen Löschen
 
 ### <a name="content-paths-for-retain-only-retention-policy"></a>Inhaltspfade für rein aufbewahrende Aufbewahrungsrichtlinien
 
-1. **Wenn Yammer-Nachricht bearbeitet oder gelöscht wird**: Eine Kopie der Originalnachricht wird sofort im Ordner "SubstrateHolds" erstellt und dort bis zum Ablauf des Aufbewahrungszeitraums aufbewahrt. Anschließend wird die Nachricht sofort dauerhaft aus dem Ordner "SubstrateHolds" gelöscht.
+1. **Wenn Yammer-Nachricht bearbeitet oder gelöscht wird** : Eine Kopie der Originalnachricht wird sofort im Ordner "SubstrateHolds" erstellt und dort bis zum Ablauf des Aufbewahrungszeitraums aufbewahrt. Anschließend wird die Nachricht sofort dauerhaft aus dem Ordner "SubstrateHolds" gelöscht.
 
 2. **Wenn die Yammer-Nachricht nicht geändert oder gelöscht wird** und für aktuelle Nachrichten nach der Bearbeitung während des Aufbewahrungszeitraums: Vor und nach dem Aufbewahrungszeitraum geschieht nichts; die Nachricht wird an ihrem ursprünglichen Ort belassen.
 
 ### <a name="content-paths-for-delete-only-retention-policy"></a>Inhaltspfade für Aufbewahrungsrichtlinien für reines Löschen
 
-1. **Wenn die Yammer-Nachricht während des Aufbewahrungszeitraums nicht gelöscht wird**: Die Nachricht wird am Ende des Aufbewahrungszeitraums in den Ordner "SubstrateHolds" verschoben. Dieser Vorgang dauert bis zu sieben Tage ab dem Ablaufdatum. Anschließend wird die Nachricht sofort dauerhaft aus dem Ordner "SubstrateHolds" gelöscht.
+1. **Wenn die Yammer-Nachricht während des Aufbewahrungszeitraums nicht gelöscht wird** : Die Nachricht wird am Ende des Aufbewahrungszeitraums in den Ordner "SubstrateHolds" verschoben. Dieser Vorgang dauert bis zu sieben Tage ab dem Ablaufdatum. Anschließend wird die Nachricht sofort dauerhaft aus dem Ordner "SubstrateHolds" gelöscht.
 
-2. **Wenn die Yammer-Nachricht während des Zeitraums vom Benutzer gelöscht wird**, wird das Element sofort in den Ordner "SubstrateHolds" verschoben, wo es sofort endgültig gelöscht wird.
+2. **Wenn die Yammer-Nachricht während des Zeitraums vom Benutzer gelöscht wird** , wird das Element sofort in den Ordner "SubstrateHolds" verschoben, wo es sofort endgültig gelöscht wird.
 
 
 ## <a name="messages-and-external-users"></a>Nachrichten und externe Benutzer
@@ -85,9 +97,7 @@ Wenn der Benutzer Dateien in Yammer gespeichert hat, lesen Sie den [entsprechend
 
 ## <a name="limitations"></a>Einschränkungen
 
-Yammer-Aufbewahrungsrichtlinien befinden sich derzeit in der Vorschau, und wir arbeiten kontinuierlich an der Optimierung der Aufbewahrungsfunktionen. Es gibt einige Einschränkungen, die Sie bei der Aufbewahrung von Yammer-Communitynachrichten und private Yammer-Nachrichten beachten sollten:
-
-- **"Gefällt mir" und andere Reaktionen auf Yammer-Nachrichten werden nicht beibehalten**. Reaktionen von anderen in Form von Emoticons werden durch Aufbewahrungsrichtlinien nicht unterstützt.
+Yammer-Aufbewahrungsrichtlinien befinden sich derzeit in der Vorschau, und wir arbeiten kontinuierlich an der Optimierung der Aufbewahrungsfunktionen. Es gibt folgende Einschränkungen, die Sie bei der Aufbewahrung von Yammer-Community-Nachrichten und privaten Nachrichten beachten sollten:
 
 - Wenn Sie **Benutzer auswählen** für den Speicherort **Private Yammer-Nachrichten** auswählen, werden möglicherweise Gäste und Nicht-Postfachbenutzer angezeigt. Aufbewahrungsrichtlinien sind nicht auf diese Benutzer ausgerichtet, deshalb sollten Sie sie nicht auswählen.
 

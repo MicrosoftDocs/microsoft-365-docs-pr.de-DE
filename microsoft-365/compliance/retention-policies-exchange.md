@@ -17,16 +17,30 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zur Funktionsweise einer Aufbewahrungsrichtlinien für Exchange.
-ms.openlocfilehash: e12f46b68feb4b64ade14cfb046061d89e1a607c
-ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
+ms.openlocfilehash: 4e8a536aaa81b0117f40b0ce330491fa8430f97c
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47394712"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754435"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Informationen zu Aufbewahrungsrichtlinien für Exchange
 
-Die Informationen in diesem Artikel ergänzen den Beitrag [Informationen zu Aufbewahrungsrichtlinien](retention.md), da er spezifische Angaben für Exchange beinhaltet.
+Die Informationen in diesem Artikel ergänzen den Beitrag [Informationen zu Aufbewahrungsrichtlinien](retention.md), da er spezifische Angaben für Exchange beinhaltet.  Informationen zu anderen Arbeitsbereichen finden Sie unter:
+
+- [Informationen zur Aufbewahrung für SharePoint und OneDrive](retention-policies-sharepoint.md)
+- [Informationen zur Aufbewahrung für Microsoft Teams](retention-policies-teams.md)
+- [Informationen zur Aufbewahrung für Yammer](retention-policies-yammer.md)
+
+## <a name="whats-included-for-retention-and-deletion"></a>Lieferumfang für Aufbewahrung und Löschung
+
+Die folgenden Exchange-Elemente können mithilfe von Aufbewahrungsrichtlinien und Aufbewahrungskennzeichnungen beibehalten oder gelöscht werden: E-Mail-Nachrichten (einschließlich Entwürfe) mit sämtlichen Anlagen, Aufgaben mit einem Enddatum, sowie Notizen. 
+
+Kalenderelemente mit einem Enddatum werden in Aufbewahrungsrichtlinien unterstützt, aber nicht in Aufbewahrungskennzeichnungen.
+
+Kontakte und alle Aufgaben und Kalenderelemente, die kein Enddatum aufweisen, werden nicht unterstützt.
+
+Andere in einem Postfach gespeicherte Elemente, z. B. gespeicherte Skype- und Teams-Nachrichten, werden in Aufbewahrungsrichtlinien und Aufbewahrungskennzeichnungen für Exchange nicht einbezogen. Diese Elemente haben ihre eigenen Aufbewahrungsrichtlinien.
 
 ## <a name="how-retention-works-for-exchange"></a>Funktionsweise einer Aufbewahrungsrichtlinie mit Exchange
 
@@ -48,21 +62,21 @@ Wenn die Aufbewahrungseinstellungen das Aufbewahren und Löschen vorgeben:
 
 1. **Wenn das Element während des Aufbewahrungszeitraums vom Benutzer geändert oder dauerhaft gelöscht wird** (entweder UMSCHALT+ENTF oder aus "Gelöschte Elemente" gelöscht), wird es in den Ordner "Wiederherstellbare Elemente" verschoben (oder im Fall der Bearbeitung kopiert). Dort wird in regelmäßigen Abständen ein Zeitgeberauftrag ausgeführt, der Elemente identifiziert, deren Aufbewahrungszeitraum abgelaufen ist. Diese Elemente werden innerhalb von vierzehn Tagen nach Ende des Aufbewahrungszeitraums dauerhaft gelöscht. Beachten Sie, dass 14 Tage die Standardeinstellung ist, die aber auf bis zu 30 Tage festgelegt werden kann.
 
-2. **Wenn das Element während des Aufbewahrungszeitraums nicht geändert oder gelöscht wird**, wird derselbe Prozess in regelmäßigen Abständen für alle Ordner im Postfach ausgeführt, und es werden Elemente identifiziert, deren Aufbewahrungszeitraum abgelaufen ist. Diese Elemente werden innerhalb von 14 Tagen nach Ende des Aufbewahrungszeitraums dauerhaft gelöscht. Beachten Sie, dass 14 Tage die Standardeinstellung ist, die aber auf bis zu 30 Tage festgelegt werden kann. 
+2. **Wenn das Element während des Aufbewahrungszeitraums nicht geändert oder gelöscht wird** , wird derselbe Prozess in regelmäßigen Abständen für alle Ordner im Postfach ausgeführt, und es werden Elemente identifiziert, deren Aufbewahrungszeitraum abgelaufen ist. Diese Elemente werden innerhalb von 14 Tagen nach Ende des Aufbewahrungszeitraums dauerhaft gelöscht. Beachten Sie, dass 14 Tage die Standardeinstellung ist, die aber auf bis zu 30 Tage festgelegt werden kann. 
 
 Wenn die Aufbewahrungseinstellungen das reine Aufbewahren oder das reine Löschen vorgeben, stellen die Inhaltspfade Varianten von "Aufbewahren und Löschen" dar:
 
 ### <a name="content-paths-for-retain-only-retention-settings"></a>Inhaltspfade für Aufbewahrungseinstellungen für reine Aufbewahrung
 
-1. **Wenn das Element während des Aufbewahrungszeitraums geändert oder gelöscht wird**: Eine Kopie des ursprünglichen Elements wird im Ordner „Wiederherstellbare Elemente“ erstellt und bis zum Ende des Aufbewahrungszeitraums aufbewahrt, wo dann die Kopie im Ordner „Wiederherstellbare Elemente“ innerhalb von 14 Tagen nach Ablauf des Elements endgültig gelöscht wird. 
+1. **Wenn das Element während des Aufbewahrungszeitraums geändert oder gelöscht wird** : Eine Kopie des ursprünglichen Elements wird im Ordner „Wiederherstellbare Elemente“ erstellt und bis zum Ende des Aufbewahrungszeitraums aufbewahrt, wo dann die Kopie im Ordner „Wiederherstellbare Elemente“ innerhalb von 14 Tagen nach Ablauf des Elements endgültig gelöscht wird. 
 
-2. **Wenn das Element während des Aufbewahrungszeitraums nicht geändert oder gelöscht wird**: Weder vor noch nach dem Aufbewahrungszeitraum passiert etwas. Das Element verbleibt an seinem Ursprungsort.
+2. **Wenn das Element während des Aufbewahrungszeitraums nicht geändert oder gelöscht wird** : Weder vor noch nach dem Aufbewahrungszeitraum passiert etwas. Das Element verbleibt an seinem Ursprungsort.
 
 ### <a name="content-paths-for-delete-only-retention-settings"></a>Inhaltspfade für Aufbewahrungseinstellungen für reines Löschen
 
-1. **Wenn das Element während des festgelegte Zeitraums nicht gelöscht wird**, wird es am Ende des in der Aufbewahrungsrichtlinie festgelegten Zeitraums in den Ordner "Wiederherstellbare Elemente" verschoben. 
+1. **Wenn das Element während des festgelegte Zeitraums nicht gelöscht wird** , wird es am Ende des in der Aufbewahrungsrichtlinie festgelegten Zeitraums in den Ordner "Wiederherstellbare Elemente" verschoben. 
 
-2. **Wenn das Element während des festgelegten Zeitraums gelöscht wird**, wird es sofort in den Ordner "Wiederherstellbare Elemente" verschoben. Wenn ein Benutzer das Element dort löscht oder den Ordner „Wiederherstellbare Elemente“ leert, wird das Element endgültig gelöscht. Andernfalls wird das Element endgültig gelöscht, nachdem es 14 Tage im Ordner „Wiederherstellbare Elemente“ aufbewahrt wurde. 
+2. **Wenn das Element während des festgelegten Zeitraums gelöscht wird** , wird es sofort in den Ordner "Wiederherstellbare Elemente" verschoben. Wenn ein Benutzer das Element dort löscht oder den Ordner „Wiederherstellbare Elemente“ leert, wird das Element endgültig gelöscht. Andernfalls wird das Element endgültig gelöscht, nachdem es 14 Tage im Ordner „Wiederherstellbare Elemente“ aufbewahrt wurde. 
 
 ## <a name="when-a-user-leaves-the-organization"></a>Wenn ein Benutzer die Organisation verlässt 
 
