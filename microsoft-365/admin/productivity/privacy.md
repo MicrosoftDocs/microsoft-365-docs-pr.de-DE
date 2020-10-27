@@ -20,28 +20,30 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Wie Datenschutz mit dem Produktivitäts Ergebnis geschützt wird.
-ms.openlocfilehash: 799d532ca1f0abd5fa6234052d4875a79d629601
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: 1af2553e67b4f14e9783c23d679a7ac96443512a
+ms.sourcegitcommit: e8b3855302fc34d09b6df6c737033a2f326d6eee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48287301"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48770035"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>Datenschutz-Steuerelemente für Produktivitäts Bewertung
 
-Die Produktivitäts Bewertung unterstützt Organisationen beim Transformieren der Arbeit mit Einblicken in die Verwendung von Microsoft 365 und den Technologie Erfahrungen, die diese Benutzer unterstützen. Die Bewertung spiegelt Ihre Organisation&#39;Leistung gegen Mitarbeiter-und Technologie Erfahrungs Maßnahmen wider und vergleicht Ihre Bewertung mit Organisationen wie Ihrem. Weitere Informationen finden Sie im Thema [Productivity Score Overview](productivity-score.md) .
+Die Produktivitäts Bewertung unterstützt Organisationen beim Transformieren der Arbeit mit Metriken, mit denen Sie Personen und Technologie Erfahrungen Messen und verbessern können. Es hilft Ihnen, Einblick in die Funktionsweise Ihrer Organisation zu erhalten, und stellt Metriken bereit, mit denen Sie sich auf verbesserte Erfahrungen konzentrieren können.  Sie können die Metriken auch mit Aktionen verbinden, die Sie beim Aktualisieren von Qualifikationen und Systemen unterstützen, damit jeder seine besten Aufgaben ausführen kann. Die Bewertung spiegelt die Leistung Ihrer Organisation wider und ermöglicht Ihnen auch, Ihre Punktzahl mit anderen Organisationen wie Ihrem sicher zu vergleichen.  Weitere Informationen finden Sie unter Übersicht über die [Produktivitäts Bewertung](productivity-score.md).
 
-Ihr Datenschutz ist uns wichtig, und Sie können die Datenschutzerklärung von Microsoft [hier](https://privacy.microsoft.com/privacystatement)anzeigen. In der Produktivitäts Bewertung gibt es wichtige Informationen, die wir zur Funktionsweise von Personen in ihren Organisationen bereitstellen. Daher zielen wir auch darauf ab, Ihnen Steuerelemente zur Verfügung zu stellen, um sicherzustellen, dass die Informationen auf sinnvolle Weise handlungsfähig sind, ohne dabei das Vertrauen zu gefährden, das Sie in uns platzieren.
+Ihre Privatsphäre ist uns wichtig. Informationen zum Schutz Ihrer Privatsphäre finden Sie in [der Datenschutzerklärung von Microsoft](https://privacy.microsoft.com/privacystatement). Das Produktivitäts Ergebnis bietet wichtige Informationen darüber, wie Personen in ihren Organisationen mit Steuerelementen zusammenarbeiten, um sicherzustellen, dass die Informationen Action fähig sind, ohne dabei die von Ihnen in Microsoft gegebene Vertrauensstellung zu gefährden.
 
-Wir stellen die folgenden Steuerelemente bereit, um eine sicherere Verarbeitung von Daten zu ermöglichen:
+Im Bereich "People Experiences" stehen Metriken auf Organisationsebene zur Verfügung und enthalten alle Benutzer in Ihrem Microsoft 365-Mandanten. In diesem Bereich wird die Verwendung von Microsoft 365 untersucht, indem die Kategorien der Inhalts Zusammenarbeit, Mobilität, Besprechungen, Teamarbeit und Kommunikation betrachtet werden. Um Ihnen die Schulung und Sensibilisierung für die richtigen Personen zu erleichtern, die möglicherweise Unterstützung für unsere Produkte benötigen, haben wir Ihnen auch Informationen auf der individuellen Ebene bereitgestellt. Während wir diesen Grad an Transparenz bieten, ermöglichen wir Ihnen auch verschiedene Ebenen von Steuerelementen, die Sie bei der Erfüllung ihrer internen Anforderungen an die Datenschutzrichtlinie unterstützen.
+Die folgenden Steuerelemente bieten Ihnen Folgendes:
 
 - Flexible Administratorrollen, um zu steuern, wer die Informationen in der Produktivitäts Bewertung sehen kann.
-- Anonymisierung von Metriken auf Benutzerebene.
-- Möglichkeit, die Mitarbeiter Erfahrung abzulehnen.
+- Die Möglichkeit, Metriken auf Benutzerebene zu deidentifizieren.
+- Möglichkeit zum Deaktivieren von Personen Erfahrungen.
+- Möglichkeit zum Deaktivieren des Bereichs "People Experiences"
 
 ## <a name="flexible-admin-roles-to-control-who-can-see-the-information-in-productivity-score"></a>Flexible Administratorrollen, um zu steuern, wer die Informationen im Produktivitäts Ergebnis sehen kann
 
-Um die gesamte Produktivitäts BEWERTUNGSUMGEBUNG mit einer Administratorrolle anzuzeigen, einschließlich Einblicke in Mandantenebene und Details auf Benutzerebene, sollte ihre Rolle einer der folgenden sein:
+Um das gesamte Produktivitäts Ergebnis anzuzeigen, einschließlich Metriken auf Mandantenebene und benutzerspezifische Details, sollte ihre Rolle eine der folgenden Administratorrollen sein:
 
 - Globaler Administrator
 - Exchange-Administratoren
@@ -51,28 +53,28 @@ Um die gesamte Produktivitäts BEWERTUNGSUMGEBUNG mit einer Administratorrolle a
 - Globaler Leser
 - Berichtleseberechtigter
 
-Um Personen einzuladen, die für die Änderungsverwaltung und-Einführung zuständig sind, aber keine IT-Administratoren sind, können Sie den Benutzern den Zugriff auf die vollständige Erfahrung einschließlich Einblicke in Mandantenebene und Details auf Benutzerebene ermöglichen, indem Sie Ihnen die Rolle "berichtsleser" zuweisen.
+Weisen Sie jeder Person, die für die Änderungsverwaltung und-Einführung zuständig ist, die Rolle "berichtsleser" zu. Diese Rolle ermöglicht Ihnen den Zugriff auf die vollständige Benutzeroberfläche, einschließlich Metriken auf Mandantenebene und Details auf einzelnen Ebenen.
 
-Im Rahmen der Mitarbeiter Erfahrung stellen wir Aktivitätsdetails auf Benutzerebene im Rasterformat für jede Kategorie-Detailseite bereit. Da diese Detailebene nicht für alle potenziellen Besucher von Produktivitätseinbußen geeignet ist, haben wir eine benutzerdefinierte Rolle in Azure AD – Verwendungs Zusammenfassungsberichte-Leserrolle – erstellt, um den Zugriff auf eine breitere Gruppe von Besuchern in Ihrer Organisation nur auf die aggregierten Metriken und keine Details auf Einzelebene innerhalb der Erfahrung zu ermöglichen.
+Personen Erfahrungsbericht enthält benutzerspezifische Aktivitätsdetails für jede Kategorie-Detailseite. Weisen Sie eine benutzerdefinierte Rolle mit dem Namen Verwendungs Zusammenfassungsberichte Leser zu (verfügbar ab 29. Oktober 2020), um den Zugriff auf die aggregierten Metriken der Personen Erfahrungen zu ermöglichen.
 
-:::image type="content" source="../../media/communicationspage.jpg" alt-text="Seite "Kommunikation" in Produktivitäts Berichten.":::
+:::image type="content" source="../../media/communicationspage.jpg" alt-text="Seite &quot;Kommunikation&quot; in Produktivitäts Berichten.":::
 
-## <a name="anonymization-of-user-level-metrics"></a>Anonymisierung von Metriken auf Benutzerebene
+## <a name="de-identification-of-user-level-metrics"></a>Aufheben der Identifizierung von Metriken auf Benutzerebene
 
-Damit die Daten, die für alle Berichte erfasst werden, anonym sind, müssen Sie ein globaler Administrator sein. Dadurch werden identifizierbare Informationen wie Benutzer-, Gruppen-und Websitenamen in allen Berichten ausgeblendet – einschließlich Produktivitäts Bewertung und Microsoft 365-Nutzung.
+Damit die Daten, die für alle Berichte erfasst werden, anonym sind, müssen Sie ein globaler Administrator sein. Mit dieser Aktion werden identifizierbare Informationen wie Benutzer-, Gruppen-und Websitenamen in allen Berichten (einschließlich Produktivitäts Bewertung und Microsoft 365-Nutzung) ausgeblendet.
 
-1. Wechseln Sie im Admin Center zu den **Einstellungen**der   >   **org** -Einstellungen, und wählen Sie unter **Dienste** die Registerkarte **Berichte**aus.
-2. Wählen Sie  **Berichte** aus, und wählen Sie dann  **Anonyme Bezeichner für Benutzer-, Gruppen-und Websitenamen in Produktivitäts Bewertung und Verwendungsberichten anzeigen**aus. Diese Einstellung wird sowohl auf die Verwendungsberichte als auch auf die Vorlagen-App angewendet.
-3. Wählen Sie  **Save Changes**aus.
+1. Wechseln Sie im Admin Center zu den **Einstellungen** der   >   **org** -Einstellungen, und wählen Sie unter **Dienste** die Registerkarte **Berichte** aus.
+2. Wählen Sie  **Berichte** aus, und wählen Sie dann  **Anonyme Bezeichner für Benutzer-, Gruppen-und Websitenamen in Produktivitäts Bewertung und Verwendungsberichten anzeigen** aus. Diese Einstellung wird sowohl auf die Verwendungsberichte als auch auf die Vorlagen-App angewendet.
+3. Wählen Sie  **Save Changes** aus.
 
-:::image type="content" source="../../media/orgsettings_anonymous.jpg" alt-text="Benutzerinformationen anonym für Berichte erstellen.":::
+:::image type="content" source="../../media/orgsettings_anonymous.jpg" alt-text="Seite &quot;Kommunikation&quot; in Produktivitäts Berichten.":::
 
-## <a name="capability-to-opt-out-of-employee-experience"></a>Möglichkeit zum Deaktivieren der Mitarbeiter Erfahrung
+## <a name="capability-to-opt-out-of-people-experiences"></a>Möglichkeit zum Deaktivieren von Personen Erfahrungen
 
-Darüber hinaus bieten wir die Möglichkeit, den Bereich "Employee Experience" des Produktivitäts Ergebnisses bei allgemeiner Verfügbarkeit abzulehnen. Wenn Sie diese Einstellung aktivieren, wird verhindert, dass Personen in Ihrer Organisation diese Metriken anzeigen und Ihre Organisation aus Berechnungen mit Kategorien von Kommunikation, Besprechungen, Zusammenarbeit, Inhalts Zusammenarbeit und Mobilität entfernen können.
+Wenn die Produktivitäts Bewertung allgemein verfügbar ist, können Sie auch den Bereich mit den Personen Erfahrungen mit der Produktivitäts Bewertung deaktivieren. Wenn Sie sich entscheiden, kann niemand aus der Organisation diese Metriken anzeigen, und Ihre Organisation wird aus allen Berechnungen entfernt, die Kommunikation, Besprechungen, Zusammenarbeit, Inhalts Zusammenarbeit und Mobilität beinhalten.
 
-1. Wechseln Sie im Admin Center zu den **Einstellungen**der   >   **org** -Einstellungen, und wählen Sie unter **Dienste** die Registerkarte **Berichte**aus.
-2. Wählen Sie  **Berichte** aus, und aktivieren Sie dann das Kontrollkästchen  **Freigabe ihrer org&#39;s-Daten mit Produktivitäts Bewertung Einblicke in die Mitarbeiter Erfahrung**. Um zu erfahren, wie Sie die Einstellungen für die Datenfreigabe für die Endpunktanalyse im InTune-Konfigurations-Manager ändern, klicken Sie auf weitere **Informationen**.
-3. Wählen Sie  **Save Changes**aus.
+1. Wechseln Sie im Admin Center zu den **Einstellungen** der   >   **org** -Einstellungen, und wählen Sie unter **Dienste** die Registerkarte **Berichte** aus.
+2. Wählen Sie  **Berichte** aus, und aktivieren Sie dann das Kontrollkästchen  **zulassen, dass Microsoft 365-Verwendungsdaten für personenbezogene Einblicke verwendet werden.** . Um zu erfahren, wie Sie die Einstellungen für die Datenfreigabe für die Endpunktanalyse im InTune-Konfigurations-Manager ändern, klicken Sie auf weitere **Informationen** .
+3. Wählen Sie  **Save Changes** aus.
 
-:::image type="content" source="../../media/orgsettingspageoptout.jpg" alt-text="Seite "org-Einstellungen", auf der Sie die Mitarbeiter Erfahrung deaktivieren können.":::
+:::image type="content" source="../../media/orgsettingspageoptout.jpg" alt-text="Seite &quot;Kommunikation&quot; in Produktivitäts Berichten.":::
