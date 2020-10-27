@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: ae4a8b51111c53c2245005a5d863354737335ae2
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 01ee05c69a9b649ce3f0c3b93cbdb68bb7a87c69
+ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546185"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48774123"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Darstellungen zu Microsoft 365-Produktivitätslösungen
 
@@ -64,7 +64,16 @@ Empfohlene Funktionen zum Schutz von Identitäten und Geräten, die auf Microsof
 |**Item**|**Beschreibung**|
 |:-----|:-----|
 |[![Modell Poster: Identitäts-und Geräteschutz für Microsoft 365](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [Als PDF anzeigen](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Als PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| herunterladen [Als Visio herunterladen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)   <br/> Aktualisiert am 2020|Es ist wichtig, konsistente Schutzebenen für Daten, Identitäten und Geräte zu verwenden. Dieses Modell zeigt Ihnen, welche Funktionen mit weiteren Informationen zu Funktionen zum Schutz von Identitäten und Geräten vergleichbar sind.  <br/> |
-   
+ 
+<a name="BKMK_ediscovery"></a>
+### <a name="advanced-ediscovery-architecture-in-microsoft-365"></a>Erweiterte eDiscovery-Architektur in Microsoft 365
+
+Erweiterter eDiscovery-End-to-End-Workflow und Datenfluss, einschließlich in Microsoft 365 Multi-Geo-Umgebungen. 
+
+|**Element**|**Beschreibung**|
+|:-----|:-----|
+|[![Modell Poster: Erweiterte eDiscovery-Architektur in Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [Als Bild anzeigen](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [Als PDF](https:download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \| herunterladen [Als Visio herunterladen](https:download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> Aktualisiert am 2020|Enthält <ul><li>  End-to-End-Workflow in einer einzigen Umgebung</li><li>End-to-End-Workflow in einer Microsoft 365 Multi-Geo-Umgebung </li><li>End-to-End-Datenfluss, der den EDRM-Workflow unterstützt</li> |
+  
 <!--
 
 <a name="BKMK_O365fileprotect"></a>
