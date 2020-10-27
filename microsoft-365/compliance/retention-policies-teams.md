@@ -17,18 +17,32 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie Näheres über Aufbewahrungsrichtlinien, die für Microsoft Teams gelten.
-ms.openlocfilehash: 40e68116c24622fd21bd35531ef7821d8c4b7c62
-ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
+ms.openlocfilehash: 32656dc91350e5082171eb4fadd91d3a6287b9b7
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48370369"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754061"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Informationen zur Aufbewahrung für Microsoft Teams
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
 
-Die Informationen in diesem Artikel ergänzen den Beitrag [Informationen zur Aufbewahrung](retention.md) um spezifische Angaben für Microsoft Teams.
+Die Informationen in diesem Artikel ergänzen den Beitrag [Informationen zur Aufbewahrung](retention.md), da es sich um spezifische Informationen für Microsoft Teams-Nachrichten handelt.
+
+Informationen zu anderen Arbeitsbereichen finden Sie unter:
+
+- [Informationen zur Aufbewahrung für SharePoint und OneDrive](retention-policies-sharepoint.md)
+- [Informationen zur Aufbewahrung für Yammer](retention-policies-yammer.md)
+- [Informationen zur Aufbewahrung für Exchange](retention-policies-exchange.md)
+
+## <a name="whats-included-for-retention-and-deletion"></a>Lieferumfang für Aufbewahrung und Löschung
+
+Die folgenden Teams-Elemente können über Aufbewahrungsrichtlinien für Teams beibehalten oder gelöscht werden: Chats und Kanalnachrichten.
+
+Teams-Nachrichten in privaten Kanälen und Reaktionen von anderen Personen in der Form von Emoticons sind nicht enthalten.
+
+E-Mails und Dateien, die Sie mit Teams verwenden, sind in den Aufbewahrungsrichtlinien für Teams nicht beinhaltet. Diese Elemente haben ihre eigenen Aufbewahrungsrichtlinien.
 
 ## <a name="how-retention-works-with-microsoft-teams"></a>Funktionsweise der Aufbewahrung mit Microsoft Teams
 
@@ -51,7 +65,7 @@ Wenn die Aufbewahrungsrichtlinie lautet beibehalten und dann löschen:
 
 Zu den zwei Pfaden im Diagramm:
 
-1. **Wenn eine Chat- oder Kanalnachricht während der Aufbewahrungsfrist vom Benutzer bearbeitet oder gelöscht wird**, wird die Originalnachricht innerhalb von 21 Tagen in den Ordner SubstrateHolds kopiert (falls bearbeitet) oder verschoben (falls gelöscht). Die Nachricht wird dort bis zum Ablauf der Aufbewahrungsfrist gespeichert und dann innerhalb von 24 Stunden endgültig gelöscht.
+1. **Wenn eine Chat- oder Kanalnachricht während der Aufbewahrungsfrist vom Benutzer bearbeitet oder gelöscht wird** , wird die Originalnachricht innerhalb von 21 Tagen in den Ordner SubstrateHolds kopiert (falls bearbeitet) oder verschoben (falls gelöscht). Die Nachricht wird dort bis zum Ablauf der Aufbewahrungsfrist gespeichert und dann innerhalb von 24 Stunden endgültig gelöscht.
 
 2. **Wenn eine Chat- oder Kanalnachricht nicht gelöscht wird,** und für aktuelle Nachrichten nach der Bearbeitung wird die Nachricht nach Ablauf der Aufbewahrungsfrist in den Ordner SubstrateHolds verschoben. Diese Aktion dauert bis zu sieben Tage ab dem Ablaufdatum. Wenn sich die Nachricht im Ordner SubstrateHolds befindet, wird sie innerhalb von 24 Stunden endgültig gelöscht. 
 
@@ -62,15 +76,15 @@ Wenn die Aufbewahrungsrichtlinie dem reinen Aufbewahren oder dem reinen Löschen
 
 ### <a name="content-paths-for-retain-only-retention-policy"></a>Inhaltspfade für rein aufbewahrende Aufbewahrungsrichtlinien
 
-1. **Wenn eine Chat- oder Kanalnachricht bearbeitet oder gelöscht wird**: Eine Kopie der Originalnachricht wird innerhalb von 21 Tagen im Ordner SubstrateHolds erstellt und dort bis zum Ablauf der Aufbewahrungsfrist aufbewahrt. Die Nachricht wird innerhalb von 24 Stunden dauerhaft aus dem Ordner SubstrateHolds gelöscht.
+1. **Wenn eine Chat- oder Kanalnachricht bearbeitet oder gelöscht wird** : Eine Kopie der Originalnachricht wird innerhalb von 21 Tagen im Ordner SubstrateHolds erstellt und dort bis zum Ablauf der Aufbewahrungsfrist aufbewahrt. Die Nachricht wird innerhalb von 24 Stunden dauerhaft aus dem Ordner SubstrateHolds gelöscht.
 
 2. **Wenn das Element nicht geändert oder gelöscht wird** und aktuelle Nachrichten nach der Bearbeitung während der Aufbewahrungsfrist: Vor und nach der Aufbewahrungsfrist geschieht nichts; die Nachricht bleibt an ihrem ursprünglichen Ort.
 
 ### <a name="content-paths-for-delete-only-retention-policy"></a>Inhaltspfade für Aufbewahrungsrichtlinien für reines Löschen
 
-1. **Wenn die Nachricht während des Aufbewahrungszeitraums nicht gelöscht wird**: Die Nachricht wird am Ende des Aufbewahrungszeitraums in den Ordner "SubstrateHolds" verschoben. Diese Aktion dauert bis zu sieben Tage ab dem Ablaufdatum. Die Nachricht wird innerhalb von 24 Stunden dauerhaft aus dem Ordner SubstrateHolds gelöscht.
+1. **Wenn die Nachricht während des Aufbewahrungszeitraums nicht gelöscht wird** : Die Nachricht wird am Ende des Aufbewahrungszeitraums in den Ordner "SubstrateHolds" verschoben. Diese Aktion dauert bis zu sieben Tage ab dem Ablaufdatum. Die Nachricht wird innerhalb von 24 Stunden dauerhaft aus dem Ordner SubstrateHolds gelöscht.
 
-2. **Wenn das Element während des Zeitraums vom Benutzer gelöscht wird**, wird das Element innerhalb von 21 Tagen in den Ordner SubstrateHolds verschoben, wo es dann innerhalb von 24 Stunden endgültig gelöscht wird.
+2. **Wenn das Element während des Zeitraums vom Benutzer gelöscht wird** , wird das Element innerhalb von 21 Tagen in den Ordner SubstrateHolds verschoben, wo es dann innerhalb von 24 Stunden endgültig gelöscht wird.
 
 
 ## <a name="skype-for-business-and-teams-interop-chats"></a>Interop-Chats in Skype for Business und Microsoft Teams
@@ -101,16 +115,12 @@ Wenn der Benutzer Dateien in Teams gespeichert hat, lesen Sie den Abschnitt [Äq
 
 Wir arbeiten kontinuierlich an der Verbesserung der Aufbewahrungsfunktionen in Microsoft Teams. Es gibt einige Einschränkungen, die Sie beachten sollten, wenn Sie die Aufbewahrung von Nachrichten und Chats für Teams-Kanäle verwenden:
 
-- **Wenn Sie eine Aufbewahrungsrichtlinie für Microsoft Teams-Kanalnachrichten konfigurieren, werden Microsoft Teams-Nachrichten in privaten Kanälen nicht einbezogen**. Zurzeit werden private Kanäle von Aufbewahrungsrichtlinien nicht unterstützt. 
+- **Falsche Anzeige in Outlook** . Wenn Sie Aufbewahrungsrichtlinien für Skype- oder Microsoft Teams-Speicherorte erstellen, wird eine dieser Richtlinien als Standard-Ordnerrichtlinie angezeigt, wenn ein Benutzer die Eigenschaften eines Postfachordners im Outlook Desktop-Client einsieht. Hierbei handelt es sich um ein Anzeigeproblem in Outlook und [ein bekanntes Problem](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies). Als Standard-Ordnerrichtlinie sollte die Aufbewahrungsrichtlinie für Postfächer, die für den Ordner gilt, angezeigt werden. Die Aufbewahrungsrichtlinie für Skype oder Microsoft Teams wird nicht auf das Postfach des Benutzers angewendet.
 
-- **Für Teams Chat- und Kanalnachrichten werden „gefällt mir“-Angaben und andere Reaktionen nicht gespeichert**. Reaktionen von anderen in Form von Emoticons werden durch Aufbewahrungsrichtlinien nicht unterstützt.
-
-- **Falsche Anzeige in Outlook**. Wenn Sie Aufbewahrungsrichtlinien für Skype- oder Microsoft Teams-Speicherorte erstellen, wird eine dieser Richtlinien als Standard-Ordnerrichtlinie angezeigt, wenn ein Benutzer die Eigenschaften eines Postfachordners im Outlook Desktop-Client einsieht. Hierbei handelt es sich um ein Anzeigeproblem in Outlook und [ein bekanntes Problem](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies). Als Standard-Ordnerrichtlinie sollte die Aufbewahrungsrichtlinie für Postfächer, die für den Ordner gilt, angezeigt werden. Die Aufbewahrungsrichtlinie für Skype oder Microsoft Teams wird nicht auf das Postfach des Benutzers angewendet.
-
-- **Konfigurationsprobleme**: 
+- **Konfigurationsprobleme** : 
     - Wenn Sie die Option **Teams auswählen** für den Speicherort **Microsoft Teams-Kanalnachrichten** auswählen, werden möglicherweise Microsoft 365-Gruppen angezeigt, die nicht auch Teams sind. Wählen Sie diese Gruppen nicht aus.
     
-    - Wenn Sie **Benutzer auswählen** für den Speicherort ** Teams-Chats** auswählen, werden möglicherweise Gäste und Nicht Postfachbenutzer angezeigt. Aufbewahrungsrichtlinien sind nicht auf diese Benutzer ausgerichtet, deshalb sollten Sie sie nicht auswählen.
+    - Wenn Sie **Benutzer auswählen** für den Speicherort **Teams-Chats** auswählen, werden möglicherweise Gäste und Nicht Postfachbenutzer angezeigt. Aufbewahrungsrichtlinien sind nicht auf diese Benutzer ausgerichtet, deshalb sollten Sie sie nicht auswählen.
 
 ## <a name="configuration-guidance"></a>Konfigurationsleitfaden
 
