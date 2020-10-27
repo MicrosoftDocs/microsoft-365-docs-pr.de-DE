@@ -20,58 +20,24 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 964724ad92c1ae29095b7368167b771b1632b003
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 71316d6c53862b80178d06726f7c249a2491d659
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295070"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769030"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Neuerungen in Microsoft Secure Score
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 Damit die Microsoft-Sicherheitsbewertung zu einem besseren Ansprechpartner für Ihren Sicherheitsstatus wird, haben wir einige Änderungen vorgenommen. Wenn Sie mehr über geplante Änderungen wissen möchten, lesen Sie [Bald in der Microsoft-Sicherheitsbewertung verfügbar](microsoft-secure-score-whats-coming.md).
 
 ## <a name="august-2020"></a>August 2020
 
-### <a name="update-improvement-action-for-azure-active-directory"></a>Update Verbesserungs Aktion für Azure Active Directory
+### <a name="updated-improvement-action-for-azure-active-directory"></a>Aktualisierte Verbesserungs Aktion für Azure Active Directory
 
 - Richtlinie zum Blockieren veralteter Authentifizierung aktivieren
-
-## <a name="july-2020"></a>Juli 2020
-
-### <a name="adding-improvement-actions-for-azure-advanced-threat-protection"></a>Hinzufügen von Verbesserungs Aktionen für Azure Advanced Threat Protection
-
-- Riskante laterale Bewegungspfade
-- Unsichere Kontoattribute
-- Aktivieren von Sicherheitsfunktionen in Active Directory-Vertrauensstellungen
-- Unsichere SID-Verlaufsattribute aus Entitäten entfernen
-
-## <a name="june-2020"></a>Juni 2020
-
-### <a name="removed-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>Verbesserungs Aktion für Microsoft Defender Advanced Threat Protection entfernt
-
-* Regeln zur Verringerung der Angriffsfläche aktivieren
-
-### <a name="added-improvement-actions-for-microsoft-defender-advanced-threat-protection"></a>Verbesserungs Aktionen für Microsoft Defender Advanced Threat Protection hinzugefügt
-
-* Adobe Reader am Erstellen von untergeordneten Prozessen hindern
-* Erweiterten Schutz vor Ransomware verwenden
-* Alle Office-Anwendungen am Erstellen von untergeordneten Prozessen hindern
-* Office-Anwendungen am Erstellen ausführbarer Inhalte hindern
-* JavaScript und VBScript am Starten heruntergeladener ausführbarer Inhalte hindern
-* Ausführung potenziell verborgener Skripts blockieren
-* Ausführbare Inhalte aus E-Mail-Client und Web-E-Mail blockieren
-* Office-Kommunikationsanwendung am Erstellen von untergeordneten Prozessen hindern
-* Nicht vertrauenswürdige und nicht signierte Prozess, die von USB ausgeführt werden, blockieren
-* Persistenz durch WMI-Ereignisabonnement blockieren
-* Office-Anwendungen am Einfügen von Code in untergeordnete Prozesse hindern
-* Ausführbare Dateien an der Ausführung hindern, außer sie erfüllen ein Verbreitungs-, Alters- oder vertrauenswürdige Listen-Kriterium
-* Erstellung von Prozessen durch PSExec- und WMI-Befehle blockieren
-* Diebstahl von Anmeldeinformationen aus dem Subsystem für die lokale Sicherheitsautorität (lsass.exe) blockieren
-* Win32-API-Aufrufe von Office-Makros blockieren
 
 ## <a name="incompatibility-with-identity-secure-score-and-graph-api"></a>Inkompatibilität mit der Identitätssicherheitsbewertung und der Graph-API
 

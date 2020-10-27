@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Administratoren können sich über die Einblicke und Berichte informieren, die im Nachrichtenfluss-Dashboard im Security & Compliance Center zur Verfügung stehen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 089c6351485712d841691d5b856b1ba28dfe4fc4
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f9ac8b8b0d346d78af252a9e427d0ef2b1a4c4ea
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198481"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769018"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Nachrichtenfluss-Einblicke im Security & Compliance Center
 
@@ -60,11 +60,11 @@ Die verfügbaren Einblicke sind:
 
 ## <a name="permissions-required-to-view-the-mail-flow-dashboard"></a>Erforderliche Berechtigungen zum Anzeigen des Nachrichtenfluss-Dashboards
 
-Das Nachrichtenfluss-Dashboard steht Mitgliedern der folgenden routengruppen zur Verfügung:
+Das Nachrichtenfluss-Dashboard steht Mitgliedern der folgenden Rollengruppen zur Verfügung:
 
 - **Organisationsverwaltung** im Security & Compliance Center (globale Administratoren).
 
-- **[Exchange-Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** in Azure AD.
+- **[Exchange-Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** in Azure Active Directory.
 
 - **Nachrichtenfluss-Administrator** im Security & Compliance Center: Wenn ein Mitglied dieser Rollengruppe nicht auch Mitglied der Rollengruppen globaler Administrator oder Exchange-Administrator ist, beachten Sie die folgenden Probleme und Anforderungen:
 
@@ -76,6 +76,6 @@ Weitere Informationen zu Berechtigungen im Security & Compliance Center finden S
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>So finden Sie das Nachrichtenfluss-Dashboard
 
-Öffnen Sie das Security & Compliance Center unter <https://protection.office.com> , erweitern Sie **Nachrichtenfluss**, und wählen Sie dann **Dashboard**aus.
+Öffnen Sie das Security & Compliance Center unter <https://protection.office.com> , erweitern Sie **Nachrichtenfluss** , und wählen Sie dann **Dashboard** aus.
 
 Wenn Sie direkt zum Nachrichtenfluss-Dashboard wechseln möchten, öffnen Sie <https://protection.office.com/mailflow/dashboard> .

@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 4f5d0a59372fb32b2802a094c247e45740ba3946
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 4dfe1c9595db869a59474a030a5dd8673cf7db24
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295250"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769244"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Verfolgen des Microsoft Secure Score-Verlaufs und erreichen der Ziele
 
@@ -60,17 +60,36 @@ Auf der Registerkarte **Metriken und Trends** finden Sie mehrere Graphen und Dia
 
 ### <a name="compare-your-score-to-organizations-like-yours"></a>Vergleichen Sie Ihre Punktzahl mit Organisationen wie Ihrem
 
-Es gibt zwei Möglichkeiten, um zu sehen, wie sich Ihre Partitur mit Organisationen vergleicht, die Ihnen ähnlich sind.
+Es gibt zwei Möglichkeiten, um zu sehen, wie sich Ihre Partitur mit Organisationen vergleicht, die Ihnen ähnlich sind. In beiden Diagrammen können Sie **Vergleiche verwalten** auswählen, um die Informationen Ihrer Organisation anzuzeigen und zu bearbeiten. Sie können auch einen benutzerdefinierten Vergleich basierend auf Industrie, Organisationsgröße, Lizenzen und Regionen erstellen.
 
-Die erste Stelle befindet sich auf der Registerkarte " **Übersicht** ", auf der Sie ein Vergleichs Balkendiagramm sehen können. Zeigen Sie mit dem Mauszeiger auf das Diagramm, um die Möglichkeit zur Bewertung und Bewertung anzuzeigen.
+#### <a name="comparison-bar-chart"></a>Vergleichs Balkendiagramm
+
+Das Vergleichs Balkendiagramm ist die Registerkarte **Übersicht** . Zeigen Sie mit dem Mauszeiger auf das Diagramm, um die Möglichkeit zur Bewertung und Bewertung anzuzeigen. Die Vergleichsdaten werden anonymisiert, sodass wir nicht genau wissen, welche anderen Mandanten sich in der Mischung befinden.
 
 ![Balkendiagramm der Partituren einer ähnlichen Organisation](../../media/secure-score/secure-score-comparison-bar.png)
 
-Der zweite Platz befindet sich auf der Registerkarte **Metriken & Trends** , auf der Sie sehen können, wie sich die sichere Punktzahl Ihrer Organisation im Laufe der Zeit mit anderen vergleichen lässt.
+- **Organisationen wie Ihre** : Wir geben Ihnen eine durchschnittliche Punktzahl anderer Mandanten (vorausgesetzt, es müssen mindestens 5 Mandanten miteinander verglichen werden), die mit den folgenden Kriterien in Frage kommen:
+    1. Gleiche Branche
+    2. Gleiche Organisationsgröße
+    3. Alle Regionen
+    4. Verwendete Microsoft-Produkte sind 80% ähnlich
+    5. Verkaufschance (maximale Punktzahl, die mit der aktuellen Lizenz erzielt werden kann) innerhalb eines Bereichs von 20% von Ihrem Mandanten
+
+- **Benutzerdefinierter Vergleich** : muss zunächst durch Auswählen von **Vergleich verwalten** (nur wenn wir 5 oder mehr Mandanten finden) basierend auf den folgenden Kriterien eingerichtet werden:
+    1. Ausgewählte Branche (n)
+    2. Ausgewählte Organisationsgröße (n)
+    3. Ausgewählte Region (en)
+    4. Ausgewählte Lizenz (en)
+    5. Verwendete Microsoft-Produkte sind 80% ähnlich
+    6. Verkaufschance (maximale Punktzahl, die mit der aktuellen Lizenz erzielt werden kann) innerhalb eines Bereichs von 20% von Ihrem Mandanten
+
+Wenn Sie für die benutzerdefinierte Auswahl des Auswahl Ergebnisses in immer weniger als 5 anderen Mandanten, mit denen wir vergleichen können, keine Auswahl getroffen haben, sehen Sie "aufgrund von begrenzten Daten nicht verfügbar".
+
+#### <a name="comparison-trend"></a>Vergleichs Trend
+
+Zeigen Sie auf der Registerkarte **Metriken & Trends** , wie sich die sichere Punktzahl Ihrer Organisation im Laufe der Zeit mit anderen vergleicht.
 
 ![Diagramm der Ergebnisse einer ähnlichen Organisation im Laufe der Zeit](../../media/secure-score/secure-score-comparison-trend.png)
-
-In beiden Diagrammen können Sie **Vergleiche verwalten** auswählen, um die Informationen Ihrer Organisation anzuzeigen und zu bearbeiten. Sie können auch einen benutzerdefinierten Vergleich basierend auf Industrie, Organisationsgröße, Lizenzen und Regionen erstellen.
 
 ## <a name="we-want-to-hear-from-you"></a>Wir freuen uns über Ihr Feedback
 

@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 6d35ee7a4a7755a043136f33600abad424956032
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 2eb8b984550f301af9d99e738f6db4623aa2cc86
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529397"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769106"
 ---
 # <a name="deploy-apps-to-devices"></a>Stellen Sie Anwendungen auf Geräten bereit
 Ein Teil des onboardings für Microsoft Managed Desktop umfasst das Hinzufügen und Bereitstellen von apps auf den Geräten Ihrer Benutzer. Nachdem Sie das Microsoft Managed Desktop Portal verwendet haben, können Sie Ihre apps hinzufügen und bereitstellen. 
@@ -42,10 +42,10 @@ In diesem Verfahren wählen Sie aus, welche App-Art Sie hinzufügen möchten, un
 Sie können sich bei Microsoft Managed Desktop Portal anmelden oder sich bei InTune anmelden und dann nach Microsoft Managed Desktop suchen. Wir zeigen, dass Sie sich bei Microsoft Managed Desktop Portal anmelden. 
 
 1.    Melden Sie sich beim [Microsoft Managed Desktop-Verwaltungsportal](https://aka.ms/mmdportal)an. 
-2.    Wählen Sie unter **Inventar**die Option **apps**aus.
-3.    Wählen Sie in der Arbeitsauslastung von apps die Option **Hinzufügen**aus.
-4.    Wählen Sie unter **app hinzufügen**die Option **Branchen-App** oder **Windows-app (Win32)** aus.
-    - Wenn Sie die Branchen **-App**ausgewählt haben, finden Sie unter [Hinzufügen einer Windows-Branchen-APP zu Microsoft InTune](https://docs.microsoft.com/intune/lob-apps-windows) Anweisungen zum Hinzufügen und Konfigurieren von Branchen-apps.
+2.    Wählen Sie unter **Inventar** die Option **apps** aus.
+3.    Wählen Sie in der Arbeitsauslastung von apps die Option **Hinzufügen** aus.
+4.    Wählen Sie unter **app hinzufügen** die Option **Branchen-App** oder **Windows-app (Win32)** aus.
+    - Wenn Sie die Branchen **-App** ausgewählt haben, finden Sie unter [Hinzufügen einer Windows-Branchen-APP zu Microsoft InTune](https://docs.microsoft.com/intune/lob-apps-windows) Anweisungen zum Hinzufügen und Konfigurieren von Branchen-apps.
     - Wenn Sie **Windows-app (Win32)** ausgewählt haben, finden Sie unter [Win32 App Management](https://docs.microsoft.com/intune/apps-win32-app-management) Anweisungen zum Hinzufügen und Konfigurieren von Windows-apps.
 
 <span id="msfb-apps">
@@ -56,25 +56,20 @@ Wenn Sie sich nicht bei Microsoft Store for Business angemeldet haben, können S
 **So kaufen Sie Apps aus dem Microsoft Store for Business**
 
 1. Melden Sie sich mit Ihrem Microsoft Store for Business-Administratorkonto bei [Microsoft Store for Business](https://businessstore.microsoft.com) an.
-2. Wählen Sie **für meine Gruppe Shop**aus.
+2. Wählen Sie **für meine Gruppe Shop** aus.
 3. Verwenden Sie die Suche, um die gewünschte APP zu finden, und wählen Sie die APP aus.
-4. Wählen Sie auf den Produkt Details **die Option App abrufen**aus. Mit dem Microsoft Store wird die APP **ihren Produkten** für Ihre Organisation hinzugefügt.
+4. Wählen Sie auf den Produkt Details **die Option App abrufen** aus. Mit dem Microsoft Store wird die APP **ihren Produkten** für Ihre Organisation hinzugefügt.
 
 **So erzwingen Sie eine Synchronisierung zwischen InTune und Microsoft Store for Business**
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com/) als InTune-Administrator oder globaler Administrator für Ihren Mandanten an.
-2. Wählen Sie **alle Dienste > InTune**aus. InTune befindet sich im Abschnitt Überwachung + Verwaltung.
-3. Wählen Sie im Bereich InTune die Option **Client apps**aus, und wählen Sie dann **Microsoft Store for Business**aus.
-4. Wählen Sie **aktivieren** aus, um Ihren Microsoft Store for Business-Apps mit InTune zu synchronisieren.
-    - Wenn Sie noch nicht angemeldet sind, registrieren und Ihr Microsoft Store for Business-Konto mit InTune verknüpfen
-    - Wählen Sie die Sprache aus, in der Apps aus dem Microsoft Store for Business in ihrer InTune-Konsole angezeigt werden.
-    - Wählen Sie **Sync** aus, um Ihren Microsoft Store for Business-Apps mit InTune zu synchronisieren.
-    - Stellen Sie sicher, dass die Synchronisierung zwischen Microsoft Store for Business und InTune aktiv ist (nächster Schritt). 
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431)an.
+2. Wählen Sie **Mandanten Administrations**  >  **-Konnektoren und Token**  >  **für Microsoft Store for Business** aus.
+3. Wählen Sie **Synchronisieren** aus, um die apps, die Sie aus dem Microsoft Store erworben haben, in InTune zu übernehmen.
 
 **So stellen Sie sicher, dass eine Synchronisierung zwischen InTune und Microsoft Store for Business aktiv ist**
 1. Melden Sie sich mit Ihrem Microsoft Store for Business-Administratorkonto bei [Microsoft Store for Business](https://businessstore.microsoft.com) an.
-2. Wählen Sie **Manage**aus.
-3. Wählen Sie **Einstellungen** aus, und wählen Sie dann **verteilen**aus.
-4. Überprüfen Sie unter **Verwaltungstools**, ob InTune aufgeführt ist und ob der Status **aktiv**ist.  
+2. Wählen Sie **Manage** aus.
+3. Wählen Sie **Einstellungen** aus, und wählen Sie dann **verteilen** aus.
+4. Überprüfen Sie unter **Verwaltungstools** , ob InTune aufgeführt ist und ob der Status **aktiv** ist.  
 
 <span id="2" />
 
@@ -97,10 +92,10 @@ Fügen Sie Ihre Benutzer zu diesen Gruppen hinzu, um entweder die APP zur Verfü
 **So weisen Sie die APP Ihren Benutzern zu**
 
 1. Melden Sie sich beim [Microsoft Managed Desktop-Verwaltungsportal](https://aka.ms/mmdportal)an.
-2. Wählen Sie im Bereich verwalteter Desktop die Option **apps**aus.
-3. Wählen Sie in der Arbeitsauslastung Apps die APP aus, der Sie Benutzer zuweisen möchten, und wählen Sie **Benutzergruppen zuweisen**aus.
+2. Wählen Sie im Bereich verwalteter Desktop die Option **apps** aus.
+3. Wählen Sie in der Arbeitsauslastung Apps die APP aus, der Sie Benutzer zuweisen möchten, und wählen Sie **Benutzergruppen zuweisen** aus.
 4. Wählen Sie für die jeweilige APP einen Zuordnungstyp (verfügbar, erforderlich, deinstallieren) aus, und weisen Sie die entsprechende Gruppe zu.
-5. Wählen Sie im Bereich apps zuweisen die Option **OK**aus.
+5. Wählen Sie im Bereich apps zuweisen die Option **OK** aus.
 
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Schritte zum Einstieg in Microsoft Managed Desktop
