@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8af782095ada41f0472e1df338ced7ebe76c97fe
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 5b09b59efa6862782b04b7aa58d7c1fdc0383bb0
+ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104412"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48787534"
 ---
 # <a name="getting-help-for-users"></a>Hilfe für Benutzer
 
@@ -25,7 +25,7 @@ Es gibt zwei Möglichkeiten, wie Benutzer in Ihrer Organisation Unterstützung f
 
 ## <a name="get-help-app"></a>Hilfe-App abrufen
 
-Die bevorzugte Methode für die Bereitstellung von Unterstützung für Ihre Benutzer ist **Get Help**, eine einfach zu verwendende Schnittstelle, die in das Benutzergerät integriert ist.  
+Die bevorzugte Methode für die Bereitstellung von Unterstützung für Ihre Benutzer ist **Get Help** , eine einfach zu verwendende Schnittstelle, die in das Benutzergerät integriert ist.  
 
 ![Hilfe-App-Symbol abrufen](../../media/get-help.png)
 
@@ -33,6 +33,9 @@ Hierbei handelt es sich um eine Anwendung, die auf allen von Microsoft verwaltet
 
 - Benutzer können einen Rückruf an eine bereitgestellte Telefonnummer anfordern oder online mit einem Dienstmitarbeiter chatten.
 - Anforderungen, die außerhalb des Bereichs Microsoft Managed Desktop Support fallen, werden per Telefonanruf an den lokalen IT-Helpdesk umgeleitet.
+
+> [!NOTE]
+> Die Anzeigesprache für die Get-Hilfe-APP ist nur Englisch, auch wenn ein Benutzer beim Einrichten seines Geräts oder in den Geräteeinstellungen eine andere Sprache ausgewählt hat. 
 
 ### <a name="prerequisites"></a>Voraussetzungen
 Damit Ihre Benutzer Hilfe über die APP erhalten können, stellen Sie sicher, dass diese Voraussetzungen erfüllt sind:
@@ -68,7 +71,7 @@ Benutzer mit Microsoft Managed Desktop-Geräten haben auch Zugriff auf gebühren
 >[!NOTE]
 >Sie müssen ihre organisatorische e-Mail-Adresse parat haben, wenn Sie anrufen, um Ihre Identität zu überprüfen. 
 
-## <a name="additional-resources"></a>Weitere Ressourcen
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 - [Administrator Unterstützung für Microsoft Managed Desktop](admin-support.md). 
 - [Unterstützung für Microsoft Managed Desktop](../service-description/support.md).
 - Wenn Sie bereits Microsoft Managed Desktop abonniert haben, finden Sie im Microsoft Managed Desktop Admin Guide im Abschnitt " **Online Ressourcen** " unter dem Abschnitt "Microsoft Managed Desktop" des Menüs " **Mandantenverwaltung** " in [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)detaillierte Verfahren, Prozessabläufe, Arbeitsanweisungen und FAQs.
