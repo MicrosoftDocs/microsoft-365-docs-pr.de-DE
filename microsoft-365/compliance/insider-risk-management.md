@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 6045adec673313514243b023dc6ab688387f78d8
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: c9b19066b57d40ad33ac8d50ee1bee1f4a828030
+ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341401"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48774048"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Insider Risikomanagement in Microsoft 365
 
@@ -48,10 +48,10 @@ Das Insider Risikomanagement verwendet die gesamte Bandbreite von Dienst-und Dri
 
 Das Insider Risikomanagement konzentriert sich auf die folgenden Prinzipien:
 
-- **Transparenz**: Gleichgewichtzwischen Benutzerdaten Schutz und Organisations Risiko mit Datenschutz-nach-Design-Architektur.
-- **Konfigurierbar**: konfigurierbare Richtlinien basierend auf Branchen-, geografischen und Unternehmensgruppen.
-- **Integriert**: integrierter Workflow in Microsoft 365 Compliance-Lösungen.
-- **Handlungs**fähig: bietet Einblicke, um Benutzer Benachrichtigungen, Daten Ermittlungen und Benutzer Untersuchungen zu ermöglichen.
+- **Transparenz** : Gleichgewichtzwischen Benutzerdaten Schutz und Organisations Risiko mit Datenschutz-nach-Design-Architektur.
+- **Konfigurierbar** : konfigurierbare Richtlinien basierend auf Branchen-, geografischen und Unternehmensgruppen.
+- **Integriert** : integrierter Workflow in Microsoft 365 Compliance-Lösungen.
+- **Handlungs** fähig: bietet Einblicke, um Benutzer Benachrichtigungen, Daten Ermittlungen und Benutzer Untersuchungen zu ermöglichen.
 
 ## <a name="workflow"></a>Workflow
 
@@ -105,9 +105,9 @@ Es werden [Fälle](insider-risk-management-cases.md) für Warnungen erstellt, di
 
 Wenn Sie im Case-Dashboard einen Fall auswählen, wird der Fall zur Untersuchung und Überprüfung geöffnet. Dieser Schritt ist das Herzstück des Insider Risikomanagement-Workflows. In diesem Bereich werden Risiko Aktivitäten, Richtlinienbedingungen, Warnungsdetails und Benutzer Details in einer integrierten Ansicht für Bearbeiter synthetisiert. Die primären Ermittlungs Tools in diesem Bereich sind:
 
-- **Benutzeraktivität**: Benutzeraktivität wird automatisch in einem interaktiven Diagramm angezeigt, in dem Aktivitäten im Laufe der Zeit und nach Risikoebene für aktuelle oder vergangene Risiko Aktivitäten gezeichnet werden. Bearbeiter können den gesamten Risikoverlauf für den Benutzer schnell Filtern und anzeigen und weitere Details in bestimmte Aktivitäten einblenden.
-- **Inhalts-Explorer**: alle Datendateien und e-Mail-Nachrichten, die Warnungs Aktivitäten zugeordnet sind, werden automatisch erfasst und im Inhalts-Explorer angezeigt. Bearbeiter können Dateien und Nachrichten nach Datenquellen, Dateityp, Tags, Unterhaltung und vielen weiteren Attributen Filtern und anzeigen.
-- **Fallnotizen**: Bearbeiter können Notizen für einen Fall im Abschnitt "fallnotizen" bereitstellen. In dieser Liste werden alle Notizen in einer zentralen Ansicht konsolidiert, und es werden die Informationen Prüfer und Datum übermittelt hinzugefügt.
+- **Benutzeraktivität** : Benutzeraktivität wird automatisch in einem interaktiven Diagramm angezeigt, in dem Aktivitäten im Laufe der Zeit und nach Risikoebene für aktuelle oder vergangene Risiko Aktivitäten gezeichnet werden. Bearbeiter können den gesamten Risikoverlauf für den Benutzer schnell Filtern und anzeigen und weitere Details in bestimmte Aktivitäten einblenden.
+- **Inhalts-Explorer** : alle Datendateien und e-Mail-Nachrichten, die Warnungs Aktivitäten zugeordnet sind, werden automatisch erfasst und im Inhalts-Explorer angezeigt. Bearbeiter können Dateien und Nachrichten nach Datenquellen, Dateityp, Tags, Unterhaltung und vielen weiteren Attributen Filtern und anzeigen.
+- **Fallnotizen** : Bearbeiter können Notizen für einen Fall im Abschnitt "fallnotizen" bereitstellen. In dieser Liste werden alle Notizen in einer zentralen Ansicht konsolidiert, und es werden die Informationen Prüfer und Datum übermittelt hinzugefügt.
 
 ![Untersuchung des Insider Risikomanagements](../media/insider-risk-investigate.png)
 
@@ -117,9 +117,12 @@ Nachdem Fälle untersuchtwurden, können Bearbeiter schnell zur Lösung des Fall
 
 In den schwerwiegenderen Situationen müssen Sie möglicherweise die Fall Informationen für Insider Risk Management für andere Bearbeiter oder Dienste in Ihrer Organisation freigeben. Das Insider Risikomanagement ist eng mit anderen Microsoft 365-Compliance-Lösungen integriert, die Ihnen bei der End-to-End-Risiko Lösung helfen.
 
-- **Advanced eDiscovery**: eskalieren eines Falls zur Untersuchung können Sie Daten und die Verwaltung der Anfrage in Advanced eDiscovery in Microsoft 365 übertragen. Advanced eDiscovery bietet einen End-to-End-Workflow zum Beibehalten, Sammeln, Überprüfen, Analysieren und Exportieren von Inhalten, die auf die internen und externen Ermittlungen Ihrer Organisation abgestimmt sind. Dies ermöglicht es juristischen Teams, den gesamten Warnungs-Workflow für die gesetzliche Aufbewahrungspflicht zu verwalten. Weitere Informationen zu den Advanced eDiscovery-Fällen finden Sie unter [Übersicht über Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
-- **ServiceNow (Vorschau)**: ServiceNow ist eine beliebte Cloud Computing-Plattform, die Organisationen bei der Verwaltung digitaler Workflows für Unternehmensvorgänge unterstützt. Das Insider Risikomanagement unterstützt das Freigeben von Fall Benachrichtigungen mit Ihrem ServiceNow-Dienst und ermöglicht Ihnen das Erstellen von Vorfällen und Änderungsanforderungen in Bezug auf einzelne Insider Risiko Fälle. Weitere Informationen zum Freigeben von Warnungsinformationen mit ServiceNow finden Sie unter [Freigeben eines Falls mit ServiceNow](insider-risk-management-cases.md#share-the-case).
-- **Office 365 Management APIs Integration (Preview)**: das Insider Risikomanagement unterstützt das Exportieren von Warnungsinformationen in die Security Information and Event Management (SIEM)-Dienste über die Office 365 Management-APIs. Wenn Sie Zugriff auf die Warnungsinformationen auf der Plattform haben, ist die optimale Lösung für die Risikoprozesse Ihrer Organisation eine größere Flexibilität beim Handeln bei Risiko Aktivitäten. Weitere Informationen zum Exportieren von Warnungsinformationen mit Office 365-Verwaltungs-APIs finden Sie unter [Export Alerts](insider-risk-management-settings.md#export-alerts-preview).
+- **Advanced eDiscovery** : eskalieren eines Falls zur Untersuchung können Sie Daten und die Verwaltung der Anfrage in Advanced eDiscovery in Microsoft 365 übertragen. Advanced eDiscovery bietet einen End-to-End-Workflow zum Beibehalten, Sammeln, Überprüfen, Analysieren und Exportieren von Inhalten, die auf die internen und externen Ermittlungen Ihrer Organisation abgestimmt sind. Dies ermöglicht es juristischen Teams, den gesamten Warnungs-Workflow für die gesetzliche Aufbewahrungspflicht zu verwalten. Weitere Informationen zu den Advanced eDiscovery-Fällen finden Sie unter [Übersicht über Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
+- **ServiceNow (Vorschau)** : ServiceNow ist eine beliebte Cloud Computing-Plattform, die Organisationen bei der Verwaltung digitaler Workflows für Unternehmensvorgänge unterstützt. Das Insider Risikomanagement unterstützt das Freigeben von Fall Benachrichtigungen mit Ihrem ServiceNow-Dienst und ermöglicht Ihnen das Erstellen von Vorfällen und Änderungsanforderungen in Bezug auf einzelne Insider Risiko Fälle. Weitere Informationen zum Freigeben von Warnungsinformationen mit ServiceNow finden Sie unter [Freigeben eines Falls mit ServiceNow](insider-risk-management-cases.md#share-the-case).
+- **Office 365 Management APIs Integration (Preview)** : das Insider Risikomanagement unterstützt das Exportieren von Warnungsinformationen in die Security Information and Event Management (SIEM)-Dienste über die Office 365 Management-APIs. Wenn Sie Zugriff auf die Warnungsinformationen auf der Plattform haben, ist die optimale Lösung für die Risikoprozesse Ihrer Organisation eine größere Flexibilität beim Handeln bei Risiko Aktivitäten. Weitere Informationen zum Exportieren von Warnungsinformationen mit Office 365-Verwaltungs-APIs finden Sie unter [Export Alerts](insider-risk-management-settings.md#export-alerts-preview).
+
+>[!NOTE]
+>Die ServiceNow-Vorschau endet am 30 2020. November und wird nicht fortgesetzt. Vielen Dank für Ihr Feedback und ihre Unterstützung, während wir die nächsten Schritte bestimmen.
 
 ## <a name="scenarios"></a>Szenarien
 

@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie den Kundenschlüssel für Microsoft 365 für Exchange Online-, Skype for Business-, SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Dateien einrichten.
-ms.openlocfilehash: 32af637fca91c1aa3abc0853215476d55c0f18a3
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: be7aacf180cf8ffc59a490279083aeb2aa6a0567
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949561"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48768973"
 ---
 # <a name="set-up-customer-key"></a>Einrichten des Kunden Schlüssels
 
@@ -31,7 +31,7 @@ Sie müssen Azure einrichten, bevor Sie Customer Key für Office 365 verwenden k
   
 ## <a name="before-you-set-up-customer-key"></a>Vor dem Einrichten des Kunden Schlüssels
 
-Stellen Sie vor dem ersten Start sicher, dass Sie über die entsprechende Lizenzierung für Ihre Organisation verfügen. Ab dem 1. April 2020 wird der Kundenschlüssel in Office 365 in Office 365 E5, M365 E5, M365 E5 Compliance und M365 E5 Information Protection & Governance-SKUs angeboten. Office 365 Advanced Compliance SKU steht nicht mehr für die Beschaffung neuer Lizenzen zur Verfügung. Vorhandene Office 365 Advanced Compliance-Lizenzen werden weiterhin unterstützt.
+Bevor Sie beginnen, stellen Sie sicher, dass Sie über die entsprechende Lizenzierung für Ihre Organisation verfügen und dass Ihr Konto in Rechnung gestellt und nicht mit einer Kreditkarte bezahlt wird. Kundenschlüssel in Microsoft 365 wird in Office 365 E5 oder Advanced Compliance SKU angeboten. Um die Konzepte und Verfahren in diesem Thema zu verstehen, lesen Sie die [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/) -Dokumentation. Machen Sie sich außerdem mit den in Azure verwendeten Begriffen vertraut, beispielsweise [Mandant](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)).
 
 Um die Konzepte und Verfahren in diesem Thema zu verstehen, lesen Sie die [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/) -Dokumentation. Machen Sie sich außerdem mit den in Azure verwendeten Ausdrücken vertraut, beispielsweise [Azure AD Mandanten](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant).
 
@@ -55,7 +55,7 @@ Für die Durchführung der meisten dieser Schritte müssen Sie eine Remoteverbin
 
 - [Senden einer Anforderung zum Aktivieren von Customer Key für Office 365](#submit-a-request-to-activate-customer-key-for-office-365)
 
-Nachdem Sie die beiden neuen Azure-Abonnements erstellt haben, müssen Sie die entsprechende Anforderung für das Customer Key-Angebot übermitteln, indem Sie ein Webformular ausfüllen, das im Microsoft FastTrack-Portal gehostet wird. **Das FastTrack-Team bitte keine Unterstützung für Customer Key. Office nutzt das FastTrack-Portal einfach für die Übermittlung des Formulars und um uns dabei zu helfen, die relevanten Angebote für Customer Key nachzuverfolgen**.
+Nachdem Sie die beiden neuen Azure-Abonnements erstellt haben, müssen Sie die entsprechende Anforderung für das Customer Key-Angebot übermitteln, indem Sie ein Webformular ausfüllen, das im Microsoft FastTrack-Portal gehostet wird. **Das FastTrack-Team bitte keine Unterstützung für Customer Key. Office nutzt das FastTrack-Portal einfach für die Übermittlung des Formulars und um uns dabei zu helfen, die relevanten Angebote für Customer Key nachzuverfolgen** .
 
 - [Erstellen eines Premium Azure Key Vault für jedes Abonnement](#create-a-premium-azure-key-vault-in-each-subscription)
 
@@ -98,7 +98,9 @@ Führen Sie diese Aufgaben in Azure Key Vault aus. Sie müssen diese Schritte au
 Kundenschlüssel erfordert zwei Azure-Abonnements. Als bewährte Methode empfiehlt Microsoft, neue Azure-Abonnements für die Verwendung mit Customer Key zu erstellen. Azure Key-Tresorschlüssel können nur für Anwendungen in demselben Azure-Active Directory (Microsoft Azure Active Directory)-Mandanten autorisiert werden, Sie müssen die neuen Abonnements mit dem gleichen Azure AD Mandanten erstellen, der in Ihrer Organisation verwendet wird, in der die DEPs zugewiesen wird. Verwenden Sie beispielsweise Ihr Arbeits-oder Schulkonto, das über globale Administratorrechte in Ihrer Organisation verfügt. Weitere Informationen zu den einzelnen Arbeitsschritten finden Sie unter [Als Unternehmen für Azure registrieren](https://azure.microsoft.com/documentation/articles/sign-up-organization/).
   
 > [!IMPORTANT]
-> Für Customer Key sind zwei Schlüssel für jede Daten- Verschlüsselungsrichtlinie (DEP) erforderlich. Zu diesem Zweck müssen Sie zwei Azure-Abonnements erstellen. Als bewährte Methode empfiehlt Microsoft, dass separate Mitglieder Ihrer Organisation jeweils einen Schlüssel für jedes Abonnement konfigurieren. Darüber hinaus sollten diese Azure-Abonnements nur zum Verwalten von kryptografischen Schlüsseln für Office 365 verwendet werden. Auf diese Weise ist Ihre Organisation geschützt, falls einer ihrer Betreiber versehentlich, absichtlich oder in böswilliger Absicht die Schlüssel, für die Sie verantwortlich sind, löscht oder auf andere Weise unsachgemäß handhabt. <br/> Es wird empfohlen, dass Sie neue Azure-Abonnements einrichten, die ausschließlich zum Verwalten von Azure Key Vault-Ressourcen für die Verwendung mit Customer Key genutzt werden. Es gibt praktisch keine Beschränkung hinsichtlich der Anzahl von Azure-Abonnements, die Sie für Ihre Organisation erstellen können. Durch die Nutzung dieser bewährten Methoden können Sie die Auswirkungen von menschlichen Fehlern bei der Verwaltung der von Customer Key genutzten Ressourcen minimieren.
+> Für Customer Key sind zwei Schlüssel für jede Daten- Verschlüsselungsrichtlinie (DEP) erforderlich. Zu diesem Zweck müssen Sie zwei Azure-Abonnements erstellen. Als bewährte Methode empfiehlt Microsoft, dass separate Mitglieder Ihrer Organisation jeweils einen Schlüssel für jedes Abonnement konfigurieren. Darüber hinaus sollten diese Azure-Abonnements nur zum Verwalten von kryptografischen Schlüsseln für Office 365 verwendet werden. Auf diese Weise ist Ihre Organisation geschützt, falls einer ihrer Betreiber versehentlich, absichtlich oder in böswilliger Absicht die Schlüssel, für die Sie verantwortlich sind, löscht oder auf andere Weise unsachgemäß handhabt.
+> 
+> Es wird empfohlen, dass Sie neue Azure-Abonnements einrichten, die ausschließlich zum Verwalten von Azure Key Vault-Ressourcen für die Verwendung mit Customer Key genutzt werden. Es gibt praktisch keine Beschränkung hinsichtlich der Anzahl von Azure-Abonnements, die Sie für Ihre Organisation erstellen können. Durch die Nutzung dieser bewährten Methoden können Sie die Auswirkungen von menschlichen Fehlern bei der Verwaltung der von Customer Key genutzten Ressourcen minimieren.
   
 ### <a name="submit-a-request-to-activate-customer-key-for-office-365"></a>Senden einer Anforderung zum Aktivieren von Customer Key für Office 365
 
@@ -108,7 +110,7 @@ Führen Sie zur Übermittlung eines Angebots zum Aktivieren von Customer Key die
   
 1. Melden Sie sich mit einem Arbeits-oder Schulkonto, das über globale Administratorberechtigungen in Ihrer Organisation verfügt, beim [Microsoft-Portal](https://fasttrack.microsoft.com/)an.
 
-2. Sobald Sie angemeldet sind, wechseln Sie zum **Dashboard**.
+2. Sobald Sie angemeldet sind, wechseln Sie zum **Dashboard** .
 
 3. Wählen Sie **Bereitstellen** in der Navigationsleiste aus, **oder** wählen Sie **alle Bereitstellungsressourcen anzeigen** auf der Seite Informationskarte **Bereitstellen** aus, und überprüfen Sie die Liste der aktuellen Angebote.
 
@@ -118,9 +120,9 @@ Führen Sie zur Übermittlung eines Angebots zum Aktivieren von Customer Key die
 
    - **SharePoint Online-, OneDrive-und Microsoft Teams-Dateien:** Wählen Sie die **Hilfe zur Verschlüsselungsschlüssel Anforderung für SharePoint und OneDrive-** Angebot aus.
 
-5. Nachdem Sie die Angebotsdetails überprüft haben, wählen Sie **weiter mit Schritt 2**aus.
+5. Nachdem Sie die Angebotsdetails überprüft haben, wählen Sie **weiter mit Schritt 2** aus.
 
-6. Tragen Sie alle relevanten Details und erforderlichen Informationen im Angebotsformular ein. Achten Sie besonders auf Ihre Auswahl, welche MitarbeiterInnen Ihrer Organisation Sie autorisieren, die permanente und unwiderrufliche Vernichtung von kryptografischen Schlüsseln und Daten zu genehmigen. Sobald Sie das Formular ausgefüllt haben, wählen Sie **Senden**.
+6. Tragen Sie alle relevanten Details und erforderlichen Informationen im Angebotsformular ein. Achten Sie besonders auf Ihre Auswahl, welche MitarbeiterInnen Ihrer Organisation Sie autorisieren, die permanente und unwiderrufliche Vernichtung von kryptografischen Schlüsseln und Daten zu genehmigen. Sobald Sie das Formular ausgefüllt haben, wählen Sie **Senden** .
 
 ### <a name="register-azure-subscriptions-to-use-a-mandatory-retention-period"></a>Azure- Abonnements registrieren, um einen obligatorischen Aufbewahrungszeitraum zu nutzen.
 
@@ -130,7 +132,7 @@ Bevor Sie sich an das Microsoft 365-Team wenden, müssen Sie für jedes Azure-Ab
   
 1. Melden Sie sich mit Azure PowerShell an. Anweisungen finden Sie unter [Anmelden mit Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps).
 
-2. Führen Sie das Cmdlet Register-AzProviderFeature aus, um Ihre Abonnements für die Verwendung eines obligatorischen Aufbewahrungszeitraums zu registrieren. Führen Sie diese Aktion für jedes Abonnement aus.
+2. Führen Sie das Register-AzProviderFeature-Cmdlet aus, um Ihre Abonnements für die Verwendung eines obligatorischen Aufbewahrungszeitraums zu registrieren. Führen Sie diese Aktion für jedes Abonnement aus.
 
    ```powershell
    Set-AzContext -SubscriptionId <SubscriptionId>
@@ -139,14 +141,14 @@ Bevor Sie sich an das Microsoft 365-Team wenden, müssen Sie für jedes Azure-Ab
 
 3. Wenden Sie sich an Microsoft, damit der Prozess abgeschlossen wird. Um mit dem SharePoint- und OneDrive for Business-Team in Verbindung zu treten, wenden Sie sich bitte an [spock@microsoft.com](mailto:spock@microsoft.com). Für Exchange Online und Skype for Business wenden Sie sich bitte an [exock@microsoft.com](mailto:exock@microsoft.com). Teilen Sie uns in Ihrem E-Mail bitte Folgendes mit:
 
-   **Betreff**: Kundenschlüssel für \<*Your tenant's fully-qualified domain name*\>
+   **Betreff** : Kundenschlüssel für \<*Your tenant's fully-qualified domain name*\>
 
-   **Textkörper**: Abonnements-IDs, für die Sie einen obligatorischen Aufbewahrungszeitraum verbindlich festlegen möchten.
+   **Textkörper** : Abonnements-IDs, für die Sie einen obligatorischen Aufbewahrungszeitraum verbindlich festlegen möchten.
    Die Ausgabe von Get-AzProviderFeature für jedes Abonnement.
 
    Die Service-Level-Vereinbarung (Service Level Agreement, SLA) für den Abschluss dieses Vorgangs beläuft sich auf fünf Werktage, nachdem Microsoft benachrichtigt wurde (und überprüft hat, dass Sie Ihre Abonnements für die Nutzung eines obligatorischen Aufbewahrungszeitraums registriert haben).
 
-4. Nachdem Sie eine Benachrichtigung von Microsoft erhalten haben, dass die Registrierung abgeschlossen ist, überprüfen Sie den Status Ihrer Registrierung, indem Sie den Befehl Get-AzProviderFeature wie folgt ausführen. Wenn überprüft, gibt der Befehl Get-AzProviderFeature den Wert **registered** für die **Registrierungsstatus** Eigenschaft zurück. Führen Sie diese Aktion für jedes Abonnement aus.
+4. Nachdem Sie eine Benachrichtigung von Microsoft erhalten haben, dass die Registrierung abgeschlossen ist, überprüfen Sie den Status Ihrer Registrierung, indem Sie den Befehl Get-AzProviderFeature wie folgt ausführen. Wenn der Befehl Get-AzProviderFeature überprüft wird, wird der Wert von **registered** für die Eigenschaft **Registrierungsstatus** zurückgegeben. Führen Sie diese Aktion für jedes Abonnement aus.
 
    ```powershell
    Set-AzContext -SubscriptionId <SubscriptionId>
@@ -173,25 +175,29 @@ Erstellen Sie für jeden Microsoft 365-Dienst, mit dem Sie den Kundenschlüssel 
   
 Verwenden Sie eine Benennungskonvention für Schlüssel Tresore, die die vorgesehene Verwendung der Daten Verschlüsselungsrichtlinie wiedergibt, mit der Sie die Tresore verknüpfen. Im nachstehenden Abschnitt „Bewährte Methoden“ finden Sie Empfehlungen zur Benennung.
   
-Erstellen Sie für jede Datenverschlüsselungsrichtlinie eine eigene, paarweise angeordnete Tresor-Gruppe. Bei Exchange Online wählen Sie den Geltungsbereich einer Datenverschlüsselungsrichtlinie, wenn Sie die Richtlinie dem Postfach zuweisen. Einem Postfach kann nur eine Richtlinie zugewiesen sein, allerding können Sie bis zu 50 Richtlinien erstellen. Für SharePoint Online der Bereich einer Richtlinie alle Daten innerhalb einer Organisation an einem geografischen Standort oder _Geo_.
+Erstellen Sie für jede Datenverschlüsselungsrichtlinie eine eigene, paarweise angeordnete Tresor-Gruppe. Bei Exchange Online wählen Sie den Geltungsbereich einer Datenverschlüsselungsrichtlinie, wenn Sie die Richtlinie dem Postfach zuweisen. Einem Postfach kann nur eine Richtlinie zugewiesen sein, allerding können Sie bis zu 50 Richtlinien erstellen. Für SharePoint Online der Bereich einer Richtlinie alle Daten innerhalb einer Organisation an einem geografischen Standort oder _Geo_ .
 
 Das Erstellen von Schlüsseltresoren setzt außerdem die Erstellung von Azure-Ressourcengruppen voraus, da für Schlüsseltresore Speicherkapazität (wenn auch sehr geringe) erforderlich ist und die Schlüsseltresor-Protokollierung (sofern aktiviert) außerdem gespeicherte Daten generiert. Als bewährte Methode empfiehlt Microsoft die Verwendung eigener Administratoren zum Verwalten jeder Ressourcengruppe, wobei die Verwaltung mit der Gruppe der Administratoren abgestimmt wird, die alle zugehörigen Customer Key-Ressourcen verwalten.
   
 > [!IMPORTANT]
-> Um die Verfügbarkeit zu maximieren, sollten sich Ihre Schlüssel Tresore in Regionen befinden, die sich in der Nähe Ihres Microsoft 365-Diensts befinden. Wenn sich beispielsweise Ihre Exchange Online-Organisation in Nordamerika befindet, sollten Sie Ihre Schlüsseldepots in Nordamerika platzieren. Wenn Ihre Exchange Online-Organisation in Europa ist, sollten Sie Ihre Schlüsseldepots in Europa platzieren.<br/>Verwenden Sie für die Benennung ein gemeinsames Präfix für Schlüsseltresore sowie eine Abkürzung für die Verwendung und den Umfang des Schlüsseltresors und der Schlüssel (so ist z. B. für den Contoso SharePoint-Dienst, in den sich die Tresore in Nordamerika befinden, ein mögliches Namenspaar „Contoso-O365SP-NV-VaultA1“ und „Contoso-O365SP-NV-VaultA2“. In Azure sind Tresornamen global eindeutige Zeichenfolgen, daher müssen Sie möglicherweise Variationen Ihrer gewünschten Namen ausprobieren, falls die gewünschten Namen bereits von anderen Azure-Kunden beansprucht werden. Ab Juli 2017 können Tresornamen nicht mehr geändert werden, daher empfiehlt es sich, einen schriftlichen Setup-Plan zu erstellen und eine zweite Person zu beauftragen, die überprüft, ob der Plan ordnungsgemäß ausgeführt wird.<br/>Erstellen Sie Ihre Depots nach Möglichkeit in nicht-gekoppelten Regionen. Gekoppelte Azure-Regionen bieten eine hohe Verfügbarkeit über Dienstausfall-Domänen hinweg. Dementsprechend können regionale Paare gegenseitig als Backup-Region der jeweils anderen betrachtet werden. Dies bedeutet, dass eine Azure-Ressource, die in einer bestimmten Region platziert ist, durch die gekoppelte Region automatisch an Fehlertoleranz gewinnt. Aus diesem Grund bedeutet das Auswählen von Regionen für zwei Tresore, die in einer Daten Verschlüsselungsrichtlinie verwendet werden, in der die Regionen gekoppelt sind, dass nur insgesamt zwei Verfügbarkeits Regionen verwendet werden. In den meisten geografischen Regionen gibt es nur zwei Regionen, weshalb es noch nicht möglich ist, nicht-gekoppelte Regionen auszuwählen. Wählen Sie nach Möglichkeit zwei nicht gepaarte Bereiche für die beiden Tresore aus, die mit einer Daten Verschlüsselungsrichtlinie verwendet werden. Dies hat den positiven Effekt, dass insgesamt vier verfügbare Regionen genutzt werden. Weitere Informationen hierzu sowie ein aktuelles Verzeichnis der Regionenpaare finden Sie unter [Geschäftskontinuität und Notfallwiederherstellung (Business continuity and disaster recovery, BCDR): Gekoppelte Regionen in Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
+> Um die Verfügbarkeit zu maximieren, sollten sich Ihre Schlüssel Tresore in Regionen befinden, die sich in der Nähe Ihres Microsoft 365-Diensts befinden. Wenn sich beispielsweise Ihre Exchange Online-Organisation in Nordamerika befindet, sollten Sie Ihre Schlüsseldepots in Nordamerika platzieren. Wenn Ihre Exchange Online-Organisation in Europa ist, sollten Sie Ihre Schlüsseldepots in Europa platzieren.
+> 
+> Verwenden Sie für die Benennung ein gemeinsames Präfix für Schlüsseltresore sowie eine Abkürzung für die Verwendung und den Umfang des Schlüsseltresors und der Schlüssel (so ist z. B. für den Contoso SharePoint-Dienst, in den sich die Tresore in Nordamerika befinden, ein mögliches Namenspaar „Contoso-O365SP-NV-VaultA1“ und „Contoso-O365SP-NV-VaultA2“. In Azure sind Tresornamen global eindeutige Zeichenfolgen, daher müssen Sie möglicherweise Variationen Ihrer gewünschten Namen ausprobieren, falls die gewünschten Namen bereits von anderen Azure-Kunden beansprucht werden. Ab Juli 2017 können Tresornamen nicht mehr geändert werden, daher empfiehlt es sich, einen schriftlichen Setup-Plan zu erstellen und eine zweite Person zu beauftragen, die überprüft, ob der Plan ordnungsgemäß ausgeführt wird.
+> 
+> Erstellen Sie Ihre Depots nach Möglichkeit in nicht-gekoppelten Regionen. Gekoppelte Azure-Regionen bieten eine hohe Verfügbarkeit über Dienstausfall-Domänen hinweg. Dementsprechend können regionale Paare gegenseitig als Backup-Region der jeweils anderen betrachtet werden. Dies bedeutet, dass eine Azure-Ressource, die in einer bestimmten Region platziert ist, durch die gekoppelte Region automatisch an Fehlertoleranz gewinnt. Aus diesem Grund bedeutet das Auswählen von Regionen für zwei Tresore, die in einer Daten Verschlüsselungsrichtlinie verwendet werden, in der die Regionen gekoppelt sind, dass nur insgesamt zwei Verfügbarkeits Regionen verwendet werden. In den meisten geografischen Regionen gibt es nur zwei Regionen, weshalb es noch nicht möglich ist, nicht-gekoppelte Regionen auszuwählen. Wählen Sie nach Möglichkeit zwei nicht gepaarte Bereiche für die beiden Tresore aus, die mit einer Daten Verschlüsselungsrichtlinie verwendet werden. Dies hat den positiven Effekt, dass insgesamt vier verfügbare Regionen genutzt werden. Weitere Informationen hierzu sowie ein aktuelles Verzeichnis der Regionenpaare finden Sie unter [Geschäftskontinuität und Notfallwiederherstellung (Business continuity and disaster recovery, BCDR): Gekoppelte Regionen in Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
   
 ### <a name="assign-permissions-to-each-key-vault"></a>Zuweisen von Berechtigungen für jeden Schlüsseltresor (Key Vault)
 
 Sie müssen für jeden Schlüsseltresor entsprechend der von Ihnen gewählten Implementierung drei gesonderte Berechtigungsgruppen für Customer Key definieren. Sie müssen beispielsweise eine Berechtigungsgruppe für jede der folgenden Optionen definieren:
   
-- **Schlüsseltresor-Administratoren**, deren Aufgabe das tägliche Verwalten Ihrer Schlüsseltresore für Ihre Organisation ist. Zu diesen Aufgaben gehören Datensicherung sowie Erstellen, Abrufen, Importieren, Auflisten und Wiederherstellen.
+- **Schlüsseltresor-Administratoren** , deren Aufgabe das tägliche Verwalten Ihrer Schlüsseltresore für Ihre Organisation ist. Zu diesen Aufgaben gehören Datensicherung sowie Erstellen, Abrufen, Importieren, Auflisten und Wiederherstellen.
 
   > [!IMPORTANT]
   > Die Berechtigungsgruppe, die Schlüsseltresor-Administratoren zugewiesen ist, beinhaltet keine Berechtigung zum Löschen von Schlüsseln. Dies ist beabsichtigt und eine wichtige Vorgehensweise. Kryptografische Schlüssel werden normalerweise nicht gelöscht, da dadurch Daten dauerhaft vernichtet werden. Eine bewährte Methode besteht darin, den Schlüsseltresor-Administratoren diese Berechtigung nicht standardmäßig zuzuweisen. Behalten Sie stattdessen diese Berechtigung den Schlüsseltresor-Mitwirkenden vor und weisen Sie diese einem Administrator nur kurzfristig und lediglich, sofern die damit verbundenen Folgen klar verstanden wurden, zu.
   
   Um diese Berechtigungen einem Benutzer in Ihrer Organisation zuzuweisen, melden Sie sich bei Ihrem Azure-Abonnement mit Azure PowerShell an. Anweisungen finden Sie unter [Anmelden mit Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps).
 
-- Führen Sie das Cmdlet "Cmdlet festlegen-AzKeyVaultAccessPolicy" aus, um die erforderlichen Berechtigungen zuzuweisen.
+- Führen Sie das Set-AzKeyVaultAccessPolicy-Cmdlet aus, um die erforderlichen Berechtigungen zuzuweisen.
 
    ```powershell
    Set-AzKeyVaultAccessPolicy -VaultName <vault name> -UserPrincipalName <UPN of user> -PermissionsToKeys create,import,list,get,backup,restore
@@ -203,7 +209,7 @@ Sie müssen für jeden Schlüsseltresor entsprechend der von Ihnen gewählten Im
    Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com -PermissionsToKeys create,import,list,get,backup,restore
    ```
 
-- **Schlüsseltresor-Mitwirkenden**, die Berechtigungen für den Azure Key Vault selbst ändern können. Sie müssen diese Berechtigungen ändern, wenn Mitarbeiter Ihr Team verlassen oder Ihrem Team beitreten oder, im äußerst selten eintretenden Fall, dass Schlüsseltresor-Administratoren berechtigterweise die Berechtigung zum Löschen oder Wiederherstellen eines Schlüssels benötigen. Dieser Gruppe von Schlüsseltresor-Mitwirkenden muss die Rolle **Mitwirkender** für Ihren Schlüsseltresor zugewiesen werden. Sie können diese Rolle mithilfe des Azure-Ressourcenmanagers zuweisen. Informationen zu den einzelnen Schritten finden Sie unter [Verwenden der rollenbasierten Zugriffssteuerung zum Verwalten des Zugriffs auf Ihre Azure-Abonnementressourcen](https://docs.microsoft.com/azure/active-directory/role-based-access-control-configure). Der Administrator, der ein Abonnement erstellt, verfügt implizit über diesen Zugriff sowie die Möglichkeit, der Rolle des Mitwirkenden weitere Administratoren zuzuweisen.
+- **Schlüsseltresor-Mitwirkenden** , die Berechtigungen für den Azure Key Vault selbst ändern können. Sie müssen diese Berechtigungen ändern, wenn Mitarbeiter Ihr Team verlassen oder Ihrem Team beitreten oder, im äußerst selten eintretenden Fall, dass Schlüsseltresor-Administratoren berechtigterweise die Berechtigung zum Löschen oder Wiederherstellen eines Schlüssels benötigen. Dieser Gruppe von Schlüsseltresor-Mitwirkenden muss die Rolle **Mitwirkender** für Ihren Schlüsseltresor zugewiesen werden. Sie können diese Rolle mithilfe des Azure-Ressourcenmanagers zuweisen. Informationen zu den einzelnen Schritten finden Sie unter [Verwenden der rollenbasierten Zugriffssteuerung zum Verwalten des Zugriffs auf Ihre Azure-Abonnementressourcen](https://docs.microsoft.com/azure/active-directory/role-based-access-control-configure). Der Administrator, der ein Abonnement erstellt, verfügt implizit über diesen Zugriff sowie die Möglichkeit, der Rolle des Mitwirkenden weitere Administratoren zuzuweisen.
 
 - Wenn Sie den Kundenschlüssel mit Exchange Online und Skype for Business verwenden möchten, müssen Sie Microsoft 365 die Berechtigung erteilen, das Schlüsseldepot im Namen von Exchange Online und Skype for Business zu verwenden. Wenn Sie den Kundenschlüssel mit SharePoint Online und OneDrive für Unternehmen verwenden möchten, müssen Sie ebenfalls die Berechtigung für den Microsoft 365 hinzufügen, um den schlüsseltresor im Namen von SharePoint Online und OneDrive für Unternehmen zu verwenden. Führen Sie das Cmdlet " **AzKeyVaultAccessPolicy** " mit der folgenden Syntax aus, um die Berechtigung für Microsoft 365 zu erteilen: 
 
@@ -237,7 +243,7 @@ Wenn Sie Ihre Schlüssel schnell wiederherstellen können, ist ein umfassender D
   
 Führen Sie die folgenden Schritte aus, um Soft Delete für Ihre Schlüsseltresore zu aktivieren:
   
-1. Melden Sie sich mit Windows PowerShell bei Ihrem Azure-Abonnement an. Anweisungen finden Sie unter [Anmelden mit Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps).
+1. Melden Sie sich bei Ihrem Azure-Abonnement mit Windows PowerShell an. Anweisungen finden Sie unter [Anmelden mit Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps).
 
 2. Führen Sie das Cmdlet [Get-AzKeyVault](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvault) aus. In diesem Beispiel ist *Vault Name* der Name des Schlüssel Tresors, für den Sie Soft Delete aktivieren:
 
@@ -248,7 +254,7 @@ Führen Sie die folgenden Schritte aus, um Soft Delete für Ihre Schlüsseltreso
    Set-AzResource -ResourceId $r.ResourceId -Properties $r.Properties
    ```
 
-3. Bestätigen Sie, dass Soft Delete für den schlüsseltresor konfiguriert ist, indem Sie das Cmdlet **Get-AzKeyVault** ausführen. Wenn Soft Delete ordnungsgemäß für den schlüsseltresor konfiguriert ist, gibt die _Soft Delete Enabled_ -Eigenschaft den Wert " **true**" zurück:
+3. Bestätigen Sie, dass Soft Delete für den schlüsseltresor konfiguriert ist, indem Sie das Cmdlet **Get-AzKeyVault** ausführen. Wenn Soft Delete ordnungsgemäß für den schlüsseltresor konfiguriert ist, gibt die _Soft Delete Enabled_ -Eigenschaft den Wert " **true** " zurück:
 
    ```powershell
    Get-AzKeyVault -VaultName <vault name> | fl
@@ -256,7 +262,7 @@ Führen Sie die folgenden Schritte aus, um Soft Delete für Ihre Schlüsseltreso
 
 ### <a name="add-a-key-to-each-key-vault-either-by-creating-or-importing-a-key"></a>Hinzufügen eines Schlüssels zu jedem Schlüsseltresor durch das Erstellen oder Importieren eines Schlüssels
 
-Es gibt zwei Methoden zum Hinzufügen von Schlüsseln zu einem Azure Key Vault. Sie können entweder direkt im Schlüsseltresor einen Schlüssel erstellen oder aber einen Schlüssel importieren. Das Erstellen eines Schlüssels direkt im Schlüsseltresor ist die einfachere Methode, während der Import eines Schlüssels die vollständige Kontrolle über die Generierung des Schlüssels bietet.
+Es gibt zwei Methoden zum Hinzufügen von Schlüsseln zu einem Azure Key Vault. Sie können entweder direkt im Schlüsseltresor einen Schlüssel erstellen oder aber einen Schlüssel importieren. Das Erstellen eines Schlüssels direkt im Schlüsseltresor ist die einfachere Methode, während der Import eines Schlüssels die vollständige Kontrolle über die Generierung des Schlüssels bietet. Sie müssen die RSA-Schlüssel verwenden. Azure Key Vault unterstützt das Umbrechen und entpacken mit elliptischen Kurven Tasten nicht.
   
 Um einen Schlüssel direkt in Ihrem schlüsseltresor zu erstellen, führen [Sie das Add-AzKeyVaultKey-](https://docs.microsoft.com/powershell/module/az.keyvault/add-azkeyvaultkey) Cmdlet wie folgt aus:
   
@@ -273,7 +279,7 @@ Dabei gilt:
   > [!TIP]
   > Benennen Sie Schlüssel, die eine ähnliche Benennungskonvention verwenden, nach dem oben für Schlüsseltresore beschriebenen Verfahren. Auf diese Weise ist die Zeichenfolge in Tools, die lediglich den Schlüsselnamen anzeigen, selbsterklärend.
   
-- Wenn Sie den Schlüssel mit einem HSM schützen möchten, stellen Sie sicher, dass Sie **HSM** als Wert des Parameters _Destination_ angeben, andernfalls geben Sie **Software**an.
+- Wenn Sie den Schlüssel mit einem HSM schützen möchten, stellen Sie sicher, dass Sie **HSM** als Wert des Parameters _Destination_ angeben, andernfalls geben Sie **Software** an.
 
 Beispiel:
   
@@ -295,13 +301,13 @@ Wenden Sie sich an Ihr Sicherheitsteam, um festzustellen, ob die vorstehenden Be
 
 Microsoft 365 erfordert, dass das Azure Key Vault-Abonnement auf nicht abbrechen festgelegt ist und dass für die Schlüssel, die von Kunden Schlüsseln verwendet werden, Soft Delete aktiviert ist. Sie können dies sicherstellen, indem Sie die Wiederherstellungsstufe für Ihre Schlüssel überprüfen.
   
-Um die Wiederherstellungsebene eines Schlüssels zu überprüfen, führen Sie in Azure PowerShell das Cmdlet Get-AzKeyVaultKey wie folgt aus:
+Um die Wiederherstellungsebene eines Schlüssels zu überprüfen, führen Sie in Azure PowerShell das Get-AzKeyVaultKey-Cmdlet wie folgt aus:
   
 ```powershell
 (Get-AzKeyVaultKey -VaultName <vault name> -Name <key name>).Attributes
 ```
 
-Wenn die _Wiederherstellungsebene_ einen anderen Wert als "wieder **herstellbare + ProtectedSubscription**" zurückgibt, müssen Sie dieses Thema durchlesen und sicherstellen, dass Sie alle Schritte zum Platzieren des Abonnements in der Liste "nicht abbrechen" und "Soft Delete" für jeden schlüsseltresor aktiviert haben.
+Wenn die _Wiederherstellungsebene_ einen anderen Wert als "wieder **herstellbare + ProtectedSubscription** " zurückgibt, müssen Sie dieses Thema durchlesen und sicherstellen, dass Sie alle Schritte zum Platzieren des Abonnements in der Liste "nicht abbrechen" und "Soft Delete" für jeden schlüsseltresor aktiviert haben.
   
 ### <a name="back-up-azure-key-vault"></a>Sichern von Azure Key Vault
 
@@ -341,7 +347,7 @@ Get-AzKeyVault -VaultName <vault name>
 
 Suchen Sie in der Ausgabe nach der Zugriffsrichtlinie und, je nach Bedarf, nach der Exchange Online-Identität (GUID) bzw. der SharePoint Online Identity (GUID). Alle drei vorstehenden Berechtigungen müssen unter den Berechtigungen für Schlüssel angezeigt werden.
   
-Wenn die Konfiguration der Zugriffsrichtlinie falsch ist, führen Sie das Cmdlet "AzKeyVaultAccessPolicy" wie folgt aus:
+Wenn die Konfiguration der Zugriffsrichtlinie falsch ist, führen Sie das Set-AzKeyVaultAccessPolicy-Cmdlet wie folgt aus:
   
 ```powershell
 Set-AzKeyVaultAccessPolicy -VaultName <vault name> -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName <Office 365 appID>
@@ -438,13 +444,13 @@ Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
 
 Dabei legt der *MailboxIdParameter* ein Postfach fest. Weitere Informationen zum Cmdlet „Set-Mailbox“ finden Sie unter [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
 
-Für [lokale Postfächer mit Outlook für IOS und Android mit moderner Hybrid Authentifizierung](https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)können die lokalen Postfachdaten, die mit dem Exchange Online-Mandanten synchronisiert werden, der DEP mithilfe des Cmdlets "MailUser" zugewiesen werden.
+Für [lokale Postfächer mit Outlook für IOS und Android mit moderner Hybrid Authentifizierung](https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)können die lokalen Postfachdaten, die mit dem Exchange Online-Mandanten synchronisiert werden, der DEP mithilfe des Set-MailUser-Cmdlets zugewiesen werden.
 
 ```powershell
 Set-MailUser -Identity <MailUserIdParameter> -DataEncryptionPolicy <PolicyName>
 ```
 
-Dabei gibt *mailuseridparameter* einen e-Mail-Benutzer an (auch als e-Mail-aktivierter Benutzer bezeichnet). Weitere Informationen zum Cmdlet "MailUser" finden Sie unter [festlegen-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser).
+Dabei gibt *mailuseridparameter* einen e-Mail-Benutzer an (auch als e-Mail-aktivierter Benutzer bezeichnet). Weitere Informationen zum Set-MailUser-Cmdlet finden Sie unter [festlegen-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser).
   
 ### <a name="validate-mailbox-encryption"></a>Überprüfen einer Postfachverschlüsselung
 
@@ -481,12 +487,17 @@ Um eine Datenverschlüsselungsrichtlinie (DEP) zu erstellen, müssen Sie mithilf
    ```powershell
    Register-SPODataEncryptionPolicy -PrimaryKeyVaultName <PrimaryKeyVaultName> -PrimaryKeyName <PrimaryKeyName> -PrimaryKeyVersion <PrimaryKeyVersion> -SecondaryKeyVaultName <SecondaryKeyVaultName> -SecondaryKeyName <SecondaryKeyName> -SecondaryKeyVersion <SecondaryKeyVersion>
    ```
+   Beispiel:
+  
+ ```powershell
+Register-SPODataEncryptionPolicy -PrimaryKeyVaultName 'stageRG3vault' -PrimaryKeyName 'SPKey3' -PrimaryKeyVersion 'f635a23bd4a44b9996ff6aadd88d42ba' -SecondaryKeyVaultName 'stageRG5vault' -SecondaryKeyName 'SPKey5' -SecondaryKeyVersion '2b3e8f1d754f438dacdec1f0945f251a’
+```
 
-   Sobald Sie die Datenverschlüsselungsrichtlinie (DEP) registrieren, beginnt die Verschlüsselung der Daten im Geo. Dies kann einige Zeit dauern.
+   Sobald Sie die Datenverschlüsselungsrichtlinie (DEP) registrieren, beginnt die Verschlüsselung der Daten im Geo. Dies kann einige Zeit dauern. Weitere Informationen zur Verwendung dieses Parameters finden Sie unter [Register-SPODataEncryptionPolicy](https://docs.microsoft.com/powershell/module/sharepoint-online/register-spodataencryptionpolicy?view=sharepoint-ps).
 
 ### <a name="validate-file-encryption"></a>Überprüfen der Dateiverschlüsselung
 
- Um die Verschlüsselung von SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Dateien zu überprüfen, stellen Sie [eine Verbindung mit SharePoint Online PowerShell her](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell), und verwenden Sie dann das Cmdlet Get-SPODataEncryptionPolicy, um den Status Ihres Mandanten zu überprüfen. Die _State_ -Eigenschaft gibt den Wert **registriert** zurück, wenn die Verschlüsselung von Kunden Schlüsseln aktiviert ist und alle Dateien an allen Standorten verschlüsselt wurden. Wenn die Verschlüsselung noch ausgeführt wird, bietet dieses Cmdlet Informationen darüber, welcher Prozentsatz der Websites abgeschlossen ist.
+ Um die Verschlüsselung von SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Dateien zu überprüfen, stellen Sie [eine Verbindung mit SharePoint Online PowerShell her](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell), und überprüfen Sie dann mithilfe des Get-SPODataEncryptionPolicy-Cmdlets den Status Ihres Mandanten. Die _State_ -Eigenschaft gibt den Wert **registriert** zurück, wenn die Verschlüsselung von Kunden Schlüsseln aktiviert ist und alle Dateien an allen Standorten verschlüsselt wurden. Wenn die Verschlüsselung noch ausgeführt wird, bietet dieses Cmdlet Informationen darüber, welcher Prozentsatz der Websites abgeschlossen ist.
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
