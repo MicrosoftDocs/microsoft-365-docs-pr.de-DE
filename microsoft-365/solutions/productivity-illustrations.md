@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 01ee05c69a9b649ce3f0c3b93cbdb68bb7a87c69
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: 7709bf9a3063863d802e8c36a09ea10d287d0e34
+ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48774123"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48779272"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Darstellungen zu Microsoft 365-Produktivitätslösungen
 
@@ -72,7 +72,7 @@ Erweiterter eDiscovery-End-to-End-Workflow und Datenfluss, einschließlich in Mi
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[![Modell Poster: Erweiterte eDiscovery-Architektur in Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [Als Bild anzeigen](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [Als PDF](https:download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \| herunterladen [Als Visio herunterladen](https:download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> Aktualisiert am 2020|Enthält <ul><li>  End-to-End-Workflow in einer einzigen Umgebung</li><li>End-to-End-Workflow in einer Microsoft 365 Multi-Geo-Umgebung </li><li>End-to-End-Datenfluss, der den EDRM-Workflow unterstützt</li> |
+|[![Modell Poster: Erweiterte eDiscovery-Architektur in Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [Als Bild anzeigen](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [Als PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \| herunterladen [Als Visio herunterladen](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> Aktualisiert am 2020|Enthält <ul><li>  End-to-End-Workflow in einer einzigen Umgebung</li><li>End-to-End-Workflow in einer Microsoft 365 Multi-Geo-Umgebung </li><li>End-to-End-Datenfluss, der den EDRM-Workflow unterstützt</li> |
   
 <!--
 
