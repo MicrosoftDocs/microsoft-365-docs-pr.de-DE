@@ -6,11 +6,13 @@
 |Kanada                       |CAN     |Rechenzentren in den USA                    |
 |Europa/Naher Osten/Afrika|EUR     |Rechenzentren in Europa                |
 |Frankreich                       |FRA     |Rechenzentren in Europa                |
+|Deutschland                      |DEU     |Rechenzentren in Europa                |
 |India                        |IND     |Rechenzentren in Südost- oder Ostasien|
 |Japan                        |JPN     |Rechenzentren in Südost- oder Ostasien|
 |Korea                        |KOR     |Rechenzentren in Südost- oder Ostasien|
 |Nordamerika                |NAM     |Rechenzentren in den USA                    |
-|Südafrika                 |ZAF     |(eDiscovery Datenspeicherort in Kürze verfügbar)|
-|Schweiz                  |CHE     |(eDiscovery Datenspeicherort in Kürze verfügbar)|
-|Vereinigte Arabische Emirate         |ARE     |(eDiscovery Datenspeicherort in Kürze verfügbar)|
+|Norwegen                       |Noch     |(eDiscovery Datenspeicherort in Kürze verfügbar)|
+|Südafrika                 |ZAF     |Rechenzentren in Südost- oder Ostasien|
+|Schweiz                  |CHE     |Rechenzentren in Europa                |
+|Vereinigte Arabische Emirate         |ARE     |Rechenzentren in Südost- oder Ostasien|
 |Vereinigtes Königreich               |GBR     |Rechenzentren in Europa                |
