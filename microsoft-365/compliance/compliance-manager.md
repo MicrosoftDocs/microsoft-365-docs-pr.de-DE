@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager unterstützt Organisationen bei der Vereinfachung und Automatisierung von Risikobewertungen und schlägt Empfohlene Maßnahmen zur Behandlung von Risiken vor.
-ms.openlocfilehash: d26d187277b021e278667b6e0ae19a0772b34f03
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: d7136368a1c9726d1a77a0c99e717b98e1920242
+ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48368128"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48791803"
 ---
 # <a name="microsoft-compliance-manager"></a>Microsoft Compliance-Manager
 
@@ -67,7 +67,7 @@ Compliance-Manager vergibt Ihnen Punkte für die Durchführung von Verbesserungs
 
 Compliance-Manager gibt Ihnen eine erste Bewertung basierend auf der Microsoft 365-Datenschutz Basis. Dieser Basisplan umfasst eine Reihe von Steuerelementen, die wichtige Regeln und Standards für den Datenschutz und die allgemeine Datensteuerung beinhalten.
 
-##### <a name="learn-more"></a>Weitere Informationen
+##### <a name="learn-more"></a>Mehr erfahren
 
 Grund [Legendes zur Berechnung der Konformitätsbewertung](compliance-score-calculation.md)
 
@@ -83,11 +83,11 @@ Ein Steuerelement ist eine Anforderung einer Verordnung, eines Standards oder ei
 
 Compliance-Manager verfolgt die folgenden Arten von Steuerelementen:
 
-1. Von **Microsoft verwaltete Steuer**Elemente: Steuerelemente für Microsoft Cloud-Dienste, die von Microsoft für die Implementierung zuständig sind
-2. **Ihre Steuerelemente**: manchmal auch als von Kunden verwaltete Steuerelemente bezeichnet, sind dies Steuerelemente, die von Ihrer Organisation implementiert und verwaltet werden.
-3. **Gemeinsame Steuerelemente**: Dies sind Steuerelemente, die sowohl in Ihrer Organisation als auch in Microsoft für die Implementierung verantwortlich sind.
+1. Von **Microsoft verwaltete Steuer** Elemente: Steuerelemente für Microsoft Cloud-Dienste, die von Microsoft für die Implementierung zuständig sind
+2. **Ihre Steuerelemente** : manchmal auch als von Kunden verwaltete Steuerelemente bezeichnet, sind dies Steuerelemente, die von Ihrer Organisation implementiert und verwaltet werden.
+3. **Gemeinsame Steuerelemente** : Dies sind Steuerelemente, die sowohl in Ihrer Organisation als auch in Microsoft für die Implementierung verantwortlich sind.
 
-##### <a name="learn-more"></a>Weitere Informationen
+##### <a name="learn-more"></a>Mehr erfahren
 
 [Überwachen Sie den Status Ihrer Steuerelemente](compliance-manager-assessments.md#monitor-assessment-progress-and-controls).
 
@@ -99,15 +99,15 @@ Bei einem Assessment handelt es sich um eine Gruppierung von Steuerelementen aus
 
 Assessments weisen mehrere Komponenten auf:
 
-- **Im Bereich Dienste**: die spezifische Gruppe von Microsoft-Diensten, die für die Bewertung gelten.
-- Von Microsoft **verwaltete Steuer**Elemente: Steuerelemente für Microsoft Cloud-Dienste, die Microsoft in Ihrem Auftrag implementiert
-- **Ihre Steuerelemente**: manchmal auch als von Kunden verwaltete Steuerelemente bezeichnet, sind dies Steuerelemente, die von Ihrer Organisation implementiert und verwaltet werden.
-- **Gemeinsame Steuerelemente**: Dies sind Steuerelemente, die sowohl in Ihrer Organisation als auch in Microsoft für die Implementierung verantwortlich sind.
-- **Bewertungsergebnis**: zeigt den Fortschritt beim erreichen von Gesamt möglichen Punkten von Aktionen innerhalb der Bewertung an, die von Ihrer Organisation und von Microsoft verwaltet werden.
+- **Im Bereich Dienste** : die spezifische Gruppe von Microsoft-Diensten, die für die Bewertung gelten.
+- Von Microsoft **verwaltete Steuer** Elemente: Steuerelemente für Microsoft Cloud-Dienste, die Microsoft in Ihrem Auftrag implementiert
+- **Ihre Steuerelemente** : manchmal auch als von Kunden verwaltete Steuerelemente bezeichnet, sind dies Steuerelemente, die von Ihrer Organisation implementiert und verwaltet werden.
+- **Gemeinsame Steuerelemente** : Dies sind Steuerelemente, die sowohl in Ihrer Organisation als auch in Microsoft für die Implementierung verantwortlich sind.
+- **Bewertungsergebnis** : zeigt den Fortschritt beim erreichen von Gesamt möglichen Punkten von Aktionen innerhalb der Bewertung an, die von Ihrer Organisation und von Microsoft verwaltet werden.
 
 Beim Erstellen von Bewertungen weisen Sie diese einer Gruppe zu. Sie können Gruppen auf beliebige Weise konfigurieren, die für Ihre Organisation am logischsten ist. Sie können beispielsweise Bewertungen nach Überwachungsjahr, Region, Lösung, Teams in Ihrer Organisation oder auf andere Weise gruppieren. Nachdem Sie Gruppen erstellt haben, können Sie [Ihr Compliance-Manager-Dashboard Filtern](compliance-manager-setup.md#filtering-your-dashboard-view) , um Ihre Bewertung von einer oder mehreren Gruppen anzuzeigen.
 
-##### <a name="learn-more"></a>Weitere Informationen
+##### <a name="learn-more"></a>Mehr erfahren
 
 [Erstellen und Verwalten von Bewertungen im Compliance-Manager](compliance-manager-assessments.md).
 
@@ -115,7 +115,7 @@ Beim Erstellen von Bewertungen weisen Sie diese einer Gruppe zu. Sie können Gru
 
 Compliance-Manager stellt Vorlagen zur Verfügung, mit denen Sie schnell Bewertungen erstellen können. Sie können diese Vorlagen ändern, um eine für Ihre Anforderungen optimierte Bewertung zu erstellen. Sie können auch eine benutzerdefinierte Bewertung erstellen, indem Sie eine Vorlage mit ihren eigenen Steuerelementen und Aktionen erstellen. Beispielsweise kann es sein, dass eine Vorlage eine interne Geschäftsprozess Steuerung oder einen regionalen Datenschutzstandard abdeckt, der nicht von einer unserer 150 vorab erstellten Bewertungs Vorlagen abgedeckt wird.
 
-##### <a name="learn-more"></a>Weitere Informationen
+##### <a name="learn-more"></a>Mehr erfahren
 
 [Hier finden Sie eine Liste der vom Compliance-Manager bereitgestellten Bewertungs Vorlagen](compliance-manager-templates-list.md).
 
@@ -125,7 +125,7 @@ Compliance-Manager stellt Vorlagen zur Verfügung, mit denen Sie schnell Bewertu
 
 Verbesserungs Aktionen helfen beim zentralisieren Ihrer Compliance-Aktivitäten. Jede Verbesserungs Aktion enthält empfohlene Anleitungen, die Sie bei der Anpassung an Datenschutzbestimmungen und-Standards unterstützen sollen. Verbesserungs Aktionen können Benutzern in Ihrer Organisation zugewiesen werden, um Implementierungs-und Testaufgaben auszuführen. Sie können auch Dokumentation, Notizen und Datensatzstatus Aktualisierungen in der Verbesserungs Aktion speichern.
 
-##### <a name="learn-more"></a>Weitere Informationen
+##### <a name="learn-more"></a>Mehr erfahren
 
 [Verwenden Sie Verbesserungs Aktionen, um den Compliance-Workflow zu verwalten](compliance-manager-improvement-actions.md).
 

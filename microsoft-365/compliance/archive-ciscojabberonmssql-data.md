@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen Connector zum Importieren und Archivieren von Cisco Jabber-Daten aus Globanet in Microsoft 365 einrichten. Mit diesem Connector können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren, damit Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten der drittanbieterdaten Ihrer Organisation verwenden können.
-ms.openlocfilehash: c87449c35d588fd886d9d108f136eea0a4799ccf
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: c93e0e702fba5a8232f3d41b3b6a32ab12216b3c
+ms.sourcegitcommit: 16cbac5eacadd7b30cbca1fd2435ba9098de5e1c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48409189"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48785549"
 ---
-# <a name="set-up-a-connector-to-archive-cisco-jabber-data-preview"></a>Einrichten eines Connectors zum Archivieren von Cisco Jabber-Daten (Vorschau)
+# <a name="set-up-a-connector-to-archive-cisco-jabber-data"></a>Einrichten eines Connectors zum Archivieren von Cisco Jabber-Daten
 
 Verwenden Sie einen Globanet-Connector im Microsoft 365 Compliance Center, um Daten aus der Cisco Jabber-Plattform in Benutzerpostfächer in Ihrer Microsoft 365-Organisation zu importieren und zu archivieren. Globanet bietet Ihnen einen [Cisco Jabber](https://globanet.com/jabber/) -Konnektor, der so konfiguriert ist, dass er Elemente aus der MS SQL-Datenbank von Jabber wie 1:1 Chatnachrichten und Gruppenchats erfasst und diese Elemente dann nach Microsoft 365 importiert. Der Connector Ruft Daten aus der MS SQL-Datenbank von Cisco Jabber ab, verarbeitet sie und wandelt die Inhalte aus dem Cisco Jabber-Konto eines Benutzers in ein e-Mail-Nachrichtenformat um und importiert diese Elemente in das Postfach des Benutzers in Microsoft 365.
 
@@ -39,7 +39,7 @@ In der folgenden Übersicht wird erläutert, wie Sie einen Connector zum Archivi
 
 4. Der automatische Benutzerzuordnung als Connector importiert Elemente in die Postfächer bestimmter Benutzer mithilfe des Werts der *e-Mail* -Eigenschaft des in [Schritt 3](#step-3-map-users-and-complete-the-connector-setup)beschriebenen. Ein Unterordner im Posteingangsordner namens " **Cisco Jabber" in MS SQL** wird in den Benutzerpostfächern erstellt, und die Nachrichtenelemente werden in diesen Ordner importiert. Der Connector verwendet den Wert der *Email* -Eigenschaft. Jedes Cisco Jabber-Element enthält diese Eigenschaft, die mit der e-Mail-Adresse jedes Teilnehmers der Nachrichten aufgefüllt wird.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Erstellen Sie ein Globanet-Merge1-Konto für Microsoft-Connectors. Wenden Sie sich dazu an den [Globanet-Kunden Support](https://globanet.com/ms-connectors-contact/). Sie müssen sich bei diesem Konto anmelden, wenn Sie den Connector in Schritt 1 erstellen.
 
@@ -51,13 +51,13 @@ In der folgenden Übersicht wird erläutert, wie Sie einen Connector zum Archivi
 
 Der erste Schritt besteht darin, auf die **Daten Konnektoren** im Microsoft 365 Compliance Center zuzugreifen und einen Connector für Cisco Jabber auf MS SQL-Daten zu erstellen.
 
-1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com/) und klicken Sie dann auf **Data Connectors**  >  **Cisco jabber in MS SQL**.
+1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com/) und klicken Sie dann auf **Data Connectors**  >  **Cisco jabber in MS SQL** .
 
-2. Klicken Sie auf der Seite **Cisco Jabber auf MS SQL** -Produktbeschreibung auf **Connector hinzufügen**.
+2. Klicken Sie auf der Seite **Cisco Jabber auf MS SQL** -Produktbeschreibung auf **Connector hinzufügen** .
 
-3. Klicken Sie auf der Seite **Nutzungsbedingungen** auf **annehmen**.
+3. Klicken Sie auf der Seite **Nutzungsbedingungen** auf **annehmen** .
 
-4. Geben Sie einen eindeutigen Namen ein, der den Connector identifiziert, und klicken Sie dann auf **weiter**.
+4. Geben Sie einen eindeutigen Namen ein, der den Connector identifiziert, und klicken Sie dann auf **weiter** .
 
 5. Melden Sie sich bei Ihrem Merge1-Konto an, um den Connector zu konfigurieren.
 
@@ -65,19 +65,19 @@ Der erste Schritt besteht darin, auf die **Daten Konnektoren** im Microsoft 365 
 
 Der zweite Schritt besteht darin, den Cisco Jabber auf dem MS SQL-Connector auf der Globanet Merge1-Website zu konfigurieren. Informationen zum Konfigurieren von Cisco Jabber auf MS SQL Connector finden Sie unter [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Cisco%20Jabber%20on%20MS%20SQL%20User%20Guide%20.pdf).
 
-Nachdem Sie auf **& fertig stellen**klicken, werden Sie zurück zum Microsoft 365-Kompatibilitätscenter auf die Seite **Benutzerzuordnung** im Connector-Assistenten umgeleitet.
+Nachdem Sie auf **& fertig stellen** klicken, werden Sie zurück zum Microsoft 365 Compliance Center auf die Seite **Benutzerzuordnung** im Connector-Assistenten umgeleitet.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Schritt 3: Zuordnen von Benutzern und Abschließen des Connector-Setups
 
 Führen Sie die folgenden Schritte aus, um Benutzer zuzuordnen und den Connector zu vervollständigen, der im Microsoft 365 Compliance Center eingerichtet wurde:
 
-1. Aktivieren Sie auf der Seite **Cisco Jabber on MS SQL users to Microsoft 365 users** die automatische Benutzerzuordnung. Der Cisco Jabber auf MS SQL-Elementen enthält eine Eigenschaft mit dem Namen " *e-Mail*", die e-Mail-Adressen für Benutzer in Ihrer Organisation enthält. Wenn der Connector diese Adresse einem Microsoft 365-Benutzer zuordnen kann, werden die Elemente in das Postfach dieses Benutzers importiert.
+1. Aktivieren Sie auf der Seite **Cisco Jabber on MS SQL users to Microsoft 365 users** die automatische Benutzerzuordnung. Der Cisco Jabber auf MS SQL-Elementen enthält eine Eigenschaft mit dem Namen " *e-Mail* ", die e-Mail-Adressen für Benutzer in Ihrer Organisation enthält. Wenn der Connector diese Adresse einem Microsoft 365-Benutzer zuordnen kann, werden die Elemente in das Postfach dieses Benutzers importiert.
 
-2. Klicken Sie auf der Seite **Administrator Zustimmung** auf **Zustimmung erteilen**. Sie werden zur Microsoft-Website umgeleitet. Klicken Sie auf **akzeptieren** , um die Zustimmung zu erteilen.
+2. Klicken Sie auf der Seite **Administrator Zustimmung** auf **Zustimmung erteilen** . Sie werden zur Microsoft-Website umgeleitet. Klicken Sie auf **akzeptieren** , um die Zustimmung zu erteilen.
 
    Ihre Organisation muss einwilligen, dass der Office 365 Import Dienst auf Postfachdaten in Ihrer Organisation zugreifen kann. Um die Zustimmung des Administrators bereitzustellen, müssen Sie mit den Anmeldeinformationen eines globalen Administrators von Microsoft 365 angemeldet sein und dann die Zustimmungs Anforderung annehmen. Wenn Sie nicht als globaler Administrator angemeldet sind, können Sie zu [dieser Seite](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) wechseln und sich mit globalen Administratoranmeldeinformationen anmelden, um die Anforderung zu akzeptieren.
 
-3. Klicken Sie auf **weiter**, überprüfen Sie Ihre Einstellungen, und wechseln Sie zur Seite **Daten Konnektoren** , um den Fortschritt des Importvorgangs für den neuen Connector anzuzeigen.
+3. Klicken Sie auf **weiter** , überprüfen Sie Ihre Einstellungen, und wechseln Sie zur Seite **Daten Konnektoren** , um den Fortschritt des Importvorgangs für den neuen Connector anzuzeigen.
 
 ## <a name="step-4-monitor-the-cisco-jabber-connector"></a>Schritt 4: Überwachen des Cisco Jabber-Connectors
 
@@ -87,7 +87,7 @@ Nachdem Sie den Cisco jabber in MS SQL Connector erstellt haben, können Sie den
 
 2. Klicken Sie auf die Registerkarte **Connectors** , und wählen Sie dann **Cisco jabber in MS SQL** Connector aus, um die Flyout-Seite anzuzeigen, die die Eigenschaften und Informationen zum Connector enthält.
 
-3. Klicken Sie unter **Connectorstatus with Source**auf den Link **Download Protokoll** , um das Statusprotokoll für den Connector zu öffnen (oder zu speichern). Dieses Protokoll enthält Daten, die in die Microsoft-Cloud importiert wurden.
+3. Klicken Sie unter **Connectorstatus with Source** auf den Link **Download Protokoll** , um das Statusprotokoll für den Connector zu öffnen (oder zu speichern). Dieses Protokoll enthält Daten, die in die Microsoft-Cloud importiert wurden.
 
 ## <a name="known-issues"></a>Bekannte Probleme
 

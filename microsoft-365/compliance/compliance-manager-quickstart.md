@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Verwenden Sie den Compliance-Manager-Schnellstart Leitfaden, um Sie auf dem Weg des Verständnisses, der Einrichtung und der Verwendung des Compliance-Managers zu unterstützen.
-ms.openlocfilehash: 9fd86550652860b1c89be414f4c0b55c28a817e5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 895f03482c0af9603aa96d907d7339a853ef5e9d
+ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204442"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48791791"
 ---
-# <a name="compliance-manager-quickstart"></a>Compliance-Manager – Schnellstart
+# <a name="compliance-manager-quickstart"></a>Compliance-Manager-Schnellstart
 
 **In diesem Artikel:** Verwenden Sie diese Schnellstartanleitung, um Sie bei der Verwendung von Microsoft Compliance Manager zu unterstützen, um die Einhaltung von Vorschriften, Richtlinien und Standards in Ihrer Organisation zu verwalten.
 
@@ -39,7 +39,7 @@ Unsere [Kompatibilitäts-Manager](compliance-manager.md) -Übersichtsseite ist d
 
 - [Grundlegendes zur Konformitätsbewertung](compliance-manager.md#understanding-your-compliance-score)
 - [Übersicht über die wichtigsten Elemente: Steuerelemente, Bewertungen, Vorlagen und Verbesserungs Aktionen](compliance-manager.md#key-elements-controls-assessments-templates-improvement-actions)
-- [Grundlegendes zum Compliance-Manager-Dashboard](compliance-manager-setup.md#understand-the-compliance-manger-dashboard)
+- [Grundlegendes zum Compliance-Manager-Dashboard](compliance-manager-setup.md#understand-the-compliance-manager-dashboard)
 - [Filtern der Dashboardansicht](compliance-manager-setup.md#filtering-your-dashboard-view)
 - [Informationen zu Verbesserungs Aktionen](compliance-manager-setup.md#improvement-actions-page)
 - [Grundlegendes zu Bewertungen](compliance-manager.md#assessments)
@@ -55,7 +55,7 @@ Nachdem Sie sich mit den Grundlagen vertraut gemacht haben, müssen Sie die Anfo
 
 ## <a name="scaling-up-use-advanced-functionality-to-meet-your-custom-needs"></a>Aufwärtsskalierung: Verwenden Sie erweiterte Funktionen, um Ihre benutzerdefinierten Anforderungen zu erfüllen.
 
-Wenn Sie mit der Verwaltung von Assessments in Compliance Manger vertraut sind, können Sie mit Vorlagen zusammenarbeiten, um eine Konformitäts-Manager-Bewertung mit ihren eigenen Aktionen und Steuerelementen zu ändern. Sie können auch eine eigene benutzerdefinierte Bewertung erstellen. Benutzerdefinierte Bewertungen sind hilfreich für:
+Wenn Sie das Management von Assessments im Compliance-Manager komfortabel verwalten, können Sie mit Vorlagen zusammenarbeiten, um eine Compliance-Manager-Bewertung mit ihren eigenen Aktionen und Steuerelementen zu ändern. Sie können auch eine eigene benutzerdefinierte Bewertung erstellen. Benutzerdefinierte Bewertungen sind hilfreich für:
 
 - Verwalten der Compliance für nicht von Microsoft 365 Produkte wie apps und Dienste von Drittanbietern, lokale Anwendungen und andere Objekte.
 - Verwalten eigener benutzerdefinierter oder Geschäfts spezifischer Compliance-Steuerelemente.
