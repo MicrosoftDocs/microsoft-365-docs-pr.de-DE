@@ -88,9 +88,9 @@ Wenn die Aufbewahrungseinstellungen das reine Aufbewahren oder das reine Lösche
 
 2. **Wenn der Inhalt während des festgelegten Zeitraums nicht gelöscht wird** : Das Dokument wird am Ende des in der Aufbewahrungsrichtlinie festgelegten Zeitraums in den Standardpapierkorb verschoben. Wenn ein Benutzer das Dokument dort löscht oder diesen Papierkorb leert (auch als Bereinigen bekannt), wird das Dokument in den endgültigen Papierkorb verschoben. Der Standard- und der endgültige Papierkorb umfassen zusammen einen Aufbewahrungszeitraum von 93 Tagen. Am Ende dieser 93 Tage wird das Dokument dauerhaft von seinem jeweiligen Aufbewahrungsort gelöscht, entweder im Standard- oder im endgültigen Papierkorb. Der Papierkorb ist nicht indiziert und daher für die Suche nicht verfügbar. Eine eDiscovery-Suche kann daher keinen Inhalt des Papierkorbs finden, um für diesen eine Aufbewahrungspflicht festzulegen.
 
-## <a name="how-retention-works-for-onenote-content"></a>Funktionsweise einer Aufbewahrungsrichtlinie mit OneNote-Inhalt
+## <a name="how-retention-works-for-onenote-content"></a>Funktionsweise einer Aufbewahrungsrichtlinie für OneNote-Inhalte
 
-Wenn Sie eine Aufbewahrungsrichtlinie auf einen Speicherort anwenden, der OneNote-Inhalt beinhaltet, dann sind die unterschiedlichen OneNote-Abschnitte tatsächlich unterschiedliche Dateien. Dies bedeutet, dass jeder Abschnitt entsprechend den von Ihnen festgelegten Aufbewahrungseinstellungen einzeln aufbewahrt oder gelöscht wird.
+Wenn Sie eine Aufbewahrungsrichtlinie auf einen Speicherort anwenden, der OneNote-Inhalte beinhaltet, dann sind die unterschiedlichen OneNote-Abschnitte tatsächlich unterschiedliche Dateien. Dies bedeutet, dass jeder Abschnitt entsprechend den von Ihnen festgelegten Aufbewahrungseinstellungen einzeln aufbewahrt oder gelöscht wird.
 
 ## <a name="how-retention-works-with-document-versions-in-a-site-collection"></a>Funktionsweise der Aufbewahrung mit Dokumentversionen in einer Websitesammlung
 

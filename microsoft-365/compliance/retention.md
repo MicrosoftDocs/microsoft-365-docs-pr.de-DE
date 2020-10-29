@@ -278,7 +278,7 @@ Mithilfe der folgenden Tabelle können Sie anhand der Funktionen feststellen, ob
 |Benutzeroberfläche-Anwesenheitsinformationen für Endbenutzer | Nein | Ja |
 |Wird beibehalten, wenn der Inhalt verschoben wird | Nein | Ja, innerhalb Ihres Microsoft 365-Mandanten |
 |Deklarieren eines Elements als Datensatz| Nein | Ja |
-|Start des Aufbewahrungszeitraums: <br /> – Wenn Elemente erstellt oder zuletzt geändert wurden<br /> – Wenn beschriftet oder von einem Ereignis ausgehend | <br />Ja <br />Nein | <br />Ja <br /> Ja |
+|Start des Aufbewahrungszeitraums: <br /> – Wenn Elemente erstellt oder zuletzt geändert wurden<br /> – Beim Anwenden einer Bezeichnung oder von einem Ereignis ausgehend | <br />Ja <br />Nein | <br />Ja <br /> Ja |
 |Dispositionsüberprüfung | Nein| Ja |
 |Dispositionsnachweise von bis zu 7 Jahren | Nein |Ja, wenn Element als ein Datensatz deklariert ist|
 |Administratoraktivitäten überwachen| Ja | Ja|

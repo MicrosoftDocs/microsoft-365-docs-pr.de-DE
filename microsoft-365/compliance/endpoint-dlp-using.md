@@ -1,5 +1,5 @@
 ---
-title: Nutzung von Endpunkt-DLP (Vorschau)
+title: Nutzung von Endpunkt-DLP
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie DLP-Richtlinien (Data Loss Prevention, Verhinderung von Datenverlust) so konfigurieren können, dass Microsoft 365-EPDLP-Speicherorte (Endpoint Data Loss Prevention) verwendet werden.
-ms.openlocfilehash: 0f1fc3159de6545007ddd62da2fca17ce87ad1dc
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 682996c084f4dce888aaff517ad84d335ed92206
+ms.sourcegitcommit: bd36c88e731e3fee2a3a5cb3564fdc94f11bab94
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636816"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769664"
 ---
 # <a name="using-endpoint-data-loss-prevention-preview"></a>Nutzung von Endpunkt-DLP (Vorschau)
 
@@ -69,11 +69,11 @@ Sie können dieser Liste Domänen hinzufügen, auf die Edge Chromium beim Durchs
 
 Wenn der Listenmodus auf **Blockieren** festgelegt ist, können Benutzer keine vertraulichen Elemente in diese Domänen hochladen. Wenn eine Upload-Aktion blockiert wird, weil ein Element von einer DLP-Richtlinie betroffen ist, generiert DLP entweder eine Warnung oder sperrt den Upload des vertraulichen Elements.
 
-Wenn der Listenmodus auf **Zulassen** festgelegt ist, können Benutzer vertrauliche Elemente **_nur_*_ in diese Domänen hochladen, während der Upload-Zugriff auf alle anderen Domänen nicht zulässig ist.
+Wenn der Listenmodus auf **Zulassen** festgelegt ist, können Benutzer vertrauliche Elemente * *_nur_* _ in diese Domänen hochladen, während der Upload-Zugriff auf alle anderen Domänen nicht zulässig ist.
 
 ### <a name="unallowed-apps"></a>Nicht zulässige Apps
 
-Wenn die Einstellung _*Zugriff durch nicht zulässige Apps und Browser** einer Richtlinie aktiviert ist und Benutzer versuchen, solche Apps für den Zugriff auf eine geschützte Datei zu verwenden, wird die Aktivität zugelassen, blockiert oder blockiert, aber die Benutzer können die Einschränkung außer Kraft setzen. Alle Aktivitäten werden überwacht und können im Aktivitäten-Explorer überprüft werden.
+Wenn die Einstellung _ *Zugriff durch nicht zulässige Apps und Browser* * einer Richtlinie aktiviert ist und Benutzer versuchen, solche Apps für den Zugriff auf eine geschützte Datei zu verwenden, wird die Aktivität zugelassen, blockiert oder blockiert, aber die Benutzer können die Einschränkung außer Kraft setzen. Alle Aktivitäten werden überwacht und können im Aktivitäten-Explorer überprüft werden.
 
 ### <a name="unallowed-browsers"></a>Nicht zulässige Browser
 
@@ -119,13 +119,13 @@ Bei diesen Szenarien ist es erforderlich, dass Sie bereits über Geräte verfüg
 
 2. Wählen Sie **Richtlinie erstellen (Vorschau)** aus.
 
-3. Wählen Sie für dieses Szenario **Datenschutz**, dann **USA – Daten mit personenbezogenen Informationen (PII)** und schließlich **Weiter** aus.
+3. Wählen Sie für dieses Szenario **Datenschutz** , dann **USA – Daten mit personenbezogenen Informationen (PII)** und schließlich **Weiter** aus.
 
 4. Setzen Sie das Feld **Status** für alle Orte außer **Geräte** auf "Aus". Wählen Sie **Weiter** aus.
 
 5. Übernehmen Sie die Standardauswahl **Einstellungen in der Vorlage überprüfen und anpassen** Auswahl, und wählen Sie **Weiter** aus.
 
-6. Übernehmen Sie die standardmäßigen Werte für **Schutzmaßnahmen**, und wählen Sie **Weiter** aus.
+6. Übernehmen Sie die standardmäßigen Werte für **Schutzmaßnahmen** , und wählen Sie **Weiter** aus.
 
 7. Wählen Sie **Aktivitäten auf Windows-Geräten überwachen oder einschränken** aus, und lassen Sie die Aktionen auf **Nur Überwachung** festgelegt. Wählen Sie **Weiter** aus.
 
@@ -149,9 +149,9 @@ Bei diesen Szenarien ist es erforderlich, dass Sie bereits über Geräte verfüg
 
 3. Wählen Sie **Richtlinie bearbeiten (Vorschau)** aus.
 
-4. Wechseln Sie zur Seite **Erweiterte DLP-Regeln**, und bearbeiten Sie **Geringe Menge an Inhalten erkannt. USA – persönlich identifizierbare Informationen**.
+4. Wechseln Sie zur Seite **Erweiterte DLP-Regeln** , und bearbeiten Sie **Geringe Menge an Inhalten erkannt. USA – persönlich identifizierbare Informationen** .
 
-5. Scrollen Sie nach unten zum Abschnitt **Vorfallberichte**, und legen Sie **Benachrichtigung an Administratoren senden, wenn es eine Regelübereinstimmung gibt** auf **Ein** fest. Es werden automatisch E-Mail-Benachrichtigungen an den Administrator und alle anderen Personen gesendet, die Sie der Empfängerliste hinzufügen. 
+5. Scrollen Sie nach unten zum Abschnitt **Vorfallberichte** , und legen Sie **Benachrichtigung an Administratoren senden, wenn es eine Regelübereinstimmung gibt** auf **Ein** fest. Es werden automatisch E-Mail-Benachrichtigungen an den Administrator und alle anderen Personen gesendet, die Sie der Empfängerliste hinzufügen. 
 
    > [!div class="mx-imgBorder"]
    > ![turn-on-incident-reports](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
@@ -174,16 +174,16 @@ Bei diesen Szenarien ist es erforderlich, dass Sie bereits über Geräte verfüg
 
 3. Wählen Sie **Richtlinie bearbeiten (Vorschau)** aus.
 
-4. Wechseln Sie zur Seite **Erweiterte DLP-Regeln**, und bearbeiten Sie **Geringe Menge an Inhalten erkannt. USA – persönlich identifizierbare Informationen**.
+4. Wechseln Sie zur Seite **Erweiterte DLP-Regeln** , und bearbeiten Sie **Geringe Menge an Inhalten erkannt. USA – persönlich identifizierbare Informationen** .
 
-5. Scrollen Sie nach unten zum Abschnitt **Aktivitäten auf Windows-Geräten überwachen oder einschränken**, und legen Sie für jede Aktivität die entsprechende Aktion auf **Blockieren mit Außerkraftsetzung** fest.
+5. Scrollen Sie nach unten zum Abschnitt **Aktivitäten auf Windows-Geräten überwachen oder einschränken** , und legen Sie für jede Aktivität die entsprechende Aktion auf **Blockieren mit Außerkraftsetzung** fest.
 
    > [!div class="mx-imgBorder"]
    > ![Festlegen der Aktion "Blockieren mit Außerkraftsetzung"](../media/endpoint-dlp-6-using-dlp-set-blocked-with-override.png)
    
 6. Wählen Sie **Speichern** aus.
 
-7. Wiederholen Sie die Schritte 4-7 für **Große Menge an Inhalten erkannt. USA – persönlich identifizierbare Informationen**.
+7. Wiederholen Sie die Schritte 4-7 für **Große Menge an Inhalten erkannt. USA – persönlich identifizierbare Informationen** .
 
 8. Speichern Sie alle vorgenommenen Einstellungen, indem Sie **Weiter** und dann **Senden** der Richtlinienänderungen auswählen.
 

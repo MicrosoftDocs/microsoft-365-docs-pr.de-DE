@@ -34,13 +34,13 @@ Die Informationen in diesem Artikel ergänzen den Beitrag [Informationen zu Aufb
 
 ## <a name="whats-included-for-retention-and-deletion"></a>Lieferumfang für Aufbewahrung und Löschung
 
-Die folgenden Exchange-Elemente können mithilfe von Aufbewahrungsrichtlinien und Aufbewahrungskennzeichnungen beibehalten oder gelöscht werden: E-Mail-Nachrichten (einschließlich Entwürfe) mit sämtlichen Anlagen, Aufgaben mit einem Enddatum, sowie Notizen. 
+Die folgenden Exchange-Elemente können mithilfe von Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen beibehalten oder gelöscht werden: E-Mail-Nachrichten (einschließlich Entwürfe) mit sämtlichen Anlagen, Aufgaben mit einem Enddatum, sowie Notizen. 
 
-Kalenderelemente mit einem Enddatum werden in Aufbewahrungsrichtlinien unterstützt, aber nicht in Aufbewahrungskennzeichnungen.
+Kalenderelemente mit einem Enddatum werden in Aufbewahrungsrichtlinien unterstützt, aber nicht in Aufbewahrungsbezeichnungen.
 
 Kontakte und alle Aufgaben und Kalenderelemente, die kein Enddatum aufweisen, werden nicht unterstützt.
 
-Andere in einem Postfach gespeicherte Elemente, z. B. gespeicherte Skype- und Teams-Nachrichten, werden in Aufbewahrungsrichtlinien und Aufbewahrungskennzeichnungen für Exchange nicht einbezogen. Diese Elemente haben ihre eigenen Aufbewahrungsrichtlinien.
+Andere in einem Postfach gespeicherte Elemente, z. B. gespeicherte Skype- und Teams-Nachrichten, werden in Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen für Exchange nicht einbezogen. Diese Elemente haben ihre eigenen Aufbewahrungsrichtlinien.
 
 ## <a name="how-retention-works-for-exchange"></a>Funktionsweise einer Aufbewahrungsrichtlinie mit Exchange
 
