@@ -17,12 +17,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie Ihr Konto bei Microsoft schließen.
-ms.openlocfilehash: 9545c43ee27fb000149776527030b04b5e807a5c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 0fed7df54a21b3696e81915af78e377e855bfd12
+ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638375"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48794897"
 ---
 # <a name="close-your-account"></a>Schließen Ihres Kontos
 
@@ -51,9 +51,9 @@ Wenn Ihre Organisation Active Directory verwendet, die mit Azure AD synchronisie
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
 
-2. Wenn sich die Liste Abonnements in der **Tabellen** Ansicht befindet, wählen Sie auf der rechten Seite **Karten**aus.
+2. Wenn sich die Liste Abonnements in der **Tabellen** Ansicht befindet, wählen Sie auf der rechten Seite **Karten** aus.
 
-3. Suchen Sie ein aktives Abonnement, und wählen Sie im Abschnitt **Einstellungen & Aktionen** die Option **Abonnement kündigen**aus.
+3. Suchen Sie ein aktives Abonnement, und wählen Sie im Abschnitt **Einstellungen & Aktionen** die Option **Abonnement kündigen** aus.
 
 4. Befolgten Sie die Anweisungen, um den Vorgang abzuschließen.
 
@@ -63,13 +63,13 @@ Wenn Ihre Organisation Active Directory verwendet, die mit Azure AD synchronisie
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
 
-2. Wenn sich die Liste Abonnements in der **Tabellen** Ansicht befindet, wählen Sie auf der rechten Seite **Karten**aus.
+2. Wenn sich die Liste Abonnements in der **Tabellen** Ansicht befindet, wählen Sie auf der rechten Seite **Karten** aus.
 
-3. Wählen Sie neben **Abonnementstatus**die Option **deaktiviert**aus.
+3. Wählen Sie neben **Abonnementstatus** die Option **deaktiviert** aus.
 
-4. Suchen Sie nach einem deaktivierten Abonnement, und wählen Sie im Abschnitt **Einstellungen & Aktionen** die Option **Löschen**aus.
+4. Suchen Sie nach einem deaktivierten Abonnement, und wählen Sie im Abschnitt **Einstellungen & Aktionen** die Option **Löschen** aus.
 
-5. Aktivieren Sie im Dialogfeld **Abonnement löschen** das Kontrollkästchen **Ich verstehe den Einfluss** , und wählen Sie dann **Abonnement löschen**aus.
+5. Aktivieren Sie im Dialogfeld **Abonnement löschen** das Kontrollkästchen **Ich verstehe den Einfluss** , und wählen Sie dann **Abonnement löschen** aus.
 
 6. Wiederholen Sie für jedes deaktivierte Abonnement die Schritte 4 und 5, bis alle Abonnements gelöscht wurden.
 
@@ -77,7 +77,7 @@ Wenn Ihre Organisation Active Directory verwendet, die mit Azure AD synchronisie
 
 1. Wechseln Sie im Admin Center zur Seite **Benutzer**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">aktive Benutzer</a> .
 
-2. Wählen Sie die mehrstufige **Authentifizierung**aus.
+2. Wählen Sie die mehrstufige **Authentifizierung** aus.
 
 3. Deaktivieren Sie auf der Seite mehrstufige Authentifizierung alle Konten mit Ausnahme des globalen Administratorkontos, das Sie derzeit verwenden.
 
@@ -89,10 +89,10 @@ Sie können auch <a href="https://docs.microsoft.com/azure/active-directory/auth
 
 2. Wählen Sie **Azure Active Directory** aus.
 
-3. Wechseln Sie zu dem Verzeichnis, das Sie löschen möchten.
+3. Wechseln Sie zu der Organisation, die Sie löschen möchten.
 
-4. Wählen Sie **Verzeichnis löschen**aus.
+4. Wählen Sie **Mandant löschen** aus.
 
-5. Wenn Ihr Verzeichnis mindestens eine Überprüfung ausfällt, wird ein Link zu weiteren Informationen zum übergeben der Prüfungen angezeigt. Nachdem Sie alle Prüfungen übergeben haben, wählen Sie **Delete** aus, um den Vorgang abzuschließen.
+5. Wenn in Ihrer Organisation mindestens eine Prüfung fehlschlägt, wird ein Link zu weiteren Informationen zum übergeben der Prüfungen angezeigt. Nachdem Sie alle Prüfungen übergeben haben, wählen Sie **Delete** aus, um den Vorgang abzuschließen.
 
 Nachdem Sie diesen letzten Schritt abgeschlossen haben, wird Ihr Konto bei Microsoft geschlossen und gelöscht.

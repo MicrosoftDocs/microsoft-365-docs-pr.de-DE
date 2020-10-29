@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 2c9638dc7b8c6d095b87cf81114f3812c8362597
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: a6dec9473ee632b74bb79e50156cedff53a3cba3
+ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48656139"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48795117"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Beheben von Problemen, die mit dem Readiness Assessment Tool gefunden wurden
 
-Für jede Überprüfung meldet das Tool eines von drei möglichen Ergebnissen:
+Für jede Überprüfung meldet das Tool eine von vier möglichen Ergebnissen:
 
 
 |Ergebnis  |Bedeutung  |
@@ -26,6 +26,7 @@ Für jede Überprüfung meldet das Tool eines von drei möglichen Ergebnissen:
 |Bereit     | Vor Abschluss der Registrierung ist keine Aktion erforderlich.        |
 |Empfehlung    | Befolgen Sie die Schritte im Tool oder in diesem Artikel, um die besten Erfahrungen bei der Registrierung und für Benutzer zu finden. Sie *können* die Registrierung abschließen, aber Sie müssen diese Probleme beheben, bevor Sie das erste Gerät bereitstellen.        |
 |Nicht bereit | *Die Registrierung schlägt fehl, wenn Sie diese Probleme nicht beheben.* Befolgen Sie die Schritte im Tool oder in diesem Artikel, um Sie zu beheben.        |
+|Error | Die von Ihnen verwendete Azure Active Director (AD)-Rolle verfügt nicht über ausreichende Berechtigungen zum Ausführen dieser Überprüfung. |
 
 ## <a name="microsoft-intune-settings"></a>Microsoft InTune-Einstellungen
 
@@ -72,6 +73,16 @@ Sie haben mindestens eine Richtlinie für den bedingten Zugriff, die auf alle Be
 
 Stellen Sie sicher, dass alle Richtlinien für den bedingten Zugriff die Azure Ad Gruppe für **moderne Arbeitsplatz Dienstkonten** ausschließen. Schritte finden Sie unter [Anpassen des bedingten Zugriffs](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/conditional-access). Die **Dienstkonten für moderne Arbeitsplatz Dienste** Azure Ad Gruppe ist eine dynamische Gruppe, die wir bei der Registrierung für den Dienst erstellen. Sie müssen zurückkehren, um diese Gruppe nach der Registrierung auszuschließen. Weitere Informationen zu diesen Dienstkonten finden Sie unter [Standard Operating Procedures](../service-description/operations-and-monitoring.md#standard-operating-procedures).
 
+**Error**
+
+Die Intune-Administrator Rolle verfügt über keine ausreichenden Berechtigungen für diese Überprüfung. Sie benötigen auch eine dieser Azure AD Rollen, die zum Ausführen dieser Überprüfung zugewiesen sind:
+
+- Sicherheitsleseberechtigter
+- Sicherheitsadministrator
+- Administrator für bedingten Zugriff
+- Globaler Leser
+- Geräte Administrator
+
 
 ### <a name="device-compliance-policies"></a>Geräte Konformitätsrichtlinien
 
@@ -107,7 +118,7 @@ Microsoft Managed Desktop-Geräte müssen sich in InTune registrieren können.
 
 **Nicht bereit**
 
-Befolgen Sie die Schritte unter [Festlegen von Registrierungs Einschränkungen](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) , um die Einstellung in **zulassen**zu ändern.
+Befolgen Sie die Schritte unter [Festlegen von Registrierungs Einschränkungen](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) , um die Einstellung in **zulassen** zu ändern.
 
 
 ### <a name="enrollment-status-page"></a>Seite "Registrierungs Status"
@@ -116,7 +127,7 @@ Derzeit ist die Registrierungs Status Seite (ESP) aktiviert. Wenn Sie an der öf
 
 **Nicht bereit**
 
-Sie haben das ESP-Standardprofil festgelegt, um den **Fortschritt der APP-und Profilkonfiguration anzuzeigen**. Deaktivieren Sie diese Einstellung, indem Sie die Schritte unter [Einrichten der Registrierungs Status Seite](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status)ausführen.
+Sie haben das ESP-Standardprofil festgelegt, um den **Fortschritt der APP-und Profilkonfiguration anzuzeigen** . Deaktivieren Sie diese Einstellung, indem Sie die Schritte unter [Einrichten der Registrierungs Status Seite](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status)ausführen.
 
 **Empfehlung**
 
@@ -128,7 +139,7 @@ Windows 10-Geräte in ihrer Azure AD Organisation müssen automatisch in InTune 
 
 **Nicht bereit**
 
-Benutzer in ihrer Azure AD Organisation werden nicht automatisch in Microsoft InTune registriert. Ändern Sie den MDM-Benutzerbereich in **einen** oder **alle**. Wenn Sie auswählen. Einige * *, kehren Sie nach der Registrierung zurück, und wählen Sie die Gruppe **moderner Arbeitsplatz-alle** Azure AD für **Gruppen**aus.
+Benutzer in ihrer Azure AD Organisation werden nicht automatisch in Microsoft InTune registriert. Ändern Sie den MDM-Benutzerbereich in **einen** oder **alle** . Wenn Sie **einige** auswählen, kehren Sie nach der Registrierung zurück, und wählen Sie die Gruppe **moderner Arbeitsplatz-alle** Azure AD für **Gruppen** aus.
 
 
 ### <a name="microsoft-store-for-business"></a>Microsoft Store für Unternehmen
@@ -152,6 +163,15 @@ Sie haben einige Richtlinien für die mehrstufige Authentifizierung (MFA) als "e
 
 Stellen Sie sicher, dass alle bedingten Zugriffsrichtlinien, die MFA erfordern, den **modernen Arbeitsplatz-alle** Azure Ad Gruppe ausschließen. Weitere Informationen finden Sie unter [bedingter Zugriffsrichtlinien](#conditional-access-policies) und [bedingter Zugriff: MFA für alle Benutzer erforderlich](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa). Die Gruppe " **moderner Arbeitsplatz-alle** Azure AD" ist eine dynamische Gruppe, die wir erstellen, wenn Sie sich für Microsoft Managed Desktop registrieren, damit Sie nach der Registrierung zurückkehren müssen, um diese Gruppe auszuschließen.
 
+**Error**
+
+Die Intune-Administrator Rolle verfügt über keine ausreichenden Berechtigungen für diese Überprüfung. Sie benötigen auch eine dieser Azure AD Rollen, die zum Ausführen dieser Überprüfung zugewiesen sind:
+
+- Sicherheitsleseberechtigter
+- Sicherheitsadministrator
+- Administrator für bedingten Zugriff
+- Globaler Leser
+- Geräte Administrator
 
 
 ### <a name="powershell-scripts"></a>PowerShell-Skripts
@@ -234,7 +254,7 @@ Gibt an, wie eine Einstellung überprüft wird, die (wenn Sie auf "false" festge
 
 **Empfehlung**
 
-Stellen Sie sicher, dass **AllowAdHocSubscriptions** auf **true**festgelegt ist. Andernfalls funktioniert das Roaming im Enterprise-Status möglicherweise nicht. Weitere Informationen finden Sie unter [Sets-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0).
+Stellen Sie sicher, dass **AllowAdHocSubscriptions** auf **true** festgelegt ist. Andernfalls funktioniert das Roaming im Enterprise-Status möglicherweise nicht. Weitere Informationen finden Sie unter [Sets-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0).
 
 
 ### <a name="enterprise-state-roaming"></a>Enterprise State Roaming
@@ -297,6 +317,11 @@ SSPR muss für alle Benutzer aktiviert sein. Wenn dies nicht der Fall ist, könn
 **Empfehlung**
 
 Stellen Sie sicher, dass die SSPR **Selected** -Einstellung Microsoft Managed Desktop Devices enthält.
+
+**Error**
+
+Die Intune-Administrator Rolle verfügt über keine ausreichenden Berechtigungen für diese Überprüfung. Außerdem benötigen Sie den Bericht Leser Azure AD Rolle, die zum Ausführen dieser Überprüfung zugewiesen ist.
+
 
 ### <a name="standard-user-role"></a>Standard Benutzerrolle
 

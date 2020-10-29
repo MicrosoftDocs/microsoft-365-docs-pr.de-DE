@@ -9,18 +9,20 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c574be6d171a230479d8b6c96e2e0a1dec8a87ac
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: 56d849a7abcbe480d82200cc7841d42e9c189762
+ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48656144"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48795105"
 ---
 # <a name="readiness-assessment-tool"></a>Bereitschafts Bewertungstool
 
 Für eine möglichst reibungslose Benutzerfreundlichkeit bei der Registrierung in Microsoft Managed Desktop gibt es eine Reihe von Einstellungen und anderen Parametern, die Sie vor der Zeit festlegen müssen. Sie können dieses Tool verwenden, um diese Einstellungen zu überprüfen und detaillierte Schritte zur Behebung der nicht richtigen Informationen zu erhalten.
 
-Das Tool überprüft die Einstellungen in Microsoft Endpoint Manager (insbesondere Microsoft InTune), Azure Active Directory (Azure AD) und Microsoft 365, um sicherzustellen, dass Sie mit dem verwalteten Desktop von Microsoft arbeiten können. Microsoft Managed Desktop behält die Daten, die diesen Prüfungen zugeordnet sind, 12 Monate nach dem letzten Ausführen einer Überprüfung in ihrer Azure AD Organisation (Mandant).  Nach 12 Monaten behalten wir es in der nicht identifizierten Form bei.  Sie können auswählen, dass die erfassten Daten gelöscht werden sollen.
+Das Tool überprüft die Einstellungen in Microsoft Endpoint Manager (insbesondere Microsoft InTune), Azure Active Directory (Azure AD) und Microsoft 365, um sicherzustellen, dass Sie mit dem verwalteten Desktop von Microsoft arbeiten können. Microsoft Managed Desktop behält die Daten, die diesen Prüfungen zugeordnet sind, 12 Monate nach dem letzten Ausführen einer Überprüfung in ihrer Azure AD Organisation (Mandant). Nach 12 Monaten behalten wir es in der nicht identifizierten Form bei.  Sie können auswählen, dass die erfassten Daten gelöscht werden sollen.
+
+Jeder Benutzer mit mindestens der InTune-Administrator Rolle kann dieses Tool ausführen, aber für drei der Prüfungen (Zertifikat-[Konnektoren](readiness-assessment-fix.md#certificate-connectors), [mehr](readiness-assessment-fix.md#multi-factor-authentication)stufige Authentifizierung und [Zurücksetzen von Self-Service-Kennwörtern](readiness-assessment-fix.md#self-service-password-reset)) sind zusätzliche Berechtigungen erforderlich.
  
 Das Assessment-Tool überprüft diese Elemente:
 
@@ -68,7 +70,7 @@ Das Assessment-Tool überprüft diese Elemente:
 |OneDrive for Business     | Überprüft, ob OneDrive für Unternehmen nicht unterstützte Einstellungen verwendet.        |
 
 
-Für jede Überprüfung meldet das Tool eines von drei möglichen Ergebnissen:
+Für jede Überprüfung meldet das Tool eine von vier möglichen Ergebnissen:
 
 
 |Ergebnis  |Bedeutung  |
@@ -76,3 +78,4 @@ Für jede Überprüfung meldet das Tool eines von drei möglichen Ergebnissen:
 |Bereit     | Es ist keine Aktion erforderlich, bevor Sie die Registrierung abschließen.        |
 |Empfehlung    | Führen Sie die Schritte im Tool aus, um die besten Erfahrungen mit der Registrierung und für Benutzer zu erzielen. Sie *können* die Registrierung abschließen, aber Sie müssen diese Probleme beheben, bevor Sie das erste Gerät bereitstellen.        |
 |Nicht bereit | Die *Registrierung schlägt fehl* , wenn Sie diese Probleme nicht beheben. Befolgen Sie die Schritte im Tool, um Sie zu beheben.        |
+|Error | Die von Ihnen verwendete Azure Active Director (AD)-Rolle verfügt nicht über ausreichende Berechtigungen zum Ausführen dieser Überprüfung. |

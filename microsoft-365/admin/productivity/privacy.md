@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Wie Datenschutz mit dem Produktivitäts Ergebnis geschützt wird.
-ms.openlocfilehash: 1af2553e67b4f14e9783c23d679a7ac96443512a
-ms.sourcegitcommit: e8b3855302fc34d09b6df6c737033a2f326d6eee
+ms.openlocfilehash: 62ff3a9f0434421cbe1115f13376e92bd9f3cac9
+ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48770035"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48794977"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>Datenschutz-Steuerelemente für Produktivitäts Bewertung
 
@@ -55,7 +55,21 @@ Um das gesamte Produktivitäts Ergebnis anzuzeigen, einschließlich Metriken auf
 
 Weisen Sie jeder Person, die für die Änderungsverwaltung und-Einführung zuständig ist, die Rolle "berichtsleser" zu. Diese Rolle ermöglicht Ihnen den Zugriff auf die vollständige Benutzeroberfläche, einschließlich Metriken auf Mandantenebene und Details auf einzelnen Ebenen.
 
-Personen Erfahrungsbericht enthält benutzerspezifische Aktivitätsdetails für jede Kategorie-Detailseite. Weisen Sie eine benutzerdefinierte Rolle mit dem Namen Verwendungs Zusammenfassungsberichte Leser zu (verfügbar ab 29. Oktober 2020), um den Zugriff auf die aggregierten Metriken der Personen Erfahrungen zu ermöglichen.
+Personen Erfahrungsbericht enthält benutzerspezifische Aktivitätsdetails für jede Kategorie-Detailseite. Weisen Sie eine benutzerdefinierte Rolle mit dem Namen Verwendungs Zusammenfassungsberichte Leser zu (verfügbar ab 29. Oktober 2020), um den Zugriff auf die aggregierten Metriken der Personen Erfahrungen zu ermöglichen. Diese Rolle muss über PowerShell-Cmdlets zugewiesen werden, bis Sie vom Microsoft Admin Center auf 11/15/2020 zugeordnet werden kann.
+
+So weisen Sie die Leserrolle "Verwendungs Zusammenfassungsberichte" mit PowerShell zu:
+
+- Führen Sie die folgende PowerShell aus:
+
+```powershell
+Connect-AzureAD
+$role=Get-AzureADDirectoryRole -Filter "roleTemplateId eq '75934031-6c7e-415a-99d7-48dbd49e875e'"
+Get-AzureADDirectoryRoleMember -ObjectId $role.ObjectId
+$u=Get-AzureADUser -ObjectId <user upn>
+Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $u.ObjectId
+```
+
+</br>
 
 :::image type="content" source="../../media/communicationspage.jpg" alt-text="Seite &quot;Kommunikation&quot; in Produktivitäts Berichten.":::
 
