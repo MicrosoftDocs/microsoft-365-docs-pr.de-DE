@@ -3,7 +3,7 @@ title: Office 365-Endpunkte in Deutschland
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/08/2020
+ms.date: 10/28/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: In diesem Artikel finden Sie Endpunkte, die für Kunden mit Office 365 in Deutschland erreichbar sind.
 hideEdit: true
-ms.openlocfilehash: 07badf1febec964ffdf6d6ef39c88f0e8bbca3f7
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
-ms.translationtype: HT
+ms.openlocfilehash: 6a33a90a2fc9e1420999423280c0434f5d21a400
+ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690850"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48791960"
 ---
 # <a name="office-365-germany-endpoints"></a>Endpunkte für Office 365 Deutschland
 
@@ -37,7 +37,7 @@ Office 365 setzt eine Internetverbindung voraus. Die folgenden Endpunkte sollten
   
 |||
 |:-----|:-----|
-|**Letzte Aktualisierung:** 08.07.2020 – ![RSS](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Abonnement des Änderungsprotokolls](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) |**Download:** alle erforderlichen und optionalen Ziele in einer Liste im [JSON-Format](https://endpoints.office.com/endpoints/Germany?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> |
+|**Letzte Aktualisierung:** 10/28/2020- ![ RSS- ](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Änderungsprotokoll Abonnement](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) |**Download:** alle erforderlichen und optionalen Ziele in einer Liste im [JSON-Format](https://endpoints.office.com/endpoints/Germany?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> |
 
 Beginnen Sie mit [Verwalten von Office 365-Endpunkten](managing-office-365-endpoints.md), um unsere Empfehlungen zum Verwalten der Netzwerkverbindungen anhand dieser Daten zu verstehen. Endpunktdaten werden zu Beginn jedes Monats 30 Tage vor ihrer Aktivierung mit neuen IP-Adressen und URLs aktualisiert und veröffentlicht. Auf diese Weise können Kunden, die noch nicht über automatisierte Updates verfügen, Ihre Prozesse abschließen, bevor eine neue Verbindung erforderlich ist. Endpunktdaten werden unter Umständen auch bei Bedarf aktualisiert, um Support-Probleme, Sicherheitsvorfälle oder andere sofortige betriebliche Erfordernisse zu adressieren. Sie können jederzeit auf das [Änderungsprotokoll-Abonnement](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) zurückgreifen.
 

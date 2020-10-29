@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: In diesem Artikel erfahren Sie, wie Sie mit der Kompatibilitätsbewertung und dem Compliance-Manager ihr Schutzniveau für personenbezogene Daten verbessern.
-ms.openlocfilehash: 5b41fa9fc52253d415a22aaa3422a87c4f1bda7c
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: f90826795197b392f629eb8eec71b7f27081b697
+ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377099"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48791882"
 ---
 # <a name="use-compliance-manager-to-manage-improvement-actions"></a>Verwenden des Compliance-Managers zum Verwalten von Verbesserungs Aktionen
 
@@ -44,7 +44,7 @@ In diesem Artikel werden Anleitungen zur Verwendung dieses Tools für Datenschut
 
 Compliance-Manager stellt vorgefertigte Vorlagen zum [Erstellen von Assessments](../compliance/compliance-manager-assessments.md) bereit, die an datenschutzbezogenen Vorschriften wie dsgvo und HIPAA/HITECH ausgerichtet sind. Die Vorlagen verfügen über integrierte Steuerungs Zuordnungen, die Sie bei der Durchführung von Verbesserungs Aktionen zur Erfüllung der Anforderungen der Verordnung unterstützen. Jede Bewertung enthält Informationen zu den Steuerelementen, die jede Verordnung spezifisch für den Zieldienst aufruft, aufgeschlüsselt nach Steuerelementen, die Sie verwalten, und steuert, welche Microsoft verwaltet. 
 
-Mithilfe einer vordefinierten Vorlage können Sie schnell mit Risikobewertungen beginnen. Wenn Sie mit Compliance-Manager besser vertraut sind, können Sie eine vordefinierte Vorlage anpassen, indem Sie eigene Steuerelemente und Verbesserungs Aktionen hinzufügen, oder Sie können eigene benutzerdefinierte Bewertungen erstellen, die den Anforderungen Ihrer Organisation entsprechen.
+Mithilfe einer vordefinierten Vorlage können Sie schnell mit Risikobewertungen beginnen. Wenn Sie mit dem Compliance-Manager besser vertraut sind, können Sie eine vorgefertigte Vorlage anpassen, indem Sie eigene Steuerelemente und Verbesserungs Aktionen hinzufügen, oder Sie können eigene benutzerdefinierte Bewertungen erstellen, die den Anforderungen Ihrer Organisation entsprechen.
 
 Zeigen Sie die [vollständige Liste der](../compliance/compliance-manager-templates-list.md) vom Compliance-Manager bereitgestellten Bewertungs Vorlagen an.
 

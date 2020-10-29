@@ -15,28 +15,26 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Stellen Sie Ihren Benutzern aktuelle Schlagzeilen zu Ihrer Branche und Informationen aus Ihrer Organisation zur Verfügung, verwenden Sie den News-Dienst, um einen angepassten Nachrichten Feed für Ihre Organisation zu aktivieren.
-ms.openlocfilehash: 718e48c9db90ff7e598dd56c0228bb894b7a3a4d
-ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
+ms.openlocfilehash: c0758c3a762c39534629095345d935456cb938e9
+ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/28/2020
-ms.locfileid: "48779178"
+ms.locfileid: "48791822"
 ---
 # <a name="manage-industry-news"></a>Branchennachrichten verwalten
 
 Um Ihren Benutzern aktuelle Schlagzeilen über Ihre Branche und Ihre Informationen in Ihrer Organisation bereitzustellen, verwenden Sie den [News](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews) -Dienst, um einen angepassten Newsfeed für Ihre Organisation zu aktivieren.Sie können auch Einstellungen für die Bing-Startseite und die neue Registerkarte "Microsoft Edge" (beginnend mit der Veröffentlichung von Edge 87) verwalten.
 
 ## <a name="what-your-users-will-see"></a>Was Ihre Benutzer sehen werden
-
-:::image type="content" source="../../media/manage-industry-news-1.png" alt-text="Rollup der Microsoft Search Industry-Updates":::
  
 Bei angemeldeten Benutzern, die zur Bing-Startseite gelangen, wird Ihr Nachrichten Feed unter den personalisierten Informationen Ihrer Organisation angezeigt.
 
-:::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="Rollup der Microsoft Search Industry-Updates":::
+:::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="Screenshot des Bild Karussells mit Branchennachrichten aus dem Internet":::
 
 Sie können auch Unternehmens-, Branchen-und interne Nachrichten oder personalisierte Arbeitsinformationen auf Ihrer neuen Registerkarte Microsoft Edge anzeigen. 
 
-:::image type="content" source="../../media/manage-industry-news-3.png" alt-text="Rollup der Microsoft Search Industry-Updates":::
+:::image type="content" source="../../media/manage-industry-news-3.png" alt-text="Screenshot des Bild Karussells mit Branchennachrichten aus dem Internet":::
 
 ## <a name="news-settings"></a>Nachrichteneinstellungen
 
