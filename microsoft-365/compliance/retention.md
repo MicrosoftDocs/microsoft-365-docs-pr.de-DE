@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen, um zu behalten, was Sie benötigen, und zu löschen, was Sie nicht benötigen.
-ms.openlocfilehash: 089a34d1e9a002bd61e688cd3f721c6e8249c5b7
-ms.sourcegitcommit: 095b1f52f2e73e8d44195916984efeb0908c2ad8
+ms.openlocfilehash: 50bbe9d80b7b0a1b9fa346fd6e5abc8971dadcfb
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48755584"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804758"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
@@ -240,6 +240,8 @@ Um zu verstehen, wie und warum eine Aufbewahrungsbezeichnung und nicht eine ande
 - Aufbewahrungsbezeichnungen, die automatisch von einer automatisch anwendbaren Richtlinie angewendet werden, werden implizit zugewiesen
 
 Eine explizit zugewiesene Aufbewahrungsbezeichnung hat Vorrang vor einer implizit zugewiesenen. Weitere Informationen finden Sie im Abschnitt [Die Grundsätze der Aufbewahrung, oder was hat Vorrang?](retention.md#the-principles-of-retention-or-what-takes-precedence) auf dieser Seite.
+
+Für SharePoint können Aufbewahrungsbezeichnungen auch implizit zugewiesen werden, wenn Sie für alle Inhalte in einer SharePoint-Bibliothek, einem Ordner oder einem Dokumentensatz eine Standardbezeichnung konfigurieren. In diesem Szenario hat eine automatisch zugewiesene Bezeichnung Vorrang vor einer Standardbezeichnung, aber um alle Ergebnisse bei Verwendung einer Standardbezeichnung vollständig zu verstehen, lesen Sie die Informationen im Abschnitt [Anwenden einer Standardaufbewahrungsbezeichnung auf alle Inhalte in einer SharePoint-Bibliothek, einem Ordner oder einer Dokumentenmappe](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set). 
 
 #### <a name="monitoring-retention-labels"></a>Überwachen von Aufbewahrungsbezeichnungen
 

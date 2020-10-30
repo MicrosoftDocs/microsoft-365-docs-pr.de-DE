@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen, wie die Aufbewahrung für SharePoint und OneDrive funktioniert.
-ms.openlocfilehash: 31ffce3f02e273e771ca1753474bec48b66148bb
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 258cc8e777ca39d2528e520ff5634086bff302c7
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754139"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804540"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Informationen zur Aufbewahrung für SharePoint und OneDrive
 
@@ -57,13 +57,13 @@ Wenn jemand versucht, ein Dokument zu ändern oder zu löschen, das den Aufbewah
   
 Ein Zeitgeberauftrag bereinigt in regelmäßigen Abständen das permanente Dokumentarchiv. Dieser vergleicht sämtliche Inhalte im permanenten Dokumentarchiv mit allen Abfragen, die von den Aufbewahrungseinstellungen für diese Inhalte verwendet werden. Inhalte, die älter als die darin konfigurierte Aufbewahrungszeit sind, werden aus dem permanenten Dokumentarchiv sowie vom ursprünglichen Speicherort gelöscht, sofern sie dort noch vorhanden sind. Dieser Zeitgeberauftrag wird alle sieben Tage ausgeführt, was bedeutet, dass es bis zu sieben Tage dauern kann, bis Inhalte gelöscht werden.
   
-Dieses Verhalten gilt für Inhalte, die bei Anwendung der Aufbewahrungseinstellungen vorhanden sind. Außerdem werden für Aufbewahrungsrichtlinien alle neuen Inhalte, die erstellt oder der Websitesammlung hinzugefügt werden, nachdem sie in die Richtlinie eingeschlossen wurden, auch nach dem Löschen aufbewahrt. Neue Inhalte werden jedoch nicht bei der ersten Bearbeitung in das permanente Dokumentarchiv kopiert, sondern nur, wenn sie gelöscht werden. Wenn Sie alle Versionen einer Datei aufbewahren möchten, müssen Sie die [Versionsverwaltung](#how-retention-works-with-document-versions-in-a-site-collection) aktivieren.
+Dieses Verhalten gilt für Inhalte, die bei Anwendung der Aufbewahrungseinstellungen vorhanden sind. Außerdem werden für Aufbewahrungsrichtlinien alle neuen Inhalte, die erstellt oder der Websitesammlung hinzugefügt werden, nachdem sie in die Richtlinie eingeschlossen wurden, auch nach dem Löschen aufbewahrt. Neue Inhalte werden jedoch nicht bei der ersten Bearbeitung in das permanente Dokumentarchiv kopiert, sondern nur, wenn sie gelöscht werden. Wenn Sie alle Versionen einer Datei aufbewahren möchten, müssen Sie die [Versionsverwaltung](#how-retention-works-with-document-versions) aktivieren.
   
 Ein Benutzer erhält eine Fehlermeldung, wenn er versucht, Bibliotheken, Listen, Ordner oder Websites zu löschen, für die eine Aufbewahrungsrichtlinie gilt. Ein Benutzer kann einen Ordner löschen, wenn er zuerst Dateien im Ordner verschiebt oder löscht, die der Richtlinie unterliegen. Außerdem wird das permanente Dokumentarchiv in dieser Phase erstellt und nicht, wenn Sie eine Aufbewahrungsrichtlinie erstellen oder eine Aufbewahrungsbezeichnung anwenden. Zum Testen Ihrer Aufbewahrung müssen Sie daher zuerst ein Dokument in einer Website bearbeiten oder löschen, die einer Aufbewahrungsrichtlinie unterliegt oder auf die Aufbewahrungsbezeichnungen angewendet werden, und dann zum permanenten Dokumentarchiv wechseln, um die aufbewahrte Kopie anzuzeigen.
   
 Nachdem auf Inhalte in einem OneDrive-Konto oder einer SharePoint-Site Aufbewahrungseinstellungen angewendet wurden, sind die Inhaltspfade davon abhängig, ob die Aufbewahrungseinstellungen der Aufbewahrung und dem Löschen, der reinen Aufbewahrung oder dem reinen Löschen dienen.
 
-Wenn die Aufbewahrungseinstellung das Aufbewahren und Löschen vorgibt:
+Wenn die Aufbewahrungseinstellungen das Aufbewahren und Löschen vorgeben:
 
 ![Diagramm des Inhaltslebenszyklus in SharePoint und OneDrive](../media/Retention_Diagram_of_retention_flow_in_sites.png)
   
@@ -90,24 +90,26 @@ Wenn die Aufbewahrungseinstellungen das reine Aufbewahren oder das reine Lösche
 
 ## <a name="how-retention-works-for-onenote-content"></a>Funktionsweise einer Aufbewahrungsrichtlinie für OneNote-Inhalte
 
-Wenn Sie eine Aufbewahrungsrichtlinie auf einen Speicherort anwenden, der OneNote-Inhalte beinhaltet, dann sind die unterschiedlichen OneNote-Abschnitte tatsächlich unterschiedliche Dateien. Dies bedeutet, dass jeder Abschnitt entsprechend den von Ihnen festgelegten Aufbewahrungseinstellungen einzeln aufbewahrt oder gelöscht wird.
+Wenn Sie eine Aufbewahrungsrichtlinie auf einen Speicherort anwenden, der OneNote-Inhalte beinhaltet, dann sind die unterschiedlichen OneNote-Abschnitte tatsächlich einzelne Dateien. Dies bedeutet, dass jeder Abschnitt entsprechend den von Ihnen festgelegten Aufbewahrungseinstellungen einzeln aufbewahrt oder gelöscht wird.
 
-## <a name="how-retention-works-with-document-versions-in-a-site-collection"></a>Funktionsweise der Aufbewahrung mit Dokumentversionen in einer Websitesammlung
+## <a name="how-retention-works-with-document-versions"></a>Funktionsweise der Aufbewahrung mit Dokumentversionen
 
-Die Versionsverwaltung ist ein Feature aller Dokumentbibliotheken in SharePoint und in OneDrive. Standardmäßig werden bei der Versionsverwaltung mindestens 500 Hauptversionen beibehalten, Sie können diese Beschränkung jedoch erhöhen. Weitere Informationen finden Sie unter [Aktivieren und Konfigurieren der Versionsverwaltung für eine Liste oder Bibliothek](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37) und [So funktioniert die Versionsverwaltung in Listen und Bibliotheken](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247).
+Die Versionsverwaltung ist ein Feature aller Dokumentlisten und -bibliotheken in SharePoint und in OneDrive. Standardmäßig werden bei der Versionsverwaltung mindestens 500 Hauptversionen beibehalten, Sie können diese Beschränkung jedoch erhöhen. Weitere Informationen finden Sie unter [Aktivieren und Konfigurieren der Versionsverwaltung für eine Liste oder Bibliothek](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37) und [So funktioniert die Versionsverwaltung in Listen und Bibliotheken](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247).
   
-Die Einstellung für reine Aufbewahrung behält alle Versionen eines Dokuments in einer SharePoint-Websitesammlung oder einem OneDrive-Konto bei. Wenn ein Dokument, das einer Einstellung für die reine Aufbewahrung untersteht, zum ersten Mal bearbeitet wird, wird eine Version des ursprünglichen Dokuments in das permanente Dokumentarchiv kopiert und dort aufbewahrt. Wenn ein Dokument, das einer Einstellung für die reine Aufbewahrung untersteht, gelöscht wird, werden alle bestehenden Versionen in das permanente Dokumentarchiv kopiert. Vorrausetzung hierfür ist, dass die Versionsverwaltung aktiviert sein muss. Jede Version eines Dokuments im permanenten Dokumentarchiv bleibt in ihrem jeweiligen Aufbewahrungszeitraum als eigenständiges Element bestehen:
-  
+Wenn ein Dokument mit Versionen Aufbewahrungseinstellungen unterliegt, um den Inhalt beizubehalten, existieren Versionen, die in das permanente Dokumentarchiv kopiert werden, als separate Elemente. Wenn die Aufbewahrungseinstellungen so konfiguriert sind, dass sie am Ende des Aufbewahrungszeitraums gelöscht werden:
+
 - Wenn der Aufbewahrungszeitraum darauf basiert, wann der Inhalt erstellt wurde, verfügt jede Version über das gleiche Ablaufdatum wie das ursprüngliche Dokument. Das ursprüngliche Dokument und dessen Versionen werden alle gleichzeitig ablaufen.
 
-- Wenn der Aufbewahrungszeitraum darauf basiert, wann der Inhalt zuletzt geändert wurde, verfügt jede Version über ein eigenes Ablaufdatum basierend auf dem Zeitpunkt der Änderung des ursprünglichen Dokuments, aus der diese Version hervorgegangen ist. Die ursprünglichen Dokumente und deren Versionen laufen unabhängig voneinander ab.
+- Wenn der Aufbewahrungszeitraum darauf basiert, wann der Inhalt zuletzt geändert wurde, verfügt jede Version über ein eigenes Ablaufdatum basierend auf dem Zeitpunkt der Änderung des ursprünglichen Dokuments, aus der diese Version hervorgegangen ist. Das ursprüngliche Dokument und seine Versionen laufen unabhängig voneinander ab.
 
 > [!NOTE]
-> Aufbewahrte Versionen von SharePoint- und OneDrive-Dokumenten lassen sich nicht mithilfe von eDiscovery-Tools durchsuchen.
+> Die aufbewahrten Versionen dieser SharePoint- und OneDrive-Dokumente lassen sich nicht mithilfe von eDiscovery-Tools durchsuchen.
 
-Bei Elementen, die einer Aufbewahrungsrichtlinie (oder einer Aufbewahrung für juristische Zwecke) unterliegen, werden die Einschränkungen der Versionsverwaltung für die Dokumentbibliothek ignoriert, bis der Aufbewahrungszeitraum des Dokuments beendet ist. In diesem Szenario werden alte Versionen nicht automatisch gelöscht und Benutzer können Versionen nicht löschen.
+Wenn die Aufbewahrungsaktion das Dokument löschen soll, werden alle Versionen, die sich nicht im permanenten Dokumentarchiv befinden, gleichzeitig mit der aktuellen Version gelöscht.
 
-Das ist bei Aufbewahrungsbezeichnungen nicht der Fall, wenn Seite keiner Aufbewahrungsrichtlinie unterliegt. Stattdessen werden die Einschränkungen der Versionsverwaltung berücksichtigt, sodass ältere Versionen automatisch gelöscht und durch neuere Versionen ersetzt werden. Benutzer werden jedoch immer noch daran gehindert, Versionen zu löschen.
+Bei Elementen, die einer Aufbewahrungsrichtlinie (oder einer eDiscovery-Sperre) unterliegen, werden die Einschränkungen der Versionsverwaltung für die Dokumentbibliothek ignoriert, bis der Aufbewahrungszeitraum des Dokuments beendet ist (oder die eDiscovery-Sperre aufgehoben wird). In diesem Szenario werden alte Versionen nicht automatisch gelöscht und Benutzer können Versionen nicht löschen.
+
+Das gilt nicht für Aufbewahrungsbezeichnungen, wenn der Inhalt keiner Aufbewahrungsrichtlinie (oder eDiscovery-Sperre) unterliegt. Stattdessen werden die Einschränkungen der Versionsverwaltung berücksichtigt, sodass ältere Versionen automatisch gelöscht und durch neuere Versionen ersetzt werden. Benutzer werden jedoch immer noch daran gehindert, Versionen zu löschen.
 
 ## <a name="when-a-user-leaves-the-organization"></a>Wenn ein Benutzer die Organisation verlässt
 
