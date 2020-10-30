@@ -89,8 +89,6 @@
           href: sensitive-information-type-entity-definitions.md
         - name: Wonach die DLP-Funktionen suchen
           href: what-the-dlp-functions-look-for.md
-        - name: Ansehen eines erweiterten Überblicks über das Anpassen von DLP
-          href: 'https://go.microsoft.com/fwlink/?linkid=852306'
         - name: Anpassen eines benutzerdefinierten vertraulichen Informationstyps
           href: customize-a-built-in-sensitive-information-type.md
         - name: Benutzerdefinierten Typen vertraulicher Informationen
@@ -222,12 +220,26 @@
           href: data-loss-prevention-policies.md
         - name: Verhinderung von Datenverlust (DLP) und Microsoft Teams
           href: dlp-microsoft-teams.md
-        - name: Informationen zu Endpunkt-DLP (Vorschau)
+        - name: Informationen zur Verhinderung von Datenverlust am Endpunkt
           href: endpoint-dlp-learn-about.md
-        - name: Endpunkt-DLP (Vorschau) – Erste Schritte
+        - name: "Verhinderung von Datenverlust am Endpunkt\_– Erste Schritte"
           href: endpoint-dlp-getting-started.md
-        - name: Nutzung von Endpunkt-DLP (Vorschau)
+        - name: Nutzen der Verhinderung von Datenverlust am Endpunkt
           href: endpoint-dlp-using.md
+        - name: "Verhinderung von Datenverlust am Endpunkt\_– Onboarding-Tools und -Methoden für Windows\_10-Geräte"
+          items:
+            - name: "Onboarding-Tools und -Methoden für Windows\_10-Computer"
+              href: dlp-configure-endpoints.md
+            - name: "Onboarding von Windows\_10-Geräten über Gruppenrichtlinie"
+              href: dlp-configure-endpoints-gp.md
+            - name: "Onboarding von Windows\_10-Geräten mithilfe von Tools für die Verwaltung von Mobilgeräten"
+              href: dlp-configure-endpoints-mdm.md
+            - name: "Onboarding von Windows\_10-Geräten mithilfe von Configuration Manager"
+              href: dlp-configure-endpoints-sccm.md
+            - name: "Onboarding von Windows\_10-Geräten mithilfe eines lokalen Skripts"
+              href: dlp-configure-endpoints-script.md
+            - name: Onboarding von nicht-persistenten Geräten einer VD-Infrastruktur (Virtual Desktop)
+              href: dlp-configure-endpoints-vdi.md
         - name: Empfohlene erste Schritte mit DLP-Richtlinienvorlagen
           href: get-started-with-dlp-policy-recommendations.md
         - name: Erste Schritte mit der DLP-Standardrichtlinie
