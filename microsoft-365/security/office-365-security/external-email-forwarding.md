@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: dff2ea4e144f8f8fcc0f42732141e110effe7e9e
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: 59e2c938c70dd8e3060fd85d084acbe8f79856ad
+ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48774093"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48806634"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Steuern der automatischen externen e-Mail-Weiterleitung in Microsoft 365
 
@@ -31,7 +31,7 @@ Die folgenden Arten der automatischen Weiterleitung stehen in Microsoft 365 zur 
 
 - Benutzer können [Posteingangsregeln](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) so konfigurieren, dass Nachrichten automatisch an externe Absender weitergeleitet werden (absichtlich oder als Ergebnis eines kompromittierten Kontos).
 
-- Administratoren können die [Post Fach Weiterleitung](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (auch bekannt als SMTP-Weiterleitung) so konfigurieren, dass Nachrichten automatisch an externe Empfänger weitergeleitet werden.
+- Administratoren können die [Post Fach Weiterleitung](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (auch bekannt als _SMTP-Weiterleitung_ ) so konfigurieren, dass Nachrichten automatisch an externe Empfänger weitergeleitet werden.
 
 Sie können ausgehende Spamfilter-Richtlinien verwenden, um die automatische Weiterleitung an externe Empfänger zu steuern. Es stehen drei Einstellungen zur Verfügung:
 
@@ -45,9 +45,9 @@ Anweisungen zum Konfigurieren dieser Einstellungen finden Sie unter [Configure o
 
 > [!NOTE]
 > 
-> - Durch das Deaktivieren der automatischen Weiterleitung werden auch Posteingangsregeln deaktiviert, die Nachrichten an externe Adressen umleiten.
+> - Durch Deaktivieren der automatischen Weiterleitung werden alle Posteingangsregeln (Benutzer) oder Post Fach Weiterleitung (Administratoren) deaktiviert, die Nachrichten an externe Adressen umleiten.
 > 
->   Office 365 erlaubt keine automatische externe Weiterleitung durch Posteingangsregeln oder Postfachkonfiguration, die eine sichere Standardrichtlinie bereitstellt. Der Administrator kann diese Einstellungen jedoch für alle oder einige Benutzer in der Organisation ändern. Erstellen Sie [ausgehende Spam Richtlinien](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide&preserve-view=true#use-the-security--compliance-center-to-create-outbound-spam-policies) , und ändern Sie den Abschnitt Automatische Weiterleitung, um die automatische e-Mail-Weiterleitung von Benutzern an externe Absender zu steuern. Dies kann später auf die internen Absender angewendet werden, auf die die Richtlinie angewendet wird. Das Weiterleiten von Nachrichten zwischen internen Benutzern ist von einer solchen Änderung nicht betroffen.
+> - Die automatische Weiterleitung von Nachrichten zwischen internen Benutzern ist von den Einstellungen in den Richtlinien für ausgehende Spamfilter nicht betroffen.
 > 
 > - Informationen zu Benutzern, die Nachrichten automatisch an externe Empfänger weiterleiten, finden Sie im [Bericht automatisch weitergeleitete Nachrichten](mfi-auto-forwarded-messages-report.md).
 

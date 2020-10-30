@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Richten Sie Microsoft 365 Endpunkt-DLP (Data Loss Prevention, Verhinderung von Datenverlust) ein, um Dateiaktivitäten zu überwachen und schützende Maßnahmen für diese Dateien auf Endpunkten anzuwenden.
-ms.openlocfilehash: c579d0bbfdc72e56d99558ffa7e6812d00098c0d
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 82ba434d1874ce57abcf0bcc4b60858e0e2ccbf8
+ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430680"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48779213"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention-preview"></a>Endpunkt-DLP (Vorschau) – Erste Schritte
 
@@ -82,12 +82,23 @@ Endpunkt-DLP-Daten können im [Aktivitäten-Explorer](data-classification-activi
 Vergewissern Sie sich, dass die Windows 10-Geräte, auf die Sie Endpunkt-DLP anwenden möchten, die nachstehenden Anforderungen erfüllen.
 
 1. Es muss Windows 10 x64 Build 1809 oder höher ausgeführt werden.
-2. Alle Geräte müssen in [Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join), oder in Azure AD Hybrid eingebunden sein.
-3. Installieren Sie den Microsoft Edge-Browser auf dem Endpunktgerät, um Richtlinienaktionen für die Aktivität „Hochladen in die Cloud“ durchzusetzen. Weitere Informationen finden Sie unter [Herunterladen des auf Chromium basierenden neuen Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
+
+2. Antimalware-Clientversion ist 4.18.2009.7 oder neuer. Überprüfen Sie die aktuelle Version, indem Sie die Windows-Sicherheits-App öffnen, das Symbol Einstellungen und dann Info auswählen. Die Versionsnummer wird unter Antimalware-Clientversion aufgeführt. Aktualisieren Sie auf die neueste Antimalware-Clientversion, indem Sie Windows Update KB4052623 installieren. Hinweis: Keine der Windows-Sicherheitskomponenten muss aktiv sein, Sie können Endpunkt-DLP unabhängig vom Windows-Sicherheitsstatus ausführen.
+
+3. Die folgenden Windows-Updates sind installiert. Hinweis: Diese Updates sind keine Voraussetzung für die Einbindung eines Geräts an Endpunkt-DLP, enthalten jedoch Fixes für wichtige Probleme und müssen daher vor der Verwendung des Produkts installiert werden.
+
+    - Für Windows 10 1809 – KB4559003, KB4577069, KB4580390
+    - Für Windows 10 1903 oder 1909 – KB4559004, KB4577062, KB4580386
+    - Für Windows 10 2004 – KB4568831, KB4577063
+    - Für Geräte mit Office 2016 (und keine andere Office-Version) – KB4577063 
+
+4. Alle Geräte müssen in [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join), oder Azure AD Hybrid eingebunden sein.
+
+5. Installieren Sie den Microsoft Edge-Browser auf dem Endpunktgerät, um Richtlinienaktionen für die Aktivität „Hochladen in die Cloud“ durchzusetzen. Weitere Informationen finden Sie unter [Herunterladen des auf Chromium basierenden neuen Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
 ## <a name="onboarding-devices-into-device-management"></a>Onboarding von Geräten für die Geräteverwaltung
 
- Sie müssen die Geräteüberwachung aktivieren und die Endpunkte einbinden, bevor vertrauliche Elemente auf einem Gerät überwacht und geschützt werden können. Beide Aktionen werden im Microsoft 365 Compliance-Portal durchgeführt.
+Sie müssen die Geräteüberwachung aktivieren und die Endpunkte einbinden, bevor vertrauliche Elemente auf einem Gerät überwacht und geschützt werden können. Beide Aktionen werden im Microsoft 365 Compliance-Portal durchgeführt.
 
 Wenn Sie das Onboarding von noch nicht eingebundenen Geräten vornehmen möchten, laden Sie das entsprechende Skript herunter, und installieren Sie es auf diesen Geräten. Wenden Sie das [Verfahren zum Onboarding von Geräten](endpoint-dlp-getting-started.md#onboarding-devices) an.
 
@@ -98,19 +109,26 @@ Wenn bereits Geräte in [Microsoft Defender für Endpunkt](https://docs.microsof
 In diesem Bereitstellungsszenario werden Sie das Onboarding von noch nicht eingebundenen Geräten vornehmen, und Sie werden dafür sorgen, dass vertrauliche Elemente auf Windows 10-Geräten im Hinblick auf versehentliche Freigabe überwacht und geschützt sind.
 
 1. Öffnen Sie das [Microsoft Compliance Center](https://compliance.microsoft.com).
+
 2. Öffnen Sie die Seite "Einstellungen", und wählen Sie **Geräte-Onboarding** aus. 
 
-   ![Aktivieren der Geräteverwaltung](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+   > [!div class="mx-imgBorder"]
+   > ![Aktivieren der Geräteverwaltung](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
    > [!NOTE]
    > In der Regel dauert es zwar nur ungefähr eine Minute, bis das Geräte-Onboarding aktiviert ist, warten Sie aber mindestens 30 Minuten, bevor Sie sich an den Microsoft-Support wenden.
 
 3. Wählen Sie **Geräteverwaltung** aus, um die Liste der **Geräte** zu öffnen. Die Liste ist leer, solange keine Geräte eingebunden sind.
+
 4. Wählen Sie **Onboarding** aus, um mit dem Onboarding-Prozess zu beginnen.
+
 5. Wählen Sie die Art der Bereitstellung auf diesen zusätzlichen Geräten aus der Liste der **Bereitstellungsmethoden** und anschließend **Paket herunterladen** aus.
 
-   ![Bereitstellungsmethode](../media/endpoint-dlp-getting-started-3-deployment-method.png)
+   > [!div class="mx-imgBorder"]
+   > ![Bereitstellungsmethode](../media/endpoint-dlp-getting-started-3-deployment-method.png)
+   
 6. Führen Sie die unter [Onboarding-Tools und -Methoden für Windows 10-Computer](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) beschriebenen entsprechenden Verfahren aus. Über diesen Link gelangen Sie zu einer Zielseite, auf der Microsoft Defender für Endpunkt-Prozeduren beschrieben werden, die dem in Schritt 5 ausgewählten Bereitstellungspaket entsprechen:
+
     - Onboarding von Windows 10-Computern mithilfe von Gruppenrichtlinien
     - Onboarding von Windows-Computern mithilfe von Microsoft Endpoint Configuration Manager
     - Onboarding von Windows 10-Computern mit Tools für die Verwaltung von Mobilgeräten
@@ -127,11 +145,20 @@ Nach Abschluss des Endpunkt-Onboardings sollten diese in der Liste der Geräte a
 In diesem Szenario ist Microsoft Defender für Endpunkt bereits installiert, und Endpunkte senden Protokolle. Alle diese Endpunkte werden in der Liste der verwalteten Geräte angezeigt. Über das [Geräte-Onboarding](endpoint-dlp-getting-started.md#onboarding-devices) können Sie weiterhin neue Geräte in Endpunkt-DLP einbinden, um die Abdeckung zu erweitern.
 
 1. Öffnen Sie das [Microsoft Compliance Center](https://compliance.microsoft.com).
+
 2. Öffnen Sie die Seite "Einstellungen", und wählen Sie **Geräteüberwachung aktivieren** aus.
-3. Wählen Sie **Geräteverwaltung** aus, um die Liste der **Geräte** zu öffnen. Es sollte die Liste der Geräte angezeigt werden, die bereits Berichte für Microsoft Defender für Endpunkt erstellen. ![Geräteverwaltung](../media/endpoint-dlp-getting-started-2-device-management.png)
+
+3. Wählen Sie **Geräteverwaltung** aus, um die Liste der **Geräte** zu öffnen. Es sollte die Liste der Geräte angezeigt werden, die bereits Berichte für Microsoft Defender für Endpunkt erstellen.
+
+   > [!div class="mx-imgBorder"]
+   > ![Geräteverwaltung](../media/endpoint-dlp-getting-started-2-device-management.png)
+   
 4. Wenn Sie zusätzliche Geräte einbinden möchten, wählen Sie **Onboarding** aus.
+
 5. Wählen Sie die Art der Bereitstellung auf diesen zusätzlichen Geräten aus der Liste der **Bereitstellungsmethoden** und anschließend **Paket herunterladen** aus.
+
 6. Führen Sie die unter [Onboarding-Tools und -Methoden für Windows 10-Computer](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) beschriebenen entsprechenden Verfahren aus. Über diesen Link gelangen Sie zu einer Zielseite, auf der Microsoft Defender für Endpunkt-Prozeduren beschrieben werden, die dem in Schritt 5 ausgewählten Bereitstellungspaket entsprechen:
+
     - Onboarding von Windows 10-Computern mithilfe von Gruppenrichtlinien
     - Onboarding von Windows-Computern mithilfe von Microsoft Endpoint Configuration Manager
     - Onboarding von Windows 10-Computern mit Tools für die Verwaltung von Mobilgeräten
@@ -146,9 +173,11 @@ Nach Abschluss des Endpunkt-Onboardings sollten diese in der Tabelle der **Gerä
 ### <a name="viewing-endpoint-dlp-data-in-activity-explorer"></a>Anzeigen von Endpunkt-DLP-Daten im Aktivitäten-Explorer
 
 1. Öffnen Sie im Microsoft 365 Compliance Center die Seite [Datenklassifizierung](https://compliance.microsoft.com/dataclassification?viewid=overview) für Ihre Domäne, und wählen Sie den Aktivitäten-Explorer aus.
+
 2. Unter [Erste Schritte mit dem Aktivitäten-Explorer](data-classification-activity-explorer.md) erfahren Sie Näheres dazu, wie Sie auf alle Daten zu Ihren Endpunktgeräten zugreifen und diese filtern können.
 
-![Aktivitäten-Explorer-Filter für Endpunktgeräte](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
+   > [!div class="mx-imgBorder"]
+   > ![Aktivitäten-Explorer-Filter für Endpunktgeräte](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Jetzt, da Geräte eingebunden sind und entsprechende Aktivitätsdaten im Aktivitäten-Explorer angezeigt werden, können Sie mit dem nächsten Schritt fortfahren, bei dem Sie DLP-Richtlinien zum Schutz Ihrer vertraulichen Elemente erstellen werden.
@@ -165,5 +194,5 @@ Jetzt, da Geräte eingebunden sind und entsprechende Aktivitätsdaten im Aktivit
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/)
 - [Onboarding-Tools und -Methoden für Windows 10-Computer](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
 - [Microsoft 365-Abonnement](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
-- [Azure Active Directory (AAD) Einbindung](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
+- [Azure AD-verbundene Geräte](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
 - [Herunterladen des auf Chromium basierenden neuen Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

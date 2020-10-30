@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können erfahren, wie Sie das Übermittlungen-Portal im Security & Compliance Center verwenden, um verdächtige e-Mails, verdächtige Phishing-Mails, Spam und andere potenziell schädliche Nachrichten, URLs und Dateien für die Überprüfung an Microsoft zu übermitteln.
-ms.openlocfilehash: 4bb0cd95daecfcba18ca1560e4c4780455b40157
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 5d4123acaf3c9891f9aeb8028173f3071c260935
+ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446719"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48806760"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Verwenden von Administrator-Übermittlung, um verdächtige Spam- oder Phishing-Nachrichten, URLs und Dateien an Microsoft zu übermitteln
 
@@ -52,17 +52,17 @@ Weitere Möglichkeiten zum Übermitteln von e-Mail-Nachrichten, URLs und Anlagen
 
 ## <a name="report-suspicious-content-to-microsoft"></a>Verdächtigen Inhalt an Microsoft melden
 
-1. Wechseln Sie im Security & Compliance Center zu **Threat Management** \> -über **mittlungen**, stellen Sie sicher, dass Sie sich auf der Registerkarte Admin-über **mittlungen** befinden, und klicken Sie dann auf **neue Übermittlung**.
+1. Wechseln Sie im Security & Compliance Center zu **Threat Management** \> -über **mittlungen** , stellen Sie sicher, dass Sie sich auf der Registerkarte Admin-über **mittlungen** befinden, und klicken Sie dann auf **neue Übermittlung** .
 
 2. Verwenden Sie das **neue Übermittlungs** Flyout, das angezeigt wird, um die Nachricht, die URL oder Anlage zu übermitteln, wie in den folgenden Abschnitten beschrieben.
 
 ### <a name="submit-a-questionable-email-to-microsoft"></a>Senden einer fragwürdigen e-Mail an Microsoft
 
-1. Wählen Sie im Abschnitt **Objekttyp** die Option **e-Mail**aus. Verwenden Sie im Abschnitt **Übermittlungs Format** eine der folgenden Optionen:
+1. Wählen Sie im Abschnitt **Objekttyp** die Option **e-Mail** aus. Verwenden Sie im Abschnitt **Übermittlungs Format** eine der folgenden Optionen:
 
-   - **Netzwerknachrichten-ID**: Dies ist ein GUID-Wert, der im **X-MS-Exchange-Organization-Network-Message-ID** -Header in der Nachricht zur Verfügung steht.
+   - **Netzwerknachrichten-ID** : Dies ist ein GUID-Wert, der im **X-MS-Exchange-Organization-Network-Message-ID** -Header in der Nachricht zur Verfügung steht.
 
-   - **Datei**: Klicken Sie auf **Datei auswählen**. Suchen Sie in dem Dialogfeld, das geöffnet wird, nach der EML-oder msg-Datei, und wählen Sie Sie aus, und klicken Sie dann auf **Öffnen**.
+   - **Datei** : Klicken Sie auf **Datei auswählen** . Suchen Sie in dem Dialogfeld, das geöffnet wird, nach der EML-oder msg-Datei, und wählen Sie Sie aus, und klicken Sie dann auf **Öffnen** .
 
 2. Geben Sie im Abschnitt **Empfänger** einen oder mehrere Empfänger an, für die Sie eine Richtlinienüberprüfung ausführen möchten. Durch die Richtlinienüberprüfung wird ermittelt, ob die e-Mail-Überprüfung aufgrund von Benutzer-oder Organisationsrichtlinien umgangen wurde.
 
@@ -70,7 +70,7 @@ Weitere Möglichkeiten zum Übermitteln von e-Mail-Nachrichten, URLs und Anlagen
 
    - **Sollte nicht blockiert worden sein**
 
-   - **Sollte blockiert worden sein**: Wählen Sie **Spam**, **Phishing**oder **Schadsoftware**aus. Wenn Sie nicht sicher sind, verwenden Sie Ihr Bestes Urteil.
+   - **Sollte blockiert worden sein** : Wählen Sie **Spam** , **Phishing** oder **Schadsoftware** aus. Wenn Sie nicht sicher sind, verwenden Sie Ihr Bestes Urteil.
 
 4. Wenn der Filter aufgrund von Richtlinien bei der Übermittlung umgangen wurde, werden Informationen zu dieser Richtlinie angezeigt.
 
@@ -82,13 +82,13 @@ Weitere Möglichkeiten zum Übermitteln von e-Mail-Nachrichten, URLs und Anlagen
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Senden einer verdächtigen URL an Microsoft
 
-1. Wählen Sie im Abschnitt **Objekttyp** die Option **URL**aus. Geben Sie in das Feld, das angezeigt wird, die vollständige URL ein (beispielsweise `https://www.fabrikam.com/marketing.html` ).
+1. Wählen Sie im Abschnitt **Objekttyp** die Option **URL** aus. Geben Sie in das Feld, das angezeigt wird, die vollständige URL ein (beispielsweise `https://www.fabrikam.com/marketing.html` ).
 
 2. Wählen Sie im Abschnitt **Grund für die Übermittlung** eine der folgenden Optionen aus:
 
    - **Sollte nicht blockiert worden sein**
 
-   - **Sollte blockiert worden sein**: Wählen Sie **Phishing** oder **Schadsoftware**aus.
+   - **Sollte blockiert worden sein** : Wählen Sie **Phishing** oder **Schadsoftware** aus.
 
 3. Wenn Sie fertig sind, klicken Sie auf die Schaltfläche **Absenden** .
 
@@ -96,15 +96,15 @@ Weitere Möglichkeiten zum Übermitteln von e-Mail-Nachrichten, URLs und Anlagen
 
 ### <a name="submit-a-suspected-file-to-microsoft"></a>Übermitteln einer vermuteten Datei an Microsoft
 
-1. Wählen Sie im Abschnitt **Objekttyp** die Option **Anlage**aus.
+1. Wählen Sie im Abschnitt **Objekttyp** die Option **Anlage** aus.
 
-2. Klicken Sie auf **Datei auswählen**. Suchen und wählen Sie im daraufhin geöffneten Dialogfeld die Datei aus, und klicken Sie dann auf **Öffnen**.
+2. Klicken Sie auf **Datei auswählen** . Suchen und wählen Sie im daraufhin geöffneten Dialogfeld die Datei aus, und klicken Sie dann auf **Öffnen** .
 
 3. Wählen Sie im Abschnitt **Grund für die Übermittlung** eine der folgenden Optionen aus:
 
    - **Sollte nicht blockiert worden sein**
 
-   - **Sollte blockiert worden sein**: **Schadsoftware** ist die einzige Wahl und wird automatisch ausgewählt..
+   - **Sollte blockiert worden sein** : **Schadsoftware** ist die einzige Wahl und wird automatisch ausgewählt..
 
 4. Wenn Sie fertig sind, klicken Sie auf die Schaltfläche **Absenden** .
 
@@ -112,7 +112,7 @@ Weitere Möglichkeiten zum Übermitteln von e-Mail-Nachrichten, URLs und Anlagen
 
 ## <a name="view-admin-submissions"></a>Anzeigen von Übermittlungen von Administratoren
 
-Wechseln Sie im Security & Compliance Center zu **Threat Management** \> -über **mittlungen**, stellen Sie sicher, dass Sie sich auf der Registerkarte Admin-über **mittlungen** befinden, und klicken Sie dann auf **neue Übermittlung**.
+Wechseln Sie im Security & Compliance Center zu **Threat Management** \> -über **mittlungen** , stellen Sie sicher, dass Sie sich auf der Registerkarte Admin-über **mittlungen** befinden, und klicken Sie dann auf **neue Übermittlung** .
 
 Oben auf der Seite können Sie ein Startdatum, ein Enddatum und (standardmäßig) nach **Übermittlungs-ID** (ein GUID-Wert, der jeder Übermittlung zugewiesen ist) filtern, indem Sie einen Wert in das Feld eingeben und auf Aktualisieren klicken ![ ](../../media/scc-quarantine-refresh.png) . Update
 
@@ -126,9 +126,9 @@ Klicken Sie zum Ändern der Filterkriterien auf die Schaltfläche **Übermittlun
 
 ![Filter Optionen für Übermittlungen von Administratoren](../../media/admin-submission-email-filter-options.png)
 
-Klicken Sie zum Exportieren der Ergebnisse im oberen Bereich der Seite auf **exportieren** , und wählen Sie **Diagrammdaten** oder **Tabelle**aus. Speichern Sie im angezeigten Dialogfeld die CSV-Datei.
+Klicken Sie zum Exportieren der Ergebnisse im oberen Bereich der Seite auf **exportieren** , und wählen Sie **Diagrammdaten** oder **Tabelle** aus. Speichern Sie im angezeigten Dialogfeld die CSV-Datei.
 
-Unter dem Diagramm befinden sich drei Registerkarten: **e-Mail** (Standard), **URL**und **Anlage**.
+Unter dem Diagramm befinden sich drei Registerkarten: **e-Mail** (Standard), **URL** und **Anlage** .
 
 ### <a name="view-admin-email-submissions"></a>Anzeigen von Administrator-e-Mail-Übermittlungen
 
@@ -137,7 +137,7 @@ Klicken Sie auf die Registerkarte **e-Mail** .
 Sie können auf die Schaltfläche **Spaltenoptionen** am unteren Rand der Seite klicken, um Spalten aus der Ansicht hinzuzufügen oder zu entfernen:
 
 - **Date**
-- **Übermittlungs-ID**: ein GUID-Wert, der jeder Übermittlung zugewiesen ist.
+- **Übermittlungs-ID** : ein GUID-Wert, der jeder Übermittlung zugewiesen ist.
 - **Eingereicht von**<sup>\*</sup>
 - **Betreff**<sup>\*</sup>
 - **Sender**
@@ -184,9 +184,9 @@ Sie können auf die Schaltfläche **Spaltenoptionen** am unteren Rand der Seite 
 
 Wenn Sie das [Add-in "Berichtsnachricht](enable-the-report-message-add-in.md)" bereitgestellt haben oder die [integrierten Berichte in Outlook im Internet](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)verwendet werden, können Sie sehen, welche Benutzer auf der Registerkarte " **Benutzereingaben** " berichten.
 
-1. Wechseln Sie im Security & Compliance Center zu **Threat Management** -über \> **mittlungen**.
+1. Wechseln Sie im Security & Compliance Center zu **Threat Management** -über \> **mittlungen** .
 
-2. Wählen Sie die Registerkarte **Benutzer Übermittlungen** aus, und klicken Sie dann auf **neue Übermittlung**.
+2. Wählen Sie die Registerkarte **Benutzer Übermittlungen** aus, und klicken Sie dann auf **neue Übermittlung** .
 
 Sie können auf die Schaltfläche **Spaltenoptionen** am unteren Rand der Seite klicken, um Spalten aus der Ansicht hinzuzufügen oder zu entfernen:
 
@@ -211,13 +211,13 @@ Klicken Sie zum Ändern der Filterkriterien auf die Schaltfläche **Absender** ,
 
 ![Filter Optionen für Benutzer Übermittlungen](../../media/user-submissions-filter-options.png)
 
-Klicken Sie zum Exportieren der Ergebnisse im oberen Bereich der Seite auf **exportieren** , und wählen Sie **Diagrammdaten** oder **Tabelle**aus. Speichern Sie im angezeigten Dialogfeld die CSV-Datei.
+Klicken Sie zum Exportieren der Ergebnisse im oberen Bereich der Seite auf **exportieren** , und wählen Sie **Diagrammdaten** oder **Tabelle** aus. Speichern Sie im angezeigten Dialogfeld die CSV-Datei.
 
 ## <a name="view-user-submissions-to-the-custom-mailbox"></a>Anzeigen von Benutzereingaben zum benutzerdefinierten Postfach
 
 **Wenn** Sie [ein benutzerdefiniertes Postfach](user-submission.md) für den Empfang von gemeldeten Benutzern konfiguriert haben, können Sie Nachrichten anzeigen und auch senden, die an das Berichts Postfach übermittelt wurden.
 
-1. Wechseln Sie im Security & Compliance Center zu **Threat Management** -über \> **mittlungen**.
+1. Wechseln Sie im Security & Compliance Center zu **Threat Management** -über \> **mittlungen** .
 
 2. Wählen Sie die Registerkarte **benutzerdefiniertes Postfach** aus.
 
@@ -232,7 +232,11 @@ Sie können auf die Schaltfläche **Spaltenoptionen** am unteren Rand der Seite 
 
 Am oberen Rand der Seite können Sie ein Startdatum, ein Enddatum eingeben und nach **abgesendet** filtern, indem Sie einen Wert in das Feld eingeben und auf ![ Aktualisieren klicken ](../../media/scc-quarantine-refresh.png) . Update
 
-Klicken Sie zum Exportieren der Ergebnisse im oberen Bereich der Seite auf **exportieren** , und wählen Sie **Diagrammdaten** oder **Tabelle**aus. Speichern Sie im angezeigten Dialogfeld die CSV-Datei.
+Klicken Sie zum Exportieren der Ergebnisse im oberen Bereich der Seite auf **exportieren** , und wählen Sie **Diagrammdaten** oder **Tabelle** aus. Speichern Sie im angezeigten Dialogfeld die CSV-Datei.
+
+## <a name="undo-user-submissions"></a>Benutzereingaben rückgängig machen
+
+Sobald ein Benutzer eine verdächtige e-Mail an das benutzerdefinierte Postfach übermittelt hat, haben der Benutzer und der Administrator keine Option zum Rückgängigmachen der Übermittlung. Wenn der Benutzer die e-Mail wiederherstellen möchte, steht er für die Wiederherstellung in den Ordner "Gelöschte Elemente" oder "Junk-e-Mail" zur Verfügung. 
 
 ### <a name="submit-messages-to-microsoft-from-the-custom-mailbox"></a>Übermitteln von Nachrichten an Microsoft aus dem benutzerdefinierten Postfach
 

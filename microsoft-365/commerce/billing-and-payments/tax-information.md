@@ -20,12 +20,12 @@ description: 'Erfahren Sie, wie viel Steuern für Ihr Microsoft 365 for Business
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: d3d1bc1239cb99da33f776e603356ccae95a2353
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: d3654dd307e15e58acdd06277cf7338da537e5c6
+ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464096"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48806600"
 ---
 # <a name="tax-information"></a>Steuerinformationen
 
@@ -99,21 +99,21 @@ Unternehmen in den folgenden Ländern können Ihre MwSt-Nummer oder eine lokale 
 
 ## <a name="europe-the-middle-east-and-africa-emea"></a>Europa, Nahost und Afrika (EMEA)
 
-Wenn Sie Microsoft 365-Dienste in der Europäischen Union kaufen, unterliegt dieser Kauf Value-Added Steuer (MwSt.).
+Wenn Sie Microsoft 365-Dienste in der EMEA-Region kaufen, kann dieser Erwerb Value-Added Steuer (MwSt.) unterliegen.
   
-- Wenn Sie sich in einem Mitgliedstaat der Europäischen Union befinden und keine gültige lokale USt-ID angeben, wendet Microsoft Ireland Operations Ltd. den aktuellen lokalen MwSt-Satz an, der auf dem Abrechnungs Land basiert, auf das Ihr Konto festgelegt ist.
+- Wenn Sie sich in einem Mitgliedstaat der Europäischen Union, in Armenien, in Belarus, in Norwegen, in der Türkei oder in den Vereinigten Arabischen Emiraten befinden und keine gültige lokale USt-ID angeben, wendet Microsoft Ireland Operations Ltd. den aktuellen lokalen MwSt-Satz an, der auf dem Abrechnungs Land basiert, auf das Ihr Konto festgelegt ist.
 
-- Wenn Sie in der Schweiz oder in Liechtenstein ansässig sind, wird der aktuell für die Schweiz gültige Mehrwertsteuersatz angewendet, ganz gleich, ob Sie Ihre USt-ID angeben oder nicht.
+- Wenn Sie sich in Liechtenstein, Russland, Serbien, Südafrika oder in der Schweiz befinden, wird die Mehrwertsteuer angewendet, unabhängig davon, ob Sie Ihre UST-ID angeben oder nicht.
 
-- Wenn Sie sich in einem EMEA-Land außerhalb der Europäischen Union und der Schweiz/Liechtenstein befinden, wird die Mehrwertsteuer in der Regel nicht von der Microsoft Ireland Operations Ltd abgebucht.
-
-- Bevor wir Ihre USt-ID validieren können, muss sie im MwSt-Informationsaustauschsystem (MIAS) zur Überprüfung verfügbar sein. Wenn Ihre UST-ID nicht überprüft werden kann, wenden Sie sich an Ihre lokale Steuerbehörde.
+- Für EU-Kunden muss diese zur Überprüfung im MwSt-Informationsaustausch System (MIAS) zur Verfügung stehen, bevor Sie Ihre UST-ID überprüfen können. Wenn Ihre UST-ID nicht überprüft werden kann, wenden Sie sich an Ihre lokale Steuerbehörde.
 
 Sie können sich für eine Mehrwertsteuer-Nullbewertung qualifizieren, wenn:
   
 - **Sie befinden sich in einem Mitgliedstaat der Europäischen Union außerhalb Irlands:** Sie können Ihre gültige lokale USt-ID angeben. Dadurch kann die Transaktion von Microsoft Ireland Operations Ltd. zur Mehrwertsteuererklärung ohne MwSt. berechnet werden. Möglicherweise verfügen Sie jedoch über eine lokale MwSt-Abrechnungs Pflicht. Wenn Sie Bedenken haben, erkundigen Sie sich bei ihren Steuerberatern. Anweisungen finden Sie unter [Hinzufügen Ihrer MwSt-ID](#add-your-vat-id).
 
 - **Sie sind in Irland und verfügen über die entsprechende gültige MwSt-Befreiungs Zertifizierung:** Microsoft Ireland Operations Ltd. ist berechtigt, die Transaktion von der Mehrwertsteuer zu befreien. Wenn Sie dies nicht tun, wendet Microsoft Ireland Operations Ltd. den aktuellen irischen MwSt-Satz an, unabhängig davon, ob Sie eine Umsatzsteuer-ID angeben oder nicht.
+
+- **Sie befinden sich in Armenien, Belarus, Norwegen, der Türkei oder den Vereinigten Arabischen Emiraten:** Sie können Ihre lokale USt-ID angeben. Dies berechtigt Microsoft Ireland Operations Ltd. zur MwSt-NULL-Bewertung der Transaktion. Allerdings haben Sie möglicherweise eine lokale Mehrwert steuererklärungs Pflicht, also erkundigen Sie sich bei ihren Steuerberatern, wenn Sie Bedenken haben. Anweisungen finden Sie unter [Hinzufügen Ihrer MwSt-ID](#add-your-vat-id).
 
 ## <a name="asia-pacific-countries-apac"></a>Länder des asiatisch-pazifischen Raums (APAC)
 
@@ -137,15 +137,15 @@ Wenn Ihre Abrechnung von der Microsoft Corporation ausgeführt wird ([Siehe Rech
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
 2. Wählen Sie auf der Registerkarte **Produkte** das Abonnement aus, das Sie aktualisieren möchten.
-3. Wählen Sie auf der Seite Abonnementdetails im Abschnitt **Dienstnutzungsadresse** die Option **Dienst Verwendungs Adresse bearbeiten**aus.
-4. Geben Sie im Bereich **Dienst Verwendungs Adresse bearbeiten** im Feld MwSt.- **Nummer** Ihre Umsatzsteuer-ID, einschließlich des Präfixes, und ohne Leerzeichen ein.
-5. Klicken Sie auf **Speichern**.
+3. Wählen Sie auf der Seite Abonnementdetails im Abschnitt **Dienstnutzungsadresse** die Option **Dienst Verwendungs Adresse bearbeiten** aus.
+4. Geben Sie im Bereich **Dienst Verwendungs Adresse bearbeiten** im Feld **MwSt** .-Nummer Ihre Umsatzsteuer-ID, einschließlich des Präfixes, und ohne Leerzeichen ein.
+5. Klicken Sie auf **Speichern** .
 
 ## <a name="how-taxes-are-calculated"></a>Berechnung der Steuern
 
 Mehrwertsteuern werden anhand des VK-Preises berechnet und dann aggregiert.
 
-Beispiel:
+Zum Beispiel:
 
 >*(Einheitspreis X Steuersatz) X Quantity = Gesamtumsatz Steuer*
 
