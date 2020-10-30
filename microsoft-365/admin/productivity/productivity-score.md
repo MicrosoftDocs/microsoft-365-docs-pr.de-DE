@@ -18,14 +18,13 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Übersicht über die Microsoft Produktivitätsbewertung
-ms.openlocfilehash: 3d014cd0eb3a3ceed3b3f3b48f126453e4ced193
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 3808583429c78460483cd7193d38810a7e189040
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48794965"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804726"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft Productivity Score 
 
@@ -43,25 +42,28 @@ Wir stellen Daten, Einblicke und Empfehlungen in zwei Bereichen zur Verfügung:
 
     Wir bieten diese Einblicke, da Personen, die Online zusammenarbeiten, Zeit sparen und mit der Freiheit, auf jedem Gerät zu arbeiten, dann produktiver und zufriedener sind. Die Möglichkeit der flexiblen Kommunikation macht die Benutzer effizienter und kann bessere Beziehungen aufbauen, wodurch Ihre Organisation einheitlicher gestaltet wird. Hinweise finden Sie unter [Forrester Report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
-- **Technologie-Erlebnisse:** Die Produktivität hängt von einer zuverlässigen und leistungsfähigen Technologie sowie der effizienten Nutzung von Microsoft 365 ab. Wir stellen [EndPoint Analytics](https://aka.ms/endpointanalytics)bereit, damit Sie besser verstehen, wie die Produktivität Ihrer Benutzer durch Leistungs-und Integritätsprobleme mit ihrer Endpunkt Hardware und-Software beeinträchtigt werden kann. Außerdem werden Empfohlene Maßnahmen zur Korrektur dieser Informationen sowie Microsoft 365-Netzwerkkonnektivitäts-Einblicke für Ihre Organisation bereitgestellt.
+- **Technologie-Erlebnisse:** Die Produktivität Ihres Teams hängt von einer zuverlässigen und leistungsfähigen Technologie sowie der effizienten Nutzung von Microsoft 365 ab. [EndPoint Analytics](https://aka.ms/endpointanalytics) hilft Ihnen zu verstehen, wie die Produktivität Ihrer Benutzer durch Leistungs-und gesundheitliche Probleme mit Ihrer Hardware und Software beeinträchtigt werden kann. Empfohlene Aktionen helfen Ihnen beim Beheben dieser Probleme. Microsoft 365 Network Connectivity Insights hilft Ihnen bei der Behandlung von connectivty-Problemen in Ihrer Organisation.
 
 Eine Übersicht und erforderliche Details finden Sie unter [Was ist Endpoint Analytics](https://docs.microsoft.com/mem/analytics/overview) . Weitere Informationen zu den Einblicken in Microsoft 365 Netzwerkkonnektivität finden Sie [unter Übersicht über die Netzwerkkonnektivität](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview).
   
 
 ## <a name="how-the-score-is-calculated"></a>Berechnung der Bewertung
 
-Ihr Produktivitäts Ergebnis basiert auf den kombinierten Ergebnissen ihrer Personen-und Technologie Erlebnis Kategorien. Jede Kategorie wird gleich gewichtet, mit einer Gesamtsumme von 100 Punkten. Die höchstmögliche Produktivitäts Punktzahl beträgt 500.
+Ihr Produktivitäts Ergebnis basiert auf den kombinierten Ergebnissen ihrer Personen-und Technologie Erlebnis Kategorien. Jede Kategorie wird gleich gewichtet, mit einer Gesamtsumme von 100 Punkten. Die höchstmögliche Produktivitäts Punktzahl beträgt 800.
 
 ### <a name="score-categories"></a>Bewertungskategorien 
 
-- Zusammenarbeit mit Inhalten (100 Punkte)
 - Kommunikation (100 Punkte)
+- Besprechungen (100 Punkte)
+- Zusammenarbeit mit Inhalten (100 Punkte)
+- Teamwork (100 Punkte)
 - Mobilität (100 Punkte)
 - Endpunktanalyse (100 Punkte)
 - Netzwerkkonnektivität (100 Punkte)
-- **Insgesamt möglich = 500 Punkte**
+- Microsoft 365 apps-Integrität (100 Punkte)
+- **Insgesamt möglich = 800 Punkte**
  
- In jeder Kategorie identifizieren wir Muster für wichtige Aktivitäten, die Indikatoren für die Verwendung von Microsoft 365-Produkten für die Zusammenarbeit, Kommunikation und die plattformübergreifende Arbeit sind. Wir bieten 28-tägige und 180-tägige Ansichten der wichtigsten Aktivitäten. Wir bieten auch unterstützende Metriken, die nicht Teil der Bewertungs Berechnung sind, aber wichtig sind, um Ihnen zu helfen, zugrunde liegende Verhaltensweisen und Einstellungen zu identifizieren, auf die Sie reagieren können.
+ In jeder Bewertungskategorie identifizieren wir Muster für wichtige Aktivitäten, die Indikatoren für die Verwendung von Microsoft 365-Produkten für die Zusammenarbeit, Kommunikation und die plattformübergreifende Arbeit sind. Wir bieten 28-tägige und 180-tägige Ansichten der wichtigsten Aktivitäten. Wir bieten auch unterstützende Metriken an, die nicht Teil der Bewertungs Berechnung sind, aber wichtig sind, um Ihnen das erkennen zugrunde liegender Verhaltensweisen und Einstellungen zu erleichtern, die Sie adressieren können.
 
 ### <a name="products-included-in-productivity-score"></a>In Produktivitäts Bewertung enthaltene Produkte 
 
@@ -72,7 +74,9 @@ Ihre Punktzahl wird täglich aktualisiert und spiegelt Benutzeraktionen wider, d
 
 ## <a name="pre-requisites"></a>Voraussetzungen 
 
-Um Daten für Personen zu erhalten, benötigen Sie ein Microsoft 365 for Business-oder Office 365 for Enterprise-Abonnement, und Sie müssen mehr Instanzen basierte Cloud-Dienste verwenden. Um Endpoint Analytics-Daten für Ihren Mandanten zu erhalten, müssen Sie Microsoft InTune zu Ihrem Abonnement hinzufügen. InTune hilft Ihnen, die Daten Ihrer Organisation zu schützen, indem Geräte und apps verwaltet werden.       Sobald Sie InTune haben, können Sie die Endpunktanalyse in der InTune-Umgebung aktivieren. Erfahren Sie mehr über Microsoft InTune. 
+Für Personen Erfahrungsdaten benötigen Sie ein Microsoft 365 for Business-oder Office 365 for Enterprise-Abonnement. Für Endpoint Analytics-Daten für Ihren Mandanten müssen Sie Microsoft InTune zu Ihrem Abonnement hinzufügen. InTune hilft Ihnen, die Daten Ihrer Organisation zu schützen, indem Geräte und apps verwaltet werden. Sobald Sie InTune haben, können Sie die Endpunktanalyse in der InTune-Umgebung aktivieren. Erfahren Sie mehr über Microsoft InTune. 
+> [!NOTE]
+> Eine Lizenz für die Arbeitsplatzanalyse ist nicht erforderlich, um die Produktivitäts Bewertungs Features zu erhalten.
 
 Um die Produktivitäts Bewertung für Ihre Organisation anzuzeigen, müssen Sie über eine der folgenden Rollen verfügen: 
 
@@ -90,21 +94,21 @@ Sie können auf die Benutzeroberfläche von Microsoft 365 admin Home unter **Ber
 
 Auf der Startseite der Produktivitäts Bewertung werden die Gesamtpunktzahl und der Bewertungsverlauf sowie die primäre Einblicke für jede Kategorie angezeigt.
 
-![Produktivitäts Bewertung (Startseite)](../../media/pslanding.png)
+:::image type="content" source="../../media/prodscore-landing.png" alt-text="Seite &quot;Produktivitäts Bewertung&quot; in Berichten.&quot;:::
 
 **Ihre Punktzahl** wird als Prozentwert und in Punkten angezeigt. Sie können Ihre Punkte im Zähler und die maximal möglichen Punkte im Nenner sehen.
 
-Anhand von **Peer-Benchmarks** können Sie Ihre Punktzahl mit Organisationen wie Ihrem vergleichen. Für die Kategorien "Personen Erfahrungen" wird die Vergleichs Vergleichsmessung als durchschnittliche Anzahl von Measures in einer Gruppe ähnlicher Organisationen berechnet. Das Paket besteht aus Organisationen in Ihrer Region mit einer ähnlichen Anzahl von lizenzierten Benutzern, Lizenztypen, Industrie und Besitz mit Microsoft 365. 
+Anhand von **Peer-Benchmarks** können Sie Ihre Punktzahl mit Organisationen wie Ihrem vergleichen. Der Peer-Benchmark für die Kategorien Personen Erfahrungen wird als der Durchschnitt der Measures in einer Gruppe ähnlicher Organisationen berechnet. Die Gruppe von Organisationen besteht aus Organisationen in Ihrer Region mit einer ähnlichen Anzahl von lizenzierten Benutzern, Arten von Lizenzen, Industrie und Besitz mit Microsoft 365. 
 
 Der Endpunktanalyse-Peer-Benchmark umfasst Ziele für die gerätestart Leistung und die empfohlene Softwarekonfiguration basierend auf aggregierten Median Werten für alle Mandanten.
 
 Für die Netzwerkkonnektivität beträgt die empfohlene Benchmark 80 Punkte.
 
-Im Abschnitt " **Score Breakdown** " finden Sie einen Überblick über Ihre Produktivitäts Bewertung mit Benchmarks von Personen-und Technologie Erfahrungsbereichen.
+Im Abschnitt &quot; **Score Breakdown** &quot; finden Sie einen Überblick über Ihre Produktivitäts Bewertung mit Benchmarks von Personen-und Technologie Erfahrungsbereichen.
 
 Der Bewertungsverlauf zeigt, wie sich die Punktzahl in jeder Kategorie in den letzten 6 Monaten geändert hat.
 
-Die Bereiche " **People Experiences** " und " **Technology Experiences** " enthalten die primären Einblicke für die Kategorien in diesen Bereichen. Sie können auf jede Kategorie klicken, um tiefere Einblicke zu erhalten.
+Die Bereiche &quot; **People Experiences** &quot; und &quot; **Technology Experiences** " enthalten die primären Einblicke für die Kategorien in diesen Bereichen. Sie können auf jede Kategorie klicken, um tiefere Einblicke zu erhalten.
 
 ## <a name="category-details-pages"></a>Rubriken-Detailseiten
 

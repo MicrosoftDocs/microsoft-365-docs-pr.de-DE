@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Details zum Produktivitäts Ergebnis "Mobility-People Experiences".
-ms.openlocfilehash: 0d67cae7421b7b27e39420f691d72abd57a63a32
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: f40984b3c053dcb976c901830bf796e3b7297f2d
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795392"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804781"
 ---
 # <a name="mobility--people-experiences"></a>Mobilität – Personen Erfahrungen
 
@@ -172,3 +171,12 @@ Die folgenden Metriken basieren auf den vorherigen 28 Tagen:
 - **Tage in Skype (Desktop):** Die Anzahl der Tage, in denen die Person in Skype in der Desktopplattform aktiv war.
 - **Tage in Skype (Internet):** Die Anzahl der Tage, in denen die Person in Skype in der Webplattform aktiv war.
 - **Tage in Skype (mobil):** Anzahl der Tage, in denen die Person in Skype in der mobilen Plattform aktiv war.
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Microsoft 365 apps Health – Technologie Erlebnisse](apps-health.md) (Artikel) \
+[Kommunikation – Personen Erfahrungen](communication.md) (Artikel) \
+[Content Collaboration – Personen Erfahrungen](content-collaboration.md) (Artikel) \
+[Besprechungen – Personen Erfahrungen](meetings.md) (Artikel) \
+[Datenschutz-Steuerelemente für Produktivitäts Bewertung](privacy.md) (Artikel) \
+[Teamwork – People Experiences](teamwork.md) (Artikel)

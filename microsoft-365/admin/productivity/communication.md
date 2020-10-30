@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Details zum Produktivitäts Ergebnis der Kommunikation – Personen Erfahrung.
-ms.openlocfilehash: 071621759a922e6dda28a5a18f531a0f01d2f88f
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 6f79a636c24548586048adf0151ac5eefb98fffe
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795036"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804655"
 ---
 # <a name="communication--people-experiences"></a>Kommunikation – Personen Erfahrungen
 
@@ -182,3 +181,12 @@ Dieser Abschnitt enthält Informationen auf Benutzerebene zu Aktivitäten, die f
 - **@Mention in e-Mails verwendete Tage:** Anzahl von Tagen, die der Benutzer in den letzten 28 Tagen eine e-Mail mit einem @mention gesendet hat.
 
 Sie können die Berichtsdaten auch in eine Excel. CSV-Datei exportieren, indem Sie den Link Export **Schaltfläche** exportieren auswählen. Beachten Sie, dass Sie den Spaltensatz in der Ansicht anpassen können, indem Sie nach dem Klicken auf **Spalten auswählen** die erforderlichen Spalten auswählen.
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Microsoft 365 apps Health – Technologie Erlebnisse](apps-health.md) (Artikel) \
+[Content Collaboration – Personen Erfahrungen](content-collaboration.md) (Artikel) \
+[Besprechungen – Personen Erfahrungen](meetings.md) (Artikel) \
+[Mobilität – Personen Erfahrungen](mobility.md) (Artikel) \
+[Datenschutz-Steuerelemente für Produktivitäts Bewertung](privacy.md) (Artikel) \
+[Teamwork – People Experiences](teamwork.md) (Artikel)

@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Details des Meetings-People Experiences Productivity Score.
-ms.openlocfilehash: 09869d92b093304e070d669db7d0e7dea825441f
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: cdb83000e176fb2a88d848a1b7f114499362672a
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795381"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804585"
 ---
 # <a name="meetings--people-experiences"></a>Besprechungen – Personen Erfahrungen
 
@@ -147,3 +146,12 @@ Die folgenden Spalten werden auf Benutzerebene in der Tabelle dargestellt:
 - Nur Personen, die Zugriff auf Microsoft Teams haben, werden für jede Evaluierung berücksichtigt.
 - Wir schließen Broadcast Ereignisse und bestimmte Ereignisse aus, die nicht als Besprechung oder Anruf gekennzeichnet sind.
 - Ereignisse, die mit der Bildschirmfreigabe zwischen Teilnehmern beginnen, werden entweder als 1:1-Anrufe (mit 2 Teilnehmern) oder als Gruppenanrufe (3 oder mehr Teilnehmer) kategorisiert.
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Microsoft 365 apps Health – Technologie Erlebnisse](apps-health.md) (Artikel) \
+[Kommunikation – Personen Erfahrungen](communication.md) (Artikel) \
+[Content Collaboration – Personen Erfahrungen](content-collaboration.md) (Artikel) \
+[Mobilität – Personen Erfahrungen](mobility.md) (Artikel) \
+[Datenschutz-Steuerelemente für Produktivitäts Bewertung](privacy.md) (Artikel) \
+[Teamwork – People Experiences](teamwork.md) (Artikel)

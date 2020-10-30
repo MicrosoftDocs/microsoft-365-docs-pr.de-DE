@@ -18,14 +18,13 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Wie Datenschutz mit dem Produktivitäts Ergebnis geschützt wird.
-ms.openlocfilehash: 62ff3a9f0434421cbe1115f13376e92bd9f3cac9
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 4978039d99704c0658fe22f3725167ac31276dcd
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48794977"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804747"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>Datenschutz-Steuerelemente für Produktivitäts Bewertung
 

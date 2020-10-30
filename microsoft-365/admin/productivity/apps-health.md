@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Details zum Produktivitäts Ergebnis der Microsoft 365 apps-Integritäts Technologie.
-ms.openlocfilehash: bb6454b336caa9ac1e7b8f6049ea46c681c8bd77
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 4242a9b665bc7292232cc15ee0f1ec37915fb1ac
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795329"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804769"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Microsoft 365 apps Health – Technologie-Erlebnisse
 
@@ -112,3 +111,12 @@ Die folgenden Spalten werden in der Tabelle auf Benutzerebene angezeigt:
 - **Status:**   Microsoft 365 apps unterstützen den Status der Geräte basierend auf aktuellem Kanal und Version.
 - **Versionen:**   Aktuelle Microsoft 365-apps-Versionen auf den Geräten.
 - **Anzahl der Geräte:**  Anzahl der Geräte.
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Kommunikation – Personen Erfahrungen](communication.md) (Artikel) \
+[Content Collaboration – Personen Erfahrungen](content-collaboration.md) (Artikel) \
+[Besprechungen – Personen Erfahrungen](meetings.md) (Artikel) \
+[Mobilität – Personen Erfahrungen](mobility.md) (Artikel) \
+[Datenschutz-Steuerelemente für Produktivitäts Bewertung](privacy.md) (Artikel) \
+[Teamwork – People Experiences](teamwork.md) (Artikel)

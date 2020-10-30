@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Details zur Inhalts Zusammenarbeit-Personen erleben Produktivitäts Bewertung.
-ms.openlocfilehash: 6e8f3113d2f35e6af268e4a8088bef34f529a676
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 87f89af527e2a1b843a9b70fbef590b69d920f7d
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795380"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804597"
 ---
 # <a name="content-collaboration--people-experiences"></a>Content-Zusammenarbeit – Personen Erfahrungen
 
@@ -202,4 +201,13 @@ Die folgenden Spalten werden in der Tabelle auf Benutzerebene angezeigt:
 - **Extern freigegebene Dateien:** Die Anzahl der Online Dateien auf OneDrive oder SharePoint, die die Person in den letzten 28 Tagen für andere Personen außerhalb Ihrer Organisation freigegeben hat.
 - **E-Mail-Dateianlagen:** Boolescher Wert, der angibt, ob die Person e-Mails mit Dateien (nicht auf OneDrive oder SharePoint) als Anlagen in den letzten 28 Tagen gesendet hat.
 - **E-Mail an Online Dateianlagen:** Boolescher Wert, der angibt, ob die Person e-Mails mit Links zu Online Dateien (in OneDrive oder SharePoint) als Anlagen in den letzten 28 Tagen gesendet hat.
-- **Link zu Online Datei einbetten:** Boolescher Wert, der angibt, ob die Person, die e-Mails mit Links zu Online Dateien (auf OneDrive oder SharePoint) gesendet hat, in den e-Mail-Textkörper in den letzten 28 Tagen eingebettet wurde.
+- **Link zu Online Datei einbetten:** Boolescher Wert, der angibt, ob die Person, die e-Mails mit Links zu Online Dateien (auf OneDrive oder SharePoint) gesendet hat, in den e-Mail-Textkörper in den letzten 28 Tagen eingebettet ist.
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Microsoft 365 apps Health – Technologie Erlebnisse](apps-health.md) (Artikel) \
+[Kommunikation – Personen Erfahrungen](communication.md) (Artikel) \
+[Besprechungen – Personen Erfahrungen](meetings.md) (Artikel) \
+[Mobilität – Personen Erfahrungen](mobility.md) (Artikel) \
+[Datenschutz-Steuerelemente für Produktivitäts Bewertung](privacy.md) (Artikel) \
+[Teamwork – People Experiences](teamwork.md) (Artikel)

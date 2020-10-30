@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Details zum Produktivitäts Ergebnis der Teamarbeit – People Experiences.
-ms.openlocfilehash: d76447a187003aa3d3e87ec293cf4550ced2fc74
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: d7edd5685c8e818e08faf4ac227f3eb1a416c94c
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795338"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804793"
 ---
 # <a name="teamwork--people-experiences"></a>Teamwork – Personen Erfahrungen
 
@@ -193,3 +192,12 @@ Die folgenden Spalten werden in der Tabelle auf Arbeitsbereichs Ebene angezeigt:
 - Teamwork misst das Engagement von Personen in Ihrer Organisation. Sie&#39;t die Aktivität externer Mitglieder erfassen.
 - Kanal Nachrichten in Teamwork umfassen keine Nachrichten, die über den mobilen Microsoft Teams-Client gesendet werden.
 - Es kann zu geringfügigen Unterschieden zwischen den e-Mail-Metriken und Kanal Nachrichten zwischen den Kategorien Kommunikation und Zusammenarbeit kommen, die wir lösen möchten.
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Microsoft 365 apps Health – Technologie Erlebnisse](apps-health.md) (Artikel) \
+[Kommunikation – Personen Erfahrungen](communication.md) (Artikel) \
+[Content Collaboration – Personen Erfahrungen](content-collaboration.md) (Artikel) \
+[Besprechungen – Personen Erfahrungen](meetings.md) (Artikel) \
+[Mobilität – Personen Erfahrungen](mobility.md) (Artikel) \
+[Datenschutz-Steuerelemente für Produktivitäts Bewertung](privacy.md) (Artikel)
