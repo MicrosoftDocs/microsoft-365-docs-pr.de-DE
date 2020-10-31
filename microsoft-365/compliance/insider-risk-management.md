@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: c9b19066b57d40ad33ac8d50ee1bee1f4a828030
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: 289f0763d6a7e887946a5672fde5341f79f96855
+ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48774048"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816860"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Insider Risikomanagement in Microsoft 365
 
@@ -122,7 +122,7 @@ In den schwerwiegenderen Situationen müssen Sie möglicherweise die Fall Inform
 - **Office 365 Management APIs Integration (Preview)** : das Insider Risikomanagement unterstützt das Exportieren von Warnungsinformationen in die Security Information and Event Management (SIEM)-Dienste über die Office 365 Management-APIs. Wenn Sie Zugriff auf die Warnungsinformationen auf der Plattform haben, ist die optimale Lösung für die Risikoprozesse Ihrer Organisation eine größere Flexibilität beim Handeln bei Risiko Aktivitäten. Weitere Informationen zum Exportieren von Warnungsinformationen mit Office 365-Verwaltungs-APIs finden Sie unter [Export Alerts](insider-risk-management-settings.md#export-alerts-preview).
 
 >[!NOTE]
->Die ServiceNow-Vorschau endet am 30 2020. November und wird nicht fortgesetzt. Vielen Dank für Ihr Feedback und ihre Unterstützung, während wir die nächsten Schritte bestimmen.
+>Vielen Dank für Ihr Feedback und ihre Unterstützung während der Vorschau des ServiceNow-Konnektors. Wir haben uns entschlossen, die Vorschau von ServiceNow Connector zu beenden und die Unterstützung für das Insider Risk Management am 30. November 2020 einzustellen. Wir evaluieren aktiv Alternative Methoden, um Kunden die Integration von ServiceNow in das Insider Risikomanagement zu ermöglichen.
 
 ## <a name="scenarios"></a>Szenarien
 

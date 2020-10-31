@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen Connector zum Importieren und Archivieren von Webseiten-Aufnahmedaten aus Globanet in Microsoft 365 einrichten. Mit diesem Connector können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren, damit Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten der drittanbieterdaten Ihrer Organisation verwenden können.
-ms.openlocfilehash: 766464c14c50b94ec15ce6e4bdc34c3422d8dd54
-ms.sourcegitcommit: 16cbac5eacadd7b30cbca1fd2435ba9098de5e1c
+ms.openlocfilehash: 712e41d84181199ae72de51e0fd834085b2174d0
+ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48785507"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816742"
 ---
 # <a name="set-up-a-connector-to-archive-webpage-data"></a>Einrichten eines Connectors zum Archivieren von Webseiten Daten
 
@@ -39,9 +39,9 @@ In der folgenden Übersicht wird erläutert, wie Sie einen Connector zum Archivi
 
 4. Der Connector importiert die konvertierten Webseitenelemente in die Postfächer bestimmter Benutzer, indem er den Wert der *Email* -Eigenschaft der automatischen Benutzerzuordnung wie in [Schritt 3](#step-3-map-users-and-complete-the-connector-setup)beschrieben verwendet. Ein Unterordner im Posteingangsordner mit dem Namen **Webpage Capture** wird in den Benutzerpostfächern erstellt, und die Webseitenelemente werden in diesen Ordner importiert. Der Connector verwendet den Wert der *Email* -Eigenschaft. Jedes Webpage-Element enthält diese Eigenschaft, die mit den e-Mail-Adressen aufgefüllt wird, die beim Konfigurieren des Webpage Capture-Konnektors in [Schritt 2](#step-2-configure-the-webpage-capture-connector-on-the-globanet-merge1-site)angegeben werden.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
-- Erstellen Sie ein Globanet-Merge1-Konto für Microsoft-Connectors. Wenden Sie sich dazu an den [Globanet-Kunden Support](https://globanet.com/ms-connectors-contact/). Sie müssen sich bei diesem Konto anmelden, wenn Sie den Connector in Schritt 1 erstellen.
+- Erstellen Sie ein Globanet-Merge1-Konto für Microsoft-Connectors. Um dieses Konto zu erstellen, wenden Sie sich an den [Globanet-Kunden Support](https://globanet.com/ms-connectors-contact/). Sie melden sich bei diesem Konto an, wenn Sie den Connector in Schritt 1 erstellen.
 
 - Sie müssen mit der Globanet-Unterstützung zusammenarbeiten, um ein benutzerdefiniertes Dateiformat einzurichten, in das die Webseitenelemente konvertiert werden sollen. Weitere Informationen finden Sie im Merge1-Benutzerhandbuch für Drittanbieter-Konnektoren in 
 
@@ -65,7 +65,7 @@ Der erste Schritt besteht darin, auf die **Daten-Konnektoren** zuzugreifen und e
 
 Der zweite Schritt besteht darin, den Webpage Capture-Konnektor auf der Globanet Merge1-Website zu konfigurieren. Informationen zum Konfigurieren des Webseiten Sammlungs-Konnektors finden Sie unter [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Web%20Page%20Capture%20User%20Guide%20.pdf).
 
-Nachdem Sie auf **& fertig stellen** klicken, werden Sie zurück zum Microsoft 365 Compliance Center auf die Seite **Benutzerzuordnung** im Connector-Assistenten umgeleitet.
+Nachdem Sie auf **& Ende speichern** klicken, wird die Seite **Benutzerzuordnung** im Connector-Assistenten im Microsoft 365 Compliance Center angezeigt.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Schritt 3: Zuordnen von Benutzern und Abschließen des Connector-Setups
 

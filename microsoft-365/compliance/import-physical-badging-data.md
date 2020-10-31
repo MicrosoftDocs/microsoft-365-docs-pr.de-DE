@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Administratoren können einen Daten Konnektor einrichten, um Daten aus dem physischen Badges-System Ihrer Organisation nach Microsoft 365 zu importieren. Auf diese Weise können Sie diese Daten in Richtlinien für das Insider Risikomanagement verwenden, damit Sie den Zugriff auf ihre physischen Gebäude von bestimmten Benutzern erkennen können, die auf eine mögliche interne Bedrohung Ihrer Organisation hindeuten.
-ms.openlocfilehash: 6d52879031c8801191b1a419f38a1167c1bb0688
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 71f43d8e6abd53454b6c81d811d0dca2e8b08388
+ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204506"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816648"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Einrichten eines Connectors zum Importieren physischer Badges-Daten (Vorschau)
 
@@ -51,11 +51,11 @@ Das Einrichten eines physischen Badges-Connectors besteht aus den folgenden Aufg
 
 Der erste Schritt besteht darin, eine neue app in Azure Active Directory (Azure AD) zu erstellen und zu registrieren. Die APP entspricht dem physischen Badges-Connector, den Sie in Schritt 3 erstellen. Durch das Erstellen dieser APP wird Azure Ad die Push-Anforderung für JSON-Nutzlast mit physischen Badges-Daten authentifizieren können. Achten Sie beim Erstellen dieser Azure AD-App darauf, die folgenden Informationen zu speichern. Diese Werte werden in späteren Schritten verwendet.
 
-- Azure AD Anwendungs-ID (auch als *App-ID* oder *Client-ID*bezeichnet)
+- Azure AD Anwendungs-ID (auch als *App-ID* oder *Client-ID* bezeichnet)
 
-- Geheime Azure AD Anwendung (auch als *geheimer Client Schlüssel*bezeichnet)
+- Geheime Azure AD Anwendung (auch als *geheimer Client Schlüssel* bezeichnet)
 
-- Mandanten-ID (auch als *Verzeichnis-ID*bezeichnet)
+- Mandanten-ID (auch als *Verzeichnis-ID* bezeichnet)
 
 Eine Schritt-für-Schritt-Anleitung zum Erstellen einer APP in Azure AD finden Sie unter [Registrieren einer Anwendung mit der Microsoft Identity-Plattform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
@@ -65,18 +65,18 @@ Der nächste Schritt besteht darin, eine JSON-Datei zu erstellen, die Informatio
 
 Die JSON-Datei muss mit der Schema Definition übereinstimmen, die für den Connector erforderlich ist. Hier finden Sie eine Beschreibung der erforderlichen Schemaeigenschaften für die JSON-Datei:
 
-|**Eigenschaft**|**Beschreibung**|**Datentyp**|
+| Eigenschaft | Beschreibung | Datentyp |
 |:-----------|:--------------|:------------|
 |UserId|Ein Mitarbeiter kann mehrere digitale Identitäten in allen Systemen haben. Für die Eingabe muss die Azure Ad-ID bereits vom Quellsystem aufgelöst werden. |UPN oder e-Mail-Adresse|
 |Posten|Die Referenz-ID des physischen Objekts oder physischen Zugriffspunkts.| Alphanumerische Zeichenfolge|
 |AssetName|Der Anzeigename des physischen Objekts oder des physischen Zugriffs Points.|Alphanumerische Zeichenfolge|
 |EventTime|Der Zeitstempel des Zugriffs.|Datum und Uhrzeit im UTC-Format|
-|AccessStatus|Wert von `Success` oder `Failed`| Zeichenfolge|
+|AccessStatus|Wert von `Success` oder `Failed`| String|
 |||
 
 Im folgenden finden Sie ein Beispiel für eine JSON-Datei, die dem erforderlichen Schema entspricht:
 
-```text
+```json
 [
     {
         "UserId":"sarad@contoso.com"
@@ -137,11 +137,11 @@ Im nächsten Schritt erstellen Sie einen physikalischen Badges-Connector im Micr
 
 1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com/) und klicken Sie dann im linken Navigationsbereich auf **Datenverbindungen** .
 
-2. Klicken Sie auf der Seite **Daten Konnektoren** unter **physikalische Badges**auf **Ansicht**.
+2. Klicken Sie auf der Seite **Daten Konnektoren** unter **physikalische Badges** auf **Ansicht** .
 
-3. Klicken Sie auf der Seite **physikalische Badges** auf **Connector hinzufügen**.
+3. Klicken Sie auf der Seite **physikalische Badges** auf **Connector hinzufügen** .
 
-4. Führen Sie auf der Seite **Authentifizierungsanmeldeinformationen** folgende Schritte aus, und klicken Sie dann auf **weiter**:
+4. Führen Sie auf der Seite **Authentifizierungsanmeldeinformationen** folgende Schritte aus, und klicken Sie dann auf **weiter** :
   
    1. Geben Sie die Azure AD Anwendungs-ID für die Azure-App ein, die Sie in Schritt 1 erstellt haben, oder fügen Sie Sie ein.
   
@@ -155,7 +155,7 @@ Im nächsten Schritt erstellen Sie einen physikalischen Badges-Connector im Micr
 
    Die Seite Status enthält auch einen Link zum Skript. In diesem Skript erfahren Sie, wie Sie die JSON-Datei an den API-Endpunkt senden.
 
-7. Klicken Sie auf **Fertig**.
+7. Klicken Sie auf **Fertig** .
 
    Der neue Connector wird in der Liste auf der Registerkarte **Connectors** angezeigt.
 
@@ -190,7 +190,7 @@ Nachdem Sie das Skript ausgeführt haben, wird die JSON-Datei mit den physikalis
 
    In der folgenden Tabelle werden die Parameter beschrieben, die mit diesem Skript verwendet werden sollen, sowie die erforderlichen Werte. Informationen, die Sie in den vorherigen Schritten erhalten haben, werden in den Werten für diese Parameter verwendet.
 
-   | **Parameter**|**Beschreibung**|
+   | Parameter | Beschreibung |
    |:-------------|:--------------|
    |tenantId | Dies ist die ID für Ihre Microsoft 365-Organisation, die Sie in Schritt 1 erhalten haben. Sie können die Mandanten-Nr für Ihre Organisation auch auf dem Blatt " **Übersicht** " im Azure AD Admin Center abrufen. Dies wird verwendet, um Ihre Organisation zu identifizieren. |
    |appId | Dies ist die Azure AD Anwendungs-ID für die APP, die Sie in Azure AD in Schritt 1 erstellt haben. Dies wird von Azure AD für die Authentifizierung verwendet, wenn das Skript versucht, auf Ihre Microsoft 365-Organisation zuzugreifen.                    |
@@ -218,17 +218,17 @@ Nachdem Sie den physischen Badges-Connector erstellt und ihre physischen Badges-
 
 1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com/) und klicken Sie im linken Navigationsbereich auf **Daten-Konnektoren** .
 
-2. Klicken Sie auf die Registerkarte **Connectors** , und wählen Sie dann den physikalischen Badges-Konnektor aus, um die Flyout-Seite anzuzeigen, die die Eigenschaften und Informationen zum Connector enthält.
+2. Klicken Sie auf die Registerkarte **Connectors** , und wählen Sie dann den physikalischen Badges Connector aus, um die Flyout-Seite anzuzeigen. Diese Seite enthält die Eigenschaften und Informationen zum Connector.
 
    ![Status Flyout-Seite für physischen Badges-Connector](..\media\PhysicalBadgingStatusFlyout.png)
 
-3. Klicken Sie unter **Letzter Import**auf den Link **Download Protokoll** , um das Statusprotokoll für den Connector zu öffnen (oder zu speichern). Dieses Protokoll enthält Informationen über jedes Mal, wenn das Skript ausgeführt wird, und lädt die Daten aus der CSV-Datei in die Microsoft-Cloud hoch.
+3. Klicken Sie unter **Letzter Import** auf den Link **Download Protokoll** , um das Statusprotokoll für den Connector zu öffnen (oder zu speichern). Dieses Protokoll enthält Informationen über jedes Mal, wenn das Skript ausgeführt wird, und lädt die Daten aus der CSV-Datei in die Microsoft-Cloud hoch.
 
    ![Physische Badges-Connector-Protokolldatei zeigt Nummern Zeilen aus JSON-Dateien an, die hochgeladen wurden](..\media\PhysicalBadgingConnectorLogFile.png)
 
    Das Feld **RecordsSaved** gibt die Anzahl der Zeilen in der CSV-Datei an, die hochgeladen wurden. Wenn die CSV-Datei beispielsweise vier Zeilen enthält, lautet der Wert der **RecordsSaved** -Felder 4, wenn das Skript alle Zeilen in der CSV-Datei erfolgreich hochgeladen hat.
 
-Wenn Sie das Skript nicht in Schritt 4 ausgeführt haben, wird unter **Letzter Import**ein Link zum Herunterladen des Skripts angezeigt. Sie können das Skript herunterladen und dann die Schritte in Schritt 4 ausführen, um es auszuführen.
+Wenn Sie das Skript nicht in Schritt 4 ausgeführt haben, wird unter **Letzter Import** ein Link zum Herunterladen des Skripts angezeigt. Sie können das Skript herunterladen und dann die Schritte in Schritt 4 ausführen, um es auszuführen.
 
 ## <a name="optional-step-6-schedule-the-script-to-run-automatically"></a>Optional Schritt 6: Planen des automatischen Ausführens des Skripts
 
@@ -236,35 +236,35 @@ Um sicherzustellen, dass die neuesten physischen Badges-Daten aus Ihrer Organisa
 
 Sie können die Task Planer-app in Windows so ausführen, dass das Skript jeden Tag automatisch ausgeführt wird.
 
-1. Klicken Sie auf dem lokalen Computer auf die Schaltfläche Windows- **Start** , und geben Sie dann **Aufgabenplaner**ein.
+1. Klicken Sie auf dem lokalen Computer auf die Schaltfläche Windows- **Start** , und geben Sie dann **Aufgabenplaner** ein.
 
 2. Klicken Sie auf die **Task Planer** -APP, um Sie zu öffnen.
 
-3. Klicken Sie im Abschnitt **Aktionen** auf **Aufgabe erstellen**.
+3. Klicken Sie im Abschnitt **Aktionen** auf **Aufgabe erstellen** .
 
-4. Geben Sie auf der Registerkarte **Allgemein** einen beschreibenden Namen für den geplanten Vorgang ein. Beispiel: **Physical Badges Connector Script**. Sie können auch eine optionale Beschreibung hinzufügen.
+4. Geben Sie auf der Registerkarte **Allgemein** einen beschreibenden Namen für den geplanten Vorgang ein. Beispiel: **Physical Badges Connector Script** . Sie können auch eine optionale Beschreibung hinzufügen.
 
-5. Führen Sie unter **Sicherheitsoptionen**die folgenden Schritte aus:
+5. Führen Sie unter **Sicherheitsoptionen** die folgenden Schritte aus:
 
    1. Bestimmen Sie, ob das Skript nur ausgeführt werden soll, wenn Sie am Computer angemeldet sind oder es ausführen, wenn Sie angemeldet sind oder nicht.
 
    2. Stellen Sie sicher, dass das Kontrollkästchen **mit den höchsten Rechten ausführen** aktiviert ist.
 
-6. Wählen Sie die Registerkarte **Auslöser** aus, klicken Sie auf **neu**, und führen Sie dann die folgenden Schritte aus:
+6. Wählen Sie die Registerkarte **Auslöser** aus, klicken Sie auf **neu** , und führen Sie dann die folgenden Schritte aus:
 
-   1. Wählen Sie unter **Einstellungen**die Option **täglich** aus, und klicken Sie dann auf Datum und Uhrzeit, um das Skript zum ersten Mal auszuführen. Das Skript wird jeden Tag zur gleichen angegebenen Zeit.
+   1. Wählen Sie unter **Einstellungen** die Option **täglich** aus, und klicken Sie dann auf Datum und Uhrzeit, um das Skript zum ersten Mal auszuführen. Das Skript wird jeden Tag zur gleichen angegebenen Zeit.
 
-   2. Stellen Sie unter **Erweiterte Einstellungen**sicher, dass das Kontrollkästchen **aktiviert** ausgewählt ist.
+   2. Stellen Sie unter **Erweiterte Einstellungen** sicher, dass das Kontrollkästchen **aktiviert** ausgewählt ist.
 
-   3. Klicken Sie auf **OK**.
+   3. Klicken Sie auf **OK** .
 
-7. Wählen Sie die Registerkarte **Aktionen** aus, klicken Sie auf **neu**, und führen Sie dann die folgenden Schritte aus:
+7. Wählen Sie die Registerkarte **Aktionen** aus, klicken Sie auf **neu** , und führen Sie dann die folgenden Schritte aus:
 
    ![Aktionseinstellungen zum Erstellen eines neuen geplanten Tasks für das physikalische Badges-Connector-Skript](..\media\SchedulePhysicalBadgingScript1.png)
 
    1. Stellen Sie in der Dropdownliste **Aktion** sicher, dass **Programm starten** ausgewählt ist.
 
-   2. Klicken Sie im Feld **Programm/Skript** auf **Durchsuchen**, und wechseln Sie zum folgenden Speicherort, und wählen Sie ihn aus, damit der Pfad im Feld angezeigt wird: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe.
+   2. Klicken Sie im Feld **Programm/Skript** auf **Durchsuchen** , und wechseln Sie zum folgenden Speicherort, und wählen Sie ihn aus, damit der Pfad im Feld angezeigt wird: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe.
 
    3. Fügen Sie im Feld **Argumente hinzufügen (optional)** den gleichen Skriptbefehl ein, den Sie in Schritt 4 ausgeführt haben. Beispiel: .\PhysicalBadging.ps1-Mandanten-ID "d5723623-11CF-4e2e-b5a5-01d1506273g9"-Benutzerkennung "c12823b7-b55a-4989-faba-02de41bb97c3"-appSecret "MNubVGbcQDkGCnn"-JobID "e081f4f4-3831-48d6-7bb3-fcfab1581458"-jsonFilePath "C:\Users\contosoadmin\Desktop\Data\physical_badging_data.csv"
 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Administratoren können einen Daten Konnektor einrichten, um Mitarbeiterdaten aus dem Personalwesen (HR) Ihrer Organisation nach Microsoft 365 zu importieren. Auf diese Weise können Sie Personaldaten in Richtlinien für das Insider Risikomanagement verwenden, um die Aktivität bestimmter Benutzer zu ermitteln, die eine interne Bedrohung für Ihre Organisation darstellen können.
-ms.openlocfilehash: 31afa01a518028e7ec25116e947b4e0d6dc94dac
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: beebb4a6fba9baf2770bee7e3bd7a7b5a0fed0b1
+ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201544"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816668"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Einrichten eines Connectors zum Importieren von Personaldaten
 
@@ -27,7 +27,7 @@ Sie können einen Daten Konnektor im Microsoft 365 Compliance Center einrichten,
 
 Einrichten eines Connectors für HR-Daten, die von Insider Risiko-Verwaltungsrichtlinien zum Generieren von Risikoindikatoren verwendet werden können, besteht darin, eine CSV-Datei zu erstellen, die die HR-Daten enthält. Erstellen einer APP in Azure Active Directory, die für die Authentifizierung verwendet wird, Erstellen eines HR-Daten-Konnektors im Microsoft 365 Compliance Center und anschließendes Ausführen eines Skripts (geplant), das die HR-Daten in CSV-Dateien in die Microsoft-Cloud einnimmt, damit Sie für Insider verfügbar ist Risikomanagementlösung.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Bestimmen Sie, welche HR-Szenarien und Daten in Microsoft 365 importiert werden sollen. Auf diese Weise können Sie bestimmen, wie viele CSV-Dateien und HR-Konnektoren Sie erstellen und wie Sie die CSV-Dateien generieren und strukturieren müssen. Die von Ihnen importierten HR-Daten werden durch die Richtlinien für das Insider Risikomanagement bestimmt, die Sie implementieren möchten. Weitere Informationen finden Sie unter Schritt 1.
 
@@ -53,7 +53,7 @@ Der erste Schritt besteht darin, eine CSV-Datei zu erstellen, die die HR-Daten e
 
 Der Typ der zu importierenden HR-Daten hängt von der Richtlinie für das Insider Risikomanagement und der entsprechenden Richtlinienvorlage ab, die Sie implementieren möchten. In der folgenden Tabelle wird gezeigt, welcher HR-Datentyp für jede Richtlinienvorlage erforderlich ist:
 
-| **Richtlinienvorlage**| **HR-Datentyp**|
+|  Richtlinienvorlage |  HR-Datentyp |
 |:-----------------------------------------------|:---------------------------------------------------------------------|
 | Datendiebstahl durch Benutzer                   | Mitarbeiter Rücktritte                                                 |
 | Allgemeine Datenlecks                              | Nicht zutreffend                                                        |
@@ -88,7 +88,7 @@ pilarp@contoso.com,2019-04-24T09:15:49Z,2019-04-29T15:18:02.7117540
 
 In der folgenden Tabelle werden die einzelnen Spalten in der CSV-Datei für die Mitarbeiter Rücktritts Daten beschrieben.
 
-| **Spalte**  |  **Beschreibung**|
+|  Spalte   |   Beschreibung |
 |:------------|:----------------|
 |**EmailAddress**| Gibt die e-Mail-Adresse (UPN) des terminierten Benutzers an.|
 | **ResignationDate** | Gibt das Datum an, an dem die Arbeit des Benutzers in Ihrer Organisation offiziell gekündigt wurde. Dies kann beispielsweise das Datum sein, an dem der Benutzer seinen Hinweis zum Verlassen ihrer Organisation gegeben hat. Dieses Datum kann unterschiedlich sein als das Datum des letzten Arbeitstags des Benutzers. Verwenden Sie das folgende Datumsformat: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , also das [ISO 8601-Format für Datum und Uhrzeit](https://www.iso.org/iso-8601-date-and-time-format.html).|
@@ -107,7 +107,7 @@ pillar@contoso.com,2019-04-23T15:18:02.4675041+05:30,Level 62 – Director,Level
 
 In der folgenden Tabelle werden die einzelnen Spalten in der CSV-Datei für Änderungen der Daten auf Auftragsebene beschrieben.
 
-| **Spalte**|**Beschreibung**|
+|  Spalte | Beschreibung |
 |:--------- |:------------- |
 | **EmailAddress**  | Gibt die e-Mail-Adresse des Benutzers (UPN) an.|
 | **EffectiveDate** | Gibt das Datum an, an dem die Auftragsstufe des Benutzers offiziell geändert wurde. Verwenden Sie das folgende Datumsformat: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , also das [ISO 8601-Format für Datum und Uhrzeit](https://www.iso.org/iso-8601-date-and-time-format.html).|
@@ -128,7 +128,7 @@ pillar@contoso.com,2019-04-23T15:18:02.4675041+05:30, Multiple conflicts with th
 
 In der folgenden Tabelle werden die einzelnen Spalten in der CSV-Datei für Leistungs Überprüfungsdaten beschrieben.
 
-| **Spalte**|**Beschreibung**|
+|  Spalte | Beschreibung |
 |:----------|:--------------|
 | **EmailAddress**  | Gibt die e-Mail-Adresse des Benutzers (UPN) an.|
 | **EffectiveDate** | Gibt das Datum an, an dem der Benutzer offiziell über das Ergebnis seiner Leistungsüberprüfung informiert wurde. Dies kann das Datum sein, an dem der Leistungsüberprüfungszyklus beendet wurde. Verwenden Sie das folgende Datumsformat: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , also das [ISO 8601-Format für Datum und Uhrzeit](https://www.iso.org/iso-8601-date-and-time-format.html).|
@@ -148,7 +148,7 @@ pillar@contoso.com,2019-04-23T15:18:02.4675041+05:30, Multiple conflicts with th
 
 In der folgenden Tabelle werden die einzelnen Spalten in der CSV-Datei für Leistungs Überprüfungsdaten beschrieben.
 
-| **Spalte**| **Beschreibung**|
+|  Spalte |  Beschreibung |
 |:----------|:---------------|
 | **EmailAddress**  | Gibt die e-Mail-Adresse des Benutzers (UPN) an.|
 | **EffectiveDate** | Gibt das Datum an, an dem der Benutzer offiziell über seinen Leistungsverbesserungsplan informiert wurde. Sie müssen das folgende Datumsformat verwenden: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , das ist das [ISO 8601-Format für Datum und Uhrzeit](https://www.iso.org/iso-8601-date-and-time-format.html).|
@@ -203,11 +203,11 @@ Je nach HR-Systemen Ihrer Organisation und wie Sie HR-Daten in CSV-Dateien expor
 
 Der nächste Schritt besteht darin, eine neue app in Azure Active Directory (Azure AD) zu erstellen und zu registrieren. Die APP entspricht dem HR-Konnektor, den Sie in Schritt 3 erstellen. Durch das Erstellen dieser APP kann Azure AD den HR-Konnektor bei der Ausführung authentifizieren und versucht, auf Ihre Organisation zuzugreifen. Diese APP wird auch verwendet, um das Skript zu authentifizieren, das Sie in Schritt 4 ausführen, um Ihre HR-Daten in die Microsoft-Cloud hochzuladen. Achten Sie beim Erstellen dieser Azure AD-App darauf, die folgenden Informationen zu speichern. Diese Werte werden in Schritt 3 und Schritt 4 verwendet.
 
-- Azure AD Anwendungs-ID (auch als *App-ID* oder *Client-ID*bezeichnet)
+- Azure AD Anwendungs-ID (auch als *App-ID* oder *Client-ID* bezeichnet)
 
-- Geheime Azure AD Anwendung (auch als *geheimer Client Schlüssel*bezeichnet)
+- Geheime Azure AD Anwendung (auch als *geheimer Client Schlüssel* bezeichnet)
 
-- Mandanten-ID (auch als *Verzeichnis-ID*bezeichnet)
+- Mandanten-ID (auch als *Verzeichnis-ID* bezeichnet)
 
 Eine Schritt-für-Schritt-Anleitung zum Erstellen einer APP in Azure AD finden Sie unter [Registrieren einer Anwendung mit der Microsoft Identity-Plattform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
@@ -219,29 +219,29 @@ Nachdem Sie diesen Schritt ausgeführt haben, müssen Sie unbedingt die Auftrags
 
 1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com/) und klicken Sie dann im linken Navigationsbereich auf **Datenverbindungen** .
 
-2. Klicken Sie auf der Seite **Daten Konnektoren** unter **HR**auf **Ansicht**.
+2. Klicken Sie auf der Seite **Daten Konnektoren** unter **HR** auf **Ansicht** .
 
-3. Klicken Sie auf der Seite **HR Custom** auf **Connector hinzufügen**.
+3. Klicken Sie auf der Seite **HR Custom** auf **Connector hinzufügen** .
 
-4. Führen Sie auf der Seite **Verbindung einrichten** die folgenden Schritte aus, und klicken Sie dann auf **weiter**:
+4. Führen Sie auf der Seite **Verbindung einrichten** die folgenden Schritte aus, und klicken Sie dann auf **weiter** :
 
-   a. Geben Sie die Azure AD Anwendungs-ID für die Azure-App ein, die Sie in Schritt 2 erstellt haben, oder fügen Sie Sie ein.
+   1. Geben Sie die Azure AD Anwendungs-ID für die Azure-App ein, die Sie in Schritt 2 erstellt haben, oder fügen Sie Sie ein.
 
-   b. Geben Sie einen Namen für den HR-Konnektor ein.
+   1. Geben Sie einen Namen für den HR-Konnektor ein.
 
-5. Wählen Sie auf der Seite HR-Szenarien mindestens ein HR-Szenario aus, für das Sie Daten importieren möchten, und klicken Sie dann auf **weiter**.
+5. Wählen Sie auf der Seite HR-Szenarien mindestens ein HR-Szenario aus, für das Sie Daten importieren möchten, und klicken Sie dann auf **weiter** .
 
-6. Wählen Sie auf der Seite Datei Zuordnungsmethode eine der folgenden Optionen aus, und klicken Sie dann auf **weiter**.
+6. Wählen Sie auf der Seite Datei Zuordnungsmethode eine der folgenden Optionen aus, und klicken Sie dann auf **weiter** .
 
-   - **Laden Sie eine Beispieldatei hoch**. Wenn Sie diese Option auswählen, klicken Sie auf **Beispieldatei hochladen** , um die in Schritt 1 vorbereitete CSV-Datei hochzuladen. Mit dieser Option können Sie schnell Spaltennamen in der CSV-Datei aus einer Dropdownliste auswählen, um Sie den Datentypen für die zuvor ausgewählten HR-Szenarien zuzuordnen.
+   - **Laden Sie eine Beispieldatei hoch** . Wenn Sie diese Option auswählen, klicken Sie auf **Beispieldatei hochladen** , um die in Schritt 1 vorbereitete CSV-Datei hochzuladen. Mit dieser Option können Sie schnell Spaltennamen in der CSV-Datei aus einer Dropdownliste auswählen, um Sie den Datentypen für die zuvor ausgewählten HR-Szenarien zuzuordnen.
 
    ODER
 
-   - **Geben Sie die Zuordnungsdetails manuell**an. Wenn Sie diese Option auswählen, müssen Sie den Namen der Spalten in der CSV-Datei eingeben, um Sie den Datentypen für die zuvor ausgewählten HR-Szenarien zuzuordnen.
+   - **Geben Sie die Zuordnungsdetails manuell** an. Wenn Sie diese Option auswählen, müssen Sie den Namen der Spalten in der CSV-Datei eingeben, um Sie den Datentypen für die zuvor ausgewählten HR-Szenarien zuzuordnen.
 
 7. Führen Sie auf der Seite Datei Zuordnungsdetails einen der folgenden Schritte aus, je nachdem, ob Sie eine CSV-Beispieldatei hochgeladen haben und ob Sie den Connector für ein einzelnes HR-Szenario oder für mehrere Szenarien konfigurieren. Wenn Sie eine Beispieldatei hochgeladen haben, müssen Sie die Spaltennamen nicht eingeben. Sie wählen Sie aus einer Dropdownliste aus.
 
-    - Wenn Sie im vorherigen Schritt ein einzelnes HR-Szenario ausgewählt haben, geben Sie die Spaltenüberschrift Namen (auch *Parameter*genannt) aus der CSV-Datei, die Sie in Schritt 1 erstellt haben, in jedem der entsprechenden Felder ein. Bei den von Ihnen eingegebenen Spaltennamen wird die Groß-/Kleinschreibung nicht beachtet, aber stellen Sie sicher, dass Sie Leerzeichen enthalten, wenn die Spaltennamen in der CSV-Datei Leerzeichen enthalten. Wie bereits erläutert, müssen die in diesen Feldern eingegebenen Namen mit den Parameternamen in der CSV-Datei übereinstimmen. Der folgende Screenshot zeigt beispielsweise die Parameternamen aus der CSV-Beispieldatei für das in Schritt 1 gezeigte Personal Rücktritts-HR-Szenario.
+    - Wenn Sie im vorherigen Schritt ein einzelnes HR-Szenario ausgewählt haben, geben Sie die Spaltenüberschrift Namen (auch *Parameter* genannt) aus der CSV-Datei, die Sie in Schritt 1 erstellt haben, in jedem der entsprechenden Felder ein. Bei den von Ihnen eingegebenen Spaltennamen wird die Groß-/Kleinschreibung nicht beachtet, aber stellen Sie sicher, dass Sie Leerzeichen enthalten, wenn die Spaltennamen in der CSV-Datei Leerzeichen enthalten. Wie bereits erläutert, müssen die in diesen Feldern eingegebenen Namen mit den Parameternamen in der CSV-Datei übereinstimmen. Der folgende Screenshot zeigt beispielsweise die Parameternamen aus der CSV-Beispieldatei für das in Schritt 1 gezeigte Personal Rücktritts-HR-Szenario.
 
     - Wenn Sie in Schritt weiter oben mehrere Datentypen ausgewählt haben, müssen Sie den Bezeichner-Spaltennamen eingeben, um den HR-Datentyp in der CSV-Datei zu identifizieren. Geben Sie nach Eingabe des Bezeichner-Spaltennamens den Wert ein, der diesen HR-Datentyp identifiziert, und geben Sie die Namen der Spaltenüberschrift für ausgewählte Datentypen aus den CSV-Dateien ein, die Sie in Schritt 1 in jedem der entsprechenden Felder für jeden ausgewählten Datentyp erstellt haben. Wie bereits erläutert, müssen die Namen, die Sie in diese Felder eingeben, mit den Spaltennamen in der CSV-Datei übereinstimmen.
 
@@ -251,11 +251,11 @@ Nachdem Sie diesen Schritt ausgeführt haben, müssen Sie unbedingt die Auftrags
 
    ![Seite überprüfen mit Auftrags-ID und Link zu GitHub für Beispielskript](../media/HRConnector_Confirmation.png)
 
-   a. **Auftrags-ID.** Sie benötigen diese Auftrags-ID, um das Skript im nächsten Schritt auszuführen. Sie können es von dieser Seite oder von der Flyout-Seite des Konnektors kopieren.
+   1. **Auftrags-ID.** Sie benötigen diese Auftrags-ID, um das Skript im nächsten Schritt auszuführen. Sie können es von dieser Seite oder von der Flyout-Seite des Konnektors kopieren.
 
-   b. **Link zum Beispielskript.** Klicken Sie auf den Link **hier** , um zur GitHub-Website zu wechseln, um auf das Beispielskript zuzugreifen (der Link öffnet ein neues Fenster). Lassen Sie dieses Fenster geöffnet, damit Sie das Skript in Schritt 4 kopieren können. Alternativ können Sie das Ziel bookmarken oder die URL kopieren, damit Sie beim Ausführen des Skripts erneut darauf zugreifen können. Dieser Link steht auch auf der Seite "Connector-Flyout" zur Verfügung.
+   1. **Link zum Beispielskript.** Klicken Sie auf den Link **hier** , um zur GitHub-Website zu wechseln, um auf das Beispielskript zuzugreifen (der Link öffnet ein neues Fenster). Lassen Sie dieses Fenster geöffnet, damit Sie das Skript in Schritt 4 kopieren können. Alternativ können Sie das Ziel bookmarken oder die URL kopieren, damit Sie beim Ausführen des Skripts erneut darauf zugreifen können. Dieser Link steht auch auf der Seite "Connector-Flyout" zur Verfügung.
 
-9. Klicken Sie auf **Fertig**.
+9. Klicken Sie auf **Fertig** .
 
    Der neue Connector wird in der Liste auf der Registerkarte **Connectors** angezeigt.
 
@@ -263,7 +263,7 @@ Nachdem Sie diesen Schritt ausgeführt haben, müssen Sie unbedingt die Auftrags
 
    ![Flyout-Seite für neuen HR-Connector](../media/HRConnectorWizard7.png)
 
-Wenn Sie dies nicht bereits getan haben, können Sie die Werte für die **Azure-APP-ID** und die **Connector-Auftrags-ID**kopieren. Sie benötigen diese, um das Skript im nächsten Schritt auszuführen. Sie können das Skript auch über die Flyout-Seite herunterladen (oder es über den Link im nächsten Schritt herunterladen).
+Wenn Sie dies nicht bereits getan haben, können Sie die Werte für die **Azure-APP-ID** und die **Connector-Auftrags-ID** kopieren. Sie benötigen diese, um das Skript im nächsten Schritt auszuführen. Sie können das Skript auch über die Flyout-Seite herunterladen (oder es über den Link im nächsten Schritt herunterladen).
 
 Sie können auch auf **Bearbeiten** klicken, um die Azure-APP-ID oder die Namen der Spaltenüberschrift zu ändern, die Sie auf der Seite **Dateizuordnung** definiert haben.
 
@@ -291,7 +291,7 @@ Der letzte Schritt beim Einrichten eines HR-Konnektors besteht darin, ein Beispi
 
    In der folgenden Tabelle werden die Parameter beschrieben, die mit diesem Skript verwendet werden sollen, sowie die erforderlichen Werte. Die Informationen, die Sie in den vorherigen Schritten erhalten haben, werden in den Werten für diese Parameter verwendet.
 
-   |**Parameter**|**Beschreibung**
+   | Parameter | Beschreibung |
    |:-----|:-----|:-----|
    |`tenantId`|Dies ist die ID für Ihre Microsoft 365-Organisation, die Sie in Schritt 2 erhalten haben. Sie können die Mandanten-ID für Ihre Organisation auch auf dem Blatt " **Übersicht** " im Azure AD Admin Center abrufen. Dies wird verwendet, um Ihre Organisation zu identifizieren.|
    |`appId` |Dies ist die Azure AD Anwendungs-ID für die APP, die Sie in Schritt 2 in Azure AD erstellt haben. Dies wird von Azure AD für die Authentifizierung verwendet, wenn das Skript versucht, auf Ihre Microsoft 365-Organisation zuzugreifen. | 
@@ -317,17 +317,17 @@ Nachdem Sie den HR-Connector erstellt und das Skript zum Hochladen Ihrer HR-Date
 
 1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com) und klicken Sie im linken Navigationsbereich auf **Daten-Konnektoren** .
 
-2. Klicken Sie auf die Registerkarte **Connectors** , und wählen Sie dann den HF-Konnektor aus, um die Flyout-Seite anzuzeigen, die die Eigenschaften und Informationen zum Connector enthält.
+2. Klicken Sie auf die Registerkarte **Connectors** , und wählen Sie dann den HF-Konnektor aus, um die Flyout-Seite anzuzeigen. Diese Seite enthält die Eigenschaften und Informationen zum Connector.
 
    ![Flyoutseite "HR-Konnektor" mit Eigenschaften und Status](../media/HRConnectorFlyout1.png)
 
-3. Klicken Sie unter **Status**auf den Link **Download Protokoll** , um das Statusprotokoll für den Connector zu öffnen (oder zu speichern). Dieses Protokoll enthält Informationen über jedes Mal, wenn das Skript ausgeführt wird, und lädt die Daten aus der CSV-Datei in die Microsoft-Cloud hoch. 
+3. Klicken Sie unter **Status** auf den Link **Download Protokoll** , um das Statusprotokoll für den Connector zu öffnen (oder zu speichern). Dieses Protokoll enthält Informationen über jedes Mal, wenn das Skript ausgeführt wird, und lädt die Daten aus der CSV-Datei in die Microsoft-Cloud hoch. 
 
    ![Protokolldatei des HR-Konnektors zeigt Nummern Zeilen aus der CSV-Datei an, die hochgeladen wurden](../media/HRConnectorLogFile.png)
 
    Das `RecordsSaved` Feld gibt die Anzahl der Zeilen in der CSV-Datei an, die hochgeladen wurden. Wenn die CSV-Datei beispielsweise vier Zeilen enthält, lautet der Wert der `RecordsSaved` Felder 4, wenn das Skript alle Zeilen in der CSV-Datei erfolgreich hochgeladen hat.
 
-Wenn Sie das Skript nicht in Schritt 4 ausgeführt haben, wird unter **Letzter Import**ein Link zum Herunterladen des Skripts angezeigt. Sie können das Skript herunterladen und dann die Schritte zum Ausführen des Skripts befolgen.
+Wenn Sie das Skript nicht in Schritt 4 ausgeführt haben, wird unter **Letzter Import** ein Link zum Herunterladen des Skripts angezeigt. Sie können das Skript herunterladen und dann die Schritte zum Ausführen des Skripts befolgen.
 
 ## <a name="optional-step-6-schedule-the-script-to-run-automatically"></a>Optional Schritt 6: Planen des automatischen Ausführens des Skripts
 
@@ -335,41 +335,41 @@ Um sicherzustellen, dass die neuesten HR-Daten aus Ihrer Organisation für Tools
 
 Sie können die Task Planer-app in Windows so ausführen, dass das Skript jeden Tag automatisch ausgeführt wird.
 
-1. Klicken Sie auf dem lokalen Computer auf die Schaltfläche Windows- **Start** , und geben Sie dann **Aufgabenplaner**ein.
+1. Klicken Sie auf dem lokalen Computer auf die Schaltfläche Windows- **Start** , und geben Sie dann **Aufgabenplaner** ein.
 
 2. Klicken Sie auf die **Task Planer** -APP, um Sie zu öffnen.
 
-3. Klicken Sie im Abschnitt **Aktionen** auf **Aufgabe erstellen**.
+3. Klicken Sie im Abschnitt **Aktionen** auf **Aufgabe erstellen** .
 
-4. Geben Sie auf der Registerkarte **Allgemein** einen beschreibenden Namen für den geplanten Vorgang ein. Beispiel: **HR-Connector-Skript**. Sie können auch eine optionale Beschreibung hinzufügen.
+4. Geben Sie auf der Registerkarte **Allgemein** einen beschreibenden Namen für den geplanten Vorgang ein. Beispiel: **HR-Connector-Skript** . Sie können auch eine optionale Beschreibung hinzufügen.
 
-5. Führen Sie unter **Sicherheitsoptionen**die folgenden Aktionen aus:
+5. Führen Sie unter **Sicherheitsoptionen** die folgenden Aktionen aus:
 
-   a. Bestimmen Sie, ob das Skript nur ausgeführt werden soll, wenn Sie am Computer angemeldet sind oder es ausführen, wenn Sie angemeldet sind oder nicht.
+   1. Bestimmen Sie, ob das Skript nur ausgeführt werden soll, wenn Sie am Computer angemeldet sind oder es ausführen, wenn Sie angemeldet sind oder nicht.
 
-   b. Stellen Sie sicher, dass das Kontrollkästchen **mit den höchsten Rechten ausführen** aktiviert ist.
+   1. Stellen Sie sicher, dass das Kontrollkästchen **mit den höchsten Rechten ausführen** aktiviert ist.
 
-6. Wählen Sie die Registerkarte **Auslöser** aus, klicken Sie auf **neu**, und führen Sie dann die folgenden Schritte aus:
+6. Wählen Sie die Registerkarte **Auslöser** aus, klicken Sie auf **neu** , und führen Sie dann die folgenden Schritte aus:
 
-   a. Wählen Sie unter **Einstellungen**die Option **täglich** aus, und klicken Sie dann auf Datum und Uhrzeit, um das Skript zum ersten Mal auszuführen. Das Skript wird jeden Tag zur gleichen angegebenen Zeit.
+   1. Wählen Sie unter **Einstellungen** die Option **täglich** aus, und klicken Sie dann auf Datum und Uhrzeit, um das Skript zum ersten Mal auszuführen. Das Skript wird jeden Tag zur gleichen angegebenen Zeit.
 
-   b. Stellen Sie unter **Erweiterte Einstellungen**sicher, dass das Kontrollkästchen **aktiviert** ausgewählt ist.
+   1. Stellen Sie unter **Erweiterte Einstellungen** sicher, dass das Kontrollkästchen **aktiviert** ausgewählt ist.
 
-   c. Klicken Sie auf **OK**.
+   1. Klicken Sie auf **OK** .
 
-7. Wählen Sie die Registerkarte **Aktionen** aus, klicken Sie auf **neu**, und führen Sie dann die folgenden Schritte aus:
+7. Wählen Sie die Registerkarte **Aktionen** aus, klicken Sie auf **neu** , und führen Sie dann die folgenden Schritte aus:
 
    ![Aktionseinstellungen zum Erstellen eines neuen geplanten Tasks für das HR-Connector-Skript](../media/HRConnectorScheduleTask1.png)
 
-   a. Stellen Sie in der Dropdownliste **Aktion** sicher, dass **Programm starten** ausgewählt ist.
+   1. Stellen Sie in der Dropdownliste **Aktion** sicher, dass **Programm starten** ausgewählt ist.
 
-   b. Klicken Sie im Feld **Programm/Skript** auf **Durchsuchen**, und wechseln Sie zum folgenden Speicherort, und wählen Sie ihn aus, damit der Pfad im Feld angezeigt wird: `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` .
+   1. Klicken Sie im Feld **Programm/Skript** auf **Durchsuchen** , und wechseln Sie zum folgenden Speicherort, und wählen Sie ihn aus, damit der Pfad im Feld angezeigt wird: `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` .
 
-   c. Fügen Sie im Feld **Argumente hinzufügen (optional)** den gleichen Skriptbefehl ein, den Sie in Schritt 4 ausgeführt haben. Beispiel: `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
+   1. Fügen Sie im Feld **Argumente hinzufügen (optional)** den gleichen Skriptbefehl ein, den Sie in Schritt 4 ausgeführt haben. Beispiel: `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
 
-   d. Fügen Sie im Feld **Start in (optional)** den Ordnerspeicherort des Skripts ein, das Sie in Schritt 4 ausgeführt haben. Beispiel: `C:\Users\contosoadmin\Desktop\Scripts`.
+   1. Fügen Sie im Feld **Start in (optional)** den Ordnerspeicherort des Skripts ein, das Sie in Schritt 4 ausgeführt haben. Beispiel: `C:\Users\contosoadmin\Desktop\Scripts`.
 
-   e. Klicken Sie auf **OK** , um die Einstellungen für die neue Aktion zu speichern.
+   1. Klicken Sie auf **OK** , um die Einstellungen für die neue Aktion zu speichern.
 
 8. Klicken Sie im Fenster **Aufgaben erstellen** auf **OK** , um den geplanten Vorgang zu speichern. Möglicherweise werden Sie aufgefordert, Ihre Anmeldeinformationen für das Benutzerkonto einzugeben.
 

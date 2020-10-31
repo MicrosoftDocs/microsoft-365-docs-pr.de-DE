@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: f0251f783aebd1264facfcbaa23a9b7afa286833
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: e790dfa986e6132295279e64321bda71a736a4b2
+ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48774018"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816850"
 ---
 # <a name="insider-risk-management-cases"></a>Insider Risikomanagement-Fälle
 
@@ -241,7 +241,7 @@ Weitere Informationen zu Microsoft Teams für das Insider Risikomanagement finde
 Durch die Freigabe eines Insider Risikomanagement-Falles können Risikoprüfer und Analysten problemlos mit anderen Compliance-Beteiligten in Ihrer Organisation zusammenarbeiten. Sie können einen Link zu einem Insider Risk Management-Fall schnell für externe Beteiligte aus dem Fallmanagement Bereich freigeben. Für den Zugriff auf den Fall Insider Risk Management aus dem Link müssen Beteiligte in einer der Rollengruppen für Insider Risikomanagement enthalten sein.
 
 >[!NOTE]
->Die ServiceNow-Vorschau endet am 30 2020. November und wird nicht fortgesetzt. Vielen Dank für Ihr Feedback und ihre Unterstützung, während wir die nächsten Schritte bestimmen.
+>Vielen Dank für Ihr Feedback und ihre Unterstützung während der Vorschau des ServiceNow-Konnektors. Wir haben uns entschlossen, die Vorschau von ServiceNow Connector zu beenden und die Unterstützung für das Insider Risk Management am 30. November 2020 einzustellen. Wir evaluieren aktiv Alternative Methoden, um Kunden die Integration von ServiceNow in das Insider Risikomanagement zu ermöglichen.
 
 Die folgenden Freigabeoptionen stehen zur Verfügung:
 
