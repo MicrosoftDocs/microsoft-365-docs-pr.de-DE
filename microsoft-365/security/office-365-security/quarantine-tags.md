@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: Administratoren erfahren, wie Sie mithilfe von Quarantäne Tags steuern können, welche Benutzer in der Lage sind, ihre unter Quarantäne gestellten Nachrichten zu übernehmen.
-ms.openlocfilehash: 557a6832807c1768f482e76c76c0e92b027e49a7
-ms.sourcegitcommit: 2810d1347e5016412074b2dd18e654aee7e593de
+ms.openlocfilehash: 89f03795d8f12b3df3e5090648c5a6c8b64c322a
+ms.sourcegitcommit: 676479f1e65492b44c4d0316a765f55ae9fae374
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2020
-ms.locfileid: "48819231"
+ms.locfileid: "48819740"
 ---
 # <a name="quarantine-tags"></a>Quarantäne-Tags
 
@@ -477,7 +477,7 @@ Die Berechtigung " **Absender zulassen** " ( _PermissionToAllowSender_ ) steuert
 
 Weitere Informationen zur Liste sicherer Absender finden Sie unter verhindern, [dass vertrauenswürdige Absender blockiert werden](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) , und [verwenden Sie Exchange Online PowerShell, um die Sammlung von Listen sicherer Adressen für ein Postfach zu konfigurieren](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
 
-### <a name="block-sender-permission"></a>Absender Berechtigung blockieren
+#### <a name="block-sender-permission"></a>Absender Berechtigung blockieren
 
 Die **Block Sender** Permission ( _PermissionToBlockSender_ ) steuert den Zugriff auf die Schaltfläche, mit der Benutzer den isolierten Nachrichtenabsender bequem zu Ihrer Liste blockierter Absender hinzufügen können.
 
@@ -491,7 +491,7 @@ Die **Block Sender** Permission ( _PermissionToBlockSender_ ) steuert den Zugrif
 
 Weitere Informationen zur Liste blockierter Absender finden Sie unter [Blockieren von Nachrichten von einem Benutzer](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) und [verwenden Exchange Online PowerShell zum Konfigurieren der Sammlung von Listen sicherer Adressen für ein Postfach](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
 
-### <a name="delete-permission"></a>Löschen
+#### <a name="delete-permission"></a>Löschen
 
 Die Berechtigung " **Löschen** " ( _PermissionToDelete_ ) steuert die Möglichkeit der Benutzer, Ihre Nachrichten (Nachrichten, bei denen der Benutzer ein Empfänger ist) aus der Quarantäne zu löschen.
 
@@ -501,7 +501,7 @@ Die Berechtigung " **Löschen** " ( _PermissionToDelete_ ) steuert die Möglichk
 
 - **Spambenachrichtigungen für Endbenutzer** : keine Auswirkung.
 
-### <a name="preview-permission"></a>Vorschau Berechtigung
+#### <a name="preview-permission"></a>Vorschau Berechtigung
 
 Die **Preview** -Berechtigung ( _PermissionToPreview_ ) steuert die Möglichkeit der Benutzer, Ihre Nachrichten in der Quarantäne anzuzeigen.
 
