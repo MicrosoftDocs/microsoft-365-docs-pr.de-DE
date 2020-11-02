@@ -210,6 +210,8 @@
       items:
         - name: Überwachen der Benutzeraktivität mit Hilfe von Berichten
           href: activity-reports/activity-reports.md
+        - name: Überwachen der Benutzerproduktivität mit Produktivitätsbewertung
+          href: productivity/productivity-score.md
         - name: Ändern Sie die Kontaktinformationen Ihrer Organisation
           href: manage/change-address-contact-and-more.md
         - name: Aktualisieren Sie Ihre Administrator-Kontaktinformationen
