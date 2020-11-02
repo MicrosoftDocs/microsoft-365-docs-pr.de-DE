@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: how-to
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Verwenden Sie das Office 365 Security & Compliance Center oder das Microsoft 365 Compliance Center, um das vereinheitlichte Überwachungsprotokoll zu durchsuchen und die Benutzer- und Administratoraktivitäten in Ihrem Unternehmen anzuzeigen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6c2ffc926114b8ffc2ebf2005b98e549ac03cf26
-ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
+ms.openlocfilehash: cf5481584031469b459d5662f75e32fd9a793a94
+ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48787581"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816758"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Compliance-Center
 
@@ -893,7 +893,7 @@ Wo nachstehend in den Beschreibungen erwähnt, enthalten einige Vorgänge zusät
 |:-----|:-----|:-----|
 |Ersteller Kommentar|CreateComment|Der Formularbesitzer fügt Kommentare oder Bewertungen zu einem Quiz hinzu.|
 |Erstelltes Formular|CreateForm|Der Besitzer erstellt ein neues Formular.|
-|Bearbeitetes Formular|EditForm|Der Formularbesitzer bearbeitet ein Formular, indem er eine Frage erstellt, entfernt oder bearbeitet. <br><br>Eigenschaft EditOperation: Zeichenfolge gibt den Namen des Bearbeitungsvorgangs an. Mögliche Vorgänge sind: CreateQuestion, CreateQuestionChoice, DeleteQuestion, DeleteQuestionChoice, DeleteFormImage, DeleteQuestionImage, UpdateQuestion, UpdateQuestionChoice, UploadFormImage/Bing/Onedrive, UploadQuestionImage und ChangeTheme.  <br><br>Die meisten Vorgangsnamen sind selbsterklärend. <br><br>FormImage enthält jede Stelle in Formularen, an der Benutzer ein Bild hochladen können, z. B. in einer Abfrage oder als Hintergrunddesign.|
+|Bearbeitetes Formular|EditForm|Der Formularbesitzer bearbeitet ein Formular, indem er eine Frage erstellt, entfernt oder bearbeitet. Die Eigenschaft *EditOperation:string* gibt den Namen des Bearbeitungsvorgangs an. Mögliche Vorgänge sind:<br/>– CreateQuestion<br/>– CreateQuestionChoice <br/>– DeleteQuestion <br/>– DeleteQuestionChoice <br/>– DeleteFormImage <br/>– DeleteQuestionImage <br/>– UpdateQuestion <br/>– UpdateQuestionChoice <br/>– UploadFormImage/Bing/Onedrive <br/>– UploadQuestionImage <br/>– ChangeTheme <br><br>FormImage enthält jede Stelle in Formularen, an der Benutzer ein Bild hochladen können, z. B. in einer Abfrage oder als Hintergrunddesign.|
 |Formular verschoben|MoveForm|Der Formularbesitzer verschiebt ein Formular. <br><br>Eigenschaft DestinationUserId: Zeichenfolge gibt die Benutzer-ID der Person an, die das Formular verschoben hat. Eigenschafts NewFormId: Zeichenfolge ist die neue ID für das neu kopierte Formular.|
 |Gelöschtes Formular|DeleteForm|Der Formularbesitzer löscht ein Formular. Dazu gehören SoftDelete (Löschoption wird verwendet, Formular wird in den Papierkorb verschoben) und HardDelete (Papierkorb wird geleert).|
 |Angezeigtes Formular (Entwurfszeit)|ViewForm|Der Formularbesitzer öffnet ein vorhandenes Formular für die Bearbeitung.|
@@ -912,7 +912,8 @@ Wo nachstehend in den Beschreibungen erwähnt, enthalten einige Vorgänge zusät
 |Angezeigte Antwort|ViewResponse|Der Formularbesitzer zeigt eine bestimmte Antwort an. <br><br>Eigenschaft ResponseId: Zeichenfolge und Eigenschaft ResponderId: Zeichenfolge gibt an, welches Ergebnis angezeigt wird. <br><br>Bei einem anonymen Responder ist die ResponderId-Eigenschaft Null.|
 |Erstellter Zusammenfassungs-Link|GetSummaryLink|Der Formularbesitzer erstellt einen Zusammenfassungs-Link, um Ergebnisse freizugeben.|
 |Gelöschte Zusammenfassungs-Link|DeleteSummaryLink|Der Formularbesitzer löscht den Link für die Zusammenfassungsergebnisse.|
-|Aktualisierter Phishing-Status von Formularen|UpdatePhishingStatus|Dieses Ereignis wird protokolliert, wenn der detaillierte Wert des internen Sicherheitsstatus geändert wurde, und zwar unabhängig davon, ob dadurch der endgültige Sicherheitsstatus geändert wurde (z. B. Formular ist nun Geschlossen oder Geöffnet). Dies bedeutet, dass Sie möglicherweise doppelte Ereignisse ohne eine endgültige Sicherheitsstatusänderung sehen können.|
+|Aktualisierter Phishing-Status von Formularen|UpdatePhishingStatus|Dieses Ereignis wird protokolliert, wenn der detaillierte Wert des internen Sicherheitsstatus geändert wurde, und zwar unabhängig davon, ob dadurch der endgültige Sicherheitsstatus geändert wurde (z. B. Formular ist nun geschlossen oder geöffnet). Dies bedeutet, dass Ihnen möglicherweise doppelte Ereignisse ohne eine endgültige Sicherheitsstatusänderung angezeigt werden. Zu den möglichen Statuswerten für dieses Ereignis gehören:<br/>– Take Down <br/>– Take Down by Admin <br/>– Admin Unblocked <br/>– Auto Blocked <br/>– Auto Unblocked <br/>– Customer Reported <br/>– Reset Customer Reported|
+|Updated user phishing status|UpdateUserPhishingStatus|Dieses Ereignis wird protokolliert, wenn der Wert für den Sicherheitsstatus des Benutzers geändert wurde. Der Wert des Benutzerstatus im Überwachungsdatensatz ist **Confirmed as Phisher** , wenn der Benutzer ein Phishing-Formular erstellt hat, das vom Microsoft Online Safety-Team heruntergenommen wurde. Wenn ein Administrator die Sperrung des Benutzers aufhebt, wird der Wert des Benutzerstatus auf **Reset as Normal User** festgelegt.|
 |Versendete Forms-Pro-Einladung|ProInvitation|Der Benutzer klickt, um eine Pro-Testversion zu aktivieren.|
 |Aktualisierte Formulareinstellung|UpdateFormSetting|Der Formularbesitzer aktualisiert eine Formulareinstellung. <br><br>Eigenschaft FormSettingName: Zeichenfolge gibt den Namen und neuen Wert der Einstellung an.|
 |Aktualisierte Benutzereinstellung|UpdateUserSetting|Der Formularbesitzer aktualisiert eine Benutzereinstellung. <br><br>Eigenschaft UserSettingName: Zeichenfolge gibt den Namen und neuen Wert der Einstellung an.|
@@ -922,7 +923,7 @@ Wo nachstehend in den Beschreibungen erwähnt, enthalten einige Vorgänge zusät
 
 #### <a name="forms-activities-performed-by-coauthors-and-anonymous-responders"></a>Formular-Aktivitäten, die von Koautoren und anonym Antwortenden durchgeführt werden
 
-Forms unterstützt die Zusammenarbeit beim Entwerfen von Formularen und Analysieren von Antworten. Ein Mitwirkender an einem Formular wird als *Koautor* bezeichnet. Koautoren können alles erledigen, was der Besitzer eines Formulars tun kann, außer das Löschen oder Verschieben eines Formulars. Forms ermöglichen Ihnen außerdem, ein Formular zu erstellen, auf das anonym geantwortet werden kann. Dies bedeutet, dass der Antwortende nicht bei Ihrer Organisation angemeldet sein muss, um auf ein Formular zu antworten. 
+Forms unterstützt die Zusammenarbeit beim Entwerfen von Formularen und dem Analysieren der Antworten. Ein Mitwirkender an einem Formular wird als *Koautor* bezeichnet. Koautoren können alles erledigen, was der Besitzer eines Formulars tun kann, außer das Löschen oder Verschieben eines Formulars. Forms ermöglichen Ihnen außerdem, ein Formular zu erstellen, auf das anonym geantwortet werden kann. Dies bedeutet, dass der Antwortende nicht bei Ihrer Organisation angemeldet sein muss, um auf ein Formular zu antworten.
 
 In der folgenden Tabelle sind die Überwachungsaktivitäten und die Informationen im Überwachungsdatensatz für Aktivitäten beschrieben, die von Koautoren und anonym Antwortenden ausgeführt wurden.
 
@@ -944,9 +945,9 @@ In der folgenden Tabelle sind Ereignisse aufgelistet, die sich aus Bezeichnungsa
 |:-----|:-----|:-----|
 |Vertraulichkeitsbezeichnung wurde auf Website angewendet|SensitivityLabelApplied|Auf eine SharePoint- oder Teams-Website wurde eine Vertraulichkeitsbezeichnung angewendet.|
 |Vertraulichkeitsbezeichnung wurde von Website entfernt|SensitivityLabelRemoved|Von einer SharePoint- oder Teams-Website wurde eine Vertraulichkeitsbezeichnung entfernt.|
-|Vertraulichkeitsbezeichnung wurde auf Datei angewendet|FileSensitivityLabelApplied|Unter Verwendung von Office im Web oder einer Richtlinie zur automatischen Kennzeichnung wurde eine Vertraulichkeitsbezeichnung auf ein Dokument angewendet.|
-|Auf Datei angewendete Vertraulichkeitsbezeichnung wurde geändert|FileSensitivityLabelChanged|Unter Verwendung von Office im Web oder einer Richtlinie zur automatischen Kennzeichnung wurde eine abweichende Vertraulichkeitsbezeichnung auf ein Dokument angewendet.|
-|Vertraulichkeitsbezeichnung wurde von Datei entfernt|FileSensitivityLabelRemoved|Unter Verwendung von Office im Web oder einer Richtlinie zur automatischen Kennzeichnung wurde eine Vertraulichkeitsbezeichnung eines Dokuments entfernt.|
+|Vertraulichkeitsbezeichnung wurde auf Datei angewendet|FileSensitivityLabelApplied|Mithilfe von Office für das Web oder einer automatischen Bezeichnungsrichtlinie wurde eine Vertraulichkeitsbezeichnung auf ein Dokument angewendet.|
+|Auf Datei angewendete Vertraulichkeitsbezeichnung wurde geändert|FileSensitivityLabelChanged|Mithilfe von Office für das Web oder einer automatischen Bezeichnungsrichtlinie wurde eine andere Vertraulichkeitsbezeichnung auf ein Dokument angewendet.|
+|Vertraulichkeitsbezeichnung wurde von Datei entfernt|FileSensitivityLabelRemoved|Mithilfe von Office für das Web oder einer automatischen Bezeichnungsrichtlinie wurde eine Vertraulichkeitsbezeichnung von einem Dokuments entfernt.|
 ||||
 
 ### <a name="retention-policy-and-retention-label-activities"></a>Aufbewahrungsrichtlinie und Aufbewahrungsbezeichnungsaktivitäten
