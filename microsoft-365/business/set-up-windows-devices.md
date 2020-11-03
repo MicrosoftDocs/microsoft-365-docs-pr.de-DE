@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: In diesem Artikel erfahren Sie, wie Sie Windows-Geräte mit Windows 10 pro für Microsoft 365 Business Premium-Benutzer einrichten, sodass zentralisierte Verwaltungs-und Sicherheitssteuerelemente aktiviert werden können.
-ms.openlocfilehash: 85ac3c964792a132d5699703e543289020e38f57
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: c95b9e51c7ec3c440509fe34084d2a030c7f2eec
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44785850"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841257"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>Einrichten von Windows-Geräten für Microsoft 365 Business Premium-Benutzer
 
@@ -77,47 +77,47 @@ Führen Sie für ganze neue Geräte mit Windows 10 Pro Creators Update oder für
   
    ![In the Start menu, click Windows Settings icon](../media/74e1ce9a-1554-4761-beb9-330b176e9b9d.png)
   
-2. Wechseln Sie unter **Einstellungen** zu **Konten**.
+2. Wechseln Sie unter **Einstellungen** zu **Konten** .
   
    ![In Windows Settings, go to Accounts](../media/472fd688-d111-4788-9fbb-56a00fbdc24d.png)
   
-3. Klicken Sie auf der Seite **Ihre Informationen** auf **Auf Arbeits- oder Schulkonto zugreifen** \> **Verbinden**.
+3. Klicken Sie auf der Seite **Ihre Informationen** auf **Auf Arbeits- oder Schulkonto zugreifen** \> **Verbinden** .
   
    ![Choose Connect under Access work or school](../media/af3a4e3f-f9b9-4969-b3e2-4ef99308090c.png)
   
-4. Wählen Sie im Dialogfeld **Geschäfts-, Schul- oder Unikonto einrichten** unter **Alternative Aktionen** die Option **Dieses Gerät in Azure Active Directory einbinden**.
+4. Wählen Sie im Dialogfeld **Geschäfts-, Schul- oder Unikonto einrichten** unter **Alternative Aktionen** die Option **Dieses Gerät in Azure Active Directory einbinden** .
   
    ![Click Join this device to Azure Active Directory](../media/fb709a1b-05a9-4750-9cb9-e097f4412cba.png)
   
-5. On the **Let's get you signed in** page, enter your work or school account \> **Next**.
+5. On the **Let's get you signed in** page, enter your work or school account \> **Next** .
   
-   On the **Enter password** page, enter your password \> **Sign in**.
+   On the **Enter password** page, enter your password \> **Sign in** .
   
    ![Enter your work or school email on the Let's get you signed in page](../media/f70eb148-b1d2-4ba3-be38-7317eaf0321a.png)
   
-6. Überprüfen Sie auf der Seite **Stellen Sie sicher, dass es sich um Ihre Organisation handelt** , dass die Informationen richtig sind, und klicken Sie auf **beitreten**.
+6. Überprüfen Sie auf der Seite **Stellen Sie sicher, dass es sich um Ihre Organisation handelt** , dass die Informationen richtig sind, und klicken Sie dann auf **beitreten** .
   
-   Klicken Sie auf der Seite **Sie sind fertig!** auf **Fertig**.
+   Klicken Sie auf der Seite **Sie sind fertig!** Seite, chosse **Fertig** .
   
-   ![On the Make sure this is your organization screen, click Join](../media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
+   ![Wählen Sie auf dem Bildschirm sicherstellen, dass es sich um Ihre Organisation handelt, beitreten aus.](../media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
   
 Wenn Sie Dateien nach OneDrive for Business hochgeladen haben, synchronisieren Sie diese wieder. Wenn Sie ein Drittanbietertool zum Migrieren von Profil und Dateien verwendet haben, synchronisieren Sie diese ebenfalls mit dem neuen Profil.
   
 ## <a name="verify-the-device-is-connected-to-azure-ad"></a>Stellen Sie sicher, dass das Gerät mit Azure AD verbunden ist
 
-Um Ihren Synchronisierungsstatus zu überprüfen, klicken Sie auf der Seite **Zugriff auf Arbeit oder Schule** in **Einstellungen**auf den Bereich **verbunden mit** _ \<organization name\> _, um die Schaltflächen **Informationen** anzuzeigen und die **Verbindung zu trennen**. Klicken Sie auf **Info**, um Ihren Synchronisierungsstatus abzurufen. 
+Um Ihren Synchronisierungsstatus zu überprüfen, wählen Sie auf der Seite **Zugriff auf Arbeit oder Schule** in **Einstellungen** den Bereich **verbunden mit** _ _ aus, \<organization name\> um die Schaltflächen **Informationen** anzuzeigen und die **Verbindung zu trennen** . Wählen Sie **Info** aus, um Ihren Synchronisierungsstatus abzurufen. 
   
-Klicken Sie auf der Seite "Synchronisierungsstatus" auf "Synchronisieren", um die neuesten Verwaltungsrichtlinien für Mobilgeräte auf den Computer abzurufen.
+Wählen Sie auf der Seite **Synchronisierungsstatus** die Option **Synchronisieren** aus, um die neuesten Verwaltungsrichtlinien für mobile Geräte auf dem PC abzurufen.
   
-Um mit dem Microsoft 365 Business Premium-Konto zu beginnen, wechseln Sie zur Windows-Schaltfläche **Start** , klicken Sie mit der rechten Maustaste auf Ihr aktuelles Kontobild, und wechseln Sie dann zu **Konto**. Melden Sie sich mit der E-Mail-Adresse und dem Kennwort Ihrer Organisation an.
+Um mit dem Microsoft 365 Business Premium-Konto zu beginnen, wechseln Sie zur Windows-Schaltfläche **Start** , klicken Sie mit der rechten Maustaste auf Ihr aktuelles Kontobild, und wechseln Sie dann zu **Konto** . Melden Sie sich mit der E-Mail-Adresse und dem Kennwort Ihrer Organisation an.
   
 ![Click Info button to view synchronization status](../media/818f7043-adbf-402a-844a-59d50034911d.png)
   
-## <a name="verify-the-device-is-upgraded-to-windows-10-business"></a>Sicherstellen, dass das Gerät auf Windows 10 Business aktualisiert wurde
+## <a name="verify-the-pc-is-upgraded-to-windows-10-business"></a>Überprüfen, ob der PC auf Windows 10 Business aktualisiert wurde
 
 Stellen Sie sicher, dass Ihre Azure AD beige tretenen Windows 10-Geräte als Teil Ihres Microsoft 365 Business Premium-Abonnements auf Windows 10 Business aktualisiert wurden.
   
-1. Wechseln Sie zu **Einstellungen** \> **System** \> **Info**.
+1. Wechseln Sie zu **Einstellungen** \> **System** \> **Info** .
     
 2. Überprüfen Sie, ob unter **Edition** **Windows 10 Business** angezeigt wird.
     

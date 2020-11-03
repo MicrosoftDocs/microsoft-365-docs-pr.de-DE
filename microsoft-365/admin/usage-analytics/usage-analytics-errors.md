@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: a73632a1-62c8-4a13-8115-913773b30f93
 description: Hier erfahren Sie, wie Sie Probleme mit der Vorlagen-App für Microsoft 365 Usage Analytics beheben können.
-ms.openlocfilehash: 4696dd0c5140cdc110781c226819fc64a90fae1b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: bf8e4ece7b1e310d91f418f5388cae9aa27f2aa7
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402034"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841435"
 ---
 # <a name="troubleshooting-microsoft-365-usage-analytics"></a>Problembehandlung bei Microsoft 365-Verwendungsanalysen
 
@@ -34,13 +34,13 @@ Untersuchen Sie die folgende Liste von Fehlermeldungen, um Hilfe zu den am häuf
     
 ## <a name="we-are-unable-to-process-your-request-you-have-to-first-subscribe-to-this-data-from-the-microsoft-365-admin-center"></a>Ihre Anfrage kann nicht bearbeitet werden. Sie müssen zuerst diese Daten im Microsoft 365 Admin Center abonnieren.
 
- **Fehlercode:** 422 
+ **Fehler Code:** 422 
   
  **Die folgende Meldung wird angezeigt:** In Power BI, wenn Sie eine Verbindung mit der Microsoft 365 Usage Analytics-Vorlagen-App herstellen oder wenn Sie die Microsoft 365-Berichts-APIs direkt aufrufen. 
   
  **Ursache:** Bevor Sie eine Verbindung mit der App herstellen können, müssen Sie die Daten im Microsoft 365 Admin Center abonnieren. Wenn dieser Schritt nicht zuerst ausgeführt wird, können Sie keine Verbindung mit der Vorlagen-App herstellen, auch wenn Sie Ihre Microsoft 365-Mandanten-ID angeben. 
   
- **So beheben Sie diesen Fehler:** Wenn Sie die Daten abonnieren möchten, wechseln Sie zur Verwaltungskonsole \> **Berichte** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Verwendung</a> , und suchen Sie die Kachel Microsoft 365 Usage Analytics auf der Hauptseite des Dashboards. Wählen Sie die Schaltfläche **Erste Schritte** aus, und aktivieren Sie dann im Bereich **Berichte** , der geöffnet wird, die Option **Daten für Microsoft 365-Verwendungsanalyse für Power BI verfügbar machen** und **Speichern**.
+ **So beheben Sie diesen Fehler:** Wenn Sie die Daten abonnieren möchten, wechseln Sie zur Verwaltungskonsole \> **Berichte** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Verwendung</a> , und suchen Sie die Kachel Microsoft 365 Usage Analytics auf der Hauptseite des Dashboards. Wählen Sie die Schaltfläche **Erste Schritte** aus, und aktivieren Sie dann im Bereich **Berichte** , der geöffnet wird, die Option **Daten für Microsoft 365-Verwendungsanalyse für Power BI verfügbar machen** und **Speichern** .
   
 ## <a name="we-are-processing-your-data"></a>Ihre Daten werden verarbeitet.
 
@@ -56,7 +56,7 @@ Untersuchen Sie die folgende Liste von Fehlermeldungen, um Hilfe zu den am häuf
   
  **Die folgende Meldung wird angezeigt:** In Power BI, wenn Sie eine Verbindung mit der Microsoft 365 Usage Analytics-Vorlagen-App herstellen oder wenn Sie die Microsoft 365-Berichts-APIs direkt aufrufen. 
   
- **Ursache:** Wenn Sie [sich für das Anzeigen von Daten in der Vorlagen-App](enable-usage-analytics.md) aus dem Admin Center entscheiden, beginnt das Microsoft 365-System mit der Generierung historischer Verwendungsdaten für Ihre Organisation. Je nach Größe des Mandanten kann die Zeit für das Ausführen dieses Schritts zwischen 2 und 48 Stunden betragen. 
+ **Ursache:** Wenn Sie [sich für das Anzeigen von Daten in der Vorlagen-App](enable-usage-analytics.md) aus dem Admin Center entscheiden, beginnt das Microsoft 365-System mit der Generierung historischer Verwendungsdaten für Ihre Organisation. Je nach Größe des Mandanten kann dieser Schritt zwischen zwei Stunden und 48 Stunden dauern. 
   
  **So beheben Sie dieses Problem:** Seien Sie nur geduldig, aber wenn sich die Nachricht nicht ändert, **sind Ihre Daten** sogar 3 Tage seit der Initiierung nicht mehr verfügbar, [wenden Sie sich an den Support von Microsoft 365 for Business](../contact-support-for-business-products.md).
   
@@ -66,9 +66,9 @@ Untersuchen Sie die folgende Liste von Fehlermeldungen, um Hilfe zu den am häuf
   
  **Die folgende Meldung wird angezeigt:** In Power BI, wenn Sie eine Verbindung mit der Microsoft 365 Usage Analytics-Vorlagen-App herstellen oder wenn Sie die Microsoft 365-Berichts-APIs direkt aufrufen. 
   
- **Ursache:** Die Mandanten-ID ist eine GUID und muss das Format xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx aufweisen. Wenn Sie eine andere Zeichenfolge in das Eingabefeld für den Mandanten eingeben, wird diese Fehlermeldung angezeigt. 
+ **Ursache:** Die Mandanten-ID ist eine GUID und muss das Format xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx aufweisen. Wenn Sie eine andere Zeichenfolge im Mandanten Eingabefeld eingeben, wird dieser Fehler angezeigt. 
   
- **So beheben Sie diesen Fehler:** Wechseln Sie zur Admin Center \> - **Berichts** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Verwendung</a> , und suchen Sie die Kachel Microsoft 365 Usage Analytics auf der Hauptseite des Dashboards. Die Mandanten-ID ist auf der Kachel aufgeführt. Sie können es von hier kopieren und in das Dialogfeld zum Herstellen einer Verbindung mit der Vorlagen-App einfügen. 
+ **So beheben Sie diesen Fehler:** Wechseln Sie zur Admin Center \> - **Berichts** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Verwendung</a> , und suchen Sie die Kachel Microsoft 365 Usage Analytics auf der Hauptseite des Dashboards. Die Mandanten-ID wird auf der Kachel aufgeführt. Sie können es von hier kopieren und in das Dialogfeld zum Herstellen einer Verbindung mit der Vorlagen-App einfügen. 
   
 ## <a name="the-tenant-id-you-provided-is-not-recognized-by-our-system"></a>Die von Ihnen angegebene Mandanten-ID wird von unserem System nicht erkannt.
 
@@ -76,9 +76,9 @@ Untersuchen Sie die folgende Liste von Fehlermeldungen, um Hilfe zu den am häuf
   
  **Die folgende Meldung wird angezeigt:** In Power BI, wenn Sie eine Verbindung mit der Microsoft 365 Usage Analytics-Vorlagen-App herstellen oder wenn Sie die Microsoft 365-Berichts-APIs direkt aufrufen. 
   
- **Ursache:** Die von Ihnen angegebene Mandanten-ID ist nicht gültig oder nicht vorhanden. 
+ **Ursache:** Die von Ihnen angegebene Mandanten-ID ist ungültig oder nicht vorhanden. 
   
- **So beheben Sie diesen Fehler:** Wechseln Sie zur Admin Center \> - **Berichts** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Verwendung</a> , und suchen Sie die Kachel Microsoft 365 Usage Analytics auf der Hauptseite des Dashboards. Die Mandanten-ID ist auf der Kachel aufgeführt. Sie können es von hier kopieren und in das Dialogfeld zum Herstellen einer Verbindung mit der Vorlagen-App einfügen. 
+ **So beheben Sie diesen Fehler:** Wechseln Sie zur Admin Center \> - **Berichts** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Verwendung</a> , und suchen Sie die Kachel Microsoft 365 Usage Analytics auf der Hauptseite des Dashboards. Die Mandanten-ID wird auf der Kachel aufgeführt. Sie können es von hier kopieren und in das Dialogfeld zum Herstellen einer Verbindung mit der Vorlagen-App einfügen. 
   
 ## <a name="please-re-enter-your-credentials-to-sign-in-to-power-bi-again"></a>Geben Sie Ihre Anmeldeinformationen erneut ein, um sich wieder bei Power BI anzumelden.
 
@@ -98,7 +98,7 @@ Fehlercode: 302
   
  **Ursache:** Der Autorisierungscode ist fehlgeschlagen, da der Benutzer, der versucht hat, eine Verbindung mit der Vorlagen-App herzustellen, nicht über die richtige Berechtigungsstufe für den Zugriff auf diese Daten verfügt. 
   
- **So beheben Sie diesen Fehler:** Geben Sie die Anmeldeinformationen eines Benutzers an, der entweder **globaler Administrator**, **Exchange-Administrator**, **Skype for Business Administrator**, **SharePoint-Administrator**, **globaler Leser** oder **berichtsleser** ist, um eine Verbindung mit der Vorlagen-App herzustellen. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../add-users/about-admin-roles.md). 
+ **So beheben Sie diesen Fehler:** Geben Sie die Anmeldeinformationen eines Benutzers an, der entweder **globaler Administrator** , **Exchange-Administrator** , **Skype for Business Administrator** , **SharePoint-Administrator** , **globaler Leser** oder **berichtsleser** ist, um eine Verbindung mit der Vorlagen-App herzustellen. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../add-users/about-admin-roles.md). 
   
 ## <a name="refresh-failed"></a>Fehler beim Aktualisieren.
 

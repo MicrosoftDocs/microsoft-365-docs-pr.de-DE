@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Informationen zum Abrufen eines Microsoft Forms-Aktivitätsberichts mithilfe des Microsoft 365 Reports-Dashboards im Microsoft 365 Admin Center.
-ms.openlocfilehash: 78b09edfbfeb83c056af16787085b7c4cfe93fc6
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 843548e77067c7598cfa78ba6fac985237f6f62c
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949204"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841113"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Microsoft 365-Berichte in der Admin Center-Formular Aktivität
 
@@ -39,7 +39,7 @@ Sie können beispielsweise die Aktivität jedes Benutzers verstehen, der für di
 1. Wechseln Sie im Admin Center zur Seite **Berichte** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Verwendung</a>.
 
     
-2. Wählen Sie in der Dropdownliste **Bericht auswählen** die Option **Formular** \> **Aktivität**aus.
+2. Wählen Sie in der Dropdownliste **Bericht auswählen** die Option **Formular** \> **Aktivität** aus.
 
 ## <a name="interpret-the-forms-activity-report"></a>Interpretieren des Berichts "Formular Aktivität"
 
@@ -51,7 +51,7 @@ Sie können eine Ansicht der Formular Aktivitäten Ihrer Benutzer anzeigen, inde
 |:-----|:-----|
 |1.  <br/> |Der **Formular Aktivitäts** Bericht kann für Trends in den letzten 7 Tagen, 30 Tagen, 90 Tagen oder 180 Tagen angezeigt werden. Wenn Sie im Bericht jedoch einen bestimmten Tag auswählen, werden in der Tabelle (7) Daten für bis zu 28 Tage ab dem aktuellen Datum angezeigt (nicht ab dem Datum, an dem der Bericht generiert wurde).  <br/> |
 |2.  <br/> |Die Daten in den einzelnen Berichten decken in der Regel die letzten 24 bis 48 Stunden ab.  <br/> |
-|3.  <br/> |In der Ansicht **Benutzer** können Sie den Trend bei der Anzahl aktiver Formular Benutzer verstehen. Ein Benutzer wird als "aktiv" betrachtet, wenn er eine Aktivität um ein Formular (erstellen, bearbeiten, Anzeigen usw.) oder ein Formular innerhalb eines bestimmten Zeitraums geantwortet hat.  <br/> |
+|3.  <br/> |In der Ansicht **Benutzer** können Sie den Trend bei der Anzahl aktiver Formular Benutzer verstehen. Ein Benutzer wird als aktiv betrachtet, wenn er eine Aktivität um ein Formular (erstellen, bearbeiten, Anzeigen usw.) oder auf ein Formular innerhalb eines bestimmten Zeitraums ausgeführt hat.  <br/> |
 |4.  <br/> |Die **Aktivitäts** Ansicht hilft Ihnen, den Trend bei der Anzahl aktiver Benutzer zu verstehen. Ein Benutzer wird als "aktiv" betrachtet, wenn er innerhalb eines bestimmten Zeitraums eine Dateiaktivität (Speichern, Synchronisieren, Ändern oder Freigeben) ausgeführt oder eine Seite besucht hat.<br/> Hinweis: eine Aktivität kann mehrere Male für ein einzelnes Formular auftreten, wird aber nur als ein aktives Formular gezählt. Sie können beispielsweise ein Formular erstellen und das gleiche Formular mehrmals in einem bestimmten Zeitraum bearbeiten, aber es wird nur als ein einzelnes Formular gezählt. Wenn ein Benutzer jedoch mehrere Antworten für dasselbe Formular übermittelt hat, wäre jede Antwort immer noch eine individuelle Antwort und wird daher mehrmals gezählt. <br/> |
 |5.<br/>|Im Diagramm **Benutzer** ist die Y-Achse die Anzahl der eindeutigen Benutzer. X-Achse ist das Datum, an dem die eindeutigen Benutzer aktiv sind. Die Legenden sind:<br/><br/>**Designer** bedeutet, dass der Benutzer ein Formular erstellt oder bearbeitet hat.<br/>**Responder** bedeutet, dass der Benutzer eine Antwort (en) an ein Formular übermittelt hat.<br/> " **Total Users** " bedeutet, dass jeder Benutzer im Unternehmen, der ein Designer oder Responder war.<br/><br/> Im **Aktivitäts** Diagramm ist die Y-Achse die Anzahl der eindeutigen Formulare oder Antworten. X-Achse ist das Datum, an dem das Formular oder die Antwort Aktivität aufgetreten ist. Die Legenden sind:<br/><br/>" **Erstellte Formulare** " ist die Anzahl der eindeutigen Formulare, die von den Benutzern erstellt wurden.<br/> **In Antworten angemeldet** die Anzahl der angemeldeten Antworten, die die Benutzer in der Organisation erhalten haben.<br/> **Anonyme Antworten** ist die Anzahl der anonymen Antworten, die die Benutzer in der Organisation erhalten haben.<br/><br/>|
 |6.<br/>|Sie können die im Diagramm angezeigte Datenreihe filtern, indem Sie in der Legende ein Element auswählen. Wählen Sie beispielsweise im Diagramm Benutzer die Option Designer, Responder oder Gesamtbenutzer aus, um nur die zugehörigen Informationen anzuzeigen. Wenn Sie diese Auswahl ändern, werden die Informationen in der Raster Tabelle darunter nicht geändert.|

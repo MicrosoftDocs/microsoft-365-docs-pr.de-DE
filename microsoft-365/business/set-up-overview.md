@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Erfahren Sie mehr über die Setupschritte für Microsoft 365 Business Premium, vom abonnieren über das Hinzufügen einer Domäne und von Benutzern bis hin zum Einrichten von Sicherheitsrichtlinien.
-ms.openlocfilehash: fa9c02fa9546437c83b9cc6c1f1e6e0d723ec868
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 8ec01a58d1a15d5c4aa1cef8b81518b474630d8b
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47306467"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841135"
 ---
 # <a name="overview-of-setup"></a>Übersicht über die Einrichtung
 
@@ -40,21 +40,21 @@ Sehen Sie sich ein kurzes Video über das Microsoft 365 Business Premium-Setup a
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
 
-Die meisten Setupschritte können im Setup-Assistenten ausgeführt werden, aber auch die anderen Optionen werden aufgelistet.
+Die meisten der Setupschritte können in der Assistenten-Setup ausgeführt werden, aber die anderen Optionen werden ebenfalls aufgeführt.
 
 ## <a name="step-1-add-your-domain-and-users"></a>Schritt 1: Hinzufügen Ihrer Domäne und Benutzer
 
    - **[Hinzufügen Ihrer Domäne](set-up.md#add-your-domain-to-personalize-sign-in)** (wenn Sie Ihre Domäne während der [Registrierung](sign-up.md)erworben haben, ist dieser Schritt bereits abgeschlossen.)
 
-   - **Benutzer hinzufügen**. Sie können auf drei Arten Benutzer hinzufügen:
-        - Im [Assistenten](set-up.md#add-users-in-the-wizard).
+   - **Benutzer hinzufügen** . Sie können auf drei Arten Benutzer hinzufügen:
+        - Im [Assistenten Setup](set-up.md#add-users-in-the-wizard).
         - Verwenden Sie die Verzeichnissynchronisierung, um [Benutzer mithilfe Azure AD Connect hinzuzufügen](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization) , wenn Sie über ein lokales Active Directory verfügen.
         - Sie können Benutzer auch später im Admin Center [Hinzufügen](add-users-m365b.md) .
 ## <a name="step-2-set-up-security-policies-and-configure-devices"></a>Schritt 2: Einrichten von Sicherheitsrichtlinien und Konfigurieren von Geräten 
 
-  - Verwenden Sie den [Setup-Assistenten](set-up.md#protect-your-organization) , um Geräterichtlinien zu konfigurieren. 
+  - Verwenden Sie das [Assistenten gesteuerte Setup](set-up.md#protect-your-organization) zum Konfigurieren von Geräterichtlinien. 
   - Sie können auch später im [Admin Center](view-policies-and-devices.md) und im [InTune-Portal](https://docs.microsoft.com/intune/tutorial-walkthrough-intune-portal)weitere hinzufügen oder bearbeiten.
   - Außerdem werden mit dem Setup-Assistenten grundlegende Bedrohungen und Verhinderung von Datenverlust Einstellungen eingerichtet.
   
@@ -63,15 +63,15 @@ Die meisten Setupschritte können im Setup-Assistenten ausgeführt werden, aber 
 - **E-Mail-Schutz vor Schadsoftware**
 - **ATP-Anti-Phishing**
 - **Exchange Online-Archivierung**
-- **Azure Information Protection (plan1**)
+- **Azure Information Protection (plan1** )
 
 Informationen zu den ersten Schritten finden Sie unter [Erweitern des Bedrohungsschutzes](increase-threat-protection.md) und [Einrichten von Kompatibilitätsfeatures](set-up-compliance.md).
 
-Eine Übersicht über die besten Sicherheitsmethoden finden Sie auch unter [Top 10 Ways to Secure your Microsoft 365 Business Premium](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) .
+Weitere Informationen finden Sie unter [Top 10 Ways to Secure your Microsoft 365 Business Premium](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) for a Road-Map of Best Security Practices.
 
 ## <a name="step-3-set-up-and-manage-windows-10-devices"></a>Schritt 3: Einrichten und Verwalten von Windows 10-Geräten
 
-Nachdem Sie den Assistenten für die Einrichtung ausgeführt haben, sollten Sie alle Windwos 10-Computer in Ihrer Organisation proctect.
+Nachdem Sie das gesteuerte Setup abgeschlossen haben, sollten Sie alle Windows 10-Computer in Ihrer Organisation schützen.
   
 - Windows 10 pro ist eine [Voraussetzung](pre-requisites-for-data-protection.md) für Microsoft 365 Business Premium, aber wenn Sie Windows 7 pro, Windows 8 pro oder Windows 8.1 pro haben, berechtigen Sie Ihr Abonnement zu einem [Upgrade auf Windows 10 pro](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update).
 - Führen Sie die Schritte unter [Secure Windows 10 PCs](secure-win-10-pcs.md) aus, um Richtlinien für Windows 10-Geräte einzurichten.
@@ -82,7 +82,7 @@ Wenn Sie ein Windows 10-Gerät mit Azure AD verknüpfen, werden die Richtlinien,
 - Sie können Office auf den Windows-Geräten automatisch mithilfe des [Setup-Assistenten](set-up.md#deploy-office-365-client-apps)installieren.
 - Benutzer können [Office-Apps](https://docs.microsoft.com/office365/admin/setup/install-applications) für Windows und Geräte installieren.
      
-## <a name="advanced"></a>Fortgeschritten
+## <a name="advanced"></a>Erweitert
 - **Verwenden von Autopilot zum Einrichten neuer Geräte**
             
      Sie können [Windows Autopilot](add-autopilot-devices-and-profile.md) verwenden, um **neue** Windows 10-Geräte für einen Benutzer automatisch vorkonfigurieren, aber es ist möglicherweise einfacher, einen [Partner](https://www.microsoft.com/solution-providers/search) zu erhalten, der dies für Sie tun kann. Sie können auch zu [Microsoft Store](https://go.microsoft.com/fwlink/?linkid=874598)wechseln und einen Experten für die Cloud-Technologie bitten, neue Geräte einzurichten, die Sie kaufen.

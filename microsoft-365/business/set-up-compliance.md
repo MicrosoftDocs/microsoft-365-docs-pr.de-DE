@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Richten Sie Compliance-Features ein, um Datenverlust zu verhindern und um sicherzustellen, dass die vertraulichen Informationen Ihrer Kunden geschützt sind.
-ms.openlocfilehash: 18886ff3a0ba5e99e63c70ef083d7a69c75bac91
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: 2c95ad3f36df28af2c68cd11192bcfe92dfe29e3
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44785830"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841171"
 ---
 # <a name="set-up-compliance-features"></a>Einrichten von Compliancefeatures
 
@@ -35,7 +35,7 @@ Ihr Microsoft 365 Business Premium verfügt über Features zum Schutz Ihrer Date
 
 ## <a name="set-up-dlp-features"></a>Einrichten von DLP-Features
 
-Ein Beispiel zum Einrichten einer Richtlinie zum Schutz gegen personenbezogene Informationen (PII) finden Sie unter [Erstellen einer DLP-Richtlinie aus einer Vorlage](https://docs.microsoft.com/microsoft-365/compliance/create-a-dlp-policy-from-a-template) . 
+Ein Beispiel zum Einrichten einer Richtlinie zum Schutz vor dem Schutz vor Verlust personenbezogener Daten finden Sie unter [Erstellen einer DLP-Richtlinie aus einer Vorlage](https://docs.microsoft.com/microsoft-365/compliance/create-a-dlp-policy-from-a-template) . 
   
 DLP verfügt über viele vorgefertigte Richtlinienvorlagen für viele unterschiedliche Gebietsschemas. Beispiel: Australien Financial Data, Canada Personal Information Act, US Financial Data, etc. Eine vollständige Liste finden Sie unter [was die DLP-Richtlinienvorlagen enthalten](https://docs.microsoft.com/microsoft-365/compliance/what-the-dlp-policy-templates-include) . Alle diese Vorlagen können ähnlich wie beim PII-Vorlagenbeispiel aktiviert werden. 
   
@@ -47,13 +47,13 @@ DLP verfügt über viele vorgefertigte Richtlinienvorlagen für viele unterschie
     
 So legen Sie ein Postfach für das Beweissicherungsverfahren im Admin Center ab:
     
-1. Navigieren Sie im linken Navigationsbereich zu **Benutzer** \> **aktive Benutzer**.
+1. Navigieren Sie im linken Navigationsbereich zu **Benutzer** \> **aktive Benutzer** .
     
-2. Wählen Sie einen Benutzer aus, dessen Postfach Sie in das Beweissicherungsverfahren einordnen möchten. Erweitern Sie im Bereich Benutzer den Eintrag **e-Mail-Einstellungen**, und klicken Sie neben **Weitere Einstellungen**auf **Exchange-Eigenschaften bearbeiten**.
+2. Wählen Sie einen Benutzer aus, dessen Postfach Sie in das Beweissicherungsverfahren einordnen möchten. Erweitern Sie im Bereich Benutzer den Eintrag **e-Mail-Einstellungen** , und klicken Sie neben **Weitere Einstellungen** auf **Exchange-Eigenschaften bearbeiten** .
     
-3. Wählen Sie auf der Seite Postfachbenutzer im linken Navigationsbereich die Option * * Postfachfeatures * * aus, und wählen Sie dann den Link **aktivieren** unter **Beweissicherungsverfahren**aus.
+3. Wählen Sie auf der Seite Postfachbenutzer im linken Navigationsbereich die Option * * Postfachfeatures * * aus, und wählen Sie dann den Link **aktivieren** unter **Beweissicherungsverfahren** aus.
     
-4. Im Dialogfeld **Beweissicherungsverfahren** können Sie die Dauer des beweissicherungsverfahrens im Feld **Dauer** des beweissicherungsverfahrens angeben. Lassen Sie das Feld leer, wenn Sie einen unbegrenzten Haltebereich platzieren möchten. Sie können auch Notizen hinzufügen und den Postfachbesitzer zu einer Website weiterleiten, auf der Sie möglicherweise mehr über das Beweissicherungsverfahren erklären müssen. \>**Save**.
+4. Im Dialogfeld **Beweissicherungsverfahren** können Sie die Dauer des beweissicherungsverfahrens im Feld **Dauer** des beweissicherungsverfahrens angeben. Lassen Sie das Feld leer, wenn Sie einen unbegrenzten Haltebereich platzieren möchten. Sie können auch Notizen hinzufügen und den Postfachbesitzer zu einer Website weiterleiten, auf der Sie möglicherweise mehr über das Beweissicherungsverfahren erklären müssen. \>**Save** .
     
 **Aufbewahrung:** Sie können benutzerdefinierte Aufbewahrungsrichtlinien aktivieren, beispielsweise um eine bestimmte Zeitspanne beizubehalten oder Inhalte dauerhaft am Ende des Aufbewahrungszeitraums zu löschen. Weitere Informationen finden Sie unter [Übersicht über Aufbewahrungsrichtlinien](https://docs.microsoft.com/microsoft-365/compliance/retention-policies).
 

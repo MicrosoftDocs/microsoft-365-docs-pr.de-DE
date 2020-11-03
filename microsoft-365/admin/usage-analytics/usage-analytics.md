@@ -19,29 +19,28 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Erhalten Sie einen Überblick darüber, wie Ihre Organisation Microsoft 365-Dienste zur Kommunikation und Zusammenarbeit einnimmt.
-ms.openlocfilehash: fecaed3aa9fc2d0990cb3e7b416cee1bfab21d7e
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d7e9e6cf945134df54221bb8a03ef83d1a8851cc
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948628"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841387"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Analysen zur Nutzung von Microsoft 365
----
 
 ## <a name="overview-of-microsoft-365-usage-analytics"></a>Übersicht über die Microsoft 365-Nutzungsanalyse
 
-Verwenden Sie Microsoft 365 Usage Analytics in Power BI, um Einblicke in Ihre Organisation zu gewinnen, die die verschiedenen Dienste innerhalb von Microsoft 365 zur Kommunikation und Zusammenarbeit anwendet. Sie können Microsoft 365-Nutzungsdaten visualisieren und analysieren, benutzerdefinierte Berichte erstellen und die Einblicke in Ihrer Organisation freigeben und Einblicke in die Verwendung von Microsoft 365 durch bestimmte Regionen oder Abteilungen gewinnen.
+Verwenden Sie Microsoft 365 Usage Analytics in Power BI, um Einblicke in Ihre Organisation zu gewinnen, die die verschiedenen Dienste in Microsoft 365 übernimmt. Sie können Microsoft 365-Nutzungsdaten visualisieren und analysieren, benutzerdefinierte Berichte erstellen und die Einblicke in Ihrer Organisation freigeben. Sie können auch Einblicke in die Verwendung bestimmter Regionen oder Abteilungen mit Microsoft 365 erhalten.
   
-Microsoft 365 Usage Analytics ist eine Vorlagen-APP, die Ihnen Zugriff auf ein vordefiniertes Dashboard ermöglicht, das eine produktübergreifende Ansicht der letzten 12 Monate bietet und eine Reihe von vordefinierten Berichten enthält. Jeder Bericht liefert Ihnen spezifische Erkenntnisse zur Nutzung. Benutzerspezifische Informationen sind für den letzten vollen Kalendermonat verfügbar.
+Microsoft 365-Verwendungsanalyse bietet Ihnen Zugriff auf ein vordefiniertes Dashboard, das eine produktübergreifende Ansicht der letzten 12 Monate bietet und eine Reihe von vordefinierten Berichten enthält. Jeder Bericht bietet Ihnen spezifische Einblicke in die Nutzung. Für den letzten vollständigen Kalendermonat stehen benutzerspezifische Informationen zur Verfügung.
   
-Das [Datenmodell](usage-analytics-data-model.md) , das die Vorlagen-App ausmacht, enthält Benutzerattribute aus Active Directory, die die Möglichkeit zum Pivotieren in bestimmten Berichten ermöglichen. Die folgenden Active Directory-Attribute sind enthalten: Standort, Abteilung und Unternehmen. 
+Das [Datenmodell](usage-analytics-data-model.md) , das die Vorlagen-App ausmacht, enthält Benutzerattribute aus Active Directory, die die Möglichkeit zum Pivotieren in bestimmten Berichten ermöglichen. Die folgenden Active Directory Attribute sind enthalten: Standort, Abteilung und Organisation. 
   
 Informationen zum Sammeln von Daten finden Sie unter[Microsoft 365-Nutzungsanalysen aktivieren](enable-usage-analytics.md). 
   
 Microsoft 365-Nutzungsanalysen enthalten eine Reihe von Berichten, die in den folgenden Abschnitten beschrieben werden. 
 
-Sie können auf detaillierte Berichte für jeden Bereich zugreifen, indem Sie die Datentabellen auswählen. Während Sie die Berichte anzeigen, können Sie über die Registerkarten unten auf der Website alle vordefinierten Berichte anzeigen. Ausführlichere Informationen finden Sie unter [Lesen und Verwenden der Berichte in Microsoft 365-Nutzungsanalysen](navigate-and-utilize-reports.md) und [Anpassen der Berichte in Microsoft 365-Nutzungsanalysen](customize-reports.md).
+Sie können auf detaillierte Berichte für jeden Bereich zugreifen, indem Sie die Datentabellen auswählen. Sie können alle vordefinierten Berichte anzeigen, indem Sie die Registerkarten am unteren Rand der Website auswählen. Ausführlichere Anweisungen finden Sie unter [navigieren und Verwenden der Berichte](navigate-and-utilize-reports.md) und [Anpassen der Berichte](customize-reports.md).
 
 ## <a name="executive-summary"></a>Kurzfassung
 
@@ -93,7 +92,7 @@ Weitere Informationen finden Sie unter [Freigeben von Dashboards und Berichten](
 
 ### <a name="who-can-connect-to-microsoft-365-usage-analytics"></a>Wer kann eine Verbindung zu Microsoft 365-Nutzungsanalysen herstellen?
 
-Sie müssen entweder ein **globaler Administrator**, Exchange- **Administrator**, **Skype for Business Administrator**, **SharePoint-Administrator**, **globaler Leser** oder **berichtsleser** sein, um die Verbindung mit der Vorlagen-App herzustellen. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../add-users/about-admin-roles.md).
+Sie müssen entweder ein **globaler Administrator** , Exchange- **Administrator** , **Skype for Business Administrator** , **SharePoint-Administrator** , **globaler Leser** oder **berichtsleser** sein, um die Verbindung mit der Vorlagen-App herzustellen. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../add-users/about-admin-roles.md).
 
 ### <a name="who-can-customize-the-usage-analytics-reports"></a>Wer kann die Verwendungsanalyseberichte anpassen?
 
