@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Hier erfahren Sie, wie Sie Add-Ins für Benutzer und Gruppen in Ihrer Organisation mithilfe einer zentralisierten Bereitstellung im Admin Center bereitstellen können.
-ms.openlocfilehash: 20ebdfd2072c49fabadcbaf66dead54e75f9becd
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: 9708ec9877c4d07b0cf93ea9d6815303236eff4b
+ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48304792"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "48830637"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Bereitstellen von Add-Ins im Admin Center
 
@@ -63,33 +63,33 @@ Bevor Sie beginnen, lesen Sie [ermitteln, ob die zentrale Bereitstellung von Add
   
 1. Wechseln Sie im Admin Center zur Seite **Einstellungen** \> **-Add-ins** . Wenn die **Add-in-** Seite nicht angezeigt wird, wechseln Sie zur Seite mit den **Einstellungen** für \> **integrierte apps** \> **-Add-ins** .
     
-2. Wählen Sie oben auf der Seite **Add-in bereitstellen** aus, und wählen Sie dann **weiter**aus.
+2. Wählen Sie oben auf der Seite **Add-in bereitstellen** aus, und wählen Sie dann **weiter** aus.
  
     > [!NOTE]
-    > Das Admin Center wird mit integrierten Apps auf die Bereitstellungsumgebung aktualisiert. Wenn die oben beschriebenen Schritte nicht angezeigt werden, wechseln Sie zum Abschnitt zentralisierte bereit **Settings**Stellung, indem Sie auf  >  **integrierte apps**für Einstellungen gehen. Wählen Sie oben auf der Seite **integrierte apps** die Option **Add-ins**aus.
+    > Das Admin Center wird mit integrierten Apps auf die Bereitstellungsumgebung aktualisiert. Wenn die oben beschriebenen Schritte nicht angezeigt werden, wechseln Sie zum Abschnitt zentralisierte bereit **Settings** Stellung, indem Sie auf  >  **integrierte apps** für Einstellungen gehen. Wählen Sie oben auf der Seite **integrierte apps** die Option **Add-ins** aus.
     
 3. Wählen Sie eine Option aus und folgen Sie den Anweisungen. 
   
 4. Wenn Sie die Option zum Hinzufügen eines Add-Ins aus dem Office Store ausgewählt haben, müssen Sie die Add-in-Auswahl vornehmen. </br>
 
-    Sie können die verfügbaren Add-Ins nach Kategorien anzeigen: **vorgeschlagen für Sie**, **Bewertung**oder **Name**. In der Office Store sind nur ﻿kostenlose Add-Ins verfügbar. Kostenpflichtige Add-Ins werden derzeit nicht unterstützt. Nachdem Sie ein Add-in ausgewählt haben, akzeptieren Sie die Bedingungen, um den Vorgang fortzusetzen. <br/> 
+    Sie können die verfügbaren Add-Ins nach Kategorien anzeigen: **vorgeschlagen für Sie** , **Bewertung** oder **Name** . In der Office Store sind nur ﻿kostenlose Add-Ins verfügbar. Kostenpflichtige Add-Ins werden derzeit nicht unterstützt. Nachdem Sie ein Add-in ausgewählt haben, akzeptieren Sie die Bedingungen, um den Vorgang fortzusetzen. <br/> 
 
     > [!NOTE] 
-    > Mit der Office Store Option werden Updates und Verbesserungen automatisch für Benutzer durchgestellten.
+    > Mit der Option Office Store werden Updates und Verbesserungen automatisch für Benutzer bereitgestellt.
 
-5. Wählen Sie auf der nächsten Seite ** Alle **, **Bestimmte Benutzer/Gruppen** oder **Nur ich** aus, um anzugeben, für wen das Add-in bereitgestellt wird. Suchen Sie im Suchfeld nach bestimmten Benutzern oder Gruppen. <br/>
+5. Wählen Sie auf der nächsten Seite **Alle** , **Bestimmte Benutzer/Gruppen** oder **Nur ich** aus, um anzugeben, für wen das Add-in bereitgestellt wird. Suchen Sie im Suchfeld nach bestimmten Benutzern oder Gruppen. <br/>
 
     > [!NOTE] 
     > Weitere Informationen zu anderen Status, die für ein Add-in gelten, finden Sie unter [Add-in States](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center.md).
   
-6. Wählen Sie **Bereitstellen**.
+6. Wählen Sie **Bereitstellen** .
   
 7. Wenn das Add-in bereitgestellt wird, wird ein grünes Häkchen angezeigt. Befolgen Sie die Anweisungen auf der Seite, um das Add-in zu testen.
 
     > [!NOTE]
     > Benutzer müssen Office möglicherweise neu starten, um das Add-in-Symbol auf dem App-Menüband anzuzeigen. Outlook-Add-Ins können bis zu 24 Stunden dauern, bis Sie auf App-menübändern angezeigt werden.
     
-8. Wenn Sie fertig sind, wählen Sie **weiter**aus. Wenn Sie nur für sich selbst bereitgestellt haben, können Sie ändern auswählen, **der Zugriff auf das Add-in hat** , um mehr Benutzern bereitzustellen.
+8. Wenn Sie fertig sind, wählen Sie **weiter** aus. Wenn Sie nur für sich selbst bereitgestellt haben, können Sie ändern auswählen, **der Zugriff auf das Add-in hat** , um mehr Benutzern bereitzustellen.
 
     Wenn Sie das Add-in für andere Mitglieder Ihrer Organisation bereitgestellt haben, befolgen Sie die Anweisungen, um die Bereitstellung des Add-ins anzukündigen. <br/>
   
