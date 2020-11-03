@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f4af346877b41b03c07750508ff93661cc642ec4
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: b98cec62a018556bfbd31df0aa824acbd00b37b6
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289105"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846240"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Microsoft Managed Desktop-Technologien
 
@@ -42,7 +42,7 @@ Webanwendungen |  Jammern, Office in einem Browser, vertiefen, Durchfluss, Staff
  |
  --- | ---
 Application Virtualization (App-V) |    Kunden können App-V-Pakete mithilfe des App-Verwaltungsclients für InTune Win32 bereitstellen.
-Microsoft Defender Advanced Threat Protection |  Microsoft Managed Desktop verwendet diese, um die Gerätesicherheit zu überwachen. 
+Microsoft Defender für Endpunkt |    Microsoft Managed Desktop verwendet diese, um die Gerätesicherheit zu überwachen. 
 
 ## <a name="enterprise-mobility--security-e5"></a>Enterprise Mobility + Sicherheit E5
 

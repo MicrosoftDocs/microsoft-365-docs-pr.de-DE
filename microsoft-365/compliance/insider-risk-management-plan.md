@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5944439da4c4df9253e5c6d67944ccc1a7339e71
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: b2aa72dea55d4c75f6e73161e07cf0a9bb5ecf1c
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199771"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846273"
 ---
 # <a name="plan-for-insider-risk-management"></a>Planen des Insider-Risikomanagements
 
@@ -65,7 +65,7 @@ Wenn Sie keinen vorhandenen Microsoft 365 Enterprise E5-Plan haben und das Insid
 
 - Wenn Sie die Vorlage " **Datendiebstahl durch** ablegende Benutzer" verwenden, müssen Sie einen Microsoft 365-HR-Connector für die regelmäßige Einfuhr von Rücktritts-und Kündigungsdatum-Informationen für Benutzer in Ihrer Organisation konfigurieren. Lesen Sie den Artikel [Importieren von Daten mit dem HR-Connector](import-hr-data.md) , um schrittweise Anleitungen zum Konfigurieren des Microsoft 365 HR-Connectors für Ihre Organisation zu erhalten.
 - Bei der Verwendung von **Daten** Verlust Vorlagen müssen Sie mindestens eine DLP-Richtlinie (Data Loss Prevention) konfigurieren, um vertrauliche Informationen in Ihrer Organisation zu definieren und Insider Risikowarnungen für DLP-Richtlinienwarnungen mit hohem Schweregrad zu erhalten. Eine schrittweise Anleitung zum Konfigurieren von DLP-Richtlinien für Ihre Organisation finden Sie unter [erstellen, testen und Optimieren eines DLP-Richtlinien](create-test-tune-dlp-policy.md) Artikels.
-- Wenn Sie **Sicherheitsrichtlinien-übertretungs** Vorlagen verwenden, müssen Sie Microsoft Defender Advanced Threat Protection (ATP) für die Integration von Insider Risikomanagement im Defender Security Center aktivieren, um Warnungen zu Sicherheitsverletzungen zu importieren. Eine schrittweise Anleitung zur Aktivierung der Integration von Microsoft Defender ATP in das Insider Risikomanagement finden Sie im Artikel [configure Advanced Features in Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features) .
+- Wenn Sie **Sicherheitsrichtlinien-übertretungs** Vorlagen verwenden, müssen Sie Microsoft Defender für Endpoint for Insider Risk Management Integration in das Defender Security Center aktivieren, um Warnungen zu Sicherheitsverletzungen zu importieren. Eine schrittweise Anleitung zur Aktivierung von Defender für die Endpunkt Integration mit dem Insider Risk Management finden Sie im Artikel [configure Advanced Features in Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features) .
 - Wenn Sie **verärgerte Benutzer** Vorlagen verwenden, müssen Sie einen Microsoft 365 HR-Connector für die regelmäßige Importleistung oder Herabstufung von Statusinformationen für Benutzer in Ihrer Organisation konfigurieren. Lesen Sie den Artikel [Importieren von Daten mit dem HR-Connector](import-hr-data.md) , um schrittweise Anleitungen zum Konfigurieren des Microsoft 365 HR-Connectors für Ihre Organisation zu erhalten.
 
 ## <a name="test-with-a-small-group-of-users-in-a-production-environment"></a>Testen mit einer kleinen Gruppe von Benutzern in einer Produktionsumgebung

@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 28d4fc196e75a1a7a27cbe2a0f6804646002354f
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: f9c26e7e4af99174c5723b44c59d7279ca93afa5
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464074"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846448"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Allgemeine Identitäts- und Gerätezugriffsrichtlinien
 
@@ -59,7 +59,7 @@ Um Ihnen Zeit zum Ausführen dieser Aufgaben zu geben, empfehlen wir, die Basisr
 |        |[Erfordern von genehmigten apps und App-Schutz](#require-approved-apps-and-app-protection)|Erzwingt Mobile App Schutz für Telefone und Tablets mit IOS, iPads oder Android.|
 |        |[Definieren von Geräte Konformitätsrichtlinien](#define-device-compliance-policies)|Eine Richtlinie für jede Plattform.|
 |        |[Kompatible PCs erforderlich](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Erzwingt die Intune-Verwaltung von PCs mithilfe von Windows oder MacOS.|
-|**Vertraulich**|[MFA erforderlich, wenn das Anmelde Risiko *niedrig*, *Mittel*oder *hoch* ist](#require-mfa-based-on-sign-in-risk)| |
+|**Vertraulich**|[MFA erforderlich, wenn das Anmelde Risiko *niedrig* , *Mittel* oder *hoch* ist](#require-mfa-based-on-sign-in-risk)| |
 |         |[Erfordern von kompatiblen PCs *und* mobilen Geräten](#require-compliant-pcs-and-mobile-devices)|Erzwingt die Intune-Verwaltung für PCs (Windows oder MacOS) sowie für Telefone oder Tablets (Ios, iPads oder Android).|
 |**Streng geregelt**|[*Immer* MFA erforderlich](#require-mfa-based-on-sign-in-risk)|
 | | | |
@@ -99,8 +99,8 @@ Sie sollten Ihre Benutzer für MFA registrieren lassen, bevor Sie Ihre Verwendun
 Nachdem Ihre Benutzer registriert wurden, können Sie MFA für die Anmeldung mit einer neuen Richtlinie für den bedingten Zugriff benötigen.
 
 1. Navigieren Sie zum [Azure-Portal](https://portal.azure.com), und melden Sie sich mit Ihren Anmeldeinformationen an.
-2. Wählen Sie in der Liste der Azure-Dienste die Option **Azure Active Directory**aus.
-3. Wählen Sie in der Liste **Verwalten** die Option **Sicherheit**aus, und wählen Sie dann **bedingter Zugriff**aus.
+2. Wählen Sie in der Liste der Azure-Dienste die Option **Azure Active Directory** aus.
+3. Wählen Sie in der Liste **Verwalten** die Option **Sicherheit** aus, und wählen Sie dann **bedingter Zugriff** aus.
 4. Wählen Sie **neue Richtlinie** aus, und geben Sie den Namen der neuen Richtlinie ein.
 
 In den folgenden Tabellen werden die Richtlinieneinstellungen für den bedingten Zugriff beschrieben, um MFA basierend auf dem Anmelde Risiko zu erfordern.
@@ -109,9 +109,9 @@ Im Abschnitt **Zuweisungen** :
 
 |Einstellung|Eigenschaften|Werte|Hinweise|
 |:---|:---------|:-----|:----|
-|Benutzer und Gruppen|Einschließen| **Wählen Sie Benutzer und Gruppen > Benutzer und Gruppen**aus: bestimmte Gruppen mit Zielbenutzer Konten auswählen. |Beginnen Sie mit der Gruppe, die Pilotbenutzer Konten enthält.|
-||Ausschließen| **Benutzer und Gruppen**: Wählen Sie die Ausnahmegruppe für bedingten Zugriff aus. Dienstkonten (app-Identitäten).|Die Mitgliedschaft sollte auf der Grundlage der erforderlichen, temporären Änderungen geändert werden.|
-|Cloud-Apps oder-Aktionen| **Cloud-apps > include** | **Auswählen von apps**: Wählen Sie die Apps aus, auf die diese Richtlinie angewendet werden soll. Wählen Sie beispielsweise Exchange Online aus.||
+|Benutzer und Gruppen|Einschließen| **Wählen Sie Benutzer und Gruppen > Benutzer und Gruppen** aus: bestimmte Gruppen mit Zielbenutzer Konten auswählen. |Beginnen Sie mit der Gruppe, die Pilotbenutzer Konten enthält.|
+||Ausschließen| **Benutzer und Gruppen** : Wählen Sie die Ausnahmegruppe für bedingten Zugriff aus. Dienstkonten (app-Identitäten).|Die Mitgliedschaft sollte auf der Grundlage der erforderlichen, temporären Änderungen geändert werden.|
+|Cloud-Apps oder-Aktionen| **Cloud-apps > include** | **Auswählen von apps** : Wählen Sie die Apps aus, auf die diese Richtlinie angewendet werden soll. Wählen Sie beispielsweise Exchange Online aus.||
 |Bedingungen| | |Konfigurieren Sie Bedingungen, die für Ihre Umgebung und Ihre Anforderungen spezifisch sind.|
 ||Anmelderisiko||Lesen Sie den Leitfaden in der folgenden Tabelle.|
 |||||
@@ -138,7 +138,7 @@ Im Abschnitt **Zugriffssteuerungen** :
 
 Wählen **Sie auswählen aus** , um die **Berechtigungs** Einstellungen zu speichern.
 
-Wählen Sie schließlich **auf** für **Richtlinie aktivieren**aus, und wählen Sie dann **Erstellen**aus.
+Wählen Sie schließlich **auf** für **Richtlinie aktivieren** aus, und wählen Sie dann **Erstellen** aus.
 
 In diesem Fall sollten Sie auch das [What-if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) -Tool zum Testen der Richtlinie verwenden.
 
@@ -152,9 +152,9 @@ Im Abschnitt **Zuweisungen** :
 
 |Einstellung|Eigenschaften|Werte|Hinweise|
 |:---|:---------|:-----|:----|
-|Benutzer und Gruppen|Einschließen| **Wählen Sie Benutzer und Gruppen > Benutzer und Gruppen**aus: bestimmte Gruppen mit Zielbenutzer Konten auswählen. |Beginnen Sie mit der Gruppe, die Pilotbenutzer Konten enthält.|
-||Ausschließen| **Benutzer und Gruppen**: Wählen Sie die Ausnahmegruppe für bedingten Zugriff aus. Dienstkonten (app-Identitäten).|Die Mitgliedschaft sollte auf der Grundlage der erforderlichen, temporären Änderungen geändert werden.|
-|Cloud-Apps oder-Aktionen|**Cloud-apps > include**| **Auswählen von apps**: Wählen Sie die Apps aus, die den Clients entsprechen, die die moderne Authentifizierung nicht unterstützen.||
+|Benutzer und Gruppen|Einschließen| **Wählen Sie Benutzer und Gruppen > Benutzer und Gruppen** aus: bestimmte Gruppen mit Zielbenutzer Konten auswählen. |Beginnen Sie mit der Gruppe, die Pilotbenutzer Konten enthält.|
+||Ausschließen| **Benutzer und Gruppen** : Wählen Sie die Ausnahmegruppe für bedingten Zugriff aus. Dienstkonten (app-Identitäten).|Die Mitgliedschaft sollte auf der Grundlage der erforderlichen, temporären Änderungen geändert werden.|
+|Cloud-Apps oder-Aktionen|**Cloud-apps > include**| **Auswählen von apps** : Wählen Sie die Apps aus, die den Clients entsprechen, die die moderne Authentifizierung nicht unterstützen.||
 |Bedingungen| **Client-Apps** | Wählen Sie **Ja** für **configure** aus. <br> Deaktivieren Sie die Häkchen für **Browser** und **Mobile Apps und Desktop Clients** | |
 ||||
 
@@ -168,7 +168,7 @@ Im Abschnitt **Zugriffssteuerungen** :
 
 Wählen **Sie auswählen aus** , um die **Berechtigungs** Einstellungen zu speichern.
 
-Wählen Sie schließlich **auf** für **Richtlinie aktivieren**aus, und wählen Sie dann **Erstellen**aus.
+Wählen Sie schließlich **auf** für **Richtlinie aktivieren** aus, und wählen Sie dann **Erstellen** aus.
 
 Verwenden Sie dazu das Tool [What if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) , um die Richtlinie zu testen.
 
@@ -198,7 +198,7 @@ Im zweiten Abschnitt " **Zuweisungen** ":
 
 Wählen Sie **Fertig** aus, um die **Zugriffs** Einstellungen zu speichern.
 
-Wählen Sie schließlich **auf** für **Richtlinie erzwingen**aus, und wählen Sie dann **Speichern**aus.
+Wählen Sie schließlich **auf** für **Richtlinie erzwingen** aus, und wählen Sie dann **Speichern** aus.
 
 Verwenden Sie dazu das Tool [What if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) , um die Richtlinie zu testen.
 
@@ -274,17 +274,17 @@ Sie müssen für jede PC-, Telefon-oder Tablet-Plattform eine Richtlinie erstell
 - Windows 8.1 und höher
 - Windows 10 und höher
 
-Um Geräte Konformitätsrichtlinien zu erstellen, melden Sie sich mit Ihren Administratoranmeldeinformationen beim [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com) an, und navigieren Sie dann zu Richtlinien für **Devices**  >  **Konformitätsrichtlinien**für Geräte  >  **Policies**. Wählen Sie **Richtlinie erstellen**aus.
+Um Geräte Konformitätsrichtlinien zu erstellen, melden Sie sich mit Ihren Administratoranmeldeinformationen beim [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com) an, und navigieren Sie dann zu Richtlinien für **Devices**  >  **Konformitätsrichtlinien** für Geräte  >  **Policies**. Wählen Sie **Richtlinie erstellen** aus.
 
-Damit Geräte Konformitätsrichtlinien bereitgestellt werden, müssen Sie Benutzergruppen zugewiesen werden. Sie weisen eine Richtlinie zu, nachdem Sie Sie erstellt und gespeichert haben. Wählen Sie im Admin Center die Richtlinie aus, und wählen Sie dann **Zuweisungen**aus. Nachdem Sie die Gruppen ausgewählt haben, für die Sie die Richtlinie erhalten möchten, wählen Sie **Speichern** aus, um diese Gruppenzuweisung zu speichern und die Richtlinie bereitzustellen.
+Damit Geräte Konformitätsrichtlinien bereitgestellt werden, müssen Sie Benutzergruppen zugewiesen werden. Sie weisen eine Richtlinie zu, nachdem Sie Sie erstellt und gespeichert haben. Wählen Sie im Admin Center die Richtlinie aus, und wählen Sie dann **Zuweisungen** aus. Nachdem Sie die Gruppen ausgewählt haben, für die Sie die Richtlinie erhalten möchten, wählen Sie **Speichern** aus, um diese Gruppenzuweisung zu speichern und die Richtlinie bereitzustellen.
 
 Eine Schritt-für-Schritt-Anleitung zum Erstellen von Konformitätsrichtlinien in InTune finden Sie unter [Create a Compliance Policy in Microsoft InTune](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy) in der InTune-Dokumentation.
 
 ### <a name="recommended-settings-for-windows-10-and-later"></a>Empfohlene Einstellungen für Windows 10 und höher
 
-Die folgenden Einstellungen werden für PCs mit Windows 10 und höher, wie in **Schritt 2: Kompatibilitätseinstellungen**konfiguriert, des Richtlinien Erstellungsprozesses empfohlen.
+Die folgenden Einstellungen werden für PCs mit Windows 10 und höher, wie in **Schritt 2: Kompatibilitätseinstellungen** konfiguriert, des Richtlinien Erstellungsprozesses empfohlen.
 
-Informationen zum **Geräte Integritäts > Windows-Integritäts Prüfungsdienst**finden Sie in dieser Tabelle.
+Informationen zum **Geräte Integritäts > Windows-Integritäts Prüfungsdienst** finden Sie in dieser Tabelle.
 
 |Eigenschaften|Wert|Aktion|
 |:---------|:-----|:----|
@@ -293,11 +293,11 @@ Informationen zum **Geräte Integritäts > Windows-Integritäts Prüfungsdienst*
 |Codeintegrität erforderlich|Erforderlich| Auswählen |
 ||||
 
-Geben Sie für **Geräteeigenschaften**die entsprechenden Werte für Betriebssystemversionen basierend auf Ihren IT-und Sicherheitsrichtlinien an.
+Geben Sie für **Geräteeigenschaften** die entsprechenden Werte für Betriebssystemversionen basierend auf Ihren IT-und Sicherheitsrichtlinien an.
 
-Wählen Sie für die **Configuration Manager-Kompatibilität**die Option **erforderlich**aus.
+Wählen Sie für die **Configuration Manager-Kompatibilität** die Option **erforderlich** aus.
 
-Informationen zur **System Sicherheit**finden Sie in dieser Tabelle.
+Informationen zur **System Sicherheit** finden Sie in dieser Tabelle.
 
 |Typ|Eigenschaften|Wert|Aktion|
 |:---|:---------|:-----|:----|
@@ -319,11 +319,11 @@ Informationen zur **System Sicherheit**finden Sie in dieser Tabelle.
 ||Echtzeitschutz|Erforderlich|Auswählen <br>Wird nur für Windows 10-Desktop unterstützt|
 |||||
 
-**Microsoft Defender ATP**
+**Microsoft Defender für Endpunkt**
 
 |Typ|Eigenschaften|Wert|Aktion|
 |:---|:---------|:-----|:----|
-|Microsoft Defender Advanced Threat Protection-Regeln|Erfordern, dass das Gerät auf oder unter dem Computer-Risk-Score liegt|Mittel|Auswählen|
+|Microsoft Defender für Endpunkt Regeln|Erfordern, dass das Gerät auf oder unter dem Computer-Risk-Score liegt|Mittel|Auswählen|
 |||||
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Erfordern Sie kompatible PCs (aber keine kompatiblen Telefone und Tablets)
@@ -333,23 +333,23 @@ Bevor Sie eine Richtlinie hinzufügen, die kompatible PCs erfordert, müssen Sie
 So benötigen Sie kompatible PCs:
 
 1. Navigieren Sie zum [Azure-Portal](https://portal.azure.com), und melden Sie sich mit Ihren Anmeldeinformationen an.
-2. Wählen Sie in der Liste der Azure-Dienste die Option **Azure Active Directory**aus.
-3. Wählen Sie in der Liste **Verwalten** die Option **Sicherheit**aus, und wählen Sie dann **bedingter Zugriff**aus.
+2. Wählen Sie in der Liste der Azure-Dienste die Option **Azure Active Directory** aus.
+3. Wählen Sie in der Liste **Verwalten** die Option **Sicherheit** aus, und wählen Sie dann **bedingter Zugriff** aus.
 4. Wählen Sie **neue Richtlinie** aus, und geben Sie den Namen der neuen Richtlinie ein.
 
-5. Wählen Sie unter **Zuweisungen**die Option **Benutzer und Gruppen** aus, und geben Sie ein, auf wen die Richtlinie angewendet werden soll. Schließen Sie auch die Ausschlussgruppe für bedingten Zugriff aus.
+5. Wählen Sie unter **Zuweisungen** die Option **Benutzer und Gruppen** aus, und geben Sie ein, auf wen die Richtlinie angewendet werden soll. Schließen Sie auch die Ausschlussgruppe für bedingten Zugriff aus.
 
-6. Wählen Sie unter **Zuweisungen**die Option **Cloud Apps oder Aktionen**aus.
+6. Wählen Sie unter **Zuweisungen** die Option **Cloud Apps oder Aktionen** aus.
 
-7. Wählen Sie für **einschließen**die Option **apps >** auswählen aus, und wählen Sie dann in der Liste **Cloud apps** die gewünschten Apps aus. Wählen Sie beispielsweise Exchange Online aus. Wählen **Sie** , wenn Sie fertig sind.
+7. Wählen Sie für **einschließen** die Option **apps >** auswählen aus, und wählen Sie dann in der Liste **Cloud apps** die gewünschten Apps aus. Wählen Sie beispielsweise Exchange Online aus. Wählen **Sie** , wenn Sie fertig sind.
 
-8. Wenn Sie kompatible PCs (aber nicht kompatible Telefone und Tablets) benötigen, wählen Sie unter **Zuweisungen**die Option **Bedingungen > Geräteplattformen**aus. Wählen Sie **Ja** für **configure**aus. Wählen  **Sie Geräteplattformen auswählen**aus, wählen Sie **Windows** und **macOS**aus, und wählen Sie dann **Fertig**aus.
+8. Wenn Sie kompatible PCs (aber nicht kompatible Telefone und Tablets) benötigen, wählen Sie unter **Zuweisungen** die Option **Bedingungen > Geräteplattformen** aus. Wählen Sie **Ja** für **configure** aus. Wählen  **Sie Geräteplattformen auswählen** aus, wählen Sie **Windows** und **macOS** aus, und wählen Sie dann **Fertig** aus.
 
-9. Wählen Sie unter **Zugriffssteuerung**die Option **erteilen** aus.
+9. Wählen Sie unter **Zugriffssteuerung** die Option **erteilen** aus.
 
-10. Wählen Sie **Zugriff gewähren** aus, und überprüfen Sie **, dass Gerät als konform gekennzeichnet werden soll**. Wählen Sie für mehrere Steuerelemente **die Option alle ausgewählten Steuerelemente erfordern**aus. Klicken Sie nach Abschluss auf **auswählen**. 
+10. Wählen Sie **Zugriff gewähren** aus, und überprüfen Sie **, dass Gerät als konform gekennzeichnet werden soll**. Wählen Sie für mehrere Steuerelemente **die Option alle ausgewählten Steuerelemente erfordern** aus. Klicken Sie nach Abschluss auf **auswählen**. 
 
-10. Wählen **Sie** für **Richtlinie aktivieren**aus, und wählen Sie dann **Erstellen**aus.
+10. Wählen **Sie** für **Richtlinie aktivieren** aus, und wählen Sie dann **Erstellen** aus.
 
 >[!Note]
 >Stellen Sie sicher, dass Ihr Gerät konform ist, bevor Sie diese Richtlinie aktivieren. Andernfalls können Sie gesperrt werden und können diese Richtlinie erst ändern, wenn Ihr Benutzerkonto zur Ausschlussgruppe für bedingten Zugriff hinzugefügt wurde.
@@ -360,21 +360,21 @@ So benötigen Sie kompatible PCs:
 So erfordern Sie die Kompatibilität für alle Geräte:
 
 1. Navigieren Sie zum [Azure-Portal](https://portal.azure.com), und melden Sie sich mit Ihren Anmeldeinformationen an.
-2. Wählen Sie in der Liste der Azure-Dienste die Option **Azure Active Directory**aus.
-3. Wählen Sie in der Liste **Verwalten** die Option **Sicherheit**aus, und wählen Sie dann **bedingter Zugriff**aus.
+2. Wählen Sie in der Liste der Azure-Dienste die Option **Azure Active Directory** aus.
+3. Wählen Sie in der Liste **Verwalten** die Option **Sicherheit** aus, und wählen Sie dann **bedingter Zugriff** aus.
 4. Wählen Sie **neue Richtlinie** aus, und geben Sie den Namen der neuen Richtlinie ein.
 
-5. Wählen Sie unter **Zuweisungen**die Option **Benutzer und Gruppen** aus, und geben Sie ein, auf wen die Richtlinie angewendet werden soll. Schließen Sie auch die Ausschlussgruppe für bedingten Zugriff aus.
+5. Wählen Sie unter **Zuweisungen** die Option **Benutzer und Gruppen** aus, und geben Sie ein, auf wen die Richtlinie angewendet werden soll. Schließen Sie auch die Ausschlussgruppe für bedingten Zugriff aus.
 
-6. Wählen Sie unter **Zuweisungen**die Option **Cloud Apps oder Aktionen**aus.
+6. Wählen Sie unter **Zuweisungen** die Option **Cloud Apps oder Aktionen** aus.
 
-7. Wählen Sie für **einschließen**die Option **apps >** auswählen aus, und wählen Sie dann in der Liste **Cloud apps** die gewünschten Apps aus. Wählen Sie beispielsweise Exchange Online aus. Wählen **Sie** , wenn Sie fertig sind.
+7. Wählen Sie für **einschließen** die Option **apps >** auswählen aus, und wählen Sie dann in der Liste **Cloud apps** die gewünschten Apps aus. Wählen Sie beispielsweise Exchange Online aus. Wählen **Sie** , wenn Sie fertig sind.
 
-8. Wählen Sie unter **Zugriffssteuerung**die Option **erteilen** aus.
+8. Wählen Sie unter **Zugriffssteuerung** die Option **erteilen** aus.
 
-9. Wählen Sie **Zugriff gewähren** aus, und überprüfen Sie **, dass Gerät als konform gekennzeichnet werden soll**. Wählen Sie für mehrere Steuerelemente **die Option alle ausgewählten Steuerelemente erfordern**aus. Klicken Sie nach Abschluss auf **auswählen**. 
+9. Wählen Sie **Zugriff gewähren** aus, und überprüfen Sie **, dass Gerät als konform gekennzeichnet werden soll**. Wählen Sie für mehrere Steuerelemente **die Option alle ausgewählten Steuerelemente erfordern** aus. Klicken Sie nach Abschluss auf **auswählen**. 
 
-10. Wählen **Sie** für **Richtlinie aktivieren**aus, und wählen Sie dann **Erstellen**aus.
+10. Wählen **Sie** für **Richtlinie aktivieren** aus, und wählen Sie dann **Erstellen** aus.
 
 >[!Note]
 >Stellen Sie sicher, dass Ihr Gerät konform ist, bevor Sie diese Richtlinie aktivieren. Andernfalls können Sie gesperrt werden und können diese Richtlinie erst ändern, wenn Ihr Benutzerkonto zur Ausschlussgruppe für bedingten Zugriff hinzugefügt wurde.

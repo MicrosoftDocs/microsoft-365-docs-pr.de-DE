@@ -8,12 +8,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 1e50b07208df46b199aada9c2ccbe04cc1c1ae72
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: e69656e13cd9a300cd56bdd5db7703f2387d23d4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289483"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846204"
 ---
 # <a name="security-technologies-in-microsoft-managed-desktop"></a>Sicherheitstechnologien in Microsoft Managed Desktop
 
@@ -39,7 +39,7 @@ Dienst | Beschreibung
 --- | ---
 Antivirus | Microsoft Defender AV ist installiert und konfiguriert<br>Microsoft Defender AV-Definitionen sind auf dem neuesten Stand
 Vollständige Volumen Verschlüsselung |    Windows BitLocker ist die Volumen Verschlüsselungslösung für Microsoft Managed Desktop-Geräte.<br><br>Sobald eine Organisation in den Dienst integriert wurde, werden die Geräte mithilfe von Windows BitLocker mit integriertem TPM (Trust Platform Module) verschlüsselt, um den nicht autorisierten Zugriff auf lokale Daten zu verhindern, wenn sich das Gerät im Ruhezustand befindet, oder aus. 
-Überwachung |    Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) wird für die Überwachung von Sicherheitsbedrohungen auf allen von Microsoft verwalteten Desktop Geräten verwendet. Mit Microsoft Defender ATP können Unternehmenskunden fortgeschrittene Bedrohungen in Ihrem Unternehmensnetzwerk erkennen, untersuchen und darauf reagieren. Weitere Informationen finden Sie unter [Advanced Threat Protection von Microsoft Defender.](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
+Überwachung |    Microsoft Defender für Endpoint wird für die Überwachung von Sicherheitsbedrohungen auf allen von Microsoft verwalteten Desktop Geräten verwendet. Mit Defender for Endpoint können Unternehmenskunden fortgeschrittene Bedrohungen in Ihrem Unternehmensnetzwerk erkennen, untersuchen und darauf reagieren. Weitere Informationen finden Sie unter [Microsoft Defender for Endpoint.](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
 Betriebssystemupdates |  Microsoft Managed Desktop-Geräte sind immer mit den neuesten Sicherheitsupdates gesichert.
 Konfiguration für sichere Geräte |   Microsoft Managed Desktop implementiert die Microsoft-Sicherheitsbasis. Weitere Informationen finden Sie unter [Windows-Sicherheitsbasislinien.](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)
 

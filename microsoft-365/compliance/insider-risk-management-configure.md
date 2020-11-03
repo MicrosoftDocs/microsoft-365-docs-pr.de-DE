@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: e8d30706895774986bc68936bd84c303a6460ece
-ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
+ms.openlocfilehash: 684e21a8288aee72f6170d54ffc86af3bcb0ece0
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48787511"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846263"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Erste Schritte mit dem Insider-Risikomanagement
 
@@ -31,7 +31,7 @@ Verwenden Sie Richtlinien für Insider Risk Management, um riskante Aktivitäten
 
 Weitere Informationen dazu, wie Sie mit Insider Risikorichtlinien Risiken in Ihrer Organisation verwalten können, finden Sie unter [Insider Risk Management in Microsoft 365](insider-risk-management.md).
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Vorbereitung
 
 Bevor Sie mit dem Insider Risk Management beginnen, sollten Sie Ihr [Microsoft 365-Abonnement](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) und alle Add-ons bestätigen. Für den Zugriff auf und die Verwendung des Insider Risikomanagements muss Ihre Organisation über eines der folgenden Abonnements oder Add-ons verfügen:
 
@@ -71,7 +71,7 @@ Führen Sie die folgenden Schritte aus, um Benutzer zu einer Rollengruppe "Insid
 
 1. Melden [https://protection.office.com/permissions](https://protection.office.com/permissions) Sie sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365-Organisation an.
 
-2. &amp;Wechseln Sie im Security Compliance Center zu **Berechtigungen** . Wählen Sie den Link zum Anzeigen und Verwalten von Rollen in Office 365 aus.
+2. &amp;Wechseln Sie im Security Compliance Center zu **Berechtigungen**. Wählen Sie den Link zum Anzeigen und Verwalten von Rollen in Office 365 aus.
 
 3. Wählen Sie die Rollengruppe "Insider Risk Management" aus, der Sie Benutzer hinzufügen möchten, und wählen Sie dann **Rollengruppe bearbeiten** aus.
 
@@ -79,7 +79,7 @@ Führen Sie die folgenden Schritte aus, um Benutzer zu einer Rollengruppe "Insid
 
 5. Wählen Sie **Hinzufügen** aus, und aktivieren Sie dann das Kontrollkästchen für alle Benutzer, die Sie der Rollengruppe hinzufügen möchten.
 
-6. Wählen Sie **Hinzufügen** aus, und klicken Sie dann auf **Fertig** .
+6. Wählen Sie **Hinzufügen** aus, und klicken Sie dann auf **Fertig**.
 
 7. Wählen Sie **Speichern** aus, um die Benutzer der Rollengruppe hinzuzufügen. Wählen Sie **Schließen** aus, um die Schritte abzuschließen.
 
@@ -165,7 +165,7 @@ Definieren Sie vor dem Konfigurieren einer Richtlinie die folgenden Einstellunge
     - [Anomalie-Erkennungen](insider-risk-management-settings.md#anomaly-detections)
     - [Erkennung anstößiger Sprache](insider-risk-management-settings.md#offensive-language-detections)
     - [Warnstufe auf dem Alert-Volume](insider-risk-management-settings.md#alert-volume)
-    - [Microsoft 365 Defender Advanced Threat Protection-Warnungsstatus](insider-risk-management-settings.md#microsoft-defender-advanced-threat-protection-preview)
+    - [Microsoft Defender für Endpoint-Warnungsstatus](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview)
     - [Domäneneinstellungen](insider-risk-management-settings.md#domains-preview)
 6. Aktivieren Sie auf der Seite **Warnungen exportieren** den Export von Warnungsinformationen für Insider Risiken mithilfe der Office 365-Verwaltungs-APIs, falls erforderlich.
 7. Erstellen Sie auf der Seite **Priority User** Groups eine Prioritäts Benutzergruppe, und fügen Sie Benutzer hinzu, wenn Sie nicht in **Schritt 3** erstellt wurden.
@@ -194,9 +194,9 @@ Richtlinien für das Insider-Risikomanagement umfassen die zugewiesenen Benutzer
 4. Wählen Sie **weiter** aus, um fortzufahren.
 5. Wählen Sie auf der Seite **Benutzer** die Option **Benutzer oder Gruppe hinzufügen** oder Benutzer **Gruppen mit Priorität auswählen** aus, um festzulegen, welche Benutzer oder Prioritäts Benutzergruppen in der Richtlinie enthalten sind, je nachdem, welche Richtlinienvorlage Sie ausgewählt haben. Aktivieren Sie gegebenenfalls **alle Benutzer und e-Mail-aktivierten Gruppen** (sofern Sie keine benutzerbasierte Prioritäts Vorlage ausgewählt haben). Wählen Sie **weiter** aus, um fortzufahren.
 6. Auf der Seite geben Sie an, **welche Inhalte priorisiert werden sollen (optional)** , können Sie die Quellen zuweisen, um höhere Risikobewertungen zu priorisieren. Einige Aktivitäten generieren jedoch nur dann eine Warnung, wenn der zugehörige Inhalt integrierte oder benutzerdefinierte vertrauliche Informationstypen enthält oder als Priorität auf dieser Seite angegeben wurde:
-    - **SharePoint-Websites** : Wählen Sie **SharePoint-Website hinzufügen** und die SharePoint-Organisationen aus, die Sie priorisieren möchten. Beispiel: *"group1@contoso.SharePoint.com/Sites/Group1"* .
-    - **Typ vertraulicher Informationen** : Wählen Sie **vertraulichen Infotyp hinzufügen** aus, und wählen Sie die Vertraulichkeits Typen aus, die Sie priorisieren möchten. Beispiel: *"US Bank Account Number"* und *"Kreditkartennummer"* .
-    - **Vertraulichkeits Bezeichnungen** : Wählen Sie **Vertraulichkeits Bezeichnung hinzufügen** aus, und wählen Sie die Beschriftungen aus, die Sie priorisieren möchten. Beispiel: *"vertraulich"* und *"geheim"* .
+    - **SharePoint-Websites** : Wählen Sie **SharePoint-Website hinzufügen** und die SharePoint-Organisationen aus, die Sie priorisieren möchten. Beispiel: *"group1@contoso.SharePoint.com/Sites/Group1"*.
+    - **Typ vertraulicher Informationen** : Wählen Sie **vertraulichen Infotyp hinzufügen** aus, und wählen Sie die Vertraulichkeits Typen aus, die Sie priorisieren möchten. Beispiel: *"US Bank Account Number"* und *"Kreditkartennummer"*.
+    - **Vertraulichkeits Bezeichnungen** : Wählen Sie **Vertraulichkeits Bezeichnung hinzufügen** aus, und wählen Sie die Beschriftungen aus, die Sie priorisieren möchten. Beispiel: *"vertraulich"* und *"geheim"*.
 7. Wählen Sie **weiter** aus, um fortzufahren.
 8. Auf der Seite **Richtlinien Indikatoren auswählen** werden die [Indikatoren](insider-risk-management-settings.md#indicators) angezeigt, die Sie auf der Seite Indikatoren für **Insider Risiko Einstellungen** als verfügbar definiert haben  >  **Indicators** . Wenn Sie zu Beginn des Assistenten eine Vorlage *Datenverlust* ausgewählt haben, müssen Sie in der Dropdownliste **DLP-Richtlinie** eine DLP-Richtlinie auswählen, um auslösende Indikatoren für die Richtlinie zu aktivieren. Wählen Sie die Indikatoren aus, die Sie auf die Richtlinie anwenden möchten. Wenn Sie die Standardeinstellungen für den Richtlinien Schwellenwert für diese Indikatoren nicht verwenden möchten, deaktivieren Sie die **von Microsoft empfohlenen Standardschwellen** Werte und geben Sie die Schwellenwerte für jedes ausgewählte Kennzeichen ein. Wenn Sie mindestens ein *Office* -oder Gerätekennzeichen ausgewählt haben, wählen Sie je nach Bedarf das **Risiko Bewertungs** *Modul* aus. Risiko Bewertungs Verstärker gelten nur für ausgewählte Indikatoren.
 

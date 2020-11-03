@@ -1,6 +1,6 @@
 ---
-title: Häufige Microsoft Threat Protection-Rest-API-Fehlercodes
-description: Erfahren Sie mehr über die allgemeinen Microsoft Threat Protection-Rest-API-Fehlercodes
+title: Häufige Fehlercodes für Microsoft 365 Defender-Rest-API
+description: Informationen zu den allgemeinen Fehlercodes von Microsoft 365 Defender-Rest-API
 keywords: API, Fehler, Codes, häufige Fehler, MTP, API-Fehlercodes
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,25 +19,25 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 81375b919b52ff895e5ec7014feb747b1a0eae65
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: aceb376662f2b27397aa2332f8929a57d5a3ee03
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201339"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846008"
 ---
-# <a name="common-microsoft-threat-protection-rest-api-error-codes"></a>Häufige Microsoft Threat Protection-Rest-API-Fehlercodes
+# <a name="common-microsoft-365-defender-rest-api-error-codes"></a>Häufige Fehlercodes für Microsoft 365 Defender-Rest-API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Gilt für:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >Einige Informationen beziehen sich auf Vorabversionen von Produkten, die vor der kommerziellen Veröffentlichung noch erheblich geändert werden können. Microsoft übernimmt mit diesen Informationen keinerlei Gewährleistung, sei sie ausdrücklich oder konkludent.
 
-Die in der folgenden Tabelle aufgelisteten Fehlercodes werden möglicherweise von einem Vorgang für eine der Microsoft Threat Protection-APIs zurückgegeben.
+Die in der folgenden Tabelle aufgelisteten Fehlercodes werden möglicherweise von einem Vorgang in einer der Microsoft 365 Defender-APIs zurückgegeben.
 
 Jede Fehlerantwort enthält eine Fehlermeldung, die zur Lösung des Problems beitragen kann.
 

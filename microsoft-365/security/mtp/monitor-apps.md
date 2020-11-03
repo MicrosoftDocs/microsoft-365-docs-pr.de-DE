@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8787bf212db342c84f13f8522e8853310e00c0ce
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: dcb7997c8c248c2b4e7d16902b6ebdd7756ccd0b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429407"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846628"
 ---
 # <a name="app-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>App-Überwachung und Berichterstellung im Microsoft 365 Security Center
 
@@ -65,10 +65,10 @@ Die Risikofaktoren beginnen mit allgemeinen Informationen, beispielsweise mit de
 
 ## <a name="monitor-health-for-infrastructure-workloads"></a>Überwachen der Integrität von Infrastruktur Auslastungen
 
-**Infrastruktur Integrität** zeigt Integritätsstatus Warnungen für Infrastruktur Arbeitslasten im Azure Security Center an.
+**Infrastruktur Integrität** zeigt Integritätsstatus Warnungen für Infrastruktur Arbeitslasten in Azure Defender * an.
 
-Azure Security Center bietet einheitliches Sicherheitsmanagement und fortschrittlichen Schutz vor Bedrohungen in lokalen und Cloud-Arbeitsauslastungen. Sie können Sicherheitsdaten aus unterschiedlichen Quellen, einschließlich Firewalls und anderen Partnerlösungen, sammeln, durchsuchen und analysieren.
+Azure Defender * bietet einheitliches Sicherheitsmanagement und Defender für Office 365 über lokale und Cloud-Arbeitslasten hinweg. Sie können Sicherheitsdaten aus unterschiedlichen Quellen, einschließlich Firewalls und anderen Partnerlösungen, sammeln, durchsuchen und analysieren.
 
-Weitere Informationen finden Sie unter [Azure Security Center-Dokumentation](https://docs.microsoft.com/azure/security-center/).
+Weitere Informationen finden Sie unter [Azure Defender *-Dokumentation](https://docs.microsoft.com/azure/security-center/).
 
 ![Infrastruktur-Integritäts Karte](../../media/infrastructure-health.png)
