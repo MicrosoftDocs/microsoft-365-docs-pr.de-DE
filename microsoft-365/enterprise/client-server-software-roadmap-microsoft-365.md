@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Die Roadmap zum Einrichten der Client-und Server Software für Microsoft 365.
-ms.openlocfilehash: 94412ca4a7665807368ae33a0e50dc928445c8b7
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: d51aead9a50df3acace94526824cfa08fc083a01
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48655959"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847154"
 ---
 # <a name="client-and-server-software-roadmap-for-microsoft-365"></a>Roadmap für Client-und Server Software für Microsoft 365
 
@@ -89,7 +89,7 @@ In vielen großen und kleinen Organisationen wird vielleicht eine Kombination ä
 - Sollten mit den neuesten Sicherheitsupdates und Supportfixes aktualisiert werden. In einigen Fällen werden diese Updates monatlich veröffentlicht.
 - Sind nicht optimal geeignet, um die Cloudtechnologien von Microsoft auszuschöpfen und Sie bei der digitalen Transformation Ihres Unternehmens zu unterstützen.
 - Umfassen keine neuen Produktivitätsanwendungen, z. B. Microsoft Teams.
-- Umfassen nicht die neuesten Sicherheitsfeatures wie Exchange Advanced Threat Protection.
+- Schließen Sie nicht die neuesten Sicherheitsfeatures wie Exchange und Defender für Office 365 ein.
 
 Microsoft 365 für Unternehmen enthält Cloud-basierte Versionen von Office Server-Diensten, die einige der gleichen Tools wie lokale Versionen von Office Server-Software verwenden, wie Webbrowser und Outlook-Client. Die Sicherheit dieser Dienste wird kontinuierlich aktualisiert, ohne dass die IT-Abteilung eingreifen muss, wodurch Sie die Zeit einsparen, die andernfalls zum Verwalten und Aktualisieren lokaler Server erforderlich ist. Diese Dienste verfügen zudem über neue Features und Erweiterungen, die in der Office-Serversoftware nicht vorhanden sind.
 

@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 15a62da1222fc55d50dfd4c3b2f0e7ba4a0554eb
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: 5698e2a88adf3d2bae84a82e0e001132293e36be
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778617"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847716"
 ---
 # <a name="security-operations-in-microsoft-managed-desktop"></a>Sicherheitsvorgänge in Microsoft Managed Desktop
 
@@ -41,4 +41,4 @@ Das SoC stellt diese Dienste bereit:
     - Wiederherstellung
     - Post-Incident-Aktivität
 - Microsoft Managed Desktop-Kunden sind berechtigt, sich beim Microsoft Threat Experts Service anzumelden. Das SoC kontaktiert mit diesem Dienst, um die komplexen Bedrohungen in Ihrer Organisation besser zu verstehen, einschließlich Warnungs Abfragen, potenziell gefährdete Geräte, die Ursache einer verdächtigen Netzwerkverbindung und zusätzliche Bedrohungsinformationen in Bezug auf fortlaufende fortgeschrittene andauernde Bedrohungs Kampagnen. Weitere Informationen finden Sie unter [Microsoft Threat Experts](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts).
-- Der Prozess zur Bedrohungs-und Risikoverwaltung von SoC verwendet einige der Dienste von Microsoft, um Empfehlungen für Ihre Organisation zum Schutz vor Bedrohungen zu informieren. Das SoC verwendet Daten aus Ihrem Microsoft Defender Advanced Threat Protection-Sicherheits Center und aus relevanten Schwachstellen-Datenquellen innerhalb und außerhalb von Microsoft, um Sicherheitsanfälligkeiten und Fehlkonfigurationen zu ermitteln und umsetzbare Berichte bereitzustellen.
+- Der Prozess zur Bedrohungs-und Risikoverwaltung von SoC verwendet einige der Dienste von Microsoft, um Empfehlungen für Ihre Organisation zum Schutz vor Bedrohungen zu informieren. Das SoC verwendet Daten von Ihrem Microsoft Defender für das Endpoint Security Center und aus relevanten Schwachstellen-Datenquellen innerhalb und außerhalb von Microsoft, um Sicherheitsanfälligkeiten und Fehlkonfigurationen zu ermitteln und umsetzbare Berichte bereitzustellen.

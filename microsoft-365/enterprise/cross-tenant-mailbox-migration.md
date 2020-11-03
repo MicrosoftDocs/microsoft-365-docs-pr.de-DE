@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 06a82fda31e602ed2feb53d00e8839daf801bf7e
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: a9f983cebfbed1482fca7e44b77c200cbd9574ac
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277489"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847118"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Mandantenübergreifende Postfachmigration (Vorschau)
 
@@ -141,9 +141,9 @@ Vorbereiten des Quellmandanten:
 
 7. Eine URL wird in der Remote-PowerShell-Sitzung angezeigt. Kopieren Sie den für Ihre Mandanten Zustimmung angegebenen Link, und fügen Sie ihn in einen Webbrowser ein.
 
-8. Melden Sie sich mit ihren globalen Administratoranmeldeinformationen an. Wenn der folgende Bildschirm angezeigt wird, wählen Sie **akzeptieren**aus.
+8. Melden Sie sich mit ihren globalen Administratoranmeldeinformationen an. Wenn der folgende Bildschirm angezeigt wird, wählen Sie **akzeptieren** aus.
 
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-dialog.png" alt-text="Dialogfeld "Berechtigungen akzeptieren"":::
+    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-dialog.png" alt-text="Dialogfeld &quot;Berechtigungen akzeptieren&quot;":::
     
 9. Wechseln Sie zurück zur PowerShell-Remote Sitzung, und drücken Sie die EINGABETASTE, um fortzufahren.
 
@@ -162,7 +162,7 @@ Das Setup des Ziel Administrators ist nun abgeschlossen!
 
 1.  Melden Sie sich bei Ihrem Postfach als vom Zieladministrator während des Setups angegebene-ResourceTenantAdminEmail an. Suchen Sie nach der e-Mail-Einladung des Zielmandanten, und wählen Sie dann die Schaltfläche **Erste Schritte** aus.
 
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/invited-by-target-tenant.png" alt-text="Dialogfeld "Sie wurden eingeladen"":::
+    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/invited-by-target-tenant.png" alt-text="Dialogfeld &quot;Sie wurden eingeladen&quot;":::
 
 2. Wählen Sie **annehmen** aus, um die Einladung zu akzeptieren.
 
@@ -533,7 +533,7 @@ NT AUTHORITY\SELF                                {FullAccess, ReadPermission}   
 
 - **Problem: Cloud-Mailbenutzer mit nicht im Besitz befindlichen SMTP-proxyAddress blockieren Mrs Moves background.** Beim Erstellen von MailUser-Objekten des Target-Mandanten müssen Sie sicherstellen, dass alle SMTP-Proxyadressen zur Zielmandanten Organisation gehören. Wenn ein SMTP-proxyAddress auf dem Ziel-e-Mail-Benutzer vorhanden ist, der nicht zum lokalen Mandanten gehört, wird die Konvertierung des MailUser in das Postfach verhindert. Dies ist darauf zurückzuführen, dass Postfachobjekte nur e-Mails von Domänen senden können, für die der Mandant autorisierend ist (vom Mandanten beanspruchte Domänen): 
 - 
-   - Wenn Sie Benutzer lokal mit Azure AD Connect synchronisieren, stellen Sie lokale MailUser-Objekte bereit, wobei ExternalEmailAddress auf den Quellmandanten zeigt, in dem das Postfach vorhanden ist (Laran@Contoso \. onmicrosoft.com), und das PrimarySmtpAddress als Domäne stempelt, die sich im Zielmandanten befindet (Lara. Newton@Northwind \. com). Diese Werte werden mit dem Mandanten synchronisiert, und ein geeigneter e-Mail-Benutzer ist für die Migration verfügbar. Ein Beispielobjekt wird hier gezeigt.
+   - Wenn Sie Benutzer lokal mit Azure AD Connect synchronisieren, stellen Sie lokale MailUser-Objekte bereit, wobei ExternalEmailAddress auf den Quellmandanten zeigt, in dem das Postfach vorhanden ist (Laran@Contoso \. onmicrosoft.com), und das PrimarySmtpAddress als Domäne stempelt, die sich im Zielmandanten (Lara.Newton@Northwind \. com) befindet. Diese Werte werden mit dem Mandanten synchronisiert, und ein geeigneter e-Mail-Benutzer ist für die Migration verfügbar. Ein Beispielobjekt wird hier gezeigt.
      ```powershell
      target/AADSynced user] PS C> Get-MailUser laran | select ExternalEmailAddress, EmailAddresses   
      ExternalEmailAddress               EmailAddresses 
@@ -644,8 +644,8 @@ NT AUTHORITY\SELF                                {FullAccess, ReadPermission}   
    | Microsoft Business Center                         |
    | Microsoft MyAnalytics (Vollversion)                      |
    | Office 365 Advanced eDiscovery                    |
-   | Office 365 Advanced Threat Protection (Plan 1)    |
-   | Office 365 Advanced Threat Protection (Plan 2)    |
+   | Microsoft Defender für Office 365 (Plan 1)    |
+   | Microsoft Defender für Office 365 (Plan 2)    |
    | Office 365 Privileged Access Management           |
    | Outlook Customer Manager                          |
    | Premium-Verschlüsselung in Office 365                  |

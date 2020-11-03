@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Verhindern von Verletzungen personenbezogener Daten mit Identitäts-, Geräte-und Bedrohungsschutz Diensten von Microsoft 365.
-ms.openlocfilehash: e084036860f5d15a14ca6c75305583b86a5fc53f
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 321b60efbdabe62b14502df4a16dd2dcec4b9cef
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398691"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847178"
 ---
 # <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>Verwenden von Identitäts-, Geräte-und Bedrohungsschutz für die Datenschutzverordnung
 
@@ -70,12 +70,12 @@ Verwenden Sie [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-3
 - Erfordern, dass Mobile Geräte nach Inaktivität sperren.
 - Erfordern, dass Mobile Geräte bei mehreren Anmeldefehlern gelöscht werden.
 
-Verwenden Sie [Exchange Online Schutz und Office 365 Advanced Threat Protection (ATP)](../security/office-365-security/office-365-atp.md) für die Kategorie **Protect Against Threats** , mit der Sie folgende Schritte durchführen können:
+Verwenden Sie [Exchange Online Schutz und Microsoft Defender für Office 365](../security/office-365-security/office-365-atp.md) für die Kategorie **Protect Against Threats** , mit der Sie folgende Möglichkeiten haben:
 
 - Aktivieren Sie die Sender Authentifizierung (SPF, DMARC und DKIM).
-- Richten Sie Office 365 Anti-Phishing-Richtlinien für Advanced Threat Protection (ATP) ein.
-- Implementieren Sie ATP-sichere Anlagen.
-- Implementieren Sie ATP-sichere Links.
+- Richten Sie Microsoft Defender für Office 365 Anti-Phishing-Richtlinien ein.
+- Implementieren Sie sichere Anlagen.
+- Implementieren sicherer Links.
 - Implementieren von Malware Erkennungs-und-Antwort Richtlinien
 - Implementieren Sie ausgehende und eingehende Spam Richtlinien.
 
@@ -83,6 +83,6 @@ Verwenden Sie [Exchange Online Schutz und Office 365 Advanced Threat Protection 
 
 - [Allgemeine Identitäts- und Gerätezugriffsrichtlinien](../security/office-365-security/identity-access-policies.md)
 - [Schutz vor Bedrohungen in Office 365](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58)
-- [Sichere Anlagen in ATP](../security/office-365-security/atp-safe-attachments.md)
-- [ATP-sichere Links](../security/office-365-security/atp-safe-links.md)
-- [Sichere Dokumente in ATP](../security/office-365-security/safe-docs.md)
+- [Sichere Anlagen](../security/office-365-security/atp-safe-attachments.md)
+- [Sichere Links](../security/office-365-security/atp-safe-links.md)
+- [Sichere Dokumente](../security/office-365-security/safe-docs.md)

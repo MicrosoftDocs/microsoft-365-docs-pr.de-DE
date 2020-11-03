@@ -1,5 +1,5 @@
 ---
-title: Behandeln von Fehlern in Advanced Hunting for Microsoft Threat Protection
+title: Behandeln von Fehlern in der erweiterten Suche für Microsoft 365 Defender
 description: Verstehen von Fehlern, die bei der erweiterten Suche angezeigt werden
 keywords: Erweiterte Suche, Bedrohungs Suche, Cyber-Bedrohungs Suche, Microsoft Threat Protection, Microsoft 365, MTP, m365, Suche, Abfrage, Telemetrie, Schema, Kusto, Timeout, Ressourcen, Fehler, unbekannter Fehler, Beschränkungen, Kontingent, Parameter, Zuweisung
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 8b9c46e312d28c7a08efbfa74f96dc33b90fee0a
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a5379db66034ecfe537f7d9effdd83f6c41bfd58
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636893"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846892"
 ---
 # <a name="handle-advanced-hunting-errors"></a>Behandeln von erweiterten Jagd Fehlern
 
@@ -45,6 +45,6 @@ Erweiterte Suche zeigt Fehler an, die auf Syntaxfehler und bei Abfragen mit [vor
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Bewährte Methoden für die erweiterte Suche](advanced-hunting-best-practices.md)
-- [Kontingente und Nutzungsparameter](advanced-hunting-limits.md)
+- [Kontingente und Verwendungsparameter](advanced-hunting-limits.md)
 - [Grundlegendes zum Schema](advanced-hunting-schema-tables.md)
 - [Kusto-Abfragesprache (Übersicht)](https://docs.microsoft.com/azure/data-explorer/kusto/query/)

@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Hier finden Sie Informationen zur grundlegenden Struktur der lokalen Contoso-IT-Infrastruktur und dazu, wie die geschäftlichen Anforderungen von Microsoft 365 für Unternehmen erfüllt werden.
-ms.openlocfilehash: 767374097efa116f116cff6f6ddf96d075eb71ed
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 0a837a457869fc579d94ee5e5f9bb114cb93f641
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754586"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847130"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Contoso-IT-Infrastruktur und geschäftliche Anforderungen
 
@@ -121,10 +121,10 @@ Die IT-Abteilung von Contoso hat vor der Bereitstellung die folgende Zuordnung d
 |  | Mehr Produktivität für Telearbeiter und Mobilmitarbeiter | Microsoft 365-Arbeitslasten und cloudbasierte Daten |
 |  | Mehr Kreativität und Innovation | Windows Ink, Cortana at Work, PowerPoint |
 | Sicherheit |  |  |
-|  | Identitäts- und Zugriffsverwaltung | Dedizierte globale Administratorkonten mit Azure Multi-Factor Authentication (MFA) und Azure Active Directory Privileged Identity Management (PIM) <BR> Mehrstufige Authentifizierung (MFA) für alle Benutzerkonten <BR> Bedingter Zugriff <BR> Windows Hello <BR> Windows Credential Guard |
-|  | Bedrohungsschutz | Advanced Threat Analytics <BR> Windows Defender <BR> Advanced Threat Protection <BR> Office 365 Advanced Threat Protection <BR> Untersuchung und Antwort von Microsoft 365 Threat <BR> |
+|  | Identitäts- und Zugriffsverwaltung | Dedizierte globale Administratorkonten mit Azure Multi-Factor Authentication (MFA) und Azure AD Privileged Identity Management (PIM) <BR> Mehrstufige Authentifizierung (MFA) für alle Benutzerkonten <BR> Bedingter Zugriff <BR> Windows Hello <BR> Windows Credential Guard |
+|  | Bedrohungsschutz | Advanced Threat Analytics <BR> Windows Defender <BR> Verteidiger für Office 365 <BR> Microsoft Defender für Office 365 <BR> Untersuchung und Antwort von Microsoft 365 Threat <BR> |
 |  | Schutz von Daten | Azure Information Protection <BR> Verhinderung von Datenverlust (Data Loss Prevention, DLP) <BR> Windows Information Protection (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
-|  | Sicherheitsverwaltung | Azure Security Center  <BR> Windows Defender Security Center |
+|  | Sicherheitsverwaltung | Azure Defender *  <BR> Windows Defender Security Center |
 | Remote- und Mobilzugriff und Geschäftspartner |  |  |
 |  | Mehr Sicherheit für Telearbeiter und Mobilmitarbeiter | Microsoft Intune |
 |  | Verkleinern der Remotezugriffsinfrastruktur für Mitarbeiter | Microsoft 365-Arbeitslasten und cloudbasierte Daten |

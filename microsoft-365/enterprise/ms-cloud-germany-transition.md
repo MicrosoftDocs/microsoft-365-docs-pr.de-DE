@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Zusammenfassung: Die Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen verstehen.'
-ms.openlocfilehash: a77dc43c4c30992d2e50aad94878f9269573db52
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
-ms.translationtype: HT
+ms.openlocfilehash: 23ccc30bab5d1045e4716cd637899e20362fc597
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327117"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846940"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Migration von Microsoft Cloud Deutschland zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen
 
@@ -57,7 +57,7 @@ Die folgenden Dienste werden im Rahmen der Migration durch Microsoft migriert:
 
 \*\*Während der Migration von Microsoft Cloud Deutschland in die deutschen Rechenzentrumsregionen werden bestehende Skype for Business Online-Kunden auf Microsoft Teams umgestellt. Weitere Informationen finden Sie unter [Erste Schritte mit dem Microsoft Teams-Upgrade](https://aka.ms/SkypeToTeams-Home).
 
-\*\*\*Die Voraussetzungen und Auswirkungen der Migration für diese Dienste sind im Artikel [Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn) beschrieben.
+\*\*\*Die Voraussetzungen und Auswirkungen der Migration für diese Dienste sind im Artikel [Dynamics 365 Customer Engagement](https://aka.ms/d365ceoptin) beschrieben.
 
 Office 365 Video wird am 1. März 2021 eingestellt. Wenn Sie Ihren Office 365-Mandanten in die Regionen der neuen deutschen Rechenzentren migrieren, wird Office 365 Video nach Abschluss der SharePoint Online-Migration nicht unterstützt. Klicken Sie [hier](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline), um mehr zu erfahren.
 
@@ -133,7 +133,7 @@ Die folgenden 15 Dienste sind im Clouddienstangebot von Microsoft Cloud Deutschl
 3. Gruppen (moderne Gruppen)
 4. Delve-Profil
 5. Exchange Online Protection
-6. Advanced Threat Protection, ATP
+6. Verteidiger für Office 365
 7. Advanced eDiscovery
 8. Advanced Data Governance
 9. SharePoint Online
@@ -153,7 +153,7 @@ Derzeit sind 29 Dienste als Bestandteil von Office 365-Diensten in den neuen deu
 5. MyAnalytics
 6. Workplace Analytics
 7. Exchange Online Protection
-8. Advanced Threat Protection, ATP
+8. Verteidiger für Office 365
 9. Advanced eDiscovery
 10. Advanced Security Management
 11. Verwaltung von Informationsrechten
@@ -188,7 +188,7 @@ Wenn Sie nur Azure-Kunde sind, können Sie bereits mit der [Migration](https://d
 
 **Dynamics 365 und Power BI**
 
-Melden Sie sich noch heute für die von Microsoft gesteuerte Migration für [Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn) und [Power BI](https://aka.ms/pbioptin) an. Sobald wir bereit sind, Ihre Migration zu starten, werden wir Sie darüber über das Nachrichtencenter im Microsoft 365 Admin Center informieren.
+Melden Sie sich noch heute für die von Microsoft gesteuerte Migration für [Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn) und [Power BI](https://aka.ms/PBIOptIn) an. Sobald wir bereit sind, Ihre Migration zu starten, werden wir Sie darüber über das Nachrichtencenter im Microsoft 365 Admin Center informieren.
 
 ### <a name="will-the-price-change-for-the-office-365-services-that-i-use"></a>Werden sich die Preise für die von mir verwendeten Office 365-Dienste ändern?
 
@@ -221,7 +221,7 @@ Während der Migration von Microsoft Cloud Deutschland zu den Office 365-Dienste
 | Office 365 A1 für Lehrpersonal\_DE (STANDARDWOFFPACK\_FACULTY\_DE) | Office 365 A1 für Lehrpersonal (STANDARDWOFFPACK\_FACULTY) |
 | Office 365 A1 für Schüler und Studenten\_DE (STANDARDWOFFPACK\_STUDENT\_DE) | Office 365 A1 für Schüler und Studenten (STANDARDWOFFPACK\_STUDENT) |
 | Office 365 Advanced Compliance\_DE (EQUIVIO\_ANALYTICS\_DE) | Microsoft 365 E5 Compliance (INFORMATION\_PROTECTION\_COMPLIANCE) |
-| Office 365 Advanced Threat Protection (Plan 1)\_DE (ATP\_ENTERPRISE\_DE) | Office 365 Advanced Threat Protection (Plan 1) (ATP\_ENTERPRISE) |
+|Microsoft Defender für Office 365 (Plan 1) \_ de (ATP \_ Enterprise \_ de) |Microsoft Defender für Office 365 (Plan 1) (ATP \_ Enterprise) |
 | Office 365 Business Essentials\_DE (O365\_BUSINESS\_ESSENTIALS\_DE) | Microsoft 365 Business Basic (O365\_BUSINESS\_ESSENTIALS) |
 | Office 365 Business Premium\_DE (O365\_BUSINESS\_PREMIUM\_DE) | Microsoft 365 Business Standard (O365\_BUSINESS\_PREMIUM) |
 | Office 365 Business\_DE (O365\_BUSINESS\_DE) | Microsoft 365 Apps for Business (O365\_BUSINESS) |
@@ -272,7 +272,7 @@ In Kürze werden weitere Informationen zur Migration in die neuen deutschen Rech
 
 - [Hilfe zur Microsoft Cloud Deutschland-Migration Assistance](https://aka.ms/germanymigrateassist)
 - [So können Sie sich für die Migration anmelden](https://aka.ms/office365germanymoveoptin)
-- [Informationen zum Dynamics 365-Migrationsprogramm](https://aka.ms/D365ceOptIn)
+- [Informationen zum Dynamics 365-Migrationsprogramm](https://aka.ms/d365ceoptin)
 - [Informationen zum Power BI-Migrationsprogramm](https://aka.ms/pbioptin)
 - [URLs und IP-Adressbereiche für Office 365](https://aka.ms/o365endpoints)
 - [Erste Schritte mit dem Upgrade von Microsoft Teams](https://aka.ms/SkypeToTeams-Home)

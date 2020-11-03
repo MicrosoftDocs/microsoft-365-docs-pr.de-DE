@@ -1,5 +1,5 @@
 ---
-title: Verwalten von Vorfällen in Microsoft-Bedrohungsschutz
+title: Verwalten von Vorfällen in Microsoft 365 Defender
 description: Erfahren Sie, wie Sie einen Status zuweisen und aktualisieren können,
 keywords: Vorfall, Vorfälle, Alert, korrelierte Alerts, zuweisen, aktualisieren, Status, verwalten, Klassifizierung, Microsoft, 365, m365
 search.product: eADQiWindows 10XVcnh
@@ -21,24 +21,24 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c599343233e7e29589bc4e3d1cda01da505b16f1
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 29f55d99dd3acd26ae305c03b533e2ca9bb61f2a
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430561"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846652"
 ---
-# <a name="manage-incidents-in-microsoft-threat-protection"></a>Verwalten von Vorfällen in Microsoft-Bedrohungsschutz
+# <a name="manage-incidents-in-microsoft-365-defender"></a>Verwalten von Vorfällen in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Gilt für:**
-- Microsoft-Bedrohungsschutz
+- Microsoft 365 Defender
 
 
 
-Das Verwalten von Vorfällen ist entscheidend, um sicherzustellen, dass Bedrohungen eingedämmt und bearbeitet werden. Im Microsoft-Bedrohungsschutz haben Sie Zugriff auf die Verwaltung von Vorfällen auf Geräten, Benutzern und in Postfächern. 
+Das Verwalten von Vorfällen ist entscheidend, um sicherzustellen, dass Bedrohungen eingedämmt und bearbeitet werden. In Microsoft 365 Defender haben Sie Zugriff auf die Verwaltung von Vorfällen auf Geräten, Benutzern und Postfächern. 
 
 
 Sie können Vorfälle verwalten, indem Sie einen Vorfall aus der Warteschlange **Vorfälle** auswählen. 
@@ -64,7 +64,7 @@ Falls ein Vorfall noch nicht zugewiesen wurde, können Sie **Mir zuweisen** ausw
 
 ## <a name="set-status-and-classification"></a>Festlegen des Status und der Klassifizierung
 ### <a name="incident-status"></a>Status des Vorfalls
-Sie können Ereignisse kategorisieren (z.B. als **aktive**oder **aufgelöste**), indem Sie deren Status ändern, während ihre Untersuchung voranschreitet. Auf diese Weise können Sie organisieren und verwalten, wie Ihr Team auf Vorfälle reagiert.
+Sie können Ereignisse kategorisieren (z.B. als **aktive** oder **aufgelöste** ), indem Sie deren Status ändern, während ihre Untersuchung voranschreitet. Auf diese Weise können Sie organisieren und verwalten, wie Ihr Team auf Vorfälle reagiert.
 
 So kann Ihr SOC-Analyst beispielsweise die dringlichen **aktiven** Vorfälle für den Tag überprüfen und sich entscheiden, sie sich selbst zur Untersuchung zuzuweisen.
 

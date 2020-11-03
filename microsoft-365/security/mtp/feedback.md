@@ -1,6 +1,6 @@
 ---
-title: Bereitstellen von Feedback zu Microsoft Threat Protection
-description: Bereitstellen von Produktfeedback zu Microsoft Threat Protection
+title: Geben Sie Feedback zu Microsoft 365 Defender
+description: Bereitstellen von Produktfeedback zu Microsoft 365 Defender
 keywords: Feedback, m365-Sicherheit, Sicherheit, 365, Funktionen
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,24 +19,24 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 832442ce392882951d0b960d5f36a864ba59684b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 56f8bd0ff303ff38f8b3a577f6bc7aa58f21a745
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199405"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846729"
 ---
-# <a name="provide-feedback-on-microsoft-threat-protection"></a>Bereitstellen von Feedback zu Microsoft Threat Protection
+# <a name="provide-feedback-on-microsoft-365-defender"></a>Geben Sie Feedback zu Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Gilt für:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 Ihr Feedback hilft uns, Ihre Umgebung vor fortgeschrittenen Angriffen besser zu schützen. Teilen Sie Ihre Erfahrungen, Impressionen und Anforderungen, indem Sie Feedback bereitstellen.
 
-1. Wählen Sie in einem beliebigen Teil des Portals **Feedback geben**aus. 
+1. Wählen Sie in einem beliebigen Teil des Portals **Feedback geben** aus. 
 
     ![Schaltfläche "Bild der Feedback"](../../media/feedback.png)
 

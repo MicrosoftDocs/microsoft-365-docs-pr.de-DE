@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 356548c3115aacce8c76d7fbc552811c168750ed
-ms.sourcegitcommit: e8b3855302fc34d09b6df6c737033a2f326d6eee
+ms.openlocfilehash: bfe63397d194567a7d71de703363083d2fd4fe75
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48770073"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847608"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
@@ -32,7 +32,7 @@ ms.locfileid: "48770073"
 
 
 **Gilt für:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 
 
@@ -43,17 +43,17 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | Spaltenname | Datentyp | Beschreibung |
 |-------------|-----------|-------------|
 | `DeviceId` | string | Eindeutiger Bezeichner für das Gerät im Dienst |
-| `DeviceName` | Zeichenfolge | Vollqualifizierter Domänenname (FQDN) des Geräts |
-| `OSPlatform` | Zeichenfolge | Plattform des auf dem Gerät ausgeführten Betriebssystems. Gibt spezifische Betriebssysteme an, einschließlich Variationen innerhalb der gleichen Familie, wie z. B. Windows 10 und Windows 7.|
+| `DeviceName` | string | Vollqualifizierter Domänenname (FQDN) des Geräts |
+| `OSPlatform` | string | Plattform des auf dem Gerät ausgeführten Betriebssystems. Gibt spezifische Betriebssysteme an, einschließlich Variationen innerhalb der gleichen Familie, wie z. B. Windows 10 und Windows 7.|
 | `Timestamp` | Datum/Uhrzeit | Datum und Uhrzeit, wann der Datensatz generiert wurde |
 | `ConfigurationId` | string | Eindeutiger Bezeichner für eine bestimmte Konfiguration |
 | `ConfigurationCategory` | string | Kategorie oder Gruppe, zu der die Konfiguration gehört: Anwendung, Betriebssystem, Netzwerk, Konten, Sicherheitskontrollen |
 | `ConfigurationSubcategory` | string | Unterkategorie oder Untergruppe, zu der die Konfiguration gehört. In vielen Fällen beschreibt dies bestimmte Funktionen oder Features. |
 | `ConfigurationImpact` | string | Bewertung der Auswirkungen der Konfiguration auf die Gesamtkonfigurationsbewertung (1-10) |
 | `IsCompliant` | Boolescher Wert | Gibt an, ob die Konfiguration oder Richtlinie ordnungsgemäß konfiguriert ist |
-| `IsApplicable` | boolean | Gibt an, ob die Konfiguration oder Richtlinie auf das Gerät angewendet wird. |
-| `Context` | Zeichenfolge | Zusätzliche Kontextinformationen zur Konfiguration oder Richtlinie |
-| `IsExpectedUserImpactCompliant` | boolean | Gibt an, ob Benutzer Auswirkungen haben, wenn die Konfiguration oder Richtlinie angewendet wird. |
+| `IsApplicable` | Boolescher Wert | Gibt an, ob die Konfiguration oder Richtlinie auf das Gerät angewendet wird. |
+| `Context` | string | Zusätzliche Kontextinformationen zur Konfiguration oder Richtlinie |
+| `IsExpectedUserImpactCompliant` | Boolescher Wert | Gibt an, ob Benutzer Auswirkungen haben, wenn die Konfiguration oder Richtlinie angewendet wird. |
 
 ## <a name="related-topics"></a>Verwandte Themen
 

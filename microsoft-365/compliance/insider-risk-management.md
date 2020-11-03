@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 289f0763d6a7e887946a5672fde5341f79f96855
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+ms.openlocfilehash: 82a7d1c9eec13d87fa45b12b072e9712ccd267c2
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816860"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847811"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Insider Risikomanagement in Microsoft 365
 
@@ -146,7 +146,7 @@ Die Kommunikation zwischen Benutzern ist häufig eine Quelle für unbeabsichtigt
 
 ## <a name="intentional-or-unintentional-security-policy-violations-preview"></a>Vorsätzliche oder unbeabsichtigte Sicherheitsrichtlinienverletzungen (Vorschau)
 
-Benutzer verfügen in der Regel über ein hohes Maß an Kontrolle, wenn Sie Ihre Geräte im modernen Arbeitsplatz verwalten. Dies umfasst möglicherweise Berechtigungen zum Installieren oder Deinstallieren von Anwendungen, die für die Erfüllung ihrer Aufgaben erforderlich sind, oder zur vorübergehenden Deaktivierung von Geräte Sicherheitsfeatures. Unabhängig davon, ob diese Aktivität versehentlich, versehentlich oder böswillig ist, kann dieses Verhalten ein Risiko für Ihre Organisation darstellen, und es ist wichtig, die minimieren zu identifizieren und zu handeln. Um die Identität dieser riskanten Sicherheitsaktivitäten zu unterstützen, werden durch die folgenden Sicherheitsrichtlinien übertretungs Vorlagen für Insider Risk Management Sicherheitsrisiken Indikatoren bewertet und Microsoft Defender Advanced Threat Protection (ATP)-Warnungen verwendet, um Einblicke in sicherheitsbezogene Aktivitäten zu geben:
+Benutzer verfügen in der Regel über ein hohes Maß an Kontrolle, wenn Sie Ihre Geräte im modernen Arbeitsplatz verwalten. Dies umfasst möglicherweise Berechtigungen zum Installieren oder Deinstallieren von Anwendungen, die für die Erfüllung ihrer Aufgaben erforderlich sind, oder zur vorübergehenden Deaktivierung von Geräte Sicherheitsfeatures. Unabhängig davon, ob diese Aktivität versehentlich, versehentlich oder böswillig ist, kann dieses Verhalten ein Risiko für Ihre Organisation darstellen, und es ist wichtig, die minimieren zu identifizieren und zu handeln. Zur Unterstützung der Identität dieser riskanten Sicherheitsaktivitäten werden durch die folgenden Sicherheitsrichtlinien übertretungs Vorlagen für das Insider Risk Management Sicherheitsrisiko Indikatoren bewertet und Microsoft Defender für Endpoint Alerts verwendet, um Einblicke in sicherheitsbezogene Aktivitäten zu geben:
 
 - [Allgemeine Sicherheitsrichtlinienverletzungen (Vorschau)](insider-risk-management-policies.md#general-security-policy-violations-preview)
 - [Sicherheitsrichtlinienverletzungen durch abgehende Benutzer (Vorschau)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)

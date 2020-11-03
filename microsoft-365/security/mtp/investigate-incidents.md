@@ -1,5 +1,5 @@
 ---
-title: Untersuchen Sie Vorfälle in Microsoft Threat Protection
+title: Untersuchen von Vorfällen in Microsoft 365 Defender
 description: Analysieren Sie Vorfälle in Bezug auf Geräte, Nutzer und Postfächer.
 keywords: Vorfall, Vorfälle, Rechner, Geräte, Nutzer, Identitäten, Post, E-Mail, Postfach, Untersuchung, Graph, Beweise
 search.product: eADQiWindows 10XVcnh
@@ -21,33 +21,33 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 7a4e901c016d55115eb79001ff2fc42d2340f8f2
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: a6cdf55b33c91a33675bb4909c0cb08e8561d212
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430597"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846748"
 ---
-# <a name="investigate-incidents-in-microsoft-threat-protection"></a>Untersuchen Sie Vorfälle in Microsoft Threat Protection
+# <a name="investigate-incidents-in-microsoft-365-defender"></a>Untersuchen von Vorfällen in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Gilt für:**
 
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
-Microsoft Threat Protection fasst alle zugehörigen Warnungen, Assets, Untersuchungen und Beweise auf Ihren Geräten, Nutzern und Postfächern zusammen, um Ihnen einen umfassenden Überblick über die gesamte Bandbreite eines Angriffs zu geben.
+Microsoft 365 Defender aggregiert alle zugehörigen Warnungen, Ressourcen, Untersuchungen und Beweise aus ihren Geräten, Benutzern und Postfächern, damit Sie einen umfassenden Einblick in die gesamte Bandbreite eines Angriffs erhalten.
 
 Untersuchen Sie die Warnmeldungen, die Ihr Netzwerk betreffen, verstehen Sie, was sie bedeuten, und stellen Sie die mit den Vorfällen verbundenen Beweise zusammen, damit Sie einen wirksamen Plan zur Behebung erstellen können.
 
 ## <a name="investigate-an-incident"></a>Untersuchung eines Vorfalls
 
-1. Wählen Sie einen Vorfall aus der Vorfallwarteschlange aus. <BR> Dadurch wird ein Seitenbereich geöffnet und eine Vorschau wichtiger Informationen wie Status, Schweregrad, Kategorien und betroffener Entitäten angezeigt.
+1. Wählen Sie einen Vorfall aus der Vorfallwarteschlange aus. <BR> Ein Seitenbereich wird geöffnet und zeigt eine Vorschau wichtiger Informationen wie Status, Schweregrad, Kategorien und betroffene Entitäten an.
 
     ![Bild eines Seitenbereichs](../../media/incident-side-panel.png)
 
-2. Wählen Sie **Vorfallseite öffnen**. <BR> Daraufhin wird die Vorfallseite geöffnet, auf der Sie weitere Informationen zu Vorfällen, Kommentaren und Aktionen sowie Registerkarten (Übersicht, Warnungen, Geräte, Nutzer, Untersuchungen, Beweise) finden.
+2. Wählen Sie **Vorfallseite öffnen**. <BR> Dadurch wird die Vorfall Seite geöffnet, auf der Sie weitere Informationen zu Vorfalldetails, Kommentaren und Aktionen, Registerkarten (Übersicht, Warnungen, Geräte, Benutzer, Untersuchungen, Beweise) finden.
 
 3. Überprüfen Sie die Warnungen, Geräte, Nutzer und anderen Entitäten, die an dem Vorfall beteiligt sind.
 
@@ -57,7 +57,7 @@ Auf der Übersichtsseite erhalten Sie einen Überblick über die wichtigsten Inf
 
 ![Abbildung der Vorfallübersichtsseite](../../media/incidents-overview.png)
 
-Die Angriffskategorien geben Ihnen eine visuelle und numerische Darstellung des Fortschritts des Angriffs gegen die Kill Chain. Wie bei anderen Microsoft-Sicherheitsprodukten ist auch Microsoft Threat Protection auf das Framework [MITRE ATT&CK&trade;](https://attack.mitre.org/) ausgerichtet.
+Die Angriffskategorien bieten eine visuelle und numerische Ansicht, wie fortgeschritten der Angriff für die killkette ist. Wie bei anderen Microsoft-Sicherheitsprodukten wird Microsoft 365 Defender an das [Mitra ATT&CK &trade; ](https://attack.mitre.org/) -Framework angepasst.
 
 Der Bereich enthält eine Liste der am häufigsten betroffenen Assets, die Teil dieses Vorfalls sind. Wenn es spezifische Informationen zu diesem Asset gibt, wie z. B. Risikograd, Untersuchungspriorität sowie eine Kennzeichnung des Assets, wird dies ebenfalls in diesem Abschnitt angezeigt.
 
@@ -69,11 +69,11 @@ Diese Übersicht kann bei der ersten Analyse des Vorfalls hilfreich sein, indem 
 
 ## <a name="alerts"></a>Warnungen
 
-Sie können alle Warnungen im Zusammenhang mit dem Vorfall und andere Informationen dazu anzeigen, z. B. den Schweregrad, die an der Warnung beteiligten Entitäten, die Quelle der Warnungen (Azure ATP, Microsoft Defender ATP, Office 365 ATP) und den Grund warum sie miteinander verknüpft wurden.
+Sie können alle Warnungen im Zusammenhang mit dem Vorfall und andere Informationen zu diesen anzeigen, beispielsweise den Schweregrad, Entitäten, die an der Warnung beteiligt waren, die Quelle der Warnungen (Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender für Office 365) und den Grund, warum Sie miteinander verknüpft wurden.
 
 ![Abbildung der Seite mit Vorfallbenachrichtigungen](../../media/incident-alerts.png)
 
-Standardmäßig sind die Warnungen chronologisch geordnet, damit Sie zunächst sehen können, wie sich der Angriff im Laufe der Zeit abgespielt hat. Wenn Sie auf jede Warnung klicken, gelangen Sie zu der entsprechenden Warnungsseite, auf der Sie eine eingehende Untersuchung dieser Warnung durchführen können.
+Standardmäßig sind die Warnungen chronologisch geordnet, damit Sie zunächst sehen können, wie sich der Angriff im Laufe der Zeit abgespielt hat. Durch Klicken auf jede Warnung gelangen Sie zur entsprechenden Benachrichtigungsseite, auf der Sie eine eingehende Untersuchung dieser Warnung durchführen können.
 
 ## <a name="devices"></a>Geräte
 
@@ -95,21 +95,21 @@ Durch Klicken auf den Nutzernamen gelangen Sie zur Cloud App Security-Seite des 
 
 ## <a name="mailboxes"></a>Postfächer
 
-Untersuchen Sie Postfächer, bei denen festgestellt wurde, dass sie Teil eines Vorfalls sind oder sich auf einen Vorfall beziehen. Wenn Sie die E-Mail-bezogene Warnung auswählen, um weitere Nachforschungen anzustellen, wird Office 365 Advanced Threat Protection geöffnet, in dem Sie Behebungsmaßnahmen ergreifen können.
+Untersuchen Sie Postfächer, bei denen festgestellt wurde, dass sie Teil eines Vorfalls sind oder sich auf einen Vorfall beziehen. Für weitere Ermittlungsaufgaben wird durch Auswahl der e-Mail-bezogenen Warnung Microsoft Defender für Office 365 geöffnet, in dem Sie Korrekturaktionen ausführen können.
 
 ![Abbildung des Postfachregisters eines Vorfalls](../../media/incident-mailboxes.png)
 
 ## <a name="investigations"></a>Untersuchungen
 
-Wählen Sie unter **suchungen** aus, um alle automatisierten Untersuchungen anzuzeigen, die von Warnungen in diesem Vorfall ausgelöst wurden. Je nachdem, wie Sie Ihre automatisierten Untersuchungen für die Ausführung in Microsoft Defender ATP und Office 365 Advanced Threat Protection konfiguriert haben, führen die Untersuchungen Behebungsmaßnahmen durch oder warten auf die Genehmigung von Maßnahmen durch den Analysten.
+Wählen Sie unter **suchungen** aus, um alle automatisierten Untersuchungen anzuzeigen, die von Warnungen in diesem Vorfall ausgelöst wurden. In den Untersuchungen werden Korrekturaktionen durchgeführt oder auf die Analysten Genehmigung für Aktionen gewartet, je nachdem, wie Sie Ihre automatisierten Untersuchungen so konfiguriert haben, dass Sie in Microsoft Defender für Endpoint und Defender für Office 365 ausgeführt werden.
 
 ![Abbildung der Registerkarte "Untersuchungen“ eines Vorfalls](../../media/incident-investigations.png)
 
-Wählen Sie eine Untersuchung aus, um zur Seite mit den Untersuchungsdetails zu navigieren und vollständige Informationen zum Untersuchungs- und Behebungsstatus zu erhalten. Wenn im Rahmen der Untersuchung Aktionen zur Genehmigung ausstehen, werden diese auf der Registerkarte „Ausstehende Aktionen“ angezeigt. Ergreifen Sie Maßnahmen zur Behebung von Vorfällen.
+Wählen Sie eine Untersuchung aus, um zur Seite mit den Untersuchungsdetails zu navigieren und vollständige Informationen zum Untersuchungs- und Behebungsstatus zu erhalten. Wenn im Rahmen der Untersuchung noch Aktionen zur Genehmigung ausstehen, werden diese auf der Registerkarte Ausstehende Aktionen angezeigt. Maßnahmen im Rahmen der Vorgehensweise bei der Problembehebung.
 
 ## <a name="evidence"></a>Beweis
 
-Microsoft Threat Protection untersucht automatisch alle von Vorfällen unterstützten Ereignisse und verdächtigen Entitäten in den Warnungen und bietet Ihnen eine automatische Antwort sowie Informationen zu wichtigen Dateien, Prozessen, Diensten, E-Mails und vielem mehr. Dies hilft, potenzielle Bedrohungen im Vorfall schnell zu erkennen und zu blockieren.
+Microsoft 365 Defender untersucht automatisch alle unterstützten Ereignisse der Vorfälle und verdächtigen Entitäten in den Warnungen und bietet Ihnen autoresponse und Informationen über wichtige Dateien, Prozesse, Dienste, e-Mails und vieles mehr. Dies hilft, potenzielle Bedrohungen im Vorfall schnell zu erkennen und zu blockieren.
 
 ![Abbildung der Registerkarte "Beweise" eines Vorfalls](../../media/incident-evidence.png)
 

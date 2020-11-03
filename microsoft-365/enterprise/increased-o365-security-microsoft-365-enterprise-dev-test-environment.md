@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Verwenden Sie diese Test Umgebungs Anleitung, um zusätzliche Microsoft 365-Sicherheitseinstellungen für Ihre Microsoft 365 für Enterprise-Testumgebung zu aktivieren.
-ms.openlocfilehash: 7c3300111f5999714b87a176087207a1651cdcaf
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: d385688a6e59ee500442bcf1b815dfd165102242
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487400"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847000"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>Erhöhte Microsoft 365-Sicherheit für Ihre Microsoft 365 für Enterprise-Testumgebung
 
@@ -57,18 +57,18 @@ Für apps, die keine moderne Authentifizierung unterstützen, können keine [Ide
  
 2. Klicken Sie auf der neuen Registerkarte **Microsoft 365 Admin Center** unter **Admin Center** im linken Navigationsbereich auf **SharePoint**.
 3. Klicken Sie auf der neuen Registerkarte **SharePoint Admin Center** auf **Richtlinien > Zugriffssteuerung**.
-4. Klicken Sie auf **apps, die die moderne Authentifizierung nicht unterstützen**, wählen Sie **Zugriff blockieren**aus, und klicken Sie dann auf **Speichern**.
+4. Klicken Sie auf **apps, die die moderne Authentifizierung nicht unterstützen** , wählen Sie **Zugriff blockieren** aus, und klicken Sie dann auf **Speichern**.
 
 
-### <a name="enable-advanced-threat-protection-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>Aktivieren von Advanced Threat Protection für SharePoint, OneDrive für Unternehmen und Microsoft Teams
+### <a name="enable-defender-for-office-365-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>Aktivieren von Defender für Office 365 für SharePoint, OneDrive für Unternehmen und Microsoft Teams
 
-Office 365 Advanced Threat Protection (ATP) für SharePoint, OneDrive und Microsoft Teams schützt Ihre Organisation vor versehentlicher Freigabe schädlicher Dateien.
+Defender für Office 365 für SharePoint, OneDrive und Microsoft Teams schützt Ihre Organisation vor versehentlicher Freigabe schädlicher Dateien.
 
 1. Wechseln Sie zum [Security & Compliance Center](https://protection.office.com) , und melden Sie sich mit ihrem globalen Administratorkonto an.
 
-2. Klicken Sie im linken Navigationsbereich unter **Bedrohungs Verwaltung**auf **Richtlinie**, und klicken Sie dann auf **ATP-sichere Anlagen**. 
+2. Klicken Sie im linken Navigationsbereich unter **Bedrohungs Verwaltung** auf **Richtlinie** , und klicken Sie dann auf **sichere Anlagen**. 
 
-3. Unter **Protect Files in SharePoint, OneDrive und Microsoft Teams**. Wählen Sie **ATP für SharePoint, OneDrive und Microsoft Teams aktivieren**aus.
+3. Unter **Protect Files in SharePoint, OneDrive und Microsoft Teams**. Wählen Sie **ATP für SharePoint, OneDrive und Microsoft Teams aktivieren** aus.
 
 4. Klicken Sie auf **Speichern**.
 
@@ -85,7 +85,7 @@ Um sicherzustellen, dass die Antischadsoftware-Verarbeitung für Dateien mit gä
 2. Klicken Sie auf **Anti-Malware**.
 3. Doppelklicken Sie auf die Richtlinie mit dem Namen **default**.
 4. Klicken Sie im Fenster **Anti-Malware-Richtlinie** auf **Einstellungen**.
-4. Wählen Sie unter **Allgemeine Anlagentypen Filter**die Option **ein**aus, und klicken Sie dann auf **Speichern**.
+4. Wählen Sie unter **Allgemeine Anlagentypen Filter** die Option **ein** aus, und klicken Sie dann auf **Speichern**.
 
 
 ## <a name="phase-3-examine-the-security-dashboard"></a>Phase 3: Überprüfen des Sicherheits Dashboards
@@ -96,7 +96,7 @@ So zeigen Sie das Sicherheits Dashboard an:
 
 1. Wechseln Sie bei Bedarf zum [Security & Compliance Center](https://protection.office.com) , und melden Sie sich mit ihrem globalen Administratorkonto an.
 
-2. Klicken Sie im linken Navigationsbereich unter **Bedrohungs Verwaltung**auf **Dashboard**.
+2. Klicken Sie im linken Navigationsbereich unter **Bedrohungs Verwaltung** auf **Dashboard**.
 
 Werfen Sie einen Blick auf alle Karten im Dashboard, um sich mit den bereitgestellten Informationen vertraut zu machen.
 

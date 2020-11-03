@@ -1,6 +1,6 @@
 ---
-title: Generieren einer Microsoft Threat Protection-Testwarnung
-description: Generieren Sie eine Testwarnung, um die Funktionsweise Ihrer Microsoft Threat Protection-Lab-Umgebung zu testen.
+title: Generieren einer Microsoft 365 Defender-Testwarnung
+description: Generieren einer Testwarnung, um die Funktionsweise der Microsoft 365 Defender-Lab-Umgebung zu testen
 keywords: 'Microsoft Threat Protection-Simulation: Testen Sie Microsoft Threat Protection, generieren Sie Testwarnung in Microsoft Threat Protection, Test Alert in Microsoft Threat Protection Evaluation Lab'
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,25 +19,25 @@ ms.collection:
 - M365-security-compliance
 - m365solution-evalutatemtp
 ms.topic: conceptual
-ms.openlocfilehash: be895138ff524fead6cbea903d978cef1cb49bde
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: a3183ce2651e118a663de0923a90f1223e34bc49
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48368105"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846730"
 ---
-# <a name="generate-a-test-alert-in-your-microsoft-threat-protection-evaluation-lab"></a>Generieren einer Testwarnung in Ihrem Microsoft Threat Protection-Evaluierungslabor  
+# <a name="generate-a-test-alert-in-your-microsoft-365-defender-evaluation-lab"></a>Generieren einer Testwarnung in Ihrem Microsoft 365 Defender Evaluation Lab  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Gilt für:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
-Nachdem Sie das Setup und die Konfiguration des Microsoft Threat Protection-Evaluierungs Labors abgeschlossen haben, können Sie eine Bedrohungs Angriffssimulation ausführen, um die Erkennungs-, Warnungs Korrelations-und Selbstheilungsfunktionen der integrierten Sicherheitslösung zu erfahren.  
+Nachdem Sie das Setup und die Konfiguration des Microsoft 365 Defender-Evaluierungs Labors abgeschlossen haben, können Sie eine Bedrohungs Angriffssimulation ausführen, um die Erkennungs-, Warnungs Korrelations-und Selbstheilungsfunktionen der integrierten Sicherheitslösung zu erfahren.  
 
 1. Anmelden bei https://security.microsoft.com
-2. Suchen Sie auf der Startseite nach einer Kachel mit dem Titel **Simulation**.  Lesen Sie die exemplarische Vorgehensweise für Schritte zum Erstellen eines Test Vorfalls in Microsoft Threat Protection.
+2. Suchen Sie auf der Startseite nach einer Kachel mit dem Titel **Simulation**.  Lesen Sie die exemplarische Vorgehensweise für Schritte zum Erstellen eines Test Vorfalls in Microsoft 365 Defender.
 <br>![Abbildung der Simulations Karte im Microsoft 365 Security Dashboard](../../media/mtp-eval-73.png) <br>
 
 ## <a name="next-steps"></a>Nächste Schritte

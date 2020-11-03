@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Wie Contoso die Sicherheitsfunktionen von Microsoft 365 für Unternehmen verwendet.
-ms.openlocfilehash: d84b1423497a6a4358142902c4e159cc54b3500b
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 8d62dba96ecf19f0dc31af2cf5a2d85257ca19d5
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754232"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847106"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Zusammenfassung von Microsoft 365 für Enterprise-Sicherheit für die Contoso Corporation
 
@@ -89,9 +89,9 @@ Um Sicherheits bewährte Methoden und Microsoft 365 für Enterprise-Bereitstellu
 
   Contoso verwendet [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) zum Schutz vor Schadsoftware und für die Verwaltung von Antischadsoftware für PCs und Geräte mit Windows 10 Enterprise.
 
-- Sicherer E-Mail-Fluss und Postfach-Prüfprotokollierung mit Office 365 Advanced Threat Protection 
+- Sicherer e-Mail-Fluss und postfachüberwachungsprotokollierung mit Microsoft Defender für Office 365 
 
-  Zum Schutz vor unbekannter Schadsoftware, Viren und böswilligen URLs, die per E-Mail gesendet werden, verwendet Contoso Exchange Online Protection und [Office 365 Advanced Threat Protection (ATP)](https://docs.microsoft.com/office365/securitycompliance/office-365-atp).
+  Contoso verwendet Exchange Online Schutz und [Defender für Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) zum Schutz vor unbekannten Schadsoftware, Viren und bösartigen URLs, die über e-Mails übertragen werden.
 
   Contoso hat auch die postfachüberwachungsprotokollierung aktiviert, um zu identifizieren, wer sich bei Benutzerpostfächern anmeldet, Nachrichten sendet und andere Aktivitäten ausführt, die vom Postfachbesitzer, einem Delegierten Benutzer oder einem Administrator ausgeführt werden.
 
@@ -127,9 +127,9 @@ Um Sicherheits bewährte Methoden und Microsoft 365 für Enterprise-Bereitstellu
 
 ## <a name="security-management"></a>Sicherheitsverwaltung
 
-- Zentrales Sicherheits-Dashboard für die IT mit Azure Security Center
+- Zentrales Sicherheits Dashboard für IT mit Azure Defender *
 
-  Contoso verwendet das [Azure Security Center](https://azure.microsoft.com/services/security-center/) , um eine einheitliche Ansicht der Sicherheit und des Bedrohungsschutzes zu präsentieren, Sicherheitsrichtlinien für die Arbeitslasten zu verwalten und auf Cyberangriffe zu reagieren.
+  Contoso verwendet den [Azure Defender *](https://azure.microsoft.com/services/security-center/) , um eine einheitliche Ansicht der Sicherheit und des Bedrohungsschutzes zu präsentieren, Sicherheitsrichtlinien für die Arbeitslasten zu verwalten und auf Cyberangriffe zu reagieren.
 
 - Zentrales Sicherheits-Dashboard für Benutzer mit Windows Defender Security Center
 
