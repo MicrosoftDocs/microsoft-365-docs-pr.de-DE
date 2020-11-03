@@ -21,12 +21,12 @@ description: Erste Schritte mit automatisierten Ermittlungs-und Antwortfunktione
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 340fc4851043ff917eaff6f237c3ad7d5810a4cb
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 54dbd419380c18e23119887c93a71885c6f9ce7d
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430919"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845804"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>Erste Schritte mit der automatisierten Untersuchung und Reaktion (Air) in Office 365
 
@@ -34,7 +34,7 @@ ms.locfileid: "48430919"
 
 [Microsoft Defender für Office 365](office-365-atp.md) enthält leistungsstarke Funktionen für die automatische Untersuchung und Reaktion (Air), mit denen Sie Zeit und Aufwand für Sicherheitsvorgänge aufsparen können. Wenn Warnungen ausgelöst werden, liegt es an Ihrem Sicherheits Betriebsteam, diese Warnungen zu überprüfen, zu priorisieren und darauf zu reagieren. Das Einhalten des Umfangs eingehender Warnungen kann überwältigend sein. Die Automatisierung einiger dieser Informationen kann helfen. Mit Air kann sich Ihr Sicherheits Betriebsteam auf Aufgaben mit höherer Priorität konzentrieren, ohne die ausgelösten Warnungen aus den Augen zu verlieren.
 
-Inhalt dieses Artikels:
+In diesem Artikel finden Sie z. B. Folgendes:
 - Der [gesamte Luftstrom](#the-overall-flow-of-air) ;
 - [Gewusst wie: Abrufen von Luft](#how-to-get-air); und 
 - Die [erforderlichen Berechtigungen](#required-permissions-to-use-air-capabilities) zum Konfigurieren oder Verwenden von Air-Funktionen. 
@@ -62,7 +62,7 @@ Auf einer hohen Ebene wird eine Warnung ausgelöst, und ein Sicherheits Textbuch
     Wenn ausstehende Korrekturaktionen genehmigt (oder abgelehnt) werden, wird die automatische Untersuchung abgeschlossen.
 
 > [!NOTE]
-> In Office 365 ATP werden keine Korrekturaktionen automatisch durchgeführt. Abhilfemaßnahmen werden nur nach Genehmigung durch das Sicherheitsteam Ihrer Organisation ausgeführt. 
+> In Microsoft Defender für Office 365 werden keine Korrekturaktionen automatisch durchgeführt. Abhilfemaßnahmen werden nur nach Genehmigung durch das Sicherheitsteam Ihrer Organisation ausgeführt. 
 
 Während und nach einem automatisierten Ermittlungsprozess kann Ihr Sicherheitsteam folgende Aufgaben ausführen:
 
@@ -111,7 +111,7 @@ Berechtigungen werden über bestimmte Rollen erteilt, wie Sie in der folgenden T
 
 Darüber hinaus müssen [Microsoft Defender für Office 365-Richtlinien](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) definiert und angewendet werden, damit der Schutz in Kraft tritt.
 
-## <a name="next-steps"></a>Weitere Schritte
+## <a name="next-steps"></a>Nächste Schritte
 
 - [Anzeigen von Details und Ergebnissen einer automatisierten Untersuchung](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#view-details-of-an-investigation)
 

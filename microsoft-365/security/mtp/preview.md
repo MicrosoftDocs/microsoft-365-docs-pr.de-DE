@@ -1,5 +1,5 @@
 ---
-title: Vorschaufeatures in Microsoft Threat Protection
+title: Vorschau der Features in Microsoft 365 Defender
 description: Informationen zu den neuen Features in Microsoft 365 Security.
 keywords: Vorschau, neu, m365 security, Sicherheit, 365, Funktionen
 search.product: eADQiWindows 10XVcnh
@@ -19,14 +19,14 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 8b3f8d6868d14b8791a676367d4fb9ad5c2e3307
-ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
+ms.openlocfilehash: 4c731869d1ec1740f8c9173705f9af72b0e2fe53
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48370380"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844752"
 ---
-# <a name="microsoft-threat-protection-preview-features"></a>Microsoft Threat Protection-Vorschaufeatures
+# <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defender Preview-Features
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -34,13 +34,13 @@ ms.locfileid: "48370380"
 >Die Vorschauversionen werden ohne eine Vereinbarung zum Service Level bereitgestellt und nicht für Produktions Arbeitslasten empfohlen. Bestimmte Features werden möglicherweise nicht unterstützt oder verfügen möglicherweise über eingeschränkte Funktionen.
 
 **Gilt für:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
-Microsoft Threat Protection wird ständig mit neuen Featureverbesserungen und Funktionen aktualisiert.
+Der Microsoft 365 Defender-Dienst wird ständig aktualisiert und enthält neue Funktionsverbesserungen und Funktionen.
 
-Erfahren Sie mehr über die neuen Features in der Microsoft Threat Protection-Vorschauversion, und seien Sie unter den Ersten, die bevorstehende Features ausprobieren, indem Sie die Vorschauoberfläche aktivieren.
+In diesem Artikel erfahren Sie mehr über die neuen Features in der Vorschauversion von Microsoft 365 Defender und gehören zu den ersten, die die bevorstehenden Features testen, indem Sie die Vorschaufunktion aktivieren.
 
-Weitere Informationen zu neuen Funktionen, die allgemein verfügbar sind, finden Sie unter [Neuigkeiten in Microsoft Threat Protection](whats-new.md).
+Weitere Informationen zu neuen Funktionen, die allgemein verfügbar sind, finden Sie unter [What es New in Microsoft 365 Defender](whats-new.md).
 
 ## <a name="turn-on-preview-features"></a>Vorschaufeatures aktivieren
 Sie haben Zugriff auf kommende Features, über die Sie Feedback geben können, um die allgemeine Erfahrung zu verbessern, bevor Features allgemein verfügbar sind.
@@ -49,7 +49,7 @@ Aktivieren Sie die Einstellung für die Vorschauerfahrung, um zu den ersten zu g
 
 1. Wählen Sie im Navigationsbereich **Einstellungen** aus.
 
-2. Wählen Sie **Microsoft Threat Protection** aus.
+2. Wählen Sie **Microsoft 365 Defender** aus.
 
 
 3. Wählen Sie **Vorschaufeatures** > **Aktivieren Sie Vorschaufeatures**. 
@@ -61,7 +61,7 @@ Sie wissen, dass Sie Vorschaufeatures aktiviert haben, wenn Sie sehen, dass das 
 ## <a name="preview-features"></a>Vorschaufeatures
 Die folgenden Features und Verbesserungen sind derzeit in der Vorschau verfügbar:
 
-- **[Microsoft Threat Protection-APIs](api-overview.md)** – die Microsoft Threat Protection-APIs auf Lop-Ebene ermöglichen Ihnen die Automatisierung von Workflows basierend auf den geteilten und erweiterten Tabellen für die Bedrohungssuche. 
-- **[Aktionen in der erweiterten Suche durchführen](advanced-hunting-take-action.md)**– enthalten schnell Bedrohungen oder adressieren gefährdete Objekte, die Sie in [Advanced Hunting](advanced-hunting-overview.md)finden.
-- **[In-Portal-Schemareferenz](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**: Informationen zu erweiterten Jagd Schema Tabellen erhalten Sie direkt im Sicherheitscenter. Neben Tabellen-und Spaltenbeschreibungen enthält dieser Verweis unterstützte Ereignistypen ( `ActionType` Werte) und Beispielabfragen.
+- **[Microsoft 365 Defender-APIs](api-overview.md)** – die Microsoft 365 Defender-APIs von Lop-Level ermöglichen Ihnen das Automatisieren von Workflows basierend auf den freigegebenen Vorfällen und erweiterten Jagd Tabellen. 
+- **[Aktionen in der erweiterten Suche durchführen](advanced-hunting-take-action.md)** – enthalten schnell Bedrohungen oder adressieren gefährdete Objekte, die Sie in [Advanced Hunting](advanced-hunting-overview.md)finden.
+- **[In-Portal-Schemareferenz](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : Informationen zu erweiterten Jagd Schema Tabellen erhalten Sie direkt im Sicherheitscenter. Neben Tabellen-und Spaltenbeschreibungen enthält dieser Verweis unterstützte Ereignistypen ( `ActionType` Werte) und Beispielabfragen.
 

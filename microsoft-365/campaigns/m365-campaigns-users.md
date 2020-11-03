@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie sich Microsoft 365 für Kampagnen auf Ihre Benutzer auswirkt.
-ms.openlocfilehash: fc10e3521b9e165d0a6efd6d1ed37b53a5abf74f
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: c9cbb64a5585aae4db8f878afcfc19c98711518b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527018"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845192"
 ---
 # <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>Auswirkungen von Microsoft 365 für Kampagnen auf Ihre Benutzer
 
@@ -40,8 +40,8 @@ Microsoft 365 für Kampagnen ist es für Hacker erheblich schwieriger, Zugriff a
 ## <a name="use-secure-email-practices"></a>Verwenden von sicheren e-Mail-Methoden
 Alle Benutzer sollten diese e-Mail-Methoden kennen und verwenden, um Ihre e-Mail-Sicherheit zu gewährleisten:
 - Einrichten von e-Mail für die Verwendung der mehrstufigen Authentifizierung mit der Authentifikator-app.
-- Überprüfen Sie die legitimen e-Mails, und suchen Sie nach Sicherheitstipps von ATP Advanced Phishing Protection.
-- Öffnen Sie nur sichere Links und Anlagen, die durch ATP-sichere Links und ATP-sichere Anlagen verifiziert wurden.
+- Überprüfen Sie die legitimen e-Mails, und suchen Sie nach Sicherheitstipps von Advanced Phishing in Defender for Office 365 Protection.
+- Öffnen Sie nur sichere Links und Anlagen, die über sichere Links und sichere Anlagen verifiziert sind.
 
 Erfahren Sie mehr über [Phishing und andere Angriffe](m365-campaigns-phishing-and-attacks.md). 
 

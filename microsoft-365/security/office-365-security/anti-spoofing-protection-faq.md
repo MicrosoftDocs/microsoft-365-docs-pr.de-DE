@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Administratoren können häufig gestellte Fragen und Antworten zum Schutz vor Spoofing in Exchange Online Protection (EoP) anzeigen.
-ms.openlocfilehash: 3b1a30541c46383284203eee61d8b6679ac3b493
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: a5b0484e41e3df7a7b6ad16e69a4f7062b19b554
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445711"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844392"
 ---
 # <a name="anti-spoofing-protection-faq"></a>Häufig gestellte Fragen zum Antispoofingschutz
 
@@ -45,11 +45,9 @@ Wenn Microsoft dieses Feature in 2018 aktiviert hat, sind einige falsch positive
 
 Microsoft selbst hat die neuen e-Mail-Authentifizierungsanforderungen mehrere Wochen vor der Bereitstellung an Kunden übernommen. Zunächst gab es zwar Störungen, diese gingen jedoch allmählich zurück.
 
-## <a name="is-spoof-intelligence-available-to-microsoft-365-customers-without-atp"></a>Sind Spoof Intelligence für Microsoft 365-Kunden ohne ATP verfügbar?
+## <a name="is-spoof-intelligence-available-to-microsoft-365-customers-without-defender-for-office-365"></a>Steht Spoof Intelligence für Microsoft 365-Kunden ohne Verteidiger für Office 365 zur Verfügung?
 
 Ja. Ab Oktober 2018 steht Spoof Intelligence für alle Organisationen mit Postfächern in Exchange Online und eigenständigen EoP-Organisationen ohne Exchange Online Postfächer zur Verfügung.
-
-Anti-Spoofing-Technologie war anfänglich nur in Office 365 Advanced Threat Protection verfügbar. Beispielsweise Microsoft E5-Abonnements oder ATP-Add-ons.
 
 ## <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>Wie kann ich Spamnachrichten oder Nachrichten, die kein Spam sind, an Microsoft melden?
 
@@ -73,12 +71,12 @@ Leider Nein. Angreifer passen sich an die Verwendung anderer Techniken an (beisp
 
 Fast alle großen e-Mail-Dienste implementieren herkömmliche SPF-, DKIM-und DMARC-Prüfungen. Einige Dienste haben andere, strengere Prüfungen, aber nur wenige gehen so weit, dass Sie nicht authentifizierte e-Mails blockieren und als gefälschte Nachrichten behandeln EoP. Allerdings wird die Branche in Bezug auf Probleme mit nicht authentifizierten e-Mails, insbesondere aufgrund des Problems der Phishing-Problematik, immer stärker bewusst.
 
-## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>Muss ich dennoch die erweiterte Spam Filter Einstellung "SPF Record: Hard Fail" (_MarkAsSpamSpfRecordHardFail_) aktivieren, wenn ich Antispoofing aktiviere?
+## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>Muss ich dennoch die erweiterte Spam Filter Einstellung "SPF Record: Hard Fail" ( _MarkAsSpamSpfRecordHardFail_ ) aktivieren, wenn ich Antispoofing aktiviere?
 
-Nein. Diese ASF-Einstellung ist nicht mehr erforderlich. Der Schutz vor Spoofing hält sowohl SPF-Fehler als auch eine viel breitere Gruppe von Kriterien für erforderlich. Wenn Sie Antispoofing und **SPF-Eintrag: Schwerer Fehler** (_MarkAsSpamSpfRecordHardFail_) aktiviert haben, erhalten Sie wahrscheinlich mehr falsch positive Ergebnisse.
+Nein. Diese ASF-Einstellung ist nicht mehr erforderlich. Der Schutz vor Spoofing hält sowohl SPF-Fehler als auch eine viel breitere Gruppe von Kriterien für erforderlich. Wenn Sie Antispoofing und **SPF-Eintrag: Schwerer Fehler** ( _MarkAsSpamSpfRecordHardFail_ ) aktiviert haben, erhalten Sie wahrscheinlich mehr falsch positive Ergebnisse.
 
 Es wird empfohlen, dieses Feature zu deaktivieren, da es fast keine zusätzlichen Vorteile für das Erkennen von Spam-oder Phishing-Nachrichten bietet und stattdessen meistens falsch positive Ergebnisse generiert. Weitere Informationen finden Sie unter [Advanced Spam Filter (ASF) Settings in EoP](advanced-spam-filtering-asf-options.md).
 
 ## <a name="does-sender-rewriting-scheme-help-fix-forwarded-email"></a>Hilft das Programm zum Umschreiben von Absendern beim Beheben weitergeleiteter e-Mails?
 
-Mit SRS kann das Problem mit weitergeleiteten E-Mails nur teilweise behoben werden. Durch das Umschreiben der SMTP **-e-Mail von**kann SRS sicherstellen, dass die weitergeleitete Nachricht SPF am nächsten Ziel übergibt. Da Antispoofing jedoch auf der **von** -Adresse in Kombination mit der Domäne **"Mail from** " oder "DKIM-Signing" (oder anderen Signalen) basiert, reicht es nicht aus, zu verhindern, dass SRS weitergeleitete e-Mails als gefälscht gekennzeichnet werden.
+Mit SRS kann das Problem mit weitergeleiteten E-Mails nur teilweise behoben werden. Durch das Umschreiben der SMTP **-e-Mail von** kann SRS sicherstellen, dass die weitergeleitete Nachricht SPF am nächsten Ziel übergibt. Da Antispoofing jedoch auf der **von** -Adresse in Kombination mit der Domäne **"Mail from** " oder "DKIM-Signing" (oder anderen Signalen) basiert, reicht es nicht aus, zu verhindern, dass SRS weitergeleitete e-Mails als gefälscht gekennzeichnet werden.

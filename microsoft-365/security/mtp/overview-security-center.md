@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: ed91ca8a2300cf69cb78ae24ad61e9aebb4dcc85
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 9aaeb5323900e65de47015b8cb28abf967694ea3
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429419"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844800"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 Security Center – Übersicht
 
@@ -52,7 +52,7 @@ Das Microsoft 365 Security Center umfasst Folgendes:
 
 * **Startseite** – erhalten Sie einen Überblick über den allgemeinen Sicherheitsstatus ihrer Organisation.
 * **Vorfälle** – sehen Sie sich die breitere Geschichte eines Angriffs an, indem Sie die Punkte, die bei einzelnen Benachrichtigungen auf Entitäten angezeigt werden, verbinden. Sie wissen genau, wo ein Angriff gestartet wurde, welche Geräte betroffen sind, wer betroffen war und wohin die Bedrohung verlaufen ist.
-* **Benachrichtigungen** – verfügen über eine größere Sichtbarkeit aller Warnungen in Ihrer Microsoft 365-Umgebung. Enthält Warnungen von Microsoft Cloud App Security, Office 365 ATP, Azure Active Directory, Azure ATP und Microsoft Defender ATP. Verfügbar für E3-und E5-Kunden.  
+* **Benachrichtigungen** – verfügen über eine größere Sichtbarkeit aller Warnungen in Ihrer Microsoft 365-Umgebung. Enthält Warnungen von Microsoft Cloud App Security, Microsoft Defender für Office 365, Azure Active Directory, Microsoft Defender for Identity und Microsoft Defender für Endpoint. Verfügbar für E3-und E5-Kunden.  
 * **Action Center** – reduzieren Sie die Anzahl von Warnungen, die ihr Sicherheitsteam manuell adressieren muss, sodass sich Ihr Sicherheitseinsatz Team auf komplexere Bedrohungen und andere hochwertige Initiativen konzentrieren kann.
 * **Berichte** – holen Sie sich die Details und Informationen, die Sie benötigen, um Ihre Benutzer, Geräte, Apps und vieles mehr besser zu schützen.
 * **Sicherheitsbewertung** – Verbessern Sie Ihren allgemeinen Sicherheitsstatus mit der Microsoft-Sicherheitsbewertung. Diese Seite enthält eine Übersicht über die verschiedenen Sicherheitsfeatures und Funktionen, die Sie aktiviert haben, und enthält Empfehlungen für Verbesserungen für Bereiche.
@@ -73,6 +73,6 @@ In diesem Artikel erfahren Sie, wie Sie Ihre Sicherheitsanforderungen überwache
 - [Proaktive Suche nach Bedrohungen](advanced-hunting-overview.md) für Intrusionsversuche und Verletzungs Aktivitäten, die sich auf Ihre e-Mails, Daten, Geräte und Konten auswirken
 - Grund [Legendes zu den neuesten Angriffs Kampagnen](latest-attack-campaigns.md) und-Techniken mit Threat Analytics
 
-## <a name="see-also"></a>Weitere Informationen:
+## <a name="see-also"></a>Siehe auch
 
 - [Microsoft-Sicherheitsportale](portals.md)

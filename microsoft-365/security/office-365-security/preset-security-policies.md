@@ -13,15 +13,15 @@ localization_priority: Normal
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Administratoren erfahren, wie Sie Standard mäßige und strenge Richtlinieneinstellungen über die Schutzfunktionen von Exchange Online Protection (EoP) und Office 365 Advanced Threat Protection (ATP) anwenden können.
-ms.openlocfilehash: a624d48944965c217fb8547e4f09da0ec388e615
-ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
+description: Administratoren erfahren, wie Sie Standard mäßige und strikte Richtlinieneinstellungen auf die Schutzfunktionen von Exchange Online Protection (EoP) und Microsoft Defender für Office 365 anwenden können.
+ms.openlocfilehash: 38a03727f91878f356d8bc0dc618c711bfc500bb
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "48830537"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845732"
 ---
-# <a name="preset-security-policies-in-eop-and-office-365-atp"></a>Voreingestellte Sicherheitsrichtlinien in EoP und Office 365 ATP
+# <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Voreingestellte Sicherheitsrichtlinien in EoP und Microsoft Defender für Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -59,7 +59,7 @@ Die verfügbaren Bedingungen und Ausnahmen sind:
 
 ### <a name="policies-in-preset-security-policies"></a>Richtlinien in vordefinierten Sicherheitsrichtlinien
 
-Vordefinierte Sicherheitsrichtlinien verwenden die entsprechenden Richtlinien aus den verschiedenen Schutzfeatures in EoP und Office 365 ATP. Diese Richtlinien werden erstellt, _nachdem_ Sie den Benutzern die vordefinierten Sicherheitsrichtlinien für **Standard Schutz** oder **strenge Schutz** zugewiesen haben. Diese Richtlinien können nicht geändert werden.
+Vordefinierte Sicherheitsrichtlinien verwenden die entsprechenden Richtlinien aus den verschiedenen Schutzfeatures in EoP und Microsoft Defender für Office 365. Diese Richtlinien werden erstellt, _nachdem_ Sie den Benutzern die vordefinierten Sicherheitsrichtlinien für **Standard Schutz** oder **strenge Schutz** zugewiesen haben. Diese Richtlinien können nicht geändert werden.
 
 - **Exchange Online Protection (EoP)-Richtlinien** : Dies umfasst Microsoft 365-Organisationen mit Exchange Online Postfächern und eigenständigen EoP-Organisationen ohne Exchange Online Postfächern:
   
@@ -67,23 +67,23 @@ Vordefinierte Sicherheitsrichtlinien verwenden die entsprechenden Richtlinien au
   - [Antischadsoftware-Richtlinien](configure-anti-malware-policies.md) mit dem Namen " **Standard vordefinierte Sicherheitsrichtlinie** " und **strenge vordefinierte Sicherheitsrichtlinie**
   - [EoP-Anti-Phishing-Richtlinien](set-up-anti-phishing-policies.md#spoof-settings) mit dem Namen " **Standard mäßige Sicherheitsrichtlinie** " und " **strenge vordefinierte Sicherheitsrichtlinie** " (Spoof-Einstellungen).
 
-- **Office 365 Advanced Threat Protection (ATP)-Richtlinien** : Dies umfasst Organisationen mit Microsoft 365 E5 oder Office 365 ATP-Add-on-Abonnements:
+- **Microsoft Defender für Office 365-Richtlinien** : Dies umfasst Organisationen mit Microsoft 365 E5 oder Defender für Office 365 Add-on-Abonnements:
 
-  - ATP-Anti-Phishing-Richtlinien mit dem Namen " **Standard Preset Security Policy** " und **strenge vordefinierte Sicherheitsrichtlinien** , einschließlich:
+  - Anti-Phishing-Richtlinien in Microsoft Defender für Office 365 benannte **Standard mäßige Sicherheitsrichtlinien** und **strenge vordefinierte Sicherheitsrichtlinien** , die Folgendes umfassen:
 
     - Dieselben [spoofeinstellungen](set-up-anti-phishing-policies.md#spoof-settings) , die in den EoP-Richtlinien zum Schutz vor Phishing verfügbar sind.
-    - [Einstellungen für Identitätswechsel](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)
-    - [Erweiterte Phishing-Schwellenwerte](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies)
+    - [Einstellungen für Identitätswechsel](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+    - [Erweiterte Phishing-Schwellenwerte](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
   - [Richtlinien für sichere Links](set-up-atp-safe-links-policies.md) mit dem Namen " **Standard vordefinierte Sicherheitsrichtlinie** und **strenge vordefinierte Sicherheitsrichtlinie** ".
 
   - [Richtlinien für sichere Anlagen](set-up-atp-safe-attachments-policies.md) mit dem Namen " **Standard mäßige Sicherheitsrichtlinie** und **strenge vordefinierte Sicherheitsrichtlinie** ".
 
-Beachten Sie, dass Sie EoP-Schutz für unterschiedliche Benutzer als ATP-Schutz anwenden können.
+Beachten Sie, dass Sie EoP-Schutz für Office 365 Schutz auf andere Benutzer als Microsoft Defender anwenden können.
 
 ### <a name="policy-settings-in-preset-security-policies"></a>Richtlinieneinstellungen in vordefinierten Sicherheitsrichtlinien
 
-Die Richtlinieneinstellungen in den Schutzprofilen können nicht geändert werden. Die **Standard mäßigen** und **strengen** Richtlinien Einstellungswerte werden in den [empfohlenen Einstellungen für EoP und Office 365 ATP-Sicherheit](recommended-settings-for-eop-and-office365-atp.md)beschrieben.
+Die Richtlinieneinstellungen in den Schutzprofilen können nicht geändert werden. Die **Standard mäßigen** und **strengen** Richtlinien Einstellungswerte werden in den [empfohlenen Einstellungen für EoP und Microsoft Defender für Office 365 Sicherheit](recommended-settings-for-eop-and-office365-atp.md)beschrieben.
 
 ### <a name="order-of-precedence-for-preset-security-policies-and-other-policies"></a>Prioritätsreihenfolge für vordefinierte Sicherheitsrichtlinien und andere Richtlinien
 
@@ -121,11 +121,11 @@ Mit anderen Worten: mit den Einstellungen der **strengen Schutz** Richtlinie wer
 
 1. Wechseln Sie im Security & Compliance Center zu den **Threat management** \> **Policy** \> **vordefinierten Sicherheitsrichtlinien** für Threat Management Policy.
 
-2. Klicken Sie unter **Standard Schutz** oder **strenger Schutz** auf **Bearbeiten** .
+2. Klicken Sie unter **Standard Schutz** oder **strenger Schutz** auf **Bearbeiten**.
 
 3. Der Assistent zum **Anwenden von Standard Schutz** oder zum **Anwenden eines strengen Schutzes** wird gestartet. Identifizieren Sie im Abschnitt **EoP-Schutz** für Schritt die internen Empfänger, auf die die [EoP-Schutzmaßnahmen](#policies-in-preset-security-policies) zutreffen:
 
-   1. Klicken Sie auf **Bedingung hinzufügen** . Wählen Sie in der Dropdownliste, die angezeigt wird, eine Bedingung unter **angewendet, wenn** :
+   1. Klicken Sie auf **Bedingung hinzufügen**. Wählen Sie in der Dropdownliste, die angezeigt wird, eine Bedingung unter **angewendet, wenn** :
 
       - **Die Empfänger werden**
       - **Die Empfänger sind Mitglieder von**
@@ -139,23 +139,23 @@ Mit anderen Worten: mit den Einstellungen der **strengen Schutz** Richtlinie wer
 
       Wiederholen Sie den vorherigen Schritt, um der Bedingung Werte hinzuzufügen, und wiederholen Sie diesen Schritt so oft wie nötig oder bis die Bedingungen abgelaufen sind.
 
-   4. Klicken Sie zum Hinzufügen einer Ausnahme auf **Bedingung hinzufügen** . Wählen Sie in der Dropdownliste, die angezeigt wird, eine Bedingung unter **außer when** aus. Die Einstellungen und das Verhalten entsprechen genau den Bedingungen.
+   4. Klicken Sie zum Hinzufügen einer Ausnahme auf **Bedingung hinzufügen**. Wählen Sie in der Dropdownliste, die angezeigt wird, eine Bedingung unter **außer when** aus. Die Einstellungen und das Verhalten entsprechen genau den Bedingungen.
 
-   Klicken Sie nach Abschluss des Vorgangs auf **Weiter** .
+   Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
 
-4. Wenn Ihre Organisation Office 365 ATP hat, werden Sie zum Schritt " **ATP-Schutz gilt für** " geführt, um die internen Empfänger zu identifizieren, auf die der [Office 365 ATP-Schutz](#policies-in-preset-security-policies) angewendet wird.
+4. Wenn Ihre Organisation Microsoft Defender für Office 365 hat, werden Sie zum Schritt " **ATP-Schutz gilt** für" geleitet, um die internen Empfänger zu identifizieren, auf die der [Microsoft Defender für Office 365 Schutz](#policies-in-preset-security-policies) angewendet wird.
 
    Die Einstellungen und das Verhalten sind genau wie die **EoP-Schutzmaßnahmen für** Step.
 
-   Klicken Sie nach Abschluss des Vorgangs auf **Weiter** .
+   Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
 
-5. Überprüfen Sie im Schritt **bestätigen** Ihre Auswahl, und klicken Sie dann auf **bestätigen** .
+5. Überprüfen Sie im Schritt **bestätigen** Ihre Auswahl, und klicken Sie dann auf **bestätigen**.
 
 ### <a name="use-the-security--compliance-center-to-modify-the-assignments-of-preset-security-policies"></a>Verwenden des Security & Compliance Center zum Ändern der Zuweisungen von vordefinierten Sicherheitsrichtlinien
 
 Die Schritte zum Ändern der Zuweisung der Sicherheitsrichtlinie " **Standard Schutz** " oder " **Strict Protection** " entsprechen denen, die Sie den [Benutzern anfänglich vordefinierten Sicherheitsrichtlinien zugewiesen](#use-the-security--compliance-center-to-assign-preset-security-policies-to-users)haben.
 
-Um die **Standard mäßigen Schutz** **-oder Sicherheits** Richtlinien zu deaktivieren und gleichzeitig die vorhandenen Bedingungen und Ausnahmen zu erhalten, schieben Sie die Umschaltfläche auf **deaktiviert** . Um die Richtlinien zu aktivieren, schieben Sie die Umschaltfläche auf **aktiviert** .
+Um die **Standard mäßigen Schutz** **-oder Sicherheits** Richtlinien zu deaktivieren und gleichzeitig die vorhandenen Bedingungen und Ausnahmen zu erhalten, schieben Sie die Umschaltfläche auf **deaktiviert**. Um die Richtlinien zu aktivieren, schieben Sie die Umschaltfläche auf **aktiviert**.
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>Wie können Sie feststellen, dass diese Verfahren erfolgreich waren?
 

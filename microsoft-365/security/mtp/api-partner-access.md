@@ -1,6 +1,6 @@
 ---
-title: Partner Zugriff über Microsoft Threat Protection-APIs
-description: Erfahren Sie, wie Sie eine Aad-Anwendung erstellen, um den programmgesteuerten Zugriff auf Microsoft Threat Protection im Namen Ihrer Kunden zu erhalten.
+title: Partner Zugriff über Microsoft 365 Defender-APIs
+description: Erfahren Sie, wie Sie eine Aad-Anwendung erstellen, um im Namen Ihrer Kundenprogramm gesteuerten Zugriff auf Microsoft 365 Defender zu erhalten.
 keywords: Partner, Zugriff, API, mehr Mandanten, Zustimmung, Zugriffstoken, App
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,36 +19,36 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ae9e5ae158c95ae52112f7bc16559559230a20e8
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: eb40d5d2d82f57be225515ad0aa566038397bbbd
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203707"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844984"
 ---
-# <a name="partner-access-through-microsoft-threat-protection-apis"></a>Partner Zugriff über Microsoft Threat Protection-APIs
+# <a name="partner-access-through-microsoft-365-defender-apis"></a>Partner Zugriff über Microsoft 365 Defender-APIs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Gilt für:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >Einige Informationen beziehen sich auf Vorabversionen von Produkten, die vor der kommerziellen Veröffentlichung noch erheblich geändert werden können. Microsoft übernimmt mit diesen Informationen keinerlei Gewährleistung, sei sie ausdrücklich oder konkludent.
 
 
-Auf dieser Seite wird beschrieben, wie Sie eine Aad-Anwendung erstellen, um den programmgesteuerten Zugriff auf Microsoft Threat Protection im Namen Ihrer Kunden zu erhalten.
+Auf dieser Seite wird beschrieben, wie Sie eine Aad-Anwendung erstellen, um den programmgesteuerten Zugriff auf Microsoft 365 Defender im Namen Ihrer Kunden zu erhalten.
 
-Microsoft Threat Protection macht einen Großteil seiner Daten und Aktionen über eine Reihe von programmgesteuerten APIs verfügbar. Diese APIs unterstützen Sie bei der Automatisierung von Arbeitsabläufen und Innovationen basierend auf den Microsoft Threat Protection-Funktionen. Für den API-Zugriff ist die OAuth 2.0-Authentifizierung erforderlich. Weitere Informationen finden Sie unter [OAuth 2,0-Autorisierungs Code Fluss](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft 365 Defender macht einen Großteil seiner Daten und Aktionen über eine Reihe von programmgesteuerten APIs verfügbar. Diese APIs unterstützen Sie bei der Automatisierung von Arbeitsabläufen und Innovationen basierend auf den Microsoft 365 Defender-Funktionen. Für den API-Zugriff ist die OAuth 2.0-Authentifizierung erforderlich. Weitere Informationen finden Sie unter [OAuth 2,0-Autorisierungs Code Fluss](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 Im Allgemeinen müssen Sie die folgenden Schritte ausführen, um die APIs zu verwenden:
 - Erstellen Sie eine Aad-Anwendung mit **mehreren Mandanten** .
-- Erhalten Sie autorisierte (Zustimmung) von Ihrem Kundenadministrator für Ihre Anwendung, um auf die erforderlichen Microsoft Threat Protection-Ressourcen zuzugreifen.
+- Erhalten Sie autorisierte (Zustimmung) von Ihrem Kundenadministrator für Ihre Anwendung, um auf Microsoft 365 Defender-Ressourcen zuzugreifen, die Sie benötigt.
 - Abrufen eines Zugriffstokens mithilfe dieser Anwendung.
-- Verwenden Sie das Token, um auf die Microsoft Threat Protection-API zuzugreifen.
+- Verwenden Sie das Token, um auf die Microsoft 365 Defender-API zuzugreifen.
 
-Die folgenden Schritte finden Sie unter Anleitung zum Erstellen einer Aad-Anwendung, Abrufen eines Zugriffstokens für Microsoft Threat Protection und Überprüfen des Tokens.
+Die folgenden Schritte finden Sie unter Anleitung zum Erstellen einer Aad-Anwendung, Abrufen eines Zugriffstokens für Microsoft 365 Defender und Überprüfen des Tokens.
 
 ## <a name="create-the-multi-tenant-app"></a>Erstellen der Multi-Mandanten-App
 
@@ -69,12 +69,12 @@ Die folgenden Schritte finden Sie unter Anleitung zum Erstellen einer Aad-Anwend
     ![Abbildung der Registrierung von Microsoft Azure Partneranwendungen](../../media/atp-api-new-app-partner.png)
 
 
-4. Ermöglichen Sie Ihrer Anwendung den Zugriff auf Microsoft Threat Protection, und weisen Sie Sie mit dem minimalen Satz von Berechtigungen zu, die erforderlich sind, um die Integration abzuschließen.
+4. Erlauben Sie Ihrer Anwendung den Zugriff auf Microsoft 365 Defender, und weisen Sie Ihr die minimale Berechtigungsgruppe zu, die zum Abschließen der Integration erforderlich ist.
 
-   - Klicken Sie auf Ihrer Anwendungsseite auf **API-Berechtigungen**  >  **Add permission**  >  **APIs meine Organisation verwendet** > geben Sie **Microsoft Threat Protection** ein, und klicken Sie auf **Microsoft Threat Protection**.
+   - Klicken Sie auf Ihrer Anwendungsseite auf **API-Berechtigungen**  >  **Add permission**  >  **APIs meine Organisation verwendet** > geben Sie **Microsoft 365 Defender** ein, und klicken Sie auf **Microsoft 365 Defender**.
 
    >[!NOTE]
-   >Microsoft Threat Protection wird nicht in der ursprünglichen Liste angezeigt. Sie müssen mit dem Schreiben des Namens in das Textfeld beginnen, damit dieser angezeigt wird.
+   >Microsoft 365 Defender wird nicht in der ursprünglichen Liste angezeigt. Sie müssen mit dem Schreiben des Namens in das Textfeld beginnen, damit dieser angezeigt wird.
 
    ![Abbildung des API-Zugriffs und der API-Auswahl](../../media/apis-in-my-org-tab.PNG)
    
@@ -98,10 +98,10 @@ Die folgenden Schritte finden Sie unter Anleitung zum Erstellen einer Aad-Anwend
 
 6. Fügen Sie der Anwendung ein Kennwort hinzu.
 
-    - Klicken Sie auf **Zertifikate & Geheimnisse**, fügen Sie dem geheimen eine Beschreibung hinzu, und klicken Sie auf **Hinzufügen**
+    - Klicken Sie auf **Zertifikate & Geheimnisse** , fügen Sie dem geheimen eine Beschreibung hinzu, und klicken Sie auf **Hinzufügen**
 
     >[!IMPORTANT]
-    > Nachdem **Sie hinzufügen**ausgewählt haben, **Kopieren Sie den generierten geheimen Wert**. Sie können nach dem verlassen nicht mehr abrufen.
+    > Nachdem **Sie hinzufügen** ausgewählt haben, **Kopieren Sie den generierten geheimen Wert**. Sie können nach dem verlassen nicht mehr abrufen.
 
     ![Bild der APP-Schlüssel erstellen](../../media/webapp-create-key2.png)
 
@@ -113,7 +113,7 @@ Die folgenden Schritte finden Sie unter Anleitung zum Erstellen einer Aad-Anwend
 
 8. Fügen Sie die Anwendung dem Mandanten des Kunden hinzu.
 
-    Sie müssen Ihre Anwendung in jedem Kundenmandanten genehmigen, in dem Sie Sie verwenden möchten. Dies liegt daran, dass Ihre Anwendung im Namen Ihres Kunden mit der Microsoft Threat Protection-Anwendung interagiert.
+    Sie müssen Ihre Anwendung in jedem Kundenmandanten genehmigen, in dem Sie Sie verwenden möchten. Dies liegt daran, dass Ihre Anwendung im Namen Ihres Kunden mit der Microsoft 365 Defender-Anwendung interagiert.
 
     Ein Benutzer mit **globalem Administrator** vom Mandanten des Kunden muss auf den Zustimmungs Link klicken und die Anwendung genehmigen.
 
@@ -203,7 +203,7 @@ return $token
 - Öffnen eines Befehlsfensters
 - Festlegen CLIENT_ID auf Ihre Azure-Anwendungs-ID
 - Festlegen von CLIENT_SECRET auf Ihren Azure-Anwendungsschlüssel
-- Legen Sie TENANT_ID auf die Azure-Mandanten-ID des Kunden fest, der Ihre Anwendung für den Zugriff auf Microsoft Threat Protection-Anwendung verwenden möchte.
+- Legen Sie TENANT_ID auf die Azure-Mandanten-ID des Kunden fest, der Ihre Anwendung für den Zugriff auf die Microsoft 365 Defender-Anwendung verwenden möchte.
 - Führen Sie den folgenden Befehl aus:
 
 ```
@@ -222,14 +222,14 @@ Sanity Check, um sicherzustellen, dass Sie ein korrektes Token erhalten:
 
 - Kopieren/Einfügen in [JWT](https://jwt.ms) das Token, das Sie im vorherigen Schritt erhalten haben, um es zu decodieren
 - Überprüfen Sie erhalten einen "Roles"-Anspruch mit den gewünschten Berechtigungen
-- Im folgenden Screenshot sehen Sie ein decodiertes Token, das von einer Anwendung mit mehreren Berechtigungen für Microsoft Threat Protection erworben wurde:
+- Im folgenden Screenshot sehen Sie ein decodiertes Token, das von einer Anwendung mit mehreren Berechtigungen für Microsoft 365 Defender erworben wurde:
 - Der "TID"-Anspruch ist die Mandanten-ID, zu der das Token gehört.
 
 ![Bild der Token-Validierung](../../media/webapp-decoded-token.png)
 
-## <a name="use-the-token-to-access-microsoft-threat-protection-api"></a>Verwenden des Tokens für den Zugriff auf die Microsoft Threat Protection-API
+## <a name="use-the-token-to-access-microsoft-365-defender-api"></a>Verwenden des Tokens für den Zugriff auf die Microsoft 365 Defender-API
 
-- Wählen Sie die API aus, die Sie verwenden möchten, weitere Informationen finden Sie unter [unterstützte Microsoft Threat Protection-APIs](api-supported.md)
+- Wählen Sie die API aus, die Sie verwenden möchten, weitere Informationen finden Sie unter [Supported Microsoft 365 Defender APIs](api-supported.md)
 - Festlegen des Autorisierungs Headers in der HTTP-Anforderung, die Sie an "Bearer {Token}" senden (Inhaber ist das Autorisierungsschema)
 - Die Ablaufzeit des Tokens beträgt 1 Stunde (Sie können mehr als eine Anforderung mit demselben Token senden)
 
@@ -248,6 +248,6 @@ Sanity Check, um sicherzustellen, dass Sie ein korrektes Token erhalten:
 
 ## <a name="related-topics"></a>Verwandte Themen 
 
-- [Zugreifen auf die Microsoft Threat Protection-APIs](api-access.md)
-- [Zugriff auf Microsoft Threat Protection mit Anwendungskontext](api-create-app-web.md)
-- [Zugriff auf Microsoft Threat Protection mit Benutzerkontext](api-create-app-user-context.md)
+- [Zugreifen auf die Microsoft 365 Defender-APIs](api-access.md)
+- [Zugriff auf Microsoft 365 Defender mit Anwendungskontext](api-create-app-web.md)
+- [Zugriff auf Microsoft 365 Defender mit Benutzerkontext](api-create-app-user-context.md)

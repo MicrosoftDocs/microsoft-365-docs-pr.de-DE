@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-defender-office365
 - MET150
 description: Administratoren können lernen, die Gründe zu identifizieren, warum und wie eine Phishing-Nachricht in Microsoft 365 durchgekommen ist, und was Sie tun müssen, um weitere Phishing-Nachrichten zukünftig zu verhindern.
-ms.openlocfilehash: ab7087355ce8ee41616f63a7b466a0d5d0fc7b0f
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: e933769b6bce9eb10765fb2b58025445432bed18
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446465"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845468"
 ---
 # <a name="tune-anti-phishing-protection"></a>Optimieren des Schutzes gegen Phishing
 
@@ -33,15 +33,15 @@ Obwohl Microsoft 365 mit einer Vielzahl von Antiphishingfunktionen ausgeliefert 
 
 Wenn das Konto eines Empfängers aufgrund der Phishing-Nachricht kompromittiert wurde, führen Sie die Schritte unter [reagieren auf ein kompromittiertes e-Mail-Konto in Microsoft 365](responding-to-a-compromised-email-account.md)aus.
 
-Wenn Ihr Abonnement Advanced Threat Protection (ATP) enthält, können Sie [Office 365 Threat Intelligence](office-365-ti.md) verwenden, um andere Benutzer zu identifizieren, die auch die Phishing-Nachricht erhalten haben. Sie haben zusätzliche Optionen zum Blockieren von Phishing-Nachrichten:
+Wenn Ihr Abonnement Microsoft Defender für Office 365 enthält, können Sie [Office 365 Threat Intelligence](office-365-ti.md) verwenden, um andere Benutzer zu identifizieren, die auch die Phishing-Nachricht erhalten haben. Sie haben zusätzliche Optionen zum Blockieren von Phishing-Nachrichten:
 
-- [Sichere Links in Office 365 ATP](set-up-atp-safe-links-policies.md)
+- [Sichere Links in Microsoft Defender für Office 365](set-up-atp-safe-links-policies.md)
 
-- [Sichere Anlagen in Office 365 ATP](set-up-atp-safe-attachments-policies.md)
+- [Sichere Anlagen in Microsoft Defender für Office 365](set-up-atp-safe-attachments-policies.md)
 
-- [Anti-Phishing-Richtlinien in Office 365 ATP](configure-atp-anti-phishing-policies.md). Beachten Sie, dass Sie die **erweiterten Phishing-Schwellenwerte** in der Richtlinie vorübergehend **von Standard** zu aggressiv **,** aggressiver oder **Most aggressive**aggressiver vergrössern können. **Aggressive**
+- [Anti-Phishing-Richtlinien in Microsoft Defender für Office 365](configure-atp-anti-phishing-policies.md). Beachten Sie, dass Sie die **erweiterten Phishing-Schwellenwerte** in der Richtlinie vorübergehend **von Standard** zu aggressiv **,** aggressiver oder **Most aggressive** aggressiver vergrössern können. **Aggressive**
 
-Stellen Sie sicher, dass diese ATP-Funktionen aktiviert sind.
+Stellen Sie sicher, dass diese Verteidiger für Office 365 Funktionen aktiviert sind.
 
 ## <a name="report-the-phishing-message-to-microsoft"></a>Melden der Phishing-Nachricht an Microsoft
 
@@ -59,7 +59,7 @@ Insbesondere sollten Sie das Kopfzeilenfeld **X-Forefront-Antispam-Report** in d
 
 - Für Nachrichten, die versehentlich in die Quarantäne verschoben werden, oder für Nachrichten, die durchgelassen werden, wird empfohlen, dass Sie nach diesen Nachrichten im [Threat Explorer und in Echt Zeit Erkennungen](threat-explorer.md)suchen. Sie können nach Absender, Empfänger oder Nachrichten-ID suchen. Nachdem Sie die Nachricht gefunden haben, gehen Sie zu Details, indem Sie auf den Betreff klicken. Suchen Sie bei einer isolierten Nachricht, um zu sehen, was die "Erkennungstechnologie" war, sodass Sie die entsprechende Methode zum Überschreiben verwenden können. Überprüfen Sie bei einer zulässigen Nachricht, welche Richtlinie die Nachricht zugelassen hat. 
 
-- Gefälschte e-Mails werden als Phishing in ATP getaggt. Spoof ist manchmal gutartig, und manchmal möchten die Benutzer, dass Sie nicht unter Quarantäne gestellt werden. Um die Auswirkungen auf die Benutzer zu minimieren, überprüfen Sie den [Spoof Intelligence-Bericht](learn-about-spoof-intelligence.md)regelmäßig. Nachdem Sie die erforderlichen Überschreibungen überprüft und vorgenommen haben, können Sie sicher sein, [Spoof Intelligence](set-up-anti-phishing-policies.md#spoof-settings) so zu konfigurieren, dass verdächtige Nachrichten in **Quarantäne verschoben** werden, anstatt Sie an den Junk-e-Mail-Ordner des Benutzers zu übermitteln.
+- Spoofing-e-Mail ist für Office 365 als Phishing in Defender markiert. Spoof ist manchmal gutartig, und manchmal möchten die Benutzer, dass Sie nicht unter Quarantäne gestellt werden. Um die Auswirkungen auf die Benutzer zu minimieren, überprüfen Sie den [Spoof Intelligence-Bericht](learn-about-spoof-intelligence.md)regelmäßig. Nachdem Sie die erforderlichen Überschreibungen überprüft und vorgenommen haben, können Sie sicher sein, [Spoof Intelligence](set-up-anti-phishing-policies.md#spoof-settings) so zu konfigurieren, dass verdächtige Nachrichten in **Quarantäne verschoben** werden, anstatt Sie an den Junk-e-Mail-Ordner des Benutzers zu übermitteln.
 
 - Sie können den obigen Schritt für den Identitätswechsel (Domäne oder Benutzer) wiederholen. Der Identitätswechsel Bericht finden Sie unter **Threat Management** \> **Dashboard** \> **Insights**.
 

@@ -1,6 +1,6 @@
 ---
-title: Arbeiten mit erweiterten Jagd Abfrageergebnissen im Microsoft Threat Protection
-description: Nutzen Sie die von Advanced Hunting zurückgegebenen Abfrageergebnisse in Microsoft Threat Protection.
+title: Arbeiten mit erweiterten Jagd Abfrageergebnissen in Microsoft 365 Defender
+description: Nutzen Sie die Abfrageergebnisse, die von Advanced Hunting in Microsoft 365 Defender zurückgegeben werden.
 keywords: Erweiterte Suche, Bedrohungs Suche, Cyber-Bedrohungs Suche, Microsoft Threat Protection, Microsoft 365, MTP, m365, Suche, Abfrage, Telemetrie, benutzerdefinierte Erkennungen, Schema, Kusto, Microsoft 365, Microsoft Threat Protection, Visualisierung, Diagramm, Filter, Drilldown
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: e19859189b57bbc9a6a4bbfb87fb224b2735331b
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: de26989b9092b783a45d27ad2a529720d21169f8
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48431075"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844128"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>Arbeiten mit erweiterten Jagd Abfrageergebnissen
 
@@ -32,7 +32,7 @@ ms.locfileid: "48431075"
 
 
 **Gilt für:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
@@ -146,7 +146,7 @@ Klicken Sie mit der rechten Maustaste auf einen Wert im Resultset, um die Abfrag
 ## <a name="filter-the-query-results"></a>Filtern der Abfrageergebnisse
 Die rechts angezeigten Filter bieten eine Zusammenfassung des Resultsets. Jede Spalte verfügt über einen eigenen Abschnitt, in dem die für diese Spalte und die Anzahl der Instanzen eindeutigen Werte aufgelistet werden.
 
-Verfeinern Sie die Abfrage, indem `+` `-` Sie die Schaltflächen oder für die Werte auswählen, die Sie einschließen oder ausschließen möchten, und wählen Sie dann **Abfrage ausführen**aus.
+Verfeinern Sie die Abfrage, indem `+` `-` Sie die Schaltflächen oder für die Werte auswählen, die Sie einschließen oder ausschließen möchten, und wählen Sie dann **Abfrage ausführen** aus.
 
 ![Abbildung eines erweiterten Suchfilters](../../media/advanced-hunting-filter.png)
 

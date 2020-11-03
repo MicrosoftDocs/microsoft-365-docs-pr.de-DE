@@ -1,6 +1,6 @@
 ---
-title: Vorfall-Ressourcentyp in der Microsoft Threat Protection-API
-description: Erfahren Sie mehr über die Methoden und Eigenschaften des Incident-Ressourcentyps in Microsoft Threat Protection.
+title: Vorfall-Ressourcentyp in der Microsoft 365 Defender-API
+description: Erfahren Sie mehr über die Methoden und Eigenschaften des Incident-Ressourcentyps in Microsoft 365 Defender
 keywords: Vorfall, Vorfälle, API
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ac149ca7263b8ef8bb37a7dd18bf0787a3114b37
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 68bee647cdd5687dbaad08ce3cd01b427dabf030
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201303"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844020"
 ---
 # <a name="incident-resource-type"></a>Vorfall-Ressourcentyp
 
@@ -32,7 +32,7 @@ ms.locfileid: "48201303"
 
 
 **Gilt für:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >Einige Informationen beziehen sich auf Vorabversionen von Produkten, die vor der kommerziellen Veröffentlichung noch erheblich geändert werden können. Microsoft übernimmt mit diesen Informationen keinerlei Gewährleistung, sei sie ausdrücklich oder konkludent.
@@ -56,7 +56,7 @@ createdTime | DateTimeOffset | Das Datum und die Uhrzeit (in UTC), an denen der 
 Last Update time | DateTimeOffset | Datum und Uhrzeit (in UTC) der Vorfall wurde zuletzt aktualisiert.
 assignedTo | string | Besitzer des Vorfalls.
 Schweregrad | Enum | Schweregrad des Vorfalls. Mögliche Werte sind: ```UnSpecified``` , ```Informational``` , ```Low``` ```Medium``` und ```High``` .
-Status | Enum | Gibt den aktuellen Status des Vorfalls an. Mögliche Werte sind: ```Active``` ```Resolved``` und ```Redirected``` .
+status | Enum | Gibt den aktuellen Status des Vorfalls an. Mögliche Werte sind: ```Active``` ```Resolved``` und ```Redirected``` .
 classification | Enum | Spezifikation des Vorfalls. Mögliche Werte sind: ```Unknown```, ```FalsePositive``` und ```TruePositive```.
 Bestimmung | Enum | Gibt die Ermittlung des Vorfalls an. Mögliche Werte: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware```, ```Other```.
 tags | Zeichenfolgenliste | Liste der Vorfall Tags.

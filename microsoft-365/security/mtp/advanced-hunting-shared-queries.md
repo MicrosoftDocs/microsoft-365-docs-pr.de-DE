@@ -1,5 +1,5 @@
 ---
-title: 'Verwenden von freigegebenen Abfragen in Microsoft Bedrohungsschutz: Erweiterte Suche'
+title: Verwenden von freigegebenen Abfragen in Microsoft 365 Defender Advanced Hunting
 description: Beginnen Sie sofort mit der Bedrohungssuche mit vordefinierten und freigegebenen Abfragen. Geben Sie Ihre Abfragen für die Öffentlichkeit oder Ihre Organisation frei.
 keywords: Erweiterte Suche, Bedrohungs Suche, Cyber-Bedrohungs Suche, Microsoft Threat Protection, Microsoft 365, MTP, m365, Suche, Abfrage, Telemetrie, benutzerdefinierte Erkennungen, Schema, Kusto, GitHub Repo, meine Abfragen, freigegebene Abfragen
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 7cdb15be274c89bd92995b9e947489c62521c6bb
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 48da1a3a64926f44582e7872f0b0ee03240409ca
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429683"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844080"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>Verwenden von freigegebenen Abfragen bei der erweiterten Suche
 
@@ -32,7 +32,7 @@ ms.locfileid: "48429683"
 
 
 **Gilt für:**
-- Microsoft-Bedrohungsschutz
+- Microsoft 365 Defender
 
 
 
@@ -45,7 +45,7 @@ Sie können eine neue oder vorhandene Abfrage so speichern, dass Sie nur für Si
 
 1. Erstellen oder Ändern einer Abfrage. 
 
-2. Klicken Sie auf die Dropdownschaltfläche **Abfrage speichern**, und wählen Sie **Speichern unter**aus.
+2. Klicken Sie auf die Dropdownschaltfläche **Abfrage speichern** , und wählen Sie **Speichern unter** aus.
     
 3. Geben Sie einen Namen für die Abfrage ein. 
 
@@ -65,7 +65,7 @@ Sie können eine neue oder vorhandene Abfrage so speichern, dass Sie nur für Si
 2. Wählen Sie **Löschen** aus, und bestätigen Sie Löschung. Oder wählen Sie **Umbenennen** aus und geben Sie einen neuen Namen für die Abfrage ein.
 
 ## <a name="create-a-direct-link-to-a-query"></a>Erstellen eines direkten Links zu einer Abfrage
-Um einen Link zu generieren, der Ihre Abfrage direkt im erweiterten Suchabfrage-Editor öffnet, schließen Sie Ihre Abfrage ab und wählen Sie **Link freigeben**aus.
+Um einen Link zu generieren, der Ihre Abfrage direkt im erweiterten Suchabfrage-Editor öffnet, schließen Sie Ihre Abfrage ab und wählen Sie **Link freigeben** aus.
 
 ## <a name="access-queries-in-the-github-repository"></a>Access-Abfragen im GitHub-Repository  
 Microsoft-Sicherheitsexperten Teilen regelmäßig Abfragen zur erweiterten Suche in einem [dazu vorgesehenen öffentlichen Repository auf GitHub](https://aka.ms/hunting-queries). Dieses Repository ist für Beiträge geöffnet. Um dazu beizutragen, [treten Sie GitHub kostenlos bei](https://github.com/).

@@ -13,20 +13,20 @@ MS.collection: ''
 search.appverid: MET150
 description: Behebung von Bedrohungen
 appliesto:
-- Microsoft Threat Protection
-ms.openlocfilehash: a7c1f6f89f5414f5fc6ef8dd59d2894195e75f7f
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+- Microsoft 365 Defender
+ms.openlocfilehash: af34b171cb213836d47edb2fb2905fb75341b02f
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48774059"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845600"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Beheben von in Office 365 zugestellten böswilligen e-Mails
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Die Wiederherstellung bedeutet, dass eine vorgeschriebene Aktion gegen eine Bedrohung erfolgt. Böswillige e-Mails, die an Ihre Organisation gesendet werden, können durch das System, durch eine automatische Bereinigung (Zero-Hour Auto-Purge) oder durch Sicherheitsteams durch Korrekturaktionen wie *Verschieben in den Posteingang* , verschieben in *Junk* , *verschieben zu gelöschten Elementen* , *Soft Delete* oder *Hard Delete* bereinigt werden. Mit Office Advanced Threat Protection (Office ATP) P2/E5 können Sicherheitsteams Bedrohungen in e-Mail-und Collaboration-Funktionen durch manuelle und automatisierte Untersuchung beheben.
+Die Wiederherstellung bedeutet, dass eine vorgeschriebene Aktion gegen eine Bedrohung erfolgt. Böswillige e-Mails, die an Ihre Organisation gesendet werden, können durch das System, durch eine automatische Bereinigung (Zero-Hour Auto-Purge) oder durch Sicherheitsteams durch Korrekturaktionen wie *Verschieben in den Posteingang* , verschieben in *Junk* , *verschieben zu gelöschten Elementen* , *Soft Delete* oder *Hard Delete* bereinigt werden. Mit Microsoft Defender für Office 365 P2/E5 können Sicherheitsteams Bedrohungen in e-Mail-und Zusammenarbeitsfunktionen durch manuelle und automatisierte Untersuchung beheben.
 
 > [!NOTE]
 > Um böswillige e-Mails zu beheben, benötigen Sicherheitsteams die *Such-und Säuberungs* Rolle, die Ihnen zugewiesen ist. Die Rollenzuweisung erfolgt über Berechtigungen im Security and Compliance Center.
@@ -44,10 +44,10 @@ Um beispielsweise Nachrichtenkopfzeilen anzeigen oder e-Mail-Inhalte herunterlad
 |Verwenden von Threat Explorer zum Anzeigen von Kopfzeilen und Herunterladen von an Postfächern zugestellten e-Mails|Globaler Administrator <br>Sicherheitsadministrator <br> Sicherheitsleseberechtigter <br> Vorschau|Ja|
 
 > [!NOTE]
-> Vorschau ist eine *Rolle* , keine *Rollengruppe* . Die Vorschau Rolle muss einer vorhandenen Rollengruppe für Office 365 hinzugefügt werden. Die *globale Administrator Rolle* wird im [Microsoft 365 Admin Center](https://admin.microsoft.com)zugewiesen. Die Rollen "Sicherheits Administrator" und "Sicherheits Leser" werden in den [Sicherheits-und Compliance Centern](https://protection.office.com)zugewiesen. Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Security and Compliance Centers](permissions-in-the-security-and-compliance-center.md).
+> Vorschau ist eine *Rolle* , keine *Rollengruppe*. Die Vorschau Rolle muss einer vorhandenen Rollengruppe für Office 365 hinzugefügt werden. Die *globale Administrator Rolle* wird im [Microsoft 365 Admin Center](https://admin.microsoft.com)zugewiesen. Die Rollen "Sicherheits Administrator" und "Sicherheits Leser" werden in den [Sicherheits-und Compliance Centern](https://protection.office.com)zugewiesen. Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Security and Compliance Centers](permissions-in-the-security-and-compliance-center.md).
 
 > [!NOTE]
-> Administratoren können erforderliche Aktionen für e-Mails durchführen, aber um diese Aktionen genehmigt zu erhalten, muss Ihnen die *Such-und Säuberungs* Rolle über die Berechtigungen des **Security and Compliance Center** zugewiesen sein  >  **Permissions** .
+> Administratoren können erforderliche Aktionen für e-Mails durchführen, aber um diese Aktionen genehmigt zu erhalten, muss Ihnen die *Such-und Säuberungs* Rolle über die Berechtigungen des **Security and Compliance Center** zugewiesen sein  >  **Permissions**.
 
 ## <a name="manual-and-automated-remediation"></a>Manuelle und automatische Korrektur
 

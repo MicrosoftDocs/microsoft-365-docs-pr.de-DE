@@ -1,6 +1,6 @@
 ---
-title: Einrichten Ihres Microsoft Threat Protection-Testlabors oder einer Pilotumgebung
-description: Greifen Sie auf Microsoft 365 Security Center zu, und richten Sie Ihre Microsoft Threat Protection Test Lab-Umgebung ein.
+title: Einrichten Ihrer Microsoft 365 Defender Test Lab-oder Pilotumgebung
+description: Greifen Sie auf Microsoft 365 Security Center zu, und richten Sie Ihre Microsoft 365 Defender Test Lab-Umgebung ein.
 keywords: Microsoft Threat Protection-Test-Setup, Microsoft Threat Protection Pilot-Setup, Testen von Microsoft Threat Protection, Microsoft Threat Protection Evaluation Lab-Setup
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,42 +18,42 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: 53ff0842e73e275bf4a8fa8b18c1d08ad70a64ec
-ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
+ms.openlocfilehash: 47f4ceeebd50784b1880a028ebe2698012c406da
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418133"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844824"
 ---
-# <a name="set-up-your-microsoft-threat-protection-trial-lab-environment"></a>Einrichten Ihrer Microsoft Threat Protection-Testumgebung 
+# <a name="set-up-your-microsoft-365-defender-trial-lab-environment"></a>Einrichten Ihrer Microsoft 365 Defender Test Lab-Umgebung 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Gilt für:**
-- Microsoft Threat Protection 
+- Microsoft 365 Defender 
 
 
-Das Erstellen eines Microsoft Threat Protection-Testlabors oder einer Pilotumgebung und deren Bereitstellung ist ein dreistufiger Prozess:
+Das Erstellen eines Microsoft 365 Defender-Testlabors oder einer Pilotumgebung und deren Bereitstellung ist ein dreistufiger Prozess:
 
 <br>
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;" >
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval?view=o365-worldwide"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab or pilot environment" title="Vorbereiten des Microsoft Threat Protection-Evaluierungs Labors oder der Pilotumgebung" />
+        <img src="../../media/prepare.png" alt="Prepare your Microsoft 365 Defender trial lab or pilot environment" title="Vorbereiten Ihres Microsoft 365 Defender-Evaluierungs Labors oder einer Pilotumgebung" />
       <br/>Phase 1: Vorbereiten </a><br>
     </td>
      <td align="center"bgcolor="#d5f5e3">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval?view=o365-worldwide">
-        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab or pilot environment" title="Einrichten Ihres Microsoft Threat Protection-Testlabors oder einer Pilotumgebung" />
+        <img src="../../media/setup.png" alt="Set up your Microsoft 365 Defender trial lab or pilot environment" title="Einrichten Ihrer Microsoft 365 Defender Test Lab-oder Pilotumgebung" />
       <br/>Phase 2: Setup </a><br>
     </td>
     <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide">
         <img src="../../media/config-onboard.png" alt="
-Configure each Microsoft Threat Protection pillar for your Microsoft Threat Protection trial lab or pilot environment and onboard your endpoints" title="
-Konfigurieren der einzelnen Microsoft Threat Protection-Pfeiler für Ihre Microsoft Threat Protection-Testumgebung oder-Pilotumgebung und an Bord ihrer Endpunkte" />
+Configure each Microsoft 365 Defender pillar for your Microsoft 365 Defender trial lab or pilot environment and onboard your endpoints" title="
+Konfigurieren der einzelnen Microsoft 365 Defender-Pfeiler für Ihre Microsoft 365 Defender Test Lab oder Pilotumgebung und an Bord ihrer Endpunkte" />
       <br/>Phase 3: Konfigurieren von & Onboard </a><br>
 </td>
 
@@ -77,7 +77,7 @@ In dieser Phase werden Sie zu folgenden Themen geführt:
 >[!NOTE]
 >Wenn Sie bereits über ein vorhandenes Office 365-oder Azure Active Directory-Abonnement verfügen, können Sie die Schritte zum Erstellen von Office 365 E5-Testmandanten überspringen.
 
-1. Wechseln Sie zum [Office 365 E5-Produkt Portal](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software?activetab=pivot%3aoverviewtab) , und wählen Sie **﻿Kostenlose Testversion**aus.
+1. Wechseln Sie zum [Office 365 E5-Produkt Portal](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software?activetab=pivot%3aoverviewtab) , und wählen Sie **﻿Kostenlose Testversion** aus.
 
    ![Image of_Office 365 E5 ﻿kostenlose Test Seite](../../media/mtp-eval-9.png)
   
@@ -112,11 +112,11 @@ In dieser Phase werden Sie zu folgenden Themen geführt:
 
    ![Image of_Office 365 E5-Setup Seite, auf der Sie Ihre Anmeldung und e-Mail personalisieren sollten](../../media/mtp-eval-16.png)
  
-9. Hinzufügen eines txt-oder MX-Eintrags zum Überprüfen des Domänenbesitzes. Nachdem Sie den txt-oder MX-Eintrag zu Ihrer Domäne hinzugefügt haben, wählen Sie **überprüfen**aus.
+9. Hinzufügen eines txt-oder MX-Eintrags zum Überprüfen des Domänenbesitzes. Nachdem Sie den txt-oder MX-Eintrag zu Ihrer Domäne hinzugefügt haben, wählen Sie **überprüfen** aus.
 
    ![Image of_Office 365 E5-Setup Seite, auf der Sie einen MX-Eintrag txt hinzufügen sollten, um Ihre Domäne zu überprüfen](../../media/mtp-eval-17.png)
  
-10. Optional Erstellen Sie weitere Benutzerkonten für Ihren Mandanten. Sie können diesen Schritt überspringen, indem Sie auf **weiter**klicken.
+10. Optional Erstellen Sie weitere Benutzerkonten für Ihren Mandanten. Sie können diesen Schritt überspringen, indem Sie auf **weiter** klicken.
 
     ![Image of_Office 365 E5-Setup Seite, auf der Sie weitere Benutzer hinzufügen können](../../media/mtp-eval-18.png)
  
@@ -132,7 +132,7 @@ In dieser Phase werden Sie zu folgenden Themen geführt:
 
     ![Image of_Office 365 E5, wo Sie Ihre Onlinedienste auswählen können](../../media/mtp-eval-21.png)
 
-14. Fügen Sie Ihrer Domäne MX-, CNAME-und TXT-Einträge hinzu. Wählen Sie nach Abschluss die Option **überprüfen**aus.
+14. Fügen Sie Ihrer Domäne MX-, CNAME-und TXT-Einträge hinzu. Wählen Sie nach Abschluss die Option **überprüfen** aus.
 
     ![Bild of_Office 365 E5 hier können Sie Ihre DNS-Einträge hinzufügen](../../media/mtp-eval-22.png)
  
@@ -163,7 +163,7 @@ In dieser Phase werden Sie zu folgenden Themen geführt:
 
    ![Image of_Microsoft 365 E5 Startkosten lose Test Seite, auf der Sie die Schaltfläche "jetzt testen" starten sollten](../../media/mtp-eval-27.png)
  
-6. Wechseln Sie zum **Microsoft 365 Admin Center**  >  **Users**  >  **Active Users**. Wählen Sie Ihr Benutzerkonto aus, wählen Sie **Produktlizenzen verwalten**aus, und tauschen Sie dann die Lizenz von Office 365 E5 auf **Microsoft 365 E5**aus. Klicken Sie auf **Speichern**.
+6. Wechseln Sie zum **Microsoft 365 Admin Center**  >  **Users**  >  **Active Users**. Wählen Sie Ihr Benutzerkonto aus, wählen Sie **Produktlizenzen verwalten** aus, und tauschen Sie dann die Lizenz von Office 365 E5 auf **Microsoft 365 E5** aus. Klicken Sie auf **Speichern**.
 
    ![Image of_Microsoft 365 Admin Center-Seite, auf der Sie die Microsoft 365 E5-Lizenz auswählen können](../../media/mtp-eval-28.png)
  
@@ -178,5 +178,5 @@ In dieser Phase werden Sie zu folgenden Themen geführt:
 
 
 ## <a name="next-step"></a>Nächster Schritt
-|![Phase 3: Konfigurieren von & Onboard](../../media/config-onboard.png) <br>[Phase 3: Konfigurieren von & Onboard](config-mtpeval.md) | Konfigurieren Sie jede Microsoft Threat Protection-Säule für Ihr Microsoft Threat Protection-Test Labor oder Ihre Pilotumgebung und an Bord ihrer Endpunkte.
+|![Phase 3: Konfigurieren von & Onboard](../../media/config-onboard.png) <br>[Phase 3: Konfigurieren von & Onboard](config-mtpeval.md) | Konfigurieren Sie jede Microsoft 365 Defender-Säule für Ihre Microsoft 365 Defender Test Lab oder Pilotumgebung und an Bord ihrer Endpunkte.
 |:-------|:-----|

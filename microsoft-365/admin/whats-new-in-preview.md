@@ -21,12 +21,12 @@ description: Microsoft 365 Admin Center – erfahren Sie mehr über die Features
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 64c9939f7dd6c4370b80e74987263942dad0e62f
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: f861b346b1dcf9bb0670f1b6ac480f727e97af34
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208903"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845216"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Neuerungen im Microsoft 365 Admin Center
 
@@ -45,7 +45,7 @@ Und wenn Sie wissen möchten, was mit anderen Microsoft-Cloud-Diensten neu ist:
 - [Neuerungen im Exchange Admin Center](https://docs.microsoft.com/Exchange/whats-new)
 - [Neuerungen in Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
 - [Neuerungen im Microsoft 365 Compliance Center](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
-- [Neues in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)
+- [Neuerungen in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)
 - [Aktive Websites im SharePoint Online Admin Center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 - [Office-Updates](https://docs.microsoft.com/OfficeUpdates/)
 
@@ -59,12 +59,12 @@ Willkommen bei Microsoft Ignite – unserem ersten Online-Ignite. Wir hoffen, Si
 
 Wir haben eine Reihe von Funktionen für Multi-mandantenadministratoren wie Sie entwickelt, um Ihre Arbeit schneller und effizienter zu machen.
 
-- **Ihre Mandanten**: Wechseln Sie schnell zwischen den Mandanten, die Sie verwalten.
-- **Alle Mandanten**: eine neue Seite, auf der Sie schnell die Integrität aller Dienste Ihrer Mandanten, offener Dienstanfragen, Produkte und Abrechnung, Empfohlene Einrichtungsaufgaben und die Anzahl der Benutzer in diesem Mandanten anzeigen können.
-- **Setup**: die Seite Multi-Mandanten-Setup zeigt eine Listenansicht der Setup Seite an, die jedoch für viele Mandanten organisiert ist. Sie können sehen, welche Funktionen nicht aktiviert sind, welche Aufgaben für alle Mandanten abgeschlossen werden, Vorgänge, die Mandanten noch ausführen müssen. Diese Ansicht hilft Ihnen, die Funktions Akzeptanz zu überwachen und sicherzustellen, dass die empfohlenen Sicherheitssetup Aufgaben immer ausgeführt werden.
-- **Dienst Integrität**: in der Dienst Integritäts Ansicht wird angezeigt, ob sich Vorfälle oder Warnungen auf die Mandanten auswirken. Es wird Ihnen sogar mitteilen, wie viele Ihrer verwalteten Mandanten betroffen sind. Wählen Sie einfach einen Vorfall aus, um weitere Informationen auf der Registerkarte Übersicht zu erhalten, und wechseln Sie dann zur Registerkarte betroffene Mandanten, um einen Drilldown durchführen und diesen Mandanten zu unterstützen.
+- **Ihre Mandanten** : Wechseln Sie schnell zwischen den Mandanten, die Sie verwalten.
+- **Alle Mandanten** : eine neue Seite, auf der Sie schnell die Integrität aller Dienste Ihrer Mandanten, offener Dienstanfragen, Produkte und Abrechnung, Empfohlene Einrichtungsaufgaben und die Anzahl der Benutzer in diesem Mandanten anzeigen können.
+- **Setup** : die Seite Multi-Mandanten-Setup zeigt eine Listenansicht der Setup Seite an, die jedoch für viele Mandanten organisiert ist. Sie können sehen, welche Funktionen nicht aktiviert sind, welche Aufgaben für alle Mandanten abgeschlossen werden, Vorgänge, die Mandanten noch ausführen müssen. Diese Ansicht hilft Ihnen, die Funktions Akzeptanz zu überwachen und sicherzustellen, dass die empfohlenen Sicherheitssetup Aufgaben immer ausgeführt werden.
+- **Dienst Integrität** : in der Dienst Integritäts Ansicht wird angezeigt, ob sich Vorfälle oder Warnungen auf die Mandanten auswirken. Es wird Ihnen sogar mitteilen, wie viele Ihrer verwalteten Mandanten betroffen sind. Wählen Sie einfach einen Vorfall aus, um weitere Informationen auf der Registerkarte Übersicht zu erhalten, und wechseln Sie dann zur Registerkarte betroffene Mandanten, um einen Drilldown durchführen und diesen Mandanten zu unterstützen.
 - Mandanten **übergreifende Postfächer Migrationen** sind jetzt in der öffentlichen Vorschau ein neuer Dienst, mit dem Sie Postfächer zwischen Mandanten verschieben können, ohne dass extern und dann Onboard-Postfächer erforderlich sind. 
-- **Mandantenübergreifende Domänen Freigabe**: in Kürze können Sie an einer privaten Vorschau für Funktionen teilnehmen, die es Ihnen ermöglichen, eine Domäne in mehreren Mandanten freizugeben. Wenn Contoso beispielsweise "Flügel Spielzeug" erwirbt, kann Contoso die Domäne mit dem Flügelspiel Spielzeug teilen, damit die Benutzer in beiden Mandanten "contoso.com" als e-Mail-Adressen verwenden können.
+- **Mandantenübergreifende Domänen Freigabe** : in Kürze können Sie an einer privaten Vorschau für Funktionen teilnehmen, die es Ihnen ermöglichen, eine Domäne in mehreren Mandanten freizugeben. Wenn Contoso beispielsweise "Flügel Spielzeug" erwirbt, kann Contoso die Domäne mit dem Flügelspiel Spielzeug teilen, damit die Benutzer in beiden Mandanten "contoso.com" als e-Mail-Adressen verwenden können.
 
 ![Dienst Integritäts Seite für Mandanten, bei dem ein Vorfall ausgewählt ist und die Registerkarte betroffene Mandanten geöffnet ist. Das Navigationsmenü enthält alle Mandanten, Setup und Dienst Integrität als die einzigen Optionen.](../media/MAC-WN-MTinServiceHealth.png)
 
@@ -81,8 +81,8 @@ Prioritäts Konten stehen nur Organisationen zur Verfügung, die die folgenden A
 
 Es gibt zwei Möglichkeiten, um den Einstieg zu erhalten:
 
-- Wechseln Sie zu **Benutzer**, und wählen Sie dann im Menü weitere Aktionen die Option **Prioritäten Konten verwalten** aus, um Benutzer zur Liste hinzuzufügen.
-- Wechseln Sie zu **Setup**, suchen Sie nach der Setup Aufgabe **Überwachen Ihrer wichtigsten Konten**, und wählen Sie dann **Erste Schritte**aus.
+- Wechseln Sie zu **Benutzer** , und wählen Sie dann im Menü weitere Aktionen die Option **Prioritäten Konten verwalten** aus, um Benutzer zur Liste hinzuzufügen.
+- Wechseln Sie zu **Setup** , suchen Sie nach der Setup Aufgabe **Überwachen Ihrer wichtigsten Konten** , und wählen Sie dann **Erste Schritte** aus.
 
 Weitere Informationen zu Prioritäts Konten finden Sie unter über [Wachen von Prioritäts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) Konten und [e-Mail-Problemen für Prioritäts Konten](https://docs.microsoft.com/Exchange/mail-flow-best-practices/mail-flow-insights/mfi-email-issues-for-priority-accounts).
 
@@ -93,24 +93,24 @@ Wir haben mit dem Rollout einer neuen Suchumgebung für das Admin Center begonne
 - Das Suchfeld wurde in den Kopfbereich verschoben, in dem es "Microsoft 365 Admin Center" heißt, sodass Sie nun von einer beliebigen Seite aus suchen und nicht nur auf der Startseite. Wir haben sogar eine Verknüpfung: **ALT + S**.
 - Die Suche ist intelligenter und bietet Ihnen bessere Ergebnisse, sogar noch schneller. Versuchen Sie, "2FA" einzugeben, um loszulegen.
 - Suchergebnisse werden nach dem Typ des Elements oder der Aktion organisiert, die Sie ausführen können.
-  - **Benutzer**: Wählen Sie den Namen des Benutzers aus, und Sie können diesen Benutzer direkt dort bearbeiten. Wenn Sie das Menü weitere Aktionen neben dem Namen auswählen, können Sie das Kennwort zurücksetzen. Sie können nach Anzeigename, Nachname, Vorname, Benutzername oder primäre e-Mail-Adresse und e-Mail-Aliase suchen. Aber um eine exakte Übereinstimmung zu erhalten, suchen Sie nach primärer e-Mail-Adresse oder Benutzername.
-  - **Gruppen**: Bearbeiten Sie die Gruppe von einer beliebigen Seite, fügen Sie Mitglieder hinzu, und weisen Sie Besitzern zu.
-  - **Actions**: ähnlich wie Sie nach einem Benutzer suchen und dann Ihr Kennwort zurücksetzen können, können Sie auch "Kennwort zurücksetzen" auf jeder Seite durchsuchen und dann ein oder mehrere Kennwörter für Benutzer zurücksetzen.
-  - **Navigation**: mithilfe der Ergebnisse unter Navigation können Sie schnell zu einer Seite im Admin Center gelangen. Wenn Sie beispielsweise "Roles" Durchsuchen, gelangen Sie zur Seite "Rollen" für Azure AD Rollen.
-  - **Einstellungen**: Suchen Sie nach beliebigen Einstellungen im Zusammenhang mit Ihrer Organisation, den von Ihnen abonnierten Diensten sowie Sicherheits-und Datenschutzeinstellungen. 
-  - **Domänen**: Sie können schnell Links zu Ihren Domänen finden, und dann gelangen Sie über den Link zu der Übersicht und der Integritäts Seite dieser Domäne.
-  - **Dokumentation**: Wenn ein Ergebnis für Sie nicht gefunden werden kann, werden wir versuchen, eine Dokumentation zu finden, die Ihnen hilft. Es dauert etwas länger, bis die kuratierte Artikelliste eine Übereinstimmung findet, also warten Sie eine Sekunde, damit die Suche die Ergebnisse findet. 
-  - **Feedback**: haben Sie nicht gefunden, wonach Sie gesucht haben? Senden Sie uns Feedback von der Suche. Im Admin Center werden Suchfunktionen für weitere Seiten und mehr Features hinzugefügt.
+  - **Benutzer** : Wählen Sie den Namen des Benutzers aus, und Sie können diesen Benutzer direkt dort bearbeiten. Wenn Sie das Menü weitere Aktionen neben dem Namen auswählen, können Sie das Kennwort zurücksetzen. Sie können nach Anzeigename, Nachname, Vorname, Benutzername oder primäre e-Mail-Adresse und e-Mail-Aliase suchen. Aber um eine exakte Übereinstimmung zu erhalten, suchen Sie nach primärer e-Mail-Adresse oder Benutzername.
+  - **Gruppen** : Bearbeiten Sie die Gruppe von einer beliebigen Seite, fügen Sie Mitglieder hinzu, und weisen Sie Besitzern zu.
+  - **Actions** : ähnlich wie Sie nach einem Benutzer suchen und dann Ihr Kennwort zurücksetzen können, können Sie auch "Kennwort zurücksetzen" auf jeder Seite durchsuchen und dann ein oder mehrere Kennwörter für Benutzer zurücksetzen.
+  - **Navigation** : mithilfe der Ergebnisse unter Navigation können Sie schnell zu einer Seite im Admin Center gelangen. Wenn Sie beispielsweise "Roles" Durchsuchen, gelangen Sie zur Seite "Rollen" für Azure AD Rollen.
+  - **Einstellungen** : Suchen Sie nach beliebigen Einstellungen im Zusammenhang mit Ihrer Organisation, den von Ihnen abonnierten Diensten sowie Sicherheits-und Datenschutzeinstellungen. 
+  - **Domänen** : Sie können schnell Links zu Ihren Domänen finden, und dann gelangen Sie über den Link zu der Übersicht und der Integritäts Seite dieser Domäne.
+  - **Dokumentation** : Wenn ein Ergebnis für Sie nicht gefunden werden kann, werden wir versuchen, eine Dokumentation zu finden, die Ihnen hilft. Es dauert etwas länger, bis die kuratierte Artikelliste eine Übereinstimmung findet, also warten Sie eine Sekunde, damit die Suche die Ergebnisse findet. 
+  - **Feedback** : haben Sie nicht gefunden, wonach Sie gesucht haben? Senden Sie uns Feedback von der Suche. Im Admin Center werden Suchfunktionen für weitere Seiten und mehr Features hinzugefügt.
 
 ### <a name="microsoft-365-admin-mobile-app"></a>Microsoft 365 Administrator Mobile App
 
 Mit dem [Microsoft 365-Administrator Mobile App](https://www.microsoft.com/microsoft-365/business/manage-office-365-admin-app), das in Ihrem Abonnement enthalten ist, können Sie Microsoft 365 von Ihrem mobilen Gerät aus verwalten, damit Sie sich von Ihrem Schreibtisch aus für tägliche Aufgaben verlassen können. Tatsächlich gibt es über 90 Features in der APP--und wir haben noch ein paar hinzugefügt:
 
-- **Unterstützung für die Microsoft InTune-Richtlinien für die Verwaltung mobiler Anwendungen und für den bedingten Zugriff**: Sie können jetzt Ihr persönliches Gerät zum Verwalten von Microsoft 365 verwenden, selbst wenn Ihre Organisation die Mobile Anwendungsverwaltung und die bedingten Zugriffsrichtlinien von InTune aktiviert hat.
-- **Benachrichtigungen im Nachrichtencenter**: Aktivieren Sie Benachrichtigungen für das Nachrichtencenter unter **Einstellungen**  >  **Notifications** , wenn Sie über neue Nachrichtencenter-Beiträge benachrichtigt werden möchten. Durch Benachrichtigungen möchten wir sicherstellen, dass Sie über wichtige Informationen und Ereignisse in Ihrem Mandanten informiert bleiben.
-- Benachrichtigungen zur **Abrechnung**: Sie können Benachrichtigungen auch bei **Einstellungs**  >  **Benachrichtigungen** aktivieren, wenn Sie Abrechnungs Benachrichtigungen auf Ihrem Gerät erhalten möchten, wenn ein Abonnement demnächst abläuft.
-- **Dunkler Modus**: Willkommen auf der dunklen Seite des Mobile App. Dies war eines der am häufigsten angeforderten Features. Wechseln Sie zu **Einstellungen**  >  **Designs** , um es zu aktivieren.
-- **Ein Problem melden**: Sie können jetzt ein Problem in der APP melden oder von anderen Administratoren gemeldete Probleme anzeigen. Besuchen Sie den **Dienststatus** , um ihn zu überprüfen.
+- **Unterstützung für die Microsoft InTune-Richtlinien für die Verwaltung mobiler Anwendungen und für den bedingten Zugriff** : Sie können jetzt Ihr persönliches Gerät zum Verwalten von Microsoft 365 verwenden, selbst wenn Ihre Organisation die Mobile Anwendungsverwaltung und die bedingten Zugriffsrichtlinien von InTune aktiviert hat.
+- **Benachrichtigungen im Nachrichtencenter** : Aktivieren Sie Benachrichtigungen für das Nachrichtencenter unter **Einstellungen**  >  **Notifications** , wenn Sie über neue Nachrichtencenter-Beiträge benachrichtigt werden möchten. Durch Benachrichtigungen möchten wir sicherstellen, dass Sie über wichtige Informationen und Ereignisse in Ihrem Mandanten informiert bleiben.
+- Benachrichtigungen zur **Abrechnung** : Sie können Benachrichtigungen auch bei **Einstellungs**  >  **Benachrichtigungen** aktivieren, wenn Sie Abrechnungs Benachrichtigungen auf Ihrem Gerät erhalten möchten, wenn ein Abonnement demnächst abläuft.
+- **Dunkler Modus** : Willkommen auf der dunklen Seite des Mobile App. Dies war eines der am häufigsten angeforderten Features. Wechseln Sie zu **Einstellungen**  >  **Designs** , um es zu aktivieren.
+- **Ein Problem melden** : Sie können jetzt ein Problem in der APP melden oder von anderen Administratoren gemeldete Probleme anzeigen. Besuchen Sie den **Dienststatus** , um ihn zu überprüfen.
 
 ![Die Integritäts Seite in der Microsoft 365-Administrator-App mit Benachrichtigungen für das Nachrichtencenter, Dienststatus, Abrechnungs Benachrichtigungen.](../media/MAC-WN-AdminMobileApp.png)
 
@@ -120,7 +120,7 @@ Kleine und mittelständische Unternehmen erhalten möglicherweise eine Empfehlun
 
 ### <a name="remote-work-collection"></a>Remote-Arbeits Sammlung
 
-Im Oktober fügen wir eine Remote-Arbeits Sammlung hinzu, um Besitzern von Kleinunternehmen und deren Mitarbeitern zu helfen, Online zu arbeiten und Remote zu arbeiten.  Das **Remote work Essentials** -Setup ist eine kuratierte Liste aller Features, die Microsoft empfiehlt, Remote-Arbeit sicher zu aktivieren und effektiv zusammenzuarbeiten. In ein paar Wochen können Sie es in **Setup**  >  **Remote work Essentials**ausprobieren.
+Im Oktober fügen wir eine Remote-Arbeits Sammlung hinzu, um Besitzern von Kleinunternehmen und deren Mitarbeitern zu helfen, Online zu arbeiten und Remote zu arbeiten.  Das **Remote work Essentials** -Setup ist eine kuratierte Liste aller Features, die Microsoft empfiehlt, Remote-Arbeit sicher zu aktivieren und effektiv zusammenzuarbeiten. In ein paar Wochen können Sie es in **Setup**  >  **Remote work Essentials** ausprobieren.
 
 ![Seite "Remote work Essentials" im Setup mit 7 nicht gestarteten Aufgaben.](../media/MAC-WN-RemoteWork.png)
 
@@ -135,7 +135,7 @@ Wir untersuchen und aktualisieren die Inhalte und Tools ständig, damit Sie mit 
 - Beheben von Problemen mit DKIM-Setup
 - Diagnostizieren von InTune-Benutzer Registrierungsfehlern
 
-Und wir stellen die neue und verbesserte Supporterfahrung bereit, die Sie bereits im Microsoft 365 Admin Center für einige der anderen Admin Center sehen. Administratoren von Teams und Security and Compliance Admin Center verfügen bereits über diese neue Erfahrung. In Kürze werden die **Exchange-Verwaltungskonsole**, das **SharePoint Admin Center**und **Office.com** mit dieser neuen Hilfe Erfahrung für Administratoren aktualisiert.
+Und wir stellen die neue und verbesserte Supporterfahrung bereit, die Sie bereits im Microsoft 365 Admin Center für einige der anderen Admin Center sehen. Administratoren von Teams und Security and Compliance Admin Center verfügen bereits über diese neue Erfahrung. In Kürze werden die **Exchange-Verwaltungskonsole** , das **SharePoint Admin Center** und **Office.com** mit dieser neuen Hilfe Erfahrung für Administratoren aktualisiert.
 
 ### <a name="manage-changes-with-microsoft-planner"></a>Verwalten von Änderungen mit Microsoft Planner
 
@@ -165,9 +165,9 @@ Das nächste Update für diesen Artikel wird am Tag des ersten Starts unseres er
 
 In der Abonnementverwaltung wurden viele Aufgaben ausgeführt, um die Seite schneller zu laden, schneller zu finden, was Sie suchen, und um die Standards für die Barrierefreiheit im Internet ([WCAG 2,1 Guidelines](http://www.w3.org/TR/WCAG21/)) zu erfüllen.
 
-- **Tabellen Umgestaltung**: die Tabelle wurde neu gestaltet, sodass Sie ähnliche Abonnements gruppieren können. Wechseln Sie zu **Abrechnung**  >  **ihrer Produkte**.
-- **Produkt Details**: Weitere Details zu ihren Abonnements erhalten Sie, indem Sie das Produkt in der Liste auswählen.
-- **Machen Sie alles von hier aus**: und Sie müssen nicht mehr auf mehrere Seiten wechseln, um ein Produkt zu verwalten. Wenn Sie beispielsweise ein Abonnement stornieren müssen, wird der Bereich geöffnet, um die Aktion direkt dort durchführen zu können.
+- **Tabellen Umgestaltung** : die Tabelle wurde neu gestaltet, sodass Sie ähnliche Abonnements gruppieren können. Wechseln Sie zu **Abrechnung**  >  **ihrer Produkte**.
+- **Produkt Details** : Weitere Details zu ihren Abonnements erhalten Sie, indem Sie das Produkt in der Liste auswählen.
+- **Machen Sie alles von hier aus** : und Sie müssen nicht mehr auf mehrere Seiten wechseln, um ein Produkt zu verwalten. Wenn Sie beispielsweise ein Abonnement stornieren müssen, wird der Bereich geöffnet, um die Aktion direkt dort durchführen zu können.
 
 ![Seite "Produkte" mit geöffnetem Abonnement Bereich kündigen.](../media/MAC-WN-SubscrDetails.png)
 
@@ -175,7 +175,7 @@ In der Abonnementverwaltung wurden viele Aufgaben ausgeführt, um die Seite schn
 
 Die Domänenverwaltung kann kompliziert sein, und wir haben ein neues Feature veröffentlicht, um es einfacher zu machen. Wechseln Sie zu Einstellungen > Domänen, und wählen Sie dann eine Domäne aus, um weitere Informationen zu Ihrer Domäne und der Domänenintegrität zu erhalten.
 
-:::image type="content" source="../media/MAC-WN-DomainDNS.PNG" alt-text="Seite "Domänendetails" für contoso.com":::
+:::image type="content" source="../media/MAC-WN-DomainDNS.PNG" alt-text="Seite &quot;Domänendetails&quot; für contoso.com":::
 
 ### <a name="docs-training-and-videos-july-2020"></a>Dokumente, Schulungen und Videos (Juli 2020)
 
@@ -215,7 +215,7 @@ Weitere Informationen zu diesen Rollen finden Sie unter [Informationen zu Admini
 
 ### <a name="export-groups-list"></a>Liste "Gruppen exportieren"
 
-Wir haben viele Administratoren gehört, dass Sie Informationen über Gruppen und deren Nutzung für Personen freigeben müssen, die keinen Zugriff auf die Admin Center haben. Sie können die Gruppenliste nun zu Überwachungszwecken in eine CSV-Datei exportieren, was bedeutet, dass Sie das alte PowerShell-Skript auswerfen können. Um es auszuprobieren, wechseln Sie zu **Gruppen**  >  **Gruppen**, und wählen Sie dann in der Befehlsleiste **Gruppen exportieren** aus.
+Wir haben viele Administratoren gehört, dass Sie Informationen über Gruppen und deren Nutzung für Personen freigeben müssen, die keinen Zugriff auf die Admin Center haben. Sie können die Gruppenliste nun zu Überwachungszwecken in eine CSV-Datei exportieren, was bedeutet, dass Sie das alte PowerShell-Skript auswerfen können. Um es auszuprobieren, wechseln Sie zu **Gruppen**  >  **Gruppen** , und wählen Sie dann in der Befehlsleiste **Gruppen exportieren** aus.
 
 ### <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365-Center – Lösungen und Architekturen
 
@@ -229,14 +229,14 @@ In diesem Monat haben wir eine neue Website mit dem [https://docs.microsoft.com]
 
 ### <a name="docs-training-and-videos-may"></a>Dokumente, Schulungen und Videos (Mai)
 
-- **Was ist neu in Microsoft 365 Video Series**: diesen Monat decken wir die neue Supporterfahrung in den Teams admin und Security and Compliance Center, Planner Integration in das Nachrichten Center und das neue 3X3-Video Layout in Microsoft Teams ab. 
+- **Was ist neu in Microsoft 365 Video Series** : diesen Monat decken wir die neue Supporterfahrung in den Teams admin und Security and Compliance Center, Planner Integration in das Nachrichten Center und das neue 3X3-Video Layout in Microsoft Teams ab. 
 - Die Seite [Microsoft 365 Admin Center Help](https://docs.microsoft.com/microsoft-365/admin/) Hub wurde aktualisiert, um Ihnen zu helfen, schneller zu finden, was Sie benötigen. Wenn Sie diese Seite jetzt betrachten, haben wir eine Karte hinzugefügt, um Sie über wichtige Updates und Änderungen zu informieren.
 
-## <a name="april-2020"></a>April 2020
+## <a name="april-2020"></a>April 2020
 
 ### <a name="intune-roles-management"></a>InTune-Rollenverwaltung
 
-[April 2020](#april-2020)
+[April 2020](#april-2020)
 
 Nun, wir haben es geschafft! Wir haben den zweiten Schritt hin zu einer einheitlichen Rollen Erfahrung unternommen, und Sie können jetzt InTune-Rollen im Microsoft 365 Admin Center verwalten. Sie können auch Features wie die Suche nach Rollen und das Anzeigen von Rollen Berechtigungen nutzen. Dies bedeutet, dass Sie nicht zwei separate Tools zum Verwalten von Rollen für Microsoft 365 und InTune benötigen. Wenn Sie sich beim Microsoft 365 Admin Center anmelden, sehen Sie, dass auf der Seite "Rollen" zwei Pivots vorhanden sind: eine für Azure AD und eine für InTune.
 
@@ -263,7 +263,7 @@ Beim Erstellen einer Dienstanforderung wird nun zusätzlich zu Telefon und e-Mai
 Durch die verstärkte Nutzung von Teams haben wir einige Features hinzugefügt, die Ihnen bei der Verwaltung helfen.
 
 - Eine neue Empfehlungskarte auf der Admin Center-Startseite zeigt an, welche Benutzer Microsoft Teams nicht 30 Tage lang aktiv verwendet haben. Sie können diesen Benutzern eine Schulungs-e-Mail senden, um die Verwendung von Microsoft Teams zu starten.
-- **Zusammenführen von Personen mit Microsoft Teams**: Wechseln Sie zu **Setup** , um eine neue Seite zu sehen, die Sie beim Aktivieren von Teams für lizenzierte Benutzer und beim Zulassen von Gastzugriffen unterstützt, damit Sie mit externen Kunden in Teams arbeiten können.
+- **Zusammenführen von Personen mit Microsoft Teams** : Wechseln Sie zu **Setup** , um eine neue Seite zu sehen, die Sie beim Aktivieren von Teams für lizenzierte Benutzer und beim Zulassen von Gastzugriffen unterstützt, damit Sie mit externen Kunden in Teams arbeiten können.
 - Eine Microsoft Teams-Karte ist jetzt standardmäßig auf Ihrer Startseite fixiert. Sie zeigt an, ob Microsoft Teams aktiviert ist und ob Gastzugriff zulässig ist. Außerdem können Sie den Installationsstatus für neu lizenzierte Microsoft Teams-Benutzer überprüfen und überprüfen, ob sich Netzwerkprobleme auf die Benutzer von Microsoft Teams auswirken können.
 - Schließlich ist Microsoft Teams nun ein Schritt im ersten Setup-Ablauf, wenn Sie eine Lizenz erworben haben, die Teams enthält.
 
@@ -287,7 +287,7 @@ Wir haben zwei Updates für Gruppen in diesem Monat:
 
 ### <a name="docs-videos-and-training-april"></a>Dokumente, Videos und Schulungen (April)
 
-**Was ist neu in Microsoft 365 Video Series**: diesen Monat decken wir Tipps und Ressourcen ab, um kleinen Unternehmen den Übergang zu Remote-Arbeit zu erleichtern, einschließlich der Bereitstellung von Microsoft Teams, Remote-Arbeits Schulungsressourcen, um mit Kunden und Partnern in Verbindung zu bleiben, und dem neuen Business Voice-Plan von Microsoft 365. [Neuerungen in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
+**Was ist neu in Microsoft 365 Video Series** : diesen Monat decken wir Tipps und Ressourcen ab, um kleinen Unternehmen den Übergang zu Remote-Arbeit zu erleichtern, einschließlich der Bereitstellung von Microsoft Teams, Remote-Arbeits Schulungsressourcen, um mit Kunden und Partnern in Verbindung zu bleiben, und dem neuen Business Voice-Plan von Microsoft 365. [Neuerungen in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
 #### <a name="for-your-users"></a>Für Ihre Benutzer
 
@@ -342,7 +342,7 @@ Die neuen Produktnamen treten am 21. April 2020 in Kraft. Dies ist nur eine Änd
 |Office 365 Business Essentials     |   Microsoft 365 Business Basic      |
 |Office 365 Business Premium     |    Microsoft 365 Business Standard     |
 |Microsoft 365 Business     |    Microsoft 365 Business Premium     |
-|Office 365 Business     |    Microsoft 365 Apps for Business       |
+|Office 365 Business     |    Microsoft 365 Apps for Business       |
 |Office 365 ProPlus    |   Microsoft 365-Apps für Unternehmen      |
 
 ### <a name="videos-training-and-docs"></a>Videos, Schulungen und Dokumente
@@ -353,7 +353,7 @@ Die neuen Produktnamen treten am 21. April 2020 in Kraft. Dies ist nur eine Änd
 
 ### <a name="featured-feedback-fix-multi-organization-switcher"></a>Featured Feedback Fix: Multi-Organization Switcher
 
-Wir haben viel Feedback von Partnern und Administratoren über die Herausforderungen bei der Verwaltung mehrerer Microsoft Cloud-Organisationen erhalten. Eine unserer ersten Multi-org-Verwaltungsfunktionen ist der **Organisations Umschalter**, mit dem Sie zwischen den Organisationen wechseln können, die Sie in nur 2 Klicks verwalten.
+Wir haben viel Feedback von Partnern und Administratoren über die Herausforderungen bei der Verwaltung mehrerer Microsoft Cloud-Organisationen erhalten. Eine unserer ersten Multi-org-Verwaltungsfunktionen ist der **Organisations Umschalter** , mit dem Sie zwischen den Organisationen wechseln können, die Sie in nur 2 Klicks verwalten.
 > [!TIP]
 > Sie müssen nichts tun, damit die Organisations Umschaltung angezeigt wird, solange Sie der Partner von Record für mindestens eine Organisation sind.
 
@@ -369,14 +369,14 @@ Das ist buchstäblich!!!
 
 Ein paar Änderungen im Gruppenbereich in diesem Monat:
 
-- **Sortieren nach Gruppenname**: Sie können die Gruppenliste alphabetisch sortieren, indem Sie die Spalte **Gruppenname** auswählen.
-- **Wiederherstellen gelöschter Microsoft 365-Gruppen**: Sie müssen nicht mehr zum Exchange-Verwaltungskonsole wechseln, um gelöschte Microsoft 365-Gruppen wiederherzustellen. Wechseln Sie zu **Microsoft 365 Admin Center** \> **Gruppen** \> **Gelöschte Gruppen** \> (Wählen Sie eine Gruppe aus der Liste aus) \> **Restore Group**. Dadurch wird die Gruppe wieder in der **Gruppen** Liste wiederhergestellt und die e-Mails, Unterhaltungen, das Notizbuch, die Dateien und den Kalender der Gruppe wiederhergestellt.
+- **Sortieren nach Gruppenname** : Sie können die Gruppenliste alphabetisch sortieren, indem Sie die Spalte **Gruppenname** auswählen.
+- **Wiederherstellen gelöschter Microsoft 365-Gruppen** : Sie müssen nicht mehr zum Exchange-Verwaltungskonsole wechseln, um gelöschte Microsoft 365-Gruppen wiederherzustellen. Wechseln Sie zu **Microsoft 365 Admin Center** \> **Gruppen** \> **Gelöschte Gruppen** \> (Wählen Sie eine Gruppe aus der Liste aus) \> **Restore Group**. Dadurch wird die Gruppe wieder in der **Gruppen** Liste wiederhergestellt und die e-Mails, Unterhaltungen, das Notizbuch, die Dateien und den Kalender der Gruppe wiederhergestellt.
 
 ### <a name="videos-training-and-docs-february"></a>Videos, Schulungen und Dokumente (Februar)
 
-- **Neuerungen in der Microsoft 365-Videoreihe**: in diesem Monat konzentrieren wir uns auf benutzerdefinierte Suchfunktionen für SharePoint Online, das Office-Verwaltungsfeature "What es New", mit dem Sie bestimmte Features von Endbenutzern über den in-App-Hilfebereich, die neuesten Sicherheits-und Kompatibilitätsupdates in jammern oder mehr anzeigen oder ausblenden können. Hier ist die neueste Episode: [Neuerungen in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
+- **Neuerungen in der Microsoft 365-Videoreihe** : in diesem Monat konzentrieren wir uns auf benutzerdefinierte Suchfunktionen für SharePoint Online, das Office-Verwaltungsfeature "What es New", mit dem Sie bestimmte Features von Endbenutzern über den in-App-Hilfebereich, die neuesten Sicherheits-und Kompatibilitätsupdates in jammern oder mehr anzeigen oder ausblenden können. Hier ist die neueste Episode: [Neuerungen in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
-- **Docs-Bewegung**: Wir haben die Office 365 admin-Webartikel mit dem Microsoft 365-Inhalt kombiniert, und Sie haben möglicherweise die neue URL bemerkt. Dieser Artikel wurde beispielsweise unter: **docs.Microsoft.com/Office365/admin/Whats-New-in-Preview**gehostet, aber die URL lautet jetzt: **docs.Microsoft.com/Microsoft-365/admin/Whats-New-in-Preview**. Wenn Sie Seiten mit einem Lesezeichen versehen haben, sollten Sie Ihre Links aktualisieren; Inhaltslinks werden jedoch an das neue Content Repo umgeleitet.
+- **Docs-Bewegung** : Wir haben die Office 365 admin-Webartikel mit dem Microsoft 365-Inhalt kombiniert, und Sie haben möglicherweise die neue URL bemerkt. Dieser Artikel wurde beispielsweise unter: **docs.Microsoft.com/Office365/admin/Whats-New-in-Preview** gehostet, aber die URL lautet jetzt: **docs.Microsoft.com/Microsoft-365/admin/Whats-New-in-Preview**. Wenn Sie Seiten mit einem Lesezeichen versehen haben, sollten Sie Ihre Links aktualisieren; Inhaltslinks werden jedoch an das neue Content Repo umgeleitet.
 
 ## <a name="january-2020---happy-new-year"></a>Januar 2020-Happy New Year
 
@@ -387,7 +387,7 @@ Ein paar Änderungen im Gruppenbereich in diesem Monat:
 
 Wenn wir den dunklen Modus zum ersten Mal ausgeführt haben, war er nur auf der Startseite verfügbar. Der dunkle Modus ist jetzt nicht mehr in der Vorschau und wird für die meisten Seiten im Admin Center in einer gezielten Version veröffentlicht.
 
-1. Zunächst müssen Sie Targeted Release aktivieren: Wechseln Sie zu Einstellungen Einstellungen **Settings** \> **Settings** \> **Organisationsprofil** \> - **Freigabe**Einstellungen.
+1. Zunächst müssen Sie Targeted Release aktivieren: Wechseln Sie zu Einstellungen Einstellungen **Settings** \> **Settings** \> **Organisationsprofil** \> - **Freigabe** Einstellungen.
 1. Um dann den dunklen Modus zu aktivieren, wechseln Sie zur **Start** Seite, und wählen Sie dann die Schaltfläche **dunkler Modus** aus. (Er befindet sich neben dem **Suchfeld** und diesem Artikel **What es New** Link.)
 1. Für jede Seite, auf der der dunkle Modus verfügbar ist, befindet sich die Schaltfläche oben auf der Seite neben **dem neuen Admin Center** -Toggle.
 
@@ -427,27 +427,27 @@ Wir kombinieren die Neuigkeiten von November und Dezember, da wir nach dem entz�
 
 ### <a name="change-from-credit-card-to-invoice-payment"></a>Wechsel von der Kreditkarte zur Rechnungszahlung
 
-Wir beginnen mit dem Rollout der Möglichkeit, Ihre Zahlungsmethode von Kreditkarte zu einer Rechnung zu ändern. Wechseln Sie zu **Fakturierung** \> **ihrer Produkte**, wählen Sie ein Abonnement aus, und wählen Sie dann den Link **Bearbeiten** neben der Kreditkartenzahlung aus.
+Wir beginnen mit dem Rollout der Möglichkeit, Ihre Zahlungsmethode von Kreditkarte zu einer Rechnung zu ändern. Wechseln Sie zu **Fakturierung** \> **ihrer Produkte** , wählen Sie ein Abonnement aus, und wählen Sie dann den Link **Bearbeiten** neben der Kreditkartenzahlung aus.
 
 ![Screen Capture: Abrechnungs Abschnitt der Abonnementkarte mit einer Kreditkarte als Zahlungsmethode.](../media/MAC-BillingEditCreditCard.png)
 
 Möchten Sie mehr darüber erfahren? [Ändern der Zahlungsmethode von per Kreditkarte zu per Bankkonto oder auf Rechnung](../commerce/billing-and-payments/change-payment-method.md)
 
-### <a name="global-reader"></a>Globaler Leser
+### <a name="global-reader"></a>Globale Leseberechtigung
 
 Wir haben die Rolle des globalen Lesers in der [Oktober 2019-Ignite-Edition](#october-2019---ignite-edition)erwähnt, aber da Sie im allgemeinen weiter kommt, lassen Sie uns einige Details besprechen:
 
 - Die globale Leserrolle ist das schreibgeschützte Pendant zur globalen Administratorrolle. Der globale Leser kann alles sehen, wozu der globale Administrator berechtigt ist.
 - Mit einigen wenigen Ausnahmen, wie einige Compliance-und Sicherheitsfunktionen, haben globale Leser Zugriff auf alle Microsoft Cloud-Verwaltungszentren, die Ihre Organisation für die Verwendung lizenziert hat.
 - Zuweisen der globalen Leserrolle zu Benutzern, die Sie für die Planung, Überwachung und Untersuchung benötigen.
-- Sie können auch die globale Leserrolle mit einer anderen Rolle kombinieren, die über weniger Berechtigungen verfügt. Beispielsweise kann einem Besitzer eines kleinen Unternehmens die globalen Leser Rollen für die **Fakturierungs Verwaltung**zugewiesen werden,  +  **Global reader** damit er die Rechnungen bezahlen und die Änderungen an der Cloud-Organisation übernehmen kann.
+- Sie können auch die globale Leserrolle mit einer anderen Rolle kombinieren, die über weniger Berechtigungen verfügt. Beispielsweise kann einem Besitzer eines kleinen Unternehmens die globalen Leser Rollen für die **Fakturierungs Verwaltung** zugewiesen werden,  +  **Global reader** damit er die Rechnungen bezahlen und die Änderungen an der Cloud-Organisation übernehmen kann.
 - Globale Leser können auf eine beliebige Seite im Microsoft 365 Admin Center wechseln. Wenn Sie eine bearbeitbare Seite öffnen, wird oben eine Warnung angezeigt, die besagt, dass Sie keine Berechtigung zum Speichern von Änderungen haben, und die Schaltfläche Speichern wird deaktiviert.
 
 Wir würden uns freuen, Ihr Feedback über die globale Leserrolle und alle rollenbasierten Berechtigungen zu erhalten, die Sie in Zukunft sehen möchten. [Feedback für rollenbasierte Berechtigungen erteilen](https://office365.uservoice.com/forums/273493-office-365-admin/suggestions/10115430-have-a-consistent-experience-when-assigning-admin)
 
 ### <a name="new-settings-page"></a>Seite "neue Einstellungen"
 
-Das **Organisationsprofil**, die **Sicherheit & Datenschutz**und **Dienste & Add-ins-** Seiten wurden alle zu einer Seite mit drei vertikalen Registerkarten kombiniert. Und der beste Teil – von einem einzigen Standort aus können Sie nun nach allen Einstellungen suchen.
+Das **Organisationsprofil** , die **Sicherheit & Datenschutz** und **Dienste & Add-ins-** Seiten wurden alle zu einer Seite mit drei vertikalen Registerkarten kombiniert. Und der beste Teil – von einem einzigen Standort aus können Sie nun nach allen Einstellungen suchen.
 ![Screen Capture: Seite "Einstellungen", wobei das Feld "alle Einstellungen Durchsuchen" oben auf der Seite markiert ist.](../media/MAC-SettingsMultiPivotSearch.png)
 
 ### <a name="training--docs"></a>Schulungs &-Dokumente
@@ -466,7 +466,7 @@ Im November haben wir einige Lern Pfade zur [Microsoft Learn](https://docs.micro
 - [Schutz von Identität und Zugriff mit Microsoft 365](https://docs.microsoft.com/learn/paths/m365-identity/)
 - [Schützen von Unternehmensinformationen mit Microsoft 365](https://docs.microsoft.com/learn/paths/m365-information-protection/)
 - [Verwalten der Sicherheit mit Microsoft 365](https://docs.microsoft.com/learn/paths/m365-security-management/)
-- [Vertrauen Sie auf Microsoft 365 und Microsoft Threat Protection, um Ihre Umgebung zu schützen](https://docs.microsoft.com/learn/paths/m365-security-threat-protection/)
+- [Abwehr von Bedrohungen mit Microsoft 365 Defender](https://docs.microsoft.com/learn/paths/m365-security-threat-protection/)
 - [Verwalten der Zusammenarbeit im Team mit Microsoft Teams](https://docs.microsoft.com/learn/paths/m365-manage-team-collaboration/)
 - [Zusammenarbeit mithilfe von SharePoint in Microsoft 365](https://docs.microsoft.com/learn/paths/m365-teams-sharepoint/)
 
@@ -481,12 +481,12 @@ Willkommen bei der Ignite-Edition von What es New in the Microsoft 365 Admin Cen
 
 Es wurden viele Änderungen für Rollen im Admin Center vorgenommen, seit wir im Juni mit dem Rollout begonnen haben:
 
-- **Rollen vergleichen** – wählen Sie bis zu 3 Rollen aus, um die Berechtigungen für jeden zu vergleichen. Auf diese Weise können Sie die am wenigsten freizügige Rolle finden, die Sie Benutzern zuweisen können. Wechseln Sie zu **Rollen**, verwenden Sie das Kontrollkästchen Mehrfachauswahl in der ersten Spalte, um bis zu drei Rollen auszuwählen, und wählen Sie dann **Rollen vergleichen**aus.
+- **Rollen vergleichen** – wählen Sie bis zu 3 Rollen aus, um die Berechtigungen für jeden zu vergleichen. Auf diese Weise können Sie die am wenigsten freizügige Rolle finden, die Sie Benutzern zuweisen können. Wechseln Sie zu **Rollen** , verwenden Sie das Kontrollkästchen Mehrfachauswahl in der ersten Spalte, um bis zu drei Rollen auszuwählen, und wählen Sie dann **Rollen vergleichen** aus.
 
     ![Vergleichen der Rollen "Exchange-Administrator", "Helpdesk-Administrator" und "Benutzer Administrator"](../media/RBAC-CompareRoles.png)
 
 - **Favoriten** – Sie können Ihren bevorzugten oder am häufigsten verwendeten Rollen einen Stern hinzufügen, damit Sie diese leicht finden können, indem Sie die Spalte sortieren oder einen Filter erstellen.
-- **Aktive Benutzer**  >  **Rollen verwalten** – diese wurde so aktualisiert, dass Sie mit den Änderungen in den Rollen übereinstimmt. Wie bei der Rollenliste haben wir die Standardliste der Rollen auf den nützlichsten Bereich beschränkt, aber Sie können alle Rollen anzeigen, indem Sie **Alle anzeigen nach Kategorie**erweitern.
+- **Aktive Benutzer**  >  **Rollen verwalten** – diese wurde so aktualisiert, dass Sie mit den Änderungen in den Rollen übereinstimmt. Wie bei der Rollenliste haben wir die Standardliste der Rollen auf den nützlichsten Bereich beschränkt, aber Sie können alle Rollen anzeigen, indem Sie **Alle anzeigen nach Kategorie** erweitern.
 - **Globale Leserrolle** -Sie haben ihn gefragt. Du hast es! Die [globale Leser](add-users/about-admin-roles.md) Rolle!
 
 ### <a name="report-an-issue"></a>Melden eines Problems
@@ -499,7 +499,7 @@ Wie Sie wissen, können Benutzer ﻿kostenlose Abonnements für eine Vielzahl vo
 
 ### <a name="user-templates"></a>Benutzervorlagen
 
-Mithilfe von Vorlagen können Sie ganz einfach viele Benutzer hinzufügen, indem Sie die freigegebenen Einstellungen für diese Benutzer speichern und wieder verwenden. Sie können Werte für Rollen, zugewiesene Lizenzen, Kontaktinformationen, Standort und vieles mehr speichern. Wenn Sie die Vorlage verwenden, um einen neuen Benutzer zu erstellen, wird automatisch der gespeicherte Wert für diese Einstellungen abgerufen. Wechseln Sie zu **Benutzer**  >  **aktive Benutzer**, und wählen Sie dann **Benutzervorlagen** aus, um es auszuprobieren.
+Mithilfe von Vorlagen können Sie ganz einfach viele Benutzer hinzufügen, indem Sie die freigegebenen Einstellungen für diese Benutzer speichern und wieder verwenden. Sie können Werte für Rollen, zugewiesene Lizenzen, Kontaktinformationen, Standort und vieles mehr speichern. Wenn Sie die Vorlage verwenden, um einen neuen Benutzer zu erstellen, wird automatisch der gespeicherte Wert für diese Einstellungen abgerufen. Wechseln Sie zu **Benutzer**  >  **aktive Benutzer** , und wählen Sie dann **Benutzervorlagen** aus, um es auszuprobieren.
 
 ### <a name="office-whats-new-management-preview"></a>Office "What es New"-Verwaltung (Vorschau)
 
@@ -519,7 +519,7 @@ Wir bieten einige aufregende Feature-Releases bei Ignite 2019 an, daher werden n
 
 ### <a name="featured-feedback-fix--the-option-to-convert-the-deleted-users-mailbox-to-a-shared-mailbox-is-back"></a>Featured Feedback Fix – die Option, das Postfach des gelöschten Benutzers in ein freigegebenes Postfach zu konvertieren, ist zurück
 
-Wir haben Ihr Feedback laut und deutlich gelesen, und wir haben die Möglichkeit zurückgegeben, anderen Benutzern Zugriff auf das Postfach eines gelöschten Benutzers zu gewähren, indem Sie es in ein **freigegebenes Postfach**konvertieren. Durch das Hinzufügen dieses zurück zum Assistenten zum Löschen von Benutzern können Sie entscheiden, was mit den Daten geschieht:
+Wir haben Ihr Feedback laut und deutlich gelesen, und wir haben die Möglichkeit zurückgegeben, anderen Benutzern Zugriff auf das Postfach eines gelöschten Benutzers zu gewähren, indem Sie es in ein **freigegebenes Postfach** konvertieren. Durch das Hinzufügen dieses zurück zum Assistenten zum Löschen von Benutzern können Sie entscheiden, was mit den Daten geschieht:
 
 - E-Mail: erteilen Sie einem anderen Benutzer Zugriff auf das Postfach des gelöschten Benutzers, indem Sie es in ein freigegebenes Postfach konvertieren.
 - Dateien: Speichern Sie Ihre OneDrive-Dateien, und geben Sie jemand anderen Zugriff.
@@ -549,7 +549,7 @@ Wir haben einige Updates für Abrechnung und Abonnements in diesem Monat:
 
 Das Setup enthält jetzt Kategorien und Abschnitte, einschließlich eines **für Sie empfohlenen** Abschnitts, in dem wir Intelligent einen nächsten Schritt beim Aktivieren von Features und beim Einrichten Ihrer Organisation vorschlagen. Außerdem haben wir ein neues Feature hinzugefügt, um Folgendes einzurichten:
 
-- **Office Advanced Threat Protection** – Wenn Ihre Organisation für die Verwendung von Office ATP lizenziert ist und Sie Sie noch nicht konfiguriert oder aktiviert haben, wird diese Seite angezeigt. Wechseln Sie zu **Setup** , um es zu testen.
+- **Microsoft Defender für Office 365** -Wenn Ihre Organisation für die Verwendung von Microsoft Defender für Office 365 lizenziert wurde und Sie Sie noch nicht konfiguriert oder aktiviert haben, wird diese Seite angezeigt. Wechseln Sie zu **Setup** , um es zu testen.
 
 ### <a name="report-an-issue-august"></a>Melden eines Problems (August)
 
@@ -563,13 +563,13 @@ Das Nachrichtencenter wurde auf das neue Design aktualisiert, und es sieht fanta
 
 ![Bildschirmaufnahme: aktualisiertes Nachrichtencenter mit ausgewählter Registerkarte ' alle aktiven Nachrichten ' und geöffnetes Filter Menü.](../media/MAC-MessageCenterUpdated.png)
 
-- Sie können jetzt **Nachrichten nach Status**anzeigen. Wählen Sie einfach eine der Registerkarten aus: **alle aktiven Nachrichten**, **hohe Wichtigkeit**, **Ungelesene nach**richten und **abgewiesene Nachrichten**.
-- Sie können auch nach Kategoriedaten- **Datenschutz**filtern, **Änderungen planen**, **Probleme verhindern oder beheben**und **informierte** Nachrichtenkategorien bleiben.
-- Wählen Sie eine Nachricht aus der Liste aus, und Sie haben einige Optionen in der Befehlsleiste: **verwerfen**, **als gelesen markieren** oder **als ungelesen**markieren oder **Freigeben**.
+- Sie können jetzt **Nachrichten nach Status** anzeigen. Wählen Sie einfach eine der Registerkarten aus: **alle aktiven Nachrichten** , **hohe Wichtigkeit** , **Ungelesene nach** richten und **abgewiesene Nachrichten**.
+- Sie können auch nach Kategoriedaten- **Datenschutz** filtern, **Änderungen planen** , **Probleme verhindern oder beheben** und **informierte** Nachrichtenkategorien bleiben.
+- Wählen Sie eine Nachricht aus der Liste aus, und Sie haben einige Optionen in der Befehlsleiste: **verwerfen** , **als gelesen markieren** oder **als ungelesen** markieren oder **Freigeben**.
 - Wenn Sie eine Nachricht öffnen, haben Sie noch weitere Optionen:
   - Kopieren Sie einen Link der Nachricht in Ihre Zwischenablage, um ihn später zu speichern oder um ihn für Kollegen freizugeben.
-  - Nachrichten als **gelesen** oder **Ungelesen**markieren.
-  - Geben Sie Feedback zu einer Nachricht durch Auswählen von **like** oder **dislike**wird ein Feedback Bereich geöffnet, in dem Sie aufgefordert werden, ein bestimmtes Feedback zu den Informationen zu erhalten, die Ihnen bei dieser Nachricht gefallen oder nicht gefällt haben.
+  - Nachrichten als **gelesen** oder **Ungelesen** markieren.
+  - Geben Sie Feedback zu einer Nachricht durch Auswählen von **like** oder **dislike** wird ein Feedback Bereich geöffnet, in dem Sie aufgefordert werden, ein bestimmtes Feedback zu den Informationen zu erhalten, die Ihnen bei dieser Nachricht gefallen oder nicht gefällt haben.
 
 ### <a name="navigation-pane-intelligence"></a>Intelligence für den Navigationsbereich
 
@@ -577,14 +577,14 @@ Das Nachrichtencenter wurde auf das neue Design aktualisiert, und es sieht fanta
 
 ### <a name="initial-setup--the-setup-page"></a>Erst Setup & der Seite "Setup"
 
-Wir haben einige interessante Änderungen, die Ihnen helfen, Ihre Organisation einzurichten. Lassen Sie uns zunächst den Unterschied zwischen **Setup** und **Setup Seite**besprechen. **Setup** bezieht sich auf den anfänglichen Setup-Assistenten, den Sie für die Onlinedienste von Microsoft an Bord verwendet haben. Dies umfasst normalerweise drei spezifische Schritte: **Verbinden einer Domäne**, **Hinzufügen von Benutzern**und **herunterladen der Office-Apps**. Die Seite **Setup** ist die Seite im Admin Center, die die Einrichtung von Aufgaben empfohlen hat, um sicherzustellen, dass Sie Ihre Abonnements optimal nutzen – wie das Aktivieren von Features, für die Sie Lizenzen erworben haben.
+Wir haben einige interessante Änderungen, die Ihnen helfen, Ihre Organisation einzurichten. Lassen Sie uns zunächst den Unterschied zwischen **Setup** und **Setup Seite** besprechen. **Setup** bezieht sich auf den anfänglichen Setup-Assistenten, den Sie für die Onlinedienste von Microsoft an Bord verwendet haben. Dies umfasst normalerweise drei spezifische Schritte: **Verbinden einer Domäne** , **Hinzufügen von Benutzern** und **herunterladen der Office-Apps**. Die Seite **Setup** ist die Seite im Admin Center, die die Einrichtung von Aufgaben empfohlen hat, um sicherzustellen, dass Sie Ihre Abonnements optimal nutzen – wie das Aktivieren von Features, für die Sie Lizenzen erworben haben.
 
 - **Setup** – der anfängliche Setup-Assistent wurde für **Microsoft 365 for Business** -Abonnements aktualisiert. Dieses neue Design hilft neuen Organisationen, den Assistenten schneller und mit größerer erfolgreiche durch zugewinnen.
-- **Seite "Setup** " – die **Setup** Seite unterstützt Sie beim Abschließen der Einrichtung und Sicherung der Dienste, die mit ihren Abonnements geliefert werden. Auf der Seite **Setup** werden auch alle abgewiesenen Empfehlungen angezeigt. Um zu sehen, ob Sie noch für Ihre Abonnements verfügbar ist, wechseln Sie zum **Microsoft 365 Admin Center**-  >  **Setup**.
+- **Seite "Setup** " – die **Setup** Seite unterstützt Sie beim Abschließen der Einrichtung und Sicherung der Dienste, die mit ihren Abonnements geliefert werden. Auf der Seite **Setup** werden auch alle abgewiesenen Empfehlungen angezeigt. Um zu sehen, ob Sie noch für Ihre Abonnements verfügbar ist, wechseln Sie zum **Microsoft 365 Admin Center** -  >  **Setup**.
 
 ### <a name="billing--subscriptions"></a>Abrechnungs & Abonnements
 
-- **Software** Produkttyp – Sie können jetzt Softwareprodukte anzeigen, die über einen Anbieter von Cloud-Diensten (Service Provider, CSP) erworben wurden. Um Ihre Downloads und Schlüssel anzuzeigen, wechseln Sie **Billing**zur  >  **Your products**  >  Registerkarte Abrechnungs**Software** für Produkte.
+- **Software** Produkttyp – Sie können jetzt Softwareprodukte anzeigen, die über einen Anbieter von Cloud-Diensten (Service Provider, CSP) erworben wurden. Um Ihre Downloads und Schlüssel anzuzeigen, wechseln Sie **Billing** zur  >  **Your products**  >  Registerkarte Abrechnungs **Software** für Produkte.
 - Sie können moderne Azure-Produkte und-Dienste im Microsoft 365 Admin Center anzeigen, unabhängig davon, ob Sie Sie von Microsoft oder einem Drittanbieter erworben haben. Beispiele für moderne Azure-Produkte enthalten:
   - Azure reservierte virtuelle Instanzen
   - Azure-Support Pläne
@@ -601,8 +601,8 @@ Administratoren haben Zugriff auf vertrauliche Informationen in Ihrer Organisati
 
 Die Seiten " **Gelöschte Benutzer** " und " **Gastbenutzer** " wurden auf die neue Formatvorlage aktualisiert.
 
-- **Gastbenutzer**: Sie fügen Gastbenutzer hinzu, indem Sie Sie zum Anzeigen oder Freigeben von Dateien aus SharePoint oder OneDrive einladen. Sie können Gastbenutzer von Gastbenutzern von **Benutzern**anzeigen  >  **Guest users**.
-- **Gelöschte Benutzer**: auf der Seite aktualisierte **Gelöschte Benutzer** können Sie alle Aktionen ausführen, die Sie im älteren Admin Center durchführen konnten, jetzt jedoch Spalten hinzufügen und entfernen. Und wir haben viele Spaltenoptionen zur Auswahl. Tatsächlich sind es die gleichen Spalten, die Sie auf der Seite " **aktive Benutzer** " auswählen können.
+- **Gastbenutzer** : Sie fügen Gastbenutzer hinzu, indem Sie Sie zum Anzeigen oder Freigeben von Dateien aus SharePoint oder OneDrive einladen. Sie können Gastbenutzer von Gastbenutzern von **Benutzern** anzeigen  >  **Guest users**.
+- **Gelöschte Benutzer** : auf der Seite aktualisierte **Gelöschte Benutzer** können Sie alle Aktionen ausführen, die Sie im älteren Admin Center durchführen konnten, jetzt jedoch Spalten hinzufügen und entfernen. Und wir haben viele Spaltenoptionen zur Auswahl. Tatsächlich sind es die gleichen Spalten, die Sie auf der Seite " **aktive Benutzer** " auswählen können.
 
 ## <a name="june-2019"></a>Juni 2019
 
@@ -632,7 +632,7 @@ Wir haben die Art und Weise aktualisiert, wie Sie Ihre Abonnements bezahlen. Wec
 
 Wenn Sie nun nach freigegebenen Postfächern, Kontakten, Ressourcen und Postfachberechtigungen suchen, müssen bei Ihren Suchbegriffen die Groß-/Kleinschreibung nicht beachtet werden.
 
-**Benutzer-und Gruppenverwaltung** In diesem Monat haben wir " **Benutzer blockieren**", " **Kennwort zurücksetzen**", " **Kontakt** Listenansicht", " **Gruppen** -Listenansicht" und " **Gruppen** Detailseiten" auf den neuen Admin Center-Stil aktualisiert.
+**Benutzer-und Gruppenverwaltung** In diesem Monat haben wir " **Benutzer blockieren** ", " **Kennwort zurücksetzen** ", " **Kontakt** Listenansicht", " **Gruppen** -Listenansicht" und " **Gruppen** Detailseiten" auf den neuen Admin Center-Stil aktualisiert.
 
 - In der Listenansicht neue **Gruppen** erhalten Sie umfassendere Daten zu ihren Gruppen, und Sie können die Art und Weise, wie Sie Ihre Daten sehen, anpassen, und die Gruppenliste merkt sich, wie die Daten angezeigt werden sollen. Beispielsweise können Sie jetzt nach **Gruppen mit Teams** filtern, um festzustellen, ob Ihre Gruppen Teil eines Teams sind, und Sie können die Spalte **Status des Teams** hinzufügen.
 - In der Liste "Gruppen" werden außerdem alle Verbesserungen an der Listen Erfahrung in der Benutzerverwaltung, einschließlich schnell Aktionen und der kontextbezogenen Befehlsleiste, vorgenommen.
@@ -640,13 +640,13 @@ Wenn Sie nun nach freigegebenen Postfächern, Kontakten, Ressourcen und Postfach
 **Empfehlungen**<br>
 Möglicherweise wird in Ihrem Admin Center ein neues Empfehlungs Popup angezeigt – wir haben soeben 4 neue hinzugefügt. Selbstverständlich werden nur Empfehlungen angezeigt, wenn wir davon ausgehen, dass Ihre Organisation davon profitiert. Aber warten Sie nicht, bis wir Ihnen die Empfehlung zeigen-Sie können Sie aus der Kartenbibliothek hinzufügen.
 
-- **Kennwortablauf** – es wird empfohlen, dass Kennwörter auf " **nie ablaufen**" festgelegt werden. Wenn Ihre Organisation eine andere Einstellung hat, wird diese Empfehlung möglicherweise nur angezeigt.
+- **Kennwortablauf** – es wird empfohlen, dass Kennwörter auf " **nie ablaufen** " festgelegt werden. Wenn Ihre Organisation eine andere Einstellung hat, wird diese Empfehlung möglicherweise nur angezeigt.
 - **Zu viele globale Administratoren** – da es sich bei den zu vielen globalen Administratoren um eine Sicherheitsbedrohung handelt, wenn Sie über mehr als 4 globale Administratoren verfügen, wird diese Empfehlung angezeigt. Wir empfehlen Benutzern nur den Zugriff zu gewähren, den Sie benötigen, um Ihre Arbeit zu erledigen.
 - **InTune-Geräteschutz** : Wenn Ihre Lizenzen InTune enthalten und wir feststellen, dass Sie die Einrichtung von InTune oder Ihre Geräte nicht abgeschlossen haben, wird empfohlen, dass Sie eine InTune-Richtlinie erstellen, um die Dateien Ihrer Organisation zu schützen, wenn Benutzer von ihren mobilen Geräten aus darauf zugreifen.
 - **Monatliche Office-Feature-Updates** – wir haben Feedback von unseren sehr kleinen Kunden bekommen, dass Ihre Benutzer, wenn Sie monatliche Office-Feature-Updates erhalten, glücklicher sind. Wenn Sie also ein sehr kleines Unternehmen sind und Ihre Office-Feature-Updates derzeit alle sechs Monate erhalten, wird diese Empfehlung angezeigt.
 
-**Settings** <br>
-Was die Einstellungen anbetrifft, gibt es einige Änderungen. Meistens aktualisieren Sie einfach die vorhandenen Einstellungen auf den neuen Admin Center-Stil. Wenn wir fortfahren und neue Einstellungen hinzufügen, die Sie noch nie zuvor gesehen haben, werden wir Sie hier ansprechen. Und wir haben eine vollständige Einstellung, die Sie ankündigen müssen: **moderne Authentifizierung**. Ja, es gibt eine neue Einstellung zum Aktivieren der **modernen Authentifizierung**! Zum Auschecken wechseln Sie zu **Einstellungen**  >  **Dienste & Add-ins**  >  **moderne Authentifizierung**.
+**Einstellungen** <br>
+Was die Einstellungen anbetrifft, gibt es einige Änderungen. Meistens aktualisieren Sie einfach die vorhandenen Einstellungen auf den neuen Admin Center-Stil. Wenn wir fortfahren und neue Einstellungen hinzufügen, die Sie noch nie zuvor gesehen haben, werden wir Sie hier ansprechen. Und wir haben eine vollständige Einstellung, die Sie ankündigen müssen: **moderne Authentifizierung**. Ja, es gibt eine neue Einstellung zum Aktivieren der **modernen Authentifizierung** ! Zum Auschecken wechseln Sie zu **Einstellungen**  >  **Dienste & Add-ins**  >  **moderne Authentifizierung**.
 
 ## <a name="april-2019"></a>April 2019
 
@@ -660,10 +660,10 @@ Für April haben wir den Assistenten zum **Hinzufügen von Benutzern** , der Sie
 Es gibt zwei Möglichkeiten, Sie zu überprüfen: <br>
 
 1. Wählen Sie auf der **Start** Seite Benutzer aus der **Benutzer Verwaltungs** Karte **Hinzufügen** aus. Der Assistent wird direkt dort geöffnet, sodass Sie nicht von jeder Arbeit auf der **Start** Seite aus navigieren müssen.
-2. Wechseln Sie zu **Benutzer**  >  **aktive Benutzer**, und wählen Sie dann in der Befehlsleiste **Benutzer hinzufügen** aus.
+2. Wechseln Sie zu **Benutzer**  >  **aktive Benutzer** , und wählen Sie dann in der Befehlsleiste **Benutzer hinzufügen** aus.
 <br><br>
 
-Wir haben einige weitere Änderungen an der **Benutzerverwaltung**vorgenommen, hier eine kurze Liste:
+Wir haben einige weitere Änderungen an der **Benutzerverwaltung** vorgenommen, hier eine kurze Liste:
 
 - Der Bereich " **Rollen verwalten** " wurde auf die neue Formatvorlage aktualisiert und ist zugänglich. Außerdem haben wir die Bereiche **Block User** und **Delete User** auf die neue Formatvorlage aktualisiert.
 - **Verwalten von Produktlizenzen** geänderte Position in der Befehlsleiste.
@@ -673,14 +673,14 @@ Wir haben einige weitere Änderungen an der **Benutzerverwaltung**vorgenommen, h
 
 - Es gibt ein neues Setup-Banner auf der **Start** Seite, das Sie sehen, wenn Sie die Schritte zum Einrichten, wie das Hinzufügen einer Domäne, das Hinzufügen von Benutzern und das Herunterladen der Office-Apps noch nicht abgeschlossen haben.
 - Der **Gruppen** Listen-und Detailbereich wurde auf die neue Formatvorlage aktualisiert. Wechseln Sie zu **Gruppen**  >  **Gruppen** , um die Änderungen anzuzeigen.
-  - Apropos Gruppen: Wir haben auch eine **Microsoft Teams** -Registerkarte zum Gruppen Detailbereich hinzugefügt, in dem Sie jede Microsoft 365-Gruppe in ein Team umwandeln können. Um "teamify" eine Gruppe auszuwählen, wählen Sie in der Liste eine beliebige Microsoft 365-Gruppe aus, wählen Sie die Registerkarte **Microsoft Teams** aus, und erstellen Sie dann **Team**. Wenn es sich bei der Gruppe bereits um ein Team handelt, erhalten Sie einen Link, um Sie über das **Teams Admin Center**zu verwalten.
-  - Schließlich können Sie den Status " **Teams** " zur Liste " **Gruppen** " hinzufügen. Wählen Sie in der Spalte Kopfzeile die Option **Spalten**  >  **Teams-Status**  >  **Speichern**aus.
+  - Apropos Gruppen: Wir haben auch eine **Microsoft Teams** -Registerkarte zum Gruppen Detailbereich hinzugefügt, in dem Sie jede Microsoft 365-Gruppe in ein Team umwandeln können. Um "teamify" eine Gruppe auszuwählen, wählen Sie in der Liste eine beliebige Microsoft 365-Gruppe aus, wählen Sie die Registerkarte **Microsoft Teams** aus, und erstellen Sie dann **Team**. Wenn es sich bei der Gruppe bereits um ein Team handelt, erhalten Sie einen Link, um Sie über das **Teams Admin Center** zu verwalten.
+  - Schließlich können Sie den Status " **Teams** " zur Liste " **Gruppen** " hinzufügen. Wählen Sie in der Spalte Kopfzeile die Option **Spalten**  >  **Teams-Status**  >  **Speichern** aus.
 - **Neue beschränkte Administratorrollen** – wir veröffentlichen einige neue Administratorrollen, sodass Sie Benutzern nur den Zugriff gewähren können, den Sie benötigen.
-  - **Kaizala-Administrator**: Benutzer in dieser Rolle verfügen über die Berechtigung zum Ausführen aller Verwaltungsaufgaben in Microsoft Kaizala, einschließlich Erstellen und Verwalten von Benutzern im Verzeichnis Kaizala, Verwalten von Kaizala Gruppen, Verwalten von Aktionskarten und Connectors und Erstellen von Dienstanforderungen.
-  - **Search admin**: Benutzer in dieser Rolle haben Vollzugriff auf alle Microsoft Search Management-Funktionen im Microsoft 365 Admin Center. Suchadministratoren können die Rollen "Such-admin" und "Such-Editor" an Benutzer delegieren und Inhalte wie Lesezeichen, Q&A-Elemente und-Speicherorte erstellen und verwalten. Darüber hinaus können diese Benutzer das Nachrichtencenter anzeigen, den Dienststatus überwachen und Dienstanforderungen erstellen.
-  - **Such-Editor**: Benutzer in dieser Rolle können Inhalte für die Microsoft-Suche im Microsoft 365 Admin Center erstellen, verwalten und löschen, einschließlich Lesezeichen, Q&A-Elementen und-Speicherorte.
+  - **Kaizala-Administrator** : Benutzer in dieser Rolle verfügen über die Berechtigung zum Ausführen aller Verwaltungsaufgaben in Microsoft Kaizala, einschließlich Erstellen und Verwalten von Benutzern im Verzeichnis Kaizala, Verwalten von Kaizala Gruppen, Verwalten von Aktionskarten und Connectors und Erstellen von Dienstanforderungen.
+  - **Search admin** : Benutzer in dieser Rolle haben Vollzugriff auf alle Microsoft Search Management-Funktionen im Microsoft 365 Admin Center. Suchadministratoren können die Rollen "Such-admin" und "Such-Editor" an Benutzer delegieren und Inhalte wie Lesezeichen, Q&A-Elemente und-Speicherorte erstellen und verwalten. Darüber hinaus können diese Benutzer das Nachrichtencenter anzeigen, den Dienststatus überwachen und Dienstanforderungen erstellen.
+  - **Such-Editor** : Benutzer in dieser Rolle können Inhalte für die Microsoft-Suche im Microsoft 365 Admin Center erstellen, verwalten und löschen, einschließlich Lesezeichen, Q&A-Elementen und-Speicherorte.
 - In diesem Monat gibt es eine Goldgrube an **Abrechnungs** Änderungen...
-  - Sie können jetzt die CVV für vorhandene Kreditkarten aktualisieren, ohne Sie löschen und erneut hinzufügen zu müssen. Sie können die CVV aktualisieren, indem Sie **Bills**auf  >  **Zahlungsmethoden**für Zahlungen wechseln.
+  - Sie können jetzt die CVV für vorhandene Kreditkarten aktualisieren, ohne Sie löschen und erneut hinzufügen zu müssen. Sie können die CVV aktualisieren, indem Sie **Bills** auf  >  **Zahlungsmethoden** für Zahlungen wechseln.
     - Wir haben es einfacher gemacht, Ihre **Rechnungen** zu finden und alle Abrechnungsprobleme zu verstehen, die Ihr Konto haben kann. Nun können Sie Ihre Rechnungen im Webbrowser anzeigen, anstatt die PDF herunterladen zu müssen. Wechseln Sie zu **Rechnungen**  >  **Rechnungen**.
     - Auf der Seite **Ihre Produkte** werden jetzt die Abonnementinformationen aggregiert, wenn Sie mehrere Abonnements desselben Typs haben.
 
@@ -688,7 +688,7 @@ Wir haben einige weitere Änderungen an der **Benutzerverwaltung**vorgenommen, h
 
 Nun, wenn Sie die aufregenden Neuigkeiten verpasst haben, veröffentlichen wir offiziell das neue und verbesserte Microsoft 365 Admin Center! Hier ist der Blogbeitrag, in dem wir es angekündigt haben: [das neue Microsoft 365 Admin Center, das heute verfügbar](https://techcommunity.microsoft.com/t5/Microsoft-365-Blog/The-new-Microsoft-365-admin-center-available-today/ba-p/377870)ist. Für März verlassen wir uns auf den Blogbeitrag für Sie, um die Features veröffentlicht-Plus, können Sie auch den Beitrag für die Funktionen, die in naher Zukunft veröffentlicht werden, was wir nicht in Kerninhalten tun dürfen, zu lesen.
 <br> ![Bildschirmaufnahme der Startseite des Microsoft 365 Admin Center.](../media/M365AC-HomePage.png) <br>
-Wir haben eine Änderung am Bereich **Abrechnungs & Abonnements** , den wir erwähnen möchten. Ich meine, Ihr habt nicht gedacht, dass wir mit der Verbesserung fertig sind, oder? Weil wir es nicht sind! In diesem Monat haben wir hinzugefügt, dass Sie Ihre Partnerbeziehungen mit **Abrechnungs**  >  **Konten**verwalten können. Von hier aus können Sie Ihre Partnerbeziehungen über Berater, CSP und indirekte Händler hinweg überprüfen. Sie können auch neue Partner Beziehungs Anforderungen akzeptieren, einschließlich Delegierter Administratorberechtigungen.
+Wir haben eine Änderung am Bereich **Abrechnungs & Abonnements** , den wir erwähnen möchten. Ich meine, Ihr habt nicht gedacht, dass wir mit der Verbesserung fertig sind, oder? Weil wir es nicht sind! In diesem Monat haben wir hinzugefügt, dass Sie Ihre Partnerbeziehungen mit **Abrechnungs**  >  **Konten** verwalten können. Von hier aus können Sie Ihre Partnerbeziehungen über Berater, CSP und indirekte Händler hinweg überprüfen. Sie können auch neue Partner Beziehungs Anforderungen akzeptieren, einschließlich Delegierter Administratorberechtigungen.
 
 Ihr Feedback ist wie immer wichtig für uns, also halten Sie es auf dem neuesten Stand. Auf einer beliebigen Seite im Admin Center können Sie Feedback geben, indem Sie unten rechts **Feedback geben** auswählen, neben **benötigen Sie Hilfe?**
 
@@ -696,14 +696,14 @@ Ihr Feedback ist wie immer wichtig für uns, also halten Sie es auf dem neuesten
 
 In diesem Monat konzentrieren wir uns auf alle Verbesserungen, die wir an den Bereichen vorgenommen haben, die liebevoll als "Abrechnung und Abonnements" bezeichnet werden. In der Vergangenheit haben Sie sich wahrscheinlich nicht auf diese Dinge liebevoll berufen, aber wir denken, dass Sie es jetzt tun werden...
 
-- **Zahlungsmethoden** – wir haben Ihr Feedback gehört, dass die Aktualisierung Ihrer Zahlungsmethode schwierig war, und wir haben viele Änderungen daran vorgenommen. Wechseln Sie zu **Abrechnungs**  >  **Zahlungsmethoden**. Sie können Ihre Zahlungsmethoden wie Ihre Visa-Karte und das Abonnement, mit dem Sie verbunden sind, ganz einfach sehen. Wählen Sie in der Liste mit den Zahlungsmethoden das Menü **mehr** (3 kleine Punkte neben dem Ablaufdatum) aus, und wählen Sie dann **Abonnements anzeigen**aus. Sie können Ihre Zahlungsmethoden auch über das Menü **Weitere** bearbeiten und löschen.
+- **Zahlungsmethoden** – wir haben Ihr Feedback gehört, dass die Aktualisierung Ihrer Zahlungsmethode schwierig war, und wir haben viele Änderungen daran vorgenommen. Wechseln Sie zu **Abrechnungs**  >  **Zahlungsmethoden**. Sie können Ihre Zahlungsmethoden wie Ihre Visa-Karte und das Abonnement, mit dem Sie verbunden sind, ganz einfach sehen. Wählen Sie in der Liste mit den Zahlungsmethoden das Menü **mehr** (3 kleine Punkte neben dem Ablaufdatum) aus, und wählen Sie dann **Abonnements anzeigen** aus. Sie können Ihre Zahlungsmethoden auch über das Menü **Weitere** bearbeiten und löschen.
 - **Abrechnungskonto** – gezielte Release-Kunden sehen zuerst die neue Abrechnungskonto Seite und dann werden wir Sie auf der ganzen Welt Ausrollen. Wenn es für Sie verfügbar ist, wechseln Sie zu **Abrechnungs**  >  **Konto**. Was können Sie auf der Seite "neues Abrechnungskonto" tun? Ich bin froh, dass Sie gefragt haben:
-  - Aktualisieren Sie die Adresse und andere Kontaktinformationen in Ihrem Organisationsprofil direkt auf dieser Seite. Sie müssen nicht zum Organisationsprofil " **Einstellungen**" wechseln  >  **Organization profile**, es sei denn, Sie möchten.
-  - Und wir machen das Leben für Kunden mit direkter oder Volumenlizenzierung einfacher, Sie können Kundenverträge von **Abrechnungskonten**akzeptieren und überprüfen. Sie können auch eine Verbindung mit anderen Organisationen herstellen, sodass Sie die Organisationen miteinander verknüpfen können, um Lizenzen und Ressourcen freizugeben.
+  - Aktualisieren Sie die Adresse und andere Kontaktinformationen in Ihrem Organisationsprofil direkt auf dieser Seite. Sie müssen nicht zum Organisationsprofil " **Einstellungen** " wechseln  >  **Organization profile** , es sei denn, Sie möchten.
+  - Und wir machen das Leben für Kunden mit direkter oder Volumenlizenzierung einfacher, Sie können Kundenverträge von **Abrechnungskonten** akzeptieren und überprüfen. Sie können auch eine Verbindung mit anderen Organisationen herstellen, sodass Sie die Organisationen miteinander verknüpfen können, um Lizenzen und Ressourcen freizugeben.
 - Wir haben auch einige kleinere Verbesserungen und Bugfixes gemacht:
   - Reaktivieren eines Abonnements mit einer Rechnungszahlung
   - Bearbeiten der Dienstnutzungsadresse für Ihre Abonnements
-  - Auf der Seite Inventar Details haben wir einige Benachrichtigungs Verbesserungen hinzugefügt, wir verknüpfen Sie mit der tatsächlichen Seite, auf der Sie die Arbeit ausführen können, und es gibt weitere Aktionen auf der Inventory-Detailkarte. Wechseln Sie zu **Fakturierungs**  >  **Rechnungen**, um  >  **Details** zu jeder Rechnung anzuzeigen.
+  - Auf der Seite Inventar Details haben wir einige Benachrichtigungs Verbesserungen hinzugefügt, wir verknüpfen Sie mit der tatsächlichen Seite, auf der Sie die Arbeit ausführen können, und es gibt weitere Aktionen auf der Inventory-Detailkarte. Wechseln Sie zu **Fakturierungs**  >  **Rechnungen** , um  >  **Details** zu jeder Rechnung anzuzeigen.
 
 ## <a name="january-2019---happy-new-year"></a>Januar 2019-Happy New Year
 

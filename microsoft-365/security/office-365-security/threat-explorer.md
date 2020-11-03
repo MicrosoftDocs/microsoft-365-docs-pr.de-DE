@@ -18,18 +18,18 @@ ms.collection:
 - m365initiative-defender-office365
 description: In diesem Artikel erfahren Sie mehr über die Verwendung von Explorer und Echt Zeit Erkennungen im Security &amp; Compliance Center, um Bedrohungen effektiv und effizient zu untersuchen und auf diese zu reagieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2ae2c53f12465fd1d6ef5c5e4bd24309467be008
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: a6123306c1d707a3eeab5c5dd67ed25bebb71965
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769376"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845686"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer und Echtzeiterkennung
 
-Wenn Ihre Organisation [Office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) verfügt und Sie über die [erforderlichen Berechtigungen](#required-licenses-and-permissions)verfügen, haben Sie entweder **Explorer** -oder **Echt Zeit Erkennungen** (früher *Echtzeitberichte* – [Siehe What es New](#new-features-in-threat-explorer-and-real-time-detections)!). Wechseln Sie im Security & Compliance Center zu **Threat Management** , und wählen Sie dann **Explorer** _oder_ **Real-Time Detections** aus.
+Wenn Ihre Organisation [Microsoft Defender für Office 365](office-365-atp.md)hat und Sie über die [erforderlichen Berechtigungen](#required-licenses-and-permissions)verfügen, haben Sie entweder **Explorer** -oder **Echtzeiterkennung** (früher *Echtzeitberichte* – [Siehe What es New](#new-features-in-threat-explorer-and-real-time-detections)!). Wechseln Sie im Security & Compliance Center zu **Threat Management** , und wählen Sie dann **Explorer** _oder_ **Real-Time Detections** aus.
 
-|Mit ATP-Plan 2 sehen Sie Folgendes:|Mit ATP-Plan 1 sehen Sie Folgendes:|
+|Mit Microsoft Defender für Office 365 Plan 2 sehen Sie Folgendes:|Mit Microsoft Defender für Office 365 Plan 1 sehen Sie Folgendes:|
 |---|---|
 |![Bedrohungs-Explorer](../../media/threatmgmt-explorer.png)|![Echtzeiterkennungen](../../media/threatmgmt-realtimedetections.png)|
 |
@@ -42,27 +42,27 @@ Mit diesem Bericht haben Sie folgende Möglichkeiten:
 
 - [Siehe von Microsoft 365-Sicherheitsfeatures erkannte Schadsoftware](#see-malware-detected-in-email-by-technology)
 - [Anzeigen von Daten zu Phishing-URLs und klicken auf Urteil](#view-data-about-phishing-urls-and-click-verdict)
-- [Starten eines automatisierten unter Such-und Antwort Prozesses aus einer Ansicht im Explorer](#start-automated-investigation-and-response) (nur ATP-Plan 2)
+- [Starten eines automatisierten unter Such-und Antwort Prozesses aus einer Ansicht im Explorer](#start-automated-investigation-and-response) (nur für Office 365 Plan 2)
 - ... [Untersuchung schädlicher e-Mails und vieles mehr](#more-ways-to-use-explorer-or-real-time-detections)!
 
 
 ## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>Verbesserungen an Threat Explorer und Echt Zeit Erkennungen
 
-## <a name="tags-in-threat-explorer"></a>Tags im Threat-Explorer
+### <a name="tags-in-threat-explorer"></a>Tags im Threat-Explorer
 
 > [!NOTE]
 > Das Feature "Benutzer Tags" befindet sich in der Vorschau, steht nicht allen zur Verfügung und kann jederzeit geändert werden. Weitere Informationen zum Veröffentlichungszeitplan finden Sie in der Microsoft 365-Roadmap.
 
-Benutzer Tags sind Bezeichner für bestimmte Benutzergruppen in Microsoft Defender für Office 365. Weitere Informationen rund um Tags, Lizenzierung und Konfigurieren von Tags finden Sie hier: [User Tags in Office 365 ATP](user-tags.md).
+Benutzer Tags sind Bezeichner für bestimmte Benutzergruppen in Microsoft Defender für Office 365. Weitere Informationen rund um Tags, Lizenzierung und Konfigurieren von Tags finden Sie unter [User Tags in Defender for Office 365](user-tags.md).
 
-Im Threat Explorer können Sie Informationen zu Benutzer Tags in den folgenden Erfahrungen anzeigen:
+Im Threat Explorer werden Informationen zu Benutzer Tags in den folgenden Erfahrungen angezeigt:
 
 #### <a name="email-grid-view"></a>E-Mail-Rasteransicht
 
 Die im e-Mail-Raster angezeigte Tags-Spalte enthält alle Tags, die auf die Absender-oder Empfängerpostfächer angewendet wurden. Standardmäßig werden System Tags wie Priority-Konten zuerst angezeigt.
 
 > [!div class="mx-imgBorder"]
-> ![Filtern von Tags](../../media/tags-grid.png)
+> ![Filtern von Tags in der e-Mail-Rasteransicht](../../media/tags-grid.png)
 
 #### <a name="filtering"></a>Filtern
 Wir haben jetzt Tags als Filter, damit Sie nur für Prioritäts Konten oder bestimmte Benutzer Tags Szenarien jagen können (und sogar Ergebnisse mit bestimmten Tags als Teil dieser Erfahrung ausschließen). Wenn Sie diese mit den verschiedenen anderen Filtern kombinieren, die wir bereitstellen, können Sie den Umfang der Untersuchung einschränken.
@@ -196,6 +196,16 @@ Im Rahmen der Verbesserung des Jagd Prozesses haben wir einige Updates für den 
 - [Aktualisieren im Aktualisierungsprozess](#update-in-the-refresh-process)
 - [Zu filtern Hinzuzufügender Diagramm Drilldown](#chart-drilldown-to-add-to-filters)
 - [In Produkt Informations Updates](#in-product-information-updates)
+
+### <a name="filter-by-user-tags"></a>Nach Benutzer Tags Filtern
+
+Sie können jetzt entweder nach System-oder benutzerdefinierten Tags sortieren und Filtern, um den Umfang der Bedrohungen schnell zu erfassen. Weitere Informationen finden Sie unter [User Tags in Office 365 ATP](user-tags.md) .
+
+> [!IMPORTANT]
+> Das Filtern und Sortieren nach Benutzer Tags befindet sich derzeit in der öffentlichen Vorschau.
+> Es kann erheblich geändert werden, bevor es kommerziell veröffentlicht wird. Microsoft leistet keine ausdrücklichen oder impliziten Garantien in Bezug auf die Informationen, die darüber bereitgestellt werden.
+
+![Tags-Spalte im Explorer](../../media/threat-explorer-tags.png)
 
 ### <a name="timezone-improvements"></a>Verbesserungen der Zeitzone
 
@@ -372,12 +382,12 @@ Um Phishing-URLs in Nachrichten und Klicks auf URLs in Phishing-Nachrichten zu �
 
 1. Wählen Sie im Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) ) **Threat Management**  >  **Explorer** (oder **Echtzeiterkennung** ) aus. (In diesem Beispiel wird der Explorer verwendet.)
 
-2. Wählen Sie im Menü **Ansicht** die Option Phishing **per e-Mail** aus  >  **Phish** .
+2. Wählen Sie im Menü **Ansicht** die Option Phishing **per e-Mail** aus  >  **Phish**.
 
    > [!div class="mx-imgBorder"]
-   > ![Menü "Ansicht" für Explorer](../../media/ExplorerViewEmailPhishMenu.png)
+   > ![Menü "Ansicht" für Explorer im Phishing-Kontext](../../media/ExplorerViewEmailPhishMenu.png)
 
-3. Klicken Sie auf **Absender** , und wählen Sie dann **URLs**  >  **Klicken Sie auf Urteil** .
+3. Klicken Sie auf **Absender** , und wählen Sie dann **URLs**  >  **Klicken Sie auf Urteil**.
 
 4. Wählen Sie eine oder mehrere Optionen aus, beispielsweise " **blockiert** " und "über **schrieben** ", und klicken Sie dann auf die Schaltfläche **Aktualisieren** , die sich in derselben Reihe befindet wie die Optionen zum Anwenden des Filters. (Aktualisieren Sie Ihr Browserfenster nicht.)
 
@@ -422,7 +432,7 @@ Angenommen, Sie möchten e-Mail-Nachrichten anzeigen, die Benutzer in Ihrer Orga
 2. Wählen Sie im Menü **Ansicht** die Option **e-Mail-** über  >  **mittlungen** aus.
 
    > [!div class="mx-imgBorder"]
-   > ![Menü "Ansicht" für Explorer](../../media/explorer-view-menu-email-user-reported.png)
+   > ![Menü "Ansicht" für den Explorer für e-Mails](../../media/explorer-view-menu-email-user-reported.png)
 
 3. Klicken Sie auf **Absender** , und wählen Sie **Standard**  >  **Berichtstyp** aus.
 
@@ -431,12 +441,12 @@ Angenommen, Sie möchten e-Mail-Nachrichten anzeigen, die Benutzer in Ihrer Orga
    > [!div class="mx-imgBorder"]
    > ![Vom Benutzer gemeldetes Phishing](../../media/EmailUserReportedReportType.png)
 
-Der Bericht wird aktualisiert, um Daten über e-Mail-Nachrichten anzuzeigen, die Personen in Ihrer Organisation als Phishing-Versuch gemeldet haben. Sie können diese Informationen verwenden, um weitere Analysen durchzuführen und bei Bedarf Ihre [ATP-Anti-Phishing-Richtlinien](configure-atp-anti-phishing-policies.md)anzupassen.
+Der Bericht wird aktualisiert, um Daten über e-Mail-Nachrichten anzuzeigen, die Personen in Ihrer Organisation als Phishing-Versuch gemeldet haben. Sie können diese Informationen verwenden, um weitere Analysen durchzuführen und gegebenenfalls Ihre [Anti-Phishing-Richtlinien in Microsoft Defender für Office 365](configure-atp-anti-phishing-policies.md)anzupassen.
 
 ## <a name="start-automated-investigation-and-response"></a>Starten der automatischen Untersuchung und Antwort
 
 > [!NOTE]
-> In **Office 365 ATP-Plan 2** und **Office 365 E5** stehen automatisierte Ermittlungs-und Antwortfunktionen zur Verfügung.
+> In **Microsoft Defender für Office 365 Plan 2** und **Office 365 E5** stehen automatisierte Ermittlungs-und Antwortfunktionen zur Verfügung.
 
 (Neu!) Durch [Automatische Untersuchung und Antwort](automated-investigation-response-office.md) können Sie Ihr Sicherheits Betriebsteam viel Zeit und Mühe beim untersuchen und verringern von Cyberangriffe speichern. Zusätzlich zum Konfigurieren von Warnungen, die ein Sicherheits Textbuch auslösen können, können Sie einen automatisierten Ermittlungs-und Antwortprozess aus einer Ansicht im Explorer starten.
 
@@ -454,11 +464,11 @@ Zusätzlich zu den in diesem Artikel beschriebenen Szenarien stehen Ihnen viele 
 
 ## <a name="required-licenses-and-permissions"></a>Erforderliche Lizenzen und Berechtigungen
 
-Sie benötigen [Office 365 ATP](office-365-atp.md) , um den Explorer oder Echt Zeit Erkennungen zu erhalten.
+Sie benötigen [Microsoft Defender für Office 365](office-365-atp.md) , um Explorer oder Echt Zeit Erkennungen zu erhalten.
 
-- Der Explorer ist in Office 365 ATP-Plan 2 enthalten.
-- Der Bericht über Echt Zeit Erkennungen ist in Office 365 ATP-Plan 1 enthalten.
-- Planen Sie die Zuweisung von Lizenzen für alle Benutzer, die durch Office 365 ATP geschützt werden sollen. (Explorer-oder Echt Zeit Erkennungen zeigen Erkennungsdaten für lizenzierte Benutzer.)
+- Der Explorer ist in Defender für Office 365 Plan 2 enthalten.
+- Der Bericht über Echt Zeit Erkennungen ist in Defender für Office 365 Plan 1 enthalten.
+- Planen Sie die Zuweisung von Lizenzen für alle Benutzer, die für Office 365 durch Defender geschützt werden sollen. (Explorer-oder Echt Zeit Erkennungen zeigen Erkennungsdaten für lizenzierte Benutzer.)
 
 Zum Anzeigen und Verwenden von Explorer-oder Echt Zeit Erkennungen müssen Sie über die entsprechenden Berechtigungen verfügen, beispielsweise solche, die einem Sicherheitsadministrator oder Sicherheits Leser erteilt werden.
 
@@ -482,9 +492,9 @@ Weitere Informationen zu Rollen und Berechtigungen finden Sie in den folgenden R
 
 ## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>Einige Unterschiede zwischen dem Bedrohungs-Explorer und Echt Zeit Erkennungen
 
-- Der Bericht über **Echt Zeit Erkennungen** steht in Office 365 ATP-Plan 1 zur Verfügung, während **Threat Explorer** in Office 365 ATP-Plan 2 zur Verfügung steht.
+- Der Bericht über **Echt Zeit Erkennungen** steht in Defender für Office 365 Plan 1 zur Verfügung, während **Threat Explorer** in Defender für Office 365 Plan 2 zur Verfügung steht.
 - Der Bericht über **Echt Zeit Erkennungen** ermöglicht das Anzeigen von Erkennungen in Echtzeit. Dieser Vorgang wird auch von **Threat Explorer** durchgesetzt, aber Sie können auch zusätzliche Details für einen bestimmten Angriff anzeigen.
 - Eine **alle e-Mail-** Ansicht ist in **Threat Explorer** verfügbar (und befindet sich nicht im Bericht über **Echt Zeit Erkennungen** ).
 - In **Threat Explorer** sind weitere Filterfunktionen und verfügbare Aktionen enthalten.
 
-Weitere Informationen finden Sie unter [Office 365 ATP-Dienstbeschreibung: Verfügbarkeit von Features in Advanced Threat Protection (ATP)-Plänen](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+Weitere Informationen finden Sie unter [Microsoft Defender für Office 365-Dienstbeschreibung: Verfügbarkeit von Features in Defender für Office 365 Pläne](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).

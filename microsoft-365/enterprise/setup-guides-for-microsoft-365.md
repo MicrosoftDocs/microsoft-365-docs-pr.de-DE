@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Beschleunigen Sie die Planung und Konfiguration von Microsoft 365 oder Office 365 mit den Installationsanleitungen.
-ms.openlocfilehash: 215f51af1fc553ef0710565af0a7c25111de8328
-ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
+ms.openlocfilehash: 7024494de231e5adcce4bb91414b5f7bb3349f88
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48493697"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844092"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Einrichtungsanleitung für Microsoft 365- und Office 365-Dienste
 
@@ -42,7 +42,7 @@ Auf die Setup Handbücher können Sie auf der Seite [Setup Anleitung](https://ak
 
    ![Schulungs & Karte "Guides" im Microsoft 365 Admin Center](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
 
-3. Wählen Sie **angepasste Setup Anleitung**aus.
+3. Wählen Sie **angepasste Setup Anleitung** aus.
 
    ![Screenshot der Seite "Setup Anleitung" im Microsoft 365 Admin Center](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
 
@@ -135,12 +135,12 @@ Der [AD FS-Bereitstellungs Ratgeber](https://aka.ms/adfsguidance) bietet schritt
 
 ## <a name="guides-for-security-and-compliance"></a>Leitfaden für Sicherheit und Compliance
 
-### <a name="microsoft-defender-advanced-threat-protection-atp-advisor"></a>Microsoft Defender Advanced Threat Protection (ATP) Advisor
+### <a name="microsoft-defender-for-endpoint-advisor"></a>Microsoft Defender für Endpoint Advisor
 
-Der [Microsoft Defender Advanced Threat Protection Advisor](https://aka.ms/mdatpsetup) bietet Anweisungen, mit denen Ihr Unternehmensnetzwerk erweiterte Bedrohungen verhindern, erkennen, untersuchen und reagieren kann. Informieren Sie sich über die Sicherheitsanfälligkeit in Ihrer Organisation, und entscheiden Sie, welches Bereitstellungspaket und welche Konfigurationsmethoden am besten geeignet sind. 
+Der [Microsoft Defender für Endpoint Advisor](https://aka.ms/mdatpsetup) stellt Anweisungen bereit, mit denen Ihr Unternehmensnetzwerk erweiterte Bedrohungen verhindern, erkennen, untersuchen und reagieren kann. Informieren Sie sich über die Sicherheitsanfälligkeit in Ihrer Organisation, und entscheiden Sie, welches Bereitstellungspaket und welche Konfigurationsmethoden am besten geeignet sind. 
 
 >[!NOTE]
->Für Microsoft Defender ATP ist eine Microsoft-Volumenlizenz erforderlich.
+>Für Microsoft Defender for Endpoint ist eine Microsoft-Volumenlizenz erforderlich.
 
 ### <a name="exchange-online-protection-setup-guide"></a>Anleitung zum Einrichten des Exchange Online-Schutzes
 
@@ -148,9 +148,9 @@ Microsoft Exchange Online Protection (EoP) ist ein Cloud-basierter e-Mail-Filter
 
 Verwenden Sie das [Setup Handbuch für den Exchange Online Schutz](https://aka.ms/EOPguidance) , um EoP einzurichten, indem Sie auswählen, welche der drei Bereitstellungsszenarien &mdash; lokale Postfächer, hybride (Mischung aus lokalen und Cloud-Postfächern) oder alle Cloud-Postfächer für &mdash; Ihre Organisation geeignet sind. Das Handbuch enthält Informationen und Ressourcen zum Einrichten und Überprüfen der Lizenzierung Ihrer Benutzer, zum Zuweisen von Berechtigungen im Microsoft 365 Admin Center und zum Konfigurieren der Antischadsoftware-und Spam Richtlinien Ihrer Organisation im Security & Compliance Center. 
 
-### <a name="office-365-advanced-threat-protection-advisor"></a>Office 365 Advanced Threat Protection Advisor
+### <a name="microsoft-defender-for-office-365-advisor"></a>Microsoft Defender für Office 365 Advisor
 
-Der [Office 365 Advanced Threat Protection Advisor](https://aka.ms/oatpsetup) schützt Ihre Organisation vor böswilligen Bedrohungen, die Ihre Umgebung möglicherweise über e-Mail-Nachrichten, Links und Tools für die Zusammenarbeit von Drittanbietern auftrifft. Dieses Handbuch enthält die Ressourcen und Informationen, die Sie bei der Vorbereitung und Identifizierung des Advanced Threat Protection-Plans entsprechend den Anforderungen Ihrer Organisation unterstützen. 
+Der [Microsoft Defender für Office 365 Advisor](https://aka.ms/oatpsetup) schützt Ihre Organisation vor böswilligen Bedrohungen, die Ihre Umgebung möglicherweise über e-Mail-Nachrichten, Links und Tools für die Zusammenarbeit von Drittanbietern auftrifft. In diesem Leitfaden werden die Ressourcen und Informationen bereitgestellt, die Sie bei der Vorbereitung und Identifizierung des Verteidigers für Office 365 Plan entsprechend den Anforderungen Ihrer Organisation unterstützen. 
 
 ### <a name="microsoft-information-protection-setup-guide"></a>Microsoft Information Protection-Setup Handbuch
 

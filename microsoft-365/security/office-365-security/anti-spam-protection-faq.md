@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können häufig gestellte Fragen und Antworten zum Schutz vor Spam in Exchange Online Protection (EoP) anzeigen.
-ms.openlocfilehash: 2bf2808cc0da6124a0377b52dc46f88b2c8a69e0
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: d2505eea572e512b306cf26c7a57d1dc1b705c0b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445735"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844464"
 ---
 # <a name="anti-spam-protection-faq"></a>Häufig gestellte Fragen zum Antispamschutz
 
@@ -59,7 +59,7 @@ Nachdem Sie sich für den Dienst angemeldet und Ihre Domäne hinzugefügt haben,
 
 Weitere Informationen hierzu finden Sie in den folgenden Themen:
 
-[Empfohlene Einstellungen für EoP und Office 365 ATP-Sicherheit](recommended-settings-for-eop-and-office365-atp.md)
+[Empfohlene Einstellungen für EoP und Microsoft Defender für Office 365 Sicherheit](recommended-settings-for-eop-and-office365-atp.md)
 
 [Konfigurieren der Verbindungsfilterung in EoP](configure-the-connection-filter-policy.md)
 
@@ -105,9 +105,9 @@ Sie können eine Benachrichtigung an eine angegebene E-Mail-Adresse senden, wenn
 
 Ja. Obwohl empfohlen wird, den MX-Eintrag auf Microsoft zu setzen, erkennen wir, dass es legitime geschäftliche Gründe gibt, Ihre e-Mails an einen anderen Ort als Microsoft weiterzuleiten.
 
-- **Eingehend**: Ändern Sie Ihre MX-Einträge so, dass Sie auf den Drittanbieter verweisen, und leiten Sie die Nachrichten dann zur weiteren Verarbeitung an EoP um. Weitere Informationen finden Sie unter [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+- **Eingehend** : Ändern Sie Ihre MX-Einträge so, dass Sie auf den Drittanbieter verweisen, und leiten Sie die Nachrichten dann zur weiteren Verarbeitung an EoP um. Weitere Informationen finden Sie unter [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-- Ausgehend **: Konfigurieren**Sie das Smarthost-Routing von Microsoft 365 auf den Drittanbieter des Ziels.
+- Ausgehend **: Konfigurieren** Sie das Smarthost-Routing von Microsoft 365 auf den Drittanbieter des Ziels.
 
 ## <a name="does-microsoft-have-any-documentation-about-how-i-can-protect-myself-from-phishing-scams"></a>Bietet Microsoft Informationen, wie ich mich gegen betrügerische Phishing-Versuche schützen kann?
 

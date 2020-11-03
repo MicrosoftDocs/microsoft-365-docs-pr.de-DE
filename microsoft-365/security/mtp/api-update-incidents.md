@@ -1,6 +1,6 @@
 ---
 title: Update Incidents-API
-description: Informationen zum Aktualisieren von Vorfällen mit der Microsoft Threat Protection-API
+description: Informationen zum Aktualisieren von Vorfällen mit der Microsoft 365 Defender-API
 keywords: Update, API, Vorfall
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 8ad47453c7163bfac99c17f42986b818cdca603f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 3f77980863b0c232166d736a6b557444df98c8ac
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203629"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844836"
 ---
 # <a name="update-incidents-api"></a>Update Incidents-API
 
@@ -32,7 +32,7 @@ ms.locfileid: "48203629"
 
 
 **Gilt für:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >Einige Informationen beziehen sich auf Vorabversionen von Produkten, die vor der kommerziellen Veröffentlichung noch erheblich geändert werden können. Microsoft übernimmt mit diesen Informationen keinerlei Gewährleistung, sei sie ausdrücklich oder konkludent.
@@ -49,11 +49,11 @@ Aktualisiert die Eigenschaften des vorhandenen Vorfalls.
 
 
 ## <a name="permissions"></a>Berechtigungen
-Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [zugreifen auf die Microsoft Threat Protection-APIs](api-access.md).
+Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Access the Microsoft 365 Defender APIs](api-access.md).
 
 Berechtigungstyp |   Berechtigung  |   Anzeigename der Berechtigung
 :---|:---|:---
-Application |   Incident. ReadWrite. all |    "Alle Vorfälle lesen und schreiben"
+Anwendung |   Incident. ReadWrite. all |    "Alle Vorfälle lesen und schreiben"
 Delegiert (Geschäfts-, Schul- oder Unikonto) | Incident. ReadWrite | ' Lesen und Schreiben von Vorfällen '
 
 >[!NOTE]

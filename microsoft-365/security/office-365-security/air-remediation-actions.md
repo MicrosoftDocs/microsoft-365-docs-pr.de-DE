@@ -20,12 +20,12 @@ description: Erfahren Sie mehr über Behebungsaktionen nach der automatischen Un
 ms.date: 09/29/2020
 ms.custom:
 - air
-ms.openlocfilehash: ffd0429d3dc85371e7b6bb1c2d1246d9820d0e2e
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: c178655d60b45e45680a86c3973317e63c354f17
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446707"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844536"
 ---
 # <a name="remediation-actions-following-automated-investigation-in-microsoft-defender-for-office-365"></a>Behebungsaktionen nach der automatischen Untersuchung in Microsoft Defender für Office 365
 
@@ -53,7 +53,7 @@ In der folgenden Tabelle sind die Bedrohungen und entsprechenden Korrekturaktion
 |Kategorie|Bedrohung/Risiko|Korrekturaktion (en)|
 |---|---|---|
 |E-Mails|Schadsoftware|Soft Delete e-Mail/Cluster <br/><br/>Wenn mehr als eine Handvoll von e-Mail-Nachrichten in einem Cluster Schadsoftware enthalten, wird der Cluster als bösartig eingestuft.|
-|E-Mails|Bösartige URL<br/>(Eine bösartige URL wurde von [sicheren Links in Office 365 ATP](atp-safe-links.md)erkannt.|Soft Delete e-Mail/Cluster <br/><br/>E-Mails, die eine bösartige URL enthalten, werden als böswillig eingestuft.|
+|E-Mails|Bösartige URL<br/>(Eine bösartige URL wurde von [sicheren Links in Microsoft Defender für Office 365](atp-safe-links.md)erkannt.|Soft Delete e-Mail/Cluster <br/><br/>E-Mails, die eine bösartige URL enthalten, werden als böswillig eingestuft.|
 |E-Mails|Phishing|Soft Delete e-Mail/Cluster <br/><br/>Wenn mehr als eine Handvoll von e-Mail-Nachrichten in einem Cluster Phishing-Versuche enthalten, wird der Cluster als Phishing betrachtet.|
 |E-Mails|Gezappte Phishing-Angriffe <br/>(E-Mail-Nachrichten wurden zugestellt und [gezappt](https://docs.microsoft.com/microsoft-365/security/office-365-security/zero-hour-auto-purge).)|Soft Delete e-Mail/Cluster <br/><br/>Berichte sind für die Anzeige von gezappten Nachrichten verfügbar. [Prüfen Sie, ob zap eine Nachricht und FAQs verschoben](https://docs.microsoft.com/microsoft-365/security/office-365-security/zero-hour-auto-purge#how-to-see-if-zap-moved-your-message)hat.|
 |E-Mails|Von einem Benutzer [gemeldete](https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-message-add-in) Phishing-e-Mails|[Automatische Untersuchung, ausgelöst durch den Bericht des Benutzers](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-user-reported-phish-message-launches-an-investigation-playbook)|

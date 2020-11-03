@@ -1,6 +1,6 @@
 ---
-title: Neues in Microsoft Threat Protection
-description: Listet die neuen Features und Funktionen in Microsoft Threat Protection auf.
+title: Neuerungen in Microsoft 365 Defender
+description: Listet die neuen Features und Funktionen in Microsoft 365 Defender auf.
 keywords: Neuerungen in Microsoft Threat Protection, GA, allgemein verfügbar, Funktionen, verfügbar, neu
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,19 +17,19 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: conceptual
-ms.openlocfilehash: 1b3cc273b61fcdff3c01b30c9ef64619a0e7a368
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 5214f7c399ab511ec16231e4dda97a2c33b37668
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430397"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844704"
 ---
-# <a name="whats-new-in-microsoft-threat-protection"></a>Neues in Microsoft Threat Protection
+# <a name="whats-new-in-microsoft-365-defender"></a>Neuerungen in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-Die folgenden Features sind allgemein verfügbar (GA) in der neuesten Version von Microsoft Threat Protection.
+Die folgenden Features sind allgemein verfügbar (GA) in der neuesten Version von Microsoft 365 Defender.
 
 RSS-Feed: erhalten Sie benachrichtigt, wenn diese Seite aktualisiert wird, indem Sie die folgende URL in Ihren Feed-Reader kopieren und einfügen:
 ```http

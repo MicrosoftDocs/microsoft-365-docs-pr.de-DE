@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: Administratoren erfahren, wie Sie mithilfe von Quarantäne Tags steuern können, welche Benutzer in der Lage sind, ihre unter Quarantäne gestellten Nachrichten zu übernehmen.
-ms.openlocfilehash: 89f03795d8f12b3df3e5090648c5a6c8b64c322a
-ms.sourcegitcommit: 676479f1e65492b44c4d0316a765f55ae9fae374
+ms.openlocfilehash: e50d7eea4cec3c87231dda855725b1e901f5fa33
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "48819740"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845696"
 ---
 # <a name="quarantine-tags"></a>Quarantäne-Tags
 
@@ -72,7 +72,7 @@ Sie erstellen und Zuweisen von Quarantäne Tags im Security & Compliance Center 
 
 2. Wählen Sie auf der Seite **Tags isolieren** die Option **benutzerdefiniertes Tag hinzufügen** aus.
 
-3. Der Assistent für **neue Tags** wird geöffnet. Geben Sie auf der Seite **Tagname** einen kurzen, aber eindeutigen Namen in das Feld **Tag Name** ein. In den nächsten Schritten müssen Sie das Tag anhand des Namens identifizieren und auswählen. Klicken Sie nach Abschluss des Vorgangs auf **Weiter** .
+3. Der Assistent für **neue Tags** wird geöffnet. Geben Sie auf der Seite **Tagname** einen kurzen, aber eindeutigen Namen in das Feld **Tag Name** ein. In den nächsten Schritten müssen Sie das Tag anhand des Namens identifizieren und auswählen. Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
 
 4. Wählen Sie auf der Seite **Empfänger Nachrichtenzugriff** einen der folgenden Werte aus:
    - **Kein Zugriff**
@@ -96,11 +96,11 @@ Sie erstellen und Zuweisen von Quarantäne Tags im Security & Compliance Center 
 
    Diese Berechtigungen und deren Auswirkungen auf isolierte Nachrichten und Spambenachrichtigungen für Endbenutzer werden im Abschnitt [Berechtigungen für Quarantäne-Tag-Details](#quarantine-tag-permission-details) weiter unten in diesem Artikel beschrieben.
 
-   Klicken Sie nach Abschluss des Vorgangs auf **Weiter** .
+   Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
 
 5. Überprüfen Sie auf der angezeigten **Zusammenfassungs** Seite Ihre Einstellungen. Sie können auf jeder Einstellung auf **Bearbeiten** klicken, um Sie zu ändern.
 
-   Wenn Sie fertig sind, klicken Sie auf über **Mitteln** .
+   Wenn Sie fertig sind, klicken Sie auf über **Mitteln**.
 
 6. Klicken Sie auf der angezeigten Bestätigungsseite auf **Fertig** .
 
@@ -229,7 +229,7 @@ In _unterstützten_ Schutzfunktionen, die Nachrichten oder Dateien isolieren (au
 |Feature|Unterstützte Quarantäne-Tags?|Verwendete standardmäßige Quarantäne Tags|
 |---|:---:|---|
 |[Anti-Spam-Richtlinien](configure-your-spam-filter-policies.md): <ul><li>**Spam** ( _Spam_ )</li><li>**Spam mit hoher Zuverlässigkeit** ( _: highconfidencespamaction_ )</li><li>**Phishing-e-Mails** ( _PhishSpamAction_ )</li><li>**Phishing-e-Mails mit hoher Zuverlässigkeit** ( _HighConfidencePhishAction_ )</li><li>**Massen-e-Mails** ( _BulkSpamAction_ )</li></ul>|Ja|<ul><li>DefaultSpamTag (Vollzugriff)</li><li>DefaultHighConfSpamTag (Vollzugriff)</li><li>DefaultPhishTag (Vollzugriff)</li><li>DefaultHighConfPhishTag (kein Zugriff)</li><li>DefaultBulkTag (Vollzugriff)</li></ul>
-|Anti-Phishing-Richtlinien: <ul><li>[Spoof Intelligence Protection](set-up-anti-phishing-policies.md#spoof-settings) ( _AuthenticationFailAction_ )</li><li>[Identitätswechsel Schutz](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies):<sup>\*</sup> <ul><li>**Wenn e-Mail von einem imitierten Benutzer gesendet wird** ( _TargetedUserProtectionAction_ )</li><li>**Wenn e-Mail von einer imitierten Domäne gesendet wird** ( _TargetedDomainProtectionAction_ )</li><li>**Post Fach Intelligenz** \> **Wenn e-Mail von einem imitierten Benutzer gesendet wird** ( _MailboxIntelligenceProtectionAction_ )</li></ul></li></ul></ul>|Nein|n/v|
+|Anti-Phishing-Richtlinien: <ul><li>[Spoof Intelligence Protection](set-up-anti-phishing-policies.md#spoof-settings) ( _AuthenticationFailAction_ )</li><li>[Identitätswechsel Schutz](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<sup>\*</sup> <ul><li>**Wenn e-Mail von einem imitierten Benutzer gesendet wird** ( _TargetedUserProtectionAction_ )</li><li>**Wenn e-Mail von einer imitierten Domäne gesendet wird** ( _TargetedDomainProtectionAction_ )</li><li>**Post Fach Intelligenz** \> **Wenn e-Mail von einem imitierten Benutzer gesendet wird** ( _MailboxIntelligenceProtectionAction_ )</li></ul></li></ul></ul>|Nein|n/v|
 |[Anti-Malware-Richtlinien](configure-anti-malware-policies.md): alle erkannten Nachrichten werden immer isoliert.|Nein|n/v|
 |[ATP für SharePoint, OneDrive und Microsoft Teams](atp-for-spo-odb-and-teams.md)|Nein|n/v|
 |[Nachrichtenfluss Regeln](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (auch als Transportregeln bezeichnet) mit der Aktion: **Zustellung der Nachricht an die gehostete Quarantäne** ( _Quarantäne_ ).|Nein|n/v|
@@ -255,7 +255,7 @@ Ausführliche Anweisungen zum Erstellen und Ändern von Anti-Spam-Richtlinien fi
   
    ![Auswählen von Quarantäne Tags in einer Anti-Spam-Richtlinie](../../media/quarantine-tags-in-anti-spam-policies.png)
 
-5. Klicken Sie nach Abschluss des Vorgangs auf **Speichern** .
+5. Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
 
 #### <a name="assign-quarantine-tags-in-anti-spam-policies-in-powershell"></a>Zuweisen von Quarantäne Tags in Anti-Spam-Richtlinien in PowerShell
 
@@ -318,7 +318,7 @@ Mit den globalen Einstellungen für Quarantäne-Tags können Sie die Endbenutzer
 
    - **Sprache auswählen** : Spambenachrichtigungen für Endbenutzer werden basierend auf den Spracheinstellungen des Empfängers bereits lokalisiert. Sie können benutzerdefinierten Text in unterschiedlichen Sprachen für den **Anzeigenamen** und die **Haftungsausschluss** Werte angeben.
 
-     Wählen Sie mindestens eine Sprache aus dem Feld erste Sprache aus, und klicken Sie dann auf **Hinzufügen** . Sie können mehrere Sprachen auswählen, indem Sie nacheinander auf **Hinzufügen** klicken. Ein Feld für Abschnitts Sprachen zeigt alle Sprachen an, die Sie ausgewählt haben:
+     Wählen Sie mindestens eine Sprache aus dem Feld erste Sprache aus, und klicken Sie dann auf **Hinzufügen**. Sie können mehrere Sprachen auswählen, indem Sie nacheinander auf **Hinzufügen** klicken. Ein Feld für Abschnitts Sprachen zeigt alle Sprachen an, die Sie ausgewählt haben:
 
      ![Ausgewählte Sprachen im Feld zweite Sprache in den globalen Quarantäne Benachrichtigungseinstellungen von Quarantäne Tags](../../media/quarantine-tags-esn-customization-selected-languages.png)
 
@@ -386,7 +386,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-Hoste
 
 1. Wechseln Sie im Security & Compliance Center zu **Threat Management** \> **Policy** , und wählen Sie dann **Quarantine Tags** aus.
 
-2. Wählen Sie auf der Seite **Tags isolieren** das benutzerdefinierte Quarantäne-Tag aus, das Sie entfernen möchten, und klicken Sie dann auf **Delete Tag** .
+2. Wählen Sie auf der Seite **Tags isolieren** das benutzerdefinierte Quarantäne-Tag aus, das Sie entfernen möchten, und klicken Sie dann auf **Delete Tag**.
 
 3. Klicken Sie im Bestätigungsdialogfeld, das angezeigt wird, auf **Tag entfernen** .
 

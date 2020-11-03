@@ -1,5 +1,5 @@
 ---
-title: Threat Investigation &-Antwortfunktionen – Office 365 ATP-Plan 2
+title: Threat Investigation &-Antwortfunktionen – Microsoft Defender für Office 365 Plan 2
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -19,20 +19,20 @@ ms.collection:
 - m365initiative-m365-defender
 ms.custom:
 - seo-marvel-apr2020
-description: Erfahren Sie mehr über die Funktionen zur Ermittlung und Reaktion von Bedrohungen in Office 365 Advanced Threat Protection-Plan.
-ms.openlocfilehash: 4d51a172c3b6fb8641648ecd7a33e320b0a42b24
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+description: Erfahren Sie mehr über die Funktionen zur Ermittlung und Reaktion von Bedrohungen in Microsoft Defender für Office 365 Plan.
+ms.openlocfilehash: 6dba883a910306b548f1880be00ad45207da27dd
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48431135"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845792"
 ---
 # <a name="threat-investigation-and-response"></a>Untersuchung von und Antwort auf Bedrohungen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Funktionen zur Ermittlung und Reaktion von Bedrohungen in [Office 365 Advanced Threat Protection](office-365-atp.md) -Hilfe Sicherheitsanalysten und Administratoren schützen die Microsoft 365 for Business-Benutzer Ihrer Organisation durch:
+Funktionen zur Ermittlung und Reaktion von Bedrohungen in [Microsoft Defender für Office 365](office-365-atp.md) helfen Sicherheitsanalysten und Administratoren, die Microsoft 365 for Business-Benutzer Ihrer Organisation zu schützen, indem Sie:
 - Vereinfachen der Identifizierung, Überwachung und Verständlichkeit von Cyberangriffe
 - Unterstützung bei der schnellen Adressierung von Bedrohungen in Exchange Online, SharePoint Online, OneDrive für Unternehmen und Microsoft Teams
 - Bereitstellen von Einblicken und Wissen zur Unterstützung von Sicherheitsmaßnahmen beim verhindern von Cyberangriffe in Ihrer Organisation
@@ -86,17 +86,17 @@ Verwenden Sie automatisierte Ermittlungs-und Antwortfunktionen (Air), um Zeit un
 
 ## <a name="threat-intelligence-widgets"></a>Threat Intelligence-Widgets
 
-Im Rahmen des Angebots von Office 365 Advanced Threat Protection Plan 2 können Sicherheitsanalysten Details zu einer bekannten Bedrohung überprüfen. Dies ist hilfreich, um zu ermitteln, ob zusätzliche vorbeugende Maßnahmen/Schritte ergriffen werden können, um die Benutzer zu schützen.
+Im Rahmen des Angebots von Microsoft Defender für Office 365 Plan 2 können Sicherheitsanalysten Details zu einer bekannten Bedrohung überprüfen. Dies ist hilfreich, um zu ermitteln, ob zusätzliche vorbeugende Maßnahmen/Schritte ergriffen werden können, um die Benutzer zu schützen.
 
 ![Sicherheits Trends mit Informationen zu aktuellen Bedrohungen](../../media/11e7d40d-139b-4c56-8d52-c091c8654151.png)
 
 ## <a name="how-do-we-get-these-capabilities"></a>Wie erhalten wir diese Funktionen?
 
-Die Funktionen von Microsoft 365 Threat Investigation und Response sind in Office 365 Advanced Threat Protection Plan 2 enthalten, der in Enterprise E5 oder als Add-on für bestimmte Abonnements enthalten ist. Weitere Informationen finden Sie unter [Office 365 ATP-Plan 1 und Plan 2](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
+Microsoft 365 Threat Investigation and Response Funktionen sind in Microsoft Defender für Office 365 Plan 2 enthalten, der in Enterprise E5 oder als Add-on für bestimmte Abonnements enthalten ist. Weitere Informationen finden Sie unter [Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2).
 
 ## <a name="required-roles-and-permissions"></a>Erforderliche Rollen und Berechtigungen
 
-Office 365 Advanced Threat Protection verwendet rollenbasierte Zugriffssteuerung. Berechtigungen werden über bestimmte Rollen in Azure Active Directory, dem Microsoft 365 Admin Center oder dem Security & Compliance Center zugewiesen.
+Microsoft Defender für Office 365 verwendet rollenbasierte Zugriffssteuerung. Berechtigungen werden über bestimmte Rollen in Azure Active Directory, dem Microsoft 365 Admin Center oder dem Security & Compliance Center zugewiesen.
 
 > [!TIP]
 > Einige Rollen, wie beispielsweise der Sicherheits Administrator, können zwar im Security & Compliance Center zugewiesen werden, aber stattdessen sollten Sie entweder das Microsoft 365 Admin Center oder Azure Active Directory verwenden. Informationen zu Rollen, Rollengruppen und Berechtigungen finden Sie in den folgenden Ressourcen:
@@ -113,15 +113,15 @@ Office 365 Advanced Threat Protection verwendet rollenbasierte Zugriffssteuerung
 |Verwenden von [Threat Explorer (und Echtzeiterkennung)](threat-explorer.md) zum Analysieren von Bedrohungen|Eine der folgenden Varianten: <br/>- **Globaler Administrator**  <br/> - **Sicherheits Administrator** <br/>- **Sicherheits Leser** <br/> <br/>Diese Rollen können entweder in Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) oder im Microsoft 365 Admin Center () zugewiesen werden [https://admin.microsoft.com](https://admin.microsoft.com) .|
 |Anzeigen von Vorfällen (auch Untersuchungen genannt) <br/> Hinzufügen von e-Mail-Nachrichten zu einem Vorfall|Eine der folgenden Varianten: <br/>- **Globaler Administrator**  <br/> - **Sicherheits Administrator** <br/>- **Sicherheits Leser** <br/> <br/>Diese Rollen können entweder in Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) oder im Microsoft 365 Admin Center () zugewiesen werden [https://admin.microsoft.com](https://admin.microsoft.com) .|
 |Auslösen von e-Mail-Aktionen in einem Vorfall <br/> <br/> Suchen und Löschen von verdächtigen e-Mail-Nachrichten|Eine der folgenden Varianten: <br/>- **Globaler Administrator**  <br/> - **Sicherheits Administrator** plus die **Such-und Lösch** Rolle<br/><br/>Die **globalen Administrator** -und **Sicherheitsadministrator** Rollen können entweder in Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) oder im Microsoft 365 Admin Center () zugewiesen werden [https://admin.microsoft.com](https://admin.microsoft.com) . <br/><br/>Die **Such-und Lösch** Rolle muss im Security & Compliance Center () zugewiesen werden [https://protection.office.com](https://protection.office.com) .|
-|Integration von Office 365 Advanced Threat Protection Plan 2 mit Advanced Threat Protection von Microsoft Defender  <br/><br/> Integrieren von Office 365 Advanced Threat Protection Plan 2 mit einem Siem-Server|Entweder der **globale Administrator** oder die **Sicherheitsadministrator** Rolle, die entweder in Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) oder im Microsoft 365 Admin Center () zugewiesen ist [https://admin.microsoft.com](https://admin.microsoft.com) .<br/>--- **Plus** ---<br/>Eine entsprechende Rolle, die in weiteren Anwendungen zugewiesen ist (beispielsweise [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) oder Ihr Siem-Server)|
+|Integrieren von Microsoft Defender für Office 365 Plan 2 mit Microsoft Defender für Endpoint  <br/><br/> Integrieren von Microsoft Defender für Office 365 Plan 2 mit einem Siem-Server|Entweder der **globale Administrator** oder die **Sicherheitsadministrator** Rolle, die entweder in Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) oder im Microsoft 365 Admin Center () zugewiesen ist [https://admin.microsoft.com](https://admin.microsoft.com) .<br/>--- **Plus** ---<br/>Eine entsprechende Rolle, die in weiteren Anwendungen zugewiesen ist (beispielsweise [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) oder Ihr Siem-Server)|
 |
 
-## <a name="next-steps"></a>Weitere Schritte
+## <a name="next-steps"></a>Nächste Schritte
 
 - [Informationen zu Threat Tracker – neu und bemerkenswert](threat-trackers.md)
 
 - [Suchen und untersuchen schädlicher e-Mails, die zugestellt wurden (Office 365 Untersuchung und Reaktion auf Bedrohungen)](investigate-malicious-email-that-was-delivered.md)
 
-- [Integrieren von Office 365 Bedrohungs Ermittlung und-Reaktion mit Microsoft Defender Advanced Threat Protection](integrate-office-365-ti-with-wdatp.md)
+- [Integrieren von Office 365 Bedrohungs Ermittlung und-Antwort mit Microsoft Defender für Endpoint](integrate-office-365-ti-with-wdatp.md)
 
 - [Informationen zum Angriffs Simulator](attack-simulator.md)

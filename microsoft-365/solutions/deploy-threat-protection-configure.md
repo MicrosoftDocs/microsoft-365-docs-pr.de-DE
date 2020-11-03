@@ -14,12 +14,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 7699b31052ecc1bda33630fcf97e9d43875f4ae3
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: f3fa5c82efad0a51adf5e798bd89860e78256e15
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681590"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845312"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Konfigurieren von Threat Protection-Funktionen in Microsoft 365
 
@@ -49,91 +49,91 @@ Microsoft hat getestet und empfiehlt eine bestimmte Gruppe von bedingten Zugriff
 - [Konfigurationen für den Identitäts- und Gerätezugriff](../security/office-365-security/microsoft-365-policies-configurations.md)
 - [Sicherheitsleitfaden für Azure MFA](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication-security-best-practices)
 
-## <a name="step-2-configure-azure-advanced-threat-protection"></a>Schritt 2: Konfigurieren von Azure Advanced Threat Protection
+## <a name="step-2-configure-microsoft-defender-for-identity"></a>Schritt 2: Konfigurieren von Microsoft Defender für Identity
 
-Azure [Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) (Azure ATP) ist eine Cloud-basierte Sicherheitslösung, die mit Ihren lokalen Azure- [Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) -Signalen zusammenarbeitet, um erweiterte Bedrohungen, kompromittierte Identitäten und böswillige Insider Aktionen zu identifizieren, zu erkennen und zu untersuchen, die an Ihre Organisation gerichtet sind.
+[Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) ist eine Cloud-basierte Sicherheitslösung, die mit Ihren lokalen [Azure-Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) -Signalen zusammenarbeitet, um erweiterte Bedrohungen, kompromittierte Identitäten und böswillige Insider Aktionen zu identifizieren, zu erkennen und zu untersuchen, die an Ihre Organisation gerichtet sind.
 
-Azure ATP aktiviert Sicherheitsfunktionen (Polizisten), Analysten und Sicherheitsexperten, die sich mit der Erkennung erweiterter Angriffe in Hybrid Umgebungen bemühen:
+Microsoft Defender for Identity aktiviert Sicherheitsfunktionen (Polizisten), Analysten und Sicherheitsexperten, die sich mit der Erkennung erweiterter Angriffe in Hybrid Umgebungen bemühen:
 - Überwachen von Benutzern, Entitäts Verhalten und Aktivitäten mit Lern basierter Analyse.
 - Schützt Benutzeridentitäten und Anmeldeinformationen, die in Active Directory gespeichert sind.
 - Identifizieren und untersuchen Sie verdächtige Benutzeraktivitäten und fortgeschrittene Angriffe in der gesamten Abwehrkette.
 - Bereitstellen klarer Vorfallinformationen auf einer einfachen Zeitachse für eine schnelle Sichtung.
 
-### <a name="to-set-up-azure-atp"></a>So richten Sie Azure ATP ein
+### <a name="to-set-up-microsoft-defender-for-identity"></a>So richten Sie Microsoft Defender für Identity ein
 
-![Prozess für die Bereitstellung von Azure ATP](../media/solutions-architecture-center/deploy-azure-atp-steps.png) 
+![Prozess für die Bereitstellung von Microsoft Defender for Identity](../media/solutions-architecture-center/deploy-azure-atp-steps.png) 
 
-1. [Einrichten von Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) zum Schutz Ihrer primären Umgebungen.
+1. [Richten Sie Microsoft Defender für Identity](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) ein, um Ihre primären Umgebungen zu schützen.
 2. Schützen Sie alle [Domänencontroller](https://docs.microsoft.com/azure-advanced-threat-protection/atp-sensor-monitoring) und [Gesamtstrukturen](https://docs.microsoft.com/azure-advanced-threat-protection/atp-multi-forest).
-3. Integrieren Sie [Azure ATP-Warnungen](https://docs.microsoft.com/azure-advanced-threat-protection/suspicious-activity-guide?tabs=external) in ihren Security Operations (Polizisten)-Workflow.
+3. Integrieren Sie [Microsoft Defender für Identitäts Warnungen](https://docs.microsoft.com/azure-advanced-threat-protection/suspicious-activity-guide?tabs=external) in ihren Security Operations (Polizisten)-Workflow.
 
-### <a name="more-information-about-azure-atp"></a>Weitere Informationen zu Azure ATP
+### <a name="more-information-about-microsoft-defender-for-identity"></a>Weitere Informationen zu Microsoft Defender für Identity
 
-- [Was ist Azure ATP?](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)
-- [Video: Einführung in Azure ATP](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
-- [Azure ATP-Bereitstellung](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp#whats-next)
+- [Was ist Microsoft Defender für Identity?](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)
+- [Video: Einführung in Microsoft Defender for Identity](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
+- [Microsoft Defender für die Identitätsbereitstellung](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp#whats-next)
 
-## <a name="step-3-turn-on-microsoft-threat-protection"></a>Schritt 3: Aktivieren von Microsoft Threat Protection
+## <a name="step-3-turn-on-microsoft-365-defender"></a>Schritt 3: Aktivieren von Microsoft 365 Defender
 
-[Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) kombiniert Signale und orchestriert Funktionen in einer einzigen Lösung. Mit der integrierten Microsoft Threat Protection-Lösung können Sicherheitsexperten die Bedrohungs Signale, die jedes dieser Produkte empfängt, zusammenfügen und den vollständigen Umfang und die Auswirkungen der Bedrohung bestimmen. wie Sie in die Umgebung eingingen, welche Auswirkungen Sie hat und wie Sie sich derzeit auf die Organisation auswirkt. Microsoft Threat Protection führt automatische Aktionen aus, um den Angriff zu verhindern oder zu beenden und die betroffenen Postfächer, Endpunkte und Benutzeridentitäten selbst zu heilen.
+[Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) kombiniert Signale und orchestriert Funktionen in einer einzigen Lösung. Mit der integrierten Microsoft 365 Defender-Lösung können Sicherheitsexperten die Bedrohungs Signale, die von diesen Produkten empfangen werden, zusammenfügen und den vollständigen Umfang und die Auswirkungen der Bedrohung bestimmen. wie Sie in die Umgebung eingingen, welche Auswirkungen Sie hat und wie Sie sich derzeit auf die Organisation auswirkt. Microsoft 365 Defender unternimmt automatische Aktionen zum verhindern oder Beenden des Angriffs und zur Selbstheilung betroffener Postfächer, Endpunkte und Benutzeridentitäten.
 
-Microsoft Threat Protection vereinigt Warnungen, Vorfälle, automatisierte Untersuchungen und Antworten sowie erweitertes jagen über Arbeitslasten hinweg (Azure ATP, Office 365 ATP, Microsoft Defender ATP und Microsoft Cloud App Security) in einem einzigen Glas Erlebnis. Nachdem Sie einen oder mehrere ihrer Advanced Threat Protection-Dienste konfiguriert haben, aktivieren Sie Microsoft Threat Protection. Neue Features werden kontinuierlich zu Microsoft Threat Protection hinzugefügt. Sie können sich für das erhalten von Vorschau Features entscheiden.
+Microsoft 365 Defender vereinigt Warnungen, Vorfälle, automatische Untersuchung und Reaktion sowie erweitertes jagen über Arbeitslasten hinweg (Microsoft Defender for Identity, Microsoft Defender for Office 365, Microsoft Defender for Endpoint und Microsoft Cloud App Security) in einem einzigen Glas Erlebnis. Nachdem Sie einen oder mehrere ihrer Verteidiger für Office 365 Dienste konfiguriert haben, aktivieren Sie Microsoft 365 Defender. Neue Features werden kontinuierlich zu Microsoft 365 Defender hinzugefügt; Sie können sich für das erhalten von Vorschau Features entscheiden.
 
-### <a name="to-set-up-microsoft-threat-protection"></a>So richten Sie Microsoft Threat Protection ein
+### <a name="to-set-up-microsoft-365-defender"></a>So richten Sie Microsoft 365 Defender ein
 
-![Prozess für die Bereitstellung von Microsoft Threat Protection](../media/solutions-architecture-center/deploy-mtp-steps.png) 
+![Prozess für die Bereitstellung von Microsoft 365 Defender](../media/solutions-architecture-center/deploy-mtp-steps.png) 
 
 1. [Überprüfen Sie die Voraussetzungen](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites).
-2. [Aktivieren Sie Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable).
+2. [Aktivieren Sie Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable).
 3. [Aktivieren Sie die Vorschaufunktionen](https://docs.microsoft.com/microsoft-365/security/mtp/preview).
 
-### <a name="more-information-about-microsoft-threat-protection"></a>Weitere Informationen zum Microsoft Threat Protection
+### <a name="more-information-about-microsoft-365-defender"></a>Weitere Informationen zu Microsoft 365 Defender
 
-- [Was ist Microsoft Threat Protection?](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
-- [Neues in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)
+- [Was ist Microsoft 365 Defender?](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
+- [Neuerungen in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)
 
-## <a name="step-4-configure-office-365-advanced-threat-protection"></a>Schritt 4: Konfigurieren Office 365 Advanced Threat Protection
+## <a name="step-4-configure-microsoft-defender-for-office-365"></a>Schritt 4: Konfigurieren von Microsoft Defender für Office 365
 
-[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) (Office 365 ATP) schützt Ihre Organisation vor böswilligen Bedrohungen in e-Mail-Nachrichten (Anlagen und URLs), Office-Dokumenten und Tools für die Zusammenarbeit. In der folgenden Tabelle sind Office 365 ATP-Features und-Funktionen aufgeführt, die in Microsoft 365 E5 enthalten sind:
+[Microsoft Defender für Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) schützt Ihre Organisation vor böswilligen Bedrohungen in e-Mail-Nachrichten (Anlagen und URLs), Office-Dokumenten und Tools für die Zusammenarbeit. In der folgenden Tabelle wird Microsoft Defender für Office 365 Features und Funktionen aufgeführt, die in Microsoft 365 E5 enthalten sind:
 
 |Konfigurations-, Schutz-und Erkennungsfunktionen|Funktionen für Automatisierung, Untersuchung, Korrektur und Bildung|
 |---|---|
-|[Sichere Anlagen](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br/>[Sichere Links](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)<br/>[Sichere Dokumente](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)<br/>[ATP für SharePoint, OneDrive und Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)<br/>[ATP Antiphishingschutz](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#exclusive-settings-in-atp-anti-phishing-policies)|[Bedrohungs-Tracker](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-trackers)<br/>[Sicherheitsrisiken-Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)<br/>[Automatische Untersuchung und Reaktion](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>[Angriffssimulator](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulator)|
+|[Sichere Anlagen](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br/>[Sichere Links](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)<br/>[Sichere Dokumente](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)<br/>[ATP für SharePoint, OneDrive und Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)<br/>[Anti-Phishing in Defender für Office 365 Schutz](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#exclusive-settings-in-atp-anti-phishing-policies)|[Bedrohungs-Tracker](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-trackers)<br/>[Sicherheitsrisiken-Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)<br/>[Automatische Untersuchung und Reaktion](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>[Angriffssimulator](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulator)|
 |
 
-Mit Office 365 ATP können Personen in Ihrer Organisation sicher mit dem Bedrohungsschutz für Ihre e-Mail-Inhalte und Office-Dokumente kommunizieren und zusammenarbeiten.
+Mit Microsoft Defender für Office 365 können Personen in Ihrer Organisation sicherer kommunizieren und zusammenarbeiten, mit Bedrohungsschutz für Ihre e-Mail-Inhalte und Office-Dokumente.
 
-### <a name="to-set-up-office-365-atp"></a>So richten Sie Office 365 ATP ein
+### <a name="to-set-up-microsoft-defender-for-office-365"></a>So richten Sie Microsoft Defender für Office 365 ein
 
-![Prozess für die Bereitstellung von Office 365 ATP](../media/solutions-architecture-center/deploy-office365-atp-steps.png) 
+![Prozess für die Bereitstellung von Microsoft Defender für Office 365](../media/solutions-architecture-center/deploy-office365-atp-steps.png) 
 
-1. [Richten Sie Ihre Office 365 ATP-Richtlinien ein und konfigurieren Sie](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)Sie.
-2. [Zeigen Sie Ihre Office 365 ATP-Berichte an, und verwenden](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp)Sie Sie.
+1. [Einrichten und konfigurieren Sie Ihren Microsoft Defender für Office 365 Richtlinien](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats).
+2. [Anzeigen und Verwenden von Microsoft Defender für Office 365 Berichte](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp).
 3. [Verwenden Sie die Funktionen zur Ermittlung und Reaktion von Bedrohungen](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti).
 
-### <a name="more-information-about-office-365-atp"></a>Weitere Informationen zu Office 365 ATP
+### <a name="more-information-about-microsoft-defender-for-office-365"></a>Weitere Informationen zu Microsoft Defender für Office 365
 
-- [Übersicht über Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
-- [Neuerungen in Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/whats-new-in-office-365-atp)
+- [Microsoft Defender für Office 365 Übersicht](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
+- [Neuerungen in Microsoft Defender für Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/whats-new-in-office-365-atp)
 
-## <a name="step-5-configure-microsoft-defender-advanced-threat-protection"></a>Schritt 5: Konfigurieren von Microsoft Defender Advanced Threat Protection
+## <a name="step-5-configure-microsoft-defender-for-endpoint"></a>Schritt 5: Konfigurieren von Microsoft Defender für Endpoint
 
-[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) (Microsoft Defender ATP) schützt Ihre Organisations Geräte (auch als Endpunkte bezeichnet) vor Bedrohungen, erweiterten Angriffen und Datenschutzverletzungen. Sicherheitsteams können die Sicherheit Ihrer Endpunkte effizienter verwalten. Mithilfe von robusten Tools können Organisationen mit ungepatchten Systemen Schritt halten, indem Sie die Schwachstellenerkennung mit [Bedrohungs-und Sicherheitsrisikomanagement](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)verwenden. Automatisierte Erkennungs-und Korrekturfunktionen wie [Angriffs Oberflächenreduzierung](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction), [Schutz der nächsten Generation](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10), [Endpunkterkennung und-Antwort](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)sowie [Automatische Untersuchung und Behebung](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) helfen Ihnen, Ihre Geräte vor Schadsoftware zu schützen. Zusätzlich zu diesen Funktionen können Kunden proaktive Benachrichtigungen erhalten und sich mit Microsoft Threat Experts bei Bedarf im Rahmen des Diensts zur Verwaltung von opt-ins beraten lassen. 
+[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) schützt Ihre Organisations Geräte (auch als Endpunkte bezeichnet) vor Bedrohungen, fortgeschrittenen Angriffen und Datenschutzverletzungen. Sicherheitsteams können die Sicherheit Ihrer Endpunkte effizienter verwalten. Mithilfe von robusten Tools können Organisationen mit ungepatchten Systemen Schritt halten, indem Sie die Schwachstellenerkennung mit [Bedrohungs-und Sicherheitsrisikomanagement](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)verwenden. Automatisierte Erkennungs-und Korrekturfunktionen wie [Angriffs Oberflächenreduzierung](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction), [Schutz der nächsten Generation](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10), [Endpunkterkennung und-Antwort](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)sowie [Automatische Untersuchung und Behebung](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) helfen Ihnen, Ihre Geräte vor Schadsoftware zu schützen. Zusätzlich zu diesen Funktionen können Kunden proaktive Benachrichtigungen erhalten und sich mit Microsoft Threat Experts bei Bedarf im Rahmen des Diensts zur Verwaltung von opt-ins beraten lassen. 
 
 
-### <a name="set-up-microsoft-defender-atp"></a>Einrichten von Microsoft Defender ATP
+### <a name="set-up-microsoft-defender-for-endpoint"></a>Einrichten von Microsoft Defender für Endpoint
 
-![Prozess für die Bereitstellung von Microsoft Defender ATP](../media/solutions-architecture-center/deploy-mdatp-steps.png) 
+![Prozess für die Bereitstellung von Microsoft Defender für Endpoint](../media/solutions-architecture-center/deploy-mdatp-steps.png) 
 
-1. [Bereiten Sie Ihre Microsoft Defender ATP-Bereitstellung](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases)vor.
-2. [Einrichten der ATP-Bereitstellung von Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/micros.oft-defender-atp/production-deployment)
-3. [Onboard beim Microsoft Defender ATP-Dienst](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboarding).
+1. [Bereiten Sie Ihren Microsoft Defender für die Endpunkt Bereitstellung](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases)vor.
+2. [Einrichten Ihres Microsoft Defender für die Endpunkt Bereitstellung](https://docs.microsoft.com/windows/security/threat-protection/micros.oft-defender-atp/production-deployment)
+3. [Onboard für den Microsoft Defender für den Endpunkt Dienst](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboarding).
 4. [Führen Sie die wichtigsten administrativen Aufgaben für die Sicherheit](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation)aus.
 
-### <a name="more-information-about-microsoft-defender-atp"></a>Weitere Informationen zu Microsoft Defender ATP
+### <a name="more-information-about-microsoft-defender-for-endpoint"></a>Weitere Informationen zu Microsoft Defender für Endpoint
 
-- [Erfahren Sie mehr über Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection).
-- [Testen Sie das Microsoft Defender ATP Evaluation Lab](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/evaluation-lab).
+- [Erfahren Sie mehr über Microsoft Defender für Endpoint](https://docs.microsoft.com/windows/security/threat-protection).
+- [Testen Sie das Microsoft Defender für Endpoint Evaluation Lab](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/evaluation-lab).
 
 ## <a name="step-6-configure-microsoft-cloud-app-security"></a>Schritt 6: Konfigurieren der Microsoft Cloud-App-Sicherheit
 

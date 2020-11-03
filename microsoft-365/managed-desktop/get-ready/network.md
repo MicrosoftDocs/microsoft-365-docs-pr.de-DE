@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: ee93840cb6855d776d8fd3007bc6ec7c7f44fa29
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 28f438c80f2da5740f7fcd0a2927fede1af6eb50
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308063"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844068"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Netzwerkkonfiguration für Microsoft Managed Desktop
 
@@ -60,7 +60,7 @@ Windows 10 Enterprise einschließlich Windows Update für Unternehmen | [Verwalt
 Microsoft 365 | [Microsoft 365-URL und IP-Adressbereiche](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)
 Azure Active Directory | [Hybride Identität erforderliche Ports und Protokolle](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) sowie [Active Directory und Active Directory-Domänendienste Port Anforderungen](https://aka.ms/AA26ygm) 
 Microsoft Intune | [InTune-Netzwerk Konfigurationsanforderungen](https://docs.microsoft.com/intune/network-bandwidth-use)<br>[Netzwerkendpunkte für Microsoft InTune](https://docs.microsoft.com/mem/intune/fundamentals/intune-endpoints)
-Microsoft Defender Advanced Threat Protection (ATP) | [Microsoft Defender ATP-Endpunkte](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
+Microsoft Defender für Endpunkt | [Microsoft Defender für Endpunkt Anforderungen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
 Windows Autopilot | [Netzwerkanforderungen für Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements#networking-requirements)
 
 <!---

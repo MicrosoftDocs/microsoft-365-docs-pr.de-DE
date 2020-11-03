@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 94e83110ef9761f551fd1401884dbba58a8df107
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 43a5c0f2e207274574c3c08eadd2804b9c241bb7
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208437"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845065"
 ---
 # <a name="federal-risk-and-authorization-management-program-fedramp"></a>FedRAMP (Federal Risk and Authorization Management Program)
 
@@ -63,15 +63,15 @@ Dynamics 365 U.S. Government wurde eine FedRAMP Agency ATO auf hoher Ebene durch
 - Office 365 US-Verteidigungsministerium hat eine P-ATO von der US-Verteidigungs Informationssystem-Agentur (DISA). Jeder Kunde, der Office 365 US-Regierungs Verteidigung bereitstellen möchte, kann die DISA P-ATO verwenden, um eine Agentur ATO zu generieren, um deren Akzeptanz zu dokumentieren.
 - Office 365 (Enterprise-und Business-Pläne) und Office 365 US-Regierung haben eine FedRAMP Agency ATO auf der moderaten Impact-Ebene aus dem DHHS Office des Generalinspektors. Office 365 US-Regierung war der erste Cloud-basierte e-Mail-und Zusammenarbeits Dienst, um diese Autorisierung zu erhalten.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
 - [Azure und Azure Government](https://go.microsoft.com/fwlink/p/?linkid=2095323)
 - [Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
 - Intune
 - [Office 365 und Office 365 US-Regierungs oberstaaten](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - Office 365 U.S. Government Defense
-- Power BI-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365-Plan oder einer -Anwendungssuite enthalten
-- Microsoft Defender ATP
+- Power BI-Clouddienst als eigenständiger Dienst oder enthalten in einem Office 365-Plan bzw. einer Office 365-Suite
+- Microsoft Defender für Endpunkt
 
 > [!NOTE]
 > Die Verwendung von Azure Active Directory in Azure Government erfordert die Verwendung von Komponenten, die außerhalb von Azure Government in der Azure Public Cloud bereitgestellt werden.
@@ -109,9 +109,9 @@ Eine Übersicht über die Schritte, die Bundesbehörden ausführen müssen, um F
 
 Ja. Sie können die Zertifizierungen von Microsoft Cloud Services als Grundlage für jedes Programm oder jede Initiative verwenden, für die eine ATO-Instanz von einer Bundesregierung benötigt wird. Sie müssen jedoch eigene Berechtigungen für Komponenten außerhalb dieser Dienste erzielen.
 
-## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Bewerten des Risikos mithilfe von Microsoft Compliance-Manager
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Verwenden von Microsoft Compliance-Manager zur Einschätzung des Risikos
 
-[Microsoft Compliance Manager](compliance-manager.md) ist ein Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) , mit dem Sie die Compliance-Haltung ihrer Organisation besser verstehen und Maßnahmen zur Verringerung von Risiken unterstützen können. Compliance-Manager bietet eine Premium-Vorlage für die Erstellung einer Bewertung für diese Verordnung. Suchen Sie die Vorlage auf der Seite " **Bewertungs Vorlagen** " im Compliance-Manager. Hier erfahren Sie, wie Sie [Assessments im Compliance-Manager erstellen](compliance-manager-assessments.md).
+[Microsoft Compliance Manager](compliance-manager.md) ist eine Funktion im [Microsoft 365 Compliance Center, die Ihnen](microsoft-365-compliance-center.md) hilft, die Compliance-Position Ihres Unternehmens zu verstehen und Maßnahmen zu ergreifen, um Risiken zu reduzieren. Compliance Manager bietet eine Premiumvorlage für die Erstellung einer Bewertung für diese Verordnung. Suchen Sie die Vorlage auf der Seite **Bewertungsvorlagen** im Compliance Manager. Erfahren Sie, wie Sie [Bewertungen in Compliance Manager erstellen](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressourcen
 

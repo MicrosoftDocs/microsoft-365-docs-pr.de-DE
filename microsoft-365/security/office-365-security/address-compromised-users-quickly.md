@@ -13,20 +13,20 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
-description: Erfahren Sie, wie Sie den Prozess der Erkennung und Adressierung kompromittierter Benutzerkonten mit automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection Plan 2 beschleunigen können.
-ms.openlocfilehash: fa648b33180cab7d70348dc4d1d6e64930ecff99
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: Erfahren Sie, wie Sie das erkennen und adressieren von kompromittierten Benutzerkonten mit automatisierten Ermittlungs-und Antwortfunktionen in Microsoft Defender für Office 365 Plan 2 beschleunigen können.
+ms.openlocfilehash: 0da065bea17796d09de771a767991804afb5335b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201231"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844596"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Adressieren von kompromittierten Benutzerkonten mit automatisierter Untersuchung und Antwort
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-[Office 365 Advanced Threat Protection Plan 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide#office-365-atp-plan-1-and-plan-2) enthält leistungsstarke Funktionen für die [Automatische Untersuchung und Reaktion](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) (Air). Solche Funktionen können Ihr Sicherheits Betriebsteam viel Zeit und Mühe beim Umgang mit Bedrohungen speichern. Microsoft verbessert weiterhin die Sicherheitsfunktionen. In letzter Zeit wurden die Air-Funktionen erweitert, um ein kompromittiertes Benutzer Sicherheits-Textbuch (derzeit in der Vorschau) einzuschließen. Lesen Sie diesen Artikel, um mehr über das kompromittierte User Security-Manuskript zu erfahren. Und lesen Sie den Blogbeitrag beschleunigen Sie die [Zeit zum erkennen und reagieren auf Benutzer Kompromisse und Grenzwerte für Verstöße mit Office 365 ATP](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) , um weitere Informationen zu erhalten.
+[Microsoft Defender für Office 365 Plan 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide#office-365-atp-plan-1-and-plan-2) enthält leistungsstarke Funktionen für die [Automatische Untersuchung und Reaktion](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) (Air). Solche Funktionen können Ihr Sicherheits Betriebsteam viel Zeit und Mühe beim Umgang mit Bedrohungen speichern. Microsoft verbessert weiterhin die Sicherheitsfunktionen. In letzter Zeit wurden die Air-Funktionen erweitert, um ein kompromittiertes Benutzer Sicherheits-Textbuch (derzeit in der Vorschau) einzuschließen. Lesen Sie diesen Artikel, um mehr über das kompromittierte User Security-Manuskript zu erfahren. Und lesen Sie den Blogbeitrag [beschleunigen Zeit zum erkennen und reagieren auf Benutzer Kompromisse und Grenzwerte für Verstöße mit Microsoft Defender für Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) zusätzliche Details.
 
 ![Automatische Untersuchung für einen kompromittierten Benutzer](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
 
@@ -40,7 +40,7 @@ Das kompromittierte User Security-Manuskript ermöglicht dem Sicherheitsteam Ihr
 
 ## <a name="compromised-user-alerts"></a>Kompromittierte Benutzer Warnungen
 
-Wenn ein Benutzerkonto kompromittiert wird, treten atypische oder anomale Verhaltensweisen auf. Beispielsweise können Phishing-und Spamnachrichten intern von einem vertrauenswürdigen Benutzerkonto gesendet werden. Office 365 Advanced Threat Protection kann solche Anomalien in e-Mail-Mustern und Zusammenarbeitsaktivitäten innerhalb Office 365 erkennen. In diesem Fall werden Warnungen ausgelöst, und der Prozess zur Bedrohungsminderung wird gestartet.
+Wenn ein Benutzerkonto kompromittiert wird, treten atypische oder anomale Verhaltensweisen auf. Beispielsweise können Phishing-und Spamnachrichten intern von einem vertrauenswürdigen Benutzerkonto gesendet werden. Defender for Office 365 kann solche Anomalien in e-Mail-Mustern und Zusammenarbeitsaktivitäten innerhalb Office 365 erkennen. In diesem Fall werden Warnungen ausgelöst, und der Prozess zur Bedrohungsminderung wird gestartet.
 
 Hier ist beispielsweise eine Warnung, die aufgrund eines verdächtigen e-Mail-Sendens ausgelöst wurde:
 
@@ -63,13 +63,13 @@ Wenn ein Benutzerkonto kompromittiert wird, werden Warnungen ausgelöst. In eini
 
 ### <a name="view-and-investigate-restricted-users"></a>Anzeigen und untersuchen eingeschränkter Benutzer
 
-Sie haben einige Optionen, um zu einer Liste eingeschränkter Benutzer zu navigieren. Im Security & Compliance Center können Sie beispielsweise zu **Threat Management**  >  **Review**  >  **restricted users**wechseln. Im folgenden Verfahren wird die Navigation mithilfe des **Alerts** -Dashboards beschrieben, eine gute Möglichkeit, um verschiedene Arten von Warnungen anzuzeigen, die möglicherweise ausgelöst wurden.
+Sie haben einige Optionen, um zu einer Liste eingeschränkter Benutzer zu navigieren. Im Security & Compliance Center können Sie beispielsweise zu **Threat Management**  >  **Review**  >  **restricted users** wechseln. Im folgenden Verfahren wird die Navigation mithilfe des **Alerts** -Dashboards beschrieben, eine gute Möglichkeit, um verschiedene Arten von Warnungen anzuzeigen, die möglicherweise ausgelöst wurden.
 
 1. Gehen Sie zu [https://protection.office.com](https://protection.office.com), und melden Sie sich an.
 
-2. Wählen Sie im Navigationsbereich **Warnungs**  >  **Dashboard**aus.
+2. Wählen Sie im Navigationsbereich **Warnungs**  >  **Dashboard** aus.
 
-3. Wählen Sie im Widget **andere Benachrichtigungen** die Option **eingeschränkte Benutzer**aus.
+3. Wählen Sie im Widget **andere Benachrichtigungen** die Option **eingeschränkte Benutzer** aus.
 
    ![Widget "andere Warnungen"](/microsoft-365/media/office365atp-otheralertswidget.jpg)
 
@@ -79,13 +79,13 @@ Sie haben einige Optionen, um zu einer Liste eingeschränkter Benutzer zu navigi
 
 ### <a name="view-details-about-automated-investigations"></a>Anzeigen von Details zu automatisierten Untersuchungen
 
-Wenn eine automatisierte Untersuchung begonnen hat, können Sie Details und Ergebnisse im Security & Compliance Center anzeigen. Wechseln Sie zu **Threat Management**  >  **Investigations**, und wählen Sie dann eine Untersuchung aus, um die Details anzuzeigen.
+Wenn eine automatisierte Untersuchung begonnen hat, können Sie Details und Ergebnisse im Security & Compliance Center anzeigen. Wechseln Sie zu **Threat Management**  >  **Investigations** , und wählen Sie dann eine Untersuchung aus, um die Details anzuzeigen.
 
 Weitere Informationen finden Sie unter [View Details of a Investigation](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results).
 
 ## <a name="keep-the-following-points-in-mind"></a>Beachten Sie die folgenden Punkte:
 
-- **Behalten Sie Ihre Benachrichtigungen im Vorder**Grund. Wie Sie wissen, gilt: je länger ein Kompromiss unentdeckt bleibt, desto größer ist das Potenzial für weit verbreitete Auswirkungen und Kosten für Ihre Organisation, Kunden und Partner. Frühzeitige Erkennung und zeitnahe Reaktion sind wichtig, um Bedrohungen zu minimieren, insbesondere dann, wenn das Konto eines Benutzers kompromittiert wird.
+- **Behalten Sie Ihre Benachrichtigungen im Vorder** Grund. Wie Sie wissen, gilt: je länger ein Kompromiss unentdeckt bleibt, desto größer ist das Potenzial für weit verbreitete Auswirkungen und Kosten für Ihre Organisation, Kunden und Partner. Frühzeitige Erkennung und zeitnahe Reaktion sind wichtig, um Bedrohungen zu minimieren, insbesondere dann, wenn das Konto eines Benutzers kompromittiert wird.
 
 - **Automatisierung unterstützt, ersetzt aber Ihr Sicherheits Betriebsteam**. Automatisierte Ermittlungs-und Antwortfunktionen können einen gefährdeten Benutzer frühzeitig erkennen, aber Ihr Sicherheits Betriebsteam muss wahrscheinlich einige Untersuchungen und Korrekturen durchführen. Benötigen Sie Hilfe? Weitere Informationen finden Sie unter [überprüfen und Genehmigen von Aktionen](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air#review-and-approve-actions).
 
@@ -97,7 +97,7 @@ Weitere Informationen finden Sie unter [View Details of a Investigation](https:/
 
 - [Suchen und untersuchen von böswilligen e-Mails in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered?view=o365-worldwide)
 
-- [Informationen zu Air in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [Informationen zu Air in Microsoft Defender für Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
 - [Besuchen Sie die Microsoft 365-Roadmap, um zu sehen, was bald kommt und wie Sie Rollen](https://www.microsoft.com/microsoft-365/roadmap?filters=)
 
