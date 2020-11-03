@@ -1,5 +1,5 @@
 ---
-title: Benutzertags in Office 365 ATP
+title: Benutzer Tags in Microsoft Defender für Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,25 +14,25 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Administratoren können erfahren, wie bestimmte Benutzergruppen mit Benutzer Tags in Office 365 ATP-Plan 2 identifiziert werden. Die Tag-Filterung ist für Warnungen, Berichte und Untersuchungen in Office 365 ATP verfügbar, um die getaggten Benutzer schnell zu identifizieren.
-ms.openlocfilehash: 475bf976a71fb688df8db9ac25f3b397c078d79a
-ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
+description: Administratoren können erfahren, wie bestimmte Benutzergruppen mit Benutzer Tags in Microsoft Defender für Office 365 Plan 2 identifiziert werden. Die Tag-Filterung steht in Warnungen, Berichten und Untersuchungen in Microsoft Defender für Office 365 zur Verfügung, um die getaggten Benutzer schnell zu identifizieren.
+ms.openlocfilehash: fcc13a04ed603712bb2a45ccaadbaf161702c502
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48417283"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842880"
 ---
-# <a name="user-tags-in-office-365-atp"></a>Benutzertags in Office 365 ATP
+# <a name="user-tags-in-microsoft-defender-for-office-365"></a>Benutzer Tags in Microsoft Defender für Office 365
 
 > [!NOTE]
 > Das Feature "Benutzer Tags" befindet sich in der Vorschau, steht nicht allen zur Verfügung und kann jederzeit geändert werden. Weitere Informationen zum Veröffentlichungszeitplan finden Sie in der [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap).
 
-Benutzer Tags sind Bezeichner für bestimmte Benutzergruppen in [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md). Es gibt zwei Arten von Benutzer Tags:
+Benutzer Tags sind Bezeichner für bestimmte Benutzergruppen in [Defender für Office 365](office-365-atp.md). Es gibt zwei Arten von Benutzer Tags:
 
-- **System-Tags**: derzeit ist [Priority Accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) der einzige Typ des System Tags.
-- **Benutzerdefinierte Tags**: Sie erstellen diese Benutzer Tags selbst.
+- **System-Tags** : derzeit ist [Priority Accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) der einzige Typ des System Tags.
+- **Benutzerdefinierte Tags** : Sie erstellen diese Benutzer Tags selbst.
 
-Wenn Ihre Organisation Office 365 ATP-Plan 2 (in Ihrem Abonnement oder als Add-on enthalten) hat, können Sie benutzerdefinierte Benutzer Tags zusätzlich zur Verwendung des Tags Priority Accounts erstellen.
+Wenn Ihre Organisation Defender für Office 365 Plan 2 (in Ihrem Abonnement oder als Add-on enthalten) verfügt, können Sie benutzerdefinierte Benutzer Tags zusätzlich zur Verwendung des Tags Priority Accounts erstellen.
 
 Nachdem Sie System Tags oder benutzerdefinierte Tags auf Benutzer angewendet haben, können Sie diese Tags als Filter in Warnungen, Berichten und Untersuchungen verwenden:
 
@@ -47,7 +47,7 @@ In diesem Artikel wird erklärt, wie Sie Benutzer Tags im Security & Compliance 
 
 - Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Wenn Sie direkt zur Seite **Benutzer Tags** wechseln möchten, öffnen Sie <https://protection.office.com/userTags> .
 
-- Zum Erstellen, ändern oder entfernen **benutzerdefinierter Benutzer Tags**müssen Sie Mitglied der Rollengruppen " **Organisationsverwaltung** " oder " **Sicherheits Administrator** " im Security & Compliance Center sein. Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- Zum Erstellen, ändern oder entfernen **benutzerdefinierter Benutzer Tags** müssen Sie Mitglied der Rollengruppen " **Organisationsverwaltung** " oder " **Sicherheits Administrator** " im Security & Compliance Center sein. Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - Zum Konfigurieren von Prioritäts Konten (System-Tags) müssen Sie ein [globaler Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) oder ein [Exchange-Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)sein.
 
@@ -61,9 +61,9 @@ In diesem Artikel wird erklärt, wie Sie Benutzer Tags im Security & Compliance 
 
 3. Der Assistent zum **Erstellen von Tags** wird in einem neuen Fly Out geöffnet. Konfigurieren Sie auf der Seite **Tag definieren** die folgenden Einstellungen:
 
-   - **Name**: Geben Sie einen eindeutigen, beschreibenden Namen für das Tag ein. Dies ist der Wert, den Sie sehen und verwenden.
+   - **Name** : Geben Sie einen eindeutigen, beschreibenden Namen für das Tag ein. Dies ist der Wert, den Sie sehen und verwenden.
 
-   - **Beschreibung**: Geben Sie eine optionale Beschreibung für das Tag ein.
+   - **Beschreibung** : Geben Sie eine optionale Beschreibung für das Tag ein.
 
    Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
 
@@ -109,8 +109,8 @@ In diesem Artikel wird erklärt, wie Sie Benutzer Tags im Security & Compliance 
 
 ## <a name="use-the-security-center-to-remove-user-tags"></a>Entfernen von Benutzer Tags mithilfe des Sicherheitscenters
 
-**Hinweis**: Sie können das integrierte **Priority-Konto** -Tag nicht entfernen.
+**Hinweis** : Sie können das integrierte **Priority-Konto** -Tag nicht entfernen.
 
 1. Wechseln Sie im Sicherheits Center zu Benutzer Tags für die **Bedrohungs Verwaltung** \> **User tags**.
 
-2. Wählen Sie auf der Seite **Benutzer Tags** , die geöffnet wird, das Benutzertag aus, das Sie entfernen möchten, klicken Sie auf **Tag löschen**, und wählen Sie dann **Ja, entfernen** in der angezeigten Warnung aus.
+2. Wählen Sie auf der Seite **Benutzer Tags** , die geöffnet wird, das Benutzertag aus, das Sie entfernen möchten, klicken Sie auf **Tag löschen** , und wählen Sie dann **Ja, entfernen** in der angezeigten Warnung aus.

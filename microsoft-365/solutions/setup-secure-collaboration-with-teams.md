@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 f1.keywords: NOCSH
 description: Informationen zum Einrichten von Teams zum Schutz Ihrer Daten basierend auf der Vertraulichkeit
-ms.openlocfilehash: ef49e788805139bf82fa5b1b43d2a87323640820
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 5cf4937a79fdf33e160432c740504ec84d196585
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527708"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843540"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Sichere Zusammenarbeit mit Microsoft 365 einrichten
 
@@ -62,7 +62,7 @@ Um Secure collabration zu konfigurieren, verwenden Sie diese Microsoft 365-Funkt
 
 | Produkt oder Komponente | Funktion oder Feature | Lizenzierung |
 |:-------|:-----|:-------|
-| Office 365 Advanced Threat Protection | Sichere ATP-Anhänge für SpO, OneDrive und Teams; Sichere ATP-Dokumente; ATP-sichere Links für Teams    | Microsoft 365 E1, E3 und E5 |
+| Microsoft Defender für Office 365 | Sichere Anlagen für SpO, OneDrive und Teams; Sichere Dokumente; Sichere Links für Teams    | Microsoft 365 E1, E3 und E5 |
 | SharePoint    | Website-und Dateifreigabe Richtlinien, Website Freigabeberechtigungen, Freigabelinks, Zugriffsanforderungen, Einstellungen für die Website-Gast Freigabe | Microsoft 365 E1, E3 und E5 |
 | Microsoft Teams   | Gastzugriff, private Teams, private Kanäle | Microsoft 365 E1, E3 und E5 |
 | Microsoft 365 Compliance  | Vertraulichkeitsbezeichnungen    | Microsoft 365 E3 und E5 |
@@ -74,7 +74,7 @@ Um den Zugriff auf Informationen mit unterschiedlichen Sensitivitäten zu verwal
 ![Miniaturbild für Poster der logischen Architektur von Teams](../media/solutions-architecture-center/Teams-tiers-of-protection-1.png)
 
 
-Diese Ebenen – *Baseline*, *sensibel*und *hoch sensibel* – verbessern schrittweise den Schutz, der zur Vermeidung von über-und potenziellem Informationsverlust beiträgt, wie in der folgenden Tabelle dargestellt.
+Diese Ebenen – *Baseline* , *sensibel* und *hoch sensibel* – verbessern schrittweise den Schutz, der zur Vermeidung von über-und potenziellem Informationsverlust beiträgt, wie in der folgenden Tabelle dargestellt.
 
 ||**Baseline-Ebene**|**Vertrauliche Ebene**|**Hochgradig sensible Ebene**|
 |:--|:-----------|:------------|:-------------------|
@@ -125,7 +125,7 @@ Wenn Sie bereit sind, diese Lösung bereitzustellen, fahren Sie mit den folgende
 1. Konfigurieren Sie die [drei verschiedenen Schutzebenen für Microsoft Teams](configure-teams-three-tiers-protection.md).
 2. Konfigurieren Sie Einstellungen für [die Freigabe von Informationen mit Vertraulichkeit für Personen außerhalb Ihrer Organisation](collaborate-with-people-outside-your-organization.md).
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Microsoft 365 Sicherheitsdokumentation](https://docs.microsoft.com/microsoft-365/security)
 

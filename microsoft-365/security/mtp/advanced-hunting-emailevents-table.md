@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 63f12aaa84415b354fd257558612dbbe28e41360
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 86cc32cf395f2216eb3e167e372d1225734c4c28
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429455"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842632"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -32,11 +32,11 @@ ms.locfileid: "48429455"
 
 
 **Gilt für:**
-- Microsoft-Bedrohungsschutz
+- Microsoft 365 Defender
 
 
 
-Die `EmailEvents`-Tabelle im Schema [Erweiterte Suche](advanced-hunting-overview.md) enthält Informationen zu Ereignissen, denen die Verarbeitung von E-Mails auf Office 365 ATP angehört. Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
+Die `EmailEvents` Tabelle im [Advanced Hunting](advanced-hunting-overview.md) -Schema enthält Informationen zu Ereignissen, die die Verarbeitung von e-Mails in Microsoft Defender für Office 365 betreffen. Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
 
 >[!TIP]
 > Ausführliche Informationen zu den `ActionType` von einer Tabelle unterstützten Ereignistypen (Values) finden Sie in der [integrierten Schemareferenz](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) , die im Sicherheitscenter verfügbar ist.
@@ -62,9 +62,9 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `DeliveryAction` | string | Zustellungsaktion der E-Mail: übermittelt, als Junk eingestuft, blockiert oder ersetzt |
 | `DeliveryLocation` | string | Der Ort, an den die E-Mail zugestellt wurde: "Posteingang/Ordner", "lokal"/"extern", "Junk", "Quarantäne", "Fehler", „Verloren“ oder "Gelöschte Elemente" |
 | `PhishFilterVerdict` | string | Urteil des E-Mail-Filter-Stacks, ob es sich um eine Phishing-E-Mail handelt: Phish oder nicht-Phish |
-| `PhishDetectionMethod` | string | Methode zum Erkennen einer E-Mail als Phish: bösartiger URL-Ruf, ATP-sichere Links-URL-Detonation, erweiterter Phish-Filter, allgemeiner Phish-Filter, Antispoofing: Intra-org, Anti-Spoof: externe Domäne, Domänenidentitätswechsel, Benutzeridentitätswechsel, Vortäuschen einer Marke |
+| `PhishDetectionMethod` | string | Methode zum Erkennen der e-Mail als Phishing: böswillige URL-Reputation, sichere Links-URL-Detonation, erweiterter Phishing-Filter, allgemeiner Phishingfilter, Spoofing: Intra-org, Spoofing: externe Domäne, Domänen Identitätswechsel, Benutzeridentitätswechsel, Marken Identitätsdiebstahl |
 | `MalwareFilterVerdict` | string | Bewertung des E-Mail-Filterstapels, ob die E-Mail Schadsoftware enthält: Schadsoftware, keine Schadsoftware |
-| `MalwareDetectionMethod` | string | Methode zum Erkennen von Schadsoftware in der E-Mail: Antimalware-Engine, Dateireputation, ATP-sichere Anlagen |
+| `MalwareDetectionMethod` | string | Methode zum Erkennen von Schadsoftware in der e-Mail: Antischadsoftware-Modul, Datei Zuverlässigkeit, sichere Anlagen |
 | `FinalEmailAction` | string | Letzte Aktion, die auf der Grundlage von Filter-Beurteilung, Richtlinien und Benutzeraktionen ausgeführt wird: Nachricht in den Junk-E-Mail-Ordner verschieben, X-Kopfzeile hinzufügen, Betreff ändern, Nachricht umleiten, Nachricht löschen, in Quarantäne senden, keine Aktion ausgeführt, BCC-Nachricht |
 | `FinalEmailActionPolicy` | string | Aktionsrichtlinie, die in Kraft getreten ist: Antispam-Hochsicherheit, Antispam, Antispam-Massen-E-Mail, Antispam-Phishing, Anti-Phishing-Domänenidentitätswechsel, Antiphishing-Benutzeridentitätswechsel, Antiphishing-Spoofing, Anti-Phishing-Grafik-Identitätswechsel, Antimalware, Sichere Anlagen, Enterprise Transport Rules (ETR) |
 | `FinalEmailActionPolicyGuid` | string | Eindeutiger Bezeichner für die Richtlinie, welche die endgültige E-Mail-Aktion ermittelt hat |

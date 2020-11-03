@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Administratoren können erfahren, wie Sie ein Postfach So konfigurieren, dass Spam-und Phishing-e-Mails erfasst werden, die von Benutzern gemeldet werden.
-ms.openlocfilehash: c4792958d1e59cefd8b56c05b5e159f50be80c8b
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: d39614c2cafd3469625c4a01bdc63a1e60fead85
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600481"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842904"
 ---
 # <a name="user-submissions-policy"></a>Richtlinie für Benutzer Übermittlungen
 
@@ -47,13 +47,13 @@ Durch das Übermitteln von Benutzern gemeldeten Nachrichten an ein benutzerdefin
 
 Verwenden Sie die folgenden Artikel, um die erforderlichen Voraussetzungen zu konfigurieren, damit Benutzer gemeldete Nachrichten an Ihr benutzerdefiniertes Postfach wechseln:
 
-- Überspringen Sie die Spamfilterung für das benutzerdefinierte Postfach, indem Sie eine Exchange-Nachrichtenfluss Regel erstellen, um die Spam Zuverlässigkeitsstufe festzulegen. Weitere Informationen finden Sie unter [Verwenden der Exchange-Verwaltungskonsole zum Erstellen einer e-Mail-Fluss Regel, die den SCL-Wert einer Nachricht festlegt](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) , um den SCL auf **-1**festzulegen
+- Überspringen Sie die Spamfilterung für das benutzerdefinierte Postfach, indem Sie eine Exchange-Nachrichtenfluss Regel erstellen, um die Spam Zuverlässigkeitsstufe festzulegen. Weitere Informationen finden Sie unter [Verwenden der Exchange-Verwaltungskonsole zum Erstellen einer e-Mail-Fluss Regel, die den SCL-Wert einer Nachricht festlegt](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) , um den SCL auf **-1** festzulegen
 
-- Deaktivieren Sie das Überprüfen von Anlagen für Schadsoftware im benutzerdefinierten Postfach. Verwenden Sie zum [Einrichten von Richtlinien für sichere Anlagen in Office 365 ATP](set-up-atp-safe-attachments-policies.md) eine Richtlinie für sichere Anlagen mit **der Einstellung für** **sichere Anlagen unbekannte Schadsoftware-Antwort**erstellen.
+- Deaktivieren Sie das Überprüfen von Anlagen für Schadsoftware im benutzerdefinierten Postfach. Verwenden Sie zum [Einrichten von Richtlinien für sichere Anlagen in Defender Office 365](set-up-atp-safe-attachments-policies.md) , um eine Richt **Linie für sichere** Anlagen mit der Einstellung für **sichere Anlagen unbekannte Schadsoftware-Antwort** zu erstellen.
 
-- Deaktivieren Sie die URL-Überprüfung für Nachrichten im benutzerdefinierten Postfach. Verwenden Sie [Richtlinien für sichere Links einrichten in Office 365 ATP](set-up-atp-safe-links-policies.md) , um eine Richtlinie für sichere Links mit **der Einstellung für** **Wählen Sie die Aktion für unbekannte potenziell bösartige URLs in Nachrichten**erstellen.
+- Deaktivieren Sie die URL-Überprüfung für Nachrichten im benutzerdefinierten Postfach. Verwenden Sie zum [Einrichten von Richtlinien für sichere Links in Defender Office 365](set-up-atp-safe-links-policies.md) zum Erstellen einer Richtlinie für sichere Links mit **der Einstellung für** **Wählen Sie die Aktion für unbekannte potenziell bösartige URLs in Nachrichten** aus.
 
-- Erstellen Sie eine Richtlinie zum Schutz vor Schadsoftware, um die automatische Säuberungsaktion für Malware zu deaktivieren. Weitere Informationen finden Sie unter [Verwenden des Security & Compliance Center zum Erstellen von Antischadsoftware-Richtlinien](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) , um die **Automatische Bereinigung von Schadsoftware** auf **Off**festzulegen.
+- Erstellen Sie eine Richtlinie zum Schutz vor Schadsoftware, um die automatische Säuberungsaktion für Malware zu deaktivieren. Weitere Informationen finden Sie unter [Verwenden des Security & Compliance Center zum Erstellen von Antischadsoftware-Richtlinien](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) , um die **Automatische Bereinigung von Schadsoftware** auf **Off** festzulegen.
 
 - Erstellen Sie eine Spamfilter Richtlinie, um die automatische Bereinigung (Zero-Hour) für Spam und Phishing im benutzerdefinierten Postfach zu deaktivieren. Weitere Informationen finden Sie unter [use the Security & Compliance Center zum Erstellen von Anti-Spam-Richtlinien](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) und deaktivieren **der Kontrollkästchen** für **Spam zap** und **Phishing zap**.
 
@@ -76,37 +76,37 @@ Nachdem Sie sichergestellt haben, dass Ihr Postfach alle anwendbaren Voraussetzu
 
 2. Wählen Sie auf der Seite **Benutzereingaben** , die angezeigt wird, eine der folgenden Optionen aus:
 
-   1. **Aktivieren der Berichtsnachrichten Funktion für Outlook (empfohlen)**: Wählen Sie diese Option aus, wenn Sie das Add-in "Berichtsnachricht" oder die integrierte Berichterstellung in Outlook im Internet verwenden, und konfigurieren Sie dann die folgenden Einstellungen:
+   1. **Aktivieren der Berichtsnachrichten Funktion für Outlook (empfohlen)** : Wählen Sie diese Option aus, wenn Sie das Add-in "Berichtsnachricht" oder die integrierte Berichterstellung in Outlook im Internet verwenden, und konfigurieren Sie dann die folgenden Einstellungen:
 
-      - **Anpassen der Bestätigungsnachricht für Endbenutzer**: Klicken Sie auf diesen Link. Konfigurieren Sie im angezeigten Flyout für die **Bestätigung der Nachrichten Anpassung** die folgenden Einstellungen:
+      - **Anpassen der Bestätigungsnachricht für Endbenutzer** : Klicken Sie auf diesen Link. Konfigurieren Sie im angezeigten Flyout für die **Bestätigung der Nachrichten Anpassung** die folgenden Einstellungen:
 
-      - **Vor der Übermittlung**: Geben Sie in den Feldern **Titel** und **Bestätigungsmeldung** den beschreibenden Text ein, den Benutzer sehen, bevor Sie eine Nachricht mithilfe des Berichtsnachrichten-Add-Ins melden. Sie können die Variable% type% verwenden, um den Übermittlungs einzubeziehen (Junk, not Junk, Phishing, etc.).
+      - **Vor der Übermittlung** : Geben Sie in den Feldern **Titel** und **Bestätigungsmeldung** den beschreibenden Text ein, den Benutzer sehen, bevor Sie eine Nachricht mithilfe des Berichtsnachrichten-Add-Ins melden. Sie können die Variable% type% verwenden, um den Übermittlungs einzubeziehen (Junk, not Junk, Phishing, etc.).
 
         Wenn Sie eine Option auswählen, die die gemeldeten Nachrichten an Microsoft sendet, wird der Benachrichtigung auch der folgende Text hinzugefügt:
 
         > Ihre e-Mail-Nachricht wird an Microsoft zur Analyse übermittelt. Einige e-Mails enthalten möglicherweise persönliche oder vertrauliche Informationen.
 
-      - **Nach der Übermittlung**: Klicken Sie auf ![ Symbol erweitern ](../../media/scc-expand-icon.png) . Geben Sie in die **Meldungs** Felder **Titel** und Bestätigung den beschreibenden Text ein, den Benutzer sehen, nachdem Sie eine Nachricht mithilfe des Berichtsnachrichten-Add-ins gemeldet haben. Sie können die Variable% type% verwenden, um den Übermittlungs einzubeziehen.
+      - **Nach der Übermittlung** : Klicken Sie auf ![ Symbol erweitern ](../../media/scc-expand-icon.png) . Geben Sie in die **Meldungs** Felder **Titel** und Bestätigung den beschreibenden Text ein, den Benutzer sehen, nachdem Sie eine Nachricht mithilfe des Berichtsnachrichten-Add-ins gemeldet haben. Sie können die Variable% type% verwenden, um den Übermittlungs einzubeziehen.
 
       Klicken Sie nach Abschluss des Vorgangs auf **Speichern**. Klicken Sie auf der Seite **Benutzereingaben** auf wieder **herstellen** , um diese Werte zu löschen.
 
-      - **Senden Sie die gemeldeten Nachrichten an**: führen Sie eine der folgenden Optionen aus:
+      - **Senden Sie die gemeldeten Nachrichten an** : führen Sie eine der folgenden Optionen aus:
 
-        - **Microsoft (empfohlen)**: das Postfach "Benutzer Übermittlungen" wird nicht verwendet (alle gemeldeten Nachrichten werden an Microsoft weitergegeben).
+        - **Microsoft (empfohlen)** : das Postfach "Benutzer Übermittlungen" wird nicht verwendet (alle gemeldeten Nachrichten werden an Microsoft weitergegeben).
 
-        - **Microsoft und ein benutzerdefiniertes Postfach**: Geben Sie in das Feld, das angezeigt wird, die e-Mail-Adresse eines vorhandenen Exchange Online Postfachs ein. Verteilergruppen sind nicht zulässig. Benutzer Übermittlungen werden sowohl an Microsoft für die Analyse als auch an das benutzerdefinierte Postfach für Ihr Administrator-oder Sicherheits Betriebsteam zu analysieren gehen.
+        - **Microsoft und ein benutzerdefiniertes Postfach** : Geben Sie in das Feld, das angezeigt wird, die e-Mail-Adresse eines vorhandenen Exchange Online Postfachs ein. Verteilergruppen sind nicht zulässig. Benutzer Übermittlungen werden sowohl an Microsoft für die Analyse als auch an das benutzerdefinierte Postfach für Ihr Administrator-oder Sicherheits Betriebsteam zu analysieren gehen.
 
-        - **Benutzerdefiniertes Postfach**: Geben Sie in das Feld, das angezeigt wird, die e-Mail-Adresse eines vorhandenen Exchange Online Postfachs ein. Verteilergruppen sind nicht zulässig. Verwenden Sie diese Option, wenn die Nachricht nur für die Analyse zuerst an ein Administrator-oder Sicherheits Betriebsteam gesendet werden soll. Nachrichten werden nicht an Microsoft weitergeleitet, es sei denn, der Administrator leitet Sie selbst weiter.
+        - **Benutzerdefiniertes Postfach** : Geben Sie in das Feld, das angezeigt wird, die e-Mail-Adresse eines vorhandenen Exchange Online Postfachs ein. Verteilergruppen sind nicht zulässig. Verwenden Sie diese Option, wenn die Nachricht nur für die Analyse zuerst an ein Administrator-oder Sicherheits Betriebsteam gesendet werden soll. Nachrichten werden nicht an Microsoft weitergeleitet, es sei denn, der Administrator leitet Sie selbst weiter.
 
         > [!NOTE]
-        > US-Regierungsorganisationen (gcc, gcc-H und DoD) können nur **benutzerdefiniertes Postfach**konfigurieren. Die beiden anderen Optionen sind deaktiviert. 
+        > US-Regierungsorganisationen (gcc, gcc-H und DoD) können nur **benutzerdefiniertes Postfach** konfigurieren. Die beiden anderen Optionen sind deaktiviert. 
 
       Wenn Sie fertig sind, klicken Sie auf **bestätigen**.
 
       > [!CAUTION]
       > Wenn Sie die [Junk-e-Mail-Berichterstellung in Outlook](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) im Internet mit Outlook im WebPost Fach Richtlinien deaktiviert haben, aber eine der vorherigen Einstellungen für das Melden von Nachrichten an Microsoft konfiguriert haben, können Benutzer Nachrichten an Microsoft in Outlook im Internet über das Add-in "Berichtsnachricht" melden.
 
-   - **Deaktivieren der Berichtsnachrichten Funktion für Outlook**: Wählen Sie diese Option aus, wenn Sie Drittanbieter-Berichterstattungstools anstelle des Berichtsnachrichten-Add-Ins oder der integrierten Berichterstellung in Outlook im Internet verwenden, und konfigurieren Sie dann die folgenden Einstellungen:
+   - **Deaktivieren der Berichtsnachrichten Funktion für Outlook** : Wählen Sie diese Option aus, wenn Sie Drittanbieter-Berichterstattungstools anstelle des Berichtsnachrichten-Add-Ins oder der integrierten Berichterstellung in Outlook im Internet verwenden, und konfigurieren Sie dann die folgenden Einstellungen:
 
       Wählen Sie **dieses benutzerdefinierte Postfach verwenden aus, um Benutzer gemeldete Übermittlungen zu empfangen**. Geben Sie in das Feld, das angezeigt wird, die e-Mail-Adresse eines vorhandenen Postfachs ein, das sich bereits in Office 365 befindet. Hierbei muss es sich um ein vorhandenes Postfach in Exchange Online handeln, das e-Mails empfangen kann.
 

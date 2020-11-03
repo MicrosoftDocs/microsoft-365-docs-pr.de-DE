@@ -1,6 +1,6 @@
 ---
-title: Microsoft Threat Protection
-description: Microsoft Threat Protection ist eine koordinierte Lösung zum Schutz von Bedrohungen, die für den Schutz von Geräten, Identitäten, Daten und Anwendungen entwickelt wurde.
+title: Microsoft 365 Defender
+description: Microsoft 365 Defender ist eine koordinierte Lösung zum Schutz von Bedrohungen, die für den Schutz von Geräten, Identitäten, Daten und Anwendungen entwickelt wurde.
 keywords: Einführung in Microsoft Threat Protection, Cyber Security, Advanced persistent Threat, Enterprise Security, Devices, Device, Identity, users, Data, Applications, Incidents, Automated Investigation and Remediation, Advanced Hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,32 +19,32 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: conceptual
-ms.openlocfilehash: c98ce94bfa327b3e09cc1042717571de325a244e
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: a8d25ba0b36ad6ba1651ffe19e3e2f6e241548c7
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429671"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843804"
 ---
-# <a name="microsoft-threat-protection"></a>Microsoft Threat Protection
+# <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Gilt für:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 
 
-Microsoft Threat Protection ist eine einheitliche, vor-und nach Verletzung der Enterprise Defense-Suite, die die Erkennung, Verhinderung, Untersuchung und Antwort über alle Endpunkte, Identitäten, e-Mails und Anwendungen hinweg einheitlich koordiniert und einen integrierten Schutz vor anspruchsvollen Angriffen bietet.
+Microsoft 365 Defender ist eine einheitliche, vor-und nach Verletzung der Enterprise Defense-Suite, die die Erkennung, Verhinderung, Untersuchung und Antwort über alle Endpunkte, Identitäten, e-Mails und Anwendungen hinweg einheitlich koordiniert und einen integrierten Schutz vor anspruchsvollen Angriffen bietet.
 
-Mit der integrierten Microsoft Threat Protection-Lösung können Sicherheitsexperten die Bedrohungs Signale, die jedes dieser Produkte empfängt, zusammenfügen und den vollständigen Umfang und die Auswirkungen der Bedrohung bestimmen. wie Sie in die Umgebung eingingen, welche Auswirkungen Sie hat und wie Sie sich derzeit auf die Organisation auswirkt. Microsoft Threat Protection führt automatische Aktionen aus, um den Angriff zu verhindern oder zu beenden und die betroffenen Postfächer, Endpunkte und Benutzeridentitäten selbst zu heilen.  
+Mit der integrierten Microsoft 365 Defender-Lösung können Sicherheitsexperten die Bedrohungs Signale, die von diesen Produkten empfangen werden, zusammenfügen und den vollständigen Umfang und die Auswirkungen der Bedrohung bestimmen. wie Sie in die Umgebung eingingen, welche Auswirkungen Sie hat und wie Sie sich derzeit auf die Organisation auswirkt. Microsoft 365 Defender unternimmt automatische Aktionen zum verhindern oder Beenden des Angriffs und zur Selbstheilung betroffener Postfächer, Endpunkte und Benutzeridentitäten.  
 
 
-<center><h2>Microsoft Threat Protection-Dienste</center></h2>
-<table><tr><td><center><b><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection"><b>Erweiterter Bedrohungsschutz von Microsoft Defender</b></center></a></td>
-<td><center><b><a href="https://docs.microsoft.com/office365/securitycompliance/office-365-atp"><b>Office 365 Advanced Threat Protection</b></center></a></td>
-<td><center><b><a href="https://docs.microsoft.com/azure-advanced-threat-protection/"><b>Erweiterter Azure-Bedrohungsschutz</b></a></center></td>
+<center><h2>Microsoft 365 Defender-Dienste</center></h2>
+<table><tr><td><center><b><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection"><b>Microsoft Defender für Endpoint</b></center></a></td>
+<td><center><b><a href="https://docs.microsoft.com/office365/securitycompliance/office-365-atp"><b>Microsoft Defender für Office 365</b></center></a></td>
+<td><center><b><a href="https://docs.microsoft.com/azure-advanced-threat-protection/"><b>Microsoft Defender für Identity</b></a></center></td>
 <td><center><b><a href="https://docs.microsoft.com/cloud-app-security/"><b>Microsoft Cloud-App-Sicherheit</b></a></center></td>
 </tr>
 </table>
@@ -52,18 +52,18 @@ Mit der integrierten Microsoft Threat Protection-Lösung können Sicherheitsexpe
 
 
 >[!TIP]
->Lesen Sie diesen [interaktiven Leitfaden für Microsoft Threat Protection](https://aka.ms/MTP-Interactive-Guide).
+>Lesen Sie diesen [interaktiven Leitfaden für Microsoft 365 Defender](https://aka.ms/MTP-Interactive-Guide).
 
 
-Microsoft Threat Protection-Suite schützt Folgendes: 
-- **Endpunkte mit Microsoft Defender ATP** – Microsoft Defender ATP ist eine einheitliche Endpunkt Plattform für vorbeugenden Schutz, Erkennung nach einem Verstoß, automatische Untersuchung und Antwort. 
-- **E-Mail und Zusammenarbeit mit Office 365 ATP** -Office 365 ATP schützt Ihre Organisation vor böswilligen Bedrohungen durch e-Mail-Nachrichten, Links (URLs) und Tools für die Zusammenarbeit. 
-- **Identitäten mit Azure ATP und Azure AD Identity Protection** – Azure ATP verwendet Active Directory Signale, um erweiterte Bedrohungen, kompromittierte Identitäten und böswillige Insider Aktionen, die an Ihre Organisation gerichtet sind, zu identifizieren, zu erkennen und zu untersuchen. 
+Microsoft 365 Defender Suite schützt: 
+- **Endpunkte mit Microsoft Defender für Endpoint** -Microsoft Defender for Endpoint ist eine einheitliche Endpunkt Plattform für vorbeugenden Schutz, Erkennung nach einem Verstoß, automatische Untersuchung und Antwort. 
+- **E-Mail und Zusammenarbeit mit Microsoft Defender für Office 365** -Defender für Office 365 schützt Ihre Organisation vor böswilligen Bedrohungen durch e-Mail-Nachrichten, Links (URLs) und Tools für die Zusammenarbeit. 
+- Identitäten **mit Microsoft Defender for Identity and Azure AD Identity Protection** – Microsoft Defender for Identity verwendet Active Directory Signale, um erweiterte Bedrohungen, kompromittierte Identitäten und böswillige Insider Aktionen, die an Ihre Organisation gerichtet sind, zu identifizieren, zu erkennen und zu untersuchen. 
 - **Anwendungen mit Microsoft Cloud App Security** -Microsoft Cloud App Security ist eine umfassende Cross-SaaS-Lösung, die eine Tiefe Sichtbarkeit, starke Datensteuerelemente und einen verbesserten Bedrohungsschutz für Ihre Cloud-apps bringt. 
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzww] 
 
-Die einzigartige produktübergreifende Schicht von Microsoft Threat Protection erweitert die einzelnen Suite-Komponenten um:
+Die einzigartige produktübergreifende produktschicht von Microsoft 365 Defender erweitert die einzelnen Suite-Komponenten um:
 - Schützen von Angriffen und koordinieren von Abwehrreaktionen in der gesamten Suite durch Signal Freigabe und automatisierte Aktionen
 - Erzählen Sie die ganze Geschichte des Angriffs auf Produktwarnungen, Verhaltensweisen und Kontexte für Sicherheitsteams, indem Sie Daten zu Warnungen, verdächtigen Ereignissen und betroffenen Objekten auf "Incidents" miteinander verknüpfen.
 - Automatisieren der Antwort auf Kompromisse durch Auslösen der Selbstheilung für Betroffene Objekte durch automatische Behebung
@@ -79,15 +79,15 @@ Alle zusammengehörigen Warnungen in allen Suite-Produkten korrelieren in einem 
 Abfragebasierte Suche über die Rohdaten von e-Mail-und Endpunkt Daten
 
 
-Zu den produktübergreifenden Microsoft Threat Protection-Features gehören: 
+Zu den produktübergreifenden Features von Microsoft 365 Defender gehören: 
 - **Produktübergreifender Einzelbereich von Glass** -Central alle Informationen für Erkennungen, Betroffene Objekte, automatisierte Aktionen und zugehörige Beweise in einer einzelnen Warteschlange und in einem einzelnen Bereich in [Security.Microsoft.com](https://security.microsoft.com). 
 - **Kombinierte Vorfälle-Warteschlange** – um Sicherheitsexperten zu helfen, sich auf das zu konzentrieren, was entscheidend ist, indem Sie sicherstellen, dass der vollständige Angriffsbereich, die betroffenen Ressourcen und die automatisierten Korrekturaktionen zusammengefasst und rechtzeitig aufgetaucht werden. 
-- **Automatische Antwort auf Bedrohungen** – wichtige Informationen zur Bedrohung werden in Echtzeit zwischen den Microsoft Threat Protection-Produkten freigegeben, um das Fortschreiten eines Angriffs zu stoppen. Wenn beispielsweise eine Schadsoftware auf einem von Microsoft Defender ATP geschützten Endpunkt erkannt wird, wird Office 365 ATP angewiesen, die Datei von allen e-Mail-Nachrichten zu überprüfen und zu entfernen. Die Datei wird von der gesamten Microsoft 365 Security Suite aus Sicht blockiert.
-- **Selbstheilung für kompromittierte Geräte, Benutzeridentitäten und Postfächer** – Microsoft Threat Protection verwendet automatische Aktionen und Textbuch mit AI-Leistung, um betroffene Objekte wieder in einen sicheren Zustand zu verlagern. Microsoft Threat Protection nutzt die automatischen Korrekturfunktionen der Suite-Produkte, um sicherzustellen, dass alle betroffenen Objekte, die sich auf einen Vorfall beziehen, nach Möglichkeit automatisch behoben werden.
-- **Produktübergreifende Bedrohungs Jagd** – Sicherheitsteams können Ihr einzigartiges organisatorisches Wissen nutzen, um nach Zeichen von Kompromissen zu suchen, indem Sie Ihre eigenen benutzerdefinierten Abfragen über die Rohdaten erstellen, die von den verschiedenen Schutzprodukten erfasst werden. Microsoft Threat Protection bietet abfragebasierten Zugriff auf 30 Tage historischer Rohdaten und Warnungsdaten über alle Endpunkt-und Office 365 ATP-Daten hinweg. 
+- **Automatische Antwort auf Bedrohungen** – wichtige Informationen zur Bedrohung werden in Echtzeit zwischen den Microsoft 365 Defender-Produkten freigegeben, um das Fortschreiten eines Angriffs zu unterbrechen. Wenn beispielsweise eine Schadsoftware auf einem Endpunkt erkannt wird, der von Microsoft Defender für Endpoint geschützt ist, wird Defender für Office 365 angewiesen, die Datei aus allen e-Mail-Nachrichten zu überprüfen und zu entfernen. Die Datei wird von der gesamten Microsoft 365 Security Suite aus Sicht blockiert.
+- **Selbstheilung für kompromittierte Geräte, Benutzeridentitäten und Postfächer** – Microsoft 365 Defender verwendet automatische Aktionen und Textbuch mit AI-Leistung, um betroffene Objekte wieder in einen sicheren Zustand zu verlagern. Microsoft 365 Defender nutzt die automatischen Korrekturfunktionen der Suite-Produkte, um sicherzustellen, dass alle betroffenen Objekte, die sich auf einen Vorfall beziehen, nach Möglichkeit automatisch behoben werden.
+- **Produktübergreifende Bedrohungs Jagd** – Sicherheitsteams können Ihr einzigartiges organisatorisches Wissen nutzen, um nach Zeichen von Kompromissen zu suchen, indem Sie Ihre eigenen benutzerdefinierten Abfragen über die Rohdaten erstellen, die von den verschiedenen Schutzprodukten erfasst werden. Microsoft 365 Defender bietet abfragebasierten Zugriff auf 30 Tage historischer RAW-Signale und Warnungsdaten über den Endpunkt und Microsoft Defender für Office 365 Daten. 
 
 
 ## <a name="get-started"></a>Erste Schritte
-Die Microsoft Threat Protection-Lizenzierungsanforderungen müssen erfüllt sein, bevor Sie den Dienst im Microsoft 365 Security Center unter [Security.Microsoft.com](https://security.microsoft.com)aktivieren können. Weitere Informationen finden Sie unter:
+Die Microsoft 365 Defender-Lizenzierungsanforderungen müssen erfüllt sein, bevor Sie den Dienst im Microsoft 365 Security Center unter [Security.Microsoft.com](https://security.microsoft.com)aktivieren können. Weitere Informationen finden Sie unter:
 - [Lizenzanforderungen](prerequisites.md#licensing-requirements)
-- [Aktivieren von Microsoft Threat Protection](mtp-enable.md)
+- [Aktivieren von Microsoft 365 Defender](mtp-enable.md)

@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie den Kundenschlüssel für Microsoft 365 für Exchange Online-, Skype for Business-, SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Dateien einrichten.
-ms.openlocfilehash: be7aacf180cf8ffc59a490279083aeb2aa6a0567
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: 69e12d46ae4106a399a8eeff49ebbe0f2a3055e2
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48768973"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841286"
 ---
 # <a name="set-up-customer-key"></a>Einrichten des Kunden Schlüssels
 
@@ -31,9 +31,9 @@ Sie müssen Azure einrichten, bevor Sie Customer Key für Office 365 verwenden k
   
 ## <a name="before-you-set-up-customer-key"></a>Vor dem Einrichten des Kunden Schlüssels
 
-Bevor Sie beginnen, stellen Sie sicher, dass Sie über die entsprechende Lizenzierung für Ihre Organisation verfügen und dass Ihr Konto in Rechnung gestellt und nicht mit einer Kreditkarte bezahlt wird. Kundenschlüssel in Microsoft 365 wird in Office 365 E5 oder Advanced Compliance SKU angeboten. Um die Konzepte und Verfahren in diesem Thema zu verstehen, lesen Sie die [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/) -Dokumentation. Machen Sie sich außerdem mit den in Azure verwendeten Begriffen vertraut, beispielsweise [Mandant](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)).
+Stellen Sie vor dem ersten Start sicher, dass Sie über die entsprechende Lizenzierung für Ihre Organisation verfügen. Ab dem 1. April 2020 wird der Kundenschlüssel in Office 365 in Office 365 E5, M365 E5, M365 E5 Compliance und M365 E5 Information Protection & Governance-SKUs angeboten. Office 365 Advanced Compliance SKU steht nicht mehr für die Beschaffung neuer Lizenzen zur Verfügung. Vorhandene Office 365 Advanced Compliance-Lizenzen werden weiterhin unterstützt.
 
-Um die Konzepte und Verfahren in diesem Thema zu verstehen, lesen Sie die [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/) -Dokumentation. Machen Sie sich außerdem mit den in Azure verwendeten Ausdrücken vertraut, beispielsweise [Azure AD Mandanten](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant).
+Bevor Sie beginnen, stellen Sie sicher, dass Sie über die entsprechende Lizenzierung für Ihre Organisation verfügen und dass Ihr Konto in Rechnung gestellt und nicht mit einer Kreditkarte bezahlt wird. Um die Konzepte und Verfahren in diesem Thema zu verstehen, lesen Sie die [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/) -Dokumentation. Machen Sie sich außerdem mit den in Azure verwendeten Ausdrücken vertraut, beispielsweise [Azure AD Mandanten](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant).
 
 Der kurzstand wird nur zum Erfassen der erforderlichen Mandanten-und Dienstkonfigurationsinformationen verwendet, die für die Registrierung für den Kundenschlüssel verwendet werden. Die Kundenschlüssel Angebote werden über die Kurzarbeits Veröffentlichung veröffentlicht, sodass Sie und unsere Partner die erforderlichen Informationen bequem mit derselben Methode übermitteln können. Mit dem schnelleren Archivieren von Daten, die Sie im Angebot bereitgestellt haben, können Sie auch einfach archivieren.
   
@@ -55,7 +55,7 @@ Für die Durchführung der meisten dieser Schritte müssen Sie eine Remoteverbin
 
 - [Senden einer Anforderung zum Aktivieren von Customer Key für Office 365](#submit-a-request-to-activate-customer-key-for-office-365)
 
-Nachdem Sie die beiden neuen Azure-Abonnements erstellt haben, müssen Sie die entsprechende Anforderung für das Customer Key-Angebot übermitteln, indem Sie ein Webformular ausfüllen, das im Microsoft FastTrack-Portal gehostet wird. **Das FastTrack-Team bitte keine Unterstützung für Customer Key. Office nutzt das FastTrack-Portal einfach für die Übermittlung des Formulars und um uns dabei zu helfen, die relevanten Angebote für Customer Key nachzuverfolgen** .
+Nachdem Sie die beiden neuen Azure-Abonnements erstellt haben, müssen Sie die entsprechende Anforderung für das Customer Key-Angebot übermitteln, indem Sie ein Webformular ausfüllen, das im Microsoft FastTrack-Portal gehostet wird. **Das FastTrack-Team bitte keine Unterstützung für Customer Key. Office nutzt das FastTrack-Portal einfach für die Übermittlung des Formulars und um uns dabei zu helfen, die relevanten Angebote für Customer Key nachzuverfolgen**.
 
 - [Erstellen eines Premium Azure Key Vault für jedes Abonnement](#create-a-premium-azure-key-vault-in-each-subscription)
 
@@ -110,7 +110,7 @@ Führen Sie zur Übermittlung eines Angebots zum Aktivieren von Customer Key die
   
 1. Melden Sie sich mit einem Arbeits-oder Schulkonto, das über globale Administratorberechtigungen in Ihrer Organisation verfügt, beim [Microsoft-Portal](https://fasttrack.microsoft.com/)an.
 
-2. Sobald Sie angemeldet sind, wechseln Sie zum **Dashboard** .
+2. Sobald Sie angemeldet sind, wechseln Sie zum **Dashboard**.
 
 3. Wählen Sie **Bereitstellen** in der Navigationsleiste aus, **oder** wählen Sie **alle Bereitstellungsressourcen anzeigen** auf der Seite Informationskarte **Bereitstellen** aus, und überprüfen Sie die Liste der aktuellen Angebote.
 
@@ -122,7 +122,7 @@ Führen Sie zur Übermittlung eines Angebots zum Aktivieren von Customer Key die
 
 5. Nachdem Sie die Angebotsdetails überprüft haben, wählen Sie **weiter mit Schritt 2** aus.
 
-6. Tragen Sie alle relevanten Details und erforderlichen Informationen im Angebotsformular ein. Achten Sie besonders auf Ihre Auswahl, welche MitarbeiterInnen Ihrer Organisation Sie autorisieren, die permanente und unwiderrufliche Vernichtung von kryptografischen Schlüsseln und Daten zu genehmigen. Sobald Sie das Formular ausgefüllt haben, wählen Sie **Senden** .
+6. Tragen Sie alle relevanten Details und erforderlichen Informationen im Angebotsformular ein. Achten Sie besonders auf Ihre Auswahl, welche MitarbeiterInnen Ihrer Organisation Sie autorisieren, die permanente und unwiderrufliche Vernichtung von kryptografischen Schlüsseln und Daten zu genehmigen. Sobald Sie das Formular ausgefüllt haben, wählen Sie **Senden**.
 
 ### <a name="register-azure-subscriptions-to-use-a-mandatory-retention-period"></a>Azure- Abonnements registrieren, um einen obligatorischen Aufbewahrungszeitraum zu nutzen.
 
@@ -175,7 +175,7 @@ Erstellen Sie für jeden Microsoft 365-Dienst, mit dem Sie den Kundenschlüssel 
   
 Verwenden Sie eine Benennungskonvention für Schlüssel Tresore, die die vorgesehene Verwendung der Daten Verschlüsselungsrichtlinie wiedergibt, mit der Sie die Tresore verknüpfen. Im nachstehenden Abschnitt „Bewährte Methoden“ finden Sie Empfehlungen zur Benennung.
   
-Erstellen Sie für jede Datenverschlüsselungsrichtlinie eine eigene, paarweise angeordnete Tresor-Gruppe. Bei Exchange Online wählen Sie den Geltungsbereich einer Datenverschlüsselungsrichtlinie, wenn Sie die Richtlinie dem Postfach zuweisen. Einem Postfach kann nur eine Richtlinie zugewiesen sein, allerding können Sie bis zu 50 Richtlinien erstellen. Für SharePoint Online der Bereich einer Richtlinie alle Daten innerhalb einer Organisation an einem geografischen Standort oder _Geo_ .
+Erstellen Sie für jede Datenverschlüsselungsrichtlinie eine eigene, paarweise angeordnete Tresor-Gruppe. Bei Exchange Online wählen Sie den Geltungsbereich einer Datenverschlüsselungsrichtlinie, wenn Sie die Richtlinie dem Postfach zuweisen. Einem Postfach kann nur eine Richtlinie zugewiesen sein, allerding können Sie bis zu 50 Richtlinien erstellen. Für SharePoint Online der Bereich einer Richtlinie alle Daten innerhalb einer Organisation an einem geografischen Standort oder _Geo_.
 
 Das Erstellen von Schlüsseltresoren setzt außerdem die Erstellung von Azure-Ressourcengruppen voraus, da für Schlüsseltresore Speicherkapazität (wenn auch sehr geringe) erforderlich ist und die Schlüsseltresor-Protokollierung (sofern aktiviert) außerdem gespeicherte Daten generiert. Als bewährte Methode empfiehlt Microsoft die Verwendung eigener Administratoren zum Verwalten jeder Ressourcengruppe, wobei die Verwaltung mit der Gruppe der Administratoren abgestimmt wird, die alle zugehörigen Customer Key-Ressourcen verwalten.
   

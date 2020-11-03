@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: ea580ad6b7bb7cc905a299e473f23a4c74fb289e
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: a41e05f54a8ba94752c6df91628a2200367ac0f3
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48294784"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843840"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft-Sicherheitsbewertung
 
@@ -76,7 +76,7 @@ Beispielsweise besagt eine Verbesserungs Aktion, dass Sie 10 Punkte erhalten, in
 
 ### <a name="products-included-in-secure-score"></a>Produkte in Sicherheitsbewertung
 
-Derzeit gibt es Empfehlungen für Microsoft 365 (einschließlich Exchange Online), Azure Active Directory, Microsoft Defender ATP, Azure ATP und Cloud-App-Sicherheit. Empfehlungen für andere Sicherheitsprodukte werden in Kürze verfügbar sein. Die Empfehlungen decken nicht alle Angriffsflächen ab, die jedem Produkt zugeordnet sind, sind jedoch ein guter Ausgangswert. Sie können die Verbesserungsmaßnahmen auch als „über Drittanbieter abgedeckt“ oder „ durch alternative Korrektur abgedeckt“ markieren.
+Derzeit gibt es Empfehlungen für Microsoft 365 (einschließlich Exchange Online), Azure Active Directory, Microsoft Defender for Endpoint, Microsoft Defender for Identity und Cloud App Security. Empfehlungen für andere Sicherheitsprodukte werden in Kürze verfügbar sein. Die Empfehlungen decken nicht alle Angriffsflächen ab, die jedem Produkt zugeordnet sind, sind jedoch ein guter Ausgangswert. Sie können die Verbesserungsmaßnahmen auch als „über Drittanbieter abgedeckt“ oder „ durch alternative Korrektur abgedeckt“ markieren.
 
 ### <a name="security-defaults"></a>Sicherheitsstandards
 
@@ -129,4 +129,4 @@ Wenn Sie Probleme haben, lassen Sie es uns wissen, indem Sie in der [Sicherheits
 - [Zugreifen auf Ihren Sicherheitsstatus](microsoft-secure-score-improvement-actions.md)
 - [Verfolgen des Microsoft Secure Score-Verlaufs und erreichen der Ziele](microsoft-secure-score-history-metrics-trends.md)
 - [Was in Kürze verfügbar ist](microsoft-secure-score-whats-coming.md)
-- [Neuigkeiten](microsoft-secure-score-whats-new.md)
+- [Neuerungen](microsoft-secure-score-whats-new.md)

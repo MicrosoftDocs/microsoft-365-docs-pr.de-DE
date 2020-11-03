@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Eine Microsoft 365-Klassifizierung ist ein Tool, mit dem Sie verschiedene Arten von Inhalten erkennen können, indem Sie sich Beispiele ansehen. In diesem Artikel erfahren Sie, wie Sie eine benutzerdefinierte Klassifizierung erstellen und trainieren und Sie neu trainieren, um die Genauigkeit zu verbessern.
-ms.openlocfilehash: 4c9f5dae702c71fe7f2da1ccbc0364e7bdd15b0e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 4475456e7116acbc705a3121079391a571fcca8a
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636984"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841232"
 ---
 # <a name="get-started-with-trainable-classifiers-preview"></a>Erste Schritte mit trainierbaren Klassifizierern (Vorschau)
 
@@ -44,7 +44,7 @@ Klassifizierungen sind ein Microsoft 365 E5-oder E5-Konformitäts Feature. Sie m
 So greifen Sie auf die Klassifizierung in der Benutzeroberfläche zu: 
 
 - der globale Administrator muss sich für den Mandanten anmelden, um benutzerdefinierte Klassifizierungen zu erstellen.
-- die Compliance-Administratorrolle oder der Compliance-Daten Administrator ist erforderlich, um eine Klassifizierung zu trainieren.
+- zur Schulung einer Klassifizierung ist die Rolle "Compliance-Administrator", "Daten Ermittlungs Rolle" oder "Compliance-Daten Administrator" erforderlich.
 
 Sie benötigen Konten mit diesen Berechtigungen für die Verwendung von Klassifizierungen in den folgenden Szenarien:
 
@@ -74,7 +74,7 @@ Weitere Informationen zum Gesamtworkflow beim Erstellen von benutzerdefinierten 
 
 ### <a name="seed-content"></a>Seed-Inhalt
 
-Wenn Sie möchten, dass eine Lernende Klassifizierung ein Element in einer bestimmten Inhaltskategorie unabhängig und genau identifiziert, müssen Sie es zunächst mit vielen Beispielen des Inhaltstyps in der Kategorie präsentieren. Diese Fütterung von Proben zur Klassifizierer-Schulung wird als *Seeding*bezeichnet. Seed-Inhalt wird von einem Menschen ausgewählt und wird bewertet, um die Kategorie des Inhalts darzustellen.
+Wenn Sie möchten, dass eine Lernende Klassifizierung ein Element in einer bestimmten Inhaltskategorie unabhängig und genau identifiziert, müssen Sie es zunächst mit vielen Beispielen des Inhaltstyps in der Kategorie präsentieren. Diese Fütterung von Proben zur Klassifizierer-Schulung wird als *Seeding* bezeichnet. Seed-Inhalt wird von einem Menschen ausgewählt und wird bewertet, um die Kategorie des Inhalts darzustellen.
 
 > [!TIP]
 > Sie benötigen mindestens 50 positive Beispiele und bis zu 500. Die eingestufte Klassifizierung wird bis zu den 500 zuletzt erstellten Beispielen verarbeitet (nach Dateierstellungsdatum/Zeitstempel). Je mehr Beispiele Sie bereitstellen, desto genauer sind die Vorhersagen, die von der Klassifizierung vorgenommen werden.
@@ -96,7 +96,7 @@ Nachdem die Schulungs fähigen Klassifizierung genügend positive Beispiele zum 
    > [!IMPORTANT]
    > Stellen Sie sicher, dass die Elemente im seedsatz **starke** Beispiele für die Kategorie sind. Die eingestufte Klassifizierung erstellt zunächst Ihr Modell basierend auf dem, was Sie mit dem Seeding beginnen. Bei der Klassifizierung wird davon ausgegangen, dass alle Seed-Beispiele starke positive Ergebnisse aufweisen und keine Möglichkeit haben zu wissen, ob ein Beispiel einer schwachen oder negativen Übereinstimmung mit der Kategorie entspricht.
 
-2. Platzieren Sie den Ausgangs Inhalt in einem SharePoint Online Ordner, *der ausschließlich für den Inhalt des Seeds*reserviert ist. Notieren Sie sich die Website-, Bibliotheks-und Ordner-URL.
+2. Platzieren Sie den Ausgangs Inhalt in einem SharePoint Online Ordner, *der ausschließlich für den Inhalt des Seeds* reserviert ist. Notieren Sie sich die Website-, Bibliotheks-und Ordner-URL.
 
    > [!TIP]
    > Wenn Sie eine neue Website und einen neuen Ordner für Ihre Seed-Daten erstellen, lassen Sie mindestens eine Stunde für diesen Standort indiziert werden, bevor Sie die Schulungs Klassifizierung erstellen, die diese Startdaten verwendet.
@@ -105,7 +105,7 @@ Nachdem die Schulungs fähigen Klassifizierung genügend positive Beispiele zum 
 
 4. Klicken Sie auf die Registerkarte **Schulungs Klassifizierung** .
 
-5. Wählen Sie **Create trainable Klassifizierer**aus.
+5. Wählen Sie **Create trainable Klassifizierer** aus.
 
 6. Geben Sie die entsprechenden Werte für `Name` die `Description` Felder und der Kategorie der Elemente ein, die diese Lernbare Klassifizierung identifizieren soll.
 
@@ -125,7 +125,7 @@ Nachdem die Schulungs fähigen Klassifizierung genügend positive Beispiele zum 
     > [!IMPORTANT]
     > Die Beispielelemente dürfen nicht verschlüsselt werden und müssen in Englisch sein.
 
-12. Platzieren Sie den Testinhalt in einem SharePoint Online Ordner, *der ausschließlich für den Testinhalt*reserviert ist. Notieren Sie sich die SharePoint Online Website, Bibliothek und Ordner-URL.
+12. Platzieren Sie den Testinhalt in einem SharePoint Online Ordner, *der ausschließlich für den Testinhalt* reserviert ist. Notieren Sie sich die SharePoint Online Website, Bibliothek und Ordner-URL.
 
     > [!TIP]
     > Wenn Sie eine neue Website und einen neuen Ordner für Ihre Testdaten erstellen, lassen Sie mindestens eine Stunde für diesen Ort indiziert werden, bevor Sie die Schulungs Klassifizierung erstellen, die diese Startdaten verwendet.

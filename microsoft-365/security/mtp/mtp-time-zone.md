@@ -1,5 +1,5 @@
 ---
-title: Festlegen der Zeitzone für Microsoft Threat Protection-Features
+title: Festlegen der Zeitzone für Microsoft 365 Defender-Features
 description: Hier erfahren Sie, wie Sie die Zeitzone für Datums- und Uhrzeitinformationen im Zusammenhang mit Vorfällen, der automatischen Untersuchung und Beseitigung sowie der erweiterten Suche auswählen.
 keywords: Zeitzone, Datum, Uhrzeit, MTP, Microsoft Threat Protection, M365, Sicherheit, Vorfälle, automatische Untersuchung und Beseitigung, AIR, erweiterte Suche
 search.product: eADQiWindows 10XVcnh
@@ -19,26 +19,26 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 60795815ae68d640eeac4b9bc9f0188c7751aaf9
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 81a744c3f5ebace445a8a944c0fa152ae6b5a09e
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201033"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841914"
 ---
-# <a name="set-the-time-zone-for-microsoft-threat-protection"></a>Festlegen der Zeitzone für Microsoft Threat Protection
+# <a name="set-the-time-zone-for-microsoft-365-defender"></a>Festlegen der Zeitzone für Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Gilt für:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 
 
-Microsoft Threat Protection kann Datums- und Uhrzeitinformationen unter Verwendung Ihrer lokalen Zeitzone oder der koordinierten Weltzeit (UTC) anzeigen. Die ausgewählte Zeitzone gilt für alle Datums- und Uhrzeitinformationen, die in den folgenden Features des Microsoft 365 Security Centers angezeigt werden:
+Microsoft 365 Defender kann Informationen zu Datum und Uhrzeit mit Ihrer lokalen Zeitzone oder UTC anzeigen. Die ausgewählte Zeitzone gilt für alle Datums- und Uhrzeitinformationen, die in den folgenden Features des Microsoft 365 Security Centers angezeigt werden:
 - Vorfälle
 - Automatische Untersuchung und Beseitigung, einschließlich Info-Center
 - Erweiterte Suche
 
-Um die Zeitzone für diese Features festzulegen, navigieren Sie zu **Einstellungen** > **Microsoft Threat Protection** > **Zeitzone**.
+Um die Zeitzone für diese Features festzulegen, wechseln Sie zu **Einstellungen**  >  **Microsoft 365 Defender**  >  **Time Zone**.

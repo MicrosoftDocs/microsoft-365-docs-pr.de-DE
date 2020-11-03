@@ -24,12 +24,12 @@ description: Erfahren Sie, wie Sie ein Add-on erwerben, um Ihrem Microsoft 365 f
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: e73a3430dbcded25a15fad19815106a72798d8e8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: cfbce7efa1c80d9e5da8390c183233a6f2a12eb7
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638387"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842820"
 ---
 # <a name="buy-or-edit-an-add-on"></a>Erwerben oder Bearbeiten eines Add-Ons
 
@@ -48,7 +48,7 @@ Einige der Microsoft 365 for Business-Pläne verfügen über Add-ons, die Sie f�
 
 1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** - \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Einkaufsdienste</a> .
 
-2. Wählen Sie unten auf der Seite " **Einkaufsdienste** " **Add-ons**aus.
+2. Wählen Sie unten auf der Seite " **Einkaufsdienste** " **Add-ons** aus.
 
 3. Wählen Sie auf der Seite " **Dienste kaufen** " das Add-on-Abonnement aus, das Sie kaufen möchten.
 
@@ -56,7 +56,7 @@ Einige der Microsoft 365 for Business-Pläne verfügen über Add-ons, die Sie f�
 
 5. Wählen Sie **jetzt Auschecken aus**.
 
-6. Überprüfen Sie die Preisinformationen, und wählen Sie dann **weiter**aus.
+6. Überprüfen Sie die Preisinformationen, und wählen Sie dann **weiter** aus.
 
 7. Geben Sie Ihre Zahlungsinformationen an, und wählen Sie dann **Bestellung** aufgeben, \> **um zu admin Home wechseln**.
 
@@ -68,17 +68,17 @@ Einige der Microsoft 365 for Business-Pläne verfügen über Add-ons, die Sie f�
 
 2. Wählen Sie auf der Seite **Abonnements** das Abonnement aus, für das Sie ein Add-on erwerben möchten.
 
-3. Wählen Sie in der unteren linken Ecke der Abonnementdetails **Add-ons** \> **Buy Add-ons**aus.
+3. Wählen Sie in der unteren linken Ecke der Abonnementdetails **Add-ons** \> **Buy Add-ons** aus.
 
     ![Link "Add-ons kaufen" auf der Seite "Abonnements" im Microsoft 365 Admin Center.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
-4. Klicken Sie auf der Seite **Dienste kaufen** mit der Maus oder tippen Sie auf das Add-on-Abonnement, das Sie kaufen möchten, und wählen Sie dann **Jetzt kaufen**aus.
+4. Klicken Sie auf der Seite **Dienste kaufen** mit der Maus oder tippen Sie auf das Add-on-Abonnement, das Sie kaufen möchten, und wählen Sie dann **Jetzt kaufen** aus.
 
 5. Geben Sie die Anzahl der benötigten Lizenzen ein, und wählen Sie aus, ob Sie monatlich oder für das ganze Jahr bezahlen möchten. Wählen Sie aus, ob Sie allen Personen, die derzeit keine Lizenz besitzen, Lizenzen automatisch zuweisen möchten. Wenn diese Option angezeigt wird, wählen Sie ein Basisabonnement aus.
 
 6. Wählen Sie **jetzt Auschecken aus**.
 
-7. Überprüfen Sie die Preisinformationen, und wählen Sie dann **weiter**aus.
+7. Überprüfen Sie die Preisinformationen, und wählen Sie dann **weiter** aus.
 
 8. Geben Sie Ihre Zahlungsinformationen an, und wählen Sie dann **Bestellung** aufgeben, \> **um zu admin Home wechseln**.
 
@@ -90,17 +90,17 @@ Einige der Microsoft 365 for Business-Pläne verfügen über Add-ons, die Sie f�
 
 2. Wählen Sie auf der Seite **Abonnements** das Abonnement aus, für das Sie ein Add-on erwerben möchten.
 
-3. Wählen Sie in der unteren linken Ecke der Abonnementdetails **Add-ons** \> **Buy Add-ons**aus.
+3. Wählen Sie in der unteren linken Ecke der Abonnementdetails **Add-ons** \> **Buy Add-ons** aus.
 
     ![Link "Add-ons kaufen" auf der Seite "Abonnements" im Microsoft 365 Admin Center.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
-4. Klicken Sie auf der Seite **Dienste kaufen** mit der Maus oder tippen Sie auf das Add-on-Abonnement, das Sie kaufen möchten, und wählen Sie dann **Jetzt kaufen**aus.
+4. Klicken Sie auf der Seite **Dienste kaufen** mit der Maus oder tippen Sie auf das Add-on-Abonnement, das Sie kaufen möchten, und wählen Sie dann **Jetzt kaufen** aus.
 
 5. Geben Sie die Anzahl der benötigten Lizenzen ein, und wählen Sie aus, ob Sie monatlich oder für das ganze Jahr bezahlen möchten. Wählen Sie aus, ob Sie allen Personen, die derzeit keine Lizenz besitzen, Lizenzen automatisch zuweisen möchten. Wenn diese Option angezeigt wird, wählen Sie ein Basisabonnement aus.
 
 6. Wählen Sie **jetzt Auschecken aus**.
 
-7. Überprüfen Sie die Preisinformationen, und wählen Sie dann **weiter**aus.
+7. Überprüfen Sie die Preisinformationen, und wählen Sie dann **weiter** aus.
 
 8. Geben Sie Ihre Zahlungsinformationen an, und wählen Sie dann **Bestellung** aufgeben, \> **um zu admin Home wechseln**.
 
@@ -122,11 +122,11 @@ Die Schritte, die Sie zum Aktualisieren eines Add-ons verwenden, hängen davon a
 
 2. Wählen Sie auf der Seite **Ihre Produkte** das Abonnement aus, für das Sie ein Add-on aktualisieren möchten.
 
-3. Wählen Sie **Add-ons**aus. Die Add-ons, die Sie erworben haben, werden angezeigt.
+3. Wählen Sie **Add-ons** aus. Die Add-ons, die Sie erworben haben, werden angezeigt.
 
 4. Wählen Sie **Change Quantity** für das Add-on aus, das Sie ändern möchten.
 
-5. Geben Sie die gewünschte Mengenänderung für das Abonnement ein, und wählen Sie dann **Änderung übermitteln**aus.
+5. Geben Sie die gewünschte Mengenänderung für das Abonnement ein, und wählen Sie dann **Änderung übermitteln** aus.
 
 ::: moniker-end
 
@@ -136,7 +136,7 @@ Die Schritte, die Sie zum Aktualisieren eines Add-ons verwenden, hängen davon a
 
 2. Wählen Sie auf der Seite **Abonnements** das Abonnement aus, für das Sie ein Add-on aktualisieren möchten.
 
-3. Wählen Sie **Add-ons**aus.
+3. Wählen Sie **Add-ons** aus.
 
     Die von Ihnen gekauften Add-Ons werden angezeigt. Unter jedem gibt es einen Link **Menge ändern**.
 
@@ -144,7 +144,7 @@ Die Schritte, die Sie zum Aktualisieren eines Add-ons verwenden, hängen davon a
 
     !["Add-Ons"-Link und Link zum Ändern der Menge](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
   
-5. Geben Sie in das Feld die Anzahl der benötigten Benutzerlizenzen ein, und wählen Sie dann **Absenden**aus.
+5. Geben Sie in das Feld die Anzahl der benötigten Benutzerlizenzen ein, und wählen Sie dann **Absenden** aus.
 
     > [!TIP]
     > Sie können die Menge der Benutzerlizenzen auch mithilfe des Aufwärts- und Abwärtspfeils ändern oder die gewünschte Anzahl einfach im Feld eingeben.
@@ -159,7 +159,7 @@ Die Schritte, die Sie zum Aktualisieren eines Add-ons verwenden, hängen davon a
 
 2. Wählen Sie auf der Seite **Abonnements** das Abonnement aus, für das Sie ein Add-on aktualisieren möchten.
 
-3. Wählen Sie **Add-ons**aus.
+3. Wählen Sie **Add-ons** aus.
 
     Die von Ihnen gekauften Add-Ons werden angezeigt. Unter jedem gibt es einen Link **Menge ändern**.
 
@@ -167,7 +167,7 @@ Die Schritte, die Sie zum Aktualisieren eines Add-ons verwenden, hängen davon a
 
     !["Add-Ons"-Link und Link zum Ändern der Menge](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
   
-5. Geben Sie in das Feld die Anzahl der benötigten Benutzerlizenzen ein, und wählen Sie dann **Absenden**aus.
+5. Geben Sie in das Feld die Anzahl der benötigten Benutzerlizenzen ein, und wählen Sie dann **Absenden** aus.
 
     > [!TIP]
     > Sie können die Menge der Benutzerlizenzen auch mithilfe des Aufwärts- und Abwärtspfeils ändern oder die gewünschte Anzahl einfach im Feld eingeben.
@@ -183,9 +183,9 @@ Die Schritte, die Sie zum Aktualisieren eines Add-ons verwenden, hängen davon a
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
 
-2. Wählen Sie auf der Seite **Ihre Produkte** das Add-on-Abonnement aus, das Sie aktualisieren möchten, und wählen Sie dann **Lizenzen hinzufügen/entfernen**aus.
+2. Wählen Sie auf der Seite **Ihre Produkte** das Add-on-Abonnement aus, das Sie aktualisieren möchten, und wählen Sie dann **Lizenzen hinzufügen/entfernen** aus.
 
-3. Geben Sie in das Feld die Anzahl der benötigten Lizenzen ein, und wählen Sie dann **Änderung übermitteln**aus.
+3. Geben Sie in das Feld die Anzahl der benötigten Lizenzen ein, und wählen Sie dann **Änderung übermitteln** aus.
 
 ::: moniker-end
 
@@ -193,9 +193,9 @@ Die Schritte, die Sie zum Aktualisieren eines Add-ons verwenden, hängen davon a
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 
-2. Wählen Sie auf der Seite **Abonnements** das Add-on-Abonnement aus, das Sie aktualisieren möchten, und wählen Sie dann **Lizenzen hinzufügen/entfernen**aus.
+2. Wählen Sie auf der Seite **Abonnements** das Add-on-Abonnement aus, das Sie aktualisieren möchten, und wählen Sie dann **Lizenzen hinzufügen/entfernen** aus.
 
-3. Geben Sie die Anzahl der benötigten Lizenzen in das Feld ein, und wählen Sie dann **Absenden**aus.
+3. Geben Sie die Anzahl der benötigten Lizenzen in das Feld ein, und wählen Sie dann **Absenden** aus.
 
     > [!TIP]
     > Sie können auch den nach-oben-und nach-unten-Pfeil verwenden, um die Anzahl der Lizenzen zu ändern oder einfach die gewünschte Nummer in das Feld einzugeben.
@@ -208,9 +208,9 @@ Die Schritte, die Sie zum Aktualisieren eines Add-ons verwenden, hängen davon a
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
 
-2. Wählen Sie auf der Seite **Abonnements** das Add-on-Abonnement aus, das Sie aktualisieren möchten, und wählen Sie dann **Lizenzen hinzufügen/entfernen**aus.
+2. Wählen Sie auf der Seite **Abonnements** das Add-on-Abonnement aus, das Sie aktualisieren möchten, und wählen Sie dann **Lizenzen hinzufügen/entfernen** aus.
 
-3. Geben Sie die Anzahl der benötigten Lizenzen in das Feld ein, und wählen Sie dann **Absenden**aus.
+3. Geben Sie die Anzahl der benötigten Lizenzen in das Feld ein, und wählen Sie dann **Absenden** aus.
 
     > [!TIP]
     > Sie können auch den nach-oben-und nach-unten-Pfeil verwenden, um die Anzahl der Lizenzen zu ändern oder einfach die gewünschte Nummer in das Feld einzugeben.
@@ -234,7 +234,7 @@ Informationen zu Skype for Business-Add-Ons finden Sie unter [Skype for Business
 |**Add-On**|**Verfügbar in den folgenden Abonnements**|
 |:-----|:-----|
 |Kunden-Lockbox  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |
-|[Office 365 Online Advanced Threat Protection](https://go.microsoft.com/fwlink/p/?LinkId=691156) <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |
+|[Microsoft Defender für Office 365](https://go.microsoft.com/fwlink/p/?LinkId=691156) <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |
 |[Exchange Online-Archivierung](https://go.microsoft.com/fwlink/p/?LinkId=691157) <br/> | Microsoft 365 Business Basic  <br/>  Microsoft 365 Business Standard  <br/>  Office 365 Enterprise E1  <br/>  Office 365 Enterprise F1  <br/> |
 |Microsoft MyAnalytics  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |
 |Office 365 Erweiterte Compliance  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |

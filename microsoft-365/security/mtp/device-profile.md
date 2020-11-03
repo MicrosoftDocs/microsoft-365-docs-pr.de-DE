@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: f6b79d3252084b298f94e01b18ebe3505f83b480
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 3840a6beae3b586fc90420f7813ff6e9d3cc6c60
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196857"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843852"
 ---
 # <a name="device-profile-page"></a>Geräteprofil Seite
 
@@ -27,9 +27,9 @@ ms.locfileid: "48196857"
 Das Microsoft 365-Sicherheitsportal bietet Ihnen Geräteprofil Seiten, sodass Sie die Integrität und den Status von Geräten in Ihrem Netzwerk schnell bewerten können.
 
 > [!IMPORTANT]
-> Die Geräteprofil Seite erscheint möglicherweise geringfügig anders, je nachdem, ob das Gerät in Microsoft Defender ATP, Azure ATP oder in beiden registriert ist.
+> Die Geräteprofil Seite erscheint möglicherweise geringfügig anders, je nachdem, ob das Gerät in Microsoft Defender für Endpoint, Microsoft Defender for Identity oder beides registriert ist.
 
-Wenn das Gerät in Microsoft Defender ATP registriert ist, können Sie auch die Geräteprofil Seite verwenden, um einige allgemeine Sicherheitsaufgaben auszuführen.
+Wenn das Gerät in Microsoft Defender für Endpoint registriert ist, können Sie auch die Geräteprofil Seite verwenden, um einige allgemeine Sicherheitsaufgaben auszuführen.
 
 ## <a name="navigating-the-device-profile-page"></a>Navigieren auf der Geräteprofil Seite
 
@@ -41,7 +41,7 @@ In der Sidebar (1) werden grundlegende Details zum Gerät aufgelistet.
 
 Der Hauptinhaltsbereich (2) enthält Registerkarten, die Sie umschalten können, um verschiedene Arten von Informationen zum Gerät anzuzeigen.
 
-Wenn das Gerät in Microsoft Defender ATP registriert ist, wird auch eine Liste der Antwort Aktionen angezeigt (3). Mit Antwort Aktionen können Sie häufige sicherheitsbezogene Aufgaben ausführen.
+Wenn das Gerät in Microsoft Defender für Endpoint registriert ist, wird auch eine Liste der Antwort Aktionen angezeigt (3). Mit Antwort Aktionen können Sie häufige sicherheitsbezogene Aufgaben ausführen.
 
 ## <a name="sidebar"></a>Randleiste
 
@@ -51,15 +51,15 @@ Neben dem Hauptinhaltsbereich der Geräteprofil Seite befindet sich die Sidebar.
 
 In der Sidebar werden der vollständige Name und die Expositions Ebene des Geräts aufgeführt. Sie enthält auch einige wichtige grundlegende Informationen in kleinen Unterabschnitten, die geöffnet oder geschlossen umgeschaltet werden können, beispielsweise:
 
-* **Tags** – alle Microsoft Defender ATP-, Azure ATP-oder Custom-Tags, die dem Gerät zugeordnet sind. Tags aus Azure ATP können nicht bearbeitet werden.
-* **Sicherheitsinformationen** – offene Vorfälle und aktive Warnungen. Geräte, die in Microsoft Defender ATP registriert sind, zeigen außerdem die Expositions Ebene und das Risikoniveau an.
+* **Tags** -any Microsoft Defender for Endpoint, Microsoft Defender for Identity oder benutzerdefinierte Tags, die dem Gerät zugeordnet sind. Tags von Microsoft Defender for Identity sind nicht bearbeitbar.
+* **Sicherheitsinformationen** – offene Vorfälle und aktive Warnungen. Geräte, die in Microsoft Defender für Endpoint registriert sind, zeigen außerdem die Expositions Ebene und das Risikoniveau an.
 
 > [!TIP]
 > Die Expositions Ebene bezieht sich darauf, wie viel das Gerät Sicherheitsempfehlungen einhält, während das Risikoniveau basierend auf einer Reihe von Faktoren berechnet wird, einschließlich der Typen und des Schweregrads aktiver Warnungen.
 
-* **Gerätedetails** – Domäne, Betriebssystem, Zeitstempel für das erste erkennen des Geräts, IP-Adressen, Ressourcen. Für Geräte, die in Microsoft Defender ATP registriert sind, wird auch der Integritätsstatus angezeigt. In Azure ATP eingeschriebene Geräte zeigen Sam-Namen und einen Zeitstempel für den Zeitpunkt an, zu dem das Gerät erstmalig erstellt wurde.
+* **Gerätedetails** – Domäne, Betriebssystem, Zeitstempel für das erste erkennen des Geräts, IP-Adressen, Ressourcen. Geräte, die in Microsoft Defender für Endpoint registriert sind, zeigen ebenfalls den Integritätsstatus an. Geräte, die in Microsoft Defender for Identity registriert sind, zeigen Sam-Namen und einen Zeitstempel für den Zeitpunkt an, zu dem das Gerät erstmalig erstellt wurde.
 * **Netzwerkaktivität** – Zeitstempel zum ersten Mal und zum letzten Mal, als das Gerät im Netzwerk angezeigt wurde.
-* **Verzeichnisdaten** (*nur für Geräte, die in Azure ATP registriert*sind) – [UAC](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview) -Flags, [SPNs](https://docs.microsoft.com/windows/win32/ad/service-principal-names)und Gruppenmitgliedschaften.
+* **Verzeichnisdaten** ( *nur für Geräte, die in Microsoft Defender for Identity registriert* sind) – [UAC](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview) -Flags, [SPNs](https://docs.microsoft.com/windows/win32/ad/service-principal-names)und Gruppenmitgliedschaften.
 
 ## <a name="response-actions"></a>Antwort Aktionen
 
@@ -68,13 +68,13 @@ Reaktions Aktionen bieten eine schnelle Möglichkeit, Bedrohungen zu schützen u
 ![Bild der Aktionsleiste für Geräteprofil](../../media/mtp-device-profile/hybrid-device-long-action-bar.png)
 
 > [!IMPORTANT]
-> * [Antwort Aktionen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) sind nur verfügbar, wenn das Gerät in Microsoft Defender ATP registriert ist.
-> * Geräte, die in Microsoft Defender ATP registriert sind, können basierend auf dem Betriebssystem und der Versionsnummer des Geräts unterschiedliche Nummern von Antwort Aktionen anzeigen.
+> * [Antwort Aktionen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) sind nur verfügbar, wenn das Gerät in Microsoft Defender für Endpoint registriert ist.
+> * Geräte, die in Microsoft Defender für Endpoint registriert sind, können möglicherweise unterschiedliche Anzahl von Antwort Aktionen anzeigen, basierend auf dem Betriebssystem und der Versionsnummer des Geräts.
 
 Die auf der Geräteprofil Seite verfügbaren Aktionen umfassen Folgendes:
 
 * **Tags verwalten** – aktualisiert benutzerdefinierte Tags, die Sie auf dieses Gerät angewendet haben.
-* **Gerät isolieren** – isoliert das Gerät aus dem Netzwerk Ihrer Organisation, während es mit dem Advanced Threat Protection von Microsoft Defender verbunden bleibt. Sie können festlegen, dass Outlook, Teams und Skype for Business während der Isolierung des Geräts zu Kommunikationszwecken ausgeführt werden.
+* **Gerät isolieren** – isoliert das Gerät aus dem Netzwerk Ihrer Organisation, während es mit Microsoft Defender für Endpoint verbunden bleibt. Sie können festlegen, dass Outlook, Teams und Skype for Business während der Isolierung des Geräts zu Kommunikationszwecken ausgeführt werden.
 * **Action Center** – zeigt den Status der übermittelten Aktionen an. Nur verfügbar, wenn bereits eine andere Aktion ausgewählt wurde.
 * **Einschränken der APP-Ausführung** – verhindert, dass von Microsoft nicht signierte Anwendungen ausgeführt werden.
 * **Antivirus-Scan ausführen** – aktualisiert die Antivirus-Definitionen von Windows Defender und führt sofort eine Antivirus-Überprüfung aus. Wählen Sie zwischen Schnellscan oder vollständiger Scan aus.
@@ -87,7 +87,7 @@ Die auf der Geräteprofil Seite verfügbaren Aktionen umfassen Folgendes:
 
 Auf den Registerkarten für Geräteprofile können Sie eine Übersicht über Sicherheitsdetails zu dem Gerät und Tabellen mit einer Liste von Warnungen wechseln.
 
-Für Geräte, die in Microsoft Defender ATP registriert sind, werden auch Registerkarten mit einer Zeitachse, eine Liste mit Sicherheitsempfehlungen, eine Softwareinventur, eine Liste der ermittelten Sicherheitsanfälligkeiten und fehlende KBS (Sicherheitsupdates) angezeigt.
+Bei Geräten, die in Microsoft Defender für Endpoint registriert sind, werden auch Registerkarten mit einer Zeitachse, eine Liste mit Sicherheitsempfehlungen, eine Softwareinventur, eine Liste der ermittelten Sicherheitsanfälligkeiten und fehlende KBS (Sicherheitsupdates) angezeigt.
 
 ### <a name="overview-tab"></a>Registerkarte "Übersicht"
 
@@ -97,11 +97,11 @@ Die Standardregisterkarte ist **Overview**. Es bietet einen schnellen Überblick
 
 Hier erhalten Sie einen kurzen Überblick über die aktiven Warnungen des Geräts sowie alle derzeit angemeldeten Benutzer.
 
-Wenn das Gerät in Microsoft Defender ATP registriert ist, sehen Sie auch die Risikostufe des Geräts sowie alle verfügbaren Daten zu Sicherheitsbewertungen. In den Sicherheitsbewertungen wird die Expositions Stufe des Geräts beschrieben, Sicherheitsempfehlungen bereitgestellt und die betroffene Software sowie entdeckte Sicherheitsrisiken aufgelistet.
+Wenn das Gerät in Microsoft Defender für Endpoint registriert ist, sehen Sie auch die Risikostufe des Geräts sowie alle verfügbaren Daten zu Sicherheitsbewertungen. In den Sicherheitsbewertungen wird die Expositions Stufe des Geräts beschrieben, Sicherheitsempfehlungen bereitgestellt und die betroffene Software sowie entdeckte Sicherheitsrisiken aufgelistet.
 
 ### <a name="alerts-tab"></a>Registerkarte "Warnungen"
 
-Die Registerkarte **Benachrichtigungen** enthält eine Liste der Warnungen, die auf dem Gerät ausgelöst wurden, sowohl von Azure ATP als auch von Microsoft Defender ATP.
+Die Registerkarte **Benachrichtigungen** enthält eine Liste der Warnungen, die auf dem Gerät ausgelöst wurden, sowohl von Microsoft Defender für Identity als auch von Microsoft Defender für Endpoint.
 
 ![Registerkarte ' Bild der Benachrichtigungen ' für Geräteprofil](../../media/mtp-device-profile/hybrid-device-tab-alerts.png)
 
@@ -179,7 +179,7 @@ Durch die Auswahl eines Elements wird ein Flyout geöffnet, das auf das Update v
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-* [Übersicht über Microsoft Threat Protection](microsoft-threat-protection.md)
-* [Aktivieren von Microsoft Threat Protection](mtp-enable.md)
+* [Microsoft 365 Defender (Übersicht)](microsoft-threat-protection.md)
+* [Aktivieren von Microsoft 365 Defender](mtp-enable.md)
 * [Untersuchen von Entitäten auf Geräten mithilfe von Live-Antwort](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response)
 * [Automatische Untersuchung und Reaktion (Air) in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)

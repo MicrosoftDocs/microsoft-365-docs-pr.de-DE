@@ -16,25 +16,25 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die Anwendungsreihenfolge von Schutzmaßnahmen in Exchange Online Protection (EoP) und darüber informieren, wie der Prioritätswert in Schutzrichtlinien festlegt, welche Richtlinie angewendet wird.
-ms.openlocfilehash: 6b17a524fb9dfbf5e33604c2ec26a678befc8834
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 9bff44a0c9964c60f5b8b5c0afdfe6d29ee6da93
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600285"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843612"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Reihenfolge und Priorität des e-Mail-Schutzes
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-In Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer werden eingehende e-Mails möglicherweise von mehreren Schutzformen gekennzeichnet. Beispielsweise die integrierten EoP-Anti-Phishing-Richtlinien, die allen Microsoft 365-Kunden zur Verfügung stehen, und die robusteren ATP-Richtlinien für die Anti-Phishing, die auch für Office 365 Advanced Threat Protection (Office 365 ATP)-Kunden verfügbar sind. Nachrichten werden auch durch mehrere Erkennungs Scans für Schadsoftware, Spam, Phishing, usw. geleitet. Angesichts all dieser Aktivitäten kann es einige Verwirrung darüber geben, welche Richtlinie angewendet wird.
+In Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer werden eingehende e-Mails möglicherweise von mehreren Schutzformen gekennzeichnet. Beispielsweise die integrierten Anti-Phishing-Richtlinien in EoP, die allen Microsoft 365-Kunden zur Verfügung stehen, sowie die robusteren AntiPhishing-Richtlinien, die Microsoft Defender für Office 365 Kunden zur Verfügung stehen. Nachrichten werden auch durch mehrere Erkennungs Scans für Schadsoftware, Spam, Phishing, usw. geleitet. Angesichts all dieser Aktivitäten kann es einige Verwirrung darüber geben, welche Richtlinie angewendet wird.
 
 Im Allgemeinen wird eine Richtlinie, die auf eine Nachricht angewendet wird, im **X-Forefront-Antispam-Report-** Header in der Cat-Eigenschaft **(Category)** identifiziert. Weitere Informationen finden Sie unter [Antispam-Nachrichtenkopfzeilen](anti-spam-message-headers.md).
 
 Es gibt zwei Hauptfaktoren, die bestimmen, welche Richtlinie auf eine Nachricht angewendet wird:
 
-- **Die Priorität des e-Mail-Schutztyps**: Diese Reihenfolge kann nicht konfiguriert werden und wird in der folgenden Tabelle beschrieben:
+- **Die Priorität des e-Mail-Schutztyps** : Diese Reihenfolge kann nicht konfiguriert werden und wird in der folgenden Tabelle beschrieben:
 
   ****
 
@@ -44,23 +44,23 @@ Es gibt zwei Hauptfaktoren, die bestimmen, welche Richtlinie auf eine Nachricht 
   |2|Phishing|Kat: PHSH|[Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)|
   |3|Spam mit hoher Vertrauenswürdigkeit|Kat: HSPM|[Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)|
   |4 |Spoofing|Kat: Spoof|[Konfigurieren von Spoof Intelligence in EoP](learn-about-spoof-intelligence.md)|
-  |5<sup>\*</sup>|Benutzeridentitätswechsel (geschützte Domänen)|Uimp|[Konfigurieren der ATP Antiphishing-Richtlinien](configure-atp-anti-phishing-policies.md)|
-  |6<sup>\*</sup>|Domänen Identitätswechsel (geschützte Benutzer)|DIMP|[Konfigurieren der ATP Antiphishing-Richtlinien](configure-atp-anti-phishing-policies.md)|
+  |5<sup>\*</sup>|Benutzeridentitätswechsel (geschützte Domänen)|Uimp|[Konfigurieren von Anti-Phishing-Richtlinien in Microsoft Defender für Office 365](configure-atp-anti-phishing-policies.md)|
+  |6<sup>\*</sup>|Domänen Identitätswechsel (geschützte Benutzer)|DIMP|[Konfigurieren von Anti-Phishing-Richtlinien in Microsoft Defender für Office 365](configure-atp-anti-phishing-policies.md)|
   |7 |Spam|Kat: SPM|[Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)|
   |8 |Masse|Kat: Bulk|[Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)|
   |
 
-  <sup>\*</sup> Diese Funktionen sind nur in Richtlinien für ATP-Anti-Phishing verfügbar.
+  <sup>\*</sup> Diese Features stehen nur in Anti-Phishing-Richtlinien in Microsoft Defender für Office 365 zur Verfügung.
 
-- **Die Priorität der Richtlinie**: für jeden Schutztyp (Antispam, Antischadsoftware, Antiphishing usw.) gibt es eine Standardrichtlinie, die für alle gilt, aber Sie können benutzerdefinierte Richtlinien erstellen, die für bestimmte Benutzer gelten. Jede benutzerdefinierte Richtlinie verfügt über einen Prioritätswert, der die Reihenfolge festlegt, in der die Richtlinien angewendet werden. Die Standardrichtlinie wird immer zuletzt angewendet.
+- **Die Priorität der Richtlinie** : für jeden Schutztyp (Antispam, Antischadsoftware, Antiphishing usw.) gibt es eine Standardrichtlinie, die für alle gilt, aber Sie können benutzerdefinierte Richtlinien erstellen, die für bestimmte Benutzer gelten. Jede benutzerdefinierte Richtlinie verfügt über einen Prioritätswert, der die Reihenfolge festlegt, in der die Richtlinien angewendet werden. Die Standardrichtlinie wird immer zuletzt angewendet.
 
   Wenn ein Benutzer in mehreren Richtlinien desselben Typs definiert ist, wird nur die Richtlinie mit der höchsten Priorität auf diese angewendet. Alle verbleibenden Richtlinien dieses Typs werden nicht für den Benutzer ausgewertet (einschließlich der Standardrichtlinie).
 
-Nehmen Sie sich beispielsweise die folgenden ATP-Richtlinien für die antiphishingfunktion **vor, die für dieselben Benutzer gelten**, und eine Nachricht, die sowohl als Benutzeridentitätswechsel als auch als Spoofing identifiziert wird:
+Nehmen wir beispielsweise die folgenden AntiPhishing-Richtlinien in Microsoft Defender für Office 365, die für **dieselben Benutzer gelten** , und eine Nachricht, die sowohl als Benutzeridentitätswechsel als auch als Spoofing identifiziert wird:
 
   ****
 
-  |ATP-Anti-Phishing-Richtlinie|Priorität|Benutzeridentitätswechsel|Anti-Spoofing|
+  |Name der Richtlinie|Priorität|Benutzeridentitätswechsel|Anti-Spoofing|
   |---|---|---|---|
   |Richtlinie A|1|Ein|Off|
   |Richtlinie B|2|Off|Ein|

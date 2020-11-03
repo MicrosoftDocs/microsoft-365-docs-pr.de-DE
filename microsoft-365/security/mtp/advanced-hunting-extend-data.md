@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 223ef56d7d0d61cd4ae8d90bce974d4086227286
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 82faff2599cd61fa1a4deb3129e1e6780d3f529c
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430381"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842476"
 ---
 # <a name="extend-advanced-hunting-coverage-with-the-right-settings"></a>Erweiterte Jagd Abdeckung mit den richtigen Einstellungen erweitern
 
@@ -32,9 +32,9 @@ ms.locfileid: "48430381"
 
 
 **Gilt für:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
-Die [Erweiterte Suche](advanced-hunting-overview.md) basiert auf Daten, die aus verschiedenen Quellen stammen, einschließlich Ihrer Geräte, Ihrer Office 365 Arbeitsbereiche, Azure AD und Azure ATP. Um die umfassendsten Daten zu erhalten, stellen Sie sicher, dass Sie über die richtigen Einstellungen in den entsprechenden Datenquellen verfügen.
+Die [Erweiterte Suche](advanced-hunting-overview.md) beruht auf Daten, die aus verschiedenen Quellen stammen, einschließlich Ihrer Geräte, Ihrer Office 365 Arbeitsbereiche, Azure AD und Microsoft Defender for Identity. Um die umfassendsten Daten zu erhalten, stellen Sie sicher, dass Sie über die richtigen Einstellungen in den entsprechenden Datenquellen verfügen.
 
 ## <a name="advanced-security-auditing-on-windows-devices"></a>Erweiterte Sicherheitsüberwachung auf Windows-Geräten
 Aktivieren Sie diese erweiterten Überwachungseinstellungen, um sicherzustellen, dass Sie Daten zu Aktivitäten auf Ihren Geräten abrufen, einschließlich der lokalen Kontoverwaltung, der Verwaltung lokaler Sicherheitsgruppen und der Erstellung von Diensten.
@@ -45,12 +45,12 @@ Aktivieren Sie diese erweiterten Überwachungseinstellungen, um sicherzustellen,
 | Sicherheitsgruppenverwaltung | Als verschiedene Werte erfasste Ereignisse, die die `ActionType` Erstellung lokaler Sicherheitsgruppen und andere Aktivitäten der lokalen Gruppenverwaltung anzeigen | [DeviceEvents](advanced-hunting-deviceevents-table.md) | – Bereitstelleneiner erweiterten Sicherheitsüberwachungsrichtlinie: [Audit Security Group Management](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-security-group-management)<br> - [Informationen zu erweiterten Sicherheitsüberwachungsrichtlinien](https://docs.microsoft.com/windows/security/threat-protection/auditing/advanced-security-auditing) |
 | Dienstinstallation | Mit dem Wert erfasste Ereignisse `ActionType` `ServiceInstalled` , die angeben, dass ein Dienst erstellt wurde | [DeviceEvents](advanced-hunting-deviceevents-table.md) | -Bereitstelleneiner erweiterten Sicherheitsüberwachungsrichtlinie: [Audit Security System Extension](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-security-system-extension)<br> - [Informationen zu erweiterten Sicherheitsüberwachungsrichtlinien](https://docs.microsoft.com/windows/security/threat-protection/auditing/advanced-security-auditing) |
 
-## <a name="azure-atp-sensor-on-the-domain-controller"></a>Azure ATP-Sensor auf dem Domänencontroller
-Wenn Sie Active Directory lokal betreiben, müssen Sie den Azure ATP-Sensor auf dem Domänencontroller installieren, um Daten für Azure ATP zu erhalten. Bei der Installation und ordnungsgemäßen Konfiguration werden diese Daten auch in die erweiterte Suche durch Azure ATP übermittelt und bieten ein ganzheitlicheres Bild von Identitätsinformationen und Ereignissen in Ihrem Netzwerk. Mit diesen Daten wird auch die Fähigkeit von Azure ATP erhöht, relevante Warnungen zu generieren, die auch von Advanced Hunting abgedeckt werden. 
+## <a name="microsoft-defender-for-identity-sensor-on-the-domain-controller"></a>Microsoft Defender für Identity-Sensor auf dem Domänencontroller
+Wenn Sie Active Directory lokal betreiben, müssen Sie den Microsoft Defender for Identity-Sensor auf dem Domänencontroller installieren, um Daten für Microsoft Defender for Identity zu erhalten. Bei der Installation und ordnungsgemäßen Konfiguration werden diese Daten auch in die erweiterte Suche über Microsoft Defender for Identity übermittelt und bieten ein ganzheitlicheres Bild von Identitätsinformationen und Ereignissen in Ihrem Netzwerk. Mit diesen Daten wird auch die Fähigkeit von Microsoft Defender for Identity verbessert, relevante Warnungen zu generieren, die auch von Advanced Hunting abgedeckt werden. 
 
 | Daten | Beschreibung | Schema Tabelle | Konfigurieren von |
 | --- | --- | --- | --- |
-| Domänencontroller | Daten aus lokalen Active Directory an Azure ATP gesendet, sodass identitätsbezogene Informationen wie Kontodetails, Anmeldeaktivitäten und Active Directory Abfragen erweitert werden. | Mehrere Tabellen, einschließlich [IdentityInfo](advanced-hunting-identityinfo-table.md), [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)und [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)  | - [Installieren des Azure ATP-Sensors](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step4)<br>- [Aktivieren relevanter Windows-Ereignisse](https://docs.microsoft.com/azure-advanced-threat-protection/configure-event-collection) |
+| Domänencontroller | Daten aus lokalen Active Directory, die an Microsoft Defender für identitätsbezogene Informationen wie Kontodetails, Anmeldeaktivitäten und Active Directory Abfragen gesendet werden. | Mehrere Tabellen, einschließlich [IdentityInfo](advanced-hunting-identityinfo-table.md), [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)und [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)  | - [Installieren von Microsoft Defender für Identity Sensor](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step4)<br>- [Aktivieren relevanter Windows-Ereignisse](https://docs.microsoft.com/azure-advanced-threat-protection/configure-event-collection) |
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)

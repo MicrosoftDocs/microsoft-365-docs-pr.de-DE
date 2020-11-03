@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Erfahren Sie mehr über Microsoft 365 Business Premium, einen Abonnementdienst, der Office-Produktivitäts-Apps und erweiterten Schutz für Ihr Unternehmen gegen Cyberbedrohungen umfasst.
-ms.openlocfilehash: 50b1fec21593bd22577e07e000cedb89dfd90f66
-ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
+ms.openlocfilehash: e67ae036bf3ce7811f19c8745838bb51dde073ea
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45138226"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842178"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Überblick über Microsoft 365 Business Premium
 
@@ -69,19 +69,19 @@ Microsoft 365 Business Premium trägt dazu bei, Ihre Daten in allen diesen Insta
 
 ## <a name="how-your-data-and-devices-are-protected"></a>So werden Ihre Daten und Geräte geschützt
 
-So hilft Microsoft 365 Business Premium bei dem **Schutz vor Bedrohungen**:
+So hilft Microsoft 365 Business Premium bei dem **Schutz vor Bedrohungen** :
 
-- Überprüfen von Links in E-Mails und Dokumenten in Echtzeit zum Blockieren unsicherer Websites (ATP-sichere Links).
+- Durchsuchen von Links in e-Mails und Dokumenten in Echtzeit zum Blockieren unsicherer Websites (sichere Links).
 
-- Durchführen einer erweiterten Analyse von E-Mail-Anlagen in einer Sandbox-Umgebung zum Erkennen von neu entwickelten Schadsoftware (ATP-sichere Anlagen). 
+- Durchführen einer erweiterten Analyse von e-Mail-Anlagen in einer Sandkastenumgebung zum erkennen neu entwickelter Schadsoftware (sichere Anlagen). 
 
-- Aktivieren von Anti-Phishing-Richtlinien, die maschinelle Lernmodelle und Identitätswechselerkennung verwenden, um den Schutz vor erweiterten Angriffen zu bieten (ATP-Anti-Phishing-Intelligence). 
+- Aktivieren von Anti-Phishing-Richtlinien, die Computer Lernmodelle und Identitätswechsel Erkennung verwenden, um Schutz vor fortgeschrittenen Angriffen zu bieten (Anti-Phishing in Defender for Office 365 Intelligence). 
 
 - Einrichten von erweiterten Richtlinien, die den Zugriff von nicht vertrauenswürdigen Speicherorten deaktivieren oder die mehrstufige Authentifizierung von vertrauenswürdigen Orten wie Ihrem Office-Netzwerk umgehen (Azure MFA mit vertrauenswürdigen IPs und bedingtem Zugriff). 
 
 - Erzwingen des Schadsoftwareschutzes auf allen Windows 10-Geräten Ihrer Organisation und schützen von Dateien in den wichtigsten Systemordnern vor Änderungen, die von Ransomware vorgenommen wurden (Windows Defender)
 
-So werden **Ihre Geschäftsdaten geschützt**:
+So werden **Ihre Geschäftsdaten geschützt** :
 
 - Mithilfe der automatischen Erkennung können Sie verhindern, dass vertrauliche Informationen, z. B. Sozialversicherungsnummern oder Kreditkarten, außerhalb Ihres Unternehmens verloren gehen (Verhinderung von Datenverlust). 
 
@@ -91,7 +91,7 @@ So werden **Ihre Geschäftsdaten geschützt**:
 
 - Aktivierung einer unbegrenzten Cloud-Sicherung, damit Sie die gesamten E-Mail-Adressen Ihres Unternehmens beibehalten, einschließlich der Postfächer ehemaliger Mitarbeiter (Exchange Online-Archivierung).
 
-So werden **Ihre Geräte gesichert**:
+So werden **Ihre Geräte gesichert** :
 
 - Steuern, welche Geräte und Benutzer auf Ihre Microsoft-Daten zugreifen können, mit Optionen, mit denen sich Benutzer von privaten Computern, nicht genehmigten Apps oder außerhalb der Arbeitszeit (bedingter Zugriff) nicht anmelden können.
 

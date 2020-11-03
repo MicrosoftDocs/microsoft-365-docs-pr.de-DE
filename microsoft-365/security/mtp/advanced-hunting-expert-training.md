@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 4e63badee2ca031bdd3ea7682396353d1658981b
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: c2772d0fc77e563bc80b0f29815349d1bfb3e2ea
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430409"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842512"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>Holen Sie sich Expert Training on Advanced Hunting
 
@@ -32,14 +32,14 @@ ms.locfileid: "48430409"
 
 
 **Gilt für:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
-Steigern Sie Ihr Wissen über die erweiterte Suche schnell mit _der Verfolgung des Gegners_, einer Webcast-Reihe für neue Sicherheitsanalysten und erfahrene Bedrohungs Jäger. Die Reihe führt Sie durch die Grundlagen bis hin zum Erstellen Ihrer eigenen anspruchsvollen Abfragen. Beginnen Sie mit dem ersten Video über Fundamentaldaten, oder wechseln Sie zu fortgeschrittenen Videos, die Ihrem Erfahrungsniveau entsprechen.
+Steigern Sie Ihr Wissen über die erweiterte Suche schnell mit _der Verfolgung des Gegners_ , einer Webcast-Reihe für neue Sicherheitsanalysten und erfahrene Bedrohungs Jäger. Die Reihe führt Sie durch die Grundlagen bis hin zum Erstellen Ihrer eigenen anspruchsvollen Abfragen. Beginnen Sie mit dem ersten Video über Fundamentaldaten, oder wechseln Sie zu fortgeschrittenen Videos, die Ihrem Erfahrungsniveau entsprechen.
 
 
 | Titel | Beschreibung | Uhr | Abfragen | 
 |--|--|--|--|
-| Episode 1: KQL-Grundlagen | In dieser Episode werden die Grundlagen der erweiterten Suche in Microsoft Threat Protection behandelt. Erfahren Sie mehr über verfügbare erweiterte Jagd Daten und grundlegende KQL-Syntax und Operatoren. | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [CSL-Datei](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
+| Episode 1: KQL-Grundlagen | In dieser Episode werden die Grundlagen der erweiterten Suche in Microsoft 365 Defender behandelt. Erfahren Sie mehr über verfügbare erweiterte Jagd Daten und grundlegende KQL-Syntax und Operatoren. | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [CSL-Datei](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
 | Episode 2: Joins | Weiterführende Informationen zu Daten in Advanced Hunting und zum gemeinsamen Verknüpfen von Tabellen. Erfahren Sie mehr über `inner` ,, `outer` `unique` und `semi` Joins, und verstehen Sie die Nuancen der standardmäßigen Kusto `innerunique` Join. | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33) | [CSL-Datei](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |
 | Episode 3: zusammenfassen, pivotieren und Visualisieren von Daten | Nachdem Sie nun gelernt haben, Daten zu filtern, zu manipulieren und daran teilzunehmen, ist es an der Zeit, zusammenzufassen, zu quantifizieren, zu pivotieren und zu visualisieren. In dieser Episode `summarize` werden der Operator und verschiedene Berechnungen erläutert, während zusätzliche Tabellen im Schema eingeführt werden. Sie erfahren auch, wie Sie Datasets in Diagramme umwandeln können, die Sie beim Extrahieren von Einblicken unterstützen. | [YouTube](https://youtu.be/UKnk9U1NH6Y?t=296) (48:52) | [CSL-Datei](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl) |
 | Episode 4: Let es Hunt! Anwenden von KQL auf die Vorfall Verfolgung | In dieser Episode erfahren Sie, wie Sie einige Angreifer Aktivitäten verfolgen. Wir verwenden unser verbessertes Verständnis von Kusto und erweiterter Suche, um einen Angriff zu verfolgen. Hier finden Sie aktuelle Tricks, die im Feld verwendet werden, einschließlich des ABC von Cyber und deren Anwendung auf die Vorfall Antwort. | [YouTube](https://youtu.be/2EUxOc_LNd8?t=291) (59:36) | [CSL-Datei](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)
@@ -51,7 +51,7 @@ Der folgende Auszug aus einer CSL-Datei zeigt eine umfassende Reihe von Anleitun
 
 ```kusto
 // DeviceLogonEvents
-// A table containing a row for each logon a device enrolled in Defender ATP
+// A table containing a row for each logon a device enrolled in Microsoft Defender for Endpoint
 // Contains
 // - Account information associated with the logon
 // - The device which the account logged onto
@@ -60,14 +60,14 @@ Der folgende Auszug aus einer CSL-Datei zeigt eine umfassende Reihe von Anleitun
 // - Timestamp
 ```
 
-Die gleiche CSL-Datei enthält Abfragen vor und nach den Kommentaren, wie unten dargestellt. Wenn Sie eine bestimmte Abfrage mit [mehreren Abfragen im Editor](advanced-hunting-query-language.md#work-with-multiple-queries-in-the-editor)ausführen möchten, bewegen Sie den Cursor zu dieser Abfrage, und wählen Sie **Abfrage ausführen**aus.   
+Die gleiche CSL-Datei enthält Abfragen vor und nach den Kommentaren, wie unten dargestellt. Wenn Sie eine bestimmte Abfrage mit [mehreren Abfragen im Editor](advanced-hunting-query-language.md#work-with-multiple-queries-in-the-editor)ausführen möchten, bewegen Sie den Cursor zu dieser Abfrage, und wählen Sie **Abfrage ausführen** aus.   
 
 ```kusto
 DeviceLogonEvents
 | count
 
 // DeviceLogonEvents
-// A table containing a row for each logon a device enrolled in Defender ATP
+// A table containing a row for each logon a device enrolled in Microsoft Defender for Endpoint
 // Contains
 // - Account information associated with the logon
 // - The device which the account logged onto

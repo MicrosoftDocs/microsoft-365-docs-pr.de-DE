@@ -1,5 +1,5 @@
 ---
-title: Office 365 Sicherheit, Office 365 ATP, EoP, ATP, MSDO
+title: Office 365 Sicherheit, Microsoft Defender für Office 365, EoP, MSDO
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -14,37 +14,37 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-description: Sicherheit in Office 365, von EoP bis ATP-Pläne 1 und 2, Standard mäßige und strenge Sicherheitskonfigurationen und vieles mehr. Verstehen Sie, was Sie haben und wie Sie Ihre Eigenschaften sichern.
-ms.openlocfilehash: 256a24a7816a40e1bd60c687a875f84e605f5208
-ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
+description: Sicherheit in Office 365, vom EoP zum Verteidiger für Office 365 Pläne 1 und 2, Standard mäßige und strenge Sicherheitskonfigurationen und vieles mehr. Verstehen Sie, was Sie haben und wie Sie Ihre Eigenschaften sichern.
+ms.openlocfilehash: 90900251c4c965d72d24b4a6bf2dceb1819f90c4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456471"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842392"
 ---
 # <a name="office-365-security-overview"></a>Office 365 Sicherheit (Übersicht)
 
 In diesem Artikel werden die neuen Sicherheitseigenschaften in der Cloud vorgestellt. Unabhängig davon, ob Sie Teil eines Security Operations Centers sind, Sie sind ein Sicherheits Administrator, der neu in diesem Bereich ist, oder wenn Sie eine Aktualisierung wünschen, Let es Get Started.
 
 > [!CAUTION]
-> Wenn Sie **Outlook.com**, **Microsoft 365-Familie**oder **Microsoft 365 Personal**verwenden und *sichere Links* oder Informationen zu *sicheren Anlagen* benötigen, ***Klicken Sie auf diesen Link***: [Advanced Outlook.com Security for Microsoft 365 subscribers](https://support.microsoft.com/office/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Wenn Sie **Outlook.com** , **Microsoft 365-Familie** oder **Microsoft 365 Personal** verwenden und *sichere Links* oder Informationen zu *sicheren Anlagen* benötigen, * **Klicken Sie auf diesen Link** _: [Erweiterte Outlook.com-Sicherheit für Microsoft 365-Abonnenten](https://support.microsoft.com/office/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 ## <a name="office-365-security-spelled-out"></a>Office 365 Sicherheit geschrieben
 
 Jedes Office 365 Abonnement verfügt über Sicherheitsfunktionen. Die Ziele und Aktionen, die Sie ausführen können, hängen vom Fokus dieser unterschiedlichen Abonnements ab. In Office 365 Sicherheit gibt es drei wichtige Sicherheitsdienste (oder Produkte), die mit Ihrem Abonnementtyp verbunden sind:
 
 1. Exchange Online Schutz (EoP)
-1. Erweiterter Bedrohungsschutz, Plan 1 (ATP P1)
-1. Advanced Threat Protection, Plan 2 (ATP P2)
+1. Microsoft Defender für Office 365 Plan 1 (Defender for Office P1)
+1. Microsoft Defender für Office 365 Plan 2 (Defender for Office P2)
 
 > [!NOTE]
-> Wenn Sie Ihr Abonnement erworben haben und *jetzt*Sicherheitsfeatures bereitstellen müssen, fahren Sie mit den Schritten im Artikel [Protect Against Threats](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats) fort. Wenn Sie noch nicht mit Ihrem Abonnement vertraut sind und Ihre Lizenz vor dem Start wissen möchten, suchen Sie in der [Microsoft 365 Admin Center](https://admin.microsoft.com/AdminPortal/#/homepage)die Abrechnung > Ihre Produkte.
+> Wenn Sie Ihr Abonnement erworben haben und Sicherheitsfeatures _Right jetzt * bereitstellen müssen, wechseln Sie zu den Schritten im Artikel [Protect Against Threats](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats) . Wenn Sie noch nicht mit Ihrem Abonnement vertraut sind und Ihre Lizenz vor dem Start wissen möchten, suchen Sie in der [Microsoft 365 Admin Center](https://admin.microsoft.com/AdminPortal/#/homepage)die Abrechnung > Ihre Produkte.
 
 Office 365 Sicherheit basiert auf den von EoP angebotenen kernschutz Funktionen. EoP ist in jedem Abonnement vorhanden, in dem Exchange Online Postfächer gefunden werden können (denken Sie daran, dass alle hier besprochenen Sicherheitsprodukte auf der Cloud basieren).
 
 Möglicherweise sind Sie daran gewöhnt, dass diese drei Komponenten auf diese Weise behandelt werden:
 
-|EOP  | ATP P1 | ATP P2  |
+|EOP  | Microsoft Defender für Office 365 P1 | Microsoft Defender für Office 365 P2  |
 |---------|---------|---------|
 |Verhindert allgemeine, volumenbasierte, bekannte Angriffe.    |  Schützt e-Mails und die Zusammenarbeit von Zero-Day-Malware, Phishing und geschäftlichen e-Mail-Kompromissen.       | Hinzufügen von Untersuchungen, Jagden und Antworten nach einem Verstoß sowie Automatisierung und Simulation (für Schulungen).         |
 
@@ -52,36 +52,36 @@ Aber im Hinblick auf die Architektur, beginnen wir mit dem Gedanken an jedes St�
 
 <!--:::image type="content" source="../../media/tp-EOPATPStack.PNG" alt-text="Placeholder graphic":::-->
 
-:::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="Placeholder graphic":::
+:::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="EoP und Microsoft Defender für Office 365 und ihre Beziehungen miteinander mit Schwerpunkt auf Dienstleistung, einschließlich einer Notiz für die e-Mail-Authentifizierung.":::
 
-Obwohl jeder dieser Dienste ein Ziel aus unter Schutz, Erkennung, Untersuchung und Reaktion hervorhebt, können ***alle Dienste alle*** Ziele des ***Schutzes*** , Erkennens, Ermittelns und Reagierens ausführen.
+Obwohl jeder dieser Dienste ein Ziel unter schützen, erkennen, untersuchen und Antworten hervorhebt, können die Dienste **alle Ziele** _*_des Schutzes_*_ , Erkennens, Ermittelns und Reagierens erfüllen.
 
-Der Kern Office 365 Sicherheit besteht in EoP Schutz. ATP P1 enthält EoP. ATP P2 enthält P1 und EOP. Die Struktur ist kumulativ. Deshalb sollten Sie bei der Konfiguration dieses Produkts mit EoP beginnen und mit ATP arbeiten.
+Der Kern Office 365 Sicherheit besteht in EoP Schutz. Microsoft Defender für Office 365 P1 enthält EoP. Defender für Office 365 P2 enthält P1 und EOP. Die Struktur ist kumulativ. Deshalb sollten Sie bei der Konfiguration dieses Produkts mit EoP beginnen und für Office 365 auf Defender arbeiten.
 
-Obwohl die e-Mail-Authentifizierungskonfiguration im öffentlichen DNS erfolgt, ist es wichtig, dieses Feature zu konfigurieren, um die Verteidigung vor Spoofing zu unterstützen. *Wenn Sie über EoP verfügen,* ***sollten Sie die [e-Mail-Authentifizierung konfigurieren](https://docs.microsoft.com/microsoft-365/security/office-365-security/email-validation-and-authentication)***.
+Obwohl die e-Mail-Authentifizierungskonfiguration im öffentlichen DNS erfolgt, ist es wichtig, dieses Feature zu konfigurieren, um die Verteidigung vor Spoofing zu unterstützen. _Wenn Sie über EoP verfügen, **sollten Sie die [e-Mail-Authentifizierung konfigurieren](https://docs.microsoft.com/microsoft-365/security/office-365-security/email-validation-and-authentication)**_.
 
-Wenn Sie über eine Office 365 E3 oder darunter verfügen, verfügen Sie über EoP, jedoch mit der Option zum erwerben eigenständiger ATP P1 durch Upgrades. Wenn Sie Office 365 E5 haben, haben Sie bereits ATP P2.
+Wenn Sie über eine Office 365 E3 oder darunter verfügen, verfügen Sie über EoP, jedoch mit der Option zum erwerben von eigenständigem Defender für Office 365 P1 durch ein Upgrade. Wenn Sie Office 365 E5 haben, haben Sie bereits Defender für Office 365 P2.
 
 > [!TIP]
-> Wenn Ihr Abonnement weder Office 365 E3 noch E5 lautet, können Sie weiterhin überprüfen, ob Sie die Möglichkeit haben, ein Upgrade auf ATP P1 vorzusehen. Wenn Sie Interesse haben, werden auf [dieser Webseite](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection#coreui-contentrichblock-x07wids) Abonnements aufgeführt, die für das ATP P1-Upgrade berechtigt sind (überprüfen Sie das Ende der Seite für den Fine-Print).
+> Wenn Ihr Abonnement weder Office 365 E3 noch E5 ist, können Sie weiterhin überprüfen, ob Sie die Option haben, ein Upgrade auf Microsoft Defender für Office 365 P1 vorzusehen. Wenn Sie Interesse haben, werden auf [dieser Webseite](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection#coreui-contentrichblock-x07wids) Abonnements aufgeführt, die für Microsoft Defender für Office 365 P1-Upgrade berechtigt sind (überprüfen Sie das Ende der Seite für den fein Druck).
 
-## <a name="the-office-365-security-ladder-from-eop-to-atp"></a>Die Office 365 Security Ladder von EoP zu ATP
+## <a name="the-office-365-security-ladder-from-eop-to-microsoft-defender-for-office-365"></a>Die Office 365 Security Ladder von EoP zu Microsoft Defender für Office 365
 
 <br/>
 
-![EoP und ATP und Ihre Sicherheits Schwerpunkte, die von Protect und Detect zur Untersuchung und Reaktion gehen.Die e-Mail-Authentifizierungskonfiguration (mindestens DKIM und DMARC) sollte für EoP und up eingerichtet werden.](../../media/tp_EOPATPP1P2Take6.gif#lightbox)
+![EoP und Microsoft Defender für Office 365 und Ihre Sicherheits Schwerpunkte, die von Protect und Detect zur Untersuchung und Reaktion abgehen. Die e-Mail-Authentifizierungskonfiguration (mindestens DKIM und DMARC) sollte für EoP und up eingerichtet werden.](../../media/tp_EOPATPP1P2Take6.gif#lightbox)
 
 
 > [!IMPORTANT]
-> Erfahren Sie mehr über die folgenden Seiten: [Exchange Online Schutz](https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview)und [Erweiterter Bedrohungsschutz](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp).
+> Lesen Sie die Details auf diesen Seiten: [Exchange Online Schutz](https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview)und [Verteidiger für Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp).
 
-Was das Hinzufügen von ATP-Plänen zu einem Vorteil des reinen EoP-Bedrohungs Managements leistet, kann auf den ersten Blick schwer zu erkennen sein. Um zu helfen, zu klären, ob ein Upgrade-Pfad für Ihre Organisation richtig ist, sehen wir uns die Funktionen der einzelnen Produkte an, wenn es um Folgendes geht:
+Was das Hinzufügen von Microsoft Defender für Office 365 Pläne einen Vorteil für pure EoP Threat Management bietet, kann auf den ersten Blick schwer zu erkennen sein. Um zu helfen, zu klären, ob ein Upgrade-Pfad für Ihre Organisation richtig ist, sehen wir uns die Funktionen der einzelnen Produkte an, wenn es um Folgendes geht:
 
  - verhindern und erkennen von Bedrohungen
  - untersuchen
  - reagiert
 
-beginnend mit **Exchange Online Schutz**:
+beginnend mit _ * Exchange Online Protection * *:
 <p>
 
 |Verhindern/erkennen  |Untersuchen  |Reagieren  |
@@ -90,56 +90,56 @@ beginnend mit **Exchange Online Schutz**:
 
 Wenn Sie in EoP graben möchten, wechseln Sie **[zu diesem Artikel](https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-worldwide#:~:text=Exchange%20Online%20Protection%20%28EOP%29%20is%20the%20cloud-based%20filtering,is%20also%20available%20in%20the%20following%20on-premises%20scenarios%3A)**.
 
-Da diese Produkte kumulativ sind, wenn Sie ATP P1 auswerten und beschließen, es zu abonnieren, fügen Sie diese Fähigkeiten hinzu.
+Da diese Produkte kumulativ sind, wenn Sie Microsoft Defender für Office 365 P1 bewerten und beschließen, es zu abonnieren, fügen Sie diese Fähigkeiten hinzu.
 
-Gewinne mit **erweitertem Bedrohungsschutz, Plan 1** (bis Datum):
+Gewinne mit **Defender für Office 365, Plan 1** (bis Datum):
 <p>
 
 |Verhindern/erkennen  |Untersuchen  |Reagieren  |
 |---------|---------|---------|
-| Technologien umfassen alles in EoP Plus:<u1><li>Sichere Anlagen</li><li>Sichere Links<li>ATP-Schutz für Arbeitslasten (z. b. SharePoint Online, Teams, OneDrive für Unternehmen)</li><li>Zeit-zu-Klick-Schutz in e-Mails, Office-Clients und Teams</li><li>ATP-Anti-Phishing</li><li>Schutz von Benutzer-und Domänen Identitätswechsel</li><li>Warnungen und die Siem-Integrations-API für Warnungen</li>|<li>Siem-Integrations-API für Erkennungen</li><li>**Echt Zeit Erkennungstool**</li><li>URL-Ablaufverfolgung</li>|<li>Gleich</li></u1>
+| Technologien umfassen alles in EoP Plus:<u1><li>Sichere Anlagen</li><li>Sichere Links<li>Microsoft Defender für Office 365 Schutz für Arbeitslasten (z. b. SharePoint Online, Teams, OneDrive für Unternehmen)</li><li>Zeit-zu-Klick-Schutz in e-Mails, Office-Clients und Teams</li><li>Anti-Phishing in Defender für Office 365</li><li>Schutz von Benutzer-und Domänen Identitätswechsel</li><li>Warnungen und die Siem-Integrations-API für Warnungen</li>|<li>Siem-Integrations-API für Erkennungen</li><li>**Echt Zeit Erkennungstool**</li><li>URL-Ablaufverfolgung</li>|<li>Gleich</li></u1>
 
-Daher wird ATP P1 auf der Seite " ***Prävention*** " des Hauses erweitert und zusätzliche ***Erkennungs***Formen hinzugefügt.
+Microsoft Defender für Office 365 P1 erweitert also die Seite "* *_Prevention_* _" des Hauses und fügt zusätzliche _*_Erkennungs_*_ Formen hinzu.
 
-ATP P1 fügt auch **Echt Zeit Erkennungen** für Untersuchungen hinzu. Der Name dieses Bedrohungs Jagd Tools ist fett formatiert, da es klar ist, dass Sie ATP P1 *kennen* . Sie wird nicht in ATP P2 angezeigt.
+Microsoft Defender für Office 365 P1 fügt außerdem _ *Echt Zeit Erkennungen* * für Untersuchungen hinzu. Dieser Name des Threat Hunting-Tools ist fett formatiert, da es eindeutig ist, *dass Sie Defender* für Office 365 P1 haben. Es wird nicht in Defender für Office 365 P2 angezeigt.
 
-Gewinne mit **Advanced Threat Protection, Plan 2** (bis Datum):
+Gewinne mit **Defender für Office 365, Plan 2** (bis Datum):
 <p>
 
 |Verhindern/erkennen  |Untersuchen  |Reagieren  |
 |---------|---------|---------|
-| Zu den Technologien zählen alles in EoP und ATP P1 Plus:<u1><li>Gleich</li>|<li>**Sicherheitsrisiken-Explorer**</li><li>Nachverfolgungslisten für Bedrohungen</li><li>Kampagnen Ansichten</li>|<li>Automatische Untersuchung und Reaktion (Air)</li><li>Air from Threat Explorer</li><li>Air für kompromittierte Benutzer</li><li>Siem-Integrations-API für automatisierte Untersuchungen</li>
+| Technologien umfassen alles in EoP und Microsoft Defender für Office 365 P1 Plus:<u1><li>Gleich</li>|<li>**Sicherheitsrisiken-Explorer**</li><li>Nachverfolgungslisten für Bedrohungen</li><li>Kampagnen Ansichten</li>|<li>Automatische Untersuchung und Reaktion (Air)</li><li>Air from Threat Explorer</li><li>Air für kompromittierte Benutzer</li><li>Siem-Integrations-API für automatisierte Untersuchungen</li>
 
-Daher erweitert ATP P2 die ***Untersuchung und Antwort*** Seite des Hauses und fügt eine neue Jagd Stärke hinzu. Automatisierung.
+Microsoft Defender für Office 365 P2 erweitert also die * *_Untersuchung und Antwort_* _ Seite des Hauses und fügt eine neue Jagd Stärke hinzu. Automatisierung.
 
-In ATP P2 wird das primäre Jagd Werkzeug als **Bedrohungs-Explorer** und nicht als Echtzeiterkennung bezeichnet. Wenn Sie Threat Explorer sehen, wenn Sie zum Sicherheitscenter navigieren, sind Sie in ATP P2.
+In Microsoft Defender für Office 365 P2 wird das primäre Jagd Tool _ *Threat Explorer* * anstatt Echt Zeit Erkennungen genannt. Wenn Sie Threat Explorer beim Navigieren zum Sicherheitscenter sehen, befinden Sie sich in Microsoft Defender für Office 365 P2.
 
-Um die Details von ATP P1 und P2 zu erhalten, **[wechseln Sie zu diesem Artikel](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)**.
+Wenn Sie die Details von Microsoft Defender für Office 365 P1 und P2 erhalten möchten, **[wechseln Sie zu diesem Artikel](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)**.
 
 > [!TIP]
-> EoP und ATP sind auch unterschiedlich, wenn es um Endkunden geht. In EoP und ATP P1 liegt der Schwerpunkt auf der *Sensibilisierung*, und daher enthalten diese beiden Dienste das *Outlook-Add-in "Berichtsnachricht* ", damit Benutzer e-Mails, die Sie verdächtig finden, zur weiteren Analyse melden können. <p> In ATP P2 (das alles in EoP und P1 enthält) wird der Fokus auf die *Weiterbildung* von Endbenutzern verschoben, sodass das Security Operations Center Zugriff auf ein leistungsfähiges *Threat Simulator* -Tool und die von ihm bereitgestellten Metriken für Endbenutzer hat.
+> EoP und Microsoft Defender für Office 365 sind auch unterschiedlich, wenn es um Endbenutzer geht. In EoP und Defender für Office 365 P1 liegt der Schwerpunkt auf dem *Bewusstsein* , und daher umfassen diese beiden Dienste das *Outlook-Add-in "Berichtsnachricht* ", damit Benutzer e-Mails, die Sie verdächtig finden, zur weiteren Analyse melden können. <p> In Defender für Office 365 P2 (das alles in EoP und P1 enthält) wird der Fokus auf die *Weiterbildung* für Endbenutzer verschoben, und so hat das Security Operations Center Zugriff auf ein leistungsfähiges *Threat Simulator* -Tool und die von ihm bereitgestellten Endbenutzer Metriken.
 
-## <a name="office-365-atp-plan-1-vs-plan-2-cheat-sheet"></a>Office 365 ATP Plan 1 vs. Plan 2 Cheat Sheet
+## <a name="microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet"></a>Microsoft Defender für Office 365 Plan 1 vs. Plan 2 Cheat Sheet
 
-Diese Kurzübersicht hilft Ihnen zu verstehen, welche Funktionen mit den einzelnen ATP-Abonnements ausgestattet sind. In Kombination mit Ihrem Wissen über EoP-Funktionen kann es Entscheidungsträgern in Unternehmen helfen, zu bestimmen, welche ATP am besten für Ihre Anforderungen geeignet ist.
+Diese Schnellreferenz hilft Ihnen zu verstehen, welche Funktionen mit jedem Microsoft Defender für Office 365 Abonnement geliefert werden. In Kombination mit ihren Kenntnissen über EoP-Funktionen kann es Entscheidungsträgern in Unternehmen helfen, festzulegen, was Microsoft Defender für Office 365 am besten für Ihre Anforderungen ist.
 
-|Office 365 ATP Plan 1|Office 365 ATP Plan 2|
+|Verteidiger für Office 365 Plan 1|Verteidiger für Office 365 Plan 2|
 |---|---|
-|<br/>Konfigurations-, Schutz- und Erkennungsfunktionen: <ul><li>[Sichere Anlagen](atp-safe-attachments.md)</li><li>[Sichere Links](atp-safe-links.md)</li><li>[ATP für SharePoint, OneDrive und Microsoft Teams](atp-for-spo-odb-and-teams.md)</li><li>[ATP Antiphishingschutz](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)</li><li>[Echtzeiterkennungen](threat-explorer.md)</li></ul>|Office 365 ATP Plan 1 – Funktionen<br/>--- plus ---<br/>Automatisierungs-, Untersuchungs-, Fehlerbehebungs- und Schulungsfunktionen:</li><li>[Bedrohungs-Tracker](threat-trackers.md)</li><li>[Sicherheitsrisiken-Explorer](threat-explorer.md)</li><li>[Automatische Untersuchung und Reaktion](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)</li><li>[Angriffssimulator](attack-simulator.md)</li></ul>|
+|<br/>Konfigurations-, Schutz- und Erkennungsfunktionen: <ul><li>[Sichere Anlagen](atp-safe-attachments.md)</li><li>[Sichere Links](atp-safe-links.md)</li><li>[ATP für SharePoint, OneDrive und Microsoft Teams](atp-for-spo-odb-and-teams.md)</li><li>[Anti-Phishing-Schutz in Defender für Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Echtzeiterkennungen](threat-explorer.md)</li></ul>|Verteidiger für Office 365-Plan 1-Funktionen<br/>--- plus ---<br/>Automatisierungs-, Untersuchungs-, Fehlerbehebungs- und Schulungsfunktionen:</li><li>[Bedrohungs-Tracker](threat-trackers.md)</li><li>[Sicherheitsrisiken-Explorer](threat-explorer.md)</li><li>[Automatische Untersuchung und Reaktion](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)</li><li>[Angriffssimulator](attack-simulator.md)</li></ul>|
 |
 
-- Office 365 ATP Plan 2 ist in Office 365 E5, Office 365 A5 und Microsoft 365 E5 enthalten.
+- Microsoft Defender für Office 365 Plan 2 ist in Office 365 E5, Office 365 a5 und Microsoft 365 E5 enthalten.
 
-- Office 365 ATP Plan 1 ist in Microsoft 365 Business Premium enthalten.
+- Microsoft Defender für Office 365 Plan 1 ist in Microsoft 365 Business Premium enthalten.
 
-- Office 365 ATP Plan 1 und Office 365 ATP Plan 2 sind jeweils als Add-On für bestimmte Abonnements verfügbar. Weitere Informationen finden Sie hier: eine weitere Link [Feature-Verfügbarkeit in ATP-Plänen](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+- Microsoft Defender für Office 365 Plan 1 und Defender für Office 365 Plan 2 sind jeweils als Add-on für bestimmte Abonnements verfügbar. Weitere Informationen finden Sie hier: eine weitere Link [Feature-Verfügbarkeit in Microsoft Defender für Office 365 Pläne](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
-- Das Feature [Sichere Dokumente](safe-docs.md) ist nur für Benutzer mit den Lizenzen für Microsoft 365 E5 oder Microsoft 365 E5 Security verfügbar (nicht in Office 365 ATP-Plänen enthalten).
+- Das Feature " [sichere Dokumente](safe-docs.md) " steht nur Benutzern mit den Sicherheits Lizenzen von Microsoft 365 E5 oder Microsoft 365 E5 zur Verfügung (nicht in Microsoft Defender für Office 365 Pläne enthalten).
 
-- Wenn Ihr aktuelles Abonnement Office 365 ATP nicht enthält und Sie es wünschen, [wenden Sie sich an den Vertrieb, um eine Testversion zu starten](https://go.microsoft.com/fwlink/p/?LinkId=518644), und erfahren Sie, wie ATP in Ihrer Organisation funktionieren kann.
+- Wenn Ihr aktuelles Abonnement nicht Microsoft Defender für Office 365 enthält und Sie es möchten, wenden Sie sich [an den Vertrieb, um eine Testversion zu starten](https://go.microsoft.com/fwlink/p/?LinkId=518644), und erfahren Sie, wie Microsoft Defender für Office 365 in Ihrer Organisation arbeiten kann.
 
 > [!TIP]
-> ***Insider Tipp***. Sie können das docs.Microsoft.com-Inhaltsverzeichnis verwenden, um mehr über EoP und ATP zu erfahren. Navigieren Sie zurück zu dieser Seite, [Office 365 Übersicht über die Sicherheit](https://docs.microsoft.com/microsoft-365/security/office-365-security/?view=o365-worldwide), und Sie werden feststellen, dass die Inhaltsverzeichnis-Organisation in der Seitenleiste angezeigt wird. Er beginnt mit der Bereitstellung (einschließlich Migration) und wird dann in die Prävention, Erkennung, Untersuchung und Reaktion fortgesetzt. <p> Diese Struktur ist unterteilt, sodass Sicherheits **Verwaltungs** Themen mit Themen zu **sicherheitsvorgängen** befolgt werden. Wenn Sie ein neues Mitglied einer der beiden Auftrags Rollen sind, verwenden Sie den Link in diesem Tipp und Ihr Wissen über das Inhaltsverzeichnis, um den Raum zu erlernen. Denken Sie daran, *Feedback Links* zu verwenden und die *Artikel bewerten* , wie Sie gehen. Feedback hilft uns, das zu verbessern, was wir Ihnen bieten.
+> ***Insider Tipp** _. Sie können das docs.Microsoft.com-Inhaltsverzeichnis verwenden, um mehr über EoP und Microsoft Defender für Office 365 zu erfahren. Navigieren Sie zurück zu dieser Seite, [Office 365 Übersicht über die Sicherheit](https://docs.microsoft.com/microsoft-365/security/office-365-security/?view=o365-worldwide), und Sie werden feststellen, dass die Inhaltsverzeichnis-Organisation in der Seitenleiste angezeigt wird. Er beginnt mit der Bereitstellung (einschließlich Migration) und wird dann in die Prävention, Erkennung, Untersuchung und Reaktion fortgesetzt. <p> Diese Struktur ist so unterteilt, dass _ *Security Administration* * Themen von **Sicherheits-Operations** Themen gefolgt werden. Wenn Sie ein neues Mitglied einer der beiden Auftrags Rollen sind, verwenden Sie den Link in diesem Tipp und Ihr Wissen über das Inhaltsverzeichnis, um den Raum zu erlernen. Denken Sie daran, *Feedback Links* zu verwenden und die *Artikel bewerten* , wie Sie gehen. Feedback hilft uns, das zu verbessern, was wir Ihnen bieten.
 
 ## <a name="where-to-go-next"></a>Weiter zu wechseln
 
@@ -149,8 +149,8 @@ Wenn Sie ein Sicherheitsadministrator sind, müssen Sie möglicherweise DKIM ode
 
 [Lesen Sie die speziellen empfohlenen "goldenen" configs](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp) , und verwenden Sie die [empfohlenen Voreinstellungen, um Sicherheitsrichtlinien schnell zu konfigurieren](https://docs.microsoft.com/microsoft-365/security/office-365-security/preset-security-policies) .
 
-Informieren Sie sich über Neuigkeiten [in Office 365 ATP (einschließlich EoP-Entwicklungen)](https://docs.microsoft.com/microsoft-365/security/office-365-security/whats-new-in-office-365-atp)
+Informieren Sie sich über Neuigkeiten [in Microsoft Defender für Office 365 (einschließlich EoP-Entwicklungen)](https://docs.microsoft.com/microsoft-365/security/office-365-security/whats-new-in-office-365-atp) .
 
 [Verwenden von Threat Explorer oder Echtzeiterkennung](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)
 
-Verwenden [des Angriffs Simulators in Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulator)
+Verwenden des [Angriffs Simulators in Microsoft Defender für Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulator)

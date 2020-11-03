@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Rufen Sie Microsoft 365 für Kampagnen ab, damit Sie Ihre Kampagne vor Cyber Bedrohungen für e-Mail, Daten und Kommunikation schützen können.
-ms.openlocfilehash: fcb28ba7ca52ee3498afd12cf93157fa90d0d80b
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 6fe67f8e5723a272643c7980bf1744f80c612188
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131976"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843234"
 ---
 # <a name="get-microsoft-365-for-campaigns"></a>Abrufen von Microsoft 365 für Kampagnen
 
@@ -43,11 +43,11 @@ Wenn Sie nicht für spezielle Preise berechtigt sind, ist Microsoft 365 Business
 
 ## <a name="what-does-microsoft-365-for-campaigns-include"></a>Was umfasst Microsoft 365 für Kampagnen?
 Diese Konfiguration von Microsoft 365 Business Premium umfasst einfache Steuerelemente, mit denen Sie und Ihre Mitarbeiter sicher zusammenarbeiten können: 
-- **Benutzeridentität schützen**: Stellen Sie sicher, dass die Benutzer bei der Anmeldung beim Senden von e-Mails oder beim Zugriff auf Dateien (mehrstufige Authentifizierung) darauf achten, dass Sie der Meinung sind, dass Sie Sie sind.
-- **Schützen vertraulicher Informationen**: schützen Sie vertrauliche Informationen, um Informationen zu überwachen, die außerhalb Ihrer Organisation freigegeben werden (Verhinderung von Datenverlust).
-- **Schützen Sie mobile Geräte**: schützen Sie Daten auf mobilen Geräten (Mobile App Schutzrichtlinie).
-- **Schutz vor böswilligen Inhalten**: verhindern des Zugriffs auf böswillige Inhalte durch Scannen von e-Mail-Anlagen (Advanced Threat Protection)
-- **Schützen von Kennwörtern**: festlegen, dass Kennwörter nie ablaufen, was sicherer ist und Arbeitsunterbrechungen (Kennwortrichtlinien) verhindern kann. 
+- **Benutzeridentität schützen** : Stellen Sie sicher, dass die Benutzer bei der Anmeldung beim Senden von e-Mails oder beim Zugriff auf Dateien (mehrstufige Authentifizierung) darauf achten, dass Sie der Meinung sind, dass Sie Sie sind.
+- **Schützen vertraulicher Informationen** : schützen Sie vertrauliche Informationen, um Informationen zu überwachen, die außerhalb Ihrer Organisation freigegeben werden (Verhinderung von Datenverlust).
+- **Schützen Sie mobile Geräte** : schützen Sie Daten auf mobilen Geräten (Mobile App Schutzrichtlinie).
+- **Schutz vor böswilligen Inhalten** : verhindern des Zugriffs auf böswillige Inhalte durch Scannen von e-Mail-Anlagen (Verteidiger für Office 365).
+- **Schützen von Kennwörtern** : festlegen, dass Kennwörter nie ablaufen, was sicherer ist und Arbeitsunterbrechungen (Kennwortrichtlinien) verhindern kann. 
 
 
 ## <a name="what-does-it-cost-who-needs-it-and-what-is-the-commitment"></a>Was kostet es, wer benötigt es und was ist die Verpflichtung?

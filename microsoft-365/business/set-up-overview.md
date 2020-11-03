@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Erfahren Sie mehr über die Setupschritte für Microsoft 365 Business Premium, vom abonnieren über das Hinzufügen einer Domäne und von Benutzern bis hin zum Einrichten von Sicherheitsrichtlinien.
-ms.openlocfilehash: 8ec01a58d1a15d5c4aa1cef8b81518b474630d8b
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: 46370166a9d5e8c9308b8947513e631c159f0b86
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841135"
+ms.locfileid: "48842128"
 ---
 # <a name="overview-of-setup"></a>Übersicht über die Einrichtung
 
@@ -48,7 +48,7 @@ Die meisten der Setupschritte können in der Assistenten-Setup ausgeführt werde
 
    - **[Hinzufügen Ihrer Domäne](set-up.md#add-your-domain-to-personalize-sign-in)** (wenn Sie Ihre Domäne während der [Registrierung](sign-up.md)erworben haben, ist dieser Schritt bereits abgeschlossen.)
 
-   - **Benutzer hinzufügen** . Sie können auf drei Arten Benutzer hinzufügen:
+   - **Benutzer hinzufügen**. Sie können auf drei Arten Benutzer hinzufügen:
         - Im [Assistenten Setup](set-up.md#add-users-in-the-wizard).
         - Verwenden Sie die Verzeichnissynchronisierung, um [Benutzer mithilfe Azure AD Connect hinzuzufügen](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization) , wenn Sie über ein lokales Active Directory verfügen.
         - Sie können Benutzer auch später im Admin Center [Hinzufügen](add-users-m365b.md) .
@@ -61,7 +61,7 @@ Die meisten der Setupschritte können in der Assistenten-Setup ausgeführt werde
   Zusätzlich zu den Sicherheitseinstellungen im Setup-Assistenten können Sie die Sicherheit durch Hinzufügen der folgenden Einstellungen verbessern:
 
 - **E-Mail-Schutz vor Schadsoftware**
-- **ATP-Anti-Phishing**
+- **Anti-Phishing in Defender für Office 365**
 - **Exchange Online-Archivierung**
 - **Azure Information Protection (plan1** )
 

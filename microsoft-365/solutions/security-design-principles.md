@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 563972c458e77d96cf075f048dcee027bf29bc95
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 9a1a0204f1c79ad1eab7d62adf45022d1d5bc035
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399397"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842798"
 ---
 # <a name="security-hurdles-you-can-sail-over--one-architects-viewpoint"></a>Sicherheitshürden, die Sie überwinden können – ein Architektur Standpunkt
 
@@ -55,7 +55,7 @@ Eine empfohlene Konfiguration finden Sie unter [Identity and Device Access](../s
 
 Viele Sicherheitsteams verwenden immer noch die bewährten bewährten Sicherheitsmethoden, die für eine lokale Welt entwickelt wurden, einschließlich der Beibehaltung einer "Netzwerkperimeter-Sicherheit" und der "Erzwingung" der Sicherheitstools und-Steuerelemente für Cloud-Lösungen. Solche Steuerelemente wurden nicht für die Cloud entwickelt, sind wirkungslos und behindern die Einführung moderner cloudfunktionen. Prozesse und Tools, die für einen Netzwerkperimeter-Sicherheitsansatz funktionieren, haben sich als ineffizient, als störend für cloudfunktionen erwiesen und erlauben nicht die Nutzung moderner und automatisierter Sicherheitsfeatures.
 
-Sie können diese Hürde überwinden, indem Sie die Verteidigungsstrategien auf Cloud-Managed Protection, automatisierte Untersuchungen und Korrekturen, automatisierte Stift Tests, Advanced Threat Protection und Incident Analysis umstellen. Kunden, die moderne Geräte Verwaltungslösungen verwenden, haben automatisiertes Management, standardisiertes Patching, Antivirus, Richtlinienerzwingung und Anwendungsschutz für alle Geräte (ob Smartphone, PC, Laptop oder Tablet) implementiert. Dadurch entfällt die Notwendigkeit einer VPN-, Microsoft System Center Configuration Manager (SCCM) und Active Directory Gruppenrichtlinien. In Kombination mit bedingten Zugriffsrichtlinien bietet dies eine leistungsstarke Steuerung und Sichtbarkeit sowie einen optimierten Zugriff auf Ressourcen, unabhängig davon, wo Ihre Benutzer in Betrieb sind.
+Sie können diese Hürde überwinden, indem Sie die Verteidigungsstrategien auf Cloud Managed Protection, automatisierte Untersuchungen und Korrekturen, automatisiertes Pen-testing, Defender for Office 365 und Incident Analysis verschieben. Kunden, die moderne Geräte Verwaltungslösungen verwenden, haben automatisiertes Management, standardisiertes Patching, Antivirus, Richtlinienerzwingung und Anwendungsschutz für alle Geräte (ob Smartphone, PC, Laptop oder Tablet) implementiert. Dadurch entfällt die Notwendigkeit einer VPN-, Microsoft System Center Configuration Manager (SCCM) und Active Directory Gruppenrichtlinien. In Kombination mit bedingten Zugriffsrichtlinien bietet dies eine leistungsstarke Steuerung und Sichtbarkeit sowie einen optimierten Zugriff auf Ressourcen, unabhängig davon, wo Ihre Benutzer in Betrieb sind.
 
 ## <a name="strive-for-best-together-security-tools"></a>Streben nach "Best Together"-Sicherheitstools
 

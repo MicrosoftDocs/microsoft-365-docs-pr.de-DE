@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Holen Sie sich die neuesten hardwarebasierten Isolierungen. Verhindern Sie, dass aktuelle und neue Angriffe wie Exploits oder böswillige Links die Produktivität von Mitarbeitern und die Unternehmenssicherheit beeinträchtigen.
-ms.openlocfilehash: 3a20649338bbcd58ad86f70142c2bd9f1c2fd948
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 3b31ef639667c7ef761d1d5fa0295f5d767e0c48
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197573"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843006"
 ---
 # <a name="application-guard-for-office-public-preview-for-admins"></a>Application Guard für Office (Public Preview) für Administratoren
 
@@ -40,15 +40,15 @@ Microsoft Defender Application Guard für Office (Application Guard für Office)
 
 ### <a name="minimum-hardware-requirements"></a>Minimale Hardwareanforderungen
 
-* **CPU**: 64-Bit, 4 Kerne (physisch oder virtuell), Virtualization Extensions (Intel VT-x oder AMD-V), Core i5 Äquivalent oder höher empfohlen
-* **Physischer Arbeitsspeicher**: 8 GB RAM
-* **Festplatte**: 10 GB freier Speicherplatz auf dem Systemlaufwerk (SSD empfohlen)
+* **CPU** : 64-Bit, 4 Kerne (physisch oder virtuell), Virtualization Extensions (Intel VT-x oder AMD-V), Core i5 Äquivalent oder höher empfohlen
+* **Physischer Arbeitsspeicher** : 8 GB RAM
+* **Festplatte** : 10 GB freier Speicherplatz auf dem Systemlaufwerk (SSD empfohlen)
 
 ### <a name="minimum-software-requirements"></a>Mindestanforderungen an die Software
 
-* **Windows 10**: Windows 10 Enterprise Edition, Client Build Version 2004 (20H1) Build 19041
-* **Office**: Office Beta Channel Build Version 2008 16.0.13212 oder höher
-* **Update Paket**: kumulative monatliche Sicherheitsupdates für Windows 10 [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756) 
+* **Windows 10** : Windows 10 Enterprise Edition, Client Build Version 2004 (20H1) Build 19041
+* **Office** : Office Beta Channel Build Version 2008 16.0.13212 oder höher
+* **Update Paket** : kumulative monatliche Sicherheitsupdates für Windows 10 [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756) 
 
 Ausführliche Systemanforderungen finden Sie unter [System Requirements for Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). Weitere Informationen zu Builds für Office-Insider-Vorschau finden Sie unter [Erste Schritte bei der Bereitstellung von Office-Insider-Builds](https://insider.office.com/business/deploy).
 
@@ -71,7 +71,7 @@ Ausführliche Systemanforderungen finden Sie unter [System Requirements for Micr
     Enable-WindowsOptionalFeature -online -FeatureName Windows-Defender-ApplicationGuard 
     ```
 
-3.  Suchen Sie nach dem Microsoft Defender Application Guard im Managed Mode-Gruppenrichtlinien unter **Computer Configuration \\ Administrative Templates \\ Windows Components \\ Microsoft Defender Application Guard**. Aktivieren Sie diese Richtlinie, indem Sie den Wert unter Optionen als **2** oder **3** festlegen und dann **OK** oder über **nehmen**auswählen.
+3.  Suchen Sie nach dem Microsoft Defender Application Guard im Managed Mode-Gruppenrichtlinien unter **Computer Configuration \\ Administrative Templates \\ Windows Components \\ Microsoft Defender Application Guard**. Aktivieren Sie diese Richtlinie, indem Sie den Wert unter Optionen als **2** oder **3** festlegen und dann **OK** oder über **nehmen** auswählen.
 
     ![Aktivieren von AG im verwalteten Modus](../../media/ag04-deploy.png)
   
@@ -92,11 +92,11 @@ In diesem Schritt wird sichergestellt, dass die zum Identifizieren und Beheben v
 
     ![Startmenü](../../media/ag05-diagnostic.png)
 
-2.  Wählen Sie unter **Windows-Einstellungen**die Option **Datenschutz**aus.
+2.  Wählen Sie unter **Windows-Einstellungen** die Option **Datenschutz** aus.
 
     ![Menü "Windows-Einstellungen"](../../media/ag06-diagnostic.png)
 
-3.  Wählen Sie unter Datenschutz die Option **Diagnose & Feedback** aus, und wählen Sie **optionale Diagnosedaten**aus.
+3.  Wählen Sie unter Datenschutz die Option **Diagnose & Feedback** aus, und wählen Sie **optionale Diagnosedaten** aus.
 
     ![Diagnose-und Feedback Menü](../../media/ag07a-diagnostic.png)
 
@@ -158,11 +158,11 @@ Wenn beim Starten von Application Guard für Office Probleme auftreten, werden S
 
 3.  Füllen Sie das Feld **Feedback zusammenfassen** aus, falls es nicht bereits für Sie ausgefüllt ist.
 
-4.  Geben Sie im Feld **EXPLAIN in more Detail** eine ausführliche Beschreibung des Problems ein, das Sie durchgeführt haben, und wählen Sie dann **weiter**aus.
+4.  Geben Sie im Feld **EXPLAIN in more Detail** eine ausführliche Beschreibung des Problems ein, das Sie durchgeführt haben, und wählen Sie dann **weiter** aus.
 
-5.  Wählen Sie die Blase neben Problem. Stellen Sie sicher, dass es sich bei der ausgewählten Kategorie um **Sicherheit und Datenschutz \> Microsoft Defender Application Guard – Office**handelt, und wählen Sie dann **weiter**aus.
+5.  Wählen Sie die Blase neben Problem. Stellen Sie sicher, dass es sich bei der ausgewählten Kategorie um **Sicherheit und Datenschutz \> Microsoft Defender Application Guard – Office** handelt, und wählen Sie dann **weiter** aus.
 
-6.  Wählen Sie **Neues Feedback**und dann **weiter**aus.
+6.  Wählen Sie **Neues Feedback** und dann **weiter** aus.
 
 7.  Sammeln von Ablaufverfolgungen für das Problem:
 
@@ -188,13 +188,13 @@ Wenn beim Starten von Application Guard für Office Probleme auftreten, werden S
 
 Sie können auch Feedback von in Office senden, wenn das Problem auftritt, wenn Office-Dokumente in Application Guard geöffnet werden. Lesen Sie das [Office Insider Handbook](https://insider.office.com/handbook) , um Feedback zu senden.
 
-## <a name="integration-with-microsoft-defender-atp-and-office-atp"></a>Integration mit Microsoft Defender ATP und Office ATP
+## <a name="integration-with-microsoft-defender-for-endpoint-and-microsoft-defender-for-office-365"></a>Integration mit Microsoft Defender für Endpoint und Microsoft Defender für Office 365
 
-Application Guard für Office ist in Microsoft Defender Advance Threat Protection (ATP) integriert, um Überwachung und Warnungen zu böswilligen Aktivitäten in der isolierten Umgebung bereitzustellen.
+Application Guard für Office ist in Microsoft Defender for Endpoint integriert, um Überwachung und Warnungen zu böswilligen Aktivitäten in der isolierten Umgebung bereitzustellen.
 
-Microsoft Defender ATP ist eine Sicherheitsplattform, die dazu dient, Unternehmensnetzwerken beim verhindern, erkennen, untersuchen und reagieren auf Erweiterte Bedrohungen zu unterstützen. Weitere Informationen zu dieser Plattform finden Sie auf der Seite [Microsoft Defender Advanced Threat Protection](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) . Erfahren Sie mehr über Onboarding Devices to this Platform on [Bord Devices to the Microsoft Defender ATP Service](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-configure).
+Microsoft Defender für Endpoint ist eine Sicherheitsplattform, die dazu dient, Unternehmensnetzwerken beim verhindern, erkennen, untersuchen und reagieren auf Erweiterte Bedrohungen zu unterstützen. Weitere Informationen zu dieser Plattform finden Sie auf der Seite [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) . Erfahren Sie mehr über Onboarding Devices to this Platform on [Bord Devices to the Microsoft Defender for Endpoint Service](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-configure).
 
-Sie können Office 365 ATP auch so konfigurieren, dass es mit Microsoft Defender ATP zusammenarbeitet. Siehe [integrieren von Office 365 ATP mit Microsoft Defender ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp?view=o365-worldwide).
+Sie können Microsoft Defender auch so konfigurieren, dass Office 365 mit Defender for Endpoint zusammenarbeiten. Siehe [integrieren von Defender für Office 365 mit Microsoft Defender für Endpoint](https://docs.microsoft.com/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp?view=o365-worldwide).
 
 ## <a name="limitations-and-considerations"></a>Einschränkungen und Überlegungen
 

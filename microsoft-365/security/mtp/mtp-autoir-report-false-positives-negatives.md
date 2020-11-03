@@ -1,6 +1,6 @@
 ---
-title: Behandeln falsch positiver oder falscher negativer Daten in der Luft in Microsoft Threat Protection
-description: Wurde in Microsoft Threat Protection etwas übersehen oder fälschlicherweise von Air erkannt? Hier erfahren Sie, wie Sie falsch positive Ergebnisse oder falsch negative Informationen zur Analyse an Microsoft übermitteln.
+title: Behandeln falsch positiver oder falscher negativer Ergebnisse in der Luft in Microsoft 365 Defender
+description: Wurde etwas verpasst oder fälschlicherweise von Air in Microsoft 365 Defender erkannt? Hier erfahren Sie, wie Sie falsch positive Ergebnisse oder falsch negative Informationen zur Analyse an Microsoft übermitteln.
 keywords: automatisiert, Untersuchung, Warnung, Auslöser, Aktion, Korrektur, falsch positiv, falsch negativ
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: ecfd1bb9e5ff548c08aea322d12d626fa7fb6120
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 92ad4a96665a5355bce7e3546f8c52779f770927
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429635"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843732"
 ---
 # <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Behandeln von falsch positiven/negativen Ergebnissen in automatisierten Ermittlungs-und Antwortfunktionen
 
@@ -34,9 +34,9 @@ ms.locfileid: "48429635"
 
 
 **Gilt für:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
-Haben [automatisierte Ermittlungs-und Antwortfunktionen](mtp-autoir.md) im Microsoft Threat Protection-Vorgang fehl am oder falsch erkannt? Es gibt Schritte, die Sie ausführen können, um es zu beheben. Sie können:
+Haben [automatisierte Ermittlungs-und Antwortfunktionen](mtp-autoir.md) in Microsoft 365 Defender das Erkennen von Fehlern vermissen oder etwas falsch erkannt? Es gibt Schritte, die Sie ausführen können, um es zu beheben. Sie können:
 
 - [Melden einer falsch positiven/negativen Meldung an Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
 
@@ -50,15 +50,15 @@ Verwenden Sie diesen Artikel als Leitfaden.
 
 |Element verpasst oder falsch erkannt |Dienst  |Vorgehensweise  |
 |---------|---------|---------|
-|-E-Mail-Nachricht <br/>-E-Mail-Anlage <br/>-URL in einer e-Mail-Nachricht<br/>-URL in einer Office-Datei      |[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)        |[Übermitteln von verdächtigen Spam, Phishing, URLs und Dateien an Microsoft zur Überprüfung](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)         |
-|Datei oder App auf einem Gerät    |[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection)         |[Übermitteln einer Datei an Microsoft zur Analyse von Schadsoftware](https://www.microsoft.com/wdsi/filesubmission)         |
+|-E-Mail-Nachricht <br/>-E-Mail-Anlage <br/>-URL in einer e-Mail-Nachricht<br/>-URL in einer Office-Datei      |[Microsoft Defender für Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)        |[Übermitteln von verdächtigen Spam, Phishing, URLs und Dateien an Microsoft zur Überprüfung](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)         |
+|Datei oder App auf einem Gerät    |[Microsoft Defender für Endpunkt](https://docs.microsoft.com/windows/security/threat-protection)         |[Übermitteln einer Datei an Microsoft zur Analyse von Schadsoftware](https://www.microsoft.com/wdsi/filesubmission)         |
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Anpassen einer Warnung, um zu verhindern, dass falsch positive Ergebnisse wiederholt werden
 
 |Szenario |Dienst |Vorgehensweise |
 |--------|--------|--------|
 |-Eine Warnung wird durch eine legitime Verwendung ausgelöst. <br/>-Eine Warnung ist falsch    |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)<br/> oder <br/>[Erkennung erweiterter Azure-Bedrohungen](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)         |[Verwalten von Benachrichtigungen im Cloud-App-Sicherheitsportal](https://docs.microsoft.com/cloud-app-security/managing-alerts)         |
-|Eine Datei, IP-Adresse, URL oder Domäne wird auf einem Gerät als Schadsoftware behandelt, auch wenn Sie sicher ist.|[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) |[Erstellen eines benutzerdefinierten Indikators mit einer Aktion "zulassen"](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
+|Eine Datei, IP-Adresse, URL oder Domäne wird auf einem Gerät als Schadsoftware behandelt, auch wenn Sie sicher ist.|[Microsoft Defender für Endpunkt](https://docs.microsoft.com/windows/security/threat-protection) |[Erstellen eines benutzerdefinierten Indikators mit einer Aktion "zulassen"](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
 
 
 ## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>Rückgängigmachen einer auf einem Gerät ausgeführten Korrekturaktion
@@ -76,15 +76,15 @@ Wenn eine Korrekturaktion auf einem Gerät (beispielsweise einem Windows 10-Ger�
     > [!TIP]
     > Verwenden Sie Filter, um die Ergebnisliste einzugrenzen. 
 
-4. Wählen Sie im Flyout für das ausgewählte Element die Option **Untersuchungs Seite öffnen**aus.
+4. Wählen Sie im Flyout für das ausgewählte Element die Option **Untersuchungs Seite öffnen** aus.
 
 5. Wählen Sie in der Ansicht Details der Untersuchung die Registerkarte **Aktionen** aus.
 
-6. Wählen Sie ein Element mit dem Status **abgeschlossen**aus, und suchen Sie in der Spalte **Decisions** nach einem Link, beispielsweise **genehmigt**. Dadurch wird ein Flyout mit weiteren Details zur Aktion geöffnet.
+6. Wählen Sie ein Element mit dem Status **abgeschlossen** aus, und suchen Sie in der Spalte **Decisions** nach einem Link, beispielsweise **genehmigt**. Dadurch wird ein Flyout mit weiteren Details zur Aktion geöffnet.
 
-7. Um die Aktion rückgängig zu machen, wählen Sie **Korrektur löschen**aus.
+7. Um die Aktion rückgängig zu machen, wählen Sie **Korrektur löschen** aus.
 
-## <a name="see-also"></a>Weitere Informationen:
+## <a name="see-also"></a>Siehe auch
 
 - [Anzeigen der Details und Ergebnisse einer automatischen Untersuchung](mtp-autoir-results.md)
-- [Proaktive Suche nach Bedrohungen mit der erweiterten Suche in Microsoft Threat Protection](advanced-hunting-overview.md)
+- [Proaktive Suche nach Bedrohungen durch erweiterte Jagd in Microsoft 365 Defender](advanced-hunting-overview.md)

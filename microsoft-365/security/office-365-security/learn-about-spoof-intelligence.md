@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können Informationen zu Spoof Intelligence in Exchange Online Protection (EoP) erhalten, in der Sie bestimmte gefälschte Absender zulassen oder blockieren können.
-ms.openlocfilehash: 86771397f0175d389a69c1008e0ac5471697afc5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 4ebc32a6c87c58edcceb0d57ee8d55be43f2dd20
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199601"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841828"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>Konfigurieren von Spoof Intelligence in EoP
 
@@ -74,11 +74,11 @@ Sie können Spoof Intelligence im Security & Compliance Center oder in PowerShel
 ## <a name="use-the-security--compliance-center-to-manage-spoofed-senders"></a>Verwenden des Security & Compliance Center zum Verwalten von gefälschten Absendern
 
 > [!NOTE]
-> Wenn Sie ein Microsoft 365 Enterprise E5-Abonnement haben oder ein Office 365 Advanced Threat Protection (Office 365 ATP)-Add-on separat erworben haben, können Sie auch Absender verwalten, die Ihre Domäne durch [Spoofing Intelligence Insight](walkthrough-spoof-intelligence-insight.md)manipulieren.
+> Wenn Sie ein Microsoft 365 Enterprise E5-Abonnement haben oder ein Microsoft Defender separat für Office 365-Add-on erworben haben, können Sie auch Absender verwalten, die Ihre Domäne durch [Spoofing Intelligence Insight](walkthrough-spoof-intelligence-insight.md)manipulieren.
 
 1. Navigieren Sie im Security & Compliance Center zu **Bedrohungsmanagement** \> **Richtlinie** \> **Antispam**.
 
-2. Klicken Sie auf der Seite **Anti-Spam-Einstellungen** auf ![ Symbol erweitern ](../../media/scc-expand-icon.png) , um **Spoof Intelligence Policy**zu erweitern.
+2. Klicken Sie auf der Seite **Anti-Spam-Einstellungen** auf ![ Symbol erweitern ](../../media/scc-expand-icon.png) , um **Spoof Intelligence Policy** zu erweitern.
 
    ![Auswählen der Spoof Intelligence-Richtlinie](../../media/anti-spam-settings-spoof-intelligence-policy.png)
 
@@ -89,49 +89,49 @@ Sie können Spoof Intelligence im Security & Compliance Center oder in PowerShel
 
 4. Wählen Sie im Feld entscheiden Sie, ob diese Absender das geöffnete Flyout des **Benutzers spoofen dürfen** , eine der folgenden Registerkarten aus:
 
-   - **Ihre Domänen**: Absender Spoofing-Benutzer in ihren internen Domänen.
-   - **Externe Domänen**: Absender Spoofing-Benutzer in externen Domänen.
+   - **Ihre Domänen** : Absender Spoofing-Benutzer in ihren internen Domänen.
+   - **Externe Domänen** : Absender Spoofing-Benutzer in externen Domänen.
 
-5. Klicken Sie ![ ](../../media/scc-expand-icon.png) in der Spalte **zulässig als spoof?** auf Symbol erweitern. Wählen Sie **Ja** aus, um den gefälschten Absender zuzulassen, oder wählen Sie **Nein** aus, um die Nachricht als gefälscht zu markieren. Die Aktion wird von der standardmäßigen Anti-Phishing-Richtlinie oder von benutzerdefinierten ATP-Richtlinien für Anti-Phishing gesteuert (der Standardwert ist **"Nachricht in Junk-e-Mail-Ordner"**). Weitere Informationen finden Sie unter [Spoof Settings in Anti-Phishing Policies](set-up-anti-phishing-policies.md#spoof-settings).
+5. Klicken Sie ![ ](../../media/scc-expand-icon.png) in der Spalte **zulässig als spoof?** auf Symbol erweitern. Wählen Sie **Ja** aus, um den gefälschten Absender zuzulassen, oder wählen Sie **Nein** aus, um die Nachricht als gefälscht zu markieren. Die Aktion wird von der standardmäßigen Anti-Phishing-Richtlinie oder von benutzerdefinierten Anti-Phishing-Richtlinien gesteuert (der Standardwert ist **"Nachricht in Junk-e-Mail-Ordner"** ). Weitere Informationen finden Sie unter [Spoof Settings in Anti-Phishing Policies](set-up-anti-phishing-policies.md#spoof-settings).
 
    ![Screenshot mit dem Flyout für gefälschte Absender und ob der Absender Spoofing zulässig ist](../../media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
 
    Die Spalten und Werte, die angezeigt werden, werden in der folgenden Liste erläutert:
 
-   - **Spoofed User**: das Benutzerkonto, das gefälscht wird. Dies ist der Absender der Nachricht in der von-Adresse (auch als `5322.From` Adresse bezeichnet), die in e-Mail-Clients angezeigt wird. Die Gültigkeit dieser Adresse wird von SPF nicht überprüft.
+   - **Spoofed User** : das Benutzerkonto, das gefälscht wird. Dies ist der Absender der Nachricht in der von-Adresse (auch als `5322.From` Adresse bezeichnet), die in e-Mail-Clients angezeigt wird. Die Gültigkeit dieser Adresse wird von SPF nicht überprüft.
 
      - Auf der Registerkarte **Ihre Domänen** enthält der Wert eine einzelne e-Mail-Adresse, oder wenn der Quell-e-Mail-Server mehrere Benutzerkonten fälscht, enthält er **mehr als einen**.
 
      - Auf der Registerkarte **externe Domänen** enthält der Wert die Domäne des gefälschten Benutzers und nicht die vollständige e-Mail-Adresse.
 
-   - **Sendeinfrastruktur**: die Domäne, die in einer Reverse-DNS-Suche (PTR-Eintrag) der IP-Adresse des Quell-e-Mail-Servers gefunden wurde, oder die IP-Adresse, wenn die Quelle keinen PTR-Eintrag aufweist.
+   - **Sendeinfrastruktur** : die Domäne, die in einer Reverse-DNS-Suche (PTR-Eintrag) der IP-Adresse des Quell-e-Mail-Servers gefunden wurde, oder die IP-Adresse, wenn die Quelle keinen PTR-Eintrag aufweist.
 
      Weitere Informationen zu Nachrichtenquellen und Nachrichten Absendern finden Sie unter [Übersicht über Standards für e-Mail-Nachrichten](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
 
-   - Anzahl von **Nachrichten**: die Anzahl der Nachrichten von der sendenden Infrastruktur an Ihre Organisation, die die angegebenen gefälschten Absender oder Absender innerhalb der letzten 30 Tage enthalten.
+   - Anzahl von **Nachrichten** : die Anzahl der Nachrichten von der sendenden Infrastruktur an Ihre Organisation, die die angegebenen gefälschten Absender oder Absender innerhalb der letzten 30 Tage enthalten.
 
-   - **Anzahl von Benutzer Reklamationen**: Beschwerden, die von Ihren Benutzern in den letzten 30 Tagen gegen diesen Absender eingereicht wurden. Beschwerden sind in der Regel in Form von Junk-Übermittlungen an Microsoft.
+   - **Anzahl von Benutzer Reklamationen** : Beschwerden, die von Ihren Benutzern in den letzten 30 Tagen gegen diesen Absender eingereicht wurden. Beschwerden sind in der Regel in Form von Junk-Übermittlungen an Microsoft.
 
-   - **Authentifizierungsergebnis**: einer der folgenden Werte:
+   - **Authentifizierungsergebnis** : einer der folgenden Werte:
 
-      - **Übergeben**: der Absender hat Absender-e-Mail-Authentifizierungsprüfungen (SPF oder DKIM) übergeben.
-      - **Fehler**: Fehler beim Absender Authentifizierungsüberprüfung bei EoP.
-      - **Unbekannt**: das Ergebnis dieser Prüfungen ist nicht bekannt.
+      - **Übergeben** : der Absender hat Absender-e-Mail-Authentifizierungsprüfungen (SPF oder DKIM) übergeben.
+      - **Fehler** : Fehler beim Absender Authentifizierungsüberprüfung bei EoP.
+      - **Unbekannt** : das Ergebnis dieser Prüfungen ist nicht bekannt.
 
-   - **Entscheidung festgelegt von**: zeigt an, wer ermittelt hat, ob die sendende Infrastruktur den Benutzer Spoofing erlaubt:
+   - **Entscheidung festgelegt von** : zeigt an, wer ermittelt hat, ob die sendende Infrastruktur den Benutzer Spoofing erlaubt:
 
        - **Spoof Intelligence Policy** (automatisch)
        - **Admin** (manuell)
 
-   - **Zuletzt gesehen**: das letzte Datum, an dem eine Nachricht von der sendenden Infrastruktur empfangen wurde, die den gefälschten Benutzer enthält.
+   - **Zuletzt gesehen** : das letzte Datum, an dem eine Nachricht von der sendenden Infrastruktur empfangen wurde, die den gefälschten Benutzer enthält.
 
-   - **Spoofing erlaubt?**: die Werte, die Sie hier sehen, sind:
+   - **Spoofing erlaubt?** : die Werte, die Sie hier sehen, sind:
 
-     - **Yes**: Nachrichten aus der Kombination von Spoofing-Benutzer und sendender Infrastruktur sind zulässig und werden nicht als gefälschte e-Mails behandelt.
+     - **Yes** : Nachrichten aus der Kombination von Spoofing-Benutzer und sendender Infrastruktur sind zulässig und werden nicht als gefälschte e-Mails behandelt.
 
-     - **No**: Nachrichten aus der Kombination von Spoofing-Benutzer und-Sendeinfrastruktur werden als gefälscht gekennzeichnet. Die Aktion wird von der standardmäßigen Anti-Phishing-Richtlinie oder von benutzerdefinierten ATP-Richtlinien für Anti-Phishing gesteuert (der Standardwert ist **"Nachricht in Junk-e-Mail-Ordner"**). Weitere Informationen finden Sie im nächsten Abschnitt.
+     - **No** : Nachrichten aus der Kombination von Spoofing-Benutzer und-Sendeinfrastruktur werden als gefälscht gekennzeichnet. Die Aktion wird von der standardmäßigen Anti-Phishing-Richtlinie oder von benutzerdefinierten Anti-Phishing-Richtlinien gesteuert (der Standardwert ist **"Nachricht in Junk-e-Mail-Ordner"** ). Weitere Informationen finden Sie im nächsten Abschnitt.
 
-     - **Einige Benutzer** (nur die Registerkarte "**Domains** "): eine sendende Infrastruktur Spoofing mehrere Benutzer, bei denen einige gefälschte Benutzer zulässig sind und andere nicht. Verwenden Sie die **detaillierte** Registerkarte, um die spezifischen Adressen anzuzeigen.
+     - **Einige Benutzer** (nur die Registerkarte " **Domains** "): eine sendende Infrastruktur Spoofing mehrere Benutzer, bei denen einige gefälschte Benutzer zulässig sind und andere nicht. Verwenden Sie die **detaillierte** Registerkarte, um die spezifischen Adressen anzuzeigen.
 
 6. Klicken Sie unten auf der Seite auf **Speichern**.
 
@@ -181,7 +181,7 @@ Sie können Spoof Intelligence-Einstellungen in der standardmäßigen Anti-Phish
 
 - [Konfigurieren von Anti-Phishing-Richtlinien in EoP](configure-anti-phishing-policies-eop.md).
 
-- [Konfigurieren von Richtlinien für die ATP-Anti-Phishing in Microsoft 365](configure-atp-anti-phishing-policies.md).
+- [Konfigurieren von Anti-Phishing-Richtlinien in Microsoft Defender für Office 365 in Microsoft 365](configure-atp-anti-phishing-policies.md).
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Wie können Sie feststellen, dass diese Verfahren erfolgreich waren?
 
@@ -204,7 +204,7 @@ Führen Sie einen der folgenden Schritte aus, um zu überprüfen, ob Sie Spoof I
    Get-PhishFilterPolicy -Detailed | Export-CSV "C:\My Documents\Spoofed Senders.csv"
    ```
 
-- Wechseln Sie im Security & Compliance Center zu **Threat Management** \> **Policy** \> **Anti-Phishing** oder **ATP Anti-Phishing**, und führen Sie einen der folgenden Schritte aus:  
+- Wechseln Sie im Security & Compliance Center zu **Threat Management** \> **Policy** \> **Anti-Phishing** oder **ATP Anti-Phishing** , und führen Sie einen der folgenden Schritte aus:  
 
   - Wählen Sie eine Richtlinie aus der Liste aus. Überprüfen Sie im Flyout, das angezeigt wird, die Werte im **Spoof** -Abschnitt.
   - Klicken Sie auf **Standardrichtlinie**. Überprüfen Sie im Flyout, das angezeigt wird, die Werte im **Spoof** -Abschnitt.

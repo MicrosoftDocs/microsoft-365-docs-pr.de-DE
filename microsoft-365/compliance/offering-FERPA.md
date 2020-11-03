@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 89f7e0ca95144e783b70e23c21008dcc46328522
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 668a92bf57e61d68d07a2d40e4405cc7bd111580
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208457"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843117"
 ---
 # <a name="family-educational-rights-and-privacy-act-ferpa"></a>Family Educational Rights and Privacy Act (FERPA)
 
@@ -41,7 +41,7 @@ FERPA erfordert oder erkennen keine Audits oder andere Zertifizierungen, sodass 
 
 Aufgrund dieser vertraglichen Verpflichtungen können Kunden, die FERPA unterliegen – sowohl Bildungseinrichtungen als auch Drittanbieter, denen Sie Zugriff auf vertrauliche Kursteilnehmerdaten gewähren – zuverlässig Microsoft Business Cloud-Dienste zum verarbeiten, speichern und übertragen dieser Daten verwenden.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
 Dienste, für die Microsoft sich verpflichtet, als "Schul Beamter" mit berechtigten Bildungs Interessen in Kundendaten festgelegt zu werden, umfassen Folgendes:
 
@@ -51,9 +51,9 @@ Dienste, für die Microsoft sich verpflichtet, als "Schul Beamter" mit berechtig
 - [Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Power BI, PowerApps und Power Automation (ehemals Microsoft Flow) entweder als eigenständiger Dienst oder als in einem Office 365-Branding-Plan oder einer Suite enthalten
 - Azure DevOps Services
-- Windows Defender ATP
+- Microsoft Defender für Endpunkt 
 
-## <a name="audits-reports-and-certificates"></a>Audits, Berichte und Zertifikate
+## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
 
 FERPA erfordert oder erkennen keine Überwachungen oder Zertifizierungen.
 
@@ -68,9 +68,9 @@ Dieses US-Bundesgesetz beauftragt den Schutz der Privatsphäre der Bildungsunter
 - [Bundes Register: FERPA-Abschluss Regel](https://aka.ms/ferpa-reg) (Dezember 2011)
 - [FERPA allgemeiner Leitfaden für Eltern](https://www2.ed.gov/policy/gen/guid/fpco/ferpa/parents.html)
 
-## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Bewerten des Risikos mithilfe von Microsoft Compliance-Manager
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Verwenden von Microsoft Compliance-Manager zur Einschätzung des Risikos
 
-[Microsoft Compliance Manager](compliance-manager.md) ist ein Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) , mit dem Sie die Compliance-Haltung ihrer Organisation besser verstehen und Maßnahmen zur Verringerung von Risiken unterstützen können. Compliance-Manager bietet eine Premium-Vorlage für die Erstellung einer Bewertung für diese Verordnung. Suchen Sie die Vorlage auf der Seite " **Bewertungs Vorlagen** " im Compliance-Manager. Hier erfahren Sie, wie Sie [Assessments im Compliance-Manager erstellen](compliance-manager-assessments.md).
+[Microsoft Compliance Manager](compliance-manager.md) ist eine Funktion im [Microsoft 365 Compliance Center, die Ihnen](microsoft-365-compliance-center.md) hilft, die Compliance-Position Ihres Unternehmens zu verstehen und Maßnahmen zu ergreifen, um Risiken zu reduzieren. Compliance Manager bietet eine Premiumvorlage für die Erstellung einer Bewertung für diese Verordnung. Suchen Sie die Vorlage auf der Seite **Bewertungsvorlagen** im Compliance Manager. Erfahren Sie, wie Sie [Bewertungen in Compliance Manager erstellen](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressourcen
 

@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9b84ca774e1b9bd0bca51b8ee21f6a06f2fde5b4
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 92760ef14fb1192e4462bab656e22f3595f9b449
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430621"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843864"
 ---
 # <a name="device-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Geräteüberwachung und-Berichterstellung im Microsoft 365 Security Center
 
@@ -33,11 +33,11 @@ Halten Sie Ihre Geräte im Microsoft 365 Security Center sicher, auf dem neueste
 
 ## <a name="view-device-alerts"></a>Anzeigen von Geräte Warnungen
 
-Erhalten Sie aktuelle Benachrichtigungen zu Sicherheitsverletzungen und anderen Bedrohungen auf Ihren Geräten von Microsoft Defender ATP (verfügbar mit einer E5-Lizenz). Das Microsoft 365 Security Center überwacht diese Warnungen effektiv mithilfe Ihres bevorzugten Workflows auf einer hohen Ebene.
+Erhalten Sie aktuelle Benachrichtigungen zu Sicherheitsverletzungen und anderen Bedrohungen auf Ihren Geräten von Microsoft Defender für Endpoint (verfügbar mit einer E5-Lizenz). Das Microsoft 365 Security Center überwacht diese Warnungen effektiv mithilfe Ihres bevorzugten Workflows auf einer hohen Ebene.
 
 ### <a name="monitor-high-impact-alerts"></a>Überwachen von Warnungen mit hoher Wirkung
 
-Jede Microsoft Defender-ATP-Warnung weist einen entsprechenden Schweregrad auf (hoch, Mittel, niedrig oder Information). Sie weist auf mögliche Auswirkungen auf Ihr Netzwerk hin, wenn Sie unbeaufsichtigt bleiben.  
+Jeder Microsoft Defender für die Endpunkt Warnung weist einen entsprechenden Schweregrad auf (hoch, Mittel, niedrig oder Information). Sie weist auf mögliche Auswirkungen auf Ihr Netzwerk hin, wenn Sie unbeaufsichtigt bleiben.  
 
 Verwenden Sie die **Geräte Warnungs schwere** Karte, um sich speziell auf Warnungen zu konzentrieren, die gravierender sind und möglicherweise sofort reagieren müssen. Auf dieser Karte können Sie weitere Informationen im Microsoft Defender-Sicherheits Center-Portal anzeigen.
 
@@ -45,7 +45,7 @@ Verwenden Sie die **Geräte Warnungs schwere** Karte, um sich speziell auf Warnu
 
 ### <a name="understand-sources-of-alerts"></a>Grundlegendes zu Warnungs Quellen
 
-Microsoft Defender ATP nutzt Daten aus einer breiten Palette von Sicherheitssensoren und Nachrichtenquellen, um Warnungen zu generieren. Beispielsweise kann es Erkennungsinformationen von Microsoft Defender Antivirus und Antischadsoftware von Drittanbietern verwenden. Es kann auch Ihre eigene benutzerdefinierte Bedrohungs Intelligenz verwenden, die über die Webdienst-API bereitgestellt wird.
+Microsoft Defender for Endpoint nutzt Daten aus einer breiten Palette von Sicherheitssensoren und Nachrichtenquellen, um Warnungen zu generieren. Beispielsweise kann es Erkennungsinformationen von Microsoft Defender Antivirus und Antischadsoftware von Drittanbietern verwenden. Es kann auch Ihre eigene benutzerdefinierte Bedrohungs Intelligenz verwenden, die über die Webdienst-API bereitgestellt wird.
 
 Die Karte für die **Erkennung von Geräte Warnungen** zeigt die Verteilung von Benachrichtigungen nach Quelle an. Verfolgen Sie Aktivitäten im Zusammenhang mit bestimmten Quellen, insbesondere ihren benutzerdefinierten Quellen. Sie können die Karte auch verwenden, um sich auf Warnungen zu konzentrieren, die von Sensoren stammen, die nicht so konfiguriert sind, dass böswillige Aktivitäten oder Komponenten automatisch blockiert werden.
 
@@ -55,7 +55,7 @@ Auf dieser Karte können Sie weitere Informationen im Microsoft Defender-Sicherh
 
 ### <a name="understand-the-types-of-threats-that-trigger-alerts"></a>Grundlegendes zu den Typen von Bedrohungen, die Warnungen auslösen
 
-Microsoft Defender ATP sortiert jede Warnung in eine Kategorie, die eine bestimmte Stufe in der Angriffs Kette oder dem Typ der Bedrohungs Komponente darstellt. Beispielsweise kann eine erkannte Bedrohungsaktivität als "laterale Bewegung" kategorisiert werden, um anzugeben, dass versucht wurde, andere Geräte im Netzwerk zu erreichen. Die Aktivität ist wahrscheinlich aufgetreten, nachdem Angreifer einen ersten Standbein erreicht haben. Wenn eine Bedrohungs Komponente erkannt wird, kann Sie weitgehend als Schadsoftware oder speziell als bestimmter Bedrohungs klassifiziert werden. Zu den Besonderheiten gehören Ransomware, das stehlen von Anmeldeinformationen oder andere Arten von bösartiger oder unerwünschter Software.
+Microsoft Defender for Endpoint sortiert jede Warnung in eine Kategorie, die eine bestimmte Stufe in der Angriffs Kette oder dem Typ der Bedrohungs Komponente darstellt. Beispielsweise kann eine erkannte Bedrohungsaktivität als "laterale Bewegung" kategorisiert werden, um anzugeben, dass versucht wurde, andere Geräte im Netzwerk zu erreichen. Die Aktivität ist wahrscheinlich aufgetreten, nachdem Angreifer einen ersten Standbein erreicht haben. Wenn eine Bedrohungs Komponente erkannt wird, kann Sie weitgehend als Schadsoftware oder speziell als bestimmter Bedrohungs klassifiziert werden. Zu den Besonderheiten gehören Ransomware, das stehlen von Anmeldeinformationen oder andere Arten von bösartiger oder unerwünschter Software.
 
 Die Karte **Bedrohungskategorien für Geräte** zeigt die Verteilung von Warnungen in diesen Kategorien an. Verwenden Sie diese Informationen, um die Bedrohungsaktivität zu identifizieren, wie beispielsweise Diebstahlversuche von Anmeldeinformationen, die in der Regel höhere Auswirkungen haben als Social Engineering-Versuche. Sie können auch auf potenziell destruktive Bedrohungen wie Ransomware überwachen.
 
@@ -69,7 +69,7 @@ Die **Geräte Warnungs-Status** Karte gibt die Anzahl der Warnungen an, die nich
 
 ### <a name="monitor-classification-of-resolved-alerts"></a>Überwachen der Klassifizierung der aufgelösten Warnungen
 
-Beim Auflösen einer ATP-Warnung von Microsoft Defender können Ihre Sicherheitsmitarbeiter angeben, ob eine Warnung wie folgt überprüft wurde:
+Beim Auflösen einer Warnung von Microsoft Defender for Endpoint können Ihre Sicherheitsmitarbeiter angeben, ob eine Warnung wie folgt überprüft wurde:
 
 * Eine echte Warnung, die tatsächliche Verletzungs Aktivität oder Bedrohungs Komponenten identifiziert
 * Eine falsche Warnung, bei der die normale Aktivität falsch erkannt wurde
@@ -86,12 +86,12 @@ Zusammen mit der Klassifizierung, ob eine Warnung bei der Lösung true oder fals
 
 Die Karte für die **Geräte Warnungs Ermittlung** zeigt die für jede Warnung vorgesehene Ermittlung an.
 
-* **Apt**: Fortgeschrittene beständige Bedrohung, die darauf hinweist, dass die erkannte Aktivität oder Bedrohungs Komponente Teil einer anspruchsvollen Sicherheitslücke ist, die im betroffenen Netzwerk Fuß fassen soll  
-* **Schadsoftware**: bösartige Datei oder Code
-* **Sicherheitspersonal**: normale Aktivitäten, die von Sicherheitsmitarbeitern ausgeführt werden
-* **Sicherheitstests**: Aktivitäten oder Komponenten, die zum Simulieren von tatsächlichen Bedrohungen entwickelt wurden und erwartet wurden, um Sicherheitssensoren auszulösen und Warnungen zu generieren
-* **Unerwünschte Software**: apps und andere Software, die nicht als bösartig eingestuft werden, andernfalls jedoch Richtlinien oder akzeptable Nutzungsstandards verletzen
-* **Sonstiges**: jede andere Bestimmung, die nicht unter die angegebenen Typen fällt
+* **Apt** : Fortgeschrittene beständige Bedrohung, die darauf hinweist, dass die erkannte Aktivität oder Bedrohungs Komponente Teil einer anspruchsvollen Sicherheitslücke ist, die im betroffenen Netzwerk Fuß fassen soll  
+* **Schadsoftware** : bösartige Datei oder Code
+* **Sicherheitspersonal** : normale Aktivitäten, die von Sicherheitsmitarbeitern ausgeführt werden
+* **Sicherheitstests** : Aktivitäten oder Komponenten, die zum Simulieren von tatsächlichen Bedrohungen entwickelt wurden und erwartet wurden, um Sicherheitssensoren auszulösen und Warnungen zu generieren
+* **Unerwünschte Software** : apps und andere Software, die nicht als bösartig eingestuft werden, andernfalls jedoch Richtlinien oder akzeptable Nutzungsstandards verletzen
+* **Sonstiges** : jede andere Bestimmung, die nicht unter die angegebenen Typen fällt
 
 Auf dieser Karte können Sie weitere Informationen im Microsoft Defender Security Center anzeigen.
 
@@ -162,9 +162,9 @@ Die Karte **Regeln zur Verringerung der Angriffsfläche** bietet einen Überblic
 
 Die obere Leiste auf der Karte zeigt die Gesamtzahl der Geräte an, die sich in den folgenden Bereitstellungsmodi befinden:
 
-* **Blockmodus**: Geräte mit mindestens einer Regel, die zum Blockieren der erkannten Aktivität konfiguriert ist
-* **Überwachungsmodus**: Geräte, für die keine Regeln zum Blockieren der erkannten Aktivität festgelegt sind, aber mindestens eine Regel zum Überwachen der erkannten Aktivität festgelegt ist  
-* **Off**: Geräte mit ausgeschalteten ASR-Regeln
+* **Blockmodus** : Geräte mit mindestens einer Regel, die zum Blockieren der erkannten Aktivität konfiguriert ist
+* **Überwachungsmodus** : Geräte, für die keine Regeln zum Blockieren der erkannten Aktivität festgelegt sind, aber mindestens eine Regel zum Überwachen der erkannten Aktivität festgelegt ist  
+* **Off** : Geräte mit ausgeschalteten ASR-Regeln
 
 Der untere Teil dieser Karte zeigt die Einstellungen nach Regeln auf Ihren Geräten an. Jeder Balken gibt die Anzahl der zu blockierenden Geräte an, die Überwachungs Erkennung, oder die Regel ist vollständig deaktiviert.
 
@@ -176,10 +176,10 @@ Wenn Sie detaillierte Informationen zu ASR-Regel Erkennungen in Ihrem Netzwerk a
 
 Im Diagramm oben auf der Seite werden Erkennungen im Laufe der Zeit angezeigt, die entweder blockiert oder überwacht wurden. Die Tabelle am unteren Rand listet die aktuellsten Erkennungen auf. Verwenden Sie die folgenden Informationen in der Tabelle, um die Art der Erkennungen zu verstehen:
 
-* **Erkannte Datei**: die Datei, in der Regel ein Skript oder ein Dokument, dessen Inhalt die mutmaßliche Angriffs Aktivität ausgelöst hat
-* **Regel**: Name, der die Angriffsaktivitäten beschreibt, die von der Regel erfasst werden sollen. Lesen Sie mehr über vorhandene ASR-Regeln
-* **Quell-App**: die Anwendung, die Inhalte geladen oder ausgeführt hat, die die mutmaßliche Angriffs Aktivität ausgelöst haben. Es kann sich um eine legitime Anwendung wie Webbrowser, eine Office-Anwendung oder ein System Tool wie PowerShell handeln.
-* **Herausgeber**: der Anbieter, der die Quell-APP freigegeben hat
+* **Erkannte Datei** : die Datei, in der Regel ein Skript oder ein Dokument, dessen Inhalt die mutmaßliche Angriffs Aktivität ausgelöst hat
+* **Regel** : Name, der die Angriffsaktivitäten beschreibt, die von der Regel erfasst werden sollen. Lesen Sie mehr über vorhandene ASR-Regeln
+* **Quell-App** : die Anwendung, die Inhalte geladen oder ausgeführt hat, die die mutmaßliche Angriffs Aktivität ausgelöst haben. Es kann sich um eine legitime Anwendung wie Webbrowser, eine Office-Anwendung oder ein System Tool wie PowerShell handeln.
+* **Herausgeber** : der Anbieter, der die Quell-APP freigegeben hat
 
 ### <a name="review-device-asr-rule-settings"></a>Überprüfen der Einstellungen für die Geräte ASR-Regel
 
@@ -205,9 +205,9 @@ In der Tabelle sind alle Dateinamen aufgeführt, die von den Regeln für Angriff
 * Anzahl weniger Erkennungen
 * Anzahl weniger Geräte melden die Erkennungen
 
-Wenn Sie eine Liste der ausgewählten Dateien mit vollständigen Pfaden für den Ausschluss erhalten möchten, wählen Sie **Ausschluss Pfade abrufen**aus.
+Wenn Sie eine Liste der ausgewählten Dateien mit vollständigen Pfaden für den Ausschluss erhalten möchten, wählen Sie **Ausschluss Pfade abrufen** aus.
 
-Protokolle für den ASR **-Regel Block Anmeldeinformationen, die vom Windows Local Security Authority Subsystem (lsass.exe) gestohlen** werden, erfassen die Quell-APP **lsass.exe**. Es handelt sich um eine normale System Datei, die jedoch als erkannte Datei erfasst wird. Daher enthält die generierte Liste der Ausschluss Pfade diese Datei. Verwenden Sie den Pfad zur Quell-APP anstelle der erkannten Datei, um die Datei auszuschließen, die diese Regel anstelle von **lsass.exe**ausgelöst hat.
+Protokolle für den ASR **-Regel Block Anmeldeinformationen, die vom Windows Local Security Authority Subsystem (lsass.exe) gestohlen** werden, erfassen die Quell-APP **lsass.exe**. Es handelt sich um eine normale System Datei, die jedoch als erkannte Datei erfasst wird. Daher enthält die generierte Liste der Ausschluss Pfade diese Datei. Verwenden Sie den Pfad zur Quell-APP anstelle der erkannten Datei, um die Datei auszuschließen, die diese Regel anstelle von **lsass.exe** ausgelöst hat.
 
 Um die Quell-APP zu finden, führen Sie die folgende [erweiterte Suchabfrage](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting) für diese spezielle Regel aus (identifiziert durch die Regel-ID 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2):
 

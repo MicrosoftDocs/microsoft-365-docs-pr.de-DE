@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Erfahren Sie mehr über Threat Tracker, einschließlich neuer bemerkenswerter Tracker, damit Ihre Organisation weiterhin auf Sicherheitsbedenken eingeht.
-ms.openlocfilehash: a810dca8dd556d91196d48f387c799bbf89ef869
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: df544da7bfc5abebd45b0861c29f9e49632cdcd8
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446489"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842320"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Aufzeichnungen von Bedrohungen – neu und wichtig
 
@@ -32,7 +32,7 @@ ms.locfileid: "48446489"
 [Office 365 Bedrohungs Ermittlungs-und-Antwort](office-365-ti.md) Funktionen ermöglichen es dem Sicherheitsteam Ihrer Organisation, Cyber-Bedrohungen zu ermitteln und Maßnahmen zu ergreifen. Zu den Funktionen für die Untersuchung und die Reaktionsfähigkeit von Office 365 Threat Tracker gehören auch bemerkenswerte Tracker. Lesen Sie diesen Artikel, um einen Überblick über diese neuen Features und die nächsten Schritte zu erhalten. 
 
 > [!IMPORTANT]
-> Office 365 Threat Intelligence ist jetzt Office 365 Advanced Threat Protection Plan 2 zusammen mit zusätzlichen Funktionen zum Schutz vor Bedrohungen. Weitere Informationen finden Sie unter [Office 365 Advanced Threat Protection-Pläne und-Preise](https://products.office.com/exchange/advance-threat-protection) und der [Office 365 Advanced Threat Protection-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> Office 365 Threat Intelligence ist jetzt Microsoft Defender für Office 365 Plan 2, zusammen mit zusätzlichen Funktionen zum Schutz vor Bedrohungen. Weitere Informationen finden Sie unter [Microsoft Defender für Office 365 Pläne und Preise](https://products.office.com/exchange/advance-threat-protection) und [Microsoft Defender für Office 365-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 ## <a name="what-are-threat-trackers"></a>Was sind Threat Tracker?
 
@@ -44,9 +44,9 @@ Die meisten Tracker-Seiten umfassen Trend Nummern, die regelmäßig aktualisiert
   
 ![Beispiel für Kampagneninformationen im Explorer](../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
   
-Tracker sind nur einige der vielen tollen Funktionen, die Sie mit [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md)erhalten. Zu den Gefahren Verfolgungen gehören [Noteworth-Tracker](#noteworthy-trackers), [Trend Tracker](#trending-trackers), nach [verfolgte Abfragen](#tracked-queries)und [gespeicherte Abfragen](#saved-queries).
+Tracker sind nur einige der vielen großartigen Features, die Sie mit [Microsoft Defender für Office 365 Plan 2](office-365-ti.md)erhalten. Zu den Gefahren Verfolgungen gehören [Noteworth-Tracker](#noteworthy-trackers), [Trend Tracker](#trending-trackers), nach [verfolgte Abfragen](#tracked-queries)und [gespeicherte Abfragen](#saved-queries).
   
-Um Ihre Threat Tracker für Ihre Organisation anzuzeigen und zu verwenden, wechseln Sie zum Security &amp; Compliance Center ( [https://protection.office.com](https://protection.office.com) ) und wählen Sie Threat **Management** \> **Threat Tracker**aus.
+Um Ihre Threat Tracker für Ihre Organisation anzuzeigen und zu verwenden, wechseln Sie zum Security &amp; Compliance Center ( [https://protection.office.com](https://protection.office.com) ) und wählen Sie Threat **Management** \> **Threat Tracker** aus.
   
 > [!NOTE]
 > Um Threat Tracker verwenden zu können, müssen Sie ein globaler Administrator, Sicherheitsadministrator oder Sicherheits Leser sein. Weitere Informationen finden Sie unter [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). 
@@ -87,13 +87,13 @@ Beachten Sie, dass Sie uns jederzeit Feedback zu diesen oder anderen Sicherheits
   
 ![Security &amp; Compliance-Center ](../../media/86c330db-8132-4150-8475-220258fe04fb.png)
   
-## <a name="trackers-and-office-365-advanced-threat-protection"></a>Tracker und Office 365 Advanced Threat Protection
+## <a name="trackers-and-microsoft-defender-for-office-365"></a>Tracker und Microsoft Defender für Office 365
 
-Mit unserer ersten bemerkenswerten Bedrohung heben wir fortgeschrittene Malware-Bedrohungen hervor, die durch [sichere Anlagen](atp-safe-attachments.md)erkannt werden. Wenn Sie ein Office 365 Enterprise E5-Kunde sind und nicht [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) verwenden, sollten Sie in Ihrem Abonnement enthalten sein. ATP bietet auch dann einen Mehrwert, wenn andere Sicherheitstools e-Mail-Fluss mit Ihren Office 365 Diensten filtern. Allerdings funktionieren Antispam-und [sichere Links](atp-safe-links.md) -Funktionen am besten, wenn Ihre Haupt-e-Mail-Sicherheitslösung über Office 365.
+Mit unserer ersten bemerkenswerten Bedrohung heben wir fortgeschrittene Malware-Bedrohungen hervor, die durch [sichere Anlagen](atp-safe-attachments.md)erkannt werden. Wenn Sie ein Office 365 Enterprise E5-Kunde sind und [Microsoft Defender nicht für Office 365](office-365-atp.md)verwenden, sollten Sie in Ihrem Abonnement enthalten sein. Defender für Office 365 bietet auch dann einen Mehrwert, wenn andere Sicherheitstools e-Mail-Fluss mit Ihren Office 365 Diensten filtern. Allerdings funktionieren Antispam-und [sichere Links](atp-safe-links.md) -Funktionen am besten, wenn Ihre Haupt-e-Mail-Sicherheitslösung über Office 365.
   
-![ATP im Security &amp; Compliance Center](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
+![Microsoft Defender für Office 365 im Security &amp; Compliance Center](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
   
-In der heutigen mit Bedrohungen gespickten Welt bedeutet das Durchführen von nur herkömmlichen Antimalware-Scans, dass Sie nicht gut genug vor Angriffen geschützt sind. Modernere Angreifer verwenden häufig verfügbare Tools zum Erstellen von neuen, verschleierten oder verzögerten Angriffen, die von herkömmlichen Signaturen-basierten Antischadsoftware-Modulen nicht erkannt werden. Das Feature für sichere Anlagen verwendet e-Mail-Anlagen und zündet Sie in einer virtuellen Umgebung an, um festzustellen, ob diese sicher oder böswillig sind. Dieser detonations Prozess öffnet jede Datei in einer virtuellen Computerumgebung und überwacht dann, was nach dem Öffnen der Datei geschieht. Unabhängig davon, ob es sich um eine PDF-Datei, eine komprimierte Datei oder ein Office-Dokument handelt, der böswillige Code kann in einer Datei ausgeblendet werden und nur aktiviert werden, wenn das Opfer Sie auf seinem Computer öffnet. Durch das detonieren und Analysieren der Datei im e-Mail-Fluss findet Office 365 ATP-Funktionen diese Bedrohungen basierend auf Verhaltensweisen, dateireputation und einer Reihe von heuristischen Regeln.
+In der heutigen mit Bedrohungen gespickten Welt bedeutet das Durchführen von nur herkömmlichen Antimalware-Scans, dass Sie nicht gut genug vor Angriffen geschützt sind. Modernere Angreifer verwenden häufig verfügbare Tools zum Erstellen von neuen, verschleierten oder verzögerten Angriffen, die von herkömmlichen Signaturen-basierten Antischadsoftware-Modulen nicht erkannt werden. Das Feature für sichere Anlagen verwendet e-Mail-Anlagen und zündet Sie in einer virtuellen Umgebung an, um festzustellen, ob diese sicher oder böswillig sind. Dieser detonations Prozess öffnet jede Datei in einer virtuellen Computerumgebung und überwacht dann, was nach dem Öffnen der Datei geschieht. Unabhängig davon, ob es sich um eine PDF-Datei, eine komprimierte Datei oder ein Office-Dokument handelt, der böswillige Code kann in einer Datei ausgeblendet werden und nur aktiviert werden, wenn das Opfer Sie auf seinem Computer öffnet. Durch das detonieren und Analysieren der Datei im e-Mail-Fluss findet Defender for Office 365-Funktionen diese Bedrohungen basierend auf dem Verhalten, der dateireputation und einer Reihe von heuristischen Regeln.
   
 Mit dem neuen bemerkenswerten Bedrohungs Filter werden Elemente hervorgehoben, die vor kurzem über sichere Anlagen erkannt wurden. Diese Erkennungen stellen Elemente dar, bei denen es sich um neue schädliche Dateien handelt, die zuvor von Microsoft 365 weder in Ihrem e-Mail-Fluss noch in der e-Mail anderer Kunden gefunden wurden. Achten Sie auf die Elemente im bemerkenswerten Threat Tracker, sehen Sie, wer von Ihnen anvisiert wurde, und überprüfen Sie die detonations Details auf der Registerkarte Erweiterte Analyse (gefunden durch Klicken auf den Betreff der e-Mail im Explorer). Hinweis Sie finden diese Registerkarte nur in e-Mails, die von der Funktion "sichere Anlagen" erkannt werden – dieser bemerkenswerte Tracker enthält diesen Filter, aber Sie können diesen Filter auch für andere Suchvorgänge im Explorer verwenden.
   
@@ -105,4 +105,4 @@ Mit dem neuen bemerkenswerten Bedrohungs Filter werden Elemente hervorgehoben, d
 
 - Achten Sie darauf, dass die neuen Tracker in Ihrer Microsoft 365-Umgebung angezeigt werden. Wenn verfügbar, finden Sie [hier](https://protection.office.com/)ihre Tracker. Wechseln Sie zu Threat **Management** \> **Threat Tracker**.
 
-- Wenn Sie dies noch nicht getan haben, erfahren Sie mehr über und konfigurieren Sie [Office 365 Advanced Threat Protection](office-365-atp.md) für Ihre Organisation, einschließlich [sicherer Links](atp-safe-links.md) und [sicherer Anlagen](atp-safe-attachments.md).
+- Wenn Sie dies noch nicht getan haben, erfahren Sie mehr über und konfigurieren Sie [Microsoft Defender für Office 365](office-365-atp.md) für Ihre Organisation, einschließlich [sicherer Links](atp-safe-links.md) und [sicherer Anlagen](atp-safe-attachments.md).
