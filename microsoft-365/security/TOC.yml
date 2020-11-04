@@ -410,6 +410,8 @@
               href: ./office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md
             - name: Richtlinien für Benutzerübermittlungen
               href: ./office-365-security/user-submission.md
+            - name: Benutzertags in Office 365 ATP
+              href: ./office-365-security/user-tags.md
             - name: 'Aktivieren von ATP für SharePoint, OneDrive und Microsoft Teams'
               href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
             - name: Verwenden von DKIM zum Überprüfen ausgehender E-Mails
@@ -487,6 +489,8 @@
           items:
             - name: Verwendung von Bedrohungs-Trackern
               href: ./office-365-security/threat-trackers.md
+            - name: Warnungen anzeigen
+              href: ../compliance/alert-policies.md
             - name: Intelligente Berichte und Einblicke im Security & Compliance Center
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
             - name: Aktivieren des Add-Ins „Nachrichten melden“

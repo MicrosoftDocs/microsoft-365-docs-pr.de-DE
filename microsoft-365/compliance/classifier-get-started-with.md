@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Eine Microsoft 365-Klassifizierung ist ein Tool, mit dem Sie verschiedene Arten von Inhalten erkennen können, indem Sie sich Beispiele ansehen. In diesem Artikel erfahren Sie, wie Sie eine benutzerdefinierte Klassifizierung erstellen und trainieren und Sie neu trainieren, um die Genauigkeit zu verbessern.
-ms.openlocfilehash: 4475456e7116acbc705a3121079391a571fcca8a
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: f0d3659c1ee03fe69a5513f24d15b295400a24dc
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841232"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906346"
 ---
 # <a name="get-started-with-trainable-classifiers-preview"></a>Erste Schritte mit trainierbaren Klassifizierern (Vorschau)
 
@@ -44,7 +44,7 @@ Klassifizierungen sind ein Microsoft 365 E5-oder E5-Konformitäts Feature. Sie m
 So greifen Sie auf die Klassifizierung in der Benutzeroberfläche zu: 
 
 - der globale Administrator muss sich für den Mandanten anmelden, um benutzerdefinierte Klassifizierungen zu erstellen.
-- zur Schulung einer Klassifizierung ist die Rolle "Compliance-Administrator", "Daten Ermittlungs Rolle" oder "Compliance-Daten Administrator" erforderlich.
+- Compliance-Administrator oder Daten Ermittlungs Rolle ist erforderlich, um eine Klassifizierung zu trainieren.
 
 Sie benötigen Konten mit diesen Berechtigungen für die Verwendung von Klassifizierungen in den folgenden Szenarien:
 

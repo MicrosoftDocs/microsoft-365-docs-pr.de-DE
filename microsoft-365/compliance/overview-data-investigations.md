@@ -18,14 +18,19 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-mar2020
 description: In diesem Artikel erfahren Sie mehr über das Tool zur Datenermittlung (Preview) in Microsoft 365. Mit dem Tool zur Datenermittlung können Sie das Verschütten von Daten bewerten und beheben.
-ms.openlocfilehash: 21241ad36278bc75a8363b9aeefeaf4caec783b5
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: f3e08ca602d9d131cd25d234c96c660f0b9639aa
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285991"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906930"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Übersicht über Daten Untersuchungen (Vorschau) in Microsoft 365
+
+> [!IMPORTANT]
+> Nach vielen Beratungen und Gesprächen mit unseren Kunden haben wir uns entschlossen, das Tool zur Datenermittlung nicht für die allgemeine Verfügbarkeit freizugeben. Daher entfernen wir dieses Tool und alle Daten, die mit vorhandenen Daten Ermittlungs Fällen im Zusammenhangstehen, am 31. Dezember 2020.  Um Daten Untersuchungen in Ihrer Organisation zu verwalten, empfehlen wir die Verwendung von zentralen eDiscovery-Fällen. Wenn Sie nach Inhalten von Microsoft 365 suchen und diese löschen möchten, lesen Sie die folgenden Artikel: 
+> - [eDiscovery-Lösungsreihe: Szenario mit Datenüberlauf-Suche und Bereinigung](data-spillage-scenariosearch-and-purge.md)
+> - [Suchen nach und Löschen von E-Mail-Nachrichten](search-for-and-delete-messages-in-your-organization.md)
 
 Ein Datenüberlauf tritt auf, wenn ein Dokument mit vertraulichen, vertraulichen oder böswilligen Inhalten in einer nicht vertrauenswürdigen Umgebung freigegeben wird. Wenn ein Datenüberlauf erkannt wird, ist es wichtig, die Umgebung schnell einzudämmen, die Größe und die Speicherorte des Verfalls zu bewerten, Benutzeraktivitäten um Sie herum zu untersuchen und dann die verschütteten Daten aus dem Dienst zu löschen. Mit dem Tool neue Daten Untersuchungen (Vorschau) können Sie nach vertraulichen, böswilligen oder verfallenen Daten in Office 365 suchen, die Ereignisse untersuchen und die entsprechenden Aktionen zum Beheben des Verfalls durchführen.  
 
@@ -37,7 +42,7 @@ Sie müssen Mitglied der Rollengruppe "Data Investigator" sein, um auf eine Date
 
 ## <a name="data-investigations-preview-workflow"></a>Workflow für Daten Untersuchungen (Vorschau) 
 
-In den folgenden Abschnitten werden die einzelnen Schritte des integrierten Workflows in Data Investigations (Preview) beschrieben. Der folgende Screenshot zeigt die Registerkarte **Startseite** einer Untersuchung mit dem Namen " *High Risk: Finance Documents Leak*". 
+In den folgenden Abschnitten werden die einzelnen Schritte des integrierten Workflows in Data Investigations (Preview) beschrieben. Der folgende Screenshot zeigt die Registerkarte **Startseite** einer Untersuchung mit dem Namen " *High Risk: Finance Documents Leak* ". 
 
 ![Workflow im Data Investigations-Tool](../media/DataInvestigationsWorkflow.png)
 
@@ -62,7 +67,7 @@ Verwenden Sie die Registerkarte **Personen von Interesse** , um die Personen hin
 
 ## <a name="indexing-the-data-of-people-of-interest"></a>Indizieren der Daten von Personen von Interesse
 
-Durch das Hinzufügen einer Person, die für eine Untersuchung interessant ist, werden alle teilweise indizierten Elemente aus den Datenquellen der Person neu indiziert. Dieser Vorgang wird als *Erweiterte Indizierung*bezeichnet. Durch die erweiterte Indizierung werden Daten wie Bilder und nicht unterstützte Dateitypen erneut verarbeitet, sodass diese Daten vollständig auffindbar sind, wenn Sie Suchvorgänge ausführen, um Daten für eine Untersuchung zu erfassen. Verwenden Sie die Registerkarte **Verarbeitung** , um den Status der erweiterten Indizierung zu überwachen und etwaige Verarbeitungsfehler zu beheben, die bei einem Prozess mit dem Namen *Fehlerbehebung*auftreten können. Weitere Informationen finden Sie unter [Fehlerkorrektur bei der Verarbeitung von Daten für eine Untersuchung](error-remediation.md).
+Durch das Hinzufügen einer Person, die für eine Untersuchung interessant ist, werden alle teilweise indizierten Elemente aus den Datenquellen der Person neu indiziert. Dieser Vorgang wird als *Erweiterte Indizierung* bezeichnet. Durch die erweiterte Indizierung werden Daten wie Bilder und nicht unterstützte Dateitypen erneut verarbeitet, sodass diese Daten vollständig auffindbar sind, wenn Sie Suchvorgänge ausführen, um Daten für eine Untersuchung zu erfassen. Verwenden Sie die Registerkarte **Verarbeitung** , um den Status der erweiterten Indizierung zu überwachen und etwaige Verarbeitungsfehler zu beheben, die bei einem Prozess mit dem Namen *Fehlerbehebung* auftreten können. Weitere Informationen finden Sie unter [Fehlerkorrektur bei der Verarbeitung von Daten für eine Untersuchung](error-remediation.md).
 
 ## <a name="exporting-data"></a>Exportieren von Daten
 

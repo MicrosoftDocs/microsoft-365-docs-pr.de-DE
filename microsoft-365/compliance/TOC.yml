@@ -266,6 +266,8 @@
           href: dlp-sensitivity-label-as-condition.md
         - name: Verwenden von Richtlinien zur Verhinderung von Datenverlust für nicht von Microsoft stammende Cloud-Apps
           href: dlp-use-policies-non-microsoft-cloud-apps.md
+        - name: 'DLP-Richtlinien: Bedingungen und Ausnahmen (Vorschau)'
+          href: dlp-conditions-and-exceptions.md
 - name: Verwalten der Informationsgovernance
   items:
     - name: Ihre Daten verwalten
