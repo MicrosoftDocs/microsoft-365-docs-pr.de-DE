@@ -1,5 +1,5 @@
 ---
-title: Anpassen der Teamwebsite für die Dateispeicherung und-Freigabe – SharePoint Online
+title: Anpassen einer SharePoint-Teamwebsite für die Speicherung und Freigabe von Dateien
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -17,19 +17,20 @@ ms.collection:
 ms.custom:
 - IT_Networking
 - seo-marvel-apr2020
+- seo-marvel-may2020
 - AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
-description: In diesem Artikel erfahren Sie, wie Sie Ihre Teamwebsite für die Dateispeicherung und-Freigabe anpassen, organisieren und verwalten.
-ms.openlocfilehash: f2c59607d006cd6e5529d9e5ffb3d2f6eead6edf
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: In diesem Artikel erfahren Sie, wie Sie Ihre SharePoint-Teamwebsite mit Dokumentbibliotheken, Listen und Hubs anpassen, organisieren und verwalten können.
+ms.openlocfilehash: 3eb09f0b0160333e3b17ebc5f02424ba3d24a13c
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644567"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906489"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Anpassen Ihrer Teamwebsite für die Speicherung und Freigabe von Dateien
 
@@ -39,7 +40,7 @@ Wenn Sie ein kleines Unternehmen mit einigen Mitarbeitern haben, besteht eine de
   
 [Erstellen einer Teamwebsite in SharePoint](https://support.microsoft.com/office/ef10c1e7-15f3-42a3-98aa-b5972711777d)
   
-Hier finden Sie einige Ideen und Links, mit denen Sie Ihre Teamwebsite anpassen, organisieren und verwalten können. 
+Hier finden Sie einige Ideen und Links, mit denen Sie Ihre Teamwebsite anpassen, organisieren und verwalten können.
   
  
 ## <a name="customize-your-team-site"></a>Anpassen Ihrer Teamwebsite
@@ -60,7 +61,7 @@ Informationen zu den Einstellungen für die Teamwebsite finden Sie unter [Verwal
   
 ## <a name="work-with-document-libraries"></a>Arbeiten mit Dokumentbibliotheken
 
-Eine Teamwebsite enthält eine Dokumentbibliothek, mit der Sie sofort beginnen können. 
+Eine Teamwebsite enthält eine Dokumentbibliothek, die Sie sofort für die Dateispeicherung und Dokumentverwaltung verwenden können.
 
 Informationen zum Starten des Uploads finden Sie unter [Hochladen eines Ordners oder einer Datei in eine Dokumentbibliothek](https://support.microsoft.com/office/eb18fcba-c953-4d45-8d90-8da66edeacdb) .
    
@@ -70,7 +71,7 @@ Informationen zum Erstellen von Ansichten von Bibliotheken zum Aufteilen bestimm
   
 ## <a name="work-with-lists-to-organize-data"></a>Arbeiten mit Listen zum Organisieren von Daten
 
-SharePoint enthält zahlreiche Vorlagen für Listen, die Sie zu Ihrer Website hinzufügen können, beispielsweise eine Liste mit Links, einen Kalender, Kontakte oder Aufgaben. 
+SharePoint enthält zahlreiche Vorlagen für Listen, die Sie zu Ihrer Website hinzufügen können, beispielsweise eine Liste mit Links, einen Kalender, Kontakte oder Aufgaben.
   
 Hier erfahren Sie, wie Sie [eine Liste in SharePoint erstellen](https://support.microsoft.com/office/0D397414-D95F-41EB-ADDD-5E6EFF41B083#ID0EAAGAAA=Online).
   
@@ -82,7 +83,7 @@ Sehen Sie sich ein Video zum Hinzufügen von Kalendern zu Ihrer Website an, sieh
 
 ## <a name="organize-sites-into-hubs"></a>Organisieren von Websites in Hubs
 
-Ihre Teamwebsite teilt fast alles mit allen Mitgliedern der Gruppe, die der Website zugeordnet ist. Wenn Sie einen separaten Standort für bestimmte Kunden haben möchten, können Sie zusätzliche Teamwebsites erstellen und diese mithilfe von SharePoint-Hub-Websites verwalten. Hier finden Sie weitere Informationen. 
+Ihre Teamwebsite teilt fast alles mit allen Mitgliedern der Gruppe, die der Website zugeordnet ist. Wenn Sie einen separaten Standort für bestimmte Kunden haben möchten, können Sie zusätzliche Teamwebsites erstellen und diese mithilfe von SharePoint-Hub-Websites verwalten. Hier finden Sie weitere Informationen.
   
 Hub-Standorte ermöglichen das Hinzufügen und Zuordnen von Websites. Weitere Informationen finden Sie unter [Was ist eine SharePoint-Hub-Website?](https://support.microsoft.com/office/fe26ae84-14b7-45b6-a6d1-948b3966427f).
   
@@ -92,7 +93,7 @@ Informationen zum Hinzufügen von Websites zu einem Hub-Standort finden Sie unte
   
 ## <a name="sharing-files-with-the-team"></a>Freigeben von Dateien für das Team
 
-Während das Speichern und organisieren ein Anfang ist, ist auch die Freigabe mit Ihrem Team und externen Clients wichtig. Im folgenden finden Sie Links zu Themen, die Sie bei der Verwaltung von Benutzern und der Freigabe Ihrer Daten unterstützen. 
+Während die Dateispeicherung und Dokumentverwaltung ein Anfang ist, ist auch die Freigabe mit Ihrem Team und externen Clients wichtig. Im folgenden finden Sie Links zu Themen, die Sie bei der Verwaltung von Benutzern und der Freigabe Ihrer Daten unterstützen.
   
 Informationen zur Dateifreigabe mit Ihrem Team finden Sie unter [share SharePoint files or folders in Microsoft 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).
   
@@ -100,7 +101,7 @@ Informationen zum Verständnis der Freigabe außerhalb Ihres Teams finden Sie un
   
 ## <a name="managing-users-and-groups"></a>Verwalten von Benutzern und Gruppen
 
-Wenn Sie Ihre Teamwebsite verwalten, müssen Sie möglicherweise Benutzer hinzufügen oder entfernen. Hier finden Sie Informationen, die Sie beim verstehen, hinzufügen und Verwalten von Benutzern auf Ihrer Teamwebsite unterstützen. 
+Wenn Sie Ihre Teamwebsite verwalten, müssen Sie möglicherweise Benutzer hinzufügen oder entfernen. Hier finden Sie Informationen, die Sie beim verstehen, hinzufügen und Verwalten von Benutzern auf Ihrer Teamwebsite unterstützen.
   
 Zeigen Sie ein Video zu Gruppen mit [verstehen und Verwalten von Gruppen](https://support.microsoft.com/office/9c1037b7-de0b-41cd-b8f0-79a95aac854d)an. 
   
@@ -119,6 +120,3 @@ Hier erfahren Sie, wie Sie Zugriffsanforderungen mit [Einrichten und Verwalten v
   - [Einrichten von Office auf Windows Phone mit Microsoft 365](https://support.microsoft.com/office/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7)
     
 - [Weitere Informationen zum Verwenden von OneDrive](https://go.microsoft.com/fwlink/?LinkID=511458).
-    
-
-

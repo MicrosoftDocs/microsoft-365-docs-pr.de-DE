@@ -16,23 +16,24 @@ ms.collection:
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
+- seo-marvel-may2020
 - AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
-description: Hier erfahren Sie, wie Sie e-Mail-Signaturen, rechtliche Hinweise oder Offenlegungserklärungen allen e-Mail-Nachrichten hinzufügen, die Ihre Organisation betreten oder verlassen.
-ms.openlocfilehash: d7e19c6e3f425f95429aefd769d2b8992fde141e
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+description: Informationen zum Verwalten von e-Mail-Signaturen, einschließlich rechtlicher Haftungsausschlüssen oder Offenlegungserklärungen für alle e-Mail-Nachrichten, die Ihre Organisation betreten oder verlassen.
+ms.openlocfilehash: 9e438b42eb95dced4c3b99d21c66011365b180c9
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44779881"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906501"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Erstellen von organisationsweiten Signaturen und Haftungsausschlüssen
 
- [] Sie können den E-Mail-Nachrichten, die an Ihre Organisation oder von ihr gesendet werden, eine E-Mail-Signatur, einen Haftungsausschluss oder eine Offenlegungserklärung hinzufügen. Das können Sie so einrichten, dass diese Hinzufügung auf alle ein- und ausgehenden Nachrichten angewendet wird, wie unten gezeigt wird. Oder Sie können sie nur auf bestimmte Nachrichten anwenden, z. B. solche, die bestimmte Wörter oder Textmuster enthalten.
+ Sie können e-Mail-Signaturen verwalten, indem Sie e-Mail-Nachrichten, die Ihre Organisation betreten oder verlassen, eine e-Mail-Signatur, einen rechtlichen Haftungsausschluss oder eine Offenlegungserklärung Sie können es so einrichten, dass es auf alle eingehenden und ausgehenden Nachrichten angewendet wird, wie unten dargestellt. Sie können es auch auf bestimmte Nachrichten anwenden, wie die, die bestimmte Wörter oder Textmuster enthalten.
 
  Sehen Sie sich ein kurzes Video über die Erstellung einer unternehmensweiten e-Mail-Signatur an. <br><br>
   
@@ -63,15 +64,15 @@ Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?
 
 ::: moniker-end
 
-1. Wählen Sie das App- ![ Startfeld aus ](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) , und wählen Sie dann **Admin**aus.
+1. Wählen Sie das App- ![ Startfeld aus ](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) , und wählen Sie dann **Admin** aus.
    
     Sie können die gesuchte App nicht finden? Wählen Sie im App-Startfeld **alle apps** aus, um eine alphabetische Liste der apps anzuzeigen, die Ihnen zur Verfügung stehen. Hier können Sie nach einer bestimmten App suchen. 
     
-2. Wählen Sie **Admin Center**aus, und wählen Sie dann **Exchange**aus.
+2. Wählen Sie **Admin Center** aus, und wählen Sie dann **Exchange** aus.
     
-3. Wählen Sie unter Nachrichtenfluss die Option **Regeln**aus.
+3. Wählen Sie unter Nachrichtenfluss die Option **Regeln** aus.
     
-4. Wählen Sie das **+** Symbol (hinzufügen) aus, und wählen Sie **Haftungsausschlüsse anwenden**aus.
+4. Wählen Sie das **+** Symbol (hinzufügen) aus, und wählen Sie **Haftungsausschlüsse anwenden** aus.
     
 5. Benennen Sie die Regel.
     
@@ -89,7 +90,7 @@ Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?
 
 9. Wählen Sie **einen auswählen** aus, und wählen Sie **umbrechen** als Fallback Option aus. Klicken Sie dann auf **OK**. Dies bedeutet: Wenn der Haftungsausschluss wegen Verschlüsselung oder einer anderen E-Mail-Einstellung nicht hinzugefügt werden kann, wird er in einen Nachrichtenumschlag eingeschlossen.
     
-10. Lassen Sie **Diese Regel mit Schweregrad überwachen** aktiviert. Wählen Sie dann einen der Werte **Niedrig**, **Mittel** oder **Hoch** aus, der im Nachrichtenprotokoll verwendet werden soll. 
+10. Lassen Sie **Diese Regel mit Schweregrad überwachen** aktiviert. Wählen Sie dann einen der Werte **Niedrig** , **Mittel** oder **Hoch** aus, der im Nachrichtenprotokoll verwendet werden soll. 
     
 11. Wählen Sie **Erzwingen** aus, um den Haftungsausschluss sofort zu aktivieren, wenn Sie ihn nicht zuerst testen möchten. 
     
@@ -99,7 +100,7 @@ Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?
     
 ## <a name="limitations-of-organization-wide-signatures"></a>Einschränkungen von organisationsweiten Signaturen
 
-Mit Microsoft 365-Signaturen können Sie Folgendes nicht ausführen:
+Beim Verwalten von e-Mail-Signaturen in Microsoft 365 können Sie Folgendes nicht ausführen:
   
 - Einfügen der Signatur direkt unter der letzten e-Mail-Antwort oder Weiterleitung
     
@@ -109,10 +110,8 @@ Mit Microsoft 365-Signaturen können Sie Folgendes nicht ausführen:
     
 - Zeilen überspringen, die Variablen enthalten, die nicht aktualisiert werden konnten (beispielsweise, weil der Wert für einen Benutzer nicht angegeben wurde)
     
-Um diese und andere Funktionen zu erhalten, verwenden Sie ein Drittanbietertool. Führen Sie eine Internetsuche für die **e-Mail-Signatur Software**aus. Eine Reihe dieser Anbieter sind Microsoft Gold-Partner, deren Software diese Funktionen bereitstellt. 
+Um diese und andere Funktionen zum Verwalten von e-Mail-Signaturen zu erhalten, verwenden Sie ein Drittanbietertool. Führen Sie eine Internetsuche für die **e-Mail-Signatur Software** aus. Eine Reihe dieser Anbieter sind Microsoft Gold-Partner, deren Software diese Funktionen bereitstellt. 
   
 ## <a name="more-resources"></a>Weitere Ressourcen
 
-- Informationen zur Verwendung von PowerShell finden Sie unter [organisationsweite Nachrichten Haftungsausschlüsse, Signaturen, Fußzeilen oder Kopfzeilen in Microsoft 365](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) . 
-    
-
+- Informationen zur Verwendung von PowerShell finden Sie unter [organisationsweite Nachrichten Haftungsausschlüsse, Signaturen, Fußzeilen oder Kopfzeilen in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) .

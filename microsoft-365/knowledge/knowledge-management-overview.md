@@ -11,12 +11,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Übersicht über das Wissensmanagement in Project Cortex.
-ms.openlocfilehash: c4f7ff7d65ec08740dc14f717712731d839bd903
-ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
+ms.openlocfilehash: d422b54bb7991fb5fd61465cd0428ab586d10bf5
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48361951"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906941"
 ---
 # <a name="knowledge-management-overview-preview"></a>Knowledge Management-Übersicht (Vorschau)
 
@@ -29,25 +29,32 @@ Knowledge Management verwendet Microsoft AI-Technologie, Microsoft 365, forschen
 
 Ziel ist es, Benutzern Informationen in apps, die Sie täglich verwenden, wie Outlook, Microsoft Teams und SharePoint, zu liefern.
 
-Beispielsweise können Benutzer unbekannte Begriffe in Ihren e-Mails, SharePoint-Websites oder in Microsoft Teams-Unterhaltungen sehen, über die Sie mehr erfahren möchten. Das Knowledge Management verwendet AI automatisch, um nach diesen **Themen**zu suchen und diese zu identifizieren, und kompiliert Informationen dazu, beispielsweise eine kurze Beschreibung, Sachverständige für das Thema sowie Websites, Dateien und Seiten, die damit zusammenhängen. Sie können auswählen, dass die Themen Informationen bei Bedarf aktualisiert werden. Anschließend können Sie die Themen den Benutzern zur Verfügung stellen, was bedeutet, dass der Text für jede Instanz des Themas, die in apps wie Outlook, Microsoft Teams und SharePoint angezeigt wird, hervorgehoben wird. Benutzer können das Thema auswählen, um weitere Informationen über das Thema Details zu erhalten.
+Beispielsweise können Benutzer unbekannte Begriffe in Ihren e-Mails, SharePoint-Websites oder in Microsoft Teams-Unterhaltungen sehen, über die Sie mehr erfahren möchten. Das Knowledge Management verwendet AI automatisch, um nach diesen **Themen** zu suchen und diese zu identifizieren, und kompiliert Informationen dazu, beispielsweise eine kurze Beschreibung, Sachverständige für das Thema sowie Websites, Dateien und Seiten, die damit zusammenhängen. Sie können auswählen, dass die Themen Informationen bei Bedarf aktualisiert werden. Anschließend können Sie die Themen den Benutzern zur Verfügung stellen, was bedeutet, dass der Text für jede Instanz des Themas, die in apps wie Outlook, Microsoft Teams und SharePoint angezeigt wird, hervorgehoben wird. Benutzer können das Thema auswählen, um weitere Informationen über das Thema Details zu erhalten.
 
 
-## <a name="topic-discovery"></a>Thema Ermittlung
+## <a name="topic-indexing"></a>Thema Indizierung
 
-Knowledge Management verwendet Microsoft AI-Technologie, um nach **Themen** in Ihrer Office 365 Umgebung zu suchen.
+Knowledge Management verwendet Microsoft AI-Technologie, um **Themen** in Ihrer Office 365 Umgebung zu identifizieren.
 
 Ein Thema ist ein Ausdruck oder ein Begriff, der organisatorisch bedeutsam oder wichtig ist. Es hat eine spezifische Bedeutung für die Organisation und verfügt über Ressourcen, die dazu beitragen können, dass die Benutzer verstehen, was Sie sind, und weitere Informationen dazu finden.
 
-Wenn ein Thema ermittelt wird, wird eine **Thema-Seite** dafür erstellt, die Informationen enthält, die über die Themen Ermittlung gesammelt wurden, beispielsweise:
+Wenn ein Thema identifiziert wird, wird eine **Themen Seite** dafür erstellt, die Informationen enthält, die über die Themen Indizierung gesammelt wurden, beispielsweise:
 
+- Alternative Namen und/oder Akronyme.
 - Eine kurze Beschreibung des Themas.
 - Benutzer, die sich möglicherweise mit dem Thema vertraut sind.
 - Dateien, Seiten und Websites im Zusammenhang mit dem Thema.
 
 
+## <a name="topic-discovery"></a>Thema Ermittlung
+Wenn ein Thema in Inhalten auf SharePoint-News und-Seiten erwähnt wird, wird es hervorgehoben angezeigt. Öffnen Sie die Themen Zusammenfassung aus der Hervorhebung. Öffnen Sie die Themen Details aus dem Titel der Zusammenfassung. <!--(msg for Efren: not sure if I should use discovery for this; we use discovered in-product for indexing?)--> Das erwähnte Thema konnte automatisch identifiziert werden oder wurde der Seite mit einem direkten Verweis auf das Thema vom Seitenautor hinzugefügt.
+
+Sie können Themen auch über die Microsoft-Suche ermitteln.
+
+
 ## <a name="topic-management"></a>Thema Verwaltung
 
-Die Themen Verwaltung erfolgt im **Themen Center**Ihrer Organisation. Die Themen Center-Website wird während des Setups erstellt und dient als Ihr Wissenszentrum für Ihre Organisation. Sie enthält eine Liste aller Themen, die in Ihrer Umgebung ermittelt wurden, sowie alle Thema Seiten, die für diese Themen erstellt wurden. 
+Die Themen Verwaltung erfolgt im **Themen Center** Ihrer Organisation. Die Themen Center-Website wird während des Setups erstellt und dient als Ihr Wissenszentrum für Ihre Organisation. Sie enthält eine Liste aller Themen, die in Ihrer Umgebung ermittelt wurden, sowie alle Thema Seiten, die für diese Themen erstellt wurden. 
 
 Benutzer, denen die richtigen Berechtigungen bereitgestellt werden, können im Themen Center folgende Aufgaben ausführen:
 
@@ -70,15 +77,13 @@ Mit Administrator Steuerelementen im Microsoft 365 Admin Center können Sie Ihr 
 
 Weitere Informationen finden Sie unter [Manage Your Knowledge Network](manage-knowledge-network.md) . 
 
-## <a name="topic-curation"></a>Thema Kuration
+## <a name="topic-curation--feedback"></a>Thema Kuration & Feedback
 
 AI arbeitet kontinuierlich daran, Ihnen Vorschläge zur Verbesserung ihrer Themen zur Verfügung zu stellen, wenn Änderungen in Ihrer Umgebung stattfinden.
 
-Benutzer, denen Sie den Zugriff ermöglichen, um Themen in ihrer täglichen Arbeit anzuzeigen, können Vorschläge zur Verbesserung der Inhalte machen. Wenn ein Benutzer beispielsweise die Themen Seite anzeigt und Informationen sieht, die falsch sind oder hinzugefügt werden müssen, kann ein Link auf der Themen Seite eine Anforderung zum Aktualisieren der Informationen übermitteln.
+Benutzer, denen Sie den Zugriff ermöglichen, um Themen in ihrer täglichen Arbeit anzuzeigen, können Vorschläge zur Verbesserung der Inhalte machen. Wenn ein Benutzer beispielsweise die Themen Seite anzeigt und Informationen sieht, die falsch sind oder hinzugefügt werden müssen, können Sie mit einem Link auf der Themen Seite die Informationen direkt bearbeiten. Ein weiteres Beispiel: Wenn ein Benutzer ein Highlight auf einer SharePoint-News Seite anzeigt, werden Sie Fragen stellen, ob die Hervorhebung geeignet ist oder nicht, das vorgeschlagene Thema ist für Ihre Organisation geeignet. Ihre Antwort hilft bei der Bestimmung, was in den Themen Zusammenfassungen und Themen Details gezeigt wird.
 
-Darüber hinaus können Benutzer mit den entsprechenden Berechtigungen Elemente wie Microsoft Teams-Unterhaltungen markieren, die für ein Thema relevant sind, und Sie zu einem bestimmten Thema hinzufügen.
-
-
+Darüber hinaus können Benutzer mit den entsprechenden Berechtigungen Elemente wie "jammern"-Unterhaltungen, die für ein Thema relevant sind, markieren und zu einem bestimmten Thema hinzufügen. <!--(msg for Efren: changed to Yammer, because we will not have shipped Teams yet)-->
 
 
 ## <a name="see-also"></a>Siehe auch

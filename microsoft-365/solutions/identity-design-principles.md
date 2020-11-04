@@ -1,6 +1,6 @@
 ---
-title: Zur Identität und darüber hinaus – ein Architektur Standpunkt
-description: Eine Beschreibung.
+title: Microsoft 365 Enterprise-Ressourcenplanung – Sicherheitsarchitektur
+description: Erfahren Sie mehr über die wichtigsten Designstrategien für Microsoft Enterprise Architecture von Alex Shteynberg, Technical Principal Architect bei Microsoft.
 ms.author: bcarter
 author: brendacarter
 manager: bcarter
@@ -11,14 +11,15 @@ localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.custom: ''
+- M365solutions
+ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: fc975610e24980c6a552179359bb643eb9ac040c
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: e691b47a2d508064243886957ac491088df2f8ae
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845252"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906895"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>Zur Identität und darüber hinaus – ein Architektur Standpunkt
 
@@ -132,7 +133,7 @@ Wenn Sie alle diese Signale miteinander kombinieren, können Sie dynamische Rich
 
 Wenn Sie mit dieser erweiterten Definition der Autorisierung einverstanden sind, müssen Sie zusätzliche Lösungen implementieren. Welche Lösungen Sie implementieren, hängt davon ab, wie dynamisch die Richtlinie sein soll und welche Bedrohungen priorisiert werden sollen. Einige Beispiele für solche Systeme sind:
 - [Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/) 
-- [Microsoft Defender für Identity](https://docs.microsoft.com/azure-advanced-threat-protection/)
+- [Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/)
 - [Microsoft Defender für Endpunkt](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 - [Microsoft Defender für Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)
 - [Microsoft Cloud-App-Sicherheit](https://docs.microsoft.com/cloud-app-security/) (MCAS)
@@ -284,7 +285,7 @@ Aus Sicht der Administrator Delegierung verfügen die meisten Microsoft 365-Akti
 
 Diagramm auf hoher Ebene:
 
-![Diagramm auf hoher Ebene des Protokoll Flusses](../media/solutions-architecture-center/identity-beyond-illustration-4.png)  
+![Diagramm der Protokollquellen für ein Sicherheits-und Kompatibilitäts Programm](../media/solutions-architecture-center/identity-beyond-illustration-4.png)  
 
 Das obige Diagramm stellt integrierte Funktionen zum Senden von Protokollen an Event Hub und/oder Azure Storage und/oder Azure Log Analytics dar. Nicht alle Systeme enthalten diese out-of-the-Box noch. Es gibt aber auch andere Ansätze, diese Protokolle an dasselbe Repository zu senden. Beispielsweise finden Sie unter [Protecting Your Teams with Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/protecting-your-teams-with-azure-sentinel/ba-p/1265761).
 

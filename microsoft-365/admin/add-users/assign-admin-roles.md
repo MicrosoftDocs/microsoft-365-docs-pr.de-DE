@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Hier erfahren Sie, wie Sie einem Benutzer oder mehreren Benutzern in Ihrem Unternehmen Administratorrollen zuweisen, damit diese bestimmte Aufgaben im Admin Center ausführen können.
-ms.openlocfilehash: 6d7a09ca9c515494eaf18ea144b7f67ce0003890
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: c0dfef0860e5729a135a142383bdb60aa9d310be
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131758"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906251"
 ---
 # <a name="assign-admin-roles"></a>Zuweisen von Administratorrollen
 
@@ -61,16 +61,16 @@ Sie können Benutzern eine Rolle auf zwei verschiedene Arten zuweisen:
 
 1. Wechseln Sie im Admin Center zu **Rollen** > **Rollen** , um alle für Ihre Organisation verfügbaren Administratorrollen anzuzeigen.
 2. Wählen Sie die Administratorrolle aus, der Sie den Benutzer zuweisen möchten.
-3. Wählen Sie **zugewiesene Administratoren** > **Hinzufügen**aus.
-4. Geben Sie den **Anzeigenamen** oder Benutzer **Namen**des Benutzers ein, und wählen Sie dann den Benutzer aus der Liste der Vorschläge aus.
+3. Wählen Sie **zugewiesene Administratoren** > **Hinzufügen** aus.
+4. Geben Sie den **Anzeigenamen** oder Benutzer **Namen** des Benutzers ein, und wählen Sie dann den Benutzer aus der Liste der Vorschläge aus.
 5. Fügen Sie mehrere Benutzer hinzu, bis Sie fertig sind.
-6. Wählen Sie **Speichern**aus, und dann wird der Benutzer der Liste der zugewiesenen Administratoren hinzugefügt.
+6. Wählen Sie **Speichern** aus, und dann wird der Benutzer der Liste der zugewiesenen Administratoren hinzugefügt.
 
 ### <a name="assign-a-user-to-an-admin-role-from-active-users"></a>Zuweisen eines Benutzers zu einer Administratorrolle über "Aktive Benutzer"
 
 1. Wechseln Sie im Admin Center zur Seite **Benutzer** > [aktive Benutzer](https://go.microsoft.com/fwlink/p/?linkid=834822) .
 
-2. Wählen Sie auf der Seite **aktive Benutzer** den Benutzer aus, dessen Administratorrolle Sie ändern möchten. Wählen Sie im Flyout-Bereich neben **Rollen**die Option **Rollen verwalten**aus.
+2. Wählen Sie auf der Seite **aktive Benutzer** den Benutzer aus, dessen Administratorrolle Sie ändern möchten. Wählen Sie im Flyout-Bereich neben **Rollen** die Option **Rollen verwalten** aus.
 
 3. Wählen Sie die Administratorrolle aus, die Sie dem Benutzer zuweisen möchten. Wenn die gesuchte Rolle nicht angezeigt wird, wählen Sie am Ende der Liste **Alle anzeigen** aus.
 
@@ -80,7 +80,7 @@ Sie können Benutzern eine Rolle auf zwei verschiedene Arten zuweisen:
 
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktive Benutzer</a>.
 
-2. Wählen Sie auf der Seite **aktive Benutzer** den Benutzer aus, dessen Administratorrolle Sie ändern möchten. Wählen Sie im Flyout-Bereich neben **Rollen**die Option **Bearbeiten**aus. 
+2. Wählen Sie auf der Seite **aktive Benutzer** den Benutzer aus, dessen Administratorrolle Sie ändern möchten. Wählen Sie im Flyout-Bereich neben **Rollen** die Option **Bearbeiten** aus. 
 
     Wenn die Option **Bearbeiten** nicht angezeigt wird, verfügen Sie nicht über die Berechtigung zum Bearbeiten und können anderen Personen keine Administratorrollen zuweisen. Bitten Sie einen globalen Administrator in Ihrem Unternehmen, Ihnen Rollen zuzuweisen. In einem kleinen Unternehmen ist der Geschäftsinhaber (die Person, die das Abonnement erworben hat) ein globaler Administrator. In einem großen Unternehmen sind die wichtigsten Personen in der IT-Abteilung globale Administratoren.
 
@@ -92,7 +92,7 @@ Sie können Benutzern eine Rolle auf zwei verschiedene Arten zuweisen:
 
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktive Benutzer</a>.
 
-2. Wählen Sie auf der Seite **aktive Benutzer** den Benutzer aus, dessen Administratorrolle Sie ändern möchten. Wählen Sie im Flyout-Bereich neben **Rollen**die Option **Bearbeiten**aus.
+2. Wählen Sie auf der Seite **aktive Benutzer** den Benutzer aus, dessen Administratorrolle Sie ändern möchten. Wählen Sie im Flyout-Bereich neben **Rollen** die Option **Bearbeiten** aus.
 
     Wenn die Option **Bearbeiten** nicht angezeigt wird, verfügen Sie nicht über die Berechtigung zum Bearbeiten und können anderen Personen keine Administratorrollen zuweisen. Bitten Sie einen globalen Administrator in Ihrem Unternehmen, Ihnen Rollen zuzuweisen. In einem kleinen Unternehmen ist der Geschäftsinhaber (die Person, die das Abonnement erworben hat) ein globaler Administrator. In einem großen Unternehmen sind die wichtigsten Personen in der IT-Abteilung globale Administratoren.
 
@@ -108,9 +108,14 @@ Verwenden Sie die folgenden Anweisungen, um dutzenden Benutzern Rollen zuzuweise
 
 ::: moniker range="o365-worldwide"
 
-## <a name="check-your-permissions"></a>Überprüfen der Berechtigungen
+## <a name="check-admin-roles-in-your-organization"></a>Überprüfen der Administratorrollen in Ihrer Organisation
 
-Möglicherweise verfügen Sie nicht über die richtigen Berechtigungen, um anderen Benutzern Administratorrollen zuzuweisen. Stellen Sie sicher, dass Sie die richtigen Berechtigungen haben, oder bitten Sie einen anderen Administrator, Ihnen Rollen zuzuweisen.
+Möglicherweise verfügen Sie nicht über die richtigen Berechtigungen, um anderen Benutzern Administratorrollen zuzuweisen. Stellen Sie sicher, dass Sie über die richtigen Berechtigungen verfügen, oder bitten Sie einen anderen Administrator, Ihnen Rollen zuzuweisen.
+
+Sie können die Berechtigungen der Administratorrolle auf zwei verschiedene Arten überprüfen:
+
+- Auf der Seite **Konto** können Sie zu den Details des Benutzers wechseln und unter **Rollen** suchen.
+- Sie können auch zu **Rollen** wechseln und die Administratorrolle auswählen und die zugewiesenen Administratoren auswählen, um zu sehen, welche Benutzer zugewiesen sind.
 
 ::: moniker-end
 

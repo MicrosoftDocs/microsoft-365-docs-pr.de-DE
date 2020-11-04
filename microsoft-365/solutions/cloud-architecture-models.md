@@ -1,6 +1,6 @@
 ---
-title: Microsoft Cloud-Architekturmodelle
-description: Diese Cloud-Architektur-Poster bieten Ihnen Informationen zu Microsoft-Cloud-Diensten, einschließlich Microsoft 365, Azure Active Directory (Azure AD), Microsoft InTune, Microsoft Dynamics 365 und Hybriden lokalen und Cloud-Lösungen.
+title: Microsoft Cloud Architecture Models-Enterprise-Ressourcenplanung
+description: Diese Microsoft Cloud Architecture-Poster bieten Ihnen Informationen zu Microsoft-Cloud-Diensten wie Azure und Office 365.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -10,14 +10,15 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-ms.custom: ''
+- M365solutions
+ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 9988a822880db43feebb6ef007c39bd59c5ce6c7
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: 0089210b72f65a05b87446132572de028b2a67a8
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464456"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906871"
 ---
 # <a name="microsoft-cloud-for-enterprise-architects-illustrations"></a>Illustrationen zu Microsoft Cloud für Enterprise-Architekten
 
@@ -55,9 +56,9 @@ Was IT-Architekten über Hybrid Cloud für Microsoft-Dienste und -Plattformen wi
    
 
 ### <a name="architecture-approaches-for-microsoft-cloud-tenant-to-tenant-migrations"></a>Architekturansätze für Microsoft-Cloudmigrationen von Mandant zu Mandant 
-Diese Themenreihe illustriert mehrere Architekturansätze für Fusionen, Übernahmen, Veräußerungen und andere Szenarien, die möglicherweise eine Migration zu einem neuen Cloudmandanten notwendig machen. Diese Themen dienen als Ausgangspunkt mit Leitlinien für die Planung. 
+Diese Themenreihe illustriert mehrere Architekturansätze für Fusionen, Übernahmen, Veräußerungen und andere Szenarien, die möglicherweise eine Migration zu einem neuen Cloudmandanten notwendig machen. Diese Themen bieten Anhaltspunkte für die Planung von Enterprise-Ressourcen. 
 
-|**Item**|**Beschreibung**|
+|**Element**|**Beschreibung**|
 |:-----|:-----|
 |[![Miniaturbild für Poster der logischen Architektur von Teams](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.vsdx) <br>Aktualisiert am 2020    |Dieses Modell enthält Folgendes: <ul><li>Eine Zuordnung von Geschäftsszenarien zu Architekturansätzen</li><li>Überlegungen zum Entwurf</li><li>Beispiel für einen Migrationsfluss für einzelne Ereignisse</li><li>Beispiel für einen phasenweisen Migrationsfluss</li><li>Beispiel für Mandanten-oder geteilte Fluss Bewegungen</li></ul>|
 
@@ -74,7 +75,7 @@ What IT architects need to know about security in Microsoft cloud services and p
   
 |**Item**|**Description**|
 |:-----|:-----|
-|[![Thumb image for Microsoft cloud security model](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=48121) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842070)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=842071)  \| [More languages](https://www.microsoft.com/download/details.aspx?id=48121) <br/>Updated December 2018 | This model contains: <ul><li>Microsoft's role in providing secure services and platforms</li><li>Customer responsibilities to mitigate security risks</li><li>Top security certifications </li><li>Security offerings provided by Microsoft consulting services </ul><br/>|
+|[![Poster for Microsoft cloud security model](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=48121) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842070)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=842071)  \| [More languages](https://www.microsoft.com/download/details.aspx?id=48121) <br/>Updated December 2018 | This model contains: <ul><li>Microsoft's role in providing secure services and platforms</li><li>Customer responsibilities to mitigate security risks</li><li>Top security certifications </li><li>Security offerings provided by Microsoft consulting services </ul><br/>|
 
 --> 
 
@@ -82,7 +83,7 @@ What IT architects need to know about security in Microsoft cloud services and p
 <a name="attacks"></a>
 ### Häufige Angriffe und Microsoft-Funktionen, die Ihre Organisation schützen, erfahren Sie mehr über die häufigsten Cyber-Angriffe und darüber, wie Microsoft Ihre Organisation in jeder Phase eines Angriffs unterstützenkann. 
 
-|**Item**|**Beschreibung**|
+|**Element**|**Beschreibung**|
 |:-----|:-----|
-|[![Miniaturbild des Posters zu häufigen Angriffen.](../media/solutions-architecture-center/common-attacks-model-thumb.png) ](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> Aktualisiert am 2017 | Dieses Poster veranschaulicht den Weg häufiger Angriffe und beschreibt, welche Funktionen dabei helfen können, Angreifer in jeder Phase des Angriffs zu stoppen. <br/>|
+|[![Illustration des Plakats "Common attacks". ](../media/solutions-architecture-center/common-attacks-model-thumb.png)](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> Aktualisiert am 2017 | Dieses Poster veranschaulicht den Weg häufiger Angriffe und beschreibt, welche Funktionen dabei helfen können, Angreifer in jeder Phase des Angriffs zu stoppen. <br/>|
 

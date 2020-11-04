@@ -11,27 +11,29 @@ ms.collection:
 - M365-collaboration
 - m365solution-securecollab
 - m365solution-overview
-ms.custom: ''
+ms.custom:
+- M365solutions
+- seo-marvel-jun2020
 f1.keywords: NOCSH
-description: Informationen zum Einrichten von Teams zum Schutz Ihrer Daten basierend auf der Vertraulichkeit
-ms.openlocfilehash: 5cf4937a79fdf33e160432c740504ec84d196585
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+description: Hier erfahren Sie, wie Sie die Zusammenarbeit mit sicheren Inhalten in Microsoft Teams einrichten, um Ihre Daten auf der Grundlage ihrer Vertraulichkeit zu schützen.
+ms.openlocfilehash: 310605d0db84e33be1d5fdc925fadcfcdf9dddaf
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843540"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906799"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Sichere Zusammenarbeit mit Microsoft 365 einrichten
 
 Die Möglichkeit, Informationen einfach mit den richtigen Personen auszutauschen und gleichzeitig eine Übernutzung zu verhindern, ist für den Erfolg einer Organisation entscheidend. Dies umfasst die Möglichkeit, vertrauliche Daten sicher nur für diejenigen freizugeben, die Zugriff darauf haben sollten. Je nach Projekt kann dies die Freigabe vertraulicher Daten für Personen außerhalb Ihrer Organisation umfassen.
 
-Diese Lösungsanleitung umfasst zwei Komponenten, die Ihnen helfen:
+Dieser Leitfaden für die Zusammenarbeit umfasst zwei Komponenten, die Ihnen helfen:
 - Bereitstellen von Microsoft Teams mit der richtigen Schutzebene für jedes Projekt
 - Konfigurieren der externen Freigabe mit geeigneten Sicherheitseinstellungen für jedes Projekt
 
 ![Bereitstellen von Teams mit entsprechendem Schutz und Konfigurieren der externen Freigabe mit geeigneten Sicherheitseinstellungen](..\media\solutions-architecture-center\secure-collaboration-overview.png)
 
-Wenn vielseitige und einfach zu verwendende Tools für die Zusammenarbeit nicht verfügbar sind, werden Benutzer häufig zusammenarbeiten, indem Sie Dokumente per e-Mail senden. Dies ist eine langwierige und fehlerträchtige Methode der Zusammenarbeit und kann das Risiko einer ungeeigneten gemeinsamen Nutzung von Informationen verbessern. Wenn Personen Freigabe Informationen zu schwierig finden, können Sie auf die Verwendung von Consumer-Produkten zurückgreifen, die nicht von ihr gesteuert werden. Dies kann ein noch größeres Risiko darstellen.
+Wenn vielseitige und benutzerfreundliche Tools für die Zusammenarbeit bei der Inhaltsverwaltung nicht verfügbar sind, werden Benutzer häufig zusammenarbeiten, indem Sie Dokumente per e-Mail senden. Dies ist eine langwierige und fehlerträchtige Methode der Zusammenarbeit und kann das Risiko einer ungeeigneten gemeinsamen Nutzung von Informationen verbessern. Wenn Personen Freigabe Informationen zu schwierig finden, können Sie auf die Verwendung von Consumer-Produkten zurückgreifen, die nicht von ihr gesteuert werden. Dies kann ein noch größeres Risiko darstellen.
 
 Mit Microsoft 365 können Sie Teams mit einer Vielzahl von Konfigurationen bereitstellen, die Folgendes unterstützen:
 

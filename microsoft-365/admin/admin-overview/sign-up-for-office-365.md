@@ -26,36 +26,36 @@ search.appverid:
 - GEA150
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
-description: 'Verstehen Sie, was Sie wissen müssen, bevor Sie den Registrierungsprozess für Office 365 durchlaufen. '
-ms.openlocfilehash: 0e5e4d89811807bfdb1bb71fb213973bdba075e2
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: 'Verstehen Sie, was Sie wissen müssen, bevor Sie den Anmeldeprozess für Office 365 durchlaufen. '
+ms.openlocfilehash: 7cbbcecdf3520ce5f8bd266100c3934a9cd7a664
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646631"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906275"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Vorgehensweise beim Anmelden – Administratorhilfe
 
 ::: moniker range="o365-worldwide"
 
-Registrieren Sie sich für Microsoft 365 for Business, damit Ihr Team mit den neuesten Versionen von Word, Excel, PowerPoint und anderen Office-Programmen in Ihrem Unternehmen beginnen kann.
+Registrieren Sie sich für Microsoft 365 for Business, damit Ihr Team mit den neuesten Versionen von Word, Excel, PowerPoint und anderen Office-Programmen beginnen kann.
   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Registrieren Sie sich für Microsoft 365 for Business, damit Ihr Team mit den neuesten Versionen von Word, Excel, PowerPoint und anderen Office-Programmen in Ihrem Unternehmen beginnen kann.
+Registrieren Sie sich für Microsoft 365 for Business, damit Ihr Team mit den neuesten Versionen von Word, Excel, PowerPoint und anderen Office-Programmen beginnen kann.
   
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Office 365, betrieben von 21Vianet, erfüllt die Anforderungen an sichere, zuverlässige und skalierbare Clouddienste in China. Dieser Dienst verfügt über die Technologie, die Microsoft an 21Vianet lizenziert hat. Microsoft betreibt den Dienst nicht selbst. Betrieb, Bereitstellung und Verwaltung des Dienstes erfolgen durch 21Vianet. 21Vianet ist der größte anbieterneutrale Service Provider für Internet-Rechenzentrumsdienste in China. Er stellt Dienste für Hosting, verwaltete Netzwerke und Cloud Computing-Infrastrukturen bereit. Durch die Lizenzierung von Microsoft-Technologien betreibt 21Vianet lokale Microsoft-Rechenzentren, um Ihnen die Möglichkeit zu geben, Microsoft-Dienste zu nutzen und gleichzeitig Ihre Daten in China zu halten. 21Vianet bietet Ihnen außerdem Abonnement- und Abrechnungsdienste sowie Support.
+Office 365 betrieben von 21Vianet wurde entwickelt, um die Anforderungen an sichere, zuverlässige und skalierbare Cloud-Dienste in China zu erfüllen. Dieser Dienst verfügt über die Technologie, die Microsoft an 21Vianet lizenziert hat. Microsoft betreibt den Dienst nicht selbst. 21Vianet betreibt, bereitstellt und verwaltet die Zustellung des Diensts. 21Vianet ist der größte anbieterneutrale Service Provider für Internet-Rechenzentrumsdienste in China. Er stellt Dienste für Hosting, verwaltete Netzwerke und Cloud Computing-Infrastrukturen bereit. Durch die Lizenzierung von Microsoft-Technologien betreibt 21Vianet lokale Microsoft-Rechenzentren, um Ihnen die Möglichkeit zu geben, Microsoft-Dienste zu nutzen und gleichzeitig Ihre Daten in China zu halten. 21Vianet bietet Ihnen außerdem Abonnement- und Abrechnungsdienste sowie Support.
   
 > [!NOTE]
 > Diese Dienste unterliegen den chinesischen Gesetzen.
   
-Wenn Sie sich für Office 365 betrieben von 21Vianet registrieren, kann Ihr Team mit den neuesten Versionen von Word, Excel, PowerPoint und anderen Office-Programmen in Ihrem Unternehmen beginnen.
+Registrieren Sie sich für Office 365 betrieben von 21Vianet, damit Ihr Team mit den neuesten Versionen von Word, Excel, PowerPoint und anderen Office-Programmen beginnen kann.
   
 Sind Sie für die Registrierung verfügbar? [Wählen Sie einen Plan aus](https://products.office.com/zh-cn/business/compare-office-365-for-business-plans).
   
@@ -72,7 +72,7 @@ Sehen Sie sich ein kurzes Video zur Auswahl eines Microsoft 365 for Business-Pla
 
 Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
 
-Benötigen Sie Hilfe bei der Auswahl? Unsere Vertriebsberater unterstützen Sie gerne und beantworten alle Ihre Fragen. Klicken Sie einfach auf [Alle Produkte vergleichen](https://products.office.com/compare-all-microsoft-office-products?tab=2) , und wählen Sie eine der Kontakt Supportoptionen aus, die auf der linken Seite aufgeführt sind.
+Benötigen Sie Hilfe bei der Auswahl eines Plans? Unsere Vertriebsberater unterstützen Sie gerne und beantworten alle Ihre Fragen. Wechseln Sie zu [Alle Produkte vergleichen](https://products.office.com/compare-all-microsoft-office-products?tab=2) , und wählen Sie eine der Kontakt Supportoptionen aus, die auf der linken Seite aufgeführt sind.
   
 ::: moniker-end
 
@@ -81,7 +81,7 @@ Benötigen Sie Hilfe bei der Auswahl? Unsere Vertriebsberater unterstützen Sie 
 
 Bevor Sie kaufen, sollten Sie sich Gedanken über den Plan machen, für den Sie sich registrieren. Dies wird dazu beitragen, spätere Schmerzen zu vermeiden.
   
-Benötigen Sie Hilfe bei der Auswahl? Unsere Vertriebsberater unterstützen Sie gerne und beantworten alle Ihre Fragen. Klicken Sie einfach auf [Alle Produkte vergleichen](https://products.office.com/compare-all-microsoft-office-products?tab=2) , und wählen Sie eine der Kontakt Supportoptionen aus, die auf der linken Seite aufgeführt sind. 
+Benötigen Sie Hilfe bei der Auswahl eines Plans? Unsere Vertriebsberater unterstützen Sie gerne und beantworten alle Ihre Fragen. Klicken Sie einfach auf [Alle Produkte vergleichen](https://products.office.com/compare-all-microsoft-office-products?tab=2) , und wählen Sie eine der Kontakt Supportoptionen aus, die auf der linken Seite aufgeführt sind. 
   
 ::: moniker-end
 
@@ -96,8 +96,8 @@ Sie müssen Ihre Testversion nicht abbrechen. Wenn Sie das Testabonnement nicht 
 
 Sehen Sie sich ein kurzes Video an, in dem der Anmeldevorgang angezeigt wird.<br><br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ] 
- 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
@@ -115,16 +115,16 @@ Sie müssen Ihre Testversion nicht abbrechen. Wenn Sie das Testabonnement nicht 
 
 - **Die Adresse und Kontaktinformationen für Ihr Abonnement:**
 
-  - Das **Land**, in dem die Dienste genutzt werden. Sie können diese Angabe zu einem späteren Zeitpunkt **nicht mehr ändern**, auch nicht während des Registrierungsvorgangs. Stattdessen müssen Sie den Assistenten für die Registrierung erneut starten.
+  - **Land** , in dem die Dienste verwendet werden. Sie können das Land später auch während des Registrierungsvorgangs **nicht** ändern. Sie müssen den Registrierungs-Assistenten neu starten.
 
-  - Die **E-Mail-Adresse** und **Telefonnummer**, damit wir mit Ihnen bei Bedarf Kontakt zu Ihrem Abonnement aufnehmen können. Wenn Sie beispielsweise Ihr Kennwort vergessen haben, würden wir Ihnen anhand dieser Information ein temporäres Kennwort zusenden. Wir senden auch Ihre Abrechnungsinformationen an die von Ihnen angegebene E-Mail-Adresse.
+  - Die **E-Mail-Adresse** und **Telefonnummer** , damit wir mit Ihnen bei Bedarf Kontakt zu Ihrem Abonnement aufnehmen können. Wenn Sie beispielsweise Ihr Kennwort vergessen haben, würden wir Ihnen anhand dieser Information ein temporäres Kennwort zusenden. Wir senden auch Ihre Abrechnungsinformationen an die von Ihnen angegebene E-Mail-Adresse.
 
     > [!NOTE]
     > Die e-Mail-Adresse, die Sie hier eingeben, unterscheidet sich von Ihrer Microsoft 365-e-Mail-Adresse (Ihr Anmeldename unten). Weil wir auch Ihre Abrechnungsinformationen dorthin senden, empfehlen wir, dass Sie beispielsweise eine E-Mail-Adresse verwenden, die für den Empfang geschäftlicher E-Mails geeignet ist.
   
-- **Ein Anmeldename (Benutzer-ID):** Dies wird zu Ihrer anfänglichen Microsoft 365-e-Mail-Adresse, damit Sie schnell gestartet werden können.
+- **Ein Anmeldename (Benutzer-ID):** Diese Benutzer-ID wird zu Ihrer anfänglichen Microsoft 365-e-Mail-Adresse, damit Sie schnell gestartet werden können.
 
-    Dies ist die e-Mail-Adresse, die Sie für die Anmeldung verwenden. Wenn der Name Ihres Unternehmens beispielsweise "Fourth Coffee" lautet, könnten Sie "ralf@fourthcoffee.onmicrosoft.com"als Ihre Benutzer-ID wählen.
+    Diese Benutzer-ID ist die e-Mail-Adresse, die Sie für die Anmeldung verwenden. Wenn der Name Ihres Unternehmens beispielsweise "Fourth Coffee" lautet, könnten Sie "ralf@fourthcoffee.onmicrosoft.com"als Ihre Benutzer-ID wählen.
 
     Die meisten Personen fügen Ihre eigene benutzerdefinierte Domäne kurz nach Ihrer Registrierung hinzu, damit Sie mit dem erhalten von e-Mails beginnen können. Wenn Sie beispielsweise über die benutzerdefinierte Domäne "fourthcoffee.com" verfügen, können Sie Ihre E-Mail-Adresse als "ralf@fourthcoffee.com" einrichten.
 

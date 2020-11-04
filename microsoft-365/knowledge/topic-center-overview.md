@@ -11,12 +11,12 @@ ms.service: o365-administration
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 6e4038982f396bbd427273225c2a3d1a9f866252
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d87a52bc6aca2f033a6e0d26a8c9c0e167908759
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948126"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906965"
 ---
 # <a name="topic-center-overview-preview"></a>Übersicht über das Themen Center (Vorschau)
 
@@ -25,11 +25,11 @@ ms.locfileid: "47948126"
 
 Das Themen Center ist eine moderne SharePoint-Website, die als Wissenszentrum für Ihre Organisation dient. Sie wird während des [Setups der Wissensverwaltung](set-up-knowledge-network.md) im Microsoft 365 Admin Center erstellt.
 
-Über das Themen Center können Benutzer mit den entsprechenden Berechtigungen folgende Aktionen ausführen:
+Das Themen Center verfügt über eine Standardhomepage, auf der Sie die Themen sehen können, mit denen Sie verbunden sind oder für die eine Verbindung vorgeschlagen wurde. Benutzer mit den entsprechenden Berechtigungen können außerdem Folgendes tun:
 
-- Bestätigen oder ablehnen erkannter Themen
 - Erstellen einer neuen Themen Seite
-- Bearbeiten einer vorhandenen Themen Seite
+- Vorgeschlagene Themen bestätigen oder ablehnen
+- Bearbeiten und Veröffentlichen von Änderungen an einer Themen Seite
 
 > [!Note] 
 > Weitere Informationen zu den einzelnen Aufgaben finden Sie unter [Arbeiten mit Themen im Thema Center](work-with-topics.md).
@@ -38,20 +38,32 @@ Das Themen Center ist eine moderne SharePoint-Website, die als Wissenszentrum f�
 
 Ihr Themen Center wird während des Knowledge Management-Setups erstellt. Nach Abschluss des Setups kann ein Administrator die URL auf der [Knowledge Center-Verwaltungsseite](manage-knowledge-network.md)finden.
 
-1. Wählen Sie im Microsoft 365 Admin Center im Navigationsbereich die Option **Setup** aus, und wählen Sie im Abschnitt **organisatorisches Wissen** die Option **Personen mit Wissen verbinden**aus.
+1. Wählen Sie im Microsoft 365 Admin Center im Navigationsbereich die Option **Setup** aus, und wählen Sie im Abschnitt **organisatorisches Wissen** die Option **Personen mit Wissen verbinden** aus.
 
    ![Verbinden von Personen mit wissen](../media/content-understanding/manage-connect-people-to-knowledge.png) </br>
 
 2. Klicken Sie auf der Seite mit den **Informationen zum Benutzer verbinden** im Abschnitt **auf einen Blick** finden Sie weitere Informationen unter **Themen Center-Adresse** für die Website-URL.
 
-## <a name="permissions-to-use-the-topic-center"></a>Berechtigungen zum Verwenden des Themen Centers
+## <a name="home-page"></a>Homepage
 
-Damit Sie im Themen Center arbeiten können, müssen Sie über die erforderlichen Berechtigungen verfügen. Ihr Administrator kann diese Berechtigungen Benutzern während des [Knowledge Management-Setups](set-up-knowledge-network.md)zuweisen, oder neue Benutzer können anschließend über das Microsoft 365 Admin Center von einem Administrator [hinzugefügt](give-user-permissions-to-the-topic-center.md) werden.
+Zum Anzeigen des Themen Centers benötigen Sie Berechtigungen zum Anzeigen von Themen und zum Thema Erfahrungen. Ihr Administrator kann diese Berechtigungen Benutzern während des [Knowledge Management-Setups](set-up-knowledge-network.md)zuweisen, oder neue Benutzer können anschließend über das Microsoft 365 Admin Center von einem Administrator [hinzugefügt](give-user-permissions-to-the-topic-center.md) werden.
+
+Auf der Startseite 
+- **Themen anzeigen** : Thema Erfahrungen anzeigen. Sie können also Themen in der Organisation sehen und Feedback zu Themen geben, in denen Sie verbunden sind:
+1. Vorgeschlagene Verbindungen – Dies sind Themen, in denen meine Verbindung vorgeschlagen wurde.
+2. Bestätigte Verbindungen-Dies sind Themen, in denen ich auf das Thema fixiert bin, oder ich habe bestätigt, dass meine Verbindungs Themen aus dem Abschnitt vorgeschlagen zu bestätigt wechseln, wenn ich eine vorgeschlagene Verbindung bestätige.
+Sobald ich merken bin, können Sie die Bearbeitungen zur Themen Seite durchführen, um meine Verbindung zu unterstützten.
+
+- **Erstellen und Bearbeiten von Themen** : neues Thema ist verfügbar, und Sie können Seiten bearbeiten
+
+
+## <a name="permissions-to-use-the-manage-topics-capability-topic-center"></a>Berechtigungen für die Verwendung des Themen Centers zum Thema "Funktionen verwalten"
+
+Um im Themen Center im Abschnitt "Themen verwalten" arbeiten zu können, müssen Sie über die erforderlichen Berechtigungen verfügen. Ihr Administrator kann diese Berechtigungen Benutzern während des [Knowledge Management-Setups](set-up-knowledge-network.md)zuweisen, oder neue Benutzer können anschließend über das Microsoft 365 Admin Center von einem Administrator [hinzugefügt](give-user-permissions-to-the-topic-center.md) werden.
 
 Topic Center Benutzer können zwei Berechtigungssätze erhalten:
 
-- **Themen erstellen und bearbeiten**: neue Themen erstellen oder Themen Inhalte wie Beschreibung, Dokumente und zugehörige Personen aktualisieren. Erteilen Sie diese Berechtigung Fachexperten, die mit der Überprüfung von Themenseiten beauftragt sind.
-- **Themen verwalten**: Verwenden Sie das Themen Dashboard, um Themen in der gesamten Organisation zu überprüfen. Benutzer können Aktionen wie das bestätigen und ablehnen unbestätigter Themen durchführen.
+- **Themen verwalten** : Verwenden Sie das Themen Dashboard, um Themen in der gesamten Organisation zu überprüfen. Benutzer können Aktionen wie das bestätigen und ablehnen unbestätigter Themen durchführen.
 
 Ein Benutzer kann beide Berechtigungsgruppen erhalten oder nur einen, falls erforderlich. 
 
@@ -73,7 +85,7 @@ Wenn Sie über Berechtigungen zum **Erstellen und Bearbeiten von Themen** verfü
 
 
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen:
 
 
 

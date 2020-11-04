@@ -13,15 +13,16 @@ ms.collection:
 - m365solution-scenario
 ms.custom:
 - seo-marvel-apr2020
+- seo-marvel-jun2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: Konfigurieren Sie Microsoft 365, um die Freigabe und zusätzliche Sicherheit zu ermöglichen, wenn Sie externe Benutzer zur Zusammenarbeit in Microsoft Teams einladen und SharePoint-Websites freigeben.
-ms.openlocfilehash: 11359e2de358d5673da6c39ca2d419c94349a829
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+description: In diesem Artikel erfahren Sie, wie Sie Microsoft 365-apps wie Teams, OneDrive und SharePoint für die Zusammenarbeit mit Personen außerhalb Ihrer Organisation konfigurieren.
+ms.openlocfilehash: 9a15ea06cec6982977ec88edf5ee95b35591a33c
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377413"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906989"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Zusammenarbeit mit Personen außerhalb Ihrer Organisation
 

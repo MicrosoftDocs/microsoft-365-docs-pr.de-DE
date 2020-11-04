@@ -23,16 +23,16 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Erfahren Sie, was mit Ihren Daten geschieht, wenn Ihr Microsoft 365 for Business-Abonnement abläuft, deaktiviert ist oder wenn Sie kündigen.
-ms.openlocfilehash: 77b65931056ca504d6f3efd7ca86560496495f5d
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b09f56fefb7791af012c9dab2ba4e5684b9bf89f
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646871"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906823"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Was geschieht mit meinen Daten und dem Zugriff, wenn mein Microsoft 365 for Business-Abonnement endet?
 
-Wenn Ihr Abonnement endet – entweder weil es abläuft oder weil Sie sich entscheiden, den Vorgang abzubrechen – wird der Zugriff auf Microsoft 365-Dienste,-Anwendungen und-Kundendaten in mehreren Status durchlaufen, bevor das Abonnement vollständig deaktiviert oder nicht mehr *bereit*gestellt wird. Wenn Sie sich dieser Progression bewusst sind, können Sie Ihr Abonnement besser in einen aktiven Zustand zurückversetzen, bevor es zu spät ist, oder-wenn Sie Microsoft 365 verlassen-Ihre Daten sichern, bevor Sie endgültig gelöscht werden.
+Wenn Ihr Abonnement endet – entweder weil es abläuft oder weil Sie sich entscheiden, den Vorgang abzubrechen – wird der Zugriff auf Microsoft 365-Dienste,-Anwendungen und-Kundendaten in mehreren Status durchlaufen, bevor das Abonnement vollständig deaktiviert oder nicht mehr *bereit* gestellt wird. Wenn Sie sich dieser Progression bewusst sind, können Sie Ihr Abonnement besser in einen aktiven Zustand zurückversetzen, bevor es zu spät ist, oder-wenn Sie Microsoft 365 verlassen-Ihre Daten sichern, bevor Sie endgültig gelöscht werden.
 
 Lesen Sie diese wichtigen Informationen, bevor Sie sich an den [Microsoft 365-Support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)wenden.
   
@@ -62,7 +62,7 @@ Wenn Sie Ihr Abonnement vor dem Ende des Termins kündigen, überspringt das Abo
   
 Dies können Sie für sich und Ihre Benutzer erwarten, wenn Sie ein Abonnement kündigen:
   
-- **Administratorzugriff**: Administratoren können sich weiterhin anmelden, auf das Admin Center zugreifen und andere Abonnements nach Bedarf kaufen. Als globaler Administrator oder Rechnungsadministrator haben Sie 90 Tage Zeit, um [das Abonnement zu reaktivieren](reactivate-your-subscription.md), wobei alle Daten erhalten bleiben.
+- **Administratorzugriff** : Administratoren können sich weiterhin anmelden, auf das Admin Center zugreifen und andere Abonnements nach Bedarf kaufen. Als globaler Administrator oder Rechnungsadministrator haben Sie 90 Tage Zeit, um [das Abonnement zu reaktivieren](reactivate-your-subscription.md), wobei alle Daten erhalten bleiben.
 
 - **Benutzer Zugriff** Ihre Benutzer können keine Dienste wie OneDrive für Unternehmen verwenden oder auf Kundendaten zugreifen – beispielsweise e-Mails oder Dokumente auf Teamwebsites. Office-Anwendungen wie Word und Excel wechseln schließlich in einen schreibgeschützten Modus mit eingeschränkter Funktionalität, und die Benachrichtigung [Nicht lizenziertes Produkt](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx) wird angezeigt.
 
@@ -203,6 +203,10 @@ Zu diesem Zeitpunkt können Sie das Abonnement nicht mehr reaktivieren. Allerdin
 > [!NOTE]
 > Durch Hinzufügen eines neuen Abonnements desselben Typs wie das Abonnement, dessen Bereitstellung aufgehoben wurde, werden die diesem Abonnement zugeordneten Daten nicht wiederhergestellt.
 
+
+> [!NOTE]
+> Wenn eine CSP-Lizenz angehalten wird, gibt es keinen 30-tägigen Kulanzzeitraum, und Dienste werden sofort deaktiviert. Daten werden nach 90 Tagen gelöscht, wenn der Mandant nicht durch Hinzufügen einer neuen Lizenz reaktiviert wird.
+
 ### <a name="what-happens-when-my-trial-ends"></a>Was geschieht, wenn meine Testversion endet?
 
 Wenn Ihre Testversion beendet ist, können Sie Microsoft 365 nicht kostenlos weiter verwenden. Es gibt ein paar Möglichkeiten:
@@ -237,3 +241,4 @@ Wenn Ihre Testversion beendet ist, können Sie Microsoft 365 nicht kostenlos wei
 [Kündigen Ihres Abonnements](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/cancel-your-subscription) (Artikel) \
 [Microsoft 365 for Business erneuern](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/renew-your-subscription) (Artikel) \
 [Reaktivieren Ihres Abonnements](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/reactivate-your-subscription) (Artikel)
+

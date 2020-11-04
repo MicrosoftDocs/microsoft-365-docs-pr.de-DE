@@ -1,5 +1,5 @@
 ---
-title: Häufig gestellte Fragen (FAQ) zu Domänen
+title: Häufig gestellte Fragen zu Domänen
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -16,6 +16,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- seo-marvel-may2020
 search.appverid:
 - BCS160
 - MET150
@@ -23,20 +24,20 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
-description: Erfahren Sie mehr über Domänen, indem Sie Antworten auf Ihre häufig gestellten Fragen finden.
-ms.openlocfilehash: b51b5fe56bbae56dd473dd831ec91e629d9233f3
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: Erfahren Sie mehr über Domains (onmicrosoft-Domäne und Transfer Domäne), indem Sie Antworten auf Ihre Fragen in FAQ finden.
+ms.openlocfilehash: 8d504711f46383000697736d6825a813f01fbe69
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644584"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906477"
 ---
 # <a name="domains-faq"></a>FAQ zu Domänen
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview).
 
 ::: moniker-end
 
@@ -73,7 +74,7 @@ E-Mail wird an MX-Server (Mail Exchange) mit der niedrigsten Einstellungsnummer 
     
 ## <a name="how-can-i-validate-spf-records-for-my-domain"></a>Wie kann ich SPF-Einträge für meine Domäne überprüfen?
 
-Es ist wichtig, dass Sie  **nur einen TXT-Eintrag für SPF**haben oder erstellen. Wenn Sie bereits einen SPF-Eintrag haben, sollten Sie die neuen Microsoft 365-Werte an diese anfügen, anstatt eine neue zu erstellen. Nachdem Sie den SPF-Eintrag für Microsoft e-Mail hinzugefügt oder aktualisiert haben, sollten Sie überprüfen, ob die Syntax für eines dieser Tools richtig ist: 
+Es ist wichtig, dass Sie  **nur einen TXT-Eintrag für SPF** haben oder erstellen. Wenn Sie bereits einen SPF-Eintrag haben, sollten Sie die neuen Microsoft 365-Werte an diese anfügen, anstatt eine neue zu erstellen. Nachdem Sie den SPF-Eintrag für Microsoft e-Mail hinzugefügt oder aktualisiert haben, sollten Sie überprüfen, ob die Syntax für eines dieser Tools richtig ist: 
   
 - [SPF Record Testing Tools](http://www.kitterman.com/spf/validate.html)
     
@@ -85,7 +86,7 @@ Es ist wichtig, dass Sie  **nur einen TXT-Eintrag für SPF**haben oder erstellen
 
 Eine Domäne ist ein eindeutiger Name, der in E-Mail-Adressen hinter dem **@** -Zeichen und in Internetadressen hinter **www.** angezeigt wird. Er besteht normalerweise aus dem Namen Ihrer Organisation und einem standardmäßigen Internetsuffix, z. B.  *ihrunternehmen.com*  oder  *musikhochschule.edu*  . 
   
-Die Verwendung einer benutzerdefinierten Domäne wie "**Rob \@ contoso.com**" mit Microsoft 365 kann dazu beitragen, Glaubwürdigkeit und Anerkennung für Ihre Marke zu schaffen. 
+Die Verwendung einer benutzerdefinierten Domäne wie " **Rob \@ contoso.com** " mit Microsoft 365 kann dazu beitragen, Glaubwürdigkeit und Anerkennung für Ihre Marke zu schaffen. 
   
 Sie können [eine Domäne in Microsoft 365 kaufen, und wir werden Sie automatisch](../get-help-with-domains/buy-a-domain-name.md)einrichten, oder Sie können eine ihrer Besitzer aus einer Domänenregistrierungsstelle kaufen oder holen.
     
@@ -200,15 +201,15 @@ Wenn Sie Microsoft 365 mehrere Domänen hinzufügen, können Sie alle Dienste (w
 
 Informationen zum Verfahren zum Übertragen einer Domäne finden Sie unter [übertragen einer Domäne von Microsoft auf einen anderen Host](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host).
 
-## <a name="pilot-microsoft-365-from-my-custom-domain"></a>Testen von Microsoft 365 aus Ihrer benutzerdefinierten Domäne
+## <a name="pilot-microsoft-365-from-my-custom-domain"></a>Microsoft 365-Pilot aus benutzerdefinierter Domäne
 
 Das Verfahren zum pilotieren von Microsoft 365-e-Mail-Funktionen von einer benutzerdefinierten Domäne zu einem Microsoft 365-Postfach finden Sie unter [Pilot Microsoft 365 aus meiner benutzerdefinierten Domäne](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain).
 
 ## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a>Warum habe ich eine Domäne des Typs "onmicrosoft.com"?
 
-Microsoft 365 erstellt eine Domäne für Sie wie *contoso.onmicrosoft.com*, wenn Sie sich beim Dienst anmelden. Die Benutzer-ID, die Sie bei der Registrierung erstellen, umfasst die Domäne, wie *Alan@contoso.onmicrosoft.com*. 
+Microsoft 365 erstellt eine Domäne für Sie wie *contoso.onmicrosoft.com* , wenn Sie sich beim Dienst anmelden. Die Benutzer-ID, die Sie bei der Registrierung erstellen, umfasst die Domäne, wie *Alan@contoso.onmicrosoft.com*. 
   
- **Wenn Sie möchten, dass Ihre e-Mails wie *Alan \@ contoso.com*aussehen:** [kaufen Sie die Domäne](../get-help-with-domains/buy-a-domain-name.md) , oder befolgen Sie einfach die Schritte unter [Hinzufügen Ihrer Benutzer und Domäne zu Microsoft 365,](add-domain.md) Wenn Sie bereits Besitzer sind. 
+ **Wenn Sie möchten, dass Ihre e-Mails wie *Alan \@ contoso.com* aussehen:** [kaufen Sie die Domäne](../get-help-with-domains/buy-a-domain-name.md) , oder befolgen Sie einfach die Schritte unter [Hinzufügen Ihrer Benutzer und Domäne zu Microsoft 365,](add-domain.md) Wenn Sie bereits Besitzer sind. 
   
 - **Sie können die "onmicrosoft.com"-Domäne nach der Registrierung nicht umbenennen**. Wenn Sie beispielsweise "fourthcoffee.onmicrosoft.com" als ursprüngliche Domäne ausgewählt haben, können Sie sie nicht in "fabrikam.onmicrosoft.com" ändern. Um eine andere onmicrosoft.com-Domäne verwenden zu können, müssen Sie ein neues Abonnement mit Microsoft 365 starten. 
     
@@ -223,9 +224,9 @@ Sie können die ursprüngliche Domäne "onmicrosoft.com" auch nach Hinzufügen I
 ::: moniker range="o365-germany"
 ## <a name="why-do-i-have-an-onmicrosoftde-domain"></a>Warum habe ich eine "onmicrosoft.de"-Domäne?
 
-Microsoft 365 erstellt eine Domäne für Sie wie *contoso.onmicrosoft.de*, wenn Sie sich beim Dienst anmelden. Die Benutzer-ID, die Sie bei der Registrierung erstellen, umfasst die Domäne, wie *Alan@contoso.onmicrosoft.de*. 
+Microsoft 365 erstellt eine Domäne für Sie wie *contoso.onmicrosoft.de* , wenn Sie sich beim Dienst anmelden. Die Benutzer-ID, die Sie bei der Registrierung erstellen, umfasst die Domäne, wie *Alan@contoso.onmicrosoft.de*. 
   
- **Wenn Sie möchten, dass Ihre e-Mails wie *Alan@contoso.de*aussehen:** [kaufen Sie die Domäne](../get-help-with-domains/buy-a-domain-name.md) , oder befolgen Sie einfach die Schritte unter [Hinzufügen Ihrer Benutzer und Domäne zu Microsoft 365,](add-domain.md) Wenn Sie bereits Besitzer sind. 
+ **Wenn Sie möchten, dass Ihre e-Mails wie *Alan@contoso.de* aussehen:** [kaufen Sie die Domäne](../get-help-with-domains/buy-a-domain-name.md) , oder befolgen Sie einfach die Schritte unter [Hinzufügen Ihrer Benutzer und Domäne zu Microsoft 365,](add-domain.md) Wenn Sie bereits Besitzer sind. 
   
 - **Sie können die "onmicrosoft.com"-Domäne nach der Registrierung nicht umbenennen**. Wenn beispielsweise die anfängliche Domäne, die Sie ausgewählt haben, fourthcoffee.onmicrosoft.de war, können Sie Sie nicht in fabrikam.onmicrosoft.de ändern. Um eine andere onmicrosoft.de-Domäne verwenden zu können, müssen Sie ein neues Abonnement mit Microsoft 365 starten. 
     

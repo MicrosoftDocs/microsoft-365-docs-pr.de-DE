@@ -14,18 +14,18 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Ab dem 14. September 2019 werden Banken in den 31 Ländern des Europäischen Wirtschaftsraums aufgefordert, die Identität der Person zu überprüfen, die Online kauft, bevor die Zahlung verarbeitet werden kann.
+description: Am 2019. September sind Banken in den 31 Ländern des Europäischen Wirtschaftsraums verpflichtet, die Identität der Person zu überprüfen, die Online kauft, bevor die Zahlung verarbeitet werden kann. "
 keywords: Payment Services-Direktive 2, starke Kundenauthentifizierung, mehrstufige Authentifizierung
-ms.openlocfilehash: fc8784949cdacea10957660c99795b4ade0f9f7a
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d6564a8c6d31bd0758f1084e7ee9b6857aed034e
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638423"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906609"
 ---
 # <a name="payment-services-directive-2-and-strong-customer-authentication-for-commercial-customers"></a>Payment Services-Direktive 2 und starke Kundenauthentifizierung für kommerzielle Kunden
 
-Ab dem 14. September 2019 werden Banken in den 31 Ländern des Europäischen Wirtschaftsraums aufgefordert, die Identität der Person zu überprüfen, die Online kauft, bevor die Zahlung verarbeitet werden kann. Bei dieser Überprüfung ist die mehrstufige Authentifizierung erforderlich, um sicherzustellen, dass Ihre Online Käufe sicher und geschützt sind. Das Datum für diese Überprüfungsanforderung wird für einige Länder verzögert. 
+Am 2019. September sind die Banken in den 31 Ländern des Europäischen Wirtschaftsraums verpflichtet, die Identität der Person zu überprüfen, die Online kauft, bevor die Zahlung verarbeitet werden kann. Bei dieser Überprüfung ist die mehrstufige Authentifizierung erforderlich, um sicherzustellen, dass Ihre Online Käufe sicher und geschützt sind. Das Datum für diese Überprüfungsanforderung wird für einige Länder verzögert.
 
 Weitere Informationen finden Sie in der [Microsoft-FAQ zur Payment Services-Direktive 2 und zur starken Kundenauthentifizierung](https://support.microsoft.com/help/4517854/microsoft-account-open-banking-customer-authentication).
 

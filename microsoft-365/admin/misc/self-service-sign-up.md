@@ -1,5 +1,5 @@
 ---
-title: Verwenden der Self-Service-Registrierung in Ihrer Organisation
+title: Verwenden der Self-Service-Anmeldung in Ihrer Organisation
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
 description: Erfahren Sie mehr über die Microsoft 365 Self-Service-Registrierung und verfügbare Self-Service-Programme wie Microsoft Power apps, Microsoft Flow und Dynamics 365 für Finanzen.
-ms.openlocfilehash: 8e8ed80cc24e3c6ec0a4a9d408d202495de52adb
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: 21e41661141a817a1751c80608035d839d2e3952
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324480"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906573"
 ---
-# <a name="using-self-service-sign-up-in-your-organization"></a>Verwenden der Self-Service-Registrierung in Ihrer Organisation
+# <a name="using-self-service-sign-up-in-your-organization"></a>Verwenden der Self-Service-Anmeldung in Ihrer Organisation
 
-Durch Self-Service-Registrierung können sich Benutzer in Ihrer Organisation einfacher für Onlinedienste von Microsoft registrieren. Wir nennen diesen Registrierungsprozess "Self-Service Sign up", da sich Ihre Benutzer für die Verwendung von Diensten registrieren können, die von Ihrem Abonnement bezahlt werden, oder ﻿kostenlose Dienste verwenden, ohne Sie zu bitten, in Ihrem Auftrag Maßnahmen zu ergreifen.
+Die Self-Service-Registrierung erleichtert es den Benutzern in Ihrer Organisation, sich für Onlinedienste von Microsoft zu registrieren. Wir nennen diesen Registrierungsprozess "Self-Service Sign-up", da sich Ihre Benutzer für die Verwendung von Diensten registrieren können, die von Ihrem Abonnement bezahlt werden, oder ﻿kostenlose Dienste verwenden, ohne dass Sie in Ihrem Auftrag Maßnahmen ergreifen müssen.
   
-## <a name="how-self-service-sign-up-works"></a>So funktioniert die Self-Service-Registrierung
+## <a name="how-self-service-sign-up-works"></a>Funktionsweise der Self-Service-Anmeldung
 
 Im folgenden Beispiel wird beschrieben, wie die Self-Service-Registrierung für eine Schule oder Uni funktioniert. Dieser Vorgang gilt für alle Organisationen, in deren Mandanten Self-Service-Programme aktiviert sind.
   
@@ -44,9 +44,8 @@ Im folgenden Beispiel wird beschrieben, wie die Self-Service-Registrierung für 
 
 Im Folgenden werden die aktuell verfügbaren Self-Service-Programme aufgeführt. Diese Liste wird aktualisiert, wenn neue Programme hinzugefügt werden.
   
-|||||
+| Programm <br/> | Beschreibung <br/> | Zusätzliche Informationen <br/> | Website zur Self-Service-Registrierung <br/> |
 |:-----|:-----|:-----|:-----|
-|**Programm** <br/> |**Beschreibung** <br/> |**Zusätzliche Informationen** <br/> |****Website für die Self-Service-Registrierung**** <br/> |
 |Office 365 a1 * * * * <br/> |Jeder Schüler oder Lehrer kann eine Schul-e-Mail-Adresse verwenden, um sich kostenlos Office 365 anzumelden und Office-Apps für das Internet, 1 TB OneDrive-Cloud-Speicher und SharePoint Online für Klasse, Team und Projektwebsites zu erhalten.  <br/> |[Self-Service-Registrierung für Office 365 Education: Häufig gestellte technische Fragen](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 Education](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
 |**Office 365 a1 Plus** <br/> |Berechtigte Schüler und Lehrer können sich für Office 365 a1 Plus anmelden, einschließlich aller oben genannten Plus Microsoft 365-Apps für Unternehmen. Microsoft 365 Apps für Unternehmen sind Produktivitätssoftware, einschließlich Word, PowerPoint, Excel, Outlook, OneNote, Publisher, Access und Skype for Business, die auf Ihrem Desktop-oder Laptop Computer installiert ist.  <br/> |[Self-Service-Registrierung für Office 365 Education: Häufig gestellte technische Fragen](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 Education](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
 |**Power BI** <br/> |Power BI ermöglicht Benutzern das Visualisieren von Daten, die Freigabe von Ermittlungen und die Zusammenarbeit auf intuitiven, neuen wegen. <br/> Wenn Ihre Organisation bereits abonniert hat, werden Ihnen möglicherweise zusätzlich Lizenzen für "Power BI pro Einzelbenutzer Testversion" angezeigt, die Benutzern begrenzten, freien Zugriff auf Erweiterte Funktionen bieten.  <br/> |[Power BI in Ihrer Organisation](https://go.microsoft.com/fwlink/p/?LinkId=536626) <br/> |[Microsoft Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536629) <br/> |
@@ -54,7 +53,7 @@ Im Folgenden werden die aktuell verfügbaren Self-Service-Programme aufgeführt.
 |**Microsoft PowerApps** <br/> |In PowerApps können Sie Organisationsdaten verwalten, indem Sie eine App ausführen, die Sie selbst erstellt haben oder die eine andere Person erstellt und für Sie freigegeben hat. Apps werden auf mobilen Geräten wie Smartphones ausgeführt, oder Sie können sie in einem Browser ausführen, indem Sie Dynamics 365 öffnen. Sie können eine unbegrenzte Vielfalt an Apps erstellen - und dies alles, ohne eine Programmiersprache wie z. B. C# erlernen zu müssen.  <br/> |[Self-Service-Registrierung für PowerApps](https://go.microsoft.com/fwlink/p/?linkid=841461) <br/> |[Microsoft PowerApps](https://go.microsoft.com/fwlink/p/?linkid=841462) <br/> |
 |**Dynamics 365 for Financials** <br/> |Erhalten Sie eine umfassende Business- und Finanzmanagementlösung für kleine und mittelständische Unternehmen. Dynamics 365 for Financials erleichtert das Bestellen, Verkaufen, Fakturieren und die Berichterstellung - und dies ab dem ersten Tag.  <br/> |[Microsoft Dynamics 365 for Financials](https://go.microsoft.com/fwlink/p/?linkid=841466) <br/> |[Microsoft Dynamics 365 for Financials](https://go.microsoft.com/fwlink/p/?linkid=841466) <br/> |
 |**Microsoft Dynamics 365 for Operations** <br/> |Steigern Sie die Geschwindigkeit Ihrer Geschäftsabläufe. Die vollständigen ERP-Tools in Dynamics 365 for Operations bieten globale Skalierbarkeit und digitale Intelligenz, damit Sie in Ihrem eigenen Tempo einfacher und schneller wachsen können.  <br/> |[Microsoft Dynamics 365 for Operations](https://go.microsoft.com/fwlink/p/?linkid=841467) <br/> |[Microsoft Dynamics 365 for Operations](https://go.microsoft.com/fwlink/p/?linkid=841467) <br/> |
-|**Microsoft AppSource** <br/> |Microsoft AppSource ist ein Ziel für Software-as-a-Service-Business-Apps, die auf der Microsoft-Cloudplattform erstellt werden. AppSource enthält Hunderte von Apps, Add-Ons und Inhaltspaketen, die die Funktionalität von Microsoft-Produkten wie Azure, Dynamics 365, Office 365 und Power BI erweitern.  <br/> |[Microsoft AppSource](https://go.microsoft.com/fwlink/p/?linkid=841474) <br/> |[Microsoft AppSource](https://go.microsoft.com/fwlink/p/?linkid=841474) <br/> |
+|**Microsoft AppSource** <br/> |Microsoft AppSource ist ein Ziel für Software-as-a-Service-Business-Apps, die auf der Microsoft-Cloudplattform erstellt werden. AppSource bietet Hunderte von apps, Add-ons und Inhaltspaketen, die die Funktionalität von Microsoft-Produkten wie Azure, Dynamics 365, Office 365 und Power BI erweitern.  <br/> |[Microsoft AppSource](https://go.microsoft.com/fwlink/p/?linkid=841474) <br/> |[Microsoft AppSource](https://go.microsoft.com/fwlink/p/?linkid=841474) <br/> |
 |**Microsoft Partner Incentives** <br/> |Das Microsoft-Partnernetzwerk bietet drei Arten von Mitgliedschaften. Jede Art ist mit einer Reihe von Vorteilen verbunden, die zum Wachstum Ihres Unternehmens beitragen sollen. Während Sie Ihre Ziele erreichen, nehmen Sie am Programm auf der Ebene teil, die Ihren individuellen Anforderungen entspricht. So können Sie auf mehr Vorteile zugreifen und Ihre Beziehung mit uns und anderen Partnern im Netzwerk entwickeln.  <br/> |[Microsoft Partner Incentives](https://go.microsoft.com/fwlink/p/?linkid=841469) <br/> |[Microsoft Partner Incentives](https://go.microsoft.com/fwlink/p/?linkid=841469) <br/> |
 |**Microsoft Business Center** <br/> |Das Microsoft Business Center ist das Portal für Kunden, die über den Microsoft-Produkt-und Dienstleistungsvertrag (MPSA) Einkäufe getätigt haben. <br/> |[Schnellstart: Registrieren für das Microsoft Business Center](https://go.microsoft.com/fwlink/p/?linkid=841479) <br/> |[Microsoft Business Center](https://go.microsoft.com/fwlink/p/?linkid=841470) <br/> |
 |**Microsoft Volume License Service Center** <br/> |Das Microsoft Volume License Service Center zeigt Lizenzen, die unter Enterprise, SELECT, Education (Campus oder School), Open Value, Open License und ISV Royalty Agreements erworben wurden.  <br/> |[VLSC Schulungen und Ressourcen](https://www.microsoft.com/en-us/Licensing/existing-customer/vlsc-training-and-resources.aspx) <br/> |[Volumenlizenz Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx) <br/> |
