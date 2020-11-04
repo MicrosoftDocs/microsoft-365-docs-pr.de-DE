@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: c262e496313ec5f59e9e369d8622f4698a9a585a
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: c420e5a8fd94a9fb549cb6683f46c4bc5457632a
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48305199"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843171"
 ---
 # <a name="azure-and-dynamics-365-breach-notification-under-the-gdpr"></a>Azure and Dynamics 365-Benachrichtigungen bei Sicherheitsverletzungen im Rahmen der DSGVO
 
@@ -34,17 +34,17 @@ Microsoft verfügt über einen globalen, rund um die Uhr aktiven Service für di
 
 Aufgrund der Beschaffenheit des modernen Cloud Computings beziehen sich nicht alle Datenschutzverletzungen, die in einer Cloudumgebung des Kunden auftreten, auf Dienste von Microsoft Azure. Microsoft verwendet ein Modell der gemeinsamen Verantwortung für Azure-Dienste, in dem Verantwortlichkeiten für Sicherheit und operative Abläufe definiert sind. Gemeinsame Verantwortung ist besonders dann wichtig, wenn es um die Sicherheit von Clouddiensten geht, da sowohl der Anbieter des Clouddiensts als auch die Kunden jeweils für Teile der Cloudsicherheit zuständig sind.
 
-Microsoft ist nicht verantwortlich für die Überwachung oder Reaktion auf Sicherheitsvorfälle, die auf Seiten des Kunden auftreten. Ein Sicherheitsproblem, das nur den Kunden betrifft, wird nicht als Azure-Sicherheitsvorfall verarbeitet, sondern muss vom Mandanten des Kunden behandelt werden. Die Reaktion des Kunden auf Sicherheitsvorfälle kann eine Zusammenarbeit mit dem [Kundensupport](https://azure.microsoft.com/support/options/) von Microsoft Azure umfassen, sofern entsprechende Serviceverträge bestehen. Microsoft Azure bietet auch verschiedene Dienste an (z. B. [Azure Security Center](https://azure.microsoft.com/services/security-center/)), die Kunden zur Entwicklung und Verwaltung einer Reaktion auf Sicherheitsvorfälle verwenden können.
+Microsoft ist nicht verantwortlich für die Überwachung oder Reaktion auf Sicherheitsvorfälle, die auf Seiten des Kunden auftreten. Ein Sicherheitsproblem, das nur den Kunden betrifft, wird nicht als Azure-Sicherheitsvorfall verarbeitet, sondern muss vom Mandanten des Kunden behandelt werden. Die Reaktion des Kunden auf Sicherheitsvorfälle kann eine Zusammenarbeit mit dem [Kundendienst](https://azure.microsoft.com/support/options/) von Microsoft Azure umfassen, sofern entsprechende Serviceverträge bestehen. Microsoft Azure bietet auch verschiedene Dienste an (z. B. [Azure Defender](https://azure.microsoft.com/services/security-center/)), die Kunden zur Entwicklung und Verwaltung einer Reaktion auf Sicherheitsvorfälle verwenden können.
 
-Azure reagiert auf eine potenzielle Datenschutzverletzung entsprechend dem Prozess für die Reaktion auf Sicherheitsvorfälle, der Teil des Vorfallmanagementplans von Microsoft Azure ist. Die Reaktion auf Sicherheitsvorfälle seitens Azure erfolgt in fünf Stufen: Erkennung, Analyse, Diagnose, Stabilisierung und Abschluss. Das Team für die Reaktion auf Sicherheitsvorfälle kann im Verlauf der Untersuchung zwischen den Stufen der Diagnose und der Stabilisierung wechseln. Nachfolgend finden Sie eine Übersicht über die Vorgehensweise bei Sicherheitsvorfällen:
+Azure reagiert auf ein potenzielles Datenleck entsprechend dem Prozess für die Reaktion auf Sicherheitsvorfälle, der Teil des Vorfallmanagementplans von Microsoft Azure ist. Die Reaktion auf Sicherheitsvorfälle seitens Azure erfolgt in fünf Stufen: Erkennung, Analyse, Diagnose, Stabilisierung und Abschluss. Das Team für die Reaktion auf Sicherheitsvorfälle kann im Verlauf der Untersuchung zwischen den Stufen der Diagnose und der Stabilisierung wechseln. Nachfolgend finden Sie eine Übersicht über die Vorgehensweise bei Sicherheitsvorfällen:
 
 |**Stage**|**Beschreibung**|
 | ------- | ------------- |
-| ***1 – Erkennung*** | Erste Anzeichen für einen potenziellen Vorfall. |
-| ***2 – Analyse*** | Ein abrufbereites Mitglied des Teams für die Reaktion auf Sicherheitsvorfälle analysiert die Auswirkungen und den Schweregrad des Ereignisses. Basierend auf den Nachweisen kann die Analyse zur einer Eskalation an das Sicherheitsteam führen. |
-| ***3 – Diagnose*** | Sicherheitsexperten führen eine technische oder forensische Untersuchung durch und identifizieren Strategien für Eindämmung, Minderung und Abhilfe. Wenn das Sicherheitsteam der Meinung ist, dass möglicherweise Kundendaten gegenüber einer unbefugten Personen offengelegt wurden, wird parallel der Prozess zur Benachrichtigung des Kunden über den Sicherheitsvorfall in Gang gesetzt. |
-| ***4 – Stabilisierung und Wiederherstellung*** | Das Team für die Reaktion auf Sicherheitsvorfälle erstellt einen Wiederherstellungsplan, um das Problem zu mindern. Schritte zur Eindämmung der Auswirkungen, wie die Isolierung der betroffenen Systeme, können sofort und parallel zur Diagnose ausgeführt werden. Zudem können längerfristige Maßnahmen zur Risikominderung geplant werden, die umgesetzt werden, sobald die unmittelbare Gefahr gebannt ist. |
-| ***5 – Abschluss und nachträgliche Analyse*** | Das Team für die Reaktion auf Sicherheitsvorfälle erstellt eine nachträgliche Analyse, die den Vorfall detailliert untersucht, mit dem Ziel, die vorhandenen Richtlinien und Prozesse zu überarbeiten, um ein erneutes Auftreten des Ereignisses zu verhindern. |
+| **_1 – Erkennung_* _ | Erste Anzeichen für einen potenziellen Vorfall. |
+| _*_2 – Analyse_*_ | Ein abrufbereites Mitglied des Teams für die Reaktion auf Sicherheitsvorfälle analysiert die Auswirkungen und den Schweregrad des Ereignisses. Basierend auf den Nachweisen kann die Analyse zu einer Eskalation an das Sicherheitsteam führen. |
+| _*_3 – Diagnose_*_ | Sicherheitsexperten führen eine technische oder forensische Untersuchung durch und identifizieren Strategien für Eindämmung, Minderung und Abhilfe. Wenn das Sicherheitsteam der Meinung ist, dass möglicherweise Kundendaten gegenüber einer unbefugten Personen offengelegt wurden, wird parallel der Prozess zur Benachrichtigung des Kunden über den Sicherheitsvorfall in Gang gesetzt. |
+| _*_4 – Stabilisierung und Wiederherstellung_*_ | Das Team für die Reaktion auf Sicherheitsvorfälle erstellt einen Wiederherstellungsplan, um das Problem zu mindern. Schritte zur Eindämmung der Auswirkungen, wie die Isolierung der betroffenen Systeme, können sofort und parallel zur Diagnose ausgeführt werden. Zudem können längerfristige Maßnahmen zur Risikominderung geplant werden, die umgesetzt werden, sobald die unmittelbare Gefahr gebannt ist. |
+| _*_5 – Abschluss und nachträgliche Analyse_*_ | Das Team für die Reaktion auf Sicherheitsvorfälle erstellt eine nachträgliche Analyse, die den Vorfall detailliert untersucht, mit dem Ziel, die vorhandenen Richtlinien und Prozesse zu überarbeiten, um ein erneutes Auftreten des Ereignisses zu verhindern. |
 
 Das Whitepaper [Microsoft Azure Security Response in the Cloud](https://gallery.technet.microsoft.com/Azure-Security-Response-in-dd18c678) enthält weitere Informationen dazu, wie Microsoft Sicherheitsvorfälle in Azure untersucht, verwaltet und darauf reagiert.
 
@@ -63,16 +63,16 @@ Microsoft weist der Untersuchung geeignete Prioritäts- und Schweregrade zu, ind
 
 Microsoft Azure kategorisiert die Auswirkungen des Vorfalls auf die Informationen in die folgenden Kategorien von Sicherheitsverletzungen:
 
-| **Kategorie**             | **Definition**                                                                                                                   |
+| _ *Kategorie**             | **Definition**                                                                                                                   |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
-| ***Keine***               | Es wurden keine Daten extrahiert, geändert, gelöscht oder anderweitig kompromittiert.                                                      |
-| ***Datenschutzverletzung***     | Es wurde auf vertrauliche personenbezogene Daten von Steuerzahlern, Mitarbeitern, Begünstigten etc. zugegriffen oder diese wurden extrahiert.                                |
-| ***Verletzung des Schutzes unternehmenseigener Daten*** | Es wurde auf nicht klassifizierte, unternehmenseigene Daten, z. B. geschützte kritische Infrastrukturdaten (Protected Critical Infrastructure Information, PCII), zugegriffen oder diese wurden extrahiert. |
-| ***Integritätsverlust***     | Vertrauliche oder unternehmenseigene Daten wurden geändert oder gelöscht.                                                                     |
+| **_Keine_* _               | Es wurden keine Daten extrahiert, geändert, gelöscht oder anderweitig kompromittiert.                                                      |
+| _*_Datenschutzverletzung_*_     | Es wurde auf vertrauliche personenbezogene Daten von Steuerzahlern, Mitarbeitern, Begünstigten etc. zugegriffen oder diese wurden extrahiert.                                |
+| _*_Verletzung des Schutzes unternehmenseigener Daten_*_ | Es wurde auf nicht klassifizierte, unternehmenseigene Daten, z. B. geschützte kritische Infrastrukturdaten (Protected Critical Infrastructure Information, PCII), zugegriffen oder diese wurden extrahiert. |
+| _*_Integritätsverlust_*_     | Vertrauliche oder unternehmenseigene Daten wurden geändert oder gelöscht.                                                                     |
 
-Das Sicherheitsteam arbeitet mit Sicherheitstechnikern und Sicherheitsexperten (Subject Matter Experts, SMEs) von Microsoft Azure zusammen, um das Ereignis basierend auf Fakten aus den gewonnenen Erkenntnissen zu klassifizieren. Ein Sicherheitsereignis kann wie folgt klassifiziert werden:
+Das Sicherheitsteam arbeitet mit Sicherheitstechnikern und -experten (Subject Matter Experts, SMEs) von Microsoft Azure zusammen, um das Ereignis basierend auf Fakten aus den gewonnenen Erkenntnissen zu klassifizieren. Ein Sicherheitsereignis kann wie folgt klassifiziert werden:
 
-- **Falsch positives Ergebnis:** Ein Ereignis, das die Erkennungskriterien erfüllt, aber als Bestandteil einer normalen Geschäftspraxis gilt und möglicherweise gefiltert werden muss. Das Serviceteam ermittelt die Ursache für falsch positive Ergebnisse und behebt sie systematisch, indem Erkennungsquellen genutzt und bei Bedarf optimiert werden.
+- _*Falsch positives Ergebnis**: ein Ereignis, das die Erkennungskriterien erfüllt, aber als Bestandteil einer normalen Geschäftspraxis gilt und möglicherweise gefiltert werden muss. Das Serviceteam ermittelt die Ursache für falsch positive Ergebnisse und behebt sie systematisch, indem Erkennungsquellen genutzt und bei Bedarf optimiert werden.
 - **Sicherheitsvorfall:** Ein Vorfall, bei dem ein unrechtmäßiger Zugriff auf Kundendaten oder Supportdaten, die auf Geräten oder in Einrichtungen von Microsoft gespeichert sind, bzw. ein nicht autorisierter Zugriff auf diese Geräte oder Einrichtungen erfolgt ist, der zu Verlust, Offenlegung oder Änderung von Kundendaten oder Supportdaten geführt hat.
 - **Meldepflichtiger Sicherheitsvorfall/Datenschutzvorfall (Customer-Reportable Security Incident, CRSI):** Unrechtmäßiger oder nicht autorisierter Zugriff auf Systeme, Geräte oder Einrichtungen von Microsoft bzw. eine unrechtmäßige oder nicht autorisierte Verwendung dieser Systeme, Geräte oder Einrichtungen, der bzw. die zu Offenlegung, Änderung oder Verlust von Kundendaten geführt hat.
 - **Datenschutzverletzung:** Ein Untertyp von Sicherheitsvorfällen im Zusammenhang mit personenbezogenen Daten. Die Verfahren gleichen denen bei Sicherheitsvorfällen.
@@ -97,7 +97,7 @@ Der Benachrichtigungsprozess nach einem deklarierten CRSPI wird so rasch wie mö
 
 Microsoft Azure stellt Kunden detaillierte Informationen bereit, sodass sie interne Untersuchungen ausführen können ihre Verpflichtungen gegenüber Endbenutzern erfüllen können, ohne den Benachrichtigungsprozess übermäßig zu verzögern.
 
-Die Benachrichtigung zu einer Verletzung des Schutzes personenbezogener Daten wird dem Kunden auf einem von Microsoft gewählten Weg übermittelt, möglicherweise auch per E-Mail. Die Benachrichtigung über eine Datenschutzverletzung wird der Liste der Sicherheitskontakte bereitgestellt, die im Azure Security Center hinterlegt ist und die mithilfe der [Implementierungsrichtlinien](https://docs.microsoft.com/azure/security-center/security-center-provide-security-contact-details) konfiguriert werden kann. Wenn keine Kontaktinformationen im Azure Security Center bereitgestellt werden, erfolgt die Benachrichtigung an einen oder mehrere Administratoren in einem Azure-Abonnement. Um sicherzustellen, dass die Benachrichtigung erfolgreich zugestellt werden kann, muss der Kunde dafür sorgen, dass die administrativen Kontaktinformationen in dem jeweiligen Abonnement und Onlinedienst-Portal korrekt sind.
+Die Benachrichtigung zu einer Verletzung des Schutzes personenbezogener Daten wird dem Kunden auf einem von Microsoft gewählten Weg übermittelt, möglicherweise auch per E-Mail. Die Benachrichtigung über ein Datenleck wird an die Liste der Sicherheitskontakte in Azure Defender *übermittelt, die gemäß den [Implementierungsrichtlinien](https://docs.microsoft.com/azure/security-center/security-center-provide-security-contact-details) konfiguriert werden kann. Wenn in Azure Defender* keine Kontaktinformationen bereitgestellt wurden, wird die Benachrichtigung an einen oder mehrere Administratoren in einem Azure-Abonnement gesendet. Damit die Benachrichtigung erfolgreich zugestellt werden kann, muss der Kunde dafür sorgen, dass die administrativen Kontaktinformationen in dem jeweiligen Abonnement und Onlinedienst-Portal korrekt sind.
 
 Das Microsoft Azure- oder Azure Government-Team kann auch entscheiden, zusätzliches Microsoft-Personal wie den Kundendienst und die Account Manager (AM) oder Technical Account Manager (TAM) des Kunden zu benachrichtigen. Diese Personen stehen häufig in enger Beziehung zum Kunden und können eine schnellere Problembehebung realisieren.
 
