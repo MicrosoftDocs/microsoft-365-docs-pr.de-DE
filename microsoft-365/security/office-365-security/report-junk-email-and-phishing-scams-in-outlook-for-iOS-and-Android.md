@@ -2,7 +2,7 @@
 title: Melden von Junk-und Phishing-e-Mails in Outlook für IOS und Android
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Administratoren können Informationen zu den integrierten Junk-, nicht Junk-und Phishing-e-Mail-Berichtoptionen in Outlook für IOS und Android erhalten.
-ms.openlocfilehash: 23668a762301ee442bc805e62863079ee7ae6076
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: 1c842ac5349f9c2804c637fa4c5598b06e8f489f
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350855"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877291"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-for-ios-and-android-in-exchange-online"></a>Melden von Junk-und Phishing-e-Mails in Outlook für IOS und Android in Exchange Online
 
@@ -54,7 +54,7 @@ Für Nachrichten im Posteingang oder in einem anderen e-Mail-Ordner mit Ausnahme
 
    ![Melden von Junk-oder Phishing-e-Mails](../../media/Android-report-junk-or-phishing.png)
 
-4. Im angezeigten Dialogfeld können Sie " **Bericht** " oder " **Nein Danke**" auswählen. Wenn Sie auf **Junk** -e-Mails **tippen, wird**die Nachricht in den Ordner Junk-e-Mail verschoben, wenn Sie auf **Phishing** tippen, wird die Nachricht in den Ordner Gelöschte Elemente verschoben. Wählen Sie **Bericht** aus, um auch eine Kopie der Nachricht an Microsoft zu senden.
+4. Im angezeigten Dialogfeld können Sie " **Bericht** " oder " **Nein Danke** " auswählen. Wenn Sie auf **Junk** -e-Mails **tippen, wird** die Nachricht in den Ordner Junk-e-Mail verschoben, wenn Sie auf **Phishing** tippen, wird die Nachricht in den Ordner Gelöschte Elemente verschoben. Wählen Sie **Bericht** aus, um auch eine Kopie der Nachricht an Microsoft zu senden.
 
    ![Melden von Junk-oder Phishing-e-Mail-Optionen](../../media/Android-junk-email-reporting-options.png)
 

@@ -2,7 +2,7 @@
 title: Einblicke in den ausgehenden und eingehenden Nachrichtenfluss im Nachrichtenfluss-Dashboard
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: Administratoren können sich über den ausgehenden und eingehenden Nachrichtenfluss Insight im Nachrichtenfluss-Dashboard im Security & Compliance Center informieren.
-ms.openlocfilehash: 33bfe3882c274fa655d17c80aba007e8d246b250
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: cff7c3a14b62475903729f4528652f192c2da09f
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199301"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877669"
 ---
 # <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>Einblicke in den ausgehenden und eingehenden Nachrichtenfluss im Security & Compliance Center
 

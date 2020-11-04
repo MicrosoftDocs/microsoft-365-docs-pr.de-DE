@@ -2,7 +2,7 @@
 title: Einblick in automatisch weitergeleitete Nachrichten
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: Administratoren können sich über den Bericht über automatisch weitergeleitete Nachrichten im Nachrichtenfluss-Dashboard im Security & Compliance Center informieren.
-ms.openlocfilehash: d4b772e6392e0af22e6bed475970f637ed03dcb1
-ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
+ms.openlocfilehash: 01a094b8531672708fc024e8ed0c5833786dbb0c
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48245947"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877789"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>Einblicke automatisch weitergeleiteter Nachrichten im Security & Compliance Center
 
@@ -31,14 +31,14 @@ Die automatisch **weitergeleiteten Nachrichten** Insight im [Nachrichtenfluss-Da
 
 Wenn Sie auf die Anzahl der Nachrichten im Widget klicken, wird ein Flyout-Bereich angezeigt, der weitere Informationen zu den automatisch weitergeleiteten Nachrichten zeigt:
 
-- **Nachrichten werden nach Weiterleitungs Methoden automatisch weitergeleitet**:
+- **Nachrichten werden nach Weiterleitungs Methoden automatisch weitergeleitet** :
 
   - **Nachrichtenfluss Regeln**
   - **Nach Posteingangsregeln**
-  - **Durch SMTP-Weiterleitung**: Dies ist die automatische Weiterleitung, die Administratoren in einem Postfach konfigurieren können, wie unter [Configure Mail Forwarding for a Mailbox](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)beschrieben.
+  - **Durch SMTP-Weiterleitung** : Dies ist die automatische Weiterleitung, die Administratoren in einem Postfach konfigurieren können, wie unter [Configure Mail Forwarding for a Mailbox](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)beschrieben.
   - Einen Link zum [Weiterleitungs Bericht](view-mail-flow-reports.md#forwarding-report) für weitere Details.
 
-- **Automatisch weitergeleitete Nachrichten nach Domänen und Benutzern**:
+- **Automatisch weitergeleitete Nachrichten nach Domänen und Benutzern** :
 
   - **Top 5-domänenweiter geleitet an**
   - **Neue Domänen (letzte Woche)**

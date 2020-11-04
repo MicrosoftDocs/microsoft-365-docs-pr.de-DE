@@ -2,7 +2,7 @@
 title: Melden von Spam-, nicht-Spam-und Phishing-Nachrichten an Microsoft
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -16,12 +16,12 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: Administratoren können Informationen zu den unterschiedlichen Möglichkeiten zum Melden von guten und schlechten Nachrichten und Dateien an Microsoft zur Analyse erhalten.
-ms.openlocfilehash: 294f74daf8dcbb94c9416f3fa1bb799ebd974c60
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: 28018446b40c6dee95e3be230b3897c645d9b211
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48351023"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877243"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>Melden von Nachrichten und Dateien an Microsoft
 

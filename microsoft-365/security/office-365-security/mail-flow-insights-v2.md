@@ -2,7 +2,7 @@
 title: Einblicke in den Nachrichtenfluss im Nachrichtenfluss-Dashboard
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Administratoren können sich über die Einblicke und Berichte informieren, die im Nachrichtenfluss-Dashboard im Security & Compliance Center zur Verfügung stehen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9ac8b8b0d346d78af252a9e427d0ef2b1a4c4ea
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: d252b9d898d4ee5a0df854a871f821c2b02bb482
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769018"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877777"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Nachrichtenfluss-Einblicke im Security & Compliance Center
 

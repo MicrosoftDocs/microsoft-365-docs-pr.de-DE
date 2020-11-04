@@ -2,7 +2,7 @@
 title: Smart Reports, Insights-Microsoft 365 Security & Compliance Center
 f1.keywords:
 - NOCSH
-ms.author: deniseb
+ms.author: siosulli
 author: denisebmsft
 manager: dansimp
 ms.date: ''
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über die intelligenten Berichte und Einblicke, die im Security & Compliance Center zur Verfügung stehen, und wie Sie diese zum Anzeigen und Durchsuchen von Daten und zum Ausführen von schnell Aktionen verwenden können.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d6a73e93de79f346fb1bce8da23e25194d202191
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 384ae51a514c31c659ce80f30e0b8c09976ec44b
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845516"
+ms.locfileid: "48877349"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>Intelligente Berichte und Einblicke im Security & Compliance Center
 

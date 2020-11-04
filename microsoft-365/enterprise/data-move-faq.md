@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Hier finden Sie Antworten auf häufig gestellte Fragen (FAQ) zum Verschieben von Kerndaten in einen neuen geografischen Raum des Office 365-Rechenzentrums.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 043c5ee5206b30cbbc656c8886c806c2b7c2361c
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: 3eb3b7ec99da2cdca357f45eb4e71500a235fc61
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333570"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877825"
 ---
 # <a name="data-move-general-faq"></a>Allgemeine häufig gestellte Fragen zur Datenverschiebung
 
@@ -28,10 +28,10 @@ Hier finden Sie Antworten auf allgemeine Fragen zum Verschieben von Kernkunden D
   
 ## <a name="what-customers-are-eligible-to-request-a-move"></a>Welche Kunden können eine Verschiebung anfordern?
   
-Bestehende Microsoft 365-Gewerbekunden, die ein mit dem neuen geografischen Raum des Rechenzentrums vereinbares Land ausgewählt haben, können eine Verschiebung anfordern.  Das Programm gilt nur für Mandanten mit einem berechtigten Ländercode, der dem Microsoft 365-Mandanten zugeordnet ist, für die Migration ruhender Kundenkerndaten für berechtigte Arbeitslasten zum entsprechenden geografischen Raum des Office 365-Rechenzentrums.  Bitte überprüfen Sie auf der Seite [Anfordern der Datenverschiebung](request-your-data-move.md) die Länderberechtigung.   
+Bestehende Microsoft 365-Gewerbekunden, die ein mit dem neuen geografischen Raum des Rechenzentrums vereinbares Land ausgewählt haben, können eine Verschiebung anfordern.  Das Programm gilt nur für Mandanten mit einem berechtigten Ländercode, der dem Microsoft 365-Mandanten zugeordnet ist, für die Migration ruhender Kundenkerndaten für berechtigte Arbeitslasten zum entsprechenden geografischen Raum des Office 365-Rechenzentrums.  Bitte überprüfen Sie auf der Seite [Anfordern der Datenverschiebung](request-your-data-move.md) die Länderberechtigung.   
 
 ## <a name="how-do-we-define-core-customer-data"></a>Wie definieren wir Kundenkerndaten?
- 
+ 
 Der Begriff „Kundenkerndaten“ bezieht sich auf eine Teilmenge von Kundendaten, die in den [Nutzungsbedingungen für Microsoft-Onlinedienste](https://aka.ms/ost) definiert sind: 
 - Exchange Online-Postfachinhalte (E-Mail-Texte, Kalendereinträge und der Inhalt von E-Mail-Anlagen)
 - SharePoint Online-Websiteinhalte und die auf der Website gespeicherten Dateien
@@ -43,7 +43,7 @@ Neben Exchange Online, SharePoint Online und OneDrive for Business wird Microsof
 - Teams-Chatnachrichten, einschließlich privater Nachrichten und Kanalmeldungen. 
 - Bilder, die in Teams-Chats verwendet wurden. 
 
-Teams-Dateien werden in SharePoint Online gespeichert, und Teams-Chatdateien werden in OneDrive for Business gespeichert.  Voicemail, Kalender, Chatverlauf und Kontakte werden in Exchange Online gesichert.  In vielen Fällen werden Exchange Online, SharePoint Online und OneDrive for Business bereits vom Kunden in der lokalen Rechenzentrumsregion verwendet und sind auch Teil des Microsoft 365-Migrationsprogramms für berechtigte Kundenländer.
+Teams-Dateien werden in SharePoint Online gespeichert, und Teams-Chatdateien werden in OneDrive for Business gespeichert.  Voicemail, Kalender und Kontakte werden in Exchange Online gespeichert.  In vielen Fällen werden Exchange Online, SharePoint Online und OneDrive for Business bereits vom Kunden in der lokalen Rechenzentrumsregion verwendet und sind auch Teil des Microsoft 365-Migrationsprogramms für berechtigte Kundenländer.
 
 ## <a name="at-what-point-is-my-migration-complete-so-that-my-tenants-core-customer-data-is-being-stored-at-rest-in-my-new-geo"></a>Wann ist meine Migration abgeschlossen, sodass die Kundenkerndaten meines Mandanten im neuen geografischen Raum im Ruhezustand gespeichert sind?
 
@@ -57,11 +57,11 @@ Alle Microsoft 365-Dienste führen die gleichen Versionen in den Rechenzentren a
   
 ## <a name="what-is-the-impact-of-having-different-services-located-in-different-geos"></a>Welche Auswirkungen hat es, wenn sich Dienste in unterschiedlichen geografischen Räumen befinden?
 
-Einige der Microsoft 365-Dienste befinden sich möglicherweise in unterschiedlichen geografischen Räumen für einige bestehende Kunden sowie für Kunden, die sich mitten im Verschiebeprozess befinden. Unsere Dienste werden unabhängig voneinander ausgeführt, somit gibt es in einem solchen Fall keinerlei Auswirkungen auf die Benutzererfahrung.  Allerdings kann eine Mandantenmigration für Datenaufbewahrungszwecke erst nach der Migration von Exchange Online und SharePoint Online/OneDrive for Business in die gleiche Datencenter-Region als abgeschlossen betrachtet werden.
+Einige der Microsoft 365-Dienste befinden sich möglicherweise in unterschiedlichen geografischen Räumen für einige bestehende Kunden sowie für Kunden, die sich mitten im Verschiebeprozess befinden. Unsere Dienste werden unabhängig voneinander ausgeführt, somit gibt es in einem solchen Fall keinerlei Auswirkungen auf die Benutzererfahrung.   Allerdings kann eine Mandantenmigration für Datenaufbewahrungszwecke erst nach der Migration von Exchange Online und SharePoint Online/OneDrive for Business in die gleiche Datencenter-Region als abgeschlossen betrachtet werden.
 
  ## <a name="where-is-my-core-customer-data-located"></a>Wo befinden sich meine Kundenkerndaten?
 
-Kundenmandanten Administratoren können die Datenspeicherkarte im Admin Center jederzeit anzeigen, um die wichtigsten Kundendaten am Rest-Standort für jeden Dienst, speziell für Ihren Mandanten, zu bestätigen.Wir veröffentlichen auch den Speicherort von Datacenter GEOS, Rechenzentren und Speicherort Office 365 Kundendaten auf den [Microsoft 365 Interactive-Rechenzentrums Karten ](https://office.com/datamaps) als Referenz für die aktuellen Standard-Stammkunden Daten an Rest-Standorten für neue Mandanten.  Im Microsoft 365 Admin Center können Sie den Speicherort Ihrer Kundendaten über den Abschnitt „Datenspeicherort“ unter Ihrem Organisationsprofil überprüfen.  
+Kundenmandanten Administratoren können die Datenspeicherkarte im Admin Center jederzeit anzeigen, um die wichtigsten Kundendaten am Rest-Standort für jeden Dienst, speziell für Ihren Mandanten, zu bestätigen.  Wir veröffentlichen auch den Speicherort von Datacenter GEOS, Rechenzentren und Speicherort Office 365 Kundendaten auf den [Microsoft 365 Interactive-Rechenzentrums Karten ](https://office.com/datamaps) als Referenz für die aktuellen Standard-Stammkunden Daten an Rest-Standorten für neue Mandanten.  Im Microsoft 365 Admin Center können Sie den Speicherort Ihrer Kundendaten über den Abschnitt „Datenspeicherort“ unter Ihrem Organisationsprofil überprüfen.  
  
 ## <a name="when-will-i-be-able-to-request-a-move"></a>Wann kann ich eine Verschiebung beantragen?
   
@@ -101,7 +101,7 @@ Eine umfassende Liste der Funktionen, die während des Verschiebens von Daten f�
   
  ## <a name="how-do-i-know-the-move-is-complete"></a>Wie kann ich feststellen, ob die Verschiebung abgeschlossen ist?
   
-Sie können im Microsoft 365-Nachrichtencenter überprüfen, ob das Verschieben der Daten der einzelnen Dienste abgeschlossen ist. Nachdem die Daten eines jeden Diensts verschoben wurden, wird hier eine Abschlussbenachrichtigung veröffentlicht. Sie werden also drei Benachrichtigungen erhalten: jeweils eine für Exchange Online, SharePoint Online und Skype for Business Online.  Sie können den Speicherort Ihrer ruhenden Kundendaten außerdem im Microsoft 365 Admin Center über den Abschnitt „Datenspeicherort“ unter Ihrem Organisationsprofil überprüfen.  
+Sie können im Microsoft 365-Nachrichtencenter überprüfen, ob das Verschieben der Daten der einzelnen Dienste abgeschlossen ist. Nachdem die Daten eines jeden Diensts verschoben wurden, wird hier eine Abschlussbenachrichtigung veröffentlicht. Sie werden also drei Benachrichtigungen erhalten: jeweils eine für Exchange Online, SharePoint Online und Skype for Business Online.  Sie können den Speicherort Ihrer ruhenden Kundendaten außerdem im Microsoft 365 Admin Center über den Abschnitt „Datenspeicherort“ unter Ihrem Organisationsprofil überprüfen.  
   
 ## <a name="i-am-a-microsoft-365-customer-in-one-of-the-new-datacenter-geos-but-when-i-signed-up-i-selected-a-different-country-how-can-i-be-moved-to-the-new-datacenter-geo"></a>Ich bin ein Microsoft 365-Kunde in einem der neuen geografischen Räume des Rechenzentrums, habe aber während der Registrierung ein anderes Land ausgewählt. Wie kann ich in die neue geografische Datencenter-Region wechseln?
 
@@ -109,7 +109,7 @@ Es ist nicht möglich, das Ihrem Mandanten zugeordnete Registrierungsland zu än
   
 ## <a name="what-happens-if-we-are-in-process-of-email-data-migration-to-microsoft-365-during-the-exchange-online-move"></a>Was geschieht, wenn die E-Mail-Datenmigration zu Microsoft 365 während der Exchange Online-Verschiebung durchgeführt wird?
 
-Dies ist ein sehr häufig auftretendes Szenario, das vollständig unterstützt wird.  Die Cloud-Migration zwischen Datencenter-Regionen behindert keine Migrationen von lokalen Postfächern in die Cloud.
+Dies ist ein sehr häufig auftretendes Szenario, das vollständig unterstützt wird.  Die Cloud-Migration zwischen dem Datencenter GEOS beeinträchtigt keine lokalen zu Cloud-Postfachmigrationen.
   
  ## <a name="can-i-pilot-some-users"></a>Kann ich einen Test mit einigen Benutzern durchführen?
   

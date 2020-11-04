@@ -2,7 +2,7 @@
 title: Unzustellbarkeitsbericht im Nachrichtenübermittlungs-Dashboard
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -13,12 +13,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können erfahren, wie Sie den Bericht über Unzustellbarkeits Informationen im Nachrichtenfluss-Dashboard im Security & Compliance Center verwenden, um die am häufigsten auftretenden Fehlercodes in Unzustellbarkeitsberichten (auch als Unzustellbarkeitsberichte oder Unzustellbarkeitsnachrichten bezeichnet) von Absendern in Ihrer Organisation zu überwachen.
-ms.openlocfilehash: bc530cce54b3d4fd9f414920a8fb58f4322f6b5c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 4967b3b5c294566e46bbc715dd6702c23d618105
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195964"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877681"
 ---
 # <a name="non-delivery-report-in-the-security--compliance-center"></a>Unzustellbarkeitsbericht im Security & Compliance Center
 
@@ -33,7 +33,7 @@ Der **Unzustellbarkeitsbericht** im [Nachrichtenfluss-Dashboard](mail-flow-insig
 
 Wenn Sie auf das Widget **nicht Zustellungsbericht** klicken, gelangen Sie zum **Unzustellbarkeitsbericht**.
 
-Standardmäßig wird die Aktivität für alle Fehlercodes angezeigt. Wenn Sie auf **Daten anzeigen für**klicken, können Sie einen bestimmten Fehlercode aus der Dropdownliste auswählen.
+Standardmäßig wird die Aktivität für alle Fehlercodes angezeigt. Wenn Sie auf **Daten anzeigen für** klicken, können Sie einen bestimmten Fehlercode aus der Dropdownliste auswählen.
 
 Wenn Sie mit dem Mauszeiger auf eine bestimmte Farbe (Fehlercode) an einem bestimmten Tag im Diagramm zeigen, wird die Gesamtzahl der Nachrichten für den Fehler angezeigt.
 
@@ -46,18 +46,18 @@ Wenn Sie in einer Berichtsansicht auf **Detailtabelle anzeigen** klicken, werden
 - **Date**
 - **Code für Unzustellbarkeitsberichte**
 - **Count**
-- **Beispiel Meldungen**: die Nachrichten-IDs einer Stichprobe betroffener Nachrichten.
+- **Beispiel Meldungen** : die Nachrichten-IDs einer Stichprobe betroffener Nachrichten.
 
-Wenn Sie in einer Detailtabellen Ansicht auf **Filter** klicken, können Sie einen Datumsbereich mit **anfangs** -und **Enddatum**angeben.
+Wenn Sie in einer Detailtabellen Ansicht auf **Filter** klicken, können Sie einen Datumsbereich mit **anfangs** -und **Enddatum** angeben.
 
-Klicken Sie auf **Anforderungs Download**, um den Bericht für einen bestimmten Datumsbereich an einen oder mehrere Empfänger zu senden.
+Klicken Sie auf **Anforderungs Download** , um den Bericht für einen bestimmten Datumsbereich an einen oder mehrere Empfänger zu senden.
 
 Wenn Sie eine Zeile in der Tabelle auswählen, wird ein Flyout mit den folgenden Informationen angezeigt:
 
 - **Date**
-- **Unzustellbarkeitsbericht Code**: Sie können auf den Link klicken, um weitere Informationen zu den Ursachen und Lösungen für den spezifischen Fehlercode zu erhalten.
+- **Unzustellbarkeitsbericht Code** : Sie können auf den Link klicken, um weitere Informationen zu den Ursachen und Lösungen für den spezifischen Fehlercode zu erhalten.
 - **Count**
-- **Beispiel Meldungen**: Sie können auf **Beispiel Meldungen anzeigen** klicken, um die Ergebnisse der [Nachrichtenablaufverfolgung](message-trace-scc.md) für ein Beispiel der betroffenen Nachrichten anzuzeigen.
+- **Beispiel Meldungen** : Sie können auf **Beispiel Meldungen anzeigen** klicken, um die Ergebnisse der [Nachrichtenablaufverfolgung](message-trace-scc.md) für ein Beispiel der betroffenen Nachrichten anzuzeigen.
 
 ![Detail Flyout nach dem Auswählen einer Zeile in der Detailtabellen Ansicht im Unzustellbarkeitsbericht](../../media/mfi-non-delivery-report-details-flyout.png)
 

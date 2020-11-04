@@ -2,7 +2,7 @@
 title: Beheben eines möglichen Einblicks in den E-Mail-Loop
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -13,12 +13,12 @@ ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können erfahren, wie Sie den Fix possible Mail Loop Insight im Nachrichtenfluss-Dashboard im Security & Compliance Center verwenden, um e-Mail-Schleifen in Ihrer Organisation zu identifizieren und zu beheben.
-ms.openlocfilehash: e868c020ae307ba490e85e5803f94a67a1a94057
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 15ad5c467d18ce3038bcb05db798a9b5a7c3e391
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198445"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877505"
 ---
 # <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>Beheben möglicher Einblicke in die e-Mail-Schleife im Security & Compliance Center
 
@@ -34,10 +34,10 @@ Mit dem **Fix possible Mail Loop** Insight im Bereich **Recommended for you** de
 Wenn Sie auf das Widget **Details anzeigen** klicken, wird ein Flyout mit weiteren Informationen angezeigt:
 
 - **Domäne**
-- **Anzahl von Nachrichten**: Sie können auf **Beispiel Meldungen anzeigen** klicken, um die Ergebnisse der [Nachrichtenablaufverfolgung](message-trace-scc.md) für ein Beispiel der Nachrichten anzuzeigen, die von der Schleife betroffen waren.
-- **Domain-Typ**"beispielsweise autorisierend oder nicht autorisierend.
-- **MX-Eintrag**: der Host (**e-Mail-Server**) und die **Prioritäts** Werte des MX-Eintrags für die Domäne.
-- **Schleifen Grund** und **How to Fix**: Wir werden versuchen, die gängigsten e-Mail-Schleifen Szenarien zu identifizieren und die empfohlenen Aktionen bereitzustellen (falls verfügbar), um die Schleife zu reparieren.
+- **Anzahl von Nachrichten** : Sie können auf **Beispiel Meldungen anzeigen** klicken, um die Ergebnisse der [Nachrichtenablaufverfolgung](message-trace-scc.md) für ein Beispiel der Nachrichten anzuzeigen, die von der Schleife betroffen waren.
+- **Domain-Typ** "beispielsweise autorisierend oder nicht autorisierend.
+- **MX-Eintrag** : der Host ( **e-Mail-Server** ) und die **Prioritäts** Werte des MX-Eintrags für die Domäne.
+- **Schleifen Grund** und **How to Fix** : Wir werden versuchen, die gängigsten e-Mail-Schleifen Szenarien zu identifizieren und die empfohlenen Aktionen bereitzustellen (falls verfügbar), um die Schleife zu reparieren.
 
 ![Details-Flyout, das angezeigt wird, nachdem Sie auf Details anzeigen in der Fix possible Mail Loop Insight](../../media/mfi-fix-possible-mail-loop-details.png)
 

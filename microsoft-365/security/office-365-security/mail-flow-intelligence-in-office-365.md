@@ -2,7 +2,7 @@
 title: Nachrichtenfluss-Intelligence
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Administratoren können sich über die Fehlercodes informieren, die der Nachrichtenzustellung mithilfe von Connectors (auch als Nachrichtenfluss-Intelligence bezeichnet) zugeordnet sind.
-ms.openlocfilehash: 0d73ea1fe64cda3c3f29f7bd437bba4e93f37529
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 461d9bfa91d88b8bbec52d5aad6ec7a2e534bc96
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198503"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877801"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>Intelligenter Nachrichtenfluss in EOP
 
@@ -27,7 +27,7 @@ ms.locfileid: "48198503"
 
 In Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer verwenden Sie in der Regel einen Connector zum Weiterleiten von e-Mail-Nachrichten von EoP an Ihre lokale e-Mail-Umgebung. Sie können auch einen Connector verwenden, um Nachrichten von Microsoft 365 an eine Partnerorganisation weiterzuleiten. Wenn Microsoft 365 diese Nachrichten nicht über den Connector übertragen kann, werden Sie in Microsoft 365 in die Warteschlange eingereiht. Microsoft 365 wird weiterhin die Zustellung für jede Nachricht für 24 Stunden wiederholen. Nach 24 Stunden läuft die Nachricht in der Warteschlange ab, und die Nachricht wird an den ursprünglichen Absender in einem Unzustellbarkeitsbericht (auch als NDR oder Unzustellbarkeitsnachricht bezeichnet) zurückgegeben.
 
-Microsoft 365 generiert einen Fehler, wenn eine Nachricht nicht über einen Connector zugestellt werden kann. In diesem Thema werden die am häufigsten auftretenden Fehler und die dazugehörigen Lösungen beschrieben. Gemeinsam werden Warteschlangen-und Benachrichtigungsfehler für unzustellbare Nachrichten, die über Connectors gesendet werden, als _Nachrichtenfluss-Intelligence_bezeichnet.
+Microsoft 365 generiert einen Fehler, wenn eine Nachricht nicht über einen Connector zugestellt werden kann. In diesem Thema werden die am häufigsten auftretenden Fehler und die dazugehörigen Lösungen beschrieben. Gemeinsam werden Warteschlangen-und Benachrichtigungsfehler für unzustellbare Nachrichten, die über Connectors gesendet werden, als _Nachrichtenfluss-Intelligence_ bezeichnet.
 
 ## <a name="error-code-450-44312-dns-query-failed"></a>Fehlercode: 450 4.4.312 DNS-Abfragefehler
 
@@ -81,7 +81,7 @@ Normalerweise bedeutet dieser Fehler, dass Microsoft 365 einen Verbindungsfehler
 
   - Ändern Sie die akzeptierte Domäne in Microsoft 365, die Ihrer lokalen e-Mail-Umgebung zugeordnet ist, vom **internen Relay** an **autorisierend**. Anweisungen finden Sie unter [Manage accepted domains in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
-  **Hinweis**: in der Regel dauern diese Änderungen zwischen 30 Minuten und einer Stunde, um wirksam zu werden. Vergewissern Sie sich nach einer Stunde, dass der Fehler nicht mehr angezeigt wird.
+  **Hinweis** : in der Regel dauern diese Änderungen zwischen 30 Minuten und einer Stunde, um wirksam zu werden. Vergewissern Sie sich nach einer Stunde, dass der Fehler nicht mehr angezeigt wird.
 
 - Wenn der Fehler von Ihrer Partnerorganisation generiert wurde (beispielsweise einem Drittanbieter von Clouddiensten), müssen Sie sich zur Problembehebung an Ihren Partner wenden.
 

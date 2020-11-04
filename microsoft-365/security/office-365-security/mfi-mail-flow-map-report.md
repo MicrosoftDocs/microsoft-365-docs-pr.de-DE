@@ -2,7 +2,7 @@
 title: Zuordnung der Nachrichtenübermittlung
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -13,12 +13,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können erfahren, wie Sie die e-Mail-Fluss Zuordnung im Nachrichtenfluss-Dashboard im Security & Compliance Center verwenden, um zu visualisieren und nachzuverfolgen, wie e-Mail-Nachrichten zu und von Ihrer Organisation über Connectors und ohne Connectors verwendet werden.
-ms.openlocfilehash: 74cabb7f7b34be6248d18d71565c8a9729d7e38b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: fc03f05db77c40dbf726692e6fb6069d587a5ffc
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199371"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877765"
 ---
 # <a name="mail-flow-map-in-the-security--compliance-center"></a>Nachrichtenfluss Zuordnung im Security & Compliance Center
 
@@ -37,17 +37,17 @@ Durch Klicken auf das Widget **"Nachrichtenfluss-Zuordnung** " gelangen Sie zum 
 
 Die folgenden Diagramme stehen in der Berichtsansicht zur Verfügung:
 
-- **Daten anzeigen für: Overview**: Dies ist im Wesentlichen eine größere Ansicht des Widgets. Wenn Sie mit dem Mauszeiger auf eine bestimmte Farbe zeigen, wird die Anzahl der Nachrichten für diese Art von Connector angezeigt.
+- **Daten anzeigen für: Overview** : Dies ist im Wesentlichen eine größere Ansicht des Widgets. Wenn Sie mit dem Mauszeiger auf eine bestimmte Farbe zeigen, wird die Anzahl der Nachrichten für diese Art von Connector angezeigt.
 
   ![Übersichtsansicht im Bericht "Nachrichtenfluss Übersicht"](../../media/mfi-mail-flow-map-report-overview.png)
 
-- **Daten anzeigen für: Detail: in**dieser Ansicht werden Details zu den Connectors und Zieldomänen angezeigt. Die obersten Absender-und Empfängerdomänen werden aufgelistet, und die restlichen werden in **andere**eingefügt. Wenn Sie mit dem Mauszeiger auf eine bestimmte Farbe und einen bestimmten Abschnitt zeigen, wird die Anzahl der Nachrichten angezeigt.
+- **Daten anzeigen für: Detail: in** dieser Ansicht werden Details zu den Connectors und Zieldomänen angezeigt. Die obersten Absender-und Empfängerdomänen werden aufgelistet, und die restlichen werden in **andere** eingefügt. Wenn Sie mit dem Mauszeiger auf eine bestimmte Farbe und einen bestimmten Abschnitt zeigen, wird die Anzahl der Nachrichten angezeigt.
 
   ![Detail Ansicht im Nachrichtenfluss-Zuordnungsbericht](../../media/mfi-mail-flow-map-report-detail.png)
 
-Wenn Sie in einer Berichtsansicht auf **Filter** klicken, können Sie einen Datumsbereich mit **anfangs** -und **Enddatum**angeben.
+Wenn Sie in einer Berichtsansicht auf **Filter** klicken, können Sie einen Datumsbereich mit **anfangs** -und **Enddatum** angeben.
 
-Klicken Sie auf **Anforderungs Download**, um den Bericht für einen bestimmten Datumsbereich an einen oder mehrere Empfänger zu senden.
+Klicken Sie auf **Anforderungs Download** , um den Bericht für einen bestimmten Datumsbereich an einen oder mehrere Empfänger zu senden.
 
 Zugehörige Einblicke werden unterhalb der Nachrichtenfluss Zuordnung angezeigt, wenn Sie verfügbar sind (beispielsweise die [Fix possible Mail Loop Insight](mfi-mail-loop-insight.md)).
 
@@ -56,20 +56,20 @@ Zugehörige Einblicke werden unterhalb der Nachrichtenfluss Zuordnung angezeigt,
 Wenn Sie in einer Berichtsansicht auf **Detailtabelle anzeigen** klicken, werden die folgenden Informationen angezeigt:
 
 - **Date**
-- **Category**
+- **Kategorie**
 - **Connector/Drittanbieter-Dienstanbieter**
 - **Absender/Empfängerdomäne**
 - **Nachrichtenanzahl**
 
-Wenn Sie in einer Detailtabellen Ansicht auf **Filter** klicken, können Sie einen Datumsbereich mit **anfangs** -und **Enddatum**angeben.
+Wenn Sie in einer Detailtabellen Ansicht auf **Filter** klicken, können Sie einen Datumsbereich mit **anfangs** -und **Enddatum** angeben.
 
 Wenn Sie eine Zeile auswählen, werden ähnliche Details in einem Flyout angezeigt:
 
 ![Details-Flyout aus der Detailtabelle der Nachrichtenfluss Zuordnung](../../media/mfi-mail-flow-map-view-details-table-details.png)
 
-Klicken Sie auf **Anforderungs Download**, um den Bericht für einen bestimmten Datumsbereich an einen oder mehrere Empfänger zu senden.
+Klicken Sie auf **Anforderungs Download** , um den Bericht für einen bestimmten Datumsbereich an einen oder mehrere Empfänger zu senden.
 
-Klicken Sie auf **Bericht anzeigen**, um zur Ansicht Berichte zurückzukehren.
+Klicken Sie auf **Bericht anzeigen** , um zur Ansicht Berichte zurückzukehren.
 
 ## <a name="see-also"></a>Siehe auch
 

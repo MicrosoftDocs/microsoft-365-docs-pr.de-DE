@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f681d02cc4af8bd56ba945a3d944798e545bf93c
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 4369d51ed740af652be632ba0b8752c708d6c719
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846712"
+ms.locfileid: "48877219"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Priorisieren von Vorfällen in Microsoft 365 Defender
 
@@ -46,9 +46,9 @@ In der **Vorfallswarteschlange** wird eine Auflistung von Vorfällen angezeigt, 
 
 ![Abbildung einer Vorfallswarteschlange](../../media/incidents-queue.png) 
 
-Standardmäßig werden in der Warteschlange im Microsoft 365 Security Center Vorfälle angezeigt, die in den letzten 30 Tagen aufgetreten sind, wobei der letzte Vorfall am Anfang der Liste angezeigt wird, sodass Sie die neuesten Vorfälle zuerst sehen können.
+Standardmäßig zeigt die Warteschlange im Microsoft 365 Security Center Vorfälle an, die in den letzten 30 Tagen angezeigt wurden. Der letzte Vorfall befindet sich am Anfang der Liste, sodass Sie ihn zuerst sehen können.
 
-Die Vorfallswarteschlange bietet anpassbare Spalten, die Ihnen einen Einblick in die unterschiedlichen Merkmale des Vorfalls oder in die enthaltenen Entitäten verschaffen, und Ihnen helfen, eine fundierte Entscheidung hinsichtlich der Priorisierung von Vorfällen zu treffen.
+Die Vorfall Warteschlange macht anpassbare Spalten verfügbar, mit denen Sie die verschiedenen Merkmale des Vorfalls oder die enthaltenen Entitäten sichtbar machen können. Auf diese Weise können Sie eine fundierte Entscheidung in Bezug auf die Priorisierung von Vorfällen für die Verarbeitung treffen.
 
 Um eine zusätzliche Sichtbarkeit auf einen Blick zu erhalten, werden bei der automatischen Benennung von Ereignissen Vorfall Namen basierend auf Warnungs Attributen generiert, beispielsweise die Anzahl betroffener Endpunkte, betroffene Benutzer, Erkennungsquellen oder Kategorien. Auf diese Weise können Sie den Umfang des Vorfalls schnell verstehen.
 
@@ -57,33 +57,18 @@ Beispiel: *mehrstufiger Vorfall auf mehreren Endpunkten, die von mehreren Quelle
 > [!NOTE]
 > Bei Vorfällen, die vor dem Rollout der automatischen Vorfall Benennung vorhanden waren, wird der Name nicht geändert.
 
-Die Vorfallswarteschlange stellt außerdem mehrere Filteroptionen zur Verfügung. Wenn diese angewendet werden, können Sie auswählen, ob Sie alle vorhandenen Vorfälle in Ihrer Umgebung umfassend aufräumen oder sich auf ein bestimmtes Szenario oder eine Bedrohung konzentrieren möchten. Durch Anwenden von Filtern in der Vorfallswarteschlange können Sie ermitteln, welcher Vorfall sofort beachtet werden muss. 
+Die Vorfall Warteschlange macht auch mehrere Filteroptionen verfügbar, die Ihnen bei Anwendung die Möglichkeit bieten, eine umfassende Bereinigung aller vorhandenen Vorfälle in Ihrer Umgebung durchzuführen oder sich auf ein bestimmtes Szenario oder eine Bedrohung konzentrieren. Durch Anwenden von Filtern in der Vorfallswarteschlange können Sie ermitteln, welcher Vorfall sofort beachtet werden muss. 
 
 ## <a name="available-filters"></a>Verfügbare Filter
 
-### <a name="status"></a>Status
-Sie können die Liste der Vorfälle basierend auf deren Status einschränken, um zu sehen, welche Vorgänge aktiv oder aufgelöst sind.
+### <a name="assigned-to"></a>Zugewiesen an
+Sie können festlegen, dass Warnungen angezeigt werden, die Ihnen zugewiesen sind oder die von Automatisierung behandelt werden.
 
-### <a name="severity"></a>Schweregrad
-Der Schweregrad eines Vorfalls ist ein Indikator für die Auswirkungen, die dieser bei Ihnen haben kann. Je höher der Schweregrad, desto größer die Auswirkungen. In der Regel ist bei einem höheren Schweregrad auch die größte sofortige Aufmerksamkeit erforderlich. 
+### <a name="categories"></a>Categories
+Wählen Sie Kategorien aus, um sich auf bestimmte Taktiken, Techniken oder Angriffs Komponenten zu konzentrieren. 
 
-### <a name="assigned-to-owner"></a>Zugewiesen zu (Benutzer)
-Sie können die Liste filtern, indem Sie Vorfälle auswählen, die einer Person oder Ihnen zugewiesen sind.
-
-### <a name="multiple-alerts"></a>Mehrere Warnungen 
-Filtern Sie, um nur Vorfälle mit mehr als einer Warnung anzuzeigen. Dies kann ein Anzeichen für einen Angriff sein, der komplexer oder in der Kill Chain weiter fortgeschritten ist. 
-
-
-### <a name="multiple-service-sources"></a>Mehrere Dienstquellen 
-Filtern, um nur Vorfälle anzuzeigen, die Warnungen aus unterschiedlichen Quellen enthalten (Microsoft Defender for Endpoint, Microsoft Cloud App Security, Microsoft Defender for Identity, Microsoft Defender for Office 365)
-### <a name="service-sources"></a>Dienstquellen
-Wenn Sie eine bestimmte Quelle auswählen, können Sie sich auf Vorfälle konzentrieren, die mindestens eine Warnung aus der ausgewählten Quelle enthalten. 
-
-### <a name="multiple-categories"></a>Mehrere Kategorien 
-Sie können auswählen, dass nur Vorfälle angezeigt werden sollen, die mehreren Kategorien der Kill Chain zugeordnet sind und möglicherweise zu weiteren Beschädigungen führen können. 
-
-### <a name="categories"></a>Kategorien
-Wählen Sie bestimmte Kategorien aus, um sich auf einen bestimmten Schritt in der Kill Chain zu konzentrieren.
+### <a name="classification"></a>Klassifizierung
+Filtern von Vorfällen basierend auf den festgelegten Klassifizierungen der zugehörigen Warnungen. Die Werte umfassen echte Warnungen, falsche Warnungen oder nicht festgelegt.
 
 ### <a name="data-sensitivity"></a>Vertraulichkeit der Daten
 Bei einigen Angriffen liegt der Schwerpunkt auf dem Exfiltrieren von vertraulichen oder wertvollen Daten. Indem Sie einen Filter anwenden, um festzustellen, ob vertrauliche Daten an dem Vorfall beteiligt sind, können Sie schnell ermitteln, ob vertrauliche Informationen potenziell gefährdet sind, und die Behebung dieser Vorfälle priorisieren.
@@ -91,13 +76,40 @@ Bei einigen Angriffen liegt der Schwerpunkt auf dem Exfiltrieren von vertraulich
 >[!NOTE]
 >Gilt nur, wenn Microsoft Information Protection aktiviert ist.
 
+### <a name="device-group"></a>Gerätegruppe
+Filtern nach definierten Gerätegruppen.
+
+### <a name="investigation-state"></a>Untersuchungs Zustand
+Filtern von Vorfällen nach dem Status der automatischen Untersuchung. 
+
+### <a name="multiple-categories"></a>Mehrere Kategorien 
+Sie können auswählen, dass nur Vorfälle angezeigt werden, die mehreren Kategorien zugeordnet sind und somit potenziell mehr Schaden anrichten können. 
+
+### <a name="multiple-service-sources"></a>Mehrere Dienstquellen 
+Filtern, um nur Vorfälle anzuzeigen, die Warnungen aus unterschiedlichen Quellen enthalten (Microsoft Defender for Endpoint, Microsoft Cloud App Security, Microsoft Defender for Identity, Microsoft Defender for Office 365).
+
+### <a name="os-platform"></a>Betriebssystemplattform
+Einschränken der Vorfall Warteschlangenansicht nach Betriebssystem.
+
+### <a name="service-sources"></a>Dienstquellen
+Wenn Sie eine bestimmte Quelle auswählen, können Sie sich auf Vorfälle konzentrieren, die mindestens eine Warnung aus der ausgewählten Quelle enthalten. 
+
+### <a name="severity"></a>Severity
+Der Schweregrad eines Vorfalls deutet auf die Auswirkungen hin, die er auf Ihre Objekte haben kann. Je höher der Schweregrad, desto größer ist die Auswirkung und erfordert in der Regel die unmittelbarste Aufmerksamkeit. 
+
+### <a name="status"></a>Status
+Sie können die Liste der Vorfälle basierend auf deren Status einschränken, um zu sehen, welche Vorgänge aktiv oder aufgelöst sind.
+
+>[!IMPORTANT]
+>Die Filter "Klassifizierung", "Gerätegruppe", "Ermittlungsstatus" und "BS-Plattform" sind derzeit nur in der öffentlichen Vorschau verfügbar.
+
 
 ## <a name="next-steps"></a>Nächste Schritte
 Nachdem Sie festgestellt haben, für welchen Vorfall die höchste Priorität erforderlich ist, können Sie fortfahren und einen Vorfall näher untersuchen.
 - [Untersuchen von Vorfällen](investigate-incidents.md)
 
 
-## <a name="related-topics"></a>Verwandte Themen
+## <a name="see-also"></a>Siehe auch
 - [Übersicht über Vorfälle](incidents-overview.md)
 - [Untersuchen von Vorfällen](investigate-incidents.md)
 - [Verwalten von Vorfällen](manage-incidents.md)

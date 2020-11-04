@@ -2,7 +2,7 @@
 title: Richtlinie für Benutzer Übermittlungen
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Administratoren können erfahren, wie Sie ein Postfach So konfigurieren, dass Spam-und Phishing-e-Mails erfasst werden, die von Benutzern gemeldet werden.
-ms.openlocfilehash: d39614c2cafd3469625c4a01bdc63a1e60fead85
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: edef506074faa1c2104069e6042ee58111d5e367
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842904"
+ms.locfileid: "48877477"
 ---
 # <a name="user-submissions-policy"></a>Richtlinie für Benutzer Übermittlungen
 

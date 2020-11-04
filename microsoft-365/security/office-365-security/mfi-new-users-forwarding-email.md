@@ -2,7 +2,7 @@
 title: Einblick in E-Mail-Weiterleitung von neuen Benutzern
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -11,12 +11,12 @@ ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
 description: Administratoren erfahren, wie Sie mit den neuen Benutzern, die e-Mail-Einblicke im Security & Compliance Center weiterleiten, untersuchen können, wann Benutzer in Ihrer Organisation Nachrichten an neue domänenweiter leiten.
-ms.openlocfilehash: 42f8c536f8a8a1421d97726c7af432c01d053b05
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: af66a84efbd4c0b8f1ccdacf4b71d1caca1c3929
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200655"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877525"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>Neue Benutzer, die e-Mail-Insight im Security & Compliance Center weiterleiten
 
@@ -35,7 +35,7 @@ Wenn Sie auf das Widget klicken, wird ein Flyout angezeigt, in dem Sie weitere D
 
 ![Details-Flyout, das angezeigt wird, nachdem Sie auf die neuen Benutzer weiterleiten von e-Mail Insight geklickt haben](../../media/mfi-new-users-forwarding-email-details.png)
 
-Sie können diese Detailseite auch aufrufen, wenn Sie die Einblicke auswählen, nachdem Sie auf **Alle anzeigen** im Bereich **Top Insights & Empfehlungen** auf (**Berichte** \> - **Dashboard** oder <https://protection.office.com/insightdashboard> ) klicken.
+Sie können diese Detailseite auch aufrufen, wenn Sie die Einblicke auswählen, nachdem Sie auf **Alle anzeigen** im Bereich **Top Insights & Empfehlungen** auf ( **Berichte** \> - **Dashboard** oder <https://protection.office.com/insightdashboard> ) klicken.
 
 Sie können auf den Link **Bericht mit Insight zugeordnet sehen** klicken, um zum **weiter Leitungs Änderungsbericht** zu wechseln, wie im nächsten Abschnitt beschrieben.
 
@@ -59,53 +59,53 @@ Dieser Bericht ist nicht direkt im [Nachrichtenfluss-Dashboard](mail-flow-insigh
 
 Die folgenden Diagramme stehen in der Berichtsansicht zur Verfügung:
 
-- **Daten anzeigen für: neue Weiterleitungs Benutzer**:
+- **Daten anzeigen für: neue Weiterleitungs Benutzer** :
 
   ![Ansicht "neue weiterleitende Benutzer" im Bericht "Weiterleiten von Änderungen"](../../media/forwarding-modifications-report-new-forwarding-users.png)
 
-- **Daten anzeigen für: neue Weiterleitungs Domänen**:
+- **Daten anzeigen für: neue Weiterleitungs Domänen** :
 
   ![Ansicht "neu weitergeleitete Domänen" im Bericht zum Weiterleiten von Änderungen](../../media/forwarding-modifications-report-new-forwarded-domains.png)
 
-Wenn Sie in einer Berichtsansicht auf **Filter** klicken, können Sie einen Datumsbereich mit **anfangs** -und **Enddatum**angeben.
+Wenn Sie in einer Berichtsansicht auf **Filter** klicken, können Sie einen Datumsbereich mit **anfangs** -und **Enddatum** angeben.
 
 ### <a name="details-table-view-for-the-forwarding-modifications-report"></a>Detailtabellen Ansicht für den Weiterleitungs Änderungsbericht
 
-Wenn Sie auf **Detailtabelle anzeigen**klicken, hängt die Anzeige der angezeigten Informationen von dem Diagramm ab, das Sie gesucht haben:
+Wenn Sie auf **Detailtabelle anzeigen** klicken, hängt die Anzeige der angezeigten Informationen von dem Diagramm ab, das Sie gesucht haben:
 
-- **Daten anzeigen für: neue Weiterleitungs Benutzer**:
+- **Daten anzeigen für: neue Weiterleitungs Benutzer** :
 
-  - **Name**: die e-Mail-Adresse des Absenders.
+  - **Name** : die e-Mail-Adresse des Absenders.
   - **Weiterleitender Typ**
   - **Empfängeradresse**
   - **Details**
   - **Count**
   - **Erstes Termin Datum**
 
-- **Daten anzeigen für: neue Weiterleitungs Domänen**:
+- **Daten anzeigen für: neue Weiterleitungs Domänen** :
 
-  - **Name**: die e-Mail-Domäne des Absenders.
+  - **Name** : die e-Mail-Domäne des Absenders.
   - **Weiterleitender Typ**
   - **Empfängeradresse**
   - **Details**
   - **Count**
   - **Erstes Termin Datum**
 
-Wenn Sie in einer Detailtabellen Ansicht auf **Filter** klicken, können Sie einen Datumsbereich mit **anfangs** -und **Enddatum**angeben.
+Wenn Sie in einer Detailtabellen Ansicht auf **Filter** klicken, können Sie einen Datumsbereich mit **anfangs** -und **Enddatum** angeben.
 
 Wenn Sie eine Zeile aus der Tabelle auswählen, wird ein **Detail** Flyout mit den folgenden Informationen angezeigt:
 
-- **Name**: Dies ist entweder die e-Mail-Adresse des Absenders (von **Daten anzeigen für: neue Weiterleitungs Benutzer** anzeigen) oder die e-Mail-Domäne des Absenders (aus **Daten anzeigen für: neue Weiterleitungs Domänen** -Ansicht).
+- **Name** : Dies ist entweder die e-Mail-Adresse des Absenders (von **Daten anzeigen für: neue Weiterleitungs Benutzer** anzeigen) oder die e-Mail-Domäne des Absenders (aus **Daten anzeigen für: neue Weiterleitungs Domänen** -Ansicht).
 - **Weiterleitender Typ**
 - **Empfänger**
 - **Details**
 - **Count**
 - **Anfangstermin**
-- **Empfehlung**: von hier aus können Sie auf den Link klicken, um den Benutzer im Microsoft 365 Admin Center zu verwalten.
+- **Empfehlung** : von hier aus können Sie auf den Link klicken, um den Benutzer im Microsoft 365 Admin Center zu verwalten.
 
 ![Details-Flyout aus der Detailtabelle der Ansicht neue weiterleitende Benutzer im Bericht zum Weiterleiten von Änderungen](../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png)
 
-Klicken Sie auf **Bericht anzeigen**, um zur Ansicht Berichte zurückzukehren.
+Klicken Sie auf **Bericht anzeigen** , um zur Ansicht Berichte zurückzukehren.
 
 ## <a name="related-topics"></a>Verwandte Themen
 

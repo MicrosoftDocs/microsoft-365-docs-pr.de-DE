@@ -2,7 +2,7 @@
 title: Manuelles übermitteln von Nachrichten an Microsoft zur Analyse
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratoren und Endbenutzer können erfahren, wie Sie e-Mail-Nachrichten (gute e-Mails, die als "schlecht" oder "schlecht" gekennzeichnet sind) zur Analyse an Microsoft senden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6673dc7e7ac263ea9f734c002d0ffac410fadc07
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 68a0921f85e5b916cd53ebe84e4ea7d35e39967e
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202198"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877705"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Manuelles übermitteln von Nachrichten an Microsoft zur Analyse
 
@@ -48,9 +48,9 @@ Wenn Sie eine Nachricht erhalten, die durch die Spamfilterung geleitet wurde, di
 
 1. Erstellen Sie eine neue, leere e-Mail-Nachricht mit einem der folgenden Empfänger:
 
-   - **Junk**: `junk@office365.microsoft.com`
+   - **Junk** : `junk@office365.microsoft.com`
 
-   - **Phishing**: `phish@office365.microsoft.com`
+   - **Phishing** : `phish@office365.microsoft.com`
 
 2. Ziehen Sie die Junk-oder Phishing-Nachricht per Drag & Drop in die neue Nachricht. Dadurch wird die Junk-oder Phishing-Nachricht als Anlage in der neuen Nachricht gespeichert. Kopieren und Einfügen des Inhalts der Nachricht oder Weiterleiten der Nachricht (die ursprüngliche Nachricht ist erforderlich, damit die Nachrichtenkopfzeilen überprüft werden können).
 

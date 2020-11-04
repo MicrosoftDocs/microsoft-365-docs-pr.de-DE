@@ -2,7 +2,7 @@
 title: Beheben des Einblicks in langsame Nachrichtenflussregeln
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -14,12 +14,12 @@ ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können erfahren, wie Sie in Ihrer Organisation die Informationen zum Fix Slow Mail Flow Rules Insight im Security & Compliance Center verwenden, um ineffiziente oder fehlerhafte Nachrichtenfluss Regeln (auch bekannt als Transportregeln) zu identifizieren und zu beheben.
-ms.openlocfilehash: 2f9a35534ab4377cff164b38eeb66dd55c48d5b9
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 6a2a3c42eadf3c621b34d2a21344eafd2618e669
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199265"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877537"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>Beheben langsamer Nachrichtenfluss Regeln Einblicke im Security & Compliance Center
 
@@ -40,10 +40,10 @@ Sie können diese Benachrichtigung verwenden, um e-Mail-Flussregeln zu identifiz
 
 Wenn Sie auf das Widget **Details anzeigen** klicken, wird ein Flyout mit weiteren Informationen angezeigt:
 
-- **Regel**: Sie können mit dem Mauszeiger auf die Zusammenfassung zeigen, um alle Bedingungen, Ausnahmen und Aktionen der Regel anzuzeigen. Sie können auf die Zusammenfassung klicken, um die Regel im Exchange Admin Center (EAC) zu bearbeiten.
-- **Anzahl ausgewerteter Nachrichten**: Sie können auf **Beispiel Meldungen anzeigen** klicken, um die Ergebnisse der [Nachrichtenablaufverfolgung](message-trace-scc.md) für ein Beispiel der Nachrichten anzuzeigen, die von der Regel betroffen waren.
+- **Regel** : Sie können mit dem Mauszeiger auf die Zusammenfassung zeigen, um alle Bedingungen, Ausnahmen und Aktionen der Regel anzuzeigen. Sie können auf die Zusammenfassung klicken, um die Regel im Exchange Admin Center (EAC) zu bearbeiten.
+- **Anzahl ausgewerteter Nachrichten** : Sie können auf **Beispiel Meldungen anzeigen** klicken, um die Ergebnisse der [Nachrichtenablaufverfolgung](message-trace-scc.md) für ein Beispiel der Nachrichten anzuzeigen, die von der Regel betroffen waren.
 - **Durchschnittliche Zeitaufwand für jede Nachricht**
-- **Für eine Nachricht aufgewendete mittlere Zeit**: der mittlere Wert, der die obere Hälfte von der unteren Hälfte der Zeit Daten trennt.
+- **Für eine Nachricht aufgewendete mittlere Zeit** : der mittlere Wert, der die obere Hälfte von der unteren Hälfte der Zeit Daten trennt.
 
 ![Details-Flyout, das nach dem Klicken auf Details anzeigen im Fix Slow Mail Flow Rules Insight angezeigt wird](../../media/mfi-fix-slow-mail-flow-rules-details.png)
 

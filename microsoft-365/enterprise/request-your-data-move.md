@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Bestehende Office 365-Kunden müssen vor Ablauf der Frist für Ihr Land eine Anforderung stellen, damit die Microsoft 365-Dienste in den neuen geografischen Raum verschoben werden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7f8f25fcaf3e8beb59ca43ad260e2636cf0c4949
-ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
+ms.openlocfilehash: b6ad699830389ef405b005bf8675a2bd0fb4f20b
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48361939"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877255"
 ---
 # <a name="how-to-request-your-data-move"></a>Anfordern der Datenverschiebung
 
@@ -44,13 +44,13 @@ Berechtigte Microsoft 365-Kunden fordern möglicherweise eine Migration für die
 |Südafrika  <br/> |25. Juli 2019  <br/> |30. Juni 2020  <br/> |
 |Schweiz, Liechtenstein  <br/> |10. Dezember 2019  <br/> |30. Juni 2020  <br/> |
 |Norwegen  <br/> |15. April 2020  <br/> |31. Oktober 2020  <br/> |
-|Deutschland  <br/> |Geplant  <br/> |Geplant  <br/> |
+|Deutschland  <br/> |1. November 2020  <br/> |30. April 2021  <br/> |
 
 ## <a name="how-to-request-a-move"></a>So fordern Sie eine Migration an
 
-Berechtigten Kunden wird im [Microsoft 365 Admin Center](https://aka.ms/365admin) eine Seite angezeigt, auf der sie die Verschiebung ihrer wichtigsten Kundendaten in die neue Region des Datencenters anfordern können.  
+Berechtigten Kunden wird im Microsoft 365 Admin Center eine Seite angezeigt, auf der sie die Verschiebung ihrer wichtigsten Kundendaten in die neue Region des Datencenters anfordern können.  
   
-Erweitern Sie im Navigationsbereich auf der linken Seite **Einstellungen**, und klicken Sie dann auf **Organisationseinstellungen**, um auf die Seite im Microsoft 365 Admin Center zuzugreifen.
+Erweitern Sie im Navigationsbereich auf der linken Seite **Einstellungen** , und klicken Sie dann auf **Organisationseinstellungen** , um auf die Seite im Microsoft 365 Admin Center zuzugreifen.
 Wählen Sie die Registerkarte **Organisationsprofil** aus, und wählen Sie dann die Option **Data Residency** aus.
   
 Dieser Abschnitt wird nicht angezeigt, wenn Ihr Mandant nicht für das Microsoft 365-Migrationsprogramm berechtigt ist.  Wenn Ihre Organisation Anforderungen an die Data Residency hat und Sie eine Migration anfordern müssen, aktivieren Sie das Kontrollkästchen, und klicken Sie dann auf **Speichern**.

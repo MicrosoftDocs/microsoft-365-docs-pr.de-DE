@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: Informationen zu Microsoft 365 Multi-Geo, zur Funktionsweise von Multi-Geo und zu für Datenspeicher verfügbaren geografischen Standorten.
-ms.openlocfilehash: 1924141b86ba3e1c16e4760e0f40d61b6f47ce69
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: a8eba731fac16e56ef66ac0a905de521dfa7a6c8
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690536"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877231"
 ---
 # <a name="plan-for-microsoft-365-multi-geo"></a>Plan für Microsoft 365 Multi-Geo
 
@@ -30,7 +30,7 @@ In einer Multi-Geo-Konfiguration besteht Ihr Microsoft 365-Mandant aus einem zen
 
 Im Folgenden werden einige wichtige Begriffe in Bezug auf Multi-Geo erläutert, die beim Verständnis der grundlegenden Konzepte der Konfiguration hilfreich sind:
 
--   **Mandant** – Darstellung einer Organisation in der Microsoft 365-Cloud, mit der in der Regel eine oder mehrere Domäne(n) verknüpft ist/sind (zum Beispiel https://contoso.sharepoint.com)). 
+-   **Mandant** – Darstellung einer Organisation in der Microsoft 365-Cloud, mit der in der Regel eine oder mehrere Domäne(n) verknüpft ist/sind (zum Beispiel https://contoso.sharepoint.com)). 
 
 -   **Geografische Standorte** – Die geografischen Standorte, die zum Hosten von Daten in einem Microsoft 365-Mandanten verfügbar sind.
 
@@ -73,7 +73,7 @@ Wenn Ihre Benutzer aus einem lokalen Active Directory-System mit Azure Active Di
 
 Die Verwaltung eines Multi-Geo-Mandanten kann von der eines Nicht-Multi-Geo-Mandanten abweichen, da viele SharePoint- und OneDrive-Einstellungen und -Dienste über Multi-Geo-Funktionen verfügen. Es wird empfohlen, den Artikel [Verwalten einer Multi-Geo-Umgebung](administering-a-multi-geo-environment.md) zu lesen, bevor Sie mit der Konfiguration fortfahren.
 
-Informationen zur Endbenutzererfahrung in einer Multi-Geo-Umgebung finden Sie unter [Benutzererfahrung in einer Multi-Geo-Umgebung](multi-geo-user-experience.md).
+Lesen Sie die [Benutzererfahrung in einer Multi-Geo-Umgebung](multi-geo-user-experience.md) , um Details über die Benutzererfahrung in einer Multi-Geo-Umgebung zu erfahren.
 
 Ausführliche Informationen zur Teams-Erfahrung in einer Multi-Geo-fähigen Microsoft 365-Mandanteneinheit finden Sie unter [Teams-Umgebung in einer Microsoft 365 OneDrive und SharePoint Online Multi-Geo-fähigen Mandanteneinheit](https://docs.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo).
 
