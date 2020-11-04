@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a5da8e0168b58011a696f1f602d21e410e2a1eb6
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 504135d30cbb859f419307ba0641c721d171d747
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415604"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847791"
 ---
 # <a name="cloud-security-alliance-csa-star-certification"></a>Cloud Security Alliance (CSA) STAR-Zertifizierung
 
@@ -47,7 +47,7 @@ Erfahren Sie, wie Sie die Bereitstellung Ihrer CSA STAR-Zertifizierung mit den A
 - Microsoft Healthcare Bot
 - Intune
 - Microsoft Managed Desktop
-- Microsoft Defender Advanced Threat Protection
+- Microsoft Defender für Endpunkt
 - OMS Service Map
 - Power Automate (ehemals Microsoft Flow): Clouddienst als eigenständiger Dienst oder in einem Office 365- oder Dynamics 365-Plan bzw. -Anwendungssuite enthalten
 - PowerApps-Clouddienst: als eigenständiger Dienst oder in einem Office 365- oder Dynamics 365-Plan bzw. -Anwendungssuite enthalten
@@ -75,9 +75,9 @@ Azure, Microsoft Cloud App-Sicherheit, Intune und Power BI haben für die Bewert
 
 **Welche CSA STAR-Bewertungen haben Microsoft Business Cloud Services erhalten?**
 
-- **Stufe 1**: **CSA STAR-Selbstbewertung**: Azure, Dynamics 365 und Office 365. Die [Selbstbewertung](offering-csa-star-self-assessment.md) ist ein ergänzendes Angebot der Clouddienstanbieter, um ihre Sicherheitskontrollen zu dokumentieren und die Kunden beim Bewerten der Sicherheit des Diensts zu unterstützen.
-- **Stufe 2**: **CSA STAR-Zertifizierung**: Azure, Microsoft Cloud App-Sicherheit, Intune und Power BI. Für die STAR-Zertifizierung ist das Erreichen der ISO/IEC 27001-Zertifizierung und die Erfüllung der in der CCM angegebenen Kriterien erforderlich. Sie wird nach strenger Bewertung der Sicherheitskontrollen und Methoden eines Clouddienstanbieters durch Dritte erteilt.
-- **Stufe 2**: **CSA STAR-Nachweis**: Azure und Intune. CSA und AICPA haben gemeinsam Richtlinien für CPAs aufgestellt, die diese für SOC 2-Bestrebungen unter Verwendung der Kriterien des AICPA (Trust Service Principles, AT 101) und der CSA CCM nutzen können. Der [STAR-Nachweis](offering-CSA-STAR-Attestation.md) beruht auf diesen Richtlinien und wird aufgrund strenger unabhängiger Bewertungen der Cloudanbieter ausgestellt.
+- **Stufe 1** : **CSA STAR-Selbstbewertung** : Azure, Dynamics 365 und Office 365. Die [Selbstbewertung](offering-csa-star-self-assessment.md) ist ein ergänzendes Angebot der Clouddienstanbieter, um ihre Sicherheitskontrollen zu dokumentieren und die Kunden beim Bewerten der Sicherheit des Diensts zu unterstützen.
+- **Stufe 2** : **CSA STAR-Zertifizierung** : Azure, Microsoft Cloud App-Sicherheit, Intune und Power BI. Für die STAR-Zertifizierung ist das Erreichen der ISO/IEC 27001-Zertifizierung und die Erfüllung der in der CCM angegebenen Kriterien erforderlich. Sie wird nach strenger Bewertung der Sicherheitskontrollen und Methoden eines Clouddienstanbieters durch Dritte erteilt.
+- **Stufe 2** : **CSA STAR-Nachweis** : Azure und Intune. CSA und AICPA haben gemeinsam Richtlinien für CPAs aufgestellt, die diese für SOC 2-Bestrebungen unter Verwendung der Kriterien des AICPA (Trust Service Principles, AT 101) und der CSA CCM nutzen können. Der [STAR-Nachweis](offering-CSA-STAR-Attestation.md) beruht auf diesen Richtlinien und wird aufgrund strenger unabhängiger Bewertungen der Cloudanbieter ausgestellt.
 
 ## <a name="resources"></a>Ressourcen
 

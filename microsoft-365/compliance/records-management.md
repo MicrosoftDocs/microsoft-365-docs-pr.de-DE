@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Mit der Datensatzverwaltung in Microsoft 365 können Sie Ihre Aufbewahrungszeitpläne auf einen Dateiplan anwenden, der die Aufbewahrung, die Datensatzdeklaration und die Löschung verwaltet.
-ms.openlocfilehash: e6e72a14d0d3e22823c8341145f64721831586f9
-ms.sourcegitcommit: 095b1f52f2e73e8d44195916984efeb0908c2ad8
+ms.openlocfilehash: 6648a3a671e40dd5218eba1a1e8bafe42120f0de
+ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48755564"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "48830526"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Weitere Informationen zur Datensatzverwaltung in Microsoft 365
 
@@ -46,9 +46,9 @@ Verwenden Sie die folgenden Funktionen zur Unterstützung Ihrer Datensatzverwalt
 
 - **Überprüfen und validieren Sie die Disposition** mit [Dispositionsüberprüfungen](disposition.md#disposition-reviews) und Nachweis der [Eintragslöschung](disposition.md#disposition-of-records).
 
-- **Exportieren Sie Informationen zu allen Elementen**, die mit der [Exportoption](disposition.md#filter-and-export-the-views) verworfen wurden.
+- **Exportieren Sie Informationen zu allen Elementen** , die mit der [Exportoption](disposition.md#filter-and-export-the-views) verworfen wurden.
 
-- **Legen Sie spezifische Berechtigungen für Datensatzverwalterfunktionen in Ihrer Organisation fest**, um [über den richtigen Zugriff zu verfügen](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
+- **Legen Sie spezifische Berechtigungen für Datensatzverwalterfunktionen in Ihrer Organisation fest** , um [über den richtigen Zugriff zu verfügen](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
 Mit diesen Funktionen können Sie die Aufbewahrungspläne Ihrer Organisation und die Anforderungen in eine Lösung für die Datensatzverwaltung integrieren, mit der Aufbewahrung, Deklaration von Datensätzen und Disposition zur Unterstützung des gesamten Inhaltslebenszyklus verwaltet werden.
 
@@ -62,9 +62,9 @@ Wenn Inhalt zum Datensatz erklärt wird:
 
 - Andere Aktivitäten in Verbindung mit dem Element werden protokolliert.
 
-- Sie haben einen Verfügungsnachweis, wenn die Elemente am Ende ihrer Aufbewahrungsfrist gelöscht werden.
+- Sie haben einen Löschungsnachweis, wenn die Elemente am Ende ihrer Aufbewahrungsfrist gelöscht werden.
 
-Sie verwenden [Aufbewahrungsbezeichnungen](retention.md#retention-labels), um Inhalte als **Datensatz** oder **regulatorischen Datensatz** (derzeit in der Vorschau) zu kennzeichnen. Der Unterschied zwischen diesen beiden wird im nächsten Abschnitt erläutert. Sie können diese Bezeichnungen entweder veröffentlichen, so dass Benutzer und Administratoren sie manuell auf Inhalte anwenden können, oder Sie können diese Labels automatisch auf Inhalte anwenden, die Sie als Datensatz oder regulatorischen Datensatz markieren möchten.
+Sie verwenden [Aufbewahrungsbezeichnungen](retention.md#retention-labels), um Inhalte als **Datensatz** oder **regulatorischen Datensatz** zu kennzeichnen. Der Unterschied zwischen diesen beiden wird im nächsten Abschnitt erläutert. Sie können diese Bezeichnungen entweder veröffentlichen, so dass Benutzer und Administratoren sie manuell auf Inhalte anwenden können, oder Sie können diese Labels automatisch auf Inhalte anwenden, die Sie als Datensatz oder regulatorischen Datensatz markieren möchten.
 
 Durch die Verwendung von Aufbewahrungsbezeichungen zur Deklaration von Aufzeichnungen können Sie eine einheitliche und konsistente Strategie für die Verwaltung von Datensätzen in Ihrer Microsoft 365-Umgebung implementieren.
 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie DLP-Richtlinien (Data Loss Prevention, Verhinderung von Datenverlust) so konfigurieren können, dass Microsoft 365-EPDLP-Speicherorte (Endpoint Data Loss Prevention) verwendet werden.
-ms.openlocfilehash: 682996c084f4dce888aaff517ad84d335ed92206
-ms.sourcegitcommit: bd36c88e731e3fee2a3a5cb3564fdc94f11bab94
+ms.openlocfilehash: 95c470a3dfc90f9c7b9a36d282c016781e4e13a8
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769664"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847189"
 ---
 # <a name="using-endpoint-data-loss-prevention-preview"></a>Nutzung von Endpunkt-DLP (Vorschau)
 
@@ -149,7 +149,7 @@ Bei diesen Szenarien ist es erforderlich, dass Sie bereits über Geräte verfüg
 
 3. Wählen Sie **Richtlinie bearbeiten (Vorschau)** aus.
 
-4. Wechseln Sie zur Seite **Erweiterte DLP-Regeln** , und bearbeiten Sie **Geringe Menge an Inhalten erkannt. USA – persönlich identifizierbare Informationen** .
+4. Wechseln Sie zur Seite **Erweiterte DLP-Regeln** , und bearbeiten Sie **Geringe Menge an Inhalten erkannt. USA – persönlich identifizierbare Informationen**.
 
 5. Scrollen Sie nach unten zum Abschnitt **Vorfallberichte** , und legen Sie **Benachrichtigung an Administratoren senden, wenn es eine Regelübereinstimmung gibt** auf **Ein** fest. Es werden automatisch E-Mail-Benachrichtigungen an den Administrator und alle anderen Personen gesendet, die Sie der Empfängerliste hinzufügen. 
 
@@ -174,7 +174,7 @@ Bei diesen Szenarien ist es erforderlich, dass Sie bereits über Geräte verfüg
 
 3. Wählen Sie **Richtlinie bearbeiten (Vorschau)** aus.
 
-4. Wechseln Sie zur Seite **Erweiterte DLP-Regeln** , und bearbeiten Sie **Geringe Menge an Inhalten erkannt. USA – persönlich identifizierbare Informationen** .
+4. Wechseln Sie zur Seite **Erweiterte DLP-Regeln** , und bearbeiten Sie **Geringe Menge an Inhalten erkannt. USA – persönlich identifizierbare Informationen**.
 
 5. Scrollen Sie nach unten zum Abschnitt **Aktivitäten auf Windows-Geräten überwachen oder einschränken** , und legen Sie für jede Aktivität die entsprechende Aktion auf **Blockieren mit Außerkraftsetzung** fest.
 
@@ -183,7 +183,7 @@ Bei diesen Szenarien ist es erforderlich, dass Sie bereits über Geräte verfüg
    
 6. Wählen Sie **Speichern** aus.
 
-7. Wiederholen Sie die Schritte 4-7 für **Große Menge an Inhalten erkannt. USA – persönlich identifizierbare Informationen** .
+7. Wiederholen Sie die Schritte 4-7 für **Große Menge an Inhalten erkannt. USA – persönlich identifizierbare Informationen**.
 
 8. Speichern Sie alle vorgenommenen Einstellungen, indem Sie **Weiter** und dann **Senden** der Richtlinienänderungen auswählen.
 
@@ -203,7 +203,7 @@ Bei diesen Szenarien ist es erforderlich, dass Sie bereits über Geräte verfüg
 - [Verhinderung von Datenverlust – Übersicht](data-loss-prevention-policies.md)
 - [Erstellen, Testen und Optimieren einer DLP-Richtlinie](create-test-tune-dlp-policy.md)
 - [Erste Schritte mit dem Aktivitäten-Explorer](data-classification-activity-explorer.md)
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/)
+- [Microsoft Defender für Endpunkt](https://docs.microsoft.com/windows/security/threat-protection/)
 - [Onboarding-Tools und -Methoden für Windows 10-Computer](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
 - [Microsoft 365-Abonnement](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Azure Active Directory (AAD) Einbindung](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)

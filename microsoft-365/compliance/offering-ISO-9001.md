@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e2caa6dd9a2e6838877edb2000e020ddb682ffd5
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 7d026a91cca3b077e1aeb0d01701b9b496fe8a45
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417659"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843341"
 ---
 # <a name="iso-90012015-quality-management-systems-standards"></a>ISO 9001:2015 Standards für Qualitätsmanagementsysteme
 
@@ -38,7 +38,7 @@ Ein unabhängiges externes Auditunternehmen führte eine strenge Überprüfung v
 - Dynamics 365, Dynamics 365 Government und Dynamics 365 Deutschland
 - Microsoft Graph
 - Intune
-- Microsoft Defender Advanced Threat Protection
+- Microsoft Defender für Endpunkt
 - Microsoft Healthcare Bot
 - Microsoft Managed Desktop
 - Power Automate-Clouddienst (ehemals Microsoft Flow) als eigenständiger Dienst oder in einem Office 365- oder Dynamics 365-Plan bzw. -Anwendungssuite enthalten

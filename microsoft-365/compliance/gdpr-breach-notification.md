@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: e4750e063c0f049c5f3faa1667aafb7f1afa6586
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: e94cd9e615ee53827517dd7de02d9c0002532688
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48305179"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843149"
 ---
 # <a name="gdpr-breach-notification"></a>Benachrichtigung über DSGVO-Verstöße
 
@@ -36,10 +36,10 @@ Personenbezogene Daten beziehen sich auf alle Informationen im Zusammenhang mit 
 
 Hilfreiche Definitionen für DSGVO-Ausdrücke, die in diesem Dokument verwendet werden:
 
-- *Datenverantwortlicher (Verantwortlicher)*: eine juristische Person, Behörde, Einrichtung oder andere Stelle, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet.  
-- *Personenbezogene Daten * und *betroffene Person*: alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person (betroffene Person) beziehen; als identifizierbar wird eine natürliche Person angesehen, die direkt oder indirekt identifiziert werden kann.  
-- *Auftragsverarbeiter*: eine natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, die personenbezogene Daten im Auftrag des Verantwortlichen verarbeitet.  
-- *Kundendaten*: Daten, die während des regulären Geschäftsbetriebs erstellt und gespeichert werden.
+- *Datenverantwortlicher (Verantwortlicher)* : eine juristische Person, Behörde, Einrichtung oder andere Stelle, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet.  
+- *Personenbezogene Daten* und *betroffene Person* : alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person (betroffene Person) beziehen; als identifizierbar wird eine natürliche Person angesehen, die direkt oder indirekt identifiziert werden kann.  
+- *Auftragsverarbeiter* : eine natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, die personenbezogene Daten im Auftrag des Verantwortlichen verarbeitet.  
+- *Kundendaten* : Daten, die während des regulären Geschäftsbetriebs erstellt und gespeichert werden.
 
 ## <a name="microsoft-and-breach-notification"></a>Microsoft und Benachrichtigungen bei Datenschutzverletzungen
 
@@ -61,14 +61,14 @@ Details zur Benachrichtigung über Datenschutzverletzungen für bestimmte Micros
 2. **[Azure und Dynamics 365](gdpr-breach-azure-dynamics.md)**  
     Microsoft verfügt über einen rund um die Uhr verfügbaren weltweiten Notfalldienst, der dafür verantwortlich ist, die Auswirkungen von Angriffen auf Microsoft Azure und Dynamics 365 abzufangen.
 
-    - *Erkennung von Datenschutzverletzungen*: Da sowohl Microsoft als auch der Kunde Sicherheitsverpflichtungen haben, basieren die Azure-Dienste auf einem Modell der gemeinsamen Verantwortung, um sicherheitstechnische und geschäftliche Verantwortlichkeiten zu definieren. Microsoft überwacht und reagiert nicht auf Sicherheitsvorfälle im Zuständigkeitsbereich des Kunden. Im Fall von Datenschutzverletzungen können Kunden mit dem [Kundensupport](https://azure.microsoft.com/support/options/) von Azure zusammenarbeiten, sofern entsprechende Dienstverträge bestehen. Microsoft Azure bietet außerdem verschiedene Dienste (z. B. [Azure Security Center](https://azure.microsoft.com/services/security-center/)), die Kunden dabei unterstützen, Maßnahmen und Prozesse für die Reaktion auf Sicherheitsvorfälle zu entwickeln und zu verwalten.
+    - *Erkennung von Datenschutzverletzungen* : Da sowohl Microsoft als auch der Kunde Sicherheitsverpflichtungen haben, basieren die Azure-Dienste auf einem Modell der gemeinsamen Verantwortung, um sicherheitstechnische und geschäftliche Verantwortlichkeiten zu definieren. Microsoft überwacht und reagiert nicht auf Sicherheitsvorfälle im Zuständigkeitsbereich des Kunden. Im Fall von Datenschutzverletzungen können Kunden mit dem [Kundensupport](https://azure.microsoft.com/support/options/) von Azure zusammenarbeiten, sofern entsprechende Dienstverträge bestehen. Microsoft Azure bietet außerdem verschiedene Dienste (z. B. [Azure Defender](https://azure.microsoft.com/services/security-center/)), die Kunden dabei unterstützen, Maßnahmen und Prozesse für die Reaktion auf Sicherheitsvorfälle zu entwickeln und zu verwalten.
 
         Eine Liste der Ereignisse, die eine Untersuchung einer Datenschutzverletzung in Microsoft Azure auslösen, finden Sie unter [Erkennung potenzieller Sicherheitsverletzungen](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics#detection-of-potential-breaches). Die Seite [Azure und Benachrichtigungen bei Sicherheitsverletzungen im Rahmen der DSGVO](gdpr-breach-azure-dynamics.md) enthält weitere Informationen dazu, wie Microsoft Sicherheitsvorfälle in Azure untersucht, verwaltet und darauf reagiert.
 
-    - *Reaktion auf Datenschutzverletzungen*: Microsoft bestimmt geeignete Prioritäts- und Schweregrade einer Datenschutzverletzung durch eine Untersuchung der funktionellen Auswirkungen, der Wiederherstellbarkeit und der Beeinträchtigung von Daten durch den Vorfall. Die Prioritäten und Schweregrade können sich im Verlauf der Untersuchung aufgrund neuer Erkenntnisse und Schlussfolgerungen ändern.
+    - *Reaktion auf Datenschutzverletzungen* : Microsoft bestimmt geeignete Prioritäts- und Schweregrade einer Datenschutzverletzung durch eine Untersuchung der funktionellen Auswirkungen, der Wiederherstellbarkeit und der Beeinträchtigung von Daten durch den Vorfall. Die Prioritäten und Schweregrade können sich im Verlauf der Untersuchung aufgrund neuer Erkenntnisse und Schlussfolgerungen ändern.
     Das Microsoft-Team für die Reaktion auf Sicherheitsvorfälle arbeitet eng mit weltweit tätigen Rechtsberatern zusammen, um sicherzustellen, dass die Forensik unter Einhaltung der gesetzlichen Verpflichtungen und Zusagen gegenüber dem Kunden ausgeführt wird. Diese Prozesse sind unter [Reaktion auf Datenschutzverletzungen in Azure](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics#azures-data-breach-response)detailliert beschrieben.
 
-    - *Kundenbenachrichtigung*: Microsoft Azure benachrichtigt Kunden und Aufsichtsbehörden bei Bedarf über Datenschutzverstöße. Ab dem Zeitpunkt, an dem wir eine Datenschutzverletzung deklarieren, vergehen nicht mehr als 72 Stunden, bis wir unsere Kunden informieren, mit Ausnahme der folgenden Situationen:
+    - *Kundenbenachrichtigung* : Microsoft Azure benachrichtigt Kunden und Aufsichtsbehörden bei Bedarf über Datenschutzverstöße. Ab dem Zeitpunkt, an dem wir eine Datenschutzverletzung deklarieren, vergehen nicht mehr als 72 Stunden, bis wir unsere Kunden informieren, mit Ausnahme der folgenden Situationen:
 
         - Microsoft ist der Meinung, dass eine Benachrichtigung das Risiko für andere Kunden erhöht.
         - Im Verlauf des 72-Stunden-Zeitlimits ergeben sich möglicherweise neue Erkenntnisse zum Vorfall. Diese Details werden Ihnen bei im Verlauf der Untersuchung bereitgestellt.
@@ -80,7 +80,7 @@ Details zur Benachrichtigung über Datenschutzverletzungen für bestimmte Micros
 
 ## <a name="breach-notification-admin-tools"></a>Administratortools zur Benachrichtigung bei Sicherheitsverletzungen
 
-- **Legen Sie den Datenschutzkontakt Ihrer Organisation fest**: Mandantenadministratoren können das [Azure Active Directory-Verwaltungsportal](https://go.microsoft.com/fwlink/p/?linkid=2052736) verwenden, um den Datenschutzkontakt Ihrer Organisation für den Fall zu definieren, dass Microsoft mit diesen Personen kommunizieren muss.
+- **Legen Sie den Datenschutzkontakt Ihrer Organisation fest** : Mandantenadministratoren können das [Azure Active Directory-Verwaltungsportal](https://go.microsoft.com/fwlink/p/?linkid=2052736) verwenden, um den Datenschutzkontakt Ihrer Organisation für den Fall zu definieren, dass Microsoft mit diesen Personen kommunizieren muss.
 
 ## <a name="learn-more"></a>Weitere Informationen
 

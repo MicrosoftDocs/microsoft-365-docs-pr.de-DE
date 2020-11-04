@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e156a8dc71dc9aca4a5d608b29307f4d36f0ec6b
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 697124400ab869825a0d7e46357566c82b1583b3
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208137"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845043"
 ---
 # <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/IEC 27701 Datenschutz-Informationsmanagementsystem (Privacy Information Management System, PIMS)
 
@@ -33,9 +33,9 @@ Der neue internationale Standard [ISO/IEC 27701 Datenschutz-Informationsmanageme
 
 Wenn Sie darauf bestehen, dass Lieferanten nach PIMS zertifiziert werden, werden verantwortungsvolle Datenschutzpraktiken bei Lieferanten und Partnern unabhängig von der Größe Ihrer Organisation effektiv eingeführt. Die ISO/IEC 27701 behandelt drei zentrale Compliance-Herausforderungen:
 
-- **Zu viele gesetzliche Anforderungen, die gleichzeitig einzuhalten sind**: die Vereinbarkeit mehrerer regulatorischer Anforderungen durch den Einsatz eines universellen Satzes von Betriebskontrollen ermöglicht eine konsistente und effiziente Umsetzung.
-- **Die Prüfung der Einhaltung einzelner Vorschriften eine nach der anderen ist zu kostspielig**: Prüfer, sowohl interne als auch externe, können die Einhaltung der Vorschriften anhand einer universellen Betriebskontrolle innerhalb eines einzigen Prüfzyklus beurteilen.
-- **Das Versprechen der Einhaltung ohne Nachweis ist potenziell riskant**: Kommerzielle Vereinbarungen, die den Austausch personenbezogener Daten beinhalten, können eine Zertifizierung der Einhaltung rechtfertigen.
+- **Zu viele gesetzliche Anforderungen, die gleichzeitig einzuhalten sind** : die Vereinbarkeit mehrerer regulatorischer Anforderungen durch den Einsatz eines universellen Satzes von Betriebskontrollen ermöglicht eine konsistente und effiziente Umsetzung.
+- **Die Prüfung der Einhaltung einzelner Vorschriften eine nach der anderen ist zu kostspielig** : Prüfer, sowohl interne als auch externe, können die Einhaltung der Vorschriften anhand einer universellen Betriebskontrolle innerhalb eines einzigen Prüfzyklus beurteilen.
+- **Das Versprechen der Einhaltung ohne Nachweis ist potenziell riskant** : Kommerzielle Vereinbarungen, die den Austausch personenbezogener Daten beinhalten, können eine Zertifizierung der Einhaltung rechtfertigen.
 
 ## <a name="too-many-regulatory-requirements-to-juggle"></a>Zu viele gesetzliche Anforderungen, die gleichzeitig einzuhalten sind
 
@@ -84,16 +84,16 @@ Unabhängig von der Größe Ihrer Organisation und unabhängig davon, ob es sich
 - Power Virtual Agents
 - Microsoft Stream
 - Microsoft-Bedrohungsexperten
-- Windows Defender Advanced Threat Protection
+- Microsoft Defender für Endpunkt
 
-## <a name="audits-reports-and-certificates"></a>Audits, Berichte und Zertifikate
+## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
 
 - [Azure, Dynamics 365 und Onlinedienste: ISO27701-Zertifizierung](https://aka.ms/azureiso27701cert)
 - [Azure, Dynamics 365 und Onlinedienste: ISO27701-Bewertungsbericht](https://aka.ms/azureiso27701report)
 
 ## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Verwenden von Microsoft Compliance-Manager zur Einschätzung des Risikos
 
-[Microsoft Compliance-Manager](compliance-manager.md) ist ein Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), das Ihnen dabei hilft, den Compliance-Status Ihrer Organisation zu ermitteln und Maßnahmen zur Senkung von Risiken zu ergreifen. Compliance-Manager bietet eine sehr hilfreiche Vorlage für die Erstellung einer Bewertung für diese Verordnung. Die Vorlage finden Sie auf der Seite **Bewertungsvorlagen** in Compliance-Manager. Erfahren Sie, wie Sie [Bewertungen im Compliance-Manager erstellen](compliance-manager-assessments.md).
+[Microsoft Compliance Manager](compliance-manager.md) ist eine Funktion im [Microsoft 365 Compliance Center, die Ihnen](microsoft-365-compliance-center.md) hilft, die Compliance-Position Ihres Unternehmens zu verstehen und Maßnahmen zu ergreifen, um Risiken zu reduzieren. Compliance Manager bietet eine Premiumvorlage für die Erstellung einer Bewertung für diese Verordnung. Suchen Sie die Vorlage auf der Seite **Bewertungsvorlagen** im Compliance Manager. Erfahren Sie, wie Sie [Bewertungen in Compliance Manager erstellen](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressourcen
 

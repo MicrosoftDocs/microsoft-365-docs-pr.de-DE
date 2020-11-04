@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2c9f0a97869f27cbcf5829a15f50bf2905472c28
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 547d79093b65fba37a020781fbfce938d122c943
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398484"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846377"
 ---
 # <a name="information-protection-for-gdpr-with-microsoft-365-capabilities"></a>Schutz von Daten für die DSGVO mit Microsoft 365-Funktionen
 
@@ -58,8 +58,8 @@ Microsoft bietet eine empfohlene Konfiguration, die Sie als Ausgangspunkt verwen
 Der Bedrohungsschutz ist in Microsoft 365-Diensten integriert. Nachfolgend finden Sie einige Ressourcen für die ersten Schritte:
 
 - [Office 365-Sicherheits-Roadmap: Die obersten Prioritäten für die ersten 30 Tage, die 90 Tage und darüber hinaus](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap). Diese Roadmap enthält Empfehlungen für das Implementieren von Funktionen. 
-- [Schutz vor Bedrohungen in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats). Erfahren Sie mehr über die Schutzaktion, die Sie im Microsoft 365 Security Center ergreifen können.
-- [Windows-Bedrohungsschutz](https://docs.microsoft.com/windows/security/threat-protection/). Weitere Informationen zu Windows Defender Advanced Threat Protection und anderen Funktionen in Windows 10.
+- [Schutz vor Bedrohungen in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats). Erfahren Sie mehr über Schutzaktionen, die Sie im Microsoft 365 Security Center ergreifen können.
+- [Microsoft Defender für Endpunkt](https://docs.microsoft.com/windows/security/threat-protection/) Erfahren Sie mehr über Microsoft Defender für Endpunkt-und andere Funktionen in Windows 10.
 
 ## <a name="learn-more"></a>Weitere Informationen
 
