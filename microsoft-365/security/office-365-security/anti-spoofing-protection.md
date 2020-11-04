@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Administratoren können sich über die Anti-Spoofing-Funktionen informieren, die in Exchange Online Protection (EOP) verfügbar sind und die dazu beitragen können, Phishing-Angriffe von gefälschten Absendern und Domänen abzuschwächen.
-ms.openlocfilehash: 8ec81c5032c4e3a0d0e556c37dd293b13e382b05
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 631c38a49b3e1fa5217545449c522ccc9cf0d913
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446275"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844416"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Schutz vor Spoofing in EOP
 
@@ -39,13 +39,13 @@ Wenn es um den Schutz der Benutzer geht, nimmt Microsoft die Bedrohung durch Phi
 
 Die folgenden Anti-Spoofing-Technologien stehen in EOP zur Verfügung:
 
-- **Spoofing Intelligence**: Überprüfen Sie gefälschte Nachrichten von Absendern in internen und externen Domänen und lassen Sie diese Absender zu oder blockieren Sie sie. Weitere Informationen finden Sie unter [Konfigurieren der Spoofintelligenz in Microsoft 365](learn-about-spoof-intelligence.md).
+- **Spoofing Intelligence** : Überprüfen Sie gefälschte Nachrichten von Absendern in internen und externen Domänen und lassen Sie diese Absender zu oder blockieren Sie sie. Weitere Informationen finden Sie unter [Konfigurieren der Spoofintelligenz in Microsoft 365](learn-about-spoof-intelligence.md).
 
-- **Anti-Phishing-Richtlinien**: In EOP können Sie mit Anti-Phishing-Richtlinien Spoofing-Informationen ein- oder ausschalten, nicht authentifizierte Absenderkennung in Outlook ein- oder ausschalten und die Aktion für blockierte Spoofing-Absender festlegen (Verschieben in den Junk-E-Mail-Ordner oder Quarantäne). Erweiterte Anti-Phishing-Richtlinien, die in Office 365 Advanced Threat Protection (Office 365 ATP) verfügbar sind, enthalten auch Anti-Imitationseinstellungen (geschützte Absender und Domänen), Mailboxintelligenz-Einstellungen und anpassbare erweiterte Phishing-Schwellenwerte. Weitere Informationen finden Sie unter [Anti-Phishing-Richtlinien in Microsoft 365](set-up-anti-phishing-policies.md).
+- **Anti-Phishing-Richtlinien** : In EOP können Sie mit Anti-Phishing-Richtlinien Spoofing-Informationen ein- oder ausschalten, nicht authentifizierte Absenderkennung in Outlook ein- oder ausschalten und die Aktion für blockierte Spoofing-Absender festlegen (Verschieben in den Junk-E-Mail-Ordner oder Quarantäne). Erweiterte Anti-Phishing-Richtlinien, die in Microsoft Defender für Office 365 verfügbar sind, umfassen außerdem Einstellungen zum Schutz vor Identitätsvortäuschung (geschützte Absender und Domänen), Postfach-Intelligence-Einstellungen und anpassbare erweiterte Phishing-Schwellenwerte. Weitere Informationen finden Sie unter [Anti-Phishing-Richtlinien in Microsoft 365](set-up-anti-phishing-policies.md).
 
-- **E-Mail-Authentifizierung**: ein wesentlicher Bestandteil aller Anti-Spoofing-Anstrengungen ist die Verwendung von E-Mail-Authentifizierung (auch als E-Mail-Überprüfung bezeichnet) durch SPF-, DKIM- und DMARC-Einträge in DNS. Sie können diese Einträge für Ihre Domänen so konfigurieren, dass Ziel-E-Mail-Systeme die Gültigkeit von Nachrichten überprüfen können, die von Absendern in Ihren Domänen stammen. Bei eingehenden Nachrichten erfordert Microsoft 365 eine E-Mail-Authentifizierung für Absenderdomänen. Weitere Informationen finden Sie unter [E-Mail-Authentifizierung in Microsoft 365](email-validation-and-authentication.md).
+- **E-Mail-Authentifizierung** : ein wesentlicher Bestandteil aller Anti-Spoofing-Anstrengungen ist die Verwendung von E-Mail-Authentifizierung (auch als E-Mail-Überprüfung bezeichnet) durch SPF-, DKIM- und DMARC-Einträge in DNS. Sie können diese Einträge für Ihre Domänen so konfigurieren, dass Ziel-E-Mail-Systeme die Gültigkeit von Nachrichten überprüfen können, die von Absendern in Ihren Domänen stammen. Bei eingehenden Nachrichten erfordert Microsoft 365 eine E-Mail-Authentifizierung für Absenderdomänen. Weitere Informationen finden Sie unter [E-Mail-Authentifizierung in Microsoft 365](email-validation-and-authentication.md).
 
-Ab Oktober 2018 ist der Anti-Spoofing-Schutz in EOP verfügbar. Vorher war der Anti-Spoofing-Schutz nur in Organisationen mit Office 365 ATP verfügbar.
+Ab Oktober 2018 ist der Anti-Spoofing-Schutz in EOP verfügbar.
 
 EOP analysiert und blockiert Nachrichten, die nicht durch die Kombination von standardmäßigen E-Mail-Authentifizierungsmethoden und Absender-Reputations-Techniken authentifiziert werden können.
 
@@ -55,13 +55,13 @@ EOP analysiert und blockiert Nachrichten, die nicht durch die Kombination von st
 
 Spoofingnachrichten weisen die folgenden negativen Auswirkungen für Benutzer auf:
 
-- **Gefälschte Nachrichten täuschen Benutzer**: Eine gefälschte Nachricht kann den Empfänger dazu bringen, auf einen Link zu klicken und seine Anmeldeinformationen preiszugeben, Malware herunterzuladen oder mit vertraulichen Inhalten auf eine Nachricht zu antworten (letzteres wird als „Business Email Compromise“, kurz „BEC“, bezeichnet).
+- **Gefälschte Nachrichten täuschen Benutzer** : Eine gefälschte Nachricht kann den Empfänger dazu bringen, auf einen Link zu klicken und seine Anmeldeinformationen preiszugeben, Malware herunterzuladen oder mit vertraulichen Inhalten auf eine Nachricht zu antworten (letzteres wird als „Business Email Compromise“, kurz „BEC“, bezeichnet).
 
   Die folgende Nachricht ist ein Beispiel für Phishing. Sie nutzt den gefälschten Absender msoutlook94@service.outlook.com:
 
   ![Phishingnachricht, die die Identität von service.outlook.com angenommen hat](../../media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
 
-  Diese Nachricht kam nicht von service.outlook.com, aber der Angreifer hat das **Von**-Kopfzeilenfeld gefälscht, damit es so wirkt, als ob dies der Fall wäre. Dies war ein Versuch, den Empfänger dazu zu bringen, auf den Link **Kennwort ändern** zu klicken, um seine Anmeldeinformationen preiszugeben.
+  Diese Nachricht kam nicht von service.outlook.com, aber der Angreifer hat das **Von** -Kopfzeilenfeld gefälscht, damit es so wirkt, als ob dies der Fall wäre. Dies war ein Versuch, den Empfänger dazu zu bringen, auf den Link **Kennwort ändern** zu klicken, um seine Anmeldeinformationen preiszugeben.
 
   Die folgende Nachricht ist ein Beispiel für BEC, welche die gefälsche E-Mail-Domäne contoso.com verwendet:
 
@@ -69,7 +69,7 @@ Spoofingnachrichten weisen die folgenden negativen Auswirkungen für Benutzer au
 
   Die Nachricht wirkt legitim, doch der Absender ist gefälscht.
 
-- **Benutzer können echte Nachrichten nicht von gefälschten unterscheiden**: selbst Benutzer, die sich über Phishing informieren, können Schwierigkeiten haben, die Unterschiede zwischen echten und gefälschten Nachrichten zu erkennen.
+- **Benutzer können echte Nachrichten nicht von gefälschten unterscheiden** : selbst Benutzer, die sich über Phishing informieren, können Schwierigkeiten haben, die Unterschiede zwischen echten und gefälschten Nachrichten zu erkennen.
 
   Die folgende Nachricht ist ein Beispiel einer echten Nachricht zur Kennwortrücksetzung vom Microsoft Security-Konto:
 
@@ -81,7 +81,7 @@ Spoofingnachrichten weisen die folgenden negativen Auswirkungen für Benutzer au
 
 Microsoft unterscheidet zwei verschiedene Typen von gefälschten Nachrichten:
 
-- **Organisationsinternes Spoofing**: wird auch als _Self-to-Self_-Spoofing bezeichnet. Zum Beispiel:
+- **Organisationsinternes Spoofing** : wird auch als _Self-to-Self_ -Spoofing bezeichnet. Zum Beispiel:
 
   - Absender und Empfänger befinden sich in derselben Domäne:
     > Von: chris@contoso.com <br/> An: michelle@contoso.com
@@ -104,7 +104,7 @@ Microsoft unterscheidet zwei verschiedene Typen von gefälschten Nachrichten:
 
   - SFTY ist die Sicherheitsstufe der Nachricht. 9 zeigt Phishing an, 11 steht für organisationsinternes Spoofing.
 
-- **Domänenübergreifendes Spoofing**: die Absender- und Empfängerdomäne sind unterschiedlich und es gibt keine Beziehung zueinander (auch als externe Domänen bezeichnet). Zum Beispiel:
+- **Domänenübergreifendes Spoofing** : die Absender- und Empfängerdomäne sind unterschiedlich und es gibt keine Beziehung zueinander (auch als externe Domänen bezeichnet). Zum Beispiel:
     > Von: chris@contoso.com <br/> An: michelle@tailspintoys.com
 
   Nachrichten, bei denen die [zusammengesetzte Authentifizierung](email-validation-and-authentication.md#composite-authentication) aufgrund von domänenübergreifendem Spoofing fehlschlägt, enhalten die folgenden Werte im Header:
@@ -125,7 +125,7 @@ Weitere Informationen über DMARC finden Sie unter [Verwenden von DMARC zur Übe
 
 EOP-Organisationen können den Bericht **Erkannte Fälschungen** im Berichte-Dashboard im Security & Compliance Center verwenden. Weitere Informationen finden Sie unter [Bericht „Erkannte Fälschungen“](view-email-security-reports.md#spoof-detections-report).
 
-Office 365 ATP-Organisationen können den Sicherheitsrisiken-Explorer im Security & Compliance Center verwenden, um Informationen zu Phishingversuchen anzuzeigen. Weitere Informationen finden Sie unter [Microsoft 365 Untersuchung von und Antwort auf Bedrohungen](office-365-ti.md).
+Microsoft Defender für Office 365-Organisationen können den Sicherheitsrisiken-Explorer im Security & Compliance Center verwenden, um Informationen zu Phishingversuchen anzuzeigen. Weitere Informationen finden Sie unter [Microsoft 365 Untersuchung von und Antwort auf Bedrohungen](office-365-ti.md).
 
 ## <a name="problems-with-anti-spoofing-protection"></a>Probleme mit dem Antispoofingschutz
 
