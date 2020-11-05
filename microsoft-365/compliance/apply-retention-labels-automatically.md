@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erstellen Sie Aufbewahrungsbezeichnungen und veröffentlichen Sie diese automatisch, damit Sie diese Bezeichnungen automatisch auf Inhalte anwenden können, die Sie beibehalten möchten und nicht benötigte Inhalte löschen können.
-ms.openlocfilehash: cb8b6840085a1a044c0bcb7bf8b09c5776a31e0e
-ms.sourcegitcommit: 31f25790b37dfb740530017ef1701db0c5134829
+ms.openlocfilehash: 9a4b19bd30201f5a5ff75b49ec384b451526b91b
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48740269"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877302"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aufbewahrungsbezeichnungen automatisch anwenden, um Inhalte beizubehalten oder zu löschen
 
@@ -99,7 +99,7 @@ Wenn Sie eine Richtlinie für die automatische Anwendung erstellen, wird eine ge
 
 1. Navigieren Sie im [Microsoft 365 Compliance Center](https://compliance.microsoft.com/) zu einem der folgenden Orte:
     
-    - Wenn Sie die Datensatzverwaltung verwenden: **Informationsgovernance**:
+    - Wenn Sie die Datensatzverwaltung verwenden: **Informationsgovernance** :
         - **Lösungen** > **Datensatzverwaltung** >  Registerkarte **Bezeichnungsrichtlinien** > **Bezeichnung automatisch anwenden**
     
     - Wenn Sie die Datensatzverwaltung nicht verwenden:
@@ -128,7 +128,7 @@ Aufbewahrungsbezeichnungen können automatisch auf Inhalte angewendet werden, we
 
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>Automatisches Anwenden von Bezeichnungen auf Inhalte mit bestimmten Typen von vertraulichen Informationen
 
-Wenn Sie automatisch angewendete Aufbewahrungsbezeichnungen für vertrauliche Informationen erstellen, wird dieselbe Liste von Richtlinienvorlagen wie beim Erstellen einer DLP-Richtlinie (Data Loss Prevention, Verhinderung von Datenverlust) angezeigt. Jede Vorlage ist für die Suche nach bestimmten Typen vertraulicher Informationen vorkonfiguriert. Die hier gezeigte Vorlage sucht beispielsweise nach US ITIN-, SSN- und Reisepassnummern aus der **Datenschutz**-Kategorie und der Vorlage **USA – Daten mit persönlich identifizierbaren Informationen (PII)**:
+Wenn Sie automatisch angewendete Richtlinien für Aufbewahrungsbezeichnungen für vertrauliche Informationen erstellen, wird dieselbe Liste von Richtlinienvorlagen wie beim Erstellen einer DLP-Richtlinie (Data Loss Prevention, Verhinderung von Datenverlust) angezeigt. Jede Vorlage ist für die Suche nach bestimmten Typen vertraulicher Informationen vorkonfiguriert. Die hier gezeigte Vorlage sucht beispielsweise nach US ITIN-, SSN- und Reisepassnummern aus der **Datenschutz** -Kategorie und der Vorlage **USA – Daten mit persönlich identifizierbaren Informationen (PII)** :
 
 ![Richtlinienvorlagen für Arten von vertraulichen Informationen](../media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
 
@@ -138,7 +138,7 @@ Nach der Auswahl einer Richtlinienvorlage können Sie beliebige Typen vertraulic
   
 - Der erkannte Typ vertraulicher Informationen hat eine Übereinstimmungsgenauigkeit (oder eine Zuverlässigkeitsstufe) von mindestens 75. Viele vertrauliche Informationstypen werden mit mehreren Mustern definiert. Dabei erfordert ein Muster mit einer höheren Übereinstimmungsgenauigkeit mehr Nachweise, um gefunden zu werden (z. B. Stichwörter, Datumsangaben oder Adressen), während ein Muster mit einer niedrigeren Übereinstimmungsgenauigkeit weniger Nachweise erfordert.  Je niedriger die **minimale** Übereinstimmungsgenauigkeit, desto einfacher können Inhalte die Bedingung erfüllen.
 
-- Der Inhalt besteht aus zwischen einer und neun Instanzen von einem dieser drei vertraulichen Informationstypen. Sie können den **bis**-Wert löschen, sodass er in **Beliebig** geändert wird.
+- Der Inhalt besteht aus zwischen einer und neun Instanzen von einem dieser drei vertraulichen Informationstypen. Sie können den **bis** -Wert löschen, sodass er in **Beliebig** geändert wird.
 
 Weitere Informationen zu diesen Optionen finden Sie in der folgenden Anleitung aus der DLP-Dokumentation [Optimieren von Regeln, um Übereinstimmungen zu vereinfachen oder zu erschweren](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
     
@@ -174,7 +174,7 @@ Beispiele für Abfragen:
 > [!NOTE]
 > Die Möglichkeit zum Aufbewahren und Löschen von Teams-Besprechungen wird in der Vorschau eingeführt und funktioniert nicht, bis Aufnahmen auf OneDrive oder Microsoft Office SharePoint Online gespeichert werden. Weitere Informationen finden Sie unter [Verwenden von OneDrive for Business und SharePoint Online oder Stream für Besprechungsaufzeichnungen](https://docs.microsoft.com/MicrosoftTeams/tmr-meeting-recording-change).
 
-Wenn Sie Aufnahmen von Microsoft Teams-Besprechungen ermitteln möchten, die in den OneDrive-Konten von Benutzern oder in SharePoint gespeichert sind, geben Sie im **Stichwortabfrage-Editor**Folgendes an:
+Wenn Sie Aufnahmen von Microsoft Teams-Besprechungen ermitteln möchten, die in den OneDrive-Konten von Benutzern oder in SharePoint gespeichert sind, geben Sie im **Stichwortabfrage-Editor** Folgendes an:
 
 ``` 
 ProgID:Media AND ProgID:Meeting
@@ -182,11 +182,11 @@ ProgID:Media AND ProgID:Meeting
 
 Diese Aufbewahrungsbezeichnung müssen Sie auch auf den OneDrive-Konten oder Microsoft Office SharePoint Online-Sites der jeweiligen Benutzer veröffentlichen, indem Sie eine Bezeichnungsrichtlinie erstellen. Meistens werden die Besprechungsaufnahmen auf OneDrive gespeichert, aber Kanalbesprechungen werden in Microsoft Office SharePoint Online gespeichert.
 
-Wenn Sie die Richtlinie für die automatische Anwendung gespeichert haben:
+Wenn Sie die Richtlinie für Aufbewahrungsbezeichnungen für die automatische Anwendung gespeichert haben:
 
 1. Wählen Sie die Registerkarte **Bezeichnungsrichtlinien** > **Veröffentlichen von Bezeichnungen**.
 
-2. Wenn Sie aufgefordert werden, eine Bezeichnung auszuwählen, wählen Sie diejenige aus, die Sie mit der KQL-Abfrage erstellt haben, um die Teams-Besprechungen zu ermitteln.
+2. Wenn Sie zur Auswahl einer Bezeichnung aufgefordert werden, wählen Sie dieselbe Bezeichnung, die Sie für die Richtlinie für die automatische Anwendung ausgewählt haben, die die Aufzeichnungen von Teams-Besprechungen kennzeichnet.
 
 3. Wenn Sie zur Angabe des Speicherorts aufgefordert werden, wählen Sie **Microsoft Office SharePoint Online-Sites** und **OneDrive-Konten** aus. Sie können die Standardeinstellung **Alle** beibehalten oder einzelne Speicherorte angeben, z. B. bestimmte OneDrive-Konten ein- oder ausschließen.
 
@@ -194,12 +194,12 @@ Wenn Sie die Richtlinie für die automatische Anwendung gespeichert haben:
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>Automatisches Anwenden von Bezeichnungen auf Inhalte mithilfe von trainierbare Klassifizierungen
 
-Wenn Sie die Option für eine trainierbare Klassifizierung auswählen, können Sie eine der integrierten Klassifizierungen oder eine benutzerdefinierte Klassifizierung auswählen. Zu den integrierten Klassifizierungen gehören **Lebensläufe**, **Quellcode**, **Gezielte Belästigung**, **Vulgäre Ausdrücke** und **Drohungen**:
+Wenn Sie die Option für eine trainierbare Klassifizierung auswählen, können Sie eine der integrierten Klassifizierungen oder eine benutzerdefinierte Klassifizierung auswählen. Zu den integrierten Klassifizierungen gehören **Lebensläufe** , **Quellcode** , **Gezielte Belästigung** , **Vulgäre Ausdrücke** und **Drohungen** :
 
 ![Trainierbare Klassifizierung auswählen](../media/retention-label-classifers.png)
 
 > [!CAUTION]
-> Die integrierte Klassifizierung **Anstößige Sprache** wird eingestellt, da sie eine große Anzahl falsch positiver Ergebnisse erzeugt hat. Verwenden Sie diese integrierte Klassifizierung nicht mehr, und ändern Sie Ihre Geschäftsprozesse entsprechend, falls sie derzeit noch verwendet wird. Wir empfehlen stattdessen die Verwendung der integrierten Klassifizierungen **Gezielte Belästigung**, **Obszönitäten** und **Bedrohung**.
+> Die integrierte Klassifizierung **Anstößige Sprache** wird eingestellt, da sie eine große Anzahl falsch positiver Ergebnisse erzeugt hat. Verwenden Sie diese integrierte Klassifizierung nicht mehr, und ändern Sie Ihre Geschäftsprozesse entsprechend, falls sie derzeit noch verwendet wird. Wir empfehlen stattdessen die Verwendung der integrierten Klassifizierungen **Gezielte Belästigung** , **Obszönitäten** und **Bedrohung**.
 
 Wenn Sie eine Bezeichnung mithilfe dieser Option automatisch anwenden möchten, müssen SharePoint-Websites und -Postfächer mindestens 10 MB Daten umfassen.
 
@@ -236,4 +236,4 @@ Einige Einstellungen können nicht geändert werden, nachdem die Bezeichnung ode
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Unter [Verwenden von Aufbewahrungsbezeichnungen zum Verwalten des Lebenszyklus von in SharePoint gespeicherten Dokumenten](auto-apply-retention-labels-scenario.md) finden Sie ein Beispielszenario, in dem eine automatisch angewendete Richtlinie mit verwalteten Eigenschaften in SharePoint und die ereignisbasierte Aufbewahrung zum Starten des Aufbewahrungszeitraums verwendet wird.
+Unter [Verwenden von Aufbewahrungsbezeichnungen zum Verwalten des Lebenszyklus von in SharePoint gespeicherten Dokumenten](auto-apply-retention-labels-scenario.md) finden Sie ein Beispielszenario, in dem eine automatisch angewendete Richtlinie für Aufbewahrungsbezeichnungen mit verwalteten Eigenschaften in SharePoint und die ereignisbasierte Aufbewahrung zum Starten des Aufbewahrungszeitraums verwendet wird.
