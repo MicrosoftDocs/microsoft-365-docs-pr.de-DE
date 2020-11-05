@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Administratoren können sich über die Einblicke und Berichte informieren, die im Nachrichtenfluss-Dashboard im Security & Compliance Center zur Verfügung stehen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d252b9d898d4ee5a0df854a871f821c2b02bb482
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: f7781dca48e1eae4716dbe6c7c3b40da4bae0cd8
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877777"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920008"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Nachrichtenfluss-Einblicke im Security & Compliance Center
 
@@ -66,13 +66,12 @@ Das Nachrichtenfluss-Dashboard steht Mitgliedern der folgenden Rollengruppen zur
 
 - **[Exchange-Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** in Azure Active Directory.
 
-- **Nachrichtenfluss-Administrator** im Security & Compliance Center: Wenn ein Mitglied dieser Rollengruppe nicht auch Mitglied der Rollengruppen globaler Administrator oder Exchange-Administrator ist, beachten Sie die folgenden Probleme und Anforderungen:
-
+- **Nachrichtenfluss-Administrator** im Security & Compliance Center. Wenn das Konto nicht auch Mitglied der Rollengruppe "Organisationsverwaltung" oder "Exchange-Administrator" ist, sollten Sie die folgenden Probleme berücksichtigen:
   - Der Benutzer muss sich direkt bei dem Security & Compliance Center anmelden <https://protection.office.com> .
   - Der Benutzer verfügt nur über eine schreibgeschützte Berechtigung für das Nachrichtenfluss-Dashboard.
   - Der Benutzer hat keinen Zugriff auf das Microsoft 365 Admin Center.
 
-Weitere Informationen zu Berechtigungen im Security & Compliance Center finden Sie unter [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) und [erteilen Benutzern den Zugriff auf das Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md).
+Weitere Informationen zu Berechtigungen finden Sie unter [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) und [erteilen Benutzern den Zugriff auf das Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md).
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>So finden Sie das Nachrichtenfluss-Dashboard
 

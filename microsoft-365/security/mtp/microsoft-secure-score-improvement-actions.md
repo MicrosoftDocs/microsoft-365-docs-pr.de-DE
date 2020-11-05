@@ -20,24 +20,23 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: ff81b6e1a290d928d68cb43b455713183d24f75b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 02c79edaa05e7903a8797cdf83c18a4ce69716dc
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846640"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920536"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Bewerten Ihrer Sicherheitsposition mit Microsoft Secure Score
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
 
 Die Microsoft-Sicherheitsbewertung ist ein Maßstab für den Sicherheitsstatus eines Unternehmens. Eine höhere Zahl bedeutet, dass mehr Verbesserungsmaßnahmen vorgenommen wurden. Sie finden sie unter https://security.microsoft.com/securescore im [Microsoft 365 Security Center ](overview-security-center.md).
 
 Damit Sie die benötigten Informationen schneller finden können, sind die Microsoft Verbesserungsmaßnahmen in Gruppen aufgeteilt:
 
 * Identity (Azure Active Directory Accounts & Roles)
-* Daten (Microsoft Information Protection)
+* Data (keine Verbesserungs Aktionen für jetzt)
 * Gerät (Microsoft Defender für Endpoint, bekannt als [Microsoft Secure Score für Geräte](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
 * App (E-Mail-und Cloud-Apps, einschließlich Office 365 und Microsoft Cloud App Security)
 * Infrastruktur (bisher keine Verbesserungsmaßnahmen)
@@ -124,4 +123,4 @@ Wenn Sie Probleme haben, lassen Sie es uns wissen, indem Sie in der [Sicherheits
 - [Microsoft Secure Score (Übersicht)](microsoft-secure-score.md)
 - [Verfolgen des Microsoft Secure Score-Verlaufs und erreichen der Ziele](microsoft-secure-score-history-metrics-trends.md)
 - [Was in Kürze verfügbar ist](microsoft-secure-score-whats-coming.md)
-- [Neuerungen](microsoft-secure-score-whats-new.md)
+- [Neuigkeiten](microsoft-secure-score-whats-new.md)

@@ -5,7 +5,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: how-to
+ms.article: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -14,25 +14,29 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Microsoft 365-Administratoren erfahren, wie Sie nach einem Ransomware-Angriff wiederherstellen können.
-ms.openlocfilehash: dd740b19abac9d30196c1ffd82c8a3f377b19dbf
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: de1cddbdf1c2b3ffeb8fd74a8f0d31e815eb1b70
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845540"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920608"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Wiederherstellen nach einem Ransomware-Angriff in Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Selbst wenn Sie alle Vorkehrungen treffen, um Ihre Organisation zu schützen, können Sie dennoch einem [Ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) -Angriff zum Opfer fallen. Ransomware ist ein großes Unternehmen, und die Angriffe werden überprüfen anspruchsvoll.
+Selbst wenn Sie alle Vorkehrungen treffen, um Ihre Organisation zu schützen, können Sie dennoch einem [Ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) -Angriff zum Opfer fallen. Ransomware ist ein großes Unternehmen, und die Angriffe sind sehr hoch entwickelt.
 
-Die Schritte in diesem Thema bieten Ihnen die beste Möglichkeit zum Wiederherstellen von Daten, die von der Ransomware verschlüsselt wurden, und helfen, die Ausbreitung der Infektion in Ihrer Organisation zu beenden. Bevor Sie beginnen, sollten Sie die folgenden Punkte beachten:
+Die Schritte in diesem Artikel bieten Ihnen die beste Möglichkeit, Daten wiederherzustellen und die interne Verbreitung von Infektionen zu beenden. Bevor Sie beginnen, sollten Sie die folgenden Punkte beachten:
 
-- Es gibt keine Garantie, dass durch das bezahlen des Lösegelds der Zugriff auf Ihre Dateien zurückgegeben wird. Tatsächlich können Sie mit dem Lösegeld ein Ziel für mehr Ransomware machen. Wenn Sie bereits bezahlt haben, aber Ihre Dateien erfolgreich wiederherstellen konnten, ohne die Auflösung des Angreifers zu verwenden, sollten Sie Ihre Bank anrufen, um zu prüfen, ob Sie die Transaktion blockieren kann. Außerdem wird empfohlen, dass Sie den Ransomware-Angriff an Strafverfolgungs-, Scam-berichterstellungswebsites und Microsoft melden, wie weiter unten in diesem Thema beschrieben.
+- Es gibt keine Garantie, dass durch das bezahlen des Lösegelds der Zugriff auf Ihre Dateien zurückgegeben wird. Tatsächlich können Sie mit dem Lösegeld ein Ziel für mehr Ransomware machen.
 
-- Es ist sehr wichtig, dass Sie schnell auf den Angriff und seine Konsequenzen reagieren. Je länger Sie warten, desto wahrscheinlicher ist es, dass Sie die betroffenen Daten wiederherstellen können.
+  Wenn Sie bereits bezahlt haben, aber ohne Verwendung der Lösung des Angreifers wiederhergestellt haben, wenden Sie sich an Ihre Bank, um zu prüfen, ob Sie die Transaktion blockieren kann.
+
+  Außerdem wird empfohlen, dass Sie den Ransomware-Angriff an Strafverfolgungs-, Scam-berichterstellungswebsites und Microsoft melden, wie weiter unten in diesem Artikel beschrieben.
+
+- Es ist wichtig, dass Sie schnell auf den Angriff und seine Konsequenzen reagieren. Je länger Sie warten, desto wahrscheinlicher ist es, dass Sie die betroffenen Daten wiederherstellen können.
 
 ## <a name="step-1-verify-your-backups"></a>Schritt 1: Überprüfen der Sicherungen
 
@@ -40,13 +44,13 @@ Wenn Sie Offlinesicherungen haben, können Sie die verschlüsselten Daten mögli
 
 Wenn Sie keine Sicherungen haben oder Ihre Sicherungen auch von der Ransomware betroffen sind, können Sie diesen Schritt überspringen.
 
-## <a name="step-2-disable-activesync-and-onedrive-sync"></a>Schritt 2: Deaktivieren der ActiveSync-und OneDrive-Synchronisierung
+## <a name="step-2-disable-exchange-activesync-and-onedrive-sync"></a>Schritt 2: Deaktivieren von Exchange ActiveSync und OneDrive Sync
 
 Der entscheidende Punkt ist, dass die Verbreitung der Datenverschlüsselung durch das Ransomware gestoppt wird.
 
-Wenn Sie vermuten, dass e-Mail ein Ziel ist, sollten Sie den Benutzer Zugriff auf Postfächer vorübergehend deaktivieren. Exchange ActiveSync wird von mobilen Geräten zum Synchronisieren von Daten zwischen dem Gerät und dem Exchange Online Postfach verwendet.
+Wenn Sie vermuten, dass e-Mails als Ziel der Ransomware-Verschlüsselung verdächtigt werden, deaktivieren Sie vorübergehend den Benutzer Zugriff auf Postfächer. Exchange ActiveSync synchronisiert Daten zwischen Geräten und Exchange Online Postfächern.
 
-Informationen zum Deaktivieren von ActiveSync für ein Postfach finden Sie unter [Deaktivieren von Exchange ActiveSync für Benutzer in Exchange Online](https://support.microsoft.com/help/2795303).
+Informationen zum Deaktivieren von Exchange ActiveSync für ein Postfach finden Sie unter [Deaktivieren von Exchange ActiveSync für Benutzer in Exchange Online](https://support.microsoft.com/help/2795303).
 
 Informationen zum Deaktivieren anderer Zugriffstypen auf ein Postfach finden Sie unter:
 
@@ -58,7 +62,9 @@ Durch das Anhalten der OneDrive-Synchronisierung können Sie verhindern, dass Ih
 
 ## <a name="step-3-remove-the-malware-from-the-affected-devices"></a>Schritt 3: Entfernen der Schadsoftware von den betroffenen Geräten
 
-Führen Sie einen vollständigen Antivirus-Scan mit den neuesten Updates auf allen vermuteten Computern und Geräten aus, um die dem Ransomware zugeordnete Nutzlast zu erkennen und zu entfernen. Vergessen Sie nicht, Geräte, die Daten synchronisieren, oder das Ziel von zugeordneten Netzlaufwerken (diese Computer und Geräte müssen ebenfalls überprüft werden).
+Führen Sie eine vollständige, aktuelle Virenüberprüfung auf allen vermuteten Computern und Geräten aus, um die dem Ransomware zugeordnete Nutzlast zu erkennen und zu entfernen.
+
+Vergessen Sie nicht, Geräte zu überprüfen, die Daten synchronisieren, oder die Ziele von zugeordneten Netzlaufwerken.
 
 Sie können [Windows Defender](https://www.microsoft.com/windows/comprehensive-security) oder (für ältere Clients) [Microsoft Security Essentials](https://www.microsoft.com/download/details.aspx?id=5201)verwenden.
 
@@ -90,7 +96,7 @@ In dem seltenen Fall, dass die Ransomware alle Ihre e-Mails gelöscht hat, könn
 
 ## <a name="step-7-re-enable-exchange-activesync-and-onedrive-sync"></a>Schritt 7: Erneutes Aktivieren von Exchange ActiveSync und OneDrive Sync
 
-Nachdem Sie Ihre Computer und Geräte bereinigt und Ihre Daten wiederhergestellt haben, können Sie die ActiveSync-und OneDrive-Synchronisierung erneut aktivieren, die Sie zuvor in [Schritt 2](#step-2-disable-activesync-and-onedrive-sync)deaktiviert haben.
+Nachdem Sie Ihre Computer und Geräte bereinigt und Ihre Daten wiederhergestellt haben, können Sie die zuvor in [Schritt 2](#step-2-disable-exchange-activesync-and-onedrive-sync)deaktivierte Exchange ActiveSync-und OneDrive-Synchronisierung erneut aktivieren.
 
 ## <a name="step-8-optional-block-onedrive-sync-for-specific-file-extensions"></a>Schritt 8 (optional): Blockieren der OneDrive-Synchronisierung für bestimmte Dateierweiterungen
 
@@ -128,7 +134,7 @@ Wenn Ihr Land nicht aufgeführt ist, wenden Sie sich an Ihre lokalen oder Bundes
 
 Sie können Phishing-Nachrichten melden, die Ransomware enthalten, indem Sie eine von mehreren Methoden verwenden. Weitere Informationen finden Sie unter [Melden von Nachrichten und Dateien an Microsoft](report-junk-email-messages-to-microsoft.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)
 

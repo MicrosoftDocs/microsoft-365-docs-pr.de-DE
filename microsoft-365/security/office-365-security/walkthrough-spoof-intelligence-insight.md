@@ -16,25 +16,27 @@ search.appverid:
 ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
-description: Administratoren erfahren, wie die Spoof Intelligence-Einblicke funktionieren, und wie Sie schnell ermitteln können, welche Absender legitimerweise nicht authentifizierte e-Mails senden.
+description: Administratoren können erfahren, wie die Spoof Intelligence-Einblicke funktionieren. Sie können schnell ermitteln, welche Absender legitimerweise e-Mails in ihre Organisationen aus Domänen senden, die keine e-Mail-Authentifizierungsprüfungen (SPF, DKIM oder DMARC) durchführen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5995095e442bbcd07ddf4538b67be6e1b14fd8f1
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 89a31c6df7c9b6e02f52ea414ceb6334427feab1
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844212"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920478"
 ---
-# <a name="walkthrough---defender-for-office-365-spoof-intelligence-insight-in-microsoft-365"></a>Exemplarische Vorgehensweise-Defender for Office 365 Spoof Intelligence Insight in Microsoft 365
+# <a name="walkthrough---spoof-intelligence-insight-in-microsoft-defender-for-office-365"></a>Exemplarische Vorgehensweise – Spoof Intelligence Insight in Microsoft Defender für Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-In Microsoft 365-Organisationen mit Defender for Office 365 können Sie die Spoof Intelligence-Einblicke verwenden, um schnell zu ermitteln, welche Absender legitimerweise nicht authentifizierte e-Mails senden. Durch die Möglichkeit, gefälschte Nachrichten zu senden, können Sie das Risiko verringern, dass falsch positive Ergebnisse an Ihre Benutzer gesendet werden. Sie können auch die Spoof Intelligence-Einblicke verwenden, um zugelassene Domänen Paare zu überwachen und zu verwalten, um eine zusätzliche Sicherheitsebene bereitzustellen und zu verhindern, dass unsichere Nachrichten in Ihrer Organisation eingehen.
+In Microsoft 365-Organisationen mit Defender for Office 365 können Sie die Spoof Intelligence-Einblicke verwenden, um schnell zu ermitteln, welche Absender legitimerweise nicht authentifizierte e-Mails senden (Nachrichten von Domänen, die keine SPF-, DKIM-oder DMARC-Überprüfungen durchführen).
 
-Wenn Sie noch keine [Erfahrung mit Berichten und Einblicken in das Security & Compliance Center](reports-and-insights-in-security-and-compliance.md)haben, kann es hilfreich sein, zu sehen, wie Sie einfach von einem Dashboard zu einer Einblicke und empfohlenen Aktionen navigieren können.
+Wenn Sie zulassen, dass bekannte Absender gefälschte Nachrichten von bekannten Speicherorten senden, können Sie falsch positive Ergebnisse reduzieren (gute e-Mail-Nachrichten sind als ungültig markiert). Durch Überwachen der zulässigen gefälschten Absender stellen Sie eine zusätzliche Sicherheitsebene bereit, um zu verhindern, dass unsichere Nachrichten in Ihrer Organisation eingehen.
 
-Diese exemplarische Vorgehensweise ist eine von mehreren für das Security & Compliance Center. Informationen zum Navigieren in Berichten und Einblicken finden Sie unter Exemplarische Vorgehensweisen im Abschnitt "Verwandte Themen".
+Weitere Informationen zu Berichten und Einblicken finden Sie unter [Reports and Insights in the Security & Compliance Center](reports-and-insights-in-security-and-compliance.md).
+
+Diese exemplarische Vorgehensweise ist eine von mehreren für das Security & Compliance Center. Informationen zum Navigieren in Berichten und Einblicken finden Sie unter Exemplarische Vorgehensweisen im Abschnitt " [Verwandte Themen](#related-topics) ".
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
@@ -49,9 +51,9 @@ Diese exemplarische Vorgehensweise ist eine von mehreren für das Security & Com
   - **Security Reader** im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
   - **Schreibgeschützte Organisationsverwaltung** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
-- Sie aktivieren und deaktivieren Spoof Intelligence in Anti-Phishing-Richtlinien in Microsoft Defender für Office 365. Weitere Informationen finden Sie unter [configure Anti-Phishing Policies in Microsoft Defender for Office 365 in Microsoft 365](configure-atp-anti-phishing-policies.md).
+- Sie aktivieren und deaktivieren Spoof Intelligence in Anti-Phishing-Richtlinien in Microsoft Defender für Office 365. Weitere Informationen finden Sie unter [configure Anti-Phishing Policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
-- In Microsoft 365-Organisationen mit Exchange Online Postfächern und in eigenständigen Exchange Online Schutz (EoP) ohne Exchange Online Postfächer können Sie Spoof Intelligence zum Überwachen und Verwalten von Absendern verwenden, von denen Sie nicht authentifizierte Nachrichten senden. Weitere Informationen finden Sie unter [Konfigurieren der Spoofintelligenz in Microsoft 365](learn-about-spoof-intelligence.md).
+- Informationen zum Verwenden von Spoof Intelligence zum Überwachen und Verwalten von Absendern, die nicht authentifizierte Nachrichten senden, finden Sie unter [configure Spoof Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-security--compliance-center"></a>Öffnen Sie die Spoof Intelligence-Einblicke im Security & Compliance Center.
 
@@ -60,7 +62,6 @@ Diese exemplarische Vorgehensweise ist eine von mehreren für das Security & Com
 2. Suchen Sie in der Zeile **Insights** nach einem der folgenden Elemente:
 
    - **Spoof Intelligence ist aktiviert** : die Einblicke werden als **gefälschte Domänen bezeichnet, bei denen die Authentifizierung der letzten 30 Tage nicht erfolgreich** war. Dies ist die Standardeinstellung.
-
    - **Spoof Intelligence ist deaktiviert** : die Einblicke in benannten **aktivieren Spoof Protection** , und klicken Sie auf Sie können Sie Spoof Intelligence aktivieren.
 
 3. Die Einblicke in das Dashboard zeigt Ihnen Informationen wie die folgende:
@@ -69,43 +70,59 @@ Diese exemplarische Vorgehensweise ist eine von mehreren für das Security & Com
 
    Diese Einblicke umfasst zwei Modi:
 
-   - **Insight-Modus**. Wenn Sie eine Spoof-Richtlinie aktiviert haben, zeigt Ihnen die Einsicht, wie viele e-Mails in den letzten 30 Tagen von unseren Spoof Intelligence-Funktionen betroffen waren.
+   - **Insight-Modus** : Wenn Spoof Intelligence aktiviert ist, zeigt Ihnen die Einblicke, wie viele Nachrichten in den letzten 30 Tagen durch unsere Spoof Intelligence-Funktionen beeinflusst wurden.
 
-   - **Was ist, wenn-Modus**. Wenn Sie keine Spoof-Richtlinie aktiviert haben, zeigt Ihnen die Einsicht, wie viele e-Mails von unseren Spoof Intelligence-Funktionen in den letzten 30 Tagen betroffen  *wären*  .
+   - **Was** ist, wenn-Modus: Wenn Spoof Intelligence deaktiviert ist, dann zeigt Ihnen die Einsicht, wie viele Nachrichten in den letzten 30 Tagen von unseren Spoof Intelligence-Funktionen betroffen *wären* .
 
    In beiden Fällen werden die in der Insight angezeigten gefälschten Domänen in zwei Kategorien unterteilt: **verdächtige Domänen Paare** und **nicht verdächtige Domänen Paare**. Diese Kategorien werden weiter in drei verschiedene Buckets unterteilt, die Sie überprüfen können.
 
    Ein **Domänenpaar** ist eine Kombination aus der von-Adresse und der sendenden Infrastruktur:
 
-   - Die Absenderadresse ist die e-Mail-Adresse des Absenders, die in e-Mail-Clients angezeigt wird. Diese Adresse identifiziert den Autor der E-Mail. Das heißt, das Postfach der Person oder des Systems, das sich für das Schreiben der Nachricht verantwortlich zeichnet. Diese Adresse wird auch als Adresse bezeichnet `5322.From` .
+   - Die Absenderadresse ist die e-Mail-Adresse des Absenders, die im Feld von in e-Mail-Clients angezeigt wird. Diese Adresse wird auch als Adresse bezeichnet `5322.From` .
 
    - Die sendende Infrastruktur oder der Absender ist die Organisationsdomäne des Reverse-DNS-Lookups (PTR-Eintrags) der sendenden IP-Adresse. Wenn die sendende IP-Adresse keinen PTR-Eintrag hat, wird der Absender von der sendenden IP mit der Subnetzmaske 255.255.255.0 in der CIDR-Notation (/24) identifiziert. Wenn die IP-Adresse beispielsweise 192.168.100.100 lautet, lautet die vollständige IP-Adresse des Absenders 192.168.100.100/24.
 
    Zu den **verdächtigen Domänen Paaren** gehören:
 
-   - **Spoofing mit hoher Zuverlässigkeit** : Microsoft 365 hat starke Signale erhalten, dass diese Domänen verdächtig sind, basierend auf den Verlaufs Sende Mustern und dem Reputations Ergebnis der Domänen. Microsoft 365 ist sehr zuversichtlich, dass die Domänen Spoofing sind und dass Nachrichten, die von diesen Domänen gesendet werden, eher legitim sind.
+   - **Spoofing mit hoher Vertrauens** Würdigkeit: basierend auf den Verlaufs Sende Mustern und dem Reputations Ergebnis der Domänen sind wir sehr zuversichtlich, dass die Domänen Spoofing sind und Nachrichten aus diesen Domänen eher bösartig sind.
 
-   - **Gemäßigte Zuverlässigkeits Spoof** : Microsoft 365 erhielt moderate Signale, dass diese Domänen verdächtig sind, basierend auf Verlaufs Sende Mustern und dem Reputations Ergebnis der Domänen. Office 365 ist gemäßigt zuversichtlich, dass die Domänen Spoofing sind und dass von diesen Domänen gesendete Nachrichten legitim sind. Dieser Bucket hat eine größere Chance, falsch positive Ergebnisse (fps) zu enthalten als den Spoofing-Bucket mit hoher Vertrauenswürdigkeit.
+   - **Gemäßigte Vertrauens Parodie** : basierend auf Verlaufs Sende Mustern und dem Reputationswert der Domänen sind wir mit mittlerer Zuversicht überzeugt, dass die Domänen Spoofing sind und dass von diesen Domänen gesendete Nachrichten legitim sind. Falsch positive Ergebnisse sind in dieser Kategorie eher als hochgradig vertrauenswürdige Spoofing.
 
-   - **Nicht-verdächtige Domänen Paare** (einschließlich **geretteter Spoofing** ): "gerettete Spoof" sind Domänen, bei denen die explizite Authentifizierungsüberprüfung [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), [DMARC](use-dmarc-to-validate-email.md)fehlgeschlagen ist, aber unsere impliziten e-Mail-Authentifizierungsprüfungen ( [kombinierte Authentifizierung](email-validation-and-authentication.md#composite-authentication)) bestanden haben. Daher hat Microsoft 365 die e-Mails in Ihrem Namen gerettet, und es wurde keine Antispoofing-Aktion für die Nachricht ausgeführt.
+   - **Nicht verdächtige Domänen Paare** (einschließlich **geretteter Spoofing** ): die Domänen-fehlgeschlagene explizite e-Mail-Authentifizierung überprüft [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)und [DMARC](use-dmarc-to-validate-email.md)). Die Domäne bestanden jedoch unsere impliziten e-Mail-Authentifizierungsprüfungen ([kombinierte Authentifizierung](email-validation-and-authentication.md#composite-authentication)). Dies hat zur Folge, dass keine Anti-Spoofing-Aktion für die Nachricht durchgeführt wurde.
 
 ### <a name="view-detailed-information-about-suspicious-domain-pairs-from-the-spoof-intelligence-insight"></a>Anzeigen detaillierter Informationen zu verdächtigen Domänen Paaren aus dem Spoof Intelligence-Insight
 
 1. Klicken Sie auf der Spoof Intelligence-Einblicke auf eines der Domänen Paare (hoch, moderat oder gerettet).
 
-   Die Seite **Spoof Intelligence Insight** wird angezeigt und zeigt eine Liste von Absendern an, die nicht authentifizierte e-Mails an Ihre Organisation senden. Die Informationen auf dieser Seite helfen Ihnen zu bestimmen, ob gefälschte Nachrichten autorisiert sind oder ob Sie weitere Aktionen ausführen müssen. Sie können die Informationen nach Nachrichtenanzahl, dem Datum, an dem die Spoof zuletzt erkannt wurde, und vieles mehr sortieren. (Klicken Sie beispielsweise auf Spaltenüberschriften wie **Nachrichtenanzahl** oder **zuletzt gesehen**.)
+   Die Seite **Spoof Intelligence Insight** wird angezeigt. Auf der Seite wird eine Liste mit Absendern angezeigt, die nicht authentifizierte e-Mails an Ihre Organisation senden.
 
-2. Wählen Sie ein Element in der Tabelle aus, um einen Detailbereich mit umfangreichen Informationen über das Domänenpaar zu öffnen, einschließlich der Gründe für diese Erfassung, was Sie tun müssen, eine Domänen Zusammenfassung, Whois-Daten über den Absender und ähnliche e-Mails, die wir in Ihrem Mandanten vom gleichen Absender gesehen haben. Von hier aus können Sie auch das Domänenpaar aus der Liste sicherer Absender von **AllowedToSpoof** hinzufügen oder entfernen.
+   Anhand dieser Informationen können Sie bestimmen, ob gefälschte Nachrichten autorisiert sind oder ob Sie weitere Aktionen ausführen müssen.
+
+   Sie können die Informationen nach Nachrichtenanzahl, dem Datum, an dem die Spoof zuletzt erkannt wurde, und vieles mehr sortieren.
+
+2. Wählen Sie ein Element in der Tabelle aus, um einen Detailbereich mit umfangreichen Informationen zum Domänenpaar zu öffnen. Die Informationen umfassen Folgendes:
+   - Warum wir dies erwischt haben.
+   - Was Sie tun müssen.
+   - Eine Domänen Zusammenfassung.
+   - Whois-Daten über den Absender.
+   - Ähnliche Nachrichten, die wir in Ihrem Mandanten vom gleichen Absender gesehen haben.
+
+   Von hier aus können Sie auch das Domänenpaar aus der Liste sicherer Absender von **AllowedToSpoof** hinzufügen oder entfernen.
 
    ![Screenshot einer Domäne im Detailbereich "Spoof Intelligence Insight"](../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
 
-### <a name="add-or-remove-a-domain-from-the-allowedtospoof-safe-sender-list"></a>Hinzufügen oder Entfernen einer Domäne aus der Liste sicherer Absender von AllowedToSpoof
+### <a name="add-or-remove-a-domain-from-the-allowedtospoof-list"></a>Hinzufügen oder Entfernen einer Domäne aus der AllowedToSpoof-Liste
 
-Sie können eine Domäne aus der Liste sicherer Absender von AllowedToSpoof hinzufügen oder entfernen, während Sie das Domänenpaar im Detailbereich der Spoof Intelligence-Einblicke überprüfen. Legen Sie die Umschaltfläche einfach entsprechend fest.
+Sie fügen oder entfernen eine Domäne aus der Liste AllowedToSpoof (Safe Sender) im Detailbereich des Spoof Intelligence Insight für das Domänenpaar. Legen Sie die Umschaltfläche einfach entsprechend fest.
 
-Dadurch wird die eindeutige Kombination aus Domänen Paaren der gefälschten Domäne und der sendenden Infrastruktur geändert, und es wird keine Abdeckung für die gesamte Spoofing-Domäne oder die sendende Infrastruktur isoliert bereitgestellt.
+Wenn ein Domänenpaar nur zugelassen wird, ist die Kombination aus der gefälschten Domäne *und* der sendenden Infrastruktur möglich. Es werden keine e-Mails von der gefälschten Domäne aus einer beliebigen Quelle zugelassen, und es werden keine e-Mails von der sendenden Infrastruktur für eine beliebige Domäne zugelassen.
 
-Wenn Sie beispielsweise das folgende Domänenpaar zur Absender Zulassungsliste "AllowedToSpoof" hinzufügen: die  *spoofed-Domäne*  "gmail.com" und die *Sendeinfrastruktur* "TMS *. MX.com",* dann dürfen nur e-Mails von diesem Domänenpaar Spoofing durchführen. Andere Absender, die versuchen, "gmail.com" und andere Domänen zu spoofen, die "TMS.MX.com" Spoof versuchen, werden weiterhin durch Spoof Intelligence geschützt.
+Beispielsweise können Sie dem folgenden Domänenpaar Spoofing-Nachrichten an Ihre Organisation senden:
+
+- *Spoofing-Domäne* : gmail.com "
+- *Sendende Infrastruktur* `tms.mx.com` :
+
+Nur e-Mails von diesem Domänenpaar dürfen Spoofing durchgehen. Andere Absender, die versuchen, gmail.com zu spoofen, sind nicht zulässig. Nachrichten in anderen Domänen von TMS.MX.com werden durch Spoof Intelligence überprüft.
 
 ## <a name="related-topics"></a>Verwandte Themen
 

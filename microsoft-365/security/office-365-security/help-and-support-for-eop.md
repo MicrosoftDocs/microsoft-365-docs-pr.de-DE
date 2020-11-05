@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft bietet Hilfestellung für EoP in einer Vielzahl von Orten und Methoden, einschließlich selbst Unterstützung und unterstütztem Support.
-ms.openlocfilehash: c305f2e63d668a163bb82f5a4712cbdddc6f9259
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: dd68200b7a3723adc7ccba899c0cc88031891197
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202723"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920430"
 ---
 # <a name="help-and-support-for-eop"></a>Hilfe und Support für EOP
 
@@ -28,7 +28,7 @@ In Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenst
 
 ## <a name="self-support-options"></a>Optionen zur Selbsthilfe
 
-Bei der Anmeldung stellt das Microsoft 365 Admin Center Informationen zum Status der Dienste Ihrer Organisation bereit. Außerdem werden im Abschnitt Dienst Integrität der aktuelle Status Ihrer Dienste, Details zu Unterbrechungen und Ausfällen sowie geplante Wartungszeiten aufgeführt. Das Microsoft 365 Admin Center enthält außerdem Informationen zu bekannten Problemen und erwarteten Lösungen. Wenn Sie von einem dienstweiten Ereignis betroffen sind, sollte eine Kommunikationsmeldung angezeigt werden (in der Regel mit einem Glockensymbol). Es wird empfohlen, dass Sie sämtliche zugehörigen Hinweise lesen und entsprechend vorgehen. Weitere Informationen zum Dienst Integritätsbereich finden Sie unter [Dienststatus und Kontinuität](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity). Mit den hier aufgeführten Tools, Foren und Community-Websites können Sie Probleme möglicherweise selbst lösen.
+Bei der Anmeldung stellt das Microsoft 365 Admin Center Informationen zum Status der Dienste Ihrer Organisation bereit. Außerdem werden im Abschnitt Dienst Integrität der aktuelle Status Ihrer Dienste, Details zu Unterbrechungen und Ausfällen sowie geplante Wartungszeiten aufgeführt. Das Microsoft 365 Admin Center enthält außerdem Informationen zu bekannten Problemen und erwarteten Lösungen. Wenn Sie von einem dienstweiten Ereignis betroffen sind, sollte eine Kommunikationsmeldung angezeigt werden (in der Regel mit einem Glockensymbol). Es wird empfohlen, dass Sie sämtliche zugehörigen Hinweise lesen und entsprechend vorgehen. Weitere Informationen zum Dienst Integritätsbereich finden Sie unter [Dienststatus und Kontinuität](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity). Mithilfe der hier aufgelisteten Tools, Foren und Community-Websites können Sie möglicherweise weitere Hilfestellung finden.
 
 [Produktübersicht Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
@@ -42,7 +42,7 @@ Bei der Anmeldung stellt das Microsoft 365 Admin Center Informationen zum Status
 
 ## <a name="assisted-support-from-microsoft"></a>Persönlicher Support von Microsoft
 
-Sie können Hilfe von Microsoft erhalten, indem Sie eine neue Dienstanforderung im Microsoft 365 Admin Center oder per Telefon anrufen. Abonnenten von Premier Support erhalten besondere Support-Optionen.
+Sie können Hilfe von Microsoft erhalten, indem Sie eine neue Dienstanforderung im Microsoft 365 Admin Center oder per Telefon anrufen. Abonnenten von Premier Support bieten zusätzliche Supportoptionen.
 
 ### <a name="support-for-microsoft-premier-support-subscribers"></a>Support für Abonnenten von Microsoft Premier Support
 
@@ -62,7 +62,7 @@ Weitere Informationen darüber, wie Ihnen der Premier-Support bei Ihrer Organisa
 
 1. Melden Sie sich beim Microsoft 365 Admin Center an.
 
-2. Wechseln Sie bei allgemeinen Problemen mit Produkten zu **Support** \> **Kundensupport anfordern** \> **Technischen Support anrufen**.
+2. Allgemeine Produktprobleme finden Sie **unter Support** \> **Ask for Customer Support** \> **Call Technical Support**.
 
    Bei Fragen vor dem Erwerb von EOP oder bei Fragen zur Abrechnung und zu Abonnements wechseln Sie zu **Support** \> **Kundensupport anfordern** \> **Support zur Abrechnung und zu Abonnements anrufen**.
 

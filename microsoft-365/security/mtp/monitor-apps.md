@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dcb7997c8c248c2b4e7d16902b6ebdd7756ccd0b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: f73c6b010677cdc481655d1d5310872fd1a99126
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846628"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920514"
 ---
 # <a name="app-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>App-Überwachung und Berichterstellung im Microsoft 365 Security Center
 
@@ -65,10 +65,10 @@ Die Risikofaktoren beginnen mit allgemeinen Informationen, beispielsweise mit de
 
 ## <a name="monitor-health-for-infrastructure-workloads"></a>Überwachen der Integrität von Infrastruktur Auslastungen
 
-**Infrastruktur Integrität** zeigt Integritätsstatus Warnungen für Infrastruktur Arbeitslasten in Azure Defender * an.
+**Infrastruktur Integrität** zeigt Integritätsstatus Warnungen für Infrastruktur Arbeitslasten in Azure Defender an.
 
-Azure Defender * bietet einheitliches Sicherheitsmanagement und Defender für Office 365 über lokale und Cloud-Arbeitslasten hinweg. Sie können Sicherheitsdaten aus unterschiedlichen Quellen, einschließlich Firewalls und anderen Partnerlösungen, sammeln, durchsuchen und analysieren.
+Azure Defender bietet einheitliches Sicherheitsmanagement und Defender für Office 365 über lokale und Cloud-Arbeitslasten hinweg. Sie können Sicherheitsdaten aus unterschiedlichen Quellen, einschließlich Firewalls und anderen Partnerlösungen, sammeln, durchsuchen und analysieren.
 
-Weitere Informationen finden Sie unter [Azure Defender *-Dokumentation](https://docs.microsoft.com/azure/security-center/).
+Weitere Informationen finden Sie unter [Dokumentation zu Azure Defender](https://docs.microsoft.com/azure/security-center/).
 
 ![Infrastruktur-Integritäts Karte](../../media/infrastructure-health.png)

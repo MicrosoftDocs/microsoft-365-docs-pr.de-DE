@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie die erweiterten Anti-Phishing-Richtlinien erstellen, ändern und löschen, die in Organisationen mit Microsoft Defender für Office 365 verfügbar sind.
-ms.openlocfilehash: 9e07107c302f83b71a97517b11e71eac81f84f6b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: ecc68a8dc050a5f08c6982b023861e0ea8976775
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845924"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920656"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Konfigurieren von Anti-Phishing-Richtlinien in Microsoft Defender für Office 365
 
@@ -159,9 +159,9 @@ Verwenden Sie die folgenden Verfahren, um Richtlinien zum Schutz vor Phishing zu
 
      - **E-Mail-Adresse** :
 
-        - Klicken Sie in das Feld, und führen Sie einen Bildlauf durch die Liste der Benutzer aus, die Sie auswählen möchten.
-        - Klicken Sie in das Feld, und beginnen Sie mit der Eingabe, um die Liste zu filtern und einen Benutzer auszuwählen.
-        - Wenn Sie einen Eintrag entfernen möchten **Remove** , klicken Sie auf Entfernen- ![ Symbol ](../../media/scc-remove-icon.png) für den Benutzer entfernen.
+       - Klicken Sie in das Feld, und führen Sie einen Bildlauf durch die Liste der Benutzer aus, die Sie auswählen möchten.
+       - Klicken Sie in das Feld, und beginnen Sie mit der Eingabe, um die Liste zu filtern und einen Benutzer auszuwählen.
+       - Wenn Sie einen Eintrag entfernen möchten **Remove** , klicken Sie auf Entfernen- ![ Symbol ](../../media/scc-remove-icon.png) für den Benutzer entfernen.
 
      - **Name** : dieser Wert wird basierend auf der e-Mail-Adresse aufgefüllt, die Sie ausgewählt haben, aber Sie können ihn ändern.
 
@@ -170,15 +170,15 @@ Verwenden Sie die folgenden Verfahren, um Richtlinien zum Schutz vor Phishing zu
      Um einen vorhandenen Eintrag zu bearbeiten, wählen Sie den geschützten Benutzer in der Liste aus.
 
      > [!NOTE]
-     > Sie können maximal 60 Benutzer im Security & Compliance Center oder in PowerShell eingeben.
-       
+     > Sie können maximal 60 Benutzer in allen Anti-Phishing-Richtlinien haben. Mit anderen Worten: Sie können 60 geschützte Benutzer in einer Richtlinie, 12 geschützte Benutzer in 5 Richtlinien usw. haben.
+
    - **Hinzufügen von Domänen zu Protect** : Konfigurieren Sie eine oder beide der folgenden Einstellungen:
 
      - **Automatisches einschließen der Domänen, die ich besitze** : der Standardwert ist **Off**. Um Sie zu aktivieren, schieben Sie die Umschaltfläche auf **ein**.
      - **Benutzerdefinierte Domänen einschließen** : der Standardwert ist **Off**. Um Sie zu aktivieren, schieben Sie die Umschaltfläche auf **ein** , und geben Sie im Feld **Domänen hinzufügen** den Domänennamen ein (beispielsweise contoso.com), drücken Sie die EINGABETASTE, und wiederholen Sie den Vorgang bei Bedarf.
 
      > [!NOTE]
-     > Sie können im Security & Compliance Center oder in PowerShell maximal 50 Domänen eingeben.
+     > Sie können maximal 50 Domänen in allen Anti-Phishing-Richtlinien haben. Mit anderen Worten: Sie können 50 geschützte Benutzer in einer Richtlinie, 10 geschützte Benutzer in 5 Richtlinien usw. haben.
 
    - **Aktionen** : Klicken Sie auf **Bearbeiten**
 
@@ -193,12 +193,12 @@ Verwenden Sie die folgenden Verfahren, um Richtlinien zum Schutz vor Phishing zu
 
      - **Wenn e-Mail von einer imitierten Domäne gesendet wird** : Konfigurieren Sie eine der folgenden Aktionen für Nachrichten, bei denen sich der gefälschte Absender in einer der geschützten Domänen befindet, die Sie in **Add Domains to Protect** angegeben haben:
 
-     - **Keine Aktion anwenden**
-     - **Weiterleiten von Nachrichten an andere e-Mail-Adressen**
-     - **Nachricht in Junk-E-Mail-Ordner verschieben**
-     - **Nachricht isolieren**
-     - **Senden der Nachricht und Hinzufügen weiterer Adressen zur Bcc-Zeile**
-     - **Löschen der Nachricht vor der Zustellung**
+       - **Keine Aktion anwenden**
+       - **Weiterleiten von Nachrichten an andere e-Mail-Adressen**
+       - **Nachricht in Junk-E-Mail-Ordner verschieben**
+       - **Nachricht isolieren**
+       - **Senden der Nachricht und Hinzufügen weiterer Adressen zur Bcc-Zeile**
+       - **Löschen der Nachricht vor der Zustellung**
 
    - Klicken Sie auf **Identitätswechsel-Sicherheitstipps einschalten** , und konfigurieren Sie die folgenden Einstellungen:
 
@@ -267,7 +267,6 @@ Verwenden Sie die folgenden Verfahren, um Richtlinien zum Schutz vor Phishing zu
 
      - Sie können in jedem Abschnitt auf **Bearbeiten** klicken, um zurück zur entsprechenden Seite zu wechseln.
      - Sie können die **folgenden Einstellungen direkt auf dieser** Seite aktivieren oder **Deaktivieren** :
-
        - **Aktivieren von Schutz vor Spoofing**
        - **Nicht authentifizierte Absender Funktion aktivieren**
 

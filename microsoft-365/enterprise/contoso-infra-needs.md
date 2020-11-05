@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Hier finden Sie Informationen zur grundlegenden Struktur der lokalen Contoso-IT-Infrastruktur und dazu, wie die geschäftlichen Anforderungen von Microsoft 365 für Unternehmen erfüllt werden.
-ms.openlocfilehash: 0a837a457869fc579d94ee5e5f9bb114cb93f641
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: b3b67429faccc5d22d49a2921fff4c8b3c3c062e
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847130"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920454"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Contoso-IT-Infrastruktur und geschäftliche Anforderungen
 
@@ -124,7 +124,7 @@ Die IT-Abteilung von Contoso hat vor der Bereitstellung die folgende Zuordnung d
 |  | Identitäts- und Zugriffsverwaltung | Dedizierte globale Administratorkonten mit Azure Multi-Factor Authentication (MFA) und Azure AD Privileged Identity Management (PIM) <BR> Mehrstufige Authentifizierung (MFA) für alle Benutzerkonten <BR> Bedingter Zugriff <BR> Windows Hello <BR> Windows Credential Guard |
 |  | Bedrohungsschutz | Advanced Threat Analytics <BR> Windows Defender <BR> Verteidiger für Office 365 <BR> Microsoft Defender für Office 365 <BR> Untersuchung und Antwort von Microsoft 365 Threat <BR> |
 |  | Schutz von Daten | Azure Information Protection <BR> Verhinderung von Datenverlust (Data Loss Prevention, DLP) <BR> Windows Information Protection (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
-|  | Sicherheitsverwaltung | Azure Defender *  <BR> Windows Defender Security Center |
+|  | Sicherheitsverwaltung | Azure Defender  <BR> Windows Defender Security Center |
 | Remote- und Mobilzugriff und Geschäftspartner |  |  |
 |  | Mehr Sicherheit für Telearbeiter und Mobilmitarbeiter | Microsoft Intune |
 |  | Verkleinern der Remotezugriffsinfrastruktur für Mitarbeiter | Microsoft 365-Arbeitslasten und cloudbasierte Daten |
@@ -139,7 +139,7 @@ Die IT-Abteilung von Contoso hat vor der Bereitstellung die folgende Zuordnung d
 
 Erfahren Sie mehr über das [lokale](contoso-networking.md) Contoso Corporation-Netzwerk und wie es für den Zugriff und die Wartezeit auf Cloud-basierte Microsoft 365-Ressourcen optimiert wurde.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 [Übersicht über Microsoft 365 Enterprise](microsoft-365-overview.md)
 

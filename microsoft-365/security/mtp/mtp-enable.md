@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b5bb99ed4b8cee7ea920679e20f69c7a0e002d26
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: c5b8cae9e4eabcb2b3c6a7eb76971784193a221d
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843636"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920502"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>Aktivieren von Microsoft 365 Defender
 
@@ -69,7 +69,7 @@ Microsoft 365 Defender speichert und verarbeitet Daten am [gleichen Speicherort,
 Wählen Sie **need help aus?** im Microsoft 365 Security Center können Sie sich an den Microsoft-Support wenden, um Microsoft 365 Defender in einem anderen rechenzentrumsstandort zu kontaktieren. 
 
 >[!NOTE]
->Microsoft Defender für Endpoint stellt automatisch Vorkehrungen in den Rechenzentren in der Europäischen Union (EU) bereit, wenn es über Azure Defender * aktiviert wird. Microsoft 365 Defender wird automatisch im gleichen EU-Rechenzentrum für Kunden bereitgestellt, die auf diese Weise einen Defender für Endpoint bereitgestellt haben. 
+>Microsoft Defender für Endpoint stellt in den Datencentern der Europäischen Union (EU) automatisch Rückstellungen bereit, wenn Sie über Azure Defender aktiviert werden. Microsoft 365 Defender wird automatisch im gleichen EU-Rechenzentrum für Kunden bereitgestellt, die auf diese Weise einen Defender für Endpoint bereitgestellt haben. 
 
 ### <a name="confirm-that-the-service-is-on"></a>Vergewissern Sie sich, dass der Dienst aktiviert ist
 Sobald der Dienst bereitgestellt ist, wird Folgendes hinzugefügt:

@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: bfb58cb043f2bc641245814c41e389ddcdbfdefa
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 3dae9f208f5bb08d694322eb9f7cff35986930da
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842416"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920490"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>Häufig gestellte Fragen beim Aktivieren von Microsoft 365 Defender
 
@@ -43,7 +43,7 @@ Anweisungen zum Aktivieren des Diensts finden [Sie unter Aktivieren von Microsof
 Kunden mit den folgenden nicht-E5-Lizenzen können Microsoft 365 Defender verwenden:
 
 - Microsoft Defender für Endpunkt
-- Microsoft Defender für Identity
+- Microsoft Defender for Identity
 - Microsoft Cloud App-Sicherheit
 - Verteidiger für Office 365 (Plan 2)
  
@@ -59,7 +59,7 @@ Zur Optimierung Ihrer Microsoft 365 Defender-Erlebnisse wird empfohlen, *alle* u
 Microsoft 365 Defender wählt automatisch einen optimalen Standort für das Rechenzentrum aus, in dem konsolidierte Daten verarbeitet und gespeichert werden. Wenn Sie über Microsoft Defender für Endpoint verfügen, wird derselbe Speicherort ausgewählt, der von Defender für Endpoint verwendet wird.
 
 >[!NOTE]
->Microsoft Defender für Endpoint stellt automatisch Vorkehrungen in den Rechenzentren in der Europäischen Union (EU) bereit, wenn es über Azure Defender * aktiviert wird. Microsoft 365 Defender wird automatisch im gleichen EU-Rechenzentrum für Kunden bereitgestellt, die Microsoft Defender für Endpoint auf diese Weise bereitgestellt haben. 
+>Microsoft Defender für Endpoint stellt in den Datencentern der Europäischen Union (EU) automatisch Rückstellungen bereit, wenn Sie über Azure Defender aktiviert werden. Microsoft 365 Defender wird automatisch im gleichen EU-Rechenzentrum für Kunden bereitgestellt, die Microsoft Defender für Endpoint auf diese Weise bereitgestellt haben. 
 
 Der Speicherort des Rechenzentrums wird vor und nach der Einrichtung des Diensts auf der Seite Einstellungen für Microsoft 365 Defender ( **Settings > Microsoft 365 Defender** ) angezeigt. Wenn Sie lieber einen anderen rechenzentrumsstandort verwenden möchten, wählen Sie **need help?** im Microsoft 365 Security Center aus, um den Microsoft-Support zu kontaktieren.
 

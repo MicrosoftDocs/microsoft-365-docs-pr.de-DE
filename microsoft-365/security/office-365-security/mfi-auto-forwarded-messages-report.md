@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: Administratoren können sich über den Bericht über automatisch weitergeleitete Nachrichten im Nachrichtenfluss-Dashboard im Security & Compliance Center informieren.
-ms.openlocfilehash: 01a094b8531672708fc024e8ed0c5833786dbb0c
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 28cb593d56d0b0054c8c8cbe4596d4f7df6442ab
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877789"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920596"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>Einblicke automatisch weitergeleiteter Nachrichten im Security & Compliance Center
 
@@ -35,7 +35,7 @@ Wenn Sie auf die Anzahl der Nachrichten im Widget klicken, wird ein Flyout-Berei
 
   - **Nachrichtenfluss Regeln**
   - **Nach Posteingangsregeln**
-  - **Durch SMTP-Weiterleitung** : Dies ist die automatische Weiterleitung, die Administratoren in einem Postfach konfigurieren können, wie unter [Configure Mail Forwarding for a Mailbox](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)beschrieben.
+  - **Durch SMTP-Weiterleitung** : Diese Methode gibt die automatische Weiterleitung an, die Administratoren in einem Postfach konfigurieren können, wie unter [configure e-Mail-Weiterleitung für ein Postfach](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)beschrieben.
   - Einen Link zum [Weiterleitungs Bericht](view-mail-flow-reports.md#forwarding-report) für weitere Details.
 
 - **Automatisch weitergeleitete Nachrichten nach Domänen und Benutzern** :
@@ -55,6 +55,6 @@ Basierend auf den Berichtsdaten werden zwei Erkenntnisse generiert:
 - [Neue Benutzer, die e-Mails weiterleiten](mfi-new-users-forwarding-email.md)
 - [Neue Domänen, die e-Mail weitergeleitet werden](mfi-new-domains-being-forwarded-email.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 Informationen zu weiteren Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).
