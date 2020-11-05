@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Benötigen Sie eine Lösung für die Datensatzverwaltung für Microsoft 365, die hochwertige Inhalte für rechtliche, geschäftliche oder behördliche Verpflichtungen verwaltet, aber Sie sind sich nicht sicher, wo Sie anfangen sollen? Hier finden Sie einige praktische Anweisungen für die ersten Schritte.
-ms.openlocfilehash: b7fc33e8a58857d839598cc74cdddc5247fd4a0d
-ms.sourcegitcommit: 7e8151ff74cb1cfc0dd59fadcac423c338415d77
+ms.openlocfilehash: 679300f581dd9177c00f367f4452d12142f49ee4
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48390162"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919853"
 ---
 # <a name="get-started-with-records-management"></a>Erste Schritte mit der Datensatzverwaltung
 
@@ -34,7 +34,7 @@ Sind Sie bereit, mit der Verwaltung der hochwertigen Inhalte Ihrer Organisation 
 
 2. **Grundlegendes zu Aufbewahrungsbezeichnungen und zur Funktionsweise der Aufbewahrung** für SharePoint und Exchange, da Aufbewahrungsbezeichnungen zum Deklarieren von Datensätzen verwendet werden: [Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](retention.md)
 
-3. **Erstellen Ihres Dateiplans für Aufbewahrungseinstellungen und -aktionen**, indem Sie [einen vorhandenen Plan importieren](file-plan-manager.md#import-retention-labels-into-your-file-plan ) (falls vorhanden), oder [neue Aufbewahrungsbezeichnungen erstellen, die Datensätze deklarieren](declare-records.md).
+3. **Erstellen Ihres Dateiplans für Aufbewahrungseinstellungen und -aktionen** , indem Sie [einen vorhandenen Plan importieren](file-plan-manager.md#import-retention-labels-into-your-file-plan ) (falls vorhanden), oder [neue Aufbewahrungsbezeichnungen erstellen, die Datensätze deklarieren](declare-records.md).
 
 4. **Veröffentlichen und Anwenden Ihrer Aufbewahrungsbezeichnungen**. Aufbewahrungsrichtlinien sind wiederverwendbare Bausteine, die in mehreren Richtlinien verwendet und in Benutzer-Workflows eingebunden werden können: 
     
@@ -51,7 +51,7 @@ Die Optionen für die Lizenzierung Ihrer Benutzer zur Nutzung der Microsoft 365-
 
 Die Mitglieder Ihres Complianceteams, die für die Datensatzverwaltung verantwortlich sind, benötigen Berechtigungen für das [Microsoft 365 Compliance Center](https://compliance.microsoft.com/). Standardmäßig hat der Mandantenadministrator (Globaler Administrator) Zugriff auf diese Ressource und kann anderen Personen den Zugriff darauf gewähren, ohne ihnen alle Berechtigungen eines Mandantenadministrators zu geben. Um Berechtigungen für diese eingeschränkte Administration zu erteilen, empfehlen wir, Benutzer zur Administrator-Rollengruppe **Datensatzverwaltung** hinzuzufügen, wodurch die Rolle **RecordManagement** zugewiesen wird.
 
-Die in dieser Rollengruppe enthaltenen Berechtigungen umfassen nicht die Berechtigungen, die für die [Löschungsprüfung und -verifizierung](disposition.md) benötigt werden, und selbst ein globaler Administrator hat diese Berechtigung nicht standardmäßig. Um die Löschung zu verwalten, verwenden Sie die Rolle **Löschungsverwaltung**, indem Sie eine benutzerdefinierte Rollengruppe erstellen oder eine Standardrollengruppe verwenden, die diese Rolle enthält (z. B. **Complianceadministrator**).
+Die in dieser Rollengruppe enthaltenen Berechtigungen umfassen nicht die Berechtigungen, die für die [Löschungsprüfung und -verifizierung](disposition.md) benötigt werden, und selbst ein globaler Administrator hat diese Berechtigung nicht standardmäßig. Um die Löschung zu verwalten, verwenden Sie die Rolle **Löschungsverwaltung** , indem Sie eine benutzerdefinierte Rollengruppe erstellen oder eine Standardrollengruppe verwenden, die diese Rolle enthält (z. B. **Complianceadministrator** ).
 
 Weitere Informationen zu diesen Rollengruppen und Rollen finden Sie unter [Berechtigungen im Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center#roles-in-the-security--compliance-center).
 
@@ -76,10 +76,11 @@ Anhand der folgenden Tabelle können Sie Ihre geschäftlichen Anforderungen ents
 |Administratoren können Aktionen zum Aufbewahren und Löschen von Dokumenten auf ein Dokumentenverständnismodell anwenden, so dass diese automatisch auf identifizierte Dokumente in einer Microsoft Office SharePoint Online Bibliothek angewendet werden.|[Erstellen von Aufbewahrungsbezeichnungen und Anwenden in Apps](create-apply-retention-labels.md)|
 |Automatische Anwendung von Aufbewahrungs- und Löschaktionen auf Dokumente und E-Mails |[Automatisches Anwenden einer Aufbewahrungsbezeichnung auf Inhalte](apply-retention-labels-automatically.md)|
 |Starten Sie den Aufbewahrungszeitraum mit einem bestimmten Ereignis, wie:  <br />– Mitarbeiter verlässt das Unternehmen <br />– Vertrag läuft aus <br />– Ende der Produktlebensdauer| [Aufbewahrung mit Eintritt eines Ereignisses starten](event-driven-retention.md)|
+|Richtlinienänderungen einschränken, um bei Einhaltung behördlicher Anforderungen oder beim Schutz vor böswilligen Administratoren zu helfen.| [Verwenden Sie Erhaltungssperre, um Änderungen an Aufbewahrungsregeln und den Richtlinien zur Aufbewahrungsbezeichnung einzuschränken](retention-preservation-lock.md)
 |Verwalten des Lebenszyklus verschiedener Dokumenttypen in SharePoint| [Verwenden von Aufbewahrungsbezeichnungen zum Verwalten des Lebenszyklus von in SharePoint gespeicherten Dokumenten](auto-apply-retention-labels-scenario.md)|
-|Stellen Sie sicher, dass Inhalte überprüft und genehmigt werden, bevor sie nach Ablauf der Aufbewahrungsfrist endgültig gelöscht werden|[Dispositionsüberprüfungen](disposition.md#disposition-reviews) |
+|Vergewissern Sie sich, dass das Löschen von Inhalten am Ende deren Aufbewahrungszeitraums von jemandem überprüft und genehmigt wird|[Dispositionsüberprüfungen](disposition.md#disposition-reviews) |
 |Verfügungsnachweis für Inhalte haben, die am Ende ihrer Aufbewahrungsfrist endgültig gelöscht werden|[Disposition von Datensätzen](disposition.md#disposition-of-records) |
-|Einstellungen überwachen, wie und wo Aufbewahrungs- und Löschungseinstellungen auf Elemente angewendet werden | [Überwachen von Aufbewahrungsbezeichnungen](retention.md#monitoring-retention-labels) |
+| Einstellungen überwachen, wie und wo Aufbewahrungs- und Löschungseinstellungen auf Elemente angewendet werden | [Überwachen von Aufbewahrungsbezeichnungen](retention.md#monitoring-retention-labels) |
 
 ## <a name="end-user-documentation-for-records"></a>Dokumentation zu Datensätzen für Endbenutzer
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sie sind bereit, Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen zum Schutz der Daten Ihrer Organisation zu implementieren, sind sich aber nicht sicher, wie Sie dies bewerkstelligen sollten? Hier finden Sie einige praktische Anweisungen für die ersten Schritte.
-ms.openlocfilehash: ea5ccdbe0267c2b894e6b69cf8b048925af1b409
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: b4dcbe15e2a2d9e3d056555a9212125b60133826
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399510"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919863"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Erste Schritte zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
@@ -34,11 +34,11 @@ Sind Sie bereit, die Daten Ihrer Organisation zu verwalten, indem Sie benötigte
 
 1. **Informieren Sie sich über die Funktionsweise der Aufbewahrung** in Microsoft 365 und ermitteln Sie anschließend, ob Aufbewahrungsrichtlinien, Aufbewahrungsbezeichnungen oder eine entsprechende Kombination erforderlich sind: [Weitere Informationen zur Aufbewahrung](retention.md)
 
-2. **Ermitteln Sie die Einstellungen und Aktionen der Aufbewahrung**, die laut Richtlinien Ihrer Organisation oder Branchenvorschriften erforderlich sind.
+2. **Ermitteln Sie die Einstellungen und Aktionen der Aufbewahrung** , die laut Richtlinien Ihrer Organisation oder Branchenvorschriften erforderlich sind.
     
     Ermitteln Sie im Rahmen dieser Bewertung, ob Sie die [Datensatzverwaltung](records-management.md) verwenden werden.
 
-3. **Erstellen Sie Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen**, anhand der von Ihnen ermittelten Aufbewahrungseinstellungen und Aktionen.
+3. **Erstellen Sie Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen** , anhand der von Ihnen ermittelten Aufbewahrungseinstellungen und Aktionen.
     
     Für Aufbewahrungsbezeichnungen ist es möglicherweise sinnvoll, Ihre Aufbewahrungsbezeichnungen anhand eines [Dateiplans](file-plan-manager.md)in einem Tabellenblatt zu definieren und zu verfeinern. Importieren Sie anschließend dieses Tabellenblatt, um Ihre Bezeichnungen zu erstellen.
     
@@ -52,7 +52,7 @@ Die Optionen für die Lizenzierung Ihrer Benutzer zur Nutzung der Microsoft 365-
 
 ## <a name="permissions-required-to-create-and-manage-retention-policies-and-retention-labels"></a>Notwendige Berechtigungen zum Erstellen und Verwalten von Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
-Die Mitglieder Ihres Complianceteams, die Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen erstellen und verwalten sollen, benötigen Berechtigungen für das [Microsoft 365 Compliance Center](https://compliance.microsoft.com/). Standardmäßig hat der Mandantenadministrator (Globaler Administrator) Zugriff auf diese Ressource und kann anderen Personen den Zugriff darauf gewähren, ohne ihnen alle Berechtigungen eines Mandantenadministrators zu geben. Um Berechtigungen für diese eingeschränkte Administration zu erteilen, empfehlen wir, Benutzer zur Administrator-Rollengruppe „**Compliance Administrator**“ hinzuzufügen. Anweisungen finden Sie unter [Benutzern den Zugriff auf das Security & Compliance Center gewähren](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
+Die Mitglieder Ihres Complianceteams, die Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen erstellen und verwalten sollen, benötigen Berechtigungen für das [Microsoft 365 Compliance Center](https://compliance.microsoft.com/). Standardmäßig hat der Mandantenadministrator (Globaler Administrator) Zugriff auf diese Ressource und kann anderen Personen den Zugriff darauf gewähren, ohne ihnen alle Berechtigungen eines Mandantenadministrators zu geben. Um Berechtigungen für diese eingeschränkte Administration zu erteilen, empfehlen wir, Benutzer zur Administrator-Rollengruppe „ **Compliance Administrator** “ hinzuzufügen. Anweisungen finden Sie unter [Benutzern den Zugriff auf das Security & Compliance Center gewähren](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
 
 Diese Berechtigungen sind nur erforderlich, um Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen zu erstellen und anzuwenden. Die Person, die die Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen konfiguriert, benötigt keinen Zugriff auf die Inhalte.
 
@@ -69,9 +69,8 @@ Anhand der folgenden Tabelle können Sie Ihre geschäftlichen Anforderungen ents
 |Administratoren können Aktionen zum Aufbewahren und Löschen von Dokumenten auf ein Dokumentenverständnismodell anwenden, so dass diese automatisch auf identifizierte Dokumente in einer Microsoft Office SharePoint Online Bibliothek angewendet werden.|[Erstellen von Aufbewahrungsbezeichnungen und Anwenden in Apps](create-apply-retention-labels.md)|
 |Automatische Anwendung von Aufbewahrungs- und Löschaktionen auf Dokumente und E-Mails |[Automatisches Anwenden einer Aufbewahrungsbezeichnung auf Inhalte](apply-retention-labels-automatically.md)|
 |Starten Sie den Aufbewahrungszeitraum mit einem bestimmten Ereignis, wie:  <br />– Mitarbeiter verlässt das Unternehmen <br />– Vertrag läuft aus <br />– Ende der Produktlebensdauer| [Aufbewahrung mit Eintritt eines Ereignisses starten](event-driven-retention.md)|
-|Verwalten des Lebenszyklus verschiedener Dokumenttypen in SharePoint| [Verwenden von Aufbewahrungsbezeichnungen zum Verwalten des Lebenszyklus von in SharePoint gespeicherten Dokumenten](auto-apply-retention-labels-scenario.md)|
-|Einhaltung der SEC-Regel 17a-4|[Verwenden von Exchange Online und des Security & Compliance Centers, zur Einhaltung der SEC-Richtlinie 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
-|Stellen Sie sicher, dass Inhalte überprüft und genehmigt werden, bevor sie nach Ablauf der Aufbewahrungsfrist endgültig gelöscht werden|[Dispositionsüberprüfungen](disposition.md#disposition-reviews) |
+|Richtlinienänderungen einschränken, um bei Einhaltung behördlicher Anforderungen oder beim Schutz vor böswilligen Administratoren zu helfen.| [Verwenden Sie Erhaltungssperre, um Änderungen an Aufbewahrungsregeln und den Richtlinien zur Aufbewahrungsbezeichnung einzuschränken](retention-preservation-lock.md)
+|Vergewissern Sie sich, dass das Löschen von Inhalten am Ende deren Aufbewahrungszeitraums von jemandem überprüft und genehmigt wird|[Dispositionsüberprüfungen](disposition.md#disposition-reviews) |
 | Einstellungen überwachen, wie und wo Aufbewahrungs- und Löscheinstellungen auf Elemente angewendet werden | [Überwachen von Aufbewahrungsbezeichnungen](retention.md#monitoring-retention-labels) |
 |Verwenden einer einzelnen Datensatzverwaltungslösung für Dokumente und E-Mails |[Mehr zur Datensatzverwaltung](records-management.md) |
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mithilfe einer Aufbewahrungsrichtlinie können Sie die Inhalte, die Benutzer mit E-Mails, Dokumenten und Unterhaltungen generieren, sehr effizient verwalten. Bewahren Sie auf, was Sie wollen, und werden Sie los, was Sie nicht mehr wollen.
-ms.openlocfilehash: 6b30c5689981adaf3eb7f4893a8acf0398ca2339
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: 4e4ced42424abe024a1230c24814c420a59ed3dc
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48774036"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919987"
 ---
 # <a name="create-and-configure-retention-policies"></a>Erstellen und Konfigurieren von Aufbewahrungsrichtlinien
 
@@ -67,7 +67,7 @@ Wenn Sie über mehr als eine Aufbewahrungsrichtlinie verfügen und außerdem Auf
 
 2. Wählen Sie **Neue Aufbewahrungsrichtlinie** aus, um den Assistenten zum Erstellen einer Aufbewahrungsrichtlinie zu starten, und benennen Sie die neue Aufbewahrungsrichtlinie.
 
-3. Wählen Sie für die Seite **Speicherorte für die Anwendung der Richtlinie auswählen** einen oder beide Speicherorte für Teams aus: **Teams Kanalnachricht** und **Teams Chats** .
+3. Wählen Sie für die Seite **Speicherorte für die Anwendung der Richtlinie auswählen** einen oder beide Speicherorte für Teams aus: **Teams Kanalnachricht** und **Teams Chats**.
 
    Bei **Teams-Kanalnachrichten** sind Nachrichten von Standardkanälen, jedoch nicht von [privaten Kanälen](https://docs.microsoft.com/microsoftteams/private-channels) eingeschlossen. Zurzeit werden private Kanäle von Aufbewahrungsrichtlinien nicht unterstützt.
 
@@ -83,7 +83,7 @@ Weitere Informationen zu Aufbewahrungsrichtlinien für Teams finden Sie unter [A
 
 #### <a name="additional-retention-policy-needed-to-support-teams"></a>Weitere für die Unterstützung von Teams benötigte Aufbewahrungsrichtlinie
 
-Teams bietet mehr als nur Chats und Kanalnachrichten. Wenn Sie Teams haben, die aus einer Microsoft 365-Gruppe (früher „Office 365-Gruppe“) erstellt wurden, sollten Sie zusätzlich eine Aufbewahrungsrichtlinie konfigurieren, die diese Microsoft 365-Gruppe einschließt. Verwenden Sie dazu den Speicherort **Microsoft 365-Gruppen** . Diese Aufbewahrungsrichtlinie gilt für Inhalte in Postfach, Website und Dateien der Gruppe.
+Teams bietet mehr als nur Chats und Kanalnachrichten. Wenn Sie Teams haben, die aus einer Microsoft 365-Gruppe (früher „Office 365-Gruppe“) erstellt wurden, sollten Sie zusätzlich eine Aufbewahrungsrichtlinie konfigurieren, die diese Microsoft 365-Gruppe einschließt. Verwenden Sie dazu den Speicherort **Microsoft 365-Gruppen**. Diese Aufbewahrungsrichtlinie gilt für Inhalte in Postfach, Website und Dateien der Gruppe.
 
 Wenn Sie Teamwebsites haben, die mit keiner Microsoft 365-Gruppe verbunden sind, benötigen Sie eine Aufbewahrungsrichtlinie, die die Speicherorte **SharePoint-Websites** oder **OneDrive-Konten** einschließt, um Dateien in Teams aufzubewahren und zu löschen:
 
@@ -113,7 +113,7 @@ Es kann vorkommen, dass eine Aufbewahrungsrichtlinie, die auf Microsoft 365-Grup
     
     Wählen Sie nicht **Erweiterte Aufbewahrungseinstellungen verwenden** , da diese Option für Yammer-Speicherorte nicht unterstützt wird. 
 
-4. Wählen Sie auf der Seite **Speicherorte auswählen** die Option **Bestimmte Standorte auswählen** . Aktivieren Sie dann einen oder beide Speicherorte für Yammer: **Yammer-Communitynachricht** und **Private Yammer-Nachrichten** .
+4. Wählen Sie auf der Seite **Speicherorte auswählen** die Option **Bestimmte Standorte auswählen**. Aktivieren Sie dann einen oder beide Speicherorte für Yammer: **Yammer-Communitynachricht** und **Private Yammer-Nachrichten**.
     
     Standardmäßig sind alle Communitys und Benutzer ausgewählt, aber Sie können dies verfeinern, indem Sie Communitys und Benutzer angeben, die ein- oder -ausgeschlossen werden sollen.
     
@@ -127,7 +127,7 @@ Weitere Informationen darüber, wie die Aufbewahrungsrichtlinien bei Yammer funk
 
 #### <a name="additional-retention-policies-needed-to-support-yammer"></a>Zusätzliche Aufbewahrungsrichtlinien zur Unterstützung von Yammer erforderlich
 
-Yammer ist mehr als nur Communitynachrichten und private Nachrichten. Konfigurieren Sie zum Aufbewahren und Löschen von E-Mail-Nachrichten für Ihr Yammer-Netzwerk eine zusätzliche Aufbewahrungsrichtlinie, die alle für Yammer verwendeten Microsoft 365-Gruppen umfasst. Verwenden Sie dazu den Speicherort **Microsoft 365-Gruppen** . 
+Yammer ist mehr als nur Communitynachrichten und private Nachrichten. Konfigurieren Sie zum Aufbewahren und Löschen von E-Mail-Nachrichten für Ihr Yammer-Netzwerk eine zusätzliche Aufbewahrungsrichtlinie, die alle für Yammer verwendeten Microsoft 365-Gruppen umfasst. Verwenden Sie dazu den Speicherort **Microsoft 365-Gruppen**. 
 
 Um Dateien, die in Yammer gespeichert sind, aufzubewahren und zu löschen, benötigen Sie eine Aufbewahrungsrichtlinie, die die **SharePoint-Websites** oder die Speicherorte der **OneDrive-Konten** umfasst:
 
@@ -194,7 +194,7 @@ Informationen zum Überprüfen der Syntax für Ihren Mandanten und zum Identifiz
 
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Konfigurationsinformationen für Microsoft 365-Gruppen
 
-Wenn Sie Inhalte für eine Microsoft 365-Gruppe (früher „Office 365-Gruppe“) aufbewahren oder löschen möchten, verwenden Sie den Speicherort **Microsoft 365-Gruppen** . Obwohl eine Microsoft 365-Gruppe über ein Exchange-Postfach verfügt, bezieht eine Aufbewahrungsrichtlinie, die den gesamten **Exchange-E-Mail-Speicherort** umfasst, keine Inhalte in Microsoft 365-Gruppenpostfächern mit ein. Obwohl der **Exchange-E-Mail-Speicherort** zunächst die Angabe eines Gruppenpostfachs zum Einschließen oder Ausschließen zulässt, erhalten Sie beim Versuch, die Aufbewahrungsrichtlinie zu speichern, die Fehlermeldung, dass "RemoteGroupMailbox" keine gültige Auswahl für den Exchange-Speicherort ist.
+Wenn Sie Inhalte für eine Microsoft 365-Gruppe (früher „Office 365-Gruppe“) aufbewahren oder löschen möchten, verwenden Sie den Speicherort **Microsoft 365-Gruppen**. Obwohl eine Microsoft 365-Gruppe über ein Exchange-Postfach verfügt, bezieht eine Aufbewahrungsrichtlinie, die den gesamten **Exchange-E-Mail-Speicherort** umfasst, keine Inhalte in Microsoft 365-Gruppenpostfächern mit ein. Obwohl der **Exchange-E-Mail-Speicherort** zunächst die Angabe eines Gruppenpostfachs zum Einschließen oder Ausschließen zulässt, erhalten Sie beim Versuch, die Aufbewahrungsrichtlinie zu speichern, die Fehlermeldung, dass "RemoteGroupMailbox" keine gültige Auswahl für den Exchange-Speicherort ist.
 
 Eine auf eine Microsoft 365-Gruppe angewandte Aufbewahrungsrichtlinie umfasst das Gruppenpostfach und die Teams-Website, wenn eine Teams-Website bei der Erstellung der Gruppe ausgewählt oder später der Gruppe hinzugefügt wurde. Dateien, die auf der Teams-Website gespeichert sind, werden mit diesem Standort abgedeckt. Nicht jedoch Teams-Chats oder Nachrichten im Teams-Channel, die ihre eigenen Standorte für Aufbewahrungsrichtlinien haben.
 
@@ -214,11 +214,11 @@ Wenn Sie die Einstellungen für die Aufbewahrung und Löschung von Inhalten in I
 
 - Nur aufbewahren
 
-    Wählen Sie für diese Konfiguration **Elemente für einen bestimmten Zeitraum aufbewahren** und **Am Ende des Aufbewahrungszeitraums: Nichts unternehmen** . Oder wählen Sie **Elemente für immer aufbewahren** aus.
+    Wählen Sie für diese Konfiguration **Elemente für einen bestimmten Zeitraum aufbewahren** und **Am Ende des Aufbewahrungszeitraums: Nichts unternehmen**. Oder wählen Sie **Elemente für immer aufbewahren** aus.
 
 - Aufbewahren und dann löschen
 
-    Wählen Sie für diese Konfiguration **Elemente für einen bestimmten Zeitraum aufbewahren** und **Am Ende des Aufbewahrungszeitraums: Elemente automatisch löschen** .
+    Wählen Sie für diese Konfiguration **Elemente für einen bestimmten Zeitraum aufbewahren** und **Am Ende des Aufbewahrungszeitraums: Elemente automatisch löschen**.
 
 - Nur löschen
 
@@ -285,40 +285,8 @@ Wenn Sie die optionale Konfiguration für den Bereich der Aufbewahrungseinstellu
 
 Wenn Sie eine Aufbewahrungsrichtlinie bearbeiten und Elemente bereits den ursprünglichen Einstellungen in Ihrer Aufbewahrungsrichtlinie unterliegen, werden die aktualisierten Einstellungen automatisch zusätzlich auf diese sowie auf neu ermittelte Elemente angewendet.
 
-Diese Aktualisierung erfolgt normalerweise ziemlich schnell, kann aber mehrere Tage dauern. Wenn die Richtlinienreplikation auf Ihre Microsoft 365-Speicherorte abgeschlossen ist, ändert sich der Status der Aufbewahrungsrichtlinie im Microsoft 365 Compliance Center von **Ein (ausstehend)** zu **Ein (erfolgreich)** .
+Diese Aktualisierung erfolgt normalerweise ziemlich schnell, kann aber mehrere Tage dauern. Wenn die Richtlinienreplikation auf Ihre Microsoft 365-Speicherorte abgeschlossen ist, ändert sich der Status der Aufbewahrungsrichtlinie im Microsoft 365 Compliance Center von **Ein (ausstehend)** zu **Ein (erfolgreich)**.
 
-## <a name="lock-a-retention-policy-by-using-powershell"></a>Sperren einer Aufbewahrungsrichtlinie mit PowerShell
+## <a name="locking-the-policy-to-prevent-changes"></a>Sperren der Richtlinie, um Änderungen vorzubeugen
 
-Sie müssen PowerShell verwenden, wenn Sie eine [Aufbewahrungssperre](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements) zur Einhaltung gesetzlicher Vorschriften benötigen. Weil Administratoren nach dem Anwenden einer Aufbewahrungssperre eine Aufbewahrungsrichtlinie nicht deaktivieren oder löschen können, kann dieses Feature in der Benutzeroberfläche nicht aktiviert werden, um eine unbeabsichtigte Konfiguration zu verhindern.
-
-Alle Aufbewahrungsrichtlinien mit beliebiger Konfiguration unterstützen die Aufbewahrungssperre. Wenn Sie aber die folgenden PowerShell-Befehle verwenden, werden Sie feststellen, dass der Parameter **Workload** immer **Exchange, SharePoint, OneDriveForBusines, Skype, ModernGroup** statt der in der Richtlinie konfigurierten tatsächlichen Arbeitslasten anzeigt. Dies ist lediglich ein Anzeigeproblem.
-
-1. [Stellen Sie eine Verbindung mit der Security & Compliance Center PowerShell her](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
-
-2. Führen Sie zum Anzeigen einer Liste Ihrer Aufbewahrungsrichtlinien und zum Suchen nach dem Namen der Richtlinie, die Sie sperren möchten, den Befehl [Get-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancepolicy) aus. Zum Beispiel:
-
-   ![Liste der Aufbewahrungsrichtlinien in PowerShell](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
-
-3. Wenn Sie eine Aufbewahrungssperre auf eine Aufbewahrungsrichtlinie anwenden möchten, führen Sie das Cmdlet [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) mit dem Namen der Aufbewahrungsrichtlinie aus, und legen Sie den Parameter *RestrictiveRetention* auf „true“ fest:
-
-    ```powershell
-    Set-RetentionCompliancePolicy -Identity "<Name of Policy>" –RestrictiveRetention $true
-    ```
-
-    Zum Beispiel:
-
-    ![RestrictiveRetention-Parameter in PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
-
-     Wenn Sie dazu aufgefordert werden, lesen und bestätigen Sie die Einschränkungen, die in dieser Konfiguration enthalten sind, indem Sie **J** eingeben:
-
-   ![Aufforderung zur Bestätigung der Sperre einer Aufbewahrungsrichtlinie in PowerShell](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
-
-Eine Aufbewahrungssperre wird jetzt zur Aufbewahrungsrichtlinie hinzugefügt. Führen Sie `Get-RetentionCompliancePolicy` zur Bestätigung erneut aus, geben Sie aber den Namen der Aufbewahrungsrichtlinie an, und zeigen Sie die Richtlinienparameter an:
-
-```powershell
-Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl
-```
-
-Sie sollten sehen, dass **RestrictiveRetention** auf **True** festgelegt wurde. Zum Beispiel:
-
-![Gesperrte Richtlinie mit allen Parametern in PowerShell](../media/retention-policy-preservation-lock-locked-policy.PNG)
+Wenn Sie sicherstellen möchten, das niemand die Richtlinie deaktivieren, löschen oder weniger restriktiv machen kann, lesen Sie [Erhaltungssperre verwenden, um Änderungen an Aufbewahrungsrichtlinien und Richtlinien der Aufbewahrungsbezeichnung einzuschränken](retention-preservation-lock.md).
