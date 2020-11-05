@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Verwenden Sie die Sicherheits- und Compliance-Dienste von Microsoft 365 zum Schutz Ihrer Apps, Daten und Geräte für Remotemitarbeiter.
-ms.openlocfilehash: 7607f3945d2e3c4e057162296df94dce4c611dbe
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 6c6c30e320068a6e97cf5fd2cd81b4bfeff1c49e
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681468"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845228"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>Schritt 3: Bereitstellen von Sicherheit und Compliance für Remotemitarbeiter
 
@@ -49,9 +49,9 @@ Schützen Sie Ihre Apps und Daten mit diesen Sicherheitsfunktionen von Microsoft
 
 | Funktion oder Feature | Beschreibung | Lizenzierung |
 |:-------|:-----|:-------|
-| Office 365 Advanced Threat Protection (ATP) | Schützen Sie Ihre Microsoft 365-Apps und-Daten vor Angriffen, beispielsweise E-Mails, Office-Dokumente und Tools für die Zusammenarbeit. <br><br> Office ATP sammelt und analysiert Signale Ihrer Apps zur Erkennung, Untersuchung und Behebung von Sicherheitsrisiken und schützt Ihre Organisation vor böswilligen Bedrohungen durch E-Mails, Links (URLs) und Tools für die Zusammenarbeit. | Microsoft 365 E3 oder E5 | 
+| Microsoft Defender für Office 365 | Schützen Sie Ihre Microsoft 365-Apps und-Daten vor Angriffen, beispielsweise E-Mails, Office-Dokumente und Tools für die Zusammenarbeit. <br><br> Microsoft Defender für Office 365 erfasst und analysiert Signale Ihrer Apps zur Erkennung, Untersuchung und Behebung von Sicherheitsrisiken und schützt Ihre Organisation vor böswilligen Bedrohungen durch E-Mails, Links (URLs) und Tools für die Zusammenarbeit. | Microsoft 365 E3 oder E5 | 
 | Schutz vor Schadsoftware | ‎Microsoft Defender Antivirus und Device Guard bieten gerätebasierten Schutz vor Schadsoftware. <br><br> SharePoint Online überprüft Dateiuploads automatisch auf bekannte Schadsoftware. ‎<br><br> Exchange Online Protection (EOP) sichert Cloud-Postfächer. | Microsoft 365 E3 oder E5 |
-| Microsoft Defender ATP | Schützen Sie die Geräte Ihrer Organisation vor Cyber-Bedrohungen und Datenschutzverletzungen, und erkennen, untersuchen und reagieren Sie fortgeschrittene Bedrohungen. | Microsoft 365 E5 |
+| Microsoft Defender für Endpunkt | Schützen Sie die Geräte Ihrer Organisation vor Cyber-Bedrohungen und Datenschutzverletzungen, und erkennen, untersuchen und reagieren Sie auf komplexe Bedrohungen. | Microsoft 365 E5 |
 | Cloud-App-Sicherheit | Schützen Sie Ihre cloudbasierten Dienste – sowohl Microsoft 365 als auch andere SaaS-Apps – vor Angriffen. | Microsoft 365 E5 oder Individual Cloud App Security-Lizenzen |
 | Azure AD Identity Protection  | Automatisieren Sie die Erkennung und Behebung von identitätsbasierten Risiken. <br><br>Erstellen Sie risikobasierte bedingte Zugriffsrichtlinien, um die mehrstufige Authentifizierung (MFA) für riskante Anmeldungen zu erzwingen. | Microsoft 365 E5 oder E3 mit Azure AD Premium P2-Lizenzen |
 ||||

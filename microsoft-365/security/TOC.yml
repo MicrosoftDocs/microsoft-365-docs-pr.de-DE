@@ -33,15 +33,15 @@
           href: mtp/microsoft-secure-score-history-metrics-trends.md
         - name: Was in Kürze verfügbar ist
           href: mtp/microsoft-secure-score-whats-coming.md
-        - name: Neuerungen
+        - name: Neuigkeiten
           href: mtp/microsoft-secure-score-whats-new.md
-    - name: Microsoft Threat Protection
+    - name: Microsoft 365 Defender
       items:
         - name: Übersicht
           items:
-            - name: Was ist Microsoft Threat Protection?
+            - name: Was ist Microsoft 365 Defender?
               href: mtp/microsoft-threat-protection.md
-            - name: Neues in Microsoft Threat Protection
+            - name: Neuerungen in Microsoft 365 Defender
               href: mtp/whats-new.md
             - name: Vorschaufeatures
               href: mtp/preview.md
@@ -67,7 +67,7 @@
               href: mtp/setup-mtpeval.md
             - name: Konfigurieren und Onboarding
               href: mtp/config-mtpeval.md
-            - name: Microsoft Thread Protection-Dienst starten
+            - name: "Starten des Microsoft\_365 Defender-Diensts"
               href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service'
             - name: Generieren einer Testwarnung
               href: mtp/generate-test-alert.md
@@ -91,7 +91,7 @@
               href: mtp/mtp-pilot.md
             - name: Bereitstellen unterstützter Dienste
               href: mtp/deploy-supported-services.md
-            - name: Aktivieren von Microsoft Threat Protection
+            - name: "Microsoft\_365 Defender aktivieren"
               href: mtp/mtp-enable.md
             - name: Häufig gestellte Fragen aktivieren
               href: mtp/mtp-enable-faq.md
@@ -137,7 +137,7 @@
                       href: mtp/advanced-hunting-shared-queries.md
                     - name: 'Suchen auf Geräten, in E-Mails, Apps und Identitäten'
                       href: mtp/advanced-hunting-query-emails-devices.md
-                    - name: Übergang von Microsoft Defender ATP
+                    - name: Übergang von Defender für Endpunkt
                       href: mtp/advanced-hunting-migrate-from-mdatp.md
                 - name: Arbeiten mit Abfrageergebnissen
                   href: mtp/advanced-hunting-query-results.md
@@ -251,15 +251,15 @@
                       href: ./mtp/tickets.md
                     - name: ServiceNow-Tickets im Sicherheitscenter
                       href: ./mtp/tickets-security-center.md
-            - name: Microsoft Threat Protection-APIs (Vorschau)
+            - name: Microsoft 365 Defender-APIs (Vorschau)
               items:
-                - name: Übersicht über Microsoft Threat Protection-APIs (Vorschau)
+                - name: Übersicht über Microsoft 365 Defender-APIs (Vorschau)
                   href: mtp/api-overview.md
-                - name: Erste Schritte mit Microsoft Threat Protection-APIs (Vorschau)
+                - name: Erste Schritte mit Microsoft 365 Defender-APIs (Vorschau)
                   items:
-                    - name: Microsoft Threat Protection API-Lizenz und Nutzungsbedingungen
+                    - name: Microsoft 365 Defender-API-Lizenz und Nutzungsbedingungen
                       href: mtp/api-terms.md
-                    - name: Zugriff auf Microsoft Threat Protection-APIs
+                    - name: Zugriff auf Microsoft 365 Defender-APIs
                       href: mtp/api-access.md
                     - name: Beispiel für Hello World
                       href: mtp/api-hello-world.md
@@ -271,9 +271,9 @@
                       href: mtp/api-partner-access.md
                     - name: Andere API-Ressourcen
                       href: mtp/api-articles.md
-                - name: Microsoft Threat Protection-APIs und Schema (Vorschau)
+                - name: Microsoft 365 Defender-APIs und -Schema (Vorschau)
                   items:
-                    - name: Unterstützte Microsoft Threat Protection-APIs
+                    - name: Unterstützte Microsoft 365 Defender-APIs
                       href: mtp/api-supported.md
                     - name: Häufige Rest-API-Fehlercodes
                       href: mtp/api-error-codes.md
@@ -310,11 +310,11 @@
                   href: ./office-365-security/quarantine-email-messages.md
                 - name: Überwachungsberichte in EOP als eigenständige Lösung
                   href: ./office-365-security/auditing-reports-in-eop.md
-            - name: Office 365 Advanced Threat Protection
+            - name: Defender für Office 365
               href: ./office-365-security/office-365-atp.md
-            - name: Neuerungen in Office 365 ATP
+            - name: Neuerungen in Defender für Office 365
               href: office-365-security/whats-new-in-office-365-atp.md
-            - name: 'ATP für SharePoint, OneDrive und Microsoft Teams'
+            - name: 'Defender für Office 365 für SharePoint, OneDrive und Microsoft Teams'
               href: ./office-365-security/atp-for-spo-odb-and-teams.md
             - name: Das neue Microsoft 365 Security Center
               href: ./mtp/overview-security-center.md
@@ -336,9 +336,9 @@
               href: ./office-365-security/anti-phishing-protection.md
             - name: Antispoofingschutz
               href: ./office-365-security/anti-spoofing-protection.md
-            - name: Sichere Anlagen in Office 365 ATP
+            - name: Sichere Anlagen in Defender für Office 365
               href: ./office-365-security/atp-safe-attachments.md
-            - name: Sichere Links in Office 365 ATP
+            - name: Sichere Links in Defender für Office 365
               href: ./office-365-security/atp-safe-links.md
             - name: Ausgehender Spamschutz
               href: ./office-365-security/outbound-spam-controls.md
@@ -368,15 +368,15 @@
                   href: ./office-365-security/set-up-your-eop-service.md
             - name: Schutz vor Bedrohungen
               href: ./office-365-security/protect-against-threats.md
-            - name: Integration von Office 365 ATP in Microsoft Defender ATP
+            - name: Integration von Defender in Office 365 mithilfe von Defender für Endpunkt
               href: ./office-365-security/integrate-office-365-ti-with-wdatp.md
             - name: Berechtigungen im Security & Compliance Center
               href: ./office-365-security/permissions-in-the-security-and-compliance-center.md
             - name: SIEM-Serverintegration
               href: ./office-365-security/siem-server-integration.md
-            - name: SIEM-Integration in Office 365 ATP
+            - name: SIEM-Integration mit Defender für Office 365
               href: ./office-365-security/siem-integration-with-office-365-ti.md
-            - name: Konfigurieren der ATP Antiphishing-Richtlinien
+            - name: Konfigurieren von Anti-Phishing-Richtlinien
               href: ./office-365-security/configure-atp-anti-phishing-policies.md
             - name: Konfigurieren von Richtlinien für Antischadsoftware
               href: ./office-365-security/configure-anti-malware-policies.md
@@ -384,7 +384,7 @@
               href: ./office-365-security/configure-your-spam-filter-policies.md
             - name: Konfigurieren von Verbindungsfiltern
               href: ./office-365-security/configure-the-connection-filter-policy.md
-            - name: Konfigurieren globaler Einstellungen für sichere Links in Office 365 ATP
+            - name: Konfigurieren globaler Einstellungen für sichere Links in Defender für Office 365
               href: ./office-365-security/configure-global-settings-for-safe-links.md
             - name: Konfigurieren der Junk-E-Mail-Einstellungen für Exchange Online-Postfächer
               href: ./office-365-security/configure-junk-email-settings-on-exo-mailboxes.md
@@ -400,19 +400,19 @@
               href: ./office-365-security/email-validation-and-authentication.md
             - name: Freigeben des Benutzerzugriffs auf das Security Center
               href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md
-            - name: Sichere Dokumente in Office 365 ATP
+            - name: Sichere Dokumente in Defender für Office 365
               href: ./office-365-security/safe-docs.md
-            - name: Einrichten von Richtlinien für sichere Links in Office 365 ATP
+            - name: Einrichten von Richtlinien für sichere Links in Defender für Office 365
               href: ./office-365-security/set-up-atp-safe-links-policies.md
-            - name: Einrichten von Richtlinien für sichere Anlagen in Office 365 ATP
+            - name: Einrichten von Richtlinien für sichere Anlagen in Defender für Office 365
               href: ./office-365-security/set-up-atp-safe-attachments-policies.md
             - name: Einrichten von SPF zum Verhindern von Spoofing
               href: ./office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md
             - name: Richtlinien für Benutzerübermittlungen
               href: ./office-365-security/user-submission.md
-            - name: Benutzertags in Office 365 ATP
+            - name: Benutzertags in Defender für Office 365
               href: ./office-365-security/user-tags.md
-            - name: 'Aktivieren von ATP für SharePoint, OneDrive und Microsoft Teams'
+            - name: 'Defender für Office 365 für SharePoint, OneDrive und Microsoft Teams aktivieren'
               href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
             - name: Verwenden von DKIM zum Überprüfen ausgehender E-Mails
               href: ./office-365-security/use-dkim-to-validate-outbound-email.md
@@ -424,7 +424,7 @@
               href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
             - name: Erstellen von Teamwebsites in einer Entwicklungs-/Testumgebung für eine politische Kampagne
               href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
-            - name: Benutzertags in Office 365 ATP
+            - name: Benutzertags in Defender für Office 365
               href: ./office-365-security/user-tags.md
             - name: S/MIME
               href: ./office-365-security/s-mime-for-message-signing-and-encryption.md
@@ -459,9 +459,9 @@
               href: ./office-365-security/preset-security-policies.md
             - name: Konfigurationsanalyse für voreingestellte Sicherheitsrichtlinien
               href: ./office-365-security/configuration-analyzer-for-security-policies.md
-            - name: Angriffssimulator in Office 365 ATP
+            - name: Angriffssimulator in Defender für Office 365
               href: ./office-365-security/attack-simulator.md
-            - name: Empfohlene Einstellungen für das Konfigurieren von EOP und Office 365 ATP Security
+            - name: Empfohlene Einstellungen für das Konfigurieren von EOP und Defender für Office 365 Security
               href: ./office-365-security/recommended-settings-for-eop-and-office365-atp.md
             - name: Bewährte Methoden für das Konfigurieren von EOP
               href: ./office-365-security/best-practices-for-configuring-eop.md
@@ -513,7 +513,7 @@
               href: ./office-365-security/campaigns.md
             - name: Untersuchen bösartiger E-Mails
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
-            - name: Anzeigen von ATP-Berichten im Security & Compliance Center
+            - name: Ansicht von Berichten im Security & Compliance Center
               href: ./office-365-security/view-reports-for-atp.md
             - name: Anzeigen von Details und Ergebnissen einer automatischen Untersuchung
               href: ./office-365-security/air-view-investigation-results.md
@@ -553,7 +553,7 @@
               href: ./office-365-security/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md
             - name: Einblick in die Warteschlange
               href: ./office-365-security/mfi-queue-alerts-and-queues.md
-            - name: 'Exemplarische Vorgehensweise: ATP Erkenntnisse der Spoofintelligenz'
+            - name: 'Exemplarische Vorgehensweise: Erkenntnisse der Spoofintelligenz'
               href: ./office-365-security/walkthrough-spoof-intelligence-insight.md
         - name: Reagieren
           items:

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c0abd8db3084630a6f848f740f5b1387dc58b704
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 6b575573753ef270b5936c315c8bbf3acf9e4a7f
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208187"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919699"
 ---
 # <a name="securities-and-exchange-commission-sec-rule-17a-4f-united-states"></a>Securities and Exchange Commission (sec) Rule 17a-4 (f) Vereinigte Staaten
 
@@ -39,10 +39,10 @@ Microsoft Azure unveränderlicher BLOB-Speicher mit Richtlinien Sperre und Micro
 
 Zur Bewertung von Azure und Office 365 Compliance mit der SEC-Regel 17a-4 (f) behielt Microsoft eine unabhängige Bewertungs Firma, die sich auf die Verwaltung von Datensätzen und die Information Governance spezialisiert hat. Im Ergebnisbericht für:
 
-- **Azure**: [SEC 17a-4 (f) Compliance Assessment: Microsoft Azure Speicher](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=19b08fd4-d276-43e8-9461-715981d0ea20&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports), validierte der Benutzer, dass [Azure unveränderlicher BLOB-Speicher](https://docs.microsoft.com/azure/storage/blobs/storage-blob-immutable-storage) mit der Richtlinien Sperroption, wenn zeitbasierte BLOBs in einem nicht löschbaren und nicht wiederbeschreibbaren (Worm)-Format aufbewahrt werden, die unveränderlichen Speicheranforderungen der SEC-Regel erfüllt. Jedes BLOB (Record) wird vor der Änderung, Überschreibung oder Löschung geschützt, bis der erforderliche Aufbewahrungszeitraum abgelaufen ist und alle zugehörigen rechtlichen Aufbewahrungspflichten freigegeben wurden. Software Anbieter und Partner mit vertraulichen Arbeitslasten können jetzt auf Azure unveränderlichen BLOB-Speicher als Onestop-Cloud-Lösung für die Aufbewahrung von Datensätzen und den unveränderlichen Speicher zurückgreifen. Finanzinstitute können jetzt Ihre eigenen Anwendungen erstellen, indem Sie diese Funktionen nutzen und gleichzeitig kompatibel bleiben.
-- **Office 365**: [verwenden Sie Exchange Online zur Einhaltung von SEC 17a-4](https://docs.microsoft.com/office365/securitycompliance/use-exchange-online-to-comply-with-sec-rule-17a-4), der bestätigte [, dass Office 365 mit der Aufbewahrungs Sperre](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements) Archivierungsfunktionen enthält, mit denen regulierte Kunden, einschließlich Broker-Dealer, Daten so speichern können, dass Sie die Anforderungen der Datensatzaufbewahrung an die SEC erfüllen. Mithilfe von Aufbewahrungsrichtlinien in Office 365 erhalten Sie eine breite Palette von Daten, einschließlich e-Mail, Voicemail, freigegebene Dokumente, Sofortnachrichten und Daten von Drittanbietern. Die Archivierung in Office 365 ermöglicht es Kunden insbesondere, globale oder granulare Messaging-Aufbewahrungsrichtlinien festzulegen, um Daten für einen bestimmten Zeitraum und darüber hinaus in einem nicht wiederbeschreibbaren, nicht löschbaren Format zu speichern.
+- **Azure** : [SEC 17a-4 (f) Compliance Assessment: Microsoft Azure Speicher](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=19b08fd4-d276-43e8-9461-715981d0ea20&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports), validierte der Benutzer, dass [Azure unveränderlicher BLOB-Speicher](https://docs.microsoft.com/azure/storage/blobs/storage-blob-immutable-storage) mit der Richtlinien Sperroption, wenn zeitbasierte BLOBs in einem nicht löschbaren und nicht wiederbeschreibbaren (Worm)-Format aufbewahrt werden, die unveränderlichen Speicheranforderungen der SEC-Regel erfüllt. Jedes BLOB (Record) wird vor der Änderung, Überschreibung oder Löschung geschützt, bis der erforderliche Aufbewahrungszeitraum abgelaufen ist und alle zugehörigen rechtlichen Aufbewahrungspflichten freigegeben wurden. Software Anbieter und Partner mit vertraulichen Arbeitslasten können jetzt auf Azure unveränderlichen BLOB-Speicher als Onestop-Cloud-Lösung für die Aufbewahrung von Datensätzen und den unveränderlichen Speicher zurückgreifen. Finanzinstitute können jetzt Ihre eigenen Anwendungen erstellen, indem Sie diese Funktionen nutzen und gleichzeitig kompatibel bleiben.
+- **Microsoft 365** : [SEC 17a-4 (f), FINRA 4511 (c) und CFTC 1.31 (c)-(d)](retention-regulatory-requirements.md#sec-17a-4f-finra-4511c-and-cftc-131c-d), Microsoft 365 enthält Archivierungs Features, mit denen regulierte Kunden, einschließlich Broker-Dealer, Daten so speichern können, dass Sie die Anforderungen an die Datensatzaufbewahrung erfüllen. Mithilfe von Aufbewahrungsfunktionen in Microsoft 365 können Sie eine Vielzahl von Daten, einschließlich e-Mail, Voicemail, freigegebene Dokumente, Sofortnachrichten und Daten von Drittanbietern, beibehalten. Die Archivierung in Microsoft 365 ermöglicht es Kunden insbesondere, globale oder granulare Messaging-Aufbewahrungsrichtlinien festzulegen, um Daten für einen bestimmten Zeitraum und darüber hinaus in einem nicht wiederbeschreibbaren, nicht löschbaren Format zu speichern.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>In-Scope-Cloud-Dienste von Microsoft
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Office 365](https://aka.ms/Office365ComplianceOfferings)
@@ -71,9 +71,9 @@ Erstellen eines steuerungsmodells für die Risikobewertung von Microsoft-Cloud-D
 
 Verwenden Sie Groß-/Kleinschreibung, Lernprogramme und andere Ressourcen, um Azure-Lösungen für Finanzdienstleistungen zu erstellen. [Weitere Informationen](https://docs.microsoft.com/azure/industry/financial/)
 
-## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Bewerten des Risikos mithilfe von Microsoft Compliance-Manager
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Verwenden von Microsoft Compliance-Manager zur Einschätzung des Risikos
 
-[Microsoft Compliance Manager](compliance-manager.md) ist ein Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) , mit dem Sie die Compliance-Haltung ihrer Organisation besser verstehen und Maßnahmen zur Verringerung von Risiken unterstützen können. Compliance-Manager bietet eine Premium-Vorlage für die Erstellung einer Bewertung für diese Verordnung. Suchen Sie die Vorlage auf der Seite " **Bewertungs Vorlagen** " im Compliance-Manager. Hier erfahren Sie, wie Sie [Assessments im Compliance-Manager erstellen](compliance-manager-assessments.md).
+[Microsoft Compliance Manager](compliance-manager.md) ist eine Funktion im [Microsoft 365 Compliance Center, die Ihnen](microsoft-365-compliance-center.md) hilft, die Compliance-Position Ihres Unternehmens zu verstehen und Maßnahmen zu ergreifen, um Risiken zu reduzieren. Compliance Manager bietet eine Premiumvorlage für die Erstellung einer Bewertung für diese Verordnung. Suchen Sie die Vorlage auf der Seite **Bewertungsvorlagen** im Compliance Manager. Erfahren Sie, wie Sie [Bewertungen in Compliance Manager erstellen](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressourcen
 

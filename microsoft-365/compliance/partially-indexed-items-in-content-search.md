@@ -1,5 +1,5 @@
 ---
-title: Teilweise indizierte Elemente in der Inhaltssuche
+title: Teilweise indizierte Elemente in der Inhaltssuche und anderen eDiscovery-Tools
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -20,58 +20,56 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
-description: Informationen zu nicht indizierten Elementen in Exchange und SharePoint, die Sie in eine Inhaltssuche einschließen können, die über das Security & Compliance Center ausgeführt wird.
-ms.openlocfilehash: d4d9cfec03c4d7ca5af7ee68b077985ffb5d97dc
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+description: Informationen zu nicht indizierten Elementen in Exchange und SharePoint, die Sie in eine eDiscovery-Suche einbeziehen können, die Sie im Microsoft 365 Compliance Center ausführen.
+ms.openlocfilehash: 34758ae904678d194e889a4f1b65606d2420a3c7
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358557"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920299"
 ---
-# <a name="partially-indexed-items-in-content-search"></a>Teilweise indizierte Elemente in der Inhaltssuche
+# <a name="partially-indexed-items-in-ediscovery"></a>Teilweise indizierte Elemente in eDiscovery
 
-Eine Inhaltssuche, die Sie im Security & Compliance Center ausführen, enthält automatisch teilweise indizierte Elemente in den geschätzten Suchergebnissen, wenn Sie eine Suche ausführen. Teilweise indizierte Elemente sind Exchange-Postfachelemente und Dokumente in SharePoint und OneDrive für Unternehmen Websites, die aus irgendeinem Grund nicht vollständig für die Suche indiziert wurden. In Exchange enthält ein teilweise indiziertes Element normalerweise eine Datei (eines Dateityps, der nicht indiziert werden kann), die an eine e-Mail-Nachricht angefügt ist. Hier sind einige andere Gründe, warum Elemente nicht für die Suche indiziert werden können und als teilweise indizierte Elemente zurückgegeben werden, wenn Sie eine Suche ausführen: 
+Eine eDiscovery-Suche, die Sie im Microsoft 365 Compliance Center ausführen, enthält automatisch teilweise indizierte Elemente in den geschätzten Suchergebnissen, wenn Sie eine Suche ausführen. Teilweise indizierte Elemente sind Exchange-Postfachelemente und Dokumente in SharePoint und OneDrive für Unternehmen Websites, die aus irgendeinem Grund nicht vollständig für die Suche indiziert wurden. In Exchange enthält ein teilweise indiziertes Element normalerweise eine Datei (eines Dateityps, die nicht indiziert werden kann), die an eine e-Mail-Nachricht angefügt ist. Hier sind einige andere Gründe, warum Elemente nicht für die Suche indiziert werden können und als teilweise indizierte Elemente zurückgegeben werden, wenn Sie eine eDiscovery-Suche ausführen:
   
 - Der Dateityp wird nicht erkannt oder wird nicht für die Indizierung unterstützt.
-    
--  Nachrichten weisen eine angefügte Datei ohne einen gültigen Handler auf, beispielsweise Bilddateien; Dies ist die häufigste Ursache für teilweise indizierte e-Mail-Elemente. 
-    
+
+- Nachrichten weisen eine angefügte Datei ohne einen gültigen Handler auf, beispielsweise Bilddateien; Dies ist die häufigste Ursache für teilweise indizierte e-Mail-Elemente.
+
 - Der Dateityp wird für die Indizierung unterstützt, aber es ist ein Indizierungsfehler für eine bestimmte Datei aufgetreten.
-    
+
 - Die E-Mail enthält zu viele Dateien im Anhang.
-    
+
 - Die an die E-Mail angehängte Datei ist zu groß.
-    
+
 - Eine Datei wurde mit Technologien von anderen Anbietern als Microsoft verschlüsselt.
-    
+
 - Eine Datei ist kennwortgeschützt.
-    
+
 > [!NOTE]
-> Die meisten Organisationen haben weniger als 1% des Inhalts auf dem Datenträger und weniger als 12% nach der Größe, die teilweise indiziert ist. Der Grund für den Unterschied zwischen Volumen und Größe besteht darin, dass größere Dateien eine höhere Wahrscheinlichkeit enthalten, Inhalte zu enthalten, die nicht vollständig indiziert werden können. 
+> Die meisten Organisationen haben weniger als 1% des Inhalts auf dem Datenträger und weniger als 12% nach der Größe, die teilweise indiziert ist. Der Grund für den Unterschied zwischen Volumen und Größe besteht darin, dass größere Dateien eine höhere Wahrscheinlichkeit enthalten, Inhalte zu enthalten, die nicht vollständig indiziert werden können.
   
 Für rechtliche Untersuchungen muss Ihre Organisation möglicherweise teilweise indizierte Elemente überprüfen. Sie können auch angeben, ob teilweise indizierte Elemente beim Exportieren von Suchergebnissen auf einen lokalen Computer oder beim Vorbereiten der Ergebnisse für die Analyse mit Advanced eDiscovery angegeben werden sollen. Weitere Informationen finden Sie unter unter [Suchen von teilweise indizierten Elementen in eDiscovery](investigating-partially-indexed-items-in-ediscovery.md).
   
 ## <a name="file-types-not-indexed-for-search"></a>Für die Suche nicht indizierte Dateitypen
 
-Bestimmte Dateitypen wie Bitmap- oder MP3-Dateien enthalten keinen zu indizierenden Inhalt. Folglich führen die Such Indizierungsserver in Exchange und SharePoint keine Volltextindizierung für diese Dateitypen aus. Diese Dateitypen werden als nicht unterstützte Dateitypen betrachtet. Es gibt außerdem Dateitypen, für die die Volltextindizierung deaktiviert wurde (entweder standardmäßig oder durch den Administrator). Nicht unterstützte und deaktivierte Dateitypen werden in Inhalts suchen als nicht indizierte Elemente bezeichnet. Wie bereits erwähnt, können teilweise indizierte Elemente in die Gruppe der Suchergebnisse einbezogen werden, wenn Sie eine Suche ausführen, die Suchergebnisse auf einen lokalen Computer exportieren oder Suchergebnisse für Advanced eDiscovery vorbereiten. 
+Bestimmte Dateitypen wie Bitmap- oder MP3-Dateien enthalten keinen zu indizierenden Inhalt. Folglich führen die Such Indizierungsserver in Exchange und SharePoint keine Volltextindizierung für diese Dateitypen aus. Diese Dateitypen werden als nicht unterstützte Dateitypen betrachtet. Es gibt außerdem Dateitypen, für die die Volltextindizierung deaktiviert wurde (entweder standardmäßig oder durch den Administrator). Nicht unterstützte und deaktivierte Dateitypen werden in Inhalts suchen als nicht indizierte Elemente bezeichnet. Wie bereits erwähnt, können teilweise indizierte Elemente in die Gruppe der Suchergebnisse einbezogen werden, wenn Sie eine Suche ausführen, die Suchergebnisse auf einen lokalen Computer exportieren oder Suchergebnisse für Advanced eDiscovery vorbereiten.
   
 Eine Liste von unterstützten und deaktivierten Dateiformaten finden Sie in den folgenden Themen:
   
 - **Exchange**  -  [Von der Exchange-Suche indizierte Dateiformate](https://go.microsoft.com/fwlink/p/?LinkID=386618)
-    
-- **Exchange**  -  [Get-SearchDocumentFormat](https://go.microsoft.com/fwlink/p/?LinkID=724037)
-    
-- **SharePoint**  -  [Standardmäßig durchforstete Dateinamenerweiterungen und analysierte Dateitypen in SharePoint](https://go.microsoft.com/fwlink/p/?LinkID=404033)
-    
 
+- **Exchange**  -  [Get-SearchDocumentFormat](https://go.microsoft.com/fwlink/p/?LinkID=724037)
+
+- **SharePoint**  -  [Standardmäßig durchforstete Dateinamenerweiterungen und analysierte Dateitypen in SharePoint](https://go.microsoft.com/fwlink/p/?LinkID=404033)
   
 ## <a name="messages-and-documents-with-partially-indexed-file-types-can-be-returned-in-search-results"></a>Nachrichten und Dokumente mit teilweise indizierten Dateitypen können in den Suchergebnissen zurückgegeben werden
 
-Nicht jede e-Mail-Nachricht mit einer teilweise indizierten Dateianlage oder jedem teilweise indizierten SharePoint-Dokument wird automatisch als teilweise indiziertes Element zurückgegeben. Das liegt daran, dass andere Nachrichten-oder Dokumenteigenschaften, wie die **Subject** -Eigenschaft in e-Mail-Nachrichten und die Eigenschaften **Title** oder **Author** für Dokumente indiziert und zur Durchsuchung verfügbar sind. Eine Stichwortsuche für "Financial" gibt beispielsweise Elemente mit einer teilweise indizierten Dateianlage zurück, wenn dieses Stichwort im Betreff einer e-Mail-Nachricht oder im Dateinamen oder Titel eines Dokuments angezeigt wird. Wenn das Schlüsselwort jedoch nur im Textkörper der Datei angezeigt wird, wird die Nachricht oder das Dokument als teilweise indiziertes Element zurückgegeben. 
+Nicht jede e-Mail-Nachricht mit einer teilweise indizierten Dateianlage oder jedem teilweise indizierten SharePoint-Dokument wird automatisch als teilweise indiziertes Element zurückgegeben. Das liegt daran, dass andere Nachrichten-oder Dokumenteigenschaften, wie die **Subject** -Eigenschaft in e-Mail-Nachrichten und die Eigenschaften **Title** oder **Author** für Dokumente indiziert und zur Durchsuchung verfügbar sind. Eine Stichwortsuche für "Financial" gibt beispielsweise Elemente mit einer teilweise indizierten Dateianlage zurück, wenn dieses Stichwort im Betreff einer e-Mail-Nachricht oder im Dateinamen oder Titel eines Dokuments angezeigt wird. Wenn das Schlüsselwort jedoch nur im Textkörper der Datei angezeigt wird, wird die Nachricht oder das Dokument als teilweise indiziertes Element zurückgegeben.
   
 Ebenso werden Nachrichten mit teilweise indizierten Dateianlagen und Dokumenten eines teilweise indizierten Dateityps in Suchergebnisse eingeschlossen, wenn andere Nachrichten-oder Dokumenteigenschaften, die indiziert und durchsuchbar sind, die Suchkriterien erfüllen. Zu den Nachrichteneigenschaften, die für die Suche indiziert werden, gehören Sende- und Empfangsdatum, Absender und Empfänger, Dateiname von Anhängen sowie der Nachrichtentext. Zu den für die Suche indizierten Dokumenteigenschaften gehören erstellte und geänderte Daten. Obwohl eine Nachrichtenanlage möglicherweise ein teilweise indiziertes Element ist, wird die Nachricht in die regulären Suchergebnisse eingeschlossen, wenn der Wert anderer Nachrichten-oder Dokumenteigenschaften mit den Suchkriterien übereinstimmt.
   
-Eine Liste der e-Mail-und Dokumenteigenschaften, nach denen Sie mithilfe der Suchfunktion im Security & Compliance Center suchen können, finden Sie unter [Keyword-Abfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md).
+Eine Liste der e-Mail-und Dokumenteigenschaften, nach denen Sie mithilfe der Suchfunktion im Security & Compliance Center suchen können, finden Sie unter [Keyword-Abfragen und Suchbedingungen für eDiscovery](keyword-queries-and-search-conditions.md).
   
 ## <a name="partially-indexed-items-included-in-the-search-results"></a>Teilweise indizierte Elemente, die in den Suchergebnissen enthalten sind
 
@@ -79,17 +77,17 @@ Ihre Organisation muss möglicherweise eine zusätzliche Analyse für teilweise 
   
 Beachten Sie bei teilweise indizierten Elementen Folgendes:
   
-- Wenn Sie eine Inhaltssuche ausführen, werden die Gesamtzahl und die Größe der teilweise indizierten Exchange-Elemente (die von der Suchabfrage zurückgegeben werden) in Suchstatistiken im Detailbereich angezeigt und als **indizierte Elemente**gekennzeichnet. Beachten Sie, dass Statistiken zu teilweise indizierten Elementen, die im Detailbereich angezeigt werden, nicht teilweise indizierte Elemente in SharePoint oder OneDrive enthalten.
-    
+- Wenn Sie eine eDiscovery-Suche ausführen, werden die Gesamtzahl und die Größe der teilweise indizierten Exchange-Elemente (die von der Suchabfrage zurückgegeben werden) in Suchstatistiken im Detailbereich angezeigt und als **indizierte Elemente** gekennzeichnet. Statistiken zu teilweise indizierten Elementen, die im Detailbereich angezeigt werden, enthalten keine teilweise indizierten Elemente in SharePoint oder OneDrive.
+
 - Wenn es sich bei der Suche, aus der Sie Ergebnisse exportieren, um die Suche nach bestimmten Inhaltsspeicherorten oder um alle inhaltsspeicherorte in Ihrer Organisation handelt, werden nur die nicht indizierten Elemente aus Inhaltsspeicherorten exportiert, die Elemente enthalten, die mit den Suchkriterien übereinstimmen. In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. Der Grund hierfür ist, dass das Exportieren von teilweise indizierten Elementen aus vielen Orten in der Organisation die Wahrscheinlichkeit von Exportfehlern erhöht und die Zeit für den Export und den Download der Suchergebnisse erhöht.
-    
-    Um teilweise indizierte Elemente aus allen Inhaltsspeicherorten für eine Suche zu exportieren, konfigurieren Sie die Suche so, dass alle Elemente zurückgegeben werden (indem Sie Stichwörter aus der Suchabfrage entfernen), und exportieren Sie dann nur teilweise indizierte Elemente, wenn Sie die Suchergebnisse exportieren (indem Sie auf **nur Elemente mit einem unbekannten Format, verschlüsselt oder aus anderen Gründen** unter **Ausgabeoptionen**indiziert wurden).
-    
+
+    Um teilweise indizierte Elemente aus allen Inhaltsspeicherorten für eine Suche zu exportieren, konfigurieren Sie die Suche so, dass alle Elemente zurückgegeben werden (indem Sie Stichwörter aus der Suchabfrage entfernen), und exportieren Sie dann nur teilweise indizierte Elemente, wenn Sie die Suchergebnisse exportieren (indem Sie auf **nur Elemente mit einem unbekannten Format, verschlüsselt oder aus anderen Gründen** unter **Ausgabeoptionen** indiziert wurden).
+
 - Wenn Sie alle Postfachelemente in die Suchergebnisse einschließen möchten oder wenn eine Suchabfrage keine Stichwörter oder nur einen Datumsbereich angibt, werden teilweise indizierte Elemente möglicherweise nicht in die PST-Datei kopiert, die die teilweise indizierten Elemente enthält. Dies liegt daran, dass alle Elemente, einschließlich der teilweise indizierten Elemente, automatisch in die regulären Suchergebnisse eingeschlossen werden.
-    
+
 - Teilweise indizierte Elemente stehen in der Vorschau nicht zur Verfügung. Sie müssen die Suchergebnisse exportieren, um teilweise indizierte Elemente anzuzeigen, die von der Suche zurückgegeben werden.
 
-Wenn Sie außerdem Suchergebnisse exportieren und teilweise indizierte Elemente in den Export einschließen, werden teilweise indizierte Elemente aus SharePoint-Elementen in einen Ordner mit dem Namen "nicht **gecrawlt**" exportiert. Wenn Sie teilweise indizierte Exchange-Elemente exportieren, werden Sie unterschiedlich exportiert, je nachdem, ob die teilweise indizierten Elemente mit der Suchabfrage und der Konfiguration der Exporteinstellungen übereinstimmen. 
+Wenn Sie außerdem Suchergebnisse exportieren und teilweise indizierte Elemente in den Export einschließen, werden teilweise indizierte Elemente aus SharePoint-Elementen in einen Ordner mit dem Namen "nicht **gecrawlt** " exportiert. Wenn Sie teilweise indizierte Exchange-Elemente exportieren, werden Sie unterschiedlich exportiert, je nachdem, ob die teilweise indizierten Elemente mit der Suchabfrage und der Konfiguration der Exporteinstellungen übereinstimmen. 
 
 In der folgenden Tabelle ist das Export Verhalten von indizierten und teilweise indizierten Elementen dargestellt, und es wird angegeben, ob für die verschiedenen Konfigurationseinstellungen für den Export die einzelnen Elemente enthalten sind.
 
@@ -108,9 +106,9 @@ Wenn Sie sich entschließen, teilweise indizierte Elemente beim Exportieren der 
   
 Eine Ausnahme zu dieser Regel besteht darin, dass Sie einen abfragebasierten Haltebereich erstellen, der einem eDiscovery-Fall zugeordnet ist. Wenn Sie einen abfragebasierten eDiscovery-Speicher erstellen, werden alle teilweise indizierten Elemente in der Warteschleife gespeichert. Dies umfasst teilweise indizierte Elemente, die nicht mit den Suchabfrage Kriterien und teilweise indizierten Elementen übereinstimmen, die möglicherweise außerhalb einer Datumsbereichs Bedingung liegen. Weitere Informationen zum Erstellen von abfragebasierten eDiscovery-Archiven finden Sie unter [Erstellen eines eDiscovery-Haltestatus](create-ediscovery-holds.md).
   
-## <a name="indexing-limits-for-messages-in-content-search"></a>Indizierungs Grenzwerte für Nachrichten in der Inhaltssuche
+## <a name="indexing-limits-for-messages"></a>Indizierungs Grenzwerte für Nachrichten
 
-In der folgenden Tabelle werden die Grenzwerte für die Indizierung beschrieben, die möglicherweise dazu führen, dass eine e-Mail-Nachricht als teilweise indiziertes Element in einer Inhaltssuche in Office 365 zurückgegeben wird.
+In der folgenden Tabelle werden die Grenzwerte für die Indizierung beschrieben, die dazu führen können, dass eine e-Mail-Nachricht als teilweise indiziertes Element in einer eDiscovery-Suche in Microsoft 365 zurückgegeben wird.
   
 Eine Liste der Indizierungs Grenzwerte für SharePoint-Dokumente finden Sie unter [Such Grenzwerte für SharePoint Online](https://docs.microsoft.com/sharepoint/search-limits).
   
@@ -135,13 +133,12 @@ Eine Liste der Indizierungs Grenzwerte für SharePoint-Dokumente finden Sie unte
 
 - Obwohl ein Dateityp für die Indizierung unterstützt wird und indiziert wird, kann es Indizierungs-oder Suchfehler geben, die dazu führen, dass eine Datei als teilweise indiziertes Element zurückgegeben wird. Beispielsweise kann das Durchsuchen einer sehr großen Excel-Datei teilweise erfolgreich sein (da die ersten 4 MB indiziert sind), tritt dann jedoch ein Fehler auf, da die Dateigrößenbeschränkung überschritten wird. In diesem Fall ist es möglich, dass die gleiche Datei mit den Suchergebnissen und als teilweise indiziertes Element zurückgegeben wird.
 
-- Mit Microsoft-Technologien verschlüsselte Dateianlagen werden indiziert und können durchsucht werden. Dateien, die mit nicht-Microsoft-Technologien verschlüsselt sind, sind teilweise indiziert.
+- Dateien, die mit [Microsoft-Verschlüsselungstechnologien](encryption.md) verschlüsselt sind und an eine e-Mail-Nachricht angehängt sind, die den Kriterien einer Suche entspricht, können in der Vorschau angezeigt und beim Exportieren entschlüsselt werden. Zu diesem Zeitpunkt werden Dateien, die mit Microsoft-Verschlüsselungstechnologien verschlüsselt (und in SharePoint oder OneDrive für Unternehmen gespeichert sind) teilweise indiziert.
 
 - Mit S/MIME verschlüsselte e-Mail-Nachrichten sind teilweise indiziert. Dazu gehören verschlüsselte Nachrichten mit oder ohne Dateianlagen.
 
-- Durch die Verwaltung von Informationsrechten (Information Rights Management, IRM) geschützte Nachrichten werden indiziert und daher in die Suchergebnisse eingeschlossen, wenn sie der Suchabfrage entsprechen.
+- E-Mail-Nachrichten, die mit Azure Rights Management geschützt werden, werden indiziert und werden in die Suchergebnisse eingeschlossen, wenn Sie mit der Suchabfrage übereinstimmen. Durch Rechte geschützte e-Mail-Nachrichten werden entschlüsselt und können in der Vorschau angezeigt und exportiert werden. Für diese Funktionalität ist es erforderlich, dass Ihnen die RMS-Entschlüsselungs Rolle zugewiesen ist, die standardmäßig der Rollengruppe eDiscover-Manager zugewiesen ist.
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Weitere Informationen
 
 [Untersuchen von teilweise indizierten Elementen in eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)
-

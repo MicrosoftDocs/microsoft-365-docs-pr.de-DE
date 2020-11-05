@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Hier erfahren Sie, wie Sie Teams mit grundlegendem Schutz bereitstellen.
-ms.openlocfilehash: ac6974b5625a4eff0fcd11a17c4607a7c2caf97f
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 76b60a61812c4d30884825b41ee7220d6686b58b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398865"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845300"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Konfigurieren von Teams mit grundlegendem Schutz
 
@@ -33,13 +33,13 @@ In diesem Artikel wird erläutert, wie Teams mit eine grundlegenden Schutzebene 
 
 Als Erstes wird empfohlen, grundlegende Identitäts- und Gerätezugriffsrichtlinien zu konfigurieren. Einzelheiten hierzu finden Sie unter [Richtlinienempfehlungen zum Schützen von Teams-Chats, -Gruppen und -Dateien](../security/office-365-security/teams-access-policies.md).
 
-Außerdem empfehlen wir die Aktivierung der grundlegenden erweiterten Bedrohungsschutzfeatures, um die Schadsoftware in Dokumenten, Anlagen und Links zu schützen. Wir empfehlen, jede der Optionen in der folgenden Tabelle zu aktivieren.
+Außerdem empfehlen wir, die grundlegenden Defender für Office 365-Features zum Schutz vor Schadsoftware in Dokumenten, Anlagen und Links zu aktivieren. Wir empfehlen, jede der Optionen in der folgenden Tabelle zu aktivieren.
 
 |Option|Informationen|
 |:------|:-----------|
-|Sichere Anlagen in ATP für SPO, OneDrive und Teams|[Office 365 ATP-Feature für sichere Anlagen](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br>[Office 365 ATP für SharePoint, OneDrive und Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)|
-|Sichere Dokumente in ATP|[Sichere Dokumente in Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)|
-|ATP-Feature für sichere Links für Teams|[Office 365 Sichere Links in Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links-for-teams)<br>[ATP-sichere Links in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)|
+|Sichere Anlagen für SPO, OneDrive und Microsoft Teams|[Sichere Anlagen](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br>[Defender für Office 365 – SharePoint, OneDrive und Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)|
+|Sichere Dokumente|[Sichere Dokumente in Microsoft Defender für Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)|
+|Sichere Links für Microsoft Teams|[Office 365 Sichere Links in Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links-for-teams)<br>[Sichere Links](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)|
 
 ## <a name="teams-guest-sharing"></a>Teams-Gastfreigabe
 
@@ -88,7 +88,7 @@ So aktualisieren Sie die Freigabeeinstellungen der Website
 2. Klicken Sie auf **In SharePoint öffnen**.
 3. Klicken Sie in der Symbolleiste der SharePoint-Website auf das Symbol "Einstellungen" und anschließend auf **Websiteberechtigungen**.
 4. Klicken Sie im Bereich **Websiteberechtigungen** unter **Freigabeeinstellungen** auf **Freigabeeinstellungen ändern**.
-5. Wählen Sie unter **Freigabeberechtigungen** die Option **Websitebesitzer und -mitglieder sowie Personen mit Bearbeitungsberechtigungen können Dateien und Ordner freigeben, aber nur Websitebesitzer können die Website freigeben**, und klicken Sie dann auf **Speichern**.
+5. Wählen Sie unter **Freigabeberechtigungen** die Option **Websitebesitzer und -mitglieder sowie Personen mit Bearbeitungsberechtigungen können Dateien und Ordner freigeben, aber nur Websitebesitzer können die Website freigeben** , und klicken Sie dann auf **Speichern**.
 
 ## <a name="additional-protections"></a>Zusätzliche Schutzfunktionen
 

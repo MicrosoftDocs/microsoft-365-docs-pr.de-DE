@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 73d52a91620bc0bd50a310c4085fa821fab80da2
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: bff804e726a62563621b11932e590ffcb631835a
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416355"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920397"
 ---
 # <a name="commodity-futures-trading-commission-cftc-rule-131c-d-united-states"></a>Commodity Futures Trading Commission (CFTC) Rule 1.31 (c-d) Vereinigte Staaten
 
@@ -41,11 +41,11 @@ Um die Azure-Konformität mit der CFTC-Regel 1.31 (c-d) zu bewerten, behielt Mic
 
 ### <a name="microsoft-office-365"></a>Microsoft Office 365
 
-Um Office 365 Einhaltung der CFTC-Regel 1.31 (c-d) zu evaluieren, engagierte sich Microsoft für eine führende unabhängige Anwaltskanzlei, die sich auf regulatorische Probleme spezialisierte, Covington & Burling, LLP. In dem resultierenden Bericht, der [Archivierung in Microsoft Office 365, der Datenaufbewahrung und der Regel 17a-4-Konformität](https://go.microsoft.com/fwlink/?linkid=830440)bestätigte Covington, dass [Office 365 mit der Aufbewahrungs Sperre](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements) Archivierungsfunktionen enthält, mit denen regulierte Kundendaten so speichern können, dass Sie die CFTC-Anforderungen für die Aufbewahrung von Datensätzen erfüllen.
+Um Office 365 Einhaltung der CFTC-Regel 1.31 (c-d) zu evaluieren, engagierte sich Microsoft für eine führende unabhängige Anwaltskanzlei, die sich auf regulatorische Probleme spezialisierte, Covington & Burling, LLP. In dem resultierenden Bericht, der [Archivierung in Microsoft Office 365, der Datenaufbewahrung und der Regel 17a-4-Konformität](https://go.microsoft.com/fwlink/?linkid=830440)bestätigte Covington, dass [Office 365 mit der Aufbewahrungs Sperre](retention-preservation-lock.md) Archivierungsfunktionen enthält, mit denen regulierte Kundendaten so speichern können, dass Sie die CFTC-Anforderungen für die Aufbewahrung von Datensätzen erfüllen.
 
 Die Archivierung in Office 365 hilft bei der Beibehaltung einer Vielzahl von Daten, einschließlich e-Mail, Voicemail, freigegebene Dokumente, Sofortnachrichten und Daten von Drittanbietern. Die Archivierung in Office 365 ermöglicht es Kunden insbesondere, globale oder granulare Messaging-Aufbewahrungsrichtlinien festzulegen, um Daten für einen bestimmten Zeitraum und darüber hinaus in einem nicht wiederbeschreibbaren, nicht löschbaren Format zu speichern.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>In-Scope-Cloud-Dienste von Microsoft
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Office 365](https://aka.ms/o365-compliance-framework)
