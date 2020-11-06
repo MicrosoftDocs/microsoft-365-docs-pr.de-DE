@@ -8,7 +8,7 @@ author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.date: 11/04/2020
+ms.date: 11/05/2020
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -21,23 +21,27 @@ description: Erste Schritte mit automatisierten Ermittlungs-und Antwortfunktione
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 7e9b786a9d00a34f5e2e88a8481e82fa8425a501
-ms.sourcegitcommit: 751dc531f0410ee075c179efe409a01664483ee2
+ms.openlocfilehash: 5796cdf21f9dd12c35a2f84422f03503433755b0
+ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48925604"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931936"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Erste Schritte mit der automatisierten Untersuchung und Antwort (Air) in Microsoft Defender für Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-[Microsoft Defender für Office 365](office-365-atp.md) enthält leistungsstarke Funktionen für die automatische Untersuchung und Reaktion (Air), mit denen Sie Zeit und Aufwand für Sicherheitsvorgänge aufsparen können. Wenn Warnungen ausgelöst werden, liegt es an Ihrem Sicherheits Betriebsteam, diese Warnungen zu überprüfen, zu priorisieren und darauf zu reagieren. Das Einhalten des Umfangs eingehender Warnungen kann überwältigend sein. Das Automatisieren einiger dieser Aufgaben kann helfen. Mit Air kann sich Ihr Sicherheits Betriebsteam auf Aufgaben mit höherer Priorität konzentrieren, ohne wichtige ausgelöste Warnungen aus den Augen zu verlieren.
+[Microsoft Defender für Office 365](office-365-atp.md) enthält leistungsstarke Funktionen für die automatische Untersuchung und Reaktion (Air), mit denen Sie Zeit und Aufwand für Sicherheitsvorgänge aufsparen können. Wenn Warnungen ausgelöst werden, liegt es an Ihrem Sicherheits Betriebsteam, diese Warnungen zu überprüfen, zu priorisieren und darauf zu reagieren. Das Einhalten des Umfangs eingehender Warnungen kann überwältigend sein. Das Automatisieren einiger dieser Aufgaben kann helfen. 
+
+Mit Air kann Ihr Security Operations-Team effizienter und effektiver arbeiten. Air-Funktionen umfassen automatisierte Ermittlungsprozesse als Reaktion auf bekannte Bedrohungen, die heute vorhanden sind. Geeignete Korrekturaktionen warten auf die Genehmigung, sodass Ihr Sicherheitseinsatz Team effektiv auf erkannte Bedrohungen reagieren kann. Mit Air kann sich Ihr Sicherheits Betriebsteam auf Aufgaben mit höherer Priorität konzentrieren, ohne wichtige ausgelöste Warnungen aus den Augen zu verlieren.
 
 Inhalt dieses Artikels
 - Der [gesamte Luftstrom](#the-overall-flow-of-air);
 - [Gewusst wie: Abrufen von Luft](#how-to-get-air); und 
 - Die [erforderlichen Berechtigungen](#required-permissions-to-use-air-capabilities) zum Konfigurieren oder Verwenden von Air-Funktionen. 
+
+Dieser Artikel enthält auch die [nächsten Schritte](#next-steps)und Ressourcen, um weitere Informationen zu erhalten.
 
 ## <a name="the-overall-flow-of-air"></a>Der gesamte Luftstrom
 
@@ -45,7 +49,7 @@ Eine Warnung wird ausgelöst, und ein Sicherheits-Textbuch startet eine automati
 
 1. Eine automatisierte Untersuchung wird auf eine der folgenden Arten eingeleitet:
 
-   - Eine [Warnung](https://docs.microsoft.com/microsoft-365/compliance/alert-policies) wird durch etwas Verdächtiges in e-Mails ausgelöst (beispielsweise eine Nachricht, Anlage oder URL). Ein Vorfall wird erstellt. Je nach Art des Vorfalls wird ein [Sicherheits](automated-investigation-response-office.md#security-playbooks) Textbuch ausgeführt, und eine automatische Untersuchung wird gestartet. 
+   - Eine [Warnung wird](#which-alert-policies-trigger-automated-investigations) durch etwas Verdächtiges in e-Mails ausgelöst (beispielsweise eine Nachricht, eine Anlage, eine URL oder ein kompromittiertes Benutzerkonto). Ein Vorfall wird erstellt, und eine automatische Untersuchung wird gestartet. 
 
      --- oder ---
    
@@ -61,7 +65,9 @@ Eine Warnung wird ausgelöst, und ein Sicherheits-Textbuch startet eine automati
 5. Wenn ausstehende Korrekturaktionen genehmigt (oder abgelehnt) werden, wird die automatische Untersuchung abgeschlossen.
 
 > [!IMPORTANT]
-> In Microsoft Defender für Office 365 werden keine Korrekturaktionen automatisch durchgeführt. Abhilfemaßnahmen werden nur nach Genehmigung durch das Sicherheitsteam Ihrer Organisation ausgeführt. Air-Funktionen speichern jedoch die Team Zeit für Sicherheitsvorgänge, indem Sie Korrekturaktionen identifizieren und die erforderlichen Details für eine fundierte Entscheidung bereitstellen.
+> In Microsoft Defender für Office 365 werden keine Korrekturaktionen automatisch durchgeführt. Abhilfemaßnahmen werden nur nach Genehmigung durch das Sicherheitsteam Ihrer Organisation ausgeführt. 
+>
+> Air-Funktionen speichern Sie die Team Zeit für Sicherheitsvorgänge, indem Sie Korrekturaktionen identifizieren und die erforderlichen Details für eine fundierte Entscheidung bereitstellen.
 
 Während und nach jeder automatischen Untersuchung kann Ihr Sicherheits Betriebsteam folgende Aufgaben ausführen:
 
@@ -96,29 +102,35 @@ Stellen Sie außerdem sicher, dass Sie die [Warnungsrichtlinien Ihrer Organisati
 
 ## <a name="which-alert-policies-trigger-automated-investigations"></a>Welche Warnungsrichtlinien lösen automatisierte Untersuchungen aus?
 
-Microsoft 365 bietet zahlreiche integrierte Warnungsrichtlinien, die die Identifizierung von Exchange-Administratorberechtigungen, Malwareaktivitäten, potenziellen externen und internen Bedrohungen sowie Risiken bei der Informationssteuerung ermöglichen. Mehrere der [standardmäßigen Warnungsrichtlinien](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies) können automatisierte Untersuchungen auslösen. Hierzu gehören:
+Microsoft 365 bietet zahlreiche integrierte Warnungsrichtlinien, die die Identifizierung von Exchange-Administratorberechtigungen, Malwareaktivitäten, potenziellen externen und internen Bedrohungen sowie Risiken bei der Informationssteuerung ermöglichen. Mehrere der [standardmäßigen Warnungsrichtlinien](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies) können automatisierte Untersuchungen auslösen. In der folgenden Tabelle werden die Warnungen beschrieben, die automatische Untersuchungen auslösen, deren Schweregrad im Microsoft 365 Security Center und deren Generierung:
 
-- Es wurde ein potenziell böswilliger URL-Klick erkannt
-- Eine e-Mail-Nachricht wird von einem Benutzer als Phishing gemeldet.
-- E-Mail-Nachrichten mit Schadsoftware werden nach der Zustellung entfernt
-- E-Mail-Nachrichten mit Phishing-URLs werden nach der Zustellung entfernt
-- Verdächtige e-Mail-Sende Muster werden erkannt
-- Ein Benutzer wird vom Senden von e-Mails eingeschränkt.
+
+|Warnung  |Severity |So wird die Warnung generiert  |
+|---------|---------|--------|
+|Ein potenziell böswilliger URL-Klick wurde erkannt.     |**High** |Diese Warnung wird generiert, wenn eine der folgenden Situationen auftritt:<br/> – Ein Benutzer, der durch [sichere Links](atp-safe-links.md) in Ihrer Organisation geschützt ist, klickt auf einen bösartigen Link <br/>-Urteils Änderungen für URLs werden von Microsoft Defender für Office 365 identifiziert <br/>-Benutzer überschreiben Warn Seiten für sichere Links (basierend auf der [Richtlinie für sichere Links](set-up-atp-safe-links-policies.md)Ihrer Organisation).<br/><br/> Weitere Informationen zu Ereignissen, die diese Warnung auslösen, finden Sie unter [Einrichten von Richtlinien zu sicheren Links](set-up-atp-safe-links-policies.md).         |
+|Eine e-Mail-Nachricht wird von einem Benutzer als Schadsoftware oder Phishing gemeldet. |**Informations**    |Diese Warnung wird generiert, wenn Benutzer in Ihrer Organisation Nachrichten als Phishing-e-Mails mithilfe des [Berichtsnachrichten-Add-ins](https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-message-add-in)melden. |
+|E-Mail-Nachrichten mit Schadsoftware werden nach der Zustellung entfernt |**Informations**     |Diese Warnung wird generiert, wenn e-Mail-Nachrichten mit Schadsoftware an Postfächer in Ihrer Organisation übermittelt werden. Wenn dieses Ereignis auftritt, entfernt Microsoft die infizierten Nachrichten aus Exchange Online-Postfächern, wobei die [Automatische Bereinigung ohne Stunden](https://docs.microsoft.com/microsoft-365/security/office-365-security/zero-hour-auto-purge)erfolgt.   |
+|E-Mail-Nachrichten mit Phishing-URLs werden nach der Zustellung entfernt     |**Informations**        |Diese Warnung wird generiert, wenn Nachrichten mit Phishing an Postfächer in Ihrer Organisation übermittelt werden. Wenn dieses Ereignis auftritt, entfernt Microsoft die infizierten Nachrichten aus Exchange Online-Postfächern, wobei die [Automatische Bereinigung ohne Stunden](https://docs.microsoft.com/microsoft-365/security/office-365-security/zero-hour-auto-purge)erfolgt.  |
+|Verdächtige e-Mail-Sende Muster werden erkannt     |**Medium**         |Diese Warnung wird generiert, wenn jemand in Ihrer Organisation verdächtige e-Mails gesendet hat und das Risiko besteht, dass e-Mails nicht gesendet werden. Dies ist eine frühzeitige Warnung für das Verhalten, die darauf hindeuten kann, dass das Konto kompromittiert, aber nicht schwer genug ist, um den Benutzer zu beschränken.<br/><br/> Obwohl es selten ist, kann eine von dieser Richtlinie generierte Warnung eine Anomalie sein. Es empfiehlt sich jedoch, zu [überprüfen, ob das Benutzerkonto kompromittiert wurde](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account).  |
+|Ein Benutzer wird vom Senden von e-Mails eingeschränkt.    |**High** |Diese Warnung wird generiert, wenn jemand in Ihrer Organisation vom Senden von ausgehenden e-Mails eingeschränkt ist. Dies ergibt sich normalerweise, wenn ein [e-Mail-Konto kompromittiert wird](responding-to-a-compromised-email-account.md).<br/><br/>Weitere Informationen zu eingeschränkten Benutzern finden Sie unter [Entfernen von blockierten Benutzern aus dem eingeschränkten Benutzerportal in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam).    |
+
+> [!TIP]
+> Weitere Informationen zu Warnungsrichtlinien oder zum Bearbeiten der Standardeinstellungen finden Sie unter [Warnungsrichtlinien im Microsoft 365 Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/alert-policies).
 
 ## <a name="required-permissions-to-use-air-capabilities"></a>Erforderliche Berechtigungen für die Verwendung von Air-Funktionen
 
 Berechtigungen werden über bestimmte Rollen erteilt, wie Sie in der folgenden Tabelle beschrieben werden: 
 
 |Aufgabe |Erforderliche Rolle (n) |
-|--|--|
-|So richten Sie Air-Features ein |Eine der folgenden Rollen: <br/>-Globaler Administrator<br/>-Sicherheits Administrator <br/>Diese Rollen können in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im [Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)zugewiesen werden. |
-|So genehmigen oder ablehnen Sie Empfohlene Aktionen|Eine der folgenden Rollen, die in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im [Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)zugewiesen ist):<br/>-Globaler Administrator <br/>-Sicherheits Administrator<br/>-Sicherheits Leser <br/>--- und ---<br/>-Suchen und löschen (diese Rolle wird nur im [Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)zugewiesen. Möglicherweise müssen Sie dort eine neue Rollengruppe erstellen und die Such-und Lösch Rolle dieser neuen Rollengruppe hinzufügen.)
+|:--|:--|
+|Einrichten von Air-Features |Eine der folgenden Rollen: <br/>-Globaler Administrator<br/>-Sicherheits Administrator <br/>Diese Rollen können in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im [Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)zugewiesen werden. |
+|Starten einer automatisierten Untersuchung <br/><br/>--- oder ---<br/><br/>Genehmigen oder ablehnen empfohlener Aktionen|Eine der folgenden Rollen, die in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im [Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)zugewiesen ist):<br/>-Globaler Administrator <br/>-Sicherheits Administrator<br/>-Sicherheits Leser <br/>--- und ---<br/>-Suchen und löschen (diese Rolle wird nur im [Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)zugewiesen. Möglicherweise müssen Sie dort eine neue Rollengruppe erstellen und die Such-und Lösch Rolle dieser neuen Rollengruppe hinzufügen.) |
 
 ## <a name="required-licenses"></a>Erforderliche Lizenzen
 
-[Microsoft Defender für Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2) -Lizenzen sollte Folgendes zugewiesen werden:
+[Microsoft Defender für Office 365 Plan 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#microsoft-defender-for-office-365-plan-1-and-plan-2) -Lizenzen sollte Folgendes zugewiesen werden:
 - Sicherheitsadministratoren (einschließlich globaler Administratoren)
-- Das Sicherheits Betriebsteam Ihrer Organisation (einschließlich Sicherheits Lesern und Benutzern mit der Rolle "suchen und löschen")
+- Das Sicherheits Betriebsteam Ihrer Organisation (einschließlich Sicherheits Lesern und Benutzern mit der Rolle " **Suchen und löschen** ")
 - Endbenutzer
 
 
@@ -128,7 +140,7 @@ Berechtigungen werden über bestimmte Rollen erteilt, wie Sie in der folgenden T
 
 - [Überprüfen und genehmigen ausstehender Aktionen](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-remediation-actions)
 
-## <a name="related-articles"></a>Verwandte Artikel
+## <a name="see-also"></a>Siehe auch
 
 - [Automatische Untersuchung und Korrektur in Microsoft Defender für Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 

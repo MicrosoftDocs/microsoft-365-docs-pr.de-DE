@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: a6dec9473ee632b74bb79e50156cedff53a3cba3
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: c28353698dd372e14d5ec51b92eb4c0c051c92a4
+ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795117"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931912"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Beheben von Problemen, die mit dem Readiness Assessment Tool gefunden wurden
 
@@ -127,7 +127,7 @@ Derzeit ist die Registrierungs Status Seite (ESP) aktiviert. Wenn Sie an der öf
 
 **Nicht bereit**
 
-Sie haben das ESP-Standardprofil festgelegt, um den **Fortschritt der APP-und Profilkonfiguration anzuzeigen** . Deaktivieren Sie diese Einstellung, indem Sie die Schritte unter [Einrichten der Registrierungs Status Seite](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status)ausführen.
+Sie haben das ESP-Standardprofil festgelegt, um den **Fortschritt der APP-und Profilkonfiguration anzuzeigen**. Deaktivieren Sie diese Einstellung, oder stellen Sie sicher, dass die Zuweisungen für eine beliebige Azure Ad Gruppe keine von Microsoft verwalteten Desktop Geräte enthalten, indem Sie die Schritte unter [Einrichten der Registrierungs Status Seite](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status)befolgen.
 
 **Empfehlung**
 
@@ -137,9 +137,9 @@ Stellen Sie sicher, dass alle Profile mit der Einstellung " **App-und Profil Kon
 
 Windows 10-Geräte in ihrer Azure AD Organisation müssen automatisch in InTune registriert sein.
 
-**Nicht bereit**
+**Empfehlung**
 
-Benutzer in ihrer Azure AD Organisation werden nicht automatisch in Microsoft InTune registriert. Ändern Sie den MDM-Benutzerbereich in **einen** oder **alle** . Wenn Sie **einige** auswählen, kehren Sie nach der Registrierung zurück, und wählen Sie die Gruppe **moderner Arbeitsplatz-alle** Azure AD für **Gruppen** aus.
+Stellen Sie sicher, dass der MDM-Benutzerbereich auf " **some** " oder " **all** " festgelegt ist, nicht auf **None**. Wenn Sie **einige** auswählen, kehren Sie nach der Registrierung zurück, und wählen Sie die Gruppe **moderner Arbeitsplatz-alle** Azure AD für **Gruppen** aus.
 
 
 ### <a name="microsoft-store-for-business"></a>Microsoft Store für Unternehmen
@@ -180,7 +180,7 @@ Windows PowerShell Skripts können nicht auf eine Weise zugewiesen werden, die a
 
 **Empfehlung**
 
-Stellen Sie sicher, dass Windows PowerShell Skripts in ihrer Azure AD Organisation nicht auf Microsoft Manage-Desktop Geräte oder-Benutzer abzielen. Weitere Informationen finden Sie unter [Verwenden von PowerShell-Skripts auf Windows 10-Geräten in InTune](https://docs.microsoft.com/mem/intune/apps/intune-management-extension).
+Stellen Sie sicher, dass Windows PowerShell Skripts in ihrer Azure AD Organisation nicht auf Microsoft Manage-Desktop Geräte oder-Benutzer abzielen. Weisen Sie kein PowerShell-Skript zu, das auf alle Benutzer, alle Geräte oder beides abzielt. Ändern Sie die Richtlinie so, dass eine Zuweisung verwendet wird, die auf eine bestimmte Azure Ad Gruppe zielt, die keine von Microsoft verwalteten Desktop Geräte enthält. Weitere Informationen finden Sie unter [Verwenden von PowerShell-Skripts auf Windows 10-Geräten in InTune](https://docs.microsoft.com/mem/intune/apps/intune-management-extension).
 
 ### <a name="region"></a>Region
 
@@ -308,19 +308,11 @@ Sie haben Sicherheitsstandards aktiviert. Deaktivieren Sie Sicherheitseinstellun
 
 ### <a name="self-service-password-reset"></a>Zurücksetzen von Self-Service-Kennwörtern
 
-Self-Service Password Reset (SSPR) muss aktiviert sein.
-
-**Nicht bereit**
-
-SSPR muss für alle Benutzer aktiviert sein. Wenn dies nicht der Fall ist, können die Microsoft Managed Desktop-Dienstkonten nicht funktionieren. Weitere Informationen finden Sie unter [Lernprogramm: Aktivieren von Benutzern zum Entsperren Ihres Kontos oder Zurücksetzen von Kennwörtern mithilfe von Azure Active Directory Self-Service Password Reset](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
+Self-Service Password Reset (SSPR) muss für alle Benutzer aktiviert sein. Wenn dies nicht der Fall ist, können die Microsoft Managed Desktop-Dienstkonten nicht funktionieren. Weitere Informationen finden Sie unter [Lernprogramm: Aktivieren von Benutzern zum Entsperren Ihres Kontos oder Zurücksetzen von Kennwörtern mithilfe von Azure Active Directory Self-Service Password Reset](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
 
 **Empfehlung**
 
 Stellen Sie sicher, dass die SSPR **Selected** -Einstellung Microsoft Managed Desktop Devices enthält.
-
-**Error**
-
-Die Intune-Administrator Rolle verfügt über keine ausreichenden Berechtigungen für diese Überprüfung. Außerdem benötigen Sie den Bericht Leser Azure AD Rolle, die zum Ausführen dieser Überprüfung zugewiesen ist.
 
 
 ### <a name="standard-user-role"></a>Standard Benutzerrolle

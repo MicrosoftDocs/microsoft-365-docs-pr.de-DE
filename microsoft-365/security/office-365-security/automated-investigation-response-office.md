@@ -1,5 +1,5 @@
 ---
-title: Übersicht über die automatische Untersuchung und Reaktion (Luft)
+title: Funktionsweise der automatischen Untersuchung und Reaktion (Air) in Microsoft Defender für Office 365
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -16,86 +16,32 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 keywords: Automatische Vorfall Antwort, Untersuchung, Behebung, Bedrohungsschutz
-ms.date: 09/29/2020
-description: Erhalten Sie einen Überblick über die automatisierten Ermittlungs-und Antwortfunktionen in Microsoft Defender für Office 365
+ms.date: 11/05/2020
+description: Erfahren Sie, wie automatisierte unter Such-und Antwortfunktionen in Microsoft Defender für Office 365 funktionieren.
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 316e2e30e5865e068f20d151cd0b081a96ee853f
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 6923e283e4ec62de9e4a9c1d9196eb032724798d
+ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845972"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931958"
 ---
-# <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Eine Übersicht über die automatisierte Untersuchung und Antwort (Air) in Microsoft Defender für Office 365
+# <a name="how-automated-investigation-and-response-air-works-in-microsoft-defender-for-office-365"></a>Funktionsweise der automatischen Untersuchung und Reaktion (Air) in Microsoft Defender für Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+Wenn Sicherheitswarnungen ausgelöst werden, liegt es an Ihrem Sicherheits Betriebsteam, diese Warnungen zu untersuchen und Maßnahmen zum Schutz Ihrer Organisation zu ergreifen. Manchmal können sich Sicherheits Operations Teams von der Menge der ausgelösten Warnungen überfordert fühlen. Die Funktionen für die automatische Untersuchung und Reaktion (Air) in Microsoft Defender für Office 365 können helfen.
 
-Wenn Sicherheitswarnungen ausgelöst werden, liegt es an Ihrem Sicherheits Betriebsteam, diese Warnungen zu untersuchen und Maßnahmen zum Schutz Ihrer Organisation zu ergreifen. Manchmal können sich Sicherheits Operations Teams von der Menge der ausgelösten Warnungen überfordert fühlen. Die Funktionen für die automatische Untersuchung und Reaktion (Air) in Microsoft Defender für Office 365 können helfen. 
+Mit Air kann Ihr Security Operations-Team effizienter und effektiver arbeiten. Air-Funktionen umfassen automatisierte Ermittlungsprozesse als Reaktion auf bekannte Bedrohungen, die heute vorhanden sind. Geeignete Korrekturaktionen warten auf die Genehmigung, sodass Ihr Sicherheits Betriebsteam auf erkannte Bedrohungen reagieren kann.
 
-Mit Air kann Ihr Security Operations-Team effizienter und effektiver arbeiten. Air-Funktionen umfassen automatisierte Ermittlungsprozesse als Reaktion auf bekannte Bedrohungen, die heute vorhanden sind. Geeignete Korrekturaktionen warten auf die Genehmigung, sodass Ihr Sicherheits Betriebsteam auf erkannte Bedrohungen reagieren kann. 
+In diesem Artikel wird die Funktionsweise von Air anhand verschiedener Beispiele beschrieben. Wenn Sie mit der Verwendung von Air beginnen möchten, finden Sie weitere Informationen unter [Automatisches untersuchen und reagieren auf Bedrohungen](office-365-air.md).
 
-Dieser Artikel bietet eine Übersicht über Air. Wenn Sie mit der Verwendung von Air beginnen möchten, finden Sie weitere Informationen unter [Automatisches untersuchen und reagieren auf Bedrohungen](office-365-air.md).
+- [Beispiel 1: eine von einem Benutzer gemeldete Phishing-Nachricht startet eine Untersuchung des Manuskripts](#example-a-user-reported-phish-message-launches-an-investigation-playbook)
+- [Beispiel 2: ein Sicherheitsadministrator löst eine Untersuchung von Threat Explorer aus](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)
+- [Beispiel 3: ein Security Operations-Team integriert Air mit ihren Siem-Funktionen mithilfe der Office 365-Verwaltungs Aktivitäts-API](#example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api)
 
-## <a name="at-a-high-level"></a>Auf einer hohen Ebene
-
-Wenn Warnungen ausgelöst werden, treten Sicherheits-Textbuch in Kraft. Je nach Situation kann ein [automatischer Ermittlungsprozess](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) beginnen. Während und nach einer automatischen Untersuchung werden [Korrekturaktionen](air-remediation-actions.md) empfohlen. In Microsoft Defender werden für Office 365 keine Aktionen automatisch ausgeführt. Ihr Security Operations-Team überprüft, und [genehmigt oder lehnt dann jede Korrekturaktion](air-review-approve-pending-completed-actions.md)ab. Wenn alle nach einer Untersuchung durchgeführten Aktionen genehmigt oder abgelehnt werden, wird die Untersuchung abgeschlossen. Alle diese Aktivitäten werden im Microsoft 365 Security Center () nachverfolgt und angezeigt [https://security.microsoft.com](https://security.microsoft.com) . (Weitere Informationen finden Sie unter [Details zu einer Untersuchung anzeigen](air-view-investigation-results.md#view-details-of-an-investigation)).
-
-Die folgenden Abschnitte enthalten weitere Informationen zu Warnungen, Sicherheits handschreibungen und Beispiele für Luft in Aktion.
-
-## <a name="alerts"></a>Warnungen
-
-[Warnungen](../../compliance/alert-policies.md#viewing-alerts) stellen Auslöser für Sicherheitsvorgänge-Team Workflows für die Vorfall Antwort dar. Priorisieren des richtigen Warnungs Satzes für die Untersuchung, wobei sichergestellt wird, dass keine Bedrohungen unbehandelt sind, ist eine Herausforderung. Wenn Untersuchungen zu Warnungen manuell durchgeführt werden, müssen Sicherheits Betriebsteams Entitäten (beispielsweise Inhalte, Geräte und Benutzer), die von Bedrohungen bedroht sind, jagen und korrelieren. Solche Aufgaben und Workflows können sehr zeitaufwendig sein und umfassen mehrere Tools und Systeme. Mit Air werden Untersuchung und Reaktion für Sicherheitsereignisse automatisiert, indem wichtige Sicherheits-und Bedrohungsmanagement-Warnungen automatisch Sicherheitsantwort-Textbuch auslösen. 
-
-Derzeit werden Warnungen, die aus den folgenden Arten von Warnungsrichtlinien generiert werden, automatisch untersucht:  
-
-- Ein potenziell böswilliger URL-Klick wurde erkannt.
-- Vom Benutzer als Phishing gemeldete e-Mail`*`
-- E-Mail-Nachrichten mit Schadsoftware nach der Zustellung entfernt`*`
-- E-Mail-Nachrichten mit Phishing-URLs nach der Zustellung entfernt`*`
-- Erkannte verdächtige e-Mail-Sende Muster
-- Benutzer vom Senden von e-Mails eingeschränkt
-- Manuelles untersuchen von e-Mails durch den Administrator ausgelöst`*`
-
-> [!NOTE]
-> Die mit einem Sternchen () markierten Warnungen `*` werden in den jeweiligen Warnungsrichtlinien im Microsoft 365 Security Center mit einem *Informations* Schweregrad versehen, wobei e-Mail-Benachrichtigungen deaktiviert sind. E-Mail-Benachrichtigungen können über die [Warnungsrichtlinien Konfiguration](../../compliance/alert-policies.md#alert-policy-settings)aktiviert werden. 
-
-Um Warnungen anzuzeigen, wählen Sie im Security & Compliance **Center Benachrichtigungen**  >  **anzeigen Warnungen** aus. Wählen Sie eine Warnung aus, um die Details anzuzeigen, und verwenden Sie dann den Link **Untersuchung anzeigen** , um zur entsprechenden [Untersuchung](air-view-investigation-results.md#investigation-graph)zu gelangen.  
-
-> [!NOTE]
-> Informationswarnungen werden standardmäßig in der Warnungsansicht ausgeblendet. Um diese anzuzeigen, ändern Sie die Warnungsfilterung so, dass Sie Informationswarnungen einschließt.
-
-Wenn Ihre Organisation ihre Sicherheitswarnungen über ein Warnungsverwaltungssystem, ein Dienst Verwaltungssystem oder ein System für die Verwaltung von Sicherheitsinformationen und Ereignisverwaltung verwaltet, können Sie Warnungen entweder per e-Mail-Benachrichtigung oder über die [Office 365 Verwaltungs Aktivitäts-API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)an dieses System senden. Die Untersuchung von Benachrichtigungs Benachrichtigungen per e-Mail oder API enthält Links für den Zugriff auf die Warnungen im Microsoft 365 Security Center, sodass der zugewiesene Sicherheitsadministrator schnell zu der Untersuchung navigieren kann.
-
-![Warnungen, die mit Untersuchungen verknüpft sind](../../media/air-alerts-page-details.png) 
-
-## <a name="security-playbooks"></a>Sicherheits-Manuskripte
-
-Sicherheits-Textbuch sind Back-End-Richtlinien, die im Mittelpunkt der Automatisierung in Microsoft Defender für Office 365 und Microsoft 365 Defender stehen. Die in Air bereitgestellten Sicherheits-Textbuch basieren auf gängigen realen Sicherheitsszenarien und werden auf der Grundlage von Feedback aus Sicherheits Betriebsteams entwickelt. Ein Sicherheits Textbuch wird automatisch gestartet, wenn in Ihrer Organisation bestimmte Warnungen ausgelöst werden. Sobald die Warnung ausgelöst wird, wird das zugehörige Textbuch durch das automatisierte Ermittlungs-und Antwortsystem ausgeführt. Die Untersuchung erfolgt durch eine Analyse der Warnung basierend auf dem Textbuch der jeweiligen Warnung, wobei alle zugehörigen Metadaten (einschließlich e-Mail-Nachrichten, Benutzer, Subjekte, Absender usw.) untersucht werden. Basierend auf den Ergebnissen der Untersuchung des Textbuch empfiehlt Air eine Reihe von Aktionen, die das Sicherheitsteam Ihrer Organisation ausführen kann, um die Bedrohung zu steuern und zu mindern. 
-
-Die Sicherheits-Textbuch-Dokumente, die Sie mit Air erhalten, wurden entwickelt, um die häufigsten Bedrohungen zu bewältigen, mit denen Organisationen heute mit e-Mails konfrontiert sind. Sie basieren auf Eingaben aus Sicherheits-und Vorfall Reaktions Teams, einschließlich Personen, die zur Verteidigung von Microsoft und den Ressourcen unserer Kunden beitragen.
-
-- Vom Benutzer gemeldete Phishing-Nachricht
-- Änderung des URL-Klick-Urteils
-- Erkannte Schadsoftware nach der Zustellung (Malware zap)
-- Phishing-Erkennung nach der Zustellung zap (Phishing zap)
-- Benutzer als kompromittiert gemeldet 
-- Manuelle e-Mail-Untersuchung (ausgelöst vom Administrator aus dem Explorer-Malware, Phishing oder alle e-Mail-Ansicht)
-
-Weitere Textbuch-und Textbuch-Updates werden als abgeschlossen veröffentlicht. Besuchen Sie die [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap) , um zu sehen, was noch geplant ist und demnächst verfügbar ist.
-
-### <a name="playbooks-include-investigation-and-recommendations"></a>Manuskripte umfassen Untersuchungen und Empfehlungen
-
-In der Luft umfasst jedes Sicherheits-Textbuch Folgendes: 
-
-- eine Stamm Untersuchung der Entitäten einer e-Mail (beispielsweise Dateien, URLs, Empfänger, IP-Adressen und mehr)
-- Weitere Jagd auf ähnliche e-Mails, die von der Organisation empfangen werden 
-- Schritte zum Identifizieren und korrelieren anderer potenzieller Bedrohungen und 
-- Empfohlene Aktionen zur Behebung von Bedrohungen.
-
-Jeder allgemeine Schritt enthält eine Reihe von unterschritten, die ausgeführt werden, um eine Tiefe, detaillierte und erschöpfende Antwort auf Bedrohungen bereitzustellen.
 
 ## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>Beispiel: eine von einem Benutzer gemeldete Phishing-Nachricht startet eine Untersuchung des Manuskripts
 
@@ -151,4 +97,4 @@ Beispielsweise hat eine Organisation kürzlich eine Möglichkeit für Ihr Sicher
 
 - [Besuchen Sie die Microsoft 365-Roadmap, um zu sehen, was in Kürze geplant und veröffentlicht wurde.](https://www.microsoft.com/microsoft-365/roadmap?filters=)
 
-- [Informationen zu zusätzlichen automatischen Ermittlungs-und Antwortfunktionen in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir?view=o365-worldwide&preserve-view=true)
+- [Informationen zu automatisierten Ermittlungs-und Antwortfunktionen in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir?view=o365-worldwide&preserve-view=true)

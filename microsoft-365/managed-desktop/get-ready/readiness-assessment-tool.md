@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 56d849a7abcbe480d82200cc7841d42e9c189762
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 347266f71dada3de1bbd9b1434cb1e6628249147
+ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795105"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931924"
 ---
 # <a name="readiness-assessment-tool"></a>Bereitschafts Bewertungstool
 
@@ -22,7 +22,7 @@ Für eine möglichst reibungslose Benutzerfreundlichkeit bei der Registrierung i
 
 Das Tool überprüft die Einstellungen in Microsoft Endpoint Manager (insbesondere Microsoft InTune), Azure Active Directory (Azure AD) und Microsoft 365, um sicherzustellen, dass Sie mit dem verwalteten Desktop von Microsoft arbeiten können. Microsoft Managed Desktop behält die Daten, die diesen Prüfungen zugeordnet sind, 12 Monate nach dem letzten Ausführen einer Überprüfung in ihrer Azure AD Organisation (Mandant). Nach 12 Monaten behalten wir es in der nicht identifizierten Form bei.  Sie können auswählen, dass die erfassten Daten gelöscht werden sollen.
 
-Jeder Benutzer mit mindestens der InTune-Administrator Rolle kann dieses Tool ausführen, aber für drei der Prüfungen (Zertifikat-[Konnektoren](readiness-assessment-fix.md#certificate-connectors), [mehr](readiness-assessment-fix.md#multi-factor-authentication)stufige Authentifizierung und [Zurücksetzen von Self-Service-Kennwörtern](readiness-assessment-fix.md#self-service-password-reset)) sind zusätzliche Berechtigungen erforderlich.
+Jeder Benutzer mit mindestens der InTune-Administrator Rolle kann dieses Tool ausführen, aber zwei der Prüfungen ([Zertifikat-Konnektoren](readiness-assessment-fix.md#certificate-connectors) und mehrstufige [Authentifizierung](readiness-assessment-fix.md#multi-factor-authentication) erfordern zusätzliche Berechtigungen.
  
 Das Assessment-Tool überprüft diese Elemente:
 
