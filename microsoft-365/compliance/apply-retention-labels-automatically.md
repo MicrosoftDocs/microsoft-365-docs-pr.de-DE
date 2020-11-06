@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erstellen Sie Aufbewahrungsbezeichnungen und veröffentlichen Sie diese automatisch, damit Sie diese Bezeichnungen automatisch auf Inhalte anwenden können, die Sie beibehalten möchten und nicht benötigte Inhalte löschen können.
-ms.openlocfilehash: 5833684c729876315ce3866a8af52d79b924caef
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: c1c18f5445b326ad7353d8c534940d3db69a3f24
+ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920019"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931979"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aufbewahrungsbezeichnungen automatisch anwenden, um Inhalte beizubehalten oder zu löschen
 
@@ -180,17 +180,8 @@ Wenn Sie Aufnahmen von Microsoft Teams-Besprechungen ermitteln möchten, die in 
 ProgID:Media AND ProgID:Meeting
 ```
 
-Diese Aufbewahrungsbezeichnung müssen Sie auch auf den OneDrive-Konten oder Microsoft Office SharePoint Online-Sites der jeweiligen Benutzer veröffentlichen, indem Sie eine Bezeichnungsrichtlinie erstellen. Meistens werden die Besprechungsaufnahmen auf OneDrive gespeichert, aber Kanalbesprechungen werden in Microsoft Office SharePoint Online gespeichert.
+Meistens werden die Besprechungsaufnahmen auf OneDrive gespeichert. Bei Kanalbesprechungen werden sie jedoch in SharePoint gespeichert.
 
-Wenn Sie die Richtlinie für Aufbewahrungsbezeichnungen für die automatische Anwendung gespeichert haben:
-
-1. Wählen Sie die Registerkarte **Bezeichnungsrichtlinien** > **Veröffentlichen von Bezeichnungen**.
-
-2. Wenn Sie zur Auswahl einer Bezeichnung aufgefordert werden, wählen Sie dieselbe Bezeichnung, die Sie für die Richtlinie für die automatische Anwendung ausgewählt haben, die die Aufzeichnungen von Teams-Besprechungen kennzeichnet.
-
-3. Wenn Sie zur Angabe des Speicherorts aufgefordert werden, wählen Sie **Microsoft Office SharePoint Online-Sites** und **OneDrive-Konten** aus. Sie können die Standardeinstellung **Alle** beibehalten oder einzelne Speicherorte angeben, z. B. bestimmte OneDrive-Konten ein- oder ausschließen.
-
-4. Schließen Sie den Assistenten ab, und speichern Sie diese Bezeichnungsrichtlinie.
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>Automatisches Anwenden von Bezeichnungen auf Inhalte mithilfe von trainierbare Klassifizierungen
 
@@ -216,7 +207,7 @@ Wenn Sie Aufbewahrungsbezeichnungen automatisch anwenden, kann es bis zu sieben 
 
 Wenn die erwarteten Bezeichnungen nach sieben Tagen nicht erscheinen, überprüfen Sie den **Status** der Richtlinie für die automatische Anwendung, indem Sie sie auf der Seite **Richtlinien für Bezeichnungen** im Compliance Center auswählen. Wenn der Status **Aus (Fehler)** angezeigt wird und in den Details für die Standorte eine Meldung angezeigt wird, dass die Bereitstellung der Richtlinie (für SharePoint) oder der Versuch der Neuverteilung der Richtlinie (für OneDrive) länger als erwartet dauert, versuchen Sie, den PowerShell-Befehl [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) auszuführen, um die Richtlinienverteilung erneut zu versuchen:
 
-1. [Herstellen einer Verbindung mit Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+1. [Stellen Sie eine Verbindung mit der Security & Compliance Center PowerShell her](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 2. Führen Sie den folgenden Befehl aus:
     
