@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX, NOFOLLOW
 description: Hier erfahren Sie, wie Sie mit e-Mail-Nachrichten verbundene verschlüsselte Dokumente von Microsoft 365 eDiscovery-Tools verarbeiten
-ms.openlocfilehash: 89e6457015289055c56278f5f8650ce022ecf081
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: b7c1dc20b8e400b9880cc00a88a2d23a4b6d1979
+ms.sourcegitcommit: 751dc531f0410ee075c179efe409a01664483ee2
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920707"
+ms.locfileid: "48925584"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Entschlüsselung in Microsoft 365 eDiscovery-Tools
 
@@ -31,9 +31,6 @@ Organisationen verwenden Verschlüsselungstechnologien, um vertrauliche Inhalte 
 Für die Verwaltung von verschlüsselten Inhalten im eDiscovery-Workflow in Microsoft 365 ist bislang eine spezielle Behandlung von verschlüsselten Elementen in Abhängigkeit von der Art der verwendeten Verschlüsselung und der spezifischen Phase im Workflow erforderlich. Dies wurde in erster Linie durch Entschlüsseln von e-Mail-Nachrichteninhalten beim Exportieren aus Inhalts suchen, zentralen eDiscovery-Fällen und erweiterten eDiscovery-Fällen erreicht. Mit Microsoft-Verschlüsselungstechnologien verschlüsselte Inhalte konnten erst in der Vorschau angezeigt werden, wenn Sie exportiert wurden. In Advanced eDiscovery wurde der verschlüsselte Inhalt mit einem Verarbeitungsfehler gekennzeichnet, der erforderte, dass Sie das verschlüsselte Element herunterladen, es entschlüsseln und dann die entschlüsselte Datei in einen Überprüfungs-Datensatz hochladen.
 
 Um die Verwaltung verschlüsselter Inhalte im eDiscovery-Workflow zu vereinfachen, können Microsoft 365 eDiscovery-Tools verschlüsselte Dateien entschlüsseln, die an e-Mail-Nachrichten angehängt und in Exchange Online gesendet werden. Vor dieser neuen Funktion wurde nur der Inhalt einer durch Rechteverwaltung geschützten e-Mail-Nachricht (und keine angefügten Dateien) entschlüsselt. Wenn nun eine mit einer Microsoft-Verschlüsselungstechnologie verschlüsselte Datei an eine e-Mail-Nachricht angehängt wird, die mit den Suchkriterien übereinstimmt, wird die verschlüsselte Datei entschlüsselt, wenn die Suchergebnisse für die Vorschau vorbereitet werden. Auf diese Weise können eDiscovery-Manager den Inhalt von verschlüsselten e-Mail-Anlagen bei der Vorschau der Suchergebnisse anzeigen.
-
-> [!NOTE]
-> Ab Januar 2021 unterstützen Microsoft 365 eDiscovery-Tools verschlüsselte Dokumente, die in SharePoint Online und OneDrive für Unternehmen gespeichert sind.
 
 ## <a name="supported-encryption-technologies"></a>Unterstützte Verschlüsselungstechnologien
 

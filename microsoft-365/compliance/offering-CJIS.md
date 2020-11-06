@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4ca7654482251d86c44a3956c71f704a0cc3f2d4
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 042555cfcbe231f370c07ee3887e6b7f6b3701b8
+ms.sourcegitcommit: 751dc531f0410ee075c179efe409a01664483ee2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208617"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48925592"
 ---
 # <a name="criminal-justice-information-services-cjis-security-policy"></a>Sicherheitsrichtlinie für Strafverfolgungs-Informationsdienste (CJIS)
 
@@ -56,11 +56,11 @@ Das FBI bietet keine Zertifizierung von Microsoft Compliance mit CJIS-Anforderun
 
 [Microsoft CJIS-Cloud-Anforderungen](https://aka.ms/MicrosoftCJISCloudRequirements)
 
-## <a name="cjis-status-in-the-united-states-current-as-of-9232019"></a>CJIS-Status in den Vereinigten Staaten (aktuell 9/23/2019)
+## <a name="cjis-status-in-the-united-states-current-as-of-1152020"></a>CJIS-Status in den Vereinigten Staaten (aktuell 11/5/2020)
 
-37 Staaten und der District of Columbia mit Verwaltungsvereinbarungen, die auf der Karte in grün hervorgehoben sind, gehören:
+44 Staaten und der District of Columbia mit Verwaltungsvereinbarungen, die auf der Karte in grün hervorgehoben sind, gehören:
 
-Alabama, Alaska, Arkansas, Arizona, Kalifornien, Colorado, Florida, Georgia, Hawaii, Illinois, Indiana, Iowa, Kansas, Kentucky, Maine, Massachusetts, Michigan, Minnesota, Missouri, Montana, New Jersey, New York, Nevada, North Carolina, Oklahoma, Oregon, Pennsylvania, Rhode Island, South Carolina, Tennessee, Texas, Utah, Vermont, Virginia, Washington, Washington D.C., West Virginia, Wisconsin.
+Alabama, Alaska, Arizona, Arkansas, Kalifornien, Colorado, Connecticut, Florida, Georgia, Hawaii, Idaho, Illinois, Indiana, Iowa, Kansas, Kentucky, Maine, Massachusetts, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, New Hampshire, New Jersey, New York, North Carolina, North Dakota, Oklahoma, Oregon, Pennsylvania, Rhode Island, South Carolina, Tennessee, Texas, Utah, Vermont, Virginia, Washington, West Virginia, Wisconsin und im District of Columbia
 
 Die Verpflichtung von Microsoft zur Erfüllung der geltenden CJIS-Regulierungs Kontrollen ermöglicht es Strafverfolgungs Organisationen, Cloud-basierte Lösungen zu implementieren und mit CJIS-Sicherheitsrichtlinie v 5.8 konform zu sein.
 
@@ -78,9 +78,9 @@ Microsoft unterzeichnet eine Informations Vereinbarung mit einer staatlichen CJI
 
 [CJIS-Sicherheitsrichtlinie](https://aka.ms/cjis-security-policy) umfasst die Vorsichtsmaßnahmen, die Ihre Agentur zum Schutz von CJI ergreifen muss. Darüber hinaus können Sie mit Ihrem Microsoft-Konto Vertreter Kontakt mit denjenigen aufnehmen, die mit den Anforderungen Ihrer Gerichtsbarkeit vertraut sind.
 
-## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Bewerten des Risikos mithilfe von Microsoft Compliance-Manager
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Verwenden von Microsoft Compliance-Manager zur Einschätzung des Risikos
 
-[Microsoft Compliance Manager](compliance-manager.md) ist ein Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) , mit dem Sie die Compliance-Haltung ihrer Organisation besser verstehen und Maßnahmen zur Verringerung von Risiken unterstützen können. Compliance-Manager bietet eine Premium-Vorlage für die Erstellung einer Bewertung für diese Verordnung. Suchen Sie die Vorlage auf der Seite " **Bewertungs Vorlagen** " im Compliance-Manager. Hier erfahren Sie, wie Sie [Assessments im Compliance-Manager erstellen](compliance-manager-assessments.md).
+[Microsoft Compliance Manager](compliance-manager.md) ist eine Funktion im [Microsoft 365 Compliance Center, die Ihnen](microsoft-365-compliance-center.md) hilft, die Compliance-Position Ihres Unternehmens zu verstehen und Maßnahmen zu ergreifen, um Risiken zu reduzieren. Compliance Manager bietet eine Premiumvorlage für die Erstellung einer Bewertung für diese Verordnung. Suchen Sie die Vorlage auf der Seite **Bewertungsvorlagen** im Compliance Manager. Erfahren Sie, wie Sie [Bewertungen in Compliance Manager erstellen](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Ressourcen
 

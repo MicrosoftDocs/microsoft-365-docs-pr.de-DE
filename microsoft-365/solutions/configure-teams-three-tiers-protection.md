@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren von Teams mit drei Schutzebenen
+title: Konfigurieren von Teams mit drei Ebenen des Dateifreigabeschutzes
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -18,14 +18,15 @@ ms.collection:
 - m365solution-scenario
 ms.custom:
 - Ent_Architecture
+- seo-marvel-jun2020
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
-description: Konfigurationsempfehlungen für den Schutz von Dateien in Microsoft Teams.
-ms.openlocfilehash: e1ec598bede2419abc19db2dbe3fd3ff63d8f583
-ms.sourcegitcommit: 24ccb910ffac4d065c512a57c5decd9dd19ef4c1
+description: Erfahren Sie, wie Sie Teams für eine bessere Sicherheit bei der gemeinsamen Nutzung von Dateien konfigurieren können, indem Sie drei Schutzebenen verwenden, die ein Gleichgewicht zwischen Sicherheit und einfacher Zusammenarbeit herstellen.
+ms.openlocfilehash: 5a3449294c6e64355961d10d84750c53715366ef
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "48594930"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906883"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Konfigurieren von Teams mit drei Schutzebenen
 
@@ -53,7 +54,7 @@ Die folgende Tabelle enthält die Konfigurationen für jede Ebene. Verwenden Sie
 |Privates oder öffentliches Team|Öffentlich|Private|Private|Private|
 |Wer hat Zugriff?|Alle Benutzer in der Organisation, einschließlich der B2B-Benutzer.|Nur Mitglieder des Teams. Andere Benutzer können den Zugriff auf die zugeordnete Website anfordern.|Nur Mitglieder des Teams.|Nur Mitglieder des Teams.|
 |Private Kanäle|Teambesitzer und -mitglieder können private Kanäle erstellen.|Teambesitzer und -mitglieder können private Kanäle erstellen.|Nur Teambesitzer können private Kanäle erstellen.|Nur Teambesitzer können private Kanäle erstellen.|
-|Gastzugriff auf Websiteebene|**Neue und vorhandene Gäste** (standardmäßig).|**Neue und vorhandene Gäste** (standardmäßig).|**Neue und vorhandene Gäste** oder **Nur Personen in Ihrer Organisation**, je nach den Teamanforderungen.|**Neue und vorhandene Gäste** oder **Nur Personen in Ihrer Organisation**, je nach den Teamanforderungen.|
+|Gastzugriff auf Websiteebene|**Neue und vorhandene Gäste** (standardmäßig).|**Neue und vorhandene Gäste** (standardmäßig).|**Neue und vorhandene Gäste** oder **Nur Personen in Ihrer Organisation** , je nach den Teamanforderungen.|**Neue und vorhandene Gäste** oder **Nur Personen in Ihrer Organisation** , je nach den Teamanforderungen.|
 |Freigabeeinstellungen für Websites|**Websitebesitzer und -mitglieder sowie Personen mit Bearbeitungsberechtigungen können Dateien und Ordner freigeben, aber nur Websitebesitzer können die Website freigeben**.|**Websitebesitzer und -mitglieder sowie Personen mit Bearbeitungsberechtigungen können Dateien und Ordner freigeben, aber nur Websitebesitzer können die Website freigeben**.|**Websitebesitzer und -mitglieder sowie Personen mit Bearbeitungsberechtigungen können Dateien und Ordner freigeben, aber nur Websitebesitzer können die Website freigeben**.|**Nur Websitebesitzer können Dateien, Ordner und die Website teilen**.<br>Zugriffsanforderungen **Aus**.|
 |Zugriff von nicht verwalteten Geräten auf Websiteebene|**Vollzugriff über Desktop-Apps, mobile Apps und das Internet** (standardmäßig).|**Vollzugriff über Desktop-Apps, mobile Apps und das Internet** (standardmäßig).|**Eingeschränkten, reinen Webzugriff zulassen**.|**Zugriff blockieren**.|
 |Standardmäßiger Freigabe-Linktyp|**Nur Personen in Ihrer Organisation**|**Nur Personen in Ihrer Organisation**|**Bestimmte Personen**|**Personen mit vorhandenem Zugriff**|
@@ -77,7 +78,7 @@ Wenn Sie in Ihrer Organisation bereits Vertraulichkeitsbezeichnungen eingeführt
 
 ## <a name="sharing-the-sharepoint-site"></a>Die SharePoint-Website freigeben
 
-Jedes Team verfügt über eine zugeordnete SharePoint-Website, auf der Dokumente gespeichert werden. (Dies ist die Registerkarte "**Dateien**" in einem Teams-Kanal.) Die SharePoint-Website behält ihre eigene Berechtigungsverwaltung, ist aber mit Teamberechtigungen verknüpft. Teambesitzer werden als Websitebesitzer und Teammitglieder als Websitemitglieder in der zugehörigen Website einbezogen.
+Jedes Team verfügt über eine zugeordnete SharePoint-Website, auf der Dokumente gespeichert werden. (Dies ist die Registerkarte " **Dateien** " in einem Teams-Kanal.) Die SharePoint-Website behält ihre eigene Berechtigungsverwaltung, ist aber mit Teamberechtigungen verknüpft. Teambesitzer werden als Websitebesitzer und Teammitglieder als Websitemitglieder in der zugehörigen Website einbezogen.
 
 Die resultierenden Berechtigungen ermöglichen Folgendes:
 
