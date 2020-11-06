@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen, um zu behalten, was Sie benötigen, und zu löschen, was Sie nicht benötigen.
-ms.openlocfilehash: 50bbe9d80b7b0a1b9fa346fd6e5abc8971dadcfb
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: 0dfccef331c279354f066ebffa80143d43192472
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804758"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920525"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
@@ -55,7 +55,7 @@ Diese Aufbewahrungseinstellungen arbeiten mit bereits vorhandenen Inhalten und e
 
 ## <a name="how-retention-settings-work-with-content-in-place"></a>Funktionsweise von Aufbewahrungseinstellungen bei vorhandenem Inhalt
 
-Wenn einem Inhalt Aufbewahrungseinstellungen zugewiesen sind, bleibt dieser Inhalt an seinem ursprünglichen Speicherort. Die Benutzer können weiterhin mit ihren Dokumenten oder E-Mails arbeiten, als ob sich nichts geändert hätte. Wenn aber Inhalte bearbeitet oder gelöscht werden, die in die Aufbewahrungsrichtlinie einbezogen sind, wird eine Kopie des Inhalts automatisch so aufbewahrt, wie er zum Zeitpunkt der Anwendung der Aufbewahrungseinstellungen vorhanden war.
+Wenn einem Inhalt Aufbewahrungseinstellungen zugewiesen sind, bleibt dieser Inhalt an seinem ursprünglichen Speicherort. Die Benutzer können weiterhin mit ihren Dokumenten oder E-Mails arbeiten, als ob sich nichts geändert hätte. Wenn aber Inhalte bearbeitet oder gelöscht werden, die in die Aufbewahrungsrichtlinie einbezogen sind, wird eine Kopie des Inhalts automatisch aufbewahrt.
   
 - Für SharePoint-und OneDrive-Websites: Die Kopie wird im **Permanenten Dokumentarchiv** aufbewahrt.
 
@@ -77,13 +77,13 @@ Ausführlichere Informationen zur Funktionsweise von Aufbewahrungseinstellungen 
 
 ## <a name="retention-policies-and-retention-labels"></a>Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
-Sie können sowohl Aufbewahrungsrichtlinien als auch Aufbewahrungsbezeichnungen verwenden, um Ihre Aufbewahrungseinstellungen den Inhalten zuzuweisen. 
+Sie können sowohl Aufbewahrungsrichtlinien als auch Aufbewahrungsbezeichnungen mit Bezeichnungsrichtlinien verwenden, um Ihre Aufbewahrungseinstellungen den Inhalten zuzuweisen. 
 
 Verwenden Sie eine Aufbewahrungsrichtlinie, um dieselben Aufbewahrungseinstellungen für Inhalte auf einer Website- oder Postfachebene zuzuweisen, und verwenden Sie eine Aufbewahrungsbezeichnung, um Aufbewahrungseinstellungen auf Elementebene (Ordner, Dokument, E-Mail) zuzuweisen.
 
 Wenn beispielsweise alle Dokumente auf einer SharePoint-Website fünf Jahre lang aufbewahrt werden sollen, ist es effizienter, dies mit einer Aufbewahrungsrichtlinie zu tun, als alle Dokumente auf dieser Website mit derselben Aufbewahrungsbezeichnung anzuwenden. Wenn jedoch einige Dokumente auf dieser Website fünf Jahre lang aufbewahrt werden sollen und andere für zehn Jahre, kann dies in einer Aufbewahrungsrichtlinie nicht erfolgen. Wenn Sie Aufbewahrungseinstellungen auf Elementebene angeben müssen, verwenden Sie Aufbewahrungsbezeichnungen. 
 
-Im Gegensatz zu Aufbewahrungsrichtlinien bleiben die Aufbewahrungseinstellungen von Aufbewahrungsbezeichnungen mit dem Inhalt erhalten, wenn dieser kopiert oder an einen anderen Microsoft 365-Speicherort verschoben wird. Darüber hinaus haben Aufbewahrungsbezeichnungen die folgenden Funktionen, die von den Aufbewahrungsrichtlinien nicht unterstützt werden: 
+Im Gegensatz zu Aufbewahrungsrichtlinien bleiben die Aufbewahrungseinstellungen von Aufbewahrungsbezeichnungen mit dem Inhalt erhalten, wenn dieser an einen anderen Speicherort innerhalb des Microsoft 365-Mandanten verschoben wird. Darüber hinaus haben Aufbewahrungsbezeichnungen die folgenden Funktionen, die von den Aufbewahrungsrichtlinien nicht unterstützt werden: 
  
 - Optionen zum Starten des Aufbewahrungszeitraums ab dem Zeitpunkt, ab dem die Inhalte bezeichnet wurden, statt anhand des Inhaltsalters oder dem Datum der letzten Änderung.
 
@@ -110,38 +110,8 @@ Aufbewahrungsrichtlinien können auf die folgenden Speicherorte angewendet werde
 - Private Nachrichten in Yammer
 
 Sie können eine einzelne Richtlinie sehr effizient auf mehrere Speicherorte oder auf bestimmte Speicherorte oder Benutzer anwenden.
-    
-Sie können eine Richtlinie auch auf alle Inhalte anwenden oder auf Inhalte, die bestimmte Bedingungen erfüllen, wie z. B. Inhalte, die Schlüsselwörter oder [vertrauliche Informationstypen](sensitive-information-type-entity-definitions.md) enthalten.
 
-#### <a name="use-preservation-lock-to-comply-with-regulatory-requirements"></a>Verwenden der Erhaltungssperre zur Einhaltung gesetzlicher Vorschriften
-
-Einige Organisationen müssen möglicherweise Regeln einhalten, die von Behörden definiert werden, wie zum Beispiel die Richtlinie 17a-4 der Securities And Exchange Commission (SEC), die vorgibt, dass eine Aufbewahrungsrichtlinie nach dem Aktivieren nicht deaktiviert oder weniger restriktiv eingestellt werden kann. 
-
-Die Erhaltungssperre stellt sicher, dass Ihre Organisation solchen gesetzlichen Vorschriften gerecht werden kann, da hierdurch eine Aufbewahrungsrichtlinie gesperrt wird, sodass niemand – auch nicht der Administrator – die Richtlinie deaktivieren, löschen oder weniger restriktiv einstellen kann.
-  
-Das Sperren einer Aufbewahrungsrichtlinie bewirkt Folgendes:
-
-- Keiner kann sie ausschalten
-- Speicherorte können hinzugefügt, aber nicht entfernt werden
-- Inhalte, die der Richtlinie unterliegen, können während des Aufbewahrungszeitraums weder geändert noch gelöscht werden.
-- Sie können den Aufbewahrungszeitraum verlängern, ihn jedoch nicht verringern.
-
-Zusammenfassend kann man sagen, dass eine gesperrte Richtlinie erweitert oder verlängert, jedoch nicht reduziert oder deaktiviert werden kann.
-  
-> [!IMPORTANT]
-> Bevor Sie eine Aufbewahrungsrichtlinie sperren, ist es wichtig, dass Sie die Auswirkungen kennen und überlegen, ob dies zur Erfüllung der regulatorischen Anforderungen durch Ihre Organisation erforderlich ist. Administratoren können eine Aufbewahrungsrichtlinie nicht mehr deaktivieren oder löschen, nachdem die Erhaltungssperre angewendet wurde.
-
-Sie wenden die Erhaltungssperre an, nachdem die Aufbewahrungsrichtlinie mithilfe von PowerShell erstellt wurde. Anweisungen dazu finden Sie unter [Erstellen und Konfigurieren von Aufbewahrungsrichtlinien](create-retention-policies.md).
-
-#### <a name="releasing-a-retention-policy"></a>Aufheben einer Aufbewahrungsrichtlinie
-
-Wenn eine Aufbewahrungsrichtlinie keiner Erhaltungssperre unterliegt, können Sie sie jederzeit deaktivieren oder löschen. 
-
-In diesem Fall werden bis dahin im permanentes Dokumentarchiv aufbewahrte SharePoint- oder OneDrive-Inhalte nicht sofort und dauerhaft gelöscht. Um versehentlichem Datenverlust vorzubeugen, gibt es nun eine Nachfrist von 30 Tagen, während der der Inhaltsablauf für diese Richtlinie im permanenten Dokumentarchiv nicht eintritt, sodass Sie Inhalte ggf. wiederherstellen können. Darüber hinaus können Sie diese Inhalte während der Nachfrist nicht manuell löschen.
-
-Sie können die Aufbewahrungsrichtlinie während der Nachfrist erneut aktivieren. In diesem Fall werden keine in Zusammenhang mit dieser Richtlinie stehenden Inhalte gelöscht.
-
-Diese 30-tägige Nachfrist in SharePoint und OneDrive entspricht dem 30-tägigen Anhalten der Aufbewahrungszeit in Exchange. Weitere Informationen finden Sie unter [Verwalten von Postfächern mit angehaltener Aufbewahrungszeit](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold).
+Elemente erben die Aufbewahrungseinstellungen aus ihren Containern, die in der Aufbewahrungsrichtlinie angegeben sind. Wenn sie dann aus diesem Container verschoben werden, wird, sofern die Richtlinie für die Beibehaltung von Inhalten konfiguriert ist, eine Kopie des jeweiligen Elements am gesicherten Speicherort des Workloads beibehalten. Allerdings bleiben die Einstellungen für die Aufbewahrung nicht zusammen mit dem Inhalt an seinem neuen Speicherort erhalten. Verwenden Sie in diesem Fall Aufbewahrungsbezeichnungen anstelle von Aufbewahrungsrichtlinien.
 
 ### <a name="retention-labels"></a>Aufbewahrungsbezeichnungen
 
@@ -252,7 +222,7 @@ Sie können dann mit dem [Inhalts-Explorer](data-classification-content-explorer
 > [!TIP]
 >Erwägen Sie die Verwendung einiger anderer Einblicke in die Datenklassifizierung, wie trainierbare Klassifikatoren und sensible Informationstypen, um Inhalte zu identifizieren, die Sie möglicherweise beibehalten oder löschen oder als Datensätze verwalten müssen.
 
-Das Office 365 Security & Compliance Center verfügt über die entsprechenden Übersichtsinformationen für Aufbewahrungsbezeichnungen aus dem **Informationsgovernance** > **Dashboard** sowie ausführlichere Informationen aus dem **Informationsgovernance** > **Bezeichnungsaktivitäten-Explorer** . Weitere Informationen zum Überwachen von Aufbewahrungsbezeichnungen von diesem älteren Admin Center finden Sie in der folgenden Dokumentation:
+Das Office 365 Security & Compliance Center verfügt über die entsprechenden Übersichtsinformationen für Aufbewahrungsbezeichnungen aus dem **Informationsgovernance** > **Dashboard** sowie ausführlichere Informationen aus dem **Informationsgovernance** > **Bezeichnungsaktivitäten-Explorer**. Weitere Informationen zum Überwachen von Aufbewahrungsbezeichnungen von diesem älteren Admin Center finden Sie in der folgenden Dokumentation:
 - [Anzeigen der Datengovernanceberichte](view-the-data-governance-reports.md)
 - [Anzeigen der Bezeichnungsnutzung mit der Analyse der Bezeichnungen](label-analytics.md)
 - [Anzeigen der Bezeichnungsaktivität für Dokumente](view-label-activity-for-documents.md)
@@ -273,7 +243,7 @@ Mithilfe der folgenden Tabelle können Sie anhand der Funktionen feststellen, ob
 |Funktion|Aufbewahrungsrichtlinie |Aufbewahrungsbezeichnung|
 |:-----|:-----|:-----|:-----|
 |Aufbewahrungsbezeichnungen, die aufbewahrt und dann gelöscht, nur aufbewahrt oder nur gelöscht werden können |Ja |Ja |
-|Unterstützte Workloads: <br />– Exchange <br />– SharePoint <br />– OneDrive <br />– Microsoft 365-Gruppen <br />– Skype for Business <br />– Teams<br />– Yammer|<br /> Ja <br /> Ja <br /> Ja <br /> Ja <br /> Ja <br /> Ja | <br /> Ja, ausgenommen öffentliche Ordner <br /> Ja <br /> Ja <br /> Ja <br /> Nein <br /> Nein <br /> Nein |
+|Unterstützte Workloads: <br />– Exchange <br />– SharePoint <br />– OneDrive <br />– Microsoft 365-Gruppen <br />– Skype for Business <br />– Teams<br />– Yammer|<br /> Ja <br /> Ja <br /> Ja <br /> Ja <br /> Ja <br /> Ja <br /> Ja | <br /> Ja, ausgenommen öffentliche Ordner <br /> Ja <br /> Ja <br /> Ja <br /> Nein <br /> Nein <br /> Nein |
 |Aufbewahrung automatisch angewendet | Ja | Ja |
 |Aufbewahrung basierend auf Bedingungen angewendet <br /> – Typen vertraulicher Informationen, KQL-Abfragen, trainierbare Klassifizierungsmerkmale| Nein | Ja |
 |Aufbewahrung manuell angewendet | Nein | Ja |
@@ -311,13 +281,31 @@ Erläuterung der vier verschiedenen Ebenen:
     
 3. **Explizite Einbindung hat Vorrang vor impliziter Einbindung.** Das bedeutet Folgendes: 
     
-    1. Wenn eine Aufbewahrungsbezeichnung mit Einstellungen für die Aufbewahrung von einem Benutzer manuell einem Element, z. B. einer Exchange-E-Mail oder einem OneDrive-Dokument, zugewiesen wird, hat diese Aufbewahrungsbezeichnung sowohl Vorrang vor einer Aufbewahrungsrichtlinie, die auf Website- oder Postfachebene zugewiesen wurde, als auch vor einer Standard-Aufbewahrungsbezeichnung, die der Dokumentbibliothek zugewiesen wurde. Wenn beispielsweise die explizite Aufbewahrungsbezeichnung eine Aufbewahrung von Inhalten über zehn Jahre vorgibt, die der Website zugewiesene Aufbewahrungsrichtlinie hingegen eine Aufbewahrung von Inhalten über nur fünf Jahre, hat die Aufbewahrungsbezeichnung Vorrang. Automatisch angewendete Bezeichnungen werden als implizit und nicht explizit angesehen, da sie von Microsoft 365 automatisch angewendet werden.
+    1. Wenn eine Aufbewahrungsbezeichnung mit Einstellungen für die Aufbewahrung von einem Benutzer manuell einem Element, z. B. einer Exchange-E-Mail oder einem OneDrive-Dokument, zugewiesen wird, hat diese Aufbewahrungsbezeichnung sowohl Vorrang vor einer Aufbewahrungsrichtlinie, die auf Website- oder Postfachebene zugewiesen wurde, als auch vor einer Standard-Aufbewahrungsbezeichnung, die der Dokumentbibliothek zugewiesen wurde. Wenn beispielsweise die explizite Aufbewahrungsbezeichnung eine Aufbewahrung von Inhalten über zehn Jahre vorgibt, die der Website zugewiesene Aufbewahrungsrichtlinie hingegen eine Aufbewahrung von Inhalten über nur fünf Jahre, hat die Aufbewahrungsbezeichnung Vorrang.
     
     2. Wenn eine Aufbewahrungsrichtlinie einen bestimmten Speicherort wie das Postfach oder OneDrive-Konto eines bestimmten Benutzers umfasst, hat diese Richtlinie Vorrang vor einer anderen Aufbewahrungsrichtlinie, die für alle Postfächer oder OneDrive-Konten von Benutzern gilt, aber nicht das Postfach dieses Benutzers speziell einschließt.
     
 4. **Der kürzeste Zeitraum für Löschungen hat Vorrang.** Ebenso gilt, dass wenn Inhalte mehreren Aufbewahrungseinstellungen zur Löschung (ohne Aufbewahrung) unterliegen, sie am Ende des kürzesten Aufbewahrungszeitraums gelöscht werden. 
 
 Inhalt, der für eDiscovery gesperrt ist, kann nicht dauerhaft aufgrund einer Aufbewahrungsrichtlinie oder -bezeichnung gelöscht werden. Wenn die Sperre aufgehoben wird, ist der Inhalt wieder für den Bereinigungsprozess an den gesicherten Speicherorten für den Workload geeignet.
+
+## <a name="use-preservation-lock-to-restrict-changes-to-policies"></a>Verwenden der Erhaltungssperre zum Einschränken von Änderungen an Richtlinien
+
+Einige Organisationen müssen möglicherweise Regeln einhalten, die von Behörden definiert werden, wie zum Beispiel die Richtlinie 17a-4 der Securities And Exchange Commission (SEC), die vorgibt, dass eine Aufbewahrungsrichtlinie nach ihrem Aktivieren nicht deaktiviert oder weniger restriktiv eingestellt werden kann. 
+
+Die Erhaltungssperre stellt sicher, dass Ihre Organisation solchen behördlichen Vorschriften gerecht werden kann, da hierdurch eine Aufbewahrungsrichtlinie oder eine Aufbewahrungsbezeichnungsrichtlinie gesperrt wird, sodass niemand – auch nicht ein Administrator – die Richtlinie deaktivieren, löschen oder weniger restriktiv einstellen kann.
+  
+Die Erhaltungssperre wird angewendet, nachdem die Aufbewahrungsrichtlinie oder Aufbewahrungsbezeichnungsrichtlinie erstellt wurde. Weitere Informationen und Anweisungen finden Sie unter [Verwenden der Erhaltungssperre zum Einschränken von Änderungen an Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungsrichtlinien](retention-preservation-lock.md).
+
+## <a name="releasing-a-policy-for-retention"></a>Aufheben einer Richtlinie für die Aufbewahrung
+
+Sofern eine Aufbewahrungsrichtlinie keiner Erhaltungssperre unterliegt, können Sie sie jederzeit löschen. Dadurch werden die zuvor angewendeten Aufbewahrungseinstellungen effektiv deaktiviert. Sie können die Richtlinie auch beibehalten, jedoch den Ortsstatus zu "Aus" ändern.
+ 
+In beiden Fällen werden bis dahin im permanenten Dokumentarchiv aufbewahrte SharePoint- oder OneDrive-Inhalte nicht sofort und dauerhaft gelöscht. Um versehentlichem Datenverlust vorzubeugen, gibt es nun eine Nachfrist von 30 Tagen, während der der Inhaltsablauf für diese Richtlinie im permanenten Dokumentarchiv nicht eintritt, sodass Sie Inhalte ggf. wiederherstellen können. Darüber hinaus können Sie diese Inhalte während der Nachfrist nicht manuell löschen.
+
+Sie können den Ortssatus während der Nachfrist wieder aktivieren. Dann werden keine unter diese Richtlinie fallenden Inhalte gelöscht.
+
+Diese 30-tägige Nachfrist in SharePoint und OneDrive entspricht dem 30-tägigen Anhalten der Aufbewahrungszeit in Exchange. Weitere Informationen finden Sie unter [Verwalten von Postfächern mit angehaltener Aufbewahrungszeit](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold).
 
 ## <a name="auditing-retention-configuration"></a>Prüfung der Aufbewahrungskonfiguration
 
@@ -413,7 +401,7 @@ Wenn Sie SharePoint-Websites für Inhaltstyprichtlinien oder Informationsverwalt
 
 - [SharePoint Online-Beschränkungen](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 - [Limits und Spezifikationen für Microsoft Teams](https://docs.microsoft.com/microsoftteams/limits-specifications-teams) 
-- [Einhaltung der SEC-Richtlinie 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+- [Ressourcen, die Sie bei der Einhaltung behördlicher Vorschriften für Informationsgovernance und Datensatzverwaltung unterstützen](retention-regulatory-requirements.md)
 
 ## <a name="next-steps"></a>Nächste Schritte
 
