@@ -15,19 +15,19 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie bestimmte Benutzergruppen mit Benutzer Tags in Microsoft Defender für Office 365 Plan 2 identifiziert werden. Die Tag-Filterung steht in Warnungen, Berichten und Untersuchungen in Microsoft Defender für Office 365 zur Verfügung, um die getaggten Benutzer schnell zu identifizieren.
-ms.openlocfilehash: fcc13a04ed603712bb2a45ccaadbaf161702c502
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 9c83a323a3116b3da61a133c7fb449978ca13841
+ms.sourcegitcommit: 9dbc6a08177aaca112e84d30dbaa79a0a8e9dbf8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842880"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "48945318"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Benutzer Tags in Microsoft Defender für Office 365
 
 > [!NOTE]
 > Das Feature "Benutzer Tags" befindet sich in der Vorschau, steht nicht allen zur Verfügung und kann jederzeit geändert werden. Weitere Informationen zum Veröffentlichungszeitplan finden Sie in der [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap).
 
-Benutzer Tags sind Bezeichner für bestimmte Benutzergruppen in [Defender für Office 365](office-365-atp.md). Es gibt zwei Arten von Benutzer Tags:
+Benutzer Tags sind Bezeichner für bestimmte Benutzergruppen in [Microsoft Defender für Office 365](office-365-atp.md). Es gibt zwei Arten von Benutzer Tags:
 
 - **System-Tags** : derzeit ist [Priority Accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) der einzige Typ des System Tags.
 - **Benutzerdefinierte Tags** : Sie erstellen diese Benutzer Tags selbst.

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie e-Mail-Sicherheitsberichte für Ihre Organisation suchen und verwenden. E-Mail-Sicherheitsberichte sind im Security & Compliance Center verfügbar.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fafb499e40c0014a85c9566b3e5aadf2751202a1
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: 738ae55fac5677a1b4f78e4c67506e85d5975090
+ms.sourcegitcommit: 9dbc6a08177aaca112e84d30dbaa79a0a8e9dbf8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941475"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "48945354"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Anzeigen von E-Mail-Sicherheitsberichten im Security & Compliance Center
 
@@ -129,7 +129,7 @@ Wenn Sie auf **Detailtabelle anzeigen** klicken, hängt die Anzeige der angezeig
   - **Date**
   - **Empfängerdomäne**
   - **Nachrichtenanzahl**
-  
+
 Wenn Sie in einer Detailtabellen Ansicht auf **Filter** klicken, können Sie die Ergebnisse mit den folgenden Filtern ändern:
 
 - **Start Datum** und **Enddatum**
@@ -270,9 +270,11 @@ Klicken Sie auf **Bericht anzeigen** , um zur Berichtsansicht zurückzukehren.
 
 ## <a name="threat-protection-status-report"></a>Threat Protection-Statusbericht
 
-Der **Statusbericht zum Bedrohungsschutz** ist sowohl in EoP als auch in Microsoft Defender für Office 365 verfügbar. die Berichte enthalten jedoch unterschiedliche Daten. EoP-Kunden können beispielsweise Informationen über in e-Mails erkannte Schadsoftware anzeigen, aber keine Informationen zu [bösartigen Dateien, die von ATP für SharePoint, OneDrive oder Microsoft Teams erkannt](atp-for-spo-odb-and-teams.md)wurden.
+Der **Statusbericht zum Bedrohungsschutz** ist sowohl in EoP als auch in Microsoft Defender für Office 365 verfügbar. die Berichte enthalten jedoch unterschiedliche Daten. EoP-Kunden können beispielsweise Informationen über in e-Mails erkannte Schadsoftware anzeigen, aber keine Informationen zu bösartigen Dateien, die von [ATP für SharePoint, OneDrive oder Microsoft Teams](atp-for-spo-odb-and-teams.md)erkannt wurden.
 
-Der Bericht enthält die Anzahl von e-Mail-Nachrichten mit bösartigen Inhalten wie Dateien oder Websiteadressen (URLs), die von der Antischadsoftware-Engine, der [automatischen Säuberungsaktion (Zero-Hour Purge)](zero-hour-auto-purge.md)und dem Verteidiger für Office 365 Features wie [sichere Links](atp-safe-links.md), [sichere Anlagen](atp-safe-attachments.md)und [Anti-Phishing](set-up-anti-phishing-policies.md)blockiert wurden. Sie können diese Informationen verwenden, um Trends zu identifizieren oder zu bestimmen, ob Organisationsrichtlinien angepasst werden müssen. Es ist wichtig zu verstehen, dass wenn eine Nachricht an fünf Empfänger gesendet wird, wir Sie als fünf verschiedene Nachrichten und nicht eine Nachricht zählen.
+Der Bericht enthält die Anzahl von e-Mail-Nachrichten mit bösartigen Inhalten wie Dateien oder Websiteadressen (URLs), die von der Antischadsoftware-Engine, der [automatischen Säuberungsaktion (Zero-Hour Purge)](zero-hour-auto-purge.md)und dem Verteidiger für Office 365 Features wie [sichere Links](atp-safe-links.md), [sichere Anlagen](atp-safe-attachments.md)und [Anti-Phishing](set-up-anti-phishing-policies.md)blockiert wurden. Sie können diese Informationen verwenden, um Trends zu identifizieren oder zu bestimmen, ob Organisationsrichtlinien angepasst werden müssen.
+
+**Hinweis** : Es ist wichtig zu verstehen, dass eine Nachricht, die an fünf Empfänger gesendet wird, als fünf verschiedene Nachrichten gezählt wird und nicht eine Nachricht.
 
 Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center](https://protection.office.com), wechseln Sie **Reports** zum \> **Dashboard** Berichte, und wählen Sie **Threat Protection Status** aus. Wenn Sie direkt zum Bericht wechseln möchten, öffnen Sie eine der folgenden URLs:
 
@@ -297,8 +299,8 @@ Die folgenden Ansichten sind verfügbar:
 
 - **Anzeigen von Daten nach: Inhalt \> Schadsoftware**<sup>1</sup>: die folgenden Informationen werden für Microsoft Defender für Office 365 Organisationen angezeigt:
 
-  - **Anti-Malware-Modul** : Abfangen schädlicher Dateien in SharePoint Online, OneDrive und Microsoft Teams durch Anti-Malware.
-  - **Datei Explosion** : Detonation schädlicher Dateien in SharePoint Online, OneDrive und Microsoft Teams durch sichere Anlagen.
+  - **Anti-Malware Engine** : Schadsoftware, die in SharePoint, OneDrive und Microsoft Teams durch die [integrierte Virenerkennung in Microsoft 365](virus-detection-in-spo.md)erkannt wurde.
+  - **Datei Explosion** : von [ATP für SharePoint, OneDrive und Microsoft Teams](atp-for-spo-odb-and-teams.md)erkannte bösartige Dateien.
 
   ![Ansicht "Inhalts-Malware" im Statusbericht "Threat Protection"](../../media/threat-protection-status-report-content-malware-view.png)
 
@@ -318,7 +320,7 @@ Die folgenden Ansichten sind verfügbar:
 
 - **Aufschlüsseln nach: Erkennungstechnologie** und **Anzeigen von Daten nach: e-Mail \> Phishing** : die folgenden Informationen werden angezeigt:
 
-  - **ATP-generierte URL-Reputation**<sup>1</sup>: Reputation des böswilligen URLs, die von Defender für Office 365 Explosionen in einem anderen Verteidiger für Office 365-Kunden generiert wurde.
+  - **ATP-generierte URL-Reputation**<sup>1</sup>: Reputation des böswilligen URLs, die von Defender für Office 365 Explosionen in anderen Microsoft 365-Kunden generiert wurde.
   - **Erweiterter Phishing-Filter** : Phishing-Signale basierend auf dem maschinellen lernen.
   - **Anti-Spoof-DMARC-Fehler** : DMARC-Authentifizierungsfehler bei Nachrichten.
   - **Anti-Spoof-Intra-org** : Absender versucht, die Empfängerdomäne vorzutäuschen.
@@ -326,7 +328,7 @@ Die folgenden Ansichten sind verfügbar:
   - **Marken Identitätswechsel** : Identitätswechsel von bekannten Marken, die auf Absendern basieren.
   - **Domänen Identitätswechsel**<sup>1</sup>: Identitätswechsel von Domänen, die der Kunde besitzt oder definiert.
   - **EoP-URL-Reputation** : böswillige URL-Reputation.
-  - **Allgemeiner Phishing-Filter** : Phishing-Signale basierend auf Analysten Regeln. 
+  - **Allgemeiner Phishing-Filter** : Phishing-Signale basierend auf Analysten Regeln.
   - **Sonstige**
   - **Phishing-zap**<sup>2</sup>: Nullstunde automatische Bereinigung von Phishing-Nachrichten.
   - **URL Detonation**<sup>1</sup>
@@ -339,7 +341,7 @@ Die folgenden Ansichten sind verfügbar:
   - **ATP-generierte dateireputation**<sup>1</sup>: die gesamte von Defender generierte böswillige dateireputation für Office 365 Explosionen.
   - **Anti-Malware Engine**<sup>1</sup>: Erkennung von Antischadsoftware-Engines.
   - **Anti-Malware Policy-Dateityp Block** : Dies sind e-Mail-Nachrichten, die aufgrund der Art der in der Nachricht identifizierten bösartigen Datei herausgefiltert wurden.
-  - **Datei Detonation**<sup>1</sup>: Datei detonations Fänge durch sichere Anlagen.  
+  - **Datei Detonation**<sup>1</sup>: Erkennung durch sichere Anlagen.
   - **Böswillige dateireputation**
   - **Malware zap**<sup>2</sup>
   - **Sonstige**
@@ -349,7 +351,7 @@ Die folgenden Ansichten sind verfügbar:
 - **Aufschlüsseln nach: Richtlinientyp** und **Anzeigen von Daten nach: e-Mail- \> Phishing** oder **Anzeigen von Daten nach: e-Mail- \> Schadsoftware** : die folgenden Informationen werden angezeigt:
 
   - **Anti-Malware**
-  - **Sichere Anlage**<sup>1</sup>
+  - **Sichere Anlagen**<sup>1</sup>
   - **Anti-Phishing**
   - **Anti-Spam**
   - **Nachrichtenfluss Regel** (auch als Transportregel bezeichnet)
@@ -377,26 +379,28 @@ Die folgenden Ansichten sind verfügbar:
 
 Wenn Sie auf **Filter** klicken, sind die verfügbaren Filter abhängig vom Diagramm, das Sie untersucht haben:
 
-Für **Inhalts- \> Schadsoftware** können Sie den Bericht nach **Start Datum** und **Enddatum** und dem **Erkennungs** Wert ändern.
+- Wenn **Sie Daten nach: Inhalts \> -Schadsoftware anzeigen** möchten, können Sie den Bericht nach **Start Datum** und **Enddatum** und dem **Erkennungs** Wert ändern.
 
-Für die **Nachrichten Außerkraftsetzung** können Sie den Bericht mit den folgenden Filtern ändern:
+- Zum **Anzeigen von Daten nach: Nachrichten Außerkraftsetzung** können Sie den Bericht mit den folgenden Filtern ändern:
 
-- **Start Datum** und **Enddatum**
-- **Außerkraftsetzungs Grund**
-- **Tag** : Filtern nach Tag, um Benutzer oder Gruppen zurückzugeben, für die ein bestimmtes Tag angewendet wurde. Weitere Informationen zu Benutzer Tags finden Sie unter [User Tags](user-tags.md).
-- **Domäne**
+  - **Start Datum** und **Enddatum**
+  - **Außerkraftsetzungs Grund**
+  - **Tag** : filtert die Ergebnisse nach Benutzern oder Gruppen, für die das angegebene Benutzertag angewendet wurde (einschließlich Prioritäts Konten). Weitere Informationen zu Benutzer Tags finden Sie unter [User Tags](user-tags.md).
+  - **Domäne**
 
-Für alle anderen Ansichten können Sie den Bericht mit den folgenden Filtern ändern:
+- Für alle anderen Ansichten können Sie den Bericht mit den folgenden Filtern ändern:
 
-- **Start Datum** und **Enddatum**
-- **Erkennung**
-- **Geschützt von** : **ATP** oder **EoP**
-- **Tag** : Filtern nach Tag, um Benutzer oder Gruppen zurückzugeben, für die ein bestimmtes Tag angewendet wurde. Weitere Informationen zu Benutzer Tags finden Sie unter [User Tags](user-tags.md).
-- **Domäne**
+  - **Start Datum** und **Enddatum**
+  - **Erkennung**
+  - **Geschützt von** : **ATP** oder **EoP**
+  - **Tag** : filtert die Ergebnisse nach Benutzern oder Gruppen, für die das angegebene Benutzertag angewendet wurde (einschließlich Prioritäts Konten). Weitere Informationen zu Benutzer Tags finden Sie unter [User Tags](user-tags.md).
+  - **Domäne**
 
 ### <a name="details-table-view-for-the-threat-protection-status-report"></a>Detailtabellen Ansicht für den Threat Protection-Statusbericht
 
 Wenn Sie auf **Detailtabelle anzeigen** klicken, hängt die Anzeige der angezeigten Informationen von dem Diagramm ab, das Sie gesucht haben:
+
+- **Daten anzeigen nach: Übersicht** : keine **Detailtabellen** -Schaltfläche anzeigen verfügbar.
 
 - **Anzeigen von Daten nach: Inhalt \> Schadsoftware** :
 
@@ -405,7 +409,7 @@ Wenn Sie auf **Detailtabelle anzeigen** klicken, hängt die Anzeige der angezeig
   - **Regie**
   - **Name der Schadsoftware**
 
-Wenn Sie in dieser Ansicht auf **Filter** klicken, können Sie den Bericht nach **Start Datum** und **Enddatum** und dem **Erkennungs** Wert ändern.
+  Wenn Sie in dieser Ansicht auf **Filter** klicken, können Sie den Bericht nach **Start Datum** und **Enddatum** und dem **Erkennungs** Wert ändern.
 
 - **Anzeigen von Daten nach: Nachrichten Außerkraftsetzung** :
 
@@ -418,15 +422,13 @@ Wenn Sie in dieser Ansicht auf **Filter** klicken, können Sie den Bericht nach 
   - **Kompromiss Quelle**
   - **Tags**
 
-Wenn Sie in dieser Ansicht auf **Filter** klicken, können Sie den Bericht mit den folgenden Filtern ändern:
+  Wenn Sie in dieser Ansicht auf **Filter** klicken, können Sie den Bericht mit den folgenden Filtern ändern:
 
-- **Start Datum** und **Enddatum**
-- **Außerkraftsetzungs Grund**
-- **Tag** : Filtern nach Tag, um Benutzer oder Gruppen zurückzugeben, für die ein bestimmtes Tag angewendet wurde. Weitere Informationen zu Benutzer Tags finden Sie unter [User Tags](user-tags.md).
-- **Domäne**
-- **Empfänger** (Beachten Sie, dass diese filterbare Eigenschaft nur in der Detailtabellen Ansicht verfügbar ist)
-
-**Daten anzeigen nach: Übersicht** : keine **Detailtabellen** -Schaltfläche anzeigen verfügbar.
+  - **Start Datum** und **Enddatum**
+  - **Außerkraftsetzungs Grund**
+  - **Tag** : filtert die Ergebnisse nach Benutzern oder Gruppen, für die das angegebene Benutzertag angewendet wurde (einschließlich Prioritäts Konten). Weitere Informationen zu Benutzer Tags finden Sie unter [User Tags](user-tags.md).
+  - **Domäne**
+  - **Empfänger** (Beachten Sie, dass diese filterbare Eigenschaft nur in der Detailtabellen Ansicht verfügbar ist)
 
 - Alle anderen Diagramme:
 
@@ -439,14 +441,14 @@ Wenn Sie in dieser Ansicht auf **Filter** klicken, können Sie den Bericht mit d
   - **Kompromiss Quelle**
   - **Tags**
 
-Wenn Sie auf **Filter** klicken, können Sie den Bericht mit den folgenden Filtern ändern:
+  Wenn Sie auf **Filter** klicken, können Sie den Bericht mit den folgenden Filtern ändern:
 
-- **Start Datum** und **Enddatum**
-- **Erkennung**
-- **Geschützt von** : **Defender für Office 365** oder **EoP**
-- **Tag** : Filtern nach Tag, um Benutzer oder Gruppen zurückzugeben, für die ein bestimmtes Tag angewendet wurde. Weitere Informationen zu Benutzer Tags finden Sie unter [User Tags](user-tags.md).
-- **Domäne**
-- **Empfänger** (Beachten Sie, dass diese filterbare Eigenschaft nur in der Detailtabellen Ansicht verfügbar ist)
+  - **Start Datum** und **Enddatum**
+  - **Erkennung**
+  - **Geschützt von** : **Defender für Office 365** oder **EoP**
+  - **Tag** : filtert die Ergebnisse nach Benutzern oder Gruppen, für die das angegebene Benutzertag angewendet wurde (einschließlich Prioritäts Konten). Weitere Informationen zu Benutzer Tags finden Sie unter [User Tags](user-tags.md).
+  - **Domäne**
+  - **Empfänger** (Beachten Sie, dass diese filterbare Eigenschaft nur in der Detailtabellen Ansicht verfügbar ist)
 
 ## <a name="top-malware-report"></a>Höchst schädlicher Bericht
 

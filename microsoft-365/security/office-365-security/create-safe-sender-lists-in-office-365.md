@@ -16,19 +16,19 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die verfügbaren und bevorzugten Optionen informieren, um eingehende Nachrichten in Exchange Online Protection (EoP) zuzulassen.
-ms.openlocfilehash: 4009dcd506921b473e938828e5bdc10411c06ce2
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 0ab0a636cb70d98aa7c17ffe6aaec66ae1f4ecc7
+ms.sourcegitcommit: 9dbc6a08177aaca112e84d30dbaa79a0a8e9dbf8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600321"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "48945342"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Erstellen sicherer Absenderlisten in EoP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Wenn Sie ein Microsoft 365-Kunde mit Postfächern in Exchange Online oder ein eigenständiger Exchange Online Schutz (EoP)-Kunde ohne Exchange Online Postfächer sind, bietet EoP mehrere Möglichkeiten, um sicherzustellen, dass Benutzer e-Mails von vertrauenswürdigen Absendern empfangen können. Zu diesen Optionen gehören Exchange-Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet), Outlook-sichere Absender, die IP-Zulassungsliste (Verbindungsfilterung) und zugelassene Absenderlisten oder zugelassene Domänenlisten in den Antispam-Richtlinien. Sie können diese Optionen gemeinsam als _sichere Absenderlisten_betrachten.
+Wenn Sie ein Microsoft 365-Kunde mit Postfächern in Exchange Online oder ein eigenständiger Exchange Online Schutz (EoP)-Kunde ohne Exchange Online Postfächer sind, bietet EoP mehrere Möglichkeiten, um sicherzustellen, dass Benutzer e-Mails von vertrauenswürdigen Absendern empfangen können. Zu diesen Optionen gehören Exchange-Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet), Outlook-sichere Absender, die IP-Zulassungsliste (Verbindungsfilterung) und zugelassene Absenderlisten oder zugelassene Domänenlisten in den Antispam-Richtlinien. Sie können diese Optionen gemeinsam als _sichere Absenderlisten_ betrachten.
 
 Die verfügbaren Listen für sichere Absender werden in der folgenden Liste beschrieben, um von den meisten empfohlenen empfohlen zu werden:
 
@@ -49,7 +49,7 @@ Nachrichtenfluss Regeln ermöglichen die größtmögliche Flexibilität, um sich
 >
 > - EoP und Outlook prüfen unterschiedliche Nachrichteneigenschaften, um den Absender der Nachricht zu ermitteln. Weitere Informationen finden Sie im Abschnitt [Überlegungen für Massen-e-Mails](#considerations-for-bulk-email) weiter unten in diesem Thema.
 
-Im Gegensatz dazu stehen Ihnen mehrere Optionen zur Verhinderung von e-Mails aus bestimmten Quellen mit _blockierten Absenderlisten_zur Ver, Weitere Informationen finden Sie unter [Erstellen von Listen blockierter Absender in EOP](create-block-sender-lists-in-office-365.md).
+Im Gegensatz dazu stehen Ihnen mehrere Optionen zur Verhinderung von e-Mails aus bestimmten Quellen mit _blockierten Absenderlisten_ zur Ver, Weitere Informationen finden Sie unter [Erstellen von Listen blockierter Absender in EOP](create-block-sender-lists-in-office-365.md).
 
 ## <a name="recommended-use-mail-flow-rules"></a>Empfohlen Verwenden von Nachrichtenfluss Regeln
 
@@ -57,17 +57,17 @@ Nachrichtenfluss Regeln in Exchange Online und eigenständigen EoP verwenden Sie
 
 Im folgenden Beispiel wird davon ausgegangen, dass Sie e-Mails von contoso.com benötigen, um die Spamfilterung zu überspringen. Konfigurieren Sie dazu die folgenden Einstellungen:
 
-1. **Bedingung**: **die Absender** \> **Domäne ist** \> contoso.com.
+1. **Bedingung** : **die Absender** \> **Domäne ist** \> contoso.com.
 
 2. Konfigurieren Sie eine der folgenden Einstellungen:
 
-   - Nachrichten **Fluss Regelbedingung**: **eine Nachrichtenkopfzeile** \> **enthält alle folgenden Wörter** \> **Kopfzeilenname**: `Authentication-Results` \> **Kopfzeilenwert**: `dmarc=pass` oder `dmarc=bestguesspass` .
+   - Nachrichten **Fluss Regelbedingung** : **eine Nachrichtenkopfzeile** \> **enthält alle folgenden Wörter** \> **Kopfzeilenname** : `Authentication-Results` \> **Kopfzeilenwert** : `dmarc=pass` oder `dmarc=bestguesspass` .
 
-     Diese Bedingung überprüft den Absender Authentifizierungsstatus der sendenden e-Mail-Domäne, um sicherzustellen, dass die sendende Domäne nicht gefälscht wird. Weitere Informationen zur e-Mail-Authentifizierung finden Sie unter [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)und [DMARC](use-dmarc-to-validate-email.md).
+     Mit dieser Bedingung wird der e-Mail-Authentifizierungsstatus der sendenden e-Mail-Domäne überprüft, um sicherzustellen, dass die sendende Domäne nicht gefälscht ist. Weitere Informationen zur e-Mail-Authentifizierung finden Sie unter [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)und [DMARC](use-dmarc-to-validate-email.md).
 
-   - **IP-Zulassungsliste**: Geben Sie die Quell-IP-Adresse oder den Adressbereich in der Verbindungsfilter Richtlinie an.
+   - **IP-Zulassungsliste** : Geben Sie die Quell-IP-Adresse oder den Adressbereich in der Verbindungsfilter Richtlinie an.
   
-     Verwenden Sie diese Einstellung, wenn die sendende Domäne keine Authentifizierung aufweist. So restriktiv wie möglich sein, wenn es um die Quell-IP-Adressen in der IP-Zulassungsliste geht. Wir empfehlen einen IP-Adressbereich von/24 oder kleiner (kleiner ist besser). Verwenden Sie keine IP-Adressbereiche, die zu Verbraucher Diensten (beispielsweise Outlook.com) oder gemeinsam genutzten Infrastrukturen gehören.
+     Verwenden Sie diese Einstellung, wenn die sendende Domäne keine e-Mail-Authentifizierung verwendet. So restriktiv wie möglich sein, wenn es um die Quell-IP-Adressen in der IP-Zulassungsliste geht. Wir empfehlen einen IP-Adressbereich von/24 oder kleiner (kleiner ist besser). Verwenden Sie keine IP-Adressbereiche, die zu Verbraucher Diensten (beispielsweise Outlook.com) oder gemeinsam genutzten Infrastrukturen gehören.
 
    > [!IMPORTANT]
    >
@@ -77,17 +77,17 @@ Im folgenden Beispiel wird davon ausgegangen, dass Sie e-Mails von contoso.com b
    >
    > - Wenn Sie eine IP-Adresse zulassen, die hinter einem NAT-Gateway (Network Address Translation, Netzwerkadressübersetzung) liegt, müssen Sie die Server kennen, die am NAT-Pool beteiligt sind, um den Bereich Ihrer IP-Zulassungsliste zu kennen. IP-Adressen und NAT-Teilnehmer können sich ändern. Sie müssen die Einträge in der IP-Zulassungsliste regelmäßig als Teil Ihrer standardmäßigen Wartungsverfahren überprüfen.
 
-3. **Optionale Bedingungen**:
+3. **Optionale Bedingungen** :
 
-   - **Der Absender** \> **ist intern/extern** \> **Außerhalb der Organisation**: Diese Bedingung ist implizit, aber Sie kann nicht verwendet werden, um lokale e-Mail-Server zu berücksichtigen, die möglicherweise nicht ordnungsgemäß konfiguriert sind.
+   - **Der Absender** \> **ist intern/extern** \> **Außerhalb der Organisation** : Diese Bedingung ist implizit, aber Sie kann nicht verwendet werden, um lokale e-Mail-Server zu berücksichtigen, die möglicherweise nicht ordnungsgemäß konfiguriert sind.
 
    - **Der Betreff oder Textkörper** \> **Betreff oder Textkörper enthält eines dieser Wörter** \> \<keywords\>: Wenn Sie die Nachrichten nach Stichwörtern oder Ausdrücken in der Betreffzeile oder im Nachrichtentext weiter einschränken können, können Sie diese Wörter als Bedingung verwenden.
 
-4. **Aktion**: beide Aktionen in der Regel konfigurieren:
+4. **Aktion** : beide Aktionen in der Regel konfigurieren:
 
    a. **Ändern der Nachrichteneigenschaften** \> **Festlegen der SCL-Bewertung (Spam Confidence Level)** \> **Umgehen Sie die Spamfilterung**.
 
-   b. **Nachrichtenkopfzeile** \> **enthält eines dieser Wörter** \> **Kopfzeilenname**: \<CustomHeaderName\> **Kopfzeilenwert**: \<CustomHeaderValue\> .
+   b. **Ändern der Nachrichteneigenschaften** \> **Nachrichtenkopfzeile festlegen** : **legen Sie den Nachrichtenkopf** \<CustomHeaderName\> **auf den Wert** fest \<CustomHeaderValue\> .
 
       Beispiel: `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`. Wenn in der Regel mehr als eine Domäne vorhanden ist, können Sie den Kopfzeilentext nach Bedarf anpassen.
 
@@ -105,7 +105,7 @@ Wenn Nachrichten Spamfilterung aufgrund der Liste sicherer Absender eines Benutz
 
 Wenn Sie Nachrichtenfluss Regeln nicht wie zuvor beschrieben verwenden können, ist die nächste beste Option das Hinzufügen des Quell-e-Mail-Servers oder der Server zur IP-Zulassungsliste in der Verbindungsfilter Richtlinie. Ausführliche Informationen finden Sie unter [Konfigurieren der Verbindungsfilterung in EoP](configure-the-connection-filter-policy.md).
 
-**Hinweise**:
+**Hinweise** :
 
 - Es ist wichtig, dass Sie die Anzahl der zulässigen IP-Adressen auf ein Minimum beschränken, daher sollten Sie möglichst keine ganzen IP-Adressbereiche verwenden.
 
