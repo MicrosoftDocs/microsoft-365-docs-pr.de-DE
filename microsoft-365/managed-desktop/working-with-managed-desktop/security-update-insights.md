@@ -7,12 +7,12 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 772d1d52e977a067ff9bc3517de9cb2ae6c8c9a3
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: b3b1f43217b3be285f20925065bf9710a38f9606
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950367"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941441"
 ---
 # <a name="windows-security-update-insights"></a>Informationen zu Windows-Sicherheitsupdates
 Diese Ansicht bietet eine Übersicht über den Status von Sicherheitsupdates für Ihre von Microsoft verwalteten Desktop Geräte. 
@@ -23,11 +23,11 @@ Um Verwendungsdaten anzuzeigen, wählen Sie die Registerkarte <strong>Windows-Si
 
 ## <a name="device-status"></a>Gerätestatus
 
-Für Geräte, die von Windows Update aktualisiert werden sollen, müssen Sie mit dem Internet verbunden sein und nicht über einen Ruhezustand für mindestens sechs Stunden verfügen, von denen zwei kontinuierlich sein müssen. Solange ein Gerät angeschlossen ist und kein Ruhezustand ist, wird es als "verwendet" betrachtet. Obwohl es möglich ist, dass ein Gerät, das diese Anforderungen nicht erfüllt, aktualisiert wird, haben Geräte, die diese erfüllen, die höchste Wahrscheinlichkeit, dass Sie aktualisiert werden. 
+Für Geräte, die von Windows Update aktualisiert werden sollen, müssen Sie mit dem Internet verbunden sein und nicht über einen Ruhezustand für mindestens sechs Stunden verfügen, von denen zwei kontinuierlich sein müssen. Obwohl es möglich ist, dass ein Gerät, das diese Anforderungen nicht erfüllt, aktualisiert wird, haben Geräte, die diese erfüllen, die höchste Wahrscheinlichkeit, dass Sie aktualisiert werden. 
 
 Die Geräteaktivität wird im Kontext von Windows Update mit den folgenden Begriffen kategorisiert:
 
-- <strong>Aktiv:</strong> Geräte, die die minimalen Verwendungskriterien (sechs Stunden, zwei kontinuierlich) für die neueste Version des Sicherheitsupdates erfüllt haben und mindestens alle fünf Tage mit Microsoft InTune eingecheckt wurden
+- <strong>Aktiv:</strong> Geräte, die die mindestaktivitäts Kriterien (sechs Stunden, zwei kontinuierlich) für die neueste Version des Sicherheitsupdates erfüllt haben und mindestens alle fünf Tage mit Microsoft InTune eingecheckt wurden
 - <strong>Synchronisiert:</strong> Geräte, die innerhalb der letzten 28 Tage mit InTune eingecheckt haben
 - <strong>Nicht synchron:</strong> Geräte, die in den letzten 28 Tagen <i>nicht</i> mit InTune eingecheckt haben
 

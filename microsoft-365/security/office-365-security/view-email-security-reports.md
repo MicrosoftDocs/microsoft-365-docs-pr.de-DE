@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie e-Mail-Sicherheitsberichte für Ihre Organisation suchen und verwenden. E-Mail-Sicherheitsberichte sind im Security & Compliance Center verfügbar.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 36d7fde77ae8a6280dae26e5a0f7a75537bf28d4
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: fafb499e40c0014a85c9566b3e5aadf2751202a1
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841872"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941475"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Anzeigen von E-Mail-Sicherheitsberichten im Security & Compliance Center
 
@@ -67,7 +67,7 @@ Klicken Sie auf **Bericht anzeigen** , um zur Berichtsansicht zurückzukehren.
 
 ## <a name="encryption-report"></a>Verschlüsselungs Bericht
 
-Der **Verschlüsselungs Bericht** steht in EoP (Abonnements mit Postfächern in Exchange Online oder eigenständigen EoP ohne Exchange Online Postfächer) zur Verfügung. Das Sicherheitsteam Ihrer Organisation kann Informationen in diesem Bericht verwenden, um Muster zu identifizieren und Richtlinien für vertrauliche e-Mail-Nachrichten proaktiv anzuwenden oder anzupassen. Zum Beispiel:
+Der **Verschlüsselungs Bericht** steht in EoP (Abonnements mit Postfächern in Exchange Online oder eigenständigen EoP ohne Exchange Online Postfächer) zur Verfügung. Das Sicherheitsteam Ihrer Organisation kann Informationen in diesem Bericht verwenden, um Muster zu identifizieren und Richtlinien für vertrauliche e-Mail-Nachrichten proaktiv anzuwenden oder anzupassen. Beispiel:
 
 - Wenn eine große Anzahl von von Benutzern verschlüsselten e-Mail-Nachrichten angezeigt wird, möchten Sie möglicherweise eine Verschlüsselungsrichtlinie zum Automatisieren der Verschlüsselung für bestimmte Anwendungsfälle hinzufügen. Weitere Informationen finden Sie unter [Definieren von Nachrichtenfluss Regeln zum Verschlüsseln von e-Mail-Nachrichten in Microsoft 365](../../compliance/define-mail-flow-rules-to-encrypt-email.md).
 
@@ -336,7 +336,7 @@ Die folgenden Ansichten sind verfügbar:
 
 - **Aufschlüsseln nach: Erkennungstechnologie** und **Anzeigen von Daten nach: e-Mail- \> Schadsoftware** : die folgenden Informationen werden angezeigt:
 
-  - **ATP-generierte dateireputation**<sup>1</sup>: alle bösartigen Dateien, die durch ATP-Explosionen generiert wurden.
+  - **ATP-generierte dateireputation**<sup>1</sup>: die gesamte von Defender generierte böswillige dateireputation für Office 365 Explosionen.
   - **Anti-Malware Engine**<sup>1</sup>: Erkennung von Antischadsoftware-Engines.
   - **Anti-Malware Policy-Dateityp Block** : Dies sind e-Mail-Nachrichten, die aufgrund der Art der in der Nachricht identifizierten bösartigen Datei herausgefiltert wurden.
   - **Datei Detonation**<sup>1</sup>: Datei detonations Fänge durch sichere Anlagen.  

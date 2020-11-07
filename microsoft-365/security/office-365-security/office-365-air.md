@@ -1,5 +1,5 @@
 ---
-title: Erste Schritte mit der automatisierten Untersuchung und Antwort in Microsoft Defender für Office 365
+title: Automatische Untersuchung und Antwort in Microsoft Defender für Office 365
 keywords: Luft, autoIR, ATP, automatisiert, Untersuchung, Antwort, Behebung, Bedrohungen, erweitert, Bedrohung, Schutz
 f1.keywords:
 - NOCSH
@@ -21,14 +21,14 @@ description: Erste Schritte mit automatisierten Ermittlungs-und Antwortfunktione
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 5796cdf21f9dd12c35a2f84422f03503433755b0
-ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
+ms.openlocfilehash: 5a7995e0aeba0f29efb1a085a04a299b1e709b1f
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/06/2020
-ms.locfileid: "48931936"
+ms.locfileid: "48941463"
 ---
-# <a name="get-started-using-automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Erste Schritte mit der automatisierten Untersuchung und Antwort (Air) in Microsoft Defender für Office 365
+# <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Automatische Untersuchung und Antwort (Air) in Microsoft Defender für Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -140,7 +140,7 @@ Berechtigungen werden über bestimmte Rollen erteilt, wie Sie in der folgenden T
 
 - [Überprüfen und genehmigen ausstehender Aktionen](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-remediation-actions)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Automatische Untersuchung und Korrektur in Microsoft Defender für Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 

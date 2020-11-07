@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c28353698dd372e14d5ec51b92eb4c0c051c92a4
-ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
+ms.openlocfilehash: 642de80e1a133f212b7afb6774d9aab2eeaabdbf
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/06/2020
-ms.locfileid: "48931912"
+ms.locfileid: "48941409"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Beheben von Problemen, die mit dem Readiness Assessment Tool gefunden wurden
 
@@ -26,7 +26,7 @@ Für jede Überprüfung meldet das Tool eine von vier möglichen Ergebnissen:
 |Bereit     | Vor Abschluss der Registrierung ist keine Aktion erforderlich.        |
 |Empfehlung    | Befolgen Sie die Schritte im Tool oder in diesem Artikel, um die besten Erfahrungen bei der Registrierung und für Benutzer zu finden. Sie *können* die Registrierung abschließen, aber Sie müssen diese Probleme beheben, bevor Sie das erste Gerät bereitstellen.        |
 |Nicht bereit | *Die Registrierung schlägt fehl, wenn Sie diese Probleme nicht beheben.* Befolgen Sie die Schritte im Tool oder in diesem Artikel, um Sie zu beheben.        |
-|Error | Die von Ihnen verwendete Azure Active Director (AD)-Rolle verfügt nicht über ausreichende Berechtigungen zum Ausführen dieser Überprüfung. |
+|Fehler | Die von Ihnen verwendete Azure Active Director (AD)-Rolle verfügt nicht über ausreichende Berechtigungen zum Ausführen dieser Überprüfung. |
 
 ## <a name="microsoft-intune-settings"></a>Microsoft InTune-Einstellungen
 
@@ -308,20 +308,20 @@ Sie haben Sicherheitsstandards aktiviert. Deaktivieren Sie Sicherheitseinstellun
 
 ### <a name="self-service-password-reset"></a>Zurücksetzen von Self-Service-Kennwörtern
 
-Self-Service Password Reset (SSPR) muss für alle Benutzer aktiviert sein. Wenn dies nicht der Fall ist, können die Microsoft Managed Desktop-Dienstkonten nicht funktionieren. Weitere Informationen finden Sie unter [Lernprogramm: Aktivieren von Benutzern zum Entsperren Ihres Kontos oder Zurücksetzen von Kennwörtern mithilfe von Azure Active Directory Self-Service Password Reset](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
+Self-Service Password Reset (SSPR) sollte für alle Benutzer mit Ausnahme von Microsoft Managed Desktop-Dienstkonten aktiviert werden. Weitere Informationen finden Sie unter [Lernprogramm: Aktivieren von Benutzern zum Entsperren Ihres Kontos oder Zurücksetzen von Kennwörtern mithilfe von Azure Active Directory Self-Service Password Reset](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
 
 **Empfehlung**
 
-Stellen Sie sicher, dass die SSPR **Selected** -Einstellung Microsoft Managed Desktop Devices enthält.
+Stellen Sie sicher, dass die SSPR **Selected** -Einstellung Microsoft Managed Desktop-Geräte enthält, aber Microsoft Managed Desktop-Dienstkonten ausschließt. Microsoft Managed Desktop-Dienstkonten können nicht wie erwartet funktionieren, wenn SSPR aktiviert ist.  
 
 
 ### <a name="standard-user-role"></a>Standard Benutzerrolle
 
-Microsoft Managed Desktop-Benutzer sollten Standardbenutzer ohne lokale Administratorrechte sein. Ihnen wird beim Starten Ihres von Microsoft verwalteten Desktop Geräts eine Standardbenutzerrolle zugewiesen.
+Neben den Benutzern, denen Azure AD Rollen globaler Administrator und Geräteadministrator zugewiesen sind, sind Microsoft Managed Desktop-Benutzer Standardbenutzer ohne lokale Administratorrechte. Allen anderen Benutzern wird beim Starten Ihres von Microsoft verwalteten Desktop Geräts eine Standardbenutzerrolle zugewiesen.
 
 **Empfehlung**
 
-Microsoft Managed Desktop-Benutzer sollten vor dem registrieren keine lokalen Administratorrechte haben.
+Microsoft Managed Desktop-Benutzer verfügen nicht über lokale Administratorrechte auf Ihren von Microsoft verwalteten Desktopgeräten, nachdem Sie sich registriert haben.
 
 ## <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for Enterprise
 

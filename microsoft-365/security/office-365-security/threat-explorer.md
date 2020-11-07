@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: In diesem Artikel erfahren Sie mehr über die Verwendung von Explorer und Echt Zeit Erkennungen im Security &amp; Compliance Center, um Bedrohungen effektiv und effizient zu untersuchen und auf diese zu reagieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a6123306c1d707a3eeab5c5dd67ed25bebb71965
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 6a1aff37cc845e09be332b853aa938cb66fdb43f
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845686"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941487"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer und Echtzeiterkennung
 
@@ -53,7 +53,7 @@ Mit diesem Bericht haben Sie folgende Möglichkeiten:
 > [!NOTE]
 > Das Feature "Benutzer Tags" befindet sich in der Vorschau, steht nicht allen zur Verfügung und kann jederzeit geändert werden. Weitere Informationen zum Veröffentlichungszeitplan finden Sie in der Microsoft 365-Roadmap.
 
-Benutzer Tags sind Bezeichner für bestimmte Benutzergruppen in Microsoft Defender für Office 365. Weitere Informationen rund um Tags, Lizenzierung und Konfigurieren von Tags finden Sie unter [User Tags in Defender for Office 365](user-tags.md).
+Benutzer Tags sind Bezeichner für bestimmte Benutzergruppen in Microsoft Defender für Office 365. Weitere Informationen rund um Tags, Lizenzierung und Konfigurieren von Tags finden Sie unter [User Tags](user-tags.md).
 
 Im Threat Explorer werden Informationen zu Benutzer Tags in den folgenden Erfahrungen angezeigt:
 
@@ -172,7 +172,7 @@ Die Verbesserungen im Hinblick auf die URL-und URL-Klicks Daten umfassen Folgend
 
  - Anzeigen der vollständig angeklickten URL (einschließlich aller Abfrageparameter, die Teil der URL sind) im Abschnitt Klicks im URL-Flyout. Derzeit zeigen wir die URL-Domäne und den Pfad in der Titelleiste an. Diese Informationen werden erweitert, um die vollständige URL anzuzeigen.
 
- - Fixes für URL-Filter (URL-URL-Domäne vs-URL-Domäne und-Pfad): Wir haben Aktualisierungen bei der Suche nach Nachrichten durchgeführt, die eine URL/Klick Urteil enthalten. Im Rahmen dieser Vorgehensweise haben wir die Unterstützung für protokollunabhängige Suchvorgänge aktiviert (was bedeutet, dass Sie direkt nach einer URL ohne http suchen können). Standardmäßig wird die URL-Suche dem http-Wert zugeordnet, sofern nicht explizit angegeben. Zum Beispiel:
+ - Fixes für URL-Filter (URL-URL-Domäne vs-URL-Domäne und-Pfad): Wir haben Aktualisierungen bei der Suche nach Nachrichten durchgeführt, die eine URL/Klick Urteil enthalten. Im Rahmen dieser Vorgehensweise haben wir die Unterstützung für protokollunabhängige Suchvorgänge aktiviert (was bedeutet, dass Sie direkt nach einer URL ohne http suchen können). Standardmäßig wird die URL-Suche dem http-Wert zugeordnet, sofern nicht explizit angegeben. Beispiel:
 
    1. Suchen Sie mit und ohne das `http://` Präfix in den Filterfeldern "URL", "URL-Domäne" und "URL-Domäne und-Pfad". Dieses Verhalten ist konsistent und sollte dasselbe Ergebnis aufweisen.
 
@@ -199,7 +199,7 @@ Im Rahmen der Verbesserung des Jagd Prozesses haben wir einige Updates für den 
 
 ### <a name="filter-by-user-tags"></a>Nach Benutzer Tags Filtern
 
-Sie können jetzt entweder nach System-oder benutzerdefinierten Tags sortieren und Filtern, um den Umfang der Bedrohungen schnell zu erfassen. Weitere Informationen finden Sie unter [User Tags in Office 365 ATP](user-tags.md) .
+Sie können jetzt entweder nach System-oder benutzerdefinierten Tags sortieren und Filtern, um den Umfang der Bedrohungen schnell zu erfassen. Weitere Informationen finden Sie unter [User Tags](user-tags.md) .
 
 > [!IMPORTANT]
 > Das Filtern und Sortieren nach Benutzer Tags befindet sich derzeit in der öffentlichen Vorschau.
