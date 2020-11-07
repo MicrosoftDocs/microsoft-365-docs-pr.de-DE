@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: die häufigsten Bedrohungs-und Angriffsszenarien, mit denen Organisationen derzeit in Ihren Microsoft 365-Umgebungen konfrontiert sind, sowie Empfohlene Aktionen zur Minderung dieser Risiken.
-ms.openlocfilehash: b359b16042d419a06096a48ddcbc50affbcc4cd6
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 64f4491db3dc4ef18411b166fb23c4388383dae2
+ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843128"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "48944300"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365 Security for Business-Entscheidungsträger (BDMs)
 
@@ -30,6 +30,8 @@ Dieser Artikel ist nach Priorität von Arbeit organisiert, beginnend mit dem Sch
 [![Thumb Image Microsoft 365 BDM Security Recommendations Spreadsheet](../downloads/microsoft-365-bdm-security-recommendations-spreadsheet-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-BDM-security-recommendations-spreadsheet.xlsx)
 
 Microsoft stellt Ihnen das sichere Bewertungstool in Ihrem Mandanten zur Verfügung, mit dem Sie Ihre Sicherheitsposition basierend auf Ihren regulären Aktivitäten automatisch analysieren, eine Bewertung zuweisen und Empfehlungen zur Sicherheitsverbesserung stellen können. Beachten Sie vor dem Ausführen der in diesem Artikel empfohlenen Aktionen die aktuellen Ergebnisse und Empfehlungen. Die in diesem Artikel empfohlenen Aktionen verbessern Ihre Punktzahl. Das Ziel besteht nicht darin, die maximale Punktzahl zu erreichen, sondern sich der Möglichkeiten bewusst zu sein, Ihre Umgebung so zu schützen, dass die Produktivität Ihrer Benutzer nicht beeinträchtigt wird. Siehe [Microsoft Secure Score](mtp/microsoft-secure-score.md).
+
+![Führen Sie die folgenden Schritte aus, um Risiken für Ihr Unternehmen zu verringern.](../media/security/security-for-bdms-overview.png)
 
 Noch eine Sache, bevor wir anfangen. . . Achten Sie darauf, [das Überwachungsprotokoll einzuschalten](../compliance/search-the-audit-log-in-security-and-compliance.md). Sie benötigen diese Daten später, für den Fall, dass Sie einen Vorfall oder eine Verletzung untersuchen müssen. 
 
