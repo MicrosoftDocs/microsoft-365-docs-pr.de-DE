@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Ressourcen, die Sie bei der Einhaltung behördlicher Vorschriften für Informationsgovernance und Datensatzverwaltung unterstützen
-ms.openlocfilehash: 2aa413400d9d60b759b35d04175b674cedb0a733
-ms.sourcegitcommit: 5a355bde865369f64ea1788a378da23c65b1d249
+ms.openlocfilehash: f8641af2ec839c9ed3f4d029b4f6de52fe7033e3
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/06/2020
-ms.locfileid: "48930188"
+ms.locfileid: "48941420"
 ---
 # <a name="regulatory-requirements-for-information-governance-and-records-management"></a>Behördliche Vorschriften für Informationsgovernance und Datensatzverwaltung
 
@@ -36,7 +36,7 @@ Diese Ressourcen stehen zum Download auf der Seite [Datenschutzressourcen, häuf
 
 Zutreffende Workloads: SharePoint, OneDrive, Microsoft Teams, Exchange und Skype for Business
 
-Dieser im Oktober 2020 veröffentlichte Bericht wurde in Zusammenarbeit mit Cohasset Associates, Inc. (Cohasset) erstellt, um die Eignung der Microsoft 365-Dienste für das Aufzeichnen, Speichern und die Erfüllung von Vorgaben für elektronische Datensätze zu ermitteln, die in den folgenden Bestimmungen festgelegt sind:  
+Dieser 2020 veröffentlichte Bericht wurde in Zusammenarbeit mit Cohasset Associates, Inc. (Cohasset) erstellt, um die Eignung der Microsoft 365-Dienste für das Aufzeichnen, Speichern und die Erfüllung von Vorgaben für elektronische Datensätze zu ermitteln, die in den folgenden Bestimmungen festgelegt sind:  
 
 - SEC (Securities and Exchange Commission, Börsenaufsichtsbehörde) in 17 CFR § 240.17 a-4 (f), die Börsenmitglieder, Makler oder Händler reguliert.  
 
