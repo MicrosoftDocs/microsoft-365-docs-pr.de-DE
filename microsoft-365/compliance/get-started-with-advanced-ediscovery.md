@@ -17,18 +17,17 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 description: In diesem Artikel wird beschrieben, wie Sie mit der Verwendung von Advanced eDiscovery in Microsoft 365 beginnen. Nachdem Sie einige kurze Schritte ausgeführt haben, ist das erweiterte eDiscovery-Tooleinsatz fähig. Der erste Schritt besteht darin, einen Fall zu erstellen und dann erweiterte eDiscovery-Funktionen und-Funktionen zu verwenden.
-ms.openlocfilehash: 64c8681a47c21a7a6bfa9d67677405f74d75a96f
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 59537499ed52f44a9d32b8921fd297c5cd7c0d3f
+ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398494"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "48944333"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>Erste Schritte mit Advanced eDiscovery
 
-Advanced eDiscovery in Microsoft 365 bietet einen End-to-End-Workflow zum aufbewahren, sammeln, überprüfen, analysieren und Exportieren von Daten, die auf interne und externe Untersuchungen in Ihrer Organisation reagieren. Für die Bereitstellung von Advanced eDiscovery ist nichts erforderlich, aber es gibt einige erforderliche Aufgaben, die ein IT-Administrator und eDiscovery-Manager ausführen müssen, bevor Ihre Organisation mit der Erstellung und Verwendung von erweiterten eDiscovery-Fällen für die Verwaltung ihrer Untersuchungen beginnen kann.
+Advanced eDiscovery in Microsoft 365 bietet einen [End-to-End-Workflow](overview-ediscovery-20.md#advanced-ediscovery-architecture) zum aufbewahren, sammeln, überprüfen, analysieren und Exportieren von Daten, die auf interne und externe Untersuchungen in Ihrer Organisation reagieren. Für die Bereitstellung von Advanced eDiscovery ist nichts erforderlich, aber es gibt einige erforderliche Aufgaben, die ein IT-Administrator und eDiscovery-Manager ausführen müssen, bevor Ihre Organisation mit der Erstellung und Verwendung von erweiterten eDiscovery-Fällen für die Verwaltung ihrer Untersuchungen beginnen kann.
 
 In diesem Artikel werden die erforderlichen Schritte zum Einrichten von Advanced eDiscovery erläutert. Dies umfasst die Sicherstellung der erforderlichen Lizenzierung für den Zugriff auf Erweiterte eDiscovery sowie das Hinzufügen von Depotstellen zu Fällen sowie das Zuweisen von Berechtigungen für Ihr rechts-und Ermittlungsteam, damit Sie auf Anfragen zugreifen und diese verwalten können. Dieser Artikel bietet außerdem eine allgemeine Übersicht über die Verwendung von Fällen zum Verwalten des erweiterten eDiscovery-Workflows für eine rechtliche Untersuchung.
 
@@ -110,7 +109,7 @@ Der nächste Schritt besteht darin, einen Fall zu erstellen und mit Advanced eDi
 
 1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com) und melden Sie sich mit den Anmeldeinformationen für das Benutzerkonto an, dem die entsprechenden eDiscovery-Berechtigungen zugewiesen wurden. Mitglieder der Rollengruppe "Organisationsverwaltung" können auch erweiterte eDiscovery-Fälle erstellen.
 
-2. Klicken Sie im linken Navigationsbereich des Microsoft 365 Compliance Centers auf **Ale anzeigen**, und klicken Sie dann auf **eDiscovery > Advanced**.
+2. Klicken Sie im linken Navigationsbereich des Microsoft 365 Compliance Centers auf **Ale anzeigen** , und klicken Sie dann auf **eDiscovery > Advanced**.
 
 3. Klicken Sie auf der Seite **Erweiterte eDiscovery** auf die Registerkarte **Fälle** , und klicken Sie dann auf **Fall erstellen**.
 
@@ -120,17 +119,17 @@ Der nächste Schritt besteht darin, einen Fall zu erstellen und mit Advanced eDi
 
    Der neue Fall wird erstellt, und die Registerkarte **Einstellungen** im neuen Fall wird angezeigt. 
 
-6. Klicken Sie auf der Kachel **Zugriffs & Berechtigungen** auf der Registerkarte **Einstellungen** auf **auswählen**, und klicken Sie dann auf **Aktualisieren**.
+6. Klicken Sie auf der Kachel **Zugriffs & Berechtigungen** auf der Registerkarte **Einstellungen** auf **auswählen** , und klicken Sie dann auf **Aktualisieren**.
 
 7. Klicken Sie auf **Aktualisieren**.
 
-8. Klicken Sie auf der Seite **diesen Fall Flyout verwalten** unter **Mitglieder verwalten**auf **Hinzufügen** , um der Anfrage Mitglieder hinzuzufügen.
+8. Klicken Sie auf der Seite **diesen Fall Flyout verwalten** unter **Mitglieder verwalten** auf **Hinzufügen** , um der Anfrage Mitglieder hinzuzufügen.
 
 9. Aktivieren Sie in der Liste der Personen das Kontrollkästchen neben den Namen der Personen, die der Anfrage hinzugefügt werden sollen. Wie bereits erläutert, müssen Sie sicherstellen, dass den Benutzern, die Sie dem Fall hinzufügen, die entsprechenden eDiscovery-Berechtigungen zugewiesen wurden.
 
 10. Nachdem Sie die Personen ausgewählt haben, die als Mitglieder der Anfrage hinzugefügt werden sollen, klicken Sie auf **Hinzufügen**.
 
-11. Klicken Sie auf der Flyout-Seite **Fall verwalten** auf **Speichern**, um die neue Liste der Fallbeteiligten zu speichern.
+11. Klicken Sie auf der Flyout-Seite **Fall verwalten** auf **Speichern** , um die neue Liste der Fallbeteiligten zu speichern.
 
 12. Klicken Sie auf die Registerkarte **Start** , um zur Fall Startseite zu wechseln.
 
@@ -144,7 +143,7 @@ Um den Einstieg in die Verwendung von Advanced eDiscovery zu erleichtern, finden
 
    - Die Daten im Exchange-Postfach des Verwalters, im OneDrive-Konto und in allen Microsoft Teams-oder Jammer Gruppen, in denen die Depotbank Mitglied ist, können in dem Fall als Freiheitsentzug-Daten "gekennzeichnet" werden.
   
-   - Depotdaten werden neu indiziert (durch einen Prozess mit dem Namen *Advanced Indexing*). Dies hilft beim Optimieren der Suche im nächsten Schritt.
+   - Depotdaten werden neu indiziert (durch einen Prozess mit dem Namen *Advanced Indexing* ). Dies hilft beim Optimieren der Suche im nächsten Schritt.
   
    - Sie können Depotdaten aufbewahren. Dadurch werden Daten beibehalten, die für den Fall während der Untersuchung relevant sein können.
   
@@ -162,9 +161,9 @@ Um den Einstieg in die Verwendung von Advanced eDiscovery zu erleichtern, finden
 
 3. **[Hinzufügen von Daten zu einem Überprüfungs Satzes](add-data-to-review-set.md)**. Nachdem Sie konfiguriert und überprüft haben, dass eine Suche die gewünschten Daten zurückgibt, besteht der nächste Schritt darin, die Suchergebnisse einer Überprüfungsgruppe hinzuzufügen. Wenn Sie einer Überprüfungsgruppe Daten hinzufügen, werden Elemente von Ihrem ursprünglichen Speicherort an einen sicheren Azure-Speicher Speicherort kopiert. Die Daten werden erneut indiziert, um Sie für eine gründliche und schnelle Suche zu optimieren, wenn Sie Elemente im Überprüfungs Satzes überprüfen und analysieren. Darüber hinaus können Sie [einer Überprüfungsgruppe auch nicht Office 365 Daten hinzufügen](load-non-office-365-data-into-a-review-set.md).
 
-   Es gibt auch eine spezielle Art von Überprüfungs Sätzen, denen Sie Daten hinzufügen können, die als *Unterhaltungs Überprüfungs Sätze*bezeichnet werden. Diese Typen von Überprüfungs Sätzen bieten Funktionen für die Wiederherstellung von Unterhaltungen zum rekonstruieren, überprüfen und Exportieren von Thread Unterhaltungen wie denen in Microsoft Teams. Weitere Informationen finden Sie unter [Review Conversations in Advanced eDiscovery](conversation-review-sets.md).
+   Es gibt auch eine spezielle Art von Überprüfungs Sätzen, denen Sie Daten hinzufügen können, die als *Unterhaltungs Überprüfungs Sätze* bezeichnet werden. Diese Typen von Überprüfungs Sätzen bieten Funktionen für die Wiederherstellung von Unterhaltungen zum rekonstruieren, überprüfen und Exportieren von Thread Unterhaltungen wie denen in Microsoft Teams. Weitere Informationen finden Sie unter [Review Conversations in Advanced eDiscovery](conversation-review-sets.md).
 
-4. **Überprüfen und Analysieren von Daten in einem Überprüfungs Satzes**. Da sich die Daten nun in einem Überprüfungs Satzes befinden, können Sie eine Vielzahl von Tools und Funktionen zum Anzeigen und Analysieren der Falldaten verwenden, um die Datenmenge auf das zu reduzieren, was für den Fall relevant ist, dass Sie untersucht werden. Im folgenden finden Sie eine Liste mit einigen Tools und Funktionen, die Sie während dieses Prozesses verwenden können.
+4. **Überprüfen und Analysieren von Daten in einem Überprüfungs Satzes**. Da sich die Daten nun in einem Überprüfungs Satzes befinden, können Sie eine Vielzahl von Tools und Funktionen zum Anzeigen und Analysieren der Falldaten verwenden, um die Datenmenge auf das zu reduzieren, was für den Fall relevant ist, den Sie untersuchen. Im folgenden finden Sie eine Liste mit einigen Tools und Funktionen, die Sie während dieses Prozesses verwenden können.
 
    - [Dokumente anzeigen](view-documents-in-review-set.md). Dies umfasst das Anzeigen der Metadaten für jedes Dokument in einer Überprüfungsgruppe und das Anzeigen des Dokuments in seiner systemeigenen Version oder Textversion.
 
