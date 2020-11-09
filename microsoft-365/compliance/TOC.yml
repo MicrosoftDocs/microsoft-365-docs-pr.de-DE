@@ -296,8 +296,8 @@
           href: create-apply-retention-labels.md
         - name: Automatisches Anwenden einer Aufbewahrungsbezeichnung auf Inhalte
           href: apply-retention-labels-automatically.md
-        - name: Einhaltung der SEC-Regel 17a-4
-          href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
+        - name: Sperren von Richtlinien zum Einschränken von Änderungen
+          href: retention-preservation-lock.md
         - name: Erstellen von Aufbewahrungsbezeichnungen mit PowerShell
           href: bulk-create-publish-labels-using-powershell.md
         - name: Beginn der Aufbewahrung bei Auftreten eines Ereignisses
@@ -426,6 +426,8 @@
           href: declare-records.md
         - name: Datensatzversionsverwaltung verwenden
           href: record-versioning.md
+        - name: Ressourcen für behördliche Vorschriften
+          href: retention-regulatory-requirements.md
 - name: Verwalten von eDiscovery
   items:
     - name: eDiscovery in Microsoft 365
@@ -473,7 +475,7 @@
               href: change-the-size-of-pst-files-when-exporting-results.md
             - name: Deaktivieren von Berichten beim Exportieren von Suchergebnissen
               href: disable-reports-when-you-export-content-search-results.md
-        - name: Informationen zur Inhaltssuche
+        - name: Referenz zur Inhaltssuche
           items:
             - name: Grenzwerte für Inhaltssuchen
               href: limits-for-content-search.md
@@ -531,6 +533,10 @@
               href: data-spillage-scenariosearch-and-purge.md
             - name: Beibehalten von Bcc-Empfängern für die Suche
               href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+            - name: Entschlüsselung in eDiscovery-Tools
+              href: ediscovery-decryption.md
+            - name: Sammeln von eDiscovery-Diagnoseinformationen
+              href: ediscovery-diagnostic-info.md
             - name: Behandeln allgemeiner eDiscovery-Probleme
               href: ediscovery-troubleshooting-common-issues.md
             - name: Wiederholen einer fehlgeschlagenen Suche
@@ -660,6 +666,10 @@
               href: permissions-filtering-for-content-search.md
             - name: Einrichten von Compliance-Begrenzungen
               href: set-up-compliance-boundaries.md
+            - name: Entschlüsselung in eDiscovery-Tools
+              href: ediscovery-decryption.md
+            - name: Sammeln von eDiscovery-Diagnoseinformationen
+              href: ediscovery-diagnostic-info.md
             - name: Suchen nach eDiscovery-Aktivitäten im Überwachungsprotokoll
               href: search-for-ediscovery-activities-in-the-audit-log.md
             - name: Problembehandlung bei AzCopy
