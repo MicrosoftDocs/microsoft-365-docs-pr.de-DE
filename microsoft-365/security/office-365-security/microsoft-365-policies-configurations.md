@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-overview
-ms.openlocfilehash: 6d0f090f9931e88566e37b038cc30375657019c3
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 4667f84cc3a2e34e6b5e85640c84f090d0b0f1df
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487672"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948469"
 ---
 # <a name="identity-and-device-access-configurations"></a>Konfigurationen für den Identitäts- und Gerätezugriff
 
@@ -71,9 +71,9 @@ Die meisten Organisationen haben spezifische Anforderungen bezüglich Datensiche
 
 Jede Branche verfügt auch über ihren eigenen Satz von spezialisierten Vorschriften. Anstatt eine Liste aller möglichen Sicherheitsoptionen oder einer Empfehlung pro Branchensegment oder Auftragsfunktion bereitzustellen, wurden Empfehlungen für drei verschiedene Sicherheits-und Schutzstufen bereitgestellt, die basierend auf der Granularität Ihrer Anforderungen angewendet werden können.
 
-- **Grund**legender Schutz: Es wird empfohlen, einen Mindeststandard zum Schutz von Daten sowie die Identitäten und Geräte festzulegen, die auf Ihre Daten zugreifen. Sie können diese grundlegenden Empfehlungen befolgen, um einen starken Standardschutz bereitzustellen, der die Anforderungen vieler Organisationen erfüllt.
-- **Vertraulicher Schutz**: einige Kunden verfügen über eine Teilmenge von Daten, die auf höheren Ebenen geschützt werden müssen, oder Sie erfordern möglicherweise, dass alle Daten auf einer höheren Ebene geschützt werden. Sie können einen erhöhten Schutz für alle oder bestimmte Datensätze in Ihrer Microsoft 365-Umgebung anwenden. Es wird empfohlen, Identitäten und Geräte mit Zugriff auf sensible Daten mit einem vergleichbaren Grad an Sicherheit auszustatten.  
-- **Stark reguliert**: einige Organisationen haben möglicherweise eine kleine Menge an Daten, die streng klassifiziert sind, Geschäftsgeheimnisse darstellen oder regulierte Daten sind. Microsoft stellt Funktionen bereit, die es Organisationen ermöglichen, diese Anforderungen zu erfüllen, wie etwa den zusätzlichen Schutz von Identitäten und Geräten.
+- **Grund** legender Schutz: Es wird empfohlen, einen Mindeststandard zum Schutz von Daten sowie die Identitäten und Geräte festzulegen, die auf Ihre Daten zugreifen. Sie können diese grundlegenden Empfehlungen befolgen, um einen starken Standardschutz bereitzustellen, der die Anforderungen vieler Organisationen erfüllt.
+- **Vertraulicher Schutz** : einige Kunden verfügen über eine Teilmenge von Daten, die auf höheren Ebenen geschützt werden müssen, oder Sie erfordern möglicherweise, dass alle Daten auf einer höheren Ebene geschützt werden. Sie können einen erhöhten Schutz für alle oder bestimmte Datensätze in Ihrer Microsoft 365-Umgebung anwenden. Es wird empfohlen, Identitäten und Geräte mit Zugriff auf sensible Daten mit einem vergleichbaren Grad an Sicherheit auszustatten.  
+- **Stark reguliert** : einige Organisationen haben möglicherweise eine kleine Menge an Daten, die streng klassifiziert sind, Geschäftsgeheimnisse darstellen oder regulierte Daten sind. Microsoft stellt Funktionen bereit, die es Organisationen ermöglichen, diese Anforderungen zu erfüllen, wie etwa den zusätzlichen Schutz von Identitäten und Geräten.
 
 ![Security Cone – alle Kunden > einige Kunden > bestimmte Kunden. Umfassende Anwendung für eine bestimmte Anwendung](../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png)
 
@@ -194,9 +194,7 @@ Microsoft empfiehlt, keine Richtliniensätze zu erstellen, die für alle apps ge
 3. Konfigurieren Sie Richtlinien für bedingten Zugriff für Gast-und externe Benutzer.
 4. Konfigurieren Sie Richtlinien für bedingten Zugriff für Microsoft 365 Cloud-apps wie Microsoft Teams, Exchange Online und SharePoint.
 
-<!--
-After you have configured identity and device access, see the [Azure AD feature deployment guide](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) for a phased checklist of additional features to consider and [Azure AD Identity Governance](https://docs.microsoft.com/azure/active-directory/governance/) to protect, monitor, and audit access.  
---> 
+Nachdem Sie den Identitäts-und Geräte Zugriff konfiguriert haben, finden Sie im [Bereitstellungshandbuch für Azure AD Features](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) eine schrittweise Prüfliste mit weiteren Features, die Sie in den Blick nehmen und [Azure AD Identity Governance](https://docs.microsoft.com/azure/active-directory/governance/) zum Schutz, zur Überwachung und zum Überwachen des Zugriffs verwenden können.  
 
 ## <a name="next-step"></a>Nächster Schritt
 

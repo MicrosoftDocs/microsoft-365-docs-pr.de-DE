@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: it-pro
 description: Die Roadmap zum Einrichten Ihrer Mandanten für Microsoft 365.
-ms.openlocfilehash: 038d9b0d94b84d184f0d9d9b250d0ee4d2c19de9
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: d2640a036eedda0b0962a15a03dcf0211ea0209b
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753966"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948397"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Mandanten-Roadmap für Microsoft 365
 
@@ -66,7 +66,7 @@ Mit Microsoft 365 Multi-Geo kann Ihr Unternehmen seine Microsoft 365-Präsenz au
 
 Weitere Informationen finden Sie unter [Microsoft 365 Multi-Geo](microsoft-365-multi-geo.md).
 
-## <a name="manage-multiple-microsoft-365-tenant"></a>Verwalten mehrerer Microsoft 365-Mandanten 
+## <a name="manage-multiple-microsoft-365-tenants"></a>Verwalten mehrerer Microsoft 365-Mandanten 
 
 Obwohl ein einzelner Mandant für Ihre einer Organisation ideal ist, sind Sie möglicherweise eine von vielen Organisationen mit mehreren Mandanten. Gründe hierfür können Fusionen und Übernahmen sein, Sie möchten eine administrative Isolierung oder eine dezentrale IT-Verwaltung.
 

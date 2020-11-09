@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Informationen zu Kampagnen Ansichten in Microsoft Defender für Office 365.
-ms.openlocfilehash: 181b6ce5859dd5146512fe854c983b6b9096d8c6
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: 1e5754e077d4c1b8f685b5dea1f8a59985e08a13
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941355"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948481"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Kampagnen Ansichten in Microsoft Defender für Office 365
 
@@ -115,9 +115,9 @@ Die einfachste Filterung, die Sie ausführen können, sind Startdatum/-Uhrzeit u
 
 Wenn Sie die Ansicht weiter filtern möchten, können Sie eine einzelne Eigenschaft mit mehreren Werten filtern, indem Sie auf die Schaltfläche **Kampagnentyp** klicken, Ihre Auswahl treffen und dann auf **Aktualisieren** klicken.
 
-Die verfügbaren Kampagneneigenschaften werden in der folgenden Liste beschrieben:
+Die filterbaren Kampagneneigenschaften, die auf der Schaltfläche **Kampagnentyp** verfügbar sind, werden in der folgenden Liste beschrieben:
 
-- Standard
+- **Basic** :
   - **Kampagnentyp** : Wählen Sie **Schadsoftware** oder **Phishing** aus. Das Löschen der Auswahl hat das gleiche Ergebnis wie das auswählen beider Elemente.
   - **Name der Kampagne**
   - **Kampagnen Untertyp**
@@ -127,23 +127,26 @@ Die verfügbaren Kampagneneigenschaften werden in der folgenden Liste beschriebe
   - **Betreff**
   - **Dateiname der Anlage**
   - **Schadsoftware-Familie**
+  - **Tags** : Benutzer oder Gruppen, denen das angegebene Benutzertag zugewiesen wurde (einschließlich Prioritäts Konten). Weitere Informationen zu Benutzer Tags finden Sie unter [User Tags](user-tags.md).
+  - **System Überschreibungen**
   - **Zustellungs Aktion**
+  - **Zusätzliche Aktion**
+  - **Directionality**
   - **Erkennungstechnologie**
-  - **Tags**
+  - **Ursprünglicher Übermittlungs Speicherort**
+  - **Letzter Zustellungs Speicherort**
   - **System Überschreibungen**
 
-- Erweitert
+- **Advanced** :
   - **Internet Nachrichten-ID** : verfügbar im Kopfzeilenfeld nach **richten-ID** im Nachrichtenkopf. Ein Beispielwert ist `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (Beachten Sie die spitzen Klammern).
   - **Netzwerknachrichten-ID** : ein GUID-Wert, der im Headerfeld **X-MS-Exchange-Organization-Network-Message-ID** im Nachrichtenkopf verfügbar ist.
   - **Sender-IP**
   - **Attachment SHA256** : um den SHA256-Hashwert einer Datei in Windows zu finden, führen Sie den folgenden Befehl an einer Eingabeaufforderung aus: `certutil.exe -hashfile "<Path>\<Filename>" SHA256` .
-
   - **Cluster-ID**
-
   - **Warnungsrichtlinien-ID**
+  - **Zap-URL-Signal**
 
-- URLs
-
+- **URLs** :
   - **URL-Domäne**
   - **URL-Domäne und Pfad**
   - **URL**

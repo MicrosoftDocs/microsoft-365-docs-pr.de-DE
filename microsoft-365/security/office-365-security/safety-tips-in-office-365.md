@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie EoP und Office 365 Sie mit Spam, Phishing und Schadsoftware schützen, indem Sie oben in e-Mails einen Sicherheitstipp hinzufügen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3da52a8ef2913c30c281fec74f92142847e29792
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 0e204021bfd79dabd4abdeefaa990da50915eaf0
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201983"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948457"
 ---
 # <a name="safety-tips-in-email-messages"></a>Sicherheitstipps in E-Mail-Nachrichten
 
@@ -47,14 +47,6 @@ Der Sicherheitstipp – eine farbcodierte Nachricht – warnt Sie vor potenziell
     ![Screenshot, der eine grüne Sicherheitsspitze zeigt.](../../media/acbc11d0-f626-4848-9fbf-66eeeda3f803.png)
 
     Neben unsicheren Nachrichten informieren wir Sie auch über gültige Nachrichten von Absendern, denen wir Vertrauen, mit einem grünen Sicherheitstipp. Ein grüner Sicherheitstipp in einer e-Mail bedeutet, dass wir den Absender der Nachricht überprüft und überprüft haben, dass Sie sicher ist. Microsoft verwaltet diese Liste vertrauenswürdiger Absender, die Finanzorganisationen und andere häufig gefälschte oder imitierte Personen umfassen.
-
-- Ungefiltertes Mail (grauer Sicherheitstipp).
-
-    ![Screenshot, der einen grauen Sicherheitstipp zeigt.](../../media/c4d0cf8f-08e9-4c84-beee-1d9e0b022e0a.png)
-
-    Wir sagen Ihnen auch, wann die Überprüfung einer e-Mail übersprungen wurde, da Sie von einem Absender stammt, dem Sie Ihre Liste sicherer Absender Vertrauen, oder wenn eine Nachrichtenfluss Regel zur Umgehung der Filterung vorhanden ist.
-
-    Die graue Sicherheitsspitze wird auch angezeigt, wenn externe Bilder blockiert werden, das heißt, die Nachricht befindet sich in Ihrem Posteingang und scheint nicht Spam zu sein, sondern enthält externe Bilder, die Sie nicht zum Herunterladen entschieden haben.
 
 ## <a name="working-with-safety-tips"></a>Arbeiten mit Sicherheitstipps
 

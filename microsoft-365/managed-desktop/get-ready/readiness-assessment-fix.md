@@ -1,5 +1,5 @@
 ---
-title: Beheben von Problemen, die mit dem Readiness Assessment Tool gefunden wurden
+title: Lösen von Problemen, die durch das Tool zur Bereitschaftsbewertung gefunden wurden
 description: Detaillierte Aktionen, die für jedes von dem Tool gefundene Problem ausgeführt werden sollten
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 642de80e1a133f212b7afb6774d9aab2eeaabdbf
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: c342ea9f662d883883755d2f67e5c25ffabddf83
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941409"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948409"
 ---
-# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Beheben von Problemen, die mit dem Readiness Assessment Tool gefunden wurden
+# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Lösen von Problemen, die durch das Tool zur Bereitschaftsbewertung gefunden wurden
 
 Für jede Überprüfung meldet das Tool eine von vier möglichen Ergebnissen:
 
@@ -242,7 +242,7 @@ Sie haben eine Richtlinie "Update Ring", die auf alle Geräte, alle Benutzer ode
 
 **Empfehlung**
 
-Stellen Sie sicher, dass alle Update Ring-Richtlinien den **modernen Arbeitsplatz-alle** Azure Ad Gruppe ausschließen. Eine schrittweise Anleitung finden Sie unter [Manage Windows 10 Softwareupdates in InTune](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure). Die **moderne Arbeitsplatz Geräte-alle** Azure Ad Gruppe ist eine dynamische Gruppe, die wir erstellen, wenn Sie sich für Microsoft Managed Desktop registrieren, damit Sie nach der Registrierung zurückkehren müssen, um diese Gruppe auszuschließen.
+Stellen Sie sicher, dass alle Update Ring-Richtlinien die **modernen Arbeitsplatz Geräte ausschließen – alle** Azure Ad Gruppe. Wenn Sie diesen Richtlinien Azure AD Benutzergruppe zugewiesen haben, stellen Sie sicher, dass alle Update Ring-Richtlinien auch die Gruppe **moderner Arbeitsplatz – alle** Azure AD, die ihre von Microsoft verwalteten Desktop Benutzer enthält, ausgeschlossen haben. Eine schrittweise Anleitung finden Sie unter [Manage Windows 10 Softwareupdates in InTune](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure). Sowohl die **modernen Arbeitsplatz Geräte-alle** als auch der **moderne Arbeitsplatz-alle** Azure Ad Gruppen werden Gruppen zugewiesen, die wir erstellen, wenn Sie sich für Microsoft Managed Desktop registrieren, sodass Sie nach der Registrierung zurückkehren müssen, um diese Gruppe auszuschließen.
 
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory-Einstellungen

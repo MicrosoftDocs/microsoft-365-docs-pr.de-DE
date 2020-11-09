@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: In diesem Artikel erfahren Sie mehr über die Verwendung von Explorer und Echt Zeit Erkennungen im Security &amp; Compliance Center, um Bedrohungen effektiv und effizient zu untersuchen und auf diese zu reagieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6a1aff37cc845e09be332b853aa938cb66fdb43f
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: 561e4c62922a4da0789111de5c3be7844bb83692
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941487"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948493"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer und Echtzeiterkennung
 
@@ -45,7 +45,6 @@ Mit diesem Bericht haben Sie folgende Möglichkeiten:
 - [Starten eines automatisierten unter Such-und Antwort Prozesses aus einer Ansicht im Explorer](#start-automated-investigation-and-response) (nur für Office 365 Plan 2)
 - ... [Untersuchung schädlicher e-Mails und vieles mehr](#more-ways-to-use-explorer-or-real-time-detections)!
 
-
 ## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>Verbesserungen an Threat Explorer und Echt Zeit Erkennungen
 
 ### <a name="tags-in-threat-explorer"></a>Tags im Threat-Explorer
@@ -65,6 +64,7 @@ Die im e-Mail-Raster angezeigte Tags-Spalte enthält alle Tags, die auf die Abse
 > ![Filtern von Tags in der e-Mail-Rasteransicht](../../media/tags-grid.png)
 
 #### <a name="filtering"></a>Filtern
+
 Wir haben jetzt Tags als Filter, damit Sie nur für Prioritäts Konten oder bestimmte Benutzer Tags Szenarien jagen können (und sogar Ergebnisse mit bestimmten Tags als Teil dieser Erfahrung ausschließen). Wenn Sie diese mit den verschiedenen anderen Filtern kombinieren, die wir bereitstellen, können Sie den Umfang der Untersuchung einschränken.
 
 [![Filtern von Tags ](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
@@ -113,11 +113,11 @@ Auf der Registerkarte e-Mail-Flyout-> Details können Sie nun die spezifische Be
 
 Zusätzlich zur Identifizierung aller Zustellungs-und Post Zustellungs Ereignisse gibt die Zeitachsenansicht auch Informationen zu der zu diesem Zeitpunkt identifizierten Bedrohung für eine Teilmenge dieser Ereignisse. Außerdem erhalten Sie weitere Informationen zu zusätzlichen Aktionen (beispielsweise zap, manuelle Korrektur) sowie das Ergebnis dieser Aktion. Die Zeitachsenansicht enthält Informationen über die ursprüngliche Zustellung und anschließend alle Ereignisse nach der Zustellung, die für eine e-Mail ausgeführt wurden.
 
--   Quelle: Dies kann admin/System/User basierend auf der Quelle des Ereignisses sein.
--   Ereignis: Dies umfasst Ereignisse der obersten Ebene wie Original Zustellung, manuelle Korrektur, Zap, Übermittlungen und dynamische Zustellung.
--   Action: Dies umfasst die spezifische Aktion, die entweder im Rahmen von zap-oder admin-Aktionen durchgeführt wurde (beispielsweise Soft Delete).
--   Bedrohungen: deckt die zu diesem Zeitpunkt identifizierten Bedrohungen (Schadsoftware, Phishing, Spam) ab.
--   Ergebnis/Details: enthält weitere Informationen zum Ergebnis der Aktion, unabhängig davon, ob es im Rahmen der zap/admin-Aktion ausgeführt wurde.
+- Quelle: Dies kann admin/System/User basierend auf der Quelle des Ereignisses sein.
+- Ereignis: Dies umfasst Ereignisse der obersten Ebene wie Original Zustellung, manuelle Korrektur, Zap, Übermittlungen und dynamische Zustellung.
+- Action: Dies umfasst die spezifische Aktion, die entweder im Rahmen von zap-oder admin-Aktionen durchgeführt wurde (beispielsweise Soft Delete).
+- Bedrohungen: deckt die zu diesem Zeitpunkt identifizierten Bedrohungen (Schadsoftware, Phishing, Spam) ab.
+- Ergebnis/Details: enthält weitere Informationen zum Ergebnis der Aktion, unabhängig davon, ob es im Rahmen der zap/admin-Aktion ausgeführt wurde.
 
 ### <a name="original-and-latest-delivery-location"></a>Ursprünglicher und aktueller Zustellungs Speicherort
 
@@ -170,15 +170,15 @@ System Überschreibungen sind eine Methode zum Festlegen von Ausnahmen für den 
 
 Die Verbesserungen im Hinblick auf die URL-und URL-Klicks Daten umfassen Folgendes:
 
- - Anzeigen der vollständig angeklickten URL (einschließlich aller Abfrageparameter, die Teil der URL sind) im Abschnitt Klicks im URL-Flyout. Derzeit zeigen wir die URL-Domäne und den Pfad in der Titelleiste an. Diese Informationen werden erweitert, um die vollständige URL anzuzeigen.
+- Anzeigen der vollständig angeklickten URL (einschließlich aller Abfrageparameter, die Teil der URL sind) im Abschnitt Klicks im URL-Flyout. Derzeit zeigen wir die URL-Domäne und den Pfad in der Titelleiste an. Diese Informationen werden erweitert, um die vollständige URL anzuzeigen.
 
- - Fixes für URL-Filter (URL-URL-Domäne vs-URL-Domäne und-Pfad): Wir haben Aktualisierungen bei der Suche nach Nachrichten durchgeführt, die eine URL/Klick Urteil enthalten. Im Rahmen dieser Vorgehensweise haben wir die Unterstützung für protokollunabhängige Suchvorgänge aktiviert (was bedeutet, dass Sie direkt nach einer URL ohne http suchen können). Standardmäßig wird die URL-Suche dem http-Wert zugeordnet, sofern nicht explizit angegeben. Beispiel:
+- Fixes für URL-Filter (URL-URL-Domäne vs-URL-Domäne und-Pfad): Wir haben Aktualisierungen bei der Suche nach Nachrichten durchgeführt, die eine URL/Klick Urteil enthalten. Im Rahmen dieser Vorgehensweise haben wir die Unterstützung für protokollunabhängige Suchvorgänge aktiviert (was bedeutet, dass Sie direkt nach einer URL ohne http suchen können). Standardmäßig wird die URL-Suche dem http-Wert zugeordnet, sofern nicht explizit angegeben. Beispiel:
 
-   1. Suchen Sie mit und ohne das `http://` Präfix in den Filterfeldern "URL", "URL-Domäne" und "URL-Domäne und-Pfad". Dieses Verhalten ist konsistent und sollte dasselbe Ergebnis aufweisen.
+  1. Suchen Sie mit und ohne das `http://` Präfix in den Filterfeldern "URL", "URL-Domäne" und "URL-Domäne und-Pfad". Dieses Verhalten ist konsistent und sollte dasselbe Ergebnis aufweisen.
 
-   1. Suchen Sie nach dem `https://` Präfix in "URL". Wenn diese nicht vorhanden `http://` ist, wird das Präfix angenommen.
+  1. Suchen Sie nach dem `https://` Präfix in "URL". Wenn diese nicht vorhanden `http://` ist, wird das Präfix angenommen.
 
-   1. `/` am Anfang und Ende des "URL-Pfads" werden die Felder "URL-Domäne", "URL-Domäne" und "Pfad" ignoriert. `/` am Ende des Felds "URL" wird ignoriert.
+  1. `/` am Anfang und Ende des "URL-Pfads" werden die Felder "URL-Domäne", "URL-Domäne" und "Pfad" ignoriert. `/` am Ende des Felds "URL" wird ignoriert.
 
 ### <a name="phish-confidence-level"></a>Phishing-Zuverlässigkeitsstufe
 
@@ -247,12 +247,13 @@ Außerdem können Sie die Liste der Zielbenutzer bis zu einem Grenzwert von 3000
 > [!div class="mx-imgBorder"]
 > ![Am häufigsten verwendete Benutzer](../../media/Top_Targeted_Users.png)
 
-
 ### <a name="exchange-transport-rules"></a>Exchange-Transportregeln
+
 Im Rahmen der Datenanreicherung sollten Sie auch alle unterschiedlichen Transportregeln anzeigen können, die auf eine Nachricht angewendet wurden. Diese Informationen werden in der e-Mail-Rasteransicht angezeigt (um dies anzuzeigen, wählen Sie Spaltenoptionen im Raster aus und fügen die Exchange-Transport Regel aus den Spaltenoptionen im Raster hinzu) sowie Details Flyout in der e-Mail.
 Sie können sowohl die GUID als auch den Namen der Transportregeln sehen, die auf die Nachricht angewendet wurden. Darüber hinaus können Sie Nachrichten mit dem Namen der Transportregel suchen. Dies wäre eine "Contains"-Suche, was bedeutet, dass Sie auch mithilfe von partiellen Suchvorgängen suchen können.
 
 #### <a name="important-note"></a>Wichtiger Hinweis:
+
 Die Verfügbarkeit von ETR-Suche und-Namen hängt von der jeweiligen Rolle ab, die Ihnen zugewiesen wurde. Sie müssen über eine der folgenden Rollen/Berechtigungen verfügen, um die ETR-Namen und-Suche anzeigen zu können.  Wenn Ihnen keine der folgenden Rollen zugewiesen ist, können Sie die Namen der Transportregeln nicht anzeigen und Nachrichten mithilfe der ETR-Namen suchen. Sie können jedoch die ETR-Label-und GUID-Informationen in den e-Mail-Details anzeigen. Ihre anderen Erfahrungen rund um das Anzeigen von Datensätzen in e-Mail-Rastern, e-Mail-Flyouts, Filtern und Export werden nicht beeinträchtigt.
 
 - Nur Exo – Verhinderung von Datenverlust: all
