@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Überwachen und Verwalten der Entsorgung von Inhalten, unabhängig davon, ob Sie die Löschungsprüfung verwenden oder Inhalte automatisch entsprechend den von Ihnen konfigurierten Einstellungen gelöscht werden.
-ms.openlocfilehash: a0fd71aa1eb7c0a7eff97e783f4b0dfb8a50a915
-ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
+ms.openlocfilehash: dfea1cfece8a9faccced134cf30923527bd241f5
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48262238"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941366"
 ---
 # <a name="disposition-of-content"></a>Disposition von Inhalten
 
@@ -64,7 +64,7 @@ Wenn am Ende des Aufbewahrungszeitraums eine Löschungsprüfung ausgelöst wird:
   
 - Die von Ihnen ausgewählten Personen erhalten eine E-Mail-Benachrichtigung, dass für sie Inhalte zur Überprüfung bereitstehen. Bei diesen Prüfern kann es sich um einzelne Benutzer oder E-Mail-aktivierte Sicherheitsgruppen handeln. Beachten Sie, dass Benachrichtigungen wöchentlich gesendet werden.
     
-- Die Bearbeiter wechseln im Microsoft 365 Compliance Center zur Registerkarte **Disposition**, um den Inhalt zu überprüfen und zu entscheiden, ob er endgültig gelöscht, der Aufbewahrungszeitraum verlängert oder ein anderes Aufbewahrungsetikett angewendet werden soll.
+- Die Bearbeiter wechseln im Microsoft 365 Compliance Center zur Registerkarte **Disposition** , um den Inhalt zu überprüfen und zu entscheiden, ob er endgültig gelöscht, der Aufbewahrungszeitraum verlängert oder ein anderes Aufbewahrungsetikett angewendet werden soll.
 
 Eine Löschungsprüfung kann Inhalte in Exchange-Postfächern, SharePoint-Websites, OneDrive-Konten und Microsoft 365-Gruppen enthalten. Inhalte, die an diesen Speicherorten auf eine Löschungsprüfung warten, werden erst gelöscht, nachdem ein Prüfer die endgültige Löschung der Inhalte verfügt hat.
 
@@ -124,7 +124,7 @@ Inhalte, für die eine Löschungsprüfung ansteht, werden erst gelöscht, nachde
 
 ## <a name="disposition-of-records"></a>Disposition von Datensätzen
 
-Verwenden Sie die Registerkarte **Disposition** von der Seite **Datensatzverwaltung**, um Datensätze zu identifizieren, die jetzt automatisch oder nach einer Löschungsprüfung gelöscht werden. Diese Elemente zeigen **Verworfene Datensätze** in der Spalte **Typ** an. Beispiel:
+Verwenden Sie die Registerkarte **Disposition** von der Seite **Datensatzverwaltung** , um Datensätze zu identifizieren, die jetzt automatisch oder nach einer Löschungsprüfung gelöscht werden. Diese Elemente zeigen **Verworfene Datensätze** in der Spalte **Typ** an. Beispiel:
 
 ![Elemente, die ohne eine Löschungsprüfung verworfen wurden](../media/records-disposed2.png)
 
@@ -132,7 +132,9 @@ Elemente, die in der Registerkarte **Verworfene Elemente** für Datensatzbezeich
 
 > [!NOTE]
 > Diese Funktionalität basiert auf Informationen aus dem [einheitlichen Überwachungsprotokoll](search-the-audit-log-in-security-and-compliance.md) und erfordert daher, dass die Überwachung [aktiviert und durchsuchbar ist](turn-audit-log-search-on-or-off.md) damit die entsprechenden Ereignisse erfasst werden.
-    
+
+Suchen Sie für die Überwachung nach der **gelöschten Datei, die als Datensatz** gekennzeichnet ist.
+
 ## <a name="filter-and-export-the-views"></a>Filtern und Exportieren von Ansichten
 
 Wenn Sie auf der Seite **Disposition** eine Aufbewahrungsbezeichnung auswählen, können Sie mit der Registerkarte **Ausstehende Löschung** (sofern zutreffend) und der Registerkarte **Verworfene Elemente** die Ansichten filtern, damit Sie Elemente leichter finden können. 

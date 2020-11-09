@@ -68,6 +68,11 @@
           items:
             - name: Arbeiten mit Microsoft Consulting Services
               href: get-ready/apps-MCS.md
+        - name: Verwendung des Tools zur Bereitschaftsbewertung
+          href: get-ready/readiness-assessment-tool.md
+          items:
+            - name: 'Lösen von Problemen, die durch das Tool zur Bereitschaftsbewertung gefunden wurden'
+              href: get-ready/readiness-assessment-fix.md
     - name: Erste Schritte mit Microsoft Managed Desktop
       href: get-started/index.md
       items:

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Die erweiterte Überwachung in Microsoft 365 bietet neue Überwachungsfunktionen, die Ihre Organisation bei forensischen und Complianceuntersuchungen unterstützen.
-ms.openlocfilehash: c63280825c04d401c0cdc44d7128031c3b7ffdd8
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 6524eadfd1622771e0da5bb8bcec73e11c0cfcdf
+ms.sourcegitcommit: 751dc531f0410ee075c179efe409a01664483ee2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398556"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48925615"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Erweiterte Überwachung in Microsoft 365
 
@@ -36,7 +36,7 @@ In diesem Artikel finden Sie eine Übersicht über die Funktionen für die erwei
 
 ## <a name="long-term-retention-of-audit-logs"></a>Langfristige Aufbewahrung von Überwachungsprotokollen
 
-Die erweiterte Überwachung bewahrt alle Exchange-, SharePoint- und Azure Active Directory-Überwachungsdatensätze für ein Jahr auf. Dies geschieht durch eine standardmäßige Aufbewahrungsrichtlinie für Überwachungsprotokolle, die jeden Überwachungsdatensatz ein Jahr lang aufbewahrt, der den Wert von **Exchange**, **SharePoint** oder **AzureActiveDirectory** für die Eigenschaft **Workload** aufweist (die den Dienst anzeigt, in dem die Aktivität aufgetreten ist). Das Aufbewahren von Überwachungsaufzeichnungen über einen längeren Zeitraum kann bei laufenden forensischen oder Compliance-Untersuchungen hilfreich sein. Weitere Informationen hierzu finden Sie im Abschnitt "Standardmäßige Aufbewahrungsrichtlinie für Überwachungsprotokolle" in [Verwalten von Aufbewahrungsrichtlinien für Überwachungsprotokolle](audit-log-retention-policies.md#default-audit-log-retention-policy).
+Die erweiterte Überwachung bewahrt alle Exchange-, SharePoint- und Azure Active Directory-Überwachungsdatensätze für ein Jahr auf. Dies geschieht durch eine standardmäßige Aufbewahrungsrichtlinie für Überwachungsprotokolle, die jeden Überwachungsdatensatz ein Jahr lang aufbewahrt, der den Wert von **Exchange** , **SharePoint** oder **AzureActiveDirectory** für die Eigenschaft **Workload** aufweist (die den Dienst anzeigt, in dem die Aktivität aufgetreten ist). Das Aufbewahren von Überwachungsaufzeichnungen über einen längeren Zeitraum kann bei laufenden forensischen oder Compliance-Untersuchungen hilfreich sein. Weitere Informationen hierzu finden Sie im Abschnitt "Standardmäßige Aufbewahrungsrichtlinie für Überwachungsprotokolle" in [Verwalten von Aufbewahrungsrichtlinien für Überwachungsprotokolle](audit-log-retention-policies.md#default-audit-log-retention-policy).
 
 Außerdem wird es zukünftig möglich sein, Überwachungsprotokolle 10 Jahre lang aufzubewahren. Die zehnjährige Aufbewahrung von Überwachungsprotokollen ist bei langfristigen Untersuchungen und zur Einhaltung behördlicher, rechtlicher und interner Vorgaben hilfreich.
 
@@ -107,7 +107,7 @@ Sie können auch die Befehle [Search-UnifiedAuditLog -Operations Send](https://d
 
 ### <a name="searchqueryinitiatedexchange"></a>SearchQueryInitiatedExchange
 
-Das SearchQueryInitiatedExchange-Ereignis wird ausgelöst, wenn jemand die Suchleiste in Outlook oder Outlook im Web verwendet, um in einem Postfach nach Elementen zu suchen. Die mit der Untersuchung beauftragten Personen können das SearchQueryInitiatedExchange-Ereignis verwenden, um festzustellen, ob ein Angreifer, der möglicherweise ein Konto manipuliert hat, nach vertraulichen Informationen im Postfach gesucht oder versucht hat, darauf zuzugreifen. Die Überwachungsaufzeichnung für ein SearchQueryInitiatedExchange-Ereignis enthält Informationen wie z. B. den tatsächlichen Suchabfragetext und ob die Suche im Outlook-Desktop-Client oder in Outlook im Web durchgeführt wurde. Durch die Überprüfung der Suchabfragen, die ein Angreifer durchgeführt hat, kann die ermittelnde Person besser verstehen, warum nach den E-Mail-Daten gesucht wurde.
+Das SearchQueryInitiatedExchange-Ereignis wird ausgelöst, wenn jemand die Suchleiste in Outlook im Web (OWA) verwendet, um in einem Postfach nach Elementen zu suchen. Die mit der Untersuchung beauftragten Personen können das SearchQueryInitiatedExchange-Ereignis verwenden, um festzustellen, ob ein Angreifer, der möglicherweise ein Konto manipuliert hat, nach vertraulichen Informationen im Postfach gesucht oder versucht hat, darauf zuzugreifen. Die Überwachungsaufzeichnung für ein SearchQueryInitiatedExchange-Ereignis enthält Informationen wie z. B. den tatsächlichen Suchabfragetext und ob die Suche im Outlook-Desktop-Client oder in Outlook im Web durchgeführt wurde. Durch die Überprüfung der Suchabfragen, die ein Angreifer durchgeführt hat, kann die ermittelnde Person besser verstehen, warum nach den E-Mail-Daten gesucht wurde.
 
 Um nach SearchQueryInitiatedExchange-Überwachungsaufzeichnungen zu suchen, können Sie im Compliance Center im [Überwachungsprotokoll-Suchtool](search-the-audit-log-in-security-and-compliance.md) in der Dropdownliste der **Suchaktivitäten** nach der Aktivität **E-Mail-Suche durchgeführt** suchen.
 
@@ -120,7 +120,7 @@ Sie können auch den Befehl [Search-UnifiedAuditLog -Operations SearchQueryIniti
 
 ### <a name="searchqueryinitiatedsharepoint"></a>SearchQueryInitiatedSharePoint
 
-Ähnlich wie bei der Suche nach Postfachelementen wird das SearchQueryInitiatedSharePoint-Ereignis ausgelöst, wenn jemand nach Elementen auf der SharePoint-Homepage, auf Microsoft Teams-Websites, Websites für die Zusammenarbeit und Hub-Websites in Ihrer Organisation sucht. Die ermittelnden Personen können das SearchQueryInitiatedSharePoint-Ereignis verwenden, um festzustellen, ob ein Angreifer versucht hat, vertrauliche Informationen in SharePoint zu finden (und möglicherweise darauf zugegriffen). Die Überwachungsaufzeichnung für ein SearchQueryInitiatedSharePoint-Ereignis enthält außerdem den eigentlichen Suchabfragetext. Durch die Überprüfung der Suchabfragen, die ein Angreifer durchgeführt hat, kann die ermittelnde Person besser den Zweck und den Umfang der Dateidaten nachvollziehen, nach denen gesucht wurde.
+Ähnlich wie bei der Suche nach Postfachelementen wird das SearchQueryInitiatedSharePoint-Ereignis ausgelöst, wenn jemand nach Elementen auf der SharePoint-Homepage für Ihre Organisation sucht. Die ermittelnden Personen können das SearchQueryInitiatedSharePoint-Ereignis verwenden, um festzustellen, ob ein Angreifer versucht hat, vertrauliche Informationen in SharePoint zu finden (und möglicherweise darauf zugegriffen). Die Überwachungsaufzeichnung für ein SearchQueryInitiatedSharePoint-Ereignis enthält außerdem den eigentlichen Text der Suchabfrage. Durch die Überprüfung der Suchabfragen, die ein Angreifer durchgeführt hat, kann die ermittelnde Person besser den Zweck und den Umfang der Dateidaten nachvollziehen, nach denen gesucht wurde.
 
 Um nach SearchQueryInitiatedSharePoint-Überwachungsaufzeichnungen zu suchen, können Sie im Compliance Center im [Überwachungsprotokoll-Suchtool](search-the-audit-log-in-security-and-compliance.md) in der Dropdownliste der **Suchaktivitäten** nach der Aktivität **SharePoint-Suche durchgeführt** suchen.
 
