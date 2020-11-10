@@ -18,46 +18,46 @@ search.appverid:
 - MOE150
 - MET150
 description: Die erweiterte Überwachung in Microsoft 365 bietet neue Überwachungsfunktionen, die Ihre Organisation bei forensischen und Complianceuntersuchungen unterstützen.
-ms.openlocfilehash: 6524eadfd1622771e0da5bb8bcec73e11c0cfcdf
-ms.sourcegitcommit: 751dc531f0410ee075c179efe409a01664483ee2
+ms.openlocfilehash: 51ec75cc8d8ae554ea9cbef3a9ea2aa18171e70a
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48925615"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48950994"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Erweiterte Überwachung in Microsoft 365
 
-Die [einheitliche Überwachungsfunktionen](search-the-audit-log-in-security-and-compliance.md) in Microsoft 365 bieten Organisationen Einblick in viele Arten von überwachten Aktivitäten über viele verschiedene Dienste in Microsoft 365 hinweg. Die erweiterte Überwachung hilft Organisationen dabei, forensische und Compliance-Untersuchungen durchzuführen, da hierfür die Aufbewahrungsdauer des Überwachungsprotokolls verlängert wird. Dadurch wird der Zugang zu wichtigen Ereignissen ermöglicht, die für die Ermittlung des Umfangs der Kompromittierung hilfreich sind, sowie schneller Zugriff auf die Office 365-Verwaltungsaktivitäts-API.
+Die [Vereinheitlichte Überwachungsfunktionalität](search-the-audit-log-in-security-and-compliance.md) in Microsoft 365 bietet Organisationen eine Einsicht in viele verschiedene Typen von überwachten Aktivitäten in allen möglichen Diensten in Microsoft 365. Die erweiterte Überwachung hilft Organisationen dabei, forensische und Compliance-Untersuchungen durchzuführen, da hierfür die Aufbewahrungsdauer des Überwachungsprotokolls verlängert wird. Dadurch wird der Zugang zu wichtigen Ereignissen ermöglicht, die für die Ermittlung des Umfangs der Kompromittierung hilfreich sind, sowie schneller Zugriff auf die Office 365-Verwaltungsaktivitäts-API.
 
 > [!NOTE]
-> Die erweiterte Überwachung ist für Organisationen mit einem Office 365 E5- oder Microsoft 365 Enterprise E5-Abonnement verfügbar. Darüber hinaus kann Benutzern eine Microsoft 365 E5 Compliance- oder E5 eDiscovery und Überwachungs-Add-On-Lizenz zugewiesen werden, wenn für Features für die erweiterte Überwachung eine Lizenzierung pro Benutzer erforderlich ist, wie dies bei der langfristigen Aufbewahrung von Überwachungsprotokollen und für den Zugang zu wichtigen Ereignissen für Untersuchungen der Fall ist. Weitere Informationen zur Lizenzierung finden Sie unter [Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit).
+> Erweiterte Überwachung steht für Organisationen mit einem Office 365 E5- oder Microsoft 365 Enterprise E5-Abonnement zur Verfügung. Darüber hinaus kann Benutzern eine Microsoft 365 E5 Compliance- oder E5 eDiscovery und Überwachungs-Add-On-Lizenz zugewiesen werden, wenn für Features für die erweiterte Überwachung eine Lizenzierung pro Benutzer erforderlich ist, wie dies bei der langfristigen Aufbewahrung von Überwachungsprotokollen und für den Zugang zu wichtigen Ereignissen für Untersuchungen der Fall ist. Weitere Informationen zu Lizenzen finden Sie unter [Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit).
 
-In diesem Artikel finden Sie eine Übersicht über die Funktionen für die erweiterte Überwachung.
+In diesem Artikel finden Sie eine Übersicht über die Funktionen für die Erweiterte Überwachung.
 
 ## <a name="long-term-retention-of-audit-logs"></a>Langfristige Aufbewahrung von Überwachungsprotokollen
 
-Die erweiterte Überwachung bewahrt alle Exchange-, SharePoint- und Azure Active Directory-Überwachungsdatensätze für ein Jahr auf. Dies geschieht durch eine standardmäßige Aufbewahrungsrichtlinie für Überwachungsprotokolle, die jeden Überwachungsdatensatz ein Jahr lang aufbewahrt, der den Wert von **Exchange** , **SharePoint** oder **AzureActiveDirectory** für die Eigenschaft **Workload** aufweist (die den Dienst anzeigt, in dem die Aktivität aufgetreten ist). Das Aufbewahren von Überwachungsaufzeichnungen über einen längeren Zeitraum kann bei laufenden forensischen oder Compliance-Untersuchungen hilfreich sein. Weitere Informationen hierzu finden Sie im Abschnitt "Standardmäßige Aufbewahrungsrichtlinie für Überwachungsprotokolle" in [Verwalten von Aufbewahrungsrichtlinien für Überwachungsprotokolle](audit-log-retention-policies.md#default-audit-log-retention-policy).
+Erweiterte Überwachung bewahrt alle Exchange-, SharePoint- und Azure Active Directory Audit-Datensätze für ein Jahr auf. Dies geschieht durch eine standardmäßige Aufbewahrungsrichtlinie für Überwachungsprotokolle, die jeden Überwachungsdatensatz ein Jahr lang aufbewahrt, der den Wert von **Exchange** , **SharePoint** oder **AzureActiveDirectory** für die Eigenschaft **Workload** aufweist (die den Dienst anzeigt, in dem die Aktivität aufgetreten ist). Die Aufbewahrung von Audit-Datensätzen auf längere Zeiträume kann mit laufenden forensischen und Compliance-Untersuchungen helfen. Weitere Informationen finden Sie unter dem Abschnitt „Standardmäßige Aufbewahrungsrichtlinie für Überwachungsprotokolle“ in [Verwalten von Aufbewahrungsrichtlinien für Überwachungsprotokolle](audit-log-retention-policies.md#default-audit-log-retention-policy).
 
-Außerdem wird es zukünftig möglich sein, Überwachungsprotokolle 10 Jahre lang aufzubewahren. Die zehnjährige Aufbewahrung von Überwachungsprotokollen ist bei langfristigen Untersuchungen und zur Einhaltung behördlicher, rechtlicher und interner Vorgaben hilfreich.
+Außerdem ist es nun möglich, Überwachungsprotokolle 10 Jahre lang aufzubewahren. Die zehnjährige Aufbewahrung von Überwachungsprotokollen ist bei langfristigen Untersuchungen und zur Einhaltung behördlicher, rechtlicher und interner Vorgaben hilfreich.
 
 > [!NOTE]
-> Für die zehnjährige Aufbewahrung von Überwachungsprotokollen wird eine zusätzliche Lizenz erforderlich sein. Diese neue Lizenz wird Anfang 2021 verfügbar sein. Weitere Informationen hierzu finden Sie im Abschnitt [Häufig gestellte Fragen zur erweiterten Überwachung](#faqs-for-advanced-audit) in diesem Artikel.
+> Für die zehnjährige Aufbewahrung von Überwachungsprotokollen wird eine zusätzliche Lizenz erforderlich sein. Diese neue Lizenz wird Anfang 2021 verfügbar sein. Weitere Informationen hierzu finden Sie im Abschnitt [Häufig gestellte Fragen zur Erweiterten Überwachung](#faqs-for-advanced-audit) in diesem Artikel.
 
 ### <a name="audit-log-retention-policies"></a>Aufbewahrungsrichtlinien für Überwachungsprotokolle
 
-Alle Überwachungsdatensätze, die in anderen Diensten generiert wurden, die nicht unter die Standardaufbewahrungsrichtlinie für Überwachungsprotokolle fallen (im vorherigen Abschnitt beschrieben), werden für 90 Tage aufbewahrt. Sie können jedoch benutzerdefinierte Aufbewahrungsrichtlinien für Überwachungsprotokolle erstellen, um andere Überwachungsaufzeichnungen bis zu 10 Jahre lang aufzubewahren. Sie können eine Richtlinie erstellen, um Überwachungsaufzeichnungen auf der Grundlage eines oder mehrerer der folgenden Kriterien aufzubewahren:
+Alle Überwachungsdatensätze, die in anderen Diensten generiert wurden, die nicht unter die Standardaufbewahrungsrichtlinie für Überwachungsprotokolle fallen (im vorherigen Abschnitt beschrieben), werden für 90 Tage aufbewahrt. Sie können jedoch benutzerdefinierte Aufbewahrungsrichtlinien für Überwachungsprotokolle erstellen, um andere Überwachungsaufzeichnungen bis zu 10 Jahre lang aufzubewahren. Sie können eine Richtlinie erstellen, um Überwachungsdatensätze auf der Grundlage eines oder mehrerer der folgenden Kriterien aufzubewahren:
 
-- Der Microsoft 365-Dienst, in dem die überwachten Aktivitäten ausgeführt werden
+- Der Microsoft 365-Dienst, in dem die überwachten Aktivitäten ausgeführt werden.
 
 - Bestimmte überwachte Aktivitäten
 
-- Der Benutzer, der eine überwachte Aktivität ausführt
+- Der Benutzer, der eine überwachte Aktivität ausführt.
 
 Sie können auch festlegen, wie lange Überwachungsdatensätze, die der Richtlinie entsprechen, aufbewahrt werden, und eine Prioritätsstufe angeben, damit bestimmte Richtlinien Vorrang vor anderen Richtlinien haben. Beachten Sie außerdem, dass jede benutzerdefinierte Aufbewahrungsrichtlinie für Überwachungsprotokolle Vorrang vor der Standardaufbewahrungsrichtlinie für Überwachungsprotokolle hat, wenn Sie für einige oder alle Benutzer in Ihrer Organisation Exchange-, SharePoint- oder Azure Active Directory-Überwachungsaufzeichnungen weniger als ein Jahr lang (oder für 10 Jahre) aufbewahren möchten. Weitere Informationen finden Sie unter [Verwalten der Aufbewahrungsrichtlinien für Überwachungsprotokolle](audit-log-retention-policies.md).
 
 ## <a name="access-to-crucial-events-for-investigations"></a>Zugriff auf wichtige Ereignisse für Untersuchungen
 
-Die erweiterte Überwachung hilft Organisationen dabei, forensische und Compliance-Untersuchungen durchzuführen durch die Möglichkeit, auf wichtige Ereignisse zuzugreifen wie beispielsweise: wann auf E-Mail-Elemente zugegriffen wurde, wann auf E-Mail-Elemente geantwortet wurde bzw. diese weitergeleitet wurden sowie wann und wonach ein Benutzer in Exchange Online und SharePoint Online gesucht hat. Diese wichtigen Ereignisse können Ihnen dabei helfen, mögliche Verstöße zu untersuchen und das Ausmaß der Kompromittierung zu ermitteln.  Bei der erweiterten Überwachung werden die folgenden wichtigen Ereignisse protokolliert:
+Die Erweiterte Überwachung hilft Organisationen dabei, forensische und Compliance-Untersuchungen durchzuführen durch die Möglichkeit, auf wichtige Ereignisse zuzugreifen, wie z.B.: wann auf E-Mail-Elemente zugegriffen wurde, wann auf E-Mail-Elemente geantwortet wurde bzw. diese weitergeleitet wurden sowie wann und wonach ein Benutzer in Exchange Online und SharePoint Online gesucht hat. Diese wichtigen Ereignisse können Ihnen dabei helfen, mögliche Verstöße zu untersuchen und das Ausmaß der Kompromittierung zu ermitteln. Bei der erweiterten Überwachung werden die folgenden wichtigen Ereignisse protokolliert:
 
 - [MailItemsAccessed](#mailitemsaccessed)
 
@@ -75,11 +75,11 @@ Die MailItemsAccessed-Postfachaktion ersetzt "MessageBind" in der Postfachüberw
 
 - "MessageBind" war nur für den AuditAdmin-Benutzer-Anmeldetyp konfigurierbar und galt nicht für Aktionen von Stellvertretungen oder Besitzern. "MailItemsAccessed" gilt für alle Anmeldetypen.
 
-- "MessageBind" betraf nur den Zugriff durch einen E-Mail-Client. Es galt nicht für Synchronisierungsaktivitäten. MailItemsAccessed-Ereignisse werden sowohl durch Bindungs als auch Synchronisierungszugriffstypen ausgelöst.
+- "MessageBind" betraf nur den Zugriff durch einen E-Mail-Client. MailItemsAccessed-Ereignisse werden sowohl durch Bindungs als auch Synchronisierungszugriffstypen ausgelöst.
 
 - MessageBind-Aktionen löste beim mehrfachen Zugriff auf dieselbe E-Mail-Nachricht die Erstellung mehrerer Überwachungsdatensätze aus und führte dadurch zu überfüllten Überwachungsprotokollen. Im Gegensatz dazu werden MailItemsAccessed-Ereignisse in weniger Überwachungsdatensätzen aggregiert.
 
-Informationen zu Überwachungsdatensätzen für MailItemsAccessed-Aktivitäten finden Sie unter [Verwenden der erweiterten Überwachung zur Untersuchung kompromittierter Konten](mailitemsaccessed-forensics-investigations.md).
+Informationen zu Überwachungsdatensätzen für MailItemsAccessed-Aktivitäten finden Sie unter [Verwenden der Erweiterten Überwachung zur Untersuchung kompromittierter Konten](mailitemsaccessed-forensics-investigations.md).
 
 Um nach MailItemsAccessed-Überwachungsaufzeichnungen zu suchen, können Sie im Microsoft 365 Compliance Center im [Überwachungsprotokoll-Suchtool](search-the-audit-log-in-security-and-compliance.md) in der Dropdownliste der **Exchange-Postfachaktivitäten** nach der Aktivität **MailItemsAccessed** (Postfachelemente, auf die zugegriffen wurde) suchen.
 
@@ -133,23 +133,23 @@ Sie können auch den Befehl [Search-UnifiedAuditLog -Operations SearchQueryIniti
 
 ## <a name="high-bandwidth-access-to-the-office-365-management-activity-api"></a>Zugriff mit hoher Bandbreite auf die Office 365-Verwaltungsaktivitäts-API
 
-Organisationen, die über die Office 365-Verwaltungsaktivitäts-API auf Überwachungsprotokolle zugreifen, waren durch Drosselungsgrenzwerte auf Herausgeberebene eingeschränkt. Dies bedeutete, dass der Grenzwert für einen Herausgeber, der Daten im Namen mehrerer Kunden per Pull abruft, für all diese Kunden zusammen galt.
+Organisationen, die über die Office 365-Verwaltungsaktivitäts-API auf Überwachungsprotokolle zugreifen, waren durch Drosselungsgrenzwerte auf Herausgeberebene eingeschränkt. Dies bedeutet, dass der Grenzwert für einen Herausgeber, der Daten im Namen mehrerer Kunden per Pull abruft, für all diese Kunden zusammen galt.
 
-Mit der Veröffentlichung der erweiterten Überwachung wechseln wir von einem Grenzwert auf Herausgeberebene zu einem Grenzwert auf Mandantenebene. Dadurch erhält jede Organisation ein eigenes, vollständig zugewiesenes Bandbreitenkontingent erhält für den Zugriff auf ihre Überwachungsdaten. Die Bandbreite ist kein statischer, vordefinierter Grenzwert, sondern wird auf der Grundlage einer Kombination von Faktoren angepasst, beispielweise basierend auf der Anzahl der Arbeitsplätze in der Organisation oder der Tatsache, dass E5-Organisationen mehr Bandbreite als Nicht-E5-Organisationen erhalten.
+Mit der Veröffentlichung der Erweiterten Überwachung wechseln wir von einem Grenzwert auf Herausgeberebene zu einem Grenzwert auf Mandantenebene. Dadurch erhält jede Organisation ein eigenes, vollständig zugewiesenes Bandbreitenkontingent für den Zugriff auf ihre Überwachungsdaten. Die Bandbreite ist kein statischer, vordefinierter Grenzwert, sondern wird auf der Grundlage einer Kombination von Faktoren angepasst, beispielweise basierend auf der Anzahl der Arbeitsplätze in der Organisation oder der Tatsache, dass E5-Organisationen mehr Bandbreite als Nicht-E5-Organisationen erhalten.
 
-Allen Organisationen ist anfänglich eine Baseline von 2.000-Anforderungen pro Minute zugeordnet. Dieser Wert wird abhängig von der Anzahl der Arbeitsplätze und Lizenzabonnements in einer Organisation dynamisch erhöht. E5-Organisationen erhalten ungefähr doppelt so viel Bandbreite wie Nicht-E5-Organisationen. Zum Schutz des Diensts gibt es auch eine Obergrenze für die maximale Bandbreite.
+Allen Organisationen ist anfänglich eine Baseline von 2 000-Anforderungen pro Minute zugeordnet. Dieser Wert wird abhängig von der Anzahl der Arbeitsplätze und Lizenzabonnements in einer Organisation dynamisch erhöht. E5-Organisationen erhalten ungefähr doppelt so viel Bandbreite wie Nicht-E5-Organisationen. Zum Schutz des Diensts gibt es auch eine Obergrenze für die maximale Bandbreite.
 
 Weitere Informationen finden Sie im Abschnitt "API-Drosselung" in der [Referenz der Office 365-Verwaltungsaktivitäts-API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling).
 
 ## <a name="faqs-for-advanced-audit"></a>Häufig gestellte Fragen (FAQs) zur erweiterten Überwachung
 
-**Benötigt jeder Benutzer eine E5-Lizenz, um von der erweiterten Überwachung profitieren zu können?**
+**Benötigt jeder Benutzer eine E5-Lizenz, um von der Erweiterten Überwachung profitieren zu können?**
 
-Dem Benutzer muss eine E5-Lizenz zugewiesen werden, um von der erweiterten Überwachung auf Benutzerebene profitieren zu können. Es gibt einige Funktionen, die überprüfen, ob die entsprechende Lizenz vorliegt, bevor dem Benutzer das Feature bereitgestellt wird. Wenn Sie beispielsweise die Überwachungseinträge für einen Benutzer beibehalten möchten, dem keine E5-Lizenz zugeordnet ist, die noch mindestens 90 Tage gültig ist, wird eine Fehlermeldung angezeigt.
+Dem Benutzer muss eine E5-Lizenz zugewiesen werden, um von der Erweiterten Überwachung auf Benutzerebene profitieren zu können. Es gibt einige Funktionen, die überprüfen, ob die entsprechende Lizenz vorliegt, bevor dem Benutzer das Feature bereitgestellt wird. Wenn Sie beispielsweise die Überwachungseinträge für einen Benutzer beibehalten möchten, dem keine E5-Lizenz zugeordnet ist, die noch mindestens 90 Tage gültig ist, wird eine Fehlermeldung angezeigt.
 
 **Meine Organisation verfügt über ein E5-Abonnement. Muss ich irgendetwas tun, um Zugriff auf die Überwachungsaufzeichnungen zu wichtigen Ereignissen zu erhalten?**
 
-Anspruchsberechtigte Kunden müssen nichts tun, um auf wichtige Überwachungsereignisse zugreifen zu können. Wie bereits zuvor in diesem Artikel erläutert, verhindert die durch das Problem des Lizenzabgleichs verursachte Latenzzeit jedoch möglicherweise, dass Überwachungsdatensätze für wichtige Ereignisse beim Durchsuchen eines Überwachungsprotokolls zurückgegeben werden. Folgen Sie in so einem Fall den Anweisungen in den vorherigen häufig gestellten Fragen zum vorübergehenden Problem des Lizenzabgleichs.
+Für berechtigte Kunden und Benutzer, denen eine entsprechende Lizenz zugewiesen ist, gibt es keine Aktion, mit der sie Zugriff auf wichtige Überwachungsereignisse erlangen können.
 
 **Wann wird die neue Add-On-Lizenz für die zehnjährige Aufbewahrung von Überwachungsprotokollen verfügbar sein?**
 

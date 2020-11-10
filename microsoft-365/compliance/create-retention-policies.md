@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mithilfe einer Aufbewahrungsrichtlinie können Sie die Inhalte, die Benutzer mit E-Mails, Dokumenten und Unterhaltungen generieren, sehr effizient verwalten. Bewahren Sie auf, was Sie wollen, und werden Sie los, was Sie nicht mehr wollen.
-ms.openlocfilehash: 4e4ced42424abe024a1230c24814c420a59ed3dc
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 3b68de3594e4a31040a6ee0698c3c600490bd5d9
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919987"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48950952"
 ---
 # <a name="create-and-configure-retention-policies"></a>Erstellen und Konfigurieren von Aufbewahrungsrichtlinien
 
@@ -169,9 +169,9 @@ Verwenden Sie die folgenden Anweisungen für Aufbewahrungsrichtlinien, die für 
 
 Der Speicherort von **Exchange-E-Mail** unterstützt die Aufbewahrung von E-Mail-, Kalender- und anderen Postfachelementen der Benutzer, indem die Aufbewahrungseinstellungen auf Postfachebene angewendet werden.
 
-Folgende E-Mail-Elemente werden einbezogen: E-Mail-Nachrichten (einschließlich Entwürfe) mit beliebigen Anlagen, Aufgaben und Kalendereinträge, wenn sie ein Enddatum haben, sowie Notizen. Kontakte und alle Aufgaben und Kalenderelemente, die kein Enddatum aufweisen, werden nicht einbezogen. Andere in einem Postfach gespeicherte Elemente, z. B. gespeicherte Skype- und Teams-Nachrichten, werden mit diesem Speicherort nicht einbezogen. Diese Elemente haben eigene Aufbewahrungsorte.
+Ausführliche Informationen zu den Elementen, die beim Konfigurieren von Aufbewahrungseinstellungen für Exchange enthalten und ausgeschlossen werden, finden Sie unter [Lieferumfang für Aufbewahrung und Löschung](retention-policies-exchange.md#whats-included-for-retention-and-deletion).
 
-Obwohl eine Microsoft 365-Gruppe über ein Exchange-Postfach verfügt, bezieht eine Aufbewahrungsrichtlinie, die den gesamten **Exchange-E-Mail-Speicherort** umfasst, keine Inhalte in Microsoft 365-Gruppenpostfächern mit ein. Wenn Sie Inhalte in diesen Postfächern aufbewahren möchten, wählen Sie den Speicherort **Microsoft 365-Gruppen** aus.
+Obwohl eine Microsoft 365-Gruppe über ein Exchange-Postfach verfügt, bezieht eine Aufbewahrungsrichtlinie, die den gesamten **Exchange-E-Mail-Speicherort** umfasst, keine Inhalte in Microsoft 365-Gruppenpostfächern mit ein. Wenn Sie Inhalte in diesen Postfächern aufbewahren möchten, wählen Sie den Speicherort **Microsoft 365-Gruppen** aus.
 
 Der Speicherort von **öffentlichen Exchange-Ordnern** wendet die Aufbewahrungseinstellungen auf alle öffentlichen Ordner an und kann nicht auf der Ordner- oder Postfachebene angewendet werden.
 
@@ -179,12 +179,9 @@ Der Speicherort von **öffentlichen Exchange-Ordnern** wendet die Aufbewahrungse
 
 Wenn Sie den Speicherort **SharePoint-Websites** auswählen, kann Ihre Aufbewahrungsrichtlinie Dokumente auf SharePoint-Kommunikationswebsites, auf Teamwebsites, die nicht über Microsoft 365-Gruppen verbunden sind, und auf klassischen Websites aufbewahren und löschen. Teamwebsites, die über Microsoft 365-Gruppen verbunden sind, werden bei dieser Option nicht unterstützt. Verwenden Sie stattdessen den Speicherort **Office 365-Gruppen** , der für Inhalte im Postfach der Gruppe, deren Website und Dateien gilt.
 
-Obwohl die Aufbewahrungsrichtlinie auf Websiteebene angewendet wird, werden Aufbewahrungseinstellungen nur auf Dokumente angewendet. Aufbewahrungseinstellungen gelten nicht für Organisationsstrukturen, die Bibliotheken, Listen und Ordner innerhalb der Website umfassen.
+Obwohl die Aufbewahrungsrichtlinie auf Websiteebene angewendet wird, werden Aufbewahrungseinstellungen nur auf Dokumente angewendet. Ausführliche Informationen zu den Elementen, die beim Konfigurieren von Aufbewahrungseinstellungen für SharePoint und OneDrive enthalten und ausgeschlossen werden, finden Sie unter [Lieferumfang für Aufbewahrung und Löschung](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion). 
 
 Wenn Sie Ihre Speicherorte für SharePoint-Websites oder OneDrive-Konten angeben, benötigen Sie keine Berechtigungen für den Zugriff auf die Websites und es erfolgt keine Validierung, wenn Sie die URL auf der Seite **Speicherorte bearbeiten** angeben. Die von Ihnen angegebenen SharePoint-Websites werden jedoch vom Assistenten dahingehend überprüft, ob sie existieren. Wenn die Überprüfung fehlschlägt, wird eine Meldung angezeigt, die besagt, dass die Überprüfung für die eingegebene URL fehlgeschlagen ist. Der Assistent erstellt die Aufbewahrungsrichtlinie erst, wenn die Überprüfung erfolgreich war. Wenn diese Meldung angezeigt wird, wechseln Sie zurück in den Assistenten, um die URL zu ändern oder die Website aus der Aufbewahrungsrichtlinie zu entfernen.
-
-> [!NOTE]
-> SharePoint-Websites müssen indiziert sein, damit die Aufbewahrungseinstellungen angewendet werden können. Wenn Elemente in SharePoint-Dokumentbibliotheken jedoch so konfiguriert sind, dass sie nicht in den Suchergebnissen angezeigt werden, werden diese Elemente nicht aus den Aufbewahrungseinstellungen ausgeschlossen.
 
 Wenn Sie einzelne OneDrive-Konten angeben möchten, die ein- oder ausgeschlossen werden sollen, hat die URL das folgende Format: `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
 
@@ -289,4 +286,4 @@ Diese Aktualisierung erfolgt normalerweise ziemlich schnell, kann aber mehrere T
 
 ## <a name="locking-the-policy-to-prevent-changes"></a>Sperren der Richtlinie, um Änderungen vorzubeugen
 
-Wenn Sie sicherstellen möchten, das niemand die Richtlinie deaktivieren, löschen oder weniger restriktiv machen kann, lesen Sie [Erhaltungssperre verwenden, um Änderungen an Aufbewahrungsrichtlinien und Richtlinien der Aufbewahrungsbezeichnung einzuschränken](retention-preservation-lock.md).
+Wenn Sie sicherstellen müssen, das niemand die Richtlinie deaktivieren, löschen oder weniger restriktiv machen kann, lesen Sie [Verwenden der Erhaltungssperre zum Einschränken von Änderungen an Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungsrichtlinien](retention-preservation-lock.md).

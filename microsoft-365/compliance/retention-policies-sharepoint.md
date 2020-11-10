@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen, wie die Aufbewahrung für SharePoint und OneDrive funktioniert.
-ms.openlocfilehash: 258cc8e777ca39d2528e520ff5634086bff302c7
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: 84191cf7df1c8382b336ecce47c50ca24bc2aede
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804540"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951108"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Informationen zur Aufbewahrung für SharePoint und OneDrive
 
@@ -38,16 +38,20 @@ Informationen zu anderen Arbeitsbereichen finden Sie unter:
 
 ## <a name="whats-included-for-retention-and-deletion"></a>Lieferumfang für Aufbewahrung und Löschung
 
-Alle Dateien, die auf SharePoint oder OneDrive-Websites gespeichert sind, können aufbewahrt werden, indem eine Aufbewahrungsrichtlinie oder Aufbewahrungsbezeichnung angewendet wird.
+Alle Dateien, die auf SharePoint oder OneDrive-Websites gespeichert sind, können aufbewahrt werden, indem eine Aufbewahrungsrichtlinie oder Aufbewahrungsbezeichnung angewendet wird. 
 
 Die folgenden Dateien können gelöscht werden:
 
-- Wenn Sie eine Aufbewahrungsrichtlinie verwenden: Alle Dateien in Dokumentbibliotheken, inklusive automatisch erstellte SharePoint-Dokumentbibliotheken wie z. B. **Website-Objekte** .
+- Wenn Sie eine Aufbewahrungsrichtlinie verwenden: Alle Dateien in Dokumentbibliotheken, inklusive automatisch erstellte SharePoint-Dokumentbibliotheken wie z. B. **Website-Objekte**.
     
 - Wenn Sie Aufbewahrungsbezeichnungen verwenden: Alle Dateien in allen Dokumentbibliotheken und alle Dateien im Stammverzeichnis, die sich nicht in einem Ordner befinden.
     
-    Wenn Sie eine [KQL-Abfrage mit einer Richtlinie für die automatische Anwendung einer Aufbewahrungsbezeichnung](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties) verwenden, können Sie Dokumentbibliotheken mithilfe des folgenden Eintrags ausschließen: `NOT(DocumentLink:"<URL to document library>")`
+> [!TIP]
+> Wenn Sie eine [Abfrage mit einer Richtlinie für die automatische Anwendung einer Aufbewahrungsbezeichnung](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties) verwenden, können Sie Dokumentbibliotheken mithilfe des folgenden Eintrags ausschließen: `NOT(DocumentLink:"<URL to document library>")`
 
+Aufbewahrungseinstellungen gelten nicht für Organisationsstrukturen, die Bibliotheken, Listen und Ordner umfassen. Oder für Elemente in Systemlisten, die von SharePoint verwendete ausgeblendete Listen zum Verwalten des Systems und zum Einschließen des Gestaltungsvorlagenkatalogs, des Lösungskatalogs und der Datenquellen sind.
+
+Aufbewahrungsrichtlinien und Bezeichnungsrichtlinien für die automatische Anwendung: SharePoint-Websites müssen indiziert sein, damit die Aufbewahrungseinstellungen angewendet werden können. Wenn Elemente in SharePoint-Dokumentbibliotheken jedoch so konfiguriert sind, dass sie nicht in den Suchergebnissen angezeigt werden, schließt diese Konfiguration keine Dateien aus den Aufbewahrungseinstellungen aus.
 
 ## <a name="how-retention-works-for-sharepoint-and-onedrive"></a>Wie die Aufbewahrung für SharePoint und OneDrive funktioniert
 
