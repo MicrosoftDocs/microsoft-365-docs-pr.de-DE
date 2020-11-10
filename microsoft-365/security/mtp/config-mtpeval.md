@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: 88db2182ec1a3250d2f4308858026fec97a2f91b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 5259c7b74446ad273ff9b1ae0baccd339e34baa3
+ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844104"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48984950"
 ---
 # <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a>Konfigurieren von Microsoft 365 Defender-Säulen für Ihre Test Labor-oder Pilotumgebung
 
@@ -68,12 +68,12 @@ Die Vorbereitung ist für eine erfolgreiche Bereitstellung entscheidend. In dies
 ## <a name="microsoft-365-defender-pillars"></a>Microsoft 365 Defender-Säulen
 Microsoft 365 Defender besteht aus vier Pfeilern. Auch wenn ein Pfeiler bereits einen Mehrwert für die Sicherheit ihrer Netzwerkorganisation bieten kann, bietet die Aktivierung der vier Microsoft 365 Defender-Säulen Ihrem Unternehmen den größten Nutzen.
 
-![Image of_Microsoft 365 Defender-Lösung für Benutzer, Microsoft Defender for Identity, für Endpunkte von Microsoft Defender für Endpoint, für Cloud-apps, Microsoft Cloud-App-Sicherheit und für Daten, Microsoft Defender für Office 365](../../media/mtp-eval-31.png)
+![Image of_Microsoft 365 Defender-Lösung für Benutzer, Microsoft Defender for Identity, für Endpunkte von Microsoft Defender für Endpoint, für Cloud-apps, Microsoft Cloud-App-Sicherheit und für Daten, Microsoft Defender für Office 365](../../media/mtp/m365pillars.png)
 
 In diesem Abschnitt erhalten Sie Informationen zu configure:
 -   Microsoft Defender für Office 365
--   Microsoft Defender für Identity 
--   Microsoft Cloud App-Sicherheit
+-   Microsoft Defender for Identity 
+-   Microsoft Cloud App Security
 -   Microsoft Defender für Endpunkt
 
 
@@ -288,7 +288,7 @@ Es gibt ein PowerShell-Modul mit dem Namen *Office 365 Advanced Threat Protectio
 
     ![Schaltfläche "Bild of_Save Einstellungen", auf die Sie klicken müssen](../../media/mtp-eval-72.png)
 
-## <a name="start-the-microsoft-365-defender-service"></a>Starten des Microsoft 365 Defender-Diensts
+## <a name="start-the-microsoft-365-defender-service"></a>Starten des Microsoft 365 Defender-Diensts
 
 >[!NOTE]
 >Ab dem 1. Juni 2020 Microsoft 365 Defender-Features für alle berechtigten Mandanten automatisch aktiviert. Weitere Informationen finden Sie [in diesem Artikel Microsoft Tech Community on License Berechtigung](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/microsoft-threat-protection-will-automatically-turn-on-for/ba-p/1345426) . 

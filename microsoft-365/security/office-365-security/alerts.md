@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: In diesem Artikel erfahren Sie, wie Sie mithilfe der Warnungsfunktionen im Office 365 Security & Compliance Center Warnungen anzeigen und verwalten können, einschließlich der Verwaltung erweiterter Benachrichtigungen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8867732611af275b45b14dc0894e24ed4c89d062
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: a29da0a76ff1b681c87182ff55b787327a969607
+ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48447047"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48984888"
 ---
 # <a name="alerts-in-the-security--compliance-center"></a>Warnungen im Security & Compliance Center
 
@@ -40,7 +40,7 @@ Warnungen befinden sich im Security & Compliance Center. Hier erfahren Sie, wie 
 
 ### <a name="to-go-directly-to-the-security--compliance-center"></a>So wechseln Sie direkt zum Security & Compliance Center
 
-1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
+1. Wechseln Sie zu <https://protection.office.com>.
 
 2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto an.
 
@@ -52,7 +52,7 @@ Warnungen befinden sich im Security & Compliance Center. Hier erfahren Sie, wie 
 
 2. Klicken Sie in der oberen linken Ecke auf das App-Startfeld, und klicken Sie dann auf **Sicherheit & Kompatibilität**.
 
-    Sie können die gesuchte App nicht finden? Wählen Sie im Startprogramm auf **Alle Apps** aus, um eine alphabetische Liste der verfügbaren Office 365-Apps anzuzeigen. Hier können Sie nach einer bestimmten App suchen.
+   Sie können die gesuchte App nicht finden? Wählen Sie im Startprogramm auf **Alle Apps** aus, um eine alphabetische Liste der verfügbaren Office 365-Apps anzuzeigen. Hier können Sie nach einer bestimmten App suchen.
 
 3. Klicken Sie im linken Bereich auf **Warnungen** , um die Benachrichtigungsfunktionen anzuzeigen.
 
@@ -64,6 +64,6 @@ In der folgenden Tabelle werden die Tools beschrieben, die unter **Warnungen** i
 
 |Tool|Beschreibung|
 |---|---|
-|[Benachrichtigungen verwalten](../../compliance/create-activity-alerts.md)|Verwenden Sie Aktivitäts Warnungen zum Senden von e-Mail-Benachrichtigungen an sich selbst oder andere Administratoren, wenn Benutzer bestimmte Aktivitäten in Office 365 durchführen. Aktivitäts Warnungen ähneln dem Durchsuchen des Überwachungsprotokolls nach Ereignissen, mit der Ausnahme, dass Sie eine e-Mail-Nachricht erhalten, wenn ein Ereignis, für das Sie eine Warnung erstellt haben, Eintritt.|
-|[Erweiterte Benachrichtigungen verwalten ](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Verwenden Sie das Feature " **Erweiterte Benachrichtigungen verwalten** " von Office 365 Cloud-App-Sicherheit, um Richtlinien einzurichten, die Sie auf verdächtige und anomale Aktivitäten in Office 365 aufmerksam machen können. Nachdem Sie benachrichtigt wurden, können Sie Situationen untersuchen, die möglicherweise problematisch sind, und bei Bedarf Maßnahmen ergreifen, um Sicherheitsprobleme zu beheben.|
+|[Benachrichtigungen verwalten](../../compliance/create-activity-alerts.md)|Verwenden Sie Aktivitäts Warnungen zum Senden von e-Mail-Benachrichtigungen an sich selbst oder andere Administratoren, wenn Benutzer bestimmte Aktivitäten in Microsoft 365 durchführen. Aktivitäts Warnungen ähneln dem Durchsuchen des Überwachungsprotokolls nach Ereignissen, mit der Ausnahme, dass Sie eine e-Mail-Nachricht erhalten, wenn ein Ereignis, für das Sie eine Warnung erstellt haben, Eintritt.|
+|[Erweiterte Benachrichtigungen verwalten](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Verwenden Sie das Feature " **Erweiterte Benachrichtigungen verwalten** " der Cloud-App-Sicherheit von Microsoft 365, um Richtlinien einzurichten, die Sie auf verdächtige und anomale Aktivitäten in Microsoft 365 aufmerksam machen können. Nachdem Sie benachrichtigt wurden, können Sie Situationen untersuchen, die möglicherweise problematisch sind, und bei Bedarf Maßnahmen ergreifen, um Sicherheitsprobleme zu beheben.|
 |
