@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Hier erfahren Sie, wie Sie den Microsoft Teams-Benutzer Aktivitätsbericht abrufen und Einblicke in die Teams-Aktivitäten in Ihrer Organisation erhalten.
-ms.openlocfilehash: 8ce29b43e6238883470d1159ad1d22fefca88792
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b85f073a2916b646a5a03e62913de44b410ca058
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637067"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988470"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Microsoft 365-Berichte im Admin Center-Microsoft Teams-Benutzeraktivität
 
@@ -44,7 +44,7 @@ Sie können die Benutzeraktivität im Bericht "Teams" anzeigen, indem Sie die Re
 
 Wählen Sie **Spalten auswählen** aus, um Spalten zum Bericht hinzuzufügen oder daraus zu entfernen.  <br/> ![Teams user activity report - choose columns](../../media/a1513028-cf09-4186-93a6-8a203cd22475.png)
 
-Sie können die Berichtsdaten auch im CSV-Format in eine Excel-Datei exportieren, indem Sie den Link **Exportieren** auswählen. Dadurch werden Daten aller Benutzer exportiert, und Sie können einfache Sortier- und Filtervorgänge zur weiteren Analyse ausführen. Bei weniger als 2.000 Benutzern können Sie innerhalb der Tabelle im Bericht selbst sortieren und filtern. Bei mehr als 2.000 Benutzern müssen Sie die Daten zum Filtern und Sortieren exportieren. Das exportierte Format für **Audio-**, **Video** -und **Bildschirmfreigabe Zeit** folgt dem Format der ISO8601-Zeit.
+Sie können die Berichtsdaten auch im CSV-Format in eine Excel-Datei exportieren, indem Sie den Link **Exportieren** auswählen. Dadurch werden Daten aller Benutzer exportiert, und Sie können einfache Sortier- und Filtervorgänge zur weiteren Analyse ausführen. Bei weniger als 2.000 Benutzern können Sie innerhalb der Tabelle im Bericht selbst sortieren und filtern. Bei mehr als 2.000 Benutzern müssen Sie die Daten zum Filtern und Sortieren exportieren. Das exportierte Format für **Audio-** , **Video** -und **Bildschirmfreigabe Zeit** folgt dem Format der ISO8601-Zeit.
 
 |Element|Beschreibung|
 |:-----|:-----|
@@ -59,5 +59,5 @@ Sie können die Berichtsdaten auch im CSV-Format in eine Excel-Datei exportieren
 |Organisierte Meetings Adhoc <br/> |Die Anzahl der Besprechungen, die im Kalender nicht geplant sind, die der Benutzer während des angegebenen Zeitraums organisiert hat. <br/>|
 |Geplant organisierte Besprechungen  <br/> |Die Anzahl geplanter Besprechungen, die ein Benutzer während des angegebenen Zeitraums organisiert hat.  <br/> |
 |Lizenziert |Ausgewählt, wenn der Benutzer für die Verwendung von Microsoft Teams lizenziert ist.|
-|Andere Aktivität|der Benutzer wird als aktiv betrachtet, hat aber einen Nullwert für die Chat Nachrichten, 1:1 Anrufe, Kanal Nachrichten, Gesamt Besprechungen und Besprechungen organisierten metrischen Werte. Beispiele für Aktionen sind, wenn ein Benutzer einen Kanal Nachrichtenbeitrag öffnet, aber nicht antwortet oder wenn eine private Nachricht empfangen wird und Sie gelesen, aber nicht geantwortet wird. |
+|Andere Aktivität|Der Benutzer ist aktiv, hat aber andere Aktivitäten ausgeführt als in dem Bericht angebotene freigegebene Aktionstypen (senden oder beantworten von Kanal-und Chatnachrichten, Planung oder Teilnahme an 1:1-anrufen und Besprechungen). Beispiele für Aktionen sind, wenn ein Benutzer den Status der Teams oder die Teamstatus Meldung ändert oder einen Kanal Nachrichtenbeitrag öffnet, aber nicht antwortet. |
 |||

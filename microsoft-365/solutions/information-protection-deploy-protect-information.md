@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Bereitstellen von Sicherheits-und Compliance-Features von Microsoft 365 und Schützen Ihrer persönlichen Informationen.
-ms.openlocfilehash: 97c34ca236ea4be98b9412518788630732259d5a
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: f17568c5a19446644cfb7ee64aac3e0f9eae5793
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377151"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988482"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Schützen von Informationen unterliegen der Datenschutzverordnung
 
@@ -65,7 +65,7 @@ Um Ihnen den Einstieg in ein Informationsschutz System in Microsoft 365 zu erlei
 
 ## <a name="managing-information-protection-in-microsoft-365"></a>Verwalten des Informationsschutzes in Microsoft 365
 
-Microsoft [Information Protection-Lösungen](../compliance/protect-information.md) umfassen eine Reihe integrierter Funktionen für Microsoft 365, Microsoft Azure und Microsoft Windows. In Microsoft 365 umfassen die Lösungen für den Informationsschutz Folgendes:
+Microsoft [Information Protection-Lösungen](../compliance/information-protection.md) umfassen eine Reihe integrierter Funktionen für Microsoft 365, Microsoft Azure und Microsoft Windows. In Microsoft 365 umfassen die Lösungen für den Informationsschutz Folgendes:
 
 - [Dienstverschlüsselung mit dem Kundenschlüssel](../compliance/customer-key-overview.md)
 - [Vertrauliche Informationstypen](../compliance/what-the-sensitive-information-types-look-for.md) (beschrieben im [Artikel bewerten von Datenschutzrisiken und identifizieren vertraulicher Elemente](information-protection-deploy-assess.md))
@@ -144,7 +144,7 @@ Wenn Sie [Sensitivitäts Bezeichnungen](../compliance/sensitivity-labels-teams-g
 Verwenden Sie die folgenden Bezeichnungseinstellungen zum Schutz von Inhalt in diesen Containern:
 
 - Datenschutz (öffentlich oder privat) von Microsoft 365-Websites mit Gruppen verbundenen Teams
-- Zugriff durch externe Benutzer
+- Zugriff externer Benutzer
 - Zugriff von nicht verwalteten Geräten aus
 
 Um die externe Freigabe für Container zu verhindern, die zum Speichern von Inhalten mit vertraulichen personenbezogenen Daten verwendet werden, markieren Sie die Dateien, die die Daten enthalten, als privat und erfordern verwaltete Geräte.

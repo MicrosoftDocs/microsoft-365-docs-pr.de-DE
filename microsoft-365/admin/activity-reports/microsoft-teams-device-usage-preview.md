@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erhalten Sie Einblicke in die Microsoft Teams-apps, die in Ihrer Organisation verwendet werden, indem Sie den Microsoft Teams-App-Nutzungsbericht aus Microsoft 365-Berichten erhalten.
-ms.openlocfilehash: deda550b3ffc4209f718d36a3010605edbc1102b
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 928ba7bbe4d4753499e71b347baffafa7441f5b5
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636973"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988528"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Microsoft 365-Berichte im Admin Center-Microsoft Teams-Geräteverwendung
 
@@ -61,5 +61,4 @@ Sie können die Berichtsdaten auch im CSV-Format in eine Excel-Datei exportieren
 |Netz  <br/> |Ausgewählt, wenn der Benutzer im Microsoft Teams-WebClient auf Geräten aktiv war.|
 |Datum der letzten Aktivität (UTC)  <br/> |Das letzte Datum (UTC), an dem der Benutzer an einer Teams-Aktivität teilgenommen hat.  <br/> |
 |Lizenziert|Ausgewählt, wenn der Benutzer für die Verwendung von Microsoft Teams lizenziert ist.|
-|Gesamtanzahl der Teams-Aktivitäten|Gesamtanzahl der Teams-Aktivitäten über den ausgewählten Zeitraum. |
 |||

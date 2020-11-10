@@ -11,12 +11,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Übersicht über das Wissensmanagement in Project Cortex.
-ms.openlocfilehash: d422b54bb7991fb5fd61465cd0428ab586d10bf5
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 27ce6457f2329ccaa4738d6868b4f2051c0c0a51
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906941"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988842"
 ---
 # <a name="knowledge-management-overview-preview"></a>Knowledge Management-Übersicht (Vorschau)
 
@@ -75,7 +75,7 @@ Mit Administrator Steuerelementen im Microsoft 365 Admin Center können Sie Ihr 
 - Steuern Sie, welche Benutzer Themen im Themen Center bestätigen oder ablehnen können.
 - Steuern Sie, welche Benutzer Themen im Themen Center erstellen und bearbeiten können.
 
-Weitere Informationen finden Sie unter [Manage Your Knowledge Network](manage-knowledge-network.md) . 
+Weitere Informationen finden Sie unter [Manage Your Knowledge Network](topic-experiences-discovery.md) . 
 
 ## <a name="topic-curation--feedback"></a>Thema Kuration & Feedback
 
@@ -87,5 +87,5 @@ Darüber hinaus können Benutzer mit den entsprechenden Berechtigungen Elemente 
 
 
 ## <a name="see-also"></a>Siehe auch
-[Einrichten der Wissensverwaltung](set-up-knowledge-network.md)</br>
+[Einrichten der Wissensverwaltung](set-up-topic-experiences.md)</br>
 [Themen Center (Übersicht)](topic-center-overview.md)

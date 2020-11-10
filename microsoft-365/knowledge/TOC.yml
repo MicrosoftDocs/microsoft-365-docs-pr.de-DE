@@ -11,6 +11,6 @@
 - name: Erste Schritte mit Setup
   items:
     - name: Einrichten der Wissensverwaltung
-      href: set-up-knowledge-network.md
+      href: set-up-topic-experiences.md
     - name: Verwalten Ihres Wissens Verwaltungsnetzwerks
-      href: manage-knowledge-network.md
+      href: topic-experiences-discovery.md

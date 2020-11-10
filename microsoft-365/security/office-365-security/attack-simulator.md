@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können erfahren, wie Sie mithilfe von Attack Simulator simulierte Phishing-und Kennwortangriffe in Ihren Microsoft 365 E5 oder Microsoft Defender für Office 365 Plan 2-Organisationen ausführen.
-ms.openlocfilehash: b7d04b3c81791bfc107b48176373ffc84fc8f6c5
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 0698d5d97dcedec05e76728379971fad2ab669c6
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845996"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988564"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Angriffs Simulator in Microsoft Defender für Office 365
 
@@ -35,6 +35,9 @@ Wenn Ihre Organisation Microsoft Defender für Office 365 Plan 2, einschließlic
 
 > [!NOTE]
 > Angriffssimulation und schulungsbezogene Daten werden mit anderen Kundendaten für Microsoft 365-Dienste gespeichert. Weitere Informationen finden Sie unter [Microsoft 365-Datenspeicherorte](/microsoft-365/enterprise/o365-data-locations).
+
+> [!TIP]
+> Das Training zur Angriffssimulation steht im Microsoft 365 Security Center für die öffentliche Vorschau zur Verfügung. Weitere Informationen finden Sie unter [Simulieren eines Phishing-Angriffs mit Microsoft Defender für Office 365](attack-simulation-training.md) .
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 

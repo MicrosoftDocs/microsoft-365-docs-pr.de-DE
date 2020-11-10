@@ -11,19 +11,19 @@ ms.service: o365-administration
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: d87a52bc6aca2f033a6e0d26a8c9c0e167908759
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 39a851ed3613057c7b3b931a94a79fed235d277a
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906965"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988830"
 ---
 # <a name="topic-center-overview-preview"></a>Übersicht über das Themen Center (Vorschau)
 
 > [!Note] 
 > Der Inhalt dieses Artikels ist für Project Cortex private Preview. [Erfahren Sie mehr über Project Cortex](https://aka.ms/projectcortex).
 
-Das Themen Center ist eine moderne SharePoint-Website, die als Wissenszentrum für Ihre Organisation dient. Sie wird während des [Setups der Wissensverwaltung](set-up-knowledge-network.md) im Microsoft 365 Admin Center erstellt.
+Das Themen Center ist eine moderne SharePoint-Website, die als Wissenszentrum für Ihre Organisation dient. Sie wird während des [Setups der Wissensverwaltung](set-up-topic-experiences.md) im Microsoft 365 Admin Center erstellt.
 
 Das Themen Center verfügt über eine Standardhomepage, auf der Sie die Themen sehen können, mit denen Sie verbunden sind oder für die eine Verbindung vorgeschlagen wurde. Benutzer mit den entsprechenden Berechtigungen können außerdem Folgendes tun:
 
@@ -36,7 +36,7 @@ Das Themen Center verfügt über eine Standardhomepage, auf der Sie die Themen s
 
 ## <a name="where-is-the-topic-center"></a>Wo ist das Themen Center
 
-Ihr Themen Center wird während des Knowledge Management-Setups erstellt. Nach Abschluss des Setups kann ein Administrator die URL auf der [Knowledge Center-Verwaltungsseite](manage-knowledge-network.md)finden.
+Ihr Themen Center wird während des Knowledge Management-Setups erstellt. Nach Abschluss des Setups kann ein Administrator die URL auf der [Knowledge Center-Verwaltungsseite](topic-experiences-discovery.md)finden.
 
 1. Wählen Sie im Microsoft 365 Admin Center im Navigationsbereich die Option **Setup** aus, und wählen Sie im Abschnitt **organisatorisches Wissen** die Option **Personen mit Wissen verbinden** aus.
 
@@ -46,7 +46,7 @@ Ihr Themen Center wird während des Knowledge Management-Setups erstellt. Nach A
 
 ## <a name="home-page"></a>Homepage
 
-Zum Anzeigen des Themen Centers benötigen Sie Berechtigungen zum Anzeigen von Themen und zum Thema Erfahrungen. Ihr Administrator kann diese Berechtigungen Benutzern während des [Knowledge Management-Setups](set-up-knowledge-network.md)zuweisen, oder neue Benutzer können anschließend über das Microsoft 365 Admin Center von einem Administrator [hinzugefügt](give-user-permissions-to-the-topic-center.md) werden.
+Zum Anzeigen des Themen Centers benötigen Sie Berechtigungen zum Anzeigen von Themen und zum Thema Erfahrungen. Ihr Administrator kann diese Berechtigungen Benutzern während des [Knowledge Management-Setups](set-up-topic-experiences.md)zuweisen, oder neue Benutzer können anschließend über das Microsoft 365 Admin Center von einem Administrator [hinzugefügt](give-user-permissions-to-the-topic-center.md) werden.
 
 Auf der Startseite 
 - **Themen anzeigen** : Thema Erfahrungen anzeigen. Sie können also Themen in der Organisation sehen und Feedback zu Themen geben, in denen Sie verbunden sind:
@@ -59,7 +59,7 @@ Sobald ich merken bin, können Sie die Bearbeitungen zur Themen Seite durchführ
 
 ## <a name="permissions-to-use-the-manage-topics-capability-topic-center"></a>Berechtigungen für die Verwendung des Themen Centers zum Thema "Funktionen verwalten"
 
-Um im Themen Center im Abschnitt "Themen verwalten" arbeiten zu können, müssen Sie über die erforderlichen Berechtigungen verfügen. Ihr Administrator kann diese Berechtigungen Benutzern während des [Knowledge Management-Setups](set-up-knowledge-network.md)zuweisen, oder neue Benutzer können anschließend über das Microsoft 365 Admin Center von einem Administrator [hinzugefügt](give-user-permissions-to-the-topic-center.md) werden.
+Um im Themen Center im Abschnitt "Themen verwalten" arbeiten zu können, müssen Sie über die erforderlichen Berechtigungen verfügen. Ihr Administrator kann diese Berechtigungen Benutzern während des [Knowledge Management-Setups](set-up-topic-experiences.md)zuweisen, oder neue Benutzer können anschließend über das Microsoft 365 Admin Center von einem Administrator [hinzugefügt](give-user-permissions-to-the-topic-center.md) werden.
 
 Topic Center Benutzer können zwei Berechtigungssätze erhalten:
 

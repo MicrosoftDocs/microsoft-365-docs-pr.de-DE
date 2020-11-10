@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: Erfahren Sie, wie Finanzdienstleistungsinstitute mit Microsoft 365 und Teams die Einhaltung der finanziellen Sicherheit gewährleisten und effektiv zusammenarbeiten können.
 f1.keywords: NOCSH
-ms.openlocfilehash: 8bc9e965029414dadc39757b926949f3f60afc16
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 7192b29d09acb23df368e2458fac62c18bbbadb2
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906907"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988714"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Wichtige Überlegungen zur Compliance und Sicherheit der Banken und Kapitalmärkte in den Vereinigten Staaten
 
@@ -164,7 +164,7 @@ Microsoft 365 ermöglicht allen Organisationen die Identifizierung vertraulicher
 * **Microsoft Information Protection (MIP)** sowohl für die benutzerbasierte Klassifizierung als auch für die automatische Klassifizierung vertraulicher Daten.
 * **Office 365 Data Loss Prevention (DLP)** zur automatisierten Identifizierung sensibler Daten unter Verwendung sensibler Datentypen (mit anderen Worten: reguläre Ausdrücke) und Schlüsselwörter und zur Durchsetzung von Richtlinien.
 
-**[Microsoft Information Protection (MIP)](../compliance/protect-information.md)** ermöglicht es Organisationen, Dokumente und E-Mails durch die Verwendung von Vertraulichkeitskennzeichnungen intelligent zu klassifizieren. Vertraulichkeitskennzeichnungen können von Benutzern manuell auf Dokumente in Microsoft Office-Anwendungen und auf E-Mails in Outlook angewendet werden. Die Kennzeichnungen können automatisch Dokumentenmarkierungen, Schutz durch Verschlüsselung und Durchsetzung der Rechteverwaltung anbringen. Vertraulichkeitskennzeichnungen können auch automatisch angewendet werden, indem Richtlinien konfiguriert werden, die Schlüsselwörter und sensible Datentypen (wie Kreditkartennummern, Sozialversicherungsnummern und Identitätsnummern) verwenden, um sensible Daten automatisch zu finden und zu klassifizieren.
+**[Microsoft Information Protection (MIP)](../compliance/information-protection.md)** ermöglicht es Organisationen, Dokumente und E-Mails durch die Verwendung von Vertraulichkeitskennzeichnungen intelligent zu klassifizieren. Vertraulichkeitskennzeichnungen können von Benutzern manuell auf Dokumente in Microsoft Office-Anwendungen und auf E-Mails in Outlook angewendet werden. Die Kennzeichnungen können automatisch Dokumentenmarkierungen, Schutz durch Verschlüsselung und Durchsetzung der Rechteverwaltung anbringen. Vertraulichkeitskennzeichnungen können auch automatisch angewendet werden, indem Richtlinien konfiguriert werden, die Schlüsselwörter und sensible Datentypen (wie Kreditkartennummern, Sozialversicherungsnummern und Identitätsnummern) verwenden, um sensible Daten automatisch zu finden und zu klassifizieren.
 
 Darüber hinaus stellt Microsoft „lernfähige Klassifizierer“ zur Verfügung, die Machine Learning-Modelle verwenden, um sensible Daten auf der Grundlage des Inhalts zu identifizieren, im Gegensatz zu einem einfachen Mustervergleich oder durch die Elemente innerhalb des Inhalts. Ein Klassifikator lernt, wie man einen Inhaltstyp identifiziert, indem er sich zahlreiche Beispiele für den zu klassifizierenden Inhalt ansieht. Die Ausbildung eines Klassifizierers beginnt damit, dass er Beispiele für Inhalte in einer bestimmten Kategorie erhält. Nachdem es aus diesen Beispielen gelernt hat, wird das Modell getestet, indem ihm eine Mischung aus passenden und nicht passenden Beispielen gegeben wird. Der Klassifizierer prognostiziert, ob ein bestimmtes Beispiel in die Kategorie fällt oder nicht. Eine Person bestätigt dann die Ergebnisse und sortiert die Positiven, Negativen, Falsch-Positiven und Falsch-Negativen, um die Genauigkeit der Vorhersagen des Klassifikators zu erhöhen. Wenn der gelernte Klassifizierer veröffentlicht wird, verarbeitet er Inhalte in Microsoft SharePoint Online, Exchange Online und OneDrive for Business und klassifiziert diese automatisch.
 

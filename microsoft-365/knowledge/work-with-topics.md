@@ -11,12 +11,12 @@ ms.service: o365-administration
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: d2fd3df200ab350ca3e6595402bab17034d960a7
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 464a926b99cceeb652756ad6d1456c5e17d2a925
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906919"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988738"
 ---
 # <a name="work-with-topics-in-the-topic-center-preview"></a>Arbeiten mit Themen im Themen Center (Vorschau)
 
@@ -28,7 +28,7 @@ Im Themen Center kann ein Wissensmanager Themen überprüfen, die in den von Ihn
 
 ## <a name="requirements"></a>Anforderungen
 
-Um im Themen Center arbeiten zu können, müssen Sie über die erforderlichen Berechtigungen verfügen. Ihr Administrator kann Sie während des [Knowledge Management-Setups](set-up-knowledge-network.md)hinzufügen, oder anschließend können neue Benutzer [hinzugefügt](give-user-permissions-to-the-topic-center.md)werden.
+Um im Themen Center arbeiten zu können, müssen Sie über die erforderlichen Berechtigungen verfügen. Ihr Administrator kann Sie während des [Knowledge Management-Setups](set-up-topic-experiences.md)hinzufügen, oder anschließend können neue Benutzer [hinzugefügt](give-user-permissions-to-the-topic-center.md)werden.
 
 Topic Center Benutzer können zwei Berechtigungssätze erhalten:
 
@@ -72,7 +72,7 @@ So überprüfen Sie ein bestätigtes Thema:
 3. Sie können Sie auch ablehnen.
 
 ## <a name="review-published-topics"></a>Überprüfen veröffentlichter Themen
-Veröffentlichte Themen wurden bearbeitet, sodass speific-Informationen immer angezeigt werden, wer auf die Seite stößt. Manuell erstellte Themen werden hier angezeigt.
+Veröffentlichte Themen wurden bearbeitet, sodass jeder Person, die auf die Seite stößt, immer bestimmte Informationen angezeigt werden. Manuell erstellte Themen werden hier angezeigt.
 
    
 ## <a name="create-a-new-topic"></a>Erstellen eines neuen Themas
