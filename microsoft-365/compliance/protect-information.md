@@ -17,23 +17,23 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: Implementieren Sie die Funktionen von Microsoft Information Protection (MIP) mithilfe der Microsoft 365-Konformität, damit Sie vertrauliche Informationen überall dort, wo Sie leben oder Reisen, erkennen, klassifizieren und schützen können.
-ms.openlocfilehash: 78aadbba5442d7ec3cdc1beeac6d290a11325861
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+description: Implementieren Sie Microsoft Information Protection (MIP), damit Sie vertrauliche Informationen überall dort schützen können, wo Sie leben oder Reisen.
+ms.openlocfilehash: 639f41f5d06e78e39071c60d6de0386a87536672
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399044"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951128"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection in Microsoft 365
 
 >*[Lizenzierung für Microsoft 365 Security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-Mithilfe von Microsoft Information Protection (MIP) können Sie vertrauliche Informationen überall dort, wo Sie leben oder Reisen, erkennen, klassifizieren und schützen.
+Implementieren Sie Microsoft Information Protection (MIP), damit Sie vertrauliche Informationen überall dort, wo Sie leben oder Reisen, erkennen, klassifizieren und schützen können.
 
 Die MIP-Funktionen sind in der Microsoft 365-Konformität enthalten und bieten Ihnen die Tools, um [Ihre Daten zu kennen](#know-your-data), [Ihre Daten zu schützen](#protect-your-data)und [Datenverlust zu verhindern](#prevent-data-loss).
 
-![Kennen Sie Ihre Daten, schützen Sie Ihre Daten, verhindern Sie Datenverlust, Steuern Sie Ihre Daten](../media/powered-by-intelligent-platform.png)
+![Abbildung der Unterstützung beim ermitteln, klassifizieren und Schützen vertraulicher Daten mithilfe von MIP](../media/powered-by-intelligent-platform.png)
 
 Informationen zum Steuern ihrer Daten finden Sie unter [Microsoft Information Governance in Microsoft 365](manage-Information-governance.md).
 
@@ -56,7 +56,7 @@ Verwenden Sie die folgenden Funktionen, um flexible Schutzaktionen wie Verschlü
 |[Vertraulichkeitsbezeichnungen](sensitivity-labels.md)| Eine einzelne Lösung für apps, Dienste und Geräte zum bezeichnen und Schützen Ihrer Daten beim Reisen innerhalb und außerhalb Ihrer Organisation <br /><br />Beispielszenario: [anwenden und Anzeigen von Sensitivitäts Bezeichnungen in Power BI und schützen der Daten beim Export](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)|[ Erste Schritte mit Sensitivitäts Bezeichnungen](get-started-with-sensitivity-labels.md) |
 |[Azure Information Protection-Client für einheitliche Bezeichnungen](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)| Für Windows-Computer werden die Vertraulichkeits Bezeichnungen für zusätzliche Features und Funktionen erweitert, die das bezeichnen und schützen aller Dateitypen im Datei-Explorer und in PowerShell umfassen.<br /><br /> Beispiel zusätzliche Features: [benutzerdefinierte Konfigurationen für den Azure Information Protection Unified Labeling-Client](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Azure Information Protection Unified Labeling-Client Administratorhandbuch](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide)|
 |[Verschlüsselung mit Doppelschlüssel](double-key-encryption.md)| Unter allen Umständen können nur Sie geschützte Inhalte entschlüsseln, oder für behördliche Anforderungen müssen Sie Verschlüsselungsschlüssel in einer geografischen Grenze halten. | [Bereitstellen der doppelten Schlüssel Verschlüsselung](double-key-encryption.md#deploy-dke)|
-|[Office 365-Nachrichtenverschlüsselung](ome.md) (OME)| Verschlüsselt e-Mail-Nachrichten und angefügte Dokumente, die an einen beliebigen Benutzer auf einem Gerät gesendet werden, sodass nur autorisierte Empfänger e-Mail-Informationen lesen können.  <br /><br />Beispielszenario: [widerrufen von e-Mails, die durch erweiterte Nachrichtenverschlüsselung verschlüsselt wurden](revoke-ome-encrypted-mail.md) | [Einrichten neuer Nachrichtenverschlüsselungsfunktionen](set-up-new-message-encryption-capabilities.md)|
+|[Office 365 Nachrichtenverschlüsselung (OEM)](ome.md)| Verschlüsselt e-Mail-Nachrichten und angefügte Dokumente, die an einen beliebigen Benutzer auf einem Gerät gesendet werden, sodass nur autorisierte Empfänger e-Mail-Informationen lesen können.  <br /><br />Beispielszenario: [widerrufen von e-Mails, die durch erweiterte Nachrichtenverschlüsselung verschlüsselt wurden](revoke-ome-encrypted-mail.md) | [Einrichten neuer Nachrichtenverschlüsselungsfunktionen](set-up-new-message-encryption-capabilities.md)|
 |[Dienstverschlüsselung mit dem Kundenschlüssel](customer-key-overview.md) | Schützt vor dem Anzeigen von Daten durch nicht autorisierte Systeme oder Mitarbeiter und ergänzt die BitLocker-Datenträgerverschlüsselung in Microsoft-Rechenzentren | [Einrichten des Kundenschlüssels für Office 365](customer-key-set-up.md)|
 |[Verwaltung von SharePoint-Informationsrechten (IRM)](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists)|Schützt SharePoint-Listen und-Bibliotheken so, dass beim Auschecken eines Dokuments die heruntergeladene Datei geschützt ist, sodass nur autorisierte Benutzer die Datei gemäß den von Ihnen angegebenen Richtlinien anzeigen und verwenden können | [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)|
 [Rights Management-Verbindungsdienst](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector) |Schutz nur für vorhandene lokale Bereitstellungen, die Exchange oder SharePoint Server verwenden, oder Dateiserver, auf denen Windows Server und die Dateiklassifizierungsinfrastruktur (FCI) ausgeführt werden | [Schritte zum Bereitstellen des RMS-Connectors](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector#steps-to-deploy-the-rms-connector)
@@ -71,5 +71,5 @@ Um eine versehentliche übermäßige Freigabe vertraulicher Informationen zu ver
 
 |Funktion|Welche Probleme werden behoben?|Erste Schritte|
 |:------|:------------|:---------------------|:-----------------------------|
-|[Verhinderung von Datenverlusten](data-loss-prevention-policies.md) (Data Loss Prevention, DLP)| Verhindert die unbeabsichtigte Freigabe vertraulicher Elemente <br /><br />Beispielszenario: [Schützen vertraulicher Informationen in Microsoft Teams-Chat-und Kanal Nachrichten](dlp-microsoft-teams.md) | [Erste Schritte mit der standardmäßigen DLP-Richtlinie](get-started-with-the-default-dlp-policy.md)|
+|[Verhinderung von Datenverlust (DLP)](data-loss-prevention-policies.md)| Verhindert die unbeabsichtigte Freigabe vertraulicher Elemente <br /><br />Beispielszenario: [Schützen vertraulicher Informationen in Microsoft Teams-Chat-und Kanal Nachrichten](dlp-microsoft-teams.md) | [Erste Schritte mit der standardmäßigen DLP-Richtlinie](get-started-with-the-default-dlp-policy.md)|
 |[Verhinderung von Endpunkt Datenverlust (Vorschau)](endpoint-dlp-learn-about.md)| Erweiterte DLP-Funktionen auf Elemente, die auf Windows 10-Computern verwendet und gemeinsam genutzt werden | [Endpunkt-DLP (Vorschau) – Erste Schritte](endpoint-dlp-getting-started.md)|

@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: ''
 description: Dieser Artikel gibt eine Übersicht über Advanced eDiscovery in Microsoft 365, ein Tool für interne und externe Ermittlungen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 95c864b9e2222000b1114ae42dbbb5705228d531
-ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
+ms.openlocfilehash: 2ef61c8c60cb2cd7114798969dce14c7dce0a2fd
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48944343"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951152"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Übersicht über die Advanced eDiscovery-Lösung in Microsoft 365
 
@@ -72,11 +72,13 @@ Im folgenden finden Sie ein erweitertes eDiscovery-Architekturdiagramm, das den 
 
 Weitere Informationen über den End-to-End-Workflow in Advanced eDiscovery finden Sie in diesem [Microsoft Mechanics-Video](https://go.microsoft.com/fwlink/?linkid=2066133).
 
-Die folgenden Abschnitte beschreiben jeden Schritt des integrierten Workflows in Advanced eDiscovery.
+In den folgenden Abschnitten werden die einzelnen Schritte des integrierten Workflows in Advanced eDiscovery beschrieben. Der folgende Screenshot zeigt die Registerkarte **Übersicht** eines Falls mit dem Namen *2020.11.03-Contoso v. fabrikam*.
+
+![Registerkarten im integrierten erweiterten eDiscovery-Workflow](../media/AeD-Case-Screenshot1.png)
 
 ## <a name="managing-custodians-and-non-custodial-data-sources"></a>Verwalten von Depotbanken und Datenquellen ohne Freiheitsentzug
 
-Verwenden Sie die Registerkarte **Quellen** , um Personen hinzuzufügen und zu verwalten, die Sie im Fall als interessierte Personen identifiziert haben, und andere Datenquellen, die möglicherweise nicht einer Depotbank zugeordnet sind. Wenn Sie Verwalter oder Datenquellen ohne Freiheitsentzug hinzufügen, können Sie schnell Aktionen durchführen, wie das Aufbewahren einer Aufbewahrungspflicht für Depotbank-und nicht-Freiheitsentzug-Datenquellen, die Kommunikation mit den Verwaltern und das Durchsuchen von Depotbank-und nicht-Freiheitsentzug-Datenquellen, um relevante Inhalte für den Fall zu sammeln. Wenn der Fall fortschreitet, können Sie ganz einfach neue Depotstellen oder Datenquellen ohne Freiheitsentzug hinzufügen oder aus dem Fall freigeben. Weitere Informationen finden Sie unter [Arbeiten mit Verwahrern in Advanced eDiscovery](managing-custodians.md).
+Verwenden Sie die Registerkarte **Datenquellen** , um Personen hinzuzufügen und zu verwalten, die Sie im Fall als interessierte Personen identifiziert haben, und andere Datenquellen, die möglicherweise nicht einer Depotbank zugeordnet sind. Wenn Sie Verwalter oder Datenquellen ohne Freiheitsentzug hinzufügen, können Sie schnell Aktionen durchführen, wie das Aufbewahren einer Aufbewahrungspflicht für Depotbank-und nicht-Freiheitsentzug-Datenquellen, die Kommunikation mit den Verwaltern und das Durchsuchen von Depotbank-und nicht-Freiheitsentzug-Datenquellen, um relevante Inhalte für den Fall zu sammeln. Wenn der Fall fortschreitet, können Sie ganz einfach neue Depotstellen oder Datenquellen ohne Freiheitsentzug hinzufügen oder aus dem Fall freigeben. Weitere Informationen finden Sie unter [Arbeiten mit Verwahrern in Advanced eDiscovery](managing-custodians.md).
 
 ## <a name="managing-legal-hold-notifications"></a>Verwaltung von Benachrichtigungen über Aufbewahrung für juristische Zwecke
 
@@ -84,7 +86,7 @@ Verwenden Sie die Registerkarte **Kommunikation** , um den Prozess der Kommunika
 
 ## <a name="managing-content-preservation"></a>Verwaltung der Beibehaltung von Inhalten
 
-Wenn Sie einen Verwahrer zu einem Fall hinzufügen, können Sie die Verwahrungsdaten im Haltebereich setzen. Verwenden Sie die Registerkarte **Haltebereiche** , um den Haltebereich zu verwalten, der beim Hinzufügen von Verwahrern erstellt wird, und um andere Aufbewahrung für juristische Zwecke zu verwalten, die mit dem Fall in Verbindung stehen; so können Sie beispielsweise nicht-verwahrte Datenquellen identifizieren und im Haltebereich setzen. Sie können auch jeden Haltebereich in dem Fall bearbeiten und ihn zu einem abfragebasierten Haltebereich machen, um nur den Inhalt zu erhalten, der der Abfrage entspricht. Sie könnten beispielsweise einen Datumsbereich zum Haltebereich hinzufügen, so dass nur Inhalte, die innerhalb eines bestimmten Datums erstellt wurden, erhalten bleiben. Sie können auch Statistiken über Inhalte im Haltebereich abrufen, den Haltebereich entfernen, nachdem er für den Fall nicht mehr relevant ist, oder ihn löschen. Weitere Informationen finden Sie unter [Verwalten von Haltebereichen in Advanced eDiscovery](managing-holds.md).
+Wenn Sie einen Verwahrer zu einem Fall hinzufügen, können Sie die Verwahrungsdaten im Haltebereich setzen. Verwenden Sie die Registerkarte **halten** , um den beim Hinzufügen von Depot erstellen erstellten Haltestatus zu verwalten und andere rechtliche Aufbewahrungspflichten zu verwalten, die mit der Anfrage verknüpft sind. Sie können beispielsweise Datenquellen ohne Freiheitsentzug identifizieren und aufbewahren. Sie können auch jeden Haltebereich in dem Fall bearbeiten und ihn zu einem abfragebasierten Haltebereich machen, um nur den Inhalt zu erhalten, der der Abfrage entspricht. Sie könnten beispielsweise einen Datumsbereich zum Haltebereich hinzufügen, so dass nur Inhalte, die innerhalb eines bestimmten Datums erstellt wurden, erhalten bleiben. Sie können auch Statistiken über Inhalte im Haltebereich abrufen, den Haltebereich entfernen, nachdem er für den Fall nicht mehr relevant ist, oder ihn löschen. Weitere Informationen finden Sie unter [Verwalten von Haltebereichen in Advanced eDiscovery](managing-holds.md).
 
 ## <a name="indexing-custodian-data"></a>Indizierung von Verwahrungsdaten
 

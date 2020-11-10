@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a6605f7d8561532121e54f02b579de26879baa1a
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: 6e0f8e2661692930469aff85e0a7eeef2dd647e0
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48305239"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948386"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Health Insurance Portability and Accountability (HIPAA) & HITECH Acts
 
@@ -55,6 +55,7 @@ Wenn Sie erfahren möchten, wie die Microsoft-Cloud Kunden dabei unterstützt, H
 
 - [Azure und Azure Government](https://aka.ms/AzureCompliance)
 - Microsoft Cloud App Security
+- [Microsoft Cloud for Healthcare](https://aka.ms/MicrosoftCloudforHealthcareCompliance)
 - Microsoft Microsoft Healthcare Bot-Dienst
 - Microsoft Stream
 - Microsoft Professional Services: Premier und On-Premises für Azure, Dynamics 365, Intune und Medium Business- und Enterprise-Kunden von Microsoft 365 for Business
@@ -102,7 +103,7 @@ Um Kunden bei dieser Aufgabe zu unterstützen, hat Microsoft die folgenden Leitf
 - [Praktischer Leitfaden zum Entwerfen von sicheren Gesundheitslösungen mit Microsoft Azure](https://aka.ms/azureindustrysecurity) hilft Ihnen, besser zu verstehen, was für die erfolgreiche, sichere Einführung eines Clouddiensts nötig ist.
 - [Die Behandlung der HIPAA-Sicherheits- und Datenschutzanforderungen in der Microsoft-Cloud](https://smb.blob.core.windows.net/smbproduction/Content/Microsoft_Cloud_Healthcare_HIPAA_Security_Privacy.pdf) bietet einen kurzen Überblick über die Vorschriften. Außerdem wird eine detaillierte Analyse der Funktionsweise von Cloud-Diensten von Microsoft mit Methoden erstellt, die diesen Anforderungen entsprechen, sowie Anleitungen zum Erstellen von Compliance-fähigen Lösungen.
 
-## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Verwenden Sie den Microsoft Compliance Manager, um Ihr Risiko einzuschätzen
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Verwenden von Microsoft Compliance-Manager zur Einschätzung des Risikos
 
 [Microsoft Compliance Manager](compliance-manager.md) ist eine Funktion im [Microsoft 365 Compliance Center, die Ihnen](microsoft-365-compliance-center.md) hilft, die Compliance-Position Ihres Unternehmens zu verstehen und Maßnahmen zu ergreifen, um Risiken zu reduzieren. Compliance Manager bietet eine Premiumvorlage für die Erstellung einer Bewertung für diese Verordnung. Suchen Sie die Vorlage auf der Seite **Bewertungsvorlagen** im Compliance Manager. Erfahren Sie, wie Sie [Bewertungen in Compliance Manager erstellen](compliance-manager-assessments.md).
 
@@ -110,7 +111,7 @@ Um Kunden bei dieser Aufgabe zu unterstützen, hat Microsoft die folgenden Leitf
 
 - [HIPAA Omnibus-Regel](https://aka.ms/HIPAA-omnibus) (Die endgültigen Bestimmungen ändernden HIPAA-Regeln)
 - [Microsoft Common Controls Hub-Complianceframework](https://www.microsoft.com/trustcenter/common-controls-hub)
-- [Nutzungsbedingungen für Microsoft-Onlinedienste](https://aka.ms/Online-Services-Terms)
+- [Microsoft Online Services-Nutzungsbedingungen](https://aka.ms/Online-Services-Terms)
 - [Microsoft Government Cloud](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Grundlegendes zur HIPAA-Compliance mit Azure](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)(19. Mai 2016)
 - [Azure HIPAA HITRUST Blueprint-Beispiel](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
