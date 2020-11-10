@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren erfahren, wie Sie isolierte Nachrichten für alle Benutzer in Exchange Online Protection (EoP) anzeigen und verwalten können. Administratoren in Organisationen mit Microsoft Defender für Office 365 können auch unter Quarantäne gestellte Dateien in SharePoint Online, OneDrive für Unternehmen und Microsoft Teams verwalten.
-ms.openlocfilehash: b6f6f47dc227d3bada425d02784a8aff5da8b3d3
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 9d58f8c08d994e5e9736c8223239b54e52c4edab
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842928"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951047"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Verwalten von isolierten Nachrichten und Dateien als Administrator in EOP
 
@@ -127,14 +127,6 @@ Sie können isolierte Nachrichten im Security & Compliance Center oder in PowerS
    Nachdem Sie die Suchkriterien eingegeben haben, klicken Sie auf die ![Schaltfläche Aktualisieren](../../media/scc-quarantine-refresh.png) **Aktualisieren** , um die Ergebnisse zu filtern.
 
 Nachdem Sie eine bestimmte isolierte Nachricht gefunden haben, wählen Sie die Nachricht aus, um Details dazu anzuzeigen und Maßnahmen zu ergreifen (z. B. die Nachricht anzeigen, freigeben, herunterladen oder löschen).
-
-#### <a name="export-message-results"></a>Nachrichtenergebnisse exportieren
-
-1. Wählen Sie die gewünschten Nachrichten aus, und klicken Sie auf **Ergebnisse exportieren**.
-
-2. Klicken Sie auf **Ja** in der Bestätigungsnachricht, die Sie warnt, das Browserfenster geöffnet zu lassen.
-
-3. Wenn Ihr Export fertig ist, können Sie den Speicherort für die .csv-Datei benennen und auswählen.
 
 #### <a name="view-quarantined-message-details"></a>Anzeigen von Details der isolierten Nachricht
 
@@ -255,14 +247,6 @@ In Organisationen mit Defender für Office 365 können Administratoren isolierte
    - **Richtlinientyp**
 
 Nachdem Sie eine bestimmte isolierte Datei gefunden haben, wählen Sie die Datei aus, um Details dazu anzuzeigen, und nehmen Sie Aktionen vor (beispielsweise anzeigen, freigeben, herunterladen oder Löschen der Nachricht).
-
-#### <a name="export-file-results"></a>Exportieren von Datei Ergebnissen
-
-1. Wählen Sie die Dateien aus, für die Sie sich interessieren, und klicken Sie auf **Ergebnisse exportieren**.
-
-2. Klicken Sie auf **Ja** in der Bestätigungsnachricht, die Sie warnt, das Browserfenster geöffnet zu lassen.
-
-3. Wenn Ihr Export fertig ist, können Sie den Speicherort für die .csv-Datei benennen und auswählen.
 
 #### <a name="view-quarantined-file-details"></a>Anzeigen von Details in isolierten Dateien
 
