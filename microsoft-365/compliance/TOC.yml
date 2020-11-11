@@ -82,7 +82,7 @@
 - name: Informationsschutz verwalten
   items:
     - name: 'Ihre Daten kennen, schützen und Datenverlust verhindern'
-      href: protect-information.md
+      href: information-protection.md
     - name: Typen vertraulicher Informationen
       items:
         - name: Entitätsdefinitionen für Typen vertraulicher Informationstypen
