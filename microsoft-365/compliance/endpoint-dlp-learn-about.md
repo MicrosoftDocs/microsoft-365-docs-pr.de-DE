@@ -1,5 +1,5 @@
 ---
-title: Informationen zu Microsoft 365 Endpunkt-DLP (Data Loss Prevention, Verhinderung von Datenverlust) (Vorschau)
+title: Informationen zu Microsoft 365 Endpunkt-DLP (Data Loss Prevention, Verhinderung von Datenverlust)
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,23 +18,23 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: 'Microsoft 365 Endpunkt-DLP erweitert die Überwachung von Dateiaktivitäten sowie schützende Maßnahmen für diese Dateien auf Endpunkte. Die Dateien werden in den Microsoft 365 Compliance-Lösungen angezeigt. '
-ms.openlocfilehash: 3dedf8f3134dbdd00c45e6b0aed741a3b3173984
-ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
+description: 'Microsoft 365 Endpunkt-DLP erweitert die Überwachung von Dateiaktivitäten und Schutzmaßnahmen für diese Dateien auf Endpunkte. Dateien werden in den Microsoft 365 Compliance-Lösungen sichtbar gemacht. '
+ms.openlocfilehash: 966e201acb8038d85f0d06c0800c9845fd79097e
+ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48931969"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48984929"
 ---
-# <a name="learn-about-microsoft-365-endpoint-data-loss-prevention-preview"></a>Informationen zu Microsoft 365 Endpunkt-DLP (Data Loss Prevention, Verhinderung von Datenverlust) (Vorschau)
+# <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Informationen zu Microsoft 365 Endpunkt-DLP (Data Loss Prevention, Verhinderung von Datenverlust)
 
-Sie können Microsoft 365-DLP (Data Loss Prevention, Verhinderung von Datenverlust) verwenden, um die Aktionen zu überwachen, die an Elementen ausgeführt werden, die Sie als vertraulich eingestuft haben, und um die unbeabsichtigte Freigabe dieser Elemente zu verhindern. Weitere Informationen zu DLP finden Sie unter [Verhinderung von Datenverlust – Übersicht](data-loss-prevention-policies.md).
+Sie können Microsoft 365 Data Loss Prevention (DLP) verwenden, um Ihre Maßnahmen für vertrauliche Objekte zu überwachen und um die unbeabsichtigte gemeinsame Nutzung dieser Objekte zu verhindern. Mehr Informationen zu DLP finden Sie unter [Überblick über DLP](data-loss-prevention-policies.md).
 
-**Verhinderung von Datenverlust am Endpunkt** (Endpunkt-DLP) erweitert die Aktivitätsüberwachung und die Schutzfunktionen von DLP auf sensible Elemente auf Windows 10-Geräten. Sobald Geräte in den Microsoft 365 Compliance-Lösungen eingebunden wurden, werden die Informationen zu den Aktionen, die Benutzer mit und an vertraulichen Elementen ausführen, im [Aktivitäten-Explorer](data-classification-activity-explorer.md) angezeigt, und Sie können Schutzmaßnahmen für diese Elemente über [DLP-Richtlinien](create-test-tune-dlp-policy.md) erzwingen.
+**Verhinderung von Datenverlust** (Endpunkt-DLP) erweitert die Aktivitätsüberwachungs- und Schutzfunktionen von DLP auf vertrauliche Objekte, die sich auf Windows 10-Geräten befinden. Sobald die Geräte in die Microsoft 365 Compliance-Lösungen integriert sind, werden die Informationen darüber, was Benutzer mit vertraulichen Objekten tun, im [Aktivitäts-Explorer](data-classification-activity-explorer.md) sichtbar. Sie können Schutzmaßnahmen für diese Objekte über [DLP-Richtlinien](create-test-tune-dlp-policy.md) durchsetzen.
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>Endpunktaktivitäten, die Sie überwachen und für die Sie Maßnahmen festlegen können
 
-Mit Microsoft Endpunkt-DLP können Sie die folgenden Aktivitätstypen überwachen und verwalten, die von Benutzern mit und an vertraulichen Elementen auf Windows 10-Geräten ausgeführt werden. Hierzu zählen Folgende:
+Mit Microsoft Endpunkt-DLP können Sie folgende Arten von Aktivitäten prüfen und verwalten, die Benutzer auf Windows 10-Geräten ausführen. Dazu gehören:
 
 
 |Aktivität am Element |überwachbar/einschränkbar  |
@@ -51,14 +51,14 @@ Mit Microsoft Endpunkt-DLP können Sie die folgenden Aktivitätstypen überwache
 
 Es gibt ein paar zusätzliche Konzepte, die Sie kennen sollten, bevor Sie sich mit Endpunkt-DLP befassen.
 
-### <a name="enabling-device-management"></a>Aktivieren der Geräteverwaltung
+### <a name="enabling-device-management"></a>Geräteverwaltung aktivieren
 
-Bei der Geräteverwaltung handelt es sich um die Funktionalität, die das Erfassen von Telemetriedaten von Geräten ermöglicht und sie in Microsoft 365-Compliance-Lösungen wie Endpunkt-DLP und [Insider-Risikomanagement](insider-risk-management.md) überträgt. Sie müssen alle Geräte, die Sie als Speicherorte in DLP-Richtlinien verwenden möchten, einbinden.
+Bei der Geräteverwaltung handelt es sich um die Funktionalität, die das Erfassen von Telemetriedaten von Geräten ermöglicht und sie in Microsoft 365 Compliance-Lösungen wie Endpunkt-DLP und [Insider-Risikomanagement](insider-risk-management.md) überträgt. Sie müssen alle Geräte, die Sie als Speicherorte in DLP-Richtlinien verwenden möchten, einbinden.
 
 > [!div class="mx-imgBorder"]
-> ![Aktivieren der Geräteverwaltung](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+> ![Geräteverwaltung aktivieren](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
-Onboarding und Offboarding werden über Skripts verarbeitet, die Sie über das Center zur Geräteverwaltung herunterladen können. Im Center sind benutzerdefinierte Skripts für jede der folgenden Bereitstellungsmethoden verfügbar:
+Onboarding und Offboarding werden über Skripte abgewickelt, die Sie vom Geräteverwaltungszentrum herunterladen. Das Zentrum verfügt über benutzerdefinierte Skripte für jede dieser Bereitstellungsmethoden:
 
 - lokales Skript (bis zu 10 Computer)
 - Gruppenrichtlinie
@@ -76,9 +76,9 @@ Wenn das Onboarding eines Geräts über [Microsoft Defender für Endpunkt](https
 > [!div class="mx-imgBorder"]
 > ![Liste der verwalteten Geräte](../media/endpoint-dlp-learn-about-2-device-list.png)
 
-### <a name="viewing-endpoint-dlp-data"></a>Anzeigen von Endpunkt-DLP-Daten
+### <a name="viewing-endpoint-dlp-data"></a>Endpunkt-DLP-Daten anzeigen
 
- Endpunkt-DLP überwacht Aktivitäten basierend auf dem MIME-Typ, sodass sie auch dann erfasst werden, wenn die Dateierweiterung geändert wurde. In der öffentlichen Vorschau wird Folgendes überwacht:
+ Endpunkt-DLP Endpunkt-DLP überwacht Aktivitäten auf der Grundlage des MIME-Typs, so dass Aktivitäten auch dann erfasst werden, wenn die Dateierweiterung geändert wird. In der öffentlichen Vorschau folgende Dateien überwacht:
 
 - Word-Dateien
 - PowerPoint-Dateien
@@ -96,7 +96,7 @@ Wenn das Onboarding eines Geräts über [Microsoft Defender für Endpunkt](https
 - JAVA-Dateien
 
 > [!NOTE]
-> Endpunkt-DLP bewertet Dateien aller oben genannten Typen anhand der DLP-Richtlinie und wendet Schutzmaßnahmen entsprechend an. Alle Dateien, die einer DLP-Richtlinie entsprechen, werden für alle unterstützten Aktionen geprüft, auch wenn Sie nicht blockiert sind. Darüber hinaus werden Dateiaktivitäten, die mit beliebigen Word-, PowerPoint-, Excel-, PDF- und CSV-Dateien durchgeführt werden, standardmäßig geprüft, unabhängig davon, ob eine DLP-Richtlinie vorhanden ist oder mit diesen Dateien übereinstimmt.
+> Endpunkt-DLP bewertet Dateien der oben genannten Dateitypen anhand der DLP-Richtlinie und wendet die entsprechenden Schutzmaßnahmen an. Alle Dateien, die mit einer DLP-Richtlinie übereinstimmen, werden auf alle unterstützten Aktionen geprüft, auch wenn sie nicht gesperrt sind. Zusätzlich werden alle auf Word-, PowerPoint-, Excel-, PDF- und CSV-Dateien ausgeführte Dateiaktivitäten standardmäßig geprüft, unabhängig davon, ob eine DLP-Richtlinie vorhanden ist oder mit diesen Dateien übereinstimmt.
 
 Nach dem Onboarding eines Geräts werden Informationen zu überwachten Aktivitäten an den Aktivitäten-Explorer gesendet, noch bevor Sie DLP-Richtlinien konfigurieren und bereitstellen, die Geräte als Speicherort verwenden.
 

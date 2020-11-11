@@ -9,26 +9,26 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Weitere Informationen über Erklärungstypen in Microsoft SharePoint Syntex
-ms.openlocfilehash: 43272504912451e4690cb8b7fe351462371bb252
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: 2d76fec3ee98f7c096c44a2b19b52da9fb70859d
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350303"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988762"
 ---
 # <a name="introduction-to-explanation-types"></a>Einführung in Erklärungstypen
 
-Erklärungen werden verwendet, um die Informationen zu definieren, die Sie in Ihren Document Understanding-Modellen in Microsoft SharePoint Syntex bezeichnen und extrahieren möchten. Wenn Sie eine Erklärung erstellen, müssen Sie einen Erklärungstyp auswählen. Dieser Artikel soll Ihnen helfen, die verschiedenen Erklärungstypen und ihre Verwendung besser zu verstehen. 
+Erklärungen werden verwendet, um die Informationen zu definieren, die Sie in Ihren Document Understanding-Modellen in Microsoft SharePoint Syntex bezeichnen und extrahieren möchten. Wenn Sie eine Erklärung erstellen, müssen Sie einen Erklärungstyp auswählen. Dieser Artikel hilft Ihnen dabei, die verschiedenen Erklärungstypen und ihre Verwendung zu verstehen. 
 
    ![Erklärungstypen](../media/content-understanding/explanation-types.png) 
    
 Diese Erklärungstypen stehen zur Verfügung:
 
-- **Begriffsliste**: Liste von Wörtern, Phrasen, Zahlen oder anderen Zeichen, die Sie in dem Dokument oder der Information, die Sie extrahieren, verwenden können. Zum Beispiel ist die Textzeichenfolge **Überweisender Arzt** in allen Dokumenten "Ärztliche Überweisung" enthalten, die Sie identifizieren.</br>
+- **Begriffsliste** : Liste von Wörtern, Phrasen, Zahlen oder anderen Zeichen, die Sie in dem Dokument oder der Information, die Sie extrahieren, verwenden können. Zum Beispiel ist die Textzeichenfolge **Überweisender Arzt** in allen Dokumenten "Ärztliche Überweisung" enthalten, die Sie identifizieren.</br>
 
-- **Musterliste**: Auflisten von Mustern aus Zahlen, Buchstaben oder anderen Zeichen, die Sie zur Identifizierung der Informationen, die Sie extrahieren, verwenden können. Sie können beispielsweise die **Telefonnummer** des überweisenden Arztes aus allen Dokumenten "Ärztliche Überweisung" extrahieren, die Sie identifizieren.</br>
+- **Musterliste** : Auflisten von Mustern aus Zahlen, Buchstaben oder anderen Zeichen, die Sie zur Identifizierung der Informationen, die Sie extrahieren, verwenden können. Sie können beispielsweise die **Telefonnummer** des überweisenden Arztes aus allen Dokumenten "Ärztliche Überweisung" extrahieren, die Sie identifizieren.</br>
 
-- **Näherung**: Beschreibt, wie nahe die Erklärungen beieinander liegen. Zum Beispiel geht eine Musterliste *Straßennummer* direkt vor die Begriffsliste *Straßenname*, ohne Token dazwischen (Sie werden später in diesem Artikel mehr über Token erfahren). Die Verwendung des Näherungstyps erfordert, dass Sie mindestens zwei Erklärungen in Ihrem Modell haben, sonst wird die Option deaktiviert. 
+- **Näherung** : Beschreibt, wie nahe die Erklärungen beieinander liegen. Zum Beispiel geht eine Musterliste *Straßennummer* direkt vor die Begriffsliste *Straßenname* , ohne Token dazwischen (Sie werden später in diesem Artikel mehr über Token erfahren). Die Verwendung des Näherungstyps erfordert, dass Sie mindestens zwei Erklärungen in Ihrem Modell haben, ansonsten die Option deaktiviert wird. 
  
 ## <a name="phrase-list"></a>Begriffsliste
 
@@ -42,17 +42,17 @@ Wenn die Groß-/Kleinschreibung bei der Identifizierung Ihrer Bezeichnung beacht
 
 ## <a name="pattern-lists"></a>Musterlisten
 
-Ein Musterlistentyp ist besonders nützlich, wenn Sie eine Erklärung erstellen, die Informationen aus einem Dokument identifiziert und extrahiert. Sie wird in der Regel in verschiedenen Formaten dargestellt, wie z. B. Datum, Telefonnummern oder Kreditkartennummern. Beispielsweise kann ein Datum in verschiedenen Formaten angezeigt werden (1/1/2020, 1-1-2020, 01/01/20, 01/01/2020, 1.1.2020 usw.). Die Definition einer Musterliste macht Ihre Erklärung effizienter, indem sie alle möglichen Variationen in den Daten erfasst, die Sie zu identifizieren und zu extrahieren versuchen. 
+Ein Musterlistentyp ist besonders nützlich, wenn Sie eine Erklärung erstellen, die Informationen aus einem Dokument identifiziert und extrahiert. Er wird in der Regel in verschiedenen Formaten dargestellt, wie z. B. Datum, Telefonnummern und Kreditkartennummern. Beispielsweise kann ein Datum in verschiedenen Formaten angezeigt werden (1/1/2020, 1-1-2020, 01/01/20, 01/01/2020, 1.1.2020 usw.). Die Definition einer Musterliste macht Ihre Erklärung effizienter, indem sie alle möglichen Variationen in den Daten erfasst, die Sie zu identifizieren und zu extrahieren versuchen. 
 
 Für das Beispiel **Telefonnummer** extrahieren Sie die Telefonnummer für jeden überweisenden Arzt aus allen Dokumenten "Ärztliche Überweisung", die das Modell identifiziert. Wenn Sie die Erklärung erstellen, wählen Sie den Musterlistentyp aus, um die verschiedenen Formate zuzulassen, von denen Sie erwarten können, dass sie zurückgegeben werden.
 
    ![Musterliste "Telefonnummer"](../media/content-understanding/pattern-list.png)
 
-Für dieses Beispiel aktivieren Sie das Kontrollkästchen **Beliebige Ziffer von 0-9**. Wenn Sie dies aktivieren, wird jeder "0"-Wert, der in Ihrer Musterliste verwendet wird, als eine beliebige Ziffer von 0 bis 9 erkannt.
+Wählen Sie in diesem Beispiel das Kontrollkästchen **Beliebige Ziffer von 0-9** aus, um zu erkennen, dass es sich bei jedem in Ihrer Musterliste verwendeten „0“-Wert um eine beliebige Ziffer von 0 bis 9 handelt.
 
    ![Beliebige Ziffer von 0-9](../media/content-understanding/digit-identity.png)
 
-Wenn Sie eine Musterliste erstellen, die Textzeichen enthält, aktivieren Sie in ähnlicher Weise das Kontrollkästchen **Jeder Buchstabe von a-z**. Wenn Sie dies aktivieren, wird jedes "a"-Zeichen, das in der Musterliste verwendet wird, als ein beliebiges Zeichen von "a" bis "z" erkannt.
+Wenn Sie eine Musterliste erstellen, die Textzeichen enthält, wählen Sie in ähnlicher Weise das Kontrollkästchen **Beliebige Buchstaben von a-z** aus, um zu erkennen, dass es sich bei jedem in Ihrer Musterliste verwendeten "a" -Zeichen um ein beliebiges Zeichen zwischen "a" und "z" handelt.
 
 Wenn Sie beispielsweise eine Musterliste **Datum** erstellen und sicherstellen möchten, dass ein Datumsformat wie z. B. *Jan 1, 2020* erkannt wird, müssen Sie Folgendes tun:
 - Fügen Sie Ihrer Musterliste *aaa 0, 0000* und *aaa 00, 0000* hinzu.
@@ -68,13 +68,13 @@ Wenn Sie in Ihrer Musterliste Groß-/Kleinschreibungsanforderungen haben, haben 
    ![Nur genaue Groß-/Kleinschreibung](../media/content-understanding/exact-caps.png)
 
 > [!NOTE]
-> Statt die Erklärung der Musterliste manuell zu erstellen, verwenden Sie die [Erklärungsbibliothek](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-explanation-templates), um vorgefertigte Musterlistenvorlagen für allgemeine Musterlisten zu verwenden, wie z. B. *Datum*, *Telefonnummer*, *Kreditkartennummer* usw. 
+> Statt eine Musterlistenerklärung manuell zu erstellen, verwenden Sie die [Erklärungsbibliothek](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-explanation-templates), um Musterlistenvorlagen für allgemeine Musterlisten zu verwenden, wie z. B. *Datum* , *Telefonnummer* , *Kreditkartennummer* usw.
 
 ## <a name="proximity"></a>Näherung 
 
-Der Erklärungstyp "Näherung" hilft Ihrem Modell bei der Identifizierung von Daten, indem er definiert, wie nahe ein anderer Datenbestand an ihm liegt. Beispielsweise haben Sie in Ihrem Modell zwei Erklärungen definiert, die sowohl die *Straßennummer* als auch die *Telefonnummer* des Kunden bezeichnen. 
+Der Erklärungstyp "Näherung" hilft Ihrem Modell bei der Identifizierung von Daten, indem er definiert, wie nahe ein anderes Datenelement an ihm liegt. Beispielsweise haben Sie in Ihrem Modell zwei Erklärungen definiert, die sowohl die *Straßennummer* als auch die *Telefonnummer* des Kunden bezeichnen. 
 
-Außerdem stellen Sie fest, dass die Telefonnummern des Kunden immer vor der Straßennummer erscheinen. 
+Beachten Sie, dass die Telefonnummern des Kunden immer vor der Straßennummer steht. 
 
 Alex Wilburn<br>
 555-555-5555<br>
@@ -87,31 +87,29 @@ Verwenden Sie die Näherungserklärung, um festzulegen, wie weit die Erklärung 
 
 #### <a name="what-are-tokens"></a>Was sind Token?
 
-Um den Erklärungstyp "Näherung" verwenden zu können, müssen Sie verstehen, was ein Token ist, da die Anzahl der Token angibt, wie die Näherungserklärung den Abstand von einer Erklärung zur anderen misst.  
+Um den Erklärungstyp "Näherung" verwenden zu können, müssen Sie verstehen, was ein Token ist, da die Anzahl der Token angibt, wie die Näherungserklärung den Abstand von einer Erklärung zur anderen misst. Ein Token ist eine kontinuierliche Reihe (ohne Leerzeichen oder Interpunktionen) von Buchstaben und Zahlen. 
 
-Ein Token ist eine kontinuierliche Spanne (keine Leerzeichen oder Interpunktion) von Buchstaben und Zahlen. Ein Leerzeichen ist KEIN Token. Jedes Interpunktionszeichen ist ein Token. Die folgende Tabelle zeigt einige Beispiele für das Ermitteln der Anzahl von Token in einer Phrase.
+Die folgende Tabelle zeigt Beispiele, wie die Anzahl der Token in einer Phrase ermittelt wird.
 
 |Phrase|Anzahl von Token|Erklärung|
 |--|--|--|
 |`Dog`|1|Ein einzelnes Wort ohne Interpunktionszeichen oder Leerzeichen.|
-|`RMT33W`|1|Eine Datensatz-Locator-Nummer. Sie kann Zahlen und Buchstaben enthalten, hat aber keine Interpunktion.|
-|`425-555-5555`|5|Eine Telefonnummer. Jedes Interpunktionszeichen ist ein einzelnes Token, sodass  `425-555-5555` 5 Tokens wären:<br>`425`<br>`-`<br>`555`<br>`-`<br>`5555` |
+|`RMT33W`|1|Eine Datensatz-Locator-Nummer. Sie kann Zahlen und Buchstaben beinhalten, hat aber keine Interpunktion.|
+|`425-555-5555`|5|Eine Telefonnummer. Jedes Interpunktionszeichen ist ein einzelnes Token, also ist `425-555-5555` 5 Tokens:<br>`425`<br>`-`<br>`555`<br>`-`<br>`5555` |
 |`https://luis.ai`|7|`https`<br>`:`<br>`/`<br>`/`<br>`luis`<br>`.`<br>`ai`<br>|
 
 #### <a name="configure-the-proximity-explanation-type"></a>Konfigurieren des Erklärungstyps "Näherung"
 
-Konfigurieren Sie für das Beispiel die Einstellung für die Näherung so, dass wir den Bereich der Anzahl der Token definieren können, die die Erklärung *Telefonnummer* aus der Erklärung *Straßennummer* enthält.
+Konfigurieren Sie für das Beispiel die Näherungseinstellung, um den Bereich der Anzahl der Token in der *Telefonnummer* -Erklärung aus der *Straßenadressnummer* -Erklärung zu definieren. Beachten sie, dass der Mindestbereich „0“ ist, da es keine Token zwischen der Telefonnummer und der Straßenadressnummer gibt.
 
-Sie sollten sehen, dass der Mindestbereich "0" ist, da es keine Token zwischen der Telefonnummer und der Straßennummer gibt.
-
-Einige Telefonnummern in den Beispieldokumenten sind jedoch mit *(Mobil)* angehängt.
+Einige Telefonnummern in den Beispieldokumenten sind jedoch mit *(Mobil)* ergänzt.
 
 Nestor Wilke<br>
 111-111-1111 (Mobil)<br>
 Langgasse 18<br>
 54123 Münchfeld<br>
 
-Es gibt drei Token in *(Mobil)*:
+Es gibt drei Token in *(Mobil)* :
 
 |Phrase|Tokenzahl|
 |--|--|
@@ -125,13 +123,13 @@ Konfigurieren Sie die Einstellung für die Näherung so, dass sie einen Wert von
 
 ## <a name="use-explanation-templates"></a>Verwenden von Erklärungsvorlagen
 
-Sie können zwar manuell verschiedene Musterlistenwerte für Ihre Erklärung hinzufügen, es kann jedoch viel einfacher sein, die vorgefertigten Vorlagen zu verwenden, die Ihnen in der Erklärungsbibliothek zur Verfügung gestellt werden.
+Während Sie manuell verschiedene Musterlistenwerte für Ihre Erklärung hinzufügen können, kann es einfacher sein, die Vorlagen zu verwenden, die Ihnen in der Erklärungsbibliothek zur Verfügung gestellt werden.
 
-Statt z. B. alle Varianten für *Datum* manuell hinzuzufügen, können Sie die Musterlistenvorlage für* Datum* verwenden, die bereits eine Reihe von Musterlistenwerten enthält:</br>
+Statt z. B. alle Varianten für *Datum* manuell hinzuzufügen, können Sie die Musterlistenvorlage für *Datum* verwenden, da diese bereits eine Reihe von Musterlistenwerten enthält:</br>
 
    ![Erklärungsbibliothek](../media/content-understanding/explanation-template.png)</br>
  
-Die Erklärungsbibliothek enthält eine Reihe von häufig verwendeten Musterlistenerklärungen, einschließlich:</br>
+Die Erklärungsbibliothek enthält häufig verwendeten Musterlistenerklärungen, einschließlich:</br>
 
 - Datum</br>
 - Datum (numerisch)</br>
@@ -143,7 +141,7 @@ Die Erklärungsbibliothek enthält eine Reihe von häufig verwendeten Musterlist
 - Kreditkarte</br>
 - Sozialversicherungsnummer</br>
 
-Beachten Sie, dass die Erklärungsbibliothek auch Vorlagen für Begriffslistenerklärungen enthält, einschließlich:
+Beachten Sie, dass die Erklärungsbibliothek auch Vorlagen für Begriffslistenerklärungen enthält:
 - Ende des Satzes
 - Währung
 
@@ -153,11 +151,11 @@ Beachten Sie, dass die Erklärungsbibliothek auch Vorlagen für Begriffslistener
 
    ![Aus Vorlage erstellen](../media/content-understanding/from-template.png)</br>
 
-2.  Wählen Sie auf der Seite **Erklärungsvorlagen** die Erklärung aus, die Sie verwenden möchten, und wählen Sie dann **Hinzufügen** aus.</br>
+2.  Wählen Sie auf der Seite **Erklärungsvorlagen** die Erklärung aus, die Sie verwenden möchten, dann wählen Sie **Hinzufügen** aus.</br>
 
        ![Auswählen einer Vorlage](../media/content-understanding/phone-template.png)</br>
 
-3. Die Informationen für die von Ihnen ausgewählte Vorlage werden auf der Seite **Erklärung erstellen** angezeigt. Bearbeiten Sie bei Bedarf den Namen der Erklärung und fügen Sie Elemente zur Musterliste hinzu oder entfernen Sie diese. </br> 
+3. Die Informationen für die von Ihnen ausgewählte Vorlage sind auf der Seite **Erklärung erstellen** dargestellt. Bearbeiten Sie bei Bedarf den Namen der Erklärung und fügen Sie Elemente zur Musterliste hinzu oder entfernen Sie diese. </br> 
 
    ![Vorlage bearbeiten](../media/content-understanding/phone-template-live.png)</br>
 

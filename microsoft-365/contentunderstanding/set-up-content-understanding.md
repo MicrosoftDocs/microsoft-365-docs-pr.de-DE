@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 localization_priority: Priority
 description: Einrichten des Inhaltsverständnisses in Projekt Cortex
-ms.openlocfilehash: 6078b41f8911301d343925c5bf895e881abddffe
-ms.sourcegitcommit: 88c2461b14cd16f74979f4bcd0a9ad18e4422cb3
+ms.openlocfilehash: 8f1ebd70f932bce874efc19f525b549f6717f532
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48469721"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988683"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Einrichten von SharePoint Syntex
 
@@ -41,11 +41,11 @@ Als Administrator können Sie nach dem Einrichten und in den Verwaltungseinstell
 
 ## <a name="to-set-up-sharepoint-syntex"></a>So richten Sie SharePoint Syntex ein
 
-1. Wählen Sie im Microsoft 365 Admin Center **Setup**aus, und zeigen Sie dann den Abschnitt **Dateien und Inhalte** an.
+1. Wählen Sie im Microsoft 365 Admin Center **Setup** aus, und zeigen Sie dann den Abschnitt **Dateien und Inhalte** an.
 
 2. Wählen Sie im Abschnitt **Dateien und Inhalte** > **Inhaltsverständnis automatisieren** aus.<br/>
 
-3. Klicken Sie auf der Seite **Inhaltsverständnis automatisieren** auf **Erste Schritte**, um den Setupvorgang zu durchlaufen.<br/>
+3. Klicken Sie auf der Seite **Inhaltsverständnis automatisieren** auf **Erste Schritte** , um den Setupvorgang zu durchlaufen.<br/>
 
     > [!div class="mx-imgBorder"]
     > ![Setup starten](../media/content-understanding/admin-content-understanding-get-started.png)</br>
@@ -53,9 +53,9 @@ Als Administrator können Sie nach dem Einrichten und in den Verwaltungseinstell
 4. Auf der Seite **Formularverarbeitung konfigurieren** können Sie auswählen, ob Sie zulassen möchten, dass Benutzer Formularverarbeitungsmodelle in bestimmten SharePoint-Dokumentbibliotheken erstellen können. Im Menüband "Dokumentbibliothek" wird eine Menüoption zum **Erstellen eines Formularverarbeitungsmodells** in SharePoint-Dokumentbibliotheken verfügbar, in denen es aktiviert ist.
  
      Für **Welche SharePoint-Bibliotheken sollen die Option zum Erstellen eines Formularverarbeitungsmodells anzeigen** können Sie Folgendes auswählen:</br>
-      - **Alle SharePoint-Bibliotheken**, damit die Option für alle SharePoint-Bibliotheken in Ihrer Organisation verfügbar gemacht wird.</br>
+      - **Alle SharePoint-Bibliotheken** , damit die Option für alle SharePoint-Bibliotheken in Ihrer Organisation verfügbar gemacht wird.</br>
       - **Nur Bibliotheken in ausgewählten Websites**. Wählen Sie dann die Websites aus, auf denen Sie die Option verfügbar machen möchten, oder laden Sie eine Liste mit bis zu 50 Websites hoch.</br>
-      - **Keine SharePoint-Bibliotheken**, wenn Sie die Option nicht auf Websites verfügbar machen möchten (Sie können dies nach der Einrichtung ändern).
+      - **Keine SharePoint-Bibliotheken** , wenn Sie die Option nicht auf Websites verfügbar machen möchten (Sie können dies nach der Einrichtung ändern).
 
    > [!div class="mx-imgBorder"]
    > ![Konfigurieren der Formularverarbeitung](../media/content-understanding/admin-configforms.png)
@@ -92,7 +92,7 @@ So weisen Sie Lizenzen zu
 
 3. Wählen Sie **Weitere zuweisen** aus.
 
-4. Wählen Sie **Intelligente Inhaltsdienste** aus. Stellen Sie sicher, dass unter **Apps** die Optionen **Common Data Service für intelligente Inhaltsdienste** und **Intelligente Inhaltsdienste** aktiviert sind.
+4. Wählen Sie **SharePoint Syntex** aus. Stellen Sie sicher, dass unter **Apps** sowohl **Gemeinsamer Datendienst für SharePoint Syntex** , **SharePoint Syntex** wie auch **SharePoint Syntex – SPO-Typ** ausgewählt sind.
 
     > [!div class="mx-imgBorder"]
     > ![SharePoint Syntex-Lizenzen im Microsoft 365 Admin Center](../media/content-understanding/sharepoint-syntex-licenses.png)
