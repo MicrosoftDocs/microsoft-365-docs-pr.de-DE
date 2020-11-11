@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie die erweiterten Anti-Phishing-Richtlinien erstellen, ändern und löschen, die in Organisationen mit Microsoft Defender für Office 365 verfügbar sind.
-ms.openlocfilehash: ecc68a8dc050a5f08c6982b023861e0ea8976775
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 7665d0dc475909d04da209aa6c1cd6b12378f8a9
+ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920656"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993388"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Konfigurieren von Anti-Phishing-Richtlinien in Microsoft Defender für Office 365
 
@@ -170,7 +170,10 @@ Verwenden Sie die folgenden Verfahren, um Richtlinien zum Schutz vor Phishing zu
      Um einen vorhandenen Eintrag zu bearbeiten, wählen Sie den geschützten Benutzer in der Liste aus.
 
      > [!NOTE]
-     > Sie können maximal 60 Benutzer in allen Anti-Phishing-Richtlinien haben. Mit anderen Worten: Sie können 60 geschützte Benutzer in einer Richtlinie, 12 geschützte Benutzer in 5 Richtlinien usw. haben.
+     >
+     > - In jeder Anti-Phishing-Richtlinie können Sie maximal 60 geschützte Benutzer (Absender-e-Mail-Adressen) angeben. Sie können den gleichen geschützten Benutzer nicht in mehreren Richtlinien angeben.
+     >
+     > - Der Schutz vor Benutzeridentitätswechsel funktioniert nicht, wenn der Absender und der Empfänger zuvor per e-Mail kommuniziert haben. Wenn der Absender und der Empfänger noch nie per e-Mail kommuniziert haben, wird die Nachricht als Identitätswechsel Versuch identifiziert.
 
    - **Hinzufügen von Domänen zu Protect** : Konfigurieren Sie eine oder beide der folgenden Einstellungen:
 
@@ -178,7 +181,7 @@ Verwenden Sie die folgenden Verfahren, um Richtlinien zum Schutz vor Phishing zu
      - **Benutzerdefinierte Domänen einschließen** : der Standardwert ist **Off**. Um Sie zu aktivieren, schieben Sie die Umschaltfläche auf **ein** , und geben Sie im Feld **Domänen hinzufügen** den Domänennamen ein (beispielsweise contoso.com), drücken Sie die EINGABETASTE, und wiederholen Sie den Vorgang bei Bedarf.
 
      > [!NOTE]
-     > Sie können maximal 50 Domänen in allen Anti-Phishing-Richtlinien haben. Mit anderen Worten: Sie können 50 geschützte Benutzer in einer Richtlinie, 10 geschützte Benutzer in 5 Richtlinien usw. haben.
+     > Sie können maximal 50 Domänen in allen Anti-Phishing-Richtlinien haben.
 
    - **Aktionen** : Klicken Sie auf **Bearbeiten**
 

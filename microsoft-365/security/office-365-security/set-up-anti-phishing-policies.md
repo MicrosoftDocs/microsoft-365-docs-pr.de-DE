@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die Anti-Phishing-Richtlinien informieren, die in Exchange Online Protection (EoP) und Microsoft Defender für Office 365 zur Verfügung stehen.
-ms.openlocfilehash: c1254ccdc678bd25c2d3481b0a43cca5ff9816c0
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: b54f452fb984f61913f2ade53ad45ed169a43832
+ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919776"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993354"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-Phishing-Richtlinien in Microsoft 365
 
@@ -30,7 +30,7 @@ ms.locfileid: "48919776"
 
 Richtlinien zum Konfigurieren von Einstellungen für den Schutz vor Phishing sind in Microsoft 365-Organisationen mit Exchange Online-Postfächern, eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächern und Microsoft Defender für Office 365 Organisationen verfügbar.
 
-Anti-Phishing-Richtlinien in Microsoft Defender für Office 365 sind nur in Organisationen verfügbar, die Defender für Office 365 haben. Zum Beispiel:
+Anti-Phishing-Richtlinien in Microsoft Defender für Office 365 sind nur in Organisationen verfügbar, die Defender für Office 365 haben. Beispiel:
 
 - Microsoft 365 Enterprise E5, Microsoft 365 Education A5, etc.
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
@@ -97,7 +97,7 @@ Die folgenden spoofeinstellungen stehen in Anti-Phishing-Richtlinien in EoP und 
   > [!NOTE]
   >
   > - Der Schutz vor Spoofing ist in der standardmäßigen Anti-Phishing-Richtlinie und in allen neuen benutzerdefinierten AntiPhishing-Richtlinien, die Sie erstellen, standardmäßig aktiviert.
-  > 
+  >
   > - Sie müssen den Schutz vor Spoofing nicht deaktivieren, wenn Ihr MX-Eintrag nicht auf Microsoft 365 verweist; Stattdessen aktivieren Sie die erweiterte Filterung für Connectors. Anweisungen finden Sie unter [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
   Für Nachrichten von blockierten gefälschten Absendern können Sie auch die Aktion angeben, die für die Nachrichten ausgeführt werden soll:
@@ -158,7 +158,10 @@ Die folgenden Identitätswechseleinstellungen sind nur in Anti-Phishing-Richtlin
   Sie können geschützte Benutzer zum Hinzufügen interner und externer Absender-e-Mail-Adressen zum Schutz vor Identitätswechsel verwenden. Diese Liste von **Absendern** , die vor Benutzeridentitätswechsel geschützt sind, unterscheidet sich von der Liste der **Empfänger** , auf die die Richtlinie angewendet wird (alle Empfänger für die Standardrichtlinie; bestimmte Empfänger, die in der Einstellung **angewendet auf** im Abschnitt [Richtlinieneinstellungen](#policy-settings) konfiguriert sind).
 
   > [!NOTE]
-  > Die maximale Anzahl geschützter Benutzer (Absender-e-Mail-Adressen), die Sie in allen Anti-Phishing-Richtlinien definieren können, lautet 60. Mit anderen Worten: Sie können 60 geschützte Benutzer in einer Richtlinie, 12 geschützte Benutzer in 5 Richtlinien usw. haben.
+  >
+  > - In jeder Anti-Phishing-Richtlinie können Sie maximal 60 geschützte Benutzer (Absender-e-Mail-Adressen) angeben. Sie können den gleichen geschützten Benutzer nicht in mehreren Richtlinien angeben.
+  >
+  > - Der Schutz vor Benutzeridentitätswechsel funktioniert nicht, wenn der Absender und der Empfänger zuvor per e-Mail kommuniziert haben. Wenn der Absender und der Empfänger noch nie per e-Mail kommuniziert haben, wird die Nachricht als Identitätswechsel Versuch identifiziert.
 
   Standardmäßig sind keine Absender-e-Mail-Adressen für den Identitätswechsel Schutz in **Benutzern konfiguriert, die geschützt werden sollen**. Daher werden standardmäßig keine Absender-e-Mail-Adressen durch den Identitätswechsel Schutz in der Standardrichtlinie oder in benutzerdefinierten Richtlinien abgedeckt.
 
@@ -167,7 +170,7 @@ Die folgenden Identitätswechseleinstellungen sind nur in Anti-Phishing-Richtlin
 - **Zu schützende Domänen** : verhindert, dass die angegebenen Domänen **in der Domäne des Nachrichtenabsenders** imitiert werden. Beispielsweise alle Domänen, die Sie besitzen ([akzeptierte Domänen](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) oder bestimmte Domänen (Domänen, die Sie besitzen oder Partnerdomänen). Diese Liste von **Absenderdomänen** , die vor Identitätswechsel geschützt sind, unterscheidet sich von der Liste der **Empfänger** , auf die die Richtlinie angewendet wird (alle Empfänger für die Standardrichtlinie; bestimmte Empfänger, die in der Einstellung **angewendet auf** im Abschnitt [Richtlinieneinstellungen](#policy-settings) konfiguriert sind).
 
   > [!NOTE]
-  > Die maximale Anzahl geschützter Domänen, die Sie in allen Anti-Phishing-Richtlinien definieren können, ist 50. In anderen Worten: Sie können 50 geschützte Domänen in einer Richtlinie, 10 geschützte Domänen in 5 Richtlinien usw. haben.
+  > Die maximale Anzahl geschützter Domänen, die Sie in allen Anti-Phishing-Richtlinien definieren können, ist 50.
 
   Standardmäßig sind keine Absenderdomänen für den Identitätswechsel Schutz in Domänen konfiguriert **, die geschützt werden sollen**. Daher werden standardmäßig keine Absenderdomänen durch den Identitätswechsel Schutz in der Standardrichtlinie oder in benutzerdefinierten Richtlinien behandelt.
 
