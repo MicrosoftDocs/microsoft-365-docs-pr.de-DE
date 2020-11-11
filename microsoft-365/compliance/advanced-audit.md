@@ -18,19 +18,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Die erweiterte Überwachung in Microsoft 365 bietet neue Überwachungsfunktionen, die Ihre Organisation bei forensischen und Complianceuntersuchungen unterstützen.
-ms.openlocfilehash: 51ec75cc8d8ae554ea9cbef3a9ea2aa18171e70a
-ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
+ms.openlocfilehash: bd7b4f78d37feddd7c66322460a6532a77045ba2
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/10/2020
-ms.locfileid: "48950994"
+ms.locfileid: "48988667"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Erweiterte Überwachung in Microsoft 365
 
 Die [Vereinheitlichte Überwachungsfunktionalität](search-the-audit-log-in-security-and-compliance.md) in Microsoft 365 bietet Organisationen eine Einsicht in viele verschiedene Typen von überwachten Aktivitäten in allen möglichen Diensten in Microsoft 365. Die erweiterte Überwachung hilft Organisationen dabei, forensische und Compliance-Untersuchungen durchzuführen, da hierfür die Aufbewahrungsdauer des Überwachungsprotokolls verlängert wird. Dadurch wird der Zugang zu wichtigen Ereignissen ermöglicht, die für die Ermittlung des Umfangs der Kompromittierung hilfreich sind, sowie schneller Zugriff auf die Office 365-Verwaltungsaktivitäts-API.
 
 > [!NOTE]
-> Erweiterte Überwachung steht für Organisationen mit einem Office 365 E5- oder Microsoft 365 Enterprise E5-Abonnement zur Verfügung. Darüber hinaus kann Benutzern eine Microsoft 365 E5 Compliance- oder E5 eDiscovery und Überwachungs-Add-On-Lizenz zugewiesen werden, wenn für Features für die erweiterte Überwachung eine Lizenzierung pro Benutzer erforderlich ist, wie dies bei der langfristigen Aufbewahrung von Überwachungsprotokollen und für den Zugang zu wichtigen Ereignissen für Untersuchungen der Fall ist. Weitere Informationen zu Lizenzen finden Sie unter [Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit).
+> Erweiterte Überwachung steht für Organisationen mit einem Office 365 E5/G5- oder Microsoft 365 Enterprise E5/G5-Abonnement zur Verfügung. Darüber hinaus kann Benutzern eine Microsoft 365 E5 Compliance- oder E5 eDiscovery und Überwachungs-Add-On-Lizenz zugewiesen werden, wenn für Features für die erweiterte Überwachung eine Lizenzierung pro Benutzer erforderlich ist, wie dies bei der langfristigen Aufbewahrung von Überwachungsprotokollen und für den Zugang zu wichtigen Ereignissen für Untersuchungen der Fall ist. Weitere Informationen zu Lizenzen finden Sie unter [Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit).
 
 In diesem Artikel finden Sie eine Übersicht über die Funktionen für die Erweiterte Überwachung.
 
@@ -157,12 +157,12 @@ Das neue Add-On für die zehnjährige Aufbewahrung von Überwachungsprotokollen 
 
 **Was geschieht mit den Überwachungsprotokolldaten meiner Organisation, wenn ich eine 10-Jahres-Aufbewahrungsrichtlinie für Überwachungsprotokolle erstelle, nachdem das Feature als allgemein verfügbar freigegeben wurde, aber bevor die erforderliche Add-On-Lizenz Anfang 2021 verfügbar ist?**
 
-Überwachungsprotokolldaten, die von einer 10-Jahres-Aufbewahrungsrichtlinie für Überwachungsprotokolle abgedeckt werden, die Sie nach der allgemeinen Verfügbarkeit erstellen, werden 10 Jahre lang aufbewahrt. Wenn die Add-On-Lizenz für die zehnjährige Aufbewahrung von Überwachungsprotokollen Anfang 2021 verfügbar ist, müssen Sie Add-On-Lizenzen für Benutzer erwerben, deren Überwachungsdaten durch eine bestehende 10-Jahres- Aufbewahrungsrichtlinie für Überwachungsprotokolle aufbewahrt werden. Nach der Verfügbarkeit der Add-On-Lizenz Anfang 2021 wird darüber hinaus die entsprechende Lizenzierung erzwungen, wenn Sie neue 10-Jahres-Aufbewahrungsrichtlinien für Überwachungsprotokolle erstellen.
+Alle Überwachungsprotokolldaten, die von einer 10-Jahres-Richtlinie zur Aufbewahrung von Audit-Protokollen abgedeckt sind und die Sie nach der allgemeinen Verfügbarkeit erstellen, werden 10 Jahre lang aufbewahrt. Wenn die Add-on-Lizenz für die 10-jährige Aufbewahrung von Audit-Protokollen Anfang 2021 verfügbar ist, müssen Sie Add-on-Lizenzen für Benutzer erwerben, deren Überwachungsprotokolle durch eine bestehende 10-jährige Richtlinie zur Aufbewahrung von Überwachungsprotokollen aufbewahrt werden. Sobald die Add-on-Lizenz Anfang 2021 verfügbar ist, wird die entsprechende Lizenzierung auch bei der Erstellung neuer Richtlinien für die 10-jährige Aufbewahrung von Überwachungsprotokollen durchgesetzt.
 
 **Sind die neuen Ereignisse in der erweiterten Überwachung in der Office 365-Verwaltungsaktivitäts-API verfügbar?**
 
-Ja. Solange Überwachungsdatensätze für Benutzer mit der entsprechenden Lizenz generiert werden, können Sie auf diese Datensätze über die Office 365-Verwaltungsaktivitäts-API zugreifen.
+Ja. Solange Überwachungsaufzeichnungen für Benutzer mit der entsprechenden Lizenz generiert werden, können Sie über die Office 365-Verwaltungsaktivitäts-API auf diese Aufzeichnungen zugreifen.
 
 **Bedeutet eine höhere Bandbreite eine bessere Latenz oder eine höhere SLA?**
 
-Gegenwärtig bietet eine hohe Bandbreite eine bessere Pipeline, insbesondere für Organisationen mit einem hohen Volumen an Überwachungssignalen und signifikanten Verbrauchsmustern. Mehr Bandbreite kann zu geringerer Latenz führen. Es gibt jedoch keinen mit hoher Bandbreite verbundenen SLA. Die Standardlatenzen sind dokumentiert, und diese ändern sich mit der Veröffentlichung der erweiterten Überwachung nicht.
+Gegenwärtig bietet eine hohe Bandbreite eine bessere Pipeline, insbesondere für Organisationen mit einem hohen Volumen an Überwachungssignalen und signifikanten Verbrauchsmustern. Mehr Bandbreite kann zu einer besseren Latenz führen. Mit hoher Bandbreite ist jedoch kein SLA verbunden. Standardlatenzzeiten sind dokumentiert, und diese Latenzzeiten ändern sich mit der Veröffentlichung der erweiterten Überwachung nicht.

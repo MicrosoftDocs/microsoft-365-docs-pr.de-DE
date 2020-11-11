@@ -22,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Hier erfahren Sie, wie Sie vertrauliche Informationen Ihrer Organisation in Office 365 identifizieren, überwachen und automatisch schützen.
-ms.openlocfilehash: 9e201b7adcde638cc87f57c7c28180420b9e8125
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: d1b82f1e5581e1d24284a549f3c9572e0f8343a3
+ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379282"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48984939"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Verhinderung von Datenverlust – Übersicht
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -57,11 +57,11 @@ Eine DLP-Richtlinie bietet Ihnen folgende Möglichkeiten:
     
 - **Anzeigen von DLP-Berichten mit Inhalten, die mit den DLP-Richtlinien Ihrer Organisation übereinstimmen**
     
-    Um die Einhaltung einer DLP-Richtlinie durch Ihre Organisation zu bewerten, können Sie anzeigen, wie viele Übereinstimmungen jede Richtlinie und Regel über einen bestimmten Zeitraum erzielt. Wenn eine DLP-Richtlinie es Benutzern ermöglicht, einen Richtlinientipp außer Kraft zu setzen und als falsch positives Ergebnis zu melden, können Sie auch anzeigen, welche Benutzer diese Meldung vorgenommen haben.
+    Um die Einhaltung einer DLP-Richtlinie durch Ihre Organisation zu bewerten, können Sie anzeigen, wie viele Übereinstimmungen jede Richtlinie und Regel über einen bestimmten Zeitraum erzielt. Wenn eine DLP-Richtlinie es Benutzern ermöglicht, einen Richtlinientipp außer Kraft zu setzen und als falsch positives Ergebnis zu melden, können Sie auch sehen, was Benutzer gemeldet haben.
     
-DLP-Richtlinien können Sie auf der Seite zur Verhinderung von Datenverlust im Office 365 Security &amp; Compliance Center erstellen und verwalten.
+Sie erstellen und verwalten DLP-Richtlinien auf der DLP-Seite im Microsoft 365 Compliance Center.
   
-![Seite für Verhinderung von Datenverlust im Office 365 Security &amp; Compliance Center](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
+![DLP-Seite im Office 365 Security &amp; Compliance Center](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
   
 ## <a name="what-a-dlp-policy-contains"></a>Inhalt einer DLP-Richtlinie
 
@@ -71,9 +71,9 @@ Eine DLP-Richtlinie enthält einige grundlegende Punkte:
     
 - Wann und wie Inhalte durch das Erzwingen von **Regeln** zu schützen sind, wobei Regeln aus folgenden Elementen bestehen: 
     
-  - **Bedingungen**, denen der Inhalt entsprechen muss, bevor die Richtlinie angewandt wird. So kann eine Regel zum Beispiel vorsehen, dass nur nach Inhalten mit Sozialversicherungsnummern gesucht wird, die an Personen außerhalb der Organisation weitergeleitet wurden. 
+  - **Bedingungen** , denen der Inhalt entsprechen muss, bevor die Richtlinie angewandt wird. So kann eine Regel zum Beispiel vorsehen, dass nur nach Inhalten mit Sozialversicherungsnummern gesucht wird, die an Personen außerhalb der Organisation weitergeleitet wurden. 
     
-  - **Aktionen**, die von der Regel automatisch ausgeführt werden sollen, wenn Inhalte gefunden werden, die den Bedingungen entsprechen. So kann beispielsweise eine Regel vorsehen, dass der Zugriff auf ein Dokument blockiert und sowohl der Benutzer als auch der Compliance Officer eine E-Mail-Benachrichtigung erhalten. 
+  - **Aktionen** , die von der Regel automatisch ausgeführt werden sollen, wenn Inhalte gefunden werden, die den Bedingungen entsprechen. So kann beispielsweise eine Regel vorsehen, dass der Zugriff auf ein Dokument blockiert und sowohl der Benutzer als auch der Compliance Officer eine E-Mail-Benachrichtigung erhalten. 
     
 Sie können eine Regel verwenden, um eine bestimmte Schutzanforderung zu erfüllen, und dann in einer DLP-Richtlinie allgemeine Schutzanforderungen in Gruppen zusammenfassen, z. B. alle zur Einhaltung einer bestimmten Vorschrift erforderlichen Regeln.
   
@@ -81,11 +81,20 @@ Angenommen, Sie verfügen über eine DLP-Richtlinie zur Erkennung von Informatio
   
 ![Diagramm zeigt, dass DLP-Richtlinie Speicherorte und Regeln enthält](../media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
   
-### <a name="locations"></a>Standorte
+### <a name="locations"></a>Speicherorte
 
-Eine DLP-Richtlinie kann vertrauliche Informationen überall in Microsoft 365 finden und schützen, egal, ob diese sich in Exchange Online, SharePoint Online, OneDrive for Business oder Microsoft Teams befinden. Sie können festlegen, dass Inhalte in Exchange-E-Mails, in Microsoft Teams-Chats und Kanalnachrichten sowie in allen SharePoint- oder OneDrive-Bibliotheken geschützt werden sollen, oder bestimmte Orte für eine Richtlinie auswählen.
-  
-![Optionen für Orte, auf die eine DLP-Richtlinie angewendet werden kann](../media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
+Die DLP-Richtlinien werden an Microsoft 365-Speicherorten auf vertrauliche Objekte angewendet und können, wie in dieser Tabelle beschrieben, weiter eingegrenzt werden.
+
+
+|Speicherort | einschließen/ausschließen nach|
+|---------|---------|
+|Exchange-E-Mail| Verteilergruppen|
+|Microsoft Office SharePoint Online-Websites |Websites |
+|OneDrive-Konten |Konten |
+|Teams-Chat- und Teams-Kanalnachrichten |Konten |
+|Windows 10-Geräte |Benutzer oder Gruppe |
+|Microsoft Cloud App Security |Instanz |
+
 
  Wenn Sie sich dazu entscheiden, bestimmte Verteilergruppen in Exchange einzubeziehen, wird die DLP-Richtlinie nur auf Mitglieder dieser Gruppe beschränkt. Ebenso wenn Sie eine Verteilergruppe ausschließen, werden auch alle Mitglieder dieser Verteilergruppe aus der Richtlinienauswertung ausgeschlossen. Sie können eine Richtlinie auf die Mitglieder von Verteilerlisten, dynamischen Verteilergruppen und Sicherheitsgruppen beschränken. Eine DLP-Richtlinie darf nicht mehr als 50 solche Einschlüsse und Ausschlüsse enthalten.
 
@@ -108,7 +117,7 @@ Nachfolgend eine Liste der Komponenten einer Regel mit entsprechenden Erläuteru
 
 Mithilfe von Bedingungen werden die Arten von Informationen, nach denen Sie suchen, und der Zeitpunkt der Ausführung einer Aktion bestimmt. Deswegen sind sie so wichtig. So können Sie etwa festlegen, dass Inhalte mit Reisepassnummern ignoriert werden, es sei denn, ein Inhalt enthält mehr als zehn Reisepassnummern und ist für Personen außerhalb Ihrer Organisation freigegeben.
   
-Bedingungen konzentrieren sich auf den **Inhalt**, z. B. die Arten von vertraulichen Informationen, nach denen Sie suchen, und auch auf den **Kontext**, z. B. für wen das Dokument freigegeben ist. Sie können Bedingungen verwenden, um für unterschiedliche Risikostufen unterschiedliche Aktionen festzulegen. So können beispielsweise intern freigegebene vertrauliche Inhalte einer niedrigeren Risikostufe angehören und somit weniger Aktionen erfordern als vertrauliche Inhalte, die für Personen außerhalb Ihrer Organisation freigegeben sind. 
+Bedingungen konzentrieren sich auf den **Inhalt** , z. B. die Arten von vertraulichen Informationen, nach denen Sie suchen, und auch auf den **Kontext** , z. B. für wen das Dokument freigegeben ist. Sie können Bedingungen verwenden, um für unterschiedliche Risikostufen unterschiedliche Aktionen festzulegen. So können beispielsweise intern freigegebene vertrauliche Inhalte einer niedrigeren Risikostufe angehören und somit weniger Aktionen erfordern als vertrauliche Inhalte, die für Personen außerhalb Ihrer Organisation freigegeben sind. 
   
 ![Liste mit verfügbaren DLP-Bedingungen](../media/0fa43f90-d007-4506-ae93-43e8424fe103.png)
   
@@ -193,9 +202,9 @@ Bei einer Übereinstimmung mit einer Regel können Sie einen Schadensbericht mit
   
 ![Seite zum Konfigurieren von Vorfallberichten](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)
 
-DLP überprüft E-Mails anders als Elemente in SharePoint Online oder OneDrive for Business. In SharePoint Online und OneDrive for Business überprüft DLP vorhandene Elemente sowie neue Elemente und generiert bei jeder gefundenen Übereinstimmung einen Schadensbericht. In Exchange Online überprüft DLP nur neue E-Mail-Nachrichten und generiert einen Bericht, wenn eine Richtlinienübereinstimmung vorliegt. DLP überprüft oder vergleicht ***nicht*** zuvor vorhandene E-Mail-Elemente, die in einem Postfach oder Archiv gespeichert sind.
+DLP überprüft E-Mails anders als Elemente in SharePoint Online oder OneDrive for Business. In SharePoint Online und OneDrive for Business überprüft DLP vorhandene Elemente sowie neue Elemente und generiert bei jeder gefundenen Übereinstimmung einen Schadensbericht. In Exchange Online überprüft DLP nur neue E-Mail-Nachrichten und generiert einen Bericht, wenn eine Richtlinienübereinstimmung vorliegt. DLP* *überprüft oder vergleicht _nicht_* zuvor vorhandene E-Mail-Elemente, die in einem Postfach oder Archiv gespeichert sind.
   
-## <a name="grouping-and-logical-operators"></a>Gruppieren und logische Operatoren
+## <a name="grouping-and-logical-operators"></a>Gruppierung und logische Operatoren
 
 Häufig enthält eine DLP-Richtlinie eine recht klare Anforderung, z. B. alle Inhalte zu identifizieren, die eine deutsche Sozialversicherungsnummer enthalten. Möglicherweise muss Ihre DLP-Richtlinie in anderen Szenarien jedoch weniger exakt definierte Daten identifizieren.
   
@@ -229,7 +238,7 @@ Sie können eine Gruppe, die eigene Bedingungen und einen eigenen Operator inner
 
 Mit einem Operator zwischen Gruppen wählen Sie aus, ob die Bedingungen in einer Gruppe oder die Bedingungen in allen Gruppen erfüllt sein müssen, damit der Inhalt der Regel entspricht.
   
-Die integrierte **U.S. HIPAA**-Richtlinie enthält beispielsweise eine Regel mit einem **UND**-Operator zwischen den Gruppen, damit Inhalte identifiziert werden, die Folgendes enthalten: 
+Die integrierte *U.S. HIPAA* -Richtlinie enthält beispielsweise eine Regel mit einem **UND** -Operator zwischen den Gruppen, damit Inhalte identifiziert werden, die Folgendes enthalten: 
   
 - aus der Gruppe **PII-Bezeichner** (mindestens eine Sozialversicherungsnummer **ODER** eine DEA-Nummer) 
     
@@ -245,7 +254,7 @@ Wenn Sie in einer Richtlinie Regeln erstellen, wird jeder Regel eine Priorität 
   
 ![Regeln nach Priorität](../media/dlp-rules-in-priority-order.png)
   
-Nachdem Sie mehr als eine DLP-Richtlinie eingerichtet haben, können Sie die Priorität einer oder mehrerer Richtlinien ändern. Wählen Sie dazu eine Richtlinie aus, wählen Sie **Richtlinie bearbeiten** aus, und verwenden Sie die **Prioritätsliste**, um deren Priorität anzugeben.
+Nachdem Sie mehr als eine DLP-Richtlinie eingerichtet haben, können Sie die Priorität einer oder mehrerer Richtlinien ändern. Wählen Sie dazu eine Richtlinie aus, wählen Sie **Richtlinie bearbeiten** aus, und verwenden Sie die **Prioritätsliste** , um deren Priorität anzugeben.
 
 ![Festlegen der Priorität für eine Richtlinie](../media/dlp-set-policy-priority.png)
 
@@ -277,7 +286,7 @@ Nachdem man eine DLP-Richtlinie erstellt und aktiviert hat, ergeben sich manchma
   
 - Zu viele Inhalte, bei denen es sich **nicht** um vertrauliche Informationen handelt, entsprechen der Regel. Anders ausgedrückt, es gibt zu viele falsch positive Ergebnisse. 
     
-- Zu wenig Inhalte, die vertrauliche Informationen **sind**, entsprechen den Regeln. Anders ausgedrückt, die Schutzaktionen werden bei diesen vertraulichen Informationen nicht umgesetzt. 
+- Zu wenig Inhalte, die vertrauliche Informationen **sind** , entsprechen den Regeln. Anders ausgedrückt, die Schutzaktionen werden bei diesen vertraulichen Informationen nicht umgesetzt. 
     
 Um diese Probleme zu beheben, können Sie Ihre Regeln verbessern, indem Sie die Anzahl der Instanzen und die Übereinstimmungsgenauigkeit anpassen, um die Übereinstimmung von Inhalten mit den Regeln zu erschweren oder zu vereinfachen. Jeder Typ vertraulicher Informationen, der in einer Regel verwendet wird, verfügt sowohl über eine Instanzenanzahl als auch über eine Übereinstimmungsgenauigkeit.
   
@@ -289,7 +298,7 @@ Beachten Sie, dass bei der Anzahl der Instanzen nur **einmalig vorkommende** Üb
   
 Die Optimierung von Regeln mithilfe der Instanzenanzahl ist einfach:
   
-- Damit für die Regel einfacher Übereinstimmungen gefunden werden können, verringern Sie die Werte für die **min**-Anzahl und/oder erhöhen Sie die **max**-Anzahl. Sie können **max** auch auf **beliebig** festlegen, indem Sie den numerischen Wert löschen. 
+- Damit für die Regel einfacher Übereinstimmungen gefunden werden können, verringern Sie die Werte für die **min** -Anzahl und/oder erhöhen Sie die **max** -Anzahl. Sie können **max** auch auf **beliebig** festlegen, indem Sie den numerischen Wert löschen. 
     
 - Um die Übereinstimmung mit der Regel zu erschweren, erhöhen Sie den Wert für die **Mindestanzahl**. 
     
@@ -343,13 +352,13 @@ Wenn Sie eine zuvor erstellte und veröffentlichte [Aufbewahrungsbezeichnung](re
 
 - Die Aufbewahrungsbezeichnung muss vor der Verwendung als Bedingung in einer DLP-Richtlinie erstellt und veröffentlicht werden.
 - Die Synchronisierung veröffentlichter Aufbewahrungsbezeichnungen kann ein bis sieben Tage dauern. Weitere Informationen zu Aufbewahrungsbezeichnungen, die in einer Aufbewahrungsrichtlinie veröffentlicht sind, finden Sie unter [Wann Aufbewahrungsbezeichnungen zur Verfügung stehen](create-apply-retention-labels.md#when-retention-labels-become-available-to-apply) und zu automatisch veröffentlichten Aufbewahrungsbezeichnungen unter [Wie lange dauert es, bis Aufbewahrungsbezeichnungen übernommen werden](apply-retention-labels-automatically.md#how-long-it-takes-for-retention-labels-to-take-effect).
-- Die Verwendung einer Aufbewahrungsbezeichnung in einer Richtlinie **wird nur für Elemente in SharePoint und OneDrive** unterstützt.
+- Die Verwendung einer Aufbewahrungsbezeichnung in einer Richtlinie **wird nur für Elemente in Microsoft Office SharePoint Online und OneDrive** unterstützt.
 
   ![Bezeichnungen als Bedingung](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
-  Vielleicht möchten Sie in einer DLP-Richtlinie eine Aufbewahrungsbezeichnung verwenden, weil Elemente vorliegen, die unter Aufbewahrung und Disposition stehen, und Sie auch andere Kontrollelemente anwenden möchten wie z. B.:
+  Vielleicht möchten Sie in einer DLP-Richtlinie eine Aufbewahrungsbezeichnung verwenden, weil Elemente vorliegen, die unter Aufbewahrung und Entsorgung stehen, und Sie auch andere Kontrollelemente anwenden möchten wie z. B.:
 
-  - Sie haben eine Aufbewahrungsbezeichnung namens **Steuerjahr 2018** veröffentlicht, durch deren Anwendung auf Steuerdokumente von 2018, die in SharePoint gespeichert sind, diese für 10 Jahre aufbewahrt und dann freigegeben werden. Sie möchten außerdem nicht, dass diese Elemente außerhalb Ihrer Organisation freigegeben werden, wofür Sie mit einer DLP-Richtlinie sorgen können.
+  - Sie haben eine Aufbewahrungsbezeichnung namens Steuerjahr 2018 veröffentlicht. Durch die Anwendung auf in SharePoint gespeicherte Steuerdokumente von 2018, werden diese für 10 Jahre aufbewahrt und dann entsorgt. Sie möchten außerdem nicht, dass diese Elemente außerhalb Ihrer Organisation freigegeben werden, wofür Sie mit einer DLP-Richtlinie sorgen können.
 
   > [!IMPORTANT]
   > Wenn Sie eine Aufbewahrungsbezeichnung als Bedingung in einer DLP-Richtlinie angeben und zudem Exchange und/oder Microsoft Teams als Speicherort verwenden, wird die folgende Fehlermeldung angezeigt: **"Der Schutz von mit Bezeichnungen versehenen Inhalten in E-Mail- und Teams-Nachrichten wird nicht unterstützt. Entfernen Sie die Bezeichnung unten, oder deaktivieren Sie Exchange und Microsoft Teams als Speicherort."** Der Grund dafür ist, dass der Exchange-Transport die Bezeichnungsmetadaten beim Senden und Zustellen von Nachrichten nicht ausgewertet. 
@@ -418,11 +427,11 @@ Beim Erstellen von DLP-Richtlinien sollten Sie eine schrittweise Einführung in 
   
 Wenn Sie DLP-Richtlinien erstellen, die potenziell weitreichende Auswirkungen haben können, empfehlen wir, in der folgenden Reihenfolge vorzugehen:
   
-1. **Beginnen Sie im Testmodus ohne Richtlinientipps**, und werten Sie die Auswirkungen dann anhand der DLP-Berichte aus. Sie können DLP-Berichte verwenden, um Anzahl, Ort, Typ und Schwere von Richtlinienübereinstimmungen anzuzeigen. Basierend auf den Ergebnissen können Sie die Regeln bei Bedarf anpassen. Im Testmodus haben DLP-Richtlinien keinen Einfluss auf die Produktivität der Mitarbeiter in Ihrer Organisation. 
+1. **Beginnen Sie im Testmodus ohne Richtlinientipps** , und werten Sie die Auswirkungen dann anhand der DLP-Berichte aus. Sie können DLP-Berichte verwenden, um Anzahl, Ort, Typ und Schwere von Richtlinienübereinstimmungen anzuzeigen. Basierend auf den Ergebnissen können Sie die Regeln bei Bedarf anpassen. Im Testmodus haben DLP-Richtlinien keinen Einfluss auf die Produktivität der Mitarbeiter in Ihrer Organisation. 
     
-2. **Fahren Sie im Testmodus mit Benachrichtigungen und Richtlinientipps fort**, sodass Sie die Benutzer über die Einhaltungsrichtlinien in Kenntnis setzen und auf die Anwendung der Regeln vorbereiten können. In dieser Phase können Sie die Benutzer auch bitte, Sie über falsche Positivmeldungen zu benachrichtigen, damit Sie die Regeln noch besser abstimmen können. 
+2. **Fahren Sie im Testmodus mit Benachrichtigungen und Richtlinientipps fort** , sodass Sie die Benutzer über die Einhaltungsrichtlinien in Kenntnis setzen und auf die Anwendung der Regeln vorbereiten können. In dieser Phase können Sie die Benutzer auch bitte, Sie über falsche Positivmeldungen zu benachrichtigen, damit Sie die Regeln noch besser abstimmen können. 
     
-3. **Beginnen Sie mit der vollständigen Durchsetzung der Richtlinien**, sodass die Aktionen in den Regeln angewendet werden und der Inhalt geschützt ist. Überwachen Sie weiterhin die DLP-Berichte und alle Schadensberichte oder Benachrichtigungen, um sicherzustellen, dass die von Ihnen gewünschten Ergebnisse erzielt werden. 
+3. **Beginnen Sie mit der vollständigen Durchsetzung der Richtlinien** , sodass die Aktionen in den Regeln angewendet werden und der Inhalt geschützt ist. Überwachen Sie weiterhin die DLP-Berichte und alle Schadensberichte oder Benachrichtigungen, um sicherzustellen, dass die von Ihnen gewünschten Ergebnisse erzielt werden. 
 
     ![Optionen zum Verwenden des Testmodus und zum Aktivieren der Richtlinie](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
 
@@ -430,7 +439,7 @@ Wenn Sie DLP-Richtlinien erstellen, die potenziell weitreichende Auswirkungen ha
 
     ![Optionen für das Deaktivieren einer Regel in einer Richtlinie](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
 
-    Sie können auch die Priorität mehrerer Regeln in einer Richtlinie ändern. Öffnen Sie dazu eine Richtlinie zur Bearbeitung. Klicken Sie in einer Zeile für eine Regel auf die drei Auslassungspunkte (**...**), und wählen Sie dann eine Option aus, z. B. **Nach unten** oder **Nach ganz unten**.
+    Sie können auch die Priorität mehrerer Regeln in einer Richtlinie ändern. Öffnen Sie dazu eine Richtlinie zur Bearbeitung. Klicken Sie in einer Zeile für eine Regel auf die drei Auslassungspunkte ( **...** ), und wählen Sie dann eine Option aus, z. B. **Nach unten** oder **Nach ganz unten**.
 
     ![Festlegen der Regelpriorität](../media/dlp-set-rule-priority.png)
   
@@ -517,9 +526,9 @@ Mitglieder des Complianceteams, die DLP-Richtlinien erstellen, benötigen Berech
     
 2. Erstellen Sie eine Rollengruppe auf der Seite **Berechtigungen** des Security &amp; Compliance Center. 
 
-3. Verwenden Sie beim Erstellen der Rollengruppe den Abschnitt **Rollen auswählen**, um die folgende Rolle zur Rollengruppe hinzuzufügen: **DLP-Complianceverwaltung**.
+3. Verwenden Sie beim Erstellen der Rollengruppe den Abschnitt **Rollen auswählen** , um die folgende Rolle zur Rollengruppe hinzuzufügen: **DLP-Complianceverwaltung**.
     
-4. Verwenden Sie den Abschnitt **Mitglieder auswählen**, um die zuvor erstellte Microsoft 365-Gruppe der Rollengruppe hinzuzufügen.
+4. Verwenden Sie den Abschnitt **Mitglieder auswählen** , um die zuvor erstellte Microsoft 365-Gruppe der Rollengruppe hinzuzufügen.
 
 Sie können auch eine Rollengruppe mit Nur-Lese-Rechten für die DLP-Richtlinien und DLP-Berichte erstellen, indem Sie die Rolle **DLP-Complianceverwaltung mit Leserechten**.
 
