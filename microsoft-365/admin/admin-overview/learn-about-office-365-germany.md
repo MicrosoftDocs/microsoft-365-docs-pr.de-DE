@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: Weitere Informationen zu Office 365 Deutschland.
-ms.openlocfilehash: b0b370399cc7687f3c564903d01bd07f447dc16a
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 8b999ecbd2e429ad8a60fa60de1ad3a06664f085
+ms.sourcegitcommit: 321610fd312e5c54ae8a757a71ab0c9fd2f1ac03
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843330"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48995857"
 ---
 # <a name="learn-about-office-365-germany"></a>Weitere Informationen zu Office 365 Deutschland
 
@@ -43,7 +43,7 @@ Die Kundenbedürfnisse haben sich verändert, und die Isolation von Office 365 D
 
 Die angebotenen Pläne für Office 365 Deutschland sind trotz der isolierten Umgebung so weit wie möglich an die globalen Angebote angeglichen. Ausgeschlossen sind Yammer-bezogene Pläne, Pläne, die sich dem Ende ihres Lebenszyklus nähern, und Pläne, die im Rahmen gemeinnütziger Programmen zur Verfügung gestellt werden. Office 365 E5, SPE und andere Dienste werden nach der allgemeinen Verfügbarkeit von Office 365 Deutschland verfügbar sein. 
   
-Die folgenden Dienste und Features sind in einigen [Abonnementplänen von Office 365 Deutschland](https://go.microsoft.com/fwlink/p/?linkid=839016) enthalten. Lesen Sie darüber hinaus die [Nutzungsbedingungen für Onlinedienste](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=46).
+Die folgenden Dienste und Features sind in einigen [Abonnementplänen von Office 365 Deutschland](https://go.microsoft.com/fwlink/p/?linkid=839016) enthalten. Lesen Sie darüber hinaus die [Nutzungsbedingungen für Onlinedienste](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=46).
   
 - Microsoft 365 Apps for Enterprise, Office 2016, und Office 2013<sup>1</sup>. Beachten Sie, dass Office 2013 die [Verwendung moderner Office 365-Authentifizierung mit Office-Clients](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016) erfordert.
     
@@ -85,7 +85,7 @@ Die folgenden Dienste und Features sind in einigen [Abonnementplänen von Office
     
 - Delve
     
-<sup>1</sup>Office 365 Deutschland-Pläne beinhalten Client-Softwareanwendungen, die auf dem Gerät eines Endbenutzers installiert und ausgeführt werden ("Client-Softwareanwendungen"), wie etwa Microsoft 365 Apps for Enterprise, Office 2013 oder Office 2016. Client-Softwareanwendungen werden nicht ausschließlich in deutschen Rechenzentren ausgeführt und können es einem Endbenutzer ermöglichen, auf Onlinedienste zuzugreifen, die keine [deutschen Onlinedienste](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58) darstellen. Im Sinne Ihres Vertrags mit Microsoft gelten Client-Softwareanwendungen nicht als [deutsche Onlinedienste](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58). Zusicherungen betreffend die Datenspeicherung in Deutschland und die Zugriffssteuerung durch den deutschen Datentreuhänder gelten nur für die [deutschen Onlinedienste](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58).
+<sup>1</sup>Office 365 Deutschland-Pläne beinhalten Client-Softwareanwendungen, die auf dem Gerät eines Endbenutzers installiert und ausgeführt werden ("Client-Softwareanwendungen"), wie etwa Microsoft 365 Apps for Enterprise, Office 2013 oder Office 2016. Client-Softwareanwendungen werden nicht ausschließlich in deutschen Rechenzentren ausgeführt und können es einem Endbenutzer ermöglichen, auf Onlinedienste zuzugreifen, die keine [deutschen Onlinedienste](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58) darstellen. Im Sinne Ihres Vertrags mit Microsoft gelten Client-Softwareanwendungen nicht als [deutsche Onlinedienste](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58). Zusicherungen betreffend die Datenspeicherung in Deutschland und die Zugriffssteuerung durch den deutschen Datentreuhänder gelten nur für die [deutschen Onlinedienste](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58).
   
 ## <a name="general-information"></a>Allgemeine Informationen
 
