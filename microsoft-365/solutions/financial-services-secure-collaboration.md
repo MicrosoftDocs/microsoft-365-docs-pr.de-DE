@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: Erfahren Sie, wie Finanzdienstleistungsinstitute mit Microsoft 365 und Teams die Einhaltung der finanziellen Sicherheit gewährleisten und effektiv zusammenarbeiten können.
 f1.keywords: NOCSH
-ms.openlocfilehash: 7192b29d09acb23df368e2458fac62c18bbbadb2
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: 2e0148a89a811fb910237469c42e136d0c744087
+ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988714"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993400"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Wichtige Überlegungen zur Compliance und Sicherheit der Banken und Kapitalmärkte in den Vereinigten Staaten
 
@@ -46,6 +46,15 @@ Im Finanzdienstleistungssektor ist eine sorgfältige Prüfung der Konfiguration 
 * Schutz vor Datenexfiltration und Insider-Risiken
 
 Als Microsoft-Partner trug Protiviti zu diesem Artikel bei und lieferte materielles Feedback zu diesem Artikel.
+
+Die folgenden herunterladbaren Illustrationen ergänzen diesen Artikel. Die Woodgrove Bank und Contoso werden verwendet, um zu demonstrieren, wie die in diesem Artikel beschriebenen Funktionen angewendet werden können, um gängige behördliche Anforderungen an Finanzdienstleistungen zu erfüllen. Sie können diese Illustrationen für Ihren eigenen Gebrauch anpassen. 
+
+**Illustrationen zu Microsoft 365 Informationsschutz und Compliance**
+
+| Element | Beschreibung |
+|:-----|:-----|
+|[![Modellposter: Funktionen von Microsoft 365 Informationsschutz und Compliance](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [Als PDF herunterladen](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Als Visio herunterladen](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Aktualisiert im Oktober 2020|Enthält: <ul><li>  Microsoft Information Protection und Verhinderung von Datenverlust</li><li>Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen </li><li>Informationsbarrieren</li><li>Kommunikationscompliance</li><li>Insider-Risiko</li><li>Datenerfassung durch Drittanbieter</li>|
+
 
 ## <a name="empower-organizational-and-employee-productivity-by-using-microsoft-365-and-teams"></a>Fördern Sie die Produktivität von Unternehmen und Mitarbeitern durch den Einsatz von Microsoft 365 und Microsoft Teams
 

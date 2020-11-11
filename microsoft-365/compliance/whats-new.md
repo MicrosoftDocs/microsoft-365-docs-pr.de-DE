@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Unabhängig davon, ob neue Lösungen zum Compliance Center hinzugefügt werden, vorhandene Funktionen auf der Grundlage Ihres Feedbacks aktualisiert werden oder eine aktualisierte Dokumentation bereitgestellt wird, hilft Ihnen Microsoft 365, die ständig wechselnde Compliance-Landschaft zu überwachen. Finden Sie heraus, was wir diesen Monat vorhaben.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1ebe91e94b286e7d9a1b46b7fd7abf625881a6a9
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: cf019e15b1d5b915c58325c7d7c6f160acffe03e
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847801"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988853"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Neuerungen in Microsoft 365 Compliance
 
@@ -100,7 +100,7 @@ Aufbewahrungs bezogene Administratoraktivitäten werden jetzt aufgezeichnet und 
 
 Damit Sie besser verstehen, welche Compliance-Lösungen zum Schutz und zur Steuerung vertraulicher Daten Ihrer Organisation verwendet werden, haben wir zwei neue Zielseiten mit Übersichten darüber erstellt, wie die Lösungen zusammenarbeiten, um diese Ziele zu erreichen, einschließlich Links zu verwandten Dokumenten, damit Sie weiter eintauchen können.
 
-[Microsoft Information Protection in Microsoft 365](protect-information.md)<br>
+[Microsoft Information Protection in Microsoft 365](information-protection.md)<br>
 [Microsoft Information Governance in Microsoft 365](manage-Information-governance.md)
 
 ### <a name="advanced-ediscovery-add-non-custodial-data-sources-to-your-cases"></a>Erweiterte eDiscovery: Hinzufügen von Datenquellen ohne Freiheitsentzug zu ihren Fällen
