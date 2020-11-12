@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Details zur Inhalts Zusammenarbeit-Personen erleben Produktivitäts Bewertung.
-ms.openlocfilehash: 87f89af527e2a1b843a9b70fbef590b69d920f7d
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: 5cdbe0cbb683715a19b182d0781fe238d026a400
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804597"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999428"
 ---
 # <a name="content-collaboration--people-experiences"></a>Content-Zusammenarbeit – Personen Erfahrungen
 
@@ -32,7 +32,7 @@ Das Produktivitäts Ergebnis hilft Ihnen, zu transformieren, wie arbeiten mit Me
 
 ## <a name="why-your-organization39s-content-collaboration-score-matters"></a>Gründe für das Ergebnis der Zusammenarbeit in Ihrer Organisation&#39;en
 
-Ein grundlegender Pfeiler für die Produktivität der Organisation ist die Zusammenarbeit von Personen in Dateien. Mit ihren Inhalten in Microsoft 365 können Benutzer Inhalte für andere Personen von einem beliebigen Standort aus zugreifen, erstellen, ändern und an Inhalten zusammenarbeiten. Untersuchungen zeigen, dass bei der Zusammenarbeit mit Online Dateien jede Person durchschnittlich 100 Minuten pro Woche spart. Siehe [Beweise](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
+Ein grundlegender Pfeiler für die Produktivität der Organisation ist die Zusammenarbeit von Personen in Dateien. Mit ihren Inhalten in Microsoft 365 können Benutzer Inhalte für andere Personen von einem beliebigen Standort aus zugreifen, erstellen, ändern und an Inhalten zusammenarbeiten. Untersuchungen zeigen, dass bei der Zusammenarbeit mit Online Dateien jede Person durchschnittlich 100 Minuten pro Woche spart. [Siehe Beweise](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
 ## <a name="how-we-calculate-the-content-collaboration-score"></a>Berechnung des Ergebnisses der Inhalts Zusammenarbeit
 
@@ -81,7 +81,7 @@ Für diese Informationen gelten die folgenden Typen: Word-, Excel-, PowerPoint-,
 
 Trend Visualisierungs Diagramm zeigt die Trendlinie der primären Insight-Metriken für Leser, Ersteller und Mitarbeiter in den letzten 180 Tagen. Jeder Datenpunkt im Diagramm ist ein Aggregat von Aktivitäten für die letzten 28 Tage. Jeder Ersteller-Datenpunkt enthält die Anzahl aller Personen, die innerhalb der letzten 28 Tage für jedes Datum auf der x-Achse als Ersteller markiert wurden.
 
-:::image type="content" source="../../media/trendvisualization.jpg" alt-text="Primäre Einblicke aus der Kommunikations Zusammenarbeits Bewertung.":::
+:::image type="content" source="../../media/trendvisualization.jpg" alt-text="Diagramm mit Trends for Collaboration Primary Insight.":::
 
 ### <a name="scoring-framework"></a>Bewertungs Framework
 
@@ -93,7 +93,7 @@ Außerdem stellen wir Ihnen Informationen zur Verfügung, mit denen Sie den Einb
 
 ### <a name="creating-files-to-onedrive-or-sharepoint"></a>Erstellen von Dateien in OneDrive oder SharePoint
 
-:::image type="content" source="../../media/sharepointonedrivefiles.jpg" alt-text="Primäre Einblicke aus der Kommunikations Zusammenarbeits Bewertung.":::
+:::image type="content" source="../../media/sharepointonedrivefiles.jpg" alt-text="Diagramm, in dem die Anzahl der Personen angezeigt wird, die Dateien in OneDrive oder SharePoint erstellen":::
 
 1. **Kopfzeile:** Zeigt den Prozentsatz der Personen an, die in Microsoft 365 Office-Anwendungen aktiv sind und Dateien in OneDrive oder SharePoint erstellen.
 2. **Body:** Enthält Informationen zum Wert der Inhaltserstellung in OneDrive und SharePoint.
@@ -109,7 +109,7 @@ Außerdem stellen wir Ihnen Informationen zur Verfügung, mit denen Sie den Einb
 
 ### <a name="use-of-attachments-in-email"></a>Verwendung von Anlagen in e-Mails
 
-:::image type="content" source="../../media/emailattachments.png" alt-text="Primäre Einblicke aus der Kommunikations Zusammenarbeits Bewertung.":::
+:::image type="content" source="../../media/emailattachments.png" alt-text="Verwendung von e-Mail-Anlagen.":::
 
 1. **Kopfzeile:** Zeigt den Prozentsatz der Personen an, die Anlagen in e-Mails verwenden, die nicht in OneDrive oder SharePoint gespeichert wurden.
 2. **Body:** Enthält Informationen über den Wert der Freigabe von Links zu Online Dateien aus der Perspektive der Zusammenarbeit und der Sicherheit.
@@ -127,7 +127,7 @@ Außerdem stellen wir Ihnen Informationen zur Verfügung, mit denen Sie den Einb
 
 ### <a name="sharing-of-online-files"></a>Freigabe von Online Dateien
 
-:::image type="content" source="../../media/sharingonlinefiles.png" alt-text="Primäre Einblicke aus der Kommunikations Zusammenarbeits Bewertung.":::
+:::image type="content" source="../../media/sharingonlinefiles.png" alt-text="Diagramm, das die Anzahl der Personen angibt, die Dateien online freigeben.":::
 
 1. **Kopfzeile:** Zeigt den Prozentsatz der Personen an, die Zugriff auf für OneDrive oder SharePoint haben, die Dateien extern freigeben.
 2. **Body:** Enthält Informationen zu den Administratoren&#39; Möglichkeit, die Einstellungen für die Dateifreigabe in der Organisation zu ändern, um die für Ihre Organisation am besten geeignete Zusammenarbeits Ebene zu ermöglichen.
@@ -142,7 +142,7 @@ Außerdem stellen wir Ihnen Informationen zur Verfügung, mit denen Sie den Einb
 
 ### <a name="intensity-of-files-collaborated-on"></a>Intensität der Zusammenarbeit an Dateien
 
-:::image type="content" source="../../media/intensityofcollab.png" alt-text="Primäre Einblicke aus der Kommunikations Zusammenarbeits Bewertung.":::
+:::image type="content" source="../../media/intensityofcollab.png" alt-text="Diagramm, das zeigt, wie viele Dateien am meisten zusammengearbeitet haben.":::
 
 1. **Kopfzeile:** Dadurch wird der Prozentsatz der Personen, die Zugriff auf OneDrive oder SharePoint haben und auf 4 oder mehr Dateien zusammenarbeiten, hervorgehoben.
 2. **Body:** Hier finden Sie Informationen dazu, wie Benutzer online Dateien für eine bessere Zusammenarbeit nutzen können.
@@ -164,7 +164,7 @@ Außerdem stellen wir Ihnen Informationen zur Verfügung, mit denen Sie den Einb
 
 ### <a name="network-performance-strength-for-onedrive-and-sharepoint"></a>Netzwerk Leistungsstärke für OneDrive und SharePoint
 
-:::image type="content" source="../../media/networkperfstrength.png" alt-text="Primäre Einblicke aus der Kommunikations Zusammenarbeits Bewertung.":::
+:::image type="content" source="../../media/networkperfstrength.png" alt-text="Diagramm mit Netzwerkleistung für OneDrive und SharePoint.":::
 
 1. **Kopfzeile:** Zeigt den Prozentsatz der Geräte an, die von allen getestet wurden, die über eine schlechte Netzwerkverbindung mit OneDrive und SharePoint verfügen. 
 2. **Body:** Enthält Informationen dazu, warum die Leistung der Netzwerkverbindung für die Zusammenarbeit wichtig ist. 
