@@ -16,36 +16,44 @@ f1.keywords:
 - NOCSH
 description: In diesem Artikel finden Sie Details zur Microsoft 365-Client-App-Unterstützung für die zertifikatbasierte Authentifizierung..
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 49ed1e329e83b73441c89de9a142bfb9dcac5395
-ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
+ms.openlocfilehash: 2f2f5acb88e49cf7a81bd5e89c0c9c85feea6672
+ms.sourcegitcommit: 86e878849a8bdd456cee6a3f49939d26223fb626
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48806694"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48997803"
 ---
 # <a name="microsoft-365-client-app-support-certificate-based-authentication"></a>Microsoft 365-Client-App-Unterstützung: zertifikatbasierte Authentifizierung
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Die zertifikatbasierte Authentifizierung ermöglicht die Authentifizierung bei Azure Active Directory mit einem Clientzertifikat auf Windows-, Android-oder IOS-Geräten. Wenn Sie dieses Feature konfigurieren, müssen Sie keine Kombination aus Benutzername und Kennwort in bestimmte e-Mail-und Microsoft Office-Anwendungen auf Ihrem mobilen Gerät eingeben.
+Die moderne Authentifizierung ist ein übergeordneter Ausdruck für eine Kombination aus Authentifizierungs-und Autorisierungsmethoden. Zu diesen zählen:
+
+- Authentifizierungsmethoden: mehrstufige Authentifizierung; Client zertifikatbasierte Authentifizierung.
+
+- Autorisierungsmethoden: Microsoft-Implementierung der Open Authorization (OAuth).
+
+Die moderne Authentifizierung wird durch die Verwendung einer Authentifizierungsbibliothek wie Adal oder MSAL aktiviert. Die moderne Authentifizierung verwendet Clients zum Authentifizieren und Autorisieren des Zugriffs auf Microsoft 365-Ressourcen. Die moderne Authentifizierung nutzt OAuth und stellt einen sicheren Mechanismus für Clients bereit, um auf Microsoft 365-Dienste zuzugreifen, ohne Zugriff auf Benutzeranmeldeinformationen zu benötigen. Bei der Anmeldung authentifiziert sich der Benutzer direkt bei Azure Active Directory und erhält ein Zugriffs-und Aktualisierungstoken-Paar als Rückgabewert. Das Zugriffstoken erteilt dem Clientzugriff auf die entsprechenden Ressourcen im Microsoft 365-Mandanten. Ein Aktualisierungstoken wird verwendet, um ein neues Zugriffs-oder Aktualisierungstoken-paar zu erhalten, wenn das aktuelle Zugriffstoken abläuft.
+
+Die moderne Authentifizierung unterstützt unterschiedliche Authentifizierungsmechanismen, wie die zertifikatbasierte Authentifizierung. Clients auf Windows-, Android-oder IOS-Geräten können die zertifikatbasierte Authentifizierung (CBA) zur Authentifizierung bei Azure Active Directory mithilfe eines Clientzertifikats auf dem Gerät verwenden. Anstelle eines typischen Benutzernamens/Kennworts wird das Zertifikat verwendet, um ein Zugriffs/Aktualisierungs-Token-Paar aus Azure-Active Directory zu erhalten.
 
 Erfahren Sie mehr über die [zertifikatbasierte Authentifizierung](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started).
 
 ## <a name="supported-clients--platforms"></a>Unterstützte Clients & Plattformen
 
-Die neuesten Versionen der folgenden Clients und Plattformen unterstützen die zertifikatbasierte Authentifizierung. Weitere Informationen zur Plattformunterstützung in Microsoft 365 finden Sie unter [System Requirements for Microsoft 365](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
+Die neuesten Versionen der folgenden Clients und Plattformen unterstützen die zertifikatbasierte Authentifizierung bei der Anmeldung bei Azure Active Directory-Konten innerhalb des Clients (beispielsweise beim Hinzufügen eines Kontos zur APP). Weitere Informationen zur Plattformunterstützung in Microsoft 365 finden Sie unter [System Requirements for Microsoft 365](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 <br>
 <br>
 
 | Clients | Android | iOS | Mac| Windows 10 <br> Moderne apps| Windows 10 <br> Desktop |
 |:---|:---:|:---:|:---:|:---:|:---:|
 | Azure Active Directory Administrator | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | ![Unterstützt](../media/check-mark.png) |
-| Access | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | ![Unterstützt](../media/check-mark.png) |
+| Zugriff | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | ![Unterstützt](../media/check-mark.png) |
 | Azure-Administrator | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend |
 | Unternehmensportal | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | N/V |
 | Cortana | Geplant | Geplant | Nicht zutreffend | ![Unterstützt](../media/check-mark.png) | N/V |
 | Delve | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend |
-| Microsoft Edge | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | Nicht zutreffend | Nicht zutreffend | ![Unterstützt](../media/check-mark.png) |
+| Microsoft Edge | ![Unterstützt](../media/check-mark.png)* | ![Unterstützt](../media/check-mark.png)* | Nicht zutreffend | Nicht zutreffend | ![Unterstützt](../media/check-mark.png) |
 | Excel | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) |
 | Exchange Online Administrator | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | ![Unterstützt](../media/check-mark.png) |
 | Formulare | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend |
@@ -66,7 +74,7 @@ Die neuesten Versionen der folgenden Clients und Plattformen unterstützen die z
 | Publisher | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | ![Unterstützt](../media/check-mark.png) |
 | Skype for Business | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | N/V | ![Unterstützt](../media/check-mark.png) |
 | Skype for Business Administrator | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | ![Unterstützt](../media/check-mark.png) |
-| SharePoint | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend |
+| Microsoft Office SharePoint Online | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend |
 | SharePoint Online Administrator | Geplant | Geplant | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend |
 | Kurznotizen | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | ![Unterstützt](../media/check-mark.png) | N/V |
 | Stream | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend |
@@ -78,6 +86,13 @@ Die neuesten Versionen der folgenden Clients und Plattformen unterstützen die z
 | Word | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) |
 | Analyse am Arbeitsplatz | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend |
 | Yammer | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | Geplant | Nicht zutreffend | Geplant |
+
+> [!IMPORTANT]
+> Edge für IOS und Android unterstützt die zertifikatbasierte Authentifizierung bei Konten-Add-Flows. Edge für IOS und Android unterstützt die zertifikatbasierte Authentifizierung nicht beim Durchführen einer Authentifizierung für Websites, bei denen es sich normalerweise um Intranet-Websites handelt. In diesem Szenario navigiert ein Benutzer zu einer Website (in der Regel im Intranet), für die die Website den Benutzer über ein Zertifikat authentifizieren muss. Dies beinhaltet keine moderne Authentifizierung und nutzt keine Microsoft-Authentifizierungsbibliothek. Dies liegt an einer Beschränkung mit ios: IOS verhindert, dass Drittanbieter-apps auf den System-Schlüsselbund zugreifen, in dem die Zertifikate gespeichert sind (nur Apple-Apps und der [Safari-WebView-Controller](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) können auf den System-Schlüsselbund zugreifen).
+
+ 
+
+Da Edge auf WebKit basiert, kann Edge nicht auf den System-Schlüsselbund zugreifen und dem Benutzer eine CERT-Auswahl vorlegen. Dies ist leider Design bedingt durch die Architektur von Apple.
 
 ## <a name="supported-powershell-modules"></a>Unterstützte PowerShell-Module
 
