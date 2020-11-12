@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c342ea9f662d883883755d2f67e5c25ffabddf83
-ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
+ms.openlocfilehash: b77313a18a5744549e492de991e282bc34dbb6da
+ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "48948409"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49002417"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Lösen von Problemen, die durch das Tool zur Bereitschaftsbewertung gefunden wurden
 
@@ -214,7 +214,7 @@ Stellen Sie sicher, dass alle Sicherheitsbasis Richtlinien, auf denen Sie Micros
 
 **Empfehlung**
 
-Sie sollten eine Inventarisierung der apps vorbereiten, die ihre von Microsoft verwalteten Desktop-Benutzer haben sollen. Stellen Sie sicher, dass diese apps von InTune bereitgestellt werden können. Weitere Informationen finden Sie unter [apps in Microsoft Managed Desktop](apps.md).
+Sie sollten eine Inventarisierung der apps vorbereiten, die ihre von Microsoft verwalteten Desktop-Benutzer haben sollen. Da diese apps von InTune bereitgestellt werden müssen, bewerten Sie die Wiederverwendung vorhandener InTune-apps. Verwenden Sie das Unternehmensportal (siehe [Installieren des InTune-Unternehmensportals auf Geräten](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) und der Registrierungs Status Seite (ESP), um apps an Ihre Benutzer zu verteilen. Weitere Informationen finden Sie unter [apps in Microsoft Managed Desktop](apps.md) und [First-Run-Erfahrung mit Autopilot und der Registrierungs Status Seite](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run).
 
 Sie können Ihren Microsoft-Konto Vertreter für eine Abfrage im Microsoft Endpoint Configuration Manager bitten, um die apps zu identifizieren, die für die Migration zu InTune bereit sind oder Anpassungen benötigen.
 
@@ -289,9 +289,8 @@ Benutzer mit bestimmten Sicherheitsrollen müssen diese in Microsoft Defender f�
 
 **Empfehlung**
 
-Wenn Sie eine dieser Rollen in ihrer Azure AD Organisation zugewiesen haben, stellen Sie sicher, dass diese Rollen auch in Microsoft Defender für Endpoint zugewiesen sind. Andernfalls können Administratoren mit diesen Rollen nicht auf das Verwaltungsportal zugreifen.
+Wenn Sie einer dieser Rollen in ihrer Azure AD Organisation Benutzer zugewiesen haben, stellen Sie sicher, dass Sie diesen Rollen auch in Microsoft Defender für Endpoint zugewiesen sind. Andernfalls können Administratoren mit diesen Rollen nicht auf das Verwaltungsportal zugreifen.
 
-- Sicherheitsleseberechtigter
 - Sicherheitsoperator
 - Globaler Leser
 
@@ -308,7 +307,7 @@ Sie haben Sicherheitsstandards aktiviert. Deaktivieren Sie Sicherheitseinstellun
 
 ### <a name="self-service-password-reset"></a>Zurücksetzen von Self-Service-Kennwörtern
 
-Self-Service Password Reset (SSPR) sollte für alle Benutzer mit Ausnahme von Microsoft Managed Desktop-Dienstkonten aktiviert werden. Weitere Informationen finden Sie unter [Lernprogramm: Aktivieren von Benutzern zum Entsperren Ihres Kontos oder Zurücksetzen von Kennwörtern mithilfe von Azure Active Directory Self-Service Password Reset](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
+Self-Service Password Reset (SSPR) sollte für alle Microsoft Managed Desktop-Benutzer mit Ausnahme von Microsoft Managed Desktop-Dienstkonten aktiviert werden. Weitere Informationen finden Sie unter [Lernprogramm: Aktivieren von Benutzern zum Entsperren Ihres Kontos oder Zurücksetzen von Kennwörtern mithilfe von Azure Active Directory Self-Service Password Reset](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
 
 **Empfehlung**
 
@@ -325,11 +324,11 @@ Microsoft Managed Desktop-Benutzer verfügen nicht über lokale Administratorrec
 
 ## <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for Enterprise
 
-### <a name="onedrive-for-business"></a>OneDrive for Business
+### <a name="onedrive"></a>OneDrive
 
 Die Einstellung **Synchronisierung nur auf PCs zulassen, die mit bestimmten Domänen verbunden sind,** wird mit dem Microsoft Managed Desktop in Konflikt stehen.
 
 **Empfehlung**
 
-Sie verwenden die Einstellung **Synchronisierung nur für PCs zulassen, die mit bestimmten Domänen verbunden** sind. Diese Einstellung funktioniert nicht mit Microsoft Managed Desktop. Deaktivieren Sie diese Einstellung, und richten Sie OneDrive für Unternehmen für die Verwendung einer Richtlinie für bedingten Zugriff ein. Weitere Informationen finden Sie unter [Planen einer Bereitstellung für bedingten Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) .
+Sie verwenden die Einstellung **Synchronisierung nur für PCs zulassen, die mit bestimmten Domänen verbunden** sind. Diese Einstellung funktioniert nicht mit Microsoft Managed Desktop. Deaktivieren Sie diese Einstellung, und richten Sie stattdessen OneDrive ein, um eine Richtlinie für bedingten Zugriff zu verwenden. Weitere Informationen finden Sie unter [Planen einer Bereitstellung für bedingten Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) .
 

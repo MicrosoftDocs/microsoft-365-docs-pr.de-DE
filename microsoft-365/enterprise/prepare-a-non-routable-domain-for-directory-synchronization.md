@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Hier erfahren Sie, was Sie tun müssen, wenn Sie vor der Synchronisierung mit Microsoft 365 eine nicht-routale-Domäne mit Ihren lokalen Benutzern verbunden haben.
-ms.openlocfilehash: 835beffb77c495179991fbb4388ecd9ee804ec91
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 21344cb0d495691a96867d401a5262fbbcfd02d4
+ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695916"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49002381"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Vorbereiten einer nicht routingfähigen Domäne für die Verzeichnissynchronisierung
 Wenn Sie Ihr lokales Verzeichnis mit Microsoft 365 synchronisieren, müssen Sie über eine verifizierte Domäne in Azure Active Directory (Azure AD) verfügen. Nur die Benutzerprinzipalnamen (User Principal Names, UPN), die der lokalen Domäne zugeordnet sind, werden synchronisiert. Allerdings wird jeder UPN, der eine nicht Routingfähige Domäne enthält, beispielsweise. local (wie Billa@contoso. local), mit einer. onmicrosoft.com-Domäne (wie Billa@contoso.onmicrosoft.com) synchronisiert. 
@@ -42,7 +42,7 @@ Azure AD Connect synchronisiert den UPN und das Kennwort Ihrer Benutzer, sodass 
   
 ### <a name="change-your-primary-domain"></a>**Ändern der primären Domäne**
 
-Ändern Sie Ihre primäre Domäne in eine Domäne, die Sie in Microsoft 365 überprüft haben, beispielsweise contoso.com. Jeder Benutzer mit der Domäne "contoso. local" wird dann auf contoso.com aktualisiert. Anweisungen hierzu finden Sie unter [Funktionsweise der Domänenumbenennung](https://go.microsoft.com/fwlink/p/?LinkId=624174). Dies ist jedoch ein sehr beteiligter Prozess, und eine einfachere Lösung wird im folgenden Abschnitt beschrieben.
+Ändern Sie Ihre primäre Domäne in eine Domäne, die Sie in Microsoft 365 überprüft haben, beispielsweise contoso.com. Jeder Benutzer mit der Domäne "contoso. local" wird dann auf contoso.com aktualisiert. Dies ist jedoch ein sehr beteiligter Prozess, und eine einfachere Lösung wird im folgenden Abschnitt beschrieben.
   
 ### <a name="add-upn-suffixes-and-update-your-users-to-them"></a>**Hinzufügen von UPN-Suffixen und Aktualisieren der Benutzer**
 
@@ -52,19 +52,19 @@ Nachdem Sie die UPNs für die Verwendung der überprüften Domäne aktualisiert 
   
  **Schritt 1: Hinzufügen des neuen UPN-Suffix**
   
-1. Wählen Sie auf dem AD DS Domänencontroller im Server-Manager **Tools** \> **Active Directory Domänen und Vertrauensstellungen**aus.
+1. Wählen Sie auf dem AD DS Domänencontroller im Server-Manager **Tools** \> **Active Directory Domänen und Vertrauensstellungen** aus.
     
     **Oder, wenn Sie nicht über Windows Server 2012**
     
-    Drücken Sie die **Windows-Taste + R** , um das Dialogfeld **Ausführen** zu öffnen, und geben Sie dann in Domain. msc ein, und wählen Sie dann **OK**aus.
+    Drücken Sie die **Windows-Taste + R** , um das Dialogfeld **Ausführen** zu öffnen, und geben Sie dann in Domain. msc ein, und wählen Sie dann **OK** aus.
     
     ![Wählen Sie Active Directory Domänen und Vertrauensstellungen aus.](../media/46b6e007-9741-44af-8517-6f682e0ac974.png)
   
-2. Klicken Sie im Fenster **Active Directory Domänen und Vertrauensstellungen** mit der rechten Maustaste auf **Active Directory Domänen und Vertrauensstellungen**, und wählen Sie dann **Eigenschaften**aus.
+2. Klicken Sie im Fenster **Active Directory Domänen und Vertrauensstellungen** mit der rechten Maustaste auf **Active Directory Domänen und Vertrauensstellungen** , und wählen Sie dann **Eigenschaften** aus.
     
     ![Klicken Sie mit der rechten Maustaste auf Active Directory Domänen und Vertrauensstellungen, und wählen Sie Eigenschaften](../media/39d20812-ffb5-4ba9-8d7b-477377ac360d.png)
   
-3. Geben Sie auf der Registerkarte **UPN-Suffixe** im Feld **alternative UPN-Suffixe** ihre neuen UPN-Suffixe oder Suffixe ein, und wählen Sie dann **Add** \> **Apply**aus.
+3. Geben Sie auf der Registerkarte **UPN-Suffixe** im Feld **alternative UPN-Suffixe** ihre neuen UPN-Suffixe oder Suffixe ein, und wählen Sie dann **Add** \> **Apply** aus.
     
     ![Hinzufügen eines neuen UPN-Suffix](../media/a4aaf919-7adf-469a-b93f-83ef284c0915.PNG)
   
@@ -72,15 +72,15 @@ Nachdem Sie die UPNs für die Verwendung der überprüften Domäne aktualisiert 
     
  **Schritt 2: Ändern des UPN-Suffixes für vorhandene Benutzer**
   
-1. Wählen Sie auf dem AD DS Domänencontroller im Server-Manager die Option **Extras** \> **Active Directory Benutzer und Computer**aus.
+1. Wählen Sie auf dem AD DS Domänencontroller im Server-Manager die Option **Extras** \> **Active Directory Benutzer und Computer** aus.
     
     **Oder, wenn Sie nicht über Windows Server 2012**
     
     Drücken Sie die **Windows-Taste + R** , um das Dialogfeld **Ausführen** zu öffnen, und geben Sie dann DSA. msc ein, und klicken Sie dann auf **OK** .
     
-2. Wählen Sie einen Benutzer aus, klicken Sie mit der rechten Maustaste, und wählen Sie dann **Eigenschaften**aus.
+2. Wählen Sie einen Benutzer aus, klicken Sie mit der rechten Maustaste, und wählen Sie dann **Eigenschaften** aus.
     
-3. Wählen Sie auf der Registerkarte **Konto** in der Dropdownliste UPN-Suffix das neue UPN-Suffix aus, und wählen Sie dann **OK**aus.
+3. Wählen Sie auf der Registerkarte **Konto** in der Dropdownliste UPN-Suffix das neue UPN-Suffix aus, und wählen Sie dann **OK** aus.
     
     ![Hinzufügen eines neuen UPN-Suffixes für einen Benutzer](../media/54876751-49f0-48cc-b864-2623c4835563.png)
   

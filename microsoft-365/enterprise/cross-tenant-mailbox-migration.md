@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: a9f983cebfbed1482fca7e44b77c200cbd9574ac
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: a2065ac324acd0a4d5980bceb97f9f6b8ad73058
+ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847118"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49002245"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Mandantenübergreifende Postfachmigration (Vorschau)
 
@@ -647,7 +647,5 @@ NT AUTHORITY\SELF                                {FullAccess, ReadPermission}   
    | Microsoft Defender für Office 365 (Plan 1)    |
    | Microsoft Defender für Office 365 (Plan 2)    |
    | Office 365 Privileged Access Management           |
-   | Outlook Customer Manager                          |
    | Premium-Verschlüsselung in Office 365                  |
-   || 
- 
+    

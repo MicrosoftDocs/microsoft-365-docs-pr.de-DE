@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b98cec62a018556bfbd31df0aa824acbd00b37b6
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: a6e3e7cc0404a56e4d69da69b95aa95fa6795dd5
+ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846240"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49002221"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Microsoft Managed Desktop-Technologien
 
@@ -31,9 +31,9 @@ In diesem Thema werden die Komponenten der erforderlichen Enterprise-Lizenzen zu
  |
  --- | ---
 Microsoft 365-Apps für Unternehmen (64-Bit) | Diese Office-Anwendungen werden mit dem Gerät ausgeliefert: Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype for Business, OneNote.<br><br>Die 64-Bit-Vollversionen von Microsoft Project und Microsoft Visio sind nicht enthalten. Da die Installation dieser Anwendungen jedoch von der Installation von Microsoft 365 apps for Enterprise abhängt, hat Microsoft Managed Desktop standardmäßig Microsoft InTune-Bereitstellungen und Sicherheitsgruppen erstellt, die Sie dann verwenden können, um diese Anwendungen für lizenzierte Benutzer bereitzustellen. Weitere Informationen finden Sie unter [Installieren von Microsoft Project oder Microsoft Visio auf Microsoft Managed Desktop-Geräten](../get-started/project-visio.md).
-OneDrive for Business |Azure Active Directory einmaliges Anmelden ist für Benutzer bei der ersten Anmeldung bei OneDrive für Unternehmen aktiviert.<br><br>Die bekannte Ordnerumleitung für "Desktop"-, "Document"-und "Pictures"-Ordner ist enthalten; aktiviert und konfiguriert von Microsoft Managed Desktop. 
+OneDrive |Azure Active Directory einmaliges Anmelden ist für Benutzer bei der ersten Anmeldung bei OneDrive aktiviert.<br><br>Die bekannte Ordnerumleitung für "Desktop"-, "Document"-und "Pictures"-Ordner ist enthalten; aktiviert und konfiguriert von Microsoft Managed Desktop.
 Store-Apps |    Microsoft Sway und Power BI werden nicht mit dem Gerät ausgeliefert. Diese apps stehen im Microsoft Store zum Download bereit.
-Win32-Anwendungen |    Teams werden nicht mit dem Gerät ausgeliefert, sondern werden von Microsoft für von Microsoft verwaltete Desktop Geräte gepackt und bereitgestellt. Azure Information Protection-Client wird nicht mit dem Gerät ausgeliefert, aber Sie können dieses Paket für die Bereitstellung bereitstellen. 
+Win32-Anwendungen |    Teams werden nicht mit dem Gerät ausgeliefert, sondern werden von Microsoft für von Microsoft verwaltete Desktop Geräte gepackt und bereitgestellt. Azure Information Protection-Client wird nicht mit dem Gerät ausgeliefert, aber Sie können dieses Paket für die Bereitstellung bereitstellen.
 Webanwendungen |  Jammern, Office in einem Browser, vertiefen, Durchfluss, StaffHub, PowerApps und Planer werden nicht mit dem Gerät ausgeliefert. Benutzer können über einen Browser auf die Webversion dieser Anwendungen zugreifen.
 
 
@@ -49,5 +49,5 @@ Microsoft Defender für Endpunkt |    Microsoft Managed Desktop verwendet diese,
  |
  --- | ---
 Enterprise Mobility + Security E3<br>Azure Active Directory Premium P2 |    Sie können alle Funktionen von Enterprise Mobility + Security E3 und Azure Active Directory Premium P2 zum Verwalten von MDM-Geräten verwenden.
-Microsoft Cloud App-Sicherheit |  Sie können diese optionale Funktion mit Microsoft Managed Desktop verwenden.
+Microsoft Cloud App Security |  Sie können diese optionale Funktion mit Microsoft Managed Desktop verwenden.
 Azure Information Protection P2  | Sie können diese optionale Funktion mit Microsoft Managed Desktop verwenden.
