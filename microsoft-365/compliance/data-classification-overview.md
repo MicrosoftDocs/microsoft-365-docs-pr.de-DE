@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Anhand des Dashboards für die Datenklassifizierung können Sie sehen, wie viele vertrauliche Daten in Ihrer Organisation gefunden und klassifiziert wurden.
-ms.openlocfilehash: 503235ad2ee35760a03cb2427d1e84f5f3639b9f
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: 7bf9a7151f8df45716ab032dd3c62a33f4f5adc8
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379224"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999395"
 ---
 # <a name="know-your-data---data-classification-overview"></a>Kennen Sie Ihre Daten – Überblick über die Datenklassifizierung
 
@@ -49,12 +49,7 @@ Die Datenklassifizierung scannt Ihre vertraulichen Inhalte und bezeichneten Inha
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Jedem Konto, das auf die Datenklassifizierung zugreift und sie verwendet, muss eine Lizenz aus einem dieser Abonnements zugewiesen sein:
-
-- Microsoft 365 (E5/A5)
-- Office 365 (E5)
-- Advanced Compliance (E5)-Add-on
-- Advanced Threat Intelligence (E5)-Add-on
+Eine Reihe verschiedener Abonnements unterstützt Endpunkt-DLP. Um Lizenzierungsoptionen für Endpunkt-DLP anzuzeigen, lesen Sie [Leitfaden zur Lizenzierung des Informationsschutzes](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection). 
 
 ### <a name="permissions"></a>Berechtigungen
 

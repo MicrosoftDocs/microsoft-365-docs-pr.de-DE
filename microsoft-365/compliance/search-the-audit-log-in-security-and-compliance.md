@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Verwenden Sie das Office 365 Security & Compliance Center oder das Microsoft 365 Compliance Center, um das vereinheitlichte Überwachungsprotokoll zu durchsuchen und die Benutzer- und Administratoraktivitäten in Ihrem Unternehmen anzuzeigen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2254fb9fd47b1554064194b815ff4d19b2d33472
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: ded01bc262cd1bb2fbabcd237278447e486d109a
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941452"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999509"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Compliance-Center
 
@@ -140,7 +140,7 @@ Lesen Sie die folgenden Punkte, bevor Sie mit dem Durchsuchen des Überwachungsp
 ## <a name="search-the-audit-log"></a>Durchsuchen des Überwachungsprotokolls
 
 > [!NOTE]
-> Wir untersuchen derzeit ein Problem, bei dem Azure AD-Aktivitäten im Überwachungsprotokoll-Suchtool nicht verfügbar sind. Dieses Problem kam um den 26. Oktober 2020 auf. Diese Aktivitäten umfassen Azure AD-Benutzerverwaltungs-, Gruppenverwaltungs-, Anwendungsverwaltungs-, Rollenverwaltungs- und Verzeichnisverwaltungsaktivitäten. Wenn das Problem behoben ist, wird ein Update bereitgestellt.
+> Ein Problem mit Azure AD-Aktivitäten ist aufgetreten, bei dem es im Überwachungsprotokoll-Suchtool vom 22. Oktober 2020 zum 6. November 2020 nicht zur Verfügung stand. Diese Aktivitäten umfassen Azure AD-Benutzerverwaltungs-, Gruppenverwaltungs-, Anwendungsverwaltungs-, Rollenverwaltungs- und Verzeichnisverwaltungsaktivitäten. Die fehlenden Ereignisse für den Wirkungszeitraum werden während der nächsten Tage zur Verfügung stehen und es wird erwartet, dass es beim 20. November 2020 abgeschlossen sein wird. In einigen Fällen können Kunden doppelte Ereignisdaten für Ereignisse bemerken, die zwischen dem 26. Oktober 2020 und dem 5. November 2020 generiert wurden.
     
 Nachfolgend ist der Prozess zum Durchsuchen des Überwachungsprotokolls in Office 365 dargestellt. 
 

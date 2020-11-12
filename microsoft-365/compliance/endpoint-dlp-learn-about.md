@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 Endpunkt-DLP erweitert die Überwachung von Dateiaktivitäten und Schutzmaßnahmen für diese Dateien auf Endpunkte. Dateien werden in den Microsoft 365 Compliance-Lösungen sichtbar gemacht. '
-ms.openlocfilehash: 966e201acb8038d85f0d06c0800c9845fd79097e
-ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
+ms.openlocfilehash: 0f69261cb5617c7d6de7900b85a5a254a04bc45e
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48984929"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999474"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Informationen zu Microsoft 365 Endpunkt-DLP (Data Loss Prevention, Verhinderung von Datenverlust)
 
@@ -97,6 +97,14 @@ Wenn das Onboarding eines Geräts über [Microsoft Defender für Endpunkt](https
 
 > [!NOTE]
 > Endpunkt-DLP bewertet Dateien der oben genannten Dateitypen anhand der DLP-Richtlinie und wendet die entsprechenden Schutzmaßnahmen an. Alle Dateien, die mit einer DLP-Richtlinie übereinstimmen, werden auf alle unterstützten Aktionen geprüft, auch wenn sie nicht gesperrt sind. Zusätzlich werden alle auf Word-, PowerPoint-, Excel-, PDF- und CSV-Dateien ausgeführte Dateiaktivitäten standardmäßig geprüft, unabhängig davon, ob eine DLP-Richtlinie vorhanden ist oder mit diesen Dateien übereinstimmt.
+
+Sie können Benachrichtigungen anzeigen, die mit auf Endpunktgeräten durchgesetzten DLP-Richtlinien verbunden sind, indem Sie zu [DLP-Benachrichtigungs-Verwaltungsdasboard](dlp-configure-view-alerts-policies.md) wechseln.
+
+![Warninformationen](../media/Alert-info-1.png)
+
+Sie können ebenfalls Details des zugehörigen Ereignisses mit umfangreichen Metadaten im gleichen Dashboard anzeigen.
+
+![Ereignisinformationen](../media/Event-info-1.png)
 
 Nach dem Onboarding eines Geräts werden Informationen zu überwachten Aktivitäten an den Aktivitäten-Explorer gesendet, noch bevor Sie DLP-Richtlinien konfigurieren und bereitstellen, die Geräte als Speicherort verwenden.
 

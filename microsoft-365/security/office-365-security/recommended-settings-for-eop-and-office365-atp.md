@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Was sind bewährte Methoden für Exchange Online Schutz (EoP) und Defender für Office 365 Sicherheitseinstellungen? Was sind die aktuellen Empfehlungen für Standardschutz? Was sollte verwendet werden, wenn Sie strenger sein möchten? Und welche Extras erhalten Sie, wenn Sie auch Defender für Office 365 verwenden?
-ms.openlocfilehash: ab8640574d15cc1950ac0873ef90c4d984553510
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 032cd6a50f56fd3e1e47faebfaea5f6665553a4b
+ms.sourcegitcommit: 09518b7c9146cda7fd42839ee644ad418d48491a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845648"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49001525"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Empfohlene Einstellungen für EoP und Microsoft Defender für Office 365 Sicherheit
 
@@ -54,22 +54,22 @@ Informationen zum Erstellen und Konfigurieren von Anti-Spam-Richtlinien finden S
 
 |Name des Sicherheitsfeatures|Standard|Standard|Strict|Kommentar|
 |---|:---:|:---:|:---:|---|
-|**Spam** erkennungsaktion <br/><br/> _Folgenden_|**Nachricht in Junk-E-Mail-Ordner verschieben** <br/><br/> `MoveToJmf`|**Nachricht in Junk-E-Mail-Ordner verschieben** <br/><br/> `MoveToJmf`|**Nachricht in Quarantäne verschieben** <br/><br/> `Quarantine`||
-|Spam erkennungsaktion mit **hoher Vertrauens** Würdigkeit <br/><br/> _: Highconfidencespamaction_|**Nachricht in Junk-E-Mail-Ordner verschieben** <br/><br/> `MoveToJmf`|**Nachricht in Quarantäne verschieben** <br/><br/> `Quarantine`|**Nachricht in Quarantäne verschieben** <br/><br/> `Quarantine`||
-|**Phishing-e-Mail-** erkennungsaktion <br/><br/> _PhishSpamAction_|**Nachricht in Junk-E-Mail-Ordner verschieben** <br/><br/> `MoveToJmf`|**Nachricht in Quarantäne verschieben** <br/><br/> `Quarantine`|**Nachricht in Quarantäne verschieben** <br/><br/> `Quarantine`||
-|**Phishing-e-Mail-** erkennungsaktion mit hoher Vertrauenswürdigkeit <br/><br/> _HighConfidencePhishAction_|**Nachricht in Quarantäne verschieben** <br/><br/> `Quarantine`|**Nachricht in Quarantäne verschieben** <br/><br/> `Quarantine`|**Nachricht in Quarantäne verschieben** <br/><br/> `Quarantine`||
-|**Massen-e-Mail-** erkennungsaktion <br/><br/> _BulkSpamAction_|**Nachricht in Junk-E-Mail-Ordner verschieben** <br/><br/> `MoveToJmf`|**Nachricht in Junk-E-Mail-Ordner verschieben** <br/><br/> `MoveToJmf`|**Nachricht in Quarantäne verschieben** <br/><br/> `Quarantine`||
-|Massen-e-Mail-Schwellenwert <br/><br/> _BulkThreshold_|7 |6 |4 |Ausführliche Informationen finden Sie unter [Bulk Complaint Level (BCL) in Office 365](bulk-complaint-level-values.md).|
-|Aufbewahrungszeitraum für Quarantäne <br/><br/> _QuarantineRetentionPeriod_|15 Tage|30 Tage|30 Tage||
-|**Sicherheitstipps** <br/><br/> _InlineSafetyTipsEnabled_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
-|Zugelassene Absender <br/><br/> _AllowedSenders_|Keine|Keine|Keine||
-|Zulässige Absenderdomänen <br/><br/> _AllowedSenderDomains_|Keine|Keine|Keine|Das Hinzufügen von Domänen zur Liste zulässiger Absender ist eine sehr schlechte Idee. Angreifer können Ihnen eine e-Mail senden, die andernfalls herausgefiltert würde. <br/><br/> Verwenden Sie [Spoof Intelligence](learn-about-spoof-intelligence.md) im Security & Compliance Center auf der Seite **Anti-Spam-Einstellungen** , um alle Absender zu überprüfen, die e-Mail-Adressen von Absendern in den e-Mail-Domänen Ihrer Organisation Spoofing oder Absender-e-Mail-Adressen in externen Domänen Spoofing durchführen.|
-|Blockierte Absender <br/><br/> _BlockedSenders_|Keine|Keine|Keine||
-|Blockierte Absenderdomänen <br/><br/> _BlockedSenderDomains_|Keine|Keine|Keine||
-|**Spambenachrichtigungen für Endbenutzer aktivieren** <br/><br/> _EnableEndUserSpamNotifications_|Deaktiviert <br/><br/> `$false`|Aktiviert <br/><br/> `$true`|Aktiviert <br/><br/> `$true`||
-|**Spambenachrichtigungen an Endbenutzer senden alle ... Tage** <br/><br/> _EndUserSpamNotificationFrequency_|3 Tage|3 Tage|3 Tage||
-|**Spam zap** <br/><br/> _SpamZapEnabled_|Aktiviert <br/><br/> `$true`|Aktiviert <br/><br/> `$true`|Aktiviert <br/><br/> `$true`||
-|**Phishing-zap** <br/><br/> _PhishZapEnabled_|Aktiviert <br/><br/> `$true`|Aktiviert <br/><br/> `$true`|Aktiviert <br/><br/> `$true`||
+|**Spam** erkennungsaktion <p> _Folgenden_|**Nachricht in Junk-E-Mail-Ordner verschieben** <p> `MoveToJmf`|**Nachricht in Junk-E-Mail-Ordner verschieben** <p> `MoveToJmf`|**Nachricht in Quarantäne verschieben** <p> `Quarantine`||
+|Spam erkennungsaktion mit **hoher Vertrauens** Würdigkeit <p> _: Highconfidencespamaction_|**Nachricht in Junk-E-Mail-Ordner verschieben** <p> `MoveToJmf`|**Nachricht in Quarantäne verschieben** <p> `Quarantine`|**Nachricht in Quarantäne verschieben** <p> `Quarantine`||
+|**Phishing-e-Mail-** erkennungsaktion <p> _PhishSpamAction_|**Nachricht in Junk-E-Mail-Ordner verschieben** <p> `MoveToJmf`|**Nachricht in Quarantäne verschieben** <p> `Quarantine`|**Nachricht in Quarantäne verschieben** <p> `Quarantine`||
+|**Phishing-e-Mail-** erkennungsaktion mit hoher Vertrauenswürdigkeit <p> _HighConfidencePhishAction_|**Nachricht in Quarantäne verschieben** <p> `Quarantine`|**Nachricht in Quarantäne verschieben** <p> `Quarantine`|**Nachricht in Quarantäne verschieben** <p> `Quarantine`||
+|**Massen-e-Mail-** erkennungsaktion <p> _BulkSpamAction_|**Nachricht in Junk-E-Mail-Ordner verschieben** <p> `MoveToJmf`|**Nachricht in Junk-E-Mail-Ordner verschieben** <p> `MoveToJmf`|**Nachricht in Quarantäne verschieben** <p> `Quarantine`||
+|Massen-e-Mail-Schwellenwert <p> _BulkThreshold_|7 |6 |4 |Ausführliche Informationen finden Sie unter [Bulk Complaint Level (BCL) in Office 365](bulk-complaint-level-values.md).|
+|Aufbewahrungszeitraum für Quarantäne <p> _QuarantineRetentionPeriod_|15 Tage|30 Tage|30 Tage||
+|**Sicherheitstipps** <p> _InlineSafetyTipsEnabled_|Ein <p> `$true`|Ein <p> `$true`|Ein <p> `$true`||
+|Zugelassene Absender <p> _AllowedSenders_|Keine|Keine|Keine||
+|Zulässige Absenderdomänen <p> _AllowedSenderDomains_|Keine|Keine|Keine|Das Hinzufügen von Domänen zur Liste zulässiger Absender ist eine sehr schlechte Idee. Angreifer können Ihnen eine e-Mail senden, die andernfalls herausgefiltert würde. <p> Verwenden Sie [Spoof Intelligence](learn-about-spoof-intelligence.md) im Security & Compliance Center auf der Seite **Anti-Spam-Einstellungen** , um alle Absender zu überprüfen, die e-Mail-Adressen von Absendern in den e-Mail-Domänen Ihrer Organisation Spoofing oder Absender-e-Mail-Adressen in externen Domänen Spoofing durchführen.|
+|Blockierte Absender <p> _BlockedSenders_|Keine|Keine|Keine||
+|Blockierte Absenderdomänen <p> _BlockedSenderDomains_|Keine|Keine|Keine||
+|**Spambenachrichtigungen für Endbenutzer aktivieren** <p> _EnableEndUserSpamNotifications_|Deaktiviert <p> `$false`|Aktiviert <p> `$true`|Aktiviert <p> `$true`||
+|**Spambenachrichtigungen an Endbenutzer senden alle ... Tage** <p> _EndUserSpamNotificationFrequency_|3 Tage|3 Tage|3 Tage||
+|**Spam zap** <p> _SpamZapEnabled_|Aktiviert <p> `$true`|Aktiviert <p> `$true`|Aktiviert <p> `$true`||
+|**Phishing-zap** <p> _PhishZapEnabled_|Aktiviert <p> `$true`|Aktiviert <p> `$true`|Aktiviert <p> `$true`||
 |_MarkAsSpamBulkMail_|Ein|Ein|Ein|Diese Einstellung ist nur in PowerShell verfügbar.|
 |
 
@@ -108,10 +108,10 @@ Weitere Informationen zu den standardmäßigen Sende Grenzwerten im Dienst finde
 
 |Name des Sicherheitsfeatures|Standard|Standard|Strict|Kommentar|
 |---|:---:|:---:|:---:|---|
-|**Maximale Anzahl von Empfängern pro Benutzer: externer stündlicher Grenzwert** <br/><br/> _RecipientLimitExternalPerHour_|0|500|400|Der Standardwert 0 bedeutet, dass die Dienst Standardwerte verwendet werden.|
-|**Maximale Anzahl von Empfängern pro Benutzer: interne stündliche Begrenzung** <br/><br/> _RecipientLimitInternalPerHour_|0|1000|800|Der Standardwert 0 bedeutet, dass die Dienst Standardwerte verwendet werden.|
-|**Maximale Anzahl von Empfängern pro Benutzer: Tagesgrenzwert** <br/><br/> _RecipientLimitPerDay_|0|1000|800|Der Standardwert 0 bedeutet, dass die Dienst Standardwerte verwendet werden.|
-|**Aktion, wenn ein Benutzer die Grenzwerte überschreitet** <br/><br/> _ActionWhenThresholdReached_|**Einschränken, dass der Benutzer e-Mails bis zum nächsten Tag sendet** <br/><br/> `BlockUserForToday`|**Einschränken des Sendens von e-Mails durch den Benutzer** <br/><br/> `BlockUser`|**Einschränken des Sendens von e-Mails durch den Benutzer** <br/><br/> `BlockUser`||
+|**Maximale Anzahl von Empfängern pro Benutzer: externer stündlicher Grenzwert** <p> _RecipientLimitExternalPerHour_|0|500|400|Der Standardwert 0 bedeutet, dass die Dienst Standardwerte verwendet werden.|
+|**Maximale Anzahl von Empfängern pro Benutzer: interne stündliche Begrenzung** <p> _RecipientLimitInternalPerHour_|0|1000|800|Der Standardwert 0 bedeutet, dass die Dienst Standardwerte verwendet werden.|
+|**Maximale Anzahl von Empfängern pro Benutzer: Tagesgrenzwert** <p> _RecipientLimitPerDay_|0|1000|800|Der Standardwert 0 bedeutet, dass die Dienst Standardwerte verwendet werden.|
+|**Aktion, wenn ein Benutzer die Grenzwerte überschreitet** <p> _ActionWhenThresholdReached_|**Einschränken, dass der Benutzer e-Mails bis zum nächsten Tag sendet** <p> `BlockUserForToday`|**Einschränken des Sendens von e-Mails durch den Benutzer** <p> `BlockUser`|**Einschränken des Sendens von e-Mails durch den Benutzer** <p> `BlockUser`||
 |
 
 ### <a name="eop-anti-malware-policy-settings"></a>EoP-Anti-Malware-Richtlinieneinstellungen
@@ -122,11 +122,11 @@ Informationen zum Erstellen und Konfigurieren von Anti-Malware-Richtlinien finde
 
 |Name des Sicherheitsfeatures|Standard|Standard|Strict|Kommentar|
 |---|:---:|:---:|:---:|---|
-|**Möchten Sie Empfänger Benachrichtigen, wenn Ihre Nachrichten unter Quarantäne gestellt werden?** <br/><br/> _Aktion_|Nein <br/><br/> _DeleteMessage_|Nein <br/><br/> _DeleteMessage_|Nein <br/><br/> _DeleteMessage_|Wenn Schadsoftware in einer e-Mail-Anlage erkannt wird, wird die Nachricht isoliert und kann nur von einem Administrator freigegeben werden.|
-|**Filter "allgemeine Anlagentypen"** <br/><br/> _EnableFileFilter_|Off <br/><br/> `$false`|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`|Diese Einstellung isoliert Nachrichten, die ausführbare Anlagen basierend auf dem Dateityp enthalten, unabhängig vom Anlage Inhalt.|
-|**Malware Zero-Hour Auto Purge** <br/><br/> _ZapEnabled_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
-|**Interne Absender** der nicht zugestellten Nachricht Benachrichtigen <br/><br/> _EnableInternalSenderNotifications_|Deaktiviert <br/><br/> `$false`|Deaktiviert <br/><br/> `$false`|Deaktiviert <br/><br/> `$false`||
-|**Benachrichtigen externer Absender** der nicht zugestellten Nachricht <br/><br/> _EnableExternalSenderNotifications_|Deaktiviert <br/><br/> `$false`|Deaktiviert <br/><br/> `$false`|Deaktiviert <br/><br/> `$false`||
+|**Möchten Sie Empfänger Benachrichtigen, wenn Ihre Nachrichten unter Quarantäne gestellt werden?** <p> _Aktion_|Nein <p> _DeleteMessage_|Nein <p> _DeleteMessage_|Nein <p> _DeleteMessage_|Wenn Schadsoftware in einer e-Mail-Anlage erkannt wird, wird die Nachricht isoliert und kann nur von einem Administrator freigegeben werden.|
+|**Filter "allgemeine Anlagentypen"** <p> _EnableFileFilter_|Off <p> `$false`|Ein <p> `$true`|Ein <p> `$true`|Diese Einstellung isoliert Nachrichten, die ausführbare Anlagen basierend auf dem Dateityp enthalten, unabhängig vom Anlage Inhalt.|
+|**Malware Zero-Hour Auto Purge** <p> _ZapEnabled_|Ein <p> `$true`|Ein <p> `$true`|Ein <p> `$true`||
+|**Interne Absender** der nicht zugestellten Nachricht Benachrichtigen <p> _EnableInternalSenderNotifications_|Deaktiviert <p> `$false`|Deaktiviert <p> `$false`|Deaktiviert <p> `$false`||
+|**Benachrichtigen externer Absender** der nicht zugestellten Nachricht <p> _EnableExternalSenderNotifications_|Deaktiviert <p> `$false`|Deaktiviert <p> `$false`|Deaktiviert <p> `$false`||
 |
 
 ### <a name="eop-default-anti-phishing-policy-settings"></a>EoP Standardeinstellungen für Anti-Phishing-Richtlinien
@@ -137,9 +137,9 @@ Weitere Informationen zu diesen Einstellungen finden Sie unter [Spoof Settings](
 
 |Name des Sicherheitsfeatures|Standard|Standard|Strict|Kommentar|
 |---|:---:|:---:|:---:|---|
-|**Aktivieren des Schutzes gegen Spoofing** <br/><br/> _EnableAntispoofEnforcement_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
-|**Nicht authentifizierten Absender aktivieren** <br/><br/> _EnableUnauthenticatedSender_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`|Fügt dem Foto des Absenders in Outlook ein Fragezeichen (?) für nicht identifizierte gefälschte Absender hinzu. Weitere Informationen finden Sie unter [Spoof Settings in Anti-Phishing Policies](set-up-anti-phishing-policies.md).|
-|**Wenn e-Mails von Benutzern gesendet werden, die Ihre Domäne nicht spoofen dürfen** <br/><br/> _AuthenticationFailAction_|**Nachricht in die Junk-e-Mail-Ordner der Empfänger verlagern** <br/><br/> `MoveToJmf`|**Nachricht in die Junk-e-Mail-Ordner der Empfänger verlagern** <br/><br/> `MoveToJmf`|**Nachricht isolieren** <br/><br/> `Quarantine`|Diese Einstellung gilt für blockierte Absender in [Spoof Intelligence](learn-about-spoof-intelligence.md).|
+|**Aktivieren des Schutzes gegen Spoofing** <p> _EnableAntispoofEnforcement_|Ein <p> `$true`|Ein <p> `$true`|Ein <p> `$true`||
+|**Nicht authentifizierten Absender aktivieren** <p> _EnableUnauthenticatedSender_|Ein <p> `$true`|Ein <p> `$true`|Ein <p> `$true`|Fügt dem Foto des Absenders in Outlook ein Fragezeichen (?) für nicht identifizierte gefälschte Absender hinzu. Weitere Informationen finden Sie unter [Spoof Settings in Anti-Phishing Policies](set-up-anti-phishing-policies.md).|
+|**Wenn e-Mails von Benutzern gesendet werden, die Ihre Domäne nicht spoofen dürfen** <p> _AuthenticationFailAction_|**Nachricht in die Junk-e-Mail-Ordner der Empfänger verlagern** <p> `MoveToJmf`|**Nachricht in die Junk-e-Mail-Ordner der Empfänger verlagern** <p> `MoveToJmf`|**Nachricht isolieren** <p> `Quarantine`|Diese Einstellung gilt für blockierte Absender in [Spoof Intelligence](learn-about-spoof-intelligence.md).|
 |
 
 ## <a name="microsoft-defender-for-office-365-security"></a>Microsoft Defender für Office 365 Sicherheit
@@ -168,19 +168,19 @@ Weitere Informationen zu diesen Einstellungen finden Sie unter [Identitätswechs
 
 |Name des Sicherheitsfeatures|Standard|Standard|Strict|Kommentar|
 |---|:---:|:---:|:---:|---|
-|Geschützte Benutzer: **zu schützende Benutzer hinzufügen** <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|Off <br/><br/> `$false` <br/><br/> Keine|Ein <br/><br/> `$true` <br/><br/> \<list of users\>|Ein <br/><br/> `$true` <br/><br/> \<list of users\>|In Abhängigkeit von Ihrer Organisation wird empfohlen, Benutzer (Nachrichtenabsender) in Schlüsselrollen hinzuzufügen. Intern sind möglicherweise geschützte Absender Ihr CEO, CFO und andere Führungskräfte. Extern können geschützte Absender Ratsmitglieder oder ihren Verwaltungsrat umfassen.|
-|Geschützte Domänen: **Automatisches einschließen der Domänen, die ich besitze** <br/><br/> _EnableOrganizationDomainsProtection_|Off <br/><br/> `$false`|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
-|Geschützte Domänen: **benutzerdefinierte Domänen einschließen** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|Off <br/><br/> `$false` <br/><br/> Keine|Ein <br/><br/> `$true` <br/><br/> \<list of domains\>|Ein <br/><br/> `$true` <br/><br/> \<list of domains\>|In Abhängigkeit von Ihrer Organisation wird empfohlen, Domänen (Absenderdomänen) hinzuzufügen, die Sie nicht besitzen, jedoch häufig mit interagieren.|
-|Geschützte Benutzer: **Wenn e-Mail von einem imitierten Benutzer gesendet wird** <br/><br/> _TargetedUserProtectionAction_|**Keine Aktion anwenden** <br/><br/> `NoAction`|**Nachricht isolieren** <br/><br/> `Quarantine`|**Nachricht isolieren** <br/><br/> `Quarantine`||
-|Geschützte Domänen: **Wenn e-Mails von einer imitierten Domäne gesendet werden** <br/><br/> _TargetedDomainProtectionAction_|**Keine Aktion anwenden** <br/><br/> `NoAction`|**Nachricht isolieren** <br/><br/> `Quarantine`|**Nachricht isolieren** <br/><br/> `Quarantine`||
-|**Tipp für imitierte Benutzer anzeigen** <br/><br/> _EnableSimilarUsersSafetyTips_|Off <br/><br/> `$false`|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
-|**Tipp für imitierte Domänen anzeigen** <br/><br/> _EnableSimilarDomainsSafetyTips_|Off <br/><br/> `$false`|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
-|**Tipp für ungewöhnliche Zeichen anzeigen** <br/><br/> _EnableUnusualCharactersSafetyTips_|Off <br/><br/> `$false`|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
-|**Mailbox Intelligence aktivieren?** <br/><br/> _EnableMailboxIntelligence_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
-|**Aktivieren des Post Fach informationsbasierten Identitätswechsel Schutzes?** <br/><br/> _EnableMailboxIntelligenceProtection_|Off <br/><br/> `$false`|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
-|**Wenn e-Mails von einem imitierten Benutzer gesendet werden, der durch Post Fach Intelligenz geschützt ist** <br/><br/> _MailboxIntelligenceProtectionAction_|**Keine Aktion anwenden** <br/><br/> `NoAction`|**Nachricht in die Junk-e-Mail-Ordner der Empfänger verlagern** <br/><br/> `MoveToJmf`|**Nachricht isolieren** <br/><br/> `Quarantine`||
-|**Trusted senders** <br/><br/> _ExcludedSenders_|Keine|Keine|Keine|In Abhängigkeit von Ihrer Organisation wird empfohlen, Benutzer hinzuzufügen, die aufgrund eines Identitätswechsels und nicht anderer Filter fälschlicherweise als Phishing markiert werden.|
-|**Vertrauenswürdige Domänen** <br/><br/> _ExcludedDomains_|Keine|Keine|Keine|In Abhängigkeit von Ihrer Organisation wird empfohlen, Domänen hinzuzufügen, die aufgrund eines Identitätswechsels und nicht anderer Filter fälschlicherweise als Phishing gekennzeichnet werden.|
+|Geschützte Benutzer: **zu schützende Benutzer hinzufügen** <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|Off <p> `$false` <p> n/v|Ein <p> `$true` <p> \<list of users\>|Ein <p> `$true` <p> \<list of users\>|In Abhängigkeit von Ihrer Organisation wird empfohlen, Benutzer (Nachrichtenabsender) in Schlüsselrollen hinzuzufügen. Intern sind möglicherweise geschützte Absender Ihr CEO, CFO und andere Führungskräfte. Extern können geschützte Absender Ratsmitglieder oder ihren Verwaltungsrat umfassen.|
+|Geschützte Domänen: **Automatisches einschließen der Domänen, die ich besitze** <p> _EnableOrganizationDomainsProtection_|Off <p> `$false`|Ein <p> `$true`|Ein <p> `$true`||
+|Geschützte Domänen: **benutzerdefinierte Domänen einschließen** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|Off <p> `$false` <p> n/v|Ein <p> `$true` <p> \<list of domains\>|Ein <p> `$true` <p> \<list of domains\>|In Abhängigkeit von Ihrer Organisation wird empfohlen, Domänen (Absenderdomänen) hinzuzufügen, die Sie nicht besitzen, jedoch häufig mit interagieren.|
+|Geschützte Benutzer: **Wenn e-Mail von einem imitierten Benutzer gesendet wird** <p> _TargetedUserProtectionAction_|**Keine Aktion anwenden** <p> `NoAction`|**Nachricht isolieren** <p> `Quarantine`|**Nachricht isolieren** <p> `Quarantine`||
+|Geschützte Domänen: **Wenn e-Mails von einer imitierten Domäne gesendet werden** <p> _TargetedDomainProtectionAction_|**Keine Aktion anwenden** <p> `NoAction`|**Nachricht isolieren** <p> `Quarantine`|**Nachricht isolieren** <p> `Quarantine`||
+|**Tipp für imitierte Benutzer anzeigen** <p> _EnableSimilarUsersSafetyTips_|Off <p> `$false`|Ein <p> `$true`|Ein <p> `$true`||
+|**Tipp für imitierte Domänen anzeigen** <p> _EnableSimilarDomainsSafetyTips_|Off <p> `$false`|Ein <p> `$true`|Ein <p> `$true`||
+|**Tipp für ungewöhnliche Zeichen anzeigen** <p> _EnableUnusualCharactersSafetyTips_|Off <p> `$false`|Ein <p> `$true`|Ein <p> `$true`||
+|**Mailbox Intelligence aktivieren?** <p> _EnableMailboxIntelligence_|Ein <p> `$true`|Ein <p> `$true`|Ein <p> `$true`||
+|**Aktivieren des Post Fach informationsbasierten Identitätswechsel Schutzes?** <p> _EnableMailboxIntelligenceProtection_|Off <p> `$false`|Ein <p> `$true`|Ein <p> `$true`||
+|**Wenn e-Mails von einem imitierten Benutzer gesendet werden, der durch Post Fach Intelligenz geschützt ist** <p> _MailboxIntelligenceProtectionAction_|**Keine Aktion anwenden** <p> `NoAction`|**Nachricht in die Junk-e-Mail-Ordner der Empfänger verlagern** <p> `MoveToJmf`|**Nachricht isolieren** <p> `Quarantine`||
+|**Trusted senders** <p> _ExcludedSenders_|Keine|Keine|Keine|In Abhängigkeit von Ihrer Organisation wird empfohlen, Benutzer hinzuzufügen, die aufgrund eines Identitätswechsels und nicht anderer Filter fälschlicherweise als Phishing markiert werden.|
+|**Vertrauenswürdige Domänen** <p> _ExcludedDomains_|Keine|Keine|Keine|In Abhängigkeit von Ihrer Organisation wird empfohlen, Domänen hinzuzufügen, die aufgrund eines Identitätswechsels und nicht anderer Filter fälschlicherweise als Phishing gekennzeichnet werden.|
 |
 
 #### <a name="spoof-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Spoof-Einstellungen in Anti-Phishing-Richtlinien in Microsoft Defender für Office 365
@@ -191,9 +191,9 @@ Beachten Sie, dass es sich dabei um dieselben Einstellungen handelt, die in den 
 
 |Name des Sicherheitsfeatures|Standard|Strict|Kommentar|
 |---|---|---|---|
-|**Aktivieren des Schutzes gegen Spoofing** <br/><br/> _EnableAntispoofEnforcement_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
-|**Nicht authentifizierten Absender aktivieren** <br/><br/> _EnableUnauthenticatedSender_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`|Fügt dem Foto des Absenders in Outlook ein Fragezeichen (?) für nicht identifizierte gefälschte Absender hinzu. Weitere Informationen finden Sie unter [Spoof Settings in Anti-Phishing Policies](set-up-anti-phishing-policies.md).|
-|**Wenn e-Mails von Benutzern gesendet werden, die Ihre Domäne nicht spoofen dürfen** <br/><br/> _AuthenticationFailAction_|**Nachricht in die Junk-e-Mail-Ordner der Empfänger verlagern** <br/><br/> `MoveToJmf`|**Nachricht isolieren** <br/><br/> `Quarantine`|Diese Einstellung gilt für blockierte Absender in [Spoof Intelligence](learn-about-spoof-intelligence.md).|
+|**Aktivieren des Schutzes gegen Spoofing** <p> _EnableAntispoofEnforcement_|Ein <p> `$true`|Ein <p> `$true`||
+|**Nicht authentifizierten Absender aktivieren** <p> _EnableUnauthenticatedSender_|Ein <p> `$true`|Ein <p> `$true`|Fügt dem Foto des Absenders in Outlook ein Fragezeichen (?) für nicht identifizierte gefälschte Absender hinzu. Weitere Informationen finden Sie unter [Spoof Settings in Anti-Phishing Policies](set-up-anti-phishing-policies.md).|
+|**Wenn e-Mails von Benutzern gesendet werden, die Ihre Domäne nicht spoofen dürfen** <p> _AuthenticationFailAction_|**Nachricht in die Junk-e-Mail-Ordner der Empfänger verlagern** <p> `MoveToJmf`|**Nachricht isolieren** <p> `Quarantine`|Diese Einstellung gilt für blockierte Absender in [Spoof Intelligence](learn-about-spoof-intelligence.md).|
 |
 
 #### <a name="advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Erweiterte Einstellungen in Anti-Phishing-Richtlinien in Microsoft Defender für Office 365
@@ -204,7 +204,7 @@ Weitere Informationen zu dieser Einstellung finden Sie unter [Advanced Phishing 
 
 |Name des Sicherheitsfeatures|Standard|Standard|Strict|Kommentar|
 |---|:---:|:---:|:---:|---|
-|**Erweiterte Phishing-Schwellenwerte** <br/><br/> _PhishThresholdLevel_|**1-Standard** <br/><br/> `1`|**2-aggressiv** <br/><br/> `2`|**3-aggressiver** <br/><br/> `3`||
+|**Erweiterte Phishing-Schwellenwerte** <p> _PhishThresholdLevel_|**1-Standard** <p> `1`|**2-aggressiv** <p> `2`|**3-aggressiver** <p> `3`||
 |
 
 ### <a name="safe-links-settings"></a>Einstellungen für sichere Links
@@ -221,9 +221,9 @@ In PowerShell verwenden Sie das Cmdlet " [Sets-AtpPolicyForO365](https://docs.mi
 
 |Name des Sicherheitsfeatures|Standard|Standard|Strict|Kommentar|
 |---|:---:|:---:|:---:|---|
-|**Verwenden von sicheren Links in: Office 365-Anwendungen** <br/><br/> _EnableSafeLinksForO365Clients_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`|Verwenden Sie sichere Links in unterstützten Office 365-Desktop-und Mobile-Apps (IOS und Android). Weitere Informationen finden Sie unter [Einstellungen für sichere Links für Office 365 apps](atp-safe-links.md#safe-links-settings-for-office-365-apps).|
-|**Nicht nachverfolgen, wenn Benutzer auf sichere Links klicken** <br/><br/> _TrackClicks_|Ein <br/><br/> `$false`|Off <br/><br/> `$true`|Off <br/><br/> `$true`|Durch Deaktivieren dieser Einstellung (Festlegen von _TrackClicks_ auf `$true` ) werden Benutzerklicks in unterstützten Office 365-apps verfolgt.|
-|**Nicht zulassen, dass Benutzer über sichere Links auf die ursprüngliche URL klicken** <br/><br/> _AllowClickThrough_|Ein <br/><br/> `$false`|Ein <br/><br/> `$false`|Ein <br/><br/> `$false`|Durch Aktivieren dieser Einstellung (Festlegen von _AllowClickThrough_ auf `$false` ) wird verhindert, dass durch Klicken auf die ursprüngliche URL in unterstützten Office 365-apps.|
+|**Verwenden von sicheren Links in: Office 365-Anwendungen** <p> _EnableSafeLinksForO365Clients_|Ein <p> `$true`|Ein <p> `$true`|Ein <p> `$true`|Verwenden Sie sichere Links in unterstützten Office 365-Desktop-und Mobile-Apps (IOS und Android). Weitere Informationen finden Sie unter [Einstellungen für sichere Links für Office 365 apps](atp-safe-links.md#safe-links-settings-for-office-365-apps).|
+|**Nicht nachverfolgen, wenn Benutzer auf sichere Links klicken** <p> _TrackClicks_|Ein <p> `$false`|Off <p> `$true`|Off <p> `$true`|Durch Deaktivieren dieser Einstellung (Festlegen von _TrackClicks_ auf `$true` ) werden Benutzerklicks in unterstützten Office 365-apps verfolgt.|
+|**Nicht zulassen, dass Benutzer über sichere Links auf die ursprüngliche URL klicken** <p> _AllowClickThrough_|Ein <p> `$false`|Ein <p> `$false`|Ein <p> `$false`|Durch Aktivieren dieser Einstellung (Festlegen von _AllowClickThrough_ auf `$false` ) wird verhindert, dass durch Klicken auf die ursprüngliche URL in unterstützten Office 365-apps.|
 |
 
 #### <a name="safe-links-policy-settings"></a>Richtlinieneinstellungen für sichere Links
@@ -239,13 +239,13 @@ In PowerShell verwenden Sie die Cmdlets [New-SafeLinksPolicy](https://docs.micro
 
 |Name des Sicherheitsfeatures|Standard|Standard|Strict|Kommentar|
 |---|:---:|:---:|:---:|---|
-|**Auswählen der Aktion für unbekannte potenziell bösartige URLs in Nachrichten** <br/><br/> _IsEnabled_|Off <br/><br/> `$false`|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
-|**Auswählen der Aktion für unbekannte oder potenziell bösartige URLs in Microsoft Teams** <br/><br/> _EnableSafeLinksForTeams_|Off <br/><br/> `$false`|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
-|**Übernehmen der Echt Zeit-URL-Überprüfung auf verdächtige Links und Links, die auf Dateien verweisen** <br/><br/> _ScanUrls_|Off <br/><br/> `$false`|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
-|**Warten Sie, bis die URL-Überprüfung abgeschlossen ist, bevor Sie die Nachricht liefern** <br/><br/> _DeliverMessageAfterScan_|Off <br/><br/> `$false`|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
-|**Anwenden von sicheren Links auf e-Mail-Nachrichten, die innerhalb der Organisation gesendet werden** <br/><br/> _EnableForInternalSenders_|Off <br/><br/> `$false`|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
-|**Benutzerklicks nicht nachverfolgen** <br/><br/> _DoNotTrackUserClicks_|Off <br/><br/> `$false`|Off <br/><br/> `$false`|Off <br/><br/> `$false`|Durch Deaktivieren dieser Einstellung (Festlegen von _DoNotTrackUserClicks_ auf `$false` ) werden Benutzerklicks nachverfolgt.|
-|**Benutzer dürfen nicht auf die ursprüngliche URL klicken.** <br/><br/> _DoNotAllowClickThrough_|Off <br/><br/> `$false`|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`|Durch Aktivieren dieser Einstellung (Festlegen von _DoNotAllowClickThrough_ auf `$true` ) wird verhindert, dass Sie die ursprüngliche URL durch klicken.|
+|**Auswählen der Aktion für unbekannte potenziell bösartige URLs in Nachrichten** <p> _IsEnabled_|Off <p> `$false`|Ein <p> `$true`|Ein <p> `$true`||
+|**Auswählen der Aktion für unbekannte oder potenziell bösartige URLs in Microsoft Teams** <p> _EnableSafeLinksForTeams_|Off <p> `$false`|Ein <p> `$true`|Ein <p> `$true`||
+|**Übernehmen der Echt Zeit-URL-Überprüfung auf verdächtige Links und Links, die auf Dateien verweisen** <p> _ScanUrls_|Off <p> `$false`|Ein <p> `$true`|Ein <p> `$true`||
+|**Warten Sie, bis die URL-Überprüfung abgeschlossen ist, bevor Sie die Nachricht liefern** <p> _DeliverMessageAfterScan_|Off <p> `$false`|Ein <p> `$true`|Ein <p> `$true`||
+|**Anwenden von sicheren Links auf e-Mail-Nachrichten, die innerhalb der Organisation gesendet werden** <p> _EnableForInternalSenders_|Off <p> `$false`|Ein <p> `$true`|Ein <p> `$true`||
+|**Benutzerklicks nicht nachverfolgen** <p> _DoNotTrackUserClicks_|Off <p> `$false`|Off <p> `$false`|Off <p> `$false`|Durch Deaktivieren dieser Einstellung (Festlegen von _DoNotTrackUserClicks_ auf `$false` ) werden Benutzerklicks nachverfolgt.|
+|**Benutzer dürfen nicht auf die ursprüngliche URL klicken.** <p> _DoNotAllowClickThrough_|Off <p> `$false`|Ein <p> `$true`|Ein <p> `$true`|Durch Aktivieren dieser Einstellung (Festlegen von _DoNotAllowClickThrough_ auf `$true` ) wird verhindert, dass Sie die ursprüngliche URL durch klicken.|
 |
 
 ### <a name="safe-attachments-settings"></a>Einstellungen für sichere Anlagen
@@ -262,9 +262,9 @@ In PowerShell verwenden Sie das Cmdlet " [Sets-AtpPolicyForO365](https://docs.mi
 
 |Name des Sicherheitsfeatures|Standard|Standard|Strict|Kommentar|
 |---|:---:|:---:|:---:|---|
-|**Aktivieren von ATP für SharePoint, OneDrive und Microsoft Teams** <br/><br/> _EnableATPForSPOTeamsODB_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
-|**Aktivieren sicherer Dokumente für Office-Clients**<bt/><br/> _EnableSafeDocs_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`|Diese Einstellung ist nur mit Microsoft 365 E5-oder Microsoft 365 E5-Sicherheits Lizenzen verfügbar. Weitere Informationen finden Sie unter [sichere Dokumente in Microsoft Defender für Office 365](safe-docs.md).|
-|**Personen können durch die geschützte Ansicht klicken, selbst wenn die Datei von sicheren Dokumenten als bösartig gekennzeichnet** wurde. <bt/><br/> _AllowSafeDocsOpen_|Off <br/><br/> `$false`|Off <br/><br/> `$false`|Diese Einstellung bezieht sich auf sichere Dokumente.|
+|**Aktivieren von ATP für SharePoint, OneDrive und Microsoft Teams** <p> _EnableATPForSPOTeamsODB_|Ein <p> `$true`|Ein <p> `$true`||
+|**Aktivieren sicherer Dokumente für Office-Clients**<bt/><br/> _EnableSafeDocs_|Ein <p> `$true`|Ein <p> `$true`|Diese Einstellung ist nur mit Microsoft 365 E5-oder Microsoft 365 E5-Sicherheits Lizenzen verfügbar. Weitere Informationen finden Sie unter [sichere Dokumente in Microsoft Defender für Office 365](safe-docs.md).|
+|**Personen können durch die geschützte Ansicht klicken, selbst wenn die Datei von sicheren Dokumenten als bösartig gekennzeichnet** wurde. <bt/><br/> _AllowSafeDocsOpen_|Off <p> `$false`|Off <p> `$false`|Diese Einstellung bezieht sich auf sichere Dokumente.|
 |
 
 #### <a name="safe-attachments-policy-settings"></a>Richtlinieneinstellungen für sichere Anlagen
@@ -280,9 +280,9 @@ In PowerShell verwenden Sie die Cmdlets [New-SafeAttachmentPolicy](https://docs.
 
 |Name des Sicherheitsfeatures|Standard|Standard|Strict|Kommentar|
 |---|:---:|:---:|:---:|---|
-|**Sichere Anlagen unbekannte Malware Antwort** <br/><br/> _Aktion_|Blockieren <br/><br/> `Block`|Blockieren <br/><br/> `Block`|Blockieren <br/><br/> `Block`||
-|**Umleitungs Anlage bei Erkennung** : **Umleitung aktivieren** <br/><br/> _Redirect_ <br/><br/> _RedirectAddress_|Aus, und es wurde keine e-Mail-Adresse angegeben. <br/><br/> `$true` <br/><br/> Keine|Ein, und geben Sie eine e-Mail-Adresse an. <br/><br/> `$true` <br/><br/> eine e-Mail-Adresse|Ein, und geben Sie eine e-Mail-Adresse an. <br/><br/> `$true` <br/><br/> eine e-Mail-Adresse|Umleiten von Nachrichten an einen Sicherheitsadministrator zur Überarbeitung.|
-|**Wenden Sie die obige Auswahl an, wenn bei der Malwareüberprüfung nach Anlagen ein Timeout oder ein Fehler auftritt.** <br/><br/> _ActionOnError_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
+|**Sichere Anlagen unbekannte Malware Antwort** <p> _Aktion_|Blockieren <p> `Block`|Blockieren <p> `Block`|Blockieren <p> `Block`||
+|**Umleitungs Anlage bei Erkennung** : **Umleitung aktivieren** <p> _Redirect_ <p> _RedirectAddress_|Aus, und es wurde keine e-Mail-Adresse angegeben. <p> `$true` <p> n/v|Ein, und geben Sie eine e-Mail-Adresse an. <p> `$true` <p> eine e-Mail-Adresse|Ein, und geben Sie eine e-Mail-Adresse an. <p> `$true` <p> eine e-Mail-Adresse|Umleiten von Nachrichten an einen Sicherheitsadministrator zur Überarbeitung.|
+|**Wenden Sie die obige Auswahl an, wenn bei der Malwareüberprüfung nach Anlagen ein Timeout oder ein Fehler auftritt.** <p> _ActionOnError_|Ein <p> `$true`|Ein <p> `$true`|Ein <p> `$true`||
 |
 
 ## <a name="related-articles"></a>Verwandte Artikel
