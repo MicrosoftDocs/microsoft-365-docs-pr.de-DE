@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6b575573753ef270b5936c315c8bbf3acf9e4a7f
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 6e8291f4fc21b0a1d3aaee74b47760fca3a4b220
+ms.sourcegitcommit: 321610fd312e5c54ae8a757a71ab0c9fd2f1ac03
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919699"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48995878"
 ---
 # <a name="securities-and-exchange-commission-sec-rule-17a-4f-united-states"></a>Securities and Exchange Commission (sec) Rule 17a-4 (f) Vereinigte Staaten
 
@@ -40,9 +40,9 @@ Microsoft Azure unveränderlicher BLOB-Speicher mit Richtlinien Sperre und Micro
 Zur Bewertung von Azure und Office 365 Compliance mit der SEC-Regel 17a-4 (f) behielt Microsoft eine unabhängige Bewertungs Firma, die sich auf die Verwaltung von Datensätzen und die Information Governance spezialisiert hat. Im Ergebnisbericht für:
 
 - **Azure** : [SEC 17a-4 (f) Compliance Assessment: Microsoft Azure Speicher](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=19b08fd4-d276-43e8-9461-715981d0ea20&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports), validierte der Benutzer, dass [Azure unveränderlicher BLOB-Speicher](https://docs.microsoft.com/azure/storage/blobs/storage-blob-immutable-storage) mit der Richtlinien Sperroption, wenn zeitbasierte BLOBs in einem nicht löschbaren und nicht wiederbeschreibbaren (Worm)-Format aufbewahrt werden, die unveränderlichen Speicheranforderungen der SEC-Regel erfüllt. Jedes BLOB (Record) wird vor der Änderung, Überschreibung oder Löschung geschützt, bis der erforderliche Aufbewahrungszeitraum abgelaufen ist und alle zugehörigen rechtlichen Aufbewahrungspflichten freigegeben wurden. Software Anbieter und Partner mit vertraulichen Arbeitslasten können jetzt auf Azure unveränderlichen BLOB-Speicher als Onestop-Cloud-Lösung für die Aufbewahrung von Datensätzen und den unveränderlichen Speicher zurückgreifen. Finanzinstitute können jetzt Ihre eigenen Anwendungen erstellen, indem Sie diese Funktionen nutzen und gleichzeitig kompatibel bleiben.
-- **Microsoft 365** : [SEC 17a-4 (f), FINRA 4511 (c) und CFTC 1.31 (c)-(d)](retention-regulatory-requirements.md#sec-17a-4f-finra-4511c-and-cftc-131c-d), Microsoft 365 enthält Archivierungs Features, mit denen regulierte Kunden, einschließlich Broker-Dealer, Daten so speichern können, dass Sie die Anforderungen an die Datensatzaufbewahrung erfüllen. Mithilfe von Aufbewahrungsfunktionen in Microsoft 365 können Sie eine Vielzahl von Daten, einschließlich e-Mail, Voicemail, freigegebene Dokumente, Sofortnachrichten und Daten von Drittanbietern, beibehalten. Die Archivierung in Microsoft 365 ermöglicht es Kunden insbesondere, globale oder granulare Messaging-Aufbewahrungsrichtlinien festzulegen, um Daten für einen bestimmten Zeitraum und darüber hinaus in einem nicht wiederbeschreibbaren, nicht löschbaren Format zu speichern.
+- **Microsoft 365** : [SEC 17a-4 (f)](retention-regulatory-requirements.md#sec-17a-4f-finra-4511c-and-cftc-131c-d)validierte, dass Microsoft 365 Archivierungsfunktionen enthält, mit denen regulierte Kunden, einschließlich Broker-Dealern, Daten so speichern können, dass Sie die Anforderungen an die Datensatzaufbewahrung erfüllen. Mithilfe von Aufbewahrungsfunktionen in Microsoft 365 können Sie eine Vielzahl von Daten, einschließlich e-Mail, Voicemail, freigegebene Dokumente, Sofortnachrichten und Daten von Drittanbietern, beibehalten. Die Archivierung in Microsoft 365 ermöglicht es Kunden insbesondere, globale oder granulare Messaging-Aufbewahrungsrichtlinien festzulegen, um Daten für einen bestimmten Zeitraum und darüber hinaus in einem nicht wiederbeschreibbaren, nicht löschbaren Format zu speichern.
 
-## <a name="microsoft-in-scope-cloud-services"></a>In-Scope-Cloud-Dienste von Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Office 365](https://aka.ms/Office365ComplianceOfferings)

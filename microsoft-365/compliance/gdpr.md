@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0310226bba62995a6e72178fcf1fd2e96f462944
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: 9a0878e513b48b7c6d5ca95cc9399918e1998af0
+ms.sourcegitcommit: 321610fd312e5c54ae8a757a71ab0c9fd2f1ac03
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48304815"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48995898"
 ---
 # <a name="general-data-protection-regulation-summary"></a>Zusammenfassung Datenschutz-Grundverordnung
 
@@ -31,10 +31,10 @@ Die Datenschutz-Grundverordnung (DSGVO) führt neue Regeln für Organisationen e
 
 Hilfreiche Definitionen für DSGVO-Ausdrücke, die in diesem Dokument verwendet werden:
 
-- **Datenverantwortlicher (Verantwortlicher)**: eine juristische Person, Behörde, Einrichtung oder andere Stelle, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet.  
-- **Personenbezogene Daten  und betroffene Person**: alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person (betroffene Person) beziehen; als identifizierbar wird eine natürliche Person angesehen, die direkt oder indirekt identifiziert werden kann.  
-- **Auftragsverarbeiter**: eine natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, die personenbezogene Daten im Auftrag des Verantwortlichen verarbeitet.  
-- **Kundendaten**: Daten, die im Rahmen Ihrer regulären Geschäftstätigkeit erstellt und gespeichert werden.
+- **Datenverantwortlicher (Verantwortlicher)** : eine juristische Person, Behörde, Einrichtung oder andere Stelle, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet.  
+- **Personenbezogene Daten  und betroffene Person** : alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person (betroffene Person) beziehen; als identifizierbar wird eine natürliche Person angesehen, die direkt oder indirekt identifiziert werden kann.  
+- **Auftragsverarbeiter** : eine natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, die personenbezogene Daten im Auftrag des Verantwortlichen verarbeitet.  
+- **Kundendaten** : Daten, die im Rahmen Ihrer regulären Geschäftstätigkeit erstellt und gespeichert werden.
 
 ## <a name="what-is-the-gdpr"></a>Was ist die DSGVO?
 
@@ -209,7 +209,7 @@ Die DSGVO-Bedingungen von Microsoft stellen die in Artikel 28 erforderlichen Ver
 
 **Auf welcher Grundlage erleichtert Microsoft die Übertragung von personenbezogenen Daten in Länder außerhalb der EU?**
 
-Microsoft verwendet seit langem die Standardvertragsklauseln (auch als Modellklauseln bekannt) als Grundlage für die Datenübertragung für seine Unternehmens-Online-Dienste. Die Standardvertragsklauseln sind von der Europäischen Kommission zur Verfügung gestellte Standardbedingungen, die verwendet werden können, um Daten konform außerhalb des Europäischen Wirtschaftsraums zu übertragen. Microsoft hat die Standardvertragsklauseln über die [Bedingungen für Online-Dienste](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) in alle unsere Volumenlizenzverträge aufgenommen. Die Arbeitsgruppe des Artikels 29 hat festgestellt, dass die Umsetzung der Standardvertragsklauseln durch Microsoft konform ist. Und als der EU-US Privacy Shield verfügbar wurde, war Microsoft das erste Unternehmen, das sich zertifizieren ließ. Siehe [Microsofts Zertifizierung des Privacy Shield](https://www.privacyshield.gov/participant?id=a2zt0000000KzNaAAK&status=Active), und lesen Sie die [Bedingungen für Online-Dienste](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46). Der EU-US Privacy Shield hilft Kunden, die ihre Daten in die USA übertragen wollen, dies in einer Weise zu tun, die mit ihren Datenschutzverpflichtungen vereinbar ist.
+Microsoft verwendet seit langem die Standardvertragsklauseln (auch als Modellklauseln bekannt) als Grundlage für die Datenübertragung für seine Unternehmens-Online-Dienste. Die Standardvertragsklauseln sind von der Europäischen Kommission zur Verfügung gestellte Standardbedingungen, die verwendet werden können, um Daten konform außerhalb des Europäischen Wirtschaftsraums zu übertragen. Microsoft hat die Standardvertragsklauseln über die [Bedingungen für Online-Dienste](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) in alle unsere Volumenlizenzverträge aufgenommen. Die Arbeitsgruppe des Artikels 29 hat festgestellt, dass die Umsetzung der Standardvertragsklauseln durch Microsoft konform ist. Und als der EU-US Privacy Shield verfügbar wurde, war Microsoft das erste Unternehmen, das sich zertifizieren ließ. Siehe [Microsofts Zertifizierung des Privacy Shield](https://www.privacyshield.gov/participant?id=a2zt0000000KzNaAAK&status=Active), und lesen Sie die [Bedingungen für Online-Dienste](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46). Der EU-US Privacy Shield hilft Kunden, die ihre Daten in die USA übertragen wollen, dies in einer Weise zu tun, die mit ihren Datenschutzverpflichtungen vereinbar ist.
 
 **Was sind die anderen Microsoft Compliance-Angebote?**
 
@@ -219,12 +219,12 @@ Als globales Unternehmen mit Kunden in fast allen Ländern der Welt verfügt Mic
 
 Die DSGVO erlegt Unternehmen, die persönliche Daten erfassen und verarbeiten, zahlreiche Anforderungen auf, einschließlich einer Verpflichtung zur Einhaltung von sechs Schlüsselprinzipien:
 
-- *Transparenz*, *Fairness* und *Rechtmäßigkeit* in der Handhabung und Nutzung personenbezogener Daten. Sie müssen sich gegenüber Einzelpersonen darüber im Klaren sein, wie Sie personenbezogene Daten verwenden, und benötigen außerdem eine „gesetzliche Grundlage“ für die Verarbeitung dieser Daten.
-- Beschränkung der Verarbeitung personenbezogener Daten auf *festgelegte*, *ausdrückliche* und *rechtmäßige Zwecke*. Sie sind nicht in der Lage, personenbezogene Daten für Zwecke wiederzuverwenden oder weiterzugeben, die mit dem Zweck, für den die Daten ursprünglich gesammelt wurden, nicht „kompatibel“ sind.
+- *Transparenz* , *Fairness* und *Rechtmäßigkeit* in der Handhabung und Nutzung personenbezogener Daten. Sie müssen sich gegenüber Einzelpersonen darüber im Klaren sein, wie Sie personenbezogene Daten verwenden, und benötigen außerdem eine „gesetzliche Grundlage“ für die Verarbeitung dieser Daten.
+- Beschränkung der Verarbeitung personenbezogener Daten auf *festgelegte* , *ausdrückliche* und *rechtmäßige Zwecke*. Sie sind nicht in der Lage, personenbezogene Daten für Zwecke wiederzuverwenden oder weiterzugeben, die mit dem Zweck, für den die Daten ursprünglich gesammelt wurden, nicht „kompatibel“ sind.
 - *Die Minimierung der Sammlung und Speicherung von personenbezogenen Daten* auf das Maß, das für den beabsichtigten Zweck angemessen und relevant ist.
 - Gewährleistung der *Richtigkeit der personenbezogenen Daten* und Ermöglichung ihrer *Löschung oder Berichtigung*. Sie müssen Maßnahmen ergreifen, um sicherzustellen, dass die in Ihrem Besitz befindlichen persönlichen Daten korrekt sind und bei Fehlern korrigiert werden können.
 - *Begrenzen der Speicherung von personenbezogenen Daten*. Sie müssen sicherstellen, dass Sie personenbezogene Daten nur so lange aufbewahren, wie es für die Erreichung der Zwecke, für die Daten gesammelt wurden, erforderlich ist.
-- Gewährleistung von *Sicherheit*, *Integrität* und *Vertraulichkeit personenbezogener Daten*. Ihre Organisation muss Maßnahmen ergreifen, um personenbezogene Daten durch technische und organisatorische Sicherheitsmaßnahmen zu schützen.
+- Gewährleistung von *Sicherheit* , *Integrität* und *Vertraulichkeit personenbezogener Daten*. Ihre Organisation muss Maßnahmen ergreifen, um personenbezogene Daten durch technische und organisatorische Sicherheitsmaßnahmen zu schützen.
 
 Sie müssen die spezifischen Verpflichtungen Ihres Unternehmens gemäß DSGVO kennen und wissen, wie Sie diese einhalten. Microsoft unterstützt Sie auf Ihrem Weg zur DSGVO.
 
