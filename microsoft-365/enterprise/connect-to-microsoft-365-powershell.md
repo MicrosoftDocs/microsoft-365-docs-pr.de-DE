@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Stellen Sie eine Verbindung mit Ihrem Microsoft 365-Mandanten mithilfe von PowerShell für Microsoft 365 her, um Admin Center-Aufgaben über die Befehlszeile auszuführen.
-ms.openlocfilehash: d8263fd14d5eae58d3686f18056945a60158b421
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 33f9af45418ae8a1f126d2b321e7246201bd1f6e
+ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754304"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49002405"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>Verbinden mit Microsoft 365 über PowerShell
 
@@ -32,10 +32,10 @@ Mit PowerShell für Microsoft 365 können Sie Ihre Microsoft 365-Einstellungen
 
 Es gibt zwei Versionen des PowerShell-Moduls, mit denen Sie die Verbindung zu Microsoft 365 herstellen und Benutzerkonten, Gruppen und Lizenzen verwalten können:
 
-- Azure Active Directory PowerShell für Graph (dessen Cmdlets enthalten *AzureAD* in ihrem Namen)
-- Microsoft Azure Active Directory-Modul für Windows PowerShell (dessen Cmdlets enthalten *Sol* in ihrem Namen)
+- Azure Active Directory-PowerShell für Graph, dessen Cmdlets *AzureAD* in ihrem Namen enthalten
+- Microsoft Azure Active Directory-Modul für Windows PowerShell, dessen Cmdlets *MSol* in ihrem Namen enthalten
 
-Zurzeit ersetzt das Azure Active Directory PowerShell für Graph-Modul nicht vollständig die Funktionen des Microsoft Azure Active Directory-Moduls für Windows PowerShell-Modul für Benutzer-, Gruppen- und Lizenzverwaltung. In einigen Fällen müssen Sie beide Versionen verwenden. Sie können problemlos beide Versionen auf demselben Computer installieren.
+Zurzeit ersetzt das Modul „Azure Active Directory-PowerShell für Graph“ die Funktionen des Moduls „Microsoft Azure Active Directory-Modul für Windows PowerShell“ für Benutzer-, Gruppen- und Lizenzverwaltung nicht vollständig. In einigen Fällen müssen Sie beide Versionen verwenden. Sie können problemlos beide Versionen auf demselben Computer installieren.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
@@ -148,7 +148,7 @@ Wenn Sie keine Fehlermeldung erhalten, wurde die Verbindung hergestellt. Führen
   
 Wenn eine Fehlermeldung angezeigt wird, überprüfen Sie die folgenden Punkte:
   
-- **Ein häufig auftretendes Problem ist ein falsches Kennwort** . Führen Sie [Schritt 2](#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) erneut aus, und achten Sie dabei auf die korrekte Eingabe des Benutzernamens und des Kennworts.
+- **Ein häufig auftretendes Problem ist ein falsches Kennwort**. Führen Sie [Schritt 2](#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) erneut aus, und achten Sie dabei auf die korrekte Eingabe des Benutzernamens und des Kennworts.
     
 - **Das Microsoft Azure Active Directory-Modul für Windows PowerShell setzt voraus, dass Microsoft .NET Framework 3.5.* x* auf Ihrem Computer aktiviert ist**. Es ist wahrscheinlich, dass auf Ihrem Computer eine neuere Version installiert ist (z. B. Version 4 oder 4.5.* x*). Die Abwärtskompatibilität mit älteren Versionen von .NET Framework kann jedoch aktiviert oder deaktiviert werden. Weitere Informationen finden Sie in den folgenden Artikeln:
     

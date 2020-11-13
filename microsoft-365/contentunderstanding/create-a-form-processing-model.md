@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Erstellen Sie ein Formularverarbeitungsmodell in Microsoft SharePoint Syntex.
-ms.openlocfilehash: 784a3e0a918424e599e87852d2a36b613867f62e
-ms.sourcegitcommit: 7e8151ff74cb1cfc0dd59fadcac423c338415d77
+ms.openlocfilehash: 7edea0d36c85fba7bda31effdcdff08cd59a1174
+ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48390185"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49002429"
 ---
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Erstellen eines Formularverarbeitungsmodells in Microsoft SharePoint Syntex
 
@@ -36,19 +36,19 @@ Die Erstellung eines Formularverarbeitungsmodells umfasst folgende Schritte:
 
 ## <a name="requirements"></a>Anforderungen
 
-Formularverarbeitungsmodelle können nur in SharePoint-Dokumentbibliotheken mit entsprechend aktivierter Funktion erstellt werden. Wenn die Formularverarbeitung aktiviert ist, wird in Ihrer Dokumentbibliothek die **AI Builder**-Option **"Formularverarbeitungsmodell erstellen"** im Menü **Automatisieren** angezeigt.  Wenn die Verarbeitung in Ihrer Dokumentbibliothek aktiviert sein muss, müssen Sie sich hierfür an Ihren SharePoint-Administrator wenden.
+Formularverarbeitungsmodelle können nur in SharePoint-Dokumentbibliotheken mit entsprechend aktivierter Funktion erstellt werden. Wenn die Formularverarbeitung aktiviert ist, wird in Ihrer Dokumentbibliothek die **AI Builder** -Option **"Formularverarbeitungsmodell erstellen"** im Menü **Automatisieren** angezeigt.  Wenn die Verarbeitung in Ihrer Dokumentbibliothek aktiviert sein muss, müssen Sie sich hierfür an Ihren SharePoint-Administrator wenden.
 
- ![Erstellen eines AI Builder-Modells](../media/content-understanding/create-ai-builder-model.png)</br>
+ ![Erstellen eines AI-Generator-Modells](../media/content-understanding/create-ai-builder-model.png)</br>
 
 ## <a name="step-1-create-a-form-processing-model"></a>Schritt 1: Erstellen eines Formularverarbeitungsmodells
 
 Der erste Schritt zum Erstellen eines Formularverarbeitungsmodells besteht darin, es zu benennen, den neuen Inhaltstyp zu definieren und eine neue Dokumentbibliotheksansicht dafür zu erstellen.
 
-1. Wählen Sie in der Dokumentbibliothek das Menü **Automatisieren**, dann **AI Builder** und anschließend **Formularverarbeitungsmodell erstellen** aus.
+1. Wählen Sie in der Dokumentbibliothek das Menü **Automatisieren** , dann **AI Builder** und anschließend **Formularverarbeitungsmodell erstellen** aus.
 
     ![Ein Modell erstellen](../media/content-understanding/create-ai-builder-model.png)</br>
 
-2. Geben Sie im Bereich **Neues Formularverarbeitungsmodell** im Feld  **Name** einen Namen für das Modell ein (z. B. *Aufträge*).
+2. Geben Sie im Bereich **Neues Formularverarbeitungsmodell** im Feld  **Name** einen Namen für das Modell ein (z. B. *Aufträge* ).
 
     ![Neues Formularverarbeitungsmodell](../media/content-understanding/new-form-model.png)</br> 
 
@@ -69,7 +69,7 @@ Nachdem Sie Ihr neues Formularverarbeitungsmodell erstellt haben, öffnet Ihr Br
 
    ![Power Apps AI Builder](../media/content-understanding/powerapps.png)</br> 
  
-1. Wählen Sie **Dokumente hinzufügen** aus, um mit dem Hinzufügen von analysierten Beispieldokumenten zu beginnen, um die benannten extrahierbaren Wertpaare zu ermitteln. Sie können dann **Von lokalem Speicher hochladen**, **SharePoint** oder **Azure-BLOB-Speicher** auswählen. Für das Trainieren müssen Sie mindestens fünf Dateien verwenden.
+1. Wählen Sie **Dokumente hinzufügen** aus, um mit dem Hinzufügen von analysierten Beispieldokumenten zu beginnen, um die benannten extrahierbaren Wertpaare zu ermitteln. Sie können dann **Von lokalem Speicher hochladen** , **SharePoint** oder **Azure-BLOB-Speicher** auswählen. Für das Trainieren müssen Sie mindestens fünf Dateien verwenden.
 
 2. Wählen Sie nach dem Hinzufügen von Dateien **Analysieren** aus, um nach Informationen zu suchen, die alle Dateien aufweisen. Diese Analyse kann einige Minuten dauern.</br> 
  
@@ -87,7 +87,7 @@ Nach der Analyse der Dokumente auf Felder hin werden die gefundenen Felder angez
 
     ![Seite "Felder auswählen"](../media/content-understanding/select-fields-page.png)</br> 
 
-2. Wählen Sie die Felder aus, die gespeichert werden sollen, und aktivieren Sie das Kontrollkästchen, um Ihre Auswahl zu bestätigen. Wählen Sie z. B. im Auftragsmodell die Felder *Datum*, *Auftrag* und *Gesamtbetrag* aus.  Sie können ein ausgewähltes Feld auch umbenennen. </br>
+2. Wählen Sie die Felder aus, die gespeichert werden sollen, und aktivieren Sie das Kontrollkästchen, um Ihre Auswahl zu bestätigen. Wählen Sie z. B. im Auftragsmodell die Felder *Datum* , *Auftrag* und *Gesamtbetrag* aus.  Sie können ein ausgewähltes Feld auch umbenennen. </br>
 
     ![Auftragsnummer auswählen](../media/content-understanding/po.png)</br> 
 
