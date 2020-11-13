@@ -415,8 +415,6 @@
           href: manage-microsoft-365-groups.md
         - name: Governance
           href: manage-microsoft-365-identity-governance.md
-        - name: Wiederherstellen gelöschter Elemente im Postfach eines Benutzers
-          href: recover-deleted-items-in-a-mailbox.md
         - name: Verzeichnissynchronisierung
           items:
             - name: Anzeigen des Status
@@ -604,7 +602,7 @@
                   href: disable-access-to-services-while-assigning-user-licenses.md
         - name: Gruppen
           items:
-            - name: Verwalten von Gruppenmitgliedschaften
+            - name: Verwalten von Sicherheitsgruppenmitgliedschaften
               href: maintain-group-membership-with-microsoft-365-powershell.md
             - name: Verwalten von Microsoft 365-Gruppen
               href: manage-microsoft-365-groups-with-powershell.md
