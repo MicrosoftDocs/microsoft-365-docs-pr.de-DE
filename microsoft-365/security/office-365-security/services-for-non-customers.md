@@ -16,12 +16,12 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: Damit Benutzer das Vertrauen in der Verwendung von E-Mails nicht verlieren, hat Microsoft verschiedene Richtlinien und Technologien zum Schutz von Benutzern eingeführt.
-ms.openlocfilehash: e9389d52ee1d6c1c0bbab8630778749a6ed6005f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 478f94d2ed1a03253168486d48fb2b2df57a6a5e
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199577"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49021025"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Dienste für nicht-Kunden, die e-Mails an Microsoft 365 senden
 
@@ -38,7 +38,7 @@ Diese Übersicht enthält Informationen zu Vorteilen, die wir Ihrer Organisation
 
 |Dienst|Vorteile|
 |---|---|
-|Onlinehilfeinhalt|Beschreibung: <br/> Ausgangspunkt für alle Fragen im Zusammenhang mit der Bereitstellung von Kommunikation für EoP-Benutzer. <br/><br/> Enthält eine einfache Onlinedokumentation mit unseren Richtlinien und Anforderungen. <br/><br/> Eine Übersicht über die Junk-e-Mail-Filter und Authentifizierungstechnologien, die von Microsoft verwendet werden.|
+|Onlinehilfeinhalt|Beschreibung: <ul><li>Ausgangspunkt für alle Fragen im Zusammenhang mit der Bereitstellung von Kommunikation für EoP-Benutzer.</li><li>Enthält eine einfache Onlinedokumentation mit unseren Richtlinien und Anforderungen.</li><li>Eine Übersicht über die Junk-e-Mail-Filter und Authentifizierungstechnologien, die von Microsoft verwendet werden.</li><ul>|
 |[Microsoft-Support](#microsoft-support)|Stellt Selbsthilfe und Weiterleitungssupport für Zustellungsprobleme bereit.|
 |[Anti-Spam-IP-Delist-Portal](#anti-spam-ip-delist-portal)|Ein Tool zum Übermitteln von Anforderungen zum Entfernen von IP-Adressen aus einer Liste. Vor dem Absenden dieser Anforderung hat der Absender die Verantwortung, sicherzustellen, dass alle weiteren E-Mails, die von der fraglichen IP-Adresse ausgehen, weder beleidigend noch böswillig sind.|
 |[Missbrauchs- und Spammeldung für Junk-E-Mails aus Exchange Online](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|Verhindert, dass Spam und andere unerwünschte e-Mails von Exchange Online gesendet und das Internet und Ihr e-Mail-System überladen werden.|

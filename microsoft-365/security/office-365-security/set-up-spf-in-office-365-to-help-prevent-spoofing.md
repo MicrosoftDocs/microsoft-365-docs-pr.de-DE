@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie ein DNS-Eintrag (Domain Name Service) für die Verwendung von SPF (Sender Policy Framework) mit Ihrer benutzerdefinierten Domäne in Office 365 aktualisiert wird.
-ms.openlocfilehash: 20943f38dab436b48ff734753e951db4342d24ac
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: ce8a982b875632ad58b34ae240c02b507c4656fe
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350687"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49021061"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Einrichten von SPF zum Verhindern von Spoofing
 
@@ -105,7 +105,7 @@ Es ist wichtig zu beachten, dass Sie für jede Subdomäne einen separaten Eintra
 Ein zusätzlicher Wildcard-SPF-Eintrag (`*.`) ist für jede Domäne und Subdomäne erforderlich, um Angreifer daran zu hindern, E-Mails zu versenden, die vorgeben, von nicht existierenden Subdomänen zu stammen. Zum Beispiel:
 
 ```text
-*.subdomain.contoso.com. IN TXT "v=spf1 –all"
+*.subdomain.contoso.com. IN TXT "v=spf1 -all"
 ```
 
 ## <a name="more-information-about-spf"></a>Weitere Informationen zu SPF

@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft Defender für Office 365 umfasst sichere Anlagen, sichere Links, erweiterte Antiphishing-Tools, Berichterstellungstools und Threat Intelligence-Funktionen.
-ms.openlocfilehash: a822c3ab8e065d9349172731e2081799853be637
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: c102948ff66a6362a1adb60734629b79e7eb7ad5
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845780"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49021109"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender für Office 365
 
@@ -141,8 +141,8 @@ Für den Zugriff auf Microsoft Defender für Office 365-Features im Security & C
 |Rolle oder Rollengruppe|Ressourcen mit mehr Informationen|
 |---|---|
 |Globaler Administrator (kann in Azure Active Directory oder im Security & Compliance Center zugewiesen werden.)|[Informationen zu Microsoft 365-Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
-|Sicherheitsadministrator (kann in Azure Active Directory oder im Security & Compliance Center zugewiesen werden.)|[Administratorrollenberechtigungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br><br/>[Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)|
-|Exchange Online-Organisationsverwaltung (wird in Exchange Online zugewiesen)|[Berechtigungen in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)<br><br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
+|Sicherheitsadministrator (kann in Azure Active Directory oder im Security & Compliance Center zugewiesen werden.)|[Administratorrollenberechtigungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <p> [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)|
+|Exchange Online-Organisationsverwaltung (wird in Exchange Online zugewiesen)|[Berechtigungen in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
 |Suchen und Löschen (wird nur im Security & Compliance Center zugewiesen)|[Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)|
 
 Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).

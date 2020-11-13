@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b77313a18a5744549e492de991e282bc34dbb6da
-ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
+ms.openlocfilehash: 0459de8974fe6bae98e6984fd7dc65afeb04b4e7
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49002417"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49021085"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Lösen von Problemen, die durch das Tool zur Bereitschaftsbewertung gefunden wurden
 
@@ -29,6 +29,8 @@ Für jede Überprüfung meldet das Tool eine von vier möglichen Ergebnissen:
 |Fehler | Die von Ihnen verwendete Azure Active Director (AD)-Rolle verfügt nicht über ausreichende Berechtigungen zum Ausführen dieser Überprüfung. |
 
 ## <a name="microsoft-intune-settings"></a>Microsoft InTune-Einstellungen
+
+Sie können auf InTune-Einstellungen im Microsoft Endpoint Manager [Admin Center](https://endpoint.microsoft.com)zugreifen.
 
 ### <a name="autopilot-deployment-profile"></a>Autopilot-Bereitstellungsprofil
 
@@ -247,6 +249,7 @@ Stellen Sie sicher, dass alle Update Ring-Richtlinien die **modernen Arbeitsplat
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory-Einstellungen
 
+Sie können auf Azure Active Directory-Einstellungen im [Azure-Portal](https://portal.azure.com)zugreifen.
 
 ### <a name="ad-hoc-subscriptions"></a>Ad-hoc-Abonnements
 
@@ -326,7 +329,7 @@ Microsoft Managed Desktop-Benutzer verfügen nicht über lokale Administratorrec
 
 ### <a name="onedrive"></a>OneDrive
 
-Die Einstellung **Synchronisierung nur auf PCs zulassen, die mit bestimmten Domänen verbunden sind,** wird mit dem Microsoft Managed Desktop in Konflikt stehen.
+Die Einstellung **Synchronisierung nur auf PCs zulassen, die mit bestimmten Domänen verbunden sind,** wird mit dem Microsoft Managed Desktop in Konflikt stehen. Sie können auf OneDrive-Einstellungen im OneDrive [Admin Center](https://admin.onedrive.com)zugreifen.
 
 **Empfehlung**
 
