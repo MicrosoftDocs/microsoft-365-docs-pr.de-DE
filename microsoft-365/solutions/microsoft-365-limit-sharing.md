@@ -11,6 +11,7 @@ ms.collection:
 - M365-collaboration
 - m365solution-3tiersprotection
 - m365solution-securecollab
+- m365initiative-externalcollab
 search.appverid:
 - SPO160
 - MET150
@@ -18,26 +19,26 @@ f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: Erfahren Sie mehr über die Optionen zum Einschränken oder Deaktivieren der Freigabe in Microsoft 365.
-ms.openlocfilehash: 7ed9cc499e16de835c6ba96eb19bcc28a144b68b
-ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
+ms.openlocfilehash: 504d2b5dd72aead266697d273395e371ad6f5846
+ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48651418"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030041"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Einschränken der Freigabe in Microsoft 365
 
 Sie können die interne Freigabe zwar nicht vollständig deaktivieren oder die Schaltfläche "Teilen" von Websites entfernen, aber es gibt eine Vielzahl von Möglichkeiten, die Freigabe in Microsoft 365 zu beschränken, um den Anforderungen Ihrer Organisation gerecht zu werden.
 
-Die Methoden zum Freigeben von Dateien sind in der nachstehenden Tabelle aufgeführt. Klicken Sie auf den Link in der Spalte **Freigabemethode**, um ausführliche Informationen zu erhalten.
+Die Methoden zum Freigeben von Dateien sind in der nachstehenden Tabelle aufgeführt. Klicken Sie auf den Link in der Spalte **Freigabemethode** , um ausführliche Informationen zu erhalten.
 
 |Freigabemethode|Beschreibung|Optionen für das Beschränken|
 |:-------------|:----------|:-------------|
 |[Microsoft 365-Gruppe oder -Team](#microsoft-365-group-or-team)|Personen, denen der Zugriff auf ein Microsoft Teams-Team oder eine Microsoft 365-Gruppe gewährt wird, können auf Dateien auf der zugehörigen SharePoint-Website zugreifen.|Bei privaten Gruppen oder Teams gehen Freigabeeinladungen, dem Team beizutreten, zur Genehmigung an den Besitzer der Gruppe oder des Teams. Administratoren können den Gastzugang deaktivieren oder Vertraulichkeitsbezeichnungen verwenden, um den Zugriff von Personen von außerhalb der Organisation zu verhindern.|
 |[SharePoint-Website](#sharepoint-site)|Personen können als Besitzer, Mitglied oder Besucher Zugriff auf eine SharePoint-Website erhalten und diese Zugriffsebene gilt auch für die Dateien auf der Website.|Die Websiteberechtigungen können eingeschränkt werden, sodass nur Websitebesitzer die Website freigeben können. Administratoren können eine Website als schreibgeschützt festlegen oder den Zugriff vollständig blockieren.|
-|[Freigeben für bestimmte Personen](#sharing-with-specific-people)|Websitemitglieder und Personen mit Bearbeitungsberechtigungen können direkte Berechtigungen für Dateien und Ordner erteilen oder diese über *Bestimmte Personen*-Links freigeben.|Die Websiteberechtigungen können eingeschränkt werden, sodass nur Websitebesitzer Dateien und Ordner freigeben können. In diesem Fall gehen die Freigabe des direkten Zugriffs und die Freigabe von *Bestimmte Personen*-Links durch Websitemitglieder an den Websitebesitzer zur Genehmigung.|
+|[Freigeben für bestimmte Personen](#sharing-with-specific-people)|Websitemitglieder und Personen mit Bearbeitungsberechtigungen können direkte Berechtigungen für Dateien und Ordner erteilen oder diese über *Bestimmte Personen* -Links freigeben.|Die Websiteberechtigungen können eingeschränkt werden, sodass nur Websitebesitzer Dateien und Ordner freigeben können. In diesem Fall gehen die Freigabe des direkten Zugriffs und die Freigabe von *Bestimmte Personen* -Links durch Websitemitglieder an den Websitebesitzer zur Genehmigung.|
 |[SharePoint-Gastfreigabe](#sharepoint-guest-sharing)|Besitzer und Mitglieder von SharePoint-Websites können Dateien und Ordner für Personen außerhalb der Organisation freigeben.|Die Gastfreigabe kann für die gesamte Organisation oder für einzelne Websites deaktiviert werden.|
-|[*Personen in Ihrer Organisation*-Freigabelinks](#people-in-your-organization-sharing-links)|Besitzer und Mitglieder von SharePoint-Websites können Dateien unter Verwendung von *Personen in Ihrer Organisation*-Links freigeben, die für jeden innerhalb der Organisation funktionieren.|*Personen in Ihrer Organisation*-Links können auf Websiteebene deaktiviert werden.|
+|[*Personen in Ihrer Organisation* -Freigabelinks](#people-in-your-organization-sharing-links)|Besitzer und Mitglieder von SharePoint-Websites können Dateien unter Verwendung von *Personen in Ihrer Organisation* -Links freigeben, die für jeden innerhalb der Organisation funktionieren.|*Personen in Ihrer Organisation* -Links können auf Websiteebene deaktiviert werden.|
 |[Erstellen von Websites, Gruppen und Teams](#create-sites-groups-and-teams)|Standardmäßig können Benutzer neue Websites, Gruppen und Teams erstellen, für die sie Inhalte freigeben können.|Administratoren können einschränken, wer Websites, Gruppen und Teams erstellen kann.|
 |[E-Mail](#email)|Personen mit Zugriff auf eine Datei können diese per E-Mail an andere Personen versenden.|Administratoren können Dateien mithilfe von Vertraulichkeitsbezeichnungen verschlüsseln, um zu verhindern, dass sie an unbefugte Personen weitergegeben werden.|
 |[Download oder Dateikopie](#download-or-file-copy)|Personen mit Zugriff auf eine Datei können diese herunterladen oder kopieren und sie mit anderen Personen außerhalb von Microsoft 365 teilen.|Administratoren können Dateien mithilfe von Vertraulichkeitsbezeichnungen verschlüsseln, um zu verhindern, dass sie an unbefugte Personen weitergegeben werden.|
@@ -57,7 +58,7 @@ Wenn Sie die Freigabe in einer Microsoft 365-Gruppe oder einem Microsoft Teams-T
 Wenn Sie den Gastzugriff in Teams verhindern möchten, können Sie die Gastfreigabe im Teams Admin Center deaktivieren.
 
 So deaktivieren Sie die Gastfreigabe in Teams
-1. Erweitern Sie im Teams Admin Center **Organisationsweite Einstellungen**, und klicken Sie dann auf **Gastzugriff**.
+1. Erweitern Sie im Teams Admin Center **Organisationsweite Einstellungen** , und klicken Sie dann auf **Gastzugriff**.
 2. Deaktivieren Sie **Gastzugriff in Teams ermöglichen**.
 3. Klicken Sie auf **Speichern**.
 
@@ -79,7 +80,7 @@ Sie können die Gastfreigabe auf Benutzer aus bestimmten Domänen beschränken, 
 So erlauben Sie Freigabeeinladungen nur aus bestimmten Domänen
 1. Klicken Sie in Azure Active Directory auf der Seite Übersicht auf **Organisationsbeziehungen**.
 2. Klicken Sie auf **Einstellungen**.
-3. Wählen Sie unter **Einschränkungen für die Zusammenarbeit**die Option **Einladungen für die angegebenen Domänen verweigern** oder **Einladungen nur für die angegebenen Domänen zulassen** aus, und geben Sie dann die gewünschten Domänen ein.
+3. Wählen Sie unter **Einschränkungen für die Zusammenarbeit** die Option **Einladungen für die angegebenen Domänen verweigern** oder **Einladungen nur für die angegebenen Domänen zulassen** aus, und geben Sie dann die gewünschten Domänen ein.
 4. Klicken Sie auf **Speichern**.
 
     ![Screenshot der Einstellungen für die Einschränkungen der Zusammenarbeit in Azure Active Directory](../media/azure-ad-allow-only-specified-domains.png)
@@ -101,7 +102,7 @@ Durch Deaktivieren von Zugriffsanforderungen können Sie verhindern, dass Benutz
 So deaktivieren Sie Zugriffsanforderungen:
 1. Klicken Sie in der Website auf das Zahnradsymbol und anschließend auf **Websiteberechtigungen**.
 2. Klicken Sie unter **Freigabeeinstellungen** auf **Freigabeeinstellungen ändern**.
-3. Deaktivieren Sie **Zugriffsanforderungen zulassen**, und klicken Sie dann auf **Speichern**.
+3. Deaktivieren Sie **Zugriffsanforderungen zulassen** , und klicken Sie dann auf **Speichern**.
 
 Sie können die Freigabe der Website auf bestimmte Domänen beschränken, indem Sie Domänen für die Website zulassen oder blockieren.
 
@@ -125,7 +126,7 @@ Dieses Vorgehen wird zwar nicht empfohlen, Sie können aber [mithilfe von ShareP
 
 ## <a name="sharing-with-specific-people"></a>Freigeben für bestimmte Personen
 
-Wenn Sie die Freigabe einer Website oder ihrer Inhalte einschränken möchten, können Sie die Website so konfigurieren, dass nur Websitebesitzer Dateien, Ordner und die Website freigeben können. Wenn dies konfiguriert ist, gehen die Versuche von Websitemitgliedern, Dateien oder Ordner über *Bestimmte Personen*-Links freizugeben, an den Websitebesitzer zur Genehmigung.
+Wenn Sie die Freigabe einer Website oder ihrer Inhalte einschränken möchten, können Sie die Website so konfigurieren, dass nur Websitebesitzer Dateien, Ordner und die Website freigeben können. Wenn dies konfiguriert ist, gehen die Versuche von Websitemitgliedern, Dateien oder Ordner über *Bestimmte Personen* -Links freizugeben, an den Websitebesitzer zur Genehmigung.
 
 So beschränken Sie die Freigabe von Websites, Dateien und Ordnern auf Besitzer
 1. Klicken Sie in der Website auf das Zahnradsymbol und anschließend auf **Websiteberechtigungen**.
@@ -155,16 +156,16 @@ So deaktivieren Sie die Gastfreigabe für eine Website
 
     ![Screenshot der SharePoint-Freigabeeinstellungen auf Websiteebene, die auf “Nur Personen in Ihrer Organisation” festgelegt sind](../media/sharepoint-site-external-sharing-settings-off.png)
 
-Wenn Sie die Freigabe für Personen außerhalb Ihrer Organisation erlauben, aber sicherstellen möchten, dass sich alle authentifizieren, können Sie *Jeder*-Links (anonyme Freigabe) für die gesamte Organisation oder für eine einzelne Website deaktivieren.
+Wenn Sie die Freigabe für Personen außerhalb Ihrer Organisation erlauben, aber sicherstellen möchten, dass sich alle authentifizieren, können Sie *Jeder* -Links (anonyme Freigabe) für die gesamte Organisation oder für eine einzelne Website deaktivieren.
 
-So deaktivieren Sie *Jeder*-Links auf Organisationsebene
+So deaktivieren Sie *Jeder* -Links auf Organisationsebene
 1. Klicken Sie im SharePoint Admin Center unter **Richtlinien** auf **Freigabe**.
 2. Ziehen Sie unter **Externe Freigabe** den SharePoint-Schieberegler nach unten auf **Neue und vorhandene Gäste**.
 3. Klicken Sie auf **Speichern**.
 
     ![Screenshot der SharePoint-Freigabeeinstellungen auf Organisationsebene, die auf “Neue und vorhandene Gäste” festgelegt sind](../media/sharepoint-guest-sharing-new-existing-guests.png)
 
-So deaktivieren Sie *Jeder*-Links für eine Website
+So deaktivieren Sie *Jeder* -Links für eine Website
 1. Klicken Sie im SharePoint Admin Center unter **Websites** auf **Aktive Websites**.
 2. Klicken Sie auf die Website, die Sie konfigurieren möchten.
 3. Klicken Sie auf der Registerkarte **Richtlinien** unter **Externe Freigabe** auf **Bearbeiten**.
@@ -172,9 +173,9 @@ So deaktivieren Sie *Jeder*-Links für eine Website
 
     ![Screenshot der SharePoint-Freigabeeinstellungen auf Websiteebene, die auf “Neue und vorhandene” festgelegt sind](../media/sharepoint-site-external-sharing-settings-new-existing-guests.png)
 
-## <a name="people-in-your-organization-sharing-links"></a>*Personen in Ihrer Organisation*-Freigabelinks
+## <a name="people-in-your-organization-sharing-links"></a>*Personen in Ihrer Organisation* -Freigabelinks
 
-Standardmäßig können die Mitglieder einer Website Dateien und Ordner für andere Personen in Ihrer Organisation, über einen *Personen in Ihrer Organisation*-Link freigeben. Sie können *Personen in Ihrer Organisation*-Links unter Verwendung von PowerShell deaktivieren:
+Standardmäßig können die Mitglieder einer Website Dateien und Ordner für andere Personen in Ihrer Organisation, über einen *Personen in Ihrer Organisation* -Link freigeben. Sie können *Personen in Ihrer Organisation* -Links unter Verwendung von PowerShell deaktivieren:
 
 `Set-SPOSite -Identity <site> -DisableCompanyWideSharingLinks`
 

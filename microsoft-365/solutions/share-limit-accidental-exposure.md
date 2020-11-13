@@ -11,16 +11,17 @@ ms.collection:
 - M365-collaboration
 - m365solution-3tiersprotection
 - m365solution-securecollab
+- m365initiative-externalcollab
 ms.custom: ''
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Erfahren Sie, wie Sie die versehentliche Exposition von Informationen bei der Freigabe von Dateien für Personen außerhalb der Organisation begrenzen.
-ms.openlocfilehash: 6250103e36900da76a4529a73b78f14862ab86ef
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: 430c00d46fa3801d0869b05a651fadd3bf5dea28
+ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769006"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49029969"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>Begrenzen der versehentlichen Exposition von Dateien bei deren Freigabe für Personen außerhalb der Organisation
 
@@ -41,22 +42,22 @@ Wenn Sie die *Jeder* -Links deaktivieren, können Benutzer Elemente weiterhin mi
 Je nach Ihren Anforderungen können Sie *Jeder* -Links für bestimmte Sites oder für Ihre gesamte Organisation deaktivieren.
 
 So deaktivieren Sie *Jeder* -Links für Ihre Organisation
-1. Klicken Sie im SharePoint Admin Center links in der Navigation auf **Freigabe** .
+1. Klicken Sie im SharePoint Admin Center links in der Navigation auf **Freigabe**.
 2. Legen Sie für die SharePoint-Einstellungen für die externe Freigabe **Neue und vorhandene Gäste** fest.
 
    ![Screenshot der externen SharePoint-Freigabeeinstellungen auf Organisationsebene](../media/sharepoint-organization-external-sharing-controls-new-users.png)
 
-3. Klicken Sie auf **Speichern** .
+3. Klicken Sie auf **Speichern**.
 
 So deaktivieren Sie *Jeder* -Links für eine Site
-1. Erweitern Sie im SharePoint Admin Center links in der Navigation **Sites** und klicken Sie auf **Aktive Sites** .
+1. Erweitern Sie im SharePoint Admin Center links in der Navigation **Sites** und klicken Sie auf **Aktive Sites**.
 2. Wählen Sie die Website aus, die Sie konfigurieren möchten.
-3. Klicken Sie im Menüband auf **Freigabe** . 
+3. Klicken Sie im Menüband auf **Freigabe**. 
 4. Vergewissern Sie sich, dass die Freigabe auf **Neue und vorhandene Gäste** festgelegt ist.
 
    ![Screenshot der externen SharePoint-Freigabeeinstellungen auf Websiteebene](../media/sharepoint-site-external-sharing-settings.png)
 
-5. Wenn Sie Änderungen vorgenommen haben, klicken Sie auf **Speichern** .
+5. Wenn Sie Änderungen vorgenommen haben, klicken Sie auf **Speichern**.
 
 ## <a name="domain-filtering"></a>Domänenfilter
 
@@ -69,14 +70,14 @@ Mit einer Verweigerungsliste können Sie eine Liste der Domänen festlegen, aus 
 Die Zulassungs- und Verweigerungslisten wirken sich nur auf die Freigabe für Gäste aus. Benutzer können weiterhin für Personen aus verbotenen Domänen freigeben, indem sie *Jeder* -Links verwenden, wenn Sie diese nicht deaktiviert haben. Für optimale Ergebnisse in Bezug auf die Zulassungs- und Ablehnungslisten für Domänen, ziehen Sie die Deaktivierung von *Jeder* -Links wie oben beschrieben in Betracht.
 
 So richten Sie eine Zulassungs- oder Ablehnungsliste ein
-1. Klicken Sie im SharePoint Admin Center links in der Navigation auf **Freigabe** .
-2. Aktivieren Sie unter **Erweiterte Einstellungen für externe Freigabe** das Kontrollkästchen **Externe Freigabe nach Domäne einschränken** .
-3. Klicken Sie auf **Domänen hinzufügen** .
-4. Wählen Sie aus, ob Domänen blockiert werden sollen, geben Sie die Domänen ein, und klicken Sie auf **OK** .
+1. Klicken Sie im SharePoint Admin Center links in der Navigation auf **Freigabe**.
+2. Aktivieren Sie unter **Erweiterte Einstellungen für externe Freigabe** das Kontrollkästchen **Externe Freigabe nach Domäne einschränken**.
+3. Klicken Sie auf **Domänen hinzufügen**.
+4. Wählen Sie aus, ob Domänen blockiert werden sollen, geben Sie die Domänen ein, und klicken Sie auf **OK**.
 
    ![Screenshot der SharePoint-Einstellung "Einschränken der externen Freigabe mithilfe von Domänen"](../media/sharepoint-sharing-block-domain.png)
 
-5. Klicken Sie auf **Speichern** .
+5. Klicken Sie auf **Speichern**.
 
 Wenn Sie die Freigabe mithilfe von Domänen auf einer höheren Ebene als SharePoint und OneDrive einschränken möchten, [lassen Sie Einladungen in Azure Active Directory für B2B-Benutzer aus bestimmten Organisationen zu oder blockieren Sie sie](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list). (Sie müssen die [SharePoint- und OneDrive-Integration mit Azure AD B2B Preview](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) konfigurieren, damit diese Einstellungen für SharePoint und OneDrive wirksam sind.)
 
@@ -85,8 +86,8 @@ Wenn Sie die Freigabe mithilfe von Domänen auf einer höheren Ebene als SharePo
 Sie können die Freigabe von Dateien, Ordnern und Websites für Personen außerhalb Ihrer Organisation auf Mitglieder einer bestimmten Sicherheitsgruppe einschränken. Dies ist nützlich, wenn Sie die externe Freigabe aktivieren, dafür aber einen Genehmigungsworkflow oder einem Anforderungsprozess festlegen möchten. Alternativ dazu können Sie von Ihren Benutzern verlangen, dass sie einen Schulungskurs absolvieren, bevor sie der Sicherheitsgruppe hinzugefügt werden und ihnen die externe Freigage erlaubt wird.
 
 So schränken Sie die externe Freigabe auf Mitglieder einer Sicherheitsgruppe ein
-1. Klicken Sie im [SharePoint Admin Center](https://admin.microsoft.com/sharepoint) links in der Navigation unter **Richtlinien** auf **Freigabe** .
-2. Erweitern Sie **Weitere Einstellungen für die externe Freigabe** unter **Externe Freigabe** .
+1. Klicken Sie im [SharePoint Admin Center](https://admin.microsoft.com/sharepoint) links in der Navigation unter **Richtlinien** auf **Freigabe**.
+2. Erweitern Sie **Weitere Einstellungen für die externe Freigabe** unter **Externe Freigabe**.
 
 3. Wählen Sie **Ausschließlich Benutzern in bestimmten Sicherheitsgruppen die externe Freigabe erlauben** und dann **Sicherheitsgruppen verwalten** aus.
 
@@ -99,7 +100,7 @@ So schränken Sie die externe Freigabe auf Mitglieder einer Sicherheitsgruppe ei
     - **Nur authentifizierte Gäste** (Standard)
     - **Jeder**
 
-6. Klicken Sie auf **Speichern** .
+6. Klicken Sie auf **Speichern**.
 
 Dies wirkt sich auf Dateien, Ordner und Sites, aber nicht auf Microsoft 365-Gruppen oder -Teams aus. Wenn Mitglieder Gäste zu einer privaten Microsoft 365-Gruppe oder einem privaten Team in Microsoft Teams einladen, wird die Einladung zur Genehmigung an den Gruppen- oder Teambesitzer gesendet.
 

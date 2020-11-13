@@ -11,16 +11,17 @@ ms.collection:
 - M365-collaboration
 - m365solution-3tiersprotection
 - m365solution-securecollab
+- m365initiative-externalcollab
 ms.custom: ''
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Hier erfahren Sie, wie Sie eine B2B-Extranet-Website oder ein Team mit verwalteten Gastbenutzern aus einer Partnerorganisation erstellen.
-ms.openlocfilehash: 83252241833f3dfe663cc70eae28a5df1214cce0
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: b052598f86072776f69e538c70a6bd56d79c3f81
+ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949384"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030053"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>Erstellen eines B2B-Extranets mit verwalteten Gästen
 
@@ -55,7 +56,7 @@ So fügen Sie eine verbundene Organisation hinzu
 5. Geben Sie einen Namen und eine Beschreibung für die Organisation ein, und klicken Sie dann auf **Weiter: Verzeichnis + Domäne**.
 6. Klicken Sie auf **Verzeichnis + Domäne hinzufügen**.
 7. Geben Sie die Domäne für die Organisation ein, mit der Sie eine Verbindung herstellen möchten, und klicken Sie dann auf **Hinzufügen**.
-8. Klicken Sie auf **verbinden**, und klicken Sie dann auf **Weiter: Sponsoren**.
+8. Klicken Sie auf **verbinden** , und klicken Sie dann auf **Weiter: Sponsoren**.
 9. Hinzufügen von Personen aus Ihrer Organisation oder der Organisation, der Sie eine Verbindung herstellen möchten, für die Sie den Zugriff für Gastbenutzer genehmigen möchten.
 10. Klicken Sie auf **Weiter: Review + Create**.
 11. Überprüfen Sie die Einstellungen, die Sie ausgewählt haben, und klicken Sie dann auf **Erstellen**.
@@ -70,7 +71,7 @@ So erstellen Sie einen Katalog
 1. Klicken Sie in [Azure Active Directory](https://aad.portal.azure.com)auf **Identity Governance**.
 2. Klicken Sie auf **Kataloge**.
 3. Klicken Sie auf **neuer Katalog**.
-4. Geben Sie einen Namen und eine Beschreibung für den Katalog ein, und stellen Sie sicher, dass **für externe Benutzer** **aktiviert** und aktiviert beide auf **Ja**festgelegt sind.
+4. Geben Sie einen Namen und eine Beschreibung für den Katalog ein, und stellen Sie sicher, dass **für externe Benutzer** **aktiviert** und aktiviert beide auf **Ja** festgelegt sind.
 5. Klicken Sie auf **Erstellen**.
 
    ![Screenshot der Seite "Kataloge" in Azure Active Directory Identity Governance](../media/identity-governance-catalogs.png)
@@ -78,7 +79,7 @@ So erstellen Sie einen Katalog
 Nachdem der Katalog erstellt wurde, fügen Sie die SharePoint-Website oder das Team hinzu, die Sie für die Partnerorganisation freigeben möchten.
 
 So fügen Sie einem Katalogressourcen hinzu
-1. Klicken Sie in Azure AD Identitäts Steuerung auf **Kataloge**, und klicken Sie dann auf den Katalog, in dem Sie Ressourcen hinzufügen möchten.
+1. Klicken Sie in Azure AD Identitäts Steuerung auf **Kataloge** , und klicken Sie dann auf den Katalog, in dem Sie Ressourcen hinzufügen möchten.
 2. Klicken Sie auf **Ressourcen** , und klicken Sie dann auf **Ressourcen hinzufügen**.
 3. Wählen Sie die Teams oder SharePoint-Websites aus, die Sie in Ihr Extranet einbeziehen möchten, und klicken Sie dann auf **Hinzufügen**.
 
@@ -87,19 +88,19 @@ So fügen Sie einem Katalogressourcen hinzu
 Nachdem Sie die Ressourcen definiert haben, die Sie freigeben möchten, müssen Sie im nächsten Schritt ein Access-Paket erstellen, das die Art des Zugriffs für Partnerbenutzer und den Genehmigungsprozess für neue Partnerbenutzer definiert, die Zugriff anfordern.
 
 So erstellen Sie ein Access-Paket
-1. Klicken Sie in Azure AD Identitäts Steuerung auf **Kataloge**, und klicken Sie dann auf den Katalog, in dem Sie ein Access-Paket erstellen möchten.
-2. Klicken Sie auf **Access-Pakete**, und klicken Sie dann auf **Neues Zugriffs Paket**.
+1. Klicken Sie in Azure AD Identitäts Steuerung auf **Kataloge** , und klicken Sie dann auf den Katalog, in dem Sie ein Access-Paket erstellen möchten.
+2. Klicken Sie auf **Access-Pakete** , und klicken Sie dann auf **Neues Zugriffs Paket**.
 3. Geben Sie einen Namen und eine Beschreibung für das Access-Paket ein, und klicken Sie dann auf **Weiter: Ressourcen Rollen**.
 4. Wählen Sie die Ressourcen aus dem Katalog aus, die Sie für Ihr Extranet verwenden möchten.
 5. Wählen Sie für jede Ressource in der Spalte **Rolle** die Benutzerrolle aus, die Sie den Gastbenutzern gewähren möchten, die das Extranet verwenden.
 6. Klicken Sie auf **Weiter: Anfragen**.
-7. Wählen Sie unter **Benutzer, die Zugriff anfordern können** **aus für Benutzer, die sich nicht in Ihrem Verzeichnis**befinden.
+7. Wählen Sie unter **Benutzer, die Zugriff anfordern können** **aus für Benutzer, die sich nicht in Ihrem Verzeichnis** befinden.
 8. Stellen Sie sicher, dass die Option **bestimmte verbundene Organisationen** ausgewählt ist, und klicken Sie dann auf **Verzeichnisse hinzufügen**.
 9. Wählen Sie die verbundene Organisation aus, die Sie zuvor hinzugefügt haben, und klicken Sie dann auf **auswählen**
-10. Wählen Sie unter **Genehmigung**die Option **Ja** für **Genehmigung erforderlich**aus.
-11. Wählen Sie unter **erste genehmigende Person**einen der Sponsoren aus, die Sie zuvor hinzugefügt haben, oder wählen Sie einen bestimmten Benutzer aus.
+10. Wählen Sie unter **Genehmigung** die Option **Ja** für **Genehmigung erforderlich** aus.
+11. Wählen Sie unter **erste genehmigende Person** einen der Sponsoren aus, die Sie zuvor hinzugefügt haben, oder wählen Sie einen bestimmten Benutzer aus.
 12. Klicken Sie auf **Fallback hinzufügen** und wählen Sie eine Fallback genehmigende Person aus.
-13. Wählen Sie unter **aktivieren**die Option **Ja**aus.
+13. Wählen Sie unter **aktivieren** die Option **Ja** aus.
 14. Klicken Sie auf **Weiter: Lebenszyklus**.
 15. Wählen Sie die Einstellungen für Ablauf und Zugriffsüberprüfung aus, die Sie verwenden möchten, und klicken Sie dann auf **Weiter: Überprüfen + Erstellen**.
 16. Überprüfen Sie Ihre Einstellungen, und klicken Sie dann auf **Erstellen**.
@@ -109,9 +110,9 @@ So erstellen Sie ein Access-Paket
 Wenn Sie eine Partnerschaft mit einer großen Organisation ausführen möchten, können Sie das Access-Paket ausblenden. Wenn das Paket ausgeblendet ist, werden Benutzer in der Partnerorganisation das Paket nicht auf Ihrem *My Access* -Portal sehen. Stattdessen muss Ihnen ein direkter Link zur Anmeldung für das Paket gesendet werden. Das Ausblenden des Access-Pakets kann die Anzahl unangemessener Zugriffsanforderungen verringern und auch dazu beitragen, dass verfügbare Zugriffs Pakete im Portal der Partnerorganisation organisiert werden.
 
 So legen Sie ein Access-Paket auf ausgeblendet fest
-1. Klicken Sie in Azure AD Identitäts Steuerung auf **Access-Pakete**, und klicken Sie dann auf Ihr Zugriffs Paket.
+1. Klicken Sie in Azure AD Identitäts Steuerung auf **Access-Pakete** , und klicken Sie dann auf Ihr Zugriffs Paket.
 2. Klicken Sie auf der Seite **Übersicht** auf **Bearbeiten**.
-3. Wählen Sie unter **Eigenschaften**die Option **Ja** für **ausgeblendet**aus, und klicken Sie dann auf **Speichern**.
+3. Wählen Sie unter **Eigenschaften** die Option **Ja** für **ausgeblendet** aus, und klicken Sie dann auf **Speichern**.
 
    ![Screenshot des Bildschirms Eigenschaften des Bearbeitungs Zugriffs Pakets](../media/identity-governance-access-package-hidden.png)
 
@@ -120,7 +121,7 @@ So legen Sie ein Access-Paket auf ausgeblendet fest
 Wenn Sie das Access-Paket auf ausgeblendet festlegen, müssen Sie einen direkten Link zur Partnerorganisation senden, damit Sie Zugriff auf Ihre Website oder Ihr Team anfordern können.
 
 So suchen Sie den Access Portal-Link
-1. Klicken Sie in Azure AD Identitäts Steuerung auf **Access-Pakete**, und klicken Sie dann auf Ihr Zugriffs Paket.
+1. Klicken Sie in Azure AD Identitäts Steuerung auf **Access-Pakete** , und klicken Sie dann auf Ihr Zugriffs Paket.
 2. Klicken Sie auf der Übersichts **Seite auf den Link** **in Zwischenablage kopieren** für den **Link My Access Portal**.
 
    ![Screenshot der Access-Paketeigenschaften mit Access Portal Link](../media/identity-governance-access-portal-link.png)
