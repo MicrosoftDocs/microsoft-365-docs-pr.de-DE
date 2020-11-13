@@ -224,18 +224,20 @@
           href: manage/pin-apps-to-app-launcher.md
         - name: Aktualisieren Sie Benutzer auf die neuesten Apps
           href: setup/upgrade-users-to-latest-office-client.md
-        - name: Anforderungen für die zentralisierte Bereitstellung von Add-Ins
-          href: manage/centralized-deployment-of-add-ins.md
+        - name: Zentrale Bereitstellung von Add-Ins
+          items:
+            - name: Anforderungen für die zentralisierte Bereitstellung von Add-Ins
+              href: manage/centralized-deployment-of-add-ins.md
+            - name: Bereitstellen von Add-Ins im Admin Center
+              href: manage/manage-deployment-of-add-ins.md
+            - name: Verwalten von Add-Ins im Admin Center
+              href: manage/manage-addins-in-the-admin-center.md
+            - name: FAQ zur zentralen Bereitstellung
+              href: manage/centralized-deployment-faq.md
         - name: Branchenneuigkeiten verwalten
           href: manage/manage-industry-news.md
-        - name: Bereitstellen von Add-Ins im Admin Center
-          href: manage/manage-deployment-of-add-ins.md
-        - name: Verwalten von Add-Ins im Admin Center
-          href: manage/manage-addins-in-the-admin-center.md
         - name: Einstellungen für Office-Skripts verwalten
           href: manage/manage-office-scripts-settings.md
-        - name: FAQ zur zentralen Bereitstellung
-          href: manage/centralized-deployment-faq.md
         - name: Einen Partner oder Wiederverkäufer suchen
           href: manage/find-your-partner-or-reseller.md
         - name: Nachrichten im Nachrichtencenter verwalten
