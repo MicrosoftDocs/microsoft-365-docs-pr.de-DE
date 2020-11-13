@@ -19,20 +19,20 @@ ms.collection:
 search.appverid:
 - MET150
 description: Richten Sie Microsoft 365 Endpunkt-DLP (Data Loss Prevention, Verhinderung von Datenverlust) ein, um Dateiaktivitäten zu überwachen und schützende Maßnahmen für diese Dateien auf Endpunkten anzuwenden.
-ms.openlocfilehash: 8f4b1b04aadbb639f6c7daeeb564c10abd7737b2
-ms.sourcegitcommit: ca733da1ed919b286a93068b560608e82f8def05
+ms.openlocfilehash: 3f29d8e49daa6dd4f0900e0e92123306c799c6ee
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48990550"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999417"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Erste Schritte mit Endpunkt-DLP
 
-Microsoft Endpunkt-DLP (Data Loss Prevention, Verhinderung von Datenverlust) ist Bestandteil der Microsoft 365 DLP-Suite, mit der Sie vertrauliche Elemente in Microsoft 365-Diensten ermitteln und schützen können. Weitere Informationen zu den Microsoft-DLP-Angeboten finden Sie unter [Verhinderung von Datenverlust – Übersicht](data-loss-prevention-policies.md). Weitere Informationen zu Endpunkt-DLP finden Sie unter [Informationen zu Endpunkt-DLP (Vorschau)](endpoint-dlp-learn-about.md)
+Microsoft Endpunkt-DLP (Data Loss Prevention, Verhinderung von Datenverlust) ist Bestandteil der Microsoft 365 DLP-Suite, mit der Sie vertrauliche Elemente in Microsoft 365-Diensten ermitteln und schützen können. Weitere Informationen zu den Microsoft-DLP-Angeboten finden Sie unter [Verhinderung von Datenverlust – Übersicht](data-loss-prevention-policies.md). Einzelheiten über Endpunkt-DLP finden Sie unter [ Informationen zu Endpunkt-DLP (Vorschau)](endpoint-dlp-learn-about.md).
 
 Microsoft Endpunkt-DLP ermöglicht es Ihnen, Windows 10-Geräte zu überwachen und zu erkennen, wenn vertrauliche Elemente verwendet und freigegeben werden. Auf diese Weise erhalten Sie die nötige Übersicht und Kontrolle, um sicherzustellen, dass sie ordnungsgemäß verwendet und geschützt werden, und um ihre Gefährdung durch riskantes Verhalten zu verhindern.
 
-## <a name="before-you-begin"></a>Vorabinformationen
+## <a name="before-you-begin"></a>Vorbereitung
 
 ### <a name="skusubscriptions-licensing"></a>SKU/Abonnement-Lizenzierung
 
@@ -71,7 +71,7 @@ Wenn Sie ein benutzerdefiniertes Konto zum Aktivieren/Deaktivieren der Geräteü
 - Globaler Administrator
 - Compliance-Administrator
 
-Endpunkt-DLP-Daten können im [Aktivitäten-Explorer](data-classification-activity-explorer.md) angezeigt werden. Es gibt vier Rollen, die Berechtigungen für den Aktivitäten-Explorer gewähren; das Konto, das Sie für den Zugriff auf die Daten verwenden, muss eine der folgenden Rollen aufweisen:
+Endpunkt-DLP-Daten können im [Aktivitäten-Explorer](data-classification-activity-explorer.md) angezeigt werden. Es gibt vier Rollen, die Berechtigungen für den Aktivitäten-Explorer gewähren; das Konto, das Sie für den Zugriff auf die Daten verwenden, muss eine dieser Rollen aufweisen.
 
 - Globaler Administrator
 - Compliance-Administrator
@@ -84,28 +84,28 @@ Vergewissern Sie sich, dass die Windows 10-Geräte, auf die Sie Endpunkt-DLP anw
 
 1. Es muss Windows 10 x64 Build 1809 oder höher ausgeführt werden.
 
-2. Antimalware-Clientversion ist 4.18.2009.7 oder neuer. Überprüfen Sie die aktuelle Version, indem Sie die Windows-Sicherheits-App öffnen, das Symbol Einstellungen und dann Info auswählen. Die Versionsnummer wird unter Antimalware-Clientversion aufgeführt. Aktualisieren Sie auf die neueste Antimalware-Clientversion, indem Sie Windows Update KB4052623 installieren. Hinweis: Keine der Windows-Sicherheitskomponenten muss aktiv sein, Sie können Endpunkt-DLP unabhängig vom Windows-Sicherheitsstatus ausführen.
+2. Antimalware Client, Version 4.18.2009.7 oder höher. Überprüfen Sie die aktuelle Version, indem Sie die Windows-Sicherheits-App öffnen, das Einstellungen-Symbol und dann "Info" auswählen. Führen Sie eine Aktualisierung auf die neueste Antimalware-Clientversion durch, indem Sie Windows Update KB4052623 installieren. Hinweis: Keine der Windows-Sicherheitskomponenten muss aktiv sein, Sie können Endpunkt-DLP unabhängig vom Windows-Sicherheitsstatus ausführen.
 
-3. Die folgenden Windows-Updates sind installiert. Hinweis: Diese Updates sind keine Voraussetzung für die Einbindung eines Geräts an Endpunkt-DLP, enthalten jedoch Fixes für wichtige Probleme und müssen daher vor der Verwendung des Produkts installiert werden.
+3. Die nachstehenden Windows-Updates sind installiert. Hinweis: Diese Updates sind keine Voraussetzung für die Einbindung eines Geräts in Endpunkt-DLP, enthalten jedoch Fixes für wichtige Probleme und müssen daher vor der Verwendung des Produkts installiert werden.
 
     - Für Windows 10 1809 – KB4559003, KB4577069, KB4580390
     - Für Windows 10 1903 oder 1909 – KB4559004, KB4577062, KB4580386
     - Für Windows 10 2004 – KB4568831, KB4577063
     - Für Geräte mit Office 2016 (und keine andere Office-Version) – KB4577063 
 
-4. Alle Geräte müssen in [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join), oder Azure AD Hybrid eingebunden sein.
+4. Alle Geräte müssen in [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) oder Azure AD Hybrid eingebunden sein.
 
-5. Installieren Sie den Microsoft Edge-Browser auf dem Endpunktgerät, um Richtlinienaktionen für die Aktivität „Hochladen in die Cloud“ durchzusetzen. Mehr dazu unter [Das neue Microsoft Edge auf Chromium-Basis herunterladen](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
+5. Installieren Sie den Microsoft Chromium Edge-Browser auf dem Endpunktgerät, um Richtlinienaktionen für das Hochladen in die Cloud durchzusetzen. Weitere Informationen finden Sie unter [Herunterladen des auf Chromium basierenden neuen Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
-6. Im monatlichen Enterprise-Kanal der Microsoft 365 Apps Versionen 2004–2008 gibt es ein bekanntes Problem mit Endpunkt-DLP zur Klassifizierung von Office-Inhalten. Aktualisieren Sie auf Version 2009 oder höher. Mehr zu den aktuellen Versionen unter [Updateverlauf für Microsoft 365 Apps (nach Datum)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date). Weitere Informationen zu diesem Problem finden Sie im Abschnitt Office Suite in den [Versionshinweisen für aktuelle Kanal-Veröffentlichungen im Jahr 2020](https://docs.microsoft.com/officeupdates/current-channel#version-2010-october-27).
+6. Im monatlichen Enterprise-Kanal der Microsoft 365 Apps Versionen 2004–2008 gibt es ein bekanntes Problem mit Endpunkt-DLP im Hinblick auf die Klassifizierung von Office-Inhalten. Führen Sie eine Aktualisierung auf Version 2009 oder höher durch. Mehr zu den aktuellen Versionen erfahren Sie unter [Updateverlauf für Microsoft 365 Apps (nach Datum)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date). Weitere Informationen zu diesem Problem finden Sie unter [Anmerkungen zu aktuellen Kanalversionen von 2020](https://docs.microsoft.com/officeupdates/current-channel#version-2010-october-27).
 
-## <a name="onboarding-devices-into-device-management"></a>Geräte für die Geräteverwaltung aufnehmen
+## <a name="onboarding-devices-into-device-management"></a>Onboarding von Geräten für die Geräteverwaltung
 
 Sie müssen die Geräteüberwachung aktivieren und die Endpunkte einbinden, bevor vertrauliche Elemente auf einem Gerät überwacht und geschützt werden können. Beide Aktionen werden im Microsoft 365 Compliance-Portal durchgeführt.
 
 Wenn Sie das Onboarding von noch nicht eingebundenen Geräten vornehmen möchten, laden Sie das entsprechende Skript herunter, und installieren Sie es auf diesen Geräten. Wenden Sie das [Verfahren zum Onboarding von Geräten](endpoint-dlp-getting-started.md#onboarding-devices) an.
 
-Wenn bereits Geräte in [Microsoft Defender für Endpunkt](https://docs.microsoft.com/windows/security/threat-protection/) eingebunden sind, werden sie in der Liste der verwalteten Geräte angezeigt. Folgen Sie der Vorgehensweise unter [Bei Geräten, die in Microsoft Defender für Endpunkt eingebunden sind](endpoint-dlp-getting-started.md#with-devices-onboarded-into-microsoft-defender-for- endpoint).
+Wenn bereits Geräte in [Microsoft Defender für Endpunkt](https://docs.microsoft.com/windows/security/threat-protection/) eingebunden sind, werden sie in der Liste der verwalteten Geräte angezeigt. Wenden Sie das [Verfahren für Geräte, die in Microsoft Defender für Endpunkt eingebunden sind](endpoint-dlp-getting-started.md#with-devices-onboarded-into-microsoft-defender-for- endpoint), an.
 
 ### <a name="onboarding-devices"></a>Onboarding von Geräten
 
@@ -130,7 +130,7 @@ In diesem Bereitstellungsszenario werden Sie das Onboarding von noch nicht einge
    > [!div class="mx-imgBorder"]
    > ![Bereitstellungsmethode](../media/endpoint-dlp-getting-started-3-deployment-method.png)
    
-6. Führen Sie die unter [Onboarding-Tools und -Methoden für Windows 10-Computer](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) beschriebenen entsprechenden Verfahren aus. Über diesen Link gelangen Sie zu einer Zielseite, auf der Microsoft Defender für Endpunkt-Prozeduren beschrieben werden, die dem in Schritt 5 ausgewählten Bereitstellungspaket entsprechen:
+6. Wenden Sie die unter [Onboarding-Tools und -Methoden für Windows 10-Computer](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) beschriebenen entsprechenden Verfahren an. Über diesen Link gelangen Sie zu einer Zielseite, auf der Microsoft Defender für Endpunkt-Verfahren beschrieben werden, die dem in Schritt 5 ausgewählten Bereitstellungspaket entsprechen:
 
     - Onboarding von Windows 10-Computern mithilfe von Gruppenrichtlinien
     - Onboarding von Windows-Computern mithilfe von Microsoft Endpoint Configuration Manager
@@ -160,7 +160,7 @@ In diesem Szenario ist Microsoft Defender für Endpunkt bereits installiert, und
 
 5. Wählen Sie die Art der Bereitstellung auf diesen zusätzlichen Geräten aus der Liste der **Bereitstellungsmethoden** und anschließend **Paket herunterladen** aus.
 
-6. Führen Sie die unter [Onboarding-Tools und -Methoden für Windows 10-Computer](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) beschriebenen entsprechenden Verfahren aus. Über diesen Link gelangen Sie zu einer Zielseite, auf der Microsoft Defender für Endpunkt-Prozeduren beschrieben werden, die dem in Schritt 5 ausgewählten Bereitstellungspaket entsprechen:
+6. Wenden Sie die unter [Onboarding-Tools und -Methoden für Windows 10-Computer](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) beschriebenen entsprechenden Verfahren an. Über diesen Link gelangen Sie zu einer Zielseite, auf der Microsoft Defender für Endpunkt-Verfahren beschrieben werden, die dem in Schritt 5 ausgewählten Bereitstellungspaket entsprechen:
 
     - Onboarding von Windows 10-Computern mithilfe von Gruppenrichtlinien
     - Onboarding von Windows-Computern mithilfe von Microsoft Endpoint Configuration Manager
@@ -172,6 +172,13 @@ Nach Abschluss des Endpunkt-Onboardings sollten diese in der Tabelle der **Gerä
 
 > [!NOTE]
 >Diese Funktion erfordert eine Lizenz. Ohne die erforderliche Lizenz werden keine Daten angezeigt und es ist kein Zugriff auf sie möglich.
+
+### <a name="viewing-endpoint-dlp-alerts-in-dlp-alerts-management-dashboard"></a>Anzeigen von Endpunkt-DLP-Warnungen im Verwaltungsdashboard für DLP-Warnungen
+
+1. Öffnen Sie im Microsoft 365 Compliance Center die Seite "Verhinderung von Datenverlust" (DLP), und wählen Sie "Warnungen" aus.
+
+2. Wenden Sie in [Konfigurieren und Anzeigen von Warnungen für DLP-Richtlinien](dlp-configure-view-alerts-policies.md) beschriebenen Verfahrensweisen an, um Warnungen für Ihre Endpunkt-DLP-Richtlinien anzuzeigen.
+
 
 ### <a name="viewing-endpoint-dlp-data-in-activity-explorer"></a>Anzeigen von Endpunkt-DLP-Daten im Aktivitäten-Explorer
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Erfahren Sie, wie Sie mit der Microsoft 365 Usage Analytics-Vorlagen-app in Power BI mit dem Sammeln von Daten für Ihren Mandanten beginnen.
-ms.openlocfilehash: 347256fa7acaae18cd31f0c8c6b7eca20ad2e9dd
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: cda5931e81f7ea13208825afa658f1c672a2f326
+ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941331"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071455"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Aktivieren von Microsoft 365-Nutzungsanalysen
 
@@ -92,7 +92,7 @@ Um die Vorlagen-APP zu starten, müssen Sie entweder **globaler Administrator** 
   
 8. Nachdem die Vorlagen-App instanziiert wurde, steht das Microsoft 365-Dashboard für die Verwendungsanalyse in Power BI im Internet zur Verfügung. Das erste Laden des Dashboards dauert zwischen 2 und 30 Minuten.
   
-Aggregate auf Mandantenebene sind in allen Berichten verfügbar. **Details auf Benutzerebene werden erst nach dem 1. oder 15. Tag des Kalendermonats nach der Entscheidung verfügbar**. Dies wirkt sich auf alle Berichte unter Benutzeraktivität aus. Tipps zum Anzeigen und Verwenden dieser Berichte finden Sie unter [navigieren und Verwenden der Berichte in Microsoft 365-Verwendungsanalyse](navigate-and-utilize-reports.md) .
+Aggregate auf Mandantenebene werden nach der Entscheidung in allen Berichten verfügbar sein. **Details auf Benutzerebene werden erst am 5. des nächsten Kalendermonats nach der Entscheidung verfügbar**. Dies wirkt sich auf alle Berichte unter Benutzeraktivität aus (Weitere Tipps zum Anzeigen und Verwenden dieser Berichte finden Sie unter [navigieren und Verwenden der Berichte in Microsoft 365-Verwendungsanalyse](navigate-and-utilize-reports.md) ).
     
 ## <a name="make-the-collected-data-anonymous"></a>Anonymisieren der gesammelten Daten
 

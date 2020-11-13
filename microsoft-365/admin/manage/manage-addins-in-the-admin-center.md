@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Erfahren Sie mehr über die Verwendung von zentralisierten Add-Ins, um Add-Ins für Benutzer und Gruppen in Ihrer Organisation bereitzustellen.
-ms.openlocfilehash: 6339858871834637c0b8fdd1b16c17b534026de9
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 5521b01e059ca8ae4a97ecb094f9aa1198263701
+ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48207886"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071477"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Verwalten von Add-Ins im Admin Center
 
@@ -58,29 +58,29 @@ Sie sollten ein Add-in in einem Fall löschen, wenn es von keinem mehr verwendet
 
 Sie können auch ein Add-in löschen, das bereitgestellt wurde.
 
-1. Wechseln Sie im Admin Center zur Seite **Einstellungen**für  >  **Dienste &-Add-ins** .
+1. Wechseln Sie im Admin Center zur Seite **Einstellungen** für  >  **Dienste &-Add-ins** .
 
      > [!NOTE]
-    > Das Admin Center wird mit integrierten Apps auf die Bereitstellungsumgebung aktualisiert. Wenn die oben beschriebenen Schritte nicht angezeigt werden, wechseln Sie zum Abschnitt zentralisierte bereit **Settings**Stellung, indem Sie auf  >  **integrierte apps**für Einstellungen gehen. Wählen Sie oben auf der Seite **integrierte apps** die Option **Add-ins**aus.
+    > Das Admin Center wird mit integrierten Apps auf die Bereitstellungsumgebung aktualisiert. Wenn die oben beschriebenen Schritte nicht angezeigt werden, wechseln Sie zum Abschnitt zentralisierte bereit **Settings** Stellung, indem Sie auf  >  **integrierte apps** für Einstellungen gehen. Wählen Sie oben auf der Seite **integrierte apps** die Option **Add-ins** aus.
 
 2. Wählen Sie das bereitgestellte Add-in aus.
 
 3. Klicken Sie auf **Add-in löschen**. Entfernen Sie die Add-In-Schaltfläche in der unteren rechten Ecke.
 
-4. Überprüfen Sie Ihre Auswahl und wählen Sie **Add-In entfernen**aus.
+4. Überprüfen Sie Ihre Auswahl und wählen Sie **Add-In entfernen** aus.
 
 ## <a name="edit-add-in-access"></a>Bearbeiten des Add-In-Zugangs
 
 Nach der Bereitstellung können Administratoren auch den Benutzer Zugriff auf Add-Ins verwalten.
 
-1. Wechseln Sie im Admin Center zur Seite **Einstellungen**für  >  **Dienste &-Add-ins** .
+1. Wechseln Sie im Admin Center zur Seite **Einstellungen** für  >  **Dienste &-Add-ins** .
 
      > [!NOTE]
-    > Das Admin Center wird mit integrierten Apps auf die Bereitstellungsumgebung aktualisiert. Wenn die oben beschriebenen Schritte nicht angezeigt werden, wechseln Sie zum Abschnitt zentralisierte bereit **Settings**Stellung, indem Sie auf  >  **integrierte apps**für Einstellungen gehen. Wählen Sie oben auf der Seite **integrierte apps** die Option **Add-ins**aus.
+    > Das Admin Center wird mit integrierten Apps auf die Bereitstellungsumgebung aktualisiert. Wenn die oben beschriebenen Schritte nicht angezeigt werden, wechseln Sie zum Abschnitt zentralisierte bereit **Settings** Stellung, indem Sie auf  >  **integrierte apps** für Einstellungen gehen. Wählen Sie oben auf der Seite **integrierte apps** die Option **Add-ins** aus.
 
 2. Wählen Sie das bereitgestellte Add-in aus.
 
-3. Klicken Sie unter **Wer hat Zugriff**auf **Bearbeiten** .
+3. Klicken Sie unter **Wer hat Zugriff** auf **Bearbeiten** .
 
 4. Speichern Sie die Änderungen.
 
@@ -96,7 +96,7 @@ Als Organisation möchten Sie möglicherweise verhindern, dass neue Office-Add-I
 1. Wechseln Sie im Admin Center zur Seite **Einstellungen** \> [Dienste &amp; Add-Ins](https://go.microsoft.com/fwlink/p/?linkid=2053743).
 
      > [!NOTE]
-    > Das Admin Center wird mit integrierten Apps auf die Bereitstellungsumgebung aktualisiert. Wenn die oben beschriebenen Schritte nicht angezeigt werden, wechseln Sie zum Abschnitt zentralisierte bereit **Settings**Stellung, indem Sie auf  >  **integrierte apps**für Einstellungen gehen. Wählen Sie oben auf der Seite **integrierte apps** die Option **Add-ins**aus.
+    > Das Admin Center wird mit integrierten Apps auf die Bereitstellungsumgebung aktualisiert. Wenn die oben beschriebenen Schritte nicht angezeigt werden, wechseln Sie zum Abschnitt zentralisierte bereit **Settings** Stellung, indem Sie auf  >  **integrierte apps** für Einstellungen gehen. Wählen Sie oben auf der Seite **integrierte apps** die Option **Add-ins** aus.
     
 3. Wählen Sie **Benutzereigene Apps und Dienste aus**.
     
@@ -133,6 +133,9 @@ Dies hindert einen Administrator nicht daran, ein Add-in aus dem Office Store mi
   
 Wenn Sie verhindern möchten, dass sich ein Benutzer mit einem Microsoft-Konto anmeldet, können Sie die Anmeldung einschränken, sodass nur das organisationskonto verwendet wird. Weitere Informationen finden Sie unter [Identity, Authentication und Authorization in Office 2016](https://technet.microsoft.com/library/jj683102%28v=office.16%29.aspx).  
 
+> [!NOTE]
+> Das verhindern, dass Benutzer auf den Office Store zugreifen können, verhindert auch, dass Sie von [Sideloading Office-Add-Ins zu Test](https://docs.microsoft.com/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)Zwecken verwendet werden.
+
 ## <a name="more-about-the-end-user-experience-with-add-ins"></a>Weitere Informationen zur Benutzeroberfläche mit Add-ins
 
 Nachdem Sie ein Add-in bereitgestellt haben, können Ihre Endbenutzer damit beginnen, es in Ihren Office-Anwendungen zu verwenden (siehe [Start mit der Office-Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). Das Add-in wird auf allen Plattformen angezeigt, die das Add-in unterstützt.
@@ -141,11 +144,11 @@ Wenn das Add-In Add-In-Befehle unterstützt, werden diese im Office-Menüband an
 
 ![Office-Menüband mit Such Zitaten](../../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
   
-Wenn das bereitgestellte Add-in keine Add-in-Befehle unterstützt oder wenn Sie alle bereitgestellten Add-Ins anzeigen möchten, können Sie diese über **Meine Add-ins**anzeigen. 
+Wenn das bereitgestellte Add-in keine Add-in-Befehle unterstützt oder wenn Sie alle bereitgestellten Add-Ins anzeigen möchten, können Sie diese über **Meine Add-ins** anzeigen. 
   
 ### <a name="in-word-2016-excel-2016-or-powerpoint-2016"></a>In Word 2016, Excel 2016 oder PowerPoint 2016
 
-1. Wählen **Sie \> Meine Add-Ins einfügen**aus. 
+1. Wählen **Sie \> Meine Add-Ins einfügen** aus. 
     
 2. Wählen Sie im Office-Add-In-Fenster die Schaltfläche **Vom Administrator verwaltet** aus. 
     
@@ -153,7 +156,7 @@ Wenn das bereitgestellte Add-in keine Add-in-Befehle unterstützt oder wenn Sie 
   
 ### <a name="in-outlook"></a>In Outlook
 
-1. Wählen Sie im Menüband **Start** die Option **Add-Ins abrufen**aus.<br/>![Schaltfläche "Speichern" in Outlook](../../media/getaddinsicon.png)
+1. Wählen Sie im Menüband **Start** die Option **Add-Ins abrufen** aus.<br/>![Schaltfläche "Speichern" in Outlook](../../media/getaddinsicon.png)
   
 2. Wählen Sie im linken Navigationsbereich **vom Administrator verwaltete** aus. 
 

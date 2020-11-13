@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: f1b1a8f03b7a11a0467826281bc2b789140dbcee
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 7e40a5eb7144fef3d330e0e8fc3c711af15d4c49
+ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327056"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071443"
 ---
 # <a name="steps-for-partners-to-register-devices"></a>Schritte für Partner zum Registrieren von Geräten
 
@@ -35,8 +35,8 @@ Nachdem Sie die Beziehung mit ihren Kunden hergestellt haben, können Sie das Pa
 
 1. Wechseln zum [Partner Center](https://partner.microsoft.com/dashboard)
 2. Wählen Sie im Menü Partner Center die Option **Kunden** aus, und wählen Sie dann den Kunden aus, dessen Geräte Sie verwalten möchten.
-3. Wählen Sie auf der Detailseite des Kunden **Geräte**aus.
-4. Wählen Sie unter Profile auf Geräte **anwenden** die Option **Geräte hinzufügen**aus.
+3. Wählen Sie auf der Detailseite des Kunden **Geräte** aus.
+4. Wählen Sie unter Profile auf Geräte **anwenden** die Option **Geräte hinzufügen** aus.
 5. Geben Sie **Microsoft365Managed_Autopilot** für den Gruppennamen ein, und wählen Sie dann **Durchsuchen** aus, um die Liste des Kunden (im CSV-Dateiformat) in das Partner Center hochzuladen.
 
 
@@ -46,7 +46,7 @@ Nachdem Sie die Beziehung mit ihren Kunden hergestellt haben, können Sie das Pa
 >[!NOTE]
 > Sie sollten diese CSV-Datei mit Ihrem Gerätekauf erhalten haben. Wenn Sie keine CSV-Datei erhalten haben, können Sie diese selbst erstellen, indem Sie die Schritte unter [Hinzufügen von Geräten zu Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/add-devices#collecting-the-hardware-id-from-existing-devices-using-powershell)ausführen. Das Windows PowerShell Skript unterscheidet sich von dem, das für das [Verwaltungsportal von Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/register-devices-self?view=o365-worldwide#obtain-the-hardware-hash)verwendet wird. Partner sollten mithilfe von [Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) Geräte für Microsoft Managed Desktop-Geräte im Partner Center registrieren.
 
-Wenn Sie beim Hochladen der CSV-Datei eine Fehlermeldung erhalten, überprüfen Sie das Format der Datei. Sie können nur den Hardwarehash oder den OEM-Namen, die Seriennummer und das Modell (in dieser Spaltenreihenfolge) oder die Windows-Produkt-ID verwenden. Sie können auch die CSV-Beispieldatei verwenden, die über den Link neben **Geräte hinzufügen** zum Erstellen einer Geräteliste bereitgestellt wird. 
+Wenn Sie beim Hochladen der CSV-Datei eine Fehlermeldung erhalten, überprüfen Sie das Format der Datei. Stellen Sie sicher, dass die Spaltenreihenfolge den Anweisungen in [Verwenden von Windows Autopilot-Profilen auf neuen Geräten entspricht, um die Out-of-Box-Erfahrung eines Kunden anzupassen](https://docs.microsoft.com/partner-center/autopilot#add-devices-to-a-customers-account). Sie können auch die CSV-Beispieldatei verwenden, die über den Link neben **Geräte hinzufügen** zum Erstellen einer Geräteliste bereitgestellt wird. 
 
 Weitere Informationen zu Autopilot in Partner Szenarien finden Sie unter [Hinzufügen von Geräten zu einem Kundenkonto](https://docs.microsoft.com/partner-center/autopilot#add-devices-to-a-customers-account).
 
@@ -55,7 +55,7 @@ Weitere Informationen zu Autopilot in Partner Szenarien finden Sie unter [Hinzuf
 
 Bevor Sie die Registrierung für einen Kunden abschließen, müssen Sie zunächst eine Beziehung mit diesen herstellen. Sie sollten über einen eindeutigen Link verfügen, der ihren jeweiligen Kunden zur Verfügung steht. Weitere Informationen finden Sie unter [How to establish OEM Relationship](https://docs.microsoft.com/windows/deployment/windows-autopilot/registration-auth#oem-authorization).
 
-Nachdem Sie die Beziehung eingerichtet haben, können Sie mit der Gruppen-Tag- **Microsoft365Managed_Autopilot**die Registrierung von Geräten für Kunden beginnen.
+Nachdem Sie die Beziehung eingerichtet haben, können Sie mit der Gruppen-Tag- **Microsoft365Managed_Autopilot** die Registrierung von Geräten für Kunden beginnen.
 
 > [!IMPORTANT]
 > Der Gruppenname muss **Microsoft365Managed_Autopilot** genau übereinstimmen, einschließlich Groß-/Kleinschreibung und Sonderzeichen. Auf diese Weise können die neu registrierten Geräte dem Microsoft Managed Desktop Autopilot-Profil zugewiesen werden.

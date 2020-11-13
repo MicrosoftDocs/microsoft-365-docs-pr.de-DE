@@ -22,20 +22,20 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Hier erfahren Sie, wie Sie vertrauliche Informationen Ihrer Organisation in Office 365 identifizieren, überwachen und automatisch schützen.
-ms.openlocfilehash: d1b82f1e5581e1d24284a549f3c9572e0f8343a3
-ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
+ms.openlocfilehash: 0817d48879fccbefcda22d677c85a250dc017dd0
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48984939"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999497"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Verhinderung von Datenverlust – Übersicht
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 <!-- move this note to a more appropriate place, no topic should start with a note -->
 > [!NOTE]
-> Kürzlich wurden Funktionen zur Verhinderung von Datenverlust zu den Microsoft Teams-Chat- und Kanalnachrichten für Benutzer hinzugefügt, die für Office 365 Advanced Compliance lizensiert sind. Sie sind als eigenständige Option verfügbar und in Office 365 E5 und Microsoft 365 E5 Compliance enthalten. Weitere Informationen zu den Lizenzierungsanforderungen finden Sie unter [Microsoft 365-Dienste auf Mandantenebene – Leitfaden zur Lizenzierung](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
+> Kürzlich wurden Funktionen zur Verhinderung von Datenverlust zu den Microsoft Teams-Chat- und Kanalnachrichten für Benutzer hinzugefügt, die für Office 365 Advanced Compliance lizensiert sind. Dies ist als eigenständige Option verfügbar und in Office 365 E5 und Microsoft 365 E5 Compliance enthalten. Weitere Informationen zu den Lizenzierungsanforderungen finden Sie unter [Microsoft 365-Dienste auf Mandantenebene – Leitfaden zur Lizenzierung](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
 
-Um Geschäftsstandards und branchenspezifische Vorschriften einzuhalten, müssen Organisationen vertrauliche Informationen schützen und verhindern, dass sie versehentlich offengelegt werden. Vertrauliche Informationen können Finanzdaten oder personenbezogene Informationen (PII) wie Kreditkartennummern, Sozialversicherungsnummern oder Gesundheitsakten umfassen. Mithilfe einer Richtlinie zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) im Office 365 Security &amp; Compliance Center können Sie vertrauliche Informationen in Office 365 identifizieren, überwachen und automatisch schützen.
+Um Geschäftsstandards und branchenspezifische Vorschriften einzuhalten, müssen Organisationen vertrauliche Informationen schützen und verhindern, dass sie versehentlich offengelegt werden. Beispiele für vertrauliche Informationen sind Finanzdaten oder personenbezogene Informationen (PII, Personally Identifiable Information) wie Kreditkartennummern, Sozialversicherungsnummern oder Gesundheitsakten. Mit einer Richtlinie zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) im Office 365 Security &amp; Compliance Center können Sie vertrauliche Informationen im gesamten Office 365 ermitteln, überwachen und automatisch schützen.
   
 Eine DLP-Richtlinie bietet Ihnen folgende Möglichkeiten:
   
@@ -49,17 +49,17 @@ Eine DLP-Richtlinie bietet Ihnen folgende Möglichkeiten:
     
 - **Überwachen und Schützen von vertraulichen Informationen in den Desktopversionen von Excel, PowerPoint und Word**
     
-    Diese Office-Desktopprogramme enthalten die gleichen Funktionen wie Exchange Online, SharePoint Online und OneDrive for Business, um vertrauliche Informationen zu identifizieren und DLP-Richtlinien anzuwenden. DLP bietet eine ständige Überwachung, wenn Personen Inhalte in diesen Office-Programmen freigeben.
+    Wie in Exchange Online, SharePoint Online und OneDrive for Business enthalten diese Office-Desktopprogramme die gleichen Funktionen, um vertrauliche Informationen zu identifizieren und DLP-Richtlinien anzuwenden. DLP bietet eine ständige Überwachung, wenn Personen Inhalte in diesen Office-Programmen freigeben.
     
-- **Gewährleisten der Compliance durch die Benutzer ohne Unterbrechung ihres Arbeitsflusses**
+- **Gewährleisten der Compliance durch die Benutzer ohne Unterbrechung ihrer Arbeitsabläufe**
     
-    Sie können Ihre Benutzer in Bezug auf DLP-Richtlinien schulen und sie dabei unterstützen, Bestimmungen kontinuierlich einzuhalten, ohne sie von ihrer Arbeit abzuhalten. Wenn Benutzer beispielsweise versuchen, ein Dokument mit vertraulichen Informationen freizugeben, kann ihnen über eine DLP-Richtlinie eine E-Mailbenachrichtigung gesendet und ein Richtlinientipp im Kontext der Dokumentbibliothek angezeigt werden, die es ihnen ermöglichen, die Richtlinie außer Kraft zu setzen, wenn sie dies geschäftlich begründen können. Die selben Richtlinientipps werden auch in Outlook im Web, Outlook, Excel, PowerPoint und Word angezeigt.
+    Sie können die Benutzer über DLP-Richtlinien informieren und sie dabei unterstützen, den Anforderungen gerecht zu werden, ohne dass dies ihre Arbeit beeinträchtigt. Wenn ein Benutzer z. B. versucht, ein Dokument mit vertraulichen Informationen freizugeben, kann eine DLP-Richtlinie eine E-Mail-Benachrichtigung senden und dem Benutzer einen Richtlinientipp im Kontext der Dokumentbibliothek anzeigen, welche ihm das Außerkraftsetzen der Richtlinie erlaubt, wenn er über eine geschäftliche Rechtfertigung verfügt. Die gleichen Richtlinieninfos werden auch in Outlook im Web, Excel, PowerPoint und Word angezeigt.
     
-- **Anzeigen von DLP-Berichten mit Inhalten, die mit den DLP-Richtlinien Ihrer Organisation übereinstimmen**
+- **DLP-Warnungen und -Berichte mit Inhalten anzeigen, die mit den DLP-Richtlinien Ihrer Organisation übereinstimmen**
     
-    Um die Einhaltung einer DLP-Richtlinie durch Ihre Organisation zu bewerten, können Sie anzeigen, wie viele Übereinstimmungen jede Richtlinie und Regel über einen bestimmten Zeitraum erzielt. Wenn eine DLP-Richtlinie es Benutzern ermöglicht, einen Richtlinientipp außer Kraft zu setzen und als falsch positives Ergebnis zu melden, können Sie auch sehen, was Benutzer gemeldet haben.
+    Zum Anzeigen von Warnungen und Metadaten, die sich auf Ihre DLP-Richtlinien beziehen, können Sie das [Verwaltungsdashboard für DLP-Warnungen](dlp-configure-view-alerts-policies.md) verwenden. Sie können auch Berichte zu Richtlinien-Übereinstimmungen anzeigen, um festzustellen, in welchem Umfang Ihre Organisation einer DLP-Richtlinie entspricht. Wenn eine DLP-Richtlinie es Benutzern ermöglicht, einen Richtlinientipp außer Kraft zu setzen und als falsch positives Ergebnis zu melden, können Sie auch sehen, was Benutzer gemeldet haben.
     
-Sie erstellen und verwalten DLP-Richtlinien auf der DLP-Seite im Microsoft 365 Compliance Center.
+DLP-Richtlinien werden auf der DLP-Seite im Microsoft 365 Compliance Center erstellt und verwaltet.
   
 ![DLP-Seite im Office 365 Security &amp; Compliance Center](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
   
@@ -194,15 +194,17 @@ So sieht ein Richtlinientipp in einem OneDrive for Business-Konto aus.
   
 ![Richtlinientipp für ein Dokument in einem OneDrive-Konto](../media/f9834d35-94f0-4511-8555-0fe69855ce6d.png)
 
- Weitere Informationen zu Benachrichtigungen der Benutzer und Richtlinientipps in den DLP-Richtlinien finden Sie in [Verwenden von Benachrichtigungen und Richtlinientipps](use-notifications-and-policy-tips.md).
+ Weitere Informationen zu Benachrichtigungen der Benutzer und Richtlinientipps in DLP-Richtlinien finden Sie unter [Verwenden von Benachrichtigungen und Richtlinientipps](use-notifications-and-policy-tips.md).
 
-#### <a name="incident-reports"></a>Schadensberichte
+#### <a name="alerts-and-incident-reports"></a>Warnungen und Vorfallsberichte
 
-Bei einer Übereinstimmung mit einer Regel können Sie einen Schadensbericht mit Details zum Ereignis an Ihren Compliance Officer (oder eine beliebige andere Person) senden. Dieser Bericht enthält Informationen zum Element, für das eine Übereinstimmung gefunden wurde, zum Inhalt, der mit der Regel übereinstimmte, und zum Namen der Person, die den Inhalt zuletzt geändert hat. Bei E-Mail-Nachrichten wird dem Bericht außerdem die ursprüngliche Nachricht, die einer DLP-Richtlinie entspricht, als Anlage beigefügt.
+Bei einer Übereinstimmung mit einer Regel können Sie eine E-Mail-Warnung mit Details zur Warnung an Ihren Compliance Officer (oder an beliebige andere Personen) senden. Diese E-Mail-Warnung enthält einen Link zum [Verwaltungsdashboard für DLP-Warnungen](dlp-configure-view-alerts-policies.md), zu dem der Compliance Officer zum Anzeigen der Details zu den Warnungen und Ereignissen wechseln kann. Das Dashboard enthält Details zu dem Ereignis, durch das die Warnung ausgelöst wurde, sowie zur entsprechenden DLP-Richtlinie und den erkannten vertraulichen Inhalten.
+
+Darüber hinaus können Sie auch einen Vorfallsbericht mit Details zum Ereignis senden. Dieser Bericht enthält Informationen zum Element, für das eine Übereinstimmung gefunden wurde, zum Inhalt, der mit der Regel übereinstimmte, und zum Namen der Person, die den Inhalt zuletzt geändert hat. Bei E-Mail-Nachrichten wird dem Bericht außerdem die ursprüngliche Nachricht, die einer DLP-Richtlinie entspricht, als Anlage beigefügt.
   
-![Seite zum Konfigurieren von Vorfallberichten](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)
+![Seite zum Konfigurieren von Vorfallberichten](../media/Alerts-and-incident-report.png)
 
-DLP überprüft E-Mails anders als Elemente in SharePoint Online oder OneDrive for Business. In SharePoint Online und OneDrive for Business überprüft DLP vorhandene Elemente sowie neue Elemente und generiert bei jeder gefundenen Übereinstimmung einen Schadensbericht. In Exchange Online überprüft DLP nur neue E-Mail-Nachrichten und generiert einen Bericht, wenn eine Richtlinienübereinstimmung vorliegt. DLP* *überprüft oder vergleicht _nicht_* zuvor vorhandene E-Mail-Elemente, die in einem Postfach oder Archiv gespeichert sind.
+DLP überprüft E-Mails anders als Elemente in SharePoint Online oder OneDrive for Business. In SharePoint Online und OneDrive for Business überprüft DLP vorhandene sowie neue Elemente und generiert bei jeder gefundenen Übereinstimmung eine Warnung und einen Vorfallsbericht. In Exchange Online überprüft DLP nur neue E-Mail-Nachrichten und generiert einen Bericht, wenn eine Richtlinienübereinstimmung vorliegt. DLP* *überprüft oder vergleicht _nicht_* zuvor vorhandene E-Mail-Elemente, die in einem Postfach oder Archiv gespeichert sind.
   
 ## <a name="grouping-and-logical-operators"></a>Gruppierung und logische Operatoren
 
