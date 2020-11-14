@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Eine Microsoft 365-schulungsable-Klassifizierung ist ein Tool, mit dem Sie verschiedene Arten von Inhalten erkennen können, indem Sie positive und negative Beispiele für Ihre Untersuchung geben. Nach der Schulung der Klassifizierung bestätigen Sie, dass die Ergebnisse korrekt sind. Anschließend können Sie die Inhalte Ihrer Organisation durchsuchen und klassifizieren, um Aufbewahrungs-oder Vertraulichkeits Bezeichnungen anzuwenden oder Sie in Datenverlust Verhinderung (DLP) oder in Aufbewahrungsrichtlinien einzubeziehen.
-ms.openlocfilehash: 7abfbe101508d24e58464ff38b14ab87447001f0
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: d26e33efea09c2afb33c2b5e5ade264cb8bfaee6
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379312"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072944"
 ---
 # <a name="learn-about-classifiers-preview"></a>Informationen zu Klassifizierungen (Vorschau)
 
@@ -68,10 +68,10 @@ Vertraulichkeits Bezeichnungen können Klassifizierungen als Bedingungen verwend
 Microsoft 365 verfügt über fünf vorab ausgebildete Klassifizierungen:
 
 > [!CAUTION]
-> Wir verwerfen die vorab ausgebildete Klassifizierung der **offensiven Sprache** , da Sie eine hohe Anzahl falsch positiver Ergebnisse erzeugt. Verwenden Sie es nicht, und wenn Sie es derzeit verwenden, sollten Sie Ihre Geschäftsprozesse aus dieser entfernen. Es wird empfohlen, stattdessen die vorab ausgebildeten Klassifizierungen " **Bedrohung**", " **Profanität**" und " **Belästigung** " zu verwenden.
+> Wir verwerfen die vorab ausgebildete Klassifizierung der **offensiven Sprache** , da Sie eine hohe Anzahl falsch positiver Ergebnisse erzeugt. Verwenden Sie es nicht, und wenn Sie es derzeit verwenden, sollten Sie Ihre Geschäftsprozesse aus dieser entfernen. Es wird empfohlen, stattdessen die vorab ausgebildeten Klassifizierungen " **Bedrohung** ", " **Profanität** " und " **Belästigung** " zu verwenden.
 
-- **Lebensläufe**: erkennt Elemente, bei denen es sich um Text Konten für persönliche, pädagogische, berufliche Qualifikationen, Berufserfahrung und andere personenbezogene Informationen handelt.
-- **Quellcode**: erkennt Elemente, die eine Reihe von Anweisungen und Anweisungen enthalten, die in den Top 25 verwendeten Computer Programmiersprachen auf GitHub geschrieben wurden.
+- **Lebensläufe** : erkennt Elemente, bei denen es sich um Text Konten für persönliche, pädagogische, berufliche Qualifikationen, Berufserfahrung und andere personenbezogene Informationen handelt.
+- **Quellcode** : erkennt Elemente, die eine Reihe von Anweisungen und Anweisungen enthalten, die in den Top 25 verwendeten Computer Programmiersprachen auf GitHub geschrieben wurden.
     - ActionScript
     - C
     - C#
@@ -99,11 +99,11 @@ Microsoft 365 verfügt über fünf vorab ausgebildete Klassifizierungen:
 > [!NOTE]
 > Der Quellcode wird geschult, um zu erkennen, wann der Hauptteil des Texts Quellcode ist. Es wird kein quellcodetext erkannt, der mit nur-Text vermischt wird.
 
-- **Belästigung**: erkennt eine bestimmte Kategorie von Textelementen anstößiger Sprache im Zusammenhang mit anstößigem Verhalten, das auf eine oder mehrere Personen basierend auf den folgenden Merkmalen ausgerichtet ist: Rasse, Ethnizität, Religion, nationale Herkunft, Geschlecht, sexuelle Orientierung, Alter, Behinderung
-- **Profanität**: erkennt eine bestimmte Kategorie von Textelementen anstößiger Sprache, die Ausdrücke enthalten, die die meisten Personen in Verlegenheit bringen
-- **Threat**: erkennt eine bestimmte Kategorie von Textelementen anstößiger Sprache im Zusammenhang mit Bedrohungen, um Gewalt zu begehen oder physischen Schaden oder einer Person oder einer Eigenschaft zu Schaden
+- **Belästigung** : erkennt eine bestimmte Kategorie von Textelementen anstößiger Sprache im Zusammenhang mit anstößigem Verhalten, das auf eine oder mehrere Personen basierend auf den folgenden Merkmalen ausgerichtet ist: Rasse, Ethnizität, Religion, nationale Herkunft, Geschlecht, sexuelle Orientierung, Alter, Behinderung
+- **Profanität** : erkennt eine bestimmte Kategorie von Textelementen anstößiger Sprache, die Ausdrücke enthalten, die die meisten Personen in Verlegenheit bringen
+- **Threat** : erkennt eine bestimmte Kategorie von Textelementen anstößiger Sprache im Zusammenhang mit Bedrohungen, um Gewalt zu begehen oder physischen Schaden oder einer Person oder einer Eigenschaft zu Schaden
 
-Diese werden in der Ansicht " **Microsoft 365 Compliance Center**  >  **-Datenklassifizierung (Preview)**"  >  **trainable Klassifizierers** "mit dem Status" angezeigt `Ready to use` .
+Diese werden in der Ansicht " **Microsoft 365 Compliance Center**  >  **-Datenklassifizierung (Preview)** "  >  **trainable Klassifizierers** "mit dem Status" angezeigt `Ready to use` .
 
 ![Klassifizierungen – vorab geschulte-Klassifizierungen](../media/classifiers-ready-to-use-classifiers.png)
 
@@ -113,9 +113,6 @@ Diese werden in der Ansicht " **Microsoft 365 Compliance Center**  >  **-Datenkl
 ### <a name="custom-classifiers"></a>Benutzerdefinierte Klassifizierungen
 
 Wenn die vorab ausgebildeten Klassifizierungen nicht Ihren Anforderungen entsprechen, können Sie eigene Klassifizierungen erstellen und Schulen. Es gibt wesentlich mehr Arbeit bei der Erstellung Ihrer eigenen, aber Sie werden viel besser auf ihre Organisationen zugeschnitten werden muss.
-
-> [!IMPORTANT]
-> Standardmäßig kann nur der Benutzer, der eine benutzerdefinierte Klassifizierung erstellt, die von dieser Klassifizierung vorgenommenen Vorhersagen trainieren und überprüfen. Wenn andere Benutzer in der Lage sein sollen, Klassifizierungs Vorhersagen auszubilden und zu überprüfen, finden Sie weitere Informationen unter [Erteilen von Schulungs-und Überprüfungs rechten](classifier-get-started-with.md#give-others-train-and-review-rights).
 
 #### <a name="process-flow-for-creating-custom-classifiers"></a>Prozessablauf zum Erstellen benutzerdefinierter Klassifizierungen
 

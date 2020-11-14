@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Verwenden Sie den Compliance-Manager-Schnellstart Leitfaden, um Sie auf dem Weg des Verständnisses, der Einrichtung und der Verwendung des Compliance-Managers zu unterstützen.
-ms.openlocfilehash: 895f03482c0af9603aa96d907d7339a853ef5e9d
-ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
+ms.openlocfilehash: 9f24a0495b7d453b70a28ad54d76ccf835000ed6
+ms.sourcegitcommit: d333d82fd5e4f3265e8b9372094e85875bee6fe5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48791791"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071970"
 ---
 # <a name="compliance-manager-quickstart"></a>Compliance-Manager-Schnellstart
 
@@ -43,6 +43,7 @@ Unsere [Kompatibilitäts-Manager](compliance-manager.md) -Übersichtsseite ist d
 - [Filtern der Dashboardansicht](compliance-manager-setup.md#filtering-your-dashboard-view)
 - [Informationen zu Verbesserungs Aktionen](compliance-manager-setup.md#improvement-actions-page)
 - [Grundlegendes zu Bewertungen](compliance-manager.md#assessments)
+- [Ausführen eines Schnellscans Ihrer Umgebung mit dem Microsoft Compliance Configuration Manager](compliance-manager-mcca.md)
 
 ## <a name="ramping-up-configure-compliance-manager-to-manage-your-compliance-activities"></a>Hochfahren: Configure Compliance Manager to manage your Compliance Activities
 

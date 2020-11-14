@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Legen Sie die Benutzerberechtigungen und-Rollen von Microsoft Compliance Manager fest, und konfigurieren Sie automatisierte Tests von Aktionen. Verwalten Sie den Benutzerverlauf, und Filtern Sie die Dashboardansicht.
-ms.openlocfilehash: 141ddc8ac371b1a36c69ee79b5438408f8da19e8
-ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
+ms.openlocfilehash: d6dd7263779ae7f3e9366c0984360c191a62d5e8
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48791893"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072890"
 ---
 # <a name="get-started-with-compliance-manager"></a>Erste Schritte mit Compliance-Manager
 
@@ -30,9 +30,9 @@ ms.locfileid: "48791893"
 
 ## <a name="who-can-access-compliance-manager"></a>Wer auf den Compliance-Manager zugreifen kann
 
-Compliance-Manager steht Organisationen mit Office 365-und Microsoft 365-Lizenzen zur Verfügung. Die Verfügbarkeit und die Verwaltungsfunktionen für die Bewertung hängen von Ihrem Lizenzvertrag ab.  [Anzeigen von Details zur Dienstbeschreibung](https://go.microsoft.com/fwlink/?linkid=2132371).
+Compliance-Manager ist für Organisationen mit Office 365-und Microsoft 365-Lizenzen und für US Government Community Cloud (gcc) moderate Kunden verfügbar. Die Verfügbarkeit und die Verwaltungsfunktionen für die Bewertung hängen von Ihrem Lizenzvertrag ab.  [Anzeigen von Details zur Dienstbeschreibung](https://go.microsoft.com/fwlink/?linkid=2132371).
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Vorbereitung
 
 Der globale Administrator Microsoft 365 für Ihre Organisation ist wahrscheinlich der erste Benutzer, der auf den Compliance-Manager zugreift. Wenn Sie den Compliance-Manager zum ersten Mal besuchen, empfehlen wir die globale Administratoranmeldung und legen Benutzerberechtigungen fest, wie unten beschrieben.
 
@@ -67,7 +67,7 @@ Führen Sie die folgenden Schritte aus, um Berechtigungen im Microsoft 365 Compl
 
 7. Aktivieren Sie das Kontrollkästchen neben den Namen, die Sie hinzufügen möchten, und klicken Sie dann unten auf die Schaltfläche **Hinzufügen** .
 
-8. Wenn Sie mit dem Zuweisen von Benutzern fertig sind, wählen Sie **Fertig** aus, und klicken Sie dann auf **Speichern** und dann auf **Schließen** .
+8. Wenn Sie mit dem Zuweisen von Benutzern fertig sind, wählen Sie **Fertig** aus, und klicken Sie dann auf **Speichern** und dann auf **Schließen**.
 
 ##### <a name="more-about-the-office-365-secruity--compliance-center"></a>Weitere Informationen zum Office 365 secruity & Compliance Center
 

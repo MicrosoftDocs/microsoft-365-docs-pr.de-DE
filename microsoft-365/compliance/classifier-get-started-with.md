@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Eine Microsoft 365-Klassifizierung ist ein Tool, mit dem Sie verschiedene Arten von Inhalten erkennen können, indem Sie sich Beispiele ansehen. In diesem Artikel erfahren Sie, wie Sie eine benutzerdefinierte Klassifizierung erstellen und trainieren und Sie neu trainieren, um die Genauigkeit zu verbessern.
-ms.openlocfilehash: f0d3659c1ee03fe69a5513f24d15b295400a24dc
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 9fe50f7faada77492fd93a86d0c3549cc8e1d361
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906346"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072964"
 ---
 # <a name="get-started-with-trainable-classifiers-preview"></a>Erste Schritte mit trainierbaren Klassifizierern (Vorschau)
 
@@ -53,7 +53,7 @@ Sie benötigen Konten mit diesen Berechtigungen für die Verwendung von Klassifi
 - Kommunikations Konformitätsrichtlinien Szenario: Administrator für Insider Risiko Management, Aufsichts Überprüfungs Administrator 
 
 > [!IMPORTANT]
-> Standardmäßig kann nur der Benutzer, der eine benutzerdefinierte Klassifizierung erstellt, die von dieser Klassifizierung vorgenommenen Vorhersagen trainieren und überprüfen. Wenn andere Benutzer in der Lage sein sollen, Klassifizierungs Vorhersagen auszubilden und zu überprüfen, finden Sie weitere Informationen unter [Erteilen von Schulungs-und Überprüfungs rechten](#give-others-train-and-review-rights).
+> Standardmäßig kann nur der Benutzer, der eine benutzerdefinierte Klassifizierung erstellt, die von dieser Klassifizierung vorgenommenen Vorhersagen trainieren und überprüfen.
 
 ## <a name="prepare-for-a-custom-trainable-classifier"></a>Vorbereiten auf eine benutzerdefinierte Schulungs Klassifizierung 
 
@@ -156,21 +156,3 @@ Nachdem die Schulungs fähigen Klassifizierung genügend positive Beispiele zum 
 20. Veröffentlichen Sie die Klassifizierung.
 
 21. Nachdem Ihre Klassifizierung veröffentlicht wurde, wird Sie als Bedingung in der [automatischen Office-Bezeichnungsrichtlinie mit Vertraulichkeits Bezeichnungen](apply-sensitivity-label-automatically.md), [automatisch angewendeten Aufbewahrungs Bezeichnungsrichtlinien basierend auf einer Bedingung](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) und in der [Kommunikations Konformität](communication-compliance.md)verfügbar sein.
-
-## <a name="give-others-train-and-review-rights"></a>Erteilen von anderen Schulungs-und Überprüfungs rechten
-
-Verwenden Sie dieses Verfahren, um anderen Benutzern die Berechtigung zum trainieren, überprüfen und Optimieren Ihrer benutzerdefinierten Schulungs Klassifizierung zu erteilen.  
- 
-1. Als Ersteller der Klassifizierung verbindet sich ein globaler Administrator oder eDiscovery-Administrator mit dem Compliance Center mithilfe von PowerShell mit den Verfahren unter [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps&preserve-view=true).
-
-2. Führen Sie den folgenden Befehl aus:
-
-   ```powershell
-   Add-ComplianceCaseMember -Case "<classifier name>" -Member "<user or role group>"
-   ```
-   
-   Zum Beispiel:
-   
-   `Add-ComplianceCaseMember -Case "Financial Contract Classifier" -Member johnevans@contoso.com`
-
-   Sie können diesen Befehl mehrmals ausführen, um mehrere Benutzer hinzuzufügen. Beachten Sie, dass Sie nur Exchange Online-Schutz (EoP)-Rollengruppen und keine Azure-Rollengruppen hinzufügen können.

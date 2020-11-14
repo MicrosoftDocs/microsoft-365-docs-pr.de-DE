@@ -12,16 +12,16 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 1523e80f187cd7df6d8e44b91b85c39608e2f49c
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 6eb8bf91f5af60658686066b75b33b7a8dabe6bc
+ms.sourcegitcommit: e03bc2945e63f7f2638257e530056ae9283b45d9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416489"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49070869"
 ---
 # <a name="insider-risk-management-content-explorer"></a>Insider Risikomanagement-Inhalts-Explorer
 
-Das Insider Risk Management Content Explorer ermöglicht Benutzern, denen die Rolle " **Insider Risk Management Investigators** " zugewiesen ist, den Kontext und Details der in Warnungen erfassten Kommunikation zu untersuchen. Bei allen Warnungen werden Kopien von Daten und Nachrichtendateien als Momentaufnahme der Elemente archiviert, wobei die ursprünglichen Dateien und Nachrichten in den Speicherquellen beibehalten werden. Das Kopieren von Daten und Nachrichten ist für den Benutzer, der der Warnung zugeordnet ist, und für den Besitzer des Inhalts transparent. Die Berechtigungseinstellungen und Zugriffsrechte für die Daten werden für den kopierten Inhalt und Nachrichten verwaltet, und Risikoanalysten und Ermittler benötigen diese Berechtigungen und Rechte, wenn Sie die Dateien öffnen und anzeigen müssen. Jeder Datei und jeder Nachricht wird im Fall des Insider Risikomanagements für Verwaltungszwecke automatisch eine eindeutige Datei-ID zugewiesen. Dokumente im Zusammenhang mit Geräte Indikator Aktivitäten sind im Inhalts-Explorer nicht enthalten.
+Das Insider Risk Management Content Explorer ermöglicht Benutzern, denen die Rolle " *Insider Risk Management Investigators* " zugewiesen ist, den Kontext und Details von Inhalten zu untersuchen, die mit Aktivität in Warnungen verknüpft sind. Für alle Benachrichtigungen, die in einem Fall bestätigt werden, werden Kopien von Daten und Nachrichtendateien als Momentaufnahme der Elemente archiviert, wobei die ursprünglichen Dateien und Nachrichten in den Speicherquellen beibehalten werden. Das Kopieren von Daten und Nachrichten ist für den Benutzer, der der Warnung zugeordnet ist, und für den Besitzer des Inhalts transparent. Wenn der Inhalt Berechtigungen für die Verwaltung von Informationsrechten enthält, werden diese Berechtigungen für den kopierten Inhalt beibehalten, und Benutzer, denen die Rolle " *Insider Risk Management Investigators* " zugewiesen ist, benötigen diese Berechtigungen und Rechte, wenn Sie die Dateien öffnen und anzeigen müssen. Jeder Datei und jeder Nachricht wird für Verwaltungszwecke im Insider Risk Management-Fall automatisch eine eindeutige Datei-ID zugewiesen. Dokumente im Zusammenhang mit Geräte Indikator Aktivitäten sind im Inhalts-Explorer nicht enthalten.
 
 ![Insider Risikomanagement-Inhalts-Explorer](../media/insider-risk-content-explorer.png)
 
@@ -44,7 +44,7 @@ Verwenden Sie zum Hinzufügen oder Entfernen von Spaltenüberschriften für die 
 | **Dominantes Design** | Dominantes Design, berechnet für Analyse. |
 | **E-Mail-ID festlegen** | Gruppen-ID für alle Nachrichten in derselben e-Mail-Gruppe. |
 | **Familien-ID** | Familien-ID-Gruppen alle Elemente zusammen; für e-Mails enthält diese Spalte die Nachricht und alle Anlagen; bei Dokumenten enthält diese Spalte das Dokument und alle eingebetteten Elemente. |
-| **File-Klasse** | Für Inhalte aus SharePoint und OneDrive: **Document**; für Inhalte aus Exchange: * * e-Mail oder **Anhang**. |
+| **File-Klasse** | Für Inhalte aus SharePoint und OneDrive: **Document** ; für Inhalte aus Exchange: * * e-Mail oder **Anhang**. |
 | **Datei-ID** | In der Anfrage eindeutige Dokument-ID. |
 | **Dateityp Symbol** | Die Erweiterung einer Datei; beispielsweise docx, 1, PPTX oder xlsx. Dieses Feld ist dieselbe Eigenschaft wie die FileExtension-Website Eigenschaft. |
 | **ID** | Der GUID-Bezeichner für die Datei. |
@@ -66,7 +66,7 @@ Verwenden Sie zum Hinzufügen oder Entfernen von Spaltenüberschriften für die 
 | **Betreff/Titel** | Bei E-Mails: Der Text in der Betreffzeile einer Nachricht.   Für Dokumente der Titel des Dokuments. Wie bereits erläutert, ist die Title-Eigenschaft in Microsoft Office Dokumenten angegebene Metadaten. Sie können den Namen von mehr als einem Betreff/Titel eingeben, getrennt durch Kommas. Mindestens zwei Werte sind durch den or-Operator logisch miteinander verbunden. |
 | **Themenliste** | Für Analyse berechnete Themenliste. |
 | **Titel** | Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in Office-Dokumenten angegeben sind. Er unterscheidet sich von dem Dateinamen des Dokuments. |
-| **Ziel** | Der Empfänger einer e-Mail-Nachricht im Feld an. |
+| **Bis** | Der Empfänger einer e-Mail-Nachricht im Feld an. |
 
 ## <a name="advanced-search-conditions"></a>Erweiterte Suchbedingungen
 
@@ -127,10 +127,10 @@ In der folgenden Tabelle sind die Eigenschaftenbedingungen für e-Mail-Nachricht
 | **Teilnehmer** | Alle Personen Felder in einer e-Mail-Nachricht. Diese Felder sind von, in, CC und Bcc. |
 | **Received** | Das Datum, an dem eine E-Mail-Nachricht von einem Empfänger empfangen wurde. |
 | **Empfängerdomänen** | Liste aller Domänen der Empfänger einer Nachricht. |
-| **Sender** | Absenderfeld (von) für Nachrichtentypen.  Format ist **Display \<SmtpAddress> Name **. |
+| **Sender** | Absenderfeld (von) für Nachrichtentypen.  Format ist **Display \<SmtpAddress> Name**. |
 | **Absenderdomäne** | Domäne des Absenders. |
 | **Betreff** | Der Text in der Betreffzeile einer E-Mail.  <br/> **Hinweis:** Wenn Sie die Subject-Eigenschaft in einer Abfrage verwenden, gibt die Suche alle Nachrichten zurück, in denen die Betreffzeile den gesuchten Text enthält. Mit anderen Worten: die Abfrage gibt nicht nur die Nachrichten zurück, die eine exakte Übereinstimmung aufweisen. Wenn Sie beispielsweise nach suchen `subject:"Quarterly Financials"` , enthalten Ihre Ergebnisse Nachrichten mit dem Betreff "Quarterly Financials 2018". |
-| **Ziel** | Das Feld „An“ einer E-Mail-Nachricht. |
+| **Bis** | Das Feld „An“ einer E-Mail-Nachricht. |
 | **Eindeutig in e-Mail-Gruppe** | False, wenn in der e-Mail-Gruppe ein Duplikat der Anlage vorhanden ist. |
 
 ## <a name="document-property-conditions"></a>Dokument Eigenschaftsbedingungen
@@ -148,7 +148,7 @@ In der folgenden Tabelle sind die Dokumenteigenschaften Bedingungen aufgelistet,
 | **Custodian** | Name der Depotbank, der das Element zugeordnet wurde. |
 | **Dominantes Design** | Dominantes Design, berechnet für Analyse. |
 | **Familien-ID** | Familien-ID-Gruppen alle Elemente zusammen; für e-Mails enthält dieses Feld die Nachricht und alle Anlagen; bei Dokumenten enthält dieses Feld das Dokument und alle eingebetteten Elemente. |
-| **File-Klasse** | Für Inhalte aus SharePoint und OneDrive: **Document**; für Inhalte aus Exchange: * * e-Mail oder **Anhang**. |
+| **File-Klasse** | Für Inhalte aus SharePoint und OneDrive: **Document** ; für Inhalte aus Exchange: * * e-Mail oder **Anhang**. |
 | **Dateitypen** | Die Erweiterung einer Datei; beispielsweise docx, 1, PPTX oder xlsx. |
 | **Hat Anwalts Teilnehmer** | True, wenn mindestens einer der Teilnehmer in der anwaltsliste gefunden wird; Andernfalls ist der Wert false. |
 | **Unveränderliche ID** | Unveränderliche ID wie in Office 365 gespeichert. |

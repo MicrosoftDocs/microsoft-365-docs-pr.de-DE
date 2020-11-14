@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 9cb1afe0d8983943b83661880b4b41a6138703ad
-ms.sourcegitcommit: 5a355bde865369f64ea1788a378da23c65b1d249
+ms.openlocfilehash: e8ce5a144c7361cd483a903dc3e287a4a51a508b
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48930208"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49073072"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referenz zur Kommunikation Compliance-Feature
 
@@ -58,7 +58,7 @@ Je nachdem, wie Sie Kommunikationsrichtlinien und Warnungen verwalten möchten, 
 
 Wählen Sie unter diese Rollengruppen Optionen aus, wenn Sie die Kommunikations Kompatibilität konfigurieren:
 
-|**Rolle**|**Rollenberechtigungen**|
+|**Rollengruppe**|**Rollengruppen Berechtigungen**|
 |:-----|:-----|
 | **Kommunikation Compliance** | Verwenden Sie diese Rollengruppe, um die Kommunikations Konformität für Ihre Organisation in einer einzigen Gruppe zu verwalten. Durch Hinzufügen aller Benutzerkonten für designierte Administratoren, Analysten, Ermittler und Betrachter können Sie die Berechtigungen für die Kommunikations Konformität in einer einzigen Gruppe konfigurieren. Diese Rollengruppe enthält alle Berechtigungsrollen für die Kommunikations Konformität. Diese Konfiguration ist die einfachste Möglichkeit, um schnell mit der Kommunikation zu beginnen, und Sie eignet sich gut für Organisationen, die keine separaten Berechtigungen benötigen, die für getrennte Benutzergruppen definiert sind. |
 | **Communication Compliance-Administrator** | Verwenden Sie diese Rollengruppe, um die Kommunikationsrichtlinien Konfiguration zu konfigurieren und später Kommunikationsrichtlinien Administratoren in eine definierte Gruppe zu trennen. Benutzer, die dieser Rollengruppe zugewiesen sind, können Kommunikationsrichtlinien, globale Einstellungen und Rollengruppen Zuordnungen erstellen, lesen, aktualisieren und löschen. Benutzer, die dieser Rollengruppe zugewiesen sind, können keine Nachrichten Benachrichtigungen anzeigen. |
@@ -216,7 +216,7 @@ In der folgenden Tabelle werden die einzelnen Bedingungen näher erläutert.
 Jedes Wort, das Sie eingeben und mit einem Komma trennen, wird separat angewendet (nur ein Wort muss gelten, damit die Richtlinienbedingung auf die e-Mail oder Anlage angewendet wird). Verwenden wir beispielsweise die Bedingung, **Nachricht enthält eines dieser Wörter** , wobei die Schlüsselwörter "Banker", "vertraulich" und "Insiderhandel" durch ein Komma getrennt sind (Banker, Confidential, "Insiderhandel"). Die Richtlinie gilt für alle Nachrichten, die das Wort "Banker", "vertraulich" oder den Ausdruck "Insiderhandel" enthalten. Nur eins der Wörter oder einer der Ausdrücke muss vorkommen, damit die Richtlinienbedingung zutrifft. Wörter in der Nachricht oder Anlage müssen genau übereinstimmen, die Sie eingeben.
 
 >[!IMPORTANT]
->Wenn Sie eine benutzerdefinierte Wörterbuchdatei importieren, muss jedes Wort oder jeder Ausdruck mit einem Wagenrücklauf und in einer separaten Zeilen getrennt werden. <br> Zum Beispiel: <br><br>
+>Wenn Sie eine benutzerdefinierte Wörterbuchdatei importieren, muss jedes Wort oder jeder Ausdruck mit einem Wagenrücklauf und in einer separaten Zeilen getrennt werden. <br> Beispiel: <br><br>
 >*Banker* <br>
 >*vertraulich* <br>
 >*Insiderhandel*
@@ -241,7 +241,7 @@ Der Schutz der Privatsphäre von Benutzern mit Richtlinien Übereinstimmungen is
 
 Für Benutzer mit einer Übereinstimmung mit Kommunikations Kompatibilität können Sie in den Einstellungen für die **Kommunikations Kompatibilität** eine der folgenden Einstellungen auswählen:
 
-- **Anonyme Versionen von** Benutzernamen anzeigen: Benutzernamen werden anonymisiert, um zu verhindern, dass Administratoren, Analysten, Daten Ermittler und Bearbeiter sehen, wem die Richtlinienwarnungen zugeordnet sind. Beispielsweise würde ein Benutzer "Grace Taylor" mit einem randomisierten Pseudonym wie "AnonIS8-988" in allen Bereichen der Kommunikations Konformitäts Erfahrung angezeigt. Wenn Sie diese Einstellung wählen, werden alle Benutzer mit aktuellen und früheren Richtlinienübereinstimmungen anonymisiert und gelten für alle Richtlinien. Benutzerprofilinformationen in den Benachrichtigungsdetails zur Kommunikations Konformität sind nicht verfügbar, wenn diese Option ausgewählt wird. Benutzernamen werden jedoch beim Hinzufügen neuer Benutzer zu vorhandenen Richtlinien oder beim Zuweisen von Benutzern zu neuen Richtlinien angezeigt. Wenn Sie diese Einstellung deaktivieren, werden Benutzernamen für alle Benutzer angezeigt, die aktuelle oder vergangene Richtlinien Übereinstimmungen aufweisen.
+- **Anonyme Versionen von** Benutzernamen anzeigen: Benutzernamen werden anonymisiert, um zu verhindern, dass Benutzer in der Rollengruppe *Kommunikation Compliance Analysten* sehen, wem die Richtlinienwarnungen zugeordnet sind. Benutzer in der Rollengruppe *Kommunikation Compliance Investigator* sehen immer Benutzernamen, nicht die anonymisierten Versionen. Beispielsweise würde ein Benutzer "Grace Taylor" mit einem randomisierten Pseudonym wie "AnonIS8-988" in allen Bereichen der Kommunikations Konformitäts Erfahrung angezeigt. Wenn Sie diese Einstellung wählen, werden alle Benutzer mit aktuellen und früheren Richtlinienübereinstimmungen anonymisiert und gelten für alle Richtlinien. Benutzerprofilinformationen in den Benachrichtigungsdetails zur Kommunikations Konformität sind nicht verfügbar, wenn diese Option ausgewählt wird. Benutzernamen werden jedoch beim Hinzufügen neuer Benutzer zu vorhandenen Richtlinien oder beim Zuweisen von Benutzern zu neuen Richtlinien angezeigt. Wenn Sie diese Einstellung deaktivieren, werden Benutzernamen für alle Benutzer angezeigt, die aktuelle oder vergangene Richtlinien Übereinstimmungen aufweisen.
 - **Anonyme Versionen von Benutzernamen nicht anzeigen** : Benutzernamen werden für alle aktuellen und letzten Richtlinien Übereinstimmungen für Benachrichtigungen zur Kommunikations Konformität angezeigt. Benutzerprofilinformationen (Name, Titel, Alias und Organisation oder Abteilung) werden für den Benutzer für alle Benachrichtigungen zur Kommunikations Konformität angezeigt.
 
 ## <a name="notice-templates"></a>Benachrichtigungsvorlagen
@@ -250,7 +250,7 @@ Sie können Benachrichtigungsvorlagen erstellen, wenn Sie Benutzern eine e-Mail-
 
 Notices-Vorlagen sind benutzerdefinierte e-Mail-Vorlagen, in denen Sie die folgenden Nachrichtenfelder im Bereich **Kommunikations Kompatibilitätseinstellungen** definieren können:
 
-|**Feld**|**Required**| **Details** |
+|**Field**|**Required**| **Details** |
 |:-----|:-----|:-----|
 |**Vorlagenname** | Ja | Anzeigename für die Notizvorlage, die Sie im Benachrichtigungs Workflow während der Wiederherstellung auswählen, unterstützt Textzeichen. |
 | **Absenderadresse** | Ja | Die Adresse von einem oder mehreren Benutzern oder Gruppen, die die Nachricht mit einer Richtlinienübereinstimmung an den Benutzer senden, ausgewählt aus dem Active Directory für Ihr Abonnement. |
@@ -431,7 +431,7 @@ In einigen Fällen müssen Sie Aufsichtsbehörden oder Compliance-Prüfern Infor
 
 Wählen Sie zum Anzeigen von Updateaktivitäten für die Kommunikationsrichtlinien Aktualisierung auf der Hauptseite für eine Richtlinie das Steuerelement **Export Richtlinienupdates** aus. Sie müssen den *globalen* Administrator-oder *Kommunikationsrichtlinien-Administrator* Rollen zugewiesen sein, um Aktualisierungsaktivitäten zu exportieren. Mit dieser Aktion wird eine Überwachungsdatei im CSV-Format generiert, die die folgenden Informationen enthält:
 
-|**Feld**|**Details**|
+|**Field**|**Details**|
 |:-----|:-----|
 | **CreationDate** | Das Datum, an dem die Update Aktivität in einer Richtlinie ausgeführt wurde. |
 | **UserIds** | Der Benutzer, der die Aktualisierungsaktivität in einer Richtlinie ausgeführt hat. |
@@ -440,7 +440,7 @@ Wählen Sie zum Anzeigen von Updateaktivitäten für die Kommunikationsrichtlini
 
 Zum **Anzeigen der Aktivitäten** zur Kommunikation-Konformitätsüberprüfung für eine Richtlinie wählen Sie auf der Übersichtsseite für eine bestimmte Richtlinie das Steuerelement zum **Überprüfen von Aktivitäten exportieren** aus. Sie müssen über die Administratorrollen für den *globalen Administrator* oder die *Kommunikations Konformität* verfügen, um Prüfungsaktivitäten zu exportieren. Mit dieser Aktion wird eine Überwachungsdatei im CSV-Format generiert, die die folgenden Informationen enthält:
 
-|**Feld**|**Details**|
+|**Field**|**Details**|
 |:-----|:-----|
 | **CreationDate** | Das Datum, an dem die Überprüfungsaktivität in einer Richtlinie ausgeführt wurde. |
 | **UserIds** | Der Benutzer, der die Überprüfungsaktivität in einer Richtlinie ausgeführt hat. |

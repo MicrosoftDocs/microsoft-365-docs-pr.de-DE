@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager unterstützt Organisationen bei der Vereinfachung und Automatisierung von Risikobewertungen und schlägt Empfohlene Maßnahmen zur Behandlung von Risiken vor.
-ms.openlocfilehash: d7136368a1c9726d1a77a0c99e717b98e1920242
-ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
+ms.openlocfilehash: 4508f07b0077d409de1ac033de67d20d1c3f2a7e
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48791803"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072934"
 ---
 # <a name="microsoft-compliance-manager"></a>Microsoft Compliance-Manager
 
@@ -30,7 +30,7 @@ ms.locfileid: "48791803"
 
 ## <a name="whats-new-the-ga-release-of-compliance-manager"></a>Neuerungen: die GA-Version von Compliance-Manager
 
-Compliance-Manager ist jetzt allgemein (GA) als End-to-End-Compliance-Verwaltungslösung im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md)verfügbar. Mit dieser Version schließt Compliance-Manager den Übergang von seinem vorherigen Speicherort im Microsoft Service Trust-Portal ab.
+Compliance-Manager ist jetzt allgemein (GA) als End-to-End-Compliance-Verwaltungslösung im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md)verfügbar. Mit dieser Version schließt Compliance-Manager den Übergang von seinem vorherigen Speicherort im Microsoft Service Trust-Portal ab. Compliance-Manager steht nun auch für US Government Community (gcc) moderate Kunden zur Verfügung.
 
 Was als Public Preview of Compliance Score begann, hat sich zu einem zentralisierten Tool mit verbesserten Compliance-Verwaltungsfunktionen und größerer Benutzerfreundlichkeit entwickelt.  Die GA-Version enthält eine größere Sammlung vordefinierter Bewertungen, die Sie bei der Skalierung Ihrer Compliance-Aktivitäten unterstützen.
 
@@ -67,7 +67,7 @@ Compliance-Manager vergibt Ihnen Punkte für die Durchführung von Verbesserungs
 
 Compliance-Manager gibt Ihnen eine erste Bewertung basierend auf der Microsoft 365-Datenschutz Basis. Dieser Basisplan umfasst eine Reihe von Steuerelementen, die wichtige Regeln und Standards für den Datenschutz und die allgemeine Datensteuerung beinhalten.
 
-##### <a name="learn-more"></a>Mehr erfahren
+##### <a name="learn-more"></a>Weitere Informationen
 
 Grund [Legendes zur Berechnung der Konformitätsbewertung](compliance-score-calculation.md)
 
@@ -87,7 +87,7 @@ Compliance-Manager verfolgt die folgenden Arten von Steuerelementen:
 2. **Ihre Steuerelemente** : manchmal auch als von Kunden verwaltete Steuerelemente bezeichnet, sind dies Steuerelemente, die von Ihrer Organisation implementiert und verwaltet werden.
 3. **Gemeinsame Steuerelemente** : Dies sind Steuerelemente, die sowohl in Ihrer Organisation als auch in Microsoft für die Implementierung verantwortlich sind.
 
-##### <a name="learn-more"></a>Mehr erfahren
+##### <a name="learn-more"></a>Weitere Informationen
 
 [Überwachen Sie den Status Ihrer Steuerelemente](compliance-manager-assessments.md#monitor-assessment-progress-and-controls).
 
@@ -107,7 +107,7 @@ Assessments weisen mehrere Komponenten auf:
 
 Beim Erstellen von Bewertungen weisen Sie diese einer Gruppe zu. Sie können Gruppen auf beliebige Weise konfigurieren, die für Ihre Organisation am logischsten ist. Sie können beispielsweise Bewertungen nach Überwachungsjahr, Region, Lösung, Teams in Ihrer Organisation oder auf andere Weise gruppieren. Nachdem Sie Gruppen erstellt haben, können Sie [Ihr Compliance-Manager-Dashboard Filtern](compliance-manager-setup.md#filtering-your-dashboard-view) , um Ihre Bewertung von einer oder mehreren Gruppen anzuzeigen.
 
-##### <a name="learn-more"></a>Mehr erfahren
+##### <a name="learn-more"></a>Weitere Informationen
 
 [Erstellen und Verwalten von Bewertungen im Compliance-Manager](compliance-manager-assessments.md).
 
@@ -115,7 +115,7 @@ Beim Erstellen von Bewertungen weisen Sie diese einer Gruppe zu. Sie können Gru
 
 Compliance-Manager stellt Vorlagen zur Verfügung, mit denen Sie schnell Bewertungen erstellen können. Sie können diese Vorlagen ändern, um eine für Ihre Anforderungen optimierte Bewertung zu erstellen. Sie können auch eine benutzerdefinierte Bewertung erstellen, indem Sie eine Vorlage mit ihren eigenen Steuerelementen und Aktionen erstellen. Beispielsweise kann es sein, dass eine Vorlage eine interne Geschäftsprozess Steuerung oder einen regionalen Datenschutzstandard abdeckt, der nicht von einer unserer 150 vorab erstellten Bewertungs Vorlagen abgedeckt wird.
 
-##### <a name="learn-more"></a>Mehr erfahren
+##### <a name="learn-more"></a>Weitere Informationen
 
 [Hier finden Sie eine Liste der vom Compliance-Manager bereitgestellten Bewertungs Vorlagen](compliance-manager-templates-list.md).
 
@@ -125,7 +125,7 @@ Compliance-Manager stellt Vorlagen zur Verfügung, mit denen Sie schnell Bewertu
 
 Verbesserungs Aktionen helfen beim zentralisieren Ihrer Compliance-Aktivitäten. Jede Verbesserungs Aktion enthält empfohlene Anleitungen, die Sie bei der Anpassung an Datenschutzbestimmungen und-Standards unterstützen sollen. Verbesserungs Aktionen können Benutzern in Ihrer Organisation zugewiesen werden, um Implementierungs-und Testaufgaben auszuführen. Sie können auch Dokumentation, Notizen und Datensatzstatus Aktualisierungen in der Verbesserungs Aktion speichern.
 
-##### <a name="learn-more"></a>Mehr erfahren
+##### <a name="learn-more"></a>Weitere Informationen
 
 [Verwenden Sie Verbesserungs Aktionen, um den Compliance-Workflow zu verwalten](compliance-manager-improvement-actions.md).
 
