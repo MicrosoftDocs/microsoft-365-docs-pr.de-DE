@@ -15,38 +15,34 @@ ms.collection:
 - commerce
 - Adm_NonTOC
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-ms.assetid: 0199dd39-7c46-4875-af9b-588df3a9afea
 ROBOTS: NOINDEX
 description: Erfahren Sie, wie Sie einen Microsoft 365 Business Standard Product Key einlösen, der in einem Einzelhandelsgeschäft erworben wurde.
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: 9dcf38937e6140f1b0b20688d1dac0a9f3962cbe
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 1c647efaa880096a9fc7713aa28960d563eff69d
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638363"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072747"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Geben Sie Ihren Product Key für Microsoft 365 Business Standard ein.
 
-Wenn Sie Microsoft 365 Business Standard in einem Einzelhandelsgeschäft erworben haben, hilft Ihnen dieser Artikel bei der Aktivierung Ihres Abonnements. 
+Wenn Sie Microsoft 365 Business Standard in einem Einzelhandelsgeschäft erworben haben, hilft Ihnen dieser Artikel bei der Aktivierung Ihres Abonnements.
   
  **Benötigen Sie etwas anderes?**
- **Hilfe zur Microsoft 365-Familie oder zu Microsoft 365 Personal**finden Sie unter [Verwenden von Product Keys mit Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
+ **Hilfe zur Microsoft 365-Familie oder zu Microsoft 365 Personal** finden Sie unter [Verwenden von Product Keys mit Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
  **Sind Sie ein Volumenlizenzkunde?** Wenn Sie Microsoft 365 for Business über ein [Microsoft Open License-Programm](https://go.microsoft.com/fwlink/p/?LinkID=613298)erworben haben, lesen Sie den Artikel geben Sie den [von Microsoft Open erworbenen Product Key](purchases-from-microsoft-open.md)ein.
   
 ## <a name="activate-a-new-subscription"></a>Aktivieren eines neuen Abonnements
 
-1. Wechseln Sie zu <a href="https://go.microsoft.com/fwlink/p/?LinkId=839911" target="_blank">Office.com/setupkey</a>.
+1. Wechseln Sie zu <a href="https://go.microsoft.com/fwlink/p/?LinkId=839911" target="_blank">https://microsoft365.com/setupbusiness</a>.
 
-2. Geben Sie Ihren Product Key ein, und wählen Sie dann **weiter**aus.
+2. Geben Sie Ihren Product Key ein, und wählen Sie dann **weiter** aus.
 
-3. Geben Sie Ihren Namen, geschäftliche e-Mail-Adresse, geschäftliche Telefonnummer, Firmennamen und Land oder Region ein, und wählen Sie dann **weiter**aus.
+3. Geben Sie Ihren Namen, geschäftliche e-Mail-Adresse, geschäftliche Telefonnummer, Firmennamen und Land oder Region ein, und wählen Sie dann **weiter** aus.
 
 4. Geben Sie eine Telefonnummer ein, um entweder einen Text oder einen Anruf zu erhalten, um Ihre Identität zu überprüfen.
 
@@ -59,7 +55,7 @@ Wenn Sie Microsoft 365 Business Standard in einem Einzelhandelsgeschäft erworbe
 
 ## <a name="extend-the-expiration-date-or-add-a-license-to-an-existing-subscription"></a>Verlängern des Ablaufdatums oder Hinzufügen einer Lizenz zu einem vorhandenen Abonnement
 
-Wenn Sie einen Product Key zum Verlängern des Ablaufdatums oder zum Hinzufügen einer Lizenz zu Ihrem vorhandenen Microsoft 365 Business Standard-Abonnement verwenden möchten, benötigen Sie einen neuen und ungenutzten Schlüssel für denselben Microsoft 365-Plan. Das Eingeben Ihres ursprünglichen Microsoft 365-Product Keys funktioniert nicht, da ein bereits eingelöster Schlüssel nicht erneut verwendet werden kann. Weitere Informationen finden Sie unter [Hinzufügen von Lizenzen oder verlängern eines Abonnements, das mit einem Product Key bezahlt](licenses/add-licenses-using-product-key.md)wurde.
+Wenn Sie das Ablaufdatum verlängern oder eine Lizenz zu Ihrem vorhandenen Microsoft 365 Business Standard-Abonnement hinzufügen möchten, verwenden Sie einen neuen und nicht verwendeten Schlüssel für denselben Microsoft 365-Plan. Das Eingeben Ihres ursprünglichen Microsoft 365-Product Keys funktioniert nicht, da ein bereits eingelöster Schlüssel nicht erneut verwendet werden kann. Weitere Informationen finden Sie unter [Hinzufügen von Lizenzen oder verlängern eines Abonnements, das mit einem Product Key bezahlt](licenses/add-licenses-using-product-key.md)wurde.
 
 ## <a name="whats-next"></a>Nächste Schritte
 

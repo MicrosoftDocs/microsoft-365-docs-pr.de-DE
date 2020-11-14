@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: a2065ac324acd0a4d5980bceb97f9f6b8ad73058
-ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
+ms.openlocfilehash: 1e2624fea7a93013e4b4de2dd4ede4144000f075
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49002245"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49073083"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Mandantenübergreifende Postfachmigration (Vorschau)
 
@@ -59,10 +59,10 @@ Hier erfahren Sie, wie der Prozess funktioniert.
 
 :::image type="content" source="../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png" alt-text="Mandanten Vorbereitung für die Postfachmigration.":::
 
+[Sehen Sie sich eine größere Version dieses Bilds an](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png).
+
 <!--
 [![Tenant preparation for mailbox migration](../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png)
-
-[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png).
 --> 
 
 ### <a name="prepare-tenants"></a>Vorbereiten von Mandanten

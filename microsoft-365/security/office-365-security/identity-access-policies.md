@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: f9c26e7e4af99174c5723b44c59d7279ca93afa5
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 19e121ce3f85dc31c3bf81c4750300c4016b1222
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846448"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072771"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Allgemeine Identitäts- und Gerätezugriffsrichtlinien
 
@@ -35,8 +35,9 @@ In diesem Leitfaden wird erläutert, wie die empfohlenen Richtlinien in einer ne
 
 Das folgende Diagramm zeigt die empfohlenen Richtlinien. Es wird angezeigt, auf welcher Schutzebene jede Richtlinie angewendet wird und ob die Richtlinien auf PCs oder Telefone und Tablets oder auf beide Gerätekategorien zutreffen. Außerdem wird angegeben, wo Sie diese Richtlinien konfigurieren.
 
-[ ![ Allgemeine Richtlinien für das Konfigurieren von Identitäts-und Geräte Zugriff](../../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png) 
- [Siehe eine größere Version dieses Abbilds](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+[![Allgemeine Richtlinien für das Konfigurieren des Identitäts-und Gerätezugriffs](../../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+
+[Anzeigen einer größeren Version dieses Bilds](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
 
 Hier finden Sie eine einseitige PDF-Zusammenfassung mit Links zu den einzelnen Richtlinien:
 
@@ -107,7 +108,7 @@ In den folgenden Tabellen werden die Richtlinieneinstellungen für den bedingten
 
 Im Abschnitt **Zuweisungen** :
 
-|Einstellung|Eigenschaften|Werte|Hinweise|
+|Setting|Eigenschaften|Werte|Hinweise|
 |:---|:---------|:-----|:----|
 |Benutzer und Gruppen|Einschließen| **Wählen Sie Benutzer und Gruppen > Benutzer und Gruppen** aus: bestimmte Gruppen mit Zielbenutzer Konten auswählen. |Beginnen Sie mit der Gruppe, die Pilotbenutzer Konten enthält.|
 ||Ausschließen| **Benutzer und Gruppen** : Wählen Sie die Ausnahmegruppe für bedingten Zugriff aus. Dienstkonten (app-Identitäten).|Die Mitgliedschaft sollte auf der Grundlage der erforderlichen, temporären Änderungen geändert werden.|
@@ -129,7 +130,7 @@ Wenden Sie die Einstellungen für die Risikostufe basierend auf der Schutzebene 
 
 Im Abschnitt **Zugriffssteuerungen** :
 
-|Einstellung|Eigenschaften|Werte|Aktion|
+|Setting|Eigenschaften|Werte|Aktion|
 |:---|:---------|:-----|:----|
 |Gewähren|**Grant access**| | Auswählen |
 |||**Mehrstufige Authentifizierung erforderlich**| Prüfen |
@@ -150,7 +151,7 @@ In [diesem Artikel](../../enterprise/microsoft-365-client-support-modern-authent
 
 Im Abschnitt **Zuweisungen** :
 
-|Einstellung|Eigenschaften|Werte|Hinweise|
+|Setting|Eigenschaften|Werte|Hinweise|
 |:---|:---------|:-----|:----|
 |Benutzer und Gruppen|Einschließen| **Wählen Sie Benutzer und Gruppen > Benutzer und Gruppen** aus: bestimmte Gruppen mit Zielbenutzer Konten auswählen. |Beginnen Sie mit der Gruppe, die Pilotbenutzer Konten enthält.|
 ||Ausschließen| **Benutzer und Gruppen** : Wählen Sie die Ausnahmegruppe für bedingten Zugriff aus. Dienstkonten (app-Identitäten).|Die Mitgliedschaft sollte auf der Grundlage der erforderlichen, temporären Änderungen geändert werden.|
@@ -160,7 +161,7 @@ Im Abschnitt **Zuweisungen** :
 
 Im Abschnitt **Zugriffssteuerungen** :
 
-|Einstellung|Eigenschaften|Werte|Aktion|
+|Setting|Eigenschaften|Werte|Aktion|
 |:---|:---------|:-----|:----|
 |Gewähren|**Zugriff blockieren**| | Auswählen |
 ||**Alle ausgewählten Steuerelemente erforderlich** ||Auswählen|

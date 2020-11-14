@@ -26,12 +26,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Zeigen Sie den Integritätsstatus von Microsoft 365-Diensten an, bevor Sie den Support aufrufen, um zu sehen, ob eine aktive Dienstunterbrechung vorliegt.
-ms.openlocfilehash: 20e19072e1a851fba20e556be696146b8ad57a2f
-ms.sourcegitcommit: 392f60efa0921c64ac1462dd63985cd156e6498a
+ms.openlocfilehash: b1819e455732d142c563f598433c410b0ae60882
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "48134075"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072759"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Überprüfen des Microsoft 365-Dienststatus
 
@@ -39,7 +39,8 @@ ms.locfileid: "48134075"
 
 Sie können die Integrität Ihrer Microsoft-Dienste, einschließlich Office im Internet, jammern, Microsoft Dynamics CRM und Cloud-Dienste für die Verwaltung mobiler Geräte, auf der Seite **Dienst Integrität** im [Microsoft 365 Admin Center](https://go.microsoft.com/fwlink/p/?linkid=2024339)anzeigen. Wenn bei einem Clouddienst Probleme auftreten, können Sie den Dienststatus überprüfen, um festzustellen, ob es sich um ein bekanntes Problem handelt, für das bereits an einer Lösung gearbeitet wird, bevor Sie den Support anrufen oder Zeit für die Problembehandlung aufwenden.
 
-Wenn Sie sich nicht im Serviceportal anmelden können, können Sie auf der [Dienststatus-Seite](https://status.office365.com) nach bekannten Problemen suchen, die Sie daran hindern, sich bei Ihrem Mandanten anzumelden.
+Wenn Sie sich nicht beim Admin Center anmelden können, können Sie die [Seite Dienststatus](https://status.office365.com) verwenden, um nach bekannten Problemen zu suchen, die eine Anmeldung bei Ihrem Mandanten verhindern.  Registrieren Sie sich auch, um uns unter [@MSFT365status](https://twitter.com/MSFT365Status) auf Twitter zu folgen, um Informationen zu bestimmten Ereignissen zu erhalten.
+
   
 ### <a name="how-to-check-service-health"></a>Überprüfen des Dienststatus
 
@@ -50,7 +51,7 @@ Wenn Sie sich nicht im Serviceportal anmelden können, können Sie auf der [Dien
   
 2. Wenn Sie nicht das neue Admin Center verwenden, klicken Sie auf der **Start** Seite auf die Schaltfläche **neuen Admin Center** -Schalter in der oberen rechten Ecke testen.
 
-3. Zum Anzeigen des Dienststatus wechseln Sie im Admin Center zu **Status** > **Dienststatus**, oder wählen Sie auf dem **Startdashboard** die Karte **Dienststatus** aus. Die Dashboardkarte gibt an, ob ein Problem mit einem aktiven Dienst vorliegt, und stellt einen Link zur Seite mit Details zum **Dienststatus** bereit.
+3. Zum Anzeigen des Dienststatus wechseln Sie im Admin Center zu **Status** > **Dienststatus** , oder wählen Sie auf dem **Startdashboard** die Karte **Dienststatus** aus. Die Dashboardkarte gibt an, ob ein Problem mit einem aktiven Dienst vorliegt, und stellt einen Link zur Seite mit Details zum **Dienststatus** bereit.
   
 4. Der Status der einzelnen Clouddienste wird auf der Seite **Dienstatus** in einem Tabellenformat angezeigt.
 
@@ -62,11 +63,11 @@ Wenn Sie die Ansicht nach Diensten filtern möchten, die aktuell einen Vorfall a
 
 Auf der Registerkarte **Verlauf** wird der Verlauf von Vorfällen und Empfehlungen angezeigt, die aufgelöst wurden.
 
-Wenn ein Problem mit einem Microsoft 365-Dienst auftritt und diese auf der Seite **Dienststatus** nicht aufgeführt sind, können Sie uns darüber informieren, indem Sie **ein Problem melden**auswählen und das kurze Formular ausfüllen. Wir werden uns mit verwandten Daten und Berichten aus anderen Organisationen beschäftigen, um zu sehen, wie weit verbreitet das Problem ist und ob es von unserem Dienst stammt. Wenn dies der Fall ist, fügen wir ihn als neuen Vorfall oder eine neue Empfehlung auf der Seite **Dienst Integrität** hinzu, auf der Sie die Lösung nachverfolgen können. Wenn es in der Liste nicht innerhalb von 30 Minuten angezeigt wird, sollten Sie sich an den Support wenden, um das Problem zu beheben.
+Wenn ein Problem mit einem Microsoft 365-Dienst auftritt und diese auf der Seite **Dienststatus** nicht aufgeführt sind, können Sie uns darüber informieren, indem Sie **ein Problem melden** auswählen und das kurze Formular ausfüllen. Wir werden uns mit verwandten Daten und Berichten aus anderen Organisationen beschäftigen, um zu sehen, wie weit verbreitet das Problem ist und ob es von unserem Dienst stammt. Wenn dies der Fall ist, fügen wir ihn als neuen Vorfall oder eine neue Empfehlung auf der Seite **Dienst Integrität** hinzu, auf der Sie die Lösung nachverfolgen können. Wenn es in der Liste nicht innerhalb von 30 Minuten angezeigt wird, sollten Sie sich an den Support wenden, um das Problem zu beheben.
 
-Um die Ansicht anzupassen, welche Dienste im Dashboard angezeigt werden, wählen Sie **Preferences**  >  **benutzerdefinierte Ansicht**Einstellungen aus, und deaktivieren Sie die Kontrollkästchen für die Dienste, die aus der Dashboardansicht für den Dienstzustand gefiltert werden sollen. Stellen Sie sicher, dass das Kontrollkästchen für jeden Dienst aktiviert ist, den Sie überwachen möchten.    
+Um die Ansicht anzupassen, welche Dienste im Dashboard angezeigt werden, wählen Sie **Preferences**  >  **benutzerdefinierte Ansicht** Einstellungen aus, und deaktivieren Sie die Kontrollkästchen für die Dienste, die aus der Dashboardansicht für den Dienstzustand gefiltert werden sollen. Stellen Sie sicher, dass das Kontrollkästchen für jeden Dienst aktiviert ist, den Sie überwachen möchten.    
 
-Wenn Sie sich für e-Mail-Benachrichtigungen über neue Vorfälle, die sich auf ihren Mandanten und Statusänderungen für einen aktiven Vorfall auswirken, registrieren möchten, wählen Sie e-Mail- **Einstellungen**aus  >  **Email**, klicken Sie auf **mir Service Heath Notifications in e-Mail senden**und geben
+Wenn Sie sich für e-Mail-Benachrichtigungen über neue Vorfälle, die sich auf ihren Mandanten und Statusänderungen für einen aktiven Vorfall auswirken, registrieren möchten, wählen Sie e-Mail- **Einstellungen** aus  >  **Email** , klicken Sie auf **mir Service Heath Notifications in e-Mail senden** und geben
 
 - Bis zu zwei e-Mail-Adressen.
 - Ob Benachrichtigungen für Vorfälle oder Warnungen gewünscht werden
@@ -86,12 +87,12 @@ Wenn Sie in der Ansicht **Alle Dienste** den Dienststatus auswählen, wird eine 
 
 Die Empfehlungs- oder Vorfallzusammenfassung enthält folgende Informationen:
 
-- **Titel**: Eine Zusammenfassung des Problems.
-- **Dienst**: Der Name des betroffenen Diensts.
-- **ID**: Ein numerischer Bezeichner für das Problem.
-- **Status**: Wie sich dieses Problem auf den Dienst auswirkt.
-- **Startzeit**: Der Zeitpunkt, zu dem das Problem begann.
-- **Letzte Aktualisierung**: Der Zeitpunkt der letzten Aktualisierung der Nachricht zum Dienststatus. Wir veröffentlichen häufig Nachrichten, um Sie über die Fortschritte beim Anwenden einer Lösung zu informieren.
+- **Titel** : Eine Zusammenfassung des Problems.
+- **Dienst** : Der Name des betroffenen Diensts.
+- **ID** : Ein numerischer Bezeichner für das Problem.
+- **Status** : Wie sich dieses Problem auf den Dienst auswirkt.
+- **Startzeit** : Der Zeitpunkt, zu dem das Problem begann.
+- **Letzte Aktualisierung** : Der Zeitpunkt der letzten Aktualisierung der Nachricht zum Dienststatus. Wir veröffentlichen häufig Nachrichten, um Sie über die Fortschritte beim Anwenden einer Lösung zu informieren.
 
 Wählen Sie das Problem aus, um die Detailseite mit weiteren Informationen zum Problem anzuzeigen, einschließlich des [Verlaufs](#history) aller Nachrichten, die wir während unserer Arbeit an einer Lösung veröffentlicht haben.
 
