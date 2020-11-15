@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen, um zu behalten, was Sie benötigen, und zu löschen, was Sie nicht benötigen.
-ms.openlocfilehash: 0dfccef331c279354f066ebffa80143d43192472
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: bedf82d9d53ef14755651d5994e6c5c269cf5d6e
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920525"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49073136"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
@@ -202,16 +202,9 @@ Eine E-Mail-Nachricht oder ein Dokument kann jeweils nur über eine Aufbewahrung
     
 - Wenn dem Inhalt eine Bezeichnung für die veröffentlichte Aufbewahrung zugewiesen wurde, kann diese nicht durch eine automatische anwendbare Bezeichnung ersetzt werden.
     
-- Wenn es mehrere Regeln gibt, durch die eine Bezeichnung automatisch zugewiesen wird, und ein Inhalt die Bedingungen verschiedener Regeln erfüllt, wird die Aufbewahrungsbezeichnung für die älteste Regel (nach Erstellungsdatum) angewendet.
+- Wenn es mehrere Regeln gibt, durch die eine automatisch anwendbare Bezeichnung zugewiesen wird, und wenn ein Inhalt die Bedingungen verschiedener Regeln erfüllt, wird die Aufbewahrungsbezeichnung für die älteste Regel (nach Erstellungsdatum) angewendet.
     
-Um zu verstehen, wie und warum eine Aufbewahrungsbezeichnung und nicht eine andere angewendet wird, ist es hilfreich, den Unterschied zwischen der expliziten und der impliziten Zuweisung einer Bezeichnung nachzuvollziehen:
-
-- Aufbewahrungsbezeichnungen, die von einer Bezeichnungsrichtlinie angewendet werden, werden explizit zugewiesen
-- Aufbewahrungsbezeichnungen, die automatisch von einer automatisch anwendbaren Richtlinie angewendet werden, werden implizit zugewiesen
-
-Eine explizit zugewiesene Aufbewahrungsbezeichnung hat Vorrang vor einer implizit zugewiesenen. Weitere Informationen finden Sie im Abschnitt [Die Grundsätze der Aufbewahrung, oder was hat Vorrang?](retention.md#the-principles-of-retention-or-what-takes-precedence) auf dieser Seite.
-
-Für SharePoint können Aufbewahrungsbezeichnungen auch implizit zugewiesen werden, wenn Sie für alle Inhalte in einer SharePoint-Bibliothek, einem Ordner oder einem Dokumentensatz eine Standardbezeichnung konfigurieren. In diesem Szenario hat eine automatisch zugewiesene Bezeichnung Vorrang vor einer Standardbezeichnung, aber um alle Ergebnisse bei Verwendung einer Standardbezeichnung vollständig zu verstehen, lesen Sie die Informationen im Abschnitt [Anwenden einer Standardaufbewahrungsbezeichnung auf alle Inhalte in einer SharePoint-Bibliothek, einem Ordner oder einer Dokumentenmappe](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set). 
+Um bei der Verwendung einer Standardbezeichnung alle möglichen Ergebnisse zu verstehen, lesen Sie die Informationen im Abschnitt [Anwenden einer Standardaufbewahrungsbezeichnung auf alle Inhalte in einer Bibliothek, einem Ordner oder einer Dokumentenmappe in SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
 
 #### <a name="monitoring-retention-labels"></a>Überwachen von Aufbewahrungsbezeichnungen
 
