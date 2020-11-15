@@ -9,44 +9,44 @@ audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
-localization_priority: High
+localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-description: Implementieren Sie Microsoft Information Governance-Funktionen in Microsoft 365, um Ihre Daten für Compliance-oder behördliche Anforderungen zu bestimmen.
-ms.openlocfilehash: 7e516c42071272e9d38381dbf9d84e774271566c
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
-ms.translationtype: MT
+description: Implementieren Sie die Microsoft Information Governance-Funktionen in Microsoft 365, um Ihre Daten mit Blick auf die Einhaltung von Compliance-Vorschriften oder behördlichen Anforderungen zu kontrollieren.
+ms.openlocfilehash: c85fd74f0e3259c40f16bc2faa766b3313239134
+ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988425"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071466"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Microsoft Information Governance in Microsoft 365
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
 
-Verwenden Sie Microsoft Information Governance (manchmal abgekürzt MIG), um Ihre Daten für Compliance-oder behördliche Anforderungen zu bestimmen.
+Verwenden Sie die Microsoft Information Governance (MIG)-Funktionen, um Ihre Daten mit Blick auf die Einhaltung von Compliance-Vorschriften oder behördlichen Anforderungen zu kontrollieren.
 
-![Regieren Ihrer Daten – Information Governance und Datensatzverwaltung](../media/information-governance-records-management.png)
+![Kontrollieren Sie Ihre Daten – Informationsverwaltung und Datensatzverwaltung](../media/information-governance-records-management.png)
 
-Suchen Sie, um Ihre Daten zu schützen? Siehe [Microsoft Information Protection in Microsoft 365](information-protection.md).
+Wollen Sie Ihre Daten schützen? Erfahren Sie mehr in [Microsoft Information Protection in Microsoft 365](information-protection.md).
 
 ## <a name="information-governance"></a>Informationsverwaltung
 
-So behalten Sie, was Sie benötigen, und Löschen nicht mehr:
+So behalten Sie, was Sie brauchen, und löschen, was Sie nicht brauchen:
  
-|Funktion|Welche Probleme werden behoben?|Erste Schritte|
+|Funktion|Welches Probleme löst es für Sie?|Erste Schritte|
 |:------|:------------|:--------------------|:-----------------------------|
-|[Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](retention.md)| Beibehalten oder Löschen von Inhalten mit Richtlinienverwaltung und einem Lösch Workflow für e-Mails, Dokumente, Chatnachrichten und mehr <br /><br />Beispielszenario: [Automatisches Anwenden einer Aufbewahrungs Bezeichnung auf Inhalte](apply-retention-labels-automatically.md) | [Erste Schritte zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](get-started-with-retention.md)|
-|[Import Dienst](importing-pst-files-to-office-365.md)| Massenimport von PST-Dateien in Exchange Online Postfächer zum beibehalten und Durchsuchen von e-Mail-Nachrichten nach Compliance-oder behördlichen Anforderungen | [Verwenden Sie Netzwerkuploads zum Importieren von PST-Dateien Ihrer Organisation in Microsoft 365](use-network-upload-to-import-pst-files.md)|
-|[Archivieren von Drittanbieterdaten](archiving-third-party-data.md)| Importieren, archivieren und Anwenden von Compliance-Lösungen auf drittanbieterdaten aus Social Media-Plattformen, Instant Messaging-Plattformen und Dokument Zusammenarbeits Plattformen| [Connectors von Drittanbietern](archiving-third-party-data.md#third-party-data-connectors)|
-|[Inaktive Postfächer](inactive-mailboxes-in-office-365.md)| Beibehalten des Postfachinhalts nach Verlassen der Organisation durch Mitarbeiter | [Erstellen und Verwalten inaktiver Postfächer](create-and-manage-inactive-mailboxes.md)|
+|[Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](retention.md)| Aufbewahren oder Löschen von Inhalten mit Richtlinienverwaltung und Lösch-Workflows für e-Mails, Dokumente, Sofortnachrichten und vieles mehr <br /><br />Beispielszenario: [Automatisches Anwenden einer Aufbewahrungsbezeichnung auf Inhalte](apply-retention-labels-automatically.md) | [Erste Schritte mit Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](get-started-with-retention.md)|
+|[Importdienst](importing-pst-files-to-office-365.md)| Massenimport von PST-Dateien in Exchange Online-Postfächer, um E-Mail-Nachrichten mit Blick auf Compliance-Vorschriften oder behördlichen Anforderungen aufzubewahren und zu durchsuchen | [Verwenden Sie Netzwerkuploads zum Importieren der PST-Dateien Ihres Unternehmens nach Microsoft 365](use-network-upload-to-import-pst-files.md)|
+|[Archivieren von Drittanbieterdaten](archiving-third-party-data.md)| Importieren, Archivieren und Anwenden von Compliance-Lösungen auf Daten von Drittanbietern aus Social Media-Plattformen, Instant Messaging-Plattformen und Plattformen zur Dokumentenzusammenarbeit| [Konnektoren von Drittanbietern](archiving-third-party-data.md#third-party-data-connectors)|
+|[Inaktive Postfächer](inactive-mailboxes-in-office-365.md)| Aufbewahren von Postfachinhalten, nachdem Mitarbeiter das Unternehmen verlassen haben | [Erstellen und Verwalten inaktiver Postfächer](create-and-manage-inactive-mailboxes.md)|
 
 ## <a name="records-management"></a>Datensatzverwaltung
 
-So verwalten Sie hochwertige Inhalte für rechtliche, geschäftliche oder regulatorische Verpflichtungen:
+So verwalten Sie hochwertige Inhalte für gesetzliche, geschäftliche oder behördliche Verpflichtungen:
 
-|Funktion|Welche Probleme werden behoben?|Erste Schritte|
+|Funktion|Welches Probleme löst es für Sie?|Erste Schritte|
 |:------|:------------|---------------------|:----------------------------|
-|[Datensatzverwaltung](records-management.md)| Eine einzige Lösung für e-Mails und Dokumente, die aufbewahrungszeitpläne und-Anforderungen in einen Dateiplan integriert, der den vollständigen Lebenszyklus Ihrer Inhalte mit Datensatzdeklaration, Aufbewahrung und Disposition unterstützt <br /><br />Beispielszenario: [Disposition von Datensätzen](disposition.md#disposition-of-records)|[Erste Schritte mit der Datensatzverwaltung](get-started-with-records-management.md) |
+|[Datensatzverwaltung](records-management.md)| Eine einheitliche Lösung für E-Mails und Dokumente, die Aufbewahrungspläne und -anforderungen in einen Ablageplan integriert, der den gesamten Lebenszyklus Ihrer Inhalte mit der Deklaration, Aufbewahrung und Löschung von Datensätzen unterstützt. <br /><br />Beispielszenario: [Löschen von Datensätzen](disposition.md#disposition-of-records)|[Erste Schritte mit der Datensatzverwaltung](get-started-with-records-management.md) |
 
