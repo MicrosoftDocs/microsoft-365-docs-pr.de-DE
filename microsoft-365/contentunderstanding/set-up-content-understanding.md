@@ -6,15 +6,16 @@ manager: serdars
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
+ms.collection: enabler-strategic
 search.appverid: MET150
 localization_priority: Priority
 description: Einrichten des Inhaltsverständnisses in Projekt Cortex
-ms.openlocfilehash: 8f1ebd70f932bce874efc19f525b549f6717f532
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: dfbcc8e41a28e3107b58ac6b8d471e3a2a08d036
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988683"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087571"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Einrichten von SharePoint Syntex
 
@@ -22,12 +23,12 @@ Administratoren können das Microsoft 365 Admin Center verwenden, um [Microsoft 
 
 Denken Sie vor dem Beginn über Folgendes nach:
 
-- Auf welchen SharePoint-Websites wird die Formularverarbeitung aktiviert? Auf allen, auf einigen oder auf ausgewählten Websites?
+- Which SharePoint sites will you enable form processing? All of them, some, or select sites?
 - Wie werden Sie Ihr Standard-Inhaltscenter nennen?
 
 Sie können Ihre Einstellungen nach der erstmaligen Einrichtung im Microsoft 365 Admin Center ändern.
 
-Vergewissern Sie sich vor dem Einrichten, dass Sie die beste Möglichkeit zum Einrichten und Konfigurieren des Inhaltsverständnisses in Ihrer Umgebung planen. Sie müssen sich beispielsweise Gedanken über die Benennung von Folgendem machen:
+Prior to setup, make sure to plan for the best way to set up and configure content understanding in your environment. For example, you need to make considerations about the following names of:
 
 - Die SharePoint-Websites, für die Sie die Verarbeitung von Formularen aktivieren möchten – alle, einige oder ausgewählte Websites.
 - Ihr Inhaltscenter und der Name des primären Website-Administrators.
@@ -45,17 +46,17 @@ Als Administrator können Sie nach dem Einrichten und in den Verwaltungseinstell
 
 2. Wählen Sie im Abschnitt **Dateien und Inhalte** > **Inhaltsverständnis automatisieren** aus.<br/>
 
-3. Klicken Sie auf der Seite **Inhaltsverständnis automatisieren** auf **Erste Schritte** , um den Setupvorgang zu durchlaufen.<br/>
+3. Klicken Sie auf der Seite **Inhaltsverständnis automatisieren** auf **Erste Schritte**, um den Setupvorgang zu durchlaufen.<br/>
 
     > [!div class="mx-imgBorder"]
     > ![Setup starten](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
-4. Auf der Seite **Formularverarbeitung konfigurieren** können Sie auswählen, ob Sie zulassen möchten, dass Benutzer Formularverarbeitungsmodelle in bestimmten SharePoint-Dokumentbibliotheken erstellen können. Im Menüband "Dokumentbibliothek" wird eine Menüoption zum **Erstellen eines Formularverarbeitungsmodells** in SharePoint-Dokumentbibliotheken verfügbar, in denen es aktiviert ist.
+4. On the **Configure Form Processing** page, you can choose if you want to let users be able to create form processing models in specific SharePoint document libraries. A menu option will be available in the document library ribbon to **Create a form processing model** in SharePoint document libraries in which it is enabled.
  
      Für **Welche SharePoint-Bibliotheken sollen die Option zum Erstellen eines Formularverarbeitungsmodells anzeigen** können Sie Folgendes auswählen:</br>
-      - **Alle SharePoint-Bibliotheken** , damit die Option für alle SharePoint-Bibliotheken in Ihrer Organisation verfügbar gemacht wird.</br>
+      - **Alle SharePoint-Bibliotheken**, damit die Option für alle SharePoint-Bibliotheken in Ihrer Organisation verfügbar gemacht wird.</br>
       - **Nur Bibliotheken in ausgewählten Websites**. Wählen Sie dann die Websites aus, auf denen Sie die Option verfügbar machen möchten, oder laden Sie eine Liste mit bis zu 50 Websites hoch.</br>
-      - **Keine SharePoint-Bibliotheken** , wenn Sie die Option nicht auf Websites verfügbar machen möchten (Sie können dies nach der Einrichtung ändern).
+      - **Keine SharePoint-Bibliotheken**, wenn Sie die Option nicht auf Websites verfügbar machen möchten (Sie können dies nach der Einrichtung ändern).
 
    > [!div class="mx-imgBorder"]
    > ![Konfigurieren der Formularverarbeitung](../media/content-understanding/admin-configforms.png)
@@ -67,18 +68,18 @@ Als Administrator können Sie nach dem Einrichten und in den Verwaltungseinstell
 
     1. Geben Sie für den **Websitenamen** den Namen ein, den Sie Ihrer Inhaltscenter-Website zuweisen möchten.
     
-    1. Die **Websiteadresse** zeigt die URL für Ihre Website basierend auf Ihrer Auswahl für den Websitenamen an. Wenn Sie die Einstellungen ändern möchten, klicken Sie auf **Bearbeiten**.
+    1. The **Site address** will show the URL for your site, based on what you selected for the site name. If you want to change it, click **Edit**.
 
        > [!div class="mx-imgBorder"]
        > ![Erstellen eines Inhaltscenters](../media/content-understanding/admin-cu-create-cc.png)</br>
 
        Wählen Sie **Weiter** aus.
 
-6. Auf der Seite **Überprüfen und beenden** können Sie sich die ausgewählte Einstellung ansehen und Änderungen vornehmen. Wenn Sie mit Ihrer Auswahl zufrieden sind, wählen Sie **Aktivieren** aus.
+6. On the **Review and finish** page, you can look at your selected setting and choose to make changes. If you are satisfied with your selections, select **Activate**.
 
 7. Klicken Sie auf der Bestätigungsseite auf **Fertig**.
 
-8. Sie kehren zur Seite **Inhaltsverständnis automatisieren** zurück. Auf dieser Seite können Sie **Verwalten** auswählen, um Änderungen an Ihren Konfigurationseinstellungen vorzunehmen. 
+8. You'll be returned to your **Automate content understanding** page. From this page, you can select **Manage** to make any changes to your configuration settings. 
 
 ## <a name="assign-licenses"></a>Lizenzen zuweisen
 
@@ -92,7 +93,7 @@ So weisen Sie Lizenzen zu
 
 3. Wählen Sie **Weitere zuweisen** aus.
 
-4. Wählen Sie **SharePoint Syntex** aus. Stellen Sie sicher, dass unter **Apps** sowohl **Gemeinsamer Datendienst für SharePoint Syntex** , **SharePoint Syntex** wie auch **SharePoint Syntex – SPO-Typ** ausgewählt sind.
+4. Select **SharePoint Syntex**. Under **Apps**, make sure **Common Data Service for SharePoint Syntex**, **SharePoint Syntex**, and **SharePoint Syntex - SPO type** are all selected.
 
     > [!div class="mx-imgBorder"]
     > ![SharePoint Syntex-Lizenzen im Microsoft 365 Admin Center](../media/content-understanding/sharepoint-syntex-licenses.png)
@@ -101,7 +102,7 @@ So weisen Sie Lizenzen zu
 
 ## <a name="ai-builder-credits"></a>KI-Generator-Punkte
 
-Wenn Sie 300 oder mehr SharePoint Syntex-Lizenzen für SharePoint Syntex in Ihrer Organisation besitzen, werden Ihnen 1 Million KI-Generator-Punkte zugeteilt. Wenn Sie weniger als 300 Lizenzen besitzen, müssen Sie KI-Generator-Punkte erwerben, um die Formularverarbeitung zu verwenden.
+If you have 300 or more SharePoint Syntex licenses for SharePoint Syntex in your organization, you will be allocated one million AI Builder credits. If you have fewer than 300 licenses, you must purchase AI Builder credits in order to use forms processing.
 
 Sie können die für Sie geeignete KI-Generator-Kapazität mit dem [KI-Generator-Rechner](https://powerapps.microsoft.com/ai-builder-calculator) abschätzen.
 

@@ -7,14 +7,15 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: Erhalten Sie Informationen zum Erstellen eines Inhaltscenters.
-ms.openlocfilehash: f65b542dfe9cbb945f347323053cee582deef25b
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 878319dd938f565f00a250f0b08de15641644e1c
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321833"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087439"
 ---
 # <a name="create-a-content-center-in-microsoft-sharepoint-syntex"></a>Erstellen eines inhaltscenters in Microsoft SharePoint Syntex
 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: f39b374926ef714a32cfce4a625cc1387bb68097
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: f214c1fcfa8a68695ca0c32a9807972a71ba7612
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104471"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087160"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Untersuchen und Beheben von Warnungen zur Kommunikationscompliance
 
@@ -55,11 +55,11 @@ Eine vollständige Liste der Filter und Feld Details finden Sie unter [Filter](c
 
 5. Wählen Sie das **Filter** -Steuerelement aus, um die Seite **Filter** Details zu öffnen.
 
-6. Aktivieren Sie mindestens ein Kontrollkästchen, um Filter für diese Warnungen zu aktivieren. Sie können aus zahlreichen Filtern auswählen, einschließlich *Datum*, *Absender*, *Betreff/Titel*, *Klassifizierungen*und vieles mehr.
+6. Aktivieren Sie mindestens ein Kontrollkästchen, um Filter für diese Warnungen zu aktivieren. Sie können aus zahlreichen Filtern auswählen, einschließlich *Datum*, *Absender*, *Betreff/Titel*, *Klassifizierungen* und vieles mehr.
 
-7. Wenn Sie den als Standardfilter ausgewählten Filter speichern möchten, wählen Sie **als Standard speichern**aus. Wenn Sie diesen Filter als gespeicherten Filter verwenden möchten, wählen Sie **Fertig**aus.
+7. Wenn Sie den als Standardfilter ausgewählten Filter speichern möchten, wählen Sie **als Standard speichern** aus. Wenn Sie diesen Filter als gespeicherten Filter verwenden möchten, wählen Sie **Fertig** aus.
 
-8. Wenn Sie die ausgewählten Filter als Filterabfrage speichern möchten, wählen Sie **Speichern des Abfrage** Steuerelements aus, nachdem Sie mindestens einen Filterwert konfiguriert haben. Geben Sie einen Namen für die Filterabfrage ein, und wählen Sie **Speichern**aus. Dieser Filter ist nur für diese Richtlinie verfügbar und wird im Abschnitt **gespeicherte Filter Abfragen** auf der Seite **Filter** Details aufgeführt.
+8. Wenn Sie die ausgewählten Filter als Filterabfrage speichern möchten, wählen Sie **Speichern des Abfrage** Steuerelements aus, nachdem Sie mindestens einen Filterwert konfiguriert haben. Geben Sie einen Namen für die Filterabfrage ein, und wählen Sie **Speichern** aus. Dieser Filter ist nur für diese Richtlinie verfügbar und wird im Abschnitt **gespeicherte Filter Abfragen** auf der Seite **Filter** Details aufgeführt.
 
     ![Filter Detailsteuerelemente für die Kommunikations Konformität](../media/communication-compliance-filter-detail-controls.png)
 
@@ -81,7 +81,7 @@ Richtlinien zur Kommunikationscompliance werden automatisch gescannt und nahe un
 
 6. Wählen Sie eine oder mehrere Nachrichten zur Korrektur Aktionssteuerung für diese Nachrichten aus.
 
-7. Wählen Sie **Auflösen**, **Benachrichtigen**, **eskalieren**oder **herunterladen** aus, um die Aktion auf die ausgewählten doppelten Nachrichten als Standardfilter anzuwenden.
+7. Wählen Sie **Auflösen**, **Benachrichtigen**, **eskalieren** oder **herunterladen** aus, um die Aktion auf die ausgewählten doppelten Nachrichten als Standardfilter anzuwenden.
 
 8. Wählen Sie **Schließen** aus, nachdem Sie die Korrekturaktionen für die Nachrichten abgeschlossen haben.
 
@@ -102,7 +102,7 @@ Unabhängig davon, wo Sie mit der Überprüfung von Warnungen oder der von Ihnen
 Nachdem Sie die Nachrichten Grundlagen überprüft haben, ist es an der Zeit, eine Nachricht zu öffnen, um die Details zu überprüfen und weitere Korrekturaktionen zu bestimmen. Wählen Sie eine Nachricht aus, um den gesamten Nachrichtenkopf und die Textkörperinformationen anzuzeigen. Es stehen mehrere Ansichten zur Verfügung, die Ihnen bei der Entscheidung zur richtigen Vorgehensweise helfen:
 
 - **Quellansicht**: Diese Ansicht ist die standardmäßige Nachrichtenansicht, die häufig in den meisten webbasierten Messaging-Plattformen zu sehen ist. Die Kopfzeileninformationen werden in der Formatvorlage Normal formatiert, und der Nachrichtentext unterstützt eingebettete Grafikdateien und Text umbrochen.
-- **Textansicht**: Die Textansicht zeigt eine zeilennummerierte Ansicht der Nachricht als reine Textansicht und enthält eine Hervorhebung von Schlüsselwörtern für Begriffe, die in der zugehörigen Richtlinie zur Kommunikationscompliance übereinstimmen. Mithilfe der Hervorhebung von Schlüsselwörtern können Sie lange Nachrichten schnell nach dem betreffenden Bereich zu durchsuchen. Eingebettete Dateien werden nicht angezeigt, und die Nummerierung dieser Ansicht ist hilfreich, um auf relevante Details zwischen mehreren Prüfern zu verweisen.
+- **Textansicht**: in der Textansicht wird eine nur-Text-Textansicht der Nachricht angezeigt, und es werden Stichwort Hervorhebungen in Nachrichten und Anlagen für Begriffe, die in der zugehörigen Kommunikations Konformitätsrichtlinie übereinstimmen, eingeschlossen. Stichwort Hervorhebung kann Ihnen helfen, lange Nachrichten und Anlagen für den gewünschten Bereich schnell zu überprüfen. In einigen Fällen ist hervorgehobener Text möglicherweise nur in Anlagen für Nachrichten, die Richtlinienbedingungen entsprechen. Eingebettete Dateien werden nicht angezeigt, und die Nummerierung dieser Ansicht ist hilfreich, um auf relevante Details zwischen mehreren Prüfern zu verweisen.
 - **Anmerkungenansicht**: In dieser Ansicht können Prüfer Anmerkungen direkt zu der Nachricht hinzufügen, die in der Nachrichtenansicht gespeichert werden.
 - **Benutzerhistorie**: Die Ansicht "Benutzerhistorie" zeigt alle anderen Warnungen an, die durch eine Richtlinie zur Kommunikationscompliance für den Benutzer, der die Nachricht sendet, generiert wurden.
 - **Nachrichtendetail Ansicht**: Erweiterte Ansicht der Nachrichten Metadaten und Konfigurationsinformationen.
@@ -114,18 +114,18 @@ Nachdem Sie die Nachrichten Grundlagen überprüft haben, ist es an der Zeit, ei
 
 Nachdem Sie die Details der Nachricht für die Warnung überprüft haben, können Sie mehrere Korrekturaktionen auswählen:
 
-- **Lösung**: Wenn Sie das Steuerelement **Auflösen** auswählen, wird die Nachricht sofort aus der Warteschlange für **ausstehende Warnungen** entfernt, und die Nachricht kann nicht weiter ausgeführt werden. Wenn Sie **Auflösen**auswählen, haben Sie die Benachrichtigung im wesentlichen ohne weitere Klassifizierung geschlossen und können nicht erneut für weitere Aktionen geöffnet werden. Alle aufgelösten Nachrichten werden auf der Registerkarte **aufgelöst** angezeigt.
+- **Lösung**: Wenn Sie das Steuerelement **Auflösen** auswählen, wird die Nachricht sofort aus der Warteschlange für **ausstehende Warnungen** entfernt, und die Nachricht kann nicht weiter ausgeführt werden. Wenn Sie **Auflösen** auswählen, haben Sie die Benachrichtigung im wesentlichen ohne weitere Klassifizierung geschlossen und können nicht erneut für weitere Aktionen geöffnet werden. Alle aufgelösten Nachrichten werden auf der Registerkarte **aufgelöst** angezeigt.
 - **Falsch positiv**: Sie können eine Nachricht jederzeit während des Workflows zur Nachrichtenüberprüfung als falsch positiv auflösen. False positive bedeutet, dass es sich bei der Warnung nicht um eine Aktion handelt oder dass die Warnung vom Warnungs Prozess falsch generiert wurde. Die Nachricht kann nicht erneut geöffnet werden, und alle falsch positiven Nachrichten werden auf der Registerkarte **aufgelöst** angezeigt.
 - **Power Automation (Vorschau)**: Verwenden Sie einen Power-Automatisierungs Fluss, um Prozessaufgaben für eine Warnmeldung zu automatisieren. Standardmäßig enthält die Kommunikations Kompatibilität den *Notify Manager, wenn ein Benutzer über eine Benachrichtigungs* Fluss Vorlage für die Kommunikations Konformität verfügt, mit der Bearbeiter den Benachrichtigungsprozess für Benutzer mit Nachrichten Benachrichtigungen automatisieren können. Weitere Informationen zum Erstellen und Verwalten von Power Automation Flows in Communication Compliance finden Sie im Artikel zur [Kommunikation Compliance Feature Reference](communication-compliance-feature-reference.md#power-automate-flows-preview) .
-- **Tag as**: kennzeichnen der Nachricht als *konform*, *nicht konform*oder als *fragwürdig* , da Sie sich auf die Richtlinien und Standards für Ihre Organisation bezieht. Durch das Hinzufügen von Tags und Markierungs Kommentaren können Sie Richtlinienwarnungen auf Eskalationen oder im Rahmen anderer interner Überprüfungsprozesse mikrofiltern. Nachdem die Markierung abgeschlossen ist, können Sie die Nachricht auch auflösen, um Sie aus der Warteschlange für ausstehende Überprüfungen zu entfernen.
+- **Tag as**: kennzeichnen der Nachricht als *konform*, *nicht konform* oder als *fragwürdig* , da Sie sich auf die Richtlinien und Standards für Ihre Organisation bezieht. Durch das Hinzufügen von Tags und Markierungs Kommentaren können Sie Richtlinienwarnungen auf Eskalationen oder im Rahmen anderer interner Überprüfungsprozesse mikrofiltern. Nachdem die Markierung abgeschlossen ist, können Sie die Nachricht auch auflösen, um Sie aus der Warteschlange für ausstehende Überprüfungen zu entfernen.
 - **Notify**: Sie können das **Notify** -Steuerelement verwenden, um der Warnung eine benutzerdefinierte Notizvorlage zuzuweisen und eine Warnmeldung an den Benutzer zu senden. Wählen Sie die entsprechende Notizvorlage aus dem Bereich **Kommunikations Kompatibilitätseinstellungen** aus, und wählen Sie senden aus, um eine Erinnerung an den Benutzer, der die Nachricht gesendet hat, per e-Mail zu **senden** und das Problem zu beheben.
 - **Eskalieren**: mithilfe des **Eskalations** Steuerelements können Sie auswählen, welche Person in Ihrer Organisation die Nachricht überprüfen soll. Wählen Sie aus einer Liste der Bearbeiter aus, die in der Kommunikations Konformitätsrichtlinie konfiguriert sind, um eine e-Mail-Benachrichtigung zu senden und eine zusätzliche Überprüfung der Nachrichten Benachrichtigung anzufordern Der ausgewählte Prüfer kann einen Link in der E-Mail-Benachrichtigung verwenden, um direkt zu den an ihn zur Prüfung eskalierten Elementen zu gelangen.
 - **Eskalieren zur Untersuchung**: mithilfe des Steuerelements **Eskalation für Untersuchung** können Sie einen neuen [erweiterten eDiscovery-Fall](overview-ediscovery-20.md) für einzelne oder mehrere Nachrichten erstellen. Sie geben einen Namen und Notizen für den neuen Fall an, und Benutzer, der die Nachricht gesendet hat, die der Richtlinie entspricht, werden automatisch als Fall Verwalter zugewiesen. Sie benötigen keine zusätzlichen Berechtigungen, um den Fall zu verwalten. Durch das Erstellen einer Groß-/Kleinschreibung wird kein neues Tag für die Nachricht aufgelöst oder erstellt. Sie können bei der Erstellung eines erweiterten eDiscovery-Falls während des Korrekturprozesses insgesamt 100 Nachrichten auswählen. Nachrichten in allen Kommunikationskanälen, die von der Kommunikations Konformität überwacht werden, werden unterstützt. Sie können beispielsweise 50 Microsoft Teams-Chats, 25 Exchange Online e-Mail-Nachrichten und 25 Jammer Meldungen auswählen, wenn Sie einen neuen erweiterten eDiscovery-Fall für einen Benutzer öffnen.
-- **Verbessern der Klassifizierung (Preview)**: Warnungen, die anhand von Übereinstimmungstypen erstellt wurden, benötigen möglicherweise Feedback, um falsch positive Ergebnisse in Ihrer Organisation zu minimieren. Verwenden Sie das Steuerelement **Klassifizierung verbessern** , um Feedback zu geben, wenn die Konformitäts Klassifikation für die Kommunikation gültig ist, oder um andere Schulungs Klassifizierungen für diesen Übereinstimmungs vorzuschlagen. Sie können sicherstellen, dass es sich bei den Klassifizierern um eine *Übereinstimmung* oder *keine Übereinstimmung*handelt, oder andere Schulungs Klassifizierer vorschlagen, die dieser Art von Warnungs Aktivität zukünftig zugeordnet werden sollen.
+- **Verbessern der Klassifizierung (Preview)**: Warnungen, die anhand von Übereinstimmungstypen erstellt wurden, benötigen möglicherweise Feedback, um falsch positive Ergebnisse in Ihrer Organisation zu minimieren. Verwenden Sie das Steuerelement **Klassifizierung verbessern** , um Feedback zu geben, wenn die Konformitäts Klassifikation für die Kommunikation gültig ist, oder um andere Schulungs Klassifizierungen für diesen Übereinstimmungs vorzuschlagen. Sie können sicherstellen, dass es sich bei den Klassifizierern um eine *Übereinstimmung* oder *keine Übereinstimmung* handelt, oder andere Schulungs Klassifizierer vorschlagen, die dieser Art von Warnungs Aktivität zukünftig zugeordnet werden sollen.
 
     1. Wählen Sie eine Nachricht aus der Benachrichtigungsliste aus.
-    2. Wählen Sie die Auslassungspunkte aus, und wählen Sie **Klassifizierung optimieren**aus.
-    3. Wenn das Element im Detailbereich für die **Klassifizierungs Bewertung** einen echten positiven Wert aufweist, wählen Sie **Übereinstimmung**aus.  Wenn das Element fälschlicherweise als falsch positives Ergebnis in der Kategorie enthalten war, wählen Sie **keine Übereinstimmung**aus.
+    2. Wählen Sie die Auslassungspunkte aus, und wählen Sie **Klassifizierung optimieren** aus.
+    3. Wenn das Element im Detailbereich für die **Klassifizierungs Bewertung** einen echten positiven Wert aufweist, wählen Sie **Übereinstimmung** aus.  Wenn das Element fälschlicherweise als falsch positives Ergebnis in der Kategorie enthalten war, wählen Sie **keine Übereinstimmung** aus.
     4. Wenn es eine andere Klassifizierung gibt, die für das Element besser geeignet ist, wählen Sie Sie aus der Liste **andere schulungsable-Klassifizierungen vorschlagen** aus. Dieses Feedback löst die andere Klassifizierung aus, um das Element auszuwerten.
 
     > [!TIP]

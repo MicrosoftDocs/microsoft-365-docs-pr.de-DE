@@ -19,16 +19,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: Richten Sie Microsoft 365 Endpunkt-DLP (Data Loss Prevention, Verhinderung von Datenverlust) ein, um Dateiaktivitäten zu überwachen und schützende Maßnahmen für diese Dateien auf Endpunkten anzuwenden.
-ms.openlocfilehash: 3f29d8e49daa6dd4f0900e0e92123306c799c6ee
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+ms.openlocfilehash: 6ba3b83d634f946f818890a732a83166f346162d
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999417"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49073094"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Erste Schritte mit Endpunkt-DLP
 
-Microsoft Endpunkt-DLP (Data Loss Prevention, Verhinderung von Datenverlust) ist Bestandteil der Microsoft 365 DLP-Suite, mit der Sie vertrauliche Elemente in Microsoft 365-Diensten ermitteln und schützen können. Weitere Informationen zu den Microsoft-DLP-Angeboten finden Sie unter [Verhinderung von Datenverlust – Übersicht](data-loss-prevention-policies.md). Einzelheiten über Endpunkt-DLP finden Sie unter [ Informationen zu Endpunkt-DLP (Vorschau)](endpoint-dlp-learn-about.md).
+Microsoft Endpunkt-DLP (Data Loss Prevention, Verhinderung von Datenverlust) ist Bestandteil der Microsoft 365 DLP-Suite, mit der Sie vertrauliche Elemente in Microsoft 365-Diensten ermitteln und schützen können. Weitere Informationen zu den Microsoft-DLP-Angeboten finden Sie unter [Verhinderung von Datenverlust – Übersicht](data-loss-prevention-policies.md). Einzelheiten über Endpunkt-DLP finden Sie unter [ Informationen zu Endpunkt-DLP](endpoint-dlp-learn-about.md).
 
 Microsoft Endpunkt-DLP ermöglicht es Ihnen, Windows 10-Geräte zu überwachen und zu erkennen, wenn vertrauliche Elemente verwendet und freigegeben werden. Auf diese Weise erhalten Sie die nötige Übersicht und Kontrolle, um sicherzustellen, dass sie ordnungsgemäß verwendet und geschützt werden, und um ihre Gefährdung durch riskantes Verhalten zu verhindern.
 

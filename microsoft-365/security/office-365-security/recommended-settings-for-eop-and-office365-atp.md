@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Was sind bewährte Methoden für Exchange Online Schutz (EoP) und Defender für Office 365 Sicherheitseinstellungen? Was sind die aktuellen Empfehlungen für Standardschutz? Was sollte verwendet werden, wenn Sie strenger sein möchten? Und welche Extras erhalten Sie, wenn Sie auch Defender für Office 365 verwenden?
-ms.openlocfilehash: 032cd6a50f56fd3e1e47faebfaea5f6665553a4b
-ms.sourcegitcommit: 09518b7c9146cda7fd42839ee644ad418d48491a
+ms.openlocfilehash: bc91ba58c9dc14954f638853ad24fcf7a26684e3
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49001525"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123471"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Empfohlene Einstellungen für EoP und Microsoft Defender für Office 365 Sicherheit
 
@@ -81,21 +81,21 @@ Es wird empfohlen, dass Sie diese ASF-Einstellungen für **Standard** -und **Str
 
 |Name des Sicherheitsfeatures|Kommentar|
 |---|---|
-|**Bild Links zu Remotestandorten** ( _IncreaseScoreWithImageLinks_ )||
-|**Numerische IP-Adresse in URL** ( _IncreaseScoreWithNumericIps_ )||
-|**UL-Umleitung zu anderem Port** ( _IncreaseScoreWithRedirectToOtherPort_ )||
-|**URL zu. biz oder. info Websites** ( _IncreaseScoreWithBizOrInfoUrls_ )||
-|**Leere Nachrichten** ( _MarkAsSpamEmptyMessages_ )||
-|**JavaScript oder VBScript in HTML** ( _MarkAsSpamJavaScriptInHtml_ )||
-|**Frame-oder IFRAME-Tags in HTML** ( _MarkAsSpamFramesInHtml_ )||
-|**Object-Tags in HTML** ( _MarkAsSpamObjectTagsInHtml_ )||
-|**Einbetten von Tags in HTML** ( _MarkAsSpamEmbedTagsInHtml_ )||
-|**Formulartags in HTML** ( _MarkAsSpamFormTagsInHtml_ )||
-|**Webfehler im HTML-Format** ( _MarkAsSpamWebBugsInHtml_ )||
-|**Anwenden einer vertraulichen Wörterliste** ( _MarkAsSpamSensitiveWordList_ )||
-|**SPF-Eintrag: Hard Fail** ( _MarkAsSpamSpfRecordHardFail_ )||
-|**Bedingte Sender ID-Filterung: schwerer Fehler** ( _MarkAsSpamFromAddressAuthFail_ )||
-|**NDR** -Rückläufer ( _MarkAsSpamNdrBackscatter_ )||
+|**Bild Links zu Remotestandorten** (_IncreaseScoreWithImageLinks_)||
+|**Numerische IP-Adresse in URL** (_IncreaseScoreWithNumericIps_)||
+|**UL-Umleitung zu anderem Port** (_IncreaseScoreWithRedirectToOtherPort_)||
+|**URL zu. biz oder. info Websites** (_IncreaseScoreWithBizOrInfoUrls_)||
+|**Leere Nachrichten** (_MarkAsSpamEmptyMessages_)||
+|**JavaScript oder VBScript in HTML** (_MarkAsSpamJavaScriptInHtml_)||
+|**Frame-oder IFRAME-Tags in HTML** (_MarkAsSpamFramesInHtml_)||
+|**Object-Tags in HTML** (_MarkAsSpamObjectTagsInHtml_)||
+|**Einbetten von Tags in HTML** (_MarkAsSpamEmbedTagsInHtml_)||
+|**Formulartags in HTML** (_MarkAsSpamFormTagsInHtml_)||
+|**Webfehler im HTML-Format** (_MarkAsSpamWebBugsInHtml_)||
+|**Anwenden einer vertraulichen Wörterliste** (_MarkAsSpamSensitiveWordList_)||
+|**SPF-Eintrag: Hard Fail** (_MarkAsSpamSpfRecordHardFail_)||
+|**Bedingte Sender ID-Filterung: schwerer Fehler** (_MarkAsSpamFromAddressAuthFail_)||
+|**NDR** -Rückläufer (_MarkAsSpamNdrBackscatter_)||
 |
 
 #### <a name="eop-outbound-spam-policy-settings"></a>EoP-Einstellungen für ausgehende Spam Richtlinien
@@ -148,7 +148,7 @@ Zusätzliche Sicherheitsvorteile bieten Microsoft Defender für Office 365 Abonn
 
 > [!IMPORTANT]
 >
-> - Die standardmäßige Anti-Phishing-Richtlinie in Microsoft Defender für Office 365 bietet [Spoof-Schutz](set-up-anti-phishing-policies.md#spoof-settings) für alle Empfänger. Die verfügbaren Einstellungen für den [Identitätswechsel Schutz](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) für bestimmte Absender oder Sender Domänen sind in der Standardrichtlinie jedoch nicht konfiguriert oder aktiviert. Konfigurieren Sie zum Aktivieren des Identitätswechsel Schutzes die Standardrichtlinie, oder erstellen Sie zusätzliche Anti-Phishing-Richtlinien in Defender für Office 365.
+> - Die standardmäßige Anti-Phishing-Richtlinie in Microsoft Defender für Office 365 bietet [spoofschutz](set-up-anti-phishing-policies.md#spoof-settings) und Post Fach Intelligenz für alle Empfänger. Die anderen verfügbaren Features für [Identitätswechsel Schutz](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) und [Erweiterte Einstellungen](#advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) sind jedoch in der Standardrichtlinie nicht konfiguriert oder aktiviert. Um alle Schutzfunktionen zu aktivieren, ändern Sie die standardmäßige Anti-Phishing-Richtlinie, oder erstellen Sie zusätzliche Anti-Phishing-Richtlinien.
 >
 > - Es gibt keine Standardrichtlinien für sichere Links oder Richtlinien für sichere Anlagen, die alle Empfänger in der Organisation automatisch schützen. Um den Schutz zu erhalten, müssen Sie mindestens eine Richtlinie für sichere Links und Richtlinien für sichere Anlagen erstellen.
 >
@@ -287,7 +287,7 @@ In PowerShell verwenden Sie die Cmdlets [New-SafeAttachmentPolicy](https://docs.
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-- Suchen Sie nach bewährten Methoden für **Exchange-Nachrichtenfluss Regeln (auch bekannt als Transportregeln** )? Weitere Informationen finden Sie unter [bewährte Methoden für das Konfigurieren von Nachrichtenfluss Regeln in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices).
+- Suchen Sie nach bewährten Methoden für **Exchange-Nachrichtenfluss Regeln (auch bekannt als Transportregeln**)? Weitere Informationen finden Sie unter [bewährte Methoden für das Konfigurieren von Nachrichtenfluss Regeln in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices).
 
 - Administratoren und Benutzer können falsch positive Ergebnisse (gute e-Mail-Nachrichten als ungültig markiert) und falsch negative (ungültige e-Mail-Nachrichten) zur Analyse an Microsoft senden. Weitere Informationen finden Sie unter [Melden von Nachrichten und Dateien an Microsoft](report-junk-email-messages-to-microsoft.md).
 

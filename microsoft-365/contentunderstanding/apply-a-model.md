@@ -7,14 +7,15 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: Informationen zum Anwenden eines veröffentlichten Modells auf eine SharePoint-Dokumentbibliothek
-ms.openlocfilehash: 771b0f451d404c6e90f62091ca466bfaf34bae39
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: 0ca58e863d42d41b634978f53f55201a10a5ed93
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338673"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087487"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Anwenden eines Dokumentverständnismodells in Microsoft SharePoint Syntex
 

@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exportieren Sie die Suchergebnisse aus einer Inhaltssuche im Compliance Center des Sicherheits & auf einen lokalen Computer. E-Mail-Ergebnisse werden als PST-Dateien exportiert. Inhalte aus SharePoint-und OneDrive für Unternehmen-Websites werden als systemeigene Office-Dokumente exportiert. '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3703216c28a5122f163e646942d3fac651e0ef29
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: d1d657c7dc004bc587a8934292b6117ac4e023a0
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920319"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087332"
 ---
 # <a name="export-content-search-results"></a>Exportieren von Inhaltssuchergebnissen
 
@@ -111,7 +111,7 @@ Der erste Schritt besteht darin, die Suchergebnisse für den Export vorzubereite
   
     - **Eine PST-Datei für jedes Postfach:** Exportiert eine PST-Datei für jedes Benutzerpostfach, das Suchergebnisse enthält. Alle Ergebnisse aus dem Archivpostfach des Benutzers sind in derselben PST-Datei enthalten. Mit dieser Option wird die Postfachordnerstruktur aus dem Quellpostfach wiedergegeben.
   
-    - **Eine PST-Datei mit allen Nachrichten:** Exportiert eine einzelne PST-Datei (mit dem Namen " *Exchange. PST* "), die die Suchergebnisse aus allen Quellpostfächern enthält, die in der Suche enthalten sind. Mit dieser Option wird die Postfachordnerstruktur für jede Nachricht wiedergegeben.
+    - **Eine PST-Datei mit allen Nachrichten:** Exportiert eine einzelne PST-Datei (mit dem Namen " *Exchange. PST*"), die die Suchergebnisse aus allen Quellpostfächern enthält, die in der Suche enthalten sind. Mit dieser Option wird die Postfachordnerstruktur für jede Nachricht wiedergegeben.
   
     - **Eine PST-Datei mit allen Nachrichten in einem einzelnen Ordner:** Exportiert Suchergebnisse in eine einzelne PST-Datei, in der sich alle Nachrichten in einem einzelnen Ordner auf oberster Ebene befinden. Mit dieser Option können Bearbeiter Elemente in chronologischer Reihenfolge überprüfen (Elemente werden nach dem gesendeten Datum sortiert), ohne dass Sie durch die ursprüngliche Postfachordnerstruktur für jedes Element navigieren müssen.
   
@@ -128,9 +128,9 @@ Der erste Schritt besteht darin, die Suchergebnisse für den Export vorzubereite
   
 10. Klicken Sie auf das Kontrollkästchen **Dateien in einem komprimierten Ordner exportieren (gezippt)** , um Suchergebnisse in komprimierte Ordner zu exportieren. Diese Option ist nur verfügbar, wenn Sie Exchange-Elemente als einzelne Nachrichten exportieren möchten und wenn die Suchergebnisse SharePoint-oder OneDrive-Dokumente enthalten. Diese Option wird in erster Linie verwendet, um die 260-Zeichenbegrenzung in Windows-Datei Pfad Namen zu umgehen, wenn Elemente exportiert werden. Siehe "Dateinamen von exportierten Elementen" im Abschnitt [Weitere Informationen](#more-information) . 
   
-11. Klicken Sie auf **Export starten**.
-  
-    Die Suchergebnisse werden zum Herunterladen vorbereitet, was bedeutet, dass Sie in den Azure-Speicherort in der Microsoft-Cloud hochgeladen werden. Wenn die Suchergebnisse zum Download bereit sind, wird der Link **exportierte Ergebnisse herunterladen** unter **Ergebnisse exportieren auf einen Computer** im Detailbereich angezeigt. 
+11. Klicken Sie auf **Export starten**. Die Suchergebnisse werden zum Herunterladen vorbereitet, was bedeutet, dass Sie in einen Azure-Speicherort in der Microsoft-Cloud hochgeladen werden. Dieser Vorgang kann einige Minuten in Anspruch nehmen.
+
+Weitere Informationen zum Herunterladen der exportierten Suchergebnisse finden Sie im nächsten Abschnitt.
   
 ## <a name="step-2-download-the-search-results"></a>Schritt 2: Herunterladen der Suchergebnisse
 
@@ -138,36 +138,25 @@ Der nächste Schritt besteht darin, die Suchergebnisse vom Azure-Speicherort auf
   
 Wie bereits erläutert, können Sie die Downloadgeschwindigkeit durch Konfigurieren einer Windows-Registrierungseinstellung auf dem Computer, den Sie zum Exportieren der Suchergebnisse verwenden, verbessern. Weitere Informationen finden Sie unter [höhere Downloadgeschwindigkeit beim Exportieren von eDiscovery-Suchergebnissen aus Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
   
-1. Klicken Sie im Detailbereich für die Suche, für die Sie den Exportvorgang gestartet haben, auf **exportierte Ergebnisse herunterladen** unter **Ergebnisse exportieren auf einen Computer**.
+1. Klicken Sie auf der Seite **Inhaltssuche** auf die Registerkarte **Exporte** . 
   
-    Das Fenster **exportierte Ergebnisse herunterladen** wird angezeigt und enthält die folgenden Informationen zu den Suchergebnissen, die auf Ihren Computer heruntergeladen werden. 
+   Möglicherweise müssen Sie auf **Aktualisieren** klicken, um die Liste der Exportaufträge so zu aktualisieren, dass der von Ihnen erstellte Exportauftrag angezeigt wird. Export Aufträge haben den gleichen Namen wie die entsprechende Suche, wobei **_Export** an den Such Namen angehängt wird.
   
-    - Die Anzahl der Elemente, die heruntergeladen werden.
-  
-    - Die geschätzte Gesamtgröße der Elemente, die heruntergeladen werden sollen.
-  
-    - Ob indiziert oder nicht indiziert exportiert wird. Nicht indizierte Elemente sind Elemente, die ein erkanntes Format aufweisen, verschlüsselt sind oder aus anderen Gründen nicht indiziert wurden. Weitere Informationen finden Sie unter nicht [indizierte Elemente in der Inhaltssuche](partially-indexed-items-in-content-search.md).
-  
-    - Gibt an, ob Versionen von SharePoint-Dokumenten heruntergeladen werden.
-  
-    - Der Status des Vorbereitungsvorgangs für den Export. Sie können mit dem Herunterladen der Suchergebnisse auch dann beginnen, wenn die Vorbereitung der Daten nicht vollständig ist.
-  
-2. Klicken Sie unter **Schlüssel exportieren** auf **In Zwischenablage kopieren**. Sie verwenden diesen Schlüssel in Schritt 5, um die Suchergebnisse herunterzuladen.
-  
-    > [!NOTE]
-    > Da jeder Benutzer das eDiscovery-Export Tool installieren und starten kann und dann mit diesem Schlüssel die Suchergebnisse herunterlädt, müssen Sie Vorkehrungen treffen, um diesen Schlüssel zu schützen, genauso wie Sie Kennwörter oder andere sicherheitsrelevante Informationen schützen würden.
-  
-3. Klicken Sie auf **Ergebnisse herunterladen**.
+2. Wählen Sie den Exportauftrag aus, den Sie in Schritt 1 erstellt haben.
 
-4. Wenn Sie aufgefordert werden, das **eDiscovery-Export Tool** zu installieren, klicken Sie auf **Installieren**.
+3. Klicken Sie auf der Flyout-Seite unter **Export Schlüssel** auf **in Zwischenablage kopieren**. Sie verwenden diesen Schlüssel in Schritt 6, um die Suchergebnisse herunterzuladen.
+  
+4. Klicken Sie auf **Ergebnisse herunterladen**.
 
-5. Führen Sie im **eDiscovery-Export Tool** folgende Schritte aus:
+5. Wenn Sie aufgefordert werden, das **eDiscovery-Export Tool** zu installieren, klicken Sie auf **Installieren**.
+
+6. Führen Sie im **eDiscovery-Export Tool** folgende Schritte aus:
 
    ![eDiscovery-Export Tool](../media/eDiscoveryExportTool.png)
 
-   1. Fügen Sie den Exportschlüssel, den Sie in Schritt 2 kopiert haben, in das entsprechende Feld ein.
+   1. Fügen Sie den Exportschlüssel, den Sie in Schritt 3 kopiert haben, in das entsprechende Feld ein.
   
-   2. Klicken Sie auf **Durchsuchen** , um das Verzeichnis anzugeben, in das die Dateien mit den Suchergebnissen heruntergeladen werden sollen.
+   2. Klicken Sie auf **Durchsuchen**, um das Verzeichnis anzugeben, in das die Dateien mit den Suchergebnissen heruntergeladen werden sollen.
   
       > [!NOTE]
       > Aufgrund der hohen Menge an Datenträgeraktivität (Lese-und Schreibvorgänge) sollten Sie Suchergebnisse auf ein lokales Laufwerk herunterladen. Laden Sie Sie nicht auf ein zugeordnetes Netzlaufwerk oder einen anderen Netzwerkspeicherort herunter. 
@@ -326,7 +315,7 @@ Alle durch Rechte geschützten (RMS-geschützten) e-Mail-Nachrichten, die in den
   
 - Wie bereits erläutert, müssen Sie die Suchergebnisse als einzelne Nachrichten exportieren, um RMS-geschützte Nachrichten beim Exportieren zu entschlüsseln. Wenn Sie Suchergebnisse in eine PST-Datei exportieren, bleiben RMS-geschützte Nachrichten verschlüsselt.
 
-- Entschlüsselte Nachrichten werden im **ResultsLog** -Bericht identifiziert. Dieser Bericht enthält eine Spalte mit dem Namen **Decode Status** , und der Wert **decodiert** in dieser Spalte identifiziert die Nachrichten, die entschlüsselt wurden.
+- Entschlüsselte Nachrichten werden im **ResultsLog** -Bericht identifiziert. Dieser Bericht enthält eine Spalte mit dem Namen **Decode Status**, und der Wert **decodiert** in dieser Spalte identifiziert die Nachrichten, die entschlüsselt wurden.
 
 - Neben dem Entschlüsseln von Dateianlagen beim Exportieren von Suchergebnissen können Sie auch eine Vorschau der entschlüsselten Datei anzeigen, wenn Sie eine Vorschau der Suchergebnisse anzeigen. Sie können die durch Rechte geschützte e-Mail-Nachricht nur anzeigen, nachdem Sie Sie exportiert haben.
 

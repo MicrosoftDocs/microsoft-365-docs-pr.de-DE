@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 Endpunkt-DLP erweitert die Überwachung von Dateiaktivitäten und Schutzmaßnahmen für diese Dateien auf Endpunkte. Dateien werden in den Microsoft 365 Compliance-Lösungen sichtbar gemacht. '
-ms.openlocfilehash: 0f69261cb5617c7d6de7900b85a5a254a04bc45e
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+ms.openlocfilehash: e469872dac19db08f7b525c8a5ada725c75bfa10
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999474"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072974"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Informationen zu Microsoft 365 Endpunkt-DLP (Data Loss Prevention, Verhinderung von Datenverlust)
 
@@ -147,13 +147,13 @@ Wenn eine Datei beispielsweise auf einen USB-Wechseldatenträger kopiert wird, w
 
 Jetzt, da Sie die Basics zu Endpunkt-DLP kennen, sind die nächsten Schritte folgende:
 
-1) [Erste Schritte mit Microsoft Endpunkt-DLP (Vorschau)](endpoint-dlp-getting-started.md)
-2) [Nutzung von Microsoft Endpunkt-DLP (Vorschau)](endpoint-dlp-using.md)
+1) [Erste Schritte mit Microsoft Endpunkt-DLP ](endpoint-dlp-getting-started.md)
+2) [Nutzung von Microsoft Endpunkt-DLP ](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Erste Schritte mit Microsoft Endpunkt-DLP (Vorschau)](endpoint-dlp-getting-started.md)
-- [Nutzung von Microsoft Endpunkt-DLP (Vorschau)](endpoint-dlp-using.md)
+- [Erste Schritte mit Microsoft Endpunkt-DLP](endpoint-dlp-getting-started.md)
+- [Nutzung von Microsoft Endpunkt-DLP ](endpoint-dlp-using.md)
 - [Verhinderung von Datenverlust – Übersicht](data-loss-prevention-policies.md)
 - [Erstellen, Testen und Optimieren einer DLP-Richtlinie](create-test-tune-dlp-policy.md)
 - [Erste Schritte mit dem Aktivitäten-Explorer](data-classification-activity-explorer.md)

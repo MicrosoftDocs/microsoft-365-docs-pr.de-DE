@@ -8,26 +8,26 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.author: daniha
+ms.author: siosulli
 author: DaniHalfin
 manager: dansimp
 audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: 5d30440d0051f4ec678effac657808853c7a6515
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: a31ccc8cab6995e0647e397be4b869e48da599b4
+ms.sourcegitcommit: e03bc2945e63f7f2638257e530056ae9283b45d9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48305005"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49070889"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-data-processor-service-for-windows-enterprise"></a>Datenschutz-Folgenabschätzung: Leitfaden für Datenverantwortliche, die den Microsoft-Datenverarbeitungsdienst für Windows Enterprise verwenden
 
 >[!NOTE]
 >Dieser Artikel richtet sich an Teilnehmer am Vorschauprogramm „Datenauftragsverarbeiterdienst für Windows Enterprise“ und setzt die Zustimmung zu bestimmten Nutzungsbedingungen voraus. Wenn Sie mehr über das Programm erfahren und den Nutzungsbedingungen zustimmen möchten, wechseln Sie zu [https://aka.ms/WindowsEnterprisePublicPreview](https://aka.ms/WindowsEnterprisePublicPreview).
 
-Gemäß der EU-Datenschutzgrundverordnung (DSGVO) müssen Datenverantwortliche eine Datenschutz-Folgenabschätzung (Data Protection Impact Assessment, DPIA) für Verarbeitungsvorgänge durchführen, die ‚voraussichtlich ein hohes Risiko für die Rechte und Freiheiten natürlicher Personen zur Folge haben‘. Der Datenverarbeitungsdienst für Windows Enterprise selbst weist nichts auf, das die Erstellung einer DPIA durch einen ihn nutzenden Datenverantwortlichen erfordern würde. Ob eine DPIA erforderlich ist, hängt vielmehr von den Details und dem Kontext der Bereitstellung, Konfiguration und Verwendung des Datenverarbeitungsdienstes für Windows Enterprise durch den Datenverantwortlichen ab. 
+Gemäß der EU-Datenschutzgrundverordnung (DSGVO) müssen Datenverantwortliche eine Datenschutz-Folgenabschätzung (Data Protection Impact Assessment, DPIA) für Verarbeitungsvorgänge durchführen, die „voraussichtlich ein hohes Risiko für die Rechte und Freiheiten natürlicher Personen zur Folge haben“. Der Datenverarbeitungsdienst für Windows Enterprise selbst weist nichts auf, das die Erstellung einer DPIA durch einen ihn nutzenden Datenverantwortlichen erfordern würde. Ob eine DPIA erforderlich ist, hängt vielmehr von den Details und dem Kontext der Bereitstellung, Konfiguration und Verwendung des Datenverarbeitungsdienstes für Windows Enterprise durch den Datenverantwortlichen ab. 
 
 Dieses Dokument soll den Datenverantwortlichen Informationen über den Datenverarbeitungsdienst für Windows Enterprise bereitstellen, die ihnen helfen, zu bestimmen, ob eine Datenschutz-Folgenabschätzung erforderlich ist, und wenn ja, welche Informationen sie enthalten muss.
 

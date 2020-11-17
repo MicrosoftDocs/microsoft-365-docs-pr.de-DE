@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 Network Connectivity Test Tool (Vorschau)
-ms.openlocfilehash: 2be48f42c8529334b55b311e6f202d9f3b25ff9e
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 4fc12645ccd6a022e4ef4ebe849ac91ba431129b
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295526"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087079"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool-preview"></a>Microsoft 365 Network Connectivity Test Tool (Vorschau)
 
@@ -173,7 +173,7 @@ Auf dieser Seite werden die besten Exchange-Dienst-Haustür Standorte nach Ort f
 
 Dies zeigt den DNS-Namen und die IP-Adresse des Exchange-Dienst-Front-Door-Servers an, an den Sie weitergeleitet wurden. Er wird nur für Informationen bereitgestellt, und es gibt keine zugeordnete Netzwerk Einblicke.
 
-### <a name="sharepoint-online"></a>Microsoft Office SharePoint Online
+### <a name="sharepoint-online"></a>SharePoint Online
 
 In diesem Abschnitt werden die Testergebnisse im Zusammenhang mit SharePoint Online und OneDrive.
 
@@ -183,7 +183,7 @@ Die in-use-SharePoint-Dienst-Haustür wird auf die gleiche Weise wie der OneDriv
 
 #### <a name="download-speed"></a>Download Geschwindigkeit
 
-Wir messen die Downloadgeschwindigkeit für eine 15MB-Datei von der Haustür des SharePoint-Diensts. Das Ergebnis wird in Megabytes pro Sekunde angezeigt, um anzugeben, welche Größe die Datei in Megabytes in **einer Sekunde**von SharePoint oder OneDrive heruntergeladen werden kann. Die Zahl sollte einem Zehntel der minimalen Bandbreiten Bandbreite in Megabit pro Sekunde entsprechen. Wenn Sie beispielsweise über eine Internetverbindung mit 100 Mbit/s verfügen, erwarten Sie möglicherweise 10 Megabyte pro Sekunde (10MBps).
+Wir messen die Downloadgeschwindigkeit für eine 15MB-Datei von der Haustür des SharePoint-Diensts. Das Ergebnis wird in Megabytes pro Sekunde angezeigt, um anzugeben, welche Größe die Datei in Megabytes in **einer Sekunde** von SharePoint oder OneDrive heruntergeladen werden kann. Die Zahl sollte einem Zehntel der minimalen Bandbreiten Bandbreite in Megabit pro Sekunde entsprechen. Wenn Sie beispielsweise über eine Internetverbindung mit 100 Mbit/s verfügen, erwarten Sie möglicherweise 10 Megabyte pro Sekunde (10MBps).
 
 #### <a name="buffer-bloat"></a>Puffer aufblasen
 
@@ -193,7 +193,7 @@ Während des 15MB-Downloads Messen wir die TCP-Wartezeit für die SharePoint-Die
 
 Dies zeigt den DNS-Namen und die IP-Adresse des SharePoint-Dienst-Front-Door-Servers an, an den Sie weitergeleitet wurden. Er wird nur für Informationen bereitgestellt, und es gibt keine zugeordnete Netzwerk Einblicke.
 
-### <a name="microsoft-teams"></a>Microsoft Teams
+### <a name="microsoft-teams"></a>Microsoft Teams
 
 In diesem Abschnitt werden Testergebnisse im Zusammenhang mit Microsoft Teams aufgeführt.
 
@@ -207,17 +207,17 @@ Zeigt den UDP-Paketverlust, der in einem 10 Sekunden Test-Audioanruf vom Client 
 
 #### <a name="latency"></a>Wartezeit
 
-Zeigt die gemessene UDP-Wartezeit, die niedriger als **100M**sein sollte.
+Zeigt die gemessene UDP-Wartezeit, die niedriger als **100M** sein sollte.
 
 #### <a name="jitter"></a>Jitter
 
-Zeigt den gemessenen UDP-Jitter an, der niedriger als **30ms**sein sollte.
+Zeigt den gemessenen UDP-Jitter an, der niedriger als **30ms** sein sollte.
 
 #### <a name="connectivity"></a>Konnektivität
 
 Wir testen die http-Konnektivität vom Benutzer Bürostandort bis hin zu allen erforderlichen Microsoft 365-Netzwerkendpunkten. Diese werden unter veröffentlicht [https://aka.ms/o365ip](https://aka.ms/o365ip) . Für alle erforderlichen Netzwerkendpunkte, mit denen keine Verbindung hergestellt werden kann, wird ein Netzwerk Einblicke angezeigt.
 
-Die Konnektivität ay wird durch einen Proxy Server, eine Firewall oder ein anderes Netzwerksicherheitsgerät im Umkreis des Unternehmensnetzwerks blockiert oder als Cloud-Proxy verwendet.
+Die Konnektivität kann durch einen Proxy Server, eine Firewall oder ein anderes Netzwerksicherheitsgerät im Umkreis des Unternehmensnetzwerks blockiert werden. Die Konnektivität zum TCP-Port 80 wird mit einer HTTP-Anforderung getestet, und die Konnektivität zum TCP-Port 443 wird mit einer HTTPS-Anforderung getestet. Wenn keine Antwort vorhanden ist, wird der FQDN als Fehler gekennzeichnet. Wenn ein HTTP-Antwortcode 407 vorhanden ist, wird der FQDN als Fehler gekennzeichnet. Wenn es einen HTTP-Antwortcode 403 gibt, überprüfen wir das Server-Attribut der Antwort, und wenn es sich um einen Proxy Server handelt, wird dies als Fehler gekennzeichnet. Sie können die durchgeführten Tests mit dem Windows-Befehlszeilentool curl.exe simulieren.
 
 Wir testen das SSL-Zertifikat an jedem erforderlichen Microsoft 365-Netzwerkendpunkt, der sich in der Kategorie Optimize oder Allow gemäß der Definition unter befindet [https://aka.ms/o365ip](https://aka.ms/o365ip) . Wenn Tests kein Microsoft SSL-Zertifikat finden, muss das verschlüsselte Netzwerk, das verbunden ist, von einem zwischengeschalteten Netzwerkgerät abgefangen worden sein. Ein Netzwerk Einblicke wird auf allen abgefangenen verschlüsselten Netzwerkendpunkten angezeigt.
 

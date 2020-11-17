@@ -18,12 +18,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Zusammenfassung: Herstellen einer Verbindung mit allen Microsoft 365-Diensten in einem einzigen PowerShell-Fenster.'
-ms.openlocfilehash: 04be916f745e2bde70554045340fc8ec03f87413
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 4128e360a3664d3a61559139bc4e6e346418fa61
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754316"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087027"
 ---
 # <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>Herstellen einer Verbindung mit allen Microsoft 365-Diensten in einem einzigen PowerShell-Fenster
 
@@ -56,7 +56,7 @@ Bevor Sie Microsoft 365 von einer einzigen Instanz von PowerShell aus verwalten
     
   - Windows Server 2008 R2 SP1*
     
-    \* Sie müssen Microsoft .NET Framework 4.5. *x* und dann Windows Management Framework 3.0 oder 4.0 installieren. Weitere Informationen finden Sie unter [Windows Management Framework](https://docs.microsoft.com/powershell/scripting/windows-powershell/wmf/overview?view=powershell-7).
+    \* Sie müssen Microsoft .NET Framework 4.5.*x* und dann Windows Management Framework 3.0 oder 4.0 installieren. Weitere Informationen finden Sie unter [Windows Management Framework](https://docs.microsoft.com/powershell/scripting/windows-powershell/wmf/overview?view=powershell-7).
     
     Aufgrund der Anforderungen für das Skype for Business Online-Modul müssen Sie eine 64-Bit-Version von Windows und eins der Microsoft 365-Module verwenden.
     
@@ -68,7 +68,7 @@ Bevor Sie Microsoft 365 von einer einzigen Instanz von PowerShell aus verwalten
   - [Exchange Online PowerShell V2](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-v2-module)
   - [Übersicht über PowerShell für Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
     
--  PowerShell muss so konfiguriert werden, dass signierte Skripts für Skype for Business Online und das Security &amp; Compliance Center ausgeführt werden. Führen Sie den folgenden Befehl in einer PowerShell-Sitzung mit erhöhten Berechtigungen aus (eine PowerShell-Sitzung, die Sie **als Administrator ausführen** ).
+-  PowerShell muss so konfiguriert werden, dass signierte Skripts für Skype for Business Online und das Security &amp; Compliance Center ausgeführt werden. Führen Sie den folgenden Befehl in einer PowerShell-Sitzung mit erhöhten Berechtigungen aus (eine PowerShell-Sitzung, die Sie **als Administrator ausführen**).
     
    ```powershell
    Set-ExecutionPolicy RemoteSigned
@@ -109,7 +109,7 @@ Folgen Sie den nachstehend beschriebenen Schritten zum Herstellen einer Verbindu
     
    ```powershell
    $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
-   Connect-SPOService -Url https://$orgName-admin.sharepoint.com -Credential $userCredential
+   Connect-SPOService -Url https://$orgName-admin.sharepoint.com -Credential $Credential
    ```
 
 5. Führen Sie diese Befehle aus, um eine Verbindung mit Skype for Business Online herzustellen. Wenn Sie zum ersten Mal eine Verbindung herstellen, wird eine Warnung zur Erhöhung des `WSMan NetworkDelayms`-Werts angezeigt. Ignorieren Sie diese Warnung.
@@ -152,7 +152,7 @@ Folgen Sie den nachstehend beschriebenen Schritten zum Herstellen einer Verbindu
    ```
   
    > [!Note]
-   > Informationen zur Verbindung mit anderen Microsoft Teams-Clouds als der *Worldwide* -Cloud finden Sie unter [Connect-MicrosoftTeams](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams).
+   > Informationen zur Verbindung mit anderen Microsoft Teams-Clouds als der *Worldwide*-Cloud finden Sie unter [Connect-MicrosoftTeams](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams).
 
 
 ### <a name="azure-active-directory-powershell-for-graph-module"></a>Azure Active Directory PowerShell für Graph-Modul
@@ -232,7 +232,7 @@ Connect-MicrosoftTeams -Credential $credential
 
 ### <a name="azure-active-directory-powershell-for-graph-module"></a>Azure Active Directory PowerShell für Graph-Modul
 
-Nachfolgend sehen Sie alle Befehle in einem einzigen Block, um eine Verbindung mit mehreren Microsoft 365-Diensten ( *außer dem Security &amp; Compliance Center* ) mit mehrstufiger Authentifizierung herzustellen bei Verwendung des Azure Active Directory PowerShell für Graph-Moduls.
+Nachfolgend sehen Sie alle Befehle in einem einzigen Block, um eine Verbindung mit mehreren Microsoft 365-Diensten (*außer dem Security &amp; Compliance Center*) mit mehrstufiger Authentifizierung herzustellen bei Verwendung des Azure Active Directory PowerShell für Graph-Moduls.
 
 ```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -252,7 +252,7 @@ Connect-ExchangeOnline -UserPrincipalName $acctName -ShowProgress $true
 Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 ```
-Nachfolgend sehen Sie alle Befehle in einem einzigen Block, um eine Verbindung mit mehreren Microsoft 365-Diensten ( *außer Exchange Online* ) mit mehrstufiger Authentifizierung herzustellen bei Verwendung des Azure Active Directory PowerShell für Graph-Moduls.
+Nachfolgend sehen Sie alle Befehle in einem einzigen Block, um eine Verbindung mit mehreren Microsoft 365-Diensten (*außer Exchange Online*) mit mehrstufiger Authentifizierung herzustellen bei Verwendung des Azure Active Directory PowerShell für Graph-Moduls.
 
 ```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -274,7 +274,7 @@ Connect-MicrosoftTeams
 ```
 ### <a name="microsoft-azure-active-directory-module-for-windows-powershell-module"></a>Microsoft Azure Active Directory-Modul für Windows PowerShell-Modul
 
-Nachfolgend sehen Sie alle Befehle in einem einzigen Block, um eine Verbindung mit mehreren Microsoft 365-Diensten ( *außer dem Security &amp; Compliance Center* ) mit mehrstufiger Authentifizierung herzustellen bei Verwendung des Microsoft Azure Active Directory-Moduls für Windows PowerShell-Modul.
+Nachfolgend sehen Sie alle Befehle in einem einzigen Block, um eine Verbindung mit mehreren Microsoft 365-Diensten (*außer dem Security &amp; Compliance Center*) mit mehrstufiger Authentifizierung herzustellen bei Verwendung des Microsoft Azure Active Directory-Moduls für Windows PowerShell-Modul.
 
 ```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -294,7 +294,7 @@ Connect-ExchangeOnline -UserPrincipalName $acctName -ShowProgress $true
 Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 ```
-Nachfolgend sehen Sie alle Befehle in einem einzigen Block, um eine Verbindung mit mehreren Microsoft 365-Diensten ( *außer Exchange Online* ) mit mehrstufiger Authentifizierung herzustellen bei Verwendung des Microsoft Azure Active Directory-Moduls für Windows PowerShell-Modul.
+Nachfolgend sehen Sie alle Befehle in einem einzigen Block, um eine Verbindung mit mehreren Microsoft 365-Diensten (*außer Exchange Online*) mit mehrstufiger Authentifizierung herzustellen bei Verwendung des Microsoft Azure Active Directory-Moduls für Windows PowerShell-Modul.
 
 ```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie e-Mail-Sicherheitsberichte für Ihre Organisation suchen und verwenden. E-Mail-Sicherheitsberichte sind im Security & Compliance Center verfügbar.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 738ae55fac5677a1b4f78e4c67506e85d5975090
-ms.sourcegitcommit: 9dbc6a08177aaca112e84d30dbaa79a0a8e9dbf8
+ms.openlocfilehash: 75370cbbdfbc59bf8e9334d1e11d8b92c5c97e61
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48945354"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087751"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Anzeigen von E-Mail-Sicherheitsberichten im Security & Compliance Center
 
@@ -51,9 +51,9 @@ Sie können die Tabelle Diagramm und Details filtern, indem Sie auf **Filter** k
 
 - **Start Datum** und **Enddatum**
 
-- **Verdächtig** : das Benutzerkonto hat verdächtige e-Mails gesendet, und es besteht das Risiko, dass das Senden von e-Mails eingeschränkt wird.
+- **Verdächtig**: das Benutzerkonto hat verdächtige e-Mails gesendet, und es besteht das Risiko, dass das Senden von e-Mails eingeschränkt wird.
 
-- **Eingeschränkt** : das Benutzerkonto wurde aufgrund strenger verdächtiger Muster vom Senden von e-Mails eingeschränkt.
+- **Eingeschränkt**: das Benutzerkonto wurde aufgrund strenger verdächtiger Muster vom Senden von e-Mails eingeschränkt.
 
 ![Berichtsansicht im Bericht "kompromittierte Benutzer"](../../media/compromised-users-report-activity-view.png)
 
@@ -63,7 +63,7 @@ Wenn Sie auf **Detailtabelle anzeigen** klicken, werden die folgenden Details an
 - **Benutzer-ID**
 - **Aktion**
 
-Klicken Sie auf **Bericht anzeigen** , um zur Berichtsansicht zurückzukehren.
+Klicken Sie auf **Bericht anzeigen**, um zur Berichtsansicht zurückzukehren.
 
 ## <a name="encryption-report"></a>Verschlüsselungs Bericht
 
@@ -83,7 +83,7 @@ Weitere Informationen zur Verschlüsselung finden Sie unter [e-Mail-Verschlüsse
 
 Sie können die folgenden Filter für das Diagramm verwenden:
 
-- **Anzeigen von Daten nach: Nachrichten Verschlüsselungs Bericht** und **Aufschlüsselung nach: Verschlüsselungsmethode** : die folgenden Verschlüsselungsmethoden sind verfügbar:
+- **Anzeigen von Daten nach: Nachrichten Verschlüsselungs Bericht** und **Aufschlüsselung nach: Verschlüsselungsmethode**: die folgenden Verschlüsselungsmethoden sind verfügbar:
 
   - **Verschlüsselung nach Benutzer**
   - **Verschlüsselung nach Richtlinie**
@@ -94,7 +94,7 @@ Sie können die folgenden Filter für das Diagramm verwenden:
   - Verschlüsselungsmethode.
   - Verschlüsselungs Vorlage.
 
-- **Anzeigen von Daten nach: Nachrichten Verschlüsselungs Bericht** und **Aufschlüsselung nach: Verschlüsselungs Vorlage** : die folgenden Verschlüsselungsmethoden sind verfügbar:
+- **Anzeigen von Daten nach: Nachrichten Verschlüsselungs Bericht** und **Aufschlüsselung nach: Verschlüsselungs Vorlage**: die folgenden Verschlüsselungsmethoden sind verfügbar:
 
   - **Nicht weiterleiten**
   - **Nur verschlüsseln**
@@ -107,7 +107,7 @@ Sie können die folgenden Filter für das Diagramm verwenden:
   - Verschlüsselungsmethode
   - Verschlüsselungs Vorlage
 
-- **Daten nach: Top 5 Recipient Domains** : in dieser Ansicht wird ein Kreisdiagramm mit gesendeten Nachrichten Zählern für die Top 5-Empfängerdomänen angezeigt.
+- **Daten nach: Top 5 Recipient Domains**: in dieser Ansicht wird ein Kreisdiagramm mit gesendeten Nachrichten Zählern für die Top 5-Empfängerdomänen angezeigt.
 
   Wenn Sie auf **Filter** klicken, können Sie ein **Start** -und **Enddatum** auswählen.
 
@@ -115,7 +115,7 @@ Sie können die folgenden Filter für das Diagramm verwenden:
 
 Wenn Sie auf **Detailtabelle anzeigen** klicken, hängt die Anzeige der angezeigten Informationen von dem Diagramm ab, das Sie gesucht haben:
 
-- **Aufschlüsseln nach: Verschlüsselungsmethode** oder **Aufschlüsselung durch: Verschlüsselungs Vorlage** : die folgenden Informationen werden angezeigt:
+- **Aufschlüsseln nach: Verschlüsselungsmethode** oder **Aufschlüsselung durch: Verschlüsselungs Vorlage**: die folgenden Informationen werden angezeigt:
 
   - **Date**
   - **Absenderadresse**
@@ -124,7 +124,7 @@ Wenn Sie auf **Detailtabelle anzeigen** klicken, hängt die Anzeige der angezeig
   - **Empfängeradresse**
   - **Betreff**
 
-- **Anzeigen von Daten nach: Top 5 Recipient Domains** :
+- **Anzeigen von Daten nach: Top 5 Recipient Domains**:
 
   - **Date**
   - **Empfängerdomäne**
@@ -136,7 +136,7 @@ Wenn Sie in einer Detailtabellen Ansicht auf **Filter** klicken, können Sie die
 - Verschlüsselungsmethode
 - Verschlüsselungs Vorlage
 
-Klicken Sie auf **Bericht anzeigen** , um zur Berichtsansicht zurückzukehren.
+Klicken Sie auf **Bericht anzeigen**, um zur Berichtsansicht zurückzukehren.
 
 ## <a name="mailflow-status-report"></a>Nachrichtenfluss-Statusbericht
 
@@ -165,12 +165,16 @@ Wenn Sie auf **Detailtabelle anzeigen** klicken, werden die folgenden Details an
 - **Date**
 - **Absenderadresse**
 - **Empfängeradresse**
-- **Nachrichten-ID** : verfügbar im Kopfzeilenfeld nach **richten-ID** im Nachrichtenkopf und sollte eindeutig sein. Ein Beispielwert ist `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (Beachten Sie die spitzen Klammern).
+- **Nachrichten-ID**: verfügbar im Kopfzeilenfeld nach **richten-ID** im Nachrichtenkopf und sollte eindeutig sein. Ein Beispielwert ist `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (Beachten Sie die spitzen Klammern).
 - **Betreff**
 - **Filename**
 - **Name der Schadsoftware**
 
-Klicken Sie auf **Bericht anzeigen** , um zur Berichtsansicht zurückzukehren.
+Klicken Sie auf **Bericht anzeigen**, um zur Berichtsansicht zurückzukehren.
+
+## <a name="mail-latency-report"></a>Bericht über die e-Mail-Wartezeit
+
+Der **Bericht über die e-Mail-Wartezeit** enthält Informationen zur e-Mail-Zustellung und zur detonations Wartezeit in Ihrer Organisation. Weitere Informationen finden Sie unter [Mail Latency Report](view-reports-for-atp.md#mail-latency-report).
 
 ## <a name="sent-and-received-email-report"></a>Gesendete und empfangene e-Mail-Berichte
 
@@ -192,18 +196,18 @@ Weitere Informationen zum Antispamschutz finden Sie unter [Anti-Spam Protection 
 
 Die folgenden Diagramme stehen in der Berichtsansicht zur Verfügung:
 
-- **Aufschlüsseln nach: Action** : die folgenden Ereignistypen werden angezeigt:
+- **Aufschlüsseln nach: Action**: die folgenden Ereignistypen werden angezeigt:
 
   - **Gefilterter Spam Inhalt**
   - **Spam-IP-Block**
   - **Spam Umschlag Block**
-  - **Spam-Blockierung-Filter** : verzeichnisbasierte Edge-Blockierung (Blockierung)
+  - **Spam-Blockierung-Filter**: verzeichnisbasierte Edge-Blockierung (Blockierung)
 
   Wenn Sie auf einen Tag (Datenpunkt) im Diagramm zeigen, können Sie sehen, wie viele Elemente an diesem Tag blockiert wurden, und wie diese Elemente kategorisiert werden.
 
   ![Aktionsansicht im Spam Erkennungs Bericht](../../media/spam-detections-report-action-view.png)
 
-- **Aufschlüsseln nach: Direction** : die folgenden Anweisungen werden angezeigt:
+- **Aufschlüsseln nach: Direction**: die folgenden Anweisungen werden angezeigt:
 
   - **Eingehende**
   - **Ausgehende**
@@ -233,7 +237,7 @@ Wenn Sie in einer Detailtabelle auf **Filter** klicken, können Sie die Ergebnis
 - Richtungswerte
 - Werte des Ereignistyps
 
-Klicken Sie auf **Bericht anzeigen** , um zur Berichtsansicht zurückzukehren.
+Klicken Sie auf **Bericht anzeigen**, um zur Berichtsansicht zurückzukehren.
 
 ## <a name="spoof-detections-report"></a>Spoofing-Erkennungs Bericht
 
@@ -266,7 +270,7 @@ Wenn Sie auf **Detailtabelle anzeigen** klicken, werden die folgenden Details an
 - **Aktion**
 - **Nachrichtenanzahl**
 
-Klicken Sie auf **Bericht anzeigen** , um zur Berichtsansicht zurückzukehren.
+Klicken Sie auf **Bericht anzeigen**, um zur Berichtsansicht zurückzukehren.
 
 ## <a name="threat-protection-status-report"></a>Threat Protection-Statusbericht
 
@@ -274,7 +278,7 @@ Der **Statusbericht zum Bedrohungsschutz** ist sowohl in EoP als auch in Microso
 
 Der Bericht enthält die Anzahl von e-Mail-Nachrichten mit bösartigen Inhalten wie Dateien oder Websiteadressen (URLs), die von der Antischadsoftware-Engine, der [automatischen Säuberungsaktion (Zero-Hour Purge)](zero-hour-auto-purge.md)und dem Verteidiger für Office 365 Features wie [sichere Links](atp-safe-links.md), [sichere Anlagen](atp-safe-attachments.md)und [Anti-Phishing](set-up-anti-phishing-policies.md)blockiert wurden. Sie können diese Informationen verwenden, um Trends zu identifizieren oder zu bestimmen, ob Organisationsrichtlinien angepasst werden müssen.
 
-**Hinweis** : Es ist wichtig zu verstehen, dass eine Nachricht, die an fünf Empfänger gesendet wird, als fünf verschiedene Nachrichten gezählt wird und nicht eine Nachricht.
+**Hinweis**: Es ist wichtig zu verstehen, dass eine Nachricht, die an fünf Empfänger gesendet wird, als fünf verschiedene Nachrichten gezählt wird und nicht eine Nachricht.
 
 Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center](https://protection.office.com), wechseln Sie **Reports** zum \> **Dashboard** Berichte, und wählen Sie **Threat Protection Status** aus. Wenn Sie direkt zum Bericht wechseln möchten, öffnen Sie eine der folgenden URLs:
 
@@ -289,7 +293,7 @@ Standardmäßig zeigt das Diagrammdaten für die letzten 7 Tage an. Wenn Sie auf
 
 Die folgenden Ansichten sind verfügbar:
 
-- **Anzeigen von Daten nach: Übersicht** : die folgenden Erkennungsinformationen werden angezeigt:
+- **Anzeigen von Daten nach: Übersicht**: die folgenden Erkennungsinformationen werden angezeigt:
 
   - **E-Mail-Schadsoftware**
   - **Phishing per e-Mail**
@@ -299,12 +303,12 @@ Die folgenden Ansichten sind verfügbar:
 
 - **Anzeigen von Daten nach: Inhalt \> Schadsoftware**<sup>1</sup>: die folgenden Informationen werden für Microsoft Defender für Office 365 Organisationen angezeigt:
 
-  - **Anti-Malware Engine** : Schadsoftware, die in SharePoint, OneDrive und Microsoft Teams durch die [integrierte Virenerkennung in Microsoft 365](virus-detection-in-spo.md)erkannt wurde.
-  - **Datei Explosion** : von [ATP für SharePoint, OneDrive und Microsoft Teams](atp-for-spo-odb-and-teams.md)erkannte bösartige Dateien.
+  - **Anti-Malware Engine**: Schadsoftware, die in SharePoint, OneDrive und Microsoft Teams durch die [integrierte Virenerkennung in Microsoft 365](virus-detection-in-spo.md)erkannt wurde.
+  - **Datei Explosion**: von [ATP für SharePoint, OneDrive und Microsoft Teams](atp-for-spo-odb-and-teams.md)erkannte bösartige Dateien.
 
   ![Ansicht "Inhalts-Malware" im Statusbericht "Threat Protection"](../../media/threat-protection-status-report-content-malware-view.png)
 
-- **Anzeigen von Daten nach: Nachrichten Überschreibung** : die folgenden Außerkraftsetzungs Grundinformationen werden angezeigt:
+- **Anzeigen von Daten nach: Nachrichten Überschreibung**: die folgenden Außerkraftsetzungs Grundinformationen werden angezeigt:
 
   - **On-premises Skip**
   - **IP-Adresse zulassen**
@@ -318,17 +322,17 @@ Die folgenden Ansichten sind verfügbar:
 
   ![Ansicht "Nachrichten Außerkraftsetzung" im Statusbericht "Threat Protection"](../../media/threat-protection-status-report-message-override-view.png)
 
-- **Aufschlüsseln nach: Erkennungstechnologie** und **Anzeigen von Daten nach: e-Mail \> Phishing** : die folgenden Informationen werden angezeigt:
+- **Aufschlüsseln nach: Erkennungstechnologie** und **Anzeigen von Daten nach: e-Mail \> Phishing**: die folgenden Informationen werden angezeigt:
 
   - **ATP-generierte URL-Reputation**<sup>1</sup>: Reputation des böswilligen URLs, die von Defender für Office 365 Explosionen in anderen Microsoft 365-Kunden generiert wurde.
-  - **Erweiterter Phishing-Filter** : Phishing-Signale basierend auf dem maschinellen lernen.
-  - **Anti-Spoof-DMARC-Fehler** : DMARC-Authentifizierungsfehler bei Nachrichten.
-  - **Anti-Spoof-Intra-org** : Absender versucht, die Empfängerdomäne vorzutäuschen.
-  - **Anti-Spoof-externe Domäne** : Absender versucht, eine andere Domäne zu spoofen.
-  - **Marken Identitätswechsel** : Identitätswechsel von bekannten Marken, die auf Absendern basieren.
+  - **Erweiterter Phishing-Filter**: Phishing-Signale basierend auf dem maschinellen lernen.
+  - **Anti-Spoof-DMARC-Fehler**: DMARC-Authentifizierungsfehler bei Nachrichten.
+  - **Anti-Spoof-Intra-org**: Absender versucht, die Empfängerdomäne vorzutäuschen.
+  - **Anti-Spoof-externe Domäne**: Absender versucht, eine andere Domäne zu spoofen.
+  - **Marken Identitätswechsel**: Identitätswechsel von bekannten Marken, die auf Absendern basieren.
   - **Domänen Identitätswechsel**<sup>1</sup>: Identitätswechsel von Domänen, die der Kunde besitzt oder definiert.
-  - **EoP-URL-Reputation** : böswillige URL-Reputation.
-  - **Allgemeiner Phishing-Filter** : Phishing-Signale basierend auf Analysten Regeln.
+  - **EoP-URL-Reputation**: böswillige URL-Reputation.
+  - **Allgemeiner Phishing-Filter**: Phishing-Signale basierend auf Analysten Regeln.
   - **Sonstige**
   - **Phishing-zap**<sup>2</sup>: Nullstunde automatische Bereinigung von Phishing-Nachrichten.
   - **URL Detonation**<sup>1</sup>
@@ -336,11 +340,11 @@ Die folgenden Ansichten sind verfügbar:
 
   ![Erkennungstechnologie-Ansicht für Phishing-e-Mails im Statusbericht "Threat Protection"](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
 
-- **Aufschlüsseln nach: Erkennungstechnologie** und **Anzeigen von Daten nach: e-Mail- \> Schadsoftware** : die folgenden Informationen werden angezeigt:
+- **Aufschlüsseln nach: Erkennungstechnologie** und **Anzeigen von Daten nach: e-Mail- \> Schadsoftware**: die folgenden Informationen werden angezeigt:
 
   - **ATP-generierte dateireputation**<sup>1</sup>: die gesamte von Defender generierte böswillige dateireputation für Office 365 Explosionen.
   - **Anti-Malware Engine**<sup>1</sup>: Erkennung von Antischadsoftware-Engines.
-  - **Anti-Malware Policy-Dateityp Block** : Dies sind e-Mail-Nachrichten, die aufgrund der Art der in der Nachricht identifizierten bösartigen Datei herausgefiltert wurden.
+  - **Anti-Malware Policy-Dateityp Block**: Dies sind e-Mail-Nachrichten, die aufgrund der Art der in der Nachricht identifizierten bösartigen Datei herausgefiltert wurden.
   - **Datei Detonation**<sup>1</sup>: Erkennung durch sichere Anlagen.
   - **Böswillige dateireputation**
   - **Malware zap**<sup>2</sup>
@@ -348,7 +352,7 @@ Die folgenden Ansichten sind verfügbar:
 
   ![Erkennungstechnologie-Ansicht für Malware im Statusbericht "Threat Protection"](../../media/threat-protection-status-report-malware-detection-tech-view.png)
 
-- **Aufschlüsseln nach: Richtlinientyp** und **Anzeigen von Daten nach: e-Mail- \> Phishing** oder **Anzeigen von Daten nach: e-Mail- \> Schadsoftware** : die folgenden Informationen werden angezeigt:
+- **Aufschlüsseln nach: Richtlinientyp** und **Anzeigen von Daten nach: e-Mail- \> Phishing** oder **Anzeigen von Daten nach: e-Mail- \> Schadsoftware**: die folgenden Informationen werden angezeigt:
 
   - **Anti-Malware**
   - **Sichere Anlagen**<sup>1</sup>
@@ -359,7 +363,7 @@ Die folgenden Ansichten sind verfügbar:
 
   ![Richtlinientyp Ansicht für Phishing-e-Mails im Statusbericht "Threat Protection"](../../media/threat-protection-status-report-phishing-policy-type-view.png)
 
-- **Aufschlüsseln nach: Zustellungsstatus** und **Anzeigen von Daten nach: e-Mail \> Phishing** oder **Daten anzeigen nach: e-Mail- \> Schadsoftware** : die folgenden Informationen werden angezeigt:
+- **Aufschlüsseln nach: Zustellungsstatus** und **Anzeigen von Daten nach: e-Mail \> Phishing** oder **Daten anzeigen nach: e-Mail- \> Schadsoftware**: die folgenden Informationen werden angezeigt:
 
   - **Zustellung fehlgeschlagen**
   - **Gelöscht**
@@ -385,24 +389,24 @@ Wenn Sie auf **Filter** klicken, sind die verfügbaren Filter abhängig vom Diag
 
   - **Start Datum** und **Enddatum**
   - **Außerkraftsetzungs Grund**
-  - **Tag** : filtert die Ergebnisse nach Benutzern oder Gruppen, für die das angegebene Benutzertag angewendet wurde (einschließlich Prioritäts Konten). Weitere Informationen zu Benutzer Tags finden Sie unter [User Tags](user-tags.md).
+  - **Tag**: filtert die Ergebnisse nach Benutzern oder Gruppen, für die das angegebene Benutzertag angewendet wurde (einschließlich Prioritäts Konten). Weitere Informationen zu Benutzer Tags finden Sie unter [User Tags](user-tags.md).
   - **Domäne**
 
 - Für alle anderen Ansichten können Sie den Bericht mit den folgenden Filtern ändern:
 
   - **Start Datum** und **Enddatum**
   - **Erkennung**
-  - **Geschützt von** : **ATP** oder **EoP**
-  - **Tag** : filtert die Ergebnisse nach Benutzern oder Gruppen, für die das angegebene Benutzertag angewendet wurde (einschließlich Prioritäts Konten). Weitere Informationen zu Benutzer Tags finden Sie unter [User Tags](user-tags.md).
+  - **Geschützt von**: **ATP** oder **EoP**
+  - **Tag**: filtert die Ergebnisse nach Benutzern oder Gruppen, für die das angegebene Benutzertag angewendet wurde (einschließlich Prioritäts Konten). Weitere Informationen zu Benutzer Tags finden Sie unter [User Tags](user-tags.md).
   - **Domäne**
 
 ### <a name="details-table-view-for-the-threat-protection-status-report"></a>Detailtabellen Ansicht für den Threat Protection-Statusbericht
 
 Wenn Sie auf **Detailtabelle anzeigen** klicken, hängt die Anzeige der angezeigten Informationen von dem Diagramm ab, das Sie gesucht haben:
 
-- **Daten anzeigen nach: Übersicht** : keine **Detailtabellen** -Schaltfläche anzeigen verfügbar.
+- **Daten anzeigen nach: Übersicht**: keine **Detailtabellen** -Schaltfläche anzeigen verfügbar.
 
-- **Anzeigen von Daten nach: Inhalt \> Schadsoftware** :
+- **Anzeigen von Daten nach: Inhalt \> Schadsoftware**:
 
   - **Date**
   - **Ort**
@@ -411,7 +415,7 @@ Wenn Sie auf **Detailtabelle anzeigen** klicken, hängt die Anzeige der angezeig
 
   Wenn Sie in dieser Ansicht auf **Filter** klicken, können Sie den Bericht nach **Start Datum** und **Enddatum** und dem **Erkennungs** Wert ändern.
 
-- **Anzeigen von Daten nach: Nachrichten Außerkraftsetzung** :
+- **Anzeigen von Daten nach: Nachrichten Außerkraftsetzung**:
 
   - **Date**
   - **Betreff**
@@ -426,7 +430,7 @@ Wenn Sie auf **Detailtabelle anzeigen** klicken, hängt die Anzeige der angezeig
 
   - **Start Datum** und **Enddatum**
   - **Außerkraftsetzungs Grund**
-  - **Tag** : filtert die Ergebnisse nach Benutzern oder Gruppen, für die das angegebene Benutzertag angewendet wurde (einschließlich Prioritäts Konten). Weitere Informationen zu Benutzer Tags finden Sie unter [User Tags](user-tags.md).
+  - **Tag**: filtert die Ergebnisse nach Benutzern oder Gruppen, für die das angegebene Benutzertag angewendet wurde (einschließlich Prioritäts Konten). Weitere Informationen zu Benutzer Tags finden Sie unter [User Tags](user-tags.md).
   - **Domäne**
   - **Empfänger** (Beachten Sie, dass diese filterbare Eigenschaft nur in der Detailtabellen Ansicht verfügbar ist)
 
@@ -445,8 +449,8 @@ Wenn Sie auf **Detailtabelle anzeigen** klicken, hängt die Anzeige der angezeig
 
   - **Start Datum** und **Enddatum**
   - **Erkennung**
-  - **Geschützt von** : **Defender für Office 365** oder **EoP**
-  - **Tag** : filtert die Ergebnisse nach Benutzern oder Gruppen, für die das angegebene Benutzertag angewendet wurde (einschließlich Prioritäts Konten). Weitere Informationen zu Benutzer Tags finden Sie unter [User Tags](user-tags.md).
+  - **Geschützt von**: **Defender für Office 365** oder **EoP**
+  - **Tag**: filtert die Ergebnisse nach Benutzern oder Gruppen, für die das angegebene Benutzertag angewendet wurde (einschließlich Prioritäts Konten). Weitere Informationen zu Benutzer Tags finden Sie unter [User Tags](user-tags.md).
   - **Domäne**
   - **Empfänger** (Beachten Sie, dass diese filterbare Eigenschaft nur in der Detailtabellen Ansicht verfügbar ist)
 

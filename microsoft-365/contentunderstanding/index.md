@@ -8,14 +8,15 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: Hier erfahren Sie, wie Sie Ressourcen für Microsoft SharePoint Syntex finden.
-ms.openlocfilehash: 9580a2db62fc8ddef16e79817498eebe9feef6bb
-ms.sourcegitcommit: 7e8151ff74cb1cfc0dd59fadcac423c338415d77
+ms.openlocfilehash: f6505aebd660c392da91d90b745dbfe4249a7dd8
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48390119"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087595"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Einführung in Microsoft SharePoint Syntex
 

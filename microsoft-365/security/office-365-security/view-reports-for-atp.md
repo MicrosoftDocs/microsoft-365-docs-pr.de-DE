@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Suchen und Verwenden von Berichten für Microsoft Defender für Office 365 im Security &amp; Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b24249bcbba60bc5340d973567369f534a0178fb
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 8885eea2168cc40c497f6fa1066ae020dda7fd7c
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842916"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087709"
 ---
 # <a name="view-reports-for-microsoft-defender-for-office-365"></a>Anzeigen von Berichten für Microsoft Defender für Office 365
 
@@ -35,7 +35,7 @@ Microsoft Defender für Office 365 Organisationen (beispielsweise Microsoft 365 
 
 ![Das Dashboard "Berichte" im Security & Compliance Center](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
-## <a name="defender-for-office-365-file-types-report"></a>Defender for Office 365 File Types Report
+## <a name="defender-for-office-365-file-types-report"></a>Defender für Office 365-Bericht zu Dateitypen
 
 Der Bericht **Defender for Office 365 File Types Report** zeigt Ihnen den Typ der Dateien an, die von [sicheren Anlagen](atp-safe-attachments.md)als schädlich erkannt wurden.
 
@@ -52,7 +52,7 @@ Der Bericht **Defender for Office 365 File Types Report** zeigt Ihnen den Typ de
 
 Die folgenden Ansichten sind verfügbar:
 
-- **Daten nach: File anzeigen** : das Diagramm enthält die folgenden Informationen:
+- **Daten nach: File anzeigen**: das Diagramm enthält die folgenden Informationen:
 
   - **Böswillige Excel-Anlagen**
   - **Böswillige Flash-Anlagen**
@@ -72,12 +72,12 @@ Die folgenden Ansichten sind verfügbar:
   - **Start Datum** und **Enddatum**
   - Die gleichen Dateityp Werte, die im Diagramm sichtbar sind.
 
-- **Daten anzeigen nach: Nachricht** : das Diagramm enthält die folgenden Informationen:
+- **Daten anzeigen nach: Nachricht**: das Diagramm enthält die folgenden Informationen:
 
   - **Zugriff blockieren**
   - **Ersetzte Nachrichten**
   - **Überwachte Nachrichten**
-  - **Durch dynamische e-Mail-Zustellung ersetzt** : Weitere Informationen finden Sie unter [Dynamic Delivery in Policies for Safe Attachments](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).
+  - **Durch dynamische e-Mail-Zustellung ersetzt**: Weitere Informationen finden Sie unter [Dynamic Delivery in Policies for Safe Attachments](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).
 
   ![Nachrichtenansicht im Defender für Office 365 Dateitypen Bericht](../../media/atp-file-types-report-message-view.png)
 
@@ -90,12 +90,12 @@ Die folgenden Ansichten sind verfügbar:
 
 Wenn Sie auf **Detailtabelle anzeigen** klicken, bietet der Bericht eine nahezu Echtzeitansicht aller Klicks, die innerhalb der Organisation für die letzten 10 Tage stattfinden. Die angezeigten Informationen hängen von dem Diagramm ab, das Sie untersucht haben:
 
-- **Daten nach: File anzeigen** :
+- **Daten nach: File anzeigen**:
 
   - **Date**
   - **Empfängeradresse**
   - **Absenderadresse**
-  - **Nachrichten-ID** : verfügbar im Kopfzeilenfeld nach **richten-ID** im Nachrichtenkopf und sollte eindeutig sein. Ein Beispielwert ist `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (Beachten Sie die spitzen Klammern).
+  - **Nachrichten-ID**: verfügbar im Kopfzeilenfeld nach **richten-ID** im Nachrichtenkopf und sollte eindeutig sein. Ein Beispielwert ist `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (Beachten Sie die spitzen Klammern).
   - **Datei**
 
   Wenn Sie auf **Filter** klicken, können Sie den Bericht mit den folgenden Filtern ändern:
@@ -103,7 +103,7 @@ Wenn Sie auf **Detailtabelle anzeigen** klicken, bietet der Bericht eine nahezu 
   - **Start Datum** und **Enddatum**
   - Die gleichen Dateityp Werte, die im Diagramm sichtbar sind.
 
-- **Anzeigen von Daten nach: Nachricht** :
+- **Anzeigen von Daten nach: Nachricht**:
 
   - **Date**
   - **Empfängeradresse**
@@ -117,9 +117,9 @@ Wenn Sie auf **Detailtabelle anzeigen** klicken, bietet der Bericht eine nahezu 
   - **Start Datum** und **Enddatum**
   - Dieselben Nachrichten Dispositions Werte, die im Diagramm zur Verfügung stehen, und der Wert der zusätzlichen **Nachrichten** , die übergeben wurden.
 
-Klicken Sie auf **Bericht anzeigen** , um wieder zur Berichtsansicht zu gelangen.
+Klicken Sie auf **Bericht anzeigen**, um wieder zur Berichtsansicht zu gelangen.
 
-## <a name="defender-for-office-365-message-disposition-report"></a>Verteidiger für Office 365 Nachrichten Disposition (Bericht)
+## <a name="defender-for-office-365-message-disposition-report"></a>Defender für Office 365-Bericht zum Nachrichtenstatus
 
 Der Bericht " **ATP-Nachrichten Disposition** " zeigt die Aktionen an, die für e-Mail-Nachrichten durchgeführt wurden, die als schädliche Inhalte erkannt wurden.
 
@@ -134,12 +134,12 @@ Der Bericht " **ATP-Nachrichten Disposition** " zeigt die Aktionen an, die für 
 
 Die folgenden Ansichten sind verfügbar:
 
-- **Daten anzeigen nach: Nachricht** : das Diagramm enthält die folgenden Informationen:
+- **Daten anzeigen nach: Nachricht**: das Diagramm enthält die folgenden Informationen:
 
   - **Zugriff blockieren**
   - **Ersetzte Nachrichten**
   - **Überwachte Nachrichten**
-  - **Durch dynamische e-Mail-Zustellung ersetzt** : Weitere Informationen finden Sie unter [Dynamic Delivery in Policies for Safe Attachments](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).
+  - **Durch dynamische e-Mail-Zustellung ersetzt**: Weitere Informationen finden Sie unter [Dynamic Delivery in Policies for Safe Attachments](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).
 
   ![Nachrichtenansicht im Defender für Office 365 Dateitypen Bericht](../../media/atp-file-types-report-message-view.png)
 
@@ -148,7 +148,7 @@ Die folgenden Ansichten sind verfügbar:
   - **Start Datum** und **Enddatum**
   - Dieselben Nachrichten Dispositions Werte, die im Diagramm zur Verfügung stehen, und der Wert der zusätzlichen **Nachrichten** , die übergeben wurden.
 
-- **Daten nach: File anzeigen** : das Diagramm enthält die folgenden Informationen:
+- **Daten nach: File anzeigen**: das Diagramm enthält die folgenden Informationen:
 
   - **Böswillige Excel-Anlagen**
   - **Böswillige Flash-Anlagen**
@@ -172,7 +172,7 @@ Die folgenden Ansichten sind verfügbar:
 
 Wenn Sie auf **Detailtabelle anzeigen** klicken, bietet der Bericht eine nahezu Echtzeitansicht aller Klicks, die innerhalb der Organisation für die letzten 10 Tage stattfinden. Die angezeigten Informationen hängen von dem Diagramm ab, das Sie untersucht haben:
 
-- **Anzeigen von Daten nach: Nachricht** :
+- **Anzeigen von Daten nach: Nachricht**:
 
   - **Date**
   - **Empfängeradresse**
@@ -186,7 +186,7 @@ Wenn Sie auf **Detailtabelle anzeigen** klicken, bietet der Bericht eine nahezu 
   - **Start Datum** und **Enddatum**
   - Dieselben Nachrichten Dispositions Werte, die im Diagramm zur Verfügung stehen, und der Wert der zusätzlichen **Nachrichten** , die übergeben wurden.
 
-- **Daten nach: File anzeigen** :
+- **Daten nach: File anzeigen**:
 
   - **Date**
   - **Empfängeradresse**
@@ -199,7 +199,62 @@ Wenn Sie auf **Detailtabelle anzeigen** klicken, bietet der Bericht eine nahezu 
   - **Start Datum** und **Enddatum**
   - Die gleichen Dateityp Werte, die im Diagramm sichtbar sind.
 
-Klicken Sie auf **Bericht anzeigen** , um wieder zur Berichtsansicht zu gelangen.
+Klicken Sie auf **Bericht anzeigen**, um wieder zur Berichtsansicht zu gelangen.
+
+## <a name="mail-latency-report"></a>Bericht über die e-Mail-Wartezeit
+
+Der **Bericht über die e-Mail-Wartezeit** zeigt eine aggregierte Ansicht der in Ihrer Organisation erlebten e-Mail-Zustellung und der detonations Wartezeit. E-Mail-Zustellungszeiten im Dienst sind von einer Reihe von Faktoren betroffen, und die absolute Lieferzeit in Sekunden ist oft kein guter Indikator für Erfolg oder ein Problem. Eine langsame Lieferzeit an einem Tag kann als durchschnittliche Zustellungszeit an einem anderen Tag betrachtet werden oder umgekehrt. Der **Bericht über die e-Mail-Wartezeit** versucht, die Nachrichtenzustellung basierend auf statistischen Daten über die beobachteten Zustellungszeiten anderer Nachrichten zu qualifizieren:
+
+- **50. Perzentil**: Dies ist die Mitte für Nachrichten Zustellungszeiten. Sie können diesen Wert als durchschnittliche Zustellungsdauer ansehen.
+- **90. Perzentil**: Dies deutet auf eine hohe Wartezeit für die Nachrichtenzustellung hin. Nur 10% der Nachrichten dauerte länger als dieser Wert zu liefern.
+- **99th Perzentil**: Dies gibt die höchste Wartezeit für die Nachrichtenzustellung an.
+
+Client seitige und Netzwerkwartezeit sind nicht enthalten.
+
+Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center](https://protection.office.com), wechseln Sie zu **Berichte** - \> **Dashboard** , und wählen Sie **e-Mail-Latenz Bericht** aus. Wenn Sie direkt zum Bericht wechseln möchten, öffnen Sie <https://protection.office.com/mailLatencyReport?viewid=P50> .
+
+![E-Mail-Latenz Bericht-Widget im Dashboard Berichte](../../media/mail-latency-report-widget.png)
+
+### <a name="report-view-for-the-mail-latency-report"></a>Berichtsansicht für den Bericht über die e-Mail-Wartezeit
+
+Wenn Sie den Bericht öffnen, ist die Registerkarte **50% Perzentil** standardmäßig aktiviert.
+
+Diese Ansicht enthält standardmäßig ein Diagramm, das mit den folgenden Filtern konfiguriert ist:
+
+- **Datum**: die letzten 7 Tage
+- **Nachrichtenansicht**:
+  - Gezündete Nachrichten
+
+In diesem Diagramm werden Nachrichten angezeigt, die in die folgenden Kategorien aufgeteilt sind:
+
+- **E-Mail-Zustellungs Wartezeit**
+- **Detonations Wartezeit**
+
+Wenn Sie mit dem Mauszeiger auf eine Kategorie im Diagramm zeigen, wird eine Aufschlüsselung der Wartezeit in jeder Kategorie angezeigt.
+
+![Bericht über die e-Mail-Wartezeit](../../media/mail-latency-report.png)
+
+Wenn Sie in der Berichtsansicht auf **Filter** klicken, können Sie die Ergebnisse mit den folgenden Filtern ändern:
+
+- Alle Nachrichten
+- Nachrichten, die Anlagen oder URLs enthalten
+
+Wenn Sie auf die Registerkarte **90% Perzentil** oder auf die Registerkarte **99th Perzentil** klicken, werden die gleichen Standardfilter aus der Ansicht **50% Perzentil** verwendet.
+
+### <a name="details-table-view-for-the-mail-latency-report"></a>Detailtabellen Ansicht für den Bericht über die e-Mail-Wartezeit
+
+Die folgenden Informationen werden in der Detailtabellen Ansicht angezeigt:
+
+- **Date**
+- **Quantile**
+- **Nachrichtenanzahl**
+- **Gesamtwartezeit**
+
+![Details zum Bericht über e-Mail-Wartezeit](../../media/mail-latency-report-details.png)
+
+Das obige zeigt, dass die durchschnittliche Wartezeit für alle zugestellten und gezündeten Nachrichten am 14. November **108,033** Sekunden betrug.
+
+Die Detailtabelle enthält dieselben Informationen auf jeder Registerkarte.
 
 ## <a name="threat-protection-status-report"></a>Threat Protection-Statusbericht
 
@@ -214,13 +269,13 @@ Der **Bericht über den URL-Bedrohungsschutz** bietet zusammenfassende und Trend
 ![Widget "URL Protection-Bericht" im Dashboard "Berichte"](../../media/url-protection-report-widget.png)
 
 > [!NOTE]
-> Hierbei handelt es sich um einen *Schutz Trendbericht* , was bedeutet, dass Datentrends in einem größeren DataSet darstellen. Daher sind die Daten in der Aggregatansicht hier nicht in Echtzeit verfügbar, aber die Daten in der Detailtabellen Ansicht sind möglicherweise geringfügig Diskrepanz zwischen den beiden Ansichten angezeigt.
+> Hierbei handelt es sich um einen *Schutz Trendbericht*, was bedeutet, dass Datentrends in einem größeren DataSet darstellen. Daher sind die Daten in der Aggregatansicht hier nicht in Echtzeit verfügbar, aber die Daten in der Detailtabellen Ansicht sind möglicherweise geringfügig Diskrepanz zwischen den beiden Ansichten angezeigt.
 
 ### <a name="report-view-for-the-url-threat-protection-report"></a>Berichtsansicht für den URL-Bedrohungsschutz Bericht
 
 Der **URL Threat Protection** -Bericht enthält zwei aggregierte Ansichten, die einmal alle vier Stunden aktualisiert werden, sodass Daten für die letzten 90 Tage angezeigt werden:
 
-- **Aktion zum Schutz vor URLs** : zeigt die Anzahl der URL-Klicks von Benutzern in der Organisation und die Ergebnisse des Klick Vorgangs an:
+- **Aktion zum Schutz vor URLs**: zeigt die Anzahl der URL-Klicks von Benutzern in der Organisation und die Ergebnisse des Klick Vorgangs an:
 
   - **Blockiert** (der Benutzer wurde für die Navigation zur URL gesperrt)
   - **Blockiert und durchgeklickt**
@@ -235,7 +290,7 @@ Der **URL Threat Protection** -Bericht enthält zwei aggregierte Ansichten, die 
 
   ![Aktionsansicht für URL-Klick Schutz im URL Threat Protection-Bericht](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
-- **URL-Klick nach Anwendung** : zeigt die Anzahl der URL-Klicks von Anwendungen an, die sichere Links unterstützen:
+- **URL-Klick nach Anwendung**: zeigt die Anzahl der URL-Klicks von Anwendungen an, die sichere Links unterstützen:
 
   - **E-Mail-Client**
   - **PowerPoint**
@@ -256,14 +311,14 @@ Der **URL Threat Protection** -Bericht enthält zwei aggregierte Ansichten, die 
 Wenn Sie auf **Details-Tabelle anzeigen** klicken, bietet der Bericht eine nahezu Echtzeitansicht aller Klicks, die innerhalb der Organisation für die letzten 7 Tage mit den folgenden Details geschehen:
 
 - **Klicken Sie auf Zeit**
-- **Benutzer**
+- **Benutzende**
 - **URL**
 - **Aktion**
 - **App**
 
 Wenn Sie in der Detailtabellen Ansicht auf **Filter** klicken, können Sie nach denselben Kriterien wie in der Berichtsansicht filtern, auch nach **Domänen** oder **Empfängern** , die durch Kommas getrennt sind.
 
-Klicken Sie auf **Bericht anzeigen** , um wieder zur Berichtsansicht zu gelangen.
+Klicken Sie auf **Bericht anzeigen**, um wieder zur Berichtsansicht zu gelangen.
 
 ## <a name="additional-reports-to-view"></a>Zusätzliche Berichte zur Anzeige
 
@@ -275,7 +330,7 @@ Zusätzlich zu den in diesem Thema beschriebenen Berichten stehen verschiedene a
 |---|---|
 |**Explorer** (Microsoft Defender für Office 365 Plan 2) oder **Echtzeiterkennung** (Microsoft Defender für Office 365 Plan 1)|[Sicherheitsrisiken-Explorer (und Echtzeit-Erkennung)](threat-explorer.md)|
 |**E-Mail-Sicherheitsberichte** wie der Bericht über die häufigsten Absender und Empfänger, der Bericht "Spoof-e-Mail" und der Spam Erkennungs Bericht.|[Anzeigen von E-Mail-Sicherheitsberichten im Security & Compliance Center](view-email-security-reports.md)|
-|**Nachrichtenfluss Berichte** , wie der Weiterleitungs Bericht, der e-Mail-Fluss Statusbericht und der Bericht über die obersten Absender und Empfänger.|[Anzeigen von Nachrichtenfluss Berichten im Security & Compliance Center](view-mail-flow-reports.md)|
+|**Nachrichtenfluss Berichte**, wie der Weiterleitungs Bericht, der e-Mail-Fluss Statusbericht und der Bericht über die obersten Absender und Empfänger.|[Anzeigen von Nachrichtenfluss Berichten im Security & Compliance Center](view-mail-flow-reports.md)|
 |**URL-Ablaufverfolgung für sichere Links** (nur PowerShell). Die Ausgabe dieses Cmdlets zeigt die Ergebnisse von Aktionen für sichere Links in den letzten sieben Tagen an.|[Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
 |**Ergebnisse des e-Mail-Verkehrs für EoP und Microsoft Defender für Office 365** (nur PowerShell). Die Ausgabe dieses Cmdlets enthält Informationen zu Domäne, Datum, Ereignistyp, Richtung, Aktion und Nachrichtenanzahl.|[Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport)|
 |**E-Mail-Detailberichte für EoP und Defender für Office 365 Erkennungen** (nur PowerShell). Die Ausgabe dieses Cmdlets enthält Details zu bösartigen Dateien oder URLs, Phishing-versuchen, Identitätswechsel und anderen potenziellen Bedrohungen in e-Mails oder Dateien.|[Get-MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|

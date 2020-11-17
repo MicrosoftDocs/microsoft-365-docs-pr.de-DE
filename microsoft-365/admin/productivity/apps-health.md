@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Details zum Produktivitäts Ergebnis der Microsoft 365 apps-Integritäts Technologie.
-ms.openlocfilehash: 9497118f4ebfb1cb2b64670638ce939da21eb261
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: c38f2109ed41377cfccb9838c95dbfbebbfd322a
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841189"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123511"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Microsoft 365 apps Health – Technologie-Erlebnisse
 
-Das Produktivitäts Ergebnis hilft Organisationen, zu transformieren, wie arbeiten mit Metriken über die Verwendung von Microsoft 365-apps und die unterstützenden Technologie Erfahrungen ausgeführt werden. Die Partitur spiegelt die Leistung Ihrer Organisation&#39;s für Personen-und Technologie Erlebnis Kategorien wider und vergleicht Ihre Bewertung mit Organisationen wie Ihrem. Die Kategorie apps-Integrität ist Teil der Messungen, die unter Personen Erfahrungen fallen. Weitere Informationen finden Sie in der [Übersicht über das Produktivitäts Ergebnis](productivity-score.md) .
+Das Produktivitäts Ergebnis hilft Organisationen, zu transformieren, wie arbeiten mit Metriken über die Verwendung von Microsoft 365-apps und die unterstützenden Technologie Erfahrungen ausgeführt werden. Die Partitur spiegelt die Leistung Ihrer Organisation&#39;s für Personen-und Technologie Erlebnis Kategorien wider und vergleicht Ihre Bewertung mit Organisationen wie Ihrem. Die Kategorie apps-Integrität ist Teil der Messungen, die unter Technologie Erfahrungen fallen. Weitere Informationen finden Sie in der [Übersicht über das Produktivitäts Ergebnis](productivity-score.md) .
 
 ## <a name="why-your-organization39s-microsoft-365-apps-health-score-matters"></a>Warum Ihre Organisation&#39;s Microsoft 365 apps Health Score zählt
 
@@ -59,7 +59,7 @@ In Betracht gezogene Informationen umfassen Microsoft 365 apps-Kanal,-Build und-
 
 Das folgende Diagramm zeigt die Anzahl der Geräte im empfohlenen Update Kanal in den letzten 180 Tagen. Der Datenpunkt im Diagramm ist ein Aggregat von Aktivitäten für die letzten 28 Tage.
 
-:::image type="content" source="../../media/appshealth-primarytrend.png" alt-text="Primäre in-Sight-Visualisierung für Microsoft 365-apps.":::
+:::image type="content" source="../../media/appshealth-primarytrend.png" alt-text="Diagramm, das den Trend für Geräte mit dem empfohlenen Update Kanal zeigt.":::
 
 ### <a name="scoring-framework"></a>Bewertungs Framework
 
@@ -71,7 +71,7 @@ Außerdem bieten wir unterstützende Informationen, die Ihnen dabei helfen, zus�
 
 ### <a name="devices-on-current-channel-and-running-supported-versions"></a>Geräte auf dem aktuellen Kanal und unterstützte Versionen
 
-:::image type="content" source="../../media/devices-current-suppported-channel.png" alt-text="Primäre in-Sight-Visualisierung für Microsoft 365-apps.":::
+:::image type="content" source="../../media/devices-current-suppported-channel.png" alt-text="Diagramm, in dem die Anzahl der Geräte im aktuellen, unterstützten Kanal angezeigt wird.":::
 
 1. **Kopfzeile:**  Hebt den Prozentsatz der Geräte auf dem aktuellen Kanal auf, auf denen unterstützte Versionen von Microsoft 365-apps
 1. **Body:**  Enthält Informationen zum Wert von Geräten, auf denen Microsoft 365-apps auf dem empfohlenen Kanal unterstützt werden.
@@ -82,7 +82,7 @@ Außerdem bieten wir unterstützende Informationen, die Ihnen dabei helfen, zus�
 
 ### <a name="devices-running-latest-and-supported-versions"></a>Geräte mit neuesten und unterstützten Versionen
 
-:::image type="content" source="../../media/device-supported-versions.png" alt-text="Primäre in-Sight-Visualisierung für Microsoft 365-apps.":::
+:::image type="content" source="../../media/device-supported-versions.png" alt-text="Diagramm, in dem die Anzahl der Geräte mit den neuesten und unterstützten Versionen von apps angezeigt wird.":::
 
 1. **Kopfzeile:**  Zeigt den Prozentsatz der Geräte an, auf denen unterstützte Versionen und Geräte mit den neuesten Versionen verwendet werden.
 1. **Body:**  Enthält Informationen zu den Werten, auf denen Geräte in empfohlenen Kanälen und unterstützten/neuesten Versionen installiert werden.
@@ -99,7 +99,7 @@ Außerdem bieten wir unterstützende Informationen, die Ihnen dabei helfen, zus�
 
 Dieses Diagramm zeigt die Trendreihe der Geräte, auf denen unterstützte Versionen und die neuesten Versionen von Microsoft 365-apps in den letzten 180 Tagen laufen.
 
-:::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="Primäre in-Sight-Visualisierung für Microsoft 365-apps.":::
+:::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="Diagramm, in dem dargestellt wird, wie viele Geräte im Laufe der Zeit unterstützte und aktuelle Versionen von apps ausführen.":::
 
 ## <a name="people-in-your-organization"></a>Personen in Ihrer Organisation
 

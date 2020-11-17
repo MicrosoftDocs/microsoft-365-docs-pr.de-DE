@@ -7,14 +7,15 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: Erfahren Sie, wie Sie in Microsoft Office SharePoint Syntex einen Extraktor erstellen.
-ms.openlocfilehash: 260486c128ce76c31fe5f4a0994b4e103687b829
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: 99d2a4602c03d8a7207736ea17ed500626ce43ac
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338649"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087463"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Extraktor in Microsoft SharePoint Syntex erstellen
 
@@ -34,7 +35,7 @@ Dazu müssen Sie für jede Entität, die aus dem Dokument extrahiert werden soll
 
 ## <a name="name-your-extractor"></a>Benennen des Extraktors
 
-1. Klicken Sie auf der Startseite des Modells auf den Titel **Extraktoren erstellen und trainieren**, und wählen Sie dann**Extraktor trainieren** aus.
+1. Klicken Sie auf der Startseite des Modells auf den Titel **Extraktoren erstellen und trainieren**, und wählen Sie dann **Extraktor trainieren** aus.
 2. Geben Sie in der Anzeige **Neue Entitätsextraktionsfunktion** den Namen Ihres Extraktors in das Feld **Neuer Extraktorname** ein. Vergeben Sie beispielsweise den Namen **Startdatum der Inbetriebnahme**, wenn Sie das Startdatum der Inbetriebnahme aus jedem Dokument zu Vertragsverlängerungen extrahieren möchten. Sie können auch eine bereits erstellte Spalte wiederverwenden (beispielsweise eine Spalte mit verwalteten Metadaten).
 3. Klicken Sie auf **Erstellen**.
 
@@ -82,7 +83,7 @@ Um Erläuterungen für Elemente wie Daten zu erstellen, ist es einfacher [die Er
 
 FÜr das Beispiel mit dem *Startdatum der Inbetriebnahme* ist es effizienter, die vordefinierte Erläuterung für das *Datum* in der Erläuterungsbibliothek zu verwenden:
 
-1. Wählen Sie im **Abschnitt Erläuterung**die Option **Neu**, und wählen Sie dann **Aus der Erläuterungsbibliothek**.
+1. Wählen Sie im **Abschnitt Erläuterung** die Option **Neu**, und wählen Sie dann **Aus der Erläuterungsbibliothek**.
 2. Wählen Sie in der Erläuterungsbibliothek **Datum**. Sie können alle Varianten von Datumsangaben anzeigen lassen, die erkannt werden.
 3. Klicken Sie auf **Hinzufügen**.</br>
 

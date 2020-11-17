@@ -7,14 +7,15 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: Informationen zum Erstellen eines Klassifizierers
-ms.openlocfilehash: 97a7b28d45499a46d72029d47b422d2c32696a54
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: 478b4253f7bb888323c2a873f3ab295cc841e193
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804815"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087679"
 ---
 # <a name="create-a-classifier-in-microsoft-sharepoint-syntex"></a>Erstellen eines Klassifizierers in Microsoft SharePoint Syntex
 
@@ -43,15 +44,15 @@ Zum Erstellen eines Klassifizierers müssen Sie:
 5. Ihr Modell testen.
 
 > [!NOTE]
-> Während Ihr Modell einen Klassifizierer verwendet, um Dokumenttypen zu identifizieren und zu klassifizieren, können Sie sich auch dafür entscheiden, bestimmte Informationen aus jeder durch das Modell identifizierten Datei abzurufen. Erstellen Sie hierzu einen **Extraktor** , der dem Modell hinzugefügt werden soll. Siehe [Erstellen eines Extraktors](create-an-extractor.md)
+> Während Ihr Modell einen Klassifizierer verwendet, um Dokumenttypen zu identifizieren und zu klassifizieren, können Sie sich auch dafür entscheiden, bestimmte Informationen aus jeder durch das Modell identifizierten Datei abzurufen. Erstellen Sie hierzu einen **Extraktor**, der dem Modell hinzugefügt werden soll. Siehe [Erstellen eines Extraktors](create-an-extractor.md)
 
 ## <a name="name-your-model"></a>Ihr Modell benennen
 
 Der erste Schritt zum Erstellen Ihres Modells ist die Benennung:
 
-1. Wählen Sie im Inhaltscenter **Neu** aus, und dann **Modell erstellen** .
+1. Wählen Sie im Inhaltscenter **Neu** aus, und dann **Modell erstellen**.
 2. Geben Sie im Bereich **Neues "Document Understanding-Modell"** in das Feld **Name** den Namen des Modells ein. Wenn Sie beispielsweise Vertragsverlängerungsdokumente identifizieren möchten, könnten Sie das Modell *Vertragsverlängerung* benennen.
-3. Klicken Sie auf **Erstellen** . Dadurch wird eine Homepage für das Modell erstellt.</br>
+3. Klicken Sie auf **Erstellen**. Dadurch wird eine Homepage für das Modell erstellt.</br>
 
     ![Homepage des Klassifizierungsmodells](../media/content-understanding/model-home.png)
 
@@ -81,9 +82,9 @@ Achten Sie darauf, mindestens fünf positive Beispiele und mindestens ein negati
 
 Hinzufügen von Beispieldateien:
 
-1. Klicken Sie auf der Homepage des Modells in der Kachel **Beispieldateien hinzufügen** auf **Dateien hinzufügen** .
+1. Klicken Sie auf der Homepage des Modells in der Kachel **Beispieldateien hinzufügen** auf **Dateien hinzufügen**.
 2. Wählen Sie auf der Seite **Beispieldateien für Ihr Modell auswählen** aus, und wählen Sie Ihre Beispieldateien aus der Bibliothek "Schulungsdateien" im Inhaltscenter aus. Wenn Sie die Dateien dort noch nicht hochgeladen hatten, können Sie diese jetzt hochladen, indem Sie auf **Hochladen** klicken, um sie in die Bibliothek "Schulungsdateien" zu kopieren.
-3. Nachdem Sie die Beispieldateien ausgewählt haben, die zum Trainieren des Modells verwendet werden sollen, klicken Sie auf **Hinzufügen** .
+3. Nachdem Sie die Beispieldateien ausgewählt haben, die zum Trainieren des Modells verwendet werden sollen, klicken Sie auf **Hinzufügen**.
 
     ![Ihre Beispieldateien auswählen](../media/content-understanding/select-sample.png) 
 
@@ -91,7 +92,7 @@ Hinzufügen von Beispieldateien:
 
 Nachdem Sie Ihre Beispieldateien hinzugefügt haben, müssen Sie sie entweder als positive oder negative Beispiele bezeichnen.
 
-1. Klicken Sie auf der Homepage des Modells auf der Kachel **Dateien klassifizieren und Schulungen ausführen** auf **Klassifizierer trainieren** .
+1. Klicken Sie auf der Homepage des Modells auf der Kachel **Dateien klassifizieren und Schulungen ausführen** auf **Klassifizierer trainieren**.
    Dadurch wird die Bezeichnungsseite angezeigt, die eine Liste Ihrer Beispieldateien enthält, wobei die erste Datei im Viewer angezeigt wird.
 2. Im Viewer oben auf der ersten Beispieldatei sollten Sie einen Text sehen, der Sie fragt, ob die Datei ein Beispiel für das gerade erstellte Modell ist. Wenn es sich um ein positives Beispiel handelt, wählen Sie **Ja** aus. Wenn es sich um ein negatives Beispiel handelt, wählen Sie **Nein** aus.
 3. Wählen Sie aus der Liste **Bezeichnete Beispiele** auf der linken Seite weitere Dateien aus, die Sie als Beispiele verwenden möchten, und bezeichnen Sie diese. 
@@ -104,21 +105,21 @@ Nachdem Sie Ihre Beispieldateien hinzugefügt haben, müssen Sie sie entweder al
 
 ## <a name="create-an-explanation"></a>Erklärung erstellen
 
-Der nächste Schritt besteht darin, auf der Seite "Trainieren" eine Erklärung zu erstellen. Eine Erklärung hilft dem Modell zu verstehen, wie das Dokument zu erkennen ist. Beispielsweise enthalten die Dokumente "Vertragsverlängerung" immer eine Textzeichenfolge *Anforderung nach zusätzlicher Veröffentlichung* .
+Der nächste Schritt besteht darin, auf der Seite "Trainieren" eine Erklärung zu erstellen. Eine Erklärung hilft dem Modell zu verstehen, wie das Dokument zu erkennen ist. Beispielsweise enthalten die Dokumente "Vertragsverlängerung" immer eine Textzeichenfolge *Anforderung nach zusätzlicher Veröffentlichung*.
 
 > [!Note]
 > Bei Verwendung mit Extraktoren identifiziert eine Erklärung die Zeichenfolge, die Sie aus dem Dokument extrahieren möchten. 
 
 Erstellen einer Erklärung:
 
-1. Wählen Sie auf der Homepage des Modells die Registerkarte **Trainieren** , um zur Seite "Trainieren" zu wechseln.
+1. Wählen Sie auf der Homepage des Modells die Registerkarte **Trainieren**, um zur Seite "Trainieren" zu wechseln.
 2. Auf der Seite "Trainieren" sollten Sie im Abschnitt **Geschulte Dateien** eine Liste der Beispieldateien sehen, die Sie zuvor bezeichnet haben. Wählen Sie eine der positiven Dateien aus der Liste aus, die im Viewer angezeigt wird.
-3. Wählen Sie im Abschnitt "Erklärung" **Neu** aus und dann **Leerzeichen** .
-4. Auf der Seite **Erklärung erstellen** :</br>
+3. Wählen Sie im Abschnitt "Erklärung" **Neu** aus und dann **Leerzeichen**.
+4. Auf der Seite **Erklärung erstellen**:</br>
     a. Geben Sie den **Namen** ein (zum Beispiel "Veröffentlichungssperre").</br>
-    b. Wählen Sie den **Typ** aus. Wählen Sie für das Beispiel **Begriffsliste** , da Sie eine Textzeichenfolge hinzufügen.</br>
-    c. Geben Sie im Feld **Hier eingeben** die Zeichenfolge ein. Für das Beispiel fügen Sie "Anforderung nach zusätzlicher Veröffentlichung" hinzu. Sie können **Groß-/Kleinschreibung beachten** ", wenn bei der Zeichenfolge zwischen Groß- und Kleinschreibung unterschieden werden muss.</br>
-    d. Klicken Sie auf **Speichern** .
+    b. Wählen Sie den **Typ** aus. Wählen Sie für das Beispiel **Begriffsliste**, da Sie eine Textzeichenfolge hinzufügen.</br>
+    c. Geben Sie im Feld **Hier eingeben** die Zeichenfolge ein. Für das Beispiel fügen Sie "Anforderung nach zusätzlicher Veröffentlichung" hinzu. Sie können **Groß-/Kleinschreibung beachten**", wenn bei der Zeichenfolge zwischen Groß- und Kleinschreibung unterschieden werden muss.</br>
+    d. Klicken Sie auf **Speichern**.
 
     ![Erklärung erstellen](../media/content-understanding/explanation.png) 
     
@@ -132,7 +133,7 @@ Wenn Sie **Keine Übereinstimmung** bei den bezeichneten Dateien erhalten, müss
 
 Wenn Sie eine Übereinstimmung mit den beschrifteten Beispieldateien erhalten haben, können Sie nun das Modell für Ihre restlichen nicht beschrifteten Beispieldateien testen, die das Modell noch nicht kennt.  Das ist ein optionaler aber nützlicher Schritt, um die "Tauglichkeit" oder die Bereitschaft des Modells vor seiner Verwendung zu bewerten. Dazu wird es an Dateien getestet, die das Modell noch nie gesehen hat.
 
-1. Wählen Sie auf der Homepage des Modells die Registerkarte **Test** . Dadurch wird das Modell für Ihre nicht beschrifteten Beispieldateien ausgeführt.
+1. Wählen Sie auf der Homepage des Modells die Registerkarte **Test**. Dadurch wird das Modell für Ihre nicht beschrifteten Beispieldateien ausgeführt.
 2. In der Liste **Testdateien** werden Ihre Beispieldateien angezeigt und zeigen an, ob das Modell sie als positiv oder negativ vorhergesagt hat. Mithilfe dieser Informationen können Sie ermitteln, wie effektiv Ihr Klassifizierer bei der Identifizierung Ihrer Dokumente ist.
 
     ![Test von nicht bezeichneten Dateien](../media/content-understanding/test-on-files.png) 

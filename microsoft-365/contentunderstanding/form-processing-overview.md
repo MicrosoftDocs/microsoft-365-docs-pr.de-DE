@@ -7,14 +7,15 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: Informationen zur Formularverarbeitung in Microsoft SharePoint Syntex
-ms.openlocfilehash: 7340e0c78db71fbb0acc05c2985b60f6bafbba80
-ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
+ms.openlocfilehash: 6c2cb2ee3c1fc621e7814f4603ad2e6f0b891701
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48493673"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087403"
 ---
 # <a name="form-processing-overview"></a>Übersicht über die Formularverarbeitung
 
@@ -29,7 +30,7 @@ Unternehmen erhalten häufig viele Rechnungen aus einer Vielzahl von Quellen, z.
 > [!NOTE]
 > Weitere Informationen zu Beispielszenarien für die Formularverarbeitung finden Sie unter [SharePoint Syntex – Leitfaden für die ersten Schritte](https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted#form-processing-scenario-example).
 
-Sie können z. B. ein Formularverarbeitungsmodell erstellen, das alle Auftragsdokumente erkennt, die in die Dokumentbibliothek hochgeladen werden. Aus jedem Auftrag können dann bestimmte für Sie wichtige Daten extrahiert und angezeigt werden, z. B. *Auftragsnummer*, *Datum*oder *Gesamtbetrag*.
+Sie können z. B. ein Formularverarbeitungsmodell erstellen, das alle Auftragsdokumente erkennt, die in die Dokumentbibliothek hochgeladen werden. Aus jedem Auftrag können dann bestimmte für Sie wichtige Daten extrahiert und angezeigt werden, z. B. *Auftragsnummer*, *Datum* oder *Gesamtbetrag*.
 
 ![Dokumentbibliotheksansicht](../media/content-understanding/doc-lib-done.png)</br>  
 

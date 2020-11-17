@@ -7,14 +7,15 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: In diesem Artikel wird die Anwendung einer Aufbewahrungsbezeichnung auf ein Dokumentverständnismodell erläutert.
-ms.openlocfilehash: 8f74187d14620f0c095b19c6f59b2dbd1b3f98d1
-ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.openlocfilehash: 2e6d300b63a173d01488406485cffa44fab4278e
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48337217"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087475"
 ---
 # <a name="apply-a-retention-label-to-a-document-understanding-model"></a>Anwenden einer Aufbewahrungsbezeichnung auf ein Dokumentverständnismodell
 
@@ -74,4 +75,4 @@ So wird beispielsweise auf alle *Versicherungsbestätigungen*, die von Ihrem Mod
 
 [Übersicht über das Dokumentenverständnis](document-understanding-overview.md)
 
-[Erstellen eines Formularverarbeitungsmodells](create-a-form-processing-model.md)  
+

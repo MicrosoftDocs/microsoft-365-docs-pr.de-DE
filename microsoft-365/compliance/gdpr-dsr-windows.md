@@ -8,19 +8,19 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.author: daniha
+ms.author: siosulli
 author: DaniHalfin
 manager: dansimp
 audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: 916ee45dae92d14c78b92bb16b6dca7c455bf803
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: e4065fc992305976a1309b05a473e15e1f03f09c
+ms.sourcegitcommit: e03bc2945e63f7f2638257e530056ae9283b45d9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48304899"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49070879"
 ---
 # <a name="data-processor-service-for-windows-enterprise-data-subject-requests-for-the-gdpr-and-ccpa"></a>Anträge betroffener Personen zum Datenauftragsverarbeiterdienst für Windows Enterprise im Rahmen der DSGVO und des CCPA 
 

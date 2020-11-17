@@ -1,5 +1,5 @@
 ---
-title: Microsoft Information Governance in Microsoft 365
+title: Microsoft-Informationsgovernance in Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -13,25 +13,25 @@ localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-description: Implementieren Sie die Microsoft Information Governance-Funktionen in Microsoft 365, um Ihre Daten mit Blick auf die Einhaltung von Compliance-Vorschriften oder behördlichen Anforderungen zu kontrollieren.
-ms.openlocfilehash: c85fd74f0e3259c40f16bc2faa766b3313239134
-ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
+description: Implementieren Sie die Microsoft-Informationsgovernance-Funktionen, um Ihre Daten mit Blick auf die Einhaltung von Compliance-Vorschriften oder behördlichen Anforderungen zu kontrollieren.
+ms.openlocfilehash: 6b06de54f18ce4081c3b13d108a5c0ceae6d24a7
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49071466"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087114"
 ---
-# <a name="microsoft-information-governance-in-microsoft-365"></a>Microsoft Information Governance in Microsoft 365
+# <a name="microsoft-information-governance-in-microsoft-365"></a>Microsoft-Informationsgovernance in Microsoft 365
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
 
 Verwenden Sie die Microsoft Information Governance (MIG)-Funktionen, um Ihre Daten mit Blick auf die Einhaltung von Compliance-Vorschriften oder behördlichen Anforderungen zu kontrollieren.
 
-![Kontrollieren Sie Ihre Daten – Informationsverwaltung und Datensatzverwaltung](../media/information-governance-records-management.png)
+![Kontrollieren Sie Ihre Daten – Informationsgovernance und Datensatzverwaltung](../media/information-governance-records-management.png)
 
-Wollen Sie Ihre Daten schützen? Erfahren Sie mehr in [Microsoft Information Protection in Microsoft 365](information-protection.md).
+Sie möchten Ihre Daten schützen? Lesen Sie [Microsoft Information Protection in Microsoft 365](information-protection.md).
 
-## <a name="information-governance"></a>Informationsverwaltung
+## <a name="information-governance"></a>Informationsgovernance
 
 So behalten Sie, was Sie brauchen, und löschen, was Sie nicht brauchen:
  

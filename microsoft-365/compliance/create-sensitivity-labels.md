@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Eine Anforderung für alle Microsoft Information Protection-Lösungen: Erstellen, Konfigurieren und Veröffentlichen Sie Vertraulichkeitsbezeichnungen, um die Dokumente und E-Mails Ihres Unternehmens zu klassifizieren und zu schützen.'
-ms.openlocfilehash: 2476c1f7e73c4da5699dcd8b297e251ab13b0798
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 9fc130a15229f7d464ed8336c3ae37d1af367ed3
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445420"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49073114"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Erstellen und Konfigurieren von Vertraulichkeitsbezeichnungen und deren Richtlinien
 
@@ -91,7 +91,7 @@ Löschen Sie eine Bezeichnung nur dann, wenn Sie die Auswirkungen für die Benut
 Solange Sie Ihre Bezeichnungen noch nicht veröffentlicht haben, stehen sie in Apps oder für Services nicht zur Verfügung. Um die Bezeichnungen zu veröffentlichen, müssen sie [zu einer Bezeichnungsrichtlinie hinzugefügt](#publish-sensitivity-labels-by-creating-a-label-policy) werden.
 
 > [!IMPORTANT]
-> Wählen Sie auf dieser Registerkarte **Bezeichnungen** nicht die Registerkarte ** Bezeichnungen veröffentlichen** (oder die Schaltfläche **Bezeichnungen veröffentlichen**, wenn Sie eine Bezeichnung bearbeiten) aus, es sei denn, Sie müssen eine neue Bezeichnungsrichtlinie erstellen. Sie benötigen mehrere Bezeichnungsrichtlinien nur dann, wenn Benutzer unterschiedliche Bezeichnungen oder unterschiedliche Richtlinieneinstellungen benötigen. Bemühen Sie sich um möglichst wenige Bezeichnungsrichtlinien – es ist nicht ungewöhnlich, nur eine einzige Bezeichnungsrichtlinie für die Organisation zu haben.
+> Wählen Sie auf dieser Registerkarte **Bezeichnungen** nicht die Registerkarte **Bezeichnungen veröffentlichen** (oder die Schaltfläche **Bezeichnungen veröffentlichen**, wenn Sie eine Bezeichnung bearbeiten) aus, es sei denn, Sie müssen eine neue Bezeichnungsrichtlinie erstellen. Sie benötigen mehrere Bezeichnungsrichtlinien nur dann, wenn Benutzer unterschiedliche Bezeichnungen oder unterschiedliche Richtlinieneinstellungen benötigen. Bemühen Sie sich um möglichst wenige Bezeichnungsrichtlinien – es ist nicht ungewöhnlich, nur eine einzige Bezeichnungsrichtlinie für die Organisation zu haben.
 
 ### <a name="additional-label-settings-with-security--compliance-center-powershell"></a>Zusätzliche Bezeichnungseinstellungen mit Security & Compliance Center PowerShell
 
@@ -101,11 +101,7 @@ Beispiel:
 
 - Verwenden Sie den Parameter *LocaleSettings* für multinationale Bereitstellungen, damit Benutzer den Bezeichnungsnamen und die QuickInfo in der jeweiligen lokalen Sprache sehen. Der [folgende Abschnitt](#example-configuration-to-configure-a-sensitivity-label-for-different-languages) enthält eine Beispielkonfiguration, bei der der Bezeichnungsname und der QuickInfo-Text für Französisch, Italienisch und Deutsch festgelegt sind.
 
-- Verwenden Sie den Parameter *ApplyContentMarkingFooterFontName*, um die Schriftart für die angegebene Fußzeile auszuwählen. Calibri ist die Standardschriftart für Kopfzeilen-, Fußzeilen- und Wasserzeichentext. Wenn der Name Ihrer alternativen Schriftart für den Dienst oder das Gerät, der bzw. das die Bezeichnung anzeigt, nicht verfügbar ist, wird die Schriftart Calibri verwendet.
-
-- Verwenden Sie den Parameter *ApplyContentMarkingHeaderFontColor*, um die benutzerdefinierte Farbauswahl für die angegebene Kopfzeile festzulegen. Verwenden Sie dazu einen hexadezimalen Triplettcode für die Rot/Grün/Blau-Komponenten (RGB). "#40e0d0" ist zum Beispiel der hexadezimale RGB-Wert für Türkis. Sie finden diese Codes in vielen Anwendungen, mit denen Sie Bilder bearbeiten können. Mit Microsoft Paint können Sie beispielsweise eine benutzerdefinierte Farbe aus einer Palette auswählen, und die RGB-Werte werden automatisch angezeigt, die Sie dann kopieren können.
-
-Nur für den Azure Information Protection-Client für einheitliche Bezeichnungen können Sie auch [erweiterte Einstellungen](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) festlegen, die das Festlegen einer Bezeichnungsfarbe und das Anwenden einer benutzerdefinierten Eigenschaft beim Anwenden einer Bezeichnung umfassen. Die vollständige Liste finden Sie unter [Verfügbare erweiterte Einstellungen für Bezeichnungen](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels) im Administratorhandbuch für diesen Client.
+- Nur für den Azure Information Protection-Client für einheitliche Bezeichnungen können Sie [erweiterte Einstellungen](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) festlegen, die das Festlegen einer Bezeichnungsfarbe und das Anwenden einer benutzerdefinierten Eigenschaft beim Anwenden einer Bezeichnung umfassen. Die vollständige Liste finden Sie unter [Verfügbare erweiterte Einstellungen für Bezeichnungen](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels) im Administratorhandbuch für diesen Client.
 
 #### <a name="example-configuration-to-configure-a-sensitivity-label-for-different-languages"></a>Beispielkonfiguration zur Konfiguration einer Vertraulichkeitsbezeichnung für verschiedene Sprachen
 

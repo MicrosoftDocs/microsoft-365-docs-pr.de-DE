@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Sie können eine Vorlage erstellen und verwenden, um Zeit zu sparen und Einstellungen zu standardisieren, wenn Sie mehrere Benutzer hinzufügen.
-ms.openlocfilehash: 92d3bd68a57291586da27eb2d578a26c53d20d78
-ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
+ms.openlocfilehash: aef5085da603c38b37544b76c5336c9bfe4edd24
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48245857"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123417"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Erstellen und Verwenden einer Vorlage, um Benutzer hinzuzufügen
 
@@ -33,7 +33,7 @@ Sie können eine Vorlage erstellen und verwenden, um Zeit zu sparen und Einstell
 
 ## <a name="create-a-template"></a>Erstellen einer Vorlage
 
-Vorlagen sind einfach zu erstellen &mdash; Sie können Benutzervorlagen für **Benutzer**  >  **aktive**Benutzer auswählen  >  **User templates**und dann in der Dropdownliste **eine Vorlage hinzufügen** auswählen, oder Sie können einen neuen Benutzer hinzufügen, und wenn Sie fertig sind, haben Sie die Möglichkeit, den Eintrag als Vorlage zu speichern.
+Vorlagen sind einfach zu erstellen &mdash; Sie können Benutzervorlagen für **Benutzer**  >  **aktive** Benutzer auswählen  >  **User templates** und dann in der Dropdownliste **eine Vorlage hinzufügen** auswählen, oder Sie können einen neuen Benutzer hinzufügen, und wenn Sie fertig sind, haben Sie die Möglichkeit, den Eintrag als Vorlage zu speichern.
 
 Wenn Sie nach dem Hinzufügen eines Benutzers eine Vorlage erstellen, werden die Werte, die Sie für die folgenden Einstellungen auswählen, in der Vorlage gespeichert:
 
@@ -44,7 +44,7 @@ Wenn Sie nach dem Hinzufügen eines Benutzers eine Vorlage erstellen, werden die
 - Lizenzauswahl
 - Anwendungsoptionen
 - Rolle
-- Die meisten Profilinformationen wie **Auftragsprofil**, **Abteilung**, **Office**, **Office Phone**und **Street Address** 
+- Die meisten Profilinformationen wie **Auftragsprofil**, **Abteilung**, **Office**, **Office Phone** und **Street Address** 
 
 Die folgenden Informationen sind benutzerspezifisch und werden in der Vorlage nicht gespeichert:
 
@@ -62,30 +62,30 @@ Wenn Sie eine Vorlage erstellen, indem Sie die Option **Vorlage hinzufügen** au
 
 So verwenden Sie eine vorhandene Vorlage zum Hinzufügen eines Benutzers:
 
-1. Wählen Sie im Admin Center die Option **Users**  >  **Active Users**aus.
+1. Wählen Sie im Admin Center die Option **Users**  >  **Active Users** aus.
 
-2. Wählen Sie **Benutzervorlagen**aus, und wählen Sie dann in der Dropdownliste eine Vorlage aus. (Die Liste enthält nur die Vorlagen, die Sie erstellt haben, nicht jene, die von anderen Administratoren erstellt wurden.)
+2. Wählen Sie **Benutzervorlagen** aus, und wählen Sie dann in der Dropdownliste eine Vorlage aus. (Die Liste enthält nur die Vorlagen, die Sie erstellt haben, nicht jene, die von anderen Administratoren erstellt wurden.)
 
- > [!NOTE]
- > Sie können auch eine Vorlage verwenden, um einen Benutzer hinzuzufügen, indem Sie **Benutzervorlagen**Vorlagen  >  **Verwalten**auswählen, eine Vorlage auswählen und dann **Vorlage verwenden**auswählen.
+   > [!NOTE]
+   > Sie können auch eine Vorlage verwenden, um einen Benutzer hinzuzufügen, indem Sie **Benutzervorlagen** Vorlagen  >  **Verwalten** auswählen, eine Vorlage auswählen und dann **Vorlage verwenden** auswählen.
 
 3. Führen Sie die Schritte aus, um einen Benutzer aus der ausgewählten Vorlage zu erstellen.
 
-> [!NOTE]
-> Wenn Sie nicht über ausreichende Lizenzen für einen Benutzer verfügen, den Sie hinzufügen, und Ihre Zahlungsinformationen verfügbar sind, werden wir versuchen, eine andere Lizenz mit Ihren vorhandenen Zahlungsinformationen zu erwerben. Wenn Ihre Zahlungsinformationen nicht verfügbar sind, wird der Benutzer als nicht lizenzierter Benutzer erstellt.
+   > [!NOTE]
+   > Wenn Sie nicht über ausreichende Lizenzen für einen Benutzer verfügen, den Sie hinzufügen, und Ihre Zahlungsinformationen verfügbar sind, werden wir versuchen, eine andere Lizenz mit Ihren vorhandenen Zahlungsinformationen zu erwerben. Wenn Ihre Zahlungsinformationen nicht verfügbar sind, wird der Benutzer als nicht lizenzierter Benutzer erstellt.
 
 ## <a name="manage-templates"></a>Vorlagen verwalten
 
-Vorlagen, die Sie nicht mehr benötigen, können Sie ganz einfach löschen und neue hinzufügen. So löschen Sie eine Vorlage:
+Sie können nur Vorlagen löschen, die Sie nicht mehr benötigen, und neue hinzufügen. So löschen Sie eine Vorlage:
 
-1. Wählen Sie im Admin Center die Option **Users**  >  **Active Users**aus.
+1. Wählen Sie im Admin Center die Option **Users**  >  **Active Users** aus.
 
-2. Wählen Sie **Vorlagen**aus, und wählen Sie dann **Vorlagen verwalten** in der Dropdownliste aus.
+2. Wählen Sie **Vorlagen** aus, und wählen Sie dann **Vorlagen verwalten** in der Dropdownliste aus.
 
 3. Eine Liste mit Vorlagen wird angezeigt. Sie können eine Vorlage löschen, indem Sie eine der folgenden Aktionen ausführen:
-    - Wählen Sie eine oder mehrere Vorlagen aus, und wählen Sie dann **Löschen**aus. 
-    - Wählen Sie die drei Punkte rechts neben dem Vorlagennamen aus, und wählen Sie dann **Löschen**aus.
-    - Wählen Sie den Vorlagennamen aus. Wenn die Vorlagen Details auf der rechten Seite des Bildschirms angezeigt werden, wählen Sie **Vorlage löschen**aus.
+    - Wählen Sie eine oder mehrere Vorlagen aus, und wählen Sie dann **Löschen** aus. 
+    - Wählen Sie die drei Punkte rechts neben dem Vorlagennamen aus, und wählen Sie dann **Löschen** aus.
+    - Wählen Sie den Vorlagennamen aus. Wenn die Vorlagen Details auf der rechten Seite des Bildschirms angezeigt werden, wählen Sie **Vorlage löschen** aus.
 
 ## <a name="related-articles"></a>Verwandte Artikel
 

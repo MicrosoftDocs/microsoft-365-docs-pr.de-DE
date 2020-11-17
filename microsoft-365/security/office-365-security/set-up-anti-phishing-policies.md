@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die Anti-Phishing-Richtlinien informieren, die in Exchange Online Protection (EoP) und Microsoft Defender für Office 365 zur Verfügung stehen.
-ms.openlocfilehash: b54f452fb984f61913f2ade53ad45ed169a43832
-ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
+ms.openlocfilehash: c728a69a3b0841219e4f9b546e80e71b2cf89151
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48993354"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123631"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-Phishing-Richtlinien in Microsoft 365
 
@@ -65,19 +65,19 @@ Der Rest dieses Artikels beschreibt die Einstellungen, die in Anti-Phishing-Rich
 
 Die folgenden Richtlinieneinstellungen stehen in Anti-Phishing-Richtlinien in EoP und Microsoft Defender für Office 365 zur Verfügung:
 
-- **Name** : Sie können die standardmäßige Anti-Phishing-Richtlinie nicht umbenennen, aber Sie können benutzerdefinierte Richtlinien benennen und umbenennen, die Sie erstellen.
+- **Name**: Sie können die standardmäßige Anti-Phishing-Richtlinie nicht umbenennen, aber Sie können benutzerdefinierte Richtlinien benennen und umbenennen, die Sie erstellen.
 
 - **Beschreibung** Sie können keine Beschreibung zur Standard-Anti-Phishing-Richtlinie hinzufügen, aber Sie können die Beschreibung für benutzerdefinierte Richtlinien, die Sie erstellen, hinzufügen und ändern.
 
-- **Angewendet auf** : identifiziert interne Empfänger, auf die die AntiPhishing-Richtlinie angewendet wird. Dieser Wert ist in benutzerdefinierten Richtlinien erforderlich und in der Standardrichtlinie nicht verfügbar (die Standardrichtlinie gilt für alle Empfänger).
+- **Angewendet auf**: identifiziert interne Empfänger, auf die die AntiPhishing-Richtlinie angewendet wird. Dieser Wert ist in benutzerdefinierten Richtlinien erforderlich und in der Standardrichtlinie nicht verfügbar (die Standardrichtlinie gilt für alle Empfänger).
 
-  Sie können eine Bedingung oder Ausnahme nur einmal verwenden, aber Sie können mehrere Werte für die Bedingung oder Ausnahme angeben. Bei mehreren Werten derselben Bedingung oder Ausnahme wird ODER-Logik verwendet (z. B. _\<recipient1\>_ oder _\<recipient2\>_ ). Bei unterschiedlichen Bedingungen oder Ausnahmen wird UND-Logik verwendet (z. B. _\<recipient1\>_ und _\<member of group 1\>_ ).
+  Sie können eine Bedingung oder Ausnahme nur einmal verwenden, aber Sie können mehrere Werte für die Bedingung oder Ausnahme angeben. Bei mehreren Werten derselben Bedingung oder Ausnahme wird ODER-Logik verwendet (z. B. _\<recipient1\>_ oder _\<recipient2\>_). Bei unterschiedlichen Bedingungen oder Ausnahmen wird UND-Logik verwendet (z. B. _\<recipient1\>_ und _\<member of group 1\>_).
 
-  - **Empfänger ist** : ein oder mehrere Postfächer, e-Mail-Benutzer oder e-Mail-Kontakte in Ihrer Organisation.
-  - **Der Empfänger ist Mitglied von** : eine oder mehrere Gruppen in Ihrer Organisation.
-  - **Die Empfängerdomäne ist** : eine oder mehrere der konfigurierten akzeptierten Domänen in Microsoft 365.
+  - **Empfänger ist**: ein oder mehrere Postfächer, e-Mail-Benutzer oder e-Mail-Kontakte in Ihrer Organisation.
+  - **Der Empfänger ist Mitglied von**: eine oder mehrere Gruppen in Ihrer Organisation.
+  - **Die Empfängerdomäne ist**: eine oder mehrere der konfigurierten akzeptierten Domänen in Microsoft 365.
 
-  - **Ausnahme** : Ausnahmen für die Regel. Die Einstellungen und das Verhalten sind genau wie die Bedingungen:
+  - **Ausnahme**: Ausnahmen für die Regel. Die Einstellungen und das Verhalten sind genau wie die Bedingungen:
 
     - **Empfänger lautet**
     - **Der Empfänger ist Mitglied von**
@@ -92,7 +92,7 @@ Spoofing ist, wenn die von-Adresse in einer e-Mail-Nachricht (die Absenderadress
 
 Die folgenden spoofeinstellungen stehen in Anti-Phishing-Richtlinien in EoP und Microsoft Defender für Office 365 zur Verfügung:
 
-- **Schutz gegen Spoofing** : aktiviert oder deaktiviert den Schutz vor Spoofing. Es wird empfohlen, die Option aktiviert zu lassen. Verwenden Sie die **Spoof Intelligence-Richtlinie** , um bestimmte gefälschte interne und externe Absender zuzulassen oder zu blockieren. Weitere Informationen finden Sie unter [Konfigurieren der Spoofintelligenz in Microsoft 365](learn-about-spoof-intelligence.md).
+- **Schutz gegen Spoofing**: aktiviert oder deaktiviert den Schutz vor Spoofing. Es wird empfohlen, die Option aktiviert zu lassen. Verwenden Sie die **Spoof Intelligence-Richtlinie** , um bestimmte gefälschte interne und externe Absender zuzulassen oder zu blockieren. Weitere Informationen finden Sie unter [Konfigurieren der Spoofintelligenz in Microsoft 365](learn-about-spoof-intelligence.md).
 
   > [!NOTE]
   >
@@ -102,15 +102,15 @@ Die folgenden spoofeinstellungen stehen in Anti-Phishing-Richtlinien in EoP und 
 
   Für Nachrichten von blockierten gefälschten Absendern können Sie auch die Aktion angeben, die für die Nachrichten ausgeführt werden soll:
 
-  - **Nachricht in den Junk-e-Mail-Ordner umlegen** : Dies ist der Standardwert. Die Nachricht wird an das Postfach übermittelt und in den Junk-e-Mail-Ordner verschoben. In Exchange Online wird die Nachricht in den Junk-e-Mail-Ordner verschoben, wenn die Junk-e-Mail-Regel für das Postfach aktiviert ist (Sie ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Konfigurieren von Junk-e-Mail-Einstellungen für Exchange Online-Postfächer in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **Nachricht in den Junk-e-Mail-Ordner umlegen**: Dies ist der Standardwert. Die Nachricht wird an das Postfach übermittelt und in den Junk-e-Mail-Ordner verschoben. In Exchange Online wird die Nachricht in den Junk-e-Mail-Ordner verschoben, wenn die Junk-e-Mail-Regel für das Postfach aktiviert ist (Sie ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Konfigurieren von Junk-e-Mail-Einstellungen für Exchange Online-Postfächer in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-  - **Nachricht in Quarantäne verschieben** : sendet die Nachricht an die Quarantäne statt an die vorgesehenen Empfänger. Weitere Informationen zur Quarantäne finden Sie in den folgenden Artikeln:
+  - **Nachricht in Quarantäne verschieben**: sendet die Nachricht an die Quarantäne statt an die vorgesehenen Empfänger. Weitere Informationen zur Quarantäne finden Sie in den folgenden Artikeln:
 
     - [Quarantäne in Microsoft 365](quarantine-email-messages.md)
     - [Verwalten von isolierten Nachrichten und Dateien als Administrator in Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Suchen und Freigeben von isolierten Nachrichten als Benutzer in Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-- Nicht **authentifizierter Absender** : Informationen finden Sie im nächsten Abschnitt.
+- Nicht **authentifizierter Absender**: Informationen finden Sie im nächsten Abschnitt.
 
 ### <a name="unauthenticated-sender"></a>Nicht authentifizierter Absender
 
@@ -140,7 +140,7 @@ Weitere Informationen finden Sie unter [Identifizieren von verdächtigen Nachric
 In diesem Abschnitt werden die Richtlinieneinstellungen beschrieben, die nur in Anti-Phishing-Richtlinien in Microsoft Defender für Office 365 verfügbar sind.
 
 > [!NOTE]
-> Standardmäßig sind die exklusiven Einstellungen in Defender für Office 365 nicht konfiguriert oder aktiviert, auch in der Standardrichtlinie. Um diese Funktionen nutzen zu können, müssen Sie Sie in der standardmäßigen Anti-Phishing-Richtlinie aktivieren und konfigurieren oder benutzerdefinierte Anti-Phishing-Richtlinien erstellen und konfigurieren.
+> Die standardmäßige Anti-Phishing-Richtlinie in Microsoft Defender für Office 365 bietet [spoofschutz](set-up-anti-phishing-policies.md#spoof-settings) und Post Fach Intelligenz für alle Empfänger. Die anderen verfügbaren Features für [Identitätswechsel Schutz](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) und [Erweiterte Einstellungen](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365) sind jedoch in der Standardrichtlinie nicht konfiguriert oder aktiviert. Um alle Schutzfunktionen zu aktivieren, ändern Sie die standardmäßige Anti-Phishing-Richtlinie, oder erstellen Sie zusätzliche Anti-Phishing-Richtlinien.
 
 ### <a name="impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Einstellungen für Identitätswechsel in Anti-Phishing-Richtlinien in Microsoft Defender für Office 365
 
@@ -153,7 +153,7 @@ Eine imitierte Domäne kann ansonsten als seriös gelten (registrierte Domäne, 
 
 Die folgenden Identitätswechseleinstellungen sind nur in Anti-Phishing-Richtlinien in Microsoft Defender für Office 365 verfügbar:
 
-- **Zu schützende Benutzer** : verhindert, dass die angegebene interne oder externe e-Mail-Adresse **als Absender** von Nachrichten imitiert wird. Beispielsweise erhalten Sie eine e-Mail-Nachricht vom Vice President Ihres Unternehmens, in der Sie aufgefordert werden, ihr einige interne Unternehmensinformationen zu senden. Würdest du es tun? Viele Personen würden die Antwort senden, ohne zu denken.
+- **Zu schützende Benutzer**: verhindert, dass die angegebene interne oder externe e-Mail-Adresse **als Absender** von Nachrichten imitiert wird. Beispielsweise erhalten Sie eine e-Mail-Nachricht vom Vice President Ihres Unternehmens, in der Sie aufgefordert werden, ihr einige interne Unternehmensinformationen zu senden. Würdest du es tun? Viele Personen würden die Antwort senden, ohne zu denken.
 
   Sie können geschützte Benutzer zum Hinzufügen interner und externer Absender-e-Mail-Adressen zum Schutz vor Identitätswechsel verwenden. Diese Liste von **Absendern** , die vor Benutzeridentitätswechsel geschützt sind, unterscheidet sich von der Liste der **Empfänger** , auf die die Richtlinie angewendet wird (alle Empfänger für die Standardrichtlinie; bestimmte Empfänger, die in der Einstellung **angewendet auf** im Abschnitt [Richtlinieneinstellungen](#policy-settings) konfiguriert sind).
 
@@ -167,7 +167,7 @@ Die folgenden Identitätswechseleinstellungen sind nur in Anti-Phishing-Richtlin
 
   Wenn Sie der Liste der **zu schützenden Benutzer** interne oder externe e-Mail-Adressen hinzufügen, unterliegen Nachrichten von diesen **Absendern** den Identitätswechsel-Schutzprüfungen. Die Nachricht wird auf den Identitätswechsel überprüft, **Wenn** die Nachricht an einen **Empfänger** gesendet wird, auf den die Richtlinie angewendet wird (alle Empfänger für die Standardrichtlinie; **Auf** Empfänger in benutzerdefinierten Richtlinien angewendet). Wenn der Identitätswechsel in der e-Mail-Adresse des Absenders erkannt wird, werden die Aktionen des Identitätswechsel Schutzes für Benutzer auf die Nachricht angewendet (was ist mit der Nachricht zu tun, ob Sie Sicherheitstipps für imitierte Benutzer anzeigen usw.).
 
-- **Zu schützende Domänen** : verhindert, dass die angegebenen Domänen **in der Domäne des Nachrichtenabsenders** imitiert werden. Beispielsweise alle Domänen, die Sie besitzen ([akzeptierte Domänen](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) oder bestimmte Domänen (Domänen, die Sie besitzen oder Partnerdomänen). Diese Liste von **Absenderdomänen** , die vor Identitätswechsel geschützt sind, unterscheidet sich von der Liste der **Empfänger** , auf die die Richtlinie angewendet wird (alle Empfänger für die Standardrichtlinie; bestimmte Empfänger, die in der Einstellung **angewendet auf** im Abschnitt [Richtlinieneinstellungen](#policy-settings) konfiguriert sind).
+- **Zu schützende Domänen**: verhindert, dass die angegebenen Domänen **in der Domäne des Nachrichtenabsenders** imitiert werden. Beispielsweise alle Domänen, die Sie besitzen ([akzeptierte Domänen](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) oder bestimmte Domänen (Domänen, die Sie besitzen oder Partnerdomänen). Diese Liste von **Absenderdomänen** , die vor Identitätswechsel geschützt sind, unterscheidet sich von der Liste der **Empfänger** , auf die die Richtlinie angewendet wird (alle Empfänger für die Standardrichtlinie; bestimmte Empfänger, die in der Einstellung **angewendet auf** im Abschnitt [Richtlinieneinstellungen](#policy-settings) konfiguriert sind).
 
   > [!NOTE]
   > Die maximale Anzahl geschützter Domänen, die Sie in allen Anti-Phishing-Richtlinien definieren können, ist 50.
@@ -176,36 +176,36 @@ Die folgenden Identitätswechseleinstellungen sind nur in Anti-Phishing-Richtlin
 
   Wenn Sie Domänen zu Domänen hinzufügen, um die Liste zu **schützen** , unterliegen Nachrichten von **Absendern in diesen Domänen** den Identitätswechsel-Schutzprüfungen. Die Nachricht wird auf den Identitätswechsel überprüft, **Wenn** die Nachricht an einen **Empfänger** gesendet wird, auf den die Richtlinie angewendet wird (alle Empfänger für die Standardrichtlinie; **Auf** Empfänger in benutzerdefinierten Richtlinien angewendet). Wenn der Identitätswechsel in der Domäne des Absenders erkannt wird, werden die Schutzaktionen für den Identitätswechsel für Domänen auf die Nachricht angewendet (was ist mit der Nachricht zu tun, ob Sie Sicherheitstipps für imitierte Benutzer anzeigen usw.).
 
-- **Aktionen für geschützte Benutzer oder Domänen** : Wählen Sie die Aktion aus, die für eingehende Nachrichten ausgeführt werden soll, die Identitätswechsel Versuche für geschützte Benutzer und geschützte Domänen in der Richtlinie enthalten. Sie können verschiedene Aktionen für den Identitätswechsel von geschützten Benutzern im Vergleich zum Identitätswechsel geschützter Domänen angeben:
+- **Aktionen für geschützte Benutzer oder Domänen**: Wählen Sie die Aktion aus, die für eingehende Nachrichten ausgeführt werden soll, die Identitätswechsel Versuche für geschützte Benutzer und geschützte Domänen in der Richtlinie enthalten. Sie können verschiedene Aktionen für den Identitätswechsel von geschützten Benutzern im Vergleich zum Identitätswechsel geschützter Domänen angeben:
 
   - **Keine Aktion anwenden**
 
-  - **Nachricht an andere e-Mail-Adressen umleiten** : sendet die Nachricht an die angegebenen Empfänger anstelle der vorgesehenen Empfänger.
+  - **Nachricht an andere e-Mail-Adressen umleiten**: sendet die Nachricht an die angegebenen Empfänger anstelle der vorgesehenen Empfänger.
 
-  - **Nachricht in Junk-e-Mail-Ordner verschieben** : die Nachricht wird an das Postfach übermittelt und in den Junk-e-Mail-Ordner verschoben. In Exchange Online wird die Nachricht in den Junk-e-Mail-Ordner verschoben, wenn die Junk-e-Mail-Regel für das Postfach aktiviert ist (Sie ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Konfigurieren von Junk-e-Mail-Einstellungen für Exchange Online-Postfächer in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **Nachricht in Junk-e-Mail-Ordner verschieben**: die Nachricht wird an das Postfach übermittelt und in den Junk-e-Mail-Ordner verschoben. In Exchange Online wird die Nachricht in den Junk-e-Mail-Ordner verschoben, wenn die Junk-e-Mail-Regel für das Postfach aktiviert ist (Sie ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Konfigurieren von Junk-e-Mail-Einstellungen für Exchange Online-Postfächer in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-    - **Nachricht in Quarantäne verschieben** : sendet die Nachricht an die Quarantäne statt an die vorgesehenen Empfänger. Weitere Informationen zur Quarantäne finden Sie in den folgenden Artikeln:
+    - **Nachricht in Quarantäne verschieben**: sendet die Nachricht an die Quarantäne statt an die vorgesehenen Empfänger. Weitere Informationen zur Quarantäne finden Sie in den folgenden Artikeln:
 
     - [Quarantäne in Microsoft 365](quarantine-email-messages.md)
     - [Verwalten von isolierten Nachrichten und Dateien als Administrator in Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Suchen und Freigeben von isolierten Nachrichten als Benutzer in Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-  - **Übermitteln Sie die Nachricht, und fügen Sie der Zeile Bcc weitere Adressen hinzu** : senden Sie die Nachricht an die beabsichtigten Empfänger, und übermitteln Sie die Nachricht automatisch an die angegebenen Empfänger.
+  - **Übermitteln Sie die Nachricht, und fügen Sie der Zeile Bcc weitere Adressen hinzu**: senden Sie die Nachricht an die beabsichtigten Empfänger, und übermitteln Sie die Nachricht automatisch an die angegebenen Empfänger.
 
   - **Löschen Sie die Nachricht, bevor Sie zugestellt** wird: Löscht die gesamte Nachricht, einschließlich aller Anlagen, automatisch.
 
-- **Sicherheitstipps** : aktiviert oder deaktiviert die folgenden Sicherheitstipps für Identitätswechsel, die Nachrichten angezeigt werden, bei denen die Identitätswechsel Prüfung fehlschlägt:
+- **Sicherheitstipps**: aktiviert oder deaktiviert die folgenden Sicherheitstipps für Identitätswechsel, die Nachrichten angezeigt werden, bei denen die Identitätswechsel Prüfung fehlschlägt:
 
-  - **Imitierte Benutzer** : die Absenderadresse enthält einen geschützten Benutzer.
-  - **Imitierte Domänen** : die Absenderadresse enthält eine geschützte Domäne.
-  - **Ungewöhnliche Zeichen** : die from-Adresse enthält ungewöhnliche Zeichensätze (beispielsweise mathematische Symbole und Text oder eine Mischung aus Groß-und Kleinbuchstaben) in einem geschützten Absender oder in einer Domäne.
+  - **Imitierte Benutzer**: die Absenderadresse enthält einen geschützten Benutzer.
+  - **Imitierte Domänen**: die Absenderadresse enthält eine geschützte Domäne.
+  - **Ungewöhnliche Zeichen**: die from-Adresse enthält ungewöhnliche Zeichensätze (beispielsweise mathematische Symbole und Text oder eine Mischung aus Groß-und Kleinbuchstaben) in einem geschützten Absender oder in einer Domäne.
 
   > [!NOTE]
   > Selbst wenn die Sicherheitstipps für Identitätswechsel deaktiviert sind, können Sie eine e-Mail-Fluss Regel (auch als Transportregel bezeichnet) verwenden, um Nachrichten eine Nachrichtenkopfzeile mit dem Namen **X-MS-Exchange-EnableFirstContactSafetyTip** hinzuzufügen. Es werden spezielle Sicherheitstipps angezeigt, in denen Empfänger benachrichtigt werden, dass Sie häufig keine e-Mails vom Absender erhalten, oder in Fällen, in denen der Empfänger zum ersten Mal eine e-Mail vom Absender erhält.
 
-- **Post Fach Intelligenz** : aktiviert oder deaktiviert künstliche Intelligenz (AI), die Benutzer-e-Mail-Muster mit ihren häufigen Kontakten bestimmt. Diese Einstellung unterstützt die KI zwischen legitimen und gefälschten e-Mails von diesen Kontakten. Die Post Fach Intelligenz steht nur für Exchange Online Postfächer zur Verfügung.
+- **Post Fach Intelligenz**: aktiviert oder deaktiviert künstliche Intelligenz (AI), die Benutzer-e-Mail-Muster mit ihren häufigen Kontakten bestimmt. Diese Einstellung unterstützt die KI zwischen legitimen und gefälschten e-Mails von diesen Kontakten. Die Post Fach Intelligenz steht nur für Exchange Online Postfächer zur Verfügung.
 
-- **Post Fachnachrichten basierter Identitätswechsel Schutz** : aktiviert oder deaktiviert erweiterte Identitätswechsel Ergebnisse basierend auf den einzelnen Absender Karten der einzelnen Benutzer. Diese Intelligenz ermöglicht es Microsoft 365, die Erkennung von Benutzer Identitätswechseln anzupassen und besser mit falsch positiven Ergebnissen zu umgehen. Wenn ein Benutzeridentitätswechsel erkannt wird, können Sie eine bestimmte Aktion definieren, die für die Nachricht ausgeführt werden soll:
+- **Post Fachnachrichten basierter Identitätswechsel Schutz**: aktiviert oder deaktiviert erweiterte Identitätswechsel Ergebnisse basierend auf den einzelnen Absender Karten der einzelnen Benutzer. Diese Intelligenz ermöglicht es Microsoft 365, die Erkennung von Benutzer Identitätswechseln anzupassen und besser mit falsch positiven Ergebnissen zu umgehen. Wenn ein Benutzeridentitätswechsel erkannt wird, können Sie eine bestimmte Aktion definieren, die für die Nachricht ausgeführt werden soll:
 
   - **Keine Aktion anwenden**
   - **Weiterleiten von Nachrichten an andere e-Mail-Adressen**
@@ -214,18 +214,18 @@ Die folgenden Identitätswechseleinstellungen sind nur in Anti-Phishing-Richtlin
   - **Senden der Nachricht und Hinzufügen weiterer Adressen zur Bcc-Zeile**
   - **Löschen der Nachricht vor der Zustellung**
 
-- **Vertrauenswürdige Absender und Domänen** : Ausnahmen für die Schutzeinstellungen für den Identitätswechsel. Nachrichten von den angegebenen Absendern und Absenderdomänen werden nie als Identitätswechsel basierte Angriffe durch die Richtlinie klassifiziert. Mit anderen Worten: die Aktion für geschützte Absender, geschützte Domänen oder den Post Fachnachrichten Schutz wird nicht auf diese vertrauenswürdigen Absender oder Absenderdomänen angewendet. Der maximale Grenzwert für diese Listen beträgt ca. 1000 Einträge.
+- **Vertrauenswürdige Absender und Domänen**: Ausnahmen für die Schutzeinstellungen für den Identitätswechsel. Nachrichten von den angegebenen Absendern und Absenderdomänen werden nie als Identitätswechsel basierte Angriffe durch die Richtlinie klassifiziert. Mit anderen Worten: die Aktion für geschützte Absender, geschützte Domänen oder den Post Fachnachrichten Schutz wird nicht auf diese vertrauenswürdigen Absender oder Absenderdomänen angewendet. Der maximale Grenzwert für diese Listen beträgt ca. 1000 Einträge.
 
 ### <a name="advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Erweiterte Phishing-Schwellenwerte in Anti-Phishing-Richtlinien in Microsoft Defender für Office 365
 
 Die folgenden erweiterten Phishing-Schwellenwerte stehen nur in Anti-Phishing-Richtlinien in Microsoft Defender für Office 365 zur Verfügung. Diese Schwellenwerte steuern die Empfindlichkeit für das Anwenden von maschinellen Lernmodellen auf Nachrichten zur Bestimmung eines Phishing-Urteils:
 
-- **1-Standard** : Dies ist der Standardwert. Der Schweregrad der Aktion, die für die Nachricht ausgeführt wird, hängt vom Grad der Vertrauenswürdigkeit der Nachricht ab (niedrig, Mittel, hoch oder sehr hohes Vertrauen). Nachrichten, die als Phishing mit einem sehr hohen Vertrauensgrad identifiziert werden, weisen beispielsweise die schwersten Aktionen auf, während Nachrichten, die als Phishing mit einem niedrigen Vertrauensgrad identifiziert werden, weniger schwerwiegende Aktionen angewendet haben.
+- **1-Standard**: Dies ist der Standardwert. Der Schweregrad der Aktion, die für die Nachricht ausgeführt wird, hängt vom Grad der Vertrauenswürdigkeit der Nachricht ab (niedrig, Mittel, hoch oder sehr hohes Vertrauen). Nachrichten, die als Phishing mit einem sehr hohen Vertrauensgrad identifiziert werden, weisen beispielsweise die schwersten Aktionen auf, während Nachrichten, die als Phishing mit einem niedrigen Vertrauensgrad identifiziert werden, weniger schwerwiegende Aktionen angewendet haben.
 
-- **2-aggressiv** : Nachrichten, die als Phishing mit einem hohen Maß an Vertrauen identifiziert werden, werden so behandelt, als ob Sie mit einem sehr hohen Maß an Zuverlässigkeit identifiziert wurden.
+- **2-aggressiv**: Nachrichten, die als Phishing mit einem hohen Maß an Vertrauen identifiziert werden, werden so behandelt, als ob Sie mit einem sehr hohen Maß an Zuverlässigkeit identifiziert wurden.
 
-- **3-aggressiver** : Nachrichten, die als Phishing mit mittlerem oder hohem Vertrauensgrad identifiziert werden, werden so behandelt, als wären Sie mit einem sehr hohen Maß an Vertrauen gekennzeichnet.
+- **3-aggressiver**: Nachrichten, die als Phishing mit mittlerem oder hohem Vertrauensgrad identifiziert werden, werden so behandelt, als wären Sie mit einem sehr hohen Maß an Vertrauen gekennzeichnet.
 
-- **4-am aggressivsten** : Nachrichten, die als Phishing mit niedrigem, mittlerem oder hohem Maß an Zuverlässigkeit identifiziert werden, werden so behandelt, als wären Sie mit einem sehr hohen Maß an Zuverlässigkeit identifiziert worden.
+- **4-am aggressivsten**: Nachrichten, die als Phishing mit niedrigem, mittlerem oder hohem Maß an Zuverlässigkeit identifiziert werden, werden so behandelt, als wären Sie mit einem sehr hohen Maß an Zuverlässigkeit identifiziert worden.
 
 Die Wahrscheinlichkeit, dass falsch positive Ergebnisse (gute Nachrichten, die als ungültig markiert werden) erhöht wird, wenn Sie diese Einstellung erhöhen. Informationen zu den empfohlenen Einstellungen finden Sie unter [Anti-Phishing Policy in Microsoft Defender for Office 365 Settings](recommended-settings-for-eop-and-office365-atp.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365).

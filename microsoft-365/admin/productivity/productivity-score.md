@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Übersicht über die Microsoft Produktivitätsbewertung
-ms.openlocfilehash: 3808583429c78460483cd7193d38810a7e189040
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: 49ae35d68b0d0ebf627e44e5912d4a1bb7b712c0
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804726"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123489"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft Productivity Score 
 
@@ -94,7 +94,7 @@ Sie können auf die Benutzeroberfläche von Microsoft 365 admin Home unter **Ber
 
 Auf der Startseite der Produktivitäts Bewertung werden die Gesamtpunktzahl und der Bewertungsverlauf sowie die primäre Einblicke für jede Kategorie angezeigt.
 
-:::image type="content" source="../../media/prodscore-landing.png" alt-text="Seite &quot;Produktivitäts Bewertung&quot; in Berichten.&quot;:::
+:::image type="content" source="../../media/prodscore-landing.png" alt-text="Seite &quot;Produktivitäts Bewertung&quot; in Berichten.":::
 
 **Ihre Punktzahl** wird als Prozentwert und in Punkten angezeigt. Sie können Ihre Punkte im Zähler und die maximal möglichen Punkte im Nenner sehen.
 
@@ -104,11 +104,11 @@ Der Endpunktanalyse-Peer-Benchmark umfasst Ziele für die gerätestart Leistung 
 
 Für die Netzwerkkonnektivität beträgt die empfohlene Benchmark 80 Punkte.
 
-Im Abschnitt &quot; **Score Breakdown** &quot; finden Sie einen Überblick über Ihre Produktivitäts Bewertung mit Benchmarks von Personen-und Technologie Erfahrungsbereichen.
+Im Abschnitt " **Score Breakdown** " finden Sie einen Überblick über Ihre Produktivitäts Bewertung mit Benchmarks von Personen-und Technologie Erfahrungsbereichen.
 
 Der Bewertungsverlauf zeigt, wie sich die Punktzahl in jeder Kategorie in den letzten 6 Monaten geändert hat.
 
-Die Bereiche &quot; **People Experiences** &quot; und &quot; **Technology Experiences** " enthalten die primären Einblicke für die Kategorien in diesen Bereichen. Sie können auf jede Kategorie klicken, um tiefere Einblicke zu erhalten.
+Die Bereiche " **People Experiences** " und " **Technology Experiences** " enthalten die primären Einblicke für die Kategorien in diesen Bereichen. Sie können auf jede Kategorie klicken, um tiefere Einblicke zu erhalten.
 
 ## <a name="category-details-pages"></a>Rubriken-Detailseiten
 

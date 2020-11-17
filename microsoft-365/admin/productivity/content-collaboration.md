@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Details zur Inhalts Zusammenarbeit-Personen erleben Produktivitäts Bewertung.
-ms.openlocfilehash: 5cdbe0cbb683715a19b182d0781fe238d026a400
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+ms.openlocfilehash: 99f5a897dc372a45be31a8c01379c6fe4c980de9
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999428"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123447"
 ---
 # <a name="content-collaboration--people-experiences"></a>Content-Zusammenarbeit – Personen Erfahrungen
 
-Das Produktivitäts Ergebnis hilft Ihnen, zu transformieren, wie arbeiten mit Metriken darüber, wie Benutzer Microsoft 365-Apps verwenden, und den Technologie-Erfahrungen, die Sie unterstützen, ausgeführt wird. Die Partitur spiegelt die Leistung Ihrer Organisation&#39;s für Personen und Technologie erlebbar und vergleicht Ihre Bewertung mit Organisationen wie Ihrem. Die Zusammenarbeit mit Inhalten ist eine der Maßnahmen, die unter Personen Erfahrungen fallen. Sehen Sie sich die Übersicht über die  [Produktivitäts Bewertung](productivity-score.md)an.
+Das Produktivitäts Ergebnis hilft Ihnen, zu transformieren, wie arbeiten mit Metriken darüber, wie Benutzer Microsoft 365-Apps verwenden, und den Technologie-Erfahrungen, die Sie unterstützen, ausgeführt wird. Die Partitur spiegelt die Leistung Ihrer Organisation&#39;s für Personen und Technologie erlebbar und vergleicht Ihre Bewertung mit Organisationen wie Ihrem. Die Zusammenarbeit mit Inhalten ist eine der Maßnahmen, die unter Personen Erfahrungen fallen. Sehen Sie sich die Übersicht über die [Produktivitäts Bewertung](productivity-score.md)an.
 
 ## <a name="why-your-organization39s-content-collaboration-score-matters"></a>Gründe für das Ergebnis der Zusammenarbeit in Ihrer Organisation&#39;en
 
@@ -140,7 +140,7 @@ Außerdem stellen wir Ihnen Informationen zur Verfügung, mit denen Sie den Einb
         - Nenner: die Gesamtzahl der Personen, die Zugriff auf OneDrive oder SharePoint für mindestens 1 der letzten 28 Tage gehabt haben.
 4. **Link zu Ressourcen:** Wählen Sie diesen Link aus, um Hilfeinhalte anzuzeigen.
 
-### <a name="intensity-of-files-collaborated-on"></a>Intensität der Zusammenarbeit an Dateien
+### <a name="number-of-files-collaborated-on"></a>Anzahl der zusammen gearbeiteten Dateien
 
 :::image type="content" source="../../media/intensityofcollab.png" alt-text="Diagramm, das zeigt, wie viele Dateien am meisten zusammengearbeitet haben.":::
 
@@ -152,13 +152,13 @@ Außerdem stellen wir Ihnen Informationen zur Verfügung, mit denen Sie den Einb
         - **Nenner:** Die Gesamtzahl der Personen, die mindestens 1 der letzten 28 Tage auf OneDrive oder SharePoint zugreifen können.
       - **Zusammenarbeit in 1-3 Dateien:**
         - **Zähler:** Die Anzahl der Personen, die an 1-3-Dateien in den letzten 28 Tagen zusammenarbeiten
-        - **Nenner:** Die Gesamtzahl der Personen, die mindestens 1 der letzten 28 Tage auf OneDrive oder SharePoint zugegriffen haben.
+        - **Nenner:** Die Gesamtzahl der Personen, die mindestens 1 der letzten 28 Tage Zugriff auf OneDrive oder SharePoint hatten.
       - **Zusammenarbeit in 4-10 Dateien:**
         - **Zähler:** Die Anzahl der Personen, die an 4-10-Dateien in den letzten 28 Tagen zusammenarbeiten
-        - **Nenner: die** Gesamtzahl der Personen, die Zugriff auf OneDrive oder SharePoint für mindestens 1 der letzten 28 Tage gehabt haben.
+        - **Nenner: die** Gesamtzahl der Personen, die mindestens 1 der letzten 28 Tage Zugriff auf OneDrive oder SharePoint hatten.
       - **Zusammenarbeit bei 11 oder mehr Dateien:**
         - **Zähler:** Die Anzahl der Personen, die in den letzten 28 Tagen an 11 oder mehr Dateien zusammenarbeiten
-        - **Nenner:** Die Gesamtzahl der Personen, die mindestens 1 der letzten 28 Tage auf OneDrive oder SharePoint zugegriffen haben.
+        - **Nenner:** Die Gesamtzahl der Personen, die mindestens 1 der letzten 28 Tage Zugriff auf OneDrive oder SharePoint hatten.
         
 4. **Link zu Ressourcen:** Wählen Sie diesen Link aus, um Hilfeinhalte anzuzeigen.
 
@@ -169,11 +169,11 @@ Außerdem stellen wir Ihnen Informationen zur Verfügung, mit denen Sie den Einb
 1. **Kopfzeile:** Zeigt den Prozentsatz der Geräte an, die von allen getestet wurden, die über eine schlechte Netzwerkverbindung mit OneDrive und SharePoint verfügen. 
 2. **Body:** Enthält Informationen dazu, warum die Leistung der Netzwerkverbindung für die Zusammenarbeit wichtig ist. 
 3. **Visualisierung:** zeigt einen Prozentsatz der Geräte mit unterschiedlichen Ebenen der Netzwerk Verbindungsleistung in Bezug auf OneDrive und SharePoint an:
-      - **80-100 (am besten)** : der dunkelgrüne (farbige) Teil des Balkens stellt den Prozentsatz der Geräte mit der besten Leistung dar.
-      - **60-80** : der grüne (farbige) Teil des Balkens stellt den Prozentsatz der Geräte mit der Netzwerk Leistungsbewertung zwischen 60-80 dar. 
-      - **40-60** : der orangefarbene (farbige) Teil des Balkens stellt den Prozentsatz der Geräte mit der Netzwerk Leistungsbewertung zwischen 40-60 dar. 
-      - **20-40** : der rote (farbige) Teil des Balkens stellt den Prozentsatz der Geräte mit der Netzwerk Leistungsbewertung zwischen 20-40 dar. 
-      - **0-20** : der dunkle rote (farbige) Teil des Balkens repräsentiert den Prozentsatz der Geräte mit der schlechtesten Netzwerk Leistungsbewertung zwischen 0-20. 
+      - **80-100 (am besten)**: der dunkelgrüne (farbige) Teil des Balkens stellt den Prozentsatz der Geräte mit der besten Leistung dar.
+      - **60-80**: der grüne (farbige) Teil des Balkens stellt den Prozentsatz der Geräte mit der Netzwerk Leistungsbewertung zwischen 60-80 dar. 
+      - **40-60**: der orangefarbene (farbige) Teil des Balkens stellt den Prozentsatz der Geräte mit der Netzwerk Leistungsbewertung zwischen 40-60 dar. 
+      - **20-40**: der rote (farbige) Teil des Balkens stellt den Prozentsatz der Geräte mit der Netzwerk Leistungsbewertung zwischen 20-40 dar. 
+      - **0-20**: der dunkle rote (farbige) Teil des Balkens repräsentiert den Prozentsatz der Geräte mit der schlechtesten Netzwerk Leistungsbewertung zwischen 0-20. 
 
 ### <a name="people-in-your-organization"></a>Personen in Ihrer Organisation
 
@@ -184,11 +184,11 @@ Die folgenden Spalten werden in der Tabelle auf Benutzerebene angezeigt:
 - **Username**  ist die e-Mail-Adresse des Benutzers.
 - **Anzeigename**  ist der vollständige Name des Benutzers.
 - **Datum der letzten Aktivität**  bezieht sich auf den Zeitpunkt, zu dem der Benutzer zuletzt eine Aktivität im Zusammenhang mit einem der Einblicke in die Zusammenarbeit mit Inhalten innerhalb der letzten 28 Tage ausgeführt hat.
-- **Abteilung:** Die Abteilung "Benutzer&#39;", wie Sie in Azure Active Directory (AAD) definiert ist
-- **Firma:** Das Unternehmen des Benutzers&#39;s gemäß Definition in Aad
-- **Land:** Das Land des Benutzers&#39;s, wie in Aad definiert
-- **Status:** Der Benutzer&#39;s-Status gemäß Definition in Aad
-- **Stadt:** Der Benutzer&#39;s Stadt gemäß Definition in Aad
+- **Abteilung:** Die Abteilung des Benutzers&#39;s gemäß der Definition in Azure Active Directory (AAD).
+- **Firma:** Der Benutzer&#39;Unternehmens, wie in Aad definiert.
+- **Land:** Der Benutzer&#39;Landes gemäß der Definition in Aad.
+- **Status:** Der Benutzer&#39;s-Status gemäß Definition in Aad.
+- **Stadt:** Der Benutzer&#39;s Stadt gemäß der Definition in Aad.
 - **OneDrive:** Boolescher Wert, der angibt, ob die Person Zugriff auf Tor OneDrive für mindestens 1 der letzten 28 Tage hatte.
 - **SharePoint:** Boolescher Wert, der angibt, ob die Person Zugriff auf SharePoint für mindestens 1 der letzten 28 Tage hatte.
 - **Zugriff auf Office-Dateien:** Boolescher Wert, der angibt, ob die Person in den letzten 28 Tagen über Microsoft Word, Excel, PowerPoint oder OneNote auf Dateien zugegriffen hat.

@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
-ms.openlocfilehash: 5ba17c414b6f6470d2e9af14d1f484b435cb4f51
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 3c8477ce16249cb4d21c736da60d619774175041
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846496"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123607"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Konfigurieren von automatisierten Ermittlungs-und Antwortfunktionen in Microsoft 365 Defender
 
@@ -91,13 +91,13 @@ Sicherheitseinstellungen in Office 365 helfen, e-Mails und Inhalte zu schützen.
 
 1. Wechseln Sie zum Microsoft 365 Security Center ( [https://security.microsoft.com](https://security.microsoft.com) ), und melden Sie sich an.
 
-2. Suchen Sie im Navigationsbereich nach **Incidents** , **Action Center** und **Hunting** , wie in der folgenden Abbildung dargestellt:
+2. Suchen Sie im Navigationsbereich nach **Incidents**, **Action Center** und **Hunting**, wie in der folgenden Abbildung dargestellt:
 
    :::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP auf":::
 
-   - Wenn **Incidents** , **Action Center** und **Hunting** angezeigt werden, ist Microsoft 365 Defender aktiviert. Fahren Sie mit dem nächsten Verfahren fort, [überprüfen oder ändern Sie die Automatisierungsstufe für Gerätegruppen](#review-or-change-the-automation-level-for-device-groups).
+   - Wenn **Incidents**, **Action Center** und **Hunting** angezeigt werden, ist Microsoft 365 Defender aktiviert. Lesen Sie das Verfahren, [überprüfen oder ändern Sie die Automatisierungsstufe für Gerätegruppen](#review-or-change-the-automation-level-for-device-groups) (in diesem Artikel).
 
-   - Wenn Sie *keine* **Vorfälle** , kein **Wartungscenter** oder keine **Suche** sehen, ist Microsoft 365 Defender möglicherweise nicht aktiviert. Fahren Sie in diesem Fall mit dem nächsten Schritt fort.
+   - Wenn Sie *keine* **Vorfälle**, kein **Wartungscenter** oder keine **Suche** sehen, ist Microsoft 365 Defender möglicherweise nicht aktiviert. Fahren Sie in diesem Fall mit dem nächsten Schritt fort ([Überprüfen Sie die ausstehenden und abgeschlossenen Aktionen](#review-pending-and-completed-actions-in-the-action-center)in diesem Artikel).
 
 3. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Microsoft 365 Defender** aus. Bestätigen Sie, dass Microsoft 365 Defender aktiviert ist. 
 

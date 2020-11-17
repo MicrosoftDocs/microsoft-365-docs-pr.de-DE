@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie bestimmte Benutzergruppen mit Benutzer Tags in Microsoft Defender für Office 365 Plan 2 identifiziert werden. Die Tag-Filterung steht in Warnungen, Berichten und Untersuchungen in Microsoft Defender für Office 365 zur Verfügung, um die getaggten Benutzer schnell zu identifizieren.
-ms.openlocfilehash: 9c83a323a3116b3da61a133c7fb449978ca13841
-ms.sourcegitcommit: 9dbc6a08177aaca112e84d30dbaa79a0a8e9dbf8
+ms.openlocfilehash: 14ebcebeb8081a2de341fd06facabd9f7d55b119
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48945318"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123619"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Benutzer Tags in Microsoft Defender für Office 365
 
@@ -29,8 +29,8 @@ ms.locfileid: "48945318"
 
 Benutzer Tags sind Bezeichner für bestimmte Benutzergruppen in [Microsoft Defender für Office 365](office-365-atp.md). Es gibt zwei Arten von Benutzer Tags:
 
-- **System-Tags** : derzeit ist [Priority Accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) der einzige Typ des System Tags.
-- **Benutzerdefinierte Tags** : Sie erstellen diese Benutzer Tags selbst.
+- **System-Tags**: derzeit ist [Priority Accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) der einzige Typ des System Tags.
+- **Benutzerdefinierte Tags**: Sie erstellen diese Benutzer Tags selbst.
 
 Wenn Ihre Organisation Defender für Office 365 Plan 2 (in Ihrem Abonnement oder als Add-on enthalten) verfügt, können Sie benutzerdefinierte Benutzer Tags zusätzlich zur Verwendung des Tags Priority Accounts erstellen.
 
@@ -40,6 +40,7 @@ Nachdem Sie System Tags oder benutzerdefinierte Tags auf Benutzer angewendet hab
 - [Threat Explorer und Echtzeiterkennung](threat-explorer.md)
 - [Threat Protection-Statusbericht](view-email-security-reports.md#threat-protection-status-report)
 - [Kampagnenansichten](campaigns.md)
+- Für Prioritäts Konten können Sie den [Bericht über e-Mail-Probleme für Priority-Konten](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) im Exchange Admin Center (EAC) verwenden.
 
 In diesem Artikel wird erklärt, wie Sie Benutzer Tags im Security & Compliance Center konfigurieren. Es gibt keine Cmdlets in Security & Compliance Center zum Verwalten von Benutzer Tags.
 
@@ -60,17 +61,14 @@ In diesem Artikel wird erklärt, wie Sie Benutzer Tags im Security & Compliance 
 2. Klicken Sie auf der Seite **Benutzer Tags** , die geöffnet wird, auf **Tag erstellen**.
 
 3. Der Assistent zum **Erstellen von Tags** wird in einem neuen Fly Out geöffnet. Konfigurieren Sie auf der Seite **Tag definieren** die folgenden Einstellungen:
-
-   - **Name** : Geben Sie einen eindeutigen, beschreibenden Namen für das Tag ein. Dies ist der Wert, den Sie sehen und verwenden.
-
-   - **Beschreibung** : Geben Sie eine optionale Beschreibung für das Tag ein.
+   - **Name**: Geben Sie einen eindeutigen, beschreibenden Namen für das Tag ein. Dies ist der Wert, den Sie sehen und verwenden.
+   - **Beschreibung**: Geben Sie eine optionale Beschreibung für das Tag ein.
 
    Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
 
 4. Führen Sie auf der Seite **Postfächer zuweisen** einen der folgenden Schritte aus:
 
    - Klicken Sie auf **Postfächer hinzufügen**. Führen Sie im angezeigten Fenster einen der folgenden Schritte aus, um einzelne Benutzer oder Gruppen hinzuzufügen:
-
      - Klicken Sie in das Feld, und führen Sie einen Bildlauf durch die Liste aus, um einen Benutzer oder eine Gruppe auszuwählen.
      - Klicken Sie in das Feld, und beginnen Sie mit der Eingabe, um die Liste zu filtern und einen Benutzer oder eine Gruppe auszuwählen.
      - Klicken Sie zum Hinzufügen weiterer Werte in einen leeren Bereich des Felds.
@@ -109,8 +107,8 @@ In diesem Artikel wird erklärt, wie Sie Benutzer Tags im Security & Compliance 
 
 ## <a name="use-the-security-center-to-remove-user-tags"></a>Entfernen von Benutzer Tags mithilfe des Sicherheitscenters
 
-**Hinweis** : Sie können das integrierte **Priority-Konto** -Tag nicht entfernen.
+**Hinweis**: Sie können das integrierte **Priority-Konto** -Tag nicht entfernen.
 
 1. Wechseln Sie im Sicherheits Center zu Benutzer Tags für die **Bedrohungs Verwaltung** \> **User tags**.
 
-2. Wählen Sie auf der Seite **Benutzer Tags** , die geöffnet wird, das Benutzertag aus, das Sie entfernen möchten, klicken Sie auf **Tag löschen** , und wählen Sie dann **Ja, entfernen** in der angezeigten Warnung aus.
+2. Wählen Sie auf der Seite **Benutzer Tags** , die geöffnet wird, das Benutzertag aus, das Sie entfernen möchten, klicken Sie auf **Tag löschen**, und wählen Sie dann **Ja, entfernen** in der angezeigten Warnung aus.

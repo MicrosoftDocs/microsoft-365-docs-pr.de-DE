@@ -7,14 +7,15 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: SKOS-Formatreferenz für SharePoint-Taxonomie
-ms.openlocfilehash: f81b618a7c302ce033c4e8ce2f7400e9616f2de0
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 90c20ddb440e216941a5ea06f1aa815cb80102a9
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321325"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087279"
 ---
 # <a name="skos-format-reference-for-sharepoint-taxonomy"></a>SKOS-Formatreferenz für SharePoint-Taxonomie
 

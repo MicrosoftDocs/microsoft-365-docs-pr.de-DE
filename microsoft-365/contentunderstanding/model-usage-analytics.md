@@ -7,14 +7,15 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: 'Informationen zum Anwenden einer Aufbewahrungsbezeichnung auf ein Dokumentverständnismodell '
-ms.openlocfilehash: 052c137a419c0185010fbd152e73615a4bb093af
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: b71f75006a856d4fd551bffe232cbe044f7726a5
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48367953"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087137"
 ---
 # <a name="document-understanding-model-usage-analytics"></a>Verwendungsanalysen von Dokumentverständnismodellen
 
@@ -44,7 +45,7 @@ Außerdem zeigt jedes Modell die **Vollständigkeitsrate** an, der Prozentsatz d
 
    ![Verarbeitete Dateien](../media/content-understanding/files-processed-over-time.png) </br>
 
-Das Datei-Balkendiagramm für ** Dateien, die im Verlauf der Zeit verarbeitet wurden**, zeigt nicht nur die Anzahl der Dateien an, die über einen Zeitraum für jedes Modell verarbeitet wurden, sondern auch die Dokumentbibliotheken, auf die das Modell angewendet wurde.
+Das Datei-Balkendiagramm für **Dateien, die im Verlauf der Zeit verarbeitet wurden**, zeigt nicht nur die Anzahl der Dateien an, die über einen Zeitraum für jedes Modell verarbeitet wurden, sondern auch die Dokumentbibliotheken, auf die das Modell angewendet wurde.
 
    ![Balkendiagramm](../media/content-understanding/bar-chart-models.png) </br>
 
