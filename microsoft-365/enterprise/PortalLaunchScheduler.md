@@ -17,18 +17,18 @@ search.appverid:
 - SPO160
 - MET150
 description: In diesem Artikel wird beschrieben, wie Sie Ihr Portal mit dem Start Planer des Portals starten können.
-ms.openlocfilehash: 6a191cf323e180fa77614eb09bae4185228a5029
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: a7a007fdd95638109830a8e3689232060f2b9d8b
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087667"
+ms.locfileid: "49123583"
 ---
 # <a name="launch-your-portal-using-the-portal-launch-scheduler"></a>Starten Ihres Portals mithilfe des Portal-Start Planungsmoduls
 
 Bei einem Portal handelt es sich um eine SharePoint-Website in Ihrem Intranet mit einer großen Anzahl von Websitebenutzern, die Inhalte auf der Website nutzen. Das Starten Ihres Portals in Wellen ist ein wichtiger Bestandteil, um sicherzustellen, dass Benutzer über eine reibungslose und leistungsfähige Erfahrung beim Zugriff auf ein neues SharePoint Online Portal verfügen. 
 
-Das Starten in Waves ist eine wichtige Möglichkeit zum Rollout Ihres Portals, wie im Abschnitt [Planen des Rollout Plans für die Portal Einführung in SharePoint Online](https://docs.microsoft.com/en-us/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide)beschrieben. Der Start Planer des Portals soll Ihnen dabei helfen, einen Wave/Phasen-Roll-Out-Ansatz zu verfolgen, indem Sie die Umleitungen für das neue Portal verwalten. Während jeder Wellen Phase können Sie Benutzer Feedback erfassen und die Leistung während der einzelnen Bereitstellungsphasen überwachen. Dies hat den Vorteil, dass Sie das Portal langsam einführen und Ihnen die Möglichkeit geben, Probleme zu unterbrechen und zu beheben, bevor Sie mit der nächsten Welle fortfahren, und letztendlich eine positive Benutzererfahrung sicherzustellen. 
+Das Starten in Waves ist eine wichtige Möglichkeit zum Rollout Ihres Portals, wie im Abschnitt [Planen des Rollout Plans für die Portal Einführung in SharePoint Online](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide)beschrieben. Der Start Planer des Portals soll Ihnen dabei helfen, einen Wave/Phasen-Roll-Out-Ansatz zu verfolgen, indem Sie die Umleitungen für das neue Portal verwalten. Während jeder Wellen Phase können Sie Benutzer Feedback erfassen und die Leistung während der einzelnen Bereitstellungsphasen überwachen. Dies hat den Vorteil, dass Sie das Portal langsam einführen und Ihnen die Möglichkeit geben, Probleme zu unterbrechen und zu beheben, bevor Sie mit der nächsten Welle fortfahren, und letztendlich eine positive Benutzererfahrung sicherzustellen. 
 
 Es gibt zwei Arten von Umleitungen: 
 - Bidirektional: Einführung eines neuen modernen SharePoint Online-Portals zum Ersetzen eines vorhandenen SharePoint-Klassikers oder modernen Portals 
