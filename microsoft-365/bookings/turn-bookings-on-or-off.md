@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: Erfahren Sie, wie Sie Zugriff auf Microsoft-Buchungen in Microsoft 365 erhalten.
-ms.openlocfilehash: 815aa3a859db15364aa18d3550001a28d085b711
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 7e4eaa1e474f3f49807b842097c855193f028af0
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419640"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126591"
 ---
 # <a name="turn-microsoft-bookings-on-or-off"></a>Aktivieren oder Deaktivieren von Microsoft-Buchungen
 
@@ -27,18 +27,18 @@ Buchungen können für die gesamte Organisation oder für bestimmte Benutzer akt
 
 1. Melden Sie sich beim Microsoft 365 Admin Center als globaler Administrator an.
 
-2. Wechseln Sie im Admin Center zu **Einstellungen** ,   \> **Settings** und wählen Sie **Buchungen**aus.
+2. Wechseln Sie im Admin Center zu  **Einstellungen**   \> **org-Einstellungen** , und wählen Sie **Buchungen** aus.
 
 3. Aktivieren oder deaktivieren Sie das Kontrollkästchen **Ihre Organisation kann Buchungen verwenden** , um Buchungen für Ihre Organisation zu aktivieren oder zu deaktivieren.
 
    > [!NOTE]
    > Durch das Deaktivieren von Buchungen wird der gesamte Zugriff auf den Dienst deaktiviert, einschließlich der Erstellung und Verwaltung von Buchungsseiten.
 
-4. Wählen Sie **Save Changes**aus.
+4. Wählen Sie **Save Changes** aus.
 
 ## <a name="turn-bookings-on-or-off-for-your-organization-using-powershell"></a>Aktivieren oder Deaktivieren von Reservierungen für Ihre Organisation mithilfe von PowerShell
 
-Zum Aktivieren oder Deaktivieren von Buchungen für Ihre Organisation mit dem PowerShell-Cmdlet " [OrganizationConfig" stellen](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig)Sie [eine Verbindung mit Exchange Online PowerShell her]() , und führen Sie den folgenden Befehl aus:
+Zum Aktivieren oder Deaktivieren von Buchungen für Ihre Organisation mit dem PowerShell-Cmdlet " [OrganizationConfig" stellen](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig)Sie [eine Verbindung mit Exchange Online PowerShell her](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) , und führen Sie den folgenden Befehl aus:
 
 ```PowerShell
    Set-OrganizationConfig -BookingsEnabled $false
@@ -48,15 +48,15 @@ Zum Aktivieren oder Deaktivieren von Buchungen für Ihre Organisation mit dem Po
 
 Sie können Buchungen für einzelne Benutzer deaktivieren.
 
-1. Wechseln Sie zum Microsoft 365 Admin Center, und wählen Sie dann **Benutzer** \> **aktive Benutzer**aus.
+1. Wechseln Sie zum Microsoft 365 Admin Center, und wählen Sie dann **Benutzer** \> **aktive Benutzer** aus.
 
-1. Wählen Sie den gewünschten Benutzer aus, und wählen Sie dann **Lizenzen und apps**aus.
+1. Wählen Sie den gewünschten Benutzer aus, und wählen Sie dann **Lizenzen und apps** aus.
 
 1. Erweitern Sie **apps** , und deaktivieren Sie das Kontrollkästchen für Microsoft-Buchungen.
 
 ## <a name="require-staff-approvals-before-sharing-freebusy-information"></a>Personal Genehmigungen erfordern, bevor Sie Frei/Gebucht-Informationen freigeben
 
-Administratoren können von Mitarbeitern in Ihrer Organisation verlangen, dass Sie sich anmelden, bevor Ihre Verfügbarkeitsinformationen Überbuchungen freigegeben werden und bevor Sie über eine Buchungsseite gebucht werden können. Diese Einstellung steht im Microsoft 365 Admin Center unter Einstellungen für **Settings** \> **Settings** \> **Reservierungen**zur Verfügung.
+Administratoren können von Mitarbeitern in Ihrer Organisation verlangen, dass Sie sich anmelden, bevor Ihre Verfügbarkeitsinformationen Überbuchungen freigegeben werden und bevor Sie über eine Buchungsseite gebucht werden können. Diese Einstellung steht im Microsoft 365 Admin Center unter Einstellungen für **Settings** \> **Settings** \> **Reservierungen** zur Verfügung.
 
 Wenn diese Einstellung aktiviert ist, werden Mitarbeiter, die in Buchungs Kalendern als Mitarbeiter hinzugefügt wurden, in der von Ihnen empfangenen e-Mail-Benachrichtigung einen Link genehmigen/ablehnen finden.
 
@@ -64,7 +64,7 @@ Dieses Feature wird schrittweise weltweit auf Microsoft 365-Kunden verteilt. Wen
 
 ## <a name="block-social-sharing-options"></a>Blockieren von Optionen für die soziale Freigabe
 
-Administratoren können steuern, wie Buchungsseiten in sozialen Netzwerken freigegeben werden. Diese Einstellung steht im Microsoft 365 Admin Center unter Einstellungen für **Settings** \> **Settings** \> **Reservierungen**zur Verfügung.
+Administratoren können steuern, wie Buchungsseiten in sozialen Netzwerken freigegeben werden. Diese Einstellung steht im Microsoft 365 Admin Center unter Einstellungen für **Settings** \> **Settings** \> **Reservierungen** zur Verfügung.
 
 Dieses Feature wird schrittweise weltweit auf Microsoft 365-Kunden verteilt. Wenn diese Option im Microsoft 365 Admin Center nicht angezeigt wird, schauen Sie bald zurück.
 

@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 7337dd28f7940256d1753cd4c0b6309406fab2d1
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: 5e2340c7c0bf00165bb43740d3d095b5b0402fc0
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48305270"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126625"
 ---
 # <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>Eindruck beim ersten Ausführen mit Autopilot und der Registrierungsstatusseite
 
@@ -34,7 +34,7 @@ Nachdem Ihre Geräte beim Dienst registriert wurden, können Sie ESP für Ihre v
 Microsoft Managed Desktop verwendet diese Einstellungen im Autopilot-Profil, das für die Geräte ihrer Benutzer verwendet wird:
 
 
-|Einstellung  |Wert  |
+|Setting  |Wert  |
 |---------|---------|
 |Bereitstellungsmodus |  Benutzer gesteuert       |
 |Beitreten zu Azure AD als     |  Azure AD verbunden       |
@@ -56,7 +56,7 @@ Microsoft Managed Desktop verwendet diese Einstellungen im Autopilot-Profil, das
 Microsoft Managed Desktop verwendet diese Einstellungen für die Anmelde Status-Seiten Erfahrung:
 
 
-|Einstellung  |Wert  |
+|Setting  |Wert  |
 |---------|---------|
 |Anzeigen des Status von App-und Profilkonfiguration     | Ja        |
 |Fehlermeldung anzeigen, wenn die Installation länger als die angegebene Anzahl von Minuten dauert     |  60       |
@@ -95,7 +95,7 @@ Wenn das von Microsoft Managed Desktop verwendete Setup nicht genau Ihren Anford
 
 ### <a name="autopilot-settings-change"></a>Änderung von Autopilot-Einstellungen
 
-Möglicherweise möchten Sie eine andere Gerätenamen Vorlage anfordern. Sie können den Bereitstellungsmodus jedoch nicht ändern, mit Azure as, Datenschutzeinstellungen oder Benutzerkontotyp beitreten.
+Möglicherweise möchten Sie eine andere Gerätenamen Vorlage anfordern. Sie können den Bereitstellungsmodus jedoch nicht ändern, mit Azure AD as, Datenschutzeinstellungen oder Benutzerkontotyp verknüpfen.
 
 ### <a name="enrollment-status-page-settings-change"></a>Änderung der Registrierungs Status-Seiteneinstellungen
 

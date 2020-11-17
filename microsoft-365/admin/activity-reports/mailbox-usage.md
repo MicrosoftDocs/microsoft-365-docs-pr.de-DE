@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
 description: Erfahren Sie, wie Sie den Bericht über die Postfachnutzung über die Aktivitäten der Benutzer mit einem Benutzerpostfach informieren.
-ms.openlocfilehash: 0b0c57bda813e1600866513df86b7c973dcdffdc
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 8d942f507c1e3102f909fb33eb16e00f7ebf05ea
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949132"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126567"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>Microsoft 365-Berichte im Admin Center-Postfachnutzung
 
@@ -37,8 +37,8 @@ Der **Bericht zur Postfachnutzung** enthält Informationen zu Benutzern mit eine
 
 1. Wechseln Sie im Admin Center zur Seite **Berichte** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Verwendung</a>.
 
-    
-2. Wählen Sie in der Dropdownliste **Bericht auswählen** die Option **Exchange** - \> **Postfachnutzung**aus.
+2. Wählen Sie **mehr** unter **aktive Benutzer anzeigen-Microsoft 365-Dienste** aus. 
+3. Wählen Sie in der Dropdownliste **aktive Benutzer** die Option **Exchange** - \> **Postfachnutzung** aus.
   
 ## <a name="interpret-the-mailbox-usage-report"></a>Interpretieren des Berichts zur Postfachnutzung
 
@@ -57,4 +57,3 @@ Sie können die **Postfachnutzung** in Ihrer Organisation anzeigen, indem Sie si
 |9.  <br/> |Sie können die Berichtsdaten auch im CSV-Format in eine Excel-Datei exportieren, indem Sie den Link **Exportieren** auswählen.  <br/> |
 |||
    
-

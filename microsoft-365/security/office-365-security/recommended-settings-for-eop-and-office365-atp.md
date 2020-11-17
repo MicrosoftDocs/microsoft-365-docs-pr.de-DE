@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Was sind bewährte Methoden für Exchange Online Schutz (EoP) und Defender für Office 365 Sicherheitseinstellungen? Was sind die aktuellen Empfehlungen für Standardschutz? Was sollte verwendet werden, wenn Sie strenger sein möchten? Und welche Extras erhalten Sie, wenn Sie auch Defender für Office 365 verwenden?
-ms.openlocfilehash: bc91ba58c9dc14954f638853ad24fcf7a26684e3
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: bcad3609f5f73ac538ae9d1a0964ecc8e176003e
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123471"
+ms.locfileid: "49126637"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Empfohlene Einstellungen für EoP und Microsoft Defender für Office 365 Sicherheit
 
@@ -189,11 +189,11 @@ Beachten Sie, dass es sich dabei um dieselben Einstellungen handelt, die in den 
 
 ****
 
-|Name des Sicherheitsfeatures|Standard|Strict|Kommentar|
-|---|---|---|---|
-|**Aktivieren des Schutzes gegen Spoofing** <p> _EnableAntispoofEnforcement_|Ein <p> `$true`|Ein <p> `$true`||
-|**Nicht authentifizierten Absender aktivieren** <p> _EnableUnauthenticatedSender_|Ein <p> `$true`|Ein <p> `$true`|Fügt dem Foto des Absenders in Outlook ein Fragezeichen (?) für nicht identifizierte gefälschte Absender hinzu. Weitere Informationen finden Sie unter [Spoof Settings in Anti-Phishing Policies](set-up-anti-phishing-policies.md).|
-|**Wenn e-Mails von Benutzern gesendet werden, die Ihre Domäne nicht spoofen dürfen** <p> _AuthenticationFailAction_|**Nachricht in die Junk-e-Mail-Ordner der Empfänger verlagern** <p> `MoveToJmf`|**Nachricht isolieren** <p> `Quarantine`|Diese Einstellung gilt für blockierte Absender in [Spoof Intelligence](learn-about-spoof-intelligence.md).|
+|Name des Sicherheitsfeatures|Standard|Standard|Strict|Kommentar|
+|---|---|---|---|---|
+|**Aktivieren des Schutzes gegen Spoofing** <p> _EnableAntispoofEnforcement_|Ein <p> `$true`|Ein <p> `$true`|Ein <p> `$true`||
+|**Nicht authentifizierten Absender aktivieren** <p> _EnableUnauthenticatedSender_|Ein <p> `$true`|Ein <p> `$true`|Ein <p> `$true`|Fügt dem Foto des Absenders in Outlook ein Fragezeichen (?) für nicht identifizierte gefälschte Absender hinzu. Weitere Informationen finden Sie unter [Spoof Settings in Anti-Phishing Policies](set-up-anti-phishing-policies.md).|
+|**Wenn e-Mails von Benutzern gesendet werden, die Ihre Domäne nicht spoofen dürfen** <p> _AuthenticationFailAction_|**Nachricht in die Junk-e-Mail-Ordner der Empfänger verlagern** <p> `MoveToJmf`|**Nachricht in die Junk-e-Mail-Ordner der Empfänger verlagern** <p> `MoveToJmf`|**Nachricht isolieren** <p> `Quarantine`|Diese Einstellung gilt für blockierte Absender in [Spoof Intelligence](learn-about-spoof-intelligence.md).|
 |
 
 #### <a name="advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Erweiterte Einstellungen in Anti-Phishing-Richtlinien in Microsoft Defender für Office 365

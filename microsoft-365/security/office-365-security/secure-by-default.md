@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über die Einstellung "standardmäßig sicher" in Exchange Online Protection (EoP).
-ms.openlocfilehash: 50d1c64e4d8343fdb9b25bfcbeee5d988ddc6b8a
-ms.sourcegitcommit: 9dbc6a08177aaca112e84d30dbaa79a0a8e9dbf8
+ms.openlocfilehash: d4345134e98ae204f73dfb51a0abf5136590a24c
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48945330"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126661"
 ---
 # <a name="secure-by-default-in-office-365"></a>Standardmäßig sichern in Office 365
 
@@ -53,12 +53,9 @@ Secure standardmäßig ist hier keine Einstellung, die aktiviert oder deaktivier
 
 ## <a name="exceptions"></a>Ausnahmen
 
-Die einzigen Außerkraftsetzungen, die alle Filter umgehen werden, umfassen Folgendes:
+Die einzige Außerkraftsetzung, die eine hohe vertrauenswürdige Phishing-Nachricht zur Umgehung der Filterung zulässt, ist Exchange-Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet). Informationen zum Verwenden von Nachrichtenfluss Regeln zum Umgehen der Filterung finden Sie unter [Verwenden von Nachrichtenfluss Regeln zum Festlegen der SCL-Bewertung in Nachrichten](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
 
-- Exchange-Transport Regeln (ETR)/Mail-Flussregeln. Verwenden Sie Nachrichtenfluss Regeln, um die SCL-Bewertung (Spam Confidence Level) in Nachrichten in EoP festzulegen.
-- Mandanten-Zulassungs-und Sperrliste: Verwalten von URLs und Dateien in der Liste Mandanten-Allow/Block.
-
-Diese Arten von Außerkraftsetzungen sind für Folgendes nützlich:
+Außerkraftsetzungen sollten nur für Folgendes verwendet werden:
 
 - Phishing-Simulationen: Simulierte Angriffe können Sie bei der Identifizierung von anfälligen Benutzern unterstützen, bevor ein echter Angriff Ihre Organisation beeinträchtigt.
 - Security/Cops Mailboxes: dedizierte Postfächer, die von Sicherheitsteams verwendet werden, um nicht gefilterte Nachrichten (sowohl gut als auch schlecht) abzurufen. Teams können dann überprüfen, ob Sie schädlichen Inhalt enthalten.

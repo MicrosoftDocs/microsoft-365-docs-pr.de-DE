@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: Aktualisieren Sie Ihre Administrator-Telefonnummer und e-Mail-Adresse im Admin Center. Sie benötigen diese Informationen, wenn Sie Ihr eigenes Administratorkennwort zurücksetzen möchten.
-ms.openlocfilehash: 7387ffe693abf0e52d647e35827a9f55bd1d70df
-ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
+ms.openlocfilehash: 06dc277fc408ab234dd51d9c8bec5f20226e3215
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456327"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126611"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>Aktualisieren Ihrer Administrator-Telefonnummer und e-Mail-Adresse
 
@@ -39,15 +39,15 @@ In diesem Artikel erfahren Sie, wie Sie als Administrator Ihre geschäftliche Te
   
 Wenn Sie wissen möchten, wie Sie die Profilinformationen Ihres Unternehmens, z. B. Unternehmensname und -adresse, Telefonnummer des Unternehmens und technische Kontaktinformationen, ändern können, lesen Sie [Ändern der Adress- und anderen Profilinformationen Ihrer Organisation](change-address-contact-and-more.md).
   
-## <a name="to-update-your-name-phone-number-and-email-address"></a>So aktualisieren Sie Ihren Namen, Ihre Telefonnummer und Ihre E-Mail-Adresse
+## <a name="to-update-your-phone-number-and-email-address"></a>So aktualisieren Sie Ihre Telefonnummer und e-Mail-Adresse
 
-Verwenden Sie die Seite **Einstellungen und Datenschutz** , um Ihren Namen, Ihre Mobiltelefonnummer und eine Alternative e-Mail-Adresse zu ändern. Die Alternative e-Mail-Adresse wird für wichtige Benachrichtigungen verwendet, beispielsweise für das Zurücksetzen des Administratorkennworts (nicht des Administratorkennworts Ihres Computers). 
+Verwenden Sie die Seite **Sicherheitsinformationen** , um Ihre Mobiltelefonnummer und Alternative e-Mail-Adresse zu ändern. Die Alternative e-Mail-Adresse wird für wichtige Benachrichtigungen verwendet, beispielsweise für das Zurücksetzen des Administratorkennworts (nicht des Administratorkennworts Ihres Computers). 
   
 1. Wechseln Sie zum Microsoft 365 Admin Center.
 
-2. Wählen Sie in der Kopfzeile Ihr Profilsymbol \> **Meine Konto** \> **Einstellungen und Datenschutz**aus.
+2. Wählen Sie in der Kopfzeile Ihr Profilsymbol \> **Meine Konto** - \> **Sicherheitsinformationen** aus.
 
-3. Wählen Sie auf der Registerkarte **Datenschutz** unter **Kontakteinstellungen**die Option **Kontakteinstellungen nur für Administratoren**aus. Aktualisieren Sie Ihr Handy, Telefon und Alternative e-Mail-Adresse. Stellen Sie sicher, dass Sie etwas anderes als Ihre Microsoft-e-Mail-Adresse für Ihre alternative e-Mail-Adresse verwenden.
+3. Wählen Sie auf der Registerkarte **Sicherheitsinformationen** die Option alternatives Telefon oder e-Mail **Hinzufügen** aus, \> **Phone** \> **Alternate Phone** um Details hinzuzufügen. **Email** Wählen Sie **ändern** aus, um die Details für Mobiltelefone, Telefonnummern und Alternative e-Mail-Adressen zu aktualisieren. Stellen Sie sicher, dass Sie etwas anderes als Ihre Microsoft-e-Mail-Adresse für Ihre alternative e-Mail-Adresse verwenden.
 
     > [!IMPORTANT]
     > Die Alternative e-Mail-Adresse und die Mobiltelefonnummer sind erforderlich, um Ihr Administratorkennwort zurücksetzen zu können (nicht Ihr Administratorkennwort für Ihr Computer).

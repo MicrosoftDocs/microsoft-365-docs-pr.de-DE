@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
 description: Verwenden Sie das Microsoft 365 Admin Center oder Windows PowerShell, um Buchungen Kalender zu löschen.
-ms.openlocfilehash: 3a1cb1c54f60247ab72056b3e39b56b0981228b7
-ms.sourcegitcommit: eb3c30d53a5434d8bad7c8f48a5612f3e2675945
+ms.openlocfilehash: 2fcb92cee18d709ef0e1fa3faa0246e622a9f9db
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422442"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126649"
 ---
 # <a name="delete-a-booking-calendar-in-bookings"></a>Löschen eines Buchungs Kalenders in Buchungen
 
@@ -46,7 +46,7 @@ Im Buchungskalender werden alle relevanten Informationen über diesen Buchungska
 
 ## <a name="delete-a-booking-calendar-using-exchange-online-powershell"></a>Löschen eines Buchungs Kalenders mit Exchange Online PowerShell
 
-Voraussetzungen und Anleitungen für das Herstellen einer Verbindung mit Exchange Online PowerShell finden Sie unter [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) .
+Voraussetzungen und Anleitungen für das Herstellen einer Verbindung mit Exchange Online PowerShell finden Sie unter [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps) .
 
 Um diese Schritte ausführen zu können, müssen Sie ein aktives Microsoft PowerShell-Befehlsfenster verwenden, das Sie ausgeführt haben, indem Sie die Option "als Administrator ausführen" auswählen.
 
