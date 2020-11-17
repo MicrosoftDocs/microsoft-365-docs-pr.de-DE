@@ -467,10 +467,10 @@
               href: 'https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade'
             - name: Project Server 2010
               href: project-server-2010-end-of-support.md
-- name: Sicherheit
-  href: 'https://docs.microsoft.com/microsoft-365/security/'
 - name: Compliance
-  href: 'https://docs.microsoft.com/microsoft-365/compliance/'
+  href: ../compliance/index.yml
+- name: Sicherheit
+  href: ../security/index.yml
 - name: Clouddienste
   items:
     - name: Roadmap
@@ -564,7 +564,7 @@
           href: cmdlet-references-for-microsoft-365-services.md
         - name: Community-Ressourcen zu PowerShell
           href: microsoft-365-powershell-community-resources.md
-    - name: 'Verwalten von Benutzerkonten, Lizenzen und Gruppen mit PowerShell'
+    - name: 'Verwalten von Benutzerkonten, Kennwörtern, Lizenzen und Gruppen mit PowerShell'
       href: manage-user-accounts-and-licenses-with-microsoft-365-powershell.md
       items:
         - name: Benutzerkonten
@@ -581,6 +581,8 @@
               href: delete-and-restore-user-accounts-with-microsoft-365-powershell.md
             - name: Blockieren
               href: block-user-accounts-with-microsoft-365-powershell.md
+            - name: Kennwörter
+              href: manage-passwords-with-microsoft-365-powershell.md
         - name: Lizenzen und Dienste
           items:
             - name: Lizenzen und Dienste anzeigen
@@ -602,6 +604,8 @@
                   href: disable-access-to-services-while-assigning-user-licenses.md
         - name: Gruppen
           items:
+            - name: Verwalten von Sicherheitsgruppen
+              href: manage-security-groups-with-microsoft-365-powershell.md
             - name: Verwalten von Sicherheitsgruppenmitgliedschaften
               href: maintain-group-membership-with-microsoft-365-powershell.md
             - name: Verwalten von Microsoft 365-Gruppen
@@ -723,10 +727,6 @@
       href: contoso-info-protect.md
     - name: Sicherheitszusammenfassung
       href: contoso-security-summary.md
-- name: Microsoft 365-Compliance
-  href: ../compliance/index.yml
-- name: Microsoft 365 Security Center
-  href: ../security/index.yml
 - name: Microsoft 365-Architektur und -Lösungen
   href: ../solutions/index.yml
 - name: Enterprise Business Continuity-Verwaltung (EBCM) mit Clouddiensten

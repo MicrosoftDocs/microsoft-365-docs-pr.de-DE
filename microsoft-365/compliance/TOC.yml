@@ -914,6 +914,8 @@
           href: compliance-manager-improvement-actions.md
         - name: Berechnung des Konformitätswerts
           href: compliance-score-calculation.md
+        - name: Tool für die Compliance-Konfigurationsanalyse
+          href: compliance-manager-mcca.md
         - name: Häufig gestellte Fragen (FAQ)
           href: compliance-manager-faq.md
         - name: Compliance-Manager (klassisch)
