@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Erfahren Sie, wie Sie mithilfe von Kompatibilitäts Grenzen logische Grenzen erstellen, die die Benutzerinhalts Speicherorte steuern, die ein eDiscovery-Manager in Microsoft 365 durchsuchen kann.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c57689cc6e626b62ae976bac9f9771205431bc8a
-ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
+ms.openlocfilehash: afc01ea88e9a2de6550741dcaac105ef764a752f
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48370401"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131130"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Einrichten von Compliance-Grenzen für eDiscovery-Untersuchungen
 
@@ -145,7 +145,7 @@ Im folgenden finden Sie eine Beschreibung der einzelnen Parameter im Befehl:
     - `Site_Path`: Gibt die SharePoint-Websites an, die die im Parameter definierten Rollengruppen  `Users` Durchsuchen können. Die  *SharePointURL*  gibt die Websites in der Agentur an, die Mitglieder der Rollengruppe durchsuchen können. Zum Beispiel: `"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`. Beachten Sie `Site` , dass die und `Site_Path` -Filter durch einen **-oder-** Operator verbunden sind.
 
      > [!NOTE]
-     > Die Syntax für den `Filters` Parameter enthält eine *Filterliste*. Eine Filterliste ist ein Filter, der einen Post Fach Filter und einen Website Filter enthält, der durch ein Komma getrennt ist. Beachten Sie im vorherigen Beispiel, dass ein Komma **Mailbox_ComplianceAttribute** und **Site_ComplianceAttribute**trennt: `-Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_ComplianceAttribute  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'"` . Wenn dieser Filter während der Ausführung einer Inhaltssuche verarbeitet wird, werden zwei Such Berechtigungsfilter aus der Liste Filter erstellt: ein Post Fach Filter und ein Website Filter. Eine Alternative zur Verwendung einer Filterliste besteht darin, zwei separate Such Berechtigungsfilter für jede Agentur zu erstellen: einen Such Berechtigungsfilter für das Postfachattribut und einen Filter für die Website Attribute. In beiden Fällen sind die Ergebnisse identisch. Die Verwendung einer Filterliste oder das Erstellen separater Such Berechtigungsfilter ist eine Frage der Präferenz.
+     > Die Syntax für den `Filters` Parameter enthält eine *Filterliste*. Eine Filterliste ist ein Filter, der einen Post Fach Filter und einen Website Filter enthält, der durch ein Komma getrennt ist. Beachten Sie im vorherigen Beispiel, dass ein Komma **Mailbox_ComplianceAttribute** und **Site_ComplianceAttribute** trennt: `-Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_ComplianceAttribute  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'"` . Wenn dieser Filter während der Ausführung einer Inhaltssuche verarbeitet wird, werden zwei Such Berechtigungsfilter aus der Liste Filter erstellt: ein Post Fach Filter und ein Website Filter. Eine Alternative zur Verwendung einer Filterliste besteht darin, zwei separate Such Berechtigungsfilter für jede Agentur zu erstellen: einen Such Berechtigungsfilter für das Postfachattribut und einen Filter für die Website Attribute. In beiden Fällen sind die Ergebnisse identisch. Die Verwendung einer Filterliste oder das Erstellen separater Such Berechtigungsfilter ist eine Frage der Präferenz.
 
 - `Action`: Gibt die Art der Konformitäts Suchaktion an, auf die der Filter angewendet wird. Beispielsweise  `-Action Search` würde der Filter nur angewendet, wenn Mitglieder der Rollengruppe, die im Parameter definiert sind, `Users` eine Inhaltssuche ausführen. In diesem Fall würde der Filter beim Exportieren von Suchergebnissen nicht angewendet. Verwenden Sie für Kompatibilitäts Grenzen  `-Action All` den Filter, damit dieser auf alle Suchaktionen angewendet wird. 
 
@@ -179,7 +179,7 @@ So erstellen Sie eine Anfrage und weisen Mitglieder zu:
 
 2. Klicken Sie in der Liste der eDiscovery-Fälle auf den Namen des von Ihnen erstellten Falls.
 
-3. Klicken Sie auf der Seite **diesen Fall Flyout verwalten** unter **Rollengruppen verwalten**auf ![ Symbol ](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **hinzu**fügen.
+3. Klicken Sie auf der Seite **diesen Fall Flyout verwalten** unter **Rollengruppen verwalten** auf ![ Symbol ](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **hinzu** fügen.
 
     ![Hinzufügen einer Rollengruppe als Mitglied eines eDiscovery-Falls](../media/f8b4b557-01b9-4388-85be-b5b5ab7c5629.png)
   
@@ -219,6 +219,8 @@ Mit Such Berechtigungs filtern können Sie auch steuern, wohin Inhalte für den 
     |JPN  <br/> |Asiatisch-pazifischer Raum  <br/> |
     |IND  <br/> |Asiatisch-pazifischer Raum  <br/> |
     |Lam  <br/> |Uns  <br/> |
+    |Noch  <br/> |Europa |
+    |BH  <br/> |Nordamerikanische Rechenzentren |
     |||
 
    Wenn Sie den **Region** -Parameter nicht für einen Such Berechtigungsfilter angeben, wird die primäre SharePoint-Region der Organisation durchsucht. Suchergebnisse werden in das nächstgelegene Datencenter exportiert.
@@ -300,7 +302,7 @@ Beachten Sie beim Verwalten von eDiscovery-Fällen und Untersuchungen zur Verwen
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
-**Wer kann Such Berechtigungsfilter erstellen und verwalten (mithilfe von New-ComplianceSecurityFilter-und ComplianceSecurityFilter-Cmdlets)?**
+**Wer kann Such Berechtigungsfilter erstellen und verwalten (mithilfe von New-ComplianceSecurityFilter-und Set-ComplianceSecurityFilter-Cmdlets)?**
   
 Zum Erstellen, anzeigen und Ändern von Such Berechtigungs filtern müssen Sie Mitglied der Rollengruppe "Organisationsverwaltung" im Security & Compliance Center sein.
   
@@ -310,7 +312,7 @@ Der eDiscovery-Manager kann der Suchabfrage Parameter hinzufügen, die die Suche
   
 **Was geschieht, wenn der Wert des Attributs, das als Kompatibilitätsattribut in einem Such Berechtigungsfilter verwendet wird, geändert wird?**
   
-Es dauert bis zu drei Tage, bis ein Such Berechtigungsfilter zum Erzwingen der Konformitäts Grenze verwendet wird, wenn der Wert des im Filter verwendeten Attributs geändert wird. Beispielsweise wird im Contoso-Szenario angenommen, dass ein Benutzer in der Fourth Coffee-Agentur an die Weingut-Agentur von Winery übergeben wird. Daher wird der Wert des **Department** -Attributs für das User-Objekt von *fourthcoffee* in *cohowinery*geändert. In dieser Situation erhalten vierter Kaffee eDiscovery und Investoren Suchergebnisse für diesen Benutzer für drei Tage nach dem Ändern des Attributs. In ähnlicher Weise dauert es bis zu drei Tage, bis die Weingut eDiscovery-Manager und Ermittler Suchergebnisse für den Benutzer erhalten.
+Es dauert bis zu drei Tage, bis ein Such Berechtigungsfilter zum Erzwingen der Konformitäts Grenze verwendet wird, wenn der Wert des im Filter verwendeten Attributs geändert wird. Beispielsweise wird im Contoso-Szenario angenommen, dass ein Benutzer in der Fourth Coffee-Agentur an die Weingut-Agentur von Winery übergeben wird. Daher wird der Wert des **Department** -Attributs für das User-Objekt von *fourthcoffee* in *cohowinery* geändert. In dieser Situation erhalten vierter Kaffee eDiscovery und Investoren Suchergebnisse für diesen Benutzer für drei Tage nach dem Ändern des Attributs. In ähnlicher Weise dauert es bis zu drei Tage, bis die Weingut eDiscovery-Manager und Ermittler Suchergebnisse für den Benutzer erhalten.
   
 **Kann ein eDiscovery-Manager Inhalte aus zwei separaten Kompatibilitäts Grenzen anzeigen?**
   

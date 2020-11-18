@@ -20,12 +20,12 @@ ms.topic: conceptual
 ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: e0801fb26b0bc7c4d37ab9455d9fcd2630f0fe51
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 5aa1d5fe14f6213931e089c2f97fcf06c96397b3
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842844"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131148"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Neuerungen in Microsoft Defender für Office 365
 
@@ -40,6 +40,10 @@ In diesem Artikel werden die neuen Features in der neuesten Version von Microsof
 
 > [!TIP]
 > Sie haben noch keinen Microsoft Defender für Office 365? [Wenden Sie sich an den Vertrieb, um eine Testversion zu starten](https://go.microsoft.com/fwlink/p/?LinkId=518644).
+
+## <a name="november-2020"></a>November 2020 
+
+- Aktualisierte Export Grenzwerte in Review > Action Center > Behebung von e-Mail-Übermittlung und Aktionsprotokoll (Defender for Office 365 Plan 2)
 
 ## <a name="septemberoctober-2020"></a>September/Oktober 2020 
 
@@ -75,11 +79,11 @@ In diesem Artikel werden die neuen Features in der neuesten Version von Microsof
 
 - [URL exportieren klicken Sie auf Daten für Offlineanalyse](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Microsoft Defender für Office 365 Plan 1 oder Plan 2)
 
-- [Verwenden von Kampagnen Ansichten in Microsoft Defender für Office 365 ( **Vorschau** )](campaigns.md) (Microsoft Defender für Office 365 Plan 2)
+- [Verwenden von Kampagnen Ansichten in Microsoft Defender für Office 365 (**Vorschau**)](campaigns.md) (Microsoft Defender für Office 365 Plan 2)
 
 ## <a name="november-2019"></a>November 2019
 
-- [Sehen Sie sich neue kompromittierte Benutzererkennung und Antwortfunktionen](address-compromised-users-quickly.md) ( **Preview** ) an (Microsoft Defender für Office 365 Plan 2)
+- [Sehen Sie sich neue kompromittierte Benutzererkennung und Antwortfunktionen](address-compromised-users-quickly.md) (**Preview**) an (Microsoft Defender für Office 365 Plan 2)
 
 ## <a name="september-2019"></a>September 2019
 
@@ -105,7 +109,7 @@ In diesem Artikel werden die neuen Features in der neuesten Version von Microsof
 
 Wussten Sie, dass Microsoft Defender für Office 365 in zwei Plänen verfügbar ist? [Hier finden Sie weitere Informationen zu den einzelnen Plänen](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap)
 

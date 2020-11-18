@@ -20,59 +20,21 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 700bd7a3f4ba8d152cf66a27c0f66aa375872698
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: fac3a79f1522e5e7777b2b54bce2b8bd695f8d7a
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842062"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131345"
 ---
 # <a name="run-your-microsoft-365-defender-attack-simulations"></a>Ausführen Ihrer Microsoft 365 Defender-Angriffssimulationen  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**Gilt für:**
-- Microsoft 365 Defender
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" >
-      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-plan"> 
-        <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft 365 Defender project" title="Planen des Pilotprojekts "Microsoft 365 Defender"" />
-      <br/>Plan </a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval">
-        <img src="../../media/mtp/prep.png" alt="Prepare your Microsoft 365 Defender trial lab or pilot environment" title="Vorbereiten des Testlabors oder der Pilotumgebung für den Microsoft 365 Defender" />
-      <br/>Vorbereiten </a><br>
-    </td>
-    <td align="center"bgcolor="#d5f5e3">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate">
-        <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft 365 Defender attack simulations" title="Ausführen Ihrer Microsoft 365 Defender-Angriffssimulationen" />
-      <br/>Simulieren des Angriffs </a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-close">
-        <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft 365 Defender pilot" title="Schließen Sie Ihr Microsoft 365 Defender-Pilotprojekt, und fassen Sie es zusammen" />
-      <br/>Schließen und zusammenfassen </a><br>
-    </td>
-  </tr>
-  <tr>
-    <td style="width:25%; border:0;">
-   
-    </td>
-    <td valign="top" style="width:25%; border:0;">
-    
-</td>
-    <td valign="top" style="width:25%; border:0;">
-
-</td>    
-    <td valign="top" style="width:25%; border:0;">
-
-</td>
-  </tr>
-</table>
+|[![Planung](../../media/phase-diagrams/1-planning.png)](mtp-pilot-plan.md)<br/>[Planung](mtp-pilot-plan.md) |[![Vorbereiten](../../media/phase-diagrams/2-prepare.png)](prepare-mtpeval.md)<br/>[Vorbereitung](prepare-mtpeval.md) | ![Angriff simulieren](../../media/phase-diagrams/3-simluate.png)<br/>Angriff simulieren| [![Schließen und zusammenfassen](../../media/phase-diagrams/4-summary.png)](mtp-pilot-close.md)<br/>[Schließen und zusammenfassen](mtp-pilot-close.md)|
+|--|--|--|--|
+|| |*Sie sind hier!* | |
 
 Sie befinden sich derzeit in der Angriffs Simulationsphase.
 
@@ -262,7 +224,7 @@ Wählen Sie die Registerkarte **Zeitachse** aus, um die Geräte Zeitachse zu öf
 
 Das erweitern einiger interessanter Verhaltensweisen bietet nützliche Details wie Prozess Bäume.
 
-Scrollen Sie beispielsweise nach unten, bis Sie das Warnungsereignis " **verdächtige Prozess Injektion beobachtet** " finden. Wählen Sie unter dem **powershell.exe zu notepad.exe Prozessereignis injiziert** aus, um die vollständige Prozessstruktur für dieses Verhalten unter dem Diagramm " **Ereignis Entitäten** " im Seitenbereich anzuzeigen. Verwenden Sie die Suchleiste für die Filterung, falls erforderlich.
+Scrollen Sie beispielsweise nach unten, bis Sie das Warnungsereignis " **verdächtige Prozess Injektion beobachtet**" finden. Wählen Sie unter dem **powershell.exe zu notepad.exe Prozessereignis injiziert** aus, um die vollständige Prozessstruktur für dieses Verhalten unter dem Diagramm " **Ereignis Entitäten** " im Seitenbereich anzuzeigen. Verwenden Sie die Suchleiste für die Filterung, falls erforderlich.
 
 ![Screenshot der Prozessstruktur für das ausgewählte PowerShell-Datei Erstellungsverhalten](../../media/mtp/fig12.png)
 
@@ -369,9 +331,9 @@ Für dieses Szenario ist ein einzelnes internes Postfach und Gerät erforderlich
 
     1.  Sehen Sie sich die Ergebnisse an, und prüfen Sie, ob Sie die geöffnete e-Mail identifizieren können.  Es kann bis zu 2 Stunden dauern, bis die Nachricht in Advanced Hunting angezeigt wird. Wenn die e-Mail-Umgebung groß ist und viele Ergebnisse vorliegen, möchten Sie möglicherweise die **Option Filter anzeigen** verwenden, um nach der Nachricht zu suchen. 
 
-   Im Beispiel wurde die e-Mail von einem Yahoo-Konto gesendet. Klicken Sie auf das **+** Symbol neben **Yahoo.com** im Abschnitt SenderFromDomain, und klicken Sie dann auf über **nehmen** , um die ausgewählte Domäne zur Abfrage hinzuzufügen.  Verwenden Sie das Domänen-oder e-Mail-Konto, das zum Senden der Testnachricht in Schritt 1 von Ausführen der Simulation verwendet wurde, um Ihre Ergebnisse zu filtern.  Führen Sie die Abfrage erneut aus, um ein kleineres Resultset zu erhalten, um zu überprüfen, ob die Nachricht aus der Simulation angezeigt wird.
+           Im Beispiel wurde die e-Mail von einem Yahoo-Konto gesendet. Klicken Sie auf das **+** Symbol neben **Yahoo.com** im Abschnitt SenderFromDomain, und klicken Sie dann auf über **nehmen** , um die ausgewählte Domäne zur Abfrage hinzuzufügen.  Verwenden Sie das Domänen-oder e-Mail-Konto, das zum Senden der Testnachricht in Schritt 1 von Ausführen der Simulation verwendet wurde, um Ihre Ergebnisse zu filtern.  Führen Sie die Abfrage erneut aus, um ein kleineres Resultset zu erhalten, um zu überprüfen, ob die Nachricht aus der Simulation angezeigt wird.
    
-        ![Screenshot of the filters. Use filters to narrow down the search, and find what you’re looking for faster.](../../media/mtp/fig20.png) 
+        ![Screenshot der Filter. Verwenden Sie Filter, um die Suche einzugrenzen, und suchen Sie schneller nach Ihren Wünschen.](../../media/mtp/fig20.png) 
 
         ```console
         EmailEvents 
@@ -394,7 +356,7 @@ Für dieses Szenario ist ein einzelnes internes Postfach und Gerät erforderlich
 
 5.  Geben Sie als nächstes die Informationen über die Anlage (beispielsweise: Dateiname, Hashwerte) zu Ihrem Resultset hinzu. Um dies zu tun, fügen Sie die **EmailAttachmentInfo** -Tabelle. Die für den Beitritt zu verwendenden allgemeinen Felder sind in diesem Fall **NetworkMessageId** und **RecipientObjectId**.
 
-Die folgende Abfrage enthält auch eine zusätzliche Verbindung "| **Project-Rename EmailTimestamp = Timestamp** "damit wird ermittelt, welcher Zeitstempel im Zusammenhang mit den im nächsten Schritt hinzugefügten e-Mail-und Timestamps im Zusammenhang mit Dateiaktionen steht.
+    Die folgende Abfrage enthält auch eine zusätzliche Verbindung "| **Project-Rename EmailTimestamp = Timestamp**"damit wird ermittelt, welcher Zeitstempel im Zusammenhang mit den im nächsten Schritt hinzugefügten e-Mail-und Timestamps im Zusammenhang mit Dateiaktionen steht.
 
     ```console
     EmailEvents 
@@ -473,9 +435,9 @@ Bei benutzerdefinierten Erkennungen wird die Abfrage entsprechend der von Ihnen 
 
     ![Screenshot der Seite mit den Erkennungsregeln, auf der die Details zur Regel und zur Ausführung angezeigt werden](../../media/mtp/fig27b.png) 
 
-Auf dieser Seite können Sie die Erkennungsregel auswählen, mit der eine Detailseite geöffnet wird. 
+    Auf dieser Seite können Sie die Erkennungsregel auswählen, mit der eine Detailseite geöffnet wird. 
 
-    ![Screenshot of the email attachments page where you can see the status of the rule execution, triggered alerts and actions, edit the detection, and so on](../../media/mtp/fig28.png) 
+    ![Screenshot der Seite "e-Mail-Anlagen", auf der Sie den Status der Regelausführung, ausgelöste Warnungen und Aktionen, Bearbeiten der Erkennung usw. sehen können](../../media/mtp/fig28.png) 
 
 ### <a name="additional-advanced-hunting-walk-through-exercises"></a>Zusätzliche erweiterte Jagd-Übungsschritte
 

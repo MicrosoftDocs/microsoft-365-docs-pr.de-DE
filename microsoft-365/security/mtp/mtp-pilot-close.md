@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 1617e7b68346673785c72e90e6f5e94193d96488
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 3fe5bfdec566b0988d9f565595624fc8dd597788
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843018"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49130943"
 ---
 # <a name="closing-and-summarizing-your-microsoft-365-defender-pilot"></a>Schließen und zusammenfassen Ihres Microsoft 365 Defender-Pilotprojekts  
 
@@ -35,45 +35,12 @@ ms.locfileid: "48843018"
 **Gilt für:**
 - Microsoft 365 Defender
 
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" >
-      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-plan"> 
-        <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft 365 Defender project" title="Planen des Pilotprojekts "Microsoft 365 Defender"" />
-      <br/>Plan </a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval">
-        <img src="../../media/mtp/prep.png" alt="Prepare your Microsoft 365 Defender trial lab or pilot environment" title="Vorbereiten des Testlabors oder der Pilotumgebung für den Microsoft 365 Defender" />
-      <br/>Vorbereiten </a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate">
-        <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft 365 Defender attack simulations" title="Ausführen Ihrer Microsoft 365 Defender-Angriffssimulationen" />
-      <br/>Simulieren des Angriffs </a><br>
-    </td>
-    <td align="center"bgcolor="#d5f5e3">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-close">
-        <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft 365 Defender pilot" title="Schließen Sie Ihr Microsoft 365 Defender-Pilotprojekt, und fassen Sie es zusammen" />
-      <br/>Schließen und zusammenfassen </a><br>
-    </td>
-  </tr>
-  <tr>
-    <td style="width:25%; border:0;">
-   
-    </td>
-    <td valign="top" style="width:25%; border:0;">
-    
-</td>
-    <td valign="top" style="width:25%; border:0;">
 
-</td>    
-    <td valign="top" style="width:25%; border:0;">
 
-</td>
-  </tr>
-</table>
+|[![Planung](../../media/phase-diagrams/1-planning.png)](mtp-pilot-plan.md)<br/>[Planung](mtp-pilot-plan.md) |[![Vorbereiten](../../media/phase-diagrams/2-prepare.png)](prepare-mtpeval.md)<br/>[Vorbereitung](prepare-mtpeval.md) | [![Angriff simulieren](../../media/phase-diagrams/3-simluate.png)](mtp-pilot-simulate.md)<br/>[Angriff simulieren](mtp-pilot-simulate.md) | ![Schließen und zusammenfassen](../../media/phase-diagrams/4-summary.png)<br/>Schließen und zusammenfassen|
+|--|--|--|--|
+|| | |*Sie sind hier!*|
+
 
 Sie befinden sich derzeit in der Abschluss-und Zusammenfassungs Phase.
 

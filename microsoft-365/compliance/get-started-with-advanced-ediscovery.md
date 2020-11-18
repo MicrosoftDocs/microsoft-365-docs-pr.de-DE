@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Artikel wird beschrieben, wie Sie mit der Verwendung von Advanced eDiscovery in Microsoft 365 beginnen. Nachdem Sie einige kurze Schritte ausgeführt haben, ist das erweiterte eDiscovery-Tooleinsatz fähig. Der erste Schritt besteht darin, einen Fall zu erstellen und dann erweiterte eDiscovery-Funktionen und-Funktionen zu verwenden.
-ms.openlocfilehash: 59537499ed52f44a9d32b8921fd297c5cd7c0d3f
-ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
+ms.openlocfilehash: 13a4bfac34201e81ba13b76791e097891409dd0b
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48944333"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49130840"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>Erste Schritte mit Advanced eDiscovery
 
@@ -68,7 +68,7 @@ Führen Sie die folgenden Schritte aus, um Benutzer zur eDiscovery-Manager-Rolle
 
 3. Klicken Sie auf der Seite eDiscovery-Manager-Flyout neben dem Abschnitt **eDiscovery-Manager** auf **Bearbeiten** .
 
-4. Klicken Sie auf der Seite **eDiscovery-Manager auswählen** im Assistenten zum Bearbeiten der Rollengruppe auf **Ermittlungs-Manager auswählen**.
+4. Klicken Sie auf der Seite **eDiscovery-Manager auswählen** im Assistenten zum Bearbeiten von Rollengruppen auf **eDiscovery-Manager auswählen**.
 
 5. Klicken Sie auf **Hinzufügen** , und aktivieren Sie dann das Kontrollkästchen für alle Benutzer, die Sie der Rollengruppe hinzufügen möchten.
 
@@ -107,9 +107,9 @@ Weitere Informationen zum Einrichten und Verwenden des Erkennungs Modells für d
 
 Der nächste Schritt besteht darin, einen Fall zu erstellen und mit Advanced eDiscovery zu beginnen. Führen Sie die folgenden Schritte aus, um einen Fall zu erstellen und Mitglieder hinzuzufügen. Der Benutzer, der den Fall erstellt, wird automatisch als Mitglied hinzugefügt.
 
-1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com) und melden Sie sich mit den Anmeldeinformationen für das Benutzerkonto an, dem die entsprechenden eDiscovery-Berechtigungen zugewiesen wurden. Mitglieder der Rollengruppe "Organisationsverwaltung" können auch erweiterte eDiscovery-Fälle erstellen.
+1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com) und melden Sie sich mit einem Benutzerkonto an, dem die entsprechenden eDiscovery-Berechtigungen zugewiesen wurden. Mitglieder der Rollengruppe "Organisationsverwaltung" können auch erweiterte eDiscovery-Fälle erstellen.
 
-2. Klicken Sie im linken Navigationsbereich des Microsoft 365 Compliance Centers auf **Ale anzeigen** , und klicken Sie dann auf **eDiscovery > Advanced**.
+2. Klicken Sie im linken Navigationsbereich des Microsoft 365 Compliance Centers auf **Ale anzeigen**, und klicken Sie dann auf **eDiscovery > Advanced**.
 
 3. Klicken Sie auf der Seite **Erweiterte eDiscovery** auf die Registerkarte **Fälle** , und klicken Sie dann auf **Fall erstellen**.
 
@@ -117,9 +117,9 @@ Der nächste Schritt besteht darin, einen Fall zu erstellen und mit Advanced eDi
 
 5. Klicken Sie auf **Speichern** , um die Anfrage zu erstellen.
 
-   Der neue Fall wird erstellt, und die Registerkarte **Einstellungen** im neuen Fall wird angezeigt. 
+   Der neue Fall wird erstellt, und die Registerkarte **Einstellungen** im neuen Fall wird angezeigt.
 
-6. Klicken Sie auf der Kachel **Zugriffs & Berechtigungen** auf der Registerkarte **Einstellungen** auf **auswählen** , und klicken Sie dann auf **Aktualisieren**.
+6. Klicken Sie auf der Kachel **Zugriffs & Berechtigungen** auf der Registerkarte **Einstellungen** auf **auswählen**, und klicken Sie dann auf **Aktualisieren**.
 
 7. Klicken Sie auf **Aktualisieren**.
 
@@ -129,7 +129,7 @@ Der nächste Schritt besteht darin, einen Fall zu erstellen und mit Advanced eDi
 
 10. Nachdem Sie die Personen ausgewählt haben, die als Mitglieder der Anfrage hinzugefügt werden sollen, klicken Sie auf **Hinzufügen**.
 
-11. Klicken Sie auf der Flyout-Seite **Fall verwalten** auf **Speichern** , um die neue Liste der Fallbeteiligten zu speichern.
+11. Klicken Sie auf der Flyout-Seite **Fall verwalten** auf **Speichern**, um die neue Liste der Fallbeteiligten zu speichern.
 
 12. Klicken Sie auf die Registerkarte **Start** , um zur Fall Startseite zu wechseln.
 
@@ -143,7 +143,7 @@ Um den Einstieg in die Verwendung von Advanced eDiscovery zu erleichtern, finden
 
    - Die Daten im Exchange-Postfach des Verwalters, im OneDrive-Konto und in allen Microsoft Teams-oder Jammer Gruppen, in denen die Depotbank Mitglied ist, können in dem Fall als Freiheitsentzug-Daten "gekennzeichnet" werden.
   
-   - Depotdaten werden neu indiziert (durch einen Prozess mit dem Namen *Advanced Indexing* ). Dies hilft beim Optimieren der Suche im nächsten Schritt.
+   - Depotdaten werden neu indiziert (durch einen Prozess mit dem Namen *Advanced Indexing*). Dies hilft beim Optimieren der Suche im nächsten Schritt.
   
    - Sie können Depotdaten aufbewahren. Dadurch werden Daten beibehalten, die für den Fall während der Untersuchung relevant sein können.
   
@@ -167,12 +167,12 @@ Um den Einstieg in die Verwendung von Advanced eDiscovery zu erleichtern, finden
 
    - [Dokumente anzeigen](view-documents-in-review-set.md). Dies umfasst das Anzeigen der Metadaten für jedes Dokument in einer Überprüfungsgruppe und das Anzeigen des Dokuments in seiner systemeigenen Version oder Textversion.
 
-   - [Erstellen von Abfragen und Filtern](review-set-search.md) Sie erstellen Suchabfragen mithilfe einer Vielzahl von Suchkriterien (einschließlich der Möglichkeit zum Durchsuchen aller [Eigenschaften von Datei Metadaten](document-metadata-fields-in-advanced-ediscovery.md)), um die Falldaten weiter zu verfeinern und zu filtern, was für den Fall am relevantesten ist. Sie können auch Filter zum Überprüfen von Sätzen verwenden, um schnell zusätzliche Bedingungen auf die Ergebnisse einer Suchabfrage anzuwenden, um diese Ergebnisse weiter zu verfeinern. 
+   - [Erstellen von Abfragen und Filtern](review-set-search.md) Sie erstellen Suchabfragen mithilfe einer Vielzahl von Suchkriterien (einschließlich der Möglichkeit zum Durchsuchen aller [Eigenschaften von Datei Metadaten](document-metadata-fields-in-advanced-ediscovery.md)), um die Falldaten weiter zu verfeinern und zu filtern, was für den Fall am relevantesten ist. Sie können auch Filter zum Überprüfen von Sätzen verwenden, um schnell zusätzliche Bedingungen auf die Ergebnisse einer Suchabfrage anzuwenden, um diese Ergebnisse weiter zu verfeinern.
 
    - [Erstellen und Verwenden von Tags](tagging-documents.md). Sie können Tags auf Dokumente in einem Überprüfungs Satzes anwenden, um zu ermitteln, welche reaktionsfähig sind (oder nicht auf den Fall reagieren), und dann diese Tags beim Erstellen von Suchabfragen verwenden, um die markierten Dokumente einzubeziehen oder auszuschließen. Sie können auch kennzeichnen, um zu bestimmen, welche Dokumente exportiert werden sollen.
 
-   - [Beschriften und redact von Dokumenten](view-documents-in-review-set.md#annotate-view). Sie können das Annotation-Tool in einer Überprüfung verwenden, um Dokumente und redact-Inhalte in Dokumenten als Arbeitsprodukt zu kommentieren. Wir generieren eine PDF-Version eines kommentierten oder bearbeiteten Dokuments während der Überprüfung, um das Risiko zu verringern, dass die unzensierte-systemeigene Version des Dokuments exportiert wird.
+   - [Beschriften und redact von Dokumenten](view-documents-in-review-set.md#annotate-view). Sie können das Annotation-Tool in einer Überprüfung verwenden, um Dokumente und redact-Inhalte in Dokumenten als Arbeitsprodukt zu kommentieren. Wir generieren eine PDF-Version eines kommentierten oder bearbeiteten Dokuments während der Überprüfung, um das Risiko zu verringern, dass die nicht-systemeigene Version des Dokuments exportiert wird.
 
-   - [Analysieren von Case-Daten](analyzing-data-in-review-set.md). Die Analysefunktionalität in Advanced eDiscovery ist leistungsfähig. Nachdem Sie Analytics für die Daten in Review-Gruppe ausgeführt haben, führen wir eine Analyse wie etwa doppelte Erkennung, e-Mail-Threading und Designs durch, die dazu beitragen können, das Volumen von Dokumenten zu reduzieren, die Sie überprüfen müssen. Außerdem generieren wir Analyseberichte, in denen das Ergebnis der Ausführung von Analysen zusammengefasst wird. Wie bereits erläutert, führt das Ausführen von Analytics auch [das Erkennungs Modell für das Anwalts Client-Privileg](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model)aus.
+   - [Analysieren von Case-Daten](analyzing-data-in-review-set.md). Die Analysefunktionalität in Advanced eDiscovery ist leistungsfähig. Advanced eDiscovery stellt eine Reihe von Tools zum Analysieren der Dokumente zur Verfügung, um den Umfang der Dokumente, die in einem Überprüfungs Satzes überprüft werden sollen, weiter zu reduzieren. Außerdem generieren wir Analyseberichte, in denen das Ergebnis der Ausführung von Analysen zusammengefasst wird. Wie bereits erläutert, führt das Ausführen von Analytics auch [das Erkennungs Modell für das Anwalts Client-Privileg](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model)aus.
 
 5. **Exportieren und Herunterladen von Case-Daten**. Ein letzter Schritt nach dem sammeln, überprüfen und Analysieren von Falldaten besteht darin, die Daten aus Advanced eDiscovery für externe Überprüfungen oder zur Überprüfung durch Personen außerhalb des Ermittlungsteams zu exportieren. Das Exportieren von Daten erfolgt in einem zweistufigen Prozess. Der erste Schritt besteht darin, Daten aus der Überprüfungsgruppe zu [exportieren](export-documents-from-review-set.md) und an einen anderen Azure-Speicherort (einen von Microsoft oder eine von Ihrer Organisation verwaltete) zu kopieren. Anschließend verwenden Sie Azure Storage Explorer, um die Daten auf einen lokalen Computer [herunterzuladen](download-export-jobs.md) . Zusätzlich zu den exportierten Datendateien enthält der Inhalt des Exportpakets auch einen Exportbericht, einen Zusammenfassungsbericht und einen Fehlerbericht.

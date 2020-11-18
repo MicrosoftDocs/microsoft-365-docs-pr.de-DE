@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-defender-office365
 - MET150
 description: Administratoren können lernen, die Gründe zu identifizieren, warum und wie eine Phishing-Nachricht in Microsoft 365 durchgekommen ist, und was Sie tun müssen, um weitere Phishing-Nachrichten zukünftig zu verhindern.
-ms.openlocfilehash: e933769b6bce9eb10765fb2b58025445432bed18
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: c495be3f5a90ca96f9a7a05513df9438f88910ad
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845468"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131321"
 ---
 # <a name="tune-anti-phishing-protection"></a>Optimieren des Schutzes gegen Phishing
 
@@ -51,21 +51,21 @@ Das Melden von Phishing-Nachrichten ist hilfreich beim Optimieren der Filter, di
 
 Sie können die Kopfzeilen der Phishing-Nachricht überprüfen, um festzustellen, ob Sie selbst etwas tun können, um zu verhindern, dass mehr Phishing-Nachrichten durchkommen. Das bedeutet, dass die Überprüfung der Nachrichtenkopfzeilen Ihnen helfen kann, alle Einstellungen in Ihrer Organisation zu identifizieren, die für das Zulassen von Phishing-Nachrichten in zuständig waren.
 
-Insbesondere sollten Sie das Kopfzeilenfeld **X-Forefront-Antispam-Report** in den Nachrichtenkopfzeilen für Hinweise auf übersprungene Spam-oder Phishing-Filterung im Wert Spamfilter Urteil (SFV) überprüfen. Nachrichten, die die Filterung überspringen, haben einen Eintrag von `SCL:-1` , was bedeutet, dass eine Ihrer Einstellungen diese Nachricht durch durch außer Kraft setzen der Spam-oder Phishing-Urteile erlaubt, die vom Dienst bestimmt wurden. Weitere Informationen zum Abrufen von Nachrichtenkopfzeilen und der vollständigen Liste aller verfügbaren Anti-Spam-und Anti-Phishing-Nachrichtenkopfzeilen finden Sie unter [Antispam-Nachrichtenkopfzeilen in Microsoft 365](anti-spam-message-headers.md).
+Insbesondere sollten Sie das Kopfzeilenfeld **X-Forefront-Antispam-Report** in den Nachrichtenkopfzeilen überprüfen, um Hinweise auf die übersprungene Filterung für Spam oder Phishing im Wert Spamfilter Urteil (SFV) zu erhalten. Nachrichten, die die Filterung überspringen, haben einen Eintrag von `SCL:-1` , was bedeutet, dass eine Ihrer Einstellungen diese Nachricht durch durch außer Kraft setzen der Spam-oder Phishing-Urteile erlaubt, die vom Dienst bestimmt wurden. Weitere Informationen zum Abrufen von Nachrichtenkopfzeilen und der vollständigen Liste aller verfügbaren Anti-Spam-und Anti-Phishing-Nachrichtenkopfzeilen finden Sie unter [Antispam-Nachrichtenkopfzeilen in Microsoft 365](anti-spam-message-headers.md).
 
 ## <a name="best-practices-to-stay-protected"></a>Bewährte Methoden, um geschützt zu bleiben
 
 - Führen Sie auf monatlicher Basis [Secure Score](../mtp/microsoft-secure-score.md) aus, um die Sicherheitseinstellungen Ihrer Organisation zu bewerten.
 
-- Für Nachrichten, die versehentlich in die Quarantäne verschoben werden, oder für Nachrichten, die durchgelassen werden, wird empfohlen, dass Sie nach diesen Nachrichten im [Threat Explorer und in Echt Zeit Erkennungen](threat-explorer.md)suchen. Sie können nach Absender, Empfänger oder Nachrichten-ID suchen. Nachdem Sie die Nachricht gefunden haben, gehen Sie zu Details, indem Sie auf den Betreff klicken. Suchen Sie bei einer isolierten Nachricht, um zu sehen, was die "Erkennungstechnologie" war, sodass Sie die entsprechende Methode zum Überschreiben verwenden können. Überprüfen Sie bei einer zulässigen Nachricht, welche Richtlinie die Nachricht zugelassen hat. 
+- Für Nachrichten, die versehentlich in die Quarantäne verschoben werden, oder für Nachrichten, die durchgelassen werden, wird empfohlen, dass Sie nach diesen Nachrichten im [Threat Explorer und in Echt Zeit Erkennungen](threat-explorer.md)suchen. Sie können nach Absender, Empfänger oder Nachrichten-ID suchen. Nachdem Sie die Nachricht gefunden haben, gehen Sie zu Details, indem Sie auf den Betreff klicken. Suchen Sie bei einer isolierten Nachricht, um zu sehen, was die "Erkennungstechnologie" war, sodass Sie die entsprechende Methode zum Überschreiben verwenden können. Überprüfen Sie bei einer zulässigen Nachricht, welche Richtlinie die Nachricht zugelassen hat.
 
-- Spoofing-e-Mail ist für Office 365 als Phishing in Defender markiert. Spoof ist manchmal gutartig, und manchmal möchten die Benutzer, dass Sie nicht unter Quarantäne gestellt werden. Um die Auswirkungen auf die Benutzer zu minimieren, überprüfen Sie den [Spoof Intelligence-Bericht](learn-about-spoof-intelligence.md)regelmäßig. Nachdem Sie die erforderlichen Überschreibungen überprüft und vorgenommen haben, können Sie sicher sein, [Spoof Intelligence](set-up-anti-phishing-policies.md#spoof-settings) so zu konfigurieren, dass verdächtige Nachrichten in **Quarantäne verschoben** werden, anstatt Sie an den Junk-e-Mail-Ordner des Benutzers zu übermitteln.
+- Spoofing-Nachrichten werden für Office 365 als Phishing in Defender markiert. Spoof ist manchmal gutartig, und manchmal möchten die Benutzer, dass Sie nicht unter Quarantäne gestellt werden. Um die Auswirkungen auf die Benutzer zu minimieren, überprüfen Sie den [Spoof Intelligence-Bericht](learn-about-spoof-intelligence.md)regelmäßig. Nachdem Sie die erforderlichen Überschreibungen überprüft und vorgenommen haben, können Sie sicher sein, [Spoof Intelligence](set-up-anti-phishing-policies.md#spoof-settings) so zu konfigurieren, dass verdächtige Nachrichten in **Quarantäne verschoben** werden, anstatt Sie an den Junk-e-Mail-Ordner des Benutzers zu übermitteln.
 
 - Sie können den obigen Schritt für den Identitätswechsel (Domäne oder Benutzer) wiederholen. Der Identitätswechsel Bericht finden Sie unter **Threat Management** \> **Dashboard** \> **Insights**.
 
 - Überprüfen Sie den [Threat Protection-Status Bericht](view-reports-for-atp.md#threat-protection-status-report)regelmäßig.
 
-- Einige Kunden lassen versehentlich Phishing-Nachrichten durch, indem Sie Ihre eigenen Domänen in die Liste Absender zulassen oder Domänen zulassen in den antispamregeln umsetzen. Obwohl durch diese Konfiguration einige legitime Nachrichten über zulässig sind, werden auch böswillige Nachrichten zugelassen, die normalerweise durch die Spam-und/oder Phishingfilter blockiert würden. Anstatt die Domäne zuzulassen, sollten Sie das zugrunde liegende Problem beheben.
+- Einige Kunden lassen versehentlich Phishing-Nachrichten durch, indem Sie Ihre eigenen Domänen in die Liste Absender zulassen oder Domänen zulassen in den antispamregeln umsetzen. Diese Konfiguration erlaubt zwar einige legitime Nachrichten über, es werden jedoch auch böswillige Nachrichten zugelassen, die normalerweise durch die Spam-und/oder Phishingfilter blockiert würden. Anstatt die Domäne zuzulassen, sollten Sie das zugrunde liegende Problem beheben.
 
   Die beste Möglichkeit zum Umgang mit legitimen Nachrichten, die von Microsoft 365 (falsch positive Ergebnisse) blockiert werden, die Absender in Ihrer Domäne umfassen, besteht darin, die SPF-, DKIM-und DMARC-Einträge in DNS für _alle_ e-Mail-Domänen vollständig und vollständig zu konfigurieren:
 
@@ -74,7 +74,7 @@ Insbesondere sollten Sie das Kopfzeilenfeld **X-Forefront-Antispam-Report** in d
   - Verwenden Sie "harter Fehler \- " (alle), um sicherzustellen, dass nicht autorisierte Absender von e-Mail-Systemen abgelehnt werden, die dafür konfiguriert sind. Sie können [Spoof Intelligence](learn-about-spoof-intelligence.md) verwenden, um die Absender zu identifizieren, die Ihre Domäne verwenden, sodass Sie autorisierte Drittanbieter-Absender in ihren SPF-Eintrag aufnehmen können.
 
   Konfigurationsanweisungen finden Sie unter:
-  
+
   - [Einrichten von SPF zum Verhindern von Spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
   - [Verwenden von DKIM zum Überprüfen ausgehender E-Mails, die von Ihrer benutzerdefinierten Domäne gesendet werden](use-dkim-to-validate-outbound-email.md)

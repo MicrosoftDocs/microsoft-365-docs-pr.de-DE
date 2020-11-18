@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: 5259c7b74446ad273ff9b1ae0baccd339e34baa3
-ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
+ms.openlocfilehash: 240ffd7ec8d46da33c43ec2f9cb50cf59c89f11b
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48984950"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131297"
 ---
 # <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a>Konfigurieren von Microsoft 365 Defender-Säulen für Ihre Test Labor-oder Pilotumgebung
 
@@ -38,29 +38,11 @@ ms.locfileid: "48984950"
 
 Das Erstellen eines Microsoft 365 Defender-Testlabors oder einer Pilotumgebung und deren Bereitstellung ist ein dreistufiger Prozess:
 
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" >
-      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval?view=o365-worldwide"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft 365 Defender trial lab or pilot environment" title="Vorbereiten des Testlabors oder der Pilotumgebung für den Microsoft 365 Defender" />
-      <br/>Phase 1: Vorbereiten </a><br>
-    </td>
-     <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval?view=o365-worldwide">
-        <img src="../../media/setup.png" alt="Set up your Microsoft 365 Defender trial lab or pilot environment" title="Einrichten Ihrer Microsoft 365 Defender Test Lab-oder Pilotumgebung" />
-      <br/>Phase 2: Setup </a><br>
-    </td>
-    <td align="center" bgcolor="#d5f5e3">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide">
-        <img src="../../media/config-onboard.png" alt="Configure & Onboard" title="Konfigurieren der einzelnen Microsoft 365 Defender-Pfeiler für Ihr Microsoft 365 Defender-Test Labor oder eine Pilotumgebung sowie Onboard-Endpunkte" />
-      <br/>Phase 3: Konfigurieren von & Onboard </a><br>
-</td>
-  </tr>
-</table>
+|[![Phase 1: Vorbereiten](../../media/phase-diagrams/prepare.png)](prepare-mtpeval.md)<br/>[Phase 1: Vorbereiten](prepare-mtpeval.md) |[![Phase 2: Einrichten](../../media/phase-diagrams/setup.png)](setup-mtpeval.md)<br/>[Phase 2: Einrichten](setup-mtpeval.md) |![Phase 3: Onboard](../../media/phase-diagrams/onboard.png)<br/>Phase 3: Onboard | [![Zurück zu Pilot](../../media/phase-diagrams/backtopilot.png)](mtp-pilot.md)<br/>[Zurück zu Pilot Textbuch](mtp-pilot.md) |
+|--|--|--|--|
+|| |*Sie sind hier!* | |
 
 Sie befinden sich derzeit in der Konfigurationsphase.
-
 
 Die Vorbereitung ist für eine erfolgreiche Bereitstellung entscheidend. In diesem Artikel werden Sie mit den Punkten geführt, die Sie bei der Vorbereitung der Bereitstellung von Microsoft Defender für Endpoint berücksichtigen müssen.
 
@@ -88,7 +70,7 @@ Es gibt ein PowerShell-Modul mit dem Namen *Office 365 Advanced Threat Protectio
 
    ![Image of_Office 365 Security & Compliance Center Threat Management-Richtlinie (Seite)](../../media/mtp-eval-32.png)
  
-2. Klicken Sie auf **Anti-Phishing** , wählen Sie **Create** aus, und geben Sie den Richtliniennamen und die Beschreibung ein. Klicken Sie auf **Weiter**.
+2. Klicken Sie auf **Anti-Phishing**, wählen Sie **Create** aus, und geben Sie den Richtliniennamen und die Beschreibung ein. Klicken Sie auf **Weiter**.
 
    ![Image of_Office 365 Security & Compliance Center-Richtlinie zur Anti-Phishing-Politik, auf der Sie Ihre Richtlinie benennen können](../../media/mtp-eval-33.png)
 
@@ -123,7 +105,7 @@ Es gibt ein PowerShell-Modul mit dem Namen *Office 365 Advanced Threat Protectio
 
     ![Image of_Office 365 Security & Compliance Center Seite, die zeigt, dass die Malware Erkennungs Antwort mit Standardbenachrichtigung aktiviert ist und der Filter "allgemeine Anlagentypen" aktiviert ist.](../../media/mtp-eval-39.png)
   
-11. Navigieren Sie zu [Office 365 Security & Compliance Center](https://protection.office.com/homepage)  >  - **Such**  >  **Überwachungsprotokoll-Suche** , und aktivieren Sie die Überwachung.
+11. Navigieren Sie zu [Office 365 Security & Compliance Center](https://protection.office.com/homepage)  >  -**Such**  >  **Überwachungsprotokoll-Suche** , und aktivieren Sie die Überwachung.
 
     ![Image of_Office 365 Security & Compliance Center Seite, auf der Sie die Überwachungsprotokoll Suche aktivieren können](../../media/mtp-eval-40.png)
 
@@ -200,7 +182,7 @@ Es gibt ein PowerShell-Modul mit dem Namen *Office 365 Advanced Threat Protectio
    > [!NOTE]
    > Wenn diese Aufforderung nicht angezeigt wird, kann dies bedeuten, dass Ihr Microsoft Defender for Identity Data Integration bereits aktiviert wurde. Wenn Sie sich jedoch nicht sicher sind, wenden Sie sich an Ihren IT-Administrator, um dies zu bestätigen. 
 
-3. Wechseln Sie zu **Einstellungen** , aktivieren Sie die Umschaltfläche **Microsoft Defender for Identity Integration** , und klicken Sie dann auf **Speichern**. 
+3. Wechseln Sie zu **Einstellungen**, aktivieren Sie die Umschaltfläche **Microsoft Defender for Identity Integration** , und klicken Sie dann auf **Speichern**. 
 
    ![Seite Bild of_the Einstellungen, auf der Sie die Umschaltfläche Microsoft Defender for Identity Integration aktivieren sollten, und klicken Sie dann auf Speichern](../../media/mtp-eval-55.png)
    
@@ -308,5 +290,5 @@ Herzlichen Glückwunsch! Sie haben soeben Ihr Microsoft 365 Defender-Test Labor 
 Als nächstes können Sie einen Angriff simulieren und sehen, wie die produktübergreifenden Funktionen erkennen, Warnungen erstellen und automatisch auf einen Datei übergreifenden Angriff auf einen Endpunkt reagieren.
 
 ## <a name="next-step"></a>Nächster Schritt
-|![Angriffs Simulationsphase](../../media/mtp/run-sim.png) <br>[Angriffs Simulationsphase](mtp-pilot-simulate.md) | Führen Sie die Angriffssimulation für Ihre Microsoft 365 Defender-Pilotumgebung aus.
+|[Angriffs Simulationsphase](mtp-pilot-simulate.md) | Führen Sie die Angriffssimulation für Ihre Microsoft 365 Defender-Pilotumgebung aus.
 |:-------|:-----|

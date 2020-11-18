@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-evalutatemtp
 ms.topic: conceptual
-ms.openlocfilehash: d6c96f7720344721bb2786dc130c490a5a8ea657
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: fe0a06dd104f0f0532363ee046f4bad1c03c5400
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846484"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49130892"
 ---
 # <a name="create-a-microsoft-365-defender-trial-lab-or-pilot-environment"></a>Erstellen eines Microsoft 365 Defender-Testlabors oder einer Pilotumgebung 
 
@@ -54,11 +54,13 @@ Dieses Handbuch hilft Ihnen dabei:
 
 Es gibt drei Phasen, in denen eine Microsoft 365 Defender-Testumgebung erstellt und bereitgestellt wird:
 
+![Bereitstellungsphasen: vorbereiten, einrichten, Onboard](../../media/phase-diagrams/deployment-phases.png)
+
 |Phase | Beschreibung | 
 |:-------|:-----|
-| ![Phase 1: Vorbereiten](../../media/prepare.png)<br>[Phase 1: Vorbereiten](prepare-mtpeval.md)| Erfahren Sie, was Sie bei der Bereitstellung von Microsoft 365 Defender in einer Test Labor-oder Pilotumgebung berücksichtigen müssen: <br><br>-Stakeholder und Sign-Off <br> -Umgebungs Überlegungen <br>-Access <br>-Azure-Active Directory-Setup <br> -Konfigurations Reihenfolge
-|  ![Phase 2: Setup](../../media/setup.png) <br>[Phase 2: Setup](setup-mtpeval.md)|  Führen Sie die ersten Schritte für den Zugriff auf das Microsoft 365 Security Center aus, um die Testumgebung für das Microsoft 365 Defender-Testlabor oder die Pilotumgebung einzurichten. Sie werden zu folgenden Themen geführt:<br><br>-Registrieren für Microsoft 365 E5-Testversion <br>  -Domäne konfigurieren<br>-Zuweisen von Microsoft 365 E5-Lizenzen<br>-Abschließen des Setup-Assistenten im Portal|
-|  ![Phase 3: Konfigurieren von & Onboard](../../media/config-onboard.png) <br>[Phase 3: Konfigurieren von & Onboard](config-mtpeval.md) | Konfigurieren Sie die einzelnen Microsoft 365 Defender-Pfeiler und Onboard-Endpunkte. Sie werden zu folgenden Themen geführt:<br><br>-Konfigurieren von Microsoft Defender für Office 365<br>-Konfigurieren der Microsoft Cloud-App-Sicherheit<br>-Konfigurieren von Microsoft Defender für Identity<br>-Konfigurieren von Microsoft Defender für Endpoint
+|[Phase 1: Vorbereiten](prepare-mtpeval.md)| Erfahren Sie, was Sie bei der Bereitstellung von Microsoft 365 Defender in einer Test Labor-oder Pilotumgebung berücksichtigen müssen: <br><br>-Stakeholder und Sign-Off <br> -Umgebungs Überlegungen <br>-Access <br>-Azure-Active Directory-Setup <br> -Konfigurations Reihenfolge
+|[Phase 2: Setup](setup-mtpeval.md)|  Führen Sie die ersten Schritte für den Zugriff auf das Microsoft 365 Security Center aus, um die Testumgebung für das Microsoft 365 Defender-Testlabor oder die Pilotumgebung einzurichten. Sie werden zu folgenden Themen geführt:<br><br>-Registrieren für Microsoft 365 E5-Testversion <br>  -Domäne konfigurieren<br>-Zuweisen von Microsoft 365 E5-Lizenzen<br>-Abschließen des Setup-Assistenten im Portal|
+|[Phase 3: Konfigurieren von & Onboard](config-mtpeval.md) | Konfigurieren Sie die einzelnen Microsoft 365 Defender-Pfeiler und Onboard-Endpunkte. Sie werden zu folgenden Themen geführt:<br><br>-Konfigurieren von Microsoft Defender für Office 365<br>-Konfigurieren der Microsoft Cloud-App-Sicherheit<br>-Konfigurieren von Microsoft Defender für Identity<br>-Konfigurieren von Microsoft Defender für Endpoint
 
 
 ## <a name="in-scope"></a>Im Bereich
@@ -72,8 +74,8 @@ Die folgenden Aufgaben liegen im Bereich dieses Handbuchs:
     -   Abschließen des Setup-Assistenten im Portal
 -   Konfigurieren aller Microsoft 365 Defender-Säulen basierend auf bewährten Methoden
     -   Microsoft Defender für Office 365
-    -   Microsoft Defender für Identity
-    -   Microsoft Cloud App-Sicherheit
+    -   Microsoft Defender for Identity
+    -   Microsoft Cloud App Security
     -   Microsoft Defender für Endpunkt
 
 ## <a name="out-of-scope"></a>Nicht inbegriffen
@@ -84,5 +86,5 @@ Im Rahmen dieses Bereitstellungshandbuchs liegen folgende Schritte vor:
 -   Penetrationstests in der Produktionsumgebung
 
 ## <a name="next-step"></a>Nächster Schritt
-![Phase 1: Vorbereiten](../../media/prepare.png) <br>[Phase 1: Vorbereiten](prepare-mtpeval.md) 
+[Phase 1: Vorbereiten](prepare-mtpeval.md) 
 <br> Vorbereiten des Testlabors oder der Pilotumgebung für den Microsoft 365 Defender

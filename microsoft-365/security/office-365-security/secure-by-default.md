@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über die Einstellung "standardmäßig sicher" in Exchange Online Protection (EoP).
-ms.openlocfilehash: d4345134e98ae204f73dfb51a0abf5136590a24c
-ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
+ms.openlocfilehash: 9f676dcd89f0322792bd40e06879b9758082d94e
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49126661"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131097"
 ---
 # <a name="secure-by-default-in-office-365"></a>Standardmäßig sichern in Office 365
 
@@ -41,7 +41,7 @@ Microsoft 365-Organisationen mit Postfächern in Exchange Online sind durch Exch
 1. E-Mails mit mutmaßlicher Schadsoftware werden automatisch isoliert, und Empfänger werden benachrichtigt. Weitere Informationen finden Sie unter [configure Anti-Malware Policies in EoP](configure-anti-malware-policies.md).
 1. Phishing-e-Mails, die als "hohes Vertrauen" identifiziert werden, werden gemäß der Antispampolitik-Aktion verarbeitet. Weitere Informationen finden Sie unter [configure Anti-Spam Policies in EoP](configure-your-spam-filter-policies.md).
 
-Da Microsoft unsere Kunden standardmäßig schützen möchte, werden einige Mandanten Außerkraftsetzungen nicht auf Schadsoftware oder Phishing mit hoher Zuverlässigkeit angewendet. Zu diesen Außerkraftsetzungen gehören:
+Da Microsoft unsere Kunden standardmäßig schützen möchte, werden einige Überschreibungen von Mandanten nicht auf Schadsoftware oder Phishing für hohe Vertrauenswürdigkeit angewendet. Zu diesen Außerkraftsetzungen gehören:
 
 - Zugelassene Absenderlisten oder zugelassene Domänenlisten (Anti-Spam-Richtlinien)
 - Outlook-sichere Absender
