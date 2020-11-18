@@ -22,7 +22,7 @@ ms.locfileid: "48642503"
 ---
 # <a name="contact-support-for-germany"></a>Kontaktieren des Supports für Deutschland
 
-[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).
+[Suchen Sie ein anderes Land oder eine andere Region.](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 0800 589 2332
