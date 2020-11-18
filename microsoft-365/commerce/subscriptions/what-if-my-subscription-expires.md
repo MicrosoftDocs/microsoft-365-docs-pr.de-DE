@@ -23,28 +23,28 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Erfahren Sie, was mit Ihren Daten geschieht, wenn Ihr Microsoft 365 for Business-Abonnement abläuft, deaktiviert ist oder wenn Sie kündigen.
-ms.openlocfilehash: b09f56fefb7791af012c9dab2ba4e5684b9bf89f
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: c191b2fa795614a272b28cedae8d23693933dc95
+ms.sourcegitcommit: 0badd6a7af803a52c7c46a4374211cb89307eacf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906823"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49135979"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Was geschieht mit meinen Daten und dem Zugriff, wenn mein Microsoft 365 for Business-Abonnement endet?
 
-Wenn Ihr Abonnement endet – entweder weil es abläuft oder weil Sie sich entscheiden, den Vorgang abzubrechen – wird der Zugriff auf Microsoft 365-Dienste,-Anwendungen und-Kundendaten in mehreren Status durchlaufen, bevor das Abonnement vollständig deaktiviert oder nicht mehr *bereit* gestellt wird. Wenn Sie sich dieser Progression bewusst sind, können Sie Ihr Abonnement besser in einen aktiven Zustand zurückversetzen, bevor es zu spät ist, oder-wenn Sie Microsoft 365 verlassen-Ihre Daten sichern, bevor Sie endgültig gelöscht werden.
+Wenn Ihr Abonnement endet – entweder weil es abläuft oder weil Sie sich entscheiden, den Vorgang abzubrechen – wird der Zugriff auf Microsoft 365-Dienste,-Anwendungen und-Kundendaten in mehreren Status durchlaufen, bevor das Abonnement vollständig deaktiviert oder *gelöscht* wird. Wenn Sie sich dieser Progression bewusst sind, können Sie Ihr Abonnement besser in einen aktiven Zustand zurückversetzen, bevor es zu spät ist, oder-wenn Sie Microsoft 365 verlassen-Ihre Daten sichern, bevor Sie endgültig gelöscht werden.
 
 Lesen Sie diese wichtigen Informationen, bevor Sie sich an den [Microsoft 365-Support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)wenden.
   
 ## <a name="what-happens-to-data-when-a-subscription-expires"></a>Was geschieht mit Daten, wenn ein Abonnement abläuft?
 
-- Wenn Ihr Abonnement abläuft, wird die folgende Phase durchlaufen: abgelaufen/deaktiviert/nicht verfügbar. Die abgelaufene Phase beginnt unmittelbar nach Erreichen des Enddatums des Abonnements.
+- Wenn Ihr Abonnement abläuft, durchläuft es die folgenden Phasen: abgelaufen/deaktiviert/gelöscht. Die abgelaufene Phase beginnt unmittelbar nach Erreichen des Enddatums des Abonnements.
 - Wenn Sie die wiederkehrende Abrechnung für Ihr Jahresabonnement deaktivieren, wird die gleiche Phase wie ein abgelaufenes Abonnement durchlaufen. Die erste Phase beginnt mit dem Jahrestag des jährlichen Abonnements, nicht ab dem Datum, an dem Sie die Einstellung für die wiederkehrende Abrechnung des Abonnements deaktiviert haben.
 - Wenn Sie Ihr monatliches Abonnement kündigen, ist es sofort (zum Zeitpunkt der Stornierung) deaktiviert. Dies bedeutet, dass Ihre Benutzer sofort den Zugriff auf die Microsoft 365-Objekte verlieren und nur Administratoren Zugriff auf die Daten für die nächsten 90 Tage haben.
 
 In der folgenden Tabelle wird erklärt, was Sie erwarten können, wenn ein bezahltes Microsoft 365 for Business-Abonnement abläuft.
 
-| **Active**                                                             | **Abgelaufen <br/> (30 Tage \* )**                                                | **Deaktiviert <br/> (90 Tage \* )**                                               | **Nicht Bereitgestellt**                                                                         |
+| Aktiv | Abgelaufen <br/>(30 Tage \* ) | Deaktiviert <br/>(90 Tage \* ) | Gelöscht |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | *Für alle zugängliche Daten*                                               | *Für alle zugängliche Daten*                                                     | *Nur für Administratoren zugängliche Daten*                                             | **Gelöschte Daten <br/> Azure Active Directory wird entfernt, wenn Sie nicht von anderen Diensten verwendet werden** |
 | Benutzer haben normalen Zugriff auf Microsoft 365, Dateien und Anwendungen   | Benutzer haben normalen Zugriff auf Microsoft 365, Dateien und Anwendungen              | Benutzer können nicht auf Microsoft 365, Dateien oder Anwendungen zugreifen                        | Benutzer können nicht auf Microsoft 365, Dateien oder Anwendungen zugreifen                                     |
@@ -62,7 +62,7 @@ Wenn Sie Ihr Abonnement vor dem Ende des Termins kündigen, überspringt das Abo
   
 Dies können Sie für sich und Ihre Benutzer erwarten, wenn Sie ein Abonnement kündigen:
   
-- **Administratorzugriff** : Administratoren können sich weiterhin anmelden, auf das Admin Center zugreifen und andere Abonnements nach Bedarf kaufen. Als globaler Administrator oder Rechnungsadministrator haben Sie 90 Tage Zeit, um [das Abonnement zu reaktivieren](reactivate-your-subscription.md), wobei alle Daten erhalten bleiben.
+- **Administratorzugriff**: Administratoren können sich weiterhin anmelden, auf das Admin Center zugreifen und andere Abonnements nach Bedarf kaufen. Als globaler Administrator oder Rechnungsadministrator haben Sie 90 Tage Zeit, um [das Abonnement zu reaktivieren](reactivate-your-subscription.md), wobei alle Daten erhalten bleiben.
 
 - **Benutzer Zugriff** Ihre Benutzer können keine Dienste wie OneDrive für Unternehmen verwenden oder auf Kundendaten zugreifen – beispielsweise e-Mails oder Dokumente auf Teamwebsites. Office-Anwendungen wie Word und Excel wechseln schließlich in einen schreibgeschützten Modus mit eingeschränkter Funktionalität, und die Benachrichtigung [Nicht lizenziertes Produkt](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx) wird angezeigt.
 
@@ -192,16 +192,16 @@ In diesem Status wird Ihr Zugriff erheblich verringert. Ihre Benutzer können si
 
 Als globaler oder abrechnungsadministrator können Sie [das Abonnement reaktivieren](reactivate-your-subscription.md) und Microsoft 365 weiterhin verwenden, wobei alle Ihre Kundendaten intakt sind. Wenn Sie sich für eine erneute Aktivierung entscheiden, [Sichern Sie die Daten](back-up-data-before-switching-plans.md).
 
-### <a name="state-deprovisioned"></a>State: unprovisioned
+### <a name="state-deleted"></a>Status: gelöscht
   
- **Was Sie erwarten können:** Wenn Sie Ihr Abonnement nicht reaktivieren, während die Nachfrist läuft oder es deaktiviert ist, wird seine Bereitstellung aufgehoben.
+ **Was Sie erwarten sollten:** Wenn Sie Ihr Abonnement nicht erneut aktivieren, solange es in der Kulanzzeit ist oder deaktiviert ist, wird das Abonnement gelöscht.
   
 Administratoren und Benutzer können nicht mehr auf die im Abonnement enthaltenen Dienste oder Office-Anwendungen zugreifen. Alle Kundendaten – von Benutzerdaten zu Dokumenten und e-Mails – werden endgültig gelöscht und können nicht wiederhergestellt werden.
   
 Zu diesem Zeitpunkt können Sie das Abonnement nicht mehr reaktivieren. Allerdings können Sie als globaler oder abrechnungsadministrator weiterhin auf das Admin Center zugreifen, um andere Abonnements zu verwalten, oder um neue Abonnements zu erwerben, um Ihre geschäftlichen Anforderungen zu erfüllen.
   
 > [!NOTE]
-> Durch Hinzufügen eines neuen Abonnements desselben Typs wie das Abonnement, dessen Bereitstellung aufgehoben wurde, werden die diesem Abonnement zugeordneten Daten nicht wiederhergestellt.
+> Durch das Hinzufügen eines neuen Abonnements desselben Typs, das gelöscht wurde, werden die dem gelöschten Abonnement zugeordneten Daten nicht wiederhergestellt.
 
 
 > [!NOTE]

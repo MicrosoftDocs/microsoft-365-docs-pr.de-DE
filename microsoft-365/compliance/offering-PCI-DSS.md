@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: cb4d1a4c4632763506fd2d3b05431acb9233f744
-ms.sourcegitcommit: d333d82fd5e4f3265e8b9372094e85875bee6fe5
+ms.openlocfilehash: 57164e08128080f90cb3985b3a3f887521f4c3d5
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49071963"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126598"
 ---
 # <a name="payment-card-industry-pci-data-security-standard-dss"></a>Payment Card Industry (PCI) Data Security Standard (DSS)
 
@@ -92,7 +92,7 @@ Zur Zeit sind OneDrive for Business und SharePoint Online nur in den Vereinigten
 
 **Was ist in OneDrive for Business und SharePoint Online enthalten?**
 
-Derzeit werden nur Dateien und Dokumente, die zu OneDrive for Business und SharePoint Online hochgeladen wurden, mit PCI DSS beanstandet.
+Derzeit sind nur Dateien und Dokumente, die zu OneDrive for Business und SharePoint Online hochgeladen wurden, mit PCI DSS kompatibel.
 
 ## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Verwenden Sie den Microsoft Compliance-Manager, um Ihr Risiko einzuschätzen
 
