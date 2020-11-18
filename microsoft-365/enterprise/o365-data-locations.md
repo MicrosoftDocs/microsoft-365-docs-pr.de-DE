@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Finden Sie Informationen dazu, wo in der ganzen Welt Ihre Microsoft 365-Kundendaten gespeichert werden
-ms.openlocfilehash: e450468b54bdbce0e6c01dd3b935922836ab9f90
-ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
+ms.openlocfilehash: 4fd3f480ef2ad3389e9a959695b9654badbda27f
+ms.sourcegitcommit: 0badd6a7af803a52c7c46a4374211cb89307eacf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48493685"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49135991"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -127,6 +127,7 @@ Im Folgenden sind die Orte angegeben, an denen ruhende Kundendaten im Hinblick a
 | Land | Stadt/Ort |
 | --- | --- |
 | Australien | Sydney, Melbourne |
+| Brasilien | Rio, Campinas |
 | Kanada | Quebec City, Toronto |
 | Europäische Union | Österreich (Wien), Finnland (Helsinki), Frankreich (Paris, Marseille), Irland (Dublin), Niederlande (Amsterdam) |
 | Frankreich | Paris, Marseille |
@@ -386,7 +387,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="argentina"></a>Argentinien
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 3 – Nord- und Südamerika |
 | OneDrive for Business | Globale Region 3 – Nord- und Südamerika |
@@ -892,19 +893,19 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 
 | Dienst | Standort |
 | --- | --- |
-| Exchange Online | Globale Region 3 – Nord- und Südamerika |
-| OneDrive for Business | Globale Region 3 – Nord- und Südamerika |
-| SharePoint Online | Globale Region 3 – Nord- und Südamerika |
+| Exchange Online | Brasilien |
+| OneDrive for Business | Brasilien |
+| Microsoft Office SharePoint Online | Brasilien |
 | Skype for Business | Vereinigte Staaten |
-| Microsoft Teams | Vereinigte Staaten |
-| Office Online &amp; Mobile | Globale Region 3 – Nord- und Südamerika |
-| EOP | Globale Region 3 – Nord- und Südamerika |
+| Microsoft Teams | Brasilien |
+| Office Online &amp; Mobile  | Brasilien |
+| EOP | Brasilien |
 | Intune | Vereinigte Staaten |
-| MyAnalytics | Globale Region 3 – Nord- und Südamerika |
+| MyAnalytics | Brasilien |
 | Planner | Vereinigte Staaten |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote Services | Globale Region 3 – Nord- und Südamerika |
+| OneNote-Dienste | Brasilien |
 | Stream | Vereinigte Staaten |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -2282,7 +2283,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="guadeloupe"></a>Guadeloupe
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Ort |
+| Dienst | Standort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -2912,7 +2913,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | Intune | Globale Region 1 – EMEA |
@@ -5437,7 +5438,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
