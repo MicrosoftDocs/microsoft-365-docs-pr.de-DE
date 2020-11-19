@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Informieren Sie sich über die neuen Regionen der Office 365-Rechenzentren und erfahren Sie, wie Sie die Option „Data Residency“ verwenden können, um einen Umzug Ihrer Kerndaten in eine neue Region anzufordern.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 17b8d5c828a8c528aba180c260510345e77226d5
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: 6c5e63a973ca6fdf6aaaaca884df306ff790c325
+ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333712"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49349244"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Verschieben von Kerndaten in neue Standorte der Microsoft 365-Rechenzentren
 
@@ -48,6 +48,7 @@ Bestandskunden, die ihre Kundenkerndaten in einer bereits vorhandenen Rechenzent
 |**Schweiz, Liechtenstein**| Europäische Union | Schweiz | Dezember 2019 |
 |**Deutschland**| Europäische Union | Deutschland | Dezember 2019 |
 |**Norwegen**| Europäische Union | Norwegen | April 2020 |
+|**Brasilien**| Nord- und Südamerika | Brasilien | November 2020 |
 
 Ab dem 1. Oktober 2020 Kunden mit einem Office 365 Education-Abonnement, das im Mandanten enthalten ist, keinen Migrations Anspruch.
 

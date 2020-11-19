@@ -14,46 +14,33 @@ search.appverid: MET150
 description: Behebung von Bedrohungen
 appliesto:
 - Microsoft 365 Defender
-ms.openlocfilehash: 60a658ec4f94dc35519c21b5354f480845342663
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: 5568a296697c7cdbbada333d45f498a2876603f9
+ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49020939"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49350734"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Beheben von in Office 365 zugestellten böswilligen e-Mails
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Die Wiederherstellung bedeutet, dass eine vorgeschriebene Aktion gegen eine Bedrohung erfolgt. Böswillige e-Mails, die an Ihre Organisation gesendet werden, können durch das System, durch eine automatische Bereinigung (Zero-Hour Auto-Purge) oder durch Sicherheitsteams durch Korrekturaktionen wie *Verschieben in den Posteingang* , verschieben in *Junk* , *verschieben zu gelöschten Elementen* , *Soft Delete* oder *Hard Delete* bereinigt werden. Mit Microsoft Defender für Office 365 P2/E5 können Sicherheitsteams Bedrohungen in e-Mail-und Zusammenarbeitsfunktionen durch manuelle und automatisierte Untersuchung beheben.
+Die Wiederherstellung bedeutet, dass eine vorgeschriebene Aktion gegen eine Bedrohung erfolgt. Böswillige e-Mails, die an Ihre Organisation gesendet werden, können durch das System, durch eine automatische Bereinigung (Zero-Hour Auto-Purge) oder durch Sicherheitsteams durch Korrekturaktionen wie *Verschieben in den Posteingang*, verschieben in *Junk*, *verschieben zu gelöschten Elementen*, *Soft Delete* oder *Hard Delete* bereinigt werden. Mit Microsoft Defender für Office 365 P2/E5 können Sicherheitsteams Bedrohungen in e-Mail-und Zusammenarbeitsfunktionen durch manuelle und automatisierte Untersuchung beheben.
 
 > [!NOTE]
 > Um böswillige e-Mails zu beheben, benötigen Sicherheitsteams die *Such-und Säuberungs* Rolle, die Ihnen zugewiesen ist. Die Rollenzuweisung erfolgt über Berechtigungen im Security and Compliance Center.
 
 ## <a name="what-you-need-to-know-before-you-begin"></a>Was Sie wissen müssen, bevor Sie beginnen
 
-Um beispielsweise Nachrichtenkopfzeilen anzeigen oder e-Mail-Inhalte herunterladen zu können, muss eine neue Rolle mit dem Namen *Preview* zu einer anderen entsprechenden Rollengruppe hinzugefügt werden. In der folgenden Tabelle sind die erforderlichen Rollen und Berechtigungen aufgeführt.
-
-****
-
-|Aktivität|Rollengruppe|*Vorschau* -Rolle erforderlich?|
-|---|---|:---:|
-|Verwenden von Threat Explorer (und Echtzeiterkennung) zum Analysieren von Bedrohungen |Globaler Administrator <p> Sicherheitsadministrator <p> Sicherheitsleseberechtigter|Nein|
-|Verwenden von Threat Explorer (und Echtzeiterkennung) zum Anzeigen von Kopfzeilen für e-Mail-Nachrichten und zum Herunterladen von isolierten e-Mail-Nachrichten in der Vorschau|Globaler Administrator <p> Sicherheitsadministrator <p> Sicherheitsleseberechtigter|Nein|
-|Verwenden von Threat Explorer zum Anzeigen von Kopfzeilen und Herunterladen von an Postfächern zugestellten e-Mails|Globaler Administrator <p> Sicherheitsadministrator <p> Sicherheitsleseberechtigter <p> Vorschau|Ja|
-
-> [!NOTE]
->
-> - Vorschau ist eine *Rolle* , keine *Rollengruppe*. Die Vorschau Rolle muss einer vorhandenen Rollengruppe für Office 365 hinzugefügt werden. Die *globale Administrator Rolle* wird im [Microsoft 365 Admin Center](https://admin.microsoft.com)zugewiesen. Die Rollen "Sicherheits Administrator" und "Sicherheits Leser" werden im [Security & Compliance Center](https://protection.office.com)zugewiesen. Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
->
-> - Administratoren können erforderliche Aktionen für e-Mails durchführen, aber um diese Aktionen genehmigt zu erhalten, muss Ihnen die *Such-und Säuberungs* Rolle über **Sicherheits & Compliance Center** \> - **Berechtigungen** zugewiesen sein.
+Administratoren können erforderliche Aktionen für e-Mails durchführen, aber um diese Aktionen genehmigt zu erhalten, muss Ihnen die *Such-und Säuberungs* Rolle über **Sicherheits & Compliance Center** \> - **Berechtigungen** zugewiesen sein. Ohne die Rolle "suchen und löschen", die einer der Rollengruppen hinzugefügt wurde, können Sie die Aktion nicht ausführen.
 
 ## <a name="manual-and-automated-remediation"></a>Manuelle und automatische Korrektur
 
-*Manuelle* Suche erfolgt, wenn Sicherheitsteams Bedrohungen manuell mithilfe der Such-und Filterfunktionen in Threat Explorer identifizieren. Manuelle e-Mail-Korrektur kann durch jede e-Mail-Ansicht ( *Schadsoftware* , *Phishing* oder *alle e-Mail* -Nachrichten) ausgelöst werden, nachdem Sie eine Gruppe von e-Mails identifiziert haben, die behoben werden müssen.
+*Manuelle* Suche erfolgt, wenn Sicherheitsteams Bedrohungen manuell mithilfe der Such-und Filterfunktionen in Threat Explorer identifizieren. Manuelle e-Mail-Korrektur kann durch jede e-Mail-Ansicht (*Schadsoftware*, *Phishing* oder *alle e-Mail*-Nachrichten) ausgelöst werden, nachdem Sie eine Gruppe von e-Mails identifiziert haben, die behoben werden müssen.
 
-![Manuelle Suche in Office 365 Bedrohungs-Explorer nach Datum.](../../media/tp-RemediationArticle1.png)
+> [!div class="mx-imgBorder"]
+> [![Manuelle Suche in Office 365 Bedrohungs-Explorer nach Datum. ](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
 
 Sicherheitsteams können mit dem Threat-Explorer auf verschiedene Weise e-Mails auswählen:
 
@@ -65,17 +52,19 @@ Sicherheitsteams können mit dem Threat-Explorer auf verschiedene Weise e-Mails 
 
 Sobald e-Mails über den Threat Explorer ausgewählt wurden, können Sie die Wiederherstellung starten, indem Sie eine direkte Aktion durchführen oder e-Mails für eine Aktion anschlangen:
 
-- Direkte Genehmigung: Wenn Aktionen wie *Verschieben in den Posteingang* , in *Junk* verschieben, *zu gelöschten Elementen* verschieben, *Soft Delete* oder *Hard Delete* von Sicherheitspersonal ausgewählt werden, das über entsprechende Berechtigungen verfügt, und die nächsten korrekturschritte befolgt werden, wird mit dem Korrekturprozess begonnen, die ausgewählte Aktion auszuführen. Ein temporäres Flyout zeigt eine laufende Wiederherstellung an.
+- Direkte Genehmigung: Wenn Aktionen wie *Verschieben in den Posteingang*, in *Junk* verschieben, *zu gelöschten Elementen* verschieben, *Soft Delete* oder *Hard Delete* von Sicherheitspersonal ausgewählt werden, das über entsprechende Berechtigungen verfügt, und die nächsten korrekturschritte befolgt werden, wird mit dem Korrekturprozess begonnen, die ausgewählte Aktion auszuführen. Ein temporäres Flyout zeigt eine laufende Wiederherstellung an.
 
 - Genehmigung in zwei Schritten: eine Aktion "zur Korrektur hinzufügen" kann von Administratoren vorgenommen werden, die nicht über die entsprechenden Berechtigungen verfügen oder die auf die Ausführung der Aktion warten müssen. In diesem Fall werden die Ziel-e-Mails einem Behebungs Container hinzugefügt. Die Genehmigung ist erforderlich, bevor die Wiederherstellung ausgeführt wird.
 
 **Automatisierte Ermittlungs-und Antwort** Aktionen werden durch Warnungen oder durch Sicherheits Operations Teams aus dem Threat Explorer ausgelöst. Hierzu gehören möglicherweise Empfohlene Korrekturaktionen, die von einem Sicherheits Betriebsteam genehmigt werden müssen. Diese Aktionen sind auf der Registerkarte **Aktion** in der automatischen Untersuchung enthalten.
 
-![E-Mail mit Schadsoftware auf der Seite "zapped", bei der die Ausführung von zap angezeigt wird.](../../media/tp-RemediationArticle3.png)
+> [!div class="mx-imgBorder"]
+> [![E-Mail mit Schadsoftware auf der Seite "zapped", bei der die Ausführung von zap angezeigt wird. ](../../media/tp-RemediationArticle3.png)](../../media/tp-RemediationArticle3.png#lightbox)
 
-Im Action Center werden alle Korrekturen (entweder direkte Genehmigung oder Genehmigung in zwei Schritten), die im Threat Explorer erstellt wurden, sowie genehmigte Aktionen, die aus automatischen Untersuchungen stammen, angezeigt. Greifen Sie über den linken Navigationsbereich unter **Review**  >  - **Wartungs Center** auf diese zu.
+Im Action Center werden alle Korrekturen (entweder direkte Genehmigung oder Genehmigung in zwei Schritten), die im Threat Explorer erstellt wurden, sowie genehmigte Aktionen, die aus automatischen Untersuchungen stammen, angezeigt. Greifen Sie über den linken Navigationsbereich unter **Review**  >  -**Wartungs Center** auf diese zu.
 
-![Das Aktionscenter mit einer Liste von Bedrohungen nach Datum und Schweregrad.](../../media/tp-RemediationArticle4.png)
+> [!div class="mx-imgBorder"]
+> [![Das Aktionscenter mit einer Liste von Bedrohungen nach Datum und Schweregrad. ](../../media/tp-RemediationArticle4.png)](../../media/tp-RemediationArticle4.png#lightbox)
 
 Das Wartungs Center zeigt alle Korrekturaktionen für die letzten 30 Tage an. Durch Threat Explorer ausgeführte Aktionen werden nach dem Namen aufgelistet, den das Sicherheits Betriebsteam beim Erstellen der Korrektur bereitgestellt hat. Durch automatisierte Untersuchungen ausgeführte Aktionen haben Titel, die mit der zugehörigen Warnung beginnen, die die Untersuchung ausgelöst hat, beispielsweise "zap-e-Mail-Cluster...".
 
@@ -83,9 +72,10 @@ Das Wartungs Center zeigt alle Korrekturaktionen für die letzten 30 Tage an. Du
 
 - Registerkarte **e-Mail-Übermittlung** : zeigt die Anzahl der e-Mails an, die über den Threat Explorer oder automatisierte Untersuchungen zur Korrektur übermittelt wurden. Diese e-Mail-Nachrichten können Aktionen unterliegen.
 
-  ![Das Action Center mit Aktionen und nicht Aktionen-Bedrohungen.](../../media/tp-RemediationArticle5.png)
+  > [!div class="mx-imgBorder"]
+  > [![Das Action Center mit Aktionen und nicht Aktionen-Bedrohungen. ](../../media/tp-RemediationArticle5.png)](../../media/tp-RemediationArticle5.png#lightbox)
 
-  - **Aktionable** : e-Mails an den folgenden Cloud-Postfachspeicher Orten können verarbeitet und verschoben werden:
+  - **Aktionable**: e-Mails an den folgenden Cloud-Postfachspeicher Orten können verarbeitet und verschoben werden:
     - Posteingang
     - Junk-E-Mail
     - Ordner gelöscht
@@ -95,7 +85,7 @@ Das Wartungs Center zeigt alle Korrekturaktionen für die letzten 30 Tage an. Du
       > Derzeit kann nur ein Benutzer mit Zugriff auf das Postfach Elemente aus einem vorläufig gelöschten Ordner wiederherstellen.
 
   - **Keine Aktion** möglich: e-Mails an den folgenden Speicherorten können in Korrekturaktionen nicht bearbeitet oder verschoben werden:
-    - Quarantäne
+    - Quarantine
     - Hart gelöschter Ordner
     - Lokal/extern
     - Fehlgeschlagen/gelöscht
@@ -117,26 +107,29 @@ Das Wartungs Center zeigt alle Korrekturaktionen für die letzten 30 Tage an. Du
 
   In der folgenden Abbildung wird gezeigt, wie eine Übermittlung im Wartungs Center aussieht. Eine Korrektur kann mehrere Übermittlungen enthalten. Wenn mehrere Aktionen durch eine automatisierte Untersuchung genehmigt werden, wird jede e-Mail-oder e-Mail-Cluster Aktion in derselben Korrektur wie eine andere Übermittlung angezeigt.
 
-  ![Zap-e-Mail-Cluster-Flyout-Bereich.](../../media/tp-RemediationArticle6.png)
+  > [!div class="mx-imgBorder"]
+  > [![Zap-e-Mail-Cluster-Flyout-Bereich. ](../../media/tp-RemediationArticle6.png)](../../media/tp-RemediationArticle6.png#lightbox)
 
   Wählen Sie ein e-Mail-Übermittlungs Element aus, um die Details dieser Korrektur anzuzeigen, beispielsweise die Abfrage (wenn die Korrektur durch automatische Untersuchungen oder Bedrohungs-Explorer durch Auswählen einer Abfrage ausgelöst wird) sowie die Start-und Endzeit der Korrektur. Außerdem wird eine Liste der Nachrichten angezeigt, die zur Behebung übermittelt wurden. Wenn Nachrichten aus dem Aufbewahrungszeitraum für Threat Explorer entfernt werden, verschwinden die Nachrichten aus dieser Liste. In der Liste werden auch einzelne Nachrichten angezeigt, die behoben werden können.
 
-- **Aktionsprotokolle** : auf dieser Registerkarte werden die vermittelten Nachrichten angezeigt, einschließlich des genehmigten Datums, des Administrators, der die Aktion, die Aktion, den Status und die Anzahl genehmigt hat.
+- **Aktionsprotokolle**: auf dieser Registerkarte werden die vermittelten Nachrichten angezeigt, einschließlich des genehmigten Datums, des Administrators, der die Aktion, die Aktion, den Status und die Anzahl genehmigt hat.
 
   Status kann wie folgt lauten:
 
-  - **Gestartet** : die Korrektur wird ausgelöst.
-  - In der **Warteschlange** : die Korrektur wird zur Minderung von e-Mails in die Warteschlange eingereiht.
-  - **In Bearbeitung** : Minderung wird ausgeführt.
-  - **Abgeschlossen** : Minderung auf alle behebbaren e-Mails, die entweder erfolgreich oder mit einigen Fehlern abgeschlossen wurden.
-  - **Fehler** : Es wurden keine Korrekturen erfolgreich ausgeführt.
+  - **Gestartet**: die Korrektur wird ausgelöst.
+  - In der **Warteschlange**: die Korrektur wird zur Minderung von e-Mails in die Warteschlange eingereiht.
+  - **In Bearbeitung**: Minderung wird ausgeführt.
+  - **Abgeschlossen**: Minderung auf alle behebbaren e-Mails, die entweder erfolgreich oder mit einigen Fehlern abgeschlossen wurden.
+  - **Fehler**: Es wurden keine Korrekturen erfolgreich ausgeführt.
 
   Da nur behebbare e-Mails bearbeitet werden können, wird die Bereinigung jeder e-Mail als erfolgreich oder fehlgeschlagen angezeigt. Aus den insgesamt behebbaren e-Mails werden erfolgreiche und fehlgeschlagene Schadensbegrenzende Maßnahmen gemeldet.
 
-  - **Erfolg** : die gewünschte Aktion bei behebbaren e-Mails wurde durchgeführt. Beispiel: ein Administrator möchte e-Mails aus Postfächern entfernen, sodass der Administrator die Aktion von e-Mails mit weichen Löschaktionen ausführt. Wenn im ursprünglichen Ordner keine behebbare e-Mail gefunden wird, nachdem die Aktion ausgeführt wurde, wird der Status als erfolgreich angezeigt.
+  - **Erfolg**: die gewünschte Aktion bei behebbaren e-Mails wurde durchgeführt. Beispiel: ein Administrator möchte e-Mails aus Postfächern entfernen, sodass der Administrator die Aktion von e-Mails mit weichen Löschaktionen ausführt. Wenn im ursprünglichen Ordner keine behebbare e-Mail gefunden wird, nachdem die Aktion ausgeführt wurde, wird der Status als erfolgreich angezeigt.
 
-  - **Fehler** : die gewünschte Aktion bei behebbaren e-Mails ist fehlgeschlagen. Beispiel: ein Administrator möchte e-Mails aus Postfächern entfernen, sodass der Administrator die Aktion von e-Mails mit weichen Löschaktionen ausführt. Wenn nach dem Ausführen der Aktion noch eine behebbare e-Mail im Postfach gefunden wird, wird der Status als Fehler angezeigt.
+  - **Fehler**: die gewünschte Aktion bei behebbaren e-Mails ist fehlgeschlagen. Beispiel: ein Administrator möchte e-Mails aus Postfächern entfernen, sodass der Administrator die Aktion von e-Mails mit weichen Löschaktionen ausführt. Wenn nach dem Ausführen der Aktion noch eine behebbare e-Mail im Postfach gefunden wird, wird der Status als Fehler angezeigt.
 
   Wählen Sie im Aktionsprotokoll ein beliebiges Element aus, um Korrektur Details anzuzeigen. Wenn die Details "erfolgreich" oder "nicht im Postfach gefunden" sagen, wurde das Element bereits aus dem Postfach entfernt. Bei der Wiederherstellung ist manchmal ein systemischer Fehler aufgetreten. In diesen Fällen empfiehlt es sich, die Wiederherstellung erneut zu versuchen.
+  
+  Für den Fall einer großen Batchverarbeitung können Sie auch die Nachrichten zur Korrektur per e-Mail-Übermittlung und Nachrichten exportieren, die über Aktionsprotokolle behoben wurden. Der Export Grenzwert wird auf 100K-Datensätze erhöht.
 
   Die Wiederherstellung ist ein leistungsfähiges Tool zum Abwehren von Bedrohungen und zum Adressieren verdächtiger e-Mails. Es hilft, eine Organisation sicher zu halten.

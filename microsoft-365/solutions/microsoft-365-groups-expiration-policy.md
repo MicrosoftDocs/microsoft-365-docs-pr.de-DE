@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Erfahren Sie mehr über Ablaufrichtlinien für Microsoft 365-Gruppen.
-ms.openlocfilehash: 8fc9c48d5a86c68eabd4139ad0a2d0dc1e83da0f
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 4b283bcc9f4e54462a71b9aee70d6312b9f127d6
+ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377223"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49350712"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365-Gruppen Ablaufrichtlinie
 
@@ -34,7 +34,7 @@ Wenn eine Gruppe abläuft, wird Sie "vorläufig gelöscht", was bedeutet, dass S
 Administratoren können einen Ablaufzeitraum angeben, und alle inaktiven Gruppen, die das Ende dieses Zeitraums erreichen und nicht erneuert werden, werden gelöscht. (Dies umfasst Archivierte Teams.) Der Ablaufzeitraum beginnt mit der Erstellung der Gruppe oder mit dem Datum, an dem Sie zuletzt erneuert wurde. Gruppenbesitzer erhalten vor dem Ablauf automatisch eine E-Mail, die es ihnen erlaubt, die Gruppe für ein weiteres Ablaufintervall zu erneuern. Microsoft Teams-Benutzer können persistente Benachrichtigungen in Microsoft Teams anzeigen.
 
 Gruppen, die aktiv verwendet werden, werden automatisch erneuert. Durch eine der folgenden Aktionen wird automatisch eine Gruppe erneuert:
-- SharePoint – anzeigen, bearbeiten, herunterladen, weiterleiten, freigeben oder Hochladen von Dateien.
+- SharePoint – anzeigen, bearbeiten, herunterladen, weiterleiten, freigeben oder Hochladen von Dateien. (Das Anzeigen einer SharePoint-Seite zählt nicht als Aktion für die automatische Erneuerung.)
 - Outlook – beitreten einer Gruppe, lesen oder Schreiben von Gruppen Nachrichten der Gruppe und wie eine Nachricht (Outlook im Web).
 - Teams – besuchen eines Teams-Kanals.
 
@@ -51,7 +51,7 @@ Es ist wichtig zu wissen, dass der Ablauf standardmäßig deaktiviert ist. Admin
 |Rolle|Was Sie tun können|
 |---------|---------|
 |Office 365 globaler Administrator (in Azure, der Unternehmensadministrator), Benutzer Administrator|Erstellen, lesen, aktualisieren oder löschen Sie die Microsoft 365 Groups-Ablaufrichtlinien Einstellungen.|
-|User|Erneuern oder [Wiederherstellen](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) einer eigenen Microsoft 365-Gruppe|
+|Benutzer|Erneuern oder [Wiederherstellen](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) einer eigenen Microsoft 365-Gruppe|
 
 ## <a name="how-to-set-the-expiration-policy"></a>Vorgehensweise Festlegen der Ablaufrichtlinie
 
@@ -61,7 +61,7 @@ Die Gruppen Lebensdauer wird in Tagen angegeben und kann auf 180, 365 oder auf e
 
 Wenn die Gruppe keinen Besitzer hat, werden die Ablauf-e-Mails an den angegebenen Administrator weitergegeben.
 
-Sie können die Richtlinie für alle Gruppen oder nur für ausgewählte Gruppen festlegen oder vollständig deaktivieren, indem Sie **keine**auswählen. Beachten Sie, dass Sie derzeit keine unterschiedlichen Richtlinien für verschiedene Gruppen haben können.
+Sie können die Richtlinie für alle Gruppen oder nur für ausgewählte Gruppen festlegen oder vollständig deaktivieren, indem Sie **keine** auswählen. Beachten Sie, dass Sie derzeit keine unterschiedlichen Richtlinien für verschiedene Gruppen haben können.
 
 ![Screenshot von Gruppen Ablaufeinstellungen in Azure Active Directory](../media/azure-groups-expiration-settings.png)
 

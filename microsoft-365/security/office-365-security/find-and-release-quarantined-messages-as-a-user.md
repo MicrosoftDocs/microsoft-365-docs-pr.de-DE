@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Benutzer können erfahren, wie sie in Exchange Online Protection (EOP) isolierte (unter Quarantäne gestellte) Nachrichten anzeigen und verwalten, die sie hätten empfangen sollen.
-ms.openlocfilehash: 2a8e37dc430af5b3d3c47179c721d83832f01184
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 48c727c442ee6f861499f1a72c687f7b3457c594
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600345"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49130851"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Suchen und Freigeben von isolierten Nachrichten als Benutzer in EOP
 
@@ -54,27 +54,16 @@ Als Benutzer können Sie unter Quarantäne gestellte Nachrichten anzeigen, freig
 2. Sie können die Ergebnisse sortieren, indem Sie auf eine verfügbare Spaltenüberschrift klicken. Klicken Sie auf **Spalten ändern**, um höchstens sieben Spalten anzuzeigen. Die Standardwerte sind mit einem Sternchen (<sup>\*</sup>) gekennzeichnet:
 
    - **Empfangen**<sup>\*</sup>
-
    - **Absender**<sup>\*</sup>
-
    - **Betreff**<sup>\*</sup>
-
    - **Quarantänegrund**<sup>\*</sup>
-
    - **Veröffentlicht?**<sup>\*</sup>
-
    - **Richtlinientyp**<sup>\*</sup>
-
    - **Läuft ab**<sup>\*</sup>
-
    - **Empfänger**
-
    - **Nachrichten-ID**
-
    - **Name der Richtlinie**
-
    - **Größe**
-
    - **Richtung**
 
    Klicken Sie nach Abschluss des Vorgangs auf **Speichern**, oder klicken Sie auf **Als Standard festlegen**.
@@ -82,29 +71,21 @@ Als Benutzer können Sie unter Quarantäne gestellte Nachrichten anzeigen, freig
 3. Klicken Sie auf **Filter**, um die Ergebnisse zu filtern. Die verfügbaren Filter sind:
 
    - **Ablaufzeit**: Filtern von Nachrichten nach ihrem Ablauf aus der Quarantäne:
-
      - **Heute**
-
      - **Nächste 2 Tage**
-
      - **Nächste 7 Tage**
-
      - **Benutzerdefiniert**: Geben Sie ein **Anfangsdatum** und **Enddatum** ein.
 
    - **Empfangszeit**: Geben Sie ein **Anfangsdatum** und **Enddatum** ein.
 
    - **Quarantänegrund**:
-
      - **Massensendung**
-
      - **Spam**
-
      - **Phishing**
-     
+
    - **Richtlinientyp**: Filtern von Nachrichten nach Richtlinientyp:
      - **Antiphishing-Richtlinie**
-     - **Richtlinie für gehostete Inhaltsfilter**
-     
+     - **Richtlinie für gehostete Inhaltsfilter** (Antispamrichtlinie)
 
    Klicken Sie auf **Löschen**, um den Filter zu löschen. Um das Filter-Flyout auszublenden, klicken Sie erneut auf **Filter**.
 
@@ -113,7 +94,7 @@ Als Benutzer können Sie unter Quarantäne gestellte Nachrichten anzeigen, freig
    - **Nachrichten-ID**: Die globale eindeutige ID der Nachricht. Wenn Sie eine Nachricht in der Liste auswählen, wird der Wert **Nachrichten-ID** im Flyout-Fenster **Details** angezeigt, der angezeigt wird. Administratoren können [Nachrichtenverfolgung](message-trace-scc.md) verwenden, um Nachrichten und die entsprechenden Nachrichten-ID-Werte zu suchen.
 
    - **E-Mail-Adresse des Absenders**: Die E-Mail-Adresse eines einzelnen Absenders.
-   
+
    - **Richtlinienname**: Verwenden Sie den vollständigen Namen der Nachricht. Bei der Suche wird nicht zwischen Groß- und Kleinschreibung unterschieden.
 
    - **E-Mail-Adresse des Empfängers**: Die E-Mail-Adresse eines einzelnen Empfängers.
@@ -165,9 +146,7 @@ Nachdem Sie eine Nachricht ausgewählt haben, haben Sie Optionen, was mit den Na
 - **Nachrichtenkopf anzeigen**: Wählen Sie diesen Link aus, um den Nachrichtenkopftext anzuzeigen. Um den Nachrichtenkopf im Detail zu analysieren, kopieren Sie den Nachrichtenkopftext in die Zwischenablage, und wählen Sie dann **Microsoft-Nachrichtenkopfanalyse** aus, um zur Remoteverbindungsuntersuchung zu wechseln (klicken Sie mit der rechten Maustaste, und wählen Sie **In neuer Registerkarte öffnen** aus, wenn Sie Microsoft 365 nicht verlassen möchten, um die Aufgabe auszuführen). Fügen Sie den Nachrichtenkopf auf der Seite in den Abschnitt "Nachrichtenkopfanalyse" ein, und wählen Sie dann **Kopfzeilen analysieren** aus:
 
 - **Vorschau der Nachricht anzeigen**: Wählen Sie im angezeigten Flyout-Fenster eine der folgenden Optionen:
-
   - **Quellansicht**: Zeigt die HTML-Version des Nachrichtentextes an, wobei alle Links deaktiviert sind.
-  
   - **Textansicht**: Zeigt den Nachrichtentext im Klartext an.
 
 - **Nachricht herunterladen**: Wählen Sie im daraufhin angezeigten Flyout-Fenster **Ich verstehe die Risiken beim Herunterladen dieser Nachricht** aus, um eine lokale Kopie der Nachricht im eml-Format zu speichern.

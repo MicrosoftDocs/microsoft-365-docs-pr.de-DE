@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: conceptual
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: Erstellen Sie Warnungsrichtlinien im Security and Compliance Center in Office 365 und Microsoft 365, um potenzielle Bedrohungen, Datenverlust und Berechtigungsprobleme zu überwachen.
-ms.openlocfilehash: 400c2373ea9c1f6c19e5481c620a657df2c22aa8
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 7b2d5b380f71a31302a54cedb6076e6fca54fa86
+ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842145"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49350745"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Warnungsrichtlinien im Security & Compliance Center
 
@@ -94,7 +94,7 @@ Eine Warnungs Richtlinie besteht aus den folgenden Einstellungen und Bedingungen
 
   Wenn eine Aktivität auftritt, die den Bedingungen der Warnungs Richtlinie entspricht, wird die generierte Warnung mit der Kategorie markiert, die in dieser Einstellung definiert ist. Auf diese Weise können Sie Warnungen nachverfolgen und verwalten, die die gleiche Kategorieeinstellungen auf der Seite **Benachrichtigungen anzeigen** im Security and Compliance Center haben, da Sie Warnungen basierend auf der Kategorie sortieren und Filtern können.
 
-- **Warnungsschweregrad** – ähnlich wie bei der Warnungskategorie weisen Sie Warnungsrichtlinien ein Severity-Attribut ( **niedrig** , **Mittel** , **hoch** oder **ininformational** ) zu. Wie bei der Warnungskategorie wird bei einer Aktivität, die den Bedingungen der Warnungs Richtlinie entspricht, die generierte Warnung mit dem gleichen Schweregrad markiert, der für die Warnungs Richtlinie festgelegt ist. Auf diese Weise können Sie auch Warnungen nachverfolgen und verwalten, die auf der Seite **Benachrichtigungen anzeigen** die gleiche Dringlichkeits Einstellung aufweisen. Sie können beispielsweise die Liste der Warnungen filtern, sodass nur Warnungen mit einem **hohen** Schweregrad angezeigt werden.
+- **Warnungsschweregrad** – ähnlich wie bei der Warnungskategorie weisen Sie Warnungsrichtlinien ein Severity-Attribut (**niedrig**, **Mittel**, **hoch** oder **ininformational**) zu. Wie bei der Warnungskategorie wird bei einer Aktivität, die den Bedingungen der Warnungs Richtlinie entspricht, die generierte Warnung mit dem gleichen Schweregrad markiert, der für die Warnungs Richtlinie festgelegt ist. Auf diese Weise können Sie auch Warnungen nachverfolgen und verwalten, die auf der Seite **Benachrichtigungen anzeigen** die gleiche Dringlichkeits Einstellung aufweisen. Sie können beispielsweise die Liste der Warnungen filtern, sodass nur Warnungen mit einem **hohen** Schweregrad angezeigt werden.
 
     > [!TIP]
     > Bei der Einrichtung einer Warnungs Richtlinie sollten Sie den Aktivitäten einen höheren Schweregrad zuweisen, die zu schwerwiegenden negativen Folgen führen können, beispielsweise die Erkennung von Schadsoftware nach der Zustellung an Benutzer, das Anzeigen vertraulicher oder klassifizierter Daten, die gemeinsame Nutzung von Daten mit externen Benutzern oder andere Aktivitäten, die zu Datenverlust oder Sicherheitsbedrohungen führen können. Dies kann Ihnen helfen, Warnungen und die Aktionen, die Sie zum untersuchen und beheben der zugrunde liegenden Ursachen durchführen, zu priorisieren.
@@ -134,7 +134,7 @@ In der Tabelle werden außerdem die Office 365 Enterprise und Office 365 US Gove
 |**Ungewöhnlicher Umfang der Dateilöschung**|Generiert eine Warnung, wenn eine ungewöhnlich große Anzahl von Dateien in SharePoint oder OneDrive innerhalb eines kurzen Zeitrahmens gelöscht wird. Diese Richtlinie weist eine Einstellung mit **mittlerem** Schweregrad auf.|Informationsverwaltung|E5/G5, Defender für Office 365 P2-oder Microsoft 365 E5-Add-on-Abonnement|
 |**Ungewöhnlich höhere e-Mail-Zuwachs Meldung als Phishing**|Generiert eine Warnung, wenn sich die Anzahl der Personen in Ihrer Organisation mit dem Berichtsnachrichten-Add-in in Outlook erheblich erhöht, um Nachrichten als Phishing-e-Mails zu melden. Diese Richtlinie weist eine Einstellung mit **hohem** Schweregrad auf. Weitere Informationen zu diesem Add-in finden Sie unter [Verwenden des Berichtsnachrichten-Add-ins](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).|Bedrohungsverwaltung|E5/G5 oder Defender für Office 365 P2-Add-on-Abonnement|
 |**Benutzeridentitätswechsel – Phishing im Posteingang/Ordner**<sup>1,</sup><sup>2</sup>|Generiert eine Warnung, wenn Microsoft erkennt, dass eine Administrator-oder Benutzer Überschreibung die Zustellung einer Phishing-Nachricht für den Benutzeridentitätswechsel in den Posteingang (oder einen anderen Benutzer zugänglichen Ordner) eines Postfachs zulässig ist. Beispiele für Außerkraftsetzungen sind ein Posteingang oder eine Nachrichtenfluss Regel, die Nachrichten von einem bestimmten Absender oder einer bestimmten Domäne oder eine Antispampolitik zulässt, die Nachrichten von bestimmten Absendern oder Domänen zulässt. Diese Richtlinie weist eine Einstellung mit **mittlerem** Schweregrad auf.|Bedrohungsverwaltung|E5/G5 oder Defender für Office 365 P2-Add-on-Abonnement|
-|**Benutzer vom Senden von e-Mails eingeschränkt**|Generiert eine Warnung, wenn jemand in Ihrer Organisation vom Senden von ausgehenden e-Mails eingeschränkt ist. Dies ergibt sich normalerweise, wenn ein Konto kompromittiert wird und der Benutzer auf der Seite " **eingeschränkte Benutzer** " im Security & Compliance Center aufgeführt ist. (Um auf diese Seite zuzugreifen, wechseln Sie zu **Threat Management > überprüfen > eingeschränkten Benutzern** ). Diese Richtlinie weist eine Einstellung mit **hohem** Schweregrad auf. Weitere Informationen zu eingeschränkten Benutzern finden Sie unter [Entfernen eines Benutzers, einer Domäne oder einer IP-Adresse aus einer Sperrliste nach dem Senden von Spam-e-Mails](https://docs.microsoft.com/office365/securitycompliance/removing-user-from-restricted-users-portal-after-spam).|Bedrohungsverwaltung|E1/F1/G1, E3/G3 oder E5/G5|
+|**Benutzer vom Senden von e-Mails eingeschränkt**|Generiert eine Warnung, wenn jemand in Ihrer Organisation vom Senden von ausgehenden e-Mails eingeschränkt ist. Dies ergibt sich normalerweise, wenn ein Konto kompromittiert wird und der Benutzer auf der Seite " **eingeschränkte Benutzer** " im Security & Compliance Center aufgeführt ist. (Um auf diese Seite zuzugreifen, wechseln Sie zu **Threat Management > überprüfen > eingeschränkten Benutzern**). Diese Richtlinie weist eine Einstellung mit **hohem** Schweregrad auf. Weitere Informationen zu eingeschränkten Benutzern finden Sie unter [Entfernen eines Benutzers, einer Domäne oder einer IP-Adresse aus einer Sperrliste nach dem Senden von Spam-e-Mails](https://docs.microsoft.com/office365/securitycompliance/removing-user-from-restricted-users-portal-after-spam).|Bedrohungsverwaltung|E1/F1/G1, E3/G3 oder E5/G5|
 |||||
 
 > [!NOTE]
@@ -172,7 +172,7 @@ Sie können die folgenden Filter verwenden, um eine Teilmenge aller Benachrichti
 
 ## <a name="alert-aggregation"></a>Warnungs Aggregation
 
-Wenn mehrere Ereignisse mit den Bedingungen einer Warnungs Richtlinie mit einer kurzen Zeitspanne auftreten, werden Sie einer vorhandenen Warnung durch einen Prozess namens " *Warnungs Aggregation* " hinzugefügt. Wenn ein Ereignis eine Warnung auslöst, wird die Warnung generiert und auf der Seite **Benachrichtigungen anzeigen** angezeigt, und eine Benachrichtigung wird gesendet. Wenn das gleiche Ereignis innerhalb des Aggregations Intervalls auftritt, fügt Microsoft 365 der vorhandenen Warnung Details zu dem neuen Ereignis hinzu, anstatt eine neue Warnung auszulösen. Das Ziel der Warnungs Aggregation besteht darin, die Warnung "Ermüdung" zu reduzieren und Sie zu konzentrieren und Aktionen für weniger Warnungen für dasselbe Ereignis durchführen zu können.
+Wenn mehrere Ereignisse mit den Bedingungen einer Warnungs Richtlinie mit einer kurzen Zeitspanne auftreten, werden Sie einer vorhandenen Warnung durch einen Prozess namens " *Warnungs Aggregation*" hinzugefügt. Wenn ein Ereignis eine Warnung auslöst, wird die Warnung generiert und auf der Seite **Benachrichtigungen anzeigen** angezeigt, und eine Benachrichtigung wird gesendet. Wenn das gleiche Ereignis innerhalb des Aggregations Intervalls auftritt, fügt Microsoft 365 der vorhandenen Warnung Details zu dem neuen Ereignis hinzu, anstatt eine neue Warnung auszulösen. Das Ziel der Warnungs Aggregation besteht darin, die Warnung "Ermüdung" zu reduzieren und Sie zu konzentrieren und Aktionen für weniger Warnungen für dasselbe Ereignis durchführen zu können.
 
 Die Länge des Aggregations Intervalls hängt von Ihrem Office 365-oder Microsoft 365-Abonnement ab.
 
@@ -263,7 +263,7 @@ Informationen zur Kategorie, der eine standardmäßige Warnungs Richtlinie zugew
 
 Nachdem Benachrichtigungen generiert und auf der Seite **Benachrichtigungen anzeigen** im Security and Compliance Center angezeigt wurden, können Sie diese selektieren, untersuchen und beheben. Hier sind einige Aufgaben, die Sie zum Verwalten von Warnungen ausführen können.
 
-- **Weisen Sie Warnungen einen Status zu.** Sie können Alerts einen der folgenden Status zuweisen: **aktiv** (Standardwert), unter **Suchen** , **aufgelöst** oder **entlassen**. Anschließend können Sie nach dieser Einstellung filtern, um Warnungen mit der gleichen Statuseinstellung anzuzeigen. Diese Statuseinstellung kann helfen, den Prozess der Verwaltung von Warnungen zu verfolgen.
+- **Weisen Sie Warnungen einen Status zu.** Sie können Alerts einen der folgenden Status zuweisen: **aktiv** (Standardwert), unter **Suchen**, **aufgelöst** oder **entlassen**. Anschließend können Sie nach dieser Einstellung filtern, um Warnungen mit der gleichen Statuseinstellung anzuzeigen. Diese Statuseinstellung kann helfen, den Prozess der Verwaltung von Warnungen zu verfolgen.
 
 - **Anzeigen von Warnungsdetails.** Sie können eine Warnung auswählen, um eine Flyout-Seite mit Details zur Warnung anzuzeigen. Die detaillierten Informationen hängen von der entsprechenden Warnungs Richtlinie ab, enthält aber in der Regel Folgendes: Name des tatsächlichen Vorgangs, der die Warnung ausgelöst hat (beispielsweise ein Cmdlet), eine Beschreibung der Aktivität, die die Warnung ausgelöst hat, der Benutzer (oder die Liste der Benutzer), der die Warnung ausgelöst hat, sowie der Name (und der Link zu) der entsprechenden Warnungs Richtlinie.
 
@@ -281,7 +281,7 @@ Nachdem Benachrichtigungen generiert und auf der Seite **Benachrichtigungen anze
 
 - **E-Mail-Benachrichtigungen unterdrücken.** Sie können e-Mail-Benachrichtigungen von der Flyout-Seite für eine Warnung deaktivieren (oder unterdrücken). Wenn Sie e-Mail-Benachrichtigungen unterdrücken, sendet Microsoft keine Benachrichtigungen, wenn Aktivitäten oder Ereignisse mit den Bedingungen der Warnungs Richtlinie übereinstimmen. Warnungen werden jedoch ausgelöst, wenn von Benutzern ausgeführte Aktivitäten den Bedingungen der Warnungs Richtlinie entsprechen. Sie können e-Mail-Benachrichtigungen auch deaktivieren, indem Sie die Warnungs Richtlinie bearbeiten.
 
-- **Warnungen auflösen.** Sie können eine Warnung auf der Flyout-Seite als aufgelöst für eine Warnung markieren (wodurch der Status der Warnung auf " **aufgelöst** " festgelegt wird). Wenn Sie den Filter nicht ändern, werden auf der Seite **Benachrichtigungen anzeigen** keine aufgelösten Warnungen angezeigt.
+- **Warnungen auflösen.** Sie können eine Warnung auf der Flyout-Seite als aufgelöst für eine Warnung markieren (wodurch der Status der Warnung auf " **aufgelöst**" festgelegt wird). Wenn Sie den Filter nicht ändern, werden auf der Seite **Benachrichtigungen anzeigen** keine aufgelösten Warnungen angezeigt.
 
 ## <a name="viewing-cloud-app-security-alerts"></a>Anzeigen von Cloud-App-Sicherheitswarnungen
 

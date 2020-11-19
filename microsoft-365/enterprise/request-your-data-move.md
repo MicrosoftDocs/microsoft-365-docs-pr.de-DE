@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Bestehende Office 365-Kunden müssen vor Ablauf der Frist für Ihr Land eine Anforderung stellen, damit die Microsoft 365-Dienste in den neuen geografischen Raum verschoben werden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b6ad699830389ef405b005bf8675a2bd0fb4f20b
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 216cd3b0cb55cbbe6be89945b98a01ae469ec4e2
+ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877255"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49349232"
 ---
 # <a name="how-to-request-your-data-move"></a>Anfordern der Datenverschiebung
 
@@ -45,12 +45,13 @@ Berechtigte Microsoft 365-Kunden fordern möglicherweise eine Migration für die
 |Schweiz, Liechtenstein  <br/> |10. Dezember 2019  <br/> |30. Juni 2020  <br/> |
 |Norwegen  <br/> |15. April 2020  <br/> |31. Oktober 2020  <br/> |
 |Deutschland  <br/> |1. November 2020  <br/> |30. April 2021  <br/> |
+|Brasilien  <br/> |18. November 2020  <br/> |31. Mai 2021  <br/> |
 
 ## <a name="how-to-request-a-move"></a>So fordern Sie eine Migration an
 
 Berechtigten Kunden wird im Microsoft 365 Admin Center eine Seite angezeigt, auf der sie die Verschiebung ihrer wichtigsten Kundendaten in die neue Region des Datencenters anfordern können.  
   
-Erweitern Sie im Navigationsbereich auf der linken Seite **Einstellungen** , und klicken Sie dann auf **Organisationseinstellungen** , um auf die Seite im Microsoft 365 Admin Center zuzugreifen.
+Erweitern Sie im Navigationsbereich auf der linken Seite **Einstellungen**, und klicken Sie dann auf **Organisationseinstellungen**, um auf die Seite im Microsoft 365 Admin Center zuzugreifen.
 Wählen Sie die Registerkarte **Organisationsprofil** aus, und wählen Sie dann die Option **Data Residency** aus.
   
 Dieser Abschnitt wird nicht angezeigt, wenn Ihr Mandant nicht für das Microsoft 365-Migrationsprogramm berechtigt ist.  Wenn Ihre Organisation Anforderungen an die Data Residency hat und Sie eine Migration anfordern müssen, aktivieren Sie das Kontrollkästchen, und klicken Sie dann auf **Speichern**.
