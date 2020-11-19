@@ -212,6 +212,19 @@
           href: activity-reports/activity-reports.md
         - name: Überwachen der Benutzerproduktivität mit Produktivitätsbewertung
           href: productivity/productivity-score.md
+          items:
+            - name: Zusammenarbeit an Inhalten
+              href: productivity/content-collaboration.md
+            - name: Kommunikation
+              href: productivity/communication.md
+            - name: Mobilität
+              href: productivity/mobility.md
+            - name: Teamarbeit
+              href: productivity/teamwork.md
+            - name: "Microsoft\_365 Apps – Integrität"
+              href: productivity/apps-health.md
+            - name: Erstellen von DNS-Einträgen bei jedem DNS-Host
+              href: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
         - name: Ändern Sie die Kontaktinformationen Ihrer Organisation
           href: manage/change-address-contact-and-more.md
         - name: Aktualisieren Sie Ihre Administrator-Kontaktinformationen
