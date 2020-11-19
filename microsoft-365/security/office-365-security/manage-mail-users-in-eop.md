@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: In diesem Artikel erfahren Sie, wie Sie e-Mail-Benutzer in Exchange Online Protection (EoP) verwalten, einschließlich der Verwendung der Verzeichnissynchronisierung, der Exchange-Verwaltungskonsole und PowerShell zum Verwalten von Benutzern.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 56e6f8955b5993fb4b5064aa92cdde80a4c67ffe
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 3c3e69def731a85c0dccffdcb5620560dcf00052
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201783"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356727"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>Verwalten von E-Mail-Benutzern in EOP als eigenständige Lösung
 
@@ -63,7 +63,7 @@ Für eigenständige EoP-Organisationen mit einer kleinen Anzahl von Benutzern k�
 
    - **Nachname**
 
-   - <sup>\*</sup>**Anzeigename**: Standardmäßig werden in diesem Feld die Werte aus den Feldern **Vorname**, **Initialen**und **Nachname** angezeigt. Sie können diesen Wert akzeptieren oder ändern. Der Wert sollte eindeutig sein und hat eine maximale Länge von 64 Zeichen.
+   - <sup>\*</sup>**Anzeigename**: Standardmäßig werden in diesem Feld die Werte aus den Feldern **Vorname**, **Initialen** und **Nachname** angezeigt. Sie können diesen Wert akzeptieren oder ändern. Der Wert sollte eindeutig sein und hat eine maximale Länge von 64 Zeichen.
 
    - <sup>\*</sup>**Alias**: Geben Sie einen eindeutigen Alias mit bis zu 64 Zeichen für den Benutzer ein.
 
@@ -116,9 +116,9 @@ Verwenden Sie die Registerkarte **Kontaktinformationen** , um die Kontaktinforma
   - **Office**
   - **Telefon (privat)**
   - **Webseite**
-  - **Hinweise**
+  - **Notizen**
 
-#### <a name="organization"></a>Organization (Organisation)
+#### <a name="organization"></a>Organisation
 
 Verwenden Sie die Registerkarte **Organisation** , um detaillierte Informationen zur Rolle des Benutzers in der Organisation aufzuzeichnen.
 
@@ -258,11 +258,11 @@ In eigenständigen EoP steht die Verzeichnissynchronisierung für Kunden mit lok
 
 - Für die folgenden Funktionen wird empfohlen, Verzeichnissynchronisierung zu verwenden:
 
-  - Listen **sicherer Absender in Outlook und blockierte Absender**: Wenn Sie mit dem Dienst synchronisiert werden, haben diese Listen Vorrang vor der Spamfilterung im Dienst. Dadurch können Benutzer ihre eigene Liste sicherer Absender und blockierte Absender mit einzelnen Absender-und Domäneneinträgen verwalten. Weitere Informationen finden Sie unter [Konfigurieren der Einstellungen für Junk-E-Mails für Exchange Online-Postfächer](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes).
+  - Listen **sicherer Absender in Outlook und blockierte Absender**: Wenn Sie mit dem Dienst synchronisiert werden, haben diese Listen Vorrang vor der Spamfilterung im Dienst. Dadurch können Benutzer ihre eigene Liste sicherer Absender und blockierte Absender mit einzelnen Absender-und Domäneneinträgen verwalten. Weitere Informationen finden Sie unter [Konfigurieren der Einstellungen für Junk-E-Mails für Exchange Online-Postfächer](configure-junk-email-settings-on-exo-mailboxes.md).
 
   - **Verzeichnisbasierte Edge-Blockierung (Blockierung)**: Weitere Informationen zu Blockierung finden Sie unter [Verwenden der verzeichnisbasierten Edge-Blockierung zum ablehnen von Nachrichten, die an ungültige Empfänger gesendet](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)werden.
 
-  - **Endbenutzer Zugriff auf Quarantäne**: für den Zugriff auf Ihre isolierten Nachrichten benötigen Empfänger eine gültige Benutzer-ID und ein Kennwort im Dienst. Weitere Informationen zur Quarantäne finden Sie unter [Suchen und Freigeben von Nachrichten in Quarantäne als Benutzer](https://docs.microsoft.com/microsoft-365/security/office-365-security/find-and-release-quarantined-messages-as-a-user).
+  - **Endbenutzer Zugriff auf Quarantäne**: für den Zugriff auf Ihre isolierten Nachrichten benötigen Empfänger eine gültige Benutzer-ID und ein Kennwort im Dienst. Weitere Informationen zur Quarantäne finden Sie unter [Suchen und Freigeben von Nachrichten in Quarantäne als Benutzer](find-and-release-quarantined-messages-as-a-user.md).
 
   - **Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet)**: Wenn Sie die Verzeichnissynchronisierung verwenden, werden die vorhandenen Active Directory Benutzer und Gruppen automatisch in die Cloud hochgeladen, und Sie können dann Nachrichtenfluss Regeln erstellen, die auf bestimmte Benutzer und/oder Gruppen abzielen, ohne diese manuell im Dienst hinzufügen zu müssen. Bitte beachten Sie, dass [dynamische Verteilungsgruppen](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups) nicht über die Verzeichnissynchronisierung synchronisiert werden können.
 

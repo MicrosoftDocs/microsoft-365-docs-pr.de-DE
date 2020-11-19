@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über die Einstellung "standardmäßig sicher" in Exchange Online Protection (EoP).
-ms.openlocfilehash: 9f676dcd89f0322792bd40e06879b9758082d94e
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 23c0cad2b96b3a2002f235db7739b903cf862366
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131097"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357863"
 ---
 # <a name="secure-by-default-in-office-365"></a>Standardmäßig sichern in Office 365
 
@@ -47,7 +47,7 @@ Da Microsoft unsere Kunden standardmäßig schützen möchte, werden einige Übe
 - Outlook-sichere Absender
 - IP-Zulassungsliste (Verbindungsfilterung)
 
-Weitere Informationen zu diesen Außerkraftsetzungen finden Sie unter [Create Safe Sender lists](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365).
+Weitere Informationen zu diesen Außerkraftsetzungen finden Sie unter [Create Safe Sender lists](create-safe-sender-lists-in-office-365.md).
 
 Secure standardmäßig ist hier keine Einstellung, die aktiviert oder deaktiviert werden könnte, aber die Art und Weise, wie unsere Filterung funktioniert, um potenziell gefährliche oder unerwünschte Nachrichten aus ihren Postfächern zu halten. Schadsoftware und Phishing mit hoher Zuverlässigkeit sollten an die Quarantäne gesendet werden. Nur Administratoren können Nachrichten verwalten, die als Schadsoftware oder Phishing für hohe Vertrauenswürdigkeit isoliert wurden, und Sie können von dort aus auch falsch positive Ergebnisse an Microsoft melden. Weitere Informationen finden Sie unter [Verwalten von isolierten Nachrichten und Dateien als Administrator in EoP](manage-quarantined-messages-and-files.md)
 

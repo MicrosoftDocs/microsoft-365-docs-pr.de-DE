@@ -17,18 +17,19 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: 97dece3f3c732686cff885923532af14b6106b48
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 70fd278dd4cdeadd5e8911705ac3f87d981a3de0
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906849"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356871"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 Security Center – Übersicht
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
+> Möchten Sie Microsoft 365 Defender erfahren? Sie können [es in einer Laborumgebung auswerten](https://aka.ms/mtp-trial-lab) oder [ihr Pilotprojekt in der Produktion ausführen](https://aka.ms/m365d-pilotplaybook).
+>
 Die Verwaltung der Sicherheit Ihres Unternehmens, um Sie vor einer ständig wachsenden Bedrohungslandschaft zu schützen, bringt viele Herausforderungen mit sich. Möglicherweise verfügen Sie über zu viele Sicherheitslösungen mit verschiedenen Stellen, um viele Steuerelemente zu konfigurieren. Sie können mit dem wissen, welche Steuerelemente am effektivsten sind und die neue Herausforderungen für Ihre Mitarbeiter einführen, in Konflikt treten. Es kann für Sicherheitsteams schwierig sein, das richtige Gleichgewichtzwischen Sicherheit und Produktivität zu finden.
 
 Geben Sie Microsoft 365 Security Center ein – das neue Zuhause zum Überwachen und Verwalten der Sicherheit in Ihren Microsoft-Identitäten,-Daten,-Geräten,-Apps und-Infrastrukturen. Hier können Sie ganz einfach die Sicherheitsintegrität Ihrer Organisation anzeigen, Geräte, Benutzer und apps konfigurieren und Benachrichtigungen für verdächtige Aktivitäten abrufen. Das Microsoft 365-Sicherheitscenter unterstützt Sicherheitsadministratoren und Sicherheitsteams beim Verwalten und Schützen Ihrer Organisation.

@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: Administratoren erfahren, wie Sie mithilfe von Quarantäne Tags steuern können, welche Benutzer in der Lage sind, ihre unter Quarantäne gestellten Nachrichten zu übernehmen.
-ms.openlocfilehash: e50d7eea4cec3c87231dda855725b1e901f5fa33
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: e194aabf57a1a105f01d8d34815312d3c2fa153d
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845696"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357647"
 ---
 # <a name="quarantine-tags"></a>Quarantäne-Tags
 
@@ -44,12 +44,12 @@ In der folgenden Tabelle werden die verfügbaren einzelnen Berechtigungen und di
 
 |Berechtigung|Kein Zugriff|Eingeschränkter Zugriff|Vollzugriff|
 |---|:---:|:---:|:---:|
-|**Absender zulassen** ( _PermissionToAllowSender_ )|||![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Absender blockieren** ( _PermissionToBlockSender_ )||![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Delete** ( _PermissionToDelete_ )||![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Vorschau** ( _PermissionToPreview_ )||![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Zulassen, dass Empfänger eine Nachricht aus der Quarantäne freigeben** ( _PermissionToRelease_ )|||![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Zulassen, dass Empfänger eine Nachricht anfordern, die aus der Quarantäne freigegeben wird** ( _PermissionToRequestRelease_ )||![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|**Absender zulassen** (_PermissionToAllowSender_)|||![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**Absender blockieren** (_PermissionToBlockSender_)||![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**Delete** (_PermissionToDelete_)||![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**Vorschau** (_PermissionToPreview_)||![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**Zulassen, dass Empfänger eine Nachricht aus der Quarantäne freigeben** (_PermissionToRelease_)|||![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**Zulassen, dass Empfänger eine Nachricht anfordern, die aus der Quarantäne freigegeben wird** (_PermissionToRequestRelease_)||![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |
 
 Wenn Ihnen die Standardberechtigungen in den vordefinierten Berechtigungsgruppen nicht gefällt, können Sie benutzerdefinierte Berechtigungen verwenden, wenn Sie benutzerdefinierte Quarantäne Tags erstellen oder ändern. Weitere Informationen zu den einzelnen Berechtigungen finden Sie im Abschnitt [Quarantine Tag Permission Details](#quarantine-tag-permission-details) weiter unten in diesem Artikel.
@@ -83,12 +83,12 @@ Sie erstellen und Zuweisen von Quarantäne Tags im Security & Compliance Center 
 
    Um benutzerdefinierte Berechtigungen anzugeben, wählen Sie **bestimmten Zugriff festlegen (erweitert)** aus, und konfigurieren Sie die folgenden Einstellungen:
 
-     - **Wählen Sie die Option "Freigabe Aktion** " aus: Wählen Sie einen der folgenden Werte aus:
-       - **Keine Release-Aktion** : Dies ist der Standardwert.
+     - **Wählen Sie die Option "Freigabe Aktion**" aus: Wählen Sie einen der folgenden Werte aus:
+       - **Keine Release-Aktion**: Dies ist der Standardwert.
        - **Zulassen, dass Empfänger eine Nachricht aus der Quarantäne freigeben**
        - **Zulassen, dass Empfänger eine Nachricht für die Freigabe aus der Quarantäne anfordern**
 
-     - **Auswählen weiterer Aktionen, die Empfänger in unter Quarantäne gestellten Nachrichten annehmen können** : Wählen Sie einige, alle oder keine der folgenden Werte aus:
+     - **Auswählen weiterer Aktionen, die Empfänger in unter Quarantäne gestellten Nachrichten annehmen können**: Wählen Sie einige, alle oder keine der folgenden Werte aus:
        - **Delete**
        - **Preview**
        - **Absender zulassen**
@@ -178,19 +178,19 @@ Der Standardwert für alle nicht verwendeten Parameter ist `$false` , sodass Sie
 
 In den folgenden Beispielen wird gezeigt, wie Berechtigungsobjekte erstellt werden, die den vordefinierten Berechtigungsgruppen entsprechen:
 
-- **Kein Zugriff** :
+- **Kein Zugriff**:
 
   ```powershell
   $NoAccess = New-QuarantinePermissions
   ```
 
-- **Limitierter Zugriff** :
+- **Limitierter Zugriff**:
 
   ```powershell
   $LimitedAccess = New-QuarantinePermissions -PermissionToBlockSender $true -PermissionToDelete $true -PermissionToPreview $true -PermissionToRequestRelease $true
   ```
 
-- **Vollzugriff** :
+- **Vollzugriff**:
 
   ```powershell
   $FullAccess = New-QuarantinePermissions -PermissionToAllowSender $true -PermissionToBlockSender $true -PermissionToDelete $true -PermissionToPreview $true -PermissionToRelease $true
@@ -228,11 +228,11 @@ In _unterstützten_ Schutzfunktionen, die Nachrichten oder Dateien isolieren (au
 
 |Feature|Unterstützte Quarantäne-Tags?|Verwendete standardmäßige Quarantäne Tags|
 |---|:---:|---|
-|[Anti-Spam-Richtlinien](configure-your-spam-filter-policies.md): <ul><li>**Spam** ( _Spam_ )</li><li>**Spam mit hoher Zuverlässigkeit** ( _: highconfidencespamaction_ )</li><li>**Phishing-e-Mails** ( _PhishSpamAction_ )</li><li>**Phishing-e-Mails mit hoher Zuverlässigkeit** ( _HighConfidencePhishAction_ )</li><li>**Massen-e-Mails** ( _BulkSpamAction_ )</li></ul>|Ja|<ul><li>DefaultSpamTag (Vollzugriff)</li><li>DefaultHighConfSpamTag (Vollzugriff)</li><li>DefaultPhishTag (Vollzugriff)</li><li>DefaultHighConfPhishTag (kein Zugriff)</li><li>DefaultBulkTag (Vollzugriff)</li></ul>
-|Anti-Phishing-Richtlinien: <ul><li>[Spoof Intelligence Protection](set-up-anti-phishing-policies.md#spoof-settings) ( _AuthenticationFailAction_ )</li><li>[Identitätswechsel Schutz](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<sup>\*</sup> <ul><li>**Wenn e-Mail von einem imitierten Benutzer gesendet wird** ( _TargetedUserProtectionAction_ )</li><li>**Wenn e-Mail von einer imitierten Domäne gesendet wird** ( _TargetedDomainProtectionAction_ )</li><li>**Post Fach Intelligenz** \> **Wenn e-Mail von einem imitierten Benutzer gesendet wird** ( _MailboxIntelligenceProtectionAction_ )</li></ul></li></ul></ul>|Nein|n/v|
+|[Anti-Spam-Richtlinien](configure-your-spam-filter-policies.md): <ul><li>**Spam** (_Spam_)</li><li>**Spam mit hoher Zuverlässigkeit** (_: highconfidencespamaction_)</li><li>**Phishing-e-Mails** (_PhishSpamAction_)</li><li>**Phishing-e-Mails mit hoher Zuverlässigkeit** (_HighConfidencePhishAction_)</li><li>**Massen-e-Mails** (_BulkSpamAction_)</li></ul>|Ja|<ul><li>DefaultSpamTag (Vollzugriff)</li><li>DefaultHighConfSpamTag (Vollzugriff)</li><li>DefaultPhishTag (Vollzugriff)</li><li>DefaultHighConfPhishTag (kein Zugriff)</li><li>DefaultBulkTag (Vollzugriff)</li></ul>
+|Anti-Phishing-Richtlinien: <ul><li>[Spoof Intelligence Protection](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Identitätswechsel Schutz](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<sup>\*</sup> <ul><li>**Wenn e-Mail von einem imitierten Benutzer gesendet wird** (_TargetedUserProtectionAction_)</li><li>**Wenn e-Mail von einer imitierten Domäne gesendet wird** (_TargetedDomainProtectionAction_)</li><li>**Post Fach Intelligenz** \> **Wenn e-Mail von einem imitierten Benutzer gesendet wird** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul></ul>|Nein|n/v|
 |[Anti-Malware-Richtlinien](configure-anti-malware-policies.md): alle erkannten Nachrichten werden immer isoliert.|Nein|n/v|
 |[ATP für SharePoint, OneDrive und Microsoft Teams](atp-for-spo-odb-and-teams.md)|Nein|n/v|
-|[Nachrichtenfluss Regeln](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (auch als Transportregeln bezeichnet) mit der Aktion: **Zustellung der Nachricht an die gehostete Quarantäne** ( _Quarantäne_ ).|Nein|n/v|
+|[Nachrichtenfluss Regeln](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (auch als Transportregeln bezeichnet) mit der Aktion: **Zustellung der Nachricht an die gehostete Quarantäne** (_Quarantäne_).|Nein|n/v|
 |
 
 <sup>\*</sup> Einstellungen für den Identitätswechsel Schutz stehen nur in Anti-Phishing-Richtlinien in Microsoft Defender für Office 365 zur Verfügung.
@@ -251,7 +251,7 @@ Ausführliche Anweisungen zum Erstellen und Ändern von Anti-Spam-Richtlinien fi
   
 4. Wenn Sie die Option **Quarantäne Nachricht** für die Aktion eines verfügbaren Spam Filterungs Urteils ausgewählt haben, steht das Feld **Quarantäne-richtlinientag anwenden** zur Verfügung, um das Quarantäne-Tag für das Urteil auszuwählen.
 
-   **Hinweis** : Wenn Sie eine neue Richtlinie erstellen, wird durch einen leeren Quarantäne-Tag-Wert für ein Spamfilter Urteil angegeben, dass das standardmäßige quarantänetag für dieses Urteil verwendet wird. Wenn Sie die Richtlinie später bearbeiten, werden die leeren Werte durch die tatsächlichen Standardnamen der Quarantäne Tags ersetzt, wie in der vorherigen Tabelle beschrieben.
+   **Hinweis**: Wenn Sie eine neue Richtlinie erstellen, wird durch einen leeren Quarantäne-Tag-Wert für ein Spamfilter Urteil angegeben, dass das standardmäßige quarantänetag für dieses Urteil verwendet wird. Wenn Sie die Richtlinie später bearbeiten, werden die leeren Werte durch die tatsächlichen Standardnamen der Quarantäne Tags ersetzt, wie in der vorherigen Tabelle beschrieben.
   
    ![Auswählen von Quarantäne Tags in einer Anti-Spam-Richtlinie](../../media/quarantine-tags-in-anti-spam-policies.png)
 
@@ -265,7 +265,7 @@ Wenn Sie lieber PowerShell zum Zuweisen von Quarantäne Tags in Anti-Spam-Richtl
 <New-HostedContentFilterPolicy -Name "<Unique name>" | Set-HostedContentFilterPolicy -Identity "<Policy name>">  [-SpamAction Quarantine] [-SpamQuarantineTag <QuarantineTagName>] [-HighConfidenceSpamAction Quarantine] [-HighConfidenceSpamQuarantineTag <QuarantineTagName>] [-PhishSpamAction Quarantine] [-PhishQuarantineTag <QuarantineTagName>] [-HighConfidencePhishQuarantineTag <QuarantineTagName>] [-BulkSpamAction Quarantine] [-BulkQuarantineTag <QuarantineTagName>] ...
 ```
 
-**Hinweise** :
+**Hinweise**:
 
 - Der Standardwert für den Parameter _HighConfidencePhishAction_ ist Quarantine, sodass Sie die Quarantäneaktion für hohe vertrauenswürdige Phishing-Erkennungen in neuen Anti-Spam-Richtlinien nicht festlegen müssen. Bei allen anderen Spamfilter Urteilen in neuen oder vorhandenen Anti-Spam-Richtlinien ist das quarantänetag nur wirksam, wenn der Aktionswert Quarantine lautet. Führen Sie den folgenden Befehl aus, um die Aktionswerte in vorhandenen Anti-Spam-Richtlinien anzuzeigen:
 
@@ -310,19 +310,19 @@ Mit den globalen Einstellungen für Quarantäne-Tags können Sie die Endbenutzer
 
 3. Konfigurieren Sie im Flyout " **Quarantäne Benachrichtigungseinstellungen** ", das geöffnet wird, einige oder alle der folgenden Einstellungen:
 
-   - **Mein Firmen Logo verwenden** : Wählen Sie diese Option aus, um das standardmäßige Microsoft-Logo zu ersetzen, das oben in Spambenachrichtigungen für Endbenutzer verwendet wird. Bevor Sie dies tun, müssen Sie den Anweisungen unter [Anpassen des Microsoft 365-Designs für Ihre Organisation](https://docs.microsoft.com/microsoft-365/admin/setup/customize-your-organization-theme) folgen, um Ihr benutzerdefiniertes Logo hochzuladen.
+   - **Mein Firmen Logo verwenden**: Wählen Sie diese Option aus, um das standardmäßige Microsoft-Logo zu ersetzen, das oben in Spambenachrichtigungen für Endbenutzer verwendet wird. Bevor Sie dies tun, müssen Sie den Anweisungen unter [Anpassen des Microsoft 365-Designs für Ihre Organisation](https://docs.microsoft.com/microsoft-365/admin/setup/customize-your-organization-theme) folgen, um Ihr benutzerdefiniertes Logo hochzuladen.
 
      Der folgende Screenshot zeigt ein benutzerdefiniertes Logo in einer spambenachrichtigung für Endbenutzer:
 
      ![Ein benutzerdefiniertes Logo in einer spambenachrichtigung für Endbenutzer](../../media/quarantine-tags-esn-customization-logo.png)
 
-   - **Sprache auswählen** : Spambenachrichtigungen für Endbenutzer werden basierend auf den Spracheinstellungen des Empfängers bereits lokalisiert. Sie können benutzerdefinierten Text in unterschiedlichen Sprachen für den **Anzeigenamen** und die **Haftungsausschluss** Werte angeben.
+   - **Sprache auswählen**: Spambenachrichtigungen für Endbenutzer werden basierend auf den Spracheinstellungen des Empfängers bereits lokalisiert. Sie können benutzerdefinierten Text in unterschiedlichen Sprachen für den **Anzeigenamen** und die **Haftungsausschluss** Werte angeben.
 
      Wählen Sie mindestens eine Sprache aus dem Feld erste Sprache aus, und klicken Sie dann auf **Hinzufügen**. Sie können mehrere Sprachen auswählen, indem Sie nacheinander auf **Hinzufügen** klicken. Ein Feld für Abschnitts Sprachen zeigt alle Sprachen an, die Sie ausgewählt haben:
 
      ![Ausgewählte Sprachen im Feld zweite Sprache in den globalen Quarantäne Benachrichtigungseinstellungen von Quarantäne Tags](../../media/quarantine-tags-esn-customization-selected-languages.png)
 
-   - **Anzeigename** : passen Sie den Anzeigenamen des Absenders an, der in Spambenachrichtigungen für Endbenutzer verwendet wird.
+   - **Anzeigename**: passen Sie den Anzeigenamen des Absenders an, der in Spambenachrichtigungen für Endbenutzer verwendet wird.
 
      Wählen Sie für jede Sprache, die Sie hinzugefügt haben, im Feld zweite Sprache die Sprache aus (Klicken Sie nicht auf das X), und geben Sie den gewünschten Textwert in das Feld **Anzeigename** ein.
 
@@ -330,7 +330,7 @@ Mit den globalen Einstellungen für Quarantäne-Tags können Sie die Endbenutzer
 
      ![Ein benutzerdefinierter Absender Anzeigename in einer spambenachrichtigung für Endbenutzer](../../media/quarantine-tags-esn-customization-display-name.png)
 
-   - **Haftungsausschluss** : Fügen Sie am Ende der Spambenachrichtigungen für Endbenutzer einen benutzerdefinierten Haftungsausschluss hinzu. Der lokalisierte Text, **ein Haftungsausschluss aus Ihrer Organisation:** ist immer zuerst enthalten, gefolgt von dem von Ihnen angegebenen Text.
+   - **Haftungsausschluss**: Fügen Sie am Ende der Spambenachrichtigungen für Endbenutzer einen benutzerdefinierten Haftungsausschluss hinzu. Der lokalisierte Text, **ein Haftungsausschluss aus Ihrer Organisation:** ist immer zuerst enthalten, gefolgt von dem von Ihnen angegebenen Text.
 
      Wählen Sie für jede Sprache, die Sie hinzugefügt haben, im Feld zweite Sprache die Sprache aus (Klicken Sie nicht auf das X), und geben Sie den gewünschten Textwert in das Feld **Disclaimer** ein.
 
@@ -372,7 +372,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-Hoste
 
 ## <a name="remove-quarantine-tags-in-the-security--compliance-center"></a>Entfernen von Quarantäne Tags im Security & Compliance Center
 
-**Hinweise** :
+**Hinweise**:
 
 - Integrierte Quarantäne Tags können nicht entfernt werden.
 
@@ -412,11 +412,11 @@ Die einzelnen Berechtigungen, die in vordefinierten Berechtigungsgruppen enthalt
 
 Wenn das Quarantine-Tag **keine Zugriffs** Berechtigungen (keine Berechtigungen) zuweist, erhalten Benutzer weiterhin einige grundlegende Funktionen:
 
-- **Details zur isolierten Nachricht** : die Schaltfläche **Nachrichtenkopfzeile anzeigen** ist immer verfügbar.
+- **Details zur isolierten Nachricht**: die Schaltfläche **Nachrichtenkopfzeile anzeigen** ist immer verfügbar.
 
   ![Verfügbare Schaltflächen in den Details der isolierten Nachricht, wenn das Quarantine-Tag dem Benutzer keine Zugriffsberechtigungen erteilt](../../media/quarantine-tags-quarantined-message-details-no-access.png)
 
-- **Spambenachrichtigungen für Endbenutzer** : die Schaltfläche **überprüfen** , mit der der Benutzer zur Nachricht in Quarantäne gelangen kann, ist immer verfügbar.
+- **Spambenachrichtigungen für Endbenutzer**: die Schaltfläche **überprüfen** , mit der der Benutzer zur Nachricht in Quarantäne gelangen kann, ist immer verfügbar.
 
   ![Verfügbare Schaltflächen in der spambenachrichtigung für Endbenutzer, wenn das Quarantine-Tag dem Benutzer keine Zugriffsberechtigungen erteilt](../../media/quarantine-tags-esn-no-access.png)
 
@@ -424,7 +424,7 @@ Wenn das Quarantine-Tag **keine Zugriffs** Berechtigungen (keine Berechtigungen)
 
 Wenn das Quarantine-Tag die **begrenzten Zugriffs** Berechtigungen zuweist, erhalten Benutzer die folgenden Funktionen:
 
-- **Details zur isolierten Nachricht** : die folgenden Schaltflächen stehen zur Verfügung:
+- **Details zur isolierten Nachricht**: die folgenden Schaltflächen stehen zur Verfügung:
   - **Anforderungs Version**
   - **Nachrichtenkopfzeile anzeigen**
   - **Vorschau Nachricht**
@@ -433,7 +433,7 @@ Wenn das Quarantine-Tag die **begrenzten Zugriffs** Berechtigungen zuweist, erha
 
   ![Verfügbare Schaltflächen in den Details der isolierten Nachricht, wenn das quarantänetag dem Benutzer beschränkte Zugriffsberechtigungen erteilt](../../media/quarantine-tags-quarantined-message-details-limited-access.png)
 
-- **Spambenachrichtigungen für Endbenutzer** : die folgenden Schaltflächen stehen zur Verfügung:
+- **Spambenachrichtigungen für Endbenutzer**: die folgenden Schaltflächen stehen zur Verfügung:
   - **Absender blockieren**
   - **Überprüfung**
 
@@ -443,7 +443,7 @@ Wenn das Quarantine-Tag die **begrenzten Zugriffs** Berechtigungen zuweist, erha
 
 Wenn das Quarantine-Tag die **vollständigen Zugriffs** Berechtigungen (alle verfügbaren Berechtigungen) zuweist, erhalten Benutzer die folgenden Funktionen:
 
-- **Details zur isolierten Nachricht** : die folgenden Schaltflächen stehen zur Verfügung:
+- **Details zur isolierten Nachricht**: die folgenden Schaltflächen stehen zur Verfügung:
   - **Nachricht freigeben**
   - **Nachrichtenkopfzeile anzeigen**
   - **Vorschau Nachricht**
@@ -453,7 +453,7 @@ Wenn das Quarantine-Tag die **vollständigen Zugriffs** Berechtigungen (alle ver
 
   ![Verfügbare Schaltflächen in den Details der isolierten Nachricht, wenn das Quarantine-Tag dem Benutzervollzugriff erteilt](../../media/quarantine-tags-quarantined-message-details-full-access.png)
 
-- **Spambenachrichtigungen für Endbenutzer** : die folgenden Schaltflächen stehen zur Verfügung:
+- **Spambenachrichtigungen für Endbenutzer**: die folgenden Schaltflächen stehen zur Verfügung:
   - **Absender blockieren**
   - **Freigabe**
   - **Überprüfung**
@@ -467,68 +467,68 @@ Wenn das Quarantine-Tag die **vollständigen Zugriffs** Berechtigungen (alle ver
 
 #### <a name="allow-sender-permission"></a>Absender Berechtigung zulassen
 
-Die Berechtigung " **Absender zulassen** " ( _PermissionToAllowSender_ ) steuert den Zugriff auf die Schaltfläche, mit der Benutzer den isolierten Nachrichtenabsender bequem zu Ihrer Liste sicherer Absender hinzufügen können.
+Die Berechtigung " **Absender zulassen** " (_PermissionToAllowSender_) steuert den Zugriff auf die Schaltfläche, mit der Benutzer den isolierten Nachrichtenabsender bequem zu Ihrer Liste sicherer Absender hinzufügen können.
 
-- **Details zur isolierten Nachricht** :
+- **Details zur isolierten Nachricht**:
   - **Absender Berechtigung zulassen** aktiviert: die Schaltfläche **Absender zulassen** ist verfügbar.
   - **Absender** Berechtigung deaktiviert zulassen: die Schaltfläche **Absender zulassen** ist nicht verfügbar.
 
-- **Spambenachrichtigungen für Endbenutzer** : keine Auswirkung.
+- **Spambenachrichtigungen für Endbenutzer**: keine Auswirkung.
 
-Weitere Informationen zur Liste sicherer Absender finden Sie unter verhindern, [dass vertrauenswürdige Absender blockiert werden](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) , und [verwenden Sie Exchange Online PowerShell, um die Sammlung von Listen sicherer Adressen für ein Postfach zu konfigurieren](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
+Weitere Informationen zur Liste sicherer Absender finden Sie unter verhindern, [dass vertrauenswürdige Absender blockiert werden](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) , und [verwenden Sie Exchange Online PowerShell, um die Sammlung von Listen sicherer Adressen für ein Postfach zu konfigurieren](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
 
 #### <a name="block-sender-permission"></a>Absender Berechtigung blockieren
 
-Die **Block Sender** Permission ( _PermissionToBlockSender_ ) steuert den Zugriff auf die Schaltfläche, mit der Benutzer den isolierten Nachrichtenabsender bequem zu Ihrer Liste blockierter Absender hinzufügen können.
+Die **Block Sender** Permission (_PermissionToBlockSender_) steuert den Zugriff auf die Schaltfläche, mit der Benutzer den isolierten Nachrichtenabsender bequem zu Ihrer Liste blockierter Absender hinzufügen können.
 
-- **Details zur isolierten Nachricht** :
+- **Details zur isolierten Nachricht**:
   - Berechtigung " **Absender blockieren** " aktiviert: die Schaltfläche " **Absender blockieren** " ist verfügbar.
   - **Absender Berechtigung blockieren** deaktiviert: die Schaltfläche " **Absender blockieren** " ist nicht verfügbar.
 
-- **Spambenachrichtigungen für Endbenutzer** :
+- **Spambenachrichtigungen für Endbenutzer**:
   - **Absender Berechtigung blockieren** deaktiviert: die Schaltfläche " **Absender blockieren** " ist nicht verfügbar.
   - Berechtigung " **Absender blockieren** " aktiviert: die Schaltfläche " **Absender blockieren** " ist verfügbar.
 
-Weitere Informationen zur Liste blockierter Absender finden Sie unter [Blockieren von Nachrichten von einem Benutzer](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) und [verwenden Exchange Online PowerShell zum Konfigurieren der Sammlung von Listen sicherer Adressen für ein Postfach](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
+Weitere Informationen zur Liste blockierter Absender finden Sie unter [Blockieren von Nachrichten von einem Benutzer](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) und [verwenden Exchange Online PowerShell zum Konfigurieren der Sammlung von Listen sicherer Adressen für ein Postfach](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
 
 #### <a name="delete-permission"></a>Löschen
 
-Die Berechtigung " **Löschen** " ( _PermissionToDelete_ ) steuert die Möglichkeit der Benutzer, Ihre Nachrichten (Nachrichten, bei denen der Benutzer ein Empfänger ist) aus der Quarantäne zu löschen.
+Die Berechtigung " **Löschen** " (_PermissionToDelete_) steuert die Möglichkeit der Benutzer, Ihre Nachrichten (Nachrichten, bei denen der Benutzer ein Empfänger ist) aus der Quarantäne zu löschen.
 
-- **Details zur isolierten Nachricht** :
+- **Details zur isolierten Nachricht**:
   - Berechtigung **Löschen** aktiviert: die Schaltfläche **aus Quarantäne entfernen** ist verfügbar.
   - **Lösch** Berechtigung deaktiviert: die Schaltfläche **aus Quarantäne entfernen** ist nicht verfügbar.
 
-- **Spambenachrichtigungen für Endbenutzer** : keine Auswirkung.
+- **Spambenachrichtigungen für Endbenutzer**: keine Auswirkung.
 
 #### <a name="preview-permission"></a>Vorschau Berechtigung
 
-Die **Preview** -Berechtigung ( _PermissionToPreview_ ) steuert die Möglichkeit der Benutzer, Ihre Nachrichten in der Quarantäne anzuzeigen.
+Die **Preview** -Berechtigung (_PermissionToPreview_) steuert die Möglichkeit der Benutzer, Ihre Nachrichten in der Quarantäne anzuzeigen.
 
-- **Details zur isolierten Nachricht** :
+- **Details zur isolierten Nachricht**:
   - **Vorschau** Berechtigung aktiviert: die Schaltfläche **Vorschau Nachricht** steht zur Verfügung.
   - **Vorschau** Berechtigung deaktiviert: die Schaltfläche **Vorschau Nachricht** ist nicht verfügbar.
 
-- **Spambenachrichtigungen für Endbenutzer** : keine Auswirkung.
+- **Spambenachrichtigungen für Endbenutzer**: keine Auswirkung.
 
 #### <a name="allow-recipients-to-release-a-message-from-quarantine-permission"></a>Zulassen, dass Empfänger eine Nachricht aus der Quarantäne Berechtigung freigeben
 
-Das **zulassen, dass Empfänger eine Nachricht aus Quarantine** Permission ( _PermissionToRelease_ ) freigeben, steuert, dass Benutzer Ihre isolierten Nachrichten direkt und ohne Genehmigung eines Administrators freigeben können.
+Das **zulassen, dass Empfänger eine Nachricht aus Quarantine** Permission (_PermissionToRelease_) freigeben, steuert, dass Benutzer Ihre isolierten Nachrichten direkt und ohne Genehmigung eines Administrators freigeben können.
 
-- **Details zur isolierten Nachricht** :
+- **Details zur isolierten Nachricht**:
   - Berechtigung aktiviert: die Schaltfläche **Nachricht freigeben** steht zur Verfügung.
   - Berechtigung deaktiviert: die Schaltfläche " **Nachricht freigeben** " ist nicht verfügbar.
   
-- **Spambenachrichtigungen für Endbenutzer** :
+- **Spambenachrichtigungen für Endbenutzer**:
   - Berechtigung aktiviert: die Schaltfläche **Version** ist verfügbar.
   - Berechtigung deaktiviert: die Schaltfläche " **Version** " ist nicht verfügbar.
 
 #### <a name="allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission"></a>Zulassen, dass Empfänger eine Nachricht für die Freigabe aus der Quarantäne Berechtigung anfordern
 
-Das **zulassen, dass Empfänger eine Nachricht aus der Quarantäne** Berechtigung (Quarantine Permission, _PermissionToRequestRelease_ ) freigegeben werden, steuert, ob Benutzer die Freigabe ihrer isolierten Nachrichten _anfordern_ können. Die Nachricht wird nur freigegeben, nachdem ein Administrator die Anforderung genehmigt hat.
+Das **zulassen, dass Empfänger eine Nachricht aus der Quarantäne** Berechtigung (Quarantine Permission,_PermissionToRequestRelease_) freigegeben werden, steuert, ob Benutzer die Freigabe ihrer isolierten Nachrichten _anfordern_ können. Die Nachricht wird nur freigegeben, nachdem ein Administrator die Anforderung genehmigt hat.
 
-- **Details zur isolierten Nachricht** :
+- **Details zur isolierten Nachricht**:
   - Berechtigung aktiviert: die Schaltfläche **Version anfordern** ist verfügbar.
   - Berechtigung deaktiviert: die Schaltfläche " **Anforderungs Version** " ist nicht verfügbar.
 
-- **Spambenachrichtigungen für Endbenutzer** : die Schaltfläche " **Version** " ist nicht verfügbar.
+- **Spambenachrichtigungen für Endbenutzer**: die Schaltfläche " **Version** " ist nicht verfügbar.

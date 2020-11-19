@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: In diesem Artikel wird beschrieben, wie Sie Ihr Portal mit dem Start Planer des Portals starten können.
-ms.openlocfilehash: a7a007fdd95638109830a8e3689232060f2b9d8b
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: e5e5850fa7e74f3e3b342e9bb28d17f65b491664
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123583"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356667"
 ---
 # <a name="launch-your-portal-using-the-portal-launch-scheduler"></a>Starten Ihres Portals mithilfe des Portal-Start Planungsmoduls
 
@@ -34,7 +34,7 @@ Es gibt zwei Arten von Umleitungen:
 - Bidirektional: Einführung eines neuen modernen SharePoint Online-Portals zum Ersetzen eines vorhandenen SharePoint-Klassikers oder modernen Portals 
 - temporäre seitenumleitung: Einführung eines neuen modernen SharePoint Online-Portals ohne vorhandenes SharePoint-Portal
 
-Der Start Planer des Portals steht nur für moderne SharePoint Online-Portale zur Verfügung, wie Kommunikationswebsites und moderne Teamwebsites. Starts müssen mindestens 7 Tage im Voraus geplant werden. Die Anzahl der erforderlichen Wellen wird durch die erwartete Anzahl von Benutzern bestimmt. Vor dem Planen eines Portal Starts muss das [Tool Seite Diagnostics für SharePoint](https://aka.ms/perftool) ausgeführt werden, um zu überprüfen, ob die Homepage im Portal fehlerfrei ist. Am Ende des Starts des Portals können alle Benutzer mit Berechtigungen für die Website auf die neue Website zugreifen. 
+Der Start Planer des Portals steht nur für moderne SharePoint Online-Portale (also Kommunikationswebsites) zur Verfügung. Starts müssen mindestens 7 Tage im Voraus geplant werden. Die Anzahl der erforderlichen Wellen wird durch die erwartete Anzahl von Benutzern bestimmt. Vor dem Planen eines Portal Starts muss das [Tool Seite Diagnostics für SharePoint](https://aka.ms/perftool) ausgeführt werden, um zu überprüfen, ob die Homepage im Portal fehlerfrei ist. Am Ende des Starts des Portals können alle Benutzer mit Berechtigungen für die Website auf die neue Website zugreifen. 
 
 Weitere Informationen zum Starten eines erfolgreichen Portals finden Sie Untergrund Legende Prinzipien, Vorgehensweisen und Empfehlungen, die unter [Creating, Launching and maintaine a healthy Portal](https://docs.microsoft.com/sharepoint/portal-health)beschrieben werden. 
 
@@ -66,9 +66,11 @@ Die Anzahl der erforderlichen Wellen hängt von der erwarteten Startgröße ab.
 - 30K + to 100K users: 5 Waves
 - Mehr als 100K Benutzer: 5 Wellen und wenden Sie sich an Ihr Microsoft-Konto Team
 
-### <a name="steps-for-bi-directional-redirection"></a>Schritte für die bidirektionale Umleitung
+### <a name="steps-for-bidirectional-redirection"></a>Schritte für die bidirektionale Umleitung
 
-Die bidirektionale Umleitung umfasst die Einführung eines neuen modernen SharePoint Online-Portals zum Ersetzen eines vorhandenen SharePoint-Klassikers oder modernen Portals. Benutzer in aktiven Wellen werden an die neue Website umgeleitet, unabhängig davon, ob Sie zu der alten oder neuen Website navigieren. Benutzer in einer nicht gestarteten Welle, die versuchen, auf die neue Website zuzugreifen, werden zurück an die alte Website umgeleitet, bis Ihre Wave gestartet wird. Wenn Sie Administratoren oder Besitzer haben, die Zugriff auf die alten und neuen Websites benötigen, ohne umgeleitet zu werden, stellen Sie sicher, dass Sie mit dem Parameter aufgelistet werden `WaveOverrideUsers` . 
+Die bidirektionale Umleitung umfasst die Einführung eines neuen modernen SharePoint Online-Portals zum Ersetzen eines vorhandenen SharePoint-Klassikers oder modernen Portals. Benutzer in aktiven Wellen werden an die neue Website umgeleitet, unabhängig davon, ob Sie zu der alten oder neuen Website navigieren. Benutzer in einer nicht gestarteten Welle, die versuchen, auf die neue Website zuzugreifen, werden zurück an die alte Website umgeleitet, bis Ihre Wave gestartet wird. 
+
+Wenn Sie Administratoren oder Besitzer haben, die Zugriff auf die alten und neuen Websites benötigen, ohne umgeleitet zu werden, stellen Sie sicher, dass Sie mit dem Parameter aufgelistet werden `WaveOverrideUsers` . Wir unterstützen nur die Umleitung zwischen der Standardhomepage auf der alten Website und der Standardhomepage auf der neuen Website.
 
 So migrieren Sie Benutzer von einer vorhandenen SharePoint-Website zu einer neuen SharePoint-Website in einer stufenweise:
 

@@ -17,17 +17,19 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: conceptual
-ms.openlocfilehash: 5214f7c399ab511ec16231e4dda97a2c33b37668
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: ade93bf8c89077c117ada764478cc74f4a5f14cc
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844704"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357319"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Neuerungen in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+> Möchten Sie Microsoft 365 Defender erfahren? Sie können [es in einer Laborumgebung auswerten](https://aka.ms/mtp-trial-lab) oder [ihr Pilotprojekt in der Produktion ausführen](https://aka.ms/m365d-pilotplaybook).
+>
 
 Die folgenden Features sind allgemein verfügbar (GA) in der neuesten Version von Microsoft 365 Defender.
 
@@ -35,6 +37,9 @@ RSS-Feed: erhalten Sie benachrichtigt, wenn diese Seite aktualisiert wird, indem
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
 ```
+> Möchten Sie Microsoft 365 Defender erfahren? Sie können [es in einer Laborumgebung auswerten](https://aka.ms/mtp-trial-lab) oder [ihr Pilotprojekt in der Produktion ausführen](https://aka.ms/m365d-pilotplaybook) .
+>
+
 ## <a name="september-2020"></a>September 2020
 - [IdentityDirectoryEvents-Tabelle](advanced-hunting-identitydirectoryevents-table.md) <br> Suchen Sie nach Ereignissen, die einen lokalen Domänencontroller mit Active Directory (AD) umfassen. Diese [Erweiterte Jagd](advanced-hunting-overview.md) Schematabelle umfasst eine Reihe von identitätsbezogenen Ereignissen und Systemereignissen auf dem Domänencontroller.
 - [AssignedIPAddresses ()-Funktion](advanced-hunting-assignedipaddresses-function.md) <br> Verwenden Sie diese Funktion in ihren erweiterten Suchabfragen, um schnell die neuesten IP-Adressen zu erhalten, die einem Gerät zugewiesen sind, oder die aktuellen IP-Adressen aus einer bestimmten Zeit.

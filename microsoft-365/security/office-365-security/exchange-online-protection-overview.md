@@ -14,12 +14,12 @@ ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie Exchange Online Protection (EoP) zum Schutz Ihrer lokalen e-Mail-Organisation in eigenständigen und Hybriden Umgebungen beitragen kann.
-ms.openlocfilehash: a8b30a475e6865916c74f08c4d927662f658a096
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 997f157432dced474ccc17bf47cf9af68f4b8c08
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842404"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356715"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection im Überblick
 
@@ -28,9 +28,9 @@ ms.locfileid: "48842404"
 
 Exchange Online Protection (EoP) ist ein Cloud-basierter Filterdienst, der Ihre Organisation vor Spam und Schadsoftware schützen kann. EoP ist in allen Microsoft 365-Organisationen mit Exchange Online-Postfächern enthalten. EoP ist jedoch auch in den folgenden lokalen Szenarien verfügbar:
 
-- **In einem eigenständigen Szenario** : EoP bietet Cloud-basierten e-Mail-Schutz für Ihre lokale Exchange-Organisation oder eine andere lokale SMTP-e-Mail-Lösung.
+- **In einem eigenständigen Szenario**: EoP bietet Cloud-basierten e-Mail-Schutz für Ihre lokale Exchange-Organisation oder eine andere lokale SMTP-e-Mail-Lösung.
 
-- **In einer hybridbereitstellung** : EoP kann konfiguriert werden, um Ihre e-Mail-Umgebung zu schützen und das e-Mail-Routing zu steuern, wenn Sie eine Mischung aus lokalen und Cloud-Postfächern haben.
+- **In einer hybridbereitstellung**: EoP kann konfiguriert werden, um Ihre e-Mail-Umgebung zu schützen und das e-Mail-Routing zu steuern, wenn Sie eine Mischung aus lokalen und Cloud-Postfächern haben.
 
 In diesen Szenarien kann EoP die Verwaltung Ihrer e-Mail-Umgebung vereinfachen und viele der Belastungen verringern, die mit der Wartung lokaler Hardware und Software verbunden sind.
 
@@ -42,13 +42,13 @@ Die Funktionsweise von EOP lässt sich am besten an der Verarbeitung eingehender
 
 :::image type="content" source="../../media/tp_emailprocessingineopt3.png" alt-text="Eine Grafik von e-Mails aus dem Internet oder aus dem Kundenfeedback, die an EoP und über die Verbindung, die Antischadsoftware, Nachrichtenfluss Regeln-Schrägstrich-Richtlinienfilterung und Inhaltsfilterung vor dem Urteil der Junk-e-Mail oder Quarantäne oder der Endbenutzer-e-Mail-Zustellung übergeben werden.":::
 
-- Wenn eine eingehende Nachricht in EoP eingeht, wird zunächst die Verbindungsfilterung durchlaufen, wodurch die Reputation des Absenders überprüft wird. Die Mehrzahl der Spam-Mails wird an dieser Position angehalten und von EoP zurückgewiesen. Weitere Informationen finden Sie unter [Konfigurieren der Richtlinie für Verbindungsfilter](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-connection-filter-policy?view=o365-worldwide).
+- Wenn eine eingehende Nachricht in EoP eingeht, wird zunächst die Verbindungsfilterung durchlaufen, wodurch die Reputation des Absenders überprüft wird. Die Mehrzahl der Spam-Mails wird an dieser Position angehalten und von EoP zurückgewiesen. Weitere Informationen finden Sie unter [Konfigurieren der Richtlinie für Verbindungsfilter](configure-the-connection-filter-policy.md).
 
-- Anschließend wird die Nachricht auf Anzeichen von Schadsoftware überprüft. Wenn in der Nachricht oder der Anlage Schadsoftware gefunden wird, wird die Nachricht an einen Quarantäne Speicher für Administratoren weitergeleitet. Weitere Informationen zum Konfigurieren von Anti-Malware finden Sie [hier](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-anti-malware-policies?view=o365-worldwide).
+- Anschließend wird die Nachricht auf Anzeichen von Schadsoftware überprüft. Wenn in der Nachricht oder der Anlage Schadsoftware gefunden wird, wird die Nachricht an einen Quarantäne Speicher für Administratoren weitergeleitet. Weitere Informationen zum Konfigurieren von Anti-Malware finden Sie [hier](configure-anti-malware-policies.md).
 
 - Nachrichten werden durch die Richtlinienfilterung fortgesetzt, wo Sie anhand benutzerdefinierter Nachrichtenfluss Regeln (auch bekannt als Transportregeln) ausgewertet werden, die Sie anhand einer Vorlage erstellen oder erzwingen. Beispielsweise können Sie eine Regel haben, die eine Benachrichtigung an einen Vorgesetzten sendet, wenn e-Mails von einem bestimmten Absender eintreffen. An dieser Position (Exchange Enterprise CAL with Services) werden auch Datenverlust Verhinderungen (DLP) überprüft.
 
-- Anschließend wird die Nachricht durch die Inhaltsfilterung (auch als Anti-Spam bezeichnet) geleitet. Eine Nachricht, die von diesem Filter als Spam *oder Phishing* festgelegt wird, kann unter anderem an die Quarantäne oder den Junk-e-Mail-Ordner eines Benutzers gesendet werden. Weitere Informationen finden Sie unter [configure Anti-Spam Policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide) und [configure Anti-Phishing Policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-anti-phishing-policies-eop?view=o365-worldwide).
+- Anschließend wird die Nachricht durch die Inhaltsfilterung (auch als Anti-Spam bezeichnet) geleitet. Eine Nachricht, die von diesem Filter als Spam *oder Phishing* festgelegt wird, kann unter anderem an die Quarantäne oder den Junk-e-Mail-Ordner eines Benutzers gesendet werden. Weitere Informationen finden Sie unter [configure Anti-Spam Policies](configure-your-spam-filter-policies.md) und [configure Anti-Phishing Policies](configure-anti-phishing-policies-eop.md).
 
 Alle Nachrichten, die alle diese Schutzschichten erfolgreich übergeben, werden an den Empfänger übermittelt.
 
@@ -58,11 +58,11 @@ Weitere Informationen finden Sie unter [Reihenfolge und Rangfolge des e-Mail-Sch
 
 Die verfügbaren EoP-Abonnement Pläne lauten wie folgt:
 
-- **EoP Standalone** : Sie registrieren sich in EoP, um Ihre lokale e-Mail-Organisation zu schützen.
+- **EoP Standalone**: Sie registrieren sich in EoP, um Ihre lokale e-Mail-Organisation zu schützen.
 
-- **EoP-Features in Exchange Online** : jedes Abonnement, das Exchange Online enthält (eigenständig oder als Teil von Microsoft 365), verwendet EoP, um Ihre Exchange Online Postfächer zu schützen.
+- **EoP-Features in Exchange Online**: jedes Abonnement, das Exchange Online enthält (eigenständig oder als Teil von Microsoft 365), verwendet EoP, um Ihre Exchange Online Postfächer zu schützen.
 
-- **Exchange Enterprise CAL mit Diensten** : Wenn Sie über eine lokale Exchange-Organisation verfügen, in der Sie zusätzliche Lizenzen für Exchange Enterprise CAL mit Diensten erworben haben, ist EoP Teil der enthaltenen Dienste.
+- **Exchange Enterprise CAL mit Diensten**: Wenn Sie über eine lokale Exchange-Organisation verfügen, in der Sie zusätzliche Lizenzen für Exchange Enterprise CAL mit Diensten erworben haben, ist EoP Teil der enthaltenen Dienste.
 
 Informationen zu Anforderungen, wichtigen Grenzwerten und Verfügbarkeit von Funktionen in allen EoP-Abonnement Plänen finden Sie in der [Beschreibung des Exchange Online Protection-Diensts](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
@@ -96,7 +96,7 @@ EOP führt einen Lastenausgleich zwischen Rechenzentren aus, jedoch nur innerhal
 
 Der Hilfeinhalt für EOP-Administratoren umfasst die folgenden übergeordneten Kategorien:
 
-- [Konfigurieren Sie EoP, Tag 1, für Microsoft Defender für Office 365 Administratoren](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide): Konfigurieren von EoP-Schutz-und Erkennungstools im Kern von Microsoft Defender für Office 365.
+- [Konfigurieren Sie EoP, Tag 1, für Microsoft Defender für Office 365 Administratoren](protect-against-threats.md): Konfigurieren von EoP-Schutz-und Erkennungstools im Kern von Microsoft Defender für Office 365.
 
 - [EoP-Features](eop-features.md): enthält eine Liste der in EoP verfügbaren Features.
 

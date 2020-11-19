@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft Defender für Office 365 umfasst sichere Anlagen, sichere Links, erweiterte Antiphishing-Tools, Berichterstellungstools und Threat Intelligence-Funktionen.
-ms.openlocfilehash: c102948ff66a6362a1adb60734629b79e7eb7ad5
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: 11b6445e17fc870c2999ddb56715b0c5cee5b5fc
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49021109"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357707"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender für Office 365
 
@@ -37,32 +37,32 @@ ms.locfileid: "49021109"
 
 Microsoft Defender für Office 365 schützt Ihre Organisation vor bösartigen Bedrohungen durch E-Mail-Nachrichten, Links (URLs) und Tools für die Zusammenarbeit. Microsoft Defender für Office 365 umfasst:
 
-- **[Richtlinien zum Schutz vor Bedrohungen](#configure-microsoft-defender-for-office-365-policies)** : Definieren Sie Richtlinien zum Schutz vor Bedrohungen, um den geeigneten Schutzgrad für Ihre Organisation festzulegen.
+- **[Richtlinien zum Schutz vor Bedrohungen](#configure-microsoft-defender-for-office-365-policies)**: Definieren Sie Richtlinien zum Schutz vor Bedrohungen, um den geeigneten Schutzgrad für Ihre Organisation festzulegen.
 
-- **[Berichte](#view-microsoft-defender-for-office-365-reports)** : Anzeigen von Echtzeitberichten, um die Leistung von Defender für Office 365 in Ihrer Organisation zu überwachen.
+- **[Berichte](#view-microsoft-defender-for-office-365-reports)**: Anzeigen von Echtzeitberichten, um die Leistung von Defender für Office 365 in Ihrer Organisation zu überwachen.
 
-- **[Untersuchung von und Antwort auf Bedrohungen](#use-threat-investigation-and-response-capabilities)** : Verwenden Sie brandneue Tools, um Bedrohungen zu untersuchen, zu verstehen, zu simulieren und zu verhindern.
+- **[Untersuchung von und Antwort auf Bedrohungen](#use-threat-investigation-and-response-capabilities)**: Verwenden Sie brandneue Tools, um Bedrohungen zu untersuchen, zu verstehen, zu simulieren und zu verhindern.
 
-- **[Funktionen für automatische Untersuchung und Reaktion](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)** : Sparen Sie Zeit und Mühe beim Untersuchen und Beheben von Bedrohungen.
+- **[Funktionen für automatische Untersuchung und Reaktion](office-365-air.md)**: Sparen Sie Zeit und Mühe beim Untersuchen und Beheben von Bedrohungen.
 
 ## <a name="getting-started"></a>Erste Schritte
 
-Wenn Sie noch nicht mit Microsoft Defender für Office 365 vertraut sind, oder nach der Methode „Learning by *doing* “ vorgehen möchten, könnte es hilfreich für Sie sein, mithilfe dieses Artikels die Erstkonfiguration von Defender für Office 365 in einzelne Schritte aufzuteilen, Untersuchungen durchzuführen und sich Berichte anzuschauen. Folgendermaßen können Sie die erste Konfiguration in kleine Abschnitte aufteilen:
+Wenn Sie noch nicht mit Microsoft Defender für Office 365 vertraut sind, oder nach der Methode „Learning by *doing*“ vorgehen möchten, könnte es hilfreich für Sie sein, mithilfe dieses Artikels die Erstkonfiguration von Defender für Office 365 in einzelne Schritte aufzuteilen, Untersuchungen durchzuführen und sich Berichte anzuschauen. Folgendermaßen können Sie die erste Konfiguration in kleine Abschnitte aufteilen:
 
-- Konfigurieren Sie alles mit ‚ *Anti-* ‘ im Namen.
-    - Antischadsoftware
-    - Antiphishing
-    - Antispam
-- Richten Sie alles mit ‚ *sicher* ‘ im Namen ein.
-    - Sichere Links
-    - Sichere Anlagen
-- Sichern Sie die Workloads (z. B. SharePoint Online, OneDrive, und Teams) 
+- Konfigurieren Sie alles mit ‚*Anti-*‘ im Namen.
+  - Antischadsoftware
+  - Antiphishing
+  - Antispam
+- Richten Sie alles mit ‚*sicher*‘ im Namen ein.
+  - Sichere Links
+  - Sichere Anlagen
+- Sichern Sie die Workloads (z. B. SharePoint Online, OneDrive, und Teams)
 - Schutz durch automatische Bereinigung zur Nullstunde
 
-Wenn Sie durch praktische Beispiele lernen möchten, [klicken Sie auf diesen Link](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide&preserve-view=true). 
+Wenn Sie durch praktische Beispiele lernen möchten, [klicken Sie auf diesen Link](protect-against-threats.md).
 
 > [!NOTE]
-> Microsoft Defender für Office 365 ist in zwei verschiedenen Plantypen verfügbar. Sie erkennen, dass Sie **Plan 1** haben, wenn Sie über ‚Echtzeiterkennnungen‘ verfügen, und **Plan 2** , wenn Sie über den Sicherheitsrisiken-Explorer verfügen. Ihr Plan hat Auswirkungen darauf, welche Tools Sie sehen. Daher sollten Sie sich sicher sein, welchen Plan Sie haben, bevor Sie mit dem Lernen anfangen.
+> Microsoft Defender für Office 365 ist in zwei verschiedenen Plantypen verfügbar. Sie erkennen, dass Sie **Plan 1** haben, wenn Sie über ‚Echtzeiterkennnungen‘ verfügen, und **Plan 2**, wenn Sie über den Sicherheitsrisiken-Explorer verfügen. Ihr Plan hat Auswirkungen darauf, welche Tools Sie sehen. Daher sollten Sie sich sicher sein, welchen Plan Sie haben, bevor Sie mit dem Lernen anfangen.
 
 ## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender für Office 365 Plan 1 und Plan 2
 
@@ -72,7 +72,7 @@ In der folgenden Tabelle sind die Inhalte der einzelnen Pläne zusammengefasst.
 
 |Microsoft Defender für Office 365 Plan 1|Microsoft Defender für Office 365 Plan 2|
 |---|---|
-|<br/>Konfigurations-, Schutz- und Erkennungsfunktionen: <ul><li>[Sichere Anlagen](atp-safe-attachments.md)</li><li>[Sichere Links](atp-safe-links.md)</li><li>[ATP für SharePoint, OneDrive und Microsoft Teams](atp-for-spo-odb-and-teams.md)</li><li>[Anti-Phishing in Defender für Office 365-Schutz](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Echtzeiterkennungen](threat-explorer.md)</li></ul>|Microsoft Defender für Office 365 Plan 1 – Funktionen<br/>--- plus ---<br/>Automatisierungs-, Untersuchungs-, Fehlerbehebungs- und Schulungsfunktionen:</li><li>[Bedrohungs-Tracker](threat-trackers.md)</li><li>[Sicherheitsrisiken-Explorer](threat-explorer.md)</li><li>[Automatische Untersuchung und Reaktion](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)</li><li>[Angriffssimulator](attack-simulator.md)</li></ul>|
+|<br/>Konfigurations-, Schutz- und Erkennungsfunktionen: <ul><li>[Sichere Anlagen](atp-safe-attachments.md)</li><li>[Sichere Links](atp-safe-links.md)</li><li>[ATP für SharePoint, OneDrive und Microsoft Teams](atp-for-spo-odb-and-teams.md)</li><li>[Anti-Phishing in Defender für Office 365-Schutz](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Echtzeiterkennungen](threat-explorer.md)</li></ul>|Microsoft Defender für Office 365 Plan 1 – Funktionen<br/>--- plus ---<br/>Automatisierungs-, Untersuchungs-, Fehlerbehebungs- und Schulungsfunktionen:</li><li>[Bedrohungs-Tracker](threat-trackers.md)</li><li>[Sicherheitsrisiken-Explorer](threat-explorer.md)</li><li>[Automatische Untersuchung und Reaktion](office-365-air.md)</li><li>[Angriffssimulator](attack-simulator.md)</li></ul>|
 |
 
 - Microsoft Defender für Office 365 Plan 2 ist in Office 365 E5, Office 365 A5, Microsoft 365 E5 Security, und Microsoft 365 E5 enthalten.
@@ -96,13 +96,13 @@ Mit Microsoft Defender für Office 365 kann das Sicherheitsteam Ihrer Organisati
 
 Die Richtlinien, die für Ihre Organisation definiert sind, bestimmen das Verhalten und den Schutzgrad für vordefinierte Bedrohungen. Richtlinienoptionen sind äußerst flexibel. Beispielsweise kann das Sicherheitsteam Ihrer Organisation einen fein abgestuften Bedrohungsschutz auf Benutzer-, Organisations-, Empfänger- und Domänenebene festlegen. Es ist wichtig, dass Sie Ihre Richtlinien regelmäßig überprüfen, da täglich neue Bedrohungen und Herausforderungen entstehen.
 
-- **[Sichere Anlagen](atp-safe-attachments.md)** : Bietet Zero-Day-Schutz, um Ihr Messagingsystem zu schützen, indem E-Mail-Anlagen auf schädliche Inhalte überprüft werden. Es leitet alle Nachrichten und Anlagen, die keine Viren- und Malware-Signaturen aufweisen, an eine spezielle Umgebung weiter, und verwendet dann Machine Learning- und Analysetechniken, um bösartige Absichten zu erkennen. Wenn keine verdächtigen Aktivitäten gefunden werden, wird die Nachricht an das Postfach weitergeleitet. Weitere Informationen hierzu finden Sie unter [Einrichten einer Richtlinie für sichere Anlagen](set-up-atp-safe-attachments-policies.md).
+- **[Sichere Anlagen](atp-safe-attachments.md)**: Bietet Zero-Day-Schutz, um Ihr Messagingsystem zu schützen, indem E-Mail-Anlagen auf schädliche Inhalte überprüft werden. Es leitet alle Nachrichten und Anlagen, die keine Viren- und Malware-Signaturen aufweisen, an eine spezielle Umgebung weiter, und verwendet dann Machine Learning- und Analysetechniken, um bösartige Absichten zu erkennen. Wenn keine verdächtigen Aktivitäten gefunden werden, wird die Nachricht an das Postfach weitergeleitet. Weitere Informationen hierzu finden Sie unter [Einrichten einer Richtlinie für sichere Anlagen](set-up-atp-safe-attachments-policies.md).
 
-- **[Sichere Links](atp-safe-links.md)** : Bietet eine Zeit-auf-Klick-Überprüfung von URLs, beispielsweise in E-Mails und Office-Dateien. Der Schutz ist laufend aktiv und gilt für Ihre Messaging- und Office-Umgebung. Links werden bei jedem Klick gescannt: sichere Links bleiben verfügbar, bösartige Links werden dynamisch blockiert. Weitere Informationen hierzu finden Sie unter [Einrichten einer Richtlinie für sichere Links](set-up-atp-safe-links-policies.md).
+- **[Sichere Links](atp-safe-links.md)**: Bietet eine Zeit-auf-Klick-Überprüfung von URLs, beispielsweise in E-Mails und Office-Dateien. Der Schutz ist laufend aktiv und gilt für Ihre Messaging- und Office-Umgebung. Links werden bei jedem Klick gescannt: sichere Links bleiben verfügbar, bösartige Links werden dynamisch blockiert. Weitere Informationen hierzu finden Sie unter [Einrichten einer Richtlinie für sichere Links](set-up-atp-safe-links-policies.md).
 
-- **[ATP für SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md)** : Schützt Ihre Organisation, wenn Benutzer zusammenarbeiten und Dateien freigeben, indem es schädliche Dateien in Team-Websites und Dokumentbibliotheken identifiziert und blockiert. Weitere Informationen finden Sie unter [Defender für Office 365 für SharePoint, OneDrive und Microsoft Teams aktivieren](turn-on-atp-for-spo-odb-and-teams.md).
+- **[ATP für SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md)**: Schützt Ihre Organisation, wenn Benutzer zusammenarbeiten und Dateien freigeben, indem es schädliche Dateien in Team-Websites und Dokumentbibliotheken identifiziert und blockiert. Weitere Informationen finden Sie unter [Defender für Office 365 für SharePoint, OneDrive und Microsoft Teams aktivieren](turn-on-atp-for-spo-odb-and-teams.md).
 
-- **[Antiphishingschutz in Microsoft Defender für Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)** : Erkennt Versuche, die Identität von Benutzern und internen oder benutzerdefinierten Domänen anzunehmen. Es wendet Machine Learning-Modelle und erweiterte Algorithmen zum Erkennen von Identitätswechsel an, um Phishing-Angriffe zu abzuwenden. Weitere Informationen hierzu finden Sie unter [Konfigurieren von Antiphishing-Richtlinien in Microsoft Defender für Office 365](configure-atp-anti-phishing-policies.md).
+- **[Antiphishingschutz in Microsoft Defender für Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)**: Erkennt Versuche, die Identität von Benutzern und internen oder benutzerdefinierten Domänen anzunehmen. Es wendet Machine Learning-Modelle und erweiterte Algorithmen zum Erkennen von Identitätswechsel an, um Phishing-Angriffe zu abzuwenden. Weitere Informationen hierzu finden Sie unter [Konfigurieren von Antiphishing-Richtlinien in Microsoft Defender für Office 365](configure-atp-anti-phishing-policies.md).
 
 ## <a name="view-microsoft-defender-for-office-365-reports"></a>Anzeigen von Microsoft Defender für Office 365-Berichten
 
@@ -132,7 +132,7 @@ Microsoft Defender für Office 365 Plan 2 enthält erstklassige [Tools für die 
 
 ## <a name="save-time-with-automated-investigation-and-response"></a>Zeit sparen mit automatisierten Untersuchungen und Antworten
 
-( **NEU!** ) Bei der Untersuchung eines potenziellen Cyberangriffs ist Zeit von äußerster Wichtigkeit. Je früher Sie Bedrohungen erkennen und eindämmen können, desto besser für Ihre Organisation. AIR-Funktionen ([Automatische Untersuchung und Reaktion](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)) umfassen eine Reihe von Sicherheitsplaybooks, die automatisch, z. B. wenn eine Warnung ausgelöst wird, oder manuell, z. B. aus einer Explorer-Ansicht, gestartet werden können. AIR spart Ihrem Team für Sicherheitsvorgänge Zeit und Mühe beim effektiven und effizienten Eindämmen von Bedrohungen. Weitere Informationen hierzu finden Sie unter [AIR in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air).
+(**NEU!**) Bei der Untersuchung eines potenziellen Cyberangriffs ist Zeit von äußerster Wichtigkeit. Je früher Sie Bedrohungen erkennen und eindämmen können, desto besser für Ihre Organisation. AIR-Funktionen ([Automatische Untersuchung und Reaktion](office-365-air.md)) umfassen eine Reihe von Sicherheitsplaybooks, die automatisch, z. B. wenn eine Warnung ausgelöst wird, oder manuell, z. B. aus einer Explorer-Ansicht, gestartet werden können. AIR spart Ihrem Team für Sicherheitsvorgänge Zeit und Mühe beim effektiven und effizienten Eindämmen von Bedrohungen. Weitere Informationen hierzu finden Sie unter [AIR in Office 365](office-365-air.md).
 
 ## <a name="permissions-required-to-use-microsoft-defender-for-office-365-features"></a>Berechtigungen, die für die Verwendung von Microsoft Defender für Office 365-Funktionen erforderlich sind
 

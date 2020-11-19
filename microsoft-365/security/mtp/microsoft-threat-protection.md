@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: conceptual
-ms.openlocfilehash: a8d25ba0b36ad6ba1651ffe19e3e2f6e241548c7
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 573f30dc3d8a43a337a4333dbaf05baf916857fa
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843804"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357899"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -34,7 +34,8 @@ ms.locfileid: "48843804"
 **Gilt für:**
 - Microsoft 365 Defender
 
-
+> Möchten Sie Microsoft 365 Defender erfahren? Sie können [es in einer Laborumgebung auswerten](https://aka.ms/mtp-trial-lab) oder [ihr Pilotprojekt in der Produktion ausführen](https://aka.ms/m365d-pilotplaybook).
+>
 
 Microsoft 365 Defender ist eine einheitliche, vor-und nach Verletzung der Enterprise Defense-Suite, die die Erkennung, Verhinderung, Untersuchung und Antwort über alle Endpunkte, Identitäten, e-Mails und Anwendungen hinweg einheitlich koordiniert und einen integrierten Schutz vor anspruchsvollen Angriffen bietet.
 
@@ -90,4 +91,4 @@ Zu den produktübergreifenden Features von Microsoft 365 Defender gehören:
 ## <a name="get-started"></a>Erste Schritte
 Die Microsoft 365 Defender-Lizenzierungsanforderungen müssen erfüllt sein, bevor Sie den Dienst im Microsoft 365 Security Center unter [Security.Microsoft.com](https://security.microsoft.com)aktivieren können. Weitere Informationen finden Sie unter:
 - [Lizenzanforderungen](prerequisites.md#licensing-requirements)
-- [Aktivieren von Microsoft 365 Defender](mtp-enable.md)
+- [Microsoft 365 Defender aktivieren](mtp-enable.md)

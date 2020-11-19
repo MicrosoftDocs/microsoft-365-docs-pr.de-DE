@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren erfahren, wie Sie isolierte Nachrichten für alle Benutzer in Exchange Online Protection (EoP) anzeigen und verwalten können. Administratoren in Organisationen mit Microsoft Defender für Office 365 können auch unter Quarantäne gestellte Dateien in SharePoint Online, OneDrive für Unternehmen und Microsoft Teams verwalten.
-ms.openlocfilehash: 94dfc8503d61c16aadc8e9d0ccfd295e2684fbba
-ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
+ms.openlocfilehash: fed05ee202e4352200a80516e0ec1b62c8421178
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49349280"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357133"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Verwalten von isolierten Nachrichten und Dateien als Administrator in EOP
 
@@ -103,7 +103,7 @@ Sie können isolierte Nachrichten im Security & Compliance Center oder in PowerS
      - **Anti-Malware-Richtlinie**
      - **Richtlinie für sichere Anlagen**
      - **Antiphishing-Richtlinie**
-     - **Richtlinie für gehostete Inhaltsfilter** (Anti-Spam-Richtlinie)
+     - **Richtlinie für gehostete Inhaltsfilter** (Antispamrichtlinie)
      - **Transport Regel**
 
    - **E-Mail-Empfänger**: alle Benutzer oder nur an Sie gesendete Nachrichten. Endbenutzer können nur isolierte Nachrichten verwalten, die an Sie gesendet werden.
@@ -165,7 +165,7 @@ Nachdem Sie eine Nachricht ausgewählt haben, haben Sie mehrere Möglichkeiten, 
   - Wählen Sie eine der folgenden Optionen aus:
     - **Freigeben von Nachrichten für alle Empfänger**
     - **Freigeben von Nachrichten an bestimmte Empfänger**
-    - **Freigeben von Nachrichten für andere Personen**
+    - **Freigeben von Nachrichten an andere Personen**: Beachten Sie, dass das Freigeben von Schadsoftware-Nachrichten an andere Personen als ursprüngliche Empfänger nicht unterstützt wird. 
 
   Klicken Sie nach Abschluss des Vorgangs auf **Nachrichten freigeben**.
 
@@ -208,7 +208,7 @@ Wenn Sie mehrere isolierte Nachrichten in der Liste auswählen (bis zu 100), ers
   > [!NOTE]
   > Nehmen Sie das folgende Szenario in Frage: John@gmail.com sendet eine Nachricht an Faith@contoso.com und John@Subsidiary.contoso.com. Gmail verzweigt diese Nachricht in zwei Kopien, die an die Quarantäne als Phishing in Microsoft weitergeleitet werden. Ein Administrator gibt beide Nachrichten an admin@contoso.com frei. Die erste freigegebene Nachricht, die das Administratorpostfach erreicht, wird übermittelt. Die zweite freigegebene Nachricht wird als doppelte Zustellung identifiziert und übersprungen. Nachricht werden als Duplikate identifiziert, wenn Sie dieselbe Nachrichten-ID und dieselbe Empfangszeit haben.
 
-- **Nachrichten löschen**: Nachdem Sie in der angezeigten Warnung auf **Ja** klicken, wird die Nachricht sofort gelöscht, ohne an die ursprünglichen Empfänger gesendet zu werden.
+- **Löschen von Nachrichten**: Nachdem Sie in der angezeigten Warnmeldung auf **Ja** klicken, werden die Nachrichten sofort gelöscht, ohne an die ursprünglichen Empfänger gesendet zu werden.
 
 Klicken Sie nach Abschluss des Vorgangs auf **Schließen**.
 

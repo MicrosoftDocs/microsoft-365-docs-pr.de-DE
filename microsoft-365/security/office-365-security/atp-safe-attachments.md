@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-office365
 - seo-marvel-apr2020
 description: Administratoren können sich über das Feature "sichere Anlagen" in Microsoft Defender für Office 365 informieren.
-ms.openlocfilehash: d758db46f53be46d8213794f90bf8c462f9135e8
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: da3949a4520c52c7f5685efd109f8c976305ea06
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49020951"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357213"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Sichere Anlagen in Microsoft Defender für Office 365
 
@@ -59,7 +59,7 @@ Die Überprüfung sicherer Anlagen erfolgt in derselben Region, in der sich Ihre
 
 In diesem Abschnitt werden die Einstellungen in Richtlinien für sichere Anlagen beschrieben:
 
-- **Sichere Anlagen unbekannte Malware Antwort** : Diese Einstellung steuert die Aktion für Malwarescans sicherer Anlagen in e-Mail-Nachrichten. Die verfügbaren Optionen werden in der folgenden Tabelle beschrieben:
+- **Sichere Anlagen unbekannte Malware Antwort**: Diese Einstellung steuert die Aktion für Malwarescans sicherer Anlagen in e-Mail-Nachrichten. Die verfügbaren Optionen werden in der folgenden Tabelle beschrieben:
 
   ****
 
@@ -69,24 +69,24 @@ In diesem Abschnitt werden die Einstellungen in Richtlinien für sichere Anlagen
   |**Überwachen**|Sendet Nachrichten mit Anlagen und verfolgt anschließend, was mit erkannter Schadsoftware geschieht. <p> Die Zustellung sicherer Nachrichten verzögert sich möglicherweise aufgrund der Überprüfung sicherer Anlagen.|Sehen Sie, wo erkannte Schadsoftware in Ihrer Organisation vorkommt.|
   |**Blockieren**|Verhindert, dass Nachrichten mit erkannten Schadsoftware-Anlagen zugestellt werden. <p> Nachrichten werden unter [Quarantäne](manage-quarantined-messages-and-files.md) gestellt, wobei nur Administratoren (nicht Endbenutzer) die Nachrichten überprüfen, freigeben oder löschen können. <p> Blockiert automatisch zukünftige Instanzen von Nachrichten und Anlagen. <p> Die Zustellung sicherer Nachrichten verzögert sich möglicherweise aufgrund der Überprüfung sicherer Anlagen.|Schützt Ihre Organisation vor wiederholten Angriffen mit denselben Schadsoftware-Anlagen. <p> Dies ist der Standardwert und der empfohlene Wert in standardmäßigen und strengen [vordefinierten Sicherheitsrichtlinien](preset-security-policies.md).|
   |**Replace**|Entfernt erkannte Schadsoftware-Anlagen. <p> Benachrichtigt Empfänger, dass Anlagen entfernt wurden. <p>  Nachrichten werden unter [Quarantäne](manage-quarantined-messages-and-files.md) gestellt, wobei nur Administratoren (nicht Endbenutzer) die Nachrichten überprüfen, freigeben oder löschen können. <p> Die Zustellung sicherer Nachrichten verzögert sich möglicherweise aufgrund der Überprüfung sicherer Anlagen.|Erhöhen der Sichtbarkeit für Empfänger, bei denen Anlagen aufgrund von erkannter Schadsoftware entfernt wurden|
-  |**Dynamische Zustellung**|Übermittelt Nachrichten sofort, ersetzt jedoch Anlagen durch Platzhalter, bis der Scan für sichere Anlagen abgeschlossen ist. <p> Ausführliche Informationen finden Sie im Abschnitt [dynamische Übermittlung in Richtlinien für sichere Anlagen](#dynamic-delivery-in-safe-attachments-policies) weiter unten in diesem Thema.|Vermeiden von Nachrichten Verzögerungen beim Schutz von Empfängern vor bösartigen Dateien <br/> <br/> Aktivieren von Empfängern zum Anzeigen einer Vorschau von Anlagen im abgesicherten Modus, während der Scan stattfindet|
+  |**Dynamische Zustellung**|Übermittelt Nachrichten sofort, ersetzt jedoch Anlagen durch Platzhalter, bis der Scan für sichere Anlagen abgeschlossen ist. <p> Ausführliche Informationen finden Sie im Abschnitt [dynamische Übermittlung in Richtlinien für sichere Anlagen](#dynamic-delivery-in-safe-attachments-policies) weiter unten in diesem Thema.|Vermeiden Sie Nachrichten Verzögerungen beim Schutz von Empfängern vor bösartigen Dateien. <p> Aktivieren Sie Empfänger, um Anlagen im abgesicherten Modus anzuzeigen, während die Überprüfung stattfindet.|
   |
 
-- **Anlage bei Erkennung umleiten: Aktivieren Sie Redirect** , und **Senden Sie die Anlage an die folgende e-Mail-Adresse** : zum **blockieren** , **überwachen** oder **ersetzen** von Nachrichten, die Schadsoftware-Anlagen enthalten, zur Analyse und Untersuchung an die angegebene interne oder externe e-Mail-Adresse senden.
+- **Anlage bei Erkennung umleiten: Aktivieren Sie Redirect** , und **Senden Sie die Anlage an die folgende e-Mail-Adresse**: zum **blockieren**, **überwachen** oder **ersetzen** von Nachrichten, die Schadsoftware-Anlagen enthalten, zur Analyse und Untersuchung an die angegebene interne oder externe e-Mail-Adresse senden.
 
   Die Empfehlung für Standard mäßige und strenge Richtlinieneinstellungen besteht darin, die Umleitung zu aktivieren. Weitere Informationen finden Sie unter [Einstellungen für sichere Anlagen](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings).
 
-- **Wenden Sie die obige Auswahl an, wenn bei der Malwareüberprüfung für Anlagen ein Timeout auftritt oder ein Fehler auftritt** : die durch **sichere Anlagen unbekannte Schadsoftware-Antwort** angegebene Aktion wird auf Nachrichten angewendet, auch wenn der sichere Anlagen Scan nicht abgeschlossen werden kann. Wählen Sie diese Option immer aus, wenn Sie **Redirect aktivieren** auswählen. Andernfalls gehen möglicherweise Nachrichten verloren.
+- **Wenden Sie die obige Auswahl an, wenn bei der Malwareüberprüfung für Anlagen ein Timeout auftritt oder ein Fehler auftritt**: die durch **sichere Anlagen unbekannte Schadsoftware-Antwort** angegebene Aktion wird auf Nachrichten angewendet, auch wenn der sichere Anlagen Scan nicht abgeschlossen werden kann. Wählen Sie diese Option immer aus, wenn Sie **Redirect aktivieren** auswählen. Andernfalls gehen möglicherweise Nachrichten verloren.
 
-- **Empfängerfilter** : Sie müssen die Empfängerbedingungen und Ausnahmen angeben, die bestimmen, für wen die Richtlinie gilt. Sie können die folgenden Eigenschaften für Bedingungen und Ausnahmen verwenden:
+- **Empfängerfilter**: Sie müssen die Empfängerbedingungen und Ausnahmen angeben, die bestimmen, für wen die Richtlinie gilt. Sie können die folgenden Eigenschaften für Bedingungen und Ausnahmen verwenden:
 
   - **Der Empfänger ist**
   - **Die Empfängerdomäne ist**
   - **Der Empfänger ist Mitglied von**
 
-  Sie können eine Bedingung oder Ausnahme nur einmal verwenden, die Bedingung oder Ausnahme kann aber mehrere Werte enthalten. Bei mehreren Werten derselben Bedingung oder Ausnahme wird ODER-Logik verwendet (z. B. _\<recipient1\>_ oder _\<recipient2\>_ ). Bei unterschiedlichen Bedingungen oder Ausnahmen wird UND-Logik verwendet (z. B. _\<recipient1\>_ und _\<member of group 1\>_ ).
+  Sie können eine Bedingung oder Ausnahme nur einmal verwenden, die Bedingung oder Ausnahme kann aber mehrere Werte enthalten. Bei mehreren Werten derselben Bedingung oder Ausnahme wird ODER-Logik verwendet (z. B. _\<recipient1\>_ oder _\<recipient2\>_). Bei unterschiedlichen Bedingungen oder Ausnahmen wird UND-Logik verwendet (z. B. _\<recipient1\>_ und _\<member of group 1\>_).
 
-- **Priorität** : Wenn Sie mehrere Richtlinien erstellen, können Sie die Reihenfolge angeben, in der Sie angewendet werden. Keine zwei Richtlinien können die gleiche Priorität aufweisen, und die Richtlinienverarbeitung endet, nachdem die erste Richtlinie angewendet wurde.
+- **Priorität**: Wenn Sie mehrere Richtlinien erstellen, können Sie die Reihenfolge angeben, in der Sie angewendet werden. Keine zwei Richtlinien können die gleiche Priorität aufweisen, und die Richtlinienverarbeitung endet, nachdem die erste Richtlinie angewendet wurde.
 
   Weitere Informationen über die Prioritätsreihenfolge und darüber, wie mehrere Richtlinien ausgewertet und angewendet werden, finden Sie unter [Reihenfolge und Priorität beim E-Mail-Schutz](how-policies-and-protections-are-combined.md).
 

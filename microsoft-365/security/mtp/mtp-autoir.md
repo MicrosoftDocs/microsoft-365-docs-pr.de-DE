@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.date: 09/16/2020
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: d17bd49206bcdef9f60a4873c642179165753887
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 2b8872288291adc0b9fc5e1c1541f885711df230
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843684"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356703"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Automatische Untersuchung und Antwort in Microsoft 365 Defender
 
@@ -35,6 +35,9 @@ ms.locfileid: "48843684"
 
 **Gilt für:**
 - Microsoft 365 Defender
+
+> Möchten Sie Microsoft 365 Defender erfahren? Sie können [es in einer Laborumgebung auswerten](https://aka.ms/mtp-trial-lab) oder [ihr Pilotprojekt in der Produktion ausführen](https://aka.ms/m365d-pilotplaybook).
+>
 
 Wenn Sicherheitswarnungen ausgelöst werden, liegt es an Ihrem Sicherheits Betriebsteam, diese Warnungen zu untersuchen und Maßnahmen zum Schutz Ihrer Organisation zu ergreifen. Die Priorisierung und Untersuchung von Warnungen kann sehr zeitaufwändig sein, insbesondere dann, wenn ständig neue Benachrichtigungen während einer laufenden Untersuchung eingehen. Sicherheitsteams können sich angesichts des enormen Volumens der Bedrohungen, die sie überwachen müssen, überfordert fühlen. Automatisierte Ermittlungs-und Antwortfunktionen mit Selbstheilung in Microsoft 365 Defender können helfen.
 
@@ -69,10 +72,10 @@ Bei einer ausgelösten Warnung wird ein Vorfall erstellt, der eine automatisiert
 
 |Entitäten |Dienste für den Bedrohungsschutz  |
 |---------|---------|
-|Geräte (auch als Endpunkte bezeichnet)     |[Microsoft Defender für Endpunkt](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)<br/>[Microsoft Defender für Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) |      
+|Geräte (auch als Endpunkte bezeichnet)     |[Microsoft Defender für Endpunkt](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)<br/>[Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) |      
 |E-Mail-Inhalte (Dateien und Nachrichten in Postfächern)     |[Microsoft Defender für Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)         |
 
-Bei jeder Untersuchung werden Urteile ( *böswillige* , *verdächtige* oder *nicht gefundene Bedrohungen* ) für jedes untersuchte Beweisstück generiert. Je nach Art der Bedrohung und dem daraus resultierenden Urteil werden Korrekturaktionen automatisch oder nach Genehmigung durch das Sicherheits Betriebsteam Ihrer Organisation durchgeführt. Ausstehende und abgeschlossene Aktionen werden im [Info-Center](mtp-action-center.md) aufgelistet.
+Bei jeder Untersuchung werden Urteile (*böswillige*, *verdächtige* oder *nicht gefundene Bedrohungen*) für jedes untersuchte Beweisstück generiert. Je nach Art der Bedrohung und dem daraus resultierenden Urteil werden Korrekturaktionen automatisch oder nach Genehmigung durch das Sicherheits Betriebsteam Ihrer Organisation durchgeführt. Ausstehende und abgeschlossene Aktionen werden im [Info-Center](mtp-action-center.md) aufgelistet.
 
 Während eine Untersuchung läuft, werden alle anderen zugehörigen Warnungen zur Untersuchung hinzugefügt, bis diese abgeschlossen ist. Wenn eine beschuldigte Entität an anderer Stelle angezeigt wird, wird auch diese Entität in die automatische Untersuchung aufgenommen, und es wird ein allgemeines Sicherheitsplaybook ausgeführt. 
 

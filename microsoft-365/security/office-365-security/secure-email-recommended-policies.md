@@ -18,18 +18,18 @@ ms.collection:
 - remotework
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: c8a1609bed124789229c6ae6d1f80b7d9c70bb66
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: f2d3b9180ad5ab58e92812ed7b2d4f7ba07e2971
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646811"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357109"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Richtlinienempfehlungen für sichere E-Mails
 
 In diesem Artikel wird beschrieben, wie Sie die empfohlenen Identitäts-und Gerätezugriffs Richtlinien implementieren, um organisatorische e-Mail-und e-Mail-Clients zu schützen, die moderne Authentifizierung und bedingten Zugriff unterstützen. Dieser Leitfaden baut auf den [allgemeinen Richtlinien für Identitäts-und Geräte Zugriff](identity-access-policies.md) auf und enthält außerdem einige zusätzliche Empfehlungen.
 
-Diese Empfehlungen basieren auf drei verschiedenen Ebenen der Sicherheit und des Schutzes, die basierend auf der Granularität Ihrer Anforderungen angewendet werden können: **Baseline**, **sensibel**und **stark reguliert**. Weitere Informationen zu den Sicherheitsebenen und den empfohlenen Clientbetriebssystemen, auf die hier verwiesen wird, finden Sie in der [Einführung zu den empfohlenen Sicherheitsrichtlinien und -konfigurationen](microsoft-365-policies-configurations.md).
+Diese Empfehlungen basieren auf drei verschiedenen Ebenen der Sicherheit und des Schutzes, die basierend auf der Granularität Ihrer Anforderungen angewendet werden können: **Baseline**, **sensibel** und **stark reguliert**. Weitere Informationen zu den Sicherheitsebenen und den empfohlenen Clientbetriebssystemen, auf die hier verwiesen wird, finden Sie in der [Einführung zu den empfohlenen Sicherheitsrichtlinien und -konfigurationen](microsoft-365-policies-configurations.md).
 
 Diese Empfehlungen erfordern, dass Ihre Benutzer moderne e-Mail-Clients verwenden, einschließlich Outlook für IOS und Android auf mobilen Geräten. Outlook für IOS und Android bieten Unterstützung für die besten Features von Office 365. Diese mobilen Outlook-apps werden außerdem mit Sicherheitsfunktionen entworfen, die die mobile Nutzung unterstützen und mit anderen Microsoft Cloud-Sicherheitsfunktionen zusammenarbeiten. Weitere Informationen finden Sie unter [Outlook für IOS und Android FAQ](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq).
 
@@ -46,16 +46,17 @@ Beachten Sie das Hinzufügen einer neuen Richtlinie für Exchange Online zum Blo
 Wenn Sie Exchange Online und Outlook in den Bereich der Richtlinien einbezogen haben, wenn Sie Sie eingerichtet haben, müssen Sie nur die neue Richtlinie erstellen, um ActiveSync-Clients zu blockieren. Überprüfen Sie die in der folgenden Tabelle aufgeführten Richtlinien, und nehmen Sie entweder die empfohlenen Ergänzungen vor, oder bestätigen Sie, dass diese bereits enthalten sind. Jede Richtlinie verweist auf die zugehörigen Konfigurationsanweisungen in [allgemeinen Identitäts-und Gerätezugriffs Richtlinien](identity-access-policies.md).
 
 |Schutzebene|Richtlinien|Weitere Informationen|
-|:---------------|:-------|:----------------|
+|---|---|---|
 |**Basisplan**|[MFA erforderlich, wenn das Anmelde Risiko *Mittel* groß oder *hoch* ist](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Einbeziehen von Exchange Online in die Zuweisung von Cloud-apps|
-|        |[Blockieren von Clients, die die moderne Authentifizierung nicht unterstützen](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Einbeziehen von Exchange Online in die Zuweisung von Cloud-apps|
-|        |[Anwenden von App-Datenschutzrichtlinien](identity-access-policies.md#apply-app-data-protection-policies)|Stellen Sie sicher, dass Outlook in der Liste der Apps enthalten ist. Achten Sie darauf, die Richtlinie für jede Plattform (Ios, Android, Windows) zu aktualisieren.|
-|        |[Erfordern von genehmigten apps und App-Schutz](identity-access-policies.md#require-approved-apps-and-app-protection)|Einschließen von Exchange Online in die Liste der Cloud-apps|
-|        |[Kompatible PCs erforderlich](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Einschließen von Exchange Online in die Liste der Cloud-apps|
-|        |[Blockieren von ActiveSync-Clients](#block-activesync-clients)|Diese neue Richtlinie hinzufügen| 
-|**Vertraulich**|[MFA erforderlich, wenn das Anmelde Risiko *niedrig*, *Mittel* oder *hoch* ist](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| Einbeziehen von Exchange Online in die Zuweisung von Cloud-apps|
-|         |[Erfordern von kompatiblen PCs *und* mobilen Geräten](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Einschließen von Exchange Online in die Liste der Cloud-apps|
+||[Blockieren von Clients, die die moderne Authentifizierung nicht unterstützen](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Einbeziehen von Exchange Online in die Zuweisung von Cloud-apps|
+||[Anwenden von App-Datenschutzrichtlinien](identity-access-policies.md#apply-app-data-protection-policies)|Stellen Sie sicher, dass Outlook in der Liste der Apps enthalten ist. Achten Sie darauf, die Richtlinie für jede Plattform (Ios, Android, Windows) zu aktualisieren.|
+||[Erfordern von genehmigten apps und App-Schutz](identity-access-policies.md#require-approved-apps-and-app-protection)|Einschließen von Exchange Online in die Liste der Cloud-apps|
+||[Kompatible PCs erforderlich](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Einschließen von Exchange Online in die Liste der Cloud-apps|
+||[Blockieren von ActiveSync-Clients](#block-activesync-clients)|Diese neue Richtlinie hinzufügen|
+|**Vertraulich**|[MFA erforderlich, wenn das Anmelde Risiko *niedrig*, *Mittel* oder *hoch* ist](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Einbeziehen von Exchange Online in die Zuweisung von Cloud-apps|
+||[Erfordern von kompatiblen PCs *und* mobilen Geräten](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Einschließen von Exchange Online in die Liste der Cloud-apps|
 |**Streng geregelt**|[*Immer* MFA erforderlich](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Einbeziehen von Exchange Online in die Zuweisung von Cloud-apps|
+|
 
 ## <a name="block-activesync-clients"></a>Blockieren von ActiveSync-Clients
 
@@ -85,20 +86,19 @@ Die Schritte sind hier aufgeführt:
    Set-OwaMailboxPolicy -Identity Default -ConditionalAccessPolicy ReadOnlyPlusAttachmentsBlocked
    ```
 
-4. Erstellen Sie im Azure-Portal eine neue Richtlinie für den bedingten Zugriff mit den folgenden Einstellungen:
+5. Erstellen Sie im Azure-Portal eine neue Richtlinie für den bedingten Zugriff mit den folgenden Einstellungen:
 
-   **Zuordnungen > Benutzer und Gruppen**: Wählen Sie die entsprechenden Benutzer und Gruppen aus, die Sie einschließen und ausschließen möchten.
+   **Zuordnungen** \> **Benutzer und Gruppen**: Wählen Sie die entsprechenden Benutzer und Gruppen aus, die einbezogen und ausgeschlossen werden sollen.
 
-   **Zuordnungen > Cloud-Apps oder-Aktionen > Cloud-apps > > ausgewählte apps einschließen**: **Office 365** auswählen Exchange Online
+   **Zuordnungen** \> **Cloud-Apps oder-Aktionen** \> **Cloud-apps** \> **Einschließen** \> von **Auswählen von apps**: Wählen Sie **Office 365 Exchange Online**
 
-   **Zugriffssteuerung > Sitzung**: Wählen Sie **App-erzwungene Einschränkungen verwenden** aus.
+   **Zugriffssteuerung** \> **Sitzung**: Wählen Sie **App-erzwungene Einschränkungen verwenden** aus.
 
 ## <a name="require-that-ios-and-android-devices-must-use-outlook"></a>Erfordern, dass IOS-und Android-Geräte Outlook verwenden müssen
 
 Um sicherzustellen, dass Benutzer von IOS-und Android-Geräten nur mit Outlook für IOS und Android auf Arbeits-und Schul Inhalte zugreifen können, benötigen Sie eine Richtlinie für den bedingten Zugriff, die auf diese potenziellen Benutzer abzielt.
 
 Die Schritte zum Konfigurieren dieser Richtlinie finden Sie unter Verwalten des Zugriffs auf die [Messaging Zusammenarbeit mithilfe von Outlook für IOS und Android]( https://docs.microsoft.com/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access).
-
 
 ## <a name="set-up-message-encryption"></a>Einrichten der Nachrichtenverschlüsselung
 

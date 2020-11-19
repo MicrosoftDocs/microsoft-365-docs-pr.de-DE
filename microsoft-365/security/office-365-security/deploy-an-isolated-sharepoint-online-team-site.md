@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: Verwenden Sie dieses Schritt-für-Schritt-Bereitstellungshandbuch, um eine isolierte SharePoint Online Teamwebsite in Microsoft Office 365 zu erstellen und zu konfigurieren.
-ms.openlocfilehash: f2800e74149e79e5c3f0444799f454ab8b3caf69
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f9e8482238c7da4d10b6299b0f8a997734edbb13
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203131"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356907"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Bereitstellen einer isolierten SharePoint Online-Teamwebsite
 
@@ -112,7 +112,7 @@ Wenn Sie Benutzerkonten und Gruppen über Office 365 verwalten, können Sie das 
   
 Melden Sie sich für das Microsoft 365 Admin Center mit einem Benutzerkonto an, dem die Rolle "Benutzerkonto Administrator" oder "Unternehmensadministrator" zugewiesen wurde, und verwenden Sie Gruppen zum Hinzufügen der entsprechenden Benutzerkonten und Gruppen zu den entsprechenden Zugriffsgruppen.
   
-Stellen Sie für PowerShell zunächst [eine Verbindung mit dem Azure Active Directory PowerShell for Graph-Modul her](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell?view=o365-worldwide#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Stellen Sie für PowerShell zunächst [eine Verbindung mit dem Azure Active Directory PowerShell for Graph-Modul her](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 Verwenden Sie dann den folgenden Befehlsblock, um ein einzelnes Benutzerkonto zu einer Zugriffsgruppe hinzuzufügen:
   
@@ -166,17 +166,17 @@ Erstellen Sie zuerst mit den folgenden Schritten die SharePoint Online-Teamwebsi
   
 1. Melden Sie sich beim Microsoft 365 Admin Center mit einem Konto an, das auch für die Verwaltung der SharePoint Online Teamwebsite (SharePoint Online Administrator) verwendet wird. Hilfe finden Sie unter [Where to sign in to Office 365 (Wo kann ich mich bei Office 365 anmelden?)](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
-2. Klicken Sie im Microsoft 365 Admin Center unter **Admin**Centers auf **SharePoint**.
+2. Klicken Sie im Microsoft 365 Admin Center unter **Admin** Centers auf **SharePoint**.
 
 3. Erweitern Sie im SharePoint Admin Center den Knoten **Websites** , und klicken Sie dann auf **aktive Standorte**.
 
-4. Klicken Sie auf **Erstellen**, und wählen Sie dann **andere Optionen**aus.
+4. Klicken Sie auf **Erstellen**, und wählen Sie dann **andere Optionen** aus.
 
-5. Wählen Sie in der Liste **Vorlage auswählen** die Option **Team Website**aus.
+5. Wählen Sie in der Liste **Vorlage auswählen** die Option **Team Website** aus.
    
 6. Geben Sie unter **Websitename** einen Namen für die Teamwebsite ein. 
     
-7. Geben Sie in **Primärer Administrator**das Konto ein, mit dem Sie angemeldet sind.
+7. Geben Sie in **Primärer Administrator** das Konto ein, mit dem Sie angemeldet sind.
  
 8. Klicken Sie auf **Fertig stellen**.
     
@@ -184,17 +184,17 @@ Konfigurieren Sie als Nächstes auf der neuen SharePoint Online-Teamwebsite die 
   
 1. Klicken Sie in der Symbolleiste auf das Symbol „Einstellungen“ und anschließend auf **Websiteberechtigungen**.
 
-2. Klicken Sie unter **Website Freigabe**auf **ändern, wie Mitglieder freigegeben werden können**.
+2. Klicken Sie unter **Website Freigabe** auf **ändern, wie Mitglieder freigegeben werden können**.
 
 3. Wählen Sie die **einzigen Websitebesitzer können Dateien, Ordner und die Website freigeben**.
 
-4. Festlegen von **Zugriffsanforderungen** auf **aus**zulassen.
+4. Festlegen von **Zugriffsanforderungen** auf **aus** zulassen.
 
 5. Klicken Sie auf **Speichern**.
     
 6. Klicken Sie im Bereich **Berechtigungen** auf **Erweiterte Berechtigungseinstellungen**.
     
-7. Klicken Sie auf der Registerkarte **Berechtigungen** in Ihrem Browser auf ** \<site name> Mitglieder** in der Liste.
+7. Klicken Sie auf der Registerkarte **Berechtigungen** in Ihrem Browser auf **\<site name> Mitglieder** in der Liste.
     
 8. Klicken Sie auf der Seite **Benutzer und Gruppen** auf **Neu**.
     
@@ -202,7 +202,7 @@ Konfigurieren Sie als Nächstes auf der neuen SharePoint Online-Teamwebsite die 
     
 10. Klicken Sie auf die Schaltfläche „Zurück“ in Ihrem Browser.
     
-11. Klicken Sie in der Liste auf ** \<site name> Besitzer** .
+11. Klicken Sie in der Liste auf **\<site name> Besitzer** .
     
 12. Klicken Sie auf der Seite **Benutzer und Gruppen** auf **Neu**.
     
@@ -210,7 +210,7 @@ Konfigurieren Sie als Nächstes auf der neuen SharePoint Online-Teamwebsite die 
     
 14. Klicken Sie auf die Schaltfläche „Zurück“ in Ihrem Browser.
     
-15. Klicken Sie in der Liste auf ** \<site name> Besucher** .
+15. Klicken Sie in der Liste auf **\<site name> Besucher** .
     
 16. Klicken Sie auf der Seite **Benutzer und Gruppen** auf **Neu**.
     
@@ -220,11 +220,11 @@ Konfigurieren Sie als Nächstes auf der neuen SharePoint Online-Teamwebsite die 
     
 Die Ergebnisse dieser Berechtigungseinstellungen sehen folgendermaßen aus:
   
-- Die SharePoint-Gruppe ** \<site name> Besitzer** enthält die Zugriffsgruppe der Websiteadministratoren, in der alle Mitglieder über die Berechtigungsstufe **Vollzugriff** verfügen.
+- Die SharePoint-Gruppe **\<site name> Besitzer** enthält die Zugriffsgruppe der Websiteadministratoren, in der alle Mitglieder über die Berechtigungsstufe **Vollzugriff** verfügen.
     
-- Die SharePoint-Gruppe ** \<site name> Mitglieder** enthält die Zugriffsgruppe der Websitemitglieder, in der alle Mitglieder über die Berechtigungsstufe **Bearbeiten** verfügen.
+- Die SharePoint-Gruppe **\<site name> Mitglieder** enthält die Zugriffsgruppe der Websitemitglieder, in der alle Mitglieder über die Berechtigungsstufe **Bearbeiten** verfügen.
     
-- Die SharePoint-Gruppe ** \<site name> Besucher** enthält die Zugriffsgruppe der Website Betrachter, in der alle Mitglieder über die Berechtigungsstufe **Lesen** verfügen.
+- Die SharePoint-Gruppe **\<site name> Besucher** enthält die Zugriffsgruppe der Website Betrachter, in der alle Mitglieder über die Berechtigungsstufe **Lesen** verfügen.
     
 - Mitglieder können keine anderen Mitglieder einladen, und Nichtmitglieder können keinen Zugriff anfordern.
     

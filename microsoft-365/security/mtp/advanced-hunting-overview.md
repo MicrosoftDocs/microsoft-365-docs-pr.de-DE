@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 627791e9dc3d4bf18047a05734a4e275152d19da
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: bab055036a8e7fdcf88329413c9fd86269af2aaa
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845032"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357221"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>Proaktive Suche nach Bedrohungen durch erweiterte Jagd in Microsoft 365 Defender
 
@@ -34,6 +34,9 @@ ms.locfileid: "48845032"
 
 **Gilt für:**
 - Microsoft 365 Defender
+
+> Möchten Sie Microsoft 365 Defender erfahren? Sie können [es in einer Laborumgebung auswerten](https://aka.ms/mtp-trial-lab) oder [ihr Pilotprojekt in der Produktion ausführen](https://aka.ms/m365d-pilotplaybook).
+>
 
 Bei der erweiterten Suche handelt es sich um ein abfragebasiertes Tool für die Bedrohungssuche, mit dem Sie Rohdaten von bis zu 30 Tagen erkunden können. Sie können proaktiv Ereignisse in Ihrem Netzwerk überprüfen, um Bedrohungs Indikatoren und Entitäten zu finden. Der flexible Zugriff auf Daten ermöglicht eine uneingeschränkte Suche nach bekannten und potenziellen Bedrohungen.
 <p></p>
@@ -46,8 +49,8 @@ Diese Funktion ähnelt der [erweiterten Suche in Microsoft Defender für Endpoin
 
 - Microsoft Defender für Endpunkt
 - Microsoft Defender für Office 365
-- Microsoft Cloud App-Sicherheit
-- Microsoft Defender für Identity
+- Microsoft Cloud App Security
+- Microsoft Defender for Identity
 
 [Aktivieren Sie Microsoft 365 Defender](mtp-enable.md), um die erweiterte Suche zu verwenden.
 
@@ -70,8 +73,8 @@ Um Advanced Hunting oder andere [Microsoft 365 Defender](microsoft-threat-protec
 ## <a name="data-freshness-and-update-frequency"></a>Datenaktualität und Aktualisierungshäufigkeit
 Erweiterte Jagd Daten können in zwei verschiedene Typen kategorisiert werden, die jeweils unterschiedlich konsolidiert werden.
 
-- **Ereignis-oder Aktivitätsdaten** – füllt Tabellen zu Warnungen, Sicherheitsereignissen, Systemereignissen und Routinetests auf. Advanced Hunting erhält diese Daten fast unmittelbar nach der erfolgreichen Übermittlung der Sensoren an die entsprechenden Cloud-Dienste. Beispielsweise können Sie Ereignisdaten von gesunden Sensoren auf Arbeitsstationen oder Domänencontrollern fast unmittelbar nach der Verfügbarkeit in Microsoft Defender für Endpoint und Microsoft Defender for Identity Abfragen.
-- **Entitätsdaten** – füllt Tabellen mit Informationen zu Benutzern und Geräten auf. Diese Daten stammen sowohl aus relativ statischen Datenquellen als auch aus dynamischen Quellen wie Active Directory Einträgen und Ereignisprotokollen. Um neue Daten bereitzustellen, werden Tabellen alle 15 Minuten mit neuen Informationen aktualisiert, wobei Zeilen hinzugefügt werden, die möglicherweise nicht vollständig aufgefüllt wurden. Alle 24 Stunden werden Daten konsolidiert, um einen Datensatz einzufügen, der die neuesten, umfassendsten Datensätze zu jeder Entität enthält.
+- **Ereignis-oder Aktivitätsdaten**– füllt Tabellen zu Warnungen, Sicherheitsereignissen, Systemereignissen und Routinetests auf. Advanced Hunting erhält diese Daten fast unmittelbar nach der erfolgreichen Übermittlung der Sensoren an die entsprechenden Cloud-Dienste. Beispielsweise können Sie Ereignisdaten von gesunden Sensoren auf Arbeitsstationen oder Domänencontrollern fast unmittelbar nach der Verfügbarkeit in Microsoft Defender für Endpoint und Microsoft Defender for Identity Abfragen.
+- **Entitätsdaten**– füllt Tabellen mit Informationen zu Benutzern und Geräten auf. Diese Daten stammen sowohl aus relativ statischen Datenquellen als auch aus dynamischen Quellen wie Active Directory Einträgen und Ereignisprotokollen. Um neue Daten bereitzustellen, werden Tabellen alle 15 Minuten mit neuen Informationen aktualisiert, wobei Zeilen hinzugefügt werden, die möglicherweise nicht vollständig aufgefüllt wurden. Alle 24 Stunden werden Daten konsolidiert, um einen Datensatz einzufügen, der die neuesten, umfassendsten Datensätze zu jeder Entität enthält.
 
 ## <a name="time-zone"></a>Zeitzone
 Zeit Informationen in Advanced Hunting befinden sich in der UTC-Zeitzone.

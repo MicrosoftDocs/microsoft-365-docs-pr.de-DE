@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e5ac3e9a02c333d3168c328aa6ad5532c48af99e
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 6149b6f128b3c96d2338e325caa8df835c292b13
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846688"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357611"
 ---
 # <a name="incidents-overview-in-microsoft-365-defender"></a>Übersicht über Vorfälle in Microsoft 365 Defender
 
@@ -36,6 +36,8 @@ ms.locfileid: "48846688"
 **Gilt für:**
 - Microsoft 365 Defender
 
+> Möchten Sie Microsoft 365 Defender erfahren? Sie können [es in einer Laborumgebung auswerten](https://aka.ms/mtp-trial-lab) oder [ihr Pilotprojekt in der Produktion ausführen](https://aka.ms/m365d-pilotplaybook).
+>
 
 
 Vorfälle basieren auf entsprechenden Warnungen. Warnungen werden erstellt, wenn in Ihrem Netzwerk ein bösartiges Ereignis oder eine schädliche Aktivität erkannt wird. Einzelne Warnungen liefern wertvolle Anhaltspunkte für einen fortlaufenden Angriff. Angriffe verwenden jedoch in der Regel verschiedene Vektoren und Techniken für die Durchführung einer Sicherheitsverletzung. Einzelne Anhaltspunkte zusammen zu stellen, kann herausfordernd und zeitaufwändig sein.

@@ -21,12 +21,12 @@ description: Erfahren Sie, wie automatisierte unter Such-und Antwortfunktionen i
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 039cca2f6f61d7c82f8c3e85f1fd147a68f84b68
-ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
+ms.openlocfilehash: b901585f0a25c51c377e974c56faffe560eab5f3
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "48948433"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357671"
 ---
 # <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Funktionsweise von automatisierten Untersuchungen und Antworten in Microsoft Defender für Office 365
 
@@ -97,4 +97,4 @@ Beispielsweise hat eine Organisation kürzlich eine Möglichkeit für Ihr Sicher
 
 - [Besuchen Sie die Microsoft 365-Roadmap, um zu sehen, was in Kürze geplant und veröffentlicht wurde.](https://www.microsoft.com/microsoft-365/roadmap?filters=)
 
-- [Informationen zu automatisierten Ermittlungs-und Antwortfunktionen in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir?view=o365-worldwide&preserve-view=true)
+- [Informationen zu automatisierten Ermittlungs-und Antwortfunktionen in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

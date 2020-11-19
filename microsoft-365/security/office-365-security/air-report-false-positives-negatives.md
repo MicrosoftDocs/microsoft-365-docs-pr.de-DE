@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom:
 - autoir
-ms.openlocfilehash: 101747fa1121c675938610b9681f98c6e39b7d75
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 27edc44145e7b61768d9caf00a3f308e8561d708
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446615"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357399"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Vorgehensweise Melden von falsch positiven/negativen Ergebnissen in automatisierten Ermittlungs-und Antwortfunktionen
 
@@ -36,16 +36,17 @@ ms.locfileid: "48446615"
 **Gilt für:**
 - Microsoft Defender für Office 365
 
-Haben [automatisierte Funktionen für die Untersuchung und Reaktion (Air) Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office) vermissen oder fälschlicherweise etwas erkannt? Es gibt Schritte, die Sie ausführen können, um es zu beheben. Sie können:
-- [Melden einer falsch positiven/negativen Meldung an Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
-- [Passen Sie Ihre Benachrichtigungen](#adjust-an-alert-to-prevent-false-positives-from-recurring) an (falls erforderlich); und 
-- [Rückgängigmachen von Korrekturaktionen, die ausgeführt wurden](#undo-a-remediation-action). 
+Haben [automatisierte Funktionen für die Untersuchung und Reaktion (Air) Office 365](automated-investigation-response-office.md) vermissen oder fälschlicherweise etwas erkannt? Es gibt Schritte, die Sie ausführen können, um es zu beheben. Sie können:
 
-Verwenden Sie diesen Artikel als Leitfaden. 
+- [Melden einer falsch positiven/negativen Meldung an Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
+- [Passen Sie Ihre Benachrichtigungen](#adjust-an-alert-to-prevent-false-positives-from-recurring) an (falls erforderlich); und
+- [Rückgängigmachen von Korrekturaktionen, die ausgeführt wurden](#undo-a-remediation-action).
+
+Verwenden Sie diesen Artikel als Leitfaden.
 
 ## <a name="report-a-false-positivenegative-to-microsoft-for-analysis"></a>Melden einer falsch positiven/negativen Meldung an Microsoft zur Analyse
 
-Wenn Air in Microsoft Defender für Office 365 eine e-Mail-Nachricht, eine e-Mail-Anlage, eine URL in einer e-Mail-Nachricht oder eine URL in einer Office-Datei verpasst hat, können Sie [mutmaßliche Spam, Phishing, URLs und Dateien für die Office 365 Prüfung an Microsoft übermitteln](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission).
+Wenn Air in Microsoft Defender für Office 365 eine e-Mail-Nachricht, eine e-Mail-Anlage, eine URL in einer e-Mail-Nachricht oder eine URL in einer Office-Datei verpasst hat, können Sie [mutmaßliche Spam, Phishing, URLs und Dateien für die Office 365 Prüfung an Microsoft übermitteln](admin-submission.md).
 
 Sie können [eine Datei auch zur Malware Analyse an Microsoft übermitteln](https://www.microsoft.com/wdsi/filesubmission).
 
@@ -57,7 +58,7 @@ Wenn Ihre Organisation [Microsoft Defender für Endpoint](https://docs.microsoft
 
 ## <a name="undo-a-remediation-action"></a>Rückgängigmachen einer Korrekturaktion
 
-In den meisten Fällen, wenn eine Korrekturaktion für eine e-Mail-Nachricht, eine e-Mail-Anlage oder eine URL ausgeführt wurde und das Element tatsächlich keine Bedrohung darstellt, kann Ihr Sicherheits Betriebsteam die Korrekturaktion rückgängig machen und Schritte Unternehmen, um zu verhindern, dass das falsch positive Ergebnis wiederholt wird. Sie können entweder [Threat Explorer](#undo-an-action-using-threat-explorer) oder die [Registerkarte Aktionen für eine Untersuchung](#undo-an-action-using-the-actions-tab-for-an-investigation) verwenden, um eine Aktion rückgängig zu machen. 
+In den meisten Fällen, wenn eine Korrekturaktion für eine e-Mail-Nachricht, eine e-Mail-Anlage oder eine URL ausgeführt wurde und das Element tatsächlich keine Bedrohung darstellt, kann Ihr Sicherheits Betriebsteam die Korrekturaktion rückgängig machen und Schritte Unternehmen, um zu verhindern, dass das falsch positive Ergebnis wiederholt wird. Sie können entweder [Threat Explorer](#undo-an-action-using-threat-explorer) oder die [Registerkarte Aktionen für eine Untersuchung](#undo-an-action-using-the-actions-tab-for-an-investigation) verwenden, um eine Aktion rückgängig zu machen.
 
 > [!IMPORTANT]
 > Stellen Sie sicher, dass Sie über die erforderlichen Berechtigungen verfügen, bevor Sie versuchen, die folgenden Aufgaben auszuführen.
@@ -70,8 +71,8 @@ Mit Threat Explorer kann Ihr Sicherheits Betriebsteam eine von einer Aktion betr
 
 |Szenario|Rückgängig-Optionen|Weitere Informationen|
 |---|---|---|
-|Eine e-Mail-Nachricht wurde an den Junk-e-Mail-Ordner eines Benutzers weitergeleitet.|-Verschiebt die Nachricht in den Ordner "Gelöschte Elemente" des Benutzers.<br/>-Verschieben der Nachricht in den Posteingang des Benutzers <br/>-Nachricht löschen|[Suchen und untersuchen schädlicher e-Mails, die in Office 365 bereitgestellt wurden](https://docs.microsoft.com/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered)|
-|Eine e-Mail-Nachricht oder eine Datei wurde unter Quarantäne gestellt|-Freigeben der e-Mail oder Datei <br/>-Löschen der e-Mail oder Datei|[Verwalten von isolierten Nachrichten und Dateien als Administrator in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/manage-quarantined-messages-and-files)|
+|Eine e-Mail-Nachricht wurde an den Junk-e-Mail-Ordner eines Benutzers weitergeleitet.|<ul><li>Verschiebt die Nachricht in den Ordner "Gelöschte Elemente" des Benutzers.</li><li>Verschieben der Nachricht in den Posteingang des Benutzers</li><li>Die Nachricht wird gelöscht.</li></ul>|[Suchen und untersuchen schädlicher e-Mails, die in Office 365 bereitgestellt wurden](investigate-malicious-email-that-was-delivered.md)|
+|Eine e-Mail-Nachricht oder eine Datei wurde unter Quarantäne gestellt|<ul><li>Freigeben der e-Mail oder Datei</li><li>Löschen der e-Mail oder Datei</li></ul>|[Verwalten von Nachrichten in Quarantäne als Administrator](manage-quarantined-messages-and-files.md)|
 |
 
 ### <a name="undo-an-action-using-the-actions-tab-for-an-investigation"></a>Rückgängigmachen einer Aktion mithilfe der Registerkarte "Aktionen" für eine Untersuchung
@@ -86,12 +87,12 @@ Im Wartungscenter können Sie Korrekturaktionen sehen, die ausgeführt wurden, u
 
 4. Klicken Sie auf die Registerkarte **Aktionen** .
 
-5. Wählen Sie ein Element mit dem Status **abgeschlossen**aus, und suchen Sie in der Spalte **Entscheidung** nach einem Link, beispielsweise **genehmigt**. Dadurch wird ein Flyout mit weiteren Details zur Aktion geöffnet.
+5. Wählen Sie ein Element mit dem Status **abgeschlossen** aus, und suchen Sie in der Spalte **Entscheidung** nach einem Link, beispielsweise **genehmigt**. Dadurch wird ein Flyout mit weiteren Details zur Aktion geöffnet.
 
-6. Um die Aktion rückgängig zu machen, wählen Sie **Korrektur löschen**aus.
+6. Um die Aktion rückgängig zu machen, wählen Sie **Korrektur löschen** aus.
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Microsoft Defender für Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
+[Microsoft Defender für Office 365](office-365-atp.md)
 
 [Air in Microsoft Defender für Office 365](office-365-air.md)
