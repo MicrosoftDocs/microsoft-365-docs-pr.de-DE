@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: So hat ein fiktives, aber repräsentatives globales Unternehmen Microsoft 365-Lösungen bereitgestellt.
-ms.openlocfilehash: 8ba1661a2a4257409b7622b6d78dca4bcd103929
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 66040bdd64e83d796e6d045aad2f512898452c50
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357695"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371636"
 ---
 # <a name="microsoft-365-solutions-for-the-contoso-corporation"></a>Microsoft 365-Lösungen für die Contoso Corporation
 
@@ -30,9 +30,9 @@ Das Gesamtziel von Contoso für Microsoft 365 Enterprise ist die Beschleunigung 
 
 Zunächst, erfahren Sie mehr über die [Contoso Corporation](../enterprise/contoso-overview.md), die weltweiten Büros sowie die Entwurfsaspekte, die bei der Bereitstellung von Microsoft 365 Enterprise berücksichtigt wurden.
 
-Sehen Sie als nächstes, wie Contoso Microsoft 365 für diese Lösungen und Szenarien verwendet hat:
+Als Nächstes sehen Sie, wie Contoso Microsoft 365 für diese Lösungen und Szenarien verwendet hat:
 
-- [COVID-19: Antwort und Infrastruktur für eine hybride Belegschaft](contoso-hybrid-workforce.md)
+- [COVID-19-Reaktion und Infrastruktur für Arbeiten zu Hause und im Büro](contoso-remote-onsite-work.md)
 
 - [Ein isoliertes Team für ein streng geheimes Projekt](contoso-team-for-top-secret-project.md)
 

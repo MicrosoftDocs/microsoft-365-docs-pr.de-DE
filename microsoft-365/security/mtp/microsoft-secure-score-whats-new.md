@@ -20,18 +20,20 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 0ba3d7a5e46f7e0f8677ce2844c5551bf70739e3
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: 6d1358da465bd7e31ca7b234f140aa8e48bb7508
+ms.sourcegitcommit: aa8d2de6ffac0157fffd14d0ea7f51ef0c287607
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367111"
+ms.locfileid: "49373995"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Neuerungen in Microsoft Secure Score
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 Damit die Microsoft-Sicherheitsbewertung zu einem besseren Ansprechpartner für Ihren Sicherheitsstatus wird, haben wir einige Änderungen vorgenommen. Wenn Sie mehr über geplante Änderungen wissen möchten, lesen Sie [Bald in der Microsoft-Sicherheitsbewertung verfügbar](microsoft-secure-score-whats-coming.md).
+
+Microsoft Secure Score finden Sie https://security.microsoft.com/securescore im [Microsoft 365 Security Center](overview-security-center.md).
 
 ## <a name="november-2020"></a>November 2020
 
