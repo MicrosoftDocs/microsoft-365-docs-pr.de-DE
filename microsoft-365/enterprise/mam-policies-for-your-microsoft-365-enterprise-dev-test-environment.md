@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/09/2019
+ms.date: 11/19/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Verwenden Sie diese Test Umgebungs Anleitung zum Hinzufügen von InTune-Geräte Konformitätsrichtlinien zu Ihrer Microsoft 365 for Enterprise-Testumgebung.
-ms.openlocfilehash: c1de822e5a97416bd0c672d88f2902d8986638c8
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: d42c9a603ca581941cb5a8f30b9ecd9d6f780759
+ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487412"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367095"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-for-enterprise-test-environment"></a>Geräte Konformitätsrichtlinien für Ihre Microsoft 365 für Enterprise-Testumgebung
 
@@ -48,34 +48,25 @@ Wenn Sie MAM-Richtlinien in einem simulierten Unternehmen konfigurieren möchten
 
 ## <a name="phase-2-create-a-device-compliance-policy-for-windows-10-devices"></a>Phase 2: Erstellen einer Geräte Kompatibilitäts Richtlinie für Windows 10-Geräte
 
-Erstellen Sie in dieser Phase eine Geräte Kompatibilitäts Richtlinie für Windows 10-Geräte.
-  
-1. Wechseln Sie zum [Microsoft 365 Admin Center](https://admin.microsoft.com) , und melden Sie sich bei Ihrem Microsoft 365 Test Lab-Abonnement mit ihrem globalen Administratorkonto an.
-1. Öffnen Sie auf einer neuen Registerkarte Ihres Browsers das Azure-Portal unter [https://portal.azure.com](https://portal.azure.com) .
-1. Geben Sie im Suchfeld des Azure-Portals **InTune**ein, und wählen Sie dann **InTune**aus.
-1. Wenn Sie im Bereich " **Microsoft InTune** " die Meldung " **Geräteverwaltung noch nicht aktiviert** " angezeigt haben, wählen Sie Sie aus. Wählen Sie im Bereich **Verwaltung mobiler Geräte** die Option **InTune-MDM-Autorität**aus, und wählen Sie dann auswählen aus. **Choose**
-1. Aktualisieren Sie die Registerkarte Browser.
-1. Wählen Sie im linken Navigationsbereich **Gruppen**aus.
-1. Wählen Sie im Bereich **Gruppen-alle Gruppen** die Option **+ neue Gruppe**aus.
-1. Wählen Sie im Bereich **Gruppe** die Option **Microsoft 365** oder **Sicherheit** für **Gruppentyp?**, geben Sie **verwaltete Windows 10-Geräte Benutzer** unter **Name**ein, wählen Sie **zugewiesen** in **Mitgliedschafts**aus, und wählen Sie dann **Erstellen**aus.
-1. Wählen Sie **Microsoft InTune**aus.
-1. Wählen Sie im Bereich **Microsoft InTune** in der Liste **Quick Tasks** die Option **Compliance Policy erstellen**aus.
-1. Wählen Sie im Bereich **Konformitätsrichtlinien profile** die Option **Richtlinie erstellen**aus.
-1. Geben Sie im Bereich **Richtlinie erstellen** unter **Name den Namen** **Windows 10**ein. Wählen Sie unter **Plattform**die Option **Windows 10 und höher**aus, wählen Sie im Bereich **Windows 10-Konformitätsrichtlinie** die Option **OK** aus, und wählen Sie dann **Erstellen**aus.
-1. Wählen Sie **Konformitätsrichtlinien profile**aus, und wählen Sie dann den Richtliniennamen **Windows 10** aus.
-1. Wählen Sie im Fensterbereich von **Windows 10** die Option **Zuweisungen**aus, und wählen Sie dann **einzubeziehende Gruppen**auswählen aus.
-1. Wählen Sie im Bereich **einzubeziehende Gruppen auswählen** die Gruppe **verwaltete Windows 10-Geräte Benutzer** aus, und wählen Sie dann **auswählen**aus.
-1. Wählen Sie **Speichern**aus, wählen Sie **Microsoft InTune-Übersicht**aus, und wählen Sie dann im linken Navigationsbereich **Client-apps** aus.
-1. Wählen Sie im Bereich **Client apps** die Option **apps**aus, und wählen Sie dann **Hinzufügen**aus.
-1. Wählen Sie im Bereich **app hinzufügen** die Option **App-Typ**aus, und wählen Sie dann **Windows 10** unter **Microsoft 365 Suite**aus.
-1. Wählen Sie im Bereich **app hinzufügen** die Option **App Suite-Informationen**aus.
-1. Geben Sie im Bereich **Informationen zur APP-Suite** **Microsoft 365 apps for Enterprise** in **Suite Name** und **Suite Description**ein, und wählen Sie dann **OK**aus.
-1. Wählen Sie im Bereich **app hinzufügen** die Option **App Suite konfigurieren**aus, und wählen Sie dann **OK**aus.
-1. Wählen Sie im Bereich **app hinzufügen** die Option **App Suite Settings**aus.
-1. Wählen Sie für **Update Kanal** **halbjährliche Enterprise**aus, und wählen Sie dann **OK**aus.
-1. Wählen Sie im Bereich **app hinzufügen** die Option **Hinzufügen**aus.
+In dieser Phase erstellen Sie eine Geräte Kompatibilitäts Richtlinie für Windows 10-Geräte. In dieser Phase wird Microsoft InTune und das [Verwaltungskonsole von Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) verwendet, um eine Gruppe hinzuzufügen und eine Konformitätsrichtlinie zu erstellen.
 
-Sie verfügen nun über eine Geräte Kompatibilitäts Richtlinie zum Testen der ausgewählten apps in der **Windows 10** -Geräte Kompatibilitäts Richtlinie und für Mitglieder der **verwalteten Windows 10-Geräte Benutzer** Gruppe. Beachten Sie, dass beim Auswählen von **Microsoft 365** als Gruppentyp zusätzliche Ressourcen erstellt werden.
+1. Wechseln Sie zum [Microsoft 365 Admin Center](https://admin.microsoft.com), und melden Sie sich bei Ihrem Microsoft 365 Test Lab-Abonnement mit ihrem globalen Administratorkonto an. Wählen Sie das Verwaltungskonsole **EndPoint Manager** aus. Das [Administrator Center für Endpunkt Verwaltung](https://go.microsoft.com/fwlink/?linkid=2109431) wird geöffnet.
+
+    Wenn eine Nachricht, die Ihnen ähnlich ist, die **Geräteverwaltung noch nicht aktiviert** hat, wird die Meldung angezeigt, und wählen Sie dann InTune als MDM-Autorität aus. Die einzelnen Schritte finden Sie unter [Festlegen der Verwaltungsautorität für mobile Geräte](/mem/intune/fundamentals/mdm-authority-set).
+
+    Der Schwerpunkt des Endpoint Manager Admin Center liegt auf der Geräteverwaltung und der APP-Verwaltung. Einen Rundgang durch dieses Admin Center finden Sie unter [Tutorial: Walkthrough InTune in Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager).
+
+2. Fügen Sie in **Gruppen** eine neue **Microsoft 365** -oder **Sicherheits** Gruppe mit dem Namen **Managed Windows 10-Geräte Benutzer** mit einem **zugewiesenen** Mitgliedschafts hinzu. In den nächsten Schritten weisen Sie die Konformitätsrichtlinie dieser Gruppe zu. 
+
+    Die einzelnen Schritte sowie Informationen zu **Microsoft 365** oder **Sicherheits** Gruppen finden Sie unter [Hinzufügen von Gruppen zum Organisieren von Benutzern und Geräten](/mem/intune/fundamentals/groups-add).
+
+3. Erstellen Sie unter **Geräte** eine Windows 10-Konformitätsrichtlinie. Weisen Sie diese Richtlinie der **verwalteten Windows 10-Geräte Benutzer** Gruppe zu, die Sie erstellt haben.
+
+    In Ihrer Richtlinie können Sie einfache Kennwörter blockieren, eine Firewall erfordern, die Ausführung des Antischadsoftware-Diensts von Microsoft Defender erfordern und vieles mehr. Eine Konformitätsrichtlinie umfasst normalerweise die Basiseinstellungen oder ein absolutes Minimum, das jedes Gerät aufweisen sollte.
+
+    Informationen zu den einzelnen Schritten und zu den verfügbaren Kompatibilitätseinstellungen, die Sie konfigurieren können, finden Sie unter [use Compliance Policies to Sets Rules for Devices you manage](/mem/intune/protect/device-compliance-get-started).
+
+Wenn Sie fertig sind, verfügen Sie über eine Geräte Kompatibilitäts Richtlinie für das Testen von Mitgliedern in der Gruppe der **verwalteten Windows 10-Geräte Benutzer** .
   
 ## <a name="next-step"></a>Nächster Schritt
 
