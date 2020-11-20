@@ -18,12 +18,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
 description: Vergewissern Sie sich, dass Sie alle Features in Microsoft 365 aktiviert haben, um die Produktivität der Remotearbeitskraft zu maximieren und den sicheren Zugriff auf Ihre Server, Daten und die Cloud aufrechtzuerhalten.
-ms.openlocfilehash: b886341adc49ba728856dc39786e926ebfadd3ef
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 6cf956d7d7e895dc328c8551f98e78d0fc42d86c
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906739"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357037"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Fördern von Remotemitarbeitern mit Microsoft 365
 
@@ -112,4 +112,6 @@ Nutzen Sie diese Schritte, um den Zugriff auf die Server und Cloud-Dienste Ihres
 
 [![Die Schritte zum Fördern von Remotemitarbeitern mit Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
-Die neuesten Informationen von Microsoft zur Unterstützung von Remotemitarbeitern finden Sie auf der [Ermöglichen der hybriden Arbeit mit der Microsoft Teams-Seite](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/).
+Die neuesten Informationen von Microsoft zur Unterstützung von Remotemitarbeitern finden Sie auf der Website [Ermöglichen der hybriden Arbeit mit der Microsoft Teams](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/).
+
+Wenn Sie sehen möchten, wie eine fiktive, aber repräsentative multinationale Organisation ihre Remotemitarbeiter befähigte, lesen Sie [Die Antwort von Contoso auf COVID-19 und die Infrastruktur für eine hybride Belegschaft](contoso-hybrid-workforce.md).
