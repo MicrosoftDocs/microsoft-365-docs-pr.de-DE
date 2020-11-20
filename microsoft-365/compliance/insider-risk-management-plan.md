@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b2aa72dea55d4c75f6e73161e07cf0a9bb5ecf1c
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: e8bf55cf3c27170c471dd45a68fd1ec2fa4a615b
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846273"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357444"
 ---
 # <a name="plan-for-insider-risk-management"></a>Planen des Insider-Risikomanagements
 
@@ -57,7 +57,7 @@ Abhängig von der Struktur Ihres Compliance Management-Teams haben Sie Optionen,
 
 Je nachdem, wie Sie Richtlinien für die Verwaltung von Insider Risiken implementieren möchten, müssen Sie über die entsprechenden Microsoft 365-Lizenzierungs Abonnements verfügen und einige Lösungs Voraussetzungen verstehen und planen.
 
-**Lizenzierung:** Das Insider Risk Management steht im Rahmen einer großen Auswahl von Microsoft 365-Lizenzierungs Abonnements zur Verfügung. Ausführliche Informationen finden Sie im Artikel [Erste Schritte mit Insider-Risikomanagement](insider-risk-management-configure.md#before-you-begin) .
+**Lizenzierung:** Das Insider Risk Management steht im Rahmen einer großen Auswahl von Microsoft 365-Lizenzierungs Abonnements zur Verfügung. Ausführliche Informationen finden Sie im Artikel [Erste Schritte mit Insider-Risikomanagement](insider-risk-management-configure.md#subscriptions-and-licensing) .
 
 Wenn Sie keinen vorhandenen Microsoft 365 Enterprise E5-Plan haben und das Insider Risk Management testen möchten, können Sie Microsoft 365 zu Ihrem vorhandenen Abonnement [Hinzufügen](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) oder [sich für eine Testversion](https://www.microsoft.com/microsoft-365/enterprise) von Microsoft 365 Enterprise E5 registrieren.
 

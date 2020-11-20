@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: Erstellen Sie Warnungsrichtlinien im Security and Compliance Center in Office 365 und Microsoft 365, um potenzielle Bedrohungen, Datenverlust und Berechtigungsprobleme zu überwachen.
-ms.openlocfilehash: 7b2d5b380f71a31302a54cedb6076e6fca54fa86
-ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
+ms.openlocfilehash: b6a1689ab475b9518c290bf3db03d2144610bf8b
+ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49350745"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367178"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Warnungsrichtlinien im Security & Compliance Center
 
@@ -33,7 +33,7 @@ Sie können die Warnungsrichtlinien-und Benachrichtigungs-Dashboard-Tools im Mic
 Mithilfe von Warnungsrichtlinien können Sie die Warnungen kategorisieren, die von einer Richtlinie ausgelöst werden, die Richtlinie auf alle Benutzer in Ihrer Organisation anwenden, für den Zeitpunkt, zu dem eine Warnung ausgelöst wird, eine Schwellenwertstufe festlegen und entscheiden, ob e-Mail-Benachrichtigungen beim Auslösen von Warnungen empfangen werden sollen. Es gibt auch eine Seite **Benachrichtigungen anzeigen** im Security and Compliance Center, in der Sie Warnungen anzeigen und Filtern, einen Warnungsstatus festlegen können, der Ihnen bei der Verwaltung von Warnungen hilft, und dann Warnungen nach dem angesprochenen oder behobenen Vorfall ignorieren.
 
 > [!NOTE]
-> Warnungsrichtlinien sind für Organisationen mit einem Microsoft 365 Enterprise-, Office 365 Enterprise-oder Office 365 US Government E1/F1/G1, E3/G3 oder E5/G5-Abonnement verfügbar. Erweiterte Funktionen sind nur für Organisationen mit einem E5/G5-Abonnement oder für Organisationen mit einem E1/F1/G1-oder E3/G3-Abonnement und einem Microsoft Defender für Office 365 P2 oder einem Microsoft 365 E5 Compliance-oder Microsoft 365 E5 eDiscovery und einem Audit-Add-on-Abonnement verfügbar. Die Funktionalität, die ein E5/G5-oder Add-on-Abonnement erfordert, ist in diesem Thema hervorgehoben. Beachten Sie außerdem, dass Warnungsrichtlinien in den US-Regierungs Umgebungen Office 365 gcc, gcc High und DoD verfügbar sind.
+> Warnungsrichtlinien sind für Organisationen mit einem Microsoft 365 Enterprise-, Office 365 Enterprise-oder Office 365 US Government E1/F1/G1, E3/G3 oder E5/G5-Abonnement verfügbar. Erweiterte Funktionen stehen nur für Organisationen mit einem E5/G5-Abonnement zur Verfügung, oder für Organisationen, die über ein E1/F1/G1-oder E3/G3-Abonnement und einen Microsoft Defender für Office 365 P2 oder eine Microsoft 365 E5-Compliance oder ein E5-eDiscovery und ein Audit-Add-on-Abonnement verfügen. Die Funktionalität, die ein E5/G5-oder Add-on-Abonnement erfordert, ist in diesem Thema hervorgehoben. Beachten Sie außerdem, dass Warnungsrichtlinien in den US-Regierungs Umgebungen Office 365 gcc, gcc High und DoD verfügbar sind.
 
 ## <a name="how-alert-policies-work"></a>Funktionsweise von Warnungsrichtlinien
 
