@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
 description: Informationen zum Verwalten von Microsoft 365-Benutzerkonten,-Lizenzen und-Gruppen mit PowerShell.
-ms.openlocfilehash: ec60fcfe3c3d2c0e26cb2cca6a56741067d154c0
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: d3745b9365c67615efe32881408d1a717b8dbbed
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49073125"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371536"
 ---
 # <a name="manage-microsoft-365-user-accounts-licenses-and-groups-with-powershell"></a>Verwalten von Microsoft 365-Benutzerkonten, -Lizenzen und -Gruppen mit PowerShell
 
@@ -53,5 +53,6 @@ Weitere Informationen finden Sie in den folgenden Artikeln:
 - [Entfernen von Benutzerlizenzen aus Benutzerkonten](remove-licenses-from-user-accounts-with-microsoft-365-powershell.md)
 
 ## <a name="groups"></a>Gruppen
-- [Verwalten von Gruppenmitgliedschaften](maintain-group-membership-with-microsoft-365-powershell.md)
+- [Verwalten von Sicherheitsgruppen](manage-security-groups-with-microsoft-365-powershell.md)
+- [Verwalten der Mitgliedschaft in Sicherheitsgruppen](maintain-group-membership-with-microsoft-365-powershell.md)
 - [Verwalten von Microsoft 365-Gruppen](manage-microsoft-365-groups-with-powershell.md)

@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Beschreibt, wie Sie die Bereitstellung von Benutzern auf Microsoft 365 mithilfe der Verzeichnissynchronisierung und die langfristigen Vorteile der Verwendung dieser Methode vorbereiten.
-ms.openlocfilehash: b74310b0f444da118699c5ad5fbb68b15519b830
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: e49cc4472b47320650d8a0ca90395b69ae5b6df7
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48773985"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371624"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Vorbereiten der Verzeichnissynchronisierung mit Microsoft 365
 
@@ -127,7 +127,7 @@ Die Attribute, die Sie vorbereiten müssen, sind hier aufgelistet:
     Beachten Sie, dass die ungültigen Zeichen auf die Zeichen nach dem typtrennzeichen und ":" angewendet werden, so dass SMTP:User@contso.com zulässig ist, aber SMTP:User:M@contoso.com nicht ist.
 
     > [!IMPORTANT]
-    > Alle SMTP-Adressen (Simple Mail Transport Protocol) sollten den e-Mail-Messagingstandards entsprechen. Wenn doppelte oder unerwünschte Adressen vorhanden sind, finden Sie im Hilfethema [Entfernen von doppelten und unerwünschten Proxyadressen in Exchange](https://go.microsoft.com/fwlink/?LinkId=293860).
+    > Alle SMTP-Adressen (Simple Mail Transport Protocol) sollten den e-Mail-Messagingstandards entsprechen. Entfernen Sie, falls vorhanden, doppelte oder unerwünschte Adressen.
 
 - **sAMAccountName**
 
@@ -161,7 +161,7 @@ Die Attribute, die Sie vorbereiten müssen, sind hier aufgelistet:
   - Zulässige Zeichen: a – z, a-z, 0 – 9, '. - _ ! # ^ ~
   - Buchstaben mit diakritischen Zeichen wie Umlauten, Akzenten und Tilden sind ungültige Zeichen.
   - Das @-Zeichen ist in jedem **userPrincipalName** -Wert erforderlich.
-  - Das @-Zeichen darf nie das erste Zeichen in einem **userPrincipalName** -Wert sein.
+  - Das @-Zeichen darf nie das erste Zeichen in einem **userPrincipalName**-Wert sein.
   - Der Benutzername darf nicht mit einem Punkt (.), einem kaufmännischen und- &amp; Zeichen (), einem Leerzeichen oder einem @-Zeichen enden.
   - Der Benutzername darf keine Leerzeichen enthalten.
   - Routingfähige Domänen müssen verwendet werden; Beispielsweise können keine lokalen oder internen Domänen verwendet werden.

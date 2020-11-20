@@ -9,12 +9,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 5adf57c2397c4de3c5ea8622a2a9be7207ebf152
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: 66e4e5c305947f90f935563a3baf0592ce42480a
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379302"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371670"
 ---
 # <a name="access-the-admin-portal"></a>Zugreifen auf das Verwaltungsportal
 
@@ -37,7 +37,7 @@ Jede der folgenden Rollen kann zugewiesen werden, um unterschiedliche Zugriffseb
 |Globaler Administrator     | Administratoren mit dieser Rolle verfügen über **Lese-und Schreibberechtigungen für alle Features** im Verwaltungsportal von Microsoft Managed Desktop.         |
 |Globaler Leser     | Administratoren mit dieser Rolle verfügen über **schreibgeschützte Berechtigungen für alle Features** im Verwaltungsportal von Microsoft Managed Desktop.         |
 |InTune-Dienst Administrator     |  Administratoren mit dieser Rolle verfügen über **Lese-und Schreibberechtigungen für Features, die nicht im Zusammenhang** mit der Sicherheit im Verwaltungsportal von Microsoft Managed Desktop stehen.       |
-|Dienst Support Administrator     | Administratoren mit dieser Rolle verfügen über **Lese-und Schreibberechtigungen für Features, die nicht im Zusammenhang** mit der Sicherheit im Verwaltungsportal von Microsoft Managed Desktop stehen.         |
+|Dienst Support Administrator     | Administratoren mit dieser Rolle verfügen über **schreibgeschützte Berechtigungen für Features, die nicht mit Sicherheit in Zusammenhangstehen** , und **Schreibberechtigungen zum Verwalten von Supportanforderungen** im Verwaltungsportal von Microsoft Managed Desktop.         |
 |Sicherheitsadministrator | Administratoren mit dieser Rolle verfügen über **schreibgeschützte Berechtigungen für alle Features** und **Schreibberechtigungen für sicherheitsbezogene Features** in Microsoft Managed Desktop im Verwaltungsportal. |
 |Sicherheitsleseberechtigter |Administratoren mit dieser Rolle verfügen über **schreibgeschützte Berechtigungen für alle Features** im Verwaltungsportal von Microsoft Managed Desktop.|
 

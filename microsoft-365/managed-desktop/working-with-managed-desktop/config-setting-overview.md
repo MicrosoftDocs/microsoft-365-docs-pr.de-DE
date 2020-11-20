@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 1af320ee6151036000e4e8c6fedc4d9152411283
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: bf8672ee6c3332ea6f8522f5086d72e58d1b9048
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530235"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371490"
 ---
 # <a name="configurable-settings---microsoft-managed-desktop"></a>Konfigurierbare Einstellungen – Microsoft Managed Desktop
 
@@ -22,7 +22,7 @@ Microsoft Managed Desktop stellt Einstellungen und Richtlinien bereit, die auf a
 
 Konfigurierbare Einstellungen in Microsoft Managed Desktop ermöglichen IT-Administratoren das anpassen und Bereitstellen von Einstellungen, die für Ihre Organisation und Ihre geschäftlichen Anforderungen eindeutig sind. Diese Einstellungen sind zusätzlich zu den Geräte Konfigurationseinstellungen und-Richtlinien, die von Microsoft Managed Desktop verwaltet werden.  
 
-Konfigurierbare Einstellungsänderungen werden in der Cloud vorgenommen und auf Ihre verwalteten Microsoft-Desktop Geräte in definierten Bereitstellungsgruppen angewendet. Dieser Prozess ähnelt dem Verwalten von Änderungen an Geräte configuruation-Einstellungen und-Richtlinien, die vom Dienst definiert und verwaltet werden, mit Microsoft Managed Desktop. Mithilfe des gleichen Verfahrens, das von Microsoft Managed Desktop für die Bereitstellung von Änderungen verwendet wird, können Sie Ihre Organisation mit modernen IT-Verwaltungsmethoden weiter nach vorn bewegen.
+Konfigurierbare Einstellungsänderungen werden in der Cloud vorgenommen und auf Ihre verwalteten Microsoft-Desktop Geräte in definierten Bereitstellungsgruppen angewendet. Dieser Prozess ähnelt dem Verwalten von Änderungen an Geräte Konfigurationseinstellungen und-Richtlinien, die vom Dienst definiert und verwaltet werden, mit Microsoft Managed Desktop. Mithilfe des gleichen Verfahrens, das von Microsoft Managed Desktop für die Bereitstellung von Änderungen verwendet wird, können Sie Ihre Organisation mit modernen IT-Verwaltungsmethoden weiter nach vorn bewegen.
 
 ## <a name="when-to-use-configurable-settings"></a>Wann können konfigurierbare Einstellungen verwendet werden?
 
@@ -73,6 +73,6 @@ Wenn eine Bereitstellung fehlgeschlagen ist oder Sie eine Änderung nicht rückg
 
 Weitere Informationen finden Sie unter [Deploy and Track konfigurierbar Settings](config-setting-deploy.md).
 
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
+## <a name="additional-resources"></a>Weitere Ressourcen
 - [Referenz der konfigurierbaren Einstellungen](config-setting-ref.md) 
 - [Bereitstellen konfigurierbarer Einstellungen](config-setting-deploy.md) 
