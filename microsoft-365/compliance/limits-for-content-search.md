@@ -17,17 +17,17 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: Erfahren Sie mehr über die Grenzwerte, die für die Inhaltssuche im Security & Compliance Center in Office 365 gelten, beispielsweise die maximale Anzahl gleichzeitiger Suchvorgänge.
-ms.openlocfilehash: 678f3c9613096291b5c27d89ac2d756148dd7608
-ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
+ms.openlocfilehash: d43f0772c587dbdb49abdf9cf59fe02446f3d3a7
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269384"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371525"
 ---
 # <a name="limits-for-content-search-in-the-security--compliance-center"></a>Grenzwerte für die Inhaltssuche im Security & Compliance Center
 
 > [!NOTE]
-> Die Grenzwerte in diesem Thema unterscheiden sich von den aktuellen Grenzwerten für in-Place-eDiscovery in Exchange Online und für das eDiscovery Center in SharePoint Online.
+> Die Grenzwerte in diesem Thema unterscheiden sich von den aktuellen Grenzwerten für In-Place eDiscovery in Exchange Online und für das eDiscovery Center in SharePoint Online.
   
 Auf das Feature für die Inhaltssuche im Security & Compliance Center werden verschiedene Einschränkungen angewendet. Dies umfasst Suchvorgänge, die auf der Seite für die **Inhaltssuche** ausgeführt werden, und Suchvorgänge, die einem eDiscovery-Fall zugeordnet sind. Diese Grenzwerte helfen, die Integrität und Qualität von Diensten zu gewährleisten, die Organisationen bereitgestellt werden. Es gibt auch Beschränkungen im Zusammenhang mit der Indizierung von e-Mail-Nachrichten in Exchange Online für die Suche. Die Grenzwerte für die Inhaltssuche oder die e-Mail-Indizierung können nicht geändert werden, aber Sie sollten sich dessen bewusst sein, damit Sie bei der Planung, Ausführung und Problembehandlung von Inhalts suchen diese Einschränkungen berücksichtigen können.
   
@@ -35,11 +35,11 @@ Auf das Feature für die Inhaltssuche im Security & Compliance Center werden ver
 
 In der folgenden Tabelle sind die Such Grenzwerte im Security & Compliance Center aufgeführt.
   
-|**Beschreibung der Beschränkung**|**Grenzwert**|
+| Beschreibung der Beschränkung | Grenze |
 |:-----|:-----|
 |Die maximale Anzahl von Postfächern oder Websites, die in einer einzelnen Inhaltssuche durchsucht werden können  <br/> |Kein Grenzwert <sup>1</sup> <br/> |
 |Die maximale Anzahl von Inhalts suchen, die in Ihrer Organisation gleichzeitig ausgeführt werden können.  <br/> |30  <br/> |
-|Die maximale Anzahl von Inhalts suchen, die ein einzelner Benutzer gleichzeitig starten kann. Dieser Grenzwert wird wahrscheinlich getroffen, wenn der Benutzer versucht, mehrere Suchvorgänge mithilfe des Befehls **Get-ComplianceSearch \| Start-ComplianceSearch** in Security & Compliance Center PowerShell zu starten.  <br/> |10    <br/> |
+|Die maximale Anzahl von Inhalts suchen, die ein einzelner Benutzer gleichzeitig starten kann. Dieser Grenzwert wird wahrscheinlich getroffen, wenn der Benutzer versucht, mehrere Suchvorgänge mithilfe des Befehls **Get-ComplianceSearch \| Start-ComplianceSearch** in Security & Compliance Center PowerShell zu starten.  <br/> |10   <br/> |
 |Die maximale Anzahl von Elementen pro Benutzerpostfach, die auf der Vorschauseite angezeigt werden, wenn Sie die Inhalts Suchergebnisse anzeigen.  <br/> |100  <br/> |
 |Die maximale Anzahl von Elementen, die in allen Benutzerpostfächern gefunden werden, die auf der Vorschauseite angezeigt werden, wenn Sie die Inhalts Suchergebnisse anzeigen. Die neuesten Elemente werden angezeigt.  <br/> |1,000  <br/> |
 |Die maximale Anzahl von Benutzerpostfächern, für die eine Vorschau für Suchergebnisse angezeigt werden kann. Wenn mehr als 1000 Postfächer vorhanden sind, die Inhalte enthalten, die mit der Suchabfrage übereinstimmen, stehen nur die obersten 1000-Postfächer mit den meisten Suchergebnissen für die Vorschau zur Verfügung.  <br/> |1,000  <br/> |
@@ -52,6 +52,7 @@ In der folgenden Tabelle sind die Such Grenzwerte im Security & Compliance Cente
 |Maximale Anzahl von Varianten, die zurückgegeben werden, wenn ein Präfix Platzhalter verwendet wird, um eine exakte Phrase in einer Suchabfrage oder bei Verwendung eines Präfix Platzhalters und des **near** Boolean-Operators zu suchen.  <br/> |10.000 <sup>3</sup> <br/> |
 |Die minimale Anzahl von Alphazeichen für Präfix Platzhalter; beispielsweise,  `time*` ,  `one*` , oder  `set*` .  <br/> |3  <br/> |
 |Die maximale Anzahl von Postfächern in einer Inhaltssuche, in der Sie Elemente löschen können, indem Sie die Aktion "suchen und löschen" ausführen (mit dem Befehl " **New-ComplianceSearchAction-Purge** "). Wenn die Inhaltssuche, für die Sie eine Löschaktion durchführen, mehr Quellpostfächer als diesen Grenzwert enthält, schlägt die Löschaktion fehl. Weitere Informationen zur Suche und Bereinigung finden Sie unter [Suchen nach und Löschen von e-Mail-Nachrichten in Ihrer Organisation](search-for-and-delete-messages-in-your-organization.md).  <br/> |50.000  <br/> |
+|Die maximale Anzahl von Postfächern in einer Inhaltssuche, aus der Sie Elemente exportieren können. Wenn die Inhaltssuche, die Sie exportieren, mehr Quellpostfächer als diesen Grenzwert enthält, schlägt der Export fehl. Weitere Informationen finden Sie unter [Exportieren von Inhalts Suchergebnissen](export-search-results.md).  <br/> |100.000  <br/> |
 
 > [!NOTE]
 > <sup>1</sup> obwohl Sie eine unbegrenzte Anzahl von Postfächern in einer einzigen Suche durchsuchen können, können Sie die exportierten Suchergebnisse nur mit dem eDiscovery-Export Tool in Office 365 Security & Compliance Center oder dem Microsoft 365 Compliance Center von maximal 100.000 Postfächern herunterladen. Zum Herunterladen der Suchergebnisse aus mehr als 100.000 Postfächern müssen Sie Security & Compliance Center PowerShell verwenden. Weitere Informationen und ein Beispielskript finden Sie unter [Exportieren von Ergebnissen aus mehr als 100.000 Postfächern](export-search-results.md#exporting-results-from-more-than-100000-mailboxes). <br/><br/> <sup>2</sup> beim Durchsuchen von SharePoint-und OneDrive für Unternehmen-Speicherorte werden die Zeichen in den URLs der gesuchten Websites mit diesem Grenzwert berechnet. <br/><br/> <sup>3</sup> bei nicht-Phrase-Abfragen (ein Schlüsselwortwert, der keine doppelten Anführungszeichen verwendet) wird ein spezieller Präfix Index verwendet. Dies weist darauf hin, dass ein Wort in einem Dokument auftritt, aber nicht dort, wo es im Dokument vorkommt. Um eine Phrasenabfrage (ein Stichwort Wert mit doppelten Anführungszeichen) durchführen zu können, müssen wir die Position im Dokument für die Wörter im Ausdruck vergleichen. Dies bedeutet, dass der Präfix Index für Phrase-Abfragen nicht verwendet werden kann. In diesem Fall erweitern wir die Abfrage intern mit allen möglichen Wörtern, zu denen das Präfix erweitert wird. beispielsweise  `"time*"` kann auf erweitert werden  `"time OR timer OR times OR timex OR timeboxed OR …"` . Die maximale Anzahl von Varianten, in die das Wort erweitert werden kann (nicht die Anzahl der Dokumente, die der Abfrage entsprechen) ist 10.000. Für nicht-Phrasen-Ausdrücke gibt es keine Obergrenze. 
@@ -60,7 +61,7 @@ In der folgenden Tabelle sind die Such Grenzwerte im Security & Compliance Cente
 
 In der folgenden Tabelle werden die Grenzwerte für die Indizierung beschrieben, die dazu führen können, dass eine e-Mail-Nachricht als nicht indexiertes Element oder ein teilweise indiziertes Element in den Ergebnissen einer Inhaltssuche zurückgegeben wird.
   
-|**Indizierungs Grenzwert**|**Maximalwert**|**Beschreibung**|
+| Indizierungs Grenzwert | Maximalwert | Beschreibung |
 |:-----|:-----|:-----|
 |Maximale Anlagengröße|150 MB  <br/> |Die maximale Größe einer e-Mail-Anlage, die für die Indizierung analysiert wird. Alle Anlagen, die diesen Grenzwert überschreiten, werden nicht für die Indizierung analysiert, und die Nachricht mit der Anlage wird als teilweise indiziert markiert.  <br/> <br/>**Hinweis:** Die Analyse ist der Vorgang, bei dem der Indexdienst Text aus der Anlage extrahiert, unnötige Zeichen wie Interpunktion und Leerzeichen entfernt und dann den Text in Wörter (in einem Prozess namens "Tokenisierung") aufteilt, die dann im Index gespeichert werden.           |
 |Maximale Anzahl von Anlagen  <br/> |250  <br/> |Die maximale Anzahl von Dateien, die an eine e-Mail-Nachricht angehängt werden, die für die Indizierung analysiert wird. Wenn eine Nachricht mehr als 250 Anlagen aufweist, werden die ersten 250-Anlagen analysiert und indiziert, und die Nachricht wird als teilweise indiziert gekennzeichnet, da Sie über zusätzliche Anlagen verfügt, die nicht analysiert wurden.  <br/> |

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Administratoren können die Unterstützung für die Sensitivitäts Bezeichnung für Word-, Excel-und PowerPoint-Dateien in SharePoint und OneDrive aktivieren.
-ms.openlocfilehash: 84628cdf1e56bfcdf72bc5aca7aed61eba6a7782
-ms.sourcegitcommit: 2beefb695cead03cc21d6066f589572d3ae029aa
+ms.openlocfilehash: 0feb98c6a0040ad67b4607062abdf0be5b5fbdb8
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49349691"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376328"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive
 
@@ -218,6 +218,26 @@ Verwenden Sie das [Get-Label-](https://docs.microsoft.com/powershell/module/exch
     ``` 
 
 Weitere Informationen zur Verwendung von verwalteten Eigenschaften finden Sie unter [Verwalten des Suchschemas in SharePoint](https://docs.microsoft.com/sharepoint/manage-search-schema).
+
+## <a name="remove-encryption-for-a-labeled-document"></a>Entfernen der Verschlüsselung für ein beschriftetes Dokument
+
+Es gibt möglicherweise seltene Situationen, in denen ein SharePoint-Administrator die Verschlüsselung aus einem in SharePoint gespeicherten Dokument entfernen muss. Jeder Benutzer, der über das [Rights Management-Nutzungsrecht](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) "Export" oder "Vollzugriff" für dieses Dokument verfügt, kann die Verschlüsselung entfernen, die vom Azure Rights Management-Dienst aus Azure Information Protection übernommen wurde. Benutzer mit diesen beiden Nutzungsrechten können beispielsweise eine Bezeichnung ersetzen, die die Verschlüsselung mit einer Bezeichnung ohne Verschlüsselung anwendet. Alternativ kann ein [Superbenutzer](https://docs.microsoft.com/azure/information-protection/configure-super-users) die Datei herunterladen und eine lokale Kopie ohne Verschlüsselung speichern.
+
+Alternativ kann ein globaler Administrator oder [SharePoint-Administrator](https://docs.microsoft.com/sharepoint/sharepoint-admin-role) das Cmdlet [Unlock-SPOSensitivityLabelEncryptedFile](https://docs.microsoft.com/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) ausführen, wodurch sowohl die Vertraulichkeits Bezeichnung als auch die Verschlüsselung entfernt wird. Dieses Cmdlet wird auch dann ausgeführt, wenn der Administrator nicht über Zugriffsberechtigungen für die Website oder Datei verfügt oder wenn der Azure Rights Management-Dienst nicht verfügbar ist. 
+
+Zum Beispiel:
+
+```powershell
+Unlock-SPOSensitivityLabelEncryptedFile -FileUrl "https://contoso.com/sites/Marketing/Shared Documents/Doc1.docx" -JustificationText "Need to decrypt this file"
+```
+
+Anforderungen:
+
+- SharePoint Online Management Shell-Version 16.0.20616.12000 oder höher.
+
+- Die Verschlüsselung wurde von einer Sensitivitäts Bezeichnung mit Administrator definierten Verschlüsselungseinstellungen (die Einstellungen " [jetzt Zuweisen von Berechtigungen](encryption-sensitivity-labels.md#assign-permissions-now) ") angewendet. Die [Doppelschlüssel Verschlüsselung](encryption-sensitivity-labels.md#double-key-encryption) wird für dieses Cmdlet nicht unterstützt.
+
+Der Ausrichtungs Text wird dem [Überwachungsereignis](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) der **entfernten Vertraulichkeits Bezeichnung aus der Datei** hinzugefügt, und die Entschlüsselungs Aktion wird auch in der [Schutz Nutzungs Protokollierung für Azure Information Protection](https://docs.microsoft.com/azure/information-protection/log-analyze-usage)aufgezeichnet.
 
 ## <a name="how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out"></a>Deaktivieren von Sensitivitäts Bezeichnungen für SharePoint und OneDrive (Opt-out)
 

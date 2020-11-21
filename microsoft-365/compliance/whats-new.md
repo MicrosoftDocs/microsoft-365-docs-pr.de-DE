@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Unabhängig davon, ob neue Lösungen zum Compliance Center hinzugefügt werden, vorhandene Funktionen auf der Grundlage Ihres Feedbacks aktualisiert werden oder eine aktualisierte Dokumentation bereitgestellt wird, hilft Ihnen Microsoft 365, die ständig wechselnde Compliance-Landschaft zu überwachen. Finden Sie heraus, was wir diesen Monat vorhaben.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: cf019e15b1d5b915c58325c7d7c6f160acffe03e
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: 27228f37673eee64ae44de9b88b7505d1958c05f
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988853"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376608"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Neuerungen in Microsoft 365 Compliance
 
@@ -36,6 +36,77 @@ Unabhängig davon, ob Sie dem [Microsoft 365 Compliance Center](microsoft-365-co
 > [!TIP]
 > Interessieren Sie sich dafür, was in anderen Admin Centers geschieht? Dann lesen Sie die folgenden Artikel:<br>[Neuerungen im Microsoft 365 Admin Center](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Aktive Websites im SharePoint Online Admin Center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Neuerungen in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
 Besuchen Sie die [Microsoft 365-Roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap), um sich über Features von Microsoft 365 zu informieren, die eingeführt wurden, bereitgestellt werden, sich in der Entwicklung befinden, eingestellt oder zuvor veröffentlicht wurden.
+
+## <a name="october-2020"></a>Oktober 2020
+
+### <a name="advanced-ediscovery"></a>Advanced eDiscovery
+
+[Unterstützung für CJK-Sprachen](ediscovery-cjk-support.md). Advanced eDiscovery unterstützt jetzt Doppelbyte-Zeichensatz Sprachen, die als CJK-Sprachen bezeichnet werden (umfasst vereinfachtes Chinesisch, traditionelles Chinesisch, Japanisch und Koreanisch). Diese können in mehreren Szenarien für erweiterte Überprüfungs Sätze verwendet werden.
+
+### <a name="sensitivity-labels"></a>Vertraulichkeitsbezeichnungen
+
+- [Bezeichnungsbereich](sensitivity-labels.md#label-scopes). Beim Erstellen einer Sensitivitäts Bezeichnung wird eine neue Option zum Definieren des Bereichs für die Bezeichnung angezeigt. Mit dieser Option können Sie Bezeichnungen nur für Dateien und e-Mails, Container (wie SharePoint-Websites und-Teams) oder beides konfigurieren.
+- [Dynamische Inhalts Markierung](sensitivity-labels-office-apps.md#dynamic-markings-with-variables). Wenn Sie die Inhalts Markierung für eine Vertraulichkeits Bezeichnung konfigurieren, können Sie nun die dynamischen Variablen wie `${Item.Label}` und `${Item.Location}` in der Textzeichenfolge für die Kopfzeile, die Fußzeile oder das Wasserzeichen verwenden.
+
+## <a name="september-2020"></a>September 2020
+
+### <a name="spotlight-compliance-manager"></a>Spotlight: Compliance-Manager
+
+Bei Ignite in diesem Jahr angekündigt, wird das Compliance-Ergebnis als [Compliance-Manager](compliance-manager.md)umbenannt. In dieser Version wird der Übergang von der vorherigen Startseite des Compliance Managers im Dienst Vertrauensstellungs Portal abgeschlossen und eine End-to-End-Compliance-Verwaltungslösung im Microsoft 365 Compliance Center eingeführt.
+
+Sehen Sie sich das Video unten an, um zu erfahren, wie Compliance-Manager die Compliance-Verwaltung in Ihrer Organisation erleichtert.
+<br>
+<br>
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4FGYZ]
+
+### <a name="advanced-audit"></a>Erweiterte Überwachung
+
+- Die neue 10-jährige Aufbewahrung von Überwachungsprotokollen hilft bei der Unterstützung lang andauernder Untersuchungen und der Reaktion auf regulatorische, rechtliche und interne Verpflichtungen.
+- [Drei neue wichtige Ereignisse](advanced-audit.md#access-to-crucial-events-for-investigations). Die folgenden neuen Ereignisse können Ihnen dabei helfen, mögliche Verstöße zu untersuchen und den Umfang des Kompromisses zu bestimmen: Send, SearchQueryInitiatedExchange und SearchQueryInitiatedSharePoint.
+
+### <a name="communication-compliance"></a>Kommunikationscompliance
+
+- [Aktualisierte Rollengruppen](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance). Rollengruppen für die Kommunikations Konformität entsprechen nun der Rollengruppen Struktur, die für die Lösung für das Insider Risikomanagement verfügbar ist.
+- [Berichts Dashboard](communication-compliance-feature-reference.md#reports-preview). Ihr zentraler Standort für die Anzeige aller Kommunikations Kompatibilitätsberichte. Berichts-Widgets bieten eine schnelle Übersicht über die am häufigsten benötigten Einblicke für eine Gesamtbewertung des Status von Kommunikations Compliance-Aktivitäten.
+- [Power automatisiert Flows](communication-compliance-feature-reference.md#power-automate-flows-preview). Einrichten von Flows zum Automatisieren von Aufgaben für Warnungen und Benutzer, Benachrichtigen von Managern, wenn Benutzer eine Warnung auslösen, und vieles mehr.
+- [Korrekturaktion "Klassifizierung verbessern"](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action). Benachrichtigungen mit Elementen, die Schulungs klassifizierten entsprechen, können von Feedback profitieren, um falsch positive Ergebnisse in Ihrer Organisation zu minimieren. Mit der Option " **Klassifizierung verbessern** " können Sie Feedback geben, ob erkannte Elemente mit der in der zugehörigen Kommunikations Konformitätsrichtlinie konfigurierten Klassifizierung übereinstimmen. Sie können sogar andere Klassifizierungen vorschlagen, die dem Element zugeordnet werden sollen, um die Übereinstimmungs Genauigkeit für zukünftige Warnungen zu verbessern.
+
+### <a name="data-connectors"></a>Datenconnectors
+
+- [Neue Drittanbieter-Daten-Konnektoren](archiving-third-party-data.md#third-party-data-connectors). 25 neue Daten-Konnektoren, darunter 14 Konnektoren von Globanet und 8 von TeleMessage.
+- [Physischer Badges-Connector](import-physical-badging-data.md). Importieren Sie physische Badges-Daten, wie beispielsweise unformatierte physische Zugriffsereignisse des Mitarbeiters oder physische Zugriffs Warnungen, die vom Badges-System Ihrer Organisation generiert werden. Beispiele hierfür sind Einträge zu Gebäuden, Serverräumen oder Rechenzentren. Physische Badges-Daten können von der Insider Risk Management-Lösung verwendet werden, um Ihre Organisation vor böswilligen Aktivitäten oder Datendiebstahl in Ihrer Organisation zu schützen.
+
+### <a name="insider-risk-management"></a>Insider-Risikomanagement
+
+- [Microsoft Teams-Integration](insider-risk-management-settings.md#microsoft-teams-preview). Wenn die Integration von Microsoft Teams in den Einstellungen für Insider Risiken aktiviert ist, können Sie Koordination und Zusammenarbeit mit anderen Beteiligten in Microsoft Teams für Aufgaben wie die sichere Freigabe und Speicherung von Daten im Zusammenhang mit einzelnen Fällen, das Nachverfolgen und Überprüfen von Reaktions Aktivitäten von Analysten und Ermittlern und vieles mehr.
+- [Power automatisiert Flows](insider-risk-management-settings.md#power-automate-flows-preview). Einrichten von Flows zur Automatisierung wichtiger Aufgaben für Fälle und Benutzer, wie das Abrufen von Benutzer-, Benachrichtigungs-und Fall Informationen für die Freigabe für beteiligte und andere apps, das Automatisieren von Aktionen wie das Veröffentlichen von fallnotizen und vieles mehr.
+- [Aktivitäten-Explorer](insider-risk-management-alerts.md#activity-explorer-preview): Verfügbar bei der Überprüfung von Benachrichtigungen bietet der Aktivitäts-Explorer den Ermittlern und Analysten ein umfassendes Analyse Tool zum Drilldown in jede Warnung. Überprüfen Sie schnell eine Zeitachse der erkannten riskanten Aktivität, identifizieren und Filtern Sie alle Risiko Aktivitäten, die mit Warnungen verbunden sind.
+
+### <a name="retention-policies-and-retention-labels"></a>Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
+
+- [Unterstützung für jammern](retention-policies-yammer.md). Sie können jetzt Aufbewahrungsrichtlinien verwenden, um jammern von Community-Nachrichten und privaten Nachrichten beizubehalten und zu löschen.
+- [Anwenden von Bezeichnungen auf Besprechungen in Microsoft Teams](apply-retention-labels-automatically.md#microsoft-teams-meeting-recordings). Verwenden Sie beim Erstellen einer autolabeling-Richtlinie den Keyword-Abfrage-Editor, um Microsoft Teams-Besprechungsaufzeichnungen zu identifizieren, die in OneDrive-Konten der Benutzer oder in SharePoint gespeichert sind.
+
+### <a name="records-management"></a>Datensatzverwaltung
+
+[Unterstützung für regulatorische Datensätze](declare-records.md#how-to-display-the-option-to-mark-content-as-a-regulatory-record). Durch das Klassifizieren einer Bezeichnung als Regulierungsdaten Satz werden die Einschränkungen für Inhalte erhöht, auf die die Bezeichnung angewendet wird, und die verfügbaren Verwaltungsaktionen für die Bezeichnung selbst werden eingeschränkt. Nachdem er beispielsweise auf Inhalte angewendet wurde, kann niemand, nicht einmal ein globaler Administrator, die Bezeichnung entfernen. [Erfahren Sie mehr](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked) darüber, welche Aktionen für regulatorische Datensätze zulässig und blockiert sind.
+
+### <a name="sensitivity-labels"></a>Vertraulichkeitsbezeichnungen
+
+[Unterstützung für Kunden der US-Regierung](https://docs.microsoft.com/en-us/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description). Vertraulichkeits Bezeichnungen werden jetzt für gcc-, gcc High-und DoD-Kunden unterstützt, nur für den Azure Information Protection Unified Labeling-Client und-Scanner.
+
+### <a name="trainable-classifiers"></a>Trainierbare Klassifizierungsmerkmale
+
+Neue Umschulungs-und Feedbackfunktionen helfen, die Genauigkeit zu verbessern und falsch positive Übereinstimmungen für alle benutzerdefinierten Klassifizierungen und einige vorab geschulte Klassifizierungen zu minimieren. Mit diesem Fluss können Sie Feedback darüber geben, ob Elemente mit bestimmten Klassifizierungen übereinstimmen, andere Klassifizierungen vorschlagen, um Elemente zuzuordnen, und Klassifizierungen neu auszubilden, um die Übereinstimmungs Genauigkeit zu verfeinern und zu verbessern.
+
+Diese neue Funktion ist in den folgenden Features enthalten:
+
+> [!NOTE]
+> Wenn Sie mindestens 30 Feedback Antworten bereitstellen, erstellen wir für alle Features eine Umschulungs Version dieser Klassifizierung, die Sie überprüfen können. Wenn es eine Verbesserung gibt, können Sie die Klassifizierung erneut veröffentlichen.
+
+- [Trainierbare Klassifizierungen](classifier-learn-about.md#retraining-classifiers): Um die Genauigkeit Ihrer veröffentlichten Klassifizierungen zu verbessern, können Sie Feedback darüber geben, ob die erkannten Elemente mit der Klassifizierung übereinstimmen.
+- [Kommunikations Kompatibilität](classifier-how-to-retrain-comms-compliance.md). Mit der neuen Aktion zur **Optimierung der Klassifizierung optimieren** können Sie Feedback geben, ob ein Element aus einer Benachrichtigung über die Konformität mit der in der Kommunikations Konformitätsrichtlinie konfigurierten Klassifizierung übereinstimmt.
+- [Inhalts-Explorer](classifier-how-to-retrain-content-explorer.md): Wenn Sie eine automatische Bezeichnungsrichtlinie für die Aufbewahrung einrichten, um automatisch Bezeichnungen auf e-Mail-Nachrichten anzuwenden, die Schulungs Klassifizierer entsprechen, können Sie den Inhalts-Explorer verwenden, um die beschrifteten Elemente zu überprüfen und Feedback darüber zu geben, ob die Elemente mit der Klassifizierung übereinstimmen.
 
 ## <a name="august-2020"></a>August 2020
 
@@ -101,7 +172,7 @@ Aufbewahrungs bezogene Administratoraktivitäten werden jetzt aufgezeichnet und 
 Damit Sie besser verstehen, welche Compliance-Lösungen zum Schutz und zur Steuerung vertraulicher Daten Ihrer Organisation verwendet werden, haben wir zwei neue Zielseiten mit Übersichten darüber erstellt, wie die Lösungen zusammenarbeiten, um diese Ziele zu erreichen, einschließlich Links zu verwandten Dokumenten, damit Sie weiter eintauchen können.
 
 [Microsoft Information Protection in Microsoft 365](information-protection.md)<br>
-[Microsoft Information Governance in Microsoft 365](manage-Information-governance.md)
+[Microsoft-Informationsgovernance in Microsoft 365](manage-Information-governance.md)
 
 ### <a name="advanced-ediscovery-add-non-custodial-data-sources-to-your-cases"></a>Erweiterte eDiscovery: Hinzufügen von Datenquellen ohne Freiheitsentzug zu ihren Fällen
 
@@ -358,15 +429,3 @@ Wenn Sie das Office 365 Security & Compliance Center für Ihre Compliancebedürn
 |Vertraulichkeitsbezeichnungen und Bezeichnungsrichtlinien|Klassifizierung > Vertraulichkeitsbezeichnungen > Registerkarte „Bezeichnungen“ und „Bezeichnungsrichtlinien“ <br/> https://protection.office.com/sensitivity |Information Protection > Registerkarte „Bezeichnungen“ und „Bezeichnungsrichtlinien“ <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[Weitere Informationen zu Vertraulichkeitsbezeichnungen](sensitivity-labels.md) |
 |Dienstüberprüfung|Dienstüberprüfung <br/> https://protection.office.com/serviceassurance/dashboard |Zurzeit kann nur im Office 365 Security & Compliance Center auf Dienstüberprüfungsressourcen zugegriffen werden. |[Dienstüberprüfung im Security & Compliance Center](service-assurance.md)|
 |Aufsicht|Aufsicht <br/> https://protection.office.com/supervisoryreviewv2 |Kommunikationscompliance <br/> https://compliance.microsoft.com/supervisoryreview |[Kommunikationscompliance in Microsoft 365 (Vorschau)](communication-compliance.md) |
-
-## <a name="september-2019"></a>September 2019
-
-Fragen Sie sich, warum es an der Releasefront in diesem Monat ruhig ist? Wir sind mitten in der Erstellung neuer, innovativer Compliancelösungen, die im November auf der [Microsoft Ignite](https://www.microsoft.com/ignite) vorgestellt werden. Schauen Sie regelmäßig vorbei!
-
-### <a name="new-encryption-options-for-sensitivity-labels"></a>Neue Verschlüsselungsoptionen für Vertraulichkeitsbezeichnungen 
-
-Wenn Sie die Verschlüsselung für eine Vertraulichkeitsbezeichnung konfigurieren, stehen Ihnen jetzt zwei Optionen zur Verfügung, mit denen Benutzer Berechtigungen zuweisen können, wenn sie die Bezeichnung manuell auf E-Mails und Dokumente anwenden:<br>
-- Wenn die Bezeichnung in **Outlook-E-Mail** angewandt wird, können die Benutzer Einschränkungen durchsetzen, die der Option „Nicht weiterleiten“ entsprechen. Empfänger können die Nachricht lesen, den Inhalt aber nicht weiterleiten, drucken oder kopieren.
-- Wenn die Bezeichnung auf **Word-, PowerPoint- und Excel-Dateien** angewendet wird, werden die Benutzer aufgefordert, bestimmten Benutzern und Gruppen Zugriffsberechtigungen zuzuweisen.
-
-Wechseln Sie zu [Einschränken des Zugriffs auf Inhalte mithilfe von Sensitivitäts Bezeichnungen zur Verschlüsselung anwenden](encryption-sensitivity-labels.md#let-users-assign-permissions) , um weitere Informationen zu erhalten.

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Legen Sie die Benutzerberechtigungen und-Rollen von Microsoft Compliance Manager fest, und konfigurieren Sie automatisierte Tests von Aktionen. Verwalten Sie den Benutzerverlauf, und Filtern Sie die Dashboardansicht.
-ms.openlocfilehash: d6dd7263779ae7f3e9366c0984360c191a62d5e8
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: bcb75943df88578b30063d8e35877cb2e3e6250b
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49072890"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376556"
 ---
 # <a name="get-started-with-compliance-manager"></a>Erste Schritte mit Compliance-Manager
 
@@ -30,9 +30,9 @@ ms.locfileid: "49072890"
 
 ## <a name="who-can-access-compliance-manager"></a>Wer auf den Compliance-Manager zugreifen kann
 
-Compliance-Manager ist für Organisationen mit Office 365-und Microsoft 365-Lizenzen und für US Government Community Cloud (gcc) moderate Kunden verfügbar. Die Verfügbarkeit und die Verwaltungsfunktionen für die Bewertung hängen von Ihrem Lizenzvertrag ab.  [Anzeigen von Details zur Dienstbeschreibung](https://go.microsoft.com/fwlink/?linkid=2132371).
+Compliance-Manager ist für Organisationen mit Office 365-und Microsoft 365-Lizenzen und für US Government Community Cloud (gcc) moderate und gcc High Customers verfügbar. Die Verfügbarkeit und die Verwaltungsfunktionen für die Bewertung hängen von Ihrem Lizenzvertrag ab.  [Anzeigen von Details zur Dienstbeschreibung](https://go.microsoft.com/fwlink/?linkid=2132371).
 
-## <a name="before-you-begin"></a>Vorbereitung
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Der globale Administrator Microsoft 365 für Ihre Organisation ist wahrscheinlich der erste Benutzer, der auf den Compliance-Manager zugreift. Wenn Sie den Compliance-Manager zum ersten Mal besuchen, empfehlen wir die globale Administratoranmeldung und legen Benutzerberechtigungen fest, wie unten beschrieben.
 
@@ -50,6 +50,9 @@ Compliance-Manager verwendet ein RBAC-Berechtigungsmodell (Role-Based Access Con
 ### <a name="where-to-set-permissions"></a>Festlegen von Berechtigungen
 
 Die Person, die die globale Administratorrolle für Ihre Organisation innehat, kann Benutzerberechtigungen im Microsoft 365 Compliance Center sowie in Azure Active Directory (Azure AD) festlegen.
+
+> [!NOTE]
+> Kunden in höheren Umgebungen in der US Government Community (gcc) können in Azure AD nur Benutzerberechtigungen und-Rollen für den Compliance-Manager festlegen. Im folgenden finden Sie Informationen zu Azure AD Anweisungen und Rollentypen Definitionen.
 
 Führen Sie die folgenden Schritte aus, um Berechtigungen im Microsoft 365 Compliance Center festzulegen und Rollen zuzuweisen:
 
@@ -97,6 +100,9 @@ In der folgenden Tabelle sind die Funktionen aufgeführt, die für die einzelnen
 ## <a name="settings-for-automated-testing-and-user-history"></a>Einstellungen für automatisierte Tests und Benutzerverlauf
 
 Die Kompatibilitäts-Manager-Einstellungen im Microsoft 365 Compliance Center ermöglichen Ihnen das Aktivieren und Deaktivieren automatischer Tests von Verbesserungs Aktionen. Mit den Einstellungen können Sie auch die Daten von Benutzern verwalten, die Verbesserungs Aktionen zugeordnet sind, einschließlich der Möglichkeit, Verbesserungs Aktionen einem anderen Benutzer zuzuweisen.  Nur Personen mit globaler Administrator-oder Compliance-Manager-Administratorrolle können auf die Compliance-Manager-Einstellungen zugreifen.
+
+> [!NOTE]
+> Das Feature für automatisierte Tests steht Kunden in gcc-Umgebungen nicht zur Verfügung, da in diesen Umgebungen kein sicheres Ergebnis verfügbar ist. GCC-High-Kunden müssen ihre Verbesserungs Aktionen manuell implementieren und testen.
 
 ### <a name="set-up-automated-testing"></a>Einrichten von automatisierten Tests
 
@@ -178,9 +184,9 @@ Sie können Verbesserungs Aktionen von einem Benutzer zu einem anderen zuweisen.
 
 6. Geben Sie im Feld **Benutzer suchen** den Namen oder die e-Mail-Adresse des Benutzers *ein, dem* Sie die Verbesserungs Aktionen zuweisen möchten.
 
-7. Wenn der Name des beabsichtigten Benutzers angezeigt wird, unter **Verbesserungs Aktionen werden zugewiesen** , wählen Sie den Benutzer aus, und wählen Sie dann **Aktionen zuweisen** aus.
+7. Wenn der Name des beabsichtigten Benutzers angezeigt wird, unter **Verbesserungs Aktionen werden zugewiesen**, wählen Sie den Benutzer aus, und wählen Sie dann **Aktionen zuweisen** aus.
 
-8. Wenn die Neuzuweisung abgeschlossen ist, wird im Flyout-Bereich eine Bestätigungsmeldung angezeigt, in der bestätigt wird, dass alle Verbesserungs Aktionen des vorherigen Benutzers dem neuen Benutzer neu zugewiesen wurden. Wenn Sie eine Fehlermeldung zum erneuten Zuweisen erhalten, schließen Sie das Fenster, und versuchen Sie es erneut. Klicken Sie auf **Fertig** , um den Flyout-Bereich zu schließen.
+8. Wenn die Neuzuweisung abgeschlossen ist, wird im Flyout-Bereich eine Bestätigungsmeldung angezeigt, in der bestätigt wird, dass alle Verbesserungs Aktionen des vorherigen Benutzers dem neuen Benutzer neu zugewiesen wurden. Wenn Sie eine Fehlermeldung zum erneuten Zuweisen erhalten, schließen Sie das Fenster, und versuchen Sie es erneut. Klicken Sie auf **Fertig**, um den Flyout-Bereich zu schließen.
 
 Der neue Empfänger erhält eine e-Mail, der eine Verbesserungs Aktion zugewiesen wurde. Die e-Mail enthält einen direkten Link auf der Detailseite der Verbesserungs Aktion.
  
@@ -233,8 +239,8 @@ In diesem Abschnitt werden Lösungen aufgeführt, die Verbesserungs Aktionen ent
 
 In diesem Abschnitt erhalten Sie zwei verschiedene Möglichkeiten, um eine detailliertere Darstellung ihrer Ergebnisse zu erzielen:
 
-- **Kategorien** : zeigt den Prozentsatz der Gesamtpunktzahl in Datenschutzkategorien an, beispielsweise "Informationen schützen" oder "Geräte verwalten".
-- **Assessments** : zeigt den Prozentsatz Ihrer Fortschritte bei der Verwaltung von Bewertungen für bestimmte Compliance-und Datenschutzstandards, Verordnungen oder Gesetze wie dsgvo oder NIST 800-53.
+- **Kategorien**: zeigt den Prozentsatz der Gesamtpunktzahl in Datenschutzkategorien an, beispielsweise "Informationen schützen" oder "Geräte verwalten".
+- **Assessments**: zeigt den Prozentsatz Ihrer Fortschritte bei der Verwaltung von Bewertungen für bestimmte Compliance-und Datenschutzstandards, Verordnungen oder Gesetze wie dsgvo oder NIST 800-53.
 
 ### <a name="filtering-your-dashboard-view"></a>Filtern der Dashboardansicht
 
@@ -264,17 +270,17 @@ Auf der Seite Verbesserungs Aktionen werden alle Verbesserungs Aktionen angezeig
 
 Wenn auf der Seite mit den Verbesserungs Aktionen eine lange Liste von Aktionen vorliegt, kann es hilfreich sein, die Ansicht zu filtern. Wählen Sie in der Liste Aktionen in der rechten oberen Ecke den **Filter** aus. Wenn der **Filter** Flyout-Bereich angezeigt wird, wählen Sie Ihre Kriterien basierend auf Regeln und Standards, Lösung und Gruppe aus. Sie können die Ansicht auch anpassen, indem Sie in der oberen rechten Ecke die Option **Gruppe** auswählen. Wählen Sie im Dropdownmenü die Option aus, um nach Gruppe, Lösung, Kategorie, Aktionstyp oder Status anzuzeigen.
 
-In der Standardansicht für diese Seite werden keine Verbesserungs Aktionen mit dem Teststatus " **übergeben** " angezeigt. Zum Anzeigen von Aktionen, die Tests bestanden haben, aktivieren Sie das Kontrollkästchen **übergebenes** Feld im Dropdownbereich Filter. Nur Aktionen mit einem Teststatus der **übergebenen** Zählung zu Ihrer Partitur. Einige Aktionen zeigen möglicherweise eine **ausstehende Update Bezeichnung an.** Erfahren Sie mehr über [Aktualisierungen von Verbesserungs Aktionen](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions).
+In der Standardansicht für diese Seite werden keine Verbesserungs Aktionen mit dem Teststatus " **übergeben**" angezeigt. Zum Anzeigen von Aktionen, die Tests bestanden haben, aktivieren Sie das Kontrollkästchen **übergebenes** Feld im Dropdownbereich Filter. Nur Aktionen mit einem Teststatus der **übergebenen** Zählung zu Ihrer Partitur. Einige Aktionen zeigen möglicherweise eine **ausstehende Update Bezeichnung an.** Erfahren Sie mehr über [Aktualisierungen von Verbesserungs Aktionen](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions).
 
 Auf der Seite Verbesserungs Aktionen werden die folgenden Datenpunkte für jede Verbesserungs Aktion angezeigt:
 
-- **Erreichte Punkte** : die Anzahl der Punkte, die aus der Gesamtpunktzahl erzielt wurden, indem die Aktion abgeschlossen wurde.
-- **Bestimmungen** : die Vorschriften oder Standards im Zusammenhang mit der Aktion
-- **Gruppe** : die Gruppe, der Sie die Aktion zugewiesen haben
-- **Lösungen** : die Lösung, mit der Sie zur Ausführung der Aktion wechseln können
-- **Assessments** : die Bewertungen, die die Aktion enthalten
-- **Kategorien** : die zugehörige Datenschutzkategorie (beispielsweise zum Schutz von Informationen, Verwalten von Geräten usw.)
-- **Test Status** :
+- **Erreichte Punkte**: die Anzahl der Punkte, die aus der Gesamtpunktzahl erzielt wurden, indem die Aktion abgeschlossen wurde.
+- **Bestimmungen**: die Vorschriften oder Standards im Zusammenhang mit der Aktion
+- **Gruppe**: die Gruppe, der Sie die Aktion zugewiesen haben
+- **Lösungen**: die Lösung, mit der Sie zur Ausführung der Aktion wechseln können
+- **Assessments**: die Bewertungen, die die Aktion enthalten
+- **Kategorien**: die zugehörige Datenschutzkategorie (beispielsweise zum Schutz von Informationen, Verwalten von Geräten usw.)
+- **Test Status**:
     - **None** – keine Statusaktualisierung aufgezeichnet
     - **Nicht bewertet** – Test wurde nicht gestartet
     - **Übergebene** Implementierung erfolgreich getestet
@@ -320,18 +326,18 @@ Auf der Seite "Bewertungen" werden alle [Bewertungen](compliance-manager-assessm
 
 Auf der Seite "Bewertungen" werden wichtige Informationen zu den einzelnen Bewertungen zusammengefasst:
 
-- **Bewertung** : Name der Bewertung
-- **Status** :
+- **Bewertung**: Name der Bewertung
+- **Status**:
     - **Complete** -alle Steuerelemente haben den Status "übergeben" oder mindestens eine wird übergeben, und der Rest ist "außerhalb des Bereichs".
     - **Unvollständig** – mindestens ein Steuerelement hat den Status "Fehler".
     - **None** -alle Steuerelemente wurden nicht getestet
     - **In Progress** -Improvement Aktionen haben einen anderen Status, einschließlich "in Progress", "teilweiser Kredit" oder "unentdeckt
-- **Bewertungs Fortschritt** : der Prozentsatz der Arbeit bis zum Abschluss, gemessen an der Anzahl der erfolgreich getesteten Steuerelemente.
-- **Ihre Verbesserungs Aktionen** : die Anzahl der abgeschlossenen Aktionen zur Erfüllung der Implementierung Ihrer Steuerelemente
-- **Microsoft-Aktionen** : die Anzahl der abgeschlossenen Aktionen zur Erfüllung der Implementierung von Microsoft-Steuerelementen
-- **Group** : Name der Gruppe, zu der die Bewertung gehört
-- **Produkt** : zugeordneter Microsoft 365-Dienst
-- **Verordnung** : Regulierungsstandard, Richtlinie oder Recht für die Bewertung
+- **Bewertungs Fortschritt**: der Prozentsatz der Arbeit bis zum Abschluss, gemessen an der Anzahl der erfolgreich getesteten Steuerelemente.
+- **Ihre Verbesserungs Aktionen**: die Anzahl der abgeschlossenen Aktionen zur Erfüllung der Implementierung Ihrer Steuerelemente
+- **Microsoft-Aktionen**: die Anzahl der abgeschlossenen Aktionen zur Erfüllung der Implementierung von Microsoft-Steuerelementen
+- **Group**: Name der Gruppe, zu der die Bewertung gehört
+- **Produkt**: zugeordneter Microsoft 365-Dienst
+- **Verordnung**: Regulierungsstandard, Richtlinie oder Recht für die Bewertung
 
 ### <a name="filtering-your-assessments-view"></a>Filtern der Ansicht "Bewertungen"
 

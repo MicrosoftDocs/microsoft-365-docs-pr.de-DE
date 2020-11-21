@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Benutzer mit Vertraulichkeits Bezeichnungen in Office-Apps für Desktop, Mobile und das Internet arbeiten und welche apps Sensitivitäts Bezeichnungen unterstützen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: de005e40cf346c8dd6e02e0394272a97b186920f
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 415f9345c3634adf62c42b9e13192be5ad7ea795
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131108"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371693"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Verwenden von Vertraulichkeitsbezeichnungen in Office-Apps
 
@@ -52,7 +52,7 @@ Zusätzliche Funktionen sind verfügbar, wenn Sie den Azure Information Protecti
 
 Für IOS und Android: Wenn diese eine Mindestversion aufgeführt sind, wird die Empfindlichkeits beschriftungsfunktion auch in der [Office-App](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/)unterstützt.
 
-|Funktion                                                                                                        |Windows Desktop |Mac-Desktop |iOS    |Android      |Netz                                                         |
+|Funktion                                                                                                        |Windows Desktop |Mac-Desktop |iOS    |Android      |Web                                                         |
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
 |[Manuelles zuweisen, ändern oder Entfernen von Bezeichnungen](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Ja – Opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Anwenden einer Standardbezeichnung](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Ja – Opt-in](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
@@ -258,6 +258,41 @@ Wenn Sie eine Vertraulichkeits Bezeichnung für Inhalts Markierungen konfigurier
 
 > [!NOTE]
 > Bei der Syntax für diese Variablen wird die Groß-/Kleinschreibung beachtet.
+
+#### <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>Festlegen unterschiedlicher visueller Markierungen für Word, Excel, PowerPoint und Outlook
+
+Als zusätzliche Variable können Sie visuelle Markierungen pro Office-Anwendungstyp konfigurieren, indem Sie eine "If. app"-Variablen Anweisung in der Textzeichenfolge verwenden und den Anwendungstyp mithilfe der Werte **Word**, **Excel**, **PowerPoint** oder **Outlook** identifizieren. Sie können diese Werte auch abkürzen, was erforderlich ist, wenn Sie mehr als eine in derselben if. app-Anweisung angeben möchten.
+
+> [!NOTE]
+> Zur Vollständigkeit sind Anweisungen für Outlook enthalten, die derzeit jedoch nur vom einheitlichen Labeling-Client für Azure Information Protection unterstützt werden.
+
+Verwenden Sie die folgende Syntax:
+
+```
+${If.App.<application type>}<your visual markings text> ${If.End}
+```
+
+Wie bei den anderen dynamischen visuellen Markierungen wird bei der Syntax die Groß-/Kleinschreibung beachtet.
+
+Beispiele:
+
+- **Festlegen des Kopfzeilentexts nur für Word-Dokumente:**
+
+    `${If.App.Word}This Word document is sensitive ${If.End}`
+
+    Nur in Word-Dokument Kopfzeilen wendet die Bezeichnung den Kopfzeilentext "dieses Word-Dokument ist sensibel" an. Auf andere Office-Anwendungen wird kein Kopfzeilentext angewendet.
+
+- **Festlegen von Fußzeilentext für Word, Excel und Outlook sowie unterschiedlichen Fußzeilentext für PowerPoint:**
+
+    `${If.App.WXO}This content is confidential. ${If.End}${If.App.PowerPoint}This presentation is confidential. ${If.End}`
+
+    In Word, Excel und Outlook wendet die Bezeichnung den Fußzeilentext "dieser Inhalt ist vertraulich" an. In PowerPoint wendet die Bezeichnung den Fußzeilentext "Diese Präsentation ist vertraulich" an.
+
+- **Festlegen eines bestimmten Wasserzeichentexts für Word und PowerPoint und dann des Wasserzeichentexts für Word, Excel und PowerPoint:**
+
+    `${If.App.WP}This content is ${If.End}Confidential`
+
+    In Word und PowerPoint wendet die Bezeichnung den Wasserzeichentext "dieser Inhalt ist vertraulich" an. In Excel wendet die Bezeichnung den Wasserzeichentext "vertraulich" an. In Outlook wendet die Bezeichnung keinen Wasserzeichentext an, da Wasserzeichen als visuelle Markierungen für Outlook nicht unterstützt werden.
 
 ## <a name="end-user-documentation"></a>Endbenutzerdokumentation
 

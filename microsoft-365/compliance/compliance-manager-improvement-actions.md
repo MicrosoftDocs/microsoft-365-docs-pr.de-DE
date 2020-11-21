@@ -14,16 +14,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie, wie Sie Implementierungen und Tests für Steuerelemente im Microsoft Compliance-Manager durchführen. Zuweisen von Arbeit, Speichern einer Dokumentation und Exportieren von Berichten
-ms.openlocfilehash: 99b08ca1336c3f347764230896af47fe1486d4b2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 4b7ece89752a2c3e54a0a69bade2f489feacd0c3
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204445"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376526"
 ---
 # <a name="assign-and-complete-improvement-actions-in-compliance-manager"></a>Zuweisen und Abschließen von Verbesserungs Aktionen im Compliance-Manager
 
-**In diesem Artikel:** In diesem Artikel wird erläutert, wie **Sie den Compliance-Workflow** mit Verbesserungs Aktionen verwalten. Hier erfahren Sie, wie Sie **Verbesserungs Aktionen** für Implementierung und Test, **Verwalten von Updates**und Exportieren von **Berichten**zuweisen.
+**In diesem Artikel:** In diesem Artikel wird erläutert, wie **Sie den Compliance-Workflow** mit Verbesserungs Aktionen verwalten. Hier erfahren Sie, wie Sie **Verbesserungs Aktionen** für Implementierung und Test, **Verwalten von Updates** und Exportieren von **Berichten** zuweisen.
 
 ## <a name="manage-compliance-workflows-with-improvement-actions"></a>Verwalten von Compliance-Workflows mit Verbesserungs Aktionen
 
@@ -56,7 +56,7 @@ Wenn Sie den entsprechenden Empfänger identifiziert haben, müssen Sie sicherst
 
 2. Aktivieren Sie im Flyout-Dialogfeld Status bearbeiten das Kontrollkästchen **zugewiesen an** , um eine Liste der Benutzer **vorgeschlagener Personen** anzuzeigen. Sie können den Benutzer aus der Liste auswählen oder die e-Mail-Adresse der Person eingeben, der Sie diese zuweisen möchten.
 
-3. Wählen Sie **Speichern und schließen**aus. Der zugewiesene Benutzer erhält eine e-Mail mit der Erklärung, dass ihm die Verbesserungs Aktion zugewiesen wurde, mit einem direkten Link zur Verbesserungs Aktion.
+3. Wählen Sie **Speichern und schließen** aus. Der zugewiesene Benutzer erhält eine e-Mail mit der Erklärung, dass ihm die Verbesserungs Aktion zugewiesen wurde, mit einem direkten Link zur Verbesserungs Aktion. (Hinweis: High-End-Kunden der US Government Community (gcc) erhalten keine e-Mail, wenn Ihnen Aktionen zugewiesen sind.)
 
 Der zugewiesene Benutzer kann dann die empfohlenen Aktionen ausführen.
 
@@ -69,19 +69,19 @@ Der Abschnitt " **Notizen und Dokumentation** " enthält Felder für hochgeladen
 #### <a name="uploaded-documents"></a>Hochgeladene Dokumente
 
 - Wählen Sie **Dokumente verwalten** aus, um relevante Dateien hochzuladen.
-- Wenn der Fensterausschnitt zum Verwalten von Dokumenten geöffnet wird, wählen Sie **Dokument hinzufügen**aus, und wählen Sie dann Ihre Datei von Ihrem System aus. Akzeptierte Dateitypen:
+- Wenn der Fensterausschnitt zum Verwalten von Dokumenten geöffnet wird, wählen Sie **Dokument hinzufügen** aus, und wählen Sie dann Ihre Datei von Ihrem System aus. Akzeptierte Dateitypen:
     - Dokumente (. doc,. xls,. ppt,. txt,. pdf)
     - Bilder (. jpg,. png)
     - Video (. MKV)
     - Komprimierte Dateien (ZIP, rar)
-- Nachdem die Datei im Bereich aufgelöst wurde, wählen Sie **Close**aus, wodurch die Dateianlage automatisch gespeichert wird. Anschließend wird die Datei unterhalb der **hochgeladenen Dokumente**aufgeführt angezeigt.
-- Um das Dokument herunterzuladen oder zu löschen, wählen Sie Dokumente aus unterhalb der Liste der Dokumente **Verwalten** aus. Wählen Sie im Flyout-Bereich die Dokumentzeile aus, um Sie hervorzuheben, und wählen Sie dann **herunterladen** oder **Löschen**aus.
+- Nachdem die Datei im Bereich aufgelöst wurde, wählen Sie **Close** aus, wodurch die Dateianlage automatisch gespeichert wird. Anschließend wird die Datei unterhalb der **hochgeladenen Dokumente** aufgeführt angezeigt.
+- Um das Dokument herunterzuladen oder zu löschen, wählen Sie Dokumente aus unterhalb der Liste der Dokumente **Verwalten** aus. Wählen Sie im Flyout-Bereich die Dokumentzeile aus, um Sie hervorzuheben, und wählen Sie dann **herunterladen** oder **Löschen** aus.
 
 #### <a name="implementation-notes-test-notes-and-additional-notes"></a>Implementierungshinweise, Test Notizen und zusätzliche Hinweise
 
 - Wenn Sie in einem dieser drei Felder Notizen hinzufügen möchten, wählen Sie unter einem dieser Felder die Option " **Implementierungshinweise bearbeiten** " aus.
 - Wenn der Flyout-Bereich geöffnet wird, geben Sie Notizen in das Textfeld ein, und klicken Sie dann auf **Speichern und schließen**.
-- Um Notizen zu bearbeiten, wählen Sie **Anmerkungen zur Implementierung bearbeiten**aus, nehmen Sie Ihre Änderungen vor, und klicken Sie dann auf **Speichern und schließen**.
+- Um Notizen zu bearbeiten, wählen Sie **Anmerkungen zur Implementierung bearbeiten** aus, nehmen Sie Ihre Änderungen vor, und klicken Sie dann auf **Speichern und schließen**.
 
 In den Notizen Feldern ist kein Zeichen Grenzwert vorhanden. Es wird empfohlen, Notizen kurz aufzubewahren, damit Sie Sie auf der Detailseite der Verbesserungs Aktionen ganz einfach anzeigen und bearbeiten können.
 
@@ -140,7 +140,7 @@ Wählen Sie **Update akzeptieren** aus, um alle Änderungen an der Verbesserungs
 > [!NOTE]
 > Wenn Sie eine Aktualisierung einer Aktion akzeptieren, akzeptieren Sie auch Aktualisierungen für andere Versionen oder Instanzen dieser Aktion. Updates werden mandantenweit für Technische Aktionen weitergegeben und werden gruppenweit für nicht technische Aktionen weitergegeben.
 
-Wenn Sie **Abbrechen**auswählen, wird das Update nicht auf die Verbesserungs Aktion angewendet. Die Benachrichtigung über **ausstehende Updates** wird jedoch weiterhin angezeigt, bis Sie das Update akzeptieren.
+Wenn Sie **Abbrechen** auswählen, wird das Update nicht auf die Verbesserungs Aktion angewendet. Die Benachrichtigung über **ausstehende Updates** wird jedoch weiterhin angezeigt, bis Sie das Update akzeptieren.
 
 **Warum wird empfohlen, Updates zu akzeptieren?**
 
