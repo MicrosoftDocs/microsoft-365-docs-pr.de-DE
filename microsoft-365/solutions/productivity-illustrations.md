@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: f84c1c4a8d507ae9a4be3cb69a816a8494e08cc3
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 9bd5ad3e2544e0c715ade59ca4744e08c8a548a6
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906787"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376665"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Darstellungen zu Microsoft 365-Produktivitätslösungen
 
@@ -43,12 +43,12 @@ Was IT-Architekten über Gruppen in Microsoft 365 wissen müssen
 
 Microsoft 365 umfasst eine umfassende Reihe von Funktionen zum Schutz und zur Einhaltung von Informationen. Zusammen mit den Microsoft-Produktivitätstools werden diese Funktionen entwickelt, um Organisationen bei der Zusammenarbeit in Echtzeit unter Einhaltung strenger regulatorischer Compliance-Frameworks zu helfen. 
 
-Dieser Sammlung von Illustrationen wird eine der am stärksten regulierten Branchen, Finanzdienstleistungen, verwendet, um zu veranschaulichen, wie diese Funktionen angewendet werden können, um allgemeine regulatorische Anforderungen zu erfüllen. Fühlen Sie sich frei, diese Illustrationen für Ihren eigenen Gebrauch anzupassen. 
+Dieser Sammlung von Illustrationen wird eine der am stärksten regulierten Branchen, Finanzdienstleistungen, verwendet, um zu veranschaulichen, wie diese Funktionen angewendet werden können, um allgemeine regulatorische Anforderungen zu erfüllen. Sie können diese Illustrationen für Ihren eigenen Gebrauch anpassen. 
 
 
 | Element | Beschreibung |
 |:-----|:-----|
-|[![Modell Poster: Microsoft 365 Information Protection and Compliance-Funktionen](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [Als PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) \| herunterladen [Als Visio herunterladen](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> Aktualisiert am 2020|Enthält <ul><li>  Microsoft Information Protection und Verhinderung von Datenverlust</li><li>Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen </li><li>Informationsbarrieren</li><li>Kommunikationscompliance</li><li>Insider Risiko</li><li>Daten Einnahme von Drittanbietern</li>|
+|[![Modellposter: Funktionen von Microsoft 365 Informationsschutz und Compliance](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> Deutsch: [herunterladen als PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) - \| [Download als Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> Japanisch: [herunterladen als PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf) - \| [Download als Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)   <br/> Aktualisiert am 2020|Enthält <ul><li>  Microsoft Information Protection und Verhinderung von Datenverlust</li><li>Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen </li><li>Informationsbarrieren</li><li>Kommunikationscompliance</li><li>Insider Risiko</li><li>Datenerfassung durch Drittanbieter</li>|
 
 
 ### <a name="security-and-information-protection-for-multi-region-organizations"></a>Sicherheit und Datenschutz für Organisationen, die in mehreren Regionen agieren
@@ -84,7 +84,7 @@ Erweiterter eDiscovery-End-to-End-Workflow und Datenfluss, einschließlich in Mi
 
 | Element | Beschreibung |
 |:-----|:-----|
-|[![Modell Poster: Erweiterte eDiscovery-Architektur in Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [Als Bild anzeigen](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [Als PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \| herunterladen [Als Visio herunterladen](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> Aktualisiert am 2020|Enthält <ul><li>  End-to-End-Workflow in einer einzigen Umgebung</li><li>End-to-End-Workflow in einer Microsoft 365 Multi-Geo-Umgebung </li><li>End-to-End-Datenfluss, der den EDRM-Workflow unterstützt</li> |
+|[![Modell Poster: Erweiterte eDiscovery-Architektur in Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [Als Bild anzeigen](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [Als PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \| herunterladen [Als Visio herunterladen](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> Aktualisiert im Oktober 2020|Enthält <ul><li>  End-to-End-Workflow in einer einzigen Umgebung</li><li>End-to-End-Workflow in einer Microsoft 365 Multi-Geo-Umgebung </li><li>End-to-End-Datenfluss, der den EDRM-Workflow unterstützt</li> |
   
 <!--
 

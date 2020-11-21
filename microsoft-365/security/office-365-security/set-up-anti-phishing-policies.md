@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die Anti-Phishing-Richtlinien informieren, die in Exchange Online Protection (EoP) und Microsoft Defender für Office 365 zur Verfügung stehen.
-ms.openlocfilehash: c728a69a3b0841219e4f9b546e80e71b2cf89151
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: a02d69b278420d814871df8eebdd6efcdf5d8e7f
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123631"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376356"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-Phishing-Richtlinien in Microsoft 365
 
@@ -30,7 +30,7 @@ ms.locfileid: "49123631"
 
 Richtlinien zum Konfigurieren von Einstellungen für den Schutz vor Phishing sind in Microsoft 365-Organisationen mit Exchange Online-Postfächern, eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächern und Microsoft Defender für Office 365 Organisationen verfügbar.
 
-Anti-Phishing-Richtlinien in Microsoft Defender für Office 365 sind nur in Organisationen verfügbar, die Defender für Office 365 haben. Beispiel:
+Anti-Phishing-Richtlinien in Microsoft Defender für Office 365 sind nur in Organisationen verfügbar, die Defender für Office 365 haben. Zum Beispiel:
 
 - Microsoft 365 Enterprise E5, Microsoft 365 Education A5, etc.
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
@@ -200,8 +200,11 @@ Die folgenden Identitätswechseleinstellungen sind nur in Anti-Phishing-Richtlin
   - **Imitierte Domänen**: die Absenderadresse enthält eine geschützte Domäne.
   - **Ungewöhnliche Zeichen**: die from-Adresse enthält ungewöhnliche Zeichensätze (beispielsweise mathematische Symbole und Text oder eine Mischung aus Groß-und Kleinbuchstaben) in einem geschützten Absender oder in einer Domäne.
 
-  > [!NOTE]
-  > Selbst wenn die Sicherheitstipps für Identitätswechsel deaktiviert sind, können Sie eine e-Mail-Fluss Regel (auch als Transportregel bezeichnet) verwenden, um Nachrichten eine Nachrichtenkopfzeile mit dem Namen **X-MS-Exchange-EnableFirstContactSafetyTip** hinzuzufügen. Es werden spezielle Sicherheitstipps angezeigt, in denen Empfänger benachrichtigt werden, dass Sie häufig keine e-Mails vom Absender erhalten, oder in Fällen, in denen der Empfänger zum ersten Mal eine e-Mail vom Absender erhält.
+> [!IMPORTANT]
+>
+> Auch wenn die Sicherheitstipps für Identitätswechsel deaktiviert sind, **wird empfohlen** , dass Sie eine Nachrichtenfluss Regel (auch als Transportregel bezeichnet) verwenden, um Nachrichten eine Nachrichtenkopfzeile mit dem Namen **X-MS-Exchange-EnableFirstContactSafetyTip** hinzuzufügen. Es werden spezielle Sicherheitstipps angezeigt, in denen Empfänger benachrichtigt werden, dass Sie häufig keine e-Mails vom Absender erhalten, oder in Fällen, in denen der Empfänger zum ersten Mal eine e-Mail vom Absender erhält.
+>:::image type="content" source="../../media/Urja_FirstContactEmail-Set-us-anti-phish-pol-safetyTip-ImpersonationProtection-MultipleRecipients.png" alt-text="Der Text des Sicherheitstipps für den Identitätswechsel Schutz mit mehreren Empfängern.":::
+<p>
 
 - **Post Fach Intelligenz**: aktiviert oder deaktiviert künstliche Intelligenz (AI), die Benutzer-e-Mail-Muster mit ihren häufigen Kontakten bestimmt. Diese Einstellung unterstützt die KI zwischen legitimen und gefälschten e-Mails von diesen Kontakten. Die Post Fach Intelligenz steht nur für Exchange Online Postfächer zur Verfügung.
 

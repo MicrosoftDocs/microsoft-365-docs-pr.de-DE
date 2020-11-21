@@ -18,26 +18,31 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie ﻿kostenlose Self-Service-Anmelde Abonnements für Ihre Organisation verwalten.
-ms.openlocfilehash: fb70d0c40d4358abc227c8f6ff4a0e0dce1a7265
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 589466908dcda1461011f046b99be21788c1a018
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647831"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376305"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>Verwalten von Self-Service-Anmelde Abonnements
 
 ## <a name="what-are-self-service-sign-up-subscriptions"></a>Was sind Self-Service-Anmelde Abonnements?
 
-Es gibt eine beschränkte Anzahl von kostenlosen Self-Service-Anmelde Abonnements, für die sich Benutzer in Ihrer Organisation anmelden können. Ein Benutzer kann sich nur für sich selbst registrieren und ein Self-Service-Anmelde Abonnement verwenden. Diese Abonnements werden auf der Seite **Ihre Produkte** angezeigt, als **kostenlos**gekennzeichnet und weisen darauf hin, dass es sich um ein kostenloses Abonnement handelt, das von Benutzern in Ihrem Unternehmen aktiviert wird. Sie können Self-Service-Anmelde Abonnements verwalten, indem Sie Benutzer daran hindern, sich anzumelden, und indem Sie ﻿Kostenlose Abonnements löschen, für die Benutzer sich angemeldet haben. Weitere Informationen zur Self-Service-Registrierung und den verfügbaren Abonnements finden Sie unter [Verwenden der Self-Service-Registrierung in Ihrer Organisation](../../admin/misc/self-service-sign-up.md).
+Es gibt eine beschränkte Anzahl von kostenlosen Self-Service-Anmelde Abonnements, die Benutzern in Ihrer Organisation zur Anmeldung zur Verfügung stehen. Ein Benutzer kann sich nur für sich selbst registrieren und ein Self-Service-Anmelde Abonnement verwenden. Sie können Self-Service-Anmelde Abonnements verwalten, indem Sie Benutzer daran hindern, sich anzumelden, und indem Sie ﻿Kostenlose Abonnements löschen, für die Benutzer sich angemeldet haben. Weitere Informationen zur Self-Service-Registrierung und den verfügbaren Abonnements finden Sie unter [Verwenden der Self-Service-Registrierung in Ihrer Organisation](../../admin/misc/self-service-sign-up.md).
+
+## <a name="view-a-list-of-self-service-sign-up-subscriptions"></a>Anzeigen einer Liste von Self-Service-Anmelde Abonnements
+
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
+2. Klicken Sie auf der Registerkarte **Produkte** auf das Filtersymbol, und wählen Sie dann **kostenlos** aus. Eine Liste aller Self-Service-Anmelde Abonnements wird angezeigt.
 
 ## <a name="how-are-these-subscriptions-different-from-self-service-purchase-subscriptions"></a>Inwiefern unterscheiden sich diese Abonnements von Self-Service-Abonnements für den Kauf?
 
-Self-Service-Anmelde Abonnements sind kostenlos und stehen für eine größere Produktliste als Self-Service-Abonnements zur Verfügung. Wenn sich ein Benutzer für ein Self-Service-Abonnement anmeldet, ist er für die Zahlung verantwortlich. Außerdem stehen Self-Service Subscription-Abonnements nur für Power Platform-Produkte (Power BI, Power apps und Power Automation) zur Verfügung. Weitere Informationen finden Sie unter [Self-Service purchase FAQ](self-service-purchase-faq.md).
+Self-Service-Anmelde Abonnements sind kostenlos und stehen für eine größere Produktliste als Self-Service-Abonnements zur Verfügung. Wenn sich ein Benutzer für ein Self-Service-Abonnement registriert, sind Sie dafür verantwortlich. Self-Service-Abonnements sind nur für Power Platform-Produkte (Power BI, Power apps und Power Automation), Project und Visio verfügbar. Weitere Informationen finden Sie unter [Self-Service purchase FAQ](self-service-purchase-faq.md).
 
 ## <a name="block-users-from-signing-up"></a>Blockieren der Anmeldung von Benutzern
 
-Verwenden Sie das Cmdlet " [**MsolCompanySettings**](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) " mit dem Parameter " **AllowAdHocSubscriptions** ", um zu steuern, ob sich Benutzer für Self-Service-Anmelde Abonnements anmelden können. Weitere Informationen finden Sie unter [wie kann ich Self-Service-Einstellungen steuern?](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-self-service-signup#how-do-i-control-self-service-settings)
+Verwenden Sie das Cmdlet " [**MsolCompanySettings**](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0&preserve-view=true) " mit dem Parameter " **AllowAdHocSubscriptions** ", um zu steuern, ob sich Benutzer für Self-Service-Anmelde Abonnements anmelden können. Weitere Informationen finden Sie unter [wie kann ich Self-Service-Einstellungen steuern?](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-self-service-signup#how-do-i-control-self-service-settings)
 
 ## <a name="delete-a-self-service-sign-up-subscription"></a>Löschen eines Self-Service-Anmelde Abonnements
 
@@ -45,8 +50,10 @@ Verwenden Sie das Cmdlet " [**MsolCompanySettings**](https://docs.microsoft.com/
 > Wenn Sie ein Self-Service-Anmelde Abonnement löschen, werden alle Benutzer daran gehindert, auf Ihre Daten zuzugreifen und alle Daten und e-Mails zu löschen.
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
-2. Suchen Sie nach dem Self-Service-Anmelde Abonnement, das Sie löschen möchten. Wählen Sie im Abschnitt **Einstellungen & Aktionen** die Option **Abonnement löschen**aus.
-3. Aktivieren Sie im Bereich **Abonnement löschen** das Kontrollkästchen, und wählen Sie dann **Abonnement löschen**aus.
+2. Klicken Sie auf der Registerkarte **Produkte** auf das Filtersymbol, und wählen Sie dann **kostenlos** aus.
+3. Wählen Sie das Self-Service-Anmelde Abonnement aus, das Sie löschen möchten. 
+4. Wählen Sie auf der Seite Abonnementdetails im Abschnitt **Abonnements und Zahlungseinstellungen** die Option **Abonnement löschen** aus.
+5. Aktivieren Sie im Bereich **Abonnement löschen** das Kontrollkästchen, und wählen Sie dann **Abonnement löschen** aus.
 
 ## <a name="i-have-a-self-service-sign-up-subscription-that-blocks-directory-deletion"></a>Ich habe ein Self-Service-Anmelde Abonnement, das das Löschen von Verzeichnissen blockiert.
 
