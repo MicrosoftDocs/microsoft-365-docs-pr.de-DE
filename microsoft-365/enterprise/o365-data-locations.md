@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Finden Sie Informationen dazu, wo in der ganzen Welt Ihre Microsoft 365-Kundendaten gespeichert werden
-ms.openlocfilehash: 4fd3f480ef2ad3389e9a959695b9654badbda27f
-ms.sourcegitcommit: 0badd6a7af803a52c7c46a4374211cb89307eacf
+ms.openlocfilehash: 6ad35082cbed602325e2a32edb825a17b5cb9f4a
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49135991"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376515"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -29,7 +29,9 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Informationen dazu, wo Ihre Microsoft 365-Kundendaten gespeichert werden
 
-In den nachstehenden Tabellen ist angegeben, an welchen globalen Microsoft-Cloud-Speicherorten ruhende Kundendaten für Microsoft 365-Dienste gespeichert werden. Erweitern Sie den Speicherort Ihres Rechnungsadresse-Landes, um zu ermitteln, wo Kundendaten für die einzelnen Dienste gespeichert werden.
+Die folgenden Tabellen zeigen, wo die ruhenden Kundendaten für Microsoft 365-Dienste in allen globalen Cloud-Speicherorten von Microsoft gespeichert werden. Erweitern Sie den Speicherort Ihres Rechnungsadresslandes, um herauszufinden, wo Kundendaten für jeden Dienst gespeichert würden.
+
+Wenn Ihr Unternehmen in der Europäischen Union ansässig ist, finden Sie weitere Informationen unter [Datenspeicherorte für die Europäische Union](EU-data-storage-locations.md). 
 
 Kunden sollten Speicherortinformationen zu mandantenspezifischen Daten in ihrem Microsoft 365 Admin Center unter **Einstellungen | Organisationseinstellungen | Organisationsprofil | Datenspeicherort** einsehen.
 
@@ -38,7 +40,6 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 Informationen zu den vertraglichen Verpflichtungen in Bezug auf den Speicherort ruhender Kundendaten finden Sie in den [Nutzungsbedingungen für Microsoft-Onlinedienste](https://go.microsoft.com/fwlink/p/?LinkId=2098215).
 
 Informationen zu Azure Active Directory-Datenspeicherorte finden Sie unter [AAD-Datenkarte](https://go.microsoft.com/fwlink/p/?linkid=2092972).
-
 
 Wenn die Rechnungsadresse des Kunden außerhalb Europas liegt und der Kunde ein Office 365 Education-Abonnement hat, kann Microsoft ungeachtet des Abschnitts „Standort der ruhenden Kundendaten für zentrale Onlinedienste“ der OST (Online Services Terms) den Office 365-Mandanten des Kunden überall in Europa oder Nordamerika bereitstellen, Kundendaten dorthin übertragen und ruhende Kundendaten dort speichern.  Wenn die Rechnungsadresse des Kunden innerhalb Europas liegt und der Kunde ein Office 365 Education-Abonnement hat, kann Microsoft ungeachtet des Abschnitts „Standort der ruhenden Kundendaten für zentrale Onlinedienste“ der OST (Online Services Terms) den Office 365-Mandanten des Kunden überall innerhalb der Europäischen Union bereitstellen, Kundendaten dorthin übertragen und ruhende Kundendaten dort speichern.
 
@@ -147,18 +148,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="afghanistan"></a>Afghanistan
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -171,7 +172,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="aland-islands"></a>Aland-Inseln
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -195,7 +196,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="albania"></a>Albanien
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -219,7 +220,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="algeria"></a>Algerien
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -243,7 +244,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="american-samoa"></a>Amerikanisch-Samoa
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
@@ -254,7 +255,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -267,7 +268,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="andorra"></a>Andorra
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -291,7 +292,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="angola"></a>Angola
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -315,7 +316,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="anguilla"></a>Anguilla
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -339,7 +340,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="antarctica"></a>Antarktis
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -363,7 +364,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="antigua-and-barbuda"></a>Antigua und Barbuda
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -387,7 +388,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="argentina"></a>Argentinien
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Ort |
+| Dienst | Speicherort |
 | --- | --- |
 | Exchange Online | Globale Region 3 – Nord- und Südamerika |
 | OneDrive for Business | Globale Region 3 – Nord- und Südamerika |
@@ -411,13 +412,13 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="armenia"></a>Armenien
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | Intune | Globale Region 1 – EMEA |
@@ -435,7 +436,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="aruba"></a>Aruba
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -459,7 +460,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="australia"></a>Australien
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Australien |
 | OneDrive for Business | Australien |
@@ -483,7 +484,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="austria"></a>Österreich
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Europäische Union |
 | OneDrive for Business | Europäische Union |
@@ -507,13 +508,13 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="azerbaijan"></a>Aserbaidschan
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | Intune | Globale Region 1 – EMEA |
@@ -531,7 +532,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="bahamas"></a>Bahamas
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -555,7 +556,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="bahrain"></a>Bahrain
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -579,18 +580,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="bangladesh"></a>Bangladesch
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -603,7 +604,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="barbados"></a>Barbados
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -627,7 +628,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="belarus"></a>Weißrussland
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -651,7 +652,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="belgium"></a>Belgien
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Europäische Union |
 | OneDrive for Business | Europäische Union |
@@ -675,7 +676,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="belize"></a>Belize
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -699,7 +700,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="benin"></a>Benin
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -723,7 +724,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="bermuda"></a>Bermuda
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -747,18 +748,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="bhutan"></a>Bhutan
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -771,7 +772,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="bolivia"></a>Bolivien
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 3 – Nord- und Südamerika |
 | OneDrive for Business | Globale Region 3 – Nord- und Südamerika |
@@ -795,7 +796,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="bonaire"></a>Bonaire
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 3 – Nord- und Südamerika |
 | OneDrive for Business | Globale Region 3 – Nord- und Südamerika |
@@ -819,7 +820,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="bosnia"></a>Bosnien
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -843,7 +844,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="botswana"></a>Botsuana
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -867,7 +868,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="bouvet-island"></a>Bouvet-Insel
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -891,7 +892,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="brazil"></a>Brasilien
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Brasilien |
 | OneDrive for Business | Brasilien |
@@ -915,7 +916,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="british-indian-ocean-territory"></a>Britisches Territorium im Indischen Ozean
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
@@ -926,7 +927,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -939,7 +940,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="british-virgin-islands"></a>Britische Jungferninseln
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -963,18 +964,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="brunei"></a>Brunei
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -987,7 +988,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="bulgaria"></a>Bulgarien
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Europäische Union |
 | OneDrive for Business | Europäische Union |
@@ -1011,7 +1012,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="burkina-faso"></a>Burkina Faso
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -1035,7 +1036,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="burundi"></a>Burundi
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -1059,18 +1060,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="cambodia"></a>Kambodscha
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -1083,7 +1084,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="cameroon"></a>Kamerun
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -1107,7 +1108,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="canada"></a>Kanada
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Kanada |
 | OneDrive for Business | Kanada |
@@ -1131,7 +1132,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="cape-verde"></a>Cabo Verde
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -1155,7 +1156,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="cayman-islands"></a>Kaimaninseln
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -1179,7 +1180,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="central-african-republic"></a>Zentralafrika
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -1203,7 +1204,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="chad"></a>Tschad
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -1227,7 +1228,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="chile"></a>Chile
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 3 – Nord- und Südamerika |
 | OneDrive for Business | Globale Region 3 – Nord- und Südamerika |
@@ -1251,18 +1252,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="china"></a>China
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -1275,18 +1276,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="christmas-island"></a>Weihnachtsinsel
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -1299,18 +1300,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="cocos-keeling-islands"></a>Kokosinseln
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -1323,7 +1324,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="colombia"></a>Kolumbien
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -1347,7 +1348,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="comoros"></a>Komoren
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -1371,7 +1372,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="congo-brazzaville"></a>Kongo (Brazzaville)
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -1395,7 +1396,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="congo-kinshasa"></a>Kongo, (Kinshasa)
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -1419,18 +1420,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="cook-islands"></a>Cookinseln
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -1443,7 +1444,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="costa-rica"></a>Costa Rica
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -1467,7 +1468,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="cote-divoire"></a>Elfenbeinküste
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -1491,7 +1492,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="croatia"></a>Kroatien
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Europäische Union |
 | OneDrive for Business | Europäische Union |
@@ -1515,7 +1516,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="curacao"></a>Curaçao
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 3 – Nord- und Südamerika |
 | OneDrive for Business | Globale Region 3 – Nord- und Südamerika |
@@ -1539,7 +1540,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="cyprus"></a>Zypern
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Europäische Union |
 | OneDrive for Business | Europäische Union |
@@ -1563,7 +1564,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="czech-republic"></a>Tschechien
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Europäische Union |
 | OneDrive for Business | Europäische Union |
@@ -1587,7 +1588,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="denmark"></a>Dänemark
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Europäische Union |
 | OneDrive for Business | Europäische Union |
@@ -1611,7 +1612,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="djibouti"></a>Dschibuti
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -1635,7 +1636,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="dominica"></a>Dominica
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -1659,7 +1660,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="dominican-republic"></a>Dominikanische Republik
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -1683,7 +1684,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="ecuador"></a>Ecuador
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 3 – Nord- und Südamerika |
 | OneDrive for Business | Globale Region 3 – Nord- und Südamerika |
@@ -1707,7 +1708,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="egypt"></a>Ägypten
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -1731,7 +1732,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="el-salvador"></a>El Salvador
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -1755,7 +1756,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="equatorial-guinea"></a>Äquatorialguinea
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -1779,7 +1780,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="eritrea"></a>Eritrea
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -1803,7 +1804,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="estonia"></a>Estland
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Europäische Union |
 | OneDrive for Business | Europäische Union |
@@ -1827,7 +1828,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="ethiopia"></a>Äthiopien
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -1851,7 +1852,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="falkland-islands-malvinas"></a>Falklandinseln
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 3 – Nord- und Südamerika |
 | OneDrive for Business | Globale Region 3 – Nord- und Südamerika |
@@ -1875,7 +1876,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="faroe-islands"></a>Färöer
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -1899,18 +1900,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="federated-states-of-micronesia"></a>Föderierte Staaten von Mikronesien
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -1923,7 +1924,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="fiji"></a>Fidschi
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Australien |
 | OneDrive for Business | Australien |
@@ -1934,7 +1935,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 | EOP | Australien |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Australien |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Australien |
@@ -1947,7 +1948,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="finland"></a>Finnland
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Europäische Union |
 | OneDrive for Business | Europäische Union |
@@ -1971,7 +1972,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="france"></a>Frankreich
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Frankreich |
 | OneDrive for Business | Frankreich |
@@ -1995,7 +1996,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="french-guiana"></a>Französisch-Guayana
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 3 – Nord- und Südamerika |
 | OneDrive for Business | Globale Region 3 – Nord- und Südamerika |
@@ -2019,18 +2020,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="french-polynesia"></a>Französisch-Polynesien
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -2043,7 +2044,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="french-southern-territories"></a>Französische Süd-und Antarktisgebiete
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -2067,7 +2068,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="gabon"></a>Gabun
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -2091,7 +2092,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="gambia"></a>Gambia
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -2115,13 +2116,13 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="georgia"></a>Georgien
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | Intune | Globale Region 1 – EMEA |
@@ -2139,7 +2140,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="germany"></a>Deutschland
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Deutschland |
 | OneDrive for Business | Deutschland |
@@ -2163,7 +2164,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="ghana"></a>Ghana
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -2187,7 +2188,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="gibraltar"></a>Gibraltar
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -2211,7 +2212,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="greece"></a>Griechenland
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Europäische Union |
 | OneDrive for Business | Europäische Union |
@@ -2235,7 +2236,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="greenland"></a>Grönland
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -2259,7 +2260,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="grenada"></a>Grenada
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -2283,7 +2284,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="guadeloupe"></a>Guadeloupe
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -2307,18 +2308,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="guam"></a>Guam
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -2331,7 +2332,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="guatemala"></a>Guatemala
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -2355,7 +2356,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="guernsey"></a>Guernsey
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -2379,7 +2380,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="guinea"></a>Guinea
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -2403,7 +2404,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="guinea-bissau"></a>Guinea-Bissau
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -2427,7 +2428,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="guyana"></a>Guyana
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 3 – Nord- und Südamerika |
 | OneDrive for Business | Globale Region 3 – Nord- und Südamerika |
@@ -2451,7 +2452,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="haiti"></a>Haiti
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -2475,7 +2476,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="heard-and-mcdonald-islands"></a>Heard and McDonald Islands
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -2499,7 +2500,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="herzegovina"></a>Herzegovina
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -2523,7 +2524,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="holy-see-vatican-city-state"></a>Heiliger Stuhl (Vatikanstaat)
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -2547,7 +2548,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="honduras"></a>Honduras
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -2571,18 +2572,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="hong-kong-sar"></a>Hongkong (SAR)
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -2595,7 +2596,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="hungary"></a>Ungarn
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Europäische Union |
 | OneDrive for Business | Europäische Union |
@@ -2619,7 +2620,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="iceland"></a>Island
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -2643,7 +2644,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="india"></a>Indien
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Indien |
 | OneDrive for Business | Indien |
@@ -2654,7 +2655,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 | EOP | Indien |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Indien |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Indien |
@@ -2667,18 +2668,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="indonesia"></a>Indonesien
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -2691,7 +2692,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="iraq"></a>Irak
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -2715,7 +2716,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="ireland"></a>Irland
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Europäische Union |
 | OneDrive for Business | Europäische Union |
@@ -2739,7 +2740,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="isle-of-man"></a>Insel Man
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -2763,7 +2764,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="israel"></a>Israel
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -2787,7 +2788,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="italy"></a>Italien
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Europäische Union |
 | OneDrive for Business | Europäische Union |
@@ -2811,7 +2812,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="jamaica"></a>Jamaika
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -2835,7 +2836,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="japan"></a>Japan
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Japan |
 | OneDrive for Business | Japan |
@@ -2859,7 +2860,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="jersey"></a>Jersey
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -2883,7 +2884,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="jordan"></a>Jordanien
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -2907,7 +2908,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="kazakhstan"></a>Kasachstan
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -2931,7 +2932,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="kenya"></a>Kenia
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -2955,18 +2956,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="kiribati"></a>Kiribati
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -2979,7 +2980,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="south-korea"></a>Südkorea
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Südkorea |
 | OneDrive for Business | Südkorea |
@@ -2990,7 +2991,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 | EOP | Südkorea |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Südkorea |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Südkorea |
@@ -3003,7 +3004,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="kosovo"></a>Kosovo
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -3027,7 +3028,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="kuwait"></a>Kuwait
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -3051,13 +3052,13 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="kyrgyzstan"></a>Kirgisistan
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | Intune | Globale Region 1 – EMEA |
@@ -3075,18 +3076,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="laos"></a>Laos
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -3099,7 +3100,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="latvia"></a>Lettland
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Europäische Union |
 | OneDrive for Business | Europäische Union |
@@ -3123,7 +3124,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="lebanon"></a>Libanon
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -3147,7 +3148,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="lesotho"></a>Lesotho
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -3171,7 +3172,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="liberia"></a>Liberia
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -3195,7 +3196,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="libya"></a>Libyen
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -3219,7 +3220,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="liechtenstein"></a>Liechtenstein
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Schweiz |
 | OneDrive for Business | Schweiz |
@@ -3243,7 +3244,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="lithuania"></a>Litauen
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Europäische Union |
 | OneDrive for Business | Europäische Union |
@@ -3267,7 +3268,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="luxembourg"></a>Luxemburg
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Europäische Union |
 | OneDrive for Business | Europäische Union |
@@ -3291,7 +3292,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="madagascar"></a>Madagaskar
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -3315,7 +3316,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="malawi"></a>Malawi
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -3339,18 +3340,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="malaysia"></a>Malaysia
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -3363,18 +3364,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="maldives"></a>Malediven
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -3387,7 +3388,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="mali"></a>Mali
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -3411,7 +3412,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="malta"></a>Malta
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Europäische Union |
 | OneDrive for Business | Europäische Union |
@@ -3435,18 +3436,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="marshall-islands"></a>Marshall-Inseln
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -3459,7 +3460,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="martinique"></a>Martinique
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -3483,7 +3484,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="mauritania"></a>Mauretanien
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -3507,7 +3508,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="mauritius"></a>Mauritius
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -3531,7 +3532,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="mayotte"></a>Mayotte
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -3555,7 +3556,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="mexico"></a>Mexiko
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -3579,7 +3580,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="moldova"></a>Republik Moldau
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -3603,7 +3604,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="monaco"></a>Monaco
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -3627,18 +3628,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="mongolia"></a>Mongolei
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -3651,7 +3652,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="montenegro"></a>Montenegro
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -3675,7 +3676,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="montserrat"></a>Montserrat
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -3699,7 +3700,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="morocco"></a>Marokko
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -3723,7 +3724,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="mozambique"></a>Mosambik
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -3747,18 +3748,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="myanmar"></a>Myanmar
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -3771,7 +3772,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="namibia"></a>Namibia
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -3795,18 +3796,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="nauru"></a>Nauru
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -3819,18 +3820,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="nepal"></a>Nepal
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -3843,7 +3844,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="netherlands"></a>Niederlande
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Europäische Union |
 | OneDrive for Business | Europäische Union |
@@ -3867,7 +3868,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="netherlands-antilles"></a>Antillen
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -3891,18 +3892,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="new-caledonia"></a>Neukaledonien
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -3915,7 +3916,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="new-zealand"></a>Neuseeland
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Australien |
 | OneDrive for Business | Australien |
@@ -3926,7 +3927,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 | EOP | Australien |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Australien |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Australien |
@@ -3939,7 +3940,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="nicaragua"></a>Nicaragua
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -3963,7 +3964,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="niger"></a>Niger
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -3987,7 +3988,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="nigeria"></a>Nigeria
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -4011,18 +4012,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="niue"></a>Niue
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -4035,18 +4036,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="norfolk-island"></a>Norfolkinsel
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -4059,18 +4060,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="northern-mariana-islands"></a>Nördliche Marianen
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -4083,7 +4084,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="norway"></a>Norwegen
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Norwegen |
 | OneDrive for Business | Norwegen |
@@ -4107,7 +4108,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="oman"></a>Oman
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -4131,13 +4132,13 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="pakistan"></a>Pakistan
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | Intune | Globale Region 1 – EMEA |
@@ -4155,18 +4156,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="palau"></a>Palau
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -4179,7 +4180,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="palestinian-authority"></a>Palästinensische Gebiete
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
@@ -4190,7 +4191,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -4203,7 +4204,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="panama"></a>Panama
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -4227,18 +4228,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="papua-new-guinea"></a>Papua-Neuguinea
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -4251,7 +4252,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="paraguay"></a>Paraguay
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 3 – Nord- und Südamerika |
 | OneDrive for Business | Globale Region 3 – Nord- und Südamerika |
@@ -4275,7 +4276,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="peru"></a>Peru
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 3 – Nord- und Südamerika |
 | OneDrive for Business | Globale Region 3 – Nord- und Südamerika |
@@ -4299,18 +4300,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="philippines"></a>Philippinen
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -4323,18 +4324,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="pitcairn"></a>Pitcairninseln
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -4347,7 +4348,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="poland"></a>Polen
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Europäische Union |
 | OneDrive for Business | Europäische Union |
@@ -4371,7 +4372,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="portugal"></a>Portugal
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Europäische Union |
 | OneDrive for Business | Europäische Union |
@@ -4395,7 +4396,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="puerto-rico"></a>Puerto Rico
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -4419,7 +4420,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="qatar"></a>Katar
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -4443,13 +4444,13 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="republic-of-macedonia"></a>Nordmazedonien
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | Intune | Globale Region 1 – EMEA |
@@ -4467,7 +4468,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="runion"></a>Réunion
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -4491,7 +4492,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="romania"></a>Rumänien
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Europäische Union |
 | OneDrive for Business | Europäische Union |
@@ -4515,7 +4516,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="russian-federation"></a>Russische Föderation
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -4539,7 +4540,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="rwanda"></a>Ruanda
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -4563,7 +4564,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="saint-helena"></a>St. Helena
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -4587,7 +4588,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="saint-kitts-and-nevis"></a>St. Kitts und Nevis
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -4611,7 +4612,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="saint-lucia"></a>St. Lucia
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -4635,7 +4636,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="saint-martin"></a>St. Martin
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -4659,7 +4660,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="saint-pierre-and-miquelon"></a>St. Pierre und Miquelon
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -4683,7 +4684,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="saint-vincent-and-the-grenadines"></a>St. Vincent und die Grenadinen
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -4707,7 +4708,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="saint-barthlemy"></a>Saint-Barthélemy
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -4731,18 +4732,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="samoa"></a>Samoa
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -4755,7 +4756,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="san-marino"></a>San Marino
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -4779,7 +4780,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="sao-tome-and-principe"></a>São Tomé und Príncipe
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -4803,7 +4804,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="saudi-arabia"></a>Saudi Arabien
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -4827,7 +4828,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="senegal"></a>Senegal
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -4851,7 +4852,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="serbia"></a>Serbien
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -4875,7 +4876,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="seychelles"></a>Seychellen
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -4899,7 +4900,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="sierra-leone"></a>Sierra Leone
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -4923,18 +4924,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="singapore"></a>Singapur
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -4947,7 +4948,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="sint-maarten"></a>Sint Maarten
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -4971,7 +4972,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="slovakia"></a>Slowakei
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Europäische Union |
 | OneDrive for Business | Europäische Union |
@@ -4995,7 +4996,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="slovenia"></a>Slowenien
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Europäische Union |
 | OneDrive for Business | Europäische Union |
@@ -5019,18 +5020,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="solomon-islands"></a>Salomonen
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -5043,7 +5044,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="somalia"></a>Somalia
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -5067,7 +5068,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="south-africa"></a>Südafrika
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Südafrika |
 | OneDrive for Business | Südafrika |
@@ -5091,7 +5092,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="south-georgia-and-the-south-sandwich-islands"></a>Südgeorgien und die Südlichen Sandwichinseln
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -5115,7 +5116,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="spain"></a>Spanien
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Europäische Union |
 | OneDrive for Business | Europäische Union |
@@ -5139,18 +5140,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="sri-lanka"></a>Sri Lanka
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -5163,7 +5164,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="suriname"></a>Suriname
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -5187,7 +5188,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="svalbard-and-jan-mayen-islands"></a>Svalbard und Jan Mayen Inseln
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -5211,7 +5212,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="swaziland"></a>Swasiland
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -5235,7 +5236,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="sweden"></a>Schweden
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Europäische Union |
 | OneDrive for Business | Europäische Union |
@@ -5259,7 +5260,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="switzerland"></a>Schweiz
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Schweiz |
 | OneDrive for Business | Schweiz |
@@ -5283,18 +5284,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="taiwan"></a>Taiwan
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -5307,13 +5308,13 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="tajikistan"></a>Tadschikistan
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | Intune | Globale Region 1 – EMEA |
@@ -5331,7 +5332,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="united-republic-of-tanzania"></a>Vereinigte Republik Tansania
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -5355,18 +5356,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="thailand"></a>Thailand
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -5379,18 +5380,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="timor-leste"></a>Timor-Leste
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -5403,7 +5404,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="togo"></a>Togo
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -5427,13 +5428,13 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="tokelau"></a>Tokelau
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
@@ -5451,18 +5452,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="tonga"></a>Tonga
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -5475,7 +5476,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="trinidad-and-tobago"></a>Trinidad und Tobago
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -5499,7 +5500,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="tunisia"></a>Tunesien
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -5523,7 +5524,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="turkey"></a>Türkei
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -5547,13 +5548,13 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="turkmenistan"></a>Turkmenistan
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | Intune | Globale Region 1 – EMEA |
@@ -5571,7 +5572,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="turks-and-caicos-islands"></a>Turks- und Caicosinseln
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -5595,18 +5596,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="tuvalu"></a>Tuvalu
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -5619,7 +5620,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="us-virgin-islands"></a>Amerikanische Jungferninseln
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -5643,7 +5644,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="uganda"></a>Uganda
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -5667,7 +5668,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="ukraine"></a>Ukraine
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -5691,7 +5692,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="united-arab-emirates"></a>Vereinigte Arabische Emirate
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Arabische Emirate |
 | OneDrive for Business | Vereinigte Arabische Emirate |
@@ -5715,7 +5716,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="united-kingdom"></a>Vereinigtes Königreich
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigtes Königreich |
 | OneDrive for Business | Vereinigtes Königreich |
@@ -5739,7 +5740,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="united-states"></a>Vereinigte Staaten
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -5763,7 +5764,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="uruguay"></a>Uruguay
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 3 – Nord- und Südamerika |
 | OneDrive for Business | Globale Region 3 – Nord- und Südamerika |
@@ -5787,18 +5788,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="us-minor-outlying-islands"></a>Kleinere Amerikanische Überseeinseln
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -5811,13 +5812,13 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="uzbekistan"></a>Usbekistan
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | Intune | Globale Region 1 – EMEA |
@@ -5835,18 +5836,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="vanuatu"></a>Vanuatu
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -5859,7 +5860,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="venezuela"></a>Venezuela
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Vereinigte Staaten |
 | OneDrive for Business | Vereinigte Staaten |
@@ -5883,18 +5884,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="vietnam"></a>Vietnam
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -5907,18 +5908,18 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="wallis-and-futuna-islands"></a>Wallis und Futuna
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 2 – Asien-Pazifik |
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
-| Planner | Globale Region 2 – Asien-Pazifik |
+| Planner | Globale Region 2 – Asiatisch-pazifischer Raum |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
 | OneNote Services | Globale Region 2 – Asien-Pazifik |
@@ -5931,7 +5932,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="western-sahara"></a>Western Sahara
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -5955,7 +5956,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="yemen"></a>Jemen
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -5979,7 +5980,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="zambia"></a>Sambia
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |
@@ -6003,7 +6004,7 @@ Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf
 ## <a name="zimbabwe"></a>Simbabwe
 <details><summary>Zum Erweitern klicken</summary><p>
 
-| Dienst | Standort |
+| Dienst | Ort |
 | --- | --- |
 | Exchange Online | Globale Region 1 – EMEA |
 | OneDrive for Business | Globale Region 1 – EMEA |

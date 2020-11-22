@@ -18,16 +18,16 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
 description: Vergewissern Sie sich, dass Sie alle Features in Microsoft 365 aktiviert haben, um die Produktivität der Remotearbeitskraft zu maximieren und den sicheren Zugriff auf Ihre Server, Daten und die Cloud aufrechtzuerhalten.
-ms.openlocfilehash: 6cf956d7d7e895dc328c8551f98e78d0fc42d86c
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 833f0351c3eb78afb7218ea1c1c51151d70bb608
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357037"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371502"
 ---
-# <a name="empower-remote-workers-with-microsoft-365"></a>Fördern von Remotemitarbeitern mit Microsoft 365
+# <a name="empower-remote-workers-with-microsoft-365"></a>Remotemitarbeiter mit Microsoft 365 fördern
 
-Ihr Unternehmen muss möglicherweise Ihren Arbeitnehmern von zu Hause aus einen sicheren Zugang zu den Informationen, Tools und Ressourcen Ihres Unternehmens vor Ort und in der Cloud ermöglichen. Es ist für viele Organisationen wichtig, den Mitarbeitern das Arbeiten außerhalb des Büros zu ermöglichen:
+Möglicherweise muss Ihr Unternehmen Ihren Mitarbeitern von zu Hause aus einen sicheren Zugang zu den lokalen und Cloud-basierten Informationen, Tools und Ressourcen Ihres Unternehmens ermöglichen. Für viele Unternehmen ist es wichtig, dass Mitarbeiter auch außerhalb der Firma arbeiten können:
 
 - Einsparen von Bürofläche.
 - Einstellung und Bindung von Arbeitnehmern, die nicht bereit sind, umzuziehen.
@@ -67,11 +67,11 @@ Diese Lösung bietet die folgenden Hauptfunktionen.
 
   - Freigegebene Arbeitsbereiche für cloudbasierte Dateispeicherung mit globalem Zugriff und Zusammenarbeit in Echtzeit mit SharePoint und OneDrive.
 
-  - Gemeinsame Aufgaben und Workflows, um die Arbeit aufzuteilen und Dinge zu erledigen. 
+  - Gemeinsame Aufgaben und Workflows, um Arbeit aufzuteilen und zu erledigen. 
 
-Für einen flüssigen Anmeldevorgang sollten Ihre lokalen AD DS-Benutzerkonten (Active Directory Domain Services) mit Azure Active Directory (Azure AD) synchronisiert werden. Um Ihre Windows 10-Geräte zu schützen, sollten sie in Intune registriert werden. Hier ist eine allgemeine Übersicht über die Infrastruktur.
+Für eine nahtlose Benutzererfahrung sollten Ihre lokalen Active Directory Domain Services (AD DS)-Benutzerkonten mit Azure Active Directory (Azure AD) synchronisiert werden. Um Ihre Windows 10-Geräte zu schützen, sollten sie bei Intune angemeldet sein. Hier ist eine Gesamtübersicht über die Infrastruktur.
 
-![Grundlegende Infrastruktur für Remotemitarbeiter mit Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
+![Basisinfrastruktur für Remotemitarbeiter mit Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
 
 Verwenden Sie diese Microsoft 365-Features, um die Funktionen von Microsoft 365 für Ihre Remotemitarbeiter zu aktivieren.
 
@@ -112,6 +112,6 @@ Nutzen Sie diese Schritte, um den Zugriff auf die Server und Cloud-Dienste Ihres
 
 [![Die Schritte zum Fördern von Remotemitarbeitern mit Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
-Die neuesten Informationen von Microsoft zur Unterstützung von Remotemitarbeitern finden Sie auf der Website [Ermöglichen der hybriden Arbeit mit der Microsoft Teams](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/).
+Die neuesten Informationen von Microsoft zur Unterstützung von Remotemitarbeitern finden Sie auf der Website [Hybrides Arbeiten mit Microsoft Teams Website ermöglichen](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/).
 
-Wenn Sie sehen möchten, wie eine fiktive, aber repräsentative multinationale Organisation ihre Remotemitarbeiter befähigte, lesen Sie [Die Antwort von Contoso auf COVID-19 und die Infrastruktur für eine hybride Belegschaft](contoso-hybrid-workforce.md).
+Sehen Sie sich hier an, wie eine fiktive aber repräsentative, multinationale Organisation ihre Remotemitarbeiter unterstützen könnte [Die COVID-19-Reaktion von Contoso und seine Infrastruktur, die Remote- und Vor-Ort-Arbeiten ermöglicht](contoso-remote-onsite-work.md).

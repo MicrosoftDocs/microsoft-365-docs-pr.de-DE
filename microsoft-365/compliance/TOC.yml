@@ -858,9 +858,9 @@
       href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
     - name: Beibehalten von Bcc-Empfängern und Empfängern aus erweiterten Verteilergruppen
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
-- name: Verwalten von Überwachungs- und Warnungsrichtlinien
+- name: Verwalten von Richtlinien zur Überwachung und Benachrichtigung
   items:
-    - name: Vereinheitlichte Überwachung
+    - name: Grundlegende Überwachung
       items:
         - name: Durchsuchen des Überwachungsprotokolls
           href: search-the-audit-log-in-security-and-compliance.md

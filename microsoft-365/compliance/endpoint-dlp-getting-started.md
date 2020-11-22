@@ -19,16 +19,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: Richten Sie Microsoft 365 Endpunkt-DLP (Data Loss Prevention, Verhinderung von Datenverlust) ein, um Dateiaktivitäten zu überwachen und schützende Maßnahmen für diese Dateien auf Endpunkten anzuwenden.
-ms.openlocfilehash: 6ba3b83d634f946f818890a732a83166f346162d
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: 8211ffbe3a84c0ee9fb4cb4c22d4dcea7f906a78
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49073094"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371601"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Erste Schritte mit Endpunkt-DLP
 
-Microsoft Endpunkt-DLP (Data Loss Prevention, Verhinderung von Datenverlust) ist Bestandteil der Microsoft 365 DLP-Suite, mit der Sie vertrauliche Elemente in Microsoft 365-Diensten ermitteln und schützen können. Weitere Informationen zu den Microsoft-DLP-Angeboten finden Sie unter [Verhinderung von Datenverlust – Übersicht](data-loss-prevention-policies.md). Einzelheiten über Endpunkt-DLP finden Sie unter [ Informationen zu Endpunkt-DLP](endpoint-dlp-learn-about.md).
+Microsoft Endpunkt-DLP (Data Loss Prevention, Verhinderung von Datenverlust) ist Bestandteil der Microsoft 365 DLP-Suite, mit der Sie vertrauliche Elemente in Microsoft 365-Diensten ermitteln und schützen können. Weitere Informationen zu den Microsoft-DLP-Angeboten finden Sie unter [Verhinderung von Datenverlust – Übersicht](data-loss-prevention-policies.md). Weitere Informationen zu Endpunkt-DLP finden Sie unter [Informationen zu Endpunkt-DLP](endpoint-dlp-learn-about.md)
 
 Microsoft Endpunkt-DLP ermöglicht es Ihnen, Windows 10-Geräte zu überwachen und zu erkennen, wenn vertrauliche Elemente verwendet und freigegeben werden. Auf diese Weise erhalten Sie die nötige Übersicht und Kontrolle, um sicherzustellen, dass sie ordnungsgemäß verwendet und geschützt werden, und um ihre Gefährdung durch riskantes Verhalten zu verhindern.
 
@@ -105,7 +105,7 @@ Sie müssen die Geräteüberwachung aktivieren und die Endpunkte einbinden, bevo
 
 Wenn Sie das Onboarding von noch nicht eingebundenen Geräten vornehmen möchten, laden Sie das entsprechende Skript herunter, und installieren Sie es auf diesen Geräten. Wenden Sie das [Verfahren zum Onboarding von Geräten](endpoint-dlp-getting-started.md#onboarding-devices) an.
 
-Wenn bereits Geräte in [Microsoft Defender für Endpunkt](https://docs.microsoft.com/windows/security/threat-protection/) eingebunden sind, werden sie in der Liste der verwalteten Geräte angezeigt. Wenden Sie das [Verfahren für Geräte, die in Microsoft Defender für Endpunkt eingebunden sind](endpoint-dlp-getting-started.md#with-devices-onboarded-into-microsoft-defender-for- endpoint), an.
+Wenn bereits Geräte in [Microsoft Defender für Endpunkt](https://docs.microsoft.com/windows/security/threat-protection/) eingebunden sind, werden sie in der Liste der verwalteten Geräte angezeigt. Wenden Sie das [Verfahren für Geräte, die in Microsoft Defender für Endpunkt eingebunden sind](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-getting-started?view=o365-worldwide&source=docs#with-devices-onboarded-into-microsoft-defender-for-endpoint), an.
 
 ### <a name="onboarding-devices"></a>Onboarding von Geräten
 

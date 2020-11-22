@@ -12,21 +12,21 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: Erfahren Sie, wie Finanzdienstleistungsinstitute mit Microsoft 365 und Teams die Einhaltung der finanziellen Sicherheit gewährleisten und effektiv zusammenarbeiten können.
 f1.keywords: NOCSH
-ms.openlocfilehash: 2e0148a89a811fb910237469c42e136d0c744087
-ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
+ms.openlocfilehash: cf485ec673c2f53d1b088c24be950dfe98c71276
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48993400"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376643"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Wichtige Überlegungen zur Compliance und Sicherheit der Banken und Kapitalmärkte in den Vereinigten Staaten
 
 ## <a name="introduction"></a>Einführung
-Finanzdienstleistungsinstitute übertreffen fast alle kommerziellen Unternehmen in ihrer Forderung nach strengen Sicherheits-, Compliance- und Governance-Kontrollen. Der Schutz von Daten, Identitäten, Geräten und Anwendungen ist nicht nur entscheidend für ihr Unternehmen, sondern unterliegt auch den Compliance-Anforderungen und Richtlinien von Aufsichtsbehörden wie der U.S. Securities and Exchange Commission (SEC), der Financial Industry Regulatory Authority (FINRA), dem Federal Financial Institutions Examination Council (FFIEC) und der Commodity Futures Trading Commission (CFTC). Darüber hinaus unterliegen Finanzinstitute Gesetzen wie Dodd-Frank und dem Sarbanes-Oxley Act von 2002.
+Finanzdienstleistungsunternehmen übertreffen nahezu alle kommerziellen Unternehmen in ihrer Forderung nach strengen Sicherheits-, Compliance- und Governance-Kontrollen. Der Schutz von Daten, Identitäten, Geräten und Anwendungen ist nicht nur für ihr Geschäft von entscheidender Bedeutung, sondern unterliegt auch den Compliance-Anforderungen und -Richtlinien von Aufsichtsbehörden wie der US-amerikanischen Börsenaufsichtsbehörde (SEC – Securities and Exchange Commission), der Aufsichtsbehörde für die Finanzindustrie (FINRA – Financial Industry Regulatory Authority), der Federal Financial Institutions Examination Council (FFIEC) und die Commodity Futures Trading Commission (CFTC). Darüber hinaus unterliegen Finanzinstitute Gesetzen wie Dodd-Frank und dem Sarbanes-Oxley Act von 2002.
 
-Im heutigen Klima erhöhter Sicherheitsüberwachung, Bedenken wegen Insider-Risiken und Verletzungen öffentlicher Daten verlangen die Kunden auch von ihren Finanzinstituten ein hohes Maß an Sicherheit, um ihnen ihre personenbezogenen Daten und Bankvermögen anzuvertrauen.
+Im heutigen Klima erhöhter Sicherheitsüberwachung, Bedenken wegen Insider-Risiken und öffentlichen Datenverletzungen verlangen die Kunden auch von ihren Finanzinstituten ein hohes Maß an Sicherheit, um ihnen ihre personenbezogenen Daten und Bankvermögen anzuvertrauen.
 
-In der Vergangenheit wirkte sich der Bedarf an umfassenden Kontrollen direkt auf die IT-Systeme und -Plattformen aus, die von den Finanzinstituten für die interne und externe Zusammenarbeit genutzt werden, und schränkte diese ein. Heute brauchen die Mitarbeiter von Finanzdienstleistern eine moderne Kollaborationsplattform, die leicht zu übernehmen und zu benutzen ist. Aber Finanzdienstleister können die Flexibilität zur Zusammenarbeit zwischen Benutzern, Teams und Abteilungen nicht mit Sicherheits- und Compliance-Kontrollen eintauschen, die Richtlinien zum Schutz von Benutzern und IT-Systemen vor Bedrohungen durchsetzen.
+In der Vergangenheit wirkte sich die Notwendigkeit umfassender Kontrollen direkt auf die IT-Systeme und -Plattformen aus, mit denen Finanzinstitute die interne und externe Zusammenarbeit ermöglichen. Finanzdienstleistungsmitarbeiter benötigen heute eine moderne Plattform für die Zusammenarbeit, die einfach anzupassen und zu verwenden ist. Finanzdienstleistungen können jedoch nicht die Flexibilität für die Zusammenarbeit zwischen Benutzern, Teams und Abteilungen gegen Sicherheits- und Compliance-Kontrollen eintauschen, welche Richtlinien zum Schutz von Benutzern und IT-Systemen vor Bedrohungen durchsetzen.
 
 Im Finanzdienstleistungssektor ist eine sorgfältige Prüfung der Konfiguration und des Einsatzes von Tools zur Zusammenarbeit und von Sicherheitskontrollen erforderlich, einschließlich:
 - Risikobewertung gemeinsamer organisatorischer Zusammenarbeit und Geschäftsprozessszenarien
@@ -35,7 +35,7 @@ Im Finanzdienstleistungssektor ist eine sorgfältige Prüfung der Konfiguration 
 - Gesetzliche Kompatibilitätsanforderungen
 - Sonstige betriebliche Risiken
 
-**Microsoft 365 ist eine moderne Workplace-Cloud-Umgebung, die den heutigen Herausforderungen von Finanzdienstleistungsunternehmen gerecht wird. Die sichere und flexible Zusammenarbeit im gesamten Unternehmen wird mit Kontrollen und der Durchsetzung von Richtlinien kombiniert, um strenge gesetzliche Vorschriften einzuhalten.** Dieser Artikel beschreibt, wie die Microsoft 365-Plattform Finanzdienstleistern bei der Umstellung auf eine moderne Plattform für die Zusammenarbeit unterstützt und gleichzeitig Daten und Systeme sicher und gesetzeskonform hält:
+**Microsoft 365 ist eine moderne Cloud-Umgebung am Arbeitsplatz, die den heutigen Herausforderungen von Finanzdienstleistungsunternehmen gerecht wird. Eine sichere und flexible Zusammenarbeit im gesamten Unternehmen wird mit Kontrollen und der Durchsetzung von Richtlinien kombiniert, um die strengen Rahmenbedingungen der gesetzlichen Vorschriften einzuhalten.** In diesem Artikel wird beschrieben, wie die Microsoft 365-Plattform Finanzdienstleistungen bei der Umstellung auf eine moderne Plattform für die Zusammenarbeit unterstützt und gleichzeitig dazu beiträgt, dass Daten und Systeme sicher sind und den Vorschriften entsprechen:
 
 * Ermöglichen Sie die Produktivität von Unternehmen und Mitarbeitern durch den Einsatz von Microsoft 365 und Microsoft Teams
 * Sicherung der modernen Zusammenarbeit durch den Einsatz von Microsoft 365 
@@ -47,13 +47,13 @@ Im Finanzdienstleistungssektor ist eine sorgfältige Prüfung der Konfiguration 
 
 Als Microsoft-Partner trug Protiviti zu diesem Artikel bei und lieferte materielles Feedback zu diesem Artikel.
 
-Die folgenden herunterladbaren Illustrationen ergänzen diesen Artikel. Die Woodgrove Bank und Contoso werden verwendet, um zu demonstrieren, wie die in diesem Artikel beschriebenen Funktionen angewendet werden können, um gängige behördliche Anforderungen an Finanzdienstleistungen zu erfüllen. Sie können diese Illustrationen für Ihren eigenen Gebrauch anpassen. 
+Die folgenden herunterladbaren Abbildungen ergänzen diesen Artikel. Mit Woodgrove Bank und Contoso wird demonstriert, wie die in diesem Artikel beschriebenen Funktionen angewendet werden können, um die allgemeinen gesetzlichen Anforderungen an Finanzdienstleistungen zu erfüllen. Sie können diese Abbildungen gerne für Ihren eigenen Gebrauch anpassen. 
 
 **Illustrationen zu Microsoft 365 Informationsschutz und Compliance**
 
 | Element | Beschreibung |
 |:-----|:-----|
-|[![Modellposter: Funktionen von Microsoft 365 Informationsschutz und Compliance](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [Als PDF herunterladen](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Als Visio herunterladen](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Aktualisiert im Oktober 2020|Enthält: <ul><li>  Microsoft Information Protection und Verhinderung von Datenverlust</li><li>Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen </li><li>Informationsbarrieren</li><li>Kommunikationscompliance</li><li>Insider-Risiko</li><li>Datenerfassung durch Drittanbieter</li>|
+|[![Modellposter: Funktionen von Microsoft 365 Informationsschutz und Compliance](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/>Englisch: [Als PDF herunterladen](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Als Visio herunterladen](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Japanische: [Als PDF herunterladen](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [Als Visio herunterladen](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)<br/> Aktualisiert: November 2020|Enthält: <ul><li>  Microsoft Information Protection und Verhinderung von Datenverlust</li><li>Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen </li><li>Informationsbarrieren</li><li>Kommunikationscompliance</li><li>Insider-Risiko</li><li>Datenerfassung durch Drittanbieter</li>|
 
 
 ## <a name="empower-organizational-and-employee-productivity-by-using-microsoft-365-and-teams"></a>Fördern Sie die Produktivität von Unternehmen und Mitarbeitern durch den Einsatz von Microsoft 365 und Microsoft Teams
@@ -62,7 +62,7 @@ Die Zusammenarbeit erfordert in der Regel verschiedene Formen der Kommunikation,
 
 Die Bereitstellung einer modernen, cloudbasierten Plattform für die Zusammenarbeit ermöglicht es den Mitarbeitern, Tools auszuwählen und zu integrieren, die sie produktiver machen und ihnen die Möglichkeit geben, flexible Arbeitsweisen zu finden. Der Einsatz von Teams in Verbindung mit Sicherheitskontrollen und Richtlinien zur Informationsverwaltung, die das Unternehmen schützen, kann Ihren Mitarbeitern helfen, effektiv zu kommunizieren und zusammenzuarbeiten.
 
-Teams bietet einen Knotenpunkt der Zusammenarbeit für die Organisation. Es trägt dazu bei, Menschen zusammenzubringen, um produktiv an gemeinsamen Initiativen und Projekten zu arbeiten. Mit Teams können Teammitglieder Unterhaltungen im 1:1- und Mehrparteien-Chat führen, Dokumente gemeinsam bearbeiten und mitverfassen sowie Dateien speichern und austauschen. Teams erleichtern auch Online-Besprechungen durch integrierte Unternehmensstimme und -video. Teams können auch mit Microsoft-Apps wie Microsoft Planner, Microsoft Dynamics 365, PowerApps, PowerBI und Branchenanwendungen von Drittanbietern angepasst werden. Teams ist sowohl für interne Teammitglieder als auch für zugelassene externe Benutzer gedacht, die Team-Kanäle betreten, an Chat-Unterhaltungen teilnehmen, auf gespeicherte Dateien zugreifen und andere Anwendungen nutzen können.
+Teams bietet einen Knotenpunkt der Zusammenarbeit für die Organisation. Es trägt dazu bei, Menschen zusammenzubringen, um produktiv an gemeinsamen Initiativen und Projekten zu arbeiten. Mit Teams können Teammitglieder Unterhaltungen im 1:1- und Mehrparteien-Chat führen, Dokumente gemeinsam bearbeiten und mitverfassen sowie Dateien speichern und austauschen. Teams erleichtern auch Online-Besprechungen durch integrierte Unternehmensstimme und -video. Teams kann auch mit Microsoft-Apps wie Microsoft Planner, Microsoft Dynamics 365, PowerApps, Power BI und Branchenanwendungen von Drittanbietern angepasst werden. Teams ist sowohl für interne Teammitglieder als auch für zugelassene externe Benutzer gedacht, die Team-Kanäle betreten, an Chat-Unterhaltungen teilnehmen, auf gespeicherte Dateien zugreifen und andere Anwendungen nutzen können.
 
 Jedes Microsoft-Team wird von einer Microsoft 365-Gruppe unterstützt. Diese Gruppe gilt als der Mitgliedschaftsdienst für zahlreiche Dienste von Office 365, einschließlich Teams. Die Gruppen von Microsoft 365 werden verwendet, um sicher zwischen „Besitzern“ und „Mitgliedern“ zu unterscheiden und den Zugang zu verschiedenen Fähigkeiten innerhalb der Teams zu kontrollieren. In Verbindung mit angemessenen Governance-Kontrollen und regelmäßig durchgeführten Zugangsprüfungen ermöglicht es Teams nur Mitgliedern und Besitzern, autorisierte Kanäle und Fähigkeiten zu nutzen.
 
