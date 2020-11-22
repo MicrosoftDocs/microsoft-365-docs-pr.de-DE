@@ -15,23 +15,23 @@
       items:
         - name: Übersicht
           href: empower-people-to-work-remotely.md
-        - name: 'Schritt 1: Erhöhung der Anmeldesicherheit'
+        - name: Schritt 1. Anmeldesicherheit erhöhen
           href: empower-people-to-work-remotely-secure-sign-in.md
-        - name: "Schritt\_2: Remotezugriff ermöglichen"
+        - name: Schritt 2. Remotezugriff ermöglichen
           href: empower-people-to-work-remotely-remote-access.md
-        - name: 'Schritt 3: Sicherheit und Compliance bereitstellen'
+        - name: Schritt 3. Sicherheit und Compliance bereitstellen
           href: empower-people-to-work-remotely-security-compliance.md
-        - name: "Schritt\_4: Endpunktverwaltung bereitstellen"
+        - name: Schritt 4. Endpunktverwaltung bereitstellen
           href: empower-people-to-work-remotely-manage-endpoints.md
-        - name: "Schritt\_5: Produktivitätsanwendungen und -dienste bereitstellen"
+        - name: Schritt 5. Produktivitätsanwendungen und -dienste bereitstellen
           href: empower-people-to-work-remotely-teams-productivity-apps.md
-        - name: 'Schritt 6: Remotemitarbeiter schulen'
+        - name: Schritt 6. Remotemitarbeiter schulen
           href: empower-people-to-work-remotely-train-monitor-usage.md
     - name: Sichere Zusammenarbeit mit Microsoft 365 einrichten
       items:
         - name: Übersicht
           href: setup-secure-collaboration-with-teams.md
-        - name: 'Schritt 1: Konfigurieren von drei Schutzebenen mit Microsoft Teams'
+        - name: Schritt 1. Konfigurieren von drei Schutzebenen mit Microsoft Teams
           items:
             - name: Drei Schutzebenen – Übersicht
               href: configure-teams-three-tiers-protection.md
@@ -43,7 +43,7 @@
               href: configure-teams-highly-sensitive-protection.md
             - name: Konfigurieren eines Teams mit Sicherheitsisolierung
               href: secure-teams-security-isolation.md
-        - name: "Schritt\_2: Konfigurieren der externen Freigabe"
+        - name: Schritt 2. Konfigurieren der externen Freigabe
           items:
             - name: Externe Freigabe – Übersicht
               href: collaborate-with-people-outside-your-organization.md
@@ -171,8 +171,8 @@
       items:
         - name: Microsoft 365-Lösungen für die Contoso Corporation
           href: contoso-case-study-solutions.md
-        - name: COVID-19 Reaktion und Unterstützung für eine hybride Belegschaft
-          href: contoso-hybrid-workforce.md
+        - name: COVID-19-Reaktion und Support für Arbeiten zu Hause und im Büro
+          href: contoso-remote-onsite-work.md
         - name: Isoliertes Team für ein streng geheimes Projekt
           href: contoso-team-for-top-secret-project.md
         - name: Migration der Sprachfunktion von Teams

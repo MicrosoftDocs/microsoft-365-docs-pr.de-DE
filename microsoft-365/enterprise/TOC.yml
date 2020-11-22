@@ -342,6 +342,8 @@
           href: data-move-faq.md
         - name: Wo Kundendaten gespeichert werden
           href: o365-data-locations.md
+        - name: Datenspeicherorte für die Europäische Union
+          href: eu-data-storage-locations.md
         - name: Microsoft Cloud Deutschland
           items:
             - name: Übersicht
@@ -564,7 +566,7 @@
           href: cmdlet-references-for-microsoft-365-services.md
         - name: Community-Ressourcen zu PowerShell
           href: microsoft-365-powershell-community-resources.md
-    - name: 'Verwalten von Benutzerkonten, Kennwörtern, Lizenzen und Gruppen mit PowerShell'
+    - name: 'Benutzerkonten, Kennwörter, Lizenzen und Gruppen'
       href: manage-user-accounts-and-licenses-with-microsoft-365-powershell.md
       items:
         - name: Benutzerkonten
