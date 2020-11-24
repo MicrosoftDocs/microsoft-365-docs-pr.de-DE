@@ -1,5 +1,5 @@
 ---
-title: Überprüfen erkannter Bedrohungen und ergreifen von Aktionen
+title: Untersuchen erkannter Bedrohungen und Ergreifen von Maßnahmen
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -15,14 +15,14 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Hier erfahren Sie, wie Sie von Microsoft Defender Antivirus auf Ihren Windows 10-Geräten erkannte Bedrohungen überprüfen und verwalten können.
-ms.openlocfilehash: 21830b91bfbb88fdd5d5139ee07c4dfb35f5b875
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: ffdf5cffb50d6145d6059233e0850839f4dfb582
+ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376702"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49385240"
 ---
-# <a name="review-detected-threats-and-take-action"></a>Überprüfen erkannter Bedrohungen und ergreifen von Aktionen
+# <a name="review-detected-threats-and-take-action"></a>Untersuchen erkannter Bedrohungen und Ergreifen von Maßnahmen
 
 Sobald eine bösartige Datei oder Software erkannt wird, blockiert Microsoft Defender Antivirus diese und verhindert die Ausführung. Und wenn der Cloud-geschützte Schutz aktiviert ist, werden dem Antivirus-und Antischadsoftware-Modul neu erkannte Bedrohungen hinzugefügt, damit auch Ihre anderen Geräte und Benutzer geschützt sind.
 
@@ -58,7 +58,7 @@ Das folgende Verfahren gilt für Kunden mit Microsoft 365 Business Premium.
 
 ## <a name="manage-threat-detections-on-the-active-threats-page"></a>Verwalten von Bedrohungserkennungen auf der Seite " **aktive Bedrohungen** "
 
-Das folgende Verfahren gilt für Kunden mit Microsoft 365 Business. [Windows 10-Geräte müssen gesichert](/microsoft-365/business/secure-win-10-pcs) und [in InTune registriert](/mem/intune/enrollment/windows-enrollment-methods)sein.
+Das folgende Verfahren gilt für Kunden mit Microsoft 365 Business Premium. [Windows 10-Geräte müssen gesichert](/microsoft-365/business/secure-win-10-pcs) und [in InTune registriert](/mem/intune/enrollment/windows-enrollment-methods)sein.
 
 > [!NOTE]
 > Auf der Seite **Microsoft Defender Antivirus** -Karte und **aktive Bedrohungen** wird in Phasen ein Rollback ausgeführt, sodass Sie möglicherweise keinen unmittelbaren Zugriff darauf haben.
