@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mithilfe einer Aufbewahrungsrichtlinie können Sie sehr effizient die Kontrolle über den Inhalt behalten, den Benutzer mit E-Mails, Dokumenten und Konversationen generieren. Behalten Sie, was Sie wollen, und entfernen Sie das, was Sie nicht wollen.
-ms.openlocfilehash: bcf0ef5aa76113102013bc20fca02e6d516c3203
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 4479731af4787a6ef77dc48d27e5dfb60834d9c5
+ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376578"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49385251"
 ---
 # <a name="create-and-configure-retention-policies"></a>Erstellen und Konfigurieren von Aufbewahrungsrichtlinien
 
@@ -99,7 +99,7 @@ Es ist möglich, dass eine Aufbewahrungsrichtlinie, die auf Microsoft 365-Gruppe
 ### <a name="retention-policy-for-yammer-locations"></a>Aufbewahrungsrichtlinie für Yammer-Speicherorte
 
 > [!NOTE]
-> Die Aufbewahrungsrichtlinien für Yammer werden in Kürze eingeführt. Wenn Sie die neuen Standorte für Yammer noch nicht sehen, versuchen Sie es in ein paar Wochen noch einmal.
+> Die Aufbewahrungsrichtlinien für Yammer werden in Kürze eingeführt. Wenn Sie die neuen Speicherorte für Yammer noch nicht sehen, versuchen Sie es in ein paar Wochen noch einmal.
 >
 > Um diese Funktion nutzen zu können, muss Ihr Yammer-Netzwerk im [nativen Modus](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) und nicht im Hybridmodus arbeiten.
 
@@ -193,7 +193,7 @@ Informationen zum Überprüfen der Syntax für Ihren Mandanten und zum Identifiz
 
 Um Inhalte für eine Microsoft 365-Gruppe (früher Office 365-Gruppe) aufzubewahren oder zu löschen verwenden Sie den Speicherort für **Microsoft 365-Gruppen**. Auch wenn eine Microsoft 365-Gruppe über ein Exchange-Postfach verfügt, enthält eine Aufbewahrungsrichtlinie, die den gesamten Speicherort für **Exchange-E-Mail** enthält, keinen Inhalt von Microsoft 365-Gruppenpostfächern. Obwohl Sie am Speicherort für **Exchange-E-Mail** anfänglich festlegen können, ob ein Gruppenpostfach eingeschlossen oder ausgeschlossen werden soll, wird beim Speichern der Aufbewahrungsrichtlinie die Fehlermeldung angezeigt, dass „RemoteGroupMailbox“ keine gültige Auswahl für den Exchange-Speicherort ist.
 
-Eine Aufbewahrungsrichtlinie, die auf eine Microsoft 365-Gruppe angewendet wird, umfasst das Gruppenpostfach und die SharePoint-Teamwebsite. Auf der SharePoint-Teamwebsite gespeicherte Dateien sind von diesem Speicherort abgedeckt, nicht jedoch Teams-Chats oder Teams-Kanalnachrichten, deren Speicherorten mit eigenen Aufbewahrungsrichtlinien abgedeckt sind.
+Eine auf eine Microsoft 365-Gruppe angewendete Aufbewahrungsrichtlinie umfasst das Gruppenpostfach und die SharePoint-Teamwebsite. Dateien, die auf der SharePoint-Teamwebsite gespeichert sind, werden mit diesem Standort abgedeckt. Nicht jedoch Teams-Chats oder Nachrichten im Teams-Channel, die ihre eigenen Standorte für Aufbewahrungsrichtlinien haben.
 
 ### <a name="configuration-information-for-skype-for-business"></a>Konfigurationsinformationen für Skype for Business
 
@@ -227,7 +227,7 @@ Beim Konfigurieren einer Aufbewahrungsrichtlinie können Sie festlegen, ob Eleme
 
 Beim Konfigurieren einer Aufbewahrungsrichtlinie können Sie festlegen, ob Inhalte auf unbestimmte Zeit oder für eine bestimmte Anzahl von Tagen, Monaten oder Jahren aufbewahrt werden sollen. Die Aufbewahrungsfrist wird anhand des Alters des Inhalts berechnet und nicht ab dem Zeitpunkt, an dem die Aufbewahrungsrichtlinie angewendet wird.
 
-Als Beginn des Aufbewahrungszeitraums können Sie entweder auswählen, wann der Inhalt erstellt wurde oder – nur unterstützt für Dateien und die SharePoint-, OneDrive-und Office 365-Speicherorte – wann der Inhalt zuletzt geändert wurde.
+Als Beginn des Aufbewahrungszeitraums können Sie auch auswählen, wann der Inhalt erstellt wurde oder – nur unterstützt für Dateien und SharePoint, OneDrive und Microsoft 365-Gruppen – wann der Inhalt zuletzt geändert wurde.
 
 Beispiele:
 
@@ -279,6 +279,9 @@ Wenn Sie die optionale Konfiguration zum Festlegen des Bereichs der Aufbewahrung
 > Schalten Sie in diesem Szenario den Speicherort aus, wenn die Einstellung **Alle** für den Speicherort nicht der Aufbewahrungsrichtlinie unterliegen soll. Alternativ können Sie Ausschlüsse angeben, die von der Richtlinie ausgenommen werden.
 
 ## <a name="updating-retention-policies"></a>Aktualisieren von Aufbewahrungsrichtlinien
+
+Einige Einstellungen können nicht geändert werden, nachdem eine Aufbewahrungsrichtlinie erstellt und gespeichert wurde. Dazu gehören:
+- Den Namen der Aufbewahrungsrichtlinie und die Aufbewahrungseinstellungen mit Ausnahme des Aufbewahrungszeitraums und des Beginns des Aufbewahrungszeitraums.
 
 Wenn Sie eine Aufbewahrungsrichtlinie bearbeiten und Elemente bereits den ursprünglichen Einstellungen in Ihrer Aufbewahrungsrichtlinie unterliegen, werden die aktualisierten Einstellungen automatisch auf diese Elemente sowie zusätzlich auf neu identifizierte Elemente angewendet.
 

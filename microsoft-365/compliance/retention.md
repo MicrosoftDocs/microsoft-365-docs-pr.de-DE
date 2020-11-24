@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen, um zu behalten, was Sie benötigen, und zu löschen, was Sie nicht benötigen.
-ms.openlocfilehash: bedf82d9d53ef14755651d5994e6c5c269cf5d6e
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: 5ceec4ed45286afa14004dcfcb9476040df9a5ec
+ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49073136"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49385271"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
@@ -32,15 +32,15 @@ ms.locfileid: "49073136"
 
 In den meisten Organisationen nimmt die Menge und Komplexität der Daten täglich zu – E-Mails, Dokumente, Chatnachrichten usw. Eine effektive Verwaltung bzw. Governance dieser Informationen ist wichtig, da Sie:
   
-- **branchenspezifische Vorschriften und interne Richtlinien einhalten müssen** , nach denen Inhalte für eine bestimmte Mindestdauer aufzubewahren sind – z. B. müssen Sie gemäß dem Sarbanes-Oxley Act möglicherweise bestimmte Arten von Inhalten sieben Jahre lang aufbewahren. 
+- **branchenspezifische Vorschriften und interne Richtlinien einhalten müssen**, nach denen Inhalte für eine bestimmte Mindestdauer aufzubewahren sind – z. B. müssen Sie gemäß dem Sarbanes-Oxley Act möglicherweise bestimmte Arten von Inhalten sieben Jahre lang aufbewahren. 
 
-- **das Risiko bei Rechtsstreitigkeiten oder einer Sicherheitsverletzung reduzieren müssen** , indem Sie alte Inhalte, die Sie nicht mehr aufbewahren müssen, endgültig löschen. 
+- **das Risiko bei Rechtsstreitigkeiten oder einer Sicherheitsverletzung reduzieren müssen**, indem Sie alte Inhalte, die Sie nicht mehr aufbewahren müssen, endgültig löschen. 
     
-- **Ihrer Organisation dabei helfen müssen, effektiven Wissensaustausch zu betreiben und agiler zu werden** , indem Sie sicherstellen, dass die Benutzer nur mit Inhalten arbeiten, die aktuell und für sie relevant sind. 
+- **Ihrer Organisation dabei helfen müssen, effektiven Wissensaustausch zu betreiben und agiler zu werden**, indem Sie sicherstellen, dass die Benutzer nur mit Inhalten arbeiten, die aktuell und für sie relevant sind. 
     
-Die Aufbewahrungseinstellungen, die Sie konfigurieren, können Ihnen helfen, all diese Ziele zu erreichen. Zum Verwalten von Inhalten sind häufig zwei Aktionen erforderlich:
+Von Ihnen konfigurierte Aufbewahrungseinstellungen können Ihnen dabei helfen, alle diese Ziele zu erreichen. Das Verwalten von Inhalten macht häufig zwei Aktionen erforderlich:
   
-- **Aufbewahrung** von Inhalten, sodass sie nicht vor dem Ende des Aufbewahrungszeitraums dauerhaft gelöscht werden 
+- **Aufbewahrung** von Inhalten, sodass sie nicht vor dem Ende des Aufbewahrungszeitraums dauerhaft gelöscht werden. 
     
 - **Endgültiges Löschen** von Inhalten am Ende des Aufbewahrungszeitraums. 
     
@@ -111,6 +111,8 @@ Aufbewahrungsrichtlinien können auf die folgenden Speicherorte angewendet werde
 
 Sie können eine einzelne Richtlinie sehr effizient auf mehrere Speicherorte oder auf bestimmte Speicherorte oder Benutzer anwenden.
 
+Als Beginn des Aufbewahrungszeitraums können Sie auswählen, wann der Inhalt erstellt wurde oder – nur unterstützt für Dateien und die SharePoint-, OneDrive- und Microsoft 365-Gruppen-Speicherorte – wann der Inhalt zuletzt geändert wurde.
+
 Elemente erben die Aufbewahrungseinstellungen aus ihren Containern, die in der Aufbewahrungsrichtlinie angegeben sind. Wenn sie dann aus diesem Container verschoben werden, wird, sofern die Richtlinie für die Beibehaltung von Inhalten konfiguriert ist, eine Kopie des jeweiligen Elements am gesicherten Speicherort des Workloads beibehalten. Allerdings bleiben die Einstellungen für die Aufbewahrung nicht zusammen mit dem Inhalt an seinem neuen Speicherort erhalten. Verwenden Sie in diesem Fall Aufbewahrungsbezeichnungen anstelle von Aufbewahrungsrichtlinien.
 
 ### <a name="retention-labels"></a>Aufbewahrungsbezeichnungen
@@ -129,7 +131,7 @@ In all diesen Fällen können Sie mit Hilfe von Aufbewahrungsbzeichnungen Aufbew
   
 Mit Aufbewahrungsbezeichnungen können Sie Folgendes:
   
-- **Personen in Ihrer Organisation die Möglichkeit zum manuellen Anwenden einer Aufbewahrungsbezeichnung bieten** , und zwar auf Inhalte in Outlook und Outlook im Web, OneDrive, SharePoint und Microsoft 365-Gruppen. Benutzer wissen häufig am besten, mit welcher Art von Inhalten sie arbeiten, sodass sie diese klassifizieren und die entsprechenden Aufbewahrungseinstellungen anwenden lassen können. 
+- **Personen in Ihrer Organisation die Möglichkeit zum manuellen Anwenden einer Aufbewahrungsbezeichnung bieten**, und zwar auf Inhalte in Outlook und Outlook im Web, OneDrive, SharePoint und Microsoft 365-Gruppen. Benutzer wissen häufig am besten, mit welcher Art von Inhalten sie arbeiten, sodass sie diese klassifizieren und die entsprechenden Aufbewahrungseinstellungen anwenden lassen können. 
     
 - **Sie können Aufbewahrungsbezeichnungen automatisch** auf Inhalt anwenden, wenn er bestimmten Bedingungen entspricht: 
     - Der Inhalt enthält bestimmte vertrauliche Informationen.
@@ -138,7 +140,7 @@ Mit Aufbewahrungsbezeichnungen können Sie Folgendes:
 
 - **Beginnen Sie den Aufbewahrungszeitraum ab dem Zeitpunkt der Bezeichnung des Inhalts** für Dokumente auf SharePoint-Websites und in OneDrive-Konten sowie für E-Mail-Elemente mit Ausnahme von Kalenderelementen. Wenn Sie eine Aufbewahrungsbezeichnung mit dieser Konfiguration auf ein Kalenderelement aufbringen, beginnt der Aufbewahrungszeitraum ab dem Zeitpunkt, an dem es gesendet wird.
 
-- **Starten des Aufbewahrungszeitraums, wenn ein Ereignis auftritt** , z. B. Mitarbeiter, die das Unternehmen verlassen oder Verträge ablaufen.
+- **Starten des Aufbewahrungszeitraums, wenn ein Ereignis auftritt**, z. B. Mitarbeiter, die das Unternehmen verlassen oder Verträge ablaufen.
 
 - **Wenden Sie eine Standardaufbewahrungsbezeichnung auf eine Dokumentbibliothek, einen Ordner oder eine Dokumentenmappe** in SharePoint an, sodass alle an diesem Speicherort gespeicherten Dokumente mit der Standardaufbewahrungsbezeichnung versehen werden.
 
@@ -208,7 +210,7 @@ Um bei der Verwendung einer Standardbezeichnung alle möglichen Ergebnisse zu ve
 
 #### <a name="monitoring-retention-labels"></a>Überwachen von Aufbewahrungsbezeichnungen
 
-Verwenden Sie im Microsoft 365 Compliance Center **Datenklassifizierung** > **Übersicht** , um zu überwachen, wie Ihre Aufbewahrungsbezeichnungen in Ihrem Mandanten verwendet werden und um festzustellen, wo sich Ihre bezeichneten Elemente befinden. Weitere Informationen, einschließlich wichtiger Voraussetzungen, finden Sie unter [Kennen Sie Ihre Daten – Überblick über die Datenklassifizierung](data-classification-overview.md).
+Verwenden Sie im Microsoft 365 Compliance Center **Datenklassifizierung** > **Übersicht**, um zu überwachen, wie Ihre Aufbewahrungsbezeichnungen in Ihrem Mandanten verwendet werden und um festzustellen, wo sich Ihre bezeichneten Elemente befinden. Weitere Informationen, einschließlich wichtiger Voraussetzungen, finden Sie unter [Kennen Sie Ihre Daten – Überblick über die Datenklassifizierung](data-classification-overview.md).
 
 Sie können dann mit dem [Inhalts-Explorer](data-classification-content-explorer.md) und dem [Aktivitäten-Explorer](data-classification-activity-explorer.md) in die Details gehen.
 
@@ -243,7 +245,7 @@ Mithilfe der folgenden Tabelle können Sie anhand der Funktionen feststellen, ob
 |Benutzeroberfläche-Anwesenheitsinformationen für Endbenutzer | Nein | Ja |
 |Wird beibehalten, wenn der Inhalt verschoben wird | Nein | Ja, innerhalb Ihres Microsoft 365-Mandanten |
 |Deklarieren eines Elements als Datensatz| Nein | Ja |
-|Start des Aufbewahrungszeitraums: <br /> – Wenn Elemente erstellt oder zuletzt geändert wurden<br /> – Beim Anwenden einer Bezeichnung oder von einem Ereignis ausgehend | <br />Ja <br />Nein | <br />Ja <br /> Ja |
+|Beginnen Sie den Aufbewahrungszeitraum, wenn er mit einer Bezeichnung versehen ist oder auf einem Ereignis basiert | Nein | Ja |
 |Dispositionsüberprüfung | Nein| Ja |
 |Dispositionsnachweise von bis zu 7 Jahren | Nein |Ja, wenn Element als ein Datensatz deklariert ist|
 |Administratoraktivitäten überwachen| Ja | Ja|
