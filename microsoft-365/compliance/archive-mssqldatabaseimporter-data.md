@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen Connector zum Importieren und Archivieren von Daten aus der MS SQL-Datenbank einrichten. Mit diesem Connector können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren. Nach dem Archivieren dieser Daten können Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten von drittanbieterdaten verwenden.
-ms.openlocfilehash: 6e3a4a79845539745bec233acbfaeff22f4ad4a9
-ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
+ms.openlocfilehash: 576ba38616b9a6a9c1b0e7c78c5e8d03c5a0e9df
+ms.sourcegitcommit: 95b85a1fdf43e3f0839483fa22e279262703f15f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49002802"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "49407299"
 ---
-# <a name="set-up-a-connector-to-archive-data-from-ms-sql-database-preview"></a>Einrichten eines Connectors zum Archivieren von Daten aus der MS SQL-Datenbank (Vorschau)
+# <a name="set-up-a-connector-to-archive-data-from-ms-sql-database"></a>Einrichten eines Connectors zum Archivieren von Daten aus der MS SQL-Datenbank
 
 Verwenden Sie einen Globanet-Connector im Microsoft 365 Compliance Center zum Importieren und Archivieren von Daten aus der MS SQL-Datenbank in Benutzerpostfächer in Ihrer Microsoft 365-Organisation. Globanet bietet Ihnen einen MS SQL-Datenbankimport-Konnektor, der zum Erfassen von Elementen aus einer Datenbank mithilfe einer XML-Konfigurationsdatei und zum Importieren dieser Elemente in Microsoft 365 konfiguriert ist. Der Connector wandelt Inhalte aus der MS SQL-Datenbank in ein e-Mail-Nachrichtenformat um und importiert diese Elemente dann in Benutzerpostfächer in Microsoft 365.
 
@@ -39,7 +39,7 @@ In der folgenden Übersicht wird der Vorgang der Verwendung eines Connectors zum
 
 4. Der Connector importiert die konvertierten MS SQL-Datenbankelemente in die Postfächer bestimmter Benutzer, wobei der Wert der *Email* -Eigenschaft der automatischen Benutzerzuordnung wie in [Schritt 3](#step-3-map-users-and-complete-the-connector-setup)beschrieben wird. Ein Unterordner im Posteingangsordner mit dem Namen **MS SQL Database Importer** wird in den Benutzerpostfächern erstellt, und die Elemente werden in diesen Ordner importiert. Der Connector bestimmt anhand des Werts der *Email* -Eigenschaft, in welches Postfach Elemente importiert werden sollen. Jedes Element aus der MS SQL-Datenbank enthält diese Eigenschaft, die mit der e-Mail-Adresse jedes Teilnehmers des Elements aufgefüllt wird.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Vorbereitung
 
 - Erstellen Sie ein Globanet-Merge1-Konto für Microsoft-Connectors. Um ein Konto zu erstellen, wenden Sie sich an den [Globanet-Kunden Support](https://globanet.com/contact-us/). Sie müssen sich bei diesem Konto anmelden, wenn Sie den Connector in Schritt 1 erstellen.
 
@@ -69,13 +69,13 @@ Nachdem Sie auf **& Ende speichern** klicken, wird die Seite **Benutzerzuordnung
 
 Führen Sie die folgenden Schritte aus, um Benutzer zuzuordnen und das Connector-Setup abzuschließen:
 
-1. Aktivieren Sie auf der Seite **MS SQL Database Importer-Benutzer auf Microsoft 365-Benutzer** zuordnen die Option Automatische Benutzerzuordnung. Die MS SQL-Datenbankelemente enthalten eine Eigenschaft mit dem Namen " *e-Mail* ", die e-Mail-Adressen für Benutzer in Ihrer Organisation enthält. Wenn der Connector diese Adresse einem Microsoft 365-Benutzer zuordnen kann, werden die Elemente in das Postfach dieses Benutzers importiert.
+1. Aktivieren Sie auf der Seite **MS SQL Database Importer-Benutzer auf Microsoft 365-Benutzer** zuordnen die Option Automatische Benutzerzuordnung. Die MS SQL-Datenbankelemente enthalten eine Eigenschaft mit dem Namen " *e-Mail*", die e-Mail-Adressen für Benutzer in Ihrer Organisation enthält. Wenn der Connector diese Adresse einem Microsoft 365-Benutzer zuordnen kann, werden die Elemente in das Postfach dieses Benutzers importiert.
 
 2. Klicken Sie auf der Seite **Administrator Zustimmung** auf die Schaltfläche **Zustimmung erteilen** . Sie werden zur Microsoft-Website umgeleitet. Klicken Sie auf **akzeptieren** , um die Zustimmung zu erteilen.
 
    Ihre Organisation muss einwilligen, dass der Office 365 Import Dienst auf Postfachdaten in Ihrer Organisation zugreifen kann. Um die Zustimmung des Administrators bereitzustellen, müssen Sie mit den Anmeldeinformationen eines globalen Administrators von Microsoft 365 angemeldet sein und dann die Zustimmungs Anforderung annehmen. Wenn Sie nicht als globaler Administrator angemeldet sind, können Sie zu [dieser Seite](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) wechseln und sich mit globalen Administratoranmeldeinformationen anmelden, um die Anforderung zu akzeptieren.
 
-3. Klicken Sie auf **weiter** , überprüfen Sie Ihre Einstellungen, und wechseln Sie zur Seite **Daten Konnektoren** , um den Fortschritt des Importvorgangs für den neuen Connector anzuzeigen.
+3. Klicken Sie auf **weiter**, überprüfen Sie Ihre Einstellungen, und wechseln Sie zur Seite **Daten Konnektoren** , um den Fortschritt des Importvorgangs für den neuen Connector anzuzeigen.
 
 ## <a name="step-4-monitor-the-ms-sql-database-importer-connector"></a>Schritt 4: Überwachen des MS SQL-Datenbankimport Modul-Connectors
 

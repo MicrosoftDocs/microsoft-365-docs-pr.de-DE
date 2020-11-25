@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen Connector zum Importieren und Archivieren von CellTrust-Daten aus Globanet in Microsoft 365 einrichten. Mit diesem Connector können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren. Nach dem Archivieren dieser Daten können Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten von drittanbieterdaten verwenden.
-ms.openlocfilehash: c5ed8af29ad3b81b19e80cfe98702b5e357d9815
-ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
+ms.openlocfilehash: 2952e4e36a73b53fba61af9f38341a0b69136363
+ms.sourcegitcommit: 95b85a1fdf43e3f0839483fa22e279262703f15f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49002757"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "49407269"
 ---
-# <a name="set-up-a-connector-to-archive-celltrust-data-preview"></a>Einrichten eines Connectors zum Archivieren von CellTrust-Daten (Vorschau)
+# <a name="set-up-a-connector-to-archive-celltrust-data"></a>Einrichten eines Connectors zum Archivieren von CellTrust-Daten
 
 Verwenden Sie einen Globanet-Connector im Microsoft 365 Compliance Center, um Daten aus der CellTrust-Plattform in Benutzerpostfächer in Ihrer Microsoft 365-Organisation zu importieren und zu archivieren. Globanet stellt einen [CellTrust](https://globanet.com/celltrust/) -Connector bereit, der zum Erfassen von Elementen aus der Drittanbieter-Datenquelle (regelmäßig) konfiguriert ist und diese Elemente in Microsoft 365 importiert. Der Connector wandelt den Inhalt von SMS-Nachrichten aus CellTrust-Konten in ein e-Mail-Nachrichtenformat um und importiert diese Elemente dann in das Postfach des Benutzers in Microsoft 365.
 
@@ -39,7 +39,7 @@ In der folgenden Übersicht wird der Vorgang der Verwendung eines Connectors zum
 
 4. Der automatische Benutzerzuordnung als Connector importiert Elemente in die Postfächer bestimmter Benutzer mithilfe des Werts der *e-Mail* -Eigenschaft des in [Schritt 3](#step-3-map-users-and-complete-the-connector-setup)beschriebenen. Ein Unterordner im Posteingangsordner mit dem Namen **CellTrust** wird in den Benutzerpostfächern erstellt, und die Nachrichtenelemente werden in diesen Ordner importiert. Der Connector bestimmt anhand des Werts der *Email* -Eigenschaft, in welches Postfach Elemente importiert werden sollen. Jedes CellTrust-Element enthält diese Eigenschaft, die mit der e-Mail-Adresse jedes Teilnehmers aufgefüllt wird.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Vorbereitung
 
 - Erstellen Sie ein Merge1-Konto für Microsoft-Connectors. Um ein Konto zu erstellen, wenden Sie sich an den [Globanet-Kunden Support](https://globanet.com/contact-us/). Sie müssen sich bei diesem Konto anmelden, wenn Sie den Connector in Schritt 1 erstellen.
 
@@ -69,13 +69,13 @@ Nachdem Sie auf **& Ende speichern** klicken, wird die Seite **Benutzerzuordnung
 
 Führen Sie die folgenden Schritte aus, um Benutzer zuzuordnen und den Connector zu vervollständigen, der im Microsoft 365 Compliance Center eingerichtet wurde:
 
-1. Aktivieren Sie auf der Seite CellTrust-Benutzer auf **Microsoft 365** -Benutzer zuordnen die Option Automatische Benutzerzuordnung. Die CellTrust-Elemente enthalten eine Eigenschaft mit dem Namen " *e-Mail* ", die e-Mail-Adressen für Benutzer in Ihrer Organisation enthält. Wenn der Connector diese Adresse einem Microsoft 365-Benutzer zuordnen kann, werden die Elemente in das Postfach dieses Benutzers importiert.
+1. Aktivieren Sie auf der Seite CellTrust-Benutzer auf **Microsoft 365** -Benutzer zuordnen die Option Automatische Benutzerzuordnung. Die CellTrust-Elemente enthalten eine Eigenschaft mit dem Namen " *e-Mail*", die e-Mail-Adressen für Benutzer in Ihrer Organisation enthält. Wenn der Connector diese Adresse einem Microsoft 365-Benutzer zuordnen kann, werden die Elemente in das Postfach dieses Benutzers importiert.
 
 2. Klicken Sie auf der Seite **Administrator Zustimmung** auf die Schaltfläche **Zustimmung erteilen** . Sie werden zur Microsoft-Website umgeleitet. Klicken Sie auf **akzeptieren** , um die Zustimmung zu erteilen.
 
    Ihre Organisation muss einwilligen, dass der Office 365 Import Dienst auf Postfachdaten in Ihrer Organisation zugreifen kann. Um die Zustimmung des Administrators bereitzustellen, müssen Sie mit den Anmeldeinformationen eines globalen Administrators von Microsoft 365 angemeldet sein und dann die Zustimmungs Anforderung annehmen. Wenn Sie nicht als globaler Administrator angemeldet sind, können Sie zu [dieser Seite](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) wechseln und sich mit globalen Administratoranmeldeinformationen anmelden, um die Anforderung zu akzeptieren.
 
-3. Klicken Sie auf **weiter** , überprüfen Sie Ihre Einstellungen, und wechseln Sie zur Seite **Daten Konnektoren** , um den Fortschritt des Importvorgangs für den neuen Connector anzuzeigen.
+3. Klicken Sie auf **weiter**, überprüfen Sie Ihre Einstellungen, und wechseln Sie zur Seite **Daten Konnektoren** , um den Fortschritt des Importvorgangs für den neuen Connector anzuzeigen.
 
 ## <a name="step-4-monitor-the-celltrust-connector"></a>Schritt 4: Überwachen des CellTrust-Connectors
 

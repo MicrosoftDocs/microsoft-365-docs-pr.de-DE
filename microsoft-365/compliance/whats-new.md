@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Unabhängig davon, ob neue Lösungen zum Compliance Center hinzugefügt werden, vorhandene Funktionen auf der Grundlage Ihres Feedbacks aktualisiert werden oder eine aktualisierte Dokumentation bereitgestellt wird, hilft Ihnen Microsoft 365, die ständig wechselnde Compliance-Landschaft zu überwachen. Finden Sie heraus, was wir diesen Monat vorhaben.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 27228f37673eee64ae44de9b88b7505d1958c05f
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 1d4583e5216a369801c48a47b488a35fc4e62b37
+ms.sourcegitcommit: 95b85a1fdf43e3f0839483fa22e279262703f15f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376608"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "49407339"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Neuerungen in Microsoft 365 Compliance
 
@@ -93,7 +93,7 @@ Sehen Sie sich das Video unten an, um zu erfahren, wie Compliance-Manager die Co
 
 ### <a name="sensitivity-labels"></a>Vertraulichkeitsbezeichnungen
 
-[Unterstützung für Kunden der US-Regierung](https://docs.microsoft.com/en-us/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description). Vertraulichkeits Bezeichnungen werden jetzt für gcc-, gcc High-und DoD-Kunden unterstützt, nur für den Azure Information Protection Unified Labeling-Client und-Scanner.
+[Unterstützung für Kunden der US-Regierung](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description). Vertraulichkeits Bezeichnungen werden jetzt für gcc-, gcc High-und DoD-Kunden unterstützt, nur für den Azure Information Protection Unified Labeling-Client und-Scanner.
 
 ### <a name="trainable-classifiers"></a>Trainierbare Klassifizierungsmerkmale
 
