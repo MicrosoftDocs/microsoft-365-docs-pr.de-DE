@@ -1,6 +1,6 @@
 ---
 title: Priorisieren von Vorfällen in Microsoft 365 Defender
-description: Informationen zum Priorisieren von Vorfällen von der Vorfall Warteschlange in Microsoft 365 Defender
+description: Informationen zum Filtern von Vorfällen aus der Vorfall Warteschlange in Microsoft 365 Defender
 keywords: Vorfall, Warteschlange, Übersicht, Geräte, Identitäten, Benutzer, Postfach, E-Mail, Vorfälle
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 4369d51ed740af652be632ba0b8752c708d6c719
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: e587004fbb3bc6defab985cea9b427f64b3aab35
+ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877219"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49409255"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Priorisieren von Vorfällen in Microsoft 365 Defender
 
@@ -38,7 +38,7 @@ ms.locfileid: "48877219"
 
 
 
-Microsoft 365 Defender wendet Korrelationsanalysen an und aggregiert alle zugehörigen Warnungen und Untersuchungen aus verschiedenen Produkten zu einem einzigen Vorfall. Microsoft 365 Defender löst auch eindeutige Warnungen für Aktivitäten aus, die nur als böswillig identifiziert werden können, wenn die End-to-End-Sichtbarkeit vorliegt, die Microsoft 365 Defender über das gesamte Anwesen und die Produktsuite verfügt. Auf diese Weise erzählt Microsoft 365 Defender die breitere Angriffs Geschichte, sodass ein Security Operations Analyst komplexe Bedrohungen in der gesamten Organisation verstehen und bewältigen kann.
+Microsoft 365 Defender wendet Korrelationsanalysen an und aggregiert alle zugehörigen Warnungen und Untersuchungen aus verschiedenen Produkten zu einem einzigen Vorfall. Microsoft 365 Defender löst auch eindeutige Warnungen für Aktivitäten aus, die nur als böswillig identifiziert werden können, wenn die End-to-End-Sichtbarkeit vorliegt, die Microsoft 365 Defender über das gesamte Anwesen und die Produktsuite verfügt. Diese Ansicht verleiht Ihrem Security Operations Analyst eine umfassendere Angriffs Geschichte, die Ihnen hilft, komplexe Bedrohungen in der gesamten Organisation besser zu verstehen und zu bewältigen.
 
 
 In der **Vorfallswarteschlange** wird eine Auflistung von Vorfällen angezeigt, die auf allen Geräten, für alle Benutzer und in allen Postfächern gekennzeichnet wurden. Sie können damit Vorfälle sortieren, um eine fundierte Entscheidung im Hinblick auf eine geeignete Reaktion auf einen Cyberangriff zu treffen.
@@ -64,7 +64,7 @@ Die Vorfall Warteschlange macht auch mehrere Filteroptionen verfügbar, die Ihne
 ### <a name="assigned-to"></a>Zugewiesen an
 Sie können festlegen, dass Warnungen angezeigt werden, die Ihnen zugewiesen sind oder die von Automatisierung behandelt werden.
 
-### <a name="categories"></a>Categories
+### <a name="categories"></a>Kategorien
 Wählen Sie Kategorien aus, um sich auf bestimmte Taktiken, Techniken oder Angriffs Komponenten zu konzentrieren. 
 
 ### <a name="classification"></a>Klassifizierung
@@ -100,8 +100,7 @@ Der Schweregrad eines Vorfalls deutet auf die Auswirkungen hin, die er auf Ihre 
 ### <a name="status"></a>Status
 Sie können die Liste der Vorfälle basierend auf deren Status einschränken, um zu sehen, welche Vorgänge aktiv oder aufgelöst sind.
 
->[!IMPORTANT]
->Die Filter "Klassifizierung", "Gerätegruppe", "Ermittlungsstatus" und "BS-Plattform" sind derzeit nur in der öffentlichen Vorschau verfügbar.
+
 
 
 ## <a name="next-steps"></a>Nächste Schritte

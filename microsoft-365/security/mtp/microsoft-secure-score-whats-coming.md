@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 3e9a8b34f8f112cadc0377dd73ba846c88b8604c
-ms.sourcegitcommit: aa8d2de6ffac0157fffd14d0ea7f51ef0c287607
+ms.openlocfilehash: e42c65fdb4d409c1da7b85fbe7eca13170b9b974
+ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49374007"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49409233"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Was kommt mit Microsoft Secure Score
 
@@ -33,6 +33,17 @@ Microsoft Secure Score finden Sie https://security.microsoft.com/securescore im 
 ## <a name="proposed-changes"></a>Vorgeschlagene Änderungen
 
 Wir nehmen in naher Zukunft einige Änderungen vor, um [Microsoft Secure Score](microsoft-secure-score.md) zu einem besseren Vertreter ihrer Sicherheitsposition zu machen und die Benutzerfreundlichkeit zu verbessern. Ihre Punktzahl und die maximal mögliche Punktzahl können sich ändern.
+
+### <a name="december-2020"></a>Dezember 2020
+
+Hinzufügen von 6 Konten bezogenen Verbesserungs Aktionen für Microsoft Defender für Endpoint (zuvor Microsoft Defender ATP):
+
+- ' Minimale Kennwortlänge ' auf ' 14 oder mehr Zeichen ' festlegen
+- Legen Sie "Kennwortverlauf erzwingen" auf "24 oder mehr Kennwort (en)" fest.
+- "Maximales Kennwortalter" auf "60 oder weniger Tage, aber nicht auf 0" festlegen
+- "Minimales Kennwortalter" auf "1 oder mehr Tage (en)" festlegen
+- Deaktivieren des integrierten Administrator Kontos
+- Deaktivieren des integrierten Gastkontos
 
 ### <a name="november-2020"></a>November 2020
 
