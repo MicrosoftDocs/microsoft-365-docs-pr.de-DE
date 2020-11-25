@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Überwachen und Verwalten der Entsorgung von Inhalten, unabhängig davon, ob Sie die Löschungsprüfung verwenden oder Inhalte automatisch entsprechend den von Ihnen konfigurierten Einstellungen gelöscht werden.
-ms.openlocfilehash: dfea1cfece8a9faccced134cf30923527bd241f5
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: 9900bbc58818a98ad41f4f796184ccf21041bbfe
+ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941366"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49409212"
 ---
 # <a name="disposition-of-content"></a>Disposition von Inhalten
 
@@ -41,6 +41,8 @@ Wenn Sie Benutzern diese erforderliche Dispositionsverwaltungsrolle erteilen mö
 
 > [!NOTE]
 > Sogar einem globalen Administrator muss die Rolle **Dispositionsverwaltung** zugewiesen werden. 
+
+Um den Inhalt von Elementen während des Dispositionsvorgangs anzuzeigen, fügen Sie zusätzlich Benutzer zu den folgenden beiden Rollengruppen hinzu: **Inhalts-Explorer-Inhaltsanzeige** und **Inhalts-Explorer-Listenanzeige**. Verfügen Benutzer nicht über die Berechtigungen dieser Rollengruppen, können sie zwar trotzdem eine Löschungsprüfungsaktion auswählen, um die Löschungsprüfung abzuschließen, müssen dies jedoch tun, ohne den Inhalt des Artikels im Compliance Center anzeigen zu können.
 
 Anweisungen finden Sie unter [Gewähren des Zugriffs auf das Office 365 Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
@@ -64,7 +66,7 @@ Wenn am Ende des Aufbewahrungszeitraums eine Löschungsprüfung ausgelöst wird:
   
 - Die von Ihnen ausgewählten Personen erhalten eine E-Mail-Benachrichtigung, dass für sie Inhalte zur Überprüfung bereitstehen. Bei diesen Prüfern kann es sich um einzelne Benutzer oder E-Mail-aktivierte Sicherheitsgruppen handeln. Beachten Sie, dass Benachrichtigungen wöchentlich gesendet werden.
     
-- Die Bearbeiter wechseln im Microsoft 365 Compliance Center zur Registerkarte **Disposition** , um den Inhalt zu überprüfen und zu entscheiden, ob er endgültig gelöscht, der Aufbewahrungszeitraum verlängert oder ein anderes Aufbewahrungsetikett angewendet werden soll.
+- Die Bearbeiter wechseln im Microsoft 365 Compliance Center zur Registerkarte **Disposition**, um den Inhalt zu überprüfen und zu entscheiden, ob er endgültig gelöscht, der Aufbewahrungszeitraum verlängert oder ein anderes Aufbewahrungsetikett angewendet werden soll.
 
 Eine Löschungsprüfung kann Inhalte in Exchange-Postfächern, SharePoint-Websites, OneDrive-Konten und Microsoft 365-Gruppen enthalten. Inhalte, die an diesen Speicherorten auf eine Löschungsprüfung warten, werden erst gelöscht, nachdem ein Prüfer die endgültige Löschung der Inhalte verfügt hat.
 
@@ -124,7 +126,7 @@ Inhalte, für die eine Löschungsprüfung ansteht, werden erst gelöscht, nachde
 
 ## <a name="disposition-of-records"></a>Disposition von Datensätzen
 
-Verwenden Sie die Registerkarte **Disposition** von der Seite **Datensatzverwaltung** , um Datensätze zu identifizieren, die jetzt automatisch oder nach einer Löschungsprüfung gelöscht werden. Diese Elemente zeigen **Verworfene Datensätze** in der Spalte **Typ** an. Beispiel:
+Verwenden Sie die Registerkarte **Disposition** von der Seite **Datensatzverwaltung**, um Datensätze zu identifizieren, die jetzt automatisch oder nach einer Löschungsprüfung gelöscht werden. Diese Elemente zeigen **Verworfene Datensätze** in der Spalte **Typ** an. Beispiel:
 
 ![Elemente, die ohne eine Löschungsprüfung verworfen wurden](../media/records-disposed2.png)
 
@@ -133,7 +135,7 @@ Elemente, die in der Registerkarte **Verworfene Elemente** für Datensatzbezeich
 > [!NOTE]
 > Diese Funktionalität basiert auf Informationen aus dem [einheitlichen Überwachungsprotokoll](search-the-audit-log-in-security-and-compliance.md) und erfordert daher, dass die Überwachung [aktiviert und durchsuchbar ist](turn-audit-log-search-on-or-off.md) damit die entsprechenden Ereignisse erfasst werden.
 
-Suchen Sie für die Überwachung nach der **gelöschten Datei, die als Datensatz** gekennzeichnet ist.
+Suchen Sie für Überwachungen in der Kategorie **Datei- und Seitenaktivitäten** nach **Gelöschte Datei als Datensatz gekennzeichnet**. Dieses Überwachungsereignis gilt für Dokumente und E-Mails.
 
 ## <a name="filter-and-export-the-views"></a>Filtern und Exportieren von Ansichten
 
