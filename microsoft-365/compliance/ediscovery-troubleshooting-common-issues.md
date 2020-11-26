@@ -19,12 +19,12 @@ ms.assetid: ''
 description: Erfahren Sie mehr über die grundlegenden Schritte zur Problembehandlung, die Sie zur Lösung häufig auftretender Probleme in Office 365 eDiscovery ausführen können.
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5c9d917306c1a4ffd0dd1e11e1dd87c135e94f05
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: a2db7fac04f29587f451b8feff5b641624e0cf45
+ms.sourcegitcommit: 8ad481ed61cb6dabf8afb0fb04296666fa166450
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545953"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "49422864"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Untersuchen, beheben und Beheben allgemeiner eDiscovery-Probleme
 
@@ -113,25 +113,25 @@ Beim Exportieren von Suchergebnissen aus der eDiscovery-oder Inhaltssuche im Sec
 
 ### <a name="resolution"></a>Lösung
 
-1. Versuchen Sie es mit den Schritten im Artikel [increase Download speeds](https://docs.microsoft.com/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results).
-
-2. Wenn Sie weiterhin Probleme haben, stellen Sie eine Verbindung mit [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) her, und führen Sie dann den folgenden Befehl aus:
+1. Stellen Sie eine Verbindung mit [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) her, und führen Sie dann den folgenden Befehl aus:
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
    ```
 
-3. Ermitteln Sie die Menge der Daten, die in den searchresults-und SearchStatistics-Parametern heruntergeladen werden sollen.
+2. Ermitteln Sie die Menge der Daten, die in den searchresults-und SearchStatistics-Parametern heruntergeladen werden sollen.
 
-4. Führen Sie den folgenden Befehl aus:
+3. Führen Sie den folgenden Befehl aus:
 
    ```powershell
    Get-ComplianceSearchAction | FL
    ```
 
-5. Suchen Sie im Feld Ergebnisse die Daten, die exportiert wurden, und zeigen Sie alle aufgetretenen Fehler an.
+4. Suchen Sie im Feld Ergebnisse die Daten, die exportiert wurden, und zeigen Sie alle aufgetretenen Fehler an.
 
-6. Überprüfen Sie die Datei Trace. log, die sich in dem Verzeichnis befindet, in das Sie den Inhalt exportiert haben, auf Fehler.
+5. Überprüfen Sie die Datei Trace. log, die sich in dem Verzeichnis befindet, in das Sie den Inhalt exportiert haben, auf Fehler.
+
+6. Wenn Sie weiterhin Probleme haben, sollten Sie die Suche teilen, die eine große Gruppe von Ergebnissen in kleinere suchen zurückgeben. Beispielsweise können Sie Datumsbereiche in Suchabfragen verwenden, um einen kleineren Datensatz von Ergebnissen zurückzugeben, die schneller heruntergeladen werden können.
 
 ## <a name="errorissue-internal-server-error-500-occurred"></a>Fehler/Problem: "Interner Serverfehler (500) aufgetreten"
 

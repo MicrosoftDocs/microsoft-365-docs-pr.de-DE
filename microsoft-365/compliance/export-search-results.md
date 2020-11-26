@@ -20,14 +20,14 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: 'Exportieren Sie die Suchergebnisse aus einer Inhaltssuche im Compliance Center des Sicherheits & auf einen lokalen Computer. E-Mail-Ergebnisse werden als PST-Dateien exportiert. Inhalte aus SharePoint-und OneDrive für Unternehmen-Websites werden als systemeigene Office-Dokumente exportiert. '
+description: Exportieren Sie die Suchergebnisse aus einer Inhaltssuche im Microsoft 365 Compliance Center auf einen lokalen Computer. E-Mail-Ergebnisse werden als PST-Dateien exportiert. Inhalte aus SharePoint-und OneDrive für Unternehmen-Websites werden als systemeigene Office-Dokumente exportiert.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d1d657c7dc004bc587a8934292b6117ac4e023a0
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 48f5cab4c25199873c795cdfb9afac54f4f402a0
+ms.sourcegitcommit: 8ad481ed61cb6dabf8afb0fb04296666fa166450
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087332"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "49422874"
 ---
 # <a name="export-content-search-results"></a>Exportieren von Inhaltssuchergebnissen
 
@@ -57,7 +57,9 @@ Das Exportieren der Ergebnisse einer Inhaltssuche umfasst das Vorbereiten der Er
   > <sup>1</sup> Microsoft stellt keine Drittanbietererweiterungen oder Add-ons für ClickOnce-Anwendungen her. Das Exportieren von Suchergebnissen mit einem nicht unterstützten Browser mit Erweiterungen oder Add-ons von Drittanbietern wird nicht unterstützt.<br/>
   > <sup>2</sup> aufgrund der letzten Änderungen an Microsoft Edge ist die ClickOnce-Unterstützung standardmäßig nicht mehr aktiviert. Anweisungen zum Aktivieren der ClickOnce-Unterstützung in Edge finden Sie unter [Verwenden des eDiscovery-Export Tools in Microsoft Edge](configure-edge-to-export-search-results.md).
   
-- Wenn Sie Suchergebnisse herunterladen (in Schritt 2 beschrieben), können Sie die Downloadgeschwindigkeit durch Konfigurieren einer Windows-Registrierungseinstellung auf dem Computer, den Sie zum Exportieren der Suchergebnisse verwenden, verbessern. Weitere Informationen finden Sie unter [höhere Downloadgeschwindigkeit beim Exportieren von eDiscovery-Suchergebnissen aus Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
+- Es wird empfohlen, Suchergebnisse auf einen lokalen Computer herunterzuladen. Wenn Sie jedoch die Firewall oder Proxy Infrastruktur Ihres Unternehmens vor Problemen beim Herunterladen von Suchergebnissen ausschließen möchten, können Sie das Herunterladen von Suchergebnissen auf einen virtuellen Desktop außerhalb Ihres Netzwerks überprüfen. Dadurch werden möglicherweise Timeouts verringert, die in Azure-Datenverbindungen auftreten, wenn eine große Anzahl von Dateien exportiert wird. Weitere Informationen zu virtuellen Desktops finden Sie unter [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop). 
+
+- Um die Leistung beim Herunterladen von Suchergebnissen zu verbessern, sollten Sie die Suche unterteilen, die eine große Menge von Ergebnissen in kleinere suchen zurückgeben. Beispielsweise können Sie Datumsbereiche in Suchabfragen verwenden, um einen kleineren Datensatz von Ergebnissen zurückzugeben, die schneller heruntergeladen werden können.
   
 - Wenn Sie Suchergebnisse exportieren, werden die Daten vorübergehend in einem von Microsoft bereitgestellten Azure-Speicherort in der Microsoft-Cloud gespeichert, bevor Sie auf Ihren lokalen Computer heruntergeladen werden. Stellen Sie sicher, dass Ihre Organisation eine Verbindung mit dem Endpunkt in Azure herstellen kann, also **\* . BLOB.Core.Windows.net** (der Platzhalter stellt einen eindeutigen Bezeichner für den Export dar). Die Suchergebnis Daten werden zwei Wochen nach ihrer Erstellung aus dem Azure-Speicherort gelöscht. 
   
@@ -135,8 +137,6 @@ Weitere Informationen zum Herunterladen der exportierten Suchergebnisse finden S
 ## <a name="step-2-download-the-search-results"></a>Schritt 2: Herunterladen der Suchergebnisse
 
 Der nächste Schritt besteht darin, die Suchergebnisse vom Azure-Speicherort auf Ihren lokalen Computer herunterzuladen.
-  
-Wie bereits erläutert, können Sie die Downloadgeschwindigkeit durch Konfigurieren einer Windows-Registrierungseinstellung auf dem Computer, den Sie zum Exportieren der Suchergebnisse verwenden, verbessern. Weitere Informationen finden Sie unter [höhere Downloadgeschwindigkeit beim Exportieren von eDiscovery-Suchergebnissen aus Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
   
 1. Klicken Sie auf der Seite **Inhaltssuche** auf die Registerkarte **Exporte** . 
   
