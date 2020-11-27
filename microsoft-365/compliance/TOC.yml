@@ -475,11 +475,9 @@
               href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
         - name: Konfigurieren der Inhaltssuche
           items:
-            - name: Konfigurieren der Berechtigungsfilterung für die Inhaltssuche
+            - name: Berechtigungsfilter für die Inhaltssuche konfigurieren
               href: permissions-filtering-for-content-search.md
-            - name: Steigern der Downloadgeschwindigkeit beim Exportieren von Suchergebnissen
-              href: increase-download-speeds-when-exporting-ediscovery-results.md
-            - name: Ändern der Größe von PST-Dateien beim Exportieren von Suchergebnissen
+            - name: Größe von PST-Dateien für den Export von Suchergebnissen ändern
               href: change-the-size-of-pst-files-when-exporting-results.md
             - name: Deaktivieren von Berichten beim Exportieren von Suchergebnissen
               href: disable-reports-when-you-export-content-search-results.md
