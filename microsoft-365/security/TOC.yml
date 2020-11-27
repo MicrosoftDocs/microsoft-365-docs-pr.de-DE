@@ -139,8 +139,10 @@
                       href: mtp/advanced-hunting-expert-training.md
                     - name: Verwenden freigegebener Abfragen
                       href: mtp/advanced-hunting-shared-queries.md
-                    - name: 'Suchen auf Geräten, in E-Mails, Apps und Identitäten'
+                    - name: 'Suche über Geräte, E-Mails, Apps und Identitäten hinweg'
                       href: mtp/advanced-hunting-query-emails-devices.md
+                    - name: Suche nach Ransomware
+                      href: mtp/advanced-hunting-find-ransomware.md
                     - name: Übergang von Defender für Endpunkt
                       href: mtp/advanced-hunting-migrate-from-mdatp.md
                 - name: Arbeiten mit Abfrageergebnissen
