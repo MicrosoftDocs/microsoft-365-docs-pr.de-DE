@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie mehr über das Deployment Lab Kit für Windows und Office und wo Sie darauf zugreifen.
-ms.openlocfilehash: bf49a815c0d3d952187f863120865ab3aa4674fc
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: 65c251b2cd161687eb0a2e9c7ece29f453fcaae8
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171410"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519622"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Lab-Kit für Windows und Office Deployment
 
@@ -34,9 +34,9 @@ Dieses Kit wird dringend für Unternehmen empfohlen, die sich auf Windows 8 Upgr
 
 Die Übung umfasst eine automatisch bereitgestellte virtuelle Umgebung, einschließlich Domänen-Desktop-Clients, Domänencontroller, Internetgateway und einer vollständig konfigurierten Configuration Manager-Instanz. Das Lab enthält die neuesten Evaluierungsversionen der folgenden Produkte:
 
-  - NEU! Windows 10 Enterprise, Version 2004
+  - NEU! Windows 10 Enterprise, Version 20H2
   - Windows 7 Enterprise
-  - NEU! Microsoft Endpoint Configuration Manager, Version 2002
+  - Microsoft Endpoint Configuration Manager, Version 2002
   - Windows Assessment and Deployment Kit für Windows 10
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V)
@@ -90,11 +90,11 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
 ### <a name="deploy-windows-virtual-desktop"></a>Bereitstellen des virtuellen Windows-Desktops  
 - Vorbereiten, bereitstellen, optimieren
  
-### <a name="download-the-windows-and-office-deployment-lab-kit"></a>Herunterladen des Deployment Lab Kit für Windows und Office
+## <a name="download-the-windows-and-office-deployment-lab-kit"></a>Herunterladen des Deployment Lab Kit für Windows und Office
 
 [Herunterladen des Deployment Lab Kit für Windows und Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-*Verwenden Sie eine breite Bandbreite, um diese Inhalte herunterzuladen, um Ihre Download Umgebung zu verbessern und 30-45 Minuten für die automatische Bereitstellung zu ermöglichen. Die Lab-Umgebung erfordert mindestens 16 GB verfügbaren Arbeitsspeicher und 150 GB freien Speicherplatz. Für eine optimale Leistung wird 32 GB verfügbarer Arbeitsspeicher empfohlen. Das Lab läuft am 5. Dezember 2020 ab. Eine neue Version wird vor Ablauf veröffentlicht.*
+* Bitte verwenden Sie eine breite Bandbreite, um diese Inhalte herunterzuladen, um Ihr Download Erlebnis zu verbessern und 30-45 Minuten für die automatische Bereitstellung zu ermöglichen. Die Lab-Umgebung erfordert mindestens 16 GB verfügbaren Arbeitsspeicher und 300 GB freien Speicherplatz. Für eine optimale Leistung wird 32 GB verfügbarer Arbeitsspeicher empfohlen. Das Lab läuft im Februar 2020. Eine neue Version wird vor Ablauf veröffentlicht.
 
 ## <a name="additional-guidance"></a>Zusätzliche Anleitung
 

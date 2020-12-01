@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Wie Datenschutz mit dem Produktivitäts Ergebnis geschützt wird.
-ms.openlocfilehash: 8686c7c86249a408fe8d4fda14c2ae23a168cafe
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+ms.openlocfilehash: c88886e9d1470bda48d023b77472e7dd296508a0
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999406"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519353"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>Datenschutz-Steuerelemente für Produktivitäts Bewertung
 
@@ -54,7 +54,7 @@ Um das gesamte Produktivitäts Ergebnis anzuzeigen, einschließlich Metriken auf
 
 Weisen Sie jeder Person, die für die Änderungsverwaltung und-Einführung zuständig ist, die Rolle "berichtsleser" zu. Diese Rolle ermöglicht Ihnen den Zugriff auf die vollständige Benutzeroberfläche, einschließlich Metriken auf Mandantenebene und Details auf einzelnen Ebenen.
 
-Der Bericht "Personen Erlebnisse" enthält Details zur Benutzeraktivität für jede Kategorie-Detailseite. Weisen Sie eine benutzerdefinierte Rolle mit dem Namen Verwendungs Zusammenfassungsberichte Leser zu (verfügbar ab 29. Oktober 2020), um den Zugriff auf die aggregierten Metriken der Personen Erfahrungen zu ermöglichen. Diese Rolle muss über PowerShell-Cmdlets zugewiesen werden, bis Sie vom Microsoft Admin Center auf 11/15/2020 zugeordnet werden kann.
+Der Bericht "Personen Erlebnisse" enthält Details zur Benutzeraktivität für jede Kategorie-Detailseite. Weisen Sie eine benutzerdefinierte Rolle mit dem Namen Verwendungs Zusammenfassungsberichte Leser zu (verfügbar ab 29. Oktober 2020), um den Zugriff auf die aggregierten Metriken der Personen Erfahrungen zu ermöglichen. Diese Rolle muss über PowerShell-Cmdlets zugewiesen werden, bis Sie später in diesem Jahr vom Microsoft Admin Center zugeordnet wird.
 
 So weisen Sie die Leserrolle "Verwendungs Zusammenfassungsberichte" mit PowerShell zu:
 
@@ -62,6 +62,7 @@ So weisen Sie die Leserrolle "Verwendungs Zusammenfassungsberichte" mit PowerShe
 
 ```powershell
 Connect-AzureAD
+Enable-AzureADDirectoryRole -RoleTemplateId '75934031-6c7e-415a-99d7-48dbd49e875e'
 $role=Get-AzureADDirectoryRole -Filter "roleTemplateId eq '75934031-6c7e-415a-99d7-48dbd49e875e'"
 Get-AzureADDirectoryRoleMember -ObjectId $role.ObjectId
 $u=Get-AzureADUser -ObjectId <user upn>
@@ -76,7 +77,7 @@ Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $u.ObjectId
 
 Damit die Daten, die für alle Berichte erfasst werden, anonym sind, müssen Sie ein globaler Administrator sein. Mit dieser Aktion werden identifizierbare Informationen wie Benutzer-, Gruppen-und Websitenamen in allen Berichten (einschließlich Produktivitäts Bewertung und Microsoft 365-Nutzung) ausgeblendet.
 
-1. Wechseln Sie im Admin Center zu den **Einstellungen** der   >   **org** -Einstellungen, und wählen Sie unter **Dienste** die Registerkarte **Berichte** aus.
+1. Wechseln Sie im Admin Center zu den **Einstellungen** der   >   **org**-Einstellungen, und wählen Sie unter **Dienste** die Registerkarte **Berichte** aus.
 2. Wählen Sie  **Berichte** aus, und wählen Sie dann aus, um  **Anonyme Bezeichner für Benutzer-, Gruppen-und Websitenamen in Produktivitäts Bewertung und Nutzungsberichten anzuzeigen**. Diese Einstellung wird sowohl auf die Verwendungsberichte als auch auf die Vorlagen-App angewendet.
 3. Wählen Sie  **Save Changes** aus.
 
@@ -86,7 +87,7 @@ Damit die Daten, die für alle Berichte erfasst werden, anonym sind, müssen Sie
 
 Wenn die Produktivitäts Bewertung allgemein verfügbar ist, können Sie auch den Bereich mit den Personen Erfahrungen mit der Produktivitäts Bewertung deaktivieren. Wenn Sie sich entscheiden, kann niemand aus der Organisation diese Metriken anzeigen, und Ihre Organisation wird aus allen Berechnungen entfernt, die Kommunikation, Besprechungen, Zusammenarbeit, Inhalts Zusammenarbeit und Mobilität beinhalten.
 
-1. Wechseln Sie im Admin Center zu den **Einstellungen** der   >   **org** -Einstellungen, und wählen Sie unter **Dienste** die Registerkarte **Berichte** aus.
+1. Wechseln Sie im Admin Center zu den **Einstellungen** der   >   **org**-Einstellungen, und wählen Sie unter **Dienste** die Registerkarte **Berichte** aus.
 2. Wählen Sie  **Berichte** aus, und aktivieren Sie dann das Kontrollkästchen  **zulassen, dass Microsoft 365-Verwendungsdaten für personenbezogene Einblicke verwendet werden**. Um zu erfahren, wie Sie die Einstellungen für die Datenfreigabe für die Endpunktanalyse im InTune-Konfigurations-Manager ändern, klicken Sie auf weitere **Informationen**.
 3. Wählen Sie  **Save Changes** aus.
 

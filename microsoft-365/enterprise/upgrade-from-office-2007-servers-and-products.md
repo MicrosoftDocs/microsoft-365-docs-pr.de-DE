@@ -24,18 +24,18 @@ f1.keywords:
 - NOCSH
 description: Dieser Artikel enthält Ressourcen, die Ihnen beim Upgrade von Office 2007-Servern und-Clients helfen, da die Unterstützung für Office 2007 beendet wurde.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3dc33d03c32880627f3c85d6212756f45548ce0b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 28fa1d56ef66297eaf69d2d11b720e3de2d668f7
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690254"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519785"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Ressourcen für das Upgrade von Office 2007-Servern und-Clients
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Wenn Sie Office 2007-Produkte und-Dienste verwenden, ist die Unterstützung für diese Anwendungen beendet. Während Sie Ihr Upgrade planen, ist es eine gute Zeit, in die Microsoft-Cloud zu wechseln, beginnend mit Microsoft 365. Verwenden Sie diesen Artikel als Ausgangspunkt, um Ihre Optionen zu überprüfen und Ihr Upgrade zu planen.
+Wenn Sie Office 2007-Produkte und-Dienste verwenden, beachten Sie, dass die Unterstützung für diese Anwendungen beendet wurde. Ziehen Sie in die Microsoft-Cloud, beginnend mit Microsoft 365. Verwenden Sie diesen Artikel als Ausgangspunkt, um Ihre Optionen zu überprüfen und Ihr Upgrade zu planen.
       
 ## <a name="office-2007-planning-roadmaps"></a>Office 2007 Planungs Pläne
   
@@ -50,7 +50,13 @@ Der Support wurde für Office 2007-Produkte und-Dienste beendet. Die folgenden R
 |[Upgrade von Office Communications Server](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/upgrade) <br/> |8. Januar 2018  <br/> |
 |[Ende der Unterstützung für PerformancePoint Server 2007 – Roadmap](pps-2007-end-of-support.md) <br/> |09. Januar 2018  <br/> |
    
-Wenn die Unterstützung für ein Microsoft-Produkt endet, gibt es keine neuen Sicherheitsupdates, nicht sicherheitsrelevanten Updates, kostenlosen oder kostenpflichtigen Supportoptionen (einschließlich benutzerdefinierter Support Vereinbarungen) oder Updates für Online-technische Inhalte. Unabhängig davon, ob Sie eine Unternehmensorganisation oder ein Privatbenutzer sind, haben Sie mehrere Möglichkeiten zu prüfen:
+Wenn die Unterstützung für ein Microsoft-Produkt endet, gibt es keine weiteren Informationen:
+- Neue Sicherheitsupdates
+- Neue nicht sicherheitsrelevante Updates
+- Freie oder kostenpflichtige unterstützte Supportoptionen (einschließlich benutzerdefinierter Support Vereinbarungen)
+- Neue Online-Updates für technische Inhalte
+
+Unabhängig davon, ob Sie eine Unternehmensorganisation oder ein Privatbenutzer sind, haben Sie mehrere Möglichkeiten zu prüfen.
 
 ## <a name="im-a-home-user-what-do-i-do"></a>Ich bin ein privater Benutzer. Wie gehe ich jetzt vor?
 
@@ -64,4 +70,3 @@ Wenn Sie Office 2007 Produkte und Anwendungen zu Hause verwenden, lesen Sie [die
 
 [Planen Sie Ihr Upgrade von Office 2007- oder Office 2010-Servern und -Clients](plan-upgrade-previous-versions-office.md)
   
-

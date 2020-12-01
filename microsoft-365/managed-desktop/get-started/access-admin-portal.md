@@ -9,12 +9,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 66e4e5c305947f90f935563a3baf0592ce42480a
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: deeced350ad867a374a486967c2cbd278ba91710
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371670"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519329"
 ---
 # <a name="access-the-admin-portal"></a>Zugreifen auf das Verwaltungsportal
 
@@ -59,7 +59,7 @@ Jede der folgenden Rollen kann zugewiesen werden, um unterschiedliche Zugriffseb
 Wenn Sie Hilfe beim Zuweisen von Azure Active Directory Rollen benötigen, finden Sie weitere Informationen unter [Administrator Rollen Berechtigungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
 Für eine einfache Verwaltung der integrierten Rollen wurde eine Sicherheitsgruppe für jede benutzerdefinierte Rolle erstellt (beispielsweise "moderne Arbeitsplatz Rollen – Sicherheits-Manager"). Führen Sie die folgenden Schritte aus, um Benutzer einer der Sicherheitsgruppen zuzuweisen:
-1.  Wechseln Sie zum Azure-Portal, und navigieren Sie zum Azure Active Directory Blade.
+1.  Wechseln Sie zum Microsoft Endpoint Manager-Portal
 2.  Wählen Sie auf der linken Seite Gruppen aus.
 3.  Suchen Sie nach modernen Arbeitsplatz Rollen, und wählen Sie dann die Gruppe aus, die der Rolle zugeordnet ist, die Sie zuweisen möchten. 
 4.  Wählen Sie auf der linken Seite Elemente aus, und klicken Sie dann auf der Befehlsleiste auf + Mitglieder hinzufügen.

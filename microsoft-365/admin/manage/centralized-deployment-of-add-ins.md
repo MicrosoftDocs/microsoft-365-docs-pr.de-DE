@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Ermitteln Sie, ob Ihr Mandant und die Benutzer die Anforderungen erfüllen, damit Sie die zentrale Bereitstellung für die Bereitstellung von Office-Add-Ins verwenden können.
-ms.openlocfilehash: af7a127d438e81d6ecd025b6a71b9d7e5df2ecc8
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 04c5f9090ca788f00f2d17d3af59e8022195e9be
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681624"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519365"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Ermitteln, ob die zentrale Bereitstellung von Add-Ins für Ihre Organisation funktioniert
 
@@ -45,7 +45,7 @@ Es kann bis zu 24 Stunden dauern, bis ein Add-in für alle Benutzer für den Cli
   
 ## <a name="requirements"></a>Anforderungen
 
-Die zentrale Bereitstellung von Add-ins erfordert, dass die Benutzer Microsoft 365-Apps für Microsoft 365 für Unternehmen oder Microsoft 365 for Business verwenden (und mit ihrer Organisations-ID bei Office angemeldet sind) und über Exchange Online und aktive Exchange Online-Postfächer verfügen. Ihr Abonnement Verzeichnis muss sich entweder in oder im Verbund mit Azure Active Directory befinden.
+Die zentrale Bereitstellung von Add-ins erfordert, dass die Benutzer Microsoft 365 Enterprise-SKUs verwenden: E3/E5/F3 oder Geschäfts-SKUs: Business Basic, Business Standard, Business Premium (und mit ihrer Organisations-ID bei Office angemeldet sind) und über Exchange Online und Active Exchange Online-Postfächer verfügen. Ihr Abonnement Verzeichnis muss sich entweder in oder im Verbund mit Azure Active Directory befinden.
 Sie können die spezifischen Anforderungen für Office und Exchange unten anzeigen oder die [Kompatibilitätsprüfung für die zentrale Bereitstellung](#centralized-deployment-compatibility-checker)verwenden.
 
 Folgendes wird von der zentralen Bereitstellung nicht unterstützt:
@@ -55,17 +55,17 @@ Folgendes wird von der zentralen Bereitstellung nicht unterstützt:
 - Add-in-Bereitstellung in einem Exchange-basierten Postfach
 - Add-In-Bereitstellung in SharePoint  
 - Microsoft Teams-apps
-- Bereitstellung der Add-Ins Component Object Model (COM) oder Visual Studio Tools für Office (VSTO)
-- Bereitstellungen von Microsoft 365, die Exchange wie Microsoft 365 apps for Business nicht enthalten
+- Bereitstellung von Component Object Model (com) oder Visual Studio Tools für Office (VSTO)-Add-Ins.
+- Bereitstellungen von Microsoft 365, die keine Exchange Online wie SKUs enthalten: Microsoft 365 apps for Business und Microsoft 365 apps for Enterprise.
 
 ### <a name="office-requirements"></a>Office-Anforderungen
 
 - Für Word-, Excel-und PowerPoint-Add-Ins müssen die Benutzer eine der folgenden Optionen verwenden:
-  - Auf einem Windows-Gerät, Version 1704 oder höher von Microsoft 365-Apps für Microsoft 365 für Unternehmen oder Microsoft 365 for Business.
+  - Auf einem Windows-Gerät Version 1704 oder höher von Microsoft 365 Enterprise-SKUs: E3/E5/F3 oder Business-SKUs: Business Basic, Business Standard, Business Premium.
   - Auf einem Mac, Version 15,34 oder höher.
 
 - Für Outlook müssen die Benutzer eine der folgenden Optionen verwenden: 
-  - Version 1701 oder höher von Microsoft 365-Apps für Microsoft 365 für Unternehmen oder Microsoft 365 for Business.
+  - Version 1701 oder höher von Microsoft 365 Enterprise-SKUs: E3/E5/F3 oder Business-SKUs: Business Basic, Business Standard, Business Premium.
   - Version 1808 oder höher von Office Professional Plus 2019 oder Office Standard 2019.
   - Version 16.0.4494.1000 oder höher von Office Professional Plus 2016 (MSI) oder Office Standard 2016 (MSI)\*
   - Version 15.0.4937.1000 oder höher von Office Professional Plus 2013 (MSI) oder Office Standard 2013 (MSI)\*
@@ -74,20 +74,6 @@ Folgendes wird von der zentralen Bereitstellung nicht unterstützt:
 - Version 2.2.145 oder höher von Outlook Mobile für Android 
     
     * MSI-Versionen von Outlook zeigen Administrator installierte Add-Ins im entsprechenden Outlook-Menüband, nicht im Abschnitt "meine Add-Ins".
-    
-
-#### <a name="find-out-if-microsoft-365-apps-for-enterprise-is-installed"></a>Finden Sie heraus, ob Microsoft 365 apps for Enterprise installiert ist.
-
-Um Microsoft 365-Apps für Enterprise verwenden zu können, muss ein Benutzer über ein Microsoft 365-Konto verfügen, dem eine Lizenz zugewiesen sein muss. Weitere Informationen finden Sie unter [Overview of Microsoft 365 apps for Enterprise](https://go.microsoft.com/fwlink/p/?linkid=846328).
-
-Die einfachste Möglichkeit zu erkennen, ob ein Benutzer Microsoft 365 apps for Enterprise installiert hat und seit kurzem verwendet wurde, ist die Verwendung des Berichts "Microsoft Office Aktivierungen", der im Microsoft 365 Admin Center verfügbar ist. Der Bericht enthält eine Liste aller Benutzer, die Microsoft 365-Apps für Enterprise in den letzten 7 Tagen, 30 Tagen, 90 Tagen oder 180 Tagen aktiviert haben. Im Zusammenhang mit der zentralen Bereitstellung sind die Desktopaktivierungen für Windows oder Mac die wichtigen Spalten im Bericht. Sie können den Bericht nach Excel exportieren. Weitere Informationen zum Bericht finden Sie unter [Microsoft 365 Reports im Admin Center – Microsoft Office Aktivierungen](../activity-reports/microsoft-office-activations.md).
-  
-Wenn Sie den Aktivierungsbericht nicht verwenden möchten, können Sie einen Benutzer bitten, eine Office-Anwendung wie Word auf seinem Computer zu öffnen, und dann **Datei** \> **Konto**auswählen. Unter **Produktinformationen**sollten das **Abonnement Produkt** und **Microsoft 365 für Enterprise**oder Microsoft 365 Business Premium angezeigt werden, ähnlich wie in der folgenden Abbildung dargestellt.
-
-![Produktinformationen in einer Office-Anwendung](../../media/product-information-microsoft-365-enterprise.png)
-  
-Hilfe zu Microsoft 365-Apps für Unternehmen finden Sie unter [Troubleshooting Tips for Microsoft 365 apps for Enterprise](https://go.microsoft.com/fwlink/p/?linkid=846339).
-
 
 ### <a name="exchange-online-requirements"></a>Exchange Online Anforderungen
 

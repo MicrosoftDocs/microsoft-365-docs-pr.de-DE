@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 347266f71dada3de1bbd9b1434cb1e6628249147
-ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
+ms.openlocfilehash: e2d1c68c3fe963c957e4c3e18fce441b92c96bf1
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48931924"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519821"
 ---
 # <a name="readiness-assessment-tool"></a>Bereitschafts Bewertungstool
 
@@ -22,7 +22,7 @@ Für eine möglichst reibungslose Benutzerfreundlichkeit bei der Registrierung i
 
 Das Tool überprüft die Einstellungen in Microsoft Endpoint Manager (insbesondere Microsoft InTune), Azure Active Directory (Azure AD) und Microsoft 365, um sicherzustellen, dass Sie mit dem verwalteten Desktop von Microsoft arbeiten können. Microsoft Managed Desktop behält die Daten, die diesen Prüfungen zugeordnet sind, 12 Monate nach dem letzten Ausführen einer Überprüfung in ihrer Azure AD Organisation (Mandant). Nach 12 Monaten behalten wir es in der nicht identifizierten Form bei.  Sie können auswählen, dass die erfassten Daten gelöscht werden sollen.
 
-Jeder Benutzer mit mindestens der InTune-Administrator Rolle kann dieses Tool ausführen, aber zwei der Prüfungen ([Zertifikat-Konnektoren](readiness-assessment-fix.md#certificate-connectors) und mehrstufige [Authentifizierung](readiness-assessment-fix.md#multi-factor-authentication) erfordern zusätzliche Berechtigungen.
+Jeder Benutzer mit mindestens der InTune-Administrator Rolle kann dieses Tool ausführen, aber zwei der Prüfungen ([Richtlinien für bedingten Zugriff](readiness-assessment-fix.md#conditional-access-policies) und mehrstufige [Authentifizierung](readiness-assessment-fix.md#multi-factor-authentication) erfordern zusätzliche Berechtigungen).
  
 Das Assessment-Tool überprüft diese Elemente:
 
