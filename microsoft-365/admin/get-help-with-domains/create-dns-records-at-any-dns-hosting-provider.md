@@ -20,20 +20,20 @@ description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge b
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: 6c2359cbf2da24fa7e2cd579d61216d948e0cb83
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: bc22dbd3a050516f518c9ddc9ccf5a3af9c76f12
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645371"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519293"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Hinzufügen von DNS-Einträgen zum Verbinden Ihrer Domäne
 
-Wenn Sie eine Domäne bei einem Drittanbieter-Hostinganbieter gekauft haben, können Sie diese mit Microsoft 365 verbinden, indem Sie die DNS-Einträge im Konto Ihrer Registrierungsstelle aktualisieren.
+Wenn Sie eine Domäne von einem externen Hosting-Provider erworben haben, können Sie diese mit Microsoft 365 verknüpfen, indem Sie die DNS-Einträge im Konto Ihrer Registrierungsstelle aktualisieren.
 
 Am Ende dieser Schritte bleibt Ihre Domäne bei dem Host registriert, von dem Sie die Domäne gekauft haben. Microsoft 365 kann sie aber für E-Mail-Adressen (z. B. „Benutzer@IhreDomäne.com“) und andere Dienste verwenden.
 
-Wenn Sie keine Domäne hinzufügen, verwenden Personen in Ihrer Organisation die Domäne „onmicrosoft.com“ für ihre E-Mail-Adressen, bis Sie dies tun. Es ist wichtig, dass Sie Ihre Domäne hinzufügen, bevor Sie Benutzer hinzufügen, damit Sie diese nicht zweimal einrichten müssen.
+Solange Sie keine Domäne verknüpfen, verwenden Personen in Ihrer Organisation die Domäne „onmicrosoft.com“ für ihre E-Mail-Adressen. Es ist wichtig, dass Sie Ihre Domäne hinzufügen, bevor Sie Benutzer hinzufügen, damit Sie diese nicht zweimal einrichten müssen.
 
 [Lesen Sie in den die häufig gestellten Fragen (FAQ) zu Domänen nach](../setup/domains-faq.md), wenn Sie unten nicht finden, wonach Sie suchen.
 

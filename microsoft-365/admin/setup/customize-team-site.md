@@ -2,8 +2,8 @@
 title: Anpassen einer SharePoint-Teamwebsite für die Speicherung und Freigabe von Dateien
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: sharik
+author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: In diesem Artikel erfahren Sie, wie Sie Ihre SharePoint-Teamwebsite mit Dokumentbibliotheken, Listen und Hubs anpassen, organisieren und verwalten können.
-ms.openlocfilehash: 3eb09f0b0160333e3b17ebc5f02424ba3d24a13c
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 3ef82cecf22226380fbb18492a7630aa023b4036
+ms.sourcegitcommit: 4a9e1b6851b988bcd31e87b184fc185be949840d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906489"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49525533"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Anpassen Ihrer Teamwebsite für die Speicherung und Freigabe von Dateien
 
@@ -93,11 +93,11 @@ Informationen zum Hinzufügen von Websites zu einem Hub-Standort finden Sie unte
   
 ## <a name="sharing-files-with-the-team"></a>Freigeben von Dateien für das Team
 
-Während die Dateispeicherung und Dokumentverwaltung ein Anfang ist, ist auch die Freigabe mit Ihrem Team und externen Clients wichtig. Im folgenden finden Sie Links zu Themen, die Sie bei der Verwaltung von Benutzern und der Freigabe Ihrer Daten unterstützen.
+Während die Dateispeicherung und Dokumentverwaltung ein Anfang ist, ist auch die Freigabe mit Ihrem Team und externen Clients wichtig. In den folgenden Artikeln finden Sie Informationen zum Verwalten von Benutzern und zum Freigeben Ihrer Daten:
   
-Informationen zur Dateifreigabe mit Ihrem Team finden Sie unter [share SharePoint files or folders in Microsoft 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).
+- Informationen zur Dateifreigabe mit Ihrem Team finden Sie unter [share SharePoint files or folders in Microsoft 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).
   
-Informationen zum Verständnis der Freigabe außerhalb Ihres Teams finden Sie unter [External Sharing Overview](/sharepoint/external-sharing-overview).
+- Informationen zum Verständnis der Freigabe außerhalb Ihres Teams finden Sie unter [External Sharing Overview](/sharepoint/external-sharing-overview).
   
 ## <a name="managing-users-and-groups"></a>Verwalten von Benutzern und Gruppen
 
@@ -109,9 +109,9 @@ Informationen zum Hinzufügen von Benutzern zu einer Microsoft 365-Gruppe finden
   
 Hier erfahren Sie, wie Sie Zugriffsanforderungen mit [Einrichten und Verwalten von Zugriffsanforderungen](https://support.microsoft.com/office/94B26E0B-2822-49D4-929A-8455698654B3)behandeln.
   
-## <a name="here-are-more-topics-you-might-be-interested-in"></a>Andere Themen, die Sie interessieren könnten
+## <a name="here-are-more-articles-you-might-be-interested-in"></a>Hier finden Sie weitere Artikel, die Sie interessieren könnten.
 
-- **Einrichten von Office-Apps auf Tablets und Smartphones**. Dieser Schritt ist erforderlich, damit Sie die auf Ihrer Teamwebsite gespeicherten Dateien über ein Tablet oder Smartphone bearbeiten können. Wenn Sie die Office-Apps für Ihr Tablet oder Smartphone nicht installieren, können Sie die Dateien auf Ihrer Teamwebsite zwar anzeigen, aber nicht bearbeiten. 
+- **Einrichten von Office-Apps auf Tablets und Smartphones**. Sie müssen dies tun, damit Sie auf Ihrer Teamwebsite gespeicherte Dateien von Ihrem Tablet oder Telefon aus bearbeiten können. Wenn Sie die Office-Apps für Ihr Tablet oder Smartphone nicht installieren, können Sie die Dateien auf Ihrer Teamwebsite zwar anzeigen, aber nicht bearbeiten. 
     
   - [Installieren und Einrichten von Office auf einem Android-Gerät mit Microsoft 365](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
     

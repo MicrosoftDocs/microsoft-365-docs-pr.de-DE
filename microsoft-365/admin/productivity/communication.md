@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Details zum Produktivitäts Ergebnis der Kommunikation – Personen Erfahrung.
-ms.openlocfilehash: ba2e69659f49c90d3b65e56e54b3026c7c9ff36a
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: a6fccdcc7f6440195bb83949ee294bbb4fe5ce7f
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123446"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527501"
 ---
 # <a name="communication--people-experiences"></a>Kommunikation – Personen Erfahrungen
 
@@ -119,9 +119,9 @@ Außerdem stellen wir Ihnen Informationen zur Verfügung, die Sie dabei unterst�
 2. **Body:** Enthält Informationen zum Nutzen von Kanal Nachrichten in Microsoft Teams
 3. **Visualisierung:** Bricht die Verwendung von Chat-und Kanal Nachrichten ab:
       - **Personen, die Chatnachrichten senden:** Der farbige Teil und der Bruchstellen die Verwendung von Chatnachrichten in Personen dar, die Nachrichten in Microsoft Teams gesendet haben. Der Bruch wird aus folgenden Bauteilen aufgebaut:
-        - **Zähler:** Personen, die in den letzten 28 Tagen Chatnachrichten in Microsoft Teams gesendet haben
-        - **Nenner:** Personen, die in den letzten 28 Tagen Nachrichten in Microsoft Teams gesendet haben
-      - **Personen, die Chatnachrichten senden:** Der farbige Teil und der Bruchstellen die Verwendung von Kanal Nachrichten in Personen dar, die Nachrichten in Microsoft Teams senden. Der Bruch wird aus folgenden Bauteilen aufgebaut:
+        - **Zähler:** Personen, die in den letzten 28 Tagen Chatnachrichten in Microsoft Teams gesendet haben.
+        - **Nenner:** Personen, die in den letzten 28 Tagen Nachrichten in Microsoft Teams gesendet haben.
+      - **Personen, die Kanal Nachrichten senden:** Der farbige Teil und der Bruchstellen die Verwendung von Kanal Nachrichten in Personen dar, die Nachrichten in Microsoft Teams senden. Der Bruch wird aus folgenden Bauteilen aufgebaut:
         - **Zähler:** Personen, die in den letzten 28 Tagen Chatnachrichten in Microsoft Teams gesendet haben.
         - **Nenner:** Personen, die in den letzten 28 Tagen Nachrichten in Microsoft Teams gesendet haben.
 4. **Anzeigen von verwandtem Inhalt:** Wählen Sie diesen Link aus, um sortierte Videos und andere verwandte Hilfeinhalte anzuzeigen.

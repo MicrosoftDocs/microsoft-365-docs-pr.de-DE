@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie mehr über das Deployment Lab Kit für Windows und Office und wo Sie darauf zugreifen.
-ms.openlocfilehash: 65c251b2cd161687eb0a2e9c7ece29f453fcaae8
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 4ee3663e326dc5a7fbefce06a696cca6a4b060a9
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519622"
+ms.locfileid: "49527455"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Lab-Kit für Windows und Office Deployment
 
@@ -36,7 +36,7 @@ Die Übung umfasst eine automatisch bereitgestellte virtuelle Umgebung, einschli
 
   - NEU! Windows 10 Enterprise, Version 20H2
   - Windows 7 Enterprise
-  - Microsoft Endpoint Configuration Manager, Version 2002
+  - Microsoft Endpoint Configuration Manager, Version 2010 *
   - Windows Assessment and Deployment Kit für Windows 10
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V)
@@ -94,7 +94,7 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
 
 [Herunterladen des Deployment Lab Kit für Windows und Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-* Bitte verwenden Sie eine breite Bandbreite, um diese Inhalte herunterzuladen, um Ihr Download Erlebnis zu verbessern und 30-45 Minuten für die automatische Bereitstellung zu ermöglichen. Die Lab-Umgebung erfordert mindestens 16 GB verfügbaren Arbeitsspeicher und 300 GB freien Speicherplatz. Für eine optimale Leistung wird 32 GB verfügbarer Arbeitsspeicher empfohlen. Das Lab läuft im Februar 2020. Eine neue Version wird vor Ablauf veröffentlicht.
+* Die installierte Baseline-Version 2002 kann mit dem in-Console-Update auf Version 2010 aktualisiert werden. Verwenden Sie eine breite Bandbreite, um diese Inhalte herunterzuladen, um Ihre Download Umgebung zu verbessern und 30-45 Minuten für die automatische Bereitstellung zu ermöglichen. Für die Lab-Umgebung sind mindestens 16 GB verfügbarer Arbeitsspeicher und 150GB freier Speicherplatz erforderlich. Für eine optimale Leistung wird 32 GB verfügbarer Arbeitsspeicher und jeweils 300 GB des freien Speicherplatzes empfohlen. Das Lab läuft am 7. Februar 2021 ab. Eine neue Version wird vor Ablauf veröffentlicht.
 
 ## <a name="additional-guidance"></a>Zusätzliche Anleitung
 

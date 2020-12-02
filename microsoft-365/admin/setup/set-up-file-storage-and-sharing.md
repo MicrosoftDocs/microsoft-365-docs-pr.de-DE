@@ -2,8 +2,8 @@
 title: Einrichten der Speicherung und Freigabe von Dateien
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: sharik
+author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -29,12 +29,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: In diesem Artikel erfahren Sie, wie Sie OneDrive und eine Teamwebsite für Microsoft 365-Speicher und Microsoft 365-Dateifreigabe verwenden.
-ms.openlocfilehash: cc6a7a45fda65073dc9b0cd15a844ec9aefca794
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: aa85789b950965a33c07214b5eaebf827ed8cc92
+ms.sourcegitcommit: 4a9e1b6851b988bcd31e87b184fc185be949840d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906393"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49525569"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>Einrichten der Dateispeicherung und-Freigabe in Microsoft 365
 
@@ -117,7 +117,7 @@ Hier sind die Schritte zum Hinzufügen von Dateien:
   
 5. Sie können die Dateien von Ihrem Computer löschen. Im nächsten Schritt können Sie [Online Dateien mit Ihrem PC oder Mac synchronisieren](#sync-online-files-with-your-pc-or-mac), indem Sie einen neuen Speicherort für diese Dateien auf Ihrem Computer erstellen.
 
-    Wenn Sie viele Dateien oder große Dateien auf Ihre Teamwebsite hochladen müssen, lesen Sie die Tipps unter [Hochladen großer oder vieler Dateien in eine Bibliothek](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242).
+    Wenn Sie über zahlreiche Dateien oder große Dateien verfügen, die auf Ihre Teamwebsite hochgeladen werden sollen, lesen Sie diese Tipps zum [Hochladen großer oder vieler Dateien in eine Bibliothek](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242).
 
     Wenn Sie mehr Speicherplatz benötigen, lesen Sie [Ändern von Speicherplatz für Ihr Abonnement](../../commerce/add-storage-space.md).
 
@@ -158,11 +158,11 @@ Hier finden Sie einige Tipps, wie Sie OneDrive oder Ihre SharePoint-Teamwebsite 
   
 ### <a name="file-storage-and-collaboration-recommendations-for-other-types-of-small-businesses"></a>Empfehlungen zu Dateispeicherung und Zusammenarbeit für andere Arten von Kleinunternehmen
 
-- **Sole Eigentum** : Verwenden Sie OneDrive, um Ihre eigenen Dateien zu speichern und für Kunden von Fall zu Fall freizugeben.
+- **Sole Eigentum**: Verwenden Sie OneDrive, um Ihre eigenen Dateien zu speichern und für Kunden von Fall zu Fall freizugeben.
 
-- **Miteigentum** : Beide Besitzer verwenden OneDrive und teilen Dateien hin und her.
+- **Miteigentum**: Beide Besitzer verwenden OneDrive und teilen Dateien hin und her.
 
-- **Unternehmen mit externen Clients oder Partnern, die Zugriff auf Dateien benötigen** : Erstellen einer neuen Teamwebsite zum Speichern und Freigeben von Dokumenten, die für einen bestimmten Kunden bestimmt sind. Einrichten der Website, um nur den Zugriff auf diesen Kunden zuzulassen Sie müssen sich dann nicht sorgen, dass ein Kunde versehentlich Zugriff auf Informationen erhält, die für einen anderen Kunden bestimmt sind.
+- **Unternehmen mit externen Clients oder Partnern, die Zugriff auf Dateien benötigen**: Erstellen einer neuen Teamwebsite zum Speichern und Freigeben von Dokumenten, die für einen bestimmten Kunden bestimmt sind. Einrichten der Website, um nur den Zugriff auf diesen Kunden zuzulassen Sie müssen sich dann nicht sorgen, dass ein Kunde versehentlich Zugriff auf Informationen erhält, die für einen anderen Kunden bestimmt sind.
 
 ### <a name="keep-private-files-private"></a>Sicherstellen, dass private Dateien privat bleiben
 

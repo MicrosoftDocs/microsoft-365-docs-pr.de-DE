@@ -1,5 +1,5 @@
 ---
-title: Verwenden eines Skripts zum Hinzufügen von Benutzern zu einem Haltestatus in einem zentralen eDiscovery-Fall im Security & Compliance Center
+title: Verwenden eines Skripts zum Hinzufügen von Benutzern zu einem Haltestatus in einem zentralen eDiscovery-Fall
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,19 +19,19 @@ search.appverid:
 - MET150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom: seo-marvel-apr2020
-description: Informationen zum Ausführen eines Skripts zum Hinzufügen von Postfächern & OneDrive für Unternehmen Websites zu einem neuen Haltestatus, der einem eDiscovery-Fall im Security & Compliance Center zugeordnet ist.
-ms.openlocfilehash: 454fd4ea4517a46410c9d0922cc83b141fdbd893
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+description: Informationen zum Ausführen eines Skripts zum Hinzufügen von Postfächern & OneDrive für Unternehmen Websites zu einem neuen Haltestatus, der einem eDiscovery-Fall im Microsoft 365 Compliance Center zugeordnet ist.
+ms.openlocfilehash: 31c3bfef4eda4802618020f607bc7706780f3629
+ms.sourcegitcommit: 4a9e1b6851b988bcd31e87b184fc185be949840d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357675"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49525614"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>Verwenden eines Skripts zum Hinzufügen von Benutzern zu einem Haltestatus in einem zentralen eDiscovery-Fall
 
-Das Security & Compliance Center bietet PowerShell-Cmdlets, mit denen Sie zeitaufwändige Aufgaben im Zusammenhang mit dem Erstellen und Verwalten von eDiscovery-Fällen automatisieren können. Mit dem eDiscovery Case-Tool im Security & Compliance Center können Sie derzeit eine große Anzahl von Speicherorten für Depot Inhalte Zeit-und Vorbereitungs bereitstellen. Vor dem Erstellen eines Haltestatus müssen Sie beispielsweise die URL für jede OneDrive für Unternehmen Website erfassen, die Sie in die Warteschleife stellen möchten. Anschließend müssen Sie für jeden Benutzer, den Sie in die Warteschleife setzen möchten, das Postfach und die OneDrive für Unternehmen Website in das Archiv eintragen. In zukünftigen Versionen des Security & Compliance Center wird dies einfacher. Bis dahin können Sie das Skript in diesem Artikel verwenden, um diesen Prozess zu automatisieren.
+Security & Compliance Center PowerShell stellt Cmdlets bereit, mit denen Sie zeitaufwändige Aufgaben im Zusammenhang mit dem Erstellen und Verwalten von eDiscovery-Fällen automatisieren können. Unter Verwendung des zentralen eDiscovery-Falls im Security & Compliance Center wird derzeit eine große Anzahl von Speicherorten für Depot Inhalte Zeit-und Vorbereitungs bereitgestellt. Vor dem Erstellen eines Haltestatus müssen Sie beispielsweise die URL für jede OneDrive für Unternehmen Website erfassen, die Sie in die Warteschleife stellen möchten. Anschließend müssen Sie für jeden Benutzer, den Sie in die Warteschleife setzen möchten, das Postfach und die OneDrive für Unternehmen Website in das Archiv eintragen. Sie können das Skript in diesem Artikel verwenden, um diesen Prozess zu automatisieren.
   
-Im Skript werden Sie zur Angabe des Namens der meine Website Domäne Ihrer Organisation aufgefordert (beispielsweise " **contoso** " in der URL https://contoso-my.sharepoint.com) , der Name eines vorhandenen eDiscovery-Falls, der Name des neuen haltebereichs, der dem Fall zugeordnet ist, eine Liste der e-Mail-Adressen der Benutzer, die Sie speichern möchten, und eine Suchabfrage, die verwendet werden soll, wenn Sie einen abfragebasierten Speicher erstellen möchten Das Skript ruft dann die URL für die OneDrive für Unternehmen Website für jeden Benutzer in der Liste ab, erstellt den neuen Haltestatus und fügt dann das Postfach und die OneDrive für Unternehmen Website für jeden Benutzer in der Liste in den Haltebereich ein. Das Skript generiert auch Protokolldateien, die Informationen zum neuen Haltestatus enthalten.
+Im Skript werden Sie zur Angabe des Namens der meine Website Domäne Ihrer Organisation aufgefordert (beispielsweise `contoso` in der URL https://contoso-my.sharepoint.com) , dem Namen eines vorhandenen eDiscovery-Falls, dem Namen des neuen haltebereichs, der dem Fall zugeordnet ist, einer Liste von e-Mail-Adressen der Benutzer, die Sie in die Warteschleife setzen möchten, und einer Suchabfrage, die verwendet werden soll, wenn Sie einen abfragebasierten Speicher erstellen möchten Das Skript ruft dann die URL für die OneDrive für Unternehmen Website für jeden Benutzer in der Liste ab, erstellt den neuen Haltestatus und fügt dann das Postfach und die OneDrive für Unternehmen Website für jeden Benutzer in der Liste in den Haltebereich ein. Das Skript generiert auch Protokolldateien, die Informationen zum neuen Haltestatus enthalten.
   
 Hier sind die Schritte, um dies zu erreichen:
   
@@ -51,7 +51,9 @@ Hier sind die Schritte, um dies zu erreichen:
 
 - Das Skript fügt die Liste der Benutzer zu einem neuen Haltestatus hinzu, der einem vorhandenen Fall zugeordnet ist. Stellen Sie sicher, dass der Fall, dem Sie den Haltebereich zuordnen möchten, erstellt wird, bevor Sie das Skript ausführen.
 
-- Jedes Mal, wenn Sie das Skript ausführen, werden neue Security & Compliance PowerShell und SharePoint Online PowerShell-Sitzungen erstellt. Sie können also alle für Sie verfügbaren PowerShell-Sitzungen verwenden. Um dies zu verhindern, können Sie die folgenden Befehle ausführen, um die Verbindung der aktiven PowerShell-Sitzungen zu trennen.
+- Das Skript in diesem Artikel unterstützt die moderne Authentifizierung beim Herstellen einer Verbindung mit Security & Compliance Center PowerShell. Sie können das Skript wie folgt verwenden, wenn Sie eine Microsoft 365-oder eine Microsoft 365 gcc-Organisation sind. Wenn Sie eine Office 365 Deutschland-Organisation, eine Microsoft 365 gcc High Organization oder eine Microsoft 365 DoD-Organisation sind, müssen Sie das Skript bearbeiten, damit es erfolgreich ausgeführt wird. Insbesondere müssen Sie die Linie bearbeiten `Connect-IPPSSession` und die Parameter *ConnectionUri* und *AzureADAuthorizationEndpointUri* (und die entsprechenden Werte für Ihren Organisationstyp) verwenden, um eine Verbindung mit Security & Compliance Center PowerShell herzustellen. Weitere Informationen finden Sie in den Beispielen unter [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
+
+- Jedes Mal, wenn Sie das Skript ausführen, werden neue Security & Compliance PowerShell und SharePoint Online Management Shell-Sitzungen erstellt. Sie können also alle für Sie verfügbaren PowerShell-Sitzungen verwenden. Um dies zu verhindern, können Sie die folgenden Befehle ausführen, um die Verbindung der aktiven PowerShell-Sitzungen zu trennen.
 
   ```powershell
   Get-PSSession | Remove-PSSession
@@ -115,21 +117,20 @@ Nachdem Sie die Informationen gesammelt haben, für die das Skript Sie aufforder
 
    ```powershell
    #script begin
-   " " 
+   " "
    write-host "***********************************************"
    write-host "   Security & Compliance Center   " -foregroundColor yellow -backgroundcolor darkgreen
    write-host "   eDiscovery cases - Add users to a hold   " -foregroundColor yellow -backgroundcolor darkgreen 
    write-host "***********************************************"
-   " " 
-   # Get user credentials &amp; Connect to Office 365 SCC, SPO
-   $credentials = Get-Credential -Message "Specify your credentials to connect to the Security & Compliance Center and SharePoint Online"
-   $s = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://ps.compliance.protection.outlook.com/powershell-liveid" -Credential $credentials -Authentication Basic -AllowRedirection -SessionOption (New-PSSessionOption -SkipCACheck -SkipCNCheck -SkipRevocationCheck)
-   $a = Import-PSSession $s -AllowClobber
-       if (!$s)
-       {
-           Write-Error "Couldn't create PowerShell session."
-           return;
-       }
+   " "
+   # Connect to SCC PowerShell using modern authentication
+   if (!$SccSession)
+   {
+     Import-Module ExchangeOnlineManagement
+     Connect-IPPSSession
+   }
+   # Get user credentials to connect to SPO Management Shell
+   $credentials = Get-Credential -Message "Type your credentials again to connect to SharePoint Online Management Shell"
    # Load the SharePoint assemblies from the SharePoint Online Management Shell
    # To install, go to https://go.microsoft.com/fwlink/p/?LinkId=255251
    if (!$SharePointClient -or !$SPRuntime -or !$SPUserProfile)
@@ -296,7 +297,7 @@ Nachdem Sie die Informationen gesammelt haben, für die das Skript Sie aufforder
 
 4. Geben Sie die Informationen ein, die Sie vom Skript angefordert haben.
 
-   Das Skript stellt eine Verbindung mit der Security & Compliance Center PowerShell her und erstellt dann den neuen Haltebereich im eDiscovery-Fall und fügt die Postfächer und OneDrive für Unternehmen für die Benutzer in der Liste hinzu. Sie können den Fall auf der **eDiscovery** -Seite im Security & Compliance Center aufrufen, um den neuen Haltestatus anzuzeigen. 
+   Das Skript stellt eine Verbindung mit der Security & Compliance Center PowerShell her und erstellt dann den neuen Haltebereich im eDiscovery-Fall und fügt die Postfächer und OneDrive für Unternehmen für die Benutzer in der Liste hinzu. Sie können den Fall auf der **eDiscovery** -Seite im Security & Compliance Center aufrufen, um den neuen Haltestatus anzuzeigen.
 
 Nachdem das Skript ausgeführt wurde, werden die folgenden Protokolldateien erstellt und in dem Ordner gespeichert, in dem sich das Skript befindet.
   

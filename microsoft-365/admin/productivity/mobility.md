@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Details zum Produktivitäts Ergebnis "Mobility-People Experiences".
-ms.openlocfilehash: f40984b3c053dcb976c901830bf796e3b7297f2d
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: e37d5ff0377163bea270b1d16e8b4fddae9099b4
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804781"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551863"
 ---
 # <a name="mobility--people-experiences"></a>Mobilität – Personen Erfahrungen
 
-Das Produktivitäts Ergebnis hilft Organisationen, zu transformieren, wie arbeiten mit Metriken über die Verwendung von Microsoft 365-apps und die unterstützenden Technologie Erfahrungen ausgeführt werden. Die Partitur spiegelt die Leistung Ihrer Organisation&#39;s für Personen-und Technologie Erlebnis Kategorien wider und vergleicht Ihre Bewertung mit Organisationen wie Ihrem. Die Kategorie Teamwork ist Teil der Messungen, die unter Personen Erfahrungen fallen. Weitere Informationen finden Sie in der [Übersicht über das Produktivitäts Ergebnis](productivity-score.md) .
+Die Produktivitäts Bewertung unterstützt die Reise zur digitalen Transformation mit Einblicken darüber, wie Ihre Organisation Microsoft 365 und seine Technologie verwendet. Die Bewertung Ihres Unternehmens reflektiert Personen-und Technologie Erfahrungs Messungen und kann mit Benchmarks von Organisationen vergleichbar mit ihrer Größe verglichen werden. Die Kategorie Mobilität ist Teil der Personen Erfahrungen. Weitere Informationen finden Sie in der [Übersicht über das Produktivitäts Ergebnis](productivity-score.md) .
 
 ## <a name="why-your-organization39s-mobility-score-matters"></a>Warum Ihre Organisation&#39;s Mobility Score zählt
 
@@ -56,19 +56,20 @@ Mit Microsoft 365 können Benutzer flexibel über apps hinweg arbeiten, einschli
 
 #### <a name="trend-visualization-of-the-primary-insight"></a>Trend Visualisierung der primären Einblicke
 
-:::image type="content" source="../../media/mobility-primary.png" alt-text="Diagramm mit primärer Einblicke für Mobility – People Experiences Productivity Score.":::
+:::image type="content" source="../../media/mobility-primary.png" alt-text="Diagramm mit der Anzahl von Personen, die mehr als eine Plattform vs. Time verwenden.":::
 
 Dieses Diagramm zeigt die Trend-Kurve, wobei der Zähler die Anzahl der Personen ist, die apps verwendet haben, in den letzten 180 Tagen. Jeder Datenpunkt im Diagramm ist ein Aggregat von Aktivitäten für die letzten 28 Tage. Jeder Datenpunkt enthält eine Zählung aller Personen, die eine Anwendung über mindestens zwei Plattformen in den letzten 28 Tagen für jedes Datum auf der x-Achse verwenden.
 
 ### <a name="scoring-framework"></a>Bewertungs Framework
 
-Das Mobilitäts Ergebnis misst, ob Benutzer Microsoft 365-apps-Outlook, Teams, Word, Excel, PowerPoint, OneNote, jammern und Skype-auf den verschiedenen Plattformen-Desktop, Internet und Mobilgeräte-verwenden.
+Die Mobilitäts Bewertung für Ihre Organisation misst auf einer Organisationsebene (Aggregate), unabhängig davon, ob Personen Microsoft 365-apps-Outlook, Teams, Word, Excel, PowerPoint, OneNote, jammern und Skype-auf den verschiedenen Plattformen-Desktop, Internet und Mobilgeräte-verwenden.
+Die Ergebnisse werden nicht auf Einzelbenutzerebene bereitgestellt.
 
 ## <a name="explore-how-your-org-works-across-platforms-and-locations"></a>Untersuchen der Funktionsweise Ihrer Organisation über Plattformen und Standorte hinweg
 
 ### <a name="use-of-outlook-across-platforms"></a>Verwendung von Outlook plattformübergreifend
 
-:::image type="content" source="../../media/outlook-across-platforms.png" alt-text="Diagramm mit primärer Einblicke für Mobility – People Experiences Productivity Score.":::
+:::image type="content" source="../../media/outlook-across-platforms.png" alt-text="Diagramm, das zeigt, wie viele Benutzer Outlook auf mehreren Plattformen verwenden.":::
 
 1. **Kopfzeile:** Zeigt den Prozentsatz der Personen an, die in Outlook aktiv sind und Outlook auf mehreren Plattformen verwenden.
 2. **Body:** Enthält Informationen über den Wert der Verwendung von Outlook auf mobilen Geräten, um die Verbindung von einer beliebigen Stelle in e-Mails zu verbringen.
@@ -89,7 +90,7 @@ Das Mobilitäts Ergebnis misst, ob Benutzer Microsoft 365-apps-Outlook, Teams, W
 
 ### <a name="use-of-teams-across-platforms"></a>Plattformübergreifende Verwendung von Teams
 
-:::image type="content" source="../../media/teams-across-platforms.png" alt-text="Diagramm mit primärer Einblicke für Mobility – People Experiences Productivity Score.":::
+:::image type="content" source="../../media/teams-across-platforms.png" alt-text="Diagramm, das zeigt, wie viele Benutzer Teams auf mehr als einer oder einzelnen Plattform verwenden.":::
 
 1. **Kopfzeile:** Zeigt an, welcher Prozentsatz der Personen, die in Microsoft Teams aktiv sind, auf mehreren Plattformen verwendet wird.
 2. **Body:** Enthält Informationen über den Wert der Verwendung von Teams auf mobilen Geräten, damit Personen auf dem Laufenden bleiben, wenn Sie von einem beliebigen Standort aus Nachrichten arbeiten.
@@ -110,7 +111,7 @@ Das Mobilitäts Ergebnis misst, ob Benutzer Microsoft 365-apps-Outlook, Teams, W
 
 ### <a name="use-of-microsoft-365-apps-across-platforms"></a>Verwendung von Microsoft 365-apps plattformübergreifend
 
-:::image type="content" source="../../media/microsoft365apps-platforms.png" alt-text="Diagramm mit primärer Einblicke für Mobility – People Experiences Productivity Score.":::
+:::image type="content" source="../../media/microsoft365apps-platforms.png" alt-text="Diagramm, das die Anzahl der Personen zeigt, die Microsoft 365-apps auf mehreren oder einzelnen Plattformen verwenden.":::
 
 1. **Kopfzeile:** Zeigt den Prozentsatz der Personen an, die auf Microsoft 365-Apps (Word, Excel, PowerPoint und OneNote) auf mehreren Plattformen aktiv sind.
 2. **Body:** Enthält Informationen über den Wert der Bereitstellung von Flexibilität für den Zugriff auf Ihre Dateien von überall aus für Personen in Ihrer Organisation.
@@ -123,7 +124,7 @@ Das Mobilitäts Ergebnis misst, ob Benutzer Microsoft 365-apps-Outlook, Teams, W
 
 ### <a name="remote-work"></a>Remote-Arbeit
 
-:::image type="content" source="../../media/remotework-trend.png" alt-text="Diagramm mit primärer Einblicke für Mobility – People Experiences Productivity Score.":::
+:::image type="content" source="../../media/remotework-trend.png" alt-text="Diagramm, das zeigt, wie viele Personen Remote, vor Ort oder beides arbeiten.":::
 
 1. **Kopfzeile:** Zeigt den Prozentsatz der Personen an, die nur von zu Hause oder von Standort außerhalb Ihres Unternehmens&#39;s-Netzwerks arbeiten.
 2. **Body:** Unterstreicht die Wichtigkeit der Erleichterung von Remote Arbeit für Personen ohne Zugriff auf physische Büros der Organisation&#39;s.

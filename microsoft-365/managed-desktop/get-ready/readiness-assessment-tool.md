@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e2d1c68c3fe963c957e4c3e18fce441b92c96bf1
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 491422126f7d159689e7995b69bef0f395491dcb
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519821"
+ms.locfileid: "49527709"
 ---
 # <a name="readiness-assessment-tool"></a>Bereitschafts Bewertungstool
 
@@ -22,7 +22,7 @@ Für eine möglichst reibungslose Benutzerfreundlichkeit bei der Registrierung i
 
 Das Tool überprüft die Einstellungen in Microsoft Endpoint Manager (insbesondere Microsoft InTune), Azure Active Directory (Azure AD) und Microsoft 365, um sicherzustellen, dass Sie mit dem verwalteten Desktop von Microsoft arbeiten können. Microsoft Managed Desktop behält die Daten, die diesen Prüfungen zugeordnet sind, 12 Monate nach dem letzten Ausführen einer Überprüfung in ihrer Azure AD Organisation (Mandant). Nach 12 Monaten behalten wir es in der nicht identifizierten Form bei.  Sie können auswählen, dass die erfassten Daten gelöscht werden sollen.
 
-Jeder Benutzer mit mindestens der InTune-Administrator Rolle kann dieses Tool ausführen, aber zwei der Prüfungen ([Richtlinien für bedingten Zugriff](readiness-assessment-fix.md#conditional-access-policies) und mehrstufige [Authentifizierung](readiness-assessment-fix.md#multi-factor-authentication) erfordern zusätzliche Berechtigungen).
+Jeder Benutzer mit mindestens der InTune-Administrator Rolle kann dieses Tool ausführen, aber zwei der Prüfungen ([Richtlinien für bedingten Zugriff](readiness-assessment-fix.md#conditional-access-policies) und mehrstufige [Authentifizierung](readiness-assessment-fix.md#multifactor-authentication) erfordern zusätzliche Berechtigungen).
  
 Das Assessment-Tool überprüft diese Elemente:
 
@@ -78,4 +78,8 @@ Für jede Überprüfung meldet das Tool eine von vier möglichen Ergebnissen:
 |Bereit     | Es ist keine Aktion erforderlich, bevor Sie die Registrierung abschließen.        |
 |Empfehlung    | Führen Sie die Schritte im Tool aus, um die besten Erfahrungen mit der Registrierung und für Benutzer zu erzielen. Sie *können* die Registrierung abschließen, aber Sie müssen diese Probleme beheben, bevor Sie das erste Gerät bereitstellen.        |
 |Nicht bereit | Die *Registrierung schlägt fehl* , wenn Sie diese Probleme nicht beheben. Befolgen Sie die Schritte im Tool, um Sie zu beheben.        |
-|Error | Die von Ihnen verwendete Azure Active Director (AD)-Rolle verfügt nicht über ausreichende Berechtigungen zum Ausführen dieser Überprüfung. |
+|Fehler | Die von Ihnen verwendete Azure Active Director (AD)-Rolle verfügt nicht über ausreichende Berechtigungen zum Ausführen dieser Überprüfung. |
+
+## <a name="after-enrollment"></a>Nach der Registrierung
+
+Nachdem Sie die Registrierung in Microsoft Managed Desktop abgeschlossen haben, denken Sie daran, zurückzugehen und bestimmte InTune-und Azure AD-Einstellungen anzupassen. Ausführliche Informationen finden Sie unter [Anpassen von Einstellungen nach der Registrierung](../get-started/conditional-access.md).

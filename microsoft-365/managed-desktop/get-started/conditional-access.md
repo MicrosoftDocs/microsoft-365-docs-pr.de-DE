@@ -1,5 +1,5 @@
 ---
-title: Bedingten Zugriff anpassen
+title: Anpassen der Einstellungen nach der Registrierung
 description: Ausschließen bestimmter Microsoft-Konten
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
@@ -9,29 +9,36 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8844c50f5faba609b3f5f53adc5ab45ba1dbaa74
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 76a73372cc7517c3241390e58c28b0b02bffd664
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529683"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527697"
 ---
-# <a name="adjust-conditional-access"></a>Bedingten Zugriff anpassen
+# <a name="adjust-settings-after-enrollment"></a>Anpassen der Einstellungen nach der Registrierung
 
-Wenn Sie Richtlinien für [bedingten Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) in Ihrer Organisation verwenden, müssen Sie diese so festlegen, dass bestimmte Konten ausgeschlossen werden, damit Microsoft Managed Desktop ordnungsgemäß ausgeführt werden kann.
+Nachdem Sie die Registrierung in Microsoft Managed Desktop abgeschlossen haben, müssen Sie bestimmte Einstellungen für Microsoft InTune und Azure Active Directory (Azure AD) anpassen, um die Verwaltung zu ermöglichen und die Sicherheit aufrechtzuerhalten. Legen Sie die folgenden Einstellungen fest, um die Azure Ad Gruppen auszuschließen, die Microsoft Managed Desktop-Geräte und-Benutzer enthalten. Schritte zum Ausschließen von Gruppen finden Sie unter [Conditional Access: users and Groups](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups#exclude-users).
 
-Gehen Sie dazu wie folgt vor:
+## <a name="microsoft-intune-settings"></a>Microsoft InTune-Einstellungen
 
-1. Weitere Informationen finden Sie im Abschnitt "Rollback Steps" unter [Vorgehensweise: Planen der Bereitstellung des bedingten Zugriffs in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access#rollback-steps).
-2. Führen Sie die folgenden Schritte aus, um die Gruppe der *modernen Arbeitsplatz-Dienstkonten* für alle Richtlinien auszuschließen.
+- Autopilot-Bereitstellungsprofil: schließt die **modernen Arbeitsplatz Geräte aus – alle**  Azure Ad Gruppe. Schritte finden Sie unter [Registrieren von Windows-Geräten in InTune mithilfe von Windows Autopilot](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot).
+- Richtlinien für bedingten Zugriff: schließt die **modernen Dienstkonten für den Arbeitsplatz** Azure Ad Gruppe aus. Schritte finden Sie unter [bedingter Zugriff: Benutzer und Gruppen](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups).
+- Mehrstufige Authentifizierung: Stellen Sie sicher, dass alle bedingten Zugriffsrichtlinien, die mehrstufige Authentifizierung erfordern, die Azure Ad Gruppe für **moderne Arbeitsplatz Dienstkonten** ausschließen. Weitere Informationen finden Sie unter [bedingter Zugriffsrichtlinien](../get-ready/readiness-assessment-fix.md#conditional-access-policies) und [bedingter Zugriff: MFA für alle Benutzer erforderlich](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa).
+- Sicherheitsbasis: schließt die **modernen Arbeitsplatz Geräte aus – alle**  Azure Ad Gruppe. Eine schrittweise Anleitung finden Sie unter [use Security Baselines to configure Windows 10 Devices in InTune](https://docs.microsoft.com/mem/intune/protect/security-baselines).
+- Windows 10-Update Ring: schließt die **modernen Arbeitsplatz Geräte aus – alle**  Azure Ad Gruppe. Eine schrittweise Anleitung finden Sie unter [Manage Windows 10 Softwareupdates in InTune](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure).
 
 
-Wenn Sie Probleme mit dem bedingten Zugriff haben, wenden Sie sich an den Administrator [Support](../working-with-managed-desktop/admin-support.md).
+## <a name="azure-active-directory-settings"></a>Azure Active Directory-Einstellungen
+
+Self-Service Password Reset: Wählen Sie **ausgewählte** Einstellung aus, und wählen Sie dann **moderne Arbeitsplatz Geräte – alle** Azure Ad Gruppe aus. Weitere Informationen finden Sie unter [Lernprogramm: Aktivieren von Benutzern zum Entsperren Ihres Kontos oder Zurücksetzen von Kennwörtern mithilfe von Azure Active Directory Self-Service Password Reset](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
+
+
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Schritte zum Einstieg in Microsoft Managed Desktop
 
 1. [Hinzufügen und Überprüfen von Administrator-Kontakten im-Administratorportal](add-admin-contacts.md)
-2. Anpassen des bedingten Zugriffs (dieses Thema)
+2. Anpassen von Einstellungen nach der Registrierung (dieser Artikel)
 3. [Zuweisen von Lizenzen](assign-licenses.md)
 4. [Intune-Unternehmensportal bereitstellen](company-portal.md)
 5. [Aktivieren von Enterprise State Roaming](enterprise-state-roaming.md)

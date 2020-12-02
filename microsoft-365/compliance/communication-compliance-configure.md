@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d41965741bc02876cde7e99904194c9f5787202a
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: a3c9aabd370117c085574144ff9450e74ae277c7
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357190"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527524"
 ---
 # <a name="get-started-with-communication-compliance"></a>Erste Schritte mit der Kommunikationscompliance
 
@@ -45,6 +45,7 @@ Bevor Sie mit der Kommunikation Compliance beginnen, sollten Sie Ihr [Microsoft 
 - Microsoft 365 G5-Abonnement + das Microsoft 365 G5-Compliance-Add-on
 - Microsoft 365 G5-Abonnement + das Microsoft 365 G5-Insider Risiko Management-Add-on
 - Office 365 Enterprise E5-Abonnement (kostenpflichtige oder Testversion)
+- Office 365 A5-Abonnement (kostenpflichtige oder Testversion)
 - Office 365 Enterprise E3-Abonnement + das Office 365 Advanced Compliance-Add-on (nicht mehr für neue Abonnements verfügbar, siehe Hinweis)
 
 Benutzern, die in Kommunikationsrichtlinien Richtlinien enthalten sind, muss eine der oben genannten Lizenzen zugewiesen sein.
@@ -52,7 +53,7 @@ Benutzern, die in Kommunikationsrichtlinien Richtlinien enthalten sind, muss ein
 >[!IMPORTANT]
 >Office 365 Advanced Compliance wird nicht mehr als eigenständiges Abonnement verkauft. Wenn die aktuellen Abonnements ablaufen, sollten Kunden zu einem der oben genannten Abonnements übergehen, die die gleichen oder zusätzliche Compliance-Features enthalten.
 
-Wenn Sie keinen Office 365 Enterprise E5-Plan haben und das Insider Risk Management ausprobieren möchten, können Sie [Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) zu Ihrem vorhandenen Abonnement hinzufügen oder [sich für eine Testversion](https://www.microsoft.com/microsoft-365/enterprise) von Office 365 Enterprise E5 anmelden.
+Wenn Sie keinen Office 365 Enterprise E5-Plan haben und die Kommunikations Kompatibilität testen möchten, können Sie Microsoft 365 zu Ihrem vorhandenen Abonnement [Hinzufügen](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) oder [sich für eine Testversion](https://www.microsoft.com/microsoft-365/enterprise) von Office 365 Enterprise E5 registrieren.
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>Schritt 1 (erforderlich): Aktivieren von Berechtigungen für die Kommunikations Kompatibilität
 
@@ -125,10 +126,10 @@ Eine Schritt-für-Schritt-Anleitung zum Aktivieren der Überwachung finden Sie u
 
 Verwenden Sie das folgende Diagramm, um Sie bei der Konfiguration von Gruppen in Ihrer Organisation für Kommunikationsrichtlinien zu unterstützen:
 
-| Richtlinien Mitglied | Unterstützte Gruppen | Nicht unterstützte Gruppen |
+| **Richtlinien Mitglied** | **Unterstützte Gruppen** | **Nicht unterstützte Gruppen** |
 |:-----|:-----|:-----|
-|Beaufsichtigte Benutzer <br> Nicht überwachte Benutzer | Verteilergruppen <br> Microsoft 365-Gruppen | Dynamische Verteilergruppen <br> E-Mail-aktivierte Sicherheitsgruppen |
-| Prüfer | Keine | Verteilergruppen <br> Dynamische Verteilergruppen <br> E-Mail-aktivierte Sicherheitsgruppen |
+|Beaufsichtigte Benutzer <br> Nicht überwachte Benutzer | Verteilergruppen <br> Microsoft 365-Gruppen | Dynamische Verteilergruppen <br> Geschachtelte Verteilergruppen <br> E-Mail-aktivierte Sicherheitsgruppen |
+| Prüfer | Keine | Verteilergruppen <br> Dynamische Verteilergruppen <br> Geschachtelte Verteilergruppen <br> E-Mail-aktivierte Sicherheitsgruppen |
   
 Wenn Sie eine Verteilergruppe in der Richtlinie zuweisen, überwacht die Richtlinie alle e-Mails und Microsoft Teams-Chats von jedem Benutzer in der Verteilergruppe. Wenn Sie eine Microsoft 365-Gruppe in der Richtlinie zuweisen, überwacht die Richtlinie alle e-Mails und teamchats, die an diese Gruppe gesendet werden, nicht die einzelnen e-Mails und Chats, die von den einzelnen Gruppenmitgliedern empfangen werden.
 
@@ -217,7 +218,7 @@ Sie können auch festlegen, dass für angezeigte Benutzernamen Anonymisierung ak
 
 4. Um die Anonymisierung zu aktivieren, wählen Sie **Anonyme Versionen von Benutzernamen anzeigen** aus.
 
-5. Klicken Sie auf **Speichern**.
+5. Wählen Sie **Speichern** aus.
 
 6. Navigieren Sie zur Registerkarte **Notiz Vorlagen** , und wählen Sie dann **Notizvorlage erstellen** aus.
 

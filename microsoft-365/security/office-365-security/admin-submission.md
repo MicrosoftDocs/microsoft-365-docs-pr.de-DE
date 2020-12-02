@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können erfahren, wie Sie das Übermittlungen-Portal im Security & Compliance Center verwenden, um verdächtige e-Mails, verdächtige Phishing-Mails, Spam und andere potenziell schädliche Nachrichten, URLs und Dateien für die Überprüfung an Microsoft zu übermitteln.
-ms.openlocfilehash: be2fc8e41e3b53923b0297f30dfb102bbabd7489
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 1e133c0d4a875fc9735cc8a92e42b6ffeee6dd5f
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877267"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527745"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Verwenden von Administrator-Übermittlung, um verdächtige Spam- oder Phishing-Nachrichten, URLs und Dateien an Microsoft zu übermitteln
 
@@ -52,7 +52,7 @@ Weitere Möglichkeiten zum Übermitteln von e-Mail-Nachrichten, URLs und Anlagen
 
 ## <a name="report-suspicious-content-to-microsoft"></a>Verdächtigen Inhalt an Microsoft melden
 
-1. Wechseln Sie im Security & Compliance Center zu **Threat Management** \> -über **mittlungen** , stellen Sie sicher, dass Sie sich auf der Registerkarte Admin-über **mittlungen** befinden, und klicken Sie dann auf **neue Übermittlung**.
+1. Wechseln Sie im Security & Compliance Center zu **Threat Management** \> -über **mittlungen**, stellen Sie sicher, dass Sie sich auf der Registerkarte Admin-über **mittlungen** befinden, und klicken Sie dann auf **neue Übermittlung**.
 
 2. Verwenden Sie das **neue Übermittlungs** Flyout, das angezeigt wird, um die Nachricht, die URL oder Anlage zu übermitteln, wie in den folgenden Abschnitten beschrieben.
 
@@ -60,9 +60,12 @@ Weitere Möglichkeiten zum Übermitteln von e-Mail-Nachrichten, URLs und Anlagen
 
 1. Wählen Sie im Abschnitt **Objekttyp** die Option **e-Mail** aus. Verwenden Sie im Abschnitt **Übermittlungs Format** eine der folgenden Optionen:
 
-   - **Netzwerknachrichten-ID** : Dies ist ein GUID-Wert, der im **X-MS-Exchange-Organization-Network-Message-ID** -Header in der Nachricht zur Verfügung steht.
+   - **Netzwerknachrichten-ID**: Dies ist ein GUID-Wert, der im **X-MS-Exchange-Organization-Network-Message-ID** -Header in der Nachricht zur Verfügung steht.
 
-   - **Datei** : Klicken Sie auf **Datei auswählen**. Suchen Sie in dem Dialogfeld, das geöffnet wird, nach der EML-oder msg-Datei, und wählen Sie Sie aus, und klicken Sie dann auf **Öffnen**.
+   - **Datei**: Klicken Sie auf **Datei auswählen**. Suchen Sie in dem Dialogfeld, das geöffnet wird, nach der EML-oder msg-Datei, und wählen Sie Sie aus, und klicken Sie dann auf **Öffnen**.
+   
+   > [!NOTE]
+   > Administratoren mit Defender für Office 365 Plan 1 oder Plan 2 können Nachrichten senden, die älter als 30 Tage sind. Andere Administratoren werden nur 7 Tage zurückkehren können.
 
 2. Geben Sie im Abschnitt **Empfänger** einen oder mehrere Empfänger an, für die Sie eine Richtlinienüberprüfung ausführen möchten. Durch die Richtlinienüberprüfung wird ermittelt, ob die e-Mail-Überprüfung aufgrund von Benutzer-oder Organisationsrichtlinien umgangen wurde.
 
@@ -70,13 +73,9 @@ Weitere Möglichkeiten zum Übermitteln von e-Mail-Nachrichten, URLs und Anlagen
 
    - **Sollte nicht blockiert worden sein**
 
-   - **Sollte blockiert worden sein** : Wählen Sie **Spam** , **Phishing** oder **Schadsoftware** aus. Wenn Sie nicht sicher sind, verwenden Sie Ihr Bestes Urteil.
+   - **Sollte blockiert worden sein**: Wählen Sie **Spam**, **Phishing** oder **Schadsoftware** aus. Wenn Sie nicht sicher sind, verwenden Sie Ihr Bestes Urteil.
 
-4. Wenn der Filter aufgrund von Richtlinien bei der Übermittlung umgangen wurde, werden Informationen zu dieser Richtlinie angezeigt.
-
-   Wenn der Filter aufgrund einer oder mehrerer Richtlinien nicht umgangen wurde, wird die Überprüfung in einigen Minuten abgeschlossen. Sie erhalten zusätzliche Informationen über die Übermittlung, indem Sie auf den Link Status klicken. Dies beinhaltet die Ergebnisse der Richtlinienüberprüfung und das Ergebnis der erneuten Überprüfung. Hinweis Dadurch wird die e-Mail-Nachricht nicht über den Microsoft Defender für Office 365 vollständigen Filter Stapel ausgeführt, es wird jedoch ein partieller erneuter Scan auf der Grundlage bestimmter Attribute der e-Mail, der URL oder der Datei ausgeführt.
-
-5. Wenn Sie fertig sind, klicken Sie auf die Schaltfläche **Absenden** .
+4. Wenn Sie fertig sind, klicken Sie auf die Schaltfläche **Absenden** .
 
 ![URL-Übermittlungs Beispiel](../../media/submission-flyout-email.PNG)
 
@@ -88,7 +87,7 @@ Weitere Möglichkeiten zum Übermitteln von e-Mail-Nachrichten, URLs und Anlagen
 
    - **Sollte nicht blockiert worden sein**
 
-   - **Sollte blockiert worden sein** : Wählen Sie **Phishing** oder **Schadsoftware** aus.
+   - **Sollte blockiert worden sein**: Wählen Sie **Phishing** oder **Schadsoftware** aus.
 
 3. Wenn Sie fertig sind, klicken Sie auf die Schaltfläche **Absenden** .
 
@@ -104,7 +103,7 @@ Weitere Möglichkeiten zum Übermitteln von e-Mail-Nachrichten, URLs und Anlagen
 
    - **Sollte nicht blockiert worden sein**
 
-   - **Sollte blockiert worden sein** : **Schadsoftware** ist die einzige Wahl und wird automatisch ausgewählt..
+   - **Sollte blockiert worden sein**: **Schadsoftware** ist die einzige Wahl und wird automatisch ausgewählt..
 
 4. Wenn Sie fertig sind, klicken Sie auf die Schaltfläche **Absenden** .
 
@@ -112,7 +111,7 @@ Weitere Möglichkeiten zum Übermitteln von e-Mail-Nachrichten, URLs und Anlagen
 
 ## <a name="view-admin-submissions"></a>Anzeigen von Übermittlungen von Administratoren
 
-Wechseln Sie im Security & Compliance Center zu **Threat Management** \> -über **mittlungen** , stellen Sie sicher, dass Sie sich auf der Registerkarte Admin-über **mittlungen** befinden, und klicken Sie dann auf **neue Übermittlung**.
+Wechseln Sie im Security & Compliance Center zu **Threat Management** \> -über **mittlungen**, stellen Sie sicher, dass Sie sich auf der Registerkarte Admin-über **mittlungen** befinden, und klicken Sie dann auf **neue Übermittlung**.
 
 Oben auf der Seite können Sie ein Startdatum, ein Enddatum und (standardmäßig) nach **Übermittlungs-ID** (ein GUID-Wert, der jeder Übermittlung zugewiesen ist) filtern, indem Sie einen Wert in das Feld eingeben und auf Aktualisieren klicken ![ ](../../media/scc-quarantine-refresh.png) . Update
 
@@ -137,7 +136,7 @@ Klicken Sie auf die Registerkarte **e-Mail** .
 Sie können auf die Schaltfläche **Spaltenoptionen** am unteren Rand der Seite klicken, um Spalten aus der Ansicht hinzuzufügen oder zu entfernen:
 
 - **Date**
-- **Übermittlungs-ID** : ein GUID-Wert, der jeder Übermittlung zugewiesen ist.
+- **Übermittlungs-ID**: ein GUID-Wert, der jeder Übermittlung zugewiesen ist.
 - **Eingereicht von**<sup>\*</sup>
 - **Betreff**<sup>\*</sup>
 - **Sender**
@@ -145,10 +144,19 @@ Sie können auf die Schaltfläche **Spaltenoptionen** am unteren Rand der Seite 
 - **Übermittlungs**
 - **Zustellungs Grund**
 - **Status**<sup>\*</sup>
-- **Steuerelementtyp**
-- **Steuerelementquelle**
 
   <sup>\*</sup> Wenn Sie auf diesen Wert klicken, werden ausführliche Informationen in einem Flyout angezeigt.
+
+#### <a name="admin-submission-rescan-details"></a>Details zur erneuten Überprüfung der Administrator Übermittlung
+
+Nachrichten, die in admin-Übermittlungen übermittelt werden, werden erneut gescannt, und die Ergebnisse werden im Detail-Flyout angezeigt:
+
+- Wenn ein Fehler bei der e-Mail-Authentifizierung des Absenders zum Zeitpunkt der Zustellung aufgetreten ist.
+- Informationen zu allen Richtlinien Treffern, die das Urteil einer Nachricht beeinträchtigt oder außer Kraft gesetzt haben könnten.
+- Aktuelle detonations Ergebnisse, um zu ermitteln, ob die in der Nachricht enthaltenen URLs oder Dateien bösartig sind oder nicht.
+- Feedback von Grader.
+
+Wenn eine Außerkraftsetzung gefunden wurde, sollte der erneute Scan in einigen Minuten abgeschlossen werden. Wenn kein Problem in der e-Mail-Authentifizierung vorliegt oder die Zustellung von einer Außerkraftsetzung nicht betroffen war, kann das Feedback von Grader bis zu einem Tag dauern.
 
 ### <a name="view-admin-url-submissions"></a>Anzeigen von Administratoren-URL-Übermittlungen
 

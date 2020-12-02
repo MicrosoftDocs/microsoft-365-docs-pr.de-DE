@@ -2,8 +2,8 @@
 title: Löschen eines Benutzers aus Ihrer Organisation
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Hier erfahren Sie, wie Sie ein Benutzerkonto löschen. Entscheiden Sie, was mit dem e-Mail-und OneDrive-Inhalt des Benutzers zu tun ist. Und entscheiden Sie, ob Sie die Produktlizenz beibehalten oder nicht mehr bezahlen möchten.
-ms.openlocfilehash: bcccaa13614114c9588c43d857336bce44a84147
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: 45cf8b9173a3a4260fe664b809f47ab14b57d9fe
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324560"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551376"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Löschen eines Benutzers aus Ihrer Organisation
   
@@ -37,7 +37,7 @@ ms.locfileid: "47324560"
 - Sie haben 30 Tage Zeit, das Konto [wiederherzustellen](restore-user.md), bevor die Daten des Benutzers endgültig gelöscht werden.
 - Wenn Sie die OneDrive-Daten des Benutzers beibehalten möchten, müssen Sie ihn an einen anderen Speicherort positionieren. Sie können die Daten sogar bis zu 30 Tage nach dem Löschen des Kontos verlagern. Weitere Informationen finden Sie unter [Get Access to and Back up a Ex User es Data](get-access-to-and-back-up-a-former-user-s-data.md). Sie müssen Ihre SharePoint-Dateien nicht bewegen; Sie haben weiterhin Zugriff auf diese.
 - Wenn Sie die E-Mails des Benutzers behalten möchten, müssen Sie diese an einen anderen Speicherort verschieben, **BEVOR** Sie das Konto löschen. Wenn Sie das Konto bereits gelöscht haben und dies weniger als 30 Tage her ist, können Sie das Konto wiederherstellen und dann die E-Mail-Daten verschieben. Anschließend löschen Sie das Konto. Weitere Informationen finden Sie unter [Zugreifen auf die und Sichern der Daten eines ehemaligen Mitarbeiters](get-access-to-and-back-up-a-former-user-s-data.md).
-- Wenn Sie ein Enterprise-Abonnement wie Office 365 Enterprise E3 haben, können Sie die Postfachdaten eines gelöschten Benutzerkontos beibehalten, indem Sie es in ein *inaktives Postfach*umwandeln. Weitere Informationen dazu finden Sie unter [Verwalten inaktiver Postfächer in Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365).
+- Wenn Sie ein Enterprise-Abonnement wie Office 365 Enterprise E3 haben, können Sie die Postfachdaten eines gelöschten Benutzerkontos beibehalten, indem Sie es in ein *inaktives Postfach* umwandeln. Weitere Informationen dazu finden Sie unter [Verwalten inaktiver Postfächer in Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365).
 
 ## <a name="global-admin-delete-a-user-stop-paying-for-their-license-and-choose-what-to-do-with-their-email-and-onedrive-content"></a>Globaler Administrator: Löschen eines Benutzers, Beenden der Zahlung für seine Lizenz und Auswählen, was mit seinen E-Mails und OneDrive-Inhalten geschehen soll.
 
@@ -70,7 +70,7 @@ Da Sie in der geführten Oberfläche durch die Schritte zum Löschen eines Benut
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktive Benutzer</a>.
 ::: moniker-end
 
-2. Wählen Sie den Benutzer aus, den Sie löschen möchten, und wählen Sie dann **Benutzer löschen**aus.
+2. Wählen Sie den Benutzer aus, den Sie löschen möchten, und wählen Sie dann **Benutzer löschen** aus.
 
 ## <a name="user-management-admin-delete-one-or-more-users-from-office-365"></a>Benutzerverwaltungsadministrator – Löschen von Benutzern aus Office 365
 
@@ -117,11 +117,11 @@ Das Verringern der Anzahl von Lizenzen ist ein separater Schritt, der nur vom gl
 
 2. Wählen Sie auf der Registerkarte **Produkte** das Abonnement aus, für das Sie Lizenzen entfernen möchten.
 
-3. Wählen Sie auf der Seite Abonnementdetails die Option **Lizenzen entfernen**aus.
+3. Wählen Sie auf der Seite Abonnementdetails die Option **Lizenzen entfernen** aus.
 
-4. Geben Sie im Bereich **Lizenzen entfernen** unter **neue Menge**im Feld **Gesamt Lizenzen** die Gesamtzahl der Lizenzen ein, die Sie für dieses Abonnement benötigen. Wenn Sie beispielsweise 100 Lizenzen haben und fünf davon entfernen möchten, geben Sie 95 ein.
+4. Geben Sie im Bereich **Lizenzen entfernen** unter **neue Menge** im Feld **Gesamt Lizenzen** die Gesamtzahl der Lizenzen ein, die Sie für dieses Abonnement benötigen. Wenn Sie beispielsweise 100 Lizenzen haben und fünf davon entfernen möchten, geben Sie 95 ein.
 
-5. Klicken Sie auf **Speichern**.
+5. Wählen Sie **Speichern** aus.
 
 Wenn Sie später die Schritte zum Hinzufügen einer anderen Person zu Ihrem Unternehmen ausführen, werden Sie aufgefordert, gleichzeitig eine Lizenz mit nur einem Schritt zu erwerben!
 
@@ -157,7 +157,7 @@ Nachfolgend sind die beim Löschen eines Benutzers am häufigsten auftretenden P
   
 - **Sie erhalten eine Fehlermeldung mit den Zeilen "Benutzer kann nicht gelöscht werden. Versuchen Sie es später erneut."** Überprüfen Sie, ob für das Konto eine e-Mail-Weiterleitung eingerichtet wurde oder ob es in ein freigegebenes Postfach konvertiert wurde. Beide Fällen verursachen diesen Fehler. Wenn für das Konto die E-Mail-Weiterleitung eingerichtet wurde oder es in ein freigegebenes Postfach konvertiert wurde, löschen Sie es nicht.
 
-- **Sie verfügen nicht über die entsprechenden Berechtigungen zum Löschen eines Benutzer**s. Nur Personen, die [Microsoft 365 globale Administratoren oder Benutzer Verwaltungs Administratoren](about-admin-roles.md) sind, können Benutzer löschen. Normalerweise ist das der technische Support in Ihrer Schule/Uni oder in Ihrem Unternehmen.
+- **Sie verfügen nicht über die entsprechenden Berechtigungen zum Löschen eines Benutzer** s. Nur Personen, die [Microsoft 365 globale Administratoren oder Benutzer Verwaltungs Administratoren](about-admin-roles.md) sind, können Benutzer löschen. Normalerweise ist das der technische Support in Ihrer Schule/Uni oder in Ihrem Unternehmen.
 
 - **Sie haben den Benutzer gelöscht, aber dessen Name wird weiterhin in Ihrem globalen Adressbuch angezeigt**. Dies ist der Fall, wenn ein Unternehmen Active Directory verwendet. Sie müssen das Benutzerkonto aus Active Directory löschen. Anweisungen finden Sie unter [Löschen eines Benutzerkontos.](https://go.microsoft.com/fwlink/p/?linkid=841808)
 

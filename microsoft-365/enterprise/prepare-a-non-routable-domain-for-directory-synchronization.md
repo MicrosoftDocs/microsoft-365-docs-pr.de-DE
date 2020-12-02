@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Hier erfahren Sie, was Sie tun müssen, wenn Sie vor der Synchronisierung mit Microsoft 365 eine nicht-routale-Domäne mit Ihren lokalen Benutzern verbunden haben.
-ms.openlocfilehash: 21344cb0d495691a96867d401a5262fbbcfd02d4
-ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
+ms.openlocfilehash: f38f6143b6e26b2849c174f74c94d009ddea73cd
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49002381"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527721"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Vorbereiten einer nicht routingfähigen Domäne für die Verzeichnissynchronisierung
 Wenn Sie Ihr lokales Verzeichnis mit Microsoft 365 synchronisieren, müssen Sie über eine verifizierte Domäne in Azure Active Directory (Azure AD) verfügen. Nur die Benutzerprinzipalnamen (User Principal Names, UPN), die der lokalen Domäne zugeordnet sind, werden synchronisiert. Allerdings wird jeder UPN, der eine nicht Routingfähige Domäne enthält, beispielsweise. local (wie Billa@contoso. local), mit einer. onmicrosoft.com-Domäne (wie Billa@contoso.onmicrosoft.com) synchronisiert. 
@@ -60,7 +60,7 @@ Nachdem Sie die UPNs für die Verwendung der überprüften Domäne aktualisiert 
     
     ![Wählen Sie Active Directory Domänen und Vertrauensstellungen aus.](../media/46b6e007-9741-44af-8517-6f682e0ac974.png)
   
-2. Klicken Sie im Fenster **Active Directory Domänen und Vertrauensstellungen** mit der rechten Maustaste auf **Active Directory Domänen und Vertrauensstellungen** , und wählen Sie dann **Eigenschaften** aus.
+2. Klicken Sie im Fenster **Active Directory Domänen und Vertrauensstellungen** mit der rechten Maustaste auf **Active Directory Domänen und Vertrauensstellungen**, und wählen Sie dann **Eigenschaften** aus.
     
     ![Klicken Sie mit der rechten Maustaste auf Active Directory Domänen und Vertrauensstellungen, und wählen Sie Eigenschaften](../media/39d20812-ffb5-4ba9-8d7b-477377ac360d.png)
   
@@ -91,7 +91,7 @@ Nachdem Sie die UPNs für die Verwendung der überprüften Domäne aktualisiert 
 
 Wenn Sie viele Benutzer aktualisieren müssen, ist es einfacher, Windows PowerShell zu verwenden. Im folgenden Beispiel werden die Cmdlets [Get-User](https://go.microsoft.com/fwlink/p/?LinkId=624312) und [festgelegt-User](https://go.microsoft.com/fwlink/p/?LinkId=624313) verwendet, um alle contoso. local-Suffixe in contoso.com zu ändern. 
 
-Beispiel für Feinde können Sie die folgenden Windows PowerShell Befehle ausführen, um alle contoso. local-Suffixe auf contoso.com zu aktualisieren:
+Sie können beispielsweise die folgenden Windows PowerShell Befehle ausführen, um alle contoso. local-Suffixe auf contoso.com zu aktualisieren:
     
   ```powershell
   $LocalUsers = Get-ADUser -Filter "UserPrincipalName -like '*contoso.local'" -Properties userPrincipalName -ResultSetSize $null

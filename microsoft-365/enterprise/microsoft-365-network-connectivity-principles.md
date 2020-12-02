@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Dieser Artikel enthält die neueste Anleitung für die sichere Optimierung der Microsoft 365-Netzwerkkonnektivität.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8036a4759f959a075ad0398e823116491e128c0b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: a6f104f53abd0a9aa2376b09c93af96d7f8178e8
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847012"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519739"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Prinzipien von Microsoft 365-Netzwerkverbindungen
 
@@ -67,7 +67,7 @@ Das Hauptziel des Netzwerkdesigns sollte sein, die Latenz zu minimieren, indem d
   
 Die Identifizierung von Microsoft 365-Netzwerkdatenverkehr ist der erste Schritt, um den Datenverkehr vom allgemeinen Internet-Netzwerkdatenverkehr unterscheiden zu können. Die Microsoft 365-Konnektivität kann optimiert werden, indem eine Kombination von Ansätzen wie Netzwerk-Routing-Optimierung, Firewallregeln, Browser-Proxyeinstellungen und Umgehung von Netzwerküberprüfungsgeräten für bestimmte Endpunkte implementiert wird.
   
-Im früheren Microsoft 365-Optimierungsleitfaden wurden Microsoft 365-Endpunkte in zwei Kategorien unterteilt: **Erforderlich** und **Optional**. Nachdem Endpunkte zur Unterstützung neuer Microsoft 365-Dienste und -Features hinzugefügt wurden, haben wir die Microsoft 365-Endpunkte in drei Kategorien unterteilt: **Optimieren** , **Zulassen** und **Standard**. Richtlinien für jede Kategorie gelten für alle Endpunkte in der Kategorie, wodurch Optimierungen einfacher zu verstehen und zu implementieren sind.
+Im früheren Microsoft 365-Optimierungsleitfaden wurden Microsoft 365-Endpunkte in zwei Kategorien unterteilt: **Erforderlich** und **Optional**. Nachdem Endpunkte zur Unterstützung neuer Microsoft 365-Dienste und -Features hinzugefügt wurden, haben wir die Microsoft 365-Endpunkte in drei Kategorien unterteilt: **Optimieren**, **Zulassen** und **Standard**. Richtlinien für jede Kategorie gelten für alle Endpunkte in der Kategorie, wodurch Optimierungen einfacher zu verstehen und zu implementieren sind.
   
 Weitere Informationen zu den Microsoft 365-Endpunktkategorien und Optimierungsmethoden finden Sie im Abschnitt [Neue Office 365-Endpunktkategorien](microsoft-365-network-connectivity-principles.md#BKMK_Categories).
   
@@ -157,17 +157,17 @@ Office 365-Endpunkte stellen einen vielfältigen Satz von Netzwerkadressen und S
   
 In unserem früheren Leitfaden zur Verwaltung von Microsoft 365-Datenverkehr wurden Endpunkte in zwei Kategorien unterteilt: **Erforderlich** und **Optional**. Endpunkte innerhalb jeder Kategorie erforderten je nach Kritikalität des Dienstes unterschiedliche Optimierungen und viele Kunden hatten Schwierigkeiten, die Anwendung derselben Netzwerkoptimierungen auf die gesamte Liste der Office 365-URLs und -IP-Adressen zu rechtfertigen.
   
-Im neuen Modell werden die Endpunkte in drei Kategorien unterteilt **Optimieren** , **Zulassen** und **Standard**. So können Anstrengungen zur Netzwerkoptimierung prioritätsbasiert fokussiert werden, um Leistung und Rentabilität optimal zu verbessern. Die Endpunkte werden in die oben aufgeführten Kategorien konsolidiert, basierend auf der Sensibilität der effektiven Benutzererfahrung hinsichtlich Netzwerkqualität, Volumen und Leistung von Szenarien und einfacher Implementierung. Auf die gleiche Weise können empfohlene Optimierungen auf alle Endpunkte in der jeweiligen Kategorie angewendet werden.
+Im neuen Modell werden die Endpunkte in drei Kategorien unterteilt **Optimieren**, **Zulassen** und **Standard**. So können Anstrengungen zur Netzwerkoptimierung prioritätsbasiert fokussiert werden, um Leistung und Rentabilität optimal zu verbessern. Die Endpunkte werden in die oben aufgeführten Kategorien konsolidiert, basierend auf der Sensibilität der effektiven Benutzererfahrung hinsichtlich Netzwerkqualität, Volumen und Leistung von Szenarien und einfacher Implementierung. Auf die gleiche Weise können empfohlene Optimierungen auf alle Endpunkte in der jeweiligen Kategorie angewendet werden.
   
-- **Optimieren** : Endpunkte sind für Konnektivität zu jedem Office 365-Dienst erforderlich und machen über 75 % der Bandbreite, Verbindungen und Datenmenge von Office 365 aus. Diese Endpunkte bilden Office 365-Szenarien ab, bei denen Netzwerkleistung, Latenz und Verfügbarkeit die höchste Priorität haben. Alle Endpunkte werden in Microsoft-Rechenzentren gehostet. Die Anzahl der Änderungen an den Endpunkten in dieser Kategorie wird voraussichtlich erheblich geringer sein als bei den Endpunkten in den anderen beiden Kategorien. Diese Kategorie enthält eine kleine Gruppe (in einer Größenordnung von ~ 10) von Schlüssel-URLs und eine definierte Gruppe von IP-Subnetzen, die den wichtigsten Office 365-Workloads wie Exchange Online, SharePoint Online, Skype for Business Online und Microsoft Teams zugeordnet sind.
+- **Optimieren**: Endpunkte sind für Konnektivität zu jedem Office 365-Dienst erforderlich und machen über 75 % der Bandbreite, Verbindungen und Datenmenge von Office 365 aus. Diese Endpunkte bilden Office 365-Szenarien ab, bei denen Netzwerkleistung, Latenz und Verfügbarkeit die höchste Priorität haben. Alle Endpunkte werden in Microsoft-Rechenzentren gehostet. Die Anzahl der Änderungen an den Endpunkten in dieser Kategorie wird voraussichtlich erheblich geringer sein als bei den Endpunkten in den anderen beiden Kategorien. Diese Kategorie enthält eine kleine Gruppe (in einer Größenordnung von ~ 10) von Schlüssel-URLs und eine definierte Gruppe von IP-Subnetzen, die den wichtigsten Office 365-Workloads wie Exchange Online, SharePoint Online, Skype for Business Online und Microsoft Teams zugeordnet sind.
 
     Eine komprimierte Liste mit gut definierten kritischen Endpunkten soll Ihnen helfen, hochwertige Netzwerkoptimierungen für diese Ziele schneller und einfacher zu planen und zu implementieren.
 
-    Beispiele für *Optimieren* -Endpunkte sind etwa *https://outlook.office365.com* , *https://\<tenant\>.sharepoint.com* und *https://\<tenant\>-my.sharepoint.com*.
+    Beispiele für *Optimieren*-Endpunkte sind etwa *https://outlook.office365.com*, *https://\<tenant\>.sharepoint.com* und *https://\<tenant\>-my.sharepoint.com*.
 
     Zu Optimierungsmethoden zählen folgende:
 
-  - Umgehung von *Optimieren* -Endpunkten auf Netzwerkgeräten und Diensten, die Abfangen von Datenverkehr, SSL-Entschlüsselung, umfassende Paketüberprüfung und Inhaltsfilterung ausführen.
+  - Umgehung von *Optimieren*-Endpunkten auf Netzwerkgeräten und Diensten, die Abfangen von Datenverkehr, SSL-Entschlüsselung, umfassende Paketüberprüfung und Inhaltsfilterung ausführen.
   - Umgehung von lokalen Proxy-Geräten und cloudbasierten Proxy-Diensten, die häufig für allgemeines Browsen im Internet verwendet werden.
   - Priorisieren Sie die Auswertung dieser Endpunkte als vollständig vertrauenswürdig durch Ihre Netzwerkinfrastruktur und Perimetersysteme.
   - Priorisieren Sie die Reduktion oder Eliminierung von WAN-Backhauling und unterstützen Sie den direkten verteilten internetbasierten Ausgang für diese Endpunkte so nahe wie möglich zu Benutzern/Zweigstellen.
@@ -175,21 +175,21 @@ Im neuen Modell werden die Endpunkte in drei Kategorien unterteilt **Optimieren*
   - Stellen Sie sicher, dass die durch die DNS-Namensauflösung zurückgegebenen IP-Adressen dem Routing-Ausgangspfad für diese Endpunkte entsprechen.
   - Priorisieren Sie diese Endpunkte für die SD-WAN-Integration für direktes Routing mit minimaler Latenz in den nächstgelegenen Internet-Peering-Punkt des globalen Microsoft-Netzwerks.
 
-- **Zulassen** : Endpunkte sind für die Konnektivität zu speziellen Microsoft 365-Diensten und -Funktionen erforderlich, sind jedoch in Bezug auf Leistung und Latenz im Netzwerk nicht so sensibel sind wie diejenigen in der Kategorie *Optimieren*. Die gesamten Netzwerkanforderungen dieser Endpunkte im Hinblick auf Bandbreite und Verbindungsanzahl sind ebenfalls geringer. Diese Endpunkte sind Office 365 zugeordnet und werden in Microsoft-Rechenzentren gehostet. Sie stellen eine breite Palette von Office 365-Mikrodiensten und deren Abhängigkeiten (von ~ 100-URLs) dar und es ist davon auszugehen, dass sie eine höhere Änderungsrate als diejenigen in der Kategorie *Optimieren* aufweisen. Nicht alle Endpunkte in dieser Kategorie sind definierten dedizierten IP-Subnetzen zugeordnet.
+- **Zulassen**: Endpunkte sind für die Konnektivität zu speziellen Microsoft 365-Diensten und -Funktionen erforderlich, sind jedoch in Bezug auf Leistung und Latenz im Netzwerk nicht so sensibel sind wie diejenigen in der Kategorie *Optimieren*. Die gesamten Netzwerkanforderungen dieser Endpunkte im Hinblick auf Bandbreite und Verbindungsanzahl sind ebenfalls geringer. Diese Endpunkte sind Office 365 zugeordnet und werden in Microsoft-Rechenzentren gehostet. Sie stellen eine breite Palette von Office 365-Mikrodiensten und deren Abhängigkeiten (von ~ 100-URLs) dar und es ist davon auszugehen, dass sie eine höhere Änderungsrate als diejenigen in der Kategorie *Optimieren* aufweisen. Nicht alle Endpunkte in dieser Kategorie sind definierten dedizierten IP-Subnetzen zugeordnet.
 
-    Netzwerkoptimierungen für *Zulassen* -Endpunkte können das Office 365-Benutzererlebnis verbessern, aber einige Kunden entscheiden sich möglicherweise dazu, diese Optimierungen enger einzugrenzen, um Änderungen am Netzwerk möglichst gering zu halten.
+    Netzwerkoptimierungen für *Zulassen*-Endpunkte können das Office 365-Benutzererlebnis verbessern, aber einige Kunden entscheiden sich möglicherweise dazu, diese Optimierungen enger einzugrenzen, um Änderungen am Netzwerk möglichst gering zu halten.
 
-    Beispiele für *Zulassen* -Endpunkte sind etwa *https://\*.protection.outlook.com* und *https://accounts.accesscontrol.windows.net*.
+    Beispiele für *Zulassen*-Endpunkte sind etwa *https://\*.protection.outlook.com* und *https://accounts.accesscontrol.windows.net*.
 
     Zu Optimierungsmethoden zählen folgende:
 
-  - Umgehung von *Zulassen* -Endpunkten auf Netzwerkgeräten und Diensten, die Abfangen von Datenverkehr, SSL-Entschlüsselung, umfassende Paketüberprüfung und Inhaltsfilterung ausführen.
+  - Umgehung von *Zulassen*-Endpunkten auf Netzwerkgeräten und Diensten, die Abfangen von Datenverkehr, SSL-Entschlüsselung, umfassende Paketüberprüfung und Inhaltsfilterung ausführen.
   - Priorisieren Sie die Auswertung dieser Endpunkte als vollständig vertrauenswürdig durch Ihre Netzwerkinfrastruktur und Perimetersysteme.
   - Priorisieren Sie die Reduktion oder Eliminierung von WAN-Backhauling und unterstützen Sie den direkten verteilten internetbasierten Ausgang für diese Endpunkte so nahe wie möglich zu Benutzern/Zweigstellen.
   - Stellen Sie sicher, dass die durch die DNS-Namensauflösung zurückgegebenen IP-Adressen dem Routing-Ausgangspfad für diese Endpunkte entsprechen.
   - Priorisieren Sie diese Endpunkte für die SD-WAN-Integration für direktes Routing mit minimaler Latenz in den nächstgelegenen Internet-Peering-Punkt des globalen Microsoft-Netzwerks.
 
-- **Standard** -Endpunkte stellen Office 365-Dienste und Abhängigkeiten dar, die keine Optimierung erfordern und von Kundennetzwerken als normaler Internetdatenverkehr behandelt werden können. Einige der Endpunkte in dieser Kategorie möglicherweise nicht in Microsoft-Rechenzentren gehostet werden. Beispiele sind *https://odc.officeapps.live.com* und *https://appexsin.stb.s-msn.com*.
+- **Standard**-Endpunkte stellen Office 365-Dienste und Abhängigkeiten dar, die keine Optimierung erfordern und von Kundennetzwerken als normaler Internetdatenverkehr behandelt werden können. Einige der Endpunkte in dieser Kategorie möglicherweise nicht in Microsoft-Rechenzentren gehostet werden. Beispiele sind *https://odc.officeapps.live.com* und *https://appexsin.stb.s-msn.com*.
 
 Weitere Informationen zu den Verfahren zur Office 365-Netzwerkoptimierung finden Sie im Artikel [Verwalten von Office 365-Endpunkten](managing-office-365-endpoints.md).
   
@@ -226,11 +226,11 @@ Ein ganzheitlicher Ansatz zur Verbesserung der Sicherheit sollte folgende Aspekt
   - Reduzierung der Netzwerksicherheitsanforderungen des WAN-Unternehmensrands
   - Einige Geräte für den Netzwerkperimeterschutz wie Firewalls sind weiterhin erforderlich, aber die Auslastung wird reduziert.
   - Stellt lokalen Ausgangspunkt für Microsoft 365-Datenverkehr sicher
-- Verbesserungen können inkrementell umgesetzt werden, wie im Abschnitt [Inkrementelle Optimierung](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt) beschrieben. Einige Optimierungstechniken bieten je nach Netzwerkarchitektur möglicherweise ein besseres Preis-Leistungs-Verhältnis und Sie sollten die Optimierungen auswählen, die für Ihre Organisation am besten geeignet sind.
+- Verbesserungen können inkrementell umgesetzt werden, wie im Abschnitt [Inkrementelle Optimierung](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt) beschrieben. Einige Optimierungstechniken bieten je nach Netzwerkarchitektur möglicherweise ein besseres Preis-Leistungs-Verhältnis. Wählen Sie die Optimierungen aus, die für Ihre Organisation am besten geeignet sind.
 
 Weitere Informationen zu Microsoft 365 Security und Compliance finden Sie im Artikel [Microsoft 365 Security](https://docs.microsoft.com/microsoft-365/security) und [Microsoft 365 Compliance](https://docs.microsoft.com/microsoft-365/compliance).
   
-## <a name="incremental-optimization"></a>Inkrementelle Optimierung
+## <a name="incremental-optimization"></a>Schrittweise Optimierung
 <a name="BKMK_IncOpt"> </a>
 
 Wir haben weiter oben in diesem Artikel das ideale Netzwerkverbindungsmodell für SaaS vorgestellt, aber vielen großen Organisationen mit historisch komplexen Netzwerkarchitekturen wird es nicht möglich sein, alle diese Änderungen direkt durchzuführen. In diesem Abschnitt befassen wir uns mit einer Reihe von inkrementellen Änderungen zur Verbesserung der Leistung und Zuverlässigkeit von Microsoft 365.

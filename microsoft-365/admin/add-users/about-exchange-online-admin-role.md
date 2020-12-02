@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Exchange Online-Administratoren verwalten die e-Mails und Postfächer Ihrer Organisation. Beispielsweise werden gelöschte Elemente im Postfach eines Benutzers wiederhergestellt. '
-ms.openlocfilehash: cd2c4c10554cbaf425fa6ae9156a8ceeb1a21503
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 8e332e886ca25221fefbbc5d1bb790bd4f513f00
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646703"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527513"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Informationen zur Exchange Online-Administratorrolle
 
@@ -44,7 +44,7 @@ Hier folgen einige der wichtigsten Aufgaben, die Benutzer ausführen können, we
 
 - Einrichten von Postfachfeatures wie die Postfachfreigaberichtlinie: Wie Benutzer Kalender- und Kontaktinformationen für andere Personen außerhalb Ihrer Organisation freigeben können.
 
-- Einrichten der Delegaten "[Senden als](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)" und "[Senden bei abehalf](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)" für das Postfach eines anderen Benutzers. Eine Führungskraft möchte z. B., dass ihr Assistent über die Möglichkeit verfügt, E-Mails in ihrem Namen zu senden.
+- Richten Sie die Stellvertretungen "[Senden als](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)" und "[Senden im Auftrag](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)von" für das Postfach eines anderen Benutzers ein. Eine Führungskraft möchte z. B., dass ihr Assistent über die Möglichkeit verfügt, E-Mails in ihrem Namen zu senden.
 
 - [Erstellen eines freigegebenen Postfachs](../email/create-a-shared-mailbox.md) , damit eine Gruppe von Personen e-Mails über eine gemeinsame e-Mail-Adresse überwachen und senden kann.
 
@@ -58,7 +58,7 @@ In einer großen Organisation kann der Exchange-Administrator Benutzer zu Exchan
   
  Der Exchange-Administrator kann z. B. eine Person der Rollengruppe "Discoveryverwaltung" zuweisen, damit sie in Postfächern nach Daten suchen können, die bestimmte Kriterien erfüllen. Weitere Informationen hierzu finden Sie unter [Berechtigungen in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) und [Verwalten von Rollengruppen](https://docs.microsoft.com/exchange/manage-role-groups-exchange-2013-help).
   
-## <a name="learn-about-other-admin-role"></a>Informationen zur anderen Administratorrolle
+## <a name="learn-about-other-admin-roles"></a>Informationen zu anderen Administratorrollen
 
 - [Informationen zu Microsoft 365-Administratorrollen](about-admin-roles.md)
 

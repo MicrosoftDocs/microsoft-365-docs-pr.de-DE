@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: Normalerweise ein Bestandteil einer Datensatzverwaltungslösung. Sie können eine Aufbewahrungsbezeichnung so konfigurieren, dass der Aufbewahrungszeitraum basierend auf einem von Ihnen festgelegten Ereignis gestartet wird.
-ms.openlocfilehash: 1572995909f370c5c3a544cb3f85e20c35629f88
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: cf8ce1dc2ca77e2ba028d0c35f58cd0ab419b32d
+ms.sourcegitcommit: 5ce64d510b15c6e2df32b78e6086f77156731e3c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816892"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "49477624"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>Beginn der Aufbewahrung bei Auftreten eines Ereignisses
 
@@ -143,6 +143,7 @@ Wenn eine bestimmte Instanz dieses Ereignistyps auftritt – z. B. wenn ein Pro
 
 ![Erstellen eines Ereignisses zum Auslösen des Aufbewahrungsbeginns für ereignisbasierte Aufbewahrungsbezeichnungen](../media/create-event-records-management.png)
 
+Pro Mandant werden bis zu 1 Million Ereignisse unterstützt.
 
 ### <a name="step-6-choose-the-same-event-type-used-by-the-label-in-step-2"></a>Schritt 6: Auswählen des gleichen Ereignistyps, der von der Bezeichnung in Schritt 2 verwendet wird
 

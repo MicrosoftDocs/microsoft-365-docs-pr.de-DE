@@ -2,8 +2,8 @@
 title: Benutzern das Zurücksetzen ihrer eigenen Kennwörter gestatten
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Erfahren Sie, wie Sie Ihre Kennwörter mithilfe des Self-Service-Kenn Wort Zurücksetzungs Tools zurücksetzen können.
-ms.openlocfilehash: 7ecadaa42610e0b77dc1727c11140080bd7b1779
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: bbde517858186d844412aca21f231620ed76496a
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646679"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551920"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Benutzern das Zurücksetzen ihrer eigenen Kennwörter gestatten
 
@@ -77,13 +77,13 @@ Mit diesen Schritten aktivieren Sie die Self-Service-Kennwortzurücksetzung für
 
 2. Wählen Sie oben auf der Seite " **org-Einstellungen** " die Registerkarte **Sicherheit & Datenschutz** aus.
   
-3. Wählen Sie **Self-Service Password Reset**aus.
+3. Wählen Sie **Self-Service Password Reset** aus.
 
 4. Wählen Sie unter **Self-Service Password Reset** **die Option zum Azure-Portal wechseln aus, um Self-Service Password Reset zu aktivieren**.
 
-5. Wählen Sie im linken Navigationsbereich **Benutzer**aus, und klicken Sie dann auf der Seite **Benutzer | Seite "alle Benutzer" die** Option **Kennwort zurücksetzen**.
+5. Wählen Sie im linken Navigationsbereich **Benutzer** aus, und klicken Sie dann auf der Seite **Benutzer | Seite "alle Benutzer" die** Option **Kennwort zurücksetzen**.
   
-6. Wählen Sie auf der Seite **Eigenschaften** die Option **alle** aus, um Sie für alle Benutzer in Ihrem Unternehmen zu aktivieren, und wählen Sie dann **Speichern**aus.
+6. Wählen Sie auf der Seite **Eigenschaften** die Option **alle** aus, um Sie für alle Benutzer in Ihrem Unternehmen zu aktivieren, und wählen Sie dann **Speichern** aus.
   
 7. Wenn sich Ihre Benutzer anmelden, werden Sie aufgefordert, zusätzliche Kontaktinformationen einzugeben, mit denen Sie Ihr Kennwort in Zukunft zurücksetzen können.
 

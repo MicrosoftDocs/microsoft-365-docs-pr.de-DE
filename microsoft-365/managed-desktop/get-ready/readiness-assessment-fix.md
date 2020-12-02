@@ -1,5 +1,5 @@
 ---
-title: Lösen von Problemen, die durch das Tool zur Bereitschaftsbewertung gefunden wurden
+title: Beheben von Problemen, die mit dem Readiness Assessment Tool gefunden wurden
 description: Detaillierte Aktionen, die für jedes von dem Tool gefundene Problem ausgeführt werden sollten
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0459de8974fe6bae98e6984fd7dc65afeb04b4e7
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: f23209568fcfc2db4a22dbb034890c5a25e21bf7
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49021085"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527733"
 ---
-# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Lösen von Problemen, die durch das Tool zur Bereitschaftsbewertung gefunden wurden
+# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Beheben von Problemen, die mit dem Readiness Assessment Tool gefunden wurden
 
 Für jede Überprüfung meldet das Tool eine von vier möglichen Ergebnissen:
 
@@ -141,7 +141,7 @@ Windows 10-Geräte in ihrer Azure AD Organisation müssen automatisch in InTune 
 
 **Empfehlung**
 
-Stellen Sie sicher, dass der MDM-Benutzerbereich auf " **some** " oder " **all** " festgelegt ist, nicht auf **None**. Wenn Sie **einige** auswählen, kehren Sie nach der Registrierung zurück, und wählen Sie die Gruppe **moderner Arbeitsplatz-alle** Azure AD für **Gruppen** aus.
+Stellen Sie sicher, dass der MDM-Benutzerbereich auf " **some** " oder " **all**" festgelegt ist, nicht auf **None**. Wenn Sie **einige** auswählen, kehren Sie nach der Registrierung zurück, und wählen Sie die Gruppe **moderner Arbeitsplatz-alle** Azure AD für **Gruppen** aus.
 
 
 ### <a name="microsoft-store-for-business"></a>Microsoft Store für Unternehmen
@@ -152,14 +152,14 @@ Microsoft Store for Business wird verwendet, damit Sie das Unternehmens Portal h
 
 Microsoft Store for Business ist entweder nicht aktiviert oder nicht mit InTune synchronisiert. Weitere Informationen finden Sie unter [Verwalten von Volumen erworbenen Apps aus dem Microsoft Store for Business mit Microsoft InTune](https://docs.microsoft.com/mem/intune/apps/windows-store-for-business) und [Installieren des InTune-Unternehmensportals auf auf Geräten](../get-started/company-portal.md).
 
-### <a name="multi-factor-authentication"></a>Mehrstufige Authentifizierung
+### <a name="multifactor-authentication"></a>Mehrstufige Authentifizierung
 
 Die mehrstufige Authentifizierung darf nicht versehentlich auf von Microsoft verwaltete Desktop Dienstkonten angewendet werden.
 
 
 **Nicht bereit**
 
-Sie haben einige Richtlinien für die mehrstufige Authentifizierung (MFA) als "erforderlich" für Richtlinien für bedingten Zugriff festgelegt, die allen Benutzern zugewiesen sind. Ändern Sie die Richtlinie so, dass eine Zuweisung verwendet wird, die auf eine bestimmte Azure Ad Gruppe zielt, die keine von Microsoft verwalteten Desktop Geräte enthält. Weitere Informationen finden Sie unter [bedingter Zugriffsrichtlinien](#conditional-access-policies) und [bedingter Zugriff: MFA für alle Benutzer erforderlich](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa).
+Für Richtlinien für bedingten Zugriff, die allen Benutzern zugewiesen sind, sind einige mehrstufige Authentifizierungsrichtlinien (MFA) als "erforderlich" festgelegt. Ändern Sie die Richtlinie so, dass eine Zuweisung verwendet wird, die auf eine bestimmte Azure Ad Gruppe zielt, die keine von Microsoft verwalteten Desktop Geräte enthält. Weitere Informationen finden Sie unter [bedingter Zugriffsrichtlinien](#conditional-access-policies) und [bedingter Zugriff: MFA für alle Benutzer erforderlich](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa).
 
 **Empfehlung**
 

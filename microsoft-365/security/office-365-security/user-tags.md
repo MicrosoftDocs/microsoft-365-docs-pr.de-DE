@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie bestimmte Benutzergruppen mit Benutzer Tags in Microsoft Defender für Office 365 Plan 2 identifiziert werden. Die Tag-Filterung steht in Warnungen, Berichten und Untersuchungen in Microsoft Defender für Office 365 zur Verfügung, um die getaggten Benutzer schnell zu identifizieren.
-ms.openlocfilehash: 14ebcebeb8081a2de341fd06facabd9f7d55b119
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: 136de95addae7dcd48de2c6ac1f30ce67714817c
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123619"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49552019"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Benutzer Tags in Microsoft Defender für Office 365
 
@@ -66,9 +66,9 @@ In diesem Artikel wird erklärt, wie Sie Benutzer Tags im Security & Compliance 
 
    Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
 
-4. Führen Sie auf der Seite **Postfächer zuweisen** einen der folgenden Schritte aus:
+4. Führen Sie auf der Seite **Benutzer zuweisen** einen der folgenden Schritte aus:
 
-   - Klicken Sie auf **Postfächer hinzufügen**. Führen Sie im angezeigten Fenster einen der folgenden Schritte aus, um einzelne Benutzer oder Gruppen hinzuzufügen:
+   - Klicken Sie auf **Benutzer hinzufügen**. Führen Sie im angezeigten Fenster einen der folgenden Schritte aus, um einzelne Benutzer oder Gruppen hinzuzufügen:
      - Klicken Sie in das Feld, und führen Sie einen Bildlauf durch die Liste aus, um einen Benutzer oder eine Gruppe auszuwählen.
      - Klicken Sie in das Feld, und beginnen Sie mit der Eingabe, um die Liste zu filtern und einen Benutzer oder eine Gruppe auszuwählen.
      - Klicken Sie zum Hinzufügen weiterer Werte in einen leeren Bereich des Felds.

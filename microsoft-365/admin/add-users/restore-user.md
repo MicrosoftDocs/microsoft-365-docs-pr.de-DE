@@ -2,8 +2,8 @@
 title: Wiederherstellen eines Benutzers
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: Hier erfahren Sie, wie gelöschte Benutzerkonten und alle zugehörigen Daten wiederhergestellt werden.
-ms.openlocfilehash: 905113c40f49f433a3d84810e04abc5f26724ecb
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 7d7269ec338aafb9be317c2ee10a57d23c775c0a
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646667"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551844"
 ---
 # <a name="restore-a-user"></a>Wiederherstellen eines Benutzers
 
@@ -60,22 +60,22 @@ Sie müssen ein Microsoft 365 globaler Administrator oder Administrator der Benu
 
 ::: moniker range="o365-germany"
 
-1. Wechseln Sie zum [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=848041), **und wählen Sie** dann \> **Gelöschte**Benutzer aus.
+1. Wechseln Sie zum [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=848041), **und wählen Sie** dann \> **Gelöschte** Benutzer aus.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wechseln Sie zum [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=850627), **und wählen Sie** dann \> **Gelöschte**Benutzer aus.
+1. Wechseln Sie zum [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=850627), **und wählen Sie** dann \> **Gelöschte** Benutzer aus.
 
 ::: moniker-end
 
-2. Wählen Sie auf der Seite **Gelöschte Benutzer** die Namen der Benutzer aus, die Sie wiederherstellen möchten, und wählen Sie dann **Wiederherstellen**aus.
+2. Wählen Sie auf der Seite **Gelöschte Benutzer** die Namen der Benutzer aus, die Sie wiederherstellen möchten, und wählen Sie dann **Wiederherstellen** aus.
     
  
-3. Führen Sie die Anweisungen aus, um Ihr Kennwort festzulegen, und wählen Sie dann **Wiederherstellen**aus.
+3. Führen Sie die Anweisungen aus, um Ihr Kennwort festzulegen, und wählen Sie dann **Wiederherstellen** aus.
     
-4. Wenn der Benutzer erfolgreich wiederhergestellt wurde, wählen Sie **e-Mail senden und schließen**aus. Wenn ein Namens- oder Proxyadressenkonflikt vorliegt, lesen Sie die nachstehenden Anweisungen, um zu erfahren, wie Sie diese Konten wiederherstellen können.
+4. Wenn der Benutzer erfolgreich wiederhergestellt wurde, wählen Sie **e-Mail senden und schließen** aus. Wenn ein Namens- oder Proxyadressenkonflikt vorliegt, lesen Sie die nachstehenden Anweisungen, um zu erfahren, wie Sie diese Konten wiederherstellen können.
     
 Nachdem Sie einen Benutzer wiederhergestellt haben, müssen Sie darauf achten, dass das Kennwort geändert wurde, und Sie nachverfolgen.
   
@@ -95,29 +95,29 @@ Um diesen Konflikt zu lösen, können Sie entweder das aktive Benutzerkonto durc
 
 ::: moniker range="o365-germany"
 
-1. Wechseln Sie zum [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=848041), **und wählen Sie** dann \> **Gelöschte**Benutzer aus.
+1. Wechseln Sie zum [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=848041), **und wählen Sie** dann \> **Gelöschte** Benutzer aus.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wechseln Sie zum [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=850627), **und wählen Sie** dann \> **Gelöschte**Benutzer aus.
+1. Wechseln Sie zum [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=850627), **und wählen Sie** dann \> **Gelöschte** Benutzer aus.
 
 ::: moniker-end
 
   
-2. Wählen Sie auf der Seite **Gelöschte Benutzer** die Namen der Benutzer aus, die Sie wiederherstellen möchten, und wählen Sie dann **Wiederherstellen**aus.
+2. Wählen Sie auf der Seite **Gelöschte Benutzer** die Namen der Benutzer aus, die Sie wiederherstellen möchten, und wählen Sie dann **Wiederherstellen** aus.
     
     > [!NOTE]
     > Wenn mindestens zwei Benutzer nicht wiederhergestellt werden können, wird in einer Fehlermeldung angezeigt, dass der Wiederherstellungsvorgang für einige Benutzer nicht erfolgreich ausgeführt wurde. Öffnen Sie das Protokoll, um anzuzeigen, welche Benutzer nicht wiederhergestellt wurden, und stellen Sie dann die entsprechenden Konten jeweils einzeln wieder her. 
   
-3. Führen Sie die Anweisungen aus, um das Kennwort festzulegen, und wählen Sie **Wiederherstellen**aus.
+3. Führen Sie die Anweisungen aus, um das Kennwort festzulegen, und wählen Sie **Wiederherstellen** aus.
     
 4. Sie werden in einer Meldung darüber informiert, dass beim Wiederherstellen des Kontos ein Problem aufgetreten ist. Führen Sie eine der folgenden Aktionen aus:
     
   - Brechen Sie den Wiederherstellungsvorgang ab, und benennen Sie den aktuellen aktiven Benutzer um. Versuchen Sie dann, den Wiederherstellungsvorgang erneut auszuführen.
     
-  - Oder geben Sie eine neue primäre e-Mail-Adresse für den Benutzer ein, und wählen Sie **Wiederherstellen**aus.
+  - Oder geben Sie eine neue primäre e-Mail-Adresse für den Benutzer ein, und wählen Sie **Wiederherstellen** aus.
     
 5. Überprüfen Sie die Ergebnisse, und wählen Sie dann **Schließen** aus.
     
@@ -136,19 +136,19 @@ Sie benötigen [Administratorberechtigungen](about-admin-roles.md) in Microsoft 
 
 ::: moniker range="o365-germany"
 
-Wechseln Sie zum [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=848041), **und wählen Sie** dann \> **Gelöschte**Benutzer aus.
+Wechseln Sie zum [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=848041), **und wählen Sie** dann \> **Gelöschte** Benutzer aus.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wechseln Sie zum [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=850627), **und wählen Sie** dann \> **Gelöschte**Benutzer aus.
+1. Wechseln Sie zum [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=850627), **und wählen Sie** dann \> **Gelöschte** Benutzer aus.
 
 ::: moniker-end
 
 2. Wählen Sie auf der Seite **Gelöschte Benutzer** den Benutzer aus, den Sie wiederherstellen möchten, und wählen Sie dann **Wiederherstellen** aus. 
     
-3. Befolgen Sie auf der Seite **Wiederherstellen** die Anweisungen zum Festlegen des Kennworts, und wählen Sie **Wiederherstellen**aus. Für den Benutzer, den Sie wiederherstellen, werden alle Konflikt verursachenden Proxyadressen automatisch entfernt.
+3. Befolgen Sie auf der Seite **Wiederherstellen** die Anweisungen zum Festlegen des Kennworts, und wählen Sie **Wiederherstellen** aus. Für den Benutzer, den Sie wiederherstellen, werden alle Konflikt verursachenden Proxyadressen automatisch entfernt.
     
 4. Überprüfen Sie die Ergebnisse, und wählen Sie dann **Schließen** aus.
 
