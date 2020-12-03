@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie Sie DomainKeys Identified Mail (DKIM) mit Microsoft 365 verwenden können, um sicherzustellen, dass die von Ihrer benutzerdefinierten Domäne gesendeten Nachrichten von den Ziel-E-Mail-Systemen als vertrauenswürdig eingestuft werden.
-ms.openlocfilehash: 7f9e33a6f117f5da592d875e40cefc6a0072fd4a
-ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
+ms.openlocfilehash: 66f352b6c3a5d3b3beff3043a3f0d1a435d1e5d1
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49126673"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49560884"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Verwenden von DKIM zum Überprüfen ausgehender E-Mails, die von Ihrer benutzerdefinierten Domäne gesendet werden
 
@@ -130,6 +130,9 @@ Um DKIM zu konfigurieren, müssen Sie diese Schritte ausführen:
 
 Für jede Domäne, für die Sie eine DKIM-Signatur in DNS hinzufügen möchten, müssen Sie zwei CNAME-Einträge veröffentlichen.
 
+> [!NOTE]
+> Wenn Sie nicht den gesamten Artikel gelesen haben, haben Sie möglicherweise diese zeitsparenden Informationen zur PowerShell-Verbindung verpasst: [Herstellen einer Verbindung zu Office 365-Workloads über PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window). (Das Cmdlet stammt von Exchange Online.) 
+
 Führen Sie die folgenden Befehle aus, um die Selektor-Einträge zu erstellen:
 
 ```powershell
@@ -187,8 +190,6 @@ TTL:                3600
 > [!NOTE]
 > Es ist wichtig, den zweiten Eintrag zu erstellen, aber zum Zeitpunkt der Erstellung wird möglicherweise nur einer der Selektoren verfügbar sein. Im Wesentlichen verweist der zweite Selektor möglicherweise auf eine noch nicht erstellte Adresse. Es empfiehlt sich trotzdem, den zweiten CNAME-Eintrag zu erstellen, da Ihre Schlüsselrotation dann nahtlos ausgeführt wird.
 
-> [!CAUTION]
-> Die automatische Schlüsselrotation wurde vorübergehend deaktiviert, da wir einige Entwurfsänderungen beim Erstellen von Schlüsseln implementieren. Es empfiehlt sich, mehrere Schlüssel zu haben, damit Sie sie in regelmäßigen Abständen wechseln können. Auch wenn es schwer zu knacken ist, ist es dennoch eine praktische Strategie, um sich vor so etwas wie Identitätswechsel zu schützen. Sie können dem Dokument [Rotate-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/rotate-dkimsigningconfig) folgen, um dies für Ihre Organisation zu ermöglichen. Wir gehen davon aus, dass die automatische Rotation bis August 2020 wieder aktiviert wird.
 
 ### <a name="enable-dkim-signing-for-your-custom-domain"></a>Aktivieren der DKIM-Signierung für Ihre benutzerdefinierte Domäne
 <a name="EnableDKIMinO365"> </a>
@@ -311,9 +312,9 @@ In this example, the host name and domain contain the values to which the CNAME 
 ## <a name="set-up-dkim-so-that-a-third-party-service-can-send-or-spoof-email-on-behalf-of-your-custom-domain"></a>Einrichten von DKIM, damit ein Drittanbieterdienst E-Mails im Auftrag Ihrer benutzerdefinierten Domäne senden oder fälschen kann
 <a name="SetUp3rdPartyspoof"> </a>
 
-Bei einigen Massen-E-Mail-Dienstanbietern oder Software-as-a-Service-Anbietern können Sie DKIM-Schlüssel für E-Mails einrichten, die von diesem Dienst stammen. Dies erfordert eine Koordination zwischen Ihnen und dem Drittanbieter, damit die erforderlichen DNS-Einträge eingerichtet werden können. Einige Drittanbieter verfügen möglicherweise über eigene CNAME-Einträge mit anderen Selektoren. Keine zwei Organisationen führen dies auf die gleiche Weise durch. Der Prozess hängt vollständig von der Organisation ab.
+Bei einigen Anbietern von Massen-E-Mail-Diensten oder Software-as-a-Service-Anbietern können Sie DKIM-Schlüssel für E-Mails einrichten, die aus dem jeweiligen Dienst stammen. Dies erfordert eine Koordination zwischen Ihnen und dem Drittanbieter, damit die erforderlichen DNS-Einträge eingerichtet werden können. Einige Server von Drittanbietern können eigene CNAME-Einträge mit unterschiedlichen Selektoren verwenden. Keine zwei Organisationen führen dies auf die gleiche Weise durch. Der Prozess hängt vollständig von der Organisation ab.
 
-Eine Beispielnachricht mit einer ordnungsgemäßen DKIM-Konfiguration für "contoso.com" und "bulkemailprovider.com" kann wie folgt aussehen:
+Eine Beispielnachricht mit einer ordnungsgemäßen DKIM-Konfiguration für „contoso.com“ und „bulkemailprovider.com“ kann wie folgt aussehen:
 
 ```console
 Return-Path: <communication@bulkemailprovider.com>
@@ -350,3 +351,7 @@ Der DKIM-Eintrag sieht beispielsweise wie folgt aus:
 <a name="DKIMNextSteps"> </a>
 
 Obwohl DKIM Spoofing verhindern soll, funktioniert DKIM besser mit SPF und DMARC. Sobald Sie DKIM eingerichtet haben, sollten Sie auch SPF einrichten, falls noch nicht geschehen. Eine kurze Einführung in SPF und seine schnelle Konfiguration finden Sie unter [Einrichten von SPF in Microsoft 365 zur Verhinderung von Spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Ausführlichere Informationen zur Verwendung von SPF durch Microsoft 365 oder zur Problembehandlung oder zu nicht standardmäßigen Bereitstellungen, z. B. Hybridbereitstellungen, finden Sie unter [How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md). Lesen Sie danach [Verwenden von DMARC zur Überprüfung von E-Mails](use-dmarc-to-validate-email.md). [Antispam-Nachrichtenkopfzeilen](anti-spam-message-headers.md) umfassen die Syntax- und Kopfzeilenfelder, die von Microsoft 365 für DKIM-Überprüfungen verwendet werden.
+
+## <a name="more-information"></a>Weitere Informationen
+
+Schlüsselrotation über PowerShell [Rotate-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/rotate-dkimsigningconfig)
