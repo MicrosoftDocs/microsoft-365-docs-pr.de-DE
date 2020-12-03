@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Details zum Produktivitäts Ergebnis "Mobility-People Experiences".
-ms.openlocfilehash: e37d5ff0377163bea270b1d16e8b4fddae9099b4
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 04651cfee4ac2e67c4099c47bfe6d8c07b41ba83
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551863"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561577"
 ---
 # <a name="mobility--people-experiences"></a>Mobilität – Personen Erfahrungen
 
-Die Produktivitäts Bewertung unterstützt die Reise zur digitalen Transformation mit Einblicken darüber, wie Ihre Organisation Microsoft 365 und seine Technologie verwendet. Die Bewertung Ihres Unternehmens reflektiert Personen-und Technologie Erfahrungs Messungen und kann mit Benchmarks von Organisationen vergleichbar mit ihrer Größe verglichen werden. Die Kategorie Mobilität ist Teil der Personen Erfahrungen. Weitere Informationen finden Sie in der [Übersicht über das Produktivitäts Ergebnis](productivity-score.md) .
+Die Produktivitäts Bewertung bietet Einblicke in die digitale Transformationsreise Ihrer Organisation durch die Verwendung von Microsoft 365 und die damit unterstützten Technologie-Erlebnisse. Die Bewertung Ihrer Organisation reflektiert Personen-und Technologie Erfahrungs Messungen und kann mit Benchmarks von Organisationen vergleichbar mit Ihnen verglichen werden. Die Kategorie Mobilität ist Teil der Maßnahmen zur Personen Erfahrung. Weitere Informationen finden Sie unter Übersicht über die [Produktivitäts Bewertung](productivity-score.md) und Lesen der [Datenschutzerklärung von Microsoft](https://privacy.microsoft.com/privacystatement).
 
 ## <a name="why-your-organization39s-mobility-score-matters"></a>Warum Ihre Organisation&#39;s Mobility Score zählt
 
@@ -36,20 +36,20 @@ Eine grundlegende Säule der organisatorischen Produktivität ist, wie gut die M
 
 ## <a name="how-we-calculate-the-score"></a>Berechnung der Partitur
 
-Wir bieten eine wesentliche Einblicke in die Erfahrung, die die wichtigsten Metriken für diese Kategorie enthält. Anschließend wird ein Bewertungs Framework, das unten aufgeführt ist, für diese Metriken verwendet, um die Bewertung zu berechnen.
+Wir bieten eine wesentliche Einblicke in die Erfahrung, die die wichtigsten Metriken für diese Kategorie enthält. Anschließend wird ein Bewertungs Framework, das unten aufgeführt ist, für diese Metriken verwendet, um die Bewertung Ihrer Organisation zu berechnen.
 
 ### <a name="primary-insight"></a>Primäre Einblicke
 
-Mit Microsoft 365 können Benutzer flexibel über apps hinweg arbeiten, einschließlich Microsoft Outlook, Word, Excel, PowerPoint, OneNote, Microsoft Teams, jammern und Skype. Personen können auch von überall aus arbeiten, indem Sie eine nahtlose Oberfläche für Desktop-, webbasierte und Mobile Plattformen verwenden. Die primäre Einblicke befasst sich mit den Produkten, die für Personen in Ihrer Organisation aktiviert sind – und wie viele dieser Personen auf mindestens zwei Plattformen aktiv sind.
+Mit Microsoft 365 können Benutzer flexibel über apps hinweg arbeiten, einschließlich Microsoft Outlook, Word, Excel, PowerPoint, OneNote, Microsoft Teams, jammern und Skype for Business. Personen können auch von überall aus arbeiten, indem Sie eine nahtlose Oberfläche für Desktop-, webbasierte und Mobile Plattformen verwenden. Die primäre Einblicke befasst sich mit den Produkten, die für Personen in Ihrer Organisation aktiviert sind – und wie viele dieser Personen auf mindestens zwei Plattformen aktiv sind.
 
 :::image type="content" source="../../media/primary-mobility.png" alt-text="Diagramm mit primärer Einblicke für Mobility – People Experiences Productivity Score.":::
 
-1. **Kopfzeile:** Zeigt den Prozentsatz der Personen an, die Zugriff auf Microsoft 365-apps haben und die bei mindestens einer dieser Anwendungen auf mehr als einer Plattform aktiv sind.
+1. **Kopfzeile:** Zeigt den Prozentsatz der Personen in Ihrer Organisation an, die Zugriff auf Microsoft 365-apps haben und die auf mindestens einer dieser Anwendungen auf mehr als einer Plattform aktiv sind.
 2. **Body:** Enthält weitere Informationen darüber, wie die Verwendung dieser Anwendungen auf mehreren Plattformen die Effizienz und Zufriedenheit steigern kann.
-3. **Visualisierung (aktueller Status):** Zeigt, wie viele Personen mehr als eine Plattform auf Desktop-, Mobil-und Internetebene für mindestens eine Microsoft 365 (unten aufgeführte Liste) verwenden:
+3. **Visualisierung (aktueller Status):** Zeigt, wie viele Personen mehr als eine Plattform auf Desktop-, Mobil-und Internetebene für mindestens eine Microsoft 365 (Liste unten) wie folgt verwenden:
     - **Horizontale Leiste** , wobei der blaue (farbige) Teil den in der Kopfzeile ausgedrückten Prozentsatz darstellt.
     - **Der** Anteil auf dem Balken markiert den (Zähler/Nenner), der für die Berechnung des Prozentsatzes in der Kopfzeile verwendet wird.
-        - Zähler: die Anzahl der Personen, die eine beliebige Anwendung in Microsoft Outlook, Word, Excel, PowerPoint, OneNote und Microsoft Teams verwenden, jammern und Skype auf mehr als einer Plattform von Desktop, Internet und Mobile in den letzten 28 Tagen.
+        - Zähler: die Anzahl der Personen in Ihrer Organisation, die eine Anwendung in Microsoft Outlook, Word, Excel, PowerPoint, OneNote und Microsoft Teams verwenden, jammern und Skype auf mehr als einer Plattform von Desktop, Internet und Mobiltelefonen in den letzten 28 Tagen.
         - Nenner: die Anzahl der Personen, die für Microsoft 365-apps, Exchange, jammern, Microsoft Teams oder Skype für mindestens 1 der letzten 28 Tage lizenziert wurden.
     - Der **Peer-Benchmarkwert** für die Schlüssel Metrik wird auch als Prozentwert angezeigt.
 4. **Anzeigen von mobilitätsressourcen:** Wählen Sie diesen Link aus, um Hilfeinhalte anzuzeigen.
@@ -58,14 +58,17 @@ Mit Microsoft 365 können Benutzer flexibel über apps hinweg arbeiten, einschli
 
 :::image type="content" source="../../media/mobility-primary.png" alt-text="Diagramm mit der Anzahl von Personen, die mehr als eine Plattform vs. Time verwenden.":::
 
-Dieses Diagramm zeigt die Trend-Kurve, wobei der Zähler die Anzahl der Personen ist, die apps verwendet haben, in den letzten 180 Tagen. Jeder Datenpunkt im Diagramm ist ein Aggregat von Aktivitäten für die letzten 28 Tage. Jeder Datenpunkt enthält eine Zählung aller Personen, die eine Anwendung über mindestens zwei Plattformen in den letzten 28 Tagen für jedes Datum auf der x-Achse verwenden.
+Dieses Diagramm zeigt die Trend-Kurve, wobei der Zähler die Anzahl der Personen ist, die apps verwendet haben, in den letzten 180 Tagen. Jeder Datenpunkt im Diagramm ist ein Aggregat von Aktivitäten für die letzten 28 Tage. Jeder Datenpunkt enthält eine Anzahl aller Personen in Ihrer Organisation, die eine Anwendung auf mindestens zwei Plattformen in den letzten 28 Tagen für jedes Datum auf der x-Achse verwenden.
 
 ### <a name="scoring-framework"></a>Bewertungs Framework
 
 Die Mobilitäts Bewertung für Ihre Organisation misst auf einer Organisationsebene (Aggregate), unabhängig davon, ob Personen Microsoft 365-apps-Outlook, Teams, Word, Excel, PowerPoint, OneNote, jammern und Skype-auf den verschiedenen Plattformen-Desktop, Internet und Mobilgeräte-verwenden.
+
 Die Ergebnisse werden nicht auf Einzelbenutzerebene bereitgestellt.
 
 ## <a name="explore-how-your-org-works-across-platforms-and-locations"></a>Untersuchen der Funktionsweise Ihrer Organisation über Plattformen und Standorte hinweg
+
+Außerdem stellen wir Ihnen Informationen zur Verfügung, mit denen Sie den Einblick in die Funktionsweise von Personen in Ihrer Organisation auf Plattformen gewinnen können. Diese zusätzlichen Metriken tragen nicht direkt zur Produktivitäts Bewertung bei, sondern unterstützen Sie beim Erstellen eines Aktionsplans im Rahmen ihrer digitalen Transformation.  
 
 ### <a name="use-of-outlook-across-platforms"></a>Verwendung von Outlook plattformübergreifend
 
@@ -85,8 +88,7 @@ Die Ergebnisse werden nicht auf Einzelbenutzerebene bereitgestellt.
         - Nenner: die Anzahl der Personen, die Outlook in den letzten 28 Tagen mindestens einmal verwendet haben.
       - **Nur Mobil:**
         - Zähler: Anzahl der Personen, die in den letzten 28 Tagen Outlook nur auf einer mobilen Plattform verwendet haben.
-        - * Nenner: Anzahl der Personen, die Outlook mindestens einmal in den letzten 28 Tagen verwendet haben
-4. **Anzeigen von verwandtem Inhalt:** Wählen Sie diesen Link aus, um Hilfeinhalte anzuzeigen.
+        - * Nenner: Anzahl der Personen, die Outlook in den letzten 28 Tagen mindestens einmal verwendet haben.
 
 ### <a name="use-of-teams-across-platforms"></a>Plattformübergreifende Verwendung von Teams
 
@@ -107,7 +109,6 @@ Die Ergebnisse werden nicht auf Einzelbenutzerebene bereitgestellt.
     - **Nur Mobil:**
         - Zähler: die Anzahl der Personen, die Microsoft Teams in den letzten 28 Tagen nur auf einer mobilen Plattform verwendet haben.
         - Nenner: die Anzahl der Personen, die Teams mindestens einmal in den letzten 28 Tagen verwendet haben.
-1. **Anzeigen von verwandtem Inhalt:** Wählen Sie diesen Link aus, um Hilfeinhalte anzuzeigen.
 
 ### <a name="use-of-microsoft-365-apps-across-platforms"></a>Verwendung von Microsoft 365-apps plattformübergreifend
 
@@ -115,63 +116,19 @@ Die Ergebnisse werden nicht auf Einzelbenutzerebene bereitgestellt.
 
 1. **Kopfzeile:** Zeigt den Prozentsatz der Personen an, die auf Microsoft 365-Apps (Word, Excel, PowerPoint und OneNote) auf mehreren Plattformen aktiv sind.
 2. **Body:** Enthält Informationen über den Wert der Bereitstellung von Flexibilität für den Zugriff auf Ihre Dateien von überall aus für Personen in Ihrer Organisation.
-3. **Visualisierung:** Die gruppierte vertikale soll die Anzahl der Personen darstellen, die jede der in Betracht gezogenen apps – Word, Excel, PowerPoint und OneNote – auf einer oder mehreren Plattformen verwenden. Für jede dieser Anwendungen stellen Balken Folgendes dar:
-      - **Mehrere Plattformen:** Die Anzahl der Benutzer, die in den letzten 28 Tagen in Anwendungen auf mindestens zwei Plattformen aktiv sind.
-      - **Nur Desktop:** Die Umbra der Benutzer, die in den letzten 28 Tagen nur auf der Desktopplattform auf der Anwendung aktiv sind
-      - **Nur im Internet:** Die Umbra der Benutzer, die in den letzten 28 Tagen nur auf der Webplattform auf der Anwendung aktiv sind
-      - **Nur Mobil:** Die Anzahl der Benutzer, die in den letzten 28 Tagen nur auf der mobilen Plattform auf der Anwendung aktiv sind
-4. **Anzeigen von verwandtem Inhalt:** Wählen Sie diesen Link aus, um Hilfeinhalte anzuzeigen.
+3. **Visualisierung:** Die gruppierte vertikale soll die Anzahl der Personen darstellen, die jede der in Betracht gezogenen apps – Word, Excel, PowerPoint und OneNote – für einzelne oder mehrere Plattformen verwenden. Für jede dieser Anwendungen stellen Balken Folgendes dar:
+      - **Mehrere Plattformen:** Die Anzahl der Benutzer, die in den letzten 28 Tagen in einer APP auf mindestens zwei Plattformen aktiv sind.
+      - **Nur Desktop:** Die Anzahl der Benutzer, die in den letzten 28 Tagen nur auf der Desktopplattform für die APP aktiv sind.
+      - **Nur im Internet:** Die Anzahl der Benutzer, die in den letzten 28 Tagen auf der app nur auf der Webplattform aktiv sind.
+      - **Nur Mobil:** Die Anzahl der Benutzer, die in den letzten 28 Tagen auf der app nur auf mobilen Plattformen aktiv sind.
 
 ### <a name="remote-work"></a>Remote-Arbeit
 
 :::image type="content" source="../../media/remotework-trend.png" alt-text="Diagramm, das zeigt, wie viele Personen Remote, vor Ort oder beides arbeiten.":::
 
-1. **Kopfzeile:** Zeigt den Prozentsatz der Personen an, die nur von zu Hause oder von Standort außerhalb Ihres Unternehmens&#39;s-Netzwerks arbeiten.
-2. **Body:** Unterstreicht die Wichtigkeit der Erleichterung von Remote Arbeit für Personen ohne Zugriff auf physische Büros der Organisation&#39;s.
+1. **Kopfzeile:** Zeigt den Prozentsatz der Personen an, die nur von zu Hause oder von Standort außerhalb des Netzwerks Ihres Unternehmens arbeiten.
+2. **Body:** Unterstreicht die Wichtigkeit der Erleichterung von Remote Arbeit für Personen ohne Zugriff auf die physischen Büros Ihrer Organisation.
 3. **Visualisierung:** Zeigt die Trend-Reihe für den täglichen Prozentsatz der Personen an, die nur Remote arbeiten, sowie den täglichen Prozentsatz der Personen, die auch vor Ort arbeiten. Benutzer werden vor Ort betrachtet, wenn Sie mindestens drei Stunden Aktivität in Microsoft 365-apps an einem Tag ausführen.
-4. **Anzeigen von verwandtem Inhalt:** Wählen Sie diesen Link aus, um Hilfeinhalte anzuzeigen.
-
-## <a name="people-in-your-organization"></a>Personen in Ihrer Organisation
-
-Dieser Abschnitt enthält Informationen zu Aktionen, auf Benutzerebene, die für alle Einblicke auf der Seite relevant sind.
-
-Die folgenden Spalten werden in der Tabelle auf Benutzerebene angezeigt:
-
-- **Benutzername:**  Die e-Mail-Adresse des Benutzers.
-- **Anzeigename:**  Der vollständige Name des Benutzers.
-- **Datum der letzten Aktivität:**  Der letzte Zeitpunkt, zu dem der Benutzer eine Aktivität im Zusammenhang mit einem der Einblicke in die Mobilitäts Bewertung in den letzten 28 Tagen ausgeführt hat.
-- **Abteilung:** Abteilung, die für den Benutzer in Azure Active Directory (Azure AD) definiert ist.
-- **Firma:** Für den Benutzer in Azure AD definiertes Unternehmen.
-- **Land:** Für den Benutzer in Azure AD definiertes Land.
-- **Status:** Für den Benutzer in Azure AD definierter Status.
-- **Stadt:** Für den Benutzer in Azure AD definierter Ort.
-Die folgenden Metriken basieren auf den vorherigen 28 Tagen:
-- **Microsoft 365-apps:** Boolescher Wert, der angibt, ob die Person für Microsoft 365-apps aktiviert wurde – Outlook, Word, Excel, PowerPoint, OneNote mindestens einen Tag lang.
-- **Exchange:** Boolescher Wert, der angibt, ob die Person für Exchange mindestens einen Tag aktiviert wurde.
-- **Jammern:** Boolescher Wert, der angibt, ob die Person mindestens einen Tag lang für "jammern" aktiviert wurde.
-- **Skype:** Boolescher Wert, der angibt, ob die Person mindestens einen Tag für Skype aktiviert wurde.
-- **Microsoft Teams:** Boolescher Wert, der angibt, ob die Person für Teams mindestens einen Tag aktiviert wurde.
-- **Tage in Outlook (Desktop):** Die Anzahl der Tage, in denen die Person in Outlook auf der Desktopplattform aktiv war.
-- **Tage in Outlook (Internet):** Die Anzahl der Tage, in denen die Person in Outlook auf der Webplattform aktiv war.
-- **Tage in Outlook (Mobile):** Die Anzahl der Tage, in denen die Person in Outlook auf der mobilen Plattform aktiv war.
-- **Tage in Microsoft Teams (Desktop):** Anzahl von Tagen, für die die Person in Microsoft Teams auf der Desktopplattform aktiv war.
-- **Tage in Microsoft Teams (Internet):** Anzahl von Tagen, für die die Person in Microsoft Teams auf der Webplattform aktiv war.
-- **Tage in Microsoft Teams (Mobile):** Anzahl von Tagen, für die die Person in Microsoft Teams auf der mobilen Plattform aktiv war.
-- **Tage in Word (Desktop):** Die Anzahl der Tage, in denen die Person in Word auf der Desktopplattform aktiv war.
-- **Tage in Word (Internet):** Die Anzahl der Tage, in denen die Person in Word auf der Webplattform aktiv war.
-- **Tage in Word (Mobile):** Die Anzahl der Tage, in denen die Person in Word auf der mobilen Plattform aktiv war.
-- **Tage in Excel (Desktop):** Die Anzahl der Tage, in denen die Person in Excel auf der Desktopplattform aktiv war.
-- **Days in Excel (Internet):** Die Anzahl der Tage, in denen die Person in Excel auf der Webplattform aktiv war.
-- **Tage in Excel (Mobile):** Die Anzahl der Tage, in denen die Person in Excel auf der mobilen Plattform aktiv war.
-- **Tage in PowerPoint (Desktop):** Die Anzahl der Tage, in denen die Person in PowerPoint auf der Desktopplattform aktiv war.
-- **Tage in PowerPoint (Internet):** Die Anzahl der Tage, in denen die Person in PowerPoint auf der Webplattform aktiv war.
-- **Tage in PowerPoint (Mobile):** Die Anzahl der Tage, in denen die Person in PowerPoint auf der mobilen Plattform aktiv war.
-- **Tage in jammern (Desktop):** Anzahl der Tage, zu denen die Person auf der Desktopplattform auf "jammern" aktiv war.
-- **Tage in jammern (Internet):** Anzahl der Tage, zu denen die Person auf der Webplattform Gejammer aktiv war.
-- **Tage in jammern (mobil):** Anzahl der Tage, zu denen die Person auf der mobilen Plattform auf jammern aktiv war.
-- **Tage in Skype (Desktop):** Die Anzahl der Tage, in denen die Person in Skype in der Desktopplattform aktiv war.
-- **Tage in Skype (Internet):** Die Anzahl der Tage, in denen die Person in Skype in der Webplattform aktiv war.
-- **Tage in Skype (mobil):** Anzahl der Tage, in denen die Person in Skype in der mobilen Plattform aktiv war.
 
 ## <a name="related-content"></a>Verwandte Inhalte
 

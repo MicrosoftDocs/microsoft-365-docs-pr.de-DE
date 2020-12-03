@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Informationen zum Steuern des Zugriffs in Microsoft 365-Gruppen, Teams und SharePoint.
-ms.openlocfilehash: ec4e62f4d77b9aadbdc7457631ac1c4b498221c3
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 2a3a5a126a340a8ec1036eaebd22a0a0a81cf6c3
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377569"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558222"
 ---
 # <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>Steuern des Zugriffs in Microsoft 365-Gruppen,-Teams und-SharePoint
 
@@ -35,7 +35,7 @@ Die folgende Tabelle enthält eine Kurzübersicht über die in Microsoft 365 ver
 ||Dynamische Gruppenmitgliedschaft basierend auf Regeln|[Erstellen oder Aktualisieren einer dynamischen Gruppe in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)|
 ||Steuern, wer Dateien, Ordner und Websites freigeben kann.|[Einrichten und Verwalten der Funktion „Zugriffsanforderungen“](https://support.microsoft.com/office/94b26e0b-2822-49d4-929a-8455698654b3)|
 |Bedingter Zugriff|||
-||Mehrstufige Authentifizierung|[Mehrstufige Azure-Authentifizierung](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)|
+||Mehrstufige Authentifizierung|[Azure AD Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)|
 ||Steuern des Gerätezugriffs basierend auf Gruppen-, Team-oder Standort Sensitivität.|[Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites verwenden](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)|
 ||Einschränken des Websitezugriffs für nicht verwaltete Geräte.|[Steuern des SharePoint-Zugriffs von nicht verwalteten Geräten](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)|
 ||Steuern des Websitezugriffs basierend auf dem Standort|[Steuern des Zugriffs auf SharePoint- und OneDrive-Daten anhand der Netzwerkadresse](https://docs.microsoft.com/sharepoint/control-access-based-on-network-location)|
@@ -73,7 +73,7 @@ SharePoint-Websites bieten die Möglichkeit, Besitzer, Mitglieder und Besucher a
 
 Mit Microsoft 365 können Sie die mehrstufige Authentifizierung für Personen innerhalb und außerhalb Ihrer Organisation benötigen. Es gibt viele Optionen für die Umstände, wenn Personen zur Eingabe eines zweiten Authentifizierungsfaktors aufgefordert werden. Es wird dringend empfohlen, die mehrstufige Authentifizierung für Ihre Organisation bereitzustellen:
 
-- [Mehrstufige Azure-Authentifizierung](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
+- [Azure AD Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
 
 Wenn Sie in einigen ihrer Gruppen und Teams vertrauliche Informationen haben, können Sie Richtlinien für die Geräteverwaltung basierend auf der Vertraulichkeits Bezeichnung einer Gruppe oder eines Teams erzwingen. Sie können den Zugriff vollständig von nicht verwalteten Geräten blockieren oder nur eingeschränkten Zugriff auf die Webanwendung gewähren:
 

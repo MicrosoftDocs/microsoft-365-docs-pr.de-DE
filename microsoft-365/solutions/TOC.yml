@@ -15,23 +15,23 @@
       items:
         - name: Übersicht
           href: empower-people-to-work-remotely.md
-        - name: Schritt 1. Anmeldesicherheit erhöhen
+        - name: 'Schritt 1: Erhöhung der Anmeldesicherheit'
           href: empower-people-to-work-remotely-secure-sign-in.md
-        - name: Schritt 2. Remotezugriff ermöglichen
+        - name: "Schritt\_2: Remotezugriff ermöglichen"
           href: empower-people-to-work-remotely-remote-access.md
-        - name: Schritt 3. Sicherheit und Compliance bereitstellen
+        - name: 'Schritt 3: Sicherheit und Compliance bereitstellen'
           href: empower-people-to-work-remotely-security-compliance.md
-        - name: Schritt 4. Endpunktverwaltung bereitstellen
+        - name: "Schritt\_4: Endpunktverwaltung bereitstellen"
           href: empower-people-to-work-remotely-manage-endpoints.md
-        - name: Schritt 5. Produktivitätsanwendungen und -dienste bereitstellen
+        - name: "Schritt\_5: Produktivitätsanwendungen und -dienste bereitstellen"
           href: empower-people-to-work-remotely-teams-productivity-apps.md
-        - name: Schritt 6. Remotemitarbeiter schulen
+        - name: 'Schritt 6: Remotemitarbeiter schulen'
           href: empower-people-to-work-remotely-train-monitor-usage.md
     - name: Sichere Zusammenarbeit mit Microsoft 365 einrichten
       items:
         - name: Übersicht
           href: setup-secure-collaboration-with-teams.md
-        - name: Schritt 1. Konfigurieren von drei Schutzebenen mit Microsoft Teams
+        - name: 'Schritt 1: Konfigurieren von drei Schutzebenen mit Microsoft Teams'
           items:
             - name: Drei Schutzebenen – Übersicht
               href: configure-teams-three-tiers-protection.md
@@ -43,7 +43,7 @@
               href: configure-teams-highly-sensitive-protection.md
             - name: Konfigurieren eines Teams mit Sicherheitsisolierung
               href: secure-teams-security-isolation.md
-        - name: Schritt 2. Konfigurieren der externen Freigabe
+        - name: "Schritt\_2: Konfigurieren der externen Freigabe"
           items:
             - name: Externe Freigabe – Übersicht
               href: collaborate-with-people-outside-your-organization.md
@@ -109,14 +109,16 @@
           items:
             - name: Übersicht
               href: collaboration-governance-overview.md
-            - name: Governance zuerst
+            - name: Erstellen Sie Ihren Governance-Plan
               href: collaboration-governance-first.md
-            - name: Gruppen mit SharePoint
-              href: groups-sharepoint-governance.md
-            - name: 'Gruppen, SharePoint und Teams'
-              href: groups-sharepoint-teams-governance.md
-            - name: Referenz zu Services-Interaktionen
-              href: groups-services-interactions.md
+            - name: Einstellungen in „Dienste“
+              items:
+                - name: Gruppen mit SharePoint
+                  href: groups-sharepoint-governance.md
+                - name: 'Gruppen, SharePoint und Teams'
+                  href: groups-sharepoint-teams-governance.md
+                - name: Gruppen mit anderen Diensten
+                  href: groups-services-interactions.md
             - name: Zugriff
               href: groups-teams-access-governance.md
             - name: Compliance

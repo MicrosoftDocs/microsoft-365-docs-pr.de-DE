@@ -17,14 +17,14 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Suchen und Verwenden von Berichten für Microsoft Defender für Office 365 im Security &amp; Compliance Center.
+description: Suchen und Verwenden von Berichten für Microsoft Defender für Office 365 im Security & Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8885eea2168cc40c497f6fa1066ae020dda7fd7c
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 5efaef018c78bd161c9cde81af36be92173479ae
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087709"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561727"
 ---
 # <a name="view-reports-for-microsoft-defender-for-office-365"></a>Anzeigen von Berichten für Microsoft Defender für Office 365
 
@@ -35,7 +35,7 @@ Microsoft Defender für Office 365 Organisationen (beispielsweise Microsoft 365 
 
 ![Das Dashboard "Berichte" im Security & Compliance Center](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
-## <a name="defender-for-office-365-file-types-report"></a>Defender für Office 365-Bericht zu Dateitypen
+## <a name="defender-for-office-365-file-types-report"></a>Defender for Office 365 File Types Report
 
 Der Bericht **Defender for Office 365 File Types Report** zeigt Ihnen den Typ der Dateien an, die von [sicheren Anlagen](atp-safe-attachments.md)als schädlich erkannt wurden.
 
@@ -119,7 +119,7 @@ Wenn Sie auf **Detailtabelle anzeigen** klicken, bietet der Bericht eine nahezu 
 
 Klicken Sie auf **Bericht anzeigen**, um wieder zur Berichtsansicht zu gelangen.
 
-## <a name="defender-for-office-365-message-disposition-report"></a>Defender für Office 365-Bericht zum Nachrichtenstatus
+## <a name="defender-for-office-365-message-disposition-report"></a>Verteidiger für Office 365 Nachrichten Disposition (Bericht)
 
 Der Bericht " **ATP-Nachrichten Disposition** " zeigt die Aktionen an, die für e-Mail-Nachrichten durchgeführt wurden, die als schädliche Inhalte erkannt wurden.
 
@@ -338,7 +338,7 @@ Zusätzlich zu den in diesem Thema beschriebenen Berichten stehen verschiedene a
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>Welche Berechtigungen sind erforderlich, um den Verteidiger für Office 365 Berichte anzuzeigen?
 
-Damit Sie die in diesem Thema beschriebenen Berichte anzeigen und verwenden können, **muss Ihnen eine entsprechende Rolle sowohl für das Security &amp; Compliance Center als auch für das Exchange Admin Center zugewiesen sein**.
+Damit Sie die in diesem Thema beschriebenen Berichte anzeigen und verwenden können, **müssen Sie sowohl dem Security & Compliance Center als auch dem Exchange Admin Center eine entsprechende Rolle zugewiesen haben**.
 
 - Für das Security & Compliance Center muss eine der folgenden Rollen zugewiesen sein:
 

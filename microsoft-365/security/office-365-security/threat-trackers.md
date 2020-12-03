@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Erfahren Sie mehr über Threat Tracker, einschließlich neuer bemerkenswerter Tracker, damit Ihre Organisation weiterhin auf Sicherheitsbedenken eingeht.
-ms.openlocfilehash: df544da7bfc5abebd45b0861c29f9e49632cdcd8
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: bdd15f7c2e74a2e30b2e4c5296cfde5e59bfb378
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842320"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561281"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Aufzeichnungen von Bedrohungen – neu und wichtig
 
@@ -46,10 +46,10 @@ Die meisten Tracker-Seiten umfassen Trend Nummern, die regelmäßig aktualisiert
   
 Tracker sind nur einige der vielen großartigen Features, die Sie mit [Microsoft Defender für Office 365 Plan 2](office-365-ti.md)erhalten. Zu den Gefahren Verfolgungen gehören [Noteworth-Tracker](#noteworthy-trackers), [Trend Tracker](#trending-trackers), nach [verfolgte Abfragen](#tracked-queries)und [gespeicherte Abfragen](#saved-queries).
   
-Um Ihre Threat Tracker für Ihre Organisation anzuzeigen und zu verwenden, wechseln Sie zum Security &amp; Compliance Center ( [https://protection.office.com](https://protection.office.com) ) und wählen Sie Threat **Management** \> **Threat Tracker** aus.
+Um Ihre Threat Tracker für Ihre Organisation anzuzeigen und zu verwenden, wechseln Sie zum Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) ) und wählen Sie Threat **Management** \> **Threat Tracker** aus.
   
 > [!NOTE]
-> Um Threat Tracker verwenden zu können, müssen Sie ein globaler Administrator, Sicherheitsadministrator oder Sicherheits Leser sein. Weitere Informationen finden Sie unter [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). 
+> Um Threat Tracker verwenden zu können, müssen Sie ein globaler Administrator, Sicherheitsadministrator oder Sicherheits Leser sein. Weitere Informationen finden Sie unter [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md). 
   
 ### <a name="noteworthy-trackers"></a>Bemerkenswerte Tracker
 
@@ -85,13 +85,13 @@ Unabhängig davon, ob Sie e-Mails, Inhalte oder Office-Aktivitäten (in Kürze) 
   
 Beachten Sie, dass Sie uns jederzeit Feedback zu diesen oder anderen Sicherheitsfeatures von Microsoft 365 geben können, indem Sie auf die Schaltfläche **Feedback** in der unteren rechten Ecke der [Übersicht über das Security & Compliance Center](https://support.microsoft.com/office/a5f2fd18-b029-4257-b5a8-ae83e7768c85)klicken.
   
-![Security &amp; Compliance-Center ](../../media/86c330db-8132-4150-8475-220258fe04fb.png)
+![Security & Compliance Center](../../media/86c330db-8132-4150-8475-220258fe04fb.png)
   
 ## <a name="trackers-and-microsoft-defender-for-office-365"></a>Tracker und Microsoft Defender für Office 365
 
 Mit unserer ersten bemerkenswerten Bedrohung heben wir fortgeschrittene Malware-Bedrohungen hervor, die durch [sichere Anlagen](atp-safe-attachments.md)erkannt werden. Wenn Sie ein Office 365 Enterprise E5-Kunde sind und [Microsoft Defender nicht für Office 365](office-365-atp.md)verwenden, sollten Sie in Ihrem Abonnement enthalten sein. Defender für Office 365 bietet auch dann einen Mehrwert, wenn andere Sicherheitstools e-Mail-Fluss mit Ihren Office 365 Diensten filtern. Allerdings funktionieren Antispam-und [sichere Links](atp-safe-links.md) -Funktionen am besten, wenn Ihre Haupt-e-Mail-Sicherheitslösung über Office 365.
   
-![Microsoft Defender für Office 365 im Security &amp; Compliance Center](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
+![Microsoft Defender für Office 365 im Security & Compliance Center](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
   
 In der heutigen mit Bedrohungen gespickten Welt bedeutet das Durchführen von nur herkömmlichen Antimalware-Scans, dass Sie nicht gut genug vor Angriffen geschützt sind. Modernere Angreifer verwenden häufig verfügbare Tools zum Erstellen von neuen, verschleierten oder verzögerten Angriffen, die von herkömmlichen Signaturen-basierten Antischadsoftware-Modulen nicht erkannt werden. Das Feature für sichere Anlagen verwendet e-Mail-Anlagen und zündet Sie in einer virtuellen Umgebung an, um festzustellen, ob diese sicher oder böswillig sind. Dieser detonations Prozess öffnet jede Datei in einer virtuellen Computerumgebung und überwacht dann, was nach dem Öffnen der Datei geschieht. Unabhängig davon, ob es sich um eine PDF-Datei, eine komprimierte Datei oder ein Office-Dokument handelt, der böswillige Code kann in einer Datei ausgeblendet werden und nur aktiviert werden, wenn das Opfer Sie auf seinem Computer öffnet. Durch das detonieren und Analysieren der Datei im e-Mail-Fluss findet Defender for Office 365-Funktionen diese Bedrohungen basierend auf dem Verhalten, der dateireputation und einer Reihe von heuristischen Regeln.
   
@@ -101,7 +101,7 @@ Mit dem neuen bemerkenswerten Bedrohungs Filter werden Elemente hervorgehoben, d
 
 - Wenn Ihre Organisation noch nicht über diese Office 365-und-Antwortfunktionen verfügt, finden Sie weitere Informationen unter [wie werden Office 365 Bedrohungs Ermittlung und-Antwortfunktionen abgerufen?](office-365-ti.md).
 
-- Stellen Sie sicher, dass Ihrem Sicherheitsteam die richtigen Rollen und Berechtigungen zugewiesen sind. Sie müssen ein globaler Administrator sein, oder der Sicherheitsadministrator oder die Such-und Lösch Rolle im Security &amp; Compliance Center zugewiesen sein. Weitere Informationen finden Sie unter [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- Stellen Sie sicher, dass Ihrem Sicherheitsteam die richtigen Rollen und Berechtigungen zugewiesen sind. Sie müssen ein globaler Administrator sein, oder der Sicherheitsadministrator oder die Such-und Lösch Rolle im Security & Compliance Center zugewiesen sein. Weitere Informationen finden Sie unter [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - Achten Sie darauf, dass die neuen Tracker in Ihrer Microsoft 365-Umgebung angezeigt werden. Wenn verfügbar, finden Sie [hier](https://protection.office.com/)ihre Tracker. Wechseln Sie zu Threat **Management** \> **Threat Tracker**.
 

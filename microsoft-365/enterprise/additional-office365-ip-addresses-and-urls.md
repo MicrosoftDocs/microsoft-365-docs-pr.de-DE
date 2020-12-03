@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Zusammenfassung: In den neuen Endpunkt-Webdiensten ist eine kleine Anzahl von Endpunkten für bestimmte Szenarien nicht enthalten.'
 hideEdit: true
-ms.openlocfilehash: 30d0c7af8420f85abf820839a26c989704860c0a
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: b94bd187eb0e450a2a85d4d156472e1f96420261
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235582"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558176"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Zusätzliche Endpunkte, die nicht im Office 365-IP-Adress- und -URL-Webdienst enthalten sind
 
@@ -66,7 +66,7 @@ Abgesehen von DNS sind alle diese Punkte für die meisten Benutzer optional, es 
 | 19  | Verwenden Sie [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) zum Synchronisieren von lokalen Benutzerkonten mit Azure AD. | Siehe [erforderliche Ports und Protokolle zur Hybrid-Identität](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports), [Problembehandlung bei Azure AD-Konnektivitätsproblemen](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity) und [Azure AD Connect Health Agent-Installation](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install#outbound-connectivity-to-the-azure-service-endpoints). | Nur ausgehender Serverdatenverkehr |
 | 20  | [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) mit 21 ViaNet in China, um Benutzerkonten lokal mit Azure AD zu synchronisieren. | \*.digicert.com:80 <BR> \*.entrust.net:80 <BR> \*.chinacloudapi.cn:443 <BR> secure.aadcdn.partner.microsoftonline-p.cn:443 <BR>*.partner.microsoftonline.cn:443 <BR> <BR>Siehe auch [Fehlerbehebung bei Problemen des Eingangs mit Azure AD-Verbindung](https://docs.azure.cn/zh-cn/active-directory/hybrid/tshoot-connect-connectivity). | Nur ausgehender Serverdatenverkehr |
 |  21  | Microsoft Stream (benötigt das Benutzertoken Azure AD). <BR> Office 365 weltweit (einschließlich GCC) | \**.cloudapp.net <BR> \**.api.microsoftstream.com <BR> \**.notification.api.microsoftstream.com <BR> amp.azure.net <BR> api.microsoftstream.com <BR> az416426.vo.msecnd.net <BR> s0.assets-yammer.com <BR> vortex.data.microsoft.com <BR> web.microsoftstream.com <BR> TCP-Port 443  | Eingehender Serverdatenverkehr |
-| 22  | Verwenden Sie den MFA-Server für die mehrstufige Authentifizierung, sowohl für neue Installationen des Servers als auch für die Einrichtung von Active Directory Domain Services (AD DS). | Siehe [Erste Schritte mit Azure Multi-Factor Authentication-Server](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-deploy#plan-your-deployment).  | Nur ausgehender Serverdatenverkehr |
+| 22  | Verwenden Sie den MFA-Server für die mehrstufige Authentifizierung, sowohl für neue Installationen des Servers als auch für die Einrichtung von Active Directory Domain Services (AD DS). | Weitere Informationen finden Sie unter [Erste Schritte mit dem Azure AD Multi-Factor Authentication Server](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-deploy#plan-your-deployment).  | Nur ausgehender Serverdatenverkehr |
 | 23  | Microsoft Graph-Änderungsbenachrichtigungen | Entwickler können [Änderungsbenachrichtigungen](https://docs.microsoft.com/graph/webhooks?context=graph%2Fapi%2F1.0&view=graph-rest-1.0) nutzen, um Ereignisse in Microsoft Graph zu abonnieren. | *.cloudapp.net<BR> 104.43.130.21, 137.116.169.230, 13.79.38.63, 104.214.39.228, Public Cloud: 168.63.250.205, 52.161.9.202, 40.68.103.62, 13.89.60.223-, 23.100.95.104-, 40.113.95.219-, 104.214.32.10-, 168.63.237.145-, 52.161.110.176-, 52.174.177.183-, 13.85.192.59-, 13.85.192.123-, 13.86.37.15-, 13.89.108.233-, 13.89.104.147-, 20.44.210.83-, 20.44.210.146-, 40.76.162.99-, 40.76.162.42-, 40.74.203.28-, 40.74.203.27-, 51.104.159.213-, 51.104.159.181-, 51.124.75.43-, 51.124.73.177-, 51.138.90.7-und 51.138.90.52-52.139.153.222-52.139.170.157 <BR> Microsoft-Cloud für US-Regierung: 52.244.231.173, 52.238.76.151, 52.244.250.211, 52.238.78.108, 52.243.147.249, 52.243.148.19, 52.243.157.104, 52.243.157.105, 52.244.33.45, 52.244.35.174, 52.244.111.156, 52.244.111.170 <BR> Microsoft Cloud Deutschland: 51.4.231.136, 51.5.243.223, 51.4.226.154, 51.5.244.215, 51.4.150.206, 51.4.150.235, 51.5.147.130, 51.5.148.103 <BR> Microsoft Cloud China betrieben von 21Vianet: 139.219.15.33, 42.159.154.223, 42.159.88.79, 42.159.155.77, 40.72.155.199, 40.72.155.216, 40.125.138.23, 40.125.136.69, 42.159.72.35, 42.159.72.47, 42.159.180.55, 42.159.180.56<BR> TCP-Port 443 <BR> Hinweis: Entwickler können beim Erstellen der Abonnements andere Ports angeben.  | Eingehender Serverdatenverkehr |
 |||||
 

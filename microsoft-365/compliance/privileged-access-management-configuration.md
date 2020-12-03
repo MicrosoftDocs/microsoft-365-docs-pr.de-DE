@@ -21,18 +21,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: In diesem Artikel erfahren Sie mehr über das Aktivieren und Konfigurieren der privilegierten Zugriffsverwaltung in Office 365.
-ms.openlocfilehash: d75a8944cdacb6df2d6ee6570c0ce327d0e7ae00
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: 6018d3b842dcadb60208e6ab53707a50e26f9d35
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341203"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49560873"
 ---
 # <a name="get-started-with-privileged-access-management"></a>Erste Schritte mit der Verwaltung des privilegierten Zugriffs
 
 Dieses Thema führt Sie durch das Aktivieren und Konfigurieren der privilegierten Zugriffsverwaltung in Ihrer Organisation. Sie können entweder das Microsoft 365 Admin Center oder die Exchange-Verwaltungskonsole verwenden, um privilegierten Zugriff zu verwalten und zu verwenden.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 Bevor Sie mit der privilegierten Zugriffsverwaltung beginnen, sollten Sie Ihr [Microsoft 365-Abonnement](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) und alle Add-ons bestätigen. Für den Zugriff auf und die Verwendung der privilegierten Zugriffsverwaltung muss Ihre Organisation über eines der folgenden Abonnements oder Add-ons verfügen:
 
@@ -85,7 +85,7 @@ Nachdem die Genehmigung erteilt wurde, kann der anfragende Benutzer die beabsich
 
 2. Wechseln Sie im Admin Center zu **Gruppen**  >  **Hinzufügen einer Gruppe**.
 
-3. Wählen Sie **e-Mail-aktivierte Sicherheitsgruppe** aus, und füllen Sie dann die Felder **Name**, **Gruppen-e-Mail-Adresse**und **Beschreibung** für die neue Gruppe aus.
+3. Wählen Sie **e-Mail-aktivierte Sicherheitsgruppe** aus, und füllen Sie dann die Felder **Name**, **Gruppen-e-Mail-Adresse** und **Beschreibung** für die neue Gruppe aus.
 
 4. Speichern Sie die Gruppe.  Es kann ein paar Minuten dauern, bis die Gruppe vollständig konfiguriert ist und im Microsoft 365 Admin Center angezeigt wird.
 
@@ -105,7 +105,7 @@ Nachdem die Genehmigung erteilt wurde, kann der anfragende Benutzer die beabsich
 
 3. Aktivieren Sie das Steuerelement **erforderliche Genehmigungen für privilegierte Aufgaben** .
 
-4. Weisen Sie die Gruppe der genehmigenden Person, die Sie in Schritt 1 erstellt haben, als **Standard genehmigende Gruppe**zu.
+4. Weisen Sie die Gruppe der genehmigenden Person, die Sie in Schritt 1 erstellt haben, als **Standard genehmigende Gruppe** zu.
 
 5. **Speichern** und **Schließen**.
 
@@ -120,7 +120,7 @@ Enable-ElevatedAccessControl -AdminGroup '<default approver group>' -SystemAccou
 Beispiel:
 
 ```PowerShell
-Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com' -SystemAccounts @('sys1@fabrikamorg.onmicrosoft.com', sys2@fabrikamorg.onmicrosoft.com')
+Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com' -SystemAccounts @('sys1@fabrikamorg.onmicrosoft.com', 'sys2@fabrikamorg.onmicrosoft.com')
 ```
 
 >[!NOTE]
@@ -138,9 +138,9 @@ Sie können bis zu 30 privilegierte Zugriffsrichtlinien für Ihre Organisation e
 
 2. Wechseln Sie im Admin Center zu **Einstellungen**  >  **org Settings**  >  **Security & Privacy**  >  **privileged Access**.
 
-3. Wählen Sie **Zugriffsrichtlinien und-Anforderungen verwalten**aus.
+3. Wählen Sie **Zugriffsrichtlinien und-Anforderungen verwalten** aus.
 
-4. Wählen Sie **Richtlinien konfigurieren** aus, und wählen Sie **Richtlinie hinzufügen**aus.
+4. Wählen Sie **Richtlinien konfigurieren** aus, und wählen Sie **Richtlinie hinzufügen** aus.
 
 5. Wählen Sie in den Dropdownfeldern die entsprechenden Werte für Ihre Organisation aus:
     
@@ -184,9 +184,9 @@ Anforderungen für einen privilegierten Zugriff sind bis zu 24 Stunden nach Einr
 
 2. Wechseln Sie im Admin Center zu **Einstellungen**  >  **org Settings**  >  **Security & Privacy**  >  **privileged Access**.
 
-3. Wählen Sie **Zugriffsrichtlinien und-Anforderungen verwalten**aus.
+3. Wählen Sie **Zugriffsrichtlinien und-Anforderungen verwalten** aus.
 
-4. Wählen Sie **neue Anforderung**aus. Wählen Sie in den Dropdownfeldern die entsprechenden Werte für Ihre Organisation aus:
+4. Wählen Sie **neue Anforderung** aus. Wählen Sie in den Dropdownfeldern die entsprechenden Werte für Ihre Organisation aus:
 
     **Anforderungstyp**: Aufgabe, Rolle oder Rollengruppe
 
@@ -224,9 +224,9 @@ Nach dem Erstellen einer Genehmigungsanforderung kann der Status der Ansichts An
 
 2. Wechseln Sie im Admin Center zu **Einstellungen**  >  **org Settings**  >  **Security & Privacy**  >  **privileged Access**.
 
-3. Wählen Sie **Zugriffsrichtlinien und-Anforderungen verwalten**aus.
+3. Wählen Sie **Zugriffsrichtlinien und-Anforderungen verwalten** aus.
 
-4. Wählen Sie **Ansicht** aus, um übermittelte Anforderungen nach **ausstehender**, **genehmigter**, **verweigerter**oder **Kunden sperrbox** -Status zu filtern.
+4. Wählen Sie **Ansicht** aus, um übermittelte Anforderungen nach **ausstehender**, **genehmigter**, **verweigerter** oder **Kunden sperrbox** -Status zu filtern.
 
 #### <a name="in-exchange-management-powershell"></a>In der Exchange-Verwaltungs-PowerShell
 
@@ -252,11 +252,11 @@ Wenn eine Genehmigungsanforderung erstellt wird, erhalten Mitglieder der entspre
 
 2. Wechseln Sie im Admin Center zu **Einstellungen**  >  **org Settings**  >  **Security & Privacy**  >  **privileged Access**.
 
-3. Wählen Sie **Zugriffsrichtlinien und-Anforderungen verwalten**aus.
+3. Wählen Sie **Zugriffsrichtlinien und-Anforderungen verwalten** aus.
 
 4. Wählen Sie eine aufgeführte Anforderung aus, um die Details anzuzeigen und Aktionen für die Anforderung durchführen zu können.
 
-5. Wählen Sie **genehmigen** , um die Anforderung zu genehmigen, oder wählen Sie **verweigern** aus, um die Anforderung zu verweigern. Für zuvor genehmigte Anforderungen kann der Zugriff aufgehoben werden, indem Sie **REVOKE**auswählen.
+5. Wählen Sie **genehmigen** , um die Anforderung zu genehmigen, oder wählen Sie **verweigern** aus, um die Anforderung zu verweigern. Für zuvor genehmigte Anforderungen kann der Zugriff aufgehoben werden, indem Sie **REVOKE** auswählen.
 
 #### <a name="in-exchange-management-powershell"></a>In der Exchange-Verwaltungs-PowerShell
 
@@ -294,11 +294,11 @@ Wenn Sie in Ihrer Organisation nicht mehr benötigt wird, können Sie eine privi
 
 2. Wechseln Sie im Admin Center zu **Einstellungen**  >  **org Settings**  >  **Security & Privacy**  >  **privileged Access**.
 
-3. Wählen Sie **Zugriffsrichtlinien und-Anforderungen verwalten**aus.
+3. Wählen Sie **Zugriffsrichtlinien und-Anforderungen verwalten** aus.
 
-4. Wählen Sie **configure Policies**aus.
+4. Wählen Sie **configure Policies** aus.
 
-5. Wählen Sie die Richtlinie aus, die Sie löschen möchten, und wählen Sie dann **Richtlinie entfernen**aus.
+5. Wählen Sie die Richtlinie aus, die Sie löschen möchten, und wählen Sie dann **Richtlinie entfernen** aus.
 
 6. Wählen Sie **Schließen** aus.
 

@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Grundlegende Mobilität und Sicherheit sind Teil der Microsoft 365-Pläne.
-ms.openlocfilehash: b9568d0aad03fc3c8a5c81d02f98f5b238124a82
-ms.sourcegitcommit: 5a355bde865369f64ea1788a378da23c65b1d249
+ms.openlocfilehash: 8724b3dccbdb5949190ceda4b804b9f1f2a5d4b2
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48930165"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561495"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>Auswählen zwischen Basis Mobilität und Sicherheit oder InTune
 
@@ -33,7 +33,7 @@ ms.locfileid: "48930165"
  
 Sowohl grundlegende Mobilität und Sicherheit als auch InTune sind in einer Vielzahl von Plänen enthalten, die in der folgenden Tabelle beschrieben werden.
 
-|**Planen**|**Grundlegende Mobilität und Sicherheit**|**Microsoft Intune**|
+| Plan | Grundlegende Mobilität und Sicherheit | Microsoft Intune |
 |:-----|:-----|:-----|
 |Microsoft 365 Apps|Ja|Nein|
 |Microsoft 365 Business Basic|Ja|Nein|
@@ -64,11 +64,11 @@ Mit Microsoft InTune und integrierter grundlegender Mobilität und Sicherheit k�
 >[!NOTE]
 >Sie können Benutzer und Ihre mobilen Geräte sowohl mit InTune als auch mit Basic Mobility and Security in derselben Microsoft 365 Business Standard-Organisation verwalten *, indem Sie zuerst grundlegende Mobilität und Sicherheit einrichten und dann Microsoft InTune hinzufügen*. Auf diese Weise können Sie die grundlegende Mobilität und Sicherheit oder die mehr funktionsreiche InTune-Lösung auswählen. Weisen Sie eine InTune-Lizenz zum Aktivieren der InTune-Funktionen zu.
 
-|**Funktionsbereich**|**Wesentliche Elemente des Features**|**Grundlegende Mobilität und Sicherheit**|**Microsoft Intune**|
+| Funktionsbereich | Wesentliche Elemente des Features | Grundlegende Mobilität und Sicherheit | Microsoft Intune |
 |:-----|:-----|:-----|:-----|
 |Gerätetypen|Verwalten verschiedener Betriebssystemplattformen und Haupt Verwaltungsmodi-Varianten. |Windows<br/>iOS<br/>Android<br/>Android Samsung Knox<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung Knox<br/>Mac OS, iPad OS|
 |Gerätekompatibilität|Festlegen und Verwalten von Sicherheitsrichtlinien wie PIN-Sperre auf Geräteebene und Erkennung von Jailbreaks. |Einschränkungen auf Android 9-und höher-Geräten. Siehe [Details](capabilities.md). |Ja|
-|Bedingter Zugriff basierend auf der Geräte Konformität |Verhindern, dass nicht konforme Geräte auf Firmen-e-Mails und Daten aus der Cloud zugreifen. |Wird in Windows 10 nicht unterstützt.<br/>Ist auf die Steuerung des Zugriffs auf Exchange Online, SharePoint Online und Outlook limitiert. |Nein |
+|Bedingter Zugriff basierend auf der Geräte Konformität |Verhindern, dass nicht konforme Geräte auf Firmen-e-Mails und Daten aus der Cloud zugreifen. |Wird in Windows 10 nicht unterstützt.<br/>Ist auf die Steuerung des Zugriffs auf Exchange Online, SharePoint Online und Outlook limitiert. |Ja |
 |Gerätekonfiguration  |Konfigurieren von Geräteeinstellungen (beispielsweise Deaktivieren der Kamera)|Gerätekompatibilität|Festlegen und Verwalten von Sicherheitsrichtlinien wie PIN-Sperre auf Geräteebene und Erkennung von Jailbreaks. |Einschränkungen auf Android 9-und höher-Geräten. Siehe [Details](capabilities.md). |Ja|
  |Beschränkte Gruppe von Einstellungen. |Ja|
 |E-Mail-Profile  |Stellen Sie ein systemeigenes e-Mail-Profil auf dem Gerät. |Ja|Ja|

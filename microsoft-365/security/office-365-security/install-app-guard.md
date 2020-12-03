@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Holen Sie sich die neuesten hardwarebasierten Isolierungen. Verhindern Sie, dass aktuelle und neue Angriffe wie Exploits oder böswillige Links die Produktivität von Mitarbeitern und die Unternehmenssicherheit beeinträchtigen.
-ms.openlocfilehash: c9b31ff91521b6badda31b6eb3202f370769a0fd
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: 075006bb8f000dbbda2fd564e0c7cf83c1a15129
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49021073"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561435"
 ---
 # <a name="application-guard-for-office-public-preview-for-admins"></a>Application Guard für Office (Public Preview) für Administratoren
 
@@ -29,8 +29,8 @@ ms.locfileid: "49021073"
 
 **Gilt für:** Word, Excel und PowerPoint für Microsoft 365, Windows 10 Enterprise
 
->[!IMPORTANT]
->Einige Informationen beziehen sich auf ein vorab veröffentlichtes Produkt, das vor der kommerziellen Veröffentlichung erheblich geändert werden kann. Microsoft übernimmt mit diesen Informationen keinerlei Gewährleistung, sei sie ausdrücklich oder konkludent.
+> [!IMPORTANT]
+> Einige Informationen beziehen sich auf ein vorab veröffentlichtes Produkt, das vor der kommerziellen Veröffentlichung erheblich geändert werden kann. Microsoft übernimmt mit diesen Informationen keinerlei Gewährleistung, sei sie ausdrücklich oder konkludent.
 
 Microsoft Defender Application Guard für Office (Application Guard für Office) hilft zu verhindern, dass nicht vertrauenswürdige Dateien auf vertrauenswürdige Ressourcen zugreifen, sodass Ihr Unternehmen vor neuen und neu auftretenden Angriffen geschützt ist. In diesem Artikel werden die Administratoren durch das Einrichten von Geräten für eine Vorschau des Application Guard für Office unterwandert. Es enthält Informationen zu Systemanforderungen und Installationsschritten, um Application Guard für Office auf einem Gerät zu aktivieren.
 
@@ -38,15 +38,15 @@ Microsoft Defender Application Guard für Office (Application Guard für Office)
 
 ### <a name="minimum-hardware-requirements"></a>Minimale Hardwareanforderungen
 
-* **CPU** : 64-Bit, 4 Kerne (physisch oder virtuell), Virtualization Extensions (Intel VT-x oder AMD-V), Core i5 Äquivalent oder höher empfohlen
-* **Physischer Arbeitsspeicher** : 8 GB RAM
-* **Festplatte** : 10 GB freier Speicherplatz auf dem Systemlaufwerk (SSD empfohlen)
+* **CPU**: 64-Bit, 4 Kerne (physisch oder virtuell), Virtualization Extensions (Intel VT-x oder AMD-V), Core i5 Äquivalent oder höher empfohlen
+* **Physischer Arbeitsspeicher**: 8 GB RAM
+* **Festplatte**: 10 GB freier Speicherplatz auf dem Systemlaufwerk (SSD empfohlen)
 
 ### <a name="minimum-software-requirements"></a>Mindestanforderungen an die Software
 
-* **Windows 10** : Windows 10 Enterprise Edition, Client Build Version 2004 (20H1) Build 19041
-* **Office** : Office Beta Channel Build Version 2008 16.0.13212 oder höher
-* **Update Paket** : kumulative monatliche Sicherheitsupdates für Windows 10 [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
+* **Windows 10**: Windows 10 Enterprise Edition, Client Build Version 2004 (20H1) Build 19041
+* **Office**: Office Beta Channel Build Version 2008 16.0.13212 oder höher
+* **Update Paket**: kumulative monatliche Sicherheitsupdates für Windows 10 [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
 Ausführliche Systemanforderungen finden Sie unter [System Requirements for Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). Weitere Informationen zu Builds für Office-Insider-Vorschau finden Sie unter [Erste Schritte bei der Bereitstellung von Office-Insider-Builds](https://insider.office.com/business/deploy).
 

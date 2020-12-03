@@ -19,38 +19,38 @@ search.appverid:
 - MET150
 - MOE150
 description: Details zur Inhalts Zusammenarbeit-Personen erleben Produktivitäts Bewertung.
-ms.openlocfilehash: 99f5a897dc372a45be31a8c01379c6fe4c980de9
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: 2637debe41cd32093c378a4665af6dc5185b0e5e
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123447"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561659"
 ---
 # <a name="content-collaboration--people-experiences"></a>Content-Zusammenarbeit – Personen Erfahrungen
 
-Das Produktivitäts Ergebnis hilft Ihnen, zu transformieren, wie arbeiten mit Metriken darüber, wie Benutzer Microsoft 365-Apps verwenden, und den Technologie-Erfahrungen, die Sie unterstützen, ausgeführt wird. Die Partitur spiegelt die Leistung Ihrer Organisation&#39;s für Personen und Technologie erlebbar und vergleicht Ihre Bewertung mit Organisationen wie Ihrem. Die Zusammenarbeit mit Inhalten ist eine der Maßnahmen, die unter Personen Erfahrungen fallen. Sehen Sie sich die Übersicht über die [Produktivitäts Bewertung](productivity-score.md)an.
+Die Produktivitäts Bewertung bietet Einblicke in die digitale Transformationsreise Ihrer Organisation durch die Verwendung von Microsoft 365 und die damit unterstützten Technologie-Erlebnisse. Die Bewertung Ihrer Organisation reflektiert Personen-und Technologie Erfahrungs Messungen und kann mit Benchmarks von Organisationen vergleichbar mit Ihnen verglichen werden. Die Kategorie Inhalts Zusammenarbeit ist Teil der Messungen mit den Personen Erfahrungen. Weitere Informationen finden Sie unter Übersicht über die [Produktivitäts Bewertung](productivity-score.md) und Lesen der [Datenschutzerklärung von Microsoft](https://privacy.microsoft.com/privacystatement).
 
 ## <a name="why-your-organization39s-content-collaboration-score-matters"></a>Gründe für das Ergebnis der Zusammenarbeit in Ihrer Organisation&#39;en
 
-Ein grundlegender Pfeiler für die Produktivität der Organisation ist die Zusammenarbeit von Personen in Dateien. Mit ihren Inhalten in Microsoft 365 können Benutzer Inhalte für andere Personen von einem beliebigen Standort aus zugreifen, erstellen, ändern und an Inhalten zusammenarbeiten. Untersuchungen zeigen, dass bei der Zusammenarbeit mit Online Dateien jede Person durchschnittlich 100 Minuten pro Woche spart. [Siehe Beweise](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
+Ein wichtiger Aspekt der digitalen Transformation ist die Zusammenarbeit von Personen in Dateien. Mit ihren Inhalten in Microsoft 365 können Benutzer Inhalte für andere Personen von einem beliebigen Standort aus zugreifen, erstellen, ändern und an Inhalten zusammenarbeiten. Untersuchungen zeigen, dass bei der Zusammenarbeit mit Online Dateien jede Person durchschnittlich 100 Minuten pro Woche spart. [Siehe Beweise](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
 ## <a name="how-we-calculate-the-content-collaboration-score"></a>Berechnung des Ergebnisses der Inhalts Zusammenarbeit
 
-Wir bieten eine primäre Einblicke, die die wichtigsten Metriken für die Zusammenarbeit mit Inhalten enthält. Anschließend wird ein Bewertungs Framework, das unten aufgeführt ist, für diese Metriken verwendet, um die Bewertung zu berechnen.
+Wir bieten eine primäre Einblicke, die die wichtigsten Metriken für die Zusammenarbeit mit Inhalten in Ihrer Organisation enthält. Anschließend wird ein Bewertungs Framework, das unten aufgeführt ist, für diese Metriken verwendet, um die Bewertung Ihrer Organisation zu berechnen.
 
 ### <a name="primary-insight"></a>Primäre Einblicke
 
-Microsoft OneDrive für Unternehmen und SharePoint ermöglichen Benutzern das einfache erstellen, lesen und erkennen ihrer individuellen und freigegebenen Inhalte in Microsoft 365 von Across auf Geräten und Anwendungen. Außerdem können Benutzer Inhalte sicher freigeben und gemeinsam daran arbeiten. Die primäre Einblicke enthält Informationen von allen Benutzern, die OneDrive für Unternehmen und SharePoint verwenden können. Darüber hinaus werden die Details darüber aufgeschlüsselt, wie viele Personen Inhalte lesen, erstellen und zusammenarbeiten, die in OneDrive für Unternehmen und SharePoint gespeichert sind.
+Microsoft OneDrive für Unternehmen und SharePoint helfen Benutzern, Ihre individuellen und freigegebenen Inhalte in Microsoft 365 auf einfache Weise über Geräte und Anwendungen hinweg zu erstellen, zu lesen und zu ermitteln. Außerdem können Benutzer Inhalte sicher freigeben und gemeinsam daran arbeiten. Die primäre Einblicke enthält Informationen von allen Benutzern, die OneDrive für Unternehmen und SharePoint verwenden können. Darüber hinaus werden die Details darüber aufgeschlüsselt, wie viele Personen Inhalte lesen, erstellen und zusammenarbeiten, die in OneDrive für Unternehmen und SharePoint gespeichert sind.
 
 :::image type="content" source="../../media/collabscore_primary.jpg" alt-text="Primäre Einblicke aus der Kommunikations Zusammenarbeits Bewertung.":::
 
 
 Für diese Informationen gelten die folgenden Typen: Word-, Excel-, PowerPoint-, OneNote-und PDF-Dateien.
 
-1. **Kopfzeile:** Zeigt den Prozentsatz der Personen an, die Zugriff auf OneDrive oder SharePoint haben, die mit Inhalten zusammenarbeiten.
+1. **Kopfzeile:** Zeigt den Prozentsatz der Personen in Ihrer Organisation an, die Zugriff auf OneDrive oder SharePoint haben, die mit Inhalten zusammenarbeiten.
 2. **Body:** Enthält weitere Informationen dazu, wie das Verhalten beim Lesen und Erstellen von Dateien online mit der Zusammenarbeit an Dateien verknüpft ist.
 3. **Visualisierung (aktueller Status):**
-    - Horizontale Balken, in denen die blau gefärbten Teile den Prozentsatz der Personen darstellen, die für die Datei Zusammenarbeit über OneDrive oder SharePoint aktiviert sind, die in den letzten 28 Tagen **Leser, Schöpfer** oder **Mitarbeiter** für Online Dateien sind.
+    - Horizontale Balken, bei denen die blau gefärbten Teile den Prozentsatz der Personen darstellen, die für die Datei Zusammenarbeit über OneDrive oder SharePoint aktiviert wurden und in den letzten 28 Tagen **Leser, Schöpfer** oder **Mitarbeiter** für Online Dateien waren.
 
         Sie sind wie folgt definiert:</br>
         **Leser:** Personen, die in OneDrive oder SharePoint auf Online Dateien zugreifen oder diese herunterladen.</br>
@@ -60,11 +60,11 @@ Für diese Informationen gelten die folgenden Typen: Word-, Excel-, PowerPoint-,
         > [!NOTE]
         > Bei den in der Visualisierung berücksichtigten Dateien handelt es sich um Word-, Excel-, PowerPoint-, OneNote-oder PDF-Dateien, die Online und in OneDrive oder SharePoint gespeichert sind. 
 
-    - Markieren Sie den (Zähler/Nenner) des Bruchs, der verwendet wird, um den in den einzelnen horizontalen Balken ausgedrückten Prozentsatz zu berechnen.
+    - Die Hervorhebung (Zähler/Nenner) des Bruchs wird verwendet, um den in den einzelnen horizontalen Balken ausgedrückten Prozentsatz zu berechnen.
     
       - **Leser**</br>
           - Zähler: Anzahl der Personen, die in den letzten 28 Tagen auf Online Dateien in OneDrive oder SharePoint zugreifen oder diese herunterladen</br>
-          - Nenner: Anzahl der Personen, die Zugriff auf OneDrive oder SharePoint für mindestens 1 der letzten 28 Tage haben</br>
+          - Nenner: Anzahl der Personen, die Zugriff auf OneDrive oder SharePoint für mindestens 1 der letzten 28 Tage hatten</br>
       - **Creators**</br>
         - Zähler: Anzahl der Personen, die in den letzten 28 Tagen Online Dateien in OneDrive oder SharePoint erstellen, ändern, hochladen, synchronisieren, Einchecken, kopieren oder verlagern</br>
         - Nenner: Anzahl der Personen, die mindestens 1 der letzten 28 Tage Zugriff auf OneDrive oder SharePoint hatten. </br> 
@@ -79,19 +79,22 @@ Für diese Informationen gelten die folgenden Typen: Word-, Excel-, PowerPoint-,
 
 #### <a name="trend-visualization-of-primary-insight"></a>Trend Visualisierung der primären Einblicke
 
-Trend Visualisierungs Diagramm zeigt die Trendlinie der primären Insight-Metriken für Leser, Ersteller und Mitarbeiter in den letzten 180 Tagen. Jeder Datenpunkt im Diagramm ist ein Aggregat von Aktivitäten für die letzten 28 Tage. Jeder Ersteller-Datenpunkt enthält die Anzahl aller Personen, die innerhalb der letzten 28 Tage für jedes Datum auf der x-Achse als Ersteller markiert wurden.
+Das Diagramm "Trend Visualisierungen" zeigt die Trendlinie der wichtigsten Metriken für Leser, Ersteller und Mitarbeiter in den letzten 180 Tagen. Jeder Datenpunkt im Diagramm ist ein Aggregat von Aktivitäten für die letzten 28 Tage. Jeder Ersteller-Datenpunkt enthält die Anzahl aller Personen, die innerhalb der letzten 28 Tage für jedes Datum auf der x-Achse als Ersteller markiert wurden.
 
 :::image type="content" source="../../media/trendvisualization.jpg" alt-text="Diagramm mit Trends for Collaboration Primary Insight.":::
 
 ### <a name="scoring-framework"></a>Bewertungs Framework
 
-Das Ergebnis der Inhalts Zusammenarbeits Bewertung misst, ob Benutzer Online-Office-Dateien wie Word, Excel, PowerPoint, OneNote oder PDF in OneDrive oder SharePoint konsistent lesen, erstellen oder zusammenarbeiten.
+Das Ergebnis der Inhalts Zusammenarbeit für Ihre Organisation misst auf einer aggregierten (Organisation) Ebene, unabhängig davon, ob Benutzer Online-Office-Dateien wie Word, Excel, PowerPoint, OneNote oder PDFs oder in OneDrive oder SharePoint konsistent lesen, erstellen oder zusammenarbeiten.
+
+Ergebnisse werden auf der einzelnen Benutzerebene nicht bereitgestellt.
+
 
 ## <a name="explore-how-your-organization-collaborates"></a>Untersuchen der Zusammenarbeit in Ihrer Organisation
 
-Außerdem stellen wir Ihnen Informationen zur Verfügung, mit denen Sie den Einblick in die Zusammenarbeit von Personen in Ihrer Organisation bei Inhalten erhalten. Diese zusätzlichen Metriken tragen nicht direkt zum Produktivitäts Ergebnis bei, sondern unterstützen Sie bei der Erstellung eines Aktionsplans zur Optimierung der Arbeitsweise der Benutzer.
+Außerdem stellen wir Ihnen Informationen zur Verfügung, die Sie dabei unterstützen, die Zusammenarbeit an Inhalten in Ihrer Organisation zu Verb lernen. Diese zusätzlichen Metriken tragen nicht direkt zum Produktivitäts Ergebnis bei, sondern unterstützen Sie beim Erstellen eines Aktionsplan Plans als Teil Ihrer digitalen Transformation, um die Arbeitsweise der Benutzer zu optimieren.
 
-### <a name="creating-files-to-onedrive-or-sharepoint"></a>Erstellen von Dateien in OneDrive oder SharePoint
+### <a name="creating-files-in-onedrive-or-sharepoint"></a>Erstellen von Dateien in OneDrive oder SharePoint
 
 :::image type="content" source="../../media/sharepointonedrivefiles.jpg" alt-text="Diagramm, in dem die Anzahl der Personen angezeigt wird, die Dateien in OneDrive oder SharePoint erstellen":::
 
@@ -115,14 +118,14 @@ Außerdem stellen wir Ihnen Informationen zur Verfügung, mit denen Sie den Einb
 2. **Body:** Enthält Informationen über den Wert der Freigabe von Links zu Online Dateien aus der Perspektive der Zusammenarbeit und der Sicherheit.
 3. **Visualisierung:** Die Aufteilung in die Visualisierung soll darstellen, in welchem Ausmaß Personen, die Inhalte in e-Mails anfügen, unterschiedliche Modi verwenden (Dateien nicht auf OneDrive oder SharePoint; Links zu Online Dateien; und Links, die in der e-Mail eingebettet sind):
       - **Anfügen von Dateien:** Der blaue (farbige) Teil des Balkens und der Bruch (Zähler/Nenner) auf der Leiste stellen den Prozentsatz der Personen dar, die Anlagen in e-Mails verwenden.
-        - Zähler: die Anzahl der Personen, die Datei an e-Mails anfügen, die in den letzten 28 Tagen nicht in OneDrive oder SharePoint gespeichert wurden
-        - Nenner: die Anzahl der Personen, die Anlagen in einer beliebigen Form in e-Mails innerhalb der letzten 28 Tage verwenden
+        - Zähler: die Anzahl der Personen, die in den letzten 28 Tagen Dateien an e-Mails anfügen, die nicht in OneDrive oder SharePoint gespeichert wurden.
+        - Nenner:  Nenner: die Anzahl der Personen, die in den letzten 28 Tagen Zugriff auf Exchange und OneDrive, SharePoint oder beides hatten.
       - **Links zu Online Dateien:** Der blaue (farbige) Teil des Balkens und der Bruch (Zähler/Nenner) auf der Leiste stellen den Prozentsatz der Personen dar, die Anlagen verwenden und Links zu Dateien in e-Mails anfügen.
-        - Zähler: die Anzahl der Personen, die an e-Mails angehängt sind, Links zu Online Dateien (in OneDrive oder SharePoint gespeichert) innerhalb der letzten 28 Tage.
-        - Nenner: die Anzahl der Personen, die Anhänge in irgendeiner Form in e-Mails innerhalb der letzten 28 Tage verwenden.
+        - Zähler: die Anzahl der Personen, die Links zu Online Dateien (in OneDrive oder SharePoint gespeichert) an e-Mails innerhalb der letzten 28 Tage angehängt haben.
+        - Nenner:  Nenner: die Anzahl der Personen, die in den letzten 28 Tagen Zugriff auf Exchange und OneDrive, SharePoint oder beides haben.
       - **Einbetten von Links in e-Mails:** Der blaue (farbige) Teil des Balkens und der Bruch auf der Leiste stellen den Prozentsatz der Personen dar, die Links in den Textkörper der e-Mails einbetten.
-        - Zähler: die Anzahl der Personen, die Links in e-Mails von Online Dateien einbetten (in OneDrive oder SharePoint gespeichert) mit in den letzten 28 Tagen
-        - Nenner: die Anzahl der Personen, die Anlagen in einer beliebigen Form in e-Mails innerhalb der letzten 28 Tage verwenden
+        - Zähler: die Anzahl der Personen, die innerhalb der letzten 28 Tage links in Text von e-Mails in Online Dateien (gespeichert in OneDrive oder SharePoint) einbetten.
+        - Nenner:  Nenner: die Anzahl der Personen, die in den letzten 28 Tagen Zugriff auf Exchange und OneDrive, SharePoint oder beides haben.
 4. **Link zu Ressourcen:** Wählen Sie diesen Link aus, um Hilfeinhalte anzuzeigen.
 
 ### <a name="sharing-of-online-files"></a>Freigabe von Online Dateien
@@ -134,10 +137,10 @@ Außerdem stellen wir Ihnen Informationen zur Verfügung, mit denen Sie den Einb
 3. **Visualisierung:** Stellt dar, in welchem Ausmaß Personen, die Zugriff auf OneDrive oder SharePoint haben, intern oder extern Dateien freigeben:
       - **Extern:** Der blaue (farbige) Teil des Balkens und der Bruch (Zähler/Nenner) auf der Leiste stellen den Prozentsatz der Personen dar, die Zugriff auf OneDrive oder SharePoint haben und Dateien extern freigeben.
         -  Zähler: die Anzahl der Personen, für die in den letzten 28 Tagen extern freigegebene Dateien verwendet wurden
-        - Nenner: die Gesamtzahl der Personen, die Zugriff auf OneDrive oder SharePoint für mindestens 1 der letzten 28 Tage gehabt haben.
+        - Nenner: die Gesamtzahl der Personen, die mindestens 1 der letzten 28 Tage Zugriff auf OneDrive oder SharePoint hatten.
       - **Nur intern:** Der blaue (farbige) Teil des Balkens und der Bruch (Zähler/Nenner) auf der Leiste stellen den Prozentsatz der Personen dar, die Zugriff auf OneDrive oder SharePoint haben und nur intern Dateien freigeben.
         - Zähler: die Anzahl der Personen, die nur innerhalb der letzten 28 Tage intern freigegebene Dateien haben
-        - Nenner: die Gesamtzahl der Personen, die Zugriff auf OneDrive oder SharePoint für mindestens 1 der letzten 28 Tage gehabt haben.
+        - Nenner: die Gesamtzahl der Personen, die mindestens 1 der letzten 28 Tage Zugriff auf OneDrive oder SharePoint hatten.
 4. **Link zu Ressourcen:** Wählen Sie diesen Link aus, um Hilfeinhalte anzuzeigen.
 
 ### <a name="number-of-files-collaborated-on"></a>Anzahl der zusammen gearbeiteten Dateien
@@ -151,7 +154,7 @@ Außerdem stellen wir Ihnen Informationen zur Verfügung, mit denen Sie den Einb
         - **Zähler:** Die Anzahl der Personen, die in den letzten 28 Tagen nicht mit Dateien zusammenarbeiten
         - **Nenner:** Die Gesamtzahl der Personen, die mindestens 1 der letzten 28 Tage auf OneDrive oder SharePoint zugreifen können.
       - **Zusammenarbeit in 1-3 Dateien:**
-        - **Zähler:** Die Anzahl der Personen, die an 1-3-Dateien in den letzten 28 Tagen zusammenarbeiten
+        - **Zähler:** Die Anzahl der Personen, die an 1-3-Dateien in den letzten 28 Tagen zusammenarbeiten.
         - **Nenner:** Die Gesamtzahl der Personen, die mindestens 1 der letzten 28 Tage Zugriff auf OneDrive oder SharePoint hatten.
       - **Zusammenarbeit in 4-10 Dateien:**
         - **Zähler:** Die Anzahl der Personen, die an 4-10-Dateien in den letzten 28 Tagen zusammenarbeiten
@@ -168,40 +171,12 @@ Außerdem stellen wir Ihnen Informationen zur Verfügung, mit denen Sie den Einb
 
 1. **Kopfzeile:** Zeigt den Prozentsatz der Geräte an, die von allen getestet wurden, die über eine schlechte Netzwerkverbindung mit OneDrive und SharePoint verfügen. 
 2. **Body:** Enthält Informationen dazu, warum die Leistung der Netzwerkverbindung für die Zusammenarbeit wichtig ist. 
-3. **Visualisierung:** zeigt einen Prozentsatz der Geräte mit unterschiedlichen Ebenen der Netzwerk Verbindungsleistung in Bezug auf OneDrive und SharePoint an:
-      - **80-100 (am besten)**: der dunkelgrüne (farbige) Teil des Balkens stellt den Prozentsatz der Geräte mit der besten Leistung dar.
-      - **60-80**: der grüne (farbige) Teil des Balkens stellt den Prozentsatz der Geräte mit der Netzwerk Leistungsbewertung zwischen 60-80 dar. 
-      - **40-60**: der orangefarbene (farbige) Teil des Balkens stellt den Prozentsatz der Geräte mit der Netzwerk Leistungsbewertung zwischen 40-60 dar. 
-      - **20-40**: der rote (farbige) Teil des Balkens stellt den Prozentsatz der Geräte mit der Netzwerk Leistungsbewertung zwischen 20-40 dar. 
+3. **Visualisierung:** zeigt einen Prozentsatz der Geräte mit unterschiedlichen Ebenen der Netzwerk Verbindungsleistung im Zusammenhang mit OneDrive und SharePoint an:
+      - **81-100 (am besten)**: der dunkelgrüne (farbige) Teil des Balkens stellt den Prozentsatz der Geräte mit der besten Leistung dar.
+      - **61-80**: der grüne (farbige) Teil des Balkens stellt den Prozentsatz der Geräte mit der Netzwerk Leistungsbewertung zwischen 60-80 dar. 
+      - **41-60**: der orangefarbene (farbige) Teil des Balkens stellt den Prozentsatz der Geräte mit der Netzwerk Leistungsbewertung zwischen 40-60 dar. 
+      - **21-40**: der rote (farbige) Teil des Balkens stellt den Prozentsatz der Geräte mit der Netzwerk Leistungsbewertung zwischen 20-40 dar. 
       - **0-20**: der dunkle rote (farbige) Teil des Balkens repräsentiert den Prozentsatz der Geräte mit der schlechtesten Netzwerk Leistungsbewertung zwischen 0-20. 
-
-### <a name="people-in-your-organization"></a>Personen in Ihrer Organisation
-
-In diesem Abschnitt können Sie auf die Metriken reagieren, auf die Sie sich konzentrieren möchten, indem Sie auf Benutzerebene Details zu Aktivitäten bereitstellen, die für alle Einblicke relevant sind.
-
-Die folgenden Spalten werden in der Tabelle auf Benutzerebene angezeigt:
-
-- **Username**  ist die e-Mail-Adresse des Benutzers.
-- **Anzeigename**  ist der vollständige Name des Benutzers.
-- **Datum der letzten Aktivität**  bezieht sich auf den Zeitpunkt, zu dem der Benutzer zuletzt eine Aktivität im Zusammenhang mit einem der Einblicke in die Zusammenarbeit mit Inhalten innerhalb der letzten 28 Tage ausgeführt hat.
-- **Abteilung:** Die Abteilung des Benutzers&#39;s gemäß der Definition in Azure Active Directory (AAD).
-- **Firma:** Der Benutzer&#39;Unternehmens, wie in Aad definiert.
-- **Land:** Der Benutzer&#39;Landes gemäß der Definition in Aad.
-- **Status:** Der Benutzer&#39;s-Status gemäß Definition in Aad.
-- **Stadt:** Der Benutzer&#39;s Stadt gemäß der Definition in Aad.
-- **OneDrive:** Boolescher Wert, der angibt, ob die Person Zugriff auf Tor OneDrive für mindestens 1 der letzten 28 Tage hatte.
-- **SharePoint:** Boolescher Wert, der angibt, ob die Person Zugriff auf SharePoint für mindestens 1 der letzten 28 Tage hatte.
-- **Zugriff auf Office-Dateien:** Boolescher Wert, der angibt, ob die Person in den letzten 28 Tagen über Microsoft Word, Excel, PowerPoint oder OneNote auf Dateien zugegriffen hat.
-- **Erstellte Dateien auf OneDrive:** Boolescher Wert, der angibt, ob die Person, die erstellt, geändert, hochgeladen, synchronisiert, eingecheckt, kopiert oder verschoben wurde, Online Dateien (in Microsoft Word, Excel, PowerPoint oder OneNote) auf OneDrive in den letzten 28 Tagen angezeigt wird.
-- **Erstellte Dateien in SharePoint:** Boolescher Wert, der angibt, ob die Person, die in den letzten 28 Tagen in SharePoint erstellt, geändert, hochgeladen, synchronisiert, eingecheckt, kopiert oder verschoben wurde (in Microsoft Word, Excel, PowerPoint oder OneNote).
-- **Tage als Leser:** Die Anzahl der Tage, auf die die Person zugegriffen oder Online Dateien heruntergeladen hat (in Microsoft Word, Excel, PowerPoint, OneNote oder PDF) in OneDrive oder SharePoint in den letzten 28 Tagen.
-- **Tage als Ersteller:** Die Anzahl der Tage, die die Person in OneDrive oder SharePoint in den letzten 28 Tagen erstellt, geändert, hochgeladen, synchronisiert, eingecheckt, kopiert oder verschoben hat (in Microsoft Word-, Excel-, PowerPoint-, OneNote-oder PDF-Datei).
-- **Zusammenarbeit an Dateien:** Die Anzahl der Online Dateien auf OneDrive oder SharePoint, an denen die Person in den letzten 28 Tagen zusammengearbeitet hat.
-- **Intern freigegebene Dateien:** Die Anzahl der Online Dateien auf OneDrive oder SharePoint, die in den letzten 28 Tagen für andere Personen innerhalb Ihrer Organisation freigegeben wurden.
-- **Extern freigegebene Dateien:** Die Anzahl der Online Dateien auf OneDrive oder SharePoint, die die Person in den letzten 28 Tagen für andere Personen außerhalb Ihrer Organisation freigegeben hat.
-- **E-Mail-Dateianlagen:** Boolescher Wert, der angibt, ob die Person e-Mails mit Dateien (nicht auf OneDrive oder SharePoint) als Anlagen in den letzten 28 Tagen gesendet hat.
-- **E-Mail an Online Dateianlagen:** Boolescher Wert, der angibt, ob die Person e-Mails mit Links zu Online Dateien (in OneDrive oder SharePoint) als Anlagen in den letzten 28 Tagen gesendet hat.
-- **Link zu Online Datei einbetten:** Boolescher Wert, der angibt, ob die Person, die e-Mails mit Links zu Online Dateien (auf OneDrive oder SharePoint) gesendet hat, in den e-Mail-Textkörper in den letzten 28 Tagen eingebettet ist.
 
 ## <a name="related-content"></a>Verwandte Inhalte
 

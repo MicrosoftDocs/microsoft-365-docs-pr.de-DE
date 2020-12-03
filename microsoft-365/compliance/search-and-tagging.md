@@ -2,8 +2,8 @@
 title: Suche und Kennzeichnung
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 audience: ITPro
@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: In Advanced eDiscovery können Sie mit dem Such-und Markierungs Modul die Dokumente in Ihrem Fall durchsuchen, in der Vorschau anzeigen und organisieren. Derzeit befindet sich dieses Modul in der Betaphase.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: eba95f4832e674bae0a26d3fa8466b0118a9715d
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 7afa106d07e60dfc297b90c25965dafeeb7337a7
+ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818894"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49562932"
 ---
 # <a name="search-and-tagging"></a>Suche und Kennzeichnung
 
@@ -64,11 +64,11 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, nach denen Sie mith
 |**relevancetag_ [Tagname]**\*\* <br/> | Wenn ein Element für die Relevanz manuell markiert wurde, wird das von [Tagname] definierte Tag verwendet. <br/> |
 |||
 
-\*Nur verfügbar, wenn das Designmodul ausgeführt wurde.
+\* Nur verfügbar, wenn das Designmodul ausgeführt wurde.
 
-\*\*Nur verfügbar, wenn das Modul Relevanz ausgeführt wurde.
+\*\* Nur verfügbar, wenn das Modul Relevanz ausgeführt wurde.
 
-Alternativ können Sie eine Bedingungs Karte im erweiterten eDiscovery-Such Tool verwenden, um einer Suchabfrage eine Bedingung (für ausgewählte Eigenschaften) hinzuzufügen. Im folgenden Screenshot sind die Bedingungen dargestellt, die einer Abfrage hinzugefügt werden können. Die Spalte **Group** gibt an, ob die Eigenschaft auf e-Mail, Website Dokumente oder beides angewendet wird (angegeben durch den *gemeinsamen*Wert). In dieser Spalte werden auch die durchsuchbaren Eigenschaften identifiziert, die nach dem Ausführen des Moduls Relevanz verfügbar sind.
+Alternativ können Sie eine Bedingungs Karte im erweiterten eDiscovery-Such Tool verwenden, um einer Suchabfrage eine Bedingung (für ausgewählte Eigenschaften) hinzuzufügen. Im folgenden Screenshot sind die Bedingungen dargestellt, die einer Abfrage hinzugefügt werden können. Die Spalte **Group** gibt an, ob die Eigenschaft auf e-Mail, Website Dokumente oder beides angewendet wird (angegeben durch den *gemeinsamen* Wert). In dieser Spalte werden auch die durchsuchbaren Eigenschaften identifiziert, die nach dem Ausführen des Moduls Relevanz verfügbar sind.
 
 ![Suchbedingungen im erweiterten eDiscovery-Such Tool](../media/AeDSearchConditions.png)
 

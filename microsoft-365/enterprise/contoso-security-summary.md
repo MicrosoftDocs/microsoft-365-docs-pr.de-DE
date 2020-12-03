@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Wie Contoso die Sicherheitsfunktionen von Microsoft 365 für Unternehmen verwendet.
-ms.openlocfilehash: a72a770029328eaddf76cbe1b2039386c50c2750
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 5c951a973fbebeff92040f9411ad2c81788f920a
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920418"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558394"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Zusammenfassung von Microsoft 365 für Enterprise-Sicherheit für die Contoso Corporation
 
@@ -56,7 +56,7 @@ Um Sicherheits bewährte Methoden und Microsoft 365 für Enterprise-Bereitstellu
 
 - Dedizierte globale Administratorkonten mit MFA und PIM
 
-  Anstatt die globale Administratorrolle alltäglichen Benutzerkonten zuzuweisen, hat Contoso drei dedizierte globale Administratorkonten mit sicheren Kennwörtern erstellt. Die Konten sind durch Azure Multi-Factor Authentication (MFA) und Azure Active Directory (Azure AD) Privileged Identity Management (PIM) geschützt. *PIM ist nur mit Microsoft 365 E5 verfügbar.*
+  Anstatt die globale Administratorrolle alltäglichen Benutzerkonten zuzuweisen, hat Contoso drei dedizierte globale Administratorkonten mit sicheren Kennwörtern erstellt. Die Konten werden durch Azure AD Multi-Factor Authentication (MFA) und Azure Active Directory (Azure AD) Privileged Identity Management (PIM) geschützt. *PIM ist nur mit Microsoft 365 E5 verfügbar.*
 
   Die Anmeldung mit einem globalen Administratorkonto erfolgt nur für bestimmte administrative Aufgaben. Die Kennwörter sind nur für designierte Mitarbeiter bekannt und können nur innerhalb eines Zeitraums verwendet werden, der in Azure AD PIM konfiguriert ist.
 

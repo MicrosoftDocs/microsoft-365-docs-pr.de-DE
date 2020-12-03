@@ -16,23 +16,23 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Administratoren erfahren, wie Sie Anti-Spam-Richtlinien in Exchange Online Protection (EOP) anzeigen, erstellen, ändern und löschen können.
-ms.openlocfilehash: 34e0f3cf1ae382dcb256887557af18556d52a7df
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 480fa294d441eb8519d66d7baa80867e73ef684d
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357887"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49552118"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Konfigurieren von Antispamrichtlinien in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-In Microsoft 365-Organisationen mit Postfächern in Exchange Online oder eigenständigen EOP-Organisationen (EOP – Exchange Online Protection) ohne Exchange Online-Postfächer werden eingehende E-Mail-Nachrichten durch EOP automatisch vor Spam geschützt. EOP verwendet Antispamrichtlinien (auch als Spamfilterrichtlinien oder Inhaltsfilterrichtlinien bezeichnet) als Teil der allgemeinen Abwehr Ihres Unternehmens gegen Spam. Weitere Informationen finden Sie unter [Anti-Spam-Schutz](anti-spam-protection.md).
+In Microsoft 365-Organisationen mit Postfächern in Exchange Online oder Organisationen mit dem eigenständigen Exchange Online Protection-Produkt (EOP) ohne Exchange Online-Postfächer werden eingehende E-Mail-Nachrichten automatisch von EOP vor Spam geschützt. EOP verwendet Antispamrichtlinien (auch als Spamfilterrichtlinien oder Inhaltsfilterrichtlinien bezeichnet) als Teil des allgemeinen Schutzes Ihrer Organisation gegen Spam. Weitere Informationen finden Sie unter [Antispamschutz](anti-spam-protection.md).
 
-Administratoren können die Standard-Antispamrichtlinie anzeigen, bearbeiten und konfigurieren (aber nicht löschen). Für eine höhere Granularität können Sie auch benutzerdefinierte Antispamrichtlinien erstellen, die für bestimmte Benutzer, Gruppen oder Domänen in Ihrer Organisation gelten. Benutzerdefinierte Richtlinien haben immer Vorrang vor der Standardrichtlinie. Sie können jedoch die Priorität (Ausführungsreihenfolge) Ihrer benutzerdefinierten Richtlinien ändern.
+Administratoren können die standardmäßige Antispamrichtlinie anzeigen, bearbeiten und konfigurieren (aber nicht löschen). Um eine höhere Granularität zu erzielen, können Sie auch benutzerdefinierte Antispamrichtlinien erstellen, die für bestimmte Benutzer, Gruppen oder Domänen in Ihrer Organisation gelten. Benutzerdefinierte Richtlinien haben immer Vorrang vor der standardmäßigen Richtlinie, die Priorität (Reihenfolge der Ausführung) Ihrer benutzerdefinierten Richtlinien können Sie jedoch ändern.
 
-Sie können Antispamrichtlinien im Security & Compliance Center oder in PowerShell konfigurieren (Exchange Online PowerShell für Microsoft 365-Organisationen mit Postfächern in Exchange Online; eigenständige EOP-PowerShell für Organisationen ohne Exchange Online-Postfächer).
+Sie können Antispamrichtlinien im Security & Compliance Center oder in PowerShell konfigurieren (Exchange Online PowerShell für Microsoft 365-Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange Online-Postfächer).
 
 Die grundlegenden Elemente einer Antispamrichtlinie sind:
 
@@ -42,24 +42,24 @@ Die grundlegenden Elemente einer Antispamrichtlinie sind:
 Der Unterschied zwischen diesen beiden Elementen ist nicht offensichtlich, wenn Sie Antispamrichtlinien im Security & Compliance Center verwalten:
 
 - Beim Erstellen einer Antispamrichtlinie erstellen Sie tatsächlich gleichzeitig eine Spamfilterregel und die zugehörige Spamfilterrichtlinie, beide mit demselben Namen.
-- Wenn Sie eine Antispamrichtlinie ändern, dann ändern Einstellungen in Bezug auf Name, Priorität, aktiviert oder deaktiviert und Empfängerfilter die Spamfilterregel. Alle anderen Einstellungen ändern die zugehörige Spamfilterrichtlinie.
+- Beim Ändern einer Antispamrichtlinie ändern die Einstellungen im Zusammenhang mit Name, Priorität, aktiviert oder deaktiviert und Empfängerfilter tatsächlich die Spamfilterregel. Alle anderen Einstellungen ändern die zugehörige Spamfilterrichtlinie.
 - Wenn Sie eine Antispamrichtlinie entfernen, werden die Spamfilterregel und die zugeordnete Spamfilterrichtlinie entfernt.
 
-In Exchange Online PowerShell oder eigenständiger EOP-PowerShell verwalten Sie die Richtlinie und die Regel separat. Weitere Informationen finden Sie im Abschnitt [Verwenden von Exchange Online PowerShell oder eigenständiger EOP-PowerShell zum Konfigurieren von Antispamrichtlinien](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies) weiter unten in diesem Thema.
+In Exchange Online PowerShell oder der eigenständigen EOP PowerShell verwalten Sie die Richtlinie und die Regel getrennt. Weitere Informationen hierzu finden Sie im Abschnitt [Verwenden von Exchange Online PowerShell oder eigenständige EOP PowerShell zum Konfigurieren von Antispamrichtlinien](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies) weiter unten in diesem Thema.
 
 Jede Organisation verfügt über eine integrierte Antispamrichtlinie namens "Standard" mit folgenden Eigenschaften:
 
-- Die Richtlinie wird auf alle Empfänger in der Organisation angewendet, obwohl der Richtlinie keine Spamfilterregel (Empfängerfilter) zugeordnet ist.
-- Die Richtlinie hat den benutzerdefinierten Prioritätswert **Am Niedrigsten**, den Sie nicht ändern können (die Richtlinie wird immer zuletzt angewendet). Alle benutzerdefinierten Richtlinien, die Sie erstellen, haben immer eine höhere Priorität.
+- Die Richtlinie wird auf alle Empfänger in der Organisation angewendet, obwohl der Richtlinie keine Spamfilterregel (kein Empfängerfilter) zugeordnet ist.
+- Die Richtlinie weist den benutzerdefinierten Prioritätswert **Niedrigster** auf, der nicht geändert werden kann (die Richtlinie wird immer als letztes angewendet). Alle benutzerdefinierten Richtlinien, die Sie erstellen, haben immer eine höhere Priorität.
 - Die Richtlinie ist die Standardrichtlinie (die **IsDefault**-Eigenschaft hat den Wert `True`), und die Standardrichtlinie kann nicht gelöscht werden.
 
 Wenn Sie die Effektivität der Spamfilterung erhöhen möchten, können Sie benutzerdefinierte Antispamrichtlinien mit strengeren Einstellungen erstellen, die auf bestimmte Benutzer oder Benutzergruppen angewendet werden.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Öffnen Sie das Security & Compliance Center über <https://protection.office.com/>. Um direkt zur Seite **Anti-Spam-Einstellungen** zu gelangen, verwenden Sie <https://protection.office.com/antispam>.
+- Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Um direkt zur Seite **Antispameinstellungen** zu wechseln, verwenden Sie <https://protection.office.com/antispam>.
 
-- Informationen zum Herstellen einer Verbindung zu Exchange Online PowerShell finden Sie unter [Herstellen einer Verbindung zu Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung zu einer eigenständigen EOP-PowerShell finden Sie unter [Herstellen einer Verbindung zu Exchange Online Protection-PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Bevor Sie die in diesem Artikel besprochenen Verfahren ausführen können, müssen Ihnen Berechtigungen zugewiesen werden:
 
@@ -85,9 +85,9 @@ Beim Erstellen einer benutzerdefinierten Antispamrichtlinie im Security & Compli
 
 3. Konfigurieren Sie im sich öffnenden Flyout **Neue Spamfilterrichtlinie** die folgenden Einstellungen:
 
-   - **Name**: Geben Sie einen eindeutigen, aussagekräftigen Namen für die Richtlinie ein. Folgende Zeichen dürfen nicht verwendet werden: `\ % & * + / = ? { } | < > ( ) ; : , [ ] "`.
+   - **Name**: Geben Sie einen eindeutigen, aussagekräftigen Namen für die Richtlinie ein. Verwenden Sie nicht die folgenden Zeichen: `\ % & * + / = ? { } | < > ( ) ; : , [ ] "`.
 
-      Wenn Sie zuvor im Exchange Admin Center (EAC) Antispamrichtlinien erstellt haben, die diese Zeichen enthalten, sollten Sie diese Antispamrichtlinien in PowerShell umbenennen. Anweisungen finden Sie im Abschnitt [Verwenden von PowerShell zum Ändern von Spamfilterregeln](#use-powershell-to-modify-spam-filter-rules) weiter unten in diesem Thema.
+      Wenn Sie zuvor Antispamrichtlinien im Exchange Admin Center (EAC) erstellt haben, die diese Zeichen enthalten, müssen Sie die Antispamrichtlinie in PowerShell umbenennen. Anweisungen hierzu finden Sie im Abschnitt [Verwenden von PowerShell zum Ändern von Spamfilterregeln](#use-powershell-to-modify-spam-filter-rules) weiter unten in diesem Thema.
 
    - **Beschreibung**: Geben Sie eine optionale Beschreibung für die Richtlinie ein.
 
@@ -119,13 +119,13 @@ Beim Erstellen einer benutzerdefinierten Antispamrichtlinie im Security & Compli
      |**Keine Aktion**|||||![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
      |
 
-     <sup>1</sup> In Exchange Online wird die Nachricht in den Junk-E-Mail-Ordner verschoben, wenn die Junk-E-Mail-Regel für das Postfach aktiviert ist (sie ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Konfigurieren der Einstellungen für Junk-E-Mails für Exchange Online-Postfächer](configure-junk-email-settings-on-exo-mailboxes.md).
+     > <sup>1</sup> In Exchange Online wird die Nachricht in den Junk-E-Mail-Ordner verschoben, wenn die Junk-E-Mail-Regel für das Postfach aktiviert ist (sie ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Konfigurieren der Einstellungen für Junk-E-Mails für Exchange Online-Postfächer](configure-junk-email-settings-on-exo-mailboxes.md).
+     >
+     > In Umgebungen mit eigenständigem EOP, in denen EOP lokale Exchange-Postfächer schützt, müssen Sie im lokalen Exchange Nachrichtenflussregeln zur Übersetzung der EOP-Spamfilterbewertung konfigurieren (auch als Transportregeln bezeichnet), damit die Junk-E-Mail-Regel die Nachricht in den Junk-E-Mail-Ordner verschieben kann. Ausführliche Informationen finden Sie unter [Konfigurieren eigenständiger EOP zum Verschieben von Spam in den Junk-E-Mail-Ordner in Hybridumgebungen](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+     >
+     > <sup>2</sup> Sie können diesen Wert als Bedingung in Nachrichtenflussregeln verwenden, um die Nachricht zu filtern oder weiterzuleiten.
 
-     In Umgebungen mit eigenständigem EOP, in denen EOP lokale Exchange-Postfächer schützt, müssen Sie im lokalen Exchange Nachrichtenflussregeln zur Übersetzung der EOP-Spamfilterbewertung konfigurieren (auch als Transportregeln bezeichnet), damit die Junk-E-Mail-Regel die Nachricht in den Junk-E-Mail-Ordner verschieben kann. Ausführliche Informationen finden Sie unter [Konfigurieren eigenständiger EOP zur Zustellung von Spam in den Junk-E-Mail-Ordner in Hybridumgebungen](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
-
-     <sup>2</sup> Sie können diesen Wert als Bedingung in Nachrichtenflussregeln (auch als Transportregeln bezeichnet) verwenden, um die Nachricht zu filtern oder weiterzuleiten.
-
-   - **Schwellenwert auswählen**: Gibt das Massenbeschwerdeniveau (Bulk Complaint Level, BCL) einer Nachricht an, das die angegebene Aktion für die Spamfilterbewertung **Massen-E-Mail** auslöst (größer als der angegebene Wert, nicht größer als oder gleich). Ein höherer Wert gibt an, dass die Nachricht weniger erwünscht ist (eher Spam ähnelt). Der Standardwert ist 7. Weitere Informationen finden Sie unter [BCL-Werte (Bulk Complaint Level) in EOP](bulk-complaint-level-values.md) und [Worin besteht der Unterschied zwischen Junk- und Massen-E-Mail?](what-s-the-difference-between-junk-email-and-bulk-email.md).
+   - **Schwellenwert auswählen**: Gibt das Massenbeschwerdeniveau (Bulk Complaint Level, BCL) einer Nachricht an, das die angegebene Aktion für die Spamfilterbewertung **Massen-E-Mail** auslöst (größer als, nicht größer als oder gleich wie der angegebene Wert). Ein höherer Wert gibt an, dass die Nachricht weniger erwünscht ist (eher Spam ähnelt). Der Standardwert ist 7. Weitere Informationen finden Sie unter [BCL-Werte (Bulk Complaint Level) in EOP](bulk-complaint-level-values.md) und [Worin besteht der Unterschied zwischen Junk- und Massen-E-Mail?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 
      Standardmäßig hat die ausschließliche PowerShell-Einstellung _MarkAsSpamBulkMail_ in Antispamrichtlinien den Wert `On`. Diese Einstellung hat einen wesentlichen Einfluss auf die Ergebnisse einer Filterungsbewertung **Massen-E-Mail-**:
 

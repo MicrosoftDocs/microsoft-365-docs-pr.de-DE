@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Finden Sie heraus, wo innerhalb der Europäischen Union Ihre Microsoft 365-Kundendaten gespeichert werden
-ms.openlocfilehash: 5a50600c123dad1a0e4d14fd8f47283f951d3edc
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 78c2ae75656df017631fce0a189f6e25ee44f20f
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376714"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527685"
 ---
 # <a name="data-locations-for-the-european-union"></a>Datenspeicherorte für die Europäische Union
 
@@ -63,8 +63,10 @@ Wir haben Rechenzentrum in Deutschland und Frankreich eingerichtet, was Ihnen er
 ||||| 
 
 >[!Note]
->Wenn Sie über ein Office 365 Education-Abonnement mit einer Rechnungsadresse in Frankreich oder Deutschland verfügen, können Ihre Daten in unseren regionalen Rechenzentren in der Europäischen Union gespeichert werden. 
+>Wenn Sie über ein Office 365 Education-Abonnement mit einer Rechnungsadresse in Frankreich oder Deutschland verfügen, können Ihre Daten in unseren regionalen Rechenzentren in der Europäischen Union gespeichert werden. Informationen über die Speicherorte Ihrer Mandantendaten außerhalb der EU finden sie unter [Wo werden Ihre Microsoft 365-Kundendaten gespeichert](o365-data-locations.md).
 >
+
+
 
 ### <a name="where-eu-data-is-computed"></a>Datenverarbeitungsorte in der Europäischen Union
 

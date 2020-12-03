@@ -16,18 +16,18 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: In diesem Artikel erfahren Sie mehr über die Verwendung von Explorer und Echt Zeit Erkennungen im Security &amp; Compliance Center, um Bedrohungen effektiv und effizient zu untersuchen und auf diese zu reagieren.
+description: In diesem Artikel erfahren Sie mehr über die Verwendung von Explorer und Echt Zeit Erkennungen im Security & Compliance Center, um Bedrohungen effektiv und effizient zu untersuchen und auf diese zu reagieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bc137a7390961e2b6abe049aead2b238cb9d3a16
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: 021810a4d64dc3a8d9089a3b7174a1b5f536745a
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49021121"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561399"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer und Echtzeiterkennung
 
-Wenn Ihre Organisation [Microsoft Defender für Office 365](office-365-atp.md)hat und Sie über die [erforderlichen Berechtigungen](#required-licenses-and-permissions)verfügen, haben Sie entweder **Explorer** -oder **Echtzeiterkennung** (früher *Echtzeitberichte* – [Siehe What es New](#new-features-in-threat-explorer-and-real-time-detections)!). Wechseln Sie im Security & Compliance Center zu **Threat Management** , und wählen Sie dann **Explorer** _oder_ **Real-Time Detections** aus.
+Wenn Ihre Organisation [Microsoft Defender für Office 365](office-365-atp.md)hat und Sie über die [erforderlichen Berechtigungen](#required-licenses-and-permissions)verfügen, haben Sie entweder **Explorer** -oder **Echtzeiterkennung** (früher *Echtzeitberichte* – [Siehe What es New](#new-features-in-threat-explorer-and-real-time-detections)!). Wechseln Sie im Security & Compliance Center zu **Threat Management**, und wählen Sie dann **Explorer** _oder_ **Real-Time Detections** aus.
 
 |Mit Microsoft Defender für Office 365 Plan 2 sehen Sie Folgendes:|Mit Microsoft Defender für Office 365 Plan 1 sehen Sie Folgendes:|
 |---|---|
@@ -172,7 +172,7 @@ Die Verbesserungen im Hinblick auf die URL-und URL-Klicks Daten umfassen Folgend
 
 - Anzeigen der vollständig angeklickten URL (einschließlich aller Abfrageparameter, die Teil der URL sind) im Abschnitt Klicks im URL-Flyout. Derzeit zeigen wir die URL-Domäne und den Pfad in der Titelleiste an. Diese Informationen werden erweitert, um die vollständige URL anzuzeigen.
 
-- Fixes für URL-Filter (URL-URL-Domäne vs-URL-Domäne und-Pfad): Wir haben Aktualisierungen bei der Suche nach Nachrichten durchgeführt, die eine URL/Klick Urteil enthalten. Im Rahmen dieser Vorgehensweise haben wir die Unterstützung für protokollunabhängige Suchvorgänge aktiviert (was bedeutet, dass Sie direkt nach einer URL ohne http suchen können). Standardmäßig wird die URL-Suche dem http-Wert zugeordnet, sofern nicht explizit angegeben. Beispiel:
+- Fixes für URL-Filter (URL-URL-Domäne vs-URL-Domäne und-Pfad): Wir haben Aktualisierungen bei der Suche nach Nachrichten durchgeführt, die eine URL/Klick Urteil enthalten. Im Rahmen dieser Vorgehensweise haben wir die Unterstützung für protokollunabhängige Suchvorgänge aktiviert (was bedeutet, dass Sie direkt nach einer URL ohne http suchen können). Standardmäßig wird die URL-Suche dem http-Wert zugeordnet, sofern nicht explizit angegeben. Zum Beispiel:
 
   1. Suchen Sie mit und ohne das `http://` Präfix in den Filterfeldern "URL", "URL-Domäne" und "URL-Domäne und-Pfad". Dieses Verhalten ist konsistent und sollte dasselbe Ergebnis aufweisen.
 
@@ -289,7 +289,7 @@ Diese neuen Features werden unten erläutert.
 
 ### <a name="preview-email-header-and-download-email-body"></a>E-Mail-Kopfzeile anzeigen und e-Mail-Textkörper downloaden
 
-Die Möglichkeit zum Anzeigen einer e-Mail-Kopfzeile und zum Herunterladen des e-Mail-Texts sind neue Features, die in Threat Explorer verfügbar sind. Administratoren können heruntergeladene Kopfzeilen/e-Mail-Nachrichten auf Bedrohungen analysieren. Da das Herunterladen von e-Mail-Nachrichten die Exposition von Informationen gefährden kann, wird dieser Prozess durch rollenbasierte Zugriffssteuerung (RBAC) gesteuert. Eine neue Rolle, *Vorschau* , muss einer anderen Rollengruppe hinzugefügt werden (beispielsweise Sicherheitsvorgänge oder Sicherheits Administrator), um die Möglichkeit zum Herunterladen von e-Mails und der Vorschau von Kopfzeilen in der Ansicht "All-e-Mail-Nachrichten" zu gewähren.
+Die Möglichkeit zum Anzeigen einer e-Mail-Kopfzeile und zum Herunterladen des e-Mail-Texts sind neue Features, die in Threat Explorer verfügbar sind. Administratoren können heruntergeladene Kopfzeilen/e-Mail-Nachrichten auf Bedrohungen analysieren. Da das Herunterladen von e-Mail-Nachrichten die Exposition von Informationen gefährden kann, wird dieser Prozess durch rollenbasierte Zugriffssteuerung (RBAC) gesteuert. Eine neue Rolle, *Vorschau*, muss einer anderen Rollengruppe hinzugefügt werden (beispielsweise Sicherheitsvorgänge oder Sicherheits Administrator), um die Möglichkeit zum Herunterladen von e-Mails und der Vorschau von Kopfzeilen in der Ansicht "All-e-Mail-Nachrichten" zu gewähren.
 
 Durch Explorer (und Echtzeiterkennung) werden jedoch auch neue Felder hinzugefügt, mit denen Sie ein vollständigeres Bild davon erhalten, wo Ihre e-Mail-Nachrichten landen. Ein Teil des Ziels dieser Änderung besteht darin, die Suche für Sicherheitsmitarbeiter einfacher zu machen, aber das Ergebnis ist, dass der Speicherort der Problem-e-Mail-Nachrichten auf einen Blick zu erkennen ist.
 
@@ -318,13 +318,13 @@ Und hier ist, was der Benutzer sehen kann und was er nicht kann:
 
 Der Übermittlungsort zeigt die Ergebnisse von Richtlinien und Erkennungen an, die nach der Zustellung ausgeführt werden. Sie ist mit einer Zustellungs Aktion verknüpft. Dieses Feld wurde hinzugefügt, um Einblicke in die Aktion zu geben, die ausgeführt wird, wenn ein Problem mit e-Mails gefunden wird. Im folgenden sind die möglichen Werte für den Zustellungs Speicherort zu finden:
 
-- **Posteingang oder Ordner** : die e-Mail befindet sich im Posteingang oder in einem Ordner (entsprechend Ihren e-Mail-Regeln).
-- **On-Prem oder extern** : das Postfach ist nicht in der Cloud vorhanden, sondern lokal.
-- **Junk-Ordner** : die e-Mail befindet sich im Ordner Junk eines Benutzers.
-- **Ordner "Gelöschte Elemente"** : die e-Mail im Ordner "Gelöschte Elemente" eines Benutzers.
-- **Quarantine** : die e-Mail-Nachricht in Quarantäne und befindet sich nicht im Postfach eines Benutzers.
-- **Fehler** : die e-Mail konnte das Postfach nicht erreichen.
-- **Abgelegt** : die e-Mail wird irgendwo im Nachrichtenfluss verloren.
+- **Posteingang oder Ordner**: die e-Mail befindet sich im Posteingang oder in einem Ordner (entsprechend Ihren e-Mail-Regeln).
+- **On-Prem oder extern**: das Postfach ist nicht in der Cloud vorhanden, sondern lokal.
+- **Junk-Ordner**: die e-Mail befindet sich im Ordner Junk eines Benutzers.
+- **Ordner "Gelöschte Elemente"**: die e-Mail im Ordner "Gelöschte Elemente" eines Benutzers.
+- **Quarantine**: die e-Mail-Nachricht in Quarantäne und befindet sich nicht im Postfach eines Benutzers.
+- **Fehler**: die e-Mail konnte das Postfach nicht erreichen.
+- **Abgelegt**: die e-Mail wird irgendwo im Nachrichtenfluss verloren.
 
 ### <a name="email-timeline"></a>E-Mail-Zeitachse
 
@@ -354,14 +354,14 @@ Sie können den gleichen Speicherort im Bericht über Echt Zeit Erkennungen wie 
 
 Angenommen, Sie möchten die von Microsoft 365-Technologie erkannte Schadsoftware in e-Mails sehen. Verwenden Sie dazu die [e-Mail->](threat-explorer-views.md#email--malware) Ansicht "Malware" des Explorers (oder Echtzeiterkennung).
 
-1. Wählen Sie im Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) ) **Threat Management**  >  **Explorer** (oder **Echtzeiterkennung** ) aus. (In diesem Beispiel wird der Explorer verwendet.)
+1. Wählen Sie im Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) ) **Threat Management**  >  **Explorer** (oder **Echtzeiterkennung**) aus. (In diesem Beispiel wird der Explorer verwendet.)
 
 2. Wählen Sie im Menü **Ansicht** die Option **e-Mail-**  >  **Schadsoftware** aus.
 
    > [!div class="mx-imgBorder"]
    > ![Menü "Ansicht" für Explorer](../../media/ExplorerViewEmailMalwareMenu.png)
 
-3. Klicken Sie auf **Absender** , und wählen Sie dann **Basis**  >  **Erkennungstechnologie** aus.
+3. Klicken Sie auf **Absender**, und wählen Sie dann **Basis**  >  **Erkennungstechnologie** aus.
 
    Ihre Erkennungstechnologien stehen nun als Filter für den Bericht zur Verfügung.
 
@@ -381,16 +381,16 @@ Angenommen, Sie möchten Phishing-Versuche über URLs in e-Mails sehen, einschli
 
 Um Phishing-URLs in Nachrichten und Klicks auf URLs in Phishing-Nachrichten zu überprüfen, verwenden Sie die [e-Mail-> Phishing-](threat-explorer-views.md#email--phish) Ansicht des Explorers (oder Echtzeiterkennung).
 
-1. Wählen Sie im Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) ) **Threat Management**  >  **Explorer** (oder **Echtzeiterkennung** ) aus. (In diesem Beispiel wird der Explorer verwendet.)
+1. Wählen Sie im Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) ) **Threat Management**  >  **Explorer** (oder **Echtzeiterkennung**) aus. (In diesem Beispiel wird der Explorer verwendet.)
 
 2. Wählen Sie im Menü **Ansicht** die Option Phishing **per e-Mail** aus  >  **Phish**.
 
    > [!div class="mx-imgBorder"]
    > ![Menü "Ansicht" für Explorer im Phishing-Kontext](../../media/ExplorerViewEmailPhishMenu.png)
 
-3. Klicken Sie auf **Absender** , und wählen Sie dann **URLs**  >  **Klicken Sie auf Urteil**.
+3. Klicken Sie auf **Absender**, und wählen Sie dann **URLs**  >  **Klicken Sie auf Urteil**.
 
-4. Wählen Sie eine oder mehrere Optionen aus, beispielsweise " **blockiert** " und "über **schrieben** ", und klicken Sie dann auf die Schaltfläche **Aktualisieren** , die sich in derselben Reihe befindet wie die Optionen zum Anwenden des Filters. (Aktualisieren Sie Ihr Browserfenster nicht.)
+4. Wählen Sie eine oder mehrere Optionen aus, beispielsweise " **blockiert** " und "über **schrieben**", und klicken Sie dann auf die Schaltfläche **Aktualisieren** , die sich in derselben Reihe befindet wie die Optionen zum Anwenden des Filters. (Aktualisieren Sie Ihr Browserfenster nicht.)
 
    > [!div class="mx-imgBorder"]
    > ![URLs und Klick Urteile](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
@@ -415,27 +415,27 @@ Um Phishing-URLs in Nachrichten und Klicks auf URLs in Phishing-Nachrichten zu �
 
 Innerhalb der e-Mail-oder URL-Flyouts, der wichtigsten Klicks sowie in unseren Filter-Erlebnissen werden Ihnen unterschiedliche Klick-Werte als Teil Ihres Jagd Erlebnisses angezeigt. Im folgenden sind die möglichen Werte von Klick Urteilen und deren Interpretation aufgeführt:
 
-- **None** : das Urteil für die URL konnte nicht erfasst werden. Der Benutzer hat möglicherweise auf die URL geklickt.
-- **Zulässig** : der Benutzer durfte zur URL navigieren.
-- **Blockiert** : der Benutzer wurde für die Navigation zur URL gesperrt.
-- **Ausstehender Urteilsspruch** : der Benutzer wurde mit der ausstehenden detonations Seite angezeigt.
-- **Blockiert außer Kraft gesetzt** : der Benutzer wurde für die Navigation zur URL gesperrt. der Benutzer hat den Block jedoch übersteuert, um zur URL zu navigieren.
-- **Ausstehender Urteilsspruch umgangen** : der Benutzer wurde mit der detonations Seite angezeigt; der Benutzer hat die Seite jedoch übersteuert, um zur URL zu navigieren.
-- **Fehler** : der Benutzer wurde mit der Fehlerseite angezeigt. Dies kann auch bedeuten, dass beim Erfassen des Urteils ein Fehler aufgetreten ist.
-- **Fehler** : beim Erfassen des Urteils ist eine unbekannte Ausnahme aufgetreten. Der Benutzer hat möglicherweise auf die URL geklickt.
+- **None**: das Urteil für die URL konnte nicht erfasst werden. Der Benutzer hat möglicherweise auf die URL geklickt.
+- **Zulässig**: der Benutzer durfte zur URL navigieren.
+- **Blockiert**: der Benutzer wurde für die Navigation zur URL gesperrt.
+- **Ausstehender Urteilsspruch**: der Benutzer wurde mit der ausstehenden detonations Seite angezeigt.
+- **Blockiert außer Kraft gesetzt**: der Benutzer wurde für die Navigation zur URL gesperrt. der Benutzer hat den Block jedoch übersteuert, um zur URL zu navigieren.
+- **Ausstehender Urteilsspruch umgangen**: der Benutzer wurde mit der detonations Seite angezeigt; der Benutzer hat die Seite jedoch übersteuert, um zur URL zu navigieren.
+- **Fehler**: der Benutzer wurde mit der Fehlerseite angezeigt. Dies kann auch bedeuten, dass beim Erfassen des Urteils ein Fehler aufgetreten ist.
+- **Fehler**: beim Erfassen des Urteils ist eine unbekannte Ausnahme aufgetreten. Der Benutzer hat möglicherweise auf die URL geklickt.
 
 ## <a name="review-email-messages-reported-by-users"></a>Überprüfen von von Benutzern gemeldeten e-Mail-Nachrichten
 
 Angenommen, Sie möchten e-Mail-Nachrichten anzeigen, die Benutzer in Ihrer Organisation als Junk-, kein Junk-oder als Phishing gemeldet haben, indem Sie das [Berichtsnachrichten-Add-in für Outlook und Outlook im Internet](enable-the-report-message-add-in.md)verwenden. Verwenden Sie dazu die Ansicht [e-Mail > Übermittlungen](threat-explorer-views.md#email--submissions) des Explorers (oder Echtzeiterkennung).
 
-1. Wählen Sie im Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) ) **Threat Management**  >  **Explorer** (oder **Echtzeiterkennung** ) aus. (In diesem Beispiel wird der Explorer verwendet.)
+1. Wählen Sie im Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) ) **Threat Management**  >  **Explorer** (oder **Echtzeiterkennung**) aus. (In diesem Beispiel wird der Explorer verwendet.)
 
 2. Wählen Sie im Menü **Ansicht** die Option **e-Mail-** über  >  **mittlungen** aus.
 
    > [!div class="mx-imgBorder"]
    > ![Menü "Ansicht" für den Explorer für e-Mails](../../media/explorer-view-menu-email-user-reported.png)
 
-3. Klicken Sie auf **Absender** , und wählen Sie **Standard**  >  **Berichtstyp** aus.
+3. Klicken Sie auf **Absender**, und wählen Sie **Standard**  >  **Berichtstyp** aus.
 
 4. Wählen Sie eine Option wie **Phishing** aus, und klicken Sie dann auf die Schaltfläche **Aktualisieren** .
 
@@ -473,7 +473,7 @@ Sie benötigen [Microsoft Defender für Office 365](office-365-atp.md) , um Expl
 
 Zum Anzeigen und Verwenden von Explorer-oder Echt Zeit Erkennungen müssen Sie über die entsprechenden Berechtigungen verfügen, beispielsweise solche, die einem Sicherheitsadministrator oder Sicherheits Leser erteilt werden.
 
-- Für das Security &amp; Compliance Center müssen Sie eine der folgenden Rollen zugewiesen haben:
+- Für das Security & Compliance Center muss eine der folgenden Rollen zugewiesen sein:
 
   - Organisationsverwaltung
   - Sicherheits Administrator (Dies kann im Azure Active Directory Admin Center zugewiesen werden ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
@@ -488,7 +488,7 @@ Zum Anzeigen und Verwenden von Explorer-oder Echt Zeit Erkennungen müssen Sie �
 
 Weitere Informationen zu Rollen und Berechtigungen finden Sie in den folgenden Ressourcen:
 
-- [Berechtigungen im Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
+- [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)
 - [Featureberechtigungen in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
 ## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>Einige Unterschiede zwischen dem Bedrohungs-Explorer und Echt Zeit Erkennungen

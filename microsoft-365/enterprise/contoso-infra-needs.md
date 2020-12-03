@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Hier finden Sie Informationen zur grundlegenden Struktur der lokalen Contoso-IT-Infrastruktur und dazu, wie die geschäftlichen Anforderungen von Microsoft 365 für Unternehmen erfüllt werden.
-ms.openlocfilehash: b3b67429faccc5d22d49a2921fff4c8b3c3c062e
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 72d502b5078a1e572eeba27832550af52907e209
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920454"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558406"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Contoso-IT-Infrastruktur und geschäftliche Anforderungen
 
@@ -121,7 +121,7 @@ Die IT-Abteilung von Contoso hat vor der Bereitstellung die folgende Zuordnung d
 |  | Mehr Produktivität für Telearbeiter und Mobilmitarbeiter | Microsoft 365-Arbeitslasten und cloudbasierte Daten |
 |  | Mehr Kreativität und Innovation | Windows Ink, Cortana at Work, PowerPoint |
 | Sicherheit |  |  |
-|  | Identitäts- und Zugriffsverwaltung | Dedizierte globale Administratorkonten mit Azure Multi-Factor Authentication (MFA) und Azure AD Privileged Identity Management (PIM) <BR> Mehrstufige Authentifizierung (MFA) für alle Benutzerkonten <BR> Bedingter Zugriff <BR> Windows Hello <BR> Windows Credential Guard |
+|  | Identitäts- und Zugriffsverwaltung | Dedizierte globale Administratorkonten mit Azure AD Multi-Factor Authentication (MFA) und Azure AD privilegierten Identitätsverwaltung (PIM) <BR> Mehrstufige Authentifizierung (MFA) für alle Benutzerkonten <BR> Bedingter Zugriff <BR> Windows Hello <BR> Windows Credential Guard |
 |  | Bedrohungsschutz | Advanced Threat Analytics <BR> Windows Defender <BR> Verteidiger für Office 365 <BR> Microsoft Defender für Office 365 <BR> Untersuchung und Antwort von Microsoft 365 Threat <BR> |
 |  | Schutz von Daten | Azure Information Protection <BR> Verhinderung von Datenverlust (Data Loss Prevention, DLP) <BR> Windows Information Protection (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
 |  | Sicherheitsverwaltung | Azure Defender  <BR> Windows Defender Security Center |
@@ -139,7 +139,7 @@ Die IT-Abteilung von Contoso hat vor der Bereitstellung die folgende Zuordnung d
 
 Erfahren Sie mehr über das [lokale](contoso-networking.md) Contoso Corporation-Netzwerk und wie es für den Zugriff und die Wartezeit auf Cloud-basierte Microsoft 365-Ressourcen optimiert wurde.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 [Übersicht über Microsoft 365 Enterprise](microsoft-365-overview.md)
 

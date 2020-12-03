@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie mehr über die Funktionen zur Ermittlung und Reaktion von Bedrohungen in Microsoft Defender für Office 365 Plan.
-ms.openlocfilehash: 6dba883a910306b548f1880be00ad45207da27dd
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 7ae61e7ea70d8be5c31ec12443c8943f6e54bcf4
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845792"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561255"
 ---
 # <a name="threat-investigation-and-response"></a>Untersuchung von und Antwort auf Bedrohungen
 
@@ -33,12 +33,13 @@ ms.locfileid: "48845792"
 
 
 Funktionen zur Ermittlung und Reaktion von Bedrohungen in [Microsoft Defender für Office 365](office-365-atp.md) helfen Sicherheitsanalysten und Administratoren, die Microsoft 365 for Business-Benutzer Ihrer Organisation zu schützen, indem Sie:
+
 - Vereinfachen der Identifizierung, Überwachung und Verständlichkeit von Cyberangriffe
 - Unterstützung bei der schnellen Adressierung von Bedrohungen in Exchange Online, SharePoint Online, OneDrive für Unternehmen und Microsoft Teams
 - Bereitstellen von Einblicken und Wissen zur Unterstützung von Sicherheitsmaßnahmen beim verhindern von Cyberangriffe in Ihrer Organisation
 - Einsatz von [automatisierten Untersuchungen und Antworten in Office 365](automated-investigation-response-office.md) für wichtige e-Mail-basierte Bedrohungen
-    
-Die Funktionen zur Ermittlung und Reaktion von Bedrohungen bieten Einblicke in Bedrohungen und zugehörige Reaktions Aktionen, die im Security Compliance Center zur Verfügung stehen &amp; . Diese Erkenntnisse können dazu beitragen, dass das Sicherheitsteam Ihrer Organisation Benutzer vor e-Mail-oder dateibasierten Angriffen schützt. Die Funktionen helfen bei der Überwachung von Signalen und Sammeln von Daten aus mehreren Quellen wie Benutzeraktivität, Authentifizierung, e-Mail, kompromittierten PCs und Sicherheitsvorfällen. Geschäfts Entscheidungsträger und Ihr Sicherheits Betriebsteam können diese Informationen verwenden, um Bedrohungen Ihrer Organisation zu verstehen und zu reagieren und Ihr geistiges Eigentum zu schützen.
+
+Die Funktionen zur Ermittlung und Reaktion von Bedrohungen bieten Einblicke in Bedrohungen und zugehörige Reaktions Aktionen, die im Security & Compliance Center verfügbar sind. Diese Erkenntnisse können dazu beitragen, dass das Sicherheitsteam Ihrer Organisation Benutzer vor e-Mail-oder dateibasierten Angriffen schützt. Die Funktionen helfen bei der Überwachung von Signalen und Sammeln von Daten aus mehreren Quellen wie Benutzeraktivität, Authentifizierung, e-Mail, kompromittierten PCs und Sicherheitsvorfällen. Geschäfts Entscheidungsträger und Ihr Sicherheits Betriebsteam können diese Informationen verwenden, um Bedrohungen Ihrer Organisation zu verstehen und zu reagieren und Ihr geistiges Eigentum zu schützen.
 
 ## <a name="get-acquainted-with-threat-investigation-and-response-tools"></a>Kennenlernen von Bedrohungs Ermittlungs-und-Antwort Tools
 
@@ -53,19 +54,19 @@ Die Funktionen "Bedrohungs Ermittlung und-Reaktion" werden im Security & Complia
 ### <a name="threat-dashboard"></a>Threat-Dashboard
 
 Verwenden Sie das Threat-Dashboard (Dies wird auch als [Sicherheits Dashboard](security-dashboard.md)bezeichnet), um schnell zu sehen, welche Bedrohungen angesprochen wurden, und als visuelle Möglichkeit, um Geschäfts Entscheidungsträgern zu berichten, wie Microsoft 365-Dienste Ihr Unternehmen schützen.
-  
+
 ![Threat-Dashboard](../../media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
-  
-Um dieses Dashboard anzuzeigen und zu verwenden, &amp; wechseln Sie im Security Compliance Center zu **Threat Management** \> **Dashboard**.
-  
+
+Um dieses Dashboard anzuzeigen und zu verwenden, wechseln Sie im Security & Compliance Center zu **Threat Management** \> **Dashboard**.
+
 ### <a name="threat-explorer"></a>Sicherheitsrisiken-Explorer
 
 Verwenden Sie [Threat Explorer (und Echtzeiterkennung)](threat-explorer.md) , um Bedrohungen zu analysieren, die Anzahl der Angriffe über einen bestimmten Zeitraum zu ermitteln und Daten nach Bedrohungs Familien, Angreifer-Infrastruktur und vielem mehr zu analysieren. Threat Explorer (auch als Explorer bezeichnet) ist der Ausgangspunkt für den unter Such Workflow eines Sicherheitsanalysten.
 
 ![Bedrohungs-Explorer](../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
-  
-Um diesen Bericht anzuzeigen und zu verwenden, &amp; wechseln Sie im Security Compliance Center zu **Threat Management** \> **Explorer**.
-  
+
+Um diesen Bericht anzuzeigen und zu verwenden, wechseln Sie im Security & Compliance Center zu **Threat Management** \> **Explorer**.
+
 ### <a name="incidents"></a>Vorfälle
 
 Verwenden Sie die Liste Vorfälle (Dies wird auch Untersuchungen genannt), um eine Liste der in Flight-Sicherheitsvorfälle anzuzeigen. Vorfälle werden verwendet, um Bedrohungen wie verdächtige e-Mail-Nachrichten nachzuverfolgen und weitere Untersuchungen und Korrekturen durchzuführen.
@@ -101,7 +102,7 @@ Microsoft Defender für Office 365 verwendet rollenbasierte Zugriffssteuerung. B
 > [!TIP]
 > Einige Rollen, wie beispielsweise der Sicherheits Administrator, können zwar im Security & Compliance Center zugewiesen werden, aber stattdessen sollten Sie entweder das Microsoft 365 Admin Center oder Azure Active Directory verwenden. Informationen zu Rollen, Rollengruppen und Berechtigungen finden Sie in den folgenden Ressourcen:
 >
-> - [Berechtigungen im Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
+> - [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)
 >
 > - [Administratorrollenberechtigungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 

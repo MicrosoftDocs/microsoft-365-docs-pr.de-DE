@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 9c8d9dbc0087f1b7311863ea63e578bad3040249
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 793f51146dc85dc1c6750e82301d0e1206187ad9
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357434"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558199"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Erste Schritte mit dem Insider-Risikomanagement
 
@@ -92,8 +92,6 @@ Eine Schritt-für-Schritt-Anleitung zum Aktivieren der Überwachung finden Sie u
 ## <a name="step-3-configure-prerequisites-for-templates"></a>Schritt 3: Konfigurieren der Voraussetzungen für Vorlagen
 
 Die meisten Vorlagen für Insider Risikomanagement haben Voraussetzungen, die für Richtlinien Indikatoren konfiguriert werden müssen, um relevante Aktivitäts Warnungen zu generieren. Konfigurieren Sie die entsprechenden Voraussetzungen in Abhängigkeit von den Richtlinien, die Sie für Ihre Organisation konfigurieren möchten.
-
-Wenn Sie eine Richtlinie mit der Vorlage *anstößige Sprache in e-Mail-* Richtlinie konfigurieren, können Sie diesen Schritt überspringen und direkt zu **Schritt 4** wechseln.
 
 ### <a name="configure-microsoft-365-hr-connector"></a>Konfigurieren des Microsoft 365 HR-Connectors
 

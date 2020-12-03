@@ -14,19 +14,19 @@ search.appverid: MET150
 description: Behebung von Bedrohungen
 appliesto:
 - Microsoft 365 Defender
-ms.openlocfilehash: 5568a296697c7cdbbada333d45f498a2876603f9
-ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
+ms.openlocfilehash: 4adabe3e85b2bff26167bfad92a9a7fcbf24e58e
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49350734"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561291"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Beheben von in Office 365 zugestellten böswilligen e-Mails
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Die Wiederherstellung bedeutet, dass eine vorgeschriebene Aktion gegen eine Bedrohung erfolgt. Böswillige e-Mails, die an Ihre Organisation gesendet werden, können durch das System, durch eine automatische Bereinigung (Zero-Hour Auto-Purge) oder durch Sicherheitsteams durch Korrekturaktionen wie *Verschieben in den Posteingang*, verschieben in *Junk*, *verschieben zu gelöschten Elementen*, *Soft Delete* oder *Hard Delete* bereinigt werden. Mit Microsoft Defender für Office 365 P2/E5 können Sicherheitsteams Bedrohungen in e-Mail-und Zusammenarbeitsfunktionen durch manuelle und automatisierte Untersuchung beheben.
+Die Wiederherstellung bedeutet, dass eine vorgeschriebene Aktion gegen eine Bedrohung erfolgt. Böswillige e-Mail-Nachrichten, die an Ihre Organisation gesendet werden, können entweder durch das System, durch eine automatische Bereinigung (Zero-Hour Auto Purge) oder durch Sicherheitsteams durch Korrekturaktionen wie *Verschieben in den Posteingang*, verschieben in *Junk*, *verschieben zu gelöschten Elementen*, *Soft Delete* oder *Hard Delete* bereinigt werden. Mit Microsoft Defender für Office 365 P2/E5 können Sicherheitsteams Bedrohungen in e-Mail-und Zusammenarbeitsfunktionen durch manuelle und automatisierte Untersuchung beheben.
 
 > [!NOTE]
 > Um böswillige e-Mails zu beheben, benötigen Sicherheitsteams die *Such-und Säuberungs* Rolle, die Ihnen zugewiesen ist. Die Rollenzuweisung erfolgt über Berechtigungen im Security and Compliance Center.
@@ -85,7 +85,7 @@ Das Wartungs Center zeigt alle Korrekturaktionen für die letzten 30 Tage an. Du
       > Derzeit kann nur ein Benutzer mit Zugriff auf das Postfach Elemente aus einem vorläufig gelöschten Ordner wiederherstellen.
 
   - **Keine Aktion** möglich: e-Mails an den folgenden Speicherorten können in Korrekturaktionen nicht bearbeitet oder verschoben werden:
-    - Quarantine
+    - Quarantäne
     - Hart gelöschter Ordner
     - Lokal/extern
     - Fehlgeschlagen/gelöscht

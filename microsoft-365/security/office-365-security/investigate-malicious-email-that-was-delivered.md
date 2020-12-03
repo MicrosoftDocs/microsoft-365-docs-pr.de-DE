@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie mithilfe von Bedrohungs Ermittlungs-und-Antwortfunktionen böswillige e-Mails suchen und untersuchen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7677c1741a173c0528504f0fad67439608845f64
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: a411e221d49a30a103de6e0f169588d13c387443
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842940"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561328"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Untersuchen schädlicher e-Mails, die in Office 365 bereitgestellt wurden
 
@@ -36,7 +36,7 @@ ms.locfileid: "48842940"
 > [!NOTE]
 > Wechseln Sie [hier](remediate-malicious-email-delivered-office-365.md)zum Korrektur Artikel.
 
-## <a name="before-you-begin"></a>Vorbereitung
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 Stellen Sie sicher, dass folgende Anforderungen erfüllt sind:
 
@@ -46,7 +46,7 @@ Stellen Sie sicher, dass folgende Anforderungen erfüllt sind:
 
 - Ihre Organisation verfügt über Richtlinien, die für Antispam-, Antischadsoftware-und Anti-Phishing-Maßnahmen und so weiter definiert sind. Weitere Informationen finden Sie unter [Protect Against Threats in Office 365](protect-against-threats.md).
 
-- Sie sind globaler Administrator oder haben im Security Compliance Center entweder den Sicherheitsadministrator oder die Such-und Säuberungs Rolle zugewiesen &amp; . Weitere Informationen finden Sie unter [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). Für einige Aktionen muss auch eine neue Vorschau Rolle zugewiesen sein.
+- Sie sind globaler Administrator oder haben im Security & Compliance Center entweder den Sicherheitsadministrator oder die Such-und Säuberungs Rolle zugewiesen. Weitere Informationen finden Sie unter [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md). Für einige Aktionen muss auch eine neue Vorschau Rolle zugewiesen sein.
 
 ### <a name="preview-role-permissions"></a>Vorschau der Rollen Berechtigungen
 
@@ -56,9 +56,9 @@ Um bestimmte Aktionen auszuführen, beispielsweise das Anzeigen von Nachrichtenk
 
 |Aktivität|Rollengruppe|Vorschau-Rolle erforderlich?|
 |---|---|---|
-|Verwenden von Threat Explorer (und Echtzeiterkennung) zum Analysieren von Bedrohungen |Globaler Administrator <br> Sicherheitsadministrator <br> Sicherheitsleseberechtigter|Nein|
-|Verwenden Sie Threat Explorer (und Echtzeiterkennung), um Kopfzeilen für e-Mail-Nachrichten anzuzeigen sowie e-Mail-Nachrichten, die in Quarantäne verschoben wurden, anzuzeigen und herunterzuladen.|Globaler Administrator <br> Sicherheitsadministrator <br>Sicherheitsleseberechtigter|Nein|
-|Verwenden von Threat Explorer zum Anzeigen von Kopfzeilen und Herunterladen von an Postfächern zugestellten e-Mails|Globaler Administrator <br>Sicherheitsadministrator <br> Sicherheitsleseberechtigter <br> Vorschau|Ja|
+|Verwenden von Threat Explorer (und Echtzeiterkennung) zum Analysieren von Bedrohungen |Globaler Administrator <p> Sicherheitsadministrator <p> Sicherheitsleseberechtigter|Nein|
+|Verwenden Sie Threat Explorer (und Echtzeiterkennung), um Kopfzeilen für e-Mail-Nachrichten anzuzeigen sowie e-Mail-Nachrichten, die in Quarantäne verschoben wurden, anzuzeigen und herunterzuladen.|Globaler Administrator <p> Sicherheitsadministrator <p> Sicherheitsleseberechtigter|Nein|
+|Verwenden von Threat Explorer zum Anzeigen von Kopfzeilen und Herunterladen von an Postfächern zugestellten e-Mails|Globaler Administrator <p> Sicherheitsadministrator <p> Sicherheitsleseberechtigter <p> Vorschau|Ja|
 |
 
 > [!NOTE]
@@ -71,7 +71,7 @@ Threat Explorer ist ein leistungsfähiger Bericht, der mehrere Zwecke wie das Su
 > [!NOTE]
 > Standardsuch Vorgänge im Explorer enthalten derzeit keine gezappten Elemente.  Dies gilt für alle Ansichten, beispielsweise Schadsoftware oder Phishing-Ansichten. Um gezappte Elemente einzuschließen, müssen Sie eine "Zustellungs Aktion" hinzufügen, die "removed by Zap" enthalten soll. Wenn Sie alle Optionen einschließen, werden alle Ergebnisse der Übermittlungsaktion angezeigt, einschließlich zapped-Elementen.
 
-1. **Navigieren Sie zu Threat Explorer** : Wechseln Sie zu, [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Arbeits-oder Schulkonto für Office 365 an. Dadurch gelangen Sie zum Security &amp; Compliance Center.
+1. **Navigieren Sie zu Threat Explorer**: Wechseln Sie zu, [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Arbeits-oder Schulkonto für Office 365 an. Dadurch gelangen Sie zum Security & Compliance Center.
 
 2. Klicken Sie in der linken Navigations Schnellstartleiste auf **Threat Management** \> **Explorer**.
 
@@ -79,7 +79,7 @@ Threat Explorer ist ein leistungsfähiger Bericht, der mehrere Zwecke wie das Su
 
     Möglicherweise wird die Spalte neue **spezielle Aktionen** feststellen. Dieses Feature zielt darauf ab, den Administratoren das Ergebnis der Verarbeitung einer e-Mail mitzuteilen. Auf die Spalte **spezielle Aktionen** kann an derselben Stelle wie **Zustellungs Aktion** und **Zustellungs Speicherort** zugegriffen werden. Spezielle Aktionen können am Ende der e-Mail-Zeitachse von Threat Explorer aktualisiert werden, ein neues Feature, mit dem die Jagd Erfahrung für Administratoren besser gemacht werden soll.
 
-3. **Ansichten im Bedrohungs-Explorer** : Wählen Sie im Menü **Ansicht** die Option **alle e-Mails** aus.
+3. **Ansichten im Bedrohungs-Explorer**: Wählen Sie im Menü **Ansicht** die Option **alle e-Mails** aus.
 
     ![Threat Explorer-Menü "Ansicht" und e-Mail-Schadsoftware, Phishing, Übermittlungen und alle e-Mail-Optionen, auch Inhalts-Schadsoftware.](../../media/tp-InvestigateMalEmail-viewmenu.png)
 
@@ -89,7 +89,7 @@ Threat Explorer ist ein leistungsfähiger Bericht, der mehrere Zwecke wie das Su
 
     Ansicht " *Einsendungen* " zeigt alle e-Mails an, die von Administrator oder Benutzer übermittelt wurden, die an Microsoft gemeldet wurden.
 
-4. **Suchen und Filtern in Threat Explorer** : Filter werden oben auf der Seite in der Suchleiste angezeigt, um Administratoren bei ihren Untersuchungen zu unterstützen. Beachten Sie, dass mehrere Filter gleichzeitig angewendet werden können, und mehrere durch trennzeichengetrennte Werte zu einem Filter hinzugefügt werden, um die Suche einzuschränken. Denken Sie daran:
+4. **Suchen und Filtern in Threat Explorer**: Filter werden oben auf der Seite in der Suchleiste angezeigt, um Administratoren bei ihren Untersuchungen zu unterstützen. Beachten Sie, dass mehrere Filter gleichzeitig angewendet werden können, und mehrere durch trennzeichengetrennte Werte zu einem Filter hinzugefügt werden, um die Suche einzuschränken. Denken Sie daran:
 
     - Filter führen bei den meisten Filterbedingungen eine exakte Übereinstimmung aus.
     - Der Antragsteller Filter verwendet eine Contains-Abfrage.
@@ -97,9 +97,9 @@ Threat Explorer ist ein leistungsfähiger Bericht, der mehrere Zwecke wie das Su
     - Für URL-Domäne, URL-Pfad und URL-Domänen-und Pfadfilter ist kein Protokoll zum Filtern erforderlich.
     - Sie müssen jedes Mal, wenn Sie die Filterwerte ändern, auf das Symbol Aktualisieren klicken, um relevante Ergebnisse zu erhalten.
 
-5. **Erweiterte Filter** : mit diesen Filtern können Sie komplexe Abfragen erstellen und das Dataset filtern. Durch Klicken auf *Erweiterte Filter* wird ein Flyout mit Optionen geöffnet.
+5. **Erweiterte Filter**: mit diesen Filtern können Sie komplexe Abfragen erstellen und das Dataset filtern. Durch Klicken auf *Erweiterte Filter* wird ein Flyout mit Optionen geöffnet.
 
-   Die erweiterte Filterung ist eine hervorragende Ergänzung der Suchfunktionen. Ein boolescher **Not** -Filter wurde für die *Empfänger* -, *Absender* -und *Absenderdomäne* eingeführt, um Administratoren die Untersuchung durch Ausschließen von Werten zu ermöglichen. Diese Option wird unter Selection Parameter *Contains None of* angezeigt. **Not** lässt zu, dass Administratoren Warnungs Postfächer, standardmäßige Antwort Postfächer aus ihren Untersuchungen ausschließen, und ist nützlich für Fälle, in denen Administratoren nach einem bestimmten Betreff suchen (Subject = "ATTENTION"), wobei der Empfänger auf *keines von defaultMail \@ contoso.com* festgelegt werden kann. Dies ist eine exakte Wert Suche.
+   Die erweiterte Filterung ist eine hervorragende Ergänzung der Suchfunktionen. Ein boolescher **Not** -Filter wurde für die *Empfänger*-, *Absender* -und *Absenderdomäne* eingeführt, um Administratoren die Untersuchung durch Ausschließen von Werten zu ermöglichen. Diese Option wird unter Selection Parameter *Contains None of* angezeigt. **Not** lässt zu, dass Administratoren Warnungs Postfächer, standardmäßige Antwort Postfächer aus ihren Untersuchungen ausschließen, und ist nützlich für Fälle, in denen Administratoren nach einem bestimmten Betreff suchen (Subject = "ATTENTION"), wobei der Empfänger auf *keines von defaultMail \@ contoso.com* festgelegt werden kann. Dies ist eine exakte Wert Suche.
 
    ![Die Empfänger-"enthält keinen der erweiterten Filter".](../../media/tp-InvestigateMalEmail-AdvancedFilter.png)
 
@@ -107,7 +107,7 @@ Threat Explorer ist ein leistungsfähiger Bericht, der mehrere Zwecke wie das Su
 
    ![Die Option nach Stunden filtern, um die Anzahl der zu verarbeitenden Daten Sicherheitsteams einzuschränken und deren kürzeste Dauer 30 Minuten beträgt.](../../media/tp-InvestigateMalEmail-FilterbyHours.png)
 
-6. **Fields in Threat Explorer** : Threat Explorer macht viel mehr sicherheitsbezogene e-Mail-Informationen wie *Zustellungs Aktionen* , *Zustellungsorte* , *spezielle Aktionen* , *Richtungs* -, *Außerkraftsetzungen* und *URL-Bedrohungen* verfügbar. Außerdem kann das Sicherheitsteam Ihrer Organisation mit höherer Sicherheit untersucht werden.
+6. **Fields in Threat Explorer**: Threat Explorer macht viel mehr sicherheitsbezogene e-Mail-Informationen wie *Zustellungs Aktionen*, *Zustellungsorte*, *spezielle Aktionen*, *Richtungs*-, *Außerkraftsetzungen* und *URL-Bedrohungen* verfügbar. Außerdem kann das Sicherheitsteam Ihrer Organisation mit höherer Sicherheit untersucht werden.
 
     *Zustellungs Aktion* ist die Aktion, die aufgrund vorhandener Richtlinien oder Erkennungen auf eine e-Mail angewendet wird. Hier sind die möglichen Aktionen, die eine e-Mail ausführen kann:
 
@@ -116,7 +116,7 @@ Threat Explorer ist ein leistungsfähiger Bericht, der mehrere Zwecke wie das Su
     - **Blockiert** – alle e-Mail-Nachrichten, die unter Quarantäne gestellt, fehlerhaft oder gelöscht wurden. (Für den Benutzer ist vollständig kein Zugriff möglich.)
     - **Ersetzt** – jede e-Mail-Nachricht, bei der böswillige Anlagen durch txt-Dateien ersetzt werden, die den Status der Anlage böswillig aufweisen
 
-    **Zustellungsort** : der Filter "Übermittlungsort" steht zur Verfügung, damit Administratoren verstehen, wo verdächtige böswillige e-Mails beendet wurden und welche Aktionen dazu unternommen wurden. Die daraus resultierenden Daten können in das Arbeitsblatt exportiert werden. Mögliche Zustellungsorte sind:
+    **Zustellungsort**: der Filter "Übermittlungsort" steht zur Verfügung, damit Administratoren verstehen, wo verdächtige böswillige e-Mails beendet wurden und welche Aktionen dazu unternommen wurden. Die daraus resultierenden Daten können in das Arbeitsblatt exportiert werden. Mögliche Zustellungsorte sind:
 
     - **Posteingang oder Ordner** – die e-Mail befindet sich im Posteingang oder in einem bestimmten Ordner, entsprechend Ihren e-Mail-Regeln.
     - **On-Prem oder External** – das Postfach ist nicht in der Cloud vorhanden, sondern lokal.
@@ -126,9 +126,9 @@ Threat Explorer ist ein leistungsfähiger Bericht, der mehrere Zwecke wie das Su
     - **Fehler** – die e-Mail konnte das Postfach nicht erreichen.
     - **Fallen gelassen** – die e-Mail ging an einer beliebigen Stelle im Nachrichtenfluss verloren.
 
-    **Directional** : mit dieser Option können Ihre Sicherheits Betriebsteams nach der "Richtung" filtern, aus der eine e-Mail stammt, oder Sie wird ausgeführt. Die Richtwerte sind *eingehend* , ausgehend und *Intra-org* (entsprechend zu e-Mails, die von außerhalb an Ihre Organisation gesendet *werden, die* aus Ihrer Organisation gesendet werden oder intern an Ihre org gesendet werden). Diese Informationen können Sicherheitsteams beim spotten von Spoofing und Identitätswechsel helfen, da ein Missverhältnis zwischen dem Richtungswert (ex. *Eingehend* ) und die Domäne des Absenders (die *scheinbar* eine interne Domäne ist) ist offensichtlich! Der Richtungswert ist getrennt und kann von der Nachrichtenablaufverfolgung abweichen. Ergebnisse können in das Arbeitsblatt exportiert werden.
+    **Directional**: mit dieser Option können Ihre Sicherheits Betriebsteams nach der "Richtung" filtern, aus der eine e-Mail stammt, oder Sie wird ausgeführt. Die Richtwerte sind *eingehend*, ausgehend und *Intra-org* (entsprechend zu e-Mails, die von außerhalb an Ihre Organisation gesendet *werden, die* aus Ihrer Organisation gesendet werden oder intern an Ihre org gesendet werden). Diese Informationen können Sicherheitsteams beim spotten von Spoofing und Identitätswechsel helfen, da ein Missverhältnis zwischen dem Richtungswert (ex. *Eingehend*) und die Domäne des Absenders (die *scheinbar* eine interne Domäne ist) ist offensichtlich! Der Richtungswert ist getrennt und kann von der Nachrichtenablaufverfolgung abweichen. Ergebnisse können in das Arbeitsblatt exportiert werden.
 
-    **Außerkraftsetzungen** : dieser Filter enthält Informationen, die auf der Registerkarte Details der e-Mail angezeigt werden, und verwendet diese, um anzuzeigen, wo Organisations-oder Benutzerrichtlinien zum zulassen und Blockieren von e-Mails *außer Kraft gesetzt* wurden. Das wichtigste an diesem Filter ist, dass es dem Sicherheitsteam Ihres Unternehmens hilft zu sehen, wie viele verdächtige e-Mails aufgrund der Konfiguration übermittelt wurden. Dadurch erhalten Sie die Möglichkeit, nach Bedarf die zulässigen und blockierten zu ändern. Dieses Resultset dieses Filters kann in das Arbeitsblatt exportiert werden.
+    **Außerkraftsetzungen**: dieser Filter enthält Informationen, die auf der Registerkarte Details der e-Mail angezeigt werden, und verwendet diese, um anzuzeigen, wo Organisations-oder Benutzerrichtlinien zum zulassen und Blockieren von e-Mails *außer Kraft gesetzt* wurden. Das wichtigste an diesem Filter ist, dass es dem Sicherheitsteam Ihres Unternehmens hilft zu sehen, wie viele verdächtige e-Mails aufgrund der Konfiguration übermittelt wurden. Dadurch erhalten Sie die Möglichkeit, nach Bedarf die zulässigen und blockierten zu ändern. Dieses Resultset dieses Filters kann in das Arbeitsblatt exportiert werden.
 
     ****
 
@@ -141,13 +141,13 @@ Threat Explorer ist ein leistungsfähiger Bericht, der mehrere Zwecke wie das Su
     |Durch Benutzerrichtlinie blockiert|E-Mail-Nachrichten wurden gemäß der Benutzerrichtlinie von der Zustellung an das Postfach blockiert.|
     |
 
-    **URL Threat** : das Feld URL-Bedrohung wurde auf der Registerkarte *Details* einer e-Mail angezeigt, um die von einer URL dargestellte Bedrohung anzugeben. Bedrohungen, die von einer URL dargestellt werden, können *Schadsoftware* , *Phishing* oder *Spam* sein, und eine URL *ohne Bedrohung* wird im Abschnitt "Bedrohungen" *keine Aussage geben* .
+    **URL Threat**: das Feld URL-Bedrohung wurde auf der Registerkarte *Details* einer e-Mail angezeigt, um die von einer URL dargestellte Bedrohung anzugeben. Bedrohungen, die von einer URL dargestellt werden, können *Schadsoftware*, *Phishing* oder *Spam* sein, und eine URL *ohne Bedrohung* wird im Abschnitt "Bedrohungen" *keine Aussage geben* .
 
-7. **E-Mail-Zeitachsenansicht** : Ihr Sicherheits Betriebsteam muss möglicherweise tief in die e-Mail-Details eintauchen, um weiter zu untersuchen. Die e-Mail-Zeitachse ermöglicht Administratoren das Anzeigen von Aktionen, die in einer e-Mail von der Zustellung bis zur nach Zustellung vorgenommen wurden. Klicken Sie zum Anzeigen einer e-Mail-Zeitachse auf den Betreff einer e-Mail-Nachricht, und klicken Sie dann auf e-Mail-Zeitplan. (Es wird unter anderen Überschriften wie Zusammenfassung oder Details auf dem Panel angezeigt.) Diese Ergebnisse können in das Arbeitsblatt exportiert werden.
+7. **E-Mail-Zeitachsenansicht**: Ihr Sicherheits Betriebsteam muss möglicherweise tief in die e-Mail-Details eintauchen, um weiter zu untersuchen. Die e-Mail-Zeitachse ermöglicht Administratoren das Anzeigen von Aktionen, die in einer e-Mail von der Zustellung bis zur nach Zustellung vorgenommen wurden. Klicken Sie zum Anzeigen einer e-Mail-Zeitachse auf den Betreff einer e-Mail-Nachricht, und klicken Sie dann auf e-Mail-Zeitplan. (Es wird unter anderen Überschriften wie Zusammenfassung oder Details auf dem Panel angezeigt.) Diese Ergebnisse können in das Arbeitsblatt exportiert werden.
 
-    Die e-Mail-Zeitachse wird in einer Tabelle geöffnet, in der alle Zustellungs-und Post Zustell Ereignisse für die e-Mail angezeigt werden. Wenn die e-Mail keine weiteren Aktionen enthält, sollten Sie ein einzelnes Ereignis für die ursprüngliche Zustellung sehen, das ein Ergebnis wie " *blockiert* " mit einem Urteil wie " *Phishing* " angibt. Administratoren können die gesamte e-Mail-Zeitachse exportieren, einschließlich aller Details auf der Registerkarte und der e-Mail-Adresse (wie Betreff, Absender, Empfänger, Netzwerk und Nachrichten-ID). Die e-Mail-Zeitachse schneidet nach dem Zufallsprinzip ab, da es bei der Überprüfung verschiedener Standorte kürzer ist, um zu versuchen, Ereignisse zu verstehen, die seit dem Eintreffen der e-Mail geschehen sind. Wenn mehrere Ereignisse bei oder nahe gleichzeitig in einer e-Mail auftreten, werden diese Ereignisse in einer Zeitachsenansicht angezeigt.
+    Die e-Mail-Zeitachse wird in einer Tabelle geöffnet, in der alle Zustellungs-und Post Zustell Ereignisse für die e-Mail angezeigt werden. Wenn die e-Mail keine weiteren Aktionen enthält, sollten Sie ein einzelnes Ereignis für die ursprüngliche Zustellung sehen, das ein Ergebnis wie " *blockiert*" mit einem Urteil wie " *Phishing*" angibt. Administratoren können die gesamte e-Mail-Zeitachse exportieren, einschließlich aller Details auf der Registerkarte und der e-Mail-Adresse (wie Betreff, Absender, Empfänger, Netzwerk und Nachrichten-ID). Die e-Mail-Zeitachse schneidet nach dem Zufallsprinzip ab, da es bei der Überprüfung verschiedener Standorte kürzer ist, um zu versuchen, Ereignisse zu verstehen, die seit dem Eintreffen der e-Mail geschehen sind. Wenn mehrere Ereignisse bei oder nahe gleichzeitig in einer e-Mail auftreten, werden diese Ereignisse in einer Zeitachsenansicht angezeigt.
 
-8. **Vorschau/Download** : Threat Explorer gibt Ihrem Security Operations-Team die Details, die Sie benötigen, um verdächtige e-Mails zu untersuchen. Ihr Sicherheits Betriebsteam kann entweder:
+8. **Vorschau/Download**: Threat Explorer gibt Ihrem Security Operations-Team die Details, die Sie benötigen, um verdächtige e-Mails zu untersuchen. Ihr Sicherheits Betriebsteam kann entweder:
 
     - [Überprüfen Sie die Zustellungs Aktion und den Speicherort](#check-the-delivery-action-and-location).
 

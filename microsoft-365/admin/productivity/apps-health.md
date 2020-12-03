@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Details zum Produktivitäts Ergebnis der Microsoft 365 apps-Integritäts Technologie.
-ms.openlocfilehash: c38f2109ed41377cfccb9838c95dbfbebbfd322a
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: a84e919ce01775b8791ed7a1992464e4f52c7234
+ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123511"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49562943"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Microsoft 365 apps Health – Technologie-Erlebnisse
 
-Das Produktivitäts Ergebnis hilft Organisationen, zu transformieren, wie arbeiten mit Metriken über die Verwendung von Microsoft 365-apps und die unterstützenden Technologie Erfahrungen ausgeführt werden. Die Partitur spiegelt die Leistung Ihrer Organisation&#39;s für Personen-und Technologie Erlebnis Kategorien wider und vergleicht Ihre Bewertung mit Organisationen wie Ihrem. Die Kategorie apps-Integrität ist Teil der Messungen, die unter Technologie Erfahrungen fallen. Weitere Informationen finden Sie in der [Übersicht über das Produktivitäts Ergebnis](productivity-score.md) .
+Die Produktivitäts Bewertung bietet Einblicke in die digitale Transformationsreise Ihrer Organisation durch die Verwendung von Microsoft 365 und die damit unterstützten Technologie-Erlebnisse. Die Bewertung Ihrer Organisation reflektiert Personen-und Technologie Erfahrungs Messungen und kann mit Benchmarks von Organisationen vergleichbar mit Ihnen verglichen werden. Die Kategorie apps-Integrität ist Teil der Messungen, die unter Technologie Erfahrungen fallen. Weitere Informationen finden Sie unter Übersicht über die [Produktivitäts Bewertung](productivity-score.md) und Lesen der [Datenschutzerklärung von Microsoft](https://privacy.microsoft.com/privacystatement).
 
 ## <a name="why-your-organization39s-microsoft-365-apps-health-score-matters"></a>Warum Ihre Organisation&#39;s Microsoft 365 apps Health Score zählt
 
@@ -101,11 +101,11 @@ Dieses Diagramm zeigt die Trendreihe der Geräte, auf denen unterstützte Versio
 
 :::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="Diagramm, in dem dargestellt wird, wie viele Geräte im Laufe der Zeit unterstützte und aktuelle Versionen von apps ausführen.":::
 
-## <a name="people-in-your-organization"></a>Personen in Ihrer Organisation
+## <a name="devices-in-your-organization"></a>Geräte in Ihrer Organisation
 
 In diesem Abschnitt können Sie auf die Metriken reagieren, auf die Sie sich konzentrieren möchten, indem Sie relevante Informationen zu allen Metriken für Microsoft 365 apps-Integritäts Technologie-Erlebnisse bereitstellen.
 
-Die folgenden Spalten werden in der Tabelle auf Benutzerebene angezeigt:
+Die folgenden Spalten werden in der Tabelle auf Kanal/Version-Ebene angezeigt:
 
 - **Kanal** : aktueller Microsoft 365-apps-Kanal auf den Geräten.
 - **Status:**   Microsoft 365 apps unterstützen den Status der Geräte basierend auf aktuellem Kanal und Version.

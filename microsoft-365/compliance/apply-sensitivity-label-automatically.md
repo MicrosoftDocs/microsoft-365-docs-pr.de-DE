@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch einem Dokument oder einer E-Mail zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: 2cfe509e61737cde77dbf865d4d56d9e7f8d0d33
-ms.sourcegitcommit: 95b85a1fdf43e3f0839483fa22e279262703f15f
+ms.openlocfilehash: 705752a63d3cd1ca5f6950643648ba5c3dd50336
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "49407349"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551346"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -37,7 +37,9 @@ Die Möglichkeit, Vertraulichkeitsbezeichnungen automatisch auf Inhalte anzuwend
 
 - Benutzer müssen nicht mehr über Ihre Richtlinien Bescheid wissen, sondern können sich stattdessen auf ihre Arbeit konzentrieren.
 
-Es gibt zwei unterschiedliche Methoden für die automatische Anwendung einer Vertraulichkeits Kennzeichnung:
+Wenn der Inhalt manuell bezeichnet wurde, wird diese Bezeichnung niemals durch eine automatische Bezeichnung ersetzt. Die automatische Bezeichnung kann jedoch eine [Bezeichnung mit niedrigerer Priorität](sensitivity-labels.md#label-priority-order-matters) ersetzen, die automatisch angewendet wurde.
+
+Es gibt zwei unterschiedliche Methoden für die automatische Anwendung einer Vertraulichkeitsbezeichnung:
 
 - **Clientseitige Bezeichnung, wenn Benutzer Dokumente bearbeiten oder E-Mails verfassen (auch beantworten oder weiterleiten)**: Verwenden Sie ein Label, das für die automatische Bezeichnung für Office-Anwendungen (Word, Excel, PowerPoint und Outlook) konfiguriert ist. 
     
@@ -86,12 +88,9 @@ Verwenden Sie die folgende Tabelle, um die Unterschiede im Verhalten der beiden 
 |Außerkraftsetzen der IRM-Verschlüsselung ohne Bezeichnung angewendet|Ja, wenn der Benutzer das Mindestnutzungsrecht des Exportierens hat |Ja (nur E-Mail) |
 |Bezeichnen eingehender E-Mails|Nein |Ja (Verschlüsselung nicht angewendet) |
 
-\* Die Funktion „Automatisches Bezeichnen“ ist derzeit nicht in allen Regionen verfügbar. Wenn Ihr Mandant diese Funktion nicht unterstützt, wird die Registerkarte „Automatisches Bezeichnen“ im Admin Center für Bezeichnungen (Admin Labeling Center) nicht angezeigt.
+\* Die Funktion „Automatisches Bezeichnen“ ist derzeit nicht in allen Regionen verfügbar. Wenn Ihr Mandant diese Funktion nicht unterstützt, wird die Registerkarte „Automatisches Bezeichnen“ im Admin Center für Bezeichnungen nicht angezeigt.
 
-> [!NOTE]
-> Wenn der Inhalt manuell bezeichnet wurde, wird diese Bezeichnung niemals durch automatisches Bezeichnen ersetzt. Richtlinien der automatischen Bezeichnung können jedoch eine [Bezeichnung niedrigerer Priorität](sensitivity-labels.md#label-priority-order-matters) ersetzen, das durch die Verwendung der automatischen Bezeichnung für Office-Anwendungen angewendet wurde.
-
-## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Auswerten mehrerer Kriterien, wenn sie für mehr als eine Bezeichnung zutreffen
+## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Bewerten mehrerer Kriterien, die für mehr als eine Bezeichnung zutreffen
 
 Die Bezeichnungen werden je nach Position, die Sie in der Richtlinie festlegen, sortiert: die Bezeichnung an erster Stelle hat die niedrigste Position (am wenigsten vertraulich) und die Bezeichnung an letzter Stelle hat die höchste Position (am meisten vertraulich). Weitere Informationen zur Priorität finden Sie unter [Priorität der Bezeichnungen (Reihenfolge wesentlich)](sensitivity-labels.md#label-priority-order-matters).
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Verwenden Sie Microsoft Defender für Office 365 zusammen mit Microsoft Defender für Endpoint, um ausführlichere Informationen zu Bedrohungen für Ihre Geräte und e-Mail-Inhalte zu erhalten.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7f668aa1234509789dacd2b018b94f1bfbc79e2c
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 8a598dce3a8049d97d43b742477ca8f7a2bfeadb
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357779"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561219"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Verwenden von Microsoft Defender für Office 365 zusammen mit Microsoft Defender für Endpoint
 
@@ -47,7 +47,7 @@ In diesem Beispiel können Sie sehen, dass die Empfänger der erkannten e-Mail-N
 
 - Ihre Organisation muss Microsoft Defender für Office 365 (oder Office 365 E5) und Microsoft Defender für Endpoint haben.
     
-- Sie müssen ein globaler Administrator sein oder über eine Sicherheitsadministrator Rolle (wie etwa Sicherheitsadministrator) verfügen, die im [Security &amp; Compliance Center](https://protection.office.com)zugewiesen ist. (Siehe [Berechtigungen im Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md))
+- Sie müssen ein globaler Administrator sein oder über eine Sicherheitsadministrator Rolle (beispielsweise Sicherheitsadministrator) verfügen, die im [Security & Compliance Center](https://protection.office.com)zugewiesen ist. (Siehe [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md))
     
 - Sie müssen sowohl im Sicherheits & Compliance Center als auch im Sicherheitscenter von Microsoft Defender Zugriff auf beide [Explorer-(oder Echt Zeit Erkennungen)](threat-explorer.md) haben.
     
@@ -75,4 +75,4 @@ Die Integration von Microsoft Defender für Office 365 mit Microsoft Defender f�
   
 [Microsoft Defender für Office 365](office-365-atp.md)
   
-[Microsoft Defender für Endpunkt](https://docs.microsoft.com/windows/security/threat-protection)
+[Microsoft Defender für Endpoint](https://docs.microsoft.com/windows/security/threat-protection)

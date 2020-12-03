@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie, wie Contoso die Features für den Informationsschutz in Microsoft 365 für Unternehmen verwendet, um Ihre digitalen Objekte in der Cloud zu sichern.
-ms.openlocfilehash: a1aa08a20d284d3a003f4a406c37f2107ce19bd1
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 7cc51110a0bc4c87e57e71b2ddb42aa0dbaa288d
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754601"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558504"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Informationsschutz für die Contoso Corporation
 
@@ -34,7 +34,7 @@ Contoso hat eine Analyse der Daten durchgeführt und die folgenden Klassifizieru
 
 | Stufe 1: Baseline | Stufe 2: Vertraulich | Stufe 3: Hochgradig reguliert |
 |:-------|:-----|:-----|
-| Daten sind verschlüsselt und nur für authentifizierte Benutzer verfügbar.<BR> <BR> Für alle lokal und in der Cloud-basierten Speicherung und Arbeitsauslastungen gespeicherten Daten bereitgestellt. Die Daten werden verschlüsselt, während Sie sich im Dienst befinden, und während der Übertragung zwischen dem Dienst und den Clientgeräten. <BR><BR>Beispiele für die Daten der Stufe 1 sind normale Geschäftskommunikation (E-Mail) und Dateien für Mitarbeiter in der Verwaltung, im Vertrieb oder im Kundendienst. | Stufe 1 plus strenger Authentifizierung und Schutz vor Datenverlust.<BR> <BR> Eine starke Authentifizierung umfasst Azure Multi-Factor Authentication (MFA) mit SMS-Validierung. Durch Verhinderung von Datenverlust wird sichergestellt, dass vertrauliche oder wichtige Informationen nicht außerhalb der Microsoft-Cloud Reisen.<BR><BR>Beispiele für Daten der Stufe 2 sind Finanz- und rechtliche Informationen sowie Forschungs- und Entwicklungsdaten für neue Produkte. | Stufe 2 plus höchstmöglicher Verschlüsselung, Authentifizierung und Überwachung.<BR><BR>Die höchstmögliche, den regionalen Regelungen entsprechende Verschlüsselung für gespeicherte Daten oder Daten in der Cloud kombiniert mit MFA über Smartcards und präzise Überwachung und Benachrichtigung.<BR> <BR>Beispiele für Daten der Stufe 3 sind Kunden-und Partner personenbezogene Informationen, Produkt Technische Spezifikationen und proprietäre Fertigungstechniken.  |
+| Daten sind verschlüsselt und nur für authentifizierte Benutzer verfügbar.<BR> <BR> Für alle lokal und in der Cloud-basierten Speicherung und Arbeitsauslastungen gespeicherten Daten bereitgestellt. Die Daten werden verschlüsselt, während Sie sich im Dienst befinden, und während der Übertragung zwischen dem Dienst und den Clientgeräten. <BR><BR>Beispiele für die Daten der Stufe 1 sind normale Geschäftskommunikation (E-Mail) und Dateien für Mitarbeiter in der Verwaltung, im Vertrieb oder im Kundendienst. | Stufe 1 plus strenger Authentifizierung und Schutz vor Datenverlust.<BR> <BR> Die starke Authentifizierung umfasst Azure AD Multi-Factor Authentication (MFA) mit SMS-Validierung. Durch Verhinderung von Datenverlust wird sichergestellt, dass vertrauliche oder wichtige Informationen nicht außerhalb der Microsoft-Cloud Reisen.<BR><BR>Beispiele für Daten der Stufe 2 sind Finanz- und rechtliche Informationen sowie Forschungs- und Entwicklungsdaten für neue Produkte. | Stufe 2 plus höchstmöglicher Verschlüsselung, Authentifizierung und Überwachung.<BR><BR>Die höchstmögliche, den regionalen Regelungen entsprechende Verschlüsselung für gespeicherte Daten oder Daten in der Cloud kombiniert mit MFA über Smartcards und präzise Überwachung und Benachrichtigung.<BR> <BR>Beispiele für Daten der Stufe 3 sind Kunden-und Partner personenbezogene Informationen, Produkt Technische Spezifikationen und proprietäre Fertigungstechniken.  |
 ||||
 
 ## <a name="contoso-information-policies"></a>Contoso-Informationsrichtlinien

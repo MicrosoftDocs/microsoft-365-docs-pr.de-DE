@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Häufig gestellte Fragen zu Microsoft-Buchungen.
-ms.openlocfilehash: 40605cfc7e5d30e12cd34a463a76e8d9c324efc7
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 47bb71476c3fd0b32f9be3e71b188bef6efe2498
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445451"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561555"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Häufig gestellte Fragen zu Microsoft-Buchungen
 
@@ -29,7 +29,7 @@ Reservierungen sind ein Onlinedienst, sodass Sie nichts herunterladen müssen. W
 
 ### <a name="who-has-access-to-microsoft-bookings"></a>Wer hat Zugriff auf Microsoft-Buchungen?
 
-Reservierungen sind standardmäßig für Microsoft 365 Business Premium-, a3-, A5-, E3-und E5-Kunden weltweit verfügbar und aktiv. Reservierungen sind auch in Office 365 betrieben von 21Vianet verfügbar.
+Reservierungen sind standardmäßig für Microsoft 365 Business Premium, Microsoft 365 Business Standard, a3, A5, E3 und E5-Kunden weltweit verfügbar und aktiv. Reservierungen sind auch in Office 365 betrieben von 21Vianet verfügbar.
 
 ### <a name="will-my-customers-see-my-personal-or-business-calendar"></a>Werden meine Kunden meinen persönlichen oder geschäftlichen Kalender sehen?
 
@@ -37,7 +37,7 @@ Ihren Kunden wird nur der Buchungskalender angezeigt, den Sie online für die Di
 
 ### <a name="how-do-end-users-access-the-bookings-app"></a>Wie greifen Endbenutzer auf die app "Buchungen" zu?
 
-Jeder, der für Microsoft 365 Business Premium, a3, A5, E3, E5 oder als Mitarbeiter in der Administrator-oder Viewer-Rolle lizenziert ist, kann in der APP-Auswahl im Microsoft 365-Weberlebnis auf Buchungen zugreifen. Es gibt auch eine Begleit-APP, die für IOS und Android verfügbar ist.
+Jeder, der für Microsoft 365 Business Premium, Microsoft 365 Business Standard, a3, A5, E3, E5 oder als Mitarbeiter in der Administrator-oder der Viewer-Rolle lizenziert ist, kann in der APP-Auswahl innerhalb der Microsoft 365-Weberfahrung auf Buchungen zugreifen. Es gibt auch eine Begleit-APP, die für IOS und Android verfügbar ist.
 
 ### <a name="can-i-use-bookings-in-my-own-web-site"></a>Kann ich Buchungen in meiner eigenen Website verwenden?
 
@@ -49,9 +49,9 @@ Ja. Wir bieten einen Link zu ihrer Buchungsseite auf der Registerkarte **Buchung
 
 ### <a name="can-our-it-department-control-whether-end-users-can-access-bookings"></a>Kann unsere IT-Abteilung steuern, ob Endbenutzer auf Buchungen zugreifen können?
 
-Reservierungen sind standardmäßig in Business Premium, M365 a3/a5 und E3/E5-Mandanten verfügbar, Administratoren können diese Option jedoch im Microsoft 365 Admin Center deaktivieren. Befolgen Sie dazu [die folgenden Anweisungen](turn-bookings-on-or-off.md).
+Reservierungen stehen standardmäßig in den Mandanten Microsoft 365 Business Premium, Microsoft 365 Business Standard, M365 a3/a5 und E3/E5 zur Verfügung, Administratoren können diese Option jedoch im Microsoft 365 Admin Center deaktivieren. Befolgen Sie dazu [die folgenden Anweisungen](turn-bookings-on-or-off.md).
 
-Wenn ein Kunde den Zugriff auf Buchungen für bestimmte berechtigte Lizenzen in seinem Mandanten deaktivieren möchte, kann er entweder eine Gruppenrichtlinie zum Einschränken von Lizenzen oder eine OWA-Postfachrichtlinie implementieren, mit der verhindert wird, wer neue Buchungskalender erstellen kann.
+Wenn ein Kunde den Zugriff auf Buchungen für bestimmte berechtigte Lizenzen in seinem Mandanten deaktivieren möchte, kann er entweder eine Gruppenrichtlinie zum Einschränken von Lizenzen verwenden oder eine OWA-Postfachrichtlinie implementieren, mit der die Benutzer eingeschränkt werden können, die neue Buchungen Kalender erstellen dürfen.
 
 Wenn Sie eine OWA-Postfachrichtlinie zum Deaktivieren des Zugriffs auf Buchungen verwenden, verfügen alle Benutzer über eine Buchungs Lizenz, doch wenn Sie versuchen, auf die APP zuzugreifen, sind Sie nur dann erfolgreich, wenn Sie Teil der Richtlinie sind oder wenn Sie einem vorhandenen Buchungskalender als Mitarbeiter hinzugefügt wurden. Details [hierzu finden](turn-bookings-on-or-off.md) Sie im Abschnitt "nur ausgewählte Benutzer dürfen Buchungskalender erstellen".
 
@@ -114,7 +114,7 @@ Buchungen sind eine ideale Lösung für Kunden in Unternehmen und Kleinunternehm
 
 ### <a name="how-do-i-get-microsoft-bookings"></a>Wie erhalte ich Microsoft-Buchungen?
 
-Reservierungen sind in Microsoft 365 für Kunden mit Business Premium-, a3-, A5-, E3-und E5-Lizenzen sowie einer IOS-und Android-Begleit-app verfügbar. Reservierungen stehen nicht als eigenständige App zur Verfügung. Outlook Web App oder Outlook im Internet muss für die Verwendung von Buchungen aktiviert sein, da Daten in Outlook gespeichert werden.
+Reservierungen sind in Microsoft 365 für Kunden mit Microsoft 365 Business Premium, Microsoft 365 Business Standard, a3, A5, E3 und E5 sowie einer IOS-und Android-Begleit-app verfügbar. Reservierungen stehen nicht als eigenständige App zur Verfügung. Outlook Web App oder Outlook im Internet muss für die Verwendung von Buchungen aktiviert sein, da Daten in Outlook gespeichert werden.
 
 Eine Buchungs Lizenz bietet vollständige Funktionen für das Produkt, einschließlich der Erstellung und Verwaltung von Kalendern. Außerdem können Benutzer vorhandene Kalender anzeigen und bearbeiten, wenn diese Benutzer als Mitarbeiter einer Administrator-oder Viewer-Rolle hinzugefügt werden.
 
@@ -172,9 +172,9 @@ Eine Einstellung mit dem Namen " **Maximale Vorlaufzeit** " bestimmt am weiteste
 
 ### <a name="how-does-bookings-work-across-time-zones"></a>Wie funktioniert die Buchung über Zeitzonen hinweg?
 
-Alle Zeiten befinden sich standardmäßig in der Geschäftszeit Zone (Ihre lokale Zeitzone). Dies bedeutet, dass alle Einstellungen, die Sie für einen Buchungskalender konfigurieren, wie etwa Arbeitsstunden, in dieser Zeitzone angezeigt werden. Die Self-Service-Seite hat die Möglichkeit, alle Termin Zeiten in der Zeitzone des Endbenutzers anzuzeigen, die bei Bedarf deaktiviert werden kann.Wenn **Zeitschlitze in der Geschäfts Zeitzone immer angezeigt** werden, bleibt die Kontrollkästchen auf der Seite "Buchungen" deaktiviert, und die Benutzer der Seite sehen Zeitschlitze in ihren eigenen lokalen Zeitzonen.
+Alle Zeiten befinden sich standardmäßig in der Geschäftszeit Zone (Ihre lokale Zeitzone). Dies bedeutet, dass alle Einstellungen, die Sie für einen Buchungskalender konfigurieren, wie etwa Arbeitsstunden, in dieser Zeitzone angezeigt werden. Die Self-Service-Seite hat die Möglichkeit, alle Termin Zeiten in der Zeitzone des Endbenutzers anzuzeigen, die bei Bedarf deaktiviert werden kann. Wenn **Zeitschlitze in der Geschäfts Zeitzone immer angezeigt** werden, bleibt die Kontrollkästchen auf der Seite "Buchungen" deaktiviert, und die Benutzer der Seite sehen Zeitschlitze in ihren eigenen lokalen Zeitzonen.
 
-:::image type="content" source="media/bookings-faq-region.png" alt-text="Planen in Buchungen":::
+:::image type="content" source="media/bookings-faq-region.png" alt-text="Reservierungen für Regions-und Zeitzoneneinstellungen":::
 
 Es gibt keine Provision zum Festlegen der Zeitzone für Mitarbeiter in Buchungen. Die Zeitzone des Personals und damit die Geschäftszeiten befinden sich in der Geschäftszeit Zone.
 
@@ -202,7 +202,7 @@ Ja, wir verfügen über eine Gruppen Buchungsfunktion, mit der mehrere Personen 
 
 Ja. Auf der Registerkarte "Buchungsseite" in der Webanwendung befindet sich ein Kontrollkästchen: **erfordern Sie ein Microsoft 365-oder Office 365-Konto aus meiner Organisation, um es zu buchen**. Wenn Sie dieses Kontrollkästchen aktivieren, wird der Zugriff auf Self-Service-Seiten auf diejenigen beschränkt, die sich in Ihrem Mandanten befinden. Auf den Buchungskalender, der in der Webanwendung für die Erstellung und Verwaltung liegt, kann nur von Personen zugegriffen werden, die der Seite mit Administrator-oder Viewer-Rollen als Mitarbeiter hinzugefügt wurden.
 
-:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Planen in Buchungen":::
+:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Buchungsseite-Zugriffssteuerung bei Buchungen":::
 
 ### <a name="how-frequently-does-the-home-page-update"></a>Wie häufig wird die Startseite aktualisiert?
 
@@ -250,7 +250,7 @@ Jeder Buchungskalender wird unabhängig verwaltet. Es gibt keine konsolidierte A
 
 Der Zugriff auf die Webanwendung Buchungen umfasst die Authentifizierung über die reguläre Azure Active Directory (AAD)-Authentifizierung. Die Self-Service-Buchungsseite kann jeder Person mit dem Link zur Webseite zur Verfügung gestellt werden. Wenn jedoch die Einstellung **ein Microsoft 365-oder Office 365-Konto von meiner Organisation** zum Buchen erfordert ausgewählt ist, wird die Seite für die Verwendung nur innerhalb des Microsoft 365-Mandanten eingeschränkt (mithilfe der Aad-Authentifizierung).
 
-:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Planen in Buchungen":::
+:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Buchungsseite-Zugriffssteuerung bei Buchungen":::
 
 ### <a name="does-customer-data-leave-the-production-system-for-any-reason"></a>Verlassen Kundendaten das Produktionssystem aus irgendeinem Grund?
 
@@ -303,18 +303,20 @@ Damit Buchungen ordnungsgemäß mit den Kalendern ihrer Mitarbeiter synchronisie
 
 1. Melden Sie sich bei Microsoft 365 an, und wählen Sie dann **Outlook** aus dem App-Startfeld aus.
 
-   ![Image von Outlook in App Launcher](../media/bookings-applauncher-outlook.png)
+   > [!div class="mx-imgBorder"]
+   > ![Image von Outlook in App Launcher](../media/bookings-applauncher-outlook.png)
 
-1. Wählen Sie oben auf der Seite **Share** \> **Kalender**freigeben aus.
+1. Wählen Sie oben auf der Seite **Share** \> **Kalender** freigeben aus.
 
    ![Bild des Kalenderfreigabe Menüs](../media/bookings-share-calendar.png)
 
-1. Wählen Sie im Abschnitt **Personen in Ihrer Organisation** das Dropdownfeld neben **Meine Organisation**aus, und wählen Sie dann **kann anzeigen aus, wenn ich beschäftigt bin**.
+1. Wählen Sie im Abschnitt **Personen in Ihrer Organisation** das Dropdownfeld neben **Meine Organisation** aus, und wählen Sie dann **kann anzeigen aus, wenn ich beschäftigt bin**.
 
-> [!NOTE]
-> Mit dieser Einstellung werden Ihre Frei/Gebucht-Informationen mit Buchungen und mit anderen Benutzern in Ihrer Organisation geteilt. Sie enthält keine weiteren Informationen, beispielsweise welche Art von Terminen Sie geplant haben, mit wem Sie den Termin geplant haben, oder den Ort.
+   > [!NOTE]
+   > Mit dieser Einstellung werden Ihre Frei/Gebucht-Informationen mit Buchungen und mit anderen Benutzern in Ihrer Organisation geteilt. Sie enthält keine weiteren Informationen, beispielsweise welche Art von Terminen Sie geplant haben, mit wem Sie den Termin geplant haben, oder den Ort.
 
-   ![Bild des Kalenderfreigabe-Bildschirms mit CAN-Ansicht, wenn ich beschäftigt bin aktiviert](../media/bookings-view-busy.png)
+   > [!div class="mx-imgBorder"]
+   > ![Bild des Kalenderfreigabe-Bildschirms mit CAN-Ansicht, wenn ich beschäftigt bin aktiviert](../media/bookings-view-busy.png)
 
 1. Wählen Sie **Fertig** aus.
 
@@ -333,9 +335,9 @@ Wenn ein Mitarbeiter Ihr Unternehmen verlassen hat und Sie ihn aus Ihrer Microso
 > [!NOTE]
 > Wenn Sie mehr als einen Buchungskalender haben, müssen Sie den Benutzer von allen Benutzern entfernen.
 
-Um zu überprüfen, ob Sie mehr als einen Kalender haben, wählen Sie im linken Menü den Dropdownpfeil neben dem Namen Ihres Unternehmens aus, und wählen Sie dann **Öffnen**aus. Wenn Sie nur einen Kalender haben, wird nur die Option zum Hinzufügen eines Buchungs Kalenders angezeigt. Dieses Beispiel zeigt, dass es einen zweiten Kalender mit dem Namen "Contoso Co" gibt.
+Um zu überprüfen, ob Sie mehr als einen Kalender haben, wählen Sie im linken Menü den Dropdownpfeil neben dem Namen Ihres Unternehmens aus, und wählen Sie dann **Öffnen** aus. Wenn Sie nur einen Kalender haben, wird nur die Option zum Hinzufügen eines Buchungs Kalenders angezeigt. Dieses Beispiel zeigt, dass es einen zweiten Kalender mit dem Namen "Contoso Co" gibt.
 
-   ![Bild vom Auswählen eines Kalender Bildschirms mit einem zweiten angezeigten Kalender](../media/bookings-choose-calendar.png)
+![Bild vom Auswählen eines Kalender Bildschirms mit einem zweiten angezeigten Kalender](../media/bookings-choose-calendar.png)
 
 ### <a name="theres-a-syncing-error-we-cant-identify"></a>Es gibt einen Synchronisierungsfehler, den wir nicht identifizieren können.
 

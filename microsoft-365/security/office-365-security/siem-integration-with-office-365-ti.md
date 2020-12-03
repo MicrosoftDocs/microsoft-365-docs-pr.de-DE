@@ -18,21 +18,21 @@ ms.collection:
 - M365-security-compliance
 description: Integrieren Sie den Siem-Server Ihrer Organisation mit Microsoft Defender für Office 365-und zugehörige Threat-Ereignisse in der API für die Office 365-Aktivitätsverwaltung.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 185e6e816cfff4131d7b5af11c4e3ea9cf94b338
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 6253ed0133bf53bdbeca71bb595a850e25441311
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843576"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561699"
 ---
 # <a name="siem-integration-with-microsoft-defender-for-office-365"></a>Siem-Integration mit Microsoft Defender für Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Wenn Ihre Organisation einen Siem-Server (Security Information and Event Management) verwendet, können Sie Microsoft Defender für Office 365 mit Ihrem Siem-Server integrieren. Sie können diese Integration mithilfe der API für die [Office 365 Aktivitätsverwaltung](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)einrichten. 
+Wenn Ihre Organisation einen Siem-Server (Security Information and Event Management) verwendet, können Sie Microsoft Defender für Office 365 mit Ihrem Siem-Server integrieren. Sie können diese Integration mithilfe der API für die [Office 365 Aktivitätsverwaltung](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)einrichten.
 
-Mit der Siem-Integration können Sie in ihren Siem-Server Berichten Informationen wie Malware oder Phishing anzeigen, die von Microsoft Defender für Office 365 erkannt wurden. 
+Mit der Siem-Integration können Sie in ihren Siem-Server Berichten Informationen wie Malware oder Phishing anzeigen, die von Microsoft Defender für Office 365 erkannt wurden.
 
 - Ein Beispiel für eine Siem-Integration mit Microsoft Defender für Office 365 finden Sie unter [Tech Community Blog: verbessern der Effektivität ihrer SoC mit Defender für Office 365 und der O365-Verwaltungs-API](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185).
 
@@ -40,11 +40,11 @@ Mit der Siem-Integration können Sie in ihren Siem-Server Berichten Informatione
 
 ## <a name="how-siem-integration-works"></a>Funktionsweise von Siem-Integration
 
-Die API für die Office 365 Aktivitätsverwaltung Ruft Informationen zu Benutzer-, Verwaltungs-, System-und Richtlinienaktionen und-Ereignissen aus den Microsoft 365-und Azure Active Directory-Aktivitätsprotokollen Ihrer Organisation ab. Wenn Ihre Organisation Microsoft Defender für Office 365 Plan 1 oder 2 oder Office 365 E5 verfügt, können Sie [Microsoft Defender für Office 365 Schema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema)verwenden.  
+Die API für die Office 365 Aktivitätsverwaltung Ruft Informationen zu Benutzer-, Verwaltungs-, System-und Richtlinienaktionen und-Ereignissen aus den Microsoft 365-und Azure Active Directory-Aktivitätsprotokollen Ihrer Organisation ab. Wenn Ihre Organisation Microsoft Defender für Office 365 Plan 1 oder 2 oder Office 365 E5 verfügt, können Sie [Microsoft Defender für Office 365 Schema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema)verwenden.
 
 In letzter Zeit wurden Ereignisse aus automatisierten Ermittlungs-und Antwortfunktionen in [Microsoft Defender für Office 365 Plan 2](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2) zur API für die Office 365-Verwaltungsaktivität hinzugefügt. Zusätzlich zum Einschließen von Daten zu Kern Ermittlungs Details wie ID, Name und Status enthält die API auch allgemeine Informationen zu Ermittlungsaktionen und Entitäten.
 
-Der Siem-Server oder ein ähnliches System fragt die **Audit. allgemeine** Arbeitsauslastung für den Zugriff auf Erkennungsereignisse ab. Weitere Informationen finden Sie unter [Erste Schritte mit Office 365-Verwaltungs-APIs](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis). 
+Der Siem-Server oder ein ähnliches System fragt die **Audit. allgemeine** Arbeitsauslastung für den Zugriff auf Erkennungsereignisse ab. Weitere Informationen finden Sie unter [Erste Schritte mit Office 365-Verwaltungs-APIs](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis).
 
 ## <a name="enum-auditlogrecordtype---type-edmint32"></a>Enum: AuditLogRecordType - Typ: Edm.Int32
 

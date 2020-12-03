@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 4b354d124cfd9c1ae0eab19c8feee7e0fd59df25
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 67835f4140179c69b5e0f2cd0287e656dd4c49ad
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357803"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558550"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Erforderliche Arbeit für die Implementierung von Identitäts-und Gerätezugriffs Richtlinien
 
@@ -45,7 +45,7 @@ In der folgenden Tabelle sind die erforderlichen Features und deren Konfiguratio
 |[Konfigurieren Sie PHS](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).  Dies muss aktiviert sein, um durchgesickerte Anmeldeinformationen zu erkennen und Sie für den risikobasierten bedingten Zugriff zu tätigen. **Hinweis:** Dies ist erforderlich, unabhängig davon, ob in Ihrer Organisation die Verbundauthentifizierung verwendet wird.|Rein cloudbasiert|
 |[Aktivieren Sie das nahtlose einmalige Anmelden](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso) , um Benutzer automatisch zu signieren, wenn Sie sich auf Ihren Organisations Geräten befinden, die mit Ihrem Organisationsnetzwerk verbunden sind.|Nur Cloud und Verbund|
 |[Konfigurieren Sie benannte Netzwerke](https://docs.microsoft.com/azure/active-directory/active-directory-known-networks-azure-portal). Azure AD Identitätsschutz erfasst und analysiert alle verfügbaren Sitzungsdaten, um ein Risikoergebnis zu generieren. Es wird empfohlen, die öffentlichen IP-Bereiche Ihrer Organisation für Ihr Netzwerk in der Konfiguration Azure AD benannte Netzwerke anzugeben. Für den Datenverkehr, der aus diesen Bereichen stammt, wird ein verringertes Risikoergebnis erzielt, und Datenverkehr von außerhalb der Organisationsumgebung erhält ein höheres Risikoergebnis.||
-|[Registrieren Sie alle Benutzer für Self-Service Password Reset (SSPR) und mehrstufige Authentifizierung (MFA)](https://docs.microsoft.com/azure/active-directory/authentication/concept-registration-mfa-sspr-converged). Es wird empfohlen, dass Sie vor der Zeit Benutzer für die Azure Multi-Factor Authentication registrieren. Azure AD Identitätsschutz nutzt die mehrstufige Azure-Authentifizierung, um eine zusätzliche Sicherheitsüberprüfung durchzuführen. Für eine optimale Anmelde Erfahrung empfehlen wir außerdem, dass Benutzer die [Microsoft Authenticator-App](https://docs.microsoft.com/azure/active-directory/user-help/microsoft-authenticator-app-how-to) und die Microsoft-Unternehmens Portal-App auf Ihren Geräten installieren. Diese können aus dem App Store für jede Plattform installiert werden.||
+|[Registrieren Sie alle Benutzer für Self-Service Password Reset (SSPR) und mehrstufige Authentifizierung (MFA)](https://docs.microsoft.com/azure/active-directory/authentication/concept-registration-mfa-sspr-converged). Es wird empfohlen, Benutzer für Azure AD Multi-Factor Authentication im Voraus zu registrieren. Azure AD Identitätsschutz nutzt Azure AD Multi-Factor Authentication, um eine zusätzliche Sicherheitsüberprüfung durchzuführen. Für eine optimale Anmelde Erfahrung empfehlen wir außerdem, dass Benutzer die [Microsoft Authenticator-App](https://docs.microsoft.com/azure/active-directory/user-help/microsoft-authenticator-app-how-to) und die Microsoft-Unternehmens Portal-App auf Ihren Geräten installieren. Diese können aus dem App Store für jede Plattform installiert werden.||
 |[Aktivieren der automatischen Geräteregistrierung für mit der Domäne verbundene Windows-Computer](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup). Bedingter Zugriff stellt sicher, dass Geräte, die mit apps verbunden sind, der Domäne beigetreten sind oder kompatibel sind. Um dies auf Windows-Computern zu unterstützen, muss das Gerät mit Azure AD registriert sein.  In diesem Artikel wird beschrieben, wie Sie die automatische Geräteregistrierung konfigurieren.|Rein cloudbasiert|
 |**Vorbereiten Ihres Supportteams**: Sie sollten vorausplanen, wie Sie mit Benutzern umgehen, die keine MFA durchführen können. Sie können sie z.B. Dies könnte das Hinzufügen zu einer Richtlinien Ausschlussgruppe oder das Registrieren neuer MFA-Informationen für Sie sein. Bevor Sie eine dieser sicherheitsrelevanten Änderungen vornehmen, müssen Sie sicherstellen, dass der tatsächliche Benutzer die Anforderung macht. Es kann hilfreich sein, den Vorgesetzten des Benutzers bei der Genehmigung mit einzubeziehen.||
 |[Konfigurieren des Kenn Wort Rückschreibens für lokale Ad](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started). Durch das Kenn Wort Rückschreiben können Azure AD festlegen, dass Benutzer ihre lokalen Kennwörter ändern müssen, wenn eine risikoreiche Konto Gefährdung erkannt wird. Sie können dieses Feature mit Azure AD Connect auf zwei Arten aktivieren: entweder aktivieren Sie das Rückschreiben von **Kennwörtern** im optionalen Features-Bildschirm des Setup-Assistenten für Azure AD Connect, oder aktivieren Sie es über Windows PowerShell.|Rein cloudbasiert|
@@ -83,7 +83,7 @@ Die folgenden e-Mail-Clients unterstützen moderne Authentifizierung und bedingt
 |**Windows**|Outlook|2019, 2016, 2013 <p> [Aktivieren der modernen Authentifizierung](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication) <p> [Erforderliche Updates](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|
 |**iOS**|Outlook für iOS|[Neueste Version](https://itunes.apple.com/us/app/microsoft-outlook-email-and-calendar/id951937596?mt=8)|
 |**Android**|Outlook für Android|[Neueste Version](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en)|
-|**macOS**|Outlook|2019 und 2016|
+|**MacOS**|Outlook|2019 und 2016|
 |**Linux**|Nicht unterstützt||
 |
 
@@ -97,7 +97,7 @@ Die folgenden Clients werden empfohlen, wenn eine Richtlinie für sichere Dokume
 |Windows 10|Unterstützt|Unterstützt|Nicht zutreffend|Nicht zutreffend|Unterstützt|
 |Android|Unterstützt|Unterstützt|Unterstützt|Unterstützt|N/V|
 |iOS|Unterstützt|Unterstützt|Unterstützt|Unterstützt|N/V|
-|macOS|Unterstützt|Unterstützt|Nicht zutreffend|Nicht zutreffend|Nicht unterstützt|
+|MacOS|Unterstützt|Unterstützt|Nicht zutreffend|Nicht zutreffend|Nicht unterstützt|
 |Linux|Nicht unterstützt|Nicht unterstützt|Nicht unterstützt|Nicht unterstützt|Nicht unterstützt|
 |
 

@@ -19,30 +19,28 @@ search.appverid:
 - MET150
 - MOE150
 description: Wie Datenschutz mit dem Produktivitäts Ergebnis geschützt wird.
-ms.openlocfilehash: c88886e9d1470bda48d023b77472e7dd296508a0
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: db123042761b07ed64dd2dd94e783d65205e1460
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519353"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561510"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>Datenschutz-Steuerelemente für Produktivitäts Bewertung
 
-Das Produktivitäts Ergebnis hilft Organisationen, die Arbeit mit Metriken zu transformieren, die Sie bei der Bewertung und Verbesserung von Personen-und Technologie Erfahrungen unterstützen. Sie erhalten einen Einblick in die Funktionsweise Ihrer Organisation und stellen Metriken bereit, mit denen Sie sich auf verbesserte Erfahrungen konzentrieren können.  Sie können die Metriken auch mit Aktionen verbinden, die Sie beim Aktualisieren von Qualifikationen und Systemen unterstützen, damit jeder seine besten Aufgaben ausführen kann. Die Bewertung spiegelt die Leistung Ihrer Organisation wider und ermöglicht Ihnen auch, Ihre Punktzahl mit anderen Organisationen wie Ihrem sicher zu vergleichen.  Weitere Informationen finden Sie unter Übersicht über die [Produktivitäts Bewertung](productivity-score.md).
+Die Produktivitäts Bewertung bietet Einblicke in die digitale Transformationsreise Ihrer Organisation durch die Verwendung von Microsoft 365 und die damit unterstützten Technologie-Erlebnisse.  Die Bewertung Ihrer Organisation reflektiert Personen-und Technologie Erfahrungs Messungen und kann mit Benchmarks von Organisationen vergleichbar mit Ihnen verglichen werden. Weitere Informationen finden Sie in der [Übersicht über die Produktivitäts Bewertung](productivity-score.md).
 
-Ihre Privatsphäre ist uns wichtig. Informationen zum Schutz Ihrer Privatsphäre finden Sie in [der Datenschutzerklärung von Microsoft](https://privacy.microsoft.com/privacystatement). Das Produktivitäts Ergebnis bietet wichtige Informationen darüber, wie Personen in ihren Organisationen mit Steuerelementen zusammenarbeiten, um sicherzustellen, dass die Informationen Action fähig sind, ohne dabei die von Ihnen in Microsoft gegebene Vertrauensstellung zu gefährden.
+Ihr Datenschutz ist für Microsoft wichtig. Informationen zum Schutz Ihrer Privatsphäre finden Sie in [der Datenschutzerklärung von Microsoft](https://privacy.microsoft.com/privacystatement). Das Produktivitäts Ergebnis ermöglicht Ihnen als IT-Administrator Ihrer Organisation den Zugriff auf Datenschutzeinstellungen, um sicherzustellen, dass alle von Ihnen eingegebenen Produktivitäts Bewertungsinformationen für Aktionen aktiviert werden, ohne dass die Vertrauensstellung Ihrer Organisation in Microsoft beeinträchtigt wird.
 
-Im Bereich "People Experiences" stehen Metriken auf Organisationsebene zur Verfügung und enthalten alle Benutzer in Ihrem Microsoft 365-Mandanten. In diesem Bereich wird die Verwendung von Microsoft 365 untersucht, indem die Kategorien der Inhalts Zusammenarbeit, Mobilität, Besprechungen, Teamarbeit und Kommunikation betrachtet werden. Um Ihnen die Schulung und Sensibilisierung für die richtigen Personen zu erleichtern, die möglicherweise Unterstützung für unsere Produkte benötigen, haben wir Ihnen auch Informationen auf der individuellen Ebene bereitgestellt. Während wir diesen Grad an Transparenz bieten, ermöglichen wir Ihnen auch verschiedene Ebenen von Steuerelementen, die Sie bei der Erfüllung ihrer internen Anforderungen an die Datenschutzrichtlinie unterstützen.
-Die folgenden Steuerelemente bieten Ihnen Folgendes:
+Im Bereich "People Experiences" sind Metriken nur auf Organisationsebene verfügbar. In diesem Bereich wird die Verwendung von Microsoft 365 untersucht, indem die Kategorien der Inhalts Zusammenarbeit, Mobilität, Besprechungen, Teamarbeit und Kommunikation betrachtet werden. Wir ermöglichen Ihnen verschiedene Ebenen von Steuerelementen, die Sie bei der Erfüllung ihrer internen Anforderungen an die Datenschutzrichtlinie unterstützen.
+Die Steuerelemente geben Ihnen Folgendes:
 
 - Flexible Administratorrollen, um zu steuern, wer die Informationen in der Produktivitäts Bewertung sehen kann.
-- Die Möglichkeit, Metriken auf Benutzerebene zu deidentifizieren.
-- Möglichkeit zum Deaktivieren von Personen Erfahrungen.
-- Möglichkeit zum Deaktivieren des Bereichs "People Experiences"
+- Die Möglichkeit, den Bereich "Personen Erlebnisse" zu deaktivieren.
 
 ## <a name="flexible-admin-roles-to-control-who-can-see-the-information-in-productivity-score"></a>Flexible Administratorrollen, um zu steuern, wer die Informationen im Produktivitäts Ergebnis sehen kann
 
-Um das gesamte Produktivitäts Ergebnis anzuzeigen, einschließlich Metriken auf Mandantenebene und benutzerspezifische Details, sollte ihre Rolle eine der folgenden Administratorrollen sein:
+Um das gesamte Produktivitäts Ergebnis anzuzeigen, müssen Sie eine der folgenden Administratorrollen sein:
 
 - Globaler Administrator
 - Exchange-Administratoren
@@ -51,10 +49,11 @@ Um das gesamte Produktivitäts Ergebnis anzuzeigen, einschließlich Metriken auf
 - Teams Administrator
 - Globaler Leser
 - Berichtleseberechtigter
+- Verwendungs Zusammenfassungsberichte-Leser
 
-Weisen Sie jeder Person, die für die Änderungsverwaltung und-Einführung zuständig ist, die Rolle "berichtsleser" zu. Diese Rolle ermöglicht Ihnen den Zugriff auf die vollständige Benutzeroberfläche, einschließlich Metriken auf Mandantenebene und Details auf einzelnen Ebenen.
+Zuweisen der Leserrolle "Berichte" oder "Verwendungs Zusammenfassungsberichte" für alle Benutzer, die für Änderungsverwaltung und-Annahme zuständig sind, jedoch nicht unbedingt als IT-Administrator. Durch diese Rolle erhalten Sie Zugriff auf die vollständige Produktivitäts BEWERTUNGSUMGEBUNG im Microsoft 365 Admin Center.
 
-Der Bericht "Personen Erlebnisse" enthält Details zur Benutzeraktivität für jede Kategorie-Detailseite. Weisen Sie eine benutzerdefinierte Rolle mit dem Namen Verwendungs Zusammenfassungsberichte Leser zu (verfügbar ab 29. Oktober 2020), um den Zugriff auf die aggregierten Metriken der Personen Erfahrungen zu ermöglichen. Diese Rolle muss über PowerShell-Cmdlets zugewiesen werden, bis Sie später in diesem Jahr vom Microsoft Admin Center zugeordnet wird.
+Die Leserrolle Verwendungs Zusammenfassungsberichte muss über PowerShell-Cmdlets zugewiesen werden, bis Sie später in 2020 vom Microsoft 365 Admin Center zugeordnet wird.
 
 So weisen Sie die Leserrolle "Verwendungs Zusammenfassungsberichte" mit PowerShell zu:
 
@@ -71,24 +70,15 @@ Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $u.ObjectId
 
 </br>
 
-:::image type="content" source="../../media/communicationspage.jpg" alt-text="Seite &quot;Kommunikation&quot; in Produktivitäts Berichten.":::
-
-## <a name="de-identification-of-user-level-metrics"></a>Aufheben der Identifizierung von Metriken auf Benutzerebene
-
-Damit die Daten, die für alle Berichte erfasst werden, anonym sind, müssen Sie ein globaler Administrator sein. Mit dieser Aktion werden identifizierbare Informationen wie Benutzer-, Gruppen-und Websitenamen in allen Berichten (einschließlich Produktivitäts Bewertung und Microsoft 365-Nutzung) ausgeblendet.
-
-1. Wechseln Sie im Admin Center zu den **Einstellungen** der   >   **org**-Einstellungen, und wählen Sie unter **Dienste** die Registerkarte **Berichte** aus.
-2. Wählen Sie  **Berichte** aus, und wählen Sie dann aus, um  **Anonyme Bezeichner für Benutzer-, Gruppen-und Websitenamen in Produktivitäts Bewertung und Nutzungsberichten anzuzeigen**. Diese Einstellung wird sowohl auf die Verwendungsberichte als auch auf die Vorlagen-App angewendet.
-3. Wählen Sie  **Save Changes** aus.
-
-:::image type="content" source="../../media/orgsettings_anonymous.jpg" alt-text="Benutzerinformationen anonym für Berichte erstellen.":::
 
 ## <a name="capability-to-opt-out-of-people-experiences"></a>Möglichkeit zum Deaktivieren von Personen Erfahrungen
 
-Wenn die Produktivitäts Bewertung allgemein verfügbar ist, können Sie auch den Bereich mit den Personen Erfahrungen mit der Produktivitäts Bewertung deaktivieren. Wenn Sie sich entscheiden, kann niemand aus der Organisation diese Metriken anzeigen, und Ihre Organisation wird aus allen Berechnungen entfernt, die Kommunikation, Besprechungen, Zusammenarbeit, Inhalts Zusammenarbeit und Mobilität beinhalten.
+Sie können auch den Bereich mit den Personen Erlebnissen der Produktivitäts Bewertung deaktivieren. Wenn Sie sich entschließen, kann niemand aus Ihrer Organisation diese Metriken anzeigen, und Ihre Organisation wird aus allen Berechnungen entfernt, die Kommunikation, Besprechungen, Zusammenarbeit, Inhalts Zusammenarbeit und Mobilität beinhalten.
 
-1. Wechseln Sie im Admin Center zu den **Einstellungen** der   >   **org**-Einstellungen, und wählen Sie unter **Dienste** die Registerkarte **Berichte** aus.
-2. Wählen Sie  **Berichte** aus, und aktivieren Sie dann das Kontrollkästchen  **zulassen, dass Microsoft 365-Verwendungsdaten für personenbezogene Einblicke verwendet werden**. Um zu erfahren, wie Sie die Einstellungen für die Datenfreigabe für die Endpunktanalyse im InTune-Konfigurations-Manager ändern, klicken Sie auf weitere **Informationen**.
-3. Wählen Sie  **Save Changes** aus.
+So wählen Sie Put:
 
-:::image type="content" source="../../media/orgsettingspageoptout.jpg" alt-text="Seite &quot;org-Einstellungen&quot;, auf der Sie sich von Personen Erfahrungen abmelden können.":::
+1. Wechseln Sie im Admin Center zu den **Einstellungen** der   >   **org**-Einstellungen, und wählen Sie unter **Dienste** die Option **Berichte** aus.
+2. Deaktivieren Sie das Kontrollkästchen zulassen, dass  **Microsoft 365-Nutzungsdaten für personenbezogene Einblicke verwendet werden**. Wenn Sie wissen möchten, wie Sie die Einstellungen für die Datenfreigabe für die Endpunktanalyse im InTune-Konfigurations-Manager ändern, wählen Sie **Weitere Informationen** aus.
+3. Wählen Sie  **Speichern** aus.
+
+:::image type="content" source="../../media/orgsettingspageoptout.png" alt-text="Seite &quot;org-Einstellungen&quot;, auf der Sie sich von Personen Erfahrungen abmelden können.":::

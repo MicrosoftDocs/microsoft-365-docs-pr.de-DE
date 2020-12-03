@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: Erfahren Sie, wie Sie Änderungen an Ihrem Organisationsprofil, beispielsweise Bezeichnung der Organisation, Adresse, Telefonnummer, technischer Kontakt und E-Mail-Adresse vornehmen können.
-ms.openlocfilehash: 17202bb35e6d5e7d40b135f65467aef111aad070
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 19769c827284000e1ad0e86e3666d9980322b6a9
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645107"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49560853"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Ändern der Adresse, des technischen Kontakts und anderer Informationen Ihrer Organisation
 
@@ -50,9 +50,9 @@ So ändern Sie weitere Informationen auf der Profilseite Ihres Unternehmens:
   
 1. Wechseln Sie im Admin Center zur Seite **Einstellungen** für \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Organisations**</a> Einstellungen.
 
-2. Wählen Sie auf der Registerkarte **Organisationsprofil** die Option **Organisationsinformationen**aus.
+2. Wählen Sie auf der Registerkarte **Organisationsprofil** die Option **Organisationsinformationen** aus.
 
-3. Aktualisieren Sie die Informationen Ihrer Organisation, und wählen Sie dann **Änderungen speichern**aus.
+3. Aktualisieren Sie die Informationen Ihrer Organisation, und wählen Sie dann **Änderungen speichern** aus.
 
     Nachfolgend finden Sie eine Erläuterung der einzelnen Felder.
 
@@ -73,14 +73,15 @@ Als Administrator können Sie Ihre alternative e-Mail-Adresse für das Zurückse
 
 1. Wechseln Sie zum <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 Admin Center</a>.
 
-2. Wählen Sie in der Kopfzeile Ihr Profilsymbol aus, und wählen Sie dann **mein Konto**aus.
+2. Wählen Sie in der Kopfzeile Ihr Profilsymbol aus, und wählen Sie **Konto anzeigen** aus.
 
-3. Wählen Sie auf der linken Seite **persönliche Informationen**aus.
+3. Wählen Sie auf der linken Seite **Sicherheitsinformationen** aus.
 
-4. Wählen Sie auf der Karte **Kontaktdetails** die Option **Bearbeiten**aus.
+4. Wählen Sie im Abschnitt e-Mail die Option **ändern** aus.
 
-5. Bearbeiten Sie die Adresse im Feld **Alternative e-Mail** , und wählen Sie dann **Speichern**aus.
+5. Bearbeiten Sie die Adresse im Feld **Alternative e-Mail** , und wählen Sie dann **weiter** aus.
 
+6. Geben Sie den Code an die Alternative e-Mail-Adresse an, und wählen Sie **OK** aus, um die Änderung zu überprüfen.
 Informationen zum Ändern anderer Profilinformationen finden Sie unter [Ändern der Kontakteinstellungen](change-contact-preferences.md) oder [Ändern der Anzeigesprache](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b.aspx).
   
 ### <a name="email-signatures"></a>E-Mail-Signaturen

@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Weitere allgemeine Informationen zu Diensten beim Wechsel von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365 Diensten im neuen rechenzentrumsbereich.'
-ms.openlocfilehash: 6fa09165f8aaa68e0f9fc567d96a4e53baaa594e
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 93692200f2519dbc647bb4e81b4bd8c646815858
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551782"
+ms.locfileid: "49558430"
 ---
 # <a name="additional-general-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Weitere allgemeine Informationen für die Migration von Microsoft Cloud Deutschland
 
@@ -49,14 +49,14 @@ Es gibt drei Voraussetzungen für die Aktualisierung Ihrer Anmelde Autorität:
 
 Eine Anwendung kann eine der folgenden sein:
 
-- Einzelseiten-app (Spa)
-- Webanwendung, die Benutzer anmeldet
-- Webanwendung, die WebAPI-Aufrufe
-- Geschützte WebAPI
-- WebAPI, die webapis aufruft
-- Desktop-App
-- Daemon-App
-- Mobile App
+- [Einzelseiten-app (Spa)](https://docs.microsoft.com/azure/active-directory/develop/scenario-spa-overview)
+- [Webanwendung, die Benutzer anmeldet](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-sign-user-overview)
+- [Webanwendung, die WebAPI-Aufrufe](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-call-api-overview)
+- [Geschützte WebAPI](https://docs.microsoft.com/azure/active-directory/develop/scenario-protected-web-api-overview)
+- [WebAPI, die webapis aufruft](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-api-call-api-overview)
+- [Desktop-App](https://docs.microsoft.com/azure/active-directory/develop/scenario-desktop-overview)
+- [Daemon-App](https://docs.microsoft.com/azure/active-directory/develop/scenario-daemon-overview)
+- [Mobile App](https://docs.microsoft.com/azure/active-directory/develop/scenario-mobile-overview)
  
 > [!NOTE] 
 > Wenn eine Anwendung zur Verwendung `login.microsoftonline.com` als ihre Autorität wechselt, werden die Token von dieser neuen Autorität signiert. Wenn Sie Ressourcen Anwendungen hosten, die von anderen apps aufgerufen werden, müssen Sie die Überprüfung nach Laschen Tokens zulassen. Dies bedeutet, dass Ihre APP Token zulassen muss, die sowohl von der Azure AD Deutschland als auch von Azure AD öffentlichen Clouds signiert sind. Diese Lax-Tokenprüfung wird benötigt, bis alle Clientanwendungen, die ihren Dienst aufrufen, vollständig in die Azure AD öffentliche Cloud migriert werden. Nach der Migration muss die Ressourcen Anwendung nur Token akzeptieren, die von der Azure AD öffentlichen Cloud signiert wurden.
@@ -76,10 +76,10 @@ Eine Anwendung kann eine der folgenden sein:
 
 5. Aktualisieren von Umgebungsparametern `AzurePublic` (anstelle von `AzureGermany` ) in Verwaltungstools und Skripts für:
 
-    - Azure PowerShell
-    - Azure AD PowerShell (MSOnline)
-    - Azure AD PowerShell (AzureAD)
-    - Azure-CLI
+    - [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.8.0&viewFallbackFrom=azurermps-5.6.0)
+    - [Azure AD PowerShell (MSOnline)](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0)
+    - [Azure AD PowerShell (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0)
+    - [Azure-CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)
  
 **Was ist mit Anwendungen, die ich veröffentliche?**
 

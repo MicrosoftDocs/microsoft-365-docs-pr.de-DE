@@ -82,7 +82,7 @@
           href: get-started/access-admin-portal.md
         - name: Hinzufügen und Überprüfen von Administrator-Kontakten im Administratorportal
           href: get-started/add-admin-contacts.md
-        - name: Bedingten Zugriff anpassen
+        - name: Anpassen der Einstellungen nach der Registrierung
           href: get-started/conditional-access.md
         - name: Lizenzen zuweisen
           href: get-started/assign-licenses.md
