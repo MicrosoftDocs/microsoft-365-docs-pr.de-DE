@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: ''
 description: Legen Sie fest, dass sich Ihre Benutzer über mehrstufige Authentifizierung (MFA) und andere Features sicher anmelden müssen.
-ms.openlocfilehash: a3a63dfc06f5470c2151cd2ff140ad5dee19b0ce
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 8426d902ff8be8541b5d770af6d34cdf71868047
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446077"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558526"
 ---
 # <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>Sichere Benutzeranmeldungen beim Microsoft 365-Mandanten
 
@@ -52,7 +52,7 @@ MFA erfordert, dass Nutzeranmeldungen einer zusätzlichen Überprüfung unterzog
 
 ![Das richtige Kennwort und eine zusätzliche Überprüfungsergebnisse bei einer erfolgreichen Anmeldung](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
 
-Der erste Schritt bei der Verwendung von MFA besteht darin, sie ***für alle Administratorkonten als erforderlich festzulegen*** (diese Konten werden auch als privilegierte Konten bezeichnet).
+Der erste Schritt bei der Verwendung von MFA besteht darin, sie ***für alle Administratorkonten als erforderlich festzulegen** _ (diese Konten werden auch als privilegierte Konten bezeichnet).
 
 Über diesen ersten Schritt hinaus empfiehlt Microsoft, die mehrstufige Authentifizierung für alle Benutzer vorzugeben.
 
@@ -67,7 +67,7 @@ Basierend auf Ihrem Microsoft 365-Plan gibt es drei Möglichkeiten, von Ihren Ad
 
 ### <a name="security-defaults"></a>Sicherheitsstandards
 
-Die Sicherheitsstandards sind eine neue Funktion für kostenpflichtige Microsoft 365- und Office 365- oder Testabonnements, die nach dem 21. Oktober 2019 erstellt wurden. Bei diesen Abonnements sind die Sicherheitsstandards aktiviert, sodass ***alle Nutzer MFA mit der Microsoft Authenticator-App verwenden müssen***.
+Die Sicherheitsstandards sind eine neue Funktion für kostenpflichtige Microsoft 365- und Office 365- oder Testabonnements, die nach dem 21. Oktober 2019 erstellt wurden. Bei diesen Abonnements sind die Sicherheitsstandards aktiviert, sodass _*_alle Nutzer MFA mit der Microsoft Authenticator-App verwenden müssen_*_.
  
 Nutzer haben 14 Tage Zeit, sich mit ihrem Smartphone mit der Microsoft Authenticator-App für MFA zu registrieren. Dies beginnt mit der ersten Anmeldung, nachdem die Sicherheitsstandards aktiviert wurden. Nach Ablauf von 14 Tagen kann sich der Nutzer erst nach Abschluss der MFA-Registrierung anmelden.
 
@@ -102,7 +102,7 @@ Diese Tabelle zeigt die Ergebnisse der Aktivierung von MFA mit Sicherheitsstanda
 
 | Methode | Aktiviert | Deaktiviert | Zusätzliche Authentifizierungsmethode |
 |:-------|:-----|:-------|:-------|
-| **Sicherheitsstandards**  | Richtlinien für bedingten Zugriff können nicht verwendet werden | Richtlinien für den bedingten Zugriff können verwendet werden | Microsoft Authenticator-App |
+| _ *Sicherheitsstandards**  | Richtlinien für bedingten Zugriff können nicht verwendet werden | Richtlinien für den bedingten Zugriff können verwendet werden | Microsoft Authenticator-App |
 | **Richtlinien für bedingten Zugriff** | Wenn welche aktiviert sind, können Sie die Sicherheitsstandards nicht aktivieren | Wenn alle deaktiviert sind, können Sie die Sicherheitsstandards aktivieren  | Werden vom Benutzer während der MFA-Registrierung festgelegt  |
 ||||
 
@@ -133,7 +133,7 @@ Mit Azure AD Identity Protection können Sie Folgendes:
 |Funktion|Beschreibung|
 |:---------|:---------|
 | Ermitteln und Beseitigen potenzieller Anfälligkeiten für Identitätsverletzungen in Ihrer Organisation | Azure AD verwendet das maschinelle Lernen, um Anomalien und verdächtige Aktivitäten wie Anmeldeaktivitäten und Aktivitäten nachdem Anmelden zu erkennen. Anhand dieser Daten generiert Azure AD Identity Protection Berichte und Warnungen, mit denen Sie die Probleme bewerten und entsprechende Maßnahmen ergreifen können.|
-|Erkennen verdächtiger Aktionen, die im Zusammenhang mit Identitäten in Ihrer Organisation stehen, und automatisches Reagieren auf diese|Sie können risikobasierte Richtlinien konfigurieren, die automatisch auf erkannte Probleme reagieren, wenn eine angegebene Risikostufe erreicht wurde. Zusätzlich zu anderen Kontrollelementen für den bedingten Zugriff von Azure AD und Microsoft Intune können mithilfe dieser Richtlinien entweder Zugriffsversuche automatisch blockiert oder Korrekturmaßnahmen ergriffen werden. Hierzu gehören Kennwortzurücksetzungen und die Anforderung der mehrstufigen Azure-Authentifizierung für nachfolgende Anmeldeversuche. |
+|Erkennen verdächtiger Aktionen, die im Zusammenhang mit Identitäten in Ihrer Organisation stehen, und automatisches Reagieren auf diese|Sie können risikobasierte Richtlinien konfigurieren, die automatisch auf erkannte Probleme reagieren, wenn eine angegebene Risikostufe erreicht wurde. Zusätzlich zu anderen Kontrollelementen für den bedingten Zugriff von Azure AD und Microsoft Intune können mithilfe dieser Richtlinien entweder Zugriffsversuche automatisch blockiert oder Korrekturmaßnahmen ergriffen werden. Hierzu gehören Kennwortzurücksetzungen und die Anforderung von Azure AD Multi-Factor Authentication für nachfolgende Anmeldeversuche. |
 | Untersuchen verdächtiger Vorfälle und Beseitigen mit Verwaltungsaufgaben | Sie können Risikoereignisse anhand von Informationen zu dem Sicherheitsvorfall untersuchen. Es stehen grundlegende Workflows zur Nachverfolgung von Untersuchungen und Initiierung von Korrekturmaßnahmen wie das Zurücksetzen von Kennwörtern zur Verfügung. |
 |||
 
@@ -146,7 +146,7 @@ Siehe [Schritte zum Aktivieren von Azure AD Identity Protection](https://docs.mi
 - [MFA für Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md)
 - [Identitäts-Roadmap für Microsoft 365](identity-roadmap-microsoft-365.md)
 - [Azure Academy Azure AD-Schulungsvideos](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
-- [Konfigurieren Sie die Registrierungsrichtlinie für die Azure-Multi-Faktor-Authentifizierung](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
+- [Konfigurieren der Registrierungsrichtlinie für Azure AD Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
 - [Konfigurationen für den Identitäts- und Gerätezugriff](../security/office-365-security/microsoft-365-policies-configurations.md)
 
 ## <a name="next-step"></a>Nächster Schritt

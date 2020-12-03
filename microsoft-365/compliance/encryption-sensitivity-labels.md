@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Konfigurieren Sie Vertraulichkeitsbezeichnungen für die Verschlüsselung, die Ihre Daten durch Einschränken von Zugriff und Nutzung schützt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3856b92126d660ed0cdbfd1280d778ac9f072424
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: b862cbffcc4268876444618f7c2708c04b63630e
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446156"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561716"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Einschränken des Zugriffs auf Inhalte mithilfe von Vertraulichkeitsbezeichnungen zur Verschlüsselung
 
@@ -43,15 +43,15 @@ Wenn ein Dokument oder eine E-Mail verschlüsselt ist, wird Zugriff auf den Inha
 Als Administrator können Sie bei der Konfigurierung einer Vertraulichkeitsbezeichnung für die Zwecke der Verschlüsselung eine der folgenden Optionen auswählen:
 
 - **Berechtigungen sofort zuweisen**, um genau zu bestimmen, welche Benutzer welche Berechtigungen für Inhalte mit dieser Bezeichnung erhalten.
-- **Let users assign permissions** when they apply the label to content. This way, you can allow people in your organization some flexibility that they might need to collaborate and get their work done.
+- **Benutzern die Zuweisung von Berechtigungen überlassen**, wenn sie die Bezeichnung auf Inhalte anwenden. Auf diese Weise ermöglichen Sie Personen in Ihrer Organisation eine gewisse Flexibilität, die sie möglicherweise benötigen, um untereinander zusammenarbeiten und ihre Aufgaben erfüllen zu können.
 
 Die Verschlüsselungseinstellungen stehen zur Verfügung, wenn Sie im Microsoft 365 Compliance Center, Microsoft 365 Security Center oder Security & Compliance Center [eine Vertraulichkeitsbezeichnung erstellen](create-sensitivity-labels.md).
 
 ## <a name="understand-how-the-encryption-works"></a>Grundlegendes zur Funktionsweise der Verschlüsselung
 
-Encryption uses the Azure Rights Management service (Azure RMS) from Azure Information Protection. This protection solution uses encryption, identity, and authorization policies. To learn more, see [What is Azure Rights Management?](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) from the Azure Information Protection documentation. 
+Die Verschlüsselung verwendet den Azure Rights Management-Dienst (Azure RMS) aus Azure Information Protection. Diese Schutzlösung verwendet Verschlüsselungs-, Identitäts- und Autorisierungsrichtlinien. Weitere Informationen hierzu finden Sie unter [Was ist Azure Rights Management?](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) in der Dokumentation zum Azure Information Protection. 
 
-When you use this encryption solution, the **super user** feature ensures that authorized people and services can always read and inspect the data that has been encrypted for your organization. If necessary, the encryption can then be removed or changed. For more information, see [Configuring super users for Azure Information Protection and discovery services or data recovery](https://docs.microsoft.com/azure/information-protection/configure-super-users).
+Wenn Sie diese Verschlüsselungslösung verwenden, wird mit der Funktion **Administrator** sichergestellt, dass autorisierte Personen und Dienste die Daten, die für Ihre Organisation verschlüsselt wurden, immer lesen und überprüfen können. Bei Bedarf kann die Verschlüsselung darauf entfernt oder geändert werden. Weitere Informationen hierzu finden Sie unter [Konfigurieren von Administratoren für Azure Dienste zur Informationssicherung und -Recherche oder Datenwiederherstellung](https://docs.microsoft.com/azure/information-protection/configure-super-users).
 
 ## <a name="how-to-configure-a-label-for-encryption"></a>Konfigurieren einer Bezeichnung für die Verschlüsselung
 
@@ -59,7 +59,7 @@ When you use this encryption solution, the **super user** feature ensures that a
     
     ![Bereichsoptionen bei Vertraulichkeitsbezeichnungen für Dateien und E-Mails](../media/filesandemails-scope-options-sensitivity-label.png)
 
-2. Stellen Sie dann auf der Seite **Schutzeinstellungen für Dateien und E-Mails auswählen** sicher, dass Sie**Dateien und E-Mails verschlüsseln** auswählen.
+2. Stellen Sie dann auf der Seite **Schutzeinstellungen für Dateien und E-Mails auswählen** sicher, dass Sie **Dateien und E-Mails verschlüsseln** auswählen.
     
     ![Schutzoptionen bei Vertraulichkeitsbezeichnungen für Dateien und E-Mails](../media/protection-options-sensitivity-label.png)
 
@@ -85,7 +85,7 @@ Allerdings ist der Inhalt möglicherweise bereits verschlüsselt. Ein anderer Be
 
 In der folgenden Tabelle wird dargestellt, was mit einer vorhandenen Verschlüsselung geschieht, wenn eine Vertraulichkeitsbezeichnung auf diese Inhalte angewendet wird:
 
-| |**Verschlüsselung: nicht ausgewählt**|**Verschlüsselung: konfiguriert**|**Verschlüsselung: Entfernen**|
+| | Verschlüsselung: nicht ausgewählt | Verschlüsselung: konfiguriert | Verschlüsselung: Entfernen |
 |:-----|:-----|:-----|:-----|
 |**Von einem Benutzer festgelegte Berechtigungen**|Die ursprüngliche Verschlüsselung bleibt erhalten|Es wird keine neue Verschlüsselung mit Bezeichnung angewendet|Die ursprüngliche Verschlüsselung wird entfernt|
 |**Schutzvorlage**|Die ursprüngliche Verschlüsselung bleibt erhalten|Es wird keine neue Verschlüsselung mit Bezeichnung angewendet|Die ursprüngliche Verschlüsselung wird entfernt|
@@ -274,9 +274,9 @@ So können Die Benutzer mithilfe des Azure Information Protection-Clients mit ei
 
 Bei der integrierten Bezeichnung sehen die Benutzer dasselbe Dialogfeld, wenn Sie Folgendes auswählen:
 
-- Windows: Registerkarte **"Datei"** > **Info** > **Dokument schützen** > **Zugriff einschränken** > **Eingeschränkter Zugriff**
+- Windows: Registerkarte **Datei** > **Info** > **Dokument schützen** > **Zugriff einschränken** > **Eingeschränkter Zugriff**
 
-- MacOS: Registerkarte **Überprüfen** > **Schutz** > **Berechtigungen** > **eingeschränkter Zugriff**
+- macOS: Registerkarte **Überprüfen** > **Schutz** > **Berechtigungen** > **Eingeschränkter Zugriff**
 
 ## <a name="example-configurations-for-the-encryption-settings"></a>Beispielkonfigurationen für die Verschlüsselungseinstellungen
 
@@ -354,7 +354,7 @@ Verwenden Sie diese Konfiguration nur, wenn Sie nicht einschränken müssen, wer
 
 3. Wählen Sie **Berechtigungen zuweisen** aus.
 
-4. Wählen Sie im Bereich **Berechtigungen zuweisen**die Option **Alle authentifizierten Benutzer hinzufügen** aus.
+4. Wählen Sie im Bereich **Berechtigungen zuweisen** die Option **Alle authentifizierten Benutzer hinzufügen** aus.
 
     **Benutzer und Gruppen** werden **Authentifizierte Benutzer** automatisch hinzugefügt. Sie können diesen Wert nicht ändern, sondern nur löschen, wodurch die Auswahl **Alle authentifizierten Benutzer hinzufügen** aufgehoben wird.
 
@@ -383,9 +383,11 @@ Durch die Verschlüsselung Ihrer sensibelsten Dokumente und E-Mails können Sie 
 
 - Die Funktion [Automatisches Speichern](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) in Office-Apps (Windows-, Mac-, Android-und IOS) ist für verschlüsselte Dateien deaktiviert. Benutzern wird eine Meldung angezeigt, dass die Datei eingeschränkte Berechtigungen hat, die entfernt werden müssen, bevor das automatische Speichern aktiviert werden kann.
 
-- Das Öffnen verschlüsselter Dateien in Office-Anwendungen (Windows, Mac, Android und iOS) kann länger dauern.
+- Das Öffnen verschlüsselter Dateien in Office-Apps (Windows, Mac, Android und iOS) kann länger dauern.
 
-- Die folgenden Aktionen für verschlüsselte Dateien werden von Office-Apps (Windows, Mac, Android und IOS) nicht unterstützt und Benutzern wird eine Fehlermeldung angezeigt, dass etwas schief gelaufen ist. Allerdings kann die SharePoint-Funktionalität als Alternative verwendet werden:
+- Wenn beim [Auschecken des Dokuments in SharePoint](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de) mithilfe einer Office-App eine Bezeichnung hinzugefügt wird, die Verschlüsselung anwendet, und der Benutzer dann das Auschecken verwirft, bleibt das Dokument mit der Bezeichnung versehen und wird verschlüsselt.
+
+- Die folgenden Aktionen für verschlüsselte Dateien werden von Office-Apps (Windows, Mac, Android und iOS) nicht unterstützt und Benutzern wird eine Fehlermeldung angezeigt, dass etwas schief gelaufen ist. Allerdings kann die SharePoint-Funktionalität als Alternative verwendet werden:
 
   - Anzeigen, wiederherstellen und speichern von Kopien früherer Versionen. Alternativ können Benutzer diese Aktionen mit Office im Web durchführen, wenn sie Folgendes verwenden: [Aktivieren und Konfigurieren der Versionsverwaltung für eine Liste oder Bibliothek](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37).
   - Ändern des Namens oder des Speicherorts der Dateien. Alternativ können Benutzer in SharePoint [eine Datei, einen Ordner oder einen Link in einer Dokumentbibliothek umbenennen](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185).

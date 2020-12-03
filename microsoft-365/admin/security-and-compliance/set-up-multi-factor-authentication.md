@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Hier erfahren Sie, wie Sie die Multi-Faktor-Authentifizierung für Ihre Organisation einrichten.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 1bbca8efe09655195605f0610f92c8f66486b940
-ms.sourcegitcommit: 09518b7c9146cda7fd42839ee644ad418d48491a
+ms.openlocfilehash: db858cbd4242a096261942fd12b911ecff43f71f
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49001501"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558210"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Einrichten der mehrstufigen Authentifizierung
 
@@ -42,7 +42,7 @@ Ihre Kenntnis der [Multi-Faktor-Authentifizierung (MFA) und deren Unterstützung
 - Sie müssen globaler Administrator sein, um MFA zu verwalten. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../add-users/about-admin-roles.md).
 - Wenn Sie das veraltete MFA auf Benutzerbasis aktiviert haben, [deaktivieren Sie die Legacy-MFA auf Benutzerbasis](#turn-off-legacy-per-user-mfa).
 - Wenn Office 2013-Clients auf Windows-Geräten installiert sind, [aktivieren Sie die moderne Authentifizierung für Office 2013-Clients](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication).
-- Erweitert: Wenn Verzeichnisdienste von Drittanbietern mit Active Directory Federation Services (AD FS) genutzt werden, richten Sie den Azure MFA-Server ein. Weitere Informationen finden Sie unter [Erweiterte Szenarien mit Azure Multi-Faktor-Authentifizierung und VPN-Lösungen von Drittanbietern](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn).
+- Erweitert: Wenn Verzeichnisdienste von Drittanbietern mit Active Directory Federation Services (AD FS) genutzt werden, richten Sie den Azure MFA-Server ein. Weitere Informationen finden Sie unter [Erweiterte Szenarien mit Azure AD Multi-Factor Authentication und VPN-Lösungen von Drittanbietern](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn).
 
 ## <a name="turn-security-defaults-on-or-off"></a>Aktivieren oder Deaktivieren von Sicherheitsstandards
 
@@ -56,7 +56,7 @@ Die Standardsicherheitseinstellungen können Sie im Azure-Portal im Bereich **Ei
 2. Wählen Sie im linken Navigationsbereich **Alle anzeigen** und dann unter **Admin Center** die Option **Azure Active Directory** aus.
 3. Im **Azure Active Directory Admin Center** wählen Sie dann **Azure Active Directory** \> **Eigenschaften** aus.
 4. Wählen Sie unten auf der Seite **Sicherheitsstandards verwalten** aus.
-5. Wählen Sie **Ja** aus, um die zu aktivieren oder **Nein** , um die Sicherheitsstandards zu deaktivieren. Klicken Sie anschließend auf **Speichern**.
+5. Wählen Sie **Ja** aus, um die zu aktivieren oder **Nein**, um die Sicherheitsstandards zu deaktivieren. Klicken Sie anschließend auf **Speichern**.
 
 Wenn Sie bisher [Basisrichtlinien für den bedingten Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection) verwendet haben, werden Sie aufgefordert, diese zu deaktivieren, bevor Sie Sicherheitsstandards nutzen.
 
@@ -64,7 +64,7 @@ Wenn Sie bisher [Basisrichtlinien für den bedingten Zugriff](https://docs.micro
 2. Wählen Sie jede grundlegende Richtlinie aus, die auf **Ein** gesetzt ist und setzen Sie **Richtlinie aktivieren** auf **Aus**.
 3. Wechseln Sie zur Seite [Azure Active Directory – Eigenschaften](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
 4. Wählen Sie unten auf der Seite **Standardsicherheitseinstellungen verwalten** aus.
-5. Wählen Sie **Ja** aus, um die Standardsicherheitseinstellungen zu aktivieren und **Nein** , um die Standardsicherheitseinstellungen zu deaktivieren. Klicken Sie anschließend auf **Speichern**.
+5. Wählen Sie **Ja** aus, um die Standardsicherheitseinstellungen zu aktivieren und **Nein**, um die Standardsicherheitseinstellungen zu deaktivieren. Klicken Sie anschließend auf **Speichern**.
 
 ## <a name="use-conditional-access-policies"></a>Verwenden von Richtlinien für den bedingten Zugriff
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Fordern Sie Ihre Remote-Mitarbeiter auf, sich mit der Mehrstufigen Authentifizierung (MFA) anzumelden.
-ms.openlocfilehash: aa9b122ca18c4d8a8123914ee2d29d41c9ec789e
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 85bac90085b47b5114db875c822d98aa1365cf97
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681456"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558164"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>Schritt 1. Erhöhen Sie die Anmeldesicherheit für Remote-Mitarbeiter mit MFA
 
@@ -43,7 +43,7 @@ Es gibt drei Möglichkeiten, von Ihren Nutzern die Verwendung von MFA basierend 
 
 ## <a name="security-defaults"></a>Sicherheitsstandards
 
-Die Sicherheitsstandards sind eine neue Funktion für kostenpflichtige Microsoft 365- und Office 365- oder Testabonnements, die nach dem 21. Oktober 2019 erstellt wurden. Bei diesen Abonnements sind die Sicherheitsstandards aktiviert, sodass **alle Nutzer MFA mit der Microsoft Authenticator-App verwenden müssen**_.
+Die Sicherheitsstandards sind eine neue Funktion für kostenpflichtige Microsoft 365- und Office 365- oder Testabonnements, die nach dem 21. Oktober 2019 erstellt wurden. Bei diesen Abonnements sind die Sicherheitsstandards aktiviert, sodass **alle Nutzer MFA mit der Microsoft Authenticator-App verwenden müssen** _.
  
 Nutzer haben 14 Tage Zeit, sich mit ihrem Smartphone mit der Microsoft Authenticator-App für MFA zu registrieren. Dies beginnt mit der ersten Anmeldung, nachdem die Sicherheitsstandards aktiviert wurden. Nach Ablauf von 14 Tagen kann sich der Nutzer erst nach Abschluss der MFA-Registrierung anmelden.
 
@@ -75,7 +75,7 @@ Für Azure AD Identity Protection sind Azure AD Premium P2-Lizenzen erforderlich
 
 Weitere Informationen finden Sie unter [Risikoabhängiger bedingter Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk#require-mfa-medium-or-high-sign-in-risk-users).
 
-Mit Azure AD-Identitätsschutz können Sie auch eine Richtlinie erstellen, mit der sich Ihre Benutzer für MFA registrieren müssen. Weitere Informationen finden Sie unter [Konfigurieren der Registrierungsrichtlinie für die Azure-Multi-Faktor-Authentifizierung](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
+Mit Azure AD Identity Protection können Sie auch eine Richtlinie erstellen, mit der sich Ihre Benutzer für MFA registrieren müssen. Weitere Informationen finden Sie unter [Konfigurieren der Registrierungsrichtlinie für Azure AD Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
 
 
 ## <a name="using-these-methods-together"></a>Diese Methoden zusammen verwenden
@@ -91,7 +91,7 @@ Diese Tabelle zeigt die Ergebnisse der Aktivierung von MFA mit Sicherheitsstanda
 
 | Methode | Aktiviert | Deaktiviert | Zusätzliche Authentifizierungsmethode |
 |:-------|:-----|:-------|:-------|
-| _*Sicherheitsstandards**  | Richtlinien für bedingten Zugriff können nicht verwendet werden | Richtlinien für den bedingten Zugriff können verwendet werden | Microsoft Authenticator-App |
+| _ *Sicherheitsstandards**  | Richtlinien für bedingten Zugriff können nicht verwendet werden | Richtlinien für den bedingten Zugriff können verwendet werden | Microsoft Authenticator-App |
 | **Richtlinien für bedingten Zugriff** | Wenn welche aktiviert sind, können Sie die Sicherheitsstandards nicht aktivieren | Wenn alle deaktiviert sind, können Sie die Sicherheitsstandards aktivieren  | Werden vom Benutzer während der MFA-Registrierung festgelegt  |
 ||||
 

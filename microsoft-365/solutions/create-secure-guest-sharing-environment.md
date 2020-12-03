@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Erfahren Sie mehr über die verfügbaren Optionen zum Erstellen einer sicheren Gastfreigabeumgebung in Microsoft 365, die Gastzugriff für eine bessere Zusammenarbeit bietet.
-ms.openlocfilehash: e0b943ce698cc6b93bd250a83b1c94eba406c484
-ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
+ms.openlocfilehash: 4e2045113a6c98e2b3839a3a2cdd83105be94023
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030017"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558188"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Erstellen einer sicheren Gastfreigabeumgebung
 
@@ -59,14 +59,14 @@ So richten Sie die mehrstufige Authentifizierung für Gäste ein
 6. Klicken Sie unter **Zuweisungen** auf **Cloud-Apps oder -Aktionen**.
 7. Wählen Sie auf dem Blatt **Cloud-Apps oder -Aktionen** auf der Registerkarte **Einschließen** die Option **Alle Cloud-Apps** aus.
 8. Klicken Sie unter **Zugriffssteuerung** auf **Gewähren**.
-9. Aktivieren Sie auf dem Blatt **Gewähren** das Kontrollkästchen **Mehrstufige Authentifizierung erforderlich** , und klicken Sie dann auf **Auswählen**.
-10. Klicken Sie auf dem Blatt **Neu** unter **Richtlinie aktivieren** auf **Ein** , und klicken Sie dann auf **Erstellen**.
+9. Aktivieren Sie auf dem Blatt **Gewähren** das Kontrollkästchen **Mehrstufige Authentifizierung erforderlich**, und klicken Sie dann auf **Auswählen**.
+10. Klicken Sie auf dem Blatt **Neu** unter **Richtlinie aktivieren** auf **Ein**, und klicken Sie dann auf **Erstellen**.
 
 Nun müssen sich Gäste über die mehrstufige Authentifizierung anmelden, bevor sie auf freigegebene Inhalte, Websites oder Teams zugreifen können.
 
 ### <a name="more-information"></a>Weitere Informationen
 
-[Planen einer Bereitstellung der mehrstufigen Azure-Authentifizierung](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)
+[Planen einer Bereitstellung von Azure AD Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)
 
 ## <a name="set-up-a-terms-of-use-for-guests"></a>Erstellen von Nutzungsbedingungen für Gäste
 
@@ -100,10 +100,10 @@ So erstellen Sie eine Richtlinie für bedingten Zugriff
 5. Wählen Sie auf dem Blatt **Benutzer und Gruppen** die Option **Benutzer und Gruppen auswählen** aus, aktivieren Sie das Kontrollkästchen **Alle Gäste und externen Benutzer**.
 6. Klicken Sie unter **Zuweisungen** auf **Cloud-Apps oder -Aktionen**.
 7. Wählen Sie auf der Registerkarte **Einschließen** die Option **Apps auswählen** aus, und klicken Sie dann auf **Auswählen**.
-8. Wählen Sie auf dem Blatt **Auswählen** die Optionen **Microsoft Teams** , **Office 365 SharePoint Online** sowie **Outlook-Gruppen** aus, und klicken Sie dann auf **Auswählen**.
+8. Wählen Sie auf dem Blatt **Auswählen** die Optionen **Microsoft Teams**, **Office 365 SharePoint Online** sowie **Outlook-Gruppen** aus, und klicken Sie dann auf **Auswählen**.
 9. Klicken Sie unter **Zugriffssteuerung** auf **Gewähren**.
 10. Wählen Sie auf dem Blatt **Gewähren** die Option **Gast-Nutzungsbedingungen** aus, und klicken Sie dann auf **Auswählen**.
-11. Klicken Sie auf dem Blatt **Neu** unter **Richtlinie aktivieren** auf **Ein** , und klicken Sie dann auf **Erstellen**.
+11. Klicken Sie auf dem Blatt **Neu** unter **Richtlinie aktivieren** auf **Ein**, und klicken Sie dann auf **Erstellen**.
 
 Wenn Gastbenutzer nun das erste Mal versuchen, auf Inhalte, ein Team oder eine Website in Ihrer Organisation zuzugreifen, müssen sie zunächst den Nutzungsbedingungen zustimmen.
 
@@ -141,7 +141,7 @@ So richten Sie eine Gastzugriff-Überprüfung ein
 4. Wählen Sie bei **Häufigkeit** die Option **Vierteljährlich** aus.
 5. Wählen Sie bei **Ende** die Option **Nie** aus.
 6. Wählen Sie bei **Umfang** die Option **Nur Gastbenutzer**.
-7. Klicken Sie auf **Gruppe** , wählen Sie die Gruppen aus, die Sie in die Zugriffsüberprüfung einbeziehen möchten, und klicken Sie dann auf **Auswählen**.
+7. Klicken Sie auf **Gruppe**, wählen Sie die Gruppen aus, die Sie in die Zugriffsüberprüfung einbeziehen möchten, und klicken Sie dann auf **Auswählen**.
 8. Klicken Sie unter **Programme** auf **Mit Programm verknüpfen**.
 9. Wählen Sie auf dem Blatt **Programm auswählen** die Option **Gastzugriff-Überprüfungsprogramm aus**.
 10. Klicken Sie auf **Start**.
@@ -171,22 +171,22 @@ So beschränken Sie den Gastzugriff auf reinen Webzugriff für Gruppen und Teams
 5. Wählen Sie auf dem Blatt **Benutzer und Gruppen** die Option **Benutzer und Gruppen auswählen** aus, aktivieren Sie das Kontrollkästchen **Alle Gäste und externen Benutzer**.
 6. Klicken Sie unter **Zuweisungen** auf **Cloud-Apps oder -Aktionen**.
 7. Wählen Sie auf der Registerkarte **Einschließen** die Option **Apps auswählen** aus, und klicken Sie dann auf **Auswählen**.
-8. Wählen Sie auf dem Blatt **Auswählen** die Optionen **Microsoft Teams** und **Outlook Groups** , und klicken Sie dann auf **Auswählen**.
+8. Wählen Sie auf dem Blatt **Auswählen** die Optionen **Microsoft Teams** und **Outlook Groups**, und klicken Sie dann auf **Auswählen**.
 9. Klicken Sie unter **Zuweisungen** auf **Bedingungen**.
 10. Klicken Sie auf dem Blatt **Bedingungen** auf **Client-Apps**.
-11. Klicken Sie auf dem Blatt **Client-Apps** auf **Ja** bei **Konfigurieren** , und wählen Sie dann die Einstellungen **Mobile Apps und Desktopclients** , **Exchange ActiveSync-Clients** und **Andere Clients** aus. Deaktivieren Sie das Kontrollkästchen **Browser**.
+11. Klicken Sie auf dem Blatt **Client-Apps** auf **Ja** bei **Konfigurieren**, und wählen Sie dann die Einstellungen **Mobile Apps und Desktopclients**, **Exchange ActiveSync-Clients** und **Andere Clients** aus. Deaktivieren Sie das Kontrollkästchen **Browser**.
 
     ![Screenshot der Azure AD-Einstellungen für den bedingten Zugriff für Client-Apps](../media/azure-ad-conditional-access-client-mobile.png)
 
 12. Klicken Sie auf **Fertig**.
 13. Klicken Sie unter **Zugriffssteuerung** auf **Gewähren**.
 14. Wählen Sie auf dem Blatt **Gewähren** die Optionen **Markierung des Geräts als konform erforderlich** und **In Azure AD Hybrid eingebundenes Gerät erforderlich**.
-15. Wählen Sie unter **Für mehrere Steuerelemente** die Option **Eines der ausgewählten Steuerelemente erforderlich** , und klicken Sie dann auf **Auswählen**.
-16. Klicken Sie auf dem Blatt **Neu** unter **Richtlinie aktivieren** auf **Ein** , und klicken Sie dann auf **Erstellen**.
+15. Wählen Sie unter **Für mehrere Steuerelemente** die Option **Eines der ausgewählten Steuerelemente erforderlich**, und klicken Sie dann auf **Auswählen**.
+16. Klicken Sie auf dem Blatt **Neu** unter **Richtlinie aktivieren** auf **Ein**, und klicken Sie dann auf **Erstellen**.
 
 So beschränken Sie den Gastzugriff auf reinen Webzugriff für SharePoint
 
-1. Erweitern Sie im [SharePoint Admin Center](https://admin.microsoft.com/sharepoint) die Option **Richtlinien** , und klicken Sie dann auf **Zugriffssteuerung**.
+1. Erweitern Sie im [SharePoint Admin Center](https://admin.microsoft.com/sharepoint) die Option **Richtlinien**, und klicken Sie dann auf **Zugriffssteuerung**.
 2. Klicken Sie auf **Nicht verwaltete Geräte**.
 3. Wählen Sie die Option **Eingeschränkten, reinen Webzugriff zulassen** aus, und klicken Sie dann auf **Speichern**.
 
@@ -205,11 +205,11 @@ So konfigurieren Sie eine Sitzungstimeout-Richtlinie für Gäste
 5. Wählen Sie auf dem Blatt **Benutzer und Gruppen** die Option **Benutzer und Gruppen auswählen** aus, aktivieren Sie das Kontrollkästchen **Alle Gäste und externen Benutzer**.
 6. Klicken Sie unter **Zuweisungen** auf **Cloud-Apps oder -Aktionen**.
 7. Wählen Sie auf der Registerkarte **Einschließen** die Option **Apps auswählen** aus, und klicken Sie dann auf **Auswählen**.
-8. Wählen Sie auf dem Blatt **Auswählen** die Optionen **Microsoft Teams** , **Office 365 SharePoint Online** sowie **Outlook-Gruppen** aus, und klicken Sie dann auf **Auswählen**.
+8. Wählen Sie auf dem Blatt **Auswählen** die Optionen **Microsoft Teams**, **Office 365 SharePoint Online** sowie **Outlook-Gruppen** aus, und klicken Sie dann auf **Auswählen**.
 9. Klicken Sie unter **Zugriffssteuerung** auf **Sitzung**.
 10. Wählen Sie auf dem Blatt **Sitzung** die Option **Anmeldehäufigkeit** aus.
 11. Wählen Sie **1** und **Tage** für den Zeitraum aus, und klicken Sie dann auf **Auswählen**.
-12. Klicken Sie auf dem Blatt **Neu** unter **Richtlinie aktivieren** auf **Ein** , und klicken Sie dann auf **Erstellen**.
+12. Klicken Sie auf dem Blatt **Neu** unter **Richtlinie aktivieren** auf **Ein**, und klicken Sie dann auf **Erstellen**.
 
 ## <a name="create-a-sensitive-information-type-for-a-highly-sensitive-project"></a>Erstellen Sie einen Typ sensibler Informationen für ein streng vertrauliches Projekt
 
@@ -219,12 +219,12 @@ Sie können benutzerdefinierte vertrauliche Informationstypen erstellen, um für
 
 So erstellen Sie einen vertraulichen Informationstyp
 
-1. Erweitern Sie im [Microsoft 365 Compliance Center](https://compliance.microsoft.com) im linken Navigationsbereich den Eintrag **Klassifizierung** , und klicken Sie dann auf **Vertrauliche Informationstypen**.
+1. Erweitern Sie im [Microsoft 365 Compliance Center](https://compliance.microsoft.com) im linken Navigationsbereich den Eintrag **Klassifizierung**, und klicken Sie dann auf **Vertrauliche Informationstypen**.
 2. Klicken Sie auf **Erstellen**.
 3. Geben Sie unter **Name** und **Beschreibung** den Projektnamen **Projekt Saturn** ein, und klicken Sie auf **Weiter**.
 4. Klicken Sie auf **Element hinzufügen**.
 5. Wählen Sie in der Liste **Inhalt erkennen, der Folgendes enthält** die Option **Schlüsselwörter** aus, und geben Sie in das Schlüsselwortfeld *Projekt Saturn* ein.
-6. Klicken Sie auf **Weiter** , und klicken Sie dann auf **Fertig stellen**.
+6. Klicken Sie auf **Weiter**, und klicken Sie dann auf **Fertig stellen**.
 7. Klicken Sie bei der Frage, ob Sie den vertraulichen Informationstyp testen möchten, auf **Nein**.
 
 ### <a name="more-information"></a>Weitere Informationen
@@ -242,15 +242,15 @@ So erstellen Sie eine neue Richtlinie für die automatische Bezeichnung
 3. Klicken Sie auf der Registerkarte **Automatische Bezeichnung** auf **Richtlinie für die automatischen Bezeichnung erstellen**.
 4. Wählen Sie auf der Seite **Wählen Sie Informationen aus, auf die diese Bezeichnung angewendet werden soll** die Option **Benutzerdefiniert** aus, und klicken Sie auf **Weiter**.
 5. Geben Sie einen Namen und eine Beschreibung für die Richtlinie ein, und klicken Sie auf **Weiter**.
-6. Aktivieren Sie auf der Seite **Speicherorte auswählen, auf die Sie die Bezeichnung angewendet werden soll** , aktivieren Sie **SharePoint-Websites** , und klicken Sie auf **Websites auswählen**.
+6. Aktivieren Sie auf der Seite **Speicherorte auswählen, auf die Sie die Bezeichnung angewendet werden soll**, aktivieren Sie **SharePoint-Websites**, und klicken Sie auf **Websites auswählen**.
 7. Fügen Sie die URLs der Websites hinzu, für die die automatische Bezeichnung aktiviert werden soll, und klicken Sie dann auf **Fertig**.
 8. Klicken Sie auf **Weiter**.
 9. Wählen Sie auf der Seite **Allgemeine oder erweiterte Regeln einrichten** die Option **Allgemeine Regeln** aus, und klicken Sie auf **Weiter**.
 10. Klicken Sie auf der Seite **Regeln für Inhalte in allen Speicherorten definieren** die Option **Neue Regel**.
 11. Weisen Sie auf der Seite **Neue Regel** der Regel einen Namen zu, klicken Sie auf **Bedingung hinzufügen** und dann auf **Inhalt enthält vertrauliche Informationstypen**.
-12. Klicken Sie auf **Hinzufügen** , klicken Sie auf **Typen vertraulicher Informationen** , wählen Sie die zu verwendenden vertraulichen Informationstypen aus, klicken Sie auf **Hinzufügen** und dann auf **Speichern**.
+12. Klicken Sie auf **Hinzufügen**, klicken Sie auf **Typen vertraulicher Informationen**, wählen Sie die zu verwendenden vertraulichen Informationstypen aus, klicken Sie auf **Hinzufügen** und dann auf **Speichern**.
 13. Klicken Sie auf **Weiter**.
-14. Klicken Sie auf **Bezeichnung auswählen** , wählen Sie die zu verwendende Bezeichnung aus, und klicken Sie dann auf **Hinzufügen**.
+14. Klicken Sie auf **Bezeichnung auswählen**, wählen Sie die zu verwendende Bezeichnung aus, und klicken Sie dann auf **Hinzufügen**.
 15. Klicken Sie auf **Weiter**.
 16. Belassen Sie die Richtlinie im Simulationsmodus, und klicken Sie auf **Weiter**.
 17. Klicken Sie auf **Richtlinie erstellen** und dann auf **Fertig**.
@@ -271,16 +271,16 @@ So erstellen Sie eine DLP-Regel
 2. Klicken Sie auf **Richtlinie erstellen**.
 3. Wählen Sie **Benutzerdefiniert** aus, und klicken Sie auf **Weiter**.
 4. Geben Sie einen Namen für die Richtlinie ein, und klicken Sie auf **Weiter**.
-5. Deaktivieren Sie auf der Seite **Speicherorte, an denen die Richtlinie angewendet werden soll** alle Einstellungen außer **SharePoint-Websites** und **OneDrive-Konten** , und klicken Sie dann auf **Weiter**.
+5. Deaktivieren Sie auf der Seite **Speicherorte, an denen die Richtlinie angewendet werden soll** alle Einstellungen außer **SharePoint-Websites** und **OneDrive-Konten**, und klicken Sie dann auf **Weiter**.
 6. Klicken Sie auf der Seite **Richtlinieneinstellungen definieren** auf **Weiter**.
-7. Klicken Sie auf der Seite **Erweiterte DLP-Regeln anpassen** auf **Regel erstellen** , und geben Sie einen Namen für die Regel ein.
-8. Klicken Sie unter **Bedingungen** auf **Bedingung hinzufügen** , und wählen Sie **Inhalt enthält** aus.
-9. Klicken Sie auf **Hinzufügen** , wählen Sie **Vertraulichkeitsbezeichnungen** und dann die zu verwendenden Bezeichnungen aus, und klicken Sie anschließend auf **Hinzufügen**.
+7. Klicken Sie auf der Seite **Erweiterte DLP-Regeln anpassen** auf **Regel erstellen**, und geben Sie einen Namen für die Regel ein.
+8. Klicken Sie unter **Bedingungen** auf **Bedingung hinzufügen**, und wählen Sie **Inhalt enthält** aus.
+9. Klicken Sie auf **Hinzufügen**, wählen Sie **Vertraulichkeitsbezeichnungen** und dann die zu verwendenden Bezeichnungen aus, und klicken Sie anschließend auf **Hinzufügen**.
 
    ![Screenshot von Bedingungsoptionen, Typen vertraulicher Informationen sowie Vertraulichkeits- und Aufbewahrungsbezeichnungen.](../media/limit-accidental-exposure-dlp-conditions.png)
 
-10. Klicken Sie unter **Aktionen** auf **Aktion hinzufügen** , und wählen Sie **Zugriff auf Inhalte in Microsoft 365-Speicherorten einschränken oder diese verschlüsseln**.
-11. Aktivieren Sie das Kontrollkästchen **Zugriff auf Inhalte in Microsoft 365-Speicherorten einschränken oder diese verschlüsseln** , und wählen Sie dann die Option **Nur Personen außerhalb Ihrer Organisation** aus.
+10. Klicken Sie unter **Aktionen** auf **Aktion hinzufügen**, und wählen Sie **Zugriff auf Inhalte in Microsoft 365-Speicherorten einschränken oder diese verschlüsseln**.
+11. Aktivieren Sie das Kontrollkästchen **Zugriff auf Inhalte in Microsoft 365-Speicherorten einschränken oder diese verschlüsseln**, und wählen Sie dann die Option **Nur Personen außerhalb Ihrer Organisation** aus.
 
       ![Screenshot der Aktionsoptionen für DLP-Regeln](../media/dlp-remove-guest-access-sensitive-files.png)
 
