@@ -195,6 +195,8 @@
       items:
         - name: Integritätsstatus des Microsoft 365-Diensts
           href: microsoft-365-service-health.md
+        - name: Exchange Online-Überwachung
+          href: microsoft-365-exchange-monitoring.md
         - name: Setup-Leitfaden
           href: setup-guides-for-microsoft-365.md
     - name: Mehrere Mandanten
