@@ -1,5 +1,5 @@
 ---
-title: Anzeigen von Berichten für Defender für Office 365
+title: Anzeigen von Defender für Office 365 Berichte im Dashboard "Berichte"
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-office365
 description: Suchen und Verwenden von Berichten für Microsoft Defender für Office 365 im Security & Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5efaef018c78bd161c9cde81af36be92173479ae
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: a237049c9ebbccf1c01feeb21129496e16d437b2
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561727"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572489"
 ---
-# <a name="view-reports-for-microsoft-defender-for-office-365"></a>Anzeigen von Berichten für Microsoft Defender für Office 365
+# <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>Anzeigen von Defender für Office 365 Berichte im Dashboard "Berichte" im Security & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -338,27 +338,16 @@ Zusätzlich zu den in diesem Thema beschriebenen Berichten stehen verschiedene a
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>Welche Berechtigungen sind erforderlich, um den Verteidiger für Office 365 Berichte anzuzeigen?
 
-Damit Sie die in diesem Thema beschriebenen Berichte anzeigen und verwenden können, **müssen Sie sowohl dem Security & Compliance Center als auch dem Exchange Admin Center eine entsprechende Rolle zugewiesen haben**.
+Damit Sie die in diesem Thema beschriebenen Berichte anzeigen und verwenden können, müssen Sie Mitglied einer der folgenden Rollengruppen im Security & Compliance Center sein:
 
-- Für das Security & Compliance Center muss eine der folgenden Rollen zugewiesen sein:
+- **Organisationsverwaltung**
+- **Sicherheits Administrator**
+- **Sicherheits Leser**
+- **Globaler Leser**
 
-  - Organisationsverwaltung
-  - Sicherheits Administrator (Dies kann im Azure Active Directory Admin Center zugewiesen werden ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
-  - Sicherheits Operator (Dies kann im Azure Active Directory Admin Center zugewiesen werden ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
-  - Sicherheitsleseberechtigter
+Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-- Für Exchange Online müssen Sie eine der folgenden Rollen entweder in der Exchange-Verwaltungskonsole ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) oder mit PowerShell-Cmdlets zugewiesen haben (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)):
-
-  - Organisationsverwaltung
-  - Organisationsverwaltung mit Leserechten
-  - Rolle „Empfänger mit Leserechten“
-  - Complianceverwaltung
-
-Weitere Informationen hierzu finden Sie in den folgenden Ressourcen:
-
-- [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)
-
-- [Featureberechtigungen in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
+**Hinweis**: beim Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance Center _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>Was geschieht, wenn die Berichte keine Daten anzeigen?
 

@@ -14,16 +14,19 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 Network Connectivity Test Tool (Vorschau)
-ms.openlocfilehash: 4fc12645ccd6a022e4ef4ebe849ac91ba431129b
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: b29eb29cd390c3febd0992e942cf8ab39f652fb2
+ms.sourcegitcommit: 26c2f01d6f88f6c288b04f9f08062d68dd1e67e1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087079"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49569987"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool-preview"></a>Microsoft 365 Network Connectivity Test Tool (Vorschau)
 
 Das Microsoft 365 Network Connectivity Test Tool befindet sich unter <https://connectivity.office.com> . Es handelt sich um ein außerordentliches Tool für die Netzwerkbewertung und Informationen zum Netzwerk Einblicke, die im Microsoft 365 Admin Center unter **Health | Menü Konnektivität** .
+
+> [!IMPORTANT]
+> Es ist wichtig, sich bei Ihrem Microsoft 365-Mandanten anzumelden, da alle Testberichte für Ihren Administrator freigegeben und während Ihrer Anmeldung an den Mandanten hochgeladen wurden.
 
 ![Connectivity-Test Tool](../media/m365-mac-perf/m365-mac-perf-test-tool-page.png)
 

@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratoren erfahren, wie Sie Standard mäßige und strikte Richtlinieneinstellungen auf die Schutzfunktionen von Exchange Online Protection (EoP) und Microsoft Defender für Office 365 anwenden können.
-ms.openlocfilehash: 38a03727f91878f356d8bc0dc618c711bfc500bb
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: e968f7ea768ac8a0b402c28f3830a52b44afa342
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845732"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572777"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Voreingestellte Sicherheitsrichtlinien in EoP und Microsoft Defender für Office 365
 
@@ -44,40 +44,40 @@ Darüber hinaus ist die Rangfolge wichtig, wenn mehrere vordefinierte Sicherheit
 
 Ein Profil bestimmt den Schutzgrad. Die folgenden Profile sind verfügbar:
 
-- **Standard Schutz** : ein grundlegendes Schutzprofil, das für die meisten Benutzer geeignet ist.
-- **Strenger Schutz** : ein aggressiveres Schutzprofil für ausgewählte Benutzer (hochwertige Ziele oder Prioritäts Benutzer).
+- **Standard Schutz**: ein grundlegendes Schutzprofil, das für die meisten Benutzer geeignet ist.
+- **Strenger Schutz**: ein aggressiveres Schutzprofil für ausgewählte Benutzer (hochwertige Ziele oder Prioritäts Benutzer).
 
 Sie verwenden Regeln mit Bedingungen und Ausnahmen, die bestimmen, auf wen die Profile angewendet werden oder nicht.
 
-Sie können eine Bedingung oder Ausnahme nur einmal verwenden, aber Sie können mehrere Werte für die Bedingung oder Ausnahme angeben. Bei mehreren Werten derselben Bedingung oder Ausnahme wird ODER-Logik verwendet (z. B. _\<recipient1\>_ oder _\<recipient2\>_ ). Bei unterschiedlichen Bedingungen oder Ausnahmen wird UND-Logik verwendet (z. B. _\<recipient1\>_ und _\<member of group 1\>_ ).
+Sie können eine Bedingung oder Ausnahme nur einmal verwenden, aber Sie können mehrere Werte für die Bedingung oder Ausnahme angeben. Bei mehreren Werten derselben Bedingung oder Ausnahme wird ODER-Logik verwendet (z. B. _\<recipient1\>_ oder _\<recipient2\>_). Bei unterschiedlichen Bedingungen oder Ausnahmen wird UND-Logik verwendet (z. B. _\<recipient1\>_ und _\<member of group 1\>_).
 
 Die verfügbaren Bedingungen und Ausnahmen sind:
 
-- **Die Empfänger sind** : Postfächer, e-Mail-Benutzer oder e-Mail-Kontakte in Ihrer Organisation.
-- **Die Empfänger sind Mitglieder von** : Gruppen in Ihrer Organisation.
-- **Die Empfängerdomänen sind** : akzeptierte Domänen, die in Microsoft 365 konfiguriert sind.
+- **Die Empfänger sind**: Postfächer, e-Mail-Benutzer oder e-Mail-Kontakte in Ihrer Organisation.
+- **Die Empfänger sind Mitglieder von**: Gruppen in Ihrer Organisation.
+- **Die Empfängerdomänen sind**: akzeptierte Domänen, die in Microsoft 365 konfiguriert sind.
 
 ### <a name="policies-in-preset-security-policies"></a>Richtlinien in vordefinierten Sicherheitsrichtlinien
 
 Vordefinierte Sicherheitsrichtlinien verwenden die entsprechenden Richtlinien aus den verschiedenen Schutzfeatures in EoP und Microsoft Defender für Office 365. Diese Richtlinien werden erstellt, _nachdem_ Sie den Benutzern die vordefinierten Sicherheitsrichtlinien für **Standard Schutz** oder **strenge Schutz** zugewiesen haben. Diese Richtlinien können nicht geändert werden.
 
-- **Exchange Online Protection (EoP)-Richtlinien** : Dies umfasst Microsoft 365-Organisationen mit Exchange Online Postfächern und eigenständigen EoP-Organisationen ohne Exchange Online Postfächern:
+- **Exchange Online Protection (EoP)-Richtlinien**: Dies umfasst Microsoft 365-Organisationen mit Exchange Online Postfächern und eigenständigen EoP-Organisationen ohne Exchange Online Postfächern:
   
   - [Anti-Spam-Richtlinien](configure-your-spam-filter-policies.md) mit dem Namen " **Standard-vordefinierte Sicherheitsrichtlinie** " und **strenge vordefinierte Sicherheitsrichtlinie**
   - [Antischadsoftware-Richtlinien](configure-anti-malware-policies.md) mit dem Namen " **Standard vordefinierte Sicherheitsrichtlinie** " und **strenge vordefinierte Sicherheitsrichtlinie**
   - [EoP-Anti-Phishing-Richtlinien](set-up-anti-phishing-policies.md#spoof-settings) mit dem Namen " **Standard mäßige Sicherheitsrichtlinie** " und " **strenge vordefinierte Sicherheitsrichtlinie** " (Spoof-Einstellungen).
 
-- **Microsoft Defender für Office 365-Richtlinien** : Dies umfasst Organisationen mit Microsoft 365 E5 oder Defender für Office 365 Add-on-Abonnements:
+- **Microsoft Defender für Office 365-Richtlinien**: Dies umfasst Organisationen mit Microsoft 365 E5 oder Defender für Office 365 Add-on-Abonnements:
 
-  - Anti-Phishing-Richtlinien in Microsoft Defender für Office 365 benannte **Standard mäßige Sicherheitsrichtlinien** und **strenge vordefinierte Sicherheitsrichtlinien** , die Folgendes umfassen:
+  - Anti-Phishing-Richtlinien in Microsoft Defender für Office 365 benannte **Standard mäßige Sicherheitsrichtlinien** und **strenge vordefinierte Sicherheitsrichtlinien**, die Folgendes umfassen:
 
     - Dieselben [spoofeinstellungen](set-up-anti-phishing-policies.md#spoof-settings) , die in den EoP-Richtlinien zum Schutz vor Phishing verfügbar sind.
     - [Einstellungen für Identitätswechsel](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [Erweiterte Phishing-Schwellenwerte](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
-  - [Richtlinien für sichere Links](set-up-atp-safe-links-policies.md) mit dem Namen " **Standard vordefinierte Sicherheitsrichtlinie** und **strenge vordefinierte Sicherheitsrichtlinie** ".
+  - [Richtlinien für sichere Links](set-up-atp-safe-links-policies.md) mit dem Namen " **Standard vordefinierte Sicherheitsrichtlinie** und **strenge vordefinierte Sicherheitsrichtlinie**".
 
-  - [Richtlinien für sichere Anlagen](set-up-atp-safe-attachments-policies.md) mit dem Namen " **Standard mäßige Sicherheitsrichtlinie** und **strenge vordefinierte Sicherheitsrichtlinie** ".
+  - [Richtlinien für sichere Anlagen](set-up-atp-safe-attachments-policies.md) mit dem Namen " **Standard mäßige Sicherheitsrichtlinie** und **strenge vordefinierte Sicherheitsrichtlinie**".
 
 Beachten Sie, dass Sie EoP-Schutz für Office 365 Schutz auf andere Benutzer als Microsoft Defender anwenden können.
 
@@ -104,18 +104,11 @@ Mit anderen Worten: mit den Einstellungen der **strengen Schutz** Richtlinie wer
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Bevor Sie die in diesem Artikel besprochenen Verfahren ausführen können, müssen Ihnen Berechtigungen zugewiesen werden:
+- Sie müssen Berechtigungen zugewiesen haben, bevor Sie die Verfahren in diesem Artikel ausführen können:
 
-  - Um vordefinierte Sicherheitsrichtlinien zu konfigurieren, müssen Sie Mitglied einer der folgenden Rollengruppen sein:
+  - Zum Konfigurieren vordefinierter Sicherheitsrichtlinien müssen Sie Mitglied der Rolle **Organisationsverwaltung** oder **Sicherheits Administrator** im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)sein.
 
-    - **Organisationsverwaltung** oder **Sicherheitsadministrator** im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-    - **Organisationsverwaltung** oder **Nachrichtenschutz** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
-
-  - Für den schreibgeschützten Zugriff auf vordefinierte Sicherheitsrichtlinien müssen Sie Mitglied einer der folgenden Rollengruppen sein:
-
-    - **Security Reader** im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-    - **Globaler Leser** im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-    - **Schreibgeschützte Organisationsverwaltung** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - Für den schreibgeschützten Zugriff auf vordefinierte Sicherheitsrichtlinien müssen Sie Mitglied der Rollengruppe " **globale Leser** " im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)sein.
 
 ### <a name="use-the-security--compliance-center-to-assign-preset-security-policies-to-users"></a>Zuweisen von vordefinierten Sicherheitsrichtlinien zu Benutzern mithilfe des Security & Compliance Centers
 
@@ -125,7 +118,7 @@ Mit anderen Worten: mit den Einstellungen der **strengen Schutz** Richtlinie wer
 
 3. Der Assistent zum **Anwenden von Standard Schutz** oder zum **Anwenden eines strengen Schutzes** wird gestartet. Identifizieren Sie im Abschnitt **EoP-Schutz** für Schritt die internen Empfänger, auf die die [EoP-Schutzmaßnahmen](#policies-in-preset-security-policies) zutreffen:
 
-   1. Klicken Sie auf **Bedingung hinzufügen**. Wählen Sie in der Dropdownliste, die angezeigt wird, eine Bedingung unter **angewendet, wenn** :
+   1. Klicken Sie auf **Bedingung hinzufügen**. Wählen Sie in der Dropdownliste, die angezeigt wird, eine Bedingung unter **angewendet, wenn**:
 
       - **Die Empfänger werden**
       - **Die Empfänger sind Mitglieder von**

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Freigegebene Postfächer werden verwendet, wenn mehrere Personen auf dasselbe Postfach zugreifen müssen. Erfahren Sie, was Sie wissen müssen, bevor Sie ein freigegebenes Postfach erstellen.
-ms.openlocfilehash: d0e0888a71e2a017b3934caa67f8d53ffb787fe7
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: cc94ae30edcc7a8307328230989dc4a883732b0e
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445699"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568294"
 ---
 # <a name="about-shared-mailboxes"></a>Info zu freigegebenen Postfächern
 
@@ -42,7 +42,7 @@ Bevor Sie [ein freigegebenes Postfach erstellen](create-a-shared-mailbox.md), so
 
 - **Externe Benutzer:** Sie können nicht Personen außerhalb Ihres Unternehmens (wie Personen mit einem Gmail-Konto) Zugriff auf Ihr freigegebenes Postfach gewähren. Wenn Sie dies tun möchten, sollten Sie stattdessen eine Gruppe für Outlook erstellen. Weitere Informationen finden Sie unter [Erstellen einer Microsoft 365-Gruppe im Admin Center](../create-groups/create-groups.md).
 
--  **Verwendung mit Outlook:** Zusätzlich zur Verwendung von Outlook im Internet aus Ihrem Browser für den Zugriff auf freigegebene Postfächer können Sie auch die Outlook für IOS-APP oder die Outlook für Android-App verwenden. Weitere Informationen finden Sie unter <a href="https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">Hinzufügen eines freigegebenen Postfachs zu Outlook Mobile</a>. Eine weitere Möglichkeit besteht darin, eine Gruppe für Ihr freigegebenes Postfach zu erstellen. Weitere Informationen hierzu finden Sie unter [Vergleichen von Gruppen](../create-groups/compare-groups.md).  
+- **Verwendung mit Outlook:** Zusätzlich zur Verwendung von Outlook im Internet aus Ihrem Browser für den Zugriff auf freigegebene Postfächer können Sie auch die Outlook für IOS-APP oder die Outlook für Android-App verwenden. Weitere Informationen finden Sie unter [Hinzufügen eines freigegebenen Postfachs zu Outlook Mobile](https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f). Eine weitere Möglichkeit besteht darin, eine Gruppe für Ihr freigegebenes Postfach zu erstellen. Weitere Informationen hierzu finden Sie unter [Vergleichen von Gruppen](../create-groups/compare-groups.md).
 
 - **Verschlüsselung:** Sie können e-Mails, die von einem freigegebenen Postfach gesendet werden, nicht verschlüsseln. Dies liegt daran, dass ein freigegebenes Postfach keinen eigenen Sicherheitskontext (Benutzername/Kennwort) aufweist, sodass ihm kein Schlüssel zugewiesen werden kann. Wenn mehr als eine Person Mitglied ist und Sie e-Mails senden/empfangen, die Sie mit ihren eigenen Schlüsseln verschlüsselt haben, können andere Mitglieder möglicherweise die e-Mails lesen, und andere möglicherweise nicht, je nachdem, mit welchem öffentlichen Schlüssel die e-Mail verschlüsselt wurde.
 

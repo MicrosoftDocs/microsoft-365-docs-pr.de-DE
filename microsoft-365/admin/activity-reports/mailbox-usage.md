@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
 description: Erfahren Sie, wie Sie den Bericht über die Postfachnutzung über die Aktivitäten der Benutzer mit einem Benutzerpostfach informieren.
-ms.openlocfilehash: 988f6e638e01cb5929e2ad9dd74e3d08f8e51c97
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: ee6a39518cc4e73364749d3634710b5d9db868ba
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561459"
+ms.locfileid: "49568270"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>Microsoft 365-Berichte im Admin Center-Postfachnutzung
 
@@ -36,8 +36,8 @@ Der **Bericht zur Postfachnutzung** enthält Informationen zu Benutzern mit eine
 ## <a name="how-to-get-to-the-mailbox-usage-report"></a>So gelangen Sie zum Bericht zur Postfachnutzung
 
 1. Wechseln Sie im Admin Center zur Seite **Berichte** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Verwendung</a>.
-2. Wählen Sie **mehr** unter **aktive Benutzer anzeigen-Microsoft 365-Dienste** aus. 
-3. Wählen Sie in der Dropdownliste **aktive Benutzer** die Option **Exchange** - \> **Postfachnutzung** aus.
+2. Wählen Sie unter **e-Mail-Aktivität** **mehr anzeigen** aus. 
+3. Wählen Sie in der Dropdownliste **e-Mail-Aktivität** die Option **Exchange** - \> **Postfachnutzung** aus.
 
   
 ## <a name="interpret-the-mailbox-usage-report"></a>Interpretieren des Berichts zur Postfachnutzung

@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erstellen Sie eine Kommunikationswebsite für Ihre Kampagne.
-ms.openlocfilehash: 3435ede554c16bb787b87a6ea76e0c41f62b8fe5
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 5bd0dd36188f5ec1d550c9baa875e18debd99528
+ms.sourcegitcommit: 26c2f01d6f88f6c288b04f9f08062d68dd1e67e1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165721"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49569963"
 ---
 # <a name="create-a-communications-site-for-your-campaign"></a>Erstellen einer Kommunikationswebsite für Ihre Kampagne
 
@@ -40,9 +40,9 @@ Fügen Sie die folgenden Elemente auf Ihrer Kommunikationswebsite ein:
 
 1. Hinzufügen Ihres Kampagnenlogos und der Farben als Kopfzeilen Bild und-Design
 2. Führen Sie mit ihrer Strategie, Nachrichten, wichtigen Dokumenten, einem Verzeichnis und häufig gestellten FAQ in einem **Hero-Webpart**.
-3. Fügen Sie eine Kandidaten-Anweisung in das Team in einem **Text Webpart**ein.
+3. Fügen Sie eine Kandidaten-Anweisung in das Team in einem **Text Webpart** ein.
 4. Hinzufügen von Kampagnenereignissen zu einem **Event-Webpart** , damit jeder sehen kann, was kommt.
-5. Fügen Sie Fotos hinzu, die Benutzer in einem **Bildgalerie-Webpart**verwenden oder freigeben können.
+5. Fügen Sie Fotos hinzu, die Benutzer in einem **Bildgalerie-Webpart** verwenden oder freigeben können.
 
 ![Diagramm einer SharePoint-Kommunikationsseite mit Platz für gemeinsame Elemente, die eine Kampagne benötigen würde](../media/m365-democracy-comms-site.png)
 
@@ -51,12 +51,12 @@ Die folgenden Links für PowerPoint und PDF können heruntergeladen und im Tablo
 
 [![Bild für Kommunikationswebsite-InfoGraph](../media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)
 
-[PDF](downloads/M365CampaignsCreateCommunicationSite.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsCreateCommunicationSite.pptx)
+[PDF-Datei](downloads/M365CampaignsCreateCommunicationSite.pdf)  |  [PowerPoint](downloads/M365CampaignsCreateCommunicationSite.pptx)
 
 
 ## <a name="set-it-up"></a>Einrichtung
 
-1. Melden Sie sich https://Office.combei an.
+1. Melden Sie sich bei https://Office.com an.
 2. Wählen Sie in der oberen linken Ecke der Seite das App-Start Symbol aus, und wählen Sie dann die **SharePoint** -Kachel aus. Wenn die **SharePoint** -Kachel nicht angezeigt wird, klicken Sie auf die Kachel " **Websites** " oder " **alle** ", wenn SharePoint nicht sichtbar ist.
 3. Klicken Sie oben auf der SharePoint-Startseite auf **+ Website erstellen** , und wählen Sie die Option **Kommunikationswebsite** aus.
 

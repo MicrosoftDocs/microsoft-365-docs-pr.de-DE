@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratoren können Informationen zu den Nachrichtenfluss Berichten erhalten, die im Dashboard Berichte im Security & Compliance Center verfügbar sind.
 ms.custom: ''
-ms.openlocfilehash: 840b9920fc3f994140702eae0bf5ddbdeac4b465
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 701735374e03f2afb91323ceb4b3fbf30988bdcd
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357923"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572801"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Anzeigen von Nachrichtenfluss Berichten im Dashboard "Berichte" im Security & Compliance Center
 
@@ -138,7 +138,7 @@ Wenn Sie auf **Detailtabelle anzeigen** klicken, hängt die Anzeige der angezeig
   - **Absenderadresse**
   - **Empfängeradresse**
   - **Schweregrad**
-  - **Richtung**
+  - **Direction**
 
 - **Anzeigen von Daten nach: DLP Exchange-Transportregeln**:
 
@@ -149,7 +149,7 @@ Wenn Sie auf **Detailtabelle anzeigen** klicken, hängt die Anzeige der angezeig
   - **Absenderadresse**
   - **Empfängeradresse**
   - **Schweregrad**
-  - **Richtung**
+  - **Direction**
 
 Wenn Sie in einer Detailtabellen Ansicht auf **Filter** klicken, können Sie die Ergebnisse mit den folgenden Filtern ändern:
 
@@ -240,7 +240,7 @@ Sie können diese Filter ändern, indem Sie auf **Filter** klicken oder auf eine
 
 Die Datentabelle enthält die folgenden Informationen:
 
-- **Richtung**
+- **Direction**
 - **Type**
 - **24 Stunden**
 - **3 Tage**
@@ -463,7 +463,7 @@ Wenn Sie auf **Tabelle Details anzeigen** in der Ansicht **aufschlüsseln nach: 
 
 - **Datum (UTC)**
 - **Type**
-- **Richtung**
+- **Direction**
 - **Nachrichtenanzahl**
 
 Wenn Sie in einer Detailtabellen Ansicht auf **Filter** klicken, können Sie die Ergebnisse mit den folgenden Filtern ändern:
@@ -535,19 +535,16 @@ Klicken Sie auf **Bericht anzeigen**, um zur Berichtsansicht zurückzukehren.
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>Welche Berechtigungen sind zum Anzeigen dieser Berichte erforderlich?
 
-Zum Anzeigen und Verwenden der Berichte müssen Sie Mitglied der angegebenen Rollengruppe im Security & Compliance Center **und** in Exchange Online sein.
+Damit Sie die in diesem Thema beschriebenen Berichte anzeigen und verwenden können, müssen Sie Mitglied einer der folgenden Rollengruppen im Security & Compliance Center sein:
 
-- Im Security & Compliance Center müssen Sie Mitglied einer der folgenden Rollengruppen sein:
+- **Organisationsverwaltung**
+- **Sicherheits Administrator**
+- **Sicherheits Leser**
+- **Globaler Leser**
 
-  -Organisationsverwaltung-Sicherheits Administrator (Dies können Sie auch im [Azure Active Directory Admin Center](https://aad.portal.azure.com) – Sicherheits Leser
+Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-  Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-
-- In Exchange Online müssen Sie Mitglied einer der folgenden Rollengruppen sein:
-
-  -Organisationsverwaltung-nur Ansichts Organisationsverwaltung-nur Empfänger – Compliance-Management
-
-Weitere Informationen finden Sie unter [Berechtigungen in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo) und [Verwalten von Rollengruppen in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
+**Hinweis**: beim Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance Center _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 ## <a name="related-topics"></a>Verwandte Themen
 
