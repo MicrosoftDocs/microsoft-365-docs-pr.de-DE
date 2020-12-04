@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie Richtlinien für sichere Anlagen zum Schutz Ihrer Organisation vor bösartigen Dateien in e-Mails definieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ca0bfb7ba91f86fee187cfe3445c0dd6c8d4ad56
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: a14f5a22795fc08b76165466d8e44ee38d8a2d81
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845492"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572638"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Einrichten von Richtlinien für sichere Anlagen in Microsoft Defender für Office 365
 
@@ -39,8 +39,8 @@ Sie können Richtlinien für sichere Anlagen im Security & Compliance Center ode
 
 Die grundlegenden Elemente einer Richtlinie für sichere Anlagen sind:
 
-- **Richtlinie für sichere Anlagen** : gibt die Aktionen für unbekannte Malwareerkennungen an, ob Nachrichten mit Schadsoftware-Anlagen an eine angegebene e-Mail-Adresse gesendet werden sollen und ob Nachrichten übermittelt werden können, wenn die Überprüfung durch sichere Anlagen nicht abgeschlossen werden kann
-- **Die Regel für sichere Anlagen** : gibt die Priorität und die Empfängerfilter (für wen die Richtlinie gilt) an.
+- **Richtlinie für sichere Anlagen**: gibt die Aktionen für unbekannte Malwareerkennungen an, ob Nachrichten mit Schadsoftware-Anlagen an eine angegebene e-Mail-Adresse gesendet werden sollen und ob Nachrichten übermittelt werden können, wenn die Überprüfung durch sichere Anlagen nicht abgeschlossen werden kann
+- **Die Regel für sichere Anlagen**: gibt die Priorität und die Empfängerfilter (für wen die Richtlinie gilt) an.
 
 Der Unterschied zwischen diesen beiden Elementen ist nicht offensichtlich, wenn Sie Richtlinien für sichere Anlagen im Security & Compliance Center verwalten:
 
@@ -59,10 +59,16 @@ In Exchange Online PowerShell oder der eigenständigen EOP PowerShell verwalten 
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Zum Anzeigen, erstellen, ändern und Löschen von Richtlinien für sichere Anlagen müssen Sie Mitglied einer der folgenden Rollengruppen sein:
+- Sie müssen Berechtigungen im Security & Compliance Center zugewiesen werden, bevor Sie die Verfahren in diesem Artikel ausführen können:
+  - Zum Erstellen, ändern und Löschen von Richtlinien für sichere Anlagen müssen Sie Mitglied der Rollengruppen " **Organisationsverwaltung** " oder " **Sicherheits Administrator** " sein.
+  - Für den schreibgeschützten Zugriff auf Richtlinien für sichere Anlagen müssen Sie Mitglied der Rollengruppen " **globaler Leser** " oder " **Sicherheits Leser** " sein.
 
-  - **Organisationsverwaltung** oder **Sicherheitsadministrator** im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-  - **Organisationsverwaltung** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+
+  **Hinweise**:
+
+  - Durch das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance Center _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Die Rollengruppe " **Organisationsverwaltung** " in der Ansicht "nur Leserechten" in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) bietet außerdem schreibgeschützten Zugriff auf das Feature.
 
 - Unsere empfohlenen Einstellungen für Richtlinien zu sicheren Anlagen finden Sie unter [Safe Attachments Settings](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings).
 
@@ -78,41 +84,41 @@ Durch das Erstellen einer benutzerdefinierten Richtlinie für sichere Anlagen im
 
 3. Der Assistent für **neue Richtlinien für sichere Anlagen** wird geöffnet. Konfigurieren Sie auf der Seite **Ihre Richtlinie benennen** die folgenden Einstellungen:
 
-   - **Name** : Geben Sie einen eindeutigen, aussagekräftigen Namen für die Richtlinie ein.
+   - **Name**: Geben Sie einen eindeutigen, aussagekräftigen Namen für die Richtlinie ein.
 
-   - **Beschreibung** : Geben Sie eine optionale Beschreibung für die Richtlinie ein.
+   - **Beschreibung**: Geben Sie eine optionale Beschreibung für die Richtlinie ein.
 
    Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
 
 4. Konfigurieren Sie auf der angezeigten Seite **Einstellungen** die folgenden Einstellungen:
 
-   - **Sichere Anlagen unbekannte Malware Antwort** : Wählen Sie einen der folgenden Werte aus:
+   - **Sichere Anlagen unbekannte Malware Antwort**: Wählen Sie einen der folgenden Werte aus:
 
-     - **Off** : Normalerweise wird dieser Wert nicht empfohlen.
+     - **Off**: Normalerweise wird dieser Wert nicht empfohlen.
      - **Überwachen**
-     - **Block** : Dies ist der Standardwert und der empfohlene Wert in standardmäßigen und streng [voreingestellten Sicherheitsrichtlinien](preset-security-policies.md).
+     - **Block**: Dies ist der Standardwert und der empfohlene Wert in standardmäßigen und streng [voreingestellten Sicherheitsrichtlinien](preset-security-policies.md).
      - **Replace**
      - **Dynamische Zustellung (Vorschau-Feature)**
 
      Diese Werte werden unter [Richtlinieneinstellungen für sichere Anlagen](atp-safe-attachments.md#safe-attachments-policy-settings)erläutert.
 
-   - **Senden Sie die Anlage an die folgende e-Mail-Adresse** : für die Aktionswerte **blockieren** , **überwachen** oder **ersetzen** können Sie die Option **Umleitung aktivieren** auswählen, um Nachrichten mit Schadsoftware-Anlagen zur Analyse und Untersuchung an die angegebene interne oder externe e-Mail-Adresse zu senden.
+   - **Senden Sie die Anlage an die folgende e-Mail-Adresse**: für die Aktionswerte **blockieren**, **überwachen** oder **ersetzen** können Sie die Option **Umleitung aktivieren** auswählen, um Nachrichten mit Schadsoftware-Anlagen zur Analyse und Untersuchung an die angegebene interne oder externe e-Mail-Adresse zu senden.
 
      Die Empfehlung für Standard mäßige und strenge Richtlinieneinstellungen besteht darin, die Umleitung zu aktivieren. Weitere Informationen finden Sie unter [Einstellungen für sichere Anlagen](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings).
 
-   - **Wenden Sie die obige Auswahl an, wenn bei der Malwareüberprüfung für Anlagen ein Timeout auftritt oder ein Fehler auftritt** : die durch **sichere Anlagen unbekannte Schadsoftware-Antwort** angegebene Aktion wird auf Nachrichten angewendet, auch wenn der sichere Anlagen Scan nicht abgeschlossen werden kann. Wählen Sie diese Option immer aus, wenn Sie **aktivierte Umleitung** auswählen. Andernfalls gehen möglicherweise Nachrichten verloren.
+   - **Wenden Sie die obige Auswahl an, wenn bei der Malwareüberprüfung für Anlagen ein Timeout auftritt oder ein Fehler auftritt**: die durch **sichere Anlagen unbekannte Schadsoftware-Antwort** angegebene Aktion wird auf Nachrichten angewendet, auch wenn der sichere Anlagen Scan nicht abgeschlossen werden kann. Wählen Sie diese Option immer aus, wenn Sie **aktivierte Umleitung** auswählen. Andernfalls gehen möglicherweise Nachrichten verloren.
 
    Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
 
 5. Identifizieren Sie auf der Seite **angewendet auf** , die angezeigt wird, die internen Empfänger, auf die die Richtlinie angewendet wird.
 
-   Sie können eine Bedingung oder Ausnahme nur einmal verwenden, aber Sie können mehrere Werte für die Bedingung oder Ausnahme angeben. Bei mehreren Werten derselben Bedingung oder Ausnahme wird ODER-Logik verwendet (z. B. _\<recipient1\>_ oder _\<recipient2\>_ ). Bei unterschiedlichen Bedingungen oder Ausnahmen wird UND-Logik verwendet (z. B. _\<recipient1\>_ und _\<member of group 1\>_ ).
+   Sie können eine Bedingung oder Ausnahme nur einmal verwenden, aber Sie können mehrere Werte für die Bedingung oder Ausnahme angeben. Bei mehreren Werten derselben Bedingung oder Ausnahme wird ODER-Logik verwendet (z. B. _\<recipient1\>_ oder _\<recipient2\>_). Bei unterschiedlichen Bedingungen oder Ausnahmen wird UND-Logik verwendet (z. B. _\<recipient1\>_ und _\<member of group 1\>_).
 
-   Klicken Sie auf **Bedingung hinzufügen**. Wählen Sie in der Dropdownliste, die angezeigt wird, eine Bedingung unter **angewendet, wenn** :
+   Klicken Sie auf **Bedingung hinzufügen**. Wählen Sie in der Dropdownliste, die angezeigt wird, eine Bedingung unter **angewendet, wenn**:
 
-   - **Der Empfänger lautet** : gibt ein oder mehrere Postfächer, e-Mail-Benutzer oder e-Mail-Kontakte in Ihrer Organisation an.
-   - **Der Empfänger ist Mitglied von** : gibt eine oder mehrere Gruppen in Ihrer Organisation an.
-   - **Die Empfängerdomäne ist** : Gibt Empfänger in einer oder mehreren der konfigurierten akzeptierten Domänen in Ihrer Organisation an.
+   - **Der Empfänger lautet**: gibt ein oder mehrere Postfächer, e-Mail-Benutzer oder e-Mail-Kontakte in Ihrer Organisation an.
+   - **Der Empfänger ist Mitglied von**: gibt eine oder mehrere Gruppen in Ihrer Organisation an.
+   - **Die Empfängerdomäne ist**: Gibt Empfänger in einer oder mehreren der konfigurierten akzeptierten Domänen in Ihrer Organisation an.
 
    Nachdem Sie die Bedingung ausgewählt haben, wird eine entsprechende Dropdownliste mit einem **der folgenden** Felder angezeigt.
 
@@ -170,9 +176,9 @@ Weitere Informationen über die Prioritätsreihenfolge und darüber, wie mehrere
 
 Richtlinien für sichere Anlagen werden in der Reihenfolge angezeigt, in der Sie verarbeitet werden (die erste Richtlinie hat den **Prioritäts** Wert 0).
 
-**Hinweis** : im Security & Compliance Center können Sie die Priorität der Richtlinie für sichere Anlagen nur ändern, nachdem Sie Sie erstellt haben. In PowerShell können Sie die Standardpriorität außer Kraft setzen, wenn Sie die Regel für sichere Anlagen erstellen (die sich auf die Priorität vorhandener Regeln auswirken kann).
+**Hinweis**: im Security & Compliance Center können Sie die Priorität der Richtlinie für sichere Anlagen nur ändern, nachdem Sie Sie erstellt haben. In PowerShell können Sie die Standardpriorität außer Kraft setzen, wenn Sie die Regel für sichere Anlagen erstellen (die sich auf die Priorität vorhandener Regeln auswirken kann).
 
-Zum Ändern der Priorität einer Richtlinie verschieben Sie die Richtlinie in der Liste nach oben oder unten (Sie können den **Priorität** -Wert im Security & Compliance Center nicht direkt ändern).
+Zum Ändern der Priorität einer Richtlinie verschieben Sie die Richtlinie in der Liste nach oben oder unten (Sie können den **Priorität**-Wert im Security & Compliance Center nicht direkt ändern).
 
 1. Wechseln Sie im Security & Compliance Center zu **Threat Management** \> **Policy** \> **ATP Safe Attachments**.
 
@@ -182,7 +188,7 @@ Zum Ändern der Priorität einer Richtlinie verschieben Sie die Richtlinie in de
 
    - Für die Richtlinie für sichere Anlagen mit dem **Prioritäts** Wert **0** ist nur die Schaltfläche **Priorität verringern** verfügbar.
 
-   - Die Richtlinie für sichere Anlagen mit dem niedrigsten **Prioritäts** Wert (beispielsweise **3** ) verfügt nur über die Schaltfläche **Priorität verlängern** .
+   - Die Richtlinie für sichere Anlagen mit dem niedrigsten **Prioritäts** Wert (beispielsweise **3**) verfügt nur über die Schaltfläche **Priorität verlängern** .
 
    - Wenn Sie drei oder mehr Richtlinien für sichere Anlagen haben, haben Richtlinien zwischen den Werten der höchsten und der niedrigsten Priorität **sowohl die Prioritätsschaltflächen "Priorität"** als auch " **Priorität verringern** " zur Verfügung.
 
@@ -196,7 +202,7 @@ Zum Ändern der Priorität einer Richtlinie verschieben Sie die Richtlinie in de
 
 2. Wählen Sie auf der Seite **sichere Anlagen** eine Richtlinie aus der Liste aus, und klicken Sie darauf (aktivieren Sie das Kontrollkästchen nicht).
 
-3. Klicken Sie im daraufhin angezeigten Richtliniendetails-Steuerelement auf **Richtlinie löschen** , und klicken Sie dann im angezeigten Warndialogfeld auf **Ja** .
+3. Klicken Sie im daraufhin angezeigten Richtliniendetails-Steuerelement auf **Richtlinie löschen**, und klicken Sie dann im angezeigten Warndialogfeld auf **Ja** .
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies"></a>Verwenden von Exchange Online PowerShell oder eigenständigen EoP PowerShell zum Konfigurieren von Richtlinien für sichere Anlagen
 
@@ -215,13 +221,13 @@ Das Erstellen einer Richtlinie für sichere Anlagen in PowerShell ist ein zweist
 1. Erstellen Sie die Richtlinie für sichere Anlagen.
 2. Erstellen Sie die Regel für sichere Anlagen, die die Richtlinie für sichere Anlagen angibt, auf die die Regel angewendet wird.
 
- **Hinweise** :
+ **Hinweise**:
 
 - Sie können eine neue Regel für sichere Anlagen erstellen und ihr eine vorhandene, nicht zugeordnete Richtlinie für sichere Anlagen zuweisen. Eine Regel für sichere Anlagen kann nicht mehr als einer Richtlinie für sichere Anlagen zugeordnet werden.
 
 - Sie können die folgenden Einstellungen für neue Richtlinien für sichere Anlagen in PowerShell konfigurieren, die erst nach dem Erstellen der Richtlinie im Security & Compliance Center verfügbar sind:
-  - Erstellen Sie die neue Richtlinie als deaktiviert ( _aktiviert_ im `$false` Cmdlet **New-SafeAttachmentRule** ).
-  - Legen Sie die Priorität der Richtlinie während der Erstellung ( _Priorität_ _\<Number\>_ ) für das Cmdlet **New-SafeAttachmentRule** fest).
+  - Erstellen Sie die neue Richtlinie als deaktiviert (_aktiviert_ im `$false` Cmdlet **New-SafeAttachmentRule** ).
+  - Legen Sie die Priorität der Richtlinie während der Erstellung (_Priorität_ _\<Number\>_ ) für das Cmdlet **New-SafeAttachmentRule** fest).
 
 - Eine neue Richtlinie für sichere Anlagen, die Sie in PowerShell erstellen, ist erst im Security & Compliance Center sichtbar, wenn Sie die Richtlinie einer sicheren Anlage Regel zuweisen.
 
@@ -388,7 +394,7 @@ In diesem Beispiel wird die Priorität der Regel namens „Marketing Department�
 Set-SafeAttachmentRule -Identity "Marketing Department" -Priority 2
 ```
 
-**Hinweis** : Wenn Sie die Priorität einer neuen Regel beim Erstellen festlegen möchten, verwenden Sie stattdessen den Parameter _Priority_ für das Cmdlet **New-SafeAttachmentRule** .
+**Hinweis**: Wenn Sie die Priorität einer neuen Regel beim Erstellen festlegen möchten, verwenden Sie stattdessen den Parameter _Priority_ für das Cmdlet **New-SafeAttachmentRule** .
 
 Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Sets-SafeAttachmentRule](https://docs.microsoft.com/powershell/module/exchange/set-safeattachmentrule).
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Legen Sie die Benutzerberechtigungen und-Rollen von Microsoft Compliance Manager fest, und konfigurieren Sie automatisierte Tests von Aktionen. Verwalten Sie den Benutzerverlauf, und Filtern Sie die Dashboardansicht.
-ms.openlocfilehash: bcb75943df88578b30063d8e35877cb2e3e6250b
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 9a09e12457d39e2f4aab99d3bec68b77c1a3a975
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376556"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572394"
 ---
 # <a name="get-started-with-compliance-manager"></a>Erste Schritte mit Compliance-Manager
 
@@ -72,7 +72,7 @@ Führen Sie die folgenden Schritte aus, um Berechtigungen im Microsoft 365 Compl
 
 8. Wenn Sie mit dem Zuweisen von Benutzern fertig sind, wählen Sie **Fertig** aus, und klicken Sie dann auf **Speichern** und dann auf **Schließen**.
 
-##### <a name="more-about-the-office-365-secruity--compliance-center"></a>Weitere Informationen zum Office 365 secruity & Compliance Center
+##### <a name="more-about-the-office-365-security--compliance-center"></a>Weitere Informationen zum Office 365 Security & Compliance Center
 
 Erfahren Sie mehr über [Berechtigungen im Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
 

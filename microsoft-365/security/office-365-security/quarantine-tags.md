@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: Administratoren erfahren, wie Sie mithilfe von Quarantäne Tags steuern können, welche Benutzer in der Lage sind, ihre unter Quarantäne gestellten Nachrichten zu übernehmen.
-ms.openlocfilehash: e194aabf57a1a105f01d8d34815312d3c2fa153d
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 68f28e2dff3bdeada2685ef6806489f5e57f5daf
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357647"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572669"
 ---
 # <a name="quarantine-tags"></a>Quarantäne-Tags
 
@@ -62,9 +62,7 @@ Sie erstellen und Zuweisen von Quarantäne Tags im Security & Compliance Center 
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Zum Anzeigen, erstellen, ändern oder Entfernen von Quarantäne Tags müssen Sie Mitglied einer der folgenden Rollengruppen sein:
-  - **Organisationsverwaltung** oder **Sicherheitsadministrator** im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-  - **Organisationsverwaltung** oder **Nachrichtenschutz** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+- Zum Anzeigen, erstellen, ändern oder Entfernen von Quarantäne Tags müssen Sie Mitglied der Rolle " **Organisationsverwaltung** " oder " **Sicherheits Administrator** " im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)sein.
 
 ## <a name="step-1-create-quarantine-tags-in-the-security--compliance-center"></a>Schritt 1: Erstellen von Quarantäne Tags im Security & Compliance Center
 
@@ -131,13 +129,13 @@ Die erforderliche Reihenfolge und die Werte für jede einzelne Berechtigung in v
 
 |Berechtigung|Kein Zugriff|Eingeschränkter Zugriff|Vollzugriff|
 |---|:---:|:---:|:---:|
-|PermissionToAllowSender|0|0|1|
-|PermissionToBlockSender|0|1|1|
-|PermissionToDelete|0|1|1|
+|PermissionToAllowSender|0|0|1 |
+|PermissionToBlockSender|0|1 |1 |
+|PermissionToDelete|0|1 |1 |
 |PermissionToDownload<sup>\*</sup>|0|0|0|
-|PermissionToPreview|0|1|1|
-|PermissionToRelease<sup>\*\*</sup>|0|0|1|
-|PermissionToRequestRelease<sup>\*\*</sup>|0|1|0|
+|PermissionToPreview|0|1 |1 |
+|PermissionToRelease<sup>\*\*</sup>|0|0|1 |
+|PermissionToRequestRelease<sup>\*\*</sup>|0|1 |0|
 |PermissionToViewHeader<sup>\*</sup>|0|0|0|
 |Binärer Wert|00000000|01101010|11101100|
 |Zu verwendender Dezimalwert|0|106|236|
@@ -491,7 +489,7 @@ Die **Block Sender** Permission (_PermissionToBlockSender_) steuert den Zugriff 
 
 Weitere Informationen zur Liste blockierter Absender finden Sie unter [Blockieren von Nachrichten von einem Benutzer](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) und [verwenden Exchange Online PowerShell zum Konfigurieren der Sammlung von Listen sicherer Adressen für ein Postfach](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
 
-#### <a name="delete-permission"></a>Löschen
+#### <a name="delete-permission"></a>Berechtigung löschen
 
 Die Berechtigung " **Löschen** " (_PermissionToDelete_) steuert die Möglichkeit der Benutzer, Ihre Nachrichten (Nachrichten, bei denen der Benutzer ein Empfänger ist) aus der Quarantäne zu löschen.
 
