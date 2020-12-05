@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Grundlegende Mobilität und Sicherheit sind Teil der Microsoft 365-Pläne.
-ms.openlocfilehash: 8724b3dccbdb5949190ceda4b804b9f1f2a5d4b2
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 75fef5bd70d7b8926d31b80f16952aa996bc625c
+ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561495"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49580661"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>Auswählen zwischen Basis Mobilität und Sicherheit oder InTune
 
@@ -69,8 +69,7 @@ Mit Microsoft InTune und integrierter grundlegender Mobilität und Sicherheit k�
 |Gerätetypen|Verwalten verschiedener Betriebssystemplattformen und Haupt Verwaltungsmodi-Varianten. |Windows<br/>iOS<br/>Android<br/>Android Samsung Knox<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung Knox<br/>Mac OS, iPad OS|
 |Gerätekompatibilität|Festlegen und Verwalten von Sicherheitsrichtlinien wie PIN-Sperre auf Geräteebene und Erkennung von Jailbreaks. |Einschränkungen auf Android 9-und höher-Geräten. Siehe [Details](capabilities.md). |Ja|
 |Bedingter Zugriff basierend auf der Geräte Konformität |Verhindern, dass nicht konforme Geräte auf Firmen-e-Mails und Daten aus der Cloud zugreifen. |Wird in Windows 10 nicht unterstützt.<br/>Ist auf die Steuerung des Zugriffs auf Exchange Online, SharePoint Online und Outlook limitiert. |Ja |
-|Gerätekonfiguration  |Konfigurieren von Geräteeinstellungen (beispielsweise Deaktivieren der Kamera)|Gerätekompatibilität|Festlegen und Verwalten von Sicherheitsrichtlinien wie PIN-Sperre auf Geräteebene und Erkennung von Jailbreaks. |Einschränkungen auf Android 9-und höher-Geräten. Siehe [Details](capabilities.md). |Ja|
- |Beschränkte Gruppe von Einstellungen. |Ja|
+|Gerätekonfiguration  |Konfigurieren von Geräteeinstellungen (beispielsweise Deaktivieren der Kamera)|Beschränkte Gruppe von Einstellungen.|Ja|Gerätekompatibilität|Festlegen und Verwalten von Sicherheitsrichtlinien wie PIN-Sperre auf Geräteebene und Erkennung von Jailbreaks. |Einschränkungen auf Android 9-und höher-Geräten. Siehe [Details](capabilities.md). |Ja|
 |E-Mail-Profile  |Stellen Sie ein systemeigenes e-Mail-Profil auf dem Gerät. |Ja|Ja|
 |WiFi-profile |Stellen Sie ein systemeigenes WiFi-Profil auf dem Gerät zur Verfügung. |Nein|Ja|
 |VPN-profile |Stellen Sie ein systemeigenes VPN-Profil auf dem Gerät zur Verfügung. |Nein|Ja|

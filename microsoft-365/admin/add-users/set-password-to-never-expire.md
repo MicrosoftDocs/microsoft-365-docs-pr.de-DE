@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: In diesem Artikel erfahren Sie, wie Sie mit Windows PowerShell einzelne Benutzerkennwörter so festlegen, dass Sie nie ablaufen.
-ms.openlocfilehash: 9497dfb5793ddbfc3d6845ec1efba91ad972ea38
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2d60a8312be070d3f56cfef7cfb93e6c5da32991
+ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646655"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49580637"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Festlegen, dass das Kennwort eines einzelnen Benutzers nie abläuft
 
@@ -107,6 +107,9 @@ Run one of the following commands:
     Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies DisablePasswordExpiration
     ```
 
+> [!WARNING]
+> Benutzerkonten, die mit dem `-PasswordPolicies DisablePasswordExpiration` Parameter "still Age" basierend auf dem Attribut konfiguriert wurden `pwdLastSet` . `pwdLastSet`Wenn Sie den Ablauf in ändern `-PasswordPolicies None` , müssen alle Kennwörter mit einer pwdLastSet, die älter als 90 Tage sind, basierend auf dem Attribut geändert werden, wenn die Benutzer sich das nächste Mal anmelden. Diese Änderung kann sich auf eine große Anzahl von Benutzern auswirken.
+
 ### <a name="set-a-password-to-expire"></a>Festlegen eines Kennworts zum ablaufen
 
 Führen Sie einen der folgenden Befehle aus:
@@ -122,9 +125,6 @@ Führen Sie einen der folgenden Befehle aus:
     ```powershell
     Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies None
     ```
-
-> [!WARNING]
-> Benutzerkonten, die mit dem `-PasswordPolicies DisablePasswordExpiration` Parameter "still Age" basierend auf dem `pwdLastSet` Benutzerkonto Attribut konfiguriert wurden. Wenn Sie beispielsweise festlegen, dass Benutzerkennwörter nie ablaufen und dann 90 oder mehr Tage vergehen, verfallen die Kennwörter weiterhin. Basierend auf dem `pwdLastSet` Benutzerkonto Attribut müssen bei Benutzerkonten, die mit dem Parameter konfiguriert sind `-PasswordPolicies None` , alle Kennwörter, die `pwdLastSet` älter als 90 Tage sind, vom Benutzer geändert werden, wenn Sie sich das nächste Mal anmelden. Diese Änderung kann sich auf eine große Anzahl von Benutzern auswirken.
 
 ## <a name="related-content"></a>Verwandte Inhalte
 

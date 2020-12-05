@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie, wie die Contoso Corporation auf die COVID-19-Pandemie reagiert und die Infrastruktur für die Installation und Aktualisierung von Software für Remote-und Onsite-Arbeit entwickelt hat.
-ms.openlocfilehash: 8e25b399d7acd2cb3486283623d29315eac9491e
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: d04b4efcdd4dd04315ad37311cdd2cfbc2e64e88
+ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371761"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49580673"
 ---
 # <a name="contosos-covid-19-response-and-support-for-remote-and-onsite-work"></a>Contosos COVID-19-Antwort und Unterstützung für Remote-und Onsite-Arbeit
 
@@ -44,8 +44,8 @@ Ein Remotemitarbeiter mit dem installierten VPN-Client verwendet DNS, um das Reg
 Nachdem die ersten Änderungen vorgenommen wurden, um hauptsächlich Remote Arbeitskräfte während regionaler Sperrungen zu unterstützen, hat Contoso Infrastrukturänderungen zur Unterstützung von Remote-und Onsite-Arbeit vorgenommen, in der eine Arbeitskraft sein könnte:
 
 - Immer Remote.
-- Immer lokal.
-- Eine Kombination aus Remote und lokal.
+- Immer vor Ort.
+- Eine Kombination aus Onsite und Remote.
 
 Die Funktionen von Microsoft 365 Identity, Security und Compliance sind auf Null-Vertrauen ausgelegt und funktionieren unabhängig vom Standort des Benutzers und des Geräts. Weitere Informationen finden Sie unter [zero Trust](https://www.microsoft.com/security/business/zero-trust).
 

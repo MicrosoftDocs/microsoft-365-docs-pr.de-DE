@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Benutzer mit Vertraulichkeits Bezeichnungen in Office-Apps für Desktop, Mobile und das Internet arbeiten und welche apps Sensitivitäts Bezeichnungen unterstützen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fb1918d2d6b39d01cf6340276c8d8ee00a5e1670
-ms.sourcegitcommit: ad0a63aa94cbfa686bf1ecbfec0152bb8e0e35af
+ms.openlocfilehash: 685228823c87eff975fabd2dd398c1b67be8eeef
+ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "49413053"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49580738"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Verwenden von Vertraulichkeitsbezeichnungen in Office-Apps
 
@@ -63,7 +63,7 @@ Für IOS und Android: Wenn diese eine Mindestversion aufgeführt sind, wird die 
 |[Berechtigungen sofort zuweisen](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Ja – Opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Benutzern die Zuweisung von Berechtigungen überlassen](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004 + | 16.35 +   | Unter Review   | Unter Review         | Unter Review                                                        |
 |[Anzeigen der Bezeichnungs Verwendung mit Label Analytics](label-analytics.md) und Senden von Daten für Administratoren                      | Unter Review            | Unter Review        | Unter Review   | Unter Review         | Ja <sup>\*</sup>                                                        |
-|[Festlegen, dass Benutzer eine Bezeichnung auf Ihre e-Mails und Dokumente anwenden müssen](sensitivity-labels.md#what-label-policies-can-do)   | Unter Review            | Unter Review        | Unter Review   | Unter Review         | Unter Review                                                        |
+|[Festlegen, dass Benutzer eine Bezeichnung auf Ihre e-Mails und Dokumente anwenden müssen](sensitivity-labels.md#what-label-policies-can-do)   | Vorschau: [Beta Kanal](https://office.com/insider)             | Vorschau: [Beta Kanal](https://office.com/insider)         | Unter Review   | Unter Review         | Unter Review                                            
 |[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)                    | 2009 +                                  | Vorschau für Word und PowerPoint: Rollout in den [aktuellen Kanal (Vorschau)](https://office.com/insider) | Unter Review | Unter Review | [Ja – Opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |Unterstützen des [automatischen Speicherns](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) und der gemeinsamen [Dokumenterstellung](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) für beschriftete und geschützte Dokumente | Unter Review | Unter Review | Unter Review | Unter Review | [Ja – Opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
@@ -84,8 +84,8 @@ Für IOS und Android: Wenn diese eine Mindestversion aufgeführt sind, wird die 
 |[Dynamische Markierungen mit Variablen](#dynamic-markings-with-variables)                                              | Unter Review                     | Unter Review                 | Unter Review         | Unter Review           | Unter Review               |
 |[Berechtigungen sofort zuweisen](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Ja               |
 |[Benutzern die Zuweisung von Berechtigungen überlassen](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Ja               |
+|[Festlegen, dass Benutzer eine Bezeichnung auf Ihre e-Mails und Dokumente anwenden müssen](#require-users-to-apply-a-label-to-their-email-and-documents)   | Vorschau: [Beta Kanal](https://office.com/insider)                        | 16.43 +                     | 4.57.0 +            | 4.2037.4 +                | Ja                |
 |[Anzeigen der Bezeichnungs Verwendung mit Label Analytics](label-analytics.md) und Senden von Daten für Administratoren                      | Unter Review                       | Unter Review                    | Unter Review           | Unter Review               | Ja               |
-|[Festlegen, dass Benutzer eine Bezeichnung auf Ihre e-Mails und Dokumente anwenden müssen](sensitivity-labels.md#what-label-policies-can-do)   | Unter Review                       | Unter Review                    | Unter Review           | Unter Review               | Unter Review               |
 |[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)                    | 2009 +                      | Unter Review                    | Unter Review           | Unter Review               | Ja |
 |
 
@@ -264,6 +264,29 @@ Wenn Sie eine Vertraulichkeits Bezeichnung für Inhalts Markierungen konfigurier
 > [!NOTE]
 > Bei der Syntax für diese Variablen wird die Groß-/Kleinschreibung beachtet.
 
+## <a name="require-users-to-apply-a-label-to-their-email-and-documents"></a>Festlegen, dass Benutzer eine Bezeichnung auf Ihre e-Mails und Dokumente anwenden müssen
+
+> [!IMPORTANT]
+> Auch als obligatorische Kennzeichnung bezeichnet, unterstützen derzeit nicht alle apps auf allen Plattformen die Richtlinieneinstellung von " **Benutzer müssen eine Bezeichnung auf Ihre e-Mails und Dokumente anwenden**".
+> 
+> Der [Azure Information Protection Unified Labeling-Client](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app) unterstützt die obligatorische Kennzeichnung und die Beschriftung in Office-Apps, siehe die Tabellen im Abschnitt " [Funktionen](#support-for-sensitivity-label-capabilities-in-apps) " auf dieser Seite.
+
+Wenn diese Richtlinieneinstellung ausgewählt ist, müssen Benutzer, denen die Richtlinie zugewiesen ist, eine Vertraulichkeits Bezeichnung in den folgenden Szenarien auswählen und anwenden:
+
+- Für den Azure Information Protection Unified Labeling-Client:
+    - Für Dokumente (Word, Excel, PowerPoint): Wenn ein unbeschriftetes Dokument gespeichert wird oder Benutzer das Dokument schließen.
+    - Für e-Mails (Outlook): zu dem Zeitpunkt, zu dem Benutzer eine nicht beschriftete Nachricht senden.
+
+- Für die Beschriftung in Office-Apps integriert:
+    - Für Dokumente ((Word, Excel, PowerPoint): Wenn ein unbeschriftetes Dokument geöffnet oder gespeichert wird.
+    - Für e-Mails (Outlook): zu dem Zeitpunkt, zu dem Benutzer eine unbeschriftete e-Mail-Nachricht senden.
+
+Zusätzliche Informationen für die integrierte Kennzeichnung:
+
+- Wenn Benutzer aufgefordert werden, eine Vertraulichkeits Bezeichnung hinzuzufügen, da Sie ein unbeschriftetes Dokument öffnen, können Sie eine Bezeichnung hinzufügen oder beschließen, das Dokument im schreibgeschützten Modus zu öffnen.
+
+- Wenn die obligatorische Kennzeichnung aktiviert ist, können Benutzer keine Vertraulichkeits Bezeichnungen aus Dokumenten entfernen, aber eine vorhandene Bezeichnung ändern.
+
 #### <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>Festlegen unterschiedlicher visueller Markierungen für Word, Excel, PowerPoint und Outlook
 
 Als zusätzliche Variable können Sie visuelle Markierungen pro Office-Anwendungstyp konfigurieren, indem Sie eine "If. app"-Variablen Anweisung in der Textzeichenfolge verwenden und den Anwendungstyp mithilfe der Werte **Word**, **Excel**, **PowerPoint** oder **Outlook** identifizieren. Sie können diese Werte auch abkürzen, was erforderlich ist, wenn Sie mehr als eine in derselben if. app-Anweisung angeben möchten.
@@ -298,6 +321,7 @@ Beispiele:
     `${If.App.WP}This content is ${If.End}Confidential`
 
     In Word und PowerPoint wendet die Bezeichnung den Wasserzeichentext "dieser Inhalt ist vertraulich" an. In Excel wendet die Bezeichnung den Wasserzeichentext "vertraulich" an. In Outlook wendet die Bezeichnung keinen Wasserzeichentext an, da Wasserzeichen als visuelle Markierungen für Outlook nicht unterstützt werden.
+>>>>>>> a51fef4b19dc23a23a161de3e8333dcd7527540b
 
 ## <a name="end-user-documentation"></a>Endbenutzerdokumentation
 
