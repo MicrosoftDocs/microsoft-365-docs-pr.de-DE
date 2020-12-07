@@ -1,5 +1,5 @@
 ---
-title: Microsoft Productivity Score
+title: Microsoft-Produktivitätsbewertung
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 monikerRange: o365-worldwide
 ms.collection:
 - M365-subscription-management
@@ -18,130 +18,130 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
-description: Übersicht über die Microsoft Produktivitätsbewertung
-ms.openlocfilehash: f1edc1a66763562b233455609f3381e3f4fbfa98
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
-ms.translationtype: MT
+description: Übersicht über die Microsoft-Produktivitätsbewertung.
+ms.openlocfilehash: cd22c4381f1fe3f6b37338636797157bdbaa7752
+ms.sourcegitcommit: 26c2f01d6f88f6c288b04f9f08062d68dd1e67e1
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561474"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49569975"
 ---
-# <a name="microsoft-productivity-score"></a>Microsoft Productivity Score 
+# <a name="microsoft-productivity-score"></a>Microsoft-Produktivitätsbewertung 
 
-Die Produktivitäts Bewertung unterstützt die Reise zur digitalen Transformation mit Einblicken darüber, wie Ihre Organisation Microsoft 365 verwendet, und die Technologie Erfahrungen, die Sie unterstützen. Die Bewertung Ihres Unternehmens reflektiert Personen-und Technologie Erfahrungs Messungen und kann mit Benchmarks von Organisationen vergleichbar mit ihrer Größe verglichen werden.
+Die Produktivitätsbewertung unterstützt den Prozess der digitalen Transformation mit Einblicken dazu, wie Ihre Organisation Microsoft 365 und die Technologielösungen verwendet, von denen es unterstützt wird. Das Bewertungsergebnis Ihrer Organisation reflektiert Messungen der Mitarbeiter- und Technologieerfahrung und kann mit Benchmarks von Organisationen verglichen werden, die größenmäßig Ihrer ähnlich sind.
 
-Es stellt Folgendes bereit:
+Es umfasst:
 
-- **Metriken** , mit denen Sie sehen können, wo Sie sich auf Ihrer digitalen Transformationsreise befinden.
-- **Einblicke** in die Daten, die Sie bei der Ermittlung von Möglichkeiten zur Verbesserung der Produktivität und Zufriedenheit in Ihrer Organisation unterstützen.
-- **Empfohlene Aktionen** , die Sie ausführen können, um Ihre Organisation bei der effizienten Verwendung von Microsoft 365-Produkten zu unterstützen.
+- **Metriken**, die Ihnen dabei helfen, zu sehen, wo Sie sich auf dem Weg der digitalen Transformation befinden.
+- **Erkenntnisse** zu den Daten, mit denen Sie Potential zur Verbesserung der Produktivität und Zufriedenheit in Ihrer Organisation identifizieren können.
+- **Empfohlene Maßnahmen**, mit denen Sie Ihrer Organisation helfen können, Microsoft 365-Produkte effizient zu nutzen.
 
-Wir stellen Metriken, Einblicke und Empfehlungen in zwei Bereichen zur Verfügung: 
+Es werden Metriken, Erkenntnisse und Empfehlungen in zwei Bereichen bereitgestellt: 
 
-- **Personen Erfahrungen:** Quantifiziert die Funktionsweise der Organisation mithilfe von Microsoft 365-Kategorien wie Inhalts Zusammenarbeit, Mobilität, Kommunikation, Besprechungen und Teamarbeit.  
+- **Mitarbeitererfahrung:** Quantifiziert, wie die Organisation mit Microsoft 365-Kategorien wie Zusammenarbeit an Inhalten, Mobilität, Kommunikation, Besprechungen und Teamwork arbeitet.  
 
-    Für jede der erwähnten Kategorien sehen wir uns die öffentliche Forschung an, um einige bewährte Methoden und zugehörige Vorteile in Form von organisatorischer Effektivität zu identifizieren. [Forrester] (unter https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf suchungen haben beispielsweise gezeigt, dass Personen, die zusammenarbeiten und Inhalte in der Cloud freigeben (statt e-Mail-Anhänge zu senden), bis zu 100 Minuten pro Woche speichern können. Darüber hinaus quantifizieren wir die Verwendung dieser Best Practices in Ihrer Organisation, damit Sie sehen, wo Sie sich auf Ihrer digitalen Transformationsreise befinden. 
+    In jeder der genannten Kategorien wird auf öffentliche Forschung eingegangen, um bewährte Methoden und die entsprechenden Vorteile im Sinne betrieblicher Effizienz zu ermitteln. So haben Untersuchungen von [Forrester](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf) beispielsweise ergeben, dass Personen, die in der Cloud zusammenarbeiten und Inhalte für andere freigeben (anstatt Anlagen per E-Mail zu senden), bis zu 100 Minuten pro Woche sparen können. Die Verwendung solcher bewährten Methoden in Ihrer Organisation wird zudem quantifiziert, damit Sie sehen können, wo Sie sich auf dem Weg der digitalen Transformation befinden. 
 
-- **Technologie-Erlebnisse:** Ihre Organisation hängt von einer zuverlässigen und leistungsfähigen Technologie sowie der effizienten Nutzung von Microsoft 365 ab. [EndPoint Analytics](https://aka.ms/endpointanalytics) hilft Ihnen zu verstehen, wie Ihre Organisation durch Leistungs-und gesundheitliche Probleme mit Ihrer Hardware und Software beeinträchtigt werden kann. Microsoft 365 apps Health hilft Ihnen zu verstehen, ob die Geräte in Ihrer Organisation Microsoft 365-apps auf empfohlenen Kanälen durchführen.
+- **Technologieerfahrung:** Ihre Organisation hängt von zuverlässigen und leistungsfähigen Technologien wie auch von der effizienten Nutzung von Microsoft 365 ab. [Endpunktanalyse:](https://aka.ms/endpointanalytics) Sie hilft Ihnen zu verstehen, wie Ihre Organisation durch Probleme mit der Leistung und Integrität Ihrer Hardware und Software beeinträchtigt werden kann. Die Microsoft 365 Apps-Integrität hilft Ihnen zu verstehen, ob Microsoft 365-Apps auf den Geräten in Ihrer Organisation in den empfohlenen Kanälen ausgeführt werden.
 
-Eine Übersicht und erforderliche Details finden Sie unter [Was ist Endpoint Analytics](https://docs.microsoft.com/mem/analytics/overview) . Weitere Informationen zu den Einblicken in Microsoft 365 Netzwerkkonnektivität finden Sie [unter Übersicht über die Netzwerkkonnektivität](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview).
+Einen Überblick und Einzelheiten zu den Voraussetzungen finden Sie unter [Was ist die Endpunktanalyse](https://docs.microsoft.com/mem/analytics/overview). Weitere Informationen zu den Insights in die Microsoft 365-Netzwerkverbindungen finden Sie unter [Überblick über die Netzwerkverbindungen](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview).
   
 
-## <a name="how-the-score-is-calculated"></a>Berechnung der Bewertung
+## <a name="how-the-score-is-calculated"></a>So wird Ihre Bewertung berechnet
 
-Ihr Produktivitäts Ergebnis basiert auf den kombinierten Ergebnissen ihrer Personen-und Technologie Erlebnis Kategorien. Jede Kategorie wird gleich gewichtet, mit einer Gesamtsumme von 100 Punkten. Die höchstmögliche Produktivitäts Punktzahl beträgt 800.
+Ihre Produktivitätsbewertung basiert auf den kombinierten Bewertungen der Kategorien Mitarbeiter- und Technologieerfahrung. Jede Kategorie wird gleich gewichtet, mit einem Total von 100 Punkten. Die höchste mögliche Produktivitätsbewertung liegt bei 800.
 
 ### <a name="score-categories"></a>Bewertungskategorien 
 
 - Kommunikation (100 Punkte)
 - Besprechungen (100 Punkte)
-- Zusammenarbeit mit Inhalten (100 Punkte)
-- Teamwork (100 Punkte)
+- Zusammenarbeit an Inhalten (100 Punkte)
+- Teamarbeit (100 Punkte)
 - Mobilität (100 Punkte)
 - Endpunktanalyse (100 Punkte)
-- Netzwerkkonnektivität (100 Punkte)
-- Microsoft 365 apps-Integrität (100 Punkte)
-- **Insgesamt möglich = 800 Punkte**
+- Netzwerkverbindungen (100 Punkte)
+- Microsoft 365 Apps-Integrität (100 Punkte)
+- **Höchstmögliches Gesamtergebnis: 800 Punkte**
  
- In jeder Bewertungskategorie quantifizieren wir die wichtigsten Indikatoren für die Verwendung von Microsoft 365 in Ihrer Organisation auf dem Weg zur digitalen Transformation. Wir bieten 28-tägige und 180-tägige Ansichten der wichtigsten Aktivitäten. Wir bieten auch unterstützende Metriken, die nicht Teil der Bewertungs Berechnung sind, aber wichtig sind, um Ihnen die Ermittlung zugrunde liegender Verwendungsstatistiken und Konfigurationen, die Sie adressieren können, zu erleichtern.
+ In jeder Bewertungskategorie werden die wichtigsten Indikatoren für die Verwendung von Microsoft 365 in Ihrer Organisation auf dem Weg der digitalen Transformation quantifiziert. Wir bieten 28-Tage- und 180-Tage-Ansichten der Schlüsselaktivitäten. Wir stellen auch unterstützende Metriken zur Verfügung, die nicht Teil der Punkteberechnung sind, aber wichtig sind, um zugrunde liegende Nutzungsstatistiken und Konfigurationen zu identifizieren, bei denen Sie ansetzen können.
 
-### <a name="products-included-in-productivity-score"></a>In Produktivitäts Bewertung enthaltene Produkte 
+### <a name="products-included-in-productivity-score"></a>Produkte, die bei der Produktivitätsbewertung berücksichtigt werden 
 
-Die Produktivitäts Bewertung umfasst Daten aus Exchange, SharePoint, OneDrive, Microsoft Teams, Word, Excel, PowerPoint, OneNote, Outlook, jammern und Skype.
+Die Produktivitätsbewertung enthält Daten zu Exchange, SharePoint, OneDrive, Microsoft Teams, Word, Excel, PowerPoint, OneNote, Outlook, Yammer und Skype.
 
-Die Bewertung Ihrer Organisation wird täglich aktualisiert und spiegelt Benutzeraktionen wider, die in den letzten 28 (einschließlich des aktuellen Tags) abgeschlossen wurden.
+Das Bewertungsergebnis Ihrer Organisation wird täglich aktualisiert und spiegelt Benutzeraktionen wider, die in den letzten 28 Tagen (einschließlich des aktuellen Tags) durchgeführt wurden.
 
 
 ## <a name="pre-requisites"></a>Voraussetzungen 
 
-Für Personen Erfahrungsdaten benötigen Sie ein Microsoft 365 for Business-oder Office 365 for Enterprise-Abonnement. Für Endpoint Analytics-Daten für Ihren Mandanten müssen Sie Microsoft InTune zu Ihrem Abonnement hinzufügen. InTune hilft Ihnen, die Daten Ihrer Organisation zu schützen, indem Geräte und apps verwaltet werden. Sobald Sie InTune haben, können Sie die Endpunktanalyse in der InTune-Umgebung aktivieren. Erfahren Sie mehr über [Microsoft InTune](https://docs.microsoft.com/mem/intune/). 
+Für Mitarbeitererfahrungsdaten benötigen Sie ein Abonnement für Microsoft 365 für Business oder Office 365 für Unternehmen. Für Endpunktanalysedaten Ihres Mandanten müssen Sie Microsoft Intune zu Ihrem Abonnement hinzufügen. Intune hilft Ihnen beim Schutz Ihrer Unternehmensdaten durch die Verwaltung von Geräten und Apps. Sobald Sie Intune hinzugefügt haben, können Sie die Endpunktanalyse innerhalb der Intune-Umgebung aktivieren. Weitere Informationen zu [Microsoft Intune](https://docs.microsoft.com/mem/intune/). 
 > [!NOTE]
-> Eine Lizenz für die Arbeitsplatzanalyse ist nicht erforderlich, um die Produktivitäts Bewertungs Features zu erhalten.
+> Eine Lizenz für Workplace Analytics ist nicht Voraussetzung, um die Produktivitätsbewertungsfunktionen nutzen zu können.
 
-Das Produktivitäts Ergebnis steht nur im Microsoft 365 Admin Center zur Verfügung und kann nur von IT-Experten mit einer der folgenden Rollen aufgerufen werden:  
+Die Produktivitätsbewertung steht nur im Microsoft 365 Admin Center zur Verfügung und kann nur von IT-Experten genutzt werden, die über eine der folgenden Rollen verfügen:  
 
 - Globaler Administrator 
-- Exchange-Administratoren
+- Exchange-Administrator
 - SharePoint-Administrator 
 - Skype for Business-Administrator 
-- Teams Administrator 
+- Microsoft Teams-Administrator 
 - Globaler Leser 
-- Berichtleseberechtigter 
+- Berichteleser 
 
-Bitte beachten Sie, dass die Informationen nur zur Förderung der digitalen Transformation mit Microsoft 365 verwendet werden sollen und daher mit Diskretion geteilt werden sollten. 
+Bitte beachten Sie, dass die Informationen nur zur Weiterentwicklung der digitalen Transformationen mit Microsoft 365 vorgesehen sind und daher mit Umsicht weitergegeben werden sollten. 
 
-Microsoft verpflichtet sich, die Privatsphäre des einzelnen zu schützen. In diesem [Datenschutzdokument](privacy.md)  werden die Steuerelemente erläutert, die wir Ihnen als IT-Administrator Ihrer Organisation zur Verfügung stellen, um sicherzustellen, dass die Informationen Action aktiv sind, ohne dabei die von Ihnen in Microsoft gegebene Vertrauensstellung zu gefährden.
+Microsoft hat sich zum Schutz persönlicher Daten verpflichtet. In diesem [Datenschutzdokument](privacy.md) werden die von uns bereitgestellten Steuerelemente erläutert, mit denen Sie als IT-Administrator Ihrer Organisation sicherstellen können, dass die Informationen nutzbar sind und zugleich das Vertrauen, das Sie in Microsoft setzen, nicht beeinträchtigt wird.
 
-Sie können auf die Benutzeroberfläche von Microsoft 365 admin Home unter **Berichte**  >  **Produktivitäts Bewertung** zugreifen.
+Sie finden die Bewertung über die Startseite von Microsoft 365 Admin unter **Berichte** > **Produktivitätsbewertung**.
 
-## <a name="interpreting-your-organizations-productivity-score"></a>Interpretieren der Produktivitäts Bewertung Ihrer Organisation 
+## <a name="interpreting-your-organizations-productivity-score"></a>Interpretieren der Produktivitätsbewertung Ihrer Organisation 
 
-Auf der Startseite der Produktivitäts Bewertung wird die Gesamtpunktzahl und der Bewertungsverlauf Ihrer Organisation sowie die primäre Einblicke für jede Kategorie angezeigt.
+Auf der Startseite der Produktivitätsbewertung sehen Sie die Gesamtpunktzahl und den Bewertungsverlauf Ihrer Organisation sowie die wichtigsten Erkenntnisse für jede Kategorie.
 
-:::image type="content" source="../../media/prodscore-landing.png" alt-text="Seite &quot;Produktivitäts Bewertung&quot; in Berichten.":::
+:::image type="content" source="../../media/prodscore-landing.png" alt-text="Produktivitätsbewertungsseite unter &quot;Berichte&quot;.":::
 
-**Die Bewertung Ihrer Organisation** wird als Prozentwert und in Punkten angezeigt. Sie können Ihre Punkte im Zähler und die maximal möglichen Punkte im Nenner sehen.
+**Das Bewertungsergebnis Ihrer Organisation** wird als Prozentwert und in Punkten angezeigt. Sie können Ihre Punkte im Zähler und die maximal möglichen Punkte im Nenner sehen.
 
-Mithilfe von **Peer-Benchmarks** können Sie die Bewertung Ihrer Organisation mit Organisationen wie ihrer eigenen vergleichen. Der Peer-Benchmark für die Kategorien Personen Erfahrungen wird als der Durchschnitt der Measures in einer Gruppe ähnlicher Organisationen berechnet. Die Gruppe von Organisationen besteht aus Organisationen in Ihrer Region mit einer ähnlichen Anzahl von lizenzierten Benutzern, Arten von Lizenzen, Industrie und Besitz mit Microsoft 365. 
+Mit dem **Peer-Benchmark** können Sie die Bewertung Ihrer Organisation mit Unternehmen ähnlich dem Ihren vergleichen. Der Peer-Benchmark für die Kategorie der Mitarbeitererfahrung wird als Durchschnitt der Maßnahmen innerhalb einer Reihe ähnlicher Unternehmen berechnet. Die Gruppe der Unternehmen besteht aus Firmen in Ihrer Region mit einer ähnlichen Anzahl lizenzierter Benutzer, Lizenztypen, Branchen und Erfahrungen mit Microsoft 365. 
 
-Der Endpunktanalyse-Peer-Benchmark umfasst Ziele für die gerätestart Leistung und die empfohlene Softwarekonfiguration basierend auf aggregierten Median Werten für alle Mandanten.
+Der Peer-Benchmark für die Endpunktanalyse enthält Ziele für die Leistung beim Gerätestart und die empfohlene Softwarekonfiguration basierend auf aggregierten Medianwerten über alle Mandanten hinweg.
 
-Für die Netzwerkkonnektivität beträgt die empfohlene Benchmark 80 Punkte.
+Der empfohlene Benchmark-Wert für Netzwerkverbindungen beträgt 80 Punkte.
 
-Im Abschnitt " **Score Breakdown** " finden Sie einen Überblick über Ihre Produktivitäts Bewertung mit Benchmarks von Personen-und Technologie Erfahrungsbereichen.
+Der Abschnitt **Score-Aufschlüsselung** enthält eine Aufschlüsselung Ihrer Produktivitätsbewertung mit Benchmarks in den Bereichen Mitarbeiter- und Technologie-Erfahrungen.
 
-Der Bewertungsverlauf zeigt, wie sich die Punktzahl in jeder Kategorie in den letzten 6 Monaten geändert hat.
+Der Bewertungsverlauf zeigt Ihnen, wie sich Ihr Ergebnis in jeder Kategorie innerhalb der letzten 6 Monate verändert hat.
 
-Die Bereiche " **People Experiences** " und " **Technology Experiences** " enthalten die primären Einblicke für die Kategorien in diesen Bereichen. Sie können auf jede Kategorie klicken, um tiefere Einblicke zu erhalten.
+Die Bereiche **Mitarbeiter-Erfahrungen** und **Technologie-Erfahrungen** enthalten die wichtigsten Erkenntnisse für die Kategorien in diesen Bereichen. Sie können auf jede Kategorie klicken, um vertiefte Einblicke zu sehen.
 
-## <a name="category-details-pages"></a>Rubriken-Detailseiten
+## <a name="category-details-pages"></a>Kategoriedetailseiten
 
-Jede Kategorie-Detailseite enthält die primären Einblicke und unterstützenden Metriken sowie zugehörige Forschung und Aktionen, die Sie zum Steuern der Änderung in Ihrer Organisation durchführen können. Die Forschung unterstützt die Wichtigkeit und die Beweggründe für die primären Einblicke für jede Kategorie. Weitere Informationen finden [Sie im Forrester-Bericht](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
+Jede Kategoriedetailseite zeigt die wichtigsten Erkenntnisse und unterstützenden Metriken sowie zugehörige Forschungsergebnisse und Maßnahmen an, die Sie ergreifen können, um Veränderungen in Ihrem Unternehmen voranzutreiben. Forschungsergebnisse unterstützen die Bedeutung und Begründung der wichtigsten Erkenntnisse für jede Kategorie. Weitere Informationen [finden Sie im Forrester-Bericht](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
 Die Detailseiten sind:
-- [Content-Zusammenarbeit – Personen Erfahrungen](content-collaboration.md)
-- [Kommunikation – Personen Erfahrungen](communication.md)
-- [Besprechungen – Personen Erfahrungen](meetings.md)
-- [Mobilität – Personen Erfahrungen](mobility.md)
-- [Teamwork – Personen Erfahrungen](teamwork.md)
-- [Microsoft 365 apps Health – Technologie-Erlebnisse](apps-health.md)
+- [Inhaltszusammenarbeit – Mitarbeiter-Erfahrungen](content-collaboration.md)
+- [Kommunikation – Mitarbeiter-Erfahrungen](communication.md)
+- [Besprechungen – Mitarbeiter-Erfahrungen](meetings.md)
+- [Mobilität – Mitarbeiter-Erfahrungen](mobility.md)
+- [Teamarbeit – Mitarbeiter-Erfahrungen](teamwork.md)
+- [Microsoft 365 Apps-Integrität – Technologie-Erfahrungen](apps-health.md)
 
-## <a name="business-continuity-special-report"></a>Business Continuity-Spezial Bericht
+## <a name="business-continuity-special-report"></a>Spezialbericht zur Geschäftskontinuität
 
-Der Business Continuity-Bericht ist ein befristeter Arbeitsplatz-Intelligence-Bericht, der allen Microsoft 365-Kunden zur Verfügung steht, um Ihnen zu helfen, ihre Organisationen während dieser schwierigen Zeit zu leiten.  
+Der Bericht zur Geschäftskontinuität ist ein zeitlich begrenzter Workplace Intelligence-Bericht, der allen Microsoft 365-Kunden zur Verfügung steht, um sie bei der Führung ihres Unternehmens in dieser herausfordernden Zeit zu unterstützen.  
 
-In diesem Bericht können Organisationen Folgendes verstehen: 
+Dieser Bericht hilft Organisationen beim Verständnis folgender Aspekte: 
 
-- Auswirkungen der Verlagerung auf die Remote Arbeit auf die Zusammenarbeit und Kommunikation 
+- Wie Zusammenarbeit und Kommunikation von der Umstellung auf Remote-Arbeit beeinflusst wird. 
 
-- Die Auswirkungen auf die Arbeits-und Lebenszeit Balance, während sich die Benutzer an die Arbeit von zu Hause anpassen. 
+- Die Auswirkungen auf die Work-Life-Balance bei der Anpassung der Mitarbeiter an die Arbeit von zu Hause aus. 
 
-- Gibt an, ob Remote Besprechungen eine effektive Entscheidungsfindung unterstützen.
+- Ob Remote-Besprechungen eine effektive Entscheidungsfindung fördern.
 
-[Weitere Informationen zum Business Continuity-Bericht](https://aka.ms/bcrps)
+[Weitere Informationen zum Bericht zur Geschäftskontinuität](https://aka.ms/bcrps)
 
-[Weitere Informationen zu Microsoft Graph](https://docs.microsoft.com/graph/)
+[Weitere Informationen über Microsoft Graph](https://docs.microsoft.com/graph/).
 
 ## <a name="we-want-to-hear-from-you"></a>Wir freuen uns über Ihr Feedback
 
-Teilen Sie Ihre Gedanken zur Produktivitäts Bewertung und ihre Vorstellungen darüber, wie Sie Sie verbessern können. Verwenden Sie die **Feedback** Abschnitte im Produkt und/oder erreichen Sie das Team für die Produktivitäts Bewertung unter prodscorefeedback@Microsoft.com.
+Teilen Sie uns Ihre Gedanken zur Produktivitätsbewertung mit und Ihre Ideen, wie sie verbessert werden könnte. Verwenden Sie dafür die **Feedback**-Abschnitte innerhalb des Produkts und/oder wenden Sie sich an das für die Produktivitätsbewertung zuständige Team unter prodscorefeedback@microsoft.com.
