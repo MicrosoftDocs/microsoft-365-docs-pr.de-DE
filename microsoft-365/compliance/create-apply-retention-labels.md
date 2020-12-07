@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Anweisungen zum Erstellen und Veröffentlichen von Aufbewahrungsbezeichnungen, damit Sie diese in Apps auf Inhalte anwenden können, die Sie beibehalten möchten und nicht benötigte Inhalte löschen können.
-ms.openlocfilehash: ea67d5942f5134e4e34c3add9bdfc48771201e2d
-ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
+ms.openlocfilehash: dfe507283304f1b1a7ded1740df043174987a398
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "49385187"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519856"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>Erstellen von Aufbewahrungsbezeichnungen und Anwenden in Apps
 
@@ -95,7 +95,7 @@ Veröffentlichen Sie Aufbewahrungsbezeichnungen, sodass sie von Benutzern in App
 
 2. Folgen Sie den Anweisungen des Assistenten.
     
-    Informationen über die von Aufbewahrungsbezeichnungen unterstützten Speicherorte finden Sie im Abschnitt [Aufbewahrungsbezeichnungen und -speicherorte](retention.md#retention-label-policies-and-locations). 
+    Informationen über die von Aufbewahrungsbezeichnungen unterstützten Speicherorte finden Sie unter [Aufbewahrungsbezeichnungen und -speicherorte](retention.md#retention-label-policies-and-locations). 
 
 Um eine vorhandene Richtlinie für Aufbewahrungsbezeichnungen zu bearbeiten (der Richtlinientyp ist **Veröffentlichen**), markieren Sie sie, und wählen Sie dann die Option **Bearbeiten** aus, um den Assistenten zum Bearbeiten der Aufbewahrungsrichtlinie zu starten. Mit diesem Assistenten können Sie die Richtlinienbeschreibung und alle [zutreffenden Einstellungen](#updating-retention-labels-and-their-policies) aus Schritt 2 ändern.
 
@@ -157,6 +157,8 @@ Use the following sections to learn how published retention labels can be applie
 
 In addition, when you use [SharePoint Syntex](../contentunderstanding/index.md) and publish retention labels to SharePoint locations, you can [apply a retention label to a document understanding model](../contentunderstanding/apply-a-retention-label-to-a-model.md) so that identified documents are automatically labeled.
 
+After content is labeled, see the following information to understand when the applied label can be removed or changed: [Only one retention label at a time](retention.md#only-one-retention-label-at-a-time).
+
 ### Manually apply retention labels 
 
 End users, as well as administrators, can manually apply retention labels from the following locations:  
@@ -180,16 +182,26 @@ To label an item in the Outlook desktop client, select the item. On the **Home**
 You can also right-click an item, click **Assign Policy** in the context menu, and then choose the retention label. 
 
 After the retention label is applied, you can view that retention label and what action it takes at the top of the item. If an email has a retention label applied that has an associated retention period, you can see at a glance when the email expires.
+
+##### Applying a default retention label to an Outlook folder
+
+You can apply retention labels to Outlook folders as a default label that can be inherited by messages in that folder. Right-click the folder, select **Properties**, the **Policy** tab, and select the retention label you want to use as that folder's default retention label.
+
+When you use a a standard retention label as your default label for an Outlook folder:
   
-You can also apply retention labels to folders, in which case:
-  
-- All items in the folder automatically get the same retention label, **except** for items that have had a retention label applied explicitly to them. Explicitly labeled items keep their existing retention label. For more information, see [The principles of retention, or what takes precedence?](retention.md#the-principles-of-retention-or-what-takes-precedence) section on this page. 
-    
-- If you change or remove the default retention label for a folder, the retention label's also changed or removed for all items in the folder, **except** items with explicitly assigned retention labels. 
-    
-- If you move an item with a default retention label from one folder to another folder with a different default retention label, the item gets the new default retention label.
-    
-- If you move an item with a default retention label from one folder to another folder with no default retention label, the old default retention label is removed.
+- All unlabeled items in the folder have this retention label applied.
+
+- The inheritance flows to any child folders and items inherit the label from their nearest folder.
+
+- Items that are already labeled retain their retention label, unless it was applied by a different default label.
+
+- If you change or remove the default retention label for the folder: Existing retention labels applied to items in that folder are also changed or removed only if those labels were applied by a default label.
+
+- If you move an item with a default retention label from one folder to another folder with a different default retention label: The item gets the new default retention label.
+
+- If you move an item with a default retention label from one folder to another folder with no default retention label: The old default retention label is removed.
+
+When labels are applied that aren't standard retention labels but mark items as [records (or regulatory records)](records-management.md#records), these labels can only be manually changed or removed.
 
 #### Applying retention labels in Outlook on the web
 
@@ -201,7 +213,7 @@ After the retention label is applied, you can view that retention label and what
   
 ![Label assigned to email in Outlook on the web](../media/16f6c91b-5eab-4574-9d13-6d12be00a783.png)
   
-As with Outlook on the web, you can also apply retention labels to folders. 
+As with the desktop version of Outlook on the web, you can also apply retention labels to folders. Right-click the folder, select **Assign policy**, and change **Use parent folder policy** to the retention label you want to use as that folder's default retention label.
 
 #### Applying retention labels in OneDrive and SharePoint
 
@@ -234,25 +246,31 @@ Then, create one or more label policies that contain the labels and policy setti
 
 This method requires retention labels to be published to a retention label policy.
 
-In addition to enabling people to apply a retention label to individual documents, you can also apply a default retention label to a SharePoint library, folder, or document set, so that all documents in that location inherit the default retention label. Although the same label is applied, each document will be retained and deleted separately, according to the start of the retention period setting in the label. 
+In addition to letting people apply a retention label to individual documents, you can also apply a default retention label to a SharePoint library, folder, or document set. In this scenario, documents in that location can inherit your selected default retention label. Although the same label is applied, each document will be retained and deleted separately, according to the start of the retention period setting in the label. 
   
-For a document library, the default label configuration is done on the **Library settings** page for a document library. When you choose the default retention label, you can also choose to apply it to existing items in the library. 
+For a document library, the default label configuration is done on the **Library settings** page for a document library. When you choose the default retention label, you can also choose to apply it to existing items in the library.
   
 For example, if you have a retention label for marketing materials, and you know a specific document library contains only that type of content, you can make the **Marketing Materials** retention label the default label for all documents in that library.
   
 ![Apply label option on library Settings page](../media/0787d651-63dc-43b4-8768-716a5ecc64ec.png)
-  
-If you apply a default retention label to existing items in the library, folder, or document set:
-  
-- All items in the library, folder, or document set automatically get the same retention label, **except** for items that already have a retention label applied to them.
-    
-- If you change or remove the default retention label for a library, folder, or document set, the retention label is also changed or removed for all items in the library, folder, or document set, **except** items that were manually labeled.
-    
-- If you move an item with a default retention label from one site collection, library, folder, or document set to another site collection, library, folder, or document set that has a different label, the item keeps its existing default retention label, even if the new location has a different default retention label. If the item does not have a label before moving, it will take on the default retention label of the new location.
 
-**Records:** If you apply a default record label to a library, folder, or document set, then a record label is applied to all the individual items within those locations. When you move a new item into a location with a record label, that item is labeled a record. However, if you change the default retention label to a label that doesn't declare content as a record, that action does not remove the record label from the individual items; those items retain their record label. Only a site collection admin can explicitly remove or change the retention label of record items.
+#### Label behavior when you use a default label for SharePoint
 
-For more information about retention labels that declare content as a record, see [Records](records-management.md#records).
+For standard retention labels that you apply as a default retention label to a library, folder, or document set:
+
+- All new, unlabeled items in the container will have this retention label applied.
+
+- For folders, the inheritance flows to any child folders and items inherit the label from their nearest folder.
+
+- If you selected the option to apply the default label to existing items: Items that are already labeled retain their retention label, unless it was applied by a different default label.
+    
+- If you change the default retention label for the container: Existing retention labels applied to items in that container are changed only if you selected the option to apply the default label to existing items and those labels were applied by a default label.
+
+- If you remove the default retention label for the container: Items retain their labels.
+    
+- If you move an item with a default retention label applied from one container to another container: The item keeps its existing default retention label, even if the new location has a different default retention label. Only if you then change the default label for this new location can the moved item inherit the default label from its current location.
+
+When labels are applied that aren't standard retention labels but mark items as [records (or regulatory records)](records-management.md#records), these labels can only be manually changed or removed.
 
 ### Automatically applying a retention label to email by using rules
 
@@ -276,7 +294,7 @@ Some settings can't be changed after the label or policy is created and saved, w
 
 ## Locking the policy to prevent changes
 
-If you need to ensure that that no one can turn off the policy, delete the policy, or make it less restrictive, see [Use Preservation Lock to restrict changes to retention policies and retention label policies](retention-preservation-lock.md).
+If you need to ensure that no one can turn off the policy, delete the policy, or make it less restrictive, see [Use Preservation Lock to restrict changes to retention policies and retention label policies](retention-preservation-lock.md).
 
 ## Next steps
 
