@@ -125,9 +125,6 @@
           items:
             - name: Gerätebestandsbericht
               href: working-with-managed-desktop/device-inventory-report.md
-        - name: Arbeiten mit Einblicken
-          href: working-with-managed-desktop/insights.md
-          items:
             - name: Benutzungseinblicke
               href: working-with-managed-desktop/usage-insights.md
             - name: Zuverlässigkeitseinblicke
