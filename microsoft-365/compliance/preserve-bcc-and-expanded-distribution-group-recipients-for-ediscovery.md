@@ -11,23 +11,23 @@ ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
-description: In-situ-Speicher, Beweissicherungsverfahren und Microsoft 365-Aufbewahrungsrichtlinien ermöglichen das Aufbewahren von Postfachinhalten zur Erfüllung behördlicher Compliance-und eDiscovery-Anforderungen.
-ms.openlocfilehash: 62029ff742f9fe4aec1fed23d74b01b145da6cfe
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+description: In-Place halten, Beweissicherungsverfahren und Microsoft 365-Aufbewahrungsrichtlinien ermöglichen das Beibehalten von Postfachinhalten, um behördlichen Vorschriften und eDiscovery-Anforderungen gerecht zu werden.
+ms.openlocfilehash: c864a963bec7a7d342a8ad90b6edc57c88f5205b
+ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358483"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49588506"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>Speichern von Bcc-Empfängern und Empfängern aus erweiterten Verteilergruppen für eDiscovery
   
-In-situ-Speicher, Beweissicherungsverfahren und [Microsoft 365-Aufbewahrungsrichtlinien](https://go.microsoft.com/fwlink/?LinkID=827811) (erstellt im Security & Compliance Center) ermöglichen das Aufbewahren von Postfachinhalten, um die Einhaltung gesetzlicher Vorschriften und eDiscovery-Anforderungen einzuhalten. Informationen über Empfänger, die direkt in den Feldern "An" und "Cc" einer Nachricht adressiert werden, sind standardmäßig in allen Nachrichten enthalten, aber in Ihrer Organisation kann es erforderlich sein, nach detaillierten Informationen über alle Empfänger einer Nachricht zu suchen und sie zu reproduzieren. Dazu gehört Folgendes: 
+In-Place halten, Beweissicherungsverfahren und [Microsoft 365-Aufbewahrungsrichtlinien](https://go.microsoft.com/fwlink/?LinkID=827811) (erstellt im Security & Compliance Center) ermöglichen Ihnen das Beibehalten von Postfachinhalten, um die Einhaltung gesetzlicher Vorschriften und eDiscovery-Anforderungen zu erfüllen. Informationen zu Empfängern, die direkt in den Feldern "an" und "CC" einer Nachricht adressiert sind, sind standardmäßig in allen Nachrichten enthalten. Ihre Organisation muss jedoch möglicherweise die Möglichkeit zum Suchen und reproduzieren von Details zu allen Empfängern einer Nachricht benötigen. Hierzu zählen Folgende:
   
 - **Empfänger, die über das Feld "Bcc" einer Nachricht adressiert werden:** BCC-Empfänger werden in der Nachricht im Postfach des Absenders gespeichert, jedoch nicht in den Kopfzeilen der Nachricht, die an die Empfänger gesendet wird. 
     
 - **Erweiterte Verteilergruppenempfänger:** Empfänger, die die Nachricht erhalten, weil Sie Mitglieder einer Verteilergruppe sind, an die die Nachricht adressiert war, entweder in den Feldern an, CC oder Bcc. 
     
-Exchange Online und Exchange Server 2013 (kumulatives Update 7 und höher) behalten Informationen zu Bcc-Empfängern und Empfängern in erweiterten Verteilergruppen bei. Sie können diese Informationen mithilfe einer Compliance-eDiscovery-Suche im Exchange Admin Center (EAC) oder einer Inhaltssuche im Security & Compliance Center durchsuchen. 
+Exchange Online und Exchange Server 2013 (kumulatives Update 7 und höher) behalten Informationen zu Bcc-Empfängern und Empfängern in erweiterten Verteilergruppen bei. Sie können diese Informationen mithilfe einer In-Place eDiscovery-Suche im Exchange Admin Center (EAC) oder einer Inhaltssuche im Security & Compliance Center durchsuchen. 
   
 ## <a name="how-bcc-recipients-and-expanded-distribution-group-recipients-are-preserved"></a>Wie Bcc-Empfänger und Empfänger in erweiterten Verteilergruppen beibehalten werden
 
@@ -35,11 +35,11 @@ Wie schon zuvor erwähnt werden Informationen über Bcc-Empfänger mit der Nachr
   
 Informationen über Empfänger in erweiterten Verteilergruppen werden mit der Nachricht gespeichert, nachdem Sie ein Postfach in das Compliance-Archiv verschoben oder einem Beweissicherungsverfahren unterzogen haben. In Office 365 werden diese Informationen auch gespeichert, wenn eine Microsoft 365-Aufbewahrungsrichtlinie auf ein Postfach angewendet wird. Die Mitgliedschaft in einer Verteilergruppe wird zu dem Zeitpunkt festgelegt, zu dem die Nachricht gesendet wird. Die mit der Nachricht gespeicherte erweiterte Empfängerliste ist nicht von Änderungen an der Mitgliedschaft betroffen, die nach dem Senden der Nachricht erfolgen. 
   
-|**Informationen über...**|**Werden gespeichert in...**|**Werden standardmäßig gespeichert...**|**Sind zugänglich für…**|
+| Informationen über... | Werden gespeichert in... | Werden standardmäßig gespeichert... | Sind zugänglich für… |
 |:-----|:-----|:-----|:-----|
 |Felder "An" und "Cc"  <br/> |Nachrichteneigenschaften in den Postfächer des Absenders und der Empfänger  <br/> |Ja  <br/> |Absender, Empfänger und Compliance Officers  <br/> |
 |Bcc-Empfänger  <br/> |Nachrichteneigenschaft im Postfach des Absenders  <br/> |Ja  <br/> |Absender, Empfänger und Compliance Officers  <br/> |
-|Empfänger in erweiterten Verteilergruppen  <br/> |Nachrichteneigenschaften im Postfach des Absenders  <br/> |Keine. Erweiterte Verteilergruppenempfänger Informationen werden gespeichert, nachdem ein Postfach in einem Compliance-Archiv oder einem Beweissicherungsverfahren platziert oder einer Microsoft 365-Aufbewahrungsrichtlinie zugewiesen wurde.  <br/> |Compliance-Beauftragte  <br/> |
+|Empfänger in erweiterten Verteilergruppen  <br/> |Nachrichteneigenschaften im Postfach des Absenders  <br/> |Keine. Erweiterte Verteilergruppenempfänger Informationen werden gespeichert, nachdem ein Postfach in In-Place Aufbewahrungs-oder Beweissicherungsverfahren abgelegt oder einer Microsoft 365-Aufbewahrungsrichtlinie zugewiesen wurde.  <br/> |Compliance-Beauftragte  <br/> |
    
 ## <a name="searching-for-messages-sent-to-bcc-and-expanded-distribution-group-recipients"></a>Suche nach an Bcc-Empfänger oder an Empfänger in erweiterten Verteilergruppen gesendeten Nachrichten
 
@@ -47,7 +47,7 @@ Bei der Suche nach Nachrichten an einen bestimmten Empfänger enthalten eDiscove
   
 Szenario 1: John ist ein Mitglied der Verteilergruppe Vertrieb USA. Diese Tabelle zeigt die eDiscovery-Suchergebnisse, die zurückgegeben werden, wenn Bob eine Nachricht direkt oder (über eine Verteilergruppe) indirekt an John sendet.
   
-|**Wenn Sie in Bobs Postfach nach gesendeten Nachrichten suchen...**|**Und die Nachricht gesendet wird mit...**|**Enthalten die Ergebnisse die Nachricht...**|
+| Wenn Sie in Bobs Postfach nach gesendeten Nachrichten suchen... | Und die Nachricht gesendet wird mit... | Enthalten die Ergebnisse die Nachricht... |
 |:-----|:-----|:-----|
 |An:John  <br/> |John in "An"  <br/> |Ja  <br/> |
 |An:John  <br/> |Vertrieb USA in "An"  <br/> |Ja  <br/> |
@@ -58,7 +58,7 @@ Szenario 1: John ist ein Mitglied der Verteilergruppe Vertrieb USA. Diese Tabell
    
 Szenario 2: Bob sendet eine E-Mail an John (An/Cc) und Jack (direkt über BCC oder indirekt über eine Verteilergruppe). Die folgende Tabelle zeigt eDiscovery-Suchergebnisse.
   
-|**Bei der Suche...**|**Nach gesendeten Nachrichten...**|**Enthalten die Ergebnisse die Nachricht...**|**Hinweise**|
+| Bei der Suche... | Nach gesendeten Nachrichten... | Enthalten die Ergebnisse die Nachricht... | Anmerkungen |
 |:-----|:-----|:-----|:-----|
 |Bobs Postfach  <br/> |An/Cc:John  <br/> |Ja  <br/> |Gibt an, dass Jack auf Bcc stand  <br/> |
 |Bobs Postfach  <br/> |Bcc:Jack  <br/> |Ja  <br/> |Gibt an, dass Jack auf Bcc stand  <br/> |
@@ -76,7 +76,7 @@ A. Informationen über einen Bcc-Empfänger werden standardmäßig in der urspr�
   
  **F. Wann und wo wird die Liste der Empfänger in erweiterten Verteilergruppen gespeichert?**
   
-A. Die Mitgliedschaft in einer Verteilergruppe wird zu dem Zeitpunkt erweitert, zu dem die Nachricht gesendet wird. Die Liste der Mitglieder erweiterter Verteilergruppen wird in der ursprünglichen Nachricht im Postfach des Absenders gespeichert. Das Postfach des Absenders muss sich im Compliance-Archiv befinden, in einem Beweissicherungsverfahren gespeichert oder einer Microsoft 365-Aufbewahrungsrichtlinie zugewiesen sein.
+A. Die Mitgliedschaft in einer Verteilergruppe wird zu dem Zeitpunkt erweitert, zu dem die Nachricht gesendet wird. Die Liste der Mitglieder erweiterter Verteilergruppen wird in der ursprünglichen Nachricht im Postfach des Absenders gespeichert. Das Postfach des Absenders muss in In-Place halten, Beweissicherungsverfahren oder einer Microsoft 365-Aufbewahrungsrichtlinie zugewiesen sein.
   
  **F. Können die unter An/Cc aufgeführten Empfänger sehen, welche Empfänger auf Bcc stehen?**
   

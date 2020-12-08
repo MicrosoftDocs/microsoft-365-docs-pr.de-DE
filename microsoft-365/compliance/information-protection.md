@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Implementieren Sie Microsoft Information Protection (MIP), um vertrauliche Informationen unabhängig davon, wo sie sich befinden oder unterwegs sind, zu schützen.
-ms.openlocfilehash: 4c8f4af11779cd8b3df043bc92187625c41f4ac9
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 4afc73b5a2cefe88d2e3af5fd6665ec64e5c0ee3
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519810"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568317"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection in Microsoft 365
 
@@ -37,6 +37,9 @@ Die MIP-Funktionen sind in Microsoft 365 Compliance enthalten und bieten Ihnen d
 Informationen zum Kontrolle Ihrer Daten finden Sie unter [Microsoft Information Governance in Microsoft 365](manage-Information-governance.md).
 
 ## <a name="know-your-data"></a>Kennen Sie Ihre Daten
+
+> [!NOTE]
+> Informationen zum Klassifizieren und Beschriften von Daten in Azure Purview (aktuell als Vorschau) finden Sie unter [Automatische Beschriftung Ihrer Inhalte in Azure Purview](https://docs.microsoft.com/azure/purview/create-sensitivity-label).
 
 Verwenden Sie die folgenden Funktionen, um Ihre Datenlandschaft zu verstehen und wichtige Daten in Ihrer Hybridumgebung zu ermitteln:
  
@@ -62,6 +65,7 @@ Verwenden Sie die folgenden Funktionen, um flexible Schutzmaßnahmen wie Verschl
 |[Azure Information Protection-Scanner für einheitliche Bezeichnungen](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)| Erkennt, kennzeichnet und schützt vertrauliche Informationen, die sich in lokalen Datenspeichern befinden. | [Konfigurieren und Installieren des Azure Information Protection-Scanners für einheitliche Bezeichnungen](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install)|
 |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)| Erkennt, kennzeichnet und schützt vertrauliche Informationen, die sich in Datenspeichern in der Cloud befinden. | [Ermitteln, Klassifizieren, Bezeichnen und Schützen regulierter und vertraulicher Daten, die in der Cloud gespeichert sind](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |[Microsoft Information Protection-SDK](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|Erweitert Vertraulichkeitsbezeichnungen auf Drittanbieter-Apps und -Dienste.  <br /><br /> Beispielszenario: [Festlegen und Abrufen einer Vertraulichkeitsbezeichnung ( C++ )](https://docs.microsoft.com/information-protection/develop/quick-file-set-get-label-cpp) |[Setup und Konfiguration des Microsoft Information Protection (MIP)-SDKs](https://docs.microsoft.com/information-protection/develop/setup-configure-mip)|
+
 
 ## <a name="prevent-data-loss"></a>Verhindern von Datenverlust
 

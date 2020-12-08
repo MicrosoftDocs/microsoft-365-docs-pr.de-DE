@@ -18,24 +18,24 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: Informationen zum Verwalten von teilweise indizierten (oder nicht indizierten) Elementen aus Exchange, SharePoint und OneDrive für Unternehmen in Ihrer Organisation.
-ms.openlocfilehash: bbf234e2051cd103d1b99ab75b8e5c15365762a9
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 132a174f0c163c75939b75906baa3833c6387fa7
+ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919997"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49588562"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Untersuchen von teilweise indizierten Elementen in eDiscovery
 
 Eine eDiscovery-Suche, die Sie im Microsoft 365 Compliance Center ausführen, enthält automatisch teilweise indizierte Elemente in den geschätzten Suchergebnissen, wenn Sie eine Suche ausführen. Teilweise indizierte Elemente sind Exchange-Postfachelemente und Dokumente in SharePoint und OneDrive für Unternehmen Websites, die aus irgendeinem Grund nicht vollständig für die Suche indiziert wurden. Die meisten e-Mail-Nachrichten und Website Dokumente werden erfolgreich indiziert, da Sie innerhalb der [Grenzwerte für e-Mail-Nachrichten](limits-for-content-search.md#indexing-limits-for-email-messages)liegen. Einige Elemente können diese Grenzwerte für die Indizierung jedoch überschreiten und teilweise indiziert werden. Im folgenden finden Sie weitere Gründe, warum Elemente nicht für die Suche indiziert werden können und als teilweise indizierte Elemente zurückgegeben werden, wenn Sie eine eDiscovery-Suche ausführen:
   
-- E-Mail-Nachrichten weisen eine angefügte Datei ohne gültigen Handler auf, beispielsweise Bilddateien; Dies ist die häufigste Ursache für teilweise indizierte e-Mail-Elemente
+- E-Mail-Nachrichten weisen eine angefügte Datei ohne gültigen Handler auf, beispielsweise Bilddateien; Dies ist die häufigste Ursache für teilweise indizierte e-Mail-Elemente.
 
-- Zu viele an eine e-Mail-Nachricht angefügte Dateien
+- Die E-Mail enthält zu viele Dateien im Anhang.
 
-- Eine an eine e-Mail-Nachricht angefügte Datei ist zu groß
+- Die an die E-Mail angehängte Datei ist zu groß.
 
-- Der Dateityp wird für die Indizierung unterstützt, es ist jedoch ein Indizierungsfehler für eine bestimmte Datei aufgetreten.
+- Der Dateityp wird für die Indizierung unterstützt, aber es ist ein Indizierungsfehler für eine bestimmte Datei aufgetreten.
 
 Obwohl es variiert, haben die meisten Organisationen Kunden weniger als 1% des Inhalts und weniger als 12% des Inhalts nach Größe, die teilweise indiziert ist. Der Grund für den Unterschied zwischen dem Volume und der Größe besteht darin, dass größere Dateien eine höhere Wahrscheinlichkeit enthalten, Inhalte zu enthalten, die nicht vollständig indiziert werden können.
   
@@ -45,10 +45,10 @@ Nachdem Sie eine eDiscovery-Suche ausgeführt haben, werden die Gesamtzahl und d
   
 - Wenn ein Element teilweise indiziert wird und mit der Suchabfrage übereinstimmt, ist es sowohl in der Anzahl (und der Größe) von Suchergebnis Elementen als auch in teilweise indizierten Elementen enthalten. Wenn die Ergebnisse der gleichen Suche jedoch exportiert werden, ist das Element nur mit einer Reihe von Suchergebnissen enthalten; Es ist nicht als teilweise indiziertes Element enthalten.
 
-- Wenn Sie einen Datumsbereich für eine Suchabfrage angeben (indem Sie ihn in die Stichwortabfrage oder mithilfe einer Bedingung einbeziehen), ist ein teilweise indiziertes Element, das nicht mit dem Datumsbereich übereinstimmt, nicht Bestandteil der Anzahl der teilweise indizierten Elemente. Nur die teilweise indizierten Elemente, die innerhalb des Datumsbereichs liegen, sind in der Anzahl der teilweise indizierten Elemente enthalten.
+- Wenn Sie einen Datumsbereich für eine Suchabfrage angeben (indem Sie ihn in die Stichwortabfrage oder mithilfe einer Bedingung einbeziehen), ist ein teilweise indiziertes Element, das nicht mit dem Datumsbereich übereinstimmt, nicht Bestandteil der Anzahl der teilweise indizierten Elemente. Nur die teilweise indizierten Elemente, die innerhalb des Datumsbereichs liegen, sind in der Anzahl der indizierten Elemente enthalten.
 
-> [!NOTE]
-> Teilweise indizierte Elemente, die sich in SharePoint-und OneDrive-Websites befinden, *sind nicht* in der Schätzung der teilweise indizierten Elemente enthalten, die in den detaillierten Statistiken für die Suche angezeigt werden. Teilweise indizierte Elemente können jedoch exportiert werden, wenn Sie die Ergebnisse einer eDiscovery-Suche exportieren. Wenn Sie beispielsweise nur Websites Durchsuchen, ist die geschätzte Anzahl der teilweise indizierten Elemente gleich NULL.
+  > [!NOTE]
+  > Teilweise indizierte Elemente, die sich in SharePoint-und OneDrive-Websites befinden, *sind nicht* in der Schätzung der teilweise indizierten Elemente enthalten, die in den detaillierten Statistiken für die Suche angezeigt werden. Teilweise indizierte Elemente können jedoch exportiert werden, wenn Sie die Ergebnisse einer eDiscovery-Suche exportieren. Wenn Sie beispielsweise nur Websites Durchsuchen, ist die geschätzte Anzahl der teilweise indizierten Elemente gleich NULL.
   
 ## <a name="calculating-the-ratio-of-partially-indexed-items-in-your-organization"></a>Berechnen des Verhältnisses von teilweise indizierten Elementen in Ihrer Organisation
 
@@ -83,11 +83,11 @@ In Fällen, in denen Sie teilweise Elemente überprüfen müssen, um zu überpr�
 Wenn Sie eDiscovery-Suchergebnisse oder einen Suchbericht mit einer dieser Optionen exportieren, enthält der Export einen Bericht mit dem Namen unindexierte Items.csv. Dieser Bericht enthält die meisten der gleichen Informationen wie die ResultsLog.csv Datei; die nicht indizierte Items.csv-Datei enthält jedoch auch zwei Felder im Zusammenhang mit teilweise indizierten Elementen: **Error-Tags** und **Error-Eigenschaften**. Diese Felder enthalten Informationen zum Indizierungsfehler für jedes teilweise indizierte Element. Mithilfe der Informationen in diesen beiden Feldern können Sie bestimmen, ob der Indizierungsfehler für einen bestimmten Einfluss auf ihre Untersuchung hat. Wenn dies der Fall ist, können Sie eine gezielte Suche durchführen und bestimmte e-Mail-Nachrichten und SharePoint-oder OneDrive-Dokumente abrufen und exportieren, sodass Sie Sie überprüfen können, um festzustellen, ob Sie für Ihre Untersuchung relevant sind. Eine Schritt-für-Schritt-Anleitung finden Sie unter [Prepare a CSV file for a targeted search in Office 365](csv-file-for-an-id-list-content-search.md).
 
 > [!NOTE]
-> Die nicht indizierte Items.csv Datei enthält auch die Felder " **Error Type** " und " **Error Message** ". Hierbei handelt es sich um Legacy Felder, die Informationen enthalten, die den Informationen in den Feldern **Error-Tags** und **Error-Eigenschaften** ähneln, jedoch mit kleineren detaillierten Informationen. Sie können diese Legacy Felder problemlos ignorieren.
+> Die nicht indizierte Items.csv Datei enthält auch die Felder " **Error Type** " und " **Error Message**". Hierbei handelt es sich um Legacy Felder, die Informationen enthalten, die den Informationen in den Feldern **Error-Tags** und **Error-Eigenschaften** ähneln, jedoch mit kleineren detaillierten Informationen. Sie können diese Legacy Felder problemlos ignorieren.
   
 ## <a name="errors-related-to-partially-indexed-items"></a>Fehler im Zusammenhang mit teilweise indizierten Elementen
 
-Fehler Tags bestehen aus zwei Informationselementen, dem Fehler und dem Dateityp. Beispielsweise in diesem Fehler/filetype-paar:
+Fehler Tags bestehen aus zwei Informationselementen, dem Fehler und dem Dateityp. Beispielsweise in diesem Error/File-Type-paar:
 
 ```text
  parseroutputsize_xls
@@ -97,7 +97,7 @@ Fehler Tags bestehen aus zwei Informationselementen, dem Fehler und dem Dateityp
   
 Im folgenden finden Sie eine Liste der Indizierungsfehler und eine Beschreibung der möglichen Fehlerursache.
   
-|**Error-Tag**|**Beschreibung**|
+| Error-Tag | Beschreibung |
 |:-----|:-----|
 | `attachmentcount` <br/> |Eine e-Mail-Nachricht weist zu viele Anlagen auf, und einige dieser Anlagen wurden nicht verarbeitet.  <br/> |
 | `attachmentdepth` <br/> |Der Inhalts Such-und Dokumentparser hat zu viele Ebenen von Anlagen gefunden, die in anderen Anlagen geschachtelt sind. Einige dieser Anlagen wurden nicht verarbeitet.  <br/> |
@@ -108,7 +108,7 @@ Im folgenden finden Sie eine Liste der Indizierungsfehler und eine Beschreibung 
 | `parserencrypted` <br/> |Der Inhalt der Anlage oder der e-Mail-Nachricht ist verschlüsselt, und Microsoft 365 konnte den Inhalt nicht decodieren.  <br/> |
 | `parsererror` <br/> |Während der Analyse ist ein unbekannter Fehler aufgetreten. Dies resultiert in der Regel aus einem Softwarefehler oder einem Dienst Absturz.  <br/> |
 | `parserinputsize` <br/> |Eine Anlage war zu groß, um vom Parser verarbeitet zu werden, und die Analyse dieser Anlage geschah nicht oder wurde nicht abgeschlossen.  <br/> |
-| `parsermalformed` <br/> |Eine Anlage war fehlerhaft und konnte vom Parser nicht verarbeitet werden. Das Ergebnis können alte Dateiformate, Dateien, die von inkompatibler Software erstellt wurden, oder Viren, die als etwas anderes als beansprucht gelten.  <br/> |
+| `parsermalformed` <br/> |Eine Anlage war fehlerhaft und konnte vom Parser nicht verarbeitet werden. Dieses Ergebnis kann durch alte Dateiformate, Dateien, die von inkompatibler Software erstellt wurden, oder durch Viren verursacht werden, die als etwas anderes als beansprucht einstehen.  <br/> |
 | `parseroutputsize` <br/> |Die Ausgabe aus der Analyse einer Anlage war zu groß und musste abgeschnitten werden.  <br/> |
 | `parserunknowntype` <br/> |Eine Anlage hatte einen Dateityp, den Microsoft 365 nicht erkennen konnte.  <br/> |
 | `parserunsupportedtype` <br/> |Eine Anlage hatte einen Dateityp, den Office 365 erkennen konnte, aber das Analysieren des Dateityps wird nicht unterstützt.  <br/> |
@@ -185,6 +185,6 @@ Beachten Sie Folgendes:
 
 2. A List Error Tags und die entsprechenden Dateitypen, für die der Fehler aufgetreten ist.
   
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 [Teilweise indizierte Elemente in eDiscovery](partially-indexed-items-in-content-search.md)
