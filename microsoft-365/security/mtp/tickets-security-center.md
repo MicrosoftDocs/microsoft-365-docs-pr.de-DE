@@ -19,64 +19,22 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: 8992efdd79295b6b56b8f033bd97b10f59a7a4d5
-ms.sourcegitcommit: bd36c88e731e3fee2a3a5cb3564fdc94f11bab94
+ms.openlocfilehash: f0aadbf2dbf8cb8d9815b4ef8b1c8d3d892c8b31
+ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769675"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49588529"
 ---
 # <a name="create-and-track-servicenow-tickets-in-the-microsoft-365-security-center"></a>Erstellen und Nachverfolgen von ServiceNow-Tickets im Microsoft 365 Security Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 >[!CAUTION]
->**Der Vorschauzeitraum für den ServiceNow-Konnektor wird enden**<br>
->Diese Funktion ist Ende November 2020 nicht mehr verfügbar. Vielen Dank für Ihr Feedback und den weiteren Support, während wir die nächsten Schritte bestimmen.
+>**Der Vorschauzeitraum für den ServiceNow-Connector wurde beendet.**<br>
+>Diese Funktion ist nicht mehr verfügbar. Vielen Dank für Ihr Feedback und den weiteren Support, während wir die nächsten Schritte bestimmen.
 
 Das [Microsoft 365-Sicherheitscenter](overview-security-center.md) wurde erweitert, sodass Tickets in ServiceNow nativ erstellt und nachverfolgt werden können. [Erfahren Sie mehr über ServiceNow](https://www.servicenow.com/)
 
 Im Sicherheitscenter können Sicherheitsadministratoren eine [Microsoft Secure Score](microsoft-secure-score.md) -Verbesserungs Aktion direkt an ServiceNow senden und ein Ticket erstellen. Es können sowohl Incident Management als auch Change Management-Tickets erstellt werden. Verfolgen Sie Tickets auf der Startseite des Sicherheitscenters und ServiceNow.
 
-- [**Informationen zu Voraussetzungen, Datenaustausch und Problembehandlung**](tickets.md)
-- **Verwalten von ServiceNow-Tickets im Compliance Center** (nicht verfügbar)
-
-## <a name="connect-microsoft-365-security-center-to-servicenow"></a>Verbinden von Microsoft 365 Security Center mit ServiceNow
-
-Navigieren Sie zur Microsoft 365-Sicherheitscenter-Startseite, um die ServiceNow-Verbindungskarte anzuzeigen.
-
-![Verwenden Sie ServiceNow](../../media/do-you-use-servicenow-250.png)
-
-Wählen Sie "mit ServiceNow verbinden" aus, um die ServiceNow-Setup Seite zu öffnen. Befolgen Sie die Anweisungen, um die Microsoft 365-Connector-APP zu autorisieren.
-
-> [!NOTE]
-> Bevor Sie die Verbindung zwischen dem Microsoft 365 Security Center und ServiceNow autorisieren, müssen Sie sicherstellen, dass Sie den Benutzernamen und das Kennwort für die Integration verwenden, die Sie in den Installationsschritten erstellt haben. Verwenden Sie Ihre persönlichen Anmeldeinformationen nicht.
-
-Nachdem Sie die Anweisungen befolgt und die Verbindung autorisiert haben, zeigen Sie den Verbindungsstatus auf der Seite Microsoft 365 Security Center Connection und in der ServiceNow Microsoft 365 Ticketing Connector App Experience an. Jetzt können Sie mit dem Erstellen von Aufgaben beginnen.
-
-### <a name="troubleshooting"></a>Problembehandlung
-
-Erfahren Sie häufig auftretende Fehler im Verbindungsprozess und wie Sie sie entschärfen können, im [Abschnitt Problembehandlung](tickets.md#troubleshooting).
-
-## <a name="create-a-task-and-share-it-to-servicenow"></a>Erstellen einer Aufgabe und freigeben für ServiceNow
-
-Nachdem die Integration eingerichtet wurde, erstellen Sie ServiceNow-Aufgaben basierend auf bestimmten [Microsoft Secure Score](microsoft-secure-score.md) -Verbesserungs Aktionen. Wechseln Sie zur Aktion sichere Ergebnisverbesserung im Microsoft 365 Security Center, und wählen Sie dann **Freigeben** aus. Eine der Dropdownoptionen ist ServiceNow.
-
-Es wird eine Aufgabe generiert, in der Sie die Priorität festlegen und den Namen, die Beschreibung oder das Fälligkeitsdatum bearbeiten können. Wenn alle erforderlichen Felder ausgefüllt sind, senden Sie die Aufgabe an ServiceNow.
-
-Die Aufgabe ist in ServiceNow als Microsoft 365 Sicherheits-und Konfigurations Änderungsanforderung sichtbar.
-
-## <a name="track-tickets"></a>Nachverfolgen von Tickets
-
-Nachdem ServiceNow Change Management-und Incident Management-Tickets erstellt wurden, werden diese auf Karten auf der Startseite von Microsoft 365 Security Center angezeigt. Auf diesen Karten können Sie ein Ticket erstellen, alle Tickets anzeigen oder die ServiceNow-Konfiguration verwalten.
-
-![ServiceNow Change Management-Tickets](../../media/change-management-375.png)  ![ServiceNow Incident Management Tickets](../../media/incident-management-375.png)
-
-Um die ServiceNow-Integration in das Microsoft 365 Security Center erneut zu überwachen oder zu verwalten, wählen Sie auf beiden Karten die Option **Manage ServiceNow Configuration** aus. Entfernen Sie von dort die aktuelle ServiceNow-Verbindung, und passen Sie die Ticket Statusnamen an.
-
-Wenn ServiceNow-Tickets im Microsoft 365 Security Center angezeigt werden, werden Ihre Aufgaben an einer Stelle gespeichert, an der Sie neben den anderen Sicherheits Dashboard-Elementen nachverfolgt und bearbeitet werden können.
-
-## <a name="resources"></a>Ressourcen
-
-- [Informationen zu Voraussetzungen, Datenaustausch und Problembehandlung](tickets.md)
-- [Microsoft-Sicherheitsbewertung](microsoft-secure-score.md)

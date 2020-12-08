@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Details zum Produktivitäts Ergebnis der Kommunikation – Personen Erfahrung.
-ms.openlocfilehash: 54764c54bc4f36b1edd9d8dd3480921d2f8490bb
-ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
+ms.openlocfilehash: de73957ffad27ddac9b5e18cd6da7becd2239a59
+ms.sourcegitcommit: 98146c67a1d99db5510fa130340d3b7be8d81b21
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49562955"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "49585316"
 ---
 # <a name="communication--people-experiences"></a>Kommunikation – Personen Erfahrungen
 
-Die Produktivitäts Bewertung unterstützt die Reise zur digitalen Transformation mit Einblicken darüber, wie Ihre Organisation Microsoft 365 verwendet, und die Technologie Erfahrungen, die Sie unterstützen. Die Bewertung Ihres Unternehmens reflektiert Personen-und Technologie Erfahrungs Messungen und kann mit Benchmarks von Organisationen vergleichbar mit ihrer Größe verglichen werden. Die Kategorie "Kommunikation" ist Teil der Measures "People Experiences". Weitere Informationen finden Sie unter Übersicht über die [Produktivitäts Bewertung](productivity-score.md) und Lesen der [Datenschutzerklärung von Microsoft](https://privacy.microsoft.com/privacystatement).
+Die Produktivitäts Bewertung unterstützt die Reise zur digitalen Transformation mit Einblicken darüber, wie Ihre Organisation Microsoft 365 verwendet, und die Technologie Erfahrungen, die Sie unterstützen. Das Bewertungsergebnis Ihrer Organisation reflektiert Messungen der Mitarbeiter- und Technologieerfahrung und kann mit Benchmarks von Organisationen verglichen werden, die größenmäßig Ihrer ähnlich sind. Die Kategorie "Kommunikation" ist Teil der Measures "People Experiences". Weitere Informationen finden Sie unter Übersicht über die [Produktivitäts Bewertung](productivity-score.md) und Lesen der [Datenschutzerklärung von Microsoft](https://privacy.microsoft.com/privacystatement).
 
 ## <a name="why-your-organizations-communication-score-matters"></a>Gründe für das Kommunikations Ergebnis Ihrer Organisation 
 
@@ -44,22 +44,25 @@ Microsoft 365 bietet Benutzern die Flexibilität, alle Kommunikationsstile anzup
 
 :::image type="content" source="../../media/primaryinsight.png" alt-text="Primäre Einblicke in die Kommunikationsmodi.":::
 
-1. **Kopfzeile:** Stellt die Schlüssel Metrik von Personen bereit, die mehr als einen Kommunikationsmodus verwenden, nämlich
-      - Senden von e-Mails über Exchange
-      - Senden von Nachrichten über Teams
-      - Veröffentlichen von Communities in "jammern"
+1. **Kopfzeile:** Stellt die Schlüssel Metrik von Personen bereit, die mehr als einen Kommunikationsmodus verwenden, nämlich:
 
-    Diese Schlüssel Metrik wird als Prozentsatz aller Personen angezeigt, die zwei oder mehr Exchange, Teams oder jammern verwenden. 
+   - Senden von e-Mails über Exchange
+   - Senden von Nachrichten über Teams
+   - Veröffentlichen von Communities in "jammern"
+
+   Diese Schlüssel Metrik wird als Prozentsatz aller Personen angezeigt, die zwei oder mehr Exchange, Teams oder jammern verwenden. 
 
 2. **Body:** Enthält weitere Informationen darüber, wie Flexibilität in den Kommunikationsmodi für Personen in Ihrer Organisation wertvoll ist.
-3. **Visualisierung des aktuellen Status:**
-    - Horizontale Leiste, wobei der blaue Teil den in der Kopfzeile ausgedrückten Prozentwert darstellt
-    - Markiert den (Zähler/Nenner), der für die Berechnung des in der Kopfzeile ausgedrückten Prozentsatzes verwendet wird:
-      - **Zähler**: Anzahl der Personen, die in den letzten 28 Tagen mehr als einen Kommunikationsmodus verwenden
-      - **Nenner**: Anzahl der Personen, die in den letzten 28 Tagen für mehr als ein Kommunikationsprodukt als aktiviert gekennzeichnet sind
-    - Der **Peer-Benchmarkwert** der Schlüssel Metrik wird auch als Prozentwert angezeigt.
 
-1. **Anzeigen von Kommunikationsressourcen:** Wenn Sie hier klicken, werden alle Supportinhalte in Form von Videos/Artikeln im Zusammenhang mit der Kommunikation eingetragen. Von diesen können Sie zur benutzerdefinierten Wiedergabeliste für die Kommunikation und anschließend für alle Produktivitäts Bewertungskategorien navigieren.
+3. **Visualisierung des aktuellen Status:**
+
+   - Horizontale Leiste, wobei der blaue Teil den in der Kopfzeile ausgedrückten Prozentwert darstellt
+   - Markiert den (Zähler/Nenner), der für die Berechnung des in der Kopfzeile ausgedrückten Prozentsatzes verwendet wird:
+     - **Zähler**: Anzahl der Personen, die in den letzten 28 Tagen mehr als einen Kommunikationsmodus verwenden
+     - **Nenner**: Anzahl der Personen, die in den letzten 28 Tagen für mehr als ein Kommunikationsprodukt als aktiviert gekennzeichnet sind
+   - Der **Peer-Benchmarkwert** der Schlüssel Metrik wird auch als Prozentwert angezeigt.
+
+4. **Anzeigen von Kommunikationsressourcen:** Wenn Sie hier klicken, werden alle Supportinhalte in Form von Videos/Artikeln im Zusammenhang mit der Kommunikation eingetragen. Von diesen können Sie zur benutzerdefinierten Wiedergabeliste für die Kommunikation und anschließend für alle Produktivitäts Bewertungskategorien navigieren.
 
 #### <a name="trend-visualization-of-primary-insight"></a>Trend Visualisierung der primären Einblicke
 
@@ -81,33 +84,49 @@ Außerdem stellen wir Ihnen Informationen zur Verfügung, die Sie dabei unterst�
 
 :::image type="content" source="../../media/howpeoplecommunicate.png" alt-text="! [Aufschlüsselung der Kommunikationsmodi]":::
 
-1. **Kopfzeile:** Unterstreicht das Ziel der Einsicht, einen detaillierten Überblick über die verschiedenen Kommunikationsmodi zu geben, die in der Kommunikation berücksichtigt werden.
-2. **Body:** Enthält Informationen zum Nutzen unterschiedlicher Modi für die Freigabe von wissen.
+1. **Kopfzeile:** Hebt das Ziel der Einblicke hervor, um eine detaillierte Zusammenfassung der verschiedenen Kommunikationsmodi bereitzustellen, die in der Kommunikation berücksichtigt werden.
+
+2. **Body:** Enthält Informationen zum Nutzen verschiedener Modi für die Freigabe von wissen.
+
 3. **Visualisierung:** Die Aufteilung stellt die Verwendung für jeden Modus dar. Der farbige Teil und der Anteil auf jeder Leiste stellen die Anzahl der Personen dar, die e-Mails, Nachrichten oder Community-Beiträge als Prozentsatz der für diesen Modus aktivierten Personen senden:
-      - **Personen, die e-Mails senden:** Der farbige Teil und der Bruchstellen den Prozentsatz der für Exchange aktivierten Benutzer dar, die e-Mails senden. Dieser Anteil wird aus folgenden Bauteilen aufgebaut:
-          - **Zähler**: Personen, die in den letzten 28 Tagen e-Mails gesendet haben
-          - **Nenner**: für Exchange in den letzten 28 Tagen aktivierte Personen
-      - **Personen, die Nachrichten in Microsoft Teams senden:** Der farbige Teil und der Bruchstellen den Prozentsatz der Benutzer dar, die für Microsoft Teams aktiviert sind, die Nachrichten senden. Dieser Anteil wird aus folgenden Bauteilen aufgebaut:
-          - **Zähler**: Personen, die in den letzten 28 Tagen Nachrichten in Microsoft Teams gesendet haben.
-          - **Nenner**: Personen, die in den letzten 28 Tagen für Microsoft Teams aktiviert wurden.
-      - **Personen Beitrag in Communities:** Der farbige Teil und der Bruchstellen den Prozentsatz der für das Jammern aktivierten Benutzer dar, die in Communities veröffentlicht werden. Dieser Anteil wird aus folgenden Bauteilen aufgebaut:
-          - **Zähler:** Personen, die in "jammern"-Communities in den letzten 28 Tagen veröffentlichen.
-          - **Nenner:** Personen, die in den letzten 28 Tagen für jammern aktiviert sind.
+
+   - **Personen, die e-Mails senden:** Der farbige Teil und der Bruchstellen den Prozentsatz der für Exchange aktivierten Benutzer dar, die e-Mails senden. Dieser Anteil wird aus folgenden Bauteilen aufgebaut:
+   
+     - **Zähler**: Personen, die in den letzten 28 Tagen e-Mails gesendet haben.
+     - **Nenner**: Personen, die in den letzten 28 Tagen für Exchange aktiviert wurden.
+     
+   - **Personen, die Nachrichten in Microsoft Teams senden:** Der farbige Teil und der Bruchstellen den Prozentsatz der Benutzer dar, die für Microsoft Teams aktiviert sind, die Nachrichten senden. Dieser Anteil wird aus folgenden Bauteilen aufgebaut:
+   
+     - **Zähler**: Personen, die in den letzten 28 Tagen Nachrichten in Microsoft Teams gesendet haben.
+     - **Nenner**: Personen, die in den letzten 28 Tagen für Microsoft Teams aktiviert wurden.
+     
+   - **Personen Beitrag in Communities:** Der farbige Teil und der Bruchstellen den Prozentsatz der für das Jammern aktivierten Benutzer dar, die in Communities veröffentlicht werden. Dieser Anteil wird aus folgenden Bauteilen aufgebaut:
+   
+     - **Zähler:** Personen, die in "jammern"-Communities in den letzten 28 Tagen veröffentlichen.
+     - **Nenner:** Personen, die in den letzten 28 Tagen für jammern aktiviert sind.
+          
 4. **Anzeigen von verwandtem Inhalt:** Wählen Sie diesen Link aus, um sortierte Videos und andere verwandte Hilfeinhalte anzuzeigen.
 
 ### <a name="mentions-in-emails"></a>@Mentions in e-Mails
 
 :::image type="content" source="../../media/emailmentions.png" alt-text="! [E-Mails mit Erwähnungen.]":::
 
-1. **Kopfzeile:** Hebt die Anhebung der Antwortrate für neue e-Mail-Threads hervor, die in den letzten 28 Tagen gestartet wurden, als Sie @Mentions enthalten.
+1. **Kopfzeile:** Hebt die Anhebung der Antwortrate für neue e-Mail-Threads hervor, die in den letzten 28 Tagen gestartet wurden, wenn Sie @Mentions enthalten.
+
 2. **Body:** Enthält Informationen zum Nutzen von @Mentions in e-Mails. Darüber hinaus werden Personen, die @Mentions verwenden, als Prozentsatz aller Benutzer ausgedrückt, die in den letzten 28 Tagen eine e-Mail gesendet haben.
+
 3. **Visualisierung:** Aufschlüsselung der Antwortrate für neue e-Mail-Threads, je nachdem, ob Sie @Mentions hatten oder nicht:
-      - **Antworten auf e-Mails mit \@ Erwähnungen:** der farbige Teil und der Bruchstellen die Antwortrate für neue e-Mail-Threads dar, die @Mentions enthalten. Dieser Anteil wird aus folgenden Bauteilen aufgebaut:
-          - **Zähler:** Neue e-Mail-Threads mit @Mentions, die in den letzten 28 Tagen gestartet und eine Antwort erhalten haben.
-          - **Nenner:** Neue e-Mail-Threads mit @Mentions, die in den letzten 28 Tagen gestartet wurden
-      - **Antworten auf e-Mails ohne \@ Erwähnungen:** der farbige Teil und der Bruchstellen die Antwortrate für neue e-Mail-Threads dar, die @Mentions enthalten. Dieser Anteil wird aus folgenden Bauteilen aufgebaut:
-          - **Zähler:** Neue e-Mail-Threads, die keine @Mentions enthalten, die in den letzten 28 Tagen gestartet wurden und auch eine Antwort erhalten haben.
-          - **Nenner:** Neue e-Mail-Threads, die nicht @Mentions enthalten, die in den letzten 28 Tagen gestartet wurden.
+
+   - **Antworten auf e-Mails mit \@ Erwähnungen:** der farbige Teil und der Bruchstellen die Antwortrate für neue e-Mail-Threads dar, die @Mentions enthalten. Dieser Anteil wird aus folgenden Bauteilen aufgebaut:
+   
+     - **Zähler:** Neue e-Mail-Threads mit @Mentions, die in den letzten 28 Tagen gestartet und eine Antwort erhalten haben.
+     - **Nenner:** Neue e-Mail-Threads mit @Mentions, die in den letzten 28 Tagen gestartet wurden.
+     
+   - **Antworten auf e-Mails ohne \@ Erwähnungen:** der farbige Teil und der Bruchstellen die Antwortrate für neue e-Mail-Threads dar, die @Mentions enthalten. Dieser Anteil wird aus folgenden Bauteilen aufgebaut:
+   
+     - **Zähler:** Neue e-Mail-Threads, die keine @Mentions enthalten, die in den letzten 28 Tagen gestartet wurden und auch eine Antwort erhalten haben.
+     - **Nenner:** Neue e-Mail-Threads, die nicht @Mentions enthalten, die in den letzten 28 Tagen gestartet wurden.
+     
 4. **Anzeigen von verwandtem Inhalt:** Wählen Sie diesen Link aus, um sortierte Videos und andere verwandte Hilfeinhalte anzuzeigen.
 
 
@@ -115,27 +134,38 @@ Außerdem stellen wir Ihnen Informationen zur Verfügung, die Sie dabei unterst�
 
 :::image type="content" source="../../media/teamsmessages.png" alt-text="! [Microsoft Teams-Nachrichtentypen.]":::
 
-1. **Kopfzeile:** Markiert die Personen, die Kanal Nachrichten gesendet haben, als Prozentsatz der Personen, die in den letzten 28 Tagen jede Art von Nachricht (einschließlich Chat und Kanal Nachrichten) gesendet haben.
-2. **Body:** Enthält Informationen zum Nutzen von Kanal Nachrichten in Microsoft Teams
+1. **Kopfzeile:** Hebt die Personen, die Kanal Nachrichten gesendet haben, als Prozentsatz der Personen an, die in den letzten 28 Tagen jede Art von Nachricht (einschließlich Chat und Kanal Nachrichten) gesendet haben.
+
+2. **Body:** Enthält Informationen zum Nutzen von Kanal Nachrichten in Microsoft Teams.
+
 3. **Visualisierung:** Bricht die Verwendung von Chat-und Kanal Nachrichten ab:
+
       - **Personen, die Chatnachrichten senden:** Der farbige Teil und der Bruchstellen die Verwendung von Chatnachrichten in Personen dar, die Nachrichten in Microsoft Teams gesendet haben. Der Bruch wird aus folgenden Bauteilen aufgebaut:
+      
         - **Zähler:** Personen, die in den letzten 28 Tagen Chatnachrichten in Microsoft Teams gesendet haben.
         - **Nenner:** Personen, die in den letzten 28 Tagen Nachrichten in Microsoft Teams gesendet haben.
+        
       - **Personen, die Kanal Nachrichten senden:** Der farbige Teil und der Bruchstellen die Verwendung von Kanal Nachrichten in Personen dar, die Nachrichten in Microsoft Teams senden. Der Bruch wird aus folgenden Bauteilen aufgebaut:
+      
         - **Zähler:** Personen, die in den letzten 28 Tagen Chatnachrichten in Microsoft Teams gesendet haben.
         - **Nenner:** Personen, die in den letzten 28 Tagen Nachrichten in Microsoft Teams gesendet haben.
+        
 4. **Anzeigen von verwandtem Inhalt:** Wählen Sie diesen Link aus, um sortierte Videos und andere verwandte Hilfeinhalte anzuzeigen.
 
 ### <a name="questions-and-answers-in-yammer"></a>Fragen und Antworten in "jammern"
 
 :::image type="content" source="../../media/yammerqsandas.png" alt-text="[Fragen und Antworten in jammern]"::: 
 
-1. **Kopfzeile:** Hebt die als "Fragen zu jammern" markierten Beiträge hervor, die eine Antwort erhalten haben, die als &quot; beste Antwort &quot; als Prozentsatz aller Beiträge markiert ist, die als Fragen zu "jammern" in den letzten 28 Tagen gekennzeichnet sind.
+1. **Kopfzeile:** Markiert die als "Fragen zu Jammer" markierten Beiträge, die eine Antwort erhalten haben, die als &quot; beste Antwort &quot; als Prozentsatz aller Beiträge markiert ist, die als Fragen zu "jammern" in den letzten 28 Tagen gekennzeichnet sind.
+
 2. **Body:** Enthält Informationen zum Nutzen von Fragen und Antworten in "jammern" zum Teilen von wissen.
+
 3. **Visualisierung:** Die Verwendung der Fragen-und Antwortfunktion in Ihrer Organisation wird unterbrochen:
-      - **Fragen:** Der farbige Teil des Balkens und die zugehörige Zahlstellen die Gesamtzahl der in den letzten 28 Tagen als Fragen markierten Beiträge dar.
-      - **Fragen mit Antworten:** Der farbige Teil des Balkens und die zugehörige Zahlstellen die Anzahl der als Fragen markierten Beiträge dar und haben in den letzten 28 Tagen Antworten erhalten.
-      - **Fragen mit besten Antworten:** Der farbige Teil des Balkens und die zugehörige Zahlstellen die Anzahl der Beiträge dar, die als Fragen markiert wurden und &quot; &quot; in den letzten 28 Tagen auch eine beste Antwort erhalten haben.
+
+   - **Fragen:** Der farbige Teil des Balkens und die zugehörige Zahlstellen die Gesamtzahl der in den letzten 28 Tagen als Fragen markierten Beiträge dar.
+   - **Fragen mit Antworten:** Der farbige Teil des Balkens und die zugehörige Zahlstellen die Anzahl der als Fragen markierten Beiträge dar und haben in den letzten 28 Tagen Antworten erhalten.
+   - **Fragen mit besten Antworten:** Der farbige Teil des Balkens und die zugehörige Zahlstellen die Anzahl der Beiträge dar, die als Fragen markiert wurden und &quot; &quot; in den letzten 28 Tagen auch eine beste Antwort erhalten haben.
+      
 4. **Anzeigen von verwandtem Inhalt:** Wählen Sie diesen Link aus, um sortierte Videos und andere verwandte Hilfeinhalte anzuzeigen.
 
 ## <a name="related-content"></a>Verwandte Inhalte

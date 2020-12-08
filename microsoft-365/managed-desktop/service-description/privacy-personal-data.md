@@ -10,12 +10,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 294a3c6c54e28fa03ff6264898e7763325f78c3e
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 8412c10416a4a131129eebd20d1b4f01228afaf3
+ms.sourcegitcommit: 280200281aec862517876319a3fe4ce170674047
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847768"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "49586685"
 ---
 # <a name="privacy-and-personal-data"></a>Datenschutz und personenbezogene Daten
 
@@ -47,6 +47,10 @@ Microsoft Managed Desktop speichert die Daten in einem oder mehreren der folgend
 
 Microsoft Managed Desktop speichert die Daten in den Vereinigten Staaten. Personenbezogene Daten werden für maximal 30 Tage von Microsoft Managed Desktop aufbewahrt.
 
+### <a name="staff-location"></a>Mitarbeiter Standort
+
+Die Teams MMD Operations und MMD Security Operations befinden sich in den USA und in Indien.
+
 ## <a name="data-usage-of-microsoft-managed-desktop"></a>Datennutzung von Microsoft Managed Desktop
 
 Microsoft Managed Desktop verwendet diese Daten:
@@ -56,7 +60,7 @@ Microsoft Managed Desktop verwendet diese Daten:
 |---------|---------|
 |Azure-Active Directory Daten     | Wird in Berichten verwendet, die für mandantenadministratoren erstellt wurden, die im Verwaltungsportal von Microsoft Managed Desktop verfügbar sind.        |
 |InTune-Daten     | Wird in Berichten verwendet, die für mandantenadministratoren erstellt wurden, die im Verwaltungsportal von Microsoft Managed Desktop verfügbar sind.        |
-|Microsoft Defender für Endpunkt     |  Dient zum Beheben von Sicherheitsbedrohungen, die auf registrierten Geräten vom Microsoft Managed Desktop Security Operations Center (SoC) erkannt wurden.  |
+|Microsoft Defender für Endpoint     |  Dient zum Beheben von Sicherheitsbedrohungen, die auf registrierten Geräten vom Microsoft Managed Desktop Security Operations Center (SoC) erkannt wurden.  |
 |Windows-Diagnosedaten     |Dient zum Ermitteln des Updatestatus verwalteter Geräte sowie zum Bereitstellen und verbessern des IT-as-a-Service-Angebots (ITaaS) von Microsoft Managed Desktop.         |
 |Kontaktdaten des Administrators     | Wird von Microsoft Managed Desktop zur Kommunikation mit mandantenadministratoren verwendet.        |
 
@@ -87,7 +91,7 @@ Weitere Informationen zu den Regionen, die Azure für die Datenspeicherung verwe
 
 InTune-Daten können in einigen verschiedenen Regionen gespeichert werden, beispielsweise in Europa Nord (Irland) und Europa West (Niederlande). Ihr IT-Administrator erstellt ein Mandantenkonto und wählt das Land aus, in dem Daten gespeichert werden, wenn Sie sich zunächst für InTune-Dienste registrieren. Eine Liste der von InTune verwendeten Rechenzentrums Standorte finden Sie unter [Microsoft InTune – wo sind meine Kundendaten?](http://intunedatacentermap.azurewebsites.net/). Weitere Informationen zur Datenspeicherung und-Verwendung durch InTune finden Sie unter [Datensammlung in InTune](https://docs.microsoft.com/intune/privacy-data-collect).
 
-### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender für Endpunkt
+### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender für Endpoint
 
 Microsoft Defender für Endpoint-Daten kann in einigen verschiedenen Regionen gespeichert werden. Aus diesem Grund arbeitet Defender for Endpoint in den Microsoft Azure-Rechenzentren in der Europäischen Union, im Vereinigten Königreich und in den USA, wie unter [Microsoft Defender for Endpoint – Datenspeicherorte](http://intunedatacentermap.azurewebsites.net/)angegeben. Weitere Informationen zur Datenspeicherung und zur Verwendung durch Defender für Endpoint finden Sie unter [welche Daten werden von Microsoft Defender für Endpoint erfasst?](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)
 

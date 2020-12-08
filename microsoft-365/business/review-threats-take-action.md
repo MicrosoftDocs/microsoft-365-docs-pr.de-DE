@@ -1,5 +1,5 @@
 ---
-title: Untersuchen erkannter Bedrohungen und Ergreifen von Maßnahmen
+title: Überprüfen erkannter Bedrohungen und ergreifen von Aktionen
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -15,14 +15,14 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Hier erfahren Sie, wie Sie von Microsoft Defender Antivirus auf Ihren Windows 10-Geräten erkannte Bedrohungen überprüfen und verwalten können.
-ms.openlocfilehash: ffdf5cffb50d6145d6059233e0850839f4dfb582
-ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
+ms.openlocfilehash: 41465cb81850415a7b490b6af7f0ec66c724ca68
+ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "49385240"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49588517"
 ---
-# <a name="review-detected-threats-and-take-action"></a>Untersuchen erkannter Bedrohungen und Ergreifen von Maßnahmen
+# <a name="review-detected-threats-and-take-action"></a>Überprüfen erkannter Bedrohungen und ergreifen von Aktionen
 
 Sobald eine bösartige Datei oder Software erkannt wird, blockiert Microsoft Defender Antivirus diese und verhindert die Ausführung. Und wenn der Cloud-geschützte Schutz aktiviert ist, werden dem Antivirus-und Antischadsoftware-Modul neu erkannte Bedrohungen hinzugefügt, damit auch Ihre anderen Geräte und Benutzer geschützt sind.
 
@@ -42,7 +42,7 @@ Sie haben mehrere Möglichkeiten, um bestimmte Informationen zu Bedrohungserkenn
 
 - Seite " **aktive Geräte** " im <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 Admin Center</a>. Weitere Informationen finden Sie unter [Verwalten von Bedrohungserkennungen auf der Seite aktive Geräte](#manage-threat-detections-on-the-active-devices-page) in diesem Artikel.
 - Die Seite " **aktive Bedrohungen** " im <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 Admin Center</a>. Weitere Informationen finden Sie unter [Manage Threat Detections on the Active Threats Page](#manage-threat-detections-on-the-active-threats-page) in this article.
-- Die **Antivirus** -Seite in <a href="https://endpoint.microsoft.com" target="_blank">Microsoft Endpoint Manager</a>. Weitere Informationen finden Sie unter [Verwalten von Bedrohungserkennungen in Microsoft Endpoint Manager](#manage-threat-detections-in-microsoft-endpoint-manager) in diesem Artikel.
+- Die **Antivirus** -Seite in <a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">Microsoft Endpoint Manager</a>. Weitere Informationen finden Sie unter [Verwalten von Bedrohungserkennungen in Microsoft Endpoint Manager](#manage-threat-detections-in-microsoft-endpoint-manager) in diesem Artikel.
 
 Weitere Informationen finden Sie unter [Threats Detected by Microsoft Defender Antivirus](threats-detected-defender-av.md).
 
@@ -88,7 +88,7 @@ Wenn Sie Details zu bestimmten Bedrohungen oder Geräten anzeigen, sehen Sie Emp
 
 Sie können den Microsoft Endpoint Manager zum Verwalten von Bedrohungserkennungen verwenden. Windows 10-Geräte müssen [in InTune registriert](/mem/intune/enrollment/windows-enrollment-methods) sein (Teil von Microsoft Endpoint Manager).
 
-1. Wechseln Sie zum Microsoft Endpoint Manager Admin Center unter <a href="https://endpoint.microsoft.com" target="_blank">https://endpoint.microsoft.com</a> , und melden Sie sich an.
+1. Wechseln Sie zum Microsoft Endpoint Manager Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">https://endpoint.microsoft.com</a> , und melden Sie sich an.
 
 2. Wählen Sie im Navigationsbereich die Option **Endpunktsicherheit** aus.
 
