@@ -99,10 +99,20 @@
       items:
         - name: Architekturposter für Microsoft Teams
           href: 'https://docs.microsoft.com/MicrosoftTeams/teams-architecture-solutions-posters?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
-        - name: Telefonielösungen
+        - name: Teams-Spracherkennung in Microsoft 365 bereitstellen
           items:
-            - name: Wählen Sie Ihre VoIP-Lösung für Teams
+            - name: Übersicht
+              href: deploy-voice.md
+            - name: Schritt 1. Lösung für die Spracherkennung auswählen
               href: 'https://docs.microsoft.com/MicrosoftTeams/cloud-voice-landing-page?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+            - name: "Schritt\_2. - Einrichten des Telefonsystems"
+              href: 'https://docs.microsoft.com/microsoftteams/setting-up-your-phone-system?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+            - name: Schritt 3. - PSTN-Konnektivität einrichten
+              items:
+                - name: Option Anrufplan
+                  href: 'https://docs.microsoft.com/microsoftteams/set-up-calling-plans?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+                - name: Option Direct Routing
+                  href: 'https://docs.microsoft.com/microsoftteams/direct-routing-configure?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
             - name: Fallstudie für multinationales Unternehmen
               href: 'https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: Zusammenarbeitsgovernance
