@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen, um zu behalten, was Sie benötigen, und zu löschen, was Sie nicht benötigen.
-ms.openlocfilehash: 5ceec4ed45286afa14004dcfcb9476040df9a5ec
-ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
+ms.openlocfilehash: e2833d966fb8a1fcc15cbeb02b781d9c0325b9c1
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "49385271"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519376"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
@@ -38,9 +38,9 @@ In den meisten Organisationen nimmt die Menge und Komplexität der Daten täglic
     
 - **Ihrer Organisation dabei helfen müssen, effektiven Wissensaustausch zu betreiben und agiler zu werden**, indem Sie sicherstellen, dass die Benutzer nur mit Inhalten arbeiten, die aktuell und für sie relevant sind. 
     
-Von Ihnen konfigurierte Aufbewahrungseinstellungen können Ihnen dabei helfen, alle diese Ziele zu erreichen. Das Verwalten von Inhalten macht häufig zwei Aktionen erforderlich:
+Die Aufbewahrungseinstellungen, die Sie konfigurieren, können Ihnen helfen, all diese Ziele zu erreichen. Zum Verwalten von Inhalten sind häufig zwei Aktionen erforderlich:
   
-- **Aufbewahrung** von Inhalten, sodass sie nicht vor dem Ende des Aufbewahrungszeitraums dauerhaft gelöscht werden. 
+- **Aufbewahrung** von Inhalten, sodass sie nicht vor dem Ende des Aufbewahrungszeitraums dauerhaft gelöscht werden 
     
 - **Endgültiges Löschen** von Inhalten am Ende des Aufbewahrungszeitraums. 
     
@@ -196,17 +196,26 @@ In Exchange werden automatisch angewendete Bezeichnungen nur auf neu gesendete N
 
 #### <a name="only-one-retention-label-at-a-time"></a>Jeweils nur eine Aufbewahrungsbezeichnung
 
-Eine E-Mail-Nachricht oder ein Dokument kann jeweils nur über eine Aufbewahrungsbezeichnung verfügen:
-  
-- Aufbewahrungsbezeichnungen, die von den Administratoren oder den Endbenutzern manuell zugewiesen wurden, können entfernt oder geändert werden.
+Auf eine E-Mail-Nachricht oder ein Dokument kann jeweils nur eine einzige Aufbewahrungsbezeichnung angewendet werden. Eine Aufbewahrungsbezeichnung kann von einem Endbenutzer oder Administrator [manuell](create-apply-retention-labels.md#manually-apply-retention-labels) angewendet werden, oder Sie verwenden eine der folgenden Methoden:
+
+- [Automatisch angewendete Bezeichnungsrichtlinie](apply-retention-labels-automatically.md)
+- [Dokumentverständnismodells für SharePoint Syntex](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-retention-label-to-a-model)
+- [Standardbezeichnung für SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set) oder [Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
+- [Outlook-Regeln](create-apply-retention-labels.md#automatically-applying-a-retention-label-to-email-by-using-rules)
+
+Für standardmäßige Aufbewahrungsbezeichnungen (sie markieren keine Elemente als einen [Eintrag oder einen behördlichen Eintrag](records-management.md#records)):
+
+- Administratoren und Endbenutzer können eine vorhandene Aufbewahrungsbezeichnung, die auf Inhalte angewendet wird, manuell ändern oder entfernen. 
+
+- Wenn bereits eine Aufbewahrungsbezeichnung für Inhalte vorhanden ist, wird die vorhandene Bezeichnung nicht automatisch entfernt oder durch eine andere Aufbewahrungsbezeichnung mit einer möglichen Ausnahme ersetzt: die vorhandene Bezeichnung wurde als Standardbezeichnung angewendet.
     
-- Wenn dem Inhalt eine automatisch anwendbare Bezeichnung zugewiesen ist, kann diese Bezeichnung durch eine veröffentlichte Aufbewahrungsbezeichnung ersetzt werden.
-    
-- Wenn dem Inhalt eine Bezeichnung für die veröffentlichte Aufbewahrung zugewiesen wurde, kann diese nicht durch eine automatische anwendbare Bezeichnung ersetzt werden.
-    
-- Wenn es mehrere Regeln gibt, durch die eine automatisch anwendbare Bezeichnung zugewiesen wird, und wenn ein Inhalt die Bedingungen verschiedener Regeln erfüllt, wird die Aufbewahrungsbezeichnung für die älteste Regel (nach Erstellungsdatum) angewendet.
-    
-Um bei der Verwendung einer Standardbezeichnung alle möglichen Ergebnisse zu verstehen, lesen Sie die Informationen im Abschnitt [Anwenden einer Standardaufbewahrungsbezeichnung auf alle Inhalte in einer Bibliothek, einem Ordner oder einer Dokumentenmappe in SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
+    Weitere Informationen zum Bezeichnungsverhalten, wenn es mit einer Standardbezeichnung angewendet wird:
+    - Standardbezeichnung für SharePoint: [Bezeichnungsverhalten, wenn Sie eine Standardbezeichnung für SharePoint verwenden](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
+    - Standardbezeichnung für Outlook: [Anwenden einer Standardaufbewahrungsbezeichnung auf einen Outlook-Ordner](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
+
+- Wenn es mehrere automatisch angewendete Bezeichnungsrichtlinien gibt, die eine Aufbewahrungsbezeichnung anwenden könnten, und der Inhalt die Bedingungen mehrerer Richtlinien erfüllt, wird die Aufbewahrungsbezeichnung für die älteste automatisch angewendete Bezeichnungsrichtlinie (nach Erstellungsdatum) angewendet.
+
+Wenn Aufbewahrungsbezeichnungen die Elemente als Eintrag oder als behördlichen Eintrag bezeichnen, werden diese Bezeichnungen niemals automatisch geändert. Nur Administratoren für den Container können Aufbewahrungsbezeichnungen manuell ändern oder entfernen, die Elemente als Eintrag, aber nicht als behördliche Einträge kennzeichnen. Weitere Informationen finden Sie unter [Vergleichen Sie die Einschränkungen für die zulässigen oder blockierten Aktionen](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
 #### <a name="monitoring-retention-labels"></a>Überwachen von Aufbewahrungsbezeichnungen
 

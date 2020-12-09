@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Eine Anforderung für alle Microsoft Information Protection-Lösungen: Erstellen, Konfigurieren und Veröffentlichen Sie Vertraulichkeitsbezeichnungen, um die Dokumente und E-Mails Ihres Unternehmens zu klassifizieren und zu schützen.'
-ms.openlocfilehash: 9fc130a15229f7d464ed8336c3ae37d1af367ed3
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: 10d677eb328ee002e187b098fa44b09372b59f72
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49073114"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568331"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Erstellen und Konfigurieren von Vertraulichkeitsbezeichnungen und deren Richtlinien
 
@@ -68,6 +68,8 @@ Der globale Administrator für Ihre Organisation verfügt über vollständige Be
     - Wenn Sie **Dateien und E-Mails** ausgewählt haben, können Sie in diesem Assistenten Einstellungen für Apps konfigurieren, die Vertraulichkeitsbezeichnungen unterstützen, darunter Office Word und Outlook. Wenn Sie diese Option nicht ausgewählt haben, zeigt der Assistent die erste Seite dieser Einstellungen zwar an, diese können aber nicht konfiguriert werden. Außerdem können die Bezeichnungen nicht von Benutzern in diesen Apps ausgewählt werden.
     
     - Wenn Sie **Gruppen und Websites** ausgewählt haben, können Sie in diesem Assistenten Einstellungen konfigurieren, die für Microsoft 365-Gruppen sowie Seiten für Teams und SharePoint gelten. Wenn Sie diese Option nicht ausgewählt haben, zeigt der Assistent die erste Seite dieser Einstellungen zwar an, diese können aber nicht konfiguriert werden. Außerdem können die Bezeichnungen nicht von Benutzern in diesen Gruppen und auf diesen Seiten ausgewählt werden.
+    
+    Weitere Informationen über den Umfang der Ressourcen in **Azure Purview (Vorschau)** finden Sie unter[Automatische Beschriftung Ihrer Inhalte in Azure Purview](https://docs.microsoft.com/azure/purview/create-sensitivity-label).
 
 4. Folgen Sie für die Bezeichnungseinstellungen den Eingabeaufforderungen im Assistenten.
     
@@ -99,9 +101,9 @@ Zusätzliche Bezeichnungseinstellungen sind mit dem Cmdlet [Set-Label](https://d
 
 Beispiel:
 
-- Verwenden Sie den Parameter *LocaleSettings* für multinationale Bereitstellungen, damit Benutzer den Bezeichnungsnamen und die QuickInfo in der jeweiligen lokalen Sprache sehen. Der [folgende Abschnitt](#example-configuration-to-configure-a-sensitivity-label-for-different-languages) enthält eine Beispielkonfiguration, bei der der Bezeichnungsname und der QuickInfo-Text für Französisch, Italienisch und Deutsch festgelegt sind.
+- Verwenden Sie den Parameter *LocaleSettings* für multinationale Bereitstellungen, damit Benutzer den Bezeichnungsnamen und die QuickInfo in der jeweiligen lokalen Sprache sehen. Der [folgende Abschnitt](#example-configuration-to-configure-a-sensitivity-label-for-different-languages) enthält eine Beispielkonfiguration, für die der Bezeichnungsname und der QuickInfo-Text für Französisch, Italienisch und Deutsch festgelegt sind.
 
-- Nur für den Azure Information Protection-Client für einheitliche Bezeichnungen können Sie [erweiterte Einstellungen](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) festlegen, die das Festlegen einer Bezeichnungsfarbe und das Anwenden einer benutzerdefinierten Eigenschaft beim Anwenden einer Bezeichnung umfassen. Die vollständige Liste finden Sie unter [Verfügbare erweiterte Einstellungen für Bezeichnungen](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels) im Administratorhandbuch für diesen Client.
+- Legen Sie nur für den Azure Information Protection-Client für einheitliche Bezeichnungen [erweiterte Einstellungen](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) fest, die das Festlegen einer Bezeichnungsfarbe und das Anwenden einer benutzerdefinierten Eigenschaft beim Anwenden einer Bezeichnung umfassen. Die vollständige Liste finden Sie unter [Verfügbare erweiterte Einstellungen für Bezeichnungen](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels) im Administratorhandbuch für diesen Client.
 
 #### <a name="example-configuration-to-configure-a-sensitivity-label-for-different-languages"></a>Beispielkonfiguration zur Konfiguration einer Vertraulichkeitsbezeichnung für verschiedene Sprachen
 
@@ -167,6 +169,8 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
     Die Richtlinieneinstellungen, die Sie sehen, entspricht dem von Ihnen festgelegten Bereich der Bezeichnungen. Wenn Sie beispielsweise Bezeichnungen ausgewählt haben, denen nur der Bereich **Dateien und E-Mails** zugewiesen ist, sehen Sie die Richtlinieneinstellungen **Diese Bezeichnung standardmäßig auf Gruppen und Websites anwenden** und **Benutzer auffordern, ihren Gruppen und Websites eine Bezeichnung zuzuweisen** nicht.
     
     Weitere Informationen zu diesen Einstellungen finden Sie unter [Wirkung von Bezeichnungsrichtlinien](sensitivity-labels.md#what-label-policies-can-do) in den Übersichtsinformationen sowie im Assistenten in der Hilfe zu den einzelnen Einstellungen.
+    
+    Für Bezeichnungen, die für **Azure Purview-Ressourcen (Vorschau)** konfiguriert wurden, gilt: Diese Bezeichnungen sind mit keinen Richtlinieneinstellungen verknüpft.
 
 7. Wiederholen Sie diese Schritte, wenn Sie für verschiedene Benutzer oder Bereiche unterschiedliche Richtlinieneinstellungen benötigen. Sie möchten z. B. zusätzliche Bezeichnungen für eine Gruppe von Benutzern oder eine andere Standardbezeichnung für eine Untergruppe von Benutzern festlegen. Oder Sie haben Bezeichnungen so konfiguriert, dass ihnen unterschiedliche Bereiche zugewiesen sind.
 

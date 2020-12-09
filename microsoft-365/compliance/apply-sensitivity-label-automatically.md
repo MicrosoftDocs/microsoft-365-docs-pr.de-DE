@@ -1,5 +1,5 @@
 ---
-title: Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
+title: Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte in Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -15,21 +15,24 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch einem Dokument oder einer E-Mail zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: 705752a63d3cd1ca5f6950643648ba5c3dd50336
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch Dateien und E-Mails zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
+ms.openlocfilehash: 15b841f857eee1861a39a3d0e2e27025fadb90f4
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551346"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568497"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
 
-Wenn Sie ein Empfindlichkeitsetikett erstellen, können Sie dieses Etikett automatisch dem Inhalt zuweisen, wenn es den von Ihnen angegebenen Bedingungen entspricht.
+> [!NOTE]
+> Informationen zur automatischen Anwendung einer Vertraulichkeitsbezeichnung in Azure Purview (Vorschau) finden Sie unter [Automatische Beschriftung Ihrer Inhalte in Azure Purview](https://docs.microsoft.com/azure/purview/create-sensitivity-label).
 
-Die Möglichkeit, Vertraulichkeitsbezeichnungen automatisch auf Inhalte anzuwenden, ist aus den folgenden Gründen wichtig:
+Wenn Sie ein Empfindlichkeitsetikett erstellen, können Sie dieses Etikett automatisch Dateien und E-Mails zuweisen, wenn es den von Ihnen angegebenen Bedingungen entspricht.
+
+Diese Möglichkeit, Vertraulichkeitsbezeichnungen automatisch auf Inhalte anzuwenden, ist aus den folgenden Gründen wichtig:
 
 - Sie müssen die Benutzer nicht schulen, damit sie alle Ihre Klassifizierungen kennen.
 
@@ -39,9 +42,9 @@ Die Möglichkeit, Vertraulichkeitsbezeichnungen automatisch auf Inhalte anzuwend
 
 Wenn der Inhalt manuell bezeichnet wurde, wird diese Bezeichnung niemals durch eine automatische Bezeichnung ersetzt. Die automatische Bezeichnung kann jedoch eine [Bezeichnung mit niedrigerer Priorität](sensitivity-labels.md#label-priority-order-matters) ersetzen, die automatisch angewendet wurde.
 
-Es gibt zwei unterschiedliche Methoden für die automatische Anwendung einer Vertraulichkeitsbezeichnung:
+Es gibt zwei unterschiedliche Methoden für die automatische Anwendung einer Vertraulichkeitsbezeichnung auf Inhalte in Microsoft 365:
 
-- **Clientseitige Bezeichnung, wenn Benutzer Dokumente bearbeiten oder E-Mails verfassen (auch beantworten oder weiterleiten)**: Verwenden Sie ein Label, das für die automatische Bezeichnung für Office-Anwendungen (Word, Excel, PowerPoint und Outlook) konfiguriert ist. 
+- **Clientseitige Bezeichnung, wenn Benutzer Dokumente bearbeiten oder E-Mails verfassen (auch beantworten oder weiterleiten)**: Verwenden Sie ein Label, das für die automatische Bezeichnung für Dateien und E-Mails (einschließlich Word, Excel, PowerPoint und Outlook) konfiguriert ist. 
     
     Diese Methode unterstützt das Empfehlen einer Bezeichnung für Benutzer sowie das automatische Anwenden einer Bezeichnung. In beiden Fällen entscheidet der Benutzer aber, ob die Bezeichnung angenommen oder abgelehnt werden soll, um die richtige Bezeichnung von Inhalten zu gewährleisten. Diese clientseitige Beschriftung hat nur minimale Verzögerungen für Dokumente, da die Bezeichnung noch vor dem Speichern des Dokuments angewendet werden kann. Allerdings unterstützen nicht alle Client-Apps die automatische Bezeichnung. Diese Fähigkeit wird durch den Assistent für einheitliche Bezeichnungen von Azure Information Protection und [einige Versionen von Office](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) unterstützt. 
     
@@ -75,7 +78,7 @@ Es gibt zwei unterschiedliche Methoden für die automatische Anwendung einer Ver
 
 Verwenden Sie die folgende Tabelle, um die Unterschiede im Verhalten der beiden sich ergänzenden, automatischen Bezeichnungsmethoden zu erkennen:
 
-|Feature oder Verhalten|Bezeichnungseinstellung: automatisches Bezeichnen für Office-Anwendungen |Richtlinie: automatisches Bezeichnen|
+|Feature oder Verhalten|Bezeichnungseinstellung: automatische Bezeichnung von Dateien und E-Mails  |Richtlinie: automatische Bezeichnung|
 |:-----|:-----|:-----|
 |App-Abhängigkeit|[Ja](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |Nein \* |
 |Nach Speicherort einschränken|Nein |Ja |
@@ -110,7 +113,7 @@ Die Einstellungen für das automatische Bezeichnen für Office-Apps sind verfüg
 
 ![Bereichsoptionen bei Vertraulichkeitsbezeichnungen für Dateien und E-Mails](../media/filesandemails-scope-options-sensitivity-label.png)
 
-Wenn Sie den Assistenten durchlaufen, wird die Seite **Automatisches Bezeichnen für Office-Apps** angezeigt, auf der Sie aus einer Liste mit vertraulichen Informationstypen oder trainierbaren Klassifizierungsmerkmalen auswählen können:
+Wenn Sie den Assistenten durchlaufen, wird die Seite **Automatisches Bezeichnen für Dateien und E-Mails** angezeigt, auf der Sie aus einer Liste mit vertraulichen Informationstypen oder trainierbaren Klassifizierungsmerkmalen auswählen können:
 
 ![Bezeichnungsbedingungen für die automatische Zuweisung von Bezeichnungen in Office-Apps](../media/sensitivity-labels-conditions.png)
 
