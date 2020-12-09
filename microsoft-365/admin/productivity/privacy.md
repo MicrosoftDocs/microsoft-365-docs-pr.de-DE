@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Wie Datenschutz mit dem Produktivitäts Ergebnis geschützt wird.
-ms.openlocfilehash: db123042761b07ed64dd2dd94e783d65205e1460
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: ceb19fcb7bbf2f6a58e38684604ed3b0dac2a5d4
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561510"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604326"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>Datenschutz-Steuerelemente für Produktivitäts Bewertung
 
@@ -43,12 +43,12 @@ Die Steuerelemente geben Ihnen Folgendes:
 Um das gesamte Produktivitäts Ergebnis anzuzeigen, müssen Sie eine der folgenden Administratorrollen sein:
 
 - Globaler Administrator
-- Exchange-Administratoren
+- Exchange-Administrator
 - SharePoint-Administrator
 - Skype for Business-Administrator
-- Teams Administrator
+- Microsoft Teams-Administrator
 - Globaler Leser
-- Berichtleseberechtigter
+- Berichteleser
 - Verwendungs Zusammenfassungsberichte-Leser
 
 Zuweisen der Leserrolle "Berichte" oder "Verwendungs Zusammenfassungsberichte" für alle Benutzer, die für Änderungsverwaltung und-Annahme zuständig sind, jedoch nicht unbedingt als IT-Administrator. Durch diese Rolle erhalten Sie Zugriff auf die vollständige Produktivitäts BEWERTUNGSUMGEBUNG im Microsoft 365 Admin Center.
@@ -73,7 +73,7 @@ Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $u.ObjectId
 
 ## <a name="capability-to-opt-out-of-people-experiences"></a>Möglichkeit zum Deaktivieren von Personen Erfahrungen
 
-Sie können auch den Bereich mit den Personen Erlebnissen der Produktivitäts Bewertung deaktivieren. Wenn Sie sich entschließen, kann niemand aus Ihrer Organisation diese Metriken anzeigen, und Ihre Organisation wird aus allen Berechnungen entfernt, die Kommunikation, Besprechungen, Zusammenarbeit, Inhalts Zusammenarbeit und Mobilität beinhalten.
+Sie können auch den Bereich mit den Personen Erlebnissen der Produktivitäts Bewertung deaktivieren. Wenn Sie sich entschließen, kann niemand aus Ihrer Organisation diese Metriken anzeigen, und Ihre Organisation wird aus allen Berechnungen entfernt, die Kommunikation, Besprechungen, Zusammenarbeit, Inhalts Zusammenarbeit und Mobilität beinhalten. Sie müssen ein globaler Administrator sein, um Ihre Organisation aus den Berichten über Personen Erfahrung zu entscheiden.
 
 So wählen Sie Put:
 

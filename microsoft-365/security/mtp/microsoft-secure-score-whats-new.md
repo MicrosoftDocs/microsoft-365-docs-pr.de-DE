@@ -20,22 +20,26 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 6d1358da465bd7e31ca7b234f140aa8e48bb7508
-ms.sourcegitcommit: aa8d2de6ffac0157fffd14d0ea7f51ef0c287607
+ms.openlocfilehash: 4b25f701aca24563dc4f1a15f78a80e1e2064367
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49373995"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604383"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Neuerungen in Microsoft Secure Score
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Damit die Microsoft-Sicherheitsbewertung zu einem besseren Ansprechpartner für Ihren Sicherheitsstatus wird, haben wir einige Änderungen vorgenommen. Wenn Sie mehr über geplante Änderungen wissen möchten, lesen Sie [Bald in der Microsoft-Sicherheitsbewertung verfügbar](microsoft-secure-score-whats-coming.md).
+Damit die Microsoft-Sicherheitsbewertung zu einem besseren Ansprechpartner für Ihren Sicherheitsstatus wird, haben wir einige Änderungen vorgenommen. Wenn Sie mehr über geplante Änderungen wissen möchten, lesen Sie [Bald in der Microsoft-Sicherheitsbewertung verfügbar](microsoft-secure-score-whats-coming.md)
 
 Microsoft Secure Score finden Sie https://security.microsoft.com/securescore im [Microsoft 365 Security Center](overview-security-center.md).
 
 ## <a name="november-2020"></a>November 2020
+
+### <a name="removed-the-ability-to-create-servicenow-tickets-through-secure-score"></a>Die Möglichkeit, ServiceNow-Tickets über Secure Score zu erstellen, wurde entfernt. 
+
+Die Möglichkeit, ServiceNow-Tickets über Secure Score zu erstellen, indem Sie **> ServiceNow freigeben** , ist nicht mehr verfügbar. Vielen Dank für Ihr Feedback und den weiteren Support, während wir die nächsten Schritte bestimmen.
 
 ### <a name="added-3-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Drei Dienste-bezogene Verbesserungs Aktionen für Microsoft Defender for Endpoint (zuvor Microsoft Defender ATP) hinzugefügt:
 
@@ -43,7 +47,7 @@ Microsoft Secure Score finden Sie https://security.microsoft.com/securescore im 
 - Ändern des ausführbaren Pfads des Diensts in einen allgemeinen geschützten Speicherort
 - Ändern des Dienstkontos, um das zwischengespeicherte Kennwort in der Windows-Registrierung zu vermeiden
 
-## <a name="october-2020"></a>Oktober 2020
+## <a name="october-2020"></a>Oktober 2020
 
 ### <a name="remove-improvement-action-related-to-microsoft-defender-for-endpoint"></a>Entfernen von Verbesserungs Aktionen im Zusammenhang mit Microsoft Defender für Endpoint
 

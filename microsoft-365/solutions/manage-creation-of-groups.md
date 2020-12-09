@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Erfahren Sie, wie Sie steuern, welche Benutzer Microsoft 365-Gruppen erstellen können.
-ms.openlocfilehash: e3424a9cc916c9464478fbe4411bbbf7b971d989
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 3a0ac5ef48eabfd06e0df3f509c7d8e4be3cff10
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572621"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602019"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>Verwalten von Personen, die Microsoft 365-Gruppen erstellen können
 
@@ -114,7 +114,7 @@ und [melden sich bei der entsprechenden Aufforderung mit Ihrem Administratorkont
 
 ```PowerShell
 $GroupName = "<SecurityGroupName>"
-$AllowGroupCreation = $False"
+$AllowGroupCreation = $False
 
 Connect-AzureAD
 

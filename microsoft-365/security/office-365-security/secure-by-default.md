@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über die Einstellung "standardmäßig sicher" in Exchange Online Protection (EoP).
-ms.openlocfilehash: 54000d351463ba90751f1f27638fb52847cf05ce
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: 758d2169d80630a38c0b498e8c1848568e5ec941
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558514"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602031"
 ---
 # <a name="secure-by-default-in-office-365"></a>Standardmäßig sichern in Office 365
 
@@ -40,6 +40,8 @@ Microsoft 365-Organisationen mit Postfächern in Exchange Online sind durch Exch
 
 - E-Mails mit mutmaßlicher Schadsoftware werden automatisch isoliert, und Empfänger werden benachrichtigt. Weitere Informationen finden Sie unter [configure Anti-Malware Policies in EoP](configure-anti-malware-policies.md).
 - E-Mail-Nachrichten, die als Phishing mit hoher Vertrauenswürdigkeit identifiziert werden, werden gemäß der Anti-Spam-Richtlinie behandelt. Weitere Informationen finden Sie unter [configure Anti-Spam Policies in EoP](configure-your-spam-filter-policies.md).
+
+Weitere Informationen zu EoP finden Sie unter [Exchange Online Protection Overview](exchange-online-protection-overview.md).
 
 Da Microsoft unsere Kunden standardmäßig schützen möchte, werden einige Überschreibungen von Mandanten nicht auf Schadsoftware oder Phishing für hohe Vertrauenswürdigkeit angewendet. Zu diesen Außerkraftsetzungen gehören:
 
@@ -65,5 +67,5 @@ Sie sollten die Verwendung von Außerkraftsetzungen in den folgenden Szenarien n
 
 - Phishing-Simulationen: Simulierte Angriffe können Sie bei der Identifizierung von anfälligen Benutzern unterstützen, bevor ein echter Angriff Ihre Organisation beeinträchtigt.
 - Security/Cops Mailboxes: dedizierte Postfächer, die von Sicherheitsteams verwendet werden, um nicht gefilterte Nachrichten (sowohl gut als auch schlecht) abzurufen. Teams können dann überprüfen, ob Sie schädlichen Inhalt enthalten.
-- Drittanbieter Filter: einige Drittanbieter empfehlen das Deaktivieren von EoP (SCL =-1), da der Filter eines Drittanbieters die e-Mail-Filterung verwalten wird. Microsoft rät davon ab, EoP zu deaktivieren, da EoP für Defender für Office 365 erforderlich ist. Stattdessen empfiehlt es sich, die [Erweiterte Filterung für Connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)zu aktivieren.
+- Drittanbieter Filter: einige Drittanbieter empfehlen das Deaktivieren von EoP (SCL =-1), da der Filter eines Drittanbieters die e-Mail-Filterung verwalten wird. Microsoft rät davon ab, EoP zu deaktivieren, da EoP für [Microsoft Defender für Office 365](office-365-atp.md)erforderlich ist. Stattdessen empfiehlt es sich, die [Erweiterte Filterung für Connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)zu aktivieren.
 - Falsch positive Ergebnisse: Sie möchten möglicherweise vorübergehend bestimmte Nachrichten zulassen, die von Microsoft [über Administrator übermittungen](admin-submission.md)noch analysiert werden. Wie bei allen Außerkraftsetzungen wird empfohlen, dass Sie temporär sind.

@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e42c65fdb4d409c1da7b85fbe7eca13170b9b974
-ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
+ms.openlocfilehash: 950daef315ef27fe5d6bc40528eb0104974c8c00
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "49409233"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604395"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Was kommt mit Microsoft Secure Score
 
@@ -44,14 +44,6 @@ Hinzufügen von 6 Konten bezogenen Verbesserungs Aktionen für Microsoft Defende
 - "Minimales Kennwortalter" auf "1 oder mehr Tage (en)" festlegen
 - Deaktivieren des integrierten Administrator Kontos
 - Deaktivieren des integrierten Gastkontos
-
-### <a name="november-2020"></a>November 2020
-
-#### <a name="removing-the-ability-to-create-servicenow-tickets-through-secure-score"></a>Entfernen der Möglichkeit zum Erstellen von ServiceNow-Tickets über Secure Score 
-
-Die Möglichkeit, ServiceNow-Tickets über Secure Score zu erstellen, indem Sie **> ServiceNow freigeben** , wird entfernt.
-
-Der Vorschauzeitraum für den ServiceNow-Konnektor wird enden. Diese Funktion ist Ende 2020 nicht mehr verfügbar. Vielen Dank für Ihr Feedback und den weiteren Support, während wir die nächsten Schritte bestimmen.
 
 ## <a name="related-resources"></a>Verwandte Ressourcen
 

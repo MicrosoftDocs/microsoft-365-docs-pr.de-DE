@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 description: Hier erfahren Sie, wie Sie die Zusammenarbeit mit sicheren Inhalten in Microsoft Teams einrichten, um Ihre Daten auf der Grundlage ihrer Vertraulichkeit zu schützen.
-ms.openlocfilehash: 310605d0db84e33be1d5fdc925fadcfcdf9dddaf
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 4f2e157025f00660e77ba3377221368e37e45445
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906799"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602073"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Sichere Zusammenarbeit mit Microsoft 365 einrichten
 
@@ -60,13 +60,13 @@ Informationen, die für den Erfolg Ihrer Organisation entscheidend sind oder str
 
 Für alle oben genannten Szenarien können Sie Microsoft Teams-Teams verwenden, um die Informationen zu speichern, freizugeben und zusammenzuarbeiten. 
 
-Um Secure collabration zu konfigurieren, verwenden Sie diese Microsoft 365-Funktionen und-Funktionen.
+Um die sichere Zusammenarbeit zu konfigurieren, verwenden Sie diese Microsoft 365-Funktionen und-Funktionen.
 
 | Produkt oder Komponente | Funktion oder Feature | Lizenzierung |
 |:-------|:-----|:-------|
 | Microsoft Defender für Office 365 | Sichere Anlagen für SpO, OneDrive und Teams; Sichere Dokumente; Sichere Links für Teams    | Microsoft 365 E1, E3 und E5 |
 | SharePoint    | Website-und Dateifreigabe Richtlinien, Website Freigabeberechtigungen, Freigabelinks, Zugriffsanforderungen, Einstellungen für die Website-Gast Freigabe | Microsoft 365 E1, E3 und E5 |
-| Microsoft Teams   | Gastzugriff, private Teams, private Kanäle | Microsoft 365 E1, E3 und E5 |
+| Microsoft Teams   | Gastzugriff, private Teams, private Kanäle | Microsoft 365 E1, E3 und E5 |
 | Microsoft 365 Compliance  | Vertraulichkeitsbezeichnungen    | Microsoft 365 E3 und E5 |
 
 ### <a name="using-teams-for-all-kinds-of-data"></a>Verwenden von Microsoft Teams für alle Arten von Daten
@@ -76,9 +76,9 @@ Um den Zugriff auf Informationen mit unterschiedlichen Sensitivitäten zu verwal
 ![Miniaturbild für Poster der logischen Architektur von Teams](../media/solutions-architecture-center/Teams-tiers-of-protection-1.png)
 
 
-Diese Ebenen – *Baseline* , *sensibel* und *hoch sensibel* – verbessern schrittweise den Schutz, der zur Vermeidung von über-und potenziellem Informationsverlust beiträgt, wie in der folgenden Tabelle dargestellt.
+Diese Ebenen – *Baseline*, *sensibel* und *hoch sensibel* – verbessern schrittweise den Schutz, der zur Vermeidung von über-und potenziellem Informationsverlust beiträgt, wie in der folgenden Tabelle dargestellt.
 
-||**Baseline-Ebene**|**Vertrauliche Ebene**|**Hochgradig sensible Ebene**|
+|-|**Baseline-Ebene**|**Vertrauliche Ebene**|**Hochgradig sensible Ebene**|
 |:--|:-----------|:------------|:-------------------|
 |Öffentliches oder privates Team|Entweder|Private|Private|
 |Nicht authentifizierte Freigabe|Gesperrt|Gesperrt|Gesperrt|
