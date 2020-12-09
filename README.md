@@ -10,7 +10,7 @@ Mitwirkende, die nur selten oder kleine Aktualisierungen vornehmen, können die 
 
 1. Stellen Sie sicher, dass Sie mit Ihrem GitHub-Konto bei github.com angemeldet sind.
 2. Wechseln Sie zu der Seite, die Sie in docs.Microsoft.com bearbeiten möchten.
-3. Klicken Sie auf der rechten Seite des Zeichenblatts auf **Bearbeiten** (Bleistiftsymbol).
+3. Klicken Sie auf der rechten Seite des Zeichenblattes auf **Bearbeiten** (Bleistiftsymbol).
 
    ![Schaltfläche "Bearbeiten" auf docs.Microsoft.com](microsoft-365/media/quick-update-edit.png)
 
@@ -18,7 +18,7 @@ Mitwirkende, die nur selten oder kleine Aktualisierungen vornehmen, können die 
 
    ![Schaltfläche "Bearbeiten" auf GitHub.com](microsoft-365/media/quick-update-github.png)
 
-5. Das Thema wird in einer Bearbeitungsseite mit Nummerierung geöffnet, auf der Sie Änderungen an der Datei vornehmen können. Dateien in GitHub werden unter Verwendung von Abschriften Sprache geschrieben und bearbeitet. Hilfe zur Verwendung von Abschlägen finden Sie unter [Mastering Abschlag](https://guides.github.com/features/mastering-markdown/). Wählen Sie die Registerkarte **Vorschau der Änderungen** aus, um Ihre Änderungen während des Wechselns anzuzeigen.
+5. Das Thema wird in einer Bearbeitungsseite mit Nummerierung geöffnet, auf der Sie Änderungen an der Datei vornehmen können. Dateien in GitHub werden unter Verwendung von Abschriften Sprache geschrieben und bearbeitet. Hilfe zur Verwendung von Abschlägen finden Sie unter [Mastering Abschlag](https://guides.github.com/features/mastering-markdown/). Wählen Sie die Registerkarte **Vorschau der Änderungen** aus, um Ihre Änderungen während des Wechsels anzuzeigen.
 
 6. Wenn Sie die Änderungen abgeschlossen haben, wechseln Sie im Abschnitt **vorschlagen von Datei** Änderungen am unteren Rand der Seite:
 
