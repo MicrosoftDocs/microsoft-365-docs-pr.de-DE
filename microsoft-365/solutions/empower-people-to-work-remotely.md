@@ -18,16 +18,16 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
 description: Vergewissern Sie sich, dass Sie alle Features in Microsoft 365 aktiviert haben, um die Produktivität der Remotearbeitskraft zu maximieren und den sicheren Zugriff auf Ihre Server, Daten und die Cloud aufrechtzuerhalten.
-ms.openlocfilehash: 833f0351c3eb78afb7218ea1c1c51151d70bb608
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: 1af5d1dd2fbc6f5792ee0458e521dfa2f46f46b5
+ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371502"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49588573"
 ---
-# <a name="empower-remote-workers-with-microsoft-365"></a>Remotemitarbeiter mit Microsoft 365 fördern
+# <a name="empower-remote-workers-with-microsoft-365"></a>Fördern von Remotemitarbeitern mit Microsoft 365
 
-Möglicherweise muss Ihr Unternehmen Ihren Mitarbeitern von zu Hause aus einen sicheren Zugang zu den lokalen und Cloud-basierten Informationen, Tools und Ressourcen Ihres Unternehmens ermöglichen. Für viele Unternehmen ist es wichtig, dass Mitarbeiter auch außerhalb der Firma arbeiten können:
+Ihr Unternehmen muss möglicherweise Ihren Arbeitnehmern von zu Hause aus einen sicheren Zugang zu den Informationen, Tools und Ressourcen Ihres Unternehmens vor Ort und in der Cloud ermöglichen. Es ist für viele Organisationen wichtig, den Mitarbeitern das Arbeiten außerhalb des Büros zu ermöglichen:
 
 - Einsparen von Bürofläche.
 - Einstellung und Bindung von Arbeitnehmern, die nicht bereit sind, umzuziehen.
@@ -67,11 +67,11 @@ Diese Lösung bietet die folgenden Hauptfunktionen.
 
   - Freigegebene Arbeitsbereiche für cloudbasierte Dateispeicherung mit globalem Zugriff und Zusammenarbeit in Echtzeit mit SharePoint und OneDrive.
 
-  - Gemeinsame Aufgaben und Workflows, um Arbeit aufzuteilen und zu erledigen. 
+  - Gemeinsame Aufgaben und Workflows, um die Arbeit aufzuteilen und Dinge zu erledigen. 
 
-Für eine nahtlose Benutzererfahrung sollten Ihre lokalen Active Directory Domain Services (AD DS)-Benutzerkonten mit Azure Active Directory (Azure AD) synchronisiert werden. Um Ihre Windows 10-Geräte zu schützen, sollten sie bei Intune angemeldet sein. Hier ist eine Gesamtübersicht über die Infrastruktur.
+Für einen flüssigen Anmeldevorgang sollten Ihre lokalen AD DS-Benutzerkonten (Active Directory Domain Services) mit Azure Active Directory (Azure AD) synchronisiert werden. Um Ihre Windows 10-Geräte zu schützen, sollten sie in Intune registriert werden. Hier ist eine allgemeine Übersicht über die Infrastruktur.
 
-![Basisinfrastruktur für Remotemitarbeiter mit Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
+![Grundlegende Infrastruktur für Remotemitarbeiter mit Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
 
 Verwenden Sie diese Microsoft 365-Features, um die Funktionen von Microsoft 365 für Ihre Remotemitarbeiter zu aktivieren.
 
@@ -101,7 +101,17 @@ Informationen zu den Sicherheits- und Compliance-Kriterien finden Sie unter [Ber
 
 Sie können dieses Poster auch im [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf)-Format herunterladen und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
 
-Nutzen Sie diese Schritte, um den Zugriff auf die Server und Cloud-Dienste Ihres Unternehmens zu sichern und zu optimieren und eine maximale Mitarbeiterproduktivität zu ermöglichen.
+## <a name="provide-remote-working-for-all-of-your-workers"></a>Ermöglichen Sie all Ihren Mitarbeitern Remotearbeit.
+
+Mit diesen Geräten können Sie allen Ihren Mitarbeitern ermöglichen, überall produktiv zu sein:
+
+- Modernes Gerät, wie z. B. Surface-Laptop mit Windows 10, das über die Features, Sicherheit und Leistung verfügt, um direkt über das Internet auf Microsoft 365 Cloud-Apps und -Dienste zuzugreifen.
+
+- Alle Geräte, einschließlich älterer Laptops oder Desktops, die von zu Hause aus genutzt werden und indirekt über einen schnell bereitgestellten [virtuellen Desktop mit Windows 10](empower-people-to-work-remotely-remote-access.md#deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices) auf Microsoft 365 Cloud-Apps und -Dienste zugreifen können. Diese Option bietet hohe Leistung, starke Sicherheit und vereinfachte IT-Verwaltung.
+
+## <a name="next-steps"></a>Nächste Schritte
+
+Nutzen Sie diese Schritte, um den Zugriff auf die Server und Clouddienste Ihres Unternehmens zu sichern und zu optimieren und eine maximale Mitarbeiterproduktivität zu ermöglichen.
 
 1. [Erhöhung der Anmeldesicherheit durch MFA](empower-people-to-work-remotely-secure-sign-in.md)
 2. [Bereitstellung des Remotezugriffs auf lokale Apps und Dienste](empower-people-to-work-remotely-remote-access.md)

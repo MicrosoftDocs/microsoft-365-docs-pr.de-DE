@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'Erfahren Sie, wie ein globaler Administrator die E-Mail-Adresse und den Anzeigenamen eines Benutzers ändern kann. '
-ms.openlocfilehash: 1672401e9a8e994b91804870130b659ad8724b5e
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 7f894af3778964dfa6c696c1f467bc0dd8313f32
+ms.sourcegitcommit: 98146c67a1d99db5510fa130340d3b7be8d81b21
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551508"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "49585294"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Ändern von Benutzernamen und -E-Mail-Adressen
 
@@ -81,7 +81,8 @@ Sie müssen [globaler Administrator](about-admin-roles.md) sein, um diese Schrit
 
 ::: moniker-end
 
-**WICHTIG**: Wenn Sie eine Fehlermeldung erhalten, sehen Sie unter [Fehlermeldungen lösen](#resolve-error-messages) nach.
+> [!IMPORTANT]
+> Wenn Sie eine Fehlermeldung erhalten, sehen Sie unter [Fehlermeldungen lösen](#resolve-error-messages) nach.
 
 ## <a name="set-the-primary-email-address"></a>Die primäre E-Mail-Adresse festlegen.
 
@@ -93,23 +94,24 @@ Sie müssen [globaler Administrator](about-admin-roles.md) sein, um diese Schrit
 
 3. Wählen Sie **Als primäre E-Mail-Adresse festlegen** für die E-Mail-Adresse aus, die Sie als primäre E-Mail-Adresse für diese Person festlegen möchten. 
     
-    **WICHTIG**: Die Option zum Festlegen der primären E-Mail-Adresse wird nicht angezeigt, wenn Sie Microsoft 365 bei GoDaddy oder einem anderen Partnerdienst mit einer Verwaltungskonsole erworben haben. Melden Sie sich stattdessen bei der Verwaltungskonsole von GoDaddy bzw. des Partners an, um den primären Alias festzulegen. 
-    
-    Diese Option wird außerdem nur angezeigt, wenn Sie ein globaler Administrator sind. Wenn Sie die Option nicht sehen, verfügen Sie nicht über die Berechtigung, den Namen und die primäre E-Mail-Adresse eines Benutzers zu ändern.
+   > [!IMPORTANT]
+   > Die Option zum Festlegen der primären E-Mail-Adresse wird nicht angezeigt, wenn Sie Microsoft 365 bei GoDaddy oder einem anderen Partnerdienst mit einer Verwaltungskonsole erworben haben. Melden Sie sich stattdessen bei der Verwaltungskonsole von GoDaddy bzw. des Partners an, um den primären Alias festzulegen. 
+   >  
+   > Diese Option wird außerdem nur angezeigt, wenn Sie ein globaler Administrator sind. Wenn Sie die Option nicht sehen, verfügen Sie nicht über die Berechtigung, den Namen und die primäre E-Mail-Adresse eines Benutzers zu ändern.
   
 4. Es wird eine große gelbe Warnmeldung angezeigt, dass Sie dabei sind, die Anmeldeinformationen der Person zu ändern. Wählen Sie **Speichern** und dann **Schließen** aus.
     
 5. Übermitteln Sie der Person die folgenden Informationen:
  
-  - Diese Änderung kann eine Weile dauern.
+   - Diese Änderung kann eine Weile dauern.
   
-  - Der neue Benutzername. Dieser wird für die Anmeldung bei Microsoft 365 benötigt.
+   - Der neue Benutzername. Dieser wird für die Anmeldung bei Microsoft 365 benötigt.
     
-  - Wenn die Person Skype for Business Online verwendet, muss sie von ihr organisierte Skype for Business Online-Besprechungen erneut planen und ihre externen Kontakte auffordern, ihre Kontaktinformationen zu aktualisieren.
+   - Wenn die Person Skype for Business Online verwendet, muss sie von ihr organisierte Skype for Business Online-Besprechungen erneut planen und ihre externen Kontakte auffordern, ihre Kontaktinformationen zu aktualisieren.
 
-  - Wenn die Person OneDrive verwendet, wurde die URL zu diesem Speicherort geändert. Wenn sich OneNote-Notizbücher auf ihrem OneDrive befinden, müssen sie möglicherweise geschlossen und in OneNote erneut geöffnet werden. Wenn über OneDrive Dateien geteilt wurden, funktionieren die Links zu den Dateien möglicherweise nicht, und die Person kann diese wieder freigeben.    
+   - Wenn die Person OneDrive verwendet, wurde die URL zu diesem Speicherort geändert. Wenn sich OneNote-Notizbücher auf ihrem OneDrive befinden, müssen sie möglicherweise geschlossen und in OneNote erneut geöffnet werden. Wenn über OneDrive Dateien geteilt wurden, funktionieren die Links zu den Dateien möglicherweise nicht, und die Person kann diese wieder freigeben.    
   
-  - Wenn auch das Kennwort geändert wurde, wird die Person aufgefordert, das neue Kennwort auf ihrem mobilen Gerät einzugeben. Andernfalls wird es nicht synchronisiert.
+   - Wenn auch das Kennwort geändert wurde, wird die Person aufgefordert, das neue Kennwort auf ihrem mobilen Gerät einzugeben. Andernfalls wird es nicht synchronisiert.
   
 ::: moniker-end
 
@@ -121,23 +123,24 @@ Sie müssen [globaler Administrator](about-admin-roles.md) sein, um diese Schrit
 
 3. Wählen Sie **Als primäre E-Mail-Adresse festlegen** für die E-Mail-Adresse aus, die Sie als primäre E-Mail-Adresse für diese Person festlegen möchten. 
     
-    **WICHTIG**: Die Option zum Festlegen der primären E-Mail-Adresse wird nicht angezeigt, wenn Sie Microsoft 365 bei GoDaddy oder einem anderen Partnerdienst mit einer Verwaltungskonsole erworben haben. Melden Sie sich stattdessen bei der Verwaltungskonsole von GoDaddy bzw. des Partners an, um den primären Alias festzulegen. 
-    
-    Diese Option wird außerdem nur angezeigt, wenn Sie ein globaler Administrator sind. Wenn Sie die Option nicht sehen, verfügen Sie nicht über die Berechtigung, den Namen und die primäre E-Mail-Adresse eines Benutzers zu ändern.
+   > [!IMPORTANT]
+   > Die Option zum Festlegen der primären E-Mail-Adresse wird nicht angezeigt, wenn Sie Microsoft 365 bei GoDaddy oder einem anderen Partnerdienst mit einer Verwaltungskonsole erworben haben. Melden Sie sich stattdessen bei der Verwaltungskonsole von GoDaddy bzw. des Partners an, um den primären Alias festzulegen. 
+   > 
+   > Diese Option wird außerdem nur angezeigt, wenn Sie ein globaler Administrator sind. Wenn Sie die Option nicht sehen, verfügen Sie nicht über die Berechtigung, den Namen und die primäre E-Mail-Adresse eines Benutzers zu ändern.
   
 4. Es wird eine große gelbe Warnmeldung angezeigt, dass Sie dabei sind, die Anmeldeinformationen der Person zu ändern. Wählen Sie **Speichern** und dann **Schließen** aus.
     
 5. Teilen Sie der Person die folgenden Informationen mit:
  
-  - Es kann einige Zeit dauern, bis diese Änderung wirksam wird.
+   - Es kann einige Zeit dauern, bis diese Änderung wirksam wird.
   
-  - Den neuen Benutzernamen, der für die Anmeldung bei Microsoft 365 benötigt wird.
+   - Den neuen Benutzernamen, der für die Anmeldung bei Microsoft 365 benötigt wird.
     
-  - Wenn die Person Skype for Business Online verwendet, muss sie eventuelle von ihr organisierte Skype for Business Online-Besprechungen erneut planen und ihre externen Kontakte auffordern, die alten Kontaktinformationen zu aktualisieren.
+   - Wenn die Person Skype for Business Online verwendet, muss sie eventuelle von ihr organisierte Skype for Business Online-Besprechungen erneut planen und ihre externen Kontakte auffordern, die alten Kontaktinformationen zu aktualisieren.
 
-  - Wenn Sie OneDrive verwenden, teilen Sie der Person mit, dass die URL zu diesem Speicherort geändert wurde. Wenn sie OneNote-Notizbücher auf ihrem OneDrive hat, müssen sie diese möglicherweise in OneNote schließen und erneut öffnen. Wenn sie über ihr OneDrive Dateien freigegeben hat, funktionieren die Links zu den Dateien möglicherweise nicht, und der Benutzer kann diese wieder freigeben.    
+   - Wenn Sie OneDrive verwenden, teilen Sie der Person mit, dass die URL zu diesem Speicherort geändert wurde. Wenn sie OneNote-Notizbücher auf ihrem OneDrive hat, müssen sie diese möglicherweise in OneNote schließen und erneut öffnen. Wenn sie über ihr OneDrive Dateien freigegeben hat, funktionieren die Links zu den Dateien möglicherweise nicht, und der Benutzer kann diese wieder freigeben.    
   
-  - Wenn auch das Kennwort geändert wurde, wird die Person aufgefordert, das neue Kennwort auf ihrem mobilen Gerät einzugeben. Andernfalls wird es nicht synchronisiert.
+   - Wenn auch das Kennwort geändert wurde, wird die Person aufgefordert, das neue Kennwort auf ihrem mobilen Gerät einzugeben. Andernfalls wird es nicht synchronisiert.
 
 ::: moniker-end
 
@@ -149,23 +152,24 @@ Sie müssen [globaler Administrator](about-admin-roles.md) sein, um diese Schrit
 
 3. Wählen Sie **Als primäre E-Mail-Adresse festlegen** für die E-Mail-Adresse aus, die Sie als primäre E-Mail-Adresse für diese Person festlegen möchten. 
     
-    **WICHTIG**: Die Option zum Festlegen der primären E-Mail-Adresse wird nicht angezeigt, wenn Sie Microsoft 365 bei GoDaddy oder einem anderen Partnerdienst mit einer Verwaltungskonsole erworben haben. Melden Sie sich stattdessen bei der Verwaltungskonsole von GoDaddy bzw. des Partners an, um den primären Alias festzulegen. 
-    
-    Diese Option wird außerdem nur angezeigt, wenn Sie ein globaler Administrator sind. Wenn Sie die Option nicht sehen, verfügen Sie nicht über die Berechtigung, den Namen und die primäre E-Mail-Adresse eines Benutzers zu ändern.
+   > [!IMPORTANT]
+   > Die Option zum Festlegen der primären E-Mail-Adresse wird nicht angezeigt, wenn Sie Microsoft 365 bei GoDaddy oder einem anderen Partnerdienst mit einer Verwaltungskonsole erworben haben. Melden Sie sich stattdessen bei der Verwaltungskonsole von GoDaddy bzw. des Partners an, um den primären Alias festzulegen. 
+   >  
+   > Diese Option wird außerdem nur angezeigt, wenn Sie ein globaler Administrator sind. Wenn Sie die Option nicht sehen, verfügen Sie nicht über die Berechtigung, den Namen und die primäre E-Mail-Adresse eines Benutzers zu ändern.
   
 4. Es wird eine große gelbe Warnmeldung angezeigt, dass Sie dabei sind, die Anmeldeinformationen der Person zu ändern. Wählen Sie **Speichern** und dann **Schließen** aus.
     
 5. Teilen Sie der Person die folgenden Informationen mit:
  
-  - Es kann einige Zeit dauern, bis diese Änderung wirksam wird.
+   - Es kann einige Zeit dauern, bis diese Änderung wirksam wird.
   
-  - Den neuen Benutzernamen, der für die Anmeldung bei Microsoft 365 benötigt wird.
+   - Den neuen Benutzernamen, der für die Anmeldung bei Microsoft 365 benötigt wird.
     
-  - Wenn die Person Skype for Business Online verwendet, muss sie eventuelle von ihr organisierte Skype for Business Online-Besprechungen erneut planen und ihre externen Kontakte auffordern, die alten Kontaktinformationen zu aktualisieren.
+   - Wenn die Person Skype for Business Online verwendet, muss sie eventuelle von ihr organisierte Skype for Business Online-Besprechungen erneut planen und ihre externen Kontakte auffordern, die alten Kontaktinformationen zu aktualisieren.
 
-  - Wenn Sie OneDrive verwenden, teilen Sie der Person mit, dass die URL zu diesem Speicherort geändert wurde. Wenn sie OneNote-Notizbücher auf ihrem OneDrive hat, müssen sie diese möglicherweise in OneNote schließen und erneut öffnen. Wenn sie über ihr OneDrive Dateien freigegeben hat, funktionieren die Links zu den Dateien möglicherweise nicht, und der Benutzer kann diese wieder freigeben.    
+   - Wenn Sie OneDrive verwenden, teilen Sie der Person mit, dass die URL zu diesem Speicherort geändert wurde. Wenn sie OneNote-Notizbücher auf ihrem OneDrive hat, müssen sie diese möglicherweise in OneNote schließen und erneut öffnen. Wenn sie über ihr OneDrive Dateien freigegeben hat, funktionieren die Links zu den Dateien möglicherweise nicht, und der Benutzer kann diese wieder freigeben.    
   
-  - Wenn auch das Kennwort geändert wurde, wird die Person aufgefordert, das neue Kennwort auf ihrem mobilen Gerät einzugeben. Andernfalls wird es nicht synchronisiert.
+   - Wenn auch das Kennwort geändert wurde, wird die Person aufgefordert, das neue Kennwort auf ihrem mobilen Gerät einzugeben. Andernfalls wird es nicht synchronisiert.
 
 ::: moniker-end
   
@@ -179,7 +183,7 @@ Sie müssen [globaler Administrator](about-admin-roles.md) sein, um diese Schrit
 
 3. Geben Sie im Feld **Anzeigename** einen neuen Namen für die Person ein, und wählen Sie dann **Speichern** aus.
 
-    Wenn Sie die Fehlermeldung „**Der Benutzer konnte leider nicht bearbeitet werden. Überprüfen Sie die Benutzerinformationen, und versuchen Sie es noch einmal**“ erhalten, sehen Sie unter [Fehlermeldungen lösen](#resolve-error-messages) nach.
+   Wenn Sie die Fehlermeldung „**Der Benutzer konnte leider nicht bearbeitet werden. Überprüfen Sie die Benutzerinformationen, und versuchen Sie es noch einmal**“ erhalten, sehen Sie unter [Fehlermeldungen lösen](#resolve-error-messages) nach.
 
 Es kann bis zu 24 Stunden dauern, bis diese Änderung in allen Diensten wirksam wird. Nachdem die Änderung wirksam geworden ist, muss sich die Person mit dem aktualisierten Benutzernamen bei Outlook, Skype for Business und SharePoint anmelden.
 
@@ -193,7 +197,7 @@ Es kann bis zu 24 Stunden dauern, bis diese Änderung in allen Diensten wirksam 
 
 3. Geben Sie im Feld **Anzeigename** einen neuen Namen für die Person ein und wählen Sie dann **Speichern** aus.
 
-    Wenn Sie die Fehlermeldung „**Der Benutzer konnte leider nicht bearbeitet werden. Überprüfen Sie die Benutzerinformationen, und versuchen Sie es noch einmal**“ erhalten, sehen Sie unter [Fehlermeldungen lösen](#resolve-error-messages) nach.
+   Wenn Sie die Fehlermeldung „**Der Benutzer konnte leider nicht bearbeitet werden. Überprüfen Sie die Benutzerinformationen, und versuchen Sie es noch einmal**“ erhalten, sehen Sie unter [Fehlermeldungen lösen](#resolve-error-messages) nach.
 
 Es kann bis zu 24 Stunden dauern, bis diese Änderung in allen Diensten wirksam wird. Nachdem die Änderung wirksam geworden ist, muss sich die Person mit dem aktualisierten Benutzernamen bei Outlook, Skype for Business und SharePoint anmelden. Daher sollten Sie den Benutzer unbedingt über diese Änderung informieren.
 
@@ -207,7 +211,7 @@ Es kann bis zu 24 Stunden dauern, bis diese Änderung in allen Diensten wirksam 
 
 3. Geben Sie im Feld **Anzeigename** einen neuen Namen für die Person ein und wählen Sie dann **Speichern** aus.
 
-    Wenn Sie die Fehlermeldung „**Der Benutzer konnte leider nicht bearbeitet werden. Überprüfen Sie die Benutzerinformationen, und versuchen Sie es noch einmal**“ erhalten, sehen Sie unter [Fehlermeldungen lösen](#resolve-error-messages) nach.
+   Wenn Sie die Fehlermeldung „**Der Benutzer konnte leider nicht bearbeitet werden. Überprüfen Sie die Benutzerinformationen, und versuchen Sie es noch einmal**“ erhalten, sehen Sie unter [Fehlermeldungen lösen](#resolve-error-messages) nach.
 
 Es kann bis zu 24 Stunden dauern, bis diese Änderung in allen Diensten wirksam wird. Nachdem die Änderung wirksam geworden ist, muss sich die Person mit dem aktualisierten Benutzernamen bei Outlook, Skype for Business und SharePoint anmelden. Daher sollten Sie den Benutzer unbedingt über diese Änderung informieren.
 
