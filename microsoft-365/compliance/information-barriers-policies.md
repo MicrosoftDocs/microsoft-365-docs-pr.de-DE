@@ -16,12 +16,12 @@ ms.collection:
 localization_priority: None
 description: Hier erfahren Sie, wie Sie Richtlinien für Informationsbarrieren in Microsoft Teams definieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ffeb1f1ca3296390fa10a636d3806127095712f8
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: ed4c9caba59eee9f01bdb1db3bafba91bac78437
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941430"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604225"
 ---
 # <a name="define-information-barrier-policies"></a>Definieren von Richtlinien für Informationsbarrieren
 
@@ -68,6 +68,8 @@ Stellen Sie zusätzlich zu den [erforderlichen Lizenzen und Berechtigungen](info
 
 - Bereichsbezogene Verzeichnissuche – bevor Sie die erste Informations Sperrrichtlinie Ihrer Organisation definieren, müssen Sie die [bereichsbezogene Verzeichnissuche in Microsoft Teams aktivieren](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search). Warten Sie mindestens 24 Stunden nach dem Aktivieren der bereichsbezogenen Verzeichnissuche, bevor Sie Richtlinien für Informationsbarrieren einrichten oder definieren.
 
+- Exo License-IB-Richtlinien funktionieren nur, wenn den Ziel Benutzern eine Exo-Lizenz zugewiesen wurde.
+
 - Überwachungsprotokollierung – um den Status einer Richtlinienanwendung nachzuschlagen, muss die Überwachungsprotokollierung aktiviert sein. Dies wird empfohlen, bevor Sie mit dem Definieren von Segmenten oder Richtlinien beginnen. Weitere Informationen finden Sie unter [Aktivieren oder Deaktivieren der Überwachungsprotokoll Suche](turn-audit-log-search-on-or-off.md).
 
 - Keine adressbuchrichtlinien – stellen Sie vor dem definieren und Anwenden von Richtlinien für Informationsbarrieren sicher, dass keine Exchange-adressbuchrichtlinien vorhanden sind. Informationsbarrieren basieren auf der Adressbuchrichtlinien, aber die beiden Arten von Richtlinien sind nicht kompatibel. Wenn Sie solche Richtlinien verwenden, müssen Sie zuerst [Ihre adressbuchrichtlinien entfernen](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) . Sobald Richtlinien für Informationsbarrieren aktiviert sind und Sie das hierarchische Adressbuch aktiviert haben, wird das [hierarchische Adressbuch](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books) in Exchange Online für alle Benutzer * angezeigt, die nicht in einem Segment mit Informationsbarrieren *_enthalten sind_*.
@@ -90,7 +92,7 @@ Stellen Sie zusätzlich zu den [erforderlichen Lizenzen und Berechtigungen](info
 
    2. Wenn Sie dazu aufgefordert werden, melden Sie sich mit Ihrem Arbeits-oder Schulkonto für Office 365 an.
 
-   3. Überprüfen Sie im Dialogfeld *angeforderte Berechtigungen* * die Informationen, und wählen Sie dann **akzeptieren** aus.
+   3. Überprüfen Sie im Dialogfeld *angeforderte Berechtigungen** die Informationen, und wählen Sie dann **akzeptieren** aus.
 
 Wenn alle Voraussetzungen erfüllt sind, fahren Sie mit dem nächsten Abschnitt fort.
 
@@ -180,7 +182,7 @@ Wählen Sie mit der Liste der Benutzersegmente und den Richtlinien für Informat
 - [Szenario 2: Zulassen, dass ein Segment nur mit einem anderen Segment kommuniziert](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment)
 
 > [!IMPORTANT]
-> **Stellen Sie sicher, dass Sie bei der Definition von Richtlinien keinem Segment mehr als eine Richtlinie zuweisen**. Wenn Sie beispielsweise eine Richtlinie für ein Segment mit dem Namen " *Sales* " definieren, definieren Sie keine zusätzliche Richtlinie für den *Vertrieb*.<p>Achten Sie beim Definieren von Richtlinien für Informationsbarrieren darauf, diese Richtlinien auf inaktiven Status festzulegen, bis Sie bereit sind, Sie anzuwenden. Das definieren (oder bearbeiten) von Richtlinien wirkt sich erst dann auf Benutzer aus, wenn diese Richtlinien auf aktiver Status festgelegt und dann angewendet wurden.
+> **Stellen Sie sicher, dass Sie bei der Definition von Richtlinien keinem Segment mehr als eine Richtlinie zuweisen**. Wenn Sie beispielsweise eine Richtlinie für ein Segment mit dem Namen " *Sales*" definieren, definieren Sie keine zusätzliche Richtlinie für den *Vertrieb*.<p>Achten Sie beim Definieren von Richtlinien für Informationsbarrieren darauf, diese Richtlinien auf inaktiven Status festzulegen, bis Sie bereit sind, Sie anzuwenden. Das definieren (oder bearbeiten) von Richtlinien wirkt sich erst dann auf Benutzer aus, wenn diese Richtlinien auf aktiver Status festgelegt und dann angewendet wurden.
 
 (Weitere Informationen finden Sie in diesem Artikel unter [Beispiel: Contosos Information Barrier Policies](#contosos-information-barrier-policies) .)
 
@@ -194,7 +196,7 @@ Nehmen Sie beispielsweise an, dass Sie die Kommunikation zwischen Segment a und 
 
     |Syntax  |Beispiel  |
     |---------|---------|
-    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsBlocked "segment2name"`     |`New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p>    In diesem Beispiel haben wir eine Richtlinie mit dem Namen " *Sales-Research* " für ein Segment namens " *Sales* " definiert. Wenn diese Richtlinie aktiv und angewendet wird, wird verhindert, dass Personen im *Vertrieb* mit Personen in einem Segment mit dem Namen *Research* kommunizieren.         |
+    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsBlocked "segment2name"`     |`New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p>    In diesem Beispiel haben wir eine Richtlinie mit dem Namen " *Sales-Research* " für ein Segment namens " *Sales*" definiert. Wenn diese Richtlinie aktiv und angewendet wird, wird verhindert, dass Personen im *Vertrieb* mit Personen in einem Segment mit dem Namen *Research* kommunizieren.         |
 
 2. Verwenden Sie zum Definieren des zweiten Sperr Segments das Cmdlet **New-InformationBarrierPolicy** mit dem Parameter **SegmentsBlocked** erneut, diesmal mit umgekehrten Segmenten.
 
@@ -236,7 +238,7 @@ Richtlinien für Informationsbarrieren werden erst wirksam, wenn Sie Sie auf akt
 
     Syntax `Get-InformationBarrierPolicy`
 
-2. Um eine Richtlinie auf den aktiven Status festzulegen, verwenden Sie das Cmdlet "InformationBarrierPolicy" mit einem **Identity** -Parameter und den **State** **-** Parameter auf " **aktiv** " festgelegt. 
+2. Um eine Richtlinie auf den aktiven Status festzulegen, verwenden Sie das Cmdlet "InformationBarrierPolicy" mit einem **Identity** -Parameter und den **State** **-** Parameter auf " **aktiv**" festgelegt. 
 
     |Syntax  |Beispiel  |
     |---------|---------|

@@ -18,12 +18,12 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: Informationen zum Verwalten von teilweise indizierten (oder nicht indizierten) Elementen aus Exchange, SharePoint und OneDrive für Unternehmen in Ihrer Organisation.
-ms.openlocfilehash: 132a174f0c163c75939b75906baa3833c6387fa7
-ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
+ms.openlocfilehash: 94dc568aa889e76241ef7bd48e3dedaba9b92f2f
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/08/2020
-ms.locfileid: "49588562"
+ms.locfileid: "49602062"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Untersuchen von teilweise indizierten Elementen in eDiscovery
 
@@ -124,66 +124,67 @@ In den folgenden Schritten wird gezeigt, wie Sie ein PowerShell-Skript ausführe
   
 1. Speichern Sie den folgenden Text in einer Windows PowerShell Skriptdatei unter Verwendung eines filename-Suffixes von. ps1; Beispiel: `PartiallyIndexedItems.ps1` .
 
-```powershell
-  write-host "**************************************************"
-  write-host "     Security & Compliance Center      " -foregroundColor yellow -backgroundcolor darkgreen
-  write-host "   eDiscovery Partially Indexed Item Statistics   " -foregroundColor yellow -backgroundcolor darkgreen
-  write-host "**************************************************"
-  " " 
-  # Create a search with Error Tags Refinders enabled
-  Remove-ComplianceSearch "RefinerTest" -Confirm:$false -ErrorAction 'SilentlyContinue'
-  New-ComplianceSearch -Name "RefinerTest" -ContentMatchQuery "size>0" -RefinerNames ErrorTags -ExchangeLocation ALL
-  Start-ComplianceSearch "RefinerTest"
-  # Loop while search is in progress
-  do{
-      Write-host "Waiting for search to complete..."
-      Start-Sleep -s 5
-      $complianceSearch = Get-ComplianceSearch "RefinerTest"
-  }while ($complianceSearch.Status -ne 'Completed')
-  $refiners = $complianceSearch.Refiners | ConvertFrom-Json
-  $errorTagProperties = $refiners.Entries | Get-Member -MemberType NoteProperty
-  $partiallyIndexedRatio = $complianceSearch.UnindexedItems / $complianceSearch.Items
-  $partiallyIndexedSizeRatio = $complianceSearch.UnindexedSize / $complianceSearch.Size
-  " "
-  "===== Partially indexed items ====="
-  "         Total          Ratio"
-  "Count    {0:N0}{1:P2}" -f $complianceSearch.Items.ToString("N0").PadRight(15, " "), $partiallyIndexedRatio
-  "Size(GB) {0:N2}{1:P2}" -f ($complianceSearch.Size / 1GB).ToString("N2").PadRight(15, " "), $partiallyIndexedSizeRatio
-  " "
-  Write-Host ===== Reasons for partially indexed items =====
-  foreach($errorTagProperty in $errorTagProperties)
-  {
-      $name = $refiners.Entries.($errorTagProperty.Name).Name
-      $count = $refiners.Entries.($errorTagProperty.Name).TotalCount
-      $frag = $name.Split("{_}")
-      $errorTag = $frag[0]
-      $fileType = $frag[1]
-      if ($errorTag -ne $lastErrorTag)
-      {
-          $errorTag
-      }
-      "    " + $fileType + " => " + $count
-      $lastErrorTag = $errorTag
-  }
-```
+   ```powershell
+     write-host "**************************************************"
+     write-host "     Security & Compliance Center      " -foregroundColor yellow -backgroundcolor darkgreen
+     write-host "   eDiscovery Partially Indexed Item Statistics   " -foregroundColor yellow -backgroundcolor darkgreen
+     write-host "**************************************************"
+     " " 
+     # Create a search with Error Tags Refinders enabled
+     Remove-ComplianceSearch "RefinerTest" -Confirm:$false -ErrorAction 'SilentlyContinue'
+     New-ComplianceSearch -Name "RefinerTest" -ContentMatchQuery "size>0" -RefinerNames ErrorTags -ExchangeLocation ALL
+     Start-ComplianceSearch "RefinerTest"
+     # Loop while search is in progress
+     do{
+         Write-host "Waiting for search to complete..."
+         Start-Sleep -s 5
+         $complianceSearch = Get-ComplianceSearch "RefinerTest"
+     }while ($complianceSearch.Status -ne 'Completed')
+     $refiners = $complianceSearch.Refiners | ConvertFrom-Json
+     $errorTagProperties = $refiners.Entries | Get-Member -MemberType NoteProperty
+     $partiallyIndexedRatio = $complianceSearch.UnindexedItems / $complianceSearch.Items
+     $partiallyIndexedSizeRatio = $complianceSearch.UnindexedSize / $complianceSearch.Size
+     " "
+     "===== Partially indexed items ====="
+     "         Total          Ratio"
+     "Count    {0:N0}{1:P2}" -f $complianceSearch.Items.ToString("N0").PadRight(15, " "), $partiallyIndexedRatio
+     "Size(GB) {0:N2}{1:P2}" -f ($complianceSearch.Size / 1GB).ToString("N2").PadRight(15, " "), $partiallyIndexedSizeRatio
+     " "
+     Write-Host ===== Reasons for partially indexed items =====
+     foreach($errorTagProperty in $errorTagProperties)
+     {
+         $name = $refiners.Entries.($errorTagProperty.Name).Name
+         $count = $refiners.Entries.($errorTagProperty.Name).TotalCount
+         $frag = $name.Split("{_}")
+         $errorTag = $frag[0]
+         $fileType = $frag[1]
+         if ($errorTag -ne $lastErrorTag)
+         {
+             $errorTag
+         }
+         "    " + $fileType + " => " + $count
+         $lastErrorTag = $errorTag
+     }
+   ```
 
 2. [Stellen Sie eine Verbindung mit der Security & Compliance Center PowerShell her](https://go.microsoft.com/fwlink/p/?linkid=627084).
 
 3. Wechseln Sie in Security & Compliance Center PowerShell zu dem Ordner, in dem Sie das Skript in Schritt 1 gespeichert haben, und führen Sie dann das Skript aus. Zum Beispiel:
 
-    ```powershell
-    .\PartiallyIndexedItems.ps1
-    ```
+   ```powershell
+   .\PartiallyIndexedItems.ps1
+   ```
 
 Im folgenden finden Sie ein Beispiel für die vom Skript zurückgegebene Ausgabe.
   
 ![Beispiel für die Ausgabe von einem Skript, das einen Bericht über die Exposition ihrer Organisation gegenüber teilweise indizierten e-Mail-Elementen generiert](../media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
-  
-Beachten Sie Folgendes:
-  
-1. Die Gesamtanzahl und Größe von e-Mail-Elementen und das Verhältnis ihrer Organisation zu teilweise indizierten e-Mail-Elementen (nach Anzahl und Größe)
 
-2. A List Error Tags und die entsprechenden Dateitypen, für die der Fehler aufgetreten ist.
+> [!NOTE]
+> Beachten Sie Folgendes:
+>  
+> - Die Gesamtanzahl und Größe von e-Mail-Elementen und das Verhältnis ihrer Organisation zu teilweise indizierten e-Mail-Elementen (nach Anzahl und Größe).
+> 
+> - A List Error Tags und die entsprechenden Dateitypen, für die der Fehler aufgetreten ist.
   
 ## <a name="see-also"></a>Siehe auch
 

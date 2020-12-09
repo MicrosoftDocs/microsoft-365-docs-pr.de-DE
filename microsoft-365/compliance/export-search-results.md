@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: Exportieren Sie die Suchergebnisse aus einer Inhaltssuche im Microsoft 365 Compliance Center auf einen lokalen Computer. E-Mail-Ergebnisse werden als PST-Dateien exportiert. Inhalte aus SharePoint-und OneDrive für Unternehmen-Websites werden als systemeigene Office-Dokumente exportiert.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 48f5cab4c25199873c795cdfb9afac54f4f402a0
-ms.sourcegitcommit: 8ad481ed61cb6dabf8afb0fb04296666fa166450
+ms.openlocfilehash: a697f5cf81022bf8d8122d0dd57c07ba8a578f0a
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "49422874"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602052"
 ---
 # <a name="export-content-search-results"></a>Exportieren von Inhaltssuchergebnissen
 
@@ -345,6 +345,8 @@ Alle durch Rechte geschützten (RMS-geschützten) e-Mail-Nachrichten, die in den
 
 ### <a name="miscellaneous"></a>Sonstiges
   
+- Wenn Sie Suchergebnisse mit dem eDiscovery-Export Tool herunterladen, wird möglicherweise die folgende Fehlermeldung angezeigt: `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` Dies ist ein vorübergehender Fehler, der normalerweise im Azure-Speicherort auftritt. Um dieses Problem zu beheben, wiederholen Sie [den Download der Suchergebnisse](#step-2-download-the-search-results), wodurch das eDiscovery-Export Tool neu gestartet wird.
+
 - Alle Suchergebnisse und die Export Berichte sind in einem Ordner mit dem gleichen Namen wie die Inhaltssuche enthalten. Die E-Mail-Nachrichten, die exportiert wurden, befinden sich in einem Ordner mit dem Namen **Exchange**. Dokumente befinden sich in einem Ordner mit dem Namen **SharePoint**.
 
 - Die Dateisystemmetadaten für Dokumente in SharePoint und OneDrive für Unternehmen Websites werden beibehalten, wenn Dokumente auf Ihren lokalen Computer exportiert werden. Das bedeutet, dass Dokumenteigenschaften, wie erstellt und Datum der letzten Änderung, beim Exportieren von Dokumenten nicht geändert werden.

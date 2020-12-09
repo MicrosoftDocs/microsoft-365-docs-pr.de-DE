@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zu DLP-Richtlinienbedingungen und-Ausnahmen
-ms.openlocfilehash: a371c564cc314c457e1d9afe667115c244e0185d
-ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
+ms.openlocfilehash: 5c2c8e010047c2de05cc8422da1958e2fe5fc54c
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48993343"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604215"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions-preview"></a>DLP-Richtlinienbedingungen, Ausnahmen und Aktionen (Vorschau)
 
@@ -54,17 +54,18 @@ Die Tabellen in den folgenden Abschnitten beschreiben die Bedingungen und Ausnah
 |IP-Adresse des Absenders lautet     |Bedingung: *senderipranges dieses Prädikat*<br/> Ausnahme: *ExceptIfSenderIPRanges*         |  IPAddressRanges       | Nachrichten, in denen die IP-Adresse des Absenders der angegebenen IP-Adresse entsprecht oder innerhalb des angegebenen IP-Adressbereichs liegt.       |
 |Absenderadresse enthält Wörter   | Bedingung: *FromAddressContainsWords* <br/> Ausnahme: *ExceptIfFromAddressContainsWords*        |   Words      |   Nachrichten, die die angegebenen Wörter in der E-Mail-Adresse des Absenders enthalten.|
 | Absenderadresse stimmt mit Mustern überein    | Bedingung: *FromAddressMatchesPatterns* <br/> Ausnahme: *ExceptFromAddressMatchesPatterns*       |      Muster   |  Nachrichten, bei denen die E-Mail-Adresse des Absenders Textmuster enthält, die mit dem angegebenen regulären Ausdruck übereinstimmen.  |
-|Absenderdomäne ist  |  Bedingung: *SenderDomainIs* <br/> Ausnahme: *ExceptIfSenderDomainIs*       |DomainName         |     Nachrichten, bei denen die Domäne der E-Mail-Adresse des Absenders dem angegebenen Wert entspricht. Wenn Sie Absenderdomänen suchen müssen, die die angegebene Domäne *enthalten* (beispielsweise eine beliebige Unterdomäne einer Domäne), verwenden Sie die *FromAddressMatchesPatterns* -Bedingung ( **sender address Matches** ), und geben Sie die Domäne mithilfe der folgenden Syntax an: " \. Domain \. com $".    |
+|Absenderdomäne ist  |  Bedingung: *SenderDomainIs* <br/> Ausnahme: *ExceptIfSenderDomainIs*       |DomainName         |     Nachrichten, bei denen die Domäne der E-Mail-Adresse des Absenders dem angegebenen Wert entspricht. Wenn Sie Absenderdomänen suchen müssen, die die angegebene Domäne *enthalten* (beispielsweise eine beliebige Unterdomäne einer Domäne), verwenden Sie die *FromAddressMatchesPatterns*-Bedingung ( **sender address Matches**), und geben Sie die Domäne mithilfe der folgenden Syntax an: " \. Domain \. com $".    |
+|Absender Bereich    | Bedingung: *FromScope* <br/> Ausnahme: *Parameter ExceptIfFromScope*    | UserScopeFrom    |    Nachrichten, die entweder von internen oder externen Absendern gesendet werden.    |
 
 ### <a name="recipients"></a>Empfänger
 
 |**Bedingung oder Ausnahme in DLP**| **Bedingung/Ausnahmeparameter in Microsoft 365 PowerShell** |    **Typ der Eigenschaft** | **description**|
 |---------|---------|---------|---------|
-|Empfänger lautet|  Bedingung: *SentTo* <br/> Ausnahme: *Parameter ExceptIfSentTo* | Addresses | Nachrichten, bei denen es sich bei einem der Empfänger um das angegebene Postfach, den E-Mail-Benutzer oder den E-Mail-Kontakt in der Organisation handelt. Die Empfänger können in den Feldern **To** , **Cc** oder **Bcc** der Nachricht angegeben werden.  |
+|Empfänger lautet|  Bedingung: *SentTo* <br/> Ausnahme: *Parameter ExceptIfSentTo* | Addresses | Nachrichten, bei denen es sich bei einem der Empfänger um das angegebene Postfach, den E-Mail-Benutzer oder den E-Mail-Kontakt in der Organisation handelt. Die Empfänger können in den Feldern **To**, **Cc** oder **Bcc** der Nachricht angegeben werden.  |
 |Empfängerdomäne lautet|   Bedingung: *RecipientDomainIs* <br/> Ausnahme: *ExceptIfRecipientDomainIs* |   DomainName |    Nachrichten, bei denen die Domäne der E-Mail-Adresse des Absenders dem angegebenen Wert entspricht.|
-|Empfängeradresse enthält Wörter|  Bedingung: *RecipientAddressContainsWords* <br/> Ausnahme: *ExceptIfRecipientAddressContainsWords*|    Words|  Nachrichten, die die angegebenen Wörter in der E-Mail-Adresse des Empfängers enthalten. <br/>**Hinweis** : Diese Bedingung berücksichtigt keine Nachrichten, die an Proxyadressen des Empfängers gesendet werden. Es werden nur Nachrichten berücksichtigt, die an die primäre E-Mail-Adresse des Empfängers gesendet werden.|
-|Empfängeradresse stimmt mit Mustern überein| Bedingung: *RecipientAddressMatchesPatterns* <br/> Ausnahme: *ExceptIfRecipientAddressMatchesPatterns*|   Muster    |Nachrichten, bei denen die E-Mail-Adresse des Empfängers Textmuster enthält, die mit dem angegebenen regulären Ausdruck übereinstimmen. <br/> **Hinweis** : Diese Bedingung berücksichtigt keine Nachrichten, die an Proxyadressen des Empfängers gesendet werden. Es werden nur Nachrichten berücksichtigt, die an die primäre E-Mail-Adresse des Empfängers gesendet werden.|
-|Gesendet an Mitglied von| Bedingung: *SentToMemberOf* <br/> Ausnahme: *ExceptIfSentToMemberOf*|  Addresses|  Nachrichten, die Empfänger enthalten, die Mitglieder der angegebenen Verteilergruppe, der e-Mail-aktivierten Sicherheitsgruppe oder der Microsoft 365-Gruppe sind. Die Gruppe kann in den Feldern **To** , **Cc** oder **Bcc** der Nachricht sein.|
+|Empfängeradresse enthält Wörter|  Bedingung: *RecipientAddressContainsWords* <br/> Ausnahme: *ExceptIfRecipientAddressContainsWords*|    Words|  Nachrichten, die die angegebenen Wörter in der E-Mail-Adresse des Empfängers enthalten. <br/>**Hinweis**: Diese Bedingung berücksichtigt keine Nachrichten, die an Proxyadressen des Empfängers gesendet werden. Es werden nur Nachrichten berücksichtigt, die an die primäre E-Mail-Adresse des Empfängers gesendet werden.|
+|Empfängeradresse stimmt mit Mustern überein| Bedingung: *RecipientAddressMatchesPatterns* <br/> Ausnahme: *ExceptIfRecipientAddressMatchesPatterns*|   Muster    |Nachrichten, bei denen die E-Mail-Adresse des Empfängers Textmuster enthält, die mit dem angegebenen regulären Ausdruck übereinstimmen. <br/> **Hinweis**: Diese Bedingung berücksichtigt keine Nachrichten, die an Proxyadressen des Empfängers gesendet werden. Es werden nur Nachrichten berücksichtigt, die an die primäre E-Mail-Adresse des Empfängers gesendet werden.|
+|Gesendet an Mitglied von| Bedingung: *SentToMemberOf* <br/> Ausnahme: *ExceptIfSentToMemberOf*|  Addresses|  Nachrichten, die Empfänger enthalten, die Mitglieder der angegebenen Verteilergruppe, der e-Mail-aktivierten Sicherheitsgruppe oder der Microsoft 365-Gruppe sind. Die Gruppe kann in den Feldern **To**, **Cc** oder **Bcc** der Nachricht sein.|
 
 ### <a name="message-subject-or-body"></a>Nachrichtenbetreff oder -text
 
@@ -73,13 +74,15 @@ Die Tabellen in den folgenden Abschnitten beschreiben die Bedingungen und Ausnah
 |Betreff enthält Wörter oder Ausdrücke| Bedingung: *SubjectContainsWords* <br/> Ausnahme: *ExceptIf SubjectContainsWords*| Words   |Nachrichten, deren Feld Subject die angegebenen Wörter enthält.|
 |Muster für Betreff-Übereinstimmungen|Bedingung: *SubjectMatchesPatterns* <br/> Ausnahme: *ExceptIf SubjectMatchesPatterns*|Muster   |Nachrichten, bei denen das Feld Subject Textmuster enthält, die mit den angegebenen regulären Ausdrücken übereinstimmen.|
 |Inhalt enthält|  Bedingung: *ContentContainsSensitiveInformation* <br/> Ausnahme *ExceptIfContentContainsSensitiveInformation*| SensitiveInformationTypes|  Nachrichten oder Dokumente, die vertrauliche Informationen enthalten, wie durch Datenverlust Verhinderung (DLP)-Richtlinien definiert.|
+| Muster für Betreff-oder Textübereinstimmung    | Bedingung: *SubjectOrBodyMatchesPatterns* <br/> Ausnahme: *ExceptIfSubjectOrBodyMatchesPatterns*    | Muster    | Nachrichten, bei denen das Feld Subject oder der Nachrichtentext Muster enthält, die mit den angegebenen regulären Ausdrücken übereinstimmen.    |
+| Betreff oder Textkörper enthält Wörter    | Bedingung: *SubjectOrBodyContainsWords* <br/> Ausnahme: *ExceptIfSubjectOrBodyContainsWords*    | Words    | Nachrichten mit den angegebenen Wörtern im Feld Betreff oder Nachrichtentext    |
 
 
 ### <a name="attachments"></a>Anlagen
 
 |**Bedingung oder Ausnahme in DLP**| **Bedingung/Ausnahmeparameter in Microsoft 365 PowerShell**| **Typ der Eigenschaft**   |**description**|
 |---------|---------|---------|---------|
-|Anlage ist passwortgeschützt|Bedingung: *DocumentIsPasswordProtected* <br/> Ausnahme: *ExceptIfDocumentIsPasswordProtected*|Keine| Nachrichten, bei denen eine Anlage kennwortgeschützt ist (und daher nicht überprüft werden kann). Die Kennworterkennung funktioniert nur bei Office-Dokumenten und ZIP-Dateien.|
+|Anlage ist passwortgeschützt|Bedingung: *DocumentIsPasswordProtected* <br/> Ausnahme: *ExceptIfDocumentIsPasswordProtected*|keine| Nachrichten, bei denen eine Anlage kennwortgeschützt ist (und daher nicht überprüft werden kann). Die Kennworterkennung funktioniert nur für Office-Dokumente, ZIP-Dateien und 7z-Dateien.|
 |Dateierweiterung der Anlage ist|Bedingung: *ContentExtensionMatchesWords* <br/> Ausnahme: *ExceptIfContentExtensionMatchesWords*|  Words   |Nachrichten, bei denen die Dateierweiterung einer Anlage einem der angegebenen Wörter entspricht.|
 |Der Inhalt einer e-Mail-Anlage konnte nicht überprüft werden|Bedingung: *DocumentIsUnsupported* <br/>Ausnahme: *ExceptIf DocumentIsUnsupported*|   N/V|    Nachrichten, für die eine Anlage von Exchange Online nicht systemintern erkannt wird.|
 |Der Inhalt einer e-Mail-Anlage hat die Überprüfung nicht abgeschlossen|   Bedingung: *ProcessingLimitExceeded* <br/> Ausnahme: *ExceptIfProcessingLimitExceeded*|    N/V |Nachrichten, bei denen das Regelmodul das Prüfen der Anlagen nicht abschließen konnte. Sie können diese Bedingung zum Erstellen von Regeln verwenden, die zusammenarbeiten, um Nachrichten zu ermitteln und zu verarbeiten, deren Inhalt nicht vollständig überprüft werden konnte.|
@@ -99,11 +102,15 @@ Die Tabellen in den folgenden Abschnitten beschreiben die Bedingungen und Ausnah
 
 |**Bedingung oder Ausnahme in DLP**| **Bedingung/Ausnahmeparameter in Microsoft 365 PowerShell**| **Typ der Eigenschaft**   |**description**|
 |---------|---------|---------|---------|
-|Nachrichtengröße über|Bedingung: *MessageSizeOver* <br/> Ausnahme: *ExceptIfMessageSizeOver*| Größe    |Nachrichten, deren Gesamtgröße (Nachricht sowie Anlagen) größer oder gleich dem angegebenen Wert ist. <br/>**Hinweis** : Grenzwerte für die Nachrichtengröße für Postfächer werden vor E-Mail-Flussregeln ausgewertet. Eine Nachricht, die für ein Postfach zu groß ist, wird zurückgewiesen, bevor eine Regel mit dieser Bedingung auf diese Nachricht angewendet wird.  |
+|Nachrichtengröße über|Bedingung: *MessageSizeOver* <br/> Ausnahme: *ExceptIfMessageSizeOver*| Größe    |Nachrichten, deren Gesamtgröße (Nachricht sowie Anlagen) größer oder gleich dem angegebenen Wert ist. <br/>**Hinweis**: Grenzwerte für die Nachrichtengröße für Postfächer werden vor E-Mail-Flussregeln ausgewertet. Eine Nachricht, die für ein Postfach zu groß ist, wird zurückgewiesen, bevor eine Regel mit dieser Bedingung auf diese Nachricht angewendet wird.  |
+| Mit Wichtigkeit    | Bedingung: *WithImportance* <br/> Ausnahme: *ExceptIfWithImportance*    | Importance    | Nachrichten, die mit der angegebenen Wichtigkeitsstufe gekennzeichnet sind.    |
+| Inhaltszeichen Satz enthält Wörter    | Bedingung: *ContentCharacterSetContainsWords* <br/> *ExceptIfContentCharacterSetContainsWords*    | CharacterSets    | Nachrichten, die beliebige der angegebenen Zeichensatznamen enthalten.    |
+| Verfügt über eine Absender Überschreibung    | Bedingung: *hassenderoverride dieses Prädikat* <br/> Ausnahme: *ExceptIfHasSenderOverride*    | N/V    | Nachrichten, bei denen der Absender ausgewählt hat, eine Data Loss Prevention (DLP)-Richtlinie außer Kraft zu setzen. Weitere Informationen zu DLP-Richtlinien finden Sie unter [Verhinderung von Datenverlust](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies).   |
+| Übereinstimmungen vom Nachrichtentyp    | Bedingung: *MessageTypeMatches* <br/> Ausnahme: *ExceptIfMessageTypeMatches*    | MessageType    | Nachrichten vom angegebenen Typ.    |
 
 ## <a name="actions-for-dlp-policies"></a>Aktionen für DLP-Richtlinien
 
-In dieser Tabelle werden die Exchange Online Nachrichtenfluss Regelaktionen beschrieben, die in DLP verfügbar sind.
+In dieser Tabelle werden die Aktionen beschrieben, die in DLP verfügbar sind.
 
 
 |**Aktion in DLP**|**Aktionsparameter in Microsoft 365 PowerShell**|**Typ der Eigenschaft**|**description**|
@@ -114,5 +121,10 @@ In dieser Tabelle werden die Exchange Online Nachrichtenfluss Regelaktionen besc
 |Weiterleiten der Nachricht zur Genehmigung an den Vorgesetzten des Absenders| Mittel|Erste Eigenschaft: *ModerateMessageByManager*</br> Zweite Eigenschaft: *Boolean*|Der Parameter moderate gibt eine Aktion für die DLP-Regel an, die die e-Mail-Nachricht an einen Moderator sendet. Dieser Parameter verwendet die Syntax: @ {ModerateMessageByManager = <$true \| $false>;|
 |Weiterleiten der Nachricht zur Genehmigung an bestimmte genehmigende Personen| Mittel|Erste Eigenschaft: *ModerateMessageByUser*</br>Zweite Eigenschaft: *Addresses*|Der Parameter moderate gibt eine Aktion für die DLP-Regel an, die die e-Mail-Nachricht an einen Moderator sendet. Dieser Parameter verwendet die Syntax: @ {ModerateMessageByUser = @ ("EmailAddress1", "EmailAddress2",... "Emails")}|
 |Empfänger hinzufügen|Addrecipients|Erste Eigenschaft: *Field*</br>Zweite Eigenschaft: *Addresses*| Fügt einen oder mehrere Empfänger zum Feld to/CC/BCC der Nachricht hinzu. Dieser Parameter verwendet die Syntax: @ {<Parameter AddToRecipients \| CopyTo \| BlindCopyTo> = "e-mailemail"}|
-|Den Vorgesetzten des Absenders als Empfänger hinzufügen|Addrecipients | Erste Eigenschaft: *AddedManagerAction*</br>Zweite Eigenschaft: *Field* | Fügt den Vorgesetzten des Absenders als angegebenen Empfängertyp der Nachricht hinzu ( To, Cc, Bcc ) oder leitet die Nachricht an den Vorgesetzten des Absenders ohne Benachrichtigung des Absenders oder des Empfängers um. Diese Aktion funktioniert nur, wenn das Manager -Attribut des Absenders in Active Directory definiert ist. Dieser Parameter verwendet die Syntax: @ {AddManagerAsRecipientType = "<zu \| CC \| Bcc>"}|
+|Den Vorgesetzten des Absenders als Empfänger hinzufügen|Addrecipients | Erste Eigenschaft: *AddedManagerAction*</br>Zweite Eigenschaft: *Field* | Fügt den Vorgesetzten des Absenders als angegebenen Empfängertyp der Nachricht hinzu ( To, Cc, Bcc ) oder leitet die Nachricht an den Vorgesetzten des Absenders ohne Benachrichtigung des Absenders oder des Empfängers um. Diese Aktion funktioniert nur, wenn das Manager -Attribut des Absenders in Active Directory definiert ist. Dieser Parameter verwendet die Syntax: @ {AddManagerAsRecipientType = "<zu \| CC \| Bcc>"}|    
+Betreff wird voran gestellt    |PrependSubject    |Zeichenfolge    |Fügt den angegebenen Text am Anfang des Felds Subject der Nachricht ein. Verwenden Sie ein Leerzeichen oder einen Doppelpunkt (:) als letztes Zeichen des angegebenen Texts, um ihn vom ursprünglichen Betrefftext zu unterscheiden.</br>Um zu verhindern, dass die gleiche Zeichenfolge zu Nachrichten hinzugefügt wird, die bereits den Text im Betreff enthalten (beispielsweise Antworten), fügen Sie die Ausnahme "die Betreffzeile enthält Wörter" (ExceptIfSubjectContainsWords) zur Regel hinzu.    |
+HTML-Haftungsausschluss anwenden    |ApplyHtmlDisclaimer    |Erste Eigenschaft: *Text*</br>Zweite Eigenschaft: *Location*</br>Dritte Eigenschaft: *Fallback-Aktion*    |Wendet den angegebenen HTML-Haftungsausschluss auf den erforderlichen Speicherort der Nachricht an.</br>Dieser Parameter verwendet die Syntax: @ {Text = ""; Location = <voranstellen \|> anfügen; Fallback-<Zeilenumbruch \| ignorieren \|>}
+
+
+
 
