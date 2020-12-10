@@ -22,12 +22,12 @@ description: Verwenden Sie Vertraulichkeitskennzeichnungen aus dem Microsoft Inf
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 62f9cd4eb2056843cae9d68de5803afd422f8560
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: 86ca60c2b128f8cf7468a2e435179c45294f4743
+ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527604"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49580728"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informationen zu Vertraulichkeitsbezeichnungen
 
@@ -35,7 +35,7 @@ ms.locfileid: "49527604"
 
 Im Rahmen ihrer Arbeit müssen Personen in Ihrer Organisation mit anderen Personen innerhalb und außerhalb der Organisation zusammenarbeiten. Dies bedeutet, dass Inhalte nicht mehr durch eine Firewall geschützt sind – sie können zwischen verschiedenen Geräten, Apps und Diensten hin- und herbewegt werden. Dies soll auf sichere und geschützte Weise geschehen, die den geschäftlichen Anforderungen und Compliancerichtlinien Ihrer Organisation entspricht.
 
-Mit Vertraulichkeitsbezeichnungen aus dem Microsoft Information Protection-Framework, können Sie die Daten Ihrer Organisation klassifizieren und schützen und gleichzeitig sicherstellen, dass Produktivität und Zusammenarbeit der Benutzer nicht beeinträchtigt werden.
+Mit Vertraulichkeitsbezeichnungen aus der Microsoft Information Protection-Lösung können Sie die Daten Ihrer Organisation klassifizieren und schützen und gleichzeitig sicherstellen, dass Produktivität und Zusammenarbeit der Benutzer nicht beeinträchtigt werden.
 
 Hier ein Beispiel zur Anzeige verfügbarer Vertraulichkeitsbezeichnungen aus der Registerkarte **Start** im Menüband von Excel. In diesem Beispiel wird die angewendete Bezeichnung in der Statusleiste angezeigt:
 
@@ -57,6 +57,8 @@ Sie können Vertraulichkeitsbezeichnungen zu Folgendem verwenden:
 - **Schützen von Inhalten in Drittanbieter-Apps und -Diensten** mithilfe von Microsoft Cloud App Security. Mit Cloud App Security (CAS) können Sie Inhalte in Drittanbieter-Apps und -Diensten wie z. B. SalesForce, Box oder DropBox erkennen, klassifizieren, beschriften und schützen, auch wenn die Drittanbieter-App oder der Dienst Vertraulichkeitsbezeichnungen nicht liest oder unterstützt.
 
 - **Schützen von Containern**, die Teams, Microsoft 365-Gruppen und SharePoint-Seiten enthalten. Legen Sie beispielsweise Einstellungen für den Datenschutz, externen Benutzerzugriff und externe Freigabe und den Zugriff von nicht verwalteten Geräten aus fest.
+
+- **Erweitern von Vertraulichkeitsbezeichnungen auf Ressourcen in Azure Purview**: Mit dieser Funktion (die sich aktuell noch in der Vorschau befindet) können Sie Ihre Vertraulichkeitsbezeichnungen auf Ressourcen wie SQL-Spalten, Dateien in Azure Blob Storage und mehr anwenden. 
 
 - **Erweitern von Vertraulichkeitsbezeichnungen auf Drittanbieter-Apps und -Dienste**. Mit dem Microsoft Information Protection SDK können Drittanbieter-Apps Vertraulichkeitsbezeichnungen lesen und Schutzeinstellungen anwenden.
 
@@ -115,11 +117,17 @@ Bei der Erstellung einer Vertraulichkeitsbezeichnung werden Sie gebeten, den Ber
 - Welche Bezeichnungseinstellungen Sie für diese Bezeichnung konfigurieren können
 - Wo die Bezeichnung für andere Benutzer sichtbar ist
 
-Mit dieser Bereichskonfiguration können Sie Vertraulichkeitsbezeichnungen erstellen, die nur für Dokumente und E-Mails gelten, und nicht für Container ausgewählt werden können. Außerdem Vertraulichkeitsbezeichnungen, die nur für Container gelten, und nicht für Dokumente und E-Mails ausgewählt werden können. Standardmäßig sind beide Bereiche ausgewählt:
+Mit dieser Bereichskonfiguration können Sie Vertraulichkeitsbezeichnungen erstellen, die nur für Dokumente und E-Mails gelten, und nicht für Container ausgewählt werden können. Außerdem Vertraulichkeitsbezeichnungen, die nur für Container gelten, und nicht für Dokumente und E-Mails ausgewählt werden können. Neu können Sie jetzt (aktuell noch in der Vorschau) auch den Bereich für Azure Purview-Ressourcen auswählen_
 
 ![Bereichsoptionen für Vertraulichkeitsbezeichnungen](../media/sensitivity-labels-scopes.png)
 
-Wenn Sie diese Standardeinstellung ändern und nur einen Bereich auswählen, sehen Sie immer noch die erste Seite der Konfigurationseinstellungen für den anderen Bereich, können diese aber nicht auswählen. Wenn beispielsweise der Bereich für Dateien und E-Mails nicht ausgewählt ist, können Sie die Optionen auf der nächsten Seite nicht auswählen:
+Standardmäßig ist der Bereich **Dateien und E-Mails** immer ausgewählt. Die weiteren Bereiche werden standardmäßig ausgewählt, wenn die Features für Ihren Mandanten aktiviert sind:
+
+- **Gruppen und Websites**: [Aktivieren von Vertraulichkeitsbezeichnungen für Container und Synchronisieren von Bezeichnungen](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
+
+- **Azure Purview-Ressourcen (Vorschau)**: [Automatische Beschriftung Ihrer Inhalte in Azure Purview](https://go.microsoft.com/fwlink/?linkid=2148989)
+
+Wenn Sie die Standardeinstellungen so ändern, dass nicht alle Bereiche ausgewählt sind, sehen Sie die erste Seite der Konfigurationseinstellungen für nicht ausgewählte Bereiche, können aber die Einstellungen nicht konfigurieren. Wenn beispielsweise der Bereich für Dateien und E-Mails nicht ausgewählt ist, können Sie die Optionen auf der nächsten Seite nicht auswählen:
 
 ![Nicht verfügbare Optionen für Vertraulichkeitsbezeichnungen](../media/sensitivity-labels-unavailable-settings.png)
 
@@ -155,7 +163,9 @@ Wenn Sie eine Vertraulichkeitsbezeichnung bearbeiten, wird die Version der Bezei
 
 ## <a name="what-label-policies-can-do"></a>Wirkung von Bezeichnungsrichtlinien
 
-Nachdem Sie Ihre Vertraulichkeitsbezeichnungen erstellt haben, müssen Sie diese veröffentlichen, um Sie für Personen und Dienste in Ihrer Organisation zur Verfügung zu stellen. Die Vertraulichkeitsbezeichnungen können dann auf Dokumente und E-Mails angewendet werden. Im Gegensatz zu Aufbewahrungsbezeichnungen, die an Speicherorten wie allen Exchange-Postfächern veröffentlicht werden, werden Vertraulichkeitsbezeichnungen für Benutzer oder Gruppen veröffentlicht. Die Vertraulichkeitsbezeichnungen werden dann in Office Apps für diese Benutzer und Gruppen angezeigt.
+Nachdem Sie Ihre Vertraulichkeitsbezeichnungen erstellt haben, müssen Sie diese veröffentlichen, um sie für Personen und Dienste in Ihrer Organisation zur Verfügung zu stellen. Die Vertraulichkeitsbezeichnungen können dann auf Office-Dokumente und E-Mails sowie weitere Elemente angewendet werden, für die Vertraulichkeitsbezeichnungen unterstützt werden. 
+
+Im Gegensatz zu Aufbewahrungsbezeichnungen, die an Speicherorten wie allen Exchange-Postfächern veröffentlicht werden, werden Vertraulichkeitsbezeichnungen für Benutzer oder Gruppen veröffentlicht. Apps, für die Vertraulichkeitsbezeichnungen unterstützt werden, können sie diesen Benutzern und Gruppen als angewandte Bezeichnungen anzeigen, oder als Bezeichnungen, die angewandt werden können.
 
 Mit einer Bezeichnungsrichtlinie können Sie Folgendes bewirken:
 
@@ -169,18 +179,18 @@ Mit einer Bezeichnungsrichtlinie können Sie Folgendes bewirken:
 
     ![Eingabeaufforderung, in der Benutzer eine Begründung eingeben](../media/Sensitivity-label-justification-required.png)
 
-- **Fordern Sie Benutzer dazu auf, eine Bezeichnung** mit einer Option für E-Mails und Dokumente und einer weiteren für Container anzuwenden. Diese Optionen werden auch obligatorische Bezeichnung genannt, und stellen sicher, dass eine Bezeichnung angewendet werden muss, bevor Benutzer Dokumente speichern, E-Mails senden oder neue Gruppen und Seiten erstellen können.
+- **Fordern Sie Benutzer dazu auf, eine Bezeichnung** mit einer Option für E-Mails und Dokumente und einer weiteren für Container anzuwenden. Diese Optionen werden auch obligatorische Bezeichnung genannt, und stellen sicher, dass eine Bezeichnung angewendet werden muss, bevor Benutzer Dokumente speichern, E-Mails senden oder neue Gruppen und Sites erstellen können.
     
-    Für Dokumente und E-Mails kann eine Bezeichnung vom Benutzer manuell, und zwar automatisch als Ergebnis einer von Ihnen konfigurierten Bedingung, oder standardmäßig zugewiesen werden (die oben beschriebene Standardbezeichnung). Eine Beispielaufforderung, die in Outlook angezeigt wird, wenn ein Benutzer eine Bezeichnung zuweisen muss:
+    Die Bezeichnung kann vom Benutzer manuell, und zwar automatisch als Ergebnis einer von Ihnen konfigurierten Bedingung, oder standardmäßig zugewiesen werden (die oben beschriebene Option der Standardbezeichnung). Eine Beispielaufforderung, die in Outlook angezeigt wird, wenn ein Benutzer eine Bezeichnung zuweisen muss, lautet:
 
     ![Eingabeaufforderung in Outlook, durch die der Benutzer zum Anwenden der erforderlichen Bezeichnung aufgefordert wird](../media/sensitivity-labels-mandatory-prompt-aipv2-outlook.PNG)
     
     > [!NOTE]
-    > Die obligatorische Bezeichnung für Dokumente und E-Mails setzt zurzeit den [Azure Information Protection-Client für einheitliche Bezeichnungen](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app) voraus. Dieser Assistent kann nur unter Windows ausgeführt werden, sodass die Funktion derzeit nicht unter Mac, iOS und Android unterstützt wird.
+    > Obligatorische Bezeichnungen für Dokumente und E-Mails sind nicht für alle Anwendungen und Plattformen verfügbar. Weitere Informationen finden Sie unter [Von Benutzern fordern, dass sie eine Bezeichnung auf ihre E-Mails und Dokumente anwenden](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents).
     
-    Bei Containern muss beim Erstellen der Gruppe oder Seite eine Bezeichnung zugewiesen werden.
+    Bei Containern muss beim Erstellen der Gruppe oder Site eine Bezeichnung zugewiesen werden.
     
-    Erwägen Sie die Verwendung dieser Option, um dafür zu sorgen, dass Bezeichnungen in höherem Maß verwendet werden. Ohne Benutzerschulungen können diese Einstellungen jedoch zu ungenauen Bezeichnungen führen. Außerdem kann die obligatorische Kennzeichnung, sofern Sie keine entsprechende Standardbezeichnung festlegen, dazu führen, dass Ihre Benutzer mit den häufig auftretenden Eingabeaufforderungen frustriert sind. 
+    Erwägen Sie die Verwendung dieser Option, um dafür zu sorgen, dass Bezeichnungen in höherem Maß verwendet werden. Ohne Benutzerschulungen können diese Einstellungen jedoch zu ungenauen Bezeichnungen führen. Außerdem kann die obligatorische Kennzeichnung, sofern Sie keine entsprechende Standardbezeichnung festlegen, dazu führen, dass Ihre Benutzer mit den häufig auftretenden Eingabeaufforderungen frustriert sind.
 
 - **Link zu einer benutzerdefinierten Hilfeseite bereitstellen** Wenn Ihre Benutzer nicht genau wissen, was Vertraulichkeitsbezeichnungen sind oder wie sie verwendet werden sollten, können Sie eine URL zu weiteren Informationen angeben, die unten im Menü der **Vertraulichkeitsbezeichnungen** in den Office-Apps angezeigt wird:
 
@@ -197,8 +207,8 @@ Sie können Benutzern die Vertraulichkeitsbezeichnungen zur Verfügung stellen, 
 Eine Bezeichnungsrichtlinie besteht aus:
 
 - Einer Gruppe von Beschriftungen.
-- Dem Bereich der Bezeichnungsrichtlinie, d. h. die Benutzer und Gruppen, die in der Richtlinie enthalten sind.
-- Die Einstellungen der oben beschriebenen Bezeichnungsrichtlinie (Standardbezeichnung, Ausrichtung, obligatorische Bezeichnung und Hilfe-Link).
+- Die Benutzer und Gruppen, denen die Richtlinien über die Bezeichnungen zugewiesen wird.
+- Der Bereich der Richtlinie und die Richtlinieneinstellungen für diesen Bereich (wie eine Standardbezeichnung für Dateien und E-Mails).
 
 Sie können einen Benutzer in mehrere Bezeichnungsrichtlinien einschließen, und der Benutzer sieht sämtliche Vertraulichkeitsbezeichnungen aus diesen Richtlinien. Ein Benutzer sieht jedoch nur die Richtlinieneinstellungen der Bezeichnungsrichtlinie mit der höchsten Priorität.
 

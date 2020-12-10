@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Verwenden Sie die Erhaltungssperre mit Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungsrichtlinien, um die Einhaltung behördlicher Vorschriften und die Absicherung gegen übel gesinnte Administratoren zu erleichtern.
-ms.openlocfilehash: 6f6cfc5bef9b93af08fcc9b703b29facb9a7c576
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 9890c73495bd14ea7264f3314f6313254ef1bf6b
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920697"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49612987"
 ---
 # <a name="use-preservation-lock-to-restrict-changes-to-retention-policies-and-retention-label-policies"></a>Verwenden der Erhaltungssperre zum Einschränken von Änderungen an Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungsrichtlinien
 
@@ -28,18 +28,27 @@ ms.locfileid: "48920697"
 
 Die Erhaltungssperre sperrt eine Aufbewahrungsrichtlinie oder eine Aufbewahrungsbezeichnungsrichtlinie, sodass niemand – auch nicht ein globaler Administrator – die Richtlinie deaktivieren, löschen oder weniger restriktiv einstellen kann. Diese Konfiguration könnte aufgrund behördlicher Vorschriften erforderlich sein und kann zum Schutz vor übel gesinnten Administratoren beitragen.
 
-Wenn eine Aufbewahrungsrichtlinie gesperrt ist, hat dies zur Folge:
+Das Sperren einer Aufbewahrungsrichtlinie bewirkt Folgendes:
 
-- Keiner kann sie ausschalten
-- Speicherorte können hinzugefügt, aber nicht entfernt werden
+- Niemand kann die Richtlinie deaktivieren oder löschen.
+- Speicherorte können hinzugefügt, aber nicht entfernt werden.
 - Der Aufbewahrungszeitraum kann verlängert, jedoch nicht verringert werden.
 
+Das Sperren einer Aufbewahrungsbezeichnungsrichtlinie bewirkt Folgendes:
+
+- Niemand kann die Richtlinie deaktivieren oder löschen.
+- Speicherorte können hinzugefügt, aber nicht entfernt werden.
+- Bezeichnungen können hinzugefügt, aber nicht entfernt werden.
+
 Zusammenfassend kann man sagen, dass eine gesperrte Richtlinie erweitert oder verlängert, jedoch nicht reduziert oder deaktiviert werden kann.
-  
+
 > [!IMPORTANT]
 > Bevor Sie eine Aufbewahrungsrichtlinie oder einen Aufbewahrungsbezeichnungsrichtlinie sperren, ist es wichtig, dass Sie die Auswirkungen kennen und überlegen, ob dies für Ihre Organisation erforderlich ist. Es könnte beispielsweise zur Erfüllung behördlicher Vorschriften erforderlich sein. Administratoren können diese Richtlinien nicht mehr deaktivieren oder löschen, nachdem die Erhaltungssperre auf sie angewendet wurde.
 
 Konfigurieren Sie die Erhaltungssperre, nachdem Sie eine [Aufbewahrungsrichtlinie](create-retention-policies.md) oder eine Aufbewahrungsbezeichnungsrichtlinie erstellt haben, die Sie [veröffentlichen](create-apply-retention-labels.md) oder die [automatisch angewendet wird](apply-retention-labels-automatically.md). 
+
+> [!NOTE]
+> Das Sperren einer Bezeichnungsrichtlinie hindert einen Administrator nicht daran, die Aufbewahrungszeit für eine Bezeichnung, die in der gesperrten Richtlinie enthalten ist, zu verkürzen. Diese Anforderung kann, zusammen mit anderen Einschränkungen, erfüllt werden, wenn Sie eine Bezeichnung konfigurieren, um Elemente als [Datensatz](records-management.md#records) zu markieren.
 
 ## <a name="how-to-lock-a-retention-policy-or-retention-label-policy"></a>So sperren Sie eine Aufbewahrungsrichtlinie oder Aufbewahrungsbezeichnungsrichtlinie
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Implementieren Sie Microsoft Information Protection (MIP), um vertrauliche Informationen unabhängig davon, wo sie sich befinden oder unterwegs sind, zu schützen.
-ms.openlocfilehash: 4afc73b5a2cefe88d2e3af5fd6665ec64e5c0ee3
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: 59f57c920f2b753994f2335a6f2ed9ac5b7b77d1
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568317"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613087"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection in Microsoft 365
 
@@ -40,6 +40,10 @@ Informationen zum Kontrolle Ihrer Daten finden Sie unter [Microsoft Information 
 
 > [!NOTE]
 > Informationen zum Klassifizieren und Beschriften von Daten in Azure Purview (aktuell als Vorschau) finden Sie unter [Automatische Beschriftung Ihrer Inhalte in Azure Purview](https://docs.microsoft.com/azure/purview/create-sensitivity-label).
+> 
+> Informationen zu diesem neuen Release finden Sie im Blogbeitrag [Microsoft Information Protection and Microsoft Azure Purview: Better Together](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-information-protection-and-microsoft-azure-purview/ba-p/1957481).
+
+
 
 Verwenden Sie die folgenden Funktionen, um Ihre Datenlandschaft zu verstehen und wichtige Daten in Ihrer Hybridumgebung zu ermitteln:
  

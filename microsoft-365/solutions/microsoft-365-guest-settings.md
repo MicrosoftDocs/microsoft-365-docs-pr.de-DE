@@ -2,7 +2,7 @@
 title: Referenz zu Gastfreigabeeinstellungen für Microsoft 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Erfahren Sie mehr über die in Microsoft 365 verfügbaren Gastfreigabeeinstellungen, die sich auf die Freigabe für Personen außerhalb Ihrer Organisation auswirken können.
-ms.openlocfilehash: 184962b1de8d1dccf86541dba302ca9de26989c2
-ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
+ms.openlocfilehash: 0c734d1046a1c2d180c8102187b8cf07de7dc4dc
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030077"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613044"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Referenz zu Gastfreigabeeinstellungen für Microsoft 365
 
@@ -78,14 +78,14 @@ Das Microsoft 365 Admin Center bietet Einstellungen auf Organisationsebene für 
 
 |**Einstellung**|**Standard**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Gruppenmitglieder von außerhalb Ihrer Organisation dürfen auf Gruppeninhalte zugreifen|Ein|Ist diese Option aktiviert, können Gäste auf Gruppeninhalte zugreifen. Ist die Option deaktiviert, ist dies nicht möglich. Diese Einstellung sollte für alle Szenarien **aktiviert** sein, in denen Gastbenutzer mit Microsoft 365-Gruppen oder -Teams interagieren.|
-|Erlauben Sie Gruppenbesitzern, Personen von außerhalb Ihrer Organisation zu Gruppen hinzuzufügen|Ein|Ist diese Option **aktiviert** , können Besitzer von Microsoft 365-Gruppen oder -Teams neue Gäste zur Gruppe einladen. Ist diese Option deaktiviert, können Besitzer nur Gäste einladen, die sich bereits im Verzeichnis befinden.|
+|Gruppenmitglieder von außerhalb Ihrer Organisation dürfen auf Gruppeninhalte zugreifen|Ein|Ist diese Option aktiviert, können Gäste auf Gruppeninhalte zugreifen. Ist die Option deaktiviert, ist dies nicht möglich. Diese Einstellung sollte für alle Szenarien **aktiviert** sein, in denen Gastbenutzer mit Microsoft 365-Gruppen oder Teams interagieren.|
+|Erlauben Sie Gruppenbesitzern, Personen von außerhalb Ihrer Organisation zu Gruppen hinzuzufügen|Ein|Ist diese Option **aktiviert**, können Besitzer von Microsoft 365-Gruppen oder -Teams neue Gäste zur Gruppe einladen. Ist diese Option deaktiviert, können Besitzer nur Gäste einladen, die sich bereits im Verzeichnis befinden.|
 
 Diese Einstellungen erfolgen auf Organisationsebene. Informationen zum Ändern dieser Einstellungen auf Gruppenebene mithilfe von PowerShell finden Sie unter [Erstellen von Einstellungen für eine bestimmte Gruppe](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets#create-settings-for-a-specific-group).
 
 ## <a name="teams"></a>Microsoft Teams
 
-Die Teams-Masteroption für den Gastzugriff, **Gastzugriff in Teams ermöglichen** , muss aktiviert sein, damit die übrigen Gasteinstellungen verfügbar sind.
+Die Teams-Masteroption für den Gastzugriff, **Gastzugriff in Teams ermöglichen**, muss aktiviert sein, damit die übrigen Gasteinstellungen verfügbar sind.
 
 **Administratorrolle:** Teams-Dienstadministrator
 
@@ -171,7 +171,7 @@ Da OneDrive eine Hierarchie von Websites in SharePoint ist, wirken sich die Frei
 
 ### <a name="sharepoint-and-onedrive-file-and-folder-link-settings"></a>Linkeinstellungen für Dateien und Ordner in SharePoint und OneDrive
 
-Wenn Dateien und Ordner in SharePoint und OneDrive freigegeben werden, wird den Freigabeempfängern ein Link mit Berechtigungen für die Datei oder den Ordner gesendet, anstatt ihnen direkten Zugriff auf die Datei oder den Ordner zu gewähren. Neben dem Standardlinktyp, der Benutzern beim Freigeben einer Datei oder eines Ordners angezeigt wird, stehen verschiedene weitere Arten von Links zur Verfügung. Sie können auch Berechtigungen und Ablaufoptionen für *Jeder* -Links festlegen.
+Wenn Dateien und Ordner in SharePoint und OneDrive freigegeben werden, wird den Freigabeempfängern ein Link mit Berechtigungen für die Datei oder den Ordner gesendet, anstatt ihnen direkten Zugriff auf die Datei oder den Ordner zu gewähren. Neben dem Standardlinktyp, der Benutzern beim Freigeben einer Datei oder eines Ordners angezeigt wird, stehen verschiedene weitere Arten von Links zur Verfügung. Sie können auch Berechtigungen und Ablaufoptionen für *Jeder*-Links festlegen.
 
 **Navigation:** SharePoint Admin Center-> Freigabe
 
@@ -179,10 +179,10 @@ Wenn Dateien und Ordner in SharePoint und OneDrive freigegeben werden, wird den 
 
 |**Setting**|**Standard**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Datei- und Ordnerlinks|Jeder mit diesem Link|Gibt an, welcher Freigabelink standardmäßig angezeigt wird, wenn ein Benutzer eine Datei oder einen Ordner freigibt. Benutzer können die Option bei Bedarf vor der Freigabe ändern. Wenn die Standardeinstellung auf **Jeder mit diesem Link** festgelegt ist und die *Jeder* -Freigabe für eine bestimmte Website nicht zulässig ist, wird **Nur Personen in Ihrer Organisation** als Standard für diese Website angezeigt.|
-|Diese Links müssen innerhalb dieser Anzahl von Tagen ablaufen|Aus (kein Ablaufdatum)|Gibt an, wie viele Tage nach Erstellung ein *Jeder* -Link abläuft. Abgelaufene Links können nicht verlängert werden. Erstellen Sie einen neuen Link, wenn die Freigabe über das Ablaufdatum hinaus fortgesetzt werden soll.|
-|Dateiberechtigungen|Anzeigen und bearbeiten|Gibt die Dateiberechtigungsstufen an, die für Benutzer beim Erstellen eines *Jeder* -Links verfügbar sind. Wird **Anzeigen** ausgewählt, können Benutzer nur *Jeder* -Dateilinks mit der Berechtigung "Anzeigen" erstellen. Wird **Anzeigen und bearbeiten** ausgewählt, können Benutzer beim Erstellen des Links zwischen den Berechtigungen "Anzeigen" und "Anzeigen und bearbeiten" auswählen.|
-|Ordnerberechtigungen|Anzeigen, bearbeiten und hochladen|Gibt die Ordnerberechtigungsstufen an, die für Benutzer beim Erstellen eines *Jeder* -Links verfügbar sind. Wird **Anzeigen** ausgewählt, können Benutzer nur *Jeder* -Ordnerlinks mit der Berechtigung "Anzeigen" erstellen. Wird **Anzeigen, bearbeiten und hochladen** ausgewählt, können Benutzer beim Erstellen des Links zwischen den Berechtigungen "Anzeigen" und "Anzeigen, bearbeiten und hochladen" auswählen.|
+|Datei- und Ordnerlinks|Jeder mit diesem Link|Gibt an, welcher Freigabelink standardmäßig angezeigt wird, wenn ein Benutzer eine Datei oder einen Ordner freigibt. Benutzer können die Option bei Bedarf vor der Freigabe ändern. Wenn die Standardeinstellung auf **Jeder mit diesem Link** festgelegt ist und die *Jeder*-Freigabe für eine bestimmte Website nicht zulässig ist, wird **Nur Personen in Ihrer Organisation** als Standard für diese Website angezeigt.|
+|Diese Links müssen innerhalb dieser Anzahl von Tagen ablaufen|Aus (kein Ablaufdatum)|Gibt an, wie viele Tage nach Erstellung ein *Jeder*-Link abläuft. Abgelaufene Links können nicht verlängert werden. Erstellen Sie einen neuen Link, wenn die Freigabe über das Ablaufdatum hinaus fortgesetzt werden soll.|
+|Dateiberechtigungen|Anzeigen und bearbeiten|Gibt die Dateiberechtigungsstufen an, die für Benutzer beim Erstellen eines *Jeder*-Links verfügbar sind. Wird **Anzeigen** ausgewählt, können Benutzer nur *Jeder*-Dateilinks mit der Berechtigung "Anzeigen" erstellen. Wird **Anzeigen und bearbeiten** ausgewählt, können Benutzer beim Erstellen des Links zwischen den Berechtigungen "Anzeigen" und "Anzeigen und bearbeiten" auswählen.|
+|Ordnerberechtigungen|Anzeigen, bearbeiten und hochladen|Gibt die Ordnerberechtigungsstufen an, die für Benutzer beim Erstellen eines *Jeder*-Links verfügbar sind. Wird **Anzeigen** ausgewählt, können Benutzer nur *Jeder*-Ordnerlinks mit der Berechtigung "Anzeigen" erstellen. Wird **Anzeigen, bearbeiten und hochladen** ausgewählt, können Benutzer beim Erstellen des Links zwischen den Berechtigungen "Anzeigen" und "Anzeigen, bearbeiten und hochladen" auswählen.|
 
 ### <a name="sharepoint-and-onedrive-security-group-settings"></a>Einstellungen für SharePoint- und OneDrive-Sicherheitsgruppen
 
@@ -194,20 +194,20 @@ Wenn Sie einschränken möchten, welche Personen in SharePoint und OneDrive Elem
 
 |**Setting**|**Standard**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Zulassen, dass nur Benutzer in ausgewählten Sicherheitsgruppen mit authentifizierten externen Benutzern teilen:|Aus|Ist diese Option aktiviert, können nur die Personen in den angegebenen Sicherheitsgruppen Elemente für externe Benutzer freigeben. Es sind nur *Bestimmte Personen* -Links verfügbar. Die *Jeder* -Freigabe wird effektiv deaktiviert, es sei denn, **Nur Benutzer in ausgewählten Sicherheitsgruppen dürfen mit authentifizierten externen Benutzern und mittels anonymer Links teilen** ist ebenfalls aktiviert.|
-|Nur Benutzer in ausgewählten Sicherheitsgruppen dürfen mit authentifizierten externen Benutzern und mittels anonymer Links teilen|Aus|Ist diese Option aktiviert, können nur die Personen in den angegebenen Sicherheitsgruppen Elemente für Gäste freigeben. Es sind *Jeder* - und *Bestimmte Personen* - Links verfügbar.|
+|Zulassen, dass nur Benutzer in ausgewählten Sicherheitsgruppen mit authentifizierten externen Benutzern teilen:|Aus|Ist diese Option **aktiviert**, können nur die Personen in den angegebenen Sicherheitsgruppen Elemente für Personen außerhalb der Organisation freigeben. Es sind nur *Bestimmte Personen*-Links verfügbar. Die *Jeder*-Freigabe wird effektiv deaktiviert, es sei denn, **Nur Benutzer in ausgewählten Sicherheitsgruppen dürfen mit authentifizierten externen Benutzern und mittels anonymer Links teilen** ist ebenfalls aktiviert.|
+|Nur Benutzer in ausgewählten Sicherheitsgruppen dürfen mit authentifizierten externen Benutzern und mittels anonymer Links teilen|Aus|Ist diese Option aktiviert, können nur die Personen in den angegebenen Sicherheitsgruppen Elemente für Gäste freigeben. Es sind *Jeder*- und *Bestimmte Personen*- Links verfügbar.|
 
-Beide Einstellungen können gleichzeitig verwendet werden. Wenn ein Benutzer in Sicherheitsgruppen für beide Einstellungen enthalten ist, hat die höhere Berechtigungsstufe Vorrang ( *Jeder* plus *Bestimmter Benutzer* ). Geschachtelte Sicherheitsgruppen werden unterstützt.
+Beide Einstellungen können gleichzeitig verwendet werden. Wenn ein Benutzer in Sicherheitsgruppen für beide Einstellungen enthalten ist, hat die höhere Berechtigungsstufe Vorrang (*Jeder* plus *Bestimmter Benutzer*). Geschachtelte Sicherheitsgruppen werden unterstützt.
 
 ## <a name="sharepoint-site-level"></a>SharePoint (Websiteebene)
 
 **Administratorrolle:** SharePoint-Administrator
 
-Da diese Einstellungen den organisationsweiten Einstellungen für SharePoint unterliegen, kann sich die effektive Freigabeeinstellung für die Website ändern, wenn sich die Einstellung auf Organisationsebene ändert. Wenn Sie hier eine Einstellung auswählen und auf Organisationsebene später ein restriktiverer Wert festgelegt wird, gilt für diese Website der restriktivere Wert. Wenn Sie beispielsweise **Jeder** auswählen und die Einstellung auf Organisationsebene später auf **Neue und vorhandene Gäste** festgelegt wird, lässt diese Website nur neue und vorhandene Gäste zu. Wird die Einstellung auf Organisationsebene dann wieder auf **Jeder** zurückgesetzt, lässt die Website wieder *Jeder* -Links zu.
+Da diese Einstellungen den organisationsweiten Einstellungen für SharePoint unterliegen, kann sich die effektive Freigabeeinstellung für die Website ändern, wenn sich die Einstellung auf Organisationsebene ändert. Wenn Sie hier eine Einstellung auswählen und auf Organisationsebene später ein restriktiverer Wert festgelegt wird, gilt für diese Website der restriktivere Wert. Wenn Sie beispielsweise **Jeder** auswählen und die Einstellung auf Organisationsebene später auf **Neue und vorhandene Gäste** festgelegt wird, lässt diese Website nur neue und vorhandene Gäste zu. Wird die Einstellung auf Organisationsebene dann wieder auf **Jeder** zurückgesetzt, lässt die Website wieder *Jeder*-Links zu.
 
 ### <a name="site-sharing"></a>Freigabeeinstellungen für Websites
 
-Sie können Gastfreigabeberechtigungen für jede Website in SharePoint festlegen. Diese Einstellung gilt sowohl für die Freigabe von Websites als auch die Freigabe von Dateien und Ordnern. (Die *Jeder* -Freigabe ist für die Websitefreigabe nicht verfügbar. Wenn Sie **Jeder** auswählen, können Benutzer Dateien und Ordner unter Verwendung von *Jeder* -Links freigeben, und die Website selbst kann mit neuen und vorhandenen Gästen geteilt werden.)
+Sie können Gastfreigabeberechtigungen für jede Website in SharePoint festlegen. Diese Einstellung gilt sowohl für die Freigabe von Websites als auch die Freigabe von Dateien und Ordnern. (Die *Jeder*-Freigabe ist für die Websitefreigabe nicht verfügbar. Wenn Sie **Jeder** auswählen, können Benutzer Dateien und Ordner unter Verwendung von *Jeder*-Links freigeben, und die Website selbst kann mit neuen und vorhandenen Gästen geteilt werden.)
 
 **Navigation:** SharePoint Admin Center > Aktive Websites > Website auswählen > Registerkarte "Richtlinien" > Externe Freigabe bearbeiten
 
@@ -219,7 +219,7 @@ Sie können Gastfreigabeberechtigungen für jede Website in SharePoint festlegen
 
 ### <a name="site-file-and-folder-link-settings"></a>Link-Einstellungen für Website-Dateien und -Ordner
 
-Sie können Standardeinstellungen für Verknüpfungstyp und Berechtigungen sowie für Ablaufeinstellungen für *Jeder* -Links für jede einzelne Website festlegen. Wenn die Einstellungen auf Websiteebene festgelegt sind, werden dadurch die Einstellungen auf Organisationsebene außer Kraft gesetzt. Beachten Sie: Wenn *Jeder* -Links auf Organisationsebene deaktiviert sind, ist der Linktyp *Jeder* auf Websiteebene nicht verfügbar.
+Sie können Standardeinstellungen für Verknüpfungstyp und Berechtigungen sowie für Ablaufeinstellungen für *Jeder*-Links für jede einzelne Website festlegen. Wenn die Einstellungen auf Websiteebene festgelegt sind, werden dadurch die Einstellungen auf Organisationsebene außer Kraft gesetzt. Beachten Sie: Wenn *Jeder*-Links auf Organisationsebene deaktiviert sind, ist der Linktyp *Jeder* auf Websiteebene nicht verfügbar.
 
 **Navigation:** SharePoint Admin Center > Aktive Websites > Website auswählen > Registerkarte "Richtlinien" > Externe Freigabe bearbeiten
 
@@ -229,7 +229,7 @@ Sie können Standardeinstellungen für Verknüpfungstyp und Berechtigungen sowie
 |:-----|:-----|:-----|
 |Einschränken der Freigabe nach Domäne|Off|Diese Einstellung ermöglicht es Ihnen, eine Liste der zulässigen oder gesperrte Domänen für die Freigabe festzulegen. Wenn zulässige Domänen angegeben sind, können Freigabeeinladungen nur an diese Domänen gesendet werden. Wenn gesperrte Domänen angegeben sind, können keine Freigabeeinladungen an diese Domänen gesendet werden.<br><br> Diese Einstellung kann nicht dazu verwendet werden, die auf Organisations- oder Azure AD-Ebene festgelegten Domäneneinschränkungen außer Kraft zu setzen.|
 |Standardmäßiger Freigabe-Linktyp|Identisch mit der Einstellung auf Organisationsebene|Diese Einstellung ermöglicht es Ihnen, den standardmäßigen Freigabelink anzugeben, der Benutzern auf dieser Website angezeigt wird. Die Option *Identisch mit der Einstellung auf Organisationsebene* wird durch eine Kombination aus Organisations- und Website Freigabeeinstellungen definiert.|
-|Erweiterte Einstellungen für "Jeder"-Links|Identisch mit der Einstellung auf Organisationsebene|Gibt an, wie viele Tage nach dessen Erstellung ein *Jeder* -Link für eine Datei auf der betreffenden Seite abläuft. Abgelaufene Links können nicht verlängert werden. Erstellen Sie einen neuen Link, wenn die Freigabe über das Ablaufdatum hinaus fortgesetzt werden soll.|
+|Erweiterte Einstellungen für "Jeder"-Links|Identisch mit der Einstellung auf Organisationsebene|Gibt an, wie viele Tage nach dessen Erstellung ein *Jeder*-Link für eine Datei auf der betreffenden Seite abläuft. Abgelaufene Links können nicht verlängert werden. Erstellen Sie einen neuen Link, wenn die Freigabe über das Ablaufdatum hinaus fortgesetzt werden soll.|
 |Standardlinkberechtigung|Identisch mit der Einstellung auf Organisationsebene|Über diese Einstellung können Sie die Standardberechtigung ("Anzeigen" oder "Bearbeiten") für Freigabelinks angeben, die für Dateien auf der betreffenden Website erstellt wurden.|
 
 ### <a name="default-site-sharing-settings"></a>Standardeinstellungen für die Website-Freigabe
@@ -240,7 +240,7 @@ Die folgende Tabelle zeigt die Standardfreigabeeinstellung für jeden Websitetyp
 |:-----|:-----|
 |Klassisch|**Nur Personen in Ihrer Organisation**|
 |OneDrive|**Jeder**|
-|Mit Gruppen verbundene Websites (einschließlich Teams)|**Neue und vorhandene Gäste** , wenn die Einstellung für Microsoft 365-Gruppen **Gruppenbesitzer dürfen Personen außerhalb der Organisation zu Gruppen hinzufügen** **aktiviert** ist. Andernfalls **Nur vorhandene Gäste**|
+|Mit Gruppen verbundene Websites (einschließlich Teams)|**Neue und vorhandene Gäste**, wenn die Einstellung für Microsoft 365-Gruppen **Gruppenbesitzer dürfen Personen außerhalb der Organisation zu Gruppen hinzufügen** **aktiviert** ist. Andernfalls **Nur vorhandene Gäste**|
 |Kommunikation|**Nur Personen in Ihrer Organisation**|
 |Moderne Websites ohne Gruppe (#STS3 TeamSite)|**Nur Personen in Ihrer Organisation**|
 

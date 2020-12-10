@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie Sie DomainKeys Identified Mail (DKIM) mit Microsoft 365 verwenden können, um sicherzustellen, dass die von Ihrer benutzerdefinierten Domäne gesendeten Nachrichten von den Ziel-E-Mail-Systemen als vertrauenswürdig eingestuft werden.
-ms.openlocfilehash: 66f352b6c3a5d3b3beff3043a3f0d1a435d1e5d1
-ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
+ms.openlocfilehash: f8ae6334a078d635de069d2fe7af351ad42d8df3
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49560884"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615360"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Verwenden von DKIM zum Überprüfen ausgehender E-Mails, die von Ihrer benutzerdefinierten Domäne gesendet werden
 
@@ -90,7 +90,7 @@ Da sowohl 1024-Bit als auch 2048-Bit für DKIM-Schlüssel unterstützt wird, erf
    1. [Stellen Sie die Verbindung zu Office 365-Workloads über PowerShell her](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window). (Das Cmdlet stammt von Exchange Online.)
    1. Führen Sie den folgenden Befehl aus:
 
-      ```powershell 
+      ```powershell
       Rotate-DkimSigningConfig -KeySize 2048 -Identity {Guid of the existing Signing Config}
       ```
 
@@ -131,7 +131,7 @@ Um DKIM zu konfigurieren, müssen Sie diese Schritte ausführen:
 Für jede Domäne, für die Sie eine DKIM-Signatur in DNS hinzufügen möchten, müssen Sie zwei CNAME-Einträge veröffentlichen.
 
 > [!NOTE]
-> Wenn Sie nicht den gesamten Artikel gelesen haben, haben Sie möglicherweise diese zeitsparenden Informationen zur PowerShell-Verbindung verpasst: [Herstellen einer Verbindung zu Office 365-Workloads über PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window). (Das Cmdlet stammt von Exchange Online.) 
+> Wenn Sie nicht den gesamten Artikel gelesen haben, haben Sie möglicherweise diese zeitsparenden Informationen zur PowerShell-Verbindung verpasst: [Herstellen einer Verbindung zu Office 365-Workloads über PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window). (Das Cmdlet stammt von Exchange Online.)
 
 Führen Sie die folgenden Befehle aus, um die Selektor-Einträge zu erstellen:
 
@@ -254,7 +254,7 @@ Warten Sie einige Minuten, bevor Sie diese Schritte ausführen, um zu bestätige
 
 Wenn Sie zu einem bestimmten Zeitpunkt in der Zukunft eine weitere benutzerdefinierte Domäne hinzufügen und DKIM für die neue Domäne aktivieren möchten, müssen Sie die Schritte in diesem Artikel für jede Domäne ausführen. Schließen Sie insbesondere alle Schritte in [Schritte zum manuellen Einrichten von DKIM](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365) ab.
 
-## <a name="disabling-the-dkim-signing-policy-for-a-custom-domain"></a>Deaktivieren der DKIM-Signierungsrichtlinie für eine benutzerdefinierte Domäne 
+## <a name="disabling-the-dkim-signing-policy-for-a-custom-domain"></a>Deaktivieren der DKIM-Signierungsrichtlinie für eine benutzerdefinierte Domäne
 <a name="DisableDKIMSigningPolicy"> </a>
 
 Durch das Deaktivieren der Signierungsrichtlinie wird DKIM nicht vollständig deaktiviert. Nach einer bestimmten Zeitspanne übernimmt Microsoft 365 automatisch die Standardrichtlinie für Ihre Domäne. Weitere Informationen finden Sie unter [Standardverhalten für DKIM und Microsoft 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior).
@@ -307,14 +307,14 @@ DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
     b=<signed field>;
 ```
 
-In this example, the host name and domain contain the values to which the CNAME would point if DKIM-signing for fabrikam.com had been enabled by the domain administrator. Schließlich wird jede einzelne Nachricht, die von Microsoft 365 gesendet wird, mit DKIM signiert. Wenn Sie DKIM selbst aktivieren, ist die Domäne identisch mit der Domäne in der „From:“-Adresse, in diesem Fall „fabrikam.com“. If you don't, it will not align and instead will use your organization's initial domain. Informationen zum Ermitteln Ihrer ersten Domäne finden Sie unter [Häufig gestellte Fragen zu Domänen](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain).
+In diesem Beispiel enthalten der Hostname und die Domäne die Werte, auf die der CNAME-Eintrag verweisen würden, wenn die DKIM-Signierung für „fabrikam.com“ vom Domänenadministrator aktiviert worden wäre. Schließlich wird jede einzelne Nachricht, die von Microsoft 365 gesendet wird, mit DKIM signiert. Wenn Sie DKIM selbst aktivieren, ist die Domäne identisch mit der Domäne in der „From:“-Adresse, in diesem Fall „fabrikam.com“. Andernfalls erfolgt keine Ausrichtung. Stattdessen wird die erste Domäne Ihrer Organisation verwendet. Informationen zum Ermitteln Ihrer ersten Domäne finden Sie unter [Häufig gestellte Fragen zu Domänen](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain).
 
 ## <a name="set-up-dkim-so-that-a-third-party-service-can-send-or-spoof-email-on-behalf-of-your-custom-domain"></a>Einrichten von DKIM, damit ein Drittanbieterdienst E-Mails im Auftrag Ihrer benutzerdefinierten Domäne senden oder fälschen kann
 <a name="SetUp3rdPartyspoof"> </a>
 
-Bei einigen Anbietern von Massen-E-Mail-Diensten oder Software-as-a-Service-Anbietern können Sie DKIM-Schlüssel für E-Mails einrichten, die aus dem jeweiligen Dienst stammen. Dies erfordert eine Koordination zwischen Ihnen und dem Drittanbieter, damit die erforderlichen DNS-Einträge eingerichtet werden können. Einige Server von Drittanbietern können eigene CNAME-Einträge mit unterschiedlichen Selektoren verwenden. Keine zwei Organisationen führen dies auf die gleiche Weise durch. Der Prozess hängt vollständig von der Organisation ab.
+Bei einigen Massen-E-Mail-Dienstanbietern oder Software-as-a-Service-Anbietern können Sie DKIM-Schlüssel für E-Mails einrichten, die von diesem Dienst stammen. Dies erfordert eine Koordination zwischen Ihnen und dem Drittanbieter, damit die erforderlichen DNS-Einträge eingerichtet werden können. Einige Server von Drittanbietern können eigene CNAME-Einträge mit unterschiedlichen Selektoren verwenden. Keine zwei Organisationen führen dies auf die gleiche Weise durch. Der Prozess hängt vollständig von der Organisation ab.
 
-Eine Beispielnachricht mit einer ordnungsgemäßen DKIM-Konfiguration für „contoso.com“ und „bulkemailprovider.com“ kann wie folgt aussehen:
+Eine Beispielnachricht mit einer ordnungsgemäßen DKIM-Konfiguration für contoso.com und bulkemailprovider.com kann wie folgt aussehen:
 
 ```console
 Return-Path: <communication@bulkemailprovider.com>
@@ -336,7 +336,7 @@ In diesem Beispiel sind zu diesem Zweck die folgenden Schritte erforderlich:
    > sender@**contoso.com**
 
    > d=**contoso.com**
-   
+
 ## <a name="identify-domains-that-do-not-send-email"></a>Domänen identifizieren, die keine E-Mails senden
 
 Organisationen sollten explizit angeben, ob eine Domäne keine E-Mails sendet, indem sie `v=DKIM1; p=` im DKIM-Eintrag für diese Domänen angeben. Dies weist empfangende E-Mail-Server darauf hin, dass es keine gültigen öffentlichen Schlüssel für die Domäne gibt. Jede E-Mail, die vorgibt, von dieser Domäne zu stammen, sollte abgelehnt werden. Sie sollten dies für jede Domäne und Subdomäne mit einem Wildcard-DKIM tun.

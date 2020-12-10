@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Administratoren können sich über die Anti-Spoofing-Funktionen informieren, die in Exchange Online Protection (EOP) verfügbar sind und die dazu beitragen können, Phishing-Angriffe von gefälschten Absendern und Domänen abzuschwächen.
-ms.openlocfilehash: 57d6dc8d9c1935578db15abdbb3e17e72bb64257
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: cae99cce070e6dc362dc678c153074fee53ca6a6
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130829"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616716"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Schutz vor Spoofing in EOP
 
@@ -84,13 +84,13 @@ Microsoft unterscheidet zwei verschiedene Typen von gefälschten Nachrichten:
 - **Organisationsinternes Spoofing**: wird auch als _Self-to-Self_-Spoofing bezeichnet. Zum Beispiel:
 
   - Absender und Empfänger befinden sich in derselben Domäne:
-    > Von: chris@contoso.com <br/> An: michelle@contoso.com
+    > Von: chris@contoso.com <br> An: michelle@contoso.com
 
   - Absender und Empfänger befinden sich in Subdomänen derselben Domäne:
-    > Von: laura@marketing.fabrikam.com <br/> An: julia@engineering.fabrikam.com
+    > Von: laura@marketing.fabrikam.com <br> An: julia@engineering.fabrikam.com
 
   - Der Absender und der Empfänger befinden sich in unterschiedlichen Domänen, die derselben Organisation angehören (dies bedeutet, dass beide Domänen als [akzeptierte Domänen](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in derselben Organisation konfiguriert sind):
-    > Von: absender @ microsoft.com <br/> An: empfänger @ bing.com
+    > Von: absender @ microsoft.com <br> An: empfänger @ bing.com
 
     In den E-Mail-Adressen werden Leerzeichen verwendet, um die Sammlung durch Spambots zu verhindern.
 
@@ -105,7 +105,7 @@ Microsoft unterscheidet zwei verschiedene Typen von gefälschten Nachrichten:
   - SFTY ist die Sicherheitsstufe der Nachricht. 9 zeigt Phishing an, 11 steht für organisationsinternes Spoofing.
 
 - **Domänenübergreifendes Spoofing**: die Absender- und Empfängerdomäne sind unterschiedlich und es gibt keine Beziehung zueinander (auch als externe Domänen bezeichnet). Zum Beispiel:
-    > Von: chris@contoso.com <br/> An: michelle@tailspintoys.com
+    > Von: chris@contoso.com <br> An: michelle@tailspintoys.com
 
   Nachrichten, bei denen die [zusammengesetzte Authentifizierung](email-validation-and-authentication.md#composite-authentication) aufgrund von domänenübergreifendem Spoofing fehlschlägt, enhalten die folgenden Werte im Header:
 
@@ -133,11 +133,11 @@ Mailinglisten (auch bekannt als Diskussionslisten) haben bekanntermaßen Problem
 
 Beispielsweise interessiert sich Gabriela Laureano (glaureano@contoso.com) für Vogelbeobachtung, schließt sich der Diskussionsliste birdwatchers@fabrikam.com an und schickt folgende Nachricht an die Liste:
 
-> **Von:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **To:** Birdwatcher's Discussion List \<birdwatchers@fabrikam.com\> <br/> **Betreff:** Großartiger Blick auf Eichelhäher am Mount Rainier diese Woche <p> Jemand Interesse an diesem Ausblick von dieser Woche am Mount Rainier?
+> **Von:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **To:** Birdwatcher's Discussion List \<birdwatchers@fabrikam.com\> <br> **Betreff:** Großartiger Blick auf Eichelhäher am Mount Rainier diese Woche <p> Jemand Interesse an diesem Ausblick von dieser Woche am Mount Rainier?
 
 Der Diskussionslisten-Server empfängt die Nachricht, ändert deren Inhalt und sendet sie an die Mitglieder der Liste. Die an die Mitglieder ausgesendete Nachricht hat zwar die gleiche „Von“-Adresse (glaureano@contoso.com), jedoch wurde der Betreffzeile ein Tag und eine der Nachricht eine Fußzeile hinzugefügt. Diese Art von Änderung ist in Diskussionslisten üblich und kann zu falsch-positiven Ergebnissen der Spoofing-Prüfung führen.
 
-> **Von:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **To:** Birdwatcher's Discussion List \<birdwatchers@fabrikam.com\> <br/> **Betreff:** [BIRDWATCHERS] Großartiger Blick auf Eichelhäher am Mount Rainier diese Woche <p> Jemand Interesse an diesem Ausblick von dieser Woche am Mount Rainier? <p> Diese Nachricht wurde an die Diskussionsgruppe Vögelbeobachtung gesendet. Sie können sich jederzeit wieder abmelden.
+> **Von:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **To:** Birdwatcher's Discussion List \<birdwatchers@fabrikam.com\> <br> **Betreff:** [BIRDWATCHERS] Großartiger Blick auf Eichelhäher am Mount Rainier diese Woche <p> Jemand Interesse an diesem Ausblick von dieser Woche am Mount Rainier? <p> Diese Nachricht wurde an die Diskussionsgruppe Vögelbeobachtung gesendet. Sie können sich jederzeit wieder abmelden.
 
 Um Nachrichten aus Diskussionslisten dabei zu helfen, die Anti-Spoofing-Prüfungen zu bestehen, führen Sie die folgenden Schritte aus, je nachdem, ob Sie die Diskussionsliste kontrollieren:
 

@@ -1,5 +1,5 @@
 ---
-title: Erstellen und Konfigurieren von Aufbewahrungsrichtlinien zum automatischen Aufbewahren oder Löschen von Inhalten
+title: Erstellen und Konfigurieren von Aufbewahrungsrichtlinien zum automatischen Beibehalten oder Löschen von Inhalten
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,27 +16,27 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Mithilfe einer Aufbewahrungsrichtlinie können Sie sehr effizient die Kontrolle über den Inhalt behalten, den Benutzer mit E-Mails, Dokumenten und Konversationen generieren. Behalten Sie, was Sie wollen, und entfernen Sie das, was Sie nicht wollen.
-ms.openlocfilehash: 4479731af4787a6ef77dc48d27e5dfb60834d9c5
-ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
+description: Mithilfe einer Aufbewahrungsrichtlinie können Sie die Inhalte, die Benutzer mit E-Mails, Dokumenten und Unterhaltungen generieren, sehr effizient verwalten. Bewahren Sie auf, was Sie wollen, und werden Sie los, was Sie nicht mehr wollen.
+ms.openlocfilehash: 6816905155feb321ae9821c2f0dd47a271a382c9
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "49385251"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604247"
 ---
 # <a name="create-and-configure-retention-policies"></a>Erstellen und Konfigurieren von Aufbewahrungsrichtlinien
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
 
-Mithilfe einer Aufbewahrungsrichtlinie können Sie proaktiv entscheiden, ob Inhalte aufbewahrt, gelöscht oder beides (also aufbewahrt und dann gelöscht) werden sollen.
+Mithilfe einer Aufbewahrungsrichtlinie können Sie proaktiv entscheiden, ob Inhalte aufbewahrt, gelöscht oder beides, also aufbewahrt und dann gelöscht werden sollen.
 
-Mit einer Aufbewahrungsrichtlinie können Sie dies sehr effizient tun, indem Sie dieselben Aufbewahrungseinstellungen für Inhalte nach Speicherort, auf Website- oder Postfachebene zuweisen. Wenn Sie nicht sicher sind, ob Sie eine Aufbewahrungsrichtlinie oder eine Aufbewahrungsbezeichnung verwenden sollen, lesen Sie [Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](retention.md#retention-policies-and-retention-labels).
+Mit einer Aufbewahrungsrichtlinie können Sie dies sehr effizient erledigen, indem Sie identische Aufbewahrungseinstellungen für Inhalte nach Speicherort, auf Website- oder Postfachebene zuweisen. Wenn Sie nicht sicher sind, ob Sie eine Aufbewahrungsrichtlinie oder eine Aufbewahrungsbezeichnung verwenden, lesen Sie [Aufbewahrungsrichtlinien und Aufbewahrungsbeschriftungen](retention.md#retention-policies-and-retention-labels).
 
-Näheres über Aufbewahrungsrichtlinien und wie die Aufbewahrung funktioniert erfahren Sie unter [Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](retention.md).
+Näheres über Aufbewahrungsrichtlinien und wie sie funktionieren erfahren Sie unter [Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](retention.md).
 
-## <a name="before-you-begin"></a>Vorbereitung
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
-Der globale Administrator Ihrer Organisation verfügt über die vollständigen Berechtigungen zum Erstellen und Bearbeiten von Aufbewahrungsrichtlinien. Wenn Sie sich nicht als globaler Administrator anmelden, lesen Sie [Erforderlichen Berechtigungen zum Erstellen und Verwalten von Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen.](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels).
+Der globale Administrator Ihrer Organisation verfügt über umfassende Berechtigungen zum Erstellen und Bearbeiten von Aufbewahrungsrichtlinien. Wenn Sie sich nicht als globaler Administrator anmelden, lesen Sie [Notwendige Berechtigungen zum Erstellen und Verwalten von Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels).
 
 ## <a name="create-and-configure-a-retention-policy"></a>Erstellen und Konfigurieren einer Aufbewahrungsrichtlinie
 
@@ -53,7 +53,7 @@ Obwohl eine Aufbewahrungsrichtlinie mehrere Speicherorte unterstützt, können S
 - Nachrichten in der Yammer-Community
 - Private Nachrichten in Yammer
 
-Wenn Sie beim Erstellen einer Aufbewahrungsrichtlinie die Teams- oder Yammer-Speicherorte auswählen, werden die anderen Speicherorte automatisch ausgeschlossen. Welche Anweisungen zu befolgen sind, hängt daher davon ab, ob Sie die Teams- oder Yammer-Speicherorte einschließen müssen:
+Wenn Sie beim Erstellen einer Aufbewahrungsrichtlinie die Teams- oder Yammer-Speicherorte auswählen, werden die anderen Speicherorte automatisch ausgeschlossen. Daher sind die zu befolgenden Anweisungen davon abhängig, ob Sie die Teams- oder die Yammer-Speicherorte einschließen müssen:
 
 - [Anweisungen für eine Aufbewahrungsrichtlinie für Teams-Speicherorte](#retention-policy-for-teams-locations)
 - [Anweisungen für eine Aufbewahrungsrichtlinie für Yammer-Speicherorte](#retention-policy-for-yammer-locations)
@@ -67,34 +67,34 @@ Wenn Sie über mehr als eine Aufbewahrungsrichtlinie verfügen und außerdem Auf
 
 2. Wählen Sie **Neue Aufbewahrungsrichtlinie** aus, um den Assistenten zum Erstellen einer Aufbewahrungsrichtlinie zu starten, und benennen Sie die neue Aufbewahrungsrichtlinie.
 
-3. Wählen Sie auf der Seite **Speicherorte für die Anwendung der Richtlinie auswählen** einen oder beide Speicherorte für Teams aus: **Teams Kanalnachricht** und **Teams Chats**.
+3. Wählen Sie für die Seite **Speicherorte für die Anwendung der Richtlinie auswählen** einen oder beide Speicherorte für Teams aus: **Teams Kanalnachricht** und **Teams Chats**.
 
-   Bei **Teams Kanalnachrichten** sind Nachrichten von Standardkanälen enthalten, aber nicht von [privaten Kanälen](https://docs.microsoft.com/microsoftteams/private-channels). Derzeit werden private Kanäle nicht durch Aufbewahrungsrichtlinien unterstützt.
+   Bei **Teams-Kanalnachrichten** sind Nachrichten von Standardkanälen, jedoch nicht von [privaten Kanälen](https://docs.microsoft.com/microsoftteams/private-channels) eingeschlossen. Zurzeit werden private Kanäle von Aufbewahrungsrichtlinien nicht unterstützt.
 
-   Standardmäßig werden [alle Teams und alle Benutzer ausgewählt](#a-policy-that-applies-to-entire-locations), aber Sie können dies verfeinern, indem Sie die Optionen [**Auswählen** und **Ausschließen** verwenden](#a-policy-with-specific-inclusions-or-exclusions).
+   Standardmäßig sind [alle Teams und alle Benutzer ausgewählt](#a-policy-that-applies-to-entire-locations), aber Sie können dies verfeinern, indem Sie die Optionen [**Auswählen** und **Ausschließen** auswählen](#a-policy-with-specific-inclusions-or-exclusions).
 
-4. Geben Sie auf der Assistentenseite **Entscheiden, ob Inhalte aufbewahrt werden, gelöscht werden oder beides** die Konfigurationsoptionen für das Aufbewahren und Löschen von Inhalten an.
+4. Geben Sie auf der Assistentenseite **Entscheiden, ob Inhalte beibehalten werden, gelöscht werden oder beides** die Konfigurationsoptionen für das Beibehalten und Löschen von Inhalten an.
 
-   Sie können eine Aufbewahrungsrichtlinie erstellen, die Inhalte nur aufbewahrt, ohne sie zu löschen, Inhalte aufbewahrt und nach einem bestimmten Zeitraum löscht oder Inhalte nach einem bestimmten Zeitraum einfach löscht. Weitere Informationen finden Sie unter [Einstellungen zum Aufbewahren und Löschen von Inhalten](#settings-for-retaining-and-deleting-content) auf dieser Seite.
+   Sie können eine Aufbewahrungsrichtlinie erstellen, die Inhalte nur aufbewahrt, ohne sie zu löschen, die sie aufbewahrt und nach einem festgelegten Zeitraum löscht, oder Inhalte nur nach einem bestimmten Zeitraum löscht. Weitere Informationen finden Sie unter [Einstellungen für die Aufbewahrung und Löschung von Inhalten](#settings-for-retaining-and-deleting-content) auf dieser Seite.
 
 5. Schließen Sie den Assistenten ab, damit Ihre Einstellungen gespeichert werden.
 
 Weitere Informationen zu Aufbewahrungsrichtlinien für Teams finden Sie unter [Aufbewahrungsrichtlinien in Microsoft Teams](https://docs.microsoft.com/microsoftteams/retention-policies) in der Teams-Dokumentation.
 
-#### <a name="additional-retention-policy-needed-to-support-teams"></a>Zusätzliche für die Unterstützung von Teams benötigte Aufbewahrungsrichtlinie
+#### <a name="additional-retention-policy-needed-to-support-teams"></a>Weitere für die Unterstützung von Teams benötigte Aufbewahrungsrichtlinie
 
-Teams sind mehr als nur Chats und Kanalnachrichten. Wenn Sie Teams haben, die aus einer Microsoft 365-Gruppe (früher Office 365-Gruppe) erstellt wurden, sollten Sie zusätzlich eine Aufbewahrungsrichtlinie konfigurieren, die diese Microsoft 365-Gruppe enthält, indem Sie den Speicherort der **Microsoft 365-Gruppen** verwenden. Diese Aufbewahrungsrichtlinie gilt für Inhalte im Postfach, in der Website und in den Dateien der Gruppe.
+Teams bietet mehr als nur Chats und Kanalnachrichten. Wenn Sie Teams haben, die aus einer Microsoft 365-Gruppe (früher „Office 365-Gruppe“) erstellt wurden, sollten Sie zusätzlich eine Aufbewahrungsrichtlinie konfigurieren, die diese Microsoft 365-Gruppe einschließt. Verwenden Sie dazu den Speicherort **Microsoft 365-Gruppen**. Diese Aufbewahrungsrichtlinie gilt für Inhalte in Postfach, Website und Dateien der Gruppe.
 
-Wenn Sie Teamwebsites haben, die mit keiner Microsoft 365-Gruppe verbunden sind, benötigen Sie eine Aufbewahrungsrichtlinie, welche die Speicherorte für **SharePoint-Websites** oder **OneDrive-Konten** einschließt, um Dateien in Teams aufzubewahren und zu löschen:
+Wenn Sie Teamwebsites haben, die mit keiner Microsoft 365-Gruppe verbunden sind, benötigen Sie eine Aufbewahrungsrichtlinie, die die Speicherorte **SharePoint-Websites** oder **OneDrive-Konten** einschließt, um Dateien in Teams aufzubewahren und zu löschen:
 
 - In einem Chat freigegebene Dateien werden im OneDrive-Konto des Benutzers gespeichert, der sie freigegeben hat.
 
 - In Kanäle hochgeladene Dateien werden auf der SharePoint-Website für das Team gespeichert.
 
 > [!TIP]
-> Sie können eine Aufbewahrungsrichtlinie auf die Dateien eines bestimmten Teams anwenden, wenn dieses mit keiner Microsoft 365-Gruppe verbunden ist, indem Sie die SharePoint-Website für das Team und die OneDrive-Konten der Benutzer im Team auswählen.
+> Sie können eine Aufbewahrungsrichtlinie nur auf die Dateien eines bestimmten Teams anwenden, wenn dieses mit keiner Microsoft 365-Gruppe verbunden ist, indem Sie die SharePoint-Website für das Team und die OneDrive-Konten der Benutzer im Team auswählen.
 
-Es ist möglich, dass eine Aufbewahrungsrichtlinie, die auf Microsoft 365-Gruppen, SharePoint-Websites oder OneDrive-Konten angewendet wird, eine Datei löscht, auf die in einem Team-Chat oder einer Kanalnachricht verwiesen wird, bevor diese Nachrichten gelöscht werden. In diesem Szenario wird die Datei weiterhin in der Team-Nachricht angezeigt, aber wenn Benutzer die Datei auswählen, wird die Fehlermeldung „Datei nicht gefunden“ angezeigt. Dieses Verhalten gilt nicht nur für Aufbewahrungsrichtlinien, sondern kann auch auftreten, wenn ein Benutzer eine Datei manuell aus SharePoint oder OneDrive löscht.
+Es kann vorkommen, dass eine Aufbewahrungsrichtlinie, die auf Microsoft 365-Gruppen, SharePoint-Websites oder OneDrive-Konten angewendet wird, eine Datei löscht, die in einer Teams Chat- oder Kanalnachricht erwähnt wird, bevor diese Nachrichten gelöscht werden. In diesem Szenario wird die Datei in der Microsoft Teams-Nachricht weiterhin angezeigt, aber wenn Benutzer die Datei auswählen, wird der Fehler "Datei nicht gefunden" angezeigt. Dieses Verhalten gilt nicht für Aufbewahrungsrichtlinien. Dies kann auch passieren, wenn ein Benutzer eine Datei aus SharePoint oder OneDrive manuell löscht.
 
 ### <a name="retention-policy-for-yammer-locations"></a>Aufbewahrungsrichtlinie für Yammer-Speicherorte
 
@@ -107,13 +107,13 @@ Es ist möglich, dass eine Aufbewahrungsrichtlinie, die auf Microsoft 365-Gruppe
 
 2. Wählen Sie **Neue Aufbewahrungsrichtlinie**, um eine neue Aufbewahrungsrichtlinie zu erstellen.
 
-3. Geben Sie auf der Assistentenseite **Entscheiden, ob Inhalte aufbewahrt werden, gelöscht werden oder beides** die Konfigurationsoptionen für das Aufbewahren und Löschen von Inhalten an. 
+3. Geben Sie auf der Assistentenseite **Entscheiden, ob Inhalte beibehalten werden, gelöscht werden oder beides** die Konfigurationsoptionen für das Beibehalten und Löschen von Inhalten an. 
     
-    Sie können eine Aufbewahrungsrichtlinie erstellen, die Inhalte nur aufbewahrt, ohne sie zu löschen, Inhalte aufbewahrt und nach einem bestimmten Zeitraum löscht oder Inhalte nach einem bestimmten Zeitraum einfach löscht. Weitere Informationen finden Sie unter [Einstellungen zum Aufbewahren und Löschen von Inhalten](#settings-for-retaining-and-deleting-content) auf dieser Seite.
+    Sie können eine Aufbewahrungsrichtlinie erstellen, die Inhalte nur aufbewahrt, ohne sie zu löschen, die sie aufbewahrt und nach einem festgelegten Zeitraum löscht, oder Inhalte nur nach einem bestimmten Zeitraum löscht. Weitere Informationen finden Sie unter [Einstellungen für die Aufbewahrung und Löschung von Inhalten](#settings-for-retaining-and-deleting-content) auf dieser Seite.
     
     Wählen Sie nicht **Erweiterte Aufbewahrungseinstellungen verwenden**, da diese Option für Yammer-Speicherorte nicht unterstützt wird. 
 
-4. Wählen Sie auf der Seite **Speicherorte wählen** die Option **Bestimmte Speicherorte auswählen**. Dann aktivieren Sie einen oder beide Speicherorte für Yammer: **Yammer Community-Nachrichten** und **Yammer private Nachrichten**.
+4. Wählen Sie auf der Seite **Speicherorte auswählen** die Option **Bestimmte Standorte auswählen**. Aktivieren Sie dann einen oder beide Speicherorte für Yammer: **Yammer-Communitynachricht** und **Private Yammer-Nachrichten**.
     
     Standardmäßig sind alle Communitys und Benutzer ausgewählt, aber Sie können dies verfeinern, indem Sie Communitys und Benutzer angeben, die ein- oder -ausgeschlossen werden sollen.
     
@@ -125,17 +125,17 @@ Es ist möglich, dass eine Aufbewahrungsrichtlinie, die auf Microsoft 365-Gruppe
 
 Weitere Informationen darüber, wie die Aufbewahrungsrichtlinien bei Yammer funktionieren, finden Sie unter [Informationen zur Aufbewahrung bei Yammer](retention-policies-yammer.md).
 
-#### <a name="additional-retention-policies-needed-to-support-yammer"></a>Zusätzliche für die Unterstützung von Yammer benötigte Aufbewahrungsrichtlinien
+#### <a name="additional-retention-policies-needed-to-support-yammer"></a>Zusätzliche Aufbewahrungsrichtlinien zur Unterstützung von Yammer erforderlich
 
-Yammer ist mehr als nur Community-Nachrichten und private Nachrichten. Konfigurieren Sie zum Aufbewahren und Löschen von E-Mail-Nachrichten für Ihr Yammer-Netzwerk eine zusätzliche Aufbewahrungsrichtlinie, die alle für Yammer verwendeten Microsoft 365-Gruppen enthält, indem Sie den Speicherort der **Microsoft 365-Gruppen** verwenden. 
+Yammer ist mehr als nur Communitynachrichten und private Nachrichten. Konfigurieren Sie zum Aufbewahren und Löschen von E-Mail-Nachrichten für Ihr Yammer-Netzwerk eine zusätzliche Aufbewahrungsrichtlinie, die alle für Yammer verwendeten Microsoft 365-Gruppen umfasst. Verwenden Sie dazu den Speicherort **Microsoft 365-Gruppen**. 
 
-Um Dateien, die in Yammer gespeichert sind, aufzubewahren und zu löschen, benötigen Sie eine Aufbewahrungsrichtlinie, welche die **SharePoint-Websites** oder die Speicherorte der **OneDrive-Konten** umfasst:
+Um Dateien, die in Yammer gespeichert sind, aufzubewahren und zu löschen, benötigen Sie eine Aufbewahrungsrichtlinie, die die **SharePoint-Websites** oder die Speicherorte der **OneDrive-Konten** umfasst:
 
 - Dateien, die in privaten Nachrichten gemeinsam genutzt werden, werden im OneDrive-Konto des Benutzers gespeichert, der die Datei freigegeben hat. 
 
 - Dateien, die in Communitys hochgeladen werden, werden auf der SharePoint-Website für die Yammer-Community gespeichert.
 
-Es ist möglich, dass eine Aufbewahrungsrichtlinie, die auf SharePoint-Websites oder OneDrive-Konten angewendet wird, eine Datei löscht, auf die in einer Yammer-Nachricht verwiesen wird, bevor diese Nachrichten gelöscht werden. In diesem Szenario wird die Datei weiterhin in der Yammer-Nachricht angezeigt, aber wenn Benutzer die Datei auswählen, wird die Fehlermeldung „Datei nicht gefunden“ angezeigt. Dieses Verhalten gilt nicht nur für Aufbewahrungsrichtlinien, sondern kann auch auftreten, wenn ein Benutzer eine Datei manuell aus SharePoint oder OneDrive löscht.
+Es ist möglich, dass eine Aufbewahrungsrichtlinie, die auf SharePoint-Websites oder OneDrive-Konten angewendet wird, eine Datei löschen kann, auf die in einer Yammer-Nachricht verwiesen wird, bevor diese Nachrichten gelöscht werden. In diesem Szenario wird die Datei immer noch in der Yammer-Meldung angezeigt, aber wenn Benutzer die Datei auswählen, erhalten sie die Fehlermeldung „Datei nicht gefunden“. Dieses Verhalten gilt nicht spezifisch für Aufbewahrungsrichtlinien und kann auch auftreten, wenn ein Benutzer eine Datei manuell aus SharePoint oder OneDrive löscht.
 
 ### <a name="retention-policy-for-locations-other-than-teams-and-yammer"></a>Aufbewahrungsrichtlinie für andere Speicherorte als Teams oder Yammer
 
@@ -151,7 +151,7 @@ Verwenden Sie die folgenden Anweisungen für Aufbewahrungsrichtlinien, die für 
 
 2. Wählen Sie **Neue Aufbewahrungsrichtlinie** aus, um den Assistenten zum Erstellen einer Aufbewahrungsrichtlinie zu starten, und benennen Sie die neue Aufbewahrungsrichtlinie.
 
-3. Schalten Sie auf der Seite **Speicherorte wählen** die einzelnen Speicherorte ein oder aus, außer den Speicherorten für Teams. Sie können für jeden Speicherort die Standardeinstellung beibehalten, und die [Richtlinie auf den gesamten Speicherort anwenden](#a-policy-that-applies-to-entire-locations) oder [Ein- und Ausschlüsse angeben](#a-policy-with-specific-inclusions-or-exclusions).
+3. Auf der Seite **Speicherorte auswählen** können Sie jeden Speicherort mit Ausnahme der Speicherorte für Teams ein- oder ausschalten. Sie können die Richtlinie für jeden Speicherort bei der Standardeinstellung belassen, um [die Richtlinie auf den gesamten Speicherort anzuwenden ](#a-policy-that-applies-to-entire-locations), oder [Ein- und Ausschlüsse angeben](#a-policy-with-specific-inclusions-or-exclusions).
 
     Spezifische Informationen zu Speicherorten:
     - [Exchange-E-Mail und öffentliche Exchange-Ordner](#configuration-information-for-exchange-email-and-exchange-public-folders)
@@ -159,9 +159,9 @@ Verwenden Sie die folgenden Anweisungen für Aufbewahrungsrichtlinien, die für 
     - [Microsoft 365-Gruppen](#configuration-information-for-microsoft-365-groups)
     - [Skype for Business](#configuration-information-for-skype-for-business)
 
-4. Geben Sie auf der Assistentenseite **Entscheiden, ob Inhalte aufbewahrt werden, gelöscht werden oder beides** die Konfigurationsoptionen für das Aufbewahren und Löschen von Inhalten an.
+4. Geben Sie auf der Assistentenseite **Entscheiden, ob Inhalte beibehalten werden, gelöscht werden oder beides** die Konfigurationsoptionen für das Beibehalten und Löschen von Inhalten an.
 
-    Sie können eine Aufbewahrungsrichtlinie erstellen, die Inhalte nur aufbewahrt, ohne sie zu löschen, Inhalte aufbewahrt und nach einem bestimmten Zeitraum löscht oder Inhalte nach einem bestimmten Zeitraum einfach löscht. Weitere Informationen finden Sie unter [Einstellungen zum Aufbewahren und Löschen von Inhalten](#settings-for-retaining-and-deleting-content) auf dieser Seite.
+    Sie können eine Aufbewahrungsrichtlinie erstellen, die Inhalte nur aufbewahrt, ohne sie zu löschen, die sie aufbewahrt und nach einem festgelegten Zeitraum löscht, oder Inhalte nur nach einem bestimmten Zeitraum löscht. Weitere Informationen finden Sie unter [Einstellungen für die Aufbewahrung und Löschung von Inhalten](#settings-for-retaining-and-deleting-content) auf dieser Seite.
 
 5. Schließen Sie den Assistenten ab, damit Ihre Einstellungen gespeichert werden.
 
@@ -169,19 +169,19 @@ Verwenden Sie die folgenden Anweisungen für Aufbewahrungsrichtlinien, die für 
 
 Der Speicherort von **Exchange-E-Mail** unterstützt die Aufbewahrung von E-Mail-, Kalender- und anderen Postfachelementen der Benutzer, indem die Aufbewahrungseinstellungen auf Postfachebene angewendet werden.
 
-Ausführliche Informationen zu den Elementen, die beim Konfigurieren von Aufbewahrungseinstellungen für Exchange eingeschlossen oder ausgeschlossen werden, finden Sie unter [Umfang für Aufbewahrung und Löschung](retention-policies-exchange.md#whats-included-for-retention-and-deletion).
+Ausführliche Informationen zu den Elementen, die beim Konfigurieren von Aufbewahrungseinstellungen für Exchange enthalten und ausgeschlossen werden, finden Sie unter [Lieferumfang für Aufbewahrung und Löschung](retention-policies-exchange.md#whats-included-for-retention-and-deletion).
 
-Beachten Sie, dass eine Aufbewahrungsrichtlinie für den gesamten **Exchange-E-Mail**-Speicherort keine Inhalte vom Microsoft 365-Gruppenpostfächern enthält, auch wenn die Microsoft 365-Gruppe über ein Exchange-Postfach verfügt. Wählen Sie den Speicherort für **Microsoft 365-Gruppen** aus, um Inhalte in diesen Postfächern aufzubewahren.
+Obwohl eine Microsoft 365-Gruppe über ein Exchange-Postfach verfügt, bezieht eine Aufbewahrungsrichtlinie, die den gesamten **Exchange-E-Mail-Speicherort** umfasst, keine Inhalte in Microsoft 365-Gruppenpostfächern mit ein. Wenn Sie Inhalte in diesen Postfächern aufbewahren möchten, wählen Sie den Speicherort **Microsoft 365-Gruppen** aus.
 
-Der Speicherort für **öffentliche Exchange-Ordner** wendet die Aufbewahrungseinstellungen auf alle öffentlichen Ordner an und kann nicht auf der Ordner- oder Postfachebene angewendet werden.
+Der Speicherort von **öffentlichen Exchange-Ordnern** wendet die Aufbewahrungseinstellungen auf alle öffentlichen Ordner an und kann nicht auf der Ordner- oder Postfachebene angewendet werden.
 
 #### <a name="configuration-information-for-sharepoint-sites-and-onedrive-accounts"></a>Konfigurationsinformationen für SharePoint-Websites und OneDrive-Konten
 
-Wenn Sie den Speicherort für **SharePoint-Websites** auswählen, kann die Aufbewahrungsrichtlinie Dokumente in SharePoint-Kommunikationswebsites, in nicht durch Microsoft 365-Gruppen verbundenen Teamwebsites und in klassischen Websites aufbewahren und löschen. Über Microsoft 365-Gruppen verbundene Teamwebsites werden mit dieser Option nicht unterstützt. Verwenden Sie stattdessen den Speicherort für **Microsoft 365-Gruppen**, der für Inhalte im Postfach, in der Website und in den Dateien der Gruppe gilt.
+Wenn Sie den Speicherort **SharePoint-Websites** auswählen, kann Ihre Aufbewahrungsrichtlinie Dokumente auf SharePoint-Kommunikationswebsites, auf Teamwebsites, die nicht über Microsoft 365-Gruppen verbunden sind, und auf klassischen Websites aufbewahren und löschen. Teamwebsites, die über Microsoft 365-Gruppen verbunden sind, werden bei dieser Option nicht unterstützt. Verwenden Sie stattdessen den Speicherort **Office 365-Gruppen**, der für Inhalte im Postfach der Gruppe, deren Website und Dateien gilt.
 
-Obwohl die Aufbewahrungsrichtlinie auf Website-Ebene angewendet wird, werden nur Dokumente mit Aufbewahrungseinstellungen versehen. Ausführliche Informationen dazu, welche Elemente beim Konfigurieren der Aufbewahrungseinstellungen für SharePoint und OneDrive enthalten und ausgeschlossen sind, finden Sie unter [Umfang für Aufbewahrung und Löschung](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion). 
+Obwohl die Aufbewahrungsrichtlinie auf Websiteebene angewendet wird, werden Aufbewahrungseinstellungen nur auf Dokumente angewendet. Ausführliche Informationen zu den Elementen, die beim Konfigurieren von Aufbewahrungseinstellungen für SharePoint und OneDrive enthalten und ausgeschlossen werden, finden Sie unter [Lieferumfang für Aufbewahrung und Löschung](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion). 
 
-Wenn Sie Ihre Speicherorte für SharePoint-Websites oder OneDrive-Konten angeben, benötigen Sie keine Berechtigungen für den Zugriff auf die Websites, und zum Zeitpunkt der Angabe der URL auf der Seite **Speicherorte bearbeiten** erfolgt keine Überprüfung. Bei den von Ihnen angegebenen SharePoint-Websites wird jedoch beim Abschluss des Assistenten überprüft, ob sie vorhanden sind. Wenn diese Prüfung fehlschlägt, wird die Meldung angezeigt, dass die Überprüfung für die von Ihnen eingegebene URL fehlgeschlagen ist. Der Assistent erstellt die Aufbewahrungsrichtlinie erst dann, wenn die Validierung erfolgreich abgeschlossen wurde. Wenn diese Meldung angezeigt wird, kehren Sie zum Assistenten zurück, um die URL zu ändern oder die Website aus der Aufbewahrungsrichtlinie zu entfernen.
+Wenn Sie Ihre Speicherorte für SharePoint-Websites oder OneDrive-Konten angeben, benötigen Sie keine Berechtigungen für den Zugriff auf die Websites und es erfolgt keine Validierung, wenn Sie die URL auf der Seite **Speicherorte bearbeiten** angeben. Die von Ihnen angegebenen SharePoint-Websites werden jedoch vom Assistenten dahingehend überprüft, ob sie existieren. Wenn die Überprüfung fehlschlägt, wird eine Meldung angezeigt, die besagt, dass die Überprüfung für die eingegebene URL fehlgeschlagen ist. Der Assistent erstellt die Aufbewahrungsrichtlinie erst, wenn die Überprüfung erfolgreich war. Wenn diese Meldung angezeigt wird, wechseln Sie zurück in den Assistenten, um die URL zu ändern oder die Website aus der Aufbewahrungsrichtlinie zu entfernen.
 
 Wenn Sie einzelne OneDrive-Konten angeben möchten, die ein- oder ausgeschlossen werden sollen, hat die URL das folgende Format: `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
 
@@ -191,7 +191,7 @@ Informationen zum Überprüfen der Syntax für Ihren Mandanten und zum Identifiz
 
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Konfigurationsinformationen für Microsoft 365-Gruppen
 
-Um Inhalte für eine Microsoft 365-Gruppe (früher Office 365-Gruppe) aufzubewahren oder zu löschen verwenden Sie den Speicherort für **Microsoft 365-Gruppen**. Auch wenn eine Microsoft 365-Gruppe über ein Exchange-Postfach verfügt, enthält eine Aufbewahrungsrichtlinie, die den gesamten Speicherort für **Exchange-E-Mail** enthält, keinen Inhalt von Microsoft 365-Gruppenpostfächern. Obwohl Sie am Speicherort für **Exchange-E-Mail** anfänglich festlegen können, ob ein Gruppenpostfach eingeschlossen oder ausgeschlossen werden soll, wird beim Speichern der Aufbewahrungsrichtlinie die Fehlermeldung angezeigt, dass „RemoteGroupMailbox“ keine gültige Auswahl für den Exchange-Speicherort ist.
+Wenn Sie Inhalte für eine Microsoft 365-Gruppe (früher „Office 365-Gruppe“) aufbewahren oder löschen möchten, verwenden Sie den Speicherort **Microsoft 365-Gruppen**. Obwohl eine Microsoft 365-Gruppe über ein Exchange-Postfach verfügt, bezieht eine Aufbewahrungsrichtlinie, die den gesamten **Exchange-E-Mail-Speicherort** umfasst, keine Inhalte in Microsoft 365-Gruppenpostfächern mit ein. Obwohl der **Exchange-E-Mail-Speicherort** zunächst die Angabe eines Gruppenpostfachs zum Einschließen oder Ausschließen zulässt, erhalten Sie beim Versuch, die Aufbewahrungsrichtlinie zu speichern, die Fehlermeldung, dass "RemoteGroupMailbox" keine gültige Auswahl für den Exchange-Speicherort ist.
 
 Eine auf eine Microsoft 365-Gruppe angewendete Aufbewahrungsrichtlinie umfasst das Gruppenpostfach und die SharePoint-Teamwebsite. Dateien, die auf der SharePoint-Teamwebsite gespeichert sind, werden mit diesem Standort abgedeckt. Nicht jedoch Teams-Chats oder Nachrichten im Teams-Channel, die ihre eigenen Standorte für Aufbewahrungsrichtlinien haben.
 
@@ -201,9 +201,9 @@ Im Gegensatz zu Exchange-E-Mails kann der Status des Skype-Speicherorts nicht ei
 
 ![Auswählen des Skype-Speicherorts für Aufbewahrungsrichtlinien](../media/skype-location-retention-policies.png)
 
-Wenn Sie auf **Benutzer auswählen** klicken, können Sie schnell alle Benutzer einschließen, indem Sie das Kontrollkästchen **Alle auswählen** aktivieren. Es ist jedoch wichtig zu verstehen, dass jeder Benutzer als eine einzelne Aufnahme in die Richtlinie gilt. Wenn Sie also über das Aktivieren des Kontrollkästchens **Alle auswählen** 1 000 Benutzer einschließen, entspricht dies der manuellen Auswahl von 1 000 einzuschließenden Benutzern. Dies ist die maximale Anzahl unterstützter Benutzer für Skype for Business.
+Bei Auswahl von **Benutzer auswählen** können Sie schnell alle Benutzer hinzufügen, indem Sie das Kontrollkästchen **Alle auswählen** aktivieren. Es ist jedoch wichtig zu wissen, dass jeder Benutzer als ein bestimmtes eingeschlossenes Element in der Richtlinie zählt. Wenn Sie also 1.000-Benutzer hinzufügen, indem Sie das Kontrollkästchen **Alle auswählen** aktivieren, entspricht das dem manuellen Auswählen von 1.000 einzuschließenden Benutzern. Dies ist die maximale unterstützte Anzahl von Skype for Business-Benutzern.
 
-Beachten Sie, dass der Outlook-Ordner **Konversationsverlauf** eine Funktion ist, die nichts mit der Skype-Archivierung zu tun hat. Der **Konversationsverlauf** kann vom Endbenutzer deaktiviert werden. Die Archivierung für Skype erfolgt jedoch durch Speichern einer Kopie der Skype-Konversationen in einem versteckten Ordner, auf den der Benutzer nicht zugreifen kann, der aber für eDiscovery verfügbar ist.
+Achtung: **Aufgezeichnete Unterhaltungen**, ein Ordner in Outlook, ist eine Funktion, die nichts mit der Skype-Archivierung zu tun hat. Die Option **Aufgezeichnete Unterhaltungen** kann vom Endbenutzer deaktiviert werden, die Archivierung für Skype erfolgt jedoch durch das Speichern einer Kopie von Skype-Unterhaltungen in einem ausgeblendeten Ordner, auf den die Benutzer nicht zugreifen können, der aber für eDiscovery verfügbar ist.
 
 ## <a name="settings-for-retaining-and-deleting-content"></a>Einstellungen für die Aufbewahrung und Löschung von Inhalten
 
@@ -211,7 +211,7 @@ Wenn Sie die Einstellungen für die Aufbewahrung und Löschung von Inhalten in I
 
 - Nur aufbewahren
 
-    Wählen Sie für diese Konfiguration **Elemente für einen bestimmten Zeitraum aufbewahren** und **Am Ende des Aufbewahrungszeitraums: Nichts unternehmen**. Oder wählen Sie **Elemente für immer aufbewahren**.
+    Wählen Sie für diese Konfiguration **Elemente für einen bestimmten Zeitraum aufbewahren** und **Am Ende des Aufbewahrungszeitraums: Nichts unternehmen**. Oder wählen Sie **Elemente für immer aufbewahren** aus.
 
 - Aufbewahren und dann löschen
 
@@ -223,17 +223,17 @@ Wenn Sie die Einstellungen für die Aufbewahrung und Löschung von Inhalten in I
 
 ### <a name="retaining-content-for-a-specific-period-of-time"></a>Aufbewahren von Inhalten für einen bestimmten Zeitraum
 
-Beim Konfigurieren einer Aufbewahrungsrichtlinie können Sie festlegen, ob Elemente für eine bestimmte Anzahl von Tagen, Monaten oder Jahren oder alternativ sogar für immer aufbewahrt werden sollen.
+Beim Konfigurieren einer Aufbewahrungsrichtlinie können Sie festlegen, ob Elemente für eine bestimmte Anzahl von Tagen, Monaten oder Jahren aufbewahrt werden sollen. Alternativ können Sie die Elemente für immer aufbewahren.
 
-Beim Konfigurieren einer Aufbewahrungsrichtlinie können Sie festlegen, ob Inhalte auf unbestimmte Zeit oder für eine bestimmte Anzahl von Tagen, Monaten oder Jahren aufbewahrt werden sollen. Die Aufbewahrungsfrist wird anhand des Alters des Inhalts berechnet und nicht ab dem Zeitpunkt, an dem die Aufbewahrungsrichtlinie angewendet wird.
+Beim Konfigurieren einer Aufbewahrungsrichtlinie können Sie festlegen, ob Inhalte zeitlich unbegrenzt oder für eine bestimmte Anzahl von Tagen, Monaten oder Jahren aufbewahrt werden sollen. Der Aufbewahrungszeitraum wird anhand des Alters der Inhalte und nicht anhand des Anwendungsdatums der Aufbewahrungsrichtlinie berechnet.
 
 Als Beginn des Aufbewahrungszeitraums können Sie auch auswählen, wann der Inhalt erstellt wurde oder – nur unterstützt für Dateien und SharePoint, OneDrive und Microsoft 365-Gruppen – wann der Inhalt zuletzt geändert wurde.
 
 Beispiele:
 
-- SharePoint: Wenn Sie Elemente in einer Websitesammlung nach der letzten Änderung ihres Inhalts während sieben Jahren aufbewahren möchten und ein Dokument in dieser Websitesammlung seit sechs Jahren nicht mehr geändert wurde, wird dieses Dokument nur ein weiteres Jahr aufbewahrt, wenn es nicht geändert wird. Wenn das Dokument nun erneut bearbeitet wird, dann wird das Alter des Dokuments ab dem neuen Datum der letzten Änderung berechnet und für weitere sieben Jahre aufbewahrt.
+- SharePoint: Wenn Elemente einer Websitesammlung sieben Jahre lang nach der letzten Änderung des Inhalts aufbewahrt werden sollen, und ein Dokument in dieser Websitesammlung seit sechs Jahren nicht geändert wurde, wird es nur noch ein weiteres Jahr aufbewahrt, sofern es in diesem Zeitraum nicht geändert wird. Falls das Dokument wieder geändert wird, wird das Alter des Dokuments ab dem neuen Datum der letzten Änderung berechnet und weitere sieben Jahre lang aufbewahrt.
 
-- Exchange: Wenn Sie Elemente in einem Postfach während sieben Jahren aufbewahren möchten und eine Nachricht vor sechs Jahren gesendet wurde, wird die Nachricht nur noch ein Jahr lang aufbewahrt. Bei Exchange-Elementen basiert das Alter auf dem Eingangsdatum für eingehende E-Mails oder dem Sendedatum für ausgehenden E-Mails. Das Aufbewahren von Elementen basierend auf dem Zeitpunkt der letzten Änderung gilt nur für Websiteinhalte in OneDrive und SharePoint.
+- Exchange: Wenn Elemente in einem Postfach für sieben Jahre aufbewahrt werden sollen und eine Nachricht vor sechs Jahren gesendet wurde, wird sie nur noch ein Jahr aufbewahrt. Bei Exchange-Elementen basiert das Alter auf dem Empfangsdatum für eingehende E-Mails oder dem Sendedatum für ausgehende E-Mails. Die Aufbewahrung von Elementen basierend auf der letzten Änderung gilt nur für Websiteinhalte in OneDrive und SharePoint.
 
 Am Ende des Aufbewahrungszeitraums können Sie wählen, ob der Inhalt dauerhaft gelöscht werden soll:
 
@@ -243,17 +243,17 @@ Am Ende des Aufbewahrungszeitraums können Sie wählen, ob der Inhalt dauerhaft 
 
 Eine Aufbewahrungsrichtlinie kann Elemente sowohl aufbewahren und dann löschen, oder alte Elemente löschen, ohne sie aufzubewahren.
 
-In beiden Fällen ist es wichtig zu wissen, dass der für eine Aufbewahrungsrichtlinie festgelegte Zeitraum für die Löschung von Elementen jedes Mal ab dem Zeitpunkt berechnet wird, als das betreffende Element erstellt oder geändert wurde und nicht ab dem Zeitpunkt, als die Richtlinie zugewiesen wurde.
+In beiden Fällen ist es wichtig zu wissen, dass wenn Ihre Aufbewahrungsrichtlinie Elemente löscht, der für eine Aufbewahrungsrichtlinie festgelegte Zeitraum jedes Mal ab dem Zeitpunkt berechnet wird, als das betreffende Element erstellt oder geändert wurde und nicht ab dem Zeitpunkt, als die die Richtlinie zugewiesen wurde.
 
-Bevor Sie also eine Aufbewahrungsrichtlinie zum ersten Mal zuweisen, insbesondere wenn diese Richtlinie Elemente löscht, sollten Sie zunächst das Alter des vorhandenen Inhalts und die möglichen Auswirkungen der Richtlinie auf diesen Inhalt berücksichtigen. Sie sollten Ihre Benutzer auch über die neue Richtlinie informieren, bevor Sie diese zuweisen, um so den Benutzern Zeit für die Beurteilung möglicher Auswirkungen zu geben.
+Sie sollten also vor dem erstmaligen Zuweisen einer Aufbewahrungsrichtlinie, und vor allem wenn diese Richtlinie Elemente löscht, zunächst das Alter des vorhandenen Inhalts und die möglichen Auswirkungen der Richtlinie auf diesen vorhandenen Inhalt bedenken. Sie könnten außerdem vor dem Zuweisen Ihre Benutzer über die neue Richtlinie informieren, um ihnen Zeit zur Auswertung der möglichen Auswirkungen zu geben.
 
 ### <a name="a-policy-that-applies-to-entire-locations"></a>Eine Richtlinie, die für ganze Speicherorte gilt
 
 Wenn Sie Speicherorte auswählen – mit Ausnahme von Skype for Business – lautet die Standardeinstellung **Alle**, wenn der Status des Speicherorts auf **An** gesetzt ist.
 
-Wenn eine Aufbewahrungsrichtlinie auf eine beliebige Kombination ganzer Speicherorte zutrifft, gibt es keine Beschränkung für die Anzahl der Empfänger, Websites, Konten, Gruppen usw., die diese Richtlinie umfassen kann.
+Wenn eine Aufbewahrungsrichtlinie auf eine beliebige Kombination ganzer Speicherorte zutrifft, gibt es keine Beschränkung für die Anzahl der Empfänger, Websites, Konton, Gruppen, etc., die diese Richtlinie umfassen kann.
 
-Wenn eine Richtlinie beispielsweise alle Exchange-E-Mails und alle SharePoint-Websites enthält, werden alle Websites und Empfänger eingeschlossen, unabhängig von der Anzahl. Bei Exchange erbt jedes neue Postfach, das nach dem Anwenden der Richtlinie erstellt wird, automatisch die Richtlinie.
+Wenn eine Richtlinie beispielsweise alle Exchange-E-Mails und alle SharePoint-Websites umfasst, werden alle Websites und Empfänger einbezogen, ganz gleich, wie viele es sind. Bei Exchange erben alle neuen Postfächer, die nach der Anwendung der Richtlinie erstellt werden, die Richtlinie automatisch.
 
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>Richtlinien, die bestimmte Elemente einschließen oder ausschließen
 
@@ -265,27 +265,27 @@ Nur wenn Sie die optionale Konfiguration verwenden, um Ihre Aufbewahrungseinstel
   - 1.000 Benutzer für private Teams-Chats
   - 100 Websites (OneDrive oder SharePoint)
 
-Es gibt auch eine maximale Anzahl von Richtlinien, die für einen Mandanten unterstützt werden: 10 000. Diese Elemente umfassen Aufbewahrungsrichtlinien, Richtlinien für die Aufbewahrungsbezeichnung und automatische Aufbewahrungsrichtlinien.
+Die maximal unterstützte Anzahl von Richtlinien für einen Mandanten ist auf 10.000 begrenzt. Für Exchange Online beträgt die maximale Anzahl jedoch 1.800. Die maximale Anzahl umfasst Aufbewahrungsrichtlinien, Richtlinien für Aufbewahrungsbezeichnungen und automatisch anzuwendende Aufbewahrungsrichtlinien.
 
 Wenn Ihre Aufbewahrungsrichtlinien wahrscheinlich diesen Beschränkungen unterliegen, verwenden Sie die Standardkonfiguration, die für den gesamten Speicherort gilt, da diese Richtlinien keine Einschränkungen aufweisen.
 
-Wenn Sie die optionale Konfiguration zum Festlegen des Bereichs der Aufbewahrungseinstellungen verwenden möchten, stellen Sie sicher, dass der **Status** dieses Speicherorts **Ein** ist. Verwenden Sie dann die Links, um bestimmte Benutzer, Microsoft 365-Gruppen oder Websites ein- oder auszuschließen.
+Wenn Sie die optionale Konfiguration für den Bereich der Aufbewahrungseinstellungen verwenden möchten, stellen Sie sicher, dass der **Status** dieses Speicherorts **Ein** ist, und verwenden Sie dann die Links, um bestimmte Benutzer, Microsoft 365-Gruppen oder-Websites ein- oder auszuschließen.
 
 > [!WARNING]
-> Wenn Sie Einschlüsse konfigurieren und dann den letzten Einschluss entfernen, wird die Konfiguration für den Speicherort auf **Alle** zurückgesetzt. Vergewissern Sie sich, dass dies die von Ihnen beabsichtigte Konfiguration ist, bevor Sie die Richtlinie speichern.
+> Wenn Sie Einschlüsse konfigurieren und dann den letzten entfernen, wird die Konfiguration für den Speicherort auf **Alle** zurückgesetzt.  Vergewissern Sie sich, dass dies die von Ihnen beabsichtigte Konfiguration ist, bevor Sie die Richtlinie speichern.
 >
-> Wenn Sie beispielsweise eine einzelne SharePoint-Website in Ihre Aufbewahrungsrichtlinie einschließen, die zum Löschen von Daten konfiguriert ist, und dann diese Website entfernen, unterliegen standardmäßig alle SharePoint-Websites der Aufbewahrungsrichtlinie, mit der Daten dauerhaft gelöscht werden. Gleiches gilt für Einschlüsse für Exchange-Empfänger, OneDrive-Konten, Teams-Chat-Benutzer usw.
+> Wenn Sie beispielsweise eine einzelne SharePoint-Website für den Einschluss in Ihre Aufbewahrungsrichtlinie angeben, die für das Löschen von Daten konfiguriert ist, und dann die einzelne Website entfernen, unterliegen standardmäßig alle SharePoint-Websites der Aufbewahrungsrichtlinie, die Daten endgültig löscht. Gleiches gilt für Einschlüsse für Exchange-Empfänger, OneDrive-Konten, Teams Chat-Benutzer usw.
 >
-> Schalten Sie in diesem Szenario den Speicherort aus, wenn die Einstellung **Alle** für den Speicherort nicht der Aufbewahrungsrichtlinie unterliegen soll. Alternativ können Sie Ausschlüsse angeben, die von der Richtlinie ausgenommen werden.
+> In diesem Szenario können Sie den Speicherort deaktivieren, wenn Sie nicht möchten, dass die Einstellung **Alle** für den Speicherort der Aufbewahrungsrichtlinie unterliegt. Alternativ können Sie Ausschlüsse angeben, die von der Richtlinie ausgenommen werden sollen.
 
 ## <a name="updating-retention-policies"></a>Aktualisieren von Aufbewahrungsrichtlinien
 
 Einige Einstellungen können nicht geändert werden, nachdem eine Aufbewahrungsrichtlinie erstellt und gespeichert wurde. Dazu gehören:
 - Den Namen der Aufbewahrungsrichtlinie und die Aufbewahrungseinstellungen mit Ausnahme des Aufbewahrungszeitraums und des Beginns des Aufbewahrungszeitraums.
 
-Wenn Sie eine Aufbewahrungsrichtlinie bearbeiten und Elemente bereits den ursprünglichen Einstellungen in Ihrer Aufbewahrungsrichtlinie unterliegen, werden die aktualisierten Einstellungen automatisch auf diese Elemente sowie zusätzlich auf neu identifizierte Elemente angewendet.
+Wenn Sie eine Aufbewahrungsrichtlinie bearbeiten und Elemente bereits den ursprünglichen Einstellungen in Ihrer Aufbewahrungsrichtlinie unterliegen, werden die aktualisierten Einstellungen automatisch zusätzlich auf diese sowie auf neu ermittelte Elemente angewendet.
 
-Normalerweise ist diese Aktualisierung ziemlich schnell, kann aber auch mehrere Tage dauern. Wenn die Richtlinienreplikation über Ihre Microsoft 365-Speicherorte abgeschlossen ist, wird der Status der Aufbewahrungsrichtlinie im Microsoft 365 Compliance Center von **Ein (Ausstehend)** in **Ein (Erfolgreich)** geändert.
+Diese Aktualisierung erfolgt normalerweise ziemlich schnell, kann aber mehrere Tage dauern. Wenn die Richtlinienreplikation auf Ihre Microsoft 365-Speicherorte abgeschlossen ist, ändert sich der Status der Aufbewahrungsrichtlinie im Microsoft 365 Compliance Center von **Ein (ausstehend)** zu **Ein (erfolgreich)**.
 
 ## <a name="locking-the-policy-to-prevent-changes"></a>Sperren der Richtlinie, um Änderungen vorzubeugen
 

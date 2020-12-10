@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Benutzer können erfahren, wie sie in Exchange Online Protection (EOP) isolierte (unter Quarantäne gestellte) Nachrichten anzeigen und verwalten, die sie hätten empfangen sollen.
-ms.openlocfilehash: 48c727c442ee6f861499f1a72c687f7b3457c594
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 038d3326df2572f792f1cfc7efa6ad6d03e0a602
+ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130851"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49611364"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Suchen und Freigeben von isolierten Nachrichten als Benutzer in EOP
 
@@ -148,8 +148,6 @@ Nachdem Sie eine Nachricht ausgewählt haben, haben Sie Optionen, was mit den Na
 - **Vorschau der Nachricht anzeigen**: Wählen Sie im angezeigten Flyout-Fenster eine der folgenden Optionen:
   - **Quellansicht**: Zeigt die HTML-Version des Nachrichtentextes an, wobei alle Links deaktiviert sind.
   - **Textansicht**: Zeigt den Nachrichtentext im Klartext an.
-
-- **Nachricht herunterladen**: Wählen Sie im daraufhin angezeigten Flyout-Fenster **Ich verstehe die Risiken beim Herunterladen dieser Nachricht** aus, um eine lokale Kopie der Nachricht im eml-Format zu speichern.
 
 - **Aus Quarantäne entfernen**: Nachdem Sie in der angezeigten Warnung auf **Ja** geklickt haben, wird die Nachricht sofort gelöscht.
 

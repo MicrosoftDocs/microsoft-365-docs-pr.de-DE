@@ -2,6 +2,7 @@
 title: Einrichten von SharePoint Syntex
 ms.author: mikeplum
 author: MikePlumleyMSFT
+ms.reviewer: ssquires
 manager: serdars
 audience: admin
 ms.topic: article
@@ -10,12 +11,12 @@ ms.collection: enabler-strategic
 search.appverid: MET150
 localization_priority: Priority
 description: Einrichten des Inhaltsverständnisses in Projekt Cortex
-ms.openlocfilehash: dfbcc8e41a28e3107b58ac6b8d471e3a2a08d036
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 1abcc71200642de3f74a92e83299e079ffffb038
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087571"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604264"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Einrichten von SharePoint Syntex
 
@@ -23,12 +24,12 @@ Administratoren können das Microsoft 365 Admin Center verwenden, um [Microsoft 
 
 Denken Sie vor dem Beginn über Folgendes nach:
 
-- Which SharePoint sites will you enable form processing? All of them, some, or select sites?
+- Auf welchen SharePoint-Websites wird die Formularverarbeitung aktiviert? Auf allen, auf einigen oder auf ausgewählten Websites?
 - Wie werden Sie Ihr Standard-Inhaltscenter nennen?
 
 Sie können Ihre Einstellungen nach der erstmaligen Einrichtung im Microsoft 365 Admin Center ändern.
 
-Prior to setup, make sure to plan for the best way to set up and configure content understanding in your environment. For example, you need to make considerations about the following names of:
+Vergewissern Sie sich vor dem Einrichten, dass Sie die beste Möglichkeit zum Einrichten und Konfigurieren des Inhaltsverständnisses in Ihrer Umgebung planen. Sie müssen sich beispielsweise Gedanken über die Benennung von Folgendem machen:
 
 - Die SharePoint-Websites, für die Sie die Verarbeitung von Formularen aktivieren möchten – alle, einige oder ausgewählte Websites.
 - Ihr Inhaltscenter und der Name des primären Website-Administrators.
@@ -51,7 +52,7 @@ Als Administrator können Sie nach dem Einrichten und in den Verwaltungseinstell
     > [!div class="mx-imgBorder"]
     > ![Setup starten](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
-4. On the **Configure Form Processing** page, you can choose if you want to let users be able to create form processing models in specific SharePoint document libraries. A menu option will be available in the document library ribbon to **Create a form processing model** in SharePoint document libraries in which it is enabled.
+4. Auf der Seite **Formularverarbeitung konfigurieren** können Sie auswählen, ob Sie zulassen möchten, dass Benutzer Formularverarbeitungsmodelle in bestimmten SharePoint-Dokumentbibliotheken erstellen können. Im Menüband "Dokumentbibliothek" wird eine Menüoption zum **Erstellen eines Formularverarbeitungsmodells** in SharePoint-Dokumentbibliotheken verfügbar, in denen es aktiviert ist.
  
      Für **Welche SharePoint-Bibliotheken sollen die Option zum Erstellen eines Formularverarbeitungsmodells anzeigen** können Sie Folgendes auswählen:</br>
       - **Alle SharePoint-Bibliotheken**, damit die Option für alle SharePoint-Bibliotheken in Ihrer Organisation verfügbar gemacht wird.</br>
@@ -68,18 +69,18 @@ Als Administrator können Sie nach dem Einrichten und in den Verwaltungseinstell
 
     1. Geben Sie für den **Websitenamen** den Namen ein, den Sie Ihrer Inhaltscenter-Website zuweisen möchten.
     
-    1. The **Site address** will show the URL for your site, based on what you selected for the site name. If you want to change it, click **Edit**.
+    1. Die **Websiteadresse** zeigt die URL für Ihre Website basierend auf Ihrer Auswahl für den Websitenamen an. Wenn Sie die Einstellungen ändern möchten, klicken Sie auf **Bearbeiten**.
 
        > [!div class="mx-imgBorder"]
        > ![Erstellen eines Inhaltscenters](../media/content-understanding/admin-cu-create-cc.png)</br>
 
        Wählen Sie **Weiter** aus.
 
-6. On the **Review and finish** page, you can look at your selected setting and choose to make changes. If you are satisfied with your selections, select **Activate**.
+6. Auf der Seite **Überprüfen und beenden** können Sie sich die ausgewählte Einstellung ansehen und Änderungen vornehmen. Wenn Sie mit Ihrer Auswahl zufrieden sind, wählen Sie **Aktivieren** aus.
 
 7. Klicken Sie auf der Bestätigungsseite auf **Fertig**.
 
-8. You'll be returned to your **Automate content understanding** page. From this page, you can select **Manage** to make any changes to your configuration settings. 
+8. Sie kehren zur Seite **Inhaltsverständnis automatisieren** zurück. Auf dieser Seite können Sie **Verwalten** auswählen, um Änderungen an Ihren Konfigurationseinstellungen vorzunehmen. 
 
 ## <a name="assign-licenses"></a>Lizenzen zuweisen
 
@@ -93,7 +94,7 @@ So weisen Sie Lizenzen zu
 
 3. Wählen Sie **Weitere zuweisen** aus.
 
-4. Select **SharePoint Syntex**. Under **Apps**, make sure **Common Data Service for SharePoint Syntex**, **SharePoint Syntex**, and **SharePoint Syntex - SPO type** are all selected.
+4. Wählen Sie **SharePoint Syntex** aus. Stellen Sie sicher, dass unter **Apps** sowohl **Gemeinsamer Datendienst für SharePoint Syntex**, **SharePoint Syntex** wie auch **SharePoint Syntex – SPO-Typ** ausgewählt sind.
 
     > [!div class="mx-imgBorder"]
     > ![SharePoint Syntex-Lizenzen im Microsoft 365 Admin Center](../media/content-understanding/sharepoint-syntex-licenses.png)
@@ -102,7 +103,7 @@ So weisen Sie Lizenzen zu
 
 ## <a name="ai-builder-credits"></a>KI-Generator-Punkte
 
-If you have 300 or more SharePoint Syntex licenses for SharePoint Syntex in your organization, you will be allocated one million AI Builder credits. If you have fewer than 300 licenses, you must purchase AI Builder credits in order to use forms processing.
+Wenn Sie 300 oder mehr SharePoint Syntex-Lizenzen für SharePoint Syntex in Ihrer Organisation besitzen, werden Ihnen 1 Million KI-Generator-Punkte zugeteilt. Wenn Sie weniger als 300 Lizenzen besitzen, müssen Sie KI-Generator-Punkte erwerben, um die Formularverarbeitung zu verwenden.
 
 Sie können die für Sie geeignete KI-Generator-Kapazität mit dem [KI-Generator-Rechner](https://powerapps.microsoft.com/ai-builder-calculator) abschätzen.
 
