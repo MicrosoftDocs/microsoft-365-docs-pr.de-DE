@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: b4468bfc7ef4b6f76d44b328f4e5b6d61d7f06ac
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 0a9c09e33eb8fd5d03fcbdf44701544e656673d2
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357839"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615156"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Allgemeine Identitäts- und Gerätezugriffsrichtlinien
 
@@ -41,7 +41,7 @@ Das folgende Diagramm zeigt die empfohlenen Richtlinien. Es wird angezeigt, auf 
 
 Hier finden Sie eine einseitige PDF-Zusammenfassung mit Links zu den einzelnen Richtlinien:
 
-[![Daumen Bild für Identitäts-und Geräteschutz für Microsoft 365 Handout](../../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br/>  [Als PDF anzeigen](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Als PDF herunterladen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
+[![Daumen Bild für Identitäts-und Geräteschutz für Microsoft 365 Handout](../../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br> [Als PDF anzeigen](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Als PDF herunterladen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
 
 Im Rest dieses Artikels wird beschrieben, wie Sie diese Richtlinien konfigurieren.
 
@@ -107,7 +107,7 @@ In den folgenden Tabellen werden die Richtlinieneinstellungen für den bedingten
 
 Im Abschnitt **Zuweisungen** :
 
-|Setting|Eigenschaften|Werte|Hinweise|
+|Einstellung|Eigenschaften|Werte|Hinweise|
 |---|---|---|---|
 |Benutzer und Gruppen|Einschließen|**Wählen Sie Benutzer und Gruppen > Benutzer und Gruppen** aus: bestimmte Gruppen mit Zielbenutzer Konten auswählen.|Beginnen Sie mit der Gruppe, die Pilotbenutzer Konten enthält.|
 ||Ausschließen|**Benutzer und Gruppen**: Wählen Sie die Ausnahmegruppe für bedingten Zugriff aus. Dienstkonten (app-Identitäten).|Die Mitgliedschaft sollte auf der Grundlage der erforderlichen, temporären Änderungen geändert werden.|
@@ -129,7 +129,7 @@ Wenden Sie die Einstellungen für die Risikostufe basierend auf der Schutzebene 
 
 Im Abschnitt **Zugriffssteuerungen** :
 
-|Setting|Eigenschaften|Werte|Aktion|
+|Einstellung|Eigenschaften|Werte|Aktion|
 |---|---|---|---|
 |Gewähren|**Grant access**||Auswählen|
 |||**Mehrstufige Authentifizierung erforderlich**|Prüfen|
@@ -150,17 +150,17 @@ In [diesem Artikel](../../enterprise/microsoft-365-client-support-modern-authent
 
 Im Abschnitt **Zuweisungen** :
 
-|Setting|Eigenschaften|Werte|Hinweise|
+|Einstellung|Eigenschaften|Werte|Hinweise|
 |---|---|---|---|
 |Benutzer und Gruppen|Einschließen|**Wählen Sie Benutzer und Gruppen > Benutzer und Gruppen** aus: bestimmte Gruppen mit Zielbenutzer Konten auswählen.|Beginnen Sie mit der Gruppe, die Pilotbenutzer Konten enthält.|
 ||Ausschließen|**Benutzer und Gruppen**: Wählen Sie die Ausnahmegruppe für bedingten Zugriff aus. Dienstkonten (app-Identitäten).|Die Mitgliedschaft sollte auf der Grundlage der erforderlichen, temporären Änderungen geändert werden.|
 |Cloud-Apps oder-Aktionen|**Cloud-apps > include**|**Auswählen von apps**: Wählen Sie die Apps aus, die den Clients entsprechen, die die moderne Authentifizierung nicht unterstützen.||
-|Bedingungen|**Client-Apps**|Wählen Sie **Ja** für **configure** aus. <br/> Deaktivieren Sie die Häkchen für **Browser** und **Mobile Apps und Desktop Clients**||
+|Bedingungen|**Client-Apps**|Wählen Sie **Ja** für **configure** aus. <p> Deaktivieren Sie die Häkchen für **Browser** und **Mobile Apps und Desktop Clients**||
 |
 
 Im Abschnitt **Zugriffssteuerungen** :
 
-|Setting|Eigenschaften|Werte|Aktion|
+|Einstellung|Eigenschaften|Werte|Aktion|
 |---|---|---|---|
 |Gewähren|**Zugriff blockieren**||Auswählen|
 ||**Alle ausgewählten Steuerelemente erforderlich**||Auswählen|
@@ -192,7 +192,7 @@ Im zweiten Abschnitt " **Zuweisungen** ":
 
 |Typ|Eigenschaften|Werte|Aktion|
 |---|---|---|---|
-|Access|**Zugriff zulassen**||Auswählen|
+|Zugriff|**Zugriff zulassen**||Auswählen|
 |||**Kennwortänderung erforderlich**|Prüfen|
 |
 
@@ -275,7 +275,7 @@ Sie müssen für jede PC-, Telefon-oder Tablet-Plattform eine Richtlinie erstell
 - Windows 8.1 und höher
 - Windows 10 und höher
 
-Um Geräte Konformitätsrichtlinien zu erstellen, melden Sie sich mit Ihren Administratoranmeldeinformationen beim [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com) an, und navigieren Sie dann zu Richtlinien für **Devices**  >  **Konformitätsrichtlinien** für Geräte  >  **Policies**. Wählen Sie **Richtlinie erstellen** aus.
+Um Geräte Konformitätsrichtlinien zu erstellen, melden Sie sich mit Ihren Administratoranmeldeinformationen beim [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com) an, und navigieren Sie dann zu Richtlinien für  \> **Konformitätsrichtlinien** für Geräte \> . Wählen Sie **Richtlinie erstellen** aus.
 
 Damit Geräte Konformitätsrichtlinien bereitgestellt werden, müssen Sie Benutzergruppen zugewiesen werden. Sie weisen eine Richtlinie zu, nachdem Sie Sie erstellt und gespeichert haben. Wählen Sie im Admin Center die Richtlinie aus, und wählen Sie dann **Zuweisungen** aus. Nachdem Sie die Gruppen ausgewählt haben, für die Sie die Richtlinie erhalten möchten, wählen Sie **Speichern** aus, um diese Gruppenzuweisung zu speichern und die Richtlinie bereitzustellen.
 
@@ -306,21 +306,21 @@ Informationen zur **System Sicherheit** finden Sie in dieser Tabelle.
 ||Einfache Kennwörter|Blockieren|Auswählen|
 ||Kennwort-Typ|Geräte Standard|Auswählen|
 ||Minimale Kennwortlänge|6 |Typ|
-||Maximale Anzahl von Minuten Inaktivität, bevor Kennwort erforderlich ist|15 |Typ <br/> Diese Einstellung wird für die Android-Versionen 4,0 und höher oder für Knox 4,0 und höher unterstützt. Für IOS-Geräte wird dieser für IOS 8,0 und höher unterstützt.|
+||Maximale Anzahl von Minuten Inaktivität, bevor Kennwort erforderlich ist|15 |Typ <p> Diese Einstellung wird für die Android-Versionen 4,0 und höher oder für Knox 4,0 und höher unterstützt. Für IOS-Geräte wird dieser für IOS 8,0 und höher unterstützt.|
 ||Kennwortablauf (Tage)|41|Typ|
 ||Anzahl der vorherigen Kennwörter zur Verhinderung der Wiederverwendung|5 |Typ|
 ||Kennwort anfordern, wenn das Gerät vom Leerlaufzustand zurückkehrt (Mobil und holographisch)|Erforderlich|Verfügbar für Windows 10 und höher|
 |Verschlüsselung|Verschlüsselung der Datenspeicherung auf dem Gerät|Erforderlich|Auswählen|
 |Gerätesicherheit|Firewall|Erforderlich|Auswählen|
 ||Antivirus|Erforderlich|Auswählen|
-||AntiSpyware|Erforderlich|Auswählen <br/> Für diese Einstellung ist eine Anti-Spyware-Lösung erforderlich, die beim Windows Security Center registriert ist.|
+||AntiSpyware|Erforderlich|Auswählen <p> Für diese Einstellung ist eine Anti-Spyware-Lösung erforderlich, die beim Windows Security Center registriert ist.|
 |Defender|Antischadsoftware für Microsoft Defender|Erforderlich|Auswählen|
-||Mindestversion von Microsoft Defender Antischadsoftware||Typ <br/> Wird nur für Windows 10-Desktop unterstützt. Microsoft empfiehlt Versionen von nicht mehr als fünf hinter der neuesten Version.|
+||Mindestversion von Microsoft Defender Antischadsoftware||Typ <p> Wird nur für Windows 10-Desktop unterstützt. Microsoft empfiehlt Versionen von nicht mehr als fünf hinter der neuesten Version.|
 ||Microsoft Defender-Antischadsoftware-Signatur auf dem neuesten Stand|Erforderlich|Auswählen|
-||Echtzeitschutz|Erforderlich|Auswählen <br/> Wird nur für Windows 10-Desktop unterstützt|
+||Echtzeitschutz|Erforderlich|Auswählen <p> Wird nur für Windows 10-Desktop unterstützt|
 |
 
-#### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender für Endpunkt
+#### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender für Endpoint
 
 |Typ|Eigenschaften|Wert|Aktion|
 |---|---|---|---|

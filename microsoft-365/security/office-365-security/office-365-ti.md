@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie mehr über die Funktionen zur Ermittlung und Reaktion von Bedrohungen in Microsoft Defender für Office 365 Plan.
-ms.openlocfilehash: 7ae61e7ea70d8be5c31ec12443c8943f6e54bcf4
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: cbda50dacd6b892c976ce55632c8fc35813839b7
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561255"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614774"
 ---
 # <a name="threat-investigation-and-response"></a>Untersuchung von und Antwort auf Bedrohungen
 
@@ -110,11 +110,11 @@ Microsoft Defender für Office 365 verwendet rollenbasierte Zugriffssteuerung. B
 
 |Aktivität|Rollen und Berechtigungen|
 |---|---|
-|Verwenden des Threat-Dashboards (oder des neuen [Sicherheits Dashboards](security-dashboard.md))<br/> <br/>Anzeigen von Informationen zu aktuellen oder aktuellen Bedrohungen|Eine der folgenden Varianten: <br/>- **Globaler Administrator**  <br/> - **Sicherheits Administrator** <br/>- **Sicherheits Leser** <br/> <br/>Diese Rollen können entweder in Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) oder im Microsoft 365 Admin Center () zugewiesen werden [https://admin.microsoft.com](https://admin.microsoft.com) .|
-|Verwenden von [Threat Explorer (und Echtzeiterkennung)](threat-explorer.md) zum Analysieren von Bedrohungen|Eine der folgenden Varianten: <br/>- **Globaler Administrator**  <br/> - **Sicherheits Administrator** <br/>- **Sicherheits Leser** <br/> <br/>Diese Rollen können entweder in Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) oder im Microsoft 365 Admin Center () zugewiesen werden [https://admin.microsoft.com](https://admin.microsoft.com) .|
-|Anzeigen von Vorfällen (auch Untersuchungen genannt) <br/> Hinzufügen von e-Mail-Nachrichten zu einem Vorfall|Eine der folgenden Varianten: <br/>- **Globaler Administrator**  <br/> - **Sicherheits Administrator** <br/>- **Sicherheits Leser** <br/> <br/>Diese Rollen können entweder in Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) oder im Microsoft 365 Admin Center () zugewiesen werden [https://admin.microsoft.com](https://admin.microsoft.com) .|
-|Auslösen von e-Mail-Aktionen in einem Vorfall <br/> <br/> Suchen und Löschen von verdächtigen e-Mail-Nachrichten|Eine der folgenden Varianten: <br/>- **Globaler Administrator**  <br/> - **Sicherheits Administrator** plus die **Such-und Lösch** Rolle<br/><br/>Die **globalen Administrator** -und **Sicherheitsadministrator** Rollen können entweder in Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) oder im Microsoft 365 Admin Center () zugewiesen werden [https://admin.microsoft.com](https://admin.microsoft.com) . <br/><br/>Die **Such-und Lösch** Rolle muss im Security & Compliance Center () zugewiesen werden [https://protection.office.com](https://protection.office.com) .|
-|Integrieren von Microsoft Defender für Office 365 Plan 2 mit Microsoft Defender für Endpoint  <br/><br/> Integrieren von Microsoft Defender für Office 365 Plan 2 mit einem Siem-Server|Entweder der **globale Administrator** oder die **Sicherheitsadministrator** Rolle, die entweder in Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) oder im Microsoft 365 Admin Center () zugewiesen ist [https://admin.microsoft.com](https://admin.microsoft.com) .<br/>--- **Plus** ---<br/>Eine entsprechende Rolle, die in weiteren Anwendungen zugewiesen ist (beispielsweise [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) oder Ihr Siem-Server)|
+|Verwenden des Threat-Dashboards (oder des neuen [Sicherheits Dashboards](security-dashboard.md)) <p> Anzeigen von Informationen zu aktuellen oder aktuellen Bedrohungen|Eine der folgenden Varianten: <ul><li>**Globaler Administrator**</li><li>**Sicherheits Administrator**</li><li>**Sicherheits Leser**</li></ul> <p> Diese Rollen können entweder in Azure Active Directory ( <https://portal.azure.com> ) oder im Microsoft 365 Admin Center () zugewiesen werden <https://admin.microsoft.com> .|
+|Verwenden von [Threat Explorer (und Echtzeiterkennung)](threat-explorer.md) zum Analysieren von Bedrohungen|Eine der folgenden Varianten: <ul><li>**Globaler Administrator**</li><li>**Sicherheits Administrator**</li><li>**Sicherheits Leser**</li></ul> <p> Diese Rollen können entweder in Azure Active Directory ( <https://portal.azure.com> ) oder im Microsoft 365 Admin Center () zugewiesen werden <https://admin.microsoft.com> .|
+|Anzeigen von Vorfällen (auch Untersuchungen genannt) <p> Hinzufügen von e-Mail-Nachrichten zu einem Vorfall|Eine der folgenden Varianten: <ul><li>**Globaler Administrator**</li><li>**Sicherheits Administrator**</li><li>**Sicherheits Leser**</li></ul> <p> Diese Rollen können entweder in Azure Active Directory ( <https://portal.azure.com> ) oder im Microsoft 365 Admin Center () zugewiesen werden <https://admin.microsoft.com> .|
+|Auslösen von e-Mail-Aktionen in einem Vorfall <p> Suchen und Löschen von verdächtigen e-Mail-Nachrichten|Eine der folgenden Varianten: <ul><li>**Globaler Administrator**</li><li>**Sicherheits Administrator** plus die **Such-und Lösch** Rolle</li></ul> <p> Die **globalen Administrator** -und **Sicherheitsadministrator** Rollen können entweder in Azure Active Directory ( <https://portal.azure.com> ) oder im Microsoft 365 Admin Center () zugewiesen werden <https://admin.microsoft.com> . <p> Die **Such-und Lösch** Rolle muss im Security & Compliance Center () zugewiesen werden <https://protection.office.com> .|
+|Integrieren von Microsoft Defender für Office 365 Plan 2 mit Microsoft Defender für Endpoint  <p> Integrieren von Microsoft Defender für Office 365 Plan 2 mit einem Siem-Server|Entweder der **globale Administrator** oder die **Sicherheitsadministrator** Rolle, die entweder in Azure Active Directory ( <https://portal.azure.com> ) oder im Microsoft 365 Admin Center () zugewiesen ist <https://admin.microsoft.com> . <p> --- **Plus** --- <p> Eine entsprechende Rolle, die in weiteren Anwendungen zugewiesen ist (beispielsweise [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) oder Ihr Siem-Server).|
 |
 
 ## <a name="next-steps"></a>Nächste Schritte

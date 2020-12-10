@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratoren erfahren, wie Sie Standard mäßige und strikte Richtlinieneinstellungen auf die Schutzfunktionen von Exchange Online Protection (EoP) und Microsoft Defender für Office 365 anwenden können.
-ms.openlocfilehash: e968f7ea768ac8a0b402c28f3830a52b44afa342
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: fb613916ec375214b33b8b842c6817561920715d
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572777"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616044"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Voreingestellte Sicherheitsrichtlinien in EoP und Microsoft Defender für Office 365
 
@@ -62,7 +62,7 @@ Die verfügbaren Bedingungen und Ausnahmen sind:
 Vordefinierte Sicherheitsrichtlinien verwenden die entsprechenden Richtlinien aus den verschiedenen Schutzfeatures in EoP und Microsoft Defender für Office 365. Diese Richtlinien werden erstellt, _nachdem_ Sie den Benutzern die vordefinierten Sicherheitsrichtlinien für **Standard Schutz** oder **strenge Schutz** zugewiesen haben. Diese Richtlinien können nicht geändert werden.
 
 - **Exchange Online Protection (EoP)-Richtlinien**: Dies umfasst Microsoft 365-Organisationen mit Exchange Online Postfächern und eigenständigen EoP-Organisationen ohne Exchange Online Postfächern:
-  
+
   - [Anti-Spam-Richtlinien](configure-your-spam-filter-policies.md) mit dem Namen " **Standard-vordefinierte Sicherheitsrichtlinie** " und **strenge vordefinierte Sicherheitsrichtlinie**
   - [Antischadsoftware-Richtlinien](configure-anti-malware-policies.md) mit dem Namen " **Standard vordefinierte Sicherheitsrichtlinie** " und **strenge vordefinierte Sicherheitsrichtlinie**
   - [EoP-Anti-Phishing-Richtlinien](set-up-anti-phishing-policies.md#spoof-settings) mit dem Namen " **Standard mäßige Sicherheitsrichtlinie** " und " **strenge vordefinierte Sicherheitsrichtlinie** " (Spoof-Einstellungen).
@@ -112,7 +112,7 @@ Mit anderen Worten: mit den Einstellungen der **strengen Schutz** Richtlinie wer
 
 ### <a name="use-the-security--compliance-center-to-assign-preset-security-policies-to-users"></a>Zuweisen von vordefinierten Sicherheitsrichtlinien zu Benutzern mithilfe des Security & Compliance Centers
 
-1. Wechseln Sie im Security & Compliance Center zu den **Threat management** \> **Policy** \> **vordefinierten Sicherheitsrichtlinien** für Threat Management Policy.
+1. Wechseln Sie im Security & Compliance Center zu den  \>  \> **vordefinierten Sicherheitsrichtlinien** für Threat Management Policy.
 
 2. Klicken Sie unter **Standard Schutz** oder **strenger Schutz** auf **Bearbeiten**.
 

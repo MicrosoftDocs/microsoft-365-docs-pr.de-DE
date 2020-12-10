@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 'Zusammenfassung: Konfigurieren einer SharePoint Online Teamwebsite, die vom Rest der Organisation in Ihrer Microsoft 365-Entwicklungs-/Testumgebung isoliert ist.'
-ms.openlocfilehash: e21dccb9ef535bb997d6e62b70e5576bf531041c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 6e056cd1d930d13e1ae20f8f8d0cdc9aa886f17e
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199661"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616488"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Isolierte SharePoint Online-Teamwebsite in Ihrer Office 365-Entwicklungs-/Testumgebung
 
@@ -35,9 +35,7 @@ SharePoint Online Teamwebsites in Microsoft 365 sind Standorte für die Zusammen
 Der Zugriff auf SharePoint Online-Teamwebsites und die Aktionen, die Benutzer ausführen können, werden durch SharePoint-Gruppen und Berechtigungsstufen gesteuert. SharePoint Online-Websites haben standardmäßig drei Zugriffsebenen:
 
 - **Mitglieder**, die Ressourcen auf dieser Website anzeigen, erstellen und ändern können.
-
 - **Besitzer**, die über eine vollständige Kontrolle über die Website verfügen, einschließlich der Fähigkeit, Berechtigungen zu ändern.
-
 - **Besucher**, die Ressourcen auf der Website nur anzeigen können.
 
 In diesem Artikel werden Sie durch die Konfiguration einer isolierten SharePoint Online-Teamwebsite für ein geheimes Forschungsprojekt mit dem Namen „ProjectX“ geführt. Die Zugriffsanforderungen sehen folgendermaßen aus:
@@ -143,7 +141,7 @@ Ergebnisse:
 
 Abbildung 1 zeigt die Zugriffsgruppen und ihre Mitgliedschaft.
 
-**Abbildung 1**
+**Abbildung 1**:
 
 ![Die Microsoft 365-Gruppen und Ihre Mitgliedschaft für eine isolierte SharePoint Online Gruppen Website](../../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
 
@@ -151,7 +149,7 @@ Abbildung 1 zeigt die Zugriffsgruppen und ihre Mitgliedschaft.
 
 Führen Sie folgende Schritte aus, um eine SharePoint Online-Teamwebsite für ProjectX zu erstellen:
 
-1. Melden Sie sich über einen Browser auf Ihrem lokalen Computer (einfache Konfiguration) oder auf CLIENT1 (simulierte Unternehmenskonfiguration) beim Microsoft 365 Admin Center ( [https://admin.microsoft.com](https://admin.microsoft.com) ) mit ihrem globalen Administratorkonto an.
+1. Melden Sie sich über einen Browser auf Ihrem lokalen Computer (einfache Konfiguration) oder auf CLIENT1 (simulierte Unternehmenskonfiguration) beim Microsoft 365 Admin Center ( <https://admin.microsoft.com> ) mit ihrem globalen Administratorkonto an.
 
 2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
 
@@ -219,7 +217,7 @@ Nachfolgend wird der Zugriff unter Verwendung des Lead Designer-Benutzerkontos v
 
 2. Klicken Sie auf den Namen des globalen Administrators, und klicken Sie dann auf **Abmelden**.
 
-3. Melden Sie sich beim Microsoft 365 Admin Center ( [https://admin.microsoft.com](https://admin.microsoft.com) ) unter Verwendung des Lead Designer-Kontonamens und des Kennworts an.
+3. Melden Sie sich beim Microsoft 365 Admin Center ( <https://admin.microsoft.com> ) unter Verwendung des Lead Designer-Kontonamens und des Kennworts an.
 
 4. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
 
@@ -237,7 +235,7 @@ Nachfolgend wird der Zugriff unter Verwendung des Lead Designer-Benutzerkontos v
 
 11. Klicken Sie auf der neuen Registerkarte **ProjectX-Dokumente** im Browser auf **Neu > Word-Dokument**.
 
-12. Geben Sie Text auf der Seite ein, warten Sie, bis der Status **gespeichert**angezeigt wird, klicken Sie auf die Schaltfläche zurück in Ihrem Browser, und aktualisieren Sie dann die Seite. Im Ordner **Dokumente** sollte nun ein neues Dokument **Document.docx** angezeigt werden.
+12. Geben Sie Text auf der Seite ein, warten Sie, bis der Status **gespeichert** angezeigt wird, klicken Sie auf die Schaltfläche zurück in Ihrem Browser, und aktualisieren Sie dann die Seite. Im Ordner **Dokumente** sollte nun ein neues Dokument **Document.docx** angezeigt werden.
 
 13. Klicken Sie auf die Auslassungspunkte für das Dokument **Document.docx**, und klicken Sie dann auf **Link abrufen**.
 
@@ -249,7 +247,7 @@ Nachfolgend wird der Zugriff unter Verwendung des Lead Designer-Benutzerkontos v
 
 Nachfolgend wird der Zugriff unter Verwendung des Development VP-Benutzerkontos veranschaulicht:
 
-1. Melden Sie sich beim Microsoft 365 Admin Center ( [https://admin.microsoft.com](https://admin.microsoft.com) ) mit dem Kontonamen und dem Kennwort des Development VP an.
+1. Melden Sie sich beim Microsoft 365 Admin Center ( <https://admin.microsoft.com> ) mit dem Kontonamen und dem Kennwort des Development VP an.
 
 2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
 
@@ -265,7 +263,7 @@ Nachfolgend wird der Zugriff unter Verwendung des Development VP-Benutzerkontos 
 
 Nachfolgend wird der Zugriff mit einem Benutzerkonto ohne Berechtigungen veranschaulicht:
 
-1. Melden Sie sich beim Microsoft 365 Admin Center ( [https://admin.microsoft.com](https://admin.microsoft.com) ) unter Verwendung des Kontonamens "Benutzer 3" und des Kennworts an.
+1. Melden Sie sich beim Microsoft 365 Admin Center ( <https://admin.microsoft.com> ) unter Verwendung des Kontonamens "Benutzer 3" und des Kennworts an.
 
 2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
 

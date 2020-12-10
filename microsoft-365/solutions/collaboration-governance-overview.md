@@ -16,12 +16,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Hier erfahren Sie, wie Sie verwandte Features in Microsoft 365-Gruppen, Teams, SharePoint und jammern steuern.
-ms.openlocfilehash: 2e4064ec64c52d4d3afe3d2e83f34079b3749f97
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: 2319a0f5b8c74925569d00eb781d247fe61a5a76
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568404"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613032"
 ---
 # <a name="what-is-collaboration-governance"></a>Was ist Collaboration Governance?
 
@@ -141,7 +141,7 @@ Die Steuerungsfunktionen für die Zusammenarbeit in Microsoft 365 umfassen Featu
 |Gruppenablaufrichtlinie|Festlegen, dass inaktive Gruppen und Teams ablaufen und nach einem bestimmten Zeitraum gelöscht werden.|Microsoft 365 E5 oder E3 mit Azure AD Premium-Lizenzen|
 |Gastzugriff pro Gruppe|Zulassen oder verhindern, dass Team-und Gruppenfreigabe für Personen außerhalb Ihrer Organisation pro Gruppe erfolgen kann.|Microsoft 365 E5 oder E3|
 
-## <a name="create-your-governance-plan"></a>Erstellen eines Steuerungsplans
+## <a name="collaboration-governance-planning-step-by-step"></a>Planung der Collaboration-Steuerung Schritt für Schritt
 
 Befolgen Sie die folgenden grundlegenden Schritte zum Erstellen Ihres Steuerungsplans:
 

@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die Anti-Phishing-Richtlinien informieren, die in Exchange Online Protection (EoP) und Microsoft Defender für Office 365 zur Verfügung stehen.
-ms.openlocfilehash: 839d76c1e07b457f671f1f0eccd0a9160e4039a3
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: 9d3c8c0bf2b1c440892a1099d3d0812d95027156
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568584"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615768"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-Phishing-Richtlinien in Microsoft 365
 
@@ -30,7 +30,7 @@ ms.locfileid: "49568584"
 
 Richtlinien zum Konfigurieren von Einstellungen für den Schutz vor Phishing sind in Microsoft 365-Organisationen mit Exchange Online-Postfächern, eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächern und Microsoft Defender für Office 365 Organisationen verfügbar.
 
-Anti-Phishing-Richtlinien in Microsoft Defender für Office 365 sind nur in Organisationen verfügbar, die Defender für Office 365 haben. Zum Beispiel:
+Anti-Phishing-Richtlinien in Microsoft Defender für Office 365 sind nur in Organisationen verfügbar, die Defender für Office 365 haben. Beispiel:
 
 - Microsoft 365 Enterprise E5, Microsoft 365 Education A5, etc.
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
@@ -129,7 +129,6 @@ Um zu verhindern, dass das Fragezeichen oder das über-Tag zu Nachrichten von be
 - Zulassen, dass Absender Spoofing in der Spoof Intelligence-Richtlinie vortäuscht. Durch diese Aktion wird verhindert, dass das via-Tag in Nachrichten vom Absender angezeigt wird, wenn die nicht authentifizierte Absender Identifikation deaktiviert ist. Anweisungen finden Sie unter [configure Spoof Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
 
 - [Konfigurieren Sie die e-Mail-Authentifizierung](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) für die Absenderdomäne.
-  
   - Für das Fragezeichen im Foto des Absenders sind SPF oder DKIM die wichtigsten.
   - Bestätigen Sie für das via-Tag die Domäne in der DKIM-Signatur oder die **e-Mail-** Adresse Übereinstimmungen (oder ist eine Unterdomäne von) der Domäne in der von-Adresse.
 

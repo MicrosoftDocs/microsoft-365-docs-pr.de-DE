@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: Hier erfahren Sie, wie Sie eine Benennungsrichtlinie für Microsoft 365-Gruppen erstellen.
-ms.openlocfilehash: 55faf5c61d577b35b34923efc7b65457fe46de29
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 15fcbace737398c6edd2062e72622e8551ebd222
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377605"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613502"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365 gruppenbenennungsrichtlinie
 
@@ -45,7 +45,7 @@ Wenn Sie Azure AD Benennungsrichtlinie für Microsoft 365-Gruppen verwenden, mü
 
 Dies ist auch für den Administrator erforderlich, der die Benennungsrichtlinie für Gruppen erstellt.
 
-## <a name="prefix-suffix-naming-policy"></a>Präfix Suffix-Benennungsrichtlinie
+## <a name="prefix-suffix-naming-policy"></a>Prefix-Suffix Benennungsrichtlinie
 
 Bei Präfixen und Suffixen kann es sich entweder um feste Zeichenfolgen oder um Benutzerattribute handeln.
 
@@ -94,7 +94,7 @@ Sie können eine durch Trennzeichen getrennte Liste der blockierten Wörter eing
 
 Es erfolgt keine Suche nach Teilzeichenfolgen, d. h. es muss eine genaue Übereinstimmung zwischen dem vom Benutzer eingegebenen Namen und den benutzerdefinierten blockierten Wörtern bestehen, um eine Ablehnung auszulösen.
 
-**Dinge, die Sie beachten**sollten:
+**Dinge, die Sie beachten** sollten:
 
 - Bei blockierten Wörtern wird die Groß-/Kleinschreibung nicht berücksichtigt.
 
@@ -132,5 +132,9 @@ So richten Sie eine Benennungsrichtlinie ein:
 ![Screenshot der Einstellungen für Benennungsrichtlinien für Gruppen in Azure Active Directory](../media/groups-naming-policy-azure.png)
 
 ## <a name="related-topics"></a>Verwandte Themen
+
+[Planung der Collaboration-Steuerung Schritt für Schritt](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Erstellen eines Steuerungsplans für die Zusammenarbeit](collaboration-governance-first.md)
 
 [Azure Active Directory-Cmdlets für die Konfiguration von Gruppeneinstellungen](https://go.microsoft.com/fwlink/?linkid=868341)

@@ -20,12 +20,12 @@ ms.topic: conceptual
 ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: 01a5e374396b1f7ef79dff436cd9ecc4e0c4abf1
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: d219895767919c2a0658f8b83150fe6edde01b5b
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357237"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615552"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Neuerungen in Microsoft Defender für Office 365
 
@@ -56,7 +56,7 @@ In diesem Artikel werden die neuen Features in der neuesten Version von Microsof
 ## <a name="julyaugust-2020"></a>Juli/August 2020
 
 - [Verbesserungen beim Jagderlebnis](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections) (Microsoft Defender für Office 365 Plan 1 oder Plan 2)
-- [Einfaches anwenden empfohlener Einstellungen mithilfe vordefinierter Sicherheitsrichtlinien](preset-security-policies.md) 
+- [Einfaches anwenden empfohlener Einstellungen mithilfe vordefinierter Sicherheitsrichtlinien](preset-security-policies.md)
 
 ## <a name="marchapril-2020"></a>März/April 2020
 
@@ -71,7 +71,7 @@ In diesem Artikel werden die neuen Features in der neuesten Version von Microsof
   - Advanced not Filters (Dies sind Erweiterte Filteroptionen, die Include enthält, nicht enthalten, usw.)
   - Granulare Zeitfilter (Tag, Stunde, halbe Stunde)
 
-- Das **Incidents** -Widget ist jetzt das **Action Center** -Widget. (Um Ihre Sicherheits-Widgets anzuzeigen, wechseln Sie im Security & Compliance Center zu **Threat Management**  >  **Review**.) (Microsoft Defender für Office 365 Plan 2)
+- Das **Incidents** -Widget ist jetzt das **Action Center** -Widget. (Um Ihre Sicherheits-Widgets anzuzeigen, wechseln Sie im Security & Compliance Center zu **Threat Management** \> **Review**.) (Microsoft Defender für Office 365 Plan 2)
 
 - [Sichere Dokumente in Microsoft 365](safe-docs.md) **(Vorschau)**
 

@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Administratoren können häufig gestellte Fragen und Antworten zum Schutz vor Spoofing in Exchange Online Protection (EoP) anzeigen.
-ms.openlocfilehash: a5b0484e41e3df7a7b6ad16e69a4f7062b19b554
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: f567c7bc0c6a6efed7621cec86c5db4e616290b7
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844392"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616731"
 ---
 # <a name="anti-spoofing-protection-faq"></a>Häufig gestellte Fragen zum Antispoofingschutz
 
@@ -71,9 +71,9 @@ Leider Nein. Angreifer passen sich an die Verwendung anderer Techniken an (beisp
 
 Fast alle großen e-Mail-Dienste implementieren herkömmliche SPF-, DKIM-und DMARC-Prüfungen. Einige Dienste haben andere, strengere Prüfungen, aber nur wenige gehen so weit, dass Sie nicht authentifizierte e-Mails blockieren und als gefälschte Nachrichten behandeln EoP. Allerdings wird die Branche in Bezug auf Probleme mit nicht authentifizierten e-Mails, insbesondere aufgrund des Problems der Phishing-Problematik, immer stärker bewusst.
 
-## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>Muss ich dennoch die erweiterte Spam Filter Einstellung "SPF Record: Hard Fail" ( _MarkAsSpamSpfRecordHardFail_ ) aktivieren, wenn ich Antispoofing aktiviere?
+## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>Muss ich dennoch die erweiterte Spam Filter Einstellung "SPF Record: Hard Fail" (_MarkAsSpamSpfRecordHardFail_) aktivieren, wenn ich Antispoofing aktiviere?
 
-Nein. Diese ASF-Einstellung ist nicht mehr erforderlich. Der Schutz vor Spoofing hält sowohl SPF-Fehler als auch eine viel breitere Gruppe von Kriterien für erforderlich. Wenn Sie Antispoofing und **SPF-Eintrag: Schwerer Fehler** ( _MarkAsSpamSpfRecordHardFail_ ) aktiviert haben, erhalten Sie wahrscheinlich mehr falsch positive Ergebnisse.
+Nein. Diese ASF-Einstellung ist nicht mehr erforderlich. Der Schutz vor Spoofing hält sowohl SPF-Fehler als auch eine viel breitere Gruppe von Kriterien für erforderlich. Wenn Sie Antispoofing und **SPF-Eintrag: Schwerer Fehler** (_MarkAsSpamSpfRecordHardFail_) aktiviert haben, erhalten Sie wahrscheinlich mehr falsch positive Ergebnisse.
 
 Es wird empfohlen, dieses Feature zu deaktivieren, da es fast keine zusätzlichen Vorteile für das Erkennen von Spam-oder Phishing-Nachrichten bietet und stattdessen meistens falsch positive Ergebnisse generiert. Weitere Informationen finden Sie unter [Advanced Spam Filter (ASF) Settings in EoP](advanced-spam-filtering-asf-options.md).
 

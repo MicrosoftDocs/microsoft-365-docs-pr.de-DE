@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die ASF-Einstellungen (Advanced Spam Filter) informieren, die in Anti-Spam-Richtlinien in Exchange Online Protection (EoP) zur Verfügung stehen.
-ms.openlocfilehash: f9295de6fb524cff16394d305ca9247d9f7ce07b
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: 3ac2b45cc03327f47bd73efe54e78312cbda4bb6
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49020927"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615252"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Einstellungen für erweiterte Spam Filter (ASF) in EoP
 
@@ -50,27 +50,27 @@ In den folgenden Abschnitten werden die ASF-Einstellungen und-Optionen beschrieb
 
 Für jede ASF-Einstellung stehen die folgenden Optionen unter Anti-Spam-Richtlinien zur Verfügung:
 
-- **On** : ASF fügt das entsprechende X-Kopfzeilenfeld zur Nachricht hinzu und markiert die Nachricht entweder als **Spam** (SCL 5 oder 6 für die [Einstellung "Spambewertung verbessern](#increase-spam-score-settings)") oder als Spam für **hohe Zuverlässigkeit** (SCL 9 für [Markierung als Spameinstellungen](#mark-as-spam-settings)).
+- **On**: ASF fügt das entsprechende X-Kopfzeilenfeld zur Nachricht hinzu und markiert die Nachricht entweder als **Spam** (SCL 5 oder 6 für die [Einstellung "Spambewertung verbessern](#increase-spam-score-settings)") oder als Spam für **hohe Zuverlässigkeit** (SCL 9 für [Markierung als Spameinstellungen](#mark-as-spam-settings)).
 
-- **Off** : die ASF-Einstellung ist deaktiviert. Dies ist der Standardwert, und es wird empfohlen, dass Sie ihn nicht ändern.
+- **Off**: die ASF-Einstellung ist deaktiviert. Dies ist der Standardwert, und es wird empfohlen, dass Sie ihn nicht ändern.
 
-- **Test** : ASF fügt das entsprechende X-Kopfzeilenfeld zur Nachricht hinzu. Was mit der Nachricht geschieht, wird durch den *Aktions* -Wert ( **Test Mode Options** ) bestimmt:
+- **Test**: ASF fügt das entsprechende X-Kopfzeilenfeld zur Nachricht hinzu. Was mit der Nachricht geschieht, wird durch den *Aktions*-Wert ( **Test Mode Options** ) bestimmt:
 
-  - **None** : die Nachrichtenzustellung ist von der ASF-Erkennung nicht betroffen. Die Nachricht unterliegt weiterhin anderen Arten von Filtern und Regeln in EoP.
+  - **None**: die Nachrichtenzustellung ist von der ASF-Erkennung nicht betroffen. Die Nachricht unterliegt weiterhin anderen Arten von Filtern und Regeln in EoP.
 
-  - **Standard-x-Header-Text hinzufügen ( *AddXHeader* )** : der Wert der x-Kopfzeile `X-CustomSpam: This message was filtered by the custom spam filter option` wird der Nachricht hinzugefügt. Sie können diesen Wert in Posteingangsregeln oder Nachrichtenfluss Regeln (auch bekannt als Transportregeln) verwenden, um die Zustellung der Nachricht zu beeinflussen.
+  - **Standard-x-Header-Text hinzufügen (*AddXHeader*)**: der Wert der x-Kopfzeile `X-CustomSpam: This message was filtered by the custom spam filter option` wird der Nachricht hinzugefügt. Sie können diesen Wert in Posteingangsregeln oder Nachrichtenfluss Regeln (auch bekannt als Transportregeln) verwenden, um die Zustellung der Nachricht zu beeinflussen.
 
-  - **BCC-Nachricht senden ( *BccMessage* )** : die angegebenen e-Mail-Adressen (der Wert des *den testmodebcctorecipients* -Parameters in PowerShell) werden dem Feld Bcc der Nachricht hinzugefügt, und die Nachricht wird an die zusätzlichen Bcc-Empfänger übermittelt. Im Security & Compliance Center trennen Sie mehrere e-Mail-Adressen durch Semikolons (;). In PowerShell trennen Sie mehrere e-Mail-Adressen durch Kommas.
+  - **BCC-Nachricht senden (*BccMessage*)**: die angegebenen e-Mail-Adressen (der Wert des *den testmodebcctorecipients* -Parameters in PowerShell) werden dem Feld Bcc der Nachricht hinzugefügt, und die Nachricht wird an die zusätzlichen Bcc-Empfänger übermittelt. Im Security & Compliance Center trennen Sie mehrere e-Mail-Adressen durch Semikolons (;). In PowerShell trennen Sie mehrere e-Mail-Adressen durch Kommas.
 
-  **Hinweise** :
+  **Hinweise**:
 
   - Der Testmodus ist für die folgenden ASF-Einstellungen nicht verfügbar:
 
-    - **Bedingte Sender ID-Filterung: schwerer Fehler** ( *MarkAsSpamFromAddressAuthFail* )
-    - **NDR** -Rückläufer ( *MarkAsSpamNdrBackscatter* )
-    - **SPF-Eintrag: Hard Fail** ( *MarkAsSpamSpfRecordHardFail* )
+    - **Bedingte Sender ID-Filterung: schwerer Fehler** (*MarkAsSpamFromAddressAuthFail*)
+    - **NDR**-Rückläufer (*MarkAsSpamNdrBackscatter*)
+    - **SPF-Eintrag: Hard Fail** (*MarkAsSpamSpfRecordHardFail*)
 
-  - Die gleiche Testmodus-Aktion wird auf *alle* ASF-Einstellungen angewendet, die auf " **Test** " festgelegt sind. Sie können keine unterschiedlichen Testmodus-Aktionen für unterschiedliche ASF-Einstellungen konfigurieren.
+  - Die gleiche Testmodus-Aktion wird auf *alle* ASF-Einstellungen angewendet, die auf " **Test**" festgelegt sind. Sie können keine unterschiedlichen Testmodus-Aktionen für unterschiedliche ASF-Einstellungen konfigurieren.
 
 ## <a name="increase-spam-score-settings"></a>Verbessern der Spam Bewertungseinstellungen
 
@@ -104,5 +104,5 @@ Mit den folgenden ASF-Einstellungen wird die SCL-Bewertung der erkannten Nachric
 |**Liste mit sensiblen Begriffen anwenden** <p> *MarkAsSpamSensitiveWordList*|Microsoft verwaltet eine dynamische, aber nicht bearbeitbare Liste von Wörtern, die potenziell anstößigen Nachrichten zugeordnet sind. <p> Nachrichten, die Wörter aus der Liste der vertraulichen Wörter im Betreff oder Nachrichtentext enthalten, werden als Spam mit hoher Vertrauenswürdigkeit gekennzeichnet.|`X-CustomSpam: Sensitive word in subject/body`|
 |**SPF-Eintrag: Schwerer Fehler** <p> *MarkAsSpamSpfRecordHardFail*|Nachrichten, die von einer IP-Adresse gesendet werden, die im SPF-Eintrag (SPF) in DNS für die Quell-e-Mail-Domäne nicht angegeben ist, werden als Spam mit hoher Vertrauenswürdigkeit gekennzeichnet. <p> Der Testmodus ist für diese Einstellung nicht verfügbar.|`X-CustomSpam: SPF Record Fail`|
 |**Bedingte Absender-ID-Filterung: Schwerer Fehler** <p> *MarkAsSpamFromAddressAuthFail*|Nachrichten, für die eine bedingte Sender ID-Überprüfung schwer ausfällt, werden als Spam gekennzeichnet. <p> Diese Einstellung kombiniert eine SPF-Prüfung mit einer Sender ID-Überprüfung, um den Schutz gegen Nachrichtenkopfzeilen zu gewährleisten, die gefälschte Absender enthalten. <p> Der Testmodus ist für diese Einstellung nicht verfügbar.|`X-CustomSpam: SPF From Record Fail`|
-|**NDR-Rückläufer** <p> *MarkAsSpamNdrBackscatter*|Bei *Backscatter* handelt es sich um nutzlose Unzustellbarkeitsberichte (auch als NDR oder Unzustellbarkeitsnachrichten bezeichnet), die von gefälschten Absendern in e-Mail-Nachrichten verursacht werden. Weitere Informationen finden Sie unter [Backscatter Messages and EoP](backscatter-messages-and-eop.md). <p> Sie müssen diese Einstellung in den folgenden Umgebungen nicht konfigurieren, da legitime Unzustellbarkeitsberichte zugestellt werden und Backscatter als Spam gekennzeichnet wird: <ul><li>Microsoft 365-Organisationen mit Exchange Online Postfächern.</li><li>Lokale e-Mail-Organisationen, in denen Sie *ausgehende* e-Mails über EoP weiterleiten.</li></ul><br/> In eigenständigen EoP-Umgebungen, die eingehende e-Mail an lokale Postfächer schützen, hat das Aktivieren oder Deaktivieren dieser Einstellung das folgende Ergebnis: <ul><li> **On** : legitime Unzustellbarkeitsberichte werden zugestellt, und Backscatter wird als Spam gekennzeichnet.</li><li>**Off** : legitime Unzustellbarkeitsberichte und Backscatter durchlaufen die normale Spamfilterung. Die meisten legitimen Unzustellbarkeitsberichte werden an den ursprünglichen Absender der Nachricht übermittelt. Einige, jedoch nicht alle, werden als Spam mit hoher Vertrauenswürdigkeit gekennzeichnet. Per Definition kann Backscatter nur an den gefälschten Absender und nicht an den ursprünglichen Absender zugestellt werden.</li></ul><br/> Der Testmodus ist für diese Einstellung nicht verfügbar.|`X-CustomSpam: Backscatter NDR`|
+|**NDR-Rückläufer** <p> *MarkAsSpamNdrBackscatter*|Bei *Backscatter* handelt es sich um nutzlose Unzustellbarkeitsberichte (auch als NDR oder Unzustellbarkeitsnachrichten bezeichnet), die von gefälschten Absendern in e-Mail-Nachrichten verursacht werden. Weitere Informationen finden Sie unter [Backscatter Messages and EoP](backscatter-messages-and-eop.md). <p> Sie müssen diese Einstellung in den folgenden Umgebungen nicht konfigurieren, da legitime Unzustellbarkeitsberichte zugestellt werden und Backscatter als Spam gekennzeichnet wird: <ul><li>Microsoft 365-Organisationen mit Exchange Online Postfächern.</li><li>Lokale e-Mail-Organisationen, in denen Sie *ausgehende* e-Mails über EoP weiterleiten.</li></ul> <p> In eigenständigen EoP-Umgebungen, die eingehende e-Mail an lokale Postfächer schützen, hat das Aktivieren oder Deaktivieren dieser Einstellung das folgende Ergebnis: <ul><li> **On**: legitime Unzustellbarkeitsberichte werden zugestellt, und Backscatter wird als Spam gekennzeichnet.</li><li>**Off**: legitime Unzustellbarkeitsberichte und Backscatter durchlaufen die normale Spamfilterung. Die meisten legitimen Unzustellbarkeitsberichte werden an den ursprünglichen Absender der Nachricht übermittelt. Einige, jedoch nicht alle, werden als Spam mit hoher Vertrauenswürdigkeit gekennzeichnet. Per Definition kann Backscatter nur an den gefälschten Absender und nicht an den ursprünglichen Absender zugestellt werden.</li></ul> <p> Der Testmodus ist für diese Einstellung nicht verfügbar.|`X-CustomSpam: Backscatter NDR`|
 |

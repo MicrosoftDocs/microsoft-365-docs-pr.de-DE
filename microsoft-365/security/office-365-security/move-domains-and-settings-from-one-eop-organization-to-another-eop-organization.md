@@ -14,12 +14,12 @@ ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 ms.custom:
 - seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie, wie Sie Domänen und Einstellungen von einer Microsoft Exchange Online Protection (EoP)-Organisation (Mandant) zu einer anderen migrieren.
-ms.openlocfilehash: 141fb85bb7120f4e547c27f399d254847b19e3c2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 485911ff7ac94c820d6f1e0f7cfa54da08943054
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200503"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614822"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>Verschieben von Domänen und Einstellungen zwischen EOP-Organisationen
 
@@ -29,7 +29,10 @@ ms.locfileid: "48200503"
 Änderungen in den Geschäftsanforderungen können manchmal erfordern, dass eine Microsoft Exchange Online Protection (EOP)-Organisation (ein Mandant) in zwei separate Organisationen unterteilt wird, zwei Organisationen in einer zusammengefasst oder Ihre Domänen und EOP-Einstellungen von einer Organisation zu einer anderen verschoben werden. Das Verschieben einer EOP-Organisaton zu einer zweiten EOP-Organisation kann ein Problem darstellen, doch mit ein paar einfachen Remote Windows PowerShell-Skripts und etwas Vorbereitung kann dies in einem relativ kleinen Wartungszeitfenster erreicht werden.
 
 > [!NOTE]
-> Einstellungen können auf zuverlässige Weise nur von einer eigenständigen EOP (Standard)-Organisation zu entweder einer anderen EOP Standard-Organisation oder einer EOP Premium-Organisation (Exchange Enterprise CAL mit Diensten) oder von einer EOP Premium-Organisation zu einer anderen EOP Premium-Organisation verschoben werden. Da einige Premium-Features in EoP-Standardorganisationen nicht unterstützt werden, ist die Verschiebung von einer EoP Premium-Organisation in eine EoP-Standardorganisation möglicherweise nicht erfolgreich. <br><br> Diese Anweisungen gelten nur für filternde EOP-Organisationen. Es gibt weitere Überlegungen beim Verschieben zwischen Exchange Online-Organisationen. Exchange Online-Organisationen werden in diesen Anweisungen nicht berücksichtigt.
+>
+> - Einstellungen können auf zuverlässige Weise nur von einer eigenständigen EOP (Standard)-Organisation zu entweder einer anderen EOP Standard-Organisation oder einer EOP Premium-Organisation (Exchange Enterprise CAL mit Diensten) oder von einer EOP Premium-Organisation zu einer anderen EOP Premium-Organisation verschoben werden. Da einige Premium-Features in EoP-Standardorganisationen nicht unterstützt werden, ist die Verschiebung von einer EoP Premium-Organisation in eine EoP-Standardorganisation möglicherweise nicht erfolgreich.
+>
+> - Diese Anweisungen gelten nur für filternde EOP-Organisationen. Es gibt weitere Überlegungen beim Verschieben zwischen Exchange Online-Organisationen. Exchange Online-Organisationen werden in diesen Anweisungen nicht berücksichtigt.
 
 Im folgenden Beispiel wurde Contoso, Ltd. mit Contoso Suites zusammengeführt. Auf dem folgenden Bild ist der Prozess für das Verschieben von Domänen, E-Mail-Benutzern und Gruppen sowie Einstellungen aus der EOP-Quellorganisation (contoso.onmicrosoft.com) zur EOP-Zielorganisation (contososuites.onmicrosoft.com) dargestellt:
 
@@ -42,21 +45,14 @@ Das Problem beim Verschieben von Domänen zwischen Organisationen besteht darin,
 Um die Quellorganisation in der Zielorganisation erneut zu erstellen, müssen Sie zunächst die folgenden Informationen über die Quellorganisation sammeln und speichern:
 
 - Domänen
-
 - E-Mail-Benutzer
-
 - Gruppen
-
 - Antispam
-
   - Anti-Spam-Richtlinien (auch als Inhaltsfilter Richtlinien bezeichnet)
   - Richtlinien für ausgehende Spamfilter
   - Verbindungsfilter Richtlinien
-
 - Anti-Malware-Richtlinien
-
 - Connectors
-
 - Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet)
 
   > [!NOTE]
@@ -66,7 +62,7 @@ Die einfachste Möglichkeit zum Sammeln aller Einstellungen ist die Verwendung v
 
 Als Nächstes können Sie alle Einstellungen sammeln und sie in eine XML-Datei exportieren, um sie in den Zielmandanten zu importieren. Im Allgemeinen können Sie bei jeder Einstellung die Ausgabe des Cmdlets **Get** in das Cmdlet **Export-Clixml** übergeben, um die Einstellungen in XML-Dateien zu speichern, wie im folgenden Beispielcode dargestellt.
 
-Erstellen Sie in eigenständiger EoP-PowerShell ein Verzeichnis mit dem Namen Export an einem Speicherort, der leicht zu finden und in dieses Verzeichnis geändert werden kann. Zum Beispiel:
+Erstellen Sie in eigenständiger EoP-PowerShell ein Verzeichnis mit dem Namen Export an einem Speicherort, der leicht zu finden und in dieses Verzeichnis geändert werden kann. Beispiel:
 
 ```PowerShell
 mkdir C:\EOP\Export
@@ -186,7 +182,7 @@ Jetzt können Sie die Informationen aus dem Microsoft 365 Admin Center ihrer Zie
 
 2. Klicken Sie auf **Domänen**.
 
-   Wenn Domänen nicht angezeigt werden, klicken Sie auf **Navigation anpassen**, wählen Sie **Setup**aus, und klicken Sie dann auf **Speichern**.
+   Wenn Domänen nicht angezeigt werden, klicken Sie auf **Navigation anpassen**, wählen Sie **Setup** aus, und klicken Sie dann auf **Speichern**.
 
 3. Klicken Sie auf die einzelnen **Setup starten**-Links, und fahren Sie dann mit dem Setup-Assistenten fort.
 
@@ -252,7 +248,7 @@ Remove-MsolDomain -DomainName $Domain.Name -Force
 
 ## <a name="step-5-verify-domains-for-the-target-organization"></a>Schritt 5: Überprüfen von Domänen für die Zielorganisation
 
-1. Melden Sie sich beim Admin Center an [https://portal.office.com](https://portal.office.com) .
+1. Melden Sie sich beim Admin Center an <https://portal.office.com> .
 
 2. Klicken Sie auf **Domänen**.
 

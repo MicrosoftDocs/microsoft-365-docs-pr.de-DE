@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Benutzer müssen Berechtigungen im Microsoft 365 Security & Compliance Center zugewiesen werden, bevor Sie alle Sicherheits-und Kompatibilitätsfeatures verwalten können.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5d586684d44545f7aea94c30f5474b1fe5fa4651
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 1bf8da85a0e090a9d74934ea5084f547d6a8794f
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202807"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616608"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Freigeben des Benutzerzugriffs auf das Security & Compliance Center
 
@@ -51,7 +51,7 @@ Weitere Informationen zu den verschiedenen Berechtigungen, die Sie Benutzern im 
 
 2. Wählen Sie in der Liste der Rollengruppen die Rollengruppe aus, und klicken Sie dann auf Bearbeitungssymbol **Bearbeiten** ![ ](../../media/O365-MDM-CreatePolicy-EditIcon.gif) .
 
-3. Klicken Sie auf der Eigenschaftenseite der Rollengruppe unter **Mitglieder**auf Add-Symbol **Hinzufügen**, ![ ](../../media/ITPro-EAC-AddIcon.gif) und wählen Sie den Namen des Benutzers (oder der Benutzer) aus, den Sie hinzufügen möchten.
+3. Klicken Sie auf der Eigenschaftenseite der Rollengruppe unter **Mitglieder** auf Add-Symbol **Hinzufügen**, ![ ](../../media/ITPro-EAC-AddIcon.gif) und wählen Sie den Namen des Benutzers (oder der Benutzer) aus, den Sie hinzufügen möchten.
 
 4. Wenn Sie alle Benutzer ausgewählt haben, die Sie der Rollengruppe hinzufügen möchten, klicken Sie auf **hinzu \> fügen** und dann auf **OK**.
 
@@ -81,7 +81,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Add-RoleG
 
 Führen Sie einen der folgenden Schritte aus, um zu überprüfen, ob Sie erfolgreich Zugriff auf das Compliance Center für Sicherheits & erhalten haben:
 
-- Wechseln Sie im Security & Compliance Center zu **Berechtigungen** , und wählen Sie die Rollengruppe aus. Überprüfen Sie im Detail Flyout, das geöffnet wird, die Mitglieder der Rollengruppe. 
+- Wechseln Sie im Security & Compliance Center zu **Berechtigungen** , und wählen Sie die Rollengruppe aus. Überprüfen Sie im Detail Flyout, das geöffnet wird, die Mitglieder der Rollengruppe.
 
 - Ersetzen Sie in Security & Compliance Center PowerShell \<RoleGroupName\> durch den Namen der Rollengruppe, und führen Sie den folgenden Befehl aus:
 

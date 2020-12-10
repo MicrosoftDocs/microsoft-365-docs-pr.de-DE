@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: 'Erfahren Sie, wie die Verwendungsanalyse eine Verbindung mit einer API herstellt und eine monatliche Nutzungs Tendenz verschiedener Microsoft 365-Dienste bereitstellt.  '
-ms.openlocfilehash: 9d13d979e64a68aaffb3582ad6b09ab901843cd4
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: d7b3e7e9467a57f913f069c48249e82b5958aabb
+ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841375"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49611448"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Microsoft 365 Datenmodell von Nutzungsanalysen
 
@@ -215,8 +215,8 @@ Diese Tabelle enthält zusammenfassende Daten zur Verwendung oder Aktivität von
 |DocumentCount  <br/> |Die Gesamtzahl der Dokumente, die am Ende des Zeitrahmens auf der Website vorhanden waren.  <br/> |
 |Diplansed  <br/> |Verwendeter Gesamtspeicherplatz für alle Websites am Ende des Zeitrahmens.  <br/> |
 |ActivityType  <br/> |Die Anzahl der Websites, die die verschiedenen Arten von Dateiaktivitäten aufgezeichnet haben (any/active files/files shared EXT/INT/files synched).  <br/> Stellt eine der ausgeführten Dateiaktivitäten dar.  <br/> |
-|SitesWithOwnerActivities  <br/> |Die Anzahl aktiver Websites, bei denen der Websitebesitzer eine bestimmte Dateiaktivität auf seinen eigenen Websites ausgeführt hat.  <br/> |
-|SitesWithNonOwnerActivities  <br/> |Die Anzahl der für den Monat zusammengefassten aktiven Websites, bei denen andere Benutzer als der Websitebesitzer eine bestimmte Dateiaktivität auf Websites ausgeführt haben.  <br/> |
+|SitesWithOwnerActivities  <br/> |Die Anzahl aktiver Websites, bei denen der Websitebesitzer eine bestimmte Dateiaktivität auf seinen eigenen Websites ausgeführt hat. Sie können den Websitebesitzer aus dem PowerShell-Befehl **Get-sposite** abrufen. Dies ist die Person, die für die Website zuständig ist.   <br/> |
+|SitesWithNonOwnerActivities  <br/> |Die Anzahl der für den Monat zusammengefassten aktiven Websites, bei denen andere Benutzer als der Websitebesitzer eine bestimmte Dateiaktivität auf Websites ausgeführt haben. Sie können den Websitebesitzer aus dem PowerShell-Befehl **Get-sposite** abrufen. Dies ist die Person, die für die Website zuständig ist. <br/> |
 |ActivityTotalSites  <br/> |Die Anzahl der Websites, die im Zeitrahmen eine Aktivität aufgezeichnet haben. Eine Website, bei der zu Anfang des Zeitrahmens eine Aktivität aufgetreten ist und die gegen Ende des Zeitrahmens gelöscht wurde, wird dennoch für den Gesamtwert der aktiven Websites für diesen Zeitrahmen gezählt.  <br/> |
 |Timeframe  <br/> |Diese Spalte enthält den Datumswert. Als n:1-Beziehung für die Tabelle "Kalender" verwendet.  <br/> |
 |Content Date  <br/> |Wenn der Zeitrahmen den aktuellen Monat angibt, stellt dieser Wert das neueste Datum des aktuellen Monats dar, für das Daten verfügbar sind.  <br/> Wenn der Zeitrahmen den vorherigen Monat angibt, stellt dieser Wert das letzte Datum des Zeitrahmenmonats dar.  <br/> |

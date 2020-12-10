@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können häufig gestellte Fragen und Antworten zum Schutz vor Spam in Exchange Online Protection (EoP) anzeigen.
-ms.openlocfilehash: d2505eea572e512b306cf26c7a57d1dc1b705c0b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 21c70f1942703b8e5f3f4d96b136aff46afcc32b
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844464"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615432"
 ---
 # <a name="anti-spam-protection-faq"></a>Häufig gestellte Fragen zum Antispamschutz
 
@@ -43,7 +43,7 @@ Fragen und Antworten zum Schutz vor Spoofing finden Sie unter [Anti-Spoofing-Sch
 **Für eingehende Nachrichten:** Die Mehrzahl der Spam Daten werden über die Verbindungsfilterung gelöscht, die auf der IP-Adresse des Quell-e-Mail-Servers basiert. Anti-Spam-Richtlinien (auch bekannt als Spamfilter-oder Inhaltsfilter Richtlinien) überprüfen und Klassifizieren von Nachrichten als Spam, Massen-oder Phishing. Standardmäßig werden Nachrichten, die als Spam oder Massen klassifiziert werden, an den Junk-e-Mail-Ordner des Empfängers übermittelt, während Nachrichten, die als Phishing klassifiziert wurden, isoliert werden. Sie können die standardmäßige Anti-Spam-Richtlinie ändern (gilt für alle Empfänger), oder Sie können benutzerdefinierte Anti-Spam-Richtlinien mit strengeren Einstellungen für bestimmte Benutzergruppen erstellen (beispielsweise können Sie Spam in Quarantäne verlagern, die an Führungskräfte gesendet werden). Weitere Informationen finden Sie unter [configure Anti-Spam Policies](configure-your-spam-filter-policies.md) and [Recommended Anti-Spam Policy Settings](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
 
 > [!IMPORTANT]
-> In hybridbereitstellungen, bei denen EoP lokale Postfächer schützt, müssen Sie zwei Exchange-Nachrichtenfluss Regeln (auch bekannt als Transportregeln) in Ihrer lokalen Exchange-Organisation konfigurieren, um die EoP-Spamfilter Kopfzeilen zu ermitteln, die Nachrichten hinzugefügt werden. Ausführliche Informationen finden Sie unter [Konfigurieren eigenständiger EOP zur Zustellung von Spam in den Junk-E-Mail-Ordner in Hybridumgebungen](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+> In hybridbereitstellungen, bei denen EoP lokale Postfächer schützt, müssen Sie zwei Exchange-Nachrichtenfluss Regeln (auch bekannt als Transportregeln) in Ihrer lokalen Exchange-Organisation konfigurieren, um die EoP-Spamfilter Kopfzeilen zu ermitteln, die Nachrichten hinzugefügt werden. Ausführliche Informationen finden Sie unter [Konfigurieren eigenständiger EOP zum Verschieben von Spam in den Junk-E-Mail-Ordner in Hybridumgebungen](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
  **Für ausgehende Nachrichten:** Die Nachricht wird entweder über den risikoreichen [Zustellungs Pool](high-risk-delivery-pool-for-outbound-messages.md) weitergeleitet oder an den Absender in einem Unzustellbarkeitsbericht (auch als NDR-oder Bounce-Nachricht bezeichnet) zurückgegeben. Weitere Informationen zum ausgehenden Spam Schutz finden Sie unter [Outbound Spam Controls](outbound-spam-controls.md).
 
@@ -105,7 +105,7 @@ Sie können eine Benachrichtigung an eine angegebene E-Mail-Adresse senden, wenn
 
 Ja. Obwohl empfohlen wird, den MX-Eintrag auf Microsoft zu setzen, erkennen wir, dass es legitime geschäftliche Gründe gibt, Ihre e-Mails an einen anderen Ort als Microsoft weiterzuleiten.
 
-- **Eingehend** : Ändern Sie Ihre MX-Einträge so, dass Sie auf den Drittanbieter verweisen, und leiten Sie die Nachrichten dann zur weiteren Verarbeitung an EoP um. Weitere Informationen finden Sie unter [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+- **Eingehend**: Ändern Sie Ihre MX-Einträge so, dass Sie auf den Drittanbieter verweisen, und leiten Sie die Nachrichten dann zur weiteren Verarbeitung an EoP um. Weitere Informationen finden Sie unter [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
 - Ausgehend **: Konfigurieren** Sie das Smarthost-Routing von Microsoft 365 auf den Drittanbieter des Ziels.
 
@@ -124,7 +124,7 @@ Die unten aufgeführten Richtlinien beschreiben bewährte Methoden für das Send
 - **Die Quell-e-Mail-Domäne sollte in DNS aufgelöst werden.**
 
   Wenn der Absender beispielsweise User@Fabrikam ist, wird die Domäne Fabrikam in die IP-Adresse 192.0.43.10 aufgelöst.
-  
+
   Wenn eine sendende Domäne nicht über einen A-Eintrag und nicht über einen MX-Eintrag in DNS verfügt, leitet der Dienst die Nachricht stets durch den Pool für besonders riskante Zustellungen, unabhängig davon, ob es sich bei ihrem Inhalt um Spam handelt. Weitere Informationen zum Pool mit höherem Risiko für Zustellungen finden Sie unter [risikoreichen Zustellungs Pool für ausgehende Nachrichten](high-risk-delivery-pool-for-outbound-messages.md).
 
 - **Ausgehende e-Mail-eServer sollten einen Reverse-DNS-Eintrag (PTR) aufweisen.**
@@ -155,11 +155,11 @@ Die unten aufgeführten Richtlinien beschreiben bewährte Methoden für das Send
 
   Der Nachrichtentext sollte das Angebot, den Dienst oder das Produkt klar erkennen lassen. Wenn ein Absender zum Beispiel eine Massensendung vom Unternehmen Contoso aus versendet, sollten die Felder "Von" und "Betreff" der E-Mails etwa wie folgt festgelegt werden:
 
-  > From: marketing@contoso.com <br/> Betreff: Neuer, aktualisierter Katalog für die Weihnachtszeit!
+  > From: marketing@contoso.com <br> Betreff: Neuer, aktualisierter Katalog für die Weihnachtszeit!
 
   Das folgende Beispiel zeigt, wie Sie es nicht machen sollten, da die Angaben nicht aussagekräftig sind:
 
-  > From: user@hotmail.com <br/> Betreff: Kataloge
+  > From: user@hotmail.com <br> Betreff: Kataloge
 
 - **Wenn Sie eine Massensendung an zahlreiche Empfänger senden und die Nachricht ein Newsletterformat aufweist, sollte unten in der Nachricht mitgeteilt werden, wie der Newsletter abbestellt werden kann.**
 

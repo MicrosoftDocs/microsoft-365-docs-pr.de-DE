@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Informationen zum Steuern des Zugriffs in Microsoft 365-Gruppen, Teams und SharePoint.
-ms.openlocfilehash: 2a3a5a126a340a8ec1036eaebd22a0a0a81cf6c3
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: fb1bec219ef0d27c2a908f5f385185a1a70e01e1
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558222"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613466"
 ---
 # <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>Steuern des Zugriffs in Microsoft 365-Gruppen,-Teams und-SharePoint
 
@@ -158,6 +158,10 @@ Zusätzliche Ressourcen:
 - [Azure Active Directory Identity Governance](https://docs.microsoft.com/azure/active-directory/governance)
 
 ## <a name="related-topics"></a>Verwandte Themen
+
+[Planung der Collaboration-Steuerung Schritt für Schritt](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Erstellen eines Steuerungsplans für die Zusammenarbeit](collaboration-governance-first.md)
 
 [Sicherheit und Compliance in Microsoft Teams](https://docs.microsoft.com/microsoftteams/security-compliance-overview)
 

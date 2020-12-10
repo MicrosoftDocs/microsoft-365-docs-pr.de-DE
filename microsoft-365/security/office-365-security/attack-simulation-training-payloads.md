@@ -11,14 +11,14 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: In diesem Artikel erfahren Sie, wie Sie benutzerdefinierte Nutzlast für die Angriffs Simulations Schulung in Microsoft Defender für Office 365 erstellen.
-ms.openlocfilehash: ffb5397d9b39a35b4cb8bd0fdb3301cd156896e1
-ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
+ms.openlocfilehash: a8366e6cbf703ef1e1a14e216ada71200668cd14
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48944520"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616272"
 ---
-# <a name="create-a-custom-payload-for-attack-simulation-training"></a>Erstellen einer benutzerdefinierten Nutzlast für die Angriffs Simulations Schulung
+# <a name="create-a-custom-payload-for-attack-simulation-training"></a>Erstellen einer benutzerdefinierten Nutzlast für Angriffssimulationsschulungen
 
 Microsoft bietet einen robusten Nutz Last Katalog für verschiedene Social Engineering-Techniken, um mit Ihrem Angriffs Simulationstraining zu koppeln. Möglicherweise möchten Sie jedoch benutzerdefinierte Nutzlasten erstellen, die für Ihre Organisation besser verwendet werden. Im folgenden wird beschrieben, wie Sie eine Nutzlast in Angriffs Simulations Schulungen über Microsoft Defender für Office 365 erstellen.
 
@@ -60,7 +60,7 @@ Fügen Sie eine benutzerdefinierte Beschreibung hinzu, um den Indikator zu besch
 
 ## <a name="review-payload"></a>Überprüfen der Nutzlast
 
-Sie haben die Erstellung Ihrer Nutzlast abgeschlossen. Jetzt ist es an der Zeit, die Details zu überprüfen und eine Vorschau Ihrer Nutzlast anzuzeigen. In der Vorschau sind alle von Ihnen erstellten Indikatoren enthalten. Sie können die einzelnen Teile der Nutzlast in diesem Schritt bearbeiten. Sobald Sie zufrieden sind, **senden** Sie Ihre Nutzlast. 
+Sie haben die Erstellung Ihrer Nutzlast abgeschlossen. Jetzt ist es an der Zeit, die Details zu überprüfen und eine Vorschau Ihrer Nutzlast anzuzeigen. In der Vorschau sind alle von Ihnen erstellten Indikatoren enthalten. Sie können die einzelnen Teile der Nutzlast in diesem Schritt bearbeiten. Sobald Sie zufrieden sind, **senden** Sie Ihre Nutzlast.
 
 > [!IMPORTANT]
 > Die von Ihnen erstellten Nutzdaten haben **Mandanten** als Quelle festgelegt. Achten Sie beim Auswählen von Nutzdaten darauf, dass kein **Mandant** herausgefiltert ist.

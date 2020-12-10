@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Benutzer mit Vertraulichkeits Bezeichnungen in Office-Apps für Desktop, Mobile und das Internet arbeiten und welche apps Sensitivitäts Bezeichnungen unterstützen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 685228823c87eff975fabd2dd398c1b67be8eeef
-ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
+ms.openlocfilehash: 3a8d0181b7a17922f788605953fc9af3ca450d6d
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580738"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613619"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Verwenden von Vertraulichkeitsbezeichnungen in Office-Apps
 
@@ -104,7 +104,7 @@ Wenn beide Bedingungen erfüllt sind, Sie jedoch den integrierten Office-Labelin
 
 1. Navigieren Sie zu **Benutzerkonfiguration/Administrative Vorlagen/Microsoft Office 2016/Sicherheitseinstellungen**.
 
-2. Festlegen **verwenden Sie das Feature "Empfindlichkeit" in Office, um die Empfindlichkeits Bezeichnungen auf 0 anzuwenden und anzuzeigen** . **0** 
+2. Festlegen **verwenden Sie das Feature "Empfindlichkeit" in Office, um die Empfindlichkeits Bezeichnungen auf 0 anzuwenden und anzuzeigen** .  
  
 Stellen Sie diese Einstellung mithilfe von Gruppenrichtlinien oder mithilfe des [Office-Cloud-Richtlinien Diensts](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service)bereit. Die Einstellung wird beim Neustart von Office Apps wirksam.
 
@@ -112,7 +112,7 @@ Stellen Sie diese Einstellung mithilfe von Gruppenrichtlinien oder mithilfe des 
 
 Wenn Benutzer einen der Azure Information Protection-Clients installiert haben ([Unified Labeling Client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) oder [Classic Client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-client)), ist der integrierte Bezeichnungs Clientstandard mäßig in Ihren Office-Apps deaktiviert. 
 
-Um die integrierte Benennung anstelle des Azure Information Protection-Clients für Office-Apps zu verwenden, verwenden Sie die Anweisungen aus dem vorherigen Abschnitt, legen Sie jedoch die Gruppenrichtlinieneinstellung **mithilfe der Sensitivitäts Funktion in Office fest, um die Vertraulichkeits Bezeichnungen auf 1 anzuwenden und anzuzeigen** . **1** 
+Um die integrierte Benennung anstelle des Azure Information Protection-Clients für Office-Apps zu verwenden, verwenden Sie die Anweisungen aus dem vorherigen Abschnitt, legen Sie jedoch die Gruppenrichtlinieneinstellung **mithilfe der Sensitivitäts Funktion in Office fest, um die Vertraulichkeits Bezeichnungen auf 1 anzuwenden und anzuzeigen** .  
 
 Alternativ können Sie den Office-Add-in **Azure Information Protection** deaktivieren oder entfernen. Diese Methode eignet sich für einen einzelnen Computer und für Ad-hoc-Tests. Anweisungen finden Sie unter [anzeigen, verwalten und Installieren von Add-Ins in Office-Programmen](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d). 
 
@@ -141,7 +141,7 @@ Vertraulichkeits Bezeichnungen, die Sie für die Verschlüsselung konfigurieren,
 - Für ein Dokument: **Datei**  >  **Informationen**  >  **schützen** des  >  **Zugriffs auf Dokumente einschränken**
 - für eine e-Mail: auf der Registerkarte " **Optionen** " > **verschlüsseln** 
   
-Wenn Benutzer ein Dokument oder eine e-Mail anfänglich bezeichnen, können Sie Ihre Bezeichnungs Konfigurationseinstellungen immer mit ihren eigenen Verschlüsselungseinstellungen außer Kraft setzen. Zum Beispiel:
+Wenn Benutzer ein Dokument oder eine e-Mail anfänglich bezeichnen, können Sie Ihre Bezeichnungs Konfigurationseinstellungen immer mit ihren eigenen Verschlüsselungseinstellungen außer Kraft setzen. Beispiel:
 
 - Ein Benutzer wendet die **vertrauliche Bezeichnung alle Mitarbeiter** auf ein Dokument an, und diese Bezeichnung ist so konfiguriert, dass Verschlüsselungseinstellungen für alle Benutzer in der Organisation angewendet werden. Dieser Benutzer konfiguriert dann die IRM-Einstellungen manuell, um den Zugriff auf einen Benutzer außerhalb Ihrer Organisation einzuschränken. Das Endergebnis ist ein Dokument mit dem Namen " **vertraulich" alle Mitarbeiter** und verschlüsselt, aber Benutzer in Ihrer Organisation können Sie nicht wie erwartet öffnen.
 
@@ -151,7 +151,7 @@ Wenn Benutzer ein Dokument oder eine e-Mail anfänglich bezeichnen, können Sie 
 
 Wenn das Dokument oder die e-Mail-Adresse bereits beschriftet ist, kann ein Benutzer eine dieser Aktionen ausführen, wenn der Inhalt noch nicht verschlüsselt ist, oder wenn er den [Verwendungsrechten](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) Export oder den Vollzugriff besitzt. 
 
-Für eine einheitlichere Bezeichnungs Oberfläche mit aussagekräftiger Berichterstellung sollten Sie geeignete Bezeichnungen und Anleitungen für Benutzer bereitstellen, die nur Beschriftungen zum Schutz von Dokumenten anwenden. Zum Beispiel:
+Für eine einheitlichere Bezeichnungs Oberfläche mit aussagekräftiger Berichterstellung sollten Sie geeignete Bezeichnungen und Anleitungen für Benutzer bereitstellen, die nur Beschriftungen zum Schutz von Dokumenten anwenden. Beispiel:
 
 - Für Ausnahmefälle, in denen Benutzer eigene Berechtigungen zuweisen müssen, geben Sie Bezeichnungen an, mit denen [Benutzer ihre eigenen Berechtigungen zuweisen können](encryption-sensitivity-labels.md#let-users-assign-permissions). 
 
@@ -254,12 +254,12 @@ Wenn Sie eine Vertraulichkeits Bezeichnung für Inhalts Markierungen konfigurier
 
 | Variable | Beschreibung | Beispiel bei Anwendung der Bezeichnung |
 | -------- | ----------- | ------- |
-| `${Item.Label}` | Anzeigename der aktuellen Bezeichnung | **Allgemein**|
-| `${Item.Name}` | Name der aktuellen Datei oder e-Mail-Betreff | **Sales.docx** |
-| `${Item.Location}` | Aktueller Pfad und Dateiname des Dokuments oder der e-Mail-Betreff für eine e-Mail | **\\\Sales\2020\Q3\Report.docx**|
-| `${User.Name}` | Anzeigename des aktuellen Benutzers  | **Richard Simone** |
-| `${User.PrincipalName}` | Aktueller Benutzer Azure AD Benutzerprinzipalname (UPN) | **rsimone \@ contoso.com** |
-| `${Event.DateTime}` | Aktuelles Datum und Zeit für die lokale Zeitzone | **8/10/2020 1:30 Uhr** |
+| `${Item.Label}` | Bezeichnungsanzeige Name der angewendeten Bezeichnung| **Allgemein**|
+| `${Item.Name}` | Dateiname oder e-Mail-Betreff des Bezeichnungs Inhalts | **Sales.docx** |
+| `${Item.Location}` | Pfad und Dateiname des bezeichnenden Dokuments oder der e-Mail-Betreff für eine beschriftet-e-Mail-Nachricht | **\\\Sales\2020\Q3\Report.docx**|
+| `${User.Name}` | Anzeigename des Benutzers, der die Bezeichnung anwendet| **Richard Simone** |
+| `${User.PrincipalName}` | Azure AD Benutzerprinzipalname (UPN) des Benutzers, der die Bezeichnung anwendet | **rsimone \@ contoso.com** |
+| `${Event.DateTime}` | Datum und Uhrzeit des Bezeichnens des Inhalts in der lokalen Zeitzone des Benutzers, der die Bezeichnung anwendet | **8/10/2020 1:30 Uhr** |
 
 > [!NOTE]
 > Bei der Syntax für diese Variablen wird die Groß-/Kleinschreibung beachtet.
@@ -321,7 +321,7 @@ Beispiele:
     `${If.App.WP}This content is ${If.End}Confidential`
 
     In Word und PowerPoint wendet die Bezeichnung den Wasserzeichentext "dieser Inhalt ist vertraulich" an. In Excel wendet die Bezeichnung den Wasserzeichentext "vertraulich" an. In Outlook wendet die Bezeichnung keinen Wasserzeichentext an, da Wasserzeichen als visuelle Markierungen für Outlook nicht unterstützt werden.
->>>>>>> a51fef4b19dc23a23a161de3e8333dcd7527540b
+
 
 ## <a name="end-user-documentation"></a>Endbenutzerdokumentation
 

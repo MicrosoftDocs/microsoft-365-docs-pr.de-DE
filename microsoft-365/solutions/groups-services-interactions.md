@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Gruppen Dienst Interaktionen
-ms.openlocfilehash: 235a897314a784ba3bb1ac50fe8bdfe9986a70d3
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 6d5681b11cdbd837f784b6c8364cce23f964b167
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377629"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613226"
 ---
 # <a name="groups-services-interactions"></a>Gruppen Dienst Interaktionen
 
@@ -95,8 +95,8 @@ Die Einschränkungen bei der Gruppenerstellung sind zwischen apps und Diensten u
 |Planner|In **neuem Plan** wird erklärt, dass die Gruppenerstellung deaktiviert wurde und das Hinzufügen des Plans zu einer vorhandenen Gruppe angeboten wird.|
 |Projekt für das Internet und Roadmap|Im Menü **Gruppe erstellen** wird erklärt, dass die Gruppenerstellung eingeschränkt ist und eine vorhandene Gruppe verwendet werden soll.|
 |SharePoint|Weiterhin in der Lage, eine Teamwebsite zu erstellen, die nicht mit einer Gruppe verbunden ist.|
-|Stream|Die Option **Gruppieren** wird nicht unter dem **Menü Erstellen**angezeigt.|
-|Teams|Der Benutzer kann kein Team mit einer neuen Gruppe erstellen, aber trotzdem ein Team erstellen, das eine vorhandene Gruppe verwendet.<br><br>**Die Schaltfläche Team erstellen** wird durch **Team erstellen aus einer Gruppe**ersetzt.|
+|Stream|Die Option **Gruppieren** wird nicht unter dem **Menü Erstellen** angezeigt.|
+|Teams|Der Benutzer kann kein Team mit einer neuen Gruppe erstellen, aber trotzdem ein Team erstellen, das eine vorhandene Gruppe verwendet.<br><br>**Die Schaltfläche Team erstellen** wird durch **Team erstellen aus einer Gruppe** ersetzt.|
 |Yammer|**Die Option "Gruppe erstellen** " wird aus der Navigation der Hauptgruppen/Communitys entfernt.|
 
 ## <a name="services-interactions-with-groups"></a>Dienst Interaktionen mit Gruppen
@@ -639,4 +639,10 @@ Nein, die Gruppe "jammern" kann immer nur der Microsoft 365-Gruppe zugeordnet we
 **Löscht die Gruppe "jammern" die Microsoft 365-Gruppe?**
 
 Ja, durch das Löschen der Gruppe in "jammern" werden die zugehörigen Dienste und Inhalte von Microsoft Group und Group gelöscht.
+
+## <a name="related-topics"></a>Verwandte Themen
+
+[Planung der Collaboration-Steuerung Schritt für Schritt](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Erstellen eines Steuerungsplans für die Zusammenarbeit](collaboration-governance-first.md)
 

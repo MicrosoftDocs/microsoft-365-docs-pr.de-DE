@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 67835f4140179c69b5e0f2cd0287e656dd4c49ad
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: bd0b4efb1281d467a61e4aee792b507f0ca44181
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558550"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616560"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Erforderliche Arbeit für die Implementierung von Identitäts-und Gerätezugriffs Richtlinien
 
@@ -38,7 +38,7 @@ Vor dem Implementieren der empfohlenen Richtlinien für Identitäts-und Geräte 
 - Hybrid mit Pass-Through-Authentifizierung (PTA)
 - Verbund
 
-In der folgenden Tabelle sind die erforderlichen Features und deren Konfiguration aufgeführt, die für alle Identitäts Modelle gelten, sofern nicht anders angegeben. 
+In der folgenden Tabelle sind die erforderlichen Features und deren Konfiguration aufgeführt, die für alle Identitäts Modelle gelten, sofern nicht anders angegeben.
 
 |Konfiguration|Ausnahmen|
 |---|:---:|
@@ -76,14 +76,14 @@ Wir empfehlen auch, dass die organisationseigenen Geräte auf OEMs und Versionen
 
 ### <a name="recommended-email-clients"></a>Empfohlene E-Mail-Clients
 
-Die folgenden e-Mail-Clients unterstützen moderne Authentifizierung und bedingten Zugriff. 
+Die folgenden e-Mail-Clients unterstützen moderne Authentifizierung und bedingten Zugriff.
 
 |Plattform|Client|Version/Hinweise|
 |---|---|---|
 |**Windows**|Outlook|2019, 2016, 2013 <p> [Aktivieren der modernen Authentifizierung](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication) <p> [Erforderliche Updates](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|
 |**iOS**|Outlook für iOS|[Neueste Version](https://itunes.apple.com/us/app/microsoft-outlook-email-and-calendar/id951937596?mt=8)|
 |**Android**|Outlook für Android|[Neueste Version](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en)|
-|**MacOS**|Outlook|2019 und 2016|
+|**macOS**|Outlook|2019 und 2016|
 |**Linux**|Nicht unterstützt||
 |
 
@@ -97,7 +97,7 @@ Die folgenden Clients werden empfohlen, wenn eine Richtlinie für sichere Dokume
 |Windows 10|Unterstützt|Unterstützt|Nicht zutreffend|Nicht zutreffend|Unterstützt|
 |Android|Unterstützt|Unterstützt|Unterstützt|Unterstützt|N/V|
 |iOS|Unterstützt|Unterstützt|Unterstützt|Unterstützt|N/V|
-|MacOS|Unterstützt|Unterstützt|Nicht zutreffend|Nicht zutreffend|Nicht unterstützt|
+|macOS|Unterstützt|Unterstützt|Nicht zutreffend|Nicht zutreffend|Nicht unterstützt|
 |Linux|Nicht unterstützt|Nicht unterstützt|Nicht unterstützt|Nicht unterstützt|Nicht unterstützt|
 |
 
@@ -116,9 +116,9 @@ Für Editionen von Microsoft 365 oder Office 365, die keinen bedingten Zugriff u
 
 Hier sind einige zusätzliche Empfehlungen:
 
-- Verwenden Sie [Azure AD privilegierten Identitätsverwaltung](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started) , um die Anzahl der beständigen Administratorkonten zu reduzieren. 
-- [Verwenden Sie die privilegierte Zugriffsverwaltung](../../compliance/privileged-access-management-overview.md) , um Ihre Organisation vor Verstößen zu schützen, die vorhandene privilegierte Administratorkonten mit dem ständigen Zugriff auf vertrauliche Daten oder den Zugriff auf wichtige Konfigurationseinstellungen verwenden können. 
-- Erstellen und verwenden Sie separate Konten, denen [Microsoft 365-Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) *nur für die Verwaltung* zugewiesen sind. Administratoren sollten über ein eigenes Benutzerkonto für eine reguläre, nicht administrative Nutzung verfügen und nur dann ein Administratorkonto verwenden, wenn es erforderlich ist, um eine Aufgabe abzuschließen, die mit ihrer Rolle oder ihrer Aufgaben Funktion verknüpft ist. 
+- Verwenden Sie [Azure AD privilegierten Identitätsverwaltung](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started) , um die Anzahl der beständigen Administratorkonten zu reduzieren.
+- [Verwenden Sie die privilegierte Zugriffsverwaltung](../../compliance/privileged-access-management-overview.md) , um Ihre Organisation vor Verstößen zu schützen, die vorhandene privilegierte Administratorkonten mit dem ständigen Zugriff auf vertrauliche Daten oder den Zugriff auf wichtige Konfigurationseinstellungen verwenden können.
+- Erstellen und verwenden Sie separate Konten, denen [Microsoft 365-Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) *nur für die Verwaltung* zugewiesen sind. Administratoren sollten über ein eigenes Benutzerkonto für eine reguläre, nicht administrative Nutzung verfügen und nur dann ein Administratorkonto verwenden, wenn es erforderlich ist, um eine Aufgabe abzuschließen, die mit ihrer Rolle oder ihrer Aufgaben Funktion verknüpft ist.
 - Führen Sie [bewährte Methoden](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices) zum Sichern von privilegierten Konten in Azure AD aus.
 
 ## <a name="next-step"></a>Nächster Schritt

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren erfahren, wie Sie isolierte Nachrichten für alle Benutzer in Exchange Online Protection (EoP) anzeigen und verwalten können. Administratoren in Organisationen mit Microsoft Defender für Office 365 können auch unter Quarantäne gestellte Dateien in SharePoint Online, OneDrive für Unternehmen und Microsoft Teams verwalten.
-ms.openlocfilehash: fed05ee202e4352200a80516e0ec1b62c8421178
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 8f4ca5caef9bf244315db2271011126ad4d7976e
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357133"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616776"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Verwalten von isolierten Nachrichten und Dateien als Administrator in EOP
 
@@ -99,11 +99,11 @@ Sie können isolierte Nachrichten im Security & Compliance Center oder in PowerS
      - **Spam**
      - **Phishing mit hoher Zuverlässigkeit**
 
-   - **Richtlinientyp**: Filtern von Nachrichten nach Richtlinientyp:
+   - **Richtlinientyp**: Filtern von Nachrichten anhand des Richtlinientyps:
      - **Anti-Malware-Richtlinie**
      - **Richtlinie für sichere Anlagen**
-     - **Antiphishing-Richtlinie**
-     - **Richtlinie für gehostete Inhaltsfilter** (Antispamrichtlinie)
+     - **Anti-Phishing-Richtlinie**
+     - **Richtlinie für gehostete Inhaltsfilter** (Anti-Spam-Richtlinie)
      - **Transport Regel**
 
    - **E-Mail-Empfänger**: alle Benutzer oder nur an Sie gesendete Nachrichten. Endbenutzer können nur isolierte Nachrichten verwalten, die an Sie gesendet werden.
@@ -118,12 +118,12 @@ Sie können isolierte Nachrichten im Security & Compliance Center oder in PowerS
 
    - **E-Mail-Adresse des Absenders**: Die E-Mail-Adresse eines einzelnen Absenders.
 
-   - **Richtlinienname**: Verwenden Sie den vollständigen Namen der Nachricht. Bei der Suche wird nicht zwischen Groß- und Kleinschreibung unterschieden.
+   - **Richtlinienname**: Verwenden Sie den gesamten Richtliniennamen der Nachricht. Bei der Suche wird nicht zwischen Groß- und Kleinschreibung unterschieden.
 
    - **E-Mail-Adresse des Empfängers**: Die E-Mail-Adresse eines einzelnen Empfängers.
 
    - **Betreff**: Verwenden Sie den gesamten Betreff der Nachricht. Bei der Suche wird nicht zwischen Groß- und Kleinschreibung unterschieden.
-  
+
    - **Richtlinienname**: der Name der Richtlinie, die für die Quarantäne der Nachricht verantwortlich war.
 
    Nachdem Sie die Suchkriterien eingegeben haben, klicken Sie auf die ![Schaltfläche Aktualisieren](../../media/scc-quarantine-refresh.png) **Aktualisieren**, um die Ergebnisse zu filtern.
@@ -165,7 +165,7 @@ Nachdem Sie eine Nachricht ausgewählt haben, haben Sie mehrere Möglichkeiten, 
   - Wählen Sie eine der folgenden Optionen aus:
     - **Freigeben von Nachrichten für alle Empfänger**
     - **Freigeben von Nachrichten an bestimmte Empfänger**
-    - **Freigeben von Nachrichten an andere Personen**: Beachten Sie, dass das Freigeben von Schadsoftware-Nachrichten an andere Personen als ursprüngliche Empfänger nicht unterstützt wird. 
+    - **Freigeben von Nachrichten an andere Personen**: Beachten Sie, dass das Freigeben von Schadsoftware-Nachrichten an andere Personen als ursprüngliche Empfänger nicht unterstützt wird.
 
   Klicken Sie nach Abschluss des Vorgangs auf **Nachrichten freigeben**.
 

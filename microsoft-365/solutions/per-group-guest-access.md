@@ -1,5 +1,5 @@
 ---
-title: Verhindern, dass Gastbenutzer einer bestimmten Gruppe hinzugefügt werden
+title: Verhindern, dass Gäste einer bestimmten Gruppe hinzugefügt werden
 ms.reviewer: arvaradh
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,15 +14,15 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: Hier erfahren Sie, wie Sie verhindern, dass Gastbenutzer einer bestimmten Gruppe hinzugefügt werden.
-ms.openlocfilehash: 91c7560186fb0b954075e9ff9c997b34121951cd
-ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
+description: Hier erfahren Sie, wie Sie verhindern können, dass Gäste einer bestimmten Gruppe hinzugefügt werden.
+ms.openlocfilehash: 99e78932b29d25054922b56fcadb608a7dfca432
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48651350"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613056"
 ---
-# <a name="prevent-guest-users-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Verhindern, dass Gastbenutzer einem bestimmten Microsoft 365-Gruppen-oder Microsoft Teams-Team hinzugefügt werden
+# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Verhindern, dass Gäste einer bestimmten Microsoft 365-Gruppe oder einem Microsoft Teams-Team hinzugefügt werden
 
 Wenn Sie den Gastzugriff für die meisten Gruppen und Teams gewähren möchten, jedoch über einige, in denen Sie Gastzugriff verhindern möchten, können Sie den Gastzugriff für einzelne Gruppen und Teams blockieren. (Das Blockieren des Gastzugriffs auf ein Team erfolgt durch Blockieren des Gastzugriffs auf die zugeordnete Gruppe.) Dadurch wird verhindert, dass neue Gäste hinzugefügt werden, aber Gäste, die sich bereits in der Gruppe oder im Team befinden, werden nicht entfernt.
 
@@ -69,7 +69,7 @@ Die Überprüfung sieht wie folgt aus:
   
 ## <a name="allow-or-block-guest-access-based-on-their-domain"></a>Zulassen oder Blockieren des Gastzugriffs basierend auf der Domäne
 
-Sie können Gastbenutzer zulassen oder blockieren, die eine bestimmte Domäne verwenden. Nehmen wir z. B. an, dass Ihr Unternehmen (Contoso) über eine Partnerschaft mit einem anderen Unternehmen (Fabrikam) verfügt. Sie können Fabrikam zu Ihrer Zulassungsliste hinzufügen, damit Ihre Benutzer diese Gäste zu ihren Gruppen hinzufügen können.
+Sie können Gäste, die eine bestimmte Domäne verwenden, zulassen oder blockieren. Nehmen wir z. B. an, dass Ihr Unternehmen (Contoso) über eine Partnerschaft mit einem anderen Unternehmen (Fabrikam) verfügt. Sie können Fabrikam zu Ihrer Zulassungsliste hinzufügen, damit Ihre Benutzer diese Gäste zu ihren Gruppen hinzufügen können.
 
 Weitere Informationen finden Sie unter [Zulassen oder Blockieren von Einladungen für B2B-Benutzer von bestimmten Organisationen](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list).
 
@@ -77,7 +77,7 @@ Weitere Informationen finden Sie unter [Zulassen oder Blockieren von Einladungen
 
 Standardmäßig sind Gastbenutzer in der globalen Adressliste von Exchange nicht sichtbar. Führen Sie die nachstehenden Schritte aus, um einen Gast in der globalen Adressliste anzuzeigen.
 
-Suchen Sie die ObjectID des Gastbenutzers:
+Suchen Sie die ObjectID des Gasts, indem Sie Folgendes durchführen:
 
 ```PowerShell
 Get-AzureADUser -Filter "userType eq 'Guest'"
@@ -89,7 +89,11 @@ Führen Sie dann die folgenden Aktionen mit den entsprechenden Werten für Objek
 Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressList $true -GivenName 'Megan' -Surname 'Bowen' -DisplayName 'Megan Bowen' -TelephoneNumber '555-555-5555'
 ```
 
-## <a name="related-articles"></a>Verwandte Artikel
+## <a name="related-topics"></a>Verwandte Themen
+
+[Planung der Collaboration-Steuerung Schritt für Schritt](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Erstellen eines Steuerungsplans für die Zusammenarbeit](collaboration-governance-first.md)
 
 [Verwalten von Gruppenmitgliedschaften im Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/create-groups/add-or-remove-members-from-groups)
   

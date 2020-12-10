@@ -12,12 +12,13 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 85c85c086260932308da53fc511127e8c94fb6bb
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ROBOTS: NOINDEX
+ms.openlocfilehash: d7243c68ca52ac2c84d96e3db0fa60b9592cbac3
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521289"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613548"
 ---
 # <a name="microsoft-365-workload-solutions-and-scenarios"></a>Microsoft 365-Workload-Lösungen und-Szenarien
 

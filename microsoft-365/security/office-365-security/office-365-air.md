@@ -21,12 +21,12 @@ description: Erste Schritte mit automatisierten Ermittlungs-und Antwortfunktione
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 86414eaf0917a6cad7debc44e3f7aa604c55ae70
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 8b6ef712e2e90e6798f16c54bc82f99590dbea42
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357743"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614834"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Automatische Untersuchung und Antwort (Air) in Microsoft Defender für Office 365
 
@@ -124,7 +124,7 @@ Berechtigungen werden über bestimmte Rollen erteilt, wie Sie in der folgenden T
 |Aufgabe|Erforderliche Rolle (n)|
 |---|---|
 |Einrichten von Air-Features|Eine der folgenden Rollen: <ul><li>Globaler Administrator</li><li>Sicherheitsadministrator</li></ul> <p> Diese Rollen können in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)zugewiesen werden.|
-|Starten einer automatisierten Untersuchung <p> --- oder --- <p> Genehmigen oder ablehnen empfohlener Aktionen|Eine der folgenden Rollen, die in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)zugewiesen ist: <ul><li>Globaler Administrator</li><li>Sicherheitsadministrator</li><li>Sicherheitsleseberechtigter <br/>--- und ---</li><li>Suchen und löschen (diese Rolle wird nur im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)zugewiesen. Möglicherweise müssen Sie dort eine neue Rollengruppe erstellen und die Such-und Lösch Rolle dieser neuen Rollengruppe hinzufügen.</li></ul>|
+|Starten einer automatisierten Untersuchung <p> --- oder --- <p> Genehmigen oder ablehnen empfohlener Aktionen|Eine der folgenden Rollen, die in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)zugewiesen ist: <ul><li>Globaler Administrator</li><li>Sicherheitsadministrator</li><li>Sicherheitsleseberechtigter <br> --- und --- </li><li>Suchen und löschen (diese Rolle wird nur im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)zugewiesen. Möglicherweise müssen Sie dort eine neue Rollengruppe erstellen und die Such-und Lösch Rolle dieser neuen Rollengruppe hinzufügen.</li></ul>|
 |
 
 ## <a name="required-licenses"></a>Erforderliche Lizenzen

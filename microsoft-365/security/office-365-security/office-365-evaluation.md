@@ -17,19 +17,19 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 12b6499822f8ed97ace8468054f219361d925332
-ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
+ms.openlocfilehash: b5b095a1d75ead0f963a71d816e7d879b7cd3697
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49562990"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614798"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Auswerten von Microsoft Defender für Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
->[!IMPORTANT]
->Auswerten von Microsoft Defender für Office 365 bald in der öffentlichen Vorschau diese Vorschauversion wird ohne Vereinbarung zum Service Level bereitgestellt. Bestimmte Features werden möglicherweise nicht unterstützt oder verfügen möglicherweise über eingeschränkte Funktionen.
+> [!IMPORTANT]
+> Bewerten Sie Microsoft Defender für Office 365 bald in der öffentlichen Vorschau angezeigt werden. Diese Vorschauversion wird ohne Vereinbarung zum Service Level bereitgestellt. Bestimmte Features werden möglicherweise nicht unterstützt oder verfügen möglicherweise über eingeschränkte Funktionen.
 
 Durch die Durchführung einer umfassenden Sicherheitsprodukt Bewertung können Sie fundierte Entscheidungen zu Upgrades und Käufen treffen. Es hilft, die Funktionen des Sicherheitsprodukts auszuprobieren, um zu bewerten, wie das Sicherheits Betriebsteam bei seinen täglichen Aufgaben helfen kann.
 
@@ -73,7 +73,7 @@ Wenn Sie nicht über eine dieser Lizenzen verfügen, müssen Sie eine Testlizenz
 
 Um eine Testlizenz für Microsoft Defender für Office 365 zu erhalten, müssen Sie über die Rolle **"abrechnungsadministrator"** oder " **Globale Administratorrolle**" verfügen. Fordern Sie die Berechtigung von einem Benutzer an, der über die globale Administratorrolle verfügt. [Informationen zu Abonnements und Lizenzen](https://docs.microsoft.com/microsoft-365/commerce/licenses/subscriptions-and-licenses)
 
-Sobald Sie über die richtige Rolle verfügen, wird empfohlen, eine Testlizenz für Microsoft Defender für Office 365 (Plan 2) im Microsoft 365 Admin Center zu erhalten, indem Sie auf Billing > Services kaufen gehen. Die Testversion umfasst eine 30-tägige ﻿kostenlose Testversion für 25 Lizenzen. [Erhalten Sie eine Testversion für Microsoft Defender für Office 365 (Plan 2)](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA). 
+Sobald Sie über die richtige Rolle verfügen, wird empfohlen, eine Testlizenz für Microsoft Defender für Office 365 (Plan 2) im Microsoft 365 Admin Center zu erhalten, indem Sie auf Billing > Services kaufen gehen. Die Testversion umfasst eine 30-tägige ﻿kostenlose Testversion für 25 Lizenzen. [Erhalten Sie eine Testversion für Microsoft Defender für Office 365 (Plan 2)](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA).
 
 Sie haben ein 30-tägiges Fenster mit der Bewertung zur Überwachung und Berichterstattung über erweiterte Bedrohungen. Sie haben auch die Möglichkeit, ein kostenpflichtiges Abonnement zu erwerben, wenn Sie den vollständigen Verteidiger für Office 365 Funktionen verwenden möchten.
 
@@ -81,13 +81,14 @@ Sie haben ein 30-tägiges Fenster mit der Bewertung zur Überwachung und Bericht
 
 Exchange Online Rollen sind erforderlich, um Defender für Office 365 im Evaluierungsmodus einzurichten. Die folgenden Rollen sind erforderlich:
 
-|Aufgabe | Rolle |
-|-----| -----|
-| ﻿Kostenlose Testversion anfordern oder Microsoft Defender für Office 365 kaufen (Plan 2)| Rolle "abrechnungsadministrator" oder globale Administratorrolle|
-| Erstellen einer Evaluierungs Richtlinie| Rolle "Remote" und "akzeptierte Domänen"; Rolle "Sicherheitsadministrator"|
-| Bearbeiten der Evaluierungs Richtlinie | Rolle "Remote" und "akzeptierte Domänen"; Rolle "Sicherheitsadministrator" |
-| Löschen einer Evaluierungs Richtlinie | Rolle "Remote" und "akzeptierte Domänen"; Rolle "Sicherheitsadministrator" |
-|Anzeigen des Auswertungs Berichts | Rolle "Sicherheitsadministrator" oder "Sicherheits Leser"|
+|Aufgabe|Rolle|
+|---|---|
+|﻿Kostenlose Testversion anfordern oder Microsoft Defender für Office 365 kaufen (Plan 2)|Rolle "abrechnungsadministrator" oder globale Administratorrolle|
+|Erstellen einer Evaluierungs Richtlinie|Rolle "Remote" und "akzeptierte Domänen"; Rolle "Sicherheitsadministrator"|
+|Bearbeiten der Evaluierungs Richtlinie|Rolle "Remote" und "akzeptierte Domänen"; Rolle "Sicherheitsadministrator"|
+|Löschen einer Evaluierungs Richtlinie|Rolle "Remote" und "akzeptierte Domänen"; Rolle "Sicherheitsadministrator" |
+|Anzeigen des Auswertungs Berichts|Rolle "Sicherheitsadministrator" oder "Sicherheits Leser"|
+|
 
 ### <a name="enhanced-filtering"></a>Erweiterte Filterung
 
@@ -107,7 +108,7 @@ Sie müssen die entsprechenden Details vorbereiten, die Sie zum Einrichten der a
 
 Zu den unterstützten e-Mail-Routingszenarien zählen:
 
-- **Drittanbieterpartner und/oder lokaler Dienstanbieter**: der eingehende Connector, den Sie auswerten möchten, verwendet einen Drittanbieter und/oder Sie verwenden eine Lösung für die lokale e-Mail-Sicherheit.  
+- **Drittanbieterpartner und/oder lokaler Dienstanbieter**: der eingehende Connector, den Sie auswerten möchten, verwendet einen Drittanbieter und/oder Sie verwenden eine Lösung für die lokale e-Mail-Sicherheit.
 - **Nur Microsoft Exchange Online Schutz**: der Mandant, den Sie auswerten möchten, verwendet Office 365 für die e-Mail-Sicherheit und die e-Mail-Exchange (MX)-Eintrags Punkte auf Microsoft.
 
 ### <a name="email-security-gateway"></a>E-Mail-Sicherheitsgateway
@@ -154,7 +155,7 @@ Wenn Sie über ein vorhandenes Gateway verfügen, sollten Sie die Filterung mög
 
 ## <a name="evaluate-capabilities"></a>Auswerten von Funktionen
 
-Nachdem der Evaluierungsbericht generiert wurde, erfahren Sie, wie viele erweiterte Bedrohungs Links, erweiterte Bedrohungs Anlagen und potenzielle Identitätswechsel in den Arbeitsbereichen e-Mail und Zusammenarbeit in Ihrer Organisation identifiziert wurden.  
+Nachdem der Evaluierungsbericht generiert wurde, erfahren Sie, wie viele erweiterte Bedrohungs Links, erweiterte Bedrohungs Anlagen und potenzielle Identitätswechsel in den Arbeitsbereichen e-Mail und Zusammenarbeit in Ihrer Organisation identifiziert wurden.
 
 Nachdem die Testversion abgelaufen ist, können Sie den Zugriff auf den Bericht für 90 Tage fortsetzen. Es werden jedoch keine weiteren Informationen gesammelt. Wenn Sie Microsoft Defender für Office 365 nach Ablauf der Testversion weiterhin verwenden möchten, stellen Sie sicher, dass Sie [ein kostenpflichtiges Abonnement für Microsoft Defender für Office 365 (Plan 2) erwerben](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA).
 

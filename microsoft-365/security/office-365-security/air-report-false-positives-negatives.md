@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom:
 - autoir
-ms.openlocfilehash: 27edc44145e7b61768d9caf00a3f308e8561d708
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 0fe8891f5ea6af215791c5f4321a93667a9d58f0
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357399"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616176"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Vorgehensweise Melden von falsch positiven/negativen Ergebnissen in automatisierten Ermittlungs-und Antwortfunktionen
 
@@ -79,9 +79,9 @@ Mit Threat Explorer kann Ihr Sicherheits Betriebsteam eine von einer Aktion betr
 
 Im Wartungscenter können Sie Korrekturaktionen sehen, die ausgeführt wurden, und die Aktion möglicherweise rückgängig machen.
 
-1. Gehen Sie zu [https://protection.office.com](https://protection.office.com), und melden Sie sich an. Dadurch gelangen Sie zum Security & Compliance Center.
+1. Gehen Sie auf <https://protection.office.com>, und melden Sie sich an. Dadurch gelangen Sie zum Security & Compliance Center.
 
-2. Wechseln Sie zu **Threat Management**  >  **Investigations**.
+2. Wechseln Sie zu **Threat Management** \> **Investigations**.
 
 3. Wählen Sie in der Liste der Untersuchungen das Symbol **in neuem Fenster öffnen** neben der ID eines Elements aus.
 

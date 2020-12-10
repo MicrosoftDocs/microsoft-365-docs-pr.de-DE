@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: In diesem Artikel erfahren Sie, wie Sie Threat Explorer und den Bericht über Echt Zeit Erkennungen verwenden, um Bedrohungen im Security & Compliance Center zu untersuchen und auf diese zu reagieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 551425bf3e6b2c4fbb429dd6698b4f85e30d1ebe
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: b7300f8c87b100a38117b0cc4bee1bb95c9584c6
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561231"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615708"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Ansichten im Threat Explorer und Echt Zeit Erkennungen
 
@@ -56,7 +56,7 @@ Nachdem Sie eine Ansicht ausgewählt haben, können Sie Filter anwenden und Abfr
 
 ## <a name="email--malware"></a>E-Mail-> Schadsoftware
 
-Wenn Sie diesen Bericht anzeigen möchten, wählen Sie im Explorer (oder Echtzeiterkennung) **View** die Option  >  **e-Mail-**  >  **Schadsoftware** anzeigen aus. In dieser Ansicht werden Informationen zu e-Mail-Nachrichten angezeigt, die als mit Schadsoftware gekennzeichnet wurden.
+Wenn Sie diesen Bericht anzeigen möchten, wählen Sie im Explorer (oder Echtzeiterkennung)  die Option \> **e-Mail-** \> **Schadsoftware** anzeigen aus. In dieser Ansicht werden Informationen zu e-Mail-Nachrichten angezeigt, die als mit Schadsoftware gekennzeichnet wurden.
 
 ![Anzeigen von Daten zu e-Mails, die als Schadsoftware identifiziert wurden](../../media/ExplorerEmailMalwareMenu.png)
 
@@ -72,7 +72,7 @@ Zeigen Sie unter dem Diagramm weitere Details zu bestimmten Nachrichten an. Wenn
 
 ## <a name="email--phish"></a>E-Mail > Phishing
 
-Wenn Sie diesen Bericht anzeigen möchten, wählen Sie im Explorer (oder Echtzeiterkennung) **View** die Option  >  **e-Mail-**  >  **Phishing** anzeigen aus. Diese Ansicht zeigt e-Mail-Nachrichten, die als Phishing-Versuche identifiziert wurden.
+Wenn Sie diesen Bericht anzeigen möchten, wählen Sie im Explorer (oder Echtzeiterkennung)  die Option \> **e-Mail-** \> **Phishing** anzeigen aus. Diese Ansicht zeigt e-Mail-Nachrichten, die als Phishing-Versuche identifiziert wurden.
 
 ![Anzeigen von Daten zu e-Mails, die als Phishing-Versuche identifiziert wurden](../../media/ThreatExplorerEmailPhish.png)
 
@@ -92,13 +92,13 @@ Wenn Sie ein Element in der Liste auswählen, beispielsweise eine erkannte URL, 
 
 ## <a name="email--submissions"></a>E-Mail > Übermittlungen
 
-Um diesen Bericht anzuzeigen, wählen Sie im Explorer (oder Echtzeiterkennung) die Option **View**  >  **e-Mail-**  >  **Übermittlungen** anzeigen aus. In dieser Ansicht werden e-Mails angezeigt, die Benutzer als Junk-e-Mail, nicht als Junk oder als Phishing-e-Mails gemeldet haben.
+Um diesen Bericht anzuzeigen, wählen Sie im Explorer (oder Echtzeiterkennung) die Option  \> **e-Mail-** \> **Übermittlungen** anzeigen aus. In dieser Ansicht werden e-Mails angezeigt, die Benutzer als Junk-e-Mail, nicht als Junk oder als Phishing-e-Mails gemeldet haben.
 
 ![Von Benutzern gemeldete e-Mail-Nachrichten](../../media/ThreatExplorerEmailUserReportedViewOptions.png)
 
 Klicken Sie auf **Absender** , um die Liste der Anzeigeoptionen zu öffnen. Verwenden Sie diese Liste, um Informationen nach Absender, Empfänger, Berichtstyp anzuzeigen (die Bestimmung des Benutzers, dass es sich bei der e-Mail um Junk-e-Mails handelte, nicht um Junk-oder Phishing-Zwecke) und vieles mehr.
 
-Wenn Sie beispielsweise Informationen zu e-Mail-Nachrichten anzeigen möchten, die als Phishing-Versuche gemeldet wurden, klicken Sie auf **Absender**  >  **Berichtstyp**, wählen Sie **Phishing** aus, und klicken Sie dann auf die Schaltfläche Aktualisieren.
+Wenn Sie beispielsweise Informationen zu e-Mail-Nachrichten anzeigen möchten, die als Phishing-Versuche gemeldet wurden, klicken Sie auf **Absender** \> **Berichtstyp**, wählen Sie **Phishing** aus, und klicken Sie dann auf die Schaltfläche Aktualisieren.
 
 ![Für den Berichtstyp Filter ausgewählter Phishing-Typ](../../media/ThreatExplorerEmailUserReportedPhishSelected.png)
 
@@ -110,7 +110,7 @@ Wählen Sie ein Element in der Liste aus, um weitere Details anzuzeigen.
 
 ## <a name="email--all-email"></a>E-Mail > alle e-Mails
 
-Um diesen Bericht anzuzeigen, wählen Sie im Explorer **View** die Option  >  **e-Mail**  >  **alle e-Mails** anzeigen aus. Diese Ansichten zeigen eine Gesamtansicht der e-Mail-Aktivität an, einschließlich e-Mails, die aufgrund von Phishing oder Schadsoftware als bösartig eingestuft wurden, sowie alle nicht-böswilligen e-Mails (normale e-Mail, Spam und Massen-e-Mails).
+Um diesen Bericht anzuzeigen, wählen Sie im Explorer  die Option \> **e-Mail** \> **alle e-Mails** anzeigen aus. Diese Ansichten zeigen eine Gesamtansicht der e-Mail-Aktivität an, einschließlich e-Mails, die aufgrund von Phishing oder Schadsoftware als bösartig eingestuft wurden, sowie alle nicht-böswilligen e-Mails (normale e-Mail, Spam und Massen-e-Mails).
 
 > [!NOTE]
 > Wenn Sie eine Fehlermeldung erhalten, die zu **viele anzuzeigende Daten** liest, fügen Sie einen Filter hinzu, und verringern Sie ggf. den von Ihnen angezeigten Datumsbereich.
@@ -123,7 +123,7 @@ Zeigen Sie unter dem Diagramm weitere Details zu bestimmten e-Mail-Nachrichten a
 
 ## <a name="content--malware"></a>Inhalte > Schadsoftware
 
-Wenn Sie diesen Bericht anzeigen möchten, wählen Sie im Explorer (oder Echtzeiterkennung) **View** die Option  >  **Inhalts**  >  **Malware** anzeigen aus. In dieser Ansicht werden Dateien angezeigt, die von [Microsoft Defender für Office 365 in SharePoint Online, OneDrive für Unternehmen und Microsoft Teams](atp-for-spo-odb-and-teams.md)als böswillig identifiziert wurden.
+Wenn Sie diesen Bericht anzeigen möchten, wählen Sie im Explorer (oder Echtzeiterkennung)  die Option \> **Inhalts** \> **Malware** anzeigen aus. In dieser Ansicht werden Dateien angezeigt, die von [Microsoft Defender für Office 365 in SharePoint Online, OneDrive für Unternehmen und Microsoft Teams](atp-for-spo-odb-and-teams.md)als böswillig identifiziert wurden.
 
 Anzeigen von Informationen nach Malwarefamilie, Erkennungstechnologie (wie die Schadsoftware erkannt wurde) und Arbeitsauslastung (OneDrive, SharePoint oder Teams).
 

@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Informationen zum Erstellen Ihres Plans für die Zusammenarbeit-Steuerung
-ms.openlocfilehash: 2fb2db16df3c83347831f4ea3489835e5037bbec
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: c27ac401d06808d1a4337e9ec7ec0700bfba19ea
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568282"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613296"
 ---
 # <a name="create-your-collaboration-governance-plan"></a>Erstellen eines Steuerungsplans für die Zusammenarbeit
 
@@ -133,6 +133,8 @@ Letztlich hängt der Erfolg ihrer Steuerungs Planungsbemühungen davon ab, wie g
 - Können Sie ein Microsoft 365 Champions-Programm für Ihre Organisation erstellen? Darüber hinaus sollten Sie sich dem weltweiten [Microsoft 365 Champions-Programm](https://aka.ms/O365Champions) anschließen, um Ideen und Ansätze für Ihr eigenes Champions-Programm zu erhalten und sich mit Gleichgesinnten und Führungskräften in und um Microsoft zu verbinden.
 
 ## <a name="related-topics"></a>Verwandte Themen
+
+[Planung der Collaboration-Steuerung Schritt für Schritt](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
 [Steuerung im Microsoft Cloud Adoption Framework für Azure](https://docs.microsoft.com/azure/cloud-adoption-framework/govern)
 

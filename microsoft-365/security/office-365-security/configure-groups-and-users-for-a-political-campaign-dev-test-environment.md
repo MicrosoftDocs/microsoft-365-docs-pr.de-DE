@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 'Zusammenfassung: Informationen zum Erstellen von Office 365- und Enterprise Mobility + Security-Testabonnements (EMS) mit Benutzern und Gruppen für eine Entwicklungs-/Testumgebung für eine politische Kampagne.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 80454477bc55ab54ae7edf14ded5b4fa49fe1530
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 1fac15cc0b2a512745e0538ec689bd5f17555419
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203359"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614906"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Konfigurieren von Gruppen und Benutzern für eine politische Kampagne in einer Entwicklungs-/Testumgebung
 
@@ -68,7 +68,7 @@ In dieser Phase werden die Azure AD-Gruppen für Ihre Kampagne erstellt und konf
 
 Erstellen Sie zuerst eine Reihe von Gruppen für eine typische politische Kampagne mit dem Azure-Portal.
 
-1. Wechseln Sie auf einer neuen Registerkarte im Browser zum Azure-Portal unter [https://portal.azure.com](https://portal.azure.com). Falls erforderlich, melden Sie sich mit den Anmeldeinformationen des globalen Administratorkontos für Ihr Office 365 E5-Testabonnement an.
+1. Wechseln Sie auf einer neuen Registerkarte im Browser zum Azure-Portal unter <https://portal.azure.com>. Falls erforderlich, melden Sie sich mit den Anmeldeinformationen des globalen Administratorkontos für Ihr Office 365 E5-Testabonnement an.
 
 2. Klicken Sie im Azure-Portal auf **Azure Active Directory > Benutzer und Gruppen > Alle Gruppen**.
 
@@ -96,7 +96,7 @@ Erstellen Sie zuerst eine Reihe von Gruppen für eine typische politische Kampag
 
 5. Klicken Sie auf **Dynamische Abfrage hinzufügen**.
 
-6. Wählen Sie unter **Benutzer hinzufügen**die Option **Abteilung** aus.
+6. Wählen Sie unter **Benutzer hinzufügen** die Option **Abteilung** aus.
 
 7. Wählen Sie im nächsten Feld **Gleich** aus.
 

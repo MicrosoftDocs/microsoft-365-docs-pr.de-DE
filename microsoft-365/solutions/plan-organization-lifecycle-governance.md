@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Lean about Lifecycle Governance-Optionen für Tools für die Zusammenarbeit in Microsoft 365
-ms.openlocfilehash: 706f1aaecf22c4088d4539c208fef68320c5e710
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 4d779701d241fc7178ab759063be1b8cdf2e960c
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377187"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613020"
 ---
 # <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>Planen der Organisations-und Lebenszyklus-Steuerung für Microsoft 365-Gruppen und Microsoft Teams
 
@@ -74,3 +74,9 @@ Nachdem Sie Gruppen so festgelegt haben, dass Sie ablaufen:
 - Jede gelöschte Gruppe kann innerhalb von 30 Tagen von den Gruppenbesitzern oder dem Administrator wiederhergestellt werden.
 
 Ablaufrichtlinien sind eine gute Möglichkeit zum Begrenzen der Gruppen Zersplitterung, indem sichergestellt wird, dass nicht mehr verwendete Gruppen gelöscht werden. Wenn Sie eine Gruppen Ablaufrichtlinie erstellen möchten, finden Sie weitere Informationen unter [Microsoft 365 Group-Ablaufrichtlinie](microsoft-365-groups-expiration-policy.md).
+
+## <a name="related-topics"></a>Verwandte Themen
+
+[Planung der Collaboration-Steuerung Schritt für Schritt](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Erstellen eines Steuerungsplans für die Zusammenarbeit](collaboration-governance-first.md)

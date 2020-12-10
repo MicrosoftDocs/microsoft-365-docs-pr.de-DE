@@ -1,12 +1,13 @@
 ---
-title: Privileged Access Management
-f1.keywords:
-- NOCSH
+title: Informationen zur Verwaltung des privilegierten Zugriffs
+description: Dieser Artikel bietet eine Übersicht über die Verwaltung privilegierter Zugriffsrechte in Microsoft 365, einschließlich Antworten auf häufig gestellte Fragen (FAQs).
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: overview
+f1.keywords:
+- NOCSH
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -19,16 +20,14 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
-ms.assetid: ''
-description: Dieser Artikel bietet eine Übersicht über die Verwaltung privilegierter Zugriffsrechte in Microsoft 365, einschließlich Antworten auf häufig gestellte Fragen (FAQs).
-ms.openlocfilehash: a1bcf1fbe767b4657be8a8ebcc8bf7b101c498d8
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: dc7c6807e8c89b4146784e5be7f57472777a4c84
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341233"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613329"
 ---
-# <a name="privileged-access-management"></a>Privileged Access Management
+# <a name="learn-about-privileged-access-management"></a>Informationen zur Verwaltung des privilegierten Zugriffs
 
 Die Verwaltung des privilegierten Zugriffs ermöglicht eine präzise steuerbare Zugriffskontrolle über privilegierte Administratoraufgaben in Office 365. Dies kann Ihre Organisation vor Angriffen schützen, bei denen vorhandene privilegierte Administratorkonten mit kontinuierlichem Zugang auf vertrauliche Daten oder kritische Konfigurationseinstellungen verwendet werden. Für die privilegierte Zugriffsverwaltung müssen Benutzer Just-in-Time-Zugriff anfordern, um erhöhte und privilegierte Aufgaben über einen umfangreichen und zeitgebundenen Genehmigungsworkflow abzuschließen. Diese Konfiguration ermöglicht Benutzern einen einfacheren Zugriff, um die jeweilige Aufgabe auszuführen, ohne dass vertrauliche Daten oder wichtige Konfigurationseinstellungen gefährdet werden. Durch die Aktivierung der privilegierten Zugriffsverwaltung in Microsoft 365 kann Ihre Organisation mit NULL stehenden rechten arbeiten und eine Verteidigungsstufe gegenständige administrative Zugriffs Sicherheitsrisiken bieten.
 

@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können erfahren, wie Sie mithilfe von Attack Simulator simulierte Phishing-und Kennwortangriffe in Ihren Microsoft 365 E5 oder Microsoft Defender für Office 365 Plan 2-Organisationen ausführen.
-ms.openlocfilehash: 0698d5d97dcedec05e76728379971fad2ab669c6
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: b1c2ad265c4812f67aee66f0f59664480b4db229
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988564"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615204"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Angriffs Simulator in Microsoft Defender für Office 365
 
@@ -59,7 +59,7 @@ Wenn Ihre Organisation Microsoft Defender für Office 365 Plan 2, einschließlic
 
 In Attack Simulator stehen zwei verschiedene Arten von Speer-Phishing-Kampagnen zur Verfügung:
 
-- **Spear Phishing (Credentials Harvest)** : der Angriff versucht, die Empfänger davon zu überzeugen, auf eine URL in der Nachricht zu klicken. Wenn Sie auf den Link klicken, werden Sie aufgefordert, Ihre Anmeldeinformationen einzugeben. Wenn dies der Fall ist, werden Sie an einen der folgenden Speicherorte geleitet:
+- **Spear Phishing (Credentials Harvest)**: der Angriff versucht, die Empfänger davon zu überzeugen, auf eine URL in der Nachricht zu klicken. Wenn Sie auf den Link klicken, werden Sie aufgefordert, Ihre Anmeldeinformationen einzugeben. Wenn dies der Fall ist, werden Sie an einen der folgenden Speicherorte geleitet:
 
   - Eine Standardseite, die erklärt, dass dies ein nur ein Test war, und gibt Tipps zum Erkennen von Phishing-Nachrichten.
 
@@ -67,7 +67,7 @@ In Attack Simulator stehen zwei verschiedene Arten von Speer-Phishing-Kampagnen 
 
   - Eine benutzerdefinierte Seite (URL), die Sie angeben.
 
-- **Spear-Phishing (Attachment)** : der Angriff versucht, die Empfänger davon zu überzeugen, eine DOCX-oder PDF-Anlage in der Nachricht zu öffnen. Die Anlage enthält denselben Inhalt aus dem standardmäßigen Phishing-Link, aber der erste Satz beginnt mit " \<Display Name\> , diese Nachricht wird als kürzlich geöffnete e-Mail-Nachricht angezeigt...".
+- **Spear-Phishing (Attachment)**: der Angriff versucht, die Empfänger davon zu überzeugen, eine DOCX-oder PDF-Anlage in der Nachricht zu öffnen. Die Anlage enthält denselben Inhalt aus dem standardmäßigen Phishing-Link, aber der erste Satz beginnt mit " \<Display Name\> , diese Nachricht wird als kürzlich geöffnete e-Mail-Nachricht angezeigt...".
 
 > [!NOTE]
 > Derzeit laufen Speer-Phishing-Kampagnen in Attack Simulator nicht ab.
@@ -76,11 +76,11 @@ In Attack Simulator stehen zwei verschiedene Arten von Speer-Phishing-Kampagnen 
 
 Ein wichtiger Bestandteil jeder Speer-Phishing-Kampagne ist das Aussehen und Verhalten der e-Mail-Nachricht, die an die Zielempfänger gesendet wird. Sie haben folgende Möglichkeiten, um die e-Mail-Nachricht zu erstellen und zu konfigurieren:
 
-- **Verwenden Sie eine integrierte e-Mail-Vorlage** : zwei integrierte Vorlagen stehen zur Verfügung: **Preis Giveaway** -und **Gehaltslisten Update**. Sie können einige, alle oder keine der e-Mail-Eigenschaften von der Vorlage anpassen, wenn Sie die Kampagne erstellen und starten.
+- **Verwenden Sie eine integrierte e-Mail-Vorlage**: zwei integrierte Vorlagen stehen zur Verfügung: **Preis Giveaway** -und **Gehaltslisten Update**. Sie können einige, alle oder keine der e-Mail-Eigenschaften von der Vorlage anpassen, wenn Sie die Kampagne erstellen und starten.
 
-- **Erstellen einer wiederverwendbaren e-Mail-Vorlage** : Nachdem Sie die e-Mail-Vorlage erstellt und gespeichert haben, können Sie Sie in künftigen Spear-Phishing-Kampagnen erneut verwenden. Sie können einige, alle oder keine der e-Mail-Eigenschaften von der Vorlage anpassen, wenn Sie die Kampagne erstellen und starten.
+- **Erstellen einer wiederverwendbaren e-Mail-Vorlage**: Nachdem Sie die e-Mail-Vorlage erstellt und gespeichert haben, können Sie Sie in künftigen Spear-Phishing-Kampagnen erneut verwenden. Sie können einige, alle oder keine der e-Mail-Eigenschaften von der Vorlage anpassen, wenn Sie die Kampagne erstellen und starten.
 
-- **Erstellen Sie die e-Mail-Nachricht im Assistenten** : Sie können die e-Mail-Nachricht direkt im Assistenten erstellen, während Sie die Spear-Phishing-Kampagne erstellen und starten.
+- **Erstellen Sie die e-Mail-Nachricht im Assistenten**: Sie können die e-Mail-Nachricht direkt im Assistenten erstellen, während Sie die Spear-Phishing-Kampagne erstellen und starten.
 
 #### <a name="step-1-optional-create-a-custom-email-template"></a>Schritt 1 (optional): Erstellen einer benutzerdefinierten e-Mail-Vorlage
 
@@ -98,11 +98,11 @@ Wenn Sie eine der integrierten Vorlagen verwenden oder die e-Mail-Nachricht dire
 
 5. Konfigurieren Sie im Schritt **e-Mail-Details konfigurieren** die folgenden Einstellungen:
 
-   - **From (Name)** : der Anzeige Name, der für den Absender der Nachricht verwendet wird.
+   - **From (Name)**: der Anzeige Name, der für den Absender der Nachricht verwendet wird.
 
-   - **Von (e-Mail)** : die e-Mail-Adresse des Absenders.
+   - **Von (e-Mail)**: die e-Mail-Adresse des Absenders.
 
-   - **URL des Phishing-Anmeldeservers** : Klicken Sie auf die Dropdownliste, und wählen Sie eine der verfügbaren URLs aus der Liste aus. Dies ist die URL, auf die Benutzer klicken sollen. Sie können wie folgt vorgehen:
+   - **URL des Phishing-Anmeldeservers**: Klicken Sie auf die Dropdownliste, und wählen Sie eine der verfügbaren URLs aus der Liste aus. Dies ist die URL, auf die Benutzer klicken sollen. Sie können wie folgt vorgehen:
 
      - <http://portal.docdeliveryapp.com>
      - <http://portal.docdeliveryapp.net>
@@ -123,11 +123,11 @@ Wenn Sie eine der integrierten Vorlagen verwenden oder die e-Mail-Nachricht dire
      >
      > - Ein URL-Reputations Dienst identifiziert möglicherweise eine oder mehrere dieser URLs als unsicher. Überprüfen Sie die Verfügbarkeit der URL in Ihren unterstützten Webbrowsern, bevor Sie die URL in einer Phishing-Kampagne verwenden.
 
-   - **Benutzerdefinierte Startseiten-URL** : Geben Sie eine optionale Startseite ein, auf der Benutzer angezeigt werden, wenn Sie auf den Link Phishing klicken und die Anmeldeinformationen eingeben. Dieser Link ersetzt die standardmäßige Ziel Seite. Wenn Sie beispielsweise ein internes Bewusstseinstraining haben, können Sie diese URL hier angeben.
+   - **Benutzerdefinierte Startseiten-URL**: Geben Sie eine optionale Startseite ein, auf der Benutzer angezeigt werden, wenn Sie auf den Link Phishing klicken und die Anmeldeinformationen eingeben. Dieser Link ersetzt die standardmäßige Ziel Seite. Wenn Sie beispielsweise ein internes Bewusstseinstraining haben, können Sie diese URL hier angeben.
 
-   - **Kategorie** : Derzeit wird diese Einstellung nicht verwendet (alles, was Sie eingeben, wird ignoriert).
+   - **Kategorie**: Derzeit wird diese Einstellung nicht verwendet (alles, was Sie eingeben, wird ignoriert).
 
-   - **Subject** : das **Subject** -Feld der e-Mail-Nachricht.
+   - **Subject**: das **Subject** -Feld der e-Mail-Nachricht.
 
    Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
 
@@ -155,7 +155,7 @@ Wenn Sie eine der integrierten Vorlagen verwenden oder die e-Mail-Nachricht dire
 
 3. Der Assistent zum **Konfigurieren von Phishing-Angriffen** wird in einem neuen Flyout gestartet. Führen Sie im **Start** Schritt einen der folgenden Schritte aus:
 
-   - Geben Sie im Feld **Name** einen eindeutigen Anzeigenamen für die Kampagne ein. Klicken Sie nicht auf **Vorlage verwenden** , da Sie die e-Mail-Nachricht später im Assistenten erstellen.
+   - Geben Sie im Feld **Name** einen eindeutigen Anzeigenamen für die Kampagne ein. Klicken Sie nicht auf **Vorlage verwenden**, da Sie die e-Mail-Nachricht später im Assistenten erstellen.
 
    - Klicken Sie auf **Vorlage verwenden** , und wählen Sie eine integrierte oder benutzerdefinierte e-Mail-Vorlage aus. Nachdem Sie die Vorlage ausgewählt haben, wird das Feld **Name** automatisch basierend auf der Vorlage ausgefüllt, aber Sie können den Namen ändern.
 
@@ -175,11 +175,11 @@ Wenn Sie eine der integrierten Vorlagen verwenden oder die e-Mail-Nachricht dire
 
    Wenn Sie im **Start** Schritt eine Vorlage ausgewählt haben, sind die meisten dieser Werte bereits konfiguriert, aber Sie können Sie ändern.
 
-   - **From (Name)** : der Anzeige Name, der für den Absender der Nachricht verwendet wird.
+   - **From (Name)**: der Anzeige Name, der für den Absender der Nachricht verwendet wird.
 
-   - **Von (e-Mail)** : die e-Mail-Adresse des Absenders. Sie können eine reale oder gefälschte e-Mail-Adresse aus der e-Mail-Domäne Ihrer Organisation eingeben, oder Sie können eine reale oder gefälschte externe e-Mail-Adresse eingeben. Eine gültige Absender-e-Mail-Adresse aus Ihrer Organisation wird tatsächlich im e-Mail-Client des Empfängers aufgelöst.
+   - **Von (e-Mail)**: die e-Mail-Adresse des Absenders. Sie können eine reale oder gefälschte e-Mail-Adresse aus der e-Mail-Domäne Ihrer Organisation eingeben, oder Sie können eine reale oder gefälschte externe e-Mail-Adresse eingeben. Eine gültige Absender-e-Mail-Adresse aus Ihrer Organisation wird tatsächlich im e-Mail-Client des Empfängers aufgelöst.
 
-   - **URL des Phishing-Anmeldeservers** : Klicken Sie auf die Dropdownliste, und wählen Sie eine der verfügbaren URLs aus der Liste aus. Dies ist die URL, auf die Benutzer klicken sollen. Sie können wie folgt vorgehen:
+   - **URL des Phishing-Anmeldeservers**: Klicken Sie auf die Dropdownliste, und wählen Sie eine der verfügbaren URLs aus der Liste aus. Dies ist die URL, auf die Benutzer klicken sollen. Sie können wie folgt vorgehen:
 
      - <http://portal.docdeliveryapp.com>
      - <http://portal.docdeliveryapp.net>
@@ -202,13 +202,13 @@ Wenn Sie eine der integrierten Vorlagen verwenden oder die e-Mail-Nachricht dire
      >
      > - Sie müssen eine URL auswählen. Bei Kampagnen mit **Spear-Phishing (Attachment)** können Sie den Link aus dem Textkörper der Nachricht im nächsten Schritt entfernen (andernfalls enthält die Nachricht sowohl einen Link als **auch** eine Anlage).
 
-   - **Anlagentyp** : Diese Einstellung ist nur in Kampagnen für **Spear-Phishing (Attachment)** verfügbar. Klicken Sie auf die Dropdownliste, und wählen Sie aus **. DOCX** oder **. PDF** aus der Liste.
+   - **Anlagentyp**: Diese Einstellung ist nur in Kampagnen für **Spear-Phishing (Attachment)** verfügbar. Klicken Sie auf die Dropdownliste, und wählen Sie aus **. DOCX** oder **. PDF** aus der Liste.
 
-   - **Name der Anlage** : Diese Einstellung ist nur in Kampagnen für **Spear-Phishing (Attachment)** verfügbar. Geben Sie einen Dateinamen für die Datei. docx oder. PDF ein.
+   - **Name der Anlage**: Diese Einstellung ist nur in Kampagnen für **Spear-Phishing (Attachment)** verfügbar. Geben Sie einen Dateinamen für die Datei. docx oder. PDF ein.
 
-   - **Benutzerdefinierte Startseiten-URL** : Geben Sie eine optionale Startseite ein, auf der Benutzer angezeigt werden, wenn Sie auf den Link Phishing klicken und die Anmeldeinformationen eingeben. Dieser Link ersetzt die standardmäßige Ziel Seite. Wenn Sie beispielsweise ein internes Bewusstseinstraining haben, können Sie diese URL hier angeben.
+   - **Benutzerdefinierte Startseiten-URL**: Geben Sie eine optionale Startseite ein, auf der Benutzer angezeigt werden, wenn Sie auf den Link Phishing klicken und die Anmeldeinformationen eingeben. Dieser Link ersetzt die standardmäßige Ziel Seite. Wenn Sie beispielsweise ein internes Bewusstseinstraining haben, können Sie diese URL hier angeben.
 
-   - **Subject** : das **Subject** -Feld der e-Mail-Nachricht.
+   - **Subject**: das **Subject** -Feld der e-Mail-Nachricht.
 
    Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
 
@@ -234,11 +234,11 @@ Ein *Kennwortangriff* versucht, Kennwörter für Benutzerkonten in einer Organis
 
 In Attack Simulator stehen zwei verschiedene Arten von Kenn Wort Angriffs Kampagnen zur Verfügung, um die Komplexität der Kennwörter Ihrer Benutzer zu testen:
 
-- **Brute-Force-Kennwort (Wörterbuchangriff)** : bei einem *Brute-Force* -oder *Wörterbuch* Angriff wird eine große Wörterbuchdatei mit Kennwörtern für ein Benutzerkonto verwendet, wobei die Hoffnung besteht, dass einer von Ihnen funktioniert (viele Kennwörter für ein Konto). Falsche Kenn Wort Sperren helfen, Brute-Force-Kennwortangriffe zu verhindern.
+- **Brute-Force-Kennwort (Wörterbuchangriff)**: bei einem *Brute-Force* -oder *Wörterbuch* Angriff wird eine große Wörterbuchdatei mit Kennwörtern für ein Benutzerkonto verwendet, wobei die Hoffnung besteht, dass einer von Ihnen funktioniert (viele Kennwörter für ein Konto). Falsche Kenn Wort Sperren helfen, Brute-Force-Kennwortangriffe zu verhindern.
 
   Für den Wörterbuchangriff können Sie ein oder mehrere Kennwörter angeben, die Sie ausprobieren möchten (manuell eingegeben oder in eine hochgeladene Datei), und Sie können einen oder mehrere Benutzer angeben.
 
-- **Kenn Wort Sprüh Angriff** : bei einem *Kenn Wort Sprüh* Angriff wird dasselbe sorgfältig überprüfte Kennwort für eine Liste von Benutzerkonten verwendet (ein Kennwort für viele Konten). Kenn Wort Sprüh Angriffe sind schwerer zu erkennen als Brute-Force-Kennwortangriffe (die Erfolgswahrscheinlichkeit steigt, wenn ein Angreifer ein Kennwort in Dutzenden oder Hunderten von Konten versucht, ohne dass die falsche Kenn Wort Sperrung des Benutzers ausgelöst wird).
+- **Kenn Wort Sprüh Angriff**: bei einem *Kenn Wort Sprüh* Angriff wird dasselbe sorgfältig überprüfte Kennwort für eine Liste von Benutzerkonten verwendet (ein Kennwort für viele Konten). Kenn Wort Sprüh Angriffe sind schwerer zu erkennen als Brute-Force-Kennwortangriffe (die Erfolgswahrscheinlichkeit steigt, wenn ein Angreifer ein Kennwort in Dutzenden oder Hunderten von Konten versucht, ohne dass die falsche Kenn Wort Sperrung des Benutzers ausgelöst wird).
 
   Für den Kenn Wort Sprüh Angriff können Sie nur ein Kennwort angeben, das Sie ausprobieren möchten, und Sie können einen oder mehrere Benutzer angeben.
 
@@ -267,13 +267,13 @@ In Attack Simulator stehen zwei verschiedene Arten von Kenn Wort Angriffs Kampag
 
 5. Wählen Sie im Schritt **Angriffs Einstellungen auswählen** aus, welche Aktionen basierend auf dem Kampagnentyp vorgenommen werden sollen:
 
-   - **Brute-Force-Kennwort (Wörterbuchangriff)** : führen Sie einen der folgenden Schritte aus:
+   - **Brute-Force-Kennwort (Wörterbuchangriff)**: führen Sie einen der folgenden Schritte aus:
 
-     - **Manuelles Eingeben von Kennwörtern** : Geben Sie in das Feld **EINGABETASTE drücken, um ein Kennwort hinzuzufügen** ein Kennwort ein, und drücken Sie dann die EINGABETASTE. Wiederholen Sie diesen Schritt so oft wie nötig.
+     - **Manuelles Eingeben von Kennwörtern**: Geben Sie in das Feld **EINGABETASTE drücken, um ein Kennwort hinzuzufügen** ein Kennwort ein, und drücken Sie dann die EINGABETASTE. Wiederholen Sie diesen Schritt so oft wie nötig.
 
-     - **Hochladen von Kennwörtern aus einer Wörterbuchdatei** : Klicken Sie auf **hochladen** , um eine vorhandene Textdatei zu importieren, die in jeder Zeile ein Kennwort enthält, und eine leere letzte Zeile. Die Textdatei muss mindestens 10 MB groß sein und darf nicht mehr als 30000 Kennwörter enthalten.
+     - **Hochladen von Kennwörtern aus einer Wörterbuchdatei**: Klicken Sie auf **hochladen** , um eine vorhandene Textdatei zu importieren, die in jeder Zeile ein Kennwort enthält, und eine leere letzte Zeile. Die Textdatei muss mindestens 10 MB groß sein und darf nicht mehr als 30000 Kennwörter enthalten.
 
-   - **Kenn Wort Sprüh Angriff** : Geben Sie in **den zu verwendenden Kennwörtern im Feld Angriff** ein Kennwort ein.
+   - **Kenn Wort Sprüh Angriff**: Geben Sie in **den zu verwendenden Kennwörtern im Feld Angriff** ein Kennwort ein.
 
    Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
 
@@ -291,7 +291,7 @@ Wenn die Kampagne abgeschlossen ist, wird der Status in **Angriff abgeschlossen*
 
 - Klicken Sie auf der Seite Haupt **Angriffe simulieren** auf **Angriffs Details** im Abschnitt für den Typ des Angriffs. Wählen Sie auf der Seite **Angriffs Details** , die geöffnet wird, die Kampagne im Abschnitt **Angriffs Verlauf** aus.
 
-Mit einer der vorherigen Aktionen gelangen Sie zu einer Seite mit dem Namen " **Angriffs Details** ". Die Informationen, die auf dieser Seite für jede Art von Kampagne zur Verfügung stehen, werden in den folgenden Abschnitten beschrieben.
+Mit einer der vorherigen Aktionen gelangen Sie zu einer Seite mit dem Namen " **Angriffs Details**". Die Informationen, die auf dieser Seite für jede Art von Kampagne zur Verfügung stehen, werden in den folgenden Abschnitten beschrieben.
 
 ### <a name="spear-phishing-credentials-harvest-campaign-results"></a>Kampagnenergebnisse für Spear-Phishing (Sammeln von Anmeldeinformationen)
 
@@ -301,25 +301,25 @@ Die folgenden Informationen sind auf der Seite mit den **Angriffs Details** für
 
 - **Zielgruppe der Gesamtbenutzer**
 
-- **Erfolgreiche Versuche** : die Anzahl der Benutzer, die auf den Link geklickt **und** Ihre Anmeldeinformationen eingegeben haben ( *beliebiger* Benutzername und Kennwortwert).
+- **Erfolgreiche Versuche**: die Anzahl der Benutzer, die auf den Link geklickt **und** Ihre Anmeldeinformationen eingegeben haben (*beliebiger* Benutzername und Kennwortwert).
 
-- **Gesamterfolgs Rate** : ein Prozentsatz, der von **erfolgreichen versuchen** berechnet wird  /  . **Gesamtzahl der Benutzer** , die gezielt sind.
+- **Gesamterfolgs Rate**: ein Prozentsatz, der von **erfolgreichen versuchen** berechnet wird  /  .**Gesamtzahl der Benutzer**, die gezielt sind.
 
-- **Schnellster Mausklick** : wie lange es dauerte, bis der erste Benutzer auf den Link klickt, nachdem Sie die Kampagne gestartet haben.
+- **Schnellster Mausklick**: wie lange es dauerte, bis der erste Benutzer auf den Link klickt, nachdem Sie die Kampagne gestartet haben.
 
-- **Durchschnittlicher Mausklick** : die Summe, wie lange es dauerte, bis jeder auf den Link geklickt hat, dividiert durch die Anzahl der Benutzer, die auf den Link geklickt haben.
+- **Durchschnittlicher Mausklick**: die Summe, wie lange es dauerte, bis jeder auf den Link geklickt hat, dividiert durch die Anzahl der Benutzer, die auf den Link geklickt haben.
 
-- **Klicken Sie auf Erfolgs Rate** : einen Prozentsatz, der von berechnet wird (Anzahl der Benutzer, die auf den Link geklickt haben)/Gesamtanzahl der Benutzer, die als **Ziel** ausgewählt wurden
+- **Klicken Sie auf Erfolgs Rate**: einen Prozentsatz, der von berechnet wird (Anzahl der Benutzer, die auf den Link geklickt haben)/Gesamtanzahl der Benutzer, die als **Ziel** ausgewählt wurden
 
-- **Schnellste Anmeldeinformationen** : wie lange dauerte es, bis der erste Benutzer seine Anmeldeinformationen eingegeben hat, nachdem die Kampagne gestartet wurde.
+- **Schnellste Anmeldeinformationen**: wie lange dauerte es, bis der erste Benutzer seine Anmeldeinformationen eingegeben hat, nachdem die Kampagne gestartet wurde.
 
-- **Durchschnittliche Anmeldeinformationen** : die Summe der Dauer, die jeder zum Eingeben der Anmeldeinformationen benötigte, dividiert durch die Anzahl der Benutzer, die Ihre Anmeldeinformationen eingegeben haben.
+- **Durchschnittliche Anmeldeinformationen**: die Summe der Dauer, die jeder zum Eingeben der Anmeldeinformationen benötigte, dividiert durch die Anzahl der Benutzer, die Ihre Anmeldeinformationen eingegeben haben.
 
-- **Erfolgs Rate der Anmeldeinformationen** : ein Prozentsatz, der von berechnet wird (Anzahl der Benutzer, die Ihre Anmeldeinformationen eingegeben haben)/Gesamtanzahl der Benutzer, die **zielgerichtet** sind.
+- **Erfolgs Rate der Anmeldeinformationen**: ein Prozentsatz, der von berechnet wird (Anzahl der Benutzer, die Ihre Anmeldeinformationen eingegeben haben)/Gesamtanzahl der Benutzer, die **zielgerichtet** sind.
 
 - Ein Balkendiagramm, in dem der **Link geklickt** wird und die Anzahl der **Anmeldeinformationen** pro Tag angegeben wird.
 
-- Ein Kreisdiagramm, in dem der **angeklickte Link** , die **angegebenen Anmeldeinformationen** und **keine** Prozentsätze für die Kampagne angezeigt werden.
+- Ein Kreisdiagramm, in dem der **angeklickte Link**, die **angegebenen Anmeldeinformationen** und **keine** Prozentsätze für die Kampagne angezeigt werden.
 
 - Im Abschnitt **kompromittierte Benutzer** werden die Details der Benutzer aufgelistet, die auf den Link geklickt haben:
 
@@ -341,15 +341,15 @@ Die folgenden Informationen sind auf der Seite mit den **Angriffs Details** für
 
 - **Zielgruppe der Gesamtbenutzer**
 
-- **Erfolgreiche Versuche** : die Anzahl der Benutzer, die die Anlage geöffnet oder heruntergeladen und geöffnet haben (Vorschau wird nicht gezählt).
+- **Erfolgreiche Versuche**: die Anzahl der Benutzer, die die Anlage geöffnet oder heruntergeladen und geöffnet haben (Vorschau wird nicht gezählt).
 
-- **Gesamterfolgs Rate** : ein Prozentsatz, der von **erfolgreichen versuchen** berechnet wird  /  . **Gesamtzahl der Benutzer** , die gezielt sind.
+- **Gesamterfolgs Rate**: ein Prozentsatz, der von **erfolgreichen versuchen** berechnet wird  /  .**Gesamtzahl der Benutzer**, die gezielt sind.
 
-- **Schnellste Anlage Open Time** : wie lange dauerte es, bis der erste Benutzer die Anlage geöffnet hat, nachdem Sie die Kampagne gestartet haben.
+- **Schnellste Anlage Open Time**: wie lange dauerte es, bis der erste Benutzer die Anlage geöffnet hat, nachdem Sie die Kampagne gestartet haben.
 
-- **Open Time (durchschnittliche Anlage** ): die Summe der Dauer, die jeder zum Öffnen der Anlage benötigte, dividiert durch die Anzahl der Benutzer, die die Anlage geöffnet haben.
+- **Open Time (durchschnittliche Anlage**): die Summe der Dauer, die jeder zum Öffnen der Anlage benötigte, dividiert durch die Anzahl der Benutzer, die die Anlage geöffnet haben.
 
-- **Anlage offene Erfolgsrate** : ein Prozentsatz, der von berechnet wird (Anzahl der Benutzer, die die Anlage geöffnet haben)/Gesamtanzahl der **Zielbenutzer**.
+- **Anlage offene Erfolgsrate**: ein Prozentsatz, der von berechnet wird (Anzahl der Benutzer, die die Anlage geöffnet haben)/Gesamtanzahl der **Zielbenutzer**.
 
 ### <a name="brute-force-password-dictionary-attack-campaign-results"></a>Kampagnenergebnisse für Brute-Force-Kennwort (Wörterbuchangriffe)
 
@@ -359,9 +359,9 @@ Die folgenden Informationen sind auf der Seite mit den **Angriffs Details** für
 
 - **Zielgruppe der Gesamtbenutzer**
 
-- **Erfolgreiche Versuche** : die Anzahl der Benutzer, bei denen festgestellt wurde, dass Sie eines der angegebenen Kennwörter verwenden.
+- **Erfolgreiche Versuche**: die Anzahl der Benutzer, bei denen festgestellt wurde, dass Sie eines der angegebenen Kennwörter verwenden.
 
-- **Gesamterfolgs Rate** : ein Prozentsatz, der von **erfolgreichen versuchen** berechnet wird  /  . **Gesamtzahl der Benutzer** , die gezielt sind.
+- **Gesamterfolgs Rate**: ein Prozentsatz, der von **erfolgreichen versuchen** berechnet wird  /  .**Gesamtzahl der Benutzer**, die gezielt sind.
 
 - Im Abschnitt **kompromittierte Benutzer** werden die e-Mail-Adressen der betroffenen Benutzer aufgelistet. Sie können auf **exportieren** klicken, um die Ergebnisse in eine CSV-Datei zu exportieren.
 
@@ -373,6 +373,6 @@ Die folgenden Informationen sind auf der Seite mit den **Angriffs Details** für
 
 - **Zielgruppe der Gesamtbenutzer**
 
-- **Erfolgreiche Versuche** : die Anzahl der Benutzer, für die das angegebene Kennwort verwendet wurde.
+- **Erfolgreiche Versuche**: die Anzahl der Benutzer, für die das angegebene Kennwort verwendet wurde.
 
-- **Gesamterfolgs Rate** : ein Prozentsatz, der von **erfolgreichen versuchen** berechnet wird  /  . **Gesamtzahl der Benutzer** , die gezielt sind.
+- **Gesamterfolgs Rate**: ein Prozentsatz, der von **erfolgreichen versuchen** berechnet wird  /  .**Gesamtzahl der Benutzer**, die gezielt sind.

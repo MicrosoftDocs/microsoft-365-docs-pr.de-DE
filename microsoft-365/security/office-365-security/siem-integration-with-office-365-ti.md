@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Integrieren Sie den Siem-Server Ihrer Organisation mit Microsoft Defender für Office 365-und zugehörige Threat-Ereignisse in der API für die Office 365-Aktivitätsverwaltung.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6253ed0133bf53bdbeca71bb595a850e25441311
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 93ff1606130c60ceb46087d28bb26f9a6d27d330
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561699"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615660"
 ---
 # <a name="siem-integration-with-microsoft-defender-for-office-365"></a>Siem-Integration mit Microsoft Defender für Office 365
 
@@ -61,7 +61,9 @@ In der folgenden Tabelle sind die Werte von **AuditLogRecordType** zusammengefas
 |
 
 > [!IMPORTANT]
-> Sie müssen ein globaler Administrator sein oder der Sicherheitsadministrator Rolle für das Security & Compliance Center zugewiesen sein, um die Siem-Integration mit Microsoft Defender für Office 365 einzurichten.<br/>Die Überwachungsprotokollierung muss für Ihre Microsoft 365-Umgebung aktiviert sein. Informationen dazu finden Sie unter [Aktivieren oder Deaktivieren der Überwachungsprotokoll Suche](../../compliance/turn-audit-log-search-on-or-off.md).
+> Sie müssen ein globaler Administrator sein oder der Sicherheitsadministrator Rolle für das Security & Compliance Center zugewiesen sein, um die Siem-Integration mit Microsoft Defender für Office 365 einzurichten.
+>
+> Die Überwachungsprotokollierung muss für Ihre Microsoft 365-Umgebung aktiviert sein. Informationen dazu finden Sie unter [Aktivieren oder Deaktivieren der Überwachungsprotokoll Suche](../../compliance/turn-audit-log-search-on-or-off.md).
 
 ## <a name="see-also"></a>Siehe auch
 

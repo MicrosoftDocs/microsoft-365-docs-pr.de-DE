@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 81e729d9b0ff145d1d10a385cdd3f0856287dd9f
-ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
+ms.openlocfilehash: 1a82fc414bfed2f7a054ae533700c52a8270ed6d
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49588585"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615288"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Darstellungen zu Microsoft 365-Produktivitätslösungen
 
@@ -146,7 +146,7 @@ Weitere Informationen finden Sie im Artikel zu diesem Poster: [Empower Remote Wo
 Mit Microsoft 365 können Sie ein privates Team in Microsoft Teams konfigurieren und die Sicherheitseinstellungen für SharePoint-Websites und eine eindeutige Vertraulichkeits Bezeichnung verwenden, um Dateien zu verschlüsseln, sodass nur Teammitglieder Sie entschlüsseln können.
 
 [![Poster „Microsoft Teams mit Sicherheitsisolierung“](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf) <br/>
-[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) <br> Aktualisiert am 2020
+[PDF-Datei](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf)  |  [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) <br> Aktualisiert am 2020
 
 Weitere Informationen finden Sie im Artikel zu diesem Poster: [Konfigurieren eines Teams mit Sicherheitsisolierung](secure-teams-security-isolation.md).
 

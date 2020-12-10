@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: In diesem Artikel erfahren Sie, wie Sie Phishing-Angriffe simulieren und Ihre Benutzer bei der Phishing-Prävention mit Angriffs Simulationstraining in Microsoft Defender für Office 365 Schulen.
-ms.openlocfilehash: b9b8a431fc28942f5e11bc7ce2e805ca082cf36b
-ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
+ms.openlocfilehash: 8f5f457f60c81fe961282f33bb8c37f4d9e27aab
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48944502"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616104"
 ---
 # <a name="simulate-a-phishing-attack"></a>Simulieren eines Phishing-Angriffs
 
@@ -58,8 +58,8 @@ Bei der Auswahl von Nutzlasten stehen Ihnen mehrere Datenpunkte zur Verfügung:
 - **Klickrate** zählt, wie viele Personen auf diese Nutzlast geklickt haben.
 - **Prognostizierte Kompromiss Rate** prognostiziert den Prozentsatz der Personen, die von dieser Nutzlast aufgrund historischer Daten für diese Nutzlast in Microsoft Defender für Office 365 Kunden kompromittiert werden.
 - **Gestartete Simulationen** zählt die Häufigkeit, mit der diese Nutzlast in anderen Simulationen verwendet wurde.
-- Die **Komplexität** , die über **Filter** verfügbar ist, wird basierend auf der Anzahl der Indikatoren innerhalb der Nutzlast berechnet, die der Hinweis darauf abzielt, dass es sich um einen Angriff handelt. Mehr Indikatoren führen zu einer geringeren Komplexität.
-- **Source** , verfügbar über **Filter** , gibt an, ob die Nutzlast auf Ihrem Mandanten erstellt wurde oder ein Bestandteil des bereits vorhandenen Payload-Katalogs (Global) von Microsoft ist.
+- Die **Komplexität**, die über **Filter** verfügbar ist, wird basierend auf der Anzahl der Indikatoren innerhalb der Nutzlast berechnet, die der Hinweis darauf abzielt, dass es sich um einen Angriff handelt. Mehr Indikatoren führen zu einer geringeren Komplexität.
+- **Source**, verfügbar über **Filter**, gibt an, ob die Nutzlast auf Ihrem Mandanten erstellt wurde oder ein Bestandteil des bereits vorhandenen Payload-Katalogs (Global) von Microsoft ist.
 
 ![Ausgewählte Nutzlast innerhalb der Angriffs Simulations Schulung im Microsoft 365 Security Center](../../media/attack-sim-preview-select-payload.png)
 
@@ -69,11 +69,11 @@ Wenn Sie eine eigene Nutzlast erstellen möchten, lesen Sie [Erstellen einer Nut
 
 ## <a name="audience-targeting"></a>Zielgruppenadressierung
 
-Jetzt ist es an der Zeit, die Zielgruppe dieser Simulation auszuwählen. Sie können auswählen, dass **alle Benutzer in Ihrer Organisation eingeschlossen** oder **nur bestimmte Benutzer und Gruppen eingeschlossen** werden sollen. 
+Jetzt ist es an der Zeit, die Zielgruppe dieser Simulation auszuwählen. Sie können auswählen, dass **alle Benutzer in Ihrer Organisation eingeschlossen** oder **nur bestimmte Benutzer und Gruppen eingeschlossen** werden sollen.
 
 Wenn Sie **nur bestimmte Benutzer und Gruppen einbeziehen** möchten, können Sie entweder Folgendes verwenden:
 
-- **Fügen Sie Benutzer hinzu** , mit denen Sie die Suche für Ihren Mandanten sowie erweiterte Such-und Filterfunktionen nutzen können, beispielsweise für Benutzer, die in den letzten drei Monaten nicht auf eine Simulation ausgerichtet waren.
+- **Fügen Sie Benutzer hinzu**, mit denen Sie die Suche für Ihren Mandanten sowie erweiterte Such-und Filterfunktionen nutzen können, beispielsweise für Benutzer, die in den letzten drei Monaten nicht auf eine Simulation ausgerichtet waren.
   ![Benutzer Filterung beim Angriffs Simulationstraining im Microsoft 365 Security Center](../../media/attack-sim-preview-user-targeting.png)
 - Mit dem **Import aus CSV** können Sie eine vordefinierte Gruppe von Benutzern für diese Simulation importieren.
 
@@ -94,7 +94,7 @@ In den nächsten Schritten müssen Sie **Schulungen hinzufügen** , wenn Sie sic
 
 ## <a name="launch-details-and-review"></a>Starten von Details und überprüfen
 
-Nachdem alles konfiguriert wurde, können Sie diese Simulation sofort starten oder zu einem späteren Zeitpunkt planen. Sie müssen auch auswählen, wann diese Simulation beendet werden soll. Die Aufzeichnung der Interaktion mit dieser Simulation wird nach der ausgewählten Zeit angehalten. 
+Nachdem alles konfiguriert wurde, können Sie diese Simulation sofort starten oder zu einem späteren Zeitpunkt planen. Sie müssen auch auswählen, wann diese Simulation beendet werden soll. Die Aufzeichnung der Interaktion mit dieser Simulation wird nach der ausgewählten Zeit angehalten.
 
 **Aktivieren Sie die regionsbezogene Zustellungs Zeitzonen** , um simulierte Angriffsmeldungen an Ihre Mitarbeiter während der Arbeitszeit basierend auf Ihrer Region zu liefern.
 

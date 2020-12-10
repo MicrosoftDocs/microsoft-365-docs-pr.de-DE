@@ -1,5 +1,5 @@
 ---
-title: Erfahren Sie mehr über Informationsbarrieren
+title: Erfahren Sie mehr über Informationsbarrieren in Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,14 +16,14 @@ ms.collection:
 localization_priority: None
 description: Verwenden Sie Informationsbarrieren, um die Kommunikation mit Microsoft Teams in Ihrer Organisation sicherzustellen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0630dc607d6993598f356a7090a6be5890028499
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 08ec3b01258220a71ac02e5333143fb11b66655f
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636962"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613097"
 ---
-# <a name="information-barriers"></a>Informationsbarrieren
+# <a name="learn-about-information-barriers-in-microsoft-365"></a>Erfahren Sie mehr über Informationsbarrieren in Microsoft 365
 
 Microsoft Cloud Services umfassen leistungsstarke Funktionen für Kommunikation und Zusammenarbeit. Angenommen, Sie möchten die Kommunikation und Zusammenarbeit zwischen zwei Gruppen einschränken, um zu verhindern, dass in Ihrer Organisation ein Interessenkonflikt auftritt. Oder vielleicht möchten Sie die Kommunikation und Zusammenarbeit zwischen bestimmten Personen innerhalb Ihrer Organisation einschränken, um interne Informationen zu schützen. Microsoft 365 ermöglicht die Kommunikation und Zusammenarbeit zwischen Gruppen und Organisationen, gibt es also die Möglichkeit, die Kommunikation und Zusammenarbeit bei Bedarf auf bestimmte Benutzergruppen einzuschränken? Mit Informationsbarrieren, können Sie! 
 
@@ -35,7 +35,7 @@ Informationsbarrieren werden jetzt in Microsoft Teams, SharePoint Online und One
 - Ein Forschungsteam sollte nur online mit einem Produktentwicklungsteam anrufen oder chatten
 
 > [!IMPORTANT]
-> Informationsbarrieren ***unterstützen nur**zwei-Wege-Einschränkungen. Unidirektionale Einschränkungen wie Marketing können mit Day Traders kommunizieren, aber Tageshändler können nicht mit dem Marketing kommunizieren _ *_wird nicht unterstützt_* *.
+> Informationsbarrieren ***unterstützen nur** zwei-Wege-Einschränkungen. Unidirektionale Einschränkungen wie Marketing können mit Day Traders kommunizieren, aber Tageshändler können nicht mit dem Marketing kommunizieren _ *_wird nicht unterstützt_* *.
 
 Für alle diese Beispielszenarien (und mehr) können Richtlinien für Informationsbarrieren definiert werden, um die Kommunikation in Microsoft Teams zu verhindern oder zuzulassen. Mithilfe solcher Richtlinien kann verhindert werden, dass Personen Anrufe oder Chats mit Personen durchlaufen, die Sie nicht haben sollten, oder dass Personen nur mit bestimmten Gruppen in Microsoft Teams kommunizieren können. Wenn die Richtlinien für Informationsbarrieren wirksam sind und Benutzer, die von diesen Richtlinien abgedeckt werden, versuchen, mit anderen Personen in Microsoft Teams zu kommunizieren, werden Überprüfungen durchgeführt, um die Kommunikation zu verhindern (oder zulassen) (gemäß den Richtlinien für Informationsbarrieren). Weitere Informationen zur Benutzererfahrung mit Informationsbarrieren finden Sie unter [Information Barriers in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams).
 

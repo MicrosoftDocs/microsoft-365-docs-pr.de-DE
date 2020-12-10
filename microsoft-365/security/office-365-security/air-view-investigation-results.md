@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Während und nach einer automatischen Untersuchung in Microsoft 365 können Sie die Ergebnisse und die wichtigsten Ergebnisse anzeigen.
 ms.date: 11/05/2020
-ms.openlocfilehash: 4dc74987619c3f958c874927af6e4240b9d7e154
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 2018f008e043f36cd41047185f305209fcb725d7
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357285"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615144"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Details und Ergebnisse einer automatisierten Untersuchung in Microsoft 365
 
@@ -53,7 +53,7 @@ Der unter Suchstatus gibt den Fortschritt der Analyse und der Aktionen an. Währ
 
 ## <a name="view-details-of-an-investigation"></a>Anzeigen von Details einer Untersuchung
 
-1. Wechseln Sie zum Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) ), und melden Sie sich an.
+1. Wechseln Sie zum Security & Compliance Center ( <https://protection.office.com> ), und melden Sie sich an.
 
 2. Führen Sie eine der folgenden Aktionen aus:
 
@@ -77,7 +77,7 @@ Bestimmte Arten von Warnungen lösen eine automatische Untersuchung in Microsoft
 
 Verwenden Sie das folgende Verfahren, um Details zu einer Warnung anzuzeigen, die einer automatisierten Untersuchung zugeordnet ist.
 
-1. Wechseln Sie zum Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) ), und melden Sie sich an.
+1. Wechseln Sie zum Security & Compliance Center ( <https://protection.office.com> ), und melden Sie sich an.
 
 2. Wechseln Sie zu **Threat Management** \> **Investigations**.
 

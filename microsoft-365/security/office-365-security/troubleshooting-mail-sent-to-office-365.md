@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Dieser Artikel enthält Informationen zur Problembehandlung bei Problemen beim Senden von e-Mails an Posteingänge in Microsoft 365 & bewährte Methoden für Massenversand an Microsoft 365-Kunden.
-ms.openlocfilehash: 895f2651529cd46968d053fefac10cb22b6a5d86
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: 8b7c008f827a579e234d8a8feab008d36ecfe064
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568554"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615408"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>An Microsoft 365 gesendete E-Mail zur Problembehandlung
 
@@ -92,11 +92,11 @@ Der Betreff sollte eine kurze Zusammenfassung der Nachricht darstellen, und der 
 
 Richtig:
 
-> Von: Marketing@shoppershandbag.com <br/> Betreff: aktualisierter Katalog für die Weihnachtszeit!
+> Von: Marketing@shoppershandbag.com <br> Betreff: aktualisierter Katalog für die Weihnachtszeit!
 
 Falsch:
 
-> Von: someone@Outlook.com <br/> Betreff: Kataloge
+> Von: someone@Outlook.com <br> Betreff: Kataloge
 
 Je einfacher Sie es den Benutzern machen, ihre Identität und Absichten zu erkennen, desto weniger Probleme haben Sie bei der Zustellung durch die meisten Spamfilter.
 

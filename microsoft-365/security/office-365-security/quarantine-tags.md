@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: Administratoren erfahren, wie Sie mithilfe von Quarantäne Tags steuern können, welche Benutzer in der Lage sind, ihre unter Quarantäne gestellten Nachrichten zu übernehmen.
-ms.openlocfilehash: 68f28e2dff3bdeada2685ef6806489f5e57f5daf
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 498a5f45fa62481f7f4f8dfe5ece8a51a038f99a
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572669"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616008"
 ---
 # <a name="quarantine-tags"></a>Quarantäne-Tags
 
@@ -161,7 +161,9 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [New-Quara
 Führen Sie die folgenden Schritte aus, um ein Quarantine-Tag mithilfe des _EndUserQuarantinePermissionsValue_ -Parameters zu erstellen:
 
 A. Speichern Sie ein Quarantäne Berechtigungsobjekt in einer Variablen mithilfe des **New-QuarantinePermissions-** Cmdlets.
-<br/>
+
+<p>
+
 B. Verwenden Sie die Variable als _EndUserQuarantinePermissions_ -Wert im **New-QuarantineTag-** Befehl.
 
 ##### <a name="step-a-store-a-quarantine-permissions-object-in-a-variable"></a>Schritt a: Speichern eines Quarantäne Berechtigungsobjekts in einer Variablen
@@ -246,11 +248,11 @@ Ausführliche Anweisungen zum Erstellen und Ändern von Anti-Spam-Richtlinien fi
 2. Suchen und Auswählen einer vorhandenen Antispam-Richtlinie zum Bearbeiten oder Erstellen einer neuen Antispampolitik.
 
 3. Erweitern Sie im Flyout Richtlinie Details den Abschnitt **Spam-und Massenaktionen** .
-  
+
 4. Wenn Sie die Option **Quarantäne Nachricht** für die Aktion eines verfügbaren Spam Filterungs Urteils ausgewählt haben, steht das Feld **Quarantäne-richtlinientag anwenden** zur Verfügung, um das Quarantäne-Tag für das Urteil auszuwählen.
 
    **Hinweis**: Wenn Sie eine neue Richtlinie erstellen, wird durch einen leeren Quarantäne-Tag-Wert für ein Spamfilter Urteil angegeben, dass das standardmäßige quarantänetag für dieses Urteil verwendet wird. Wenn Sie die Richtlinie später bearbeiten, werden die leeren Werte durch die tatsächlichen Standardnamen der Quarantäne Tags ersetzt, wie in der vorherigen Tabelle beschrieben.
-  
+
    ![Auswählen von Quarantäne Tags in einer Anti-Spam-Richtlinie](../../media/quarantine-tags-in-anti-spam-policies.png)
 
 5. Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
@@ -516,7 +518,7 @@ Das **zulassen, dass Empfänger eine Nachricht aus Quarantine** Permission (_Per
 - **Details zur isolierten Nachricht**:
   - Berechtigung aktiviert: die Schaltfläche **Nachricht freigeben** steht zur Verfügung.
   - Berechtigung deaktiviert: die Schaltfläche " **Nachricht freigeben** " ist nicht verfügbar.
-  
+
 - **Spambenachrichtigungen für Endbenutzer**:
   - Berechtigung aktiviert: die Schaltfläche **Version** ist verfügbar.
   - Berechtigung deaktiviert: die Schaltfläche " **Version** " ist nicht verfügbar.

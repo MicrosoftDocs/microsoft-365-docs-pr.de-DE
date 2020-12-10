@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Administratoren können erfahren, wie Sie das Warteschlangen-Widget im Nachrichtenfluss-Dashboard im Security & Compliance Center verwenden, um den nicht erfolgreichen e-Mail-Fluss an Ihre lokalen oder Partnerorganisationen über ausgehende Connectors zu überwachen.
-ms.openlocfilehash: e6935793cd04c6072784cd20b55649126864c369
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: c582a7f459d89fa1515713c4f55dea14b619a6ec
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877573"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616392"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>Warteschlangen Einblicke im Security & Compliance Center
 
@@ -33,8 +33,8 @@ Microsoft 365 fährt fort, die Zustellung für 24 Stunden zu wiederholen. Nach 2
 Wenn das e-Mail-Volumen in der Warteschlange den vordefinierten Schwellenwert überschreitet (der Standardwert ist 200 Nachrichten), stehen die Informationen an den folgenden Speicherorten zur Verfügung:
 
 - Die **Queues** Insight im [Nachrichtenfluss-Dashboard](mail-flow-insights-v2.md) im [Security & Compliance Center](https://protection.office.com). Weitere Informationen finden Sie im Abschnitt " [Queues Insight" im Abschnitt "Nachrichtenfluss-Dashboard](#queues-insight-in-the-mail-flow-dashboard) " in diesem Thema.
-  
-- Im Alerts-Dashboard im [Security & Compliance Center](https://protection.office.com) ( **Alerts** -Dashboard oder) wird eine **Warnung in den** Benachrichtigungen für Benachrichtigungen angezeigt \> **Dashboard** <https://protection.office.com/alertsdashboard> .
+
+- Im Alerts-Dashboard im [Security & Compliance Center](https://protection.office.com) (**Alerts** -Dashboard oder) wird eine **Warnung in den** Benachrichtigungen für Benachrichtigungen angezeigt \>  <https://protection.office.com/alertsdashboard> .
 
   ![Aktuelle Benachrichtigungen im Alerts-Dashboard im Security & Compliance Center](../../media/mfi-queued-messages-alert.png)
 
@@ -46,22 +46,22 @@ Wenn das e-Mail-Volumen in der Warteschlange den vordefinierten Schwellenwert ü
 
 1. Wechseln Sie im [Security & Compliance Center](https://protection.office.com) **zu Alerts** \> **Alerts Policies** oder Open <https://protection.office.com/alertpolicies> .
 
-2. Suchen und wählen Sie auf der Seite " **Warnungsrichtlinien** " die Richtlinie mit dem Namen " **Nachrichten wurden verzögert** " aus.
+2. Suchen und wählen Sie auf der Seite " **Warnungsrichtlinien** " die Richtlinie mit dem Namen " **Nachrichten wurden verzögert**" aus.
 
 3. In der **Meldung verzögertes** Flyout, das geöffnet wird, können Sie die Warnung aktivieren oder deaktivieren und die Benachrichtigungseinstellungen konfigurieren.
 
    ![Nachrichten wurden verzögert Warnungsrichtlinien Details das Security & Compliance Center](../../media/mfi-queued-messages-alert-policy.png)
 
-   - **Status** : Sie können die Warnung aktivieren oder deaktivieren.
+   - **Status**: Sie können die Warnung aktivieren oder deaktivieren.
 
-   - Grenzwert für **e-Mail-Empfänger** und **tägliche Benachrichtigung** : Klicken Sie auf **Bearbeiten** , um die folgenden Einstellungen zu konfigurieren:
+   - Grenzwert für **e-Mail-Empfänger** und **tägliche Benachrichtigung**: Klicken Sie auf **Bearbeiten** , um die folgenden Einstellungen zu konfigurieren:
 
-4. Klicken Sie auf **Bearbeiten** , um die Benachrichtigungseinstellungen zu konfigurieren. Konfigurieren Sie im eingeblendeten **Editor-Richtlinien** Flyout die folgenden Einstellungen:
+4. Klicken Sie auf **Bearbeiten**, um die Benachrichtigungseinstellungen zu konfigurieren. Konfigurieren Sie im eingeblendeten **Editor-Richtlinien** Flyout die folgenden Einstellungen:
 
-   - **Senden von e-Mail-Benachrichtigungen** : der Standardwert ist "on".
-   - **E-Mail-Empfänger** : der Standardwert ist **TenantAdmins**.
-   - **Grenzwert für tägliche Benachrichtigung** : der Standardwert ist **No Limit**.
-   - **Threshold** : der Standardwert ist 200.
+   - **Senden von e-Mail-Benachrichtigungen**: der Standardwert ist "on".
+   - **E-Mail-Empfänger**: der Standardwert ist **TenantAdmins**.
+   - **Grenzwert für tägliche Benachrichtigung**: der Standardwert ist **No Limit**.
+   - **Threshold**: der Standardwert ist 200.
 
    ![Benachrichtigungseinstellungen in den Nachrichten wurden verzögert Warnungsrichtlinien Details das Security & Compliance Center](../../media/mfi-queued-messages-alert-policy-notification-settings.png)
 
@@ -76,7 +76,7 @@ Auch wenn das Nachrichten Volume in der Warteschlange den Schwellenwert nicht ü
 Wenn Sie auf die Anzahl der Nachrichten im Widget klicken, wird ein Flyout mit **Nachrichten in der Warteschlange** mit den folgenden Informationen angezeigt:
 
 - **Anzahl von Nachrichten in der Warteschlange**
-- **Connectorname** : Klicken Sie auf den Namen des Connectors, um den Connector im Exchange Admin Center (EAC) zu verwalten.
+- **Connectorname**: Klicken Sie auf den Namen des Connectors, um den Connector im Exchange Admin Center (EAC) zu verwalten.
 - **Warteschlangen-Anfangszeit**
 - **Älteste Nachrichten abgelaufen**
 - **Zielserver**

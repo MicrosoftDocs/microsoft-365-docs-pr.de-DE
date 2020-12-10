@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Erfahren Sie mehr Überkorrektur Aktionen in automatisierten Ermittlungs-und Antwortfunktionen in Microsoft Defender für Office 365 Plan 2.
-ms.openlocfilehash: 7dc5c0ba2e320e3f140d26e79e5c2e4a8fde79d7
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 9a1fdb4bec5168dfcd816dbce7da01f930e38ae1
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844560"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615192"
 ---
 # <a name="view-pending-or-completed-remediation-actions-following-an-automated-investigation-in-office-365"></a>Anzeigen ausstehender oder abgeschlossener Korrekturaktionen nach einer automatisierten Untersuchung in Office 365
 
@@ -39,17 +39,17 @@ Während Sie die [Details einer Untersuchung](air-view-investigation-results.md)
 > [!IMPORTANT]
 > Geeignete Berechtigungen sind erforderlich, um Korrekturaktionen zu genehmigen oder abzulehnen. Siehe [erforderliche Berechtigungen für die Verwendung von Air-Funktionen](office-365-air.md#required-permissions-to-use-air-capabilities).
 
-1. Gehen Sie zu [https://protection.office.com](https://protection.office.com), und melden Sie sich an. Sie gelangen auf das Sicherheits & Compliance Center.
+1. Gehen Sie auf <https://protection.office.com>, und melden Sie sich an. Sie gelangen auf das Sicherheits & Compliance Center.
 
-2. Wechseln Sie zu **Threat Management**  >  **Investigations**.
+2. Wechseln Sie zu **Threat Management** \> **Investigations**.
 
-3. Wählen Sie in der Liste der Untersuchungen ein Element in der Spalte **ID** aus. 
+3. Wählen Sie in der Liste der Untersuchungen ein Element in der Spalte **ID** aus.
 
 4. Klicken Sie auf die Registerkarte **Aktionen** .
 
 5. W?hlen Sie ein Element in der Liste aus. (Dadurch werden die Schaltflächen genehmigen und ablehnen aktiviert.)
 
-6. Überprüfen Sie die verfügbaren Informationen für die ausgewählten Elemente, und genehmigen oder lehnen Sie die Aktion (en) dann entweder ab. 
+6. Überprüfen Sie die verfügbaren Informationen für die ausgewählten Elemente, und genehmigen oder lehnen Sie die Aktion (en) dann entweder ab.
    - Mit **genehmigen** kann die Wiederherstellung beginnen.
    - **Reject** nimmt keine weiteren Aktionen vor
 

@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Hier finden Sie Informationen zu Kompatibilitätsoptionen für Microsoft 365-Gruppen, Teams und SharePoint-Zusammenarbeit.
-ms.openlocfilehash: 0383b0728d9b8ea12ce75de8bf0e250932d14ae5
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: e1ca6e638b2d44ae3b04e2a0f13222424e89714d
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377533"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613630"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Kompatibilitätsoptionen für Microsoft 365-Gruppen, Teams und SharePoint-Zusammenarbeit
 
@@ -113,8 +113,10 @@ Mit Informationsbarrieren können Sie Ihre Daten und Benutzer segmentieren, um u
 
 ## <a name="related-topics"></a>Verwandte Themen
 
+[Planung der Collaboration-Steuerung Schritt für Schritt](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Erstellen eines Steuerungsplans für die Zusammenarbeit](collaboration-governance-first.md)
+
 [Sicherheit und Compliance für Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/security-and-compliance)
 
 [Schützen von Informationen](https://docs.microsoft.com/microsoft-365/compliance/protect-information)
-
-
