@@ -18,127 +18,127 @@ search.appverid:
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 'Zusammenfassung: Informationen zum Erstellen von Office 365- und Enterprise Mobility + Security-Testabonnements (EMS) mit Benutzern und Gruppen für eine Entwicklungs-/Testumgebung für eine politische Kampagne.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 80454477bc55ab54ae7edf14ded5b4fa49fe1530
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 1fac15cc0b2a512745e0538ec689bd5f17555419
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203359"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614906"
 ---
-# <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a><span data-ttu-id="0c047-103">Konfigurieren von Gruppen und Benutzern für eine politische Kampagne in einer Entwicklungs-/Testumgebung</span><span class="sxs-lookup"><span data-stu-id="0c047-103">Configure groups and users for a political campaign dev/test environment</span></span>
+# <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a><span data-ttu-id="23673-103">Konfigurieren von Gruppen und Benutzern für eine politische Kampagne in einer Entwicklungs-/Testumgebung</span><span class="sxs-lookup"><span data-stu-id="23673-103">Configure groups and users for a political campaign dev/test environment</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
- <span data-ttu-id="0c047-104">**Zusammenfassung:** Informationen zum Erstellen von Office 365- und Enterprise Mobility + Security-Testabonnements (EMS) mit Benutzern und Gruppen für eine Entwicklungs-/Testumgebung für eine politische Kampagne.</span><span class="sxs-lookup"><span data-stu-id="0c047-104">**Summary:** Create Office 365 and Enterprise Mobility + Security (EMS) trial subscriptions with users and groups for a political campaign dev/test environment.</span></span>
+ <span data-ttu-id="23673-104">**Zusammenfassung:** Informationen zum Erstellen von Office 365- und Enterprise Mobility + Security-Testabonnements (EMS) mit Benutzern und Gruppen für eine Entwicklungs-/Testumgebung für eine politische Kampagne.</span><span class="sxs-lookup"><span data-stu-id="23673-104">**Summary:** Create Office 365 and Enterprise Mobility + Security (EMS) trial subscriptions with users and groups for a political campaign dev/test environment.</span></span>
 
-<span data-ttu-id="0c047-105">Folgen Sie den Anweisungen in diesem Artikel beim Erstellen einer Entwicklungs-/Testumgebung, die vereinfachte Benutzerkonten und Gruppen für die Lösung [Microsoft-Sicherheitsleitfaden für politische Kampagnen, gemeinnützige Organisationen und andere agile Organisationen](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md) enthält.</span><span class="sxs-lookup"><span data-stu-id="0c047-105">Use the instructions in this article to create a dev/test environment that includes simplified user accounts and groups for the [Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md) solution.</span></span>
+<span data-ttu-id="23673-105">Folgen Sie den Anweisungen in diesem Artikel beim Erstellen einer Entwicklungs-/Testumgebung, die vereinfachte Benutzerkonten und Gruppen für die Lösung [Microsoft-Sicherheitsleitfaden für politische Kampagnen, gemeinnützige Organisationen und andere agile Organisationen](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md) enthält.</span><span class="sxs-lookup"><span data-stu-id="23673-105">Use the instructions in this article to create a dev/test environment that includes simplified user accounts and groups for the [Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md) solution.</span></span>
 
-## <a name="phase-1-create-your-office-365-devtest-environment"></a><span data-ttu-id="0c047-106">Phase 1: Erstellen Ihrer Office 365-Entwicklungs-/Testumgebung</span><span class="sxs-lookup"><span data-stu-id="0c047-106">Phase 1: Create your Office 365 dev/test environment</span></span>
+## <a name="phase-1-create-your-office-365-devtest-environment"></a><span data-ttu-id="23673-106">Phase 1: Erstellen Ihrer Office 365-Entwicklungs-/Testumgebung</span><span class="sxs-lookup"><span data-stu-id="23673-106">Phase 1: Create your Office 365 dev/test environment</span></span>
 
-<span data-ttu-id="0c047-107">In dieser Phase erhalten Sie Testabonnements für Office 365 E5 und Enterprise Mobility + Security (EMS) E5 für eine fiktive Organisation, die eine politische Kampagne darstellt.</span><span class="sxs-lookup"><span data-stu-id="0c047-107">In this phase, you obtain trial subscriptions for Office 365 E5 and Enterprise Mobility + Security (EMS) E5 for a fictional organization that represents a political campaign.</span></span>
+<span data-ttu-id="23673-107">In dieser Phase erhalten Sie Testabonnements für Office 365 E5 und Enterprise Mobility + Security (EMS) E5 für eine fiktive Organisation, die eine politische Kampagne darstellt.</span><span class="sxs-lookup"><span data-stu-id="23673-107">In this phase, you obtain trial subscriptions for Office 365 E5 and Enterprise Mobility + Security (EMS) E5 for a fictional organization that represents a political campaign.</span></span>
 
-<span data-ttu-id="0c047-108">Befolgen Sie zunächst die Anweisungen unter **Phase 2** von [Einfache Basiskonfiguration](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise).</span><span class="sxs-lookup"><span data-stu-id="0c047-108">First, follow the instructions in **Phase 2** of [The lightweight base configuration](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise).</span></span>
+<span data-ttu-id="23673-108">Befolgen Sie zunächst die Anweisungen unter **Phase 2** von [Einfache Basiskonfiguration](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise).</span><span class="sxs-lookup"><span data-stu-id="23673-108">First, follow the instructions in **Phase 2** of [The lightweight base configuration](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise).</span></span>
 
-<span data-ttu-id="0c047-109">Als Nächstes registrieren Sie sich für das EMS E5-Testabonnement und fügen es derselben Organisation wie Ihr Testabonnement hinzu.</span><span class="sxs-lookup"><span data-stu-id="0c047-109">Next, sign up for the EMS E5 trial subscription and add it to the same organization as your trial subscription.</span></span>
+<span data-ttu-id="23673-109">Als Nächstes registrieren Sie sich für das EMS E5-Testabonnement und fügen es derselben Organisation wie Ihr Testabonnement hinzu.</span><span class="sxs-lookup"><span data-stu-id="23673-109">Next, sign up for the EMS E5 trial subscription and add it to the same organization as your trial subscription.</span></span>
 
-1. <span data-ttu-id="0c047-110">Falls erforderlich, melden Sie sich mit den Anmeldeinformationen des globalen Administratorkontos für Ihr Testabonnement beim Admin Center an.</span><span class="sxs-lookup"><span data-stu-id="0c047-110">If needed, sign in to the admin center with the credentials of the global administrator account of your trial subscription.</span></span> <span data-ttu-id="0c047-111">Hilfe finden Sie unter [Wo kann ich mich anmelden?](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).</span><span class="sxs-lookup"><span data-stu-id="0c047-111">For help, see [Where to sign in](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).</span></span>
+1. <span data-ttu-id="23673-110">Falls erforderlich, melden Sie sich mit den Anmeldeinformationen des globalen Administratorkontos für Ihr Testabonnement beim Admin Center an.</span><span class="sxs-lookup"><span data-stu-id="23673-110">If needed, sign in to the admin center with the credentials of the global administrator account of your trial subscription.</span></span> <span data-ttu-id="23673-111">Hilfe finden Sie unter [Wo kann ich mich anmelden?](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).</span><span class="sxs-lookup"><span data-stu-id="23673-111">For help, see [Where to sign in](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).</span></span>
 
-2. <span data-ttu-id="0c047-112">Klicken Sie auf die Kachel **Admin**.</span><span class="sxs-lookup"><span data-stu-id="0c047-112">Click the **Admin** tile.</span></span>
+2. <span data-ttu-id="23673-112">Klicken Sie auf die Kachel **Admin**.</span><span class="sxs-lookup"><span data-stu-id="23673-112">Click the **Admin** tile.</span></span>
 
-3. <span data-ttu-id="0c047-113">Klicken Sie auf der Registerkarte **Microsoft 365 Admin Center** in Ihrem Browser im linken Navigationsbereich auf **Abrechnung > Dienste kaufen**.</span><span class="sxs-lookup"><span data-stu-id="0c047-113">On the **Microsoft 365 admin center** tab in your browser, in the left navigation, click **Billing > Purchase services**.</span></span>
+3. <span data-ttu-id="23673-113">Klicken Sie auf der Registerkarte **Microsoft 365 Admin Center** in Ihrem Browser im linken Navigationsbereich auf **Abrechnung > Dienste kaufen**.</span><span class="sxs-lookup"><span data-stu-id="23673-113">On the **Microsoft 365 admin center** tab in your browser, in the left navigation, click **Billing > Purchase services**.</span></span>
 
-4. <span data-ttu-id="0c047-p102">Suchen Sie auf der Seite **Dienste kaufen** den Artikel **Enterprise Mobility + Security E5**. Platzieren Sie den Mauszeiger auf dem Artikelnamen, und klicken Sie auf **Start free trial**.</span><span class="sxs-lookup"><span data-stu-id="0c047-p102">On the **Purchase services** page, find the **Enterprise Mobility + Security E5** item. Hover your mouse pointer over it and click **Start free trial**.</span></span>
+4. <span data-ttu-id="23673-p102">Suchen Sie auf der Seite **Dienste kaufen** den Artikel **Enterprise Mobility + Security E5**. Platzieren Sie den Mauszeiger auf dem Artikelnamen, und klicken Sie auf **Start free trial**.</span><span class="sxs-lookup"><span data-stu-id="23673-p102">On the **Purchase services** page, find the **Enterprise Mobility + Security E5** item. Hover your mouse pointer over it and click **Start free trial**.</span></span>
 
-5. <span data-ttu-id="0c047-116">Klicken Sie auf der Seite für die **Bestätigung Ihrer Bestellung** auf **Jetzt versuchen**.</span><span class="sxs-lookup"><span data-stu-id="0c047-116">On the **Confirm your order** page, click **Try now**.</span></span>
+5. <span data-ttu-id="23673-116">Klicken Sie auf der Seite für die **Bestätigung Ihrer Bestellung** auf **Jetzt versuchen**.</span><span class="sxs-lookup"><span data-stu-id="23673-116">On the **Confirm your order** page, click **Try now**.</span></span>
 
-6. <span data-ttu-id="0c047-117">Klicken Sie auf der Seite **Bestellbestätigung** auf **Weiter**.</span><span class="sxs-lookup"><span data-stu-id="0c047-117">On the **Order receipt** page, click **Continue**.</span></span>
+6. <span data-ttu-id="23673-117">Klicken Sie auf der Seite **Bestellbestätigung** auf **Weiter**.</span><span class="sxs-lookup"><span data-stu-id="23673-117">On the **Order receipt** page, click **Continue**.</span></span>
 
-<span data-ttu-id="0c047-118">Aktivieren Sie als Nächstes die EMS E5-Lizenz für Ihr globales Administratorkonto.</span><span class="sxs-lookup"><span data-stu-id="0c047-118">Next, enable the EMS E5 license for your global administrator account.</span></span>
+<span data-ttu-id="23673-118">Aktivieren Sie als Nächstes die EMS E5-Lizenz für Ihr globales Administratorkonto.</span><span class="sxs-lookup"><span data-stu-id="23673-118">Next, enable the EMS E5 license for your global administrator account.</span></span>
 
-1. <span data-ttu-id="0c047-119">Klicken Sie auf der Registerkarte **Microsoft 365 Admin Center** in Ihrem Browser im linken Navigationsbereich auf **Benutzer > Aktive Benutzer**.</span><span class="sxs-lookup"><span data-stu-id="0c047-119">On the **Microsoft 365 admin center** tab in your browser, in the left navigation, click **Users > Active users**.</span></span>
+1. <span data-ttu-id="23673-119">Klicken Sie auf der Registerkarte **Microsoft 365 Admin Center** in Ihrem Browser im linken Navigationsbereich auf **Benutzer > Aktive Benutzer**.</span><span class="sxs-lookup"><span data-stu-id="23673-119">On the **Microsoft 365 admin center** tab in your browser, in the left navigation, click **Users > Active users**.</span></span>
 
-2. <span data-ttu-id="0c047-120">Klicken Sie auf Ihr globales Administratorkonto und dann auf **Bearbeiten**, um die **Produktlizenzen** anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="0c047-120">Click your global administrator account, and then click **Edit** for **Product licenses**.</span></span>
+2. <span data-ttu-id="23673-120">Klicken Sie auf Ihr globales Administratorkonto und dann auf **Bearbeiten**, um die **Produktlizenzen** anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="23673-120">Click your global administrator account, and then click **Edit** for **Product licenses**.</span></span>
 
-3. <span data-ttu-id="0c047-121">Setzen Sie im Bereich **Product licenses** die Produktlizenz für **Enterprise Mobility + Security E5** auf **On**. Klicken Sie auf **Speichern** und dann auf **Schließen**.</span><span class="sxs-lookup"><span data-stu-id="0c047-121">On the **Product licenses** pane, turn the product license for **Enterprise Mobility + Security E5** to **On**, click **Save,** and then click **Close** twice.</span></span>
+3. <span data-ttu-id="23673-121">Setzen Sie im Bereich **Product licenses** die Produktlizenz für **Enterprise Mobility + Security E5** auf **On**. Klicken Sie auf **Speichern** und dann auf **Schließen**.</span><span class="sxs-lookup"><span data-stu-id="23673-121">On the **Product licenses** pane, turn the product license for **Enterprise Mobility + Security E5** to **On**, click **Save,** and then click **Close** twice.</span></span>
 
-## <a name="phase-2-create-and-configure-your-azure-active-directory-ad-groups"></a><span data-ttu-id="0c047-122">Phase 2: Erstellen und Konfigurieren der Azure Active Directory(AD)-Gruppen</span><span class="sxs-lookup"><span data-stu-id="0c047-122">Phase 2: Create and configure your Azure Active Directory (AD) groups</span></span>
+## <a name="phase-2-create-and-configure-your-azure-active-directory-ad-groups"></a><span data-ttu-id="23673-122">Phase 2: Erstellen und Konfigurieren der Azure Active Directory(AD)-Gruppen</span><span class="sxs-lookup"><span data-stu-id="23673-122">Phase 2: Create and configure your Azure Active Directory (AD) groups</span></span>
 
-<span data-ttu-id="0c047-123">In dieser Phase werden die Azure AD-Gruppen für Ihre Kampagne erstellt und konfiguriert.</span><span class="sxs-lookup"><span data-stu-id="0c047-123">In this phase, you create and configure the Azure AD groups for your campaign.</span></span>
+<span data-ttu-id="23673-123">In dieser Phase werden die Azure AD-Gruppen für Ihre Kampagne erstellt und konfiguriert.</span><span class="sxs-lookup"><span data-stu-id="23673-123">In this phase, you create and configure the Azure AD groups for your campaign.</span></span>
 
-<span data-ttu-id="0c047-124">Erstellen Sie zuerst eine Reihe von Gruppen für eine typische politische Kampagne mit dem Azure-Portal.</span><span class="sxs-lookup"><span data-stu-id="0c047-124">First, create a set of groups for a typical political campaign with the Azure portal.</span></span>
+<span data-ttu-id="23673-124">Erstellen Sie zuerst eine Reihe von Gruppen für eine typische politische Kampagne mit dem Azure-Portal.</span><span class="sxs-lookup"><span data-stu-id="23673-124">First, create a set of groups for a typical political campaign with the Azure portal.</span></span>
 
-1. <span data-ttu-id="0c047-p103">Wechseln Sie auf einer neuen Registerkarte im Browser zum Azure-Portal unter [https://portal.azure.com](https://portal.azure.com). Falls erforderlich, melden Sie sich mit den Anmeldeinformationen des globalen Administratorkontos für Ihr Office 365 E5-Testabonnement an.</span><span class="sxs-lookup"><span data-stu-id="0c047-p103">On a separate tab in your browser, go to the Azure portal at [https://portal.azure.com](https://portal.azure.com). If needed, sign in with the credentials of the global administrator account for your Office 365 E5 trial subscription.</span></span>
+1. <span data-ttu-id="23673-p103">Wechseln Sie auf einer neuen Registerkarte im Browser zum Azure-Portal unter <https://portal.azure.com>. Falls erforderlich, melden Sie sich mit den Anmeldeinformationen des globalen Administratorkontos für Ihr Office 365 E5-Testabonnement an.</span><span class="sxs-lookup"><span data-stu-id="23673-p103">On a separate tab in your browser, go to the Azure portal at <https://portal.azure.com>. If needed, sign in with the credentials of the global administrator account for your Office 365 E5 trial subscription.</span></span>
 
-2. <span data-ttu-id="0c047-127">Klicken Sie im Azure-Portal auf **Azure Active Directory > Benutzer und Gruppen > Alle Gruppen**.</span><span class="sxs-lookup"><span data-stu-id="0c047-127">In the Azure portal, click **Azure Active Directory > Users and groups > All groups**.</span></span>
+2. <span data-ttu-id="23673-127">Klicken Sie im Azure-Portal auf **Azure Active Directory > Benutzer und Gruppen > Alle Gruppen**.</span><span class="sxs-lookup"><span data-stu-id="23673-127">In the Azure portal, click **Azure Active Directory > Users and groups > All groups**.</span></span>
 
-3. <span data-ttu-id="0c047-128">Führen Sie die folgenden Schritte für jeden Gruppenname in dieser Liste durch:</span><span class="sxs-lookup"><span data-stu-id="0c047-128">Do the following steps for each group name in this list:</span></span>
+3. <span data-ttu-id="23673-128">Führen Sie die folgenden Schritte für jeden Gruppenname in dieser Liste durch:</span><span class="sxs-lookup"><span data-stu-id="23673-128">Do the following steps for each group name in this list:</span></span>
 
-   - <span data-ttu-id="0c047-129">Senior-Mitarbeiter und strategische Mitarbeiter</span><span class="sxs-lookup"><span data-stu-id="0c047-129">Senior and strategic staff</span></span>
+   - <span data-ttu-id="23673-129">Senior-Mitarbeiter und strategische Mitarbeiter</span><span class="sxs-lookup"><span data-stu-id="23673-129">Senior and strategic staff</span></span>
 
-   - <span data-ttu-id="0c047-130">IT-Mitarbeiter</span><span class="sxs-lookup"><span data-stu-id="0c047-130">IT staff</span></span>
+   - <span data-ttu-id="23673-130">IT-Mitarbeiter</span><span class="sxs-lookup"><span data-stu-id="23673-130">IT staff</span></span>
 
-   - <span data-ttu-id="0c047-131">Analytiker</span><span class="sxs-lookup"><span data-stu-id="0c047-131">Analytics staff</span></span>
+   - <span data-ttu-id="23673-131">Analytiker</span><span class="sxs-lookup"><span data-stu-id="23673-131">Analytics staff</span></span>
 
-   - <span data-ttu-id="0c047-132">Stammpersonal</span><span class="sxs-lookup"><span data-stu-id="0c047-132">Regular core staff</span></span>
+   - <span data-ttu-id="23673-132">Stammpersonal</span><span class="sxs-lookup"><span data-stu-id="23673-132">Regular core staff</span></span>
 
-   - <span data-ttu-id="0c047-133">Betriebspersonal</span><span class="sxs-lookup"><span data-stu-id="0c047-133">Operations staff</span></span>
+   - <span data-ttu-id="23673-133">Betriebspersonal</span><span class="sxs-lookup"><span data-stu-id="23673-133">Operations staff</span></span>
 
-   - <span data-ttu-id="0c047-134">Außendienstmitarbeiter</span><span class="sxs-lookup"><span data-stu-id="0c047-134">Field staff</span></span>
+   - <span data-ttu-id="23673-134">Außendienstmitarbeiter</span><span class="sxs-lookup"><span data-stu-id="23673-134">Field staff</span></span>
 
-1. <span data-ttu-id="0c047-135">Klicken Sie auf dem Blatt **Alle Gruppen** auf **+ Neue Gruppe**.</span><span class="sxs-lookup"><span data-stu-id="0c047-135">On the **All groups** blade, click **+ New group**.</span></span>
+1. <span data-ttu-id="23673-135">Klicken Sie auf dem Blatt **Alle Gruppen** auf **+ Neue Gruppe**.</span><span class="sxs-lookup"><span data-stu-id="23673-135">On the **All groups** blade, click **+ New group**.</span></span>
 
-2. <span data-ttu-id="0c047-136">Geben Sie den Gruppennamen aus der Liste unter **Name** ein.</span><span class="sxs-lookup"><span data-stu-id="0c047-136">Type the group name from the list in **Name**.</span></span>
+2. <span data-ttu-id="23673-136">Geben Sie den Gruppennamen aus der Liste unter **Name** ein.</span><span class="sxs-lookup"><span data-stu-id="23673-136">Type the group name from the list in **Name**.</span></span>
 
-3. <span data-ttu-id="0c047-137">Wählen Sie unter **Mitgliedschaft** **Dynamischer Benutzer** aus.</span><span class="sxs-lookup"><span data-stu-id="0c047-137">Select **Dynamic user** in **Membership**.</span></span>
+3. <span data-ttu-id="23673-137">Wählen Sie unter **Mitgliedschaft** **Dynamischer Benutzer** aus.</span><span class="sxs-lookup"><span data-stu-id="23673-137">Select **Dynamic user** in **Membership**.</span></span>
 
-4. <span data-ttu-id="0c047-138">Klicken Sie auf **Ja** für **Office-Features aktivieren**.</span><span class="sxs-lookup"><span data-stu-id="0c047-138">Click **Yes** for **Enable Office features**.</span></span>
+4. <span data-ttu-id="23673-138">Klicken Sie auf **Ja** für **Office-Features aktivieren**.</span><span class="sxs-lookup"><span data-stu-id="23673-138">Click **Yes** for **Enable Office features**.</span></span>
 
-5. <span data-ttu-id="0c047-139">Klicken Sie auf **Dynamische Abfrage hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="0c047-139">Click **Add dynamic query**.</span></span>
+5. <span data-ttu-id="23673-139">Klicken Sie auf **Dynamische Abfrage hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="23673-139">Click **Add dynamic query**.</span></span>
 
-6. <span data-ttu-id="0c047-140">Wählen Sie unter **Benutzer hinzufügen**die Option **Abteilung** aus.</span><span class="sxs-lookup"><span data-stu-id="0c047-140">In **Add users where**, select **department**.</span></span>
+6. <span data-ttu-id="23673-140">Wählen Sie unter **Benutzer hinzufügen** die Option **Abteilung** aus.</span><span class="sxs-lookup"><span data-stu-id="23673-140">In **Add users where**, select **department**.</span></span>
 
-7. <span data-ttu-id="0c047-141">Wählen Sie im nächsten Feld **Gleich** aus.</span><span class="sxs-lookup"><span data-stu-id="0c047-141">In the next field, select **Equals**.</span></span>
+7. <span data-ttu-id="23673-141">Wählen Sie im nächsten Feld **Gleich** aus.</span><span class="sxs-lookup"><span data-stu-id="23673-141">In the next field, select **Equals**.</span></span>
 
-8. <span data-ttu-id="0c047-142">Geben Sie im nächsten Feld den Gruppennamen aus der Liste ein.</span><span class="sxs-lookup"><span data-stu-id="0c047-142">In the next field, type the group name from the list.</span></span>
+8. <span data-ttu-id="23673-142">Geben Sie im nächsten Feld den Gruppennamen aus der Liste ein.</span><span class="sxs-lookup"><span data-stu-id="23673-142">In the next field, type the group name from the list.</span></span>
 
-9. <span data-ttu-id="0c047-143">Klicken Sie auf **Abfrage hinzufügen**, und klicken Sie dann auf **Erstellen**.</span><span class="sxs-lookup"><span data-stu-id="0c047-143">Click **Add query**, and then click **Create**.</span></span>
+9. <span data-ttu-id="23673-143">Klicken Sie auf **Abfrage hinzufügen**, und klicken Sie dann auf **Erstellen**.</span><span class="sxs-lookup"><span data-stu-id="23673-143">Click **Add query**, and then click **Create**.</span></span>
 
-10. <span data-ttu-id="0c047-144">Klicken Sie auf **Benutzer und Gruppen – Alle Gruppen**.</span><span class="sxs-lookup"><span data-stu-id="0c047-144">Click **Users and groups - All groups**.</span></span>
+10. <span data-ttu-id="23673-144">Klicken Sie auf **Benutzer und Gruppen – Alle Gruppen**.</span><span class="sxs-lookup"><span data-stu-id="23673-144">Click **Users and groups - All groups**.</span></span>
 
-<span data-ttu-id="0c047-145">Konfigurieren Sie als Nächstes die Gruppen so, dass Mitgliedern automatisch Office 365 E5- und EMS E5-Lizenzen zugewiesen werden.</span><span class="sxs-lookup"><span data-stu-id="0c047-145">Next, you configure the groups so that members are automatically assigned Office 365 E5 and EMS E5 licenses.</span></span>
+<span data-ttu-id="23673-145">Konfigurieren Sie als Nächstes die Gruppen so, dass Mitgliedern automatisch Office 365 E5- und EMS E5-Lizenzen zugewiesen werden.</span><span class="sxs-lookup"><span data-stu-id="23673-145">Next, you configure the groups so that members are automatically assigned Office 365 E5 and EMS E5 licenses.</span></span>
 
-1. <span data-ttu-id="0c047-146">Klicken Sie im Azure-Portal auf **Azure Active Directory > Lizenzen > Alle Produkte**.</span><span class="sxs-lookup"><span data-stu-id="0c047-146">In the Azure portal, click **Azure Active Directory > Licenses > All products**.</span></span>
+1. <span data-ttu-id="23673-146">Klicken Sie im Azure-Portal auf **Azure Active Directory > Lizenzen > Alle Produkte**.</span><span class="sxs-lookup"><span data-stu-id="23673-146">In the Azure portal, click **Azure Active Directory > Licenses > All products**.</span></span>
 
-2. <span data-ttu-id="0c047-147">Wählen Sie in der Liste **Enterprise Mobility + Security E5** und **Office 365 Enterprise E5** aus, und klicken Sie dann auf **+ Zuweisen**.</span><span class="sxs-lookup"><span data-stu-id="0c047-147">In the list, select **Enterprise Mobility + Security E5** and **Office 365 Enterprise E5**, and then click **+ Assign**.</span></span>
+2. <span data-ttu-id="23673-147">Wählen Sie in der Liste **Enterprise Mobility + Security E5** und **Office 365 Enterprise E5** aus, und klicken Sie dann auf **+ Zuweisen**.</span><span class="sxs-lookup"><span data-stu-id="23673-147">In the list, select **Enterprise Mobility + Security E5** and **Office 365 Enterprise E5**, and then click **+ Assign**.</span></span>
 
-3. <span data-ttu-id="0c047-148">Klicken Sie auf dem Blatt **Lizenz zuweisen** auf **Benutzer und Gruppen**.</span><span class="sxs-lookup"><span data-stu-id="0c047-148">In the **Assign license** blade, click **Users and groups**.</span></span>
+3. <span data-ttu-id="23673-148">Klicken Sie auf dem Blatt **Lizenz zuweisen** auf **Benutzer und Gruppen**.</span><span class="sxs-lookup"><span data-stu-id="23673-148">In the **Assign license** blade, click **Users and groups**.</span></span>
 
-4. <span data-ttu-id="0c047-149">Wählen Sie in der Liste der Gruppen Folgendes aus:</span><span class="sxs-lookup"><span data-stu-id="0c047-149">In the list of groups, select the following:</span></span>
+4. <span data-ttu-id="23673-149">Wählen Sie in der Liste der Gruppen Folgendes aus:</span><span class="sxs-lookup"><span data-stu-id="23673-149">In the list of groups, select the following:</span></span>
 
-   - <span data-ttu-id="0c047-150">Analytiker</span><span class="sxs-lookup"><span data-stu-id="0c047-150">Analytics staff</span></span>
+   - <span data-ttu-id="23673-150">Analytiker</span><span class="sxs-lookup"><span data-stu-id="23673-150">Analytics staff</span></span>
 
-   - <span data-ttu-id="0c047-151">Außendienstmitarbeiter</span><span class="sxs-lookup"><span data-stu-id="0c047-151">Field staff</span></span>
+   - <span data-ttu-id="23673-151">Außendienstmitarbeiter</span><span class="sxs-lookup"><span data-stu-id="23673-151">Field staff</span></span>
 
-   - <span data-ttu-id="0c047-152">IT-Mitarbeiter</span><span class="sxs-lookup"><span data-stu-id="0c047-152">IT staff</span></span>
+   - <span data-ttu-id="23673-152">IT-Mitarbeiter</span><span class="sxs-lookup"><span data-stu-id="23673-152">IT staff</span></span>
 
-   - <span data-ttu-id="0c047-153">Betriebspersonal</span><span class="sxs-lookup"><span data-stu-id="0c047-153">Operations staff</span></span>
+   - <span data-ttu-id="23673-153">Betriebspersonal</span><span class="sxs-lookup"><span data-stu-id="23673-153">Operations staff</span></span>
 
-   - <span data-ttu-id="0c047-154">Stammpersonal</span><span class="sxs-lookup"><span data-stu-id="0c047-154">Regular core staff</span></span>
+   - <span data-ttu-id="23673-154">Stammpersonal</span><span class="sxs-lookup"><span data-stu-id="23673-154">Regular core staff</span></span>
 
-   - <span data-ttu-id="0c047-155">Senior-Mitarbeiter und strategische Mitarbeiter</span><span class="sxs-lookup"><span data-stu-id="0c047-155">Senior and strategic staff</span></span>
+   - <span data-ttu-id="23673-155">Senior-Mitarbeiter und strategische Mitarbeiter</span><span class="sxs-lookup"><span data-stu-id="23673-155">Senior and strategic staff</span></span>
 
-5. <span data-ttu-id="0c047-156">Klicken Sie auf **Auswählen** und dann auf **Zuweisen**.</span><span class="sxs-lookup"><span data-stu-id="0c047-156">Click **Select**, and then click **Assign**.</span></span>
+5. <span data-ttu-id="23673-156">Klicken Sie auf **Auswählen** und dann auf **Zuweisen**.</span><span class="sxs-lookup"><span data-stu-id="23673-156">Click **Select**, and then click **Assign**.</span></span>
 
-6. <span data-ttu-id="0c047-157">Schließen Sie die Registerkarte für das Azure Portal in Ihrem Browser.</span><span class="sxs-lookup"><span data-stu-id="0c047-157">Close the Azure portal tab in your browser.</span></span>
+6. <span data-ttu-id="23673-157">Schließen Sie die Registerkarte für das Azure Portal in Ihrem Browser.</span><span class="sxs-lookup"><span data-stu-id="23673-157">Close the Azure portal tab in your browser.</span></span>
 
-## <a name="phase-3-add-your-user-accounts"></a><span data-ttu-id="0c047-158">Phase 3: Hinzufügen von Benutzerkonten</span><span class="sxs-lookup"><span data-stu-id="0c047-158">Phase 3: Add your user accounts</span></span>
+## <a name="phase-3-add-your-user-accounts"></a><span data-ttu-id="23673-158">Phase 3: Hinzufügen von Benutzerkonten</span><span class="sxs-lookup"><span data-stu-id="23673-158">Phase 3: Add your user accounts</span></span>
 
-<span data-ttu-id="0c047-159">In dieser Phase werden beispielhafte Benutzerkonten für Ihre politische Kampagne hinzugefügt.</span><span class="sxs-lookup"><span data-stu-id="0c047-159">In this phase, you add the example user accounts for your political campaign.</span></span>
+<span data-ttu-id="23673-159">In dieser Phase werden beispielhafte Benutzerkonten für Ihre politische Kampagne hinzugefügt.</span><span class="sxs-lookup"><span data-stu-id="23673-159">In this phase, you add the example user accounts for your political campaign.</span></span>
 
-<span data-ttu-id="0c047-160">Zunächst müssen Sie [eine Verbindung mit dem Azure Active Directory PowerShell für Graph-Modul herstellen](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell).</span><span class="sxs-lookup"><span data-stu-id="0c047-160">First, you [Connect with the Azure Active Directory PowerShell for Graph module](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell).</span></span>
+<span data-ttu-id="23673-160">Zunächst müssen Sie [eine Verbindung mit dem Azure Active Directory PowerShell für Graph-Modul herstellen](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell).</span><span class="sxs-lookup"><span data-stu-id="23673-160">First, you [Connect with the Azure Active Directory PowerShell for Graph module](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell).</span></span>
 
-<span data-ttu-id="0c047-161">Geben Sie anschließend den Namen Ihrer Organisation, Ihren Standort und ein gemeinsames Kennwort ein, und führen Sie dann die folgenden Befehle an der PowerShell-Eingabeaufforderung oder in der ISE-Umgebung ein (Integrated Script Environment) aus:</span><span class="sxs-lookup"><span data-stu-id="0c047-161">Next, you fill in your organization name, your location, and a common password, and then run these commands from the PowerShell command prompt or Integrated Script Environment (ISE):</span></span>
+<span data-ttu-id="23673-161">Geben Sie anschließend den Namen Ihrer Organisation, Ihren Standort und ein gemeinsames Kennwort ein, und führen Sie dann die folgenden Befehle an der PowerShell-Eingabeaufforderung oder in der ISE-Umgebung ein (Integrated Script Environment) aus:</span><span class="sxs-lookup"><span data-stu-id="23673-161">Next, you fill in your organization name, your location, and a common password, and then run these commands from the PowerShell command prompt or Integrated Script Environment (ISE):</span></span>
 
 ```powershell
 $orgName="<organization name, such as contoso for the contoso.onmicrosoft.com trial subscription domain name>"
@@ -169,46 +169,46 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
 ```
 
 > [!IMPORTANT]
-> <span data-ttu-id="0c047-p104">Die Verwendung eines gemeinsamen Kennworts an dieser Stelle dient der Automatisierung und einfacher Konfiguration für eine Entwicklungs-/Testumgebung. Für die Verwendung in Produktionsabonnements wird dies nicht empfohlen. Beim Anmelden mit einem dieser neuen Benutzerkonten werden Sie dazu aufgefordert, das Kennwort zu ändern.</span><span class="sxs-lookup"><span data-stu-id="0c047-p104">The use of a common password here is for automation and ease of configuration for a dev/test environment. This is not recommended for production subscriptions. As you sign in with each of these new user accounts, you will be prompted to change the password.</span></span>
+> <span data-ttu-id="23673-p104">Die Verwendung eines gemeinsamen Kennworts an dieser Stelle dient der Automatisierung und einfacher Konfiguration für eine Entwicklungs-/Testumgebung. Für die Verwendung in Produktionsabonnements wird dies nicht empfohlen. Beim Anmelden mit einem dieser neuen Benutzerkonten werden Sie dazu aufgefordert, das Kennwort zu ändern.</span><span class="sxs-lookup"><span data-stu-id="23673-p104">The use of a common password here is for automation and ease of configuration for a dev/test environment. This is not recommended for production subscriptions. As you sign in with each of these new user accounts, you will be prompted to change the password.</span></span>
 
-<span data-ttu-id="0c047-165">Gehen Sie folgendermaßen vor, um sicherzustellen, dass die dynamische Gruppenmitgliedschaft und gruppenbasierte Lizenzierung ordnungsgemäß funktionieren.</span><span class="sxs-lookup"><span data-stu-id="0c047-165">Use these steps to verify that dynamic group membership and group-based licensing are working correctly.</span></span>
+<span data-ttu-id="23673-165">Gehen Sie folgendermaßen vor, um sicherzustellen, dass die dynamische Gruppenmitgliedschaft und gruppenbasierte Lizenzierung ordnungsgemäß funktionieren.</span><span class="sxs-lookup"><span data-stu-id="23673-165">Use these steps to verify that dynamic group membership and group-based licensing are working correctly.</span></span>
 
-1. <span data-ttu-id="0c047-166">Klicken Sie auf der Registerkarte **Microsoft Office Home** in Ihrem Browser auf die Kachel **Admin**.</span><span class="sxs-lookup"><span data-stu-id="0c047-166">From the **Microsoft Office Home** tab of your browser, click the **Admin** tile.</span></span>
+1. <span data-ttu-id="23673-166">Klicken Sie auf der Registerkarte **Microsoft Office Home** in Ihrem Browser auf die Kachel **Admin**.</span><span class="sxs-lookup"><span data-stu-id="23673-166">From the **Microsoft Office Home** tab of your browser, click the **Admin** tile.</span></span>
 
-2. <span data-ttu-id="0c047-167">Klicken Sie auf der neuen Registerkarte **Microsoft 365 Admin Center** des Browsers auf **Benutzer**.</span><span class="sxs-lookup"><span data-stu-id="0c047-167">From the new **Microsoft 365 admin center** tab of your browser, click **Users**.</span></span>
+2. <span data-ttu-id="23673-167">Klicken Sie auf der neuen Registerkarte **Microsoft 365 Admin Center** des Browsers auf **Benutzer**.</span><span class="sxs-lookup"><span data-stu-id="23673-167">From the new **Microsoft 365 admin center** tab of your browser, click **Users**.</span></span>
 
-3. <span data-ttu-id="0c047-168">Klicken Sie in der Benutzerliste auf **Kandidat**.</span><span class="sxs-lookup"><span data-stu-id="0c047-168">In the list of users, click **Candidate**.</span></span>
+3. <span data-ttu-id="23673-168">Klicken Sie in der Benutzerliste auf **Kandidat**.</span><span class="sxs-lookup"><span data-stu-id="23673-168">In the list of users, click **Candidate**.</span></span>
 
-4. <span data-ttu-id="0c047-169">Stellen Sie im Bereich mit den Eigenschaften für das Benutzerkonto **Kandidat** Folgendes sicher:</span><span class="sxs-lookup"><span data-stu-id="0c047-169">In the pane that lists the properties of the **Candidate** user account, verify that:</span></span>
+4. <span data-ttu-id="23673-169">Stellen Sie im Bereich mit den Eigenschaften für das Benutzerkonto **Kandidat** Folgendes sicher:</span><span class="sxs-lookup"><span data-stu-id="23673-169">In the pane that lists the properties of the **Candidate** user account, verify that:</span></span>
 
-   - <span data-ttu-id="0c047-170">Ist Mitglied der Gruppe **Senior-Mitarbeiter und strategische Mitarbeiter** (unter **Gruppenmitgliedschaften**).</span><span class="sxs-lookup"><span data-stu-id="0c047-170">It is a member of the **Senior and strategic staff** group (in **Group memberships**).</span></span>
+   - <span data-ttu-id="23673-170">Ist Mitglied der Gruppe **Senior-Mitarbeiter und strategische Mitarbeiter** (unter **Gruppenmitgliedschaften**).</span><span class="sxs-lookup"><span data-stu-id="23673-170">It is a member of the **Senior and strategic staff** group (in **Group memberships**).</span></span>
 
-   - <span data-ttu-id="0c047-171">Dem Benutzerkonto wurden **Enterprise Mobilität + Security E5**- und **Office 365 Enterprise E5**-Lizenzen (unter **Produktlizenzen**) zugewiesen.</span><span class="sxs-lookup"><span data-stu-id="0c047-171">It has been assigned the **Enterprise Mobility + Security E5** and **Office 365 Enterprise E5** licenses (in **Product licenses**).</span></span>
+   - <span data-ttu-id="23673-171">Dem Benutzerkonto wurden **Enterprise Mobilität + Security E5**- und **Office 365 Enterprise E5**-Lizenzen (unter **Produktlizenzen**) zugewiesen.</span><span class="sxs-lookup"><span data-stu-id="23673-171">It has been assigned the **Enterprise Mobility + Security E5** and **Office 365 Enterprise E5** licenses (in **Product licenses**).</span></span>
 
-5. <span data-ttu-id="0c047-172">Schließen Sie den Bereich für das Benutzerkonto **Kandidat**.</span><span class="sxs-lookup"><span data-stu-id="0c047-172">Close the **Candidate** user account pane.</span></span>
+5. <span data-ttu-id="23673-172">Schließen Sie den Bereich für das Benutzerkonto **Kandidat**.</span><span class="sxs-lookup"><span data-stu-id="23673-172">Close the **Candidate** user account pane.</span></span>
 
-## <a name="record-values-for-future-reference"></a><span data-ttu-id="0c047-173">Notieren von Werten für zukünftige Verwendung</span><span class="sxs-lookup"><span data-stu-id="0c047-173">Record values for future reference</span></span>
+## <a name="record-values-for-future-reference"></a><span data-ttu-id="23673-173">Notieren von Werten für zukünftige Verwendung</span><span class="sxs-lookup"><span data-stu-id="23673-173">Record values for future reference</span></span>
 
-<span data-ttu-id="0c047-174">Notieren Sie diese Werte für die Arbeit mit Office 365- und EMS-Testabonnements für diese Entwicklung-/Testumgebung:</span><span class="sxs-lookup"><span data-stu-id="0c047-174">Record these values for working with the Office 365 and EMS trial subscriptions for this dev/test environment:</span></span>
+<span data-ttu-id="23673-174">Notieren Sie diese Werte für die Arbeit mit Office 365- und EMS-Testabonnements für diese Entwicklung-/Testumgebung:</span><span class="sxs-lookup"><span data-stu-id="23673-174">Record these values for working with the Office 365 and EMS trial subscriptions for this dev/test environment:</span></span>
 
-- <span data-ttu-id="0c047-175">Organisationsname für das Testabonnement:</span><span class="sxs-lookup"><span data-stu-id="0c047-175">Your trial subscription organization name:</span></span> ![Unterstrichen](../../media/Common-Images/TableLine.png)
+- <span data-ttu-id="23673-175">Organisationsname für das Testabonnement:</span><span class="sxs-lookup"><span data-stu-id="23673-175">Your trial subscription organization name:</span></span> ![Unterstrichen](../../media/Common-Images/TableLine.png)
 
-  <span data-ttu-id="0c047-177">Für den Domänennamen contoso.onmicrosoft.com des Testabonnements lautet der Name der Organisation zum Beispiel „contoso“.</span><span class="sxs-lookup"><span data-stu-id="0c047-177">For example, for the trial subscription domain name of contoso.onmicrosoft.com, the organization name is "contoso".</span></span>
+  <span data-ttu-id="23673-177">Für den Domänennamen contoso.onmicrosoft.com des Testabonnements lautet der Name der Organisation zum Beispiel „contoso“.</span><span class="sxs-lookup"><span data-stu-id="23673-177">For example, for the trial subscription domain name of contoso.onmicrosoft.com, the organization name is "contoso".</span></span>
 
-- <span data-ttu-id="0c047-178">Name des globalen Administrators:</span><span class="sxs-lookup"><span data-stu-id="0c047-178">The global administrator name:</span></span> ![Unterstrichen](../../media/Common-Images/TableLine.png)<span data-ttu-id="0c047-180">.onmicrosoft.com</span><span class="sxs-lookup"><span data-stu-id="0c047-180">.onmicrosoft.com</span></span>
+- <span data-ttu-id="23673-178">Name des globalen Administrators:</span><span class="sxs-lookup"><span data-stu-id="23673-178">The global administrator name:</span></span> ![Unterstrichen](../../media/Common-Images/TableLine.png)<span data-ttu-id="23673-180">.onmicrosoft.com</span><span class="sxs-lookup"><span data-stu-id="23673-180">.onmicrosoft.com</span></span>
 
-  <span data-ttu-id="0c047-181">Notieren Sie sich das Kennwort für dieses Konto und das gemeinsame ursprüngliche Kennwort für die anderen Benutzerkonten, und bewahren Sie diese an einem sicheren Ort auf.</span><span class="sxs-lookup"><span data-stu-id="0c047-181">Record the password for this account and the common initial password for the other user accounts in a secure location.</span></span>
+  <span data-ttu-id="23673-181">Notieren Sie sich das Kennwort für dieses Konto und das gemeinsame ursprüngliche Kennwort für die anderen Benutzerkonten, und bewahren Sie diese an einem sicheren Ort auf.</span><span class="sxs-lookup"><span data-stu-id="23673-181">Record the password for this account and the common initial password for the other user accounts in a secure location.</span></span>
 
-## <a name="next-step"></a><span data-ttu-id="0c047-182">Nächster Schritt</span><span class="sxs-lookup"><span data-stu-id="0c047-182">Next step</span></span>
+## <a name="next-step"></a><span data-ttu-id="23673-182">Nächster Schritt</span><span class="sxs-lookup"><span data-stu-id="23673-182">Next step</span></span>
 
-<span data-ttu-id="0c047-183">Erstellen Sie die vier verschiedenen Arten von SharePoint Online-Teamwebsites in dieser Entwicklungs-/Testumgebung mit [Create team sites in a political campaign dev/test environment](create-team-sites-in-a-political-campaign-dev-test-environment.md).</span><span class="sxs-lookup"><span data-stu-id="0c047-183">Build the four different types of SharePoint Online team sites in this dev/test environment with [Create team sites in a political campaign dev/test environment](create-team-sites-in-a-political-campaign-dev-test-environment.md).</span></span>
+<span data-ttu-id="23673-183">Erstellen Sie die vier verschiedenen Arten von SharePoint Online-Teamwebsites in dieser Entwicklungs-/Testumgebung mit [Create team sites in a political campaign dev/test environment](create-team-sites-in-a-political-campaign-dev-test-environment.md).</span><span class="sxs-lookup"><span data-stu-id="23673-183">Build the four different types of SharePoint Online team sites in this dev/test environment with [Create team sites in a political campaign dev/test environment](create-team-sites-in-a-political-campaign-dev-test-environment.md).</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="0c047-184">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="0c047-184">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="23673-184">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="23673-184">See also</span></span>
 
-[<span data-ttu-id="0c047-185">Microsoft-Sicherheitsleitfaden für politische Kampagnen, gemeinnützigen Organisationen und andere agile Organisationen</span><span class="sxs-lookup"><span data-stu-id="0c047-185">Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations</span></span>](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[<span data-ttu-id="23673-185">Microsoft-Sicherheitsleitfaden für politische Kampagnen, gemeinnützigen Organisationen und andere agile Organisationen</span><span class="sxs-lookup"><span data-stu-id="23673-185">Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations</span></span>](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
 
-[<span data-ttu-id="0c047-186">Erstellen von Teamwebsites in einer Entwicklungs-/Testumgebung für eine politische Kampagne</span><span class="sxs-lookup"><span data-stu-id="0c047-186">Create team sites in a political campaign dev/test environment</span></span>](create-team-sites-in-a-political-campaign-dev-test-environment.md)
+[<span data-ttu-id="23673-186">Erstellen von Teamwebsites in einer Entwicklungs-/Testumgebung für eine politische Kampagne</span><span class="sxs-lookup"><span data-stu-id="23673-186">Create team sites in a political campaign dev/test environment</span></span>](create-team-sites-in-a-political-campaign-dev-test-environment.md)
 
-[<span data-ttu-id="0c047-187">Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz</span><span class="sxs-lookup"><span data-stu-id="0c047-187">Cloud adoption Test Lab Guides (TLGs)</span></span>](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[<span data-ttu-id="23673-187">Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz</span><span class="sxs-lookup"><span data-stu-id="23673-187">Cloud adoption Test Lab Guides (TLGs)</span></span>](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
 
-[<span data-ttu-id="0c047-188">Cloudakzeptanz und Hybridlösungen</span><span class="sxs-lookup"><span data-stu-id="0c047-188">Cloud adoption and hybrid solutions</span></span>](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
+[<span data-ttu-id="23673-188">Cloudakzeptanz und Hybridlösungen</span><span class="sxs-lookup"><span data-stu-id="23673-188">Cloud adoption and hybrid solutions</span></span>](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
