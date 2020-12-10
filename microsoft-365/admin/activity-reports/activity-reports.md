@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Erhalten Sie einen regelmäßigen Bericht darüber, wie Personen in Ihrer Organisation Microsoft 365-Dienste verwenden. Im Dashboard "Verwendungsübersicht" können Sie die einzelnen Diagramme weiter aufschlüsseln, um weitere Erkenntnisse zu erhalten.
-ms.openlocfilehash: 9c3416f415c43377669b2c032e10696343c4416f
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: d2c5b4f67d93500f7341463a01313271d182dc38
+ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988458"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49611349"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Microsoft 365-Berichte im Admin Center
 
@@ -90,13 +90,17 @@ Je nach Abonnement stehen die folgenden Berichte zur Verfügung.
     
 - [Postfachnutzung](mailbox-usage.md)
     
-- [Office-Aktivierungen](microsoft-office-activations.md)
+- [Office-Aktivierungen](microsoft-office-activations-ww.md)
 
-- [Aktive Benutzer](active-users.md)
+- [Office-Aktivierungen für US-Regierungsbehörden](microsoft-office-activations.md)
+
+- [Aktive Benutzer](active-users-ww.md)
+
+- [Aktive Benutzer für US-Regierungsbehörden](active-users.md)
   
 - [Nutzung der E-Mail-Apps](email-apps-usage.md)
 
-- [Forms-Aktivität](forms-activity-ww.md)
+- [Forms-Aktivitäten](forms-activity-ww.md)
 
 - [Forms-Aktivität für die US-Regierung](forms-activity.md)
 
@@ -104,7 +108,9 @@ Je nach Abonnement stehen die folgenden Berichte zur Verfügung.
   
 - [Dynamics 365 Customer Voice-Aktivität für die US-Regierung](forms-pro-activity.md)
 
-- [Microsoft 365-Gruppen](office-365-groups.md)
+- [Microsoft 365-Gruppen](office-365-groups-ww.md)
+
+- [Microsoft 365-Gruppen für US-Regierungsbehörden](office-365-groups.md)
   
 - [OneDrive for Business-Benutzeraktivität](onedrive-for-business-activity-ww.md)
 
@@ -114,7 +120,9 @@ Je nach Abonnement stehen die folgenden Berichte zur Verfügung.
 
 - [Nutzung von OneDrive for Business für US-Regierungsbehörden](onedrive-for-business-usage.md)
 
-- [Verwendung von Microsoft 365 Apps](microsoft365-apps-usage.md)
+- [Verwendung von Microsoft 365 Apps](microsoft365-apps-usage-ww.md)
+
+- [Verwendung von Microsoft 365 Apps für US-Regierungsbehörden](microsoft365-apps-usage.md)
   
 - [Nutzung der SharePoint-Website](sharepoint-site-usage-ww.md)
 
@@ -202,7 +210,9 @@ Je nach Abonnement stehen die folgenden Berichte zur Verfügung.
 
 Verwenden Sie die Dienstberichte, um zu untersuchen, wie häufig ein bestimmter Benutzer den Dienst nutzt. Wenn Sie beispielsweise herausfinden möchten, wie viel Postfachspeicher ein bestimmter Benutzer in Anspruch genommen hat, öffnen Sie den Bericht "Postfachspeichernutzung", und sortieren Sie die Benutzer nach Name. Wenn Sie mehrere tausend Benutzer verwalten müssen, exportieren Sie den Bericht nach Excel, damit Sie die Liste schnell filtern können.
   
-Sie können keinen Bericht generieren, indem Sie ein Benutzerkonto eingeben und dann eine Liste anzeigen, welche Dienste wie häufig genutzt werden.
+Sie können keinen Bericht generieren, indem Sie ein Benutzerkonto eingeben und dann eine Liste dazu anzeigen, welche Dienste wie häufig genutzt werden.
+
+Unter gewissen Umständen scheinen neue Benutzer als **unbekannt** auf. Ursache dafür sind in der Regel gelegentlich auftretende Verzögerungen bei der Erstellung von Benutzerprofilen.  
   
 ## <a name="hide-user-details-in-the-reports"></a>Ausblenden von Benutzerdetails in den Berichten
 

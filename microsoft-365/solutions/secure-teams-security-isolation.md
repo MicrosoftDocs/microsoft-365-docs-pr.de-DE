@@ -3,7 +3,7 @@ title: Konfigurieren eines Teams mit Sicherheitsisolierung
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 localization_priority: Priority
@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Hier erfahren Sie, wie Sie ein Team mit einer eindeutigen Vertraulichkeitsbezeichnung für Sicherheit erstellen.
-ms.openlocfilehash: 46bc63bab52bf75dc7c215510d49b4d985ff07c3
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: c7230f23a21804530863f125003e4db0eaeeeb60
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487482"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616296"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Konfigurieren eines Teams mit Sicherheitsisolierung
 
@@ -50,7 +50,7 @@ Schauen Sie sich dieses Video an, um einen Überblick über den Bereitstellungsp
 
 [![Poster „Microsoft Teams mit Sicherheitsisolierung“](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 
-Sie können dieses Poster auch im [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf)-Format herunterladen und in den Formaten „Brief“, „Legal“ oder „Tabloid“ (27,94 x 43,18 cm) ausdrucken.
+Sie können dieses Poster auch im [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf)- oder [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx)-Format herunterladen und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
 
 ## <a name="initial-protections"></a>Erste Schutzmaßnahmen
 
@@ -103,11 +103,11 @@ Wenn Sie über einen internen Partner oder eine Gruppe von Interessengruppen ver
 
 Erstellen einer Vertraulichkeitsbezeichnung
 1. Öffnen Sie das [Microsoft 365 Compliance Center](https://compliance.microsoft.com).
-2. Klicken Sie unter **Lösungen**auf **Informationsschutz**.
+2. Klicken Sie unter **Lösungen** auf **Informationsschutz**.
 3. Klicken Sie auf **Bezeichnung erstellen**.
 4. Geben Sie einen Namen für die Bezeichnung ein, der dem Namen Ihres Teams ähnelt. Z. b. **Streng vertraulich –⁠ Projekt Saturn**.
 5. Fügen Sie eine QuickInfo hinzu, und klicken Sie dann auf **Weiter**.
-6. Wählen Sie auf der Seite **Verschlüsselung** im Dropdownmenü **Verschlüsselung** **Anwenden**aus.
+6. Wählen Sie auf der Seite **Verschlüsselung** im Dropdownmenü **Verschlüsselung** **Anwenden** aus.
 7. Hinzufügen der Team-Berechtigungen:<br>
   a. Klicken Sie auf **Zuweisen von Berechtigungen**.<br>
   b. Klicken Sie auf **Benutzergruppen hinzufügen**, wählen Sie das von Ihnen erstellte Team aus und klicken Sie dann auf **Hinzufügen**.<br>
