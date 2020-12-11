@@ -3,7 +3,7 @@ title: Teams für den Schutz hochgradig vertraulicher Daten konfigurieren
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Hier erfahren Sie, wie Sie Teams bereitstellen, in denen hochgradig vertrauliche Daten geschützt sind.
-ms.openlocfilehash: 92defdf5d06788f4a4cbefeb5e81308611966bec
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 77ec469776bf263bbd3d667a28f1f9b1bc3284b5
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527814"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49612964"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Teams für den Schutz hochgradig vertraulicher Daten konfigurieren
 
@@ -61,14 +61,14 @@ Sobald Sie Vertraulichkeitsbezeichnungen für Microsoft Teams aktiviert haben, b
 
 Erstellen einer Vertraulichkeitsbezeichnung
 1. Öffnen Sie das [Microsoft 365 Compliance Center](https://compliance.microsoft.com).
-2. Klicken Sie unter **Lösungen**auf **Informationsschutz**.
+2. Klicken Sie unter **Lösungen** auf **Informationsschutz**.
 3. Klicken Sie auf **Bezeichnung erstellen**.
 4. Weisen Sie der Bezeichnung einen Namen zu. Wir empfehlen **Hochgradig vertraulich**, Sie können aber auch einen anderen Namen auswählen, falls dieser bereits verwendet wird.
 5. Fügen Sie eine QuickInfo hinzu, und klicken Sie dann auf **Weiter**.
-6. Wählen Sie auf der Seite **Verschlüsselung** im Dropdownmenü **Verschlüsselung** **Anwenden**aus.
+6. Wählen Sie auf der Seite **Verschlüsselung** im Dropdownmenü **Verschlüsselung** **Anwenden** aus.
 7. Klicken Sie unter **Berechtigungen bestimmten Benutzern und Gruppen zuweisen** auf **Berechtigungen zuweisen**.
 8. Klicken Sie auf **Alle Benutzer und Gruppen in Ihrer Organisation hinzufügen**.
-9. Wenn es Gastbenutzer gibt, die Berechtigungen zum Entschlüsseln von Dateien haben sollten, klicken Sie auf **Benutzer oder Gruppen** hinzufügen und fügen Sie diese hinzu.
+9. Wenn es Gäste gibt, die Berechtigungen zum Entschlüsseln von Dateien haben sollten, klicken Sie auf **Benutzer oder Gruppen** hinzufügen, und fügen Sie sie hinzu.
 10.  Klicken Sie auf **Speichern** und dann auf **Weiter**.
 11. Aktivieren Sie auf der Seite **Inhaltskennzeichnung** die Inhaltskennzeichnung, wenn Dateien, die mit dieser Bezeichnung klassifiziert wurden, automatisch eine Kopf-oder Fußzeile oder ein Wasserzeichen hinzugefügt werden soll.
 12. Legen Sie auf der Seite **Website- und Gruppeneinstellungen** die Option **Website- und Gruppeneinstellungen** auf **Ein** fest.

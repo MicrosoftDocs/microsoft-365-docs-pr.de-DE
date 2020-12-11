@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Erfahren Sie, wie Sie domänenbasierte Nachrichtenauthentifizierung, Berichterstellung und Konformität (DMARC) konfigurieren, um von Ihrer Organisation gesendete Nachrichten zu validieren.
-ms.openlocfilehash: 4ff2c93e420957714815100243a6502e7ea087a7
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 9dd97b1fc60f0b6198bb6c55af291c7dd103ac5d
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446371"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615336"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Verwenden von DMARC zum Überprüfen von E-Mails
 
@@ -191,7 +191,7 @@ Sie können DMARC allmählich implementieren, ohne den übrigen E-Mail-Nachricht
 3. Anfordern, dass externe E-Mail-Systeme keine Nachrichten akzeptieren, die die DMARC-Prüfung nicht bestehen
 
     Der letzte Schritt ist das Implementieren einer Ablehnungsrichtlinie. Eine Ablehnungsrichtlinie ist ein DMARC-TXT-Eintrag, dessen Richtlinie auf „reject" festgelegt ist (p=reject). Wenn Sie dies festlegen, fordern Sie DMARC-Empfänger auf, keine Nachrichten zu akzeptieren, die die DMARC-Prüfungen nicht bestehen.
-    
+
 4. Wie richte ich DMARC für Subdomain ein?
 
 DMARC wird durch die Veröffentlichung einer Richtlinie als TXT-Eintrag im DNS implementiert und ist hierarchisch aufgebaut (z. B. gilt eine für contoso.com veröffentlichte Richtlinie für sub.domain.contonos.com, sofern nicht ausdrücklich eine andere Richtlinie für die Subdomain definiert wird). Dies ist nützlich, da Organisationen eine kleinere Anzahl von DMARC-Einträgen auf hoher Ebene für eine breitere Abdeckung angeben können. Achten Sie darauf, explizite DMARC-Einträge für Subdomänen zu konfigurieren, wenn Sie nicht möchten, dass die Subdomänen den DMARC-Eintrag der Top-Level-Domäne erben.
@@ -249,7 +249,7 @@ Sie möchten mehr über DMARC erfahren? Die folgenden Ressourcen können nützli
 
 - [Antispam-Nachrichtenkopfzeilen](anti-spam-message-headers.md) umfassen die Syntax- und Kopfzeilenfelder, die von Microsoft 365 für DMARC-Überprüfungen verwendet werden.
 
-- Sehen Sie sich die [DMARC Training Series](https://www.m3aawg.org/activities/training/dmarc-training-series) von M <sup>3</sup>AAWG (Messaging, Malware, Mobile Anti-Abuse Working Group) an.
+- Sehen Sie sich die [DMARC Training Series](https://www.m3aawg.org/activities/training/dmarc-training-series) von M<sup>3</sup>AAWG (Messaging, Malware, Mobile Anti-Abuse Working Group) an.
 
 - Verwenden Sie die Checkliste von [dmarcian](https://space.dmarcian.com/deployment/).
 

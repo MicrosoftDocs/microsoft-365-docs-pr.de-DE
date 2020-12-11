@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Lernen Sie drei Tools kennen, mit denen Sie Lecks für personenbezogene Daten aufspüren können.
-ms.openlocfilehash: 67cce80435aa0f01f496ec67d617f0a2dfff8ec8
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a212067d75ab3d9e195e3d869e0a6ae7d1ed4d01
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202699"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616380"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Überwachen auf Lecks für personenbezogene Daten
 
@@ -117,7 +117,6 @@ Die zweite Richtlinie blockiert Downloads von Dateien auf alle nicht verwalteten
 Die folgenden Attributtypen werden in Kürze in Cloud App Security verfügbar sein:
 
 - Typen vertraulicher Informationen
-
 - Einheitliche Beschriftungen in Microsoft 365 und Azure Information Protection
 
 ### <a name="cloud-app-security-dashboard"></a>Cloud App Security-Dashboard
@@ -142,69 +141,24 @@ Weitere Informationen:
 
 Benachrichtigen, wenn eine Datei mit einer Kreditkartennummer von einer genehmigten Cloud-App freigegeben wird.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left"><strong>Steuerelement</strong></th>
-<th align="left"><strong>Einstellungen</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Richtlinientyp</td>
-<td align="left">Dateirichtlinie</td>
-</tr>
-<tr class="even">
-<td align="left">Richtlinienvorlage</td>
-<td align="left">Keine Vorlage</td>
-</tr>
-<tr class="odd">
-<td align="left">Schweregrad der Richtlinie</td>
-<td align="left">Hoch</td>
-</tr>
-<tr class="even">
-<td align="left">Kategorie</td>
-<td align="left">DLP</td>
-</tr>
-<tr class="odd">
-<td align="left">Filtereinstellungen</td>
-<td align="left"><p>Zugriffsebene = Öffentlich (Internet), Öffentlich, Extern</p>
-<p>App = &lt;Apps auswählen&gt; (verwenden Sie diese Einstellung, wenn Sie bestimmte SaaS-Apps überwachen möchten)</p></td>
-</tr>
-<tr class="even">
-<td align="left">Übernehmen für</td>
-<td align="left">Alle Dateien, alle Besitzer</td>
-</tr>
-<tr class="odd">
-<td align="left">Inhaltsuntersuchung</td>
-<td align="left"><p>Schließt Dateien ein, die einem vorhanden Ausdruck entsprechen: Alle Länder: Finanzen: Kreditkartennummer</p>
-<p>Kein relevanter Kontext erforderlich: deaktiviert (Dies entspricht sowohl Schlüsselwörtern als auch RegEx)</p>
-<p>Schließt Dateien mit mindestens 1 Übereinstimmung ein</p>
-<p>Maskierung der letzten 4 Zeichen eines Verstoßes aufheben: aktiviert</p></td>
-</tr>
-<tr class="even">
-<td align="left">Warnungen</td>
-<td align="left"><p>Warnung für jede übereinstimmende Datei erstellen: aktiviert</p>
-<p>Limit für tägliche Warnungen: 1000</p>
-<p>Warnung als E-Mail auswählen: aktiviert</p>
-<p>An: infosec@contoso.com</p></td>
-</tr>
-<tr class="odd">
-<td align="left">Governance</td>
-<td align="left"><p>Microsoft OneDrive for Business</p>
-<p>Als privat festlegen: Aktivieren Sie „Externe Benutzer entfernen“</p>
-<p>Alle anderen Einstellungen: deaktiviert</p>
-<p>Microsoft SharePoint Online</p>
-<p>Als privat festlegen: Aktivieren Sie „Externe Benutzer entfernen“</p>
-<p>Alle anderen Einstellungen: deaktiviert</p></td>
-</tr>
-</tbody>
-</table>
+****
+
+|Steuerelement|Einstellungen|
+|---|---|
+|Richtlinientyp|Dateirichtlinie|
+|Richtlinienvorlage|Keine Vorlage|
+|Schweregrad der Richtlinie|Hoch|
+|Kategorie|DLP|
+|Filtereinstellungen|Zugriffsebene = Öffentlich (Internet), Öffentlich, Extern <p> App = \<select apps\> (verwenden Sie diese Einstellung, wenn Sie bestimmte SaaS-Apps überwachen möchten)|
+|Übernehmen für|Alle Dateien, alle Besitzer|
+|Inhaltsuntersuchung|Schließt Dateien ein, die einem vorhanden Ausdruck entsprechen: Alle Länder: Finanzen: Kreditkartennummer <p> Kein relevanter Kontext erforderlich: deaktiviert (Dies entspricht sowohl Schlüsselwörtern als auch RegEx) <p> Schließt Dateien mit mindestens 1 Übereinstimmung ein <p> Maskierung der letzten 4 Zeichen eines Verstoßes aufheben: aktiviert|
+|Warnungen|Warnung für jede übereinstimmende Datei erstellen: aktiviert <p> Limit für tägliche Warnungen: 1000 <p> Warnung als E-Mail auswählen: aktiviert <p> An: infosec@contoso.com|
+|Governance|Microsoft OneDrive for Business <p> Als privat festlegen: Aktivieren Sie „Externe Benutzer entfernen“ <p> Alle anderen Einstellungen: deaktiviert <p> Microsoft SharePoint Online <p> Als privat festlegen: Aktivieren Sie „Externe Benutzer entfernen“ <p> Alle anderen Einstellungen: deaktiviert|
+|
 
 Ähnliche Richtlinien:
 
 - Ermitteln der Freigabe von Dateien mit PII – E-Mail-Adresse
-
 - Ermitteln der Freigabe von Dateien mit PII – Reisepassnummer
 
 ### <a name="detect-customer-or-hr-data-in-box-or-onedrive-for-business"></a>Ermitteln von Kunden- oder Personaldaten in Box oder OneDrive for Business
@@ -214,64 +168,23 @@ Benachrichtigen, wenn eine Datei mit der Bezeichnung „Kundendaten“ oder „P
 Hinweise:
 
 - Zum Überwachen von Box muss mithilfe des API-Connector-SDK ein Connector konfiguriert werden.
-
 - Diese Richtlinie erfordert Funktionen, die sich derzeit im privaten Vorschaumodus befinden.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left"><strong>Steuerelement</strong></th>
-<th align="left"><strong>Einstellungen</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Richtlinientyp</td>
-<td align="left">Aktivitätsrichtlinie</td>
-</tr>
-<tr class="even">
-<td align="left">Richtlinienvorlage</td>
-<td align="left">Keine Vorlage</td>
-</tr>
-<tr class="odd">
-<td align="left">Schweregrad der Richtlinie</td>
-<td align="left">Hoch</td>
-</tr>
-<tr class="even">
-<td align="left">Kategorie</td>
-<td align="left">Freigabesteuerelement</td>
-</tr>
-<tr class="odd">
-<td align="left">Aktion ausführen bei</td>
-<td align="left">Einzelne Aktivität</td>
-</tr>
-<tr class="even">
-<td align="left">Filtereinstellungen</td>
-<td align="left"><p>Aktivitätstyp = Dateiupload</p>
-<p>App = Microsoft OneDrive for Business und Box</p>
-<p>Klassifizierungsbezeichnung (derzeit im privaten Vorschaumodus): Azure Information Protection = Kundendaten, Personalwesen – Gehaltsinformationen, Personalwesen – Mitarbeiterdaten</p></td>
-</tr>
-<tr class="odd">
-<td align="left">Warnungen</td>
-<td align="left"><p>Warnung erstellen: aktiviert</p>
-<p>Limit für tägliche Warnungen: 1000</p>
-<p>Warnung als E-Mail auswählen: aktiviert</p>
-<p>An: infosec@contoso.com</p></td>
-</tr>
-<tr class="even">
-<td align="left">Governance</td>
-<td align="left"><p>Alle Apps</p>
-<p>Unter Benutzerquarantäne stellen: aktiviert</p>
-<p>Alle anderen Einstellungen: deaktiviert</p>
-<p>Office 365</p>
-<p>Unter Benutzerquarantäne stellen: aktiviert</p>
-<p>Alle anderen Einstellungen: deaktiviert</p></td>
-</tr>
-</tbody>
-</table>
+****
+
+|Steuerelement|Einstellungen|
+|---|---|
+|Richtlinientyp|Aktivitätsrichtlinie|
+|Richtlinienvorlage|Keine Vorlage|
+|Schweregrad der Richtlinie|Hoch|
+|Kategorie|Freigabesteuerelement|
+|Aktion ausführen bei|Einzelne Aktivität|
+|Filtereinstellungen|Aktivitätstyp = Dateiupload <p> App = Microsoft OneDrive for Business und Box <p> Klassifizierungsbezeichnung (derzeit im privaten Vorschaumodus): Azure Information Protection = Kundendaten, Personalwesen – Gehaltsinformationen, Personalwesen – Mitarbeiterdaten|
+|Warnungen|Warnung erstellen: aktiviert <p> Limit für tägliche Warnungen: 1000 <p> Warnung als E-Mail auswählen: aktiviert <p> An: infosec@contoso.com|
+|Governance|Alle Apps <p> Unter Benutzerquarantäne stellen: aktiviert <p> Alle anderen Einstellungen: deaktiviert <p> Office 365 <p> Unter Benutzerquarantäne stellen: aktiviert <p> Alle anderen Einstellungen: deaktiviert|
+|
 
 Ähnliche Richtlinien:
 
 - Erkennung umfangreicher Downloads von Kundendaten oder Personaldaten – Warnung, wenn eine große Anzahl von Dateien mit Kundendaten oder Personaldaten erkannt wurden, die von einem einzelnen Benutzer innerhalb eines kurzen Zeitraums heruntergeladen werden.
-
 - Erkennung der Freigabe von Kunden- und Personaldaten – Warnung, wenn Dateien mit Kunden- oder Personaldaten freigegeben werden.
