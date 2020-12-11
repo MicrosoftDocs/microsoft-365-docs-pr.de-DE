@@ -18,8 +18,32 @@
       href: compliance-extensibility.md
 - name: Verwalten der Insider-Risiken
   items:
+    - name: "Microsoft\_365 Insider Risk-Lösungen"
+      href: insider-risk-solution-overview.md
+    - name: Kommunikationscompliance
+      items:
+        - name: Übersicht
+          href: communication-compliance-solution-overview.md
+        - name: Informationen zur Kommunikationscompliance
+          href: communication-compliance.md
+        - name: Planen der Kommunikationscompliance
+          href: communication-compliance-plan.md
+        - name: Erste Schritte mit der Kommunikationscompliance
+          href: communication-compliance-configure.md
+        - name: Untersuchen und Beheben von Warnungen zur Kommunikationscompliance
+          href: communication-compliance-investigate-remediate.md
+        - name: Funktionsreferenz für Kommunikationscompliance
+          href: communication-compliance-feature-reference.md
+        - name: Fallstudie – Contoso konfiguriert schnell eine Richtlinie für anstößige Sprache
+          href: communication-compliance-case-study.md
+        - name: Aufsichtsrichtlinien in Office 365
+          href: supervision-policies.md
+        - name: Konfigurieren von Aufsichtsrichtlinien für Office 365
+          href: configure-supervision-policies.md
     - name: Insider-Risikomanagement
       items:
+        - name: Übersicht
+          href: insider-risk-management-solution-overview.md
         - name: Informationen zum Insider-Risikomanagement
           href: insider-risk-management.md
         - name: Planen des Insider-Risikomanagements
@@ -40,27 +64,12 @@
           href: insider-risk-management-users.md
         - name: Erstellen von Vorlagen für Benachrichtigungen zu Insider-Risiken
           href: insider-risk-management-notices.md
-    - name: Kommunikationscompliance
-      items:
-        - name: Informationen zur Kommunikationscompliance
-          href: communication-compliance.md
-        - name: Planen der Kommunikationscompliance
-          href: communication-compliance-plan.md
-        - name: Erste Schritte mit der Kommunikationscompliance
-          href: communication-compliance-configure.md
-        - name: Untersuchen und Beheben von Warnungen zur Kommunikationscompliance
-          href: communication-compliance-investigate-remediate.md
-        - name: Funktionsreferenz für Kommunikationscompliance
-          href: communication-compliance-feature-reference.md
-        - name: Fallstudie – Contoso konfiguriert schnell eine Richtlinie für anstößige Sprache
-          href: communication-compliance-case-study.md
-        - name: Aufsichtsrichtlinien in Office 365
-          href: supervision-policies.md
-        - name: Konfigurieren von Aufsichtsrichtlinien für Office 365
-          href: configure-supervision-policies.md
     - name: Informationsbarrieren
-      href: information-barriers.md
       items:
+        - name: Übersicht
+          href: information-barriers-solution-overview.md
+        - name: Informationen zu Informationsbarrieren
+          href: information-barriers.md
         - name: Definieren von Richtlinien für Informationsbarrieren
           href: information-barriers-policies.md
         - name: Attribute für Richtlinien für Informationsbarrieren
@@ -71,6 +80,8 @@
           href: information-barriers-edit-segments-policies.md
     - name: Verwaltung des privilegierten Zugriffs
       items:
+        - name: Übersicht
+          href: privileged-access-management-solution-overview.md
         - name: Informationen zur Verwaltung des privilegierten Zugriffs
           href: privileged-access-management-overview.md
         - name: Erste Schritte mit der Verwaltung des privilegierten Zugriffs
@@ -376,7 +387,7 @@
               href: archive-xip-data.md
             - name: XSLT/XML
               href: archive-xslt-xml-data.md
-            - name: Zoom-Besprechungen
+            - name: Zoom Besprechungen
               href: archive-zoommeetings-data.md
         - name: TeleMessage Datenconnectors
           items:
@@ -475,9 +486,9 @@
               href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
         - name: Konfigurieren der Inhaltssuche
           items:
-            - name: Berechtigungsfilter für die Inhaltssuche konfigurieren
+            - name: Konfigurieren der Berechtigungsfilterung für die Inhaltssuche
               href: permissions-filtering-for-content-search.md
-            - name: Größe von PST-Dateien für den Export von Suchergebnissen ändern
+            - name: Ändern der Größe von PST-Dateien beim Exportieren von Suchergebnissen
               href: change-the-size-of-pst-files-when-exporting-results.md
             - name: Deaktivieren von Berichten beim Exportieren von Suchergebnissen
               href: disable-reports-when-you-export-content-search-results.md
@@ -856,7 +867,7 @@
       href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
     - name: Beibehalten von Bcc-Empfängern und Empfängern aus erweiterten Verteilergruppen
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
-- name: Verwalten von Richtlinien zur Überwachung und Benachrichtigung
+- name: Verwalten von Überwachungs- und Warnungsrichtlinien
   items:
     - name: Grundlegende Überwachung
       items:
@@ -926,12 +937,12 @@
           href: ../solutions/financial-services-secure-collaboration.md
         - name: Sicherheit und Compliance für Energiedienstleistungen
           href: ../solutions/energy-secure-collaboration.md
-- name: Hybrid-Compliancefunktionen
+- name: Hybridcompliancefunktionen
   items:
     - name: Exchange Online-E-Mailverschlüsselung mit AD RMS
       href: information-rights-management-in-exchange-online.md
       items:
-        - name: IRM für die Verwendung eines lokalen AD RMS-Servers konfigurieren
+        - name: Konfigurieren von IRM für die Verwendung eines lokalen AD RMS-Servers
           href: configure-irm-to-use-an-on-premises-ad-rms-server.md
 - name: Office 365 Enterprise
   href: 'https://docs.microsoft.com/Office365/Enterprise'
