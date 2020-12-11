@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Behebung von Bedrohungen
 appliesto:
 - Microsoft 365 Defender
-ms.openlocfilehash: 742f19c4051b2cab3311562f688da51975bd3c48
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 67b27102ff9319e334b5ff1e006fe49f14d3f1ed
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615888"
+ms.locfileid: "49620575"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Beheben von in Office 365 zugestellten böswilligen e-Mails
 
@@ -33,7 +33,7 @@ Die Wiederherstellung bedeutet, dass eine vorgeschriebene Aktion gegen eine Bedr
 
 ## <a name="what-you-need-to-know-before-you-begin"></a>Was Sie wissen müssen, bevor Sie beginnen
 
-Administratoren können erforderliche Aktionen für e-Mails durchführen, aber um diese Aktionen genehmigt zu erhalten, muss Ihnen die *Such-und Säuberungs* Rolle über **Sicherheits & Compliance Center** \> - **Berechtigungen** zugewiesen sein. Ohne die Rolle "suchen und löschen", die einer der Rollengruppen hinzugefügt wurde, können Sie die Aktion nicht ausführen.
+Administratoren können erforderliche Aktionen für e-Mails durchführen, aber um diese Aktionen genehmigt zu erhalten, muss Ihnen die *Such-und Säuberungs* Rolle über **Sicherheits & Compliance Center** \> - **Berechtigungen** zugewiesen sein. Ohne die "Suche und Säuberung"-Rolle, die einer der Rollengruppen hinzugefügt wurde, können Sie die Aktion nicht ausführen.
 
 ## <a name="manual-and-automated-remediation"></a>Manuelle und automatische Korrektur
 
