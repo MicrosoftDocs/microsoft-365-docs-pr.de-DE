@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: So hat ein fiktives, aber repräsentatives globales Unternehmen Microsoft 365-Lösungen bereitgestellt.
-ms.openlocfilehash: 66040bdd64e83d796e6d045aad2f512898452c50
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: 1e06da623a9d580d71823ab030976b213a9e7022
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371636"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620551"
 ---
 # <a name="microsoft-365-solutions-for-the-contoso-corporation"></a>Microsoft 365-Lösungen für die Contoso Corporation
 
@@ -30,7 +30,7 @@ Das Gesamtziel von Contoso für Microsoft 365 Enterprise ist die Beschleunigung 
 
 Zunächst, erfahren Sie mehr über die [Contoso Corporation](../enterprise/contoso-overview.md), die weltweiten Büros sowie die Entwurfsaspekte, die bei der Bereitstellung von Microsoft 365 Enterprise berücksichtigt wurden.
 
-Als Nächstes sehen Sie, wie Contoso Microsoft 365 für diese Lösungen und Szenarien verwendet hat:
+Sehen Sie als nächstes, wie Contoso Microsoft 365 für diese Lösungen und Szenarien verwendet hat:
 
 - [COVID-19-Reaktion und Infrastruktur für Arbeiten zu Hause und im Büro](contoso-remote-onsite-work.md)
 
@@ -38,3 +38,4 @@ Als Nächstes sehen Sie, wie Contoso Microsoft 365 für diese Lösungen und Szen
 
 - [Migration ihrer lokalen Benutzer in Teams für einheitliche Kommunikation, Zusammenarbeit und Sprache](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview)
 
+- [Konfigurieren Sie eine Richtlinie bezüglich anstößiger Sprache für Microsoft Teams, Exchange und Kommunikation in Yammer](../compliance/communication-compliance-case-study.md)
