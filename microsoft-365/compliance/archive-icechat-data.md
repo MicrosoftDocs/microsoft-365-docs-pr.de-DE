@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen Connector zum Importieren und Archivieren von Daten aus dem ICE-Chat-Tool in Microsoft 365 einrichten. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren, damit Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten der drittanbieterdaten Ihrer Organisation verwenden können.
-ms.openlocfilehash: cd56e98aadc2b7328b733939ecc8951413309ba5
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: 590f9b3b119ee261ec2ff6c4b5196bd9fea42697
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408765"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620402"
 ---
 # <a name="set-up-a-connector-to-archive-ice-chat-data"></a>Einrichten eines Connectors zum Archivieren von Ice-Chat Daten
 
@@ -45,8 +45,6 @@ In der folgenden Übersicht wird erläutert, wie Sie einen Connector zum Archivi
 
 Einige der erforderlichen Schritte zum Archivieren von Ice-Chat Daten liegen außerhalb von Microsoft 365 und müssen abgeschlossen sein, bevor Sie den Connector im Compliance Center erstellen können.
 
-- Ihre Organisation muss einwilligen, dass der Office 365 Import Dienst auf Postfachdaten in Ihrer Organisation zugreifen kann. Um dieser Anforderung zuzustimmen, gehen Sie zu [dieser Seite](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), melden Sie sich mit den Anmeldeinformationen eines Office 365 globalen Administrators an, und nehmen Sie dann die Anforderung an. Sie müssen diesen Schritt ausführen, bevor Sie den ICE Chat Connector in Schritt 3 erfolgreich erstellen können.
-
 - Ice Chat berechnet ihren Kunden Gebühren für externe Compliance. Ihre Organisation sollte sich an die Ice Chat Sales Group wenden, um zu diskutieren und die Ice Chat Data Services-Vereinbarung zu unterzeichnen, die Sie unter erhalten können [https://www.theice.com/publicdocs/agreements/ICE\_Data\_Services\_Agreement.pdf](https://www.theice.com/publicdocs/agreements/ICE\_Data\_Services\_Agreement.pdf) . Diese Vereinbarung besteht zwischen Ice Chat und Ihrer Organisation und umfasst keine Microsoft. Nachdem Sie in Schritt 2 eine Ice Chat SFTP-Website eingerichtet haben, stellt Ice Chat die FTP-Anmeldeinformationen direkt in Ihrer Organisation bereit. Anschließend sollten Sie diese Anmeldeinformationen bei der Einrichtung des Connectors in Schritt 3 an Microsoft weitergeben.
 
 - Sie müssen eine Ice Chat SFTP-Website einrichten, bevor Sie den Connector in Schritt 3 erstellen. Nach der Arbeit mit ICE Chat, um die SFTP-Website einzurichten, werden Daten aus dem ICE-Chat jeden Tag auf die SFTP-Website hochgeladen. Der in Schritt 3 erstellte Connector stellt eine Verbindung mit dieser SFTP-Website her und überträgt die Chat Daten an Microsoft 365-Postfächer. SFTP verschlüsselt auch die Ice-Chat-Daten, die während des Übertragungsprozesses an Postfächer gesendet werden.
@@ -59,13 +57,13 @@ Der erste Schritt besteht darin, eine Kopie der öffentlichen Schlüssel für Se
 
 1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com) und klicken Sie im linken Navigationsbereich auf **Daten-Konnektoren** .
 
-2. Klicken Sie auf der Seite **Daten Konnektoren** unter **Ice Chat**auf **Ansicht**.
+2. Klicken Sie auf der Seite **Daten Konnektoren** unter **Ice Chat** auf **Ansicht**.
 
 3. Klicken Sie auf der Seite **Ice Chat** auf **Connector hinzufügen**.
 
 4. Klicken Sie auf der Seite **Nutzungsbedingungen** auf **annehmen**.
 
-5. Klicken Sie auf der Seite **Anmeldeinformationen für ICE Chat SFTP-Website hinzufügen** unter Schritt 1 auf den Link **SSH herunterladen**, **PGP-Schlüssel**herunterladen und **IP-Adress Links herunterladen** , um eine Kopie der einzelnen Dateien auf dem lokalen Computer zu speichern. Diese Dateien enthalten die folgenden Elemente, die zum Konfigurieren der ICE Chat SFTP-Website in Schritt 2 verwendet werden:
+5. Klicken Sie auf der Seite **Anmeldeinformationen für ICE Chat SFTP-Website hinzufügen** unter Schritt 1 auf den Link **SSH herunterladen**, **PGP-Schlüssel** herunterladen und **IP-Adress Links herunterladen** , um eine Kopie der einzelnen Dateien auf dem lokalen Computer zu speichern. Diese Dateien enthalten die folgenden Elemente, die zum Konfigurieren der ICE Chat SFTP-Website in Schritt 2 verwendet werden:
 
    - Öffentlicher SSH-Schlüssel: dieser Schlüssel wird zum Konfigurieren von Secure SSH verwendet, um eine sichere Remoteanmeldung zu ermöglichen, wenn der Connector eine Verbindung mit der ICE Chat SFTP-Website herstellt.
 
@@ -85,7 +83,7 @@ Der letzte Schritt ist das Erstellen eines ICE-Chat-Konnektors im Microsoft 365 
 
 1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com) und klicken Sie im linken Navigationsbereich auf **Daten-Konnektoren** .
 
-2. Klicken Sie auf der Seite **Daten Konnektoren** unter **Ice Chat**auf **Ansicht**.
+2. Klicken Sie auf der Seite **Daten Konnektoren** unter **Ice Chat** auf **Ansicht**.
 
 3. Klicken Sie auf der Seite **Ice Chat** auf **Connector hinzufügen**.
 

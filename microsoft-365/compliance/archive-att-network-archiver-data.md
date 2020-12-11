@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen TeleMessage-Konnektor zum Importieren und Archivieren von SMS-und MMS-Daten aus dem Mobilfunknetz von&T einrichten. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren, damit Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten der drittanbieterdaten Ihrer Organisation verwenden können.
-ms.openlocfilehash: 253acb23e9ac2cd5d97dfd2aaaedecec3d91a91f
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: ba728a690db4d4c31158ad68fc853c29218226cc
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408973"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620121"
 ---
 # <a name="set-up-a-connector-to-archive-att-smsmms-data"></a>Einrichten eines Connectors zum Archivieren bei&T-SMS/MMS-Daten
 
@@ -53,8 +53,6 @@ Einige der erforderlichen Implementierungsschritte zum Archivieren bei&T-Netzwer
 
 - Ihre Mitarbeiter müssen über unternehmenseigene und Unternehmens hafte Mobiltelefone im&T-Mobilfunknetz verfügen. Das Archivieren von Nachrichten in Microsoft 365 ist nicht für Mitarbeiter eigene Geräte oder "Bring your own Devices (BYOD)" zur Verfügung.
 
-- Ihre Organisation muss einwilligen, dass der Office 365 Import Dienst auf Postfachdaten in Ihrer Organisation zugreifen kann. Sie müssen diese Zustimmung erteilen, wenn Sie den Connector erstellen. Um dieser Anforderung zuzustimmen, gehen Sie zu [dieser Seite](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), melden Sie sich mit den Anmeldeinformationen des globalen Administrators von Microsoft 365 an, und nehmen Sie dann die Anforderung an. Sie müssen diesen Schritt ausführen, bevor Sie erfolgreich einen at&T Network Connector erstellen können.
-
 - Der Benutzer, der einen at&T-Netzwerk Connector erstellt, muss in Exchange Online die Rolle "Post Fach Import Export" zugewiesen haben. Dies ist für das Hinzufügen von Connectors auf der Seite " **Daten Konnektoren** " im Microsoft 365 Compliance Center erforderlich. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle "Post Fach Import exportieren" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle "Post Fach Import Export" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie im Abschnitt [Erstellen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) von Rollengruppen oder [Ändern von Rollengruppen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
 
 ## <a name="create-a-att-network-connector"></a>Erstellen eines at&T-Netzwerk Connectors
@@ -77,13 +75,9 @@ Nachdem Sie die im vorherigen Abschnitt beschriebenen Voraussetzungen erfüllt h
 
 6. Aktivieren Sie auf der Seite **Benutzerzuordnung** die Option Automatische Benutzerzuordnung. Zum Aktivieren der benutzerdefinierten Zuordnung laden Sie eine CSV-Datei hoch, die die Benutzer Zuordnungsinformationen enthält, und klicken Sie dann auf **weiter**.
 
-7. Geben Sie die Zustimmung des Administrators ein, und klicken Sie auf **weiter**.
+7. Überprüfen Sie Ihre Einstellungen, und klicken Sie dann auf **Fertig stellen** , um den Connector zu erstellen.
 
-   Um die Zustimmung des Administrators bereitzustellen, müssen Sie mit den Anmeldeinformationen eines Office 365 globalen Administrators angemeldet sein und dann die Zustimmungs Anforderung annehmen. Wenn Sie nicht als globaler Administrator angemeldet sind, können Sie zu [dieser Seite](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) wechseln und sich mit globalen Administratoranmeldeinformationen anmelden, um die Anforderung zu akzeptieren. 
-
-8. Überprüfen Sie Ihre Einstellungen, und klicken Sie dann auf **Fertig stellen** , um den Connector zu erstellen.
-
-9. Wechseln Sie zur Registerkarte **Connectors** auf der Seite **Daten Konnektoren** im Compliance Center, um den Fortschritt des Importvorgangs für den neuen Connector anzuzeigen.
+8. Wechseln Sie zur Registerkarte **Connectors** auf der Seite **Daten Konnektoren** im Compliance Center, um den Fortschritt des Importvorgangs für den neuen Connector anzuzeigen.
 
 ## <a name="known-issues"></a>Bekannte Probleme
 

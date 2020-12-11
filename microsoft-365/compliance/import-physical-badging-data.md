@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Administratoren können einen Daten Konnektor einrichten, um Daten aus dem physischen Badges-System Ihrer Organisation nach Microsoft 365 zu importieren. Auf diese Weise können Sie diese Daten in Richtlinien für das Insider Risikomanagement verwenden, damit Sie den Zugriff auf ihre physischen Gebäude von bestimmten Benutzern erkennen können, die auf eine mögliche interne Bedrohung Ihrer Organisation hindeuten.
-ms.openlocfilehash: 71f43d8e6abd53454b6c81d811d0dca2e8b08388
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+ms.openlocfilehash: 7e745b42d0df79f5c39f9fa02cb1b63f164ec2a5
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816648"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620131"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Einrichten eines Connectors zum Importieren physischer Badges-Daten (Vorschau)
 
@@ -38,8 +38,6 @@ Das Einrichten eines physischen Badges-Connectors besteht aus den folgenden Aufg
 - Optional wird das automatische Ausführen des Skripts zum Importieren von derzeit physischen Badges-Daten geplant.
 
 ## <a name="before-you-set-up-the-connector"></a>Vor dem Einrichten des Connectors
-
-- Ihre Organisation muss einwilligen, dass der Office 365-Import Dienst auf Daten in Ihrer Organisation zugreifen kann. Um dieser Anforderung zuzustimmen, gehen Sie zu [dieser Seite](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), melden Sie sich mit den Anmeldeinformationen eines globalen Administrators von Microsoft 365 an, und nehmen Sie dann die Anforderung an. Sie müssen diesen Schritt ausführen, bevor Sie den physischen Badges-Connector in Schritt 3 erfolgreich erstellen können.
 
 - Dem Benutzer, der den physischen Badges-Connector in Schritt 3 erstellt, muss in Exchange Online die Rolle "Post Fach Import Export" zugewiesen sein. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle "Post Fach Import exportieren" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine neue Rollengruppe erstellen, die Rolle "Post Fach Import Export" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie im Abschnitt [Erstellen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) von Rollengruppen oder [Ändern von Rollengruppen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
 
@@ -71,7 +69,7 @@ Die JSON-Datei muss mit der Schema Definition übereinstimmen, die für den Conn
 |Posten|Die Referenz-ID des physischen Objekts oder physischen Zugriffspunkts.| Alphanumerische Zeichenfolge|
 |AssetName|Der Anzeigename des physischen Objekts oder des physischen Zugriffs Points.|Alphanumerische Zeichenfolge|
 |EventTime|Der Zeitstempel des Zugriffs.|Datum und Uhrzeit im UTC-Format|
-|AccessStatus|Wert von `Success` oder `Failed`| String|
+|AccessStatus|Wert von `Success` oder `Failed`| Zeichenfolge|
 |||
 
 Im folgenden finden Sie ein Beispiel für eine JSON-Datei, die dem erforderlichen Schema entspricht:
@@ -137,11 +135,11 @@ Im nächsten Schritt erstellen Sie einen physikalischen Badges-Connector im Micr
 
 1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com/) und klicken Sie dann im linken Navigationsbereich auf **Datenverbindungen** .
 
-2. Klicken Sie auf der Seite **Daten Konnektoren** unter **physikalische Badges** auf **Ansicht** .
+2. Klicken Sie auf der Seite **Daten Konnektoren** unter **physikalische Badges** auf **Ansicht**.
 
-3. Klicken Sie auf der Seite **physikalische Badges** auf **Connector hinzufügen** .
+3. Klicken Sie auf der Seite **physikalische Badges** auf **Connector hinzufügen**.
 
-4. Führen Sie auf der Seite **Authentifizierungsanmeldeinformationen** folgende Schritte aus, und klicken Sie dann auf **weiter** :
+4. Führen Sie auf der Seite **Authentifizierungsanmeldeinformationen** folgende Schritte aus, und klicken Sie dann auf **weiter**:
   
    1. Geben Sie die Azure AD Anwendungs-ID für die Azure-App ein, die Sie in Schritt 1 erstellt haben, oder fügen Sie Sie ein.
   
@@ -155,7 +153,7 @@ Im nächsten Schritt erstellen Sie einen physikalischen Badges-Connector im Micr
 
    Die Seite Status enthält auch einen Link zum Skript. In diesem Skript erfahren Sie, wie Sie die JSON-Datei an den API-Endpunkt senden.
 
-7. Klicken Sie auf **Fertig** .
+7. Klicken Sie auf **Fertig**.
 
    Der neue Connector wird in der Liste auf der Registerkarte **Connectors** angezeigt.
 
@@ -240,9 +238,9 @@ Sie können die Task Planer-app in Windows so ausführen, dass das Skript jeden 
 
 2. Klicken Sie auf die **Task Planer** -APP, um Sie zu öffnen.
 
-3. Klicken Sie im Abschnitt **Aktionen** auf **Aufgabe erstellen** .
+3. Klicken Sie im Abschnitt **Aktionen** auf **Aufgabe erstellen**.
 
-4. Geben Sie auf der Registerkarte **Allgemein** einen beschreibenden Namen für den geplanten Vorgang ein. Beispiel: **Physical Badges Connector Script** . Sie können auch eine optionale Beschreibung hinzufügen.
+4. Geben Sie auf der Registerkarte **Allgemein** einen beschreibenden Namen für den geplanten Vorgang ein. Beispiel: **Physical Badges Connector Script**. Sie können auch eine optionale Beschreibung hinzufügen.
 
 5. Führen Sie unter **Sicherheitsoptionen** die folgenden Schritte aus:
 
@@ -250,21 +248,21 @@ Sie können die Task Planer-app in Windows so ausführen, dass das Skript jeden 
 
    2. Stellen Sie sicher, dass das Kontrollkästchen **mit den höchsten Rechten ausführen** aktiviert ist.
 
-6. Wählen Sie die Registerkarte **Auslöser** aus, klicken Sie auf **neu** , und führen Sie dann die folgenden Schritte aus:
+6. Wählen Sie die Registerkarte **Auslöser** aus, klicken Sie auf **neu**, und führen Sie dann die folgenden Schritte aus:
 
    1. Wählen Sie unter **Einstellungen** die Option **täglich** aus, und klicken Sie dann auf Datum und Uhrzeit, um das Skript zum ersten Mal auszuführen. Das Skript wird jeden Tag zur gleichen angegebenen Zeit.
 
    2. Stellen Sie unter **Erweiterte Einstellungen** sicher, dass das Kontrollkästchen **aktiviert** ausgewählt ist.
 
-   3. Klicken Sie auf **OK** .
+   3. Klicken Sie auf **OK**.
 
-7. Wählen Sie die Registerkarte **Aktionen** aus, klicken Sie auf **neu** , und führen Sie dann die folgenden Schritte aus:
+7. Wählen Sie die Registerkarte **Aktionen** aus, klicken Sie auf **neu**, und führen Sie dann die folgenden Schritte aus:
 
    ![Aktionseinstellungen zum Erstellen eines neuen geplanten Tasks für das physikalische Badges-Connector-Skript](..\media\SchedulePhysicalBadgingScript1.png)
 
    1. Stellen Sie in der Dropdownliste **Aktion** sicher, dass **Programm starten** ausgewählt ist.
 
-   2. Klicken Sie im Feld **Programm/Skript** auf **Durchsuchen** , und wechseln Sie zum folgenden Speicherort, und wählen Sie ihn aus, damit der Pfad im Feld angezeigt wird: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe.
+   2. Klicken Sie im Feld **Programm/Skript** auf **Durchsuchen**, und wechseln Sie zum folgenden Speicherort, und wählen Sie ihn aus, damit der Pfad im Feld angezeigt wird: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe.
 
    3. Fügen Sie im Feld **Argumente hinzufügen (optional)** den gleichen Skriptbefehl ein, den Sie in Schritt 4 ausgeführt haben. Beispiel: .\PhysicalBadging.ps1-Mandanten-ID "d5723623-11CF-4e2e-b5a5-01d1506273g9"-Benutzerkennung "c12823b7-b55a-4989-faba-02de41bb97c3"-appSecret "MNubVGbcQDkGCnn"-JobID "e081f4f4-3831-48d6-7bb3-fcfab1581458"-jsonFilePath "C:\Users\contosoadmin\Desktop\Data\physical_badging_data.csv"
 

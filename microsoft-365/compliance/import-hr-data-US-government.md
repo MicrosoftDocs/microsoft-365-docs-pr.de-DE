@@ -15,20 +15,18 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Administratoren in der US Government Cloud können einen Daten Konnektor einrichten, um Mitarbeiterdaten aus dem Personal System (HR) Ihrer Organisation nach Microsoft 365 zu importieren. Auf diese Weise können Sie Personaldaten in Richtlinien für das Insider Risikomanagement verwenden, um die Aktivität bestimmter Benutzer zu ermitteln, die eine interne Bedrohung für Ihre Organisation darstellen können.
-ms.openlocfilehash: 28f4c77ec626e2035451ec6e7c9562c5bf20f101
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+ms.openlocfilehash: 80998422eba32fe7f9118166f76a61d2d4bd8894
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816840"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49619921"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government"></a>Einrichten eines Connectors zum Importieren von HR-Daten in US Government
 
 Sie können einen Daten Konnektor im Microsoft 365 Compliance Center einrichten, um Personalressourcen Daten in ihre US-Regierungsorganisation zu importieren. Zu den Personaldaten gehören das Datum, an dem ein Mitarbeiter seinen Rücktritt eingereicht hat, und das Datum des letzten Tages des Mitarbeiters. Diese HR-Daten können dann von Microsoft Information Protection-Lösungen wie der [Insider Risikomanagement-Lösung](insider-risk-management.md)verwendet werden, um Ihre Organisation vor böswilligen Aktivitäten oder Datendiebstahl in Ihrer Organisation zu schützen. Das Einrichten eines HR-Konnektors besteht darin, eine app in Azure Active Directory zu erstellen, die für die Authentifizierung über Connector verwendet wird, das Erstellen einer CSV-Zuordnungsdateien, die Ihre HR-Daten enthalten, das Erstellen eines datenkonnektors im Compliance Center und das anschließende Ausführen eines Skripts (geplant), das die HR-Daten in der CSV-Datei in die Microsoft-Cloud einnimmt. Anschließend wird der Data Connector vom Insider Risk Management-Tool verwendet, um auf die HR-Daten zuzugreifen, die in Ihre Microsoft 365 US Government-Organisation importiert wurden.
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen:
-
-- Ihre Organisation muss einwilligen, dass der Office 365-Import Dienst auf Daten in Ihrer Organisation zugreifen kann. Um dieser Anforderung zuzustimmen, gehen Sie zu [dieser Seite](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), melden Sie sich mit den Anmeldeinformationen eines globalen Administrators von Microsoft 365 an, und nehmen Sie dann die Anforderung an. Sie müssen diesen Schritt ausführen, bevor Sie den HR-Connector in Schritt 3 erfolgreich erstellen können.
 
 - Dem Benutzer, der den HR-Connector in Schritt 3 erstellt, muss in Exchange Online die Rolle "Post Fach Import Export" zugewiesen sein. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle "Post Fach Import exportieren" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine neue Rollengruppe erstellen, die Rolle "Post Fach Import Export" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie im Abschnitt [Erstellen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) von Rollengruppen oder [Ändern von Rollengruppen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
 
@@ -77,11 +75,11 @@ Im nächsten Schritt erstellen Sie einen HR-Connector im Microsoft 365 Complianc
 
 1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com) und klicken Sie dann im linken Navigationsbereich auf **Datenverbindungen** .
 
-2. Klicken Sie auf der Seite **Daten Konnektoren** unter **HR** auf **Ansicht** .
+2. Klicken Sie auf der Seite **Daten Konnektoren** unter **HR** auf **Ansicht**.
 
-3. Klicken Sie auf der Seite **HR** auf **Connector hinzufügen** .
+3. Klicken Sie auf der Seite **HR** auf **Connector hinzufügen**.
 
-4. Führen Sie auf der Seite **Authentifizierungsanmeldeinformationen** folgende Schritte aus, und klicken Sie dann auf **weiter** :
+4. Führen Sie auf der Seite **Authentifizierungsanmeldeinformationen** folgende Schritte aus, und klicken Sie dann auf **weiter**:
 
    1. Geben Sie die Azure AD Anwendungs-ID für die Azure-App ein, die Sie in Schritt 1 erstellt haben, oder fügen Sie Sie ein.
 
@@ -101,7 +99,7 @@ Im nächsten Schritt erstellen Sie einen HR-Connector im Microsoft 365 Complianc
    
    1. **Link zum Beispielskript.** Klicken Sie auf den Link **hier** , um zur GitHub-Website zu wechseln, um auf das Beispielskript zuzugreifen (der Link öffnet ein neues Fenster). Lassen Sie dieses Fenster geöffnet, damit Sie das Skript in Schritt 4 kopieren können. Alternativ können Sie das Ziel mit einem Lesezeichen versehen oder die URL kopieren, damit Sie in Schritt 4 erneut darauf zugreifen können. Dieser Link steht auch auf der Seite "Connector-Flyout" zur Verfügung.
 
-7. Klicken Sie auf **Fertig** .
+7. Klicken Sie auf **Fertig**.
 
    Der neue Connector wird in der Liste auf der Registerkarte **Connectors** angezeigt. 
 
@@ -185,9 +183,9 @@ Sie können die Task Planer-app in Windows so ausführen, dass das Skript jeden 
 
 2. Klicken Sie auf die **Task Planer** -APP, um Sie zu öffnen.
 
-3. Klicken Sie im Abschnitt **Aktionen** auf **Aufgabe erstellen** .
+3. Klicken Sie im Abschnitt **Aktionen** auf **Aufgabe erstellen**.
 
-4. Geben Sie auf der Registerkarte **Allgemein** einen beschreibenden Namen für den geplanten Vorgang ein. Beispiel: **HR-Connector-Skript** . Sie können auch eine optionale Beschreibung hinzufügen.
+4. Geben Sie auf der Registerkarte **Allgemein** einen beschreibenden Namen für den geplanten Vorgang ein. Beispiel: **HR-Connector-Skript**. Sie können auch eine optionale Beschreibung hinzufügen.
 
 5. Führen Sie unter **Sicherheitsoptionen** die folgenden Aktionen aus:
 
@@ -195,21 +193,21 @@ Sie können die Task Planer-app in Windows so ausführen, dass das Skript jeden 
    
    1. Stellen Sie sicher, dass das Kontrollkästchen **mit den höchsten Rechten ausführen** aktiviert ist.
 
-6. Wählen Sie die Registerkarte **Auslöser** aus, klicken Sie auf **neu** , und führen Sie dann die folgenden Schritte aus:
+6. Wählen Sie die Registerkarte **Auslöser** aus, klicken Sie auf **neu**, und führen Sie dann die folgenden Schritte aus:
 
    1. Wählen Sie unter **Einstellungen** die Option **täglich** aus, und klicken Sie dann auf Datum und Uhrzeit, um das Skript zum ersten Mal auszuführen. Das Skript wird jeden Tag zur gleichen angegebenen Zeit.
    
    1. Stellen Sie unter **Erweiterte Einstellungen** sicher, dass das Kontrollkästchen **aktiviert** ausgewählt ist.
    
-   1. Klicken Sie auf **OK** .
+   1. Klicken Sie auf **OK**.
 
-7. Wählen Sie die Registerkarte **Aktionen** aus, klicken Sie auf **neu** , und führen Sie dann die folgenden Schritte aus:
+7. Wählen Sie die Registerkarte **Aktionen** aus, klicken Sie auf **neu**, und führen Sie dann die folgenden Schritte aus:
 
    ![Aktionseinstellungen zum Erstellen eines neuen geplanten Tasks für das HR-Connector-Skript](../media/HRConnectorScheduleTask1.png)
 
    1. Stellen Sie in der Dropdownliste **Aktion** sicher, dass **Programm starten** ausgewählt ist.
 
-   1. Klicken Sie im Feld **Programm/Skript** auf **Durchsuchen** , und wechseln Sie zum folgenden Speicherort, und wählen Sie ihn aus, damit der Pfad im Feld angezeigt wird: `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` .
+   1. Klicken Sie im Feld **Programm/Skript** auf **Durchsuchen**, und wechseln Sie zum folgenden Speicherort, und wählen Sie ihn aus, damit der Pfad im Feld angezeigt wird: `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` .
 
    1. Fügen Sie im Feld **Argumente hinzufügen (optional)** den gleichen Skriptbefehl ein, den Sie in Schritt 4 ausgeführt haben. Beispiel: `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
 

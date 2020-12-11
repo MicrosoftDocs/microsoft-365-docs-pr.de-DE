@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom: seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie, wie Sie eine Archivierungs-und Löschrichtlinie in Microsoft 365 erstellen, mit der Elemente automatisch in das Archivpostfach eines Benutzers verschoben werden.
-ms.openlocfilehash: 7bbd4a2f4a5b9c35695b5e0630020a0f39224324
-ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
+ms.openlocfilehash: 5e8675c1cc6e1df4c22e55648e1655798bae5e5b
+ms.sourcegitcommit: 21b0ea5715e20b4ab13719eb18c97fadb49b563d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48993365"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49624777"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Einrichten einer Archivierungs- und Löschrichtlinie für Postfächer in Ihrer Organisation
 
@@ -120,7 +120,7 @@ Zunächst erstellen Sie ein Standardrichtlinientag für ein benutzerdefiniertes 
 
    2. **Aufbewahrungsaktion** Wählen Sie **in Archiv umsteigen** aus, um Elemente nach Ablauf des Aufbewahrungszeitraums in das Archivpostfach zu übertragen.
 
-   3. **Aufbewahrungszeitraum** Wählen Sie aus, **wann das Element das folgende Alter (in Tagen) erreicht** , und geben Sie dann die Dauer des Aufbewahrungszeitraums ein. In diesem Szenario werden Elemente nach 1095 Tagen (3 Jahren) in das Archivpostfach verschoben.
+   3. **Aufbewahrungszeitraum** Wählen Sie aus, **wann das Element das folgende Alter (in Tagen) erreicht**, und geben Sie dann die Dauer des Aufbewahrungszeitraums ein. In diesem Szenario werden Elemente nach 1095 Tagen (3 Jahren) in das Archivpostfach verschoben.
 
    4. **Comment** (optional) geben Sie einen Kommentar ein, der den Zweck des benutzerdefinierten Aufbewahrungstags erläutert.
 
@@ -142,7 +142,7 @@ Als Nächstes erstellen Sie ein weiteres benutzerdefiniertes Standardrichtlinien
 
    2. **Aufbewahrungsaktion** Wählen Sie **dauerhaft löschen** aus, um Elemente aus dem Postfach zu bereinigen, wenn der Aufbewahrungszeitraum abgelaufen ist.
 
-   3. **Aufbewahrungszeitraum** Wählen Sie aus, **wann das Element das folgende Alter (in Tagen) erreicht** , und geben Sie dann die Dauer des Aufbewahrungszeitraums ein. In diesem Szenario werden Elemente nach 2555 Tagen (7 Jahre) gelöscht.
+   3. **Aufbewahrungszeitraum** Wählen Sie aus, **wann das Element das folgende Alter (in Tagen) erreicht**, und geben Sie dann die Dauer des Aufbewahrungszeitraums ein. In diesem Szenario werden Elemente nach 2555 Tagen (7 Jahre) gelöscht.
 
    4. **Comment** (optional) geben Sie einen Kommentar ein, der den Zweck des benutzerdefinierten Aufbewahrungstags erläutert. 
 
@@ -166,7 +166,7 @@ Das letzte Aufbewahrungs-Tag, das Sie erstellen, ist ein benutzerdefiniertes Auf
 
    3. **Aufbewahrungsaktion** Wählen Sie DELETE aus, **und ermöglichen Sie die Wiederherstellung** zum Löschen von Elementen, wenn der Aufbewahrungszeitraum abgelaufen ist, aber Benutzern ermöglichen, ein gelöschtes Element innerhalb des Aufbewahrungszeitraums für gelöschte Elemente wiederherzustellen (standardmäßig 14 Tage).
 
-   4. **Aufbewahrungszeitraum** Wählen Sie aus, **wann das Element das folgende Alter (in Tagen) erreicht** , und geben Sie dann die Dauer des Aufbewahrungszeitraums ein. In diesem Szenario werden Elemente nach 1825 Tagen (5 Jahre) gelöscht.
+   4. **Aufbewahrungszeitraum** Wählen Sie aus, **wann das Element das folgende Alter (in Tagen) erreicht**, und geben Sie dann die Dauer des Aufbewahrungszeitraums ein. In diesem Szenario werden Elemente nach 1825 Tagen (5 Jahre) gelöscht.
 
    5. **Comment** (optional) geben Sie einen Kommentar ein, der den Zweck des benutzerdefinierten Aufbewahrungstags erläutert. 
 
@@ -252,7 +252,7 @@ Hier finden Sie die Schritte zum Herstellen einer Verbindung mit Exchange Online
 Das ist alles. Sie haben eine Archiv-und Löschrichtlinie für die Alpine House-Organisation eingerichtet.
 
 > [!NOTE]
-> Wie bereits erwähnt, verarbeitet der Assistent für verwaltete Ordner Postfächer mindestens einmal alle 7 Tage. Daher ist es möglich, dass ein Postfach häufiger vom Assistenten für verwaltete Ordner verarbeitet werden kann. Administratoren können auch nicht vorhersagen, wann das nächste Mal ein Postfach vom Assistenten für verwaltete Ordner verarbeitet wird, was ein Grund dafür ist, dass Sie es möglicherweise manuell ausführen möchten. Wenn Sie jedoch vorübergehend verhindern möchten, dass der Assistent für verwaltete Ordner die neuen Aufbewahrungseinstellungen auf ein Postfach anwendet, können Sie den Befehl ausführen, `Set-Mailbox -ElcProcessingDisabled $true` um den Assistenten für verwaltete Ordner vorübergehend für die Verarbeitung eines Postfachs zu deaktivieren. Führen Sie den Befehl aus, um den Assistenten für verwaltete Ordner für ein Postfach erneut zu aktivieren `Set-Mailbox -ElcProcessingDisabled $false` .
+> Wie bereits erwähnt, verarbeitet der Assistent für verwaltete Ordner Postfächer mindestens einmal alle 7 Tage. Daher ist es möglich, dass ein Postfach häufiger vom Assistenten für verwaltete Ordner verarbeitet werden kann. Administratoren können auch nicht vorhersagen, wann das nächste Mal ein Postfach vom Assistenten für verwaltete Ordner verarbeitet wird, was ein Grund dafür ist, dass Sie es möglicherweise manuell ausführen möchten. Wenn Sie jedoch vorübergehend verhindern möchten, dass der Assistent für verwaltete Ordner die neuen Aufbewahrungseinstellungen auf ein Postfach anwendet, können Sie den Befehl ausführen, `Set-Mailbox -ElcProcessingDisabled $true` um den Assistenten für verwaltete Ordner vorübergehend für die Verarbeitung eines Postfachs zu deaktivieren. Führen Sie den Befehl aus, um den Assistenten für verwaltete Ordner für ein Postfach erneut zu aktivieren `Set-Mailbox -ElcProcessingDisabled $false` . Wenn ein Postfachbenutzer über ein deaktiviertes Konto verfügt, wird die Aktion Elemente in Archiv verlegen für dieses Postfach nicht verarbeitet.
   
 ## <a name="optional-step-6-make-the-new-retention-policy-the-default-for-your-organization"></a>Optional Schritt 6: Festlegen der Standardeinstellung für die neue Aufbewahrungsrichtlinie für Ihre Organisation
 
@@ -268,7 +268,7 @@ In Schritt 4 müssen Sie die neue Aufbewahrungsrichtlinie vorhandenen Postfäche
 
     Notieren Sie sich den Postfachplan, der als Standard festgelegt ist.
 
-3. Führen Sie den folgenden Befehl aus, um die neue Aufbewahrungsrichtlinie, die Sie in Schritt 3 (beispielsweise **Alpine House Archive und Aufbewahrungsrichtlinie** ) erstellt haben, dem Standard Postfachplan zuzuweisen. In diesem Beispiel wird davon ausgegangen, dass der Name des Standard Postfachplans **exchangeonlineenterprise zurückgegeben** ist.
+3. Führen Sie den folgenden Befehl aus, um die neue Aufbewahrungsrichtlinie, die Sie in Schritt 3 (beispielsweise **Alpine House Archive und Aufbewahrungsrichtlinie**) erstellt haben, dem Standard Postfachplan zuzuweisen. In diesem Beispiel wird davon ausgegangen, dass der Name des Standard Postfachplans **exchangeonlineenterprise zurückgegeben** ist.
 
     ```powershell
     Set-MailboxPlan "ExchangeOnlineEnterprise" -RetentionPolicy "Alpine House Archive and Retention Policy"

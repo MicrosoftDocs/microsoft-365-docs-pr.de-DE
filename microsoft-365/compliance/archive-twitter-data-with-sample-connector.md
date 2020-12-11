@@ -15,20 +15,20 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Erfahren Sie, wie Administratoren einen nativen Connector zum Importieren von Twitter-Daten in Microsoft 365 einrichten und verwenden können.
-ms.openlocfilehash: 15434899eb90f26205907c474b8d2238db536948
-ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
+ms.openlocfilehash: b4eadc58393df651505287f9238f43a1db0563a8
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255842"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620261"
 ---
 # <a name="set-up-a-connector-to-archive-twitter-data-preview"></a>Einrichten eines Connectors zum Archivieren von Twitter-Daten (Vorschau)
 
 Verwenden Sie einen Connector im Microsoft 365 Compliance Center, um Daten aus Twitter in Microsoft 365 zu importieren und zu archivieren. Nachdem Sie den Connector eingerichtet und konfiguriert haben, stellt er eine Verbindung mit dem Twitter-Konto Ihrer Organisation her (planmäßig), konvertiert den Inhalt eines Elements in ein e-Mail-Nachrichtenformat und importiert diese Elemente dann in ein Postfach in Microsoft 365.
 
-Nachdem die Twitter-Daten importiert wurden, können Sie Microsoft 365-Compliance-Features wie Beweissicherungsverfahren, Inhaltssuche, in-situ-Archivierung, Überwachung und Microsoft 365-Aufbewahrungsrichtlinien auf die Twitter-Daten anwenden. Wenn beispielsweise ein Postfach in ein Beweissicherungsverfahren gestellt oder einer Aufbewahrungsrichtlinie zugewiesen wurde, werden die Twitter-Daten beibehalten. Sie können drittanbieterdaten mithilfe der Inhaltssuche durchsuchen oder das Postfach zuordnen, in dem die Twitter-Daten mit einer Depotbank in einem erweiterten eDiscovery-Fall gespeichert werden. Durch die Verwendung eines Connectors zum Importieren und Archivieren von Twitter-Daten in Microsoft 365 können Sie Ihrer Organisation dabei helfen, mit behördlichen und behördlichen Richtlinien konform zu bleiben.
+Nachdem die Twitter-Daten importiert wurden, können Sie die Microsoft 365-Kompatibilitätsfunktionen wie Beweissicherungsverfahren, Inhaltssuche, In-Place Archivierung, Überwachung und Microsoft 365-Aufbewahrungsrichtlinien auf die twitterdaten anwenden. Wenn beispielsweise ein Postfach in ein Beweissicherungsverfahren gestellt oder einer Aufbewahrungsrichtlinie zugewiesen wurde, werden die Twitter-Daten beibehalten. Sie können drittanbieterdaten mithilfe der Inhaltssuche durchsuchen oder das Postfach zuordnen, in dem die Twitter-Daten mit einer Depotbank in einem erweiterten eDiscovery-Fall gespeichert werden. Durch die Verwendung eines Connectors zum Importieren und Archivieren von Twitter-Daten in Microsoft 365 können Sie Ihrer Organisation dabei helfen, mit behördlichen und behördlichen Richtlinien konform zu bleiben.
 
-Nachdem Sie Twitter-Daten importiert haben, können Sie Microsoft 365-Compliance-Features wie Beweissicherungsverfahren, Inhaltssuche, in-situ-Archivierung, Überwachung, Kommunikationsrichtlinien Konformität und Microsoft 365-Aufbewahrungsrichtlinien auf die im Postfach gespeicherten Daten anwenden. Beispielsweise können Sie Twitter-Daten mithilfe der Inhaltssuche durchsuchen oder das Postfach zuordnen, in dem die Daten mit einer Depotbank in einem erweiterten eDiscovery-Fall gespeichert werden. Durch die Verwendung eines Connectors zum Importieren und Archivieren von Twitter-Daten in Microsoft 365 können Sie Ihrer Organisation dabei helfen, mit behördlichen und behördlichen Richtlinien konform zu bleiben.
+Nachdem Sie Twitter-Daten importiert haben, können Sie die Microsoft 365-Compliance-Features wie Beweissicherungsverfahren, Inhaltssuche, In-Place Archivierung, Überwachung, Kommunikations Konformität und Microsoft 365-Aufbewahrungsrichtlinien auf die im Postfach gespeicherten Daten anwenden. Beispielsweise können Sie Twitter-Daten mithilfe der Inhaltssuche durchsuchen oder das Postfach zuordnen, in dem die Daten mit einer Depotbank in einem erweiterten eDiscovery-Fall gespeichert werden. Durch die Verwendung eines Connectors zum Importieren und Archivieren von Twitter-Daten in Microsoft 365 können Sie Ihrer Organisation dabei helfen, mit behördlichen und behördlichen Richtlinien konform zu bleiben.
 
 ## <a name="prerequisites-for-setting-up-a-connector-for-twitter"></a>Voraussetzungen für das Einrichten eines Connectors für Twitter
 
@@ -44,8 +44,6 @@ Schließen Sie die folgenden Voraussetzungen ab, bevor Sie einen Connector im Mi
 
     > [!NOTE]
     > Das [﻿Kostenlose Azure Active Directory-Abonnement](use-your-free-azure-ad-subscription-in-office-365.md) , das im Lieferumfang Ihres Microsoft 365-Abonnements enthalten ist, unterstützt die Connectors im Security & Compliance Center nicht.
-
-- Ihre Organisation muss einwilligen, dass der Office 365 Import Dienst auf Postfachdaten in Ihrer Organisation zugreifen kann. Um dieser Anforderung zuzustimmen, gehen Sie zu [dieser Seite](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), melden Sie sich mit den Anmeldeinformationen eines globalen Administrators an, und nehmen Sie dann die Anforderung an.
 
 - Dem Benutzer, der den Twitter Connector im Microsoft 365 Compliance Center (in Schritt 5) eingerichtet hat, muss in Exchange Online die Rolle "Post Fach Import Export" zugewiesen sein. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle "Post Fach Import exportieren" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle "Post Fach Import Export" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie im Abschnitt  [Erstellen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) von Rollengruppen oder [Ändern von Rollengruppen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
 
@@ -65,7 +63,7 @@ Bei Abschluss dieses Schritts (indem Sie die schrittweisen Anleitungen ausführe
 
 ## <a name="step-2-deploy-connector-web-service-from-github-repository-to-your-azure-account"></a>Schritt 2: Bereitstellen des Connector-Webdiensts aus dem GitHub-Repository in Ihrem Azure-Konto
 
-Der nächste Schritt ist die Bereitstellung des Quellcodes für die Twitter-Connector-APP, die Twitter-API verwendet, um eine Verbindung mit Ihrem Twitter-Konto herzustellen und Daten zu extrahieren, damit Sie Sie in Microsoft 365 importieren können. Der Twitter-Connector, den Sie für Ihre Organisation bereitstellen, lädt die Elemente aus dem Twitter-Konto Ihrer Organisation an den Azure-Speicherplatz hoch, der in diesem Schritt erstellt wird. Nachdem Sie einen Twitter-Konnektor im Microsoft 365 Compliance Center (in Schritt 5) erstellt haben, kopiert der Office 365-Import Dienst die Twitter-Daten aus dem Azure-Speicherort in ein Postfach in Microsoft 365. Wie zuvor im Abschnitt [Voraussetzungen](#prerequisites-for-setting-up-a-connector-for-twitter) erläutert, benötigen Sie ein gültiges Azure-Abonnement, um ein Azure-Speicherkonto zu erstellen.
+Der nächste Schritt ist die Bereitstellung des Quellcodes für die Twitter-Connector-APP, die Twitter-API verwendet, um eine Verbindung mit Ihrem Twitter-Konto herzustellen und Daten zu extrahieren, damit Sie Sie in Microsoft 365 importieren können. Der Twitter-Connector, den Sie für Ihre Organisation bereitstellen, lädt die Elemente aus dem Twitter-Konto Ihrer Organisation an den Azure-Speicherplatz hoch, der in diesem Schritt erstellt wird. Nachdem Sie einen Twitter-Konnektor im Microsoft 365 Compliance Center (in Schritt 5) erstellt haben, kopiert der Microsoft 365-Import Dienst die Twitter-Daten aus dem Azure-Speicherort in ein Postfach in Microsoft 365. Wie zuvor im Abschnitt [Voraussetzungen](#prerequisites-for-setting-up-a-connector-for-twitter) erläutert, benötigen Sie ein gültiges Azure-Abonnement, um ein Azure-Speicherkonto zu erstellen.
 
 So stellen Sie den Quellcode für die Twitter-Connector-App bereit:
 
@@ -121,7 +119,7 @@ Während des Abschlusses dieses Schritts (indem Sie die schrittweisen Anweisunge
 
 ## <a name="step-5-set-up-a-twitter-connector-in-the-microsoft-365-compliance-center"></a>Schritt 5: Einrichten eines Twitter-Konnektors im Microsoft 365 Compliance Center
 
-Der letzte Schritt besteht darin, den Twitter-Konnektor im Microsoft 365 Compliance Center einzurichten, mit dem Daten aus dem Twitter-Konto Ihrer Organisation in ein angegebenes Postfach in Microsoft 365 importiert werden. Nachdem Sie diesen Schritt ausgeführt haben, startet der Office 365-Import Dienst mit dem Importieren von Daten aus dem Twitter-Konto Ihrer Organisation nach Microsoft 365.
+Der letzte Schritt besteht darin, den Twitter-Konnektor im Microsoft 365 Compliance Center einzurichten, mit dem Daten aus dem Twitter-Konto Ihrer Organisation in ein angegebenes Postfach in Microsoft 365 importiert werden. Nachdem Sie diesen Schritt abgeschlossen haben, startet der Microsoft 365-Import Dienst mit dem Importieren von Daten aus dem Twitter-Konto Ihrer Organisation nach Microsoft 365.
 
 Eine Schritt-für-Schritt-Anleitung finden Sie unter [Einrichten eines Twitter-Konnektors im Microsoft 365 Compliance Center](deploy-twitter-connector.md#step-5-set-up-a-twitter-connector-in-the-microsoft-365-compliance-center). 
 

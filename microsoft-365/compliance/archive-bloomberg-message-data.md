@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen Data Connector zum Importieren und Archivieren von Daten aus dem Bloomberg-Nachrichten e-Mail-Tool in Microsoft 365 einrichten. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren, damit Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten der drittanbieterdaten Ihrer Organisation verwenden können.
-ms.openlocfilehash: 8cb5575c4565153f2819e745fedc9608963299e4
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: 0f08c4ff43cd868b95b965673cfbdd3308ed801f
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408953"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620061"
 ---
 # <a name="set-up-a-connector-to-archive-bloomberg-message-data"></a>Einrichten eines Connectors zum Archivieren von Bloomberg-Nachrichtendaten
 
@@ -45,13 +45,11 @@ In der folgenden Übersicht wird erläutert, wie Sie einen Connector zum Archivi
 
 Einige der erforderlichen Implementierungsschritte zum Archivieren von Bloomberg-Nachrichtendaten liegen außerhalb von Microsoft 365 und müssen abgeschlossen sein, bevor Sie den Connector im Compliance Center erstellen können.
 
-- Ihre Organisation muss einwilligen, dass der Office 365 Import Dienst auf Postfachdaten in Ihrer Organisation zugreifen kann. Um dieser Anforderung zuzustimmen, gehen Sie zu [dieser Seite](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), melden Sie sich mit den Anmeldeinformationen eines Office 365 globalen Administrators an, und nehmen Sie dann die Anforderung an. Sie müssen diesen Schritt ausführen, bevor Sie den Bloomberg Message Connector in Schritt 3 erfolgreich erstellen können.
-
 - Abonnieren Sie [Bloomberg Anywhere](https://www.bloomberg.com/professional/product/remote-access/?bbgsum-page=DG-WS-PROF-PROD-BBA). Dies ist erforderlich, damit Sie sich bei Bloomberg Anywhere anmelden können, um auf die Bloomberg SFTP-Website zuzugreifen, die Sie einrichten und konfigurieren müssen.
 
 - Richten Sie eine Bloomberg SFTP (Secure File Transfer Protocol)-Website ein. Nach der Arbeit mit Bloomberg, um die SFTP-Website einzurichten, werden die Daten aus Bloomberg-Nachricht jeden Tag auf die SFTP-Website hochgeladen. Der in Schritt 2 erstellte Connector stellt eine Verbindung mit dieser SFTP-Website her und überträgt die e-Mail-Daten an Microsoft 365-Postfächer. SFTP verschlüsselt auch die Bloomberg-Nachrichtendaten, die während des Übertragungsprozesses an Postfächer gesendet werden.
 
-  Informationen zu Bloomberg SFTP (auch *BB-SFTP*genannt):
+  Informationen zu Bloomberg SFTP (auch *BB-SFTP* genannt):
 
   - Siehe das Dokument "SFTP Connectivity Standards" unter [Bloomberg Support](https://www.bloomberg.com/professional/support/documentation/).
 
@@ -79,13 +77,13 @@ Der erste Schritt besteht darin, eine Kopie der öffentlichen Schlüssel für Se
 
 1. Wechseln Sie zu [ https://compliance.microsoft.com\ ] ( https://compliance.microsoft.com) und klicken Sie im linken Navigationsbereich auf **Daten-Konnektoren** .
 
-2. Klicken Sie auf der Seite **Daten Konnektoren** unter **Bloomberg-Nachricht**auf **Ansicht**.
+2. Klicken Sie auf der Seite **Daten Konnektoren** unter **Bloomberg-Nachricht** auf **Ansicht**.
 
 3. Klicken Sie auf der Seite **Bloomberg-Nachrichten** Produktbeschreibung auf **Connector hinzufügen** .
 
 4. Klicken Sie auf der Seite **Nutzungsbedingungen** auf **annehmen**.
 
-5. Klicken Sie auf der **Website Anmeldeinformationen für Bloomberg SFTP** unter Schritt 1 auf den Link **SSH herunterladen**, **PGP-Schlüssel**herunterladen und **IP-Adress Links herunterladen** , um eine Kopie der einzelnen Dateien auf dem lokalen Computer zu speichern. Diese Dateien enthalten die folgenden Elemente, die zum Konfigurieren der Bloomberg SFTP-Website in Schritt 2 verwendet werden:
+5. Klicken Sie auf der **Website Anmeldeinformationen für Bloomberg SFTP** unter Schritt 1 auf den Link **SSH herunterladen**, **PGP-Schlüssel** herunterladen und **IP-Adress Links herunterladen** , um eine Kopie der einzelnen Dateien auf dem lokalen Computer zu speichern. Diese Dateien enthalten die folgenden Elemente, die zum Konfigurieren der Bloomberg SFTP-Website in Schritt 2 verwendet werden:
 
    - Öffentlicher SSH-Schlüssel: dieser Schlüssel wird zum Konfigurieren von Secure Shell (SSH) verwendet, um eine sichere Remoteanmeldung zu ermöglichen, wenn der Connector eine Verbindung mit der Bloomberg SFTP-Website herstellt.
 
@@ -111,7 +109,7 @@ Der letzte Schritt besteht darin, einen Bloomberg-Nachrichten Connector im Micro
 
 1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com) und klicken Sie im linken Navigationsbereich auf **Daten-Konnektoren** .
 
-2. Klicken Sie auf der Seite **Daten Konnektoren** unter **Bloomberg-Nachricht**auf **Ansicht**.
+2. Klicken Sie auf der Seite **Daten Konnektoren** unter **Bloomberg-Nachricht** auf **Ansicht**.
 
 3. Klicken Sie auf der Seite **Bloomberg-Nachrichten** Produktbeschreibung auf **Connector hinzufügen** .
 

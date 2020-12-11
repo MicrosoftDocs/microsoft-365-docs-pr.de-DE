@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Administratoren können einen systemeigenen Connector zum Importieren und Archivieren von Twitter-Daten nach Microsoft 365 einrichten. Nachdem diese Daten in Microsoft 365 importiert wurden, können Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien verwenden, um die Steuerung der Twitter-Daten Ihrer Organisation zu verwalten.
-ms.openlocfilehash: 01c4901544e47cd1c361a132e144440f00bd8504
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 0dd996802964b2a2fc58d26e23af57193c89ee8c
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200828"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49619911"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>Bereitstellen eines Connectors zum Archivieren von Twitter-Daten
 
@@ -67,7 +67,7 @@ Dieser Artikel enthält den schrittweisen Prozess zur Bereitstellungeines Connec
 
     ![Wechseln zur Azure-Startseite](../media/FBCimage11.png)
 
-2. Nachdem Sie auf **in Azure bereitstellen**klicken, werden Sie zu einem Azure-Portal mit einer benutzerdefinierten Vorlagenseite umgeleitet. Füllen Sie die Details **Grundlagen** und **Einstellungen** aus, und klicken Sie dann auf **kaufen**.
+2. Nachdem Sie auf **in Azure bereitstellen** klicken, werden Sie zu einem Azure-Portal mit einer benutzerdefinierten Vorlagenseite umgeleitet. Füllen Sie die Details **Grundlagen** und **Einstellungen** aus, und klicken Sie dann auf **kaufen**.
 
    ![Klicken Sie auf Ressource erstellen, und geben Sie Speicherkonto ein.](../media/FBCimage12.png)
 
@@ -96,7 +96,7 @@ Dieser Artikel enthält den schrittweisen Prozess zur Bereitstellungeines Connec
    
    ![Zur Seite "Apps" wechseln, um eine APP zu erstellen](../media/TCimage26.png)
 
-3. Fügen Sie unter **App-Details**Informationen zur Anwendung hinzu.
+3. Fügen Sie unter **App-Details** Informationen zur Anwendung hinzu.
 
    ![Eingeben von Informationen zur APP](../media/TCimage27.png)
 
@@ -122,7 +122,7 @@ Dieser Artikel enthält den schrittweisen Prozess zur Bereitstellungeines Connec
 
    - Aktivieren Sie das Kontrollkästchen, damit sich die Connector-App bei Twitter anmelden kann.
    
-   - Fügen Sie den OAuth-Umleitungs-URI mit dem folgenden Format hinzu: ** \<connectorserviceuri> /views/TwitterOAuth**, wobei der Wert von *connectorserviceuri* die Azure-App-Dienst-URL für Ihre Organisation ist, beispielsweise https://twitterconnector.azurewebsites.net/Views/TwitterOAuth .
+   - Fügen Sie den OAuth-Umleitungs-URI mit dem folgenden Format hinzu: **\<connectorserviceuri> /views/TwitterOAuth**, wobei der Wert von *connectorserviceuri* die Azure-App-Dienst-URL für Ihre Organisation ist, beispielsweise https://twitterconnector.azurewebsites.net/Views/TwitterOAuth .
 
     ![Connector-App erlauben, sich bei Twitter anzumelden und OAuth-Umleitungs-URI hinzuzufügen](../media/TCimage32.png)
 
@@ -130,7 +130,7 @@ Die Twitter-Entwickler-App ist jetzt einsatzfähig.
 
 ## <a name="step-4-configure-the-connector-web-app"></a>Schritt 4: Konfigurieren der Connector-Webanwendung 
 
-1. Wechseln Sie zu https:// \<AzureAppResourceName> . azurewebsites.net (wobei **AzureAppResourceName** der Name Ihrer Azure-App-Ressource ist, die Sie in Schritt 4 benannt haben). Wenn der Name beispielsweise **twitterconnector**lautet, wechseln Sie zu https://twitterconnector.azurewebsites.net . Die Startseite der APP sieht wie im folgenden Screenshot aus:
+1. Wechseln Sie zu https:// \<AzureAppResourceName> . azurewebsites.net (wobei **AzureAppResourceName** der Name Ihrer Azure-App-Ressource ist, die Sie in Schritt 4 benannt haben). Wenn der Name beispielsweise **twitterconnector** lautet, wechseln Sie zu https://twitterconnector.azurewebsites.net . Die Startseite der APP sieht wie im folgenden Screenshot aus:
 
    ![Seite zur Azure-App-Ressource wechseln](../media/FBCimage41.png)
 
@@ -162,7 +162,7 @@ Die Twitter-Entwickler-App ist jetzt einsatzfähig.
 
 1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com) und klicken Sie dann im linken Navigationsbereich auf **Datenverbindungen** .
 
-2. Klicken Sie auf der Seite **Daten Konnektoren** unter **Twitter**auf **Ansicht**.
+2. Klicken Sie auf der Seite **Daten Konnektoren** unter **Twitter** auf **Ansicht**.
 
 3. Klicken Sie auf der Seite **Twitter** auf **Connector hinzufügen**.
 
@@ -178,7 +178,7 @@ Die Twitter-Entwickler-App ist jetzt einsatzfähig.
     
     - Geben Sie in das Feld **Kennwort** den Wert des APISecretKey ein, den Sie in Schritt 2 erstellt haben, oder fügen Sie ihn ein.
     
-    - Geben Sie in das Feld **Azure-APP-ID** den Wert der Azure Application-APP-ID (auch als *Client-ID*bezeichnet) ein, oder fügen Sie ihn ein, den Sie in Schritt 1 erhalten haben.
+    - Geben Sie in das Feld **Azure-APP-ID** den Wert der Azure Application-APP-ID (auch als *Client-ID* bezeichnet) ein, oder fügen Sie ihn ein, den Sie in Schritt 1 erhalten haben.
 
 6. Nachdem die Verbindung erfolgreich überprüft wurde, klicken Sie auf **weiter**.
 
@@ -198,8 +198,6 @@ Die Twitter-Entwickler-App ist jetzt einsatzfähig.
 
 12. Geben Sie auf der Seite Speicherort **auswählen** die e-Mail-Adresse des Microsoft 365-Postfachs ein, in das die Twitter-Elemente importiert werden sollen, und klicken Sie dann auf **weiter**.
 
-13. Klicken Sie im die **Zustimmung des Administrators bereit**stellen auf **Zustimmung erteilen** , und führen Sie dann die Schritte aus. Sie müssen ein globaler Administrator sein, um die Zustimmung des Office 365-Import Diensts für den Zugriff auf Daten in Ihrer Organisation zu geben.
+13. Klicken Sie auf **weiter** , um die Connectoreinstellungen zu überprüfen, und klicken Sie dann auf **Fertig stellen** , um das Connector-Setup abzuschließen.
 
-14. Klicken Sie auf **weiter** , um die Connectoreinstellungen zu überprüfen, und klicken Sie dann auf **Fertig stellen** , um das Connector-Setup abzuschließen.
-
-15. Wechseln Sie im Compliance Center zur Seite **Daten Konnektoren** , und klicken Sie auf die Registerkarte **Connectors** , um den Status des Importvorgangs anzuzeigen.
+14. Wechseln Sie im Compliance Center zur Seite **Daten Konnektoren** , und klicken Sie auf die Registerkarte **Connectors** , um den Status des Importvorgangs anzuzeigen.

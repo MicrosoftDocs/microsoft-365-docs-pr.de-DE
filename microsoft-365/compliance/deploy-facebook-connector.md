@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Administratoren können einen systemeigenen Connector einrichten, um Facebook-Geschäfts Seiten in Microsoft 365 zu importieren und zu archivieren. Nachdem diese Daten in Microsoft 365 importiert wurden, können Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien verwenden, um die Steuerung der Facebook-Daten Ihrer Organisation zu verwalten.
-ms.openlocfilehash: 065a5c6a1276c1ce37aa48137caf6627e76c8db0
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: b771c50eb5c2eb5f99269f1f399d27043ebee6bb
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200860"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49619951"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>Bereitstellen eines Connectors zum Archivieren von Facebook-Geschäfts Seiten Daten
 
@@ -70,7 +70,7 @@ Dieser Artikel enthält den schrittweisen Prozess zur Bereitstellungeines Connec
 
     ![Klicken Sie auf in Azure bereitstellen](../media/FBCGithubApp.png)
 
-2. Nachdem Sie auf **in Azure bereitstellen**klicken, werden Sie zu einem Azure-Portal mit einer benutzerdefinierten Vorlagenseite umgeleitet. Füllen Sie die Details **Grundlagen** und **Einstellungen** aus, und klicken Sie dann auf **kaufen**.
+2. Nachdem Sie auf **in Azure bereitstellen** klicken, werden Sie zu einem Azure-Portal mit einer benutzerdefinierten Vorlagenseite umgeleitet. Füllen Sie die Details **Grundlagen** und **Einstellungen** aus, und klicken Sie dann auf **kaufen**.
 
    - **Abonnement:** Wählen Sie Ihr Azure-Abonnement aus, für das Sie den Facebook Business Pages-Connector-Webdienst bereitstellen möchten.
 
@@ -116,7 +116,7 @@ Dieser Artikel enthält den schrittweisen Prozess zur Bereitstellungeines Connec
 
    ![Abschließen des Schnellstart-Abschnitts](../media/FBCimage30.png)
 
-7. Klicken Sie im linken Navigationsbereich unter **Facebook-Anmeldung**auf **Einstellungen**, und fügen Sie den OAuth-Umleitungs-URI im Feld **gültige OAuth-Umleitungs-URIs** hinzu. Verwenden Sie das Format ** \<connectorserviceuri> /views/FacebookOAuth**, wobei der Wert für connectorserviceuri die Azure-App-Dienst-URL für Ihre Organisation ist, beispielsweise `https://fbconnector.azurewebsites.net` .
+7. Klicken Sie im linken Navigationsbereich unter **Facebook-Anmeldung** auf **Einstellungen**, und fügen Sie den OAuth-Umleitungs-URI im Feld **gültige OAuth-Umleitungs-URIs** hinzu. Verwenden Sie das Format **\<connectorserviceuri> /views/FacebookOAuth**, wobei der Wert für connectorserviceuri die Azure-App-Dienst-URL für Ihre Organisation ist, beispielsweise `https://fbconnector.azurewebsites.net` .
 
    ![Fügen Sie den OAuth-Umleitungs-URI zum Feld gültige OAuth-Umleitungs-URIs hinzu](../media/FBCimage31.png)
 
@@ -124,7 +124,7 @@ Dieser Artikel enthält den schrittweisen Prozess zur Bereitstellungeines Connec
 
    ![Klicken Sie auf Produkte hinzufügen, und klicken Sie dann auf * * webhooks.](../media/FBCimage32.png)
 
-9. Fügen Sie die webhooks-Rückruf-URL hinzu, und fügen Sie ein Verify-Token hinzu. Das Format der Rückruf-URL, verwenden Sie das Format ** <connectorserviceuri> /API/FbPageWebhook**, wobei der Wert für connectorserviceuri die Azure-App-Dienst-URL für Ihre Organisation ist, zum Beispiel `https://fbconnector.azurewebsites.net` .
+9. Fügen Sie die webhooks-Rückruf-URL hinzu, und fügen Sie ein Verify-Token hinzu. Das Format der Rückruf-URL, verwenden Sie das Format **<connectorserviceuri> /API/FbPageWebhook**, wobei der Wert für connectorserviceuri die Azure-App-Dienst-URL für Ihre Organisation ist, zum Beispiel `https://fbconnector.azurewebsites.net` .
 
    Das Verify-Token sollte einem starken Kennwort ähneln. Kopieren Sie das Verify-Token in eine Textdatei oder einen anderen Speicherort.
 
@@ -160,7 +160,7 @@ Dieser Artikel enthält den schrittweisen Prozess zur Bereitstellungeines Connec
 
 ## <a name="step-4-configure-the-connector-web-app"></a>Schritt 4: Konfigurieren der Connector-Webanwendung
 
-1. Wechseln `https://<AzureAppResourceName>.azurewebsites.net` Sie zu (wobei AzureAppResourceName der Name Ihrer Azure-App-Ressource ist, die Sie in Schritt 4 benannt haben). Wenn der Name beispielsweise **FBconnector**lautet, wechseln Sie zu `https://fbconnector.azurewebsites.net` . Die Startseite der APP sieht wie im folgenden Screenshot aus:
+1. Wechseln `https://<AzureAppResourceName>.azurewebsites.net` Sie zu (wobei AzureAppResourceName der Name Ihrer Azure-App-Ressource ist, die Sie in Schritt 4 benannt haben). Wenn der Name beispielsweise **FBconnector** lautet, wechseln Sie zu `https://fbconnector.azurewebsites.net` . Die Startseite der APP sieht wie im folgenden Screenshot aus:
 
    ![Wechseln Sie zur Connector-Webanwendung](../media/FBCimage41.png)
 
@@ -190,7 +190,7 @@ Dieser Artikel enthält den schrittweisen Prozess zur Bereitstellungeines Connec
 
 1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com) und klicken Sie dann im linken Navigationsbereich auf **Datenverbindungen** .
 
-2. Klicken Sie auf der Seite **Daten Konnektoren** unter **Facebook Business Pages**auf **Ansicht**.
+2. Klicken Sie auf der Seite **Daten Konnektoren** unter **Facebook Business Pages** auf **Ansicht**.
 
 3. Klicken Sie auf der Seite **Facebook-Geschäfts Seiten** auf **Connector hinzufügen**.
 
@@ -226,8 +226,6 @@ Dieser Artikel enthält den schrittweisen Prozess zur Bereitstellungeines Connec
 
 12. Geben Sie auf der Seite Speicherort **auswählen** die e-Mail-Adresse des Microsoft 365-Postfachs ein, in das die Facebook-Elemente importiert werden sollen, und klicken Sie dann auf **weiter**.
 
-13. Klicken Sie im die **Zustimmung des Administrators bereit**stellen auf **Zustimmung erteilen** , und führen Sie dann die Schritte aus. Sie müssen ein globaler Administrator sein, um die Zustimmung des Office 365-Import Diensts für den Zugriff auf Daten in Ihrer Organisation zu geben.
+13. Klicken Sie auf **weiter** , um die Connectoreinstellungen zu überprüfen, und klicken Sie dann auf **Fertig stellen** , um das Connector-Setup abzuschließen.
 
-14. Klicken Sie auf **weiter** , um die Connectoreinstellungen zu überprüfen, und klicken Sie dann auf **Fertig stellen** , um das Connector-Setup abzuschließen.
-
-15. Wechseln Sie im Compliance Center zur Seite **Daten Konnektoren** , und klicken Sie auf die Registerkarte **Connectors** , um den Status des Importvorgangs anzuzeigen.
+14. Wechseln Sie im Compliance Center zur Seite **Daten Konnektoren** , und klicken Sie auf die Registerkarte **Connectors** , um den Status des Importvorgangs anzuzeigen.

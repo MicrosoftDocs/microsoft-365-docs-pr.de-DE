@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen Connector zum Importieren und Archivieren von XSLT/XML-Daten aus Globanet in Microsoft 365 einrichten. Mit diesem Connector können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren, damit Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten der drittanbieterdaten Ihrer Organisation verwenden können.
-ms.openlocfilehash: 3cc41ace1be3f0131458f885b66e7b5645b8eb2c
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+ms.openlocfilehash: cd41684b84b7899e80ccf8976a9b4c1f6c7e2984
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816743"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49619841"
 ---
 # <a name="set-up-a-connector-to-archive-xsltxml-data"></a>Einrichten eines Connectors zum Archivieren von XSLT/XML-Daten
 
@@ -49,13 +49,13 @@ In der folgenden Übersicht wird erläutert, wie Sie mithilfe eines Konnektors X
 
 Der erste Schritt besteht darin, auf die **Daten-Konnektoren** im Microsoft 365 Compliance Center zuzugreifen und einen Connector für XSLT/XML-Daten zu erstellen.
 
-1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com/) und klicken Sie dann auf **Daten Konnektoren**  >  **XSLT/XML** .
+1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com/) und klicken Sie dann auf **Daten Konnektoren**  >  **XSLT/XML**.
 
-2. Klicken Sie auf der Seite **XSLT/XML-** Produktbeschreibung auf **neuen Connector hinzufügen** .
+2. Klicken Sie auf der Seite **XSLT/XML-** Produktbeschreibung auf **neuen Connector hinzufügen**.
 
-3. Klicken Sie auf der Seite **Nutzungsbedingungen** auf **annehmen** .
+3. Klicken Sie auf der Seite **Nutzungsbedingungen** auf **annehmen**.
 
-4. Geben Sie einen eindeutigen Namen ein, der den Connector identifiziert, und klicken Sie dann auf **weiter** .
+4. Geben Sie einen eindeutigen Namen ein, der den Connector identifiziert, und klicken Sie dann auf **weiter**.
 
 5. Melden Sie sich bei Ihrem Merge1-Konto an, um den Connector zu konfigurieren.
 
@@ -69,13 +69,9 @@ Nachdem Sie auf **& Ende speichern** klicken, wird die Seite **Benutzerzuordnung
 
 1. Führen Sie die folgenden Schritte aus, um Benutzer zuzuordnen und das Connector-Setup im Microsoft 365 Compliance Center abzuschließen:
 
-2. Aktivieren Sie auf der Seite **XSLT/XML-Benutzer auf Microsoft 365** -Benutzer zuordnen die Option Automatische Benutzerzuordnung. Die XSLT/XML-Elemente enthalten eine Eigenschaft mit dem Namen " *e-Mail* ", die e-Mail-Adressen für Benutzer in Ihrer Organisation enthält. Wenn der Connector diese Adresse einem Microsoft 365-Benutzer zuordnen kann, werden die Elemente in das Postfach dieses Benutzers importiert.
+2. Aktivieren Sie auf der Seite **XSLT/XML-Benutzer auf Microsoft 365** -Benutzer zuordnen die Option Automatische Benutzerzuordnung. Die XSLT/XML-Elemente enthalten eine Eigenschaft mit dem Namen " *e-Mail*", die e-Mail-Adressen für Benutzer in Ihrer Organisation enthält. Wenn der Connector diese Adresse einem Microsoft 365-Benutzer zuordnen kann, werden die Elemente in das Postfach dieses Benutzers importiert.
 
-3. Klicken Sie auf der Seite **Administrator Zustimmung** auf **Zustimmung erteilen** . Sie werden zur Microsoft-Website umgeleitet. Klicken Sie auf **akzeptieren** , um die Zustimmung zu erteilen.
-
-   Ihre Organisation muss einwilligen, dass der Office 365 Import Dienst auf Postfachdaten in Ihrer Organisation zugreifen kann. Um die Zustimmung des Administrators bereitzustellen, müssen Sie mit den Anmeldeinformationen eines globalen Administrators von Microsoft 365 angemeldet sein und dann die Zustimmungs Anforderung annehmen. Wenn Sie nicht als globaler Administrator angemeldet sind, können Sie zu [dieser Seite](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) wechseln und sich mit globalen Administratoranmeldeinformationen anmelden, um die Anforderung zu akzeptieren.
-
-4. Klicken Sie auf **weiter** , überprüfen Sie Ihre Einstellungen, und wechseln Sie zur Seite **Daten Konnektoren** , um den Fortschritt des Importvorgangs für den neuen Connector anzuzeigen.
+3. Klicken Sie auf **weiter**, überprüfen Sie Ihre Einstellungen, und wechseln Sie zur Seite **Daten Konnektoren** , um den Fortschritt des Importvorgangs für den neuen Connector anzuzeigen.
 
 ## <a name="step-4-monitor-the-xsltxml-connector"></a>Schritt 4: Überwachen des XSLT/XML-Connectors
 
