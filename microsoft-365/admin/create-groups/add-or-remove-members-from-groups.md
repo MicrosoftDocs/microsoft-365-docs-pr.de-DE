@@ -15,18 +15,15 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Hier erfahren Sie, wie Sie einer Gruppe ein Mitglied hinzufügen, Mitglied aus der Gruppe entfernen und den Status von Gruppenbesitzern im Microsoft 365 Admin Center verwalten.
-ms.openlocfilehash: a8739b6cd2005598acbfccbaff6131235ec480ee
-ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
+ms.openlocfilehash: 34c026bced5563e07a1ae0d13f4c691cfaf3f624
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753313"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663243"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Hinzufügen oder Entfernen von Mitgliedern aus Microsoft 365-Gruppen mithilfe des Admin Centers
 
@@ -37,38 +34,38 @@ In Microsoft 365 erstellen Gruppenmitglieder in der Regel Ihre eigenen Gruppen, 
   
 ## <a name="add-a-member-to-a-group-in-the-admin-center"></a>Hinzufügen eines Mitglieds zu einer Gruppe im Admin Center
 
-1. Wechseln Sie im Admin Center zur Seite **Gruppen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppen</a>.  
+1. Wechseln Sie im Admin Center zur Seite [**aktive Gruppen**](https://admin.microsoft.com/Adminportal/Home?#/groups) .  
 
-2. Wählen Sie einen Gruppennamen aus.
+2. Klicken Sie auf einen Gruppennamen.
 
-3. Wählen Sie im Detailbereich auf der Registerkarte **Mitglieder** die Option **Alle anzeigen und Mitglieder verwalten**aus, und wählen Sie dann **Mitglieder hinzufügen**aus.
+3. Wählen Sie im Detailbereich auf der Registerkarte **Mitglieder** die Option **Alle anzeigen und Mitglieder verwalten** aus, und wählen Sie dann **Mitglieder hinzufügen** aus.
 
 4. Suchen Sie nach dem Namen des Mitglieds, das hinzugefügt werden soll, oder wählen Sie ihn aus.
 
-5. Klicken Sie auf **Speichern**.
+5. Wählen Sie **Speichern** aus.
 
 ## <a name="add-a-group-to-a-member-in-the-admin-center"></a>Hinzufügen einer Gruppe zu einem Mitglied im Admin Center
 
-1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.  
+1. Wechseln Sie im Admin Center zur Seite [**aktive Benutzer**](https://admin.microsoft.com/Adminportal/Home?#/users) .  
 
-2. Wählen Sie einen Benutzer aus.
+2. Klicken Sie auf einen Benutzer.
 
-3. Wählen Sie im Detailbereich auf der Registerkarte **Konto** die Option **Gruppen verwalten**aus.
+3. Wählen Sie im Detailbereich auf der Registerkarte **Konto** die Option **Gruppen verwalten** aus.
 
 4. Suchen oder wählen Sie den Namen der Gruppe aus, die Sie hinzufügen möchten.
 
-5. Klicken Sie auf **Speichern**.
+5. Wählen Sie **Speichern** aus.
 
 ## <a name="remove-a-member-from-a-group-in-the-admin-center"></a>Entfernen eines Mitglieds aus einer Gruppe im Admin Center
 
 > [!NOTE]
-> Wenn Sie ein Mitglied aus einer privaten Gruppe entfernen, dauert es 5 Minuten, bis der Benutzer aus der Gruppe ausgeschlossen wird (bis die Mitgliedschaftsänderungen vollständig auf alle Domänencontroller repliziert wurden).
+> Wenn Sie ein Mitglied aus einer privaten Gruppe entfernen, dauert es 5 Minuten, bis die Person von der Gruppe blockiert wird.
 
-1. Wechseln Sie im Admin Center zur Seite **Gruppen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppen</a>.
+1. Wechseln Sie im Admin Center zur Seite [**aktive Gruppen**](https://admin.microsoft.com/Adminportal/Home?#/groups) .  
 
-2. Wählen Sie einen Gruppennamen aus.
+2. Klicken Sie auf einen Gruppennamen.
 
-3. Wählen Sie im Detailbereich auf der Registerkarte **Mitglieder** die Option **Alle anzeigen und Mitglieder verwalten**aus.
+3. Wählen Sie im Detailbereich auf der Registerkarte **Mitglieder** die Option **Alle anzeigen und Mitglieder verwalten** aus.
 
 4. Wählen Sie neben dem Mitglied, das Sie entfernen möchten, das X aus.
 
@@ -80,35 +77,35 @@ Die Person, die eine Gruppe erstellt hat, ist standardmäßig der Gruppenbesitze
   
 ### <a name="promote-a-member-to-owner-status-in-the-admin-center"></a>Heraufstufen eines Mitglieds in den Besitzer Status im Admin Center
 
-1. Wechseln Sie im Admin Center zur Seite **Gruppen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppen</a>.
+1. Wechseln Sie im Admin Center zur Seite [**aktive Gruppen**](https://admin.microsoft.com/Adminportal/Home?#/groups) .  
 
-2. Wählen Sie einen Gruppennamen aus.
+2. Klicken Sie auf einen Gruppennamen.
 
-3. Wählen Sie im Detailbereich auf der Registerkarte **Mitglieder** die Option **Alle anzeigen und Besitzer verwalten**aus.
+3. Wählen Sie im Detailbereich auf der Registerkarte **Mitglieder** die Option **Alle anzeigen und Besitzer verwalten** aus.
 
-4. Suchen Sie nach einem Mitglied, oder wählen Sie **Besitzer hinzufügen**aus.
+4. Wählen Sie **Besitzer hinzufügen** aus.
 
 5. Aktivieren Sie das Kontrollkästchen neben dem Namen des Mitglieds, das Sie hinzufügen möchten.
 
-6. Klicken Sie auf **Speichern**und dann auf **Schließen**.
+6. Klicken Sie auf **Speichern** und dann auf **Schließen**.
 
 ### <a name="remove-owner-status-in-the-admin-center"></a>Entfernen des Besitzer Status im Admin Center
 
-1. Wechseln Sie im Admin Center zur Seite **Gruppen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppen</a>.
+1. Wechseln Sie im Admin Center zur Seite [**aktive Gruppen**](https://admin.microsoft.com/Adminportal/Home?#/groups) .  
 
-2. Wählen Sie einen Gruppennamen aus.
+2. Klicken Sie auf einen Gruppennamen.
 
-3. Wählen Sie im Detailbereich auf der Registerkarte **Mitglieder** die Option **Alle anzeigen und Besitzer verwalten**aus.
+3. Wählen Sie im Detailbereich auf der Registerkarte **Mitglieder** die Option **Alle anzeigen und Besitzer verwalten** aus.
 
 4. Wählen Sie neben dem Namen des Besitzers das X aus.
 
-5. Klicken Sie auf **Speichern**.
+5. Wählen Sie **Speichern** aus.
 
 ## <a name="more-on-managing-membership"></a>###Weitere Informationen zum Verwalten der Mitgliedschaft
 
 - [Dynamisches Verwalten von Gruppen in Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=847632): Lesen Sie den Abschnitt "Wie kann ich die Mitgliedschaft in einer Gruppe dynamisch verwalten?"
 
-- Um Hunderte oder Tausende von Benutzern zu Gruppen hinzuzufügen, verwenden [Sie das Add-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191).
+- Um Hunderte oder Tausende von Benutzern zu Gruppen hinzuzufügen, verwenden [Sie das Add-UnifiedGroupLinks](https://docs.microsoft.com/powershell/module/exchange/add-unifiedgrouplinks).
 
 - [Zuweisen eines neuen Besitzers zu einer verwaisten Gruppe](https://support.microsoft.com/office/86bb3db6-8857-45d1-95c8-f6d540e45732)
 

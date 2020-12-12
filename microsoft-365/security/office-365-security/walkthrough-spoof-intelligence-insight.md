@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie die Spoof Intelligence-Einblicke funktionieren. Sie können schnell ermitteln, welche Absender legitimerweise e-Mails in ihre Organisationen aus Domänen senden, die keine e-Mail-Authentifizierungsprüfungen (SPF, DKIM oder DMARC) durchführen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9139a2b4c3c7ed8262f3d75b445defb869371d07
-ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
+ms.openlocfilehash: 665745e940ea9547d57a1d7c47ff54eaae3756b7
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49602105"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659690"
 ---
 # <a name="walkthrough---spoof-intelligence-insight-in-microsoft-defender-for-office-365"></a>Exemplarische Vorgehensweise – Spoof Intelligence Insight in Microsoft Defender für Office 365
 
@@ -42,13 +42,15 @@ Diese exemplarische Vorgehensweise ist eine von mehreren für das Security & Com
 
 - Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Um direkt zur Seite **Security Dashboard** zu wechseln, verwenden Sie <https://protection.office.com/searchandinvestigation/dashboard> .
 
-  Sie können die Einblicke in Spoof Intelligence aus mehreren Dashboards im Security & Compliance Center anzeigen. Unabhängig davon, für welches Dashboard Sie sich interessieren, bietet die Insight dieselben Details und ermöglicht Ihnen, schnell dieselben Aufgaben auszuführen.
+  Sie können die Einblicke in Spoof Intelligence aus mehreren Dashboards im Security & Compliance Center anzeigen. Unabhängig davon, für welches Dashboard Sie sich interessieren, bietet die Insight dieselben Details und ermöglicht Ihnen das schnelle Ausführen der gleichen Aufgaben.
 
 - Bevor Sie die Verfahren in diesem Artikel ausführen können, müssen Ihnen im Security & Compliance Center Berechtigungen zugewiesen werden.
   - **Organisationsverwaltung**
   - **Sicherheits Administrator**
   - **Sicherheits Leser**
   - **Globaler Leser**
+
+  Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
   **Hinweis**: beim Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance Center _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 

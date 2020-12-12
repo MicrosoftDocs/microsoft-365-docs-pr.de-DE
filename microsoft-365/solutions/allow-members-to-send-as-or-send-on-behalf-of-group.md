@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: Hier erfahren Sie, wie Sie Mitgliedern erlauben, e-Mails als Microsoft 365-Gruppe zu senden oder e-Mails im Namen einer Microsoft 365-Gruppe zu senden.
-ms.openlocfilehash: 2abf0668411ccd08db5bbd8408605dcd0aa2d832
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 6dff559eceec1b719f31d577d7fff8f604636a47
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613572"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663583"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Mitgliedern das Senden als oder senden im Auftrag einer Gruppe gestatten
 
-Ein Mitglied einer Microsoft 365-Gruppe, denen die Berechtigung " **Senden als** " oder " **Senden im Auftrag** von" erteilt wurde, kann e-Mails als Gruppe oder im Namen der Gruppe senden. In diesem Artikel wird erklärt, wie ein Administrator diese Berechtigungen festlegen kann.
+Ein Mitglied einer Microsoft 365-Gruppe, denen die Berechtigung " **Senden als** " oder " **Senden im Auftrag** von" erteilt wurde, kann e-Mails als Gruppe oder im Namen der Gruppe senden. In diesem Artikel wird erläutert, wie ein globaler oder Exchange-Administrator diese Berechtigungen festlegen kann.
   
 Wenn Megan Bowen beispielsweise Teil der Microsoft 365- **Schulungs** Gruppe ist und über die Berechtigung " **Senden als** " für die Gruppe verfügt, wenn Sie eine e-Mail-Nachricht als Gruppe sendet, sieht Sie aus wie die Gruppe " **Training** ", die die e-Mail gesendet hat. 
   

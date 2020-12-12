@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Hier erfahren Sie, wie Sie verhindern können, dass Gäste einer bestimmten Gruppe hinzugefügt werden.
-ms.openlocfilehash: 99e78932b29d25054922b56fcadb608a7dfca432
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 8bee26bf5ec323536ca1ac6f25ce96927634cee7
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613056"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49660048"
 ---
 # <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Verhindern, dass Gäste einer bestimmten Microsoft 365-Gruppe oder einem Microsoft Teams-Team hinzugefügt werden
 
@@ -30,7 +30,7 @@ Wenn Sie Sensitivitäts Bezeichnungen in Ihrer Organisation verwenden, empfehlen
 
 ## <a name="change-group-settings-using-microsoft-powershell"></a>Ändern von Gruppeneinstellungen mithilfe von Microsoft PowerShell
 
-Sie können auch das Hinzufügen neuer Gäste zu einzelnen Gruppen mithilfe von PowerShell verhindern.
+Sie können auch das Hinzufügen neuer Gäste zu einzelnen Gruppen mithilfe von PowerShell verhindern. (Beachten Sie, dass die zugeordnete SharePoint-Website des Teams über [separate Gast Freigabe Steuerelemente](https://docs.microsoft.com/sharepoint/change-external-sharing-site)verfügt.)
 
 Sie müssen die Vorschauversion von [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (Module Name **AzureADPreview**) verwenden, um die Einstellung Gastzugriff auf Gruppenebene zu ändern:
 

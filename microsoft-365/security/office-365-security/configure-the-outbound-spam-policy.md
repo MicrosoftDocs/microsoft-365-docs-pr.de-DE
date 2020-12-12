@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können erfahren, wie Sie ausgehende Spam Richtlinien in Exchange Online Protection (EoP) anzeigen, erstellen, ändern und löschen.
-ms.openlocfilehash: 237703d9ad6ed652a3feb4dda57a7af0e99240f7
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 0deafe2817c3e10371b02349aca2612af090af65
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49614940"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659702"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Konfigurieren der ausgehenden Spamfilterung in EoP
 
@@ -51,7 +51,7 @@ Der Unterschied zwischen diesen beiden Elementen ist nicht offensichtlich, wenn 
 - Wenn Sie eine Richtlinie ändern, ändern die Einstellungen im Zusammenhang mit dem Namen, der Priorität, den aktivierten oder deaktivierten und den Empfänger filtern die ausgehende Spamfilter Regel. Bei allen anderen Einstellungen wird die zugehörige Filterrichtlinie für ausgehende Spam geändert.
 - Wenn Sie eine Richtlinie entfernen, werden die ausgehende Spamfilter Regel und die zugehörige Filterrichtlinie für ausgehende Spam entfernt.
 
-In Exchange Online PowerShell oder der eigenständigen EOP PowerShell verwalten Sie die Richtlinie und die Regel getrennt. Weitere Informationen finden Sie im Abschnitt [Verwenden von Exchange Online PowerShell oder eigenständiger EoP PowerShell zum Konfigurieren von Richtlinien für ausgehende Spam Richtlinien](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-outbound-spam-policies) weiter unten in diesem Thema.
+In Exchange Online PowerShell oder der eigenständigen EOP PowerShell verwalten Sie die Richtlinie und die Regel getrennt. Weitere Informationen finden Sie im Abschnitt [Verwenden von Exchange Online PowerShell oder eigenständiger EoP PowerShell zum Konfigurieren von Richtlinien für ausgehende Spam Richtlinien](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-outbound-spam-policies) weiter unten in diesem Artikel.
 
 Jede Organisation verfügt über eine integrierte ausgehende Spam Richtlinie mit dem Namen Default, die die folgenden Eigenschaften aufweist:
 
@@ -158,7 +158,7 @@ Durch das Erstellen einer benutzerdefinierten ausgehenden Spam Richtlinie im Sec
 
      - **Keine Aktion, nur Warnung**: e-Mail-Benachrichtigungen werden gesendet.
 
-6. Optional Erweitern Sie den Abschnitt **automatische Weiterleitung** , um die automatische e-Mail-Weiterleitung von Benutzern an externe Absender zu steuern. Weitere Informationen zur automatischen Weiterleitung finden Sie unter [Konfigurieren der e-Mail-Weiterleitung](https://docs.microsoft.com/microsoft-365/admin/email/configure-email-forwarding).
+6. Optional Erweitern Sie den Abschnitt **automatische Weiterleitung** , um die automatische e-Mail-Weiterleitung von Benutzern an externe Absender zu steuern. Weitere Informationen finden Sie unter [Steuern der automatischen externen e-Mail-Weiterleitung in Microsoft 365](external-email-forwarding.md).
 
    > [!NOTE]
    >
@@ -166,7 +166,7 @@ Durch das Erstellen einer benutzerdefinierten ausgehenden Spam Richtlinie im Sec
    >
    > - Diese Einstellungen gelten nur für Cloud-basierte Postfächer.
    >
-   > - Wenn die automatische Weiterleitung deaktiviert ist, erhält der Empfänger einen Unzustellbarkeitsbericht (auch bekannt als NDR-oder Bounce-Nachricht), wenn externe Absender e-Mails an ein Postfach senden, in dem die Weiterleitung erfolgt ist. Wenn die e-Mail von einem internen Absender gesendet wird, erhält der Absender den NDR.
+   > - Wenn die automatische Weiterleitung deaktiviert ist, erhält der Empfänger einen Unzustellbarkeitsbericht (auch bekannt als NDR-oder Bounce-Nachricht), wenn externe Absender e-Mails an ein Postfach senden, in dem die Weiterleitung erfolgt ist. Wenn die Nachricht von einem internen Absender gesendet wird **und** die Weiterleitungsmethode die [Post Fach Weiterleitung](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) ist (auch als _SMTP-Weiterleitung_ bezeichnet), ruft der interne Absender den NDR ab. Der interne Absender erhält keinen NDR, wenn die Weiterleitung aufgrund einer Posteingangsregel aufgetreten ist.
 
    Die verfügbaren Werte sind:
 
@@ -396,7 +396,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-Hoste
 
 ### <a name="use-powershell-to-modify-outbound-spam-filter-policies"></a>Verwenden von PowerShell zum Ändern von Richtlinien für ausgehende Spamfilter
 
-Die gleichen Einstellungen stehen zur Verfügung, wenn Sie eine Filterrichtlinie für Schadsoftware in PowerShell wie beim Erstellen der Richtlinie wie im Abschnitt [Schritt 1: Verwenden von PowerShell zum Erstellen einer Richtlinie für ausgehende Spamfilter](#step-1-use-powershell-to-create-an-outbound-spam-filter-policy) weiter oben in diesem Thema beschrieben ändern.
+Die gleichen Einstellungen stehen zur Verfügung, wenn Sie eine Filterrichtlinie für Schadsoftware in PowerShell wie beim Erstellen der Richtlinie wie im Abschnitt [Schritt 1: Verwenden von PowerShell zum Erstellen einer Richtlinie für ausgehende Spamfilter](#step-1-use-powershell-to-create-an-outbound-spam-filter-policy) weiter oben in diesem Artikel beschrieben ändern.
 
 > [!NOTE]
 > Sie können keine ausgehende Spamfilter Richtlinie umbenennen (das Cmdlet " **HostedOutboundSpamFilterPolicy** " hat keinen Parameter " _Name_ "). Wenn Sie eine ausgehende Spam Richtlinie im Security & Compliance Center umbenennen, benennen Sie die ausgehende Spamfilter _Regel_ nur um.
@@ -413,7 +413,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Sets-Host
 
 Die einzige Einstellung, die beim Ändern einer ausgehenden Spamfilter Regel in PowerShell nicht verfügbar ist, ist der Parameter _Enabled_ , mit dem Sie eine deaktivierte Regel erstellen können. Informationen zum Aktivieren oder Deaktivieren vorhandener Filterregeln für ausgehende Spamfilter finden Sie im nächsten Abschnitt.
 
-Andernfalls stehen keine zusätzlichen Einstellungen zur Verfügung, wenn Sie eine ausgehende Spamfilter Regel in PowerShell ändern. Die gleichen Einstellungen sind verfügbar, wenn Sie eine Regel erstellen, wie im Abschnitt [Schritt 2: Verwenden von PowerShell zum Erstellen eines Filters für ausgehende Spamfilter](#step-2-use-powershell-to-create-an-outbound-spam-filter-rule) weiter oben in diesem Thema beschrieben.
+Andernfalls stehen keine zusätzlichen Einstellungen zur Verfügung, wenn Sie eine ausgehende Spamfilter Regel in PowerShell ändern. Die gleichen Einstellungen sind verfügbar, wenn Sie eine Regel erstellen, wie im Abschnitt [Schritt 2: Verwenden von PowerShell zum Erstellen eines Filters für ausgehende Spamfilter](#step-2-use-powershell-to-create-an-outbound-spam-filter-rule) weiter oben in diesem Artikel beschrieben.
 
 Verwenden Sie die folgende Syntax, um eine Filterregel für ausgehende Spam zu ändern:
 

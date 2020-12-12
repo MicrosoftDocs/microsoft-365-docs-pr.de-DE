@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die Anti-Phishing-Richtlinien informieren, die in Exchange Online Protection (EoP) und Microsoft Defender für Office 365 zur Verfügung stehen.
-ms.openlocfilehash: 9d3c8c0bf2b1c440892a1099d3d0812d95027156
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 34c66d8ab39af443462e8c5ac99009b4170be21e
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615768"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659856"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-Phishing-Richtlinien in Microsoft 365
 
@@ -30,7 +30,7 @@ ms.locfileid: "49615768"
 
 Richtlinien zum Konfigurieren von Einstellungen für den Schutz vor Phishing sind in Microsoft 365-Organisationen mit Exchange Online-Postfächern, eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächern und Microsoft Defender für Office 365 Organisationen verfügbar.
 
-Anti-Phishing-Richtlinien in Microsoft Defender für Office 365 sind nur in Organisationen verfügbar, die Defender für Office 365 haben. Beispiel:
+Anti-Phishing-Richtlinien in Microsoft Defender für Office 365 sind nur in Organisationen verfügbar, die Defender für Office 365 haben. Zum Beispiel:
 
 - Microsoft 365 Enterprise E5, Microsoft 365 Education A5, etc.
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
@@ -84,7 +84,7 @@ Die folgenden Richtlinieneinstellungen stehen in Anti-Phishing-Richtlinien in Eo
     - **Die Empfängerdomäne ist**
 
   > [!NOTE]
-  > Die Einstellung **angewendet auf** ist in benutzerdefinierten Richtlinien zum Schutz vor Phishing erforderlich, um die Nachrichten **Empfänger** zu identifizieren <u>, auf die die Richtlinie</u>angewendet wird. Anti-Phishing-Richtlinien in Microsoft Defender für Office 365 haben auch [Einstellungen für den Identitätswechsel](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) , in denen Sie einzelne Absender-e-Mail-Adressen oder Absenderdomänen angeben können <u>, die den Identitätswechsel Schutz erhalten,</u> wie weiter unten in diesem Thema beschrieben wird.
+  > Die Einstellung **angewendet auf** ist in benutzerdefinierten Richtlinien zum Schutz vor Phishing erforderlich, um die Nachrichten **Empfänger** zu identifizieren <u>, auf die die Richtlinie</u>angewendet wird. Anti-Phishing-Richtlinien in Microsoft Defender für Office 365 haben auch [Einstellungen für den Identitätswechsel](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) , in denen Sie einzelne Absender-e-Mail-Adressen oder Absenderdomänen angeben können <u>, die den Identitätswechsel Schutz erhalten,</u> wie weiter unten in diesem Artikel beschrieben wird.
 
 ## <a name="spoof-settings"></a>Spoof-Einstellungen
 

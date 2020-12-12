@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren erfahren, wie Sie isolierte Nachrichten für alle Benutzer in Exchange Online Protection (EoP) anzeigen und verwalten können. Administratoren in Organisationen mit Microsoft Defender für Office 365 können auch unter Quarantäne gestellte Dateien in SharePoint Online, OneDrive für Unternehmen und Microsoft Teams verwalten.
-ms.openlocfilehash: 8f4ca5caef9bf244315db2271011126ad4d7976e
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 5f4d63576e57ac50abe1ec1eb378221c4d457280
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616776"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659986"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Verwalten von isolierten Nachrichten und Dateien als Administrator in EOP
 
@@ -44,14 +44,21 @@ Sie können isolierte Nachrichten im Security & Compliance Center oder in PowerS
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Sie müssen Berechtigungen zugewiesen haben, bevor Sie die Quarantäne als Administrator verwalten können. Die Berechtigungen werden durch die **Quarantäne** Rolle im Security & Compliance Center gesteuert. Diese Rolle wird standardmäßig der Rollengruppe **Organisationsverwaltung** (Global Admins), **Quarantine Administrator** und **Sicherheitsadministrator** im Security & Compliance Center zugewiesen. Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- Bevor Sie die Verfahren in diesem Artikel ausführen können, müssen Ihnen im Security & Compliance Center Berechtigungen zugewiesen werden.
+  - Sie müssen Mitglied der Rollengruppen " **Organisationsverwaltung**", " **Sicherheitsadministrator**" oder " **Quarantine Administrator** " sein, um Aktionen für Nachrichten in Quarantäne für alle Benutzer durchführen zu können <sup>\*</sup> .
+  - Für den schreibgeschützten Zugriff auf isolierte Nachrichten für alle Benutzer müssen Sie Mitglied der Rollengruppen " **globaler Leser** " oder " **Sicherheits Leser** " sein.
+
+  Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+
+  **Hinweise**:
+
+  - Durch das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance Center _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Die Rollengruppe **Organisationsverwaltung mit Leserechten** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ermöglicht auch einen schreibgeschützten Zugriff auf das Feature.
+  - <sup>\*</sup> Mitglieder der Rollengruppe " **Quarantine Administrator** " müssen auch Mitglieder der Rollengruppe " **Hygiene Verwaltung** " in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) sein, um Quarantäneverfahren in Exchange Online PowerShell durchführen zu können.
 
 - Isolierte Nachrichten werden für einen Standardzeitraum aufbewahrt, bevor Sie automatisch gelöscht werden:
-
   - 30 Tage für Nachrichten, die durch Anti-Spam-Richtlinien (Spam, Phishing und Massen-e-Mails) unter Quarantäne gestellt werden. Dies ist der Standard-und Höchstwert. Informationen zum Konfigurieren (senken) dieses Werts finden Sie unter [configure Anti-Spam Policies](configure-your-spam-filter-policies.md).
-
   - 15 Tage für Nachrichten, die Schadsoftware enthalten.
-
   - 15 Tage für Dateien, die von ATP für SharePoint, OneDrive und Microsoft Teams in Defender für Office 365 unter Quarantäne gestellt werden.
 
   Wenn eine Nachricht aus der Quarantäne abläuft, können Sie Sie nicht wiederherstellen.
@@ -99,11 +106,11 @@ Sie können isolierte Nachrichten im Security & Compliance Center oder in PowerS
      - **Spam**
      - **Phishing mit hoher Zuverlässigkeit**
 
-   - **Richtlinientyp**: Filtern von Nachrichten anhand des Richtlinientyps:
+   - **Richtlinientyp**: Filtern von Nachrichten nach Richtlinientyp:
      - **Anti-Malware-Richtlinie**
      - **Richtlinie für sichere Anlagen**
-     - **Anti-Phishing-Richtlinie**
-     - **Richtlinie für gehostete Inhaltsfilter** (Anti-Spam-Richtlinie)
+     - **Antiphishing-Richtlinie**
+     - **Richtlinie für gehostete Inhaltsfilter** (Antispamrichtlinie)
      - **Transport Regel**
 
    - **E-Mail-Empfänger**: alle Benutzer oder nur an Sie gesendete Nachrichten. Endbenutzer können nur isolierte Nachrichten verwalten, die an Sie gesendet werden.
@@ -118,7 +125,7 @@ Sie können isolierte Nachrichten im Security & Compliance Center oder in PowerS
 
    - **E-Mail-Adresse des Absenders**: Die E-Mail-Adresse eines einzelnen Absenders.
 
-   - **Richtlinienname**: Verwenden Sie den gesamten Richtliniennamen der Nachricht. Bei der Suche wird nicht zwischen Groß- und Kleinschreibung unterschieden.
+   - **Richtlinienname**: Verwenden Sie den vollständigen Namen der Nachricht. Bei der Suche wird nicht zwischen Groß- und Kleinschreibung unterschieden.
 
    - **E-Mail-Adresse des Empfängers**: Die E-Mail-Adresse eines einzelnen Empfängers.
 

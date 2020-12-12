@@ -16,12 +16,12 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über die Webverwaltungsoberfläche in eigenständigen Exchange Online Schutz (EoP).
-ms.openlocfilehash: 732991befa9084b62c152295d10a2bbf94bc36ec
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: fc76ecd6dafcf9453a0c6de14917c96c950f8370
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202951"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659666"
 ---
 # <a name="exchange-admin-center-in-standalone-eop"></a>Exchange Admin Center in EOP als eigenständige Lösung
 
@@ -54,7 +54,7 @@ Eigenständige EoP-Kunden können mithilfe der folgenden Methoden auf die Exchan
 
 In diesem Abschnitt werden die Elemente der Benutzeroberfläche der Exchange-Verwaltungskonsole beschrieben.
 
-![EoP-Admincenter](../../media/EOP-AdminCenter.png)
+![Das Exchange Admin Center in Exchange Online Protection](../../media/EOP-AdminCenter.png)
 
 ### <a name="feature-pane"></a>Featurebereich
 
@@ -107,16 +107,12 @@ Wenn Sie in der Listenansicht ein Objekt auswählen, werden Informationen zu die
 
 ### <a name="me-tile-and-help"></a>Ich-Kachel und Hilfe
 
-Über die **Ich**-Kachel können Sie sich bei der Exchange-Verwaltungskonsole abmelden und als ein anderer Benutzer anmelden. Über das Dropdownmenü der **Hilfe**![Hilfe (Symbol)](../../media/ITPro-EAC-HelpIcon.gif) können Sie folgende Aktionen ausführen:
+Über die **Ich**-Kachel können Sie sich bei der Exchange-Verwaltungskonsole abmelden und als ein anderer Benutzer anmelden. Im  ![ Dropdownmenü Hilfe-Hilfesymbol ](../../media/ITPro-EAC-HelpIcon.gif) können Sie die folgenden Aktionen ausführen:
 
 - **Hilfe**: Klicken Sie auf ![ Hilfesymbol ](../../media/ITPro-EAC-HelpIcon.gif) , um den Inhalt der Online Hilfe anzuzeigen.
-
 - **Feedback**: hinterlassen Sie Feedback.
-
 - **Community**: Stellen Sie eine Frage für Find Answers in den Community-Foren bereit.
-
 - **Hilfe Blase deaktivieren**: in der Hilfe-Sprechblase wird Kontexthilfe für Felder angezeigt, wenn Sie ein Objekt erstellen oder bearbeiten. Sie können die Hilfe Blase deaktivieren oder aktivieren, wenn Sie deaktiviert wurde.
-
 - **Befehlsprotokollierung anzeigen**: Es wird ein neues Fenster geöffnet, in dem die entsprechenden PowerShell-Befehle basierend auf den in der Exchange-Verwaltungskonsole konfigurierten angezeigt werden.
 
 ## <a name="supported-browsers"></a>Unterstützte Browser

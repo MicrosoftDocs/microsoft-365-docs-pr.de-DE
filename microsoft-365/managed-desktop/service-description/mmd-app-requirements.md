@@ -9,12 +9,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: bd775e201f5fec556941ae0e8e7b025744da0419
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 322a46ce48cce4d080e51f482178462934d5c8f2
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529433"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659714"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Microsoft Managed Desktop-App-Anforderungen
 
@@ -22,7 +22,7 @@ ms.locfileid: "46529433"
 
 <!--Application addendum -->
  
-Microsoft Managed Desktop erfordert, dass wir Geräte mit einem bestimmten Ansatz verwalten, um die Leistung, Zuverlässigkeit und Servicefähigkeit von Geräten zu gewährleisten. Wenn Sie sicher sind, dass der von Microsoft Managed Desktop für die Bereiche unten getroffene Ansatz für Sie nicht möglich ist, können Sie eine [Ausnahme vom Dienstplan](customizing.md)anfordern.
+Microsoft Managed Desktop erfordert, dass wir Geräte mit einem bestimmten Ansatz verwalten, um die Leistung, Zuverlässigkeit und Servicefähigkeit von Geräten zu gewährleisten.
 
 
 |Verwaltungsbereich  |Microsoft Managed Desktop-Ansatz  |
@@ -41,6 +41,4 @@ Microsoft Managed Desktop erfordert, dass wir Geräte mit einem bestimmten Ansat
 
 
 
-Microsoft Managed Desktop überwacht möglicherweise andere auf verwalteten Geräten ausgeführten Software. Wenn sich dies negativ auf die Systemsicherheit, Leistung oder Zuverlässigkeit auswirkt, müssen Sie möglicherweise eine Ausnahme vom Dienstplan anfordern.
-
-
+Microsoft Managed Desktop überwacht möglicherweise andere auf verwalteten Geräten ausgeführten Software. Wenn sich dies negativ auf Geräteverwaltung, Gerätesicherheit, Leistung oder Zuverlässigkeit auswirkt, müssen Sie möglicherweise eine [Ausnahme vom Dienstplan](customizing.md)anfordern.

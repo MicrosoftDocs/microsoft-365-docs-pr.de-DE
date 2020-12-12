@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-evalutatemtp
 ms.topic: conceptual
-ms.openlocfilehash: fe0a06dd104f0f0532363ee046f4bad1c03c5400
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 8504b036203e1f73dc9e0a0d79a228425fb88bfa
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130892"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659633"
 ---
 # <a name="create-a-microsoft-365-defender-trial-lab-or-pilot-environment"></a>Erstellen eines Microsoft 365 Defender-Testlabors oder einer Pilotumgebung 
 
@@ -35,9 +35,13 @@ ms.locfileid: "49130892"
 **Gilt für:**
 - Microsoft 365 Defender
 
+
+Dieses Handbuch hilft Ihnen beim Einrichten einer Lab-Umgebung mit Benutzern und Gruppen und führt Sie durch die Konfiguration der Funktionen in Microsoft 365 Defender, sodass Sie einen Bedrohungs Angriff nachahmen und ein aussagekräftiges Testergebnis erhalten können. 
+
 Der Zweck der Erstellung dieser Test Labor-oder Pilotumgebung besteht darin, die umfassenden und integrierten Funktionen von Microsoft 365 Defender zu veranschaulichen. Erfahren Sie, wie diese intelligente Sicherheitslösung erkannt, verhindert, automatisch untersucht und auf Erweiterte Bedrohungen Ihrer Organisation reagiert. 
 
-Dieses Handbuch führt Sie durch die Schritte zum Starten Ihrer Microsoft 365 Defender-Evaluierung basierend auf den empfohlenen Bereitstellungspfaden. Das Ziel besteht darin, Sie bei der Einrichtung der Sicherheitslösung entweder in einer Testumgebung mit einem Test Konto oder in einer Pilotumgebung in der Produktion mit einer Vollversion zu unterstützen. Durch die Vorbereitung Ihrer Test Labor-oder Pilotumgebung können Sie Entscheidungsträgern in Ihrer Organisation bei der Vorgehensweise Sicherheitseinsatz-Anwendungsfällen helfen. Wenn Sie die Angriffssimulationen ausgeführt haben und mit den Ergebnissen zufrieden sind, können Sie Sie in Ihrer Organisation mit Hilfe von technischen Microsoft-Vertriebsexperten oder Experten in Ihrer Organisation vollständig bereitstellen und in Betrieb nehmen. 
+
+Sie werden durch die Schritte zum Starten Ihrer Microsoft 365 Defender-Evaluierung basierend auf den empfohlenen Bereitstellungspfaden geführt. Das Ziel besteht darin, Sie bei der Einrichtung der Sicherheitslösung entweder in einer Testumgebung mit einem Test Konto oder in einer Pilotumgebung in der Produktion mit einer Vollversion zu unterstützen. Durch die Vorbereitung Ihrer Test Labor-oder Pilotumgebung können Sie Entscheidungsträgern in Ihrer Organisation bei der Vorgehensweise Sicherheitseinsatz-Anwendungsfällen helfen. Wenn Sie die Angriffssimulationen ausgeführt haben und mit den Ergebnissen zufrieden sind, können Sie Sie in Ihrer Organisation mit Hilfe von technischen Microsoft-Vertriebsexperten oder Experten in Ihrer Organisation vollständig bereitstellen und in Betrieb nehmen. 
 
 Dieses Handbuch hilft Ihnen dabei:
 - Einrichten des Lab-Servers und der Computer
@@ -52,15 +56,30 @@ Dieses Handbuch hilft Ihnen dabei:
 
 ## <a name="deployment-phases"></a>Bereitstellungsphasen
 
-Es gibt drei Phasen, in denen eine Microsoft 365 Defender-Testumgebung erstellt und bereitgestellt wird:
+Es gibt drei Phasen beim Erstellen einer Testumgebung für Microsoft 365 Defender.
 
-![Bereitstellungsphasen: vorbereiten, einrichten, Onboard](../../media/phase-diagrams/deployment-phases.png)
+![Bereitstellungsphasen: vorbereiten, einrichten, Onboard](../../media/evaluation-guide-phases.png)
 
 |Phase | Beschreibung | 
 |:-------|:-----|
 |[Phase 1: Vorbereiten](prepare-mtpeval.md)| Erfahren Sie, was Sie bei der Bereitstellung von Microsoft 365 Defender in einer Test Labor-oder Pilotumgebung berücksichtigen müssen: <br><br>-Stakeholder und Sign-Off <br> -Umgebungs Überlegungen <br>-Access <br>-Azure-Active Directory-Setup <br> -Konfigurations Reihenfolge
 |[Phase 2: Setup](setup-mtpeval.md)|  Führen Sie die ersten Schritte für den Zugriff auf das Microsoft 365 Security Center aus, um die Testumgebung für das Microsoft 365 Defender-Testlabor oder die Pilotumgebung einzurichten. Sie werden zu folgenden Themen geführt:<br><br>-Registrieren für Microsoft 365 E5-Testversion <br>  -Domäne konfigurieren<br>-Zuweisen von Microsoft 365 E5-Lizenzen<br>-Abschließen des Setup-Assistenten im Portal|
 |[Phase 3: Konfigurieren von & Onboard](config-mtpeval.md) | Konfigurieren Sie die einzelnen Microsoft 365 Defender-Pfeiler und Onboard-Endpunkte. Sie werden zu folgenden Themen geführt:<br><br>-Konfigurieren von Microsoft Defender für Office 365<br>-Konfigurieren der Microsoft Cloud-App-Sicherheit<br>-Konfigurieren von Microsoft Defender für Identity<br>-Konfigurieren von Microsoft Defender für Endpoint
+
+
+Nachdem Sie dieses Handbuch abgeschlossen haben, hätten Sie die beteiligten Beteiligten und die erforderlichen Genehmigungen identifiziert, über die richtigen Zugriffsberechtigungen verfügen, sich für eine Testversion angemeldet haben, konfigurierte Domänen und alle Microsoft 365 Defender-Säulen haben und die Endpunkte an den Dienst weitergeleitet werden.
+
+## <a name="key-capabilities"></a>Wichtige Funktionen
+
+Während Microsoft 365 Defender zahlreiche Funktionen bietet, besteht der Hauptzweck dieses Bereitstellungshandbuchs darin, Ihnen den Einstieg in die Onboarding-Geräte zu ermöglichen. Neben dem Onboarding erhalten Sie in diesem Leitfaden zunächst die folgenden Funktionen.
+
+
+Funktion | Beschreibung 
+:---|:---
+Microsoft Defender für Office 365 | Schützt Ihr gesamtes Office 365 Umgebung vor den Bedrohungen von heute
+Microsoft Defender for Identity | Identifiziert und erkennt Bedrohungen für kompromittierte Identitäten und böswillige Insider Aktionen.
+Microsoft Cloud App Security | Bietet umfangreiche Sichtbarkeit, steuert Daten Reisen und erkennt Bedrohungen in Cloud-Diensten.
+Microsoft Defender für Endpunkt | Verhindert, erkennt und stellt Reaktionsfunktionen für erweiterte Bedrohungen mit umfassender Endpunktsicherheit bereit.
 
 
 ## <a name="in-scope"></a>Im Bereich

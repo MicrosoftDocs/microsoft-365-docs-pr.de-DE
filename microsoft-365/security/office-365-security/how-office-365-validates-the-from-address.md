@@ -18,23 +18,23 @@ ms.collection:
 - M365-security-compliance
 description: Administratoren können sich über die Arten von e-Mail-Adressen informieren, die von Exchange Online Protection (EoP) und Outlook.com akzeptiert oder abgelehnt werden, um Phishing zu verhindern.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e0afd05c80bb4de665d23b17c7089631dad93c78
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 25fbca8fa5d264a212ac25e2035bffde0819383d
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196059"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659654"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Wie EoP die Absenderadresse überprüft, um Phishing zu verhindern
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Phishing-Angriffe stellen eine ständige Bedrohung für jede e-Mail-Organisation dar. Zusätzlich zur Verwendung [gefälschter Absender-e-Mail-Adressen](anti-spoofing-protection.md)verwenden Angreifer häufig Werte in der von-Adresse, die Internetstandards verletzen. Um diese Art von Phishing zu verhindern, benötigen Exchange Online Protection (EoP) und Outlook.com nun eingehende Nachrichten, um eine RFC-konforme von-Adresse hinzuzufügen, wie in diesem Thema beschrieben. Diese Erzwingung wurde im November 2017 aktiviert.
+Phishing-Angriffe stellen eine ständige Bedrohung für jede e-Mail-Organisation dar. Zusätzlich zur Verwendung [gefälschter Absender-e-Mail-Adressen](anti-spoofing-protection.md)verwenden Angreifer häufig Werte in der von-Adresse, die Internetstandards verletzen. Um diese Art von Phishing zu verhindern, benötigen Exchange Online Protection (EoP) und Outlook.com nun eingehende Nachrichten, um eine RFC-konforme von-Adresse hinzuzufügen, wie in diesem Artikel beschrieben. Diese Erzwingung wurde im November 2017 aktiviert.
 
 **Hinweise**:
 
-- Wenn Sie regelmäßig e-Mails von Organisationen erhalten, die wie in diesem Thema beschrieben aus Adressen falsch formatiert sind, sollten Sie diese Organisationen ermutigen, Ihre e-Mail-Server so zu aktualisieren, dass Sie den modernen Sicherheitsstandards entsprechen.
+- Wenn Sie regelmäßig e-Mails von Organisationen erhalten, die wie in diesem Artikel beschrieben von Adressen falsch formatiert wurden, sollten Sie diese Organisationen ermutigen, Ihre e-Mail-Server so zu aktualisieren, dass Sie den modernen Sicherheitsstandards entsprechen.
 
 - Das zugehörige Absenderfeld (von "Senden im Auftrag" und "Mailinglisten" verwendet) ist von diesen Anforderungen nicht betroffen. Weitere Informationen finden Sie im folgenden Blogbeitrag: [Was verstehen wir, wenn wir auf den Absender einer e-Mail Bezug nehmen?](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/).
 
@@ -44,7 +44,7 @@ Eine standardmäßige SMTP-E-Mail besteht aus einem *Nachrichten-Envelope* und d
 
 - Die `5321.MailFrom` Adresse (auch bekannt als **Mail from** Address, P1 Sender oder Envelope Sender) ist die e-Mail-Adresse, die in der SMTP-Übertragung der Nachricht verwendet wird. Diese e-Mail-Adresse wird in der Regel im Headerfeld **Return-Path** in der Nachrichtenkopfzeile aufgezeichnet (obwohl es möglich ist, dass der Absender eine andere e-Mail-Adresse für den **Rückgabepfad** festlegt).
 
-- Die `5322.From` (auch bekannt als von-Adresse oder P2-Absender bezeichnet) ist die e-Mail-Adresse im Feld **von** -Kopfzeile und die e-Mail-Adresse des Absenders, die in e-Mail-Clients angezeigt wird. Die from-Adresse steht im Mittelpunkt der Anforderungen in diesem Thema.
+- Die `5322.From` (auch bekannt als von-Adresse oder P2-Absender bezeichnet) ist die e-Mail-Adresse im Feld **von** -Kopfzeile und die e-Mail-Adresse des Absenders, die in e-Mail-Clients angezeigt wird. Die from-Adresse steht im Mittelpunkt der Anforderungen in diesem Artikel.
 
 Die from-Adresse ist in mehreren RFCs detailliert definiert (beispielsweise RFC 5322 Sections 3.2.3, 3,4, and 3.4.1 und [RFC 3696](https://tools.ietf.org/html/rfc3696)). Es gibt viele Variationen bei der Adressierung und was als gültig oder ungültig erachtet wird. Um es einfach zu halten, empfehlen wir das folgende Format und die folgenden Definitionen:
 
@@ -56,7 +56,7 @@ Die from-Adresse ist in mehreren RFCs detailliert definiert (beispielsweise RFC 
   - Wenn die von-Adresse einen Anzeigenamen enthält, muss der e-Post-Wert wie dargestellt in spitzen Klammern (< >) eingeschlossen werden.
   - Microsoft empfiehlt dringend, ein Leerzeichen zwischen dem Anzeigenamen und der e-Mail-Adresse einzufügen.
 
-- E-Mail- **Adresse: eine**e-Mail verwendet das folgende Format `local-part@domain` :
+- E-Mail- **Adresse: eine** e-Mail verwendet das folgende Format `local-part@domain` :
 
   - **local-Part**: eine Zeichenfolge, die das Postfach identifiziert, das der Adresse zugeordnet ist. Dieser Wert ist innerhalb der Domäne eindeutig. Häufig wird der Benutzername oder die GUID des Postfachbesitzers verwendet.
   - **Domäne**: der vollqualifizierte Domänenname (Fully Qualified Domain Name, FQDN) des e-Mail-Servers, der das Postfach hostet, das vom lokalen Teil der e-Mail-Adresse identifiziert wird.
@@ -85,7 +85,7 @@ Die folgenden e-Mail-Adressen sind gültig:
 
 Die folgenden e-Mail-Adressen sind ungültig:
 
-- **Keine Absender**Adresse: einige automatisierte Nachrichten enthalten keine Absenderadresse. Wenn Microsoft 365 oder Outlook.com in der Vergangenheit eine Nachricht ohne Absenderadresse empfangen hat, hat der Dienst den folgenden Standardwert von: Address hinzugefügt, um die Nachricht zuzustellen:
+- **Keine Absender** Adresse: einige automatisierte Nachrichten enthalten keine Absenderadresse. Wenn Microsoft 365 oder Outlook.com in der Vergangenheit eine Nachricht ohne Absenderadresse empfangen hat, hat der Dienst den folgenden Standardwert von: Address hinzugefügt, um die Nachricht zuzustellen:
 
   `From: <>`
 
