@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 446babfe-2e08-4cc2-bbfb-c05b854933ac
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter easyDNS für Microsoft einrichten.
-ms.openlocfilehash: 4909a02ec56fc9720a2636e822da0339e89bccf8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a971a722f071ef5df9ce0fba387cfacfeb409f5b
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645551"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656819"
 ---
 # <a name="create-dns-records-at-easydns-for-microsoft"></a>Erstellen von DNS-Einträgen bei easyDNS für Microsoft
 
-[] [Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md) , wenn Sie nicht finden, wonach Sie suchen. 
+[] [Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml) , wenn Sie nicht finden, wonach Sie suchen. 
   
 Sie müssen alle folgenden DNS-Einträge auf der Website Ihrer Registrierungsstelle hinzufügen, um e-Mails an Microsoft weiterzuleiten, Ihre Domäne für Teams und Skype for Business zu verwenden usw.
   
@@ -49,9 +49,9 @@ Hinweis: SRV-Einträge sind derzeit nicht in allen easyDNS-Dienst Paketen verfü
     |:-----|:-----|
     |@  <br/> |MS = msXXXXXXXX (verwenden Sie den auf der Seite Admin Center-Domänen bereitgestellten Wert)  <br/> |
    
-5. Wählen Sie **weiter**aus. 
+5. Wählen Sie **weiter** aus. 
     
-6. Stellen Sie sicher, dass der Eintrag richtig ist, und wählen Sie dann **bestätigen**aus. 
+6. Stellen Sie sicher, dass der Eintrag richtig ist, und wählen Sie dann **bestätigen** aus. 
     
 7. Warten Sie einige Minuten, bevor Sie fortfahren, damit der soeben erstellte Eintrag über das Internet verbreitet und von Microsoft erkannt werden kann.
     
@@ -81,9 +81,9 @@ Hinweis: SRV-Einträge sind derzeit nicht in allen easyDNS-Dienst Paketen verfü
    
 2. Wenn Sie Ihre anderen MX-Einträge zu Sicherungszwecken speichern möchten, kopieren Sie Sie an einer beliebigen Stelle. Bevor Sie fortfahren, entfernen Sie alle anderen MX-Einträge hier.
     
-5. Wählen Sie **weiter**aus. 
+5. Wählen Sie **weiter** aus. 
     
-6. Stellen Sie sicher, dass der Eintrag richtig ist, und wählen Sie dann **bestätigen**aus. 
+6. Stellen Sie sicher, dass der Eintrag richtig ist, und wählen Sie dann **bestätigen** aus. 
     
 ## <a name="add-the-required-cname-records"></a>Hinzufügen der erforderlichen CNAME-Einträge
 
@@ -104,9 +104,9 @@ Hinweis: SRV-Einträge sind derzeit nicht in allen easyDNS-Dienst Paketen verfü
     |enterpriseregistration  <br/> |enterpriseregistration.windows.net.  <br/> |
     |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> |
    
-5. Wählen Sie **weiter**aus. 
+5. Wählen Sie **weiter** aus. 
     
-6. Stellen Sie sicher, dass der Eintrag richtig ist, und wählen Sie dann **bestätigen**aus. 
+6. Stellen Sie sicher, dass der Eintrag richtig ist, und wählen Sie dann **bestätigen** aus. 
     
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Hinzufügen eines TXT-Eintrags für SPF, um E-Mail-Spam zu verhindern
 
@@ -122,9 +122,9 @@ Hinweis: SRV-Einträge sind derzeit nicht in allen easyDNS-Dienst Paketen verfü
     |:-----|:-----|
     |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> |
    
-5. Wählen Sie **weiter**aus. 
+5. Wählen Sie **weiter** aus. 
     
-6. Stellen Sie sicher, dass der Eintrag richtig ist, und wählen Sie dann **bestätigen**aus. 
+6. Stellen Sie sicher, dass der Eintrag richtig ist, und wählen Sie dann **bestätigen** aus. 
     
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Hinzufügen der für Microsoft erforderlichen zwei SRV-Einträge
 
@@ -140,11 +140,11 @@ Hinweis: SRV-Einträge sind derzeit unter easyDNS ' Domain plus Service Level ni
     
     |**SERVICE**|**Proto**|**HOST**|**PRI**|**WGT**|**PORT**|**Target (muss mit einem "." enden)**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |TLS  <br/> |@  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> |1800  <br/> |
-    |_sipfederationtls  <br/> |TCP  <br/> |@  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> |1800  <br/> |
+    |_sip  <br/> |TLS  <br/> |@  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com.  <br/> |1800  <br/> |
+    |_sipfederationtls  <br/> |TCP  <br/> |@  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> |1800  <br/> |
    
-5. Wählen Sie **weiter**aus. 
+5. Wählen Sie **weiter** aus. 
     
-6. Stellen Sie sicher, dass der Eintrag richtig ist, und wählen Sie dann **bestätigen**aus. 
+6. Stellen Sie sicher, dass der Eintrag richtig ist, und wählen Sie dann **bestätigen** aus. 
     
 

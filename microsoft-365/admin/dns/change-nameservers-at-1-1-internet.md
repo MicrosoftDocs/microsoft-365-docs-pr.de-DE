@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 31efc571-c8b9-46fb-b42d-203c2fb25289
 description: Erfahren Sie, wie Sie Office 365, die von 21Vianet betrieben werden, zum Verwalten Ihrer DNS-Einträge einrichten können, wenn 1&1 Internet der DNS-Hostanbieter ist.
-ms.openlocfilehash: 8a783be20d2f8dbdb26e9826018f911289b35235
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b363718c7d1d1845117f44317ae9e6b24e9a2e28
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646559"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658032"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-11-ionos"></a>Ändern von Namenservern zum Einrichten von Microsoft 365 mit 1&1 Ionos
 
- **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
+ **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
   
 Befolgen Sie diese Anweisungen, wenn Microsoft 365 Ihre Microsoft 365-DNS-Einträge für Sie verwalten soll. (Wenn es Ihnen lieber ist, können Sie [alle Ihre Microsoft 365-DNS-Einträge mit 1&1 Ionos verwalten](create-dns-records-at-1-1-internet.md).) 
   
@@ -48,13 +48,13 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
   
 1. Um zu beginnen, wechseln Sie über [diesen Link](https://account.1and1.com/?redirect_url=https%3A%2F%2Fmy.1and1.com%2F)zu ihrer Domänen Seite bei 1&1 Ionos. You'll be prompted to log in. 
     
-2. Wählen Sie unter **Meine Domänen**die Option **Domänen verwalten**aus.
+2. Wählen Sie unter **Meine Domänen** die Option **Domänen verwalten** aus.
     
 3. Suchen Sie auf der Seite **Domänen Center** die Domäne, die Sie aktualisieren möchten. Wählen Sie dann das **Panel** -Steuerelement ( **v**) für diese Domäne aus.
     
-4. Wählen Sie im Bereich **Domäneneinstellungen** die Option **DNS-Einstellungen bearbeiten**aus.
+4. Wählen Sie im Bereich **Domäneneinstellungen** die Option **DNS-Einstellungen bearbeiten** aus.
     
-5. Wählen Sie im Abschnitt **txt-und SRV-Einträge** die Option **Eintrag hinzufügen**aus.
+5. Wählen Sie im Abschnitt **txt-und SRV-Einträge** die Option **Eintrag hinzufügen** aus.
     
     (Möglicherweise müssen Sie nach unten scrollen.) 
     
@@ -66,9 +66,9 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
 |TXT  <br/> |(Dieses Feld leer lassen.)  <br/> |MS=ms *XXXXXXXX* <br/> **Hinweis:** Dies ist ein nur Beispiel. Verwenden Sie hier Ihren spezifischen Wert für **Ziel oder verweisende Adresse** aus der Tabelle in Microsoft 365. [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md) <br/> |
 
    
-7. Wählen Sie **Speichern**und dann erneut **Speichern** aus. 
+7. Wählen Sie **Speichern** und dann erneut **Speichern** aus. 
     
-8. Wählen Sie im Dialogfeld **DNS-Einstellungen bearbeiten** die Option **Ja**aus.
+8. Wählen Sie im Dialogfeld **DNS-Einstellungen bearbeiten** die Option **Ja** aus.
     
 9. Warten Sie einige Minuten, bevor Sie fortfahren, damit der soeben erstellte Eintrag im Internet aktualisiert werden kann.
     
@@ -101,11 +101,11 @@ Möchten Sie Ihre NS-Einträge so ändern, dass Microsoft 365 Ihre Domäne einri
   
 1. Um zu beginnen, navigieren Sie über [diesen Link](https://account.1and1.com/?redirect_url=https%3A%2F%2Fmy.1and1.com%2F)zu ihrer Domänen Seite bei 1&1 Ionos. You'll be prompted to log in. 
     
-2. Wählen Sie unter **Meine Domänen**die Option **Domänen verwalten**aus.
+2. Wählen Sie unter **Meine Domänen** die Option **Domänen verwalten** aus.
     
 3. Suchen Sie auf der Seite **Domänen Center** die Domäne, die Sie aktualisieren möchten, und wählen Sie dann das Steuerelement **Panel** ( **v**) für diese Domäne aus.
     
-4. Wählen Sie im Bereich **Domäneneinstellungen** die Option **DNS-Einstellungen bearbeiten**aus.
+4. Wählen Sie im Bereich **Domäneneinstellungen** die Option **DNS-Einstellungen bearbeiten** aus.
     
 5. Wählen Sie im Abschnitt **Name Server Settings** die Option **Other name servers** aus.
     
@@ -141,11 +141,11 @@ Möchten Sie Ihre NS-Einträge so ändern, dass Microsoft 365 Ihre Domäne einri
    
 ![Eingeben von Namenserver Werten](../../media/0f15880c-88b6-4133-8f31-62f0d98ee63f.png)
   
-4. Klicken Sie auf **Speichern**.
+4. Wählen Sie **Speichern** aus.
     
     ![Auswählen von "Speichern" auf der Seite "Name Server-Einstellungen"](../../media/864f7927-7127-4784-b8d2-dadfea2f9dc8.png)
   
-5. Wählen Sie im Dialogfeld **DNS-Einstellungen bearbeiten** die Option **Ja**aus.
+5. Wählen Sie im Dialogfeld **DNS-Einstellungen bearbeiten** die Option **Ja** aus.
     
     ![Auswählen von "Speichern" im Dialogfeld "DNS-Einstellungen bearbeiten"](../../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
   
@@ -172,11 +172,11 @@ Möchten Sie Ihre NS-Einträge so ändern, dass Microsoft 365 Ihre Domäne einri
    
    ![Eingeben von Namenserver Werten](../../media/52826bd1-0596-4103-a728-d5d28b9610d2.png)
   
-3. Klicken Sie auf **Speichern**.
+3. Wählen Sie **Speichern** aus.
     
     ![Auswählen von "Speichern" auf der Seite "Name Server-Einstellungen"](../../media/cd10e4fb-b7fa-480f-855b-a443f2705cf2.png)
   
-4. Wählen Sie im Dialogfeld **DNS-Einstellungen bearbeiten** die Option **Ja**aus.
+4. Wählen Sie im Dialogfeld **DNS-Einstellungen bearbeiten** die Option **Ja** aus.
     
     ![Auswählen von "Speichern" im Dialogfeld "DNS-Einstellungen bearbeiten"](../../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
   

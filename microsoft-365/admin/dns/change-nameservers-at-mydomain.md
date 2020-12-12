@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: c5f6140a-4a12-401b-9bbd-7dfb0d6b0ba3
 description: Erfahren Sie, wie Sie Microsoft zum Verwalten der DNS-Einträge Ihrer benutzerdefinierten Domäne bei mydomain einrichten können.
-ms.openlocfilehash: 44d36f872ddbeeba1948ee8a7a4db029895fcb8c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: fbfa3c495f54a9890be6d9c9e31a7878b21f12fe
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646415"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658416"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-mydomain"></a>Ändern von Namenservern zum Einrichten von Microsoft mit mydomain
 
- **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen.
+ **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen.
   
 Befolgen Sie diese Anweisungen, wenn Microsoft Ihre DNS-Einträge für Sie verwalten soll. (Wenn es Ihnen lieber ist, können Sie [alle Ihre Microsoft-DNS-Einträge bei mydomain verwalten](create-dns-records-at-mydomain.md).)
   
@@ -94,7 +94,7 @@ Um die Einrichtung Ihrer Domäne bei Microsoft abzuschließen, ändern Sie die N
     
 3. Wählen Sie unter **Domain** den Namen der Domäne aus, die Sie bearbeiten möchten.
     
-4. Wählen Sie in der Zeile **Übersicht** die Option Namen **Server**aus.
+4. Wählen Sie in der Zeile **Übersicht** die Option Namen **Server** aus.
     
     ![Mydomain-BP-redelegate-1-1](../../media/49e91235-44b5-46d6-a82e-8f11329db3d6.png)
   
@@ -113,7 +113,7 @@ Um die Einrichtung Ihrer Domäne bei Microsoft abzuschließen, ändern Sie die N
 ### <a name="if-the-correct-nameservers-are-not-already-listed"></a>Wenn die richtigen Namenserver noch NICHT aufgelistet sind
 
 > [!CAUTION]
-> Follow these steps only if you have existing nameservers other than the four correct nameservers. (Das heißt, löschen Sie nur aktuelle Namenserver, die  *nicht* **ns1.BDM.microsoftonline.com**, **ns2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com**oder **NS4.BDM.microsoftonline.com**sind.) 
+> Follow these steps only if you have existing nameservers other than the four correct nameservers. (Das heißt, löschen Sie nur aktuelle Namenserver, die  *nicht* **ns1.BDM.microsoftonline.com**, **ns2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com** oder **NS4.BDM.microsoftonline.com** sind.) 
   
 1. Delete the existing nameservers by selecting each entry in the **Nameserver:** field, and then pressing the **Delete** key on your keyboard. 
     
@@ -134,7 +134,7 @@ Um die Einrichtung Ihrer Domäne bei Microsoft abzuschließen, ändern Sie die N
    
    ![Mydomain-BP-redelegate-1-4](../../media/7427e99c-49c7-4a2e-a5bf-66fc46900cd1.png)
   
-4. Klicken Sie auf **Speichern**.
+4. Wählen Sie **Speichern** aus.
     
     ![Mydomain-BP-redelegate-1-5](../../media/48473816-b881-47f0-9344-74622efa3bf8.png)
   

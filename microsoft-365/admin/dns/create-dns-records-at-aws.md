@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste bei Amazon Webdienste (AWS) für Microsoft einrichten.
-ms.openlocfilehash: 6fa791db7b1782b14092769c5d9ef911474d63eb
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: bb687b8685aed79f5f768c12d652205bbbed0f59
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646367"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657972"
 ---
 # <a name="create-dns-records-at-amazon-web-services-aws-for-microsoft"></a>Erstellen von DNS-Einträgen bei Amazon Webdienste (AWS) für Microsoft
 
- **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
+ **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
   
 Wenn AWS Ihr DNS-Hosting-Anbieter ist, befolgen Sie die Schritte in diesem Artikel, um Ihre Domäne zu überprüfen und DNS-Einträge für e-Mail, Skype online for Business usw. einzurichten.
   
@@ -51,11 +51,11 @@ Bevor Sie Ihre Domäne mit Microsoft verwenden können, müssen wir uns vergewis
   
 1. Navigieren Sie im ersten Schritt über [diesen Link](https://console.aws.amazon.com/route53/home) zu Ihrer Domänenseite bei AWS. Sie werden aufgefordert, sich zuerst anzumelden.
     
-2. Wählen Sie auf der Seite **Ressourcen** die Option **gehostete Zonen**aus.
+2. Wählen Sie auf der Seite **Ressourcen** die Option **gehostete Zonen** aus.
     
 3. Wählen Sie auf der Seite **gehostete Zonen** in der Spalte **Domänenname** den Namen der Domäne aus, die Sie bearbeiten möchten. 
     
-4. Wählen Sie **Daten Satz Satz erstellen**aus.
+4. Wählen Sie **Daten Satz Satz erstellen** aus.
     
 5. In the **Create Record Set** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -94,11 +94,11 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
 
 1. Navigieren Sie im ersten Schritt über [diesen Link](https://console.aws.amazon.com/route53/home) zu Ihrer Domänenseite bei AWS. Sie werden aufgefordert, sich zuerst anzumelden.
     
-2. Wählen Sie auf der Seite **Ressourcen** die Option **gehostete Zonen**aus.
+2. Wählen Sie auf der Seite **Ressourcen** die Option **gehostete Zonen** aus.
     
 3. Wählen Sie auf der Seite **gehostete Zonen** in der Spalte **Domänenname** den Namen der Domäne aus, die Sie bearbeiten möchten. 
     
-4. Wählen Sie **Daten Satz Satz erstellen**aus.
+4. Wählen Sie **Daten Satz Satz erstellen** aus.
     
 5. In the **Create Record Set** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -117,7 +117,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
 7. Wenn es weitere MX-Einträge gibt, entfernen Sie sie.
     
     > [!IMPORTANT]
-    > AWS speichert MX-Einträge als Satz, der mehrere Datensätze enthalten kann. **DO NOT** Wählen Sie nicht **Daten Satz Satz löschen**aus, da dadurch alle MX-Einträge gelöscht werden, einschließlich des soeben hinzugefügten MX-Eintrags. Verwenden Sie stattdessen die folgenden Anweisungen. 
+    > AWS speichert MX-Einträge als Satz, der mehrere Datensätze enthalten kann.  Wählen Sie nicht **Daten Satz Satz löschen** aus, da dadurch alle MX-Einträge gelöscht werden, einschließlich des soeben hinzugefügten MX-Eintrags. Verwenden Sie stattdessen die folgenden Anweisungen. 
   
     Wählen Sie zuerst den MX-Eintragssatz aus.
     
@@ -127,7 +127,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     ![AWS-BP-Configure-2-4](../../media/c3b0c1bc-21ab-44cc-84b7-f504725c5540.png)
   
-8. Wählen Sie **Speichersatz speichern**aus.
+8. Wählen Sie **Speichersatz speichern** aus.
     
     ![AWS-BP-Configure-2-5](../../media/86f0998d-f5d4-4750-a93d-ac13b318c40b.png)
   
@@ -136,11 +136,11 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
 
 1. Navigieren Sie im ersten Schritt über [diesen Link](https://console.aws.amazon.com/route53/home) zu Ihrer Domänenseite bei AWS. Sie werden aufgefordert, sich zuerst anzumelden.
     
-2. Wählen Sie auf der Seite **Ressourcen** die Option **gehostete Zonen**aus.
+2. Wählen Sie auf der Seite **Ressourcen** die Option **gehostete Zonen** aus.
     
 3. Wählen Sie auf der Seite **gehostete Zonen** in der Spalte **Domänenname** den Namen der Domäne aus, die Sie bearbeiten möchten. 
     
-4. Wählen Sie **Daten Satz Satz erstellen**aus.
+4. Wählen Sie **Daten Satz Satz erstellen** aus.
     
 5. Fügen Sie den ersten CNAME-Eintrag hinzu.
     
@@ -164,7 +164,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
   
 7. Fügen Sie die anderen vier CNAME-Einträge hinzu.
     
-    Wählen Sie auf der Seite **gehostete Zonen** die Option **Daten Satz Satz erstellen**aus, erstellen Sie einen Datensatz mit den Werten aus der nächsten Zeile in der Tabelle, und wählen Sie dann erneut **Erstellen** aus, um diesen Datensatz abzuschließen. 
+    Wählen Sie auf der Seite **gehostete Zonen** die Option **Daten Satz Satz erstellen** aus, erstellen Sie einen Datensatz mit den Werten aus der nächsten Zeile in der Tabelle, und wählen Sie dann erneut **Erstellen** aus, um diesen Datensatz abzuschließen. 
     
     Wiederholen Sie diesen Vorgang, bis Sie alle fünf CNAME-Einträge erstellt haben.
     
@@ -172,11 +172,11 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. Wenn es für Ihre Domäne bereits einen SPF-Eintrag gibt, erstellen Sie für Microsoft keinen neuen, Fügen Sie stattdessen die erforderlichen Microsoft-Werte zum aktuellen Datensatz hinzu, sodass Sie einen  *einzelnen*  SPF-Eintrag haben, der beide Wertegruppen enthält. Benötigen Sie Beispiele? Lesen Sie die Informationen unter [Externe DNS-Einträge für Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records). Zum Überprüfen des SPF-Eintrags können Sie eines dieser[SPF-Überprüfungstools](../setup/domains-faq.md)verwenden. 
+> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. Wenn es für Ihre Domäne bereits einen SPF-Eintrag gibt, erstellen Sie für Microsoft keinen neuen, Fügen Sie stattdessen die erforderlichen Microsoft-Werte zum aktuellen Datensatz hinzu, sodass Sie einen  *einzelnen*  SPF-Eintrag haben, der beide Wertegruppen enthält. Benötigen Sie Beispiele? Lesen Sie die Informationen unter [Externe DNS-Einträge für Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records). Zum Überprüfen des SPF-Eintrags können Sie eines dieser[SPF-Überprüfungstools](../setup/domains-faq.yml)verwenden. 
   
 1. Navigieren Sie im ersten Schritt über [diesen Link](https://console.aws.amazon.com/route53/home) zu Ihrer Domänenseite bei AWS. Sie werden aufgefordert, sich zuerst anzumelden.
     
-2. Wählen Sie auf der Seite **Ressourcen** die Option **gehostete Zonen**aus.
+2. Wählen Sie auf der Seite **Ressourcen** die Option **gehostete Zonen** aus.
     
 3. Wählen Sie auf der Seite **gehostete Zonen** in der Spalte **Domänenname** den Namen der Domäne aus, die Sie bearbeiten möchten. 
     
@@ -192,7 +192,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
    
     ![AWS-BP-configure-4-2](../../media/beb3c086-eaf8-4245-9860-18512a3ff72e.png)
   
-6. Wählen Sie **Speichersatz speichern**aus.
+6. Wählen Sie **Speichersatz speichern** aus.
     
     ![AWS-BP-Configure-4-3](../../media/94b9306c-bdc9-4f84-ad6f-6d12edbfde90.png)
   
@@ -201,11 +201,11 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
 
 1. Navigieren Sie im ersten Schritt über [diesen Link](https://console.aws.amazon.com/route53/home) zu Ihrer Domänenseite bei AWS. Sie werden aufgefordert, sich zuerst anzumelden.
     
-2. Wählen Sie auf der Seite **Ressourcen** die Option **gehostete Zonen**aus.
+2. Wählen Sie auf der Seite **Ressourcen** die Option **gehostete Zonen** aus.
     
 3. Wählen Sie auf der Seite **gehostete Zonen** in der Spalte **Domänenname** den Namen der Domäne aus, die Sie bearbeiten möchten. 
     
-4. Wählen Sie **Daten Satz Satz erstellen**aus.
+4. Wählen Sie **Daten Satz Satz erstellen** aus.
     
 5. Fügen Sie den ersten SRV-Eintrag hinzu:
     
@@ -226,7 +226,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
   
 7. Fügen Sie den anderen SRV-Eintrag hinzu:
     
-    Wählen Sie auf der Seite **gehostete Zonen** die Option **Daten Satz Satz erstellen**aus, erstellen Sie einen Datensatz mit den Werten aus der nächsten Zeile in der Tabelle, und wählen Sie dann erneut **Erstellen** aus, um diesen Datensatz abzuschließen. 
+    Wählen Sie auf der Seite **gehostete Zonen** die Option **Daten Satz Satz erstellen** aus, erstellen Sie einen Datensatz mit den Werten aus der nächsten Zeile in der Tabelle, und wählen Sie dann erneut **Erstellen** aus, um diesen Datensatz abzuschließen. 
     
 > [!NOTE]
 > Normalerweise dauert es ungefähr 15 Minuten, bis DNS-Änderungen wirksam werden. Es kann jedoch gelegentlich länger dauern, bis eine von Ihnen vorgenommene Änderung im Internet im DNS-System aktualisiert wurde. Wenn nach dem Hinzufügen von DNS-Einträgen Probleme mit dem E-Mail-Fluss oder andere Probleme auftreten, lesen Sie [Suchen und Beheben von Problemen, nachdem Ihre Domäne oder DNS-Einträge hinzugefügt wurden](../get-help-with-domains/find-and-fix-issues.md). 

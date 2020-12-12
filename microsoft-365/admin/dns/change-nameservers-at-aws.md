@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 0ddbe33c-81ea-4c02-8db9-e71d3810c0ec
 description: 'Erfahren Sie, wie Sie Microsoft zum Verwalten Ihrer DNS-Einträge bei Amazon Webdienste (AWS) einrichten können. '
-ms.openlocfilehash: 9f5bfd54020dfb793bbaad9aa8e081e87abc5ce8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 4700557c40973ab051cced81c129197a826964ab
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646487"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658452"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-amazon-web-services-aws"></a>Ändern von Namenservern zum Einrichten von Microsoft mit Amazon Webdienste (AWS)
 
- **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
+ **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
   
 Befolgen Sie diese Anweisungen, wenn Microsoft Ihre DNS-Einträge für Sie verwalten soll. (Wenn es Ihnen lieber ist, können Sie [alle Ihre Microsoft-DNS-Einträge bei AWS verwalten](create-dns-records-at-aws.md).)
   
@@ -44,11 +44,11 @@ Bevor Sie Ihre Domäne mit Microsoft verwenden können, müssen wir uns vergewis
   
 1. Navigieren Sie im ersten Schritt über [diesen Link](https://console.aws.amazon.com/route53/home) zu Ihrer Domänenseite bei AWS. Sie werden aufgefordert, sich zuerst anzumelden.
     
-2. Wählen Sie auf der Seite **Ressourcen** die Option **gehostete Zonen**aus.
+2. Wählen Sie auf der Seite **Ressourcen** die Option **gehostete Zonen** aus.
     
 3. Wählen Sie auf der Seite **gehostete Zonen** in der Spalte **Domänenname** den Namen der Domäne aus, die Sie bearbeiten möchten. 
     
-4. Wählen Sie **Daten Satz Satz erstellen**aus.
+4. Wählen Sie **Daten Satz Satz erstellen** aus.
     
 5. In the **Create Record Set** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -94,7 +94,7 @@ Um die Einrichtung Ihrer Domäne bei Microsoft abzuschließen, ändern Sie die N
   
 1. Navigieren Sie im ersten Schritt über [diesen Link](https://console.aws.amazon.com/route53/home) zu Ihrer Domänenseite bei AWS. Sie werden aufgefordert, sich zuerst anzumelden.
     
-2. Wählen Sie auf der Seite **Ressourcen** die Option **gehostete Zonen**aus.
+2. Wählen Sie auf der Seite **Ressourcen** die Option **gehostete Zonen** aus.
     
 3. Wählen Sie auf der Seite **gehostete Zonen** in der Spalte **Domänenname** den Namen der Domäne aus, die Sie bearbeiten möchten. 
     
@@ -105,7 +105,7 @@ Um die Einrichtung Ihrer Domäne bei Microsoft abzuschließen, ändern Sie die N
 5. In the **NS - Name server** record set in the **Value** box, delete all of the nameservers by selecting them all and then pressing the **Delete** key on your keyboard. 
     
     > [!CAUTION]
-    > Follow these steps only if you have existing nameservers other than the four correct nameservers. (Das heißt, löschen Sie nur aktuelle Namenserver, die  *nicht* **ns1.BDM.microsoftonline.com**, **ns2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com**oder **NS4.BDM.microsoftonline.com**sind.) 
+    > Follow these steps only if you have existing nameservers other than the four correct nameservers. (Das heißt, löschen Sie nur aktuelle Namenserver, die  *nicht* **ns1.BDM.microsoftonline.com**, **ns2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com** oder **NS4.BDM.microsoftonline.com** sind.) 
   
     ![Select and delete all of the nameservers in the Value box](../../media/ecf1e897-fa7d-4abc-b00b-bf55b8ed2139.png)
   
@@ -127,7 +127,7 @@ Um die Einrichtung Ihrer Domäne bei Microsoft abzuschließen, ändern Sie die N
    
    ![Geben Sie den Wert der ersten Textreihe in das Feld Wert ein oder fügen Sie ihn ein.](../../media/b63f41e0-51ef-4ab2-a4b8-ee7380e5ab35.png)
   
-8. Wählen Sie **Speichersatz speichern**aus.
+8. Wählen Sie **Speichersatz speichern** aus.
     
     ![Daten Satz Satz speichern auswählen](../../media/ab3c0558-bb7c-41e4-871e-ea82f1553476.png)
   

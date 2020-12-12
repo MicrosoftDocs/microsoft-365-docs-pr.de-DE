@@ -14,12 +14,12 @@ ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können erfahren, wie Sie einen Administratorrollengruppen Bericht in eigenständigen Exchange Online Schutz (EoP) ausführen. Dieser Bericht protokolliert, wenn ein Administrator Mitglieder aus Administratorrollengruppen hinzugefügt oder entfernt.
-ms.openlocfilehash: 95b216b41d1c83ba36bcc00e1f571e08c8bd1f73
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: cd7ca13a3d863240a0f2608ed13321cbe3d50ad2
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920620"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659280"
 ---
 # <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>Ausführen eines Administrator-Rollengruppenberichts in EOP als eigenständige Lösung
 
@@ -34,7 +34,7 @@ Wenn Sie einen Administratorrollengruppen Bericht im Exchange Admin Center (EAC)
 
 - Informationen zum Öffnen des Exchange Admin Center finden Sie unter [Exchange Admin Center in Standalone EoP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Insbesondere benötigen Sie die Überwachungsprotokolle oder View-Only Überwachungsprotokoll Rolle, die standardmäßig den Rollengruppen ComplianceManagement, Mitglied (globale Administratoren) und SecurityAdministrator zugewiesen sind. Weitere Informationen finden Sie unter [Berechtigungen in eigenständigen EoP](feature-permissions-in-eop.md) und [Verwenden der Exchange-Verwaltungskonsole ändern der Liste der Mitglieder in Rollengruppen](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- Sie müssen Berechtigungen in Exchange Online Protection zugewiesen werden, bevor Sie die Verfahren in diesem Artikel ausführen können. Insbesondere benötigen Sie die **Überwachungsprotokolle** oder die Rolle " **Überwachungsprotokolle nur anzeigen** ", die standardmäßig den Rollengruppen " **Organisationsverwaltung**", " **Konformitätsverwaltung**" und " **Sicherheits Administrator** " zugewiesen sind. Weitere Informationen finden Sie unter [Berechtigungen in eigenständigen EoP](feature-permissions-in-eop.md) und [Verwenden der Exchange-Verwaltungskonsole ändern der Liste der Mitglieder in Rollengruppen](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
 - Informationen zu Tastenkombinationen, die möglicherweise für die Verfahren in diesem Artikel gelten, finden Sie unter [Tastenkombinationen für das Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
@@ -45,13 +45,13 @@ Wenn Sie einen Administratorrollengruppen Bericht im Exchange Admin Center (EAC)
 
 Führen Sie den Bericht Administratorrollengruppe aus, um die Änderungen an Verwaltungsrollengruppen innerhalb eines bestimmten Zeitrahmens zu finden.
 
-1. Wechseln Sie in der Exchange- **Verwaltungskonsole zu Compliance Management** \> **Auditing** , und wählen Sie dann **Administratorrollengruppen Bericht ausführen** aus.
+1. Wechseln Sie in der Exchange- **Verwaltungskonsole zu Compliance Management** \> **Auditing**, und wählen Sie dann **Administratorrollengruppen Bericht ausführen** aus.
 
 2. Konfigurieren Sie auf der Seite nach **Änderungen an Administratorrollengruppen suchen** , die geöffnet wird, die folgenden Einstellungen:
 
-   - **Start Datum** und **Enddatum** : Geben Sie einen Datumsbereich ein. Standardmäßig sucht der Bericht nach Änderungen, die innerhalb der letzten zwei Wochen an Administratorrollengruppen vorgenommen wurden.
+   - **Start Datum** und **Enddatum**: Geben Sie einen Datumsbereich ein. Standardmäßig sucht der Bericht nach Änderungen, die innerhalb der letzten zwei Wochen an Administratorrollengruppen vorgenommen wurden.
 
-   - **Auswählen von Rollengruppen** : Standardmäßig werden alle Rollengruppen durchsucht. Klicken Sie auf **Rollengruppen auswählen** , um die Ergebnisse nach bestimmten Rollengruppen zu filtern. Wählen Sie im daraufhin angezeigten Dialogfeld eine Rollengruppe aus, und klicken Sie auf **Add->**. Wiederholen Sie diesen Schritt so oft wie nötig, und klicken Sie dann auf **OK** , wenn Sie fertig sind.
+   - **Auswählen von Rollengruppen**: Standardmäßig werden alle Rollengruppen durchsucht. Klicken Sie auf **Rollengruppen auswählen**, um die Ergebnisse nach bestimmten Rollengruppen zu filtern. Wählen Sie im daraufhin angezeigten Dialogfeld eine Rollengruppe aus, und klicken Sie auf **Add->**. Wiederholen Sie diesen Schritt so oft wie nötig, und klicken Sie dann auf **OK** , wenn Sie fertig sind.
 
 3. Wenn Sie fertig sind, klicken Sie auf **Suchen**.
 
@@ -89,11 +89,11 @@ Search-AdminAuditLog - Cmdlets <cmdlet 1, cmdlet 2, ...> -Parameters <parameter 
 
 In diesem Beispiel wird eine Suche nach allen Überwachungsprotokolleinträgen ausgeführt, welche die folgenden Kriterien erfüllen:
 
-- **Start Datum** : 08/04/2018
-- **End-Datum** : 10/03/2018
-- **Benutzer-IDs** : `davids` , `chrisd` , `kima`
-- **Cmdlets** : **festlegen-Mailbox**
-- **Parameter** : _ProhibitSendQuota_ , _ProhibitSendReceiveQuota_ , _IssueWarningQuota_ , _MaxSendSize_ , _MaxReceiveSize_
+- **Start Datum**: 08/04/2018
+- **End-Datum**: 10/03/2018
+- **Benutzer-IDs**: `davids` , `chrisd` , `kima`
+- **Cmdlets**: **festlegen-Mailbox**
+- **Parameter**: _ProhibitSendQuota_, _ProhibitSendReceiveQuota_, _IssueWarningQuota_, _MaxSendSize_, _MaxReceiveSize_
 
 ```PowerShell
 Search-AdminAuditLog -Cmdlets Set-Mailbox -Parameters ProhibitSendQuota,ProhibitSendReceiveQuota,IssueWarningQuota,MaxSendSize,MaxReceiveSize -StartDate 08/04/2018 -EndDate 10/03/2018 -UserIds davids,chrisd,kima
@@ -101,9 +101,9 @@ Search-AdminAuditLog -Cmdlets Set-Mailbox -Parameters ProhibitSendQuota,Prohibit
 
 In diesem Beispiel werden Änderungen an einem bestimmten Postfach ermittelt. Dies ist bei der Problembehebung nützlich, oder wenn Sie Informationen für eine Untersuchung bereitstellen müssen. Die folgenden Kriterien werden verwendet:
 
-- **Start Datum** : 05/01/2018
-- **End-Datum** : 10/03/2018
-- **Objekt-ID** : contoso.com/users/DavidS
+- **Start Datum**: 05/01/2018
+- **End-Datum**: 10/03/2018
+- **Objekt-ID**: contoso.com/users/DavidS
 
 ```PowerShell
 Search-AdminAuditLog -StartDate 05/01/2018 -EndDate 10/03/2018 -ObjectID contoso.com/Users/DavidS
@@ -115,7 +115,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Search-Ad
 
 ### <a name="view-details-of-audit-log-entries"></a>Anzeigen der Details von Überwachungsprotokolleinträgen
 
-Das Cmdlet **Search-AdminAuditLog** gibt die in [Überwachungsprotokoll Inhalt](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#audit-log-contents)beschriebenen Felder zurück. Zwei der zurückgegebenen Felder, **CmdletParameters** und **ModifiedProperties** , enthalten zusätzliche Informationen, die standardmäßig nicht angezeigt werden.
+Das Cmdlet **Search-AdminAuditLog** gibt die in [Überwachungsprotokoll Inhalt](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#audit-log-contents)beschriebenen Felder zurück. Zwei der zurückgegebenen Felder, **CmdletParameters** und **ModifiedProperties**, enthalten zusätzliche Informationen, die standardmäßig nicht angezeigt werden.
 
 Führen Sie die folgenden Schritte aus, um die Inhalte der Felder **CmdletParameters** und **ModifiedProperties** anzuzeigen. Sie können auch das Verfahren in Verwenden von **Exchange Online PowerShell verwenden, um nach Überwachungsprotokolleinträgen zu suchen und Ergebnisse an einen Empfänger** weiter unten in diesem Artikel zu senden, um eine XML-Datei zu erstellen.
 

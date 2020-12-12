@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 5f0c840e-4140-4571-88ed-cf235ff142d6
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter Hostgator für Microsoft einrichten.
-ms.openlocfilehash: f8cfc417a7ff9821fd40b33c8dfe9932dd454d18
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 3fe13df9b7e41d88c9bf06149eb894a028c4e350
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645995"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658087"
 ---
 # <a name="create-dns-records-at-hostgator-for-microsoft"></a>Erstellen von DNS-Einträgen bei Hostgator für Microsoft
 
- **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
+ **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
   
 Wenn Hostgator Ihr DNS-Hostinganbieter ist, führen Sie die in diesem Artikel aufgeführten Schritte aus, um Ihre Domäne zu überprüfen und DNS-Einträge für E-Mail, Skype for Business Online und andere Dienste einzurichten.
   
@@ -58,11 +58,11 @@ Führen Sie die folgenden Schritte aus, um Ihre Domäne und Hostingkonten zu ver
   
 3. Wählen Sie auf der Seite **Domänen verwalten** die Domäne aus, die Sie aktualisieren möchten. 
   
-4. Wählen Sie im Popup Menü auf der linken Seite die Option **Name Servers**aus.
+4. Wählen Sie im Popup Menü auf der linken Seite die Option **Name Servers** aus.
   
 5. Wählen Sie auf der Seite **Namensserver** für Ihre Domäne in der Dropdownliste **diese Domäne automatisch auf mein Hostingkonto aufheben** das Hostingkonto aus, das Ihrer Domäne zugeordnet ist. 
   
-6. Wählen Sie **Namenserver speichern**aus.
+6. Wählen Sie **Namenserver speichern** aus.
     
   
 ## <a name="add-a-txt-record-for-verification"></a>Hinzufügen eines TXT-Eintrags zur Überprüfung
@@ -83,7 +83,7 @@ Bevor Sie Ihre Domäne mit Microsoft verwenden können, müssen wir uns vergewis
     > [!IMPORTANT]
     > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Um mit Microsoft zu beginnen, können Sie entweder ein Hostingkonto von Hostgator kaufen oder [Ihre Namenserver so delegieren](change-nameservers-at-hostgator.md), dass Sie auf Microsoft zurückweisen. 
   
-2. Wählen Sie auf der Seite **Systemsteuerung** im Bereich **Domänen** die Option **Erweiterter Zonen-Editor**aus.
+2. Wählen Sie auf der Seite **Systemsteuerung** im Bereich **Domänen** die Option **Erweiterter Zonen-Editor** aus.
     
 3. Geben Sie auf der Seite **Erweiterter Zonen-Editor** im Bereich **Hinzufügen eines Datensatzes** in den Feldern für den neuen Datensatz die Werte aus der folgenden Tabelle ein, oder kopieren und fügen Sie Sie ein. 
     
@@ -92,7 +92,7 @@ Bevor Sie Ihre Domäne mit Microsoft verwenden können, müssen wir uns vergewis
     |||||
     |:-----|:-----|:-----|:-----|
     |**Name** <br/> |**TTL** <br/> |**Type** <br/> |**TXT Data** <br/> |
-    |Verwenden Sie Ihre  *domain_name*. (for example, fourthcoffee.com.)  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |1  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen Wert für **Ziel- oder Verweisadresse** aus der Tabelle in [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md).          |
+    |Verwenden Sie Ihre  *domain_name*. (for example, fourthcoffee.com.)  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |1   <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen Wert für **Ziel- oder Verweisadresse** aus der Tabelle in [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md).          |
    
 4. Wählen Sie **Add Record** (Eintrag hinzufügen) aus.
     
@@ -126,7 +126,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     > [!IMPORTANT]
     > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Um mit Microsoft zu beginnen, können Sie entweder ein Hostingkonto von Hostgator kaufen oder [Ihre Namenserver so delegieren](change-nameservers-at-hostgator.md), dass Sie auf Microsoft zurückweisen. 
   
-2. Wählen Sie auf der Seite **Systemsteuerung** im Bereich **e-Mail** die Option **MX-Eintrag**aus.
+2. Wählen Sie auf der Seite **Systemsteuerung** im Bereich **e-Mail** die Option **MX-Eintrag** aus.
     
  
 3. Wählen Sie im Bereich **Email Routing** die Option **Remote Mail Exchanger** aus.
@@ -139,7 +139,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     |:-----|:-----|
     |0  <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Hinweis:** Erhalten Sie Ihren \< *domain-key*  \> über Ihr Microsoft-Konto.  [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |
   
-6. Wählen Sie **neuen Datensatz hinzufügen**aus.
+6. Wählen Sie **neuen Datensatz hinzufügen** aus.
    
  
 7. Wenn im Abschnitt **MX Records** weitere MX-Einträge vorhanden sind, entfernen Sie die einzelnen Einträge. 
@@ -158,7 +158,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     > [!IMPORTANT]
     > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Um mit Microsoft zu beginnen, können Sie entweder ein Hostingkonto von Hostgator kaufen oder [Ihre Namenserver so delegieren](change-nameservers-at-hostgator.md), dass Sie auf Microsoft zurückweisen. 
   
-2. Wählen Sie auf der Seite **Systemsteuerung** im Bereich **Domänen** die Option **Erweiterter Zonen-Editor**aus.
+2. Wählen Sie auf der Seite **Systemsteuerung** im Bereich **Domänen** die Option **Erweiterter Zonen-Editor** aus.
     
 3. Fügen Sie den ersten der sechs CNAME-Einträge hinzu.
     
@@ -187,7 +187,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. Wenn es für Ihre Domäne bereits einen SPF-Eintrag gibt, erstellen Sie für Microsoft keinen neuen, sondern fügen Sie die erforderlichen Microsoft-Werte dem aktuellen Eintrag hinzu. Damit verfügen Sie über einen einzigen SPF-Eintrag, in dem beide Wertemengen enthalten sind. Benötigen Sie Beispiele? Lesen Sie die Informationen unter [Externe DNS-Einträge für Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records#bkmk_spfrecords). Zum Überprüfen Ihres SPF-Eintrags können Sie eines dieser [SPF-Überprüfungstools](../setup/domains-faq.md) verwenden. 
+> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. Wenn es für Ihre Domäne bereits einen SPF-Eintrag gibt, erstellen Sie für Microsoft keinen neuen, sondern fügen Sie die erforderlichen Microsoft-Werte dem aktuellen Eintrag hinzu. Damit verfügen Sie über einen einzigen SPF-Eintrag, in dem beide Wertemengen enthalten sind. Benötigen Sie Beispiele? Lesen Sie die Informationen unter [Externe DNS-Einträge für Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records#bkmk_spfrecords). Zum Überprüfen Ihres SPF-Eintrags können Sie eines dieser [SPF-Überprüfungstools](../setup/domains-faq.yml) verwenden. 
   
 > [!IMPORTANT]
 > Bevor Sie diesen Vorgang ausführen, müssen Sie zuerst die Schritte im ersten Abschnitt dieses Artikels ([Verweisen Ihrer Domäne auf Ihr Hostingkonto](#point-your-domain-to-your-hosting-account)) ausführen. 
@@ -199,7 +199,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     > [!IMPORTANT]
     > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Um mit Microsoft zu beginnen, können Sie entweder ein Hostingkonto von Hostgator kaufen oder [Ihre Namenserver so delegieren](change-nameservers-at-hostgator.md), dass Sie auf Microsoft zurückweisen. 
   
-2. Wählen Sie auf der Seite **Systemsteuerung** im Bereich **Domänen** die Option **Erweiterter Zonen-Editor**aus.
+2. Wählen Sie auf der Seite **Systemsteuerung** im Bereich **Domänen** die Option **Erweiterter Zonen-Editor** aus.
     
 3. On the **Advanced DNS Zone Editor** page, in the **Add a Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -224,7 +224,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     > [!IMPORTANT]
     > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Um mit Microsoft zu beginnen, können Sie entweder ein Hostingkonto von Hostgator kaufen oder [Ihre Namenserver so delegieren](change-nameservers-at-hostgator.md), dass Sie auf Microsoft zurückweisen. 
   
-2. Wählen Sie auf der Seite **Systemsteuerung** im Bereich **Domänen** die Option **Erweiterter Zonen-Editor**aus.
+2. Wählen Sie auf der Seite **Systemsteuerung** im Bereich **Domänen** die Option **Erweiterter Zonen-Editor** aus.
 
     
 3. Fügen Sie den ersten der zwei SRV-Einträge hinzu.
@@ -235,8 +235,8 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     |**Name**|**TTL**|**Type**|**Priority**|**Weight**|**Port**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip _sip._tls. *domain_name*. (Beispiel: "_sip._tls.fourthcoffee.com.")  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls _sipfederationtls._tcp. *domain_name*. (Beispiel: "_sipfederationtls._tcp.fourthcoffee.com.")  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip _sip._tls. *domain_name*. (Beispiel: "_sip._tls.fourthcoffee.com.")  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls _sipfederationtls._tcp. *domain_name*. (Beispiel: "_sipfederationtls._tcp.fourthcoffee.com.")  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
 
 4. Wählen Sie **Add Record** (Eintrag hinzufügen) aus.

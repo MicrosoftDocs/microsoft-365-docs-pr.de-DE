@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 004030b4-10ad-4026-96e7-011b6afc7e73
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter Register365 für Microsoft einrichten.
-ms.openlocfilehash: a4c66a4c16960332150a51779207defb00df3044
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 6cefdeff3da1256911d80066b55b00f5bef24055
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645767"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656915"
 ---
 # <a name="create-dns-records-at-register365-for-microsoft"></a>Erstellen von DNS-Einträgen bei Register365 für Microsoft
 
- **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
+ **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
   
 Wenn Register365 Ihr DNS-Hostinganbieter ist, führen Sie die in diesem Artikel aufgeführten Schritte aus, um Ihre Domäne zu überprüfen und DNS-Einträge für E-Mail, Skype for Business Online und andere Dienste einzurichten. 
   
@@ -83,7 +83,7 @@ Bevor Sie Ihre Domäne mit Microsoft verwenden können, müssen wir uns vergewis
    
     ![Eingeben von Werten auf der Seite "DNS-Zone hinzufügen/ändern"](../../media/22326005-de95-464d-8e33-08ea31a89b2d.png)
   
-4. Klicken Sie auf **Speichern**.
+4. Wählen Sie **Speichern** aus.
     
     (Möglicherweise müssen Sie nach unten scrollen.)
     
@@ -131,11 +131,11 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     |**Hostname**|**Priority**|**Result**|
     |:-----|:-----|:-----|
-    |(Dieses Feld leer lassen.)  <br/> |1  <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Hinweis:** Holen Sie sich Ihr  *\<domain-key\>*  Microsoft-Konto.  [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)     |
+    |(Dieses Feld leer lassen.)  <br/> |1   <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Hinweis:** Holen Sie sich Ihr  *\<domain-key\>*  Microsoft-Konto.  [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)     |
    
     ![Eingeben von Werten auf der Seite "DNS-Zone hinzufügen/ändern"](../../media/2d3645a8-9cb8-435e-b895-5535b6b1fffd.png)
   
-4. Klicken Sie auf **Speichern**.
+4. Wählen Sie **Speichern** aus.
     
     (Möglicherweise müssen Sie nach unten scrollen.)
     
@@ -145,7 +145,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     ![Deleting records in the Mail exchange records section](../../media/8cc37e4f-2e85-4242-af0e-78149434167f.png)
   
-6. Klicken Sie auf **Speichern**.
+6. Wählen Sie **Speichern** aus.
     
     (Möglicherweise müssen Sie nach unten scrollen.)
     
@@ -216,7 +216,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
    
     ![Eingeben von Werten auf der Seite "DNS-Zone hinzufügen/ändern"](../../media/33976398-da8a-439b-8e3d-534503b20ee0.png)
   
-4. Klicken Sie auf **Speichern**.
+4. Wählen Sie **Speichern** aus.
     
     (Möglicherweise müssen Sie nach unten scrollen.)
     
@@ -241,12 +241,12 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     |**Name**|**Priority**|**Weight**|**Port**|**Result**|
     |:-----|:-----|:-----|:-----|:-----|
-    |_sip._tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls._tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip._tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls._tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
     ![Eingeben von Werten im Abschnitt "Diensteinträge"](../../media/56bb1813-90e2-40c8-98bf-750e2dc3f8b6.png)
   
-4. Klicken Sie auf **Speichern**.
+4. Wählen Sie **Speichern** aus.
     
     (Möglicherweise müssen Sie nach unten scrollen.)
     

@@ -22,16 +22,16 @@ description: Erfahren Sie, was eine Domäne ist, und wie Sie eine Domäne erwerb
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: 0c59fb6bc5f9a7796c84a0370c771bf90102dec0
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 9afc38aeda32870a248212f7b67f2fb4af8fd960
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645119"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658075"
 ---
 # <a name="what-is-a-domain"></a>Was ist eine Domäne?
 
- **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
+ **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
   
 Eine Domäne ist ein eindeutiger Name, der in E-Mail-Adressen hinter dem **@**-Zeichen und in Internetadressen hinter **www.** angezeigt wird. Er besteht normalerweise aus dem Namen Ihrer Organisation und einem Internet-Standardsuffix, z. B. *ihrunternehmen.<span>com* oder *musikhochschule.<span>edu*. 
   

@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 657934ff-d9d2-4563-9ccf-ef4832a03a99
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste auf Bluehost für Microsoft einrichten.
-ms.openlocfilehash: c0ba1b876c939632bc6c43a6e0004fbbe23a7723
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a9de709b0981c3e74eec1a3ea0e0452d068c5ad4
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646235"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658147"
 ---
 # <a name="create-dns-records-at-bluehost-for-microsoft"></a>Erstellen von DNS-Einträgen bei Bluehost für Microsoft
 
- **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
+ **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
   
 Wenn Bluehost Ihr DNS-Hostinganbieter ist, führen Sie die in diesem Artikel aufgeführten Schritte aus, um Ihre Domäne zu überprüfen und DNS-Einträge für E-Mail, Skype for Business Online und andere Dienste einzurichten.
   
@@ -53,7 +53,7 @@ Bevor Sie Ihre Domäne mit Microsoft verwenden können, müssen wir uns vergewis
     
     (Möglicherweise müssen Sie nach unten scrollen.)
     
-3. Wählen Sie im **Bereich _domain_name_*_ in der*Zeile "DNS-Zonen-Editor" den** Eintrag **DNS-Einträge verwalten**aus.
+3. Wählen Sie im **Bereich _domain_name_*_ in der* Zeile "DNS-Zonen-Editor" den** Eintrag **DNS-Einträge verwalten** aus.
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -64,7 +64,7 @@ Bevor Sie Ihre Domäne mit Microsoft verwenden können, müssen wir uns vergewis
     |**Host Record** <br/> |**TTL** <br/> |**Type** <br/> |**TXT Value** <br/> |
     |@  <br/> |14400  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen Wert für **Ziel- oder Verweisadresse** aus der Tabelle in [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md).          |
    
-5. Wählen Sie **Add Record**aus.
+5. Wählen Sie **Add Record** aus.
     
 6. Warten Sie einige Minuten, bevor Sie fortfahren, damit der soeben erstellte Eintrag im Internet aktualisiert werden kann.
     
@@ -93,7 +93,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     (Möglicherweise müssen Sie nach unten scrollen.)
     
-3. Wählen Sie im **Bereich _domain_name_*_ in der*Zeile "DNS-Zonen-Editor" den** Eintrag **DNS-Einträge verwalten**aus.
+3. Wählen Sie im **Bereich _domain_name_*_ in der* Zeile "DNS-Zonen-Editor" den** Eintrag **DNS-Einträge verwalten** aus.
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -105,7 +105,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
    
    ![Wählen Sie in der Dropdownliste Typ aus.](../../media/70791420-d83c-4a5d-a46c-5cc3bc67f565.png)
   
-5. Wählen Sie **Add Record**aus.
+5. Wählen Sie **Add Record** aus.
     
     ![Wählen Sie Add Record aus.](../../media/c7ef9733-1665-4dbf-accc-caadf1574abc.png)
   
@@ -115,7 +115,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     ![Wählen Sie DELETE für jeden zusätzlichen MX-Eintrag aus.](../../media/6be17f54-3f33-47af-a9db-4689141530c2.png)
   
-7. Wählen Sie im Dialogfeld Bestätigung die Option **OK**aus.
+7. Wählen Sie im Dialogfeld Bestätigung die Option **OK** aus.
     
     ![Wählen Sie OK aus.](../../media/a50df7a3-2906-4cc0-87d4-1231ab234230.png)
   
@@ -130,7 +130,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     (Möglicherweise müssen Sie nach unten scrollen.)
     
-3. Wählen Sie im **Bereich _domain_name_*_ in der*Zeile "DNS-Zonen-Editor" den** Eintrag **DNS-Einträge verwalten**aus.
+3. Wählen Sie im **Bereich _domain_name_*_ in der* Zeile "DNS-Zonen-Editor" den** Eintrag **DNS-Einträge verwalten** aus.
     
 4. Suchen Sie im Abschnitt **a (Host)** Records nach der Zeile für den **Auto Ermittlungs** Eintrag, und wählen Sie dann **Löschen** für diese Zeile aus. 
     
@@ -159,7 +159,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
    
     ![Erstellen des ersten CNAME-Eintrags](../../media/4f12e9b1-9dec-4bc2-aa15-8bffa71fe131.png)
   
-7. Wählen Sie **Add Record**aus.
+7. Wählen Sie **Add Record** aus.
     
     ![Wählen Sie Add Record aus.](../../media/c2782250-a9a6-4aee-bb15-f57cb0008587.png)
   
@@ -173,7 +173,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. Wenn es für Ihre Domäne bereits einen SPF-Eintrag gibt, erstellen Sie für Microsoft keinen neuen, Fügen Sie stattdessen die erforderlichen Microsoft-Werte zum aktuellen Datensatz hinzu, sodass Sie einen  *einzelnen*  SPF-Eintrag haben, der beide Wertegruppen enthält. Benötigen Sie Beispiele? Lesen Sie die Informationen unter [Externe DNS-Einträge für Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records). Zum Überprüfen des SPF-Eintrags können Sie eines dieser[SPF-Überprüfungstools](../setup/domains-faq.md)verwenden. 
+> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. Wenn es für Ihre Domäne bereits einen SPF-Eintrag gibt, erstellen Sie für Microsoft keinen neuen, Fügen Sie stattdessen die erforderlichen Microsoft-Werte zum aktuellen Datensatz hinzu, sodass Sie einen  *einzelnen*  SPF-Eintrag haben, der beide Wertegruppen enthält. Benötigen Sie Beispiele? Lesen Sie die Informationen unter [Externe DNS-Einträge für Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records). Zum Überprüfen des SPF-Eintrags können Sie eines dieser[SPF-Überprüfungstools](../setup/domains-faq.yml)verwenden. 
   
 1. Im ersten Schritt navigieren Sie über [diesen Link](https://my.bluehost.com/cgi/dm) zu Ihrer Domänenseite bei Bluehost. Sie werden aufgefordert, sich zuerst anzumelden.
     
@@ -181,7 +181,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     (Möglicherweise müssen Sie nach unten scrollen.)
     
-3. Wählen Sie im **Bereich _domain_name_*_ in der*Zeile "DNS-Zonen-Editor" den** Eintrag **DNS-Einträge verwalten**aus.
+3. Wählen Sie im **Bereich _domain_name_*_ in der* Zeile "DNS-Zonen-Editor" den** Eintrag **DNS-Einträge verwalten** aus.
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -193,7 +193,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
    
     ![Kopieren des txt-Werts](../../media/b2dabd7a-ee3d-4209-aa1e-0233eb8cf3b9.png)
   
-5. Wählen Sie **Add Record**aus.
+5. Wählen Sie **Add Record** aus.
     
     ![Wählen Sie Add Record aus.](../../media/c050e9a2-2274-4640-8f0f-6752d382df5d.png)
   
@@ -206,7 +206,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     (Möglicherweise müssen Sie nach unten scrollen.)
     
-3. Wählen Sie im **Bereich _domain_name_*_ in der*Zeile "DNS-Zonen-Editor" den** Eintrag **DNS-Einträge verwalten**aus.
+3. Wählen Sie im **Bereich _domain_name_*_ in der* Zeile "DNS-Zonen-Editor" den** Eintrag **DNS-Einträge verwalten** aus.
     
 4. Erstellen Sie den ersten der zwei SRV-Einträge.
     
@@ -216,12 +216,12 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     |**Service**|**Protocol**|**Host**|**TTL**|**Type**|**Priority**|**Weight**|**Port**|**Points To**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |@  <br/> |14400  <br/> |SRV  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |14400  <br/> |SRV  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip  <br/> |_tls  <br/> |@  <br/> |14400  <br/> |SRV  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |14400  <br/> |SRV  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
     ![Kopieren des Werts für den neuen Datensatz](../../media/e2911bca-c00b-4b8a-837f-f1d438c474c4.png)
   
-5. Wählen Sie **Add Record**aus.
+5. Wählen Sie **Add Record** aus.
     
     ![Wählen Sie Add Record aus.](../../media/0fd6a587-03fd-4bce-8321-b14e6ad21f5c.png)
   

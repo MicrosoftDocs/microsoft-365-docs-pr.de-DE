@@ -25,16 +25,16 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: In diesem Artikel erfahren Sie, wie Sie Ihre Domäne in Microsoft 365 hinzufügen und einrichten, damit ihre Dienste wie e-Mail und Skype for Business Online ihren eigenen Domänennamen verwenden.
-ms.openlocfilehash: f233cc9b2d37e3ee81e52178a7cc045cb3579e42
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a4218b03e3f23ba8bc39c5eb84b42f87a71b9a65
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645395"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658599"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Ändern von Namenservern zum Einrichten von Microsoft 365 mit einer beliebigen Domänenregistrierungsstelle
 
- **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
+ **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
   
 Aktivieren Sie zuerst die Informationen zum [Einrichten Ihrer Domäne (hostspezifische Anweisungen)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) , um zu sehen, ob wir Anweisungen für Ihre Registrierungsstelle haben. 
   
@@ -71,7 +71,7 @@ Je nachdem, ob Sie einen TXT-Eintrag oder einen MX-Eintrag erstellen möchten, f
     
 |||||
 |:-----|:-----|:-----|:-----|
-|**Record Type ** <br/> |**Alias** oder **Hostname** <br/> |**Value** <br/> |**TTL** <br/> |
+|**Record Type** <br/> |**Alias** oder **Hostname** <br/> |**Value** <br/> |**TTL** <br/> |
 |TXT  <br/> |Führen Sie eine der folgenden Aktionen aus: Geben Sie **@** ein, lassen Sie das Feld leer, oder geben Sie Ihren Domänennamen ein.    <br/> > [!NOTE]> Die Anforderungen für dieses Feld sind je nach DNS-Host unterschiedlich.           
 |MS=ms *XXXXXXXX*  <br/> > [!NOTE]> Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen Wert für **Ziel oder verweisende Adresse** aus der Tabelle in Microsoft 365.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten ( **60** ), Sekunden ( **3600** ) usw. fest.  <br/> |
    
@@ -79,8 +79,8 @@ Je nachdem, ob Sie einen TXT-Eintrag oder einen MX-Eintrag erstellen möchten, f
     
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
-|**Record Type **|**Alias** oder **Hostname**|**Value**|**Priorität**|**TTL**|
-|MX|Geben Sie **@** oder Ihren Domänennamen ein. |MS=ms *XXXXXXXX* > [!NOTE]> Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen Wert für **Ziel oder verweisende Adresse** aus der Tabelle in Microsoft 365.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |Für **Priority** (Priorität) verwenden Sie eine geringere Priorität als für die bereits vorhandenen MX-Einträge, um Konflikte mit dem MX-Eintrag für den E-Mail-Verkehr zu vermeiden. Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](../setup/domains-faq.md#what-is-mx-priority) |Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten ( **60** ), Sekunden ( **3600** ) usw. fest. |
+|**Record Type**|**Alias** oder **Hostname**|**Value**|**Priorität**|**TTL**|
+|MX|Geben Sie **@** oder Ihren Domänennamen ein. |MS=ms *XXXXXXXX* > [!NOTE]> Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen Wert für **Ziel oder verweisende Adresse** aus der Tabelle in Microsoft 365.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |Für **Priority** (Priorität) verwenden Sie eine geringere Priorität als für die bereits vorhandenen MX-Einträge, um Konflikte mit dem MX-Eintrag für den E-Mail-Verkehr zu vermeiden. Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](../setup/domains-faq.yml) |Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten ( **60** ), Sekunden ( **3600** ) usw. fest. |
    
 ### <a name="save-the-record"></a>Speichern des Datensatzes
 
@@ -126,7 +126,7 @@ Wenn Sie die Namenserver der Domäne auf der Website Ihrer Domänenregistrierung
 |Vierter Namenserver  <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
    > [!TIP]
-   > Es empfiehlt sich, alle vier Datensätze hinzuzufügen, aber wenn Ihre Registrierungsstelle nur zwei unterstützt, fügen Sie **ns1.BDM.microsoftonline.com** und **ns2.BDM.microsoftonline.com**hinzu. 
+   > Es empfiehlt sich, alle vier Datensätze hinzuzufügen, aber wenn Ihre Registrierungsstelle nur zwei unterstützt, fügen Sie **ns1.BDM.microsoftonline.com** und **ns2.BDM.microsoftonline.com** hinzu. 
   
 3. Speichern Sie Ihre Änderungen.
     
@@ -147,7 +147,7 @@ Wenn Sie die Namenserver der Domäne auf der Website Ihrer Domänenregistrierung
 |Zweiter Namenserver  <br/> |ns2.dns.partner.microsoftonline.cn  <br/> |
    
    > [!TIP]
-   > Sie sollten mindestens zwei Nameserver-Einträge verwenden. Wenn andere Namenserver aufgelistet sind, können Sie Sie entweder löschen oder in **NS3.DNS.Partner.microsoftonline.cn** und **NS4.DNS.Partner.microsoftonline.cn**ändern. 
+   > Sie sollten mindestens zwei Nameserver-Einträge verwenden. Wenn andere Namenserver aufgelistet sind, können Sie Sie entweder löschen oder in **NS3.DNS.Partner.microsoftonline.cn** und **NS4.DNS.Partner.microsoftonline.cn** ändern. 
   
 3. Speichern Sie Ihre Änderungen.
     
@@ -164,13 +164,13 @@ Hier einige weitere Schritte, die beispielsweise für E-Mail- und Websitehosting
 
 1. Wechseln Sie im Admin Center zur Seite **Einstellungen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domänen</a>.
 
-2. Wählen Sie auf der Seite **Domänen** die Domäne aus, und wählen Sie dann **DNS-Einträge**aus.
+2. Wählen Sie auf der Seite **Domänen** die Domäne aus, und wählen Sie dann **DNS-Einträge** aus.
 
-3. Wählen Sie unter **DNS-Einstellungen**die Option **Benutzerdefinierte Datensätze**aus, und wählen Sie dann **neuer benutzerdefinierter Datensatz**aus.
+3. Wählen Sie unter **DNS-Einstellungen** die Option **Benutzerdefinierte Datensätze** aus, und wählen Sie dann **neuer benutzerdefinierter Datensatz** aus.
 
 4. Wählen Sie den Typ des DNS-Eintrags aus, den Sie hinzufügen möchten, und geben Sie die Informationen für den neuen Datensatz ein.
 
-5. Klicken Sie auf **Speichern**.
+5. Wählen Sie **Speichern** aus.
     
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Dann sind Ihre Microsoft-e-Mails und andere Dienste für die Verwendung Ihrer Domäne festgelegt. 

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: Sie können Nachrichtenfluss Regeln (Transportregeln) verwenden, um Nachrichten zu identifizieren und zu handeln, die Ihre Organisation durchlaufen.
-ms.openlocfilehash: 11bf2af56c6e85c868e2e0726736f624e196805c
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: 6bbf50b1a99b6691e959f6dcd4cfce33686a0014
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49021049"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659198"
 ---
 # <a name="mail-flow-rules-transport-rules-in-standalone-eop"></a>Regeln für den Nachrichtenfluss (Transportregeln) in EOP als eigenständige Lösung
 
@@ -56,19 +56,19 @@ Das folgende Video bietet eine Demonstration zum Einrichten von Nachrichtenfluss
 
 Eine Nachrichtenflussregel besteht aus Bedingungen, Ausnahmen, Aktionen und Eigenschaften:
 
-- **Bedingungen** : identifizieren Sie die Nachrichten, auf die Sie die Aktionen anwenden möchten. Einige Bedingungen untersuchen Nachrichtenkopffelder (beispielsweise die Felder "an", "von" oder "CC"). Andere Bedingungen untersuchen Nachrichteneigenschaften (beispielsweise Nachrichtenbetreff, Text, Anlagen, Nachrichtengröße oder Nachrichtenklassifikation). Bei den meisten Bedingungen müssen Sie einen Vergleichsoperator angeben (beispielsweise Equals, doesn 't EQUAL oder Contains) und einen Wert, der übereinstimmen soll. Wenn keine Bedingungen oder Ausnahmen vorhanden sind, wird die Regel auf alle Nachrichten angewendet.
+- **Bedingungen**: identifizieren Sie die Nachrichten, auf die Sie die Aktionen anwenden möchten. Einige Bedingungen untersuchen Nachrichtenkopffelder (beispielsweise die Felder "an", "von" oder "CC"). Andere Bedingungen untersuchen Nachrichteneigenschaften (beispielsweise Nachrichtenbetreff, Text, Anlagen, Nachrichtengröße oder Nachrichtenklassifikation). Bei den meisten Bedingungen müssen Sie einen Vergleichsoperator angeben (beispielsweise Equals, doesn 't EQUAL oder Contains) und einen Wert, der übereinstimmen soll. Wenn keine Bedingungen oder Ausnahmen vorhanden sind, wird die Regel auf alle Nachrichten angewendet.
 
 Weitere Informationen zu Bedingungen für Nachrichtenfluss Regeln in eigenständigen EoP finden Sie unter [Mail Flow rule conditions and Exceptions (predicates) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 
-- **Ausnahmen** : identifizieren Sie optional die Nachrichten, auf die die Aktionen nicht angewendet werden sollten. In Ausnahmen sind die gleichen Nachrichten-IDs verfügbar wie in Bedingungen. Mit Ausnahmen werden Bedingungen außer Kraft gesetzt, und es wird verhindert, dass die Regelaktionen auf eine Nachricht angewendet werden, und zwar auch dann, wenn die Nachricht allen konfigurierten Bedingungen entspricht.
+- **Ausnahmen**: identifizieren Sie optional die Nachrichten, auf die die Aktionen nicht angewendet werden sollten. In Ausnahmen sind die gleichen Nachrichten-IDs verfügbar wie in Bedingungen. Mit Ausnahmen werden Bedingungen außer Kraft gesetzt, und es wird verhindert, dass die Regelaktionen auf eine Nachricht angewendet werden, und zwar auch dann, wenn die Nachricht allen konfigurierten Bedingungen entspricht.
 
-- **Actions** : Geben Sie an, was mit Nachrichten ausgeführt werden soll, die den Bedingungen in der Regel entsprechen, und stimmen Sie keiner der Ausnahmen überein. Es stehen zahlreiche Aktionen zur Verfügung, wie Ablehnen, Löschen oder Umleiten von Nachrichten, Hinzufügen weiterer Empfänger, Hinzufügen von Präfixen zum Nachrichtenbetreff oder Einfügen von Haftungsausschlüssen in den Nachrichtentext.
+- **Actions**: Geben Sie an, was mit Nachrichten ausgeführt werden soll, die den Bedingungen in der Regel entsprechen, und stimmen Sie keiner der Ausnahmen überein. Es stehen zahlreiche Aktionen zur Verfügung, wie Ablehnen, Löschen oder Umleiten von Nachrichten, Hinzufügen weiterer Empfänger, Hinzufügen von Präfixen zum Nachrichtenbetreff oder Einfügen von Haftungsausschlüssen in den Nachrichtentext.
 
 Weitere Informationen zu Aktionen für Nachrichtenfluss Regeln, die in eigenständigen EoP verfügbar sind, finden Sie unter [Aktionen für Nachrichtenfluss Regeln in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
 
-- **Eigenschaften** : Geben Sie andere Regeleinstellungen an, die keine Bedingungen, Ausnahmen oder Aktionen sind. Zum Beispiel, wann die Regel angewendet werden soll, ob die Regel erzwungen oder getestet werden soll und in welchem Zeitraum die Regel aktiv ist.
+- **Eigenschaften**: Geben Sie andere Regeleinstellungen an, die keine Bedingungen, Ausnahmen oder Aktionen sind. Zum Beispiel, wann die Regel angewendet werden soll, ob die Regel erzwungen oder getestet werden soll und in welchem Zeitraum die Regel aktiv ist.
 
-  Weitere Informationen finden Sie im Abschnitt [Eigenschaften von Nachrichtenflussregeln](#mail-flow-rule-properties) in diesem Thema.
+  Weitere Informationen finden Sie im Abschnitt [Eigenschaften von Nachrichtenfluss Regeln](#mail-flow-rule-properties) in diesem Artikel.
 
 ### <a name="multiple-conditions-exceptions-and-actions"></a>Mehrere Bedingungen, Ausnahmen und Aktionen
 
@@ -116,14 +116,14 @@ Es gibt verschiedene Nachrichtentypen, die eine Organisation durchlaufen. Die fo
 
 |Es gibt verschiedene Nachrichtentypen, die eine Organisation durchlaufen. Die folgende Tabelle zeigt, welche Nachrichtentypen von Transportregeln verarbeitet werden können.|Nachrichtentyp|
 |---|---|
-|**Reguläre Nachrichten** : Nachrichten, die ein einzelnes Rich-Text-Format (RTF), HTML oder nur-Text-Nachrichtentext oder eine mehrteilige oder alternative Gruppe von Nachrichtentexten enthalten.|Ja|
-|**Office 365 Nachrichtenverschlüsselung** : Nachrichten, die von Office 365 Nachrichtenverschlüsselung in Office 365 verschlüsselt wurden. Weitere Informationen finden Sie unter [Verschlüsselung in Office 365](https://docs.microsoft.com/microsoft-365/compliance/encryption).|Regeln können immer auf Umschlagkopfzeilen zugreifen und Nachrichten auf Grundlage von Bedingungen verarbeiten, mit denen diese Kopfzeilen untersucht werden. <p> Damit eine Regel den Inhalt einer verschlüsselten Nachricht überprüft oder ändert, müssen Sie überprüfen, ob die Transportentschlüsselung aktiviert ist („Obligatorisch" oder „Optional"; der Standardwert ist „Optional"). Weitere Informationen finden Sie unter [Definieren von Regeln zum Verschlüsseln oder Entschlüsseln von e-Mail-Nachrichten in Office 365](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email).|
+|**Reguläre Nachrichten**: Nachrichten, die ein einzelnes Rich-Text-Format (RTF), HTML oder nur-Text-Nachrichtentext oder eine mehrteilige oder alternative Gruppe von Nachrichtentexten enthalten.|Ja|
+|**Office 365 Nachrichtenverschlüsselung**: Nachrichten, die von Office 365 Nachrichtenverschlüsselung in Office 365 verschlüsselt wurden. Weitere Informationen finden Sie unter [Verschlüsselung in Office 365](https://docs.microsoft.com/microsoft-365/compliance/encryption).|Regeln können immer auf Umschlagkopfzeilen zugreifen und Nachrichten auf Grundlage von Bedingungen verarbeiten, mit denen diese Kopfzeilen untersucht werden. <p> Damit eine Regel den Inhalt einer verschlüsselten Nachricht überprüft oder ändert, müssen Sie überprüfen, ob die Transportentschlüsselung aktiviert ist („Obligatorisch" oder „Optional"; der Standardwert ist „Optional"). Weitere Informationen finden Sie unter [Definieren von Regeln zum Verschlüsseln oder Entschlüsseln von e-Mail-Nachrichten in Office 365](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email).|
 |**S/MIME-Verschlüsselte Nachrichten**|Regeln können nur auf Umschlagkopfzeilen zugreifen und Nachrichten auf Grundlage von Bedingungen verarbeiten, mit denen diese Kopfzeilen untersucht werden. <p> Regeln mit Bedingungen, die eine Untersuchung des Nachrichteninhalts erfordern, oder Aktionen, die den Inhalt der Nachricht ändern, können nicht verarbeitet werden.|
 |**RMS-geschützte nach** richten: Nachrichten, für die eine Active Directory Rights Management Services (AD RMS) oder eine Azure Rights Management (RMS)-Richtlinie angewendet wurde.|Regeln können immer auf Umschlagkopfzeilen zugreifen und Nachrichten auf Grundlage von Bedingungen verarbeiten, mit denen diese Kopfzeilen untersucht werden. <p> Damit eine Regel den Inhalt einer RMS-geschützten Nachricht überprüft oder ändert, müssen Sie überprüfen, ob die Transportentschlüsselung aktiviert ist („Obligatorisch" oder „Optional"; der Standardwert ist „Optional").|
-|**Clear-signed Messages** : signierte, aber nicht verschlüsselte Nachrichten.|Ja|
-|**Um-Nachrichten** : Nachrichten, die vom Unified Messaging-Dienst erstellt oder verarbeitet werden, wie Voicemail, Fax, Benachrichtigungen über verpasste Anrufe und Nachrichten, die mit Microsoft Outlook Voice Access erstellt oder weitergeleitet wurden.|Ja|
+|**Clear-signed Messages**: signierte, aber nicht verschlüsselte Nachrichten.|Ja|
+|**Um-Nachrichten**: Nachrichten, die vom Unified Messaging-Dienst erstellt oder verarbeitet werden, wie Voicemail, Fax, Benachrichtigungen über verpasste Anrufe und Nachrichten, die mit Microsoft Outlook Voice Access erstellt oder weitergeleitet wurden.|Ja|
 |**Anonyme nach** richten: von anonymen Absendern gesendete Nachrichten.|Ja|
-|**Lesen von Berichten** : Berichte, die als Reaktion auf Lese Bestätigungsanforderungen von Absendern generiert werden. Lese Berichte haben eine Nachrichtenklasse von `IPM.Note*.MdnRead` oder `IPM.Note*.MdnNotRead` .|Ja|
+|**Lesen von Berichten**: Berichte, die als Reaktion auf Lese Bestätigungsanforderungen von Absendern generiert werden. Lese Berichte haben eine Nachrichtenklasse von `IPM.Note*.MdnRead` oder `IPM.Note*.MdnNotRead` .|Ja|
 |
 
 ## <a name="what-else-should-i-know"></a>Was muss ich sonst noch wissen?

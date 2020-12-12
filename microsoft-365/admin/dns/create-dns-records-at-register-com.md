@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 55bd8c38-3316-48ae-a368-4959b2c1684e
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter Register.com für Microsoft einrichten.
-ms.openlocfilehash: 96ec44875d5bc86f46e4945d4021deb0ca427fed
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: dd2f3d516b5309fee85dd572470fe610ff277a68
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645803"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657592"
 ---
 # <a name="create-dns-records-at-registercom-for-microsoft"></a>Erstellen von DNS-Einträgen bei Register.com für Microsoft
 
- **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
+ **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
   
 Wenn Register.com Ihr DNS-Hostinganbieter ist, führen Sie die in diesem Artikel aufgeführten Schritte aus, um Ihre Domäne zu überprüfen und DNS-Einträge für E-Mail, Skype for Business Online und andere Dienste einzurichten.
   
@@ -67,9 +67,9 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     
 2. Wählen Sie **Domänen** aus.
     
-3. Wählen Sie **Manage**aus.
+3. Wählen Sie **Manage** aus.
     
-4. Suchen Sie nach der Zeile, die den Namen der Domäne enthält, die Sie ändern möchten. Wählen Sie dann in dieser Zeile **Verwalten**aus.
+4. Suchen Sie nach der Zeile, die den Namen der Domäne enthält, die Sie ändern möchten. Wählen Sie dann in dieser Zeile **Verwalten** aus.
     
 5. Führen Sie einen Bildlauf nach unten zum Abschnitt **Erweiterte technische Einstellungen** durch, und wählen Sie dann **Edit TXT Records (SPF)** aus.
     
@@ -80,7 +80,7 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     |**Host Name** <br/> |**TXT Record** <br/> |
     |@  <br/> |MS=ms *XXXXXXXX*  <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen Wert für **Ziel- oder Verweisadresse** aus der Tabelle in [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md).          |
    
-7. Wählen Sie **weiter**aus.
+7. Wählen Sie **weiter** aus.
     
 8. Wählen Sie auf der nächsten Seite erneut **Continue** aus, um Ihre Änderungen zu bestätigen. 
     
@@ -110,11 +110,11 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     
 2. Wählen Sie **Domänen** aus.
     
-3. Wählen Sie **Manage**aus.
+3. Wählen Sie **Manage** aus.
     
-4. Suchen Sie nach der Zeile, die den Namen der Domäne enthält, die Sie ändern möchten. Wählen Sie dann in dieser Zeile **Verwalten**aus.
+4. Suchen Sie nach der Zeile, die den Namen der Domäne enthält, die Sie ändern möchten. Wählen Sie dann in dieser Zeile **Verwalten** aus.
     
-5. Führen Sie einen Bildlauf zum Abschnitt **Erweiterte technische Einstellungen** durch, und wählen Sie dann **e-Mail-Exchanger-Einträge bearbeiten**aus.
+5. Führen Sie einen Bildlauf zum Abschnitt **Erweiterte technische Einstellungen** durch, und wählen Sie dann **e-Mail-Exchanger-Einträge bearbeiten** aus.
     
     ![Wählen Sie Bearbeiten von e-Mail-Exchanger-Einträgen](../../media/366b96a1-9147-4bbb-9f8f-50856466cc61.png)
   
@@ -132,7 +132,7 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     
     ![Select each record to delete](../../media/0708d03e-346f-4ae7-8cc4-01589efc00ce.png)
   
-8. Wählen Sie **weiter**aus.
+8. Wählen Sie **weiter** aus.
     
     ![Wählen Sie weiter aus.](../../media/6ef6ce01-ce21-4e3c-8209-4aa9a3dd4b76.png)
   
@@ -149,15 +149,15 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     
 2. Wählen Sie **Domänen** aus.
     
-3. Wählen Sie **Manage**aus.
+3. Wählen Sie **Manage** aus.
     
-4. Suchen Sie nach der Zeile, die den Namen der Domäne enthält, die Sie ändern möchten. Wählen Sie dann in dieser Zeile **Verwalten**aus.
+4. Suchen Sie nach der Zeile, die den Namen der Domäne enthält, die Sie ändern möchten. Wählen Sie dann in dieser Zeile **Verwalten** aus.
     
-5. Scrollen Sie zum Abschnitt **Erweiterte technische Einstellungen** , und wählen Sie dann **Bearbeiten von Domänen Alias Einträgen**aus.
+5. Scrollen Sie zum Abschnitt **Erweiterte technische Einstellungen** , und wählen Sie dann **Bearbeiten von Domänen Alias Einträgen** aus.
     
     ![Auswählen von Datensätzen zum Bearbeiten von Domänen Aliasen](../../media/9fbc31ed-d67c-4828-8bd4-b51068f1e0ca.png)
   
-6. Wählen Sie **Weitere Domänenaliase hinzufügen**aus.
+6. Wählen Sie **Weitere Domänenaliase hinzufügen** aus.
     
     ![Wählen Sie weitere Domänenaliase hinzufügen aus.](../../media/b787505f-5566-4879-8552-13f9e89cbf6b.png)
   
@@ -175,7 +175,7 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
    
      ![Kopieren und Einfügen der DNS-Werte aus der Tabelle](../../media/0e2b36b2-8a0b-4019-addf-301763f9a626.png)
   
-8. Wenn Sie alle benötigten CNAME-Einträge hinzugefügt haben, wählen Sie **weiter**aus.
+8. Wenn Sie alle benötigten CNAME-Einträge hinzugefügt haben, wählen Sie **weiter** aus.
     
     ![Wählen Sie weiter aus.](../../media/1942612b-338a-48fa-a45d-2d5434516723.png)
   
@@ -195,9 +195,9 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     
 2. Wählen Sie **Domänen** aus.
     
-3. Wählen Sie **Manage**aus.
+3. Wählen Sie **Manage** aus.
     
-4. Suchen Sie nach der Zeile, die den Namen der Domäne enthält, die Sie ändern möchten. Wählen Sie dann in dieser Zeile **Verwalten**aus.
+4. Suchen Sie nach der Zeile, die den Namen der Domäne enthält, die Sie ändern möchten. Wählen Sie dann in dieser Zeile **Verwalten** aus.
     
 5. Führen Sie einen Bildlauf zum Abschnitt **Erweiterte technische Einstellungen** durch, und wählen Sie dann **TXT-Datensätze bearbeiten (SPF)** aus.
     
@@ -211,7 +211,7 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
    
      ![Kopieren Sie die Werte aus der Tabelle, und fügen Sie Sie ein.](../../media/b1dc5036-c13c-4306-b1e3-5a38a74643b7.png)
   
-7. Wählen Sie **weiter**aus.
+7. Wählen Sie **weiter** aus.
     
     ![Wählen Sie weiter aus.](../../media/08250c98-1a86-48a8-ad94-f96cf338126b.png)
   
@@ -228,11 +228,11 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     
 2. Wählen Sie **Domänen** aus.
     
-3. Wählen Sie **Manage**aus.
+3. Wählen Sie **Manage** aus.
     
-4. Suchen Sie nach der Zeile, die den Namen der Domäne enthält, die Sie ändern möchten. Wählen Sie dann in dieser Zeile **Verwalten**aus.
+4. Suchen Sie nach der Zeile, die den Namen der Domäne enthält, die Sie ändern möchten. Wählen Sie dann in dieser Zeile **Verwalten** aus.
     
-5. Führen Sie einen Bildlauf zum Abschnitt **Erweiterte technische Einstellungen** durch, und wählen Sie dann **SRV-Einträge bearbeiten**aus.
+5. Führen Sie einen Bildlauf zum Abschnitt **Erweiterte technische Einstellungen** durch, und wählen Sie dann **SRV-Einträge bearbeiten** aus.
     
     ![Auswählen der Option zum Bearbeiten von SRV-Einträgen](../../media/73c149ae-f0d6-460e-880a-7e04a995acc3.png)
   
@@ -244,12 +244,12 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     
     |****Service****|****Proto****|****Name****|****Priority****|****Weight****|****Port****|****Target****|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |@  <br/> |High  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/>  <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |High  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/>  <br/> |
+    |_sip  <br/> |_tls  <br/> |@  <br/> |High  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/>  <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |High  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/>  <br/> |
    
     ![Kopieren Sie die Werte aus der Tabelle, und fügen Sie Sie ein.](../../media/71304c81-5845-4a8f-b969-d9efc8721184.png)
   
-7. Wählen Sie **Weitere SRV-Einträge hinzufügen**aus.
+7. Wählen Sie **Weitere SRV-Einträge hinzufügen** aus.
     
     ![Wählen Sie weitere SRV-Einträge hinzufügen aus.](../../media/823c6bd2-4af7-4079-bf8c-8d35a5c6730f.png)
   
@@ -257,7 +257,7 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     
     Geben Sie die Werte aus der zweiten Zeile der Tabelle oben in die Felder für den zweiten Eintrag ein. Sie können die Werte auch kopieren und einfügen.
     
-9. Wenn Sie beide SRV-Einträge hinzugefügt haben, wählen Sie **weiter**aus.
+9. Wenn Sie beide SRV-Einträge hinzugefügt haben, wählen Sie **weiter** aus.
     
     ![Wählen Sie weiter aus.](../../media/008b255a-42d3-442d-83ea-3ffcb7c8fc5d.png)
   

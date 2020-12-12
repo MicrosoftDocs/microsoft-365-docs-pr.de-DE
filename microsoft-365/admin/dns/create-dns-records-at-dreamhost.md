@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 9c0812e0-908b-4b41-a64b-77f0dbd3db7a
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter DreamHost for Microsoft einrichten.
-ms.openlocfilehash: 8ab617fd5d63b292a85289d2d51a0ae0fd3b26be
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2faf7cae1fd9a0f9308e303c0588958e56b223e1
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646199"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658123"
 ---
 # <a name="create-dns-records-at-dreamhost-for-microsoft"></a>Erstellen von DNS-Einträgen bei DreamHost für Microsoft
 
- **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
+ **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
   
 [] Wenn DreamHost Ihr DNS-Hostinganbieter ist, führen Sie die in diesem Artikel aufgeführten Schritte aus, um Ihre Domäne zu überprüfen und DNS-Einträge für E-Mail, Lync und andere Dienste einzurichten.
  
@@ -52,7 +52,7 @@ Bevor Sie Ihre Domäne mit Microsoft verwenden können, müssen wir uns vergewis
     
     ![Dreamhost-BP-Configure-1-1](../../media/1919b810-b6ba-4e29-a774-de1e7c67d078.png)
   
-2. Wählen Sie auf der Seite **Dashboard** die Option **Domänen**aus, und verwalten Sie dann **Domänen**.
+2. Wählen Sie auf der Seite **Dashboard** die Option **Domänen** aus, und verwalten Sie dann **Domänen**.
     
     ![Dreamhost-BP-Configure-1-2](../../media/ab05c16a-79f6-491f-ad07-9a2e6674671d.png)
   
@@ -111,7 +111,7 @@ Führen Sie die folgenden Schritte aus.
     
     ![Dreamhost-BP-Configure-1-1](../../media/1919b810-b6ba-4e29-a774-de1e7c67d078.png)
   
-2. Wählen Sie auf der Seite **Dashboard** die Option **e-Mail**und dann **benutzerdefiniertes MX**aus.
+2. Wählen Sie auf der Seite **Dashboard** die Option **e-Mail** und dann **benutzerdefiniertes MX** aus.
     
     ![Dreamhost-BP-Configure-2-1](../../media/58478679-4018-49cc-9d83-371dc5fa4a22.png)
   
@@ -153,7 +153,7 @@ Führen Sie die folgenden Schritte aus.
     
     ![Dreamhost-BP-Configure-1-1](../../media/1919b810-b6ba-4e29-a774-de1e7c67d078.png)
   
-2. Wählen Sie auf der Seite **Dashboard** die Option **Domänen**aus, und verwalten Sie dann **Domänen**.
+2. Wählen Sie auf der Seite **Dashboard** die Option **Domänen** aus, und verwalten Sie dann **Domänen**.
     
     ![Dreamhost-BP-Configure-1-2](../../media/ab05c16a-79f6-491f-ad07-9a2e6674671d.png)
   
@@ -196,7 +196,7 @@ Führen Sie die folgenden Schritte aus.
     
     ![Dreamhost-BP-Configure-1-1](../../media/1919b810-b6ba-4e29-a774-de1e7c67d078.png)
   
-2. Wählen Sie auf der Seite **Dashboard** die Option **Domänen**aus, und verwalten Sie dann **Domänen**.
+2. Wählen Sie auf der Seite **Dashboard** die Option **Domänen** aus, und verwalten Sie dann **Domänen**.
     
     ![Dreamhost-BP-Configure-1-2](../../media/ab05c16a-79f6-491f-ad07-9a2e6674671d.png)
   
@@ -232,7 +232,7 @@ Führen Sie die folgenden Schritte aus.
     
     ![Dreamhost-BP-Configure-1-1](../../media/1919b810-b6ba-4e29-a774-de1e7c67d078.png)
   
-2. Wählen Sie auf der Seite **Dashboard** die Option **Domänen**aus, und verwalten Sie dann **Domänen**.
+2. Wählen Sie auf der Seite **Dashboard** die Option **Domänen** aus, und verwalten Sie dann **Domänen**.
     
     ![Dreamhost-BP-Configure-1-2](../../media/ab05c16a-79f6-491f-ad07-9a2e6674671d.png)
   

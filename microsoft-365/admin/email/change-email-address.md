@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: 'Ändern Sie Ihre anfängliche e-Mail-Adresse in eine freundliche e-Mail-Adresse wie Tom@fourthcoffee.com. Hierzu müssen Sie einen Domänennamen kaufen und Microsoft 365 hinzufügen. '
-ms.openlocfilehash: 7b5ab62ea99af52c61ca4ba6a7e9ea37604ddf19
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d23c612eecae0a0b58d844fbbe25392ffa682fde
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645539"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656831"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>Ändern der E-Mail-Adresse auf die eigene benutzerdefinierte Domäne
 
@@ -41,7 +41,7 @@ ms.locfileid: "48645539"
 
 ::: moniker-end
 
- **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
+ **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
   
 ::: moniker range="o365-worldwide"
 

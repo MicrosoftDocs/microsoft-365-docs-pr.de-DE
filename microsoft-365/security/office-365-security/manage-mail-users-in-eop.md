@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: In diesem Artikel erfahren Sie, wie Sie e-Mail-Benutzer in Exchange Online Protection (EoP) verwalten, einschließlich der Verwendung der Verzeichnissynchronisierung, der Exchange-Verwaltungskonsole und PowerShell zum Verwalten von Benutzern.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3c3e69def731a85c0dccffdcb5620560dcf00052
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: a8258a63fe0fbf4a6b5641fbdef213f25de2e4dd
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356727"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658833"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>Verwalten von E-Mail-Benutzern in EOP als eigenständige Lösung
 
@@ -30,9 +30,9 @@ In Organisationen mit eigenständigen Exchange Online Schutz (EoP) ohne Exchange
 > [!NOTE]
 > Wenn Sie einen e-Mail-Benutzer erstellen, ist das entsprechende Benutzerkonto im Microsoft 365 Admin Center verfügbar. Wenn Sie ein Benutzerkonto im Microsoft 365 Admin Center erstellen, können Sie dieses Konto nicht verwenden, um einen e-Mail-Benutzer zu erstellen.
 
-Die empfohlene Methode zum Erstellen und Verwalten von e-Mail-Benutzern in eigenständigen EoP besteht in der Verwendung der Verzeichnissynchronisierung, wie im Abschnitt [Verwenden der Verzeichnissynchronisierung zum Verwalten von e-Mail-Benutzern](#use-directory-synchronization-to-manage-mail-users) weiter unten in diesem Thema beschrieben.
+Die empfohlene Methode zum Erstellen und Verwalten von e-Mail-Benutzern in eigenständigen EoP besteht in der Verwendung der Verzeichnissynchronisierung, wie im Abschnitt [Verwenden der Verzeichnissynchronisierung zum Verwalten von e-Mail-Benutzern](#use-directory-synchronization-to-manage-mail-users) weiter unten in diesem Artikel beschrieben.
 
-Für eigenständige EoP-Organisationen mit einer kleinen Anzahl von Benutzern können Sie e-Mail-Benutzer in der Exchange-Verwaltungskonsole (EAC) oder in der eigenständigen EoP-PowerShell hinzufügen und verwalten, wie in diesem Thema beschrieben.
+Für eigenständige EoP-Organisationen mit einer kleinen Anzahl von Benutzern können Sie e-Mail-Benutzer in der Exchange-Verwaltungskonsole (EAC) oder in der eigenständigen EoP-PowerShell hinzufügen und verwalten, wie in diesem Artikel beschrieben.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
@@ -42,9 +42,9 @@ Für eigenständige EoP-Organisationen mit einer kleinen Anzahl von Benutzern k�
 
 - Wenn Sie e-Mail-Benutzer in EoP PowerShell erstellen, stoßen Sie möglicherweise auf Drosselung. Außerdem verwenden die EoP-PowerShell-Cmdlets eine Batch Verarbeitungsmethode, die zu einer Ausbreitungs Verzögerung von ein paar Minuten führt, bevor die Ergebnisse der Befehle sichtbar sind.
 
-- Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Insbesondere benötigen Sie die Rollen für die Erstellung von e-Mail-Empfängern (Create) und e-Mail-Empfänger (ändern), die standardmäßig den Rollengruppenmitglied (globale Administratoren) und RecipientManagement zugewiesen sind. Weitere Informationen finden Sie unter [Berechtigungen in eigenständigen EoP](feature-permissions-in-eop.md) und [Verwenden der Exchange-Verwaltungskonsole ändern der Liste der Mitglieder in Rollengruppen](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- Sie müssen Berechtigungen in Exchange Online Protection zugewiesen werden, bevor Sie die Verfahren in diesem Artikel ausführen können. Insbesondere benötigen Sie die Rollen für die **Erstellung von e-Mail-Empfängern** (Create) und **e-Mail-Empfänger** (ändern), die standardmäßig der Rollengruppe **Organisationsverwaltung** (Global Admins) und **Empfängerverwaltung** zugewiesen sind. Weitere Informationen finden Sie unter [Berechtigungen in eigenständigen EoP](feature-permissions-in-eop.md) und [Verwenden der Exchange-Verwaltungskonsole ändern der Liste der Mitglieder in Rollengruppen](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
-- Informationen zu Tastenkombinationen, die möglicherweise für die Verfahren in diesem Thema gelten, finden Sie unter [Tastenkombinationen für das Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Informationen zu Tastenkombinationen, die möglicherweise für die Verfahren in diesem Artikel gelten, finden Sie unter [Tastenkombinationen für das Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > Liegt ein Problem vor? Bitten Sie in den Exchange-Foren um Hilfe. Besuchen Sie das [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) -Forum.

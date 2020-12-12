@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Hier erfahren Sie, wie Sie eine alte Domäne aus Microsoft 365 entfernen und Benutzer und Gruppen in eine andere Domäne verlagern.
-ms.openlocfilehash: 4eb44914daf500ac48f140bd999a2cf783a9bf83
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: cddbb0ef9cf48147e33b93a4a8def15576edfab5
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645287"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49655530"
 ---
 # <a name="remove-a-domain"></a>Entfernen einer Domäne
 
@@ -38,7 +38,7 @@ ms.locfileid: "48645287"
 
 ::: moniker-end
   
- **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
+ **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
   
 Entfernen Sie Ihre Domäne, da Sie Sie einem anderen Microsoft 365-Abonnementplan hinzufügen möchten? Oder möchten Sie Ihr Abonnement einfach nur kündigen? Sie können [Ihren Plan oder Ihr Abonnement ändern](../../commerce/subscriptions/switch-to-a-different-plan.md) oder [Ihr Abonnement kündigen](../../commerce/subscriptions/cancel-your-subscription.md).
   
@@ -50,11 +50,11 @@ Entfernen Sie Ihre Domäne, da Sie Sie einem anderen Microsoft 365-Abonnementpla
 
 1. Wechseln Sie zum <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Admin Center</a>.
 
-2. Wählen Sie **Benutzer** > **aktive Benutzer**aus.
+2. Wählen Sie **Benutzer** > **aktive Benutzer** aus.
 
 3. Aktivieren Sie die Kontrollkästchen neben den Namen aller Benutzer, die Sie migrieren möchten.
 
-4. Wählen Sie **Weitere Optionen** (**...**) oben auf der Seite aus, und wählen Sie dann **Domänen ändern**aus.
+4. Wählen Sie **Weitere Optionen** (**...**) oben auf der Seite aus, und wählen Sie dann **Domänen ändern** aus.
 
 5. Wählen Sie im Bereich **Domänen ändern** eine andere Domäne aus.
 
@@ -66,7 +66,7 @@ Sie müssen diesen Vorgang auch für die eigene E-Mail-Adresse ausführen, wenn 
 
 1. Wechseln Sie zum <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a>.  
 
-2. Wählen Sie **Benutzer** > **aktive Benutzer**aus.
+2. Wählen Sie **Benutzer** > **aktive Benutzer** aus.
 
 3. Aktivieren Sie die Kontrollkästchen neben den Namen aller Benutzer, die Sie migrieren möchten.
 
@@ -82,7 +82,7 @@ Sie müssen diesen Vorgang auch für die eigene E-Mail-Adresse ausführen, wenn 
 
 1. Wechseln Sie zum <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a>.  
 
-2. Wählen Sie **Benutzer** > **aktive Benutzer**aus.
+2. Wählen Sie **Benutzer** > **aktive Benutzer** aus.
 
 3. Aktivieren Sie die Kontrollkästchen neben den Namen aller Benutzer, die Sie migrieren möchten.
 
@@ -102,7 +102,7 @@ Sie müssen diesen Vorgang auch für die eigene E-Mail-Adresse ausführen, wenn 
 
 2. Wechseln Sie zu **Benutzer** \> **aktive Benutzer**, und wählen Sie Ihr Konto aus der Liste aus.
 
-3. Wählen Sie auf der Registerkarte **Konto** die Option **Benutzername verwalten**aus, und wählen Sie dann eine andere Domäne aus.
+3. Wählen Sie auf der Registerkarte **Konto** die Option **Benutzername verwalten** aus, und wählen Sie dann eine andere Domäne aus.
   
 4. Wählen Sie oben Ihren Kontonamen aus, und wählen Sie **Abmelden aus**.
 
@@ -116,9 +116,9 @@ Sie können Sie auch PowerShell verwenden, um Benutzer in eine andere Domäne zu
 
 1. Wechseln Sie zu **Benutzer** \> **aktive Benutzer**, und wählen Sie in der Liste Ihren Namen aus.
 
-2. Wählen Sie im Abschnitt **Benutzername/e-Mail** die Option **Bearbeiten**aus, und wählen Sie dann eine andere Domäne aus.
+2. Wählen Sie im Abschnitt **Benutzername/e-Mail** die Option **Bearbeiten** aus, und wählen Sie dann eine andere Domäne aus.
 
-3. Wählen Sie **als primären** > **Speicher** > **Schließen**festlegen aus.
+3. Wählen Sie **als primären** > **Speicher** > **Schließen** festlegen aus.
   
 4. Wählen Sie oben Ihren Kontonamen aus, und wählen Sie **Abmelden aus**.
 
@@ -132,9 +132,9 @@ Sie können Sie auch PowerShell verwenden, um Benutzer in eine andere Domäne zu
 
 1. Wechseln Sie zu **Benutzer** \> **aktive Benutzer**, und wählen Sie in der Liste Ihren Namen aus.
 
-2. Wählen Sie im Abschnitt **Benutzername/e-Mail** die Option **Bearbeiten**aus, und wählen Sie dann eine andere Domäne aus.
+2. Wählen Sie im Abschnitt **Benutzername/e-Mail** die Option **Bearbeiten** aus, und wählen Sie dann eine andere Domäne aus.
 
-3. Wählen Sie **als primären** > **Speicher** > **Schließen**festlegen aus.
+3. Wählen Sie **als primären** > **Speicher** > **Schließen** festlegen aus.
   
 4. Wählen Sie oben Ihren Kontonamen aus, und wählen Sie **Abmelden aus**.
 
@@ -150,7 +150,7 @@ Sie können Sie auch PowerShell verwenden, um Benutzer in eine andere Domäne zu
 
 1. Wechseln Sie im Admin Center zur Seite **Gruppen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppen</a>.
   
-2. Wählen Sie den Gruppennamen aus, und wählen Sie dann auf der Registerkarte **Allgemein** unter **e-Mail-Adresse, primär**die Option **Bearbeiten**aus.
+2. Wählen Sie den Gruppennamen aus, und wählen Sie dann auf der Registerkarte **Allgemein** unter **e-Mail-Adresse, primär** die Option **Bearbeiten** aus.
 
 3. Wählen Sie in der Dropdownliste eine andere Domäne aus.
 
@@ -162,7 +162,7 @@ Sie können Sie auch PowerShell verwenden, um Benutzer in eine andere Domäne zu
 
 1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a>zur Seite **Gruppen** > **Gruppen** .
 
-2. Wählen Sie den Gruppennamen aus, und klicken Sie dann neben **Name**auf **Bearbeiten** .
+2. Wählen Sie den Gruppennamen aus, und klicken Sie dann neben **Name** auf **Bearbeiten** .
 
 3. Wählen Sie in der Dropdownliste eine andere Domäne aus.
 
@@ -174,7 +174,7 @@ Sie können Sie auch PowerShell verwenden, um Benutzer in eine andere Domäne zu
 
 1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a>zur Seite **Gruppen** > **Gruppen** .
 
-2. Wählen Sie den Gruppennamen aus, und klicken Sie dann neben **Name**auf **Bearbeiten** .
+2. Wählen Sie den Gruppennamen aus, und klicken Sie dann neben **Name** auf **Bearbeiten** .
 
 3. Wählen Sie in der Dropdownliste eine andere Domäne aus.
 
@@ -204,9 +204,9 @@ Sie können Sie auch PowerShell verwenden, um Benutzer in eine andere Domäne zu
   
 2. Wählen Sie auf der Seite **Domänen** die Domäne aus, die Sie entfernen möchten.
 
-3. Wählen Sie im rechten Bereich **Entfernen**aus.
+3. Wählen Sie im rechten Bereich **Entfernen** aus.
 
-4. Befolgt alle weiteren Eingabeaufforderungen, und wählen Sie dann **Schließen**aus.
+4. Befolgt alle weiteren Eingabeaufforderungen, und wählen Sie dann **Schließen** aus.
 
 ## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a>Wie lange dauert es, bis eine Domäne entfernt wurde?
 
@@ -227,7 +227,7 @@ Funktioniert es immer noch nicht? Die Domäne muss möglicherweise manuell entfe
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Häufig gestellte Fragen zu Domänen](../setup/domains-faq.md)
+[Häufig gestellte Fragen zu Domänen](../setup/domains-faq.yml)
 
 [Wechseln zu einem anderen Microsoft 365 Business-Plan](../../commerce/subscriptions/switch-to-a-different-plan.md)
 

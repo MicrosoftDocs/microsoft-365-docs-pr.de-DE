@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie Nachrichtenfluss Regeln (Transportregeln) verwenden, um Massen-e-Mails (Gray Mail) in Exchange Online Protection (EoP) zu identifizieren und zu filtern.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1f88358973648846d650700bb5939c052851c789
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: b029e805147218551ba6ff80fb5abfda3fbfef7f
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615636"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658637"
 ---
 # <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>Verwenden von Regeln zum Filtern von Massen-E-Mails in EOP
 
@@ -36,11 +36,13 @@ In diesem Thema wird erläutert, wie Sie diese Nachrichtenfluss Regeln in der Ex
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Sie müssen Berechtigungen zugewiesen haben, bevor Sie diese Verfahren ausführen können:
+- Sie müssen Berechtigungen in Exchange Online oder Exchange Online Schutz zugewiesen werden, bevor Sie die Verfahren in diesem Artikel ausführen können. Insbesondere benötigen Sie die **Transport Regel** Rolle, die standardmäßig der Rollengruppe **"Organisationsverwaltung**", " **Compliance-Verwaltung** " (globale Administratoren) und der Rolle " **Datensatzverwaltung** " zugewiesen ist.
 
-  - Lesen Sie in Exchange Online den Eintrag "Nachrichtenfluss" unter [Feature Permissions in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/feature-permissions).
+  Weitere Informationen hierzu finden Sie in den folgenden Themen:
 
-  - In eigenständigen EoP benötigen Sie die Transport Regel Rolle, die standardmäßig den Rollenmitglied, ComplianceManagement und RecordsManagement zugewiesen ist. Weitere Informationen finden Sie unter [Berechtigungen in eigenständigen EoP](feature-permissions-in-eop.md) und [Verwenden der Exchange-Verwaltungskonsole ändern der Liste der Mitglieder in Rollengruppen](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+  - [Berechtigungen in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
+  - [Berechtigungen in EOP als eigenständige Lösung](feature-permissions-in-eop.md)
+  - [Verwenden der Exchange-Verwaltungskonsole ändern der Liste der Mitglieder in Rollengruppen](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
 
 - Informationen zum Öffnen des EAC in Exchange Online finden Sie unter [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center). Informationen zum Öffnen der Exchange-Verwaltungskonsole in eigenständigen EoP finden Sie unter [Exchange Admin Center in Standalone EoP](exchange-admin-center-in-exchange-online-protection-eop.md).
 

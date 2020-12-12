@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratoren können Informationen zu den Nachrichtenfluss Berichten erhalten, die im Dashboard Berichte im Security & Compliance Center verfügbar sind.
 ms.custom: ''
-ms.openlocfilehash: 701735374e03f2afb91323ceb4b3fbf30988bdcd
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 1ededf2d0d693c537c159c52d00deb03f278b4b2
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572801"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659465"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Anzeigen von Nachrichtenfluss Berichten im Dashboard "Berichte" im Security & Compliance Center
 
@@ -32,7 +32,7 @@ ms.locfileid: "49572801"
 
 Zusätzlich zu den Nachrichtenfluss Berichten, die im [Nachrichtenfluss-Dashboard](mail-flow-insights-v2.md) im Security & Compliance Center zur Verfügung stehen, stehen im Dashboard Berichte eine Vielzahl zusätzlicher Nachrichtenübermittlungs Berichte zur Verfügung, mit denen Sie Ihre Microsoft 365-Organisation überwachen können.
 
-Wenn Sie über die [erforderlichen Berechtigungen](#what-permissions-are-needed-to-view-these-reports)verfügen, können Sie diese Berichte im [Security & Compliance Center](https://office.protection.com) anzeigen, indem Sie zum **Reports** \> **Dashboard** Berichte wechseln. Wenn Sie direkt zum Dashboard Berichte wechseln möchten, öffnen Sie <https://protection.office.com/insightdashboard> .
+Wenn Sie über die [erforderlichen Berechtigungen](#what-permissions-are-needed-to-view-these-reports)verfügen, können Sie diese Berichte im [Security & Compliance Center](https://office.protection.com) anzeigen, indem Sie zum  \> **Dashboard** Berichte wechseln. Wenn Sie direkt zum Dashboard Berichte wechseln möchten, öffnen Sie <https://protection.office.com/insightdashboard> .
 
 ![Berichts Dashboard im Security & Compliance Center](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -40,7 +40,7 @@ Wenn Sie über die [erforderlichen Berechtigungen](#what-permissions-are-needed-
 
 Der **Bericht Connector** zeigt die Nachrichtenfluss Aktivität für die [eingehenden und ausgehenden Connectors](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) an, die für Ihre Organisation konfiguriert sind.
 
-Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center](https://protection.office.com), wechseln Sie **Reports** zum \> **Dashboard** Berichte, und wählen Sie **connectorbericht** aus. Wenn Sie direkt zum Bericht wechseln möchten, öffnen Sie <https://protection.office.com/reportv2?id=ConnectorReport> .
+Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center](https://protection.office.com), wechseln Sie  zum \> **Dashboard** Berichte, und wählen Sie **connectorbericht** aus. Wenn Sie direkt zum Bericht wechseln möchten, öffnen Sie <https://protection.office.com/reportv2?id=ConnectorReport> .
 
 ![Connector-Berichts-Widget im Dashboard "Berichte"](../../media/connector-report-widget.png)
 
@@ -94,7 +94,7 @@ Klicken Sie auf **Bericht anzeigen**, um zur Berichtsansicht zurückzukehren.
 
 Der **Exchange-Transportregel Bericht** zeigt die Auswirkungen von Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) auf ein-und ausgehende Nachrichten in Ihrer Organisation.
 
-Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center](https://protection.office.com), wechseln Sie **Reports** zum \> **Dashboard** Berichte, und wählen Sie **Exchange-Transport Regel** aus. Wenn Sie direkt zum Bericht wechseln möchten, öffnen Sie <https://protection.office.com/reportv2?id=ETRRuleReport> .
+Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center](https://protection.office.com), wechseln Sie  zum \> **Dashboard** Berichte, und wählen Sie **Exchange-Transport Regel** aus. Wenn Sie direkt zum Bericht wechseln möchten, öffnen Sie <https://protection.office.com/reportv2?id=ETRRuleReport> .
 
 ![Exchange-Transportregel-Widget im Dashboard "Berichte"](../../media/transport-rule-report-widget.png)
 
@@ -138,7 +138,7 @@ Wenn Sie auf **Detailtabelle anzeigen** klicken, hängt die Anzeige der angezeig
   - **Absenderadresse**
   - **Empfängeradresse**
   - **Schweregrad**
-  - **Direction**
+  - **Richtung**
 
 - **Anzeigen von Daten nach: DLP Exchange-Transportregeln**:
 
@@ -149,7 +149,7 @@ Wenn Sie auf **Detailtabelle anzeigen** klicken, hängt die Anzeige der angezeig
   - **Absenderadresse**
   - **Empfängeradresse**
   - **Schweregrad**
-  - **Direction**
+  - **Richtung**
 
 Wenn Sie in einer Detailtabellen Ansicht auf **Filter** klicken, können Sie die Ergebnisse mit den folgenden Filtern ändern:
 
@@ -163,7 +163,7 @@ Klicken Sie auf **Bericht anzeigen**, um zur Berichtsansicht zurückzukehren.
 
 Der **Weiterleitungs Bericht** zeigt die automatisch weitergeleiteten Nachrichten Ihrer Organisation von Exchange Online Postfächern an externe Domänen an. Weitergeleitete Nachrichten können ein Sicherheits-oder Konformitäts Risiko darstellen und möglicherweise auf ein kompromittiertes Konto hindeuten.
 
-Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center](https://protection.office.com), wechseln Sie **Reports** zum \> **Dashboard** Berichte, und wählen Sie **weiter Leitungs Bericht** aus. Wenn Sie direkt zum Bericht wechseln möchten, öffnen Sie <https://protection.office.com/reportv2?id=MailFlowForwarding> .
+Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center](https://protection.office.com), wechseln Sie  zum \> **Dashboard** Berichte, und wählen Sie **weiter Leitungs Bericht** aus. Wenn Sie direkt zum Bericht wechseln möchten, öffnen Sie <https://protection.office.com/reportv2?id=MailFlowForwarding> .
 
 ![Weiterleiten des Berichts-Widgets im Dashboard "Berichte"](../../media/forwarding-report-widget.png)
 
@@ -210,7 +210,7 @@ Klicken Sie auf **Bericht anzeigen**, um zur Ansicht Berichte zurückzukehren.
 ## <a name="mailflow-status-report"></a>Nachrichtenfluss-Statusbericht
 
 Der **Nachrichtenfluss-Statusbericht** ähnelt dem [gesendeten und empfangenen e-Mail-Bericht](#sent-and-received-email-report), wobei zusätzliche Informationen zu e-Mail-Nachrichten zugelassen oder am Edge blockiert werden. Dies ist der einzige Bericht, der Informationen zum Edge-Schutz enthält, und zeigt, wie viele e-Mails blockiert werden, bevor Sie in den Dienst zur Evaluierung durch Exchange Online Protection (EoP) zugelassen werden. Es ist wichtig zu verstehen, dass wenn eine Nachricht an fünf Empfänger gesendet wird, wir Sie als fünf verschiedene Nachrichten und nicht eine Nachricht zählen.
-Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center](https://protection.office.com), wechseln Sie **Reports** zum \> **Dashboard** Berichte, und wählen Sie **Nachrichtenflussstatus Bericht** aus. Wenn Sie direkt zum **Nachrichtenflussstatus Bericht** wechseln möchten, öffnen Sie <https://protection.office.com/mailflowStatusReport> .
+Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center](https://protection.office.com), wechseln Sie  zum \> **Dashboard** Berichte, und wählen Sie **Nachrichtenflussstatus Bericht** aus. Wenn Sie direkt zum **Nachrichtenflussstatus Bericht** wechseln möchten, öffnen Sie <https://protection.office.com/mailflowStatusReport> .
 
 ![Nachrichtenfluss-Statusbericht-Widget im Dashboard "Berichte"](../../media/mail-flow-status-report-widget.png)
 
@@ -223,7 +223,7 @@ Wenn Sie den Bericht öffnen, ist die Registerkarte **Typ** standardmäßig akti
 
   - **Eingehende**
   - **Ausgehende**
-  - **Intra-org**: diese Anzahl gilt für Nachrichten innerhalb eines Mandanten, d. h. Absender ABC@Domain.com wird an den Empfänger XYZ@Domain.com gesendet (separat **Inbound** von eingehend **und** ausgehend gezählt)
+  - **Intra-org**: diese Anzahl gilt für Nachrichten innerhalb eines Mandanten, d. h. Absender ABC@Domain.com wird an den Empfänger XYZ@Domain.com gesendet (separat  von eingehend **und** ausgehend gezählt)
 
 - **Geben** Sie Folgendes ein:
 
@@ -240,7 +240,7 @@ Sie können diese Filter ändern, indem Sie auf **Filter** klicken oder auf eine
 
 Die Datentabelle enthält die folgenden Informationen:
 
-- **Direction**
+- **Richtung**
 - **Type**
 - **24 Stunden**
 - **3 Tage**
@@ -420,7 +420,7 @@ Der Bericht **gesendeten und empfangenen e-Mail-Nachrichten** ist ein intelligen
 
 Die Aggregatansicht und die Detailansicht des Berichts erlauben eine Filterung von 90 Tagen.
 
-Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center](https://protection.office.com), wechseln Sie **Reports** zum \> **Dashboard** Berichte, und wählen Sie **gesendete und empfangene e-Mails** aus. Wenn Sie direkt zum Bericht wechseln möchten, öffnen Sie <https://protection.office.com/reportv2?id=SentAndReceivedMailATP> .
+Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center](https://protection.office.com), wechseln Sie  zum \> **Dashboard** Berichte, und wählen Sie **gesendete und empfangene e-Mails** aus. Wenn Sie direkt zum Bericht wechseln möchten, öffnen Sie <https://protection.office.com/reportv2?id=SentAndReceivedMailATP> .
 
 ![Gesendete und empfangene e-Mail-widget im Dashboard Berichte](../../media/sent-and-received-email-report-widget.png)
 
@@ -463,7 +463,7 @@ Wenn Sie auf **Tabelle Details anzeigen** in der Ansicht **aufschlüsseln nach: 
 
 - **Datum (UTC)**
 - **Type**
-- **Direction**
+- **Richtung**
 - **Nachrichtenanzahl**
 
 Wenn Sie in einer Detailtabellen Ansicht auf **Filter** klicken, können Sie die Ergebnisse mit den folgenden Filtern ändern:
@@ -535,7 +535,7 @@ Klicken Sie auf **Bericht anzeigen**, um zur Berichtsansicht zurückzukehren.
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>Welche Berechtigungen sind zum Anzeigen dieser Berichte erforderlich?
 
-Damit Sie die in diesem Thema beschriebenen Berichte anzeigen und verwenden können, müssen Sie Mitglied einer der folgenden Rollengruppen im Security & Compliance Center sein:
+Damit Sie die in diesem Artikel beschriebenen Berichte anzeigen und verwenden können, müssen Sie Mitglied einer der folgenden Rollengruppen im Security & Compliance Center sein:
 
 - **Organisationsverwaltung**
 - **Sicherheits Administrator**

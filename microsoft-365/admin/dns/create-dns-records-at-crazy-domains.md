@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 6386d63e-b78f-4736-90e7-b99a2c116a9f
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste in Crazy Domains für Microsoft einrichten.
-ms.openlocfilehash: cf65173873affdc66e4e6d03764a3d6c842b7642
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 4b39a51f96299879207b96d1e15d039905440b0a
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646223"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658495"
 ---
 # <a name="create-dns-records-at-crazy-domains-for-microsoft"></a>Erstellen von DNS-Einträgen bei Crazy Domains für Microsoft
 
- **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
+ **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
   
 Wenn Crazy Domains Ihr DNS-Hostinganbieter ist, führen Sie die in diesem Artikel aufgeführten Schritte aus, um Ihre Domäne zu überprüfen und DNS-Einträge für E-Mail, Skype for Business Online und andere Dienste einzurichten.
   
@@ -53,7 +53,7 @@ Bevor Sie Ihre Domäne mit Microsoft verwenden können, müssen wir uns vergewis
     
     ![CrazyDomains-BP-configure-1-1](../../media/40c5117c-acad-4fe5-bf0d-d3c362b08a16.png)
   
-2. Wählen Sie im Abschnitt **mein Konto** die Option **Domänen**aus.
+2. Wählen Sie im Abschnitt **mein Konto** die Option **Domänen** aus.
     
     ![CrazyDomains-BP-configure-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
@@ -120,7 +120,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     ![CrazyDomains-BP-configure-1-1](../../media/40c5117c-acad-4fe5-bf0d-d3c362b08a16.png)
   
-2. Wählen Sie im Abschnitt **mein Konto** die Option **Domänen**aus.
+2. Wählen Sie im Abschnitt **mein Konto** die Option **Domänen** aus.
     
     ![CrazyDomains-BP-configure-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
@@ -150,7 +150,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     |**Mail For Zone**|**Priority**|**Assigned To Server**|
     |:-----|:-----|:-----|
-    |(Dieses Feld leer lassen.)  <br/> |1  <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Hinweis:** Holen Sie sich Ihr  *\<domain-key\>*  Microsoft-Konto.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |
+    |(Dieses Feld leer lassen.)  <br/> |1   <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Hinweis:** Holen Sie sich Ihr  *\<domain-key\>*  Microsoft-Konto.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |
        
    ![CrazyDomains-BP-configure-2-3](../../media/e27df6a6-19a6-4e58-9716-a74be1c3f8da.png)
   
@@ -179,7 +179,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     ![CrazyDomains-BP-configure-1-1](../../media/40c5117c-acad-4fe5-bf0d-d3c362b08a16.png)
   
-2. Wählen Sie im Abschnitt **mein Konto** die Option **Domänen**aus.
+2. Wählen Sie im Abschnitt **mein Konto** die Option **Domänen** aus.
     
     ![CrazyDomains-BP-configure-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
@@ -217,13 +217,13 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
    
     ![CrazyDomains-BP-configure-3-3](../../media/81a7b837-3f4d-4565-89a9-380e4d318acf.png)
   
-9. Wählen Sie **CNAME-Eintrag hinzufügen**aus.
+9. Wählen Sie **CNAME-Eintrag hinzufügen** aus.
     
     ![CrazyDomains-BP-configure-3-4](../../media/9bcba729-7085-4ebc-8183-ecde82f5c364.png)
   
 10. Fügen Sie den zweiten CNAME-Eintrag hinzu.
     
-    Verwenden Sie in den Feldern für den neuen Datensatz die Werte aus der nächsten Zeile in der Tabelle, und wählen Sie dann erneut **CNAME-Eintrag hinzufügen**aus.
+    Verwenden Sie in den Feldern für den neuen Datensatz die Werte aus der nächsten Zeile in der Tabelle, und wählen Sie dann erneut **CNAME-Eintrag hinzufügen** aus.
     
     Wiederholen Sie diesen Vorgang, bis Sie alle sechs CNAME-Einträge erstellt haben.
     
@@ -241,7 +241,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     ![CrazyDomains-BP-configure-1-1](../../media/40c5117c-acad-4fe5-bf0d-d3c362b08a16.png)
   
-2. Wählen Sie im Abschnitt **mein Konto** die Option **Domänen**aus.
+2. Wählen Sie im Abschnitt **mein Konto** die Option **Domänen** aus.
     
     ![CrazyDomains-BP-configure-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
@@ -284,7 +284,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     ![CrazyDomains-BP-configure-1-1](../../media/40c5117c-acad-4fe5-bf0d-d3c362b08a16.png)
   
-2. Wählen Sie im Abschnitt **mein Konto** die Option **Domänen**aus.
+2. Wählen Sie im Abschnitt **mein Konto** die Option **Domänen** aus.
     
     ![CrazyDomains-BP-configure-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
@@ -314,12 +314,12 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     |**Record Type**|**Sub Domain**|**Priority**|**Weight**|**Port**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV Record  <br/> |_sip._tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |SRV Record  <br/> |_sipfederationtls._tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |SRV Record  <br/> |_sip._tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |SRV Record  <br/> |_sipfederationtls._tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
     ![CrazyDomains-BP-configure-5-3](../../media/cc0ea6eb-7358-434e-bd1a-2737725c6d41.png)
   
-9. Wählen Sie **SRV-Eintrag hinzufügen**aus.
+9. Wählen Sie **SRV-Eintrag hinzufügen** aus.
     
     ![CrazyDomains-BP-configure-5-4](../../media/de4ec312-6833-469a-b23a-f376140a35ca.png)
   

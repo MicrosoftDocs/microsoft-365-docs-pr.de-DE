@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: fbcef2d7-ebaf-40d0-ba1f-cdaeff9f50ef
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste in Azure-DNS-Zonen für Microsoft einrichten.
-ms.openlocfilehash: 40fadb81ebd0ae5385bbbdad727b1c579142b227
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: c276570ec1d5ff079348bd8202ea597ef61e88f6
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645671"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656867"
 ---
 # <a name="create-dns-records-for-azure-dns-zones"></a>Erstellen von DNS-Einträgen für Azure-DNS-Zonen
 
- **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
+ **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
   
 Wenn Azure Ihr DNS-Hostinganbieter ist, führen Sie die Schritte in diesem Artikel aus, um Ihre Domäne zu überprüfen und DNS-Einträge für e-Mail, Skype for Business Online usw. einzurichten.
   
@@ -96,11 +96,11 @@ Bevor Sie Ihre Domäne mit Microsoft verwenden können, müssen wir uns vergewis
     
     ![Azure-BP-configure-1-1](../../media/ed377cad-0c47-4f9f-b322-c3e06b309b1f.png)
   
-2. Geben Sie über die **Suchleiste** auf der **Dashboardseite** die Zeichen in **DNS-Zonen**ein. Wählen Sie in der Ergebnisanzeige **DNS-Zonen** unter dem Abschnitt **Dienste** aus. Nachdem Sie umgeleitet wurden, wählen Sie die Domäne aus, die Sie aktualisieren möchten.
+2. Geben Sie über die **Suchleiste** auf der **Dashboardseite** die Zeichen in **DNS-Zonen** ein. Wählen Sie in der Ergebnisanzeige **DNS-Zonen** unter dem Abschnitt **Dienste** aus. Nachdem Sie umgeleitet wurden, wählen Sie die Domäne aus, die Sie aktualisieren möchten.
     
     ![Azure-BP-configure-1-2](../../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
   
-3. Wählen Sie auf der Seite **Einstellungen** für Ihre Domäne im Bereich **DNS-Zone** die Option **+ Record-Satz**aus.
+3. Wählen Sie auf der Seite **Einstellungen** für Ihre Domäne im Bereich **DNS-Zone** die Option **+ Record-Satz** aus.
     
     ![Azure-BP-configure-1-3](../../media/b04db89a-3dbc-4cd2-aaca-af17fda53a60.png)
   
@@ -110,7 +110,7 @@ Bevor Sie Ihre Domäne mit Microsoft verwenden können, müssen wir uns vergewis
     
     |**Name**|**Type**|**TTL**|**TTL-Einheit**|**Wert**|
     |:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |TXT  <br/> |1  <br/> |Stunden  <br/> |MS=ms *XXXXXXXX*  <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihre spezifischen **Ziel-oder Punkt-zu-Adresse** -Werte aus der Tabelle.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |TXT  <br/> |1   <br/> |Stunden  <br/> |MS=ms *XXXXXXXX*  <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihre spezifischen **Ziel-oder Punkt-zu-Adresse** -Werte aus der Tabelle.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Azure-BP-Verify-1-1](../../media/7d5a253c-e88f-4565-a00a-79bba52f9970.png)
   
@@ -150,7 +150,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     ![Azure-BP-configure-1-2](../../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
   
-3. Wählen Sie auf der Seite **Einstellungen** für Ihre Domäne im Bereich **DNS-Zone** die Option **+ Record-Satz**aus.
+3. Wählen Sie auf der Seite **Einstellungen** für Ihre Domäne im Bereich **DNS-Zone** die Option **+ Record-Satz** aus.
     
     ![Azure-BP-configure-1-3](../../media/b04db89a-3dbc-4cd2-aaca-af17fda53a60.png)
   
@@ -160,7 +160,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     |**Name**|**Type**|**TTL**|**TTL-Einheit**|**Preference**|**E-Mail-Austausch**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |1  <br/> |Stunden  <br/> |10   <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Hinweis:** Holen Sie sich Ihr  *\<domain-key\>*  Microsoft-Konto.   [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)  
+    |@  <br/> |MX  <br/> |1   <br/> |Stunden  <br/> |10   <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Hinweis:** Holen Sie sich Ihr  *\<domain-key\>*  Microsoft-Konto.   [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)  
    
     ![Azure-BP-configure-2-1](../../media/712c23ae-9d38-4af2-94e0-0704e70744fe.png)
   
@@ -170,7 +170,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
   
 6. Wenn im Abschnitt **MX Records** weitere MX-Einträge aufgeführt sind, müssen Sie Sie löschen. 
     
-    Wählen Sie zuerst im Bereich **DNS-Zone** den **MX-Eintragssatz**aus.
+    Wählen Sie zuerst im Bereich **DNS-Zone** den **MX-Eintragssatz** aus.
     
     ![Azure-BP-configure-2-3](../../media/9890da61-6fcd-4c61-888e-ccbb84f80cd0.png)
   
@@ -182,7 +182,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     ![Azure-BP-configure-2-5](../../media/25219e25-bc14-4bc7-84ed-ee65eb28a8ed.png)
   
-8. Klicken Sie auf **Speichern**.
+8. Wählen Sie **Speichern** aus.
     
     ![Azure-BP-configure-2-6](../../media/c6133096-5e43-4637-9c01-b63ee4b03517.png)
   
@@ -197,7 +197,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     ![Azure-BP-configure-1-2](../../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
   
-3. Wählen Sie auf der Seite **Einstellungen** für Ihre Domäne im Bereich **DNS-Zone** die Option **+ Record-Satz**aus.
+3. Wählen Sie auf der Seite **Einstellungen** für Ihre Domäne im Bereich **DNS-Zone** die Option **+ Record-Satz** aus.
     
     ![Azure-BP-configure-1-3](../../media/b04db89a-3dbc-4cd2-aaca-af17fda53a60.png)
   
@@ -209,9 +209,9 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     |**Name**|**Type**|**TTL**|**TTL-Einheit**|**Alias**|
     |:-----|:-----|:-----|:-----|:-----|
-    |autodiscover  <br/> |CNAME  <br/> |1  <br/> |Stunden  <br/> |autodiscover.outlook.com  <br/> |
-    |sip  <br/> |CNAME  <br/> |1  <br/> |Stunden  <br/> |sipdir.online.lync.com  <br/> |
-    |lyncdiscover  <br/> |CNAME  <br/> |1  <br/> |Stunden  <br/> |webdir.online.lync.com  <br/> |
+    |autodiscover  <br/> |CNAME  <br/> |1   <br/> |Stunden  <br/> |autodiscover.outlook.com  <br/> |
+    |sip  <br/> |CNAME  <br/> |1   <br/> |Stunden  <br/> |sipdir.online.lync.com  <br/> |
+    |lyncdiscover  <br/> |CNAME  <br/> |1   <br/> |Stunden  <br/> |webdir.online.lync.com  <br/> |
     
    
     ![Azure-BP-configure-3-1](../../media/a1c4d869-da97-43b3-952c-d513a20231dc.png)
@@ -222,7 +222,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
   
 6. Fügen Sie die drei anderen CNAME-Einträge hinzu.
     
-    Wählen Sie im Bereich **DNS-Zone** die Option **+ Record-Satz**aus. Erstellen Sie dann im leeren Daten Satz Satz einen Datensatz mithilfe der Werte aus der nächsten Zeile in der Tabelle, und wählen Sie dann erneut **OK** aus, um den Datensatz abzuschließen. 
+    Wählen Sie im Bereich **DNS-Zone** die Option **+ Record-Satz** aus. Erstellen Sie dann im leeren Daten Satz Satz einen Datensatz mithilfe der Werte aus der nächsten Zeile in der Tabelle, und wählen Sie dann erneut **OK** aus, um den Datensatz abzuschließen. 
     
     Wiederholen Sie diesen Vorgang, bis Sie alle vier CNAME-Einträge erstellt haben.
     
@@ -233,8 +233,8 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
   
 |**Name**|**Type**|**TTL**|**TTL-Einheit**|**Alias**|
 |:-----|:-----|:-----|:-----|:-----|
-|enterpriseregistration  <br/> |CNAME  <br/> |1  <br/> |Stunden  <br/> |enterpriseregistration.windows.net  <br/> |
-|enterpriseenrollment  <br/> |CNAME  <br/> |1  <br/> |Stunden  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
+|enterpriseregistration  <br/> |CNAME  <br/> |1   <br/> |Stunden  <br/> |enterpriseregistration.windows.net  <br/> |
+|enterpriseenrollment  <br/> |CNAME  <br/> |1   <br/> |Stunden  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
    
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Hinzufügen eines TXT-Eintrags für SPF, um E-Mail-Spam zu verhindern
 <a name="BKMK_add_TXT"> </a>
@@ -250,7 +250,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     ![Azure-BP-configure-1-2](../../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
   
-3. Wählen Sie im Bereich **DNS-Zone** den **txt-Eintragssatz**aus.
+3. Wählen Sie im Bereich **DNS-Zone** den **txt-Eintragssatz** aus.
     
     ![Azure-BP-configure-4-1](../../media/03095196-5010-4072-8503-79b812084dbf.png)
   
@@ -260,11 +260,11 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     |**Name**|**Type**|**TTL**|**TTL-Einheit**|**Wert**|
     |:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |TXT  <br/> |1  <br/> |Stunden  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Hinweis:** Es wird empfohlen, diesen Eintrag zu kopieren und einzufügen, damit alle Abstände korrekt übernommen werden.           
+    |@  <br/> |TXT  <br/> |1   <br/> |Stunden  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Hinweis:** Es wird empfohlen, diesen Eintrag zu kopieren und einzufügen, damit alle Abstände korrekt übernommen werden.           
 
     ![Azure-BP-configure-4-2](../../media/78e84c43-e0ce-433f-8e74-9157fb093cca.png)
   
-5. Klicken Sie auf **Speichern**.
+5. Wählen Sie **Speichern** aus.
     
     ![Azure-BP-configure-4-3](../../media/d7421c7f-ea63-4e11-8595-a482b8c165e0.png)
   
@@ -279,7 +279,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     ![Azure-BP-configure-1-2](../../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
   
-3. Wählen Sie auf der Seite **Einstellungen** für Ihre Domäne im Bereich **DNS-Zone** die Option **+ Record-Satz**aus.
+3. Wählen Sie auf der Seite **Einstellungen** für Ihre Domäne im Bereich **DNS-Zone** die Option **+ Record-Satz** aus.
     
     ![Azure-BP-configure-1-3](../../media/b04db89a-3dbc-4cd2-aaca-af17fda53a60.png)
   
@@ -291,8 +291,8 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     |**Name**|**Type**|**TTL**|**TTL-Einheit**|**Priority**|**Weight**|**Port**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip._tls  <br/> |SRV  <br/> |1  <br/> |Stunden  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls._tcp  <br/> |SRV  <br/> |1  <br/> |Stunden  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> 
+    |_sip._tls  <br/> |SRV  <br/> |1   <br/> |Stunden  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls._tcp  <br/> |SRV  <br/> |1   <br/> |Stunden  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> 
 
     ![Azure-BP-configure-5-1](../../media/a436e0b4-8bb8-4a66-9c22-4e3b2dcf54ff.png)
   

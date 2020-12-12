@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 7173c635-58b3-400f-95e0-97abe915565e
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste bei WiX für Microsoft einrichten.
-ms.openlocfilehash: ee236a9178092bb8fd14a9615c2ac5911b1ecc87
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 01317f7e2da87b532c93f12269fd65b7d4fe2dd6
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645659"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656879"
 ---
 # <a name="create-dns-records-at-wix-for-microsoft"></a>Erstellen von DNS-Einträgen bei WiX für Microsoft
 
-**[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
+**[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
   
 [] Wenn Wix Ihr DNS-Hostinganbieter ist, führen Sie die in diesem Artikel aufgeführten Schritte aus, um Ihre Domäne zu überprüfen und DNS-Einträge für E-Mail, Skype for Business Online und andere Dienste einzurichten.
 
@@ -105,7 +105,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
 3. Wählen Sie in der Dropdownliste **Ihres e-Mail-Anbieters** die Option **Sonstiges** aus. 
     
-4. Wählen Sie **+ Add other**aus.
+4. Wählen Sie **+ Add other** aus.
     
 5. Geben Sie in den Feldern für den neuen Eintrag die Werte aus der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen:
     
@@ -117,7 +117,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
 7. Wählen Sie **OK** aus.
     
-8. Wählen Sie im Dialogfeld Bestätigung die Option **OK**aus.
+8. Wählen Sie im Dialogfeld Bestätigung die Option **OK** aus.
     
     
 ## <a name="add-the-five-cname-records-that-are-required-for-microsoft"></a>Hinzufügen der fünf für Microsoft erforderlichen CNAME-Einträge
@@ -180,8 +180,8 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
    | Dienst | Protokoll | Name | Schriftbreite | Port | Ziel | Priority | TTL |
    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-   |sip  |tls  |Automatisch aufgefüllt |1  |443   |sipdir.online.lync.com |100 |1 Hour |
-   |sipfed|tcp |Automatisch aufgefüllt|1 |5061 |sipfed.online.lync.com|100 | 1 Hour |
+   |sip  |tls  |Automatisch aufgefüllt |1   |443   |sipdir.online.lync.com |100 |1 Hour |
+   |sipfed|tcp |Automatisch aufgefüllt|1  |5061 |sipfed.online.lync.com|100 | 1 Hour |
    
 5. Wählen Sie die Schaltfläche " **DNS speichern** " oben im DNS-Editor aus. 
     

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: Administratoren können erfahren, wie Sie das Administrator-Überwachungsprotokoll in eigenständiger Exchange Online Schutz (EoP) anzeigen und durchsuchen.
-ms.openlocfilehash: 9fe2c742083cde1ca36f6a04cd357a473a10aeac
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c65c09efa0f90fc9b63d635dae598b24d93ea714
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196543"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659441"
 ---
 # <a name="view-the-admin-audit-log-in-standalone-eop"></a>Anzeigen des Administratorüberwachungsprotokolls in EOP als eigenständige Lösung
 
@@ -32,7 +32,7 @@ Das administratorüberwachungsprotokoll zeichnet bestimmte Aktionen auf der Grun
 >
 > - Die Administrator Überwachungsprotokollierung ist standardmäßig aktiviert und kann nicht deaktiviert werden.
 >
-> - Das administratorüberwachungsprotokoll zeichnet keine Aktionen basierend auf Cmdlets auf, die mit dem Verb **Get**, der **Suche**oder dem **Test**beginnen.
+> - Das administratorüberwachungsprotokoll zeichnet keine Aktionen basierend auf Cmdlets auf, die mit dem Verb **Get**, der **Suche** oder dem **Test** beginnen.
 >
 > - Die Überwachungsprotokolleinträge werden 90 Tage lang aufbewahrt. Wenn ein Eintrag älter als 90 Tage ist, wird er gelöscht.
 
@@ -42,18 +42,18 @@ Das administratorüberwachungsprotokoll zeichnet bestimmte Aktionen auf der Grun
 
 - Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Insbesondere benötigen Sie die Überwachungsprotokolle oder die Rolle "Überwachungsprotokolle nur anzeigen", die standardmäßig den Rollengruppen ComplianceManagement, Mitglied (globale Administratoren) und SecurityAdministrator zugewiesen sind. Weitere Informationen finden Sie unter [Berechtigungen in eigenständigen EoP](feature-permissions-in-eop.md) und [Verwenden der Exchange-Verwaltungskonsole ändern der Liste der Mitglieder in Rollengruppen](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- Sie müssen Berechtigungen in Exchange Online Protection zugewiesen werden, bevor Sie die Verfahren in diesem Artikel ausführen können. Insbesondere benötigen Sie die **Überwachungsprotokolle** oder die Rolle " **Überwachungsprotokolle nur anzeigen** ", die standardmäßig den Rollengruppen " **Organisationsverwaltung**", " **Konformitätsverwaltung**" und " **Sicherheits Administrator** " zugewiesen sind. Weitere Informationen finden Sie unter [Berechtigungen in eigenständigen EoP](feature-permissions-in-eop.md) und [Verwenden der Exchange-Verwaltungskonsole ändern der Liste der Mitglieder in Rollengruppen](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
-- Informationen zu Tastenkombinationen, die möglicherweise für die Verfahren in diesem Thema gelten, finden Sie unter [Tastenkombinationen für das Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Informationen zu Tastenkombinationen, die möglicherweise für die Verfahren in diesem Artikel gelten, finden Sie unter [Tastenkombinationen für das Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > Liegt ein Problem vor? Bitten Sie im [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)-Forum um Hilfe.
 
 ## <a name="use-the-eac-to-view-the-admin-audit-log"></a>Anzeigen des administratorüberwachungsprotokolls mithilfe der Exchange-Verwaltungskonsole
 
-1. Wechseln Sie in der Exchange- **Verwaltungskonsole zu Compliance Management** \> **Auditing**, und wählen Sie dann **Administrator-Überwachungsprotokollbericht ausführen**aus.
+1. Wechseln Sie in der Exchange- **Verwaltungskonsole zu Compliance Management** \> **Auditing**, und wählen Sie dann **Administrator-Überwachungsprotokollbericht ausführen** aus.
 
-2. Wählen Sie auf der Seite nach **Änderungen an Administratorrollengruppen suchen** , die geöffnet wird, ein **Start Datum** und ein **Enddatum** aus (der Standardbereich ist die letzten zwei Wochen), und wählen Sie dann **Suchen**aus. Sämtliche Konfigurationsänderungen, die im angegebenen Zeitraum erfolgt sind, werden angezeigt und können anhand der folgenden Informationen sortiert werden:
+2. Wählen Sie auf der Seite nach **Änderungen an Administratorrollengruppen suchen** , die geöffnet wird, ein **Start Datum** und ein **Enddatum** aus (der Standardbereich ist die letzten zwei Wochen), und wählen Sie dann **Suchen** aus. Sämtliche Konfigurationsänderungen, die im angegebenen Zeitraum erfolgt sind, werden angezeigt und können anhand der folgenden Informationen sortiert werden:
 
    - **Date**: das Datum und die Uhrzeit, zu der die Konfigurationsänderung vorgenommen wurde. Datum und Uhrzeit werden im UTC-Format (Coordinated Universal Time, koordinierte Weltzeit) gespeichert.
 
@@ -112,7 +112,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Search-Ad
 
 ### <a name="view-details-of-audit-log-entries"></a>Anzeigen der Details von Überwachungsprotokolleinträgen
 
-Das Cmdlet **Search-AdminAuditLog** gibt die Felder zurück, die im Abschnitt [Überwachungsprotokoll Inhalt](#audit-log-contents) weiter unten in diesem Thema beschrieben werden. Von den vom Cmdlet zurückgegebenen Feldern enthalten zwei Felder, **CmdletParameters** und **ModifiedProperties**, zusätzliche Informationen, die standardmäßig nicht zurückgegeben werden.
+Das Cmdlet **Search-AdminAuditLog** gibt die Felder zurück, die im Abschnitt [Inhalt des Überwachungsprotokolls](#audit-log-contents) weiter unten in diesem Artikel beschrieben werden. Von den vom Cmdlet zurückgegebenen Feldern enthalten zwei Felder, **CmdletParameters** und **ModifiedProperties**, zusätzliche Informationen, die standardmäßig nicht zurückgegeben werden.
 
 Führen Sie die folgenden Schritte aus, um die Inhalte der Felder **CmdletParameters** und **ModifiedProperties** anzuzeigen.
 

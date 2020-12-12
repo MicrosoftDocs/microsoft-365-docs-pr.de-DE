@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: f3bd3c62-0477-48e4-b2b5-21e329d67985
 description: Erfahren Sie, wie Sie Microsoft zum Verwalten der DNS-Einträge Ihrer benutzerdefinierten Domäne bei Hostgator einrichten können.
-ms.openlocfilehash: 02052e98ba92c970a1e8bcc89c73df6946a6c472
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 34e7bbe3abc084185f72f4fef004ad891492ef3c
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646439"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658020"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-hostgator"></a>Ändern von Namenservern zum Einrichten von Microsoft 365 mit Hostgator
 
- **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen.
+ **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen.
   
 Befolgen Sie diese Anweisungen, wenn Microsoft Ihre DNS-Einträge für Sie verwalten soll. (Wenn es Ihnen lieber ist, können Sie [alle Ihre Microsoft-DNS-Einträge bei Hostgator verwalten](create-dns-records-at-hostgator.md).)
   
@@ -54,7 +54,7 @@ Führen Sie die folgenden Schritte aus, um Ihre Domäne und Hostingkonten zu ver
     
     ![Hostgator-BP-Redelegate-1-2](../../media/2c2f8530-26a1-4e62-bb04-b3874bc1cf36.png)
   
-4. Wählen Sie auf der Seite **Domänenübersicht** im Bereich **Name Servers** die Option **Change**aus.
+4. Wählen Sie auf der Seite **Domänenübersicht** im Bereich **Name Servers** die Option **Change** aus.
     
     ![Hostgator-BP-Redelegate-1-3](../../media/c8979d8a-ee96-4064-a8df-c5b01054cb16.png)
   
@@ -62,7 +62,7 @@ Führen Sie die folgenden Schritte aus, um Ihre Domäne und Hostingkonten zu ver
     
     ![Hostgator-BP-Redelegate-1-4](../../media/4cf61060-1e8a-4758-9892-32059ffc90c2.png)
   
-6. Wählen Sie **Namenserver speichern**aus.
+6. Wählen Sie **Namenserver speichern** aus.
     
     ![Hostgator-BP-Redelegate-1-9](../../media/b52a825a-6d54-49ba-87c8-52f770fdfa0c.png)
   
@@ -83,7 +83,7 @@ Bevor Sie Ihre Domäne mit Microsoft verwenden können, müssen wir uns vergewis
     > [!IMPORTANT]
     > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Um zu beginnen, können Sie entweder ein Hostingkonto von Hostgator erwerben oder [die Namenservereinträge (NS) Ihrer Domäne so ändern](#change-your-domains-nameserver-ns-records) , dass Sie auf Microsoft verweist. 
   
-2. Wählen Sie auf der Seite **Systemsteuerung** im Bereich **Domänen** die Option **Erweiterter DNS-Zonen-Editor**aus.
+2. Wählen Sie auf der Seite **Systemsteuerung** im Bereich **Domänen** die Option **Erweiterter DNS-Zonen-Editor** aus.
     
     (Möglicherweise müssen Sie nach unten scrollen.) 
     
@@ -94,7 +94,7 @@ Bevor Sie Ihre Domäne mit Microsoft verwenden können, müssen wir uns vergewis
 |||||
 |:-----|:-----|:-----|:-----|
 |**Name** <br/> |**TTL** <br/> |**Type** <br/> |**TXT Data** <br/> |
-|Verwenden Sie Ihren  *Domänennamen*  (z. B. "fourthcoffee.com").  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |1  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen Wert für **Ziel- oder Verweisadresse** aus der Tabelle in [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md).     <br/>  |
+|Verwenden Sie Ihren  *Domänennamen*  (z. B. "fourthcoffee.com").  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |1   <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen Wert für **Ziel- oder Verweisadresse** aus der Tabelle in [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md).     <br/>  |
    
 4. Wählen Sie **Add Record** (Eintrag hinzufügen) aus.
     
@@ -124,7 +124,7 @@ Um die Einrichtung Ihrer Domäne bei Microsoft abzuschließen, ändern Sie die N
 > Wenn Sie die NS-Einträge Ihrer Domäne so ändern, dass Sie auf die Microsoft Name-Server verweist, sind alle Dienste betroffen, die derzeit Ihrer Domäne zugeordnet sind. Beispielsweise werden alle e-Mails, die an Ihre Domäne gesendet werden (wie Rob@ *your_domain*  . com), nach dem Ausführen dieser Änderung an Microsoft weitergeleitet.
   
 > [!IMPORTANT]
-> Im folgenden Verfahren wird gezeigt, wie Sie alle anderen unerwünschten Namenserver aus der Liste löschen und wie Sie die richtigen Nameserver hinzufügen, wenn Sie noch nicht aufgeführt sind. Wenn Sie die Schritte in diesem Abschnitt abgeschlossen haben, sollten Sie die folgenden vier Namenserver finden:  **ns1.BDM.microsoftonline.com**, **ns2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com**und **NS4.BDM.microsoftonline.com**.
+> Im folgenden Verfahren wird gezeigt, wie Sie alle anderen unerwünschten Namenserver aus der Liste löschen und wie Sie die richtigen Nameserver hinzufügen, wenn Sie noch nicht aufgeführt sind. Wenn Sie die Schritte in diesem Abschnitt abgeschlossen haben, sollten Sie die folgenden vier Namenserver finden:  **ns1.BDM.microsoftonline.com**, **ns2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com** und **NS4.BDM.microsoftonline.com**.
   
 1. Im ersten Schritt navigieren Sie über [diesen Link](https://portal.hostgator.com/domain/manage) zur Kundenportalseite bei Hostgator. Sie werden aufgefordert, sich anzumelden.
     
@@ -138,7 +138,7 @@ Um die Einrichtung Ihrer Domäne bei Microsoft abzuschließen, ändern Sie die N
     
     ![Hostgator-BP-Redelegate-1-2](../../media/2c2f8530-26a1-4e62-bb04-b3874bc1cf36.png)
   
-4. Wählen Sie auf der Seite **Domain Overview** im Bereich **Name Servers** die Option **Change**aus.
+4. Wählen Sie auf der Seite **Domain Overview** im Bereich **Name Servers** die Option **Change** aus.
     
     ![Hostgator-BP-Redelegate-1-3](../../media/c8979d8a-ee96-4064-a8df-c5b01054cb16.png)
   
@@ -150,7 +150,7 @@ Um die Einrichtung Ihrer Domäne bei Microsoft abzuschließen, ändern Sie die N
     
     ![Hostgator-BP-Redelegate-1-5](../../media/5b73ae32-f26e-48aa-b5ad-6da20f1c491a.png)
   
-7.   **Vorsicht**: Befolgen Sie diese Schritte nur, wenn Sie andere Namenserver als die vier richtigen Namenserver haben. (Das heißt, löschen Sie nur aktuelle Namenserver, die  *nicht* **ns1.BDM.microsoftonline.com**, **ns2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com**oder **NS4.BDM.microsoftonline.com**sind.)
+7.   **Vorsicht**: Befolgen Sie diese Schritte nur, wenn Sie andere Namenserver als die vier richtigen Namenserver haben. (Das heißt, löschen Sie nur aktuelle Namenserver, die  *nicht* **ns1.BDM.microsoftonline.com**, **ns2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com** oder **NS4.BDM.microsoftonline.com** sind.)
   
         Während Sie sich noch auf der Seite **Name Servers** für Ihre Domäne befinden, löschen Sie in der Liste der Nameserver jeden Nameserver in dieser Liste, indem Sie ihn auswählen und dann die **ENTF**-TASTE auf der Tastatur drücken. 
     
@@ -175,7 +175,7 @@ Um die Einrichtung Ihrer Domäne bei Microsoft abzuschließen, ändern Sie die N
     
     ![Hostgator-BP-Redelegate-1-7-2](../../media/92159a39-e498-4220-9b0d-ae2e718c7fb9.png)
   
-10. Wählen Sie **Namenserver speichern**aus.
+10. Wählen Sie **Namenserver speichern** aus.
     
     ![Hostgator-BP-Redelegate-1-8](../../media/bd6b0dfa-5d39-4805-970d-7ab153cff117.png)
   

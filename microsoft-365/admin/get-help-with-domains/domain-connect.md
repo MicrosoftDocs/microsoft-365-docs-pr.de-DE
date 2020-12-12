@@ -22,16 +22,16 @@ search.appverid:
 - MOE150
 ms.assetid: ec6f4bd8-5996-4505-ba68-afaf8a141fb9
 description: In diesem Artikel erfahren Sie, wie Sie mit Domänen verbindungsfähigen Registrierungsstellen arbeiten und Ihre Domäne zu Microsoft 365 hinzufügen.
-ms.openlocfilehash: e907317ec5b606c2fe73232a73c9abdfce26feea
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 109255d82100e636e3472242866a519ff64a9e54
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645347"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49655612"
 ---
 # <a name="using-domain-connect"></a>Verwenden von Domäne Connect
 
- **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen.
+ **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen.
   
 Mit [Domänen Verbindungs](https://www.domainconnect.org/) fähigen Registrierungsstellen können Sie Ihre Domäne in einem dreistufigen Prozess, der Minuten dauert, zu Microsoft 365 hinzufügen. 
   

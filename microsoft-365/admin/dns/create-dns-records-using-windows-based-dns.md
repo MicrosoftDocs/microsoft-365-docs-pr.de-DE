@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: Hier erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter Windows-basiertem DNS für Microsoft einrichten.
-ms.openlocfilehash: 471aa0323bd59b09c672431ef39bb33f5c89b555
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 8202ffe10b4a0ff9c94d863d92fc55c47ebb38d3
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645575"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656843"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Erstellen von DNS-Einträgen für Microsoft mit Windows-basiertem DNS
 
- **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
+ **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
    
 Wenn Sie Ihre eigenen DNS-Einträge mit Windows-basiertem DNS hosten, führen Sie die in diesem Artikel aufgeführten Schritte aus, um die Einträge für E-Mail, Skype for Business Online und andere Dienste einzurichten.
   
@@ -39,7 +39,7 @@ Um zu beginnen, müssen Sie [Ihre DNS-Einträge in Windows-basiertem DNS Suchen]
 Probleme mit dem Nachrichtenfluss oder anderen Problemen nach dem Hinzufügen von DNS-Einträgen finden Sie unter [Problembehandlung bei Problemen nach dem Ändern des Domänennamens oder der DNS-Einträge](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="find-your-dns-records-in-windows-based-dns"></a>Suche nach Ihren DNS-Einträgen in einem Windows-basierten DNS
-<a name="BKMK_find_your_dns_1"> </a> Wechseln Sie zu der Seite mit den DNS-Einträgen für Ihre Domäne. Wenn Sie in Windows Server 2008 arbeiten, wechseln Sie zu **Start**  >  **Ausführen**. Wenn Sie in Windows Server 2012 arbeiten, drücken Sie die Windows-Taste und **r**. Geben Sie **dnsmgmnt. msc**ein, und wählen Sie dann **OK**aus. Erweitern Sie im DNS-Manager den Knoten ** \<DNS server name\> \> Forward-Lookupzonen  **. Wählen Sie Ihre Domäne aus. Jetzt können Sie die DNS-Einträge erstellen.
+<a name="BKMK_find_your_dns_1"></a> Wechseln Sie zu der Seite mit den DNS-Einträgen für Ihre Domäne. Wenn Sie in Windows Server 2008 arbeiten, wechseln Sie zu **Start**  >  **Ausführen**. Wenn Sie in Windows Server 2012 arbeiten, drücken Sie die Windows-Taste und **r**. Geben Sie **dnsmgmnt. msc** ein, und wählen Sie dann **OK** aus. Erweitern Sie im DNS-Manager den Knoten **\<DNS server name\> \> Forward-Lookupzonen**. Wählen Sie Ihre Domäne aus. Jetzt können Sie die DNS-Einträge erstellen.
    
 ## <a name="add-mx-record"></a>Hinzufügen eines MX-Eintrags
 <a name="BKMK_add_MX"> </a>
@@ -52,8 +52,8 @@ Fügen Sie einen MX-Eintrag hinzu, damit e-Mails für Ihre Domäne an Microsoft 
     - Hostname:  
     - @Address: Fügen Sie hier den Punkt-zu-Adresse-Wert ein, den Sie soeben von Microsoft kopiert haben.  
     - Präferenz 
-- Wählen Sie **Save Changes**aus.
-- Entfernen Sie veraltete MX-Einträge. Wenn Sie über eine alte MX-Einträge für diese Domäne verfügen, die e-Mails an eine andere Stelle weiterleiten, aktivieren Sie das Kontrollkästchen neben jedem alten Datensatz, und wählen Sie dann **Löschen**  >  **OK**aus. 
+- Wählen Sie **Save Changes** aus.
+- Entfernen Sie veraltete MX-Einträge. Wenn Sie über eine alte MX-Einträge für diese Domäne verfügen, die e-Mails an eine andere Stelle weiterleiten, aktivieren Sie das Kontrollkästchen neben jedem alten Datensatz, und wählen Sie dann **Löschen**  >  **OK** aus. 
    
 ## <a name="add-cname-records"></a>Hinzufügen von CNAME-Einträgen
 <a name="BKMK_add_CNAME"> </a>
@@ -68,7 +68,7 @@ Fügen Sie die für Microsoft erforderlichen CNAME-Einträge hinzu. Wenn zusätz
     - Hostname: AutoErmittlung
     - Typ: 
     - Cnameadresse: autodiscover.Outlook.com
-- Wählen Sie **O**K aus.
+- Wählen Sie **O** K aus.
 
 Hinzufügen des CNAME-Eintrags für SIP 
 - Wechseln Sie auf der Seite DNS-Manager für die Domäne zu **Aktion** \> **CNAME (CNAME)**. 
@@ -134,7 +134,7 @@ Fügen Sie die beiden SRV-Einträge hinzu, die für Microsoft erforderlich sind.
 
 Hinzufügen des SIP SRV-Eintrags für Skype for Business Online-Webkonferenzen  <br/> 
 -  Wechseln Sie auf der Seite "DNS-Manager" für Ihre Domäne zu **Aktion** \> **Weitere neue Einträge**. 
--   Wählen Sie im Fenster **Ressourceneintragstyp** die Option **Dienststandort (SRV)** aus, und wählen Sie dann **Datensatz erstellen**aus. 
+-   Wählen Sie im Fenster **Ressourceneintragstyp** die Option **Dienststandort (SRV)** aus, und wählen Sie dann **Datensatz erstellen** aus. 
 -   Stellen Sie im Dialogfeld **neuen Ressourceneintrag** sicher, dass die Felder auf genau die folgenden Werte festgelegt sind:  
     -  Dienst: _sip
     -  Protokoll: _tls
@@ -147,7 +147,7 @@ Hinzufügen des SIP SRV-Eintrags für Skype for Business Online-Webkonferenzen  
 
 Hinzufügen des SIP SRV-Eintrags für den Skype for Business Online-Partnerverbund  
 -  Wechseln Sie auf der Seite "DNS-Manager" für Ihre Domäne zu **Aktion** \> **Weitere neue Einträge**.  
--  Wählen Sie im Fenster **Ressourceneintragstyp** die Option **Dienststandort (SRV)** aus, und wählen Sie dann **Datensatz erstellen**aus. 
+-  Wählen Sie im Fenster **Ressourceneintragstyp** die Option **Dienststandort (SRV)** aus, und wählen Sie dann **Datensatz erstellen** aus. 
 -   Stellen Sie im Dialogfeld **neuen Ressourceneintrag** sicher, dass die Felder auf genau die folgenden Werte festgelegt sind:  
     -  Dienst: _sipfederationtls
     -  Protokoll: _tcp
@@ -168,14 +168,14 @@ Bevor Sie die DNS-Einträge zum Einrichten Ihrer Microsoft-Dienste hinzufügen, 
 
 1. Sammeln von Informationen von Microsoft.  <br/> 
 2. Wechseln Sie im Admin Center zur Seite **Einstellungen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domänen</a>. 
-3. Wählen Sie auf der Seite **Domänen** in der Spalte **Aktionen** für die Domäne, die Sie überprüfen möchten, **Setup starten**aus. 
-4. Wählen Sie auf der Seite **Domäne zu Microsoft hinzufügen** die Option **Schritt 1 starten**aus. 
-5. Wählen Sie auf der Seite **bestätigen, dass Sie Ihre Domäne besitzen** im **Abschnitt Anweisungen zum Ausführen dieses Schritts mit** der Dropdownliste die Option **Allgemeine Anweisungen**aus. 
+3. Wählen Sie auf der Seite **Domänen** in der Spalte **Aktionen** für die Domäne, die Sie überprüfen möchten, **Setup starten** aus. 
+4. Wählen Sie auf der Seite **Domäne zu Microsoft hinzufügen** die Option **Schritt 1 starten** aus. 
+5. Wählen Sie auf der Seite **bestätigen, dass Sie Ihre Domäne besitzen** im **Abschnitt Anweisungen zum Ausführen dieses Schritts mit** der Dropdownliste die Option **Allgemeine Anweisungen** aus. 
 6. Kopieren Sie in der Tabelle den Wert unter Ziel oder verweisende Adresse. Sie benötigen ihn für den nächsten Schritt. Es wird empfohlen, diesen Wert zu kopieren und einzufügen, damit alle Abstände korrekt übernommen werden.
 
 Hinzufügen eines TXT-Eintrags 
 -  Wechseln Sie auf der Seite "DNS-Manager" für Ihre Domäne zu **Aktions** \> **Text (txt)**. 
--   Wählen Sie im Dialogfeld **neuer Ressourceneintrag** die Option **Bearbeiten**aus.  
+-   Wählen Sie im Dialogfeld **neuer Ressourceneintrag** die Option **Bearbeiten** aus.  
 -  Stellen Sie im Dialogfeld **neuer Ressourceneintrag** im Bereich **Benutzerdefinierte Host Namen** sicher, dass die Felder auf genau die folgenden Werte festgelegt sind. 
 
 > [!IMPORTANT] 
@@ -184,7 +184,7 @@ Hinzufügen eines TXT-Eintrags
 - Hostname: @
 - Typ: txt
 - Address: Fügen Sie den Ziel-oder Punkt-zu-Adresse-Wert ein, den Sie hier soeben von Microsoft kopiert haben.  
-- Wählen Sie **OK**  >  **Fertig**aus.
+- Wählen Sie **OK**  >  **Fertig** aus.
 
 Überprüfen Sie Ihre Domäne in Microsoft.  
 > [!IMPORTANT]
@@ -192,8 +192,8 @@ Hinzufügen eines TXT-Eintrags
 
 - Gehen Sie zurück zu Microsoft, und führen Sie die folgenden Schritte aus, um eine Überprüfungs Überprüfung anzufordern. Bei der Überprüfung wird nach dem TXT-Eintrag gesucht, den Sie im vorherigen Schritt hinzugefügt haben. Wenn der richtige TXT-Eintrag gefunden wird, ist die Domäne überprüft.  
 1. Wechseln Sie im Admin Center zur Seite **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domänen</a> .
-2. Wählen Sie auf der Seite **Domänen** in der Spalte **Aktion** für die Domäne, die Sie überprüfen möchten, **Setup starten**aus. 
-3. Wählen Sie auf der Seite **bestätigen, dass Sie Ihre Domäne besitzen** die Option **fertig, jetzt überprüfen**aus, und wählen Sie dann im Dialogfeld Bestätigung die Option **Fertig stellen**aus. 
+2. Wählen Sie auf der Seite **Domänen** in der Spalte **Aktion** für die Domäne, die Sie überprüfen möchten, **Setup starten** aus. 
+3. Wählen Sie auf der Seite **bestätigen, dass Sie Ihre Domäne besitzen** die Option **fertig, jetzt überprüfen** aus, und wählen Sie dann im Dialogfeld Bestätigung die Option **Fertig stellen** aus. 
    
 > [!NOTE]
 >  Normalerweise dauert es ungefähr 15 Minuten, bis DNS-Änderungen wirksam werden. Es kann jedoch gelegentlich länger dauern, bis eine von Ihnen vorgenommene Änderung im Internet im DNS-System aktualisiert wurde. Wenn nach dem Hinzufügen von DNS-Einträgen Probleme mit dem E-Mail-Fluss oder andere Probleme auftreten, lesen Sie [Behandeln von Problemen nach Änderung des Domänennamens oder von DNS-Einträgen](../get-help-with-domains/find-and-fix-issues.md). 

@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-office365
 - seo-marvel-apr2020
 description: Administratoren können sich über das Feature "sichere Anlagen" in Microsoft Defender für Office 365 informieren.
-ms.openlocfilehash: d38f95991a1d310e8a894a32e06b5891ebb498a9
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 07e44885a3813ce625c6a853f4070d644a392ded
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616680"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659197"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Sichere Anlagen in Microsoft Defender für Office 365
 
@@ -65,11 +65,11 @@ In diesem Abschnitt werden die Einstellungen in Richtlinien für sichere Anlagen
 
   |Option|Effekt|Verwenden Sie Folgendes, wenn Sie möchten:|
   |---|---|---|
-  |**Deaktivieren**|Anlagen werden nicht durch sichere Anlagen auf Schadsoftware überprüft. Nachrichten werden weiterhin durch [Antischadsoftware-Schutz in EoP](anti-malware-protection.md)auf Schadsoftware überprüft.|Deaktivieren Sie die Überprüfung für ausgewählte Empfänger. <p> Vermeiden Sie unnötige Verzögerungen beim Weiterleiten interner e-Mails. <p> **Diese Option wird für die meisten Benutzer nicht empfohlen. Sie sollten diese Option nur verwenden, um die Überprüfung sicherer Anlagen für Empfänger zu deaktivieren, die nur Nachrichten von vertrauenswürdigen Absendern empfangen.**|
+  |**Off**|Anlagen werden nicht durch sichere Anlagen auf Schadsoftware überprüft. Nachrichten werden weiterhin durch [Antischadsoftware-Schutz in EoP](anti-malware-protection.md)auf Schadsoftware überprüft.|Deaktivieren Sie die Überprüfung für ausgewählte Empfänger. <p> Vermeiden Sie unnötige Verzögerungen beim Weiterleiten interner e-Mails. <p> **Diese Option wird für die meisten Benutzer nicht empfohlen. Sie sollten diese Option nur verwenden, um die Überprüfung sicherer Anlagen für Empfänger zu deaktivieren, die nur Nachrichten von vertrauenswürdigen Absendern empfangen.**|
   |**Überwachen**|Sendet Nachrichten mit Anlagen und verfolgt anschließend, was mit erkannter Schadsoftware geschieht. <p> Die Zustellung sicherer Nachrichten verzögert sich möglicherweise aufgrund der Überprüfung sicherer Anlagen.|Sehen Sie, wo erkannte Schadsoftware in Ihrer Organisation vorkommt.|
   |**Block**|Verhindert, dass Nachrichten mit erkannten Schadsoftware-Anlagen zugestellt werden. <p> Nachrichten werden unter [Quarantäne](manage-quarantined-messages-and-files.md) gestellt, wobei nur Administratoren (nicht Endbenutzer) die Nachrichten überprüfen, freigeben oder löschen können. <p> Blockiert automatisch zukünftige Instanzen von Nachrichten und Anlagen. <p> Die Zustellung sicherer Nachrichten verzögert sich möglicherweise aufgrund der Überprüfung sicherer Anlagen.|Schützt Ihre Organisation vor wiederholten Angriffen mit denselben Schadsoftware-Anlagen. <p> Dies ist der Standardwert und der empfohlene Wert in standardmäßigen und strengen [vordefinierten Sicherheitsrichtlinien](preset-security-policies.md).|
   |**Replace**|Entfernt erkannte Schadsoftware-Anlagen. <p> Benachrichtigt Empfänger, dass Anlagen entfernt wurden. <p>  Nachrichten werden unter [Quarantäne](manage-quarantined-messages-and-files.md) gestellt, wobei nur Administratoren (nicht Endbenutzer) die Nachrichten überprüfen, freigeben oder löschen können. <p> Die Zustellung sicherer Nachrichten verzögert sich möglicherweise aufgrund der Überprüfung sicherer Anlagen.|Erhöhen der Sichtbarkeit für Empfänger, bei denen Anlagen aufgrund von erkannter Schadsoftware entfernt wurden|
-  |**Dynamische Zustellung**|Übermittelt Nachrichten sofort, ersetzt jedoch Anlagen durch Platzhalter, bis der Scan für sichere Anlagen abgeschlossen ist. <p> Ausführliche Informationen finden Sie im Abschnitt [dynamische Übermittlung in Richtlinien für sichere Anlagen](#dynamic-delivery-in-safe-attachments-policies) weiter unten in diesem Thema.|Vermeiden Sie Nachrichten Verzögerungen beim Schutz von Empfängern vor bösartigen Dateien. <p> Aktivieren Sie Empfänger, um Anlagen im abgesicherten Modus anzuzeigen, während die Überprüfung stattfindet.|
+  |**Dynamische Zustellung**|Übermittelt Nachrichten sofort, ersetzt jedoch Anlagen durch Platzhalter, bis der Scan für sichere Anlagen abgeschlossen ist. <p> Ausführliche Informationen finden Sie im Abschnitt [dynamische Übermittlung in Richtlinien für sichere Anlagen](#dynamic-delivery-in-safe-attachments-policies) weiter unten in diesem Artikel.|Vermeiden Sie Nachrichten Verzögerungen beim Schutz von Empfängern vor bösartigen Dateien. <p> Aktivieren Sie Empfänger, um Anlagen im abgesicherten Modus anzuzeigen, während die Überprüfung stattfindet.|
   |
 
 - **Anlage bei Erkennung umleiten: Aktivieren Sie Redirect** , und **Senden Sie die Anlage an die folgende e-Mail-Adresse**: zum **blockieren**, **überwachen** oder **ersetzen** von Nachrichten, die Schadsoftware-Anlagen enthalten, zur Analyse und Untersuchung an die angegebene interne oder externe e-Mail-Adresse senden.

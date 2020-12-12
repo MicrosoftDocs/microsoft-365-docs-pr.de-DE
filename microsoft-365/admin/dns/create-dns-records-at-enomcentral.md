@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: a6626053-a9c8-445b-81ee-eeb6672fae77
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter enomcentral für Microsoft einrichten.
-ms.openlocfilehash: c60c33f4be94e2f7719fdfc583500c6d1164991d
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: e6e05b987a893da582ea7fb062eafe421861b970
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646163"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658111"
 ---
 # <a name="create-dns-records-at-enomcentral-for-microsoft"></a>Erstellen von DNS-Einträgen bei eNomCentral für Microsoft
 
- **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen.
+ **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen.
 
 Wenn "eNomCentral" Ihr DNS-Hostinganbieter ist, führen Sie die in diesem Artikel aufgeführten Schritte aus, um Ihre Domäne zu überprüfen und DNS-Einträge für E-Mail, Skype for Business Online und andere Dienste einzurichten.
 
@@ -53,7 +53,7 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
 
    ![eNom-BP-configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. Wählen Sie unter **Meine Domänen**den Namen der Domäne aus, die Sie bearbeiten möchten.
+2. Wählen Sie unter **Meine Domänen** den Namen der Domäne aus, die Sie bearbeiten möchten.
 
    ![eNom-BP-configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
@@ -71,7 +71,7 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
 
    ![eNom-BP-Verify-1-2](../../media/e1f95529-46a6-40f9-9709-9fe66f373bcf.png)
 
-5. Wählen Sie **Speichern**aus.
+5. Wählen Sie **Speichern** aus.
 
    ![eNom-BP-Verify-1-3](../../media/d6277ab0-5d03-44e0-968f-fd5de1905423.png)
 
@@ -101,7 +101,7 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
 
    ![eNom-BP-configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. Wählen Sie unter **Meine Domänen**den Namen der Domäne aus, die Sie bearbeiten möchten.
+2. Wählen Sie unter **Meine Domänen** den Namen der Domäne aus, die Sie bearbeiten möchten.
 
    ![eNom-BP-configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
@@ -121,7 +121,7 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
 
    ![eNom-BP-configure-2-1](../../media/c32e8954-8209-4f77-a3a8-4b7aeea325d5.png)
 
-6. Wählen Sie **Speichern**aus.
+6. Wählen Sie **Speichern** aus.
 
    ![eNom-BP-configure-2-2](../../media/cf3058ea-9d30-4747-8cf0-2bc13d5ec6be.png)
 
@@ -129,7 +129,7 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
 
    ![eNom-BP-configure-2-3](../../media/5017ed03-ca76-4c5c-93a7-84ffe24125dc.png)
 
-8. Wählen Sie **Delete checked**aus.
+8. Wählen Sie **Delete checked** aus.
 
    ![eNom-BP-configure-2-4](../../media/072dc039-bddb-4c1f-bb44-5660e77f14b0.png)
 
@@ -142,7 +142,7 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
 
    ![eNom-BP-configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. Wählen Sie unter **Meine Domänen**den Namen der Domäne aus, die Sie bearbeiten möchten.
+2. Wählen Sie unter **Meine Domänen** den Namen der Domäne aus, die Sie bearbeiten möchten.
 
    ![eNom-BP-configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
@@ -150,7 +150,7 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
 
    ![eNom-BP-configure-1-5](../../media/c92c514c-8166-4cba-97e3-ee1d9847d255.png)
 
-4. Wählen Sie **neue Zeile**aus.
+4. Wählen Sie **neue Zeile** aus.
 
    ![eNom-BP-configure-3-1](../../media/a30f0a88-7b09-411e-9133-e7965bcf1de0.png)
 
@@ -168,7 +168,7 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
 
    ![eNom-BP-configure-3-2](../../media/672371c0-51af-44ba-bb18-80286b7676c1.png)
 
-6. Wählen Sie **Speichern**aus.
+6. Wählen Sie **Speichern** aus.
 
    ![eNom-BP-configure-3-3](../../media/027b57ce-5699-408b-993b-e46a9ac31090.png)
 
@@ -184,7 +184,7 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
 
    ![eNom-BP-configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. Wählen Sie unter **Meine Domänen**den Namen der Domäne aus, die Sie bearbeiten möchten.
+2. Wählen Sie unter **Meine Domänen** den Namen der Domäne aus, die Sie bearbeiten möchten.
 
    ![eNom-BP-configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
@@ -202,7 +202,7 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
 
    ![eNom-BP-configure-4-1](../../media/64c68697-258d-4044-84b1-c28f4a402e3b.png)
 
-5. Wählen Sie **Speichern**aus.
+5. Wählen Sie **Speichern** aus.
 
    ![eNom-BP-configure-4-2](../../media/89f4effa-349e-4734-96a5-cd80b0cecd60.png)
 
@@ -215,7 +215,7 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
 
    ![eNom-BP-configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. Wählen Sie unter **Meine Domänen**den Namen der Domäne aus, die Sie bearbeiten möchten.
+2. Wählen Sie unter **Meine Domänen** den Namen der Domäne aus, die Sie bearbeiten möchten.
 
    ![eNom-BP-configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
@@ -223,7 +223,7 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
 
    ![eNom-BP-configure-1-5](../../media/c92c514c-8166-4cba-97e3-ee1d9847d255.png)
 
-4. Wählen Sie rechts neben **neue Zeile** **SRV oder SPF-Eintrag hinzufügen**aus.
+4. Wählen Sie rechts neben **neue Zeile** **SRV oder SPF-Eintrag hinzufügen** aus.
 
    ![eNom-BP-configure-5-1](../../media/c73c154d-5aa0-41ef-be25-f43129eb178c.png)
 
@@ -231,8 +231,8 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
 
    |Dienst|Protokoll|Priorität|Schriftbreite|Port|Target (Hostname)|
    |---|---|---|---|---|---|
-   |_sip|_tls|100|1|443|sipdir.online.lync.com.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.**|
-   |_sipfederationtls|_tcp|100|1|5061|sipfed.online.lync.com.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.**|
+   |_sip|_tls|100|1 |443|sipdir.online.lync.com.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.**|
+   |_sipfederationtls|_tcp|100|1 |5061|sipfed.online.lync.com.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.**|
 
    ![eNom-BP-configure-5-2](../../media/4d478f40-780f-43b9-940b-712b09da8c63.png)
 

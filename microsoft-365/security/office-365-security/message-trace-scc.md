@@ -13,12 +13,12 @@ ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können die Nachrichtenablaufverfolgung im Security & Compliance Center verwenden, um herauszufinden, was mit Nachrichten passiert ist.
-ms.openlocfilehash: 46aa454ff709e9b17c3b18992757a9a4c3a51247
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 455a1e22ff67ec47e1a6292c962d2a276ec54a64
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616752"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658988"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Nachrichtenablaufverfolgung im Security & Compliance Center
 
@@ -85,7 +85,7 @@ Der Standardwert ist **2 Tage**, aber Sie können Datum/Uhrzeit Bereiche von bis
 
   Für mindestens 10 Tage sind die Ergebnisse sofort als **Zusammenfassungs** Bericht verfügbar. Wenn Sie einen Zeitbereich angeben, der sogar etwas größer als 10 Tage ist, werden die Ergebnisse verzögert, da Sie nur als herunterladbare CSV-Datei ( **Erweiterte Zusammenfassung** oder **Erweiterte** Berichte) verfügbar sind.
 
-  Weitere Informationen zu den verschiedenen Berichtstypen finden Sie im Abschnitt [auswählen des Berichtstyps](#choose-report-type) in diesem Thema.
+  Weitere Informationen zu den verschiedenen Berichtstypen finden Sie im Abschnitt [auswählen des Berichtstyps](#choose-report-type) in diesem Artikel.
 
   **Hinweis**: verbesserte Zusammenfassung und erweiterte Berichte werden mithilfe von archivierten Nachrichtenablauf Verfolgungsdaten vorbereitet, und es kann bis zu mehreren Stunden dauern, bis Ihr Bericht zum Download verfügbar ist. Je nachdem, wie viele andere Administratoren auch Berichtsanforderungen zur gleichen Zeit übermittelt haben, wird möglicherweise auch eine Verzögerung festgestellt, bevor die Verarbeitung für Ihre in die Warteschlange stehende Anforderung beginnt.
 
@@ -185,7 +185,7 @@ Zugehörige Nachrichtendatensätze sind Datensätze, die dieselbe Nachrichten-ID
 
 Nachdem Sie das Kontrollkästchen einer Zeile markiert haben, können Sie nach verwandten Datensätzen für die Nachricht suchen, indem Sie auf die Schaltfläche **Verwandte Suchen** klicken, oder indem Sie **Weitere Optionen** ![ Weitere ](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **Verwandte Einträge für diese Nachricht suchen** auswählen.
 
-Weitere Informationen zur Nachrichten-ID finden Sie weiter oben in diesem Thema im Abschnitt Nachrichten-ID.
+Weitere Informationen zur Nachrichten-ID finden Sie im Abschnitt Nachrichten-ID weiter oben in diesem Artikel.
 
 #### <a name="message-trace-details"></a>Details zur Nachrichtenablaufverfolgung
 
@@ -225,7 +225,7 @@ Die Nachrichtenablauf Verfolgungs Details enthalten die folgenden zusätzlichen 
 
 - **Weitere Informationen**: Dieser Abschnitt enthält die folgenden Details:
 
-  - Nach **richten-ID**: dieser Wert wird im Abschnitt nach [richten-ID](#message-id) weiter oben in diesem Thema beschrieben. Beispiel: `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
+  - Nach **richten-ID**: dieser Wert wird im Abschnitt nach [richten-ID](#message-id) weiter oben in diesem Artikel beschrieben. Beispiel: `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
 
   - **Nachrichtengröße**
 
@@ -241,7 +241,7 @@ Verfügbare (abgeschlossene) erweiterte Zusammenfassungsberichte stehen im Absch
 
 - **sender_address**: die e-Mail-Adresse des Absenders (*Alias* @ *Domäne*).
 
-- **Recipient_status**: der Status der Zustellung der Nachricht an den Empfänger. Wenn die Nachricht an mehrere Empfänger gesendet wurde, werden alle Empfänger und der entsprechende Status für jeden im Format: angezeigt \<*email address*\> ## \<*status*\> . Beispiel:
+- **Recipient_status**: der Status der Zustellung der Nachricht an den Empfänger. Wenn die Nachricht an mehrere Empfänger gesendet wurde, werden alle Empfänger und der entsprechende Status für jeden im Format: angezeigt \<*email address*\> ## \<*status*\> . Zum Beispiel:
 
   - **# #Receive, Send bedeutet,** dass die Nachricht vom Dienst empfangen und an das vorgesehene Ziel gesendet wurde.
 
@@ -253,7 +253,7 @@ Verfügbare (abgeschlossene) erweiterte Zusammenfassungsberichte stehen im Absch
 
 - **total_bytes**: die Größe der Nachricht in Bytes, einschließlich Anlagen.
 
-- **message_id**: dieser Wert wird im Abschnitt nach [richten-ID](#message-id) weiter oben in diesem Thema beschrieben. Beispiel: `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
+- **message_id**: dieser Wert wird im Abschnitt nach [richten-ID](#message-id) weiter oben in diesem Artikel beschrieben. Beispiel: `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
 
 - **network_message_id**: ein eindeutiger Nachrichten-ID-Wert, der über alle Kopien der Nachricht, die aufgrund von Verzweigung oder Verteilergruppenerweiterung erstellt werden können, gespeichert wird. Ein Beispielwert ist `1341ac7b13fb42ab4d4408cf7f55890f` .
 
@@ -279,13 +279,13 @@ Verfügbare (abgeschlossene) Erweiterte Berichte stehen im Abschnitt zum **Herun
 
 - **server_hostname**: der Hostname oder der vollqualifizierte Domänenname des Zielservers.
 
-- **source_context**: zusätzliche Informationen, die dem Feld **Quelle** zugeordnet sind. Beispiel:
+- **source_context**: zusätzliche Informationen, die dem Feld **Quelle** zugeordnet sind. Zum Beispiel:
 
   - `Protocol Filter Agent`
 
   - `3489061114359050000`
 
-- **Quelle**: die Exchange Online Komponente, die für das Ereignis verantwortlich ist. Beispiel:
+- **Quelle**: die Exchange Online Komponente, die für das Ereignis verantwortlich ist. Zum Beispiel:
 
   - `AGENT`
 
@@ -303,7 +303,7 @@ Verfügbare (abgeschlossene) Erweiterte Berichte stehen im Abschnitt zum **Herun
 
 - **related_recipient_address**: wird mit-,-und-Ereignissen verwendet, `EXPAND` `REDIRECT` `RESOLVE` um andere Empfänger-e-Mail-Adressen anzuzeigen, die der Nachricht zugeordnet sind.
 
-- **Referenz**: Dieses Feld enthält zusätzliche Informationen für bestimmte Ereignistypen. Beispiel:
+- **Referenz**: Dieses Feld enthält zusätzliche Informationen für bestimmte Ereignistypen. Zum Beispiel:
 
   - **DSN**: enthält den Berichtslink, bei dem es sich um den **message_id** Wert der zugehörigen Benachrichtigung über den Zustellungsstatus (auch als DSN, Unzustellbarkeitsbericht, NDR oder Bounce-Nachricht bezeichnet) handelt, wenn nach diesem Ereignis ein DSN generiert wird. Wenn es sich um eine DSN-Nachricht handelt, enthält dieses Feld den **message_id** Wert der ursprünglichen Nachricht, für die der DSN generiert wurde.
 
@@ -321,7 +321,7 @@ Verfügbare (abgeschlossene) Erweiterte Berichte stehen im Abschnitt zum **Herun
 
 - **return_path**: die Absender-e-Mail-Adresse, die durch den Befehl **Mail from** angegeben wurde, der die Nachricht gesendet hat. Obwohl dieses Feld nie leer ist, kann es den Wert der NULL-Absenderadresse darstellen, dargestellt als `<>` .
 
-- **message_info**: zusätzliche Informationen zur Nachricht. Beispiel:
+- **message_info**: zusätzliche Informationen zur Nachricht. Zum Beispiel:
 
   - Der Nachrichtenursprung Datum-Uhrzeit in UTC für `DELIVER` und `SEND` Ereignisse. Das Datum-Uhrzeit der Erstellung ist die Uhrzeit, zu der die Nachricht zuerst in die Exchange Online Organisation eingegeben wurde. Die UTC-Datum-Uhrzeit wird im ISO 8601-Datum-Uhrzeit-Format dargestellt: `yyyy-mm-ddThh:mm:ss.fffZ` , wobei `yyyy` = year, `mm` = Month, `dd` = Day, `T` den Anfang der Zeitkomponente angibt, `hh` = Hour, `mm` = Minute, `ss` = Second, `fff` = Brüche einer Sekunde, und `Z` `Zulu` eine andere Möglichkeit zum bezeichnen von UTC darstellt.
 

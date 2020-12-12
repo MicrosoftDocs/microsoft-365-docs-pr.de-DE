@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 34e57a00-2a7d-469c-beec-089423f18369
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter dyn.com für Microsoft einrichten.
-ms.openlocfilehash: 91dbd3fbde8417764a01eb285b267f3981b2f139
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d1b77d6b4f38dd3e0979f448a77b293564841f45
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646139"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657936"
 ---
 # <a name="create-dns-records-at-dyncom-for-microsoft"></a>Erstellen von DNS-Einträgen bei dyn.com für Microsoft
 
- **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
+ **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
   
 Wenn Dyn.com Ihr DNS-Hostinganbieter ist, führen Sie die in diesem Artikel aufgeführten Schritte aus, um Ihre Domäne zu überprüfen und DNS-Einträge für E-Mail, Skype for Business Online und andere Dienste einzurichten.
  
@@ -48,9 +48,9 @@ Wenn Dyn.com Ihr DNS-Hostinganbieter ist, führen Sie die in diesem Artikel aufg
   
 2. Wählen Sie auf der Seite **Dienste auf Zonenebene** **dyn Standard-DNS-Dienst** für die Domäne aus, die Sie bearbeiten möchten. 
     
-3. Wählen Sie auf der Seite **DNS** für Ihre Domäne die Option **Einstellungen**aus.
+3. Wählen Sie auf der Seite **DNS** für Ihre Domäne die Option **Einstellungen** aus.
     
-4. Wählen Sie **Expert-Schnittstelle aktivieren**aus.
+4. Wählen Sie **Expert-Schnittstelle aktivieren** aus.
     
 5. In the **Add DNS Record** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -62,7 +62,7 @@ Wenn Dyn.com Ihr DNS-Hostinganbieter ist, führen Sie die in diesem Artikel aufg
        
    ![Dyn-BP-Verify-1-1](../../media/b3730b15-a313-4b4c-b91e-646eebb649e8.png)
   
-6. Wählen Sie **Create Record**aus.
+6. Wählen Sie **Create Record** aus.
     
     ![Dyn-BP-Verify-1-2](../../media/8b63b4ee-dbd7-44a7-b1e6-c6892b02f13e.png)
   
@@ -99,9 +99,9 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
   
 2. Wählen Sie auf der Seite **Dienste auf Zonenebene** **dyn Standard-DNS-Dienst** für die Domäne aus, die Sie bearbeiten möchten. 
     
-3. Wählen Sie auf der Seite DNS für Ihre Domäne die Option **Einstellungen**aus.
+3. Wählen Sie auf der Seite DNS für Ihre Domäne die Option **Einstellungen** aus.
     
-4. Wählen Sie **Expert-Schnittstelle aktivieren**aus.
+4. Wählen Sie **Expert-Schnittstelle aktivieren** aus.
     
 5. In the **Add DNS Record** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -113,7 +113,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
    
     ![Dyn-BP-configure-2-1](../../media/62ac77b7-c84d-426d-9ec4-a28d6479ad04.png)
   
-6. Wählen Sie **Create Record**aus.
+6. Wählen Sie **Create Record** aus.
     
     ![Dyn-BP-Configure-2-2](../../media/e84e2cca-75e3-4584-8a98-f2f89cb71bd3.png)
   
@@ -121,7 +121,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     ![Dyn-BP-Configure-2-3](../../media/f24f02cc-c0b7-42cf-a2ff-4d0fc203e4de.png)
   
-8. Wählen Sie **Änderungen übernehmen**aus.
+8. Wählen Sie **Änderungen übernehmen** aus.
     
     ![Dyn-BP-Configure-2-4](../../media/0cc23c2b-b6f2-4f58-af20-4c6506de7b43.png)
   
@@ -134,9 +134,9 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
   
 2. Wählen Sie auf der Seite **Dienste auf Zonenebene** **dyn Standard-DNS-Dienst** für die Domäne aus, die Sie bearbeiten möchten. 
     
-3. Wählen Sie auf der Seite **DNS** für Ihre Domäne die Option **Einstellungen**aus.
+3. Wählen Sie auf der Seite **DNS** für Ihre Domäne die Option **Einstellungen** aus.
     
-4. Wählen Sie **Expert-Schnittstelle aktivieren**aus.
+4. Wählen Sie **Expert-Schnittstelle aktivieren** aus.
     
 5. Fügen Sie den ersten der sechs CNAME-Einträge hinzu.
     
@@ -154,7 +154,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
    
     ![Dyn-BP-configure-3-1](../../media/1fd80695-d3d7-4298-9ebe-97a69f46f1b2.png)
   
-6. Wählen Sie **Create Record**aus.
+6. Wählen Sie **Create Record** aus.
     
     ![Dyn-BP-Configure-3-2](../../media/89551495-3fa5-44ab-96b2-855f70be0880.png)
   
@@ -176,9 +176,9 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
   
 2. Wählen Sie auf der Seite **Dienste auf Zonenebene** **dyn Standard-DNS-Dienst** für die Domäne aus, die Sie bearbeiten möchten. 
     
-3. Wählen Sie auf der Seite **DNS** für Ihre Domäne die Option **Einstellungen**aus.
+3. Wählen Sie auf der Seite **DNS** für Ihre Domäne die Option **Einstellungen** aus.
     
-4. Wählen Sie **Expert-Schnittstelle aktivieren**aus.
+4. Wählen Sie **Expert-Schnittstelle aktivieren** aus.
     
 5. In the **Add DNS Record** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -190,7 +190,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
    
     ![Dyn-BP-configure-4-1](../../media/f8511349-3ea2-40c3-9853-98e1a58a91b5.png)
   
-6. Wählen Sie **Create Record**aus.
+6. Wählen Sie **Create Record** aus.
     
     ![Dyn-BP-Configure-4-2](../../media/bbe04835-d3c0-4146-8123-9781bb9eca51.png)
   
@@ -203,9 +203,9 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
   
 2. Wählen Sie auf der Seite **Dienste auf Zonenebene** **dyn Standard-DNS-Dienst** für die Domäne aus, die Sie bearbeiten möchten. 
     
-3. Wählen Sie auf der Seite **DNS** für Ihre Domäne die Option **Einstellungen**aus.
+3. Wählen Sie auf der Seite **DNS** für Ihre Domäne die Option **Einstellungen** aus.
     
-4. Wählen Sie **Expert-Schnittstelle aktivieren**aus.
+4. Wählen Sie **Expert-Schnittstelle aktivieren** aus.
     
 5. Fügen Sie den ersten der zwei SRV-Einträge hinzu.
     
@@ -220,7 +220,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
    
     ![Dyn-BP-configure-5-1](../../media/a6873411-f4ce-4327-9145-02d435930976.png)
   
-6. Wählen Sie **Create Record**aus.
+6. Wählen Sie **Create Record** aus.
     
     ![Dyn-BP-Configure-5-2](../../media/e6f33452-e527-473b-a645-b31ed70b0d43.png)
   

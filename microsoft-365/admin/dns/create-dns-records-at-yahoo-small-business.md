@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 034bd7bc-b098-4c4d-8a93-4d74ff24532a
 description: Hier erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste bei Yahoo! einrichten. Small Business für Microsoft.
-ms.openlocfilehash: 3c6bc44baef4924133ea2308189662dd53399689
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 47b3b1f3a6e889d067d0166f872725aa3812a7b4
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645599"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656903"
 ---
 # <a name="create-dns-records-at-yahoo-small-business-for-microsoft"></a>Erstellen von DNS-Einträgen bei Yahoo! Small Business für Microsoft
 
- **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
+ **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
   
 Wenn Yahoo! Small Business Ihr DNS-Hostinganbieter war, sollten Sie beachten, dass Ihr Anbieter jetzt Aabaco Small Business ist.
   
@@ -41,7 +41,7 @@ Sie müssen Ihr Aabaco-Konto erstellen, bevor Sie [DNS-Einträge erstellen](../g
   
 ## <a name="create-an-aabaco-small-business-account"></a>Erstellen eines Aabaco Small Business-Kontos
 
-1. Um zu beginnen, navigieren Sie über [diesen Link](https://www.luminate.com/services/)zu ihrer Domänen Seite bei Aabaco, und wählen Sie **Setup your Aabaco Small Business Account**aus.
+1. Um zu beginnen, navigieren Sie über [diesen Link](https://www.luminate.com/services/)zu ihrer Domänen Seite bei Aabaco, und wählen Sie **Setup your Aabaco Small Business Account** aus.
     
     ![Wählen Sie Setup Ihres Aabaco Small Business-Kontos aus.](../../media/d708f272-d42f-40a1-9aaf-d05d8cfd55cf.png)
   
@@ -49,7 +49,7 @@ Sie müssen Ihr Aabaco-Konto erstellen, bevor Sie [DNS-Einträge erstellen](../g
     
     ![Select I am not a robot](../../media/ded4b5dd-4e04-4baa-ae31-8426b5799151.png)
   
-3. Wählen Sie **Erste Schritte**aus.
+3. Wählen Sie **Erste Schritte** aus.
     
     ![Wählen Sie erste Schritte aus.](../../media/6674707d-c222-4f0d-bec4-229d39ab2499.png)
   
@@ -60,7 +60,7 @@ Sie müssen Ihr Aabaco-Konto erstellen, bevor Sie [DNS-Einträge erstellen](../g
   
     ![The You've got mail page](../../media/2e02fc30-6cca-40d6-bb64-131a41b4a369.png)
   
-5. **Wählen Sie**im Aabaco bestätigen Sie Ihre e-Mail-Adresse aus, um die e-Mail-Nachricht **einzurichten** .
+5. **Wählen Sie** im Aabaco bestätigen Sie Ihre e-Mail-Adresse aus, um die e-Mail-Nachricht **einzurichten** .
     
     ![Auswählen der Bestätigungs-e-Mail](../../media/eb5f5526-6f90-4a10-83a7-5249a1ebd562.png)
   
@@ -71,7 +71,7 @@ Sie müssen Ihr Aabaco-Konto erstellen, bevor Sie [DNS-Einträge erstellen](../g
   
     ![The Choose your password page](../../media/cc592345-72d1-4a41-9410-a1f3345cfd1d.png)
   
-7. Wählen Sie **Ich stimme den Bedingungen zu**, und wählen Sie dann **Kennwort erstellen**aus.
+7. Wählen Sie **Ich stimme den Bedingungen zu**, und wählen Sie dann **Kennwort erstellen** aus.
     
     ![Wählen Sie Kennwort erstellen aus.](../../media/434aa6a3-076e-4abf-a9cf-31145786e819.png)
   
@@ -82,7 +82,7 @@ Sie müssen Ihr Aabaco-Konto erstellen, bevor Sie [DNS-Einträge erstellen](../g
   
     ![The You're almost done page](../../media/1a4142a3-e140-48a8-9c80-aa126ff08179.png)
   
-9. Wählen Sie in der Aabaco-e-Mail-Nachricht, die **Sie fast dort haben** , die Option **mein Konto aktivieren**aus.
+9. Wählen Sie in der Aabaco-e-Mail-Nachricht, die **Sie fast dort haben** , die Option **mein Konto aktivieren** aus.
     
     ![Wählen Sie My Account aktivieren aus.](../../media/e76d5edc-d8ba-4d8d-872d-d916716c3618.png)
   

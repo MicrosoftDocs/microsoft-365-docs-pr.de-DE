@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Fügen Sie Ihre Domäne zu Microsoft 365 im Microsoft 365 Admin Center hinzu, indem Sie einen DNS-Eintrag auf Ihrem DNS-Host hinzufügen. Der Setup-Assistent führt Sie nun durch den Vorgang.
-ms.openlocfilehash: 3a4cd31a37eb01570f58e9cdb83940640768a273
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 3e7463bd4cf6b7836a9770421e0b8ce597524a67
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644615"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658051"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Hinzufügen einer Domäne zu Microsoft 365
 
@@ -42,7 +42,7 @@ ms.locfileid: "48644615"
 
 ::: moniker-end
 
- **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
+ **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
   
  *Um Domänen hinzuzufügen, zu ändern oder zu entfernen, **müssen** Sie ein **globaler Administrator** eines [Geschäfts- oder Unternehmensplans](https://products.office.com/business/office) sein. Diese Änderungen betreffen den gesamten Mandanten. *Benutzerdefinierte Administratoren* oder *reguläre Benutzer* können diese Änderungen nicht vornehmen.*  
 
@@ -100,7 +100,7 @@ ms.locfileid: "48644615"
     
     Wenn Sie den DNS-Hostinganbieter oder die Domänenregistrierungsstelle für Ihre Domäne nicht kennen, lesen Sie [Finden Ihrer Domänenregistrierungsstelle oder Ihres DNS-Hostinganbieters](../get-help-with-domains/find-your-domain-registrar.md).
     
-    Wenn Sie später warten möchten, deaktivieren Sie entweder alle Dienste, und klicken Sie auf **weiter**, oder wählen Sie im Abschnitt vorherige Domäne-Verbindung **Weitere Optionen** aus, und wählen Sie **diese Option jetzt überspringen**aus.
+    Wenn Sie später warten möchten, deaktivieren Sie entweder alle Dienste, und klicken Sie auf **weiter**, oder wählen Sie im Abschnitt vorherige Domäne-Verbindung **Weitere Optionen** aus, und wählen Sie **diese Option jetzt überspringen** aus.
     
 8. Wählen Sie **Fertig stellen** aus. Sie haben es geschafft!
 
@@ -114,11 +114,11 @@ Führen Sie die folgenden Schritte aus, um einen benutzerdefinierten Datensatz f
 
 3. Wählen Sie auf der Seite **Domänen** eine Domäne aus. 
     
-4. Wählen Sie unter **DNS-Einstellungen**die Option **Benutzerdefinierte Datensätze**aus. Wählen Sie dann **neuer benutzerdefinierter Datensatz**aus.
+4. Wählen Sie unter **DNS-Einstellungen** die Option **Benutzerdefinierte Datensätze** aus. Wählen Sie dann **neuer benutzerdefinierter Datensatz** aus.
 
 5. Wählen Sie den Typ des DNS-Eintrags aus, den Sie hinzufügen möchten, und geben Sie die Informationen für den neuen Datensatz ein.
     
-6. Klicken Sie auf **Speichern**.
+6. Wählen Sie **Speichern** aus.
 
 ## <a name="registrars-with-domain-connect"></a>Registrierungsstellen mit Domäne Connect
 
@@ -151,7 +151,7 @@ Wenn Sie über eine Website verfügen, die Sie für Ihr Unternehmen verwenden, f
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Häufig gestellte Fragen zu Domänen](domains-faq.md)
+[Häufig gestellte Fragen zu Domänen](domains-faq.yml)
 
 [Was ist eine Domäne?](../get-help-with-domains/what-is-a-domain.md)
 

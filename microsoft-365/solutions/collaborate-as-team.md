@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Hier finden Sie Informationen zu den Microsoft 365-Konfigurationsschritten, die zum Einrichten eines Teams für die Zusammenarbeit von Vorgängen, Unterhaltungen und Dokumentation mit Gästen in Teams erforderlich sind.
-ms.openlocfilehash: 7f00acb7b7b58169d6a66bfa4cabdc5a3035f67f
-ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
+ms.openlocfilehash: cc962e22bde70220e07f805b0a7a83c111886369
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030029"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659606"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Zusammenarbeit mit Gästen in einem Team
 
@@ -36,21 +36,21 @@ Dieses Video zeigt die in diesem Dokument beschriebenen Konfigurationsschritte.<
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44NTr?autoplay=false]
 
-## <a name="azure-organizational-relationships-settings"></a>Azure Organizational Relationships-Einstellungen
+## <a name="azure-external-collaboration-settings"></a>Einstellungen für Azure-externe Zusammenarbeit
 
-Die Freigabe in Microsoft 365 wird auf der höchsten Ebene durch die [Einstellungen für organisatorische Beziehungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations)gesteuert. Wenn die Gast Freigabe in Azure AD deaktiviert oder eingeschränkt ist, überschreibt diese Einstellung alle Freigabeeinstellungen, die Sie in Microsoft 365 konfigurieren.
+Die Freigabe in Microsoft 365 wird auf der höchsten Ebene durch die [Einstellungen für die B2B-externe Zusammenarbeit in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations)gesteuert. Wenn die Gast Freigabe in Azure AD deaktiviert oder eingeschränkt ist, überschreibt diese Einstellung alle Freigabeeinstellungen, die Sie in Microsoft 365 konfigurieren.
 
-Überprüfen Sie die Einstellungen für Organisationsbeziehungen, um sicherzustellen, dass die Freigabe für Gäste nicht blockiert wird.
+Überprüfen Sie die Einstellungen für die B2B-Einstellungen für externe Zusammenarbeit, um sicherzustellen, dass die Freigabe für Gäste nicht blockiert wird.
 
 ![Screenshot der Seite mit den Einstellungen für die Azure Active Directory-Organisationsbeziehungen](../media/azure-ad-organizational-relationships-settings.png)
 
-So legen Sie Einstellungen für die Organisationsbeziehung fest
+So legen Sie Einstellungen für die externe Zusammenarbeit fest
 
 1. Melden Sie sich bei Azure Active Directory unter an [https://aad.portal.azure.com](https://aad.portal.azure.com) .
 2. Klicken Sie im linken Navigationsbereich auf **Azure Active Directory**.
 3. Klicken Sie auf **externe Identitäten**.
 4. Klicken Sie auf dem Bildschirm **Erste Schritte** im linken Navigationsbereich auf **Einstellungen für externe Zusammenarbeit**.
-5. Stellen Sie sicher, dass **Administratoren und Benutzer in der Rolle "Gast einladender" eingeladen** werden und **Mitglieder einladen können** , beide auf " **Ja** " festgelegt sind.
+5. Stellen Sie sicher, dass **Administratoren und Benutzer in der Rolle "Gast einladender" eingeladen** werden und **Mitglieder einladen können** , beide auf " **Ja**" festgelegt sind.
 6. Wenn Sie Änderungen vorgenommen haben, klicken Sie auf **Speichern**.
 
 Beachten Sie die Einstellungen im Abschnitt Einschränkungen für die **Zusammenarbeit** . Stellen Sie sicher, dass die Domänen der Gäste, mit denen Sie zusammenarbeiten möchten, nicht blockiert werden.
@@ -73,6 +73,8 @@ So legen Sie die Gastzugriffseinstellungen für Teams fest
 4. Erweitern Sie im Teamadministrator Center im linken Navigationsbereich die Option **organisationsweite Einstellungen** , und klicken Sie dann auf **Gastzugriff**.
 5. Stellen Sie sicher, dass **Gastzugriff in Teams zulassen** auf **Ein** ist.
 6. Nehmen Sie alle gewünschten Änderungen an den zusätzlichen Gasteinstellungen vor, und klicken Sie dann auf **Speichern**.
+
+Wenn Microsoft Teams-Gastzugriff aktiviert ist, können Sie optional den Gastzugriff auf einzelne Teams und die zugehörigen SharePoint-Websites mithilfe von Sensitivitäts Bezeichnungen steuern. Weitere Informationen finden Sie unter [use Sensitivity Labels to Protect Content in Microsoft Teams, Microsoft 365 Groups und SharePoint Sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
 
 > [!NOTE]
 > Es kann bis zu vierundzwanzig Stunden dauern, bis die Teams-Gast Einstellungen aktiviert werden, nachdem Sie sie aktiviert haben.
@@ -107,7 +109,7 @@ So legen Sie Freigabeeinstellungen für SharePoint auf Organisationsebene fest
 
 1. Klicken Sie im Microsoft 365 Admin Center im linken Navigationsbereich unter **Admin Centers** auf **SharePoint**.
 2. Erweitern Sie im SharePoint Admin Center im linken Navigationsbereich **Richtlinien** , und klicken Sie dann auf **Freigabe**.
-3. Stellen Sie sicher, dass die externe Freigabe für SharePoint auf " **jeder** " oder " **neue und vorhandene Gäste** " festgelegt ist.
+3. Stellen Sie sicher, dass die externe Freigabe für SharePoint auf " **jeder** " oder " **neue und vorhandene Gäste**" festgelegt ist.
 4. Wenn Sie Änderungen vorgenommen haben, klicken Sie auf **Speichern**.
 
 
@@ -148,16 +150,15 @@ Wir laden Benutzer später ein. Als nächstes ist es wichtig, die Freigabeeinste
 
 ## <a name="sharepoint-site-level-sharing-settings"></a>SharePoint-Freigabeeinstellungen auf Websiteebene
 
-Überprüfen Sie die Freigabeeinstellungen auf Standortebene, um sicherzustellen, dass die gewünschten Zugriffstypen für dieses Team zulässig sind. Wenn Sie beispielsweise die Einstellungen auf Organisationsebene auf " **jeder** " festlegen, aber alle Gäste sich für dieses Team authentifizieren möchten, stellen Sie sicher, dass die Freigabeeinstellungen auf Standortebene auf " **neu" und "vorhandene Gäste** " festgelegt sind.
+Überprüfen Sie die Freigabeeinstellungen auf Standortebene, um sicherzustellen, dass die gewünschten Zugriffstypen für dieses Team zulässig sind. Wenn Sie beispielsweise die Einstellungen auf Organisationsebene auf " **jeder**" festlegen, aber alle Gäste sich für dieses Team authentifizieren möchten, stellen Sie sicher, dass die Freigabeeinstellungen auf Standortebene auf " **neu" und "vorhandene Gäste**" festgelegt sind.
 
 ![Screenshot der externen SharePoint-Freigabeeinstellungen](../media/sharepoint-site-external-sharing-settings.png)
-
 
 So legen Sie Freigabeeinstellungen auf Websiteebene fest
 1. Erweitern Sie im SharePoint Admin Center im linken Navigationsbereich den Knoten **Websites** , und klicken Sie dann auf **aktive Standorte**.
 2. Wählen Sie die Site des soeben erstellten Teams aus.
 3. Klicken Sie auf... und wählen Sie **Freigabe** aus.
-4. Stellen Sie sicher, dass die Freigabe auf " **jeder** " oder " **neue und vorhandene Gäste** " festgelegt ist.
+4. Stellen Sie sicher, dass die Freigabe auf " **jeder** " oder " **neue und vorhandene Gäste**" festgelegt ist.
 5. Wenn Sie Änderungen vorgenommen haben, klicken Sie auf **Speichern**.
 
 ## <a name="invite-users"></a>Benutzer einladen

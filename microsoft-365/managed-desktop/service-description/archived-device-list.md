@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 4b2c53ee8535c2e99acb83060a2ee04d8f5033db
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 57b49e49a20ee9e088301e90590c19cfabf89a2b
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754516"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658941"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Archivierte Microsoft Managed Desktop-Geräte
 
@@ -60,8 +60,9 @@ Für die Registrierung in Microsoft Managed Desktop ein Gerät muss eines der fo
 |DGM-Buch 2| 256 GB/Intel i5/8 GB RAM | Keine | **16. November 2022** |
 |DGM-go| 128 GB/Intel 4415Y/8GB RAM | Keine | **2. August 2023** |
 |Surface-Laptop| 256 GB/Intel i5/8 GB RAM | Keine | **20. Mai 2022** |
+|Surface Laptop 2| 128 GB/Intel i5/8 GB RAM | Keine | **16. Oktober 2023** |
 |Surface pro| 256 GB/Intel i5/8 GB RAM | Keine | **15. Juni 2022** |
-
+|Surface pro 6| 128 GB/Intel i5/8 GB RAM | Keine | **16. Oktober 2023** |
 
 Darüber hinaus muss das Gerät auch:
 

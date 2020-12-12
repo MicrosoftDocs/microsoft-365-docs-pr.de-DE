@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 9ddcc2fc-9433-4335-8192-6ffb1f541087
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter Name.com für Microsoft einrichten.
-ms.openlocfilehash: ce465e06b3bc18c824d741ee4cba4b9f4f410d90
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2330755412abfe262ac79c4acbfc12e33af76fe2
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645887"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657827"
 ---
 # <a name="create-dns-records-at-namecom-for-microsoft"></a>Erstellen von DNS-Einträgen bei Name.com für Microsoft
 
- **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
+ **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
   
 Wenn name.com Ihr DNS-Hostinganbieter ist, führen Sie die in diesem Artikel aufgeführten Schritte aus, um Ihre Domäne zu überprüfen und DNS-Einträge für E-Mail, Skype for Business Online und andere Dienste einzurichten.
   
@@ -52,11 +52,11 @@ Bevor Sie Ihre Domäne mit Microsoft verwenden können, müssen wir uns vergewis
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. Wählen Sie unter **Meine Domänen**den Namen der Domäne aus, die Sie ändern möchten.
+2. Wählen Sie unter **Meine Domänen** den Namen der Domäne aus, die Sie ändern möchten.
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
-3. Wählen Sie in der Spalte **Details** die Option **DNS Records**aus. 
+3. Wählen Sie in der Spalte **Details** die Option **DNS Records** aus. 
     
     ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
@@ -105,11 +105,11 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. Wählen Sie unter **Meine Domänen**den Namen der Domäne aus, die Sie ändern möchten.
+2. Wählen Sie unter **Meine Domänen** den Namen der Domäne aus, die Sie ändern möchten.
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
-3. Wählen Sie in der Spalte **Details** die Option **DNS Records**aus. 
+3. Wählen Sie in der Spalte **Details** die Option **DNS Records** aus. 
     
     ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
@@ -146,11 +146,11 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. Wählen Sie unter **Meine Domänen**den Namen der Domäne aus, die Sie ändern möchten.
+2. Wählen Sie unter **Meine Domänen** den Namen der Domäne aus, die Sie ändern möchten.
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
-3. Wählen Sie in der Spalte **Details** die Option **DNS Records**aus. 
+3. Wählen Sie in der Spalte **Details** die Option **DNS Records** aus. 
     
     ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
@@ -190,11 +190,11 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. Wählen Sie unter **Meine Domänen**den Namen der Domäne aus, die Sie ändern möchten.
+2. Wählen Sie unter **Meine Domänen** den Namen der Domäne aus, die Sie ändern möchten.
 
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
-3. Wählen Sie in der Spalte **Details** die Option **DNS Records**aus. 
+3. Wählen Sie in der Spalte **Details** die Option **DNS Records** aus. 
     
     ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
@@ -219,7 +219,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. Wählen Sie unter **Meine Domänen**den Namen der Domäne aus, die Sie ändern möchten.
+2. Wählen Sie unter **Meine Domänen** den Namen der Domäne aus, die Sie ändern möchten.
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
@@ -235,8 +235,8 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     |**Type**|**Service**|**Weight**|**TTL**|**Prio**|**Protocol**|**Port**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV|sip|1|Verwenden Sie den Standardwert (300).|100|tls|443|sipdir.online.lync.com <br> **Hinweis:** Es wird empfohlen, diesen Eintrag zu kopieren und einzufügen, damit alle Abstände korrekt übernommen werden.           |
-    |SRV|sipfederationtls|1|Verwenden Sie den Standardwert (300).|100|tcp|5061|sipfed.online.lync.com <br>**Hinweis:** Es wird empfohlen, diesen Eintrag zu kopieren und einzufügen, damit alle Abstände korrekt übernommen werden.           |
+    |SRV|sip|1 |Verwenden Sie den Standardwert (300).|100|tls|443|sipdir.online.lync.com <br> **Hinweis:** Es wird empfohlen, diesen Eintrag zu kopieren und einzufügen, damit alle Abstände korrekt übernommen werden.           |
+    |SRV|sipfederationtls|1 |Verwenden Sie den Standardwert (300).|100|tcp|5061|sipfed.online.lync.com <br>**Hinweis:** Es wird empfohlen, diesen Eintrag zu kopieren und einzufügen, damit alle Abstände korrekt übernommen werden.           |
    
    ![Name-BP-configure-5-1](../../media/d9a885fd-7300-45b6-ad4c-0b4bf1067560.png)
   

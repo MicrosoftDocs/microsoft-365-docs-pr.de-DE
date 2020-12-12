@@ -24,16 +24,16 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: 'Erfahren Sie, wie Sie die Werte/Informationen finden, die Sie zum Erstellen von DNS-Einträgen für Microsoft 365 benötigen. '
-ms.openlocfilehash: eca9dbe4e40193f76538b639624b827177ff7772
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: db9aff1fdcd9fa52c90cc96b1a32cd3908c30edb
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645311"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658507"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>Sammeln der erforderlichen Informationen zum Erstellen von DNS-Einträgen
 
- **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
+ **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
   
 ### <a name="step-1-find-the-txt-record-value-and-verify"></a>Schritt 1: Suchen des txt-Eintrags Werts und überprüfen
 
@@ -55,9 +55,9 @@ ms.locfileid: "48645311"
 
 ::: moniker-end
     
-2. Wählen Sie auf der Seite **Domänen** die Domäne aus, und wählen Sie dann **Setup starten**aus. Sie gelangen wieder zum Assistenten für die Domäneneinrichtung und sehen dort den spezifischen Wert, den Sie hinzufügen müssen.
+2. Wählen Sie auf der Seite **Domänen** die Domäne aus, und wählen Sie dann **Setup starten** aus. Sie gelangen wieder zum Assistenten für die Domäneneinrichtung und sehen dort den spezifischen Wert, den Sie hinzufügen müssen.
     
-3. Wählen Sie auf der Seite **Domäne überprüfen** die Option **TXT-Eintrag hinzufügen**aus, und wählen Sie dann **weiter**aus.
+3. Wählen Sie auf der Seite **Domäne überprüfen** die Option **TXT-Eintrag hinzufügen** aus, und wählen Sie dann **weiter** aus.
     
 4. Kopieren Sie den angezeigten **txt-Wert** . Es sieht wie folgt aus: **MS = msXXXXXXXX**. 
     

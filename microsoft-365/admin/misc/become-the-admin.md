@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Erfahren Sie, wie Sie überprüfen, ob Ihr e-Mail-und Domänenbesitz einen nicht verwalteten Mandanten in Microsoft 365 übernimmt.
-ms.openlocfilehash: 9ae09a4b88887664a0615128bcddc48ad6f57118
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 28359908576260218459d13b8c1c1b662b9a2c8f
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645059"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658063"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>Ausführen einer internen Übernahme durch den Administrator
 
- **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
+ **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
 
 Wenn Sie ein Administrator sind und einen nicht verwalteten Mandanten übernehmen möchten, der von einer Self-Service-Benutzeranmeldung erstellt wurde, können Sie dies mit einer internen Übernahme durch den Administrator tun.
 
@@ -51,7 +51,7 @@ Wenn Sie ein Administrator sind und einen nicht verwalteten Mandanten übernehme
 
 1. Wenn Sie den Überprüfungscode eingeben, werden Sie auf eine Seite gebracht, auf der Sie ein neues Konto erstellen können. 
     
-2. Geben Sie die Felder Benutzername und Kennwort mit dem Konto ein, das Sie verwenden möchten, und wählen Sie dann **Start**aus. 
+2. Geben Sie die Felder Benutzername und Kennwort mit dem Konto ein, das Sie verwenden möchten, und wählen Sie dann **Start** aus. 
     
 ## <a name="step-3-verify-domain-ownership-and-become-the-admin"></a>Schritt 3: Überprüfen des Domänenbesitzes und als Administrator
 

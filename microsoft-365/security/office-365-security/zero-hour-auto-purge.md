@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich darüber informieren, wie die automatische Bereinigung durch Null Stunden rückwirkend zugestellte Nachrichten in einem Exchange Online Postfach in den Junk-e-Mail-Ordner oder in die Quarantäne verschieben kann, die rückwirkend als Spam oder Phishing eingestuft wurden.
-ms.openlocfilehash: fd5186bc40d2d80097e6292d86ea113a41e0dd52
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 7b43fb46adacfe1e9f1e7e622122df90e747ff44
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131145"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659429"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Automatische Bereinigung ohne Stunden in Exchange Online
 
@@ -97,7 +97,7 @@ Sie sollten den normalen Berichterstellungsprozess für [falsch positive Ergebni
 
 ### <a name="what-if-i-use-the-quarantine-folder-instead-of-the-junk-mail-folder"></a>Was geschieht, wenn ich den Ordner "Quarantine" anstelle des Junk-e-Mail-Ordners verwende?
 
-Zap wird auf einer Nachricht basierend auf der Konfiguration Ihrer Antispam-Richtlinien, wie weiter oben in diesem Thema beschrieben, Aktionen durchführen.
+Zap wird auf einer Nachricht basierend auf der Konfiguration Ihrer Antispam-Richtlinien wie weiter oben in diesem Artikel beschrieben Aktionen durchführen.
 
 ### <a name="what-if-im-using-safe-senders-mail-flow-rules-or-allowedblocked-sender-lists"></a>Was geschieht, wenn ich sichere Absender, Nachrichtenfluss Regeln oder zugelassene/blockierte Senderlisten verwende?
 

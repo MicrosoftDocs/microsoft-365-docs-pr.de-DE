@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 1dc55f9f-5309-450f-acc3-b2b4119c8be3
 description: Hier erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter Netzwerklösungen für Microsoft einrichten.
-ms.openlocfilehash: f488ad3511c9901eae70691f616dcff52036c71d
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 9cb403bb8b469f2d7f4e6138ba5833120ea53585
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645947"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657791"
 ---
 # <a name="create-dns-records-at-network-solutions-for-microsoft"></a>Erstellen von DNS-Einträgen bei Netzwerklösungen für Microsoft
 
- **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
+ **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
   
 Wenn Network Solutions Ihr DNS-Hostinganbieter ist, führen Sie die in diesem Artikel aufgeführten Schritte aus, um Ihre Domäne zu überprüfen und DNS-Einträge für E-Mail, Skype for Business Online und andere Dienste einzurichten.
   
@@ -74,17 +74,17 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     
     ![Aktivieren Sie das Kontrollkästchen für Ihre Domäne.](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. Wählen Sie **DNS bearbeiten**aus.
+3. Wählen Sie **DNS bearbeiten** aus.
     
     ![Wählen Sie Edit DNS aus.](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. Wählen Sie **Erweiterte DNS-Einträge verwalten**aus.
+4. Wählen Sie **Erweiterte DNS-Einträge verwalten** aus.
     
     (Möglicherweise müssen Sie nach unten scrollen.)
     
     ![Wählen Sie Erweiterte DNS-Einträge verwalten aus.](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. Scrollen Sie nach unten zum Abschnitt **Text (TXT Records)** , und wählen Sie dann **TXT-Einträge bearbeiten**aus.
+5. Scrollen Sie nach unten zum Abschnitt **Text (TXT Records)** , und wählen Sie dann **TXT-Einträge bearbeiten** aus.
     
     ![Bearbeiten von TXT-Einträgen auswählen](../../media/240a01d6-750a-4da6-8554-641b571e4b71.png)
   
@@ -96,11 +96,11 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
        
     ![Eingeben oder Einfügen von Werten in die Felder für den neuen Datensatz](../../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
   
-7. Wählen Sie **weiter**aus.
+7. Wählen Sie **weiter** aus.
     
     ![Wählen Sie weiter aus.](../../media/89e7fb38-b4d9-4949-a1bb-d0dd10b361e0.png)
   
-8. Wählen Sie **Save Changes**aus.
+8. Wählen Sie **Save Changes** aus.
     
     ![Wählen Sie Save Changes aus.](../../media/bd4d7cd0-c8a3-497a-b080-cfd5a5c60dc5.png)
   
@@ -143,17 +143,17 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     
     ![Aktivieren Sie das Kontrollkästchen für Ihre Domäne.](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. Wählen Sie **DNS bearbeiten**aus.
+3. Wählen Sie **DNS bearbeiten** aus.
     
     ![Wählen Sie Edit DNS aus.](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. Wählen Sie **Erweiterte DNS-Einträge verwalten**aus.
+4. Wählen Sie **Erweiterte DNS-Einträge verwalten** aus.
     
     (Möglicherweise müssen Sie nach unten scrollen.)
     
     ![Wählen Sie Erweiterte DNS-Einträge verwalten aus.](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. Führen Sie einen Bildlauf nach unten zum Abschnitt **Mail Server (MX Records)** durch, und wählen Sie dann **MX-Einträge bearbeiten**aus.
+5. Führen Sie einen Bildlauf nach unten zum Abschnitt **Mail Server (MX Records)** durch, und wählen Sie dann **MX-Einträge bearbeiten** aus.
     
     ![Auswählen von "MX-Einträge bearbeiten"](../../media/74b4e412-9073-4d2d-8710-fe340b223798.png)
   
@@ -165,11 +165,11 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
        
     ![Eingeben oder Einfügen von Werten in die Felder für den neuen Datensatz](../../media/0bb96872-cc6e-4dfa-a649-fb7efbbf0012.png)
   
-7. Wählen Sie **weiter**aus.
+7. Wählen Sie **weiter** aus.
     
     ![Wählen Sie weiter aus.](../../media/963f758b-e79d-4452-8340-7eba8a3972c9.png)
   
-8. Wählen Sie **Save Changes**aus.
+8. Wählen Sie **Save Changes** aus.
     
     ![Wählen Sie Save Changes aus.](../../media/7c2f784a-6dee-4364-866c-ad7202ef1fc2.png)
   
@@ -177,11 +177,11 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     
     ![Select the Delete check box for other MX records](../../media/709d6133-9f5d-490a-a91e-95e21ca94695.png)
   
-10. Wenn alle ausgewählt sind, wählen Sie **weiter**aus.
+10. Wenn alle ausgewählt sind, wählen Sie **weiter** aus.
     
     ![Wählen Sie weiter aus.](../../media/4710f988-0bbc-4ba7-bf31-ca2392b2900e.png)
   
-11. Wählen Sie **Save Changes**aus.
+11. Wählen Sie **Save Changes** aus.
     
     ![Wählen Sie Save Changes aus.](../../media/24432ec6-666b-4612-9488-37c06437959b.png)
   
@@ -201,17 +201,17 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     
     ![Aktivieren Sie das Kontrollkästchen für Ihre Domäne.](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. Wählen Sie **DNS bearbeiten**aus.
+3. Wählen Sie **DNS bearbeiten** aus.
     
     ![Wählen Sie Edit DNS aus.](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. Wählen Sie **Erweiterte DNS-Einträge verwalten**aus.
+4. Wählen Sie **Erweiterte DNS-Einträge verwalten** aus.
     
     (Möglicherweise müssen Sie nach unten scrollen.)
     
     ![Wählen Sie Erweiterte DNS-Einträge verwalten aus.](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. Führen Sie einen Bildlauf nach unten zum Abschnitt **Host Aliase (CNAME Records)** durch, und wählen Sie dann **CNAME-Einträge bearbeiten**aus.
+5. Führen Sie einen Bildlauf nach unten zum Abschnitt **Host Aliase (CNAME Records)** durch, und wählen Sie dann **CNAME-Einträge bearbeiten** aus.
     
     ![Wählen Sie unter Host Aliase die Option CNAME-Einträge bearbeiten aus.](../../media/2d0a4666-8d40-48f4-886c-64a5157baaf5.png)
   
@@ -227,11 +227,11 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     
     ![Eingeben oder Einfügen von Werten für die neuen Datensätze](../../media/5ce0b30c-b46c-4778-aa5a-fb5e2f0961c1.png)
   
-7. Wenn Sie alle benötigten CNAME-Einträge hinzugefügt haben, wählen Sie **weiter**aus.
+7. Wenn Sie alle benötigten CNAME-Einträge hinzugefügt haben, wählen Sie **weiter** aus.
     
     ![Wählen Sie weiter aus.](../../media/4978bd8b-f6a6-458d-9522-ad612b301c4a.png)
   
-8. Wählen Sie **Save Changes**aus.
+8. Wählen Sie **Save Changes** aus.
     
     ![Wählen Sie Save Changes aus.](../../media/f005c38a-0d8d-4c61-bec6-15e60c89aa5a.png)
   
@@ -254,17 +254,17 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     
     ![Aktivieren Sie das Kontrollkästchen für Ihre Domäne.](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. Wählen Sie **DNS bearbeiten**aus.
+3. Wählen Sie **DNS bearbeiten** aus.
     
     ![Wählen Sie Edit DNS aus.](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. Wählen Sie **Erweiterte DNS-Einträge verwalten**aus.
+4. Wählen Sie **Erweiterte DNS-Einträge verwalten** aus.
     
     (Möglicherweise müssen Sie nach unten scrollen.)
     
     ![Wählen Sie Erweiterte DNS-Einträge verwalten aus.](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. Scrollen Sie nach unten zum Abschnitt **Text (TXT Records)** , und wählen Sie dann **TXT-Einträge bearbeiten**aus.
+5. Scrollen Sie nach unten zum Abschnitt **Text (TXT Records)** , und wählen Sie dann **TXT-Einträge bearbeiten** aus.
     
     ![Auswählen von TXT-Einträgen unter Text bearbeiten](../../media/a69a2631-6da2-4e81-99ab-9a9ab9b30b07.png)
   
@@ -276,11 +276,11 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
        
     ![Eingeben oder Einfügen von Werten für den neuen Datensatz](../../media/11564eca-e2ee-4f17-af2b-a00eb7c157db.png)
   
-7. Wählen Sie **weiter**aus.
+7. Wählen Sie **weiter** aus.
     
     ![Wählen Sie weiter aus.](../../media/482a8dae-0c79-47c4-8bd8-87965683de24.png)
   
-8. Wählen Sie **Save Changes**aus.
+8. Wählen Sie **Save Changes** aus.
     
     ![Wählen Sie Save Changes aus.](../../media/600b8c6d-184f-4213-a50e-8f119ebf3ff0.png)
   
@@ -300,17 +300,17 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     
     ![Aktivieren Sie das Kontrollkästchen für Ihre Domäne.](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. Wählen Sie **DNS bearbeiten**aus.
+3. Wählen Sie **DNS bearbeiten** aus.
     
     ![Wählen Sie Edit DNS aus.](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. Wählen Sie **Erweiterte DNS-Einträge verwalten**aus.
+4. Wählen Sie **Erweiterte DNS-Einträge verwalten** aus.
     
     (Möglicherweise müssen Sie nach unten scrollen.)
     
     ![Wählen Sie Erweiterte DNS-Einträge verwalten aus.](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. Scrollen Sie zum Abschnitt **Service (SRV Records)** , und wählen Sie dann **SRV-Einträge bearbeiten**aus.
+5. Scrollen Sie zum Abschnitt **Service (SRV Records)** , und wählen Sie dann **SRV-Einträge bearbeiten** aus.
     
     ![Wählen Sie "SRV-Einträge unter Dienst bearbeiten" aus.](../../media/9a9248ea-5de5-4e16-9364-f7600fa371f5.png)
   
@@ -320,16 +320,16 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     
     |**Service**|**Protocol**|**TTL**|**Priority**|**Weight**|**Port**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |3600  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |3600  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |
+    |_sip  <br/> |_tls  <br/> |3600  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |3600  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |
        
     ![Eingeben oder Einfügen von Werten für die neuen Datensätze](../../media/86968d1c-8e43-4e61-aeaa-37fc7d7ef7a7.png)
   
-7. Wählen Sie **weiter**aus.
+7. Wählen Sie **weiter** aus.
     
     ![Wählen Sie weiter aus.](../../media/bfe2c778-5d2b-4bb6-a79d-c3ff9caf9e1e.png)
   
-8. Wählen Sie **Save Changes**aus.
+8. Wählen Sie **Save Changes** aus.
     
     ![Wählen Sie Save Changes aus.](../../media/6d323126-0ebe-45ab-8567-c234711d84c7.png)
   

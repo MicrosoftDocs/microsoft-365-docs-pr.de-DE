@@ -12,19 +12,19 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft bietet Hilfestellung für EoP in einer Vielzahl von Orten und Methoden, einschließlich selbst Unterstützung und unterstütztem Support.
-ms.openlocfilehash: 3d11abee08fa3fdd7dfb659bd90e29908f9e4bda
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 7551a792c1d9c10cf5c655dade04bb5606b75f04
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49614858"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658695"
 ---
 # <a name="help-and-support-for-eop"></a>Hilfe und Support für EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-In Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer helfen Ihnen die in diesem Thema aufgeführten technischen Supportressourcen bei der Suche nach Antworten, wenn Sie Probleme mit EoP haben. Microsoft bietet Hilfestellung für EoP in einer Vielzahl von Orten und Methoden, einschließlich selbst Unterstützung und unterstütztem Support.
+In Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer können die in diesem Artikel aufgeführten technischen Supportressourcen Ihnen helfen, Antworten zu finden, wenn Sie Probleme mit EoP haben. Microsoft bietet Hilfestellung für EoP in einer Vielzahl von Orten und Methoden, einschließlich selbst Unterstützung und unterstütztem Support.
 
 ## <a name="self-support-options"></a>Optionen zur Selbsthilfe
 

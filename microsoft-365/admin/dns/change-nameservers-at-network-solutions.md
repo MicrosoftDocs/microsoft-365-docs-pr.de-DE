@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: d4ba60f3-4e1c-4180-99bd-250b8955be2a
 description: 'Erfahren Sie, wie Sie Ihre benutzerdefinierte Microsoft-Domäne mit Netzwerklösungen einrichten, wenn Microsoft Ihre DNS-Einträge verwalten soll. '
-ms.openlocfilehash: 1cb5cd3cc8628a629fb6d7044063914e37adfac2
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 04817ca24b13b4c138986df3875b6d397100fffd
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646403"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658428"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-network-solutions"></a>Ändern von Namenservern zum Einrichten von Microsoft mit Netzwerklösungen
 
- **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen.
+ **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen.
   
 Befolgen Sie diese Anweisungen, wenn Microsoft Ihre DNS-Einträge für Sie verwalten soll. (Wenn es Ihnen lieber ist, können Sie [alle Ihre Microsoft-DNS-Einträge bei Netzwerklösungen verwalten](create-dns-records-at-network-solutions.md).)
   
@@ -55,17 +55,17 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     
     ![Aktivieren Sie das Kontrollkästchen für Ihre Domäne.](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. Wählen Sie **DNS bearbeiten**aus.
+3. Wählen Sie **DNS bearbeiten** aus.
     
     ![Wählen Sie Edit DNS aus.](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. Wählen Sie **Erweiterte DNS-Einträge verwalten**aus.
+4. Wählen Sie **Erweiterte DNS-Einträge verwalten** aus.
     
     (Möglicherweise müssen Sie nach unten scrollen.)
     
     ![Wählen Sie Erweiterte DNS-Einträge verwalten aus.](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. Scrollen Sie nach unten zum Abschnitt **Text (TXT Records)** , und wählen Sie dann **TXT-Einträge bearbeiten**aus.
+5. Scrollen Sie nach unten zum Abschnitt **Text (TXT Records)** , und wählen Sie dann **TXT-Einträge bearbeiten** aus.
     
     ![Bearbeiten von TXT-Einträgen auswählen](../../media/240a01d6-750a-4da6-8554-641b571e4b71.png)
   
@@ -78,11 +78,11 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     
    ![Eingeben oder Einfügen von Werten in die Felder für den neuen Datensatz](../../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
   
-7. Wählen Sie **weiter**aus.
+7. Wählen Sie **weiter** aus.
     
     ![Wählen Sie weiter aus.](../../media/89e7fb38-b4d9-4949-a1bb-d0dd10b361e0.png)
   
-8. Wählen Sie **Save Changes**aus.
+8. Wählen Sie **Save Changes** aus.
     
     ![Wählen Sie Save Changes aus.](../../media/bd4d7cd0-c8a3-497a-b080-cfd5a5c60dc5.png)
   
@@ -120,7 +120,7 @@ Um die Einrichtung Ihrer Domäne bei Microsoft abzuschließen, ändern Sie die N
 Möchten Sie Ihre NS-Einträge so ändern, dass Microsoft Ihre Domäne einrichten kann? Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beginnen Sie bei 2:23)](https://support.microsoft.com/office/69b092e3-c026-4d19-a7d0-16cdb2d8b261).
   
 > [!IMPORTANT]
->  Wenn  *Sie die Schritte*  in diesem Abschnitt abgeschlossen haben, sollten Sie die folgenden vier Namenserver finden: **ns1.BDM.microsoftonline.com**, **ns2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com**und **NS4.BDM.microsoftonline.com**. Im folgenden Verfahren wird gezeigt, wie Sie andere, unerwünschte Namenserver aus der Liste löschen können, und Sie erfahren, wie Sie die  *richtigen*  Namenserver hinzufügen, wenn sie sich nicht bereits in der Liste befinden. 
+>  Wenn  *Sie die Schritte*  in diesem Abschnitt abgeschlossen haben, sollten Sie die folgenden vier Namenserver finden: **ns1.BDM.microsoftonline.com**, **ns2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com** und **NS4.BDM.microsoftonline.com**. Im folgenden Verfahren wird gezeigt, wie Sie andere, unerwünschte Namenserver aus der Liste löschen können, und Sie erfahren, wie Sie die  *richtigen*  Namenserver hinzufügen, wenn sie sich nicht bereits in der Liste befinden. 
   
 1. Im ersten Schritt navigieren Sie über [diesen Link](https://www.networksolutions.com/manage-it) zu Ihrer Domänenseite bei Network Solutions. Sie werden aufgefordert, sich anzumelden.
     
@@ -133,11 +133,11 @@ Möchten Sie Ihre NS-Einträge so ändern, dass Microsoft Ihre Domäne einrichte
     
     ![Aktivieren Sie das Kontrollkästchen für Ihre Domäne.](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. Wählen Sie **DNS bearbeiten**aus.
+3. Wählen Sie **DNS bearbeiten** aus.
     
     ![Wählen Sie Edit DNS aus.](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. Wählen Sie **DNS migrieren**aus.
+4. Wählen Sie **DNS migrieren** aus.
     
     ![NetworkSolutionsBP-redelegate-1-1](../../media/e57a30f3-63d5-4bcb-84c6-c8be21c261a2.png)
   
@@ -149,7 +149,7 @@ Möchten Sie Ihre NS-Einträge so ändern, dass Microsoft Ihre Domäne einrichte
     
 ### <a name="if-there-are-no-nameservers-already-listed"></a>Wenn noch KEINE Namenserver aufgelistet sind
 
-1. Wählen Sie auf der Seite **Domains** im Abschnitt **Domain Name Servers angeben** die Option **Weitere Namenserver hinzufügen**aus.
+1. Wählen Sie auf der Seite **Domains** im Abschnitt **Domain Name Servers angeben** die Option **Weitere Namenserver hinzufügen** aus.
     
     ![NetworkSolutionsBP-redelegate-1-2-1](../../media/57e22ef1-ac88-4d4a-bc8e-058023255dfd.png)
   
@@ -165,11 +165,11 @@ Möchten Sie Ihre NS-Einträge so ändern, dass Microsoft Ihre Domäne einrichte
     
 ![NetworkSolutionsBP-redelegate-1-2-2](../../media/795e8c6b-4828-4de2-b624-82f067bb2eb1.png)
   
-3. Wählen Sie **DNS migrieren**aus.
+3. Wählen Sie **DNS migrieren** aus.
     
     ![NetworkSolutionsBP-redelegate-1-2-3](../../media/d4a0a7c2-6868-471f-bbf4-16ce2e2348de.png)
   
-4. Wählen Sie **Save Changes**aus.
+4. Wählen Sie **Save Changes** aus.
     
     ![NetworkSolutionsBP-redelegate-1-2-4](../../media/897bc864-b340-4385-abeb-f94bc7f73e5e.png)
   
@@ -185,7 +185,7 @@ Möchten Sie Ihre NS-Einträge so ändern, dass Microsoft Ihre Domäne einrichte
     
     ![NetworkSolutions-BP-redelegate-1-5](../../media/eeb8ad22-bf4a-43a8-b97a-f09c3654d89b.png)
   
-2. Wählen Sie **Weitere Namenserver hinzufügen**aus.
+2. Wählen Sie **Weitere Namenserver hinzufügen** aus.
     
     ![NetworkSolutionsBP-redelegate-1-2-1](../../media/57e22ef1-ac88-4d4a-bc8e-058023255dfd.png)
   
@@ -201,7 +201,7 @@ Möchten Sie Ihre NS-Einträge so ändern, dass Microsoft Ihre Domäne einrichte
     
 ![NetworkSolutionsBP-redelegate-1-2-2](../../media/795e8c6b-4828-4de2-b624-82f067bb2eb1.png)
   
-4. Wählen Sie **DNS migrieren**aus.
+4. Wählen Sie **DNS migrieren** aus.
     
     ![NetworkSolutionsBP-redelegate-1-2-3](../../media/d4a0a7c2-6868-471f-bbf4-16ce2e2348de.png)
   

@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 68a08e94-26c2-4df2-9216-026b8ec907ca
 description: Erfahren Sie, wie Sie Microsoft zum Verwalten der DNS-Einträge Ihrer benutzerdefinierten Domäne in Google-Domänen einrichten können.
-ms.openlocfilehash: 05d77ef4cb78351727870a384f4a28c6e4acc4b0
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: e475e222b6f1c9717008a49b172b0ecac5ec6fc7
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646427"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658440"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-google-domains"></a>Ändern von Namenservern zum Einrichten von Microsoft mit Google-Domänen
 
- **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
+ **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
   
 Befolgen Sie diese Anweisungen, wenn Microsoft Ihre DNS-Einträge für Sie verwalten soll. (Wenn es Ihnen lieber ist, können Sie [alle Ihre DNS-Einträge bei Google Domains verwalten](create-dns-records-at-google-domains.md).)
   
@@ -46,7 +46,7 @@ Bevor Sie Ihre Domäne mit Microsoft verwenden können, müssen wir uns vergewis
     
 1. Wählen Sie **Sign In** aus.
     
-2. Geben Sie Ihre Anmeldeinformationen ein, und wählen Sie erneut **Anmelden**aus.
+2. Geben Sie Ihre Anmeldeinformationen ein, und wählen Sie erneut **Anmelden** aus.
     
 2. Wählen Sie auf der Seite **Domains** im Abschnitt **Domain** die Option **Configure DNS** für die Domäne aus, die Sie bearbeiten möchten. 
     
@@ -134,7 +134,7 @@ Um die Einrichtung Ihrer Domäne bei Microsoft abzuschließen, ändern Sie die N
     
     Wiederholen Sie diesen Vorgang, bis Sie alle vier Namenservereinträge erstellt haben.
     
-4. Klicken Sie auf **Speichern**.
+4. Wählen Sie **Speichern** aus.
     
     ![Google-Domains-BP-Redelegate-1-5](../../media/cb954aa2-12ee-4e90-9b67-184cbe898bbb.png)
   
@@ -143,10 +143,10 @@ Um die Einrichtung Ihrer Domäne bei Microsoft abzuschließen, ändern Sie die N
   
 ### <a name="if-there-are-nameservers-already-listed"></a>Wenn Namenserver BEREITS aufgelistet sind
 
-1. Wenn andere Namenserver aufgeführt sind, wählen Sie **Bearbeiten**aus.
+1. Wenn andere Namenserver aufgeführt sind, wählen Sie **Bearbeiten** aus.
     
     > [!CAUTION]
-    > Follow these steps only if you have existing nameservers other than the four correct nameservers. (Das heißt, löschen Sie nur aktuelle Namenserver, die  *nicht* **ns1.BDM.microsoftonline.com**, **ns2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com**oder **NS4.BDM.microsoftonline.com**sind.) 
+    > Follow these steps only if you have existing nameservers other than the four correct nameservers. (Das heißt, löschen Sie nur aktuelle Namenserver, die  *nicht* **ns1.BDM.microsoftonline.com**, **ns2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com** oder **NS4.BDM.microsoftonline.com** sind.) 
   
     ![Google-Domains-BP-Redelegate-1-6-1](../../media/fb45d120-55ab-42c2-bdb6-19b130c3c7db.png)
   
@@ -175,7 +175,7 @@ Um die Einrichtung Ihrer Domäne bei Microsoft abzuschließen, ändern Sie die N
     
     Wiederholen Sie diesen Vorgang, bis Sie alle vier Namenservereinträge erstellt haben.
     
-6. Klicken Sie auf **Speichern**.
+6. Wählen Sie **Speichern** aus.
     
     ![Google-Domains-BP-Redelegate-1-5](../../media/cb954aa2-12ee-4e90-9b67-184cbe898bbb.png)
   

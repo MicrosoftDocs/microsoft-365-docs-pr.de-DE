@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: Administratoren können erfahren, wie Sie Berechtigungen in der Exchange-Verwaltungskonsole (EAC) in Exchange Online Protection zuweisen oder entfernen.
-ms.openlocfilehash: fb1e0979b77c38d852f35817e01135af888eac68
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 4a1353963e5e3eadc1a07f8b4aa3a765b06c86ec
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201901"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659297"
 ---
 # <a name="manage-role-groups-in-standalone-eop"></a>Verwalten von Rollengruppen in EOP als eigenständige Lösung
 
@@ -34,9 +34,9 @@ Weitere Informationen zu Rollen und Rollengruppen finden Sie unter [Permissions 
 
 - Informationen zum Öffnen eigenständiger EoP PowerShell finden Sie unter [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Insbesondere benötigen Sie die Rolle "Rollenverwaltung", die standardmäßig der Rollengruppe Mitglied (globale Administratoren) zugewiesen ist. Weitere Informationen finden Sie unter [Berechtigungen in eigenständigen EoP](feature-permissions-in-eop.md) und [Verwenden der Exchange-Verwaltungskonsole ändern der Liste der Mitglieder in Rollengruppen](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- Sie müssen Berechtigungen in Exchange Online Protection zugewiesen werden, bevor Sie die Verfahren in diesem Artikel ausführen können. Insbesondere benötigen Sie die Rolle " **Rollenverwaltung** ", die standardmäßig der Rollengruppe " **Organisationsverwaltung** " zugewiesen ist. Weitere Informationen finden Sie unter [Berechtigungen in eigenständigen EoP](feature-permissions-in-eop.md) und [Verwenden der Exchange-Verwaltungskonsole ändern der Liste der Mitglieder in Rollengruppen](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
-- Informationen zu Tastenkombinationen, die möglicherweise für die Verfahren in diesem Thema gelten, finden Sie unter [Tastenkombinationen für das Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Informationen zu Tastenkombinationen, die möglicherweise für die Verfahren in diesem Artikel gelten, finden Sie unter [Tastenkombinationen für das Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > Liegt ein Problem vor? Bitten Sie im [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)-Forum um Hilfe.
@@ -47,7 +47,7 @@ Weitere Informationen zu Rollen und Rollengruppen finden Sie unter [Permissions 
 
 1. Wechseln Sie in der Exchange-Verwaltungskonsole zu **Berechtigungen** \> **Administratorrollen**. Alle Rollengruppen in Ihrer Organisation werden hier aufgelistet.
 
-2. Wählen Sie eine Rollengruppe aus. Im Detailbereich werden der **Name**, die **Beschreibung**, die **zugewiesenen Rollen**und die von der Rollengruppe **verwaltete** angezeigt. Sie können diese Informationen auch anzeigen, indem Sie auf Bearbeitungssymbol **Bearbeiten** klicken ![ ](../../media/ITPro-EAC-EditIcon.png) .
+2. Wählen Sie eine Rollengruppe aus. Im Detailbereich werden der **Name**, die **Beschreibung**, die **zugewiesenen Rollen** und die von der Rollengruppe **verwaltete** angezeigt. Sie können diese Informationen auch anzeigen, indem Sie auf Bearbeitungssymbol **Bearbeiten** klicken ![ ](../../media/ITPro-EAC-EditIcon.png) .
 
 ### <a name="use-the-eac-to-create-role-groups"></a>Erstellen von Rollengruppen mithilfe der Exchange-Verwaltungskonsole
 
@@ -65,9 +65,9 @@ Wenn Sie eine neue Rollengruppe erstellen, können Sie alle Einstellungen selbst
 
     - **Beschreibung**: Geben Sie eine optionale Beschreibung für die Rollengruppe ein.
 
-    - **Rollen**: Klicken Sie auf Add-Symbol **Hinzufügen** ![ ](../../media/ITPro-EAC-AddIcon.png) oderITPro-EAC-RemoveIcon.gif**Entfernen** ![ ](../../media/ITPro-EAC-RemoveIcon.gif) , um die Rollen auszuwählen oder zu ändern, die der Rollengruppe zugewiesen sind.
+    - **Rollen**: Klicken Sie auf Add-Symbol hinzu **fügen** ![ ](../../media/ITPro-EAC-AddIcon.png) oder entfernen  ![ -Symbol Entfernen ](../../media/ITPro-EAC-RemoveIcon.gif) , um die Rollen auszuwählen oder zu ändern, die der Rollengruppe zugewiesen sind.
 
-    - **Mitglieder**: Klicken Sie auf Add-Symbol **Hinzufügen** ![ ](../../media/ITPro-EAC-AddIcon.png) oderITPro-EAC-RemoveIcon.gif**Entfernen** ![ ](../../media/ITPro-EAC-RemoveIcon.gif) , um die Rollengruppenmitgliedschaft zu ändern.
+    - **Mitglieder**: Klicken Sie auf Add-Symbol **Hinzufügen** ![ ](../../media/ITPro-EAC-AddIcon.png) oder entfernen  ![ -Symbol Entfernen ](../../media/ITPro-EAC-RemoveIcon.gif) , um die Rollengruppenmitgliedschaft zu ändern.
 
 3. Wenn Sie fertig sind, klicken Sie auf **Speichern** , um die Rollengruppe zu erstellen.
 
@@ -241,7 +241,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-Ro
 
 Führen Sie einen der folgenden Schritte aus, um zu überprüfen, ob Sie eine Rollengruppe erfolgreich kopiert haben:
 
-- Wechseln Sie in der Exchange-Verwaltungskonsole zu **Berechtigungen** \> **Administratorrollen**, und überprüfen Sie, ob die Rollengruppe aufgeführt (oder nicht aufgeführt) ist. Wählen Sie die Rollengruppe aus, und überprüfen Sie die Einstellungen im Detail **Edit** Bereich, oder klicken Sie auf ![ Bearbeitungssymbol bearbeiten ](../../media/ITPro-EAC-EditIcon.png) , um die Einstellungen zu überprüfen.
+- Wechseln Sie in der Exchange-Verwaltungskonsole zu **Berechtigungen** \> **Administratorrollen**, und überprüfen Sie, ob die Rollengruppe aufgeführt (oder nicht aufgeführt) ist. Wählen Sie die Rollengruppe aus, und überprüfen Sie die Einstellungen im Detail  Bereich, oder klicken Sie auf ![ Bearbeitungssymbol bearbeiten ](../../media/ITPro-EAC-EditIcon.png) , um die Einstellungen zu überprüfen.
 
 - Ersetzen Sie in Exchange Online PowerShell \<Role Group Name\> durch den Namen der Rollengruppe, und führen Sie den folgenden Befehl aus, um zu überprüfen, ob die Rollengruppe vorhanden ist (oder nicht vorhanden ist), und überprüfen Sie die Einstellungen:
 

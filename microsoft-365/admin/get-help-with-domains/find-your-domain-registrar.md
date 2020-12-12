@@ -22,16 +22,16 @@ search.appverid:
 - GEA150
 ms.assetid: b5b633ba-1e56-4a98-8ff5-2acaac63a5c8
 description: Erfahren Sie, wie Sie Ihre Domänenregistrierungsstelle und den DNS-Hostinganbieter mithilfe der InterNIC-Suche finden.
-ms.openlocfilehash: 8fa75800125179f046f3af76eea490d760b9f6cd
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 434e30709b112cf591159a1692540b8ef2b6bb65
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645323"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49655542"
 ---
 # <a name="find-your-domain-registrar"></a>Suchen der Domänenregistrierungsstelle
 
- **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
+ **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
   
 ## <a name="domain-registrar"></a>Domänenregistrierungsstelle
   
@@ -59,7 +59,7 @@ ms.locfileid: "48645323"
     
 3. Suchen Sie auf der Seite **Whois Search Results** nach dem ersten **Name Server**-Eintrag. 
     
-4. Copy the name server (NS) information that appears after the colon (:), and then paste it into the **Search** box at the top of the page. Wählen Sie **Nameserver**und dann **Submit** aus.
+4. Copy the name server (NS) information that appears after the colon (:), and then paste it into the **Search** box at the top of the page. Wählen Sie **Nameserver** und dann **Submit** aus.
     
 5. Suchen Sie auf der Seite **Whois Search Results** nach dem Eintrag **Registrar**. Hier finden Sie Ihren DNS-Hostinganbieter, den DNS-Dienstanbieter, dem der Namenserver für Ihre Domäne gehört. 
     

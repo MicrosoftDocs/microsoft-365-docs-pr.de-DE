@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: d8ff45a2-19e3-413d-aa64-a9982bd6633c
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter Freenom für Microsoft einrichten.
-ms.openlocfilehash: 2fc2407193d41d6e0526aacad0b2b558f1b21bdb
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b958a69d1dad9a0b56cf954d12cd42e40d6d4fea
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646187"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657875"
 ---
 # <a name="create-dns-records-at-freenom-for-microsoft"></a>Erstellen von DNS-Einträgen bei Freenom für Microsoft
 
-[] [Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md) , wenn Sie nicht finden, wonach Sie suchen. 
+[] [Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml) , wenn Sie nicht finden, wonach Sie suchen. 
   
 > [!CAUTION]
 > Die Freenom-Website unterstützt keine SRV-Einträge, was bedeutet, dass mehrere Skype for Business Online und Outlook Web App Funktionen nicht funktionieren. Unabhängig davon, welchen Microsoft-Plan Sie verwenden, gibt es erhebliche Diensteinschränkungen, und Sie möchten möglicherweise zu einem anderen DNS-Hostanbieter wechseln. 
@@ -53,15 +53,15 @@ Bevor Sie Ihre Domäne mit Microsoft verwenden können, müssen wir uns vergewis
     
     ![Freenom login](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
-2. Wählen Sie **Dienste**aus, und wählen Sie dann **Meine Domänen**aus.
+2. Wählen Sie **Dienste** aus, und wählen Sie dann **Meine Domänen** aus.
     
     ![Freenom select Services and My Domains](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   
-3. Wählen Sie für die Domäne, die Sie bearbeiten möchten, die Option **Domäne verwalten**aus.
+3. Wählen Sie für die Domäne, die Sie bearbeiten möchten, die Option **Domäne verwalten** aus.
     
     ![Freenom select Manage Domain](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
   
-4. Wählen Sie **Freenom DNS verwalten**aus.
+4. Wählen Sie **Freenom DNS verwalten** aus.
     
     ![Freenom Manage Freenom DNS](../../media/9854a511-27e3-4658-8903-34b3d425096d.png)
   
@@ -77,7 +77,7 @@ Bevor Sie Ihre Domäne mit Microsoft verwenden können, müssen wir uns vergewis
    
     ![Freenom TXT values for verification](../../media/650098df-b3aa-47e5-9763-7fde24e34c3f.png)
   
-7. Wählen Sie **Save Changes**aus.
+7. Wählen Sie **Save Changes** aus.
     
     ![Freenom TXT record Save Changes](../../media/b1a63f9a-4578-491a-9554-c40f73b37e09.png)
   
@@ -112,23 +112,23 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     ![Freenom login](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
-2. Wählen Sie **Dienste**aus, und wählen Sie dann **Meine Domänen**aus.
+2. Wählen Sie **Dienste** aus, und wählen Sie dann **Meine Domänen** aus.
     
     ![Freenom select Services and My Domains](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   
-3. Wählen Sie für die Domäne, die Sie bearbeiten möchten, die Option **Domäne verwalten**aus.
+3. Wählen Sie für die Domäne, die Sie bearbeiten möchten, die Option **Domäne verwalten** aus.
     
     ![Freenom select Manage Domain](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
   
-4. Legen Sie den Namen dient für Ihre Domäne auf die standardmäßigen Freenom Namenserver. Wählen Sie **Verwaltungs Tools**aus, und wählen Sie dann Namen **Server**aus.
+4. Legen Sie den Namen dient für Ihre Domäne auf die standardmäßigen Freenom Namenserver. Wählen Sie **Verwaltungs Tools** aus, und wählen Sie dann Namen **Server** aus.
     
     ![Freenom Nameservers setting](../../media/a6ae877a-c248-42b9-bae9-210a80cd01e7.png)
   
-5. Stellen Sie sicher, dass **Standardnamen Server verwenden** ausgewählt ist, und wählen Sie dann Namen von Namen **Servern ändern**aus.
+5. Stellen Sie sicher, dass **Standardnamen Server verwenden** ausgewählt ist, und wählen Sie dann Namen von Namen **Servern ändern** aus.
     
     ![Freenom Change Nameservers](../../media/0ef90d84-c0a0-4ef9-9e4c-43ef0aac3a2e.png)
   
-6. Wählen Sie **Freenom DNS verwalten**aus.
+6. Wählen Sie **Freenom DNS verwalten** aus.
     
     ![Freenom wählen Sie Manage Freenom DNS aus.](../../media/f55a8053-2411-45da-a357-776c6699f721.png)
   
@@ -144,11 +144,11 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
    
    ![Freenom MX record](../../media/8896c4a9-b3dd-45ed-9916-f7da2715ba8c.png)
   
-9. Wählen Sie **Save Changes**aus.
+9. Wählen Sie **Save Changes** aus.
     
     ![Freenom MX record Save Changes](../../media/7aa0a464-d136-417f-be40-48d3f728eeb7.png)
   
-10. Wenn es weitere MX-Einträge gibt, löschen Sie sie alle: Wählen Sie für jeden Eintrag Delete (Löschen) aus. Wählen Sie für jeden Datensatz **Löschen**aus. Wenn die Nachricht möchten **Sie diesen Eintrag wirklich entfernen?** angezeigt wird, klicken Sie auf **OK**.
+10. Wenn es weitere MX-Einträge gibt, löschen Sie sie alle: Wählen Sie für jeden Eintrag Delete (Löschen) aus. Wählen Sie für jeden Datensatz **Löschen** aus. Wenn die Nachricht möchten **Sie diesen Eintrag wirklich entfernen?** angezeigt wird, klicken Sie auf **OK**.
     
 ## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>Hinzufügen der für Microsoft erforderlichen CNAME-Einträge
 <a name="bkmk_cname"> </a>
@@ -157,15 +157,15 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     ![Freenom login](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
-2. Wählen Sie **Dienste**aus, und wählen Sie dann **Meine Domänen**aus.
+2. Wählen Sie **Dienste** aus, und wählen Sie dann **Meine Domänen** aus.
     
     ![Freenom select Services and My Domains](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   
-3. Wählen Sie für die Domäne, die Sie bearbeiten möchten, die Option **Domäne verwalten**aus.
+3. Wählen Sie für die Domäne, die Sie bearbeiten möchten, die Option **Domäne verwalten** aus.
     
     ![Freenom select Manage Domain](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
   
-4. Wählen Sie **Freenom DNS verwalten**aus.
+4. Wählen Sie **Freenom DNS verwalten** aus.
     
     ![Freenom wählen Sie Manage Freenom DNS aus.](../../media/5e7bc3a7-0d5e-431b-bb27-da3b0f316d01.png)
   
@@ -185,7 +185,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
    
     ![Freenom CNAME values](../../media/752fc682-e3f2-4b9c-9253-bf1ba2d414e9.png)
   
-7. Wählen Sie **Save Changes**aus.
+7. Wählen Sie **Save Changes** aus.
     
     ![Freenom CNAME Save Changes](../../media/68103fd2-0f5f-4aac-a875-25157c6bbdd2.png)
   
@@ -203,15 +203,15 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     ![Freenom login](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
-2. Wählen Sie **Dienste**aus, und wählen Sie dann **Meine Domänen**aus.
+2. Wählen Sie **Dienste** aus, und wählen Sie dann **Meine Domänen** aus.
     
     ![Freenom select Services and My Domains](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   
-3. Wählen Sie für die Domäne, die Sie bearbeiten möchten, die Option **Domäne verwalten**aus.
+3. Wählen Sie für die Domäne, die Sie bearbeiten möchten, die Option **Domäne verwalten** aus.
     
     ![Freenom select Manage Domain](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
   
-4. Wählen Sie **Freenom DNS verwalten**aus.
+4. Wählen Sie **Freenom DNS verwalten** aus.
     
     ![Freenom wählen Sie Manage Freenom DNS aus.](../../media/94809955-0315-409c-a15d-703a2fe4c4ed.png)
   
@@ -227,7 +227,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
    
     ![Freenom TXT values for SPF](../../media/1b3b1199-9104-4ca1-acdb-786d139c21ac.png)
   
-7. Wählen Sie **Save Changes**aus.
+7. Wählen Sie **Save Changes** aus.
     
     ![Freenom TXT record for SPF Save Changes](../../media/e2fc52b1-0dcb-4595-9a4c-fca5e2ef9f97.png)
   

@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratoren erfahren, wie Sie Standard mäßige und strikte Richtlinieneinstellungen auf die Schutzfunktionen von Exchange Online Protection (EoP) und Microsoft Defender für Office 365 anwenden können.
-ms.openlocfilehash: fb613916ec375214b33b8b842c6817561920715d
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: a77201835652fb36822fbc603f5211c1f7a9521b
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616044"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659234"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Voreingestellte Sicherheitsrichtlinien in EoP und Microsoft Defender für Office 365
 
@@ -104,11 +104,13 @@ Mit anderen Worten: mit den Einstellungen der **strengen Schutz** Richtlinie wer
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Sie müssen Berechtigungen zugewiesen haben, bevor Sie die Verfahren in diesem Artikel ausführen können:
+- Bevor Sie die Verfahren in diesem Artikel ausführen können, müssen Ihnen im Security & Compliance Center Berechtigungen zugewiesen werden.
+  - Zum Konfigurieren vordefinierter Sicherheitsrichtlinien müssen Sie Mitglied der Rollengruppen " **Organisationsverwaltung** " oder " **Sicherheits Administrator** " sein.
+  - Für den schreibgeschützten Zugriff auf vordefinierte Sicherheitsrichtlinien müssen Sie Mitglied der **globalen Leser** Rollengruppe sein.
 
-  - Zum Konfigurieren vordefinierter Sicherheitsrichtlinien müssen Sie Mitglied der Rolle **Organisationsverwaltung** oder **Sicherheits Administrator** im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)sein.
+  Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-  - Für den schreibgeschützten Zugriff auf vordefinierte Sicherheitsrichtlinien müssen Sie Mitglied der Rollengruppe " **globale Leser** " im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)sein.
+  **Hinweis**: beim Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance Center _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 ### <a name="use-the-security--compliance-center-to-assign-preset-security-policies-to-users"></a>Zuweisen von vordefinierten Sicherheitsrichtlinien zu Benutzern mithilfe des Security & Compliance Centers
 

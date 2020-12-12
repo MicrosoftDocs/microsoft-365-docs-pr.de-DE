@@ -22,16 +22,16 @@ search.appverid:
 - BEA160
 ms.assetid: 48e09394-2287-4b3c-9853-21eadf61277e
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste bei Netregistry für Microsoft einrichten.
-ms.openlocfilehash: 016df6c61fd6934c1bc46b55c7e110d8442cf1d5
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 857645c685cce946b39a7c3dcadb0a45b43686cf
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645971"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657803"
 ---
 # <a name="create-dns-records-at-netregistry-for-microsoft"></a>Erstellen von DNS-Einträgen bei Netregistry für Microsoft
 
-[] [Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md) , wenn Sie nicht finden, wonach Sie suchen. 
+[] [Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml) , wenn Sie nicht finden, wonach Sie suchen. 
   
 Wenn Netregistry Ihr DNS-Hostinganbieter ist, führen Sie die in diesem Artikel aufgeführten Schritte aus, um Ihre Domäne zu überprüfen und DNS-Einträge für E-Mail, Skype for Business Online und andere Dienste einzurichten.
   
@@ -73,7 +73,7 @@ Bevor Sie Ihre Domäne mit Microsoft verwenden können, müssen wir uns vergewis
     
     ![Netregistry_selectZoneManager](../../media/e18c32f9-c1e7-4aa2-9aa6-8dc9c5ea44af.png)
   
-4. Wählen Sie unter **Zonen Eintrag hinzufügen**die Option **TXT-Eintrag** in der Liste aus, und wählen Sie dann **neuen Datensatz erstellen**aus.
+4. Wählen Sie unter **Zonen Eintrag hinzufügen** die Option **TXT-Eintrag** in der Liste aus, und wählen Sie dann **neuen Datensatz erstellen** aus.
     
     ![Netregistry_TXT_select](../../media/eb1761e6-9deb-4631-8deb-bc5d09926722.png)
   
@@ -88,7 +88,7 @@ Bevor Sie Ihre Domäne mit Microsoft verwenden können, müssen wir uns vergewis
        
     ![Netregistry_verificationTXTvalues](../../media/cfe8b05a-fa8b-4dba-9554-7a3466e6c012.png)
   
-6. Wählen Sie **Add Record**aus.
+6. Wählen Sie **Add Record** aus.
     
 Nachdem Sie den Eintrag auf der Website Ihrer Domänenregistrierungsstelle hinzugefügt haben, kehren Sie zu Microsoft zurück und fordern Sie den Eintrag an.
   
@@ -126,11 +126,11 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     ![Netregistry_selectZoneManager](../../media/914021f6-dff3-4640-84d6-b83cf8f61cf1.png)
   
-4. Entfernen Sie unter **aktuelle Zoneneinträge**die standardmäßigen MX-Einträge, indem Sie neben jedem MX-Eintrag in der Liste **Entfernen** auswählen. 
+4. Entfernen Sie unter **aktuelle Zoneneinträge** die standardmäßigen MX-Einträge, indem Sie neben jedem MX-Eintrag in der Liste **Entfernen** auswählen. 
     
     ![Netregistry_MX_remove](../../media/494670a9-8b8d-46e5-8136-05e82212a115.png)
   
-5. Wählen Sie unter **Zonen Eintrag hinzufügen**die Option **MX-Eintrag** in der Liste aus, und wählen Sie dann **neuen Datensatz erstellen**aus.
+5. Wählen Sie unter **Zonen Eintrag hinzufügen** die Option **MX-Eintrag** in der Liste aus, und wählen Sie dann **neuen Datensatz erstellen** aus.
     
     ![Netregistry_MX_select](../../media/29b60eb9-6c40-490f-9669-e65b65962f37.png)
   
@@ -161,7 +161,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     ![Netregistry_selectZoneManager](../../media/58384add-0a9d-472b-a5d0-51ec8155fd41.png)
   
-4. Wählen Sie unter  **Zonen Eintrag hinzufügen**die Option **CNAME-Eintrag** in der Liste aus, und wählen Sie dann **neuen Datensatz erstellen**aus.
+4. Wählen Sie unter  **Zonen Eintrag hinzufügen** die Option **CNAME-Eintrag** in der Liste aus, und wählen Sie dann **neuen Datensatz erstellen** aus.
     
     ![Netregistry_CNAME_CreateNewRecord](../../media/7b4f133f-45da-48da-93c0-62f57c786165.png)
   
@@ -177,7 +177,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
        
     ![Netregistry_CNAME_values](../../media/93c479f0-3ce2-491a-9113-6dde1cd7131b.png)
       
-6. Wählen Sie **Add Record**aus.
+6. Wählen Sie **Add Record** aus.
     
     ![Netregistry_CNAME_values_AddRecord](../../media/046c8c64-ea71-4530-9fc6-69f0c70993b6.png)
   
@@ -203,7 +203,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     ![Netregistry_selectZoneManager](../../media/372e5918-b6dc-4268-8f9a-0aa71d65deef.png)
   
-4. Wählen Sie unter **Zonen Eintrag hinzufügen**die Option **TXT-Eintrag** in der Liste aus, und wählen Sie dann **neuen Datensatz erstellen**aus.
+4. Wählen Sie unter **Zonen Eintrag hinzufügen** die Option **TXT-Eintrag** in der Liste aus, und wählen Sie dann **neuen Datensatz erstellen** aus.
     
     ![Netregistry_TXT_select](../../media/a2930d03-853a-4f1e-9205-d00f25bed35f.png)
   
@@ -229,7 +229,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     ![Netregistry_login](../../media/accf6584-e5f4-4d68-a641-0f8847f8370f.png)
   
-2. Wählen Sie neben der Domäne, die Sie verwalten möchten, die Option  **Manage**aus.
+2. Wählen Sie neben der Domäne, die Sie verwalten möchten, die Option  **Manage** aus.
     
     ![Netregistry_Manage](../../media/e0ddc79e-0123-4e24-8380-9645bdb41aac.png)
   
@@ -237,7 +237,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     ![Netregistry_selectZoneManager](../../media/f122888b-3cc5-40ec-adac-0ede04799d9a.png)
   
-4. Wählen Sie unter  **Zonen Eintrag hinzufügen**die Option **SRV-Eintrag** in der Liste aus, und wählen Sie dann **neuen Datensatz erstellen**aus.
+4. Wählen Sie unter  **Zonen Eintrag hinzufügen** die Option **SRV-Eintrag** in der Liste aus, und wählen Sie dann **neuen Datensatz erstellen** aus.
     
     ![Netregistry_SRV_select](../../media/e5dab850-acd1-48b8-8b4a-e3b9777cf508.png)
   
@@ -248,8 +248,8 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
   
     |**Typ**|**Name**|**TTL (SEC)**|**Priority**|**Weight**|**Port**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV (Dienst)  <br/> |_sip._tls  <br/> |3600 (Sekunden)  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |SRV (Dienst)  <br/> |_sipfederationtls._tcp  <br/> |3600 (Sekunden)  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |SRV (Dienst)  <br/> |_sip._tls  <br/> |3600 (Sekunden)  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |SRV (Dienst)  <br/> |_sipfederationtls._tcp  <br/> |3600 (Sekunden)  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
        
     ![Netregistry_SRV_values](../../media/49292846-1598-4b8c-9940-db6e10675753.png)
   

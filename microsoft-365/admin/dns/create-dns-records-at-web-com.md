@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter Web.com für Microsoft einrichten.
-ms.openlocfilehash: 25df88e05e96e2394628bf89c8cc07af2d0eac1e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 943070f3790f532a0cc686270e0ecdea08f802fd
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645755"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656891"
 ---
 # <a name="create-dns-records-at-webcom-for-microsoft"></a>Erstellen von DNS-Einträgen bei Web.com für Microsoft
 
- **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
+ **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
   
 Wenn Web.com Ihr DNS-Hostinganbieter ist, führen Sie die Schritte in diesem Artikel aus, um Ihre Domäne zu überprüfen und DNS-Einträge für e-Mail, Skype for Business Online usw. einzurichten.
   
@@ -79,9 +79,9 @@ Bevor Sie Ihre Domäne mit Microsoft verwenden können, müssen wir uns vergewis
   
 1. Um zu beginnen, navigieren Sie über [diesen Link](https://checkout.web.com/manage-it/index.jsp)zu ihrer Domänen Seite bei Web.com. Melden Sie sich zuerst an.
   
-2. Wählen Sie auf der Seite **Konto-Manager** die Option **meine Domänennamen**aus. 
+2. Wählen Sie auf der Seite **Konto-Manager** die Option **meine Domänennamen** aus. 
   
-3. Wählen Sie unter * * Manage * My Domain * * * die Option **Erweiterte DNS-Einträge bearbeiten**aus.
+3. Wählen Sie unter * * Manage * My Domain * * * die Option **Erweiterte DNS-Einträge bearbeiten** aus.
 
   
 4. Klicken Sie auf der Seite **Domänennamen** unter **Text (TXT-Einträge)** auf **TXT-Einträge bearbeiten**, und wählen Sie dann die Werte aus der folgenden Tabelle aus. 
@@ -91,7 +91,7 @@ Bevor Sie Ihre Domäne mit Microsoft verwenden können, müssen wir uns vergewis
     |@  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihre spezifischen **Ziel-oder Punkt-zu-Adresse** -Werte aus der Tabelle.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)    |
   
     
-5. Wählen Sie **weiter**aus.
+5. Wählen Sie **weiter** aus.
   
   
 6. Warten Sie einige Minuten, bevor Sie den neuen TXT-Eintrag überprüfen, damit der soeben erstellte Eintrag über das Internet aktualisiert werden kann.
@@ -123,22 +123,22 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
 
 1. Um zu beginnen, navigieren Sie über [diesen Link](https://checkout.web.com/manage-it/index.jsp)zu ihrer Domänen Seite bei Web.com. Melden Sie sich zuerst an.
   
-2. Wählen Sie auf der Seite **Konto-Manager** die Option **meine Domänennamen**aus. 
+2. Wählen Sie auf der Seite **Konto-Manager** die Option **meine Domänennamen** aus. 
   
-3. Wählen Sie unter * * Manage * My Domain * * * die Option **Erweiterte DNS-Einträge bearbeiten**aus.
+3. Wählen Sie unter * * Manage * My Domain * * * die Option **Erweiterte DNS-Einträge bearbeiten** aus.
 
 4. Klicken Sie unter **e-Mail-Server (MX Records)** auf **MX-Einträge bearbeiten**, und wählen Sie dann die Werte aus der folgenden Tabelle aus. 
     
     |**Priorität**|**TTL**|**Mail server**|
     |:-----|:-----|:-----|
-    |1  <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |3600  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Hinweis:** Holen Sie sich Ihr  *\<domain-key\>*  Microsoft-Konto.   [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md) |
+    |1   <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |3600  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Hinweis:** Holen Sie sich Ihr  *\<domain-key\>*  Microsoft-Konto.   [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md) |
    
 
-5. Klicken Sie auf **Speichern**.
+5. Wählen Sie **Speichern** aus.
   
-6. Wenn im Abschnitt **MX Records** weitere MX-Einträge aufgeführt sind, aktivieren Sie das Kontrollkästchen neben dem Eintrag unter **Löschen**, und wählen Sie **Speichern**aus. 
+6. Wenn im Abschnitt **MX Records** weitere MX-Einträge aufgeführt sind, aktivieren Sie das Kontrollkästchen neben dem Eintrag unter **Löschen**, und wählen Sie **Speichern** aus. 
   
-7. Wählen Sie auf dem Bestätigungsbildschirm die Option **Änderungen speichern**aus. 
+7. Wählen Sie auf dem Bestätigungsbildschirm die Option **Änderungen speichern** aus. 
 
   
 ## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Hinzufügen der sechs CNAME-Einträge, die für Microsoft erforderlich sind
@@ -146,9 +146,9 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
 
 1. Um zu beginnen, navigieren Sie über [diesen Link](https://checkout.web.com/manage-it/index.jsp)zu ihrer Domänen Seite bei Web.com. Sie werden aufgefordert, sich zuerst anzumelden.
      
-2. Wählen Sie auf der Seite **Konto-Manager** die Option **meine Domänennamen**aus. 
+2. Wählen Sie auf der Seite **Konto-Manager** die Option **meine Domänennamen** aus. 
   
-3. Wählen Sie unter * * Manage * My Domain * * * die Option **Erweiterte DNS-Einträge bearbeiten**aus.
+3. Wählen Sie unter * * Manage * My Domain * * * die Option **Erweiterte DNS-Einträge bearbeiten** aus.
 
 4. Fügen Sie den ersten der sechs CNAME-Einträge hinzu.
     
@@ -165,7 +165,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     |msoid  <br/> |3600  <br/> |@ (keine)  <br/> |clientconfig.microsoftonline-p.net  <br/> |
     
   
-5. Wählen Sie **weiter**aus.
+5. Wählen Sie **weiter** aus.
   
 6. Fügen Sie die fünf anderen CNAME-Einträge hinzu.
 
@@ -179,9 +179,9 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
 1. Um zu beginnen, navigieren Sie über [diesen Link](https://checkout.web.com/manage-it/index.jsp)zu ihrer Domänen Seite bei Web.com. Melden Sie sich zuerst an.
     
   
-2. Wählen Sie auf der Seite **Konto-Manager** die Option **meine Domänennamen**aus. 
+2. Wählen Sie auf der Seite **Konto-Manager** die Option **meine Domänennamen** aus. 
   
-3. Wählen Sie unter * * Manage * My Domain * * * die Option **Erweiterte DNS-Einträge bearbeiten**aus.
+3. Wählen Sie unter * * Manage * My Domain * * * die Option **Erweiterte DNS-Einträge bearbeiten** aus.
 
   
 4. Klicken Sie auf der Seite **Domänennamen** unter **Text (TXT-Einträge)** auf **TXT-Einträge bearbeiten**, und wählen Sie dann die Werte aus der folgenden Tabelle aus.   
@@ -191,7 +191,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     |@  <br/> |3600  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Hinweis:** Es wird empfohlen, diesen Eintrag zu kopieren und einzufügen, damit alle Abstände korrekt übernommen werden.   |
 
  
-5. Wählen Sie **weiter**aus.
+5. Wählen Sie **weiter** aus.
 
 6. Wählen Sie **Änderungen speichern** aus.
     
@@ -205,9 +205,9 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
 
 1. Um zu beginnen, navigieren Sie über [diesen Link](https://checkout.web.com/manage-it/index.jsp)zu ihrer Domänen Seite bei Web.com. Melden Sie sich zuerst an.
       
-2. Wählen Sie auf der Seite **Konto-Manager** die Option **meine Domänennamen**aus. 
+2. Wählen Sie auf der Seite **Konto-Manager** die Option **meine Domänennamen** aus. 
   
-3. Wählen Sie unter * * Manage * My Domain * * * die Option **Erweiterte DNS-Einträge bearbeiten**aus.
+3. Wählen Sie unter * * Manage * My Domain * * * die Option **Erweiterte DNS-Einträge bearbeiten** aus.
   
 4. Fügen Sie den ersten der zwei SRV-Einträge hinzu.
 
@@ -215,13 +215,13 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
         
     |**Service**|**Protocol**|**TTL**|**Priority**|**Weight**|**Port**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip |_tls |3600 | 100|1 |443 |sipfed.online.lync.com  |
-    |_sipfederationtls |_tcp |3600 |100 |1 |5061 | sipfed.online.lync.com |
+    |_sip |_tls |3600 | 100|1  |443 |sipfed.online.lync.com  |
+    |_sipfederationtls |_tcp |3600 |100 |1  |5061 | sipfed.online.lync.com |
 
   
 5. Fügen Sie den anderen SRV-Eintrag hinzu, indem Sie die Werte aus der zweiten Zeile der Tabelle auswählen. 
   
-6. Wählen Sie **weiter**aus.
+6. Wählen Sie **weiter** aus.
 
 7. Wählen Sie **Änderungen speichern** aus.
 

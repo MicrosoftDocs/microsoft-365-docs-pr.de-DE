@@ -14,12 +14,12 @@ ms.custom:
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Administratoren können erfahren, wie Sie eigenständige Exchange Online Schutz (EoP) einrichten, um lokale e-Mail-Umgebungen zu schützen.
-ms.openlocfilehash: ab34d715bd8196bb2376926402f6a88018d1d7ae
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 2d63057e77e6965616e19452de824a94ba0ccda8
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615672"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659417"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>Einrichten des eigenständigen EoP-Diensts
 
@@ -29,7 +29,7 @@ ms.locfileid: "49615672"
 In diesem Thema wird erläutert, wie Sie eigenständige Exchange Online Schutz einrichten (EoP). Wenn Sie vom Office 365-Assistenten für Domänen hierher geführt wurden, wechseln Sie zurück zum Office 365-Assistenten für Domänen, wenn Sie Exchange Online Protection nicht verwenden möchten. Wenn Sie weitere Informationen zum Konfigurieren von Connectors suchen, finden Sie diese unter [Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
 > [!NOTE]
-> In diesem Thema wird davon ausgegangen, dass lokale Postfächer verwendet werden, die mit EOP geschützt werden sollen - dies wird als eigenständiges Szenario bezeichnet. Wenn Sie mit Exchange Online alle Postfächer in der Cloud hosten möchten, müssen Sie nicht alle hier beschriebenen Schritte ausführen. Wechseln Sie zu [Exchange Online Pläne](https://products.office.com/exchange/compare-microsoft-exchange-online-plans) zum Registrieren und kaufen von Cloud-Postfächern.
+> In diesem Thema wird davon ausgegangen, dass lokale Postfächer verwendet werden, die mit EOP geschützt werden sollen - dies wird als eigenständiges Szenario bezeichnet. Wenn Sie alle ihre Postfächer in der Cloud mit Exchange Online hosten möchten, müssen Sie nicht alle Schritte in diesem Artikel ausführen. Wechseln Sie zu [Exchange Online Pläne](https://products.office.com/exchange/compare-microsoft-exchange-online-plans) zum Registrieren und kaufen von Cloud-Postfächern.
 >
 > Wenn Sie die Postfächer teils lokal und teils in der Cloud hosten möchten, handelt es sich um ein hybrides Szenario. Für ein solches Szenario sind erweiterte Nachrichtenflusseinstellungen erforderlich. [Exchange Server hybridbereitstellungen](https://docs.microsoft.com/exchange/exchange-hybrid) erläutert den Hybriden Nachrichtenfluss und enthält Links zu Ressourcen, die zeigen, wie es eingerichtet wird.
 
@@ -37,11 +37,11 @@ In diesem Thema wird erläutert, wie Sie eigenständige Exchange Online Schutz e
 
 - Geschätzte Zeit bis zum Abschließen dieser Aufgabe: 1 Stunde
 
-- Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Insbesondere benötigen Sie die Rolle "Remote" und "akzeptierte Domänen", die standardmäßig den Rollengruppen MailFlowAdministrator und Mitglied (globale Administratoren) zugewiesen ist. Weitere Informationen finden Sie unter [Berechtigungen in eigenständigen EoP](feature-permissions-in-eop.md) und [Verwenden der Exchange-Verwaltungskonsole ändern der Liste der Mitglieder in Rollengruppen](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- Sie müssen Berechtigungen in Exchange Online Protection zugewiesen werden, bevor Sie die Verfahren in diesem Artikel ausführen können. Insbesondere benötigen Sie die Rolle " **Remote" und "akzeptierte Domänen** ", die standardmäßig den Rollengruppen " **Organisationsverwaltung** " (globale Administratoren) und **"Nachrichtenfluss-Administrator** " zugewiesen ist. Weitere Informationen finden Sie unter [Berechtigungen in eigenständigen EoP](feature-permissions-in-eop.md) und [Verwenden der Exchange-Verwaltungskonsole ändern der Liste der Mitglieder in Rollengruppen](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
 - Wenn Sie sich noch nicht bei EOP registriert haben, rufen Sie [Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection) auf, und erwerben oder testen Sie den Dienst.
 
-- Informationen zu Tastenkombinationen, die möglicherweise für die Verfahren in diesem Thema gelten, finden Sie unter [Tastenkombinationen für das Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Informationen zu Tastenkombinationen, die möglicherweise für die Verfahren in diesem Artikel gelten, finden Sie unter [Tastenkombinationen für das Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > Liegt ein Problem vor? Bitten Sie im [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)-Forum um Hilfe.

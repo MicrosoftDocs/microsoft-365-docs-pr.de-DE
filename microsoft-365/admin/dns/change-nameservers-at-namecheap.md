@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 84f467f6-28cf-40f0-94d0-a2a27ddfc2e7
 description: 'Erfahren Sie, wie Sie Ihre benutzerdefinierte Microsoft-Domäne mit Namecheap einrichten, wenn Microsoft Ihre DNS-Einträge verwalten soll. '
-ms.openlocfilehash: e305abb7768b286dbd24336c1dab39d919f9a0ac
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 0dec28c99bd49d3ba558e11afac8142c7df96591
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646451"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657984"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-namecheap"></a>Ändern von Namenservern zum Einrichten von Microsoft mit Namecheap
 
- **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen.
+ **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen.
   
 Befolgen Sie diese Anweisungen, wenn Microsoft Ihre DNS-Einträge für Sie verwalten soll. (Wenn es Ihnen lieber ist, können Sie [alle Ihre Microsoft-DNS-Einträge bei Namecheap verwalten](create-dns-records-at-namecheap.md).)
   
@@ -41,26 +41,26 @@ Befolgen Sie diese Anweisungen, wenn Microsoft Ihre DNS-Einträge für Sie verwa
     
     ![Namecheap-BP-Configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
-2. Klicken Sie auf der **Start** Seite unter **Konto**auf **Domänenliste** in der Dropdownliste. 
+2. Klicken Sie auf der **Start** Seite unter **Konto** auf **Domänenliste** in der Dropdownliste. 
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. Suchen Sie auf der Seite **Domänenliste** den Namen der Domäne, die Sie bearbeiten möchten, und wählen Sie dann **Verwalten**aus.
+3. Suchen Sie auf der Seite **Domänenliste** den Namen der Domäne, die Sie bearbeiten möchten, und wählen Sie dann **Verwalten** aus.
     
     ![Namecheap-BP-Configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
-4. Wählen Sie **Advanced DNS**aus.
+4. Wählen Sie **Advanced DNS** aus.
     
     ![Namecheap-BP-Configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
-5. Wählen Sie im Abschnitt **Host Einträge** die Option **neuen Datensatz hinzufügen**aus.
+5. Wählen Sie im Abschnitt **Host Einträge** die Option **neuen Datensatz hinzufügen** aus.
     
     ![Namecheap-BP-Configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
 6. Wählen Sie in der Dropdownliste **Type** den Eintrag **TXT Record** aus.
     
     > [!NOTE]
-    > Die Dropdownliste **Typ** wird automatisch angezeigt, wenn Sie **neuen Datensatz hinzufügen**auswählen.
+    > Die Dropdownliste **Typ** wird automatisch angezeigt, wenn Sie **neuen Datensatz hinzufügen** auswählen.
   
     ![Namecheap-BP-Verify-1-1](../../media/a5b40973-19b5-4c32-8e1b-1521aa971836.png)
   
@@ -116,15 +116,15 @@ Um die Einrichtung Ihrer Domäne bei Microsoft abzuschließen, ändern Sie die N
     
     ![Namecheap-BP-Configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
-2. Klicken Sie auf der **Start** Seite unter **Konto**auf **Domänenliste** in der Dropdownliste. 
+2. Klicken Sie auf der **Start** Seite unter **Konto** auf **Domänenliste** in der Dropdownliste. 
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. Suchen Sie auf der Seite **Domänenliste** den Namen der Domäne, die Sie bearbeiten möchten, und wählen Sie dann **Verwalten**aus.
+3. Suchen Sie auf der Seite **Domänenliste** den Namen der Domäne, die Sie bearbeiten möchten, und wählen Sie dann **Verwalten** aus.
     
     ![Namecheap-BP-Configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
-4. Wählen Sie **Domäne**aus.
+4. Wählen Sie **Domäne** aus.
     
     ![Namecheap-BP-Redelegate-1-1](../../media/59588406-794e-4ae4-8526-35e3111b5791.png)
   

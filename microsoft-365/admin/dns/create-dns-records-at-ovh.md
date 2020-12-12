@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter OVH für Microsoft einrichten.
-ms.openlocfilehash: 87a2a731a253fdc0593a1aae8020e615dca63c4a
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 14c3796ff6686ae0d98ec32ec6ddf6afc004a3c3
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645815"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657779"
 ---
 # <a name="create-dns-records-at-ovh-for-microsoft"></a>Erstellen von DNS-Einträgen bei OVH für Microsoft
 
-[] [Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md) , wenn Sie nicht finden, wonach Sie suchen. 
+[] [Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml) , wenn Sie nicht finden, wonach Sie suchen. 
   
 Wenn OVH Ihr DNS-Hostinganbieter ist, führen Sie die in diesem Artikel aufgeführten Schritte aus, um Ihre Domäne zu überprüfen und DNS-Einträge für E-Mail, Skype for Business Online und andere Dienste einzurichten.
   
@@ -64,15 +64,15 @@ Bevor Sie Ihre Domäne mit Microsoft verwenden können, müssen wir uns vergewis
     
     ![OVH login](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-2. Wählen Sie unter **Domänen**den Namen der Domäne aus, die Sie bearbeiten möchten.
+2. Wählen Sie unter **Domänen** den Namen der Domäne aus, die Sie bearbeiten möchten.
     
     ![OVH Select the domain](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
-3. Wählen Sie **DNS-Zone**aus.
+3. Wählen Sie **DNS-Zone** aus.
     
     ![OVH select DNS zone](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
-4. Wählen Sie **Eintrag hinzufügen**aus.
+4. Wählen Sie **Eintrag hinzufügen** aus.
     
     ![OVH Add an entry](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
@@ -120,19 +120,19 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     ![OVH login](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-2. Wählen Sie unter **Domänen**den Namen der Domäne aus, die Sie bearbeiten möchten.
+2. Wählen Sie unter **Domänen** den Namen der Domäne aus, die Sie bearbeiten möchten.
     
     ![OVH Select the domain](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
-3. Wählen Sie **DNS-Zone**aus.
+3. Wählen Sie **DNS-Zone** aus.
     
     ![OVH select DNS zone](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
-4. Wählen Sie **Eintrag hinzufügen**aus.
+4. Wählen Sie **Eintrag hinzufügen** aus.
     
     ![OVH Add an entry](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
-5. Wählen Sie **MX**aus.
+5. Wählen Sie **MX** aus.
     
     ![OVH MX record type](../../media/29b5e54e-440a-41f2-9eb9-3de573922ddf.png)
   
@@ -168,19 +168,19 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     ![OVH login](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-2. Wählen Sie unter **Domänen**den Namen der Domäne aus, die Sie bearbeiten möchten.
+2. Wählen Sie unter **Domänen** den Namen der Domäne aus, die Sie bearbeiten möchten.
     
     ![OVH Select the domain](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
-3. Wählen Sie **DNS-Zone**aus.
+3. Wählen Sie **DNS-Zone** aus.
     
     ![OVH select DNS zone](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
-4. Wählen Sie **Eintrag hinzufügen**aus.
+4. Wählen Sie **Eintrag hinzufügen** aus.
     
     ![OVH Add an entry](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
-5. Wählen Sie **CNAME**aus.
+5. Wählen Sie **CNAME** aus.
     
     ![OVH add CNAME record type](../../media/33c7ac74-18d7-4ae1-9e27-1c0f9773a3c3.png)
   
@@ -218,19 +218,19 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     ![OVH login](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-2. Wählen Sie unter **Domänen**den Namen der Domäne aus, die Sie bearbeiten möchten.
+2. Wählen Sie unter **Domänen** den Namen der Domäne aus, die Sie bearbeiten möchten.
     
     ![OVH Select the domain](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
-3. Wählen Sie **DNS-Zone**aus.
+3. Wählen Sie **DNS-Zone** aus.
     
     ![OVH select DNS zone](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
-4. Wählen Sie **Eintrag hinzufügen**aus.
+4. Wählen Sie **Eintrag hinzufügen** aus.
     
     ![OVH Add an entry](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
-5. Wählen Sie **txt**aus.
+5. Wählen Sie **txt** aus.
     
 6. Geben Sie in den Feldern für den neuen Eintrag die folgenden Werte ein. Sie können die Werte auch kopieren und einfügen.
     
@@ -255,19 +255,19 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     ![OVH login](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-2. Wählen Sie unter **Domänen**den Namen der Domäne aus, die Sie bearbeiten möchten.
+2. Wählen Sie unter **Domänen** den Namen der Domäne aus, die Sie bearbeiten möchten.
     
     ![OVH Select the domain](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
-3. Wählen Sie **DNS-Zone**aus.
+3. Wählen Sie **DNS-Zone** aus.
     
     ![OVH select DNS zone](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
-4. Wählen Sie **Eintrag hinzufügen**aus.
+4. Wählen Sie **Eintrag hinzufügen** aus.
     
     ![OVH Add an entry](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
-5. Wählen Sie **SRV**aus.
+5. Wählen Sie **SRV** aus.
     
     ![OVH select SRV record type](../../media/66bad536-a531-4a4e-b08d-c0d99f6ea1b2.png)
   
@@ -277,8 +277,8 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     |**Eintragstyp**|**Unterdomäne**|**Priority**|**Weight**|**Port**|**TTL**|**Ziel**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV (Dienst)  <br/> |_sip._tls  <br/> |100  <br/> |1  <br/> |443  <br/> |3600 (Sekunden)  <br/> |sipdir.online.lync.com.  <br/> |
-    |SRV (Dienst)  <br/> |_sipfederationtls._tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |3600 (Sekunden)  <br/> |sipfed.online.lync.com.  <br/> |
+    |SRV (Dienst)  <br/> |_sip._tls  <br/> |100  <br/> |1   <br/> |443  <br/> |3600 (Sekunden)  <br/> |sipdir.online.lync.com.  <br/> |
+    |SRV (Dienst)  <br/> |_sipfederationtls._tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |3600 (Sekunden)  <br/> |sipfed.online.lync.com.  <br/> |
        
     ![OVH-SRV-Eintrag](../../media/73956b9e-9e4f-40a5-803e-c4ead2f77fa6.png)
   
