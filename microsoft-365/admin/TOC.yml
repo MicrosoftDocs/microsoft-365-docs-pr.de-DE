@@ -198,7 +198,7 @@
         - name: Microsoft 365-Pilot aus benutzerdefinierter Domäne
           href: misc/pilot-microsoft-365-from-my-custom-domain.md
         - name: FAQ zu Domänen
-          href: setup/domains-faq.md
+          href: setup/domains-faq.yml
         - name: Host-spezifische Anweisungen
           items:
             - name: Nameserver bei jedem DNS-Host ändern
