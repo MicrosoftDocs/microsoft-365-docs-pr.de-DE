@@ -14,16 +14,15 @@ search.appverid:
 - MOE150
 - MET150
 description: Veröffentlichungshinweise für die Datenklassifizierung.
-ms.openlocfilehash: 71d8e8e4fffddc4c9373a2bdd37d4509337ec231
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 2b9302cfa49f9445d3cbeb5109aef70e0c8d8f7f
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127140"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663040"
 ---
 # <a name="data-classification-release-notes"></a>Veröffentlichungshinweise zur Datenklassifizierung
 
-Lesen Sie diese Versionshinweise, damit Sie diese Datenklassifizierung optimal nutzen können.
 
 ## <a name="exchange-mailbox-count"></a>Anzahl der Exchange-Postfächer
 
@@ -40,7 +39,7 @@ Die SharePoint-Suche unterstützt keine Namen von Aufbewahrungsbezeichnungen, di
 
 ## <a name="onedrive-remains-in-preview"></a>OneDrive bleibt in der Vorschauphase
 
-Wir haben uns Ihr wertvolles Feedback zur OneDrive-Integration während unseres Vorschauprogramms angehört. Während wir die Einzelheiten bearbeiten, können Sie auf inkonsistente Daten/Flüsse stoßen. Wir werden weiterhin OneDrive in der Vorschauphase präsentieren, bis alle Fehlerkorrekturen umgesetzt sind. Wir wissen Ihre anhaltende Unterstützung diesbezüglich zu schätzen.
+Vielen Dank für Ihr wertvolles Feedback zur OneDrive-Integration während unseres Vorschauprogramms. Während wir die Einzelheiten bearbeiten, können Sie auf inkonsistente Daten/Flüsse stoßen. Wir werden OneDrive weiterhin in der Vorschauphase präsentieren, bis alle Fehlerkorrekturen umgesetzt sind. Wir wissen Ihre fortgesetzte Unterstützung sehr zu schätzen.
 
 
 ## <a name="see-also"></a>Siehe auch
