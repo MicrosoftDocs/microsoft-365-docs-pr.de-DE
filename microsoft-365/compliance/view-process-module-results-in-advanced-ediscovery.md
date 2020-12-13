@@ -2,8 +2,8 @@
 title: Anzeigen der Ergebnisse des Prozess Moduls in Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
 description: Hier erfahren Sie, wie Sie die Ergebnisse eines in Advanced eDiscovery ausgeführten Prozess Moduls finden, einschließlich Vorgangsstatus und Prozesszusammenfassung.
-ms.openlocfilehash: 26ef87c762fc5c77f2374978bf4a425940dd5f37
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 73699d77e305055f6c2dc444fff00fb714b458cd
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936168"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663259"
 ---
 # <a name="view-process-module-results-in-advanced-ediscovery-classic"></a>Anzeigen der Ergebnisse des Prozess Moduls in Advanced eDiscovery (klassisch)
 
@@ -32,7 +32,7 @@ Nachdem der **Vorbereitungs** \> **Prozess** initiiert wurde, können Sie den St
   
 ## <a name="process-task-status"></a>Prozessaufgaben Status
 
-In **Prepare** \> **Process** \> **results**zeigt die Seite den aktuellen Status (wenn der Prozess derzeit ausgeführt wird) oder den Status des letzten Prozessstatus Vorgangs an, wie im folgenden Beispiel gezeigt.
+In **Prepare** \> **Process** \> **results** zeigt die Seite den aktuellen Status (wenn der Prozess derzeit ausgeführt wird) oder den Status des letzten Prozessstatus Vorgangs an, wie im folgenden Beispiel gezeigt.
   
 ![Vorgangsstatus des Prozess Moduls](../media/9430f9e7-a4dd-47c7-ac2e-2c6a60fc948b.png)
   
@@ -68,7 +68,7 @@ In Prepare \> Process \> results \> Process Summary wird eine Aufschlüsselung d
   
 In den Bereichen wird eine grafische Anzeige der importierten Dateistatistiken wie folgt dargestellt:
   
-- **Prozesszusammenfassung**d: alle Dateien im Fall akkumulieren.
+- **Prozesszusammenfassung** d: alle Dateien im Fall akkumulieren.
     
 - **Prozesszusammenfassung zuletzt**: Dateien, die aus der letzten Sitzung oder Aktion geladen wurden. 
     
@@ -100,7 +100,7 @@ Die rechte Leiste, die verarbeitet wird, umfasst Folgendes:
     
   - **Nicht Text**: leere Textdateien, leere systemeigene Textdateien, systemeigene nicht-Textdateien. 
     
-  - **Duplikate**s: doppelte Dateien mit Text.
+  - **Duplikate** s: doppelte Dateien mit Text.
     
 ## <a name="last-process-errors"></a>Letzte Prozessfehler
 

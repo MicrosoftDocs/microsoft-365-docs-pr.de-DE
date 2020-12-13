@@ -20,22 +20,22 @@ description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge b
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: bc22dbd3a050516f518c9ddc9ccf5a3af9c76f12
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 01fd78033afb6add41975826ed8daddf052826b2
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519293"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49655600"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Hinzufügen von DNS-Einträgen zum Verbinden Ihrer Domäne
 
-Wenn Sie eine Domäne von einem externen Hosting-Provider erworben haben, können Sie diese mit Microsoft 365 verknüpfen, indem Sie die DNS-Einträge im Konto Ihrer Registrierungsstelle aktualisieren.
+Wenn Sie eine Domäne bei einem Drittanbieter-Hostinganbieter gekauft haben, können Sie diese mit Microsoft 365 verbinden, indem Sie die DNS-Einträge im Konto Ihrer Registrierungsstelle aktualisieren.
 
 Am Ende dieser Schritte bleibt Ihre Domäne bei dem Host registriert, von dem Sie die Domäne gekauft haben. Microsoft 365 kann sie aber für E-Mail-Adressen (z. B. „Benutzer@IhreDomäne.com“) und andere Dienste verwenden.
 
-Solange Sie keine Domäne verknüpfen, verwenden Personen in Ihrer Organisation die Domäne „onmicrosoft.com“ für ihre E-Mail-Adressen. Es ist wichtig, dass Sie Ihre Domäne hinzufügen, bevor Sie Benutzer hinzufügen, damit Sie diese nicht zweimal einrichten müssen.
+Wenn Sie keine Domäne hinzufügen, verwenden Personen in Ihrer Organisation die Domäne „onmicrosoft.com“ für ihre E-Mail-Adressen, bis Sie dies tun. Es ist wichtig, dass Sie Ihre Domäne hinzufügen, bevor Sie Benutzer hinzufügen, damit Sie diese nicht zweimal einrichten müssen.
 
-[Lesen Sie in den die häufig gestellten Fragen (FAQ) zu Domänen nach](../setup/domains-faq.md), wenn Sie unten nicht finden, wonach Sie suchen.
+[Lesen Sie in den die häufig gestellten Fragen (FAQ) zu Domänen nach](../setup/domains-faq.yml), wenn Sie unten nicht finden, wonach Sie suchen.
 
 ## <a name="step-1-add-a-txt-or-mx-record-to-verify-you-own-the-domain"></a>Schritt 1: Fügen Sie einen TXT- oder MX-Eintrag hinzu, um den Besitz der Domäne zu verifizieren
 

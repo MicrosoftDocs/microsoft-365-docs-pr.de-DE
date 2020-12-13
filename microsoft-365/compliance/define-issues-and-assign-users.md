@@ -2,8 +2,8 @@
 title: Definieren von Problemen und Zuweisen von Benutzern in Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 48d37ee7-05bd-4cb8-9723-a8959ad23fbe
 description: Hier erfahren Sie, wie Sie ein Problem hinzufügen oder bearbeiten, indem Sie ihm Benutzer zuweisen oder ein Problem für einen eDiscovery-Fall in Advanced eDiscovery löschen.
-ms.openlocfilehash: 3e1366962393b6e1bb3605472b4f635fbcf6e4bd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1bdcb6f6562b0a431f1645d4006b3392d90a9f87
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630658"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663070"
 ---
 # <a name="define-issues-and-assign-users-in-advanced-ediscovery-classic"></a>Definieren von Problemen und Zuweisen von Benutzern in Advanced eDiscovery (klassisch)
 
@@ -31,7 +31,7 @@ In Advanced eDiscovery können ein oder mehrere Probleme in einem Fall definiert
   
 ## <a name="adding-or-editing-an-issue-and-assigning-users"></a>Hinzufügen oder Bearbeiten eines Problems und Zuweisen von Benutzern
 
-1. Wählen Sie auf der Registerkarte \> **Relevanz \> Relevanz-Setup** die Option **Probleme**aus.
+1. Wählen Sie auf der Registerkarte **Relevanz \> Relevanz-Setup** die \> Option **Probleme** aus.
     
     ![Probleme beim Einrichten von Relevanz](../media/dfd8f9ef-b167-4ed9-980e-00ae98a97169.png)
   
@@ -41,18 +41,18 @@ In Advanced eDiscovery können ein oder mehrere Probleme in einem Fall definiert
   
     Um ein Problem zu bearbeiten, klicken Sie auf das Symbol **Bearbeiten** . 
     
-3. Geben Sie unter **Problem Name**einen Namen ein, der für den Fall aussagekräftig und bedeutsam ist. 
+3. Geben Sie unter **Problem Name** einen Namen ein, der für den Fall aussagekräftig und bedeutsam ist. 
     
-4. Geben Sie unter **Beschreibung**Informationen zum Problem ein.
+4. Geben Sie unter **Beschreibung** Informationen zum Problem ein.
     
 5. Aktivieren Sie das Kontrollkästchen **gleichzeitiges Training aktivieren** , um die Option zu aktivieren. Diese Einstellung ermöglicht es mehreren Prüfern, gleichzeitig an dem gleichen Problem zu arbeiten (in separaten Beispielen). 
     
-6. Wählen Sie unter **Zuweisen von Benutzern zu Problem**in der Liste **alle Benutzer** einen Benutzer aus, der dem Problem zugewiesen werden soll, und klicken Sie dann auf den Pfeil nach rechts, um den Benutzer der Liste **ausgewählte Benutzer** hinzuzufügen. Wiederholen Sie nach Bedarf. Im oben gezeigten Fenster wird "admin" als ausgewählter Benutzer angezeigt. 
+6. Wählen Sie unter **Zuweisen von Benutzern zu Problem** in der Liste **alle Benutzer** einen Benutzer aus, der dem Problem zugewiesen werden soll, und klicken Sie dann auf den Pfeil nach rechts, um den Benutzer der Liste **ausgewählte Benutzer** hinzuzufügen. Wiederholen Sie nach Bedarf. Im oben gezeigten Fenster wird "admin" als ausgewählter Benutzer angezeigt. 
     
     > [!NOTE]
     > Die Benutzerzuweisung zu Problemen kann vor oder nach einem Schulungszyklus für die Relevanz geändert werden. 
   
-7. Wählen Sie in **ausgewählte Benutzer**in der Dropdownliste neben dem Namen des ausgewählten Benutzers einen der folgenden Stichproben Modi aus: 
+7. Wählen Sie in **ausgewählte Benutzer** in der Dropdownliste neben dem Namen des ausgewählten Benutzers einen der folgenden Stichproben Modi aus: 
     
   - **On**: die Dateien können angezeigt und markiert werden. Dies ist die Standardeinstellung.
     
@@ -66,7 +66,7 @@ In Advanced eDiscovery können ein oder mehrere Probleme in einem Fall definiert
 
 Probleme werden möglicherweise nur unmittelbar nach ihrer Definition gelöscht (das heißt aus der Datenbank entfernt), und für dieses Problem wurden keine tatsächlichen Arbeiten ausgeführt. 
   
-1. Wählen Sie auf der Registerkarte **Relevanz \> Relevanz-Setup** die Option **Probleme**aus.
+1. Wählen Sie auf der Registerkarte **Relevanz \> Relevanz-Setup** die Option **Probleme** aus.
     
 2. Wählen Sie das zu löschende Problem aus der Datenbank aus, und klicken Sie dann auf **Löschen**.
     

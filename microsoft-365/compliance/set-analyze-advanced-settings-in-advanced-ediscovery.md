@@ -2,8 +2,8 @@
 title: Festlegen der erweiterten Analyse Einstellungen in Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
 description: In diesem Artikel erfahren Sie, wie Sie erweiterte Einstellungen, einschließlich nahe Duplikate, e-Mail-Threads und Designs, für den Analyseprozess in Advanced eDiscovery konfigurieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 39d99609cfff92dcd6e6d2f4483076b8bfe808be
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: ac1300eb26338691722d9ccd15269ccf7f964f58
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936752"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663490"
 ---
 # <a name="set-analyze-advanced-settings-in-advanced-ediscovery"></a>Festlegen der erweiterten Analyse Einstellungen in Advanced eDiscovery
 
@@ -31,11 +31,11 @@ ms.locfileid: "44936752"
   
 Advanced eDiscovery bietet standardmäßig erweiterte Parameter für Analysemodul Einstellungen. Im folgenden Verfahren werden die Einstellungen beschrieben, die angegeben werden können.
   
-1. Klicken Sie auf der Registerkarte ** \> analyze- \> Setup vorbereiten** auf **Erweiterte Einstellungen** (unten auf der Seite). Der folgende Bereich wird angezeigt. 
+1. Klicken Sie auf der Registerkarte **\> analyze- \> Setup vorbereiten** auf **Erweiterte Einstellungen** (unten auf der Seite). Der folgende Bereich wird angezeigt. 
     
     ![Erweiterte Einstellungen für ANALYZE festlegen](../media/c9ea3017-e19a-456b-a742-c3d07121a3f6.png)
   
-2. Wählen Sie im **Parameter near-Duplicates und e-Mail-Threads**nach Bedarf Werte für Folgendes aus:
+2. Wählen Sie im **Parameter near-Duplicates und e-Mail-Threads** nach Bedarf Werte für Folgendes aus:
     
   - **Minimale Anzahl von Wörtern**: Mindestanzahl für Wörter, unterhalb derer eine Datei nicht für die nahe duplizierte Analyse übermittelt wird. 
     
@@ -43,7 +43,7 @@ Advanced eDiscovery bietet standardmäßig erweiterte Parameter für Analysemodu
     
   - **E-Mail-Ähnlichkeit**: minimale Ähnlichkeits Ebene, damit zwei e-Mails als ähnlich betrachtet werden. Der Wert ist immer gleich oder größer als die Ähnlichkeit des Dokuments. Der Standardwert ist 90%.
     
-3. Aktivieren Sie unter **Designs-Parameter**das Kontrollkästchen **Zahlen in Design Analyse einbeziehen** , um während der Analyse Zahlen in die Verarbeitung von Designs einzubeziehen. 
+3. Aktivieren Sie unter **Designs-Parameter** das Kontrollkästchen **Zahlen in Design Analyse einbeziehen** , um während der Analyse Zahlen in die Verarbeitung von Designs einzubeziehen. 
     
 4. Klicken Sie auf **Speichern**. 
     

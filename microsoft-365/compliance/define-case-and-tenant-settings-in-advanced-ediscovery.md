@@ -2,8 +2,8 @@
 title: Definieren von Fall-und Mandanten Einstellungen in Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 383809de-7f5e-4a1d-9098-c525f67b7a9a
 description: Erfahren Sie mehr über die Einstellungen für Bezeichnungen, modulübergreifend und Mandanten, die Sie auf der Fallebene in Advanced eDiscovery definieren können.
-ms.openlocfilehash: 6b0030e30e5e3a4f4c77fbcb5fcbd75bf63c1ea8
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: e2f46a9339e2c134be505138aac6886cb1a2dd9a
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936422"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663050"
 ---
 # <a name="define-case-and-tenant-settings-in-advanced-ediscovery-classic"></a>Definieren von Case-und Mandanten Einstellungen in Advanced eDiscovery (klassisch)
 
@@ -44,7 +44,7 @@ Die folgenden modulübergreifenden Einstellungen sind Fall Optionen, die für er
     
 - Dateianzeige Name: Datei-ID, die in Advanced eDiscovery angezeigt wird, um die Datei als Alternative zum erweiterten eDiscovery-Anzeigenamen des Datei Titels/Pfads oder des e-Mail-betreffs zu identifizieren.
     
-1. Öffnen Sie **Einstellungen und Dienstprogramme** , indem Sie auf das **Zahnrad** Symbol klicken. Registerkarte " **Einstellungen und Hilfsprogramme für \> Fall Einstellungen** " \> **modulübergreifend**öffnen. 
+1. Öffnen Sie **Einstellungen und Dienstprogramme** , indem Sie auf das **Zahnrad** Symbol klicken. Registerkarte " **Einstellungen und Hilfsprogramme für \> Fall Einstellungen** " \> **modulübergreifend** öffnen. 
     
 2. Wählen Sie auf der **Standardseite nach Anmelde** Optionen aus: 
     
@@ -68,7 +68,7 @@ Das Ereignisprotokoll enthält Metadaten zur erweiterten eDiscovery-Verarbeitung
   
 1. Öffnen Sie **Einstellungen und Dienstprogramme** , indem Sie auf das **Zahnrad** Symbol klicken. 
     
-2. Wählen Sie auf der Registerkarte **Einstellungen und Dienstprogramme für \> Mandanten Einstellungen** die Option **Ereignisprotokoll**aus. Die Ereignisprotokolldaten werden angezeigt.
+2. Wählen Sie auf der Registerkarte **Einstellungen und Dienstprogramme für \> Mandanten Einstellungen** die Option **Ereignisprotokoll** aus. Die Ereignisprotokolldaten werden angezeigt.
     
   - Wenn Sie die Protokollausgabe nach einem Fall filtern möchten, wählen Sie in der Liste **Fälle** den Fall aus. 
     
@@ -84,7 +84,7 @@ Erweiterte eDiscovery-Versions Systeminformationen und aktive Aufgaben werden au
   
 1. Öffnen Sie **Einstellungen und Dienstprogramme** , indem Sie auf das **Zahnrad** Symbol klicken. 
     
-2. Wählen Sie auf der Registerkarte **Einstellungen und Dienstprogramme für \> Mandanten Einstellungen** die Option **System Informationen**aus. Die Versionsinformationen werden angezeigt.
+2. Wählen Sie auf der Registerkarte **Einstellungen und Dienstprogramme für \> Mandanten Einstellungen** die Option **System Informationen** aus. Die Versionsinformationen werden angezeigt.
     
 Die Anzeige kann aktualisiert werden, indem Sie auf das **Aktualisierungs** Symbol unter den Mandanteninformationen klicken. 
   

@@ -21,12 +21,12 @@ ms.collection:
 - SPO_Content
 description: Sie können die Verwaltung von Informationsrechten (Information Rights Management, IRM) zum Steuern und schützen von Dateien verwenden, die aus Listen oder Bibliotheken heruntergeladen werden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: de0105bf61b4abbddd938a4ec7286c1919bf3985
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 0c61b7c6f13208b6c017b5ed65c667203abade42
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948483"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663100"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>Anwenden der Verwaltung von Informationsrechten (Information Rights Management, IRM) auf eine Liste oder Bibliothek
 
@@ -35,15 +35,15 @@ Sie können die Verwaltung von Informationsrechten (Information Rights Managemen
 ## <a name="administrator-preparations-before-applying-irm"></a>Administrator Vorbereitungen vor dem Anwenden von IRM
 
 - Der Azure Rights Management Service (Azure RMS) von Azure Information Protection und die lokale Entsprechung, Active Directory Rights Management Services (AD RMS), unterstützen die Verwaltung von Informationsrechten für Websites. Es sind keine separaten oder zusätzlichen Installationen erforderlich.
-    
-- Bevor Sie IRM auf eine Liste oder Bibliothek anwenden, muss Sie zunächst von einem Administrator für Ihre Website aktiviert werden.
-    
+
+- Bevor Sie IRM auf eine Liste oder Bibliothek anwenden, müssen Sie IRM für Ihre Website aktivieren. Sie benötigen Administratorberechtigungen, um IRM zu aktivieren.
+
 - Um IRM auf eine Liste oder Bibliothek anzuwenden, benötigen Sie Administratorberechtigungen für diese Liste oder Bibliothek.
-    
-- Wenn Sie SharePoint Online verwenden, können die Benutzer beim Herunterladen größerer IRM-geschützter Dateien möglicherweise Timeouts auftreten. In diesem Fall wenden Sie den IRM-Schutz mithilfe Ihrer Office-Programme an und speichern größere Dateien in einer SharePoint-Bibliothek, die nicht IRM verwendet.
-    
+
+- Wenn Sie SharePoint Online verwenden, können die Benutzer beim Herunterladen größerer IRM-geschützter Dateien möglicherweise Timeouts auftreten. Um Timeouts zu vermeiden, verwenden Sie Ihre Office-Programme, um IRM-Schutz anzuwenden, und speichern größerer Dateien in einer SharePoint-Bibliothek, die nicht IRM verwendet.
+
 > [!NOTE]
-> Wenn Sie SharePoint Server 2013 verwenden, muss ein Server Administrator auf allen Front-End-Webservern Schutzprogramme für jeden Dateityp installieren, den die Personen in Ihrer Organisation mithilfe von IRM schützen möchten. 
+> Wenn Sie SharePoint Server 2013 verwenden, muss ein Server Administrator auf allen Front-End-Webservern Schutzprogramme für jeden Dateityp installieren, den die Personen in Ihrer Organisation mithilfe von IRM schützen möchten.
   
 ## <a name="apply-irm-to-a-list-or-library"></a>Anwenden von IRM auf eine Liste oder Bibliothek
 <a name="__toc256598179"> </a>
@@ -51,32 +51,32 @@ Sie können die Verwaltung von Informationsrechten (Information Rights Managemen
 ![Einstellungen für die Verwaltung von Informationsrechten](../media/1b708102-9c90-42b0-b255-ef0e72d0be88.png)
   
 1. Wechseln Sie zu der Liste oder Bibliothek, für die Sie IRM konfigurieren möchten.
-    
-2. Klicken Sie auf dem Menüband auf die Registerkarte **Bibliothek** , und klicken Sie dann auf **Bibliothekseinstellungen**. (Wenn Sie in einer Liste arbeiten, klicken Sie auf die Registerkarte **Liste** , und klicken Sie dann auf **Listeneinstellungen**).
+
+2. Wählen Sie auf dem Menüband die Registerkarte **Bibliothek** aus, und wählen Sie dann **Bibliothekseinstellungen** aus. (Wenn Sie in einer Liste arbeiten, wählen Sie die Registerkarte **Liste** aus, und wählen Sie dann **Listeneinstellungen**).
     
     ![Schaltflächen für die SharePoint-Bibliothekseinstellungen auf dem Menüband](../media/cdf718fa-d792-40fc-8026-00c3b80b9e05.png)
   
-3. Klicken Sie unter **Berechtigungen und Verwaltung**auf **Verwaltung von Informationsrechten**. Wenn der Link zur Verwaltung von Informationsrechten nicht angezeigt wird, ist IRM möglicherweise nicht für Ihre Website aktiviert. Wenden Sie sich an den Server Administrator, um zu prüfen, ob IRM für Ihre Website aktiviert werden kann. Der Link zur Verwaltung von Informationsrechten wird nicht für Bildbibliotheken angezeigt.
-    
-4. Aktivieren Sie auf der Seite Einstellungen für die **Verwaltung von Informationsrechten** das Kontrollkästchen **Berechtigung für Dokumente in dieser Bibliothek beim Herunterladen einschränken** , um eingeschränkte Berechtigungen auf Dokumente anzuwenden, die aus dieser Liste oder Bibliothek heruntergeladen werden. 
-    
-5. Geben Sie im Feld **Berechtigungsrichtlinien Titel erstellen** einen beschreibenden Namen für die Richtlinie ein, die Sie später verwenden können, um diese Richtlinie von anderen Richtlinien zu unterscheiden. Sie können beispielsweise " **Company Confidential** " eingeben, wenn Sie eingeschränkte Berechtigungen auf eine Liste oder Bibliothek anwenden, die vertrauliche Unternehmensdokumente enthalten soll. 
-    
+3. Wählen Sie unter **Berechtigungen und Verwaltung** die Option **Verwaltung von Informationsrechten** aus. Wenn der Link zur Verwaltung von Informationsrechten nicht angezeigt wird, ist IRM möglicherweise nicht für Ihre Website aktiviert. Wenden Sie sich an den Server Administrator, um zu sehen, ob Sie IRM für Ihre Website aktivieren können. Der Link zur **Verwaltung von Informationsrechten** wird nicht für Bildbibliotheken angezeigt.
+
+4. Aktivieren Sie auf der Seite Einstellungen für die **Verwaltung von Informationsrechten** das Kontrollkästchen **Berechtigung für Dokumente in dieser Bibliothek beim Herunterladen einschränken** , um eingeschränkte Berechtigungen auf Dokumente herunterladbare Benutzer aus dieser Liste oder Bibliothek anzuwenden.
+
+5. Geben Sie im Feld **Berechtigungsrichtlinien Titel erstellen** einen beschreibenden Namen für die Richtlinie ein. Verwenden Sie einen Namen, mit dem Sie diese Richtlinie aus anderen Richtlinien identifizieren können. Verwenden Sie beispielsweise **Unternehmens vertraulich** , um eingeschränkte Berechtigungen auf eine Liste oder Bibliothek anzuwenden, die vertrauliche Unternehmensdokumente enthält.
+
 6. Geben Sie im Feld **Beschreibung der Berechtigungsrichtlinie hinzufügen** eine Beschreibung ein, die den Benutzern angezeigt wird, die diese Liste oder Bibliothek verwenden, um zu erläutern, wie die Dokumente in dieser Liste oder Bibliothek behandelt werden sollen. Beispielsweise können Sie **den Inhalt dieses Dokuments nur für andere Mitarbeiter besprechen** , wenn Sie den Zugriff auf die Informationen in diesen Dokumenten auf interne Mitarbeiter beschränken möchten. 
-    
-7. Wenn Sie zusätzliche Einschränkungen für die Dokumente in dieser Liste oder Bibliothek anwenden möchten, klicken Sie auf **Optionen anzeigen**, und führen Sie eine der folgenden Aktionen aus:
-    
+
+7. Um zusätzliche Einschränkungen für die Dokumente in dieser Liste oder Bibliothek anzuwenden, wählen Sie **Optionen anzeigen** aus, und führen Sie eine der folgenden Aktionen aus:
+
 |**Gehen Sie hierfür folgendermaßen vor:**|**Gehen Sie wie folgt vor:**|
 |:-----|:-----|
-|Zulassen, dass Benutzer Dokumente aus dieser Liste oder Bibliothek drucken können  <br/> |Aktivieren Sie das Kontrollkästchen **Betrachter dürfen das Drucken erlauben** .  <br/> |
-|Zulassen, dass Personen mit mindestens der Berechtigung "Elemente anzeigen" eingebetteten Code oder Makros in einem Dokument ausführen können.  <br/> |Aktivieren Sie das Kontrollkästchen **Viewer dürfen Skripts und Bildschirm Lesefunktionen für heruntergeladene Dokumente ausführen** .  <br/> Wenn Sie diese Option auswählen, können Benutzercode ausführen, um den Inhalt eines Dokuments zu extrahieren.           |
-|Wählen Sie diese Option aus, wenn Sie den Zugriff auf Inhalte auf einen bestimmten Zeitraum beschränken möchten. Wenn Sie diese Option auswählen, laufen die Ausstellungs Lizenzen der Personen für den Zugriff auf den Inhalt nach der angegebenen Anzahl von Tagen ab, und die Benutzer müssen zum Server zurückkehren, um Ihre Anmeldeinformationen zu überprüfen und eine neue Kopie herunterzuladen.  <br/> |Aktivieren Sie das Kontrollkästchen **nach dem Download werden Dokument Zugriffsrechte nach Ablauf dieser Anzahl von Tagen ablaufen (1-365)** , und geben Sie dann die Anzahl der Tage an, für die das Dokument angezeigt werden soll.  <br/> |
-| Verhindern, dass Personen Dokumente hochladen, die IRM nicht unterstützen, für diese Liste oder Bibliothek.  <br/>  Wenn Sie diese Option auswählen, können Benutzer keine der folgenden Dateitypen hochladen:  <br/>  Dateitypen, für die keine entsprechenden IRM-Schutzkomponenten auf allen Front-End-Webservern installiert sind.  <br/>  Dateitypen, die SharePoint Server 2010 nicht entschlüsseln können.  <br/>  Dateitypen, die in einem anderen Programm IRM-geschützt sind  <br/> |Aktivieren Sie das Kontrollkästchen **Benutzer dürfen keine Dokumente hochladen, die IRM nicht unterstützen** .  <br/> |
-|Entfernen Sie eingeschränkte Berechtigungen aus dieser Liste oder Bibliothek an einem bestimmten Datum.  <br/> |Aktivieren Sie das Kontrollkästchen **Einschränken des Zugriffs auf die Bibliothek** deaktivieren, und wählen Sie dann das gewünschte Datum aus.  <br/> |
-|Steuern Sie das Intervall, in dem Anmeldeinformationen für das Programm zwischengespeichert werden, das zum Öffnen des Dokuments lizenziert ist.  <br/> |Aktivieren Sie das Kontrollkästchen **Benutzer müssen Ihre Anmeldeinformationen über dieses Intervall (Tage) überprüfen** , und geben Sie dann das Intervall für die Zwischenspeicherung von Anmeldeinformationen in Tagen ein.  <br/> |
-|Gruppen Schutz zulassen, damit Benutzer mit Mitgliedern derselben Gruppe teilen können.  <br/> |Wählen Sie **Gruppen Schutz zulassen**aus, und geben Sie den Namen der Gruppe für die Freigabe ein.  <br/> |
-   
-8. Klicken Sie nach Abschluss der Auswahl der gewünschten Optionen auf **OK**.
+|Zulassen, dass Benutzer Dokumente aus dieser Liste oder Bibliothek drucken können|Aktivieren Sie das Kontrollkästchen **Betrachter dürfen das Drucken erlauben** .|
+|Zulassen, dass Personen mit mindestens der Berechtigung "Elemente anzeigen" eingebetteten Code oder Makros in einem Dokument ausführen können.|Aktivieren Sie das Kontrollkästchen **Viewer dürfen Skripts und Bildschirm Lesefunktionen für heruntergeladene Dokumente ausführen** . Wenn Sie diese Option auswählen, können Benutzercode ausführen, um den Inhalt eines Dokuments zu extrahieren.           |
+|Wählen Sie diese Option aus, wenn Sie den Zugriff auf Inhalte auf einen bestimmten Zeitraum beschränken möchten. Wenn Sie diese Option auswählen, laufen die Ausstellungs Lizenzen der Personen für den Zugriff auf den Inhalt nach der angegebenen Anzahl von Tagen ab, und die Benutzer müssen zum Server zurückkehren, um Ihre Anmeldeinformationen zu überprüfen und eine neue Kopie herunterzuladen.|Aktivieren Sie das Kontrollkästchen **nach dem Download werden Dokument Zugriffsrechte nach Ablauf dieser Anzahl von Tagen ablaufen (1-365)** , und geben Sie dann die Anzahl der Tage an, für die das Dokument angezeigt werden soll.|
+| Verhindern, dass Personen Dokumente hochladen, die IRM nicht unterstützen, für diese Liste oder Bibliothek. Wenn Sie diese Option auswählen, können Benutzer keine der folgenden Dateitypen hochladen: Dateitypen, für die keine entsprechenden IRM-Schutzkomponenten auf allen Front-End-Webservern installiert sind. Dateitypen, die SharePoint Server 2010 nicht entschlüsseln können. Dateitypen, die in einem anderen Programm IRM-geschützt sind.|Aktivieren Sie das Kontrollkästchen **Benutzer dürfen keine Dokumente hochladen, die IRM nicht unterstützen** .|
+|Entfernen Sie eingeschränkte Berechtigungen aus dieser Liste oder Bibliothek an einem bestimmten Datum.|Aktivieren Sie das Kontrollkästchen **Einschränken des Zugriffs auf die Bibliothek** deaktivieren, und wählen Sie dann das gewünschte Datum aus.|
+|Steuern Sie das Intervall, in dem Anmeldeinformationen für das Programm zwischengespeichert werden, das zum Öffnen des Dokuments lizenziert ist.|Aktivieren Sie das Kontrollkästchen **Benutzer müssen Ihre Anmeldeinformationen über dieses Intervall (Tage) überprüfen** , und geben Sie dann das Intervall für die Zwischenspeicherung von Anmeldeinformationen in Tagen ein.|
+|Gruppen Schutz zulassen, damit Benutzer mit Mitgliedern derselben Gruppe teilen können.|Wählen Sie **Gruppen Schutz zulassen** aus, und geben Sie den Namen der Gruppe für die Freigabe ein.|
+
+8. Nachdem Sie die gewünschten Optionen ausgewählt haben, wählen Sie **OK** aus.
   
 ## <a name="what-is-information-rights-management"></a>Was ist die Verwaltung von Informationsrechten?
 <a name="__toc256598175"> </a>
@@ -135,10 +135,10 @@ Die Typen von Einschränkungen, die auf eine Datei angewendet werden, wenn Sie a
   
 |**Berechtigungen**|**IRM-Berechtigungen**|
 |:-----|:-----|
-|Berechtigungen verwalten, Website verwalten  <br/> |**Vollzugriff** (wie vom Clientprogramm definiert): mit dieser Berechtigung können Benutzerberechtigungen für Inhalte mit verwalteten Rechten in der Regel lesen, bearbeiten, kopieren, speichern und ändern.  <br/> |
-|Bearbeiten von Elementen, Verwalten von Listen, hinzufügen und Anpassen von Seiten  <br/> |**Bearbeiten**, **Kopieren**und **Speichern**: ein Benutzer kann eine Datei nur drucken, wenn das Kontrollkästchen **Benutzern das Drucken von Dokumenten erlauben** aktiviert ist, auf der Seite Einstellungen für die Verwaltung von Informationsrechten für die Liste oder Bibliothek.  <br/> |
-|Elemente anzeigen  <br/> |**Lesen**: ein Benutzer kann das Dokument lesen, aber seinen Inhalt nicht kopieren oder ändern. Ein Benutzer kann nur drucken, wenn das Kontrollkästchen **Benutzern das Drucken von Dokumenten erlauben** aktiviert ist, auf der Seite Einstellungen für die Verwaltung von Informationsrechten für die Liste oder Bibliothek.  <br/> |
-|Andere  <br/> |Keine anderen Berechtigungen entsprechen direkt IRM-Berechtigungen.  <br/> |
+|Berechtigungen verwalten, Website verwalten|**Vollzugriff** (wie vom Clientprogramm definiert): mit dieser Berechtigung können Benutzerberechtigungen für Inhalte mit verwalteten Rechten in der Regel lesen, bearbeiten, kopieren, speichern und ändern.|
+|Bearbeiten von Elementen, Verwalten von Listen, hinzufügen und Anpassen von Seiten|**Bearbeiten**, **Kopieren** und **Speichern**: ein Benutzer kann eine Datei nur drucken, wenn das Kontrollkästchen **Benutzern das Drucken von Dokumenten erlauben** aktiviert ist, auf der Seite Einstellungen für die Verwaltung von Informationsrechten für die Liste oder Bibliothek.|
+|Elemente anzeigen|**Lesen**: ein Benutzer kann das Dokument lesen, aber seinen Inhalt nicht kopieren oder ändern. Ein Benutzer kann nur drucken, wenn das Kontrollkästchen **Benutzern das Drucken von Dokumenten erlauben** aktiviert ist, auf der Seite Einstellungen für die Verwaltung von Informationsrechten für die Liste oder Bibliothek.|
+|Andere|Keine anderen Berechtigungen entsprechen direkt IRM-Berechtigungen.|
    
 Wenn Sie IRM für eine Liste oder Bibliothek in SharePoint Server 2013 aktivieren, können Sie nur Dateitypen in dieser Liste oder Bibliothek schützen, für die ein Schutz auf allen Front-End-Webservern installiert ist. Ein Protector ist ein Programm, das die Verschlüsselung und Entschlüsselung von Dateien mit verwalteten Rechten eines bestimmten Dateiformats steuert. SharePoint umfasst Schutz für die folgenden Dateitypen:
   

@@ -4,7 +4,7 @@ description: Häufig gestellte Fragen zur Doppelschlüssel Verschlüsselung für
 author: kccross
 ms.author: krowley
 manager: laurawi
-ms.date: 09/22/2020
+ms.date: 12/11/2020
 ms.topic: conceptual
 ms.service: information-protection
 audience: Admin
@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 98c61e66155e21624e8ecba460ebc3041e72ada5
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: 32686e76018d8b6a361ea99e6b00271b9547ed95
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277654"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663060"
 ---
 # <a name="double-key-encryption-frequently-asked-questions"></a>Häufig gestellte Fragen zur doppelten Schlüssel Verschlüsselung
 
@@ -33,7 +33,7 @@ DKE unterstützt Sie bei der Erfüllung behördlicher Anforderungen in verschied
 
 ## <a name="can-i-use-double-key-encryption-with-microsoft-office-built-in-sensitivity-labeling"></a>Kann ich die Doppelschlüssel Verschlüsselung mit Microsoft Office integrierten Empfindlichkeits Kennzeichnung verwenden?
 
-Sie müssen den Azure Information Protection Unified Labeling-Client verwenden, um Dokumente mit doppelter Schlüssel Verschlüsselung zu schützen. Derzeit können Sie Microsoft Office integrierte Sensitivitäts Kennzeichnung nicht verwenden. 
+Sie müssen den Azure Information Protection Unified Labeling-Client verwenden, um Dokumente mit doppelter Schlüssel Verschlüsselung zu schützen. Derzeit können Sie Microsoft Office integrierte Sensitivitäts Kennzeichnung nicht verwenden.
 
 ## <a name="what-microsoft-365-apps-can-i-use-with-dke"></a>Welche Microsoft 365-apps kann ich mit DKE verwenden?
 

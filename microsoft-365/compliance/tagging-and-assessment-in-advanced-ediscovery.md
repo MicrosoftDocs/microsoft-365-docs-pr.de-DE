@@ -2,8 +2,8 @@
 title: Tagging und Bewertung in Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 09/14/2017
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
 description: Lesen Sie die Schritte zum Durchführen von Assessment-Schulungen, einschließlich Tagging-Dateien und Überprüfen der Bewertungsergebnisse in Advanced eDiscovery.
-ms.openlocfilehash: 57e4e8da0dbeec5e1dba384ae0e62ffb6b3bb03a
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: c8c6f82e7cfb3e2eddcc482039582ea27a702494
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936692"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663460"
 ---
 # <a name="tagging-and-assessment-in-advanced-ediscovery-classic"></a>Tagging und Bewertung in Advanced eDiscovery (klassisch)
 
@@ -50,7 +50,7 @@ In diesem Abschnitt wird das Verfahren für das Modul "Advanced eDiscovery Relev
     ![Relevanz Track-Assessment](../media/da911ba5-8678-40d6-9ad5-fd0b058355c1.png)
   
     > [!TIP]
-    > Standardmäßig wird empfohlen, mit dem standardmäßigen nächsten Schritt fortzufahren, wenn der Indikator für die Status Bewertung des Problems abgeschlossen wurde, was bedeutet, dass das Bewertungs Beispiel überprüft und ausreichende relevante Dateien markiert wurden. > andernfalls können Sie, wenn Sie die Ergebnisse der Registerkarte **Track** anzeigen und den Fehlerbereich und den nächsten Schritt steuern möchten, auf neben **Nächster Schritt** **ändern** klicken, **Bewertung fortsetzen**auswählen und dann auf **OK**klicken. 
+    > Standardmäßig wird empfohlen, mit dem standardmäßigen nächsten Schritt fortzufahren, wenn der Indikator für die Status Bewertung des Problems abgeschlossen wurde, was bedeutet, dass das Bewertungs Beispiel überprüft und ausreichende relevante Dateien markiert wurden. > andernfalls können Sie, wenn Sie die Ergebnisse der Registerkarte **Track** anzeigen und den Fehlerbereich und den nächsten Schritt steuern möchten, auf neben **Nächster Schritt** **ändern** klicken, **Bewertung fortsetzen** auswählen und dann auf **OK** klicken. 
   
 1. Klicken Sie rechts neben dem Kontrollkästchen **Bewertung** auf **ändern** , um die Bewertungsparameter pro Problem anzuzeigen und anzugeben. Es wird ein Dialogfeld **Bewertungsebene** für jedes Problem angezeigt, wie im folgenden Beispiel dargestellt: 
     
@@ -66,7 +66,7 @@ In diesem Abschnitt wird das Verfahren für das Modul "Advanced eDiscovery Relev
     
 1. Wählen Sie in der Liste **Problem auswählen** ein Problem aus. 
     
-2. Geben Sie unter **Ziel Fehlermarge für Rückruf Schätzungen**einen neuen Wert ein.
+2. Geben Sie unter **Ziel Fehlermarge für Rückruf Schätzungen** einen neuen Wert ein.
     
 3. Klicken Sie auf **Werte aktualisieren** , um die Auswirkungen der Anpassungen anzuzeigen. 
     
@@ -80,7 +80,7 @@ In diesem Abschnitt wird das Verfahren für das Modul "Advanced eDiscovery Relev
     
     **Konfidenz Stufe**: Standardmäßig beträgt der empfohlene Fehler Rand für das Vertrauen 95%. Klicken Sie auf **Bearbeiten** , wenn Sie diesen Parameter ändern möchten. 
     
-    **Rand des erwarteten**Umfangs des Umfangs: bei den aktualisierten Werten ist dies der erwartete Fehlerbereich des Reichtums, nachdem alle zusätzlichen Bewertungsdateien überprüft wurden.
+    **Rand des erwarteten** Umfangs des Umfangs: bei den aktualisierten Werten ist dies der erwartete Fehlerbereich des Reichtums, nachdem alle zusätzlichen Bewertungsdateien überprüft wurden.
     
     **Zusätzliche Bewertungsdateien erforderlich**: bei den aktualisierten Werten ist die Anzahl der zusätzlichen Bewertungsdateien, die überprüft werden müssen, um das Ziel zu erreichen.
     
@@ -121,7 +121,7 @@ Wenn die Reichweite sehr gering ist, ist die Anzahl der zusätzlichen assessment
 In Ermangelung einer statistisch basierten Stabilisierung werden Ergebnisse mit einer niedrigeren Genauigkeitsstufe und Zuverlässigkeitsstufe erzielt. Diese Ergebnisse können jedoch zum Auffinden relevanter Dateien verwendet werden, wenn Sie den Prozentsatz relevanter gefundener Dateien nicht kennen müssen. In ähnlicher Weise kann dieser Status verwendet werden, um Probleme mit niedrigem Umfang auszubilden, wobei Relevanz Scores den Zugriff auf Dateien beschleunigen kann, die für ein bestimmtes Problem relevant sind.
   
 > [!TIP]
-> Auf der Registerkarte **relevanzstatus \> ** , erweiterte Ausgabe Anzeige, stehen die folgenden Anzeigeoptionen zur Verfügung: > den empfohlenen nächsten Schritt wie den **nächsten Schritt: die Kennzeichnung** kann umgangen werden (pro Problem), indem Sie rechts auf die Schaltfläche **ändern** klicken und dann im **nächsten Schritt**einen anderen Schritt auswählen. Wenn der Statusindikator für die Bewertung nicht abgeschlossen ist, wird die nächste empfohlene Option verwendet, um weitere Bewertungsdateien zu markieren und die Genauigkeit der Statistik zu verbessern. > Sie können den Fehler Rand ändern und seine Auswirkung bewerten, indem Sie auf **ändern**klicken und im **Dialogfeld Bewertungsebene**den **Ziel Fehler Rand für Rückruf Schätzungen**ändern und auf **Werte aktualisieren**klicken. Außerdem können Sie in diesem Dialogfeld Erweiterte Optionen anzeigen, indem Sie auf **erweitert**klicken. > Sie können zusätzliche Statistiken zur Bewertungsebene und deren Auswirkungen anzeigen, indem Sie auf **Ansicht**klicken. Im Dialogfeld Detail Ergebnisse werden Statistiken pro Problem angezeigt, wenn mindestens 500 getaggte Bewertungsdateien vorhanden sind und mindestens 18 Dateien als relevant für das Problem gekennzeichnet sind. 
+> Auf der Registerkarte **relevanzstatus \>** , erweiterte Ausgabe Anzeige, stehen die folgenden Anzeigeoptionen zur Verfügung: > den empfohlenen nächsten Schritt wie den **nächsten Schritt: die Kennzeichnung** kann umgangen werden (pro Problem), indem Sie rechts auf die Schaltfläche **ändern** klicken und dann im **nächsten Schritt** einen anderen Schritt auswählen. Wenn der Statusindikator für die Bewertung nicht abgeschlossen ist, wird die nächste empfohlene Option verwendet, um weitere Bewertungsdateien zu markieren und die Genauigkeit der Statistik zu verbessern. > Sie können den Fehler Rand ändern und seine Auswirkung bewerten, indem Sie auf **ändern** klicken und im **Dialogfeld Bewertungsebene** den **Ziel Fehler Rand für Rückruf Schätzungen** ändern und auf **Werte aktualisieren** klicken. Außerdem können Sie in diesem Dialogfeld Erweiterte Optionen anzeigen, indem Sie auf **erweitert** klicken. > Sie können zusätzliche Statistiken zur Bewertungsebene und deren Auswirkungen anzeigen, indem Sie auf **Ansicht** klicken. Im Dialogfeld Detail Ergebnisse werden Statistiken pro Problem angezeigt, wenn mindestens 500 getaggte Bewertungsdateien vorhanden sind und mindestens 18 Dateien als relevant für das Problem gekennzeichnet sind. 
   
 ## <a name="see-also"></a>Siehe auch
 

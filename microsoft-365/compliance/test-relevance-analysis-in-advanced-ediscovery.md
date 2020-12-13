@@ -2,8 +2,8 @@
 title: Testen der Relevanz-Analyse in Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 09/14/2017
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 description: Erfahren Sie, wie Sie die Registerkarte "Test" nach der Batch Berechnung in Advanced eDiscovery verwenden, um die Gesamtqualität der Verarbeitung zu testen, zu vergleichen und zu validieren.
-ms.openlocfilehash: c5a885b3483b9ce319fffefa55037c0c2c8f3c85
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: e408d79aac8015da210f983b7b388ace84fc383a
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936208"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663418"
 ---
 # <a name="test-relevance-analysis-in-advanced-ediscovery-classic"></a>Test Relevanz Analysis in Advanced eDiscovery (klassisch)
 
@@ -48,7 +48,7 @@ Dieser Test enthält Statistiken und einen Vergleich zwischen dem Überprüfungs
     
     ![Relevanz Testen der Rest-Ergebnisse](../media/46e6898a-f929-4fd0-88d9-6f91d04b6ce2.png)
   
-3. Geben Sie unter **Test Name**und **Beschreibung**den Namen und die Beschreibung ein.
+3. Geben Sie unter **Test Name** und **Beschreibung** den Namen und die Beschreibung ein.
     
 4. Wählen Sie in der Liste **Testtyp** **die Option Rest testen** aus.
     
@@ -92,15 +92,15 @@ Der Test "Test the Slice" führt Tests aus, die dem Test "Test the Rest" ähneln
     
 3. Geben Sie unter Name und **Beschreibung** **Testen** die Informationen ein.
     
-4. Wählen Sie in der Liste **Testtyp** **die Option Segment testen**aus.
+4. Wählen Sie in der Liste **Testtyp** **die Option Segment testen** aus.
     
 5. Wählen Sie in der Liste **Problem** den Namen des Problems aus. 
     
 6. Wählen Sie in der Liste **Laden** die Option Laden aus. 
     
-7. Akzeptieren Sie in **Read% zwischen**die Standardwerte Low und High Range, oder wählen Sie Werte für die Punkte für die Grenz Wert Relevanz aus. 
+7. Akzeptieren Sie in **Read% zwischen** die Standardwerte Low und High Range, oder wählen Sie Werte für die Punkte für die Grenz Wert Relevanz aus. 
     
-8. Wählen Sie unter **festgelegte Größe**einen Wert aus, oder übernehmen Sie den Standardwert.
+8. Wählen Sie unter **festgelegte Größe** einen Wert aus, oder übernehmen Sie den Standardwert.
     
     Mit den Wiederherstellungs Symbolen wird der Standardwert wiederhergestellt.
     

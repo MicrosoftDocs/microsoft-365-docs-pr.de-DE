@@ -2,8 +2,8 @@
 title: Vorbereiten von Daten für Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
 description: Erfahren Sie, wie Sie mithilfe des Security &amp; Compliance Center Daten für die Analyse mit Advanced eDiscovery vorbereiten.
-ms.openlocfilehash: 3c9d237a3a9c04a443730143998324a7831f2998
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 43253a3908925bc188568f020f48c62a94552403
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936330"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662880"
 ---
 # <a name="prepare-data-for-advanced-ediscovery-classic"></a>Vorbereiten von Daten für Advanced eDiscovery (klassisch)
 

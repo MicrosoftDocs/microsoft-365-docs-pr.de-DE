@@ -2,8 +2,8 @@
 title: Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 audience: Admin
@@ -15,19 +15,19 @@ search.appverid:
 - MET150
 ms.assetid: fd53438a-a760-45f6-9df4-861b50161ae4
 description: Erfahren Sie, wie Sie mithilfe von Advanced eDiscovery Daten analysieren, Dokumentüberprüfungen optimieren und Entscheidungen für effiziente eDiscovery treffen können.
-ms.openlocfilehash: 231064266a2498ec2eb8845da325fba6e5cfeb76
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: f8ada5d377e72516ea42d8c5dc5680573daec717
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649712"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662820"
 ---
 # <a name="advanced-ediscovery-classic"></a>Advanced eDiscovery (Classic)
 
 > [!IMPORTANT]
 > **Advanced eDiscovery (klassisch) wird am 31. Dezember 2020 endgültig ausgemustert.**<br/>
 > Da wir weiterhin in neuere Versionen von Advanced eDiscovery investieren, kündigen wir den permanenten Ruhestand und das Entfernen von Fällen und Falldaten von Advanced eDiscovery (Classic) an.
-> Wenn Sie noch Advanced eDiscovery (Classic) (auch *Advanced eDiscovery v 1.0*genannt) verwenden, überführen Sie Ihre Nutzung so schnell wie möglich auf [Advanced eDiscovery v 2.0](overview-ediscovery-20.md) (auch als *Erweiterte eDiscovery-Lösung in Microsoft 365*bezeichnet).  In Vorbereitung auf das Entfernen aller Fälle und Falldaten können Sie Falldaten archivieren, indem Sie [Daten aus einem Fall exportieren](https://docs.microsoft.com/microsoft-365/compliance/export-results-in-advanced-ediscovery?view=o365-worldwide).
+> Wenn Sie noch Advanced eDiscovery (Classic) (auch *Advanced eDiscovery v 1.0* genannt) verwenden, überführen Sie Ihre Nutzung so schnell wie möglich auf [Advanced eDiscovery v 2.0](overview-ediscovery-20.md) (auch als *Erweiterte eDiscovery-Lösung in Microsoft 365* bezeichnet).  In Vorbereitung auf das Entfernen aller Fälle und Falldaten können Sie Falldaten archivieren, indem Sie [Daten aus einem Fall exportieren](https://docs.microsoft.com/microsoft-365/compliance/export-results-in-advanced-ediscovery?view=o365-worldwide).
 > Advanced eDiscovery v 2.0 enthält ähnliche Funktionen wie in Advanced eDiscovery v 1.0, bietet aber auch viele neue Features wie Depotverwaltung, Kommunikationsverwaltung und Überprüfungs Sätze. Weitere Informationen zu den vorherigen retirment-Phasen von Advanced eDiscovery v 1.0 finden Sie unter [Retirement of Legacy eDiscovery Tools](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).
 
 Mit Advanced eDiscovery können Sie Ihre Daten besser verstehen und ihre eDiscovery-Kosten reduzieren. Mit Advanced eDiscovery können Sie unstrukturierte Daten analysieren, eine effizientere Dokumentüberprüfung durchführen und Entscheidungen treffen, um die Daten für eDiscovery zu reduzieren. Sie können mit Daten arbeiten, die in Exchange Online, SharePoint Online, OneDrive für Unternehmen, Skype for Business, Microsoft 365-Gruppen und Microsoft Teams gespeichert sind. Sie können eine eDiscovery-Suche im Security and Compliance Center durchführen, um nach Inhalten in Gruppen, einzelnen Postfächern und Websites zu suchen und dann die Suchergebnisse mit Advanced eDiscovery zu analysieren. Wenn Sie Suchergebnisse für die Analyse in Advanced eDiscovery vorbereiten, ermöglicht die optische Zeichenerkennung das Extrahieren von Text aus Bildern. Mit dieser Funktion können die leistungsstarken Textanalyse Funktionen von Advanced eDiscovery auf Bilddateien angewendet werden.

@@ -2,8 +2,8 @@
 title: Anzeigen des Batch Verlaufs und exportieren vergangener Ergebnisse in Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
 description: Hier erfahren Sie, wie Sie detaillierte Informationen zu ausgewählten Export Batch Sitzungen anzeigen und wie Sie die letzte Export Sitzung in Advanced eDiscovery rückgängig machen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b142c5d582b9a7bb84dd518325369e4b1adccf69
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 054fa4a88d8c61751b4064b3535de66881655631
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936188"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663274"
 ---
 # <a name="view-batch-history-and-export-past-results-in-advanced-ediscovery-classic"></a>Anzeigen des Batch Verlaufs und exportieren vergangener Ergebnisse in Advanced eDiscovery (klassisch)
 
@@ -35,7 +35,7 @@ Im folgenden Abschnitt werden zusätzliche Optionen für die Batch Anzeige und d
 
 Das Dialogfeld Export Verlauf enthält detaillierte Informationen zu ausgewählten Export Batch Sitzungen und bietet außerdem die Möglichkeit, die letzte Sitzung rückgängig zu machen.
   
-1. Wählen Sie unter ** \> Setup exportieren**den Namen des Batches in der Dropdownliste **Export Batch** aus. 
+1. Wählen Sie unter **\> Setup exportieren** den Namen des Batches in der Dropdownliste **Export Batch** aus. 
     
 2. Wählen Sie rechts neben dem Namen des Export Batches das Symbol für den **Batch Verlauf** aus: 
     
@@ -65,7 +65,7 @@ Das Dialogfeld Export Verlauf enthält detaillierte Informationen zu ausgewählt
 
 [Advanced eDiscovery (Classic)](office-365-advanced-ediscovery.md)
   
-[Exportieren von Ergebnissen](export-results-in-advanced-ediscovery.md)
+[Exportieren von Ergebnissen ](export-results-in-advanced-ediscovery.md)
 
 [Exportieren von Berichtsfeldern](export-report-fields-in-advanced-ediscovery.md)
 

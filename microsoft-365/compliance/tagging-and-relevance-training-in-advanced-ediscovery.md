@@ -2,8 +2,8 @@
 title: Tagging und Relevanz Training in Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 09/14/2017
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 description: Erfahren Sie mehr über die Schritte zum Markieren und arbeiten Sie dann mit einem Schulungs Beispiel mit 40 Dateien während der Relevanz-Schulungsphase von Advanced eDiscovery.
-ms.openlocfilehash: 56ce30754e04d4a2adcf854093e603f93be5ae36
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: d576b0a907a4c12eabe4f3cba9846de670b0ee12
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936671"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663450"
 ---
 # <a name="tagging-and-relevance-training-in-advanced-ediscovery-classic"></a>Tagging und Relevanz Training in Advanced eDiscovery (klassisch)
 
@@ -76,7 +76,7 @@ Nachdem die Bewertung in Advanced eDiscovery abgeschlossen wurde und Sie die Rel
     
 ## <a name="working-with-the-sample-files-list"></a>Arbeiten mit der Liste "Beispieldateien"
 
-In der Liste mit den Beispieldateien können Sie eine Liste der Dateien in einem Schulungs Beispiel anzeigen und verschiedene Aktionen für eine oder mehrere Dateien durchführen. Auf der **Relevance** \> Registerkarte "Relevanz- **Tag** " wird im linken Bereich " **Sample Files** " eine Liste der Beispieldateien zur Verarbeitung mit den Prozessen "Assessment", "Training", "Catch-up" und "Inkonsistenzen" angezeigt. 
+In der Liste mit den Beispieldateien können Sie eine Liste der Dateien in einem Schulungs Beispiel anzeigen und verschiedene Aktionen für eine oder mehrere Dateien durchführen. Auf der  \> Registerkarte "Relevanz- **Tag** " wird im linken Bereich " **Sample Files** " eine Liste der Beispieldateien zur Verarbeitung mit den Prozessen "Assessment", "Training", "Catch-up" und "Inkonsistenzen" angezeigt. 
   
 1. Wählen Sie auf der Registerkarte **Relevanz- \> Tag** die Beispieldateien in der Dropdownliste Linker Bereich aus. Die Beispieldateien werden im linken Bereich aufgelistet. 
     
@@ -90,13 +90,13 @@ In der Liste mit den Beispieldateien können Sie eine Liste der Dateien in einem
     
   - Navigieren zwischen Dateien im aktuellen Beispiel mithilfe der untergeordneten Menüleistenoptionen. Darüber hinaus stehen Navigationstasten Kombinationen zur Verfügung:
     
-    So navigieren Sie zur ersten Datei im Beispiel: UMSCHALT + STRG +\<
+    So navigieren Sie zur ersten Datei im Beispiel: UMSCHALT + STRG + \<
     
-    So navigieren Sie zur vorherigen Datei im Beispiel: UMSCHALT +\<
+    So navigieren Sie zur vorherigen Datei im Beispiel: UMSCHALT + \<
     
-    So navigieren Sie zur nächsten Datei im Beispiel: UMSCHALT +\>
+    So navigieren Sie zur nächsten Datei im Beispiel: UMSCHALT + \>
     
-    So navigieren Sie zur letzten Datei im Beispiel: UMSCHALT + STRG +\>
+    So navigieren Sie zur letzten Datei im Beispiel: UMSCHALT + STRG + \>
     
 ## <a name="see-also"></a>Siehe auch
 

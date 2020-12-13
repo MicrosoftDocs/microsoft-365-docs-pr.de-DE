@@ -2,8 +2,8 @@
 title: Verwenden des Moduls "Relevanz" in Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
 description: In diesem Artikel erfahren Sie mehr über das Modul "Relevanz" in Advanced eDiscovery, einschließlich eines Workflows sowie Richtlinien und Schritte zur Schulung und Dateiüberprüfung.
-ms.openlocfilehash: 8d5cbfff2b205ba785cda269bb09560b2a813f3c
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 0319ac378fb891d96437f53931213429b111d61d
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936608"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663284"
 ---
 # <a name="use-the-relevance-module-in-advanced-ediscovery-classic"></a>Verwenden des Moduls "Relevanz" in Advanced eDiscovery (klassisch)
 
@@ -68,7 +68,7 @@ Im folgenden finden Sie eine Übersicht über Richtlinien für die Relevanz-Schu
     
   - Auf Relevanz angewendeter Text ignorieren (wie vom Fall-Manager oder Administrator festgelegt) wird in der angezeigten Dateiinhalt in der Textansicht relevant entfernt. Wenn die Werte für Ignore Text nach dem bereits begonnenen Relevanz Training definiert wurden, wird der neue ignorierte Text auf Beispieldateien angewendet, die an dem Ort erstellt wurden, an dem er definiert wurde. Das Feature Text ignorieren sollte vorsichtig verwendet werden, da die Leistung der Dateianalyse durch die Verwendung reduziert werden kann.
     
-  - Verwenden Sie die Option " **Tagging überspringen** " nur, wenn dies erforderlich ist. Advanced eDiscovery wird nicht basierend auf übersprungenen Dateien trainiert. Wenn es schwierig ist, festzustellen, ob eine Datei relevant ist, ist es besser, nach Möglichkeit als relevant (n) oder nicht relevant (Nr) zu markieren, anstatt **Skip**auszuwählen. Wenn Advanced eDiscovery das Training auswertet, kann man dann sehen, wie gut diese Dateitypen verarbeitet wurden.
+  - Verwenden Sie die Option " **Tagging überspringen** " nur, wenn dies erforderlich ist. Advanced eDiscovery wird nicht basierend auf übersprungenen Dateien trainiert. Wenn es schwierig ist, festzustellen, ob eine Datei relevant ist, ist es besser, nach Möglichkeit als relevant (n) oder nicht relevant (Nr) zu markieren, anstatt **Skip** auszuwählen. Wenn Advanced eDiscovery das Training auswertet, kann man dann sehen, wie gut diese Dateitypen verarbeitet wurden.
     
   - Selbst Dateien mit einer sehr kleinen Menge extrahierten Texts sollten im Training als R/Nr und nicht als "Skip" markiert werden, wenn möglich. 
     

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 1/26/2018
+ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -17,13 +17,13 @@ search.appverid:
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
-description: Informationen zum Verwalten von teilweise indizierten (oder nicht indizierten) Elementen aus Exchange, SharePoint und OneDrive für Unternehmen in Ihrer Organisation.
-ms.openlocfilehash: 94dc568aa889e76241ef7bd48e3dedaba9b92f2f
-ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
+description: Informationen zum Verwalten von teilweise indizierten Elementen (auch als nicht indizierte Elemente bezeichnet) aus Exchange, SharePoint und OneDrive für Unternehmen in Ihrer Organisation.
+ms.openlocfilehash: 6a2a1d042c52a445538903fd7db9fc54305e6c13
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49602062"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49655449"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Untersuchen von teilweise indizierten Elementen in eDiscovery
 
@@ -45,7 +45,7 @@ Nachdem Sie eine eDiscovery-Suche ausgeführt haben, werden die Gesamtzahl und d
   
 - Wenn ein Element teilweise indiziert wird und mit der Suchabfrage übereinstimmt, ist es sowohl in der Anzahl (und der Größe) von Suchergebnis Elementen als auch in teilweise indizierten Elementen enthalten. Wenn die Ergebnisse der gleichen Suche jedoch exportiert werden, ist das Element nur mit einer Reihe von Suchergebnissen enthalten; Es ist nicht als teilweise indiziertes Element enthalten.
 
-- Wenn Sie einen Datumsbereich für eine Suchabfrage angeben (indem Sie ihn in die Stichwortabfrage oder mithilfe einer Bedingung einbeziehen), ist ein teilweise indiziertes Element, das nicht mit dem Datumsbereich übereinstimmt, nicht Bestandteil der Anzahl der teilweise indizierten Elemente. Nur die teilweise indizierten Elemente, die innerhalb des Datumsbereichs liegen, sind in der Anzahl der indizierten Elemente enthalten.
+- Wenn Sie einen Datumsbereich für eine Suchabfrage angeben (indem Sie ihn in die Stichwortabfrage oder mithilfe einer Bedingung einbeziehen), ist ein teilweise indiziertes Element, das nicht mit dem Datumsbereich übereinstimmt, nicht Bestandteil der Anzahl der teilweise indizierten Elemente. Teilweise indizierte Elemente, die innerhalb des Datumsbereichs liegen, sind in der Anzahl der indizierten Elemente enthalten.
 
   > [!NOTE]
   > Teilweise indizierte Elemente, die sich in SharePoint-und OneDrive-Websites befinden, *sind nicht* in der Schätzung der teilweise indizierten Elemente enthalten, die in den detaillierten Statistiken für die Suche angezeigt werden. Teilweise indizierte Elemente können jedoch exportiert werden, wenn Sie die Ergebnisse einer eDiscovery-Suche exportieren. Wenn Sie beispielsweise nur Websites Durchsuchen, ist die geschätzte Anzahl der teilweise indizierten Elemente gleich NULL.
@@ -186,6 +186,6 @@ Im folgenden finden Sie ein Beispiel für die vom Skript zurückgegebene Ausgabe
 > 
 > - A List Error Tags und die entsprechenden Dateitypen, für die der Fehler aufgetreten ist.
   
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 [Teilweise indizierte Elemente in eDiscovery](partially-indexed-items-in-content-search.md)

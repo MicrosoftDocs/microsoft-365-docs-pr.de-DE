@@ -2,8 +2,8 @@
 title: Importieren von nicht-Microsoft 365-Inhalten für erweiterte eDiscovery-Analysen
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 audience: ITPro
@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: Vorgehensweise zum Importieren von Inhalten, die nicht in Microsoft 365 gespeichert sind, in ein Azure-BLOB, damit es mit AeD analysiert werden kann
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: be30daa35770247a9dd342b88093872083075547
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 03220e6baf16662ad8dfa970ef4d7077d08b0826
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636952"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662900"
 ---
 # <a name="import-non-microsoft-365-content-for-advanced-ediscovery-classic-analysis"></a>Importieren von nicht-Microsoft 365-Inhalten für die erweiterte eDiscovery-Analyse (klassisch)
 
@@ -58,17 +58,17 @@ Wenn Sie das Feature nicht Office 365 hochladen wie in diesem Verfahren beschrie
 
 3. Wählen Sie im Menü **Überprüfungs Sätze** aus.
 
-4. Wählen Sie einen vorhandenen Überprüfungs aus, oder wählen Sie **Add Review Sets**aus.
+4. Wählen Sie einen vorhandenen Überprüfungs aus, oder wählen Sie **Add Review Sets** aus.
 
-5. Wählen Sie **Manage Review Sets**aus.
+5. Wählen Sie **Manage Review Sets** aus.
 
-6. Wählen Sie auf der nicht Office 365-Datenkarte die Option **Uploads anzeigen**aus.
+6. Wählen Sie auf der nicht Office 365-Datenkarte die Option **Uploads anzeigen** aus.
 
 7. Wählen Sie **Dateien hochladen** aus, um den Dateiupload-Assistenten zu starten.
 
-8. Die erste Registerkarte ist **1. Vorbereiten des Schritts**. Wählen Sie **Weiter: Upload Files**aus.
+8. Die erste Registerkarte ist **1. Vorbereiten des Schritts**. Wählen Sie **Weiter: Upload Files** aus.
 
-9. Auf der **2. ** Registerkarte "Dateien hochladen" Sie werden aufgefordert, AzCopy.exe herunterzuladen, wenn Sie dies nicht bereits getan haben, und dann den Pfad zum Dateispeicherort anzugeben. Beispielsweise `C:\Upload`  erhalten Sie den Befehl zum Ausführen AzCopy.exe. Mit wird `C:\Upload` Folgendes angezeigt:
+9. Auf der **2.** Registerkarte "Dateien hochladen" Sie werden aufgefordert, AzCopy.exe herunterzuladen, wenn Sie dies nicht bereits getan haben, und dann den Pfad zum Dateispeicherort anzugeben. Beispielsweise `C:\Upload`  erhalten Sie den Befehl zum Ausführen AzCopy.exe. Mit wird `C:\Upload` Folgendes angezeigt:
 
    `"%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy\AzCopy.exe" /Source:"c:\upload" /Dest:"https://spnam03salinkexternal003.blob.core.windows.net/16d13440-a6a4-4bc5-a82b-10ac9cfe9d7c-1601401811-externalstore?sv=2017-07-29&sr=c&si=ExternalStore63%7C0&sig=9Dq5v20TwkxByYDHhIEx%2FHSLlmlqUjY0njkJyTO0zGA%3D" /s`
   

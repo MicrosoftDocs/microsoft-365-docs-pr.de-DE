@@ -2,8 +2,8 @@
 title: Einrichten von Lasten zum Hinzufügen importierter Dateien in Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
 description: Lesen Sie die Schritte zum Hinzufügen importierter Dateien zur letzten definierten Last oder einem Batch von Dateien, bevor Sie die Relevanz-Schulung in Advanced eDiscovery ausführen.
-ms.openlocfilehash: fc05111d9193a935158b4b00a14717877ae148a7
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 7cd244ba1ba516c2b7376b71e809b4c01ff5df8b
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936816"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663480"
 ---
 # <a name="set-up-loads-to-add-imported-files-in-advanced-ediscovery-classic"></a>Einrichten von Lasten zum Hinzufügen importierter Dateien in Advanced eDiscovery (klassisch)
 
@@ -40,7 +40,7 @@ Betrachten Sie dazu die folgenden Szenarien:
 
 Alle importierten Dateien müssen zu einer Last hinzugefügt werden, die in Advanced eDiscovery verarbeitet werden soll. Importierte Dateien werden zur zuletzt definierten Last hinzugefügt. Wenn Sie später zusätzliche Dateien importieren, müssen Sie auch zur Last hinzugefügt werden.
   
-1. Wählen Sie auf der Registerkarte **Relevanz \> Relevanz-Setup** die Option **Lasten**aus.
+1. Wählen Sie auf der Registerkarte **Relevanz \> Relevanz-Setup** die Option **Lasten** aus.
     
     ![Registerkarte "Relevanz-Setup lädt"](../media/278aac7f-655f-462f-852a-6baa5d818768.png)
   
@@ -49,7 +49,7 @@ Alle importierten Dateien müssen zu einer Last hinzugefügt werden, die in Adva
     > [!TIP]
     > Laden Sie alle verfügbaren gepflückten Dateien in Relevanz. Wenn Sie nur einen Teil der verfügbaren Dateien laden möchten, konsultieren Sie zunächst die Unterstützung, da sich das Laden von Teilmengen negativ auf das Schulungsmaterial für Relevanz auswirken kann. 
   
-3. Wählen Sie in Loads **Management**eine Last aus.
+3. Wählen Sie in Loads **Management** eine Last aus.
     
 4. Klicken Sie auf **Dateien hinzufügen**. Die Dateien werden der Last hinzugefügt, und eine Bestätigungsmeldung wird angezeigt. 
     
@@ -61,7 +61,7 @@ Die Dateien können jetzt in der erweiterten eDiscovery-Relevanz für das Traini
 
 Wenn Sie den ladenamen ändern, wird empfohlen, einen Namen zu verwenden, der für den Fall von Bedeutung ist.
   
-1. Wählen Sie auf der Registerkarte **Relevanz \> Relevanz-Setup** die Option **Lasten**aus.
+1. Wählen Sie auf der Registerkarte **Relevanz \> Relevanz-Setup** die Option **Lasten** aus.
     
 2. Wählen Sie in der Liste **Lasten Verwaltung** eine Last aus, und klicken Sie auf das Symbol **Bearbeiten** . Das Fenster "Laden bearbeiten" wird angezeigt. 
     
@@ -95,9 +95,9 @@ Rollende Lasten und Catch-up-Funktionen unterscheiden sich wie folgt:
   
 ## <a name="adding-a-new-file-load-using-catch-up-and-rolling-loads"></a>Hinzufügen einer neuen Datei mit catch-up und Rolling Loads
 
-1. Wählen Sie auf der Registerkarte **Relevanz \> Relevanz-Setup** die Option **Lasten**aus.
+1. Wählen Sie auf der Registerkarte **Relevanz \> Relevanz-Setup** die Option **Lasten** aus.
     
-2. Klicken Sie unter Loads **Management**auf das **+** Symbol, um eine Last hinzuzufügen. Eine Bestätigungsmeldung wird angezeigt. 
+2. Klicken Sie unter Loads **Management** auf das **+** Symbol, um eine Last hinzuzufügen. Eine Bestätigungsmeldung wird angezeigt. 
     
 3. Klicken Sie auf **Ja**, um den Vorgang fortzusetzen. Das Dialogfeld **neue Last hinzufügen** wird angezeigt. 
     
@@ -116,7 +116,7 @@ Rollende Lasten und Catch-up-Funktionen unterscheiden sich wie folgt:
     
     Sie können dann Dateien markieren und einen Calculate-Vorgang ausführen. Die Kennzeichnung ermöglicht die Relevanz, um festzustellen, ob Lasten ähnlich oder unterschiedlich sind, und Sie können weiterhin an der neuen Gruppe von Dateien arbeiten.
     
-7. Nachdem Sie den auffangsatz überprüft haben, können Sie den ** \> Track zur Relevanz** für die Catch-up-Ergebnisse anzeigen. 
+7. Nachdem Sie den auffangsatz überprüft haben, können Sie den **\> Track zur Relevanz** für die Catch-up-Ergebnisse anzeigen. 
     
 1. Wenn die neue Datei Last während des Relevanz-Trainings hinzugefügt wurde (was bedeutet, dass das Problem noch nicht durch die Batch Berechnung fortgesetzt wurde), ist die **Weiterbildung** der nächste Schritt, unabhängig von den Aufhol Ergebnissen. 
     
@@ -130,9 +130,9 @@ Rollende Lasten und Catch-up-Funktionen unterscheiden sich wie folgt:
     
 2. Wenn Lasten gefunden wurden, um eindeutig zu sein: mehr Relevanz Training ist erforderlich, und der nächste Schritt ist Catch-Up Decision. Wählen Sie eine catch-up-Entscheidung wie folgt aus:
     
-    Wenn Sie **Loads zusammenführen**auswählen, werden mit Advanced eDiscovery frühere und neue Lasten für den Schulungs Satz zusammengeführt. Obwohl die erste Last die Batch Berechnung durchlaufen hat, ist mehr Schulung erforderlich. Weiter Schulung neuer und früherer Lasten zusammen. Die Batch Berechnung wird dann erneut ausgeführt, und die vorherigen Batch Berechnungsergebnisse sollten ignoriert werden. Wählen Sie diese Option aus, wenn Relevanzwerte für vorhandene Lasten neu berechnet werden können, beispielsweise, wenn die Überprüfung vorhandener Datei Lasten nicht gestartet wurde.
+    Wenn Sie **Loads zusammenführen** auswählen, werden mit Advanced eDiscovery frühere und neue Lasten für den Schulungs Satz zusammengeführt. Obwohl die erste Last die Batch Berechnung durchlaufen hat, ist mehr Schulung erforderlich. Weiter Schulung neuer und früherer Lasten zusammen. Die Batch Berechnung wird dann erneut ausgeführt, und die vorherigen Batch Berechnungsergebnisse sollten ignoriert werden. Wählen Sie diese Option aus, wenn Relevanzwerte für vorhandene Lasten neu berechnet werden können, beispielsweise, wenn die Überprüfung vorhandener Datei Lasten nicht gestartet wurde.
     
-    Wenn Sie **geteilte Lasten**auswählen, können Sie die Relevanz-Schulung nur für die neue Last fortsetzen. In diesem Fall bleiben frühere Berechnungsergebnisse für die Batch Verarbeitung unverändert. Wählen Sie diese Option aus, wenn vorhandene Relevanz-Bewertungen für vorhandene Lasten nicht neu berechnet werden können, beispielsweise, wenn die Überprüfung vorhandener Lasten bereits begonnen hat. Relevanz Scores werden ab diesem Punkt separat verwaltet und können nicht zusammengeführt werden.
+    Wenn Sie **geteilte Lasten** auswählen, können Sie die Relevanz-Schulung nur für die neue Last fortsetzen. In diesem Fall bleiben frühere Berechnungsergebnisse für die Batch Verarbeitung unverändert. Wählen Sie diese Option aus, wenn vorhandene Relevanz-Bewertungen für vorhandene Lasten nicht neu berechnet werden können, beispielsweise, wenn die Überprüfung vorhandener Lasten bereits begonnen hat. Relevanz Scores werden ab diesem Punkt separat verwaltet und können nicht zusammengeführt werden.
     
 3. Klicken Sie auf **Schulung fortsetzen**.
     

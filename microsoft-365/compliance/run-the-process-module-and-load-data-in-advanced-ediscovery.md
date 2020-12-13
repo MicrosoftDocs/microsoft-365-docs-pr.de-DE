@@ -2,8 +2,8 @@
 title: Ausführen des Prozess Moduls und Laden von Daten in Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
 description: Erfahren Sie, wie Sie mithilfe des Security &amp; Compliance Centers auf Advanced eDiscovery zugreifen und das Prozessmodul für einen Fall ausführen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 011a8448c36ac9f4726f13471c548b7bb2427000
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 64172c0198418dbb0ba4d01a5adbd5aaef4c3a3b
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936158"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662835"
 ---
 # <a name="run-the-process-module-and-load-data-in-advanced-ediscovery-classic"></a>Ausführen des Prozess Moduls und Laden von Daten in "Advanced eDiscovery" (klassisch)
 
@@ -48,7 +48,7 @@ Führen Sie die folgenden Schritte aus, um den Prozess auszuführen.
     
 3. Wählen Sie in Advanced eDiscovery den entsprechenden Fall auf der Seite angezeigte **Anfragen** aus, und klicken Sie auf **Gehe zu Groß-/Kleinschreibung**.
     
-4. Wählen Sie in **Prepare** \> **Process** \> **Setup**einen Container aus der Liste der verfügbaren Container aus.
+4. Wählen Sie in **Prepare** \> **Process** \> **Setup** einen Container aus der Liste der verfügbaren Container aus.
     
     ![Klicken Sie auf Prozess, um dem Fall die Suchergebnisse hinzuzufügen.](../media/50bdc55c-d378-4881-b302-31ef785fa359.png)
   
@@ -65,20 +65,20 @@ Führen Sie die folgenden Schritte aus, um den Prozess auszuführen.
     Wählen Sie **als Seed-Dateien markieren** aus, um den Container als seeddateien zu kennzeichnen. Sie müssen auch auswählen, um Sie pro Problem aus der Dropdownliste **für Probleme** zuzuweisen. Wählen Sie aus der Dropdownliste **Tag** entweder **relevant** oder **nicht relevant** aus. 
     
     > [!NOTE]
-    > Nachdem Sie Dateien als **Seed**festgelegt haben, können Sie Sie nicht als **vormarkiert**markieren. 
+    > Nachdem Sie Dateien als **Seed** festgelegt haben, können Sie Sie nicht als **vormarkiert** markieren. 
   
   - Im Abschnitt " **Pre-Tagged files** ": 
     
     Wählen Sie **als vordefinierte Dateien markieren** aus, um den Container als vormarkierte Dateien zu kennzeichnen. Sie müssen Sie auch pro Problem aus der Dropdownliste " **für Problem** " zuweisen. Wählen Sie aus der Dropdownliste **Tag** entweder **relevant** oder **nicht relevant** aus. 
     
     > [!NOTE]
-    > Nachdem Sie Dateien als **vordefinierte Tags**festgelegt haben, können Sie Sie nicht als **Seed**markieren. 
+    > Nachdem Sie Dateien als **vordefinierte Tags** festgelegt haben, können Sie Sie nicht als **Seed** markieren. 
   
   - Im Abschnitt **e-Mail-Tagging** . Legen Sie fest, welcher Teil einer verarbeiteten e-Mail als Seed oder Pre-Tagged markiert werden soll. 
     
 6. Klicken Sie zunächst auf **verarbeiten**. Nach Abschluss werden die Prozessergebnisse angezeigt.
     
-7. Optional Wenn Sie einer bestimmten Depotbank Datenquellen zuweisen müssen, können Sie Verwalter Namen in **Verwalter** \> **Verwalten** und Zuweisungen in **Verwalter zuweisen** hinzufügen und bearbeiten \> **Assign**. 
+7. Optional Wenn Sie einer bestimmten Depotbank Datenquellen zuweisen müssen, können Sie Verwalter Namen in **Verwalter** \> **Verwalten** und Zuweisungen in **Verwalter zuweisen** hinzufügen und bearbeiten \> . 
     
 Wenn Sie den Fall hinzufügen, können Sie den Vorgang erneut ausführen.
   

@@ -2,8 +2,8 @@
 title: Grundlegendes zur Relevanz von Assessment in Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 09/14/2017
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
 description: Erhalten Sie einen Überblick über die Bewertungsphase und ihre Rolle bei der Bestimmung des Umfangs von Problemen bei der Relevanz-Schulung in Microsoft 365 Advanced eDiscovery.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: afd4f1f549d52652ac02cfa410efc507ece58910
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 28bbe15a6e3f5611041cf446bd053f59de395d54
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818414"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663080"
 ---
 # <a name="understand-assessment-in-relevance-in-advanced-ediscovery-classic"></a>Understanding Assessment in Relevanz in Advanced eDiscovery (klassisch)
 

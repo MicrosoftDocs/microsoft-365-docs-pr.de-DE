@@ -2,8 +2,8 @@
 title: Verwenden der Express Analyse in Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 50580099-3dc0-44a1-a9b6-5ca6d396316b
 description: Hier erfahren Sie, wie Sie den Express-Analysemodus von Advanced eDiscovery ausführen und dann die Ergebnisse exportieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ccc81ccf4446af3d6e5584924883a1c8049ed962
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: de637df426d38da2863a65eea67c65a3f66953a7
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034307"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663324"
 ---
 # <a name="use-express-analysis-in-advanced-ediscovery-classic"></a>Verwenden der Express Analyse in Advanced eDiscovery (klassisch) 
 
@@ -59,7 +59,7 @@ Sie können die Expressanalyse verwenden, um nahe Duplikate und e-Mail-Threads z
     > [!NOTE]
     > Das SAS-Token läuft derzeit nach einem Monat ab. Wenn Sie versuchen, nach mehr als einem Monat herunterzuladen, müssen Sie die letzte Sitzung rückgängig machen und dann erneut exportieren. 
   
-4. Um die Express-Analyse mit Standardeinstellungen zu starten, wählen Sie **Express-Analyse**und auf der Seite **Aufgabenstatus** wird angezeigt 
+4. Um die Express-Analyse mit Standardeinstellungen zu starten, wählen Sie **Express-Analyse** und auf der Seite **Aufgabenstatus** wird angezeigt 
     
     Auf der Seite **Aufgabenstatus** können Sie die Registerkarten **verarbeiten**, **analysieren** und **exportieren** erweitern, um Details zur Express Ausführung anzuzeigen. 
     
@@ -76,7 +76,7 @@ Sie können optional **Erweiterte Einstellungen** festlegen, um die Standardpara
   
 1. Im Abschnitt **analyze** : 
     
-  - Geben Sie in den **Themen nahe Duplikate und e-Mail-Threads**den **Dokument Ähnlichkeits** Wert ein, oder übernehmen Sie die Standardeinstellung von 65%. 
+  - Geben Sie in den **Themen nahe Duplikate und e-Mail-Threads** den **Dokument Ähnlichkeits** Wert ein, oder übernehmen Sie die Standardeinstellung von 65%. 
     
   - Geben Sie in die **Maximale Anzahl von Designs** ein, oder wählen Sie einen Wert für die Anzahl der Designs aus, die erstellt werden sollen. Der Standardwert ist 200. 
     
@@ -105,22 +105,22 @@ Sie können optional **Erweiterte Einstellungen** festlegen, um die Standardpara
     
   - Um Ergebnisse für neue Dateien zu exportieren, die Sie einem vorhandenen Fall hinzugefügt haben, fahren Sie mit dem aktuellen Batch fort. Wenn Sie eine Sitzung im Batch erstellen möchten, wählen Sie die gleiche Batchnummer aus, und klicken Sie auf **Create Export Session** . Sie können diese Option verwenden, um die gleichen Parameter wie der vorherige Batch in einer inkrementellen Weise zu exportieren. 
     
-  - Klicken Sie zum Exportieren in einen neuen Batch auf Add-](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) Symbol **Hinzufügen** ![, und geben Sie einen neuen Namen in **Batch Name** ein (oder übernehmen Sie den Standardwert) und eine Beschreibung in der **Batch Beschreibung**. Klicken Sie auf **OK**.
+  - Klicken Sie zum Exportieren in einen neuen Batch auf Add-Symbol **Hinzufügen** , ![ ](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) und geben Sie einen neuen Namen in **Batch Name** ein (oder übernehmen Sie den Standardwert) und eine Beschreibung in der **Batch Beschreibung**. Klicken Sie auf **OK**.
     
-  - Um einen Stapelverarbeitungs Namen oder eine Beschreibung zu bearbeiten, wählen Sie den Namen in **Export Batch**aus](../media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png), klicken Sie auf Bearbeitungssymbol **Bearbeiten** ![, und ändern Sie dann die Felder.
+  - Um einen Stapelverarbeitungs Namen oder eine Beschreibung zu bearbeiten, wählen Sie den Namen in **Export Batch** aus, klicken Sie auf Bearbeitungssymbol **Bearbeiten** ![ ](../media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png) , und ändern Sie dann die Felder.
     
     > [!NOTE]
     > Nachdem Sie Sitzungen für einen Export Batch ausgeführt haben, können diese nicht gelöscht werden. Darüber hinaus können nur einige Parameter bearbeitet werden, nachdem die erste Sitzung ausgeführt wurde. 
   
-  - Um einen doppelten Export Batch zu erstellen, wählen Sie **Duplicate** ![Export Batch Create a Duplicate Export](../media/3f6d5f59-e842-4946-a493-473528af0119.jpg) Batch Icon aus, und geben Sie einen Namen und eine Beschreibung für den doppelten Batch im Bereich ein. 
+  - Um einen doppelten Export Batch zu erstellen, wählen Sie **Duplicate** Export Batch ![ Create a Duplicate Export Batch Icon aus, ](../media/3f6d5f59-e842-4946-a493-473528af0119.jpg) und geben Sie einen Namen und eine Beschreibung für den doppelten Batch im Bereich ein. 
     
-  - Zum Löschen eines Export Batches wählen Sie **Delete** ![Export Batch Icon](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg)aus.
+  - Zum Löschen eines Export Batches wählen Sie **Delete** ![ Export Batch Icon aus ](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg) .
     
-  - Um den Verlauf eines Batches anzuzeigen, wählen Sie Verlaufs Symbol](../media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg)für **Stapel Verlauf** ![anzeigen aus.
+  - Um den Verlauf eines Batches anzuzeigen, wählen Sie Verlaufs Symbol für **Stapel Verlauf** ![ anzeigen aus ](../media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg) .
     
-2. Wählen Sie unter define p **Bevölkerung:** **nur Dateien oberhalb des Relevanz-Trenn Ergebnisses einschließen** und/oder **Export Batch verfeinern** aus, wenn Sie die Einstellungen für den Export Batch optimieren möchten. Wenn Sie **nur Dateien oberhalb des Relevanz-Trenn Ergebnisses einschließen**auswählen, wird das **Problem** aktiviert, und wenn das Relevanz-Ergebnis der Datei höher ist als das trennergebnis für das ausgewählte Problem, wird die Datei exportiert. Die Datei wird exportiert, es sei denn, Sie wird durch den Filter " **for Review** " ausgeschlossen. Wenn Sie **Export Batch verfeinern**auswählen, werden die Optionsfelder **deduplizieren** und **Filtern nach für die Überprüfung** aktiviert. Wenn Sie die Option " **deduplizieren**" auswählen, werden Duplikate von Dateien entsprechend der definierten Richtlinie gefiltert: [Case Level (Default): aus jeder Gruppe von doppelten Dateien im gesamten Fall werden alle außer einer Datei dedupliziert. Depotebene: aus jeder Gruppe von doppelten Dateien desselben depoters werden alle Dateien mit Ausnahme einer Datei detäuscht. In der Exportausgabe steht ein Datensatz aller doppelten Dateien zur Verfügung. Wenn Sie nach dem Feld **"zur Überprüfung Filtern** " auswählen, wählen Sie **unter Metadaten ändern** aus, um die Feld Einstellungen **für die Überprüfung**einzugeben. Wählen Sie **Eingabedateien einschließen**aus, um Quelldateien in den Paketinhalt einzubeziehen. Sie können diese Option deaktivieren, um den Exportvorgang zu beschleunigen. Beachten Sie, dass die systemeigenen Dateien in jedem Fall exportiert werden.
+2. Wählen Sie unter define p **Bevölkerung:** **nur Dateien oberhalb des Relevanz-Trenn Ergebnisses einschließen** und/oder **Export Batch verfeinern** aus, wenn Sie die Einstellungen für den Export Batch optimieren möchten. Wenn Sie **nur Dateien oberhalb des Relevanz-Trenn Ergebnisses einschließen** auswählen, wird das **Problem** aktiviert, und wenn das Relevanz-Ergebnis der Datei höher ist als das trennergebnis für das ausgewählte Problem, wird die Datei exportiert. Die Datei wird exportiert, es sei denn, Sie wird durch den Filter " **for Review** " ausgeschlossen. Wenn Sie **Export Batch verfeinern** auswählen, werden die Optionsfelder **deduplizieren** und **Filtern nach für die Überprüfung** aktiviert. Wenn Sie die Option " **deduplizieren**" auswählen, werden Duplikate von Dateien entsprechend der definierten Richtlinie gefiltert: [Case Level (Default): aus jeder Gruppe von doppelten Dateien im gesamten Fall werden alle außer einer Datei dedupliziert. Depotebene: aus jeder Gruppe von doppelten Dateien desselben depoters werden alle Dateien mit Ausnahme einer Datei detäuscht. In der Exportausgabe steht ein Datensatz aller doppelten Dateien zur Verfügung. Wenn Sie nach dem Feld **"zur Überprüfung Filtern** " auswählen, wählen Sie **unter Metadaten ändern** aus, um die Feld Einstellungen **für die Überprüfung** einzugeben. Wählen Sie **Eingabedateien einschließen** aus, um Quelldateien in den Paketinhalt einzubeziehen. Sie können diese Option deaktivieren, um den Exportvorgang zu beschleunigen. Beachten Sie, dass die systemeigenen Dateien in jedem Fall exportiert werden.
     
-3. Wählen Sie unter **Metadaten definieren**die Option aus den folgenden Optionen in der Liste **Export Vorlage** aus (einmal pro Sitzung). 
+3. Wählen Sie unter **Metadaten definieren** die Option aus den folgenden Optionen in der Liste **Export Vorlage** aus (einmal pro Sitzung). 
     
   - **Standard**: grundlegende Gruppe von Datenelementen, Metadaten und Eigenschaften. Verwenden Sie diese Option, wenn Importdaten bereits in Advanced eDiscovery verarbeitet wurden und Exportdaten in ein System hochgeladen werden, das bereits die Dateien enthält. Standardmäßig werden Spalten der Exportvorlage erstellt und gefüllt.
     
@@ -128,7 +128,7 @@ Sie können optional **Erweiterte Einstellungen** festlegen, um die Standardpara
     
   - **Probleme**: Wählen Sie **alle Probleme** aus, oder wählen Sie ein bestimmtes Problem aus, das Sie erstellt haben. 
     
-Wählen Sie **OK**aus, um die erweiterten Einstellungen zu speichern, Standardwerte für **Wiederherstellung** zu verwenden oder **Abbrechen** , um das Festlegen der erweiterten Einstellungen abzubrechen. 
+Wählen Sie **OK** aus, um die erweiterten Einstellungen zu speichern, Standardwerte für **Wiederherstellung** zu verwenden oder **Abbrechen** , um das Festlegen der erweiterten Einstellungen abzubrechen. 
   
 ## <a name="see-also"></a>Siehe auch
 <a name="BK_AdvancedSettings"> </a>

@@ -2,8 +2,8 @@
 title: Exportieren von Ergebnissen in Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: 'Hier erfahren Sie, wie Sie Optionen für den Export von Ergebnissen aus Advanced eDiscovery definieren, einschließlich der Vorgehensweise zum Angeben von Parametern für einen Export Batch. '
-ms.openlocfilehash: 252a4a52cc505914b379ea2c0fbfd832ca18deeb
-ms.sourcegitcommit: 8ad481ed61cb6dabf8afb0fb04296666fa166450
+ms.openlocfilehash: 2929b183c7c0f3f132cc40738c18e2b4859a49a6
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "49422884"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662910"
 ---
 # <a name="export-results-in-advanced-ediscovery-classic"></a>Exportieren von Ergebnissen in "Advanced eDiscovery" (klassisch)
 
@@ -62,7 +62,7 @@ Nehmen wir beispielsweise an, dass ein Fall importiert und seine Daten analysier
 
 Das eDiscovery-Export Tool wird verwendet, um Suchergebnisse aus Advanced eDiscovery auf Ihren lokalen Computer zu exportieren.
   
-1. Wählen Sie in Advanced eDiscovery einen Fall aus, **Export** und klicken Sie auf \> **Setup** exportieren.
+1. Wählen Sie in Advanced eDiscovery einen Fall aus,  und klicken Sie auf \> **Setup** exportieren.
     
     - Wählen Sie in der Liste **Export Batch** den batchnamen aus, oder exportieren Sie Ergebnisse in Batch 01 exportieren (Standard Batch). 
     

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Benutzer mit Vertraulichkeits Bezeichnungen in Office-Apps für Desktop, Mobile und das Internet arbeiten und welche apps Sensitivitäts Bezeichnungen unterstützen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3a8d0181b7a17922f788605953fc9af3ca450d6d
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 36e00158c56eb83f8d2c2272295defb12363e314
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613619"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49655427"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Verwenden von Vertraulichkeitsbezeichnungen in Office-Apps
 
@@ -63,7 +63,7 @@ Für IOS und Android: Wenn diese eine Mindestversion aufgeführt sind, wird die 
 |[Berechtigungen sofort zuweisen](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Ja – Opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Benutzern die Zuweisung von Berechtigungen überlassen](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004 + | 16.35 +   | Unter Review   | Unter Review         | Unter Review                                                        |
 |[Anzeigen der Bezeichnungs Verwendung mit Label Analytics](label-analytics.md) und Senden von Daten für Administratoren                      | Unter Review            | Unter Review        | Unter Review   | Unter Review         | Ja <sup>\*</sup>                                                        |
-|[Festlegen, dass Benutzer eine Bezeichnung auf Ihre e-Mails und Dokumente anwenden müssen](sensitivity-labels.md#what-label-policies-can-do)   | Vorschau: [Beta Kanal](https://office.com/insider)             | Vorschau: [Beta Kanal](https://office.com/insider)         | Unter Review   | Unter Review         | Unter Review                                            
+|[Festlegen, dass Benutzer eine Bezeichnung auf Ihre e-Mails und Dokumente anwenden müssen](sensitivity-labels.md#what-label-policies-can-do)   | Vorschau: [Beta Kanal](https://office.com/insider)             | Vorschau: [Beta Kanal](https://office.com/insider)         | Vorschau: [Beta Kanal](https://office.com/insider)   | Unter Review         | Unter Review                                            
 |[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)                    | 2009 +                                  | Vorschau für Word und PowerPoint: Rollout in den [aktuellen Kanal (Vorschau)](https://office.com/insider) | Unter Review | Unter Review | [Ja – Opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |Unterstützen des [automatischen Speicherns](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) und der gemeinsamen [Dokumenterstellung](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) für beschriftete und geschützte Dokumente | Unter Review | Unter Review | Unter Review | Unter Review | [Ja – Opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
@@ -141,7 +141,7 @@ Vertraulichkeits Bezeichnungen, die Sie für die Verschlüsselung konfigurieren,
 - Für ein Dokument: **Datei**  >  **Informationen**  >  **schützen** des  >  **Zugriffs auf Dokumente einschränken**
 - für eine e-Mail: auf der Registerkarte " **Optionen** " > **verschlüsseln** 
   
-Wenn Benutzer ein Dokument oder eine e-Mail anfänglich bezeichnen, können Sie Ihre Bezeichnungs Konfigurationseinstellungen immer mit ihren eigenen Verschlüsselungseinstellungen außer Kraft setzen. Beispiel:
+Wenn Benutzer ein Dokument oder eine e-Mail anfänglich bezeichnen, können Sie Ihre Bezeichnungs Konfigurationseinstellungen immer mit ihren eigenen Verschlüsselungseinstellungen außer Kraft setzen. Zum Beispiel:
 
 - Ein Benutzer wendet die **vertrauliche Bezeichnung alle Mitarbeiter** auf ein Dokument an, und diese Bezeichnung ist so konfiguriert, dass Verschlüsselungseinstellungen für alle Benutzer in der Organisation angewendet werden. Dieser Benutzer konfiguriert dann die IRM-Einstellungen manuell, um den Zugriff auf einen Benutzer außerhalb Ihrer Organisation einzuschränken. Das Endergebnis ist ein Dokument mit dem Namen " **vertraulich" alle Mitarbeiter** und verschlüsselt, aber Benutzer in Ihrer Organisation können Sie nicht wie erwartet öffnen.
 
@@ -151,7 +151,7 @@ Wenn Benutzer ein Dokument oder eine e-Mail anfänglich bezeichnen, können Sie 
 
 Wenn das Dokument oder die e-Mail-Adresse bereits beschriftet ist, kann ein Benutzer eine dieser Aktionen ausführen, wenn der Inhalt noch nicht verschlüsselt ist, oder wenn er den [Verwendungsrechten](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) Export oder den Vollzugriff besitzt. 
 
-Für eine einheitlichere Bezeichnungs Oberfläche mit aussagekräftiger Berichterstellung sollten Sie geeignete Bezeichnungen und Anleitungen für Benutzer bereitstellen, die nur Beschriftungen zum Schutz von Dokumenten anwenden. Beispiel:
+Für eine einheitlichere Bezeichnungs Oberfläche mit aussagekräftiger Berichterstellung sollten Sie geeignete Bezeichnungen und Anleitungen für Benutzer bereitstellen, die nur Beschriftungen zum Schutz von Dokumenten anwenden. Zum Beispiel:
 
 - Für Ausnahmefälle, in denen Benutzer eigene Berechtigungen zuweisen müssen, geben Sie Bezeichnungen an, mit denen [Benutzer ihre eigenen Berechtigungen zuweisen können](encryption-sensitivity-labels.md#let-users-assign-permissions). 
 

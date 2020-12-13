@@ -2,8 +2,8 @@
 title: Ausführen des Prozess Moduls in Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
 description: Erfahren Sie mehr über die Richtlinien für die Vorbereitung von Fall Dateien von Daten für die Analyse mit Advanced eDiscovery.
-ms.openlocfilehash: 5130bea7da8922fd7e98d07696ffde3930d2ce41
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 3773833d9d0af993b4ccb35bcd18276800c4081f
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936198"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662810"
 ---
 # <a name="run-the-process-module-in-advanced-ediscovery-classic"></a>Ausführen des Prozess Moduls in Advanced eDiscovery (klassisch)
 
-Fall Dateien werden während des **Vorbereitungs** Prozesses in die erweiterte eDiscovery geladen \> **Process**. 
+Fall Dateien werden während des **Vorbereitungs** Prozesses in die erweiterte eDiscovery geladen \> . 
   
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 

@@ -2,8 +2,8 @@
 title: Verwenden von Advanced eDiscovery-Hilfsprogrammen
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 66ca9993-75f4-4724-aea2-5a0719b660c1
 description: Erfahren Sie mehr über die Dienstprogramme in Advanced eDiscovery, einschließlich Fallprotokoll, klare Daten, Prozessfehler, Änderung der Relevanz und Transparenz Analyse.
-ms.openlocfilehash: 4283bc7bea509c8a01fb45c433964230a5256f8a
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 745b81609d73ec88525c3348cc4d582c7d5d7b30
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936618"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663294"
 ---
 # <a name="use-advanced-ediscovery-classic-utilities"></a>Verwenden von Advanced eDiscovery (Classic)-Hilfsprogrammen
 
@@ -38,7 +38,7 @@ Die Protokolldatei kann auch auf den Clientcomputer heruntergeladen werden. Die 
   
 1. Klicken Sie in der Menüleiste auf das **Zahnrad** Symbol. 
     
-2. Wählen Sie auf der Registerkarte **Einstellungen und Dienstprogramme \> ** die Option **Case log \> Setup**aus.
+2. Wählen Sie auf der Registerkarte **Einstellungen und Dienstprogramme \>** die Option **Case log \> Setup** aus.
     
 3. Wählen Sie die **Protokollebene** wie folgt aus: 
     
@@ -57,7 +57,7 @@ Wenn das Löschen oder erneute Initialisieren von Falldaten erforderlich ist, mu
   
 1. Klicken Sie in der Menüleiste auf das **Zahnrad** Symbol. 
     
-2. Wählen Sie auf der Registerkarte **Einstellungen und Dienstprogramme \> ** die Option **Daten \> Einrichtung löschen**aus.
+2. Wählen Sie auf der Registerkarte **Einstellungen und Dienstprogramme \>** die Option **Daten \> Einrichtung löschen** aus.
     
 3. Wählen Sie eine Option aus, damit die Informationen initialisiert werden:
     
@@ -77,13 +77,13 @@ In diesem Abschnitt wird beschrieben, wie ein Relevanz-Beispiel übersprungen od
   
 1. Klicken Sie in der Menüleiste auf das **Zahnrad** Symbol. 
     
-2. Wählen Sie auf der Registerkarte **Einstellungen und Dienstprogramme \> ** die Option **Relevanz ändern**aus.
+2. Wählen Sie auf der Registerkarte **Einstellungen und Dienstprogramme \>** die Option **Relevanz ändern** aus.
     
 3. Wählen Sie eine der folgenden Optionen aus: 
     
-  - **Aktuelles Beispiel überspringen-für aktuellen Benutzer**: Dadurch werden alle nicht markierten Dateien im Open Case-Beispiel des Benutzers, der das Dienstprogramm ausführt, als **Skip**markiert. Für Dateien, die als **Skip**markiert sind, wird die Relevanz-Verarbeitung nicht ausgeführt.
+  - **Aktuelles Beispiel überspringen-für aktuellen Benutzer**: Dadurch werden alle nicht markierten Dateien im Open Case-Beispiel des Benutzers, der das Dienstprogramm ausführt, als **Skip** markiert. Für Dateien, die als **Skip** markiert sind, wird die Relevanz-Verarbeitung nicht ausgeführt.
     
-  - **Aktuelles Beispiel überspringen – alle geöffneten Beispiele**: Dadurch werden alle nicht markierten Dateien in allen geöffneten Beispielen für alle Benutzer als **Skip**markiert. Diese Option wird nicht empfohlen, wenn Benutzer derzeit Beispiele kennzeichnen.
+  - **Aktuelles Beispiel überspringen – alle geöffneten Beispiele**: Dadurch werden alle nicht markierten Dateien in allen geöffneten Beispielen für alle Benutzer als **Skip** markiert. Diese Option wird nicht empfohlen, wenn Benutzer derzeit Beispiele kennzeichnen.
     
   - **Rollback für das letzte Beispiel**: das letzte abgeschlossene Schulungs Beispiel für Relevanz wird rückgängig gemacht, unabhängig davon, ob es vor oder nach dem Prozess "Calculate" liegt. Rollback eines catch-up-Beispiels ist nicht zulässig.
     
@@ -99,7 +99,7 @@ In einem Szenario mit mehreren Problemfällen kann für jedes Problem ein Berich
   
 1. Klicken Sie in der Menüleiste auf das **Zahnrad** Symbol. 
     
-2. Wählen Sie auf der Registerkarte **Einstellungen und Dienstprogramme \> ** die Option **Transparenz Analyse \> Einrichten**aus.
+2. Wählen Sie auf der Registerkarte **Einstellungen und Dienstprogramme \>** die Option **Transparenz Analyse \> Einrichten** aus.
     
 3. Geben Sie in * * Datei-ID * * die Datei-ID der zu verarbeitenden Datei ein.
     

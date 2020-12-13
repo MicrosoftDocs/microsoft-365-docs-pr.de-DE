@@ -18,16 +18,16 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Verwenden Sie Vertraulichkeitskennzeichnungen aus dem Microsoft Information Protection Framework, um vertrauliche Inhalte mit Verschlüsselung und Wasserzeichen zu klassifizieren und zu schützen.
+description: Verwenden Sie Vertraulichkeitsbezeichnungen aus dem Microsoft Information Protection Framework (MIP), um vertrauliche Inhalte zu klassifizieren und zu schützen.
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 86ca60c2b128f8cf7468a2e435179c45294f4743
-ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
+ms.openlocfilehash: c012b422e5c1452bf6ccd58e0743509a2cf07f32
+ms.sourcegitcommit: 21b0ea5715e20b4ab13719eb18c97fadb49b563d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580728"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49624787"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informationen zu Vertraulichkeitsbezeichnungen
 
@@ -50,33 +50,37 @@ Um Vertraulichkeitsbezeichnungen anwenden zu können müssen die Benutzer mit ih
 
 Sie können Vertraulichkeitsbezeichnungen zu Folgendem verwenden:
   
-- **Erzwingen von Schutzeinstellungen wie Verschlüsselung oder Wasserzeichen für bezeichnete Inhalte.** Z. B. können die Benutzer eine Vertraulichkeitsbezeichnung auf ein Dokument oder eine E-Mail anwenden, und durch diese Bezeichnung kann der Inhalt verschlüsselt und ein Vertraulichkeitswasserzeichen angewendet werden.
+- **Bieten Sie Schutzeinstellungen, die Verschlüsselung und Inhaltsmarkierungen umfassen.** Z. B. können die Benutzer eine Vertraulichkeitsbezeichnung auf ein Dokument oder eine E-Mail anwenden, und durch diese Bezeichnung kann der Inhalt verschlüsselt und ein Vertraulichkeitswasserzeichen angewendet werden. Zu den Inhaltsmarkierungen gehören Kopf- und Fußzeilen sowie Wasserzeichen, und die Verschlüsselung kann auch einschränken, welche Aktionen autorisierte Personen an den Inhalten vornehmen können.
 
-- **Schützen von Inhalten in Office-Apps auf verschiedenen Plattformen und Geräten.** Eine Liste der unterstützten Apps finden Sie unter [Verwenden von Vertraulichkeitsbezeichnungen in Office-Apps](sensitivity-labels-office-apps.md).
+- **Schützen von Inhalten in Office-Apps auf verschiedenen Plattformen und Geräten.** Unterstützt von Word, Excel, PowerPoint und Outlook in den Office-Desktop-Anwendungen und Office im Web. Unterstützt auf Windows, MacOS, iOS, und Android.
 
 - **Schützen von Inhalten in Drittanbieter-Apps und -Diensten** mithilfe von Microsoft Cloud App Security. Mit Cloud App Security (CAS) können Sie Inhalte in Drittanbieter-Apps und -Diensten wie z. B. SalesForce, Box oder DropBox erkennen, klassifizieren, beschriften und schützen, auch wenn die Drittanbieter-App oder der Dienst Vertraulichkeitsbezeichnungen nicht liest oder unterstützt.
 
 - **Schützen von Containern**, die Teams, Microsoft 365-Gruppen und SharePoint-Seiten enthalten. Legen Sie beispielsweise Einstellungen für den Datenschutz, externen Benutzerzugriff und externe Freigabe und den Zugriff von nicht verwalteten Geräten aus fest.
 
+- **Erweitern Sie Vertraulichkeitsbezeichnung auf Power BI**: Wenn Sie diese Funktion aktivieren, können Sie Kennzeichnungen in Power BI anwenden und anzeigen und Daten schützen, wenn sie außerhalb des Dienstes gespeichert werden.
+
 - **Erweitern von Vertraulichkeitsbezeichnungen auf Ressourcen in Azure Purview**: Mit dieser Funktion (die sich aktuell noch in der Vorschau befindet) können Sie Ihre Vertraulichkeitsbezeichnungen auf Ressourcen wie SQL-Spalten, Dateien in Azure Blob Storage und mehr anwenden. 
 
 - **Erweitern von Vertraulichkeitsbezeichnungen auf Drittanbieter-Apps und -Dienste**. Mit dem Microsoft Information Protection SDK können Drittanbieter-Apps Vertraulichkeitsbezeichnungen lesen und Schutzeinstellungen anwenden.
 
-- **Klassifizieren von Inhalten ohne Verwendung von Schutzeinstellungen.** Sie können auch einfach eine Klassifizierung für Inhalte (z. B. einen Aufkleber) zuweisen, die erhalten bleibt und mit wandert, wenn die Inhalte verwendet und freigegeben werden. Sie können diese Klassifizierung verwenden, um Nutzungsberichte zu generieren und Aktivitätsdaten für Ihre vertraulichen Inhalte anzuzeigen. Anhand dieser Informationen können Sie jederzeit auswählen, dass später Schutzeinstellungen angewendet werden.
+- **Klassifizieren von Inhalten ohne Verwendung von Schutzeinstellungen.** Sie können auch einfach eine Bezeichnung als Ergebnis der Klassifizierung des Inhalts zuweisen. Auf diese Weise erhalten die Benutzer eine visuelle Zuordnung der Klassifizierung zu den Bezeichnungen Ihrer Organisation. Sie können die Bezeichnungen verwenden, um Nutzungsberichte zu erstellen und Aktivitätsdaten für Ihre vertrauliche Inhalte anzuzeigen. Anhand dieser Informationen können Sie jederzeit auswählen, dass später Schutzeinstellungen angewendet werden.
 
 In allen diesen Fällen können Ihnen Vertraulichkeitsbezeichnungen in Microsoft 365 dabei helfen, die richtigen Aktionen an den richtigen Inhalten auszuführen. Mit Vertraulichkeitsbezeichnungen können Sie Daten organisationsweit klassifizieren und Schutzeinstellungen auf der Grundlage dieser Klassifizierung erzwingen.
+
+Weitere Informationen zu diesen und anderen Szenarien, die von Vertraulichkeitsbezeichnungen unterstützt werden, finden Sie unter [Allgemeine Szenarien für Vertraulichkeitsbezeichnungen](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels). Es werden ständig neue Funktionen entwickelt, die Vertraulichkeitsbezeichnungen unterstützen. Daher kann es nützlich sein, die [Roadmap von Microsoft 365](https://aka.ms/MIPC/Roadmap) zu Rate zu ziehen.
 
 ## <a name="what-a-sensitivity-label-is"></a>Bedeutung von Vertraulichkeitsbezeichnungen
 
 Wenn Sie einem Dokument oder einer E-Mail eine Vertraulichkeitsbezeichnung zuweisen, gleicht dies einem auf den Inhalt angebrachten Stempel wie z. B.:
 
-- **Anpassbar.** Sie können Kategorien für unterschiedliche Stufen vertraulicher Inhalte in Ihrer Organisation erstellen, z. B. Privat, Öffentlich, Allgemein, Vertraulich und Streng vertraulich.
+- **Anpassbar.** Speziell für Ihr Unternehmen und Ihre geschäftlichen Anforderungen können Sie Kategorien für verschiedene Ebenen von vertraulichen Inhalten in Ihrem Unternehmen erstellen. Sie können z. B. mit Bezeichnungen wie „Privat“, „Öffentlich“, „Allgemein“, „Vertraulich“ und „Hochgradig vertraulich“ beginnen.
 
 - **Klartext.** Da die Bezeichnung in den Metadaten des Inhalts als Klartext gespeichert ist, können Apps und Dienste von Drittanbietern ihn lesen und dann bei Bedarf ihre eigenen Schutzaktionen anwenden.
 
-- **Persistent.** Nachdem eine Vertraulichkeitsbezeichnung auf einen Inhalt angewendet wurde, wird diese Bezeichnung in den Metadaten der entsprechenden E-Mail oder des betreffenden Dokuments gespeichert. Dies bedeutet, dass die Bezeichnung mit dem Inhalt, einschließlich der Schutzeinstellungen, hin- und herbewegt werden, und diese Daten werden zur Basis für das Anwenden und Erzwingen von Richtlinien.
+- **Persistent.** Da die Beschriftung in den Metadaten für Dateien und E-Mails gespeichert wird, wandert die Beschriftung mit dem Inhalt mit, unabhängig davon, wo dieser gespeichert oder abgelegt wird. Die eindeutige Kennzeichnung wird zur Grundlage für die Anwendung und Durchsetzung der von Ihnen konfigurierten Richtlinien.
 
-In Office-Apps wird eine Vertraulichkeitsbezeichnung Benutzern wie ein Tag für eine E-Mail oder ein Dokument angezeigt.
+Für die Benutzer erscheint ein Vertraulichkeitsbezeichnung wie ein Tag auf den von ihnen verwendeten Apps und kann einfach in ihre bestehenden Arbeitsabläufe integriert werden.
 
 Auf jedes Element, das Vertraulichkeitsbezeichnungen unterstützt, kann eine Vertraulichkeitsbezeichnung angewendet werden. Auf Dokumente und E-Mails kann sowohl eine Vertraulichkeitsbezeichnung als auch eine [Aufbewahrungsbezeichnung](retention.md#retention-labels) angewendet werden.
 
@@ -85,9 +89,9 @@ Auf jedes Element, das Vertraulichkeitsbezeichnungen unterstützt, kann eine Ver
 
 ## <a name="what-sensitivity-labels-can-do"></a>Wirkung von Vertraulichkeitsbezeichnungen
 
-Nachdem eine Vertraulichkeitsbezeichnung auf eine E-Mail oder ein Dokument angewendet wurde, werden alle konfigurierten Schutzeinstellungen für diese Bezeichnung auf den Inhalt erzwungen. Mit einer Vertraulichkeitsbezeichnung können Sie folgende Aktionen auslösen:
+Nachdem eine Vertraulichkeitsbezeichnung auf eine E-Mail oder ein Dokument angewendet wurde, werden alle konfigurierten Schutzeinstellungen für diese Bezeichnung auf den Inhalt erzwungen. Sie können eine Vertraulichkeitsbezeichnung konfigurieren, um:
 
-- **Verschlüsseln** Sie nur E-Mails oder E-Mails und Dokumente. Sie können auswählen, welche Benutzer oder Gruppen über Berechtigungen zum Ausführen welcher Aktionen verfügen, und wie lange diese Berechtigungen gültig sind. Sie können z. B. festlegen, dass Benutzer in einer bestimmten Gruppe in einer anderen Organisation nach der Festlegung der Bezeichnung für den Inhalt nur sieben Tage lang berechtigt sind, den Inhalt zu überprüfen. Alternativ können Sie, statt Berechtigungen durch einen Administrator zu definieren, Ihren Benutzern das Zuweisen von Berechtigungen für den Inhalt erlauben, wenn sie die Bezeichnung anwenden. 
+- E-Mails und Dokumente **zu verschlüsseln**, um den Zugriff Unbefugter auf diese Daten zu verhindern. Sie können zusätzlich auswählen, welche Benutzer oder Gruppen über Berechtigungen zum Ausführen welcher Aktionen verfügen, und wie lange diese Berechtigungen gültig sind. Sie können z. B. festlegen, dass alle Benutzer in Ihrer Organisation ein Dokument ändern dürfen, während eine bestimmte Gruppe in einer anderen Organisation das Dokument nur ansehen kann. Alternativ können Sie, statt Berechtigungen durch einen Administrator zu definieren, Ihren Benutzern das Zuweisen von Berechtigungen für den Inhalt erlauben, wenn sie die Bezeichnung anwenden. 
     
     Weitere Informationen zu den Einstellungen für die **Verschlüsselungs** beim Erstellen oder Bearbeiten einer Vertraulichkeitsbezeichnung finden Sie unter [Einschränken des Zugriffs auf Inhalte mithilfe der Verschlüsselung in Vertraulichkeitsbezeichnungen](encryption-sensitivity-labels.md).
 
@@ -167,7 +171,7 @@ Nachdem Sie Ihre Vertraulichkeitsbezeichnungen erstellt haben, müssen Sie diese
 
 Im Gegensatz zu Aufbewahrungsbezeichnungen, die an Speicherorten wie allen Exchange-Postfächern veröffentlicht werden, werden Vertraulichkeitsbezeichnungen für Benutzer oder Gruppen veröffentlicht. Apps, für die Vertraulichkeitsbezeichnungen unterstützt werden, können sie diesen Benutzern und Gruppen als angewandte Bezeichnungen anzeigen, oder als Bezeichnungen, die angewandt werden können.
 
-Mit einer Bezeichnungsrichtlinie können Sie Folgendes bewirken:
+Wenn Sie eine Kennzeichnungsrichtlinie konfigurieren, können Sie:
 
 - **Entscheiden, welchen Benutzern und Gruppen die Bezeichnungen angezeigt werden.** Die Bezeichnungen können für jeden spezifischen Benutzer oder jede E-Mail-fähige Sicherheits-, Verteiler- oder Microsoft 365-Gruppe (die eine [dynamische Mitgliedschaft](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule) in Azure AD haben kann) veröffentlicht werden.
 
@@ -269,5 +273,5 @@ Außerdem erfahren Sie mehr über [Partnerlösungen, die in Microsoft Informatio
 
 ## <a name="deployment-guidance"></a>Bereitstellungsleitfaden
 
-Informationen zur Bereitstellungsplanung, Hinweise zu Lizenzinformationen, Berechtigungen und Bereitstellungsstrategien sowie eine Liste mit Ressourcen für unterstützte Szenarien und Endbenutzerdokumentation erhalten Sie unter [Erste Schritte mit Vertraulichkeitsbezeichnungen](get-started-with-sensitivity-labels.md).
+Informationen zur Bereitstellungsplanung und -anleitung, sowie Hinweise zu Lizenzinformationen, Berechtigungen und Bereitstellungsstrategien sowie eine Liste mit Ressourcen für unterstützte Szenarien und Endbenutzerdokumentation erhalten Sie unter [Erste Schritte mit Vertraulichkeitsbezeichnungen](get-started-with-sensitivity-labels.md).
 

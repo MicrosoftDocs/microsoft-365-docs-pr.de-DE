@@ -1,5 +1,5 @@
 ---
-title: Doppelschlüssel Verschlüsselung (DKE)
+title: Double Key Encryption (DKE)
 description: Mit DKE können Sie hoch vertrauliche Daten schützen und gleichzeitig die vollständige Kontrolle über Ihren Schlüssel behalten.
 author: kccross
 ms.author: krowley
@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 39d7933014f1dc71f8c94e467954d36ede4fb451
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: 9607b095ba073229edae43c1d2f0e893db07c634
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277530"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663090"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>Doppelschlüssel Verschlüsselung für Microsoft 365
 
@@ -35,7 +35,7 @@ Weitere Informationen zu den standardmäßigen cloudbasierten Mandantenstamm Sch
 
 ## <a name="when-your-organization-should-adopt-dke"></a>Wenn Ihre Organisation DKE annehmen sollte
 
-Die Verschlüsselung mit doppeltem Schlüssel richtet sich an Ihre vertraulichsten Daten, die den strengsten Schutzanforderungen unterliegen. DKE ist nicht für alle Daten vorgesehen. Im Allgemeinen verwenden Sie die Doppelschlüssel Verschlüsselung, um nur einen sehr kleinen Teil ihrer Gesamtdaten zu schützen. Bei der Ermittlung der richtigen Daten, die mit dieser Lösung abgedeckt werden sollen, sollten Sie vor der Bereitstellung sorgfältig vorgehen. In einigen Fällen müssen Sie möglicherweise Ihren Bereich einschränken und andere Lösungen für den Großteil ihrer Daten verwenden, beispielsweise Microsoft Information Protection mit von Microsoft verwalteten Schlüsseln oder BYOK. Diese Lösungen reichen für Dokumente aus, die nicht erweiterten Schutzbestimmungen und behördlichen Anforderungen unterliegen. Außerdem können Sie mit diesen Lösungen die leistungsstärksten Office 365 Dienste verwenden. Dienste, die Sie nicht mit verschlüsselten DKE-Inhalten verwenden können. Beispiel:
+Die Verschlüsselung mit doppeltem Schlüssel richtet sich an Ihre vertraulichsten Daten, die den strengsten Schutzanforderungen unterliegen. DKE ist nicht für alle Daten vorgesehen. Im Allgemeinen verwenden Sie die Doppelschlüssel Verschlüsselung, um nur einen sehr kleinen Teil ihrer Gesamtdaten zu schützen. Bei der Ermittlung der richtigen Daten, die mit dieser Lösung abgedeckt werden sollen, sollten Sie vor der Bereitstellung sorgfältig vorgehen. In einigen Fällen müssen Sie möglicherweise Ihren Bereich einschränken und andere Lösungen für den Großteil ihrer Daten verwenden, beispielsweise Microsoft Information Protection mit von Microsoft verwalteten Schlüsseln oder BYOK. Diese Lösungen reichen für Dokumente aus, die nicht erweiterten Schutzbestimmungen und behördlichen Anforderungen unterliegen. Außerdem können Sie mit diesen Lösungen die leistungsstärksten Office 365 Dienste verwenden. Dienste, die Sie nicht mit verschlüsselten DKE-Inhalten verwenden können. Zum Beispiel:
 
 - Transport Regeln einschließlich Schadsoftware und Spam, die eine Sichtbarkeit der Anlage erfordern
 - Microsoft eintauchen
@@ -57,7 +57,7 @@ Wenn Ihre Organisationen eine der folgenden Anforderungen haben, können Sie DKE
 
 ## <a name="system-and-licensing-requirements-for-dke"></a>System-und Lizenzierungsanforderungen für DKE
 
-Die **Doppelschlüssel Verschlüsselung für Microsoft 365** wird mit Microsoft 365 E5 und Office 365 E5 ausgeliefert. Wenn Sie nicht über eine Microsoft 365 E5-Lizenz verfügen, können Sie sich für eine [Testversion](https://aka.ms/M365E5ComplianceTrial)registrieren. Weitere Informationen zu diesen Lizenzen finden Sie unter [Microsoft 365 Licensing Guidance for Security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+Die **Doppelschlüssel Verschlüsselung für Microsoft 365** wird mit Microsoft 365 E5 ausgeliefert. Wenn Sie nicht über eine Microsoft 365 E5-Lizenz verfügen, können Sie sich für eine [Testversion](https://aka.ms/M365E5ComplianceTrial)registrieren. Weitere Informationen zu diesen Lizenzen finden Sie unter [Microsoft 365 Licensing Guidance for Security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 **Azure Information Protection**. DKE arbeitet mit Sensitivitäts Bezeichnungen und benötigt Azure Information Protection.
 
@@ -113,7 +113,7 @@ Installieren Sie diese Voraussetzungen auf dem Computer, auf dem Sie den DKE-Die
 
 **.Net Core 3,1 SDK**. Laden Sie das SDK herunter, und installieren Sie es aus dem [Download .net Core 3,1](https://dotnet.microsoft.com/download/dotnet-core/3.1).
 
-**Visual Studio Code**. Laden Sie Visual Studio Code aus herunter [https://code.visualstudio.com/](https://code.visualstudio.com) . Nachdem Sie installiert haben, führen Sie Visual Studio Code aus, und wählen Sie **View** \> **Extensions**aus. Installieren Sie diese Erweiterungen.
+**Visual Studio Code**. Laden Sie Visual Studio Code aus herunter [https://code.visualstudio.com/](https://code.visualstudio.com) . Nachdem Sie installiert haben, führen Sie Visual Studio Code aus, und wählen Sie **View** \> **Extensions** aus. Installieren Sie diese Erweiterungen.
 
 - C# für Visual Studio Code
 
@@ -139,21 +139,21 @@ Die folgenden Anweisungen sind für Benutzer mit unerfahrenem git oder Visual St
 
 2. Klicken Sie auf der rechten Seite des Bildschirms auf **Code**. Ihre Version der Benutzeroberfläche zeigt möglicherweise eine Schaltfläche " **Klonen" oder "herunterladen** ". Wählen Sie dann in der Dropdownliste, die angezeigt wird, das Symbol Kopieren aus, um die URL in Ihre Zwischenablage zu kopieren.
 
-    Beispiel:
+    Zum Beispiel:
 
    ![Klonen des Double Key-Verschlüsselungsdienst-Repositorys von GitHub](../media/dke-clone.png)
 
-3. Wählen Sie in Visual Studio Code **View** die Option \> **Befehls Palette** anzeigen aus, und wählen Sie **git: Clone**aus. Um zur Option in der Liste zu wechseln, beginnen Sie mit der Eingabe, `git: clone` um die Einträge zu filtern, und wählen Sie Sie dann im Dropdown aus. Beispiel:
+3. Wählen Sie in Visual Studio Code  die Option \> **Befehls Palette** anzeigen aus, und wählen Sie **git: Clone** aus. Um zur Option in der Liste zu wechseln, beginnen Sie mit der Eingabe, `git: clone` um die Einträge zu filtern, und wählen Sie Sie dann im Dropdown aus. Zum Beispiel:
 
    ![Visual Studio Code git: Clone Option](../media/dke-vscode-clone.png)
 
 4. Fügen Sie in das Textfeld die URL ein, die Sie aus git kopiert haben, und wählen Sie **aus GitHub Klonen aus**.
 
-5. Navigieren Sie im angezeigten Dialogfeld **Ordner auswählen** zu einem Speicherort, und wählen Sie ihn aus, um das Repository zu speichern. Wählen Sie an der Eingabeaufforderung **Öffnen**aus.
+5. Navigieren Sie im angezeigten Dialogfeld **Ordner auswählen** zu einem Speicherort, und wählen Sie ihn aus, um das Repository zu speichern. Wählen Sie an der Eingabeaufforderung **Öffnen** aus.
 
     Das Repository wird in Visual Studio Code geöffnet und zeigt den aktuellen git-Zweig unten links an. Die Verzweigung sollte " **Master**" sein.
 
-    Beispiel:
+    Zum Beispiel:
 
    ![Visual Studio Code Master Verzweigung](../media/dke-vscode-master.png)
 
@@ -187,7 +187,7 @@ Wählen Sie aus, ob e-Mail-oder Rollenautorisierung verwendet werden soll. DKE u
 
 1. Öffnen Sie die Datei **appsettings.jsauf** , und suchen Sie die `AuthorizedEmailAddress` Einstellung.
 
-2. Fügen Sie die e-Mail-Adressen hinzu, die Sie autorisieren möchten. Trennen Sie mehrere e-Mail-Adressen mit doppelten Anführungszeichen und Kommas. Beispiel:
+2. Fügen Sie die e-Mail-Adressen hinzu, die Sie autorisieren möchten. Trennen Sie mehrere e-Mail-Adressen mit doppelten Anführungszeichen und Kommas. Zum Beispiel:
 
    ```json
    "AuthorizedEmailAddress": ["email1@company.com", "email2@company.com ", "email3@company.com"]
@@ -209,13 +209,13 @@ Dieses Bild zeigt die **appsettings.jsauf** Datei, die für die e-Mail-Autorisie
 
 1. Öffnen Sie die Datei **appsettings.jsauf** , und suchen Sie die `AuthorizedRoles` Einstellung.
 
-2. Fügen Sie die Active Directory Gruppennamen hinzu, die Sie autorisieren möchten. Trennen Sie mehrere Gruppennamen mit doppelten Anführungszeichen und Kommas. Beispiel:
+2. Fügen Sie die Active Directory Gruppennamen hinzu, die Sie autorisieren möchten. Trennen Sie mehrere Gruppennamen mit doppelten Anführungszeichen und Kommas. Zum Beispiel:
 
    ```json
    "AuthorizedRoles": ["group1", "group2", "group3"]
    ```
 
-3. Suchen `LDAPPath` Sie die Einstellung, und fügen Sie die Active Directory Domäne hinzu. Beispiel:
+3. Suchen `LDAPPath` Sie die Einstellung, und fügen Sie die Active Directory Domäne hinzu. Zum Beispiel:
 
    ```json
    "LDAPPath": "contoso.com"
@@ -235,7 +235,7 @@ DKE-Mandanten-und Key-Einstellungen befinden sich in der Datei **appsettings.js*
 
 1. Öffnen Sie die Datei **appsettings.js** .
 
-2. Suchen `ValidIssuers` Sie die Einstellung, und ersetzen `<tenantid>` Sie Sie durch ihre Mandanten-ID. Sie können die Mandanten-ID ermitteln, indem Sie zum Azure-Portal wechseln und die [Mandanten Eigenschaften](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)anzeigen. Beispiel:
+2. Suchen `ValidIssuers` Sie die Einstellung, und ersetzen `<tenantid>` Sie Sie durch ihre Mandanten-ID. Sie können die Mandanten-ID ermitteln, indem Sie zum Azure-Portal wechseln und die [Mandanten Eigenschaften](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)anzeigen. Zum Beispiel:
 
    ```json
    "ValidIssuers": [
@@ -243,10 +243,10 @@ DKE-Mandanten-und Key-Einstellungen befinden sich in der Datei **appsettings.js*
    ]
    ```
 
-Suchen Sie nach der `JwtAudience` . Ersetzen Sie `<yourhostname>` durch den Hostnamen des Computers, auf dem der DKE-Dienst ausgeführt wird. Beispiel:
+Suchen Sie nach der `JwtAudience` . Ersetzen Sie `<yourhostname>` durch den Hostnamen des Computers, auf dem der DKE-Dienst ausgeführt wird. Zum Beispiel:
 
   > [!IMPORTANT]
-  > Der Wert für `JwtAudience` muss mit dem Namen des Hosts *genau*übereinstimmen. Sie können **localhost: 5001** beim Debuggen verwenden. Wenn Sie das Debuggen abgeschlossen haben, sollten Sie diesen Wert jedoch auf den Hostnamen des Servers aktualisieren.
+  > Der Wert für `JwtAudience` muss mit dem Namen des Hosts *genau* übereinstimmen. Sie können **localhost: 5001** beim Debuggen verwenden. Wenn Sie das Debuggen abgeschlossen haben, sollten Sie diesen Wert jedoch auf den Hostnamen des Servers aktualisieren.
 
 - `TestKeys:Name`. Geben Sie einen Namen für den Schlüssel ein. Beispiel: `TestKey1`
 - `TestKeys:Id`. Erstellen Sie eine GUID, und geben Sie Sie als `TestKeys:ID` Wert ein. Beispiel: `DCE1CC21-FF9B-4424-8FF4-9914BD19A1BE`. Sie können eine Website wie den [Online-GUID-Generator](https://guidgenerator.com/) verwenden, um eine GUID nach dem Zufallsprinzip zu generieren.
@@ -320,9 +320,9 @@ Jetzt sind Sie fertig, um [Ihr DKE-Projekt zu erstellen](#build-the-project).
 
 Verwenden Sie die folgenden Anweisungen, um das DKE-Projekt lokal zu erstellen:
 
-1. Wählen Sie in Visual Studio Code im DKE-Dienst-Repository **View** die Option \> **Befehls Palette** anzeigen aus, und geben Sie dann an der Eingabeaufforderung **Erstellen** ein.
+1. Wählen Sie in Visual Studio Code im DKE-Dienst-Repository  die Option \> **Befehls Palette** anzeigen aus, und geben Sie dann an der Eingabeaufforderung **Erstellen** ein.
 
-2. Wählen Sie in der Liste **Aufgaben: Build-Task ausführen**aus.
+2. Wählen Sie in der Liste **Aufgaben: Build-Task ausführen** aus.
 
    Wenn keine Build-Tasks gefunden werden, wählen Sie Create **Task konfigurieren** aus, und erstellen Sie wie folgt einen für .net Core.
 
@@ -332,7 +332,7 @@ Verwenden Sie die folgenden Anweisungen, um das DKE-Projekt lokal zu erstellen:
 
       ![Erstellen tasks.jsDatei aus der Vorlage für DKE](../media/dke-createtasksjsonfromtemplate.png)
 
-   2. Wählen Sie in der Liste der Vorlagentypen **.net Core**aus.
+   2. Wählen Sie in der Liste der Vorlagentypen **.net Core** aus.
 
       ![Auswählen der richtigen Vorlage für DKE](../media/dke-tasksjsontemplate.png)
 
@@ -348,9 +348,9 @@ Verwenden Sie die folgenden Anweisungen, um das DKE-Projekt lokal zu erstellen:
 
    Wenn rote Fehler vorliegen, überprüfen Sie die Konsolenausgabe. Stellen Sie sicher, dass Sie alle vorherigen Schritte ordnungsgemäß abgeschlossen haben und die richtigen Build-Versionen vorhanden sind.
 
-4. Wählen **Run** Sie \> **Start Debuggen** ausführen aus, um den Prozess zu debuggen. Wenn Sie zur Auswahl einer Umgebung aufgefordert werden, wählen Sie **.net Core**aus.
+4. Wählen  Sie \> **Start Debuggen** ausführen aus, um den Prozess zu debuggen. Wenn Sie zur Auswahl einer Umgebung aufgefordert werden, wählen Sie **.net Core** aus.
 
-Der .net Core-Debugger wird in der Regel in gestartet `https://localhost:5001` . Um den Testschlüssel anzuzeigen, wechseln Sie zu `https://localhost:5001` und fügen Sie einen Schrägstrich (/) und den Namen Ihres Schlüssels an. Beispiel:
+Der .net Core-Debugger wird in der Regel in gestartet `https://localhost:5001` . Um den Testschlüssel anzuzeigen, wechseln Sie zu `https://localhost:5001` und fügen Sie einen Schrägstrich (/) und den Namen Ihres Schlüssels an. Zum Beispiel:
 
 ```https
 https://localhost:5001/TestKey1
@@ -378,13 +378,13 @@ Zum Veröffentlichen des Schlüsselspeichers erstellen Sie eine Azure-App-Dienst
 
     - Geben Sie den Hostnamen des Computers ein, auf dem Sie den DKE-Dienst installieren möchten. Stellen Sie sicher, dass der Name dem Namen entspricht, der für die JwtAudience-Einstellung in der Datei [**appsettings.js**](#tenant-and-key-settings) für festgelegt wurde. Der Wert, den Sie für den Namen angeben, ist auch der WebAppInstanceName.
 
-    - Wählen Sie für **veröffentlichen**den **Code**aus, und wählen Sie für **Laufzeitstapel** **.net Core 3,1**aus.
+    - Wählen Sie für **veröffentlichen** den **Code** aus, und wählen Sie für **Laufzeitstapel** **.net Core 3,1** aus.
 
-    Beispiel:
+    Zum Beispiel:
 
    ![Hinzufügen des App-Diensts](../media/dke-azure-add-app-service.png)
 
-3. Wählen Sie unten auf der Seite **überprüfen + erstellen**aus, und wählen Sie dann **Hinzufügen**aus.
+3. Wählen Sie unten auf der Seite **überprüfen + erstellen** aus, und wählen Sie dann **Hinzufügen** aus.
 
 4. Führen Sie einen der folgenden Schritte aus, um die generierten Schlüssel zu veröffentlichen:
 
@@ -420,7 +420,7 @@ DKE wird bereitgestellt, und Sie können zu den Test Schlüsseln navigieren, die
 
 2. Kopieren Sie die angezeigten Verbindungszeichenfolgen in eine lokale Datei. Sie verwenden diese Zeichenfolgen, um eine Verbindung zum Webdienst des Webanwendungs herzustellen und Dateien über FTP hochzuladen.
 
-    Beispiel:
+    Zum Beispiel:
 
    ![Kopieren von Verbindungszeichenfolgen aus dem FTP-Dashboard](../media/dke-ftp-dashboard.png)
 
@@ -448,7 +448,7 @@ Ausführen
 
 src\customer-key-store\scripts\key_store_tester.ps1 dkeserviceurl/MyKey
 
-Beispiel:
+Zum Beispiel:
 
 key_store_tester.ps1 https://mydkeservice.com/mykey
 
@@ -462,41 +462,41 @@ So registrieren Sie den DKE-Dienst:
 
 1. Öffnen Sie in Ihrem Browser das [Microsoft Azure-Portal](https://ms.portal.azure.com/), und wechseln Sie zu **alle Services** - \> **Identitäts** - \> **App-Registrierungen**.
 
-2. Wählen Sie **neue Registrierung**aus, und geben Sie einen aussagekräftigen Namen ein.
+2. Wählen Sie **neue Registrierung** aus, und geben Sie einen aussagekräftigen Namen ein.
 
 3. Wählen Sie in den angezeigten Optionen einen Kontotyp aus.
 
-    Wenn Sie Microsoft Azure mit einer nicht benutzerdefinierten Domäne wie **onmicrosoft.com**verwenden, wählen Sie **Konten nur in diesem Organisations Verzeichnis aus (nur Microsoft – einzelner Mandant).**
+    Wenn Sie Microsoft Azure mit einer nicht benutzerdefinierten Domäne wie **onmicrosoft.com** verwenden, wählen Sie **Konten nur in diesem Organisations Verzeichnis aus (nur Microsoft – einzelner Mandant).**
 
-    Beispiel:
+    Zum Beispiel:
 
    ![Neue APP-Registrierung](../media/dke-app-registration.png)
 
 4. Wählen Sie unten auf der Seite **registrieren** aus, um die neue APP-Registrierung zu erstellen.
 
-5. Wählen Sie in der neuen App-Registrierung im linken Bereich unter **Verwalten**die Option **Authentifizierung**aus.
+5. Wählen Sie in der neuen App-Registrierung im linken Bereich unter **Verwalten** die Option **Authentifizierung** aus.
 
-6. Wählen Sie **Plattform hinzufügen**aus.
+6. Wählen Sie **Plattform hinzufügen** aus.
 
-7. Wählen Sie im Popup **Konfigurieren von Plattformen** die Option **Internet**aus.
+7. Wählen Sie im Popup **Konfigurieren von Plattformen** die Option **Internet** aus.
 
-8. Geben Sie unter **Umleitungs-URIs**den URI des doppelten Schlüssel Verschlüsselungs Diensts ein. Geben Sie die APP-Dienst-URL ein, einschließlich des Hostnamens und der Domäne.
+8. Geben Sie unter **Umleitungs-URIs** den URI des doppelten Schlüssel Verschlüsselungs Diensts ein. Geben Sie die APP-Dienst-URL ein, einschließlich des Hostnamens und der Domäne.
 
     Beispiel: https://mydkeservicetest.com
 
     - Die eingegebene URL muss mit dem Hostnamen übereinstimmen, in dem der DKE-Dienst bereitgestellt wird.
     - Wenn Sie lokal mit Visual Studio testen, verwenden Sie **https://localhost:5001** .
-    - In allen Fällen muss das Schema **https**sein.
+    - In allen Fällen muss das Schema **https** sein.
 
-    Stellen Sie sicher, dass der Hostname genau mit Ihrem App-Dienst Hostnamen übereinstimmt. Möglicherweise haben Sie es geändert, um `localhost` die Problembehandlung beim Build zu beheben. In **appsettings.json**ist dieser Wert der Hostname, für den Sie festgelegt haben `JwtAudience` .
+    Stellen Sie sicher, dass der Hostname genau mit Ihrem App-Dienst Hostnamen übereinstimmt. Möglicherweise haben Sie es geändert, um `localhost` die Problembehandlung beim Build zu beheben. In **appsettings.json** ist dieser Wert der Hostname, für den Sie festgelegt haben `JwtAudience` .
 
-9. Aktivieren Sie unter **implizite Gewährung**das Kontrollkästchen **ID-Token** .
+9. Aktivieren Sie unter **implizite Gewährung** das Kontrollkästchen **ID-Token** .
 
 10. Wählen Sie **Speichern** aus, um Ihre Änderungen zu speichern.
 
-11. Wählen Sie im linken Bereich **eine API verfügbar machen**aus, und wählen Sie dann neben Anwendungs-ID-URI die Option **festlegen**aus.
+11. Wählen Sie im linken Bereich **eine API verfügbar machen** aus, und wählen Sie dann neben Anwendungs-ID-URI die Option **festlegen** aus.
 
-12. Wählen Sie auf der Seite **eine API verfügbar machen** im Bereich **durch diese API definierte Bereiche** die Option **Bereich hinzufügen**aus. Im neuen Bereich:
+12. Wählen Sie auf der Seite **eine API verfügbar machen** im Bereich **durch diese API definierte Bereiche** die Option **Bereich hinzufügen** aus. Im neuen Bereich:
 
     1. Definieren Sie den Bereichsnamen als **user_impersonation**.
 
@@ -508,13 +508,13 @@ So registrieren Sie den DKE-Dienst:
 
     5. Wählen Sie oben **Speichern** aus, um die Änderungen zu speichern.
 
-13. Wählen Sie weiterhin auf der Seite **eine API verfügbar machen** im Bereich **autorisierte Clientanwendungen** die Option **Clientanwendung hinzufügen**aus.
+13. Wählen Sie weiterhin auf der Seite **eine API verfügbar machen** im Bereich **autorisierte Clientanwendungen** die Option **Clientanwendung hinzufügen** aus.
 
     In der neuen Clientanwendung:
 
     1. Definieren Sie die Client-ID als **d3590ed6-52b3-4102-Aeff-aad2292ab01c**. Dieser Wert ist die Microsoft Office-Client-ID und ermöglicht Office das Abrufen eines Zugriffstokens für den Schlüsselspeicher.
 
-    2. Wählen Sie unter **autorisierte Bereiche**den **user_impersonation** Bereich aus.
+    2. Wählen Sie unter **autorisierte Bereiche** den **user_impersonation** Bereich aus.
 
     3. Wählen Sie **Anwendung hinzufügen** aus.
 
@@ -526,7 +526,7 @@ Ihr DKE-Dienst ist jetzt registriert. Fahren Sie mit dem [Erstellen von Beschrif
 
 Erstellen Sie im Microsoft 365 Compliance Center eine neue Sensitivitäts Bezeichnung, und wenden Sie die Verschlüsselung wie sonst an. Wählen Sie **Doppelschlüssel Verschlüsselung verwenden** aus, und geben Sie die Endpunkt-URL für Ihren Schlüssel ein.
 
-Beispiel:
+Zum Beispiel:
 
 ![Wählen Sie Doppelschlüssel Verschlüsselung im Microsoft 365 Compliance Center verwenden aus.](../media/dke-use-dke.png)
 

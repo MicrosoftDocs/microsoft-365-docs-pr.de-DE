@@ -2,8 +2,8 @@
 title: Festlegen von Analyseoptionen in Advanced eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
 description: Lesen Sie die Schritte zum Einrichten von Optionen für den Analyseprozess in Advanced eDiscovery, einschließlich nahe gestellter Duplikate, e-Mail-Threads und Designs.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d622e06cdfe9a46f470be46d1a5b9df98347cc0a
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 1ff51402cd79f2966730677a982fa5173b7e9b98
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936882"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663500"
 ---
 # <a name="set-analyze-options-in-advanced-ediscovery-classic"></a>Festlegen von Analyseoptionen in Advanced eDiscovery (klassisch)
 
@@ -58,7 +58,7 @@ Legen Sie in Advanced eDiscovery die Analyseoptionen vor der Ausführung von ANA
     
 2. Klicken Sie im Bereich **vorgeschlagene Designs** **auf das** Symbol Add Icon hinzufügen, ![ ](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) um ein Design hinzuzufügen. Fügen Sie im Bereich **vorgeschlagenes Design hinzufügen** die Wörter hinzu, getrennt durch Kommas. 
     
-3. Wählen Sie unter **Anzahl der Designs**einen Wert aus, um die Anzahl der Designs zu ermitteln, die Advanced eDiscovery für diese Wörter zu generieren versucht (Standard ist 1 Design).
+3. Wählen Sie unter **Anzahl der Designs** einen Wert aus, um die Anzahl der Designs zu ermitteln, die Advanced eDiscovery für diese Wörter zu generieren versucht (Standard ist 1 Design).
     
 4. Klicken Sie auf **Speichern** , und schließen Sie dann den Dialog. 
     
@@ -83,7 +83,7 @@ Nachdem Sie diese Optionen festgelegt haben, klicken Sie auf **Analyse** ausfüh
   
 [Grundlegendes zur Dokument Ähnlichkeit](understand-document-similarity-in-advanced-ediscovery.md)
   
-[Text ignorieren festlegen](set-ignore-text-in-advanced-ediscovery.md)
+[Text ignorieren festlegen ](set-ignore-text-in-advanced-ediscovery.md)
   
 [Erweiterte Einstellungen für ANALYZE festlegen](set-analyze-advanced-settings-in-advanced-ediscovery.md)
   
