@@ -22,12 +22,12 @@ description: Verwenden Sie Vertraulichkeitsbezeichnungen aus dem Microsoft Infor
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: c012b422e5c1452bf6ccd58e0743509a2cf07f32
-ms.sourcegitcommit: 21b0ea5715e20b4ab13719eb18c97fadb49b563d
+ms.openlocfilehash: 61bb7afedbbafb1272c3dfdbbecd0ede9777effe
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/11/2020
-ms.locfileid: "49624787"
+ms.locfileid: "49655577"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informationen zu Vertraulichkeitsbezeichnungen
 
@@ -109,11 +109,11 @@ Nachdem eine Vertraulichkeitsbezeichnung auf eine E-Mail oder ein Dokument angew
     
     Sie können Schutzeinstellungen für Gruppen und Seiten erst konfigurieren, wenn Sie diese Funktion aktiviert haben. Diese Bezeichnungskonfiguration führt nicht dazu, dass Dokumente oder E-Mails automatisch mit Bezeichnungen versehen werden. Stattdessen werden die Inhalte geschützt, indem die Bezeichnungseinstellungen den Zugriff auf den Container steuern, in dem Inhalte gespeichert sind. Zu diesen Einstellungen gehören Einstellungen für den Datenschutz, externen Benutzerzugriff und externe Freigabe und den Zugriff von nicht verwalteten Geräten aus.
 
-- **Automatisches Anwenden der Bezeichnung in Office-Apps oder Empfehlen einer Bezeichnung.** Sie können auswählen, welche Arten von vertraulichen Informationen mit Bezeichnungen versehen werden sollen, und die Bezeichnung entweder automatisch anwenden oder die Benutzer auffordern, die von Ihnen empfohlene Bezeichnung anzuwenden. Wenn Sie eine Bezeichnung empfehlen, zeigt die Eingabeaufforderung einen von Ihnen ausgewählten Text an. Zum Beispiel:
+- **Bezeichnung automatisch auf Dateien und E-Mails anwenden oder eine Bezeichnung empfehlen.** Wählen Sie aus, wie vertrauliche Informationen identifiziert werden sollen, die Sie beschriftet haben wollen. Die Bezeichnung kann automatisch angewendet werden, oder Sie können die Benutzer auffordern, die von Ihnen empfohlene Bezeichnung anzuwenden. Wenn Sie eine Bezeichnung empfehlen, zeigt die Eingabeaufforderung einen von Ihnen ausgewählten Text an. Zum Beispiel:
     
     ![Auffordern zum Zuweisen einer erforderlichen Bezeichnung](../media/Sensitivity-label-Prompt-for-required-label.png)
     
-    Weitere Informationen zu den Einstellungen für die **automatische Anwendung von Bezeichnungen für Office-Apps** beim Erstellen oder Bearbeiten einer Vertraulichkeitsbezeichnung finden Sie unter [Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md).
+    Weitere Informationen zu den Einstellungen für die **automatische Anwendung von Bezeichnungen für Dateien und E-Mails** beim Erstellen oder Bearbeiten einer Vertraulichkeitsbezeichnung finden Sie unter [Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md) für Office-Apps und [Automatisches Bezeichnen Ihrer Daten in Azure Purview](https://docs.microsoft.com/azure/purview/create-sensitivity-label).
 
 ### <a name="label-scopes"></a>Bezeichnungsbereiche
 
@@ -274,4 +274,3 @@ Außerdem erfahren Sie mehr über [Partnerlösungen, die in Microsoft Informatio
 ## <a name="deployment-guidance"></a>Bereitstellungsleitfaden
 
 Informationen zur Bereitstellungsplanung und -anleitung, sowie Hinweise zu Lizenzinformationen, Berechtigungen und Bereitstellungsstrategien sowie eine Liste mit Ressourcen für unterstützte Szenarien und Endbenutzerdokumentation erhalten Sie unter [Erste Schritte mit Vertraulichkeitsbezeichnungen](get-started-with-sensitivity-labels.md).
-

@@ -19,12 +19,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie ein angegriffenes E-Mail-Konto mit den in Microsoft 365 verfügbaren Tools erkennen und darauf reagieren.
-ms.openlocfilehash: 2830fd10b633e094c92fd98fe61ce678a4da842b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 5d5e5360e9851aee8eab27fc7c39e266e0332411
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200119"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659885"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Auf ein kompromittiertes E-Mail-Konto reagieren
 
@@ -81,7 +81,7 @@ Wenn ein Benutzer eines der oben genannten Symptome meldet, sollten Sie weitere 
 
 Selbst nachdem Sie wieder Zugriff auf Ihr Konto haben, hat der Angreifer möglicherweise versteckte Zugangsmöglichkeiten hinzugefügt, durch die er wieder die Kontrolle über das Konto übernehmen kann.
 
-Sie müssen so früh wie möglich die folgenden Schritte durchführen, um wieder Zugriff auf Ihr Konto zu erhalten. So stellen Sie sicher, dass der Angreifer nicht wieder die Kontrolle über Ihr Konto übernimmt. Mit diesen Schritten können Sie alle versteckten Zugangsmöglichkeiten entfernen, die der Angreifer möglicherweise zu Ihrem Konto hinzugefügt hat. Nachdem Sie diese Schritte ausgeführt haben, empfehlen wir, dass Sie einen Virusscan durchführen, um sicherzustellen, dass Ihr Computer nicht beeinträchtigt ist.
+Sie müssen so schnell wie möglich alle folgenden Schritte ausführen, um wieder Zugriff auf Ihr Konto zu erhalten. So stellen Sie sicher, dass der Angreifer nicht wieder die Kontrolle über Ihr Konto übernimmt. Mit diesen Schritten können Sie alle versteckten Zugangsmöglichkeiten entfernen, die der Angreifer möglicherweise zu Ihrem Konto hinzugefügt hat. Nachdem Sie diese Schritte ausgeführt haben, empfehlen wir, dass Sie einen Virenscan durchführen, um sicherzustellen, dass Ihr Computer nicht kompromittiert ist.
 
 ### <a name="step-1-reset-the-users-password"></a>Schritt 1: Setzen Sie das Benutzerkennwort zurück.
 
@@ -168,11 +168,11 @@ Um die Sperre aufzuheben, führen Sie die Schritte unter [Entfernen von Benutzer
 
    a. Klicken Sie neben **Mitglieder** auf **Bearbeiten**.
    b. Klicken Sie auf der daraufhin angezeigten Flyoutseite **Mitglieder auswählen bearbeiten** auf **Bearbeiten**.
-   c. Wählen Sie auf der nun angezeigten Flyoutseite **Mitglieder auswählen** das Benutzerkonto aus, und klicken Sie dann auf **Entfernen**. Klicken Sie abschließend auf **Fertig**, **Speichern** und dann**Schließen**.
+   c. Wählen Sie auf der nun angezeigten Flyoutseite **Mitglieder auswählen** das Benutzerkonto aus, und klicken Sie dann auf **Entfernen**. Klicken Sie abschließend auf **Fertig**, **Speichern** und dann **Schließen**.
 
 4. Führen Sie im EAC unter <admin.protection.outlook.com/ecp/> die folgenden Schritte aus:
 
-   Wählen Sie **Berechtigungen**aus, wählen Sie die einzelnen Rollengruppen manuell aus, und überprüfen Sie im Detailbereich im Abschnitt **Mitglieder** die Benutzerkonten.  Führen Sie die folgenden Schritte aus, wenn die Rollengruppe das Benutzerkonto enthält:
+   Wählen Sie **Berechtigungen** aus, wählen Sie die einzelnen Rollengruppen manuell aus, und überprüfen Sie im Detailbereich im Abschnitt **Mitglieder** die Benutzerkonten.  Führen Sie die folgenden Schritte aus, wenn die Rollengruppe das Benutzerkonto enthält:
 
    a. Wählen Sie die Rollengruppe aus, und klicken Sie auf **Bearbeiten** ![Symbol „Bearbeiten“](../../media/ITPro-EAC-EditIcon.png).
    b. Wählen Sie im Abschnitt **Mitglieder** das Benutzerkonto aus, und klicken Sie dann auf **Entfernen** ![Symbol „Entfernen“](../../media/ITPro-EAC-RemoveIcon.gif). Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
@@ -181,7 +181,7 @@ Um die Sperre aufzuheben, führen Sie die Schritte unter [Entfernen von Benutzer
 
 1. Stellen Sie sicher, dass Sie die gesendeten Elemente überprüfen. Möglicherweise müssen Sie Personen in Ihrer Kontaktliste informieren, dass Ihr Konto manipuliert wurde. Angreifer können sie um Geld gebeten haben, z. B. unter dem Vorwand, dass Sie in einem anderen Land in einer Notsituation sind und Geld benötigen, oder der Angreifer hat ihnen möglicherweise einen Virus gesendet, um auch ihren Computer anzugreifen.
 
-2. Alle anderen Dienste, die dieses Exchange-Konto als alternatives E-Mail-Konto verwendet haben, wurden möglicherweise auch manipuliert. Führen Sie zunächst diese Schritte für Ihr Microsoft 365-Abonnement aus, und führen Sie sie dann für Ihre anderen Konten aus.
+2. Alle anderen Dienste, die dieses Exchange-Konto als alternatives E-Mail-Konto verwendet haben, wurden möglicherweise auch manipuliert. Führen Sie diese Schritte zunächst für Ihr Microsoft 365-Abonnement aus, und danach für Ihre anderen Konten.
 
 3. Stellen Sie sicher, dass Ihre Kontaktinformationen, z. B. Telefonnummern und Adressen, richtig sind.
 

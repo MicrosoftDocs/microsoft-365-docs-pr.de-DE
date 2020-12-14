@@ -18,17 +18,17 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
-description: Vergleichen Sie die Verschlüsselungsoptionen von Microsoft 365, einschließlich Office-Nachrichtenverschlüsselung (Office Message Encryption, OME), S/MIME und Information Rights Management (IRM), und erfahren Sie mehr über Transport Layer Security (TLS).
-ms.openlocfilehash: 4b18110664c602b5b09e60cbd791559069297be4
-ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
+description: Vergleichen Sie die Verschlüsselungsoptionen von Microsoft 365, einschließlich Office 365-Nachrichtenverschlüsselung (Office 365 Message Encryption, OME), S/MIME sowie Informationsrechteverwaltung (Information Rights Management, IRM), und erfahren Sie mehr über die Transportschichtsicherheit (Transport Layer Security, TLS).
+ms.openlocfilehash: 25568d4e39c2fe7ca2dea214276be5d7f6986518
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580708"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663020"
 ---
 # <a name="email-encryption"></a>E-Mail-Verschlüsselung
 
-In diesem Artikel werden die Verschlüsselungsoptionen in Microsoft 365, einschließlich Office 365-Nachrichtenverschlüsselung (Office Message Encryption, OME), S/MIME und Information Rights Management (IRM) verglichen und Transport Layer Security (TLS) eingeführt.
+In diesem Artikel werden die Verschlüsselungsoptionen in Microsoft 365, einschließlich Office-Nachrichtenverschlüsselung (Office Message Encryption, OME), S/MIME und Information Rights Management (IRM) verglichen und Transport Layer Security (TLS) eingeführt.
   
 Microsoft 365 bietet mehrere Verschlüsselungsoptionen, die Sie bei der Erfüllung Ihrer geschäftlichen Anforderungen hinsichtlich E-Mail-Sicherheit unterstützen. In diesem Artikel werden drei Methoden zum Verschlüsseln von E-Mail in Office 365 präsentiert. Weitere Informationen zu allen Sicherheitsfeatures in Office 365 erhalten Sie im [Office 365 Trust Center](https://go.microsoft.com/fwlink/p/?LinkID=282470). In diesem Artikel werden die drei Verschlüsselungstypen vorgestellt, die Office 365-Administratoren zum Sichern von E-Mails in Microsoft 365 zur Verfügung stehen:
   
@@ -38,7 +38,7 @@ Microsoft 365 bietet mehrere Verschlüsselungsoptionen, die Sie bei der Erfüllu
 
 - Information Rights Management (IRM).
 
-## <a name="email-encryption-and-how-microsoft-365-uses-it"></a>E-Mail-Verschlüsselung und deren Verwendung durch Microsoft 365
+## <a name="what-is-email-encryption-and-how-does-microsoft-365-use-it"></a>Was ist E-Mail-Verschlüsselung, und wie wird sie in Microsoft 365 verwendet?
 
 Verschlüsselung ist der Prozess, mit dem Informationen codiert werden, sodass nur autorisierte Empfänger sie decodieren und die Informationen nutzen können. Microsoft 365 verwendet Verschlüsselung auf zwei Arten: im Dienst und als Kundensteuerelement. Im Dienst wird Verschlüsselung in Microsoft 365 standardmäßig verwendet. Sie müssen keine Konfiguration vornehmen. Microsoft 365 verwendet z. B. Transport Layer Security (TLS), um die Verbindung bzw. die Sitzung zwischen zwei Servern zu verschlüsseln. 
   
@@ -68,16 +68,11 @@ In diesem Video sehen Sie eine Einführung in die [Verschlüsselung in Office 36
 |Empfehlungen und Beispielszenarien|Die Verwendung von OME wird empfohlen, wenn Sie vertrauliche Geschäftsinformationen an Personen außerhalb Ihrer Organisation senden möchten, unabhängig davon, ob es sich um Verbraucher oder andere Unternehmen handelt. Beispiel:  <br/>  Ein Bankangestellter sendet Kreditkartenabrechnungen an Kunden  <br/>  Eine Arztpraxis sendet eine Krankenakte an einen Patienten.  <br/>  Ein Anwalt sendet vertrauliche Rechtsinformationen an einen anderen Anwalt.|Die Verwendung von IRM wird empfohlen, wenn Sie Nutzungseinschränkungen und Verschlüsselung anwenden möchten. Beispiel:  <br/>  Ein Vorgesetzter, der vertrauliche Details über ein neues Produkt an sein Team sendet, wendet die Option "Nicht weiterleiten" an.  <br/>  Eine Führungskraft muss ein Angebot für ein anderes Unternehmen freigeben, das eine Anlage von einem Partner enthält, der Office 365 verwendet, und sowohl die E-Mail als auch die Anlage müssen geschützt werden.|Die Verwendung von S/MIME wird empfohlen, wenn Ihre Organisation oder die Organisation des Empfängers in eine echte Peer-zu-Peer-Verschlüsselung benötigt.  <br/>  S/MIME wird am häufigsten in den folgenden Szenarien verwendet:  <br/>  Kommunikation zwischen Behörden  <br/>  Kommunikation zwischen einem Unternehmen und einer Behörde|
 ||
 
-Wenn Sie zum Schutz Ihrer Daten sowohl [Azure Information Protection](https://docs.microsoft.com/microsoft-365/compliance/protect-information) als auch E-Mail-Verschlüsselung verwenden, beachten Sie Folgendes:
-- Sie können bei OM- und IRM-Verschlüsselung Vertraulichkeitsbezeichnungen verwenden. Weitere Details finden Sie unter [Einschränken des Zugriffs auf Inhalte mithilfe von Vertraulichkeitsbezeichnungen zur Verschlüsselung](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide#what-happens-to-existing-encryption-when-a-labels-applied).
-- Sie können Vertraulichkeitsbezeichnungen auf E-Mails anwenden, die mit S/MIME signiert wurden.
-- Sie können Vertraulichkeitsbezeichnungen nicht auf E-Mails anwenden, die mit S/MIME verschlüsselt wurden, weil durch End-to-End-Verschlüsselung geschützte Nachrichten von Richtlinien nicht verarbeitet werden.
-
-## <a name="encryption-options-available-for-my-microsoft-365-subscription"></a>Verfügbare Verschlüsselungsoptionen für mein Microsoft 365-Abonnement
+## <a name="what-encryption-options-are-available-for-my-microsoft-365-subscription"></a>Welche Verschlüsselungsoptionen sind für mein Microsoft 365-Abonnement verfügbar?
 
 Informationen zu den E-Mail-Verschlüsselungsoptionen für Ihr Microsoft 365-Abonnement finden Sie unter [Exchange Online-Dienstbeschreibung](https://technet.microsoft.com/library/exchange-online-service-description.aspx). Hier finden Sie Informationen zu den folgenden Verschlüsselungsfeatures:
-
-- Azure RMS, einschließlich IRM-Funktionen und der neuen OM-Funktionen
+  
+- Azure RMS, einschließlich IRM-Funktionen und OME
 
 - S/MIME
 

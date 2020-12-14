@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Administratoren erfahren, wie Sie Anti-Spam-Richtlinien in Exchange Online Protection (EOP) anzeigen, erstellen, ändern und löschen können.
-ms.openlocfilehash: 81c5e74ec45cc633b3a4ba46c7865d0a643af2cd
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: d83c41b52db5c0533a9a5d52ab20ace9b612e1e6
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616692"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658649"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Konfigurieren von Antispamrichtlinien in EOP
 
@@ -45,7 +45,7 @@ Der Unterschied zwischen diesen beiden Elementen ist nicht offensichtlich, wenn 
 - Beim Ändern einer Antispamrichtlinie ändern die Einstellungen im Zusammenhang mit Name, Priorität, aktiviert oder deaktiviert und Empfängerfilter tatsächlich die Spamfilterregel. Alle anderen Einstellungen ändern die zugehörige Spamfilterrichtlinie.
 - Wenn Sie eine Antispamrichtlinie entfernen, werden die Spamfilterregel und die zugeordnete Spamfilterrichtlinie entfernt.
 
-In Exchange Online PowerShell oder der eigenständigen EOP PowerShell verwalten Sie die Richtlinie und die Regel getrennt. Weitere Informationen hierzu finden Sie im Abschnitt [Verwenden von Exchange Online PowerShell oder eigenständige EOP PowerShell zum Konfigurieren von Antispamrichtlinien](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies) weiter unten in diesem Thema.
+In Exchange Online PowerShell oder der eigenständigen EOP PowerShell verwalten Sie die Richtlinie und die Regel getrennt. Weitere Informationen finden Sie im Abschnitt [Verwenden von Exchange Online PowerShell oder eigenständige EOP PowerShell zum Konfigurieren von Antispamrichtlinien](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies) weiter unten in diesem Artikel.
 
 Jede Organisation verfügt über eine integrierte Antispamrichtlinie namens "Standard" mit folgenden Eigenschaften:
 
@@ -86,7 +86,7 @@ Beim Erstellen einer benutzerdefinierten Antispamrichtlinie im Security & Compli
 
    - **Name**: Geben Sie einen eindeutigen, aussagekräftigen Namen für die Richtlinie ein. Verwenden Sie nicht die folgenden Zeichen: `\ % & * + / = ? { } | < > ( ) ; : , [ ] "`.
 
-      Wenn Sie zuvor Antispamrichtlinien im Exchange Admin Center (EAC) erstellt haben, die diese Zeichen enthalten, müssen Sie die Antispamrichtlinie in PowerShell umbenennen. Anweisungen hierzu finden Sie im Abschnitt [Verwenden von PowerShell zum Ändern von Spamfilterregeln](#use-powershell-to-modify-spam-filter-rules) weiter unten in diesem Thema.
+      Wenn Sie zuvor Antispamrichtlinien im Exchange Admin Center (EAC) erstellt haben, die diese Zeichen enthalten, müssen Sie die Antispamrichtlinie in PowerShell umbenennen. Anweisungen hierzu finden Sie im Abschnitt [Verwenden von PowerShell zum Ändern von Spamfilterregeln](#use-powershell-to-modify-spam-filter-rules) weiter unten in diesem Artikel.
 
    - **Beschreibung**: Geben Sie eine optionale Beschreibung für die Richtlinie ein.
 
@@ -382,7 +382,7 @@ In Exchange Online PowerShell oder der eigenständigen Exchange Online Protectio
 
 Die folgenden Einstellungen für Antispamrichtlinien sind nur in PowerShell verfügbar:
 
-- Der Parameter _MarkAsSpamBulkMail_, der standardmäßig `On` ist. Die Auswirkungen dieser Einstellung wurden im Abschnitt [Verwenden des Security & Compliance Centers zum Erstellen von Antispamrichtlinien](#use-the-security--compliance-center-to-create-anti-spam-policies) weiter oben in diesem Thema erläutert.
+- Der Parameter _MarkAsSpamBulkMail_, der standardmäßig `On` ist. Die Auswirkungen dieser Einstellung wurden im Abschnitt [Verwenden des Security & Compliance Centers zum Erstellen von Antispamrichtlinien](#use-the-security--compliance-center-to-create-anti-spam-policies) weiter oben in diesem Artikel erläutert.
 
 - Die folgenden Einstellungen für Spam-Quarantänebenachrichtigungen für Endbenutzer:
 
@@ -513,7 +513,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-Hoste
 
 ### <a name="use-powershell-to-modify-spam-filter-policies"></a>Verwenden von PowerShell zum Ändern von Spamfilterrichtlinien
 
-Abgesehen von den folgenden Elementen stehen dieselben Einstellungen zur Verfügung, wenn Sie eine Spamfilterrichtlinie in PowerShell ändern, wie wenn Sie die Richtlinie wie in Abschnitt [Schritt 1: Verwenden von PowerShell zum Erstellen einer Spamfilterrichtlinie](#step-1-use-powershell-to-create-a-spam-filter-policy) (weiter oben zu diesem Thema beschrieben) erstellen.
+Abgesehen von den nachfolgenden Elementen stehen beim Ändern einer Spamfilterrichtlinie in PowerShell dieselben Einstellungen zur Verfügung, wie wenn Sie die Richtlinie erstellen gemäß Abschnitt [Schritt 1: Verwenden von PowerShell zum Erstellen einer Spamfilterrichtlinie](#step-1-use-powershell-to-create-a-spam-filter-policy) weiter oben in diesem Artikel.
 
 - Die Option _MakeDefault_, mit der die angegebene Richtlinie zur Standardrichtlinie erklärt wird (angewendet auf alle, immer **Niedrigste** Priorität, und Sie können sie nicht löschen), steht nur zur Verfügung, wenn Sie eine Spamfilterrichtlinie in PowerShell ändern.
 
@@ -531,7 +531,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Set-Hoste
 
 Die einzige Einstellung, die beim Ändern einer Spamfilterregel in PowerShell nicht verfügbar ist, ist der Parameter _Enabled_, mit dem Sie eine deaktivierte Regel erstellen können. Informationen zum Aktivieren oder Deaktivieren vorhandener Spamfilterregeln finden Sie im nächsten Abschnitt.
 
-Ansonsten stehen keine zusätzlichen Einstellungen zur Verfügung, wenn Sie eine Spamfilterregel in PowerShell ändern. Die gleichen Einstellungen stehen zur Verfügung, wenn Sie eine Regel wie im Abschnitt [Schritt 2: Verwenden von PowerShell zum Erstellen einer Spamfilterregel](#step-2-use-powershell-to-create-a-spam-filter-rule) weiter oben in diesem Thema beschrieben erstellen.
+Ansonsten stehen keine zusätzlichen Einstellungen zur Verfügung, wenn Sie eine Spamfilterregel in PowerShell ändern. Die gleichen Einstellungen stehen zur Verfügung, wenn Sie eine Regel erstellen gemäß Abschnitt [Schritt 2: Verwenden von PowerShell zum Erstellen einer Spamfilterregel](#step-2-use-powershell-to-create-a-spam-filter-rule) weiter oben in diesem Artikel.
 
 Verwenden Sie zum Ändern einer Spamfilterregel folgende Syntax:
 
