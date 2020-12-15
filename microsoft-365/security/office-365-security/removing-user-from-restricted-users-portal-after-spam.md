@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: Hier erfahren Administratoren, wie sie Benutzer aus dem Portal für eingeschränkte Benutzer in Office 365 entfernen können. Benutzer werden aufgrund des Versands von ausgehenden Spamnachrichten zum Portal für eingeschränkte Benutzer hinzugefügt, in der Regel als Folge einer Kontokompromittierung.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f464a2c02ae6b6290e79cc9aff7d3a37bc08a6ff
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: bca9366fdb8cacdc58c12757e870c8ead8f1fa7a
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572441"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683055"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Entfernen von blockierten Benutzern aus dem Portal "Eingeschränkte Benutzer" in Office 365
 
@@ -86,7 +86,7 @@ Die standardmäßige Benachrichtigungsrichtlinie mit dem Namen **Benutzer, desse
 
 3. Überprüfen oder konfigurieren Sie im Flyout die folgenden Einstellungen:
 
-   - **Status**: Überprüfen Sie, ob die Benachrichtigung aktiviert ist ![Aktiviert](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+   - **Status**: Überprüfen Sie, ob die Benachrichtigung aktiviert ist ![Aktiviert](../../media/scc-toggle-on.png).
 
    - **E-Mail-Empfänger**: Klicken Sie auf **Bearbeiten**, und überprüfen oder konfigurieren Sie die folgenden Einstellungen im angezeigten Flyout **Empfänger bearbeiten**:
 

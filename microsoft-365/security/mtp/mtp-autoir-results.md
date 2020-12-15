@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 09/16/2020
-ms.openlocfilehash: 183435596706855479c49abc34358c85dccb0da4
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 39f6be70ad7a611f9919bb0529e8c8ed7f9dc339
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846508"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683360"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Details und Ergebnisse einer automatisierten Untersuchung
 
@@ -48,7 +48,7 @@ Mit einer der folgenden Methoden können Sie die Anzeige mit Untersuchungsdetail
 
 ### <a name="select-an-item-in-the-action-center"></a>Auswählen eines Elements im Info-Center
 
-Verwenden Sie das Info-Center, um Aktionen anzuzeigen, deren Genehmigung aussteht (auf der Registerkarte **Ausstehend** ) oder die bereits genehmigt wurden (auf der Registerkarte **Verlauf** ). 
+Verwenden Sie das Info-Center, um Aktionen anzuzeigen, deren Genehmigung aussteht (auf der Registerkarte **Ausstehend**) oder die bereits genehmigt wurden (auf der Registerkarte **Verlauf**). 
 
 1. Gehen Sie zu [https://security.microsoft.com](https://security.microsoft.com), und melden Sie sich an. 
 
@@ -74,19 +74,19 @@ Verwenden Sie die Anzeige mit Untersuchungsdetails, um vergangene, aktuelle und 
 
 ![Untersuchungsdetails](../../media/mtp-air-investdetails.png)
 
-In der Anzeige mit Untersuchungsdetails können Sie Informationen im **Untersuchungsdiagramm** sowie auf den Registerkarten **Benachrichtigungen** , **Geräte** , **Identitäten** , **Wichtige Erkenntnisse** , **Entitäten** , **Protokoll** und **Ausstehende Aktionen** anzeigen, die in der folgenden Tabelle beschrieben sind.
+In der Anzeige mit Untersuchungsdetails können Sie Informationen im **Untersuchungsdiagramm** sowie auf den Registerkarten **Benachrichtigungen**, **Geräte**, **Identitäten**, **Wichtige Erkenntnisse**, **Entitäten**, **Protokoll** und **Ausstehende Aktionen** anzeigen, die in der folgenden Tabelle beschrieben sind.
 
-|Registerkarte    |Beschreibung |
+| Registerkarte | Beschreibung |
 |--------|--------|
-|Untersuchungsdiagramm    |Bietet eine visuelle Darstellung der Untersuchung. Stellt Entitäten dar und listet gefundene Bedrohungen zusammen mit Warnungen und Informationen dazu auf, ob Aktionen genehmigt werden müssen.<br/>Sie können auf ein Element im Diagramm klicken, um weitere Details anzuzeigen. Wenn Sie beispielsweise auf das Symbol **Bedrohungen gefunden** klicken, gelangen Sie zur Registerkarte **Wichtige Erkenntnisse**. |
-|Warnungen |Listet die mit der Untersuchung verbundenen Warnungen auf. Warnungen können aus den Features zum Schutz vor Bedrohungen auf dem Computer eines Benutzers, aus Office-Apps, aus Cloud App Security und aus anderen Features von Microsoft 365 Threat Protection stammen.|
-|Geräte|Listet die in die Untersuchung einbezogenen Computer zusammen mit der Korrekturstufe auf.|
-|Wichtige Erkenntnisse   |Listet die Ergebnisse der Untersuchung sowie den Status und die ausgeführten oder ausstehenden Aktionen auf. Sie können ausstehende Aktionen für Geräte und Identitäten auf dieser Registerkarte genehmigen.|
-|Entitäten   |Listet Benutzeraktivitäten, Dateien, Prozesse, Dienste, Treiber, IP-Adressen und Persistenzverfahren im Zusammenhang mit der Untersuchung zusammen mit dem Status und ausgeführten Aktionen auf.|
-|Protokoll    |Bietet eine detaillierte Darstellung aller während der Untersuchung ausgeführten Schritte zusammen mit dem Status.|
-|Ausstehende Aktionen    |Listet Elemente auf, für die eine Genehmigung erforderlich, um fortzufahren.|
+| **Untersuchungsdiagramm**   | Bietet eine visuelle Darstellung der Untersuchung. Stellt Entitäten dar und listet gefundene Bedrohungen zusammen mit Warnungen und Informationen dazu auf, ob Aktionen genehmigt werden müssen.<br/>Sie können auf ein Element im Diagramm klicken, um weitere Details anzuzeigen. Wenn Sie beispielsweise auf das Symbol **Bedrohungen gefunden** klicken, gelangen Sie zur Registerkarte **Wichtige Erkenntnisse**. |
+| **Benachrichtigungen**    | Listet die mit der Untersuchung verbundenen Warnungen auf. Warnungen können auf dem Computer eines Benutzers, in Office-Apps, in der Cloud-App-Sicherheit und in anderen Features von Microsoft 365 Defender von Bedrohungen geschützt werden.|
+| **Geräte** | Listet die in die Untersuchung einbezogenen Computer zusammen mit der Korrekturstufe auf.|
+| **Wichtige Erkenntnisse**  | Listet die Ergebnisse der Untersuchung sowie den Status und die ausgeführten oder ausstehenden Aktionen auf. Sie können ausstehende Aktionen für Geräte und Identitäten auf dieser Registerkarte genehmigen.|
+| **Entities**  | Listet Benutzeraktivitäten, Dateien, Prozesse, Dienste, Treiber, IP-Adressen und Persistenzverfahren im Zusammenhang mit der Untersuchung zusammen mit dem Status und ausgeführten Aktionen auf.|
+|**Log**    | Bietet eine detaillierte Darstellung aller während der Untersuchung ausgeführten Schritte zusammen mit dem Status.|
+| **Ausstehende Aktionen** | Listet Elemente auf, für die eine Genehmigung erforderlich, um fortzufahren.|
 
 ## <a name="next-steps"></a>Nächste Schritte
 
 - [Genehmigen oder Ablehnen von Aktionen im Zusammenhang mit der automatischen Untersuchung und Reaktion](mtp-autoir-actions.md)
-
+- [Überprüfen von Korrekturaktionen](mtp-remediation-actions.md)

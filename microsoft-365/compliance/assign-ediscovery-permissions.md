@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Zuweisen der erforderlichen Berechtigungen zum Ausführen von eDiscovery-bezogenen Aufgaben mithilfe des Security & Compliance Centers.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f81ac5a87fad99689f7cfa36c044d3de765f4520
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: f4271d7cc7a9c9239aadb8ca2357e000f4f45e80
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920309"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682606"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Zuweisen von eDiscovery-Berechtigungen im Security & Compliance Center
 
@@ -62,7 +62,7 @@ Die primäre eDiscovery-bezogene Rollengruppe in Security & Compliance Center wi
   
 4. Führen Sie auf der Flyout-Seite des **eDiscovery-Managers** einen der folgenden Schritte basierend auf den eDiscovery-Berechtigungen aus, die Sie zuweisen möchten.
   
-    **So machen Sie einen Benutzer zu einem eDiscovery-Manager:** Wählen Sie neben **eDiscovery-Manager** die Option **Bearbeiten** aus. Wählen Sie im Abschnitt **eDiscovery-Manager** auswählen den Hyperlink **eDiscovery-Manager auswählen** aus, und wählen Sie dann ![ Add Icon Add aus ](../media/ITPro-EAC-AddIcon.gif) **Add**. Wählen Sie die Benutzer (oder Benutzer) aus, die Sie als eDiscovery-Manager hinzufügen möchten, und wählen Sie dann **Hinzufügen** aus. Wenn Sie mit dem Hinzufügen von Benutzern fertig sind, wählen Sie **Fertig** aus. Wählen Sie dann auf der Flyout-Seite für **eDiscovery-Manager bearbeiten** die Option **Speichern** aus, um die Änderungen an der eDiscovery-Manager-Mitgliedschaft zu speichern.
+    **So machen Sie einen Benutzer zu einem eDiscovery-Manager:** Wählen Sie neben **eDiscovery-Manager** die Option **Bearbeiten** aus. Wählen Sie im Abschnitt **eDiscovery-Manager** auswählen den Hyperlink **eDiscovery-Manager auswählen** aus, und wählen Sie dann ![ Add Icon Add aus ](../media/ITPro-EAC-AddIcon.gif) . Wählen Sie die Benutzer (oder Benutzer) aus, die Sie als eDiscovery-Manager hinzufügen möchten, und wählen Sie dann **Hinzufügen** aus. Wenn Sie mit dem Hinzufügen von Benutzern fertig sind, wählen Sie **Fertig** aus. Wählen Sie dann auf der Flyout-Seite für **eDiscovery-Manager bearbeiten** die Option **Speichern** aus, um die Änderungen an der eDiscovery-Manager-Mitgliedschaft zu speichern.
   
     **So machen Sie einen Benutzer zu einem eDiscovery-Administrator:** Wählen Sie neben **eDiscovery-Manager** die Option **Bearbeiten** aus. Wählen Sie im Abschnitt **eDiscovery-Administrator auswählen** unter **eDiscovery-Administratoren** die Option **eDiscovery-Administrator** auswählen, **Bearbeiten** aus, und klicken Sie dann auf ![ Symbol ](../media/ITPro-EAC-AddIcon.gif) **hinzu** fügen. Wählen Sie die Benutzer (oder Benutzer) aus, die Sie als **eDiscovery-Administrator** hinzufügen möchten, und fügen Sie dann  **hinzu**. Wenn Sie mit dem Hinzufügen von Benutzern fertig sind, wählen Sie **Fertig** aus. Wählen Sie dann auf der Flyout-Seite für **eDiscovery-Administrator bearbeiten** die Option **Speichern** aus, um die Änderungen an der eDiscovery-Administrator Mitgliedschaft zu speichern.
   
@@ -77,16 +77,16 @@ In der folgenden Tabelle sind die eDiscovery-Rollen im Sicherheits & Compliance 
   
 |**Rolle**|**Complianceadministrator**|**eDiscovery-Manager-& Administrator**|**Organisationsverwaltung**|**Reviewer**|
 |:-----|:-----:|:-----:|:-----:|:-----:|
-|Fallverwaltung <br/> |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
-|Kommunikation <br/> | <br/> |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Compliance-Suche <br/> |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
-|Custodian <br/> | <br/> |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Exportieren <br/> | <br/> |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Hold <br/>  |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
-|Vorschau <br/>  | <br/> |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Überprüfung <br/>  | <br/> |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
-|RMS-Entschlüsselung <br/>  ||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |||
-|Suchen und löschen <br/> | <br/> | <br/> |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> |
+|Fallverwaltung <br/> |![Häkchen](../media/checkmark.png) <br/> |![Häkchen](../media/checkmark.png) <br/> |![Häkchen](../media/checkmark.png) <br/> | <br/> |
+|Kommunikation <br/> | <br/> |![Häkchen](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Compliance-Suche <br/> |![Häkchen](../media/checkmark.png) <br/> |![Häkchen](../media/checkmark.png) <br/> |![Häkchen](../media/checkmark.png) <br/> | <br/> |
+|Custodian <br/> | <br/> |![Häkchen](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Exportieren <br/> | <br/> |![Häkchen](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Hold <br/>  |![Häkchen](../media/checkmark.png) <br/> |![Häkchen](../media/checkmark.png) <br/> |![Häkchen](../media/checkmark.png) <br/> | <br/> |
+|Vorschau <br/>  | <br/> |![Häkchen](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Überprüfung <br/>  | <br/> |![Häkchen](../media/checkmark.png) <br/> | <br/> |![Häkchen](../media/checkmark.png) <br/> |
+|RMS-Entschlüsselung <br/>  ||![Häkchen](../media/checkmark.png) <br/> |||
+|Suchen und löschen <br/> | <br/> | <br/> |![Häkchen](../media/checkmark.png)           <br/> | <br/> |
 ||||
   
 In den folgenden Abschnitten werden die einzelnen eDiscovery-Rollen, die in der vorherigen Tabelle aufgeführt sind, beschrieben.
@@ -145,10 +145,10 @@ Diese Rolle ermöglicht Benutzern das Anzeigen einer Liste von Elementen, die vo
 
 ### <a name="review"></a>Überprüfung
 
-Diese Rolle ermöglicht Benutzern den Zugriff auf Falldaten in [Advanced eDiscovery (klassisch)](office-365-advanced-ediscovery.md) (auch bekannt als *Advanced eDiscovery v1* ). Der primäre Zweck dieser Rolle besteht darin, Benutzern den Zugriff auf Advanced eDiscovery (Classic) zu ermöglichen. Benutzer, denen diese Rolle zugewiesen ist, können die Liste der Fälle auf der Seite " **eDiscovery** " im Security & Compliance Center anzeigen und öffnen, von der Sie Mitglieder sind. Nachdem der Benutzer im Security & Compliance Center auf einen Fall zugegriffen hat, kann er auf " **Advanced eDiscovery" wechseln** , um auf die Falldaten in Advanced eDiscovery (klassisch) zuzugreifen und diese zu analysieren. Diese Rolle erlaubt es dem Benutzer nicht, eine Vorschau der Ergebnisse einer mit dem Fall verbundenen Inhaltssuche zu sehen oder andere Inhaltssuch- oder Fallverwaltungsaufgaben durchzuführen.
+Diese Rolle ermöglicht Benutzern den Zugriff auf Falldaten in [Advanced eDiscovery (klassisch)](office-365-advanced-ediscovery.md) (auch bekannt als *Advanced eDiscovery v1*). Der primäre Zweck dieser Rolle besteht darin, Benutzern den Zugriff auf Advanced eDiscovery (Classic) zu ermöglichen. Benutzer, denen diese Rolle zugewiesen ist, können die Liste der Fälle auf der Seite " **eDiscovery** " im Security & Compliance Center anzeigen und öffnen, von der Sie Mitglieder sind. Nachdem der Benutzer im Security & Compliance Center auf einen Fall zugegriffen hat, kann er auf " **Advanced eDiscovery" wechseln** , um auf die Falldaten in Advanced eDiscovery (klassisch) zuzugreifen und diese zu analysieren. Diese Rolle erlaubt es dem Benutzer nicht, eine Vorschau der Ergebnisse einer mit dem Fall verbundenen Inhaltssuche zu sehen oder andere Inhaltssuch- oder Fallverwaltungsaufgaben durchzuführen.
 
 > [!NOTE]
-> Zu diesem Zeitpunkt können Benutzer, denen die Überprüfungs Rolle zugewiesen ist (oder ein Mitglied der Rollengruppe Prüfer ist) nicht auf Daten in [Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md) (auch bekannt als *Advanced eDiscovery v 2.0* ) zugreifen. Wenn Sie einem Fall in Advanced eDiscovery v 2.0 Mitglieder hinzufügen möchten, damit Sie die Falldaten überprüfen können, muss ein Benutzer Mitglied der Rollengruppe "eDiscovery-Manager" sein.
+> Zu diesem Zeitpunkt können Benutzer, denen die Überprüfungs Rolle zugewiesen ist (oder ein Mitglied der Rollengruppe Prüfer ist) nicht auf Daten in [Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md) (auch bekannt als *Advanced eDiscovery v 2.0*) zugreifen. Wenn Sie einem Fall in Advanced eDiscovery v 2.0 Mitglieder hinzufügen möchten, damit Sie die Falldaten überprüfen können, muss ein Benutzer Mitglied der Rollengruppe "eDiscovery-Manager" sein.
 
 ### <a name="rms-decrypt"></a>RMS-Entschlüsselung
 

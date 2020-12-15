@@ -37,9 +37,9 @@ Die Erstellung eines Formularverarbeitungsmodells umfasst folgende Schritte:
 
 ## <a name="requirements"></a>Anforderungen
 
-Formularverarbeitungsmodelle können nur in SharePoint-Dokumentbibliotheken mit entsprechend aktivierter Funktion erstellt werden. Wenn die Formularverarbeitung aktiviert ist, wird in Ihrer Dokumentbibliothek die **AI Builder**-Option **"Formularverarbeitungsmodell erstellen"** im Menü **Automatisieren** angezeigt. Wenn die Verarbeitung in Ihrer Dokumentbibliothek aktiviert werden muss, müssen Sie sich hierfür an Ihren SharePoint-Administrator wenden.
+Formularverarbeitungsmodelle können nur in SharePoint-Dokumentbibliotheken mit entsprechend aktivierter Funktion erstellt werden. Wenn die Formularverarbeitung aktiviert ist, wird in Ihrer Dokumentbibliothek die **AI Builder**-Option **"Formularverarbeitungsmodell erstellen"** im Menü **Automatisieren** angezeigt.  Wenn die Verarbeitung in Ihrer Dokumentbibliothek aktiviert sein muss, müssen Sie sich hierfür an Ihren SharePoint-Administrator wenden.
 
- ![Erstellen eines AI-Generator-Modells](../media/content-understanding/create-ai-builder-model.png)</br>
+ ![Erstellen eines AI Builder-Modells](../media/content-understanding/create-ai-builder-model.png)</br>
 
 ## <a name="step-1-create-a-form-processing-model"></a>Schritt 1: Erstellen eines Formularverarbeitungsmodells
 
@@ -57,7 +57,7 @@ Der erste Schritt zum Erstellen eines Formularverarbeitungsmodells besteht darin
 
     Wählen Sie **Erweiterte Einstellungen** aus, wenn Sie dieses Modell einem vorhandenen Inhaltstyp im SharePoint-Inhaltstypen-Katalog zuordnen möchten, um dessen Schema zu verwenden. 
 
-4. Ihr Modell erstellt in Ihrer Dokumentbibliothek eine neue Ansicht für die extrahierten Daten. Wenn Sie diese nicht in der Standardansicht wünschen, deaktivieren Sie die Option **Ansicht als Standard festlegen**.
+4. Ihr Modell erstellt in Ihrer Dokumentbibliothek eine neue Ansicht für die extrahierten Daten. Wenn Sie nicht möchten, dass sie in der Standardansicht angezeigt werden, deaktivieren Sie die Option **Ansicht als Standard festlegen**.
 
 5. Wählen Sie **Erstellen** aus.
 
@@ -70,9 +70,9 @@ Nachdem Sie Ihr neues Formularverarbeitungsmodell erstellt haben, öffnet Ihr Br
 
    ![Power Apps AI Builder](../media/content-understanding/powerapps.png)</br> 
  
-1. Wählen Sie **Dokumente hinzufügen** aus, um mit dem Hinzufügen von analysierten Beispieldokumenten zu beginnen, um die benannten extrahierbaren Wertpaare zu ermitteln. Sie können dann **Von lokalem Speicher hochladen**, **SharePoint** oder **Azure Blob-Speicher** auswählen. Für das Trainieren müssen Sie mindestens fünf Dateien verwenden.
+1. Wählen Sie **Dokumente hinzufügen** aus, um mit dem Hinzufügen von analysierten Beispieldokumenten zu beginnen, um die benannten extrahierbaren Wertpaare zu ermitteln. Sie können dann **Von lokalem Speicher hochladen**, **SharePoint** oder **Azure-BLOB-Speicher** auswählen. Für das Trainieren müssen Sie mindestens fünf Dateien verwenden.
 
-2. Wählen Sie nach dem Hinzufügen der Dateien **Analysieren** aus, um nach Informationen zu suchen, die alle Dateien aufweisen. Diese Analyse kann einige Minuten dauern.</br> 
+2. Wählen Sie nach dem Hinzufügen von Dateien **Analysieren** aus, um nach Informationen zu suchen, die alle Dateien aufweisen. Diese Analyse kann einige Minuten dauern.</br> 
  
     ![Dateien analysieren](../media/content-understanding/analyze.png)</br> 
 
@@ -88,11 +88,11 @@ Nach der Analyse der Dokumente auf Felder hin werden die gefundenen Felder angez
 
     ![Seite "Felder auswählen"](../media/content-understanding/select-fields-page.png)</br> 
 
-2. Wählen Sie die Felder aus, die gespeichert werden sollen, und aktivieren Sie das Kontrollkästchen, um Ihre Auswahl zu bestätigen. Wählen Sie z. B. im Auftragsmodell die Felder *Datum*, *Auftrag* und *Gesamtbetrag* aus. Sie können ein ausgewähltes Feld auch umbenennen.</br>
+2. Wählen Sie die Felder aus, die gespeichert werden sollen, und aktivieren Sie das Kontrollkästchen, um Ihre Auswahl zu bestätigen. Wählen Sie z. B. im Auftragsmodell die Felder *Datum*, *Auftrag* und *Gesamtbetrag* aus.  Sie können ein ausgewähltes Feld auch umbenennen. </br>
 
     ![Auftragsnummer auswählen](../media/content-understanding/po.png)</br> 
 
-3. Sie können ein Feld, das während einer Analyse nicht erkannt wurde, trotzdem hinzufügen. Markieren Sie die Informationen, die extrahiert werden sollen, und geben Sie in das Feld "Name" den gewünschten Namen ein. Aktivieren Sie dann das Kontrollkästchen. Beachten Sie, dass Sie nicht erkannte Felder in den verbleibenden Beispieldateien bestätigen müssen.
+3. Sie können ein Feld, das während einer Analyse nicht erkannt wurde, trotzdem hinzufügen. Markieren Sie die Informationen, die extrahiert werden sollen, und geben Sie im Feld "Name" den gewünschten Namen ein. Aktivieren Sie dann das Kontrollkästchen. Beachten Sie, dass Sie nicht erkannte Felder in den verbleibenden Beispieldateien bestätigen müssen.
 
 4. Klicken Sie nach der Auswahl der zu speichernden Felder auf **Felder bestätigen**. </br>
  
@@ -104,7 +104,7 @@ Nach der Analyse der Dokumente auf Felder hin werden die gefundenen Felder angez
 
 Nachdem Sie die zu speichernden Felder ausgewählt haben, können Sie auf der Seite **Modellzusammenfassung** das Modell trainieren und testen.
 
-1. Auf der Seite **Modellzusammenfassung** werden die gespeicherten Felder im Abschnitt **Ausgewählte Felder** angezeigt. Wählen Sie **Trainieren** aus, um das Trainieren mit Ihren Beispieldateien zu starten. Dieser Vorgang kann einige Minuten dauern.</br>
+1. Auf der Seite **Modellzusammenfassung** werden die gespeicherten Felder im Abschnitt **Ausgewählte Felder** angezeigt. Wählen Sie **Trainieren** aus, um das Trainieren Ihrer Beispieldateien zu starten. Dieser Vorgang kann einige Minuten dauern.</br>
 
      ![Trainieren der Felder ausgewählt](../media/content-understanding/select-fields-train.png)</br> 
 
@@ -112,7 +112,7 @@ Nachdem Sie die zu speichernden Felder ausgewählt haben, können Sie auf der Se
 
 3. Auf der Seite **Modelldetails** können Sie **Schnelltest** auswählen, um das Modell zu testen. Dabei können Sie Dateien auf die Seite ziehen um zu sehen, ob die Felder erkannt werden.
 
-    ![Bestätigen der Felder](../media/content-understanding/select-fields-train.png)</br> 
+    ![Bestätigen von Feldern](../media/content-understanding/select-fields-train.png)</br> 
 
 2. Wenn die Meldung angezeigt wird, dass das Trainieren abgeschlossen ist, wählen Sie **Zur Seite "Modelldetails" wechseln** aus. 
 
@@ -140,7 +140,7 @@ Nach der Veröffentlichung des Modells und der Erstellung des PowerAutomate-Abla
 
     ![Schaltfläche "Informationen"](../media/content-understanding/info-button.png)</br>  
 
-4. Laden Sie Dateien in Ihre Dokumentbibliothek hoch. Alle Dateien, die vom Modell als seinem Inhaltstyp entsprechend identifiziert werden, werden in Ihrer Ansicht aufgelistet, und die extrahierten Daten werden in den Spalten angezeigt.</br>
+4. Laden Sie Dateien in Ihre Dokumentbibliothek hoch. Alle Dateien, die vom Modell als Inhaltstyp identifiziert werden, werden in Ihrer Ansicht aufgelistet, und die extrahierten Daten werden in den Spalten angezeigt.</br>
 
     ![Fertig](../media/content-understanding/doc-lib-done.png)</br>  
 

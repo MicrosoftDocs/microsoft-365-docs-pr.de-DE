@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 02c79edaa05e7903a8797cdf83c18a4ce69716dc
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 8ebfe5746a69cc0161c38f0467954fabb3839240
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920536"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683343"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Bewerten Ihrer Sicherheitsposition mit Microsoft Secure Score
 
@@ -36,10 +36,8 @@ Die Microsoft-Sicherheitsbewertung ist ein Maßstab für den Sicherheitsstatus e
 Damit Sie die benötigten Informationen schneller finden können, sind die Microsoft Verbesserungsmaßnahmen in Gruppen aufgeteilt:
 
 * Identity (Azure Active Directory Accounts & Roles)
-* Data (keine Verbesserungs Aktionen für jetzt)
 * Gerät (Microsoft Defender für Endpoint, bekannt als [Microsoft Secure Score für Geräte](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
 * App (E-Mail-und Cloud-Apps, einschließlich Office 365 und Microsoft Cloud App Security)
-* Infrastruktur (bisher keine Verbesserungsmaßnahmen)
 
 >[!NOTE]
 >In der letzten Version von Microsoft-Sicherheitsbewertung wurde ein verbessertes Bewertungsmodell veröffentlicht, das zu einer vorübergehenden Inkompatibilität der Microsoft-Sicherheitsbewertung mit der Identitätssicherheitsbewertung und der Graph-API geführt hatte. [Details anzeigen](microsoft-secure-score-whats-new.md)
@@ -56,9 +54,9 @@ Wenn Sie darüber hinaus die Schaltfläche **einschließen** neben dem Ergebnis 
 
 Im folgenden werden Partituren angezeigt, die Sie Ihrer Gesamtpunktzahl hinzufügen können, um ein vollständigeres Bild Ihres Gesamtergebnisses zu erhalten:
 
-- **Geplante Punktzahl** : projiziertes Ergebnis anzeigen, wenn geplante Aktionen abgeschlossen sind
-- **Aktuelle Lizenz Bewertung** : Ergebnis anzeigen, das mit Ihrer aktuellen Microsoft-Lizenz erreicht werden kann
-- **Erzielbare Punktzahl** : Ergebnis anzeigen, das mit Ihren Microsoft-Lizenzen und der aktuellen Risikoakzeptanz erreicht werden kann
+- **Geplante Punktzahl**: projiziertes Ergebnis anzeigen, wenn geplante Aktionen abgeschlossen sind
+- **Aktuelle Lizenz Bewertung**: Ergebnis anzeigen, das mit Ihrer aktuellen Microsoft-Lizenz erreicht werden kann
+- **Erzielbare Punktzahl**: Ergebnis anzeigen, das mit Ihren Microsoft-Lizenzen und der aktuellen Risikoakzeptanz erreicht werden kann
 
 Diese Ansicht wird wie folgt aussehen, wenn Sie alle möglichen Bewertungs Ansichten berücksichtigt haben:
 
@@ -123,4 +121,4 @@ Wenn Sie Probleme haben, lassen Sie es uns wissen, indem Sie in der [Sicherheits
 - [Microsoft Secure Score (Übersicht)](microsoft-secure-score.md)
 - [Verfolgen des Microsoft Secure Score-Verlaufs und erreichen der Ziele](microsoft-secure-score-history-metrics-trends.md)
 - [Was in Kürze verfügbar ist](microsoft-secure-score-whats-coming.md)
-- [Neuigkeiten](microsoft-secure-score-whats-new.md)
+- [Neuerungen](microsoft-secure-score-whats-new.md)

@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Administratoren erfahren, wie Sie Anti-Spam-Richtlinien in Exchange Online Protection (EOP) anzeigen, erstellen, ändern und löschen können.
-ms.openlocfilehash: d83c41b52db5c0533a9a5d52ab20ace9b612e1e6
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: f5cc652bcc16cec28dd411ad30ce0896334733f4
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658649"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683379"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Konfigurieren von Antispamrichtlinien in EOP
 
@@ -102,20 +102,20 @@ Beim Erstellen einer benutzerdefinierten Antispamrichtlinie im Security & Compli
 
      In der folgenden Tabelle sind die verfügbaren Aktionen für die Spamfilterbewertungen beschrieben.
 
-     - Ein Häkchen ( ![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)) gibt an, dass die Aktion verfügbar ist (nicht alle Aktionen sind für alle Spamfilterbewertungen verfügbar).
+     - Ein Häkchen ( ![Häkchen](../../media/checkmark.png)) gibt an, dass die Aktion verfügbar ist (nicht alle Aktionen sind für alle Spamfilterbewertungen verfügbar).
      - Ein Sternchen ( <sup>\*</sup> ) nach dem Häkchen kennzeichnet die Standardaktion für die Spamfilterbewertung.
 
      ****
 
      |Aktion|Spam|Hoch<br>Konfidenz<br>Spam|Phishing<br>E-Mail|Hoch<br>Konfidenz<br>Phishing<br>E-Mail|Masse<br>E-Mail|
      |---|:---:|:---:|:---:|:---:|:---:|
-     |**Nachricht in Junk-E-Mail-Ordner verschieben**: Die Nachricht wird an das Postfach übermittelt und in den Junk-E-Mail-Ordner verschoben.<sup>1</sup>|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-     |**X-Header hinzufügen**: Fügt dem Nachrichtenheader einen X-Header hinzu und übermittelt die Nachricht an das Postfach. <p> Sie geben den Namen des X-Header-Felds (nicht den Wert) zu einem späteren Zeitpunkt in das Feld **Diesen X-Header-Text hinzufügen** ein. <p> Bei den Bewertungen **Spam** und **Nachricht mit hoher Spamwahrscheinlichkeit** wird die Nachricht in den Junk-E-Mail-Ordner verschoben.<sup>1,2</sup>|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-     |**Text in Betreffzeile voranstellen**: Fügt Text am Anfang der Betreffzeile der Nachricht ein. Die Nachricht wird an das Postfach übermittelt und in den Junk-E-Mail-Ordner verschoben.<sup>1,2</sup> <p> Sie geben den Text später im Feld **Text in Betreffzeile voranstellen** ein.|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-     |**Nachricht an E-Mail-Adresse umleiten**: Sendet die Nachricht an andere Empfänger statt an die vorgesehenen Empfänger. <p> Sie geben die Empfänger später im Feld **An diese E-Mail-Adresse umleiten** an.|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-     |**Nachricht löschen:** Löscht automatisch die gesamte Nachricht, einschließlich aller Anlagen.|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-     |**Nachricht in Quarantäne verschieben**: Verschiebt die Nachricht in Quarantäne, anstatt sie an die vorgesehenen Empfänger zu senden. <p> Wie lange die Nachricht in Quarantäne bleiben soll, geben Sie später im Feld **Quarantäne** an.|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-     |**Keine Aktion**|||||![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+     |**Nachricht in Junk-E-Mail-Ordner verschieben**: Die Nachricht wird an das Postfach übermittelt und in den Junk-E-Mail-Ordner verschoben.<sup>1</sup>|![Häkchen](../../media/checkmark.png)<sup>\*</sup>|![Häkchen](../../media/checkmark.png)<sup>\*</sup>|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)<sup>\*</sup>|
+     |**X-Header hinzufügen**: Fügt dem Nachrichtenheader einen X-Header hinzu und übermittelt die Nachricht an das Postfach. <p> Sie geben den Namen des X-Header-Felds (nicht den Wert) zu einem späteren Zeitpunkt in das Feld **Diesen X-Header-Text hinzufügen** ein. <p> Bei den Bewertungen **Spam** und **Nachricht mit hoher Spamwahrscheinlichkeit** wird die Nachricht in den Junk-E-Mail-Ordner verschoben.<sup>1,2</sup>|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)||![Häkchen](../../media/checkmark.png)<sup>\*</sup>|
+     |**Text in Betreffzeile voranstellen**: Fügt Text am Anfang der Betreffzeile der Nachricht ein. Die Nachricht wird an das Postfach übermittelt und in den Junk-E-Mail-Ordner verschoben.<sup>1,2</sup> <p> Sie geben den Text später im Feld **Text in Betreffzeile voranstellen** ein.|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)||![Häkchen](../../media/checkmark.png)|
+     |**Nachricht an E-Mail-Adresse umleiten**: Sendet die Nachricht an andere Empfänger statt an die vorgesehenen Empfänger. <p> Sie geben die Empfänger später im Feld **An diese E-Mail-Adresse umleiten** an.|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|
+     |**Nachricht löschen:** Löscht automatisch die gesamte Nachricht, einschließlich aller Anlagen.|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)||![Häkchen](../../media/checkmark.png)|
+     |**Nachricht in Quarantäne verschieben**: Verschiebt die Nachricht in Quarantäne, anstatt sie an die vorgesehenen Empfänger zu senden. <p> Wie lange die Nachricht in Quarantäne bleiben soll, geben Sie später im Feld **Quarantäne** an.|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)<sup>\*</sup>|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|
+     |**Keine Aktion**|||||![Häkchen](../../media/checkmark.png)|
      |
 
      > <sup>1</sup> In Exchange Online wird die Nachricht in den Junk-E-Mail-Ordner verschoben, wenn die Junk-E-Mail-Regel für das Postfach aktiviert ist (sie ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Konfigurieren der Einstellungen für Junk-E-Mails für Exchange Online-Postfächer](configure-junk-email-settings-on-exo-mailboxes.md).
@@ -301,7 +301,7 @@ Informationen zum Aktivieren oder Deaktivieren einer Richtlinie, zum Festlegen d
 
    Schieben Sie die Umschaltfläche nach links, um die Richtlinie zu deaktivieren: ![Umschaltfläche aus](../../media/scc-toggle-off.png)
 
-   Schieben Sie die Umschaltfläche nach rechts, um die Richtlinie zu aktivieren: ![Umschaltfläche ein](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)
+   Schieben Sie die Umschaltfläche nach rechts, um die Richtlinie zu aktivieren: ![Umschaltfläche ein](../../media/scc-toggle-on.png)
 
 Die Standard-Antispamrichtlinie kann nicht deaktiviert werden.
 

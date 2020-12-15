@@ -8,6 +8,8 @@
       href: work-with-topics.md
     - name: Erteilen von Benutzerberechtigungen für das Themen Center
       href: give-user-permissions-to-the-topic-center.md
+    - name: Bereit machen ihrer Umgebung
+      href: topic-experiences-get-ready.md
 - name: Setup und Verwaltung
   items:
     - name: Thema Sicherheit
@@ -24,3 +26,7 @@
       href: topic-experiences-user-permissions.md
     - name: Ändern des Namens des Themen Centers
       href: topic-experiences-administration.md
+- name: Einführung
+  items:
+    - name: Erste Schritte mit der Einführung des Fahrzeugs
+      href: topics-adoption-getstarted.md

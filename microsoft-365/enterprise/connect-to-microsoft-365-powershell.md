@@ -144,7 +144,7 @@ Wenn Sie die mehrstufige Authentifizierung verwenden, folgen Sie den Anweisungen
 
 ### <a name="how-do-you-know-it-worked"></a>Woher wissen Sie, dass der Vorgang erfolgreich war?
 
-Wenn Sie keine Fehlermeldung erhalten, wurde die Verbindung hergestellt. Führen Sie für einen schnellen Test ein Microsoft 365-Cmdlet aus, z. B.  **Get-MsolUser** , und sehen Sie sich die Ergebnisse an.
+Wenn Sie keine Fehlermeldung erhalten, wurde die Verbindung hergestellt. Führen Sie für einen schnellen Test ein Microsoft 365-Cmdlet aus, z. B.  **Get-MsolUser**, und sehen Sie sich die Ergebnisse an.
   
 Wenn eine Fehlermeldung angezeigt wird, überprüfen Sie die folgenden Punkte:
   
@@ -167,16 +167,16 @@ Wenn eine Fehlermeldung angezeigt wird, überprüfen Sie die folgenden Punkte:
 
     Wenn die zurückgegebene Versionsnummer niedriger als *1.0.8070.2* ist, deinstallieren Sie das Microsoft Azure Active Directory-Modul für Windows PowerShell, und führen Sie die Installation über den vorstehenden [Schritt 1](#step-1-install-the-required-software) durch.
 
-- **Wenn Sie einen Verbindungsfehler erhalten** , finden Sie auf dieser Seite weitere Informationen: [Fehler "Connect-MsolService: Ausnahme vom Typ ausgelöst"](https://go.microsoft.com/fwlink/p/?LinkId=532377).
+- **Wenn Sie einen Verbindungsfehler erhalten**, finden Sie auf dieser Seite weitere Informationen: [Fehler "Connect-MsolService: Ausnahme vom Typ ausgelöst"](https://go.microsoft.com/fwlink/p/?LinkId=532377).
     
-- **Wenn Sie einen "Get-Item: Pfad nicht gefunden"-Fehler erhalten** , führen Sie folgenden Befehl aus:
+- **Wenn Sie einen "Get-Item: Pfad nicht gefunden"-Fehler erhalten**, führen Sie folgenden Befehl aus:
 
 
    ```powershell
      (dir "C:\Program Files\WindowsPowerShell\Modules\MSOnline").Name
    ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Verwalten von Microsoft 365 mit PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
 - [Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-microsoft-365-powershell.md)

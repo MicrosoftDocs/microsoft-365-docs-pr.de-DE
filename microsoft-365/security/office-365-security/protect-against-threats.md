@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 description: Administratoren können Informationen zum Bedrohungsschutz in Microsoft 365 und konfigurieren, wie Sie für Ihre Organisation verwendet werden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 646fff4550de2e07342c0fef04952846db65a8eb
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 3eec37f01bb39dda9f767ad32be96bbff43a2ee0
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615120"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683247"
 ---
 # <a name="protect-against-threats"></a>Schutz vor Bedrohungen
 
@@ -56,7 +56,7 @@ Die Features für den Bedrohungsschutz sind in *allen* Microsoft-oder Office 365
 |Automatische Bereinigung ohne Stunden (für e-Mail)|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Schutz vor bösartigen URLs und Dateien in e-Mail-und Office-Dokumenten (sichere Links und sichere Anlagen)|[Microsoft Defender für Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 |Aktivieren von ATP für SharePoint-, OneDrive-und Microsoft Teams-Arbeitsauslastungen|[Verteidiger für Office 365 ](atp-for-spo-odb-and-teams.md)|
-|Erweiterter Antiphishingschutz|[Defender für Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|Erweiterter Antiphishingschutz|[Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>Rollen und Berechtigungen
 
@@ -179,9 +179,9 @@ Um [sichere](atp-safe-links.md)Links einzurichten, überprüfen und bearbeiten S
 
 1. Wählen Sie im [Security & Compliance Center](https://protection.office.com)die Option " **Threat Management** \> **Policy** \> **ATP Safe Links**" aus, und klicken Sie auf **globale Einstellungen**, und konfigurieren Sie dann die folgenden Einstellungen:
 
-   - Überprüfen Sie **Use Safe Links in: Office 365 Anwendungen** ist aktiviert: ![ Einschalten ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
+   - Überprüfen Sie **Use Safe Links in: Office 365 Anwendungen** ist aktiviert: ![ Einschalten ](../../media/scc-toggle-on.png) .
    - **Nicht nachverfolgen, wenn Benutzer auf sichere Links klicken**: Deaktivieren Sie diese Einstellung, um Benutzerklicks nachzuverfolgen: ![ Deaktivieren ](../../media/scc-toggle-off.png) .
-   - **Benutzer können nicht auf sichere Links zu Original-URL klicken**: Vergewissern Sie sich, dass diese Einstellung aktiviert ist: ![ Einschalten ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
+   - **Benutzer können nicht auf sichere Links zu Original-URL klicken**: Vergewissern Sie sich, dass diese Einstellung aktiviert ist: ![ Einschalten ](../../media/scc-toggle-on.png) .
 
    Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
 
@@ -216,7 +216,7 @@ Arbeitslasten wie SharePoint, OneDrive und Teams werden für die Zusammenarbeit 
 
 1. Wählen Sie im [Security & Compliance Center](https://protection.office.com)die Option " **Threat Management** \> **Policy** \> **ATP Safe Attachments**" aus, und klicken Sie dann auf **globale Einstellungen**.
 
-2. Stellen Sie sicher, dass die **Option ATP für SharePoint, OneDrive und Microsoft Teams aktivieren** auf der rechten Seite ist: Einschalten ![ ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) , und klicken Sie dann auf **Speichern**.
+2. Stellen Sie sicher, dass die **Option ATP für SharePoint, OneDrive und Microsoft Teams aktivieren** auf der rechten Seite ist: Einschalten ![ ](../../media/scc-toggle-on.png) , und klicken Sie dann auf **Speichern**.
 
 3. Überprüfen Sie (und bearbeiten Sie gegebenenfalls die Richtlinien für [sichere Anlagen](set-up-atp-safe-attachments-policies.md) Ihrer Organisation und [Richtlinien für sichere Links](set-up-atp-safe-links-policies.md)).
 

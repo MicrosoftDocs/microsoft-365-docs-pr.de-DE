@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5c558529360d84d5872649e41b95f509e5b52663
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 15778f076d4122b23449f66bd9781a7037c52c58
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663631"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683127"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Netzwerkkonfiguration für Microsoft Managed Desktop
 
@@ -44,7 +44,7 @@ Die Microsoft Managed Desktop-URL wird für alles verwendet, was unser Dienst au
 Microsoft-Dienst  | Erforderliche URLs für Zulassungsliste 
 --- | ---
 Microsoft Managed Desktop | prod-mwaas-services-customerapi.azurewebsites.net
-Hilfe erhalten | \*. Support.Services.Microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-mwaas-services-customerapi.azurewebsites.net
+Hilfe erhalten | \*. Support.Services.Microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-mwaas-services-customerapi.azurewebsites.net  <br>concierge.live.com
 Schnelle Unterstützung | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*. lync.com
 Microsoft-Support-und Wiederherstellungsassistent | \*. apibasic.Diagnostics.Office.com  <br>\*. API.Diagnostics.Office.com
  

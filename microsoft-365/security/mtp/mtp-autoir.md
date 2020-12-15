@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
-ms.date: 09/16/2020
+ms.date: 12/09/2020
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 2b8872288291adc0b9fc5e1c1541f885711df230
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 7c28b7f3ac797f7402cfdb1f604fcef1e142a31b
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356703"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683307"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Automatische Untersuchung und Antwort in Microsoft 365 Defender
 
@@ -39,21 +39,20 @@ ms.locfileid: "49356703"
 > Möchten Sie Microsoft 365 Defender erfahren? Sie können [es in einer Laborumgebung auswerten](https://aka.ms/mtp-trial-lab) oder [ihr Pilotprojekt in der Produktion ausführen](https://aka.ms/m365d-pilotplaybook).
 >
 
+## <a name="how-automated-investigation-and-self-healing-works"></a>Funktionsweise der automatischen Untersuchung und Selbstheilung
+
 Wenn Sicherheitswarnungen ausgelöst werden, liegt es an Ihrem Sicherheits Betriebsteam, diese Warnungen zu untersuchen und Maßnahmen zum Schutz Ihrer Organisation zu ergreifen. Die Priorisierung und Untersuchung von Warnungen kann sehr zeitaufwändig sein, insbesondere dann, wenn ständig neue Benachrichtigungen während einer laufenden Untersuchung eingehen. Sicherheitsteams können sich angesichts des enormen Volumens der Bedrohungen, die sie überwachen müssen, überfordert fühlen. Automatisierte Ermittlungs-und Antwortfunktionen mit Selbstheilung in Microsoft 365 Defender können helfen.
 
 Sehen Sie sich das folgende Video an, um zu erfahren, wie die Selbstheilung funktioniert:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4BzwB]
 
-In Microsoft 365 Defender funktioniert die automatische Untersuchung und Antwort mit Selbstheilungsfunktionen auf Ihren Geräten, e-Mail-& Inhalt und Identitäten. Microsoft 365 Defender vereint Funktionen von: 
-- [Automatische Untersuchung und Korrektur in Microsoft Defender für Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
-- [Automatische Untersuchung und Antwort in Microsoft Defender für Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
-- [Erkennung erweiterter Azure-Bedrohungen](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)
-- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
+In Microsoft 365 Defender funktioniert die automatische Untersuchung und Antwort mit Selbstheilungsfunktionen auf Ihren Geräten, e-Mail-& Inhalt und Identitäten.
  
-In diesem Artikel wird beschrieben, wie automatisierte Untersuchungen und Antworten funktionieren. Informationen zum Konfigurieren dieser Funktionen finden Sie unter [Configure Automated Investigation and Response Capabilities in Microsoft 365 Defender](mtp-configure-auto-investigation-response.md).
+> [!TIP]
+> In diesem Artikel wird beschrieben, wie automatisierte Untersuchungen und Antworten funktionieren. Informationen zum Konfigurieren dieser Funktionen finden Sie unter [Configure Automated Investigation and Response Capabilities in Microsoft 365 Defender](mtp-configure-auto-investigation-response.md).
 
-## <a name="your-virtual-analyst"></a>Ihr virtueller Analyst
+## <a name="your-own-virtual-analyst"></a>Ihr eigener virtueller Analyst
 
 Stellen Sie sich vor, Sie haben in Ihrem Sicherheitsteam auf Ebene 1/Ebene 2 einen virtuellen Analysten. Der virtuelle Analyst imitiert die idealen Schritte, die das Sicherheitsteam zur Untersuchung und Behebung von Bedrohungen ausführen würde. Der virtuelle Assistent kann rund um die Uhr mit unbegrenzter Kapazität arbeiten und eine hohe Anzahl von Untersuchungen und Bedrohungen bearbeiten. Ein solcher virtueller Assistent kann die Reaktionszeit erheblich reduzieren, sodass Ihr Sicherheitsteam andere wichtige strategische Projekte übernehmen kann. Wenn dieses Szenario wie Science Fiction klingt, ist es nicht! Ein solcher virtueller Analyst ist Teil Ihrer Microsoft 365 Defender-Suite, und sein Name ist die *Automatische Untersuchung und Antwort*.
 

@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: Administratoren erfahren, wie Sie mithilfe von Quarantäne Tags steuern können, welche Benutzer in der Lage sind, ihre unter Quarantäne gestellten Nachrichten zu übernehmen.
-ms.openlocfilehash: 498a5f45fa62481f7f4f8dfe5ece8a51a038f99a
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 167f147d7c74b78b1a1661b5444625fbf1cf3d41
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616008"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683067"
 ---
 # <a name="quarantine-tags"></a>Quarantäne-Tags
 
@@ -44,12 +44,12 @@ In der folgenden Tabelle werden die verfügbaren einzelnen Berechtigungen und di
 
 |Berechtigung|Kein Zugriff|Eingeschränkter Zugriff|Vollzugriff|
 |---|:---:|:---:|:---:|
-|**Absender zulassen** (_PermissionToAllowSender_)|||![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Absender blockieren** (_PermissionToBlockSender_)||![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Delete** (_PermissionToDelete_)||![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Vorschau** (_PermissionToPreview_)||![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Zulassen, dass Empfänger eine Nachricht aus der Quarantäne freigeben** (_PermissionToRelease_)|||![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Zulassen, dass Empfänger eine Nachricht anfordern, die aus der Quarantäne freigegeben wird** (_PermissionToRequestRelease_)||![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|**Absender zulassen** (_PermissionToAllowSender_)|||![Häkchen](../../media/checkmark.png)|
+|**Absender blockieren** (_PermissionToBlockSender_)||![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|
+|**Delete** (_PermissionToDelete_)||![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|
+|**Vorschau** (_PermissionToPreview_)||![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|
+|**Zulassen, dass Empfänger eine Nachricht aus der Quarantäne freigeben** (_PermissionToRelease_)|||![Häkchen](../../media/checkmark.png)|
+|**Zulassen, dass Empfänger eine Nachricht anfordern, die aus der Quarantäne freigegeben wird** (_PermissionToRequestRelease_)||![Häkchen](../../media/checkmark.png)||
 |
 
 Wenn Ihnen die Standardberechtigungen in den vordefinierten Berechtigungsgruppen nicht gefällt, können Sie benutzerdefinierte Berechtigungen verwenden, wenn Sie benutzerdefinierte Quarantäne Tags erstellen oder ändern. Weitere Informationen zu den einzelnen Berechtigungen finden Sie im Abschnitt [Quarantine Tag Permission Details](#quarantine-tag-permission-details) weiter unten in diesem Artikel.

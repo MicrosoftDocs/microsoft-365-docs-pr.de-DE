@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
-ms.openlocfilehash: 3c8477ce16249cb4d21c736da60d619774175041
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: 12f71011e28d5c8c8287146670282a86a77781ff
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123607"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682981"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Konfigurieren von automatisierten Ermittlungs-und Antwortfunktionen in Microsoft 365 Defender
 
@@ -60,7 +60,6 @@ Ob automatische Untersuchungen ausgeführt werden und ob Korrekturaktionen autom
 3. Überprüfen Sie Ihre Gerätegruppen Richtlinien. Sehen Sie sich insbesondere die Spalte **Korrektur Ebene** an. Es wird empfohlen, **vollständig behebende Bedrohungen automatisch** zu verwenden.  Möglicherweise müssen Sie Ihre Gerätegruppen erstellen oder bearbeiten, um die gewünschte Automatisierungsstufe zu erhalten. Wenn Sie Hilfe zu dieser Aufgabe erhalten möchten, lesen Sie die folgenden Artikel:
 
    - [So werden Bedrohungen behoben](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated)
-   
    - [Erstellen und Verwalten von Gerätegruppen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups) 
 
 ## <a name="review-your-security-and-alert-policies-in-office-365"></a>Überprüfen der Sicherheits-und Warnungsrichtlinien in Office 365
@@ -105,6 +104,6 @@ Sicherheitseinstellungen in Office 365 helfen, e-Mails und Inhalte zu schützen.
 
 ## <a name="review-pending-and-completed-actions-in-the-action-center"></a>Überprüfen der ausstehenden und abgeschlossenen Aktionen im Wartungscenter
 
-Nachdem Sie die automatische Untersuchung und Antwort in Microsoft 365 Defender konfiguriert haben, müssen Sie im nächsten Schritt das Aktionscenter besuchen ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ). Dort können Sie ausstehende Aktionen überprüfen und genehmigen und anzeigen, welche Korrekturaktionen automatisch vorgenommen wurden. 
+Nachdem Sie die automatische Untersuchung und Antwort in Microsoft 365 Defender konfiguriert haben, müssen Sie im nächsten Schritt das Aktionscenter besuchen ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ). Dort können Sie ausstehende Aktionen überprüfen und genehmigen sowie Korrekturaktionen anzeigen, die automatisch oder manuell vorgenommen wurden. 
 
 [Besuchen Sie das Action Center](mtp-action-center.md).

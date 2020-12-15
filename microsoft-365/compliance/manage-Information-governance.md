@@ -27,11 +27,11 @@ ms.locfileid: "49087114"
 
 Verwenden Sie die Microsoft Information Governance (MIG)-Funktionen, um Ihre Daten mit Blick auf die Einhaltung von Compliance-Vorschriften oder behördlichen Anforderungen zu kontrollieren.
 
-![Kontrollieren Sie Ihre Daten – Informationsgovernance und Datensatzverwaltung](../media/information-governance-records-management.png)
+![Kontrollieren Sie Ihre Daten – Informationsverwaltung und Datensatzverwaltung](../media/information-governance-records-management.png)
 
-Sie möchten Ihre Daten schützen? Lesen Sie [Microsoft Information Protection in Microsoft 365](information-protection.md).
+Wollen Sie Ihre Daten schützen? Erfahren Sie mehr in [Microsoft Information Protection in Microsoft 365](information-protection.md).
 
-## <a name="information-governance"></a>Informationsgovernance
+## <a name="information-governance"></a>Informationsverwaltung
 
 So behalten Sie, was Sie brauchen, und löschen, was Sie nicht brauchen:
  

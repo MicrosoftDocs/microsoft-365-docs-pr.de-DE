@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: Erstellen Sie Warnungsrichtlinien im Security and Compliance Center in Office 365 und Microsoft 365, um potenzielle Bedrohungen, Datenverlust und Berechtigungsprobleme zu überwachen.
-ms.openlocfilehash: b6a1689ab475b9518c290bf3db03d2144610bf8b
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: 5749b38ca9b72c859e9c553ccbb4fe6a44be9754
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367178"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682958"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Warnungsrichtlinien im Security & Compliance Center
 
@@ -56,7 +56,7 @@ Im folgenden finden Sie einen kurzen Überblick über die Funktionsweise von War
 
 Eine Warnungs Richtlinie besteht aus einer Reihe von Regeln und Bedingungen, die den Benutzer oder die Administrator Aktivität definieren, die eine Warnung generiert, eine Liste der Benutzer, die die Warnung auslösen, wenn Sie die Aktivität ausführen, und einen Schwellenwert, der definiert, wie oft die Aktivität ausgeführt werden muss, bevor eine Warnung ausgelöst wird. Sie kategorisieren auch die Richtlinie und weisen ihr einen Schweregrad zu. Diese beiden Einstellungen unterstützen Sie beim Verwalten von Warnungsrichtlinien (und Warnungen, die ausgelöst werden, wenn die Richtlinienbedingungen übereinstimmen), da Sie diese Einstellungen beim Verwalten von Richtlinien und beim Anzeigen von Warnungen im Security and Compliance Center filtern können. Beispielsweise können Sie Warnungen anzeigen, die den Bedingungen aus der gleichen Kategorie entsprechen, oder Warnungen mit dem gleichen Schweregrad anzeigen.
 
-Wechseln Sie zum Anzeigen und Erstellen von Warnungsrichtlinien zu [https://protection.office.com](https://protection.office.com) und wählen **Alerts** Sie Alerts Alert \> **Policies** aus.
+Wechseln Sie zum Anzeigen und Erstellen von Warnungsrichtlinien zu [https://protection.office.com](https://protection.office.com) und wählen  Sie Alerts Alert \> **Policies** aus.
 
 ![Wählen Sie im Security and Compliance Center Alerts aus, und wählen Sie dann Warnungsrichtlinien zum Anzeigen und Erstellen von Warnungsrichtlinien aus.](../media/09ebd451-8e84-44e1-aefc-63e70bba4d97.png)
 
@@ -125,7 +125,7 @@ In der Tabelle werden außerdem die Office 365 Enterprise und Office 365 US Gove
 |**Schadsoftware-Kampagne nach Zustellung erkannt**|Generiert eine Warnung, wenn eine ungewöhnlich große Anzahl von Nachrichten mit Schadsoftware an Postfächer in Ihrer Organisation übermittelt werden. Wenn dieses Ereignis auftritt, entfernt Microsoft die infizierten Nachrichten aus Exchange Online Postfächern. Diese Richtlinie weist eine Einstellung mit **hohem** Schweregrad auf.|Bedrohungsverwaltung|E5/G5 oder Microsoft Defender für Office 365 P2-Add-on-Abonnement|
 |**Schadsoftware-Kampagne erkannt und blockiert**|Generiert eine Warnung, wenn jemand versucht hat, eine ungewöhnlich große Anzahl von e-Mail-Nachrichten zu senden, die eine bestimmte Art von Schadsoftware für Benutzer in Ihrer Organisation enthalten. Wenn dieses Ereignis eintritt, werden die infizierten Nachrichten von Microsoft blockiert und nicht an Postfächerüber mittelt. Diese Richtlinie weist eine Einstellung mit **niedrigem** Schweregrad auf.|Bedrohungsverwaltung|E5/G5 oder Defender für Office 365 P2-Add-on-Abonnement|
 |**In SharePoint und OneDrive erkannte Malware Kampagne**|Generiert eine Warnung, wenn in Dateien, die sich in SharePoint-Websites oder OneDrive-Konten in Ihrer Organisation befinden, eine ungewöhnlich hohe Menge an Schadsoftware oder Viren erkannt wird. Diese Richtlinie weist eine Einstellung mit **hohem** Schweregrad auf.|Bedrohungsverwaltung|E5/G5 oder Defender für Office 365 P2-Add-on-Abonnement|
-|**Aufgrund von Mandanten-oder Benutzer Überschreibung 1 gesendeter Phishing**<sup>1</sup> -Schutz|Generiert eine Warnung, wenn Microsoft eine Administrator-oder Benutzer Überschreibung erkennt, die die Zustellung einer Phishing-Nachricht an ein Postfach erlaubt. Beispiele für Außerkraftsetzungen sind ein Posteingang oder eine Nachrichtenfluss Regel, die Nachrichten von einem bestimmten Absender oder einer bestimmten Domäne oder eine Antispampolitik zulässt, die Nachrichten von bestimmten Absendern oder Domänen zulässt. Diese Richtlinie weist eine Einstellung mit **hohem** Schweregrad auf.|Bedrohungsverwaltung|E5/G5 oder Defender für Office 365 P2-Add-on-Abonnement|
+|**Aufgrund von Mandanten-oder Benutzer Überschreibung 1 gesendeter Phishing**<sup></sup> -Schutz|Generiert eine Warnung, wenn Microsoft eine Administrator-oder Benutzer Überschreibung erkennt, die die Zustellung einer Phishing-Nachricht an ein Postfach erlaubt. Beispiele für Außerkraftsetzungen sind ein Posteingang oder eine Nachrichtenfluss Regel, die Nachrichten von einem bestimmten Absender oder einer bestimmten Domäne oder eine Antispampolitik zulässt, die Nachrichten von bestimmten Absendern oder Domänen zulässt. Diese Richtlinie weist eine Einstellung mit **hohem** Schweregrad auf.|Bedrohungsverwaltung|E5/G5 oder Defender für Office 365 P2-Add-on-Abonnement|
 |**Verdächtige e-Mail-Weiterleitungs Aktivität**|Generiert eine Warnung, wenn jemand in Ihrer Organisation e-Mails automatisch an ein verdächtiges externes Konto weitergeleitet hat. Dies ist eine frühzeitige Warnung für das Verhalten, das darauf hinweist, dass das Konto kompromittiert, aber nicht schwer genug ist, um den Benutzer zu beschränken. Diese Richtlinie weist eine Einstellung mit **mittlerem** Schweregrad auf. Obwohl es selten ist, kann eine von dieser Richtlinie generierte Warnung eine Anomalie sein. Es empfiehlt sich, zu [überprüfen, ob das Benutzerkonto kompromittiert wurde](../security/office-365-security/responding-to-a-compromised-email-account.md).|Bedrohungsverwaltung|E1/F1/G1, E3/G3 oder E5/G5|
 |**Erkannte verdächtige e-Mail-Sende Muster**|Generiert eine Warnung, wenn jemand in Ihrer Organisation verdächtige e-Mails gesendet hat und das Risiko besteht, dass e-Mails nicht gesendet werden. Dies ist eine frühzeitige Warnung für das Verhalten, die darauf hindeuten kann, dass das Konto gefährdet ist, aber nicht schwer genug, um den Benutzer zu beschränken. Diese Richtlinie weist eine Einstellung mit **mittlerem** Schweregrad auf. Obwohl es selten ist, kann eine von dieser Richtlinie generierte Warnung eine Anomalie sein. Es empfiehlt sich jedoch, zu [überprüfen, ob das Benutzerkonto kompromittiert wurde](../security/office-365-security/responding-to-a-compromised-email-account.md).|Bedrohungsverwaltung|E1/F1/G1, E3/G3 oder E5/G5  |
 |**Mandanten vom Senden von e-Mails eingeschränkt**|Generiert eine Warnung, wenn der Großteil des e-Mail-Datenverkehrs aus Ihrer Organisation als verdächtig erkannt wurde und Microsoft Ihre Organisation vom Senden von e-Mails eingeschränkt hat. Untersuchen Sie potenziell gefährdete Benutzer-und Administratorkonten, neue Connectors oder offene Relays, und wenden Sie sich an den Microsoft-Support, um die Blockierung Ihrer Organisation aufzuheben. Diese Richtlinie weist eine Einstellung mit **hohem** Schweregrad auf. Weitere Informationen dazu, warum Organisationen blockiert werden, finden Sie unter [Beheben von Problemen mit der Zustellung von e-Mails für den Fehlercode 5.7.7 XX in Exchange Online](https://go.microsoft.com/fwlink/?linkid=2022138).|Bedrohungsverwaltung|E1/F1/G1, E3/G3 oder E5/G5|
@@ -217,33 +217,33 @@ Informationen zur Kategorie, der eine standardmäßige Warnungs Richtlinie zugew
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Überwachungsprotokolle|||||||
 |Fallverwaltung|||||||
-|Complianceadministrator|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Complianceadministrator|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||![Häkchen](../media/checkmark.png)||![Häkchen](../media/checkmark.png)|
 |Compliance-Suche|||||||
 |Geräteverwaltung|||||||
 |Dispositionsverwaltung|||||||
-|DLP-Konformitätsverwaltung||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
+|DLP-Konformitätsverwaltung||![Häkchen](../media/checkmark.png)|||||
 |Exportieren|||||||
 |Hold|||||||
-|Benachrichtigungen verwalten||||||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Organisationskonfiguration||||||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Benachrichtigungen verwalten||||||![Häkchen](../media/checkmark.png)|
+|Organisationskonfiguration||||||![Häkchen](../media/checkmark.png)|
 |Vorschau|||||||
-|Datensatzverwaltung|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
-|Aufbewahrungsverwaltung|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
+|Datensatzverwaltung|![Häkchen](../media/checkmark.png)||||||
+|Aufbewahrungsverwaltung|![Häkchen](../media/checkmark.png)||||||
 |Überprüfung|||||||
 |RMS-Entschlüsselung|||||||
-|Rollenverwaltung||||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|Rollenverwaltung||||![Häkchen](../media/checkmark.png)|||
 |Suchen und löschen|||||||
-|Sicherheitsadministrator||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Sicherheitsleseberechtigter||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)
+|Sicherheitsadministrator||![Häkchen](../media/checkmark.png)||![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|
+|Sicherheitsleseberechtigter||![Häkchen](../media/checkmark.png)||![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)
 |Service Assurance-Ansicht|||||||
 |Aufsichts Überprüfungs Administrator|||||||
 |Überwachungsprotokolle nur anzeigen|||||||
 |View-Only Geräteverwaltung|||||||
-|View-Only DLP-Konformitätsverwaltung||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
-|View-Only Benachrichtigungen verwalten||||||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Schreibgeschützte Empfänger|||  ![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||
-|View-Only-Datensatzverwaltung|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
-|View-Only Aufbewahrungsverwaltung|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
+|View-Only DLP-Konformitätsverwaltung||![Häkchen](../media/checkmark.png)|||||
+|View-Only Benachrichtigungen verwalten||||||![Häkchen](../media/checkmark.png)|
+|Schreibgeschützte Empfänger|||![Häkchen](../media/checkmark.png)||||
+|View-Only-Datensatzverwaltung|![Häkchen](../media/checkmark.png)||||||
+|View-Only Aufbewahrungsverwaltung|![Häkchen](../media/checkmark.png)||||||
 |||||||
 
 > [!TIP]

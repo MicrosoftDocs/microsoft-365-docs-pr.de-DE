@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 55a84fa8ba31cfd4f981f2820811b541ae340a27
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: c2c01278831433c02e5c869dba83f223eea57d27
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357623"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683235"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>Richtlinien für das Zulassen von Gast-und externen B2B-Zugriff
 
@@ -63,8 +63,6 @@ Microsoft Teams definiert Folgendes:
 - **Externer Zugriff** ist für einen externen Benutzer, der über kein B2B-Konto verfügt. Externer Zugriff kann Einladungen und Teilnahme an anrufen, Chats und Besprechungen umfassen, umfasst jedoch nicht die Teammitgliedschaft und den Zugriff auf die Ressourcen des Teams.
 
 Weitere Informationen finden Sie unter [Vergleich zwischen Gast und externem Zugriff für Teams](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access).
-
-Richtlinien für den bedingten Zugriff gelten nur für Gastzugriff in Microsoft Teams, da ein entsprechendes Azure AD B2B-Konto vorhanden ist.
 
 Weitere Informationen zum Sichern von Identitäts-und Gerätezugriffs Richtlinien für Teams finden Sie unter [Richtlinien Empfehlungen für das Sichern von teamchats, Gruppen und Dateien](teams-access-policies.md) .
 

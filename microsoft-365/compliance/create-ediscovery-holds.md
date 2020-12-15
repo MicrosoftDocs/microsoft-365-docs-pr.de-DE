@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sie können einen Haltebereich erstellen, der einem zentralen eDiscovery-Fall zugeordnet ist, um Inhalte beizubehalten, die möglicherweise für eine Untersuchung relevant sind.
-ms.openlocfilehash: d2c9c02f7530c58975ddf99289a3a0872788146a
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 85cabfd4877892613386dca88834464a223398ac
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920329"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682788"
 ---
 # <a name="create-an-ediscovery-hold"></a>Erstellen eines eDiscovery-Speichers
 
@@ -42,7 +42,7 @@ So erstellen Sie eine eDiscovery-Aufbewahrungsstelle, die einem zentralen eDisco
   
 1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com) und melden Sie sich mit den Anmeldeinformationen für das Benutzerkonto an, dem die entsprechenden eDiscovery-Berechtigungen zugewiesen wurden.
 
-2. Klicken Sie im linken Navigationsbereich des Microsoft 365 Compliance Center auf **Alle anzeigen** , und klicken Sie dann auf **eDiscovery > Kern**.
+2. Klicken Sie im linken Navigationsbereich des Microsoft 365 Compliance Center auf **Alle anzeigen**, und klicken Sie dann auf **eDiscovery > Kern**.
 
 3. Wählen Sie auf der **zentralen eDiscovery** -Seite den Fall aus, in dem Sie den Haltestatus erstellen möchten, und klicken Sie dann auf **Groß-/Kleinschreibung öffnen**.
 
@@ -56,22 +56,22 @@ So erstellen Sie eine eDiscovery-Aufbewahrungsstelle, die einem zentralen eDisco
 
     ![Wählen Sie Inhaltsspeicherorte aus, die im Haltebereich platziert werden sollen.](../media/a59e4265-9151-4dbf-913f-6a4ab8db06b4.png)
   
-   1. **Postfachspeicher Orte** – klicken Sie auf **Benutzer, Gruppen oder Teams auswählen** , und klicken Sie dann erneut auf **Benutzer, Gruppen oder Teams** auswählen, um die zu speichernden Postfächer anzugeben. Verwenden Sie das Suchfeld, um nach Benutzerpostfächern und Verteilergruppen zu suchen (um die Postfächer der Gruppenmitglieder festhalten zu können), damit Sie in der Warteschleife platziert werden. Sie können das zugeordnete Postfach auch für ein Microsoft-Team, eine Office 365 Gruppe oder eine Jammer Gruppe aufbewahren. Aktivieren Sie das Kontrollkästchen Benutzer, Gruppe, Team, klicken Sie auf **auswählen** , und klicken Sie dann auf **Fertig**.
+   1. **Postfachspeicher Orte** – klicken Sie auf **Benutzer, Gruppen oder Teams auswählen** , und klicken Sie dann erneut auf **Benutzer, Gruppen oder Teams** auswählen, um die zu speichernden Postfächer anzugeben. Verwenden Sie das Suchfeld, um nach Benutzerpostfächern und Verteilergruppen zu suchen (um die Postfächer der Gruppenmitglieder festhalten zu können), damit Sie in der Warteschleife platziert werden. Sie können das zugeordnete Postfach auch für ein Microsoft-Team, eine Office 365 Gruppe oder eine Jammer Gruppe aufbewahren. Aktivieren Sie das Kontrollkästchen Benutzer, Gruppe, Team, klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
 
-   1. **Website Standorte** – klicken Sie auf **Websites auswählen** , und klicken Sie dann erneut auf **Websites auswählen** , um SharePoint-und OneDrive-Konten für die Aufbewahrung anzugeben. Geben Sie die URL für jede Website ein, die Sie in die Warteschleife stellen möchten. Sie können auch die URL für die SharePoint-Website für ein Microsoft-Team, Office 365 Gruppe oder eine Gruppe jammern hinzufügen. Klicken Sie auf **auswählen** , und klicken Sie dann auf **Fertig**.
+   1. **Website Standorte** – klicken Sie auf **Websites auswählen** , und klicken Sie dann erneut auf **Websites auswählen** , um SharePoint-und OneDrive-Konten für die Aufbewahrung anzugeben. Geben Sie die URL für jede Website ein, die Sie in die Warteschleife stellen möchten. Sie können auch die URL für die SharePoint-Website für ein Microsoft-Team, Office 365 Gruppe oder eine Gruppe jammern hinzufügen. Klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
   
-   1. **Öffentliche Exchange-Ordner.** Verschieben Sie das Toggle ![ -Steuerelement der Umschaltfläche in ](../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) die **all** -Position, um alle öffentlichen Ordner in Ihrer Exchange Online Organisation zu speichern. Sie können keine bestimmten öffentlichen Ordner auswählen, die in die Warteschleife gestellt werden sollen. Lassen Sie den Toggle-Schalter auf " **None** " festgelegt, wenn Sie öffentliche Ordner nicht in den Speicher setzen möchten.
+   1. **Öffentliche Exchange-Ordner.** Verschieben Sie das Toggle ![ -Steuerelement der Umschaltfläche in ](../media/scc-toggle-on.png) die **all** -Position, um alle öffentlichen Ordner in Ihrer Exchange Online Organisation zu speichern. Sie können keine bestimmten öffentlichen Ordner auswählen, die in die Warteschleife gestellt werden sollen. Lassen Sie den Toggle-Schalter auf " **None** " festgelegt, wenn Sie öffentliche Ordner nicht in den Speicher setzen möchten.
 
    > [!NOTE]
    > Sie müssen mindestens einen Inhaltsspeicherort zum Haltestatus hinzufügen. Andernfalls wird in den eDiscovery-halte-statischen Elementen angezeigt, dass keine Elemente gespeichert sind.
 
 8. Wenn Sie das Hinzufügen von Inhaltsspeicherorten in der Warteschleife abgeschlossen haben, klicken Sie auf **weiter**.
 
-9. Um eine abfragebasierte Aufbewahrung mit Bedingungen zu erstellen, führen Sie die folgenden Schritte aus. Klicken Sie andernfalls auf **weiter** , um alle Inhalte an den angegebenen Inhaltsspeicherorten beizubehalten.
+9. Um eine abfragebasierte Aufbewahrung mit Bedingungen zu erstellen, führen Sie die folgenden Schritte aus. Klicken Sie andernfalls auf **weiter**, um alle Inhalte an den angegebenen Inhaltsspeicherorten beizubehalten.
 
     ![Erstellen eines abfragebasierten haltebereichs mit Bedingungen](../media/d587b58e-d05c-4ac0-b0fe-09019e4f1063.png)
   
-    1. Geben Sie im Feld unter **Schlüsselwörter** eine Suchabfrage ein, sodass nur die Inhalte beibehalten werden, die die Suchkriterien erfüllen. Sie können Schlüsselwörter, Eigenschaften von e-Mail-Nachrichten oder Dokumenteigenschaften wie Dateinamen angeben. Sie können auch komplexere Abfragen verwenden, die einen booleschen Operator wie **and** , **or** oder **Not** verwenden.
+    1. Geben Sie im Feld unter **Schlüsselwörter** eine Suchabfrage ein, sodass nur die Inhalte beibehalten werden, die die Suchkriterien erfüllen. Sie können Schlüsselwörter, Eigenschaften von e-Mail-Nachrichten oder Dokumenteigenschaften wie Dateinamen angeben. Sie können auch komplexere Abfragen verwenden, die einen booleschen Operator wie **and**, **or** oder **Not** verwenden.
 
     1. Klicken Sie auf **Bedingungen hinzufügen** , um eine oder mehrere Bedingungen hinzuzufügen, um die Suchabfrage für den Haltebereich einzuschränken. Jede Bedingung fügt der KQL-Suchabfrage, die erstellt und ausgeführt wird, eine Klausel hinzu, wenn Sie den Haltebereich erstellen. Sie können beispielsweise einen Datumsbereich angeben, damit e-Mail-oder Website Dokumente, die innerhalb des Datumsbereichs erstellt wurden, in der Warteschleife gespeichert werden. Eine Bedingung ist logisch mit der Stichwortabfrage (im Feld **Schlüsselwörter** angegeben) durch den **and-** Operator verbunden. Das bedeutet, dass Elemente sowohl die Stichwortabfrage als auch die beizubehaltende Bedingung erfüllen müssen.
 
@@ -129,7 +129,7 @@ Im folgenden sind einige andere Punkte aufgeführt, die beim Suchen von Speicher
 
 Unterhaltungen, die Teil eines Microsoft Teams-Kanals sind, werden in dem Postfach gespeichert, das dem Microsoft-Team zugeordnet ist. Gleichermaßen werden Dateien, die Teammitglieder in einem Kanal freigeben, auf der SharePoint-Website des Teams gespeichert. Daher müssen Sie das Team Postfach und die SharePoint-Website in eDiscovery Hold platzieren, um Unterhaltungen und Dateien in einem Kanal beizubehalten.
 
-Alternativ werden Unterhaltungen, die Teil der Chat Liste in Microsoft Teams sind (so genannte *1:1-Chats* oder *1: N-Gruppenchats* ), in den Postfächern der Benutzer gespeichert, die am Chat teilnehmen. Und Dateien, die Benutzer in Chat Unterhaltungen freigeben, werden im OneDrive-Konto des Benutzers gespeichert, der die Datei freigibt. Daher müssen Sie die einzelnen Benutzerpostfächer und OneDrive-Konten zu einer eDiscovery-Aufbewahrungs Liste hinzufügen, um Unterhaltungen und Dateien in der Chatliste beizubehalten. Es empfiehlt sich, die Postfächer von Mitgliedern eines Microsoft-Teams zusätzlich zur Platzierung des Team Postfachs und der Website aufzubewahren.
+Alternativ werden Unterhaltungen, die Teil der Chat Liste in Microsoft Teams sind (so genannte *1:1-Chats* oder *1: N-Gruppenchats*), in den Postfächern der Benutzer gespeichert, die am Chat teilnehmen. Und Dateien, die Benutzer in Chat Unterhaltungen freigeben, werden im OneDrive-Konto des Benutzers gespeichert, der die Datei freigibt. Daher müssen Sie die einzelnen Benutzerpostfächer und OneDrive-Konten zu einer eDiscovery-Aufbewahrungs Liste hinzufügen, um Unterhaltungen und Dateien in der Chatliste beizubehalten. Es empfiehlt sich, die Postfächer von Mitgliedern eines Microsoft-Teams zusätzlich zur Platzierung des Team Postfachs und der Website aufzubewahren.
 
 Ab dem 2020. Februar haben wir die Möglichkeit zum Beibehalten von Inhalten in privaten Kanälen aktiviert. Da private Kanal Chats in den Postfächern der Chat Teilnehmer gespeichert werden, werden durch das Platzieren eines Benutzerpostfachs in eDiscovery Hold private Kanal Chats beibehalten. Wenn ein Benutzerpostfach vor dem Februar 2020 auf einem eDiscovery-Speicher abgelegt wurde, wird der Aufbewahrungs Status nun automatisch auf private Kanal Nachrichten angewendet, die in diesem Postfach gespeichert sind. Das Beibehalten von Dateien, die in privaten Kanälen freigegeben sind, wird ebenfalls unterstützt.
 
@@ -163,7 +163,7 @@ Beachten Sie beim Platzieren von Teams und Office 365 Gruppen in einer eDiscover
     ```
 
     > [!NOTE]
-    > Zum Ausführen des **Get-UnifiedGroup** -Cmdlets müssen Sie über die Rolle "Empfänger (nur Anzeige)" in Exchange Online verfügen oder ein Mitglied einer Rollengruppe sein, der die Rolle "Empfänger (nur Anzeige)" zugewiesen wurde. 
+    > Zum Ausführen des **Get-UnifiedGroup**-Cmdlets müssen Sie über die Rolle "Empfänger (nur Anzeige)" in Exchange Online verfügen oder ein Mitglied einer Rollengruppe sein, der die Rolle "Empfänger (nur Anzeige)" zugewiesen wurde. 
   
 - Wenn das Postfach eines Benutzers durchsucht wird, werden alle Teams oder Office 365 Gruppen, in denen der Benutzer Mitglied ist, nicht durchsucht. Wenn Sie eine Team-oder Office 365 Gruppe in eDiscovery Hold platzieren, werden nur das Gruppenpostfach und die Gruppen Website in den Haltebereich verschoben. Die Postfächer und OneDrive für Unternehmen Websites von Gruppenmitgliedern werden nur gespeichert, wenn Sie Sie explizit dem eDiscovery-Haltestatus hinzufügen. Wenn Sie also ein Team oder eine Office 365 Gruppe aus einem rechtlichen Grund in die Warteschleife stellen müssen, können Sie die Postfächer und OneDrive-Konten von Team-oder Gruppenmitgliedern in demselben Haltebereich hinzufügen.
 
@@ -174,7 +174,7 @@ Beachten Sie beim Platzieren von Teams und Office 365 Gruppen in einer eDiscover
     ```
 
     > [!NOTE]
-    > Zum Ausführen des **Get-UnifiedGroupLinks** -Cmdlets müssen Sie über die Rolle "Empfänger (nur Anzeige)" in Exchange Online verfügen oder ein Mitglied einer Rollengruppe sein, der die Rolle "Empfänger (nur Anzeige)" zugewiesen wurde.
+    > Zum Ausführen des **Get-UnifiedGroupLinks**-Cmdlets müssen Sie über die Rolle "Empfänger (nur Anzeige)" in Exchange Online verfügen oder ein Mitglied einer Rollengruppe sein, der die Rolle "Empfänger (nur Anzeige)" zugewiesen wurde.
 
 ## <a name="onedrive-accounts"></a>OneDrive-Konten
 
@@ -193,7 +193,7 @@ Nachdem ein Postfach, eine SharePoint-Website oder ein OneDrive-Konto aus einer 
 
    - **DelayReleaseHoldApplied:** Diese Eigenschaft bezieht sich auf cloudbasierten Inhalte (die von nicht-Outlook-apps wie Microsoft Teams, Microsoft Forms und Microsoft jammern generiert werden), die im Postfach eines Benutzers gespeichert sind. Von einer Microsoft-App generierte clouddaten werden normalerweise in einem verborgenen Ordner im Postfach eines Benutzers gespeichert.
 
-   Wenn ein Verzögerungs Speicher für das Postfach gesetzt wird (wenn eine der vorherigen Eigenschaften auf " **true** " festgelegt ist), wird das Postfach weiterhin für eine unbegrenzte Aufbewahrungsdauer als aufbewahrt, als ob das Postfach das Beweissicherungsverfahren aufweist. Nach 30 Tagen läuft die Verzögerungsdauer ab, und Microsoft 365 versucht automatisch, die Verzögerungszeit zu entfernen (indem die DelayHoldApplied-oder DelayReleaseHoldApplied-Eigenschaft auf **false** festgelegt wird), sodass der Haltebereich entfernt wird. Nachdem eine dieser Eigenschaften auf " **false** " festgelegt wurde, werden die entsprechenden Elemente, die zum Entfernen markiert sind, beim nächsten verarbeiten des Postfachs vom Assistenten für verwaltete Ordner gelöscht.
+   Wenn ein Verzögerungs Speicher für das Postfach gesetzt wird (wenn eine der vorherigen Eigenschaften auf " **true**" festgelegt ist), wird das Postfach weiterhin für eine unbegrenzte Aufbewahrungsdauer als aufbewahrt, als ob das Postfach das Beweissicherungsverfahren aufweist. Nach 30 Tagen läuft die Verzögerungsdauer ab, und Microsoft 365 versucht automatisch, die Verzögerungszeit zu entfernen (indem die DelayHoldApplied-oder DelayReleaseHoldApplied-Eigenschaft auf **false** festgelegt wird), sodass der Haltebereich entfernt wird. Nachdem eine dieser Eigenschaften auf " **false**" festgelegt wurde, werden die entsprechenden Elemente, die zum Entfernen markiert sind, beim nächsten verarbeiten des Postfachs vom Assistenten für verwaltete Ordner gelöscht.
 
    Weitere Informationen finden Sie unter [Verwalten von Postfächern mit angehaltener Aufbewahrungszeit](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold).
 

@@ -17,19 +17,19 @@ ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie Richtlinien für sichere Anlagen zum Schutz Ihrer Organisation vor bösartigen Dateien in e-Mails definieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a14f5a22795fc08b76165466d8e44ee38d8a2d81
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 9105e7ed9e9bc376b3d86cd846d8c1d6eae8deea
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572638"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682913"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Einrichten von Richtlinien für sichere Anlagen in Microsoft Defender für Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> Dieser Artikel richtet sich an Geschäftskunden, die [Microsoft Defender für Office 365](office-365-atp.md)haben. Wenn Sie ein Privatbenutzer sind, der nach Informationen zum Anlagen Scan in Outlook sucht, lesen Sie [Erweiterte Outlook.com-Sicherheit](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Dieser Artikel richtet sich an Geschäftskunden, die über [Microsoft Defender für Office 365](office-365-atp.md) verfügen. Wenn Sie ein Privatbenutzer sind, der nach Informationen zum Anlagen Scan in Outlook sucht, lesen Sie [Erweiterte Outlook.com-Sicherheit](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 "Sichere Anlagen" ist ein Feature in [Microsoft Defender für Office 365](office-365-atp.md) , das eine virtuelle Umgebung verwendet, um Anlagen in eingehenden e-Mail-Nachrichten zu überprüfen, nachdem diese durch den [Schutz vor Schadsoftware in Exchange Online Protection (EoP)](anti-malware-protection.md), jedoch vor der Zustellung an die Empfänger überprüft wurden. Weitere Informationen finden Sie unter [sichere Anlagen in Microsoft Defender für Office 365](atp-safe-attachments.md).
 
@@ -59,7 +59,7 @@ In Exchange Online PowerShell oder der eigenständigen EOP PowerShell verwalten 
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Sie müssen Berechtigungen im Security & Compliance Center zugewiesen werden, bevor Sie die Verfahren in diesem Artikel ausführen können:
+- Bevor Sie die Verfahren in diesem Artikel ausführen können, müssen Ihnen im Security & Compliance Center Berechtigungen zugewiesen werden.
   - Zum Erstellen, ändern und Löschen von Richtlinien für sichere Anlagen müssen Sie Mitglied der Rollengruppen " **Organisationsverwaltung** " oder " **Sicherheits Administrator** " sein.
   - Für den schreibgeschützten Zugriff auf Richtlinien für sichere Anlagen müssen Sie Mitglied der Rollengruppen " **globaler Leser** " oder " **Sicherheits Leser** " sein.
 
@@ -68,7 +68,7 @@ In Exchange Online PowerShell oder der eigenständigen EOP PowerShell verwalten 
   **Hinweise**:
 
   - Durch das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance Center _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-  - Die Rollengruppe " **Organisationsverwaltung** " in der Ansicht "nur Leserechten" in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) bietet außerdem schreibgeschützten Zugriff auf das Feature.
+  - Die Rollengruppe **Organisationsverwaltung mit Leserechten** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ermöglicht auch einen schreibgeschützten Zugriff auf das Feature.
 
 - Unsere empfohlenen Einstellungen für Richtlinien zu sicheren Anlagen finden Sie unter [Safe Attachments Settings](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings).
 
@@ -125,7 +125,7 @@ Durch das Erstellen einer benutzerdefinierten Richtlinie für sichere Anlagen im
    - Klicken Sie in das Feld, und führen Sie einen Bildlauf durch die Liste der zu markierende Werte durch.
    - Klicken Sie in das Feld, und beginnen Sie mit der Eingabe, um die Liste zu filtern und einen Wert auszuwählen.
    - Klicken Sie zum Hinzufügen weiterer Werte in einen leeren Bereich des Felds.
-   - Wenn Sie einzelne Einträge entfernen möchten **Remove** , klicken Sie auf Entfernen- ![ Symbol ](../../media/scc-remove-icon.png) für den Wert entfernen.
+   - Wenn Sie einzelne Einträge entfernen möchten  , klicken Sie auf Entfernen- ![ Symbol ](../../media/scc-remove-icon.png) für den Wert entfernen.
    - Wenn Sie die gesamte Bedingung entfernen möchten **, klicken Sie** ![ in der Bedingung auf entfernen-Symbol Entfernen ](../../media/scc-remove-icon.png) .
 
    Klicken Sie zum Hinzufügen einer zusätzlichen Bedingung auf **Bedingung hinzufügen** , und wählen Sie einen verbleibenden Wert unter **angewendet bei** aus.
@@ -166,7 +166,7 @@ Informationen zum Aktivieren oder Deaktivieren einer Richtlinie oder zum Festleg
 
    - Bewegen der Umschaltfläche nach links ![Deaktivieren der Richtlinie](../../media/scc-toggle-off.png) , um die Richtlinie zu deaktivieren.
 
-   - Bewegen der Umschaltfläche nach rechts ![Richtlinie aktivieren](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) , um die Richtlinie zu aktivieren.
+   - Bewegen der Umschaltfläche nach rechts ![Richtlinie aktivieren](../../media/scc-toggle-on.png) , um die Richtlinie zu aktivieren.
 
 ### <a name="set-the-priority-of-safe-attachments-policies"></a>Festlegen der Priorität von Richtlinien für sichere Anlagen
 

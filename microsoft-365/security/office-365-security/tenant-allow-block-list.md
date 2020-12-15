@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie URL-Einträge in der Liste Mandanten-Allow/Block im Security & Compliance Center konfigurieren.
-ms.openlocfilehash: 4bf5e2e29a9f48c434be527a2447ca4bf98c4208
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: f60e2f29bf9b880e9d2247fa59554300ae348a03
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659998"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683211"
 ---
 # <a name="manage-urls-in-the-tenant-allowblock-list"></a>Verwalten von URLs in der Zulassungs-/Sperrliste des Mandanten
 
@@ -83,7 +83,7 @@ Ausführliche Informationen zur Syntax für URL-Einträge finden Sie in der [URL
 
      oder
 
-     - Bewegen Sie die Umschaltfläche nach rechts, um die Einträge so zu konfigurieren, dass Sie nie ablaufen: ![Umschaltfläche ein](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+     - Bewegen Sie die Umschaltfläche nach rechts, um die Einträge so zu konfigurieren, dass Sie nie ablaufen: ![Umschaltfläche ein](../../media/scc-toggle-on.png).
 
    - **Optional Hinweis**: Geben Sie einen beschreibenden Text für die Einträge ein.
 
@@ -111,7 +111,7 @@ Klicken Sie auf **Filter**. Konfigurieren Sie im angezeigten **Filter** Flyout d
 
 - **Aktion**: Wählen Sie **zulassen**, **blockieren** oder beides aus.
 
-- **Läuft nie** ab: Wählen Sie aus (deaktivieren ![ ](../../media/scc-toggle-off.png) ) oder ein (Umschalten ![ ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) ) aus.
+- **Nie ablaufen**: Auswahl aus: schaltet ![ ab ](../../media/scc-toggle-off.png) oder ein: schaltet ![ ein ](../../media/scc-toggle-on.png) .
 
 - **Letzte Aktualisierung**: Wählen Sie ein Startdatum (von), ein Enddatum (**an**) oder beides **aus**.
 
@@ -141,7 +141,7 @@ Sie können den URL-Wert selbst nicht ändern. Stattdessen müssen Sie den Eintr
 
      oder
 
-     - Bewegen Sie die Umschaltfläche nach rechts, um den Eintrag so zu konfigurieren, dass er nie abläuft: ![Umschaltfläche ein](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+     - Bewegen Sie die Umschaltfläche nach rechts, um den Eintrag so zu konfigurieren, dass er nie abläuft: ![Umschaltfläche ein](../../media/scc-toggle-on.png).
 
    - **Optional Hinweis**: Geben Sie einen beschreibenden Text für den Eintrag ein.
 

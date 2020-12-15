@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die Anti-Phishing-Richtlinien informieren, die in Exchange Online Protection (EoP) und Microsoft Defender für Office 365 zur Verfügung stehen.
-ms.openlocfilehash: 34c66d8ab39af443462e8c5ac99009b4170be21e
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 43736fbd42949a084804825ec7f12d19b7fd1818
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659856"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683049"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-Phishing-Richtlinien in Microsoft 365
 
@@ -43,12 +43,12 @@ In der folgenden Tabelle werden die allgemeinen Unterschiede zwischen Anti-Phish
 
 |Feature|Anti-Phishing-Richtlinien in EoP|Anti-Phishing-Richtlinien in Microsoft Defender für Office 365|
 |---|:---:|:---:|
-|Automatisch erstellte Standardrichtlinie|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Erstellen benutzerdefinierter Richtlinien|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Richtlinieneinstellungen<sup>\*</sup>|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Einstellungen für Identitätswechsel||![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Spoof-Einstellungen|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Erweiterte Phishing-Schwellenwerte||![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Automatisch erstellte Standardrichtlinie|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|
+|Erstellen benutzerdefinierter Richtlinien|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|
+|Richtlinieneinstellungen<sup>\*</sup>|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|
+|Einstellungen für Identitätswechsel||![Häkchen](../../media/checkmark.png)|
+|Spoof-Einstellungen|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|
+|Erweiterte Phishing-Schwellenwerte||![Häkchen](../../media/checkmark.png)|
 |
 
 <sup>\*</sup> In der Standardrichtlinie sind der Richtlinienname und die Beschreibung schreibgeschützt (die Beschreibung ist leer), und Sie können nicht angeben, für wen die Richtlinie gilt (die Standardrichtlinie gilt für alle Empfänger).

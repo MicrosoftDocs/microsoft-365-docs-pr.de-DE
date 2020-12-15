@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie Richtlinien für sichere Links und globale Einstellungen für sichere Links in Microsoft Defender für Office 365 anzeigen, erstellen, ändern und löschen.
-ms.openlocfilehash: 8a6d8a7ad567b658f04cb0b28800d4edbc33ec67
-ms.sourcegitcommit: f81ca61f74f11a7436a6172538c3bda81b484d62
+ms.openlocfilehash: 7a00b73855302f5046afa0605fd7188007394ed7
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2020
-ms.locfileid: "49675241"
+ms.locfileid: "49683163"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Einrichten von Richtlinien für sichere Links in Microsoft Defender für Office 365
 
@@ -178,7 +178,7 @@ Informationen zum Aktivieren oder Deaktivieren einer Richtlinie oder zum Festleg
 
    - Schieben Sie die Umschaltfläche nach links, um die Richtlinie zu deaktivieren: ![Deaktivieren der Richtlinie](../../media/scc-toggle-off.png).
 
-   - Schieben Sie die Umschaltfläche nach rechts, um die Richtlinie zu aktivieren: ![Richtlinie aktivieren](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+   - Schieben Sie die Umschaltfläche nach rechts, um die Richtlinie zu aktivieren: ![Richtlinie aktivieren](../../media/scc-toggle-on.png).
 
 ### <a name="set-the-priority-of-safe-links-policies"></a>Festlegen der Priorität von Richtlinien für sichere Links
 

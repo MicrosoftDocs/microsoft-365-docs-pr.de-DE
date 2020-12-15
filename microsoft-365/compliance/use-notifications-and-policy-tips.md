@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: Informationen zum Hinzufügen eines Richtlinien Tipps zu einer DLP-Richtlinie (Data Loss Prevention), um einen Benutzer darüber zu informieren, dass er mit Inhalten arbeitet, die mit einer DLP-Richtlinie in Konflikt stehen.
-ms.openlocfilehash: a36d1de9a24136943b41f12fe7f12a44d9df59f1
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 4f8855e3dce2adaf457b9a2453ca9dd827de5bcd
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819305"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682948"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Senden von E-Mail-Benachrichtigungen und Anzeigen von Richtlinientipps für DLP-Richtlinien
 
@@ -45,43 +45,43 @@ Sie können e-Mail-Benachrichtigungen und Richtlinien Tipps verwenden, um die Be
     
   - Bei e-Mails in Outlook im Internet und Outlook 2013 und höher wird die RichtlinienInfo oben in einer Nachricht oberhalb der Empfänger angezeigt, während die Nachricht verfasst wird.
     
-  - Für Dokumente in einem OneDrive für Unternehmen Konto oder SharePoint Online Website wird der richtlinientipp durch ein Warnsymbol angezeigt, das auf dem Element angezeigt wird. Um weitere Informationen anzuzeigen, können Sie ein Element auswählen und dann **Information** ![ ](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) in der rechten oberen Ecke der Seite auf Informations Informationsbereichs Symbol klicken, um den Detailbereich zu öffnen. 
+  - Für Dokumente in einem OneDrive für Unternehmen Konto oder SharePoint Online Website wird der richtlinientipp durch ein Warnsymbol angezeigt, das auf dem Element angezeigt wird. Um weitere Informationen anzuzeigen, können Sie ein Element auswählen und dann  ![ ](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) in der rechten oberen Ecke der Seite auf Informations Informationsbereichs Symbol klicken, um den Detailbereich zu öffnen. 
     
-  - Für Excel-, PowerPoint-und Word-Dokumente, die auf einer OneDrive für Unternehmen Website oder SharePoint Online Website gespeichert sind, die in der DLP-Richtlinie enthalten ist, wird der richtlinientipp in **File** der Statusleiste und im Backstage-Ansicht (Menü \> **Informationen**für Dateien) angezeigt.
+  - Für Excel-, PowerPoint-und Word-Dokumente, die auf einer OneDrive für Unternehmen Website oder SharePoint Online Website gespeichert sind, die in der DLP-Richtlinie enthalten ist, wird der richtlinientipp in  der Statusleiste und im Backstage-Ansicht (Menü \> **Informationen** für Dateien) angezeigt.
     
 ## <a name="add-user-notifications-to-a-dlp-policy"></a>Hinzufügen von Benutzer Benachrichtigungen zu einer DLP-Richtlinie
 
-Wenn Sie eine DLP-Richtlinie erstellen, können Sie **Benutzer Benachrichtigungen**aktivieren. Wenn Benutzer Benachrichtigungen aktiviert sind, sendet Microsoft 365 sowohl e-Mail-Benachrichtigungen als auch Richtlinien Tipps. Sie können anpassen, an wen die Benachrichtigungs-e-Mails gesendet werden, den Text für e-Mail und richtlinientipp.
+Wenn Sie eine DLP-Richtlinie erstellen, können Sie **Benutzer Benachrichtigungen** aktivieren. Wenn Benutzer Benachrichtigungen aktiviert sind, sendet Microsoft 365 sowohl e-Mail-Benachrichtigungen als auch Richtlinien Tipps. Sie können anpassen, an wen die Benachrichtigungs-e-Mails gesendet werden, den Text für e-Mail und richtlinientipp.
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
 2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto an. Sie befinden sich jetzt im Security &amp; Compliance Center.
     
-3. Im Security &amp; Compliance Center \> Links Navigations Richtlinie zur \> **Verhinderung von Datenverlust** und \> **Policy** \> **Erstellen einer Richtlinie**.
+3. Im Security &amp; Compliance Center \> Links Navigations Richtlinie zur \> **Verhinderung von Datenverlust** und \>  \> **Erstellen einer Richtlinie**.
     
     ![Erstellen einer Richtlinien Schaltfläche](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
   
-4. Wählen Sie die DLP-Richtlinienvorlage aus, die die Typen von vertraulichen Informationen schützt, die Sie \> **als nächstes**benötigen.
+4. Wählen Sie die DLP-Richtlinienvorlage aus, die die Typen von vertraulichen Informationen schützt, die Sie \> **als nächstes** benötigen.
     
-    Um mit einer leeren Vorlage zu beginnen, **Custom** wählen Sie \> **Custom policy** \> **als nächstes**benutzerdefinierte Richtlinie aus.
+    Um mit einer leeren Vorlage zu beginnen,  wählen Sie \>  \> **als nächstes** benutzerdefinierte Richtlinie aus.
     
 5. Nennen Sie die Richtlinie \> **als nächstes**.
     
 6. Führen Sie einen der folgenden Schritte aus, um die Speicherorte auszuwählen, die von der DLP-Richtlinie geschützt werden sollen:
     
-   - Wählen Sie **in Office 365 Next alle Standorte aus** \> **Next**.
+   - Wählen Sie **in Office 365 Next alle Standorte aus** \> .
     
-   - Wählen Sie **Let Me Choose specific Locations** \> **Next**aus.
+   - Wählen Sie **Let Me Choose specific Locations** \> **Next** aus.
     
    Wenn Sie einen gesamten Standort wie alle Exchange-e-Mails oder alle OneDrive-Konten einschließen oder ausschließen möchten, wechseln Sie den **Status** dieser Position ein oder aus. 
     
    Wenn Sie nur bestimmte SharePoint-Websites oder OneDrive-Konten einschließen möchten, wechseln Sie den **Status** auf ein, und klicken Sie dann auf die Links unter **einschließen** , um bestimmte Websites oder Konten auszuwählen. 
     
-7. Wählen Sie weiter **Erweiterte Einstellungen verwenden** aus \> **Next**.
+7. Wählen Sie weiter **Erweiterte Einstellungen verwenden** aus \> .
     
-8. Wählen Sie **+ neue Regel**aus.
+8. Wählen Sie **+ Neue Regel** aus.
     
-9. Wechseln Sie im Regel-Editor unter **Benutzer Benachrichtigungen**auf den Status.
+9. Wechseln Sie im Regel-Editor unter **Benutzer Benachrichtigungen** auf den Status.
     
     ![Abschnitt "Benutzer Benachrichtigungen" des Regel-Editors](../media/47705927-c60b-4054-a072-ab914f33d15d.png)
 
@@ -169,9 +169,9 @@ Wenn ein Dokument auf einer OneDrive für Unternehmen Website oder SharePoint On
     
    ![Richtlinientipp Symbole für Dokumente in einem OneDrive-Konto](../media/d3e9f772-03f9-4d28-82f8-3064784332a2.png)
   
-Um Aktionen für ein Dokument durchführen zu können, wählen Sie \> **Information** ![ in der oberen rechten Ecke der Seite ein Element Informations Informationsbereich auswählen ](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) aus, um den Detailbereich \> **Ansichts richtlinientipp**zu öffnen.
+Um Aktionen für ein Dokument durchführen zu können, wählen Sie \>  ![ in der oberen rechten Ecke der Seite ein Element Informations Informationsbereich auswählen ](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) aus, um den Detailbereich \> **Ansichts richtlinientipp** zu öffnen.
   
-Der richtlinientipp listet die Probleme mit dem Inhalt auf, und wenn die Richtlinien Tipps mit diesen Optionen konfiguriert sind, können Sie **Auflösen**auswählen und dann den richtlinientipp **außer Kraft setzen** oder ein falsch positives Ergebnis **melden** . 
+Der richtlinientipp listet die Probleme mit dem Inhalt auf, und wenn die Richtlinien Tipps mit diesen Optionen konfiguriert sind, können Sie **Auflösen** auswählen und dann den richtlinientipp **außer Kraft setzen** oder ein falsch positives Ergebnis **melden** . 
   
 ![Informationsbereich mit richtlinientipp](../media/0a191e70-80f0-4702-90f4-7a5b7aabcaab.png)
   
@@ -203,7 +203,7 @@ Richtlinien Tipps funktionieren, ob die vertraulichen Informationen im Nachricht
   
 ![Richtlinientipp, der zeigt, dass eine Anlage mit einer DLP-Richtlinie kollidiert](../media/59ae6655-215f-47d9-ad1d-39c0d1e61740.png)
   
-Wenn die Richtlinien Tipps so konfiguriert sind, dass Außerkraftsetzung zulässig ist, können Sie **Details anzeigen** \> **Außerkraftsetzung** \> Enter a Business Rechtfertigung oder Bericht eine falsch positive \> **Außerkraftsetzung**auswählen.
+Wenn die Richtlinien Tipps so konfiguriert sind, dass Außerkraftsetzung zulässig ist, können Sie **Details anzeigen** \> **Außerkraftsetzung** \> Enter a Business Rechtfertigung oder Bericht eine falsch positive \> **Außerkraftsetzung** auswählen.
   
 ![Richtlinientipp in Nachricht erweitert zur Anzeige der Außerkraftsetzungsoption](../media/28bfb997-48a6-41f0-8682-d5e62488458a.png)
   
@@ -247,6 +247,9 @@ Wenn Personen in den Desktop Versionen von Excel, PowerPoint und Word mit vertra
 - Die Website ist in einer DLP-Richtlinie enthalten, die für die Verwendung von Richtlinien Tipps konfiguriert ist.
     
 Office-Desktop Programme synchronisieren DLP-Richtlinien automatisch direkt von Office 365 und Scannen dann Ihre Dokumente, um sicherzustellen, dass Sie nicht mit ihren DLP-Richtlinien in Konflikt stehen und Richtlinien Tipps in Echtzeit anzeigen.
+
+> [!NOTE]
+> Office-Desktop Apps überprüfen Dokumente selbst, um zu ermitteln, ob DLP-Richtlinien Tipps angezeigt werden sollen; Es werden keine Richtlinien Tipps angezeigt, die SharePoint Online Websites oder OneDrive für Unternehmen Websites bereits ermittelt haben, sollten in einer Datei angezeigt werden. Daher wird möglicherweise nicht immer ein DLP-richtlinientipp in den Desktop-Apps angezeigt, die auf den Websites SharePoint Online Websites oder OneDrive für Unternehmen angezeigt werden. Im Gegensatz dazu zeigen die Office-Anwendungen im Internet nur DLP-Richtlinien Tipps, die SharePoint Online Websites oder OneDrive für Unternehmen Websites bereits ermittelt haben, sollten angezeigt werden.
   
 Je nachdem, wie Sie die Richtlinien Tipps in der DLP-Richtlinie konfigurieren, können die Benutzer entscheiden, ob Sie den richtlinientipp einfach ignorieren, die Richtlinie mit oder ohne geschäftliche Begründung außer Kraft setzen oder ein falsch positives Ergebnis melden möchten.
   
