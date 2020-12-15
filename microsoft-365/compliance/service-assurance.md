@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Laden Sie Drittanbieter Überwachungen herunter, erfahren Sie, wie Microsoft Kundendaten schützt und wie Sie ISO, HIPAA, FINRA und FedRAMP einhalten können, wenn Sie Office 365 verwenden.
-ms.openlocfilehash: 915f9040fe5320c905de420f08efa17087987ac3
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 33ec05512d36ae09d9d31821bf1d49e38aad6de7
+ms.sourcegitcommit: 8252377f63de188d32ed1ccd37540d92cba3cb65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49655519"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49671006"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>Dienstüberprüfung im Security & Compliance Center
 
@@ -43,12 +43,9 @@ Sie können auch herausfinden, wie Office 365 Kunden bei der Einhaltung von Stan
     
 ## <a name="who-can-access-office-365-service-assurance-and-how"></a>Wer kann auf Office 365 Service Assurance zugreifen, und wie?
 
- **Neue Kunden und Kunden, die Microsoft Online Services bewerten,** können auf die Service Assurance zugreifen, die in Office 365 Enterprise E3-und E5-Plänen enthalten ist (sowohl Test-als auch kostenpflichtige Abonnements). Wenn Sie nicht über einen dieser Pläne verfügen und Service Assurance testen möchten, können Sie [sich für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
-  
- **Vorhandene Kunden von Microsoft 365 for Business** können auf Service Assurance zugreifen. Wenn Sie der globale Administrator (manchmal auch Firmenadministrator genannt) für Ihre Organisation sind, haben Sie bereits Zugriff auf Service Assurance und können sich an Bord anderer Personen anmelden. Wenn Sie nicht der globale Administrator für Ihre Organisation sind und Sie Zugriff auf Service Assurance benötigen, bitten Sie Ihren Administrator, Sie zur Service Assurance-Benutzerrollen Gruppe hinzuzufügen. 
+ **Neue Kunden und Kunden, die Microsoft Online Services bewerten,** können auf die Service Assurance zugreifen, die in Office 365 Enterprise E3-und E5-Plänen enthalten ist (sowohl Test-als auch kostenpflichtige Abonnements). Wenn Sie nicht über einen dieser Pläne verfügen und Service Assurance testen möchten, können Sie [sich für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279).
   
  **O365-Abonnement Mitglieder** können standardmäßig auf den Abschnitt Service Assurance im Office 365 Protection Center zugreifen. Service Assurance stellt Berichte und Dokumente bereit, in denen die Sicherheitspraktiken von Microsoft für Kundendaten beschrieben werden, die in Office 365 gespeichert sind. Darüber hinaus werden unabhängige Überwachungsberichte von Drittanbietern für Office 365 bereitgestellt.
-  
  
 ## <a name="choose-your-industry-and-regional-settings"></a>Auswählen Ihrer Branchen-und Regionseinstellungen
 <a name="Chooseyourindustryregional"> </a>

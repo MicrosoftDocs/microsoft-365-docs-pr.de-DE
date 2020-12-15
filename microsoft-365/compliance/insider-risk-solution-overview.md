@@ -15,14 +15,14 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: a7a37464dc011d319021496c6d06bdf975c53f82
-ms.sourcegitcommit: 21b0ea5715e20b4ab13719eb18c97fadb49b563d
+ms.openlocfilehash: 6e6ad80697d332d0bccb248071b8deadf09fe8de
+ms.sourcegitcommit: 8252377f63de188d32ed1ccd37540d92cba3cb65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49624797"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49671016"
 ---
-# <a name="insider-risk-solutions-in-microsoft-365"></a>Insider Risikolösungen in Microsoft 365
+# <a name="insider-risk-solutions-in-microsoft-365"></a>Insider Risk-Lösungen in Microsoft 365
 
 Insider Risiken stellen ein Hauptanliegen von Sicherheits-und Compliance-Experten in der modernen Arbeitsumgebung dar. Branchenstudien haben gezeigt, dass Insider Risiken häufig bestimmten Benutzerereignissen oder-Aktivitäten zugeordnet werden. Das Schützen Ihrer Organisation vor diesen Risiken kann eine Herausforderung sein, die Sie identifizieren und schwer beheben können. Bei Insider Risiken handelt es sich um Sicherheitsanfälligkeiten in einer Vielzahl von Bereichen, die für Ihre Organisation große Probleme verursachen können, angefangen vom Verlust von geistigem Eigentum bis hin zu Belästigung am Arbeitsplatz und vieles mehr. In der folgenden Abbildung werden allgemeine Insider Risiken beschrieben:
 
@@ -51,8 +51,8 @@ Verwenden Sie diese Microsoft 365-Funktionen und-Funktionen, um Ihre Organisatio
 
 | Lösung/Funktionen | Beschreibung | Lizenzierung |
 | :------------------------ | :-------------- | :------------ |
-| Kommunikationscompliance | Die Kommunikations Konformität minimiert die Kommunikationsrisiken, indem Sie Ihnen hilft, ungeeignete Nachrichten in Ihrer Organisation zu erkennen, zu erfassen und zu bearbeiten. | Microsoft 365 E5 <br> Microsoft 365 E3-Abonnement + Microsoft 365 E5 Insider Risk Management-Add-on <br> Microsoft 365 E3-Abonnement + das Microsoft 365 E5-Compliance-Add-on |
-| Insider-Risikomanagement | Das Insider Risikomanagement minimiert interne Risiken, indem es Ihnen ermöglicht, böswillige und unbeabsichtigte Aktivitäten in Ihrer Organisation zu erkennen, zu untersuchen und zu handeln. | Microsoft 365 E5 <br> Microsoft 365 E3-Abonnement + Microsoft 365 E5 Insider Risk Management-Add-on <br> Microsoft 365 E3-Abonnement + das Microsoft 365 E5-Compliance-Add-on |
+| Kommunikationscompliance | Die Kommunikations Konformität minimiert die Kommunikationsrisiken, indem Sie Ihnen hilft, ungeeignete Nachrichten in Ihrer Organisation zu erkennen, zu erfassen und zu bearbeiten. | Microsoft 365 E5-Abonnement (kostenpflichtige oder Testversion) <br> Microsoft 365 E3-Abonnement + das Microsoft 365 E5-Compliance-Add-on <br> Microsoft 365 E3-Abonnement + Microsoft 365 E5 Insider Risk Management-Add-on <br> Microsoft 365 A5-Abonnement (kostenpflichtige oder Testversion) <br> Microsoft 365 a3-Abonnement + das Microsoft 365 A5-Konformitäts-Add-on <br> Microsoft 365 a3-Abonnement + Microsoft 365 A5 Insider Risk Management-Add-on <br> Microsoft 365 G5-Abonnement (kostenpflichtige oder Testversion) <br> Microsoft 365 G5-Abonnement + das Microsoft 365 G5-Compliance-Add-on <br> Microsoft 365 G5-Abonnement + das Microsoft 365 G5-Insider Risiko Management-Add-on <br> Office 365 Enterprise E5-Abonnement (kostenpflichtige oder Testversion) <br> Office 365 A5-Abonnement (kostenpflichtige oder Testversion) <br> Office 365 Enterprise E3-Abonnement + das Office 365 Advanced Compliance-Add-on (nicht mehr für neue Abonnements verfügbar) |
+| Insider-Risikomanagement | Das Insider Risikomanagement minimiert interne Risiken, indem es Ihnen ermöglicht, böswillige und unbeabsichtigte Aktivitäten in Ihrer Organisation zu erkennen, zu untersuchen und zu handeln. | Microsoft 365 E5-Abonnement (kostenpflichtige oder Testversion) Microsoft 365 E3-Abonnement + das Microsoft 365 E5-Konformitäts-Add-on <br> Microsoft 365 E3-Abonnement + Microsoft 365 E5 Insider Risk Management-Add-on <br> Microsoft 365 A5-Abonnement (kostenpflichtige oder Testversion) <br> Microsoft 365 a3-Abonnement + das Microsoft 365 A5-Konformitäts-Add-on <br> Microsoft 365 a3-Abonnement + Microsoft 365 A5 Insider Risk Management-Add-on |
 | Informationsbarrieren | Informationsbarrieren ermöglichen es Ihnen, die Kommunikation und Zusammenarbeit zwischen zwei internen Gruppen einzuschränken, um zu verhindern, dass ein Interessenkonflikt in Ihrer Organisation auftritt.  | Microsoft 365 E5/a5 <br> Office 365 E5/a5 <br> Office 365 Advanced Compliance <br> Microsoft 365 Compliance E5/a5 <br> Microsoft 365 Insider Risk Management |
 | Verwaltung des privilegierten Zugriffs | Die privilegierte Zugriffsverwaltung ermöglicht eine granulare Zugriffssteuerung über privilegierte Exchange Online Administratoraufgaben in Office 365. Dies kann Ihre Organisation vor Angriffen schützen, bei denen vorhandene privilegierte Administratorkonten mit kontinuierlichem Zugang auf vertrauliche Daten oder kritische Konfigurationseinstellungen verwendet werden. | Microsoft 365 E5/a5 <br> Office 365 E5/a5 <br> Microsoft 365 E5/A5-Konformität <br> Microsoft 365 E5/A5 Information Protection and Governance |
 

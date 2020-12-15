@@ -1,7 +1,7 @@
 ---
-title: Simulieren eines Phishing-Angriffs mit Microsoft Defender für
-ms.author: daniha
-author: danihalfin
+title: Simulieren eines Phishing-Angriffs mit Microsoft Defender für Office 365
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
@@ -10,21 +10,21 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-description: In diesem Artikel erfahren Sie, wie Sie Phishing-Angriffe simulieren und Ihre Benutzer bei der Phishing-Prävention mit Angriffs Simulationstraining in Microsoft Defender für Office 365 Schulen.
-ms.openlocfilehash: 8f5f457f60c81fe961282f33bb8c37f4d9e27aab
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+description: Administratoren können erfahren, wie Sie Phishing-Angriffe simulieren und Ihre Benutzer auf Phishing-Verhinderung mithilfe von Angriffs Simulations Schulungen in Microsoft Defender für Office 365 Schulen.
+ms.openlocfilehash: 3707041067fd76ee9535d0dccf5cdfcb9d74fbd7
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616104"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667555"
 ---
 # <a name="simulate-a-phishing-attack"></a>Simulieren eines Phishing-Angriffs
 
-Angriffs Simulator-Schulung über Microsoft Defender für Office 365 Sie können gutartige Cyber-Angriffssimulationen in Ihrer Organisation ausführen, um Ihre Sicherheitsrichtlinien und-Methoden zu testen und die Mitarbeiter Ihrer Organisation zu Schulen, um Ihr Bewusstsein zu schärfen und ihre Anfälligkeit für Angriffe zu verringern. Im folgenden wird erläutert, wie Sie einen Phishing-Angriff mithilfe von Attack Simulator Training simulieren.
+Angriffs Simulator-Schulung in Microsoft Defender für Office 365 können Sie gutartige Cyberangriff-Simulationen in Ihrer Organisation ausführen, um Ihre Sicherheitsrichtlinien und-Methoden zu testen und Ihre Mitarbeiter auszubilden, um Ihr Bewusstsein zu schärfen und ihre Anfälligkeit für Angriffe zu verringern. Dieser Artikel führt Sie durch das Erstellen eines simulierten Phishing-Angriffs mithilfe von Attack Simulator Training.
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Um einen simulierten Phishing-Angriff zu starten, navigieren Sie zum [Microsoft 365 Security Center](https://security.microsoft.com/). Klicken Sie unter **e-Mail-& Zusammenarbeit** auf **Angriff Simulator** und wechseln Sie zur Registerkarte [**Simulationen**](https://security.microsoft.com/attacksimulator?viewid=simulations) .
+Um einen simulierten Phishing-Angriff zu starten, öffnen Sie das [Microsoft 365 Security Center](https://security.microsoft.com/), wechseln Sie zu **e-Mail & Zusammenarbeits-** \> **Angriffs Simulator**, und wechseln Sie zur Registerkarte [**Simulationen**](https://security.microsoft.com/attacksimulator?viewid=simulations) .
 
 Wählen Sie unter **Simulationen** **die Option + Simulation starten** aus.
 
@@ -35,15 +35,15 @@ Wählen Sie unter **Simulationen** **die Option + Simulation starten** aus.
 
 ## <a name="selecting-a-social-engineering-technique"></a>Auswählen einer Social Engineering-Technik
 
-Wählen Sie aus vier verschiedenen Techniken aus, die von der [Mitra ATT&ck® Framework](https://attack.mitre.org/techniques/enterprise/)kuratiert wurden. Für unterschiedliche Techniken stehen unterschiedliche Nutzlasten zur Verfügung.
+Wählen Sie aus vier verschiedenen Techniken aus, die von der [Mitra ATT&ck® Framework](https://attack.mitre.org/techniques/enterprise/)kuratiert wurden. Für verschiedene Techniken stehen unterschiedliche Nutzlasten zur Verfügung:
 
-- Die Erfassung von **Anmelde** Informationen versucht, Anmeldeinformationen von Mitarbeitern zu sammeln, indem Sie Sie in eine bekannte Website mit Eingabefeldern zum Übermitteln eines Benutzernamens und Kennworts eintragen.
-- **Schadsoftware** fügt eine böswillige Anlage zu einer Nachricht hinzu. Wenn diese Anlage geöffnet wird, führt Sie einen willkürlichen Code aus, der dem Angreifer dabei hilft, das Gerät des Ziels zu kompromittieren.
+- Die Erfassung von **Anmelde** Informationen versucht, Anmeldeinformationen zu sammeln, indem Benutzer zu einer bekannten Website mit Eingabefeldern übertragen werden, um einen Benutzernamen und ein Kennwort einzugeben.
+- **Schadsoftware** fügt eine böswillige Anlage zu einer Nachricht hinzu. Wenn der Benutzer die Anlage öffnet, wird willkürlicher Code ausgeführt, mit dem der Angreifer das Gerät des Ziels kompromittieren kann.
 - **Link in Attachment** ist eine Art der Hybriden Anmeldeinformationen-Ernte. Ein Angreifer fügt eine URL in eine e-Mail-Anlage ein. Die URL innerhalb der Anlage folgt dem gleichen Verfahren wie das Sammeln von Anmeldeinformationen.
-- **Mit Link zu Schadsoftware** wird ein beliebiger Code aus einer Datei ausgeführt, die auf einer bekannten Dateifreigabe Website gehostet wird. Ein Link zu dieser bösartigen Datei wird der Nachricht hinzugefügt, die an das Ziel gesendet wurde, und wenn Sie darauf klicken, wird die Datei ausgeführt, und der Angreifer kann das Ziel Gerät kompromittieren.
+- **Mit Link zu Schadsoftware** wird ein beliebiger Code aus einer Datei ausgeführt, die auf einem bekannten Dateifreigabedienst gehostet wird. Die Nachricht, die an den Benutzer gesendet wird, enthält einen Link zu dieser schädlichen Datei. Öffnen der Datei und unterstützen des Angreifers, das Gerät des Ziels zu gefährden.
 
 > [!TIP]
-> Durch Klicken auf **Details anzeigen** in der Beschreibung jeder Technik werden weitere Informationen zur Technik sowie die Simulationsschritte für diese Technik angezeigt.
+> Durch Klicken auf **Details anzeigen** in der Beschreibung jeder Technik werden weitere Informationen und die Simulationsschritte für die Technik angezeigt.
 >
 > ![Simulationsschritte für das Sammeln von Anmeldeinformationen im Angriffs Simulationstraining im Microsoft 365 Security Center](../../media/attack-sim-preview-sim-steps.png)
 
@@ -56,7 +56,7 @@ Als nächstes müssen Sie entweder eine Nutzlast aus dem bereits vorhandenen Nut
 Bei der Auswahl von Nutzlasten stehen Ihnen mehrere Datenpunkte zur Verfügung:
 
 - **Klickrate** zählt, wie viele Personen auf diese Nutzlast geklickt haben.
-- **Prognostizierte Kompromiss Rate** prognostiziert den Prozentsatz der Personen, die von dieser Nutzlast aufgrund historischer Daten für diese Nutzlast in Microsoft Defender für Office 365 Kunden kompromittiert werden.
+- **Prognostizierte Kompromiss Rate** prognostiziert, dass der Prozentsatz der Personen, die von dieser Nutzlast betroffen werden, basierend auf den Verlaufsdaten für die Nutzlast in Microsoft Defender für Office 365 Kunden beeinträchtigt wird.
 - **Gestartete Simulationen** zählt die Häufigkeit, mit der diese Nutzlast in anderen Simulationen verwendet wurde.
 - Die **Komplexität**, die über **Filter** verfügbar ist, wird basierend auf der Anzahl der Indikatoren innerhalb der Nutzlast berechnet, die der Hinweis darauf abzielt, dass es sich um einen Angriff handelt. Mehr Indikatoren führen zu einer geringeren Komplexität.
 - **Source**, verfügbar über **Filter**, gibt an, ob die Nutzlast auf Ihrem Mandanten erstellt wurde oder ein Bestandteil des bereits vorhandenen Payload-Katalogs (Global) von Microsoft ist.

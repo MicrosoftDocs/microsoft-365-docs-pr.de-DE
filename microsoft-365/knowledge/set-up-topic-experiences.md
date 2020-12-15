@@ -1,148 +1,147 @@
 ---
-title: 'Einrichten der Wissensverwaltung (Vorschau) '
-description: Einrichten der Wissensverwaltung
+title: Einrichten von Themen Erfahrungen in Microsoft 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.date: 8/1/2020
+ms.reviewer: nkokoye
 audience: admin
 ms.topic: article
 ms.service: o365-administration
-search.appverid: ''
+search.appverid: MET150
+localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-localization_priority: None
-ms.openlocfilehash: c7c30c0f8c1ec4cf8836547e2a23e1e2e6f4f783
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+description: Informationen zum Einrichten von Themen Erfahrungen in Microsoft 365
+ms.openlocfilehash: cc157463c8c85f25ba232c344294ef3e0fabba23
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48989000"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667967"
 ---
-# <a name="set-up-knowledge-management-preview"></a>Einrichten der Wissensverwaltung (Vorschau)
+# <a name="set-up-topic-experiences-in-microsoft-365"></a>Einrichten von Themen Erfahrungen in Microsoft 365
 
-> [!Note] 
-> Der Inhalt dieses Artikels ist für Project Cortex private Preview. [Erfahren Sie mehr über Project Cortex](https://aka.ms/projectcortex).
+Sie können das Microsoft 365 Admin Center verwenden, um [Themen Erfahrungen](knowledge-management-overview.md)einzurichten und zu konfigurieren. 
 
-Sie können das Microsoft 365 Admin Center verwenden, um die [Wissensverwaltung](knowledge-management-overview.md)einzurichten und zu konfigurieren. 
+Es ist wichtig, die beste Möglichkeit zum Einrichten und Konfigurieren von Themen in Ihrer Umgebung zu planen. Lesen Sie unbedingt [Plan Topic Experiences](plan-topic-experiences.md) , bevor Sie mit den Verfahren in diesem Artikel beginnen.
 
-> [!Important]
-> Es ist wichtig, die beste Methode zum Einrichten und Konfigurieren des Wissensmanagements in Ihrer Umgebung zu planen. Beispielsweise müssen Sie Überlegungen zu den folgenden Aspekten treffen:
-- Die SharePoint-Websites, die Sie für Themen analysieren möchten.
-- Die Benutzer, für die Sie Themen sichtbar machen möchten.
-- Die Benutzer, denen Sie Berechtigungen zum Verwalten von Themen im Themen Center erteilen möchten.
-- Die Benutzer, denen Sie Berechtigungen zum Erstellen oder Bearbeiten von Themen im Themen Center erteilen möchten.
-- Welchen Namen möchten Sie Ihrem Themen Center geben?
+Sie müssen ein globaler Administrator oder SharePoint-Administrator sein, um auf das Microsoft 365 Admin Center zuzugreifen und Themen Erfahrungen einzurichten.
 
-> [!Note]
-> Möglicherweise ist es hilfreich, Sicherheitsgruppen zu erstellen, um Ihren Benutzern die Berechtigungen zu erteilen, die zum Anzeigen von Themen, zum Verwalten des Themas und zum Erstellen und Bearbeiten von Themen erforderlich sind.
+## <a name="set-up-topic-experiences"></a>Einrichten von Themen Erfahrungen
 
-Ein Administrator kann [Änderungen an den ausgewählten Einstellungen auch jederzeit nach dem Setup](topic-experiences-discovery.md) über die Knowledge Management-Einstellungen im Microsoft 365 Admin Center vornehmen.
+So richten Sie Themen Erfahrungen in Microsoft 365 ein
 
-## <a name="requirements"></a>Anforderungen 
-Sie müssen über globale Administrator-oder SharePoint-Administratorberechtigungen verfügen, um auf das Microsoft 365 Admin Center zugreifen und organisatorische Wissens Aufgaben einrichten zu können.
+1. Wählen Sie im [Microsoft 365 Admin Center](https://admin.microsoft.com) **Setup** aus, und zeigen Sie dann den Abschnitt **Dateien und Inhalt** an.
+2. Klicken Sie im Abschnitt **Dateien und Inhalt** auf **Personen mit Wissen verbinden**.
 
-## <a name="set-up-your-knowledge-network"></a>Einrichten Ihres Wissensnetzwerks
+    ![Verbinden von Personen mit wissen](../media/admin-org-knowledge-options.png) 
 
-Das Einrichten Ihres Wissensnetzwerks führt Sie durch die folgenden Schritte:
+3. Klicken Sie auf der Seite **zum Verbinden von Benutzern mit Informationen** auf **Erste Schritte** , um Sie durch den Setupprozess zu führen.
 
-- Thema Discovery: Auswählen von Themen Quellen und Themen, die von der Suche ausgeschlossen werden sollen.
-- Thema Visibility: auswählen, wer Themen als Highlights anzeigen kann, in Such-und Themenseiten.
-- Thema Permissions: Auswählen der Personen, die Themen erstellen, bearbeiten und verwalten können.
-- Themen Center: Erstellen Ihres Themen Centers.
-- Überprüfung: überprüfen und Anwenden Ihrer Einstellungen.
+    ![Erste Schritte](../media/k-get-started.png) 
 
-So richten Sie Ihr Wissensnetzwerk ein:
+4. Auf der Seite **Wählen Sie aus, wie das Wissensnetzwerk Themen finden kann** , konfigurieren Sie die Themen Ermittlung. Wählen Sie im Abschnitt **SharePoint-Themen Quellen auswählen** aus, welche SharePoint-Websites während der Ermittlung als Quellen für Ihre Themen gecrawlt werden sollen. Wählen Sie zwischen:
+    - **Alle Websites**: alle SharePoint-Websites in Ihrer Organisation. Dazu gehören aktuelle und zukünftige Websites.
+    - **Alle, außer ausgewählte Websites**: Geben Sie die Namen der Websites ein, die Sie ausschließen möchten.  Sie können auch eine Liste der Websites hochladen, von denen Sie die Ermittlung deaktivieren möchten. In Zukunft erstellte Websites werden als Quellen für die Themen Ermittlung hinzugefügt. 
+    - **Nur ausgewählte Websites**: Geben Sie die Namen der Websites ein, die Sie einschließen möchten. Sie können auch eine Liste der Websites hochladen. In der Zukunft erstellte Websites werden nicht als Quellen für die Themen Ermittlung einbezogen.
+    - **Keine Websites**: keine SharePoint-Websites einschließen.
 
-1. Wählen Sie im Microsoft 365 Admin Center (admin.Microsoft.com) die Option **Setup** aus, und zeigen Sie dann den Abschnitt **organisatorisches Wissen** an.
-2. Klicken Sie im Abschnitt **organisatorisches Wissen** auf **Personen mit Wissen verbinden**.<br/>
-
-    ![Verbinden von Personen mit wissen](../media/content-understanding/admin-org-knowledge-options.png) </br>
-
-3. Klicken Sie auf der Seite **zum Verbinden von Benutzern mit Informationen** auf **Erste Schritte** , um Sie durch den Setupprozess zu führen.<br/>
-
-    ![Erste Schritte](../media/content-understanding/k-get-started.png) </br>
-
-4. Auf der Seite **Wählen Sie aus, wie das Wissensnetzwerk Themen finden kann** , konfigurieren Sie die Themen Ermittlung. Wählen Sie im Abschnitt **SharePoint-Themen Quellen auswählen** aus, welche SharePoint-Websites während der Ermittlung als Quellen für Ihre Themen gecrawlt werden sollen. Hierzu zählen Folgende:</br>
-    a. **Alle Websites** : alle SharePoint-Websites in Ihrem Mandanten. Dadurch werden aktuelle und zukünftige Websites erfasst.</br>
-    b. **Alle, außer ausgewählte Websites** : Geben Sie die Namen der Websites ein, die Sie ausschließen möchten.  Sie können auch eine Liste der Websites hochladen, von denen Sie die Ermittlung deaktivieren möchten. In Zukunft erstellte Websites werden als Quellen für die Themen Ermittlung hinzugefügt. </br>
-    c. **Nur ausgewählte Websites** : Geben Sie die Namen der Websites ein, die Sie einschließen möchten. Sie können auch eine Liste der Websites hochladen. In der Zukunft erstellte Websites werden nicht als Quellen für die Themen Ermittlung einbezogen. </br>
-
-    ![Auswählen der Suche nach Themen](../media/content-understanding/ksetup1.png) </br>
+    ![Auswählen der Suche nach Themen](../media/ksetup1.png) 
    
-5. Im Abschnitt **Themen nach Name ausschließen** können Sie auswählen, dass Themen Namen eingeschlossen werden sollen, die nicht in den ermittelten Ergebnissen enthalten sein sollen. Verwenden Sie diese Einstellung, um zu verhindern, dass vertrauliche Themen als Teil des Wissensnetzwerks einbezogen werden. Zu den Optionen gehören:</br>
-    a. **Keine Themen ausschließen** </br>
-    b. **Themen nach Namen ausschließen** : Wenn Sie Themen haben, die den Benutzern nicht als Teil des Wissensnetzwerks angezeigt werden sollen.</br>
+5. Im Abschnitt **Themen nach Name ausschließen** können Sie Namen von Themen hinzufügen, die Sie von der Themen Ermittlung ausschließen möchten. Verwenden Sie diese Einstellung, um zu verhindern, dass vertrauliche Informationen als Themen eingeschlossen werden. Mögliche Optionen:
+    - **Keine Themen ausschließen** 
+    - **Themen nach Namen ausschließen**
 
-    ![Themen ausschließen](../media/content-understanding/topics-excluded-by-name.png) </br>
+    ![Themen ausschließen](../media/topics-excluded-by-name.png) 
+
+    (Knowledge Manager können Themen im Themen Center nach der Ermittlung auch ausschließen.)
 
     #### <a name="how-to-exclude-topics-by-name"></a>So schließen Sie Themen nach Namen aus    
 
-    Wenn Sie Themen ausschließen müssen, wählen Sie nach dem auswählen **von Themen nach Namen ausschließen** **die Option CSV-Vorlage herunterladen** aus. Verwenden Sie die Excel. CSV-Vorlage, um eine Liste von Themen einzuschließen, die von den Ermittlungsergebnissen ausgeschlossen werden sollen.
+    Wenn Sie Themen ausschließen müssen, nachdem Sie **Themen nach Namen ausschließen** ausgewählt haben, wählen Sie die CSV-Vorlage herunterladen aus, und aktualisieren Sie Sie mit der Liste der Themen, die Sie aus ihren Ermittlungsergebnissen ausschließen möchten.
 
-    ![Themen in CSV-Vorlage ausschließen](../media/content-understanding/csv1.png) </br>
+    ![Themen in CSV-Vorlage ausschließen](../media/exclude-topics-csv.png) 
 
     Geben Sie in der CSV-Vorlage die folgenden Informationen zu den Themen ein, die Sie ausschließen möchten:
 
-    - **Name** : Geben Sie den Namen des Themas ein, das Sie ausschließen möchten. Sie können auf zwei Arten vorgehen:</br>
-        - Exakte Übereinstimmung: Sie können den genauen Namen oder das Akronym angeben (beispielsweise *contoso* oder *ATL* ).</br>
-        - Partielle Übereinstimmung: Sie können alle Themen ausschließen, die ein bestimmtes Wort enthalten.  Beispielsweise schließt *Bogen* alle Themen mit dem Wort *Bogen* in ihm aus, wie *Bogen Kreis* , *Plasma Schweißen* oder *Schulungs Bogen*. Beachten Sie, dass die Themen, in denen der Text als Teil eines Wortes eingeschlossen ist, wie etwa die *Architektur* , nicht ausgeschlossen werden.</br>
-    - **Expansion (optional)** : Wenn Sie ein Akronym ausschließen möchten, geben Sie die Wörter ein, für die die Abkürzung steht.</br>
-    - **MatchType-Exact/Partial** : Geben Sie an, ob es sich bei dem von Ihnen eingegebenen Namen um einen *genauen* oder *partiellen* Übereinstimmungs handelt.</br>
+    - **Name**: Geben Sie den Namen des Themas ein, das Sie ausschließen möchten. Sie können auf zwei Arten vorgehen:
+        - Exakte Übereinstimmung: Sie können den genauen Namen oder das Akronym angeben (beispielsweise *contoso* oder *ATL*).
+        - Partielle Übereinstimmung: Sie können alle Themen ausschließen, die ein bestimmtes Wort enthalten.  Beispielsweise schließt *Bogen* alle Themen mit dem Wort *Bogen* in ihm aus, wie *Bogen Kreis*, *Plasma Schweißen* oder *Schulungs Bogen*. Beachten Sie, dass die Themen, in denen der Text als Teil eines Wortes eingeschlossen ist, wie etwa die *Architektur*, nicht ausgeschlossen werden.
+    - **Steht für (optional)**: Wenn Sie ein Akronym ausschließen möchten, geben Sie die Wörter ein, für die die Abkürzung steht.
+    - **MatchType-Exact/Partial**: Geben Sie an, ob es sich bei dem von Ihnen eingegebenen Namen um einen *genauen* oder *partiellen* Übereinstimmungs handelt.
 
-    Nachdem Sie die CSV-Vorlagendatei abgeschlossen und gespeichert haben, wählen Sie **Durchsuchen** aus, um Sie zu suchen und auszuwählen.
+    Nachdem Sie die CSV-Datei abgeschlossen und gespeichert haben, wählen Sie **Durchsuchen** aus, um Sie zu suchen und auszuwählen.
     
-    Wählen Sie **Weiter** aus.</br>
+    Wählen Sie **Weiter** aus.
 
-6. Auf der Seite " **Wer kann Themen sehen" und "wo Sie diese anzeigen können** " Konfigurieren Sie die Sichtbarkeit des Themas. In der Liste der Benutzer, die **Themen in der Wissensnetzwerk Einstellung anzeigen können** , wählen Sie aus, wer Zugriff auf Themen Details haben soll, wie beispielsweise hervorgehobene Themen, Themenkarten, Themen Antworten auf der Suche und Themenseiten. Sie können Folgendes auswählen:</br>
-    a. **Jeder in Ihrer Organisation**</br>
-    b. **Nur ausgewählte Personen oder Sicherheitsgruppen**</br>
-    c. **Niemand**</br>
+6. Auf der Seite " **Wer kann Themen sehen" und "wo können Sie diese sehen** " wird die Sichtbarkeit des Themas konfiguriert. In der Liste der Benutzer, die **Themen in der Wissensnetzwerk Einstellung anzeigen können** , wählen Sie aus, wer Zugriff auf Themen Details haben soll, wie beispielsweise hervorgehobene Themen, Themenkarten, Themen Antworten auf der Suche und Themenseiten. Sie können Folgendes auswählen:
+    - **Jeder in meiner Organisation**
+    - **Nur ausgewählte Personen oder Sicherheitsgruppen**
+    - **Niemand**
 
-    ![Wer Themen sehen kann](../media/content-understanding/ksetup2.png) </br> 
+    ![Wer Themen sehen kann](../media/ksetup2.png)  
 
  > [!Note] 
- > Während Sie mit dieser Einstellung einen beliebigen Benutzer in Ihrer Organisation auswählen können, können nur Benutzer, denen Lizenzen für Wissensmanagement zugewiesen sind, Themen anzeigen. 
+ > Während diese Einstellung es Ihnen ermöglicht, einen beliebigen Benutzer in Ihrer Organisation auszuwählen, können nur Benutzer, denen die Lizenzen für ein Themen Erlebnis zugewiesen sind, Themen anzeigen.
 
-7. Wählen Sie auf der Seite **Berechtigungen für die Themen Verwaltung** aus, wer Themen erstellen, bearbeiten oder verwalten kann. Im Abschnitt **who can create and Edit topics** können Sie Folgendes auswählen:</br>
-    a. **Jeder in Ihrer Organisation**</br>
-    b. **Nur ausgewählte Personen oder Sicherheitsgruppen**</br>
-8. Im Abschnitt **Verwalten von Themen** können Sie Folgendes auswählen:</br>
-    a. **Jeder in Ihrer Organisation**</br>
-    b. **Ausgewählte Personen oder Sicherheitsgruppen**</br>
+7. Wählen Sie auf der Seite **Berechtigungen für die Themen Verwaltung** aus, wer Themen erstellen, bearbeiten oder verwalten kann. Im Abschnitt **who can create and Edit topics** können Sie Folgendes auswählen:
+    - **Jeder in meiner Organisation**
+    - **Nur ausgewählte Personen oder Sicherheitsgruppen**
+    - **Niemand**
 
-    ![Berechtigungen für die Themen Verwaltung](../media/content-understanding/ksetup3.png) </br>
+    ![Berechtigungen für die Thema Verwaltung, die Themen erstellen und bearbeiten können](../media/ksetup3.png) 
 
-    Wählen Sie **Weiter** aus.</br>
-9. Auf der Seite **Thema Center erstellen** können Sie Ihre Themen Center-Website erstellen, in der die Themenseiten angezeigt und Themen verwaltet werden können.  Geben Sie im Feld **Themen Center Name** einen Namen für Ihr Themen Center ein. Sie können optional eine kurze Beschreibung in das Feld **Website Beschreibung** eingeben. </br>
+8. Im Abschnitt **Verwalten von Themen** können Sie Folgendes auswählen:
+    - **Jeder in meiner Organisation**
+    - **Nur ausgewählte Personen oder Sicherheitsgruppen**
 
-Wählen Sie **Weiter** aus.</br>
+    ![Berechtigungen für die Themen Verwaltung](../media/km-setup-create-edit-topics.png) 
 
-   ![Wissens Center erstellen](../media/content-understanding/ksetup4.png) </br> 
+    Wählen Sie **Weiter** aus.
+
+9. Auf der Seite **Thema Center erstellen** können Sie Ihre Themen Center-Website erstellen, in der die Themenseiten angezeigt und Themen verwaltet werden können. Geben Sie im Feld **Websitename** einen Namen für Ihr Themen Center ein. Sie können optional eine kurze Beschreibung in das Feld **Beschreibung** eingeben. 
+
+Wählen Sie **Weiter** aus.
+
+   ![Wissens Center erstellen](../media/ksetup4.png)  
 
 10. Auf der Seite **Überprüfen und beenden** können Sie sich die ausgewählte Einstellung ansehen und Änderungen vornehmen. Wenn Sie mit Ihrer Auswahl zufrieden sind, wählen Sie **Aktivieren** aus.
 
-    ![Fertig stellen und überprüfen](../media/content-understanding/ksetup5.png) </br> 
-
-11. Die Seite **Wissensnetzwerk aktiviert** wird angezeigt und bestätigt, dass das System jetzt mit der Analyse der ausgewählten Websites für Themen beginnt und die Knowledge Center-Website erstellt. Wählen Sie **Fertig** aus.</br>
-
-    ![Aktiviert](../media/content-understanding/ksetup6.png) </br> 
+11. Die Seite **Wissensnetzwerk aktiviert** wird angezeigt und bestätigt, dass das System jetzt mit der Analyse der ausgewählten Websites für Themen beginnt und die Knowledge Center-Website erstellt. Wählen Sie **Fertig** aus.
 
 12. Sie kehren zur Seite " **Personen an Wissen verbinden** " zurück. Auf dieser Seite können Sie **Verwalten** auswählen, um Änderungen an Ihren Konfigurationseinstellungen vorzunehmen. 
 
-    ![Angewendete Einstellungen](../media/content-understanding/ksetup7.png) </br>   
+    ![Angewendete Einstellungen](../media/ksetup7.png)    
 
-> [!Note]
-> Nach dem Setup kann ein Administrator jederzeit [Änderungen an den ausgewählten Wissens Verwaltungseinstellungen vornehmen](topic-experiences-discovery.md) , indem er zu dieser Seite zurückkehrt.
+## <a name="assign-licenses"></a>Lizenzen zuweisen
 
+Nachdem Sie Themen Erfahrungen konfiguriert haben, müssen Sie Lizenzen für die Benutzer zuweisen, die Themen Erfahrungen verwenden werden. Nur Benutzer mit einer Lizenz können Informationen zu Themen wie Highlights, Themenkarten, Themenseiten und das Themen Center anzeigen. 
 
-## <a name="see-also"></a>Weitere Informationen:
+So weisen Sie Lizenzen zu
 
+1. Klicken Sie im Microsoft 365 Admin Center auf **Benutzer** > **Aktive Benutzer**.
 
+2. Wählen Sie die Benutzer aus, denen Sie eine Lizenz zuweisen möchten, und klicken Sie dann auf **Produktlizenzen verwalten**.
 
-  
+3. Wählen Sie **Weitere zuweisen** aus.
 
+4. Wählen Sie unter **Lizenzen** die Option **Themen Erfahrungen** aus.
 
+5. Stellen Sie sicher, dass unter **apps** die Option **Graph Connectors Search with Index** and **Topic Experiences** ausgewählt ist.
 
+    > [!div class="mx-imgBorder"]
+    > ![SharePoint Syntex-Lizenzen im Microsoft 365 Admin Center](../media/topic-experiences-licenses.png)
 
+6. Klicken Sie auf **Änderungen speichern**.
 
+## <a name="manage-topic-experiences"></a>Verwalten von Themen Erfahrungen
 
+Nachdem Sie Themen Erfahrungen eingerichtet haben, können Sie die Einstellungen ändern, die Sie während des Setups im [Microsoft 365 Admin Center](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement)ausgewählt haben. Siehe die folgenden Verweise:
+
+- [Verwalten der Themen Ermittlung in Microsoft 365](topic-experiences-discovery.md)
+- [Verwalten der Themen Sichtbarkeit in Microsoft 365](topic-experiences-knowledge-rules.md)
+- [Verwalten von Themen Berechtigungen in Microsoft 365](topic-experiences-user-permissions.md)
+- [Ändern des Namens des Themen Centers in Microsoft 365](topic-experiences-administration.md)
+
+## <a name="see-also"></a>Siehe auch
+
+[Wissensmanagement (Übersicht)](knowledge-management-overview.md)

@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: Exportieren Sie die Suchergebnisse aus einer Inhaltssuche im Microsoft 365 Compliance Center auf einen lokalen Computer. E-Mail-Ergebnisse werden als PST-Dateien exportiert. Inhalte aus SharePoint-und OneDrive für Unternehmen-Websites werden als systemeigene Office-Dokumente exportiert.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a697f5cf81022bf8d8122d0dd57c07ba8a578f0a
-ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
+ms.openlocfilehash: 3250690d6699e5d39f7fa5ae01a2733595340ca1
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49602052"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667788"
 ---
 # <a name="export-content-search-results"></a>Exportieren von Inhaltssuchergebnissen
 
@@ -191,7 +191,7 @@ Hier finden Sie weitere Informationen zum Exportieren von Suchergebnissen.
 
   - Sie können maximal 2 TB Daten aus einer einzelnen Inhaltssuche exportieren. Wenn die Suchergebnisse größer als 2 TB sind, sollten Sie die Verwendung von Datumsbereichen oder anderen Filtertypen verwenden, um die Gesamtgröße der Suchergebnisse zu verringern.
   
-  - Ihre Organisation kann maximal 2 TB Daten an einem einzigen Tag exportieren.
+  - Ihre Organisation kann maximal 2 TB Daten an einem einzigen Tag exportieren. Das Kontingent wird täglich um 12.00 Uhr UTC zurückgesetzt.
   
   - In Ihrer Organisation können maximal zehn Exporte gleichzeitig durchführen.
 

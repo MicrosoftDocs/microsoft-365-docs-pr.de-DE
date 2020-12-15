@@ -10,23 +10,23 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-description: In diesem Artikel erfahren Sie, wie Sie benutzerdefinierte Nutzlast für die Angriffs Simulations Schulung in Microsoft Defender für Office 365 erstellen.
-ms.openlocfilehash: a8366e6cbf703ef1e1a14e216ada71200668cd14
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+description: Administratoren können erfahren, wie Sie benutzerdefinierte Nutzlasten für die Angriffs Simulations Schulung in Microsoft Defender für Office 365 erstellen.
+ms.openlocfilehash: c42090634f6fa9500ae4c3e781b49b607ee928f5
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616272"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667504"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>Erstellen einer benutzerdefinierten Nutzlast für Angriffssimulationsschulungen
 
-Microsoft bietet einen robusten Nutz Last Katalog für verschiedene Social Engineering-Techniken, um mit Ihrem Angriffs Simulationstraining zu koppeln. Möglicherweise möchten Sie jedoch benutzerdefinierte Nutzlasten erstellen, die für Ihre Organisation besser verwendet werden. Im folgenden wird beschrieben, wie Sie eine Nutzlast in Angriffs Simulations Schulungen über Microsoft Defender für Office 365 erstellen.
+Microsoft bietet einen robusten Nutz Last Katalog für verschiedene Social Engineering-Techniken, um mit Ihrem Angriffs Simulationstraining zu koppeln. Möglicherweise möchten Sie jedoch benutzerdefinierte Nutzlasten erstellen, die für Ihre Organisation besser verwendet werden. In diesem Artikel wird beschrieben, wie Sie eine Nutzlast in Attack Simulation Training in Microsoft Defender für Office 365 erstellen.
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Sie können eine Nutzlast erstellen, indem Sie auf der [Registerkarte dedizierte **Nutzlasten**](https://security.microsoft.com/attacksimulator?viewid=payload) oder im [Simulations Erstellungs-Assistenten](attack-simulation-training.md#selecting-a-payload)auf **Nutzlast erstellen** klicken.
 
-Im ersten Schritt des Assistenten können Sie einen Payload-Typ auswählen. **Derzeit sind nur e-Mails verfügbar**.
+Im ersten Schritt des Assistenten können Sie einen Payload-Typ auswählen. **Derzeit ist nur e-Mail verfügbar**.
 
 Wählen Sie als nächstes eine zugehörige Technik aus. Weitere Informationen finden Sie unter Techniken bei [der Auswahl einer Social Engineering-Technik](attack-simulation-training.md#selecting-a-social-engineering-technique).
 
@@ -39,12 +39,12 @@ Jetzt ist es an der Zeit, Ihre Nutzlast zu erstellen. Geben Sie den Namen des Ab
 > [!TIP]
 > Sie können eine interne e-Mail-Adresse für den Absender Ihrer Nutzlast auswählen, sodass die Nutzlast als von einem anderen Mitarbeiter des Unternehmens angezeigt wird. Dadurch wird die Anfälligkeit für die Nutzlast erhöht, und die Mitarbeiter werden bei der Gefahr interner Bedrohungen unterrichtet.
 
-Ein Rich-Text-Editor steht zur Verfügung, um Ihre Nutzlast zu erstellen. Sie können auch eine zuvor erstellte e-Mail importieren. Wenn Sie den Textkörper der e-Mail strukturieren, nutzen Sie die **dynamischen Tags** , um die e-Mail an Ihre Ziele zu personalisieren. Klicken Sie auf **Phishing-Link** , um die zuvor ausgewählte Phishing-URL in den Textkörper der e-Mail einzufügen.
+Ein Rich-Text-Editor steht zur Verfügung, um Ihre Nutzlast zu erstellen. Sie können auch eine e-Mail importieren, die Sie zuvor erstellt haben. Wenn Sie den Textkörper der e-Mail erstellen, nutzen Sie die **dynamischen Tags** , um die e-Mail an Ihre Ziele zu personalisieren. Klicken Sie auf **Phishing-Link** , um die zuvor ausgewählte Phishing-URL in den Textkörper der Nachricht einzufügen.
 
 ![Phishing-Link und dynamische Tags, die in der Nutzlast-Erstellung für Microsoft Defender für Office 365 hervorgehoben wurden](../../media/attack-sim-preview-payload-email-body.png)
 
 > [!TIP]
-> Wenn Sie sich etwas Zeit sparen möchten, aktivieren Sie die Option zum **Ersetzen aller Links in der e-Mail-Nachricht durch den Phishing-Link**.
+> Um Zeit zu sparen, schalten Sie die Option zum **Ersetzen aller Links in der e-Mail-Nachricht durch den Phishing-Link** ein.
 
 Nachdem Sie die Nutzlast nach Ihren Wünschen gebaut haben, klicken Sie auf **weiter**.
 
@@ -60,7 +60,7 @@ Fügen Sie eine benutzerdefinierte Beschreibung hinzu, um den Indikator zu besch
 
 ## <a name="review-payload"></a>Überprüfen der Nutzlast
 
-Sie haben die Erstellung Ihrer Nutzlast abgeschlossen. Jetzt ist es an der Zeit, die Details zu überprüfen und eine Vorschau Ihrer Nutzlast anzuzeigen. In der Vorschau sind alle von Ihnen erstellten Indikatoren enthalten. Sie können die einzelnen Teile der Nutzlast in diesem Schritt bearbeiten. Sobald Sie zufrieden sind, **senden** Sie Ihre Nutzlast.
+Sie haben die Erstellung Ihrer Nutzlast abgeschlossen. Jetzt ist es an der Zeit, die Details zu überprüfen und eine Vorschau Ihrer Nutzlast anzuzeigen. Die Vorschau enthält alle Indikatoren, die Sie erstellt haben. Sie können die einzelnen Teile der Nutzlast in diesem Schritt bearbeiten. Sobald Sie zufrieden sind, **senden** Sie Ihre Nutzlast.
 
 > [!IMPORTANT]
-> Die von Ihnen erstellten Nutzdaten haben **Mandanten** als Quelle festgelegt. Achten Sie beim Auswählen von Nutzdaten darauf, dass kein **Mandant** herausgefiltert ist.
+> Die von Ihnen erstellten Nutzdaten haben einen **Mandanten** als Quelle. Stellen Sie beim Auswählen von Nutzdaten sicher, dass Sie den **Mandanten** nicht filtern.

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie gleichzeitig mehrere Benutzer hinzufügen und Lizenzen für Microsoft 365 zuweisen können.
 ms.date: 07/01/2020
-ms.openlocfilehash: 95f84ead009b7510699e467bf5f12bf32d8097d8
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
-ms.translationtype: HT
+ms.openlocfilehash: 5df0db1cb782cc55bcf3e2b599430a98ea88750c
+ms.sourcegitcommit: 8252377f63de188d32ed1ccd37540d92cba3cb65
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948796"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49670995"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Gleichzeitiges Hinzufügen von Benutzern und Zuweisen von Lizenzen
 
@@ -41,7 +41,7 @@ Jede Person in Ihrem Team benötigt ein Benutzerkonto, um sich bei [Microsoft 3
 
 ## <a name="before-you-begin"></a>Vorbereitung
 
-Sie müssen ein globaler, Lizenz- oder Benutzeradministrator sein, um Benutzer hinzufügen und Lizenzen zuweisen zu können. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
+Zum Hinzufügen von Benutzern und Zuweisen von Lizenzen müssen Sie ein globaler, eine Lizenz oder ein Benutzer Administrator sein. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="watch-add-users-in-the-admin-center"></a>Video: Hinzufügen von Benutzern im Admin Center
 

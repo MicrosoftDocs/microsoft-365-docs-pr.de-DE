@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 86cc32cf395f2216eb3e167e372d1225734c4c28
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 00fcc6514679868066ef88b0c9bc4a485d032528
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842632"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667637"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -71,11 +71,22 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `AttachmentCount` | int | Anzahl der Anlagen in der E-Mail |
 | `UrlCount` | int | Anzahl der eingebetteten URLs in der E-Mail |
 | `EmailLanguage` | string | Erkannte Sprache des E-Mail-Inhalts |
+| `OrgLevelAction` | Zeichenfolge | Auf der e-Mail-Adresse ausgeführte Aktion als Reaktion auf Übereinstimmungen mit einer auf Organisationsebene definierten Richtlinie |
+| `OrgLevelPolicy` | Zeichenfolge | Organisationsrichtlinie, die die in der e-Mail ausgeführte Aktion ausgelöst hat |
+| `UserLevelAction` | Zeichenfolge | Aktion, die auf die e-Mail-Nachricht als Reaktion auf Übereinstimmungen mit einer vom Empfänger definierten Postfachrichtlinie angewendet wird |
+| `UserLevelPolicy` | Zeichenfolge | Endbenutzer-Postfachrichtlinie, die die in der e-Mail ausgeführte Aktion ausgelöst hat |
+| `Connectors` | Zeichenfolge | Benutzerdefinierte Anweisungen zur Definition des Organisations-e-Mail-Flusses und der Weiterleitung der e-Mail |
+| `SenderDisplayName` | Zeichenfolge | Name des Absenders, der im Adressbuch angezeigt wird, normalerweise eine Kombination aus einem bestimmten oder Vornamen, einer mittleren Initiale und einem Nachnamen oder Familiennamen |
+| `SenderObjectId` | Zeichenfolge |Eindeutiger Bezeichner für das Konto des Absenders in Azure AD |
+| `ThreatTypes` | Zeichenfolge | Urteil aus dem e-Mail-Filter Stapel, ob die e-Mail Malware, Phishing oder andere Bedrohungen enthält |
+| `ThreatNames` | Zeichenfolge |Erkennungsname für Schadsoftware oder andere gefundene Bedrohungen |
+| `DetectionMethods` | Zeichenfolge | Methoden zum Erkennen von Schadsoftware, Phishing oder anderen Bedrohungen, die in der e-Mail gefunden werden |
+
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
 - [Lernen der Abfragesprache](advanced-hunting-query-language.md)
 - [Verwenden freigegebener Abfragen](advanced-hunting-shared-queries.md)
-- [Suchen auf Geräten, in E-Mails, Apps und Identitäten](advanced-hunting-query-emails-devices.md)
+- [Suche über Geräte, E-Mails, Apps und Identitäten hinweg](advanced-hunting-query-emails-devices.md)
 - [Grundlegendes zum Schema](advanced-hunting-schema-tables.md)
 - [Anwenden bewährter Methoden für Abfragen](advanced-hunting-best-practices.md)

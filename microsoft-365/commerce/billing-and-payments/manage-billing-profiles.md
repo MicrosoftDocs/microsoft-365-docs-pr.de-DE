@@ -1,5 +1,5 @@
 ---
-title: Verwalten von Abrechnungsprofilen
+title: Grundlegendes zu Abrechnungs Profilen
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -12,25 +12,27 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
+- M365-subscription-management
+- Adm_O365
+ms.custom:
+- AdminSurgePortfolio
+- Commerce
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Rechnungen durch Abrechnungsprofile unterstützt werden.
-keywords: Abrechnungsprofil, Rechnungen, Gebühren, verwaltete Gebühren
-ms.openlocfilehash: de6d6cd65d9e83e7211bcdc33f1774aaec3d1729
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 708096b624caa9c23a40df4842ccfce856db048d
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638447"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667775"
 ---
-# <a name="manage-billing-profiles"></a>Verwalten von Abrechnungsprofilen
+# <a name="understand-billing-profiles"></a>Grundlegendes zu Abrechnungs Profilen
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
@@ -63,7 +65,7 @@ Rollen in Abrechnungs Profilen besitzen Berechtigungen zum Steuern von Käufen s
 
 1. Gehen Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Rechnungen & Zahlungen</a>.
 
-2. Wählen Sie **Abrechnungsprofile**aus, und wählen Sie dann ein Abrechnungsprofil aus der Liste aus.
+2. Wählen Sie **Abrechnungsprofile** aus, und wählen Sie dann ein Abrechnungsprofil aus der Liste aus.
 
     - Auf der Registerkarte **Übersicht** können Sie Abrechnungsprofil Details bearbeiten und das Senden einer Rechnung per e-Mail aktivieren oder deaktivieren.
 

@@ -1,143 +1,97 @@
 ---
-title: 'Verwalten Ihres Wissens Verwaltungsnetzwerks (Vorschau) '
-description: Einrichten der Wissensverwaltung
+title: Verwalten der Themen Ermittlung in Microsoft 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.date: 08/01/2020
+ms.reviewer: nkokoye
 audience: admin
 ms.topic: article
 ms.service: o365-administration
-search.appverid: ''
+search.appverid: MET150
+localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-localization_priority: None
-ms.openlocfilehash: 265816a8d3d04b8d10b529f1ea1a0b658aa2931d
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+description: Erfahren Sie, wie Sie die Themen Ermittlung in Microsoft 365 verwalten.
+ms.openlocfilehash: 035fb74f1989dc7ef5b7fcf8e9c6d59b63cf2b42
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48989010"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667870"
 ---
-# <a name="manage-your-knowledge-management-network-preview"></a>Verwalten Ihres Wissens Verwaltungsnetzwerks (Vorschau)
+# <a name="manage-topic-discovery-in-microsoft-365"></a>Verwalten der Themen Ermittlung in Microsoft 365
 
-> [!Note] 
-> Der Inhalt dieses Artikels ist für Project Cortex private Preview. [Erfahren Sie mehr über Project Cortex](https://aka.ms/projectcortex).
+Sie können Themen Ermittlungs Einstellungen im [Microsoft 365 Admin Center](https://admin.microsoft.com)verwalten. Sie müssen ein globaler Administrator oder SharePoint-Administrator sein, um diese Aufgaben ausführen zu können.
 
+## <a name="to-access-topics-management-settings"></a>So greifen Sie auf Themen Verwaltungseinstellungen zu:
 
-Nachdem Sie das [Knowledge Management eingerichtet](set-up-topic-experiences.md)haben, kann ein Administrator zu jeder Zeit Anpassungen an Ihren Konfigurationseinstellungen über das Microsoft 365 Admin Center vornehmen.
+1. Klicken Sie im Microsoft 365 Admin Center auf **Einstellungen** und dann auf **org-Einstellungen**.
+2. Klicken Sie auf der Registerkarte **Dienste** auf **Wissensnetzwerk**.
 
-Beispielsweise müssen Sie die Einstellungen für Folgendes anpassen:
-- Hinzufügen von neuen SharePoint-Quellen zu Minen Themen.
-- Ändern der Benutzer, die auf Themen zugreifen können
-- Ändern Sie, welche Benutzerberechtigungen für Aufgaben im Themen Center haben.
-- Ändern des Namens Ihres Themen Centers
+    ![Verbinden von Personen mit wissen](../media/admin-org-knowledge-options-completed.png) 
 
+3. Wählen Sie die Registerkarte **Thema Discovery** aus. In den folgenden Abschnitten finden Sie Informationen zu den einzelnen Einstellungen.
 
-## <a name="requirements"></a>Anforderungen 
-Sie müssen über globale Administrator-oder SharePoint-Administratorberechtigungen verfügen, um auf das Microsoft 365 Admin Center zugreifen und organisatorische Wissens Aufgaben verwalten zu können.
+    ![Wissen-Netzwerk-Einstellungen](../media/knowledge-network-settings-topic-discovery.png) 
 
+## <a name="select-sharepoint-topic-sources"></a>Auswählen von SharePoint-Themen Quellen
 
-## <a name="to-access-knowledge-management-settings"></a>So greifen Sie auf Wissens Verwaltungseinstellungen zu:
+Sie können die SharePoint-Websites in Ihrer Organisation ändern, die nach Themen durchforstet werden.
 
-1. Wählen Sie im Microsoft 365 Admin Center die Option **Setup** aus, und zeigen Sie dann den Abschnitt **organisatorisches Wissen** an.
-2. Klicken Sie im Abschnitt **organisatorisches Wissen** auf **Personen mit Wissen verbinden**.<br/>
+Wenn Sie eine bestimmte Liste von Websites einschließen oder ausschließen möchten, können Sie die folgende CSV-Vorlage verwenden:
 
-    ![Verbinden von Personen mit wissen](../media/content-understanding/admin-org-knowledge-options.png) </br>
+``` csv
+Site name,URL
+```
 
-3. Wählen Sie auf der Seite mit den **Informationen zum Benutzer verbinden** die Option **Manage** aus, um den Bereich **Wissensnetzwerk Einstellungen** zu öffnen.<br/>
+Wenn Sie Websites mithilfe der Websiteauswahl hinzufügen, werden Sie der vorhandenen Liste der einzuschließenden oder auszuschließenden Websites hinzugefügt. Wenn Sie eine CSV-Datei hochladen, werden alle vorhandenen Listen überschrieben. Wenn Sie zuvor bestimmte Websites einbezogen oder ausgeschlossen haben, können Sie die Liste als CSV-Datei herunterladen, Änderungen vornehmen und die neue Liste hochladen.
 
-    ![Wissen-Netzwerk-Einstellungen](../media/content-understanding/knowledge-network-settings.png) </br>
-
-## <a name="change-how-the-knowledge-network-can-find-topics"></a>Ändern, wie das Wissensnetzwerk Themen finden kann
-
-Wählen Sie die Registerkarte **Thema Ermittlung** aus, wenn Sie Ihre Auswahlmöglichkeiten für SharePoint-Themen Quellen aktualisieren möchten. Mit dieser Einstellung können Sie die SharePoint-Websites in Ihrem Mandanten auswählen, die durchforstet und für Themen abgebaut werden.
+So wählen Sie Websites für die Themen Ermittlung aus
 
 1. Wählen Sie auf der Registerkarte **Thema Discovery** unter **SharePoint-Themen Quellen auswählen** die Option **Bearbeiten** aus.
-2. Wählen Sie auf der Seite **SharePoint-Themen Quellen auswählen** aus, welche SharePoint-Websites während der Ermittlung als Quellen für Ihre Themen gecrawlt werden sollen. Hierzu zählen Folgende:</br>
-    a. **Alle Websites** : alle SharePoint-Websites in Ihrem Mandanten. Dadurch werden aktuelle und zukünftige Websites erfasst.</br>
-    b. **Alle, außer ausgewählte Websites** : Geben Sie die Namen der Websites ein, die Sie ausschließen möchten.  Sie können auch eine Liste der Websites hochladen, für die Sie die Ermittlung deaktivieren möchten. In der Zukunft erstellte Websites werden als Quellen für die Themen Ermittlung hinzugefügt. </br>
-    c. **Nur ausgewählte Websites** : Geben Sie die Namen der Websites ein, die Sie einschließen möchten. Sie können auch eine Liste der Websites hochladen. In der Zukunft erstellte Websites werden nicht als Quellen für die Themen Ermittlung einbezogen. </br>
+2. Wählen Sie auf der Seite **SharePoint-Themen Quellen auswählen** aus, welche SharePoint-Websites während der Ermittlung als Quellen für Ihre Themen gecrawlt werden sollen. Hierzu zählen Folgende:
+    - **Alle Websites**: alle SharePoint-Websites in Ihrem Mandanten. Dadurch werden aktuelle und zukünftige Websites erfasst.
+    - **Alle, außer ausgewählte Websites**: Geben Sie die Namen der Websites ein, die Sie ausschließen möchten.  Sie können auch eine Liste der Websites hochladen, für die Sie die Ermittlung deaktivieren möchten. In der Zukunft erstellte Websites werden als Quellen für die Themen Ermittlung hinzugefügt. 
+    - **Nur ausgewählte Websites**: Geben Sie die Namen der Websites ein, die Sie einschließen möchten. Sie können auch eine Liste der Websites hochladen. In der Zukunft erstellte Websites werden nicht als Quellen für die Themen Ermittlung einbezogen.
+    - **Keine Websites**: Themen werden nicht automatisch generiert oder mit SharePoint-Inhalten aktualisiert. Vorhandene Themen verbleiben im Themen Center.
 
-    ![Auswählen der Suche nach Themen](../media/content-understanding/k-manage-select-topic-source.png) </br>
+    ![Screenshot der SharePoint-Themen Quellen-Benutzeroberfläche](../media/k-manage-select-topic-source.png)
    
-    Wenn Sie über eine Reihe von Websites verfügen, die Sie ausschließen möchten (wenn Sie **Alle auswählen, außer ausgewählte Websites** ) oder einbeziehen (wenn Sie **nur ausgewählte Websites** ausgewählt haben), können Sie eine CSV-Datei mit den Websitenamen und-URLs hochladen. Sie können die Option **Download Site Template. CSV** auswählen, wenn Sie die CSV-Vorlagendatei verwenden möchten.
-
 3. Klicken Sie auf **Speichern**.
 
-##  <a name="change-who-can-see-topics-in-your-organization"></a>Ändern der Personen, die Themen in Ihrer Organisation anzeigen können
+## <a name="exclude-topics-by-name"></a>Themen nach Namen ausschließen
 
-Wählen Sie die Registerkarte **Thema Ermittlung** aus, wenn Sie aktualisieren möchten, wer in Ihrer Organisation entdeckte Themen in Suchergebnissen sehen kann und wann Themen in Inhalten wie SharePoint-Seiten hervorgehoben werden.
+Sie können Themen aus der Ermittlung ausschließen, indem Sie eine Liste mithilfe einer CSV-Datei hochladen. Wenn Sie Themen zuvor ausgeschlossen haben, können Sie die CSV-Datei herunterladen, Änderungen vornehmen und erneut hochladen.
 
-1. Wählen Sie auf der Registerkarte **Thema Discovery** unter **wer Themen im Wissensnetzwerk anzeigen kann die** Option **Bearbeiten** aus.
-2. Auf der Seite " **Wer kann Themen auf der Wissensnetzwerk Seite sehen** " wählen Sie aus, wer Zugriff auf Themen Details haben soll, wie beispielsweise hervorgehobene Themen, Themenkarten, Themen Antworten auf der Suche und Themenseiten. Sie können Folgendes auswählen:</br>
-    a. **Jeder in Ihrer Organisation**</br>
-    b. **Nur ausgewählte Personen oder Sicherheitsgruppen**</br>
-    c. **Niemand**</br>
+1. Wählen Sie auf der Registerkarte **Thema Discovery** unter **Themen ausschließen** die Option **Bearbeiten** aus.
+2. Klicken Sie auf **Themen nach Namen ausschließen**.
+3. Wenn Sie eine Liste erstellen möchten, laden Sie die CSV-Vorlage herunter, und fügen Sie die auszuschließenden Themen hinzu (siehe *Arbeiten mit der CSV-Vorlage* unten). Wenn die Datei verfügbar ist, klicken Sie auf **Durchsuchen** , und laden Sie die Datei hoch. Wenn eine Liste vorhanden ist, können Sie die CSV-Datei herunterladen, die die Liste enthält.
+4. Klicken Sie auf **Speichern**.
 
-    ![Wer Themen sehen kann](../media/content-understanding/k-manage-who-can-see-topics.png) </br> 
-3. Klicken Sie auf **Speichern**.  
- 
-> [!Note] 
-> Während Sie mit dieser Einstellung einen beliebigen Benutzer in Ihrer Organisation auswählen können, können nur Benutzer, denen Lizenzen für Wissensmanagement zugewiesen sind, Themen anzeigen.
+    ![Screenshot der Benutzeroberfläche zum Ausschließen von Themen](../media/km-manage-exclude-topics.png)
 
-## <a name="change-who-has-permissions-to-do-tasks-on-the-topic-center"></a>Ändern der Berechtigungen für Aufgaben im Themen Center
+### <a name="working-with-the-csv-template"></a>Arbeiten mit der CSV-Vorlage
 
-Wählen Sie die Registerkarte **Thema Berechtigungen** aus, wenn Sie aktualisieren möchten, wer über Berechtigungen für Folgendes auf der Seite "Themen Center" verfügt:
+Sie können die CSV-Vorlage unten kopieren:
 
-- Die Benutzer können Themen erstellen und bearbeiten: Erstellen Sie neue Themen, die während der Suche nicht gefunden wurden, oder bearbeiten Sie vorhandene Themenseiten Details.
-- Welche Benutzer Themen verwalten können: bestätigen oder ablehnen erkannter Themen.
+``` csv
+Name (required),Expansion,MatchType- Exact/Partial (required)
+```
 
-So aktualisieren Sie die Benutzer, die Berechtigungen zum Erstellen und Bearbeiten von Themen haben:
+Geben Sie in der CSV-Vorlage die folgenden Informationen zu den Themen ein, die Sie ausschließen möchten:
 
-1. Wählen Sie auf der Registerkarte **Thema Berechtigungen** unter **Wer kann Themen erstellen und bearbeiten** aus die Option **Bearbeiten** aus.</br>
-2. Auf der Seite für die **Erstellung und Bearbeitung von Themen** können Sie Folgendes auswählen:</br>
-    a. **Jeder in Ihrer Organisation**</br>
-    b. **Nur ausgewählte Personen oder Sicherheitsgruppen**</br>
+- **Name**: Geben Sie den Namen des Themas ein, das Sie ausschließen möchten. Sie können auf zwei Arten vorgehen:
+    - Exakte Übereinstimmung: Sie können den genauen Namen oder das Akronym angeben (beispielsweise *contoso* oder *ATL*).
+    - Partielle Übereinstimmung: Sie können alle Themen ausschließen, die ein bestimmtes Wort enthalten.  Beispielsweise schließt *Bogen* alle Themen mit dem Wort *Bogen* in ihm aus, wie *Bogen Kreis*, *Plasma Schweißen* oder *Schulungs Bogen*. Beachten Sie, dass die Themen, in denen der Text als Teil eines Wortes eingeschlossen ist, wie etwa die *Architektur*, nicht ausgeschlossen werden.
+- **Steht für (optional)**: Wenn Sie ein Akronym ausschließen möchten, geben Sie die Wörter ein, für die die Abkürzung steht.
+- **MatchType-Exact/Partial**: Geben Sie an, ob es sich bei dem von Ihnen eingegebenen Namen um einen *genauen* oder *partiellen* Übereinstimmungs handelt.
 
-    ![Erstellen und Bearbeiten von Themen](../media/content-understanding/k-manage-who-can-create-and-edit.png) </br> 
+    ![Themen in CSV-Vorlage ausschließen](../media/exclude-topics-csv.png) 
 
-3. Klicken Sie auf **Speichern**.</br>
+## <a name="see-also"></a>Siehe auch
 
-So aktualisieren Sie, wer über Berechtigungen zum Verwalten von Themen verfügt:
+[Verwalten der Themen Sichtbarkeit in Microsoft 365](topic-experiences-knowledge-rules.md)
 
-1. Wählen Sie auf der Registerkarte **Thema Berechtigungen** unter **Benutzer können Themen verwalten die** Option **Bearbeiten** aus.</br>
-2. Auf der Seite **Themen, die Themen verwalten können** , können Sie Folgendes auswählen:</br>
-    a. **Jeder in Ihrer Organisation**</br>
-    b. **Ausgewählte Personen oder Sicherheitsgruppen**</br>
+[Verwalten von Themen Berechtigungen in Microsoft 365](topic-experiences-user-permissions.md)
 
-    ![Verwalten von Themen](../media/content-understanding/k-manage-who-can-manage-topics.png) </br> 
-
-3. Klicken Sie auf **Speichern**.</br>
-
-
-##  <a name="update-your-topic-center-name"></a>Aktualisieren des Namens des Themen Centers
-
-Wählen Sie die Registerkarte **Topic Center** aus, wenn Sie den Namen Ihres Themen Centers aktualisieren möchten. 
-
-1. Wählen Sie auf der Registerkarte **Themen Center** unter **Name des Themas** " **Bearbeiten** " aus.
-2. Geben Sie auf der Seite **Themen Center Namen bearbeiten** im Feld **Themen Center Name** den neuen Namen für Ihr Themen Center ein.
-3. Wählen Sie **Speichern** aus.
-
-    ![Bearbeiten des Themen Center namens](../media/content-understanding/manage-topic-center-name.png) </br> 
-
-
-
-
-
-
-
-
-
-
-
-## <a name="see-also"></a>Weitere Informationen:
-
-
-
-  
-
-
-
-
-
+[Ändern des Namens des Themen Centers in Microsoft 365](topic-experiences-administration.md)
 

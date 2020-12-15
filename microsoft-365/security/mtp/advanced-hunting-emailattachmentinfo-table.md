@@ -19,12 +19,12 @@ mms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 87ebf4ca0ff773dd5622097385173f538d990afc
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 6d88303b34f78abc857e9aec749bf2f58090f43a
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847476"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667649"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -52,11 +52,15 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `SHA256` | string | SHA-256 der Datei, auf die die aufgezeichnete Aktion angewendet wurde. Dieses Feld wird in der Regel nicht ausgefüllt – Verwenden Sie die SHA1-Spalte, wenn verfügbar. |
 | `MalwareFilterVerdict` | string | Bewertung des E-Mail-Filterstapels, ob die E-Mail Schadsoftware enthält: Schadsoftware, keine Schadsoftware |
 | `MalwareDetectionMethod` | string | Methode zum Erkennen von Schadsoftware in der e-Mail: Antischadsoftware-Modul, Datei Zuverlässigkeit, sichere Anlagen |
+| `SenderDisplayName` | Zeichenfolge | Name des Absenders, der im Adressbuch angezeigt wird, normalerweise eine Kombination aus einem bestimmten oder Vornamen, einer mittleren Initiale und einem Nachnamen oder Familiennamen |
+| `SenderObjectId` | Zeichenfolge | Eindeutiger Bezeichner für das Konto des Absenders in Azure AD |
+| `ThreatTypes` | Zeichenfolge | Urteil aus dem e-Mail-Filter Stapel, ob die e-Mail Malware, Phishing oder andere Bedrohungen enthält |
+| `ThreatNames` | Zeichenfolge | Erkennungsname für Schadsoftware oder andere gefundene Bedrohungen |
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
 - [Lernen der Abfragesprache](advanced-hunting-query-language.md)
 - [Verwenden freigegebener Abfragen](advanced-hunting-shared-queries.md)
-- [Suchen auf Geräten, in E-Mails, Apps und Identitäten](advanced-hunting-query-emails-devices.md)
+- [Suche über Geräte, E-Mails, Apps und Identitäten hinweg](advanced-hunting-query-emails-devices.md)
 - [Grundlegendes zum Schema](advanced-hunting-schema-tables.md)
 - [Anwenden bewährter Methoden für Abfragen](advanced-hunting-best-practices.md)
