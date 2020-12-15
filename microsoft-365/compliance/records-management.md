@@ -46,9 +46,9 @@ Verwenden Sie die folgenden Funktionen zur Unterstützung Ihrer Datensatzverwalt
 
 - **Überprüfen und validieren Sie die Disposition** mit [Dispositionsüberprüfungen](disposition.md#disposition-reviews) und Nachweis der [Eintragslöschung](disposition.md#disposition-of-records).
 
-- **Exportieren Sie Informationen zu allen Elementen** , die mit der [Exportoption](disposition.md#filter-and-export-the-views) verworfen wurden.
+- **Exportieren Sie Informationen zu allen Elementen**, die mit der [Exportoption](disposition.md#filter-and-export-the-views) verworfen wurden.
 
-- **Legen Sie spezifische Berechtigungen für Datensatzverwalterfunktionen in Ihrer Organisation fest** , um [über den richtigen Zugriff zu verfügen](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
+- **Legen Sie spezifische Berechtigungen für Datensatzverwalterfunktionen in Ihrer Organisation fest**, um [über den richtigen Zugriff zu verfügen](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
 Mit diesen Funktionen können Sie die Aufbewahrungspläne Ihrer Organisation und die Anforderungen in eine Lösung für die Datensatzverwaltung integrieren, mit der Aufbewahrung, Deklaration von Datensätzen und Disposition zur Unterstützung des gesamten Inhaltslebenszyklus verwaltet werden.
 
@@ -62,7 +62,7 @@ Wenn Inhalt zum Datensatz erklärt wird:
 
 - Andere Aktivitäten in Verbindung mit dem Element werden protokolliert.
 
-- Sie haben einen Löschungsnachweis, wenn die Elemente am Ende ihrer Aufbewahrungsfrist gelöscht werden.
+- Sie haben einen Verfügungsnachweis, wenn die Elemente am Ende ihrer Aufbewahrungsfrist gelöscht werden.
 
 Sie verwenden [Aufbewahrungsbezeichnungen](retention.md#retention-labels), um Inhalte als **Datensatz** oder **regulatorischen Datensatz** zu kennzeichnen. Der Unterschied zwischen diesen beiden wird im nächsten Abschnitt erläutert. Sie können diese Bezeichnungen entweder veröffentlichen, so dass Benutzer und Administratoren sie manuell auf Inhalte anwenden können, oder Sie können diese Labels automatisch auf Inhalte anwenden, die Sie als Datensatz oder regulatorischen Datensatz markieren möchten.
 
@@ -81,12 +81,12 @@ Eine Standard-Aufbewahrungsbezeichnung verfügt über Aufbewahrungseinstellungen
 |Aktion| Aufbewahrungsbezeichnung |Datensatz – gesperrt| Datensatz – entsperrt| Regulatorischer Datensatz |
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |Inhalt bearbeiten|Zulässig | **Gesperrt** | Allowed | **Gesperrt**|
-|Bearbeiten Sie Eigenschaften, einschließlich Umbenennen|Allowed |Zulässig | Allowed| **Gesperrt**|
+|Bearbeiten Sie Eigenschaften, einschließlich Umbenennen|Allowed |Zulässig | Zulässig| **Gesperrt**|
 |Löschen|Zulässig <sup>1</sup> |**Gesperrt** |**Gesperrt**| **Gesperrt**|
-|Kopie|Allowed |Zulässig | Zulässig| Allowed|
-|Innerhalb eines Containers bewegen<sup>2</sup>|Allowed |Zulässig | Zulässig| Allowed|
-|Über Container hinweg bewegen <sup>2</sup>|Zulässig |Zulässig, wenn nie entsperrt | Allowed| **Gesperrt**|
-|Öffnen/Lesen|Allowed |Zulässig | Zulässig| Allowed|
+|Kopie|Zulässig |Allowed | Zulässig| Zulässig|
+|Innerhalb eines Containers bewegen<sup>2</sup>|Zulässig |Zulässig | Allowed| Zulässig|
+|Über Container hinweg bewegen <sup>2</sup>|Zulässig |Zulässig, wenn nie entsperrt | Zulässig| **Gesperrt**|
+|Öffnen/Lesen|Zulässig |Zulässig | Zulässig| Allowed|
 |Ändern der Bezeichnung|Zulässig |Zulässig – nur Container-Administrator | Zulässig – nur Container-Administrator| **Gesperrt**
 |Bezeichnung entfernen|Zulässig |Zulässig – nur Container-Administrator | Zulässig – nur Container-Administrator| **Gesperrt**
 

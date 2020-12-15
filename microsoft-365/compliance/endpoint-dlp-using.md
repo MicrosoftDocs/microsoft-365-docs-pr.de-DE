@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie DLP-Richtlinien (Data Loss Prevention, Verhinderung von Datenverlust) so konfigurieren können, dass Microsoft 365-EPDLP-Speicherorte (Endpoint Data Loss Prevention) verwendet werden.
-ms.openlocfilehash: 0a6883bd785141af6f198f0cd871c11794618e27
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 531fd5506aeb255e261c3cce35473f1ddad2aa42
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561682"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667810"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Nutzen der Verhinderung von Datenverlust am Endpunkt
 
@@ -61,7 +61,7 @@ Sie können diese Logik verwenden, um Ihre Pfadausschlüsse zu erstellen:
 
 - Ein Pfad mit SYSTEM-Umgebungsvariablen. <br/>Beispiel: %SystemDrive%\Test\*
 
-- Eine Kombination aus allen vorstehenden Optionen. <br/>Beispiel: „%SystemDrive%\Users\*\Documents\*(2)\Sub\“
+- Eine Kombination aus allen vorstehenden Optionen. <br/>Beispiel: %SystemDrive%\Users\*\Documents\*(2)\Sub\
 
 ### <a name="unallowed-apps"></a>Nicht zulässige Apps
 
@@ -84,14 +84,7 @@ Wenn der Listenmodus auf **Zulassen** festgelegt ist, können Benutzer vertrauli
 
 #### <a name="unallowed-browsers"></a>Nicht zulässige Browser
 
-Sie können Browser hinzufügen, die anhand ihrer ausführbaren Namen identifiziert werden und am Zugriff auf Dateien gehindert werden, die den Bedingungen einer erzwungenen DLP-Richtlinie entsprechen, bei denen die Einschränkung von Clouddienst-Uploads auf „Blockieren“ oder „Blockieren/außer Kraft setzen“ festgelegt ist. Wenn diese Browser am Zugriff auf eine Datei gehindert werden, wird den Endbenutzern eine Popupbenachrichtigung angezeigt, in der sie aufgefordert werden, die Datei über Microsoft Edge Chromium zu öffnen.
-
-### <a name="always-audit-file-activity-from-onboarded-devices"></a>Dateiaktivitäten von eingebundenen Geräten immer prüfen
-
-Steuern Sie, ob die DLP-Aktivität für Office-, PDF- und CSV-Dateien automatisch überwacht wird und zur Überprüfung in der Überwachungstelemetrie und im Aktivitäten-Explorer von eingebundenen Geräten aus verfügbar ist. 
-
-Wenn diese Option aktiviert ist (Standardeinstellung), wird die Dateiaktivität bei eingebundenen Geräten immer überwacht, unabhängig davon, ob sie in einer aktiven DLP-Richtlinie enthalten sind oder nicht.
-Wenn diese Option deaktiviert ist, wird die Dateiaktivität bei eingebundenen Geräten nur dann überwacht, wenn sie in einer aktiven DLP-Richtlinie enthalten sind. 
+Sie können Browser hinzufügen, die anhand ihrer ausführbaren Namen identifiziert werden und am Zugriff auf Dateien gehindert werden, die den Bedingungen einer erzwungenen DLP-Richtlinie entsprechen, bei denen die Einschränkung von Clouddienst-Uploads auf „Blockieren“ oder „Blockieren/außer Kraft setzen“ festgelegt ist. Wenn diese Browser am Zugriff auf eine Datei gehindert werden, wird den Endbenutzern eine Popupbenachrichtigung angezeigt, in der sie aufgefordert werden, die Datei über Edge Chromium zu öffnen.
 
 
 ## <a name="tying-dlp-settings-together"></a>DLP-Einstellungen kombinieren
@@ -131,7 +124,7 @@ Bei diesen Szenarien ist es erforderlich, dass Sie bereits über Geräte verfüg
 
 2. Wählen Sie **Richtlinie erstellen** aus.
 
-3. Wählen Sie für dieses Szenario **Datenschutz**, dann **USA: Personenbezogene Informationen (PII)** und schließlich **Weiter** aus.
+3. Wählen Sie für dieses Szenario **Datenschutz**, dann **USA – Daten mit personenbezogenen Informationen (PII)** und schließlich **Weiter** aus.
 
 4. Setzen Sie das Feld **Status** für alle Orte außer **Geräte** auf "Aus". Wählen Sie **Weiter** aus.
 
@@ -157,7 +150,7 @@ Bei diesen Szenarien ist es erforderlich, dass Sie bereits über Geräte verfüg
 
 1. Öffnen Sie die Seite [Verhinderung von Datenverlust](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 
-2. Wählen Sie die in Szenario 1 erstellte Richtlinie **USA: Personenbezogene Informationen (PII)** aus.
+2. Wählen Sie die in Szenario 1 erstellte Richtlinie **USA – Daten mit persönlich identifizierbaren Informationen (PII)** aus.
 
 3. Wählen Sie **Richtlinie bearbeiten** aus.
 
@@ -182,7 +175,7 @@ Bei diesen Szenarien ist es erforderlich, dass Sie bereits über Geräte verfüg
 
 1. Öffnen Sie die Seite [Verhinderung von Datenverlust](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 
-2. Wählen Sie die in Szenario 1 erstellte Richtlinie **USA: Personenbezogene Informationen (PII)** aus.
+2. Wählen Sie die in Szenario 1 erstellte Richtlinie **USA – Daten mit persönlich identifizierbaren Informationen (PII)** aus.
 
 3. Wählen Sie **Richtlinie bearbeiten** aus.
 

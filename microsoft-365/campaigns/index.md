@@ -35,7 +35,7 @@ ms.locfileid: "48897293"
 <a name="microsoft-365-for-campaigns"></a>Microsoft 365 für Kampagnen
 ===========================
 
-Heutzutage ist es mehr denn je wichtig, Daten und Kommunikation zu sichern. Das gilt besonders für politische Kampagnen, Arztpraxen und Kanzleien, sowie viele weitere Geschäftsbereiche. Microsoft 365 für Kampagnen enthält eine Reihe an Empfehlungen, die Ihnen dabei helfen sollen, sich und Ihre Daten zu schützen. Diese Bibliothek enthält außerdem Anweisungen für die Einrichtung und Verwendung der empfohlenen Umgebung, auch wenn Sie nicht Teil einer Kampagne sind.
+Heutzutage ist es mehr denn je wichtig, Daten und Kommunikation zu sichern. Das gilt besonders für politische Kampagnen, Arztpraxen und Kanzleien, sowie viele weitere Geschäftsbereiche. Microsoft 365 für Kampagnen enthält eine Reihe an Empfehlungen, die Ihnen dabei helfen sollen, sich und Ihre Daten zu schützen. Die Bibliothek enthält außerdem Anweisungen für die Einrichtung und Verwendung dieser empfohlenen Umgebung, auch wenn Sie keine Kampagne sind.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3clbH]
 
@@ -48,7 +48,7 @@ Es handelt sich um eine empfohlene sichere Konfiguration, die Microsoft 365 Busi
 - Ihre Arbeitsdateien auf allen Ihren iOS-, Android-, und Windows 10-Geräten mit einfach zu verwaltenden Sicherheitsfunktionen auf Unternehmensniveau schützen
 - Wenden Sie zusätzlichen Schutz auf Benutzerkonten und Identitäten an.
 
-![Microsoft 365 Business Premium schützt Ihre Tools für Produktivität und Zusammenarbeit, Ihren Datenspeicher sowie Ihre E-Mails, Geräte und Identitäten](../media/M365-WhatIsIt-SecurityFocus.png)
+![Mit Microsoft 365 Business Premium sind Ihre Tools für Produktivität und Zusammenarbeit, Ihr Datenspeicher sowie Ihre E-Mails, Geräte und Identitäten gesichert](../media/M365-WhatIsIt-SecurityFocus.png)
 
 Die Präsidentschaftswahlen in den Vereinigten Staaten von Amerika sind für das Sonderangebot von Microsoft 365 Business Premium qualifiziert, doch auch alle anderen Organisationen mit diesem Plan können sich diese Anleitung zunutze machen, um eine erhöhte Sicherheit zu konfigurieren und sicher mit anderen zusammenzuarbeiten.
 
@@ -77,12 +77,12 @@ Nachdem Sie Ihre sichere Microsoft 365-Umgebung eingerichtet haben, können Sie 
 | Erstellen von Teams für die Zusammenarbeit | Einrichten von Online-Besprechungen |
 | ------------- | ------------- |
 | ![einer SharePoint-Kommunikationswebsite](../media/sm-m365-democracy-teams-collab.png) | ![einer Onlinebesprechung](../media/m365-democracy-teams-meetings.png) |
-| Schaffen Sie mit Microsoft Teams einen Raum für die Kommunikation und Zusammenarbeit mit spezifischen Teams für wichtige Mitarbeiter, die gesamte Belegschaft sowie für Partner oder Lieferanten. [Erstellen Ihres Teams](create-teams-for-collaboration.md) | Planen Sie mit Microsoft Teams eine Besprechung mit Audio, Video und dem Austausch von Dateien. [Einrichten einer Besprechung](set-up-meetings.md) |
+| Schaffen Sie mit Microsoft Teams einen Raum für die Kommunikation und Zusammenarbeit mit spezifischen Teams für wichtige Mitarbeiter, die gesamte Belegschaft sowie für Partner oder Lieferanten. [Erstellen Ihres Teams](create-teams-for-collaboration.md) | Planen Sie eine Besprechung mit Audio, Video, und dem Austausch von Dateien mit Microsoft Teams. [Einrichten einer Besprechung](set-up-meetings.md) |
 
-| Verschlüsseln oder bezeichnen Ihrer vertraulichen E-Mails | Erstellen einer Kommunikationswebsite |
+| Verschlüsseln oder beschriften Sie Ihre vertraulichen E-Mails | Erstellen einer Kommunikationswebsite |
 | ------------- | ------------- |
 | ![Verschlüsselte und bezeichnete E-Mails](../media/sm-m365-campaign-email-encrypt.png) | ![eine SharePoint-Kommunikationswebsite](../media/sm-m365-democracy-comms-site.png) |
-| Verwenden Sie eine Verschlüsselung oder Vertraulichkeitsbezeichnungen, um E-Mails mit vertraulichen oder sensiblen Informationen zu schützen. [Senden verschlüsselter E-Mails](send-encrypted-email.md) | Erstellen Sie mit SharePoint eine Seite für die interne Kommunikation, und geben Sie Ereignisse, Nachrichten, Bilder und vieles mehr für Ihr Team frei. [Erstellen Ihrer Website](create-communications-site.md) |
+| Verwenden Sie eine Verschlüsselung oder Vertraulichkeitsbezeichnungen, um E-Mails mit vertraulichen oder sensiblen Informationen zu schützen. [Senden verschlüsselter E-Mail-Nachrichten](send-encrypted-email.md) | Erstellen Sie mit SharePoint eine Seite für die interne Kommunikation, und geben Sie Ereignisse, Nachrichten, Bilder und mehr für Ihr Team frei. [Erstellen Ihrer Website](create-communications-site.md) |
 
 | Freigeben von Dateien und Videos |
 | ------------- |
