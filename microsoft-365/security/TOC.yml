@@ -366,7 +366,7 @@
           items:
             - name: Exchange Online Protection
               items:
-                - name: Konfigurieren der standardmäßigen Antiphishing-Richtlinie in EOP
+                - name: Konfigurieren von Anti-Phishing-Richtlinien in EOP
                   href: ./office-365-security/configure-anti-phishing-policies-eop.md
                 - name: Konfigurieren von EOP als eigenständige Lösung zum Weiterleiten von Spamnachrichten in den Junk-E-Mail-Ordner
                   href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
