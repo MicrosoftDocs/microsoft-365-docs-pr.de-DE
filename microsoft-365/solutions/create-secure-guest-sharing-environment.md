@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Erfahren Sie mehr über die verfügbaren Optionen zum Erstellen einer sicheren Gastfreigabeumgebung in Microsoft 365, die Gastzugriff für eine bessere Zusammenarbeit bietet.
-ms.openlocfilehash: 4e2045113a6c98e2b3839a3a2cdd83105be94023
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: c52feeb8e5c85d38dfa1623ecdd7c2ee2a381fbd
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558188"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667705"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Erstellen einer sicheren Gastfreigabeumgebung
 
@@ -162,7 +162,7 @@ Sie können potenzielle Angriffsflächen verringern und die Verwaltung vereinfac
 
 Für Microsoft 365-Gruppen und Microsoft Teams erfolgt dies über eine Azure AD-Richtlinie für bedingten Zugriff. Für SharePoint wird dies im SharePoint Admin Center konfiguriert. (Sie können auch [Vertraulichkeitsbezeichnungen verwenden, um den Gastzugriff auf reinen Webzugriff zu beschränken](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).)
 
-So beschränken Sie den Gastzugriff auf reinen Webzugriff für Gruppen und Teams
+So beschränken Sie den Gastzugriff auf reinen Webzugriff für Gruppen und Teams:
 
 1. Wechseln Sie zu [Azure-Richtlinien für den bedingten Zugriff](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
 2. Klicken Sie auf dem Blatt **Bedingter Zugriff – Richtlinien** auf **Neue Richtlinie**.
