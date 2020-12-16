@@ -50,7 +50,7 @@ landingContent:
       url: https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp
     - text: Architektur von Microsoft Defender for Identity
       url: https://docs.microsoft.com/azure-advanced-threat-protection/atp-architecture
-- title: Defender for Office 365
+- title: Microsoft Defender for Office 365
   linkLists:
   - linkListType: overview
     links:
