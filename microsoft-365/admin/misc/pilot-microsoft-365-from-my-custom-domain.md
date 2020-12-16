@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Hier erfahren Sie, wie Sie die E-Mail-Funktionalität aus Ihrer benutzerdefinierten Domäne an ein Microsoft 365-Postfach mit nur zwei Testkonten testen können.
-ms.openlocfilehash: 8bb04edc9a7879edc2094f1fed667d5956174ea3
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 6cc5b1163f666af4bd13047ab3b1fda7fd747b5f
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295034"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688217"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>Testen von Microsoft 365 aus Ihrer benutzerdefinierten Domäne
 
@@ -39,6 +39,8 @@ Sie können Microsoft 365 mit den folgenden Anforderungen und Einschränkungen t
 - Administratoren können nicht alle Benutzerkonten von einem einzigen Standort aus verwalten.
 
 - Möglicherweise sind die Benutzer nicht in der Lage, Microsoft 365-Spamfilter zu verwenden.
+
+- Dies wird für eine sehr kleine Anzahl von Benutzern empfohlen und gilt nur für die Verwendung von E-Mails für ein Pilotprojekt.
 
 ## <a name="set-up-a-microsoft-365-pilot"></a>Einrichten eines Microsoft 365-Pilotprojekts
 
@@ -189,4 +191,3 @@ Da Sie nur zwei Testbenutzer verschieben und Benutzer A und Benutzer B beide Out
 
 Nachdem sie in die entsprechenden Speicherorte im Microsoft 365-Postfach importiert wurden, kann auf die Elemente von jedem beliebigen Gerät aus zugegriffen werden.
 
-Wenn mehr Postfächer beteiligt sind oder wenn Mitarbeiter Outlook nicht verwenden, können Sie die Migrationstools verwenden, die im Exchange Admin Center zur Verfügung stehen. Um zu beginnen, wechseln Sie zum Exchange Admin Center, und folgen Sie den Anweisungen unter [Migrieren von E-Mails von einem IMAP-Server zu Exchange Online-Postfächern](https://docs.microsoft.com/exchange/mailbox-migration/migrating-imap-mailboxes/migrating-imap-mailboxes).

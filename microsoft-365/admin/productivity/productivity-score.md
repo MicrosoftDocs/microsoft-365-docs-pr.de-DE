@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Übersicht über die Microsoft-Produktivitätsbewertung.
-ms.openlocfilehash: cd22c4381f1fe3f6b37338636797157bdbaa7752
-ms.sourcegitcommit: 26c2f01d6f88f6c288b04f9f08062d68dd1e67e1
+ms.openlocfilehash: e052d1189379bb00a05b574e6568e9e718285d50
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49569975"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688331"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft-Produktivitätsbewertung 
 
@@ -141,6 +141,10 @@ Dieser Bericht hilft Organisationen beim Verständnis folgender Aspekte:
 [Weitere Informationen zum Bericht zur Geschäftskontinuität](https://aka.ms/bcrps)
 
 [Weitere Informationen über Microsoft Graph](https://docs.microsoft.com/graph/).
+
+> [!NOTE]
+> Benutzer haben auch die Möglichkeit, über das [MyAnalytics-Dashboard](https://docs.microsoft.com/workplace-analytics/myanalytics/use/dashboard-2) Einblicke in die Produktivität zu erhalten.
+
 
 ## <a name="we-want-to-hear-from-you"></a>Wir freuen uns über Ihr Feedback
 

@@ -1,5 +1,5 @@
 - name: Microsoft 365-Center – Lösungen und Architekturen
-  href: solution-architecture-center.md
+  href: index.yml
   displayName: Home
 - name: Darstellungen zu Lösungen und Architekturen
   items:
@@ -7,10 +7,10 @@
       href: productivity-illustrations.md
     - name: Microsoft Cloud-Architekturmodelle
       href: cloud-architecture-models.md
+    - name: Architektursymbole und -vorlagen
+      href: architecture-icons-templates.md
 - name: Grundlegende Microsoft 365-Lösungen
   items:
-    - name: Übersicht
-      href: foundation-solutions-overview.md
     - name: Fördern von Remotemitarbeitern mit Microsoft 365
       items:
         - name: Übersicht
@@ -93,8 +93,6 @@
           href: information-protection-deploy-monitor-respond.md
 - name: Workload-Lösungen und -Szenarien
   items:
-    - name: Übersicht
-      href: workload-solutions-scenarios-overview.md
     - name: Teamwork und Zusammenarbeit
       items:
         - name: Architekturposter für Microsoft Teams
@@ -211,8 +209,6 @@
           href: team-security-isolation-dev-test.md
 - name: Branchenspezifische Anleitungen
   items:
-    - name: Übersicht
-      href: industry-specific-guidance-overview.md
     - name: Finanzen
       items:
         - name: Sicherheit und Compliance für Finanzdienstleister

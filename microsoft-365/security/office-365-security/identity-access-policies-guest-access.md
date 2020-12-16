@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: c2c01278831433c02e5c869dba83f223eea57d27
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 376845d8e3657b91b9efe0357e94f4bec3a84078
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683235"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688285"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>Richtlinien für das Zulassen von Gast-und externen B2B-Zugriff
 
@@ -44,7 +44,7 @@ In der folgenden Tabelle sind die Richtlinien aufgeführt, die Sie entweder erst
 
 |Schutzebene|Richtlinien|Weitere Informationen|
 |---|---|---|
-|**Basisplan**|[MFA immer für Gast und externe Benutzer erforderlich](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Erstellen Sie diese neue Richtlinie, und konfigurieren Sie Folgendes: <ul><li> Wählen Sie für **Zuordnungen > Benutzer und Gruppen > einschließen** die **Option Benutzer und Gruppen auswählen** aus, und wählen Sie dann **alle Gast-und externen Benutzer** aus. </li><li> Lassen Sie für **Zuordnungen > Bedingungen > Anmeldung** die Option Alle Optionen deaktiviert, damit die mehrstufige Authentifizierung (MFA) immer erzwungen wird.</li>|
+|**Basisplan**|[MFA immer für Gast und externe Benutzer erforderlich](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Erstellen Sie diese neue Richtlinie, und konfigurieren Sie Folgendes: <ul><li>Wählen Sie für **Zuordnungen > Benutzer und Gruppen > einschließen** die **Option Benutzer und Gruppen auswählen** aus, und wählen Sie dann **alle Gast-und externen Benutzer** aus.</li><li>Lassen Sie für **Zuordnungen > Bedingungen > Anmeldung** die Option Alle Optionen deaktiviert, damit die mehrstufige Authentifizierung (MFA) immer erzwungen wird.</li></ul>|
 ||[MFA erforderlich, wenn das Anmelde Risiko *Mittel* groß oder *hoch* ist](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Ändern Sie diese Richtlinie, um Gast-und externe Benutzer auszuschließen.|
 ||[Kompatible PCs erforderlich](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Ändern Sie diese Richtlinie, um Gast-und externe Benutzer auszuschließen.|
 
