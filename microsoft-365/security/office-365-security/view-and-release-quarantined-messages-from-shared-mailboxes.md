@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: Benutzer können erfahren, wie Sie in Quarantäne befindliche Nachrichten anzeigen und bearbeiten, die an freigegebene Postfächer gesendet wurden, für die Sie Berechtigungen besitzen.
-ms.openlocfilehash: 0c165395edc3a3032ece603cb8d9aac875443d7d
-ms.sourcegitcommit: 26c2f01d6f88f6c288b04f9f08062d68dd1e67e1
+ms.openlocfilehash: 34a401d3bff66926acd3e04d7144ce465dfa3dbb
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49570942"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688029"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>Anzeigen und Freigeben von isolierten Nachrichten in freigegebenen Postfächern
 
@@ -48,19 +48,9 @@ Unabhängig von der Methode können Benutzer Verwirrung vermeiden, indem Sie die
 
 - Der erste Benutzer, der in der isolierten Nachricht agiert, entscheidet über das Schicksal der Nachricht für jeden, der das freigegebene Postfach verwendet. Wenn beispielsweise ein freigegebenes Postfach von zehn Benutzern verwendet wird und ein Benutzer entscheidet, die Quarantäne Nachricht zu löschen, wird die Nachricht für alle 10 Benutzer gelöscht. Wenn ein Benutzer sich entschließt, die Nachricht zu veröffentlichen, wird dieser ebenfalls für das freigegebene Postfach freigegeben und ist für alle anderen Benutzer des freigegebenen Postfachs zugänglich.
 
-- Wenn ein Benutzer mehrere in Quarantäne befindliche Nachrichten auswählt, die an das freigegebene Postfach gesendet wurden, werden die folgenden irreführenden Fehler zurückgegeben, wenn der Benutzer auf **Freigabe Meldungen** klickt oder **Nachrichten** im Flyout für **Massenaktionen** löscht:
-
-  > Sie verfügen nicht über die Berechtigung, alle ausgewählten isolierten Nachrichten freizugeben.
-  >
-  > Sie verfügen nicht über die Berechtigung zum Löschen aller ausgewählten isolierten Nachrichten.
-
-  Unabhängig vom Fehler wird die Aktion auf die Nachrichten angewendet, und der Fehler kann ignoriert werden.
-
-  ![Falscher Fehler beim Massen freigeben oder Löschen von isolierten Nachrichten, die an ein freigegebenes Postfach gesendet werden.](../../media/quarantine-bulk-action-error.png)
-
 - Derzeit steht die Schaltfläche " **Absender blockieren** " im **Detail** -Flyout für in Quarantäne befindliche Nachrichten, die an das freigegebene Postfach gesendet wurden, nicht zur Verfügung.
 
-- Zum Verwalten von Nachrichten in Quarantäne für das freigegebene Postfach in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)muss der Endbenutzer das Cmdlet [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessage) mit freigegebener e-Mail-Adresse des Postfachs für den Wert des Parameters _RecipientAddress_ verwenden, um die Nachrichten zu identifizieren. Zum Beispiel:
+- Zum Verwalten von Nachrichten in Quarantäne für das freigegebene Postfach in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)muss der Endbenutzer das Cmdlet [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessage) mit freigegebener e-Mail-Adresse des Postfachs für den Wert des Parameters _RecipientAddress_ verwenden, um die Nachrichten zu identifizieren. Beispiel:
 
   ```powershell
   Get-QuarantinedMessage -RecipientAddress officeparty@contoso.com

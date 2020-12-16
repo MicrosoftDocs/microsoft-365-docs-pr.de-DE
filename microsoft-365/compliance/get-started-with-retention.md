@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sie sind bereit, Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen zum Schutz der Daten Ihrer Organisation zu implementieren, sind sich aber nicht sicher, wie Sie dies bewerkstelligen sollten? Hier finden Sie einige praktische Anweisungen für die ersten Schritte.
-ms.openlocfilehash: b4dcbe15e2a2d9e3d056555a9212125b60133826
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 26568d2a603e447156aead751178555fa400db5e
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919863"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682530"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Erste Schritte zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
@@ -34,11 +34,11 @@ Sind Sie bereit, die Daten Ihrer Organisation zu verwalten, indem Sie benötigte
 
 1. **Informieren Sie sich über die Funktionsweise der Aufbewahrung** in Microsoft 365 und ermitteln Sie anschließend, ob Aufbewahrungsrichtlinien, Aufbewahrungsbezeichnungen oder eine entsprechende Kombination erforderlich sind: [Weitere Informationen zur Aufbewahrung](retention.md)
 
-2. **Ermitteln Sie die Einstellungen und Aktionen der Aufbewahrung** , die laut Richtlinien Ihrer Organisation oder Branchenvorschriften erforderlich sind.
+2. **Ermitteln Sie die Einstellungen und Aktionen der Aufbewahrung**, die laut Richtlinien Ihrer Organisation oder Branchenvorschriften erforderlich sind.
     
     Ermitteln Sie im Rahmen dieser Bewertung, ob Sie die [Datensatzverwaltung](records-management.md) verwenden werden.
 
-3. **Erstellen Sie Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen** , anhand der von Ihnen ermittelten Aufbewahrungseinstellungen und Aktionen.
+3. **Erstellen Sie Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen**, anhand der von Ihnen ermittelten Aufbewahrungseinstellungen und Aktionen.
     
     Für Aufbewahrungsbezeichnungen ist es möglicherweise sinnvoll, Ihre Aufbewahrungsbezeichnungen anhand eines [Dateiplans](file-plan-manager.md)in einem Tabellenblatt zu definieren und zu verfeinern. Importieren Sie anschließend dieses Tabellenblatt, um Ihre Bezeichnungen zu erstellen.
     
@@ -52,7 +52,13 @@ Die Optionen für die Lizenzierung Ihrer Benutzer zur Nutzung der Microsoft 365-
 
 ## <a name="permissions-required-to-create-and-manage-retention-policies-and-retention-labels"></a>Notwendige Berechtigungen zum Erstellen und Verwalten von Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
-Die Mitglieder Ihres Complianceteams, die Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen erstellen und verwalten sollen, benötigen Berechtigungen für das [Microsoft 365 Compliance Center](https://compliance.microsoft.com/). Standardmäßig hat der Mandantenadministrator (Globaler Administrator) Zugriff auf diese Ressource und kann anderen Personen den Zugriff darauf gewähren, ohne ihnen alle Berechtigungen eines Mandantenadministrators zu geben. Um Berechtigungen für diese eingeschränkte Administration zu erteilen, empfehlen wir, Benutzer zur Administrator-Rollengruppe „ **Compliance Administrator** “ hinzuzufügen. Anweisungen finden Sie unter [Benutzern den Zugriff auf das Security & Compliance Center gewähren](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
+Die Mitglieder Ihres Complianceteams, die Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen erstellen und verwalten sollen, benötigen Berechtigungen für das [Microsoft 365 Compliance Center](https://compliance.microsoft.com/). Standardmäßig hat der Mandantenadministrator (Globaler Administrator) Zugriff auf diese Ressource und kann anderen Personen den Zugriff darauf gewähren, ohne ihnen alle Berechtigungen eines Mandantenadministrators zu geben. Um Berechtigungen für diese eingeschränkte Administration zu erteilen, empfehlen wir, Benutzer zur Administrator-Rollengruppe „**Compliance Administrator**“ hinzuzufügen.
+
+Alternativ zur Verwendung dieser Standardrolle können Sie eine neue Rollengruppe erstellen und die Rolle **Aufbewahrungsverwaltung** zu dieser Gruppe hinzufügen. Für eine schreibgeschützte Rolle verwenden Sie **Aufbewahrungsverwaltung – nur Leserechte**. 
+
+Weitere Informationen zu Rollengruppen und Rollen finden Sie unter [Berechtigungen im Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center#roles-in-the-security--compliance-center).
+
+Anweisungen zum Hinzufügen von Benutzern zu Rollengruppen und zum Zuweisen von Rollen finden Sie unter [Freigeben des Benutzerzugriffs auf das Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
 
 Diese Berechtigungen sind nur erforderlich, um Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen zu erstellen und anzuwenden. Die Person, die die Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen konfiguriert, benötigt keinen Zugriff auf die Inhalte.
 

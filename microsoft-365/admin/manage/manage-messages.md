@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: Hier finden Sie Informationen zum Verwalten von Message Center-Nachrichten, um die Änderungsverwaltung zu unterstützen.
-ms.openlocfilehash: c415120a86b0c095df8ba9cbb4130abda1f6596b
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+ms.openlocfilehash: 9f64be8396900db3377505fea3e144fffbb3b096
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005822"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688278"
 ---
 # <a name="manage-messages-in-message-center"></a>Verwalten von Nachrichten im Nachrichtencenter
 
@@ -33,7 +33,7 @@ ms.locfileid: "45005822"
   
 ## <a name="read-a-message"></a>Lesen einer Nachricht
 
-Um zum Nachrichtencenter zu wechseln, wechseln Sie zum [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=2024339), und wählen Sie **Integritäts**  >  **Meldungscenter**aus. 
+Um zum Nachrichtencenter zu wechseln, wechseln Sie zum [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=2024339), und wählen Sie **Integritäts**  >  **Meldungscenter** aus. 
 
 Wählen Sie einen Nachrichtentitel aus, um ihn im Lesebereich zu öffnen. Jede Nachricht enthält eine Zusammenfassung der Änderung, eine Erklärung dazu, wie sich die Änderung auf Sie auswirken kann, Informationen darüber, wie Sie Ihre Organisation auf die Änderung vorbereiten können, und (in den meisten Fällen) einen zusätzlichen Informations Link, in dem Sie weitere Informationen erhalten. Diese zusätzlichen Informationen stehen auch nach dem Ablauf eine Nachricht weiterhin zur Verfügung.
 
@@ -73,13 +73,13 @@ Sie können eine beliebige Spaltenüberschrift auswählen, um Nachrichten in auf
 
 Im Nachrichtencenter können Sie eine Nachricht auswählen, um Details anzuzeigen.
 
-Wenn Sie Feedback zur Nachricht geben möchten, wählen Sie das Symbol **like** oder **Unlike** aus, und geben Sie Feedback in das angezeigte Textfeld ein. Geben Sie keine persönlichen Informationen an. Sie können optional **"OK" auswählen, um mich über dieses Feedback zu kontaktieren** , und dann auf **senden**klicken.
+Wenn Sie Feedback zur Nachricht geben möchten, wählen Sie das Symbol **like** oder **Unlike** aus, und geben Sie Feedback in das angezeigte Textfeld ein. Geben Sie keine persönlichen Informationen an. Sie können optional **"OK" auswählen, um mich über dieses Feedback zu kontaktieren** , und dann auf **senden** klicken.
 
 ## <a name="share-a-message"></a>Freigeben einer Nachricht
 
 Sie haben eine Nachricht entdeckt, auf die eine andere Person reagieren muss? Sie können den Inhalt der Nachricht für beliebige Benutzer per E-Mail freigeben:
   
-1. Wählen Sie die Nachricht aus, um Sie zu öffnen, und wählen Sie dann **Freigeben**aus.
+1. Wählen Sie die Nachricht aus, um Sie zu öffnen, und wählen Sie dann **Freigeben** aus.
   
 2. Geben Sie bis zu zwei e-Mail-Adressen durch einen Doppelpunkt getrennt ein, um die Nachricht freizugeben. Sie können an einzelne und an Gruppen-e-Mail-Adressen senden. Optional können Sie wählen, ob Sie eine Kopie der Nachricht in einer e-Mail erhalten möchten (die Nachricht wird an Ihre primäre e-Mail-Adresse gesendet) oder eine persönliche Nachricht hinzufügen, um Empfängern mehr Kontext zur Verfügung zu stellen.
   
@@ -105,7 +105,7 @@ Sie müssen einen anderen Administrator nachverfolgen, um sicherzustellen, dass 
 
 1. Wählen Sie die Nachricht aus, um Sie zu öffnen.
 
-2. Klicken **More** Sie \> in der Aktionsleiste auf More **Get a Link** .
+2. Klicken  Sie \> in der Aktionsleiste auf More **Get a Link** .
 
 3. Erlauben Sie der Webseite Zugriff auf Ihre Zwischenablage. Eine direkte Verknüpfung wird in die Zwischenablage kopiert.
 
@@ -117,7 +117,7 @@ Sie müssen einen anderen Administrator nachverfolgen, um sicherzustellen, dass 
 
 1. Wählen Sie die Nachricht aus, um Sie zu öffnen.
 
-2. Klicken **More** Sie \> in der Aktionsleiste auf More **Get a Link** .
+2. Klicken  Sie \> in der Aktionsleiste auf More **Get a Link** .
 
 3. Erlauben Sie der Webseite Zugriff auf Ihre Zwischenablage. Eine direkte Verknüpfung wird in die Zwischenablage kopiert.
 
@@ -171,7 +171,7 @@ Sie müssen eine archivierte Nachricht zurück erhalten? Kein Problem.
   
 1. Wählen Sie die Registerkarte **Archivierte Nachrichten** oben im Nachrichtencenter aus. Eine Liste archivierter Nachrichten wird angezeigt. 
 
-2. Wählen Sie die Nachricht aus, wählen Sie **Wiederherstellen**aus, und die Nachricht wird in den aktiven Nachrichten wiederhergestellt.
+2. Wählen Sie die Nachricht aus, wählen Sie **Wiederherstellen** aus, und die Nachricht wird in den aktiven Nachrichten wiederhergestellt.
 
 ::: moniker-end
 
@@ -206,6 +206,11 @@ Sie müssen eine archivierte Nachricht zurück erhalten? Kein Problem.
 2. Wählen Sie rechts neben der Nachrichten-ID **Wiederherstellen** aus, und die Nachricht wird in den aktiven Nachrichten wiederhergestellt.
 
 ::: moniker-end
+
+## <a name="track-your-message-center-tasks-in-planner"></a>Nachverfolgen Ihrer Nachrichtencenter-Aufgaben in Planner
+
+Eine Vielzahl von umsetzbaren Informationen zu Änderungen an den Microsoft 365-Diensten gehen im Microsoft 365-Nachrichtencenter ein. Es kann schwierig sein, nachzuverfolgen, für welche Änderungen Aufgaben, wann und von wem ausgeführt werden müssen, und die einzelnen Aufgaben bis zum Abschluss nachzuverfolgen. Möglicherweise möchten Sie sich auch etwas notieren und dies markieren, um es später zu überprüfen. Sie können all dies und mehr tun, wenn Sie Ihre Nachrichten vom Microsoft 365 Admin Center mit Microsoft Planner synchronisieren. Weitere Informationen finden Sie unter nach [Verfolgen der Aufgaben des Nachrichten Centers in Planner](https://docs.microsoft.comoffice365/planner/track-message-center-tasks-planner).
+
 
 Eine Übersicht über das Nachrichtencenter finden Sie unter [Message Center in Microsoft 365](message-center.md). Um zu erfahren, wie Sie Ihre Spracheinstellungen so festlegen, dass maschinelle Übersetzungen für Nachrichtencenter Beiträge aktiviert werden, lesen Sie [über die Sprachübersetzung für Nachrichtencenter-Beiträge](language-translation-for-message-center-posts.md). Wenn Sie eine alternative Möglichkeit zum Abrufen von echt Zeitdienst-Integritätsinformationen und Nachrichten Center Kommunikationen programmieren möchten, wenden Sie sich an die [Microsoft 365 Service Communications API Overview](https://go.microsoft.com/fwlink/p/?linkid=848507).
   

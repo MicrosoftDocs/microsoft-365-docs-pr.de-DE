@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Active Directory-Migrationsschritte für die Verbunddienste (AD FS) für die Migration von Microsoft Cloud Deutschland.'
-ms.openlocfilehash: 175734851c2838eb2e224a9afb57a600d4ed9523
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: c946ec3c0772cf95ab696266475b50959d682ef2
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49554798"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688665"
 ---
 # <a name="ad-fs-migration-steps-for-the-migration-from-microsoft-cloud-deutschland"></a>AD FS-Migrationsschritte für die Migration von Microsoft Cloud Deutschland
 
@@ -101,9 +101,9 @@ Erste Schritte:
 
 Navigieren durch den Übergang:
 
-- [Migrationsphasen-Aktionen und-Auswirkungen](ms-cloud-germany-transition-phases.md)
+- [Phasen, Aktionen und Auswirkungen der Migration](ms-cloud-germany-transition-phases.md)
 - [Zusätzliche vorab Arbeit](ms-cloud-germany-transition-add-pre-work.md)
-- Zusätzliche Informationen zu [Diensten](ms-cloud-germany-transition-add-general.md), [Geräten](ms-cloud-germany-transition-add-devices.md), [Erfahrungen](ms-cloud-germany-transition-add-experience.md)und [AD FS](ms-cloud-germany-transition-add-adfs.md).
+- Zusätzliche Informationen zu [Azure AD](ms-cloud-germany-transition-azure-ad.md), [Geräten](ms-cloud-germany-transition-add-devices.md), [Erfahrungen](ms-cloud-germany-transition-add-experience.md)und [AD FS](ms-cloud-germany-transition-add-adfs.md).
 
 Cloud-apps:
 

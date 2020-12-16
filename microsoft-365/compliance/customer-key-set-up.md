@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie den Kundenschlüssel für Microsoft 365 für Exchange Online-, Skype for Business-, SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Dateien einrichten.
-ms.openlocfilehash: 69e12d46ae4106a399a8eeff49ebbe0f2a3055e2
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: fed181649696c7f5a92850943e1dd980b42aa819
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841286"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688422"
 ---
 # <a name="set-up-customer-key"></a>Einrichten des Kunden Schlüssels
 
@@ -31,9 +31,9 @@ Sie müssen Azure einrichten, bevor Sie Customer Key für Office 365 verwenden k
   
 ## <a name="before-you-set-up-customer-key"></a>Vor dem Einrichten des Kunden Schlüssels
 
-Stellen Sie vor dem ersten Start sicher, dass Sie über die entsprechende Lizenzierung für Ihre Organisation verfügen. Ab dem 1. April 2020 wird der Kundenschlüssel in Office 365 in Office 365 E5, M365 E5, M365 E5 Compliance und M365 E5 Information Protection & Governance-SKUs angeboten. Office 365 Advanced Compliance SKU steht nicht mehr für die Beschaffung neuer Lizenzen zur Verfügung. Vorhandene Office 365 Advanced Compliance-Lizenzen werden weiterhin unterstützt.
+Stellen Sie vor dem ersten Start sicher, dass Sie über die entsprechende Lizenzierung für Ihre Organisation verfügen. Verwenden eines kostenpflichtigen, in Rechnung gestellten Azure-Abonnements mithilfe eines Enterprise-Vertrags oder eines Cloud-Dienstanbieters. Azure-Abonnements, die mit Pay as you go-Plänen oder mit einer Kreditkarte erworben wurden, werden für den Kundenschlüssel nicht unterstützt. Ab dem 1. April 2020 wird der Kundenschlüssel in Office 365 in Office 365 E5, M365 E5, M365 E5 Compliance und M365 E5 Information Protection & Governance-SKUs angeboten. Office 365 Advanced Compliance SKU steht nicht mehr für die Beschaffung neuer Lizenzen zur Verfügung. Vorhandene Office 365 Advanced Compliance-Lizenzen werden weiterhin unterstützt.
 
-Bevor Sie beginnen, stellen Sie sicher, dass Sie über die entsprechende Lizenzierung für Ihre Organisation verfügen und dass Ihr Konto in Rechnung gestellt und nicht mit einer Kreditkarte bezahlt wird. Um die Konzepte und Verfahren in diesem Thema zu verstehen, lesen Sie die [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/) -Dokumentation. Machen Sie sich außerdem mit den in Azure verwendeten Ausdrücken vertraut, beispielsweise [Azure AD Mandanten](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant).
+Um die Konzepte und Verfahren in diesem Thema zu verstehen, lesen Sie die [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/) -Dokumentation. Machen Sie sich außerdem mit den in Azure verwendeten Ausdrücken vertraut, beispielsweise [Azure AD Mandanten](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant).
 
 Der kurzstand wird nur zum Erfassen der erforderlichen Mandanten-und Dienstkonfigurationsinformationen verwendet, die für die Registrierung für den Kundenschlüssel verwendet werden. Die Kundenschlüssel Angebote werden über die Kurzarbeits Veröffentlichung veröffentlicht, sodass Sie und unsere Partner die erforderlichen Informationen bequem mit derselben Methode übermitteln können. Mit dem schnelleren Archivieren von Daten, die Sie im Angebot bereitgestellt haben, können Sie auch einfach archivieren.
   
@@ -141,9 +141,9 @@ Bevor Sie sich an das Microsoft 365-Team wenden, müssen Sie für jedes Azure-Ab
 
 3. Wenden Sie sich an Microsoft, damit der Prozess abgeschlossen wird. Um mit dem SharePoint- und OneDrive for Business-Team in Verbindung zu treten, wenden Sie sich bitte an [spock@microsoft.com](mailto:spock@microsoft.com). Für Exchange Online und Skype for Business wenden Sie sich bitte an [exock@microsoft.com](mailto:exock@microsoft.com). Teilen Sie uns in Ihrem E-Mail bitte Folgendes mit:
 
-   **Betreff** : Kundenschlüssel für \<*Your tenant's fully-qualified domain name*\>
+   **Betreff**: Kundenschlüssel für \<*Your tenant's fully-qualified domain name*\>
 
-   **Textkörper** : Abonnements-IDs, für die Sie einen obligatorischen Aufbewahrungszeitraum verbindlich festlegen möchten.
+   **Textkörper**: Abonnements-IDs, für die Sie einen obligatorischen Aufbewahrungszeitraum verbindlich festlegen möchten.
    Die Ausgabe von Get-AzProviderFeature für jedes Abonnement.
 
    Die Service-Level-Vereinbarung (Service Level Agreement, SLA) für den Abschluss dieses Vorgangs beläuft sich auf fünf Werktage, nachdem Microsoft benachrichtigt wurde (und überprüft hat, dass Sie Ihre Abonnements für die Nutzung eines obligatorischen Aufbewahrungszeitraums registriert haben).
@@ -190,7 +190,7 @@ Das Erstellen von Schlüsseltresoren setzt außerdem die Erstellung von Azure-Re
 
 Sie müssen für jeden Schlüsseltresor entsprechend der von Ihnen gewählten Implementierung drei gesonderte Berechtigungsgruppen für Customer Key definieren. Sie müssen beispielsweise eine Berechtigungsgruppe für jede der folgenden Optionen definieren:
   
-- **Schlüsseltresor-Administratoren** , deren Aufgabe das tägliche Verwalten Ihrer Schlüsseltresore für Ihre Organisation ist. Zu diesen Aufgaben gehören Datensicherung sowie Erstellen, Abrufen, Importieren, Auflisten und Wiederherstellen.
+- **Schlüsseltresor-Administratoren**, deren Aufgabe das tägliche Verwalten Ihrer Schlüsseltresore für Ihre Organisation ist. Zu diesen Aufgaben gehören Datensicherung sowie Erstellen, Abrufen, Importieren, Auflisten und Wiederherstellen.
 
   > [!IMPORTANT]
   > Die Berechtigungsgruppe, die Schlüsseltresor-Administratoren zugewiesen ist, beinhaltet keine Berechtigung zum Löschen von Schlüsseln. Dies ist beabsichtigt und eine wichtige Vorgehensweise. Kryptografische Schlüssel werden normalerweise nicht gelöscht, da dadurch Daten dauerhaft vernichtet werden. Eine bewährte Methode besteht darin, den Schlüsseltresor-Administratoren diese Berechtigung nicht standardmäßig zuzuweisen. Behalten Sie stattdessen diese Berechtigung den Schlüsseltresor-Mitwirkenden vor und weisen Sie diese einem Administrator nur kurzfristig und lediglich, sofern die damit verbundenen Folgen klar verstanden wurden, zu.
@@ -209,7 +209,7 @@ Sie müssen für jeden Schlüsseltresor entsprechend der von Ihnen gewählten Im
    Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com -PermissionsToKeys create,import,list,get,backup,restore
    ```
 
-- **Schlüsseltresor-Mitwirkenden** , die Berechtigungen für den Azure Key Vault selbst ändern können. Sie müssen diese Berechtigungen ändern, wenn Mitarbeiter Ihr Team verlassen oder Ihrem Team beitreten oder, im äußerst selten eintretenden Fall, dass Schlüsseltresor-Administratoren berechtigterweise die Berechtigung zum Löschen oder Wiederherstellen eines Schlüssels benötigen. Dieser Gruppe von Schlüsseltresor-Mitwirkenden muss die Rolle **Mitwirkender** für Ihren Schlüsseltresor zugewiesen werden. Sie können diese Rolle mithilfe des Azure-Ressourcenmanagers zuweisen. Informationen zu den einzelnen Schritten finden Sie unter [Verwenden der rollenbasierten Zugriffssteuerung zum Verwalten des Zugriffs auf Ihre Azure-Abonnementressourcen](https://docs.microsoft.com/azure/active-directory/role-based-access-control-configure). Der Administrator, der ein Abonnement erstellt, verfügt implizit über diesen Zugriff sowie die Möglichkeit, der Rolle des Mitwirkenden weitere Administratoren zuzuweisen.
+- **Schlüsseltresor-Mitwirkenden**, die Berechtigungen für den Azure Key Vault selbst ändern können. Sie müssen diese Berechtigungen ändern, wenn Mitarbeiter Ihr Team verlassen oder Ihrem Team beitreten oder, im äußerst selten eintretenden Fall, dass Schlüsseltresor-Administratoren berechtigterweise die Berechtigung zum Löschen oder Wiederherstellen eines Schlüssels benötigen. Dieser Gruppe von Schlüsseltresor-Mitwirkenden muss die Rolle **Mitwirkender** für Ihren Schlüsseltresor zugewiesen werden. Sie können diese Rolle mithilfe des Azure-Ressourcenmanagers zuweisen. Informationen zu den einzelnen Schritten finden Sie unter [Verwenden der rollenbasierten Zugriffssteuerung zum Verwalten des Zugriffs auf Ihre Azure-Abonnementressourcen](https://docs.microsoft.com/azure/active-directory/role-based-access-control-configure). Der Administrator, der ein Abonnement erstellt, verfügt implizit über diesen Zugriff sowie die Möglichkeit, der Rolle des Mitwirkenden weitere Administratoren zuzuweisen.
 
 - Wenn Sie den Kundenschlüssel mit Exchange Online und Skype for Business verwenden möchten, müssen Sie Microsoft 365 die Berechtigung erteilen, das Schlüsseldepot im Namen von Exchange Online und Skype for Business zu verwenden. Wenn Sie den Kundenschlüssel mit SharePoint Online und OneDrive für Unternehmen verwenden möchten, müssen Sie ebenfalls die Berechtigung für den Microsoft 365 hinzufügen, um den schlüsseltresor im Namen von SharePoint Online und OneDrive für Unternehmen zu verwenden. Führen Sie das Cmdlet " **AzKeyVaultAccessPolicy** " mit der folgenden Syntax aus, um die Berechtigung für Microsoft 365 zu erteilen: 
 
@@ -217,7 +217,7 @@ Sie müssen für jeden Schlüsseltresor entsprechend der von Ihnen gewählten Im
    Set-AzKeyVaultAccessPolicy -VaultName <vault name> -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName <Office 365 appID>
    ```
 
-   Dabei gilt:
+   Dabei gilt Folgendes:
 
     - *Vault Name* ist der Name des Schlüssel Tresors, den Sie erstellt haben.
 
@@ -254,7 +254,7 @@ Führen Sie die folgenden Schritte aus, um Soft Delete für Ihre Schlüsseltreso
    Set-AzResource -ResourceId $r.ResourceId -Properties $r.Properties
    ```
 
-3. Bestätigen Sie, dass Soft Delete für den schlüsseltresor konfiguriert ist, indem Sie das Cmdlet **Get-AzKeyVault** ausführen. Wenn Soft Delete ordnungsgemäß für den schlüsseltresor konfiguriert ist, gibt die _Soft Delete Enabled_ -Eigenschaft den Wert " **true** " zurück:
+3. Bestätigen Sie, dass Soft Delete für den schlüsseltresor konfiguriert ist, indem Sie das Cmdlet **Get-AzKeyVault** ausführen. Wenn Soft Delete ordnungsgemäß für den schlüsseltresor konfiguriert ist, gibt die _Soft Delete Enabled_ -Eigenschaft den Wert " **true**" zurück:
 
    ```powershell
    Get-AzKeyVault -VaultName <vault name> | fl
@@ -270,7 +270,7 @@ Um einen Schlüssel direkt in Ihrem schlüsseltresor zu erstellen, führen [Sie 
 Add-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Destination <HSM|Software> -KeyOps wrapKey,unwrapKey
 ```
 
-Dabei gilt:
+Dabei gilt Folgendes:
 
 - *Vault Name* ist der Name des Schlüssel Tresors, in dem Sie den Schlüssel erstellen möchten.
 
@@ -307,7 +307,7 @@ Um die Wiederherstellungsebene eines Schlüssels zu überprüfen, führen Sie in
 (Get-AzKeyVaultKey -VaultName <vault name> -Name <key name>).Attributes
 ```
 
-Wenn die _Wiederherstellungsebene_ einen anderen Wert als "wieder **herstellbare + ProtectedSubscription** " zurückgibt, müssen Sie dieses Thema durchlesen und sicherstellen, dass Sie alle Schritte zum Platzieren des Abonnements in der Liste "nicht abbrechen" und "Soft Delete" für jeden schlüsseltresor aktiviert haben.
+Wenn die _Wiederherstellungsebene_ einen anderen Wert als "wieder **herstellbare + ProtectedSubscription**" zurückgibt, müssen Sie dieses Thema durchlesen und sicherstellen, dass Sie alle Schritte zum Platzieren des Abonnements in der Liste "nicht abbrechen" und "Soft Delete" für jeden schlüsseltresor aktiviert haben.
   
 ### <a name="back-up-azure-key-vault"></a>Sichern von Azure Key Vault
 
@@ -501,7 +501,7 @@ Register-SPODataEncryptionPolicy -PrimaryKeyVaultName 'stageRG3vault' -PrimaryKe
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-- [Dienstverschlüsselung mit dem Kundenschlüssel](customer-key-overview.md)
+- [Dienstverschlüsselung mit Kundenschlüssel](customer-key-overview.md)
 
 - [Verwalten des Kunden Schlüssels](customer-key-manage.md)
 

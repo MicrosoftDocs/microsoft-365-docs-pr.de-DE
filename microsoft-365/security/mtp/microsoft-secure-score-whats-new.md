@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 4b25f701aca24563dc4f1a15f78a80e1e2064367
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: 253e85da7bb85a0722831851f00051a50a96153e
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604383"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688411"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Neuerungen in Microsoft Secure Score
 
@@ -34,6 +34,17 @@ ms.locfileid: "49604383"
 Damit die Microsoft-Sicherheitsbewertung zu einem besseren Ansprechpartner für Ihren Sicherheitsstatus wird, haben wir einige Änderungen vorgenommen. Wenn Sie mehr über geplante Änderungen wissen möchten, lesen Sie [Bald in der Microsoft-Sicherheitsbewertung verfügbar](microsoft-secure-score-whats-coming.md)
 
 Microsoft Secure Score finden Sie https://security.microsoft.com/securescore im [Microsoft 365 Security Center](overview-security-center.md).
+
+## <a name="december-2020"></a>Dezember 2020
+
+### <a name="added-6-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>6 Kontenbezogene Verbesserungs Aktionen für Microsoft Defender for Endpoint (zuvor Microsoft Defender ATP) hinzugefügt:
+
+- ' Minimale Kennwortlänge ' auf ' 14 oder mehr Zeichen ' festlegen
+- Legen Sie "Kennwortverlauf erzwingen" auf "24 oder mehr Kennwort (en)" fest.
+- "Maximales Kennwortalter" auf "60 oder weniger Tage, aber nicht auf 0" festlegen
+- "Minimales Kennwortalter" auf "1 oder mehr Tage (en)" festlegen
+- Deaktivieren des integrierten Administrator Kontos
+- Deaktivieren des integrierten Gastkontos
 
 ## <a name="november-2020"></a>November 2020
 
@@ -47,7 +58,7 @@ Die Möglichkeit, ServiceNow-Tickets über Secure Score zu erstellen, indem Sie 
 - Ändern des ausführbaren Pfads des Diensts in einen allgemeinen geschützten Speicherort
 - Ändern des Dienstkontos, um das zwischengespeicherte Kennwort in der Windows-Registrierung zu vermeiden
 
-## <a name="october-2020"></a>Oktober 2020
+## <a name="october-2020"></a>Oktober 2020
 
 ### <a name="remove-improvement-action-related-to-microsoft-defender-for-endpoint"></a>Entfernen von Verbesserungs Aktionen im Zusammenhang mit Microsoft Defender für Endpoint
 

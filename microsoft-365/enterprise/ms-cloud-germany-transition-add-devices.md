@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: weitere Geräteinformationen zu Diensten beim Wechsel von Microsoft Cloud Deutschland (Microsoft Cloud Deutschland) zu Office 365 Diensten im neuen rechenzentrumsbereich.'
-ms.openlocfilehash: 941b836871f4ffb7f39f6e144675e9ee15510270
-ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
+ms.openlocfilehash: 1bbb4bf39db61a93844c21cd6062a70699b5d6d7
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49560856"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688654"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Zusätzliche Geräteinformationen für die Migration von Microsoft Cloud Deutschland
 
@@ -247,7 +247,7 @@ So heben Sie die Registrierung und Erneutes Registrieren des Geräts unter Andro
 3.  Wählen Sie im Menü Ellipsen (drei Punkte) die Option **Gerät entfernen** aus, und schließen Sie das Entfernen ab, indem Sie im Dialogfeld bestätigen.
 4.  Sie sollten jetzt von der Unternehmens Portal-App abgemeldet werden. Wählen Sie **Anmelden** aus, um das Gerät erneut zu registrieren.
 
-Weitere Informationen zu Aktionen, die während der Migrationsphase dieser Arbeitsauslastung erforderlich sind, oder die Auswirkungen auf die Verwaltung oder Verwendung, finden Sie in den Informationen zu Azure Active Directory in [weiteren allgemeinen Informationen für die Migration von Microsoft Cloud Deutschland](ms-cloud-germany-transition-add-general.md#azure-active-directory).
+Weitere Informationen zu den erforderlichen Aktionen während der Migrationsphase dieser Arbeitsauslastung oder zu den Auswirkungen auf die Verwaltung oder Verwendung finden Sie in den Informationen zu Azure Active Directory (Azure AD) in [zusätzlichen Azure AD Informationen für die Migration von Microsoft Cloud Deutschland](ms-cloud-germany-transition-azure-ad.md).
 
 ## <a name="ios"></a>iOS
 
@@ -281,9 +281,9 @@ Erste Schritte:
 
 Navigieren durch den Übergang:
 
-- [Migrationsphasen-Aktionen und-Auswirkungen](ms-cloud-germany-transition-phases.md)
+- [Phasen, Aktionen und Auswirkungen der Migration](ms-cloud-germany-transition-phases.md)
 - [Zusätzliche vorab Arbeit](ms-cloud-germany-transition-add-pre-work.md)
-- Zusätzliche Informationen zu [Diensten](ms-cloud-germany-transition-add-general.md), [Geräten](ms-cloud-germany-transition-add-devices.md), [Erfahrungen](ms-cloud-germany-transition-add-experience.md)und [AD FS](ms-cloud-germany-transition-add-adfs.md).
+- Zusätzliche Informationen zu [Azure AD](ms-cloud-germany-transition-azure-ad.md), [Geräten](ms-cloud-germany-transition-add-devices.md), [Erfahrungen](ms-cloud-germany-transition-add-experience.md)und [AD FS](ms-cloud-germany-transition-add-adfs.md).
 
 Cloud-apps:
 

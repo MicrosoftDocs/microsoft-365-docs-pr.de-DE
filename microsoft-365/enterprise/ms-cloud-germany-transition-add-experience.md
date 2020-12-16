@@ -1,9 +1,9 @@
 ---
-title: Weitere Erfahrungs Informationen für die Migration von Microsoft Cloud Deutschland
+title: Migrationsphasen Aktionen und Auswirkungen für die Migration von Microsoft Cloud Deutschland (erweitert)
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/01/2020
+ms.date: 12/11/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -18,16 +18,16 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Weitere Informationen zur Kundenzufriedenheit beim Wechsel von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365 Diensten im neuen rechenzentrumsbereich.'
-ms.openlocfilehash: 1eef8be624a92bf2dcaba8f0df2147697202be3a
-ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
+ms.openlocfilehash: 3f22ca9c380b3271d0c186be1f50fae4a0ea5bb9
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49560838"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688193"
 ---
-# <a name="additional-experience-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Weitere Erfahrungs Informationen für die Migration von Microsoft Cloud Deutschland 
+# <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-advanced"></a>Migrationsphasen Aktionen und Auswirkungen für die Migration von Microsoft Cloud Deutschland (erweitert) 
 
-Die folgenden Abschnitte bieten zusätzliche Informationen zu Kundenerfahrungen.
+Die folgenden Abschnitte bieten zusätzliche Informationen zu Kundenerfahrungen beim Wechsel von Microsoft Cloud Deutschland (Microsoft Cloud Deutschland) zu Office 365 Diensten im neuen rechenzentrumsbereich.
 
 ## <a name="services"></a>Dienste
 
@@ -40,18 +40,6 @@ Die folgenden Abschnitte bieten zusätzliche Informationen zu Kundenerfahrungen.
 | Migration von Azure-Ressourcen. | Kunden, die Office 365-und Azure-Ressourcen verwenden (beispielsweise Netzwerk, COMPUTE und Speicher), führen die Migration von Ressourcen zur Instanz von Office 365 Services durch. Diese Migration ist eine Verantwortung für Kunden. Nachrichten Center-Beiträge signalisieren den Start. Die Migration muss vor Abschluss der Azure AD Organisation in der Office 365 Dienstumgebung abgeschlossen sein. | Azure-Kunden | Informationen zu Azure-Migrationen finden Sie im Textbuch zur Azure-Migration, [Übersicht über Migrations Anleitungen für Azure Deutschland](https://docs.microsoft.com/azure/germany/germany-migration-main). |
 |||||
 
-<!--
-[Reference: Experience][Data Protection] Experience][
-[Reference: Experience][Federation] 
-[Reference: Experience][MFA]  
-
-
-[Reference: Experience – Post Migration][Hybrid]    
-        
-
-[Reference: Experience – During Migration] [Azure] 
--->
-
 ### <a name="exchange-online"></a>Exchange Online
 
 Bei Verwendung von " **Setup-UserPhoto**":
@@ -61,21 +49,12 @@ Bei Verwendung von " **Setup-UserPhoto**":
 | Die neue Region Deutschland wird einem vorhandenen Organisations Setup hinzugefügt, und Postfächer werden in Office 365 Dienste verschoben. | In Exchange Online Konfiguration wird die neue Region "Go-local Deutsch" zur Übergangs Organisation hinzugefügt. Diese Office 365-Dienste-Region ist als Standard festgelegt, wodurch der interne Lastenausgleichsdienst das Neuverteilen von Postfächern an die entsprechende Standardregion in Office 365 Diensten ermöglicht. Bei diesem Übergang befinden sich die Benutzer auf beiden Seiten (Deutschland oder Office 365 Dienste) in derselben Organisation und können entweder den URL-Endpunkt verwenden. |  Exchange Online | Wenn ein Benutzerpostfach migriert wurde, aber ein Administratorpostfach nicht migriert wurde oder umgekehrt, können Administratoren nicht die Ausführung von " **UserPhoto**", ein PowerShell-Cmdlet, ausführen. In diesem Fall muss ein Administrator eine zusätzliche Zeichenfolge `ConnectionUri` während der Verbindung übergeben, die mit der folgenden Syntax eingerichtet wurde: <br><br> `https://outlook.office.de/PowerShell-LiveID?email=<user_email>` <br><br> Hierbei `<user_email>` ist der Platzhalter für die e-Mail-ID des Benutzers, dessen Foto mithilfe von " **UserPhoto**" geändert werden muss. |
 |||||
 
-<!--
-[Reference: Experience][Exchange Online]  [if using Set-UserPhoto] 
--->  
-
 Wenn Sie eine hybride, lokale Bereitstellung verwenden:
 
 | Schritt (e) | Beschreibung | Gilt für | Auswirkung |
 |:-------|:-----|:-------|:-------|
 |Beenden oder löschen Sie alle Onboarding-oder offboarding-Verschiebungen von Postfächern.  | Dadurch wird sichergestellt, dass die Verschiebeanforderungen nicht mit einem Fehler fehlschlagen. | Exchange Online Kunden mit Hybriden (lokalen) Bereitstellungen | Erforderliche Aktion. Wenn dies nicht der Fall ist, kann dies zu einem Ausfall des Diensts oder von Software Clients führen. |
 |||||
-
-<!--
-[Reference: Experience][Hybrid] 
---> 
-
 
 ### <a name="dynamics"></a>Dynamics
 
@@ -104,10 +83,6 @@ Wenn Sie eine hybride, lokale Bereitstellung verwenden:
 | Clients Office Online während des Office-Client Cutover Azure AD den MANDANTENBEREICH so ab, dass er auf die Office 365 Dienste verweist. | Mit dieser Konfigurationsänderung können Office-Clients aktualisiert und auf die Endpunkte der Office 365 Dienste verweist werden. | Alle Office-Kunden | – Entfernen Sie MSOID CNAME aus dem kundeneigenen DNS, sofern vorhanden. <br><br> -Benachrichtigen Sie die Benutzer, dass _alle_ Office-Apps geschlossen werden sollen, und melden Sie sich dann wieder an (oder erzwingen Sie, dass Clients neu gestartet werden und Benutzer sich anmelden), damit Office-Clients die Änderung aufnehmen können. <br><br> -Benutzer und Helpdesk-Mitarbeiter benachrichtigen, dass Benutzern *möglicherweise* ein Office-Banner angezeigt wird, in dem Sie aufgefordert werden, Office-Apps innerhalb von 72 Stunden nach der Cutover zu reaktivieren. <br><br> -Alle Office-Anwendungen auf persönlichen Computern müssen geschlossen sein, und die Benutzer müssen sich abmelden und sich dann erneut anmelden. Melden Sie sich in der gelben aktivierungsleiste zur Reaktivierung für Office 365 Dienste an. <br><br> -Freigegebene Computer erfordern Aktionen, die den persönlichen Computern ähneln, und erfordern keine spezielle Vorgehensweise. <br><br> -Auf mobilen Geräten müssen sich Benutzer von apps abmelden, Sie schließen und sich dann erneut anmelden. |
 |||||
 
-<!--
-[Reference: Experience][Office Apps]
---> 
-
 ## <a name="during-migration"></a>Während der Migration
 
 
@@ -120,21 +95,13 @@ Für eDiscovery:
 | Während der Migration führen eDiscovery-Suchvorgänge einen Fehler aus oder geben 0 Ergebnisse für SharePoint Online, OneDrive für Unternehmen und Exchange Online migrierte Speicherorte zurück. | Während der Migration können Kunden weiterhin Fälle, Aufbewahrungen, Suchvorgänge und Exporte im [Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations), einschließlich der [Inhaltssuche](https://docs.microsoft.com/microsoft-365/compliance/search-for-content), erstellen.  Durchsuchen von SharePoint Online-, OneDrive für Unternehmen-und Exchange Online-Speicherorten, die migriert wurden, werden jedoch entweder 0 Ergebnisse zurückgegeben oder ein Fehler generiert. Informationen zur Behebung finden Sie in der Spalte _IMPACT_ . | Alle Kunden, die eDiscovery verwenden |  Für den Fall, dass bei einer Suche 0 Ergebnisse oder ein Fehler während der Migration zurückgegeben wird, führen Sie die folgende Aktion für SharePoint Online aus: <br><br>  Laden Sie Websites direkt von SharePoint Online/OneDrive für Unternehmen Website herunter, indem Sie die Anweisungen unter [Herunterladen von Dateien und Ordnern aus OneDrive oder SharePoint](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)befolgen. Für diese Methode sind SharePoint Online Administratorberechtigungen oder schreibgeschützte Berechtigungen für die Website erforderlich. <br><br> Wenn Grenzwerte überschritten werden, wie unter [Herunterladen von Dateien und Ordnern aus OneDrive oder SharePoint](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)erläutert, können Kunden den OneDrive für Unternehmen synchronisierungsclient verwenden, indem Sie die Anweisungen unter [Synchronisieren von SharePoint-und Microsoft Teams-Dateien mit Ihrem Computer](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88)befolgen. <br><br> -Exchange Online <br><br> - [In-Place-eDiscovery in Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/ediscovery/ediscovery) |
 |||||
 
-<!--
-[Reference: Experience – During Migration][ [eDiscovery]
--->          
 
-
-### <a name="sharepoint-online"></a>SharePoint Online
+### <a name="sharepoint-online"></a>SharePoint Online
 
 | Schritt (e) | Beschreibung | Gilt für | Auswirkung |
 |:-------|:-----|:-------|:-------|
 | SharePoint und OneDrive werden übergangen. | SharePoint und OneDrive werden in dieser Phase von Microsoft Cloud Deutschland zu Office 365 Diensten migriert. Vorhandene Microsoft Cloud Deutschland-URLs werden beibehalten ( `contoso.sharepoint.de` ). Token, die von Microsoft Cloud Deutschland oder Office 365 Diensten ausgestellt wurden, sind während des Übergangs gültig. | SharePoint-Kunden | Inflight SharePoint 2013 Workflows werden während der Migration unterbrochen und müssen nach der Migration erneut veröffentlicht werden. |
 |||||
-
-<!--
-[Reference: Experience – During Migration][ [SPO]
--->  
 
 ### <a name="skype-for-business-online"></a>Skype for Business Online
 
@@ -142,10 +109,6 @@ Für eDiscovery:
 |:-------|:-----|:-------|:-------|
 | Migration von Skype for Business zu Teams. | Vorhandene Skype for Business Kunden werden zu Office 365 Diensten in Europa migriert und anschließend zu Microsoft Teams in der Region Deutschland Office 365 Dienste gewechselt. | Skype for Business Kunden |  PowerShell verwendet zum Verwalten von Einstellungen und Richtlinien für Ihren Mandanten und Ihre Benutzer. Fügen Sie beim Herstellen einer Verbindung mit einer PowerShell-Sitzung Folgendes hinzu: <br><br> `-OverridePowershellUri "https://admin4E.online.lync.com/OcsPowershellOAuth"` |
 |||||
-
-<!--
-[Reference: Experience – During Migration][ [SfBO]
--->  
 
 
 ## <a name="post-migration"></a>Tipps nach der Migration
@@ -159,20 +122,12 @@ Für Hybrid:
 | Aktualisieren Sie Azure AD Connect. | Nachdem der Schnitt auf Azure AD abgeschlossen ist, verwendet die Organisation Office 365 Dienste vollständig und ist nicht mehr mit Microsoft Cloud Deutschland verbunden. An dieser Stelle muss der Kunde sicherstellen, dass der Delta-Synchronisierungsprozess abgeschlossen wurde, und anschließend den Zeichenfolgenwert von `AzureInstance` 3 (Microsoft Cloud Deutschland) in den Registrierungspfad auf 0 ändern `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Azure AD Connect` . | Hybrid Azure AD – verbundene Organisationen | Ändern Sie den Wert des `AzureInstance` Registrierungsschlüssels. Andernfalls führt dies dazu, dass Objekte nicht synchronisiert werden, nachdem die Microsoft Cloud Deutschland-Endpunkte nicht mehr verfügbar sind. |
 |||||
 
-<!--
-[Reference: Experience – Post Migration][Hybrid]
---> 
-
 Für die Verbundauthentifizierung:
 
 | Schritt (e) | Beschreibung | Gilt für | Auswirkung |
 |:-------|:-----|:-------|:-------|
-| Entfernen von Vertrauensstellungen der vertrauenden Seite von Microsoft Cloud Deutschland AD FS. | Nachdem der Schnitt auf Azure AD abgeschlossen ist, verwendet die Organisation Office 365 Dienste vollständig und ist nicht mehr mit Microsoft Cloud Deutschland verbunden. An diesem Punkt muss der Kunde die Vertrauensstellung der vertrauenden Seite an die Microsoft Cloud Deutschland-Endpunkte entfernen. Dies kann nur erfolgen, wenn keine Anwendungen des Kunden auf Microsoft Cloud Deutschland-Endpunkte deuten, wenn Azure AD als Identitätsanbieter (IDP) genutzt wird. | Organisationen für die Verbundauthentifizierung | Keine. |
+| Entfernen von Vertrauensstellungen der vertrauenden Seite von Microsoft Cloud Deutschland AD FS. | Nachdem der Schnitt auf Azure AD abgeschlossen ist, verwendet die Organisation Office 365 Dienste vollständig und ist nicht mehr mit Microsoft Cloud Deutschland verbunden. An diesem Punkt muss der Kunde die Vertrauensstellung der vertrauenden Seite an die Microsoft Cloud Deutschland-Endpunkte entfernen. Dies kann nur erfolgen, wenn keine Anwendungen des Kunden auf Microsoft Cloud Deutschland-Endpunkte deuten, wenn Azure AD als Identitätsanbieter (IDP) genutzt wird. | Organisationen für die Verbundauthentifizierung | Keine |
 |||||
-
-<!--
-[Reference: Experience – Post Migration][Federated]
--->             
 
 Für Azure AD:
 
@@ -181,10 +136,6 @@ Für Azure AD:
 | Anforderungen für die Teilnahme an einer Azure Ad Gruppe in den letzten 30 Tagen vor der Migration müssen erneut angefordert werden, wenn die ursprüngliche Anforderung nicht genehmigt wurde. | Endbenutzer müssen die Zugriffs Konsole verwenden, um eine erneute Anforderung zum Beitritt zu einer Azure Ad Gruppe zu übermitteln, wenn diese Anforderungen in den letzten 30 Tagen vor der Migration nicht genehmigt wurden. | Endbenutzer, deren Azure Ad Gruppen Genehmigungsanforderungen in den letzten 30 Tagen vor der Migration nicht genehmigt wurden |  Als Endbenutzer: <ol><li>Navigieren Sie zu [Access Panel](https://account.activedirectory.windowsazure.com/r#/joinGroups).</li><li>Hier finden Sie eine Azure Ad Gruppe, für die die Mitgliedschaftsgenehmigung in 30 Tagen vor der Migration aussteht.</li><li>Anforderung, erneut an der Azure Ad Gruppe teilzunehmen.</li></ol> Anforderungen für die Teilnahme an einer Gruppe, die weniger als 30 Tage vor der Migration aktiv ist, können nicht genehmigt werden, es sei denn, Sie werden nach der Migration erneut angefordert. |
 |||||
 
-<!--
-[Reference: Experience – Post Migration][Azure AD]
---> 
-
 Für DNS:
 
 | Schritt (e) | Beschreibung | Gilt für | Auswirkung |
@@ -192,20 +143,12 @@ Für DNS:
 | Aktualisieren Sie lokale DNS-Dienste für Office 365-Dienste-Endpunkte. | Kunden verwaltete DNS-Einträge, die auf Office 365 Deutschland deuten, müssen so aktualisiert werden, dass Sie auf die Endpunkte der Office 365 Dienste verweist. | Alle Office-Kunden | Erforderliche Aktion. Wenn dies nicht der Fall ist, kann dies zu einem Ausfall des Diensts oder von Software Clients führen. |
 |||||
 
-<!--
- [Reference: Experience – Post Migration][DNS]
--->
-
 Für Dienste von Drittanbietern für Office 365 Dienstendpunkte:
 
 | Schritt (e) | Beschreibung | Gilt für | Auswirkung |
 |:-------|:-----|:-------|:-------|
 | Aktualisieren von Partnern und Drittanbieterdiensten für Office 365 Dienstendpunkte. | -Drittanbieterdienste und-Partner, die auf Office 365 Deutschland deuten, müssen so aktualisiert werden, dass Sie auf die Endpunkte der Office 365 Dienste verweist. Beispiel: Erneutes Registrieren, in Abstimmung mit ihren Lieferanten und Partnern, die Version der Gallery-App der Anwendungen, falls verfügbar. <br><br> -Richten Sie alle benutzerdefinierten Anwendungen, die die Graph-API nutzen, von `graph.microsoft.de` in `graph.microsoft.com` . Andere APIs mit geänderten Endpunkten müssen ebenfalls aktualisiert werden, falls diese genutzt werden. <br><br> – Ändern Sie alle nicht-Anbieter-Unternehmensanwendungen, um Sie auf die weltweiten Endpunkte umzuleiten.  | Alle Office-Kunden | Erforderliche Aktion. Wenn dies nicht der Fall ist, kann dies zu einem Ausfall des Diensts oder von Software Clients führen. |
 |||||
-
-<!--
- [Reference: Experience – Post Migration][]
---> 
 
 ### <a name="exchange-online"></a>Exchange Online
 
@@ -215,35 +158,20 @@ Wenn Sie eine hybride Exchange-Konfiguration verwenden:
 |:-------|:-----|:-------|:-------|
 | Führen Sie den Assistenten für die Hybrid Konfiguration (HCW) für Office 365 Dienste erneut aus. | Die vorhandene HCW-Konfiguration soll Microsoft Cloud Deutschland unterstützen. Wenn die Migration von Exchange-Diensten abgeschlossen ist, wird die lokale Konfiguration von Microsoft Cloud Deutschland entkoppelt. | Exchange Online Kunden, die eine hybridbereitstellung durchführen | Erforderliche Aktion. Wenn dies nicht der Fall ist, kann dies zu einem Ausfall des Diensts oder von Software Clients führen. Benachrichtigen Sie Clients vor Beginn der Exchange-Postfachmigration (mit einer Frist von 5 oder mehr Tagen), dass Sie alle Onboarding-oder offboarding-Verschiebungen ihrer Postfächer beenden und löschen sollten.  Wenn dies nicht der Fall ist, werden Fehler in ihren Verschiebeanforderungen angezeigt. <br><br> – Nachdem die Exchange-Postfachmigration abgeschlossen ist, Benachrichtigen Sie die Clients, dass Sie das Onboarding fortsetzen können und offboarding verschoben werden. <br> Das Ausführen von **Test-MigrationServerAvailabiilty**, ein PowerShell-Cmdlet, während der Migration von Exchange von Microsoft Cloud Deutschland zu Office 365 Diensten funktioniert möglicherweise nicht. Es funktioniert jedoch ordnungsgemäß, nachdem die Migration abgeschlossen ist. <br><br> Wenn Clients bei der Migration von Postfächern auf Probleme mit Anmeldeinformationen oder Autorisierung stoßen, können die Benutzer ihre lokalen Administratoranmeldeinformationen erneut in den Migrations Endpunkt eingeben `Set-MigrationEndpoint endpointName -Credential $(Get-Credential)` , oder indem Sie die gleiche Einstellung mithilfe der Exchange-Systemsteuerung (ECP) durchführen.  |
 
-<!--
-[Reference: Experience – Post Migration][Hybrid]  
-[Reference: Experience – Post Migration][Exchange Online]
---> 
-
 Für eDiscovery:
 
 | Schritt (e) | Beschreibung | Gilt für | Auswirkung |
 |:-------|:-----|:-------|:-------|
-|  Alle SharePoint Online-, OneDrive für Unternehmen-und Exchange Online-Speicherorte wurden zusammen mit dem Security and Compliance Center (SCC) migriert. | Alle eDiscovery-Aktivitäten sollten vom weltweiten Mandanten ausgeführt werden. Suchvorgänge werden nun 100% erfolgreich ausgeführt.  Fehler oder Fehler sollten normalen Support Kanälen entsprechen. | Alle Kunden, die eDiscovery verwenden | Keine. |
-| Entfernen organisationsweiter Aufbewahrungsrichtlinien, die während der Schritte vor der Migration erstellt wurden | Kunden können die organisationsweiten Aufbewahrungsrichtlinien entfernen, die während der Arbeit der Kunden vor der Migration erstellt wurden. | Alle Kunden, die eine Aufbewahrungsrichtlinie im Rahmen der Schritte vor der Migration angewendet haben. | Keine. |
+|  Alle SharePoint Online-, OneDrive für Unternehmen-und Exchange Online-Speicherorte wurden zusammen mit dem Security and Compliance Center (SCC) migriert. | Alle eDiscovery-Aktivitäten sollten vom weltweiten Mandanten ausgeführt werden. Suchvorgänge werden nun 100% erfolgreich ausgeführt.  Fehler oder Fehler sollten normalen Support Kanälen entsprechen. | Alle Kunden, die eDiscovery verwenden | Keine |
+| Entfernen organisationsweiter Aufbewahrungsrichtlinien, die während der Schritte vor der Migration erstellt wurden | Kunden können die organisationsweiten Aufbewahrungsrichtlinien entfernen, die während der Arbeit der Kunden vor der Migration erstellt wurden. | Alle Kunden, die eine Aufbewahrungsrichtlinie im Rahmen der Schritte vor der Migration angewendet haben. | Keine |
 |||||
 
-<!--
- [Reference: Experience – Post Migration][ [eDiscovery]             
-
-[Reference: Experience – Post Migration][ [eDiscovery]
--->             
-
-### <a name="sharepoint-online"></a>SharePoint Online
+### <a name="sharepoint-online"></a>SharePoint Online
 
 | Schritt (e) | Beschreibung | Gilt für | Auswirkung |
 |:-------|:-----|:-------|:-------|
 | Veröffentlichen Sie SharePoint 2013 Workflows erneut. | Bei der Arbeit vor der Migration haben wir die Anzahl der SharePoint 2013-Workflows reduziert. Nachdem die Migration abgeschlossen ist, kann der Kunde die Workflows erneut veröffentlichen. | Alle Office-Kunden | Dies ist eine erforderliche Aktion. Wenn dies nicht der Fall ist, können Benutzer Verwirrungen auftreten und Anrufe bei Helpdesks durchführen. |
 | Freigeben von Elementen über Outlook | Das Freigeben von Elementen über Outlook funktioniert nicht mehr nach Mandanten-Cutover. | SharePoint Online und OneDrive for Business | -In SharePoint Online und OneDrive für Unternehmen können Sie Elemente über Outlook freigeben. Nach dem Drücken der Outlook-Schaltfläche wird ein freigegebener Link erstellt und in einer neuen Nachricht im Outlook Web App abgelegt. <br><br> – Nach dem Mandanten-Cutover funktioniert diese Methode der Freigabe nicht. Wir erkennen, dass es sich um ein bekanntes Problem handelt. Da sich dieses Outlook-Feature jedoch im Pfad der veralteten Funktion befindet, ist die Behebung des Problems erst dann geplant, wenn die veraltete Aufgabe ausgeführt wird. |
-
-<!--
- [Reference: Experience – Post Migration][ [SPO]
--->
 
 ## <a name="next-step"></a>Nächster Schritt
 
@@ -260,9 +188,9 @@ Erste Schritte:
 
 Navigieren durch den Übergang:
 
-- [Migrationsphasen-Aktionen und-Auswirkungen](ms-cloud-germany-transition-phases.md)
+- [Phasen, Aktionen und Auswirkungen der Migration](ms-cloud-germany-transition-phases.md)
 - [Zusätzliche vorab Arbeit](ms-cloud-germany-transition-add-pre-work.md)
-- Zusätzliche Informationen zu [Diensten](ms-cloud-germany-transition-add-general.md), [Geräten](ms-cloud-germany-transition-add-devices.md), [Erfahrungen](ms-cloud-germany-transition-add-experience.md)und [AD FS](ms-cloud-germany-transition-add-adfs.md).
+- Zusätzliche Informationen zu [Azure AD](ms-cloud-germany-transition-azure-ad.md), [Geräten](ms-cloud-germany-transition-add-devices.md), [Erfahrungen](ms-cloud-germany-transition-add-experience.md)und [AD FS](ms-cloud-germany-transition-add-adfs.md).
 
 Cloud-apps:
 

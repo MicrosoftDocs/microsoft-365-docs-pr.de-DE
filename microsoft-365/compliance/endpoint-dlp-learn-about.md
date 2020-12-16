@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 Endpunkt-DLP erweitert die Überwachung von Dateiaktivitäten sowie schützende Maßnahmen für diese Dateien auf Endpunkte. Die Dateien werden in den Microsoft 365 Compliance-Lösungen angezeigt. '
-ms.openlocfilehash: 457701a514159e54e932db3e4ad04a7428165fdc
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: 1dac32505144c3966ad2219cc69a33ba29f194dc
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604315"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682626"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Informationen zu Microsoft 365 Endpunkt-DLP (Data Loss Prevention, Verhinderung von Datenverlust)
 
@@ -34,18 +34,19 @@ Sie können Microsoft 365-DLP (Data Loss Prevention, Verhinderung von Datenverlu
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>Endpunktaktivitäten, die Sie überwachen und für die Sie Maßnahmen festlegen können
 
-Mit Microsoft Endpunkt-DLP können Sie die folgenden Aktivitätstypen überwachen und verwalten, die von Benutzern mit und an vertraulichen Elementen auf Windows 10-Geräten ausgeführt werden. Hierzu zählen Folgende:
+Mit Microsoft Endpunkt-DLP können Sie die folgenden Aktivitätstypen überwachen und verwalten, die von Benutzern mit und an vertraulichen Elementen auf Windows 10-Geräten ausgeführt werden.
 
 
-|Aktivität am Element |überwachbar/einschränkbar  |
-|---------|---------|
-|erstellt    | überwachbar      |
-|umbenannt    |  überwachbar       |
-|auf Wechselmedium kopiert oder erstellt     |     überwachbar und einschränkbar|
-|in Netzwerkfreigabe kopiert, z. B. \\my-server\fileshare   |     überwachbar und einschränkbar    |
-|gedruckt |    überwachbar und einschränkbar       |
-|über Chromium Edge in die Cloud kopiert    |   überwachbar und einschränkbar        |
-|Zugriff über nicht zulässige Apps und Browser    |  überwachbar und einschränkbar       |
+|Aktivität |Beschreibung  | überwachbar/einschränkbar|
+|---------|---------|---------|
+|In einen Clouddienst hochladen oder über nicht zugelassene Browser zugreifen    | Erkennt, wenn ein Benutzer versucht, ein Element in eine eingeschränkte Dienstdomäne hochzuladen oder über einen Browser auf ein Element zuzugreifen.  Wird ein Browser verwendet, der im DLP als nicht zugelassener Browser aufgeführt ist, wird die Uploadaktivität blockiert, und der Benutzer wird umgeleitet, um Edge Chromium zu verwenden. Edge Chromium kann dann, basierend auf der DLP-Richtlinienkonfiguration, entweder den Upload erlauben oder blockieren oder auf das Element zugreifen.         |überwachbar und einschränkbar|
+|In andere App kopieren    |Erkennt, wenn ein Benutzer versucht, Informationen aus einem geschützten Element zu kopieren und in eine andere App, einen Prozess oder ein Element einzufügen. Das Kopieren und Einfügen von Informationen innerhalb derselben App, desselben Prozesses oder desselben Elements wird von dieser Aktivität nicht erkannt.         | überwachbar und einschränkbar|
+|Auf USB-Wechseldatenträger kopieren |Erkennt, wenn ein Benutzer versucht, ein Element oder Informationen auf einen Wechseldatenträger oder ein USB-Gerät zu kopieren.         | überwachbar und einschränkbar|
+|Auf eine Netzwerkfreigabe kopieren    |Erkennt, wenn ein Benutzer versucht, ein Element auf eine Netzwerkfreigabe oder ein zugeordnetes Netzlaufwerk zu kopieren.         |überwachbar und einschränkbar|
+|Dokument drucken    |Erkennt, wenn ein Benutzer versucht, ein geschütztes Element auf einem lokalen oder Netzwerkdrucker zu drucken.| überwachbar und einschränkbar         |
+|Element erstellen|Erkennt, wenn ein Benutzer ein Element erstellt.| überwachbar|
+|Element umbenennen|Erkennt, wenn ein Benutzer ein Element umbenennt.| überwachbar|
+
 
 ## <a name="whats-different-in-endpoint-dlp"></a>Was ist bei Endpunkt-DLP anders?
 

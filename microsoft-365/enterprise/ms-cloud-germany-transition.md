@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Zusammenfassung: Die Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen verstehen.'
-ms.openlocfilehash: 37bf052739bf15c1a0d3712539779e9dff31d9e8
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 16e57eff5556d31d2d13ab6ce0d284719d63c44c
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551534"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688641"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Migration von Microsoft Cloud Deutschland zu Office 365 Diensten in den neuen Regionen des deutschen Rechenzentrums
 
@@ -71,7 +71,7 @@ Die Migration wird in Phasen ausgeführt, die alle beginnen, wenn Sie sich [für
 
 Die Migration beginnt nicht sofort, wenn das Opt-in erfolgt. Ihre Organisation wird der Liste der Mandanten hinzugefügt, die für eine spätere Migration geplant sind. Sie können die vorarbeits Phasen jetzt beginnen, da diese für eine erfolgreiche Migration und Verwendung nach Abschluss wichtig sind:
 
-- [Migrationsphasen-Aktionen und-Auswirkungen](ms-cloud-germany-transition-phases.md)
+- [Phasen, Aktionen und Auswirkungen der Migration](ms-cloud-germany-transition-phases.md)
 - [Zusätzliche vorab Arbeit](ms-cloud-germany-transition-add-pre-work.md)
 
 Eine Woche vor dem Start der Mandanten Migration erhalten Sie eine Benachrichtigung im Nachrichtencenter Dienst als abschließende Warnung, dass alle Voraussetzungen vollständig sein müssen.
@@ -138,7 +138,7 @@ Die folgenden 15 Dienste stehen im Cloud-Dienstangebot von Microsoft Cloud Deuts
 3. Gruppen (moderne Gruppen)
 4. Delve-Profil
 5. Exchange Online Protection
-6. Verteidiger für Office 365
+6. Microsoft Defender for Office 365
 7. Advanced eDiscovery
 8. Advanced Data Governance
 9. SharePoint Online
@@ -158,7 +158,7 @@ Derzeit sind 29 Dienste als Bestandteil von Office 365-Diensten in den neuen deu
 5. MyAnalytics
 6. Workplace Analytics
 7. Exchange Online Protection
-8. Verteidiger für Office 365
+8. Microsoft Defender for Office 365
 9. Advanced eDiscovery
 10. Advanced Security Management
 11. Verwaltung von Informationsrechten
@@ -288,9 +288,9 @@ Erste Schritte:
 
 Navigieren durch den Übergang:
 
-- [Migrationsphasen-Aktionen und-Auswirkungen](ms-cloud-germany-transition-phases.md)
+- [Phasen, Aktionen und Auswirkungen der Migration](ms-cloud-germany-transition-phases.md)
 - [Zusätzliche vorab Arbeit](ms-cloud-germany-transition-add-pre-work.md)
-- Zusätzliche Informationen zu [Diensten](ms-cloud-germany-transition-add-general.md), [Geräten](ms-cloud-germany-transition-add-devices.md), [Erfahrungen](ms-cloud-germany-transition-add-experience.md)und [AD FS](ms-cloud-germany-transition-add-adfs.md).
+- Zusätzliche Informationen zu [Azure AD](ms-cloud-germany-transition-azure-ad.md), [Geräten](ms-cloud-germany-transition-add-devices.md), [Erfahrungen](ms-cloud-germany-transition-add-experience.md)und [AD FS](ms-cloud-germany-transition-add-adfs.md).
 
 Cloud-apps:
 

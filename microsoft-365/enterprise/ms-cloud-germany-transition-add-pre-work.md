@@ -1,9 +1,9 @@
 ---
-title: Zusätzliche Arbeits Vorbereitungsinformationen für die Migration von Microsoft Cloud Deutschland
+title: Pre-Work für die Migration von Microsoft Cloud Deutschland
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/01/2020
+ms.date: 12/11/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,15 +17,15 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
-description: 'Zusammenfassung: zusätzliche vorarbeits Informationen beim Wechsel von Microsoft Cloud Deutschland (Microsoft Cloud Deutschland) zu Office 365 Diensten im neuen rechenzentrumsbereich.'
-ms.openlocfilehash: 41953aa9d91faa91bd983fbbc8d93baf08c172ed
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+description: 'Zusammenfassung: Vorarbeit beim Wechsel von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365 Diensten im neuen rechenzentrumsbereich.'
+ms.openlocfilehash: 1bb6a1b80da462da2218f32fbbc2899ae651a3ec
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551708"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688455"
 ---
-# <a name="additional-pre-work-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Zusätzliche Arbeits Vorbereitungsinformationen für die Migration von Microsoft Cloud Deutschland
+# <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>Pre-Work für die Migration von Microsoft Cloud Deutschland
 
 | Schritt (e) | Beschreibung | Gilt für | Auswirkung |
 |:-------|:-----|:-------|:-------|
@@ -56,7 +56,7 @@ Wenn Sie über Hybrid Exchange verfügen:
 | Deinstallieren Sie frühere Versionen des Assistenten für die Hybrid Konfiguration (HCW), und installieren und führen Sie dann die neueste Version von 17.0.5378.0 aus aus [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) . | Die neueste Version des HCW enthält notwendige Updates zur Unterstützung von Kunden, die von Microsoft Cloud Deutschland zu Office 365 Diensten wechseln. <br><br> Updates umfassen Änderungen an lokalen Zertifikateinstellungen für Sendeconnector und Empfangsconnector. | Exchange Online Kunden, die eine Hybrid Bereitstellung durchführen | Erforderliche Aktion. Wenn dies nicht der Fall ist, kann dies zu Dienst-oder Client Fehlern führen. |
 |||||
 
-## <a name="sharepoint-online"></a>SharePoint Online
+## <a name="sharepoint-online"></a>SharePoint Online
 
 Wenn Sie SharePoint 2013 haben:
 
@@ -65,11 +65,7 @@ Wenn Sie SharePoint 2013 haben:
 | Beschränken SharePoint 2013 Workflows, die während der SharePoint Online Migration verwendet werden. | Reduzieren Sie SharePoint 2013 Workflows, und führen Sie in-Flight-Workflows vor dem Übergang aus. | SharePoint Online Kunden | Untätigkeit kann zu Verwirrung bei Benutzern und Helpdesk-anrufen führen. |
 |||||
 
-<!--
-[Reference:  If Pre-Work][ SharePoint 2013 ]
---> 
-
-## <a name="mobile"></a>Mobile
+## <a name="mobile"></a>Mobilgeräte
 
 Wenn Sie eine MDM-Lösung (Mobile Device Management) eines Drittanbieters verwenden:
 
@@ -77,10 +73,6 @@ Wenn Sie eine MDM-Lösung (Mobile Device Management) eines Drittanbieters verwen
 |:-------|:-----|:-------|:-------|
 | Ermitteln Sie, ob eine Neukonfiguration nach der Migration erforderlich ist. | MDM-Lösungen können auf `outlook.de` Endpunkte Zielen. Bei diesem Übergang zu Office 365 Diensten sollten Client Profile auf die URL der Office 365 Dienste aktualisieren `outlook.office365.com` . | Exchange Online-und MDM-Kunden | Clients funktionieren möglicherweise weiterhin, während auf den `outlook.de` Endpunkt zugegriffen werden kann, aber Sie schlagen fehl, wenn Microsoft Cloud Deutschland-Endpunkte nicht mehr verfügbar sind. |
 |||||
-
-<!--
-[Reference:  If Pre-Work][ Mobile]
--->             
 
 ## <a name="line-of-business-apps"></a>Branchen-apps
 
@@ -91,20 +83,12 @@ Wenn Sie einen Drittanbieter-Service oder Branchen-Apps verwenden, die in Office
 | Ermitteln Sie, ob eine Neukonfiguration nach der Migration erforderlich ist. | Drittanbieterdienste und-Anwendungen, die in Office 365 integriert werden, können so codiert werden, dass Sie Microsoft Cloud Deutschland-IP-Adressen und-URLs erwarten. | Alle Kunden | Erforderliche Aktion. InAktion kann zu Fehlern des Diensts oder der Client Software führen. |
 |||||
 
-<!--
-[Reference:  If Pre-Work][ LOB]
---> 
-
 ## <a name="azure"></a>Azure 
 
 | Schritt (e) | Beschreibung | Gilt für | Auswirkung |
 |:-------|:-----|:-------|:-------|
 | Ermitteln Sie, welche Azure-Dienste verwendet werden, und bereiten Sie die zukünftige Migration von Deutschland zum Office 365-Dienste-Mandanten durch Zusammenarbeit mit ihren Partnern vor. Führen Sie die im Textbuch zur [Azure-Migration](https://docs.microsoft.com/azure/germany/germany-migration-main)beschriebenen Schritte aus. | Die Migration von Azure-Ressourcen ist eine Kunden Verantwortung und erfordert nach vorgeschriebenen Schritten manuellen Aufwand. Das Verständnis, welche Dienste in der Organisation verwendet werden, ist der Schlüssel zu einer erfolgreichen Migration von Azure-Diensten. <br><br> Office 365 Deutschland Kunden, die Azure-Abonnements unter derselben Identitäts Partition (Organisation) haben, müssen der von Microsoft vorgeschriebenen Reihenfolge folgen, wenn Sie mit der Migration von Abonnements und Diensten beginnen können. | Azure-Kunden | -Kunden haben möglicherweise mehrere Azure-Abonnements, jedes Abonnement enthält Infrastruktur, Dienste und Plattformkomponenten. <br><br> -Administratoren sollten Abonnements und beteiligte identifizieren, um sicherzustellen, dass eine schnelle Migration und Validierung im Rahmen dieses Migrations Ereignisses möglich ist. <br><br> Wenn die Migration dieser Abonnements und Azure-Komponenten innerhalb der vorgeschriebenen Zeitachse nicht erfolgreich abgeschlossen wurde, wirkt sich dies auf die Fertigstellung des Office-und Azure AD Übergang zu Office 365 Diensten aus und kann zu Datenverlusten führen.  <br><br> -Eine Benachrichtigung im Nachrichtencenter signalisiert den Punkt, an dem die von Kunden geleitete Migration beginnen kann. |
 |||||
-
-<!--
-[Reference:  If Azure Pre-Work][ Azure]
--->  
 
 ## <a name="dynamics-365"></a>Dynamics 365
 
@@ -113,20 +97,12 @@ Wenn Sie einen Drittanbieter-Service oder Branchen-Apps verwenden, die in Office
 | Für Dynamics 365-Sandkasten Abonnements müssen Sie unbedingt die Produktionsumgebung der Dynamics SQL-Instanz aus Ihrem Dynamics 365-Abonnement in Microsoft Cloud Deutschland herunterladen. Die neueste Produktionssicherung sollte im Sandkasten vor der Sandkasten Migration wiederhergestellt werden. | Bei der Migration von Dynamics 365 müssen Kunden sicherstellen, dass die Sandbox-Umgebung mit der neuesten Produktionsdatenbank aktualisiert wird. | Microsoft Dynamics-Kunden | Das Team des Teams hilft Kunden bei der Durchführung trockener Abfahrten, um das Versionsupgrade von 8. x auf 9,1. x zu validieren. |
 |||||
 
-<!--
-[Reference: Prework][Dynamics]
--->             
-
 ## <a name="power-bi"></a>Power BI
 
 | Schritt (e) | Beschreibung | Gilt für | Auswirkung |
 |:-------|:-----|:-------|:-------|
 | Entfernen von Objekten aus Power BI-Abonnements, die nicht von Power BI Microsoft Cloud Deutschland zu Office 365 Diensten migriert werden. | Für die Migration von Power BI-Diensten müssen Kundenaktionen zum Löschen bestimmter Artefakte, wie Datasets und Dashboards, erforderlich sein. | Power BI-Kunden | Administratoren müssen möglicherweise die folgenden Elemente aus Ihrem Abonnement entfernen: <br> -Real-Time Datasets (beispielsweise Streaming oder Push-Datasets) <br> -Power BI lokale Data Gateway-Konfiguration und-Datenquelle |
 |||||
-
-<!--
-[Reference: Prework][Power BI]
---> 
 
 ## <a name="dns"></a>DNS
 
@@ -135,20 +111,12 @@ Wenn Sie einen Drittanbieter-Service oder Branchen-Apps verwenden, die in Office
 | Überprüfen und Vorbereiten der DNS-Änderung, wenn das aktuelle DNS über einen MSOID-CNAME-Eintrag verfügt. | Änderungen an DNS-Zonen im Kundenbesitz | Office-Clientdienste-Kunden | Aktualisieren Sie die Gültigkeitsdauer (Time to Live, TTL) für kundeneigene DNS-Einträge auf 5 Minuten, wenn ein MSOID-CNAME vorhanden ist. |
 |||||
 
-<!--
-[Reference: Prework][DNS]
--->             
-
 ## <a name="federated-identity"></a>Identitätsverbund
 
 | Schritt (e) | Beschreibung | Gilt für | Auswirkung |
 |:-------|:-----|:-------|:-------|
 | Generieren der Vertrauensstellung der vertrauenden Seite für globale Azure AD Endpunkte. | Kunden müssen manuell eine Vertrauensstellung (rpt) der vertrauenden Seite auf [globale](https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml) Endpunkte erstellen. Dies erfolgt durch Hinzufügen eines neuen RPT über GUI durch Nutzung der globalen Verbundmetadaten-URL und anschließendes verwenden [Azure AD RPT-Anspruchsregeln](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator#:~:text=%20Azure%20AD%20RPT%20Claim%20Rules%20%201,Azure%20AD.%20This%20will%20be%20what...%20More%20) (in der AD FS-Hilfe), um die Anspruchsregeln zu generieren und in die RPT zu importieren. | Organisationen für die Verbundauthentifizierung | Erforderliche Aktion. Inaktivität führt zu Dienst Beeinträchtigungen während der Migration. |
 |||||
-
-<!--
-[Reference: Prework][Federation]
--->  
 
 ## <a name="more-information"></a>Weitere Informationen
 
@@ -161,9 +129,9 @@ Erste Schritte:
 
 Navigieren durch den Übergang:
 
-- [Migrationsphasen-Aktionen und-Auswirkungen](ms-cloud-germany-transition-phases.md)
+- [Phasen, Aktionen und Auswirkungen der Migration](ms-cloud-germany-transition-phases.md)
 - [Zusätzliche vorab Arbeit](ms-cloud-germany-transition-add-pre-work.md)
-- Zusätzliche Informationen zu [Diensten](ms-cloud-germany-transition-add-general.md), [Geräten](ms-cloud-germany-transition-add-devices.md), [Erfahrungen](ms-cloud-germany-transition-add-experience.md)und [AD FS](ms-cloud-germany-transition-add-adfs.md).
+- Zusätzliche Informationen zu [Azure AD](ms-cloud-germany-transition-azure-ad.md), [Geräten](ms-cloud-germany-transition-add-devices.md), [Erfahrungen](ms-cloud-germany-transition-add-experience.md)und [AD FS](ms-cloud-germany-transition-add-adfs.md).
 
 Cloud-apps:
 

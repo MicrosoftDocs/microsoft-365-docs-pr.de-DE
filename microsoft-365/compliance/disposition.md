@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Überwachen und Verwalten der Entsorgung von Inhalten, unabhängig davon, ob Sie die Löschungsprüfung verwenden oder Inhalte automatisch entsprechend den von Ihnen konfigurierten Einstellungen gelöscht werden.
-ms.openlocfilehash: 9900bbc58818a98ad41f4f796184ccf21041bbfe
-ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
+ms.openlocfilehash: 9c2e9055d0468270df4e46fe39115708762052f3
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "49409212"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682668"
 ---
 # <a name="disposition-of-content"></a>Disposition von Inhalten
 
@@ -35,16 +35,16 @@ Zum Verwalten von Löschungsprüfungen und zum bestätigen, dass Datensätze gel
 
 ### <a name="permissions-for-disposition"></a>Berechtigungen für Dispositionen
 
-Wenn Sie im Microsoft 365 Compliance Center auf die Registerkarte **Disposition** erfolgreich zugreifen möchten, müssen die Benutzer über die Administratorrolle der **Dispositionsverwaltung** verfügen. Diese Rolle ist Bestandteil der standardmäßigen Administratorrollengruppen **Compliance-Administrator** und **Compliance-Datenadministrator**.
-
-Wenn Sie Benutzern diese erforderliche Dispositionsverwaltungsrolle erteilen möchten, fügen Sie diese zu einer dieser Standardrollengruppen hinzu, oder erstellen Sie eine benutzerdefinierte Rollengruppe (z. B. "Dispositionsprüfer"), und gewähren Sie dieser Gruppe die Funktion "Dispositionsverwaltung".  
+Wenn Sie im Microsoft 365 Compliance Center auf die Registerkarte **Disposition** erfolgreich zugreifen möchten, müssen die Benutzer über die Administratorrolle der **Dispositionsverwaltung** verfügen. Ab Dezember 2020 ist diese Rolle nun in der Standardadministrator-Rollengruppe **Datensatzverwaltung** enthalten.
 
 > [!NOTE]
-> Sogar einem globalen Administrator muss die Rolle **Dispositionsverwaltung** zugewiesen werden. 
+> Die Rolle **Dispositionsverwaltung** wird einem globalen Administrator standardmäßig nicht zugewiesen. 
+
+Um Benutzern nur die Berechtigungen zu gewähren, die sie für Dispositionsprüfungen benötigen, ohne ihnen Berechtigungen zum Anzeigen und Konfigurieren anderer Features für die Aufbewahrung und die Datensatzverwaltung zu gewähren, erstellen Sie eine benutzerdefinierte Rollengruppe (z. B. mit dem Namen „Dispositionsprüfer“) und gewähren dieser Gruppe die Rolle „Dispositionsverwaltung“.
 
 Um den Inhalt von Elementen während des Dispositionsvorgangs anzuzeigen, fügen Sie zusätzlich Benutzer zu den folgenden beiden Rollengruppen hinzu: **Inhalts-Explorer-Inhaltsanzeige** und **Inhalts-Explorer-Listenanzeige**. Verfügen Benutzer nicht über die Berechtigungen dieser Rollengruppen, können sie zwar trotzdem eine Löschungsprüfungsaktion auswählen, um die Löschungsprüfung abzuschließen, müssen dies jedoch tun, ohne den Inhalt des Artikels im Compliance Center anzeigen zu können.
 
-Anweisungen finden Sie unter [Gewähren des Zugriffs auf das Office 365 Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Anweisungen zum Konfigurieren dieser Berechtigungen finden Sie unter [Gewähren des Zugriffs auf das Office 365 Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 ### <a name="enable-auditing"></a>Überwachung aktivieren
 

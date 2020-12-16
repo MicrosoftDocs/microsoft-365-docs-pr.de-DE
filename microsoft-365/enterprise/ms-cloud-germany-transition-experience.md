@@ -1,9 +1,9 @@
 ---
-title: Die Kundenerfahrung während der Migration auf Office 365-Dienste in den neuen deutschen Rechenzentrumsregionen
+title: Was hat sich für die Migration zu Office 365 Diensten in den neuen deutschen Rechenzentrums Regionen geändert?
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/01/2020
+ms.date: 12/11/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -18,15 +18,15 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: 'Zusammenfassung: Hier erfahren Sie, wie Sie von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365 Diensten im neuen rechenzentrumsbereich wechseln.'
-ms.openlocfilehash: a44fbe504a9a710856deeb3baf258feb124ce7ae
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+description: 'Zusammenfassung: Hier erfahren Sie, was sich bei der Umstellung von Microsoft Cloud Deutschland (Microsoft Cloud Deutschland) auf Office 365 Dienste im neuen rechenzentrumsbereich geändert hat.'
+ms.openlocfilehash: 0415f7b95cb9a9f2625798311946dac0f1f7c2c0
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551695"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688622"
 ---
-# <a name="customer-experience-during-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Die Kundenerfahrung während der Migration auf Office 365-Dienste in den neuen deutschen Rechenzentrumsregionen
+# <a name="what-has-changed-for-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Was hat sich für die Migration zu Office 365 Diensten in den neuen deutschen Rechenzentrums Regionen geändert?
 
 Mandanten Migrationen sind so konzipiert, dass Sie minimale Auswirkungen auf Administratoren und Benutzer haben. Allerdings gibt es unterschiedliche Überlegungen für jede Workload. Lesen Sie die folgenden Abschnitte, um die Migrationserfahrung für die Arbeitsauslastungen besser zu verstehen.
 
@@ -107,9 +107,9 @@ Erste Schritte:
 
 Navigieren durch den Übergang:
 
-- [Migrationsphasen-Aktionen und-Auswirkungen](ms-cloud-germany-transition-phases.md)
+- [Phasen, Aktionen und Auswirkungen der Migration](ms-cloud-germany-transition-phases.md)
 - [Zusätzliche vorab Arbeit](ms-cloud-germany-transition-add-pre-work.md)
-- Zusätzliche Informationen zu [Diensten](ms-cloud-germany-transition-add-general.md), [Geräten](ms-cloud-germany-transition-add-devices.md), [Erfahrungen](ms-cloud-germany-transition-add-experience.md)und [AD FS](ms-cloud-germany-transition-add-adfs.md).
+- Zusätzliche Informationen zu [Azure AD](ms-cloud-germany-transition-azure-ad.md), [Geräten](ms-cloud-germany-transition-add-devices.md), [Erfahrungen](ms-cloud-germany-transition-add-experience.md)und [AD FS](ms-cloud-germany-transition-add-adfs.md).
 
 Cloud-apps:
 

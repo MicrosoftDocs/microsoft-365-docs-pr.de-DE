@@ -21,12 +21,12 @@ search.appverid:
 - BSA160
 ms.assetid: 4ecfb843-e5d5-464d-8bf6-7ed512a9b213
 description: 'Rufen Sie den Bericht über die SharePoint-Websitenutzung ab, um zu erfahren, wie viele Dateien Benutzer in SharePoint-Websites speichern, wie viele aktiv verwendet werden und wie viel Speicher insgesamt verbraucht wird. '
-ms.openlocfilehash: 8c2428a49a42a1d259c69297feff13e5c00a9b8e
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 7da72dccb4a90ed204ffa785040b1968ac70feb3
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948856"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688205"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Microsoft 365-Berichte im Admin Center – Verwendung von SharePoint-Websites
 
@@ -39,9 +39,12 @@ Microsoft 365-Berichte im Admin Center werden für gcc High-und DoD-Mandanten ni
 ## <a name="how-to-get-to-the-sharepoint-site-usage-report"></a>Wie erhalten Sie einen Bericht zur Verwendung von SharePoint-Websites
 
 1. Wechseln Sie im Admin Center zu **Berichte** : \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Verwendung</a>.
-
     
-2. Wählen Sie in der Dropdownliste **Bericht auswählen** die Option **SharePoint** - \> **Websitenutzung**aus.
+2. Klicken Sie unter **SharePoint-Dateien** auf **mehr anzeigen**. 
+
+3. Klicken Sie neben **SharePoint-Aktivität** auf den Pfeil nach unten, um das Menü zu öffnen.
+
+4. Wählen Sie **SharePoint** \> - **Websitenutzung** aus.
   
 ## <a name="interpreting-the-sharepoint-site-usage-report"></a>Interpretieren des Berichts zur Verwendung von SharePoint-Websites
 
@@ -55,8 +58,8 @@ Microsoft 365-Berichte im Admin Center werden für gcc High-und DoD-Mandanten ni
 |4.  <br/> |Im Diagramm **Dateien** werden die Gesamtanzahl der Dateien auf allen Websites und die Anzahl der aktiven Dateien angezeigt. Die Anzahl aller Dateien umfasst sowohl Benutzerdateien als auch Systemdateien. Eine Datei wird als aktiv betrachtet, wenn sie gespeichert, synchronisiert, geändert oder innerhalb eines bestimmten Zeitraums freigegeben wurde.  |
 |5.  <br/> |Das Diagramm **Speicher** zeigt den Trend hinsichtlich des im Berichtszeitraum belegten Speicherplatzes an.  <br/> |
 |6.  <br/> |Im Diagramm **Seiten** wird die Anzahl der in allen Websites aufgerufenen Seiten angezeigt.  <br/> |
-|7.  <br/> |Sie können Diagramme, die angezeigt werden, Filtern, indem Sie ein Element in der Legende auswählen. Wählen Sie beispielsweise im Diagramm **Dateien** die Option **Dateien** oder **aktive Dateien**aus. Im Diagramm **Websites** können Sie **Gesamt Websites** oder **aktive Standorte**auswählen. Im **Speicher** Diagramm können Sie die **Speicherzuordnung** oder den **Speicherverbrauch auswählen.** Durch das Ändern dieser Auswahl werden die Informationen in der Gitternetztabelle nicht geändert.  <br/> |
+|7.  <br/> |Sie können Diagramme, die angezeigt werden, Filtern, indem Sie ein Element in der Legende auswählen. Wählen Sie beispielsweise im Diagramm **Dateien** die Option **Dateien** oder **aktive Dateien** aus. Im Diagramm **Websites** können Sie **Gesamt Websites** oder **aktive Standorte** auswählen. Im **Speicher** Diagramm können Sie die **Speicherzuordnung** oder den **Speicherverbrauch auswählen.** Durch das Ändern dieser Auswahl werden die Informationen in der Gitternetztabelle nicht geändert.  <br/> |
 |8.  <br/> | Die Tabelle zeigt eine Aufschlüsselung der Aktivitäten auf Ebene der einzelnen Websites.  <br/> ![Spaltenoptionen für Verwendungsbericht](../../media/sharepointsite-usage.png)           <br/> **Website-URL** ist die vollständige URL der Website.  <br/> **Gelöscht** ist der Löschstatus der Website. Es dauert mindestens sieben Tage, bis Websites als gelöscht markiert werden.  <br/> **Websitebesitzer** ist der Benutzername des primären Besitzers der Website.  <br/>Der **Prinzipalname des Websitebesitzers** ist die e-Mail-Adresse des Besitzers der Website.  <br/> **Datum der letzten Aktivität (UTC)** bezieht sich auf das Datum, wann die letzte Dateiaktivität erkannt bzw. wann eine Seite auf der Website angezeigt wurde.      <br/> **Dateien** entspricht der Anzahl von Dateien auf der Website.  <br/> **Aktive Dateien** ist die Anzahl der aktiven Dateien auf der Website.<br/> Hinweis: Wenn Dateien während des angegebenen Zeitraums für den Bericht entfernt wurden, kann die Anzahl der aktiven Dateien, die im Bericht angezeigt werden, größer sein als die aktuelle Anzahl der Dateien auf der Website.<br/>**Verwendeter Speicherplatz (MB)** entspricht der auf der Website aktuell verwendeten Speichermenge.  <br/> **Zugeordneter Speicher (MB)** entspricht dem maximalen Speicherplatz, der der Website zugeordnet ist.  <br/> **Seitenansichten** gibt an, wie oft Seiten auf der Website angezeigt wurden.  <br/> **Besuchte Seiten** gibt an, wie viele verschiedene Seiten auf der Website aufgerufen wurden.  <br/> **Stammwebvorlage** ist die zum Erstellen der Website verwendete Vorlage.  <br/> Hinweis: Wenn Sie die Daten nach unterschiedlichen Websitetypen filtern möchten, exportieren Sie die Daten, und verwenden Sie die Stamm-Webvorlagen Spalte. <br/>Wenn die Richtlinien Ihrer Organisation das Anzeigen von Berichten verhindern, in denen Benutzerinformationen identifizierbar sind, können Sie die Datenschutzeinstellung für alle diese Berichte ändern. Lesen Sie den Abschnitt zum **Ausblenden von Details auf Benutzerebene** in den [Aktivitätsberichten im Microsoft 365 Admin Center](activity-reports.md).  <br/> |
-|9.  <br/> |Wählen **Sie Spalten verwalten**Spalten ![ Verwalten ](../../media/13d2e536-de88-4db3-80c7-7a3a57298eb4.png) aus, um Spalten aus dem Bericht hinzuzufügen oder zu entfernen.    <br/> |
+|9.  <br/> |Wählen **Sie Spalten verwalten** Spalten ![ Verwalten ](../../media/13d2e536-de88-4db3-80c7-7a3a57298eb4.png) aus, um Spalten aus dem Bericht hinzuzufügen oder zu entfernen.    <br/> |
 |10.  <br/> |Sie können die Berichtsdaten auch in eine Excel. CSV-Datei exportieren, indem Sie den Link **Export** exportieren auswählen ![ ](../../media/4dc548cc-8061-48d5-9240-6793affca43a.png) . Dadurch werden Daten für alle Websites exportiert, und Sie können einfache Sortier- und Filtervorgänge zur weiteren Analyse ausführen. Bei weniger als 2000 Websites können Sie innerhalb der Tabelle im Bericht selbst sortieren und filtern. Bei mehr als 2000 Websites müssen Sie die Daten zum Filtern und Sortieren exportieren.  <br/> Hinweis: Wenn die Daten in eine Excel-Datei exportiert werden, beachten Sie, dass das Datum, an dem der Inhaltsbericht generiert wurde, in der Datei in der Spalte **Daten als von** angezeigt wird.      <br/>   |
 |||

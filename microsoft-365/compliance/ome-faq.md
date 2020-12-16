@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Haben Sie eine Frage zur Funktionsweise der neuen Nachrichtenschutzfunktionen? Hier finden Sie eine Antwort.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: efccbdf2be33fb771e7e68ba5a0b3dafa82d9ce8
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: a83e8b05f59ff05d22422431683e26b11bb8a780
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546059"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688607"
 ---
 # <a name="message-encryption-faq"></a>Häufig gestellte Fragen zur Nachrichtenverschlüsselung
 
@@ -56,7 +56,7 @@ Um die neuen OM-Funktionen verwenden zu können, benötigen Sie einen der folgen
 
 ## <a name="can-i-use-exchange-online-with-bring-your-own-key-byok-in-azure-information-protection"></a>Kann ich Exchange Online mit "eigenen Schlüssel holen" (BYOK) in Azure Information Protection verwenden?
 
-Ja! Microsoft empfiehlt, die Schritte zum Einrichten von BYOK vor dem Einrichten von OM abzuschließen.
+Ja. Microsoft empfiehlt, die Schritte zum Einrichten von BYOK vor dem Einrichten von OM abzuschließen.
   
 Weitere Informationen zu BYOK finden Sie unter [Planung und Implementierung Ihres Azure Information Protection-Mandanten Schlüssels](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key).
   
@@ -96,15 +96,19 @@ Lokale Benutzer können verschlüsselte e-Mails mit Exchange Online Nachrichtenf
   
 ## <a name="what-email-client-do-i-need-to-use-in-order-to-create-an-ome-encrypted-message-what-applications-are-supported-for-sending-protected-messages"></a>Welchen e-Mail-Client muss ich verwenden, um eine OM-verschlüsselte Nachricht zu erstellen? Welche Anwendungen werden für das Senden geschützter Nachrichten unterstützt?
 
-Sie können geschützte Nachrichten aus Outlook 2016 und Outlook 2013 für Windows und Mac und aus Outlook im Internet erstellen.
+Sie können geschützte Nachrichten aus Outlook 2016, Outlook 2013 für Windows und Mac und aus Outlook im Internet erstellen. Weitere Informationen zum Senden von verschlüsselten Nachrichten finden Sie unter [senden, anzeigen und Antworten auf verschlüsselte Nachrichten in Outlook für PC](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-us&rs=en-us&ad=us).
   
 ## <a name="what-email-clients-are-supported-to-read-and-reply-to-protected-emails"></a>Welche e-Mail-Clients werden zum Lesen und beantworten geschützter e-Mails unterstützt?
 
 Microsoft 365-Benutzer können Outlook für Windows und Mac (2013 und 2016), Outlook im Web und Outlook Mobile (Android und IOS) lesen und darauf antworten. Sie können auch den IOS-systemeigenen e-Mail-Client verwenden, wenn Ihre Organisation dies zulässt. Wenn Sie kein Microsoft 365-Benutzer sind, können Sie verschlüsselte Nachrichten im Web über Ihren Webbrowser lesen und beantworten.
-  
+
+## <a name="what-email-clients-support-the-encrypt-only-protected-emails"></a>Welche e-Mail-Clients unterstützen die verschlüsselten geschützten e-Mails?
+
+Microsoft 365-Benutzer können Outlook für PC-Versionen 2019 und Microsoft 365 verwenden, um e-Mail-geschützt mit der Richtlinie zum Verschlüsseln von e-Mails zu erstellen.  Das bedeutet, dass Nachrichten, auf die die neue Richtlinie zum Verschlüsseln angewendet wird, direkt in Outlook im Web, in Outlook für IOS und Android und jetzt in Outlook für PC-Versionen 2019 und Microsoft 365 gelesen werden können.
+
 ## <a name="is-there-a-size-limit-for-messages-you-can-send-with-ome"></a>Gibt es eine Größenbeschränkung für Nachrichten, die Sie mit OM senden können?
 
-Ja. Die maximale Nachrichtengröße, die Sie mit OM senden können, einschließlich Anlagen, beträgt 30 MB.
+Ja. Die maximale Nachrichtengröße, die Sie mit OM senden können, einschließlich Anlagen, beträgt 25 MB. Weitere Informationen finden Sie unter [Nachrichtengrenzwerte](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-1).
 
 ## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>Welche Dateitypen werden als Anlagen in geschützten e-Mail-Nachrichten unterstützt? Erben Anlagen die Schutzrichtlinien, die geschützten e-Mails zugeordnet sind?
 
@@ -139,6 +143,11 @@ Not yet. OneDrive für Unternehmen Anlagen werden nicht unterstützt, und Endben
 
 Wenn Anlagen mit einer geschützten e-Mail geschützt sind, bieten Outlook-Clients die Möglichkeit, das Dokument direkt anzuzeigen. Outlook unterstützt die Vorschau von Office-Dokumenten (DOCX, xlsx, PPTX, doc, xls, PPT). Outlook im Internet unterstützt die Vorschau von Office-Dokumenten (DOCX, xlsx, PPTX) und PDF.  
 
+## <a name="what-email-clients-support-revocation-of-protected-emails"></a>Welche e-Mail-Clients unterstützen die Sperrung geschützter e-Mails?
+
+Outlook im Internet unterstützt die Sperrung von geschützter e-Mail.  Weitere Informationen finden Sie unter [Vorgehensweise widerrufen einer verschlüsselten Nachricht, die Sie gesendet haben](https://docs.microsoft.com/microsoft-365/compliance/revoke-ome-encrypted-mail?view=o365-worldwide#how-to-revoke-an-encrypted-message-that-you-sent) .
+
+
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies"></a>Kann ich Nachrichten automatisch verschlüsseln, indem ich Richtlinien einrichte?
 
 Ja. Verwenden von Nachrichtenfluss Regeln in Exchange Online zum automatischen Verschlüsseln einer Nachricht basierend auf bestimmten Bedingungen. Sie können beispielsweise Richtlinien erstellen, die auf der Empfänger-ID, der Empfängerdomäne oder auf dem Inhalt im Textkörper oder Betreff der Nachricht basieren. Siehe [Definieren von Nachrichtenfluss Regeln zum Verschlüsseln von e-Mail-Nachrichten in Office 365](define-mail-flow-rules-to-encrypt-email.md).
@@ -149,11 +158,11 @@ Administratoren können eine e-Mail-Fluss Regel einrichten, um die Verschlüssel
 
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies-in-data-loss-prevention-dlp-through-the-security-amp-compliance-center"></a>Kann ich Nachrichten automatisch verschlüsseln, indem ich Richtlinien in Data Loss Prevention (DLP) über das Security Compliance Center einrichtete &amp; ?
 
-Ja! Sie können Nachrichtenfluss Regeln in Exchange Online oder mithilfe von DLP im Security &amp; Compliance Center einrichten.
+Ja. Sie können Nachrichtenfluss Regeln in Exchange Online oder mithilfe von DLP im Security &amp; Compliance Center einrichten.
   
 ## <a name="can-i-customize-encrypted-messages-with-my-company-branding"></a>Kann ich verschlüsselte Nachrichten mit dem Branding meines Unternehmens anpassen?
 
-Ja! Informationen zum Anpassen von e-Mail-Nachrichten und zum OM-Portal finden Sie unter Hinzufügen der Marke Ihrer Organisation zu ihren verschlüsselten Nachrichten. Weitere Informationen finden Sie unter [Hinzufügen der Marke Ihrer Organisation zu verschlüsselten Nachrichten](add-your-organization-brand-to-encrypted-messages.md).
+Ja. Informationen zum Anpassen von e-Mail-Nachrichten und zum OM-Portal finden Sie unter Hinzufügen der Marke Ihrer Organisation zu ihren verschlüsselten Nachrichten. Weitere Informationen finden Sie unter [Hinzufügen der Marke Ihrer Organisation zu verschlüsselten Nachrichten](add-your-organization-brand-to-encrypted-messages.md).
   
 ## <a name="are-there-any-reporting-capabilities-or-insights-for-encrypted-emails"></a>Gibt es Berichtsfunktionen oder Einblicke in verschlüsselte e-Mails?
 
@@ -173,7 +182,7 @@ Diese Funktion kann gegenwärtig nicht verwendet werden.
 
 ## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>Kann ich an ein freigegebenes Postfach gesendete verschlüsselte Nachrichten öffnen?
 
-Ja! Verschlüsselte Nachrichten werden für ein freigegebenes Postfach unterstützt.
+Ja. Verschlüsselte Nachrichten werden für ein freigegebenes Postfach unterstützt.
 
 - Benutzer können geschützte e-Mail-Nachrichten in einem freigegebenen Postfach öffnen, in dem das freigegebene Postfach eine geschützte e-Mail als Teil einer Verteilergruppe erhalten hat.
 

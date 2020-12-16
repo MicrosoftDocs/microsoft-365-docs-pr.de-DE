@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Hier erfahren Sie, wie Sie Legacydateien in Office 365 Nachrichtenverschlüsselung (OM) für Ihre Organisation umstellen.
-ms.openlocfilehash: ecf4723df9afdf09d63150a3ec7564df44dd9808
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: 23f287fd01949d710c5cc5c65f0c36c6055d3a57
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408993"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688432"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Legacyinformationen für die Office 365-Nachrichtenverschlüsselung
 
@@ -73,11 +73,11 @@ Weitere Informationen zum Erstellen von Exchange-Nachrichtenfluss Regeln finden 
 
 2. Wählen Sie die Kachel **Admin** aus.
 
-3. Wählen Sie im Microsoft 365 Admin Center **Admin** Center \> **Exchange**aus.
+3. Wählen Sie im Microsoft 365 Admin Center **Admin** Center \> **Exchange** aus.
 
-4. Wechseln Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln** , und wählen Sie **Neues** ![ Neues Symbol neue ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Regel erstellen**aus. Weitere Informationen zur Verwendung der Exchange-Verwaltungskonsole finden Sie unter [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+4. Wechseln Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln** , und wählen Sie **Neues** ![ Neues Symbol neue ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Regel erstellen** aus. Weitere Informationen zur Verwendung der Exchange-Verwaltungskonsole finden Sie unter [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
-5. Geben Sie unter **Name**einen Namen für die Regel ein, beispielsweise Verschlüsseln von e-Mails für DrToniRamos@hotmail.com.
+5. Geben Sie unter **Name** einen Namen für die Regel ein, beispielsweise Verschlüsseln von e-Mails für DrToniRamos@hotmail.com.
 
 6. Wählen Sie unter **Diese Regel anwenden, wenn** eine Bedingung aus, und geben Sie ggf. einen Wert ein. Geben Sie beispielsweise Folgendes ein, um Nachrichten an "DrToniRamos@hotmail.com" zu verschlüsseln:
 
@@ -87,13 +87,13 @@ Weitere Informationen zum Erstellen von Exchange-Nachrichtenfluss Regeln finden 
 
       - Um einen vorhandenen Namen auszuwählen, wählen Sie ihn in der Liste aus, und klicken Sie dann auf **OK**.
 
-      - Geben Sie zum Eingeben eines neuen Namens eine e-Mail-Adresse in das Feld **Namen überprüfen** ein, und wählen Sie dann **Namen überprüfen** \> **OK**aus.
+      - Geben Sie zum Eingeben eines neuen Namens eine e-Mail-Adresse in das Feld **Namen überprüfen** ein, und wählen Sie dann **Namen überprüfen** \> **OK** aus.
 
 7. Um weitere Bedingungen hinzuzufügen, wählen Sie **Weitere Optionen** aus, und wählen Sie dann **Bedingung hinzufügen** aus, und wählen Sie aus der Liste aus.
 
-   Wenn Sie beispielsweise die Regel nur dann anwenden möchten, wenn sich der Empfänger außerhalb Ihrer Organisation befindet, wählen Sie **Bedingung hinzufügen** aus, und wählen Sie dann **den Empfänger ist extern/intern** \> **außerhalb der Organisation** \> **OK**aus.
+   Wenn Sie beispielsweise die Regel nur dann anwenden möchten, wenn sich der Empfänger außerhalb Ihrer Organisation befindet, wählen Sie **Bedingung hinzufügen** aus, und wählen Sie dann **den Empfänger ist extern/intern** \> **außerhalb der Organisation** \> **OK** aus.
 
-8. Um die Verschlüsselung ohne Verwendung der neuen OM-Funktionen zu aktivieren, wählen Sie unter **Folgendes ausführen die**Option **Nachrichtensicherheit** \> **Anwenden der vorherigen Version von OM**ändern aus, und wählen Sie dann **Speichern**aus.
+8. Um die Verschlüsselung ohne Verwendung der neuen OM-Funktionen zu aktivieren, wählen Sie unter **Folgendes ausführen die** Option **Nachrichtensicherheit** \> **Anwenden der vorherigen Version von OM** ändern aus, und wählen Sie dann **Speichern** aus.
 
    Wenn Sie eine Fehlermeldung erhalten, dass IRM-Lizenzierung nicht aktiviert ist, verwenden Sie nicht Legacy om.
 
@@ -129,15 +129,15 @@ Wenn Ihre E-Mail-Benutzer verschlüsselte Nachrichten senden, können Empfänger
 
 2. Wählen Sie die Kachel **Admin** aus.
 
-3. Wählen Sie im Microsoft 365 Admin Center **Admin** Center \> **Exchange**aus.
+3. Wählen Sie im Microsoft 365 Admin Center **Admin** Center \> **Exchange** aus.
 
-4. Wechseln Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln** , und wählen Sie **Neues** ![ Neues Symbol neue ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Regel erstellen**aus. Weitere Informationen zur Verwendung der Exchange-Verwaltungskonsole finden Sie unter [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+4. Wechseln Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln** , und wählen Sie **Neues** ![ Neues Symbol neue ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Regel erstellen** aus. Weitere Informationen zur Verwendung der Exchange-Verwaltungskonsole finden Sie unter [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
-5. Geben Sie unter **Name**einen Namen für die Regel ein, beispielsweise die Verschlüsselung aus eingehenden e-Mails entfernen.
+5. Geben Sie unter **Name** einen Namen für die Regel ein, beispielsweise die Verschlüsselung aus eingehenden e-Mails entfernen.
 
-6. Wählen Sie unter **diese Regel anwenden, wenn** die Bedingungen aus, aus denen die Verschlüsselung aus Nachrichten entfernt werden soll, wie **der Empfänger** sich \> **innerhalb der Organisation**befindet.
+6. Wählen Sie unter **diese Regel anwenden, wenn** die Bedingungen aus, aus denen die Verschlüsselung aus Nachrichten entfernt werden soll, wie **der Empfänger** sich \> **innerhalb der Organisation** befindet.
 
-7. Wählen Sie unter **Folgendes ausführen**die Option **Nachrichtensicherheit ändern** aus, um \> **die vorherige Version von OM zu entfernen**.
+7. Wählen Sie unter **Folgendes ausführen** die Option **Nachrichtensicherheit ändern** aus, um \> **die vorherige Version von OM zu entfernen**.
 
 8. Wählen Sie **Speichern** aus.
 
@@ -250,7 +250,7 @@ Nein, die verschlüsselten Nachrichten werden auf dem e-Mail-System des Empfäng
   
  **F. Kann ich meine Marke in verschlüsselte E-Mail-Nachrichten einbinden?**
   
-Ja. Sie können Windows PowerShell-Cmdlets verwenden, um den Standardtext, der oben in verschlüsselten E-Mail-Nachrichten angezeigt wird, sowie den Haftungsausschlusstext und das Logo, das Sie für E-Mail-Nachrichten und das Verschlüsselungsportal verwenden möchten, anpassen. Weitere Informationen finden Sie unter [Add branding to encrypted messages](add-your-organization-brand-to-encrypted-messages.md).
+Ja. Sie können Windows PowerShell-Cmdlets verwenden, um den Standardtext, der oben in verschlüsselten E-Mail-Nachrichten angezeigt wird, sowie den Haftungsausschlusstext und das Logo, das Sie für E-Mail-Nachrichten und das Verschlüsselungsportal verwenden möchten, anpassen. Dieses Feature ist jetzt in OMEv2 verfügbar. Weitere Informationen finden Sie unter [Add branding to encrypted messages](add-your-organization-brand-to-encrypted-messages.md).
   
  **F. Ist für den Dienst eine Lizenz für jeden Benutzer in meiner Organisation erforderlich?**
   
