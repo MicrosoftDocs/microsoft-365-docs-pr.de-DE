@@ -119,7 +119,7 @@
                   href: mtp/mtp-autoir.md
                 - name: Konfigurieren der Funktionen der automatischen Untersuchung und Reaktion
                   href: mtp/mtp-configure-auto-investigation-response.md
-                - name: Korrekturaktionen nach automatischen Untersuchungen
+                - name: Wartungsaktionen
                   href: mtp/mtp-remediation-actions.md
                 - name: Aufrufen des Aktionszentrums
                   href: mtp/mtp-action-center.md
