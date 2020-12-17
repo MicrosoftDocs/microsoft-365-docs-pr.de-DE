@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: Informationen zum Anwenden eines veröffentlichten Modells auf eine SharePoint-Dokumentbibliothek
-ms.openlocfilehash: 0ca58e863d42d41b634978f53f55201a10a5ed93
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 9c99ede49633b5ae70cbb67c30d83c111084df95
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087487"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701141"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Anwenden eines Dokumentverständnismodells in Microsoft SharePoint Syntex
 
@@ -77,6 +77,9 @@ Während ein angewendetes Modell alle Dateien verarbeitet, die nach der Anwendun
 3. Die ausgewählten Dateien werden der Warteschlange zur Verarbeitung hinzugefügt.
 
       ![Klassifizieren und extrahieren](../media/content-understanding/extract-classify.png)</br> 
+
+> [!NOTE]
+> Sie können einzelne Dateien in eine Bibliothek kopieren und auf ein Modell anwenden, aber keine Ordner.
 
 ## <a name="see-also"></a>Siehe auch
 [Erstellen einer Klassifizierung](create-a-classifier.md)

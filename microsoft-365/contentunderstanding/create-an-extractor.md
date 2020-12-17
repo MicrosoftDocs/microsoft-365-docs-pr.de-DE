@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: Erfahren Sie, wie Sie in Microsoft Office SharePoint Syntex einen Extraktor erstellen.
-ms.openlocfilehash: 99d2a4602c03d8a7207736ea17ed500626ce43ac
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: b957d905f3807f6007ebeb742d9b56d81ea38ac2
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087463"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701129"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Extraktor in Microsoft SharePoint Syntex erstellen
 
@@ -37,7 +37,9 @@ Dazu müssen Sie für jede Entität, die aus dem Dokument extrahiert werden soll
 
 1. Klicken Sie auf der Startseite des Modells auf den Titel **Extraktoren erstellen und trainieren**, und wählen Sie dann **Extraktor trainieren** aus.
 2. Geben Sie in der Anzeige **Neue Entitätsextraktionsfunktion** den Namen Ihres Extraktors in das Feld **Neuer Extraktorname** ein. Vergeben Sie beispielsweise den Namen **Startdatum der Inbetriebnahme**, wenn Sie das Startdatum der Inbetriebnahme aus jedem Dokument zu Vertragsverlängerungen extrahieren möchten. Sie können auch eine bereits erstellte Spalte wiederverwenden (beispielsweise eine Spalte mit verwalteten Metadaten).
-3. Klicken Sie auf **Erstellen**.
+> [!NOTE]
+> Wenn Sie einen neuen Extraktor erstellen, dann **Neuer Spaltentyp** und **Einzelne Textzeile** auswählen, beträgt die maximale Anzahl von Zeichen 255. Alle Zeichen, die Sie eingeben und die das Limit überschreiten, werden abgeschnitten. 
+3. Wenn Sie fertig sind, klicken Sie auf **Erstellen**.
 
 ## <a name="add-a-label"></a>Hinzufügen einer Beschriftung
 

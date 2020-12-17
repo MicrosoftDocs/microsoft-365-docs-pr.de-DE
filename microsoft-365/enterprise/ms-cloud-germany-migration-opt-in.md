@@ -21,7 +21,7 @@ ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Zusammenfassung: '
 ms.openlocfilehash: 35d11825148af883299aed1bcb2346d26d52408c
 ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/16/2020
 ms.locfileid: "49688677"
@@ -29,12 +29,12 @@ ms.locfileid: "49688677"
 # <a name="how-to-opt-in-for-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Anmelden für die Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen
 
 >[!Note]
->Dieser Artikel gilt nur für Microsoft Cloud Germany (Microsoft Cloud Deutschland)-Kunden.
+>Dieser Artikel gilt nur für Kunden von Microsoft Cloud Germany (Microsoft Cloud Deutschland).
 >
 
 ## <a name="how-to-request-migration"></a>So fordern Sie die Migration an
 
-Für berechtigte Kunden mit in Microsoft Cloud Deutschland bereitgestelltem Dienst wird eine Seite im Microsoft 365 Admin Center angezeigt, über die ein Kunde mandantenadministrator sich für die Migration anmelden kann.
+Berechtigte Kunden, welche Dienste von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zur Verfügung gestellt erhalten, werden eine Seite im Microsoft 365 Admin Center sehen, über die sich der Mandantenadministrator des Kunden für die Migration anmelden kann.
 
 Um auf die Seite im Microsoft 365 Admin Center zuzugreifen, erweitern Sie im Navigationsbereich auf der linken Seite **Einstellungen**, und klicken Sie dann auf **Organisationsprofil**.
 
@@ -54,13 +54,13 @@ Sobald ein Administrator im Namen Ihres Mandanten die Aktivierung vorgenommen ha
 
 ## <a name="what-happens-after-opting-in-for-migration"></a>Was geschieht, nachdem ich die Migration aktiviert habe?
 
-Migrationen beginnen Anfang 2021 für Organisationen, die sich für den Microsoft-gesteuerten Ansatz entscheiden und vor dem Microsoft Cloud Germany (Microsoft Cloud Deutschland) am 29. Oktober 2021 abgeschlossen sind.  Als Ergebnis der Migration werden die wichtigsten Kundendaten und -abonnements in die neuen deutschen Regionen verschoben.  Microsoft sendet während des gesamten Migrationsprozesses Updates im Nachrichtencenter.  Weitere Informationen finden Sie in den Artikeln, auf die unten verwiesen wird.
+Die Migrationen beginnen Anfang 2021 für Organisationen, die sich für den von Microsoft geleiteten Ansatz anmelden, und sie werden vor dem Deaktivierungsdatum von Microsoft Cloud Germany (Microsoft Cloud Deutschland) am 29. Oktober 2021 abgeschlossen sein.  Als Ergebnis der Migration werden die wichtigsten Kundendaten und -abonnements in die neuen deutschen Regionen verschoben.  Microsoft sendet während des gesamten Migrationsprozesses Updates im Nachrichtencenter.  Weitere Informationen hierzu finden Sie in den nachstehend aufgeführten Artikeln.
 
-## <a name="what-happens-if-the-customer-tenant-administrator-does-not-opt-in-for-migration-in-admin-center"></a>Was geschieht, wenn der Kunde mandantenadministrator sich nicht für die Migration in Admin Center entscheidet?
+## <a name="what-happens-if-the-customer-tenant-administrator-does-not-opt-in-for-migration-in-admin-center"></a>Was geschieht, wenn der Mandantenadministrator des Kunden sich im Admin Center nicht für die Migration anmeldet?
 
-Die Online-Dienste-Bedingungen wurden mit Begriffen geändert, die Microsoft die Migration Ihrer Microsoft 365-, Dynamics 365-und Power BI-Daten und-Abonnements von Microsoft Cloud Deutschland in ein neues Rechenzentrum ermöglichen sollen. Diese Bedingungen treten in einem Microsoft Cloud Deutschland (Microsoft Cloud Deutschland)-Abonnement auf, das seit dem 1. Mai 2020 erneuert wurde.  Der Kunde mandantenadministrator erhält eine Benachrichtigung in e-Mail-und Nachrichten Center, in der er darauf hinweist, dass das Anmelden bei der Migration automatisch für eine von Microsoft unterstützte Migration gilt. Dieser Hinweis wird mindestens 30 Tage vor dem automatischen Anmelden gesendet.  Nach der Migration werden alle Kommunikations-und Statusaktualisierungen an Kundenmandanten Administratoren im Message Center gesendet.
+Die Nutzungsbedingungen für Onlinedienste haben sich geändert und umfassen Bedingungen, die es Microsoft erlaubt, Ihre Daten und Abonnements für Microsoft 365, Dynamics 365 und Power BI von Microsoft Cloud Deutschland in ein neues Rechenzentrum zu migrieren. Diese Bestimmungen gelten für jedes Abonnement von Microsoft Cloud Germany (Microsoft Cloud Deutschland), das seit dem 1. Mai 2020 verlängert wurde.  Der Mandantenadministrator des Kunden erhält eine Benachrichtigung per E-Mail und im Nachrichtencenter und wird informiert, dass die Anmeldung für eine von Microsoft geleitete Migration automatisch vorgenommen wird. Diese Benachrichtigung wird mindestens 30 Tage vor der automatischen Anmeldung gesendet.  Nach der Anmeldung zur Migration werden die gesamte Kommunikation und alle Statusaktualisierungen über das Nachrichtencenter an den Mandantenadministrator des Kunden gesendet.
 
-Kunden-und Partner mandantenadministratoren wird empfohlen, sich für die Migration in Admin Center anzumelden, damit der Migrationsprozess so schnell wie möglich beginnen kann.
+Administratoren von Kunden- und Partnermandanten werden gebeten, sich so bald wie möglich für die Migration im Admin Center anzumelden, damit der Migrationsprozess frühzeitig beginnen kann.
 
 
 ## <a name="next-step"></a>Nächster Schritt
@@ -71,17 +71,17 @@ Kunden-und Partner mandantenadministratoren wird empfohlen, sich für die Migrat
 
 Erste Schritte:
 
-- [Migration von Microsoft Cloud Deutschland zu Office 365 Diensten in den neuen Regionen des deutschen Rechenzentrums](ms-cloud-germany-transition.md)
-- [Hilfe zur Microsoft Cloud Deutschland-Migration Assistance](https://aka.ms/germanymigrateassist)
+- [Migration von Microsoft Cloud Deutschland zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen](ms-cloud-germany-transition.md)
+- [Hilfe zur Microsoft Cloud Deutschland-Migration](https://aka.ms/germanymigrateassist)
 - [Kundenerfahrung während der Migration](ms-cloud-germany-transition-experience.md)
 
-Navigieren durch den Übergang:
+Der Weg durch die Umstellung:
 
 - [Phasen, Aktionen und Auswirkungen der Migration](ms-cloud-germany-transition-phases.md)
-- [Zusätzliche vorab Arbeit](ms-cloud-germany-transition-add-pre-work.md)
-- Zusätzliche Informationen zu [Azure AD](ms-cloud-germany-transition-azure-ad.md), [Geräten](ms-cloud-germany-transition-add-devices.md), [Erfahrungen](ms-cloud-germany-transition-add-experience.md)und [AD FS](ms-cloud-germany-transition-add-adfs.md).
+- [Zusätzliche Vorarbeit](ms-cloud-germany-transition-add-pre-work.md)
+- Zusätzliche Informationen zu [Azure AD](ms-cloud-germany-transition-azure-ad.md), [Geräten](ms-cloud-germany-transition-add-devices.md), [Erfahrungen](ms-cloud-germany-transition-add-experience.md) und [AD FS](ms-cloud-germany-transition-add-adfs.md).
 
-Cloud-apps:
+Cloud-Apps
 
 - [Informationen zum Dynamics 365-Migrationsprogramm](https://aka.ms/d365ceoptin)
 - [Informationen zum Power BI-Migrationsprogramm](https://aka.ms/pbioptin)

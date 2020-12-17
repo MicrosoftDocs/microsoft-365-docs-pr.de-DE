@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: Nutzen Sie die Taxonomie von Terminologiespeicher, wenn Sie einen Extraktor in Ihrem Dokumentverständnismodell in Microsoft SharePoint Syntex erstellen.
-ms.openlocfilehash: 0008dd02ef46401e9f0c9414b8363cff034c18eb
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: a8078e6ff2d2ecd0f98c22b602a54675f7d62816
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087321"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701095"
 ---
 # <a name="leverage-term-store-taxonomy-when-creating-an-extractor"></a>Nutzung der Terminologiespeichertaxonomie beim Erstellen eines Extraktors
 
@@ -25,19 +25,20 @@ ms.locfileid: "49087321"
 
 </br>
 
-
-Wenn Sie in SharePoint Syntex einen Extraktor in Ihrem Dokumentverständnismodell erstellen, können Sie die Taxonomie des Terminologiespeichers der [Verwalteten Metadatendienste](https://docs.microsoft.com/sharepoint/managed-metadata#terms) nutzen, um bevorzugte Begriffe für die von Ihnen extrahierten Daten anzuzeigen.  
+Wenn Sie mit SharePoint Syntex einen Extraktor in Ihrem Dokumentverständnis-Modell erstellen, können Sie die Taxonomie des Terminologiespeichers der [Verwalteten Metadatendienste](https://docs.microsoft.com/sharepoint/managed-metadata#terms) nutzen, um bevorzugte Begriffe für die von Ihnen extrahierten Daten anzuzeigen.  
 
 Ihr Modell identifiziert und klassifiziert beispielsweise alle **Vertrags** dokumente, die in die Dokumentbibliothek hochgeladen werden.  Darüber hinaus extrahiert das Modell aus jedem Vertrag einen **Vertragsdienst** wert und zeigt ihn in einer Spalte in Ihrer Bibliotheksansicht an. Unter den verschiedenen Vertragsdienst-Werten in den Verträgen gibt es mehrere ältere Werte, die Ihr Unternehmen nicht mehr verwendet und die umbenannt wurden. So sollten beispielsweise alle Bezüge auf die Begriffe *Design*, *Grafiken* oder *Topographie*-Vertragsdienste als *Kreativ* bezeichnet werden. Wenn Ihr Modell einen der veralteten Begriffe aus einem Vertragsdokument extrahiert, soll der aktuelle Ausdruck – Kreativ – in Ihrer Bibliotheksansicht angezeigt werden. Im folgenden Beispiel sehen wir beim Trainieren des Modells, dass ein Beispieldokument den veralteten Begriff *Design* enthält.
 
    ![Terminologiespeicher](../media/content-understanding/design.png)</br>
 
-
 ## <a name="use-a-managed-metadata-column-in-your-extractor"></a>Verwenden Sie eine Spalte für verwaltete Metadaten in Ihrem Extraktor
 
-Ausdruckssätze werden im Terminologiespeicher für verwaltete Metadatendienste im SharePoint Online Admin Center konfiguriert. Im folgenden Beispiel ist der [Ausdruckssatz](https://docs.microsoft.com/sharepoint/managed-metadata#term-set) für *Vertragsdienste* so konfiguriert, dass er eine Reihe von Begriffen enthält, einschließlich *Kreativ*.  Die Details dafür zeigen, dass der Begriff drei Synonyme (*Design*, *Grafiken* und *Topographie*) aufweist, und die Synonyme sollten in *Kreativ* übersetzt werden. 
+Ausdruckssätze werden im Terminologiespeicher für verwaltete Metadatendienste (MMS) im SharePoint Online Admin Center konfiguriert. Im folgenden Beispiel ist der [Ausdruckssatz](https://docs.microsoft.com/sharepoint/managed-metadata#term-set) für *Vertragsdienste* so konfiguriert, dass er eine Reihe von Begriffen enthält, einschließlich *Kreativ*.  Die Details dafür zeigen, dass der Begriff drei Synonyme (*Design*, *Grafiken* und *Topographie*) aufweist, und die Synonyme sollten in *Kreativ* übersetzt werden. 
 
    ![Ausdruckssatz](../media/content-understanding/term-store.png)</br>
+
+> [!NOTE]
+>  Ausdruckssätze werden im MMS-Feld des Inhaltscenters als „global“ konfiguriert.
 
 Es kann mehrere Gründe geben, warum Sie möglicherweise ein Synonym in Ihrem Ausdruckssatz verwenden möchten. Beispielsweise kann es veraltete Ausdrücke, umbenannte Ausdrücke oder Abweichungen zwischen den Abteilungen Ihres Unternehmens bei der Benennung geben.
 
