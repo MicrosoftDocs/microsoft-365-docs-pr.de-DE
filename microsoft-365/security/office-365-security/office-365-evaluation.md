@@ -17,12 +17,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 54acf9d21e3dd935f8b87c6ee4a13ab30e7bc59e
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: abb33b85717e63cb78a2b1edfd86584fd165a71f
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49668073"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701015"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Auswerten von Microsoft Defender für Office 365
 
@@ -41,13 +41,13 @@ Wenn Sie noch nicht über eine Lizenz verfügen, die Microsoft Defender für Off
 
 Defender für Office 365 im Evaluierungsmodus erstellt Defender für Office 365 e-Mail-Richtlinien, die Urteile wie Schadsoftware protokollieren, jedoch nicht auf Nachrichten reagieren. Sie müssen Ihre MX-Eintrags Konfiguration nicht ändern.
 
-Mit dem Evaluierungsmodus werden [sichere Anlagen](atp-safe-attachments.md), [sichere Links](atp-safe-links.md)und [Richtlinien für den Identitätswechsel von AntiPhishing](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) in Ihrem Auftrag eingerichtet. Alle Verteidiger für Office 365-Richtlinien werden im nicht-Durchsetzungs Modus im Hintergrund erstellt und sind für Sie nicht sichtbar.
+Mit dem Evaluierungsmodus werden [sichere Anlagen](atp-safe-attachments.md), [sichere Links](atp-safe-links.md)und [Richtlinien für den Identitätswechsel von AntiPhishing](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) in Ihrem Namen eingerichtet. Alle Verteidiger für Office 365-Richtlinien werden im nicht-Durchsetzungs Modus im Hintergrund erstellt und sind für Sie nicht sichtbar.
 
-Im Evaluierungsmodus wird im Rahmen des Setups auch die [Erweiterte Filterung für Connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)konfiguriert. Die Filtergenauigkeit wird verbessert, indem IP-Adress-und Absenderinformationen beibehalten werden, die andernfalls verloren gehen, wenn e-Mails über ein e-Mail-Sicherheitsgateway (ESG) vor Defender für Office 365 geleitet werden. Dadurch wird auch die Filtergenauigkeit für Ihre Exchange Online Protection (EoP) Anti-Spam-und Anti-Phishing-Richtlinien verbessert.
+Im Evaluierungsmodus wird im Rahmen des Setups auch die [Erweiterte Filterung für Connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)konfiguriert. Die Filtergenauigkeit wird verbessert, indem IP-Adress-und Absenderinformationen beibehalten werden, die andernfalls verloren gehen, wenn e-Mails über ein e-Mail-Sicherheitsgateway (ESG) vor Defender für Office 365 geleitet werden. Durch die erweiterte Filterung wird auch die Filtergenauigkeit für die Antispam-und Anti-Phishing-Richtlinien Ihrer Exchange Online Protection (EoP) verbessert.
 
 Um potenzielle Produktions Auswirkungen auf einige nicht unterstützte Szenarien zu minimieren, können Sie alle EoP-Filterung umgehen, indem Sie eine Transportregel erstellen, um die SCL-Bewertung (Spam Confidence Level) auf-1 festzulegen. Weitere Informationen finden Sie unter [Verwenden der Exchange-Verwaltungskonsole zum Erstellen einer e-Mail-Fluss Regel, die den SCL-Wert einer Nachricht festlegt](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)   .
 
-Wenn der Bewertungsmodus eingerichtet ist, wird ein Bericht täglich mit bis zu 90 Tagen aktualisiert, in dem die Nachrichten quantifiziert werden, bei denen die Richtlinien blockiert wären und implementiert wurden (beispielsweise "Löschen", "an Junk senden", "Quarantäne"). Berichte werden für alle Verteidiger für Office 365-und EOP-Erkennungen generiert. Sie werden pro Erkennungstechnologie aggregiert (beispielsweise Identitätswechsel) und können nach Zeitbereich gefiltert werden. Darüber hinaus können Nachrichten Berichte bei Bedarf erstellt werden, um benutzerdefinierte Pivots oder Deep Dive-Nachrichten mithilfe von Threat Explorer zu erstellen.
+Wenn der Bewertungsmodus eingerichtet ist, wird täglich ein Bericht mit Daten von bis zu 90 Tagen aktualisiert, in dem die Nachrichten quantifiziert werden, die blockiert wurden, wenn die Richtlinien implementiert wurden (beispielsweise "Löschen", "an Junk senden", "Quarantäne"). Berichte werden für alle Verteidiger für Office 365-und EOP-Erkennungen generiert. Sie werden pro Erkennungstechnologie aggregiert (beispielsweise Identitätswechsel) und können nach Zeitbereich gefiltert werden. Darüber hinaus können Nachrichten Berichte bei Bedarf erstellt werden, um benutzerdefinierte Pivots oder Deep Dive-Nachrichten mithilfe von Threat Explorer zu erstellen.
 
 Dank der vereinfachten Setup-Erfahrung können Sie sich auf Folgendes konzentrieren:
 
@@ -56,7 +56,7 @@ Dank der vereinfachten Setup-Erfahrung können Sie sich auf Folgendes konzentrie
 - Analysieren des Berichts für Aktionen
 - Präsentieren des Evaluierungs Ergebnisses
 
-## <a name="before-you-begin"></a>Vorbereitung
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 ### <a name="licensing"></a>Lizenzierung
 
@@ -79,7 +79,12 @@ Sie haben ein 30-tägiges Fenster mit der Bewertung zur Überwachung und Bericht
 
 ### <a name="roles"></a>Rollen
 
-Exchange Online Rollen sind erforderlich, um Defender für Office 365 im Evaluierungsmodus einzurichten. Die folgenden Rollen sind erforderlich:
+Exchange Online Rollen sind erforderlich, um Defender für Office 365 im Evaluierungsmodus einzurichten.
+
+- [Informationen zu Berechtigungen in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
+- [Informationen zum Zuweisen von Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)
+
+Die folgenden Rollen sind erforderlich:
 
 |Aufgabe|Rolle|
 |---|---|
@@ -90,9 +95,10 @@ Exchange Online Rollen sind erforderlich, um Defender für Office 365 im Evaluie
 |Anzeigen des Auswertungs Berichts|Rolle "Sicherheitsadministrator" oder "Sicherheits Leser"|
 |
 
+
 ### <a name="enhanced-filtering"></a>Erweiterte Filterung
 
-Ihre Exchange Online Schutzrichtlinien wie Massen-und Spam Schutz bleiben erhalten. Die Nachrichtenzustellung bleibt ebenfalls erhalten. Bei der Evaluierung wird jedoch die erweiterte Filterung für Connectors aktiviert, was sich auf Ihre Nachrichtenfluss-und Exchange Online Schutzrichtlinien auswirkt, sofern Sie nicht umgangen werden.
+Ihre Exchange Online Schutzrichtlinien wie Massen-und Spam Schutz bleiben erhalten. Die Nachrichtenzustellung bleibt ebenfalls erhalten. Bei der Evaluierung wird jedoch die erweiterte Filterung für Connectors aktiviert, was sich auf den Nachrichtenfluss und die Exchange Online Schutzrichtlinien auswirkt, es sei denn, es wird umgangen.
 
 Durch die verstärkte Filterung von Connectors können Mandanten den Schutz vor Spoofing verwenden. Anti-Spoofing wird nicht unterstützt, wenn Sie ein e-Mail-Sicherheitsgateway (ESG) verwenden, ohne die erweiterte Filterung für Connectors aktiviert zu haben.
 
@@ -104,7 +110,7 @@ URL-Links in e-Mail-Nachrichtentext Körpern werden nicht umbrochen, um die Ausw
 
 ### <a name="email-routing"></a>E-Mail-Routing
 
-Sie müssen die entsprechenden Details vorbereiten, die Sie zum Einrichten der aktuellen e-Mail-Weiterleitung benötigen, einschließlich des Namens des eingehenden Connectors, der Ihre e-Mails weiterleitet. Wenn Sie nur Exchange Online Schutz verwenden, verfügen Sie über keinen Connector. Informationen  [zum Nachrichtenfluss und e-Mail-Routing](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/mail-flow)
+Bereiten Sie die entsprechenden Details vor, die Sie zum Einrichten der aktuellen e-Mail-Weiterleitung benötigen, einschließlich des Namens des eingehenden Connectors, der Ihre e-Mails weiterleitet. Wenn Sie nur Exchange Online Schutz verwenden, verfügen Sie über keinen Connector. Informationen  [zum Nachrichtenfluss und e-Mail-Routing](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/mail-flow)
 
 Zu den unterstützten e-Mail-Routingszenarien zählen:
 

@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: Die Verhinderung von Datenverlust im Security &amp; Compliance Center umfasst 80 Typen für vertrauliche Informationen, die Sie in ihren DLP-Richtlinien verwenden können. Dieses Thema enthält eine Liste aller dieser vertraulichen Informationstypen und zeigt, was eine DLP-Richtlinie sucht, wenn sie den jeweiligen Typen erkennt.
-ms.openlocfilehash: 498ff1482bd0109903968d1c8fe250311e37a51f
-ms.sourcegitcommit: 2810d1347e5016412074b2dd18e654aee7e593de
+ms.openlocfilehash: cb45d613da95c977f56b82e64ad3332434e08cd8
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "48819115"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698508"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Entitätsdefinitionen für Typen vertraulicher Informationstypen
 
@@ -656,7 +656,6 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 - TFN
 
 ## <a name="austria-drivers-license-number"></a>Österreichische Führerscheinnummer
-Diese Typen Entität für vertrauliche Informationen ist nur im vertraulichen Informationstyp für den EU-Führerscheinnummer verfügbar.
 
 ### <a name="format"></a>Format
 
@@ -1602,7 +1601,6 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 ## <a name="belgium-drivers-license-number"></a>Belgische Führerscheinnummer
-Diese Typen Entität für vertrauliche Informationen ist nur im vertraulichen Informationstyp für den EU-Führerscheinnummer verfügbar.
 
 ### <a name="format"></a>Format
 
@@ -1783,7 +1781,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 ### <a name="pattern"></a>Muster
 
 11 Ziffern plus Trennzeichen:
-- sechs Ziffern und zwei optionale Zeiträume im Format yy. MM. DD für das Geburtsdatum 
+- sechs Ziffern und zwei optionale Zeiträume im Format yy. MM.DD für das Geburtsdatum 
 - Ein optionales Trennzeichen von Punkt, Bindestrich, Leerzeichen 
 - drei aufeinanderfolgende Ziffern (ungerade für Männer, sogar für Frauen) 
 - Ein optionales Trennzeichen von Punkt, Bindestrich, Leerzeichen 
@@ -2272,7 +2270,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 
 ## <a name="bulgaria-drivers-license-number"></a>Bulgarische Führerscheinnummer
-Diese Typen Entität für vertrauliche Informationen ist nur im vertraulichen Informationstyp für den EU-Führerscheinnummer verfügbar.
 
 ### <a name="format"></a>Format
 
@@ -3594,7 +3591,6 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 
 
 ## <a name="croatia-drivers-license-number"></a>Kroatische Führerscheinnummer
-Diese Typen Entität für vertrauliche Informationen ist nur im vertraulichen Informationstyp für den EU-Führerscheinnummer verfügbar.
 
 ### <a name="format"></a>Format
 
@@ -4013,7 +4009,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
    
 ## <a name="cyprus-drivers-license-number"></a>Zypern-Führerscheinnummer
-Diese Typen Entität für vertrauliche Informationen ist nur im vertraulichen Informationstyp für den EU-Führerscheinnummer verfügbar.
 
 ### <a name="format"></a>Format
 
@@ -4365,7 +4360,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 
 ## <a name="czech-drivers-license-number"></a>Tschechische Führerscheinnummer
-Diese Typen Entität für vertrauliche Informationen ist nur im vertraulichen Informationstyp für den EU-Führerscheinnummer verfügbar.
 
 ### <a name="format"></a>Format
 
@@ -4755,7 +4749,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 
 ## <a name="denmark-drivers-license-number"></a>Dänische Führerscheinnummer
-Diese Typen Entität für vertrauliche Informationen ist nur im vertraulichen Informationstyp für den EU-Führerscheinnummer verfügbar.
 
 ### <a name="format"></a>Format
 
@@ -5207,7 +5200,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 
 ## <a name="estonia-drivers-license-number"></a>Estnische Führerscheinnummer
-Diese Typen Entität für vertrauliche Informationen ist nur im vertraulichen Informationstyp für den EU-Führerscheinnummer verfügbar.
 
 ### <a name="format"></a>Format
 
@@ -6019,7 +6011,6 @@ Diese Entitäten befinden sich im vertraulichen Informationstyp "EU-Steueridenti
 
 
 ## <a name="finland-drivers-license-number"></a>Finnland-Führerscheinnummer
-Diese Typen Entität für vertrauliche Informationen ist nur im vertraulichen Informationstyp für den EU-Führerscheinnummer verfügbar.
 
 ### <a name="format"></a>Format
 
@@ -6479,7 +6470,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 
 ## <a name="france-drivers-license-number"></a>Frankreich Führerscheinnummer
-Diese vertrauliche Informationstyp Entität ist im Sicherheits Informationstyp des EU-Führerscheins Nummer verfügbar und steht als eigenständige vertrauliche Informationstyp Entität zur Verfügung.
 
 ### <a name="format"></a>Format
 
@@ -7015,7 +7005,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 
 ## <a name="germany-drivers-license-number"></a>Deutschland Führerscheinnummer
-Diese vertrauliche Informationen Typ Entität ist in der EU-Führerscheinnummer vertraulichen Informationstyp enthalten und ist als eigenständige vertrauliche Informationen Typ Entität zur Verfügung.
 
 ### <a name="format"></a>Format
 
@@ -7456,7 +7445,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 
 ## <a name="greece-drivers-license-number"></a>Griechenland Führerscheinnummer
-Diese vertrauliche Informationen Typ Entität ist in der EU-Führerscheinnummer vertraulichen Informationstyp enthalten und ist als eigenständige vertrauliche Informationen Typ Entität zur Verfügung.
 
 ### <a name="format"></a>Format
 
@@ -7890,8 +7878,6 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 
    
 ## <a name="hungary-drivers-license-number"></a>Ungarische Führerscheinnummer
-
-Diese Typen Entität für vertrauliche Informationen ist nur im vertraulichen Informationstyp für den EU-Führerscheinnummer verfügbar.
 
 ### <a name="format"></a>Format
 
@@ -8732,8 +8718,6 @@ Für IPv6 ist eine DLP-Richtlinie zu 95 % sicher, dass diese Art von vertraulic
 
 ## <a name="ireland-drivers-license-number"></a>Irland Führerscheinnummer
 
-Diese Typen Entität für vertrauliche Informationen ist nur im vertraulichen Informationstyp für den EU-Führerscheinnummer verfügbar.
-
 ### <a name="format"></a>Format
 
 Sechs Ziffern, gefolgt von vier Buchstaben
@@ -9164,7 +9148,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
    
 ## <a name="italy-drivers-license-number"></a>Italienische Führerscheinnummer
-Diese vertrauliche Informationen Typ Entität ist in der EU-Führerscheinnummer vertraulichen Informationstyp enthalten und ist als eigenständige vertrauliche Informationen Typ Entität zur Verfügung.
 
 ### <a name="format"></a>Format
 
@@ -9923,7 +9906,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 
 ## <a name="latvia-drivers-license-number"></a>Lettland Führerscheinnummer
-Diese Typen Entität für vertrauliche Informationen ist nur im vertraulichen Informationstyp für den EU-Führerscheinnummer verfügbar.
 
 ### <a name="format"></a>Format
 
@@ -10282,7 +10264,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - n ° du Passeport
 
 ## <a name="lithuania-drivers-license-number"></a>Litauische Führerscheinnummer
-Diese Typen Entität für vertrauliche Informationen ist nur im vertraulichen Informationstyp für den EU-Führerscheinnummer verfügbar.
 
 ### <a name="format"></a>Format
 
@@ -10589,7 +10570,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Paso Nr
 
 ## <a name="luxemburg-drivers-license-number"></a>Luxemburgische Führerscheinnummer
-Diese Typen Entität für vertrauliche Informationen ist nur im vertraulichen Informationstyp für den EU-Führerscheinnummer verfügbar.
 
 ### <a name="format"></a>Format
 
@@ -11025,7 +11005,6 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 - Personalausweis
 
 ## <a name="malta-drivers-license-number"></a>Malta-Führerscheinnummer
-Diese Typen Entität für vertrauliche Informationen ist nur im vertraulichen Informationstyp für den EU-Führerscheinnummer verfügbar.
 
 ### <a name="format"></a>Format
 
@@ -11466,7 +11445,6 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 - uniqueidentityno #
 
 ## <a name="netherlands-drivers-license-number"></a>Niederländische Führerscheinnummer
-Diese Typen Entität für vertrauliche Informationen ist nur im vertraulichen Informationstyp für den EU-Führerscheinnummer verfügbar.
 
 ### <a name="format"></a>Format
 
@@ -12272,7 +12250,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Pinag-isang Multi-Layunin ID
 
 ## <a name="poland-drivers-license-number"></a>Polen-Führerscheinnummer
-Diese Typen Entität für vertrauliche Informationen ist nur im vertraulichen Informationstyp für den EU-Führerscheinnummer verfügbar.
 
 ### <a name="format"></a>Format
 
@@ -12770,7 +12747,6 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 
 
 ## <a name="portugal-drivers-license-number"></a>Portugiesische Führerscheinnummer
-Diese Typen Entität für vertrauliche Informationen ist nur im vertraulichen Informationstyp für den EU-Führerscheinnummer verfügbar.
 
 ### <a name="format"></a>Format
 
@@ -13087,7 +13063,6 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 
 
 ## <a name="romania-drivers-license-number"></a>Rumänische Führerscheinnummer
-Diese Typen Entität für vertrauliche Informationen ist nur im vertraulichen Informationstyp für den EU-Führerscheinnummer verfügbar.
 
 ### <a name="format"></a>Format
 
@@ -13625,7 +13600,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - 身份證 
 
 ## <a name="slovakia-drivers-license-number"></a>Slowakische Führerscheinnummer
-Diese Typen Entität für vertrauliche Informationen ist nur im vertraulichen Informationstyp für den EU-Führerscheinnummer verfügbar.
 
 ### <a name="format"></a>Format
 
@@ -13945,7 +13919,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - n ° Passeport
 
 ## <a name="slovenia-drivers-license-number"></a>Slowenische Führerscheinnummer
-Diese Typen Entität für vertrauliche Informationen ist nur im vertraulichen Informationstyp für den EU-Führerscheinnummer verfügbar.
 
 ### <a name="format"></a>Format
 
@@ -14419,7 +14392,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - 주민등록번호
 
 ## <a name="spain-drivers-license-number"></a>Spanische Führerscheinnummer
-Diese Typen Entität für vertrauliche Informationen ist nur im vertraulichen Informationstyp für den EU-Führerscheinnummer verfügbar.
 
 ### <a name="format"></a>Format
 
@@ -14985,7 +14957,6 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 - s-int.<!--no-hyperlink-->NET
 
 ## <a name="sweden-drivers-license-number"></a>Schwedische Führerscheinnummer
-Diese Typen Entität für vertrauliche Informationen ist nur im vertraulichen Informationstyp für den EU-Führerscheinnummer verfügbar.
 
 ### <a name="format"></a>Format
 

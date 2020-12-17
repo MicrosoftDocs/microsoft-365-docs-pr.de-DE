@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die verfügbaren und bevorzugten Optionen informieren, um eingehende Nachrichten in Exchange Online Protection (EoP) zuzulassen.
-ms.openlocfilehash: 38f1ab2451191dd63d5738075dbf42f8201a34ca
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 6e33d2b75429453602615bf98b8269ab160c7749
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659904"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698699"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Erstellen sicherer Absenderlisten in EoP
 
@@ -97,6 +97,9 @@ Im folgenden Beispiel wird davon ausgegangen, dass Sie e-Mails von contoso.com b
 
 ## <a name="use-outlook-safe-senders"></a>Verwenden von sicheren Outlook-Absendern
 
+> [!CAUTION]
+> Diese Methode führt zu einem hohen Risiko, dass Angreifer erfolgreich e-Mails an den Posteingang übermitteln, die andernfalls gefiltert würden. die Listen sicherer Absender oder sicherer Domänen des Benutzers verhindern jedoch nicht, dass Schadsoftware oder Phishing-Nachrichten mit hoher Zuverlässigkeit gefiltert werden.
+
 Anstelle einer Organisations Einstellung können Benutzer oder Administratoren die Absender-e-Mail-Adressen der Liste sicherer Absender im Postfach hinzufügen. Anweisungen finden Sie unter [Konfigurieren von Junk-e-Mail-Einstellungen für Exchange Online Postfächer in Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Dies ist in den meisten Situationen nicht wünschenswert, da Absender Teile des Filter Stapels umgehen müssen. Obwohl Sie dem Absender Vertrauen, kann der Absender dennoch kompromittiert werden und schädlichen Inhalt senden. Am besten lassen Sie unsere Filter tun, was erforderlich ist, um jede Nachricht zu überprüfen, und melden Sie dann [falsch positiv/negativ an Microsoft](report-junk-email-messages-to-microsoft.md) , wenn sich unsere Filter falsch verstanden haben. Die Umgehung des Filter Stapels stört auch [zap](zero-hour-auto-purge.md).
 
 Wenn Nachrichten Spamfilterung aufgrund der Liste sicherer Absender eines Benutzers überspringen, enthält das Kopfzeilenfeld **X-Forefront-Antispam-Report** den Wert `SFV:SFE` , der angibt, dass die Filterung nach Spam, spoof und Phishing umgangen wurde.
@@ -114,7 +117,7 @@ Wenn Sie Nachrichtenfluss Regeln nicht wie zuvor beschrieben verwenden können, 
 - Überprüfen Sie die Einträge in der Liste der zugelassenen IP-Adressen regelmäßig, und entfernen Sie die Einträge, die Sie nicht mehr benötigen.
 
 > [!CAUTION]
-> Ohne zusätzliche Überprüfung wie Nachrichtenfluss Regeln überprüfen e-Mails aus Quellen in der Liste der zugelassenen IP-Adressen die Spamfilterung und Absenderauthentifizierung (SPF, DKIM, DMARC). Dadurch wird ein hohes Risiko geschaffen, dass Angreifer erfolgreich e-Mails an den Posteingang übermitteln, die ansonsten gefiltert werden.
+> Ohne zusätzliche Überprüfung wie Nachrichtenfluss Regeln überprüfen e-Mails aus Quellen in der Liste der zugelassenen IP-Adressen die Spamfilterung und Absenderauthentifizierung (SPF, DKIM, DMARC). Dadurch wird ein hohes Risiko verursacht, dass Angreifer erfolgreich e-Mails an den Posteingang übermitteln, die andernfalls gefiltert würden. die IP-Zulassungsliste verhindert jedoch nicht, dass Schadsoftware oder Phishing-Nachrichten mit hoher Zuverlässigkeit gefiltert werden.
 
 ## <a name="use-allowed-sender-lists-or-allowed-domain-lists"></a>Zugelassene Absenderlisten oder zugelassene Domänenlisten verwenden
 
@@ -124,7 +127,7 @@ Die Höchstgrenze für diese Listen beträgt ungefähr 1000 Einträge; Sie könn
 
 > [!CAUTION]
 >
-> - Diese Methode führt zu einem hohen Risiko, dass Angreifer erfolgreich e-Mails an den Posteingang übermitteln, die andernfalls gefiltert würden.
+> - Diese Methode führt zu einem hohen Risiko, dass Angreifer erfolgreich e-Mails an den Posteingang übermitteln, die andernfalls gefiltert würden. die Listen zulässiger Absender oder zugelassene Domänen verhindern jedoch nicht, dass Schadsoftware oder das hoch vertrauenswürdige Phishing-Nachrichten gefiltert wird.
 >
 > - Verwenden Sie keine Domänen, die Sie besitzen (auch als akzeptierte Domänen bezeichnet) oder beliebte Domänen (beispielsweise Microsoft.com) in zugelassenen Domänenlisten.
 

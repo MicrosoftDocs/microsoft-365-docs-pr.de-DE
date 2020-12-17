@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Verwenden Sie den Compliance-Manager-Schnellstart Leitfaden, um Sie auf dem Weg des Verständnisses, der Einrichtung und der Verwendung des Compliance-Managers zu unterstützen.
-ms.openlocfilehash: 9f24a0495b7d453b70a28ad54d76ccf835000ed6
-ms.sourcegitcommit: d333d82fd5e4f3265e8b9372094e85875bee6fe5
+ms.openlocfilehash: c5159e1e6faa293ba3bd49d82bb06898ec9e0bdd
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49071970"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698428"
 ---
 # <a name="compliance-manager-quickstart"></a>Compliance-Manager-Schnellstart
 
 **In diesem Artikel:** Verwenden Sie diese Schnellstartanleitung, um Sie bei der Verwendung von Microsoft Compliance Manager zu unterstützen, um die Einhaltung von Vorschriften, Richtlinien und Standards in Ihrer Organisation zu verwalten.
 
-Compliance-Manager stellt bei Ihrem ersten Besuch intelligente und umsetzbare Daten bereit. Compliance-Manager verfügt darüber hinaus über erweiterte Funktionen für die Skalierung Ihrer Compliance, wenn Sie bereit sind. Alle Kunden können mithilfe der [Datenschutz-Basisbewertung](compliance-manager-assessments.md#data-protection-baseline-default-assessment) sicherstellen, dass wichtige Daten geschützt werden. Mit Microsoft 365 E5 können Sie über 150 vorgefertigte Bewertungen verwenden, um Sie bei der Einhaltung von Bestimmungen in ihrer Branche und Region zu unterstützen, und verwenden Sie benutzerdefinierte Bewertungen, um den Compliance-Manager auf alle Ihre Ressourcen auszudehnen.
+Compliance-Manager stellt bei Ihrem ersten Besuch intelligente und umsetzbare Daten bereit. Compliance-Manager verfügt darüber hinaus über erweiterte Funktionen für die Skalierung Ihrer Compliance, wenn Sie bereit sind. Die verfügbaren Bewertungen hängen von Ihrem Lizenzvertrag ab; [Weitere Informationen](https://go.microsoft.com/fwlink/?linkid=2132371).
 
 Unabhängig davon, ob Sie den Compliance-Manager zum ersten Mal erreichen oder einige der erweiterten Funktionen verwenden möchten, dieses Handbuch unterstützt Sie auf Ihrer Reise.
 

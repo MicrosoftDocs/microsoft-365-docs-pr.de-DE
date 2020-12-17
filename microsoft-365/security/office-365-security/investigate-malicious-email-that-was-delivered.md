@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 07/09/2020
+ms.date: 12/16/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie mithilfe von Bedrohungs Ermittlungs-und-Antwortfunktionen böswillige e-Mails suchen und untersuchen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f3fd2e5c0f75de9a1b942e8f0baa8e9d44843de4
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 8a068f4502a286b8782e03a9a6f61e61fa96ed72
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616524"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698579"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Untersuchen schädlicher e-Mails, die in Office 365 bereitgestellt wurden
 
@@ -36,7 +36,7 @@ ms.locfileid: "49616524"
 > [!NOTE]
 > Wechseln Sie [hier](remediate-malicious-email-delivered-office-365.md)zum Korrektur Artikel.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Stellen Sie sicher, dass folgende Anforderungen erfüllt sind:
 
@@ -58,18 +58,21 @@ Um bestimmte Aktionen auszuführen, beispielsweise das Anzeigen von Nachrichtenk
 |---|---|---|
 |Verwenden von Threat Explorer (und Echtzeiterkennung) zum Analysieren von Bedrohungen |Globaler Administrator <p> Sicherheitsadministrator <p> Sicherheitsleseberechtigter|Nein|
 |Verwenden Sie Threat Explorer (und Echtzeiterkennung), um Kopfzeilen für e-Mail-Nachrichten anzuzeigen sowie e-Mail-Nachrichten, die in Quarantäne verschoben wurden, anzuzeigen und herunterzuladen.|Globaler Administrator <p> Sicherheitsadministrator <p> Sicherheitsleseberechtigter|Nein|
-|Verwenden von Threat Explorer zum Anzeigen von Kopfzeilen und Herunterladen von an Postfächern zugestellten e-Mails|Globaler Administrator <p> Sicherheitsadministrator <p> Sicherheitsleseberechtigter <p> Vorschau|Ja|
+|Verwenden von Threat Explorer zum Anzeigen von Kopfzeilen, e-Mail-Vorschau (nur auf der Seite "e-Mail-Entität") und Herunterladen von e-Mails an Postfächer|Globaler Administrator <p> Sicherheitsadministrator <p> Sicherheitsleseberechtigter <p> Vorschau|Ja|
 |
 
 > [!NOTE]
-> *Vorschau* ist eine Rolle und keine Rollengruppe; die Vorschau Rolle muss einer vorhandenen Rollengruppe für Office 365 hinzugefügt werden. Der globalen Administrator Rolle wird das Microsoft 365 Admin Center ( <https://admin.microsoft.com> ) zugewiesen, und die Rollen Sicherheitsadministrator und Sicherheits Leser werden im Security & Compliance Center zugewiesen ( <https://protection.office.com> ). Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> *Vorschau* ist eine Rolle und keine Rollengruppe; die Vorschau Rolle muss einer vorhandenen Rollengruppe für Office 365 (at) hinzugefügt werden [https://protection.office.com](https://protection.office.com) . Wechseln Sie zu **Berechtigungen**, und bearbeiten Sie dann entweder eine vorhandene Rollengruppe, oder fügen Sie eine neue Rollengruppe mit der zugewiesenen **Vorschau** Rolle hinzu.
+> Der globalen Administrator Rolle wird das Microsoft 365 Admin Center ( <https://admin.microsoft.com> ) zugewiesen, und die Rollen Sicherheitsadministrator und Sicherheits Leser werden im Security & Compliance Center zugewiesen ( <https://protection.office.com> ). Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+
+Wir verstehen, dass die Vorschau und das Herunterladen von e-Mails vertrauliche Aktivitäten sind, daher ist die Überwachung für diese aktiviert. Sobald ein Administrator diese Aktivitäten in e-Mails ausführt, werden Überwachungsprotokolle für dasselbe generiert und können im Office 365 Security & Compliance Center () angezeigt werden [https://protection.office.com](https://protection.office.com) . Wechseln Sie **zu Such**  >  **Überwachungsprotokoll-Suche** , und Filtern Sie nach dem admin-Namen im Abschnitt Suche. Die gefilterten Ergebnisse zeigen Aktivitäts **AdminMailAccess**. Wählen Sie eine Zeile aus, um Details im Abschnitt **Weitere Informationen** über eine Vorschau oder heruntergeladene e-Mails anzuzeigen.
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>Verdächtige e-Mails finden, die zugestellt wurden
 
 Threat Explorer ist ein leistungsfähiger Bericht, der mehrere Zwecke wie das Suchen und Löschen von Nachrichten, das Identifizieren der IP-Adresse eines böswilligen e-Mail-Absenders oder das Starten eines Vorfalls zur weiteren Untersuchung dienen kann. Das folgende Verfahren konzentriert sich auf die Verwendung von Explorer zum Suchen und Löschen von böswilligen e-Mails aus Postfächern des Empfängers.
 
 > [!NOTE]
-> Standardsuch Vorgänge im Explorer enthalten derzeit keine gezappten Elemente.  Dies gilt für alle Ansichten, beispielsweise Schadsoftware oder Phishing-Ansichten. Um gezappte Elemente einzuschließen, müssen Sie eine "Zustellungs Aktion" hinzufügen, die "removed by Zap" enthalten soll. Wenn Sie alle Optionen einschließen, werden alle Ergebnisse der Übermittlungsaktion angezeigt, einschließlich zapped-Elementen.
+> Standardsuch Vorgänge im Explorer enthalten derzeit keine gezappten Elemente.  Dies gilt für alle Ansichten, beispielsweise Schadsoftware oder Phishing-Ansichten. Um gezappte Elemente einzuschließen, müssen Sie einen **Zustellungs Aktionssatz** hinzufügen, der **von zap entfernt wurde**. Wenn Sie alle Optionen einschließen, werden alle Ergebnisse der Übermittlungsaktion angezeigt, einschließlich zapped-Elementen.
 
 1. **Navigieren Sie zu Threat Explorer**: Wechseln Sie zu, <https://protection.office.com> und melden Sie sich mit Ihrem Arbeits-oder Schulkonto für Office 365 an. Dadurch gelangen Sie zum Security & Compliance Center.
 

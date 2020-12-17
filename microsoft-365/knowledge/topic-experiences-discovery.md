@@ -11,12 +11,12 @@ search.appverid: MET150
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Erfahren Sie, wie Sie die Themen Ermittlung in Microsoft 365 verwalten.
-ms.openlocfilehash: 035fb74f1989dc7ef5b7fcf8e9c6d59b63cf2b42
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: dec8aeef9dda390fb19f5067638c2ebea6b6a2fe
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667870"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698543"
 ---
 # <a name="manage-topic-discovery-in-microsoft-365"></a>Verwalten der Themen Ermittlung in Microsoft 365
 
@@ -94,4 +94,3 @@ Geben Sie in der CSV-Vorlage die folgenden Informationen zu den Themen ein, die 
 [Verwalten von Themen Berechtigungen in Microsoft 365](topic-experiences-user-permissions.md)
 
 [Ändern des Namens des Themen Centers in Microsoft 365](topic-experiences-administration.md)
-

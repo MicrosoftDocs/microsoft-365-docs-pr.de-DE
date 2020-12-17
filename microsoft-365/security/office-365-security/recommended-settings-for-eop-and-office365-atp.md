@@ -1,5 +1,6 @@
 ---
-title: Microsoft-Empfehlungen für EoP und Defender für Office 365 Sicherheitseinstellungen, Empfehlungen, Sender Policy Framework, domänenbasierte Nachrichtenberichterstattung und Konformität, DomainKeys identifizierte e-Mails, Schritte, Arbeitsweise, Sicherheitsbasislinien, Baselines für EoP, Baselines für Defender für Office 365, Einrichten von Defender für Office 365, Einrichten von EoP, Konfigurieren von Defender für Office 365, Konfigurieren von EoP, Sicherheitskonfiguration
+title: Microsoft-Empfehlungen für EoP und Defender für Office 365 Sicherheitseinstellungen
+keywords: Office 365 Sicherheitsempfehlungen, Sender Policy Framework, domänenbasierte Nachrichtenberichterstattung und Konformität, DomainKeys identifizierte e-Mails, Schritte, Arbeitsweise, Sicherheitsbasislinien, Baselines für EoP, Baselines für Defender für Office 365, Einrichten von Defender für Office 365, Einrichten von EoP, Konfigurieren von Defender für Office 365, Konfigurieren von EoP, Sicherheitskonfiguration
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Was sind bewährte Methoden für Exchange Online Schutz (EoP) und Defender für Office 365 Sicherheitseinstellungen? Was sind die aktuellen Empfehlungen für Standardschutz? Was sollte verwendet werden, wenn Sie strenger sein möchten? Und welche Extras erhalten Sie, wenn Sie auch Defender für Office 365 verwenden?
-ms.openlocfilehash: 192e37a1a9a373f7b6712600bc3c81189f7c51ad
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: d731b75e05dcecc513c72b390b106491f7601c71
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615960"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698687"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Empfohlene Einstellungen für EoP und Microsoft Defender für Office 365 Sicherheit
 
@@ -168,9 +169,9 @@ Weitere Informationen zu diesen Einstellungen finden Sie unter [Identitätswechs
 
 |Name des Sicherheitsfeatures|Standard|Standard|Strict|Kommentar|
 |---|:---:|:---:|:---:|---|
-|Geschützte Benutzer: **zu schützende Benutzer hinzufügen** <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|Off <p> `$false` <p> keine|Ein <p> `$true` <p> \<list of users\>|Ein <p> `$true` <p> \<list of users\>|In Abhängigkeit von Ihrer Organisation wird empfohlen, Benutzer (Nachrichtenabsender) in Schlüsselrollen hinzuzufügen. Intern sind möglicherweise geschützte Absender Ihr CEO, CFO und andere Führungskräfte. Extern können geschützte Absender Ratsmitglieder oder ihren Verwaltungsrat umfassen.|
+|Geschützte Benutzer: **zu schützende Benutzer hinzufügen** <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|Off <p> `$false` <p> n/v|Ein <p> `$true` <p> \<list of users\>|Ein <p> `$true` <p> \<list of users\>|In Abhängigkeit von Ihrer Organisation wird empfohlen, Benutzer (Nachrichtenabsender) in Schlüsselrollen hinzuzufügen. Intern sind möglicherweise geschützte Absender Ihr CEO, CFO und andere Führungskräfte. Extern können geschützte Absender Ratsmitglieder oder ihren Verwaltungsrat umfassen.|
 |Geschützte Domänen: **Automatisches einschließen der Domänen, die ich besitze** <p> _EnableOrganizationDomainsProtection_|Off <p> `$false`|Ein <p> `$true`|Ein <p> `$true`||
-|Geschützte Domänen: **benutzerdefinierte Domänen einschließen** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|Off <p> `$false` <p> keine|Ein <p> `$true` <p> \<list of domains\>|Ein <p> `$true` <p> \<list of domains\>|In Abhängigkeit von Ihrer Organisation wird empfohlen, Domänen (Absenderdomänen) hinzuzufügen, die Sie nicht besitzen, jedoch häufig mit interagieren.|
+|Geschützte Domänen: **benutzerdefinierte Domänen einschließen** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|Off <p> `$false` <p> n/v|Ein <p> `$true` <p> \<list of domains\>|Ein <p> `$true` <p> \<list of domains\>|In Abhängigkeit von Ihrer Organisation wird empfohlen, Domänen (Absenderdomänen) hinzuzufügen, die Sie nicht besitzen, jedoch häufig mit interagieren.|
 |Geschützte Benutzer: **Wenn e-Mail von einem imitierten Benutzer gesendet wird** <p> _TargetedUserProtectionAction_|**Keine Aktion anwenden** <p> `NoAction`|**Nachricht isolieren** <p> `Quarantine`|**Nachricht isolieren** <p> `Quarantine`||
 |Geschützte Domänen: **Wenn e-Mails von einer imitierten Domäne gesendet werden** <p> _TargetedDomainProtectionAction_|**Keine Aktion anwenden** <p> `NoAction`|**Nachricht isolieren** <p> `Quarantine`|**Nachricht isolieren** <p> `Quarantine`||
 |**Tipp für imitierte Benutzer anzeigen** <p> _EnableSimilarUsersSafetyTips_|Off <p> `$false`|Ein <p> `$true`|Ein <p> `$true`||
@@ -281,7 +282,7 @@ In PowerShell verwenden Sie die Cmdlets [New-SafeAttachmentPolicy](https://docs.
 |Name des Sicherheitsfeatures|Standard|Standard|Strict|Kommentar|
 |---|:---:|:---:|:---:|---|
 |**Sichere Anlagen unbekannte Malware Antwort** <p> _Aktion_|Blockieren <p> `Block`|Blockieren <p> `Block`|Blockieren <p> `Block`||
-|**Umleitungs Anlage bei Erkennung** : **Umleitung aktivieren** <p> _Redirect_ <p> _RedirectAddress_|Aus, und es wurde keine e-Mail-Adresse angegeben. <p> `$true` <p> keine|Ein, und geben Sie eine e-Mail-Adresse an. <p> `$true` <p> eine e-Mail-Adresse|Ein, und geben Sie eine e-Mail-Adresse an. <p> `$true` <p> eine e-Mail-Adresse|Umleiten von Nachrichten an einen Sicherheitsadministrator zur Überarbeitung.|
+|**Umleitungs Anlage bei Erkennung** : **Umleitung aktivieren** <p> _Redirect_ <p> _RedirectAddress_|Aus, und es wurde keine e-Mail-Adresse angegeben. <p> `$true` <p> n/v|Ein, und geben Sie eine e-Mail-Adresse an. <p> `$true` <p> eine e-Mail-Adresse|Ein, und geben Sie eine e-Mail-Adresse an. <p> `$true` <p> eine e-Mail-Adresse|Umleiten von Nachrichten an einen Sicherheitsadministrator zur Überarbeitung.|
 |**Wenden Sie die obige Auswahl an, wenn bei der Malwareüberprüfung nach Anlagen ein Timeout oder ein Fehler auftritt.** <p> _ActionOnError_|Ein <p> `$true`|Ein <p> `$true`|Ein <p> `$true`||
 |
 

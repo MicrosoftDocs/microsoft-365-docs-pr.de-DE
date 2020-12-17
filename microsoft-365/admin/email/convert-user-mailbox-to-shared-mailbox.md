@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'Hier erfahren Sie, wie Sie ein privates Postfach in ein freigegebenes Postfach konvertieren, auf das mehrere Benutzer zugreifen können. '
-ms.openlocfilehash: bc867c9b43656e40149eb7cd7a7e5ce186c10798
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: fa8e37b5e924f1b38755a953f40d8b70011213d0
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445687"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698279"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Konvertieren eines Benutzerpostfachs in ein freigegebenes Postfach
 
@@ -45,9 +45,9 @@ Wenn Sie das Postfach eines Benutzers in ein freigegebenes Postfach konvertieren
  
 1. Wechseln Sie zum <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange Admin Center</a>.
 
-2. Wählen Sie **Empfänger** \> **Postfächer**aus.
+2. Wählen Sie **Empfänger** \> **Postfächer** aus.
 
-3. Wählen Sie das Benutzerpostfach aus. Wählen Sie unter **in freigegebenes Postfach konvertieren die**Option **konvertieren**aus.
+3. Wählen Sie das Benutzerpostfach aus. Wählen Sie unter **in freigegebenes Postfach konvertieren die** Option **konvertieren** aus.
 
 4. Wenn das Postfach kleiner als 50 GB ist, können Sie die [Lizenz vom Benutzer](../manage/remove-licenses-from-users.md)entfernen und nicht mehr bezahlen. Löschen Sie das Konto des Benutzers nicht. Das freigegebene Postfach benötigt dieses als Anker. Wenn Sie das Postfach eines Mitarbeiters, der Ihre Organisation verlässt, konvertieren möchten, sollten Sie zusätzliche Schritte Unternehmen, um sicherzustellen, dass Sie sich nicht mehr anmelden können. Weitere Informationen finden Sie unter [Entfernen eines ehemaligen Mitarbeiters von Microsoft 365](../add-users/remove-former-employee.md).
     
@@ -83,9 +83,9 @@ Angenommen, Sie haben ein Benutzerkonto gelöscht und möchten nun das alte Post
 
 1. Wechseln Sie zum <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange Admin Center</a>.
    
-2. Wählen Sie **Empfänger** \> **freigegeben**aus.
+2. Wählen Sie **Empfänger** \> **freigegeben** aus.
 
-3. Wählen Sie das freigegebene Postfach aus. Wählen Sie unter **Convert to Regular Mailbox die**Option **Convert**aus.
+3. Wählen Sie das freigegebene Postfach aus. Wählen Sie unter **Convert to Regular Mailbox die** Option **Convert** aus.
 
 4. Wechseln Sie zurück zum Admin Center. Wählen Sie unter **Benutzer** das Benutzerkonto aus, das dem alten freigegebenen Postfach zugeordnet ist. Weisen Sie dem Konto eine Lizenz zu, und setzen Sie das Kennwort zurück.
 
@@ -93,13 +93,17 @@ Angenommen, Sie haben ein Benutzerkonto gelöscht und möchten nun das alte Post
 
 ## <a name="convert-a-users-mailbox-in-a-hybrid-environment"></a>Konvertieren des Postfachs eines Benutzers in einer Hybridumgebung
 
-Wenn sich dieses freigegebene Postfach in einer Hybridumgebung befindet, wird **dringend empfohlen** , das Benutzerpostfach wieder in ein lokales Postfach zu migrieren, das Benutzerpostfach in ein freigegebenes Postfach zu konvertieren und das freigegebene Postfach dann wieder in die Cloud zu migrieren. 
+> [!NOTE] 
+> Ab dem 11. Oktober 2018 unterstützt die Exchange-hybridbereitstellung die Erstellung von freigegebenen Remotepostfächern ab dem kumulativen Update 21 für Exchange Server 2013 und das kumulative Update 10 für Exchange Server 2016 in einer lokalen Exchange Server Umgebung. Sie können ein freigegebenes Remotepostfach direkt mithilfe des Parameters New _-Shared_ erstellen oder ändern. Weitere Informationen finden Sie unter [Cmdlets zum Erstellen oder Ändern eines freigegebenen remotepostfachs in einer lokalen Exchange-Umgebung](https://support.microsoft.com/help/4133605/cmdlets-to-create-modify-remote-shared-mailbox-in-on-premises-exchange).
+
+Wenn sich dieses freigegebene Postfach in einer Hybridumgebung befindet und nicht unter das obige Szenario fällt, **empfehlen wir dringend** (fast erforderlich!), das Benutzerpostfach wieder in das lokale lokal zu migrieren, das Benutzerpostfach in ein freigegebenes Postfach zu konvertieren und das freigegebene Postfach dann wieder in die Cloud zu migrieren. 
 
 Hier ist der Grund: Wenn Sie das Postfach in der Cloud konvertieren, kann es konvertiert werden, doch lokal ist das Postfach das Benutzerpostfach, da die neue Realität nicht wieder lokal synchronisiert wird.
 
 Normalerweise handelt es sich nicht um ein Problem, aber es gibt einige Szenarien, in denen die lokalen Attribute (die denken, dass das Postfach das Benutzerpostfach ist) die neuen Cloud-Versionen dieser Attribute überschreiben können und daher das Postfach möglicherweise wieder zurückkonvertiert wird. Dies ist ein Problem, da Benutzerpostfächer Lizenzen erfordern **oder nach 30 Tagen weich gelöscht werden**!
 
 Wir haben die meisten der Gründe behandelt, warum dies geschieht, aber es kann immer noch passieren, obwohl selten. Am besten ist es, sicher zu sein und das Postfach zurück in die lokale Umgebung zu versetzen, es zu konvertieren und dann das freigegebene Postfach wieder in die Cloud zu migrieren. Diese empfohlene Lösung verstößt nicht gegen den Lizenzvertrag für Hybrid Umgebungen, da das vorhanden sein des Benutzerpostfachs lokal nur temporär ist. Sie verletzen Ihre Lizenz, wenn Sie das Benutzerpostfach oder das freigegebene Postfach in Ihrer lokalen Organisation verwaltet haben und es nicht wieder in die Cloud zurückversetzen.
+
 
 > [!NOTE]
 > Wenn Sie Mitglied der Rollengruppe "Organisationsverwaltung" oder "Empfängerverwaltung" sind, können Sie die Exchange-Verwaltungsshell verwenden, um ein Benutzerpostfach in ein freigegebenes Postfach lokal zu ändern. Beispiel: `Set-Mailbox -Identity mailbox1@contoso.onmicrosoft.com -Type Shared`.

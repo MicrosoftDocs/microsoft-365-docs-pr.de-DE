@@ -11,16 +11,16 @@ search.appverid: MET150
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Informationen zum Einrichten von Themen Erfahrungen in Microsoft 365
-ms.openlocfilehash: cc157463c8c85f25ba232c344294ef3e0fabba23
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: e11f0b75556a4a8ac0ffa40269d7166258128daf
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667967"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698555"
 ---
 # <a name="set-up-topic-experiences-in-microsoft-365"></a>Einrichten von Themen Erfahrungen in Microsoft 365
 
-Sie können das Microsoft 365 Admin Center verwenden, um [Themen Erfahrungen](knowledge-management-overview.md)einzurichten und zu konfigurieren. 
+Sie können das Microsoft 365 Admin Center verwenden, um [Themen Erfahrungen](topic-experiences-overview.md)einzurichten und zu konfigurieren. 
 
 Es ist wichtig, die beste Möglichkeit zum Einrichten und Konfigurieren von Themen in Ihrer Umgebung zu planen. Lesen Sie unbedingt [Plan Topic Experiences](plan-topic-experiences.md) , bevor Sie mit den Verfahren in diesem Artikel beginnen.
 
@@ -112,7 +112,7 @@ Wählen Sie **Weiter** aus.
 
     ![Angewendete Einstellungen](../media/ksetup7.png)    
 
-## <a name="assign-licenses"></a>Lizenzen zuweisen
+## <a name="assign-licenses"></a>Zuweisen von Lizenzen
 
 Nachdem Sie Themen Erfahrungen konfiguriert haben, müssen Sie Lizenzen für die Benutzer zuweisen, die Themen Erfahrungen verwenden werden. Nur Benutzer mit einer Lizenz können Informationen zu Themen wie Highlights, Themenkarten, Themenseiten und das Themen Center anzeigen. 
 
@@ -144,4 +144,4 @@ Nachdem Sie Themen Erfahrungen eingerichtet haben, können Sie die Einstellungen
 
 ## <a name="see-also"></a>Siehe auch
 
-[Wissensmanagement (Übersicht)](knowledge-management-overview.md)
+[Übersicht über Themen Erlebnisse](topic-experiences-overview.md)

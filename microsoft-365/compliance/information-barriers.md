@@ -16,12 +16,12 @@ ms.collection:
 localization_priority: None
 description: Verwenden Sie Informationsbarrieren, um die Kommunikation mit Microsoft Teams in Ihrer Organisation sicherzustellen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 08ec3b01258220a71ac02e5333143fb11b66655f
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 73a76e67fdb96f89dbd11daf4b2ef12f6590f92a
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613097"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701004"
 ---
 # <a name="learn-about-information-barriers-in-microsoft-365"></a>Erfahren Sie mehr über Informationsbarrieren in Microsoft 365
 
@@ -72,7 +72,7 @@ Informationsbarrieren werden jetzt ausgerollt und in Abonnements eingeschlossen,
 - Microsoft 365 Compliance E5/a5
 - Microsoft 365 Insider Risk Management
 
-Weitere Informationen finden Sie unter [Compliance Solutions](https://products.office.com/business/security-and-compliance/compliance-solutions).
+Weitere Informationen finden Sie unter [Microsoft 365 Licensing Guidance for Security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
 Um [Richtlinien für Informationsbarrieren zu definieren oder zu bearbeiten](information-barriers-policies.md), muss Ihnen eine der folgenden Rollen zugewiesen sein:
 
@@ -81,7 +81,7 @@ Um [Richtlinien für Informationsbarrieren zu definieren oder zu bearbeiten](inf
 - Complianceadministrator
 - IB-Konformitätsverwaltung (Dies ist eine neue Rolle!)
 
-(Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Office 365 Security & Compliance Center](../security/office-365-security/protect-against-threats.md).)
+(Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Office 365 Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).)
 
 Sie müssen mit PowerShell-Cmdlets vertraut sein, um Richtlinien für Informationsbarrieren zu definieren, zu validieren oder zu bearbeiten. Obwohl wir einige Beispiele für PowerShell-Cmdlets im [How-to-Artikel](information-barriers-policies.md)bereitstellen, müssen Sie zusätzliche Details wie Parameter für Ihre Organisation kennen.
 

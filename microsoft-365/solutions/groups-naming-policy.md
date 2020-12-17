@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: Hier erfahren Sie, wie Sie eine Benennungsrichtlinie für Microsoft 365-Gruppen erstellen.
-ms.openlocfilehash: 15fcbace737398c6edd2062e72622e8551ebd222
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 9bc0a4c7e1ae6ad532c97b442a2bc50880a942fc
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613502"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698675"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365 gruppenbenennungsrichtlinie
 
@@ -115,8 +115,6 @@ Einige Administratoren sind von diesen Richtlinien für alle Gruppen Arbeitslast
 - Partnersupport der Ebene 2
 
 - Administrator für Benutzerkonten
-
-- Verzeichnisautoren
 
 ## <a name="how-to-set-up-the-naming-policy"></a>Vorgehensweise zum Einrichten der Benennungsrichtlinie
 

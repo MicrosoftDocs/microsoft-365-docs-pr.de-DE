@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: 'Entfernen Sie die Lizenz aus einem freigegebenen Postfach, um Sie einem anderen Benutzer zuzuweisen. '
-ms.openlocfilehash: 43d32744afe42a8f244160ace20c1d989f501b28
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 11d5185cc3f79899a737ddccc0a93160acb380bc
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445495"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698303"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Entfernen einer Lizenz aus einem freigegebenen Postfach
 
@@ -45,6 +45,7 @@ Freigegebene Postfächer benötigen normalerweise keine Lizenz. Befolgen Sie die
 > 1. Das freigegebene Postfach verfügt über mehr als 50 GB Speicherplatz.
 > 2. Das freigegebene Postfach verwendet die in-Place-Archivierung.
 > 3. Das freigegebene Postfach wird in einem Beweissicherungsverfahren aufbewahrt.
+> 4. Dem freigegebenen Postfach wird eine Microsoft Defender-Lizenz zugewiesen.
 
   
 ## <a name="remove-the-license"></a>Entfernen der Lizenz
@@ -79,7 +80,7 @@ Freigegebene Postfächer benötigen normalerweise keine Lizenz. Befolgen Sie die
 
 3. Legen Sie auf der Seite **Produktlizenzen** die Umschaltfläche für die Lizenz, die Sie entfernen möchten, auf **aus** fest.
 
-4. Wählen Sie **Speichern** aus.
+4. Klicken Sie auf **Speichern**.
 
 5. Wenn Sie zur Seite **aktive Benutzer** zurückkehren, wird der Status des freigegebenen Postfachs nicht **lizenziert**.
 
@@ -98,13 +99,15 @@ Freigegebene Postfächer benötigen normalerweise keine Lizenz. Befolgen Sie die
 
 3. Legen Sie auf der Seite **Produktlizenzen** die Umschaltfläche für die Lizenz, die Sie entfernen möchten, auf **aus** fest.
 
-4. Wählen Sie **Speichern** aus.
+4. Klicken Sie auf **Speichern**.
 
 5. Wenn Sie zur Seite **aktive Benutzer** zurückkehren, wird der Status des freigegebenen Postfachs nicht **lizenziert**.
 
 6. Sie zahlen noch immer für die Lizenz. Um das bezahlen zu beenden, [Entfernen Sie die Lizenz aus Ihrem Abonnement](../../commerce/licenses/remove-licenses-from-subscription.md).
 
 ::: moniker-end 
+
+ 
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
