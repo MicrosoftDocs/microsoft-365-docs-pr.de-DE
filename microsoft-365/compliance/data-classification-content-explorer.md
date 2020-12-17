@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit dem Inhalts-Explorers zur Datenklassifizierung können Sie beschriftete Elemente systemintern anzeigen.
-ms.openlocfilehash: 7977d30881a4229f99f4c5976d4c41377573a6ca
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: 9beeab0c0b00ac1ac37c9df53e14a2f3f2914422
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379209"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701152"
 ---
 # <a name="get-started-with-content-explorer"></a>Erste Schritte mit dem Inhalts-Explorer
 
@@ -39,6 +39,9 @@ Jedem Konto, das auf die Datenklassifizierung zugreift und sie verwendet, muss e
 - Office 365 (E5)
 - Advanced Compliance (E5)-Add-on
 - Advanced Threat Intelligence (E5)-Add-on
+- Microsoft 365 E5/A5 Info Protection & Governance
+- Microsoft 365 E5/A5 Compliance
+
 
 ### <a name="permissions"></a>Berechtigungen
 

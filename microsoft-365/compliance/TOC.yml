@@ -106,6 +106,8 @@
           href: custom-sensitive-info-types.md
         - name: Erstellen benutzerdefinierter Typen vertraulicher Informationen mit exakter Datenübereinstimmung
           href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
+        - name: Verwenden Sie das exakte Daten-Übereinstimmungsschema und den Gestaltungsvorlagenkatalog-Assistenten
+          href: sit-edm-wizard.md
         - name: 'Ändern Sie das Schema für die genaue Datenübereinstimmung, um eine konfigurierbare Übereinstimmung zu verwenden'
           href: sit-modify-edm-schema-configurable-match.md
         - name: Erstellen eines benutzerdefinierten Typs vertraulicher Informationen – Security & Compliance Center
