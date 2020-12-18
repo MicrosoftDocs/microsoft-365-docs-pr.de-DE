@@ -1,32 +1,44 @@
-- name: Erste Schritte mit Knowledge Management
+- name: Erste Schritte mit Topic Experiences
   items:
-    - name: Wissensmanagement (Übersicht)
-      href: knowledge-management-overview.md
-    - name: Themen Center (Übersicht)
-      href: topic-center-overview.md
-    - name: Arbeiten mit Themen im Themen Center
-      href: work-with-topics.md
-    - name: Erteilen von Benutzerberechtigungen für das Themen Center
-      href: give-user-permissions-to-the-topic-center.md
-    - name: Bereit machen ihrer Umgebung
+    - name: Topic Experiences – Einführung
+      href: index.md
+    - name: Topic Experiences – Übersicht
+      href: topic-experiences-overview.md
+    - name: Topic Experiences entdecken und kuratieren
+      href: topic-experiences-discovery-curation.md
+    - name: Topic Experiences – Rollen
+      href: topic-experiences-roles.md
+    - name: Bereiten Sie Ihre Umgebung vor
       href: topic-experiences-get-ready.md
 - name: Setup und Verwaltung
   items:
-    - name: Thema Sicherheit
+    - name: Topic Sicherheit
       href: topic-experiences-security-privacy.md
-    - name: Planen von Themen Erfahrungen
+    - name: Topic Experiences planen
       href: plan-topic-experiences.md
-    - name: Einrichten von Themen Erfahrungen
+    - name: Topic Experiences einrichten
       href: set-up-topic-experiences.md
-    - name: Verwalten der Themen Ermittlung
+    - name: Topic Entdecken verwalten
       href: topic-experiences-discovery.md
-    - name: Verwalten der Themen Sichtbarkeit
+    - name: Topic Sichtbarkeit verwalten
       href: topic-experiences-knowledge-rules.md
-    - name: Verwalten von Themen Berechtigungen
+    - name: Topic Zugriffsberechtigungen verwalten
       href: topic-experiences-user-permissions.md
-    - name: Ändern des Namens des Themen Centers
+    - name: Den Topic Center-Namen ändern
       href: topic-experiences-administration.md
+- name: Mit Topics arbeiten
+  items:
+    - name: Topic Center Übersicht
+      href: topic-center-overview.md
+    - name: Themen im Topic Center verwalten
+      href: manage-topics.md
+    - name: Ein neues Thema erstellen
+      href: create-a-topic.md
+    - name: Thema bearbeiten
+      href: edit-a-topic.md
+    - name: Sicherheitskürzung
+      href: topic-experiences-security-trimming.md
 - name: Einführung
   items:
-    - name: Erste Schritte mit der Einführung des Fahrzeugs
+    - name: Erste Schritte mit Driving Adoption
       href: topics-adoption-getstarted.md
