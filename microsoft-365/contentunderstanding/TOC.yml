@@ -10,7 +10,7 @@
       href: difference-between-document-understanding-and-form-processing-model.md
 - name: Erste Schritte mit Modellen
   items:
-    - name: Informationen zu Modellen mithilfe des Beispielmodells
+    - name: Erfahren Sie mehr über Modelle anhand des Beispielmodells
       href: learn-about-document-understanding-models-through-the-sample-model.md
     - name: Erstellen eines Inhaltscenters
       href: create-a-content-center.md
@@ -24,7 +24,7 @@
       href: apply-a-model.md
     - name: Erstellen eines Formularverarbeitungsmodells
       href: create-a-form-processing-model.md
-    - name: Anwenden einer Aufbewahrungs Bezeichnung
+    - name: Anwenden einer Aufbewahrungsbezeichnung
       href: apply-a-retention-label-to-a-model.md
     - name: Modellverwendungsanalysen
       href: model-usage-analytics.md
@@ -40,11 +40,11 @@
       href: set-up-content-understanding.md
 - name: Inhaltsdienste
   items:
-    - name: Importieren mit SKOS
+    - name: Importieren mithilfe von SKOS
       href: import-term-set-skos.md
-    - name: SKOS-Formatierungs Referenz
+    - name: SKOS Formatierungs-Referenz
       href: skos-format-reference.md
-    - name: Inhaltstyp an Hub verschieben
+    - name: Inhaltstypen auf den Hub übertragen
       href: push-content-type-to-hub.md
     - name: Terminologiespeicherberichte
       href: term-store-analytics.md
