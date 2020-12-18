@@ -19,16 +19,28 @@ search.appverid:
 - MET150
 - MOE150
 description: Details zum Produktivitäts Ergebnis der Kommunikation – Personen Erfahrung.
-ms.openlocfilehash: de73957ffad27ddac9b5e18cd6da7becd2239a59
-ms.sourcegitcommit: 98146c67a1d99db5510fa130340d3b7be8d81b21
+ms.openlocfilehash: b688063c10749d15fc5b00b629ee18afedba927e
+ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "49585316"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49712579"
 ---
 # <a name="communication--people-experiences"></a>Kommunikation – Personen Erfahrungen
 
 Die Produktivitäts Bewertung unterstützt die Reise zur digitalen Transformation mit Einblicken darüber, wie Ihre Organisation Microsoft 365 verwendet, und die Technologie Erfahrungen, die Sie unterstützen. Das Bewertungsergebnis Ihrer Organisation reflektiert Messungen der Mitarbeiter- und Technologieerfahrung und kann mit Benchmarks von Organisationen verglichen werden, die größenmäßig Ihrer ähnlich sind. Die Kategorie "Kommunikation" ist Teil der Measures "People Experiences". Weitere Informationen finden Sie unter Übersicht über die [Produktivitäts Bewertung](productivity-score.md) und Lesen der [Datenschutzerklärung von Microsoft](https://privacy.microsoft.com/privacystatement).
+
+## <a name="prerequisites"></a>Voraussetzungen
+
+Für die ersten Schritte mit den Kommunikations Einblicken müssen Personen in Ihrer Organisation lizenziert werden für:
+
+- Microsoft Teams
+- Yammer
+- Exchange Online
+
+Weitere Informationen finden Sie unter [Zuweisen von Lizenzen zu Benutzern](../manage/assign-licenses-to-users.md).
+
+Nachdem Personen in den oben genannten Produkten mindestens einmal in den letzten 28 Tagen aktiv waren, werden Sie beginnen, die Einblicke zu sehen.
 
 ## <a name="why-your-organizations-communication-score-matters"></a>Gründe für das Kommunikations Ergebnis Ihrer Organisation 
 

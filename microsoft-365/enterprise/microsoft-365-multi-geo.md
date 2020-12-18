@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: In diesem Artikel erfahren Sie, wie Sie Ihre Microsoft 365-Präsenz mit Microsoft 365 Multi-Geo auf mehrere geografische Regionen erweitern.
-ms.openlocfilehash: cf5f655e2b205001c6c16ed05abc33d68324ff15
-ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
-ms.translationtype: HT
+ms.openlocfilehash: 6d16d222a97f309eafdd79a2b107978ce7b4f242
+ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580697"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49712497"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo
 
@@ -50,7 +50,7 @@ Dies sind die wichtigsten Begriffe für die Beschreibung von Microsoft 365 Multi
 
 ## <a name="licensing"></a>Lizenzierung
 
-Microsoft 365 Multi-Geo wird als Add-On bei den folgenden Microsoft 365-Abonnementplänen für EA-Kunden mit mindestens 250 Microsoft 365-Arbeitsplätzen im Mandanten und mindestens 5 % der Arbeitsplätze für die Nutzung von Multi-Geo bereitgestellt. Wenden Sie sich für weitere Informationen an Ihr Microsoft-Team.
+Microsoft 365 Multi-Geo ist als Add-on für die folgenden Microsoft 365-Abonnement Pläne für Enterprise-Agreement-Kunden mit mindestens 250 Microsoft 365-sitzen in Ihrem Mandanten und mindestens 5% dieser Sitze unter Verwendung von Multi-Geo verfügbar. Benutzer Abonnementlizenzen müssen sich in derselben Enterprise-Vereinbarung befinden wie die Lizenzen für Multi-Geo-Dienste. Wenden Sie sich für weitere Informationen an Ihr Microsoft-Team.
 
 - Microsoft 365 F1, F3, E3 oder E5
 - Office 365 F3, E1, E3 oder E5
@@ -70,7 +70,7 @@ Gehen Sie folgendermaßen vor, um mit Multi-Geo loszulegen:
 
 1. Arbeiten Sie mit Ihrem Kontoteam, um den Serviceplan für _Multi-Geo-Funktionen in Microsoft 365_ hinzuzufügen. Sie werden angeleitet, die benötigten Lizenzen hinzuzufügen. Multi-Geo ist für EA/Bestandskunden mit mindestens 250 Microsoft 365-Abonnements verfügbar.
 
-   Bevor Sie mit der Verwendung von Microsoft 365 Multi-Geo beginnen können, muss Ihr Exchange Online-Mandant durch Microsoft für die Unterstützung von Multi-Geo konfiguriert werden. Dieser einmalige Konfigurationsprozess wird ausgelöst, nach dem Sie den Service-Plan für *Multi-Geo-Funktionen in Microsoft 365* bestellt haben und die Lizenzen in Ihrem Mandanten angezeigt werden. Sobald Ihr Mandant den Konfigurationsprozess für jede Workload abgeschlossen hat, erhalten Sie workloadspezifische Benachrichtigungen im [Microsoft 365-Nachrichtencenter](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) und können dann mit der Konfiguration und Verwendung Ihrer Microsoft 365 Multi-Geo-Funktionen beginnen. Wieviel Zeit zum Konfigurieren eines Mandanten für die Multi-Geo-Unterstützung benötigt wird, variiert von Mandant zu Mandant, aber die meisten Mandanten sind innerhalb eines Monats nach Erhalt der Featurelizenzen fertig. Größere oder komplexere Mandanten benötigen möglicherweise mehr Zeit für den Abschluss des Konfigurationsprozesses. Details zu Ihrem spezifischen Mandanten erhalten Sie bei Bedarf von Ihrem Kontoteam.
+   Bevor Sie mit der Verwendung von Microsoft 365 Multi-Geo beginnen können, muss Ihr Exchange Online-Mandant durch Microsoft für die Unterstützung von Multi-Geo konfiguriert werden. Dieser einmalige Konfigurationsprozess wird ausgelöst, nach dem Sie den Service-Plan für *Multi-Geo-Funktionen in Microsoft 365* bestellt haben und die Lizenzen in Ihrem Mandanten angezeigt werden. Sie erhalten Arbeits Auslastungs spezifische Benachrichtigungen im [Microsoft 365-Nachrichtencenter](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) , sobald Ihr Mandant den Konfigurationsprozess für jede Arbeitsauslastung abgeschlossen hat, und Sie können dann mit der Konfiguration und Verwendung Ihrer Microsoft 365 Multi-Geo-Funktionen beginnen. Wieviel Zeit zum Konfigurieren eines Mandanten für die Multi-Geo-Unterstützung benötigt wird, variiert von Mandant zu Mandant, aber die meisten Mandanten sind innerhalb eines Monats nach Erhalt der Featurelizenzen fertig. Größere oder komplexere Mandanten benötigen möglicherweise mehr Zeit für den Abschluss des Konfigurationsprozesses. Details zu Ihrem spezifischen Mandanten erhalten Sie bei Bedarf von Ihrem Kontoteam.
 
 2. Lesen Sie den Abschnitt [Planen Ihrer Multi-Geo-Umgebung](plan-for-multi-geo.md).
 

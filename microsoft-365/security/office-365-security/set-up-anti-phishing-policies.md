@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die Anti-Phishing-Richtlinien informieren, die in Exchange Online Protection (EoP) und Microsoft Defender für Office 365 zur Verfügung stehen.
-ms.openlocfilehash: 43736fbd42949a084804825ec7f12d19b7fd1818
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 7660516e60c77a7f31f711f78b6fd28d3ad179fd
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683049"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709704"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-Phishing-Richtlinien in Microsoft 365
 
@@ -30,7 +30,7 @@ ms.locfileid: "49683049"
 
 Richtlinien zum Konfigurieren von Einstellungen für den Schutz vor Phishing sind in Microsoft 365-Organisationen mit Exchange Online-Postfächern, eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächern und Microsoft Defender für Office 365 Organisationen verfügbar.
 
-Anti-Phishing-Richtlinien in Microsoft Defender für Office 365 sind nur in Organisationen verfügbar, die Defender für Office 365 haben. Zum Beispiel:
+Anti-Phishing-Richtlinien in Microsoft Defender für Office 365 sind nur in Organisationen verfügbar, die Defender für Office 365 haben. Beispiel:
 
 - Microsoft 365 Enterprise E5, Microsoft 365 Education A5, etc.
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
@@ -55,7 +55,7 @@ In der folgenden Tabelle werden die allgemeinen Unterschiede zwischen Anti-Phish
 
 Informationen zum Konfigurieren von Anti-Phishing-Richtlinien finden Sie in den folgenden Artikeln:
 
-- [Konfigurieren von Anti-Phishing-Richtlinien in EoP](configure-anti-phishing-policies-eop.md)
+- [Konfigurieren von Anti-Phishing-Richtlinien in EOP](configure-anti-phishing-policies-eop.md)
 
 - [Konfigurieren von Anti-Phishing-Richtlinien in Microsoft Defender für Office 365](configure-atp-anti-phishing-policies.md)
 
@@ -99,6 +99,8 @@ Die folgenden spoofeinstellungen stehen in Anti-Phishing-Richtlinien in EoP und 
   > - Der Schutz vor Spoofing ist in der standardmäßigen Anti-Phishing-Richtlinie und in allen neuen benutzerdefinierten AntiPhishing-Richtlinien, die Sie erstellen, standardmäßig aktiviert.
   >
   > - Sie müssen den Schutz vor Spoofing nicht deaktivieren, wenn Ihr MX-Eintrag nicht auf Microsoft 365 verweist; Stattdessen aktivieren Sie die erweiterte Filterung für Connectors. Anweisungen finden Sie unter [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+  >
+  > - Durch Deaktivieren des Schutz vor Spoofing wird nur der implizite Spoofing-Schutz durch [kombinierte Authentifizierungs](email-validation-and-authentication.md#composite-authentication) Prüfungen deaktiviert. Wenn der Absender nicht explizit [DMARC](use-dmarc-to-validate-email.md) überprüft, wo die Richtlinie auf "Quarantäne" oder "ablehnen" festgelegt ist, wird die Nachricht weiterhin isoliert oder abgelehnt.
 
   Für Nachrichten von blockierten gefälschten Absendern können Sie auch die Aktion angeben, die für die Nachrichten ausgeführt werden soll:
 
