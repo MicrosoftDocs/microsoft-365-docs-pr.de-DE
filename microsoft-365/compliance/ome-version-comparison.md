@@ -17,27 +17,23 @@ search.appverid:
 - MET150
 description: In diesem Artikel werden die Unterschiede zwischen verschiedenen Versionen Office 365 Nachrichtenverschlüsselung erläutert.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a52d0c0164dfddb9f678bffa088760a271bc28e3
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: f8052272cfa4951cae132f0f66b0d9f84e05b168
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754129"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709662"
 ---
 # <a name="compare-versions-of-ome"></a>Vergleichen von OME-Versionen
 
 In diesem Artikel werden Legacy-Office 365 Nachrichtenverschlüsselung (OM) mit den neuen OM-Funktionen und Office 365 erweiterte Nachrichtenverschlüsselung verglichen. Die neuen Funktionen sind eine Fusion und eine neuere Version von OM und Information Rights Management (IRM). Außerdem werden eindeutige Merkmale der Bereitstellung in gcc High beschrieben. Die beiden können in Ihrer Organisation nebeneinander bestehen. Informationen zur Funktionsweise der neuen Funktionen finden Sie unter [Office 365 Message Encryption (OM)](ome.md).
 
-||
-|:-----|
-|Dieser Artikel ist Teil einer größeren Reihe von Artikeln über Office 365 Nachrichtenverschlüsselung. Dieser Artikel richtet sich an Administratoren und ITPros. Wenn Sie nur auf der Suche nach Informationen zum Senden oder Empfangen einer verschlüsselten Nachricht sind, lesen Sie die Artikelliste in [Office 365 Nachrichtenverschlüsselung (OM)](ome.md) , und suchen Sie nach dem Artikel, der Ihren Anforderungen am besten entspricht. |
-||
+Dieser Artikel ist Teil einer größeren Reihe von Artikeln über Office 365 Nachrichtenverschlüsselung. Dieser Artikel richtet sich an Administratoren und ITPros. Wenn Sie nur auf der Suche nach Informationen zum Senden oder Empfangen einer verschlüsselten Nachricht sind, lesen Sie die Artikelliste in [Office 365 Nachrichtenverschlüsselung (OM)](ome.md) , und suchen Sie nach dem Artikel, der Ihren Anforderungen am besten entspricht.
 
 ## <a name="side-by-side-comparison-of-features-and-capabilities"></a>Nebeneinander Vergleich von Features und Funktionen
 
-|                                   |Alte Features       |                   |Neue Features              |
+|           **Situation**           | **Legacy OME**    | **IRM**           | **Neue OM-Funktionen** |
 |-----------------------------------|-------------------|-------------------|--------------------------|
-|**Funktionalität**                     | **Legacy OME**    | **IRM**           | **Neue OM-Funktionen** |
 |*Senden einer verschlüsselten e-Mail*        |Durch Exchange-Nachrichtenfluss Regeln|Von Outlook Desktop oder Outlook im Internet initiierter Endbenutzer; oder über Exchange-Nachrichtenfluss Regeln|Von Outlook Desktop, Outlook für Mac oder Outlook im Internet initiierter Endbenutzer; durch Exchange-Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) und Verhinderung von Datenverlust (DLP)|
 |*Vorlage für die Rechteverwaltung*       |   Nicht zutreffend      |Option und benutzerdefinierte Vorlagen nicht weiterleiten|Option, Encrypt-Only Option und benutzerdefinierte Vorlagen nicht weiterleiten|
 |*Empfängertyp*                   |Interne und externe Empfänger|Nur interne Empfänger         |Interne und externe Empfänger|
@@ -93,7 +89,7 @@ Alle Empfänger außerhalb von gcc High, einschließlich kommerzieller Microsoft
 
 Sie können sowohl Legacy OM als auch die neuen Funktionen im gleichen Mandanten verwenden. Als Administrator können Sie dies tun, indem Sie die Version von OM auswählen, die Sie beim Erstellen der Nachrichtenfluss Regeln verwenden möchten.
 
-- Um die Vorgängerversion von OM anzugeben, verwenden Sie die Aktion Exchange-Nachrichtenfluss Regel **Anwenden der vorherigen Version von**om.
+- Um die Vorgängerversion von OM anzugeben, verwenden Sie die Aktion Exchange-Nachrichtenfluss Regel **Anwenden der vorherigen Version von** om.
 
 - Um die neuen Funktionen anzugeben, verwenden Sie die Aktion Exchange-Nachrichtenfluss Regel **anwenden Office 365 Nachrichtenverschlüsselung und Rechte Schutz**.
 

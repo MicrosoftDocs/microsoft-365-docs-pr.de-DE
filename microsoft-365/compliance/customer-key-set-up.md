@@ -1,5 +1,5 @@
 ---
-title: Einrichten des Kunden Schlüssels
+title: Einrichten des Kunden Schlüssels auf Anwendungsebene
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie den Kundenschlüssel für Microsoft 365 für Exchange Online-, Skype for Business-, SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Dateien einrichten.
-ms.openlocfilehash: fed181649696c7f5a92850943e1dd980b42aa819
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: b6ead2f92475dcfe230fc13d8ab1137365238755
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688422"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709517"
 ---
-# <a name="set-up-customer-key"></a>Einrichten des Kunden Schlüssels
+# <a name="set-up-customer-key-at-the-application-level"></a>Einrichten des Kunden Schlüssels auf Anwendungsebene
 
 Mit dem Kundenschlüssel können Sie die Verschlüsselungsschlüssel Ihrer Organisation steuern und dann Microsoft 365 so konfigurieren, dass Sie Sie zum Verschlüsseln von Daten im Ruhezustand in Microsoft-Rechenzentren verwenden. Mit anderen Worten: Customer Key ermöglicht es Kunden, mit ihren Schlüsseln eine Verschlüsselungsebene hinzuzufügen, die Ihnen gehört. Zu den Daten im Ruhezustand gehören Daten aus Exchange Online und Skype for Business, die in SharePoint Online und OneDrive for Business in Postfächern und Dateien gespeichert sind.
 
@@ -98,9 +98,10 @@ Führen Sie diese Aufgaben in Azure Key Vault aus. Sie müssen diese Schritte au
 Kundenschlüssel erfordert zwei Azure-Abonnements. Als bewährte Methode empfiehlt Microsoft, neue Azure-Abonnements für die Verwendung mit Customer Key zu erstellen. Azure Key-Tresorschlüssel können nur für Anwendungen in demselben Azure-Active Directory (Microsoft Azure Active Directory)-Mandanten autorisiert werden, Sie müssen die neuen Abonnements mit dem gleichen Azure AD Mandanten erstellen, der in Ihrer Organisation verwendet wird, in der die DEPs zugewiesen wird. Verwenden Sie beispielsweise Ihr Arbeits-oder Schulkonto, das über globale Administratorrechte in Ihrer Organisation verfügt. Weitere Informationen zu den einzelnen Arbeitsschritten finden Sie unter [Als Unternehmen für Azure registrieren](https://azure.microsoft.com/documentation/articles/sign-up-organization/).
   
 > [!IMPORTANT]
-> Für Customer Key sind zwei Schlüssel für jede Daten- Verschlüsselungsrichtlinie (DEP) erforderlich. Zu diesem Zweck müssen Sie zwei Azure-Abonnements erstellen. Als bewährte Methode empfiehlt Microsoft, dass separate Mitglieder Ihrer Organisation jeweils einen Schlüssel für jedes Abonnement konfigurieren. Darüber hinaus sollten diese Azure-Abonnements nur zum Verwalten von kryptografischen Schlüsseln für Office 365 verwendet werden. Auf diese Weise ist Ihre Organisation geschützt, falls einer ihrer Betreiber versehentlich, absichtlich oder in böswilliger Absicht die Schlüssel, für die Sie verantwortlich sind, löscht oder auf andere Weise unsachgemäß handhabt.
-> 
-> Es wird empfohlen, dass Sie neue Azure-Abonnements einrichten, die ausschließlich zum Verwalten von Azure Key Vault-Ressourcen für die Verwendung mit Customer Key genutzt werden. Es gibt praktisch keine Beschränkung hinsichtlich der Anzahl von Azure-Abonnements, die Sie für Ihre Organisation erstellen können. Durch die Nutzung dieser bewährten Methoden können Sie die Auswirkungen von menschlichen Fehlern bei der Verwaltung der von Customer Key genutzten Ressourcen minimieren.
+> Für Customer Key sind zwei Schlüssel für jede Daten- Verschlüsselungsrichtlinie (DEP) erforderlich. Zu diesem Zweck müssen Sie zwei Azure-Abonnements erstellen. Als bewährte Methode empfiehlt Microsoft, dass separate Mitglieder Ihrer Organisation jeweils einen Schlüssel für jedes Abonnement konfigurieren. Sie sollten diese Azure-Abonnements nur zum Verwalten von Verschlüsselungsschlüsseln für Office 365 verwenden. Auf diese Weise ist Ihre Organisation geschützt, falls einer ihrer Betreiber versehentlich, absichtlich oder in böswilliger Absicht die Schlüssel, für die Sie verantwortlich sind, löscht oder auf andere Weise unsachgemäß handhabt.
+>
+
+Es gibt praktisch keine Beschränkung hinsichtlich der Anzahl von Azure-Abonnements, die Sie für Ihre Organisation erstellen können. Durch die Nutzung dieser bewährten Methoden können Sie die Auswirkungen von menschlichen Fehlern bei der Verwaltung der von Customer Key genutzten Ressourcen minimieren.
   
 ### <a name="submit-a-request-to-activate-customer-key-for-office-365"></a>Senden einer Anforderung zum Aktivieren von Customer Key für Office 365
 
@@ -279,12 +280,12 @@ Dabei gilt Folgendes:
   > [!TIP]
   > Benennen Sie Schlüssel, die eine ähnliche Benennungskonvention verwenden, nach dem oben für Schlüsseltresore beschriebenen Verfahren. Auf diese Weise ist die Zeichenfolge in Tools, die lediglich den Schlüsselnamen anzeigen, selbsterklärend.
   
-- Wenn Sie den Schlüssel mit einem HSM schützen möchten, stellen Sie sicher, dass Sie **HSM** als Wert des Parameters _Destination_ angeben, andernfalls geben Sie **Software** an.
+Wenn Sie den Schlüssel mit einem HSM schützen möchten, stellen Sie sicher, dass Sie **HSM** als Wert des Parameters _Destination_ angeben, andernfalls geben Sie **Software** an.
 
 Beispiel:
   
 ```powershell
-Add-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-VaultA1-Key001 -Destination Software -KeyOps wrapKey,unwrapKey
+Add-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-VaultA1-Key001 -Destination HSM -KeyOps wrapKey,unwrapKey
 ```
 
 Wenn Sie einen Schlüssel direkt in ihren schlüsseltresor importieren möchten, benötigen Sie ein nCipher nShield-Hardware Sicherheitsmodul.
@@ -307,7 +308,7 @@ Um die Wiederherstellungsebene eines Schlüssels zu überprüfen, führen Sie in
 (Get-AzKeyVaultKey -VaultName <vault name> -Name <key name>).Attributes
 ```
 
-Wenn die _Wiederherstellungsebene_ einen anderen Wert als "wieder **herstellbare + ProtectedSubscription**" zurückgibt, müssen Sie dieses Thema durchlesen und sicherstellen, dass Sie alle Schritte zum Platzieren des Abonnements in der Liste "nicht abbrechen" und "Soft Delete" für jeden schlüsseltresor aktiviert haben.
+Wenn die _Wiederherstellungsebene_ einen anderen Wert als "wieder **herstellbare + ProtectedSubscription**" zurückgibt, müssen Sie diesen Artikel lesen und sicherstellen, dass Sie alle Schritte zum Setzen des Abonnements in der Liste "nicht abbrechen" und "Soft Delete" für jeden schlüsseltresor aktiviert haben.
   
 ### <a name="back-up-azure-key-vault"></a>Sichern von Azure Key Vault
 
@@ -480,7 +481,7 @@ Nicht vergessen! Beim Erstellen einer Datenverschlüsselungsrichtlinie (DEP) geb
   
 Um eine Datenverschlüsselungsrichtlinie (DEP) zu erstellen, müssen Sie mithilfe von Windows PowerShell eine Remote-Verbindung zu SharePoint Online herstellen.
   
-1. Stellen Sie auf Ihrem lokalen Computer mithilfe eines Arbeits-oder Schul Kontos, das über globale Administratorberechtigungen in Ihrer Organisation verfügt, [eine Verbindung mit SharePoint Online PowerShell her](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
+1. Stellen Sie auf Ihrem lokalen Computer mithilfe eines Arbeits-oder Schul Kontos, das über globale Administratorberechtigungen in Ihrer Organisation verfügt, [eine Verbindung mit SharePoint Online PowerShell her](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps&preserve-view=true).
 
 2. Führen Sie in der Microsoft SharePoint Online Management-Shell das Cmdlet Register-SPODataEncryptionPolicy wie folgt durch:
 
@@ -493,7 +494,7 @@ Um eine Datenverschlüsselungsrichtlinie (DEP) zu erstellen, müssen Sie mithilf
 Register-SPODataEncryptionPolicy -PrimaryKeyVaultName 'stageRG3vault' -PrimaryKeyName 'SPKey3' -PrimaryKeyVersion 'f635a23bd4a44b9996ff6aadd88d42ba' -SecondaryKeyVaultName 'stageRG5vault' -SecondaryKeyName 'SPKey5' -SecondaryKeyVersion '2b3e8f1d754f438dacdec1f0945f251a’
 ```
 
-   Sobald Sie die Datenverschlüsselungsrichtlinie (DEP) registrieren, beginnt die Verschlüsselung der Daten im Geo. Dies kann einige Zeit dauern. Weitere Informationen zur Verwendung dieses Parameters finden Sie unter [Register-SPODataEncryptionPolicy](https://docs.microsoft.com/powershell/module/sharepoint-online/register-spodataencryptionpolicy?view=sharepoint-ps).
+   Sobald Sie die Datenverschlüsselungsrichtlinie (DEP) registrieren, beginnt die Verschlüsselung der Daten im Geo. Dies kann einige Zeit dauern. Weitere Informationen zur Verwendung dieses Parameters finden Sie unter [Register-SPODataEncryptionPolicy](https://docs.microsoft.com/powershell/module/sharepoint-online/register-spodataencryptionpolicy?view=sharepoint-ps&preserve-view=true).
 
 ### <a name="validate-file-encryption"></a>Überprüfen der Dateiverschlüsselung
 

@@ -19,12 +19,12 @@ ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 ms.custom:
 - seo-marvel-apr2020
 description: Hier erfahren Sie, wie Sie verschlüsselte e-Mail-Nachrichten zwischen Personen innerhalb und außerhalb Ihrer Organisation senden und empfangen.
-ms.openlocfilehash: 542b540bb06998c1b90ef74485a4096ebc9ee0dc
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: f601618c3ad44361794720852b391949901122f2
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45429931"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709621"
 ---
 # <a name="message-encryption"></a>Nachrichtenverschlüsselung
 
@@ -82,11 +82,10 @@ Mit Office 365 Nachrichtenverschlüsselung können Benutzer verschlüsselte e-Ma
 
 Empfänger von verschlüsselten Nachrichten in Organisationen können diese Nachrichten nahtlos in einer Version von Outlook lesen, einschließlich Outlook für PC, Outlook für Mac, Outlook im Web, Outlook für IOS und Outlook für Android. Benutzer, die verschlüsselte Nachrichten auf anderen e-Mail-Clients empfangen, können die Nachrichten im OM-Portal anzeigen.
 
-Ausführliche Anleitungen zum Senden und Anzeigen von verschlüsselten Nachrichten finden Sie in den folgenden Artikeln:
+Ausführliche Anleitungen zum Senden und Anzeigen von verschlüsselten Nachrichten finden Sie in den folgenden Artikeln.
 
-|||
-|:-----|:-----|
 |Lesen Sie diesen Artikel...|Wenn Sie...|
+|:-----|:-----|
 |[Informationen zu geschützten Nachrichten in Office 365](https://support.office.com/article/2baf3ac7-12db-40a4-8af7-1852204b4b67.aspx)|Endbenutzer, die mehr darüber erfahren möchten, wie verschlüsselte Nachrichten funktionieren und welche Optionen Ihnen zur Verfügung stehen.|
 |[Wie öffne ich eine geschützte Nachricht?](https://support.office.com/article/1157a286-8ecc-4b1e-ac43-2a608fbf3098.aspx)|Ein Endbenutzer, der eine geschützte Nachricht lesen möchte, die Ihnen gesendet wurde. Dieser Artikel enthält Informationen zum Lesen von Nachrichten in mehreren Versionen von Outlook und aus unterschiedlichen e-Mail-Konten, einschließlich dieser Konten außerhalb von Microsoft 365 wie Gmail und Yahoo!. Konten.|
 |[Senden, anzeigen und beantworten von verschlüsselten Nachrichten in Outlook](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)|Ein Endbenutzer, der eine verschlüsselte Nachricht aus Outlook senden, anzeigen oder beantworten möchte. Selbst wenn Sie kein Mitglied einer Organisation sind, erhalten Sie weiterhin Benachrichtigungen über verschlüsselte Nachrichten, die Ihnen in Outlook gesendet werden. In diesem Artikel erhalten Sie Anleitungen zum Anzeigen und beantworten von verschlüsselten Nachrichten, die von Office 365 gesendet werden.|

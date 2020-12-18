@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Erfahren Sie, wie Office 365 globale Administratoren das Branding Ihrer Organisation auf verschlüsselte e-Mail-Nachrichten & Inhalt des Verschlüsselungs Portals anwenden können.
-ms.openlocfilehash: 77fd5e08afa1a4d8ae5f6386fa65b88b6ea2be4d
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 56b948fc941da4fb221d929ecd59c5300b135e39
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663232"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709497"
 ---
 # <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>Hinzufügen der Marke Ihrer Organisation zu ihren verschlüsselten Nachrichten in Microsoft 365 for Business-Nachrichtenverschlüsselung
 
@@ -192,9 +192,8 @@ Die Farb Namen, die Sie für die Hintergrundfarbe verwenden können, sind limiti
 
 In der folgenden Tabelle werden die verfügbaren Namen der Hintergrundfarbe und die zugehörigen Hex-Codewerte beschrieben.
 
-|||
-|---|---|
 |**Farbname**|**Farb Code**|
+|---|---|
 |`aliceblue`|#f0f8ff|
 |`antiquewhite`|#faebd7|
 |`aqua`|#00ffff|

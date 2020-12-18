@@ -1,5 +1,5 @@
 ---
-title: Grundlegendes zu Ihrer Rechnung oder Rechnung für Microsoft 365 for Business
+title: Grundlegendes zu Ihrer Rechnung für Microsoft 365 für Unternehmen
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -24,17 +24,17 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
-description: Hier erfahren Sie, wie Sie Gebühren, Abrechnung und Zahlungsinformationen auf Ihrer Microsoft 365 for Business-Rechnung oder-Rechnung interpretieren und wie Sie die Bestellnummer ändern.
+description: Hier erfahren Sie, wie Sie die Informationen zu Gebühren, Abrechnung und Zahlung auf Ihrer Rechnung für Microsoft 365 für Unternehmen interpretieren sowie die Auftragsnummer ändern können.
 ms.openlocfilehash: 3d71bab82be3fd9e4c633885dccaf357ccabb551
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48638399"
 ---
-# <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Grundlegendes zu Ihrer Rechnung oder Rechnung für Microsoft 365 for Business
+# <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Grundlegendes zu Ihrer Rechnung für Microsoft 365 für Unternehmen
 
-Entweder monatlich oder jährlich (je nachdem, welche Option Sie beim Kauf Ihres Abonnements ausgewählt haben), erhalten Sie eine e-Mail, in der Ihnen mitgeteilt wird, dass Ihre neue Abrechnungs Anweisung im Admin Center zur Verfügung steht. [Erfahren Sie, wie Sie Ihre Rechnung finden und anzeigen](view-your-bill-or-invoice.md).
+Entweder monatlich oder jährlich (je nachdem, welche Option Sie beim Kauf Ihres Abonnements gewählt haben) erhalten Sie eine E-Mail, in der Sie informiert werden, dass Ihre neue Rechnung im Admin Center zur Verfügung steht. [Erfahren Sie, wie Sie Ihre Rechnung finden und anzeigen](view-your-bill-or-invoice.md).
   
 Ihre Rechnung enthält zwei Seiten. Seite 1 ist die Zusammenfassung der Rechnung und enthält allgemeine Informationen über die Rechnung, den Auftrag, den fälligen Betrag sowie dazu, wie Sie eine Zahlung vornehmen und wie Sie Kontakt zum Support aufnehmen können.
   
@@ -48,15 +48,15 @@ Beschreibungen der Felder und Ausdrücke, die auf einer Rechnung enthalten sind,
   
 ## <a name="understand-billing-concepts"></a>Grundlegendes zu den Abrechnungskonzepten
 
-Bevor Sie eine Rechnung anzeigen, sollten Sie mit einigen wichtigen Abrechnungskonzepten vertraut sein.
+Bevor Sie Ihre Rechnung anzeigen, sollten Sie mit einigen wichtigen Abrechnungskonzepten vertraut sein.
   
 ### <a name="invoice-balance-vs-order-balance"></a>Rechnungssaldo und Auftragssaldo
 
- **Rechnungssaldo** ist der Betrag, der auf Ihrer Rechnung angezeigt wird, und ist nur der Betrag, der für diesen bestimmten Abrechnungszeitraum fällig ist. Ihr gesamtes **Auftragssaldo** ist die Summe aller nicht bezahlten Rechnungen. Sie können den Saldo Ihrer Bestellung im Abschnitt **Abrechnung** des Admin Centers anzeigen.
+ **Rechnungssaldo** ist der Betrag, der auf Ihrer Rechnung angezeigt wird, und ist nur der Betrag, der für diesen bestimmten Abrechnungszeitraum fällig ist. Ihr gesamtes **Auftragssaldo** ist die Summe aller nicht bezahlten Rechnungen. Sie können Ihr Auftragssaldo im Admin Center im Abschnitt **Abrechnung** anzeigen.
   
 ### <a name="billing-frequency-vs-invoice-frequency"></a>Abrechnungshäufigkeit und Rechnungshäufigkeit
 
- **Abrechnungshäufigkeit** bedeutet, wie oft eine Rechnung für Sie erstellt wird. Abonnements werden entweder monatlich oder jährlich in Rechnung gestellt, je nachdem, welche Option Sie während des Abonnements erworben haben. **Rechnungshäufigkeit** bedeutet, wie oft Sie eine Rechnung erhalten. Wenn Sie jährliche Abrechnung gewählt haben, erhalten Sie nur eine Rechnung pro Jahr - es sei denn, dass die Aktivität für Ihr Abonnement eine Gebühr oder eine Gutschrift erfordert.
+ **Abrechnungshäufigkeit** bedeutet, wie oft eine Rechnung für Sie erstellt wird. Abonnements werden monatlich oder jährlich abgerechnet – je nachdem, welche Option Sie während des Abonnementkaufs gewählt haben. **Rechnungshäufigkeit** bedeutet, wie oft Sie eine Rechnung erhalten. Wenn Sie jährliche Abrechnung gewählt haben, erhalten Sie nur eine Rechnung pro Jahr - es sei denn, dass die Aktivität für Ihr Abonnement eine Gebühr oder eine Gutschrift erfordert.
   
 Haben Sie mehrere Aufträge, erhalten Sie für jeden Auftrag eine Rechnung.
   
@@ -69,30 +69,30 @@ In der folgenden Tabelle sind die Felder beschrieben, die möglicherweise auf Ih
   
 |**Name**|**Beschreibung**|
 |:-----|:-----|
-|Jährlicher Preis|Abonnements werden monatlich oder jährlich abgerechnet. Wenn Sie die jährliche Abrechnung während des Abonnements erworben haben, wird der jährliche Lizenzpreis auf der Rechnung widergespiegelt. Wenn Sie die Abrechnungshäufigkeit ändern möchten, müssen Sie Ihr Abonnement kündigen und es mit der neuen Abrechnungshäufigkeit erneut kaufen.|
+|Jährlicher Preis|Abonnements werden monatlich oder jährlich abgerechnet. Wenn Sie beim Abonnementkauf jährliche Abrechnung gewählt haben, wird der jährliche Lizenzpreis auf der Rechnung ausgewiesen. Wenn Sie die Abrechnungshäufigkeit ändern möchten, müssen Sie Ihr Abonnement kündigen und es mit der neuen Abrechnungshäufigkeit erneut kaufen.|
 |Abrechnungszeitraum|Der Abrechnungszeitraum entspricht dem Zeitraum seit dem letzten Rechnungsdatum. Der Dienstzeitraum ist der Zeitraum, für den Ihnen die Nutzung des Diensts in Rechnung gestellt wird.|
-|Rechnungsempfänger|Dies ist die Adresse Ihrer zuständigen Abteilung und meist mit der Auftraggeberadresse identisch. Informationen zum Aktualisieren Ihrer Rechnungsadresse finden Sie unter [Ändern der Rechnungsadressen](change-your-billing-addresses.md).|
+|Rechnungsempfänger|Dies ist die Adresse Ihrer zuständigen Abteilung und meist mit der Auftraggeberadresse identisch. Wenn Sie Ihre Rechnungsadresse ändern möchten, gehen Sie so vor, wie unter [Ändern Ihrer Rechnungsadressen](change-your-billing-addresses.md) beschrieben wird.|
 |Gebühren|Auf der Seite 1 Ihrer Rechnung sind alle Gebühren für den Abrechnungszeitraum der Rechnung zusammengefasst. Auf der Seite 2 sind die detaillierten Gebühren für jedes Abonnement aufgeführt.|
 |Scheck|Wenn Sie per Rechnung bezahlen und in Ihrem Land Scheckzahlung angeboten wird, finden Sie unten auf der Seite 1 Informationen darüber, wohin Sie Ihre Zahlung senden sollen. Geben Sie auf Ihrem Scheck bitte die Rechnungsnummer an.|
 |Gutschriften|Auf der Seite 1 Ihrer Rechnung sind alle Gutschriften für den Abrechnungszeitraum der Rechnung zusammengefasst. Auf der Seite 2 sind die detaillierten Gutschriften für jedes Abonnement aufgeführt.|
-|Auftragsnummer des Kunden|Ihre Auftragsnummer. Wenn Sie die Auftragsnummer aktualisieren, wird sie auf zukünftigen Rechnungen enthalten sein. [Ändern Ihrer Auftragsnummer](#change-your-purchase-order-number).  <br/> **Hinweis:** Sie können keine Bestellnummer zu einer vorhandenen Rechnung hinzufügen.           |
+|Auftragsnummer des Kunden|Ihre Auftragsnummer. Wenn Sie die Auftragsnummer aktualisieren, wird sie auf zukünftigen Rechnungen enthalten sein. [Ändern Ihrer Auftragsnummer](#change-your-purchase-order-number).  <br/> **HINWEIS** Einer vorhandenen Rechnung können Sie keine Auftragsnummer hinzuzufügen.           |
 |Tage|Jede Abrechnungstransaktion ist einem Dienstzeitraum zugeordnet. Die Spalte "Tage" gibt die Anzahl von Tagen die in diesem Dienstzeitraum an.|
 |Rabatte|Auf der Seite 1 Ihrer Rechnung sind alle Rabatte für den Abrechnungszeitraum der Rechnung zusammengefasst. Auf der Seite 2 sind die detaillierten Rabatte für jedes Abonnement aufgeführt.|
-|Fällig am|Das Datum, zu dem die Zahlung der Rechnung fällig ist. Wird Ihr Abonnement per Kreditkarte oder Bankeinzug bezahlt, wird Ihre Kreditkarte oder Ihr Bankkonto am Tag nach dem Rechnungsdatum belastet.<br/> **Hinweis:** Die Zahlung per Bankkonto ist in einigen Ländern oder Regionen nicht möglich.           |
-|Elektronischer Zahlungsverkehr|Wenn Sie "Rechnung" als Zahlungsmethode für Abonnements ausgewählt haben, enthält Seite 1 die Microsoft Bankkontoinformationen für elektronische Zahlungen (Wire, Ach, SEPA, etc.). Üblicherweise stellt Ihre Bank ein Referenzfeld zur Verfügung, das Sie ausfüllen, wenn Sie eine Zahlung senden. Geben Sie bitte die Rechnungsnummer an, die in diesem Feld angezeigt wird.|
+|Fällig am|Das Datum, zu dem die Zahlung der Rechnung fällig ist. Wird Ihr Abonnement per Kreditkarte oder Bankeinzug bezahlt, wird Ihre Kreditkarte oder Ihr Bankkonto am Tag nach dem Rechnungsdatum belastet.<br/> **HINWEIS** Zahlung per Bankeinzug ist in einigen Ländern oder Regionen nicht verfügbar.           |
+|Elektronischer Zahlungsverkehr|Wenn Sie „Rechnung“ als Zahlungsmethode für das Abonnement gewählt haben, enthält Seite 1 die Microsoft-Bankkontoinformationen für elektronische Zahlungen (Telegramm, ACH, SEPA usw.). Üblicherweise stellt Ihre Bank ein Referenzfeld zur Verfügung, das Sie ausfüllen, wenn Sie eine Zahlung senden. Geben Sie bitte die Rechnungsnummer an, die in diesem Feld angezeigt wird.|
 |Gesamtergebnis|Diese Zeile enthält die Gesamtsummen für die Spalten "Gebühren", "Rabatte", "Gutschriften", "Zwischensumme", "Steuern" und "Summe" für alle Abonnements, die auf der Rechnung aufgeführt sind.|
 |Rechnungsdatum|Das Erstellungsdatum der Rechnung. Das Rechnungsdatum entspricht dem Tag nach dem Ende des Abrechnungszeitraums. Ist Ihr Abrechnungszeitraum beispielsweise 15. Januar bis 14. Februar, ist der 15. Februar das Rechnungsdatum.|
 |Rechnungsnummer|Die eindeutige Nummer auf Ihrer Rechnung. Geben Sie bei Ihrer Zahlung bitte die Rechnungsnummer an.|
-|Monatlicher Preis|Abonnements werden monatlich oder jährlich abgerechnet. Wenn Sie die monatliche Abrechnung während des Abonnements erworben haben, wird der monatliche Lizenzpreis auf der Rechnung wiedergegeben. Wenn Sie die Abrechnungshäufigkeit ändern möchten, müssen Sie Ihr Abonnement kündigen und es mit der neuen Abrechnungshäufigkeit erneut erwerben.|
+|Monatlicher Preis|Abonnements werden monatlich oder jährlich abgerechnet. Wenn Sie beim Abonnementkauf monatliche Abrechnung gewählt haben, wird der monatliche Lizenzpreis auf der Rechnung ausgewiesen. Wenn Sie die Abrechnungshäufigkeit ändern möchten, müssen Sie Ihr Abonnement kündigen und es mit der neuen Abrechnungshäufigkeit erneut erwerben.|
 |Auftragsnummer|Jedes Mal, wenn Sie ein neues Abonnement kaufen, wird ein Auftrag erstellt. Jeden Monat erhalten Sie eine Rechnung für jeden Auftrag.|
 |Zahlungsanweisungen|If you pay by credit card, you'll see "Do not pay - charged to credit card on file." If you pay by invoice, you'll see instructions for paying by Electronic Funds Transfer (EFT) and check (if applicable).|
 |Zahlungsbedingungen|Die Anzahl von Tagen ab dem Rechnungsdatum, in denen die Zahlung fällig ist. Der Standard ist 30 Tage.|
 |Produkt|Auf Seite 1 Ihrer Rechnung ist "Onlinedienste" der Oberbegriff, mit dem Ihre Abonnements beschrieben werden. Auf Seite 2 sehen Sie die Namen der einzelnen Abonnements.|
 |Menge|Die Anzahl von Lizenzen, die während des Dienstzeitraums erworben wurden.|
 |Dienstzeitraum|Der Dienstzeitraum ist der Zeitraum, für den Ihnen die Nutzung des Diensts in Rechnung gestellt wird. Ein Abrechnungszeitraum entspricht dem Zeitraum seit dem letzten Rechnungsdatum.|
-|Dienstnutzungsadresse|Die Adresse, an der der Dienst genutzt wird, in der Regel mit der Auftraggeberadresse identisch. Informationen zum Aktualisieren Ihrer Dienstnutzungsadresse finden Sie unter [Ändern der Rechnungsadressen](change-your-billing-addresses.md).|
+|Dienstnutzungsadresse|Die Adresse, an der der Dienst genutzt wird, in der Regel mit der Auftraggeberadresse identisch. Wenn Sie Ihre Dienstnutzungsadresse ändern möchten, gehen Sie so vor, wie unter [Ändern Ihrer Rechnungsadressen](change-your-billing-addresses.md) beschrieben wird.|
 |Auftraggeber|Der Name und die Adresse Ihres Unternehmens. Wenn Sie diese Informationen ändern möchten, gehen sie so vor, wie unter [Ändern der Adresse Ihrer Organisation, der E-Mail-Adresse für den technischen Kontakt und anderer Informationen](../../admin/manage/change-address-contact-and-more.md) beschrieben.  |
-|Teilsumme|Jedes Abonnement, das auf Ihrer Rechnung aufgeführt ist, hat eine eigene "Zwischensumme"-Zeile für die Spalten "Gebühren", "Rabatte", "Gutschriften", "Zwischensumme", "Steuer" und "Summe".|
+|Zwischensumme|Jedes Abonnement, das auf Ihrer Rechnung aufgeführt ist, hat eine eigene "Zwischensumme"-Zeile für die Spalten "Gebühren", "Rabatte", "Gutschriften", "Zwischensumme", "Steuer" und "Summe".|
 |Steuer|Auf Seite 1 Ihrer Rechnung ist der Gesamtbetrag für Steuern angegeben. Auf Seite 2 sind der zutreffende Steuersatz und der Gesamtsteuerbetrag für jeden Einzelposten angegeben. Enthält Ihre Rechnung Steuern, ist Ihr Unternehmen aber steuerbefreit, [wenden Sie sich bitte an den Support](../../admin/contact-support-for-business-products.md).  |
 |Summe|Der Betrag, der für den Abrechnungszeitraum der Rechnung fällig ist.|
 
@@ -107,13 +107,13 @@ Wenn Sie per Rechnung bezahlen, können Sie Ihrem Abonnement die Auftragsnummer 
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
 
-2. Wenn Sie sich in der **Tabellen** Ansicht befinden, wählen Sie **Karten** aus, um Ansichten zu wechseln.
+2. Wenn Sie sich in der Ansicht **Tabelle** befinden, wählen Sie **Karten** aus, um die Ansichten zu wechseln.
 
 3. Suchen Sie das Abonnement, das Sie ändern möchten.
 
-4. Wählen Sie im Abschnitt **Abrechnung** neben **Rechnung**die Option **Bearbeiten**aus.
+4. Wählen Sie im Abschnitt **Abrechnung** neben **Rechnung** die Option **Bearbeiten** aus.
 
-5. Geben Sie unten im Bereich **Zahlungsdetails bearbeiten** Ihre Bestellnummer ein, und wählen Sie dann **Speichern**aus.
+5. Geben Sie am unteren Rand des Bereichs **Zahlungsdetails bearbeiten** Ihre Auftragsnummer ein, und wählen Sie **Speichern** aus.
 
 ::: moniker-end
 
@@ -121,9 +121,9 @@ Wenn Sie per Rechnung bezahlen, können Sie Ihrem Abonnement die Auftragsnummer 
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 
-2. Wählen Sie das Abonnement aus, das Sie ändern möchten, und wählen Sie im Abschnitt **Zahlungsmethode** die Option **Zahlungsdetails ändern**aus.
+2. Wählen Sie das Abonnement, das Sie ändern möchten, und dann im Abschnitt **Zahlungsmethode** die Option **Zahlungsdetails ändern** aus.
 
-3. Geben Sie unten im Bereich **Zahlungsdetails ändern** Ihre Bestellnummer ein, und wählen Sie dann **Absenden**aus.
+3. Geben Sie am unteren Rand des Bereichs **Zahlungsdetails ändern** Ihre Auftragsnummer ein, und wählen Sie **Absenden** aus.
 
 ::: moniker-end
 
@@ -131,14 +131,14 @@ Wenn Sie per Rechnung bezahlen, können Sie Ihrem Abonnement die Auftragsnummer 
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
 
-2. Wählen Sie das Abonnement aus, das Sie ändern möchten, und wählen Sie im Abschnitt **Zahlungsmethode** die Option **Zahlungsdetails ändern**aus.
+2. Wählen Sie das Abonnement, das Sie ändern möchten, und dann im Abschnitt **Zahlungsmethode** die Option **Zahlungsdetails ändern** aus.
 
-3. Geben Sie unten im Bereich **Zahlungsdetails ändern** Ihre Bestellnummer ein, und wählen Sie dann **Absenden**aus.
+3. Geben Sie am unteren Rand des Bereichs **Zahlungsdetails ändern** Ihre Auftragsnummer ein, und wählen Sie **Absenden** aus.
 
 ::: moniker-end
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Bezahlen Ihres Microsoft 365 Business-Abonnements](pay-for-your-subscription.md)
+[Bezahlen Ihres Microsoft 365 Business-Abonnements](pay-for-your-subscription.md)
 
 [Minecraft Education Edition - Zahlungsoptionen](https://go.microsoft.com/fwlink/p/?linkid=838761)

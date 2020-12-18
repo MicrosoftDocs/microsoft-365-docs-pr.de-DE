@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Sie können jetzt DLP-Richtlinien auf Chats und Kanäle von Microsoft Teams anwenden. Lesen Sie diesen Artikel, um mehr über die Funktionsweise zu erfahren.
-ms.openlocfilehash: 4903056a9a7e7ae74a8ada52bd491f2b8efe771e
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: 3d55c447b2e808af2ac35f04b67a002304e3e9eb
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604359"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709537"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Verhinderung von Datenverlust und Microsoft Teams
 
@@ -28,6 +28,9 @@ ms.locfileid: "49604359"
 > Funktionen zur Verhinderung von Datenverlust wurden vor kurzem Microsoft Teams Chat-und Kanal Nachrichten für Benutzer, die für Office 365 E5/A5, Microsoft 365 E5/A5, Microsoft 365 Information Protection and Governance oder Office 365 Advanced Compliance lizenziert wurden, hinzugefügt. Office 365 und Microsoft 365 E3 umfassen DLP-Schutz für SharePoint Online, OneDrive und Exchange Online. Dies umfasst auch Dateien, die über Teams freigegeben werden, da Microsoft Teams SharePoint Online und OneDrive zum Freigeben von Dateien verwendet.
 Für die Unterstützung des DLP-Schutzes im Teamchat ist E5 erforderlich.
 Weitere Informationen zu den Lizenzierungsanforderungen finden Sie unter [Microsoft 365-Dienste auf Mandantenebene – Leitfaden zur Lizenzierung](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
+
+> [!IMPORTANT]
+> DLP für Teams wird nur unterstützt, wenn der Benutzer über ein Postfach verfügt, das sich in Exchange Online
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>Übersicht über DLP für Microsoft Teams
 
@@ -67,7 +70,7 @@ Um diese Aufgabe ausführen zu können, muss Ihnen eine Rolle zugewiesen sein, d
 
 1. Wechseln Sie zum Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) ), und melden Sie sich an.
 
-2. Wählen Sie Richtlinie zur **Verhinderung von Datenverlust** aus  >  **Policy**.
+2. Wählen Sie Richtlinie zur **Verhinderung von Datenverlust** aus  >  .
 
 3. Wählen Sie eine Richtlinie aus, und wählen Sie neben **Richtlinieneinstellungen** die Option **Bearbeiten** aus.
 
@@ -87,7 +90,7 @@ Um diese Aufgabe ausführen zu können, muss Ihnen eine Rolle zugewiesen sein, d
 
 1. Wechseln Sie zum Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) ), und melden Sie sich an.
 
-2. Wählen Sie Richtlinie zur **Verhinderung von Datenverlust** aus  >  **Policy**.
+2. Wählen Sie Richtlinie zur **Verhinderung von Datenverlust** aus  >  .
 
 3. Wählen Sie eine Richtlinie aus, und sehen Sie sich die Werte unter **Standorte** an. Wenn Sie Microsoft **Teams-Chat und Kanal Nachrichten** sehen, sind Sie alle festgelegt. Klicken Sie andernfalls auf **Bearbeiten**.<br/>![Speicherorte für vorhandene Richtlinien](../media/dlp-teams-editexistingpolicy.png)<br/>
 

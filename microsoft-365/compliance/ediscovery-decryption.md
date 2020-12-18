@@ -15,13 +15,13 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Hier erfahren Sie, wie Sie mit e-Mail-Nachrichten verbundene verschlüsselte Dokumente von Microsoft 365 eDiscovery-Tools verarbeiten
-ms.openlocfilehash: 91d5689bfb64d272c896c0e92422ce1f45fd5f72
-ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
+description: Erfahren Sie, wie Microsoft 365 eDiscovery-Tools verschlüsselte Dokumente verarbeiten, die an e-Mail-Nachrichten angehängt und in SharePoint Online und OneDrive für Unternehmen gespeichert werden.
+ms.openlocfilehash: df2ff218e5c62e103661889fc8c66950a4d25cab
+ms.sourcegitcommit: 6759e619c45a5f8e775ad456a5dfb18c08f13f8e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48984899"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49713266"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Entschlüsselung in Microsoft 365 eDiscovery-Tools
 
@@ -29,28 +29,30 @@ Die Verschlüsselung ist ein wichtiger Bestandteil ihrer Dateischutz-und Informa
 
 Um häufige eDiscovery-Aufgaben für verschlüsselte Inhalte auszuführen, mussten eDiscovery-Manager e-Mail-Nachrichteninhalte so entschlüsseln, wie Sie aus Inhalts suchen, zentralen eDiscovery-Fällen und erweiterten eDiscovery-Fällen exportiert wurden. Mit Microsoft-Verschlüsselungstechnologien verschlüsselte Inhalte standen erst nach dem Export zur Überprüfung zur Verfügung.
 
-Um die Verwaltung verschlüsselter Inhalte im eDiscovery-Workflow zu vereinfachen, integrieren Microsoft 365 eDiscovery-Tools jetzt die Entschlüsselung von verschlüsselten Dateien, die an e-Mail-Nachrichten angefügt und in Exchange Online gesendet werden. Vor dieser neuen Funktion wurden nur die Inhalte einer durch Rechteverwaltung geschützten e-Mail-Nachricht (und keine angefügten Dateien) entschlüsselt. Wenn nun eine mit einer Microsoft-Verschlüsselungstechnologie verschlüsselte Datei an eine e-Mail-Nachricht angehängt wird, die mit den Suchkriterien übereinstimmt, wird die verschlüsselte Datei entschlüsselt, wenn die Suchergebnisse zur Überprüfung vorbereitet werden. Auf diese Weise können eDiscovery-Manager den Inhalt von verschlüsselten e-Mail-Anlagen anzeigen, wenn Sie eine Vorschau der Suchergebnisse anzeigen, und diese überprüfen, nachdem Sie zu einem Überprüfungs Satz in Advanced eDiscovery hinzugefügt wurden.
+Um die Verwaltung verschlüsselter Inhalte im eDiscovery-Workflow zu vereinfachen, integrieren Microsoft 365 eDiscovery-Tools jetzt die Entschlüsselung von verschlüsselten Dateien, die an e-Mail-Nachrichten angefügt und in Exchange Online gesendet werden. Außerdem werden verschlüsselte Dokumente, die in SharePoint Online und OneDrive für Unternehmen gespeichert sind, in Advanced eDiscovery entschlüsselt. 
 
-> [!NOTE]
-> Ab bald unterstützen Microsoft 365 eDiscovery-Tools verschlüsselte Dokumente, die in SharePoint Online und OneDrive für Unternehmen gespeichert sind. Dies umfasst Dokumente, die aufgrund von auf Sie angewendeten Sensitivitäts Bezeichnungen verschlüsselt werden.
+Vor dieser neuen Funktion wurden nur die Inhalte einer durch Rechteverwaltung geschützten e-Mail-Nachricht (und keine angefügten Dateien) entschlüsselt. Verschlüsselte Dokumente in SharePoint und OneDrive konnten während des eDiscovery-Workflows nicht entschlüsselt werden. Wenn nun eine Datei, die mit einer Microsoft-Verschlüsselungstechnologie verschlüsselt ist, an eine e-Mail-Nachricht angehängt oder in einem SharePoint-oder OneDrive-Konto gespeichert ist, werden diese verschlüsselten Elemente entschlüsselt, wenn die Suchergebnisse für die Vorschau vorbereitet, zu einer Überprüfungsgruppe in Advanced eDiscovery hinzugefügt und exportiert wurden. Auf diese Weise können eDiscovery-Manager den Inhalt von verschlüsselten e-Mail-Anlagen und Website Dokumenten anzeigen, wenn Sie eine Vorschau der Suchergebnisse anzeigen, und diese überprüfen, nachdem Sie zu einem Überprüfungs Satz in Advanced eDiscovery hinzugefügt wurden.
 
 ## <a name="supported-encryption-technologies"></a>Unterstützte Verschlüsselungstechnologien
 
-Microsoft eDiscovery-Tools unterstützen Elemente, die mit Microsoft-Verschlüsselungstechnologien verschlüsselt sind. Zu diesen Technologien zählen Office-Nachrichtenverschlüsselung und Azure-Rechteverwaltung. Weitere Informationen zu Microsoft-Verschlüsselungstechnologien finden Sie unter [Encryption](encryption.md). Durch Verschlüsselungstechnologien von Drittanbietern verschlüsselte Inhalte werden nicht unterstützt. Dies umfasst keine Unterstützung bei der Vorschau oder beim Export von Inhalten, die mit nicht-Microsoft-Technologien verschlüsselt sind.
+Microsoft eDiscovery-Tools unterstützen Elemente, die mit Microsoft-Verschlüsselungstechnologien verschlüsselt sind. Zu diesen Technologien zählen Office-Nachrichtenverschlüsselung, Azure-Rechteverwaltung und Microsoft Information Protection (insbesondere Sensitivitäts Bezeichnungen). Weitere Informationen zu Microsoft-Verschlüsselungstechnologien finden Sie unter [Encryption](encryption.md). Durch Verschlüsselungstechnologien von Drittanbietern verschlüsselte Inhalte werden nicht unterstützt. Beispielsweise wird die Vorschau oder das Exportieren von Inhalten, die mit nicht-Microsoft-Technologien verschlüsselt sind, nicht unterstützt.
 
 ## <a name="ediscovery-activities-that-support-encrypted-items"></a>eDiscovery-Aktivitäten, die verschlüsselte Elemente unterstützen
 
-In der folgenden Tabelle sind die Aufgaben aufgeführt, die in Microsoft 365-eDiscovery-Tools ausgeführt werden und die Entschlüsselung von verschlüsselten Dateien unterstützen. Die Supportaufgaben können für eine verschlüsselte Datei ausgeführt werden, die an eine e-Mail-Nachricht angefügt ist, die den Kriterien einer Suche entspricht. Der Wert "N/A" gibt an, dass die Funktion im entsprechenden eDiscovery-Tool nicht verfügbar ist.
+In der folgenden Tabelle sind die unterstützten Aufgaben aufgeführt, die in Microsoft 365-eDiscovery-Tools für verschlüsselte Dateien an e-Mail-Massagen und verschlüsselte Dokumente in SharePoint und OneDrive ausgeführt werden können. Diese unterstützten Aufgaben können für eine verschlüsselte Datei ausgeführt werden, die den Kriterien einer Suche entsprechen. Der Wert "N/A" gibt an, dass die Funktionalität im entsprechenden eDiscovery-Tool nicht verfügbar ist.
 
 |eDiscovery-Aufgabe  |Inhaltssuche  |Core eDiscovery  |Advanced eDiscovery  |
 |:---------|:---------|:---------|:---------|
-|Suchen nach Inhalten in verschlüsselten Dateien     |Ja      |Ja      |Ja      |
-|Verschlüsselte Dateien in der Vorschau     |Ja      |Ja     |Ja       |
+|Suchen nach Inhalten in verschlüsselten Dateien in e-Mails und Websites     |Ja      |Ja      |Ja      |
+|Vorschau der an e-Mail angefügten verschlüsselten Dateien     |Ja      |Ja     |Ja       |
+|Anzeigen von verschlüsselten Dokumenten in SharePoint und OneDrive|Nein      |Nein    |Ja       |
 |Überprüfen von verschlüsselten Dateien in einem Überprüfungs Sätze    |Nicht zutreffend      |Nicht zutreffend        | Ja        |
-|Exportieren verschlüsselter Dateien    |Ja       |Ja  |Ja    |
+|Exportieren verschlüsselter Dateien, die an e-Mail angefügt sind    |Ja       |Ja  |Ja    |
+|Exportieren von verschlüsselten Dokumenten in SharePoint und OneDrive    |Nein       |Nein  |Ja    |
+|||||
 
 ## <a name="requirements-for-decryption-in-ediscovery"></a>Anforderungen für die Entschlüsselung in eDiscovery
 
-Sie müssen die RMS-Entschlüsselungs Rolle zugewiesen haben, um angefügte Dateien, die mit Microsoft-Verschlüsselungstechnologien verschlüsselt sind, anzuzeigen, zu überprüfen und zu exportieren. Sie müssen dieser Rolle auch zugewiesen sein, um verschlüsselte e-Mail-Anlagen zu überprüfen und zu Abfragen, die einem Überprüfungs Satz in Advanced eDiscovery hinzugefügt werden.
+Sie müssen die RMS-Entschlüsselungs Rolle zugewiesen haben, um Dateien, die mit Microsoft-Verschlüsselungstechnologien verschlüsselt sind, anzuzeigen, zu überprüfen und zu exportieren. Sie müssen dieser Rolle auch zugewiesen sein, um verschlüsselte Dateien zu überprüfen und zu Abfragen, die einem Überprüfungs Satzes in Advanced eDiscovery hinzugefügt werden.
 
-Diese Rolle wird standardmäßig der Rollengruppe eDiscovery-Manager im Office 365 Security & Compliance Center zugewiesen. Weitere Informationen zur RMS-Entschlüsselungs Rolle finden Sie unter [Zuweisen von eDiscovery-Berechtigungen](assign-ediscovery-permissions.md#rms-decrypt).
+Diese Rolle wird standardmäßig der Rollengruppe eDiscovery-Manager auf der Seite **Berechtigungen** im Office 365 Security & Compliance Center zugewiesen. Weitere Informationen zur RMS-Entschlüsselungs Rolle finden Sie unter [Zuweisen von eDiscovery-Berechtigungen](assign-ediscovery-permissions.md#rms-decrypt).

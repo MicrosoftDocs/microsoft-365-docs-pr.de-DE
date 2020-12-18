@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Implementieren Sie Microsoft Information Protection (MIP), um vertrauliche Informationen unabhängig davon, wo sie sich befinden oder unterwegs sind, zu schützen.
-ms.openlocfilehash: 59f57c920f2b753994f2335a6f2ed9ac5b7b77d1
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 2a1ec47ce888dc6d31868d65f9c4c113fa9b968c
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613087"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709507"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection in Microsoft 365
 
@@ -59,7 +59,7 @@ Verwenden Sie die folgenden Funktionen, um flexible Schutzmaßnahmen wie Verschl
 
 |Funktion|Welches Probleme löst es für Sie?|Erste Schritte|
 |:------|:------------|---------------------|:----------------------------|
-|[Vertraulichkeitsbezeichnungen](sensitivity-labels.md)| Eine einzige Lösung über Apps, Dienste und Geräte hinweg, um Ihre Daten zu kennzeichnen und zu schützen, während sie innerhalb und außerhalb Ihres Unternehmens unterwegs sind. <br /><br />Beispielszenario: [Anwenden und Anzeigen von Vertraulichkeitsbezeichnungen in Power BI und Schutz der Daten beim Export](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)|[Erste Schritte mit Vertraulichkeitsbezeichnungen](get-started-with-sensitivity-labels.md) |
+|[Vertraulichkeitsbezeichnungen](sensitivity-labels.md)| Eine einzige Lösung über Apps, Dienste und Geräte hinweg, um Ihre Daten zu kennzeichnen und zu schützen, während sie innerhalb und außerhalb Ihres Unternehmens unterwegs sind. <br /><br />Beispielszenario: [Anwenden und Anzeigen von Bezeichnungen in Power BI und Schutz der Daten beim Speichern außerhalb des Diensts](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)|[Erste Schritte mit Vertraulichkeitsbezeichnungen](get-started-with-sensitivity-labels.md) |
 |[Azure Information Protection-Client für einheitliche Bezeichnungen](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)| Erweitert auf Windows-Computern die Vertraulichkeitsbezeichnungen für zusätzliche Features und Funktionen, die das Bezeichnen und Schützen aller Dateitypen aus dem Datei-Explorer und PowerShell umfassen.<br /><br /> Beispiel für zusätzliche Features: [Benutzerdefinierte Konfigurationen für den Azure Information Protection-Client für einheitliche Bezeichnungen](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Azure Information Protection-Client für einheitliche Bezeichnungen – Leitfaden für Administratoren](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide)|
 |[Verschlüsselung mit Doppelschlüssel](double-key-encryption.md)| Nur Sie können geschützte Inhalte entschlüsseln, und im Falle behördlicher Vorschriften müssen die Verschlüsselungsschlüssel innerhalb einer geographischen Region aufbewahrt werden. | [Bereitstellen der Verschlüsselung mit Doppelschlüssel](double-key-encryption.md#deploy-dke)|
 |[Office 365-Nachrichtenverschlüsselung (OME)](ome.md)| Verschlüsselt E-Mail-Nachrichten und angefügte Dokumente, die an einen beliebigen Benutzer an einem beliebigen Gerät gesendet werden, sodass nur autorisierte Empfänger die gesendeten Informationen lesen können.  <br /><br />Beispielszenario: [Widerrufen von E-Mails, die von der erweiterten Nachrichtenverschlüsselung verschlüsselt wurden](revoke-ome-encrypted-mail.md) | [Einrichten neuer Nachrichtenverschlüsselungsfunktionen](set-up-new-message-encryption-capabilities.md)|

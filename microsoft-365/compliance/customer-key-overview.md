@@ -1,5 +1,5 @@
 ---
-title: Dienstverschlüsselung mit dem Kundenschlüssel
+title: Dienstverschlüsselung mit Kundenschlüssel
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -16,20 +16,20 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie, wie die Dienst Verschlüsselung mit dem Kundenschlüssel in Microsoft 365 verwendet werden kann.
-ms.openlocfilehash: fd00b910a9a33fb792c41c7f64f9721e2b5bd20f
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: 0008d145db81d5d6c4eb9ab89ca194b7e426d2e4
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408983"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709527"
 ---
-# <a name="service-encryption-with-customer-key"></a>Dienstverschlüsselung mit dem Kundenschlüssel
+# <a name="service-encryption-with-customer-key"></a>Dienstverschlüsselung mit Kundenschlüssel
 
-Microsoft 365 bietet eine grundlegende, auf Volumen Ebene verschlüsselte Verschlüsselung, die über BitLocker und den verteilten Schlüssel-Manager (DKM) aktiviert ist. Microsoft 365 bietet eine zusätzliche Verschlüsselungsebene auf Anwendungsebene für Ihre Inhalte. Dieser Inhalt enthält Daten aus Exchange Online-, Skype for Business-, SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Dateien. Diese hinzugefügte Verschlüsselungsebene wird als Dienst Verschlüsselung bezeichnet.
+Microsoft 365 bietet eine grundlegende, auf Volumen Ebene verschlüsselte Verschlüsselung, die über BitLocker und den verteilten Schlüssel-Manager (DKM) aktiviert ist. Microsoft 365 bietet eine zusätzliche Verschlüsselungsebene auf der Anwendungsebene für Ihre Inhalte. Dieser Inhalt enthält Daten aus Exchange Online-, Skype for Business-, SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Dateien. Diese hinzugefügte Verschlüsselungsebene wird als Dienst Verschlüsselung bezeichnet.
 
 ## <a name="how-service-encryption-bitlocker-and-customer-key-work-together"></a>Zusammenarbeit von Dienst Verschlüsselung, BitLocker und Kunden Schlüsseln
 
-Durch die Dienst Verschlüsselung wird sichergestellt, dass Inhalte im Ruhezustand auf Anwendungsebene verschlüsselt werden. **Ihre Daten werden immer im Rest im Microsoft 365-Dienst mit BitLocker und DKM verschlüsselt**. Weitere Informationen finden Sie unter "Informationen zu Sicherheit, Datenschutz und Kompatibilität" sowie dazu, [wie Exchange Online Ihre e-Mail-Geheimnisse sichert](exchange-online-secures-email-secrets.md). Der Kundenschlüssel bietet zusätzlichen Schutz vor dem Anzeigen von Daten durch nicht autorisierte Systeme oder Mitarbeiter und ergänzt die BitLocker-Datenträgerverschlüsselung in Microsoft-Rechenzentren. Die Dienst Verschlüsselung soll nicht verhindern, dass Microsoft-Mitarbeiter auf Kundendaten zugreifen können. Der Hauptzweck besteht darin, Kunden bei der Erfüllung behördlicher oder Compliance-rechtlicher Verpflichtungen zur Steuerung von Stamm Schlüsseln zu unterstützen. Kunden autorisieren O365 Services ausdrücklich, ihre Verschlüsselungsschlüssel zur Bereitstellung von Mehrwert-Cloud-Diensten wie eDiscovery, Antischadsoftware, Spam Schutz, Suchindizierung usw. zu verwenden.
+Durch die Dienst Verschlüsselung wird sichergestellt, dass Inhalte im Ruhezustand auf der Dienstschicht verschlüsselt werden. **Ihre Daten werden immer im Rest im Microsoft 365-Dienst mit BitLocker und DKM verschlüsselt**. Weitere Informationen finden Sie unter "Informationen zu Sicherheit, Datenschutz und Kompatibilität" sowie dazu, [wie Exchange Online Ihre e-Mail-Geheimnisse sichert](exchange-online-secures-email-secrets.md). Der Kundenschlüssel bietet zusätzlichen Schutz vor dem Anzeigen von Daten durch nicht autorisierte Systeme oder Mitarbeiter und ergänzt die BitLocker-Datenträgerverschlüsselung in Microsoft-Rechenzentren. Die Dienst Verschlüsselung soll nicht verhindern, dass Microsoft-Mitarbeiter auf Kundendaten zugreifen können. Der Hauptzweck besteht darin, Kunden bei der Erfüllung behördlicher oder Compliance-rechtlicher Verpflichtungen zur Steuerung von Stamm Schlüsseln zu unterstützen. Kunden autorisieren O365 Services ausdrücklich, ihre Verschlüsselungsschlüssel zur Bereitstellung von Mehrwert-Cloud-Diensten wie eDiscovery, Antischadsoftware, Spam Schutz, Suchindizierung usw. zu verwenden.
 
 Der Kundenschlüssel basiert auf der Dienst Verschlüsselung und ermöglicht Ihnen das Bereitstellen und Steuern von Verschlüsselungsschlüsseln. Microsoft 365 verwendet dann diese Schlüssel, um Ihre Daten im Ruhezustand zu verschlüsseln, wie in den [Online Services Terms (Ost)](https://www.microsoft.com/licensing/product-licensing/products.aspx)beschrieben. Mit dem Kundenschlüssel können Sie Compliance-Verpflichtungen erfüllen, da Sie die Verschlüsselungsschlüssel steuern, die von Microsoft 365 zum Verschlüsseln und Entschlüsseln von Daten verwendet werden.
   
