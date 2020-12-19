@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 ms.custom: seo-marvel-apr2020
 description: Die postfachüberwachungsprotokollierung ist in Microsoft 365 (auch als standardmäßige postfachüberwachung oder postfachüberwachung aktiviert) standardmäßig aktiviert. Dies bedeutet, dass bestimmte Aktionen, die von Postfachbesitzern, Stellvertretern und Administratoren ausgeführt werden, automatisch in einem postfachüberwachungsprotokoll protokolliert werden, in dem Sie nach Aktivitäten für das Postfach suchen können.
-ms.openlocfilehash: 8b199f2fe63f0304e705f32bab8191a966e63fce
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 3a65fcb3f7a908b8c63b3ba494d5ea74ffab4e5a
+ms.sourcegitcommit: 5cbce99cfdbba4b72267a144b2e03a6c52473464
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682550"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49718508"
 ---
 # <a name="manage-mailbox-auditing"></a>Verwalten der Postfächern
 
@@ -121,6 +121,7 @@ In der folgenden Tabelle werden die Postfachaktionen beschrieben, die in der pos
 |**MoveToDeletedItems**|Eine Nachricht wurde gelöscht und in den Ordner „Gelöschte Objekte“ verschoben.|![Häkchen](../media/checkmark.png)<sup>\*</sup>|![Häkchen](../media/checkmark.png)<sup>\*</sup>|![Häkchen](../media/checkmark.png)<sup>\*</sup>|
 |**RecordDelete**|Ein Element, das als Datensatz gekennzeichnet ist, wurde vorläufig gelöscht (in den Ordner "refundable Items" verschoben). Elemente, die als Datensätze bezeichnet werden, können nicht dauerhaft gelöscht werden (bereinigt aus dem Ordner "Wiederherstellbare Elemente").|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|
 |**RemoveFolderPermissions**|**Hinweis**: Obwohl dieser Wert als Post Fach Aktion akzeptiert wird, ist er bereits in der **UpdateFolderPermissions** -Aktion enthalten und wird nicht separat überwacht. Mit anderen Worten: Verwenden Sie diesen Wert nicht.||||
+|**Send**|Der Benutzer sendet eine e-Mail-Nachricht, antwortet an eine e-Mail-Nachricht oder leitet eine e-Mail-Nachricht weiter. Dieser Wert steht nur für Benutzer von E5-oder E5-Konformitäts Abonnements zur Verfügung. Ausführliche Informationen finden Sie unter [Access to wichtige Events for Investigations](advanced-audit.md#access-to-crucial-events-for-investigations).|![Häkchen](../media/checkmark.png)<sup>\*</sup>|![Häkchen](../media/checkmark.png)<sup>\*</sup>|![Häkchen](../media/checkmark.png)<sup>\*</sup>|
 |**SendAs**|Eine Nachricht wurde mithilfe der SendAs-Berechtigung gesendet. Das bedeutet, dass ein anderer Benutzer die Nachricht so gesendet hat, dass sie vom Postfachbesitzer zu kommen scheint.|![Häkchen](../media/checkmark.png)<sup>\*</sup>|![Häkchen](../media/checkmark.png)<sup>\*</sup>||
 |**SendOnBehalf**|Eine Nachricht wurde mithilfe der SendOnBehalf-Berechtigung gesendet. Das bedeutet, dass ein anderer Benutzer die Nachricht im Namen des Postfachbesitzers gesendet hat. Für den Empfänger ist in der Nachricht angegeben, in wessen Namen die Nachricht gesendet wurde und wer die Nachricht tatsächlich gesendet hat.|![Häkchen](../media/checkmark.png)<sup>\*</sup>|![Häkchen](../media/checkmark.png)<sup>\*</sup>||
 |**SoftDelete**|Eine Nachricht wurde dauerhaft gelöscht oder aus dem Ordner „Gelöschte Objekte“ gelöscht. Vorübergehend gelöschte Elemente werden in den Ordner „Wiederherstellbare Elemente“ verschoben.|![Häkchen](../media/checkmark.png)<sup>\*</sup>|![Häkchen](../media/checkmark.png)<sup>\*</sup>|![Häkchen](../media/checkmark.png)<sup>\*</sup>|

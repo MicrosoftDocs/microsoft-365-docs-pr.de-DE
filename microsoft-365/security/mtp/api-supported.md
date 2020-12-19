@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b7c0accf2d649d4ad6177260294922ee17783f2c
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: dbb7613dae3755b0fb794a3d68b5b424d765cc62
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844960"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719322"
 ---
 # <a name="supported-microsoft-365-defender-apis"></a>Unterstützte Microsoft 365 Defender-APIs 
 
@@ -33,27 +33,31 @@ ms.locfileid: "48844960"
 **Gilt für:**
 - Microsoft 365 Defender
 
->[!IMPORTANT] 
->Einige Informationen beziehen sich auf Vorabversionen von Produkten, die vor der kommerziellen Veröffentlichung noch erheblich geändert werden können. Microsoft übernimmt mit diesen Informationen keinerlei Gewährleistung, sei sie ausdrücklich oder konkludent.
+> [!IMPORTANT]
+> Einige Informationen beziehen sich auf Vorabversionen von Produkten, die vor der kommerziellen Veröffentlichung noch erheblich geändert werden können. Microsoft übernimmt mit diesen Informationen keinerlei Gewährleistung, sei sie ausdrücklich oder konkludent.
 
+## <a name="list-of-available-apis"></a>Liste der verfügbaren APIs
 
-### <a name="end-point-uris"></a>Endpunkt-URIs:
+Artikel | Beschreibung
+-|-
+[Erweiterte Suche-API](api-advanced-hunting.md) | Führen Sie erweiterte Jagd Abfragen aus.
+[Vorfall-APIs](api-incident.md) | Auflisten und Aktualisieren von Vorfällen sowie anderer praktischer Aufgaben.
 
-- Der Dienst Basis-URI lautet: https://api.security.microsoft.com <br>
+### <a name="endpoint-uris"></a>Endpunkt-URIs
 
->[!NOTE]
->Um eine bessere Leistung zu erzielen, können Sie den Server näher an ihrem geografischen Standort verwenden:
-> - api-us.security.microsoft.com
-> - api-eu.security.microsoft.com
-> - api-uk.security.microsoft.com
+Der Basis-URI für die beiden Haupt-APIs lautet: https://api.security.microsoft.com . Um eine bessere Leistung zu erzielen, verwenden Sie einen Server näher an Ihrem Standort:
 
- - Die Ressource für die Token-Akquisition sollte wie folgt aussehen: https://api.security.microsoft.com
+- Vereinigte Staaten: API-US.Security.Microsoft.com
+- Europa: API-EU.Security.Microsoft.com
+- Vereinigtes Königreich: API-UK.Security.Microsoft.com
 
- - Alle APIs unter ```/api``` Path sind OData-APIs. e.g. ```https://api.security.microsoft.com/api/incidents```
+Token können durch den Zugriff erworben werden https://api.security.microsoft.com .
 
-## <a name="list-of-available-apis"></a>Liste der verfügbaren APIs:
+Alle APIs entlang des `/api` Pfads verwenden das [OData](https://docs.microsoft.com/odata/overview) -Protokoll, beispielsweise https://api.security.microsoft.com/api/incidents .
 
-Thema | Beschreibung
-:---|:---
-[Erweiterte Suche-API](api-advanced-hunting.md) | Ausführen erweiterter Jagd Abfragen aus der API.
-[Vorfall-APIs](api-incident.md) | Führen Sie Vorfall bezogene API-Aufrufe wie: Listen Vorfälle, Update Vorfall und vieles mehr aus.
+## <a name="related-articles"></a>Verwandte Artikel
+
+- [Microsoft 365 Defender-APIs (Übersicht)](api-overview.md)
+- [Zugreifen auf die Microsoft Threat Protection-APIs](api-access.md)
+- [Informationen zu API-Grenzwerten und Lizenzierung](api-terms.md)
+- [Grundlegendes zu Fehlercodes](api-error-codes.md)

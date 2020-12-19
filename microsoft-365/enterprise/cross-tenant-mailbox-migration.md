@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 63eab8c44651bfc2865e9bf6c577c1ebe13381fc
-ms.sourcegitcommit: 21b0ea5715e20b4ab13719eb18c97fadb49b563d
+ms.openlocfilehash: f151f02af695eb54eaf8f4f97936f4985fc7f8c0
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49624766"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719202"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Mandantenübergreifende Postfachmigration (Vorschau)
 
@@ -99,9 +99,9 @@ Vorbereiten des Quellmandanten:
 
     | Parameter | Wert | Erforderlich oder optional
     |---------------------------------------------|-----------------|--------------|
-    | -ResourceTenantDomain                       | Quellmandanten Domäne, beispielsweise fabrikam.onmicrosoft.com. | Erforderlich |
+    | -TargetTenantDomain                         | Zielmandanten Domäne, wie Contoso \. onmicrosoft.com. | Erforderlich |
+    | -ResourceTenantDomain                       | Quellmandanten Domäne, beispielsweise Fabrikam \. onmicrosoft.com. | Erforderlich |
     | -ResourceTenantAdminEmail                   | Die e-Mail-Adresse des Quellmandanten-Administrators. Dies ist der Quellmandanten Administrator, der der Verwendung der Post Fach Migrationsanwendung zustimmt, die vom Zieladministrator gesendet wird. Dies ist der Administrator, der die e-Mail-Einladung für die Anwendung erhalten wird. | Erforderlich |
-    | -TargetTenantDomain                         | Zielmandanten Domäne, wie contoso.onmicrosoft.com. | Erforderlich |
     | -ResourceTenantId                           | Quellmandanten-Organisations-ID (GUID). | Erforderlich |
     | -Abonnement-Nr                             | Das Azure-Abonnement, das zum Erstellen von Ressourcen verwendet werden soll. | Erforderlich |
     | -ResourceGroup                              | Azure-Ressourcengruppenname, der den schlüsseltresor enthält oder enthalten soll. | Erforderlich |
@@ -187,10 +187,10 @@ Das Setup des Ziel Administrators ist nun abgeschlossen!
     | Parameter | Wert |
     |-----|------|
     | -SourceMailboxMovePublishedScopes | Vom Quellmandanten erstellte e-Mail-aktivierte Sicherheitsgruppe für die Identitäten/Postfächer, die sich im Bereich der Migration befinden. |
-    | -ResourceTenantDomain | Name der Quellmandanten Domäne, beispielsweise fabrikam.onmicrosoft.com. |
-    | -TargetTenantDomain | Name der Zielmandanten Domäne, beispielsweise contoso.onmicrosoft.com. |
+    | -ResourceTenantDomain | Name der Quellmandanten Domäne, beispielsweise Fabrikam \. onmicrosoft.com. |
     | -ApplicationId | Azure-Anwendungs-ID (GUID) der Anwendung, die für die Migration verwendet wird. Anwendungs-ID, die über Ihr Azure-Portal (Azure AD, Enterprise-Anwendungen, App-Name, Anwendungs-ID) oder in Ihrer Einladungs-e-Mail enthalten ist.  |
-    | -TargetTenantId | Mandanten-ID des Zielmandanten. Beispielsweise die Azure AD Mandanten-ID des contoso.onmicrosoft.com-Mandanten. |
+    | -TargetTenantDomain | Name der Zielmandanten Domäne, beispielsweise contoso \. onmicrosoft.com. |
+    | -TargetTenantId | Mandanten-ID des Zielmandanten. Beispielsweise die Azure AD Mandanten-ID des Contoso \. onmicrosoft.com-Mandanten. |
     |||
 
     Hier ein Beispiel.
@@ -284,6 +284,7 @@ Die Migration von Benutzern muss im Zielmandanten vorhanden sein, und Exchange O
 Sie müssen sicherstellen, dass die folgenden Objekte und Attribute in der Zielorganisation festgelegt sind.  
 
 1. Für alle Postfächer, die von einer Quellorganisation aus verschoben werden, müssen Sie ein MailUser-Objekt in der Zielorganisation zur Verfügung stellen: 
+
    - Das Ziel-MailUser muss über diese Attribute aus dem Quellpostfach verfügen oder dem neuen Benutzerobjekt zugewiesen sein:
       - ExchangeGUID (direkter Fluss von der Quelle zum Ziel) – die Postfach-GUID muss übereinstimmen. Der Verschiebevorgang wird nicht fortgesetzt, wenn dieser nicht auf dem Zielobjekt vorhanden ist. 
       - ArchiveGUID (direkter Fluss von der Quelle zum Ziel) – die Archiv-GUID muss übereinstimmen. Der Verschiebevorgang wird nicht fortgesetzt, wenn dieser nicht im Zielobjekt vorhanden ist. (Dies ist nur erforderlich, wenn das Quellpostfach Archiv aktiviert ist). 
@@ -293,40 +294,40 @@ Sie müssen sicherstellen, dass die folgenden Objekte und Attribute in der Zielo
       - TargetAddress/ExternalEmailAddress – MailUser verweist auf das aktuelle Postfach des Benutzers, das im Quellmandanten gehostet wird (beispielsweise user@contoso.onmicrosoft.com). Wenn Sie diesen Wert zuweisen, überprüfen Sie, ob Sie auch PrimarySmtpAddress zuweisen oder diesen Wert festlegen, um die PrimarySmtpAddress festzulegen, die zu Verschiebe Fehlern führen wird. 
       - Sie können keine Legacy-SMTP-Proxyadressen aus dem Quellpostfach zu Target MailUser hinzufügen. Beispielsweise können Sie contoso.com auf dem meu in fabrikam.onmicrosoft.com-Mandanten Objekten nicht beibehalten). Domänen werden nur einem Azure AD oder Exchange Online Mandanten zugeordnet.
  
-    Beispiel für ein MailUser- **Ziel** Objekt:
+     Beispiel für ein MailUser- **Ziel** Objekt:
  
-    | Attribut             | Wert                                                                                                                    |
-    |-----------------------|--------------------------------------------------------------------------------------------------------------------------|
-    | Alias                 | LaraN                                                                                                                    |
-    | RecipientType         | MailUser                                                                                                                 |
-    | RecipientTypeDetails  | MailUser                                                                                                                 |
-    | UserPrincipalName     | LaraN@northwintraders.onmicrosoft.com                                                                                    |
-    | PrimarySmtpAddress    | Lara.Newton@northwind.com                                                                                                |
-    | ExternalEmailAddress  | SMTP:LaraN@contoso.onmicrosoft.com                                                                                       |
-    | ExchangeGuid          | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                                                                     |
-    | LegacyExchangeDN      | /o = erste Organisation/ou = administrative Exchange-Gruppe                                                                   |
-    |                       | (FYDIBOHF23SPDLT)/CN = Recipients/CN = 74e5385fce4b46d19006876949855035Lara                                                  |
-    | EmailAddresses        | x500:/o = First Organization/ou = Exchange Administrative Group (FYDIBOHF23SPDLT)/CN = Recipients/CN = d11ec1a2cacd4f81858c8190  |
-    |                       | 7273f1f9-Lara                                                                                                            |
-    |                       | smtp:LaraN@northwindtraders.onmicrosoft.com                                                                              |
-    |                       | SMTP:Lara.Newton@northwind.com                                                                                           |
-    |||
+     | Attribut             | Wert                                                                                                                    |
+     |-----------------------|--------------------------------------------------------------------------------------------------------------------------|
+     | Alias                 | LaraN                                                                                                                    |
+     | RecipientType         | MailUser                                                                                                                 |
+     | RecipientTypeDetails  | MailUser                                                                                                                 |
+     | UserPrincipalName     | LaraN@northwintraders.onmicrosoft.com                                                                                    |
+     | PrimarySmtpAddress    | Lara.Newton@northwind.com                                                                                                |
+     | ExternalEmailAddress  | SMTP:LaraN@contoso.onmicrosoft.com                                                                                       |
+     | ExchangeGuid          | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                                                                     |
+     | LegacyExchangeDN      | /o = erste Organisation/ou = administrative Exchange-Gruppe                                                                   |
+     |                       | (FYDIBOHF23SPDLT)/CN = Recipients/CN = 74e5385fce4b46d19006876949855035Lara                                                  |
+     | EmailAddresses        | x500:/o = First Organization/ou = Exchange Administrative Group (FYDIBOHF23SPDLT)/CN = Recipients/CN = d11ec1a2cacd4f81858c8190  |
+     |                       | 7273f1f9-Lara                                                                                                            |
+     |                       | smtp:LaraN@northwindtraders.onmicrosoft.com                                                                              |
+     |                       | SMTP:Lara.Newton@northwind.com                                                                                           |
+     |||
 
-   Beispiel für ein **Quell** Postfach-Objekt:
+     Beispiel für ein **Quell** Postfach-Objekt:
 
-   | Attribut             | Wert                                                                    |
-   |-----------------------|--------------------------------------------------------------------------|
-   | Alias                 | LaraN                                                                    |
-   | RecipientType         | UserMailbox                                                              |
-   | RecipientTypeDetails  | UserMailbox                                                              |
-   | UserPrincipalName     | LaraN@contoso.onmicrosoft.com                                            |
-   | PrimarySmtpAddress    | Lara.Newton@contoso.com                                                  |
-   | ExchangeGuid          | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                     |
-   | LegacyExchangeDN      | /o = erste Organisation/ou = administrative Exchange-Gruppe                   |
-   |                       | (FYDIBOHF23SPDLT)/CN = Recipients/CN = d11ec1a2cacd4f81858c81907273f1f9Lara  |
-   | EmailAddresses        | smtp:LaraN@contoso.onmicrosoft.com 
-   |                       | SMTP:Lara.Newton@contoso.com          |
-   |||
+     | Attribut             | Wert                                                                    |
+     |-----------------------|--------------------------------------------------------------------------|
+     | Alias                 | LaraN                                                                    |
+     | RecipientType         | UserMailbox                                                              |
+     | RecipientTypeDetails  | UserMailbox                                                              |
+     | UserPrincipalName     | LaraN@contoso.onmicrosoft.com                                            |
+     | PrimarySmtpAddress    | Lara.Newton@contoso.com                                                  |
+     | ExchangeGuid          | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                     |
+     | LegacyExchangeDN      | /o = erste Organisation/ou = administrative Exchange-Gruppe                   |
+     |                       | (FYDIBOHF23SPDLT)/CN = Recipients/CN = d11ec1a2cacd4f81858c81907273f1f9Lara  |
+     | EmailAddresses        | smtp:LaraN@contoso.onmicrosoft.com 
+     |                       | SMTP:Lara.Newton@contoso.com          |
+     |||
 
    - In Exchange-Hybrid-Write Back sind möglicherweise bereits weitere Attribute enthalten. Wenn dies nicht der Fall ist, sollten Sie eingeschlossen werden. 
    - msExchBlockedSendersHash – schreibt Online sichere und blockierte Absenderdaten von Clients in lokale Active Directory zurück.
@@ -350,7 +351,7 @@ Sie müssen sicherstellen, dass die folgenden Objekte und Attribute in der Zielo
     > [!Note]
     > Wenn Sie eine Lizenz auf ein Postfach-oder MailUser-Objekt anwenden, werden alle SMTP-proxyAddresses bereinigt, um sicherzustellen, dass nur verifizierte Domänen im Exchange-Adress Array enthalten sind. 
 
-5. Sie müssen sicherstellen, dass das Ziel MailUser keine vorherigen ExchangeGuid hat, die nicht mit der Quell-ExchangeGuid übereinstimmen. Dies kann der Fall sein, wenn das Ziel-meu zuvor für Exchange Online lizenziert und ein Postfach zur Verfügung gestellt wurde. Wenn das Ziel MailUser zuvor lizenziert wurde oder ein ExchangeGuid, das nicht mit dem Quell ExchangeGuid übereinstimmt, müssen Sie eine Bereinigung der Cloud meu durchführen. Für diese Cloud-aktivierte Benutzer können Sie den `Set-User <identity> -PermanentlyClearPreviousMailboxInfo` Befehl ausführen.  
+5. Sie müssen sicherstellen, dass das Ziel MailUser keine vorherigen ExchangeGuid hat, die nicht mit der Quell-ExchangeGuid übereinstimmen. Dies kann der Fall sein, wenn das Ziel-meu zuvor für Exchange Online lizenziert und ein Postfach zur Verfügung gestellt wurde. Wenn das Ziel MailUser zuvor lizenziert wurde oder ein ExchangeGuid, das nicht mit dem Quell ExchangeGuid übereinstimmt, müssen Sie eine Bereinigung der Cloud meu durchführen. Für diese Cloud-aktivierte Benutzer können Sie Ausführen `Set-User <identity> -PermanentlyClearPreviousMailboxInfo` .  
 
     > [!Caution]
     > Dieser Vorgang ist unumkehrbar. Wenn das Objekt über ein softDeleted-Postfach verfügt, kann es nach diesem Pfad nicht wiederhergestellt werden. Nachdem Sie jedoch gelöscht haben, können Sie die richtige ExchangeGuid mit dem Zielobjekt synchronisieren, und Mrs stellt eine Verbindung zwischen dem Quellpostfach und dem neu erstellten Zielpostfach her. (Verweisen Sie auf den EHLO-Blog auf den neuen Parameter.)  
@@ -508,7 +509,7 @@ Exchange-Postfachverschiebungen mit Mrs Craft das targetAddress-Objekt für das 
 
 Zu den Postfachberechtigungen gehören "Senden im Auftrag von" und "Postfachzugriff": 
 
-- Senden im Auftrag von (AD: publicDelegates) speichert den DN von Empfängern mit Zugriff auf das Postfach eines Benutzers als Stellvertretung. Dieser Wert wird in Active Directory gespeichert und wird derzeit nicht als Teil des Post Fach Übergangs gewechselt. Wenn das Quellpostfach publicDelegates festgelegt hat, müssen Sie die publicDelegates im Zielpostfach nach Abschluss der meu-zu-Post Fach Konvertierung in der Zielumgebung mithilfe des Befehls erneut Stempeln `Set-Mailbox <principle> -GrantSendOnBehalfTo <delegate>` . 
+- Senden im Auftrag von (AD: publicDelegates) speichert den DN von Empfängern mit Zugriff auf das Postfach eines Benutzers als Stellvertretung. Dieser Wert wird in Active Directory gespeichert und wird derzeit nicht als Teil des Post Fach Übergangs gewechselt. Wenn das Quellpostfach publicDelegates festgelegt hat, müssen Sie die publicDelegates im Zielpostfach erneut Stempeln, nachdem die meu-zu-Post Fach Konvertierung in der Zielumgebung abgeschlossen ist, indem Sie ausgeführt wird `Set-Mailbox <principle> -GrantSendOnBehalfTo <delegate>` . 
  
 - Postfachberechtigungen, die im Postfach gespeichert werden, werden mit dem Postfach verschoben, wenn sowohl der Prinzipal als auch der Delegat in das Zielsystem verschoben werden. Beispielsweise wird dem Benutzer TestUser_7 FullAccess für das Post Fach TestUser_8 im Mandanten SourceCompany.onmicrosoft.com erteilt. Nachdem die Post Fach Verlagerung auf TargetCompany.onmicrosoft.com abgeschlossen wurde, werden dieselben Berechtigungen im Zielverzeichnis eingerichtet. Beispiele zum Verwenden von *Get-MailboxPermission* für TestUser_7 in den Quell-und Zielmandanten werden unten angezeigt. Exchange-Cmdlets werden mit dem Präfix Source und Target entsprechend gekennzeichnet. 
  

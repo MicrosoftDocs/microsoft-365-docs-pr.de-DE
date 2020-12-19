@@ -1,7 +1,7 @@
 ---
-title: Erweiterte Jagd-APIs
-description: Erfahren Sie, wie Sie erweiterte Jagd Abfragen mit der Microsoft 365 Defender-API ausführen.
-keywords: Erweiterte Suche, APIs, API, MTP
+title: Microsoft 365 Defender Advanced Hunting API
+description: Hier erfahren Sie, wie Sie erweiterte Jagd Abfragen mit der erweiterten Jagd-API von Microsoft 365 Defender ausführen können.
+keywords: Erweiterte Suche, APIs, API, MTP, M365 Defender, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,78 +19,89 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c43d263009578af6280ffdc780ab0f9a174a3b97
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: e7cd9192ec25e01ed06b77cb2b39357cb9df79bd
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844032"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719380"
 ---
-# <a name="advanced-hunting-apis"></a>Erweiterte Jagd-APIs
+# <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender Advanced Hunting API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **Gilt für:**
-- Microsoft 365 Defender
 
->[!IMPORTANT] 
->Einige Informationen beziehen sich auf Vorabversionen von Produkten, die vor der kommerziellen Veröffentlichung noch erheblich geändert werden können. Microsoft übernimmt mit diesen Informationen keinerlei Gewährleistung, sei sie ausdrücklich oder konkludent.
+- Microsoft Threat Protection
 
-## <a name="limitations"></a>Einschränkungen
-1. Sie können nur eine Abfrage für Daten der letzten 30 Tage ausführen.
-2. Die Ergebnisse umfassen maximal 100.000 Zeilen.
-3. Die Anzahl der Ausführungen ist pro Mandanten limitiert: bis zu 10 Anrufe pro Minute, 10 Minuten Spielzeit stündlich und 4 Stunden Spielzeit pro Tag.
-4. Die maximale Ausführungszeit einer einzelnen Anforderung beträgt 10 Minuten.
-5. 429 Antwort stellt eine erreichende Kontingentgrenze nach der Anzahl der Anforderungen oder der CPU dar. Der 429-Antworttext gibt auch die Zeit an, bis das Kontingent erneuert wird. 
+> [!IMPORTANT]
+> Einige Informationen beziehen sich auf Vorabversionen von Produkten, die vor der kommerziellen Veröffentlichung noch erheblich geändert werden können. Microsoft übernimmt mit diesen Informationen keinerlei Gewährleistung, sei sie ausdrücklich oder konkludent.
 
+[Advanced Hunting](advanced-hunting-overview.md) ist ein Tool zur Gefahren Suche, das [speziell konstruierte Abfragen](advanced-hunting-query-language.md) verwendet, um die letzten 30 Tage der Ereignisdaten in Microsoft 365 Defender zu untersuchen. Sie können erweiterte Jagd Abfragen verwenden, um ungewöhnliche Aktivitäten zu prüfen, mögliche Bedrohungen zu erkennen und sogar auf Angriffe zu reagieren. Die erweiterte Jagd-API ermöglicht das Programmgesteuertes von Abfrageereignis Daten.
+
+## <a name="quotas-and-resource-allocation"></a>Kontingente und Ressourcenzuteilung
+
+Die folgenden Bedingungen beziehen sich auf alle Abfragen.
+
+1. Abfragen erforschen und Zurückgeben von Daten aus den letzten 30 Tagen.
+2. Ergebnisse können bis zu 100.000 Zeilen zurückgeben.
+3. Sie können bis zu 10 Anrufe pro Minute pro Mandant vornehmen.
+4. Sie haben 10 Minuten Spielzeit pro Stunde pro Mandant.
+5. Sie verfügen über vier Gesamtstunden des laufenden Zeit Tages pro Mandant.
+6. Wenn eine einzelne Anforderung länger als 10 Minuten ausgeführt wird, tritt ein Timeout auf, und es wird ein Fehler zurückgegeben.
+7. Ein `429` HTTP-Antwortcode gibt an, dass Sie ein Kontingent erreicht haben, entweder nach der Anzahl der gesendeten Anforderungen oder nach der zugewiesenen Laufzeit. Der Antworttext enthält die Zeit, bis das von Ihnen erreichte Kontingent zurückgesetzt wird.
 
 ## <a name="permissions"></a>Berechtigungen
-Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Access the Microsoft 365 Defender APIs](api-access.md)
 
-Berechtigungstyp |   Berechtigung  |   Anzeigename der Berechtigung
-:---|:---|:---
-Anwendung |   AdvancedHunting. Read. all |  ' Erweiterte Abfragen ausführen '
-Delegiert (Geschäfts-, Schul- oder Unikonto) | AdvancedHunting. Read | ' Erweiterte Abfragen ausführen '
+Eine der folgenden Berechtigungen ist erforderlich, um die erweiterte Jagd-API aufzurufen. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Access the Microsoft 365 Defender Protection APIs](api-access.md)
+
+Berechtigungstyp | Berechtigung | Anzeigename der Berechtigung
+-|-|-
+Anwendung | AdvancedHunting. Read. all | Ausführen erweiterter Abfragen
+Delegiert (Geschäfts-, Schul- oder Unikonto) | AdvancedHunting. Read | Ausführen erweiterter Abfragen
 
 >[!Note]
 > Beim Abrufen eines Tokens mithilfe von Benutzeranmeldeinformationen:
+>
 >- Der Benutzer muss über die AD-Rolle "Daten anzeigen" verfügen.
 >- Der Benutzer muss auf dem Gerät basierend auf Gerätegruppen Einstellungen Zugriff haben.
 
 ## <a name="http-request"></a>HTTP-Anforderung
-```
+
+```HTTP
 POST https://api.security.microsoft.com/api/advancedhunting/run
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-Kopfzeile | Wert 
-:---|:---
-Authorization | Bearer {Token}. **Erforderlich**.
-Content-Type    | application/json
+Kopfzeile | Wert
+-|-
+Authorization | Bearer {Token} **Hinweis: erforderlich**
+Content-Type | application/json
 
 ## <a name="request-body"></a>Anforderungstext
+
 Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an:
 
-Parameter | Typ    | Beschreibung
-:---|:---|:---
-Abfrage | Text |  Die auszuführende Abfrage. **Erforderlich**.
+Parameter | Typ | Beschreibung
+-|-|-
+Abfrage | Text | Die auszuführende Abfrage. **Hinweis: erforderlich**
 
 ## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich verläuft, werden 200 OK und das _QueryResponse_ -Objekt im Antworttext zurückgegeben. <br><br>
 
-Das Response-Objekt wird in drei Teile (Eigenschaften) aufgeteilt:<br>
-1) ```Stats``` -Abfrage Leistungsstatistiken.<br>
-2) ```Schema``` – Das Schema der Antwort, eine Liste mit Name-Type-Paaren für jede Spalte. <br>
-3) ```Results``` -Eine Liste erweiterter Jagd Ereignisse.
+Wenn die Methode erfolgreich verläuft, gibt Sie `200 OK` ein _QueryResponse_ -Objekt im Antworttext zurück.
+
+Das Response-Objekt enthält drei Eigenschaften der obersten Ebene:
+
+1. Stats-ein Wörterbuch der Abfrage Leistungsstatistik.
+2. Schema – das Schema der Antwort, eine Liste mit Name-Type-Paaren für jede Spalte.
+3. Ergebnisse – eine Liste erweiterter Jagd Ereignisse.
 
 ## <a name="example"></a>Beispiel
 
-Anforderung
+Im folgenden Beispiel sendet ein Benutzer die Abfrage unten und empfängt ein API-Antwortobjekt mit `Stats` , `Schema` und `Results` .
 
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
-
+### <a name="query"></a>Abfrage
 
 ```json
 {
@@ -99,10 +110,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 
 ```
 
-Antwort
-
-Nachfolgend sehen Sie ein Beispiel der Antwort.
-
+### <a name="response-object"></a>Response-Objekt
 
 ```json
 {
@@ -164,8 +172,11 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
         }
     ]
 }
-
 ```
 
-## <a name="related-topic"></a>Verwandtes Thema
+## <a name="related-articles"></a>Verwandte Artikel
+
 - [Zugreifen auf die Microsoft 365 Defender-APIs](api-access.md)
+- [Informationen zu API-Grenzwerten und Lizenzierung](api-terms.md)
+- [Grundlegendes zu Fehlercodes](api-error-codes.md)
+- [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)

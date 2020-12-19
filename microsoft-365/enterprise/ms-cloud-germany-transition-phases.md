@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Verstehen der Aktionen und Auswirkungen der Migrationsphasen für die Verschiebung von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in der neuen deutschen Rechenzentrumsregion.'
-ms.openlocfilehash: 4a032ab88704cfb46b3f451d939a784d222cbb40
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
-ms.translationtype: HT
+ms.openlocfilehash: 4a54fed8a109c3d03b735a5db3cb48060f5c438f
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688629"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719392"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>Aktionen und Auswirkungen der Migrationsphasen für die Migration von Microsoft Cloud Deutschland (generell)
 
@@ -83,7 +83,7 @@ Zusätzliche Überlegungen:
 
 | Schritt(e) | Beschreibung | Betrifft | Auswirkung |
 |:-------|:-----|:-------|:-------|
-| Wechseln von Skype for Business zu Microsoft Teams. | Bestehende Skype for Business-Kunden werden auf Office 365-Dienste in Europa migriert und anschließend auf Microsoft Teams in der Region Deutschland der Office 365-Dienste umgestellt. | Skype for Business-Kunden | – Benutzer können sich am Migrationsdatum nicht bei Skype for Business anmelden. Zehn Tage vor der Migration werden wir Endbenutzer über ein Laufband im Skype for Business-Client darüber informieren, dass sie jetzt auf Teams aktualisiert werden. Wir werden auch im Admin Center darauf hinweisen, dass diese Änderungen in 10 Tagen stattfinden werden. <br><br> – Die Richtlinienkonfiguration wird migriert.  <br><br> – Die Benutzer werden nach Teams migriert und verfügen nach der Migration nicht mehr über Skype for Business. <br><br> – Die Benutzer müssen den Teams-Desktopclient installiert haben. Die Installation erfolgt während der 10 Tage über Richtlinien in der Skype for Business-Infrastruktur. Wenn dies jedoch fehlschlägt, müssen Benutzer den Client manuell herunterladen oder eine Verbindung mit einem unterstützten Browser herstellen. <br><br> – Kontakte und Besprechungen werden nach Teams migriert. <br><br> – Benutzer können sich während der Übergangszeit der Dienste nach Office 365-Dienste nicht in Skype for Business anmelden und auch nicht, bevor die Kunden-DNS-Einträge abgeschlossen sind. <br><br> – Kontakte und vorhandene Besprechungen werden weiterhin als Skype for Business-Besprechungen funktionieren.  |
+| Wechseln von Skype for Business zu Microsoft Teams. | Bestehende Skype for Business-Kunden werden auf Office 365-Dienste in Europa migriert und anschließend auf Microsoft Teams in der Region Deutschland der Office 365-Dienste umgestellt. | Skype for Business-Kunden | – Benutzer können sich am Migrationsdatum nicht bei Skype for Business anmelden. Zehn Tage vor der Migration veröffentlichen wir im Admin Center, damit Sie wissen, wann die Migration stattfinden wird, und wieder, wenn wir mit der Migration beginnen. <br><br> – Die Richtlinienkonfiguration wird migriert.  <br><br> – Die Benutzer werden nach Teams migriert und verfügen nach der Migration nicht mehr über Skype for Business. <br><br> – Die Benutzer müssen den Teams-Desktopclient installiert haben. Die Installation erfolgt während der 10 Tage über Richtlinien in der Skype for Business-Infrastruktur. Wenn dies jedoch fehlschlägt, müssen Benutzer den Client manuell herunterladen oder eine Verbindung mit einem unterstützten Browser herstellen. <br><br> – Kontakte und Besprechungen werden nach Teams migriert. <br><br> – Benutzer können sich während der Übergangszeit der Dienste nach Office 365-Dienste nicht in Skype for Business anmelden und auch nicht, bevor die Kunden-DNS-Einträge abgeschlossen sind. <br><br> – Kontakte und vorhandene Besprechungen werden weiterhin als Skype for Business-Besprechungen funktionieren.  |
 |||||
 
 ## <a name="office-services"></a>Office-Dienste
@@ -106,7 +106,7 @@ Der Dienst „zuletzt verwendet“ (most recently used, MRU) in Office ist eine 
 
 Erste Schritte:
 
-- [Migration von Microsoft Cloud Deutschland zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen](ms-cloud-germany-transition.md)
+- [Migration von Microsoft Cloud Deutschland zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen](ms-cloud-germany-transition.md)
 - [Hilfe zur Microsoft Cloud Deutschland-Migration Assistance](https://aka.ms/germanymigrateassist)
 - [So können Sie sich für die Migration anmelden](ms-cloud-germany-migration-opt-in.md)
 - [Kundenerfahrung während der Migration](ms-cloud-germany-transition-experience.md)
@@ -114,7 +114,7 @@ Erste Schritte:
 Der Weg durch die Umstellung:
 
 - [Zusätzliche Vorarbeit](ms-cloud-germany-transition-add-pre-work.md)
-- Zusätzliche Informationen für [Azure AD](ms-cloud-germany-transition-azure-ad.md), [Geräte](ms-cloud-germany-transition-add-devices.md), [Erfahrungen](ms-cloud-germany-transition-add-experience.md) und [AD FS](ms-cloud-germany-transition-add-adfs.md).
+- Zusätzliche Informationen zu [Azure AD](ms-cloud-germany-transition-azure-ad.md), [Geräte](ms-cloud-germany-transition-add-devices.md), [Erfahrungen](ms-cloud-germany-transition-add-experience.md) und [AD FS](ms-cloud-germany-transition-add-adfs.md).
 
 Cloud-Apps:
 

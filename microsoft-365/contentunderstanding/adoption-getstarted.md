@@ -12,12 +12,12 @@ ms.collection: enabler-strategic
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: db54ff053dcb1c9c1c608608ab1a37da8090cdb3
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 18bc5d8d0f80f7cee024f4d6358361509879bd11
+ms.sourcegitcommit: 86f75cf77a7a446a79226ca530bd7b5eb39189cb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087511"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49717019"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint Syntex Adoption: Erste Schritte
 
@@ -32,8 +32,8 @@ Mit den neuen AI-Diensten und-Funktionen können Sie Apps für Inhalts verstehen
 |Manuelle Eingabe| Formularverarbeitung | Dokument Verständnis |
 |:-------|:--------|:--------|
 | Dateneingabe und arbeitsintensiv für jeden Inhalt | Verarbeiten digitaler Inhalte – Fotos, Scans, Quittungen, Visitenkarten, Videos mit OCR & Text |  Erfassen von Inhaltstypen und Metadaten aus Verträgen, Lebensläufen und anderen strukturierten Dokumenten |
-| Interaktiv   | Vordefiniert, automatisiert   | Benutzerdefiniert, unterstützt   | Benutzerdefiniert, kompatibel |
-| Personen, die die Arbeit erledigen | Unterrichtet von Ihren Fachleuten (KMU). Erfassen von Inhaltstypen und Metadaten aus Verträgen, Lebensläufen, anderen unstrukturierten Dokumenten. | KMU sind dabei wenig involviert. aus Bestellungen, Anwendungen, anderen semi Structured and Structured Documents |
+| Interaktiv   | Vordefiniert, automatisiert   | Benutzerdefiniert, unterstützt  |
+| Personen, die die Arbeit erledigen | Unterrichtet von Ihren Fachleuten (KMU). Erfassen von Inhaltstypen und Metadaten aus Verträgen, Lebensläufen und anderen strukturierten Dokumenten. | KMU sind dabei wenig involviert. aus Bestellungen, Anwendungen, anderen semi Structured and Structured Documents |
 
 In der folgenden Tabelle wird erläutert, was Sie bei der Verwendung von SharePoint Syntex erhalten:
 
@@ -178,7 +178,7 @@ Um sich für die Implementierung von SharePoint-Syntex vorzubereiten, müssen Si
 1. Planen des Endstatus
     - Dokument Understanding Models sind die Mittel, nicht das Ende.
     - Planen Sie die Nutzbarmachung des Werts extrahierter Metadaten mit:
-      - Suche
+      - Suchen
       - Filtern und Anzeigen von Formatierungen
       - Compliance
       - Automatisierung
