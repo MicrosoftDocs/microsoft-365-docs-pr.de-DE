@@ -12,12 +12,12 @@ ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
 ROBOTS: NOINDEX
-ms.openlocfilehash: 9709bec9b6e59ef05903f9c04909c796eb4127f4
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 45469e17870a58966a42a13116b6ba645071722c
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683433"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698531"
 ---
 # <a name="get-started-driving-adoption-of-topic-experiences-preview"></a>Erste Schritte mit der Einführung von Themen Erfahrungen (Vorschau)
 
@@ -33,7 +33,7 @@ Bevor Sie mit der Einführung beginnen, müssen Sie sich mit den Konzepten im Zu
 - **Identification**: mit Microsoft Graph und Artificial Intelligence (AI) wissen und Personen (Themen, Fertigkeiten, ein so weiter) werden identifiziert und automatisch in verwandten Themen organisiert. SharePoint-Inhalte werden mit Sicherheitsinhalten indiziert.
 - **Erweiterung**: mit Microsoft Graph-Inhalts-Konnektoren (in Kürze) können Sie wissen aus externen Diensten und Daten Repositories aufnehmen.
 
-Weitere Informationen finden Sie unter [Übersicht](knowledge-management-overview.md) über die Einführung.
+Weitere Informationen finden Sie unter [Übersicht](topic-experiences-overview.md) über die Einführung.
 
 Beachten Sie Folgendes:
 

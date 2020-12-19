@@ -4,81 +4,80 @@ description: Informationen zum Thema Center.
 author: efrene
 ms.author: efrene
 manager: pamgreen
-ms.date: 8/1/2020
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 39a851ed3613057c7b3b931a94a79fed235d277a
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: ea0e3ba186956e35a7c7b619b1cd032726f7952f
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988830"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698621"
 ---
 # <a name="topic-center-overview-preview"></a>Übersicht über das Themen Center (Vorschau)
 
 > [!Note] 
 > Der Inhalt dieses Artikels ist für Project Cortex private Preview. [Erfahren Sie mehr über Project Cortex](https://aka.ms/projectcortex).
 
-Das Themen Center ist eine moderne SharePoint-Website, die als Wissenszentrum für Ihre Organisation dient. Sie wird während des [Setups der Wissensverwaltung](set-up-topic-experiences.md) im Microsoft 365 Admin Center erstellt.
+Das Themen Center ist eine moderne SharePoint-Website, die als Wissenszentrum für Ihre Organisation dient. Sie wird während des [Setups von Themen Erfahrungen](set-up-topic-experiences.md) im Microsoft 365 Admin Center erstellt.
 
-Das Themen Center verfügt über eine Standardhomepage, auf der Sie die Themen sehen können, mit denen Sie verbunden sind oder für die eine Verbindung vorgeschlagen wurde. Benutzer mit den entsprechenden Berechtigungen können außerdem Folgendes tun:
+Das Themen Center verfügt über eine Standardhomepage (meine Themen), in der alle Benutzer der Themen Umgebung die Themen sehen können, mit denen Sie eine Verbindung haben. 
 
-- Erstellen einer neuen Themen Seite
-- Vorgeschlagene Themen bestätigen oder ablehnen
-- Bearbeiten und Veröffentlichen von Änderungen an einer Themen Seite
+Während alle lizenzierten Benutzer, die Themen anzeigen können, Zugriff auf das Themen Center haben, können Knowledge Manager Themen auch über die Seite " **Themen verwalten** " verwalten. Die Registerkarte Themen verwalten wird nur für Benutzer angezeigt, die über die Berechtigung **Themen verwalten** verfügen. 
 
-> [!Note] 
-> Weitere Informationen zu den einzelnen Aufgaben finden Sie unter [Arbeiten mit Themen im Thema Center](work-with-topics.md).
+## <a name="where-is-my-topic-center"></a>Wo befindet sich mein Themen Center
 
-## <a name="where-is-the-topic-center"></a>Wo ist das Themen Center
+Das Themen Center wird während des Setups von Themen Erfahrungen erstellt. Nach Abschluss des Setups kann ein Administrator die URL auf der [Seite "Themen Center Verwaltung"](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-administration#to-access-topics-management-settings)finden.
 
-Ihr Themen Center wird während des Knowledge Management-Setups erstellt. Nach Abschluss des Setups kann ein Administrator die URL auf der [Knowledge Center-Verwaltungsseite](topic-experiences-discovery.md)finden.
 
-1. Wählen Sie im Microsoft 365 Admin Center im Navigationsbereich die Option **Setup** aus, und wählen Sie im Abschnitt **organisatorisches Wissen** die Option **Personen mit Wissen verbinden** aus.
+1. Klicken Sie im Microsoft 365 Admin Center auf **Einstellungen** und dann auf **org-Einstellungen**.
+2. Klicken Sie auf der Registerkarte **Dienste** auf **Wissensnetzwerk**.
 
-   ![Verbinden von Personen mit wissen](../media/content-understanding/manage-connect-people-to-knowledge.png) </br>
+    ![Verbinden von Personen mit wissen](../media/admin-org-knowledge-options-completed.png) </br>
 
-2. Klicken Sie auf der Seite mit den **Informationen zum Benutzer verbinden** im Abschnitt **auf einen Blick** finden Sie weitere Informationen unter **Themen Center-Adresse** für die Website-URL.
+3. Wählen Sie die Registerkarte **Themen Center** aus. Unter **Websiteadresse** finden Sie einen Link zu Ihrem Themen Center.
+
+    ![Wissen-Netzwerk-Einstellungen](../media/knowledge-network-settings-topic-center.png) </br>
+
+
 
 ## <a name="home-page"></a>Homepage
 
-Zum Anzeigen des Themen Centers benötigen Sie Berechtigungen zum Anzeigen von Themen und zum Thema Erfahrungen. Ihr Administrator kann diese Berechtigungen Benutzern während des [Knowledge Management-Setups](set-up-topic-experiences.md)zuweisen, oder neue Benutzer können anschließend über das Microsoft 365 Admin Center von einem Administrator [hinzugefügt](give-user-permissions-to-the-topic-center.md) werden.
+Auf der Startseite des Themen Centers können Sie die Themen in Ihrer Organisation sehen, in denen Sie eine Verbindung haben.
 
-Auf der Startseite 
-- **Themen anzeigen** : Thema Erfahrungen anzeigen. Sie können also Themen in der Organisation sehen und Feedback zu Themen geben, in denen Sie verbunden sind:
-1. Vorgeschlagene Verbindungen – Dies sind Themen, in denen meine Verbindung vorgeschlagen wurde.
-2. Bestätigte Verbindungen-Dies sind Themen, in denen ich auf das Thema fixiert bin, oder ich habe bestätigt, dass meine Verbindungs Themen aus dem Abschnitt vorgeschlagen zu bestätigt wechseln, wenn ich eine vorgeschlagene Verbindung bestätige.
-Sobald ich merken bin, können Sie die Bearbeitungen zur Themen Seite durchführen, um meine Verbindung zu unterstützten.
+- Vorgeschlagene Verbindungen – hier finden Sie Empfohlene Themen, **die unter wir haben Sie zu diesen Themen aufgelistet. Haben wir es richtig gemacht?**. Dies sind Themen, in denen die Verbindung mit dem Thema über AI vorgeschlagen wurde. Beispielsweise können Sie der Besitzer einer verwandten Datei oder Website sein. In den vorgeschlagenen Themen werden Sie aufgefordert, die Verbindung mit dem Thema zu bestätigen.
 
-- **Erstellen und Bearbeiten von Themen** : neues Thema ist verfügbar, und Sie können Seiten bearbeiten
+   ![Vorgeschlagene Verbindungen](../media/knowledge-management/my-topics.png) </br>
+ 
+- Bestätigte Verbindungen-Dies sind Themen, in denen Sie von einem anderen Benutzer auf das Thema fixiert sind oder Ihre Verbindung mit dem Thema bestätigt haben. Die Themen werden beim Bestätigen einer vorgeschlagenen Verbindung aus dem Abschnitt vorgeschlagen zum bestätigten Übergang umgestellt.
+ 
+   ![Bestätigte Themen](../media/knowledge-management/my-topics-confirmed.png) </br>
+
+Nachdem ein Benutzer seine Verbindung mit einem Thema bestätigt hat, kann der Benutzer Änderungen an der Themen Seite vornehmen, um die Verbindung zu erstellen. Beispielsweise können Sie weitere Informationen zur Verbindung mit dem Thema bereitstellen.
 
 
-## <a name="permissions-to-use-the-manage-topics-capability-topic-center"></a>Berechtigungen für die Verwendung des Themen Centers zum Thema "Funktionen verwalten"
+## <a name="manage-topics-page"></a>Seite "Themen verwalten"
 
-Um im Themen Center im Abschnitt "Themen verwalten" arbeiten zu können, müssen Sie über die erforderlichen Berechtigungen verfügen. Ihr Administrator kann diese Berechtigungen Benutzern während des [Knowledge Management-Setups](set-up-topic-experiences.md)zuweisen, oder neue Benutzer können anschließend über das Microsoft 365 Admin Center von einem Administrator [hinzugefügt](give-user-permissions-to-the-topic-center.md) werden.
+Damit Sie im Thema **Themen** Center im Abschnitt Manage topics arbeiten können, müssen Sie über die erforderlichen Berechtigungen zum *Verwalten von Themen* verfügen, die für die Knowledge Manager-Rolle erforderlich sind. Ihr Administrator kann diese Berechtigungen Benutzern während des [Knowledge Management-Setups](set-up-topic-experiences.md)zuweisen, oder neue Benutzer können anschließend über das Microsoft 365 Admin Center von einem Administrator [hinzugefügt](topic-experiences-knowledge-rules.md) werden.
 
-Topic Center Benutzer können zwei Berechtigungssätze erhalten:
-
-- **Themen verwalten** : Verwenden Sie das Themen Dashboard, um Themen in der gesamten Organisation zu überprüfen. Benutzer können Aktionen wie das bestätigen und ablehnen unbestätigter Themen durchführen.
-
-Ein Benutzer kann beide Berechtigungsgruppen erhalten oder nur einen, falls erforderlich. 
-
-## <a name="reviewing-topics-in-the-topic-dashboard"></a>Überprüfen der Themen im Thema Dashboard
-
-Im Themen Dashboard werden Themen angezeigt, die von den angegebenen Quell Standorten abgebaut wurden. In jedem Thema wird das Datum angezeigt, an dem das Thema erkannt wurde, und wenn Feedback dazu bereitgestellt wurde. Ein Benutzer, dem Berechtigungen zum **Verwalten von Themen** zugewiesen wurden, kann die unbestätigten Themen überprüfen und Folgendes auswählen:
+Auf der Seite Themen verwalten werden im Themen Dashboard Themen angezeigt, die von den angegebenen Quell Standorten identifiziert wurden. In jedem Thema wird das Datum angezeigt, an dem das Thema erkannt wurde, und wenn Feedback dazu bereitgestellt wurde. Ein Benutzer, dem Berechtigungen zum **Verwalten von Themen** zugewiesen wurden, kann die unbestätigten Themen überprüfen und Folgendes auswählen:
 - Bestätigen Sie das Thema: hebt das Thema für Benutzer auf, die Zugriff haben, und ermöglicht Ihnen das Anzeigen der zugehörigen Themenkarte und der entsprechenden Themen Seite.
-- Das Thema ablehnen: stellt Benutzern das Thema nicht zur Verfügung. Das Thema wird auf die Registerkarte **abgelehnt** verschoben und kann bei Bedarf später bestätigt werden.
+- Das Thema ablehnen: stellt Benutzern das Thema nicht zur Verfügung. Das Thema wird auf die Registerkarte **abgelehnt** verschoben und kann bei Bedarf später bestätigt werden. ein Knowledge Manager kann Leitfaden 
+
+> [!Note] 
+> Weitere Informationen zum Thema Managing topics auf der Seite Themen verwalten finden Sie unter [Manage](manage-topics.md) topics.
+
 
 ## <a name="create-or-edit-a-topic"></a>Erstellen oder Bearbeiten eines Themas
 
-Wenn Sie über Berechtigungen zum **Erstellen und Bearbeiten von Themen** verfügen, können Sie Folgendes auswählen:
+Wenn Sie über Berechtigungen zum **Erstellen und Bearbeiten von Themen** verfügen, können Sie folgende Aufgaben durchführen:
 
-- Bearbeiten vorhandener Themen: Sie können Änderungen an vorhandenen Themenseiten vornehmen, die über Discovery erstellt wurden.
-- Neue Themen erstellen: Sie können neue Themen für diejenigen erstellen, die nicht durch Discovery gefunden wurden, oder wenn AI-Tools nicht genügend Beweise zum Erstellen eines Themas gefunden haben.
+- [Bearbeiten vorhandener Themen](edit-a-topic.md): Sie können Änderungen an vorhandenen Themenseiten vornehmen, die über Discovery erstellt wurden.
+- [Neue Themen erstellen](create-a-topic.md): Sie können neue Themen für diejenigen erstellen, die nicht durch Discovery gefunden wurden, oder wenn AI-Tools nicht genügend Beweise zum Erstellen eines Themas gefunden haben.
 
 
 
