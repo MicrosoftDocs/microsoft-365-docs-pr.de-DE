@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen, um zu behalten, was Sie benötigen, und zu löschen, was Sie nicht benötigen.
-ms.openlocfilehash: 767e63c22d085696b53d74e3a4d6955bedec22dd
-ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
+ms.openlocfilehash: c405f2bf8d9700c9a0874ba9d921a290ae63de16
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49709672"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719345"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
@@ -276,9 +276,9 @@ Wenn Elemente in diesem Szenario von mehreren Aufbewahrungseinstellungen betroff
 
 Die Antwort lautet nicht, dass eine Aufbewahrungsrichtlinie oder Aufbewahrungsbezeichnung vor anderen Vorrang hat, sondern hängt davon ab, wie lange ein Element aufbewahrt wird (sofern zutreffend), und wann ein Element gelöscht wird (sofern zutreffend). Diese beiden Aktionen werden unabhängig voneinander aus allen Aufbewahrungseinstellungen ermittelt, die für ein Element gelten.
 
-So kann beispielsweise ein Element einer Aufbewahrungsrichtlinie unterliegen, die für eine reine Löschaktion konfiguriert ist, und einer anderen Aufbewahrungsrichtlinie, die für die Aufbewahrung und Löschung konfiguriert ist. Im Hinblick auf das Ergebnis lässt sich zunächst feststellen: Für dieses Element ist nur eine Aufbewahrungsaktion vorgesehen, jedoch zwei Löschaktionen. Zwischen Aufbewahrungs- und Löschvorgängen kann ein Konflikt bestehen, und für die beiden Löschaktionen ist möglicherweise ein jeweils anderes Datum vorgesehen.
+So kann beispielsweise ein Element einer Aufbewahrungsrichtlinie unterliegen, die für eine reine Löschaktion konfiguriert ist, und einer anderen Aufbewahrungsrichtlinie, die für die Aufbewahrung und Löschung konfiguriert ist. Demzufolge hat dieses Element also nur eine Aufbewahrungsaktion, aber zwei Löschaktionen. Zwischen Aufbewahrungs- und Löschaktionen könnte ein Konflikt bestehen, und die beiden Löschaktionen könnten sich widersprechende Datumsangaben haben. Um das Ergebnis zu bestimmen, müssen Sie die Prinzipien der Aufbewahrung anwenden.
 
-Ganz allgemein gilt, dass die Aufbewahrung immer Vorrang vor der Löschung hat, und als Nächstes der längste Aufbewahrungszeitraum. Diese beiden einfachen Regeln entscheiden immer, wie lange ein Element beibehalten wird.
+Ganz allgemein gilt, dass die Aufbewahrung immer Vorrang vor der Löschung hat, und danach der längste Aufbewahrungszeitraum. Diese beiden einfachen Regeln entscheiden immer, wie lange ein Element beibehalten wird.
 
 Wann ein Element gelöscht wird, hängt von ein paar weiteren Faktoren ab. Die Löschaktion aufgrund einer Aufbewahrungsbezeichnung hat beispielsweise immer Vorrang vor einer aufgrund einer Aufbewahrungsrichtlinie.
 
