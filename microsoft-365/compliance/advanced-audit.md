@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Die erweiterte Überwachung in Microsoft 365 bietet neue Überwachungsfunktionen, die Ihre Organisation bei forensischen und Complianceuntersuchungen unterstützen.
-ms.openlocfilehash: bd7b4f78d37feddd7c66322460a6532a77045ba2
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: b05901ad8d42f481020178479df5d422fa68eb1a
+ms.sourcegitcommit: 5cbce99cfdbba4b72267a144b2e03a6c52473464
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988667"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49718498"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Erweiterte Überwachung in Microsoft 365
 
@@ -32,7 +32,7 @@ Die [einheitliche Überwachungsfunktionen](search-the-audit-log-in-security-and-
 > [!NOTE]
 > Erweiterte Überwachung ist für Organisationen mit einem Office 365 E5/G5- oder Microsoft 365 Enterprise E5/G5-Abonnement verfügbar. Darüber hinaus kann Benutzern eine Microsoft 365 E5 Compliance- oder E5 eDiscovery und Überwachungs-Add-On-Lizenz zugewiesen werden, wenn für Features für die erweiterte Überwachung eine Lizenzierung pro Benutzer erforderlich ist, wie dies bei der langfristigen Aufbewahrung von Überwachungsprotokollen und für den Zugang zu wichtigen Ereignissen für Untersuchungen der Fall ist. Weitere Informationen zur Lizenzierung finden Sie unter [Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit).
 
-In diesem Artikel finden Sie eine Übersicht über die Funktionen für die erweiterte Überwachung.
+In diesem Artikel finden Sie eine Übersicht der Funktionen der Erweiterten Überwachung und eine Anweisung, wie Sie Benutzer für die Erweiterte Überwachung einrichten können.
 
 ## <a name="long-term-retention-of-audit-logs"></a>Langfristige Aufbewahrung von Überwachungsprotokollen
 
@@ -140,6 +140,26 @@ Mit der Veröffentlichung der erweiterten Überwachung wechseln wir von einem Gr
 Allen Organisationen ist anfänglich eine Baseline von 2.000-Anforderungen pro Minute zugeordnet. Dieser Wert wird abhängig von der Anzahl der Arbeitsplätze und Lizenzabonnements in einer Organisation dynamisch erhöht. E5-Organisationen erhalten ungefähr doppelt so viel Bandbreite wie Nicht-E5-Organisationen. Zum Schutz des Diensts gibt es auch eine Obergrenze für die maximale Bandbreite.
 
 Weitere Informationen finden Sie im Abschnitt "API-Drosselung" in der [Referenz der Office 365-Verwaltungsaktivitäts-API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling).
+
+## <a name="set-up-advanced-audit-for-users"></a>Erweiterte Überwachung für Benutzer einrichten
+
+Die Funktionen der Erweiterten Überwachung, wie z.B. die Möglichkeit wichtige Ereignisse, wie z.B. MailItemsAccessed und das Send-Ereignis, zu protokollieren, erfordern eine geeignete E5-Lizenz, die den Benutzern zugewiesen ist. Darüber hinaus muss die Erweiterte Überwachungs-App/ der Serviceplan für diese Benutzer aktiviert sein. Um zu bestätigen, dass die Erweiterte Überwachungs-App an Benutzer zugewiesen ist, führen Sie für jeden Benutzer die folgenden Schritte durch:
+
+1. Navigieren Sie im [Microsoft 365 Admin Center](https://admin.microsoft.com/Adminportal) zu **Benutzer** > **Aktive Benutzer**, und wählen Sie einen Benutzer aus.
+
+2. Klicken Sie auf der Benutzereigenschaften-Flyoutseite auf **Lizenzen und Apps**.
+
+3. Bestätigen Sie im Abschnitt **Lizenzen**, dass dem Benutzer eine E5-Lizenz zugewiesen ist.
+
+4. Erweitern Sie den Abschnitt **Apps** und bestätigen Sie das Kontrollkästchen **Microsoft 365 – Erweiterte Überwachung** aktiviert ist.
+
+5. Wenn das Kontrollkästchen nicht aktiviert ist, aktivieren Sie es, und klicken Sie dann auf **Änderungen speichern**.
+
+   Die Protokollierung von Überwachungsdatensätzen für MailItemsAccessed, Senden und andere wichtige Ereignisse für den Benutzer wird innerhalb von 24 Stunden anfangen.
+
+Für Organisationen, die Gruppen von Benutzern mithilfe einer gruppenbasierten Lizenzierung Lizenzen zuweisen, müssen Sie die Lizenzzuweisung für Microsoft 365 Advanced Auditing für die Gruppe deaktivieren. Nachdem Sie die Änderungen gespeichert haben, stellen Sie sicher, dass Microsoft 365 Erweiterte Überwachung für die Gruppe deaktiviert ist. Aktivieren Sie dann die Lizenzierungszuordnung für die Gruppe wieder. Lesen Sie [Zuweisen von Lizenzen zu Benutzern mithilfe der Gruppenmitgliedschaft in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign) für Anweisungen zur gruppenbasierten Lizenzierung.
+
+Wenn Sie außerdem die Postfachaktionen, die für Benutzerpostfächer oder freigegebene Postfächer protokolliert sind, angepasst haben, werden neue standardmäßige Postfachaktionen, wie z.B. MailItemsAccessed, auf diesen Postfächern nicht automatisch überwacht. Weitere Informationen über das Ändern von Postfachaktionen, die für jeden Anmeldetyp überwacht werden, finden Sie unter „Standardmäßig überwachte Postfachaktionen ändern oder wiederherstellen“ in [Verwalten der Postfächern](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default).
 
 ## <a name="faqs-for-advanced-audit"></a>Häufig gestellte Fragen (FAQs) zur erweiterten Überwachung
 

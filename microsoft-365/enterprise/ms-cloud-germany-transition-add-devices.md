@@ -17,10 +17,10 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
-description: 'Zusammenfassung: weitere Geräteinformationen zu Diensten beim Wechsel von Microsoft Cloud Deutschland (Microsoft Cloud Deutschland) zu Office 365 Diensten im neuen rechenzentrumsbereich.'
+description: 'Zusammenfassung: Zusätzliche Geräteinformationen für Dienste beim Übergang von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen.'
 ms.openlocfilehash: 1bbb4bf39db61a93844c21cd6062a70699b5d6d7
 ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/16/2020
 ms.locfileid: "49688654"
@@ -29,51 +29,51 @@ ms.locfileid: "49688654"
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
-**Woran kann ich erkennen, ob meine Organisation betroffen ist?**
+**Wie kann ich feststellen, ob meine Organisation betroffen ist?**
 
-Administratoren sollten überprüfen `https://portal.microsoftazure.de` , ob Sie über registrierte Geräte verfügen. Wenn Ihre Organisation über registrierte Geräte verfügt, sind Sie davon betroffen.
+Administratoren sollten `https://portal.microsoftazure.de` überprüfen, um festzustellen, ob sie registrierte Geräte haben. Wenn Ihre Organisation registrierte Geräte hat, sind Sie betroffen.
 
-**Was sind die Auswirkungen auf meine Benutzer?**
+**Was sind die Auswirkungen für meine Benutzer?**
 
-Benutzer von einem registrierten Gerät können sich nicht mehr anmelden, nachdem die Migration in die Azure AD Migrationsphase [abgeschlossen](ms-cloud-germany-transition.md#how-is-the-migration-organized) wurde.  
+Benutzer mit registrierten Geräten können sich nicht mehr anmelden, sobald Ihre Migration mit der Migrationsphase [Azure AD abschließen](ms-cloud-germany-transition.md#how-is-the-migration-organized) beginnt.  
 
-Stellen Sie sicher, dass alle Ihre Geräte beim weltweiten Endpunkt registriert sind, bevor Ihre Organisation von Microsoft Cloud Deutschland getrennt ist.
+Stellen Sie sicher, dass all Ihre Geräte mit dem weltweiten Endpunkt registriert sind, bevor die Verbindung Ihrer Organisation mit Microsoft Cloud Deutschland aufgehoben wird.
   
-**Wann werden meine Benutzer ihre Geräte erneut registrieren?**
+**Wann müssen meine Benutzer Ihre Geräte wieder registrieren?**
 
-Entscheidend für Ihren Erfolg ist, dass Sie Ihre Geräte nur in der [separaten Microsoft Cloud Deutschland](ms-cloud-germany-transition.md#how-is-the-migration-organized) -Migrationsphase aufheben und neu registrieren.
+Es ist für Ihren Erfolg kritisch, dass Sie Ihre Geräte nur während der Migrationsphase [Trennen von Microsoft Cloud Deutschland](ms-cloud-germany-transition.md#how-is-the-migration-organized) abmelden und wieder registrieren.
 
-**Wie stelle ich den Gerätestatus nach der Migration wieder her?**
+**Wie kann ich meinen Gerätstatus nach der Migration wiederherstellen?**
 
-Für Hybrid Azure AD-geteilte und unternehmenseigene Windows-Geräte, die bei Azure AD registriert sind, können Administratoren die Migration dieser Geräte über Remote ausgelöste Workflows verwalten, mit denen die Registrierung der alten Gerätezustände aufgehoben wird.
+Bei mit Azure AD Hybrid verbundenen und bei firmeneigenen Windows-Geräten, die bei Azure AD registriert sind, können Administratoren die Migration dieser Geräte über remote ausgelöste Workflows verwalten, bei denen die Registrierung der alten Gerätezustände aufgehoben wird.
   
-Für alle anderen Geräte, einschließlich persönlicher Windows-Geräte, die in Azure AD registriert sind, muss der Endbenutzer diese Schritte manuell ausführen. Für Azure AD-verbundene Geräte müssen Benutzer über ein lokales Administratorkonto verfügen, um die Registrierung aufzuheben und die Geräte dann erneut zu registrieren.
+Für alle anderen Geräte, einschließliche persönliche Windows-Geräte, die in Azure AD registriert sind, muss der Benutzer diese Schritte manuell ausführen. Für mit Azure AD verbundene Geräte müssen Benutzer ein lokales Administratorkonto haben, um ihre Geräte abzumelden und dann wieder zu registrieren.
 
-Microsoft veröffentlicht Anweisungen zur erfolgreichen Wiederherstellung des Gerätestatus. 
+Microsoft wird Anweisungen veröffentlichen, wie Sie den Gerätestatus erfolgreich wiederherstellen können. 
  
-**Woher weiß ich, dass alle meine Geräte in der öffentlichen Cloud registriert sind?**
+**Wie stelle ich fest, ob alle meine Geräte in der Public Cloud registriert sind?**
 
-Um zu überprüfen, ob Ihre Geräte in der öffentlichen Cloud registriert sind, sollten Sie die Liste der Geräte aus dem Azure AD Portal in ein Excel-Arbeitsblatt exportieren und herunterladen. Filtern Sie dann die Geräte, die registriert sind (mithilfe der Spalte " _registered_ Zeit") nach der [separaten Microsoft Cloud Deutschland](ms-cloud-germany-transition.md#how-is-the-migration-organized) -Migrationsphase.
+Um zu prüfen, ob Ihre Geräte in der Public Cloud registriert sind, sollten Sie die Liste der Geräte aus dem Azure AD-Portal in eine Excel-Tabelle exportieren und herunterladen. Filtern Sie danach die registrierten Geräte (verwenden Sie die Spalte _registeredTime_) nach der Migrationsphase [Trennen von der Microsoft Cloud Deutschland](ms-cloud-germany-transition.md#how-is-the-migration-organized).
 
-Die Geräteregistrierung wird nach der Migration des Mandanten deaktiviert und kann nicht aktiviert oder deaktiviert werden. Wenn InTune nicht verwendet wird, melden Sie sich bei Ihrem Abonnement an, und führen Sie diesen Befehl aus, um die Option erneut zu aktivieren:
+Die Geräteregistrierung ist nach der Migration des Mandanten deaktiviert und kann nicht mehr aktiviert oder deaktiviert werden. Wenn Sie Intune nicht verwenden, melden Sie sich bei Ihrem Abonnement an und führen Sie folgenden Befehl aus, um die Option wieder zu aktivieren:
 
 ```powershell
 Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
 ```
 
-## <a name="windows-hybrid-azure-ad-join"></a>Windows-Hybrid Azure AD beitreten
+## <a name="windows-hybrid-azure-ad-join"></a>Azure AD Hybrid Join für Windows
 
-### <a name="windows-down-level"></a>Windows-Down-Level
+### <a name="windows-down-level"></a>Kompatibles Windows
 
-_Windows-untergeordnete Geräte_ sind Windows-Geräte, die derzeit frühere Versionen von Windows (beispielsweise Windows 8.1 oder Windows 7) ausführen oder die Windows Server-Versionen vor 2019 und 2016 ausführen. Wenn diese Geräte zuvor registriert wurden, müssen Sie diese Geräte aufheben und erneut registrieren. 
+_Kompatible Windows-Geräte_ sind Windows-Geräte, welche eine frühere Version von Windows ausführen (wie z. B. Windows 8.1 oder Windows 7), oder die Windows Server-Versionen vor 2019 und 2016 ausführen. Wenn solche Geräte früher registriert wurden, müssen Sie diese Geräte abmelden und wieder registrieren. 
 
-Verwenden Sie den folgenden Befehl auf dem Gerät, um festzustellen, ob ein Windows-Gerät auf der untersten Ebene zuvor zu Azure AD hinzugefügt wurde:
+Um herauszufinden, ob ein kompatibles Windows-Gerät früher mit Azure AD verbunden wurde, führen Sie auf dem Gerät folgenden Befehl aus:
 
 ```console
 %programfiles%\Microsoft Workplace Join\autoworkplace /status
 ```
 
-Wenn das Gerät zuvor mit Azure AD verbunden wurde und das Gerät über eine Netzwerkverbindung mit globalen Azure AD Endpunkten verfügt, wird die folgende Ausgabe angezeigt:
+Wenn das Gerät früher mit Azure AD verbunden war, und wenn das Gerät eine Netzwerkverbindung mit globalen Azure AD-Endpunkten hat, würden Sie die folgende Ausgabe sehen:
 
 ```console
 +----------------------------------------------------------------------+
@@ -86,29 +86,29 @@ Private key state : Okay
      Device state : Unknown
 ```
 
-Die betroffenen Geräte haben den "Gerätestatus" mit dem Wert "unbekannt". Wenn die Ausgabe "Device not Joined" ist oder deren Wert "Gerätestatus" "OK" lautet, ignorieren Sie die folgende Anleitung.
+Die betroffenen Geräte werden einen „Gerätestatus“ mit Wert „Unbekannt“ haben. Für Geräte mit Ausgabewert „Gerät nicht verbunden“ oder für Geräte mit „Gerätestatus“-Wert „Okay“ können Sie die folgende Anleitung ignorieren.
 
-Nur für Geräte, die anzeigen, dass das Gerät verbunden ist (aufgrund von Geräte-und Fingerabdruck usw.) und dessen Wert "Gerätestatus" "unbekannt" ist, sollten Administratoren den folgenden Befehl im Kontext eines Domänenbenutzers ausführen, der sich auf einem solchen untergeordneten Gerät anmeldet:
+Nur für Geräte, die anzeigen, dass das Gerät verbunden ist (aufgrund von Geräte-ID, Fingerabdruck usw.) und deren „Gerätestatus“-Wert „Unbekannt“ ist, sollten Administratoren den folgenden Befehl im Kontext eines Domänenbenutzers ausführen, der sich bei einem solchen kompatiblen Gerät anmeldet:
 
 ```console
 "%programfiles%\Microsoft Workplace Join\autoworkplace /leave"
 ```
 
-Der obige Befehl muss nur einmal pro Domänenbenutzer ausgeführt werden, der sich auf dem Windows-Down-Level-Gerät anmeldet. Dieser Befehl sollte im Kontext des Domänenbenutzers ausgeführt werden, der sich anmeldet. 
+Der vorstehende Befehl muss nur einmal pro Domänenbenutzer ausgeführt werden, der sich auf dem kompatiblen Windows-Gerät anmeldet. Dieser Befehl sollte im Kontext eines sich anmeldenden Domänenbenutzers ausgeführt werden. 
 
-Es muss ausreichend darauf geachtet werden, diesen Befehl nicht auszuführen, wenn der Benutzer sich anschließend anmeldet. Wenn der obige Befehl ausgeführt wird, wird der verbundene Status des lokalen Hybriden Azure AD-verbundenen Computers für den Benutzer, der sich angemeldet hat, gelöscht. Wenn der Computer noch als Hybrid Azure AD konfiguriert ist – im Mandanten verbunden, versucht er, sich anzumelden, wenn sich der Benutzer erneut anmeldet.
+Es muss sichergestellt werden, dass dieser Befehl nicht ausgeführt wird, wenn sich der Benutzer anschließend anmeldet. Wenn der vorhergehende Befehl ausgeführt wird, wird der verbundene Status des lokalen Azure AD Hybrid-verbundenen Computers für den Benutzer gelöscht, der sich angemeldet hat. Und wenn der Computer im Mandanten immer noch als Azure AD Hybrid-verbunden konfiguriert ist, wird er versuchen, sich wieder zu verknüpfen, wenn der Benutzer sich anmeldet.
 
-### <a name="windows-current"></a>Windows Current
+### <a name="windows-current"></a>Aktuelles Windows
 
-#### <a name="unjoin"></a>Trennungs
+#### <a name="unjoin"></a>Verknüpfung auflösen
 
-Führen Sie den folgenden Befehl auf dem Gerät aus, um festzustellen, ob das Windows 10-Gerät zuvor zu Azure AD hinzugefügt wurde:
+Um herauszufinden, ob ein Windows 10-Gerät früher mit Azure AD verbunden wurde, führen Sie auf dem Gerät folgenden Befehl aus:
 
 ```console
 %SystemRoot%\system32\dsregcmd.exe /status
 ```
 
-Wenn das Gerät Hybrid Azure AD – Joined ist, würde der Administrator die folgende Ausgabe sehen:
+Wenn das Gerät Azure AD Hybrid-verbunden ist, würde der Administrator die folgende Ausgabe sehen:
 
 ```console
 +----------------------------------------------------------------------+
@@ -120,38 +120,38 @@ Wenn das Gerät Hybrid Azure AD – Joined ist, würde der Administrator die fol
               DomainJoined : YES
 ```
 
-Wenn die Ausgabe "AzureAdJoined: No" lautet, ignorieren Sie die folgende Anleitung.
+Wenn die Ausgabe „AzureAdJoined: Nein“ ist, können Sie die folgende Anleitung ignorieren.
 
-Führen Sie den folgenden Befehl als Administrator aus, um den verbundenen Status des Geräts zu entfernen, nur für Geräte, die anzeigen, dass das Gerät mit Azure AD verbunden ist.
+Führen Sie nur für Geräte, die anzeigen, dass das Gerät mit Azure AD verbunden ist, den folgenden Befehl als Administrator aus, um den verbundenen Status des Geräts zu entfernen.
 
 ```console
 %SystemRoot%\system32\dsregcmd.exe /leave
 ```
 
-Der obige Befehl muss nur einmal in einem administrativen Kontext auf dem Windows-Gerät ausgeführt werden.
+Der vorstehende Befehl muss nur einmal in einem administrativen Kontext auf dem Windows-Gerät ausgeführt werden.
 
-#### <a name="hybrid-ad-joinre-registration"></a>Hybrid-AD-Join\Re-Registration
+#### <a name="hybrid-ad-joinre-registration"></a>AD Hybrid Beitritt/Wieder-Registrierung
 
-Das Gerät wird automatisch mit Azure AD ohne Benutzer-oder Administratoreingriff verbunden, solange das Gerät über eine Netzwerkverbindung mit globalen Azure AD Endpunkten verfügt. 
+Das Gerät wird automatisch ohne Benutzer- oder Administratoreingriff mit Azure AD verbunden, solange das Gerät über eine Netzwerkverbindung zu globalen Azure AD-Endpunkten verfügt. 
 
 
-## <a name="windows-azure-ad-join"></a>Windows Azure AD beitreten
+## <a name="windows-azure-ad-join"></a>Windows Azure AD-Beitritt
 
-**Wichtig:** Der InTune-Dienstprinzipal wird nach der Commerce-Migration aktiviert, was die Aktivierung Azure AD Geräteregistrierung impliziert. Wenn Sie Azure AD Geräteregistrierung vor der Migration blockiert haben, müssen Sie den InTune-Dienstprinzipal mit PowerShell deaktivieren, um Azure AD Geräteregistrierung erneut mit dem Azure AD Portal zu deaktivieren. Sie können den InTune-Dienstprinzipal mit diesem Befehl im Azure Active Directory PowerShell for Graph-Modul deaktivieren.
+**WICHTIG:** Der Intune-Dienstprinzipal wird nach der Commerce-Migration aktiviert, was die Aktivierung von Azure AD Device Registration impliziert. Wenn Sie Azure AD Device Registration vor der Migration blockiert haben, müssen Sie den Intune-Dienstprinzipal mit PowerShell deaktivieren, um die Azure AD-Geräteregistrierung mit dem Azure AD-Portal erneut zu deaktivieren. Sie können den Intune-Dienstprinzipal mit diesem Befehl im Azure Active Directory PowerShell für Graph-Modul deaktivieren.
 
 ```powershell
 Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
 ```
 
-### <a name="unjoin"></a>Trennungs
+### <a name="unjoin"></a>Verknüpfung auflösen
 
-Um zu ermitteln, ob das Windows 10-Gerät zuvor mit Azure AD verbunden wurde, kann der Benutzer oder Administrator den folgenden Befehl auf dem Gerät ausführen:
+Um herauszufinden, ob ein Windows 10-Gerät früher mit Azure AD verbunden wurde, kann der Benutzer oder Administrator auf dem Gerät folgenden Befehl ausführen:
 
 ```console
 %SystemRoot%\system32\dsregcmd.exe /status
 ```
 
-Wenn das Gerät mit Azure AD verbunden ist, wird dem Benutzer oder Administrator die folgende Ausgabe angezeigt:
+Wenn das Gerät mit Azure AD verbunden ist, würden der Benutzer oder der Administrator die folgende Ausgabe sehen:
 
 ```console
 +----------------------------------------------------------------------+
@@ -163,32 +163,32 @@ Wenn das Gerät mit Azure AD verbunden ist, wird dem Benutzer oder Administrator
               DomainJoined : NO
 ```
 
-Wenn die Ausgabe "AzureAdJoined: No" lautet, ignorieren Sie die folgende Anleitung.
+Wenn die Ausgabe „AzureAdJoined: NEIN“ ist, können Sie die folgende Anleitung ignorieren.
 
-Benutzer: Wenn das Gerät Azure AD verbunden ist, kann ein Benutzer die Verknüpfung des Geräts von den Einstellungen trennen. Stellen Sie sicher, dass auf dem Gerät ein lokales Administratorkonto vorhanden ist, bevor Sie von Azure AD auf das Gerät aufschließen. Das lokale Administratorkonto muss sich wieder am Gerät anmelden.
+Benutzer: Wenn das Gerät mit Azure AD verbunden ist, kann ein Benutzer die Verknüpfung des Geräts in den Einstellungen auflösen. Stellen Sie sicher, dass ein lokales Administratorkonto auf dem Gerät vorhanden ist, bevor Sie die Verknüpfung des Geräts mit Azure AD aufheben. Das lokale Administratorkonto wird benötigt, um sich wieder am Gerät anzumelden.
 
-Admin: Wenn der Administrator der Organisation die Verknüpfung der Benutzer Geräte aufheben möchte, die Azure AD – beigetreten sind, können Sie den folgenden Befehl auf jedem der Geräte mithilfe eines Mechanismus wie der Gruppenrichtlinie ausführen. Der Administrator muss überprüfen, ob ein lokales Administratorkonto auf dem Gerät vorhanden ist, bevor die Verbindung mit dem Gerät von Azure AD entfernt wird. Das lokale Administratorkonto wird benötigt, um sich wieder am Gerät anzumelden.
+Administrator: Wenn der Administrator einer Organisation die Verknüpfung der Azure AD-verbundenen Geräte eines Benutzers aufheben will, kann er dies durch das Ausführen des folgenden Befehls auf jedem der Geräte machen, indem er einen Mechanismus wie z. B. die Gruppenrichtlinie verwendet. Der Administrator muss sicherstellen, dass ein lokales Administratorkonto auf dem Gerät vorhanden ist, bevor er die Verknüpfung des Geräts mit Azure AD aufhebt. Das lokale Administratorkonto ist notwendig, um sich wieder am Gerät anzumelden.
 
 ```console
 %SystemRoot%\system32\dsregcmd.exe /leave
 ```
 
-Der obige Befehl muss nur einmal in einem administrativen Kontext auf dem Windows-Gerät ausgeführt werden. 
+Der vorstehende Befehl muss nur einmal in einem administrativen Kontext auf dem Windows-Gerät ausgeführt werden. 
 
-### <a name="azure-ad-joinre-registration"></a>Azure AD beitreten/erneute Registrierung
+### <a name="azure-ad-joinre-registration"></a>Azure AD Beitritt/Wieder-Registrierung
 
-Der Benutzer kann dem Gerät Azure AD von Windows-Einstellungen hinzufügen: **Einstellungen > Konten > Access work oder School > Connect**.
+Der Benutzer kann das Gerät über die Windows-Einstellungen zu Azure AD verknüpfen: **Einstellungen > Konten > Zugriff auf Arbeit oder Schule > Verbinden**.
  
 
-## <a name="windows-azure-ad-registered-company-owned"></a>Windows Azure AD registriert (im Unternehmen)
+## <a name="windows-azure-ad-registered-company-owned"></a>Windows Azure AD-registriert (Unternehmensbesitz)
 
-Führen Sie den folgenden Befehl auf dem Gerät aus, um festzustellen, ob das Gerät Windows 10 Azure AD – registriert ist:
+Um herauszufinden, ob ein Windows 10-Gerät Azure AD-registriert ist, führen Sie auf dem Gerät folgenden Befehl aus:
 
 ```console
 %SystemRoot%\system32\dsregcmd.exe /status
 ```
 
-Wenn das Gerät Azure AD registriert ist, wird die folgende Ausgabe angezeigt:
+Wenn das Gerät Azure AD-registriert ist, würden Sie folgende Ausgabe sehen:
 
 ```console
 +----------------------------------------------------------------------+
@@ -199,93 +199,93 @@ Wenn das Gerät Azure AD registriert ist, wird die folgende Ausgabe angezeigt:
           WamDefaultAuthority : organizations
 ```
 
-So entfernen Sie das vorhandene Azure AD registrierte Konto auf dem Gerät:
+Um das bestehende Azure AD-registrierte Konto auf dem Gerät zu entfernen:
 
-- Verwenden Sie zum Entfernen des Azure AD-registrierten Kontos auf dem Gerät CleanupWPJ, ein Tool, das Sie hier herunterladen können: [CleanupWPJ.zip](https://download.microsoft.com/download/8/e/f/8ef13ae0-6aa8-48a2-8697-5b1711134730/WPJCleanUp.zip).
+- Um das bestehende Azure AD-registrierte Konto auf dem Gerät zu entfernen verwenden Sie CleanupWPJ, ein Tool, das Sie hier herunterladen können: [CleanupWPJ.zip](https://download.microsoft.com/download/8/e/f/8ef13ae0-6aa8-48a2-8697-5b1711134730/WPJCleanUp.zip).
 
-- Extrahieren Sie die ZIP-Datei, und führen Sie **WPJCleanup. cmd** aus. Dieses Tool startet die richtige ausführbare Datei basierend auf der Windows-Version auf dem Gerät.
+- Extrahieren Sie die ZIP-Datei und führen Sie **WPJCleanup.cmd** aus. Dieses Tool wird basierend auf der Windows-Version auf dem Gerät die richtige ausführbare Datei starten.
 
-- Mithilfe eines Mechanismus wie Gruppenrichtlinie kann der Administrator den Befehl auf dem Gerät im Kontext eines beliebigen Benutzers ausführen, der auf dem Gerät angemeldet ist.
+- Wenn Sie einen Mechanismus wie die Gruppenrichtlinie verwenden, kann der Administrator den Befehl im Kontext jedes auf dem Gerät angemeldeten Benutzers ausführen.
 
-Um die Eingabeaufforderung des Webkonto-Managers zum Registrieren des Geräts in Azure AD zu deaktivieren, fügen Sie diesen Registrierungswert hinzu: 
+Um die Web Account Manager-Eingabeaufforderungen zur Registrierung des Geräts in Azure AD zu deaktivieren, fügen Sie folgenden Registry-Wert hinzu: 
 
-- Speicherort: HKLM\SOFTWARE\Policies\Microsoft\Windows\WorkplaceJoin
-- Typ: DWORD (32 Bit)
+- Ort: HKLM\SOFTWARE\Policies\Microsoft\Windows\WorkplaceJoin
+- Typ: DWORD (32 bit)
 - Name: BlockAADWorkplaceJoin
-- Wert Daten: 1
+- Wertdaten: 1
 
-Das vorhanden sein dieses Registrierungswerts sollte einen Arbeitsplatz Beitritt blockieren und verhindern, dass Benutzer Ansagen zum Beitritt zum Gerät anzeigen können.
+Das Vorhandensein dieses Registry-Werts sollte die Arbeitsplatz-Verknüpfung blockieren und verhindern, dass Benutzer Eingabeaufforderungen zum Verknüpfen des Geräts sehen.
 
 ## <a name="android"></a>Android
 
-Für Android müssen Benutzer die Registrierung aufheben und Ihre Geräte erneut registrieren. Dies kann über die Microsoft Authenticator-APP oder die Unternehmens Portal-App erfolgen. 
+Für Android müssen Benutzer ihre Geräte abmelden und wieder registrieren. Dies kann mit der Microsoft Authenticator-App oder der Unternehmensportal-App geschehen. 
 
-- Von der Microsoft Authenticator-App aus können Benutzer zu **Einstellungen > Geräteregistrierung** wechseln. Von dort können Benutzer die Registrierung Ihres Geräts aufheben und erneut registrieren.
+- Aus der Microsoft Authenticator-App können die Benutzer zu **Einstellungen > Geräteregistrierung** gehen. Von dort aus können die Benutzer ihre Geräte abmelden und wieder registrieren.
  
-- Über das Unternehmens Portal können Benutzer zur Registerkarte **Geräte** wechseln und das Gerät entfernen. Registrieren Sie das Gerät anschließend mithilfe des Unternehmensportals neu.
+- Aus dem Unternehmensportal können die Benutzer zu Registerkarte **Geräte** gehen und das Gerät entfernen. Danach registrieren Sie das Gerät erneut über das Unternehmensportal.
  
-- Benutzer können die Registrierung und erneute Registrierung auch aufheben, indem Sie das Konto auf der Seite Kontoeinstellungen entfernen und dann das Arbeitskonto erneut hinzufügen.
+- Benutzer können das Gerät auch abmelden und wieder registrieren, indem Sie das Konto von der Seite „Kontoeinstellungen“ entfernen und dann das Geschäftskonto wieder hinzufügen.
 
-So heben Sie die Registrierung und das erneute Registrieren des Geräts unter Android mithilfe der Microsoft Authenticator-App auf:
+Um das Gerät mit der Microsoft Authenticator-App auf Android abzumelden und wieder zu registrieren:
 
-1.  Öffnen Sie die Microsoft Authenticator-APP, und wechseln Sie zu **Einstellungen**.
-2.  Wählen Sie **Geräteregistrierung** aus.
-3.  Heben Sie die Registrierung des Geräts auf, indem Sie **Aufheben der Registrierung** auswählen.
-4.  Registrieren Sie das Gerät bei der **Geräteregistrierung** erneut, indem Sie Ihre e-Mail-Adresse eingeben, und wählen Sie dann **registrieren** aus.
+1.  Öffnen Sie die Microsoft Authenticator-App und gehen Sie zu **Einstellungen**.
+2.  Wählen Sie **Geräteregistrierung**.
+3.  Melden Sie das Gerät ab, indem Sie **Registrierung aufheben** auswählen.
+4.  Für die **Geräteregistrierung** registrieren Sie das Gerät erneut, indem Sie Ihre E-Mail-Adresse eingeben und **Registrieren** auswählen.
 
-So heben Sie die Registrierung und das erneute Registrieren eines Android-Geräts mit der Android-Einstellungsseite auf:
+Um ein Android-Gerät mit der Seite für Android-Einstellungen abzumelden und wieder zu registrieren:
 
-1.  Öffnen Sie die **Geräteeinstellungen** , und wechseln Sie zu **Konten**.
-2.  Wählen Sie das Arbeitskonto aus, das Sie erneut registrieren möchten, und wählen Sie **Konto entfernen** aus.
-3.  Nachdem das Konto entfernt wurde, wählen Sie auf der Seite **Konten** die Option **Konto > Arbeitskonto hinzufügen** aus.
-4.  Geben Sie für **Workplace Join** Ihre e-Mail-Adresse ein, und wählen Sie **beitreten** aus, um die Registrierung des Geräts abzuschließen.
+1.  Öffnen Sie **Geräteeinstellungen** und gehen sie zu **Konten**.
+2.  Wählen das Geschäftskonto aus, das Sie wieder registrieren wollen und wählen Sie **Konto entfernen**.
+3.  Nachdem das Konto entfernt wurde, wählen Sie von der **Konto**-Seite aus **Konto hinzufügen > Geschäftskonto**.
+4.  Für die **Arbeitsplatz-Verknüpfung** geben Sie Ihre E-Mail-Adresse ein und wählen Sie **Verknüpfung**, um die Registrierung des Geräts abzuschließen.
 
-So heben Sie die Registrierung und Erneutes Registrieren des Geräts unter Android im Unternehmens Portal auf:
+Um das Gerät auf Android über das Unternehmensportal abzumelden und neu zu registrieren:
 
-1.  Starten Sie das Unternehmens Portal, und wechseln Sie zur Registerkarte **Geräte** .
-2.  Wählen Sie das Gerät aus, um die Gerätedetails anzuzeigen.
-3.  Wählen Sie im Menü Ellipsen (drei Punkte) die Option **Gerät entfernen** aus, und schließen Sie das Entfernen ab, indem Sie im Dialogfeld bestätigen.
-4.  Sie sollten jetzt von der Unternehmens Portal-App abgemeldet werden. Wählen Sie **Anmelden** aus, um das Gerät erneut zu registrieren.
+1.  Starten Sie das Unternehmensportal und gehen Sie zur Registerkarte **Geräte**.
+2.  Wählen Sie das Gerät aus, um die Gerätedetails zu sehen.
+3.  Aus dem Ellipsen-Menü (drei Punkte) wählen Sie **Gerät entfernen** und schließen das Entfernen ab, indem Sie dies im Dialogfeld bestätigen.
+4.  Sie sollten jetzt von der Unternehmensportal-App abgemeldet sein. Wählen Sie **Anmelden**, um das Gerät wieder zu registrieren.
 
-Weitere Informationen zu den erforderlichen Aktionen während der Migrationsphase dieser Arbeitsauslastung oder zu den Auswirkungen auf die Verwaltung oder Verwendung finden Sie in den Informationen zu Azure Active Directory (Azure AD) in [zusätzlichen Azure AD Informationen für die Migration von Microsoft Cloud Deutschland](ms-cloud-germany-transition-azure-ad.md).
+Weitere Informationen zu Aktionen, die während der Migrationsphase dieses Workloads erforderlich sind, oder zu Auswirkungen auf die Verwaltung oder Verwendung finden Sie in den Informationen zu Azure Active Directory (Azure AD) unter [Zusätzliche Azure AD-Informationen für die Migration von Microsoft Cloud Deutschland](ms-cloud-germany-transition-azure-ad.md).
 
 ## <a name="ios"></a>iOS
 
-Auf IOS-Geräten muss ein Benutzer alle zwischengespeicherten Konten manuell aus dem Microsoft Authenticator entfernen, die Registrierung des Geräts aufheben und sich von allen systemeigenen apps auf dem Gerät abmelden.
+Auf iOS-Geräten muss ein Benutzer alle zwischengespeicherten Konten manuell aus dem Microsoft Authenticator entfernen, die Registrierung des Geräts aufheben und sich von allen nativen Apps auf dem Gerät abmelden.
 
-### <a name="step-1-if-present-remove-the-account-from-the-microsoft-authenticator-app"></a>Schritt 1: Entfernen Sie das Konto, falls vorhanden, aus der Microsoft Authenticator-app.
+### <a name="step-1-if-present-remove-the-account-from-the-microsoft-authenticator-app"></a>Schritt 1: Wenn vorhanden, entfernen Sie das Konto aus der Microsoft Authenticator-App
 
-1. Tippen Sie auf das Konto in der Microsoft Authenticator-app.
-2. Tippen Sie in der oberen rechten Ecke auf das Symbol " **Einstellungen** ". Wenn das Symbol " **Einstellungen** " nicht angezeigt wird, verwenden Sie möglicherweise nicht die neueste Version von Microsoft Authenticator.
-3. Tippen Sie auf die Schaltfläche **Konto entfernen** .
-4. Tippen Sie **auf alle apps auf diesem Gerät**.
+1. Tippen Sie auf des Konto in der Microsoft Authenticator-App.
+2. Tippen Sie auf das Symbol **Einstellungen** in der oberen rechten Ecke.  Wenn Sie das Symbol **Einstellungen** nicht sehen, verwenden Sie möglicherweise nicht die aktuelle Version des Microsoft Authenticator.
+3. Tippen Sie die Schaltfläche **Konto entfernen**.
+4. Tippen Sie auf **Alle Apps auf diesem Gerät**.
  
-### <a name="step-2-unregister-the-device-from-the-microsoft-authenticator-app"></a>Schritt 2: Aufheben der Registrierung des Geräts über die Microsoft Authenticator-App
+### <a name="step-2-unregister-the-device-from-the-microsoft-authenticator-app"></a>Schritt 2: Registrierung des Geräts in der Microsoft Authenticator-App aufheben
 
-1. Tippen Sie auf das Menüsymbol in der oberen rechten Ecke.
-2. Tippen Sie auf **Einstellungen** und dann auf **Geräteregistrierung**.
-4. Wenn Ihr Konto angezeigt wird, tippen Sie auf **Gerät aufheben** und im Dialogfeld auf **weiter** . Danach sollte kein Konto angezeigt werden.
+1. Tippen Sie auf das Menu-Symbol in der oberen rechten Ecke. 
+2. Tippen Sie **Einstellungen** und dann **Geräteregistrierung**.
+4. Wenn Ihr Konto angezeigt wird, tippen Sie im Dialog auf **Registrierung des Geräts aufheben** und **Weiter**. Sie sollten danach kein Konto mehr sehen.
  
-### <a name="step-3-sign-out-from-individual-apps-if-necessary"></a>Schritt 3: Abmelden von einzelnen Apps bei Bedarf
+### <a name="step-3-sign-out-from-individual-apps-if-necessary"></a>Schritt 3: Abmelden aus individuellen Apps wenn notwendig.
 
-Benutzer können zu einzelnen apps wie Outlook, Microsoft Teams und OneDrive wechseln und Konten aus diesen apps entfernen.
+Benutzer können zu individuellen Apps wie Outlook, Teams oder OneDrive wechseln und Konten aus diese Apps entfernen.
 
 ## <a name="more-information"></a>Weitere Informationen
 
 Erste Schritte:
 
-- [Migration von Microsoft Cloud Deutschland zu Office 365 Diensten in den neuen Regionen des deutschen Rechenzentrums](ms-cloud-germany-transition.md)
+- [Migration von Microsoft Cloud Deutschland zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen](ms-cloud-germany-transition.md)
 - [Hilfe zur Microsoft Cloud Deutschland-Migration Assistance](https://aka.ms/germanymigrateassist)
 - [So können Sie sich für die Migration anmelden](ms-cloud-germany-migration-opt-in.md)
 - [Kundenerfahrung während der Migration](ms-cloud-germany-transition-experience.md)
 
-Navigieren durch den Übergang:
+Der Weg durch die Umstellung:
 
-- [Phasen, Aktionen und Auswirkungen der Migration](ms-cloud-germany-transition-phases.md)
-- [Zusätzliche vorab Arbeit](ms-cloud-germany-transition-add-pre-work.md)
-- Zusätzliche Informationen zu [Azure AD](ms-cloud-germany-transition-azure-ad.md), [Geräten](ms-cloud-germany-transition-add-devices.md), [Erfahrungen](ms-cloud-germany-transition-add-experience.md)und [AD FS](ms-cloud-germany-transition-add-adfs.md).
+- [Aktionen und Auswirkungen der Migrationsphasen](ms-cloud-germany-transition-phases.md)
+- [Zusätzliche Vorarbeit](ms-cloud-germany-transition-add-pre-work.md)
+- Zusätzliche Informationen für [Azure AD](ms-cloud-germany-transition-azure-ad.md), [Geräte](ms-cloud-germany-transition-add-devices.md), [Erfahrungen](ms-cloud-germany-transition-add-experience.md) und [AD FS](ms-cloud-germany-transition-add-adfs.md).
 
-Cloud-apps:
+Cloud-Apps:
 
 - [Informationen zum Dynamics 365-Migrationsprogramm](https://aka.ms/d365ceoptin)
 - [Informationen zum Power BI-Migrationsprogramm](https://aka.ms/pbioptin)

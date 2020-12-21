@@ -1,47 +1,47 @@
 - name: Microsoft Bookings
   href: bookings-overview.md
   items:
-    - name: Setup
+    - name: Einrichtung
       items:
-        - name: Zugriff auf Buchungen erhalten
+        - name: Zugriff auf Microsoft Bookings erhalten
           href: get-access.md
         - name: Eingeben Ihrer Unternehmensinformationen
           href: enter-business-information.md
         - name: Definieren Ihrer Dienstangebote
           href: define-service-offerings.md
-        - name: Hinzufügen von Mitarbeitern zu Buchungen
+        - name: Mitarbeiter zu Bookings hinzufügen
           href: add-staff.md
-        - name: Planen von Geschäftsschließungen und Zeitaufwand
+        - name: 'Planen von Betriebsferien, arbeitsfreier Zeit und Urlaubszeit'
           href: schedule-closures-time-off-vacation.md
-        - name: Festlegen Ihrer Planungsrichtlinien
+        - name: Festlegen Ihrer Terminplanungsrichtlinien
           href: set-scheduling-policies.md
         - name: Anpassen und Veröffentlichen Ihrer Buchungsseite
           href: customize-booking-page.md
-        - name: Manuelle Buchung erstellen
+        - name: Erstellen einer manuellen Buchung
           href: create-a-manual-booking.md
-        - name: Planen von Geschäftsschließungen und Zeitaufwand
+        - name: 'Planen von Betriebsferien, arbeitsfreier Zeit und Urlaubszeit'
           href: schedule-closures-time-off-vacation.md
         - name: Mitarbeiterstunden
           href: employee-hours.md
-        - name: Hinzufügen von benutzerdefinierten und erforderlichen Fragen zur Buchungsseite
+        - name: Benutzerdefinierte und erforderliche Fragen zur Buchungsseite hinzufügen
           href: add-questions.md
-        - name: Festlegen der Pufferzeit
+        - name: Pufferzeit festlegen
           href: set-buffer-time.md
         - name: Metriken und Aktivitätsverfolgung
           href: metrics-and-activity-tracking.md
-        - name: Festlegen von Sprache und Zeitzone
+        - name: Festlegen der Sprache und der Zeitzonen
           href: set-language-time-zones.md
-    - name: Abrufen der App "Buchungen"
+    - name: Holen Sie sich die Microsoft Bookings-App
       href: get-bookings-app.md
-    - name: Reservierungen-APP und virtuelle Besuche in Microsoft Teams
+    - name: Bookings-App und virtuelle Besuche in Microsoft Teams
       href: 'https://docs.microsoft.com/microsoftteams/bookings-app-admin?toc=/microsoft-365/bookings/toc.json&bc=/microsoft-365/bookings/breadcrumb/toc.json'
-    - name: Vergleichsdiagramm-webapp versus Microsoft Teams-App
+    - name: Vergleichsdiagramm – Web-App im Vergleich zu Teams-App
       href: comparison-chart.md
-    - name: Löschen eines Buchungs Kalenders
+    - name: Löschen eines Buchungskalenders
       href: delete-calendar.md
-    - name: Aktivieren oder Deaktivieren von Microsoft-Buchungen
+    - name: Microsoft Bookings an- oder ausschalten
       href: turn-bookings-on-or-off.md
-    - name: Berichtsinformationen für Microsoft-Buchungen
+    - name: Berichtsinformationen für Microsoft Bookings
       href: reporting-info.md
-    - name: Häufig gestellte Fragen zu Microsoft-Buchungen (FAQ)
+    - name: Häufig gestellte Fragen (FAQs) zu Microsoft Bookings
       href: bookings-faq.md

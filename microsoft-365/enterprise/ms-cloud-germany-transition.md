@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Zusammenfassung: Die Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen verstehen.'
-ms.openlocfilehash: 16e57eff5556d31d2d13ab6ce0d284719d63c44c
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 3587979c61434b77c38758e70903ee7028d70b9e
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688641"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709692"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Migration von Microsoft Cloud Deutschland zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen
 
@@ -35,7 +35,7 @@ Im August 2018 hat Microsoft die Absicht angekündigt, die gesamte Microsoft-Clo
 
 Die neuen Regionen sind für die Anpassung an die sich ständig verändernden Anforderungen deutscher Kunden ausgelegt und bieten größere Flexibilität, die neuesten intelligenten Cloud-Dienste und die umfassende Verbindung zu unserem Microsoft 365 Cloud-Netzwerk sowie Kundendatenhaltung in Deutschland.
 
-## <a name="how-to-migrate-to-the-new-german-regions"></a>Migration zu den neuen deutschen Rechenzentrumsregionen
+## <a name="how-to-migrate-to-the-new-german-datacenter-regions"></a>Migration zu den neuen deutschen Rechenzentrumsregionen
 
 Bestehende Kunden der Microsoft Cloud Deutschland können nun mit der Migration ihrer Office 365-, Dynamics 365 Customer Engagement- und Power Platform-Kunden beginnen. Der erste Schritt besteht darin, [sich für eine von Microsoft geleitete Migration in unsere neuen deutschen Rechenzentrumsregionen anzumelden](https://aka.ms/office365germanymoveoptin).
 
@@ -78,9 +78,9 @@ Eine Woche vor Beginn der Mandantenmigration erhalten Sie im Nachrichtencenter-D
 
 Bei der Migration wird Ihr Azure AD-Mandant vom unabhängigen Azure AD-Dienst Deutschland in die Office 365-Dienste-Instanz von Azure AD in der europäischen Region verlagert.
 
-Die nächste Phase besteht in der Migration der Abonnements und Benutzerlizenzen Ihres Mandanten für Deutschland-spezifische Produkte.
+Die nächste Phase besteht in der Migration der Abonnements und Benutzerlizenzen Ihres Mandanten für Deutschland-spezifische Produkte in globale Produkte.
 
-Sobald alle Schritte einschließlich der Azure Kunden-Migration durchgeführt wurden, wird Ihr Mandant im Office 365 Services-Dienst finalisiert und die Migration als abgeschlossen gekennzeichnet. An diesem Punkt erhalten Sie eine abschließende Benachrichtigung im Nachrichtencenter. Der Mandant ist nun keine vollständig globale Office 365-Organisation.
+Sobald alle Schritte einschließlich der Azure Kunden-Migration durchgeführt wurden, wird Ihr Mandant im Office 365 Services-Dienst finalisiert und die Migration als abgeschlossen gekennzeichnet. An diesem Punkt erhalten Sie eine abschließende Benachrichtigung im Nachrichtencenter. Der Mandant ist nun eine vollständig globale Office 365-Organisation.
 
 Sie werden mittels Nachichtencenter-Mitteilungen über den Status der Migration informiert. Die Mitteilungen erfolgen anlässlich bestimmter Meilensteine und bieten Orientierungshilfe zum Fortschritt eines Schritts sowie wichtige Informationen für kundenseitige Maßnahmen auf der Grundlage der Prozessanforderungen. Nachrichtencenter-Mitteilungen werden anlässlich der folgenden Meilensteine bereitgestellt:
 
@@ -94,9 +94,9 @@ Sie werden mittels Nachichtencenter-Mitteilungen über den Status der Migration 
 - Power BI abgeschlossen
 - Endgültige Umstellung der Dienste abgeschlossen
 
-## <a name="moving-to-the-new-german-regions"></a>Wechsel zu den neuen deutschen Rechenzentrumsregionen
+## <a name="moving-to-the-new-german-datacenter-regions"></a>Verschiebung in die neuen deutschen Rechenzentrumsregionen
 
-Bestehende Kunden von Microsoft Cloud Germany (Microsoft Cloud Deutschland) können nun mit der Migration ihrer Office 365-, Dynamics 365 Customer Engagement- und Power Platform BI-Kunden beginnen. Der erste Schritt besteht darin, [sich für eine von Microsoft geleitete Migration in unsere neuen deutschen Rechenzentrumsregionen anzumelden](https://aka.ms/office365germanymoveoptin). Wenn Sie Ihr Abonnement verlängern, melden Sie sich automatisch für eine von Microsoft geleitete Migration an. Microsoft wird in diesem Fall die Mandantenadministratoren von Kunden per E-Mail und im Nachrichtencenter des Microsoft 365 Admin Centers darüber benachrichtigen. Wenn Sie es jedoch vorziehen, den Vorgang jetzt zu starten, können Sie direkt im Microsoft 365 Admin Center sofort [das Opt-In vornehmen](https://aka.ms/office365germanymoveoptin). Die Migrationen werden voraussichtlich Anfang 2021 beginnen und bis zum 29. Oktober 2021 abgeschlossen sein. 
+Microsoft Cloud Deutschland-Bestandskunden können nun mit der Migration ihrer Office 365-, Dynamics 365 Customer Engagement- und Power Platform-Diensten beginnen. Der erste Schritt besteht darin, [sich für eine von Microsoft geleitete Migration in unsere neuen deutschen Rechenzentrumsregionen anzumelden](https://aka.ms/office365germanymoveoptin). Wenn Sie Ihr Abonnement verlängern, melden Sie sich automatisch für eine von Microsoft geleitete Migration an. Microsoft wird in diesem Fall die Mandantenadministratoren von Kunden per E-Mail und im Nachrichtencenter des Microsoft 365 Admin Centers darüber benachrichtigen. Wenn Sie es jedoch vorziehen, den Vorgang jetzt zu starten, können Sie direkt im Microsoft 365 Admin Center sofort [das Opt-In vornehmen](https://aka.ms/office365germanymoveoptin). Die Migrationen werden voraussichtlich Anfang 2021 beginnen und bis zum 29. Oktober 2021 abgeschlossen sein. 
 
 Als Ergebnis der Migration werden die wichtigsten Kundendaten und -abonnements in die neuen deutschen Rechenzentrumsregionen verschoben.
 
@@ -149,7 +149,7 @@ Die folgenden 15 Dienste sind im Clouddienstangebot von Microsoft Cloud Deutschl
 14. Office 365 ProPlus
 15. Outlook Mobile
 
-Derzeit sind 29 Dienste als Bestandteil von Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen verfügbar. In Übereinstimmung mit den globalen Office 365-Diensten werden fortlaufend neue Features und Dienste bereitgestellt.
+Derzeit sind 39 Dienste als Bestandteil von Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen verfügbar. In Übereinstimmung mit den globalen Office 365-Diensten werden fortlaufend neue Features und Dienste bereitgestellt.
 
 1. Exchange Online
 2. Kunden-Lockbox für Exchange Online
@@ -161,7 +161,7 @@ Derzeit sind 29 Dienste als Bestandteil von Office 365-Diensten in den neuen deu
 8. Microsoft Defender für Office 365
 9. Advanced eDiscovery
 10. Advanced Security Management
-11. Verwaltung von Informationsrechten
+11. Schutz von Informationen für Office 365 
 12. Advanced Data Governance
 13. SharePoint Online
 14. Kunden-Lockbox für SharePoint Online
@@ -173,13 +173,23 @@ Derzeit sind 29 Dienste als Bestandteil von Office 365-Diensten in den neuen deu
 20. PSTN-Anrufe
 21. Microsoft Teams
 22. Administrator-Berichte/ Verwendungsberichte
-23. Word Online, Excel Online, PowerPoint, OneNote und Visio Online
+23. Office für das Web
 24. Planner
 25. Sway
 26. Microsoft 365 Apps
 27. Outlook Mobile
 28. Enterprise Mobility + Security (EMS) E3 (Azure AD Premium P1, Intune und Rights Management Service)
-29. Yammer Online
+29. Yammer Enterprise
+30. Microsoft Forms
+31. Power BI für Office 365
+32. Power Virtual Agents für Office 365
+33. PowerApps für Office 365
+34. Microsoft Bookings
+35. To-Do
+36. Whiteboard
+37. Microsoft StuffHub
+38. Microsoft Kaizala Pro
+39. Listen
 
 ### <a name="when-will-migration-happen"></a>Wann wird die Migration durchgeführt?
 

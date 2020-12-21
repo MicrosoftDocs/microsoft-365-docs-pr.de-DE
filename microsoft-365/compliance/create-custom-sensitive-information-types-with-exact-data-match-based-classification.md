@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie benutzerdefinierte vertrauliche Informationstypen mit genauer Datenübereinstimmungsklassifizierung erstellen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a5fa261f1e0db5c8ed66dfdebdca764976fe3130
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 68546f7ad9f4b97f43611d49054200db4fdd4bbd
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658672"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698396"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Erstellen von benutzerdefinierten vertraulichen Informationstypen mit genauer Datenübereinstimmungsklassifizierung
 
@@ -107,6 +107,11 @@ Das Einrichten und Konfigurieren der EDM-basierten Klassifizierung umfasst:
 3. Achten Sie auf das Format der Felder für die vertraulichen Daten. Insbesondere würden Felder, deren Inhalt Kommas enthalten kann (z. B. eine Straßenadresse, die den Wert „Seattle,WA“ enthält), beim Parsen durch das EDM-Tool als zwei getrennte Felder interpretiert werden. Um dies zu vermeiden, müssen Sie sicherstellen, dass solche Felder in der Tabelle mit den vertraulichen Daten von einfachen oder doppelten Anführungszeichen umgeben sind. Wenn Felder, die Kommas enthalten können, auch Leerzeichen enthalten können, müssen Sie einen benutzerdefinierten Datentyp für vertrauliche Daten erstellen, der dem entsprechenden Format entspricht (z. B. eine Zeichenfolge aus mehreren Wörtern mit Kommas und Leerzeichen darin), um sicherzustellen, dass die Zeichenfolge beim Scannen des Dokuments richtig zugeordnet wird.
 
 #### <a name="define-the-schema-for-your-database-of-sensitive-information"></a>Definieren des Schemas für Ihre Datenbank mit vertraulichen Informationen
+
+Wenn Sie es aus geschäftlichen oder technischen Gründen vorziehen, PowerShell oder die Befehlszeile nicht zu verwenden, um Ihr Schema und EDM-vertraulicher-Informationstyp-Muster (Regelpaket) zu erstellen, können Sie den [Exact Data Match Schema- und Vertraulicher Informationstyp Assistent](sit-edm-wizard.md) verwenden, um sie zu erstellen. Wenn Sie mit dem Erstellen des Schemas und des EDM-vertraulicher-Informationstyp-Musters fertig sind, kehren Sie zurück, um alle Schritte abzuschließen, die erforderlich sind, um Ihren EDM-basierten vertraulicher Informationstyp für die Verwendung verfügbar zu machen.
+
+> [!NOTE]
+> Der Assistent für die Exact Data Match Schema und vertraulicher Informationstyp ist nur für die World Wide- und GCC-Cloud verfügbar.
 
 1. Definieren Sie das Schema für die Datenbank mit vertraulichen Informationen im XML-Format (ähnlich wie in unserem Beispiel unten). Nennen Sie diese Schemadatei **edm.xml** und konfigurieren Sie sie so, dass es für jede Spalte in der Datenbank eine Zeile mit der folgenden Syntax gibt: 
 
@@ -253,7 +258,7 @@ In diesem Beispiel, in dem beide, `caseInsensitive` und `ignoredDelimiters`, ver
       </RulePackage>
       ```
 
-1. Laden Sie das Regelpaket hoch, indem Sie nacheinander die folgenden PowerShell-Cmdlets ausführen:
+2. Laden Sie das Regelpaket hoch, indem Sie nacheinander die folgenden PowerShell-Cmdlets ausführen:
 
       ```powershell
       $rulepack=Get-Content .\\rulepack.xml -Encoding Byte -ReadCount 0
@@ -361,7 +366,10 @@ Der Hashvorgang und das Hochlande können mit einem einzigen Computer durchgefü
 
 Wenn Sie den Hashvorgang und das Hochladen von einem Computer aus durchführen möchten, muss dieser eine direkte Verbindung zu Ihrem Microsoft 365-Mandanten herstellen können. Dies setzt voraus, dass für den Hashvorgang die vertraulichen Datendateien im Klartext auf diesem Computer bereitstehen.
 
-Wenn Sie Ihre vertrauliche Datendatei im Klartext nicht verfügbar machen möchten, können Sie den Hashvorgang auf einem Computer an einem sicheren Ort durchführen, und dann die Hashdatei und die Saltdatei auf einen Computer kopieren, der für das Hochladen eine direkte Verbindung mit Ihrem Microsoft 365-Mandanten herstellen kann. In diesem Szenario benötigen Sie das den EDM-Upload-Agenten auf beiden Computern. 
+Wenn Sie Ihre vertrauliche Datendatei im Klartext nicht verfügbar machen möchten, können Sie den Hashvorgang auf einem Computer an einem sicheren Ort durchführen, und dann die Hashdatei und die Saltdatei auf einen Computer kopieren, der für das Hochladen eine direkte Verbindung mit Ihrem Microsoft 365-Mandanten herstellen kann. In diesem Szenario benötigen Sie das den EDM-Upload-Agenten auf beiden Computern.
+
+> [!IMPORTANT]
+> Wenn Sie den Assistenten für Exact Data Match Schema und vertraulicher Informationstyp verwendet haben, um Ihre Schema- und Musterdateien zu erstellen, **_müssen_* Sie das Schema für dieses Verfahren herunterladen.
 
 #### <a name="prerequisites"></a>Voraussetzungen
 
@@ -372,10 +380,11 @@ Wenn Sie Ihre vertrauliche Datendatei im Klartext nicht verfügbar machen möcht
     - Ihre vertrauliche Elementdatei im CSV-Format (in unseren Beispielen **"PatientRecords.csv"**)
     -  sowie die Output-Hash- und-Saltdateien
     - Den Namen des Datenspeichers aus der Datei **EDM.xml** (in diesem Beispiel `PatientRecords`)
+- Wenn Sie den Assistenten für den [Exact Data Match Schema and vertraulicher Informationstyp](sit-edm-wizard.md) verwendet haben, **_müssen Sie_* ihn _ herunterladen
 
 #### <a name="set-up-the-security-group-and-user-account"></a>Einrichten der Sicherheitsgruppe und des Benutzerkontos
 
-1. Als globaler Administrator gehen Sie über den entsprechenden [Link für Ihr Abonnement](#portal-links-for-your-subscription) zum Verwaltungszentrum und [erstellen Sie eine Sicherheitsgruppe](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) namens **EDM\_DataUploaders**.
+1. Als globaler Administrator gehen Sie zum Verwaltungszentrum über den entsprechenden [Link für Ihr Abonnement](#portal-links-for-your-subscription) und [erstellen Sie eine Sicherheitsgruppe](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) namens _*EDM\_DataUploaders**.
 
 2. Fügen Sie einen oder mehrere Benutzer zu der **EDM\_DataUploaders**-Sicherheitsgruppe hinzu. (Diese Benutzer verwalten die Datenbank mit vertraulichen Informationen.)
 
@@ -420,6 +429,10 @@ Dieser Computer muss direkten Zugriff auf Ihren Microsoft 365-Mandanten haben.
 
 3. Melden Sie sich mit Ihrem Microsoft 365-Geschäfts-, Schul- oder Unikonto an, das der Sicherheitsgruppe „EDM_DataUploaders“hinzugefügt wurde. Ihre Mandanteninformationen werden aus dem Benutzerkonto extrahiert, um die Verbindung herzustellen.
 
+OPTIONAL: Wenn Sie den Assistenten für Exact Data Match Schema und vertraulicher Informationstyp verwendet haben, um Ihre Schema- und Musterdateien zu erstellen, führen Sie den folgenden Befehl in einem Eingabeaufforderungsfenster aus:
+
+`EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>`
+
 4. Um den Hashvorgang durchzuführen die vertraulichen Daten hochzuladen, führen Sie den folgenden Befehl in der Eingabeaufforderung aus:
 
 `EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file]`
@@ -439,6 +452,10 @@ Suchen Sie nach dem Status in **ProcessingInProgress**. Überprüfen Sie den Sta
 #### <a name="separate-hash-and-upload"></a>Trennen von Hash und Upload
 
 Führen Sie den Hashvorgang auf einem Computer in einer sicheren Umgebung aus.
+
+OPTIONAL: Wenn Sie den Assistenten für Exact Data Match Schema und vertraulicher Informationstyp verwendet haben, um Ihre Schema- und Musterdateien zu erstellen, führen Sie den folgenden Befehl in einem Eingabeaufforderungsfenster aus:
+
+`EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>`
 
 1. Führen Sie in den Eingabeaufforderungsfenstern den folgenden Befehl aus:
 
