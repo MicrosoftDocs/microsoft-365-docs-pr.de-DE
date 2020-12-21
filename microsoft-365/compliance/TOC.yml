@@ -172,6 +172,8 @@
           href: office-365-service-encryption.md
         - name: Kundenschlüssel
           items:
+            - name: Kundenschlüssel für Microsoft 365 auf der Mandantenebene (öffentliche Vorschau)
+              href: customer-key-tenant-level.md
             - name: Dienstverschlüsselung mit Kundenschlüssel in Office 365
               href: customer-key-overview.md
             - name: Einrichten des Kundenschlüssels für Office 365
