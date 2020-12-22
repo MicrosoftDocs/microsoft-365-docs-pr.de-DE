@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: 'Erfahren Sie, wie Sie einem Benutzer die Berechtigung erteilen, auf das Postfach eines anderen Benutzers zuzugreifen. Damit erhält der Benutzer das Recht, E-Mails zu lesen und E-Mails aus dem Postfach des anderen Benutzers zu senden. '
-ms.openlocfilehash: 0b6977efbd6041a11c67ed66c9b7ecc72a38bde4
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: af12cfe3acad9e12ca3983c9fa13f52b72f0a467
+ms.sourcegitcommit: 16e018f8b6eef5dad48eabf179691ead3cebe533
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560375"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "49725153"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>Erteilen von Postfachberechtigungen für einen anderen Benutzer – Administratorhilfe
 
@@ -121,6 +121,10 @@ Es gibt einige Möglichkeiten, wie Sie auf ein Postfach zugreifen können, nachd
 5. Wählen Sie **Berechtigungen hinzufügen** und dann den Namen des Benutzers oder der Benutzer aus, dem bzw. denen Sie das Senden von E-Mails über das betreffende Postfach ermöglichen möchten.
 
 6. Klicken Sie auf **Speichern**.
+
+
+> [!NOTE]
+> Die Berechtigungen **Lesen** und **Verwalten** werden als Berechtigung **Vollzugriff** bezeichnet, wenn sie im Exchange Admin Center erteilt werden. Die Berechtigung "Vollzugriff" gewährt nicht die Berechtigung **Senden als** oder **Senden im Auftrag**.
 
 ::: moniker-end
 

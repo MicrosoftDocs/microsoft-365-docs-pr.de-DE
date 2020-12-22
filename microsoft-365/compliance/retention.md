@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen, um zu behalten, was Sie benötigen, und zu löschen, was Sie nicht benötigen.
-ms.openlocfilehash: c405f2bf8d9700c9a0874ba9d921a290ae63de16
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.openlocfilehash: 9745a93139f591185e7457f5ba5c0b9b2fd56348
+ms.sourcegitcommit: 16e018f8b6eef5dad48eabf179691ead3cebe533
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719345"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "49725176"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
@@ -282,7 +282,7 @@ Ganz allgemein gilt, dass die Aufbewahrung immer Vorrang vor der Löschung hat, 
 
 Wann ein Element gelöscht wird, hängt von ein paar weiteren Faktoren ab. Die Löschaktion aufgrund einer Aufbewahrungsbezeichnung hat beispielsweise immer Vorrang vor einer aufgrund einer Aufbewahrungsrichtlinie.
 
-Der folgende Ablauf kann Ihnen dabei helfen, die Aufbewahrungs- und Löschergebnisse zu verstehen, die ein einzelnes Element betreffen, wobei jede Ebene von oben nach unten als Enscheidungskriterium fungiert.
+Verwenden Sie den folgenden Ablauf, um die Aufbewahrungs- und Löschergebnisse für ein einzelnes Element zu verstehen. Dabei fungiert jede Ebene als Unterbrechung für Konflikte, von oben nach unten. Wenn das Ergebnis durch die erste Ebene bestimmt wird, weil es keine weiteren Konflikte gibt, ist es nicht nötig, zur nächsten Ebene vorzurücken, und so weiter.
 
 > [!IMPORTANT]
 > Falls Sie Aufbewahrungsbezeichnungen verwenden: Bevor Sie diesen Ablauf verwenden, um das Ergebnis mehrerer Aufbewahrungseinstellungen für dasselbe Element zu ermitteln, sollten sie darüber Bescheid wissen, [welche Aufbewahrungsbezeichnung angewendet wird](#only-one-retention-label-at-a-time).
@@ -341,7 +341,7 @@ Komplexere Beispiele mit einer Kombination aus Aufbewahrung und Löschung:
     
     **Ergebnis**: Das Element wird sieben Jahre lang aufbewahrt, da die Aufbewahrung Vorrang vor der Löschung hat, und sieben Jahre der längste Aufbewahrungszeitraum sind. Am Ende dieses Aufbewahrungszeitraums wird das Element gelöscht, da die von den Aufbewahrungsrichtlinien vorgesehene Löschung während der Aufbewahrung des Elements verzögert wurde.
     
-    Obwohl die beiden Aufbewahrungsrichtlinien unterschiedliche Termine für die Löschung vorgeben, kann das Element frühestens am Ende des längsten Aufbewahrungszeitraums gelöscht werden, daher gilt es keinen Konflikt zu lösen.
+    Obwohl die beiden Aufbewahrungsrichtlinien unterschiedliche Termine für die Löschaktionen haben, kann das Element frühestens am Ende des längsten Aufbewahrungszeitraums gelöscht werden, der über beide Löschtermine hinausgeht. In diesem Beispiel gibt es für die Löschdaten keinen Konflikt zu klären, so dass alle Konflikte von der zweiten Ebene gelöst werden.
 
 2.  Für ein Element gelten die folgenden Aufbewahrungseinstellungen:
     
@@ -349,7 +349,7 @@ Komplexere Beispiele mit einer Kombination aus Aufbewahrung und Löschung:
     - Eine bereichsbezogene Aufbewahrungsrichtlinie, die eine fünfjährige Aufbewahrung und die anschließende Löschung vorsieht
     - Eine Aufbewahrungsbezeichnung, die eine dreijährige Aufbewahrung und die anschließende Löschung vorsieht
     
-    **Ergebnis**: Das Element wird fünf Jahre lang aufbewahrt, da es sich hierbei um den längsten Aufbewahrungszeitraum handelt. Am Ende dieses Aufbewahrungszeitraums wird das Element gelöscht, da die von der Aufbewahrungsbezeichnung vorgesehene Löschung nach drei Jahren während der Aufbewahrung des Elements verzögert wurde. Das Löschen durch Aufbewahrungsbezeichnungen hat Vorrang vor dem Löschen durch Aufbewahrungsrichtlinien.
+    **Ergebnis**: Das Element wird fünf Jahre lang aufbewahrt, weil das die längste Aufbewahrungsfrist ist. Am Ende dieses Aufbewahrungszeitraums wird das Element gelöscht, da die von der Aufbewahrungsbezeichnung vorgesehene Löschung nach drei Jahren während der Aufbewahrung des Elements verzögert wurde. Das Löschen aus Aufbewahrungsbezeichnungen hat Vorrang vor dem Löschen aus allen Aufbewahrungsrichtlinien. In diesem Beispiel werden alle Konflikte durch die dritte Ebene geklärt.
 
 ## <a name="use-preservation-lock-to-restrict-changes-to-policies"></a>Verwenden der Erhaltungssperre zum Einschränken von Änderungen an Richtlinien
 

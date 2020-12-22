@@ -20,7 +20,7 @@ ms.custom:
 description: 'Zusammenfassung: Vorbereitung der Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) nach Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen.'
 ms.openlocfilehash: 107447226b9b75f371e23f8dd06ec29860571c63
 ms.sourcegitcommit: 86f75cf77a7a446a79226ca530bd7b5eb39189cb
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/18/2020
 ms.locfileid: "49717031"
@@ -115,7 +115,7 @@ Wenn Sie einen Drittanbieterdienst oder branchenspezifische Apps verwenden, die 
 
 | Schritte: | Beschreibung | Betrifft | Auswirkung |
 |:-------|:-----|:-------|:-------|
-| Hinzufügen eines Bezeichners für einmaliges Anmelden (Single Sign-on, SSO) zu einer vorhandenen Vertrauensstellung der vertrauenden Seite und Deaktivieren der automatischen Aktualisierung von AD FS-Metadaten. | Eine ID muss der Vertrauensstellung der AD FS-vertrauenden Seite hinzugefügt werden, bevor Sie mit der Migration beginnen. Um eine versehentliche Entfernung der Bezeichner der vertrauenden Seite zu vermeiden, deaktivieren Sie die automatische Aktualisierung für Metadaten-Updates. <br><br> Führen Sie diesen Befehl auf dem AD FS-Server aus: <br> `Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:microsoftonline.de -Identifier @('urn:federation:microsoftonline.de','https://login.microsoftonline.de/extSTS.srf','https://login.microsoftonline.de') -AutoUpdate $False` | Organisationen mit Verbundauthentifizierung | Erforderliche Aktion. Wenn keine Aktion ausgeführt wird, hat dies Auswirkungen auf den Dienst während der Migration.  |
+| Kennung für Single Sign-On (SSO) zu einer vorhandenen Vertrauensstellung hinzufügen und automatische AD FS-Metadatenaktualisierungen deaktivieren. | Bevor Sie mit der Migration beginnen, muss eine ID zur AD FS-Vertrauensstellung hinzugefügt werden. Um ein versehentliches Entfernen der Kennung der vertrauenden Partei zu vermeiden, deaktivieren Sie die automatische Aktualisierung für Metadaten-Updates. <br><br> Führen Sie diesen Befehl auf dem AD FS-Server aus: <br> `Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:microsoftonline.de -Identifier @('urn:federation:microsoftonline.de','https://login.microsoftonline.de/extSTS.srf','https://login.microsoftonline.de') -AutoUpdate $False` | Organisationen mit Verbundauthentifizierung | Erforderliche Aktion. Wenn keine Aktion ausgeführt wird, hat dies Auswirkungen auf den Dienst während der Migration.  |
 | Generieren einer Vertrauensstellung der vertrauenden Seite für globale Azure AD-Endpunkte. | Kunden müssen manuell eine Vertrauensstellung der vertrauenden Seite (RPT) für [globale](https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml) Endpunkte erstellen. Dazu wird eine neue RPT über die GUI hinzugefügt, indem die globale Verbundmetadaten-URL verwendet und dann [Azure AD RPT-Anspruchsregeln](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator#:~:text=%20Azure%20AD%20RPT%20Claim%20Rules%20%201,Azure%20AD.%20This%20will%20be%20what...%20More%20) (in der Hilfe zu AD FS) verwendet werden, um die Anspruchsregeln zu generieren und sie in die RPT zu importieren. | Organisationen mit Verbundauthentifizierung | Erforderliche Aktion. Wenn keine Aktion ausgeführt wird, hat dies Auswirkungen auf den Dienst während der Migration. |
 |||||
 
@@ -123,16 +123,16 @@ Wenn Sie einen Drittanbieterdienst oder branchenspezifische Apps verwenden, die 
 
 Erste Schritte:
 
-- [Migration von Microsoft Cloud Deutschland zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen](ms-cloud-germany-transition.md)
+- [Migration von Microsoft Cloud Deutschland zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen](ms-cloud-germany-transition.md)
 - [Hilfe zur Microsoft Cloud Deutschland-Migration Assistance](https://aka.ms/germanymigrateassist)
 - [So können Sie sich für die Migration anmelden](ms-cloud-germany-migration-opt-in.md)
 - [Kundenerfahrung während der Migration](ms-cloud-germany-transition-experience.md)
 
 Der Weg durch die Umstellung:
 
-- [Phasen, Aktionen und Auswirkungen der Migration](ms-cloud-germany-transition-phases.md)
+- [Aktionen und Auswirkungen der Migrationsphasen](ms-cloud-germany-transition-phases.md)
 - [Zusätzliche Vorarbeit](ms-cloud-germany-transition-add-pre-work.md)
-- Zusätzliche Informationen zu [Azure AD](ms-cloud-germany-transition-azure-ad.md), [Geräte](ms-cloud-germany-transition-add-devices.md), [Erfahrungen](ms-cloud-germany-transition-add-experience.md) und [AD FS](ms-cloud-germany-transition-add-adfs.md).
+- Zusätzliche Informationen für [Azure AD](ms-cloud-germany-transition-azure-ad.md), [Geräte](ms-cloud-germany-transition-add-devices.md), [Erfahrungen](ms-cloud-germany-transition-add-experience.md) und [AD FS](ms-cloud-germany-transition-add-adfs.md).
 
 Cloud-Apps:
 
