@@ -20,12 +20,12 @@ ms.topic: conceptual
 ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: d219895767919c2a0658f8b83150fe6edde01b5b
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: fb588320461ab44d1ce0f10c0776bcc9ee61b551
+ms.sourcegitcommit: 0ecac0387be6b49025b79ce8eb949a8cf62481e2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615552"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "49724402"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Neuerungen in Microsoft Defender für Office 365
 
@@ -51,11 +51,11 @@ In diesem Artikel werden die neuen Features in der neuesten Version von Microsof
 - [Manuelles Überschreiben von Filter Urteilen mithilfe der Liste "Mandanten zulassen/blockieren"](tenant-allow-block-list.md)
 - [Erweiterte Funktionen im Threat Explorer, einschließlich der am häufigsten gezielten Benutzer, Transportregeln und Connectors](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Verteidiger für Office 365 Informationen im [Threat Explorer](threat-explorer.md) (e-Mail wurde zugelassen/blockiert durch Mandanten-/Benutzerrichtlinie) (Verteidiger für Office 365plan 2)
 - Aufdeckung von URL-Bedrohungen im [Threat-Explorer](threat-explorer.md#threats-in-urls) (Schadsoftware, Phishing, Spam oder keine) (Verteidiger für Office 365 Plan 2)
-- [Verbesserungen an der Jagd Erfahrung Threat Explorer](threat-explorer.md#improvements-to-threat-hunting-experience-upcoming) mit Updates rund um Bedrohungen, zusätzliche Aktionen, Zustellungsorte und aktualisierte Zeitachsenansicht (Defender for Office 365 Plan 2)
+- [Verbesserungen an der Jagd Erfahrung Threat Explorer](threat-explorer.md#improvements-to-the-threat-hunting-experience-upcoming) mit Updates rund um Bedrohungen, zusätzliche Aktionen, Zustellungsorte und aktualisierte Zeitachsenansicht (Defender for Office 365 Plan 2)
 
 ## <a name="julyaugust-2020"></a>Juli/August 2020
 
-- [Verbesserungen beim Jagderlebnis](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections) (Microsoft Defender für Office 365 Plan 1 oder Plan 2)
+- [Verbesserungen beim Jagderlebnis](threat-explorer.md#improvements-to-threat-explorer-and-real-time-detections) (Microsoft Defender für Office 365 Plan 1 oder Plan 2)
 - [Einfaches anwenden empfohlener Einstellungen mithilfe vordefinierter Sicherheitsrichtlinien](preset-security-policies.md)
 
 ## <a name="marchapril-2020"></a>März/April 2020
@@ -103,7 +103,7 @@ In diesem Artikel werden die neuen Features in der neuesten Version von Microsof
 
 ## <a name="june-2019"></a>Juni 2019
 
-- [Anzeigen von Daten zu Phishing-URLs und klicken auf Urteil](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict) (Microsoft Defender für Office 365 Plan 1 oder Plan 2)
+- [Anzeigen von Phishing-URLs und klicken auf Urteils Daten](threat-explorer.md#view-phishing-url-and-click-verdict-data) (Microsoft Defender für Office 365 Plan 1 oder Plan 2)
 
 ## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender für Office 365 Plan 1 und Plan 2
 
