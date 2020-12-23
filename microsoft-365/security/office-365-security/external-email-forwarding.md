@@ -14,18 +14,18 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: 76cd560c3b97bb67d25d2e4ff2c219669c3d4f0d
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: f75504941e8481d35458ad2ae6b5e8a72c5e8c8c
+ms.sourcegitcommit: a49338bde6923b13132c7b9e4c6bb75c14163c72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658881"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "49728188"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Steuern der automatischen externen e-Mail-Weiterleitung in Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-Als Administrator haben Sie möglicherweise Unternehmens Anforderungen zum einschränken oder Steuern der automatischen Weiterleitung von Nachrichten an externe Empfänger (Empfänger außerhalb Ihrer Organisation). Die e-Mail-Weiterleitung kann nützlich sein, kann aber auch ein Sicherheitsrisiko darstellen, da Informationen möglicherweise offen gelegt werden. Angreifer können diese Informationen verwenden, um Ihre Organisation oder Ihre Partner anzugreifen.
+Als Administrator haben Sie möglicherweise Unternehmens Anforderungen zum einschränken oder Steuern der automatischen Weiterleitung von Nachrichten an externe Empfänger (Empfänger außerhalb Ihrer Organisation). Die e-Mail-Weiterleitung kann ein nützliches Feature sein, kann aber auch ein Sicherheitsrisiko darstellen, da Informationen möglicherweise offen gelegt werden. Angreifer können diese Informationen verwenden, um Ihre Organisation oder Ihre Partner anzugreifen.
 
 Die folgenden Arten der automatischen Weiterleitung stehen in Microsoft 365 zur Verfügung:
 
@@ -51,13 +51,13 @@ Anweisungen zum Konfigurieren dieser Einstellungen finden Sie unter [Configure o
 
 ## <a name="how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls"></a>Funktionsweise der Einstellungen für ausgehende Spamfilter Richtlinien für andere automatische e-Mail-Weiterleitungs Steuerelemente
 
-Als Administrator haben Sie möglicherweise bereits andere Steuerelemente konfiguriert, um die automatische e-Mail-Weiterleitung zuzulassen oder zu blockieren. Zum Beispiel:
+Als Administrator haben Sie möglicherweise bereits andere Steuerelemente konfiguriert, um die automatische e-Mail-Weiterleitung zuzulassen oder zu blockieren. Beispiel:
 
 - [Remote Domänen](https://docs.microsoft.com/exchange/mail-flow-best-practices/remote-domains/remote-domains) zum Zulassen oder Blockieren der automatischen e-Mail-Weiterleitung an einige oder alle externen Domänen.
 
 - Bedingungen und Aktionen in Exchange [-Nachrichtenfluss Regeln](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (auch bekannt als Transportregeln) zum erkennen und Blockieren von automatisch weitergeleiteten Nachrichten an externe Empfänger.
 
-Remote Domäneneinstellungen und Nachrichtenfluss Regeln sind unabhängig von den Einstellungen in den Richtlinien für ausgehende Spamfilter. Zum Beispiel:
+Remote Domäneneinstellungen und Nachrichtenfluss Regeln sind unabhängig von den Einstellungen in den Richtlinien für ausgehende Spamfilter. Beispiel:
 
 - Sie können die automatische Weiterleitung für eine Remotedomäne zulassen, aber Sie blockieren die automatische Weiterleitung in ausgehenden Spamfilter Richtlinien. In diesem Beispiel werden automatisch weitergeleitete Nachrichten blockiert.
 
