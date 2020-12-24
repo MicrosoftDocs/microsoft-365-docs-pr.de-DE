@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erstellen Sie Aufbewahrungsbezeichnungen und Richtlinien für das automatische Anwenden von Bezeichnungen, damit Sie Bezeichnungen automatisch auf Inhalte anwenden können, die Sie beibehalten möchten, und nicht benötigte Inhalte löschen können.
-ms.openlocfilehash: 766106e9c650047e37c9fa341bd2e78b390d814d
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: b4e1afbc520b7ec046b4af399e7c1c0cd094e8f9
+ms.sourcegitcommit: 5756896ad87e28fac20f7981eaaeacfb0c098254
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519453"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "49730156"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aufbewahrungsbezeichnungen automatisch anwenden, um Inhalte beizubehalten oder zu löschen
 
@@ -55,8 +55,9 @@ Befolgen Sie für die beiden Administratorschritte die nachfolgenden Anweisungen
 > [!NOTE]
 > Automatische Richtlinien verwenden dienstseitige Bezeichnungen mit Bedingungen, um Aufbewahrungsbezeichnungen automatisch anzuwenden. Sie können eine Aufbewahrungsbezeichnung auch automatisch mit einer Bezeichnungsrichtlinie anwenden. Gehen Sie dazu folgendermaßen vor: 
 >
-> - Anwenden einer Standard-Aufbewahrungsbezeichnung für SharePoint und Outlook, sodass nicht bezeichnete Inhalte automatisch bezeichnet werden
->- Automatisches Anwenden einer Aufbewahrungsbezeichnung auf E-Mails mithilfe von Regeln
+> - Anwenden einer Aufbewahrungsbezeichnung auf ein Dokumentverständnismodell in SharePoint Syntex
+> - Anwenden einer Standard-Aufbewahrungsbezeichnung für SharePoint und Outlook
+>- Anwenden einer Aufbewahrungsbezeichnung auf E-Mails mithilfe von Outlook-Regeln
 >
 > Informationen zu diesen Szenarien finden Sie unter [Erstellen und Anwenden von Aufbewahrungsbezeichnungen in Apps](create-apply-retention-labels.md).
 
