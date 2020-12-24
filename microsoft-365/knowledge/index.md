@@ -12,17 +12,24 @@ ms.collection: enabler-strategic
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
 description: Hier erfahren Sie, wie Sie Ressourcen für Themen Erfahrungen finden.
-ms.openlocfilehash: bc38e0a7310dd9c1d3787dbe6cabe646009d2bff
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: 9141f6b445932234ebfa5a3d77833f64110ceeb4
+ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698959"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "49731343"
 ---
 # <a name="introduction-to-topic-experiences-preview"></a>Einführung in Themen Erfahrungen (Vorschau)
 
 > [!Note] 
 > Der Inhalt dieses Artikels ist für Project Cortex private Preview. [Erfahren Sie mehr über Project Cortex](https://aka.ms/projectcortex).
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LhZP]  
+
+</br>
+
 
 "Topic Experiences" ist ein Office 365 Dienst, der Organisationen hilft, Informationen in Wissen umzuwandeln.
 
@@ -54,17 +61,17 @@ Die Ressourcen in diesem Abschnitt helfen dem Administrator in Ihrer Organisatio
 | Diese Informationen finden Sie unter: | Hilfreiche Ressource: |
 |:-----|:-----|
 |Informationen zum Einrichten und Konfigurieren von Themen Erfahrungen|[Einrichten von Themen Erfahrungen](set-up-topic-experiences.md)|
-|Informationen zum Konfigurieren von Benutzerberechtigungen|[Verwalten von Themen Berechtigungen](topic-experiences-user-permissions.md)|
-|Informationen zum Verwalten von Personen, die Themen anzeigen können|[Verwalten der Themen Sichtbarkeit](topic-experiences-knowledge-rules.md)|
-|Informationen zum Verwalten der Themen Ermittlungs Einstellungen|[Verwalten der Themen Ermittlung](topic-experiences-discovery.md)|
+|Informationen zum Konfigurieren von Benutzerberechtigungen|[Topic Zugriffsberechtigungen verwalten](topic-experiences-user-permissions.md)|
+|Informationen zum Verwalten von Personen, die Themen anzeigen können|[Topic Sichtbarkeit verwalten](topic-experiences-knowledge-rules.md)|
+|Informationen zum Verwalten der Themen Ermittlungs Einstellungen|[Topic Entdecken verwalten](topic-experiences-discovery.md)|
 
-## <a name="work-with-topics"></a>Arbeiten mit Themen
+## <a name="work-with-topics"></a>Mit Topics arbeiten
 
 Mithilfe der Ressourcen in diesem Abschnitt erfahren Sie, wie Sie Themen verwenden und verwalten können.
 
 | Diese Informationen finden Sie unter: | Hilfreiche Ressource: |
 |:-----|:-----|
-|Informationen zum Arbeiten mit Themen|[Themen Center (Übersicht)](topic-center-overview.md)<br><br>[Verwalten von Themen](manage-topics.md)<br><br>[Erstellen eines neuen Themas](create-a-topic.md)<br><br>[Bearbeiten eines vorhandenen Themas](edit-a-topic.md)<br><br>|
+|Informationen zum Arbeiten mit Themen|[Topic Center Übersicht](topic-center-overview.md)<br><br>[Verwalten von Themen](manage-topics.md)<br><br>[Ein neues Thema erstellen](create-a-topic.md)<br><br>[Bearbeiten eines vorhandenen Themas](edit-a-topic.md)<br><br>|
 |Grundlegendes zu Benutzerrollen|[Rollen für Themenerfahrung](topic-experiences-roles.md)|
 |Grundlegendes zu den unterschiedlichen Themen verschiedener Benutzer|[Thema Experiences Security Trimming](topic-experiences-security-trimming.md)|
 |Hier erfahren Sie, wie Sie verhindern können, dass bestimmte Themen identifiziert und angezeigt werden.|[Einschränken des Zugriffs auf Themen](restrict-access-to-topics.md)|

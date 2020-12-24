@@ -12,12 +12,12 @@ ms.collection: enabler-strategic
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Übersicht über die Themen Erfahrungen.
-ms.openlocfilehash: 9321f349056c1c4df36b6bd725214f3c6758cf6a
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: 8b06dd016295c8b0712a7c18c2296a318cd826ba
+ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698926"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "49731322"
 ---
 # <a name="topic-experiences-overview-preview"></a>Übersicht über Themen Erlebnisse (Vorschau)
 
@@ -26,7 +26,11 @@ ms.locfileid: "49698926"
 
 In den Themenbereichen werden Microsoft AI-Technologie, Microsoft 365, forschen, Microsoft Graph, Suche und andere Komponenten und Dienste zum Erstellen eines Wissensnetzwerks in Ihrer Microsoft 365-Umgebung verwendet. 
 
-   ![Wissens Verwaltungs Fluss](../media/knowledge-management/knowledge-management-flowchart.png) </br> 
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LhZP]  
+
+</br>
 
 Das Ziel besteht darin, Informationen in Wissen umzuwandeln und an Ihre Benutzer in apps, die Sie täglich verwenden, wie SharePoint-moderne Seiten und Microsoft-Suche, zuzustellen.
 

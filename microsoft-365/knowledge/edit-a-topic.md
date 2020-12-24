@@ -11,17 +11,23 @@ ms.collection: enabler-strategic
 ms.service: ''
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9bce380e9e1380f2b2560762d2df37352251bf2b
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: 809d3936ed27275873f63526e7dfc8f91a15a0cc
+ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698892"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "49731355"
 ---
 # <a name="edit-an-existing-topic-preview"></a>Bearbeiten eines vorhandenen Themas (Vorschau)
 
 > [!Note] 
 > Der Inhalt dieses Artikels ist für Project Cortex private Preview. [Erfahren Sie mehr über Project Cortex](https://aka.ms/projectcortex).
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LA4n]  
+
+</br>
 
 In Themen Erfahrungen können Sie ein vorhandenes Thema bearbeiten. Dies ist möglicherweise erforderlich, wenn Sie eine vorhandene Themen Seite korrigieren oder zusätzliche Informationen hinzufügen möchten. 
 
