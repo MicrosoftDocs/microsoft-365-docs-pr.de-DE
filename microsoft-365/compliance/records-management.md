@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Mit der Datensatzverwaltung in Microsoft 365 können Sie Ihre Aufbewahrungszeitpläne auf einen Dateiplan anwenden, der die Aufbewahrung, die Datensatzdeklaration und die Löschung verwaltet.
-ms.openlocfilehash: 6648a3a671e40dd5218eba1a1e8bafe42120f0de
-ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
+ms.openlocfilehash: 883fd65e3fba716018a1ed35cc457c2eb8f06c52
+ms.sourcegitcommit: 5756896ad87e28fac20f7981eaaeacfb0c098254
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "48830526"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "49730166"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Weitere Informationen zur Datensatzverwaltung in Microsoft 365
 
@@ -109,7 +109,7 @@ Nachricht, die ein Benutzer sieht, wenn er versucht, ein beschriftetes Dokument 
 > 
 > Vergewissern Sie sich aufgrund dieser irreversiblen Aktionen, dass Sie wirklich regulatorische Datensätze verwenden müssen, bevor Sie diese Option für Ihre Aufbewahrungsbezeichnungen wählen. Um eine versehentliche Konfiguration zu verhindern, ist diese Option nicht standardmäßig verfügbar, sondern muss zunächst mithilfe von PowerShell aktiviert werden. Anweisungen sind in [Deklarieren von Datensätzen unter Verwendung von Aufbewahrungsbezeichnungen](declare-records.md) enthalten.
 
-## <a name="next-steps"></a>Nächste Schritte
+## <a name="configuration-guidance"></a>Konfigurationsleitfaden
 
 Siehe [Erste Schritte mit der Datensatzverwaltung](get-started-with-records-management.md).
 
