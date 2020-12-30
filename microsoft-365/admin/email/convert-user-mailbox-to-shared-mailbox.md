@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'Hier erfahren Sie, wie Sie ein privates Postfach in ein freigegebenes Postfach konvertieren, auf das mehrere Benutzer zugreifen können. '
-ms.openlocfilehash: fa8e37b5e924f1b38755a953f40d8b70011213d0
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: f716bbd16be9f67189b19358ddf16a289f57f8e7
+ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698279"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49737965"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Konvertieren eines Benutzerpostfachs in ein freigegebenes Postfach
 
@@ -93,24 +93,15 @@ Angenommen, Sie haben ein Benutzerkonto gelöscht und möchten nun das alte Post
 
 ## <a name="convert-a-users-mailbox-in-a-hybrid-environment"></a>Konvertieren des Postfachs eines Benutzers in einer Hybridumgebung
 
-> [!NOTE] 
-> Ab dem 11. Oktober 2018 unterstützt die Exchange-hybridbereitstellung die Erstellung von freigegebenen Remotepostfächern ab dem kumulativen Update 21 für Exchange Server 2013 und das kumulative Update 10 für Exchange Server 2016 in einer lokalen Exchange Server Umgebung. Sie können ein freigegebenes Remotepostfach direkt mithilfe des Parameters New _-Shared_ erstellen oder ändern. Weitere Informationen finden Sie unter [Cmdlets zum Erstellen oder Ändern eines freigegebenen remotepostfachs in einer lokalen Exchange-Umgebung](https://support.microsoft.com/help/4133605/cmdlets-to-create-modify-remote-shared-mailbox-in-on-premises-exchange).
+Weitere Informationen zum Konvertieren eines Benutzerpostfachs in ein freigegebenes Postfach in einer Exchange-Hybrid Umgebung finden Sie unter:
 
-Wenn sich dieses freigegebene Postfach in einer Hybridumgebung befindet und nicht unter das obige Szenario fällt, **empfehlen wir dringend** (fast erforderlich!), das Benutzerpostfach wieder in das lokale lokal zu migrieren, das Benutzerpostfach in ein freigegebenes Postfach zu konvertieren und das freigegebene Postfach dann wieder in die Cloud zu migrieren. 
-
-Hier ist der Grund: Wenn Sie das Postfach in der Cloud konvertieren, kann es konvertiert werden, doch lokal ist das Postfach das Benutzerpostfach, da die neue Realität nicht wieder lokal synchronisiert wird.
-
-Normalerweise handelt es sich nicht um ein Problem, aber es gibt einige Szenarien, in denen die lokalen Attribute (die denken, dass das Postfach das Benutzerpostfach ist) die neuen Cloud-Versionen dieser Attribute überschreiben können und daher das Postfach möglicherweise wieder zurückkonvertiert wird. Dies ist ein Problem, da Benutzerpostfächer Lizenzen erfordern **oder nach 30 Tagen weich gelöscht werden**!
-
-Wir haben die meisten der Gründe behandelt, warum dies geschieht, aber es kann immer noch passieren, obwohl selten. Am besten ist es, sicher zu sein und das Postfach zurück in die lokale Umgebung zu versetzen, es zu konvertieren und dann das freigegebene Postfach wieder in die Cloud zu migrieren. Diese empfohlene Lösung verstößt nicht gegen den Lizenzvertrag für Hybrid Umgebungen, da das vorhanden sein des Benutzerpostfachs lokal nur temporär ist. Sie verletzen Ihre Lizenz, wenn Sie das Benutzerpostfach oder das freigegebene Postfach in Ihrer lokalen Organisation verwaltet haben und es nicht wieder in die Cloud zurückversetzen.
-
+ - [Cmdlets zum Erstellen oder Ändern eines freigegebenen remotepostfachs in einer lokalen Exchange-Umgebung](https://support.microsoft.com/office/cmdlets-to-create-or-modify-a-remote-shared-mailbox-in-an-on-premises-exchange-environment-9e83fb59-c001-729c-a4c0-b2964c154b49)
+ - [Freigegebene Postfächer werden unerwartet in Benutzerpostfächer konvertiert, nachdem die Verzeichnissynchronisierung in einer Exchange-hybridbereitstellung ausgeführt wurde.](https://docs.microsoft.com/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)
+ 
 
 > [!NOTE]
-> Wenn Sie Mitglied der Rollengruppe "Organisationsverwaltung" oder "Empfängerverwaltung" sind, können Sie die Exchange-Verwaltungsshell verwenden, um ein Benutzerpostfach in ein freigegebenes Postfach lokal zu ändern. Beispiel: `Set-Mailbox -Identity mailbox1@contoso.onmicrosoft.com -Type Shared`.
+> Wenn Sie Mitglied der Rollengruppe "Organisationsverwaltung" oder "Empfängerverwaltung" sind, können Sie die Exchange-Verwaltungsshell verwenden, um ein Benutzerpostfach in ein freigegebenes Postfach lokal zu ändern. Beispiel: `Set-Mailbox -Identity mailbox1@contoso.com -Type Shared`.
 
-> [!TIP]
-> Sehen Sie sich die Problemumgehung in dieser Support Lösung für Instanzen an [, wenn freigegebene Postfächer unerwarteterweise in Benutzerpostfächer konvertiert werden](https://support.microsoft.com/help/2710029/shared-mailboxes-are-unexpectedly-converted-to-user-mailboxes-after-di).
-  
 ## <a name="related-articles"></a>Verwandte Artikel
 
 [Informationen zu freigegebenen Postfächern](about-shared-mailboxes.md)

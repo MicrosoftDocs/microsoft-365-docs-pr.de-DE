@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 8ebfe5746a69cc0161c38f0467954fabb3839240
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: c463e375594b3581486cb8d4bdd380412e195b2e
+ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683343"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49738011"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Bewerten Ihrer Sicherheitsposition mit Microsoft Secure Score
 
@@ -42,13 +42,13 @@ Damit Sie die benötigten Informationen schneller finden können, sind die Micro
 >[!NOTE]
 >In der letzten Version von Microsoft-Sicherheitsbewertung wurde ein verbessertes Bewertungsmodell veröffentlicht, das zu einer vorübergehenden Inkompatibilität der Microsoft-Sicherheitsbewertung mit der Identitätssicherheitsbewertung und der Graph-API geführt hatte. [Details anzeigen](microsoft-secure-score-whats-new.md)
 
-Lesen Sie auf der Seite Microsoft Secure Score Overview, wie Punkte zwischen diesen Gruppen aufgeteilt werden und welche Punkte verfügbar sind. Sie können auch eine Übersicht über die Gesamtpunktzahl, den Verlauf ihrer sicheren Bewertung mit Benchmark-Vergleichen sowie Prioritäten für Verbesserungs Aktionen erhalten, die zur Verbesserung ihrer Punktzahl ergriffen werden können.
+Zeigen Sie auf der Seite Microsoft Secure Score Overview an, wie Punkte zwischen diesen Gruppen aufgeteilt werden und welche Punkte verfügbar sind. Sie können auch eine Übersicht über die Gesamtpunktzahl, den Verlauf ihrer sicheren Bewertung mit Benchmark-Vergleichen sowie Prioritäten für Verbesserungs Aktionen erhalten, die zur Verbesserung ihrer Punktzahl ergriffen werden können.
 
 ![Startseite der Sicherheitsbewertung](../../media/secure-score/secure-score-homepage-new.png)
 
 ## <a name="check-your-current-score"></a>Überprüfen der aktuellen Bewertung
 
-Um Ihre aktuelle Bewertung zu überprüfen, wechseln Sie zur Microsoft Secure Score-Übersichtsseite, und suchen Sie nach der Kachel, die **Ihre sichere Punktzahl** angibt. Ihre Punktzahl wird als Prozentsatz angezeigt, zusammen mit der Anzahl der Punkte, die Sie aus insgesamt möglichen Punkten erzielt haben.
+Um Ihre aktuelle Bewertung zu überprüfen, wechseln Sie zur Microsoft Secure Score-Übersichtsseite, und suchen Sie nach der Kachel, die **Ihre sichere Punktzahl** angibt. Ihre Punktzahl wird als Prozentsatz angezeigt, zusammen mit der Anzahl der Punkte, die Sie aus den Gesamt möglichen Punkten erzielt haben.
 
 Wenn Sie darüber hinaus die Schaltfläche **einschließen** neben dem Ergebnis auswählen, können Sie unterschiedliche Ansichten der Partitur auswählen. Diese unterschiedlichen Bewertungs Ansichten werden im Diagramm auf der Ergebnis Kachel und im Punkt Aufgliederungs Diagramm angezeigt.
 
@@ -74,14 +74,15 @@ Die Rangfolge basiert auf der Anzahl der zu erzielenden Punkte, der Implementier
 
 Wenn Sie eine bestimmte Verbesserungsmaßnahme auswählen, wird ein vollständiges Seiten-Flyout angezeigt.  
 
-![Beispiel für Verbesserungsmaßnahmen-Flyout](../../media/secure-score/secure-score-improvement-action-details.png)
-*Abbildung 2: Beispiel für Verbesserungsmaßnahmen-Flyout*
+![Beispiel für ein Verbesserungs Aktion-Flyout](../../media/secure-score/secure-score-improvement-action-details.png)
 
 Zum Ausführen der Maßnahme stehen Ihnen verschiedene Optionen zur Verfügung:
 
-* Wählen Sie **Verwalten** aus, um in den Konfigurationsbildschirm zu wechseln und die Änderung vorzunehmen. Sie erhalten dann die Punkte, die die Aktion Wert ist, sichtbar in der ausfliegen. Die Aktualisierung der Punkte dauert im Allgemeinen ungefähr 24 Stunden.
+- Wählen Sie **Verwalten** aus, um in den Konfigurationsbildschirm zu wechseln und die Änderung vorzunehmen. Sie erhalten dann die Punkte, die die Aktion Wert ist, sichtbar in der ausfliegen. Die Aktualisierung der Punkte dauert im Allgemeinen ungefähr 24 Stunden.
 
-* Wählen Sie **Freigeben** aus, um den direkten Link zur Verbesserungs Aktion zu kopieren. Sie können auch die Plattform für die Freigabe der Verknüpfung auswählen, beispielsweise e-Mail, Microsoft Teams, Microsoft Planner oder ServiceNow. Wenn Sie ServiceNow auswählen, können Sie ein Änderungs Ticket erstellen, das in ServiceNow und im Microsoft 365 Security Center Home angezeigt wird. Weitere Informationen finden Sie unter [Microsoft 365 Security Center und ServiceNow-Integration](tickets-security-center.md).
+- Wählen Sie **Freigeben** aus, um den direkten Link zur Verbesserungs Aktion zu kopieren. Sie können auch die Plattform für die Freigabe der Verknüpfung auswählen, beispielsweise e-Mail, Microsoft Teams, Microsoft Planner oder ServiceNow. Wenn Sie ServiceNow auswählen, können Sie ein Änderungs Ticket erstellen, das in ServiceNow und im Microsoft 365 Security Center Home angezeigt wird. Weitere Informationen finden Sie unter [Microsoft 365 Security Center und ServiceNow-Integration](tickets-security-center.md).
+
+Fügen Sie **Notizen** hinzu, um den Fortschritt zu überwachen, oder irgendetwas anderes, das Sie kommentieren möchten. Wenn Sie Ihre eigenen **Tags** zur Verbesserungs Aktion hinzufügen, können Sie nach diesen Tags filtern.
 
 ### <a name="choose-an-improvement-action-status"></a>Auswählen eines Verbesserungsmaßnahmenstatus
 
@@ -92,9 +93,9 @@ Wählen Sie beliebige Status aus, und zeichnen Sie Notizen auf, die für die Ver
 - **Risikoakzeptanz** – die Sicherheit sollte immer mit der Benutzerfreundlichkeit ausgeglichen werden, und nicht jede Empfehlung funktioniert für Ihre Umgebung. Wenn dies der Fall ist, können Sie sich entschließen, das Risiko bzw. das Restrisiko zu übernehmen und die Verbesserungsmaßnahme nicht zu ergreifen. Ihnen werden keine Punkte gegeben, aber die Aktion wird in der Liste der Verbesserungs Aktionen nicht mehr angezeigt. Sie können diese Aktion jederzeit im Verlauf anzeigen oder rückgängig machen.
 - **Durch Drittanbieter aufgelöst** und **durch alternative Schadensbegrenzende Maßnahmen aufgelöst** – die Verbesserungs Aktion wurde bereits von einer Drittanbieteranwendung oder-Software oder einem internen Tool behandelt. Sie erhalten die Punkte, die die Aktion Wert ist, sodass Ihre Punktzahl besser Ihre gesamte Sicherheitsposition widerspiegelt. Wenn ein Drittanbieter- oder internes Toll diese Maßnahme nicht mehr abdeckt, können Sie einen anderen Status auswählen. Beachten Sie, dass Microsoft keine Sichtbarkeit in die Vollständigkeit der Implementierung hat, wenn die Verbesserungs Aktion als einer dieser Status markiert ist.
 
-#### <a name="threat--vulnerability-management-improvement-actions"></a>Verbesserungsmaßnahmen für Bedrohungs- und Sicherheitsrisikoverwaltung
+#### <a name="threat--vulnerability-management-improvement-actions"></a>Bedrohungs & Verbesserungs Aktionen bei der Sicherheitsrisikoverwaltung
 
-Für Verbesserungs Aktionen in der Kategorie "Gerät" können Sie Status nicht auswählen. Stattdessen werden Sie zur entsprechenden [Threat & Vulnerability Management (TVM)-Sicherheitsempfehlung](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) im [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use) geleitet, um Maßnahmen zu ergreifen. Die von Ihnen ausgewählte Ausnahme und die Begründung, die Sie schreiben, sind für dieses Portal spezifisch. Sie wird im Microsoft Secure Score-Portal nicht vorhanden sein.
+Für Verbesserungs Aktionen in der Kategorie "Gerät" können Sie Status nicht auswählen. Stattdessen werden Sie zur entsprechenden [Sicherheitsempfehlung "Threat and Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) " im [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use) geleitet, um Maßnahmen zu ergreifen. Die von Ihnen ausgewählte Ausnahme und die Begründung, die Sie schreiben, sind für dieses Portal spezifisch. Sie wird im Microsoft Secure Score-Portal nicht vorhanden sein.
 
 #### <a name="completed-improvement-actions"></a>Erledigte Verbesserungsmaßnahmen
 
@@ -104,13 +105,13 @@ Verbesserungsmaßnahmen haben den Status „Erledigt“, sobald alle möglichen 
 
 In dem Abschnitt, der **auf einen Blick** aufgerufen wird, erfahren Sie mehr über die Kategorie, über Angriffe, die Sie schützen kann, und über das Produkt.
 
-Die **Benutzerauswirkungen** zeigen, was bei den Benutzern geschieht, wenn die Verbesserungsmaßnahme vorgenommen wird, und unter **Betroffene Benutzer** wird angezeigt, wer diese Erfahrungen machen wird.
+Die Auswirkungen auf die **Benutzer** treten auf, wenn die Verbesserungs Aktion durchgesetzt wird, und **betroffene Benutzer** sind die Personen, die betroffen sein werden.
 
 ### <a name="implement-the-improvement-action"></a>Implementieren der Verbesserungsmaßnahmen
 
 Im Abschnitt **Implementierung** werden alle Voraussetzungen, schrittweisen nächsten Schritte zum Abschließen der Verbesserungs Aktion, der aktuelle Implementierungsstatus der Verbesserungs Aktion sowie alle weiteren Links zu weiteren Informationen aufgeführt.
 
-Voraussetzungen umfassen alle Lizenzen, die abgerufen werden müssen, oder Aktionen, die ausgeführt werden müssen, bevor die Verbesserungs Aktion behandelt wird. Vergewissern Sie sich, dass Ihre Lizenz genügend Plätze abdeckt, um die Verbesserungsmaßnahme vornehmen zu können, und dass diese Lizenzen auf die erforderlichen Benutzer angewendet werden.  
+Voraussetzungen umfassen alle erforderlichen Lizenzen oder Aktionen, die ausgeführt werden müssen, bevor die Verbesserungs Aktion behandelt wird. Vergewissern Sie sich, dass Ihre Lizenz genügend Plätze abdeckt, um die Verbesserungsmaßnahme vornehmen zu können, und dass diese Lizenzen auf die erforderlichen Benutzer angewendet werden.  
 
 ## <a name="we-want-to-hear-from-you"></a>Wir freuen uns über Ihr Feedback
 

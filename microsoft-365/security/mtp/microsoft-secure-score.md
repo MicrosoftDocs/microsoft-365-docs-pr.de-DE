@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 7fe5be065ee45700a1f08a39c8050757c3843f7b
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 6e9dd214e53e3fdd601fe51e5522a3a24a7fd3d0
+ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682571"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49737999"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft-Sicherheitsbewertung
 
@@ -50,7 +50,7 @@ Organisationen erhalten Zugriff auf zuverlässige Visualisierungen von Metriken 
 Für die folgenden Aktionen werden Punkte angegeben:
 
 - Konfigurieren von empfohlenen Sicherheitsfeatures
-- Durchführen von sicherheitsbezogenen Aufgaben
+- Ausführen von sicherheitsbezogenen Aufgaben
 - Beheben der Verbesserungs Aktion mit einer Anwendung oder Software eines Drittanbieters oder einer alternativen Minderung
 
 Einige Verbesserungs Aktionen geben nur dann Punkte an, wenn Sie vollständig abgeschlossen sind. Einige geben partielle Punkte an, wenn Sie für einige Geräte oder Benutzer abgeschlossen sind. Wenn Sie eine der Verbesserungs Aktionen nicht ausführen können oder möchten, können Sie das Risiko oder das verbleibende Risiko akzeptieren.
@@ -65,7 +65,6 @@ Ihre Bewertung wird in Echtzeit aktualisiert, um die Informationen auf den Seite
 - [Vergleichen Sie Ihre Punktzahl mit Organisationen wie Ihrem](microsoft-secure-score-history-metrics-trends.md#compare-your-score-to-organizations-like-yours)
 - [Anzeigen von Verbesserungs Aktionen und Festlegen eines Aktionsplans](microsoft-secure-score-improvement-actions.md#take-action-to-improve-your-score)
 - [Initiieren von Workflows zur Untersuchung oder Implementierung](microsoft-secure-score-improvement-actions.md#view-improvement-action-details)
-    - [Microsoft 365 Security Center und ServiceNow-Integration](tickets-security-center.md)
 
 ### <a name="how-improvement-actions-are-scored"></a>Wie Verbesserungsmaßnahmen bewertet werden
 
@@ -75,7 +74,15 @@ Beispielsweise besagt eine Verbesserungs Aktion, dass Sie 10 Punkte erhalten, in
 
 ### <a name="products-included-in-secure-score"></a>Produkte in Sicherheitsbewertung
 
-Derzeit gibt es Empfehlungen für Microsoft 365 (einschließlich Exchange Online), Azure Active Directory, Microsoft Defender for Endpoint, Microsoft Defender for Identity und Cloud App Security. Empfehlungen für andere Sicherheitsprodukte werden in Kürze verfügbar sein. Die Empfehlungen decken nicht alle Angriffsflächen ab, die jedem Produkt zugeordnet sind, sind jedoch ein guter Ausgangswert. Sie können die Verbesserungsmaßnahmen auch als „über Drittanbieter abgedeckt“ oder „ durch alternative Korrektur abgedeckt“ markieren.
+Derzeit gibt es Empfehlungen für die folgenden Produkte:
+
+- Microsoft 365 (einschließlich Exchange Online)
+- Azure Active Directory
+- Microsoft Defender für Endpunkt
+- Microsoft Defender for Identity
+- Cloud-App-Sicherheit
+
+Empfehlungen für andere Sicherheitsprodukte werden in Kürze verfügbar sein. Die Empfehlungen decken nicht alle Angriffsflächen ab, die jedem Produkt zugeordnet sind, sind jedoch ein guter Ausgangswert. Sie können die Verbesserungsmaßnahmen auch als „über Drittanbieter abgedeckt“ oder „ durch alternative Korrektur abgedeckt“ markieren.
 
 ### <a name="security-defaults"></a>Sicherheitsstandards
 
@@ -117,7 +124,7 @@ Mit schreibgeschütztem Zugriff können Sie den Status oder die Notizen für ein
 
 ## <a name="risk-awareness"></a>Risikobewusstsein
 
-Microsoft Secure Score ist eine numerische Zusammenfassung Ihrer Sicherheitsposition basierend auf Systemkonfigurationen, Benutzerverhalten und anderen sicherheitsbezogenen Messungen. Es ist keine absolute Maßeinheit dafür, wie wahrscheinlich ein System oder Daten verletzt werden. Sie stellt vielmehr das Ausmaß dar, in dem Sie Sicherheitssteuerelemente in Ihrer Microsoft-Umgebung übernommen haben, um das Risiko von Verstößen auszugleichen. Kein Onlinedienst ist vollständig immun gegen Sicherheitsverletzungen, und Secure Score sollte nicht als Garantie gegen Sicherheitsverletzungen in irgendeiner Weise interpretiert werden.
+Microsoft Secure Score ist eine numerische Zusammenfassung Ihrer Sicherheitsposition basierend auf Systemkonfigurationen, Benutzerverhalten und anderen sicherheitsbezogenen Messungen. Es ist keine absolute Maßeinheit dafür, wie wahrscheinlich ein System oder Daten verletzt werden. Sie stellt vielmehr das Ausmaß dar, in dem Sie Sicherheitssteuerelemente in Ihrer Microsoft-Umgebung übernommen haben, um das Risiko von Verstößen auszugleichen. Kein Onlinedienst ist immun gegen Sicherheitsverletzungen, und Secure Score sollte nicht als Garantie gegen Sicherheitsverletzungen in irgendeiner Weise interpretiert werden.
 
 ## <a name="we-want-to-hear-from-you"></a>Wir freuen uns über Ihr Feedback
 

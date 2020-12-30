@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 253e85da7bb85a0722831851f00051a50a96153e
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 61ac8c627dd701ac354a5d60d4774a6443b4d41e
+ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688411"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49737987"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Neuerungen in Microsoft Secure Score
 
@@ -37,7 +37,7 @@ Microsoft Secure Score finden Sie https://security.microsoft.com/securescore im 
 
 ## <a name="december-2020"></a>Dezember 2020
 
-### <a name="added-6-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>6 Kontenbezogene Verbesserungs Aktionen für Microsoft Defender for Endpoint (zuvor Microsoft Defender ATP) hinzugefügt:
+### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Sechs Kontenbezogene Verbesserungs Aktionen für Microsoft Defender for Endpoint (zuvor Microsoft Defender ATP) hinzugefügt:
 
 - ' Minimale Kennwortlänge ' auf ' 14 oder mehr Zeichen ' festlegen
 - Legen Sie "Kennwortverlauf erzwingen" auf "24 oder mehr Kennwort (en)" fest.
@@ -52,7 +52,7 @@ Microsoft Secure Score finden Sie https://security.microsoft.com/securescore im 
 
 Die Möglichkeit, ServiceNow-Tickets über Secure Score zu erstellen, indem Sie **> ServiceNow freigeben** , ist nicht mehr verfügbar. Vielen Dank für Ihr Feedback und den weiteren Support, während wir die nächsten Schritte bestimmen.
 
-### <a name="added-3-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Drei Dienste-bezogene Verbesserungs Aktionen für Microsoft Defender for Endpoint (zuvor Microsoft Defender ATP) hinzugefügt:
+### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Drei Dienste-bezogene Verbesserungs Aktionen für Microsoft Defender für Endpoint (zuvor Microsoft Defender ATP) hinzugefügt:
 
 - Unzitierten Dienstpfad für Windows-Dienste reparieren
 - Ändern des ausführbaren Pfads des Diensts in einen allgemeinen geschützten Speicherort
