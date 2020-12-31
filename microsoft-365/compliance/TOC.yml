@@ -589,7 +589,7 @@
           items:
             - name: Hinzufügen von Verwaltungsberechtigten zu einem Fall
               href: add-custodians-to-case.md
-            - name: Massenhinzufügung von Verwaltungsberechtigten zu einem Fall
+            - name: Importieren mehrerer Verwaltungsberechtigten in einen Fall
               href: bulk-add-custodians.md
             - name: Verwalten von Verwaltungsberechtigten
               href: manage-new-custodians.md
