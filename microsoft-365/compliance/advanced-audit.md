@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Die erweiterte Überwachung in Microsoft 365 bietet neue Überwachungsfunktionen, die Ihre Organisation bei forensischen und Complianceuntersuchungen unterstützen.
-ms.openlocfilehash: b05901ad8d42f481020178479df5d422fa68eb1a
-ms.sourcegitcommit: 5cbce99cfdbba4b72267a144b2e03a6c52473464
+ms.openlocfilehash: 83ff462ada02c9b262cfcaadb6bd48e47376cc0f
+ms.sourcegitcommit: 36d12e02f6fda199ae7f2fb72fe52d7e2b5b4efd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49718498"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "49740362"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Erweiterte Überwachung in Microsoft 365
 

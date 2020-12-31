@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie Benutzern Lizenzen zuweisen.
 ms.date: 08/14/2020
-ms.openlocfilehash: ec2f9ae2e580987266c636343a66d7c21138e4c3
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: fc5f9112a22d56abb9c11d61f4108586487b4986
+ms.sourcegitcommit: 806536f859ac864228797f1f2f23b8f41040a6b4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645131"
+ms.lasthandoff: 12/28/2020
+ms.locfileid: "49735798"
 ---
 # <a name="assign-licenses-to-users"></a>Zuweisen von Lizenzen an Benutzer
 
