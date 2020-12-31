@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen Connector zum Importieren und Archivieren von Daten aus Globanet in Microsoft 365 einrichten. Mit diesem Connector können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren. Nach dem Archivieren dieser Daten können Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten von drittanbieterdaten verwenden.
-ms.openlocfilehash: 546298288e69746856a1250cc4b87643dd479c91
-ms.sourcegitcommit: a3215cc22faa47e935d22300c481e47ab2680b44
+ms.openlocfilehash: ee1e5c63d8990d5847241dc0ab4a88ed19e3215f
+ms.sourcegitcommit: 36d12e02f6fda199ae7f2fb72fe52d7e2b5b4efd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "49722963"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "49740292"
 ---
-# <a name="set-up-a-connector-to-archive-redtail-speak-data-preview"></a>Einrichten eines Connectors zum Archivieren von "sprich Daten" (Vorschau)
+# <a name="set-up-a-connector-to-archive-redtail-speak-data"></a>Einrichten eines Connectors zum Archivieren von druckwort-Daten
 
 Verwenden Sie einen Globanet-Connector im Microsoft 365 Compliance Center zum Importieren und Archivieren von Daten aus den in Ihrer Microsoft 365-Organisation geäußerten Benutzerpostfächern. Globanet bietet Ihnen einen [codespeak](https://globanet.com/redtail/) -Konnektor, der so konfiguriert ist, dass er Elemente aus dem SFTP-Server Ihrer Organisation erfasst, auf denen die Elemente von "totail" empfangen werden. Der Connector wandelt die Inhalte aus dem Text in ein e-Mail-Nachrichtenformat um und importiert diese Elemente dann in das Postfach des Benutzers in Microsoft 365.
 
@@ -31,7 +31,7 @@ In der folgenden Übersicht wird erläutert, wie Sie einen Konnektor verwenden, 
 
 ![Archivierungs Workflow für codespeak-Daten](../media/RedtailSpeakConnectorWorkflow.png)
 
-1. Ihre Organisation arbeitet mit "sprechen" zusammen, um ein SMTP-Gateway einzurichten und zu konfigurieren, in dem tägliche Nachrichten von "pretail Speak" an ihren Organisationen-SFTP-Server weitergeleitet werden.
+1. Ihre Organisation arbeitet mit dem Wort "sprechen", um ein SMTP-Gateway einzurichten und zu konfigurieren, in dem Nachrichten täglich von "pretail" an den SFTP-Server Ihrer Organisation weitergeleitet werden.
 
 2. Einmal alle 24 Stunden werden die Globanet Speak-Elemente auf die Merge1-Website von kopiert. Der Connector wandelt auch die sprechenden Elemente in ein e-Mail-Nachrichtenformat um.
 
@@ -43,7 +43,7 @@ In der folgenden Übersicht wird erläutert, wie Sie einen Konnektor verwenden, 
 
 - Erstellen Sie ein Globanet-Merge1-Konto für Microsoft-Connectors. Um ein Konto zu erstellen, wenden Sie sich an den [Globanet-Kunden Support](https://globanet.com/contact-us/). Sie müssen sich bei diesem Konto anmelden, wenn Sie den Connector in Schritt 1 erstellen.
 
-- In Schritt Sie müssen Sie den SFTP-Server Ihrer Organisation angeben. Dies ist erforderlich, damit Globanet Merge1 Sie kontaktieren kann, um zum Sammeln von Daten über SFTP zu sprechen.
+- In Schritt 2 müssen Sie den SFTP-Server Ihrer Organisation angeben. Dies ist erforderlich, damit Globanet Merge1 Sie kontaktieren kann, um zum Sammeln von Daten über SFTP zu sprechen.
 
 - Der Benutzer, der in Schritt 1 den codetail Speak Importer-Konnektor erstellt (und in Schritt 3 vervollständigt wird), muss der Rolle "Post Fach Import/-Export" in Exchange Online zugewiesen sein. Diese Rolle ist für das Hinzufügen von Connectors auf der Seite Daten Konnektoren im Microsoft 365 Compliance Center erforderlich. Diese Rolle ist in Exchange Online standardmäßig keiner Rollengruppe zugewiesen. Sie können die Rolle "Post Fach Import exportieren" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle "Post Fach Import Export" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie im Abschnitt [Erstellen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) von Rollengruppen oder [Ändern von Rollengruppen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
 

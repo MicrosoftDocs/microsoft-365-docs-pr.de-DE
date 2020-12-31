@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen Connector zum Importieren und Archivieren von ServiceNow-Daten aus Globanet in Microsoft 365 einrichten. Mit diesem Connector können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren. Nach dem Archivieren dieser Daten können Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten von drittanbieterdaten verwenden.
-ms.openlocfilehash: 4139e66cc1554b7a7306c6076fd8475fe47f5cf5
-ms.sourcegitcommit: a3215cc22faa47e935d22300c481e47ab2680b44
+ms.openlocfilehash: 99b1f64bdb1d977816d4881fa633d77acd60952c
+ms.sourcegitcommit: 36d12e02f6fda199ae7f2fb72fe52d7e2b5b4efd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "49722952"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "49740332"
 ---
-# <a name="set-up-a-connector-to-archive-servicenow-data-preview"></a>Einrichten eines Connectors zum Archivieren von ServiceNow-Daten (Vorschau)
+# <a name="set-up-a-connector-to-archive-servicenow-data"></a>Einrichten eines Connectors zum Archivieren von ServiceNow-Daten
 
 Verwenden Sie einen Globanet-Connector im Microsoft 365 Compliance Center, um Daten aus der ServiceNow-Plattform in Benutzerpostfächer in Ihrer Microsoft 365-Organisation zu importieren und zu archivieren. Globanet stellt einen [ServiceNow](https://globanet.com/servicenow/) -Konnektor bereit, der Elemente aus der Drittanbieter-Datenquelle erfasst und diese Elemente in Microsoft 365 importiert. Der Connector wandelt die Inhalte wie Live Nachrichten, Anlagen und Beiträge aus ServiceNow in ein e-Mail-Nachrichtenformat um und importiert diese Elemente dann in Benutzerpostfächer in Microsoft 365.
 

@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: In diesem Artikel erfahren Sie, wie Sie die Liste der depotverwalter in einem erweiterten eDiscovery-Fall anzeigen, bearbeiten und Massen bearbeiten können.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 95b7a7dbec5656a1ac0692ed465eb5a99d7ca11a
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: a1e9e9d481073c8bb2827d5d65537dbf2b63ef1f
+ms.sourcegitcommit: 555b200b618085706dabf8648d27fb6d6427cfce
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024805"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "49739868"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>Verwalten von Depotbanken in einem erweiterten eDiscovery-Fall
 
@@ -56,7 +56,7 @@ Um die Details zu einer Depotbank anzuzeigen, klicken Sie in der Liste auf der R
 
   - **Office** – der Office-Standort im Geschäftssitz der Depotbank.
 
-- Fall Informationen
+- Fallinformationen
 
   - **Haltestatus** -gibt an, ob die Depotstelle in die Warteschleife gestellt wurde. 
 
@@ -77,7 +77,7 @@ Wenn Ihr Fall fortschreitet, stellen Sie möglicherweise fest, dass für eine be
 
 So aktualisieren Sie die Datenquellen, die einer Depotbank zugeordnet sind:
 
-1. Wechseln Sie zu **eDiscovery > Advanced eDiscovery** , und öffnen Sie die Anfrage.
+1. Wechseln Sie zu  **eDiscovery > Advanced eDiscovery** , und öffnen Sie die Anfrage.
   
 2. Klicken Sie auf die Registerkarte **Quellen** .
   
@@ -85,11 +85,11 @@ So aktualisieren Sie die Datenquellen, die einer Depotbank zugeordnet sind:
 
     ![Bearbeiten von Datenquellen](../media/EditCustodianDataSource.PNG)
   
-4. Klicken Sie auf **Datenquellen** Registerkarte auswählen, um die Einstellungen für das Exchange-Postfach und das OneDrive-Konto der Depotbank zu ändern, indem Sie auf **Datenquellen auswählen**klicken.
+4. Klicken Sie auf **Datenquellen** Registerkarte auswählen, um die Einstellungen für das Exchange-Postfach und das OneDrive-Konto der Depotbank zu ändern, indem Sie auf **Datenquellen auswählen** klicken.
   
 5. Klicken Sie auf die Registerkarte **Weitere Datenquellen auswählen** , um Teams, SharePoint-oder Exchange-Postfächer hinzuzufügen oder zu entfernen, die der Depotbank zugeordnet sind. 
 
-    Weitere Informationen zu Datenquellen, die einer Depotbank zugeordnet sind, finden Sie unter "Schritt 3: Zuordnen zusätzlicher Datenquellen zu einer Depotbank" unter [Hinzufügen von Depotstellen zu einem Fall](add-custodians-to-case.md#step-3-associate-additional-data-sources-to-a-custodian). 
+    Weitere Informationen zu Datenquellen, die einer Depotbank zugeordnet sind, finden Sie unter [Add depotbanks to a Case](add-custodians-to-case.md). 
   
 6. Klicken Sie auf **Depot Platz** Halter, um den Haltebereich für die Depotbank zu aktivieren oder zu deaktivieren.
 
@@ -101,7 +101,7 @@ Wenn eine Depotstelle einem Fall hinzugefügt wird, werden die Daten, die sich i
 
 So lösen Sie den erneuten Indizierungsprozess zum Adressieren von teilweise indizierten Elementen aus:
 
-1. Wechseln Sie zu **eDiscovery > Advanced eDiscovery** , und öffnen Sie die Anfrage.
+1. Wechseln Sie zu  **eDiscovery > Advanced eDiscovery** , und öffnen Sie die Anfrage.
 
 2. Klicken Sie auf die Registerkarte **Quellen** .
 
@@ -111,7 +111,7 @@ So lösen Sie den erneuten Indizierungsprozess zum Adressieren von teilweise ind
 
    Es wird ein Dialogfeld angezeigt, das besagt, dass der Index Auftrag erstellt wurde.
 
-Das erneute Indizieren von Depotdaten ist ein langwieriger Prozess; der entsprechende Auftrag, der erstellt wird, wird als **erneute Indizierung von Depotdaten**bezeichnet. Sie können den Fortschritt auf der Registerkarte **Aufträge** oder auf der Registerkarte **depotverwalter** verfolgen, indem Sie den Status in der Spalte **Indizierungs Auftragsstatus** überwachen.
+Das erneute Indizieren von Depotdaten ist ein langwieriger Prozess; der entsprechende Auftrag, der erstellt wird, wird als **erneute Indizierung von Depotdaten** bezeichnet. Sie können den Fortschritt auf der Registerkarte **Aufträge** oder auf der Registerkarte **depotverwalter** verfolgen, indem Sie den Status in der Spalte **Indizierungs Auftragsstatus** überwachen.
 
 Weitere Informationen finden Sie unter:
 
@@ -123,11 +123,11 @@ Weitere Informationen finden Sie unter:
 
 Eine Depotbank wird in Situationen, in denen ein Fall geschlossen wird, freigegeben, die Depotbank ist nicht mehr verpflichtet, Inhalte für einen Fall aufzubewahren oder wenn die Depotbank für den Fall nicht mehr relevant erachtet wird. 
 
-Wenn Sie einen depotverwalter freigeben, nachdem ein Aufbewahrungs Bescheid veröffentlicht wurde, wird eine Veröffentlichungs Benachrichtigung an die Depotbank gesendet. Darüber hinaus werden alle in Datenquellen, die mit der Depotbank verknüpft sind, aufgenommenen Haltestatus entfernt. Wenn die Depotbank in einem *stillen*Speicherplatz genommen wurde und keine Benachrichtigungen über den rechtlichen Aufbewahrungsplatz ausgestellt wurden, wird keine Veröffentlichungs Benachrichtigung gesendet, aber alle auf Datenquellen, die dieser Depotbank zugeordnet sind, bereitgestellten Haltestatus werden entfernt.
+Wenn Sie einen depotverwalter freigeben, nachdem ein Aufbewahrungs Bescheid veröffentlicht wurde, wird eine Veröffentlichungs Benachrichtigung an die Depotbank gesendet. Darüber hinaus werden alle in Datenquellen, die mit der Depotbank verknüpft sind, aufgenommenen Haltestatus entfernt. Wenn die Depotbank in einem *stillen* Speicherplatz genommen wurde und keine Benachrichtigungen über den rechtlichen Aufbewahrungsplatz ausgestellt wurden, wird keine Veröffentlichungs Benachrichtigung gesendet, aber alle auf Datenquellen, die dieser Depotbank zugeordnet sind, bereitgestellten Haltestatus werden entfernt.
 
 So veröffentlichen Sie eine Depotstelle: 
 
-1. Wechseln Sie zu **eDiscovery > Advanced eDiscovery** , und öffnen Sie die Anfrage.
+1. Wechseln Sie zu  **eDiscovery > Advanced eDiscovery** , und öffnen Sie die Anfrage.
 
 2. Klicken Sie auf die Registerkarte **Quellen** .
 
