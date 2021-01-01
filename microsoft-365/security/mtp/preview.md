@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 4c731869d1ec1740f8c9173705f9af72b0e2fe53
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 15f599f425e20540f5f7889efa632f5a9f11a4e8
+ms.sourcegitcommit: 25ac2736a66bb72c0d574c3fbde7472ac98d5321
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844752"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "49741057"
 ---
 # <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defender Preview-Features
 
@@ -62,6 +62,8 @@ Sie wissen, dass Sie Vorschaufeatures aktiviert haben, wenn Sie sehen, dass das 
 Die folgenden Features und Verbesserungen sind derzeit in der Vorschau verfügbar:
 
 - **[Microsoft 365 Defender-APIs](api-overview.md)** – die Microsoft 365 Defender-APIs von Lop-Level ermöglichen Ihnen das Automatisieren von Workflows basierend auf den freigegebenen Vorfällen und erweiterten Jagd Tabellen. 
-- **[Aktionen in der erweiterten Suche durchführen](advanced-hunting-take-action.md)** – enthalten schnell Bedrohungen oder adressieren gefährdete Objekte, die Sie in [Advanced Hunting](advanced-hunting-overview.md)finden.
-- **[In-Portal-Schemareferenz](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : Informationen zu erweiterten Jagd Schema Tabellen erhalten Sie direkt im Sicherheitscenter. Neben Tabellen-und Spaltenbeschreibungen enthält dieser Verweis unterstützte Ereignistypen ( `ActionType` Werte) und Beispielabfragen.
+- **[Aktionen in der erweiterten Suche durchführen](advanced-hunting-take-action.md)**– enthalten schnell Bedrohungen oder adressieren gefährdete Objekte, die Sie in [Advanced Hunting](advanced-hunting-overview.md)finden.
+- **[In-Portal-Schemareferenz](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**: Informationen zu erweiterten Jagd Schema Tabellen erhalten Sie direkt im Sicherheitscenter. Neben Tabellen-und Spaltenbeschreibungen enthält dieser Verweis unterstützte Ereignistypen ( `ActionType` Werte) und Beispielabfragen.
+- **[DeviceFromIP ()-Funktion](advanced-hunting-devicefromip-function.md)**– Ruft Informationen darüber ab, welche Geräte in einem bestimmten Zeitbereich eine bestimmte IP-Adresse oder Adressen zugewiesen haben.
+
 
