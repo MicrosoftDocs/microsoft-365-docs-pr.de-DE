@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Unabhängig davon, ob neue Lösungen zum Compliance Center hinzugefügt werden, vorhandene Funktionen auf der Grundlage Ihres Feedbacks aktualisiert werden oder eine aktualisierte Dokumentation bereitgestellt wird, hilft Ihnen Microsoft 365, die ständig wechselnde Compliance-Landschaft zu überwachen. Finden Sie heraus, was wir diesen Monat vorhaben.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1d4583e5216a369801c48a47b488a35fc4e62b37
-ms.sourcegitcommit: 95b85a1fdf43e3f0839483fa22e279262703f15f
+ms.openlocfilehash: 3688ee7390b7cadf701e8dbefd8b12c82cf6d89c
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "49407339"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751592"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Neuerungen in Microsoft 365 Compliance
 
@@ -34,8 +34,40 @@ Unabhängig davon, ob Sie dem [Microsoft 365 Compliance Center](microsoft-365-co
 
 
 > [!TIP]
-> Interessieren Sie sich dafür, was in anderen Admin Centers geschieht? Dann lesen Sie die folgenden Artikel:<br>[Neuerungen im Microsoft 365 Admin Center](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Aktive Websites im SharePoint Online Admin Center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Neuerungen in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
+> Interessieren Sie sich dafür, was in anderen Admin Centers geschieht? Dann lesen Sie die folgenden Artikel:<br>[Neuerungen im Microsoft 365 Admin Center](https://docs.microsoft.com/office365/admin/whats-new-in-preview)<br>[Aktive Websites im SharePoint Online Admin Center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Neuerungen in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
 Besuchen Sie die [Microsoft 365-Roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap), um sich über Features von Microsoft 365 zu informieren, die eingeführt wurden, bereitgestellt werden, sich in der Entwicklung befinden, eingestellt oder zuvor veröffentlicht wurden.
+
+## <a name="november--december-2020"></a>November & Dezember 2020
+Nur eine Erinnerung daran, dass wir häufig neue und aktualisierte Features in einem Vorschaustatus veröffentlichen, um zu erfahren, wie Sie verwendet werden, damit wir Sie verfeinern und verbessern können, bevor Sie zur allgemeinen Verfügbarkeit freigeben. Ihr Feedback ist kritisch während der Vorschau (und darüber hinaus), so stellen Sie sicher, dass Sie uns Ihre Meinung mitteilen, indem Sie die Feedback Karte unten rechts im Compliance Center öffnen.
+
+![Feedback](../media/Feedback_card_MCC.JPG)
+
+### <a name="spotlight-endpoint-data-loss-prevention-dlp-released"></a>Spotlight: Endpunkt-Datenverlust Verhinderung (DLP) veröffentlicht
+
+[EndPoint DLP](endpoint-dlp-learn-about.md) erweitert die Funktionen für die Aktivitätsüberwachung und den Schutz von DLP auf vertrauliche Informationen auf Windows 10-Geräten. Nach dem [Onboarding](dlp-configure-endpoints.md) von Geräten im Microsoft 365 Compliance Center können Sie DLP-Richtlinien einrichten, um die vertraulichen Informationen auf diesen Geräten zu schützen.
+
+### <a name="advanced-ediscovery"></a>Advanced eDiscovery
+
+Um die Verwaltung verschlüsselter Inhalte im eDiscovery-Workflow zu vereinfachen, integrieren Microsoft 365 eDiscovery-Tools jetzt die [Entschlüsselung von verschlüsselten Dateien](ediscovery-decryption.md) , die an e-Mail-Nachrichten angehängt und in Exchange gesendet werden. Außerdem werden verschlüsselte Dokumente, die in SharePoint und OneDrive gespeichert sind, in Advanced eDiscovery entschlüsselt.
+
+### <a name="compliance-manager"></a>Compliance-Manager
+
+- [Unterstützung für Microsoft 365 Government-Abonnements](compliance-manager.md). Compliance-Manager steht jetzt für moderate und hohe Kunden von US Government Community (gcc) zur Verfügung.
+- [Microsoft Compliance Configuration Analyzer für Compliance-Manager](compliance-manager-mcca.md). Neues PowerShell-basiertes Tool, mit dem Sie die ersten Schritte mit Compliance-Manager durchsuchen können, indem Sie die aktuellen Konfigurationen Ihrer Organisation überprüfen und diese anhand der empfohlenen Best Practices von Microsoft 365 validieren.
+- [Neue Vorlagen](compliance-manager-templates-list.md). 56 neue Vorlagen hinzugefügt, und insgesamt Compliance-Manager-Vorlagen wurden auf über 230 gebracht.
+
+### <a name="data-connectors"></a>Datenconnectors
+
+[Fünf neue Globanet-Konnektoren in der Vorschau](archiving-third-party-data.md#third-party-data-connectors). Zu den neuen Connectors gehören Reuters-Geschäfte, Reuters FX, CellTrust, XIP, generische MS SQL-Datenbankdaten.
+
+### <a name="retention-labels-disposition-review"></a>Aufbewahrungs Bezeichnungen (Dispositions Überprüfung)
+
+Um Elemente während einer Dispositions Überprüfung anzuzeigen, müssen Benutzer jetzt Mitglieder der [Rollengruppen Inhalts-Explorer-Inhaltsanzeige und Inhalts-Explorer-Listenanzeige](disposition.md#permissions-for-disposition)sein. Obwohl zum Überprüfen von Elementen erforderlich, sind diese Rollengruppen nicht erforderlich, um die Dispositions Überprüfung abzuschließen.
+
+### <a name="sensitivity-labels"></a>Vertraulichkeitsbezeichnungen
+
+- [(Vorschau) externe Freigabeeinstellungen für SharePoint-Websites](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings). Beim Erstellen einer Bezeichnung, die für Gruppen und Websites verwendet wird, wird eine Option zum Steuern der externen Freigabe für SharePoint-Websites mit Anwendung der Bezeichnung angezeigt. Sie können angeben, dass die Freigabe für alle, neuen und vorhandenen Gäste, nur für vorhandene Gäste oder nur für Benutzer in Ihrer Organisation zulässig ist. Wenn die Bezeichnung angewendet wird, ersetzen die Bezeichnungs Einstellungen alle [im SharePoint Admin Center konfigurierten](https://docs.microsoft.com/sharepoint/change-external-sharing-site)externen Freigabeeinstellungen.
+- [Entfernen Sie Label und Encryption aus einem beschrifteten Dokument](sensitivity-labels-sharepoint-onedrive-files.md#remove-encryption-for-a-labeled-document). Um sowohl eine Bezeichnung als auch die Verschlüsselung zu entfernen, die von einem beschrifteten Dokument in SharePoint erzwungen wird, können globale Administratoren und SharePoint-Administratoren das neue `Unlock-SPOSensitivityLabelEncryptedFile` Cmdlet ausführen. Dieses Cmdlet wird auch dann ausgeführt, wenn der Administrator nicht über Zugriffsberechtigungen für die Website oder Datei verfügt oder wenn der Azure Rights Management-Dienst nicht verfügbar ist.
 
 ## <a name="october-2020"></a>Oktober 2020
 
@@ -64,7 +96,7 @@ Sehen Sie sich das Video unten an, um zu erfahren, wie Compliance-Manager die Co
 - Die neue 10-jährige Aufbewahrung von Überwachungsprotokollen hilft bei der Unterstützung lang andauernder Untersuchungen und der Reaktion auf regulatorische, rechtliche und interne Verpflichtungen.
 - [Drei neue wichtige Ereignisse](advanced-audit.md#access-to-crucial-events-for-investigations). Die folgenden neuen Ereignisse können Ihnen dabei helfen, mögliche Verstöße zu untersuchen und den Umfang des Kompromisses zu bestimmen: Send, SearchQueryInitiatedExchange und SearchQueryInitiatedSharePoint.
 
-### <a name="communication-compliance"></a>Kommunikationscompliance
+### <a name="communication-compliance"></a>Kommunikationsbezogene Compliance
 
 - [Aktualisierte Rollengruppen](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance). Rollengruppen für die Kommunikations Konformität entsprechen nun der Rollengruppen Struktur, die für die Lösung für das Insider Risikomanagement verfügbar ist.
 - [Berichts Dashboard](communication-compliance-feature-reference.md#reports-preview). Ihr zentraler Standort für die Anzeige aller Kommunikations Kompatibilitätsberichte. Berichts-Widgets bieten eine schnelle Übersicht über die am häufigsten benötigten Einblicke für eine Gesamtbewertung des Status von Kommunikations Compliance-Aktivitäten.
@@ -171,7 +203,7 @@ Aufbewahrungs bezogene Administratoraktivitäten werden jetzt aufgezeichnet und 
 
 Damit Sie besser verstehen, welche Compliance-Lösungen zum Schutz und zur Steuerung vertraulicher Daten Ihrer Organisation verwendet werden, haben wir zwei neue Zielseiten mit Übersichten darüber erstellt, wie die Lösungen zusammenarbeiten, um diese Ziele zu erreichen, einschließlich Links zu verwandten Dokumenten, damit Sie weiter eintauchen können.
 
-[Microsoft Information Protection in Microsoft 365](information-protection.md)<br>
+[Microsoft Information Protection in Microsoft 365](information-protection.md)<br>
 [Microsoft-Informationsgovernance in Microsoft 365](manage-Information-governance.md)
 
 ### <a name="advanced-ediscovery-add-non-custodial-data-sources-to-your-cases"></a>Erweiterte eDiscovery: Hinzufügen von Datenquellen ohne Freiheitsentzug zu ihren Fällen
@@ -315,9 +347,6 @@ Wenn Sie diese Connectors einrichten und überprüfen, geben Sie uns bitte Feedb
 
 Die Wartezeit ist vorbei. Wir freuen uns, Ihnen mitzuteilen, dass das Microsoft 365 Compliance Center für alle Kunden mit Microsoft 365, Office 365, Enterprise Mobility + Security (EMS) und Windows 10 Enterprise-Plänen verfügbar ist. Alle Daten oder Richtlinien, die Sie im Security & Compliance Center verwaltet haben, stehen im Compliance Center zur Verfügung, daher müssen Sie nicht mehr hin-und herspringen.
 
-> [!TIP]
-> Lesen Sie das Update des letzten Monats erneut für ein Upgrade für einige der [neuen Lösungen](#new-compliance-solutions) , die kürzlich in der Vorschau angezeigt wurden, sowie eine [Roadmap](#updated-compliance-solutions) , die zeigt, wo Compliance-Features aus dem Security & Compliance Center jetzt in Microsoft 365.
-
 Setzen Sie jetzt ein Lesezeichen, und wechseln Sie zu [https://compliance.microsoft.com](https://compliance.microsoft.com), um Ihre zentrale Anlaufstelle für die Verwaltung der Compliance in Ihrer gesamten Organisation zu besuchen..., oder [lesen Sie diesen Artikel](microsoft-365-compliance-center.md), um ein bisschen tiefer einzutauchen.
 
 ![Startseite des Microsoft 365 Compliance Centers](../media/mcc-home-ga.png)
@@ -370,62 +399,3 @@ Stets bemüht, Ihnen zu helfen, in der sich ständig weiterentwickelnden Complia
 - SOC 1 Typ 2 und SOC 2 Typ 2
 
 [Weitere Informationen zu Vorlagen für Compliancebewertungen](compliance-score.md#templates)
-
-## <a name="november--december-2019"></a>November und Dezember 2019
-
-Über die Feiertage haben wir mit der Bereitstellung all der großartigen Compliancelösungen begonnen, die auf der Ignite vorgeführt wurden. Die meisten befinden sich in einem Vorschaustatus, testen Sie sie also, und teilen Sie uns Ihre Meinung mit, indem Sie unten rechts im Compliance Center die Feedbackkarte öffnen.
-
-![Feedback](../media/Feedback_card_MCC.JPG)
-
-### <a name="get-to-know-the-new-neighborhood"></a>Kennenlernen der neuen Nachbarschaft
-
-Das neue Microsoft 365 Compliance Center umfasst brandneue Lösungen sowie die Compliancefunktionen, die Sie aus dem Office 365 Security & Compliance Center kennen und schätzen. Lassen Sie uns noch etwas weiter eintauchen...
-
-#### <a name="new-compliance-solutions"></a>Neue Compliancelösungen
-
-Sie fragen sich vielleicht, was eine *Lösung* ist. So wie die Cloud die Art und Weise, wie Geschäfte getätigt werden, revolutioniert hat, hat sie auch die Tür für neue Methoden des Datendiebstahls und Betrugs geöffnet sowie neue Bestimmungen nötig gemacht. Unsere Compliancelösungen sind Sammlungen integrierter Funktionen, die Ihnen dabei helfen können, diese sich weiterentwickelnden Complianceanforderungen zu erfüllen. Die Funktionen einer Lösung können eine Kombination von Richtlinien, Warnungen, Berichten und mehr umfassen.
-
-Hier ist eine Zusammenfassung der neuen Lösungen, die Sie vorfinden. Behalten Sie die anderen im Blick, die in Kürze zur Verfügung stehen.
-
-> [!NOTE]
-> Diese Lösungen befinden sich nur im Microsoft 365 Compliance Center. Sie können nicht im Office 365 Security & Compliance Center verwaltet werden.
-<br/>
-
-|**Neue Lösung**|**Beschreibung**|**Weitere Informationen**|
-|:-----|:-----|:-----|
-|Microsoft-Compliancebewertung (Vorschau) <br/>|Basierend auf [Compliance Manager](compliance-manager-overview.md) ist die Compliancebewertung ein eigenständiges Feature mit einem einfacheren, benutzerfreundlicheren Design, das Ihnen dabei hilft, die Complianceausrichtung Ihrer Organisation zu verstehen und zu verbessern. Sie berechnet eine auf Risiken basierende Bewertung, die Ihren Fortschritt bei der Durchführung von Maßnahmen misst, mit denen sich Risiken hinsichtlich des Datenschutzes und regulatorischer Standards verringern lassen. <br/>|[Übersicht über die Microsoft-Compliancebewertung (Vorschau)](compliance-score.md)|
-|Lösungskatalog (Vorschau) <br/>|Der Lösungskatalog ist Ihre zentrale Anlaufstelle, um unsere Compliance- und Risikomanagementlösungen zu erkunden, sich darüber zu informieren und rasch einzusteigen. Der Katalog gliedert sich in drei Compliancekategorien, von denen jede Details zu den Lösungen enthält, die diese Kategorie ausmachen. Zu den Kategorien zählen Informationsschutz und Governance, Insider-Risikomanagement sowie Entdeckung und Reaktion <br/>|[Übersicht über den Lösungskatalog (Vorschau)](microsoft-365-solution-catalog.md)|
-|Kommunikationscompliance (Vorschau) <br/>|Die Kommunikationcompliance ist Bestandteil der neuen Kategorie "Insider-Risikomanagement", die Ihnen hilft, Kommunikationsrisiken zu minimieren, indem Sie unzulässige Nachrichten in Ihrer Organisation erkennen und erfassen sowie Abhilfemaßnahmen treffen. Die Lösung erweitert die Möglichkeiten von Aufsichtsrichtlinien in Office 365 durch die Einführung verschiedener neuer Verbesserungen wie intelligenten Vorlagen, flexiblen Abhilfe-Workflows und umsetzbaren Erkenntnissen. <br/>|[Kommunikationscompliance in Microsoft 365 (Vorschau)](communication-compliance.md)|
-|Datenklassifizierung (Vorschau) <br/>|Unsere neue Seite „Datenklassifizierung“ enthält aussagekräftige Erkenntnisse und Tools, die Ihnen bei der Ermittelung und Auswertung helfen, wie vertrauliche Informationen und Bezeichnungen (Aufbewahrung und Vertraulichkeit) in Inhalten im gesamten Unternehmen verwendet werden. Überprüfen Sie Inhalte, die vertrauliche Informationen enthalten oder auf die Bezeichnungen angewendet wurden, untersuchen Sie die Bezeichnungsaktivitäten an Microsoft 365-Speicherorten, erstellen Sie benutzerdefinierte Typen vertraulicher Informationen und vieles mehr.<br/>|[Übersicht über die Datenklassifizierung (Vorschau)](data-classification-overview.md)|
-|Trainierbare Klassifizierer (Vorschau) <br/>|Dieses leistungsstarke neue Tool verwendet unser Machine Learning-Modul, um Kategorien von Inhalten in Ihrer Organisation zu identifizieren, z. B. regulatorische Dokumente oder Mitarbeiterverträge. Nach der Erstellung können Klassifizierer in mehreren Compliancelösungen verwendet werden, um verwandte Inhalte zu erkennen und zu klassifizieren, zu schützen, aufzubewahren und mehr.<br/>|[Weitere Informationen zu trainierbaren Klassifizierern (Vorschau)](classifier-learn-about.md)|
-
-#### <a name="updated-compliance-solutions"></a>Aktualisierte Compliancelösungen
-
-Wenn Sie das Office 365 Security & Compliance Center für Ihre Compliancebedürnisse verwenden, fragen Sie sich vielleicht, wo einige Features im neuen Microsoft 365 Compliance Center jetzt zu finden sind. Sehen Sie sich schnell eine Roadmap an, die Ihnen bei der Suche danach hilft.
-
-> [!NOTE]
-> Einige Features stehen weiterhin nur im Office 365 Security & Compliance Center zur Verfügung. Diese sind nachstehend aufgeführt. Aber wir arbeiten hart daran, diese im Microsoft 365 Compliance Center in einer Vorschau anzuzeigen, also schauen Sie regelmäßig vorbei. 
-<br/>
-
-|**Feature**|**Office 365 Security & Compliance Center**|**Microsoft 365 Compliance Center**|**Weitere Informationen**|
-|:-----|:-----|:-----|:-----|
-|Advanced eDiscovery|eDiscovery > Advanced eDiscovery <br/> https://protection.office.com/advancedediscoverycases |eDiscovery > Advanced <br/> https://compliance.microsoft.com/advancedediscovery | [Übersicht über die Advanced eDiscovery-Lösung in Microsoft 365](overview-ediscovery-20.md) |
-|Warnungsrichtlinien|Warnungen > Warnungsrichtlinien <br/> https://protection.office.com/alertpolicies |Zurzeit werden Warnungsrichtlinien nur im Office 365 Security & Compliance Center verwaltet. |[Warnungsrichtlinien im Security & Compliance Center](alert-policies.md) |
-|Warnungen|Warnungen > Warnungen anzeigen <br/> https://protection.office.com/viewalerts |Warnungen <br/> https://compliance.microsoft.com/compliancealerts |[Anzeigen von Warnungen](alert-policies.md#viewing-alerts)|
-|Archivieren|Information Governance > Archiv <br/> https://protection.office.com/archiving |Information Governance > Registerkarte „Archiv“ <br/> https://compliance.microsoft.com/informationgovernance?viewid=archive |[Aktivieren von Archivpostfächern](enable-archive-mailboxes.md)|
-|Durchsuchen von Überwachungsprotokollen|Suche > Überwachungsprotokollsuche <br/> https://protection.office.com/unifiedauditlog |Überwachung <br/> https://compliance.microsoft.com/auditlogsearch | [Durchsuchen des Überwachungsprotokolls im Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md)|
-|Inhaltssuche|Suche > Inhaltssuche <br/> https://protection.office.com/contentsearchbeta?ContentOnly=1 | Inhaltssuche <br/> https://compliance.microsoft.com/contentsearch |[Suche nach Inhalten in Office 365](search-for-content.md) |
-|Datenconnectors|Information Governance > Drittanbieterdaten archivieren <br/> https://protection.office.com/nativeconnector | Datenconnectors <br/> https://compliance.microsoft.com/connectorlanding |[Archivieren von Drittanbieterdaten](archiving-third-party-data.md)|
-|Verhinderung von Datenverlust|Verhinderung von Datenverlust <br/> https://protection.office.com/datalossprevention |Verhinderung von Datenverlust <br/> https://compliance.microsoft.com/datalossprevention |[Übersicht über die Verhinderung von Datenverlust](data-loss-prevention-policies.md)|
-|Anträge betroffener Personen |Datenschutz > Anträge betroffener Personen <br/> https://protection.office.com/dsrcases |Anträge betroffener Personen <br/> https://compliance.microsoft.com/datasubjectrequest |[Verwalten von DSGVO-Anträgen betroffener Personen mit dem DSR-Falltool](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
-|eDiscovery|eDiscovery > eDiscovery <br/> https://protection.office.com/ediscoveryv1 |eDiscovery > Core <br/> https://compliance.microsoft.com/classicediscovery |[Verwalten von eDiscovery-Fällen](ediscovery-cases.md) |
-|Ereignisse|Datensatzverwaltung > Ereignisse <br/> https://protection.office.com/events |Datensatzverwaltung > Registerkarte „Ereignisse“ <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[Aufbewahrung mit Eintritt eines Ereignisses starten](event-driven-retention.md)|
-|Dateiplan|Datensatzverwaltung > Dateiplan <br/> https://protection.office.com/fileplan |Datensatzverwaltung > Registerkarte „Dateiplan“ <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[Dateiplan zum Verwalten von Aufbewahrungsbezeichnungen verwenden](file-plan-manager.md)|
-|Importieren von PST-Dateien|Information Governance > PST-Dateien importieren <br/> https://protection.office.com/importV2 |Information Governance > Registerkarte „Importieren“ <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[Übersicht über das Importieren von PST-Dateien Ihrer Organisation](importing-pst-files-to-office-365.md)|
-|Bezeichnungsaktivitäten-Explorer|Information Governance > Bezeichnungsaktivitäten-Explorer <br/> https://protection.office.com/labelexplorer |Datenklassifizierung > Registerkarte „Aktivitäten-Explorer“ <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[Anzeigen von Aktivitäten für Ihre Inhalte mit Bezeichnungen (Vorschau)](data-classification-activity-explorer.md)|
-|Aufbewahrungsbezeichnungen und Bezeichnungsrichtlinien |Klassifizierung > Aufbewahrungsbezeichnungen > Registerkarte „Bezeichnungen“ und „Bezeichnungsrichtlinien“ <br/> https://protection.office.com/retentionlabels |Information Governance > Registerkarte „Bezeichnungen“ und „Bezeichnungsrichtlinien“ <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [Übersicht über Aufbewahrungsbezeichnungen](retention.md)|
-|Aufbewahrungsrichtlinien|Information Governance > Aufbewahrung <br/> https://protection.office.com/retention |Information Governance > Registerkarte „Aufbewahrung“ <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[Weitere Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](retention.md)|
-|Typen vertraulicher Informationen|Klassifizierung > Typen vertraulicher Informationen <br/> https://protection.office.com/sensitivetypes |Datenklassifizierung > Registerkarte „Typen vertraulicher Informationen“ <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[Entitätsdefinitionen für Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md)|
-|Vertraulichkeitsbezeichnungen und Bezeichnungsrichtlinien|Klassifizierung > Vertraulichkeitsbezeichnungen > Registerkarte „Bezeichnungen“ und „Bezeichnungsrichtlinien“ <br/> https://protection.office.com/sensitivity |Information Protection > Registerkarte „Bezeichnungen“ und „Bezeichnungsrichtlinien“ <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[Weitere Informationen zu Vertraulichkeitsbezeichnungen](sensitivity-labels.md) |
-|Dienstüberprüfung|Dienstüberprüfung <br/> https://protection.office.com/serviceassurance/dashboard |Zurzeit kann nur im Office 365 Security & Compliance Center auf Dienstüberprüfungsressourcen zugegriffen werden. |[Dienstüberprüfung im Security & Compliance Center](service-assurance.md)|
-|Aufsicht|Aufsicht <br/> https://protection.office.com/supervisoryreviewv2 |Kommunikationscompliance <br/> https://compliance.microsoft.com/supervisoryreview |[Kommunikationscompliance in Microsoft 365 (Vorschau)](communication-compliance.md) |

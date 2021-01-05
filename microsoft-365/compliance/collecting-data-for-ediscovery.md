@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: In diesem Artikel erfahren Sie, wie Sie eine Dokumentenmappe zur Überprüfung in einer Untersuchung mithilfe des Such Tools in Advanced eDiscovery identifizieren.
 ms.custom: seo-marvel-2020
-ms.openlocfilehash: 725c289324a8e4d5bd4d7a7b9ddd9e091b6d6241
-ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.openlocfilehash: b69127f1a372a9b843b9c7dac1b2909dd80b2988
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47956198"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751267"
 ---
 # <a name="collect-data-for-a-case-in-advanced-ediscovery"></a>Sammeln von Daten für einen Fall in Advanced eDiscovery
 
@@ -38,7 +38,7 @@ Nachdem eine Suche erstellt wurde, wird eine Flyout-Seite mit Details angezeigt.
 
 ## <a name="view-search-results-and-statistics"></a>Anzeigen von Suchergebnissen und Statistiken
 
-Es gibt zwei Komponenten einer Inhaltssuche: Statistik (Schätzungen) und Vorschau. Nachdem jede dieser Komponenten abgeschlossen ist, wird der Status angezeigt, der in den entsprechenden Spalten auf der Registerkarte **Suchvorgänge** von über **mittelte** in **in Bearbeitung** geändert in **abgeschlossen**angezeigt wird.
+Es gibt zwei Komponenten einer Inhaltssuche: Statistik (Schätzungen) und Vorschau. Nachdem jede dieser Komponenten abgeschlossen ist, wird der Status angezeigt, der in den entsprechenden Spalten auf der Registerkarte **Suchvorgänge** von über **mittelte** in **in Bearbeitung** geändert in **abgeschlossen** angezeigt wird.
 
 Wenn die Such Schätzung abgeschlossen ist, wählen Sie die Suche aus, um die Flyout-Seite anzuzeigen, in der einige allgemeine Statistiken zu den Ergebnissen der Suche angezeigt werden. Zu diesem Zeitpunkt ist die Schaltfläche **Statistik** aktiv. Sie können ihn auswählen, um Suchstatistiken anzuzeigen, beispielsweise:
 
@@ -46,7 +46,7 @@ Wenn die Such Schätzung abgeschlossen ist, wählen Sie die Suche aus, um die Fl
 - Top-Standorte
 - Abfragen
 
-Weitere Informationen zu Suchstatistiken finden Sie unter [Suchstatistiken](search-statistics.md).
+Weitere Informationen zu Suchstatistiken finden Sie unter [Suchstatistiken](search-statistics-in-advanced-ediscovery.md).
 
 Sobald die Vorschau abgeschlossen ist, wird die Schaltfläche **Vorschau** aktiv. Wählen Sie diese Option aus, um eine ausgewählte Teilmenge der Ergebnisse in der Vorschau anzuzeigen.
 

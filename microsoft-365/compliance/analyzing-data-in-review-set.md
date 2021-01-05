@@ -17,26 +17,26 @@ search.appverid:
 ms.assetid: ''
 description: Erfahren Sie mehr über die Tools, die zum Organisieren von Dokumentenmappen bei der Analyse eines erweiterten eDiscovery-falls verfügbar sind.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 87788e444a5ef671586567510448dab8b9deddcd
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 7c63e7eca2e032bfa11c4d4e6f961bb7a7700a4e
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033819"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751370"
 ---
 # <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>Analysieren von Daten in einer Überprüfungsgruppe in Advanced eDiscovery
 
 Wenn die Anzahl der gesammelten Dokumente groß ist, kann es schwierig sein, Sie alle zu überprüfen. Advanced eDiscovery stellt eine Reihe von Tools zum Analysieren der Dokumente zur Verfügung, um das Volumen von Dokumenten zu reduzieren, die ohne Verlust von Informationen überprüft werden sollen, und um Ihnen dabei zu helfen, die Dokumente auf kohärente Weise zu organisieren. Weitere Informationen zu diesen Funktionen finden Sie unter:
 
-- [Erkennen von Quasiduplikaten](near-duplicates.md)
+- [Erkennen von Quasiduplikaten](near-duplicate-detection-in-advanced-ediscovery.md)
 
-- [E-Mail-Threading](email-threading.md)
+- [E-Mail-Threading](email-threading-in-advanced-ediscovery.md)
 
-- [Designs](themes.md)
+- [Designs](themes-in-advanced-ediscovery.md)
 
 So analysieren Sie Daten in einem Überprüfungs Satzes:
 
-1. Konfigurieren Sie die Analyse Einstellungen für Ihren Fall. Weitere Informationen finden Sie unter [Configure Search and Analytics Settings](configure-search-analytics-settings.md).
+1. Konfigurieren Sie die Analyse Einstellungen für Ihren Fall. Weitere Informationen finden Sie unter [Configure Search and Analytics Settings](configure-search-and-analytics-settings-in-advanced-ediscovery.md).
 
 2. Öffnen Sie den Überprüfungs Satzes, den Sie analysieren möchten.
 

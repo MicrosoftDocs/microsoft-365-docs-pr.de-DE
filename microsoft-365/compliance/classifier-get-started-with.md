@@ -1,5 +1,5 @@
 ---
-title: Erste Schritte mit trainierbaren Klassifizierern (Vorschau)
+title: Erste Schritte mit trainierbaren Klassifizierern
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -18,20 +18,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Eine Microsoft 365-Klassifizierung ist ein Tool, mit dem Sie verschiedene Arten von Inhalten erkennen können, indem Sie sich Beispiele ansehen. In diesem Artikel erfahren Sie, wie Sie eine benutzerdefinierte Klassifizierung erstellen und trainieren und Sie neu trainieren, um die Genauigkeit zu verbessern.
-ms.openlocfilehash: 9fe50f7faada77492fd93a86d0c3549cc8e1d361
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: bca1de5edc3efd38f943b02091c3f47d832e6a19
+ms.sourcegitcommit: 54d1a2f363b2d5b63aae258c3cec0573a08f2866
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49072964"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49752659"
 ---
-# <a name="get-started-with-trainable-classifiers-preview"></a>Erste Schritte mit trainierbaren Klassifizierern (Vorschau)
+# <a name="get-started-with-trainable-classifiers"></a>Erste Schritte mit trainierbaren Klassifizierern
 
 Eine Microsoft 365-schulungsable-Klassifizierung ist ein Tool, mit dem Sie verschiedene Arten von Inhalten erkennen können, indem Sie Beispiele für die Untersuchung geben. Sobald Sie geschult wurden, können Sie es verwenden, um das Element für die Anwendung von Office-Vertraulichkeits Bezeichnungen, Kommunikationsrichtlinien und Aufbewahrungs Bezeichnungsrichtlinien zu identifizieren.
 
 Das Erstellen einer benutzerdefinierten Klassifizierer-Klassifizierung umfasst zunächst das Erteilen von Stichproben, die von Menschen ausgewählt werden und der Kategorie positiv entsprechen. Nachdem Sie diese verarbeitet haben, testen Sie dann die Fähigkeit der Klassifizierungen, vorherzusagen, indem Sie eine Mischung aus positiven und negativen Beispielen geben. In diesem Artikel erfahren Sie, wie Sie eine benutzerdefinierte Klassifizierung erstellen und trainieren und wie Sie die Leistung von benutzerdefinierten Schulungs fähigen Klassifizierungen und vorab ausgebildeten Klassifizierungen über ihre Lebensdauer durch Umschulung verbessern können.
 
-Weitere Informationen zu den verschiedenen Klassifizierungstypen finden Sie unter [Learn about trainable Klassifizierers (Preview)](classifier-learn-about.md).
+Weitere Informationen zu den verschiedenen Klassifizierungstypen finden Sie unter erfahren Sie mehr [über Lernende Klassifizierungen](classifier-learn-about.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -44,7 +44,7 @@ Klassifizierungen sind ein Microsoft 365 E5-oder E5-Konformitäts Feature. Sie m
 So greifen Sie auf die Klassifizierung in der Benutzeroberfläche zu: 
 
 - der globale Administrator muss sich für den Mandanten anmelden, um benutzerdefinierte Klassifizierungen zu erstellen.
-- Compliance-Administrator oder Daten Ermittlungs Rolle ist erforderlich, um eine Klassifizierung zu trainieren.
+- Die Rolle "Compliance-Administrator" ist erforderlich, um eine Klassifizierung zu trainieren.
 
 Sie benötigen Konten mit diesen Berechtigungen für die Verwendung von Klassifizierungen in den folgenden Szenarien:
 
@@ -101,7 +101,7 @@ Nachdem die Schulungs fähigen Klassifizierung genügend positive Beispiele zum 
    > [!TIP]
    > Wenn Sie eine neue Website und einen neuen Ordner für Ihre Seed-Daten erstellen, lassen Sie mindestens eine Stunde für diesen Standort indiziert werden, bevor Sie die Schulungs Klassifizierung erstellen, die diese Startdaten verwendet.
 
-3. Melden Sie sich bei Microsoft 365 Compliance Center mit dem Compliance-Administrator oder der Rolle "Sicherheitsadministrator" an, und öffnen Sie **Microsoft 365 Compliance Center** oder die Datenklassifizierung für das **Microsoft 365 Security Center**  >  **Data classification**.
+3. Melden Sie sich bei Microsoft 365 Compliance Center mit dem Compliance-Administrator oder der Rolle "Sicherheitsadministrator" an, und öffnen Sie **Microsoft 365 Compliance Center** oder die Datenklassifizierung für das **Microsoft 365 Security Center**  >  .
 
 4. Klicken Sie auf die Registerkarte **Schulungs Klassifizierung** .
 

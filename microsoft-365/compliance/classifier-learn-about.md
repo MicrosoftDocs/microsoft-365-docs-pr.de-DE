@@ -1,5 +1,5 @@
 ---
-title: Weitere Informationen zu trainierbaren Klassifizierern (Vorschau)
+title: Informationen zu Schulungs Klassifizierern
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -18,14 +18,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Eine Microsoft 365-schulungsable-Klassifizierung ist ein Tool, mit dem Sie verschiedene Arten von Inhalten erkennen können, indem Sie positive und negative Beispiele für Ihre Untersuchung geben. Nach der Schulung der Klassifizierung bestätigen Sie, dass die Ergebnisse korrekt sind. Anschließend können Sie die Inhalte Ihrer Organisation durchsuchen und klassifizieren, um Aufbewahrungs-oder Vertraulichkeits Bezeichnungen anzuwenden oder Sie in Datenverlust Verhinderung (DLP) oder in Aufbewahrungsrichtlinien einzubeziehen.
-ms.openlocfilehash: 77ebefe338f393a916f0a6844b42b16e3d011d49
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+ms.openlocfilehash: d5e7eb891e4cff2fc220d1e9264839d05ed11bd2
+ms.sourcegitcommit: 54d1a2f363b2d5b63aae258c3cec0573a08f2866
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49620161"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49752639"
 ---
-# <a name="learn-about-classifiers-preview"></a>Informationen zu Klassifizierungen (Vorschau)
+# <a name="learn-about-classifiers"></a>Informationen zu Klassifizierungen
 
 Das klassifizieren und kennzeichnen von Inhalten, damit es geschützt und ordnungsgemäß behandelt werden kann, ist der Ausgangspunkt für die Informationsschutz Disziplin. Microsoft 365 verfügt über drei Möglichkeiten zum Klassifizieren von Inhalten.
 
@@ -103,7 +103,7 @@ Microsoft 365 verfügt über fünf vorab ausgebildete Klassifizierungen:
 - **Profanität**: erkennt eine bestimmte Kategorie von Textelementen anstößiger Sprache, die Ausdrücke enthalten, die die meisten Personen in Verlegenheit bringen
 - **Threat**: erkennt eine bestimmte Kategorie von Textelementen anstößiger Sprache im Zusammenhang mit Bedrohungen, um Gewalt zu begehen oder physischen Schaden oder einer Person oder einer Eigenschaft zu Schaden
 
-Diese werden in der Ansicht " **Microsoft 365 Compliance Center**  >  **-Datenklassifizierung (Preview)**"  >  **trainable Klassifizierers** "mit dem Status" angezeigt `Ready to use` .
+Diese werden in der Ansicht **Microsoft 365 Compliance Center**  >  -**Klassifizierungs**  >  **Schulung** mit dem Status `Ready to use` .
 
 ![Klassifizierungen – vorab geschulte-Klassifizierungen](../media/classifiers-ready-to-use-classifiers.png)
 

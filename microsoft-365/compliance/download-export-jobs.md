@@ -17,12 +17,12 @@ search.appverid:
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-mar2020
 description: Installieren und verwenden Sie den Azure Storage Explorer zum Herunterladen von Dokumenten, die aus einer Überprüfungsgruppe in Advanced eDiscovery exportiert wurden.
-ms.openlocfilehash: 4b09521b4a72fc8fda68f5892c899fe76a066809
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: 094dcb4ecc8b1ca73a7ec0238ed20b27d4c16e72
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399162"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751292"
 ---
 # <a name="download-export-jobs-in-an-advanced-ediscovery-case"></a>Herunterladen von Exportaufträgen in einem erweiterten eDiscovery-Fall
 
@@ -42,7 +42,7 @@ Der nächste Schritt besteht darin, die SAS-URL (Shared Access Signature) zu erh
 
 2. Klicken Sie auf der Registerkarte **Exporte** auf den Exportvorgang, den Sie herunterladen möchten.
 
-3. Kopieren Sie auf der Flyout-Seite unter **Standorte**die angezeigte SAS-URL. Falls erforderlich, können Sie Sie in einer Datei speichern, damit Sie in Schritt 3 darauf zugreifen können.
+3. Kopieren Sie auf der Flyout-Seite unter **Standorte** die angezeigte SAS-URL. Falls erforderlich, können Sie Sie in einer Datei speichern, damit Sie in Schritt 3 darauf zugreifen können.
  
    ![Kopieren der unter Standorte angezeigten SAS-URL](../media/eDiscoExportJob.png)
 
@@ -52,7 +52,7 @@ Im letzten Schritt wird der Azure-Speicher-Explorer und die SAS-URL verwendet, u
 
 1. Öffnen Sie den Azure Storage Explorer, den Sie in Schritt 1 installiert haben.
 
-2. Klicken Sie auf das Symbol **Konto hinzufügen** . Alternativ können Sie mit der rechten Maustaste auf **Speicherkonten**klicken.
+2. Klicken Sie auf das Symbol **Konto hinzufügen** . Alternativ können Sie mit der rechten Maustaste auf **Speicherkonten** klicken.
 
    ![Klicken Sie auf das Symbol Konto hinzufügen.](../media/AzureStorageConnect.png)
 
@@ -88,7 +88,7 @@ Im letzten Schritt wird der Azure-Speicher-Explorer und die SAS-URL verwendet, u
 
    Der Exportauftrags Ordner enthält die folgenden Elemente. Die tatsächlichen Elemente im Exportordner werden durch die Exportoptionen bestimmt, die beim Erstellen des Exportauftrags konfiguriert wurden. Weitere Informationen finden Sie unter [Exportieren von Dokumenten aus einem Überprüfungs Satzes](export-documents-from-review-set.md).
 
-    - Export_load_file.csv: Diese CSV-Datei ist ein Detail Exportbericht mit Informationen zu den einzelnen exportierten Dokumenten. Die Datei besteht aus einer Spalte für jede Metadata-Eigenschaft für ein Dokument. Eine Liste und eine Beschreibung der Metadaten, die in diesem Bericht enthalten sind, finden Sie in der Spalte **exportierter Feldname** in der Tabelle in [Document Metadata fields in Advanced eDiscovery](document-metadata-fields.md).
+    - Export_load_file.csv: Diese CSV-Datei ist ein Detail Exportbericht mit Informationen zu den einzelnen exportierten Dokumenten. Die Datei besteht aus einer Spalte für jede Metadata-Eigenschaft für ein Dokument. Eine Liste und eine Beschreibung der Metadaten, die in diesem Bericht enthalten sind, finden Sie in der Spalte **exportierter Feldname** in der Tabelle in [Document Metadata fields in Advanced eDiscovery](document-metadata-fields-in-advanced-ediscovery.md).
     
     - Summary.txt: eine Textdatei, die eine Zusammenfassung des Exports einschließlich Export Statistiken enthält.
     

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch Dateien und E-Mails zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: dafb31f823dc8c63fa19ad8dba0624ee2037b859
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 3f789396c3ee6746277e01f8b5c6a772bcd528ac
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682830"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751429"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -128,11 +128,13 @@ Wenn Sie die Option **Typen vertraulicher Informationen** auswählen, wird diese
 
 ![Typen vertraulicher Informationen für die automatische Zuweisung von Bezeichnungen in Office-Apps](../media/sensitivity-labels-sensitive-info-types.png)
 
-Nachdem Sie die Typen vertraulicher Informationen ausgewählt haben, können Sie die Kriterien eingrenzen, indem Sie die Instanzenanzahl oder Übereinstimmungsgenauigkeit ändern. Weitere Informationen finden Sie unter [Optimieren von Regeln, um die Übereinstimmung zu vereinfachen oder zu erschweren](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
+Ähnlich wie bei der Konfiguration von DLP-Richtlinien können Sie dann Ihre Bedingung verfeinern, indem Sie die Anzahl der Instanzen und die Übereinstimmungsgenauigkeit ändern. Zum Beispiel:
 
-Darüber hinaus können Sie auswählen, ob eine Bedingung alle vertraulichen Informationstypen oder nur einen dieser Typen erkennen muss. Und um Ihre Bedingungen flexibler oder komplexer zu gestalten, können Sie Gruppen hinzufügen und logische Operatoren zwischen den Gruppen verwenden. Weitere Informationen finden Sie unter [Gruppieren und logische Operatoren](data-loss-prevention-policies.md#grouping-and-logical-operators).
+![Optionen für Übereinstimmungsgenauigkeit und Instanzenanzahl](../media/sensitivity-labels-instance-count-match-accuracy.png)
 
-![Optionen für Instanzenanzahl und Übereinstimmungsgenauigkeit](../media/Sensitivity-labels-instance-count-match-accuracy.png)
+Weitere Informationen zu diesen Konfigurationsoptionen finden Sie in der DLP-Dokumentation: [Optimieren von Regeln, um Übereinstimmungen zu vereinfachen oder zu erschweren](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
+
+Darüber hinaus können Sie, ähnlich wie bei der Konfiguration der DLP-Richtlinien, auswählen, ob eine Bedingung alle vertraulichen Informationstypen oder nur einen dieser Typen erkennen muss. Und um Ihre Bedingungen flexibler oder komplexer zu gestalten, können Sie [Gruppen hinzufügen und logische Operatoren zwischen den Gruppen verwenden](data-loss-prevention-policies.md#grouping-and-logical-operators).
 
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>Konfigurieren von trainierbaren Klassifizierungen für eine Bezeichnung
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-mar2020
 description: Verwenden Sie Stichwörter und Bedingungen, um den Umfang der Suche einzuschränken, wenn Sie mithilfe von Advanced eDiscovery in Microsoft 365 nach Daten suchen.
-ms.openlocfilehash: 38322963f04ad67d8675247bdd754ffb1d2f13e8
-ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
+ms.openlocfilehash: 8ec1e099625bb081f8a915f08ac818fddcc2b60d
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49588552"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751112"
 ---
 # <a name="build-search-collection-queries-in-advanced-ediscovery"></a>Erstellen von Such Sammlungsabfragen in Advanced eDiscovery
 
@@ -39,7 +39,7 @@ Alternativ können Sie das Kontrollkästchen **Schlüsselwort Liste anzeigen** a
 
 ![Verwenden der Stichwortliste zum Abrufen von Statistiken zu jedem Stichwort in der Abfrage](../media/KeywordListSearch.png)
 
-Gründe für die Verwendung der Schlüsselwortliste Sie können Statistiken abrufen, die zeigen, wie viele Elemente in der Stichwortliste mit jedem Stichwort übereinstimmen. Dies kann Ihnen helfen, schnell die Schlüsselwörter zu identifizieren, die am häufigsten (und am wenigsten) effektiv sind. Sie können auch eine Stichwort Phrase (umgeben von Klammern) in einer Zeile in der Liste Stichwörter verwenden. Weitere Informationen zu Suchstatistiken finden Sie unter [Suchstatistiken](search-statistics.md).
+Gründe für die Verwendung der Schlüsselwortliste Sie können Statistiken abrufen, die zeigen, wie viele Elemente in der Stichwortliste mit jedem Stichwort übereinstimmen. Dies kann Ihnen helfen, schnell die Schlüsselwörter zu identifizieren, die am häufigsten (und am wenigsten) effektiv sind. Sie können auch eine Stichwort Phrase (umgeben von Klammern) in einer Zeile in der Liste Stichwörter verwenden. Weitere Informationen zu Suchstatistiken finden Sie unter [Suchstatistiken](search-statistics-in-advanced-ediscovery.md).
 
 ## <a name="conditions"></a>Bedingungen
 

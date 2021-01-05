@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Sie können einen Verarbeitungsfehler in einem Dokument in einer Überprüfungsgruppe in Advanced eDiscovery beheben, ohne den Prozess der Massen Fehlerkorrektur durchführen zu müssen.
-ms.openlocfilehash: c318148900d891304ebcb9b4a88abfe52f43c05e
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: 8e5d8d00f507dc5792a1beda018d4c76632b82f7
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285841"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751582"
 ---
 # <a name="single-item-error-remediation-in-advanced-ediscovery"></a>Fehlerbehebung einzelner Elemente in Advanced eDiscovery
 
@@ -39,7 +39,7 @@ Sie können auch nach Dokumenten mit Verarbeitungsfehlern suchen, indem Sie die 
 
 ### <a name="ignore-errors"></a>Fehler ignorieren
 
-Sie können einen Verarbeitungsfehler ignorieren, indem Sie im Fehler Banner Verarbeitung auf **ignorieren** klicken. Wenn Sie einen Fehler ignorieren, wird das Dokument aus dem [Fehler Behebungs Workflow des Massen Fehlers](error-remediation-when-processing-data-in-advanced-ediscovery.md)entfernt. Nachdem ein Fehler ignoriert wurde, ändert sich die Farbe des Dokument Banners und gibt an, dass der Verarbeitungsfehler ignoriert wurde. Sie können die Entscheidung, den Fehler zu ignorieren, jederzeit rückgängig machen, indem Sie auf **Rückgängig**klicken.
+Sie können einen Verarbeitungsfehler ignorieren, indem Sie im Fehler Banner Verarbeitung auf **ignorieren** klicken. Wenn Sie einen Fehler ignorieren, wird das Dokument aus dem [Fehler Behebungs Workflow des Massen Fehlers](error-remediation-when-processing-data-in-advanced-ediscovery.md)entfernt. Nachdem ein Fehler ignoriert wurde, ändert sich die Farbe des Dokument Banners und gibt an, dass der Verarbeitungsfehler ignoriert wurde. Sie können die Entscheidung, den Fehler zu ignorieren, jederzeit rückgängig machen, indem Sie auf **Rückgängig** klicken.
 
 ![Klicken Sie auf ignorieren, um den Verarbeitungsfehler zu ignorieren](../media/SIERimage3.png)
 
@@ -53,7 +53,7 @@ In einigen Fällen müssen Sie möglicherweise einen Verarbeitungsfehler in Doku
 
 Führen Sie die folgenden Schritte aus, um ein einzelnes Dokument zu korrigieren:
 
-1. Klicken **Sie**auf Download  >  **Original** herunterladen, um eine Kopie der Datei auf einen lokalen Computer herunterzuladen.
+1. Klicken **Sie** auf Download  >  **Original** herunterladen, um eine Kopie der Datei auf einen lokalen Computer herunterzuladen.
 
    ![Herunterladen des Dokuments mit dem Verarbeitungsfehler](../media/SIERimage5.png)
 
@@ -76,8 +76,8 @@ Führen Sie die folgenden Schritte aus, um ein einzelnes Dokument zu korrigieren
 
     ![Sie können die korrigierte Datei im systemeigenen Format des Überprüfungs Satzes anzeigen.](../media/SIERimage9.png)
 
-Weitere Informationen dazu, was geschieht, wenn ein Dokument korrigiert wird, finden Sie unter [Was geschieht, wenn Dateien behoben werden](error-remediation.md#what-happens-when-files-are-remediated).
+Weitere Informationen dazu, was geschieht, wenn ein Dokument korrigiert wird, finden Sie unter [Was geschieht, wenn Dateien behoben werden](error-remediation-when-processing-data-in-advanced-ediscovery.md#what-happens-when-files-are-remediated).
 
 ## <a name="search-for-remediated-documents"></a>Suchen nach korrigierten Dokumenten
 
-Sie können nach allen Dokumenten in einem Überprüfungs Satzes suchen, die mithilfe der Bedingung **Schlüsselwörter** korrigiert wurden, und die folgende Eigenschaft: Wert Paar: **IsFromErrorRemediation: true**angeben. Diese Eigenschaft steht auch in der Exportdatei zum Exportieren zur Verfügung, wenn Sie Dokumente aus einem Überprüfungs Sätzen exportieren.
+Sie können nach allen Dokumenten in einem Überprüfungs Satzes suchen, die mithilfe der Bedingung **Schlüsselwörter** korrigiert wurden, und die folgende Eigenschaft: Wert Paar: **IsFromErrorRemediation: true** angeben. Diese Eigenschaft steht auch in der Exportdatei zum Exportieren zur Verfügung, wenn Sie Dokumente aus einem Überprüfungs Sätzen exportieren.

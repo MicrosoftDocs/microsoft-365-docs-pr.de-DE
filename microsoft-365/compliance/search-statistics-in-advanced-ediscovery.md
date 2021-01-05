@@ -3,7 +3,7 @@ title: Suchstatistik im Voraus eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
-author: esclee
+author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Überprüfen Sie Ihre Suchergebnisse, indem Sie die Statistiken anzeigen, die generiert werden, nachdem Sie eine Sammlungs Suche in Advanced eDiscovery ausgeführt haben.
-ms.openlocfilehash: ef5653a76d94272ba5f608149648f1421198929a
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: 5b6cfdaffc7851a00035a4edcc9d490b229c455d
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48286081"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49750776"
 ---
 # <a name="search-statistics-in-advanced-ediscovery"></a>Suchstatistik in Advanced eDiscovery
 

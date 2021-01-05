@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Artikel wird beschrieben, wie Sie mit der Verwendung von Advanced eDiscovery in Microsoft 365 beginnen. Nachdem Sie einige kurze Schritte ausgeführt haben, ist das erweiterte eDiscovery-Tooleinsatz fähig. Der erste Schritt besteht darin, einen Fall zu erstellen und dann erweiterte eDiscovery-Funktionen und-Funktionen zu verwenden.
-ms.openlocfilehash: dd3ddb3e5ef3a46fc0b7b4925b639975167c15d2
-ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
+ms.openlocfilehash: 45443620f294489c3afb4392376c9fe999fa098b
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49350723"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751092"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>Erste Schritte mit Advanced eDiscovery
 
@@ -153,7 +153,7 @@ Um den Einstieg in die Verwendung von Advanced eDiscovery zu erleichtern, finden
 
 2. **[Durchsuchen von Freiheits Datenquellen nach Daten, die für den Fall relevant](collecting-data-for-ediscovery.md)** sind. Nachdem Sie einem Fall Verwalter hinzugefügt haben, verwenden Sie das integrierte Such Tool, um die Speicherorte der Depotdaten nach Daten zu durchsuchen, die für den Fall relevant sein können. Sie verwenden Schlüsselwörter, Eigenschaften und Bedingungen zum [Erstellen von Suchabfragen](building-search-queries.md) , die Suchergebnisse mit den Daten zurückgeben, die für den Fall wahrscheinlich relevant sind. Sie können auch Folgendes tun:
 
-   - Anzeigen von [Suchstatistiken](search-statistics.md) , die Ihnen beim Verfeinern einer Suchabfrage helfen können, um die Ergebnisse einzugrenzen.
+   - Anzeigen von [Suchstatistiken](search-statistics-in-advanced-ediscovery.md) , die Ihnen beim Verfeinern einer Suchabfrage helfen können, um die Ergebnisse einzugrenzen.
 
    - Zeigen Sie eine Vorschau der Suchergebnisse an, um schnell zu überprüfen, ob die relevanten Daten gefunden werden.
 

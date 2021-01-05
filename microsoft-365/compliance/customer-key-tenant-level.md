@@ -1,5 +1,5 @@
 ---
-title: Kundenschlüssel für Microsoft 365 auf Mandantenebene (öffentliche Vorschau)
+title: Kundenschlüssel für Microsoft 365 auf der Mandantenebene (öffentliche Vorschau)
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,12 +15,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Hier erfahren Sie, wie Sie den Kundenschlüssel für alle Daten in Ihrem Microsoft 365-Mandanten einrichten.
-ms.openlocfilehash: eedf0e8c9d56131016bc798af8ae471df3005bdc
-ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
+ms.openlocfilehash: f14bbc0cb6dd29883efa4c8d294d8d65cae98641
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49712525"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751266"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>Übersicht über den Kundenschlüssel für Microsoft 365 auf Mandantenebene (öffentliche Vorschau)
 
@@ -59,7 +59,7 @@ Die meisten dieser Aufgaben werden durch eine Remoteverbindung mit Azure PowerSh
 Stellen Sie vor dem ersten Start Folgendes sicher:
 
 - Sie müssen ein Arbeits-oder Schulkonto verwenden, das über die Administratorrolle "Compliance" verfügt, um den Kundenschlüssel auf Mandantenebene einzurichten.
-- Stellen Sie sicher, dass Sie über die entsprechende Lizenzierung für Ihre Organisation verfügen. Verwenden eines kostenpflichtigen, in Rechnung gestellten Azure-Abonnements mithilfe eines Enterprise-Vertrags oder eines Cloud-Dienstanbieters. Azure-Abonnements, die mit Pay as you go-Plänen oder mit einer Kreditkarte erworben wurden, werden für den Kundenschlüssel nicht unterstützt. Ab dem 1. April 2020 wird der Kundenschlüssel in Office 365 in Office 365 E5, M365 E5, M365 E5 Compliance und M365 E5 Information Protection & Governance-SKUs angeboten. Office 365 Advanced Compliance SKU steht nicht mehr für die Beschaffung neuer Lizenzen zur Verfügung. Vorhandene Office 365 Advanced Compliance-Lizenzen werden weiterhin unterstützt. Während der Dienst mit mindestens einer Lizenz unter dem Mandanten mit der entsprechenden Lizenz aktiviert werden kann, sollten Sie dennoch sicherstellen, dass alle Benutzer, die vom Dienst profitieren, über entsprechende Lizenzen verfügen. Sie benötigen eine der folgenden Lizenzen:
+- Stellen Sie sicher, dass Sie über die entsprechende Lizenzierung für Ihre Organisation verfügen. Verwenden eines kostenpflichtigen, in Rechnung gestellten Azure-Abonnements mithilfe eines Enterprise-Vertrags oder eines Cloud-Dienstanbieters. Azure-Abonnements, die mit Pay as you go-Plänen oder mit einer Kreditkarte erworben wurden, werden für den Kundenschlüssel nicht unterstützt. Ab dem 1. April 2020 wird der Kundenschlüssel in Office 365 in Office 365 E5, M365 E5, M365 E5 Compliance und M365 E5 Information Protection & Governance-SKUs angeboten. Office 365 Advanced Compliance SKU steht nicht mehr für die Beschaffung neuer Lizenzen zur Verfügung. Vorhandene Office 365 Advanced Compliance-Lizenzen werden weiterhin unterstützt. Während der Dienst mit mindestens einer Lizenz unter dem Mandanten mit der entsprechenden Lizenz aktiviert werden kann, sollten Sie dennoch sicherstellen, dass alle Benutzer, die vom Dienst profitieren, über entsprechende Lizenzen verfügen.
 
 ### <a name="create-two-new-azure-subscriptions"></a>Zwei neue Azure-Abonnements erstellen
 

@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Wenn eine Depotbank einem erweiterten eDiscovery-Fall hinzugefügt wird, werden alle Inhalte, die als teilweise indiziert betrachtet wurden, erneut verarbeitet, damit Sie vollständig durchsuchbar sind.
-ms.openlocfilehash: 95e087884b65628565e596dc8ae9f33aadc4cd9f
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 908d01cacc103639e1f9efe965240c33a5296ba9
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527555"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49750756"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>Erweiterte Indizierung der Daten von Verwaltungsberechtigten
 
-Wenn eine Depotbank einem erweiterten eDiscovery-Fall hinzugefügt wird, werden alle Inhalte, die als teilweise indiziert betrachtet wurden, erneut verarbeitet, damit Sie vollständig durchsuchbar sind.  Dieser Vorgang wird als *Erweiterte Indizierung*bezeichnet. Inhalt kann teilweise aus einer Reihe von Gründen indiziert werden, einschließlich des Vorhandenseins von Bildern, nicht unterstützten Dateitypen oder beim Indizieren von Dateigrößenbeschränkungen.
+Wenn eine Depotbank einem erweiterten eDiscovery-Fall hinzugefügt wird, werden alle Inhalte, die als teilweise indiziert betrachtet wurden, erneut verarbeitet, damit Sie vollständig durchsuchbar sind.  Dieser Vorgang wird als *Erweiterte Indizierung* bezeichnet. Inhalt kann teilweise aus einer Reihe von Gründen indiziert werden, einschließlich des Vorhandenseins von Bildern, nicht unterstützten Dateitypen oder beim Indizieren von Dateigrößenbeschränkungen.
 
 Weitere Informationen zur Verarbeitung von Unterstützung und teilweise indizierten Elementen finden Sie unter:
 
@@ -39,11 +39,11 @@ Weitere Informationen zur Verarbeitung von Unterstützung und teilweise indizier
 
 ## <a name="viewing-advanced-indexing-results"></a>Anzeigen erweiterter Indizierungs Ergebnisse
 
-Nachdem der erweiterte Indizierungsprozess abgeschlossen ist, können Sie ein Verständnis der Effektivität der erneuten Verarbeitung erhalten.  In der Ansicht Erweiterte Indizierungs Ergebnisse auf der Registerkarte **Verarbeitung** für einen Fall wird im Diagramm die Anzahl der Elemente aufgeführt, die dem *Hybrid Index*hinzugefügt werden.  Der Hybrid Index ist der Ort, an dem Advanced eDiscovery die wiederaufgearbeiteten Inhalte speichert.
+Nachdem der erweiterte Indizierungsprozess abgeschlossen ist, können Sie ein Verständnis der Effektivität der erneuten Verarbeitung erhalten.  In der Ansicht Erweiterte Indizierungs Ergebnisse auf der Registerkarte **Verarbeitung** für einen Fall wird im Diagramm die Anzahl der Elemente aufgeführt, die dem *Hybrid Index* hinzugefügt werden.  Der Hybrid Index ist der Ort, an dem Advanced eDiscovery die wiederaufgearbeiteten Inhalte speichert.
 
 Diese Ansicht enthält auch die Anzahl der Elemente, die eine Korrektur erfordern, und ein weiteres Diagramm mit Fehlern nach Dateityp. Weitere Informationen finden Sie unter:
 
-- [Beheben von Fehlern beim Verarbeiten von Daten](error-remediation.md)
+- [Beheben von Fehlern beim Verarbeiten von Daten](error-remediation-when-processing-data-in-advanced-ediscovery.md)
 
 - [Korrektur von Fehlern einzelner Elemente](single-item-error-remediation.md)
 

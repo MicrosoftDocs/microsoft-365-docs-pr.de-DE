@@ -1,5 +1,5 @@
 ---
-title: Vorgehensweise Umschulung einer Klassifizierung in Communications Compliance (Vorschau)
+title: Vorgehensweise Umschulung einer Klassifizierung in Communications Compliance
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,20 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Hier erfahren Sie, wie Sie Feedback für eine Lernende Klassifizierung in Communications Compliance bereitstellen.
-ms.openlocfilehash: 1466c211e3a4958f58a7c1f1a6a5a77bed881d60
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: cdb8787715c3e022dfa0aa17cd83cc405aeef955
+ms.sourcegitcommit: 54d1a2f363b2d5b63aae258c3cec0573a08f2866
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132324"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49752649"
 ---
-# <a name="how-to-retrain-a-classifier-in-communications-compliance-preview"></a>Vorgehensweise Umschulung einer Klassifizierung in Communications Compliance (Vorschau)
+# <a name="how-to-retrain-a-classifier-in-communications-compliance"></a>Vorgehensweise Umschulung einer Klassifizierung in Communications Compliance
 
 Eine Microsoft 365-schulungsable-Klassifizierung ist ein Tool, mit dem Sie verschiedene Arten von Inhalten erkennen können, indem Sie Beispiele für die Untersuchung geben. Sobald Sie geschult wurden, können Sie es verwenden, um das Element für die Anwendung von Office-Vertraulichkeits Bezeichnungen, Kommunikationsrichtlinien und Aufbewahrungs Bezeichnungsrichtlinien zu identifizieren.
 
 In diesem Artikel erfahren Sie, wie Sie die Leistung von benutzerdefinierten Schulungs fähigen Klassifizierungen und einigen vorab ausgebildeten Klassifizierungen verbessern können, indem Sie ihnen zusätzliches Feedback bieten.
 
-Weitere Informationen zu den verschiedenen Klassifizierungstypen finden Sie unter [Learn about trainable Klassifizierers (Preview)](classifier-learn-about.md).
+Weitere Informationen zu den verschiedenen Klassifizierungstypen finden Sie unter erfahren Sie mehr [über Lernende Klassifizierungen](classifier-learn-about.md).
 
 ## <a name="permissions"></a>Berechtigungen
 
@@ -52,11 +52,11 @@ Weitere Informationen zum allgemeinen Workflow der Umschulung einer Klassifizier
 > [!NOTE]
 > Eine Klassifizierung muss bereits veröffentlicht und verwendet werden, bevor Sie neu trainiert werden kann.
 
-## <a name="how-to-retrain-a-classifier-in-communication-compliance-policies-preview"></a>Vorgehensweise Umschulung einer Klassifizierung in Communication Compliance Policies (Preview)
+## <a name="how-to-retrain-a-classifier-in-communication-compliance-policies"></a>Vorgehensweise Umschulung einer Klassifizierung in Kommunikations Konformitätsrichtlinien
 
 1. Öffnen Sie die Kommunikations Konformitätsrichtlinie, die eine Klassifizierung als Bedingung verwendet, und wählen Sie eines der identifizierten Elemente aus der Liste **Ausstehend** aus.
 2. Wählen Sie die Auslassungspunkte aus, und optimieren Sie die **Klassifizierung**.
-3. Wählen Sie im **detailed Feedback** -Bereich, wenn das Element ein wahres positives Ergebnis ist, **übereinstimmen**aus.  Wenn es sich bei dem Element um ein falsch positives Ergebnis handelt, es in der Kategorie nicht korrekt enthalten war, wählen Sie **keine Übereinstimmung**aus.
+3. Wählen Sie im **detailed Feedback** -Bereich, wenn das Element ein wahres positives Ergebnis ist, **übereinstimmen** aus.  Wenn es sich bei dem Element um ein falsch positives Ergebnis handelt, es in der Kategorie nicht korrekt enthalten war, wählen Sie **keine Übereinstimmung** aus.
 4. Wenn es eine andere Klassifizierung gibt, die für das Element besser geeignet ist, können Sie es in der Liste **andere Auszubildende Klassifizierer vorschlagen** auswählen. Dadurch wird die andere Klassifizierung ausgelöst, um das Element auszuwerten.
 
 > [!TIP]
@@ -68,7 +68,7 @@ Weitere Informationen zum allgemeinen Workflow der Umschulung einer Klassifizier
 > Diese Informationen werden in Ihrem Mandanten an die Klassifizierung weitergeleitet, und **es geht nicht zurück zu Microsoft**.
 
 6.  Öffnen Sie die Seite **Datenklassifizierung** im **Microsoft 365 Compliance Center**.
-7. Offene **Schulungs Klassifizierer (Vorschau)**.
+7. Offene **Schulungs Klassifizierer**.
 8. Die Klassifizierung, die in Ihrer Communications-Konformitätsrichtlinie verwendet wurde, wird unter der Überschrift " **Umschulung** " angezeigt.
 
 ![Klassifizierung in Umschulungs Status](../media/classifier-retraining.png)
@@ -78,7 +78,7 @@ Weitere Informationen zum allgemeinen Workflow der Umschulung einer Klassifizier
 ![Übersicht über Klassifizierungs-Umschulungs Ergebnisse](../media/classifier-retraining-overview.png)
 
 10. Überprüfen Sie die empfohlene Aktion und die Vorhersage Vergleiche der umgeschulten und derzeit veröffentlichten Versionen der Klassifizierung.
-11. Wenn Sie mit den Ergebnissen der Umschulung zufrieden waren, wählen Sie **erneut veröffentlichen**aus.
+11. Wenn Sie mit den Ergebnissen der Umschulung zufrieden waren, wählen Sie **erneut veröffentlichen** aus.
 12. Wenn Sie mit den Ergebnissen der Umschulung nicht zufrieden sind, können Sie der Klassifizierung in der Schnittstelle Communications Compliance zusätzliches Feedback geben und einen weiteren Umschulungs Zyklus starten oder nichts tun, wenn die aktuell veröffentlichte Version der Klassifizierung weiterhin verwendet wird. 
 
 ## <a name="details-on-republishing-recommendations"></a>Details zur erneuten Veröffentlichung von Empfehlungen
@@ -94,5 +94,5 @@ Wir vergleichen die Leistungszahlen in beiden Elementgruppen für die umgeschult
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Informationen zu Schulungs Klassifizierern (Vorschau)](classifier-learn-about.md)
+- [Informationen zu Schulungs Klassifizierern](classifier-learn-about.md)
 - [Standardmäßig durchforstete Dateinamenerweiterungen und analysierte Dateitypen in SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erstellen Sie Aufbewahrungsbezeichnungen und Richtlinien für das automatische Anwenden von Bezeichnungen, damit Sie Bezeichnungen automatisch auf Inhalte anwenden können, die Sie beibehalten möchten, und nicht benötigte Inhalte löschen können.
-ms.openlocfilehash: b4e1afbc520b7ec046b4af399e7c1c0cd094e8f9
-ms.sourcegitcommit: 5756896ad87e28fac20f7981eaaeacfb0c098254
+ms.openlocfilehash: a79e7a96cc02957b0bac4dba31b24c5727f0483b
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "49730156"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751180"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aufbewahrungsbezeichnungen automatisch anwenden, um Inhalte beizubehalten oder zu löschen
 

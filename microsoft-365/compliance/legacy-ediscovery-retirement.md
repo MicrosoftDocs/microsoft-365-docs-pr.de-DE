@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: In-Place eDiscovery und In-Place Hold (und die entsprechenden PowerShell-Cmdlets) in Exchange Online werden in der ersten Hälfte von 2020 zurückgezogen. Das Search-Mailbox-Cmdlet und die erweiterte eDiscovery v 1.0 werden auch innerhalb desselben Zeitraums zurückgezogen.
-ms.openlocfilehash: e8edda9436d62e07d0f64126a012791080766aba
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: a40cc67b29e33d61d6750792f6a773622a73f678
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877466"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49750878"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Einstellung älterer eDiscovery-Tools
 
@@ -31,7 +31,7 @@ Aufgrund dieser neuen und verbesserten eDiscovery-Funktionalität im Microsoft 3
 
 - In [-Place-eDiscovery](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) und [in-Place-](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds) Speicher in der Exchange-Verwaltungskonsole.
 
-- Die Exchange Online PowerShell-Cmdlets, die In-Place eDiscovery-und In-Place-Aufbewahrungen unterstützen (diese Cmdlets werden gemeinsam als * *-MailboxSearch-* Cmdlets bezeichnet). Dies umfasst die folgenden Cmdlets:
+- Die Exchange Online PowerShell-Cmdlets, die In-Place eDiscovery-und In-Place-Aufbewahrungen unterstützen (diese Cmdlets werden gemeinsam als **-MailboxSearch-* Cmdlets bezeichnet). Dies umfasst die folgenden Cmdlets:
 
   - [New-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/new-mailboxsearch)
 
@@ -111,7 +111,7 @@ In der folgenden Tabelle werden andere Tools beschrieben, die Sie zum Ersetzen d
 </li>
 <li>
 <p>Suchen nach Inhalten in für Exchange Online, SharePoint Online, OneDrive für Unternehmen, Skype for Business, Microsoft Teams, Jammer Gruppen, Microsoft 365 Gruppen und anderen in Office 365 Anwendungen gespeicherten Inhalten</p></li></ul>
-<p>Weitere Informationen finden Sie unter <a href="https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations"> Manage legal Investigations in Office 365</a>.</td>
+</td>
 </tr>
 <tr class="even">
 <td>Aufbewahrung für Aufbewahrungszwecke</td>
@@ -186,7 +186,7 @@ Da diese Funktionen nun im [<span class="underline">Microsoft 365 Compliance Cen
 
 - 1. Juli 2020: Sie können **New-MailboxSearch** nicht verwenden, um neue In-Place eDiscovery-suchen und-In-Place zu erstellen, aber Sie können Cmdlets zum Ausführen, bearbeiten und Löschen vorhandener Suchvorgänge und-Aufbewahrungen auf eigenes Risiko verwenden. Der Microsoft-Support bietet keine Unterstützung mehr für diese Art von Suche und Aufbewahrung.
 
-- 1. Oktober 2020: wie bereits erwähnt, wird die In-Place eDiscovery-&, in der die Exchange-Verwaltungskonsole enthalten ist, in den schreibgeschützten Modus versetzt. Das bedeutet auch, dass Sie die Cmdlets **New-MailboxSearch** , **Start-MailboxSearch** oder **setMailboxSearch** nicht verwenden können. Sie können nur vorhandene suchen und Aufbewahrungen abrufen und entfernen.
+- 1. Oktober 2020: wie bereits erwähnt, wird die In-Place eDiscovery-&, in der die Exchange-Verwaltungskonsole enthalten ist, in den schreibgeschützten Modus versetzt. Das bedeutet auch, dass Sie die Cmdlets **New-MailboxSearch**, **Start-MailboxSearch** oder **setMailboxSearch** nicht verwenden können. Sie können nur vorhandene suchen und Aufbewahrungen abrufen und entfernen.
 
 ### <a name="alternative-tools"></a>Alternative Tools
 
@@ -235,7 +235,7 @@ In der folgenden Tabelle werden andere Tools beschrieben, die Sie zum Ersetzen d
 </tbody>
 </table>
 
-### <a name="faqs-about--mailboxsearch-cmdlets"></a>FAQs zu * **-MailboxSearch-** Cmdlets
+### <a name="faqs-about--mailboxsearch-cmdlets"></a>FAQs zu ***-MailboxSearch-** Cmdlets
 
 **Wir verwenden die Kopie-Suche zum Exportieren von e-Mail-Nachrichten oder Chatnachrichten für Zwecke anderer eDiscovery und rechtlicher Untersuchungen. Welche weiteren Optionen haben wir, nachdem diese Cmdlets ausgemustert wurden?**
 
@@ -341,15 +341,15 @@ Diese Vorgänge in der Exchange Webdienste-API werden von der In-Place eDiscover
 
 ## <a name="advanced-ediscovery-v10"></a>Erweiterte eDiscovery v 1.0
 
-Advanced eDiscovery v 1.0, bei dem es sich um die Version von Advanced eDiscovery handelt, die in einem zentralen eDiscovery-Fall verfügbar ist, indem **Sie auf zu Advanced eDiscovery wechseln** , wird zurückgezogen. Die Funktionalität wurde durch die neue [Erweiterte eDiscovery-Lösung](https://aka.ms/edisco) im Microsoft 365 Compliance Center ersetzt.
+Advanced eDiscovery v 1.0, bei dem es sich um die Version von Advanced eDiscovery handelt, die in einem zentralen eDiscovery-Fall verfügbar ist, indem **Sie auf zu Advanced eDiscovery wechseln**, wird zurückgezogen. Die Funktionalität wurde durch die neue [Erweiterte eDiscovery-Lösung](https://aka.ms/edisco) im Microsoft 365 Compliance Center ersetzt.
 
 So ermitteln Sie, ob Ihre Organisation Advanced eDiscovery v 1.0 verwendet:
 
 1. Wechseln Sie zum [Office 365 Security & Compliance Center](https://protection.office.com).
 
-2. Klicken Sie im linken Navigationsbereich des Security & Compliance Centers auf **eDiscovery > eDiscovery** , und öffnen Sie einen zentralen eDiscovery-Fall.
+2. Klicken Sie im linken Navigationsbereich des Security & Compliance Centers auf **eDiscovery > eDiscovery**, und öffnen Sie einen zentralen eDiscovery-Fall.
 
-3. Wenn die Schaltfläche **auf Erweiterte eDiscovery wechseln** angezeigt wird, wird Sie auf die 1,0-Version von Advanced eDiscovery zurückgezogen, die in den Ruhestand geht. Die Möglichkeit zum Erstellen und Verwalten von Fällen in der zentralen eDiscovery ist nicht betroffen. Nur die Möglichkeit zum Hinzufügen und Analysieren von Falldaten in Advanced eDiscovery v 1.0 (durch Klicken **auf Wechseln zu Advanced eDiscovery** ) wird zurückgezogen.
+3. Wenn die Schaltfläche **auf Erweiterte eDiscovery wechseln** angezeigt wird, wird Sie auf die 1,0-Version von Advanced eDiscovery zurückgezogen, die in den Ruhestand geht. Die Möglichkeit zum Erstellen und Verwalten von Fällen in der zentralen eDiscovery ist nicht betroffen. Nur die Möglichkeit zum Hinzufügen und Analysieren von Falldaten in Advanced eDiscovery v 1.0 (durch Klicken **auf Wechseln zu Advanced eDiscovery**) wird zurückgezogen.
 
 Die neue erweiterte eDiscovery-Lösung in Microsoft 365 (auch bekannt als *Advanced eDiscovery v 2.0* genannt) bietet alle Funktionen der ursprünglichen Lösung, enthält jetzt jedoch einen Verwalter basierten Ansatz zum Identifizieren von Inhalten in anderen Microsoft 365-Diensten, zum Sammeln dieser Inhalte und zum Hinzufügen eines Überprüfungs Satzes, in dem Bearbeiter schnelle Suchabfragen, Tagging und Analysefunktionen nutzen können, um die relevanten Dokumente zu ermitteln. Advanced eDiscovery enthält jetzt eine verbesserte Verarbeitung und Native Viewer für Microsoft-und nicht-Microsoft-Dateitypen, eine vollständige Liste der Dateitypen ist [hier](https://docs.microsoft.com/microsoft-365/compliance/supported-filetypes-ediscovery20) und unterstützte Metadatenfelder befinden sich [hier](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery). Darüber hinaus bietet die neue erweiterte eDiscovery-Lösung eine leistungsstarke Depot Verwaltungsfunktion, mit der Sie in einem erweiterten eDiscovery-Fall auf Inhalte in verschiedenen Diensten eintragen, Benutzer über die Aufbewahrungspflicht Benachrichtigen und Depotbank-Antworten nachverfolgen können.
 
@@ -357,7 +357,7 @@ So greifen Sie auf Advanced eDiscovery v2.0 zu
 
 1. Wechseln Sie zum [Microsoft 365 Compliance Center](https://compliance.microsoft.com).
 
-2. Klicken Sie im linken Navigationsbereich des Microsoft 365 Compliance Centers auf **Ale anzeigen** , und klicken Sie dann auf **eDiscovery > Advanced**.
+2. Klicken Sie im linken Navigationsbereich des Microsoft 365 Compliance Centers auf **Ale anzeigen**, und klicken Sie dann auf **eDiscovery > Advanced**.
 
 Zu diesem Zeitpunkt wird empfohlen, dass Sie mit dem Übergang Ihres eDiscovery-Workflows zur neuen erweiterten eDiscovery-Funktionalität beginnen. Falls erforderlich, können Sie Ihre erweiterten eDiscovery 1,0-Fälle archivieren, indem Sie den Inhalt exportieren und ihn offline speichern. Obwohl Sie weiterhin in den vorhandenen Fällen bis zum 31. Dezember 2020 auf Advanced eDiscovery v 1.0 zugreifen können, bietet der Microsoft-Support nach dem 1. Oktober 2020 keine Unterstützung. Weitere Informationen finden Sie in der folgenden Zeitachse.
 

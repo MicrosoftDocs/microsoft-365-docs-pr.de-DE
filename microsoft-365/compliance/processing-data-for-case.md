@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Übersicht über die Verarbeitung verschiedener Datenarten in Advanced eDiscovery.
-ms.openlocfilehash: c82363a846334ccf47fc28cf0aaa25e92f2bbea9
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: d7969b1ef77fc161cccc85a8dee020ebe21acdb0
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285241"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751512"
 ---
 # <a name="work-with-processing-errors-in-advanced-ediscovery"></a>Arbeiten mit Verarbeitungsfehlern in Advanced eDiscovery
 
@@ -37,6 +37,6 @@ Weitere Informationen finden Sie in den folgenden Artikeln:
 
 - [Erweiterte Indizierung der Daten von Verwaltungsberechtigten](indexing-custodian-data.md)
 
-- [Beheben von Fehlern beim Verarbeiten von Daten](error-remediation.md)
+- [Beheben von Fehlern beim Verarbeiten von Daten](error-remediation-when-processing-data-in-advanced-ediscovery.md)
 
 - [Korrektur von Fehlern einzelner Elemente](single-item-error-remediation.md)

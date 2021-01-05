@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: Konfigurieren Sie erweiterte eDiscovery-Einstellungen, die für alle Überprüfungs Sätze in einem Fall gelten. Dies umfasst Einstellungen für die Analyse und die optische Zeichenerkennung.
-ms.openlocfilehash: dfacab79f635a817b127614f524d00b0297981fb
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: 11932d2172d797ae1913cf28e713d57805ace122
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277083"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751302"
 ---
 # <a name="configure-search-and-analytics-settings-in-advanced-ediscovery"></a>Konfigurieren von Such-und Analyse Einstellungen in Advanced eDiscovery
 
@@ -50,7 +50,7 @@ So konfigurieren Sie die Such-und Analyseeinstellungen für einen Fall:
 
 ## <a name="near-duplicates-and-email-threading"></a>Erkennung von Quasiduplikaten und E-Mail-Threading
 
-In diesem Abschnitt können Sie Parameter für die doppelte Erkennung, in der Nähe der doppelten Erkennung und beim e-Mail-Threading festlegen. Weitere Informationen finden Sie [in der Nähe der doppelten Erkennung](near-duplicates.md) und des [e-Mail-Threadings](email-threading.md).
+In diesem Abschnitt können Sie Parameter für die doppelte Erkennung, in der Nähe der doppelten Erkennung und beim e-Mail-Threading festlegen. Weitere Informationen finden Sie [in der Nähe der doppelten Erkennung](near-duplicate-detection-in-advanced-ediscovery.md) und des [e-Mail-Threadings](email-threading-in-advanced-ediscovery.md).
 
 - **In der Nähe von Duplikaten/e-Mail-Threading:** Wenn die Analyse für die Daten in einem Überprüfungs Satzes ausgeführt wird, werden die doppelte Erkennung, die Erkennung in der Nähe von Duplikaten und das e-Mail-Threading als Teil des Workflows einbezogen.
 
