@@ -14,12 +14,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Wie eine fiktive, aber repräsentative globale Organisation Microsoft 365 für Unternehmen annahm.
-ms.openlocfilehash: 4b17f87008f47d45737fcdbe67d5c8425d4f5530
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: b009e02cde0708c54fbd8e047029dae9f67a145b
+ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371612"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "49749563"
 ---
 # <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Microsoft 365 für Unternehmen für die Contoso Corporation
 
@@ -69,7 +69,7 @@ In den folgenden Artikeln finden Sie weitere Informationen:
 
 Siehe diese zusätzlichen IT-Szenarien und-Konfigurationen:
 
-- [COVID-19-Antwort und Infrastruktur für Remote-und Onsite-Arbeit](../solutions/contoso-remote-onsite-work.md)
+- [COVID-19-Reaktion und Infrastruktur für Arbeiten zu Hause und im Büro](../solutions/contoso-remote-onsite-work.md)
 
   Erfahren Sie, wie Contoso Ihre RAS-Infrastruktur für die COVID-19-Pandemie und ihre neue Installations-und Update Infrastruktur für Remote-und Onsite-Arbeit aktualisiert hat.
 
@@ -86,7 +86,7 @@ Siehe diese zusätzlichen IT-Szenarien und-Konfigurationen:
 Erfahren Sie mehr [über die Contoso Corporation](contoso-overview.md) und die Entwurfsüberlegungen, die bei der Bereitstellung von Microsoft 365 für Unternehmen behoben wurden.
 
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 [Übersicht über Microsoft 365 Enterprise](microsoft-365-overview.md)
 

@@ -5,7 +5,7 @@ author: brendacarter
 f1.keywords:
 - NOCSH
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 01/04/2021
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Verwenden Sie Überwachungs-und Warnungsrichtlinien sowie Anforderungen von Datensubjekten zur Überwachung und Reaktion auf personenbezogene Daten Vorfälle.
-ms.openlocfilehash: 296220ac8b34d9ce10c783194b78ca344e746b84
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 3ae0f2a6528f6188500c7cee7732c6447013eaa6
+ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377199"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "49749587"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>Überwachen und reagieren auf Datenschutz Vorfälle in Ihrer Organisation
 
@@ -78,9 +78,6 @@ Informationen zum Antworten auf einen DSR in Microsoft 365 finden Sie unter [Dat
 
 Wenn ein Benutzer für Microsoft Stream aus Azure Active Directory (Azure AD) gelöscht wird, wenn sein Name einem gebuchten Stream-Video vor diesem Zeitpunkt zugeordnet wurde, bleibt seine e-Mail-Adresse dem Video zugeordnet. Entfernen Sie die Informationen unter [Verwalten gelöschter Benutzer aus Microsoft Stream](https://docs.microsoft.com/stream/managing-deleted-users) .
 
-## <a name="additional-investigative-tools"></a>Zusätzliche Ermittlungs Tools
+## <a name="insider-risk-management-as-an-investigative-tool"></a>Insider Risikomanagement als Ermittlungs Tool
 
-Es folgen zwei zusätzliche Tools, die für die Überwachung, Untersuchung und Remediation von datenschutzbezogenen Vorfällen in Ihrer Organisation hilfreich sein können:
-
-- [Insider Risk Management in Microsoft 365](../compliance/insider-risk-management.md), ein Feature des Microsoft Compliance admin Centers zur Minimierung des internen Risikos, indem es Ihnen ermöglicht, riskante Aktivitäten in Ihrer Organisation zu erkennen, zu untersuchen und Maßnahmen zu ergreifen.
-- [Daten Untersuchungen in Microsoft 365](../compliance/overview-data-investigations.md), ein Feature des Microsoft Compliance admin Centers, um nach vertraulichen, böswilligen oder verfallenen Daten in Microsoft 365 zu suchen und dann zu untersuchen, was geschehen ist, um die entsprechenden Aktionen zur Korrektur des Vorfalls durchzuführen.
+Das [Insider Risikomanagement in Microsoft 365](../compliance/insider-risk-management.md) ist ein Feature des Microsoft Compliance Admin Center, mit dem Sie das interne Risikomini mieren können, indem Sie riskante Aktivitäten in Ihrer Organisation erkennen, untersuchen und Maßnahmen ergreifen können.

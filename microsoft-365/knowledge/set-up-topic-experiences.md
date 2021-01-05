@@ -11,26 +11,30 @@ search.appverid: MET150
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Informationen zum Einrichten von Themen Erfahrungen in Microsoft 365
-ms.openlocfilehash: 3ff822d863e99f7e52089d3efde3d597df9957c7
-ms.sourcegitcommit: 806536f859ac864228797f1f2f23b8f41040a6b4
+ms.openlocfilehash: d221f2932dc2ca9f562800b7b274e35e7f3d1db3
+ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/28/2020
-ms.locfileid: "49735810"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "49749611"
 ---
 # <a name="set-up-topic-experiences-in-microsoft-365"></a>Einrichten von Themen Erfahrungen in Microsoft 365
-
-</br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Li0E]  
-
-</br>
 
 Sie können das Microsoft 365 Admin Center verwenden, um [Themen Erfahrungen](topic-experiences-overview.md)einzurichten und zu konfigurieren. 
 
 Es ist wichtig, die beste Möglichkeit zum Einrichten und Konfigurieren von Themen in Ihrer Umgebung zu planen. Lesen Sie unbedingt [Plan Topic Experiences](plan-topic-experiences.md) , bevor Sie mit den Verfahren in diesem Artikel beginnen.
 
 Sie müssen ein globaler Administrator oder SharePoint-Administrator sein, um auf das Microsoft 365 Admin Center zuzugreifen und Themen Erfahrungen einzurichten.
+
+## <a name="video-demonstration"></a>Videodemonstration
+
+In diesem Video wird das Verfahren zum Einrichten von Themen Erfahrungen in Microsoft 365 dargestellt.
+
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Li0E]  
+
+<br>
 
 ## <a name="set-up-topic-experiences"></a>Topic Experiences einrichten
 

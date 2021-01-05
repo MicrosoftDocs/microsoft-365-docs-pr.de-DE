@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Häufig gestellte Fragen zu Microsoft-Buchungen.
-ms.openlocfilehash: 47bb71476c3fd0b32f9be3e71b188bef6efe2498
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 35e1b71fb7d87d40aa9a3a60d2e3cf108f36c2bf
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561555"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751381"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Häufig gestellte Fragen zu Microsoft-Buchungen
 
@@ -34,6 +34,10 @@ Reservierungen sind standardmäßig für Microsoft 365 Business Premium, Microso
 ### <a name="will-my-customers-see-my-personal-or-business-calendar"></a>Werden meine Kunden meinen persönlichen oder geschäftlichen Kalender sehen?
 
 Ihren Kunden wird nur der Buchungskalender angezeigt, den Sie online für die Dienste, Zeiten und Mitarbeiter veröffentlichen, die Sie registrieren möchten.
+
+### <a name="how-do-i-change-a-bookable-attribute-under-manage-staff"></a>Wie ändere ich ein buchbar-Attribut unter Mitarbeiter verwalten?
+
+Wenn Mitarbeiter Mitglieder hinzugefügt wurden, hätten Sie eine e-Mail erhalten, um die Anforderung zu akzeptieren oder abzulehnen. Sie können dieselbe e-Mail öffnen und "ablehnen" auswählen, damit Sie nicht buchbar sind. Wir haben derzeit keine Möglichkeit, dies innerhalb der APP umzuschalten.
 
 ### <a name="how-do-end-users-access-the-bookings-app"></a>Wie greifen Endbenutzer auf die app "Buchungen" zu?
 
@@ -306,7 +310,7 @@ Damit Buchungen ordnungsgemäß mit den Kalendern ihrer Mitarbeiter synchronisie
    > [!div class="mx-imgBorder"]
    > ![Image von Outlook in App Launcher](../media/bookings-applauncher-outlook.png)
 
-1. Wählen Sie oben auf der Seite **Share** \> **Kalender** freigeben aus.
+1. Wählen Sie oben auf der Seite  \> **Kalender** freigeben aus.
 
    ![Bild des Kalenderfreigabe Menüs](../media/bookings-share-calendar.png)
 
@@ -354,11 +358,11 @@ Wenn dieser Fehler nach einem längeren Zeitraum angezeigt wird oder Sie ihn hä
 
   - [Starten der Verwendung von Microsoft-Buchungen](get-access.md)
 
-  - [Aktivieren oder Deaktivieren von Microsoft-Buchungen](turn-bookings-on-or-off.md)
+  - [Microsoft Bookings an- oder ausschalten](turn-bookings-on-or-off.md)
 
   - [Benutzer einzeln oder in Massen hinzufügen](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users?view=o365-worldwide.)
 
-  - [Hinzufügen von Mitarbeitern zu Buchungen](add-staff.md)
+  - [Mitarbeiter zu Bookings hinzufügen](add-staff.md)
 
   - [Zu automatisierende API-Komponenten nach der Definition der Vorlage](https://docs.microsoft.com/graph/api/bookingbusiness-post-bookingbusinesses)
 

@@ -15,12 +15,12 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 description: Die Roadmap zum Einrichten der Geräteverwaltung für Microsoft 365.
-ms.openlocfilehash: d359cae62fbd1bf2468ad753670ff8e385d6f25b
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 79be47d6bc83c124f2203866986e06181a1f7f3d
+ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398961"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "49749539"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Roadmap für die Geräteverwaltung für Microsoft 365
 
@@ -49,8 +49,8 @@ Um besser zu beurteilen, welche Geräte Verwaltungsoption für Sie am besten gee
 
 Beginnen Sie auf der Grundlage ihrer Bewertung mit der Verwaltung Ihrer Geräte mit:
 
-- [Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide):
-- [Grundlegende Mobilität und Sicherheit](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd).
+- [Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide)
+- [Grundlegende Mobilität und Sicherheit](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd)
  
 ## <a name="identity-and-device-access-recommendations"></a>Empfehlungen für den Identitäts- und Gerätezugriff
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: Wenn Benutzer mit gültigen Geschäfts-oder Schul Konten angemeldet sind, können Sie Cloud-basierte Unterstützungsdienste mit Cortana in Microsoft 365-Erfahrungen erhalten, die die Datenschutz-, Sicherheits-und Konformitäts Zusagen von Office 365 auf Unternehmensebene erfüllen.
-ms.openlocfilehash: aaef43f33bb06bf43d5e68fbc2509686fc8dd371
-ms.sourcegitcommit: 16cbac5eacadd7b30cbca1fd2435ba9098de5e1c
+ms.openlocfilehash: bd296b19d0e21abb39fe39e2a0bb92d0d84d9034
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48785538"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751335"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana in Microsoft 365
 
@@ -37,7 +37,7 @@ Wir konzentrieren uns Cortana auf die Unternehmensproduktivität.
 
 - Im Einklang mit anderen Office 365 Diensten erfüllen Cortana Enterprise Services dieselben Datenschutz-, Sicherheits-und Compliance-Zusagen auf Unternehmensebene wie in den [Online Services-Nutzungsbedingungen (Ost)](https://www.microsoft.com/licensing/product-licensing/products).
 
-- Neue Microsoft 365-Benutzeroberflächen, beispielsweise die e-Mail-Nachricht und das Abspielen von e-Mails, werden mit Cortana Enterprise Services aktiviert und erfüllen diese Zusagen vollständig. Diese Features sind derzeit im Englisch (USA)-Markt für Benutzer mit Postfächern im US-Geo und für Mitarbeiter von multinationalen Unternehmen mit US-Postfächern verfügbar. Weitere Informationen zum Auffinden des Verwendungs Speicherorts finden Sie unter [Anzeigen zusätzlicher Eigenschaftswerte für Konten](https://docs.microsoft.com/microsoft-365/enterprise/view-user-accounts-with-microsoft-365-powershell?view=o365-worldwide#view-additional-property-values-for-accounts).
+- Neue Microsoft 365-Benutzeroberflächen, beispielsweise die e-Mail-Nachricht und das Abspielen von e-Mails, werden mit Cortana Enterprise Services aktiviert und erfüllen diese Zusagen vollständig. Diese Features sind derzeit weltweit verfügbar (Standard-Multi-Mandanten). Weitere Informationen zum Auffinden des Verwendungs Speicherorts finden Sie unter [Anzeigen zusätzlicher Eigenschaftswerte für Konten](https://docs.microsoft.com/microsoft-365/enterprise/view-user-accounts-with-microsoft-365-powershell?view=o365-worldwide#view-additional-property-values-for-accounts).
 
 - Benutzer können eine Verbindung zu Cortana Enterprise-Diensten herstellen, die hier über Cortana in Windows 10 (Version 2004 und höher) beschrieben werden, sowie Clientanwendungen wie Outlook für IOS und Android vorbehaltlich gesonderter Lizenzierungsbedingungen. 
 
@@ -59,7 +59,7 @@ In der folgenden Tabelle wird die Datenverarbeitung für Cortana Enterprise Serv
 |:-----|:-----|
 |**Speicherplatz**  <br/> |Kundendaten werden auf Microsoft-Servern in der Office 365 Cloud gespeichert. Ihre Daten sind Teil Ihres Mandanten. <br/><br/>Sprach-Audio wird nicht beibehalten.  <br/> |
 |**Geo-Aufenthalte**  <br/> |Kundendaten werden auf Microsoft-Servern in der Office 365 Cloud in Geo gespeichert. Ihre Daten sind Teil Ihres Mandanten.  <br/> |
-|**Vermerkdauer**  <br/> |Kundendaten werden gelöscht, wenn das Konto vom mandantenadministrator geschlossen wird oder wenn eine dsgvo-Löschungs Anforderung für Datensubjekt Rechte gestellt wird. <br/><br/>Sprach-Audio wird nicht beibehalten.  <br/> |
+|**Retention**  <br/> |Kundendaten werden gelöscht, wenn das Konto vom mandantenadministrator geschlossen wird oder wenn eine dsgvo-Löschungs Anforderung für Datensubjekt Rechte gestellt wird. <br/><br/>Sprach-Audio wird nicht beibehalten.  <br/> |
 |**Verarbeitung und Vertraulichkeit**  <br/> |Personen, die an der Verarbeitung von Kundendaten und personenbezogenen Daten beteiligt sind (i) verarbeiten diese Daten nur auf Anweisung des Kunden, und (II) ist verpflichtet, die Vertraulichkeit und Sicherheit dieser Daten auch nach Beendigung des Engagements aufrechtzuerhalten.  <br/> |
 |**Verwendung**  <br/> |Microsoft verwendet Kundendaten nur für die Bereitstellung der vereinbarten Dienste und für Zwecke, die mit diesen Diensten kompatibel sind. Das maschinelle Lernen zur Entwicklung und Verbesserung von Modellen ist einer dieser Zwecke. Das maschinelle Lernen erfolgt innerhalb der Office 365 Cloud, und es gibt keine Personen, die Ihre Kundendaten anzeigen, überprüfen oder kennzeichnen. <br/><br/>Ihre Daten werden nicht verwendet, um Werbung zu adressieren.  <br/> |
 
@@ -95,7 +95,7 @@ Einzelne Benutzer können Cortana-VoIP-Unterstützung in den Teams Mobile App te
 
 1. Öffnen Sie die Teams Mobile App, oder wechseln Sie zum Bildschirm Ambient (Home) der Microsoft Teams-Anzeige.
 
-2. Wechseln Sie in der Mobile App Teams zu **Einstellungen** . Wählen Sie in der Microsoft Teams-Anzeige den Benutzer-Avatar aus, und wählen Sie dann Einstellungen aus. Wenn Cortana aktiviert ist, sagen Sie &#8220;Cortana, wechseln Sie zu Einstellungen. &#8221;
+2. Wechseln Sie in der Mobile App Teams zu **Einstellungen**. Wählen Sie in der Microsoft Teams-Anzeige den Benutzer-Avatar aus, und wählen Sie dann Einstellungen aus. Wenn Cortana aktiviert ist, sagen Sie &#8220;Cortana, wechseln Sie zu Einstellungen. &#8221;
 
 3. Wählen Sie **Cortana** aus.
 
@@ -115,7 +115,7 @@ Einzelpersonen können mit den folgenden Schritten das Abspielen von "meine e-Ma
 
 1. Öffnen Sie Outlook Mobile.
 
-2. Wechseln Sie zu **Einstellungen** .
+2. Wechseln Sie zu **Einstellungen**.
   
 3. Wählen Sie **meine e-Mails abspielen** aus.
 
@@ -141,7 +141,7 @@ Wir werden weiterhin weitere Erfahrungen wie die oben genannten durchführen, um
 
 Es folgen zwei Möglichkeiten, um zu überlegen, wie Cortana in Ihrem Unternehmen funktioniert:
 
-**Neue Erfahrungen für Organisationen mit Cortana Enterprise Services** : Cortana Enterprise Services wurden entwickelt, um die Sicherheits-und Compliance-Anforderungen von Organisationen zu erfüllen: 
+**Neue Erfahrungen für Organisationen mit Cortana Enterprise Services**: Cortana Enterprise Services wurden entwickelt, um die Sicherheits-und Compliance-Anforderungen von Organisationen zu erfüllen: 
 
 1. Dies ist ein neuer Dienst, der hier in diesem Dokument erörtert wird.
 
@@ -151,7 +151,7 @@ Es folgen zwei Möglichkeiten, um zu überlegen, wie Cortana in Ihrem Unternehme
 
 4. IT-Administratoren verfügen immer über Steuerelemente für optionale verbundene Funktionen für Cortana, ähnlich wie bei optionalen verbundenen Erfahrungen bei der Verwendung von Office ProPlus-Anwendungen.  
 
-**Vorhandene Dienste für Verbraucher** : Cortana optionale verbundene Dienste sind hauptsächlich für Consumer-Benutzeroberflächen konzipiert und werden derzeit in Windows 10 (Version 1909 und früher) und der Cortana-App auf IOS und Android bereitgestellt.
+**Vorhandene Dienste für Verbraucher**: Cortana optionale verbundene Dienste sind hauptsächlich für Consumer-Benutzeroberflächen konzipiert und werden derzeit in Windows 10 (Version 1909 und früher) und der Cortana-App auf IOS und Android bereitgestellt.
 
 1. Diese Erfahrungen ermöglichen Features wie Wetter, Nachrichten und Datenverkehr.
 

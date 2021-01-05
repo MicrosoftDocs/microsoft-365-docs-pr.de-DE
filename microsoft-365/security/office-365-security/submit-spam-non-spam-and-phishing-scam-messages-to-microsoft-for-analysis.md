@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratoren und Endbenutzer können erfahren, wie Sie e-Mail-Nachrichten (gute e-Mails, die als "schlecht" oder "schlecht" gekennzeichnet sind) zur Analyse an Microsoft senden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 68a0921f85e5b916cd53ebe84e4ea7d35e39967e
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: fe8e3c5ed44c7578764ed0bf19408f4db16e3740
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877705"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751559"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Manuelles übermitteln von Nachrichten an Microsoft zur Analyse
 
@@ -48,9 +48,9 @@ Wenn Sie eine Nachricht erhalten, die durch die Spamfilterung geleitet wurde, di
 
 1. Erstellen Sie eine neue, leere e-Mail-Nachricht mit einem der folgenden Empfänger:
 
-   - **Junk** : `junk@office365.microsoft.com`
+   - **Junk**: `junk@office365.microsoft.com`
 
-   - **Phishing** : `phish@office365.microsoft.com`
+   - **Phishing**: `phish@office365.microsoft.com`
 
 2. Ziehen Sie die Junk-oder Phishing-Nachricht per Drag & Drop in die neue Nachricht. Dadurch wird die Junk-oder Phishing-Nachricht als Anlage in der neuen Nachricht gespeichert. Kopieren und Einfügen des Inhalts der Nachricht oder Weiterleiten der Nachricht (die ursprüngliche Nachricht ist erforderlich, damit die Nachrichtenkopfzeilen überprüft werden können).
 
@@ -90,6 +90,10 @@ Wenn eine Nachricht fälschlicherweise als Spam identifiziert wurde, können Sie
 
 > [!TIP]
 > Administratoren haben verschiedene Möglichkeiten, um zu ermöglichen, dass bestimmte Nachrichten die Spamfilterung überspringen. Ausführliche Informationen finden Sie unter [Create Safe Sender Lists in EoP](create-safe-sender-lists-in-office-365.md).
+
+## <a name="where-is-the-data-from-submissions-to-microsoft-stored"></a>Wo werden die Daten aus Übermittlungen an Microsoft gespeichert?
+
+Die Daten befinden sich im Office 365 Compliance-Grenze in nordamerikanischen Rechenzentren. Die Daten werden von Analysten im Entwicklungsteam überprüft, um die Effektivität der Filter zu verbessern.
 
 ## <a name="create-a-mail-flow-rule-to-receive-copies-of-messages-that-are-reported-to-microsoft"></a>Erstellen einer e-Mail-Fluss Regel zum Empfangen von Kopien von Nachrichten, die an Microsoft gemeldet werden
 
