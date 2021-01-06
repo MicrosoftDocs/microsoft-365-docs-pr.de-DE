@@ -122,13 +122,13 @@
           href: what-the-dlp-functions-look-for.md
     - name: Trainierbare Klassifizierungsmerkmale
       items:
-        - name: Weitere Informationen zu trainierbaren Klassifizierern (Vorschau)
+        - name: Weitere Informationen zu trainierbaren Klassifizierern
           href: classifier-learn-about.md
-        - name: Erste Schritte mit trainierbaren Klassifizierern (Vorschau)
+        - name: Erste Schritte mit trainierbaren Klassifizierern
           href: classifier-get-started-with.md
-        - name: Neutrainieren eines Klassifizierers in der Kommunikationscompliance (Vorschau)
+        - name: Neutrainieren eines Klassifizierers in der Kommunikationscompliance
           href: classifier-how-to-retrain-comms-compliance.md
-        - name: Neutrainieren eines Klassifizierers im Inhalts-Explorer (Vorschau)
+        - name: Neutrainieren eines Klassifizierers im Inhalts-Explorer
           href: classifier-how-to-retrain-content-explorer.md
     - name: Datenklassifizierung
       items:
@@ -629,7 +629,7 @@
             - name: Stichwortabfragen und Suchbedingungen
               href: keyword-queries-and-search-conditions.md
             - name: Suchstatistiken
-              href: search-statistics.md
+              href: search-statistics-in-advanced-ediscovery.md
             - name: Hinzufügen von Suchergebnissen zu einem Prüfdateisatz
               href: add-data-to-review-set.md
         - name: Verwalten von Prüfdateisätzen
@@ -792,83 +792,6 @@
               href: run-reports-in-advanced-ediscovery.md
     - name: Einstellung älterer eDiscovery-Tools
       href: legacy-ediscovery-retirement.md
-- name: Verwalten von Datenuntersuchungen
-  items:
-    - name: Übersicht über Datenuntersuchungen
-      href: overview-data-investigations.md
-    - name: Verwalten von Datenleckvorfällen
-      href: manage-data-spillage-incidents.md
-    - name: Zuweisen von Berechtigungen für Datenuntersuchungen
-      href: data-investigations-permissions.md
-    - name: Erstellen einer neuen Untersuchung
-      href: create-new-investigation.md
-    - name: Suchen nach Daten in einer Untersuchung
-      href: search-for-data.md
-      items:
-        - name: Erstellen von Suchabfragen
-          href: build-search-queries.md
-        - name: Suchstatistiken
-          href: search-statistics.md
-    - name: Überprüfen von Nachweisdaten
-      href: review-data-in-evidence.md
-      items:
-        - name: Abrufen der Daten
-          href: evidence-query.md
-        - name: Kategorisieren von Dokumenten
-          href: tag-documents.md
-        - name: Anmerken und Überarbeiten von Dokumenten
-          href: annotate-and-redact-documents.md
-        - name: Laden von Nicht-Office 365-Daten
-          href: load-non-office365-data.md
-        - name: Beheben von Fehlern beim Verarbeiten von Daten
-          href: error-remediation.md
-        - name: Löschen von Elementen am ursprünglichen Speicherort
-          href: delete-items-from-original-locations.md
-    - name: Durchführen von Analysen zur schnelleren Untersuchung
-      href: run-analytics-to-investigate-faster.md
-      items:
-        - name: E-Mail-Threading
-          href: email-threading.md
-        - name: Erkennen von Quasiduplikaten
-          href: near-duplicates.md
-        - name: Designs
-          href: themes.md
-        - name: Verwenden des Relevanzmoduls
-          href: use-relevance-module.md
-    - name: 'Verwalten von Personen, die für eine Untersuchung relevant sind'
-      href: manage-people-of-interest.md
-      items:
-        - name: 'Indizieren der Daten von Personen, die für eine Untersuchung relevant sind'
-          href: index-data-people-of-interest.md
-        - name: 'Überprüfen der Überprüfungsaktivität von Personen, die für eine Untersuchung relevant sind'
-          href: view-people-of-interest-activity.md
-    - name: Exportieren von Daten aus einer Untersuchung
-      href: export-data.md
-      items:
-        - name: Exportieren von Nachweisdokumenten
-          href: export-documents-from-incident.md
-        - name: Herunterladen von Exportaufträgen
-          href: download-export-jobs-from-a-data-investigation.md
-    - name: Konfigurieren von Untersuchungseinstellungen
-      items:
-        - name: Hinzufügen zu oder Entfernen von Mitgliedern aus einer Untersuchung
-          href: add-remove-members.md
-        - name: Konfigurieren der Such- und Analyseeinstellungen
-          href: configure-search-analytics-settings.md
-        - name: Schließen oder Löschen einer Untersuchung
-          href: close-or-delete-investigation.md
-    - name: Referenz zu Datenuntersuchungen
-      items:
-        - name: Anmerkungen zu dieser Version
-          href: data-investigations-release-notes.md
-        - name: Beschränkungen bei Datenuntersuchungen
-          href: limits-datainvestigations.md
-        - name: Unterstützte Dateitypen
-          href: supported-filetypes-datainvestigations.md
-        - name: Dokumentmetadatenfelder
-          href: document-metadata-fields.md
-        - name: Verwalten von Aufträgen
-          href: manage-jobs.md
 - name: Verwalten von Archiven
   items:
     - name: Identifizieren des auf ein Postfach angewandten Aufbewahrungstyps
