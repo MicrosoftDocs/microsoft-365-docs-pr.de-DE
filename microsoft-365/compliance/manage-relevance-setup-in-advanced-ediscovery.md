@@ -14,13 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
+ROBOTS: NOINDEX, NOFOLLOW
 description: Lesen Sie die Empfehlungen zum Einrichten des Relevanztrainings in Advanced eDiscovery, um Dateien nach ihrer Relevanz zu beurteilen und Analyseergebnisse zu generieren.
-ms.openlocfilehash: a6bec149e11fa80fb57cb811120218fa7f2cc45b
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 8ba09babc91f233514cd0195c3e1da08b07ccb3c
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49662870"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760209"
 ---
 # <a name="manage-relevance-setup-in-advanced-ediscovery-classic"></a>Verwalten der Einrichtung von Relevanz in Advanced eDiscovery (Classic)
 
@@ -69,15 +70,4 @@ Die in diesem Abschnitt beschriebenen Parameter sind in Advanced eDiscovery unte
 
 - Definieren und organisieren Sie Probleme sorgfältig, da sich dies auf die Ergebnisse des Relevanztrainings auswirken kann.
 
-Nachdem die Parameter festgelegt wurden, kann der Prüfer/Experte mit dem Training der Dateien auf der Registerkarte **Relevanz** beginnen. 
-  
-## <a name="see-also"></a>Siehe auch
-
-[Advanced eDiscovery (Classic)](office-365-advanced-ediscovery.md)
-  
-[Definieren von Problemen und Zuweisen von Benutzern](define-issues-and-assign-users.md)
-  
-[Einrichten von Lasten zum Hinzufügen importierter Dateien](set-up-loads-to-add-imported-files.md)
-  
-[Definieren hervorgehobener Schlüsselwörter und erweiterte Optionen](define-highlighted-keywords-and-advanced-options.md)
-
+Nachdem die Parameter festgelegt wurden, kann der Prüfer/Experte mit dem Training der Dateien auf der Registerkarte **Relevanz** beginnen.
