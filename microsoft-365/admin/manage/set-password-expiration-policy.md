@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Hier erfahren Sie, wie Sie im Microsoft 365 Admin Center eine Richtlinie für den Kennwortablauf für Ihre Organisation festlegen.
-ms.openlocfilehash: 39726846d591b2d1f72a89a7dc59038c726a8e80
-ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
+ms.openlocfilehash: 96e9159f3228fb6b7725f2f0d6eb515b108bc32e
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48787522"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751501"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Festlegen der Kennwortablaufrichtlinie für Ihre Organisation
 
@@ -56,14 +56,14 @@ Führen Sie die folgenden Schritte aus, wenn Sie festlegen möchten, dass Benutz
 > [!IMPORTANT]
 > Nur [globale Administratoren](../add-users/about-admin-roles.md) können diese Schritte ausführen.
   
-1. Wechseln Sie im Admin Center zu **Einstellungen** \> **Org-Einstellungen** .
+1. Wechseln Sie im Admin Center zu **Einstellungen** \> **Org-Einstellungen**.
 
 2. Wechseln Sie zur Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Sicherheit & Datenschutz</a>.
  Wenn Sie kein globaler Administrator sind, wird die Option "Sicherheit und Datenschutz" nicht angezeigt.
   
 3. Wählen Sie **Kennwortablaufrichtlinie** aus.
   
-4. Wenn Sie nicht möchten, dass die Benutzer ihre Kennwörter ändern müssen, aktivieren Sie das Kontrollkästchen neben **Festlegen, dass Benutzerkennwörter nach einer Anzahl von Tagen ablaufen** .
+4. Wenn Sie nicht möchten, dass die Benutzer ihre Kennwörter ändern müssen, deaktivieren Sie das Kästchen neben **Festlegen, dass Benutzerkennwörter nach einer Anzahl von Tagen ablaufen**.
   
 5. Geben Sie ein, wie oft Kennwörter ablaufen sollen. Wählen Sie eine Anzahl von Tagen zwischen 14 und 730.
   
