@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Administratoren erfahren hier, wie EOP E-Mail-Authentifizierung (SPF, DKIM und DMARC) verwendet, um Spoofing, Phishing und Spam zu verhindern.
-ms.openlocfilehash: 7c196b68d88187da2890cc886f646c5416ef9a11
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 6a0bf6fd7958f44a9cfbe7ae0600aeb064170437
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131073"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760518"
 ---
 # <a name="email-authentication-in-eop"></a>E-Mail-Authentifizierung in EOP
 
@@ -145,7 +145,7 @@ Sie können diese Methode verwenden, um Probleme mit organisationsinternem und d
 
 - [Ziehen Sie es in Erwägung, DMARC-Einträge für Ihre Domäne](use-dmarc-to-validate-email.md) einzurichten, um Ihre seriösen Absender zu ermitteln.
 
-Microsoft bietet keine detaillierten Implementierungsrichtlinien für SPF, DKIM und DMARC-Einträge. Es gibt jedoch viele Informationen, die online verfügbar sind. Auch gibt es Drittanbieter, die Ihrer Organisation dabei helfen können, E-Mail-Authentifizierungsdatensätze einzurichten.
+Microsoft bietet keine detaillierten Implementierungsrichtlinien für SPF, DKIM und DMARC-Einträge. Es gibt jedoch viele Informationen, die online verfügbar sind. Es gibt auch Drittanbieter, die Ihrer Organisation dabei helfen, E-Mail-Authentifizierungsdatensätze einzurichten.
 
 #### <a name="you-dont-know-all-sources-for-your-email"></a>Sie kennen nicht alle Quellen Ihrer E-Mails
 

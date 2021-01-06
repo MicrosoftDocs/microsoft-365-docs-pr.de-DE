@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Zuweisen der erforderlichen Berechtigungen zum Ausführen von eDiscovery-bezogenen Aufgaben mithilfe des Security & Compliance Centers.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4b95d81114e60c9d805b90b007d40d4c1a2e62b1
-ms.sourcegitcommit: 555b200b618085706dabf8648d27fb6d6427cfce
+ms.openlocfilehash: 4d4be264791c4f3d37d7a88cb3d12d1023b3c347
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "49739788"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49759889"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Zuweisen von eDiscovery-Berechtigungen im Security & Compliance Center
 
@@ -145,10 +145,7 @@ Diese Rolle ermöglicht Benutzern das Anzeigen einer Liste von Elementen, die vo
 
 ### <a name="review"></a>Überprüfung
 
-Diese Rolle ermöglicht Benutzern den Zugriff auf Falldaten in [Advanced eDiscovery (klassisch)](office-365-advanced-ediscovery.md) (auch bekannt als *Advanced eDiscovery v1*). Der primäre Zweck dieser Rolle besteht darin, Benutzern den Zugriff auf Advanced eDiscovery (Classic) zu ermöglichen. Benutzer, denen diese Rolle zugewiesen ist, können die Liste der Fälle auf der Seite " **eDiscovery** " im Security & Compliance Center anzeigen und öffnen, von der Sie Mitglieder sind. Nachdem der Benutzer im Security & Compliance Center auf einen Fall zugegriffen hat, kann er auf " **Advanced eDiscovery" wechseln** , um auf die Falldaten in Advanced eDiscovery (klassisch) zuzugreifen und diese zu analysieren. Diese Rolle erlaubt es dem Benutzer nicht, eine Vorschau der Ergebnisse einer mit dem Fall verbundenen Inhaltssuche zu sehen oder andere Inhaltssuch- oder Fallverwaltungsaufgaben durchzuführen.
-
-> [!NOTE]
-> Zu diesem Zeitpunkt können Benutzer, denen die Überprüfungs Rolle zugewiesen ist (oder ein Mitglied der Rollengruppe Prüfer ist) nicht auf Daten in [Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md) (auch bekannt als *Advanced eDiscovery v 2.0*) zugreifen. Wenn Sie einem Fall in Advanced eDiscovery v 2.0 Mitglieder hinzufügen möchten, damit Sie die Falldaten überprüfen können, muss ein Benutzer Mitglied der Rollengruppe "eDiscovery-Manager" sein.
+Diese Rolle ermöglicht Benutzern den Zugriff auf Überprüfungs Sätze in [Advanced eDiscovery](overview-ediscovery-20.md). Benutzer, denen diese Rolle zugewiesen ist, können die Liste der Fälle auf der Seite " **eDiscovery > erweitert** " im Microsoft 365 Compliance Center anzeigen und öffnen, auf der Sie Mitglieder sind. Nachdem der Benutzer auf einen erweiterten eDiscovery-Fall zugegriffen hat, kann er **Überprüfungs Sätze** für den Zugriff auf Anfragendaten auswählen. Mit dieser Rolle kann der Benutzer keine Vorschau der Ergebnisse einer Sammlungs Suche anzeigen, die mit dem Fall verknüpft ist, oder andere Such-oder Fall Verwaltungsaufgaben ausführen. Benutzer mit dieser Rolle können nur auf die Daten in einem Überprüfungs Satzes zugreifen.
 
 ### <a name="rms-decrypt"></a>RMS-Entschlüsselung
 

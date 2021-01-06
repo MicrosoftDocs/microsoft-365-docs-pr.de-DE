@@ -12,12 +12,12 @@ ms.collection: enabler-strategic
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 18bc5d8d0f80f7cee024f4d6358361509879bd11
-ms.sourcegitcommit: 86f75cf77a7a446a79226ca530bd7b5eb39189cb
+ms.openlocfilehash: 95e1ad15a62762c8b28203e178d4d4ae7906e38a
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49717019"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760242"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint Syntex Adoption: Erste Schritte
 
@@ -31,28 +31,30 @@ Mit den neuen AI-Diensten und-Funktionen können Sie Apps für Inhalts verstehen
 
 |Manuelle Eingabe| Formularverarbeitung | Dokument Verständnis |
 |:-------|:--------|:--------|
-| Dateneingabe und arbeitsintensiv für jeden Inhalt | Verarbeiten digitaler Inhalte – Fotos, Scans, Quittungen, Visitenkarten, Videos mit OCR & Text |  Erfassen von Inhaltstypen und Metadaten aus Verträgen, Lebensläufen und anderen strukturierten Dokumenten |
-| Interaktiv   | Vordefiniert, automatisiert   | Benutzerdefiniert, unterstützt  |
-| Personen, die die Arbeit erledigen | Unterrichtet von Ihren Fachleuten (KMU). Erfassen von Inhaltstypen und Metadaten aus Verträgen, Lebensläufen und anderen strukturierten Dokumenten. | KMU sind dabei wenig involviert. aus Bestellungen, Anwendungen, anderen semi Structured and Structured Documents |
+| Dateneingabe und arbeitsintensiv für jeden Inhalt. | Identifizieren von Dateien und Extrahieren von Daten aus strukturierten oder semi-strukturierten Dokumenten, wie Formularen oder Rechnungen. |  Identifizieren und Extrahieren von Daten aus unstrukturierten Dokumenten wie Buchstaben oder Verträgen, bei denen sich die Text Entitäten, die Sie extrahieren möchten, in Sätzen oder bestimmten Dokumentbereichen befinden. |
+| Interaktive.   |  Benutzerdefiniert, unterstützt.  | Vorgefertigt, automatisiert. |
+| Personen, die die Arbeit erledigen. | Unterrichtet von Ihren Fachleuten (KMU). | KMU sind dabei wenig involviert. |
 
-In der folgenden Tabelle wird erläutert, was Sie bei der Verwendung von SharePoint Syntex erhalten:
+In der folgenden Tabelle wird die Verfügbarkeit und Lizenzierung für SharePoint-Syntex erläutert:
 
 | Formularverarbeitung | Dokument Verständnis |
 |:-------|:-------|
-| Verfügbar in APAC, Australien, Kanada, EU, JP, Latam, UK, USA | Verfügbar in allen Regionen |
-| Verwendet AI Builder Credits-1M Credits = 2000 Pages; Der Verbrauch beträgt etwa 2000 Rechnungen = 2 Einheiten. Power Automation ist erforderlich-wenn Sie mehr benötigen, können Sie Sie hinzufügen. 1M Credits, die für 300 + erworbene Lizenzen reserviert wurden. Sie können auch Guthaben separat erwerben. | Modelle funktionieren in allen lateinischen Alphabet Sprachen. Zusätzlich zu Englisch: Deutsch, Schwedisch, Französisch, Spanisch, Italienisch und Portugiesisch. |
-| Bereitstellen für die standardmäßige gemeinsame Datendienst Umgebung| Verfügt nicht über Kapazitätseinschränkungen. |
+| Die Formularverarbeitung basiert auf der Power Platform. <br>Informationen zur globalen Verfügbarkeit für Power Platform und AI Builder finden Sie unter [Power Platform Availability](https://dynamics.microsoft.com/geographic-availability/). | In allen Regionen verfügbar. |
+| Verwendet AI Builder Credits.<br>Guthaben können in Batches von 1M erworben werden.<br>1M Credits sind enthalten, wenn 300 + SharePoint Syntex-Lizenzen erworben wurden.<br>1M Credits erlaubt die Verarbeitung von 2000 Datei Seiten. | Modelle funktionieren in allen lateinischen Alphabet Sprachen. Zusätzlich zu Englisch: Deutsch, Schwedisch, Französisch, Spanisch, Italienisch und Portugiesisch. |
+| Bereitgestellt für die standardmäßige gemeinsame Datendienst Umgebung. | Verfügt nicht über Kapazitätseinschränkungen. |
+
+Weitere Informationen zu den Credits und Einheiten des AI-Generators finden Sie unter [AI Builder Licensing](https://docs.microsoft.com/ai-builder/administer-licensing).
 
 Es gibt zwei verschiedene Möglichkeiten, ihre Inhalte zu verstehen. Der verwendete Modelltyp basiert auf dem Dateiformat und dem Anwendungsfall:
 
 | Formularverarbeitung | Dokument Verständnis |
 |:-------|:-------|
-| Erstellt aus der Dokumentbibliothek | Erstellt im inhaltscenter, Teil von SharePoint-Syntex |
-| Im AI-Generator erstelltes Modell | In systemeigener Schnittstelle erstelltes Modell |
-| Wird für semi-strukturierte Dateiformate verwendet | Wird für unstrukturierte Dateiformate verwendet |
-| Settable-Klassifizierung | Schulungs-und Klassifizierungs Module mit optionalen Extraktionsfunktionen |
-| Auf eine einzelne Bibliothek beschränkt | Kann auf mehrere Bibliotheken angewendet werden |
-| Zug im PDF-, JPG-, PNG-Format, insgesamt 50 MB/500 PP | Zug auf 5-10 PDF-, Office-oder e-Mail-Dateien, einschließlich negativer Beispiele |
+| Erstellt aus der Dokumentbibliothek. | Erstellt im inhaltscenter, Teil von SharePoint-Syntex. |
+| In Ai Builder erstelltes Modell. | Modell, das in systemeigener Schnittstelle erstellt wurde. |
+| Wird für semi-strukturierte Dateiformate verwendet. | Wird für unstrukturierte Dateiformate verwendet. |
+| Settable-Klassifizierung. | Schulungs-und Klassifizierungs Module mit optionalen Extraktionsfunktionen. |
+| Auf eine einzelne Bibliothek beschränkt. | Kann auf mehrere Bibliotheken angewendet werden. |
+| Zug auf PDF, JPG, PNG-Format, insgesamt 50 MB/500 PP. | Zug auf 5-10 PDF-, Office-oder e-Mail-Dateien, einschließlich negativer Beispiele. |
 
 SharePoint Syntex integriert sich in Microsoft 365-Compliance-Features wie:
 
@@ -178,7 +180,7 @@ Um sich für die Implementierung von SharePoint-Syntex vorzubereiten, müssen Si
 1. Planen des Endstatus
     - Dokument Understanding Models sind die Mittel, nicht das Ende.
     - Planen Sie die Nutzbarmachung des Werts extrahierter Metadaten mit:
-      - Suchen
+      - Suche
       - Filtern und Anzeigen von Formatierungen
       - Compliance
       - Automatisierung

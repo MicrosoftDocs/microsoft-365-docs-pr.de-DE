@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Verwenden Sie Microsoft Endpoint Manager zur Verwaltung Ihrer Geräte, PCs und anderen Endgeräte.
-ms.openlocfilehash: 291c1111bbfaf9a549c0d2ac22dab450a32a6a96
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: bca3e8e79264a2218dd1036e50be1c9ab29d2b8a
+ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845264"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "49749599"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Schritt 4. Bereitstellen der Endpunktverwaltung für Ihre Geräte, PCs und andere Endpunkte
 
@@ -87,7 +87,7 @@ Weitere Informationen finden Sie in dieser [Übersicht über Windows Autopilot](
 - [Registrieren verschiedener Gerätetypen für die mobile Geräteverwaltung](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
 - [Informieren Ihrer Endbenutzer über Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/end-user-educate)
  
-## <a name="results-of-step-3"></a>Ergebnisse von Schritt 3
+## <a name="results-of-step-4"></a>Ergebnisse von Schritt 4
 
 Sie verwenden die Suite der Funktionen und Möglichkeiten von Endpoint Manager, um mobile Geräte, Desktop-Computer, virtuelle Maschinen, eingebettete Geräte und Server zu verwalten.
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
 description: Microsoft 365 bietet eine Reihe von verschiedenen eDiscovery-Tools, die Sie zum Suchen und Speichern von Inhalten verwenden können, die an unterschiedlichen Orten wie Exchange-Postfächern, SharePoint-und OneDrive für Unternehmen-Websites, Microsoft 365-Gruppen und Skype for Business Unterhaltungen gefunden wurden.
-ms.openlocfilehash: 2f18d3a9559293e071b7060f0e4a01a7352097c1
-ms.sourcegitcommit: 94f2f8e3e6bc3946d8b3cf798b3eb77a49ffd12a
+ms.openlocfilehash: a6708bdf012d2cfbb182d624c8c889de5fb51c7f
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45148125"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760219"
 ---
 # <a name="ediscovery-in-microsoft-365"></a>eDiscovery in Microsoft 365
 
@@ -34,9 +34,6 @@ Microsoft 365 bietet die folgenden eDiscovery-Tools:
 - [Core eDiscovery](#core-ediscovery)
 
 - [Erweiterte eDiscovery](#advanced-ediscovery)
-
-> [!NOTE]
-> Advanced eDiscovery (klassisch) (auch *Advanced eDiscovery v 1.0*genannt), bei dem es sich um die Version von Advanced eDiscovery handelt, die in einem zentralen eDiscovery-Fall verfügbar ist, indem **Sie auf zu Advanced eDiscovery wechseln**, wird zurückgezogen. Die Funktionalität wurde durch die erweiterte eDiscovery-Lösung in Microsoft 365 ersetzt. Weitere Informationen zum Ruhestand von Advanced eDiscovery v 1.0 finden Sie unter [Retirement of Legacy eDiscovery Tools](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).
 
 ## <a name="content-search"></a>Inhaltssuche
 
@@ -52,7 +49,7 @@ Die folgende Tabelle enthält Links zu Themen, die Sie bei der Verwendung des In
 |[Exportieren eines Inhaltssuchberichts](export-a-content-search-report.md) <br/> |Hier erfahren Sie, wie Sie den Exportbericht herunterladen, ohne die tatsächlichen Suchergebnisse exportieren zu müssen.  <br/> |
 |[Grenzwerte für die Inhaltssuche](limits-for-content-search.md) <br/> |Erfahren Sie mehr über die Grenzen des Inhalts Suchtools, beispielsweise die maximale Anzahl von Suchvorgängen, die gleichzeitig ausgeführt werden können.  <br/> |
 |[Nicht indizierte Elemente in der Inhaltssuche](partially-indexed-items-in-content-search.md) <br/> |Informationen zu nicht indizierten Elementen in Exchange und SharePoint, die Sie in die geschätzte Suchergebnis Statistik einbeziehen können, wenn Sie eine Suche ausführen. Sie können auch nicht indizierte Elemente einschließen, wenn Sie Suchergebnisse exportieren.  <br/> |
-|[Suchen nach und Löschen von E-Mail-Nachrichten](search-for-and-delete-messages-in-your-organization.md) <br/> |In diesem Artikel erfahren Sie, wie Sie mithilfe der Inhaltssuche nach e-Mail-Nachrichten aus *allen* Postfächern in Ihrer Organisation suchen und löschen. Dies kann Ihnen helfen, potenziell schädliche oder risikoreiche e-Mails zu finden und zu entfernen.  <br/> |
+|[Suchen nach und Löschen von E-Mail-Nachrichten](search-for-and-delete-messages-in-your-organization.md) <br/> |In diesem Artikel erfahren Sie, wie Sie mithilfe der Inhaltssuche nach e-Mail-Nachrichten aus  *allen*  Postfächern in Ihrer Organisation suchen und löschen. Dies kann Ihnen helfen, potenziell schädliche oder risikoreiche e-Mails zu finden und zu entfernen.  <br/> |
 |[Verwenden der Inhaltssuche zum Durchsuchen von Postfach-und OneDrive-Konten nach einer Liste von Benutzern](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) <br/> |Hier erfahren Sie, wie Sie ein Skript zum Durchsuchen des Postfachs und einer Drive for Business-Website für eine Gruppe von Benutzern verwenden. Eine Liste aller OneDrive-Standorte finden Sie unter [Erstellen einer](https://docs.microsoft.com/onedrive/list-onedrive-urls) Liste mit e-Mail-Adressen, die Sie beim Erstellen und Ausführen von Inhalts suchen für die Quellinhalts Speicherorte verwenden können.  <br/> |
 |[Verwenden der Inhaltssuche für gezielte Sammlungen](use-content-search-for-targeted-collections.md) <br/> |Erfahren Sie, wie Sie mithilfe des Windows PowerShell Skripts in diesem Artikel gezielte Sammlungen mithilfe der Inhaltssuche durchführen. Eine gezielte Sammlung bedeutet, dass Sie einen bestimmten Ordner durchsuchen möchten, da Sie sicher sind, dass Elemente, die auf einen Fall reagieren (oder privilegierte Elemente) sich in diesem Ordner befinden. Verwenden Sie das Skript in diesem Artikel, um die Ordner-ID oder den Pfad für das jeweilige Postfach oder die Websiteordner zu erhalten, die Sie durchsuchen möchten.  <br/> |
 |||
@@ -74,7 +71,7 @@ Die folgende Tabelle enthält Links zu Themen, die Sie bei der Verwendung von ze
   
 ## <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
-Die erweiterte eDiscovery-Lösung in Microsoft 365 (auch *Advanced eDiscovery v 2.0*genannt) basiert auf den vorhandenen eDiscovery-und Analysefunktionen in Office 365. Diese eDiscovery-Lösung bietet einen End-to-End-Workflow zum aufbewahren, sammeln, überprüfen, analysieren und Exportieren von Inhalten, die auf interne und externe Untersuchungen in Ihrer Organisation reagieren. Außerdem können legale Teams Verwalter und den gesamten Workflow für rechtliche Aufbewahrungen verwalten, um mit in einem Fall beteiligten Verwaltern zu kommunizieren.
+Die erweiterte eDiscovery-Lösung in Microsoft 365 (auch *Advanced eDiscovery v 2.0* genannt) basiert auf den vorhandenen eDiscovery-und Analysefunktionen in Office 365. Diese eDiscovery-Lösung bietet einen End-to-End-Workflow zum aufbewahren, sammeln, überprüfen, analysieren und Exportieren von Inhalten, die auf interne und externe Untersuchungen in Ihrer Organisation reagieren. Außerdem können legale Teams Verwalter und den gesamten Workflow für rechtliche Aufbewahrungen verwalten, um mit in einem Fall beteiligten Verwaltern zu kommunizieren.
 
 |**Thema**|**Beschreibung**|
 |:-----|:-----|

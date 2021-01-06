@@ -1,5 +1,5 @@
 ---
-title: Beheben von Problemen, die mit dem Readiness Assessment Tool gefunden wurden
+title: Lösen von Problemen, die durch das Tool zur Bereitschaftsbewertung gefunden wurden
 description: Detaillierte Aktionen, die für jedes von dem Tool gefundene Problem ausgeführt werden sollten
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f23209568fcfc2db4a22dbb034890c5a25e21bf7
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: 3c3c0d21ca93c0d93d17cefbc6ce630d00a16d09
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527733"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760124"
 ---
-# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Beheben von Problemen, die mit dem Readiness Assessment Tool gefunden wurden
+# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Lösen von Problemen, die durch das Tool zur Bereitschaftsbewertung gefunden wurden
 
 Für jede Überprüfung meldet das Tool eine von vier möglichen Ergebnissen:
 
@@ -26,7 +26,10 @@ Für jede Überprüfung meldet das Tool eine von vier möglichen Ergebnissen:
 |Bereit     | Vor Abschluss der Registrierung ist keine Aktion erforderlich.        |
 |Empfehlung    | Befolgen Sie die Schritte im Tool oder in diesem Artikel, um die besten Erfahrungen bei der Registrierung und für Benutzer zu finden. Sie *können* die Registrierung abschließen, aber Sie müssen diese Probleme beheben, bevor Sie das erste Gerät bereitstellen.        |
 |Nicht bereit | *Die Registrierung schlägt fehl, wenn Sie diese Probleme nicht beheben.* Befolgen Sie die Schritte im Tool oder in diesem Artikel, um Sie zu beheben.        |
-|Fehler | Die von Ihnen verwendete Azure Active Director (AD)-Rolle verfügt nicht über ausreichende Berechtigungen zum Ausführen dieser Überprüfung. |
+|Error | Die von Ihnen verwendete Azure Active Director (AD)-Rolle verfügt nicht über ausreichende Berechtigungen zum Ausführen dieser Überprüfung. |
+
+> [!NOTE]
+> Die von diesem Tool gemeldeten Ergebnisse reflektieren den Status Ihrer Einstellungen nur zu dem Zeitpunkt, zu dem Sie ihn ausgeführt haben. Wenn Sie später Änderungen an Richtlinien in Microsoft InTune, Azure Active Directory oder Microsoft 365 vornehmen, können Elemente, die "bereit" waren, "nicht bereit" werden. Um Probleme mit Microsoft Managed Desktop-Vorgängen zu vermeiden, überprüfen Sie die in diesem Artikel beschriebenen spezifischen Einstellungen, bevor Sie Richtlinien ändern.
 
 ## <a name="microsoft-intune-settings"></a>Microsoft InTune-Einstellungen
 
@@ -75,7 +78,7 @@ Sie haben mindestens eine Richtlinie für den bedingten Zugriff, die auf alle Be
 
 Stellen Sie sicher, dass alle Richtlinien für den bedingten Zugriff die Azure Ad Gruppe für **moderne Arbeitsplatz Dienstkonten** ausschließen. Schritte finden Sie unter [Anpassen des bedingten Zugriffs](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/conditional-access). Die **Dienstkonten für moderne Arbeitsplatz Dienste** Azure Ad Gruppe ist eine dynamische Gruppe, die wir bei der Registrierung für den Dienst erstellen. Sie müssen zurückkehren, um diese Gruppe nach der Registrierung auszuschließen. Weitere Informationen zu diesen Dienstkonten finden Sie unter [Standard Operating Procedures](../service-description/operations-and-monitoring.md#standard-operating-procedures).
 
-**Error**
+**Fehler**
 
 Die Intune-Administrator Rolle verfügt über keine ausreichenden Berechtigungen für diese Überprüfung. Sie benötigen auch eine dieser Azure AD Rollen, die zum Ausführen dieser Überprüfung zugewiesen sind:
 
@@ -165,7 +168,7 @@ Für Richtlinien für bedingten Zugriff, die allen Benutzern zugewiesen sind, si
 
 Stellen Sie sicher, dass alle bedingten Zugriffsrichtlinien, die MFA erfordern, den **modernen Arbeitsplatz-alle** Azure Ad Gruppe ausschließen. Weitere Informationen finden Sie unter [bedingter Zugriffsrichtlinien](#conditional-access-policies) und [bedingter Zugriff: MFA für alle Benutzer erforderlich](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa). Die Gruppe " **moderner Arbeitsplatz-alle** Azure AD" ist eine dynamische Gruppe, die wir erstellen, wenn Sie sich für Microsoft Managed Desktop registrieren, damit Sie nach der Registrierung zurückkehren müssen, um diese Gruppe auszuschließen.
 
-**Error**
+**Fehler**
 
 Die Intune-Administrator Rolle verfügt über keine ausreichenden Berechtigungen für diese Überprüfung. Sie benötigen auch eine dieser Azure AD Rollen, die zum Ausführen dieser Überprüfung zugewiesen sind:
 

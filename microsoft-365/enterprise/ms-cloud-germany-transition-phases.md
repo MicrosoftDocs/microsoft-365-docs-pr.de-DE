@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Verstehen der Aktionen und Auswirkungen der Migrationsphasen für die Verschiebung von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in der neuen deutschen Rechenzentrumsregion.'
-ms.openlocfilehash: 4a54fed8a109c3d03b735a5db3cb48060f5c438f
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
-ms.translationtype: HT
+ms.openlocfilehash: 940ad0799aca7ead20d226cfcf3cc4b7b21c6cdb
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719392"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760198"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>Aktionen und Auswirkungen der Migrationsphasen für die Migration von Microsoft Cloud Deutschland (generell)
 
@@ -77,6 +77,10 @@ Zusätzliche Überlegungen:
 - Wenn Ihre Organisation immer noch SharePoint 2010-Workflows verwendet, werden diese nach 31. Dezember 2021 nicht mehr funktionieren. SharePoint 2013-Workflows bleiben unterstützt, obwohl sie ab 1. November 2020 für neue Mandaten standardmäßig ausgeschaltet werden. Wenn die Migration zu den SharePoint Onlinediensten abgeschlossen ist, empfehlen wir, dass Sie zu Power Automate oder anderen unterstützten Lösungen wechseln.
 
 - Nach Abschluss der OneDrive-Migration in die Region Deutschland werden Datenindizes neu erstellt. Funktionen, die von Suchindizes abhängig sind, können betroffen sein, während die Neuindizierung im Gange ist.
+
+- Kunden von Microsoft Cloud Deutschland, deren SharePoint Online Instanz noch nicht migriert wurde, müssen SharePoint Online PowerShell-Modul/Microsoft. SharePointOnline. CSOM-Version 16.0.20616.12000 oder darunter bleiben. Andernfalls treten Verbindungen mit SharePoint Online über PowerShell oder das clientseitige Objektmodell fehl.
+
+- Kunden von Microsoft Cloud Deutschland, deren SharePoint Online Instanz migriert wurde, müssen SharePoint Online PowerShell-Modul/Microsoft. SharePointOnline. CSOM auf Version 16.0.20717.12000 oder höher aktualisieren. Andernfalls treten Verbindungen mit SharePoint Online über PowerShell oder das clientseitige Objektmodell fehl.
 
 
 ## <a name="skype-for-business-online"></a>Skype for Business Online

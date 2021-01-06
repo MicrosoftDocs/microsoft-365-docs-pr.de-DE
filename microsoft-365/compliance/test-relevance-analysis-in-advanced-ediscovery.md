@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
+ROBOTS: NOINDEX, NOFOLLOW
 description: Erfahren Sie, wie Sie die Registerkarte "Test" nach der Batch Berechnung in Advanced eDiscovery verwenden, um die Gesamtqualität der Verarbeitung zu testen, zu vergleichen und zu validieren.
-ms.openlocfilehash: e408d79aac8015da210f983b7b388ace84fc383a
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 52198dc5218c49598403c3f1ece201fc4f00dd47
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663418"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760321"
 ---
 # <a name="test-relevance-analysis-in-advanced-ediscovery-classic"></a>Test Relevanz Analysis in Advanced eDiscovery (klassisch)
 
@@ -109,18 +110,3 @@ Der Test "Test the Slice" führt Tests aus, die dem Test "Test the Rest" ähneln
 10. Überprüfen und markieren Sie die Dateien auf der Registerkarte **Relevanz- \> Tag** , und klicken Sie dann auf **berechnen**. 
     
 11. Auf der Registerkarte Test können Sie auf **Ergebnisse anzeigen** klicken, um die Testergebnisse anzuzeigen. 
-    
-## <a name="see-also"></a>Siehe auch
-
-[Advanced eDiscovery (Classic)](office-365-advanced-ediscovery.md)
-  
-[Grundlegendes zur Relevanz der Bewertung](assessment-in-relevance-in-advanced-ediscovery.md)
-  
-[Tagging und Bewertung](tagging-and-assessment-in-advanced-ediscovery.md)
-  
-[Tagging und Relevanz Training](tagging-and-relevance-training-in-advanced-ediscovery.md)
-  
-[Analyse der nach Verfolgungs Relevanz](track-relevance-analysis-in-advanced-ediscovery.md)
-  
-[Entscheidung basierend auf den Ergebnissen](decision-based-on-the-results-in-advanced-ediscovery.md)
-

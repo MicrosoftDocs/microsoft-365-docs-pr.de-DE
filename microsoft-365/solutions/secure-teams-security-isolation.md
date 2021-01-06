@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Hier erfahren Sie, wie Sie ein Team mit einer eindeutigen Vertraulichkeitsbezeichnung für Sicherheit erstellen.
-ms.openlocfilehash: c7230f23a21804530863f125003e4db0eaeeeb60
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 03252cad8449ee83cd757fac3ae74db6df68bcfe
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616296"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751143"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Konfigurieren eines Teams mit Sicherheitsisolierung
 
@@ -101,33 +101,36 @@ Wenn Sie ein Team für die Sicherheitsisolierung konfigurieren möchten, verwend
 
 Wenn Sie über einen internen Partner oder eine Gruppe von Interessengruppen verfügen, die in der Lage sein sollen, verschlüsselte Dokumente anzuzeigen, diese jedoch nicht zu bearbeiten, können Sie sie zur Bezeichnung mit der Berechtigung „Nur Anzeigen“ hinzufügen. Sie können diese Personen dann der SharePoint-Website des Teams mit Leseberechtigungen hinzufügen, und sie haben schreibgeschützten Zugriff auf die Website, auf der die Dokumente aufbewahrt werden, aber nicht auf das Team selbst.
 
+
 Erstellen einer Vertraulichkeitsbezeichnung
 1. Öffnen Sie das [Microsoft 365 Compliance Center](https://compliance.microsoft.com).
 2. Klicken Sie unter **Lösungen** auf **Informationsschutz**.
 3. Klicken Sie auf **Bezeichnung erstellen**.
-4. Geben Sie einen Namen für die Bezeichnung ein, der dem Namen Ihres Teams ähnelt. Z. b. **Streng vertraulich –⁠ Projekt Saturn**.
-5. Fügen Sie eine QuickInfo hinzu, und klicken Sie dann auf **Weiter**.
-6. Wählen Sie auf der Seite **Verschlüsselung** im Dropdownmenü **Verschlüsselung** **Anwenden** aus.
-7. Hinzufügen der Team-Berechtigungen:<br>
-  a. Klicken Sie auf **Zuweisen von Berechtigungen**.<br>
-  b. Klicken Sie auf **Benutzergruppen hinzufügen**, wählen Sie das von Ihnen erstellte Team aus und klicken Sie dann auf **Hinzufügen**.<br>
-  c. Klicken Sie auf **Berechtigungen auswählen**.<br>
-  d. Wählen Sie in der Dropdownliste **Mitautor**, und klicken Sie dann auf **Speichern**.<br>
-8. Wenn Sie Benutzer oder Gruppen mit schreibgeschütztem Zugriff auf Dateien mit dieser Bezeichnung einbeziehen möchten:<br>
-  a. Klicken Sie auf **Zuweisen von Berechtigungen**.<br>
-  b. Klicken Sie auf **Benutzergruppen hinzufügen**, wählen Sie die Benutzer oder die Gruppen, die Sie hinzufügen möchten, aus und klicken Sie dann auf **Hinzufügen**.<br>
-  c. Klicken Sie auf **Berechtigungen auswählen**.<br>
-  d. Wählen Sie in der Dropdownliste **Nur lesen**, und klicken Sie dann auf **Speichern**.<br>
-  e. Klicken Sie auf **Speichern**.
-9. Klicken Sie auf **Weiter**.
-10. Aktivieren Sie auf der Seite **Inhaltskennzeichnung** die Inhaltskennzeichnung, wenn Dateien, die mit dieser Bezeichnung klassifiziert wurden, automatisch eine Kopf-oder Fußzeile oder ein Wasserzeichen hinzugefügt werden soll.
-11. Legen Sie auf der Seite **Website- und Gruppeneinstellungen** die Option **Website- und Gruppeneinstellungen** auf **Ein** fest.
-12. Wählen Sie in der Dropdownliste **Datenschutz für mit Office 365-Gruppen verbundene Teamwebsites** die Option **Privat – nur Mitglieder können auf die Website zugreifen** aus.
-13. Wenn Sie den Gastzugriff zulassen möchten, aktivieren Sie **Office 365-Gruppenbesitzer dürfen Personen außerhalb der Organisation zur Gruppe hinzufügen**. 
-14. Wählen Sie unter **Nicht verwaltete Geräte** die Option **Zugriff blockieren**.
-15. Klicken Sie auf **Weiter**.
-16. Klicken Sie auf der Seite **Automatisches Bezeichnen für Office-Apps** auf **Weiter**.
-17. Klicken Sie auf **Absenden** und anschließend auf **Fertig**.
+4. Weisen Sie der Bezeichnung einen Namen zu. Wir empfehlen **Vertraulich**, Sie können aber auch einen anderen Namen auswählen, falls dieser bereits verwendet wird.
+5. Fügen Sie einen Namen und eine Beschreibung hinzu, und klicken Sie auf **Weiter**.
+6. Wählen Sie auf der Seite **Definieren des Bereichs für diese Bezeichnung** die Option **Dateien & E-Mails** und **Gruppen & Websites** aus und klicken Sie **Weiter**.
+7. Wählen Sie auf der Seite **Schutzeinstellungen für Dateien und E-Mails auswählen** die Option **Dateien und E-Mails verschlüsseln** aus und klicken Sie dann **Weiter**.
+8. Wählen Sie auf der Seite **Verschlüsselung** die Option **Verschlüsselungseinstellungen konfigurieren** aus.
+9. Klicken Sie auf **Benutzer oder Gruppen hinzufügen**, wählen Sie das von Ihnen erstellte Team aus und klicken Sie dann auf **Hinzufügen**.
+10. Klicken Sie auf **Berechtigungen auswählen**.
+11. Wählen Sie in der Dropdownliste **Mitautor**, und klicken Sie dann auf **Speichern**.
+12. Wenn Sie Benutzer oder Gruppen mit schreibgeschütztem Zugriff auf Dateien mit dieser Bezeichnung einbeziehen möchten:
+    1. Klicken Sie auf **Zuweisen von Berechtigungen**.
+    1. Klicken Sie auf **Benutzer oder Gruppen hinzufügen**, wählen Sie die Benutzer oder die Gruppen, die Sie hinzufügen möchten, aus und klicken Sie dann auf **Hinzufügen**.
+    1. Klicken Sie auf **Berechtigungen auswählen**.
+    1. Wählen Sie in der Dropdownliste **Viewer** aus, und klicken Sie dann auf **Speichern**.
+13.  Klicken Sie auf **Speichern** und dann auf **Weiter**.
+14. Klicken Sie auf der Seite *Automatische Bezeichnung für Dateien und E-Mails** auf **Weiter**.
+15. Wählen Sie auf der Seite **Definieren der Schutzeinstellungen für Gruppen und Websites** die Option **Einstellungen für Datenschutz und den Zugriff externer Benutzer** und **Einstellungen für Gerätezugriff und externe Freigabe** aus und klicken Sie **Weiter**.
+16. Wählen Sie auf der Seite **Definieren von Einstellungen für Datenschutz und den Zugriff externer Benutzer** unter **Datenschutz** die Option **Privat** aus.
+17. Wenn Sie Gastzugriffe zulassen wollen, wählen Sie unter **Externer Benutzerzugriff** die Option **Zulassen, dass Microsoft 365-Gruppenbesitzer Personen außerhalb Ihrer Organisation als Gäste zur Gruppe hinzufügen**.
+18. Klicken Sie auf **Weiter**.
+19. Wählen Sie auf der Seite **Definieren der Einstellungen für externe Freigabe und Gerätezugriff** die Option **Steuerung der externen Freigabe aus bezeichneten SharePoint-Websites**.
+20. Wählen Sie unter **Inhalt kann geteilt werden mit** die Option **Neue und bestehende Gäste** aus, wenn Sie den Gastzugriff erlauben wollen, oder anderenfalls **Nur Personen in Ihrer Organisation**.
+21. Wählen Sie unter **Zugriff von nicht verwalteten Geräten** die Option **Zugriff blockieren**.
+22. Klicken Sie auf **Weiter**.
+23. Klicken Sie auf der Seite **Automatisches Bezeichnen von Datenbank-Spalten** auf **Weiter**.
+24. Klicken Sie auf **Bezeichnung erstellen** und anschließend auf **Fertig**.
 
 Nachdem Sie die Bezeichnung erstellt haben, müssen Sie sie für die Benutzer veröffentlichen, die sie verwenden sollen. In diesem Fall wird die Bezeichnung nur für Personen im Team verfügbar sein.
 

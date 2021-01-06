@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
+ROBOTS: NOINDEX, NOFOLLOW
 description: Erfahren Sie mehr über die Schritte zum Markieren und arbeiten Sie dann mit einem Schulungs Beispiel mit 40 Dateien während der Relevanz-Schulungsphase von Advanced eDiscovery.
-ms.openlocfilehash: d576b0a907a4c12eabe4f3cba9846de670b0ee12
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: cedac19ee04053e19b5dac1537b57d576e2e0354
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663450"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760365"
 ---
 # <a name="tagging-and-relevance-training-in-advanced-ediscovery-classic"></a>Tagging und Relevanz Training in Advanced eDiscovery (klassisch)
 
@@ -98,17 +99,3 @@ In der Liste mit den Beispieldateien können Sie eine Liste der Dateien in einem
     
     So navigieren Sie zur letzten Datei im Beispiel: UMSCHALT + STRG + \>
     
-## <a name="see-also"></a>Siehe auch
-
-[Advanced eDiscovery (Classic)](office-365-advanced-ediscovery.md)
-  
-[Grundlegendes zur Relevanz der Bewertung](assessment-in-relevance-in-advanced-ediscovery.md)
-  
-[Tagging und Bewertung](tagging-and-assessment-in-advanced-ediscovery.md)
-  
-[Analyse der nach Verfolgungs Relevanz](track-relevance-analysis-in-advanced-ediscovery.md)
-  
-[Entscheidung basierend auf den Ergebnissen](decision-based-on-the-results-in-advanced-ediscovery.md)
-  
-[Testen der Relevanz-Analyse](test-relevance-analysis-in-advanced-ediscovery.md)
-

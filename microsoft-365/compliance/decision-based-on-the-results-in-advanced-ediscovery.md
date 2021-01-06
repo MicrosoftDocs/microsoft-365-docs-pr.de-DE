@@ -15,13 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: Erfahren Sie, wie die Registerkarte entscheiden in Advanced eDiscovery Daten bereitstellt, mit denen Sie die richtige Größe des Überprüfungs Satzes von Fall Dateien ermitteln können.
+ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 60213226bef1c04767d4be17a09b58d6940ac223
-ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
+ms.openlocfilehash: 0423a21520375f1d9de8e2eaeca142b979ff1883
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49562966"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49759867"
 ---
 # <a name="decision-based-on-the-results-in-advanced-ediscovery-classic"></a>Entscheidung basierend auf den Ergebnissen in Advanced eDiscovery (klassisch)
 
@@ -54,17 +55,3 @@ Diese Registerkarte umfasst die folgenden Komponenten:
     
 Im erweiterten Detailbereich werden zusätzliche Details angezeigt. Dateien in Sammlungs Abbildungen enthalten keine leeren oder nebligen Dateien. Familiendateien Abbildungen stellen Dateien dar, die nicht relevant geladen werden, aber dennoch als Teil der Familie gezählt werden.
   
-## <a name="related-topics"></a>Verwandte Themen
-
-[Advanced eDiscovery (Classic)](office-365-advanced-ediscovery.md)
-  
-[Grundlegendes zur Relevanz der Bewertung](assessment-in-relevance-in-advanced-ediscovery.md)
-  
-[Tagging und Bewertung](tagging-and-relevance-training-in-advanced-ediscovery.md)
-  
-[Durchführen von Relevanz-Schulungen](tagging-and-assessment-in-advanced-ediscovery.md)
-  
-[Analyse der nach Verfolgungs Relevanz](track-relevance-analysis-in-advanced-ediscovery.md)
-  
-[Testen der Relevanz-Analyse](test-relevance-analysis-in-advanced-ediscovery.md)
-

@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die Anwendungsreihenfolge von Schutzmaßnahmen in Exchange Online Protection (EoP) und darüber informieren, wie der Prioritätswert in Schutzrichtlinien festlegt, welche Richtlinie angewendet wird.
-ms.openlocfilehash: c6a89e35f1cce0532f206b5ac5dbfd4a1aedda9d
-ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
+ms.openlocfilehash: a18234344e1100f3b6a03c10e970c8195e53e7df
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49349268"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760566"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Reihenfolge und Priorität des e-Mail-Schutzes
 
@@ -40,9 +40,9 @@ Es gibt zwei Hauptfaktoren, die bestimmen, welche Richtlinie auf eine Nachricht 
 
   |Priorität|E-Mail-Schutz|Kategorie|Verwalten von|
   |---|---|---|---|
-  |1|Schadsoftware|Kat: MALW|[Konfigurieren von Anti-Malware-Richtlinien in EoP](configure-anti-malware-policies.md)|
-  |2|Phishing|Kat: PHSH|[Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)|
-  |3|Spam mit hoher Vertrauenswürdigkeit|Kat: HSPM|[Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)|
+  |1 |Schadsoftware|Kat: MALW|[Konfigurieren von Anti-Malware-Richtlinien in EoP](configure-anti-malware-policies.md)|
+  |2 |Phishing|Kat: PHSH|[Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)|
+  |3 |Spam mit hoher Vertrauenswürdigkeit|Kat: HSPM|[Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)|
   |4 |Spoofing|Kat: Spoof|[Konfigurieren von Spoof Intelligence in EoP](learn-about-spoof-intelligence.md)|
   |5<sup>\*</sup>|Benutzeridentitätswechsel (geschützte Benutzer)|Uimp|[Konfigurieren von Anti-Phishing-Richtlinien in Microsoft Defender für Office 365](configure-atp-anti-phishing-policies.md)|
   |6<sup>\*</sup>|Domänen Identitätswechsel (geschützte Domänen)|DIMP|[Konfigurieren von Anti-Phishing-Richtlinien in Microsoft Defender für Office 365](configure-atp-anti-phishing-policies.md)|
@@ -62,11 +62,11 @@ Nehmen wir beispielsweise die folgenden AntiPhishing-Richtlinien in Microsoft De
 
   |Name der Richtlinie|Priorität|Benutzeridentitätswechsel|Anti-Spoofing|
   |---|---|---|---|
-  |Richtlinie A|1|Ein|Off|
-  |Richtlinie B|2|Off|Ein|
+  |Richtlinie A|1 |Ein|Off|
+  |Richtlinie B|2 |Off|Ein|
   |
 
-1. Die Nachricht wird als spoof gekennzeichnet und behandelt, da Spoofing eine höhere Priorität (4) als der Benutzeridentitätswechsel (8) hat.
+1. Die Nachricht wird als spoof gekennzeichnet und behandelt, da Spoofing eine höhere Priorität (4) als der Benutzeridentitätswechsel (5) hat.
 2. Richtlinie A wird auf die Benutzer angewendet, da Sie eine höhere Priorität als Richtlinie B hat.
 3. Basierend auf den Einstellungen in Richtlinie A wird keine Aktion für die Nachricht ausgeführt, da die Antispoofing-Funktion in der Richtlinie deaktiviert ist.
 4. Die Richtlinienverarbeitung wird angehalten, sodass Richtlinie B niemals auf die Benutzer angewendet wird.

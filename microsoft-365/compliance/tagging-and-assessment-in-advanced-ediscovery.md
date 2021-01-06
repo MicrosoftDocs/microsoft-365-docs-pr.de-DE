@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
+ROBOTS: NOINDEX, NOFOLLOW
 description: Lesen Sie die Schritte zum Durchführen von Assessment-Schulungen, einschließlich Tagging-Dateien und Überprüfen der Bewertungsergebnisse in Advanced eDiscovery.
-ms.openlocfilehash: c8c6f82e7cfb3e2eddcc482039582ea27a702494
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 9f826c836337ecf7a8479e7d824ff8ad9e737e97
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663460"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760375"
 ---
 # <a name="tagging-and-assessment-in-advanced-ediscovery-classic"></a>Tagging und Bewertung in Advanced eDiscovery (klassisch)
 
@@ -123,17 +124,3 @@ In Ermangelung einer statistisch basierten Stabilisierung werden Ergebnisse mit 
 > [!TIP]
 > Auf der Registerkarte **relevanzstatus \>** , erweiterte Ausgabe Anzeige, stehen die folgenden Anzeigeoptionen zur Verfügung: > den empfohlenen nächsten Schritt wie den **nächsten Schritt: die Kennzeichnung** kann umgangen werden (pro Problem), indem Sie rechts auf die Schaltfläche **ändern** klicken und dann im **nächsten Schritt** einen anderen Schritt auswählen. Wenn der Statusindikator für die Bewertung nicht abgeschlossen ist, wird die nächste empfohlene Option verwendet, um weitere Bewertungsdateien zu markieren und die Genauigkeit der Statistik zu verbessern. > Sie können den Fehler Rand ändern und seine Auswirkung bewerten, indem Sie auf **ändern** klicken und im **Dialogfeld Bewertungsebene** den **Ziel Fehler Rand für Rückruf Schätzungen** ändern und auf **Werte aktualisieren** klicken. Außerdem können Sie in diesem Dialogfeld Erweiterte Optionen anzeigen, indem Sie auf **erweitert** klicken. > Sie können zusätzliche Statistiken zur Bewertungsebene und deren Auswirkungen anzeigen, indem Sie auf **Ansicht** klicken. Im Dialogfeld Detail Ergebnisse werden Statistiken pro Problem angezeigt, wenn mindestens 500 getaggte Bewertungsdateien vorhanden sind und mindestens 18 Dateien als relevant für das Problem gekennzeichnet sind. 
   
-## <a name="see-also"></a>Siehe auch
-
-[Advanced eDiscovery (Classic)](office-365-advanced-ediscovery.md)
-  
-[Grundlegendes zur Relevanz der Bewertung](assessment-in-relevance-in-advanced-ediscovery.md)
-  
-[Tagging und Relevanz Training](tagging-and-relevance-training-in-advanced-ediscovery.md)
-  
-[Analyse der nach Verfolgungs Relevanz](track-relevance-analysis-in-advanced-ediscovery.md)
-  
-[Entscheidung basierend auf den Ergebnissen](decision-based-on-the-results-in-advanced-ediscovery.md)
-  
-[Testen der Relevanz-Analyse](test-relevance-analysis-in-advanced-ediscovery.md)
-

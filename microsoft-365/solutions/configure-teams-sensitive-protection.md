@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Hier erfahren Sie, wie Sie Teams bereitstellen, in denen vertrauliche Daten geschützt sind.
-ms.openlocfilehash: ad1cf437bdbe3bd7b25347bb49698314097462ab
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 16c4ceedcafee02ca5d168cc70fc61bb8d01fc72
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49612952"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49750787"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>Teams für den Schutz vertraulicher Daten konfigurieren
 
@@ -59,16 +59,20 @@ Erstellen einer Vertraulichkeitsbezeichnung
 2. Klicken Sie unter **Lösungen** auf **Informationsschutz**.
 3. Klicken Sie auf **Bezeichnung erstellen**.
 4. Weisen Sie der Bezeichnung einen Namen zu. Wir empfehlen **Vertraulich**, Sie können aber auch einen anderen Namen auswählen, falls dieser bereits verwendet wird.
-5. Fügen Sie eine QuickInfo hinzu, und klicken Sie dann auf **Weiter**.
-6. Klicken Sie auf der Seite **Verschlüsselung** auf **Weiter**.
-7. Aktivieren Sie auf der Seite **Inhaltskennzeichnung** die Inhaltskennzeichnung, wenn Dateien, die mit dieser Bezeichnung klassifiziert wurden, automatisch eine Kopf-oder Fußzeile oder ein Wasserzeichen hinzugefügt werden soll.
-8. Legen Sie auf der Seite **Website- und Gruppeneinstellungen** die Option **Website- und Gruppeneinstellungen** auf **Ein** fest.
-9. Wählen Sie in der Dropdownliste **Datenschutz für mit Office 365-Gruppen verbundene Teamwebsites** die Option **Privat – nur Mitglieder können auf die Website zugreifen** aus.
-10. Wenn Sie den Gastzugriff zulassen möchten, aktivieren Sie **Office 365-Gruppenbesitzer dürfen Personen außerhalb der Organisation zur Gruppe hinzufügen**. 
-11. Wählen Sie unter **Nicht verwaltete Geräte** den Eintrag **Eingeschränkten, reinen Webzugriff zulassen** aus.
+5. Fügen Sie einen Namen und eine Beschreibung hinzu, und klicken Sie auf **Weiter**.
+6. Wählen Sie auf der Seite **Definieren des Bereichs für diese Bezeichnung** die Option **Dateien & E-Mails** und **Gruppen & Websites** aus und klicken Sie **Weiter**.
+7. Klicken Sie auf der Seite **Auswählen der Schutzeinstellungen für Dateien und E-Mails** auf **Weiter**.
+8. Klicken Sie auf der Seite *Automatische Bezeichnung für Dateien und E-Mails* auf **Weiter**.
+9. Wählen Sie auf der Seite **Definieren der Schutzeinstellungen für Gruppen und Websites** die Option **Datenschutz und Einstellungen für den Zugriff externer Benutzer** und **Einstellungen für Gerätezugriff und externe Freigabe** aus und klicken Sie **Weiter**.
+10. Wählen Sie auf der Seite **Definieren von Datenschutz und Einstellungen für den Zugriff externer Benutzer** unter **Datenschutz** die Option **Privat** aus.
+11. Wenn Sie Gastzugriffe zulassen wollen, wählen Sie unter **Externer Benutzerzugriff** die Option **Zulassen, dass Microsoft 365-Gruppenbesitzer Personen außerhalb Ihrer Organisation als Gäste zur Gruppe hinzufügen**.
 12. Klicken Sie auf **Weiter**.
-13. Klicken Sie auf der Seite **Automatisches Bezeichnen für Office-Apps** auf **Weiter**.
-14. Klicken Sie auf **Absenden** und anschließend auf **Fertig**.
+13. Wählen Sie auf der Seite **Definieren der Einstellungen für externe Freigabe und Gerätezugriff** die Option **Steuerung der externen Freigabe aus bezeichneten SharePoint-Websites**.
+14. Wählen Sie unter **Inhalt kann geteilt werden mit** die Option **Neue und bestehende Gäste**, wenn Sie den Gastzugriff erlauben wollen, oder anderenfalls **Nur Personen in Ihrer Organisation**.
+15. Wählen Sie unter **Zugriff von nicht verwalteten Geräten** die Option **Eingeschränkten, reinen Webzugriff zulassen**.
+16. Klicken Sie auf **Weiter**.
+17. Klicken Sie auf der Seite **Automatisches Bezeichnen von Datenbank-Spalten** auf **Weiter**.
+18. Klicken Sie auf **Bezeichnung erstellen** und anschließend auf **Fertig**.
 
 Nachdem Sie die Bezeichnung erstellt haben, müssen Sie sie für die Benutzer veröffentlichen, die sie verwenden sollen. Zum Schutz vertraulicher Daten werden die Bezeichnungen für alle Benutzer verfügbar gemacht. Die Bezeichnung wird im Microsoft 365 Compliance Center auf der Seite **Schutz von Daten** auf der Registerkarte **Bezeichnungsrichtlinien** veröffentlicht. Wenn bereits eine Richtlinie vorhanden ist, die für alle Benutzer gilt, fügen Sie diese Bezeichnung zu dieser Richtlinie hinzu. Wenn Sie eine neue Richtlinie erstellen müssen, lesen Sie [Veröffentlichen von Vertraulichkeitsbezeichnungen durch Erstellen einer Bezeichnungsrichtlinie](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels#publish-sensitivity-labels-by-creating-a-label-policy).
 

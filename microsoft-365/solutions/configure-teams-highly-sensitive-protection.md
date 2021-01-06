@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Hier erfahren Sie, wie Sie Teams bereitstellen, in denen hochgradig vertrauliche Daten geschützt sind.
-ms.openlocfilehash: 77ec469776bf263bbd3d667a28f1f9b1bc3284b5
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 6354de5a37547d14b16a4d6a0857ddc390d531e6
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49612964"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49750809"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Teams für den Schutz hochgradig vertraulicher Daten konfigurieren
 
@@ -63,21 +63,26 @@ Erstellen einer Vertraulichkeitsbezeichnung
 1. Öffnen Sie das [Microsoft 365 Compliance Center](https://compliance.microsoft.com).
 2. Klicken Sie unter **Lösungen** auf **Informationsschutz**.
 3. Klicken Sie auf **Bezeichnung erstellen**.
-4. Weisen Sie der Bezeichnung einen Namen zu. Wir empfehlen **Hochgradig vertraulich**, Sie können aber auch einen anderen Namen auswählen, falls dieser bereits verwendet wird.
-5. Fügen Sie eine QuickInfo hinzu, und klicken Sie dann auf **Weiter**.
-6. Wählen Sie auf der Seite **Verschlüsselung** im Dropdownmenü **Verschlüsselung** **Anwenden** aus.
-7. Klicken Sie unter **Berechtigungen bestimmten Benutzern und Gruppen zuweisen** auf **Berechtigungen zuweisen**.
-8. Klicken Sie auf **Alle Benutzer und Gruppen in Ihrer Organisation hinzufügen**.
-9. Wenn es Gäste gibt, die Berechtigungen zum Entschlüsseln von Dateien haben sollten, klicken Sie auf **Benutzer oder Gruppen** hinzufügen, und fügen Sie sie hinzu.
-10.  Klicken Sie auf **Speichern** und dann auf **Weiter**.
-11. Aktivieren Sie auf der Seite **Inhaltskennzeichnung** die Inhaltskennzeichnung, wenn Dateien, die mit dieser Bezeichnung klassifiziert wurden, automatisch eine Kopf-oder Fußzeile oder ein Wasserzeichen hinzugefügt werden soll.
-12. Legen Sie auf der Seite **Website- und Gruppeneinstellungen** die Option **Website- und Gruppeneinstellungen** auf **Ein** fest.
-13. Wählen Sie in der Dropdownliste **Datenschutz für mit Office 365-Gruppen verbundene Teamwebsites** die Option **Privat – nur Mitglieder können auf die Website zugreifen** aus.
-14. Wenn Sie den Gastzugriff zulassen möchten, aktivieren Sie **Office 365-Gruppenbesitzer dürfen Personen außerhalb der Organisation zur Gruppe hinzufügen**. 
-15. Wählen Sie unter **Nicht verwaltete Geräte** die Option **Zugriff blockieren**.
-16. Klicken Sie auf **Weiter**.
-17. Klicken Sie auf der Seite **Automatisches Bezeichnen für Office-Apps** auf **Weiter**.
-18. Klicken Sie auf **Absenden** und anschließend auf **Fertig**.
+4. Weisen Sie der Bezeichnung einen Namen zu. Wir empfehlen **Vertraulich**, Sie können aber auch einen anderen Namen auswählen, falls dieser bereits verwendet wird.
+5. Fügen Sie einen Namen und eine Beschreibung hinzu, und klicken Sie auf **Weiter**.
+6. Wählen Sie auf der Seite **Definieren des Bereichs für diese Bezeichnung** die Option **Dateien & E-Mails** und **Gruppen & Websites** aus und klicken Sie **Weiter**.
+7. Wählen Sie auf der Seite **Schutzeinstellungen für Dateien und E-Mails auswählen** die Option **Dateien und E-Mails verschlüsseln** aus und klicken Sie dann **Weiter**.
+8. Wählen Sie auf der Seite **Verschlüsselung** die Option **Verschlüsselungseinstellungen konfigurieren** aus.
+9. Klicken Sie unter **Berechtigungen bestimmten Benutzern und Gruppen zuweisen** auf **Berechtigungen zuweisen**.
+10. Klicken Sie auf **Alle Benutzer und Gruppen in Ihrer Organisation hinzufügen**.
+11. Wenn es Gäste gibt, die Berechtigungen zum Entschlüsseln von Dateien haben sollten, klicken Sie auf **Benutzer oder Gruppen** hinzufügen, und fügen Sie sie hinzu.
+12.  Klicken Sie auf **Speichern** und dann auf **Weiter**.
+13. Klicken Sie auf der Seite *Automatische Bezeichnung für Dateien und E-Mails** auf **Weiter**.
+14. Wählen Sie auf der Seite **Definieren der Schutzeinstellungen für Gruppen und Websites** die Option **Einstellungen für Datenschutz und den Zugriff externer Benutzer** und **Einstellungen für Gerätezugriff und externe Freigabe** aus und klicken Sie **Weiter**.
+15. Wählen Sie auf der Seite **Definieren von Einstellungen für Datenschutz und den Zugriff externer Benutzer** unter **Datenschutz** die Option **Privat** aus.
+16. Wenn Sie Gastzugriffe zulassen wollen, wählen Sie unter **Externer Benutzerzugriff** die Option **Zulassen, dass Microsoft 365-Gruppenbesitzer Personen außerhalb Ihrer Organisation als Gäste zur Gruppe hinzufügen**.
+17. Klicken Sie auf **Weiter**.
+18. Wählen Sie auf der Seite **Definieren der Einstellungen für externe Freigabe und Gerätezugriff** die Option **Steuerung der externen Freigabe aus bezeichneten SharePoint-Websites**.
+19. Wählen Sie unter **Inhalt kann geteilt werden mit** die Option **Neue und bestehende Gäste** aus, wenn Sie den Gastzugriff erlauben wollen, oder anderenfalls **Nur Personen in Ihrer Organisation**.
+20. Wählen Sie unter **Zugriff von nicht verwalteten Geräten** die Option **Zugriff blockieren**.
+21. Klicken Sie auf **Weiter**.
+22. Klicken Sie auf der Seite **Automatisches Bezeichnen von Datenbank-Spalten** auf **Weiter**.
+23. Klicken Sie auf **Bezeichnung erstellen** und anschließend auf **Fertig**.
 
 Nachdem Sie die Bezeichnung erstellt haben, müssen Sie sie für die Benutzer veröffentlichen, die sie verwenden sollen. Zum Schutz vertraulicher Daten werden die Bezeichnungen für alle Benutzer verfügbar gemacht. Die Bezeichnung wird im Microsoft 365 Compliance Center auf der Seite **Schutz von Daten** auf der Registerkarte **Bezeichnungsrichtlinien** veröffentlicht. Wenn bereits eine Richtlinie vorhanden ist, die für alle Benutzer gilt, fügen Sie diese Bezeichnung zu dieser Richtlinie hinzu. Wenn Sie eine neue Richtlinie erstellen müssen, lesen Sie [Veröffentlichen von Vertraulichkeitsbezeichnungen durch Erstellen einer Bezeichnungsrichtlinie](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels#publish-sensitivity-labels-by-creating-a-label-policy).
 

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Dieser Artikel enthält Informationen zur Problembehandlung bei Problemen beim Senden von e-Mails an Posteingänge in Microsoft 365 & bewährte Methoden für Massenversand an Microsoft 365-Kunden.
-ms.openlocfilehash: 8b7c008f827a579e234d8a8feab008d36ecfe064
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 3504d7518073826f3979c3c837c58d4406886b41
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615408"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760482"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>An Microsoft 365 gesendete E-Mail zur Problembehandlung
 
@@ -128,7 +128,7 @@ Der Inhalt von E-Mails ist genauso wichtig wie die Sendemethode. Beim Erstellen 
 
 - Weiterleitungen im Textkörper der Nachricht sollten ähnlich und konsistent sein, nicht zahlreich und unterschiedlich. Eine Weiterleitung ist in diesem Kontext etwas, das von der Nachricht wegführt, z. B. Links und Dokumente. Wenn Sie viele Werbe- oder Abbestellungslinks haben oder die Profillinks aktualisieren, sollten sie alle auf dieselbe Domäne verweisen. Beispiel:
 
-  Richtig:
+  Korrekt (alle Domänen sind identisch):
 
   `unsubscribe.bulkmailer.com`
 
@@ -136,7 +136,7 @@ Der Inhalt von E-Mails ist genauso wichtig wie die Sendemethode. Beim Erstellen 
 
   `options.bulkmailer.com`
 
-  Falsch:
+  Falsch (alle Domänen unterscheiden sich):
 
   `unsubscribe.bulkmailer.com`
 
