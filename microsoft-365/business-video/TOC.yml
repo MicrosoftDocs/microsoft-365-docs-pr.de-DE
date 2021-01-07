@@ -1,55 +1,55 @@
-- name: Microsoft 365 Small Business Training
+- name: Microsoft 365 Small Business-Schulung
   href: index.yml
   items:
     - name: Erste Schritte
       items:
-        - name: Was ist Microsoft 365
+        - name: Was ist Microsoft 365?
           href: what-is-microsoft-365.md
         - name: Übersicht über die Einrichtung
           href: setup-overview.md
-        - name: Auswählen eines Abonnements
+        - name: Abonnement wählen
           href: Choose-subscription.md
-    - name: Cloud-Setup
+    - name: Cloud-Einrichtung
       items:
         - name: Registrieren für ein Abonnement
           href: sign-up.md
         - name: Einrichten des Diensts
           href: set-up.md
-        - name: Sichere Windows 10-PCs
+        - name: Sichern von Windows 10-PCs
           href: secure-win10-pcs.md
-        - name: Erstellen einer GoDaddy-Website
+        - name: GoDaddy-Website erstellen
           href: create-web-site.md
-    - name: Geräte Einrichtung
+    - name: Geräteeinrichtung
       items:
-        - name: Upgrade auf Windows 10 pro
+        - name: Upgrade auf Windows 10 Pro
           href: upgrade.md
-        - name: Verbinden von PCs mit Microsoft 365
+        - name: Herstellen einer Verbindung von PCs zu Microsoft 365
           href: connect.md
-        - name: Installieren von Microsoft Office Apps
+        - name: Installieren von Microsoft Office-Apps
           href: install-office.md
         - name: Einrichten von Outlook für E-Mail
           href: setup-outlook.md
-        - name: E-Mail importieren und umleiten
+        - name: Importieren und Umleiten von E-Mails
           href: import-email.md
-        - name: Migrieren von Dateien nach OneDrive
+        - name: Verschieben Ihrer Dateien auf OneDrive
           href: files-to-onedrive.md
-        - name: Migrieren von Unternehmensdateien in SharePoint
+        - name: Verschieben von Unternehmensdateien nach SharePoint
           href: files-to-sharepoint.md
     - name: Mobilgeräte
       items:
-        - name: Arbeiten von überall aus
+        - name: Von überall aus arbeiten
           href: work-from-anywhere.md
-        - name: Installieren von Office-Apps unter Android
+        - name: Office-Apps auf Android installieren
           href: install-apps-android.md
-        - name: Installieren von Office-Apps auf IOS
+        - name: Office-Apps auf iOS installieren
           href: install-apps-ios.md
-        - name: Abrufen des Administrator Mobile App
+        - name: Abrufen der mobilen Administrator-App
           href: admin-mobile.md
     - name: Zusammenarbeiten
       items:
-        - name: Verwenden von Outlook und Microsoft Teams
+        - name: Verwenden von Outlook und Teams
           href: collab-outlook-teams.md
-        - name: Erstellen einer Gruppen-e-Mail-Adresse
+        - name: Erstellen einer Gruppen-E-Mail-Adresse
           href: group-email.md
         - name: Erstellen eines freigegebenen Kalenders
           href: shared-calendar.md
@@ -61,43 +61,45 @@
           href: join-team-guest.md
         - name: Chatten Sie mit Mitarbeitern und Kunden
           href: start-and-pin-chats.md
-        - name: Online Besprechungen (Übersicht)
+        - name: Übersicht über Onlinebesprechungen
           href: overview-online-meetings.md
-        - name: Planen einer Besprechung mit Gästen
+        - name: Eine Besprechung mit Gästen planen
           href: schedule-guest-meeting.md
         - name: An einer Besprechung mit Gästen teilnehmen
           href: join-guest-meeting.md
-    - name: Cloud-Speicher
+    - name: Cloudspeicher
       items:
-        - name: Freigabe Übersicht
+        - name: Freigabe – Übersicht
           href: overview-file-sharing.md
-        - name: Wo Dateien gespeichert werden sollen
+        - name: Speicherort für Dateien
           href: store-files.md
-        - name: Sicheres Freigeben von Dateien extern
+        - name: Sicheres Freigeben von Dateien für Personen außerhalb Ihrer Organisation
           href: securely-share-files-externally.md
-        - name: Einfaches Freigeben von Dateien extern
+        - name: Einfaches Freigeben von Dateien für Personen außerhalb Ihrer Organisation
           href: share-files-externally.md
-    - name: Business-VoIP
+    - name: Business Voice
       items:
         - name: Übersicht über Business Voice
           href: business-voice.md
         - name: Business Voice-Add-on kaufen
           href: buy-business-voice.md
-    - name: Produktivitäts-apps
+    - name: Produktivitäts-Apps
       items:
-        - name: Übersicht Überbuchungen
+        - name: Übersicht über Bookings
           href: overview-bookings.md
         - name: Planen eines Ereignisses
           href: plan-event.md
     - name: Verwalten von Diensten
       items:
-        - name: Was ist ein Administrator?
+        - name: Was ist ein Administrator
           href: what-is-admin.md
         - name: Übersicht über das Admin Center
           href: admin-center-overview.md
-        - name: 'Anzeigen, herunterladen oder Drucken Ihrer Rechnung'
+        - name: 'Anzeigen, Herunterladen oder Drucken Ihrer Rechnung'
           href: view-bill.md
-        - name: Aktualisieren der Zahlungsmethode
+        - name: Neue Lizenzen kaufen
+          href: buy-licenses.md
+        - name: Aktualisieren Ihrer Zahlungsmethode
           href: update-payment.md
         - name: Zurücksetzen von Benutzerkennwörtern
           href: reset-user-passwords.md
@@ -109,41 +111,41 @@
           href: delete-user.md
         - name: Hinzufügen eines weiteren Administrators
           href: add-admin.md
-        - name: Ändern eines Benutzernamens oder einer e-Mail
+        - name: Ändern von Benutzernamen oder -E-Mail-Adressen
           href: change-user-name-email.md
         - name: Verschieben von Benutzern zu einem anderen Abonnement
           href: change-subscription.md
         - name: Erstellen einer unternehmensweiten Signatur
           href: company-wide-signature.md
-        - name: Bericht "Act on Usage"
+        - name: Handeln aufgrund eines Verwendungsbericht
           href: act-on-report.md
         - name: Hinzufügen einer weiteren Domäne
           href: add-domain.md
     - name: Verwalten von Geräten
       items:
-        - name: Sichere Windows 10 pro-Geräte
+        - name: Absichern von Windows 10 Pro-Geräten
           href: secure-win-10-pro-devices.md
-        - name: Sichern von Office-Apps auf IOS
+        - name: Office-Apps unter iOS sichern
           href: secure-office-on-ios.md
-    - name: Sicherheit & Compliance
+    - name: Sicherheit und Compliance
       items:
-        - name: Übersicht über die Sicherheit von Microsoft 365 Business Premium
+        - name: Überblick über die Sicherheit von Microsoft 365 Business Premium
           href: overview-m365-security.md
-        - name: Sichere Mitarbeiterkonten mit MFA
+        - name: Sichern von Mitarbeiterkonten mit MFA
           href: turn-on-mfa.md
-        - name: Einrichten der zweistufigen Anmeldung auf Ihrem Telefon
+        - name: Einrichten der zweistufigen Anmeldung auf Ihrem Smartphone
           href: set-up-mfa.md
-        - name: Aktivieren der Malware Erkennung
+        - name: Aktivieren der Schadsoftwareerkennung
           href: anti-malware.md
-        - name: Erstellen von e-Mail-Regeln für Ransomware
+        - name: Erstellen von E-Mail-Regeln für Ransomware
           href: prevent-ransom-in-email.md
-        - name: Automatische Weiterleitung von e-Mails beenden
+        - name: Automatische Weiterleitung von E-Mails beenden
           href: stop-email-auto-forward.md
-        - name: Einrichten von Anti-Phishing
+        - name: Einrichten von Antiphishing
           href: setup-anti-phishing.md
-        - name: Verwalten sicherer Anlagen
+        - name: Sichere Anlagen verwalten
           href: safe-attachments.md
-        - name: Verwalten von sicheren Links
+        - name: Sichere Links verwalten
           href: safe-links.md
         - name: Verhindern von Datenverlust
           href: set-up-dlp.md
@@ -151,9 +153,9 @@
           href: create-sensitivity-labels.md
     - name: Support
       items:
-        - name: Suchen nach Antworten und Hilfe
+        - name: Nach Antworten und Hilfe suchen
           href: find-help-answers.md
-        - name: Hilfe oder Support erhalten
+        - name: Anfordern von Hilfe oder Support
           href: get-help-support.md
-        - name: Schnell Setup für Mitarbeiter
+        - name: Mitarbeiter – Express-Setup
           href: employee-quick-setup.md
