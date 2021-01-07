@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch Dateien und E-Mails zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: 3f789396c3ee6746277e01f8b5c6a772bcd528ac
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: aa6b3ce2da8166cc2b33ae2b6056b54d76a0c634
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751429"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49759955"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -147,7 +147,7 @@ Wenn Sie die Option **Trainierbare Klassifizierungen** auswählen, wählen Sie e
 > [!CAUTION]
 > Die integrierte Klassifizierung **Anstößige Sprache** wird eingestellt, da sie eine große Anzahl falsch positiver Ergebnisse erzeugt hat. Verwenden Sie diese integrierte Klassifizierung nicht mehr, und ändern Sie Ihre Geschäftsprozesse entsprechend, falls sie derzeit noch verwendet wird. Wir empfehlen stattdessen die Verwendung der integrierten Klassifizierungen **Gezielte Belästigung**, **Obszönitäten** und **Bedrohung**.
 
-Weitere Informationen über diese Klassifizierer finden Sie unter [Erfahren Sie mehr über trainierbare Klassifizierern (Vorschau)](classifier-learn-about.md).
+Weitere Informationen über diese Klassifizierer finden Sie unter [Erfahren Sie mehr über trainierbare Klassifizierern](classifier-learn-about.md).
 
 Während der Vorschauphase für diese Option unterstützen die folgenden Apps trainierbare Klassifizierungen für Vertraulichkeitsbezeichnungen:
 

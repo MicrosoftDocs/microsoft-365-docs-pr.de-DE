@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erstellen Sie Aufbewahrungsbezeichnungen und Richtlinien für das automatische Anwenden von Bezeichnungen, damit Sie Bezeichnungen automatisch auf Inhalte anwenden können, die Sie beibehalten möchten, und nicht benötigte Inhalte löschen können.
-ms.openlocfilehash: a79e7a96cc02957b0bac4dba31b24c5727f0483b
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 2b06188a5990c7de81fca0afd21f05ef346807ba
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751180"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49759965"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aufbewahrungsbezeichnungen automatisch anwenden, um Inhalte beizubehalten oder zu löschen
 
@@ -247,10 +247,10 @@ Wenn Sie die Option für eine trainierbare Klassifizierung auswählen, können S
 
 Wenn Sie eine Bezeichnung mithilfe dieser Option automatisch anwenden möchten, müssen SharePoint-Websites und -Postfächer mindestens 10 MB Daten umfassen.
 
-Weitere Informationen über trainierbare Klassifizierer finden Sie unter [Weitere Informationen zu trainierbaren Klassifizierern (Vorschau)](classifier-learn-about.md).
+Weitere Informationen über trainierbare Klassifizierer finden Sie unter [Weitere Informationen zu trainierbaren Klassifizierern](classifier-learn-about.md).
 
 > [!TIP]
-> Wenn Sie trainierbare Klassifizierungsmerkmale für Exchange verwenden, lesen Sie die kürzlich veröffentlichte [Anleitung zum Neutrainieren einer Klassifizierung im Inhaltsexplorer (Vorschau)](classifier-how-to-retrain-content-explorer.md).
+> Wenn Sie trainierbare Klassifizierungsmerkmale für Exchange verwenden, lesen Sie die [Anleitung zum Neutrainieren einer Klassifizierung im Inhaltsexplorer](classifier-how-to-retrain-content-explorer.md).
 
 Folgendes ist bei der Verwendung von trainierbaren Klassifizierungsmerkmalen zum automatischen Anwenden von Aufbewahrungsbezeichnungen zu beachten:
 
