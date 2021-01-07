@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie die Sicherheitseinstellungen erhöhen und Berichte, Warnungen und Untersuchungen für Prioritäts Konten in Ihren Microsoft 365-Organisationen verwenden.
-ms.openlocfilehash: aee238d2fb58d2772881d8d77f98959906943290
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 9788131ea881a1cb3c36a60dfaac01ed5daf0901
+ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49668151"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49769245"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Sicherheitsempfehlungen für Prioritäts Konten in Microsoft 365
 
@@ -31,6 +31,8 @@ Was würden Sie tun, wenn Sie eine dringende Nachricht von einer Führungskraft 
 Für Angreifer sind gewöhnliche Phishing-Angriffe, die ein zufälliges Netz umwandeln, um die Anmeldeinformationen von zufälligen oder unbekannten Benutzern abzurufen, ineffizient. Auf der anderen Seite sind _Speer-Phishing_ -oder _Walfang_ Angriffe, die sich an die Benutzer in macht-oder Autoritätspositionen richten, für Angreifer weitaus lohnender. Wenn diese Prioritäts Konten kompromittiert werden, erhält der Angreifer möglicherweise Zugriff auf Konten mit Administrator-, Finanz-, Produkt-oder sogar physischen Zugriffsfunktionen innerhalb der Organisation.
 
 Microsoft 365 und Microsoft Defender für Office 365 enthalten viele verschiedene Features, die Sie bei der Bereitstellung zusätzlicher Sicherheitsebenen für Ihre Prioritäts Konten unterstützen können. In diesem Artikel werden die verfügbaren Features und deren Verwendung erläutert.
+
+![Zusammenfassung der Sicherheitsempfehlungen in Form von Symbolen](../../media/security-recommendations-for-priority-users.png)
 
 ## <a name="increase-sign-in-security-for-priority-accounts"></a>Verbessern der Anmeldesicherheit für Prioritäts Konten
 
@@ -60,7 +62,7 @@ Voreingestellte Sicherheitsrichtlinien sind eine bequeme und zentrale Position, 
 
 Ausführliche Informationen dazu, wie sich die strengen Richtlinieneinstellungen von den Standardrichtlinieneinstellungen unterscheiden, finden Sie unter [recommended settings for EoP and Microsoft Defender for Office 365 Security](recommended-settings-for-eop-and-office365-atp.md).
 
-## <a name="user-tags"></a>Benutzer Tags
+## <a name="apply-user-tags-to-priority-accounts"></a>Anwenden von Benutzer Tags auf Prioritäts Konten
 
 Benutzer Tags in Microsoft Defender für Office 365 Plan 2 (als Teil von Microsoft 365 E5 oder einem Add-on-Abonnement) sind eine Möglichkeit, bestimmte Benutzer oder Benutzergruppen in Berichten und Vorfall Ermittlungen schnell zu identifizieren und zu klassifizieren.
 
@@ -68,7 +70,11 @@ Benutzer Tags in Microsoft Defender für Office 365 Plan 2 (als Teil von Microso
 
 Sie können auch benutzerdefinierte Tags erstellen, um Ihre Prioritäts Konten weiter zu identifizieren und zu klassifizieren. Weitere Informationen finden Sie unter [User Tags](user-tags.md). Beachten Sie, dass Sie **Prioritäts Konten** (System Tags) in derselben Schnittstelle wie benutzerdefinierte Benutzer Tags verwalten können.
 
-## <a name="priority-accounts-in-reports-and-investigations-in-microsoft-365"></a>Prioritäts Konten in Berichten und Untersuchungen in Microsoft 365
+## <a name="monitor-priority-accounts-in-alerts-reports-and-detections"></a>Überwachen von Prioritäts Konten in Warnungen, Berichten und Erkennungen
+
+Nachdem Sie Ihre Prioritäts Benutzer gesichert und markiert haben, können Sie die verfügbaren Berichte, Warnungen und Untersuchungen in EoP und Defender für Office 365 verwenden, um schnell Vorfälle oder Erkennungen zu identifizieren, die vorrangige Konten umfassen. Die Features, die Benutzer Tags unterstützen, werden in der folgenden Tabelle beschrieben.
+
+<br>
 
 ****
 

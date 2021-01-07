@@ -12,12 +12,12 @@ ms.collection: enabler-strategic
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 95e1ad15a62762c8b28203e178d4d4ae7906e38a
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.openlocfilehash: 441f28e36ced25b2e5af3f71235995c8b021f779
+ms.sourcegitcommit: ddfb4f3e34deb733e8625e845e4dfd1fcc066ceb
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760242"
+ms.locfileid: "49771871"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint Syntex Adoption: Erste Schritte
 
@@ -27,13 +27,16 @@ Stellen Sie sich die intelligenten Inhaltsdienste vor, die in SharePoint Syntex 
 - **Inhaltsverarbeitung:** Automatisieren Sie die Erfassung, Einnahme und Kategorisierung von Inhalten und rationalisieren Sie Inhalts zentrierte Prozesse mithilfe von Power Automation. Erfahren Sie mehr über die [Inhaltsverarbeitung](form-processing-overview.md).
 - **Inhalts Konformität:** Steuern und Verwalten von Inhalten zur Verbesserung der Sicherheit und Steuerung mit Integration in Microsoft Information Protection.
 
-Mit den neuen AI-Diensten und-Funktionen können Sie Apps für Inhalts verstehen und Klassifizierung direkt in den Inhalts Verwaltungs Fluss mithilfe von SharePoint-Syntex erstellen:
+Mit den neuen AI-Diensten und-Funktionen können Sie Apps für Inhalts verstehen und Klassifizierung direkt in den Inhalts Verwaltungs Fluss mithilfe von SharePoint-Syntex erstellen. Es gibt zwei verschiedene Möglichkeiten, ihre Inhalte zu verstehen. Der verwendete Modelltyp basiert auf dem Dateiformat und dem Anwendungsfall:
 
-|Manuelle Eingabe| Formularverarbeitung | Dokument Verständnis |
-|:-------|:--------|:--------|
-| Dateneingabe und arbeitsintensiv für jeden Inhalt. | Identifizieren von Dateien und Extrahieren von Daten aus strukturierten oder semi-strukturierten Dokumenten, wie Formularen oder Rechnungen. |  Identifizieren und Extrahieren von Daten aus unstrukturierten Dokumenten wie Buchstaben oder Verträgen, bei denen sich die Text Entitäten, die Sie extrahieren möchten, in Sätzen oder bestimmten Dokumentbereichen befinden. |
-| Interaktive.   |  Benutzerdefiniert, unterstützt.  | Vorgefertigt, automatisiert. |
-| Personen, die die Arbeit erledigen. | Unterrichtet von Ihren Fachleuten (KMU). | KMU sind dabei wenig involviert. |
+| Formularverarbeitung | Dokument Verständnis |
+|:-------|:-------|
+| Erstellt aus der Dokumentbibliothek. | Erstellt im inhaltscenter, Teil von SharePoint-Syntex. |
+| In Ai Builder erstelltes Modell. | Modell, das in systemeigener Schnittstelle erstellt wurde. |
+| Wird für semi-strukturierte Dateiformate verwendet. | Wird für unstrukturierte Dateiformate verwendet. |
+| Settable-Klassifizierung. | Schulungs-und Klassifizierungs Module mit optionalen Extraktionsfunktionen. |
+| Auf eine einzelne Bibliothek beschränkt. | Kann auf mehrere Bibliotheken angewendet werden. |
+| Zug auf PDF, JPG, PNG-Format, insgesamt 50 MB/500 PP. | Zug auf 5-10 PDF-, Office-oder e-Mail-Dateien, einschließlich negativer Beispiele. |
 
 In der folgenden Tabelle wird die Verfügbarkeit und Lizenzierung für SharePoint-Syntex erläutert:
 
@@ -44,17 +47,6 @@ In der folgenden Tabelle wird die Verfügbarkeit und Lizenzierung für SharePoin
 | Bereitgestellt für die standardmäßige gemeinsame Datendienst Umgebung. | Verfügt nicht über Kapazitätseinschränkungen. |
 
 Weitere Informationen zu den Credits und Einheiten des AI-Generators finden Sie unter [AI Builder Licensing](https://docs.microsoft.com/ai-builder/administer-licensing).
-
-Es gibt zwei verschiedene Möglichkeiten, ihre Inhalte zu verstehen. Der verwendete Modelltyp basiert auf dem Dateiformat und dem Anwendungsfall:
-
-| Formularverarbeitung | Dokument Verständnis |
-|:-------|:-------|
-| Erstellt aus der Dokumentbibliothek. | Erstellt im inhaltscenter, Teil von SharePoint-Syntex. |
-| In Ai Builder erstelltes Modell. | Modell, das in systemeigener Schnittstelle erstellt wurde. |
-| Wird für semi-strukturierte Dateiformate verwendet. | Wird für unstrukturierte Dateiformate verwendet. |
-| Settable-Klassifizierung. | Schulungs-und Klassifizierungs Module mit optionalen Extraktionsfunktionen. |
-| Auf eine einzelne Bibliothek beschränkt. | Kann auf mehrere Bibliotheken angewendet werden. |
-| Zug auf PDF, JPG, PNG-Format, insgesamt 50 MB/500 PP. | Zug auf 5-10 PDF-, Office-oder e-Mail-Dateien, einschließlich negativer Beispiele. |
 
 SharePoint Syntex integriert sich in Microsoft 365-Compliance-Features wie:
 

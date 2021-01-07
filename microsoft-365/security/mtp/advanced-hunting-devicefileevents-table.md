@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: f63328992af95562688e644f68b8151eb09b9e0f
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 9b48321693f883e40a100e29e5e1ec3c5203caa2
+ms.sourcegitcommit: ddfb4f3e34deb733e8625e845e4dfd1fcc066ceb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846148"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49771859"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -84,10 +84,13 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `SensitivitySubLabel` | string | Unter Bezeichnung, die auf eine e-Mail, Datei oder andere Inhalte angewendet wird, um Sie für den Schutz von Informationen zu klassifizieren; Sensitivitäts-Sublabel werden unter Sensitivitäts Bezeichnungen gruppiert, jedoch unabhängig voneinander behandelt. |
 | `IsAzureInfoProtectionApplied` | Boolescher Wert | Gibt an, ob die Datei durch Azure Information Protection verschlüsselt wird. |
 
+>[!NOTE]
+> Datei Hash Informationen werden immer angezeigt, wenn Sie verfügbar sind. Es gibt jedoch mehrere mögliche Gründe, warum ein SHA1-, SHA256-oder MD5-Problem nicht berechnet werden kann. Die Datei befindet sich beispielsweise im Remotespeicher, wird von einem anderen Prozess gesperrt, komprimiert oder als virtuell gekennzeichnet. In diesen Szenarien werden die Datei Hash Informationen leer angezeigt.
+
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
 - [Lernen der Abfragesprache](advanced-hunting-query-language.md)
 - [Verwenden freigegebener Abfragen](advanced-hunting-shared-queries.md)
-- [Suchen auf Geräten, in E-Mails, Apps und Identitäten](advanced-hunting-query-emails-devices.md)
+- [Suche über Geräte, E-Mails, Apps und Identitäten hinweg](advanced-hunting-query-emails-devices.md)
 - [Grundlegendes zum Schema](advanced-hunting-schema-tables.md)
 - [Anwenden bewährter Methoden für Abfragen](advanced-hunting-best-practices.md)

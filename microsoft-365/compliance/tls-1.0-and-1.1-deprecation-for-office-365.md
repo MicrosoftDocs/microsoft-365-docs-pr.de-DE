@@ -17,16 +17,16 @@ appliesto:
 - Office 365 Personal
 - Office Online Server
 - Office Web Apps
-ms.openlocfilehash: ab3685883ac08522ab9ea1ee0cf194ba263d9166
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 622d783011defcf9c84061087b7d05f2a117172e
+ms.sourcegitcommit: 3bf4f1c0d3a8515cca651b2a520217195f89457f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681689"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777057"
 ---
 # <a name="tls-10-and-11-deprecation-for-office-365"></a>TLS 1.0- und 1.1-Einstellungen für Office 365
 > [!IMPORTANT]
-> Wir haben die Durchsetzung von TLS 1,0 und 1,1 für kommerzielle Kunden aufgrund von covid-19 vorübergehend angehalten, aber wenn sich die Zustellungs Ketten angepasst haben und einige Länder eine Sicherung durchführen, setzen wir die TLS-Erzwingung so um, dass Sie mit dem 15. Oktober beginnen, 2020 und der Rollout in den folgenden Wochen und Monaten fortgesetzt wird. 
+> Wir haben die Durchsetzung von TLS 1,0 und 1,1 für kommerzielle Kunden aufgrund von COVID-19 vorübergehend angehalten, aber wenn sich die Lieferketten angepasst haben und einige Länder eine Sicherung durchführen, setzen wir die TLS-Erzwingung so um, dass Sie mit dem Oktober 15, 2020 beginnt und die Einführung in den folgenden Wochen und Monaten fortgesetzt wird. 
 
 Ab dem 31. Oktober 2018 werden die Protokolle Transport Layer Security (TLS) 1,0 und 1,1 für den Office 365 Dienst veraltet. Der Effekt für Endbenutzer wird voraussichtlich minimal sein. Diese Änderung wurde seit mehr als zwei Jahren veröffentlicht, und die erste öffentliche Ankündigung erfolgte im Dezember 2017. Dieser Artikel soll nur die Office 365 lokalen Clients in Bezug auf den Office 365 Dienst abdecken, kann aber auch auf lokale TLS-Probleme mit Office-und Office Online Server/Office-Webanwendungen angewendet werden.
 

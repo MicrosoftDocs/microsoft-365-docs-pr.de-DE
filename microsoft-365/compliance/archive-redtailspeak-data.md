@@ -1,5 +1,5 @@
 ---
-title: Einrichten eines Connectors zum Archivieren von "Speak"-Daten in Microsoft 365
+title: Einrichten eines Connectors zum Archivieren von Red Tail Speak-Daten in Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,13 +11,13 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Administratoren können einen Connector zum Importieren und Archivieren von Daten aus Globanet in Microsoft 365 einrichten. Mit diesem Connector können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren. Nach dem Archivieren dieser Daten können Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten von drittanbieterdaten verwenden.
-ms.openlocfilehash: ee1e5c63d8990d5847241dc0ab4a88ed19e3215f
-ms.sourcegitcommit: 36d12e02f6fda199ae7f2fb72fe52d7e2b5b4efd
+description: Administratoren können einen Connector zum Importieren und Archivieren von Red Tail Speak-Daten aus Globanet in Microsoft 365 einrichten. Mit diesem Connector können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren. Nach dem Archivieren dieser Daten können Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten von drittanbieterdaten verwenden.
+ms.openlocfilehash: ff66f00348bd3e73bdbd607bd4bd0c0f922786cc
+ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "49740292"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49769210"
 ---
 # <a name="set-up-a-connector-to-archive-redtail-speak-data"></a>Einrichten eines Connectors zum Archivieren von druckwort-Daten
 
@@ -43,7 +43,7 @@ In der folgenden Übersicht wird erläutert, wie Sie einen Konnektor verwenden, 
 
 - Erstellen Sie ein Globanet-Merge1-Konto für Microsoft-Connectors. Um ein Konto zu erstellen, wenden Sie sich an den [Globanet-Kunden Support](https://globanet.com/contact-us/). Sie müssen sich bei diesem Konto anmelden, wenn Sie den Connector in Schritt 1 erstellen.
 
-- In Schritt 2 müssen Sie den SFTP-Server Ihrer Organisation angeben. Dies ist erforderlich, damit Globanet Merge1 Sie kontaktieren kann, um zum Sammeln von Daten über SFTP zu sprechen.
+- In Schritt 2 müssen Sie den SFTP-Server Ihrer Organisation angeben. Dieser Schritt ist erforderlich, damit Globanet Merge1 Sie kontaktieren kann, um zum Sammeln von Daten über SFTP zu sprechen.
 
 - Der Benutzer, der in Schritt 1 den codetail Speak Importer-Konnektor erstellt (und in Schritt 3 vervollständigt wird), muss der Rolle "Post Fach Import/-Export" in Exchange Online zugewiesen sein. Diese Rolle ist für das Hinzufügen von Connectors auf der Seite Daten Konnektoren im Microsoft 365 Compliance Center erforderlich. Diese Rolle ist in Exchange Online standardmäßig keiner Rollengruppe zugewiesen. Sie können die Rolle "Post Fach Import exportieren" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle "Post Fach Import Export" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie im Abschnitt [Erstellen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) von Rollengruppen oder [Ändern von Rollengruppen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
 
@@ -51,13 +51,13 @@ In der folgenden Übersicht wird erläutert, wie Sie einen Konnektor verwenden, 
 
 Der erste Schritt besteht im Zugriff auf die Seite " **Daten Konnektoren** " im Microsoft 365 Compliance Center und zum Erstellen eines Connectors für die Sprech Daten.
 
-1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com/) und klicken Sie auf **Data Connectors** &gt; **Speak**.
+1. Wechseln [https://compliance.microsoft.com](https://compliance.microsoft.com/) Sie zu und wählen Sie **Data Connectors** &gt; **Speak** aus.
 
-2. Klicken Sie auf der Seite Produktbeschreibung **sprechen** auf **neuen Connector hinzufügen**.
+2. Wählen Sie auf der Seite Produktbeschreibung **sprechen** die Option **neuen Connector hinzufügen** aus.
 
-3. Klicken Sie auf der Seite **Nutzungsbedingungen** auf **annehmen**.
+3. Wählen Sie auf der Seite **Nutzungsbedingungen** die Option **akzeptieren** aus.
 
-4. Geben Sie einen eindeutigen Namen ein, der den Connector identifiziert, und klicken Sie dann auf **weiter**.
+4. Geben Sie einen eindeutigen Namen ein, der den Connector identifiziert, und wählen Sie dann **weiter** aus.
 
 5. Melden Sie sich bei Ihrem Merge1-Konto an, um den Connector zu konfigurieren.
 
@@ -65,7 +65,7 @@ Der erste Schritt besteht im Zugriff auf die Seite " **Daten Konnektoren** " im 
 
 Der zweite Schritt besteht darin, den codetail Speak-Connector auf der Merge1-Website zu konfigurieren. Weitere Informationen zum Konfigurieren des Merge1 Speak-Connectors finden Sie unter [Benutzerhandbuch für Drittanbieter-Konnektoren](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Redtail%20Speak%20User%20Guide%20.pdf).
 
-Nachdem Sie auf **& Ende speichern** klicken, wird die Seite **Benutzerzuordnung** im Connector-Assistenten im Microsoft 365 Compliance Center angezeigt.
+Nachdem Sie **& Ende speichern** ausgewählt haben, wird die Seite **Benutzerzuordnung** im Connector-Assistenten im Microsoft 365 Compliance Center angezeigt.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Schritt 3: Zuordnen von Benutzern und Abschließen des Connector-Setups
 
@@ -73,17 +73,17 @@ Führen Sie die folgenden Schritte aus, um Benutzer zuzuordnen und das Connector
 
 1. Aktivieren Sie auf der Seite **Karte "Benutzer zu Microsoft 365** -Benutzer sprechen" die automatische Benutzerzuordnung. Das Wort "Sendungen sprechen" enthält eine Eigenschaft mit dem Namen " *e-Mail*", die e-Mail-Adressen für Benutzer in Ihrer Organisation enthält. Wenn der Connector diese Adresse einem Microsoft 365-Benutzer zuordnen kann, werden die Elemente in das Postfach dieses Benutzers importiert.
 
-2. Klicken Sie auf **weiter**, überprüfen Sie Ihre Einstellungen, und wechseln Sie zur Seite **Daten Konnektoren** , um den Fortschritt des Importvorgangs für den neuen Connector anzuzeigen.
+2. Wählen Sie **weiter** aus, überprüfen Sie Ihre Einstellungen, und wechseln Sie zur Seite **Daten Konnektoren** , um den Fortschritt des Importvorgangs für den neuen Connector anzuzeigen.
 
 ## <a name="step-4-monitor-the-redtail-speak-connector"></a>Schritt 4: Überwachen des Audioconnectors Speak
 
 Nachdem Sie den Connector Speak erstellt haben, können Sie den Connectorstatus im Microsoft 365 Compliance Center anzeigen.
 
-1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com/) und klicken Sie im linken Navigationsbereich auf **Daten-Konnektoren** .
+1. Wechseln [https://compliance.microsoft.com](https://compliance.microsoft.com/) Sie zu und wählen Sie im linken Navigationsbereich **Daten-Konnektoren** aus.
 
-2. Klicken Sie auf die Registerkarte **Konnektoren** , und wählen Sie dann den Stecker **Speak** Connector aus, um die Flyout-Seite anzuzeigen. Auf dieser Seite werden Eigenschaften und Informationen zum Connector angezeigt.
+2. Wählen Sie die Registerkarte **Connectors** aus, und wählen Sie dann den Stecker **Speak** Connector aus, um die Flyout-Seite anzuzeigen. Auf dieser Seite werden Eigenschaften und Informationen zum Connector angezeigt.
 
-3. Klicken Sie unter **Connectorstatus with Source** auf den Link **Download Protokoll** , um das Statusprotokoll für den Connector zu öffnen (oder zu speichern). Dieses Protokoll enthält Daten, die in die Microsoft-Cloud importiert wurden.
+3. Wählen Sie unter **Connectorstatus with Source** den Link **Download Protokoll** aus, um das Statusprotokoll für den Connector zu öffnen (oder zu speichern). Dieses Protokoll enthält Daten, die in die Microsoft-Cloud importiert wurden.
 
 ## <a name="known-issues"></a>Bekannte Probleme
 

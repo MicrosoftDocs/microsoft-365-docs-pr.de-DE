@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365-Workload-Lösungen und-Szenarien
-description: Eine Beschreibung.
+description: Erreichen Sie Ihre geschäftlichen Ziele mit diesen Lösungsanleitungen für bestimmte Microsoft 365-Arbeitsauslastungen.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 f1.keywords: NOCSH
 ROBOTS: NOINDEX
-ms.openlocfilehash: d7243c68ca52ac2c84d96e3db0fa60b9592cbac3
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 55eab63636fd20dc33062498f6bbae9295d7277f
+ms.sourcegitcommit: ddfb4f3e34deb733e8625e845e4dfd1fcc066ceb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613548"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49771823"
 ---
 # <a name="microsoft-365-workload-solutions-and-scenarios"></a>Microsoft 365-Workload-Lösungen und-Szenarien
 

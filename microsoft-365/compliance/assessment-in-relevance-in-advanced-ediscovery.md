@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 titleSuffix: Office 365
-ms.date: 09/14/2017
+ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -18,17 +18,14 @@ ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
 description: Erhalten Sie einen Überblick über die Bewertungsphase und ihre Rolle bei der Bestimmung des Umfangs von Problemen bei der Relevanz-Schulung in Microsoft 365 Advanced eDiscovery.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d9ce400af87af36dfc9e0d51caba90b952edec9c
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.openlocfilehash: 8930f362d217ed87fc0e16b88b7588ab781164e8
+ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/06/2021
-ms.locfileid: "49759921"
+ms.locfileid: "49769276"
 ---
-# <a name="understand-assessment-in-relevance-in-advanced-ediscovery-classic"></a>Understanding Assessment in Relevanz in Advanced eDiscovery (klassisch)
-
-> [!NOTE]
-> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+# <a name="assessment-in-the-relevance-module-in-advanced-ediscovery"></a>Bewertung im Modul "Relevanz" in Advanced eDiscovery
   
 Advanced eDiscovery ermöglicht eine frühzeitige Bewertung, beispielsweise für die definierten Probleme und die für einen Fall importierten Daten. Mit Advanced eDiscovery kann der Experte Entscheidungen über einen angenommenen Ansatz treffen und diese Entscheidungen auf das Dokument Überprüfungs Projekt anwenden.
   
@@ -43,14 +40,14 @@ Die Statistiken, die während des Trainings und nach der Batch Berechnung auf de
 Nachdem der Experte einen anfänglichen assessmentsatz mit 500 Dateien überprüft hat, kann die Relevanz den aktuellen Fehler Rand der Rückruf Werte bestimmen. Relevanz wird auch empfohlen, einen standardmäßigen Fehlerbereich zu erreichen, um den Bewertungs Satzes zu optimieren. Im Folgenden finden Sie einige Beispiele:
   
 - Wenn der Bewertungssatz bereits eine Fehlergrenze von Plus oder minus 10% ergab, wird die Relevanz für die Weiterbildung (keine zusätzliche Bewertungs Überprüfung erforderlich) empfohlen. 
-    
+
 - Wenn der Bewertungsgruppe eine Fehlermarge von Plus oder minus 13% ergab, kann die Relevanz die Überprüfung eines weiteren Satzes von Bewertungsdateien empfehlen, um einen kleineren Rand zu erreichen. 
-    
+
 - Wenn die Reichweite extrem niedrig ist, empfiehlt es sich möglicherweise, die Bewertung zu beenden, obwohl der Fehler Umfang groß ist (Statistik ist undurchführbar), da der für die Erreichung eines nützlichen Fehler Fehlers erforderliche Bewertungsumfang zu groß ist.
-    
+
 Jedes Problem hat seinen eigenen Reichtum, den aktuellen Fehlerbereich und als Ergebnis eine geschätzte Anzahl zusätzlicher Bewertungsdateien. Der nächste assessmentsatz wird entsprechend der maximalen Anzahl von Dateien (bis zu 1.000 in einer einzelnen Gruppe) erstellt.
   
 Sie können die Relevanz-Empfehlungen akzeptieren oder den aktuellen Fehler Rand entsprechend Ihren Anforderungen anpassen. Der standardmäßige aktuelle Rand des Fehlers wird für den Rückruf auf gleich oder über 75% bestimmt.
   
 > [!NOTE]
-> Die Bewertungsphase kann auf der Registerkarte **Relevanz \> Track** in der erweiterten Ansicht für ein Problem umgangen werden, indem das Kontrollkästchen **Bewertung** pro Problem und dann für "alle Probleme" gelöscht wird. Daraus ergibt sich jedoch keine Statistik für dieses Problem. > das Deaktivieren des Kontrollkästchens **Bewertung** kann nur ausgeführt werden, bevor eine Bewertung durchgeführt wird. Wenn in einem Fall mehrere Probleme vorhanden sind, wird die Bewertung nur umgangen, wenn das Kontrollkästchen für jedes Problem deaktiviert ist.
+> Die Bewertungsphase kann auf der Registerkarte **Relevanz \> Track** in der erweiterten Ansicht für ein Problem umgangen werden, indem das Kontrollkästchen **Bewertung** pro Problem und dann für "alle Probleme" gelöscht wird. Dadurch werden keine Statistiken für dieses Problem angezeigt. Das Deaktivieren des Kontrollkästchens **Bewertung** kann nur ausgeführt werden, bevor eine Bewertung durchgeführt wird. Wenn in einem Fall mehrere Probleme vorhanden sind, wird die Bewertung nur umgangen, wenn das Kontrollkästchen für jedes Problem deaktiviert ist.

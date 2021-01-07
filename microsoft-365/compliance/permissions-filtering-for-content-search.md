@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: Verwenden Sie die Inhaltssuche-Berechtigungs Filterung, um einem eDiscovery-Manager nur eine Teilmenge von Postfächern und Websites in Ihrer Organisation zu suchen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 28afbf65678e74e087365518bd07ceaae0e40e8a
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 5abf50988f40a3de833583543beb3b1c49e4e520
+ms.sourcegitcommit: 3bf4f1c0d3a8515cca651b2a520217195f89457f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358547"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777088"
 ---
 # <a name="configure-permissions-filtering-for-content-search"></a>Konfigurieren der Berechtigungsfilterung für die Compliancesuche
 
@@ -46,58 +46,48 @@ Die Such Berechtigungs Filterung wird von der Inhalts Suchfunktion im Security &
 ## <a name="requirements-to-configure-permissions-filtering"></a>Anforderungen zum Konfigurieren der Berechtigungs Filterung
 
 - Zum Ausführen der Cmdlets für den Compliance-Sicherheitsfilter müssen Sie Mitglied der Rollengruppe "Organisationsverwaltung" im Security & Compliance Center sein. Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
-    
-- Sie müssen Windows PowerShell sowohl mit dem Security & Compliance Center als auch mit Ihrer Exchange Online Organisation verbinden, um die Compliance Security Filter-Cmdlets zu verwenden. Dies ist erforderlich, weil diese Cmdlets auf Postfacheigenschaften zugreifen müssen. Und deshalb müssen Sie eine Verbindung mit Exchange Online herstellen. Lesen Sie die Schritte im nächsten Abschnitt. 
-    
-- Weitere Informationen über Berechtigungsfilter für die Suche finden Sie im Abschnitt [More information](#more-information). 
-    
-- Die Such Berechtigungs Filterung gilt für inaktive Postfächer, was bedeutet, dass Sie die Post Fach-und Postfachinhalts Filterung verwenden können, um zu begrenzen, wer ein inaktives Postfach durchsuchen kann Weitere Informationen zur Filterung von Berechtigungen und inaktiven Postfächern finden Sie im Abschnitt [Weitere Informationen](#more-information) . 
-    
--  Die Such Berechtigungs Filterung kann nicht verwendet werden, um zu begrenzen, wer öffentliche Ordner in Exchange durchsuchen kann. 
-    
-- Es gibt keine Beschränkung für die Anzahl der Such Berechtigungsfilter, die in einer Organisation erstellt werden können. Die Suchleistung wird jedoch beeinträchtigt, wenn mehr als 100 Such Berechtigungsfilter vorhanden sind. Wenn Sie die Anzahl der Such Berechtigungsfilter in Ihrer Organisation so klein wie möglich halten möchten, erstellen Sie nach Möglichkeit Filter, die Regeln für Exchange, SharePoint und OneDrive in einem einzelnen Filter kombinieren.
-    
-## <a name="connect-to-the-security--compliance-center-and-exchange-online-in-a-single-remote-powershell-session"></a>Herstellen einer Verbindung mit dem Security & Compliance Center und Exchange Online in einer einzelnen Remote-PowerShell-Sitzung
 
-1. Speichern Sie den folgenden Text in einer Windows PowerShell Skriptdatei unter Verwendung des Datei namens Suffixes " **. ps1**". Sie können es beispielsweise in einer Datei mit dem Namen **ConnectEXO-CC.ps1**speichern.
-    
+- Sie müssen eine Verbindung mit Exchange Online-und Sicherheits & Compliance Center PowerShell herstellen, um die Cmdlets für den Compliance-Sicherheitsfilter zu verwenden. Dies ist erforderlich, da diese Cmdlets Zugriff auf Postfacheigenschaften benötigen, weshalb Sie eine Verbindung mit Exchange Online PowerShell herstellen müssen. Lesen Sie die Schritte im nächsten Abschnitt.
+
+- Weitere Informationen über Berechtigungsfilter für die Suche finden Sie im Abschnitt [More information](#more-information).
+
+- Die Such Berechtigungs Filterung gilt für inaktive Postfächer, was bedeutet, dass Sie die Post Fach-und Postfachinhalts Filterung verwenden können, um zu begrenzen, wer ein inaktives Postfach durchsuchen kann Weitere Informationen zur Filterung von Berechtigungen und inaktiven Postfächern finden Sie im Abschnitt [Weitere Informationen](#more-information) .
+
+- Die Such Berechtigungs Filterung kann nicht verwendet werden, um zu begrenzen, wer öffentliche Ordner in Exchange durchsuchen kann.
+
+- Es gibt keine Beschränkung für die Anzahl der Such Berechtigungsfilter, die in einer Organisation erstellt werden können. Die Suchleistung wird jedoch beeinträchtigt, wenn mehr als 100 Such Berechtigungsfilter vorhanden sind. Wenn Sie die Anzahl der Such Berechtigungsfilter in Ihrer Organisation so klein wie möglich halten möchten, erstellen Sie nach Möglichkeit Filter, die Regeln für Exchange, SharePoint und OneDrive in einem einzelnen Filter kombinieren.
+
+## <a name="connect-to-exchange-online-and-security--compliance-center-powershell-in-a-single-session"></a>Herstellen einer Verbindung mit Exchange Online-und Security & Compliance Center PowerShell in einer einzigen Sitzung
+
+Bevor Sie das Skript in diesem Abschnitt erfolgreich ausführen können, müssen Sie das Exchange Online PowerShell V2-Modul herunterladen und installieren. Weitere Informationen finden Sie unter Informationen zum [Exchange Online PowerShell V2-Modul](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
+
+1. Speichern Sie den folgenden Text in einer Windows PowerShell Skriptdatei unter Verwendung des Datei namens Suffixes " **. ps1**". Sie können es beispielsweise in einer Datei mit dem Namen **ConnectEXO-SCC.ps1** speichern.
+
     ```powershell
+    Import-Module ExchangeOnlineManagement
     $UserCredential = Get-Credential
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
-    Import-PSSession $Session -DisableNameChecking
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
-    Import-PSSession $Session -AllowClobber -DisableNameChecking
+    Connect-ExchangeOnline -Credential $UserCredential
+    Connect-IPPSSession -Credential $UserCredential
     $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Exchange Online + Compliance Center)"
     ```
 
 2. Öffnen Sie auf dem lokalen Computer Windows PowerShell, wechseln Sie zu dem Ordner, in dem sich das Skript befindet, das Sie im vorherigen Schritt erstellt haben, und führen Sie dann das Skript aus. Zum Beispiel:
-    
-    ```powershell
-    .\ConnectEXO-CC.ps1
-    ```
-
-Woher wissen Sie, dass dieses Verfahren erfolgreich war? Nachdem Sie das Skript ausgeführt haben, werden Cmdlets aus dem Security & Compliance Center und Exchange Online in Ihre lokale Windows PowerShell Sitzung importiert. Wenn Sie keine Fehlermeldungen erhalten, wurde die Verbindung erfolgreich hergestellt. Ein Schnelltest besteht darin, ein Security &-Compliance Center-Cmdlet und ein Exchange Online-Cmdlet auszuführen. Beispielsweise können Sie **install-UnifiedCompliancePrerequisite** und **Get-Mailbox**ausführen. 
-  
-Wenn Sie Fehlermeldungen erhalten, überprüfen Sie die folgenden Anforderungen:
-  
-- Ein häufig auftretendes Problem ist ein falsches Kennwort. Führen Sie die beiden Schritte erneut durch, und achten Sie besonders auf die korrekte Eingabe des Benutzernamens und Kennworts in Schritt 1.
-    
-- Stellen Sie sicher, dass Ihr Konto über die Berechtigung zum Zugriff auf das Sicherheits & Compliance Center verfügt. Ausführliche Informationen finden Sie unter [Gewähren von Benutzern Zugriff auf das Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
-    
-- Um die Abwehr von DOS-Angriffen (Denial of Service) zu unterstützen, sind Sie auf drei offene Remote-PowerShell-Verbindungen mit dem Security & Compliance Center limitiert.
-    
-- Windows PowerShell müssen für die Ausführung von Skripts konfiguriert sein. Dies muss nur einmal ausgeführt werden, und nicht jedes Mal, wenn Sie eine Verbindung herstellen. Um Windows PowerShell für das Ausführen von signierten Skripts zu aktivieren, müssen Sie den folgenden Befehl in einem Windows PowerShell-Fenster mit erhöhten Rechten ausführen (ein Windows PowerShell-Fenster, das Sie durch Auswahl von **Als Administrator ausführen**) geöffnet haben.
 
     ```powershell
-    Set-ExecutionPolicy RemoteSigned
+    .\ConnectEXO-SCC.ps1
     ```
 
-- Der TCP-Port 80 muss für den Datenverkehr zwischen Ihrem lokalen Computer und Office 365 geöffnet sein. Er ist wahrscheinlich offen, es kann jedoch vorkommen, dass Ihre Organisation eine eingeschränkte Internetzugriffsrichtlinie verfolgt.
+Woher wissen Sie, dass dieses Verfahren erfolgreich war? Nachdem Sie das Skript ausgeführt haben, werden Cmdlets aus Exchange Online und Security & Compliance PowerShell in Ihre lokale Windows PowerShell Sitzung importiert. Wenn Sie keine Fehlermeldungen erhalten, wurde die Verbindung erfolgreich hergestellt. Ein Schnelltest besteht darin, ein Exchange Online-und Sicherheits & Compliance Center-Cmdlet auszuführen. Beispielsweise können Sie ausführen und **Get-Mailbox** und **Get-ComplianceSearch**.
 
-  
+Informationen zur Problembehandlung bei PowerShell-Verbindungsfehlern finden Sie unter:
+
+- [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell#how-do-you-know-this-worked)
+
+- [Herstellen einer Verbindung mit Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell#how-do-you-know-this-worked)
+
 ## <a name="new-compliancesecurityfilter"></a>New-ComplianceSecurityFilter
 
-Der **New-ComplianceSecurityFilter** wird verwendet, um einen Such Berechtigungsfilter zu erstellen. In der folgenden Tabelle werden die Parameter für dieses Cmdlet beschrieben. Alle Parameter sind erforderlich, um einen Compliancesicherheitsfilter zu erstellen. 
+Der **New-ComplianceSecurityFilter** wird verwendet, um einen Such Berechtigungsfilter zu erstellen. In der folgenden Tabelle werden die Parameter für dieses Cmdlet beschrieben. Alle Parameter sind erforderlich, um einen Compliancesicherheitsfilter zu erstellen.
   
 |**Parameter**|**Beschreibung**|
 |:-----|:-----|
@@ -144,7 +134,7 @@ In diesem Beispiel kann der Benutzer annb@contoso.com nur für Postfächer in Ka
 New-ComplianceSecurityFilter -FilterName CountryFilter  -Users annb@contoso.com -Filters "Mailbox_CountryCode  -eq '124'" -Action All
 ```
 
-In diesem Beispiel können die "donh"-und "suzanf"-Benutzer nur die Postfächer durchsuchen, die den Wert "Marketing" für die CustomAttribute1-Postfacheigenschaft aufweisen.
+In diesem Beispiel können die Benutzer „donh“ und „suzanf“ nur die Postfächer durchsuchen, die den Wert „Marketing“ für die Postfacheigenschaft „CustomAttribute1“ aufweisen.
 
 ```powershell
 New-ComplianceSecurityFilter -FilterName MarketingFilter  -Users donh,suzanf -Filters "Mailbox_CustomAttribute1  -eq 'Marketing'" -Action Search
@@ -166,7 +156,7 @@ $DG = Get-DistributionGroup "Ottawa Users"
 New-ComplianceSecurityFilter -FilterName DGFilter  -Users eDiscoveryManager -Filters "Mailbox_MemberOfGroup -eq '$($DG.DistinguishedName)'" -Action Search
 ```
 
-In diesem Beispiel wird verhindert, dass Benutzer Inhalt aus den Postfächern der Mitglieder der Verteilergruppe „Executive Team“ löschen. Das Cmdlet Get-DistributionGroup in Exchange Online PowerShell wird verwendet, um die Mitglieder der Gruppe "Executive Team" zu suchen.
+In diesem Beispiel wird verhindert, dass Benutzer Inhalt aus den Postfächern der Mitglieder der Verteilergruppe „Executive Team“ löschen. Das Get-DistributionGroup-Cmdlet in Exchange Online PowerShell wird verwendet, um die Mitglieder der Gruppe "Executive Team" zu finden.
 
 ```powershell
 $DG = Get-DistributionGroup "Executive Team"
@@ -219,15 +209,15 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 Das **Get-ComplianceSecurityFilter** wird verwendet, um eine Liste von Such Berechtigungs Filtern zurückzugeben. Verwenden Sie den  _Filter_ Name-Parameter, um Informationen für einen bestimmten Suchfilter zurückzugeben. 
   
-## <a name="set-compliancesecurityfilter"></a>Gruppe-ComplianceSecurityFilter
+## <a name="set-compliancesecurityfilter"></a>Set-ComplianceSecurityFilter
 
-Das **ComplianceSecurityFilter-Feature** wird verwendet, um einen vorhandenen Such Berechtigungsfilter zu ändern. Der einzige erforderliche Parameter ist  _Filter_Name. 
+Das **ComplianceSecurityFilter-Feature** wird verwendet, um einen vorhandenen Such Berechtigungsfilter zu ändern. Der einzige erforderliche Parameter ist  _Filter_ Name. 
   
 |**Parameter**|**Beschreibung**|
 |:-----|:-----|
 | _Action_| Der Parameter  _Action_ gibt den Typ der Suchaktion an, auf die der Filter angewendet wird. Folgende Aktionen für die Inhaltssuche sind möglich: <br/><br/> **Export:** Der Filter wird beim Exportieren von Suchergebnissen angewendet.  <br/> **Vorschau:** Der Filter wird bei der Vorschau der Suchergebnisse angewendet.  <br/> **Säuberung:** Der Filter wird angewendet, wenn Suchergebnisse bereinigt werden.  <br/> **Suche:** Der Filter wird angewendet, wenn eine Suche ausgeführt wird.  <br/> **All:** Der Filter wird auf alle Suchaktionen angewendet.  <br/> |
 | _FilterName_|Der Parameter  _Filter_ Name gibt den Namen des Berechtigungs Filters an. |
-| _Filters_| Der Parameter  _Filters_ gibt die Suchkriterien für den Compliance-Sicherheitsfilter an. Sie können zwei verschiedene Arten von Filtern erstellen: <br/><br/>**Post Fach Filterung:** Dieser Filtertyp gibt die Postfächer an, die die zugeordneten Benutzer (durch den Parameter  _Users_ angegeben) durchsuchen können. Die Syntax für diesen Filtertyp ist **Mailbox_** _MailboxPropertyName_, wobei  _MailboxPropertyName_ eine Postfacheigenschaft angibt, die zum Bereich der Postfächer verwendet wird, die durchsucht werden können. Beispielsweise würde der Post Fach Filter  `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` dem Benutzer, dem dieser Filter zugewiesen wurde, nur die Postfächer durchsuchen, deren Wert "OttawaUsers" in der CustomAttribute10-Eigenschaft aufweist.  Jede unterstützte filterbare Empfänger Eigenschaft kann für die  _MailboxPropertyName_ -Eigenschaft verwendet werden. Eine Liste der unterstützten Eigenschaften finden Sie unter [Filterbare Eigenschaften für den Parameter "-RecipientFilter"](https://go.microsoft.com/fwlink/p/?LinkId=784903). <br/><br/>**Filterung von Postfachinhalten:** Diese Art von Filter wird auf die Inhalte angewendet, die durchsucht werden können. Es gibt den Postfachinhalt an, nach dem die zugewiesenen Benutzer suchen können. Die Syntax für diesen Filtertyp ist **MailboxContent_** _SearchablePropertyName: Value_, wobei  _SearchablePropertyName_ eine KQL-Eigenschaft (Keyword Query Language) angibt, die in einer Inhaltssuche angegeben werden kann. Beispielsweise würde der Filter für den Postfachinhalt  `MailboxContent_recipients:contoso.com` dem Benutzer, dem dieser Filter zugewiesen wurde, nur die Suche nach Nachrichten ermöglichen, die an Empfänger in der contoso.com-Domäne gesendet wurden.  Eine Liste der durchsuchbaren Nachrichteneigenschaften finden Sie unter [Keyword-Abfragen für die Inhaltssuche](keyword-queries-and-search-conditions.md). <br/><br/>**Filterung von Website-und Websiteinhalten:** Es gibt zwei SharePoint-und OneDrive für Unternehmen-Website bezogene Filter, die Sie verwenden können, um anzugeben, welche Website-oder Websiteinhalte die zugewiesenen Benutzer durchsuchen können: <br/><br/>- **Site_** *SearchableSiteProperty* <br/>- **SiteContent**_*SearchableSiteProperty*<br/><br/>Diese beiden Filter sind austauschbar. Zum Beispiel  `"Site_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` und  `"SiteContent_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` gibt dieselben Ergebnisse zurück. Um Sie bei der Identifizierung eines Filters zu unterstützen, können Sie  `Site_` zum Angeben von Website bezogenen Eigenschaften (beispielsweise eine Website-URL) und  `SiteContent_` zum Angeben von inhaltsbezogenen Eigenschaften (beispielsweise Dokumenttypen) verwenden. Beispielsweise würde der Filter dem  `"Site_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` Benutzer, dem dieser Filter zugewiesen wurde, nur die Suche nach Inhalten in der https://contoso.spoppe.com/sites/doctors Websitesammlung ermöglichen. Der Filter  `"SiteContent_FileExtension -eq 'docx'"` würde dem Benutzer, dem dieser Filter zugewiesen wurde, nur die Suche nach Word-Dokumenten (Word 2007 und höher) ermöglichen.  <br/><br/>Eine Liste der durchsuchbaren Websiteeigenschaften finden Sie unter [Übersicht über durchforstete und verwaltete Eigenschaften in SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=331599). Eigenschaften, die mit einem **Ja** in der Spalte **abgefragt** markiert sind, können zum Erstellen eines Website-oder Websiteinhalts Filters verwendet werden. <br/><br/>          |
+| _Filters_| Der Parameter  _Filters_ gibt die Suchkriterien für den Compliance-Sicherheitsfilter an. Sie können zwei verschiedene Arten von Filtern erstellen: <br/><br/>**Post Fach Filterung:** Dieser Filtertyp gibt die Postfächer an, die die zugeordneten Benutzer (durch den Parameter  _Users_ angegeben) durchsuchen können. Die Syntax für diesen Filtertyp ist **Mailbox_** _MailboxPropertyName_, wobei  _MailboxPropertyName_ eine Postfacheigenschaft angibt, die zum Bereich der Postfächer verwendet wird, die durchsucht werden können. Beispielsweise würde der Post Fach Filter  `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` dem Benutzer, dem dieser Filter zugewiesen wurde, nur die Postfächer durchsuchen, deren Wert "OttawaUsers" in der CustomAttribute10-Eigenschaft aufweist.  Jede unterstützte filterbare Empfänger Eigenschaft kann für die  _MailboxPropertyName_ -Eigenschaft verwendet werden. Eine Liste der unterstützten Eigenschaften finden Sie unter [Filterbare Eigenschaften für den Parameter "-RecipientFilter"](https://go.microsoft.com/fwlink/p/?LinkId=784903). <br/><br/>**Filterung von Postfachinhalten:** Diese Art von Filter wird auf die Inhalte angewendet, die durchsucht werden können. Es gibt den Postfachinhalt an, nach dem die zugewiesenen Benutzer suchen können. Die Syntax für diesen Filtertyp ist **MailboxContent_** _SearchablePropertyName: Value_, wobei  _SearchablePropertyName_ eine KQL-Eigenschaft (Keyword Query Language) angibt, die in einer Inhaltssuche angegeben werden kann. Beispielsweise würde der Filter für den Postfachinhalt  `MailboxContent_recipients:contoso.com` dem Benutzer, dem dieser Filter zugewiesen wurde, nur die Suche nach Nachrichten ermöglichen, die an Empfänger in der contoso.com-Domäne gesendet wurden.  Eine Liste der durchsuchbaren Nachrichteneigenschaften finden Sie unter [Keyword-Abfragen für die Inhaltssuche](keyword-queries-and-search-conditions.md). <br/><br/>**Filterung von Website-und Websiteinhalten:** Es gibt zwei SharePoint-und OneDrive für Unternehmen-Website bezogene Filter, die Sie verwenden können, um anzugeben, welche Website-oder Websiteinhalte die zugewiesenen Benutzer durchsuchen können: <br/><br/>- **Site_** *SearchableSiteProperty* <br/>- **SiteContent** _ *SearchableSiteProperty*<br/><br/>Diese beiden Filter sind austauschbar. Zum Beispiel  `"Site_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` und  `"SiteContent_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` gibt dieselben Ergebnisse zurück. Um Sie bei der Identifizierung eines Filters zu unterstützen, können Sie  `Site_` zum Angeben von Website bezogenen Eigenschaften (beispielsweise eine Website-URL) und  `SiteContent_` zum Angeben von inhaltsbezogenen Eigenschaften (beispielsweise Dokumenttypen) verwenden. Beispielsweise würde der Filter dem  `"Site_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` Benutzer, dem dieser Filter zugewiesen wurde, nur die Suche nach Inhalten in der https://contoso.spoppe.com/sites/doctors Websitesammlung ermöglichen. Der Filter  `"SiteContent_FileExtension -eq 'docx'"` würde dem Benutzer, dem dieser Filter zugewiesen wurde, nur die Suche nach Word-Dokumenten (Word 2007 und höher) ermöglichen.  <br/><br/>Eine Liste der durchsuchbaren Websiteeigenschaften finden Sie unter [Übersicht über durchforstete und verwaltete Eigenschaften in SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=331599). Eigenschaften, die mit einem **Ja** in der Spalte **abgefragt** markiert sind, können zum Erstellen eines Website-oder Websiteinhalts Filters verwendet werden. <br/><br/>          |
 | _Benutzer_|Der Parameter  _Users_ gibt die Benutzer an, die diesen Filter auf Ihre Inhaltssuche angewendet bekommen. Da es sich um eine mehrwertige Eigenschaft handelt, wird durch Angeben eines Benutzers oder einer Benutzergruppe mit diesem Parameter die vorhandene Liste der Benutzer überschrieben. In den folgenden Beispielen finden Sie die Syntax zum Hinzufügen und Entfernen ausgewählter Benutzer. <br/><br/>Sie können auch den Parameter  _Users_ verwenden, um eine Sicherheits & Compliance Center-Rollengruppe anzugeben. Auf diese Weise können Sie eine benutzerdefinierte Rollengruppe erstellen und diese Rollengruppe als Berechtigungsfilter für die Suche zuweisen. Nehmen Sie zum Beispiel einmal an, dass Sie eine benutzerdefinierte Rollengruppe für eDiscovery-Manager in der US-Niederlassung eines internationalen Unternehmens haben. Sie können mithilfe des Parameters  _Users_ diese Rollengruppe angeben (mithilfe der Name-Eigenschaft der Rollengruppe) und dann mithilfe des Parameters  _Filter_ zulassen, dass nur Postfächer in den USA durchsucht werden. <br/><br/>Sie können mit diesem Parameter keine Verteilergruppen angeben. |
 
 ## <a name="examples-of-changing-search-permissions-filters"></a>Beispiele für das Ändern von Such Berechtigungs Filtern
@@ -270,7 +260,7 @@ Die **Remove-ComplianceSecurityFilter** wird verwendet, um einen Suchfilter zu l
 
 - **Wie funktionieren Berechtigungsfilter für die Suche?** Der Berechtigungsfilter wird der Suchabfrage hinzugefügt, wenn eine Inhaltssuche ausgeführt wird. Der Berechtigungsfilter wird durch den booleschen Operator **und** mit der Suchabfrage verknüpft. Beispielsweise verfügen Sie über einen Berechtigungsfilter, mit dem Bob alle Suchaktionen für die Postfächer von Mitgliedern der Arbeits Verteilungsgruppe durchführen kann. Anschließend führt Bob eine Inhaltssuche für alle Postfächer in der Organisation mit der Suchabfrage aus  `sender:jerry@adatum.com` . Da der Berechtigungsfilter und die Suchabfrage logischerweise durch einen **and-** Operator kombiniert werden, gibt die Suche alle Nachrichten zurück, die von Jerry@adatum.com an ein beliebiges Mitglied der Verteilergruppe "Arbeiter" gesendet wurden. 
     
-- **Was passiert, wenn Sie über mehrere Berechtigungsfilter für die Suche verfügen? ** Bei einer Inhaltssuchabfrage werden mehrere Berechtigungsfilter durch den booleschen Operator **ODER** miteinander verknüpft. Daher werden Ergebnisse zurückgegeben, wenn nur einer der Filter zutrifft. Bei einer Inhaltssuche werden dann alle (mit den **ODER**-Operatoren verknüpften) Filter durch den Operator **UND** mit der Suchabfrage kombiniert. Nehmen wir das vorherige Beispiel, in dem Bob durch einen Suchfilter nur die Postfächer der Mitglieder der Verteilergruppe "Arbeiter" durchsuchen kann. Wir erstellen dann einen weiteren Filter, der verhindert, dass Bob das Postfach von Phil („Mailbox_Alias - ne 'Phil'“) durchsuchen kann. Außerdem nehmen wir an, dass Phil ein Mitglied der Gruppe „Worker“ ist. Wenn Bob eine Inhaltssuche (aus dem vorherigen Beispiel) für alle Postfächer in der Organisation ausführt, werden Suchergebnisse für das Postfach von Phil zurückgegeben, obwohl Sie Filter angewendet haben, um zu verhindern, dass Bob Phils Postfach durchsucht. Dies liegt daran, dass der erste Filter, der Bob erlaubt, die Gruppe „Worker“ zu durchsuchen „wahr“ ist. Da Phil Mitglied der Gruppe „Worker“ ist, kann Bob das Postfach von Phil durchsuchen. 
+- **Was passiert, wenn Sie über mehrere Berechtigungsfilter für die Suche verfügen?** Bei einer Inhaltssuchabfrage werden mehrere Berechtigungsfilter durch den booleschen Operator **ODER** miteinander verknüpft. Daher werden Ergebnisse zurückgegeben, wenn nur einer der Filter zutrifft. Bei einer Inhaltssuche werden dann alle (mit den **ODER**-Operatoren verknüpften) Filter durch den Operator **UND** mit der Suchabfrage kombiniert. Nehmen wir das vorherige Beispiel, in dem Bob durch einen Suchfilter nur die Postfächer der Mitglieder der Verteilergruppe "Arbeiter" durchsuchen kann. Wir erstellen dann einen weiteren Filter, der verhindert, dass Bob das Postfach von Phil („Mailbox_Alias - ne 'Phil'“) durchsuchen kann. Außerdem nehmen wir an, dass Phil ein Mitglied der Gruppe „Worker“ ist. Wenn Bob eine Inhaltssuche (aus dem vorherigen Beispiel) für alle Postfächer in der Organisation ausführt, werden Suchergebnisse für das Postfach von Phil zurückgegeben, obwohl Sie Filter angewendet haben, um zu verhindern, dass Bob Phils Postfach durchsucht. Dies liegt daran, dass der erste Filter, der Bob erlaubt, die Gruppe „Worker“ zu durchsuchen „wahr“ ist. Da Phil Mitglied der Gruppe „Worker“ ist, kann Bob das Postfach von Phil durchsuchen. 
     
 - **Funktioniert die Filterung der Suchberechtigungen für inaktive Postfächer?** Ja, Sie können mithilfe von Postfach-und Postfachinhalts Filtern einschränken, wer inaktive Postfächer in Ihrer Organisation durchsuchen kann. Wie ein reguläres Postfach muss ein inaktives Postfach mit der Recipient-Eigenschaft konfiguriert werden, die zum Erstellen eines Berechtigungs Filters verwendet wird. Bei Bedarf können Sie den Befehl **Get-Mailbox-InactiveMailboxOnly** verwenden, um die Eigenschaften inaktiver Postfächer anzuzeigen. Weitere Informationen finden Sie unter [Erstellen und Verwalten inaktiver Postfächer in Office 365](create-and-manage-inactive-mailboxes.md).
     
