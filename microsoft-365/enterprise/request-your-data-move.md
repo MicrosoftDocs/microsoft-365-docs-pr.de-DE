@@ -17,7 +17,7 @@ description: Bestehende Office 365-Kunden müssen vor Ablauf der Frist für Ihr
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 216cd3b0cb55cbbe6be89945b98a01ae469ec4e2
 ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/18/2020
 ms.locfileid: "49349232"
@@ -25,9 +25,9 @@ ms.locfileid: "49349232"
 # <a name="how-to-request-your-data-move"></a>Anfordern der Datenverschiebung
 
 > [!NOTE]
-> Die Informationen auf dieser Seite gelten nur für Kunden, die bereits über vorhandene Microsoft 365-Mandanten verfügten, bevor die neuen Rechenzentren in ihrer Geo-Rechenzentrum geöffnet wurden. Die Berechtigung für die Migration hängt auch vom bestimmten Bereitstellungsdatum des Diensts ab.  Das Erstellungsdatum des Mandanten ist möglicherweise nicht immer das einzelne Datum, das zählt.
+> Die Informationen auf dieser Seite gelten nur für Kunden, die bereits über Microsoft 365-Mandanten verfügten, bevor die neuen Datencenter in Ihrem geografischen Datencenter-Raum geöffnet wurden. Die Berechtigung zur Migration hängt auch vom Datum der Bereitstellung des jeweiligen Dienstes ab.  Die Berechtigung zur Migration hängt auch vom Datum der Bereitstellung des jeweiligen Dienstes ab.
   
-Berechtigte Microsoft 365-Kunden fordern möglicherweise eine Migration für die wichtigsten Kundendaten Ihrer Organisation in Rest an.  Das Programm unterstützt Anfragen für jedes Land in dem in der Tabelle beschriebenen Zeitraum und von Kunden mit einem berechtigten Anmelde Land, das Ihrem Microsoft 365-Mandanten zugeordnet ist.
+Berechtigte Microsoft 365-Kunden können eine Migrationen der ruhenden Kundenkerndaten Ihrer gesamten Organisation anfordern.  Das Programm unterstützt Anfragen für jedes Land in dem in der Tabelle beschriebenen Zeitraum und von Kunden mit einem berechtigten Anmeldeland, das mit ihrem Microsoft 365-Mandanten verbunden ist.
   
 ## <a name="when-can-i-request-a-move"></a>Wann kann ich eine Verschiebung anfordern?
 
@@ -44,7 +44,7 @@ Berechtigte Microsoft 365-Kunden fordern möglicherweise eine Migration für die
 |Südafrika  <br/> |25. Juli 2019  <br/> |30. Juni 2020  <br/> |
 |Schweiz, Liechtenstein  <br/> |10. Dezember 2019  <br/> |30. Juni 2020  <br/> |
 |Norwegen  <br/> |15. April 2020  <br/> |31. Oktober 2020  <br/> |
-|Deutschland  <br/> |1. November 2020  <br/> |30. April 2021  <br/> |
+|Deutschland  <br/> |1. November 2020  <br/> |30. April 2021  <br/> |
 |Brasilien  <br/> |18. November 2020  <br/> |31. Mai 2021  <br/> |
 
 ## <a name="how-to-request-a-move"></a>So fordern Sie eine Migration an
@@ -58,17 +58,17 @@ Dieser Abschnitt wird nicht angezeigt, wenn Ihr Mandant nicht für das Microsoft
   
 ![Bildschirm für die Datencenter-Anmeldung](../media/dataresidencyflyoutae.jpg)
   
-Der Text im **Daten Wohnsitz** Abschnitt ändert sich, um anzugeben, dass **Ihre Organisation aufgefordert wurde, Ihre Daten** in das entsprechende Land und Datum zu verlagern. Außerdem erhalten Sie im Nachrichtencenter eine Bestätigungsmeldung. Damit wird bestätigt, dass Sie die Verschiebung erfolgreich angefordert haben. 
+Im Abschnitt **Datenresidenz** wird der geänderte Text angezeigt, der darauf hinweist, dass **Ihre Organisation die Verschiebung ihrer Daten** in das entsprechende Land und zum entsprechenden Datum angefordert hat. Außerdem erhalten Sie im Nachrichtencenter eine Bestätigungsmeldung. Damit wird bestätigt, dass Sie die Verschiebung erfolgreich angefordert haben. 
   
 ## <a name="what-happens-after-requesting-a-move"></a>Was geschieht nach der Anforderung einer Verschiebung?
 
-Nachdem Sie eine Verlagerung angefordert haben, planen wir, ihre Kernkunden Daten im Ruhezustand für berechtigte Microsoft 365-Dienste so schnell wie möglich zu übersetzen. Aufgrund des unberechenbaren Charakters vieler Beschränkungen können wir kein bestimmtes Datum oder einen bestimmten Zeitrahmen für die Verschiebungen angeben. Kundenmandantenadministratoren wird im Nachrichtencenter eine Benachrichtigung angezeigt, sobald die Verschiebung eines bestimmten Dienstes abgeschlossen wurde.
+Nach der Beantragung einer Verschiebung planen wir, Ihre ruhenden Kundenkerndaten für berechtigte Microsoft 365-Dienste so schnell zu verschieben, wie es unsere betrieblichen Beschränkungen erlauben. Aufgrund des unberechenbaren Charakters vieler Beschränkungen können wir kein bestimmtes Datum oder einen bestimmten Zeitrahmen für die Verschiebungen angeben. Kundenmandantenadministratoren wird im Nachrichtencenter eine Benachrichtigung angezeigt, sobald die Verschiebung eines bestimmten Dienstes abgeschlossen wurde.
   
 Eine Verschiebung kann bis zu 24 Monate ab dem Stichtag der Anforderung dauern.
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Kunden in berechtigten Office 365-Ländern können sich ab Januar 2020 für die Migration von Microsoft Teams-Chatdienstdaten anmelden.  Kunden, die sich zuvor für eine Daten wohnsitzverlagerung entschieden haben, werden auch Teams zu Ihrem lokalen geografischen Rechenzentrum migrieren.  Diese Kunden benötigen keine weiteren Aktionen.
+Kunden in berechtigten Office 365-Ländern können sich ab Januar 2020 für die Migration von Microsoft Teams-Chatdienstdaten anmelden.  Bei Kunden, die sich zuvor für eine Data Residency-Migration entschieden haben, wird auch Teams in das lokale Datencenter am neuen Standort verschoben.  Es sind keine weiteren Aktionen von diesen Kunden erforderlich.
 
 ## <a name="related-topics"></a>Verwandte Themen
 

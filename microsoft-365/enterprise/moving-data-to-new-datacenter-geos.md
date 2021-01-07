@@ -17,7 +17,7 @@ description: Informieren Sie sich über die neuen Regionen der Office 365-Rechen
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 6c5e63a973ca6fdf6aaaaca884df306ff790c325
 ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/18/2020
 ms.locfileid: "49349244"
@@ -50,13 +50,13 @@ Bestandskunden, die ihre Kundenkerndaten in einer bereits vorhandenen Rechenzent
 |**Norwegen**| Europäische Union | Norwegen | April 2020 |
 |**Brasilien**| Nord- und Südamerika | Brasilien | November 2020 |
 
-Ab dem 1. Oktober 2020 Kunden mit einem Office 365 Education-Abonnement, das im Mandanten enthalten ist, keinen Migrations Anspruch.
+Seit dem 1. Oktober 2020 sind Kunden mit einem Office 365 Education-Abonnement, das im Mandanten enthalten ist, nicht mehr zur Migration berechtigt.
 
 Eine vollständige Liste aller Rechenzentrumsregionen, Rechenzentren und Standorte ruhender Kundendaten ist als Teil der [interaktiven Rechenzentrumskarten](https://office.com/datamaps) verfügbar. 
   
 ## <a name="data-residency-option"></a>Datenaufbewahrungsoption
 
-Wir stellen eine Option für den Datenschutz für berechtigte Microsoft 365-Kunden bereit, die unter das in der obigen Tabelle aufgeführte Datacenter-GEOS fallen. Mit dieser Option können berechtigte Kunden mit Daten Wohnsitz Anforderungen eine Migration der wichtigsten Kundendaten Ihrer Organisation in Rest an Ihre neue Rechenzentrums-Geo-Datenbank anfordern.  Microsoft bietet allen berechtigten Kunden, die während des Registrierungsfensters eine Migration anfordern, eine zugesicherte Frist an.  Lesen Sie auf der Seite [Vorgehensweise zum Anfordern ihrer Datenverlagerung](request-your-data-move.md) weitere Details zum Fenster Registrierung öffnen für die Geo-Datencenter und die Schritte zum Registrieren in das Programm.  Datenverschiebungen können bis zu 24 Monate dauern, bis der Anforderungs Zeitraum abgeschlossen ist.
+Wir bieten berechtigten Microsoft 365-Kunden eine Datenresidenz-Option an, die von den oben aufgeführten Rechenzentrumsregionen abgedeckt werden. Mit dieser Option können berechtigte Kunden mit Datenaufbewahrungsanforderungen eine Migration der ruhenden Kundenkerndaten ihrer Organisation zu ihrer neuen Rechenzentrumsregion anfordern.  Microsoft bietet allen berechtigten Kunden, die eine Migration anfordern, einen zugesicherten Stichtag während des Registrierungsfensters.  Auf der Seite [Anfordern der Datenverschiebung](request-your-data-move.md) finden Sie weitere Details zum Fenster „Offene Registrierung“ für Ihren geografischen Datacenter-Raum und den Registrierungsschritten des Programms.  Bis zum Abschluss der Datenverschiebungen können bis zu 24 Monate ab dem Anforderungszeitraum vergehen.
 
 Mit der neuen Rechenzentrumsregion stellen wir keine eigenen Funktionen, Features oder Compliancezertifizierungen bereit.
     

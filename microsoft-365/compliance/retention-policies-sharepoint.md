@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen, wie die Aufbewahrung für SharePoint und OneDrive funktioniert.
-ms.openlocfilehash: 84191cf7df1c8382b336ecce47c50ca24bc2aede
-ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
+ms.openlocfilehash: 995f657778d3326a4d58d46f760539639f1fe7fe
+ms.sourcegitcommit: 3bf4f1c0d3a8515cca651b2a520217195f89457f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951108"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777068"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Informationen zur Aufbewahrung für SharePoint und OneDrive
 
@@ -49,7 +49,9 @@ Die folgenden Dateien können gelöscht werden:
 > [!TIP]
 > Wenn Sie eine [Abfrage mit einer Richtlinie für die automatische Anwendung einer Aufbewahrungsbezeichnung](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties) verwenden, können Sie Dokumentbibliotheken mithilfe des folgenden Eintrags ausschließen: `NOT(DocumentLink:"<URL to document library>")`
 
-Aufbewahrungseinstellungen gelten nicht für Organisationsstrukturen, die Bibliotheken, Listen und Ordner umfassen. Oder für Elemente in Systemlisten, die von SharePoint verwendete ausgeblendete Listen zum Verwalten des Systems und zum Einschließen des Gestaltungsvorlagenkatalogs, des Lösungskatalogs und der Datenquellen sind.
+Listenelemente werden von Aufbewahrungsbezeichnungen, nicht aber von Aufbewahrungsrichtlinien unterstützt, mit Ausnahme von Elementen in Systemlisten. Dies sind von SharePoint verwendete ausgeblendete Listen zum Verwalten des Systems und zum Einschließen des Gestaltungsvorlagenkatalogs, des Lösungskatalogs und der Datenquellen.
+
+Aufbewahrungseinstellungen aus Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen gelten nicht für Organisationsstrukturen, die Bibliotheken, Listen und Ordner umfassen.
 
 Aufbewahrungsrichtlinien und Bezeichnungsrichtlinien für die automatische Anwendung: SharePoint-Websites müssen indiziert sein, damit die Aufbewahrungseinstellungen angewendet werden können. Wenn Elemente in SharePoint-Dokumentbibliotheken jedoch so konfiguriert sind, dass sie nicht in den Suchergebnissen angezeigt werden, schließt diese Konfiguration keine Dateien aus den Aufbewahrungseinstellungen aus.
 

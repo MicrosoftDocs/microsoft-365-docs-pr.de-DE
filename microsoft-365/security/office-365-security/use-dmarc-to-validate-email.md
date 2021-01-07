@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Erfahren Sie, wie Sie domänenbasierte Nachrichtenauthentifizierung, Berichterstellung und Konformität (DMARC) konfigurieren, um von Ihrer Organisation gesendete Nachrichten zu validieren.
-ms.openlocfilehash: 9dd97b1fc60f0b6198bb6c55af291c7dd103ac5d
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: bcf1c0b3dc0a1a8dd8a679af815fbdc2173cabb7
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615336"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49759856"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Verwenden von DMARC zum Überprüfen von E-Mails
 
@@ -35,7 +35,7 @@ ms.locfileid: "49615336"
 
 ## <a name="how-do-spf-and-dmarc-work-together-to-protect-email-in-microsoft-365"></a>Wie arbeiten SPF und DMARC zusammen, um E-Mails in Microsoft 365 zu schützen?
 
- Eine E-Mail-Nachricht kann mehrere Ersteller- oder Absenderadressen enthalten. Diese Adressen können für verschiedene Zwecke verwendet werden. Sehen Sie sich beispielsweise die folgenden Adressen an:
+ Eine E-Mail kann mehrere Ersteller- oder Absenderadressen enthalten. Diese Adressen können für verschiedene Zwecke verwendet werden. Sehen Sie sich beispielsweise die folgenden Adressen an:
 
 - Die **„Mail From“-Adresse** identifiziert den Absender und gibt an, wohin Hinweise zurückgesendet werden sollen, wenn Probleme bei der Übermittlung der Nachricht auftreten, z. B. Unzustellbarkeitsberichte. Sie erscheint im Umschlagbereich einer E-Mail-Nachricht und wird von der E-Mail-Anwendung in der Regel nicht angezeigt. Diese Adresse wird manchmal als „5321.MailFrom“- oder „reverse-path“-Adresse bezeichnet.
 
@@ -192,15 +192,15 @@ Sie können DMARC allmählich implementieren, ohne den übrigen E-Mail-Nachricht
 
     Der letzte Schritt ist das Implementieren einer Ablehnungsrichtlinie. Eine Ablehnungsrichtlinie ist ein DMARC-TXT-Eintrag, dessen Richtlinie auf „reject" festgelegt ist (p=reject). Wenn Sie dies festlegen, fordern Sie DMARC-Empfänger auf, keine Nachrichten zu akzeptieren, die die DMARC-Prüfungen nicht bestehen.
 
-4. Wie richte ich DMARC für Subdomain ein?
+4. Wie richte ich DMARC für Unterdomänen ein?
 
-DMARC wird durch die Veröffentlichung einer Richtlinie als TXT-Eintrag im DNS implementiert und ist hierarchisch aufgebaut (z. B. gilt eine für contoso.com veröffentlichte Richtlinie für sub.domain.contonos.com, sofern nicht ausdrücklich eine andere Richtlinie für die Subdomain definiert wird). Dies ist nützlich, da Organisationen eine kleinere Anzahl von DMARC-Einträgen auf hoher Ebene für eine breitere Abdeckung angeben können. Achten Sie darauf, explizite DMARC-Einträge für Subdomänen zu konfigurieren, wenn Sie nicht möchten, dass die Subdomänen den DMARC-Eintrag der Top-Level-Domäne erben.
+   DMARC wird durch die Veröffentlichung einer Richtlinie als TXT-Eintrag im DNS implementiert und ist hierarchisch aufgebaut (z. B. gilt eine für contoso.com veröffentlichte Richtlinie für sub.domain.contonos.com, sofern nicht ausdrücklich eine andere Richtlinie für die Subdomain definiert wird). Dies ist nützlich, da Organisationen eine kleinere Anzahl von DMARC-Einträgen auf hoher Ebene für eine breitere Abdeckung angeben können. Achten Sie darauf, explizite DMARC-Einträge für Unterdomänen zu konfigurieren, wenn Sie nicht möchten, dass die Unterdomänen den DMARC-Eintrag der Top-Level-Domäne erben.
 
-Sie können auch eine Wildcard-Typ-Richtlinie für DMARC hinzufügen, wenn Subdomains keine E-Mails senden sollten, indem Sie den Wert `sp=reject` hinzufügen. Zum Beispiel:
+   Sie können auch eine Wildcard-Typ-Richtlinie für DMARC hinzufügen, wenn Subdomains keine E-Mails senden sollten, indem Sie den Wert `sp=reject` hinzufügen. Zum Beispiel:
 
-```console
-_dmarc.contoso.com. TXT "v=DMARC1; p=reject; sp=reject; ruf=mailto:authfail@contoso.com; rua=mailto:aggrep@contoso.com"
-```
+   ```text
+   _dmarc.contoso.com. TXT "v=DMARC1; p=reject; sp=reject; ruf=mailto:authfail@contoso.com; rua=mailto:aggrep@contoso.com"
+   ```
 
 ## <a name="how-microsoft-365-handles-outbound-email-that-fails-dmarc"></a>So behandelt Microsoft 365 ausgehende E-Mail-Nachrichten, die DMARC-Prüfungen nicht bestehen
 
