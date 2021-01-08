@@ -1,7 +1,7 @@
 ---
 title: Tabelle "EmailEvents" im Schema "Erweiterte Suche"
-description: Informationen zu Ereignissen in Verbindung mit Microsoft 365-e-Mails in der EmailEvents-Tabelle des Advanced Hunting-Schemas
-keywords: Erweiterte Suche, Bedrohungs Suche, Cyber-Bedrohungs Suche, Microsoft Threat Protection, Microsoft 365, MTP, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, Beschreibung, EmailEvents, Netzwerknachrichten-ID, Absender, Empfänger, Anlagen-ID, Anlagenname, Schadsoftware, Phishing-Urteil, ANLAGENANZAHL, Link Anzahl, URL-Anzahl
+description: Informationen zu Ereignissen im Zusammenhang mit Microsoft 365-E-Mails in der Tabelle "EmailEvents" des Schemas für die erweiterte Suche
+keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungssuche, Microsoft Threat Protection, Microsoft 365, mtp, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, Beschreibung, EmailEvents, Netzwerknachrichten-ID, Absender, Empfänger, Anlagen-ID, Anlagenname, Malware-Bewert, Phishing-Bewert, Anlagenanzahl, Linkanzahl, URL-Anzahl
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 00fcc6514679868066ef88b0c9bc4a485d032528
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 6dbd7473074212c6bc257e683288040056426048
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667637"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780272"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -36,10 +36,10 @@ ms.locfileid: "49667637"
 
 
 
-Die `EmailEvents` Tabelle im [Advanced Hunting](advanced-hunting-overview.md) -Schema enthält Informationen zu Ereignissen, die die Verarbeitung von e-Mails in Microsoft Defender für Office 365 betreffen. Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
+Die Tabelle im Schema für die erweiterte Suche enthält Informationen zu Ereignissen im Zusammenhang mit der Verarbeitung von E-Mails `EmailEvents` in Microsoft Defender für Office 365. [](advanced-hunting-overview.md) Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
 
 >[!TIP]
-> Ausführliche Informationen zu den `ActionType` von einer Tabelle unterstützten Ereignistypen (Values) finden Sie in der [integrierten Schemareferenz](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) , die im Sicherheitscenter verfügbar ist.
+> Ausführliche Informationen zu den Ereignistypen (Werten), die von einer Tabelle unterstützt werden, finden Sie in der integrierten Schemareferenz, die im `ActionType` Security Center verfügbar ist. [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
 
 Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter [Referenz zur erweiterten Suche](advanced-hunting-schema-tables.md).
 
@@ -47,7 +47,7 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Datum und Uhrzeit der Aufzeichnung des Ereignisses |
 | `EmailId` | string | Eindeutige E-Mail- und Empfänger-ID |
-| `NetworkMessageId` | string | Eindeutiger Bezeichner für die von Microsoft 365 generierte e-Mail |
+| `NetworkMessageId` | string | Eindeutiger Bezeichner für die von Microsoft 365 generierte E-Mail |
 | `InternetMessageId` | string | Öffentlich sichtbarer Bezeichner für die E-Mail-Nachricht, die vom sendenden E-Mail-System festgelegt wird |
 | `SenderMailFromAddress` | string | Absender-E-Mail-Adresse in der Kopfzeile "MAIL FROM", auch als Umschlagabsender oder als Return-Path-Adresse bezeichnet |
 | `SenderFromAddress` | string | Für E-Mail-Empfänger im E-Mail-Client in der FROM-Kopfzeile angezeigte Absender-E-Mail-Adresse |
@@ -62,25 +62,25 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `DeliveryAction` | string | Zustellungsaktion der E-Mail: übermittelt, als Junk eingestuft, blockiert oder ersetzt |
 | `DeliveryLocation` | string | Der Ort, an den die E-Mail zugestellt wurde: "Posteingang/Ordner", "lokal"/"extern", "Junk", "Quarantäne", "Fehler", „Verloren“ oder "Gelöschte Elemente" |
 | `PhishFilterVerdict` | string | Urteil des E-Mail-Filter-Stacks, ob es sich um eine Phishing-E-Mail handelt: Phish oder nicht-Phish |
-| `PhishDetectionMethod` | string | Methode zum Erkennen der e-Mail als Phishing: böswillige URL-Reputation, sichere Links-URL-Detonation, erweiterter Phishing-Filter, allgemeiner Phishingfilter, Spoofing: Intra-org, Spoofing: externe Domäne, Domänen Identitätswechsel, Benutzeridentitätswechsel, Marken Identitätsdiebstahl |
+| `PhishDetectionMethod` | string | Methode zum Erkennen der E-Mail als Phishing: Schädliche URL-Reputation, URL-Detonation sicherer Links, erweiterter Phishingfilter, allgemeiner Phishingfilter, Antis spoofing: Organisationsinternes Spoofing, Antis spoofing: externe Domäne, Domänen-Identitätswechsel, Benutzer-Identitätswechsel, Markenwechsel |
 | `MalwareFilterVerdict` | string | Bewertung des E-Mail-Filterstapels, ob die E-Mail Schadsoftware enthält: Schadsoftware, keine Schadsoftware |
-| `MalwareDetectionMethod` | string | Methode zum Erkennen von Schadsoftware in der e-Mail: Antischadsoftware-Modul, Datei Zuverlässigkeit, sichere Anlagen |
-| `FinalEmailAction` | string | Letzte Aktion, die auf der Grundlage von Filter-Beurteilung, Richtlinien und Benutzeraktionen ausgeführt wird: Nachricht in den Junk-E-Mail-Ordner verschieben, X-Kopfzeile hinzufügen, Betreff ändern, Nachricht umleiten, Nachricht löschen, in Quarantäne senden, keine Aktion ausgeführt, BCC-Nachricht |
-| `FinalEmailActionPolicy` | string | Aktionsrichtlinie, die in Kraft getreten ist: Antispam-Hochsicherheit, Antispam, Antispam-Massen-E-Mail, Antispam-Phishing, Anti-Phishing-Domänenidentitätswechsel, Antiphishing-Benutzeridentitätswechsel, Antiphishing-Spoofing, Anti-Phishing-Grafik-Identitätswechsel, Antimalware, Sichere Anlagen, Enterprise Transport Rules (ETR) |
-| `FinalEmailActionPolicyGuid` | string | Eindeutiger Bezeichner für die Richtlinie, welche die endgültige E-Mail-Aktion ermittelt hat |
+| `MalwareDetectionMethod` | string | Methode zum Erkennen von Schadsoftware in der E-Mail: Antischalwaremodul, Dateire reputation, sichere Anlagen |
+| `EmailAction` | string | Letzte Aktion, die auf der Grundlage von Filter-Beurteilung, Richtlinien und Benutzeraktionen ausgeführt wird: Nachricht in den Junk-E-Mail-Ordner verschieben, X-Kopfzeile hinzufügen, Betreff ändern, Nachricht umleiten, Nachricht löschen, in Quarantäne senden, keine Aktion ausgeführt, BCC-Nachricht |
+| `EmailActionPolicy` | string | Aktionsrichtlinie, die in Kraft getreten ist: Antispam-Hochsicherheit, Antispam, Antispam-Massen-E-Mail, Antispam-Phishing, Anti-Phishing-Domänenidentitätswechsel, Antiphishing-Benutzeridentitätswechsel, Antiphishing-Spoofing, Anti-Phishing-Grafik-Identitätswechsel, Antimalware, Sichere Anlagen, Enterprise Transport Rules (ETR) |
+| `EmailActionPolicyGuid` | string | Eindeutiger Bezeichner für die Richtlinie, welche die endgültige E-Mail-Aktion ermittelt hat |
 | `AttachmentCount` | int | Anzahl der Anlagen in der E-Mail |
 | `UrlCount` | int | Anzahl der eingebetteten URLs in der E-Mail |
 | `EmailLanguage` | string | Erkannte Sprache des E-Mail-Inhalts |
-| `OrgLevelAction` | Zeichenfolge | Auf der e-Mail-Adresse ausgeführte Aktion als Reaktion auf Übereinstimmungen mit einer auf Organisationsebene definierten Richtlinie |
-| `OrgLevelPolicy` | Zeichenfolge | Organisationsrichtlinie, die die in der e-Mail ausgeführte Aktion ausgelöst hat |
-| `UserLevelAction` | Zeichenfolge | Aktion, die auf die e-Mail-Nachricht als Reaktion auf Übereinstimmungen mit einer vom Empfänger definierten Postfachrichtlinie angewendet wird |
-| `UserLevelPolicy` | Zeichenfolge | Endbenutzer-Postfachrichtlinie, die die in der e-Mail ausgeführte Aktion ausgelöst hat |
-| `Connectors` | Zeichenfolge | Benutzerdefinierte Anweisungen zur Definition des Organisations-e-Mail-Flusses und der Weiterleitung der e-Mail |
-| `SenderDisplayName` | Zeichenfolge | Name des Absenders, der im Adressbuch angezeigt wird, normalerweise eine Kombination aus einem bestimmten oder Vornamen, einer mittleren Initiale und einem Nachnamen oder Familiennamen |
-| `SenderObjectId` | Zeichenfolge |Eindeutiger Bezeichner für das Konto des Absenders in Azure AD |
-| `ThreatTypes` | Zeichenfolge | Urteil aus dem e-Mail-Filter Stapel, ob die e-Mail Malware, Phishing oder andere Bedrohungen enthält |
-| `ThreatNames` | Zeichenfolge |Erkennungsname für Schadsoftware oder andere gefundene Bedrohungen |
-| `DetectionMethods` | Zeichenfolge | Methoden zum Erkennen von Schadsoftware, Phishing oder anderen Bedrohungen, die in der e-Mail gefunden werden |
+| `OrgLevelAction` | string | Aktion, die für die E-Mail als Reaktion auf Übereinstimmungen mit einer auf Organisationsebene definierten Richtlinie ergriffen wird |
+| `OrgLevelPolicy` | string | Organisationsrichtlinie, die die Aktion für die E-Mail ausgelöst hat |
+| `UserLevelAction` | string | Aktion, die für die E-Mail als Reaktion auf Übereinstimmungen mit einer vom Empfänger definierten Postfachrichtlinie ergriffen wird |
+| `UserLevelPolicy` | string | Endbenutzerpostfachrichtlinie, die die Aktion für die E-Mail ausgelöst hat |
+| `Connectors` | string | Benutzerdefinierte Anweisungen, die den E-Mail-Fluss der Organisation und die Art und Weise definieren, wie die E-Mail geroutet wurde |
+| `SenderDisplayName` | string | Name des Absenders, der im Adressbuch angezeigt wird, in der Regel eine Kombination aus einem Vor- oder Vornamen, einem Vornamen und einem Nachnamen oder Nachnamen |
+| `SenderObjectId` | string |Eindeutige ID für das Konto des Absenders in Azure AD |
+| `ThreatTypes` | string | Überprüfen des E-Mail-Filterstapels, ob die E-Mail Schadsoftware, Phishing oder andere Bedrohungen enthält |
+| `ThreatNames` | string |Erkennungsname für Schadsoftware oder andere gefundene Bedrohungen |
+| `DetectionMethods` | string | Methoden zum Erkennen von Schadsoftware, Phishing oder anderen Bedrohungen, die in der E-Mail gefunden werden |
 
 
 ## <a name="related-topics"></a>Verwandte Themen

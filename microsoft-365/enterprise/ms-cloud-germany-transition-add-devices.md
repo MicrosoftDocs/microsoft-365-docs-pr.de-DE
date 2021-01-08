@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Zusätzliche Geräteinformationen für Dienste beim Übergang von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen.'
-ms.openlocfilehash: 1bbb4bf39db61a93844c21cd6062a70699b5d6d7
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
-ms.translationtype: HT
+ms.openlocfilehash: 151fcac882dc91d96df3ece000c28d1a7abe1d1f
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688654"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780296"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Zusätzliche Geräteinformationen für die Migration von Microsoft Cloud Deutschland
 
@@ -61,7 +61,7 @@ Die Geräteregistrierung ist nach der Migration des Mandanten deaktiviert und ka
 Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
 ```
 
-## <a name="windows-hybrid-azure-ad-join"></a>Azure AD Hybrid Join für Windows
+## <a name="hybrid-azure-ad-join"></a>Hybride Einbindung in Azure AD
 
 ### <a name="windows-down-level"></a>Kompatibles Windows
 
@@ -135,7 +135,7 @@ Der vorstehende Befehl muss nur einmal in einem administrativen Kontext auf dem 
 Das Gerät wird automatisch ohne Benutzer- oder Administratoreingriff mit Azure AD verbunden, solange das Gerät über eine Netzwerkverbindung zu globalen Azure AD-Endpunkten verfügt. 
 
 
-## <a name="windows-azure-ad-join"></a>Windows Azure AD-Beitritt
+## <a name="azure-ad-join"></a>Azure AD Join
 
 **WICHTIG:** Der Intune-Dienstprinzipal wird nach der Commerce-Migration aktiviert, was die Aktivierung von Azure AD Device Registration impliziert. Wenn Sie Azure AD Device Registration vor der Migration blockiert haben, müssen Sie den Intune-Dienstprinzipal mit PowerShell deaktivieren, um die Azure AD-Geräteregistrierung mit dem Azure AD-Portal erneut zu deaktivieren. Sie können den Intune-Dienstprinzipal mit diesem Befehl im Azure Active Directory PowerShell für Graph-Modul deaktivieren.
 
@@ -180,7 +180,7 @@ Der vorstehende Befehl muss nur einmal in einem administrativen Kontext auf dem 
 Der Benutzer kann das Gerät über die Windows-Einstellungen zu Azure AD verknüpfen: **Einstellungen > Konten > Zugriff auf Arbeit oder Schule > Verbinden**.
  
 
-## <a name="windows-azure-ad-registered-company-owned"></a>Windows Azure AD-registriert (Unternehmensbesitz)
+## <a name="azure-ad-registered-company-owned"></a>Azure AD Registered (Im Besitz des Unternehmens)
 
 Um herauszufinden, ob ein Windows 10-Gerät Azure AD-registriert ist, führen Sie auf dem Gerät folgenden Befehl aus:
 

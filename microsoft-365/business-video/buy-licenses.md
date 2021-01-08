@@ -21,30 +21,30 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie neue Microsoft 365 for Business-Lizenzen kaufen.
-ms.openlocfilehash: 2f881881bc55659d5ba4cd7280111a15bf0f9ff3
-ms.sourcegitcommit: ddfb4f3e34deb733e8625e845e4dfd1fcc066ceb
+description: Erfahren Sie, wie Sie neue Microsoft 365 Business-Lizenzen erwerben.
+ms.openlocfilehash: a4bc66188b064227821ddc66cc764c83caad5f64
+ms.sourcegitcommit: 4482c174e0e68e0fbbc7ad9ef6b0e78dc34ac85a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49771958"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49784241"
 ---
 # <a name="buy-microsoft-365-licenses"></a>Microsoft 365-Lizenzen kaufen
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE?autoplay=false]
 
-Wenn Sie neue Benutzer hinzufügen, müssen Sie weitere Lizenzen für diese Benutzer erwerben.
+Wenn Sie neue Benutzer hinzufügen, müssen Sie weitere Microsoft 365-Lizenzen für diese Benutzer erwerben.
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
-1. Wählen Sie im Microsoft 365 Admin Center **Abrechnung**, **Ihre Produkte** aus, und wählen Sie dann Ihr Abonnement aus.
-1. Wählen Sie **Lizenzen kaufen** aus.
+1. Wählen Sie im Microsoft 365 Admin Center "Abrechnung", "Ihre **Produkte"** und dann Ihr Abonnement aus.
+1. Wählen **Sie "Lizenzen kaufen"** aus.
 1. Geben Sie die Anzahl der Lizenzen ein, die Sie kaufen möchten.
 1. Wählen Sie **Speichern** aus.
 1. Schließen Sie dann das Fenster.
 1. Die neuen Lizenzen werden Ihrem Abonnement hinzugefügt.
-1. Wählen Sie **Lizenzen zuweisen** aus, um die neuen Lizenzen zuzuweisen.
-1. Weisen Sie dann erneut **Lizenzen** zu.
+1. Um die neuen Lizenzen zuzuordnen, wählen Sie **"Lizenzen zuweisen" aus.**
+1. Weisen Sie **dann erneut Lizenzen** zu.
 1. Geben Sie den Namen des Benutzers ein, dem Sie die Lizenz zuweisen möchten, und wählen Sie dann den Namen aus.
-1. Entscheiden Sie, welche apps oder Dienste der Benutzer verwenden soll, und wählen Sie dann **zuweisen** aus.
+1. Entscheiden Sie, über welche Apps oder Dienste der Benutzer verfügen soll, und wählen Sie dann **"Zuweisen" aus.**
 1. Die Lizenz wird nun dem Benutzer zugewiesen.
