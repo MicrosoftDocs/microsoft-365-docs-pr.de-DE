@@ -24,7 +24,7 @@
       items:
         - name: Domäne hinzufügen
           href: 'https://docs.microsoft.com/microsoft-365/admin/setup/add-domain'
-        - name: Konfigurieren der M365E-Endpunkt-Whitelist
+        - name: Konfigurieren der zu umgehenden Endpunkte
           items:
             - name: Office 365-IP-Adress- und -URL-Webdienst
               href: microsoft-365-ip-web-service.md

@@ -167,6 +167,12 @@
                   items:
                     - name: Grundlegendes zum Schema
                       href: mtp/advanced-hunting-schema-tables.md
+                    - name: AADSignInEventsBeta
+                      href: mtp/advanced-hunting-aadsignineventsbeta-table.md
+                    - name: AADSpnSignInEventsBeta
+                      href: mtp/advanced-hunting-aadspnsignineventsbeta-table.md
+                    - name: Änderungen der Schemabenennung
+                      href: mtp/advanced-hunting-schema-changes.md
                     - name: AlertEvidence
                       href: mtp/advanced-hunting-alertevidence-table.md
                     - name: AlertInfo
