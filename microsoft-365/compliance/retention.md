@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen, um zu behalten, was Sie benötigen, und zu löschen, was Sie nicht benötigen.
-ms.openlocfilehash: 8d50e03827026100689d9b380570fa59c93e6d08
-ms.sourcegitcommit: 5756896ad87e28fac20f7981eaaeacfb0c098254
+ms.openlocfilehash: 307687a277ade03f3ba40852eff15378928465e6
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "49730176"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49787988"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
@@ -166,19 +166,15 @@ Weitere Informationen finden Sie unter [Verwenden einer Aufbewahrungsbezeichnung
 
 #### <a name="retention-labels-and-policies-that-apply-them"></a>Aufbewahrungsbezeichnungen und Richtlinien, die sie anwenden
 
-Aufbewahrungsbezeichnungen sind unabhängige, wieder verwendbare Bausteine. Der Hauptzweck der Aufbewahrungsbezeichnungsrichtlinie besteht darin, eine Reihe von Aufbewahrungsbezeichnungen zu gruppieren und die Orte anzugeben, an denen die Bezeichnungen angezeigt werden sollen. Dann können Administratoren und Benutzer diese Bezeichnungen auf Inhalte an diesen Speicherorten anwenden.
-  
-![Diagramm der Bezeichnungen, Bezeichnungsrichtlinien und Speicherorte](../media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
-  
-Wenn Sie Aufbewahrungsbezeichnungen veröffentlichen, sind diese in einer Aufbewahrungsbezeichnungsrichtlinie enthalten, sodass Administratoren und Benutzer sie auswählen können:
+Wenn Sie Aufbewahrungsbezeichnungen veröffentlichen, sind diese in einer **Aufbewahrungsbezeichnungsrichtlinie** enthalten, sodass Administratoren und Benutzer sie auf Inhalte anwenden können. Betrachten Sie das folgende Diagramm:
 
-- Eine einzelne Aufbewahrungsbezeichnung kann in mehrere Aufbewahrungsbezeichnungsrichtlinien einbezogen werden.
+1. Eine einzelne Aufbewahrungsbezeichnung kann in mehrere Aufbewahrungsbezeichnungsrichtlinien einbezogen werden.
 
-- Aufbewahrungsbezeichnungsrichtlinien geben die Speicherorte zum Veröffentlichen der Aufbewahrungsbezeichnungen an.
+2. Aufbewahrungsbezeichnungsrichtlinien geben die Speicherorte zum Veröffentlichen der Aufbewahrungsbezeichnungen an. Mehrere Aufbewahrungsbezeichnungsrichtlinien können den gleichen Speicherort einbeziehen.
 
-- Ein einzelner Ort kann auch in viele Aufbewahrungsbezeichnungsrichtlinien einbezogen werden.
+![Hinzufügen von Aufbewahrungsbezeichnungen zu Bezeichnungsrichtlinien, die Speicherorte angeben](../media/retention-labels-and-policies.png)
 
-Zusätzlich zu den Aufbewahrungsbezeichnungsrichtlinien können Sie auch eine oder mehrere Richtlinien für die automatische Anwendung erstellen, jede mit einer einzelnen Aufbewahrungsbezeichnung. Bei dieser Richtlinie wird automatisch eine Aufbewahrungsbezeichnung angebracht, wenn die Bedingungen, die Sie in der Richtlinie angeben, erfüllt sind.
+Sie können auch eine oder mehrere **Aufbewahrungsbezeichnungsrichtlinien für die automatische Anwendung** mit jeweils einer einzelnen Aufbewahrungsbezeichnung erstellen. Bei dieser Richtlinie wird automatisch eine Aufbewahrungsbezeichnung angebracht, wenn die Bedingungen, die Sie in der Richtlinie angeben, erfüllt sind.
 
 #### <a name="retention-label-policies-and-locations"></a>Aufbewahrungsbezeichnungsrichtlinien und Speicherorte
 
@@ -190,7 +186,7 @@ Verschiedene Arten von Aufbewahrungsbezeichnungen können an verschiedenen Speic
 |Basierend auf Typen vertraulicher Informationen oder trainierbaren Klassifizierer automatisch angewendet  <br/> |Exchange (nur alle Postfächer), SharePoint, OneDrive  <br/> |
 |basieren auf einer Abfrage automatisch angewendet  <br/> |Exchange, SharePoint, OneDrive, Microsoft 365-Gruppen  <br/> |
    
-In Exchange werden automatisch angewendete Bezeichnungen nur auf neu gesendete Nachrichten (in Übertragung begriffene Daten) angewendet, und nicht auf alle Elemente, die sich derzeit im Postfach befinden (ruhende Daten). Außerdem können automatisch angewendete Aufbewahrungsbezeichnungen für vertrauliche Informationstypen und trainierbare Klassifizierer auf alle Postfächer angewendet werden; Sie können keine bestimmten Postfächer auswählen.
+In Exchange werden Bezeichnungen, die automatisch angewendet werden können, nur auf neu gesendete Nachrichten (in Übertragung begriffene Daten) angewendet, und nicht auf alle Elemente, die sich derzeit im Postfach befinden (ruhende Daten). Außerdem können automatisch angewendete Aufbewahrungsbezeichnungen für vertrauliche Informationstypen und trainierbare Klassifizierer auf alle Postfächer angewendet werden; Sie können keine bestimmten Postfächer auswählen.
   
 Öffentliche Exchange-Ordner, Skype-, Teams- und Yammer-Nachrichten unterstützen keine Aufbewahrungsbezeichnungen. Zum Aufbewahren und Löschen von Containern an diesen Speicherorten verwenden Sie stattdessen Aufbewahrungsrichtlinien.
 
@@ -287,7 +283,7 @@ Verwenden Sie den folgenden Ablauf, um die Aufbewahrungs- und Löschergebnisse f
 > [!IMPORTANT]
 > Falls Sie Aufbewahrungsbezeichnungen verwenden: Bevor Sie diesen Ablauf verwenden, um das Ergebnis mehrerer Aufbewahrungseinstellungen für dasselbe Element zu ermitteln, sollten sie darüber Bescheid wissen, [welche Aufbewahrungsbezeichnung angewendet wird](#only-one-retention-label-at-a-time).
 
-![Diagramm der Grundsätze der Aufbewahrung](../media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
+![Diagramm der Grundsätze der Aufbewahrung](../media/principles-of-retention.png)
   
 Erläuterung der vier verschiedenen Ebenen:
   
