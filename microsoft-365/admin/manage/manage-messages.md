@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
-description: Hier finden Sie Informationen zum Verwalten von Message Center-Nachrichten, um die Änderungsverwaltung zu unterstützen.
-ms.openlocfilehash: 9f64be8396900db3377505fea3e144fffbb3b096
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+description: Erfahren Sie, wie Sie Nachrichten im Nachrichtencenter verwalten, um die Änderungsverwaltung zu unterstützen.
+ms.openlocfilehash: 42dc00a1347f5455f2d607da9f2677c58ace34e9
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688278"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49787763"
 ---
 # <a name="manage-messages-in-message-center"></a>Verwalten von Nachrichten im Nachrichtencenter
 
@@ -33,39 +33,39 @@ ms.locfileid: "49688278"
   
 ## <a name="read-a-message"></a>Lesen einer Nachricht
 
-Um zum Nachrichtencenter zu wechseln, wechseln Sie zum [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=2024339), und wählen Sie **Integritäts**  >  **Meldungscenter** aus. 
+Um zum Nachrichtencenter zu wechseln, wechseln Sie zum [Admin Center,](https://go.microsoft.com/fwlink/p/?linkid=2024339)und wählen Sie "Integritätsnachrichtencenter"   >  **aus.** 
 
-Wählen Sie einen Nachrichtentitel aus, um ihn im Lesebereich zu öffnen. Jede Nachricht enthält eine Zusammenfassung der Änderung, eine Erklärung dazu, wie sich die Änderung auf Sie auswirken kann, Informationen darüber, wie Sie Ihre Organisation auf die Änderung vorbereiten können, und (in den meisten Fällen) einen zusätzlichen Informations Link, in dem Sie weitere Informationen erhalten. Diese zusätzlichen Informationen stehen auch nach dem Ablauf eine Nachricht weiterhin zur Verfügung.
+Wählen Sie einen Nachrichtentitel aus, um ihn im Lesebereich zu öffnen. Jede Nachricht enthält eine Zusammenfassung der Änderung, eine Erklärung dazu, wie sich die Änderung auf Sie auswirken kann, Informationen dazu, wie Sie Ihre Organisation auf die Änderung vorbereiten können, und (in den meisten Fällen) einen zusätzlichen Informationslink, über den Sie mehr erfahren können. Diese zusätzlichen Informationen stehen auch nach dem Ablauf eine Nachricht weiterhin zur Verfügung.
 
 ## <a name="filter-and-sort"></a>Filtern und Sortieren
 
 ::: moniker range="o365-worldwide"
 
-Verwenden Sie das Dropdownmenü **Filter** , um eine gefilterte Ansicht von Nachrichten auszuwählen.
+Verwenden Sie **das Dropdownmenü** "Filter", um eine gefilterte Ansicht von Nachrichten auszuwählen.
 
-Sie können eine beliebige Spaltenüberschrift auswählen, um Nachrichten in aufsteigender oder absteigender Reihenfolge zu sortieren. In diesem Diagramm werden die Nachrichten beispielsweise nach dem Datum der **Handlung** sortiert.
+Sie können eine beliebige Spaltenüberschrift auswählen, um Nachrichten in aufsteigender oder absteigender Reihenfolge zu sortieren. In diesem Diagramm werden die Nachrichten beispielsweise nach Datum **sortiert.**
 
-![Nachrichtencenter-Ansicht sortiert nach Akt nach Datum](../../media/message-center-filter-act-by.png)
+![Nachrichtencenteransicht sortiert nach Act nach Datum](../../media/message-center-filter-act-by.png)
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Verwenden Sie das Dropdownmenü **Ansichten** , um eine gefilterte Ansicht von Nachrichten auszuwählen. 
+Verwenden Sie **das Dropdownmenü** "Ansichten", um eine gefilterte Ansicht von Nachrichten auszuwählen. 
  
-Sie können eine beliebige Spaltenüberschrift auswählen, um Nachrichten in aufsteigender oder absteigender Reihenfolge zu sortieren. In dieser Abbildung werden beispielsweise die Nachrichten nach dem Datum der **Handlung** sortiert.
+Sie können eine beliebige Spaltenüberschrift auswählen, um Nachrichten in aufsteigender oder absteigender Reihenfolge zu sortieren. In dieser Abbildung werden die Nachrichten beispielsweise nach Datum **sortiert.**
 
-![Nachrichtencenter-Ansicht sortiert nach Akt nach Datum](../../media/message-center-old-admin-center1.png)
+![Nachrichtencenteransicht sortiert nach Act nach Datum](../../media/message-center-old-admin-center1.png)
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Verwenden Sie das Dropdownmenü **Ansichten** , um eine gefilterte Ansicht von Nachrichten auszuwählen. 
+Verwenden Sie **das Dropdownmenü** "Ansichten", um eine gefilterte Ansicht von Nachrichten auszuwählen. 
  
-Sie können eine beliebige Spaltenüberschrift auswählen, um Nachrichten in aufsteigender oder absteigender Reihenfolge zu sortieren. In dieser Abbildung werden beispielsweise die Nachrichten nach dem Datum der **Handlung** sortiert.
+Sie können eine beliebige Spaltenüberschrift auswählen, um Nachrichten in aufsteigender oder absteigender Reihenfolge zu sortieren. In dieser Abbildung werden die Nachrichten beispielsweise nach Datum **sortiert.**
 
-![Nachrichtencenter-Ansicht sortiert nach Akt nach Datum](../../media/message-center-old-admin-center1.png)
+![Nachrichtencenteransicht sortiert nach Act nach Datum](../../media/message-center-old-admin-center1.png)
 
 ::: moniker-end
 
@@ -73,55 +73,55 @@ Sie können eine beliebige Spaltenüberschrift auswählen, um Nachrichten in auf
 
 Im Nachrichtencenter können Sie eine Nachricht auswählen, um Details anzuzeigen.
 
-Wenn Sie Feedback zur Nachricht geben möchten, wählen Sie das Symbol **like** oder **Unlike** aus, und geben Sie Feedback in das angezeigte Textfeld ein. Geben Sie keine persönlichen Informationen an. Sie können optional **"OK" auswählen, um mich über dieses Feedback zu kontaktieren** , und dann auf **senden** klicken.
+Wenn Sie Feedback zu der Nachricht geben  möchten, wählen Sie entweder das Symbol "Gefällt mir" oder "Gefällt mir" aus, und geben Sie Feedback in das angezeigte Textfeld ein.  Geben Sie keine persönlichen Informationen an. Sie können optional **auswählen, dass** es in Ordnung ist, mich über dieses Feedback zu kontaktieren, und dann "Senden" **auswählen.**
 
 ## <a name="share-a-message"></a>Freigeben einer Nachricht
 
 Sie haben eine Nachricht entdeckt, auf die eine andere Person reagieren muss? Sie können den Inhalt der Nachricht für beliebige Benutzer per E-Mail freigeben:
   
-1. Wählen Sie die Nachricht aus, um Sie zu öffnen, und wählen Sie dann **Freigeben** aus.
+1. Wählen Sie die Nachricht aus, um sie zu öffnen, und wählen Sie dann **"Freigeben" aus.**
   
-2. Geben Sie bis zu zwei e-Mail-Adressen durch einen Doppelpunkt getrennt ein, um die Nachricht freizugeben. Sie können an einzelne und an Gruppen-e-Mail-Adressen senden. Optional können Sie wählen, ob Sie eine Kopie der Nachricht in einer e-Mail erhalten möchten (die Nachricht wird an Ihre primäre e-Mail-Adresse gesendet) oder eine persönliche Nachricht hinzufügen, um Empfängern mehr Kontext zur Verfügung zu stellen.
+2. Um die Nachricht zu teilen, geben Sie bis zu zwei E-Mail-Adressen ein, die durch einen Doppelpunkt getrennt sind. Sie können an einzelne E-Mail-Adressen senden und E-Mail-Adressen gruppieren. Optional können Sie eine Kopie der Nachricht in einer E-Mail empfangen (die Nachricht wird an Ihre primäre E-Mail-Adresse gesendet) oder eine persönliche Nachricht hinzufügen, um Empfängern mehr Kontext zu bieten.
   
-3. Wählen Sie **Freigeben** aus, um die e-Mail zu senden.
+3. Wählen **Sie "Freigeben"** aus, um die E-Mail zu senden.
     
 ## <a name="get-a-link"></a>Abrufen eines Links
 
-Sie müssen einen anderen Administrator nachverfolgen, um sicherzustellen, dass Sie sich einer Änderung bewusst sind und Maßnahmen ergreifen? Sie können beispielsweise einen Link zum Freigeben in e-Mail oder Chat generieren, mit dem der Benutzer direkt mit dieser Nachricht verbunden wird. Die Person, mit der Sie den Link gemeinsam verwenden, muss ein Administrator in Microsoft 365 für Ihre Organisation sein, oder Sie haben keinen Zugriff auf die verknüpfte Nachricht.
+Müssen Sie sich an einen anderen Administrator halten, um sicherzustellen, dass er eine Änderung kennt und Maßnahmen ernimmt? Sie können beispielsweise einen Link zur Freigabe in E-Mails oder Chatnachrichten generieren, der den Benutzer direkt mit dieser Nachricht verbindet. Die Person, mit der Sie den Link teilen, muss ein Administrator in Microsoft 365 für Ihre Organisation sein, oder sie hat keinen Zugriff auf die verknüpfte Nachricht.
 
 ::: moniker range="o365-worldwide"
 
-1. Wählen Sie die Nachricht aus, um Sie zu öffnen.
+1. Wählen Sie die Nachricht aus, um sie zu öffnen.
 
-2. Wählen Sie das Symbol **Link in Zwischenablage kopieren** (Link) aus.
+2. Wählen Sie das **Symbol "Link zur Zwischenablage** kopieren" (Link) aus.
 
-3. Erlauben Sie der Webseite Zugriff auf Ihre Zwischenablage. Eine direkte Verknüpfung wird in die Zwischenablage kopiert.
+3. Erlauben Sie der Webseite Zugriff auf Ihre Zwischenablage. Ein direkter Link wird in die Zwischenablage kopiert.
 
-4. Verwenden Sie STRG + V oder klicken Sie mit der rechten Maustaste, und wählen Sie **Einfügen** , um den Link einzufügen.
+4. Verwenden Sie STRG+V, oder klicken Sie mit der rechten Maustaste, und wählen **Sie "Einfügen"** aus, um den Link einfügen.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Wählen Sie die Nachricht aus, um Sie zu öffnen.
+1. Wählen Sie die Nachricht aus, um sie zu öffnen.
 
-2. Klicken  Sie \> in der Aktionsleiste auf More **Get a Link** .
+2. Choose **More** \> **Get a link** from the action bar.
 
-3. Erlauben Sie der Webseite Zugriff auf Ihre Zwischenablage. Eine direkte Verknüpfung wird in die Zwischenablage kopiert.
+3. Erlauben Sie der Webseite Zugriff auf Ihre Zwischenablage. Ein direkter Link wird in die Zwischenablage kopiert.
 
-4. Verwenden Sie STRG + V oder klicken Sie mit der rechten Maustaste, und wählen Sie **Einfügen** , um den Link einzufügen.
+4. Verwenden Sie STRG+V, oder klicken Sie mit der rechten Maustaste, und wählen **Sie "Einfügen"** aus, um den Link einfügen.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wählen Sie die Nachricht aus, um Sie zu öffnen.
+1. Wählen Sie die Nachricht aus, um sie zu öffnen.
 
-2. Klicken  Sie \> in der Aktionsleiste auf More **Get a Link** .
+2. Choose **More** \> **Get a link** from the action bar.
 
-3. Erlauben Sie der Webseite Zugriff auf Ihre Zwischenablage. Eine direkte Verknüpfung wird in die Zwischenablage kopiert.
+3. Erlauben Sie der Webseite Zugriff auf Ihre Zwischenablage. Ein direkter Link wird in die Zwischenablage kopiert.
 
-4. Verwenden Sie STRG + V oder klicken Sie mit der rechten Maustaste, und wählen Sie **Einfügen** , um den Link einzufügen.
+4. Verwenden Sie STRG+V, oder klicken Sie mit der rechten Maustaste, und wählen **Sie "Einfügen"** aus, um den Link einfügen.
 
 ::: moniker-end
 
@@ -131,15 +131,15 @@ Jede Nachricht im Nachrichtencenter, die ungelesen ist, wird fett formatiert ang
 
 ::: moniker range="o365-worldwide"
 
-1. Wählen Sie auf der Hauptseite des Nachrichten Centers eine Nachricht aus.
+1. Wählen Sie auf der Hauptseite des Nachrichtencenters eine Nachricht aus.
 
-2. Klicken Sie oben in der Nachricht auf das Symbol **als ungelesen** (Umschlag) markieren.
+2. Wählen Sie **oben in** der Nachricht das Symbol "Als ungelesen markieren" (Umschlag) aus.
   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Wählen Sie die Nachricht aus, um Sie zu öffnen.
+1. Wählen Sie die Nachricht aus, um sie zu öffnen.
 
 2. Wählen Sie **Weitere Optionen** \> **Als ungelesen markieren** aus.
 
@@ -149,7 +149,7 @@ Jede Nachricht im Nachrichtencenter, die ungelesen ist, wird fett formatiert ang
 
 ::: moniker range="o365-21vianet"
 
-1. Wählen Sie die Nachricht aus, um Sie zu öffnen.
+1. Wählen Sie die Nachricht aus, um sie zu öffnen.
 
 2. Wählen Sie **Weitere Optionen** \> **Als ungelesen markieren** aus.
 
@@ -159,19 +159,19 @@ Jede Nachricht im Nachrichtencenter, die ungelesen ist, wird fett formatiert ang
 
 ## <a name="archive-and-restore"></a>Archivieren und Wiederherstellen
 
-Wenn Sie eine Nachricht sehen, die nicht für Sie relevant ist, oder wenn Sie bereits darauf reagiert haben, können Sie die Nachricht archivieren, um Sie aus der Nachrichtencenter Ansicht zu entfernen. Die Ansicht, die im Nachrichtencenter angezeigt wird, ist spezifisch für Ihr Benutzerkonto, daher wirkt sich die Archivierung aus ihrer Ansicht nicht auf andere Administratoren aus.
+Wenn eine Nachricht angezeigt wird, die nicht für Sie gilt, oder Sie vielleicht bereits darauf reagiert haben, können Sie die Nachricht archivieren, um sie aus der Ansicht "Nachrichtencenter" zu entfernen. Die Ansicht, die Im Nachrichtencenter angezeigt wird, ist spezifisch für Ihr Benutzerkonto, sodass die Archivierung aus Ihrer Ansicht keine Auswirkungen auf andere Administratoren hat.
 
 ::: moniker range="o365-worldwide"
 
-- Wählen Sie auf der Hauptseite des Nachrichten Centers eine Nachricht aus, und wählen Sie dann über der Liste der Nachrichten **archivieren** aus.
+- Wählen Sie auf der Hauptseite des Nachrichtencenters eine Nachricht aus, und wählen Sie dann **über** der Liste der Nachrichten "Archiv" aus.
 
-- Öffnen Sie die Nachricht, und wählen Sie dann **archivieren** unten in der Nachricht aus.
+- Öffnen Sie die Nachricht, und wählen Sie **unten** in der Nachricht "Archivieren" aus.
 
-Sie müssen eine archivierte Nachricht zurück erhalten? Kein Problem.
+Müssen Sie eine archivierte Nachricht zurück erhalten? Kein Problem.
   
-1. Wählen Sie die Registerkarte **Archivierte Nachrichten** oben im Nachrichtencenter aus. Eine Liste archivierter Nachrichten wird angezeigt. 
+1. Wählen Sie **oben im Nachrichtencenter die** Registerkarte "Archivierte Nachrichten" aus. Eine Liste der archivierten Nachrichten wird angezeigt. 
 
-2. Wählen Sie die Nachricht aus, wählen Sie **Wiederherstellen** aus, und die Nachricht wird in den aktiven Nachrichten wiederhergestellt.
+2. Wählen Sie die Nachricht aus, wählen **Sie "Wiederherstellen"** aus, und die Nachricht wird in aktiven Nachrichten wiederhergestellt.
 
 ::: moniker-end
 
@@ -181,13 +181,13 @@ Es gibt zwei Möglichkeiten zum Archivieren einer Nachricht.
   
 - Wählen Sie das X aus, das rechts neben der Nachrichten-ID angezeigt wird. Die Nachricht wird aus Ihrer Liste entfernt. Oder:
 
-- Öffnen Sie die Nachricht, und wählen Sie dann oben in der Nachricht **archivieren** aus.
+- Öffnen Sie die Nachricht, und wählen Sie dann **"Archivieren"** oben in der Nachricht aus.
 
 Sie müssen eine verworfene Nachricht wiederherstellen? Kein Problem.
   
-1. Wählen Sie im Dropdownmenü **Ansichten** den Filter **Archivierte Nachrichten** aus. Eine Liste archivierter Nachrichten wird angezeigt.
+1. Wählen Sie **im Dropdownmenü "Ansichten"** den Filter **"Archivierte** Nachrichten" aus. Eine Liste der archivierten Nachrichten wird angezeigt.
 
-2. Wählen Sie rechts neben der Nachrichten-ID **Wiederherstellen** aus, und die Nachricht wird in den aktiven Nachrichten wiederhergestellt.
+2. Wählen **Sie rechts** neben der Nachrichten-ID "Wiederherstellen" aus, und die Nachricht wird in aktiven Nachrichten wiederhergestellt.
 
 ::: moniker-end
 
@@ -197,20 +197,20 @@ Es gibt zwei Möglichkeiten zum Archivieren einer Nachricht.
   
 - Wählen Sie das X aus, das rechts neben der Nachrichten-ID angezeigt wird. Die Nachricht wird aus Ihrer Liste entfernt. Oder:
 
-- Öffnen Sie die Nachricht, und wählen Sie dann oben in der Nachricht **archivieren** aus.
+- Öffnen Sie die Nachricht, und wählen Sie dann **"Archivieren"** oben in der Nachricht aus.
 
-Sie müssen eine archivierte Nachricht zurück erhalten? Kein Problem.
+Müssen Sie eine archivierte Nachricht zurück erhalten? Kein Problem.
   
-1. Wählen Sie im Dropdownmenü **Ansichten** den Filter **Archivierte Nachrichten** aus. Eine Liste archivierter Nachrichten wird angezeigt.
+1. Wählen Sie **im Dropdownmenü "Ansichten"** den Filter **"Archivierte** Nachrichten" aus. Eine Liste der archivierten Nachrichten wird angezeigt.
 
-2. Wählen Sie rechts neben der Nachrichten-ID **Wiederherstellen** aus, und die Nachricht wird in den aktiven Nachrichten wiederhergestellt.
+2. Wählen **Sie rechts** neben der Nachrichten-ID "Wiederherstellen" aus, und die Nachricht wird in aktiven Nachrichten wiederhergestellt.
 
 ::: moniker-end
 
 ## <a name="track-your-message-center-tasks-in-planner"></a>Nachverfolgen Ihrer Nachrichtencenter-Aufgaben in Planner
 
-Eine Vielzahl von umsetzbaren Informationen zu Änderungen an den Microsoft 365-Diensten gehen im Microsoft 365-Nachrichtencenter ein. Es kann schwierig sein, nachzuverfolgen, für welche Änderungen Aufgaben, wann und von wem ausgeführt werden müssen, und die einzelnen Aufgaben bis zum Abschluss nachzuverfolgen. Möglicherweise möchten Sie sich auch etwas notieren und dies markieren, um es später zu überprüfen. Sie können all dies und mehr tun, wenn Sie Ihre Nachrichten vom Microsoft 365 Admin Center mit Microsoft Planner synchronisieren. Weitere Informationen finden Sie unter nach [Verfolgen der Aufgaben des Nachrichten Centers in Planner](https://docs.microsoft.comoffice365/planner/track-message-center-tasks-planner).
+Eine Vielzahl von umsetzbaren Informationen zu Änderungen an den Microsoft 365-Diensten gehen im Microsoft 365-Nachrichtencenter ein. Es kann schwierig sein, nachverfolgt zu werden, welche Änderungen aufgaben erforderlich sind, wann und von wem und von wem nachverfolgt werden muss. Möglicherweise möchten Sie sich auch etwas notieren und dies markieren, um es später zu überprüfen. All dies und mehr können Sie tun, wenn Sie Ihre Nachrichten aus dem Microsoft 365 Admin Center mit Microsoft Planner synchronisieren. Weitere Informationen finden Sie unter [Nachverfolgen ihrer Nachrichtencenteraufgaben in Planner.](https://docs.microsoft.com/office365/planner/track-message-center-tasks-planner)
 
 
-Eine Übersicht über das Nachrichtencenter finden Sie unter [Message Center in Microsoft 365](message-center.md). Um zu erfahren, wie Sie Ihre Spracheinstellungen so festlegen, dass maschinelle Übersetzungen für Nachrichtencenter Beiträge aktiviert werden, lesen Sie [über die Sprachübersetzung für Nachrichtencenter-Beiträge](language-translation-for-message-center-posts.md). Wenn Sie eine alternative Möglichkeit zum Abrufen von echt Zeitdienst-Integritätsinformationen und Nachrichten Center Kommunikationen programmieren möchten, wenden Sie sich an die [Microsoft 365 Service Communications API Overview](https://go.microsoft.com/fwlink/p/?linkid=848507).
+Eine Übersicht über das Nachrichtencenter finden Sie im [Nachrichtencenter in Microsoft 365.](message-center.md) Oder um zu erfahren, wie Sie Ihre Spracheinstellungen festlegen, um die maschinelle Übersetzung für Beiträge im Nachrichtencenter zu aktivieren, lesen Sie die Sprachübersetzung [für Beiträge im Nachrichtencenter.](language-translation-for-message-center-posts.md) Wenn Sie eine alternative Möglichkeit zum Abrufen von Informationen zum Dienstzustand in Echtzeit und zur Kommunikation mit dem Nachrichtencenter programmieren möchten, finden Sie eine Übersicht über die [Microsoft 365-Dienstkommunikations-API.](https://go.microsoft.com/fwlink/p/?linkid=848507)
   

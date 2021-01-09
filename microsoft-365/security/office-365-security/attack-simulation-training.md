@@ -1,5 +1,5 @@
 ---
-title: Simulieren eines Phishing-Angriffs mit Microsoft Defender für Office 365
+title: Simulieren eines Phishingangriffs mit Microsoft Defender für Office 365
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,92 +10,92 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-description: Administratoren können erfahren, wie Sie Phishing-Angriffe simulieren und Ihre Benutzer auf Phishing-Verhinderung mithilfe von Angriffs Simulations Schulungen in Microsoft Defender für Office 365 Schulen.
-ms.openlocfilehash: 3707041067fd76ee9535d0dccf5cdfcb9d74fbd7
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+description: Administratoren können lernen, wie Sie Phishingangriffe simulieren und ihre Benutzer mithilfe von Angriffssimulationsschulungen in Microsoft Defender für Office 365 zur Phishingverhütung schulen.
+ms.openlocfilehash: 41a5a503fbc8aa5e41760c1cf420d5e3c6047d86
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667555"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49788051"
 ---
-# <a name="simulate-a-phishing-attack"></a>Simulieren eines Phishing-Angriffs
+# <a name="simulate-a-phishing-attack"></a>Simulieren eines Phishingangriffs
 
-Angriffs Simulator-Schulung in Microsoft Defender für Office 365 können Sie gutartige Cyberangriff-Simulationen in Ihrer Organisation ausführen, um Ihre Sicherheitsrichtlinien und-Methoden zu testen und Ihre Mitarbeiter auszubilden, um Ihr Bewusstsein zu schärfen und ihre Anfälligkeit für Angriffe zu verringern. Dieser Artikel führt Sie durch das Erstellen eines simulierten Phishing-Angriffs mithilfe von Attack Simulator Training.
+Mit dem Training zur Angriffssimulation in Microsoft Defender für Office 365 können Sie gutartige Cyberangriffssimulationen in Ihrer Organisation ausführen, um Ihre Sicherheitsrichtlinien und -praktiken zu testen und Ihre Mitarbeiter zu schulen, um ihr Bewusstsein zu erhöhen und ihre Anfälligkeit für Angriffe zu verringern. Dieser Artikel führt Sie durch die Erstellung eines simulierten Phishingangriffs mithilfe von Angriffssimulationsschulungen.
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Um einen simulierten Phishing-Angriff zu starten, öffnen Sie das [Microsoft 365 Security Center](https://security.microsoft.com/), wechseln Sie zu **e-Mail & Zusammenarbeits-** \> **Angriffs Simulator**, und wechseln Sie zur Registerkarte [**Simulationen**](https://security.microsoft.com/attacksimulator?viewid=simulations) .
+Um einen simulierten Phishingangriff zu starten, öffnen Sie das [Microsoft 365 Security Center,](https://security.microsoft.com/)wechseln Sie zu **"E-Mail &** Zusammenarbeit – \> **Angriffssimulationstraining",** und wechseln Sie zur Registerkarte [**"Simulationen".**](https://security.microsoft.com/attacksimulator?viewid=simulations)
 
-Wählen Sie unter **Simulationen** **die Option + Simulation starten** aus.
+Wählen **Sie unter Simulationen** **+ Starten sie eine Simulation aus.**
 
-![Starten einer Schaltfläche "Simulation" im Microsoft 365 Security Center](../../media/attack-sim-preview-launch.png)
+![Starten einer Simulationsschaltfläche im Microsoft 365 Security Center](../../media/attack-sim-preview-launch.png)
 
 > [!NOTE]
-> Sie können während der Simulationserstellung jederzeit speichern und schließen, um die Konfiguration der Simulation zu einem späteren Zeitpunkt fortzusetzen.
+> Zu jedem Zeitpunkt während der Simulationserstellung können Sie speichern und sich nähern, um die Konfiguration der Simulation zu einem späteren Zeitpunkt fortzufahren.
 
-## <a name="selecting-a-social-engineering-technique"></a>Auswählen einer Social Engineering-Technik
+## <a name="selecting-a-social-engineering-technique"></a>Auswählen einer Social -Engineering-Technik
 
-Wählen Sie aus vier verschiedenen Techniken aus, die von der [Mitra ATT&ck® Framework](https://attack.mitre.org/techniques/enterprise/)kuratiert wurden. Für verschiedene Techniken stehen unterschiedliche Nutzlasten zur Verfügung:
+Wählen Sie aus vier verschiedenen Techniken aus, die aus dem [MITRE ATT&CK® werden.](https://attack.mitre.org/techniques/enterprise/) Für unterschiedliche Techniken stehen unterschiedliche Nutzlasten zur Verfügung:
 
-- Die Erfassung von **Anmelde** Informationen versucht, Anmeldeinformationen zu sammeln, indem Benutzer zu einer bekannten Website mit Eingabefeldern übertragen werden, um einen Benutzernamen und ein Kennwort einzugeben.
-- **Schadsoftware** fügt eine böswillige Anlage zu einer Nachricht hinzu. Wenn der Benutzer die Anlage öffnet, wird willkürlicher Code ausgeführt, mit dem der Angreifer das Gerät des Ziels kompromittieren kann.
-- **Link in Attachment** ist eine Art der Hybriden Anmeldeinformationen-Ernte. Ein Angreifer fügt eine URL in eine e-Mail-Anlage ein. Die URL innerhalb der Anlage folgt dem gleichen Verfahren wie das Sammeln von Anmeldeinformationen.
-- **Mit Link zu Schadsoftware** wird ein beliebiger Code aus einer Datei ausgeführt, die auf einem bekannten Dateifreigabedienst gehostet wird. Die Nachricht, die an den Benutzer gesendet wird, enthält einen Link zu dieser schädlichen Datei. Öffnen der Datei und unterstützen des Angreifers, das Gerät des Ziels zu gefährden.
+- **Die Erfassung von** Anmeldeinformationen versucht, Anmeldeinformationen zu sammeln, indem Benutzer zu einer bekannten Website mit Eingabefeldern zum Übermitteln eines Benutzernamens und Kennworts aufgefordert werden.
+- **Eine Anlage mit** Schadsoftware fügt einer Nachricht eine bösartige Anlage hinzu. Wenn der Benutzer die Anlage öffnet, wird beliebiger Code ausgeführt, der dem Angreifer dabei hilft, das Gerät des Ziels zu greife.
+- **Der Link in der Anlage** ist ein Hybridtyp für die Anmeldeinformationsernte. Ein Angreifer fügt eine URL in eine E-Mail-Anlage ein. Die URL in der Anlage folgt demselben Verfahren wie die Anmeldeinformationsernte.
+- **Bei einem Link zu Schadsoftware** wird beliebiger Code aus einer Datei ausgeführt, die auf einem bekannten Dateifreigabedienst gehostet wird. Die an den Benutzer gesendete Nachricht enthält einen Link zu dieser schädlichen Datei. Öffnen sie die Datei, und helfen Sie dem Angreifer, das Gerät des Ziels zu greife.
 
 > [!TIP]
-> Durch Klicken auf **Details anzeigen** in der Beschreibung jeder Technik werden weitere Informationen und die Simulationsschritte für die Technik angezeigt.
+> Wenn Sie in **der Beschreibung der** einzelnen Techniken auf Details anzeigen klicken, werden weitere Informationen und die Simulationsschritte für die Technik angezeigt.
 >
-> ![Simulationsschritte für das Sammeln von Anmeldeinformationen im Angriffs Simulationstraining im Microsoft 365 Security Center](../../media/attack-sim-preview-sim-steps.png)
+> ![Simulationsschritte für die Verwendung von Anmeldeinformationen im Rahmen des Angriffssimulationstrainings im Microsoft 365 Security Center](../../media/attack-sim-preview-sim-steps.png)
 
-Nachdem Sie die Technik ausgewählt und auf **weiter** geklickt haben, geben Sie Ihrer Simulation einen Namen und optional eine Beschreibung.
+Nachdem Sie das Verfahren ausgewählt und auf **"Weiter"** geklickt haben, geben Sie ihrer Simulation einen Namen und optional eine Beschreibung.
 
 ## <a name="selecting-a-payload"></a>Auswählen einer Nutzlast
 
-Als nächstes müssen Sie entweder eine Nutzlast aus dem bereits vorhandenen Nutz Last Katalog auswählen.
+Als Nächstes müssen Sie entweder eine Nutzlast aus dem bereits vorhandenen Nutzlastkatalog auswählen.
 
-Bei der Auswahl von Nutzlasten stehen Ihnen mehrere Datenpunkte zur Verfügung:
+Nutzlasten verfügen über eine Reihe von Datenpunkten, die Ihnen bei der Auswahl helfen:
 
-- **Klickrate** zählt, wie viele Personen auf diese Nutzlast geklickt haben.
-- **Prognostizierte Kompromiss Rate** prognostiziert, dass der Prozentsatz der Personen, die von dieser Nutzlast betroffen werden, basierend auf den Verlaufsdaten für die Nutzlast in Microsoft Defender für Office 365 Kunden beeinträchtigt wird.
-- **Gestartete Simulationen** zählt die Häufigkeit, mit der diese Nutzlast in anderen Simulationen verwendet wurde.
-- Die **Komplexität**, die über **Filter** verfügbar ist, wird basierend auf der Anzahl der Indikatoren innerhalb der Nutzlast berechnet, die der Hinweis darauf abzielt, dass es sich um einen Angriff handelt. Mehr Indikatoren führen zu einer geringeren Komplexität.
-- **Source**, verfügbar über **Filter**, gibt an, ob die Nutzlast auf Ihrem Mandanten erstellt wurde oder ein Bestandteil des bereits vorhandenen Payload-Katalogs (Global) von Microsoft ist.
+- **Die Klickrate** zählt, wie viele Personen auf diese Nutzlast geklickt haben.
+- **Die vorhergesagte** Kompromissrate prognostizieren den Prozentsatz der Personen, die von dieser Nutzlast basierend auf historischen Daten für die Nutzlast von Microsoft Defender für Office 365-Kunden gefährdet werden.
+- **Bei gestarteten Simulationen** wird ermittelt, wie oft diese Nutzlast in anderen Simulationen verwendet wurde.
+- **Die** Komplexität , die über **Filter** verfügbar ist, wird basierend auf der Anzahl der Indikatoren innerhalb der Nutzlast berechnet, die darauf hinweisen, dass es sich um einen Angriff handelt. Mehr Indikatoren führen zu einer geringeren Komplexität.
+- **Source**, available through **filters**, indicates whether the payload was created on your tenant or is a part of Microsoft's pre-existing payload catalog (global).
 
-![Ausgewählte Nutzlast innerhalb der Angriffs Simulations Schulung im Microsoft 365 Security Center](../../media/attack-sim-preview-select-payload.png)
+![Ausgewählte Nutzlast im Training zur Angriffssimulation im Microsoft 365 Security Center](../../media/attack-sim-preview-select-payload.png)
 
-Wählen Sie in der Liste eine Nutzlast aus, um eine Vorschau der Nutzlast mit zusätzlichen Informationen anzuzeigen.
+Wählen Sie eine Nutzlast aus der Liste aus, um eine Vorschau der Nutzlast mit zusätzlichen Informationen dazu anzuzeigen.
 
-Wenn Sie eine eigene Nutzlast erstellen möchten, lesen Sie [Erstellen einer Nutzlast für die Angriffs Simulations Schulung](attack-simulation-training-payloads.md).
+Wenn Sie Ihre eigene Nutzlast erstellen möchten, lesen Sie die Informationen zum Erstellen einer Nutzlast [für das Training zur Angriffssimulation.](attack-simulation-training-payloads.md)
 
 ## <a name="audience-targeting"></a>Zielgruppenadressierung
 
-Jetzt ist es an der Zeit, die Zielgruppe dieser Simulation auszuwählen. Sie können auswählen, dass **alle Benutzer in Ihrer Organisation eingeschlossen** oder **nur bestimmte Benutzer und Gruppen eingeschlossen** werden sollen.
+Jetzt ist es an der Zeit, die Zielgruppe dieser Simulation auszuwählen. Sie können festlegen, **dass alle Benutzer in Ihrer** Organisation oder nur bestimmte Benutzer und Gruppen enthalten **sind.**
 
-Wenn Sie **nur bestimmte Benutzer und Gruppen einbeziehen** möchten, können Sie entweder Folgendes verwenden:
+Wenn Sie festlegen, **dass nur bestimmte Benutzer und Gruppen enthalten sind,** haben Sie folgende Möglichkeit:
 
-- **Fügen Sie Benutzer hinzu**, mit denen Sie die Suche für Ihren Mandanten sowie erweiterte Such-und Filterfunktionen nutzen können, beispielsweise für Benutzer, die in den letzten drei Monaten nicht auf eine Simulation ausgerichtet waren.
-  ![Benutzer Filterung beim Angriffs Simulationstraining im Microsoft 365 Security Center](../../media/attack-sim-preview-user-targeting.png)
-- Mit dem **Import aus CSV** können Sie eine vordefinierte Gruppe von Benutzern für diese Simulation importieren.
+- **Fügen Sie** Benutzer hinzu, mit denen Sie die Suche nach Ihrem Mandanten sowie erweiterte Such- und Filterfunktionen nutzen können, z. B. für Benutzer, die in den letzten drei Monaten nicht zielgerichtet auf eine Simulation ausgerichtet wurden.
+  ![Benutzerfilterung in Angriffssimulationsschulungen im Microsoft 365 Security Center](../../media/attack-sim-preview-user-targeting.png)
+- **Mit dem Import** aus csv können Sie eine vordefinierte Gruppe von Benutzern für diese Simulation importieren.
 
 ## <a name="assigning-training"></a>Zuweisen von Schulungen
 
-Es wird empfohlen, eine Schulung für jede Simulation zuzuweisen, da Mitarbeiter, die die Schulung durchlaufen, für ähnliche Angriffe unempfindlicher sind.
+Es wird empfohlen, dass Sie für jede Simulation Schulungen zuweisen, da Mitarbeiter, die Schulungen durchgehen, weniger anfällig für ähnliche Angriffe sind.
 
-Sie können entweder eine Schulung für Sie festlegen oder selbst Schulungskurse und Module auswählen.
+Sie können entweder eine Schulung für Sie zugewiesen haben oder selbst Schulungskurse und Module auswählen.
 
-Wählen Sie das **Fälligkeitsdatum für Schulungen** aus, um sicherzustellen, dass Mitarbeiter die Schulung rechtzeitig abgeschlossen haben.
+Wählen Sie das **Fälligkeitsdatum der Schulung** aus, um sicherzustellen, dass die Mitarbeiter ihre Schulung rechtzeitig beenden.
 
 > [!NOTE]
-> Wenn Sie Kurse und Module selbst auswählen, können Sie weiterhin den empfohlenen Inhalt sowie alle verfügbaren Kurse und Module anzeigen.
+> Wenn Sie kurse und Module selbst auswählen, können Sie weiterhin die empfohlenen Inhalte sowie alle verfügbaren Kurse und Module anzeigen.
 >
-> ![Hinzufügen einer empfohlenen Schulung in der Schulung zur Angriffssimulation im Microsoft 365 Security Center](../../media/attack-sim-preview-add-training.png)
+> ![Hinzufügen empfohlener Schulungen im Rahmen der Angriffssimulationsschulung im Microsoft 365 Security Center](../../media/attack-sim-preview-add-training.png)
 
-In den nächsten Schritten müssen Sie **Schulungen hinzufügen** , wenn Sie sich für die Auswahl entschieden haben, und passen Sie Ihre Schulungsziel Seite an. Sie können die Startseite der Schulung in einer Vorschau anzeigen und die Kopfzeile und den Textkörper ändern.
+In den nächsten Schritten müssen  Sie Schulungen hinzufügen, wenn Sie sich dafür entschieden haben, sie selbst auszuwählen, und Ihre Angebotsseite für Schulungen anpassen. Sie können eine Vorschau der Angebotsseite für Schulungen anzeigen und den Header und textkörper ändern.
 
-## <a name="launch-details-and-review"></a>Starten von Details und überprüfen
+## <a name="launch-details-and-review"></a>Startdetails und Überprüfung
 
-Nachdem alles konfiguriert wurde, können Sie diese Simulation sofort starten oder zu einem späteren Zeitpunkt planen. Sie müssen auch auswählen, wann diese Simulation beendet werden soll. Die Aufzeichnung der Interaktion mit dieser Simulation wird nach der ausgewählten Zeit angehalten.
+Nachdem nun alles konfiguriert ist, können Sie diese Simulation sofort starten oder für einen späteren Termin planen. Sie müssen auch auswählen, wann diese Simulation beendet werden soll. Wir beenden die Erfassung von Interaktionen mit dieser Simulation nach dem ausgewählten Zeitpunkt.
 
-**Aktivieren Sie die regionsbezogene Zustellungs Zeitzonen** , um simulierte Angriffsmeldungen an Ihre Mitarbeiter während der Arbeitszeit basierend auf Ihrer Region zu liefern.
+**Aktivieren Sie die Regionen-bezogene Zeitzonenzustellung,** um ihren Mitarbeitern während der Arbeitszeiten basierend auf ihrer Region simulierte Angriffsnachrichten zu senden.
 
-Wenn Sie fertig sind, klicken Sie auf **weiter** , und überprüfen Sie die Details der Simulation. Klicken Sie auf **Bearbeiten** auf einem der Teile, um zurückzugehen, und ändern Sie alle Details, die geändert werden müssen. Klicken Sie nach Abschluss des Vorganges auf über **Mitteln**.
+Wenn Sie fertig sind, klicken Sie auf **"Weiter",** und überprüfen Sie die Details ihrer Simulation. Klicken Sie **auf "Bearbeiten"** auf einen der Teile, um zurück zu gehen und alle Details zu ändern, die geändert werden müssen. Klicken Sie anschließend auf **"Absenden".**

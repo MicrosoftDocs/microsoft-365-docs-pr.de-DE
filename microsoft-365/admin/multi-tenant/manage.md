@@ -18,58 +18,66 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Hier erfahren Sie, wie Sie den Mandanten Umschalter und die Ansichten mit mehreren Mandanten verwenden.
-ms.openlocfilehash: 2c96a80a0095e909eff19c9172eb0709ecece942
-ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
+description: Erfahren Sie, wie Sie die Mandantenumschaltfunktion und die Mehr-Mandanten-Ansichten verwenden.
+ms.openlocfilehash: 0b73665159fbc6ce2d1aa99ba1518dc257d88ec8
+ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48495860"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790138"
 ---
-# <a name="multi-tenant-management"></a>Multi-Mandantenverwaltung
+# <a name="multi-tenant-management"></a>Verwaltung mit mehreren Mandanten
 
-Die Verwaltung mehrerer Mandanten bietet eine einheitliche Verwaltungsform, mit der Administratoren alle Mandanten verwalten können, die Sie von einem einzigen Standort aus verwalten. Wenn Sie mehrere Mandanten verwalten, haben Sie folgende Möglichkeiten:
+Die verwaltung mit mehreren Mandanten bietet eine einheitliche Verwaltungsform, mit der Administratoren alle Mandanten verwalten können, die sie von einem einzigen Standort aus verwalten können. Wenn Sie mehrere Mandanten verwalten, können Sie:
 
-- Schnelle Umstellung zwischen Mandanten, die Sie verwalten.
-- Bewerten des Dienststatus, der Produkte und der Abrechnung über mehrere Mandanten hinweg.
-- Auf der Seite " **alle Mandanten** " können Sie schnell die Integrität aller Dienste Ihrer Mandanten, alle offenen Dienstanforderungen, ihre Produkte und die Abrechnung sowie die Anzahl der Benutzer in diesem Mandanten anzeigen.
+- Wechseln Sie schnell zwischen mandanten, die Sie verwalten.
+- Bewerten des Dienstzustands, der Produkte und der Abrechnung über mehrere Mandanten hinweg.
+- Auf der Seite **"Alle** Mandanten" können Sie schnell den Zustand aller Dienste Ihrer Mandanten, alle offenen Serviceanfragen, Ihre Produkte und Abrechnung sowie die Anzahl der Benutzer in diesem Mandanten anzeigen.
 
 
-## <a name="move-between-tenants"></a>Wechsel zwischen Mandanten
+## <a name="move-between-tenants"></a>Wechseln zwischen Mandanten
 
-1. Wählen Sie im Microsoft 365 Admin Center den Namen der Organisation aus.
+1. Wählen Sie im Microsoft 365 Admin Center den Organisationsnamen aus.
 
-    :::image type="content" source="../../media/macorgswitcher.png" alt-text="Multi-Mandanten-Switcher.":::
+    :::image type="content" source="../../media/macorgswitcher.png" alt-text="Mehr-Mandanten-Switcher.":::
 
-- Vom **Mandanten Switcher** aus können Sie schnell zwischen Mandanten wechseln, die Sie verwalten.
+- Über den **Mandantenwechsel können** Sie schnell zwischen den von Ihnen verwalteten Mandanten wechseln.
 
-    :::image type="content" source="../../media/yourtenantslist.png" alt-text="Multi-Mandanten-Switcher.":::
+    :::image type="content" source="../../media/yourtenantslist.png" alt-text="Ihre Mandantenliste mit Suchfunktionalität.":::
 
-## <a name="view-all-tenants-page"></a>Seite "alle Mandanten anzeigen"
+## <a name="view-all-tenants-page"></a>Seite "Alle Mandanten anzeigen"
 
-1. Wählen Sie im Microsoft 365 Admin Center im linken Navigationsbereich **alle Mandanten**aus.
-- Auf der Seite **alle Mandanten** können Sie
-  - Bewerten des Dienststatus
+1. Wählen Sie im Microsoft 365 Admin Center im linken Navigationsbereich alle **Mandanten aus.**
+- Auf der **Seite "Alle Mandanten"** können Sie
+  - Bewerten des Dienstzustands
   - Überprüfen der Lizenznutzung
-  - Suchen nach oder auswählen des Mandanten, den Sie verwalten möchten
-  - Sie können auch den am häufigsten besuchten Mandanten an den Anfang der Liste anheften.
+  - Suchen sie nach dem Mandanten, den Sie verwalten möchten, oder wählen Sie diesen aus.
+  - Sie können Ihren am häufigsten besuchten Mandanten auch an den oberen Rand der Liste anheften.
 
 
-Wenn Sie einen Mandanten als Favorit markiert haben, wird er automatisch erweitert, sodass Sie die Statusdetails sofort anzeigen können.
+Wenn Sie einen Mandanten als Favoriten gekennzeichnet haben, wird er automatisch erweitert, sodass Sie die Statusdetails sofort anzeigen können.
 
-## <a name="view-service-health-for-all-accounts"></a>Anzeigen des Dienststatus für alle Konten
+## <a name="view-service-health-for-all-accounts"></a>Anzeigen des Dienstzustands für alle Konten
 
-Die Dienst Integritäts Ansicht zeigt Ihnen an, ob Vorfälle oder Warnungen sich auf die Mandanten auswirken. Es wird Ihnen sogar mitteilen, wie viele Ihrer verwalteten Mandanten betroffen sind.
+In der Dienstintegzustandsansicht wird angezeigt, ob vorfälle oder Ratgeber auswirkungen auf die Mandanten haben. Sie erfahren sogar, wie viele Ihrer verwalteten Mandanten betroffen sind.
 
-1. Wählen Sie im Microsoft 365 Admin Center in der Ansicht mehr Mandanten die Option **Dienststatus**aus.
-2. Auf der Seite **Dienststatus** können Sie Probleme auf den Registerkarten **alle Dienste** oder **alle Probleme** überprüfen.
-3. Wählen Sie auf der Registerkarte **alle Dienste** oder **alle Probleme** einen Vorfall aus, um weitere Informationen zu einem Vorfall auf der Registerkarte **Übersicht** zu erhalten. Wählen Sie die Registerkarte **betroffene Mandanten** aus, um eine Liste der betroffenen Mandanten abzurufen.
+1. Wählen Sie im Microsoft 365 Admin Center in der Mehr-Mandanten-Ansicht den **Dienstzustand aus.**
+2. Auf  der aggregierten Ansicht "Dienstintegzustand" können Sie auch die Gesamtzahl der Vorfälle, die Gesamtanzahl der Ratgeber, die sich auf einen der verwalteten Mandanten und die Anzahl der Dienste mit aktiven Vorfällen ausdingen, anzeigen. Sie können auch sehen, wie viele Ihrer Mandanten von Vorfällen und Ratgebern betroffen sind.
+    
+    - Mit der Filteroption können Sie Probleme nach Problemtyp oder Dienst anzeigen.
 
-    :::image type="content" source="../../media/tenantsaffected.png" alt-text="Multi-Mandanten-Switcher.":::
+    - Sie können Probleme auf den **Registerkarten "Alle Dienste"** oder **"Alle Probleme"** überprüfen.
+
+    :::image type="content" source="../../media/multitenant-servicehealth.png" alt-text="Seite &quot;Dienstinte health&quot; mit mehreren Mandanten.":::
+1. Wählen Sie auf der Registerkarte **"Alle Dienste"** oder **"Alle Probleme"** einen Vorfall aus, um auf der Registerkarte "Übersicht" weitere Informationen zu **vorfällen zu** erhalten. Wählen Sie die **Registerkarte "Betroffene Mandanten"** aus, um eine Liste der betroffenen Mandanten zu erhalten.
+
+    :::image type="content" source="../../media/tenantsaffected.png" alt-text="Liste der Mandanten, die von einem Dienstinte health-Problem betroffen sind.":::
+
+Die Liste der betroffenen Mandanten kann in das CSV-Format exportiert werden, damit Administratoren sie für Supportteams freigeben können.
 
 ## <a name="view-a-single-tenant-in-the-microsoft-365-admin-center"></a>Anzeigen eines einzelnen Mandanten im Microsoft 365 Admin Center
 
-Sie können für jeden Mandanten auf der Seite **alle Mandanten** zum Microsoft 365 Admin Center zurückkehren.
+Sie können über die Seite "Alle Mandanten" zum Microsoft 365 Admin Center für alle **Mandanten** zurückkehren.
 
-1. Klicken Sie auf der Seite **alle Mandanten** auf den Mandantennamen, für den Sie das Admin Center anzeigen möchten.
-2. Sie werden für diesen Mandanten an das Admin Center weitergeleitet.
+1. Wählen Sie auf der Seite **"Alle Mandanten"** den Mandantennamen aus, für den Sie das Admin Center anzeigen möchten.
+2. Sie werden an das Admin Center für den Mandanten geleitet.

@@ -1,7 +1,7 @@
 ---
 title: Verwalten von Office 365-Endpunkten
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
 ms.topic: conceptual
@@ -18,12 +18,12 @@ ms.custom:
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Erfahren Sie, wie Sie Office 365-Endpunkte verwalten, damit sie mit der Netzwerkarchitektur Ihrer Unternehmensorganisation funktionieren.
-ms.openlocfilehash: dcacb10492f4377dbcdf6e74c848a404f1b64c6f
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.openlocfilehash: a616e5f45fee77a02e7b4df7e19ed9e1b0d31d22
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780484"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49787951"
 ---
 # <a name="managing-office-365-endpoints"></a>Verwalten von Office 365-Endpunkten
 
@@ -39,7 +39,7 @@ Wie Sie die Office 365-Netzwerkendpunkte verwenden, hängt von der Netzwerkarchi
 
 An jedem Zweigstellenstandort können Sie ein SD-WAN-Gerät bereitstellen, das so konfiguriert ist, dass Datenverkehr für die Office 365-Optimierungskategorie von Endpunkten oder die Kategorien "Optimieren" und "Zulassen" direkt an das Netzwerk von Microsoft geleitet wird. Weiterer Netzwerkdatenverkehr einschließlich des Datenverkehrs des lokalen Datenzentrums, des allgemeinen Website-Datenverkehrs und des Datenverkehrs zu Office 365 Standardkategorie-Endpunkten wird an einen anderen Ort gesendet, an dem Sie einen größeren Netzwerkrand haben.
 
-Microsoft arbeitet mit SD-WAN-Anbietern zusammen, um eine automatisierte Konfiguration zu ermöglichen. Weitere Informationen finden Sie unter [Office 365 Networking Partner Program](microsoft-365-networking-partner-program.md).
+Microsoft arbeitet mit SD-WAN-Anbietern zusammen, um die automatisierte Konfiguration zu aktivieren. Weitere Informationen finden Sie unter [Office 365 Networking Partner Program](microsoft-365-networking-partner-program.md).
 
 <a name="pacfiles"> </a>
 ## <a name="use-a-pac-file-for-direct-routing-of-vital-office-365-traffic"></a>Verwenden einer PAC-Datei für das Routing von wichtigem Office 365-Datenverkehr
@@ -161,7 +161,7 @@ Diese CNAME-Umleitungen sind ein normaler Bestandteil des DNS, und für den Clie
 
 Ein Proxyserver überprüft die ursprüngliche URL, die im obigen Beispiel serviceA.office.com ist, und diese URL wird in die Office 365-Veröffentlichung einbezogen. Der Proxy Server fordert die DNS-Auflösung dieser URL in eine IP-Adresse an und empfängt IP_1. Er überprüft dabei nicht die Einträge der zwischengeschalteten CNAME-Einträge.
 
-Hart codierte Konfigurationen oder das Zulassen von Datenverkehr basierend auf indirekten FQDNs von Office 365 wird nicht empfohlen, von Microsoft nicht unterstützt und ist dafür bekannt, probleme mit der Kundenkonnektivität zu verursachen. DNS-Lösungen, die die CNAME-Umleitung blockieren oder die Office 365-DNS-Einträge andernfalls falsch auflösen, können bei aktivierter DNS-Rekursion über die DNS-bedingte Weiterleitung behoben werden (für direkt verwendete vollständig qualifizierte Office 365-Domänennamen). Viele Netzwerkperimeterprodukte von Drittanbietern integrieren die empfohlene Umgehung des Office 365-Endpunktdatenverkehrs nativ in ihre Konfiguration mithilfe des [Office 365-IP-Adress- und URL-Webdiensts.](microsoft-365-ip-web-service.md)
+Hart codierte Konfigurationen oder das Zulassen von Datenverkehr basierend auf indirekten FQDNs von Office 365 wird nicht empfohlen, von Microsoft nicht unterstützt, und es ist bekannt, dass dies Probleme mit der Kundenkonnektivität verursacht. DNS-Lösungen, die die CNAME-Umleitung blockieren oder die Office 365-DNS-Einträge andernfalls falsch auflösen, können bei aktivierter DNS-Rekursion über die DNS-bedingte Weiterleitung behoben werden (für direkt verwendete vollständig qualifizierte Office 365-Domänennamen). Viele Netzwerkperimeterprodukte von Drittanbietern integrieren die empfohlene Umgehung des Office 365-Endpunktdatenverkehrs mithilfe des [Office 365-IP-Adress-](microsoft-365-ip-web-service.md)und -URL-Webdiensts in ihre Konfiguration.
 
 <a name="bkmk_akamai"> </a>
 ### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>Warum enthalten Microsoft-Domänennamen Namen wie "nsatc.net" oder "akadns.net"?

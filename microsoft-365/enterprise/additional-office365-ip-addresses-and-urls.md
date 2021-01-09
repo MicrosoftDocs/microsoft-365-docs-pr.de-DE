@@ -1,7 +1,7 @@
 ---
 title: Zusätzliche Endpunkte, die nicht im Office 365-IP-Adress- und -URL-Webdienst enthalten sind
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 04/29/2020
 audience: Admin
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Zusammenfassung: In den neuen Endpunkt-Webdiensten ist eine kleine Anzahl von Endpunkten für bestimmte Szenarien nicht enthalten.'
 hideEdit: true
-ms.openlocfilehash: d5c97fa2399392b03e00644f270e8726570aefb5
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.openlocfilehash: f81a3b622bb7cc6eb82d9ed7f450762cfc7711ff
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780580"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49787939"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Zusätzliche Endpunkte, die nicht im Office 365-IP-Adress- und -URL-Webdienst enthalten sind
 
@@ -55,7 +55,7 @@ Abgesehen von DNS sind alle diese Punkte für die meisten Benutzer optional, es 
 | 8  | [Exchange Hybrid](https://docs.microsoft.com/exchange/exchange-deployment-assistant)-Proxyauthentifizierung | Lokaler STS von Kunden | Eingehender Serverdatenverkehr |
 | 9  | Zum Konfigurieren von [Exchange-Hybridbereitstellungen](https://docs.microsoft.com/exchange/exchange-deployment-assistant) mit dem [Exchange-Hybridkonfigurations-Assistenten](https://docs.microsoft.com/exchange/hybrid-configuration-wizard) verwendet. <br> Hinweis: Diese Endpunkte sind nur für die Konfiguration von Exchange-Hybridbereitstellungen erforderlich  | domains.live.com an den TCP-Ports 80 und 443, nur für den Exchange 2010 SP3-Hybridkonfigurations-Assistenten erforderlich.<BR> <BR> GCC High, DoD-IP-Adressen: 40.118.209.192/32; 168.62.190.41/32 <BR> <BR> Worldwide Commercial & GCC: *.store.core.windows.net; asl.configure.office.com; mshrcstorageprod.blob.core.windows.net; tds.configure.office.com; mshybridservice.trafficmanager.net <BR>  | Nur ausgehender Serverdatenverkehr |
 | 10  | Der AutoDetect-Dienst wird in [Exchange-Hybridszenarien](https://docs.microsoft.com/exchange/exchange-deployment-assistant) mit [der modernen Hybridauthentifizierung mit Outlook für iOS und Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) verwendet. <BR> <BR> ```*.acompli.net``` <BR> <BR> ```*.outlookmobile.com``` <BR> <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | Lokale Exchange-Kundenserver an TCP-Port 443 | Eingehender Serverdatenverkehr |
-| 11  | Hybride Azure AD-Authentifizierung in Exchange | *.msappproxy.net | Nur ausgehender Datenverkehr auf dem TCP-Server |
+| 11  | Exchange-Hybrid-Azure AD-Authentifizierung | *.msappproxy.net | Nur ausgehender Datenverkehr auf dem TCP-Server |
 | 12   | Skype for Business in Office 2016 umfasst eine videobasierte Bildschirmübertragung, die UDP-Ports verwendet. Vor Skype for Business-Clients in Office 2013 und früher wurde RDP-über-TCP-Port 443 verwendet. | TCP-Port 443 geöffnet bis 52.112.0.0/14 | Altere Clientversionen von Skype for Business in Office 2013 und früheren Versionen |
 | 13   | Lokale Serververbindung für Skype für Business-Hybridbereitstellung mit Skype for Business Online | 13.107.64.0/18, 52.112.0.0/14  <BR> UDP-Ports 50,000-59,999 <BR>  TCP-Ports 50,000-59,999; 5061 | Skype for Business auf lokale Server ausgehende Verbindungen |
 | 14   | Für ein Cloud-Telefonfestnetz mit lokaler Hybridverbindung muss die Netzwerkverbindung für die lokalen Hosts geöffnet sein. Weitere Informationen zu Skype for Business Online-Hybridbereitstellungen finden Sie  | Siehe [Planen der Hybridkonnektivität zwischen Skype for Business Server und Office 365](https://docs.microsoft.com/skypeforbusiness/hybrid/plan-hybrid-connectivity) | Lokale Skype for Business-Hybridbereitstellung (eingehend) |
