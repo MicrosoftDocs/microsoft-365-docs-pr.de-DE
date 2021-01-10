@@ -66,6 +66,8 @@
           href: whats-new-in-preview.md
         - name: Bleiben Sie über Änderungen auf dem Laufenden
           href: manage/stay-on-top-of-updates.md
+        - name: Verwalten mehrerer Mandanten
+          href: multi-tenant/manage.md
     - name: 'Office 365, betrieben von 21Vianet'
       items:
         - name: 'Info zu Office 365, betrieben von 21Vianet'
