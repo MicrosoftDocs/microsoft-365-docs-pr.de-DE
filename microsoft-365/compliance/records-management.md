@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Mit der Datensatzverwaltung in Microsoft 365 können Sie Ihre Aufbewahrungszeitpläne auf einen Dateiplan anwenden, der die Aufbewahrung, die Datensatzdeklaration und die Löschung verwaltet.
-ms.openlocfilehash: 883fd65e3fba716018a1ed35cc457c2eb8f06c52
-ms.sourcegitcommit: 5756896ad87e28fac20f7981eaaeacfb0c098254
+ms.openlocfilehash: 0057be98c79ec07018d86f3130d7e03d68c74446
+ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "49730166"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790201"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Weitere Informationen zur Datensatzverwaltung in Microsoft 365
 
@@ -103,11 +103,13 @@ Nachricht, die ein Benutzer sieht, wenn er versucht, ein beschriftetes Dokument 
 >[!IMPORTANT] 
 > Der wichtigste Unterschied für einen regulatorischen Datensatz besteht darin, dass nach der Anwendung auf den Inhalt niemand, nicht einmal ein globaler Administrator, die Bezeichnung entfernen kann. 
 >
-> Darüber hinaus gelten für Aufbewahrungsbezeichnungen, die für regulatorische Datensätze konfiguriert sind, die folgenden administrativen Einschränkungen:
+> Für Aufbewahrungsbezeichnungen, die für regulatorische Datensätze konfiguriert sind, gelten zudem die folgenden administrativen Einschränkungen:
 > - Die Aufbewahrungsfrist kann nach dem Speichern der Bezeichnung nicht verkürzt, sondern nur verlängert werden.
 > - Diese Bezeichnungen werden nicht durch Autobezeichnungsrichtlinien unterstützt und müssen mit Hilfe von [Richtlinien für Aufbewahrungsbezeichnungen](create-apply-retention-labels.md) angewendet werden. 
+>
+> Darüber hinaus kann eine regulatorische Bezeichnung nicht auf ein Dokument angewendet werden, das in SharePoint ausgecheckt ist.
 > 
-> Vergewissern Sie sich aufgrund dieser irreversiblen Aktionen, dass Sie wirklich regulatorische Datensätze verwenden müssen, bevor Sie diese Option für Ihre Aufbewahrungsbezeichnungen wählen. Um eine versehentliche Konfiguration zu verhindern, ist diese Option nicht standardmäßig verfügbar, sondern muss zunächst mithilfe von PowerShell aktiviert werden. Anweisungen sind in [Deklarieren von Datensätzen unter Verwendung von Aufbewahrungsbezeichnungen](declare-records.md) enthalten.
+> Vergewissern Sie sich aufgrund der Einschränkungen und irreversiblen Aktionen, dass Sie wirklich regulatorische Datensätze verwenden müssen, bevor Sie diese Option für Ihre Aufbewahrungsbezeichnungen wählen. Um eine versehentliche Konfiguration zu verhindern, ist diese Option nicht standardmäßig verfügbar, sondern muss zunächst mithilfe von PowerShell aktiviert werden. Anweisungen sind in [Deklarieren von Datensätzen unter Verwendung von Aufbewahrungsbezeichnungen](declare-records.md) enthalten.
 
 ## <a name="configuration-guidance"></a>Konfigurationsleitfaden
 
