@@ -20,188 +20,199 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
-description: Beschleunigen Sie die Planung und Konfiguration von Microsoft 365 oder Office 365 mit den Installationsanleitungen.
-ms.openlocfilehash: 7024494de231e5adcce4bb91414b5f7bb3349f88
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+description: Beschleunigen Sie Ihre Planung und Konfiguration von Microsoft 365 oder Office 365 mit Setuphandbüchern.
+ms.openlocfilehash: 9bddf24e4133dfac32a0175b754709ba0c840760
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844092"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794424"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Einrichtungsanleitung für Microsoft 365- und Office 365-Dienste
 
-Die Anleitungen für Microsoft 365 und Office 365-Setup bieten Ihnen maßgeschneiderte Anleitungen und Ressourcen für die Planung und Bereitstellung Ihrer Mandanten, Apps und Dienste. Diese Anleitungen werden mit den gleichen bewährten Methoden erstellt, die [Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365) -Onboarding-Spezialisten in einzelnen Interaktionen freigeben, und Sie sind für alle Administratoren im Microsoft 365 Admin Center verfügbar. Sie geben Informationen zum Produktsetup, zur Aktivierung von Sicherheitsfeatures, zur Bereitstellung von Tools für die Zusammenarbeit und zum Beschleunigen von erweiterten Bereitstellungen mit Skripts.
+Microsoft 365- und Office 365-Setuphandbücher bieten Ihnen maßgeschneiderte Anleitungen und Ressourcen für die Planung und Bereitstellung Ihres Mandanten, Ihrer Apps und Dienste. Diese Leitfäden werden mit denselben bewährten Methoden erstellt, die [Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365) FastTrack-Onboarding-Experten in einzelnen Interaktionen gemeinsam verwenden, und sie stehen allen Administratoren im Microsoft 365 Admin Center zur Verfügung. Sie bieten Informationen zur Produkteinrichtung, zum Aktivieren von Sicherheitsfeatures, zum Bereitstellen von Tools für die Zusammenarbeit und zum Bereitstellen von Skripts zur Beschleunigung erweiterter Bereitstellungen.
 
-## <a name="how-to-access-setup-guides-in-the-microsoft-365-admin-center"></a>Vorgehensweise zugreifen auf Setup Handbücher im Microsoft 365 Admin Center
+## <a name="how-to-access-setup-guides-in-the-microsoft-365-admin-center"></a>Zugreifen auf Setuphandbücher im Microsoft 365 Admin Center
 
-Auf die Setup Handbücher können Sie auf der Seite [Setup Anleitung](https://aka.ms/setupguidance) im Microsoft 365 Admin Center zugreifen. Sie können den Status Ihres Fortschritts überwachen, und Sie haben die Möglichkeit, jederzeit zurückzukehren, um einen Leitfaden abzuschließen. So erreichen Sie die Seite " **Einrichtungsanleitungen** ":
+Auf die Setuphandbücher kann über die Seite mit den [Setupanleitungen](https://aka.ms/setupguidance) im Microsoft 365 Admin Center zugegriffen werden. Sie können den Status Ihres Fortschritts nachverfolgen, und Sie haben die Möglichkeit, jederzeit zurückzukehren, um eine Anleitung zu vervollständigen. So gelangen Sie zur **Seite mit den Setupanleitungen:**
 
-1. Wechseln Sie im [Microsoft 365 Admin Center](https://admin.microsoft.com/)zur **Start** Seite.
+1. Wechseln Sie [im Microsoft 365 Admin Center](https://admin.microsoft.com/)zur **Startseite.**
 
-2. Hier finden Sie die **Schulungs & Karte "Guides** ". 
+2. Suchen Sie die **Karte & Schulungsanleitungen.** 
 
-   ![Schulungs & Karte "Guides" im Microsoft 365 Admin Center](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
+   ![Karte & Schulungsanleitungen im Microsoft 365 Admin Center](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
 
-3. Wählen Sie **angepasste Setup Anleitung** aus.
+3. Wählen Sie **benutzerdefinierte Setupanleitungen aus.**
 
-   ![Screenshot der Seite "Setup Anleitung" im Microsoft 365 Admin Center](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
+   ![Screenshot der Seite "Setupanleitung" im Microsoft 365 Admin Center](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
 
 >[!NOTE]
->Für den Zugriff auf das Microsoft 365 Admin Center sind mandantenadministrator Berechtigungen erforderlich.
+>Mandantenadministratorberechtigungen sind für den Zugriff auf das Microsoft 365 Admin Center erforderlich.
 
-## <a name="how-do-setup-guides-work-in-the-microsoft-365-admin-center"></a>Wie funktionieren Setup Handbücher im Microsoft 365 Admin Center?
+## <a name="how-do-setup-guides-work-in-the-microsoft-365-admin-center"></a>Wie funktionieren Setuphandbücher im Microsoft 365 Admin Center?
 
-In jeder Anleitung finden Sie Schritt-für-Schritt-Anleitungen, Ressourcen, Artikel und bei Bedarf Skripts, die Sie zum vornehmen von Konfigurationsänderungen verwenden können. Diese Anleitungen bieten Ihnen eine Auswahl, die die spezifischen Anforderungen von kleinen und großen Organisationen widerspiegelt. Darüber hinaus enthält der Leitfaden Unterstützung für neue und erfahrene Administratoren.
+Jedes Handbuch enthält schrittweise Anweisungen, Ressourcen, Artikel und bei Bedarf Skripts, mit denen Sie Konfigurationsänderungen vornehmen können. Diese Anleitungen bieten Ihnen Auswahlmöglichkeiten, die die spezifischen Anforderungen kleiner und großer Organisationen widerspiegeln. Darüber hinaus enthält die Anleitung Unterstützung für neue und erfahrene Administratoren.
 
-![Beispiel für eine Installationsanleitung](../media/setup-guides-for-microsoft-365/m365-setupguide-example.png)
+![Beispiel für eine Einrichtungsanleitung](../media/setup-guides-for-microsoft-365/m365-setupguide-example.png)
 
-Sie können die Anleitungen verwenden, um mehr über bestimmte Microsoft 365-und Office 365-Features während der Planungsphase, während der Bereitstellung und des Rollouts zu erfahren, oder um Sie erneut zu besuchen, nachdem Sie eine Bereitstellung zum Ändern einer Einstellung abgeschlossen haben.
+Mithilfe der Anleitungen können Sie während der Planungsphase, während der Bereitstellung und des Rollouts mehr über bestimmte Microsoft 365- und Office 365-Features erfahren oder sie nach Abschluss einer Bereitstellung erneut durcharbeiten, um eine Einstellung zu ändern.
 
 ## <a name="guides-for-initial-setup"></a>Anleitungen für die Ersteinrichtung
 
 ### <a name="prepare-your-environment"></a>Vorbereiten der Umgebung
 
-Das Handbuch [prepare your environment](https://aka.ms/prepareyourenvironment) hilft Ihnen beim Vorbereiten der Umgebung Ihrer Organisation für Microsoft 365 und Office 365-Dienste. Unabhängig von ihren Zielen gibt es Aufgaben, die Sie ausführen müssen, um eine erfolgreiche Bereitstellung sicherzustellen. Um Fehler beim Vorbereiten Ihrer Umgebung zu vermeiden, werden Sie mit schrittweisen Anweisungen zum Verbinden Ihrer Domäne, Hinzufügen von Benutzern, Zuweisen von Lizenzen, Einrichten von e-Mails mit Exchange Online und installieren oder Bereitstellen von Office-Apps bereitgestellt. 
+Das [Handbuch "Vorbereiten Ihrer Umgebung"](https://aka.ms/prepareyourenvironment) hilft Ihnen bei der Vorbereitung der Umgebung Ihrer Organisation für Microsoft 365- und Office 365-Dienste. Unabhängig von Ihren Zielen müssen Sie Aufgaben ausführen, um eine erfolgreiche Bereitstellung sicherzustellen. Um Fehler bei der Vorbereitung Ihrer Umgebung zu vermeiden, erhalten Sie schrittweise Anweisungen zum Herstellen einer Verbindung mit Ihrer Domäne, zum Hinzufügen von Benutzern, zum Zuweisen von Lizenzen, zum Einrichten von E-Mails mit Exchange Online und zum Installieren oder Bereitstellen von Office-Apps. 
 
-### <a name="email-setup-advisor"></a>E-Mail-Setup Ratgeber
+### <a name="email-setup-advisor"></a>E-Mail-Setupratgeber
 
-Der [e-Mail-Setup Ratgeber](https://aka.ms/office365setup) bietet eine schrittweise Anleitung zum Konfigurieren von Exchange Online für Ihre Organisation. Dies umfasst das Einrichten neuer e-Mail-Konten, das Migrieren von e-Mails und das Konfigurieren des e-Mail-Schutzes. Für eine erfolgreiche e-Mail-Einrichtung verwenden Sie diesen Ratgeber, und Sie erhalten die empfohlene Migrationsmethode basierend auf dem aktuellen e-Mail-System Ihrer Organisation, der Anzahl der zu migrierenden Postfächer und der Art und Weise, wie Sie Benutzer und deren Zugriff verwalten möchten.
+Der [E-Mail-Setupratgeber](https://aka.ms/office365setup) bietet Ihnen eine schrittweise Anleitung zum Konfigurieren von Exchange Online für Ihre Organisation. Dazu gehören das Einrichten neuer E-Mail-Konten, das Migrieren von E-Mails und das Konfigurieren des E-Mail-Schutzes. Für eine erfolgreiche E-Mail-Einrichtung verwenden Sie diesen Ratgeber, und Sie erhalten die empfohlene Migrationsmethode basierend auf dem aktuellen E-Mail-System Ihrer Organisation, der Anzahl der zu migrierenden Postfächer und der Art und Weise, wie Sie Benutzer und deren Zugriff verwalten möchten.
 
-### <a name="gmail-contacts-and-calendar-advisor"></a>Gmail-Kontakte und Kalender Ratgeber
+### <a name="migrate-gmail-contacts-and-calendar-items"></a>Migrieren von Kontakten und Kalenderelementen in Gmail
 
-Wenn Sie das Postfach eines Gmail-Benutzers zu Microsoft 365 migrieren, werden e-Mail-Nachrichten migriert, Kontakte und Kalenderelemente hingegen nicht. Der [Gmail contacts and Calendar Advisor](https://aka.ms/gmailcontactscalendar) enthält Schritte zum Importieren von Google Contacts-und Google Calendar-Elementen in Microsoft 365 mithilfe von Import-und Exportmethoden mit Outlook.com, dem Outlook-Client oder PowerShell.
+Wenn Sie das Postfach eines Gmail-Benutzers zu Microsoft 365 migrieren, werden E-Mail-Nachrichten migriert, Kontakte und Kalenderelemente jedoch nicht. Der [Kontakt-](https://aka.ms/gmailcontactscalendar) und Kalenderratgeber von Gmail bietet Schritte zum Importieren von Google-Kontakten und -Kalenderelementen in Microsoft 365 mithilfe von Import- und Exportmethoden mit Outlook.com, dem Outlook-Client oder PowerShell.
 
-### <a name="microsoft-365-deployment-advisor"></a>Microsoft 365-Bereitstellungs Ratgeber
+### <a name="microsoft-365-deployment-advisor"></a>Microsoft 365-Bereitstellungsratgeber
 
-Der [Microsoft 365-Bereitstellungs Ratgeber](https://aka.ms/microsoft365setupguide) bietet Ihnen Anleitungen zum Einrichten von Produktivitätstools, Sicherheitsrichtlinien und Geräteverwaltungsfunktionen. Mit einem Microsoft 365 Business Premium-oder Microsoft 365 für Enterprise-Abonnement können Sie diesen Ratgeber verwenden, um die Geräte Ihrer Organisation einzurichten und zu konfigurieren. 
+Der [Microsoft 365-Bereitstellungsratgeber](https://aka.ms/microsoft365setupguide) bietet Ihnen Hilfestellung beim Einrichten von Produktivitätstools, Sicherheitsrichtlinien und Geräteverwaltungsfunktionen. Mit einem Microsoft 365 Business Premium- oder Microsoft 365 Enterprise-Abonnement können Sie diesen Ratgeber zum Einrichten und Konfigurieren der Geräte Ihrer Organisation verwenden. 
 
-Sie erhalten Anleitungen und Zugriff auf Ressourcen, um Ihre Cloud-Dienste zu aktivieren, Geräte auf die neueste unterstützte Version von Windows 10 zu aktualisieren und Geräte mit Azure Active Directory (Azure AD) an einem zentralen Standort zu verbinden.
+Sie erhalten Anleitungen und Zugriff auf Ressourcen, um Ihre Clouddienste zu aktivieren, Geräte auf die neueste unterstützte Version von Windows 10 zu aktualisieren und Geräte mit Azure Active Directory (Azure AD) an einem zentralen Ort zu verbinden.
 
 
-### <a name="remote-work-setup-guide"></a>Handbuch zur Remote-Arbeitseinrichtung
+### <a name="remote-work-setup-guide"></a>Einrichtungshandbuch für Remotearbeit
 
-Das [Remote work Setup Guide](https://aka.ms/remoteworksetup) bietet Organisationen die Tipps und Ressourcen, die Sie benötigen, um sicherzustellen, dass Ihre Benutzer erfolgreich Remote arbeiten können, Ihre Daten sicher sind und die Anmeldeinformationen der Benutzer geschützt sind. 
+Das [Setuphandbuch für](https://aka.ms/remoteworksetup) Remotearbeit bietet Organisationen tipps und Ressourcen, die erforderlich sind, um sicherzustellen, dass Ihre Benutzer remote erfolgreich arbeiten können, Ihre Daten sicher sind und die Anmeldeinformationen der Benutzer geschützt sind. 
 
-Sie erhalten Anleitungen zum Optimieren des Geräte Datenverkehrs von Remotemitarbeitern sowohl auf Microsoft 365-Ressourcen in der Cloud als auch auf das Netzwerk Ihrer Organisation, wodurch die Belastung Ihrer RAS-VPN-Infrastruktur verringert wird. 
+Sie erhalten Eine Anleitung zur Optimierung des Gerätedatenverkehrs von Remotemitarbeitern zu Microsoft 365-Ressourcen in der Cloud und dem Netzwerk Ihrer Organisation, wodurch sich die Belastung Ihrer Remotezugriffs-VPN-Infrastruktur verringert. 
 
-### <a name="windows-virtual-desktop-setup-guide"></a>Windows Virtual Desktop-Installationshandbuch
+### <a name="windows-virtual-desktop-setup-guide"></a>Setuphandbuch für Windows Virtual Desktop
 
-Windows Virtual Desktop ist ein umfassender Desktop-und App-Virtualisierungs-Dienst, der in der Cloud läuft. Es handelt sich um die einzige virtuelle Desktopinfrastruktur (VDI), die vereinfachte Verwaltung, mehrstufige Windows 10, Optimierungen für Microsoft 365-apps und Unterstützung für Remote Desktop Dienste-Umgebungen (RDS) bietet. Bereitstellen und Skalieren von Windows-Desktops und-apps in wenigen Minuten in Azure, um integrierte Sicherheits-und Compliance-Funktionen zu erhalten. 
+Windows Virtual Desktop ist ein umfassender Desktop- und App-Virtualisierungsdienst, der in der Cloud ausgeführt wird. Es ist die einzige virtuelle Desktopinfrastruktur (Virtual Desktop Infrastructure, VDI), die eine vereinfachte Verwaltung, Windows 10 mit mehreren Sitzungen, Optimierungen für Microsoft 365-Apps und Unterstützung für Remotedesktopdienste (RDS)-Umgebungen bietet. Stellen Sie Ihre Windows-Desktops und -Apps in Minuten bereit, skalieren Sie sie in Azure, und erhalten Sie integrierte Sicherheits- und Compliancefeatures. 
 
-Das [Windows Virtual Desktop Setup Guide](https://aka.ms/wvdsetupguide) bietet Administratoren Planungsressourcen und die Voraussetzungen für die Bereitstellung, Setup Anleitungen und zusätzliche Ressourcen. 
+Das [Setuphandbuch für Windows Virtual Desktop](https://aka.ms/wvdsetupguide) stellt Administratoren Planungsressourcen und die Voraussetzungen für die Bereitstellung, Einrichtungsanleitungen und zusätzliche Ressourcen zur Verfügung. 
 
-### <a name="microsoft-edge-deployment-advisor"></a>Microsoft Edge-Bereitstellungs Ratgeber
+### <a name="microsoft-edge-setup-guide"></a>Einrichtungshandbuch für Microsoft Edge
 
-Microsoft Edge wurde von Grund auf neu aufgebaut, um Ihnen erstklassige Kompatibilität und Leistung, die Sicherheit und den Datenschutz zu bieten, die Sie verdienen, und neue Features, die Ihnen das Beste aus dem Internet bieten sollen.
+Microsoft Edge wurde von Grund auf neu erstellt, um Ihnen erstklassige Kompatibilität und Leistung, die Sicherheit und den Datenschutz, die Sie verdienen, sowie neue Features zu bieten, die Ihnen das Beste aus dem Web bieten.
 
-Der [Microsoft Edge-Bereitstellungs Ratgeber](https://aka.ms/edgeadvisor) unterstützt Sie beim Konfigurieren der Ermittlung der Unternehmenswebsite, um festzustellen, welche Websites in Ihrer Organisation möglicherweise den IE-Modus verwenden müssen, um wichtige Sicherheitsfeatures zu überprüfen und zu konfigurieren, Datenschutzrichtlinien und weitere Richtlinien entsprechend den Anforderungen Ihrer Organisation zu konfigurieren und den Webzugriff auf Ihren Geräten zu verwalten. Sie können Microsoft Edge auf einzelne Geräte herunterladen, oder wir zeigen Ihnen, wie Sie für mehrere Benutzer in Ihrer Organisation mit Configuration Manager oder Microsoft InTune bereitstellen.
-Windows Virtual Desktop ist ein umfassender Desktop-und App-Virtualisierungs-Dienst, der in der Cloud läuft. Es handelt sich um die einzige virtuelle Desktopinfrastruktur (VDI), die vereinfachte Verwaltung, mehrstufige Windows 10, Optimierungen für Microsoft 365-apps und Unterstützung für Remote Desktop Dienste-Umgebungen (RDS) bietet. Bereitstellen und Skalieren von Windows-Desktops und-apps in wenigen Minuten in Azure, um integrierte Sicherheits-und Compliance-Funktionen zu erhalten. 
+Das [Setuphandbuch](https://aka.ms/edgeadvisor) für Microsoft Edge hilft Ihnen beim Konfigurieren von Enterprise Site Discovery, um zu sehen, welche Websites, auf die in Ihrer Organisation möglicherweise zugegriffen wird, den IE-Modus verwenden müssen, wichtige Sicherheitsfeatures zu überprüfen und zu konfigurieren, Datenschutzrichtlinien und zusätzliche Richtlinien zu konfigurieren, um die Anforderungen Ihrer Organisation zu erfüllen, und den Webzugriff auf Ihren Geräten zu verwalten. Sie können Microsoft Edge auf einzelne Geräte herunterladen, oder wir zeigen Ihnen, wie Sie mit Configuration Manager oder Microsoft Intune für mehrere Benutzer in Ihrer Organisation bereitstellen. 
 
-### <a name="intune-configuration-manager-co-management-setup-guide"></a>InTune-Konfigurations-Manager-Installationshandbuch für die gemeinsame Verwaltung
+### <a name="microsoft-search-setup-guide"></a>Einrichtungshandbuch für Microsoft Search
 
-Verwenden Sie das [InTune-Installationshandbuch für Konfigurations-Manager-Co-Management](https://aka.ms/comanagementsetup) für vorhandene Configuration Manager-Clientgeräte und neue internetbasierte Geräte, die Ihre Organisation mit Microsoft InTune und dem Konfigurations-Manager gemeinsam verwalten möchte. Mit diesem Bereitstellungshandbuch für die gemeinsame Verwaltung können Sie Windows 10-Geräte verwalten und den Geräten Ihrer Organisation neue Funktionen hinzufügen und gleichzeitig die Vorteile beider Lösungen erhalten.
+Microsoft Search hilft Ihrer Organisation, das zu finden, was sie benötigt, um ihre Arbeit zu vervollständigen. Unabhängig davon, ob sie nach Personen, Dateien, Organigrammen, Websites oder Antworten auf häufige Fragen sucht, kann Ihre Organisation Microsoft Search während des gesamten Arbeitstags verwenden, um Antworten zu erhalten.
 
-## <a name="guides-for-authentication-and-access"></a>Leitfäden für Authentifizierung und Zugriff
+Mit [dem Microsoft Search-Setuphandbuch](https://aka.ms/MicrosoftSearchSetup) können Sie Microsoft Search konfigurieren, unabhängig davon, ob Sie es für eine Gruppe von Benutzern oder für alle Benutzer in Ihrer Organisation ausführen möchten. Sie weisen Suchadministratoren und Sucheditoren zu und passen dann die Sucherfahrung für Ihre Benutzer mit Antworten und zusätzlichen Optionen an, z. B. das Hinzufügen der Erweiterung Bing zu Chrome oder das Festlegen von Bing als Standardsuchmaschine.
 
-### <a name="azure-ad-setup-guide"></a>Azure AD-Installationshandbuch
+### <a name="intune-configuration-manager-co-management-setup-guide"></a>Intune Configuration Manager – Einrichtungshandbuch für die Co-Management-Verwaltung
 
-Das [Azure AD-Setup Handbuch](https://aka.ms/aadpguidance) enthält Informationen, um sicherzustellen, dass Ihre Organisation über eine starke Sicherheitsgrundlage verfügt. In diesem Leitfaden richten Sie die anfänglichen Features wie die Azure-rollenbasierte Zugriffssteuerung (Azure RBAC) für Administratoren, Azure AD Connect für Ihr lokales Verzeichnis und Azure AD Connect Health ein, damit Sie die Integrität ihrer Hybriden Identität während automatischer Synchronisierungen überwachen können. 
+Verwenden Sie das [Intune Configuration Manager Co-Management-Setuphandbuch](https://aka.ms/comanagementsetup) für vorhandene Configuration Manager-Clientgeräte und neue internetbasierte Geräte, die Ihre Organisation gemeinsam mit Microsoft Intune und Configuration Manager verwalten möchte. In diesem Bereitstellungshandbuch für die Co-Verwaltung können Sie Windows 10-Geräte verwalten und den Geräten Ihrer Organisation neue Funktionen hinzufügen und gleichzeitig die Vorteile beider Lösungen nutzen.
 
-Sie enthält außerdem wichtige Informationen zum Aktivieren von Self-Service-Kennwortzurücksetzungen, bedingtem Zugriff und integrierter Drittanbieter Anmeldung einschließlich Optionaler erweiterter Identitätsschutz-und Benutzer bereitstellen-Automatisierung.
+## <a name="guides-for-authentication-and-access"></a>Handbücher für Authentifizierung und Zugriff
+
+### <a name="azure-ad-setup-guide"></a>Einrichtungshandbuch für Azure AD
+
+Das [Azure AD-Setuphandbuch enthält](https://aka.ms/aadpguidance) Informationen, um sicherzustellen, dass Ihre Organisation über eine starke Sicherheits grundlage verfügt. In diesem Leitfaden richten Sie anfängliche Features ein, z. B. die rollenbasierte Zugriffssteuerung (Azure RBAC) für Administratoren, Azure AD Connect für Ihr lokales Verzeichnis und Azure AD Connect Health, damit Sie die Integrität Ihrer Hybrididentität während automatisierter Synchronisierungen überwachen können. 
+
+Es enthält außerdem wichtige Informationen zum Aktivieren der Self-Service-Kennwortzurücksetzung, bedingten Zugriff und integrierter Drittanbieter-Anmeldung, einschließlich optionaler erweiterter Identitätsschutz und Automatisierung der Benutzerbereitstellung.
 
 ### <a name="sync-users-from-your-orgs-directory"></a>Synchronisieren von Benutzern aus dem Verzeichnis Ihrer Organisation
 
-Die [Synchronisierung von Benutzern aus dem Verzeichnis-Assistenten Ihrer Organisation](https://aka.ms/directorysyncsetup) führt Sie durch das Aktivieren der Verzeichnissynchronisierung. Dadurch werden Ihre lokalen und Cloud-Identitäten zusammengefasst, um den Zugriff und vereinfachte Verwaltung zu vereinfachen. Entsperren neuer Funktionen wie einmaliges Anmelden, Self-Service-Optionen, automatische Konto Bereitstellung, bedingte Zugriffssteuerung und Konformitätsrichtlinien Dadurch wird sichergestellt, dass Ihre Benutzer Zugriff auf die Ressourcen haben, die Sie von überall benötigen.
+Der [Assistent zum Synchronisieren von Benutzern aus](https://aka.ms/directorysyncsetup) dem Verzeichnis ihrer Organisation führt Sie durch das Aktivieren der Verzeichnissynchronisierung. Dadurch werden Ihre lokalen und Cloudidentitäten für einen einfacheren Zugriff und eine vereinfachte Verwaltung vereint. Entsperren Sie neue Funktionen wie einmaliges Anmelden, Self-Service-Optionen, automatische Kontobereitstellung, Steuerelemente für bedingten Zugriff und Compliancerichtlinien. Dadurch wird sichergestellt, dass Ihre Benutzer von überall aus Zugriff auf die benötigten Ressourcen haben.
 
-### <a name="plan-your-passwordless-deployment"></a>Planen der Bereitstellung von Kennwörtern
+### <a name="plan-your-passwordless-deployment"></a>Planen der kennwortlosen Bereitstellung
 
-Upgrade auf eine Alternative Anmeldemethode, mit der Benutzer sicher mit einer der folgenden Methoden für die Kenn Wort lose Authentifizierung auf Ihre Geräte zugreifen können: 
+Führen Sie ein Upgrade auf einen alternativen Anmeldeansatz durch, mit dem Benutzer mit einer der folgenden kennwortlosen Authentifizierungsmethoden sicher auf ihre Geräte zugreifen können: 
 
 - Windows Hello for Business
 - Der Microsoft Authenticator-App
 - Sicherheitsschlüssel 
 
-Verwenden Sie den Assistenten zum Bereitstellen von [Kennwörtern planen](https://aka.ms/passwordlesssetup) , um zu ermitteln, welche Authentifizierungsmethoden am besten zu verwenden sind, und erhalten Sie Anleitungen zur Bereitstellung. 
+Verwenden Sie den Assistenten zum Planen [der kennwortlosen](https://aka.ms/passwordlesssetup) Bereitstellung, um die besten kennwortlosen Authentifizierungsmethoden zu ermitteln und Anleitungen zur Bereitstellung zu erhalten. 
 
-### <a name="plan-your-self-service-password-reset-sspr-deployment"></a>Planen der Bereitstellung von Self-Service Password Reset (SSPR)
+### <a name="plan-your-self-service-password-reset-sspr-deployment"></a>Planen der Self-Service-Kennwortzurücksetzung (Self-Service Password Reset, SSPR)
 
-Geben Sie Benutzern die Möglichkeit, Ihr Kennwort unabhängig voneinander zu ändern oder zurückzusetzen, wenn Ihr Konto gesperrt ist, oder wenn Sie Ihr Kennwort vergessen, ohne einen Helpdesk-Techniker kontaktieren zu müssen. 
+Geben Sie Benutzern die Möglichkeit, ihr Kennwort unabhängig zu ändern oder zurückzusetzen, wenn ihr Konto gesperrt ist oder sie ihr Kennwort vergessen, ohne sich an einen Helpdesktechniker wenden zu müssen. 
 
-Verwenden Sie den [Assistenten zum Zurücksetzen der Self-Service-Kennwortzurücksetzung planen](https://aka.ms/SSPRSetupGuide) , um relevante Artikel und Anweisungen zum Konfigurieren der entsprechenden Azure-Portal Optionen zu erhalten, die Sie bei der Bereitstellung von SSPR in Ihrer Umgebung unterstützen.
+Verwenden Sie den Assistenten zum Planen der Self-Service-Kennwortzurücksetzung, um relevante Artikel und Anweisungen zum Konfigurieren der entsprechenden Optionen für das [Azure-Portal](https://aka.ms/SSPRSetupGuide) zu erhalten, die Ihnen bei der Bereitstellung von SSPR in Ihrer Umgebung helfen.
 
-### <a name="active-directory-federation-services-ad-fs-deployment-advisor"></a>Bereitstellungs Ratgeber für Active Directory Verbunddienste (AD FS)
+### <a name="active-directory-federation-services-ad-fs-deployment-advisor"></a>Bereitstellungsratgeber für Active Directory Federation Services (AD FS)
 
-Der [AD FS-Bereitstellungs Ratgeber](https://aka.ms/adfsguidance) bietet schrittweise Anleitungen für die Bereitstellung einer lokalen AD FS-Infrastruktur, die Benutzer für Microsoft 365 und Office 365 Dienste authentifiziert. Mit diesem Leitfaden kann Ihre Organisation AD FS-Komponenten und-Anforderungen überprüfen, SSL-Zertifikate erwerben und installieren, die für die Bereitstellung erforderlich sind, und einen erforderlichen Webanwendungs Proxy Server installieren. 
+Der AD FS-Bereitstellungsratgeber bietet Eine schrittweise Anleitung zur Bereitstellung einer lokalen AD FS-Infrastruktur, die Benutzer für Microsoft 365- und Office 365-Dienste authentifiziert. [](https://aka.ms/adfsguidance) Mit diesem Leitfaden kann Ihre Organisation AD FS-Komponenten und -Anforderungen überprüfen, für die Bereitstellung erforderliche SSL-Zertifikate erwerben und installieren sowie einen erforderlichen Webanwendungsproxyserver installieren. 
 
-## <a name="guides-for-security-and-compliance"></a>Leitfaden für Sicherheit und Compliance
+## <a name="guides-for-security-and-compliance"></a>Leitfäden für Sicherheit und Compliance
 
-### <a name="microsoft-defender-for-endpoint-advisor"></a>Microsoft Defender für Endpoint Advisor
+### <a name="microsoft-intune-setup-guide"></a>Einrichtungshandbuch für Microsoft Intune 
 
-Der [Microsoft Defender für Endpoint Advisor](https://aka.ms/mdatpsetup) stellt Anweisungen bereit, mit denen Ihr Unternehmensnetzwerk erweiterte Bedrohungen verhindern, erkennen, untersuchen und reagieren kann. Informieren Sie sich über die Sicherheitsanfälligkeit in Ihrer Organisation, und entscheiden Sie, welches Bereitstellungspaket und welche Konfigurationsmethoden am besten geeignet sind. 
+Richten Sie Microsoft Intune zum Verwalten von Geräten in Ihrer Organisation ein. Für die vollständige Kontrolle über Unternehmensgeräte verwenden Sie die Mobile Device Management (MDM)-Funktionen von Intune. Um die Daten Ihrer Organisation auf gemeinsam genutzten und persönlichen Geräten zu verwalten, können Sie die Mobile Application Management (MAM)-Features von Intune verwenden. 
+
+Mit dem [Microsoft Intune-Setuphandbuch](https://aka.ms/intunesetupguide)richten Sie Geräte- und App-Kompatibilitätsrichtlinien ein, weisen App-Schutzrichtlinien zu und überwachen den Geräte- und App-Schutzstatus. 
+
+### <a name="microsoft-defender-for-endpoint-advisor"></a>Microsoft Defender für Endpunktratgeber
+
+Der [Ratgeber für Microsoft Defender für Endpunkte](https://aka.ms/mdatpsetup) bietet Anweisungen, mit denen Ihr Unternehmensnetzwerk erweiterte Bedrohungen verhindern, erkennen, untersuchen und darauf reagieren kann. Nehmen Sie eine fundierte Bewertung der Sicherheitslücke Ihrer Organisation vor, und entscheiden Sie, welches Bereitstellungspaket und welche Konfigurationsmethoden am besten sind. 
 
 >[!NOTE]
->Für Microsoft Defender for Endpoint ist eine Microsoft-Volumenlizenz erforderlich.
+>Eine Microsoft Volume License ist für Microsoft Defender for Endpoint erforderlich.
 
-### <a name="exchange-online-protection-setup-guide"></a>Anleitung zum Einrichten des Exchange Online-Schutzes
+### <a name="exchange-online-protection-setup-guide"></a>Einrichtungshandbuch für Exchange Online Protection
 
-Microsoft Exchange Online Protection (EoP) ist ein Cloud-basierter e-Mail-Filterdienst zum Schutz vor Spam und Schadsoftware, mit Funktionen, die Ihre Organisation vor Verstößen gegen Messagingrichtlinien schützen. 
+Microsoft Exchange Online Protection (EOP) ist ein cloudbasierter E-Mail-Filterdienst zum Schutz vor Spam und Schadsoftware mit Features zum Schutz Ihrer Organisation vor Verstößen gegen Messagingrichtlinien. 
 
-Verwenden Sie das [Setup Handbuch für den Exchange Online Schutz](https://aka.ms/EOPguidance) , um EoP einzurichten, indem Sie auswählen, welche der drei Bereitstellungsszenarien &mdash; lokale Postfächer, hybride (Mischung aus lokalen und Cloud-Postfächern) oder alle Cloud-Postfächer für &mdash; Ihre Organisation geeignet sind. Das Handbuch enthält Informationen und Ressourcen zum Einrichten und Überprüfen der Lizenzierung Ihrer Benutzer, zum Zuweisen von Berechtigungen im Microsoft 365 Admin Center und zum Konfigurieren der Antischadsoftware-und Spam Richtlinien Ihrer Organisation im Security & Compliance Center. 
+Verwenden Sie das [Exchange Online Protection-Setuphandbuch](https://aka.ms/EOPguidance) zum Einrichten von EOP, indem Sie auswählen, welches der drei Bereitstellungsszenarien lokale Postfächer, Hybridpostfächer (Mischung aus lokalen und Cloudpostfächern) oder alle Cloudpostfächer für Ihre Organisation geeignet &mdash; &mdash; sind. Das Handbuch enthält Informationen und Ressourcen zum Einrichten und Überprüfen der Lizenzierung Ihres Benutzers, zum Zuweisen von Berechtigungen im Microsoft 365 Admin Center und zum Konfigurieren der Ansoftware- und Spamrichtlinien Ihrer Organisation im Security & Compliance Center. 
 
 ### <a name="microsoft-defender-for-office-365-advisor"></a>Microsoft Defender für Office 365 Advisor
 
-Der [Microsoft Defender für Office 365 Advisor](https://aka.ms/oatpsetup) schützt Ihre Organisation vor böswilligen Bedrohungen, die Ihre Umgebung möglicherweise über e-Mail-Nachrichten, Links und Tools für die Zusammenarbeit von Drittanbietern auftrifft. In diesem Leitfaden werden die Ressourcen und Informationen bereitgestellt, die Sie bei der Vorbereitung und Identifizierung des Verteidigers für Office 365 Plan entsprechend den Anforderungen Ihrer Organisation unterstützen. 
+Der [Microsoft Defender für Office 365-Ratgeber](https://aka.ms/oatpsetup) schützt Ihre Organisation vor böswilligen Bedrohungen, auf die Ihre Umgebung durch E-Mail-Nachrichten, Links und Tools für die Zusammenarbeit von Drittanbietern stoßen kann. Dieses Handbuch enthält die Ressourcen und Informationen, die Sie beim Vorbereiten und Identifizieren des Plans für Defender für Office 365 unterstützen, der den Anforderungen Ihrer Organisation entspricht. 
 
-### <a name="microsoft-information-protection-setup-guide"></a>Microsoft Information Protection-Setup Handbuch
+### <a name="microsoft-information-protection-setup-guide"></a>Einrichtungshandbuch für Microsoft Information Protection
 
-Erhalten Sie einen Überblick über die Funktionen, die Sie für Ihre Information Protection-Strategie anwenden können, damit Sie sicher sein können, dass Ihre vertraulichen Informationen geschützt sind. Verwenden Sie einen vierstufigen Lebenszyklusansatz, in dem Sie vertrauliche Informationen ermitteln, klassifizieren, schützen und überwachen. Das [Microsoft Information Protection-Installationshandbuch](https://aka.ms/mipsetupguide) enthält Anleitungen für die Ausführung der einzelnen Phasen.
+Erhalten Sie eine Übersicht über die Funktionen, die Sie auf Ihre Strategie zum Schutz von Informationen anwenden können, damit Sie sicher sein können, dass Ihre vertraulichen Informationen geschützt sind. Verwenden Sie einen vierstufigen Lebenszyklusansatz zum Ermitteln, Klassifizieren, Schützen und Überwachen von vertraulichen Informationen. Das [Setuphandbuch für Microsoft Information Protection](https://aka.ms/mipsetupguide) bietet Anleitungen zum Abschließen jeder dieser Phasen.
 
-### <a name="microsoft-information-governance-setup-guide"></a>Microsoft Information Governance-Setup Handbuch
+### <a name="microsoft-information-governance-setup-guide"></a>Einrichtungshandbuch für die Microsoft Information Governance
 
-Das [Microsoft Information Governance-Installationshandbuch](https://aka.ms/migsetupguide) enthält Informationen, die Sie zum Einrichten und Verwalten der Steuerungsstrategie Ihrer Organisation benötigen, um sicherzustellen, dass Ihre Daten gemäß den von Ihnen festgelegten spezifischen Lebenszyklusrichtlinien klassifiziert und verwaltet werden. In diesem Leitfaden erfahren Sie, wie Sie Bezeichnungen, Bezeichnungsrichtlinien und Aufbewahrungsrichtlinien erstellen, automatisch anwenden oder veröffentlichen, die auf wieder verwendbare Inhalte und Compliance-Datensätze Ihrer Organisation angewendet werden. Außerdem erhalten Sie Informationen zum Importieren von CSV-Dateien mit einem Dateiplan für Massen Szenarien oder zum manuellen anwenden auf einzelne Dokumente. 
+Das [Setuphandbuch](https://aka.ms/migsetupguide) für die Microsoft Information Governance stellt Ihnen die Informationen zur Verfügung, die Sie zum Einrichten und Verwalten der Steuerungsstrategie Ihrer Organisation benötigen, um sicherzustellen, dass Ihre Daten gemäß den von Ihnen festgelegten spezifischen Lebenszyklusrichtlinien klassifiziert und verwaltet werden. In diesem Leitfaden erfahren Sie, wie Sie Bezeichnungen, Bezeichnungsrichtlinien und Aufbewahrungsrichtlinien erstellen, automatisch anwenden oder veröffentlichen, die auf die wiederverwendbaren Inhalts- und Compliancedatensätze Ihrer Organisation angewendet werden. Außerdem erhalten Sie Informationen zum Importieren von CSV-Dateien mit einem Dateiplan für Massenszenarien oder zum manuellen Anwenden auf einzelne Dokumente. 
 
 ## <a name="guides-for-collaboration"></a>Leitfäden für die Zusammenarbeit
 
-### <a name="microsoft-365-apps-deployment-advisor"></a>Microsoft 365 apps-Bereitstellungs Ratgeber
+### <a name="microsoft-365-apps-deployment-advisor"></a>Bereitstellungsratgeber für Microsoft 365-Apps
 
-Der [Microsoft 365 apps-Bereitstellungs Ratgeber](https://aka.ms/OPPquickstartguide) hilft Ihnen, die Geräte ihrer Benutzer mit der neuesten Version von Office-Produkten wie Word, Excel, PowerPoint und OneNote zu versorgen. Sie erhalten Anleitungen zu den verschiedenen Bereitstellungsmethoden, die einfache Self-Install-Optionen für Enterprise-Bereitstellungen mit Verwaltungstools beinhalten. Die Anweisungen helfen Ihnen, Ihre Umgebung zu bewerten, Ihre spezifischen Bereitstellungsanforderungen zu ermitteln und die erforderlichen Support Tools zu implementieren, um eine erfolgreiche Installation sicherzustellen. 
+Mit dem Bereitstellungsratgeber für [Microsoft 365-Apps](https://aka.ms/OPPquickstartguide) können Sie die Geräte Ihrer Benutzer mit der neuesten Version von Office-Produkten wie Word, Excel, PowerPoint und OneNote ausführen. Sie erhalten Anleitungen zu den verschiedenen Bereitstellungsmethoden, die einfache Optionen für die Selbstinstallation in Unternehmensbereitstellungen mit Verwaltungstools enthalten. Die Anweisungen helfen Ihnen bei der Bewertung Ihrer Umgebung, ermitteln Ihre spezifischen Bereitstellungsanforderungen und implementieren die erforderlichen Supporttools, um eine erfolgreiche Installation sicherzustellen. 
 
-### <a name="office-mobile-apps-setup-assistant"></a>Office Mobile Apps-Setup-Assistent
+### <a name="mobile-apps-setup-guide"></a>Einrichtungshandbuch für mobile Apps
 
-Der [Office Mobile Apps-Setup-Assistent](https://aka.ms/officeappguidance) enthält Anweisungen zum herunterladen und Installieren von Office-Apps auf Ihren mobilen Windows-, IOS-und Android-Geräten. Dieses Handbuch enthält schrittweise Informationen zum herunterladen und Installieren von Microsoft 365-und Office 365-apps auf Ihren Telefon-und Tablet-Geräten.
+Das [Setuphandbuch für mobile Apps](https://aka.ms/officeappguidance) enthält Anweisungen zum Herunterladen und Installieren von Office-Apps auf Ihren mobilen Windows-, iOS- und Android-Geräten. In diesem Leitfaden finden Sie schrittweise Informationen zum Herunterladen und Installieren von Microsoft 365- und Office 365-Apps auf Ihrem Smartphone und Tablet.
 
-### <a name="microsoft-teams-setup-guide"></a>Microsoft Teams-Setup Handbuch
+### <a name="microsoft-teams-setup-guide"></a>Einrichtungshandbuch für Microsoft Teams
 
-Das [Microsoft Teams-Setup Handbuch](https://aka.ms/teamsguidance) bietet Ihrer Organisation Anleitungen zum Einrichten von Team Arbeitsbereichen, die in Echtzeit-Unterhaltungen über Messaging, Anrufe und Audio-oder Videobesprechungen für Team-und private Kommunikation gehostet werden. Sie erhalten die Anweisungen zum Bestimmen der Netzwerkanforderungen Ihres Unternehmens mithilfe des Network Planner-Tools und des Teams Advisor im Teamadministrator Center. Sobald die Bereitstellung abgeschlossen ist, enthält das Handbuch hilfreiche Ressourcen für die ersten Schritte mit Microsoft Teams.
+Das [Setuphandbuch](https://aka.ms/teamsguidance) für Microsoft Teams bietet Ihrer Organisation Anleitungen zum Einrichten von Teamarbeitsbereichs, die Echtzeitunterhaltungen durch Messaging, Anrufe sowie Audio- und Videobesprechungen für die Team- und private Kommunikation hosten. Sie erhalten die Anweisungen zum Ermitteln der Netzwerkanforderungen Ihrer Organisation mithilfe des Netzwerkplanertools und des Teams-Ratgebers im Teams Admin Center. Für die Zeit nach der Einrichtung enthält der Leitfaden hilfreiche Ressourcen für die ersten Schritte mit Teams.
 
-### <a name="sharepoint-setup-guide"></a>SharePoint-Einrichtungshandbuch
+### <a name="sharepoint-setup-guide"></a>Einrichtungshandbuch für SharePoint
 
-Das [SharePoint-Einrichtungshandbuch](https://aka.ms/spoguidance) hilft Ihnen beim Einrichten Ihres SharePoint-Dokumentspeichers und Inhaltsmanagements, beim Erstellen von Websites, beim Konfigurieren der externen Freigabe, beim Migrieren von Daten und beim Konfigurieren erweiterter Einstellungen sowie beim Benutzer Engagement und der Kommunikation in Ihrer Organisation. Befolgen Sie die Schritte zum Konfigurieren der Richtlinien für die Inhaltsfreigabe, wählen Sie die Synchronisierungstools für die Migration aus, und aktivieren Sie die Sicherheitseinstellungen für Ihre SharePoint-Umgebung. 
+Mit [dem Setuphandbuch](https://aka.ms/spoguidance) für SharePoint können Sie Ihre SharePoint-Dokumentspeicherung und -Inhaltsverwaltung einrichten, Websites erstellen, die externe Freigabe konfigurieren, Daten migrieren und erweiterte Einstellungen konfigurieren sowie die Benutzerbindung und -kommunikation innerhalb Ihrer Organisation fördern. Befolgen Sie die Schritte zum Konfigurieren Ihrer Richtlinien für Die Inhaltsfreigabeberechtigungen, wählen Sie Ihre Migrationssynchronisierungstools aus, und aktivieren Sie die Sicherheitseinstellungen für Ihre SharePoint-Umgebung. 
 
-### <a name="onedrive-setup-guide"></a>OneDrive-Setup Handbuch
+### <a name="onedrive-setup-guide"></a>#A0
 
-Verwenden Sie das [OneDrive-Setup Handbuch](https://aka.ms/ODfBquickstartguide) für die ersten Schritte mit OneDrive Dateispeicherung, Freigabe, Zusammenarbeit und Synchronisierungsfunktionen. OneDrive bietet einen zentralen Ort, an dem Benutzer Ihre Microsoft 365-apps-Dateien synchronisieren, die externe Freigabe konfigurieren, Benutzerdaten migrieren und erweiterte Sicherheits-und gerätezugriffseinstellungen konfigurieren können. Das OneDrive-Setup Handbuch kann mit einem OneDrive-Abonnement oder einem eigenständigen OneDrive-Plan bereitgestellt werden. 
+Verwenden Sie [das OneDrive-Setuphandbuch,](https://aka.ms/ODfBquickstartguide) um mit den Funktionen für Die Speicherung, Freigabe, Zusammenarbeit und Synchronisierung von OneDrive zu beginnen. OneDrive bietet einen zentralen Ort, an dem Benutzer ihre Microsoft 365-Apps-Dateien synchronisieren, die externe Freigabe konfigurieren, Benutzerdaten migrieren und erweiterte Sicherheits- und Gerätezugriffseinstellungen konfigurieren können. Das #A0 kann mit einem #A1 oder einem eigenständigen #A2 bereitgestellt werden. 
 
-### <a name="yammer-deployment-advisor"></a>Jammern-Bereitstellungs Ratgeber
+### <a name="yammer-deployment-advisor"></a>Yammer Bereitstellungsratgeber
 
-Verbinden Sie Ihre Organisation mit jammern und greifen Sie Sie an. Der [Jammer Bereitstellungs Ratgeber](https://aka.ms/yammerdeploymentguide) bereitet Ihr Jammer Netzwerk vor, indem Domänen hinzugefügt, Administratoren definiert und Jammer Netzwerke kombiniert werden. Sie erhalten Anleitungen zur Bereitstellung von jammern und passen dann das Aussehen, Konfigurieren von Sicherheit und Compliance an und verfeinern die Einstellungen.
+Verbinden Und interagieren Sie in Ihrer Organisation mit Yammer. Der [Yammer-Bereitstellungsratgeber](https://aka.ms/yammerdeploymentguide) bereitet Ihr Yammer durch Hinzufügen von Domänen, Definieren von Administratoren und Kombinieren Yammer vor. Sie erhalten Anleitungen zum Bereitstellen Yammer anschließenden Anpassen des Erscheinungsbilds, Konfigurieren von Sicherheit und Compliance und Verfeinern der Einstellungen.
 
 ## <a name="advanced-wizards"></a>Erweiterte Assistenten
 
-### <a name="in-place-upgrade-with-configuration-manager"></a>Direktes Upgrade mit Configuration Manager
+### <a name="in-place-upgrade-with-configuration-manager"></a>In-Place-Upgrade mit Configuration Manager
 
-Verwenden Sie das [direkte Upgrade mit dem Configuration Manager-Handbuch](https://aka.ms/win10upgradedemo) , wenn Sie Windows 7-und Windows 8.1-Geräte auf die neueste Version von Windows 10 aktualisieren. Sie verwenden das bereitgestellte Skript, um die erforderlichen Komponenten zu überprüfen und ein direktes Upgrade automatisch zu konfigurieren.
+Verwenden Sie [das Handbuch "In-Place upgrade with Configuration Manager"](https://aka.ms/win10upgradedemo) beim Upgrade von Windows 7- und Windows 8.1-Geräten auf die neueste Version von Windows 10. Verwenden Sie das bereitgestellte Skript, um die Voraussetzungen zu überprüfen und automatisch ein in-Place-Upgrade zu konfigurieren.
 
 ### <a name="deploy-office-to-your-users"></a>Bereitstellen von Office für Ihre Benutzer
 
-Bereitstellen von Office-Apps aus der Cloud mit der Möglichkeit, Ihre Installation mithilfe des Office-Bereitstellungstools anzupassen. Mit dem [Office-Bereitstellungshandbuch für Benutzer ](https://aka.ms/proplusodt) können Sie eine angepasste Office-Konfiguration mit erweiterten Einstellungen erstellen oder eine vordefinierte Empfohlene Konfiguration verwenden. Unabhängig davon, ob Ihre Benutzer eine Selbstinstallation durchführen oder Sie einzeln oder in Massen für Ihre Benutzer bereitstellen, bietet Ihnen dieser erweiterte Assistent schrittweise Anweisungen, um Benutzern eine auf Ihre Organisation zugeschnittene Office-Installation zu ermöglichen.
+Bereitstellen von Office-Apps aus der Cloud mit der Möglichkeit, Ihre Installation mithilfe des Office-Bereitstellungstools anzupassen. Das [Handbuch "Bereitstellen von Office ](https://aka.ms/proplusodt) für Ihre Benutzer" hilft Ihnen beim Erstellen einer angepassten Office-Konfiguration mit erweiterten Einstellungen, oder Sie können eine vordefinierte empfohlene Konfiguration verwenden. Unabhängig davon, ob Ihre Benutzer eine Selbstinstallation durchführen oder sie einzeln oder als Massenvorgang für Ihre Benutzer bereitstellen, bietet ihnen dieser erweiterte Assistent schrittanleitungen, um Benutzern eine auf Ihre Organisation zugeschnittene Office-Installation zu ermöglichen.
 
 ### <a name="deploy-office-to-remote-users"></a>Bereitstellen von Office für Remotebenutzer
 
-Da es sich nun um eine Remote Funktion handelt, müssen Benutzer die Office-Einstellungen Ihrer Organisation empfangen, wenn Sie nicht mit Ihrem internen Netzwerk oder mit ihren eigenen Geräten verbunden sind. 
+Da remote arbeiten nun die Norm ist, müssen Benutzer die Office-Einstellungen Ihrer Organisation erhalten, wenn sie nicht mit Ihrem internen Netzwerk verbunden sind oder ihre eigenen Geräte verwenden. 
 
-Erstellen Sie mithilfe des [Handbuchs Office für Remotebenutzer bereitstellen](https://aka.ms/officeremoteinstall) eine angepasste Office-Installation, und senden Sie Benutzern dann ein generiertes PowerShell-Skript, mit dem Office mit Ihrer Konfiguration nahtlos installiert wird.
+Verwenden Sie die Anleitung zum Bereitstellen von [Office](https://aka.ms/officeremoteinstall) für Remotebenutzer, um eine angepasste Office-Installation zu erstellen und benutzern dann ein generiertes PowerShell-Skript zu senden, das Office nahtlos mit Ihrer Konfiguration installiert.
 
-### <a name="deploy-and-update-microsoft-365-apps-with-configuration-manager"></a>Bereitstellen und Aktualisieren von Microsoft 365-apps mit Configuration Manager
+### <a name="deploy-and-update-microsoft-365-apps-with-configuration-manager"></a>Bereitstellen und Aktualisieren von Microsoft 365-Apps mit Configuration Manager
 
-Für Organisationen, die Configuration Manager verwenden, können Sie die [Microsoft 365-apps mit dem Configuration Manager-Ratgeber bereitstellen und aktualisieren](https://aka.ms/oppinstall) , um ein Skript zu erstellen, das Ihre Microsoft 365-apps-Bereitstellung mithilfe von bewährten Methoden für die Entwickler von Kurzarbeitern automatisch konfigurieren wird. Verwenden Sie dieses Handbuch, um Ihre Bereitstellungsgruppen zu erstellen, Ihre Office-Apps und-Features anzupassen, dynamische oder schlanke Installationen zu konfigurieren und dann das Skript auszuführen, um die Anwendungen, automatischen Bereitstellungsregeln und gerätesammlungen zu erstellen, die Sie für Ihre Bereitstellung benötigen. 
+Für Organisationen, die Configuration Manager verwenden, können Sie den Ratgeber "Bereitstellen und Aktualisieren von [Microsoft 365-Apps mit Configuration Manager"](https://aka.ms/oppinstall) verwenden, um ein Skript zu generieren, mit dem Ihre Microsoft 365-Apps-Bereitstellung automatisch mithilfe bewährter Methoden konfiguriert wird, die von den FastTrack-Technikern empfohlen werden. Verwenden Sie dieses Handbuch, um Bereitstellungsgruppen zu erstellen, Ihre Office-Apps und -Features anzupassen, dynamische oder schlanke Installationen zu konfigurieren und dann das Skript zum Erstellen der Anwendungen, automatischen Bereitstellungsregeln und Gerätesammlungen auszuführen, die Sie für Ihre Bereitstellung benötigen. 

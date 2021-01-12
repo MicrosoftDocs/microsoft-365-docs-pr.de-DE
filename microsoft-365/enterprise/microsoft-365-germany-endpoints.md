@@ -1,5 +1,5 @@
 ---
-title: Office 365-Endpunkte für Deutschland
+title: Office 365-Endpunkte in Deutschland
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -18,20 +18,20 @@ ms.custom:
 - seo-marvel-apr2020
 search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
-description: In diesem Artikel finden Sie Endpunkte, die für Kunden, die Office 365 in Deutschland verwenden, erreichbar sind.
+description: In diesem Artikel finden Sie Endpunkte, die für Kunden mit Office 365 in Deutschland erreichbar sind.
 hideEdit: true
 ms.openlocfilehash: 7c4a65780892d6e257c1c03832cd640bdd4573f3
 ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "49787915"
 ---
-# <a name="office-365-germany-endpoints"></a>Endpunkte – Office 365 Deutschland
+# <a name="office-365-germany-endpoints"></a>Endpunkte für Office 365 Deutschland
 
- *Gilt für: Office 365-Administrator*
+ *Gültig für Office 365 Admin*
 
-Office 365 erfordert eine Internetverbindung. Die unten aufgeführten Endpunkte sollten nur für Kunden erreichbar sein, die **Office 365 -Pläne** für Deutschland verwenden.
+Office 365 setzt eine Internetverbindung voraus. Die folgenden Endpunkte sollten nur für Kunden mit **Office 365 Deutschland**-Plänen erreichbar sein.
   
  **Office 365-Endpunkte:** [Weltweit (einschließlich GCC)](urls-and-ip-address-ranges.md)  | [Office 365, betrieben von 21Vianet](urls-and-ip-address-ranges-21vianet.md)  | *Office 365 Deutschland* | [Office 365 U.S. Government DoD](microsoft-365-u-s-government-dod-endpoints.md) | [Office 365 U.S. Government GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md)  |
   
@@ -39,11 +39,11 @@ Office 365 erfordert eine Internetverbindung. Die unten aufgeführten Endpunkte 
 |:-----|:-----|
 |**Letzte Aktualisierung:** 04.01.2021 – ![RSS](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Abonnement des Änderungsprotokolls](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) |**Download:** alle erforderlichen und optionalen Ziele in einer Liste im [JSON-Format](https://endpoints.office.com/endpoints/Germany?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> |
 
-Beginnen Sie [mit der Verwaltung von Office 365-Endpunkten,](managing-office-365-endpoints.md) um unsere Empfehlungen für die Verwaltung der Netzwerkkonnektivität mithilfe dieser Daten zu verstehen. Endpunktdaten werden zu Beginn jedes Monats mit neuen IP-Adressen und URLs aktualisiert, die 30 Tage vor ihrer Aktiven veröffentlicht werden. Dadurch können Kunden, die noch nicht über automatisierte Updates verfügen, ihre Prozesse abschließen, bevor eine neue Konnektivität erforderlich ist. Endpunkte können auch während des Monats aktualisiert werden, wenn dies erforderlich ist, um Supporteskalen, Sicherheitsvorfälle oder andere sofortige betriebliche Anforderungen zu erfüllen. Sie können immer auf das [Änderungsprotokollabonnement verweisen.](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)
+Beginnen Sie mit [Verwalten von Office 365-Endpunkten](managing-office-365-endpoints.md), um unsere Empfehlungen zum Verwalten der Netzwerkverbindungen anhand dieser Daten zu verstehen. Endpunktdaten werden zu Beginn jedes Monats 30 Tage vor ihrer Aktivierung mit neuen IP-Adressen und URLs aktualisiert und veröffentlicht. Auf diese Weise können Kunden, die noch nicht über automatisierte Updates verfügen, Ihre Prozesse abschließen, bevor eine neue Verbindung erforderlich ist. Endpunktdaten werden unter Umständen auch bei Bedarf aktualisiert, um Support-Probleme, Sicherheitsvorfälle oder andere sofortige betriebliche Erfordernisse zu adressieren. Sie können jederzeit auf das [Änderungsprotokoll-Abonnement](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) zurückgreifen.
 
-Die auf dieser Seite unten angezeigten Daten werden alle von den REST-basierten Webdiensten generiert. Wenn Sie ein Skript oder ein Netzwerkgerät für den Zugriff auf diese Daten verwenden, sollten Sie direkt zum [Webdienst](microsoft-365-ip-web-service.md) wechseln.
+Die auf dieser Seite unten angezeigten Daten werden alle aus den REST-basierten Webdiensten generiert. Wenn Sie für den Zugriff auf diese Daten ein Skript oder ein Netzwerkgerät verwenden, sollten Sie direkt zum [Webdienst](microsoft-365-ip-web-service.md) wechseln.
 
-In den unten aufgeführten Endpunktdaten sind die Anforderungen für die Konnektivität zwischen dem Computer eines Benutzers und Office 365 aufgeführt. Es enthält keine Netzwerkverbindungen von Microsoft zu einem Kundennetzwerk, manchmal auch als hybride oder eingehende Netzwerkverbindungen bezeichnet.
+Die nachstehenden Endpunktdaten zeigen die Voraussetzungen für die Verbindung vom Computer eines Benutzers zu Office 365 auf. Sie umfassen keine Netzwerkverbindungen von Microsoft mit einem Kundennetzwerk, manchmal auch als hybride oder eingehende Netzwerkverbindungen bezeichnet.
 
 Die Endpunkte sind in vier Dienstbereichen zusammengefasst. Die ersten drei Dienstbereiche können zu Konnektivitätszwecken unabhängig voneinander ausgewählt werden. Beim vierten Dienstbereich besteht eine gemeinsame Abhängigkeit (als Microsoft 365 Common und Office bezeichnet); er muss immer über Netzwerkkonnektivität verfügen.
 
