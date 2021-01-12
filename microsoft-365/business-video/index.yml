@@ -1,10 +1,10 @@
 ### YamlMime:Hub
-title: Microsoft 365 Small Business Training
-summary: Hier erfahren Sie, wie Sie Microsoft 365 für Ihr Unternehmen einrichten und verwalten.
+title: Microsoft 365 Small Business-Schulung
+summary: Erfahren Sie, wie Sie Microsoft 365 für Ihr Unternehmen einrichten und verwalten.
 brand: m365
 metadata:
-  title: Microsoft 365 Small Business Training
-  description: Einrichten und Verwalten von Microsoft 365 im Microsoft 365 Admin Center.
+  title: Microsoft 365 Small Business-Schulung
+  description: Richten Sie Microsoft 365 im Microsoft 365 Admin Center ein und verwalten Sie es.
   ms.service: O365-administration
   ms.prod: microsoft-365-business
   ms.topic: hub-page
@@ -13,17 +13,17 @@ metadata:
   ms.date: 12/16/2020
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: d66e3a5c56fbc6676a21ec9729d44fac64e3abe3
-  ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+  ms.openlocfilehash: 2a874179c9a3da778ff0757d9a883af44a462141
+  ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 12/17/2020
-  ms.locfileid: "49701960"
+  ms.lasthandoff: 01/11/2021
+  ms.locfileid: "49794160"
 productDirectory:
   items:
   - title: Erste Schritte
     imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
-    summary: Planen Sie den Wechsel zu Microsoft 365 for Business.
+    summary: Planen Sie Ihren Wechsel zu Microsoft 365 Business.
     url: what-is-microsoft-365.md
   - title: Einrichten von Microsoft 365 für Unternehmen
     imageSrc: https://docs.microsoft.com/office/media/icons/add-to-cloud-blue.svg
@@ -31,27 +31,27 @@ productDirectory:
     url: sign-up.md
   - title: Einrichten von Computern
     imageSrc: https://docs.microsoft.com/office/media/icons/device-desktop-download-blue.svg
-    summary: Installieren von Office, Einrichten von e-Mail, Migrieren von Dateien...
+    summary: Installieren von Office, Einrichten von E-Mails, Migrieren von Dateien...
     url: upgrade.md
   - title: Einrichten mobiler Geräte
     imageSrc: https://docs.microsoft.com/office/media/icons/device-mobile-download-blue.svg
-    summary: Installieren von Office-Apps auf mobilen Geräten
+    summary: Installieren Sie Office-Apps auf mobilen Geräten.
     url: work-from-anywhere.md
-  - title: Zusammenarbeit mit anderen Personen
+  - title: Zusammenarbeiten mit anderen Personen
     imageSrc: https://docs.microsoft.com/office/media/icons/collaborate-blue.svg
-    summary: Arbeiten mit Mitarbeitern und Kunden in Microsoft Teams.
+    summary: Arbeiten mit Mitarbeitern und Kunden in Teams.
     url: collab-outlook-teams.md
   - title: Speichern und Freigeben von Dateien
     imageSrc: https://docs.microsoft.com/office/media/icons/cloud-storage-folder-blue.svg
-    summary: Sicheres Speichern von Dateien und Zugriff von überall aus.
+    summary: Speichern Sie Dateien sicher und greifen Sie von überall aus zu.
     url: overview-file-sharing.md
   - title: Einrichten von Business Voice
     imageSrc: https://docs.microsoft.com/office/media/icons/call-phone-blue.svg
-    summary: Einrichten von Telefondienst und Konferenzen.
+    summary: Richten Sie den Telefondienst und Konferenzen ein.
     url: business-voice.md
-  - title: Einrichten von Geschäfts-apps
+  - title: Einrichten von Geschäfts-Apps
     imageSrc: https://docs.microsoft.com/office/media/icons/task-list-planning-blue.svg
-    summary: Einrichten und Informationen zu Buchungen, Listen, Aufgaben...
+    summary: Einrichten und Erfahren Sie mehr über Bookings, Listen, Aufgaben...
     url: overview-bookings.md
   - title: Verwalten Ihres Abonnements
     imageSrc: https://docs.microsoft.com/office/media/icons/settings.svg
@@ -63,22 +63,22 @@ productDirectory:
     url: secure-win-10-pro-devices.md
   - title: Absichern Ihres Unternehmens
     imageSrc: https://docs.microsoft.com/office/media/icons/security-blue.svg
-    summary: Einrichten von Sicherheits-und Kompatibilitätsfeatures
+    summary: Richten Sie Sicherheits- und Compliancefeatures ein.
     url: overview-m365-security.md
   - title: Anfordern von Support
     imageSrc: https://docs.microsoft.com/office/media/icons/headset-blue.svg
-    summary: Erhalten Sie Hilfe zu Microsoft 365 for Business.
+    summary: Erhalten Sie Hilfe zu Microsoft 365 Business.
     url: find-help-answers.md
 additionalContent:
   sections:
   - title: Weitere Informationen
     items:
     - title: Informationen zu Office
-      summary: Hier erfahren Sie, wie Sie Word, Excel, PowerPoint und andere Office-Apps verwenden.
+      summary: Erfahren Sie, wie Sie Word, Excel, PowerPoint und andere Office-Apps verwenden.
       url: https://support.microsoft.com/training
     - title: Wechseln von Google Workspace
-      summary: Erfahren Sie, wie Sie zu Microsoft 365 for Business wechseln.
-      url: https://support.microsoft.com/office/cff9f9fb-956e-4cb9-8b64-d7ebc1911123
-    - title: Suchen nach weiteren Administrator Ressourcen
-      summary: Wechseln Sie zur Hilfe Website von Microsoft 365 Admin Center.
+      summary: Erfahren Sie, wie Sie zu Microsoft 365 Business wechseln.
+      url: moveto-microsoft-365/move-from-google-workspace-overview.md
+    - title: Weitere Administratorressourcen finden
+      summary: Wechseln Sie zur Hilfewebsite des Microsoft 365 Admin Centers.
       url: ../admin/index.yml
