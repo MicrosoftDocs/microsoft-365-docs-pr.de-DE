@@ -1,6 +1,6 @@
 ---
-title: Bereitschafts Bewertungstool
-description: Erläutert die Prüfungen, die vom Tool ausgeführt werden, und die Bedeutung der Ergebnisse.
+title: Tool für die Bereitschaftsbewertung
+description: Erläutert die Vom Tool ausgeführten Prüfungen und die Bedeutung der Ergebnisse
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -9,77 +9,77 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 491422126f7d159689e7995b69bef0f395491dcb
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: 9c19a037ec280320d0800fe2c65f595e4b1010dd
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527709"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840361"
 ---
-# <a name="readiness-assessment-tool"></a>Bereitschafts Bewertungstool
+# <a name="readiness-assessment-tool"></a>Tool für die Bereitschaftsbewertung
 
-Für eine möglichst reibungslose Benutzerfreundlichkeit bei der Registrierung in Microsoft Managed Desktop gibt es eine Reihe von Einstellungen und anderen Parametern, die Sie vor der Zeit festlegen müssen. Sie können dieses Tool verwenden, um diese Einstellungen zu überprüfen und detaillierte Schritte zur Behebung der nicht richtigen Informationen zu erhalten.
+Für eine möglichst reibungslose Benutzererfahrung bei der Registrierung bei Microsoft Managed Desktop gibt es wichtige Einstellungen und andere Parameter, die Sie im Voraus festlegen müssen. Sie können dieses Tool verwenden, um diese Einstellungen zu überprüfen und detaillierte Schritte zum Beheben nicht richtiger Probleme zu erhalten.
 
-Das Tool überprüft die Einstellungen in Microsoft Endpoint Manager (insbesondere Microsoft InTune), Azure Active Directory (Azure AD) und Microsoft 365, um sicherzustellen, dass Sie mit dem verwalteten Desktop von Microsoft arbeiten können. Microsoft Managed Desktop behält die Daten, die diesen Prüfungen zugeordnet sind, 12 Monate nach dem letzten Ausführen einer Überprüfung in ihrer Azure AD Organisation (Mandant). Nach 12 Monaten behalten wir es in der nicht identifizierten Form bei.  Sie können auswählen, dass die erfassten Daten gelöscht werden sollen.
+Das Tool überprüft Einstellungen in Microsoft Endpoint Manager (insbesondere Microsoft Intune), Azure Active Directory (Azure AD) und Microsoft 365, um sicherzustellen, dass sie mit Microsoft Managed Desktop funktionieren. Microsoft Managed Desktop bewahrt die daten, die diesen Überprüfungen zugeordnet sind, 12 Monate nach dem letzten Ausführen einer Überprüfung in Ihrer Azure AD-Organisation (Mandant) auf. Nach 12 Monaten behalten wir sie in nicht identifizierter Form bei.  Sie können die gesammelten Daten löschen.
 
-Jeder Benutzer mit mindestens der InTune-Administrator Rolle kann dieses Tool ausführen, aber zwei der Prüfungen ([Richtlinien für bedingten Zugriff](readiness-assessment-fix.md#conditional-access-policies) und mehrstufige [Authentifizierung](readiness-assessment-fix.md#multifactor-authentication) erfordern zusätzliche Berechtigungen).
+Jeder Benutzer, der mindestens die Rolle des Intune-Administrators hat, kann dieses Tool ausführen, aber zwei der Prüfungen[(](readiness-assessment-fix.md#conditional-access-policies) Richtlinien für bedingten Zugriff und mehrstufige Authentifizierung [erfordern](readiness-assessment-fix.md#multifactor-authentication) mehr Berechtigungen.
  
-Das Assessment-Tool überprüft diese Elemente:
+Das Bewertungstool überprüft diese Elemente:
 
-## <a name="microsoft-intune-settings"></a>Microsoft InTune-Einstellungen
+## <a name="microsoft-intune-settings"></a>Microsoft Intune-Einstellungen
 
-|Prüfen  |Beschreibung  |
+|Scheck  |Beschreibung  |
 |---------|---------|
-|Autopilot-Bereitstellungsprofil     | Überprüft, ob die Zuweisung des Autopilot-Bereitstellungs Profils für alle Geräte nicht gilt (das Profil *sollte keinem Microsoft* Managed Desktop-Gerät zugewiesen werden.)       |
-|Zertifikat-Konnektoren     | Überprüft den Status von Zertifikat-Konnektoren, um sicherzustellen, dass Sie aktiv sind   |
-|Bedingter Zugriff     | Überprüft, ob Richtlinien für bedingten Zugriff nicht allen Benutzern zugewiesen sind (Richtlinien für den bedingten Zugriff sollten *nicht* Microsoft Managed Desktop-Dienstkonten zugewiesen werden).    |
-|Geräte Konformitätsrichtlinien     | Überprüft, ob InTune-Konformitätsrichtlinien nicht allen Benutzern zugewiesen sind (die Richt *Linien sollten keinem* Microsoft Managed Desktop Devices zugewiesen werden.)    |
-|Geräte Konfigurationsprofile     | Überprüft, ob Konfigurationsprofile nicht allen Benutzern oder allen Geräten zugewiesen sind (Konfigurations *Profile sollten keinem* Microsoft Managed Desktop-Gerät zugewiesen werden.)     |
-|Einschränkungen für Gerätetypen     | Überprüft, ob Windows 10-Geräte in Ihrer Organisation in InTune registriert werden dürfen.        |
-|Seite "Registrierungs Status"     | Bestätigt, dass die Seite Registrierungs Status nicht aktiviert ist      |
-|InTune-Registrierung     | Überprüft, ob Windows 10-Geräte in ihrer Azure AD Organisation automatisch in InTune registriert sind.         |
-|Microsoft Store für Unternehmen     | Bestätigt, dass Microsoft Store for Business mit InTune aktiviert und synchronisiert ist.        |
-|Mehrstufige Authentifizierung | Überprüft, ob die mehrstufige Authentifizierung nicht auf von Microsoft verwaltete Desktop Dienstkonten angewendet wird.
-|PowerShell-Skripts     | Überprüft, ob Windows PowerShell Skripts *nicht* auf eine Weise zugewiesen werden, die auf Microsoft Managed Desktop-Geräte ausgerichtet ist.    |
-|Region     | Überprüft, ob Ihre Region von Microsoft Managed Desktop unterstützt wird.        |
-|Sicherheitsbasislinien     | Überprüft, ob das Sicherheitsbasis Profil nicht auf alle Benutzer oder alle Geräte ausgerichtet ist (Sicherheitsbasislinien sollten *nicht* auf Microsoft-verwaltete Desktop Geräte abzielen.)       |
-|Windows-apps     | Überprüfen der apps, die Sie Microsoft Managed Desktop-Geräten zuweisen möchten      |
-|Windows Hello for Business     | Überprüft, ob Windows Hello for Business aktiviert ist.        |
-|Windows 10-Update Ring     | Überprüft, ob die Richtlinie "Windows 10 Update Ring" von InTune nicht auf alle Benutzer oder alle Geräte ausgerichtet ist (die Richtlinie sollte *nicht* auf Microsoft verwaltete Desktop Geräte abzielen.)     |
+|Autopilot-Bereitstellungsprofil     | Überprüft, ob die Zuweisung des Autopilot-Bereitstellungsprofils nicht  für alle Geräte gilt (das Profil sollte keinem Microsoft Managed Desktop zugewiesen werden.)       |
+|Zertifikatconnectors     | Überprüft den Status von Zertifikatconnectors, um sicherzustellen, dass sie aktiv sind.   |
+|Bedingter Zugriff     | Überprüft, ob Richtlinien für bedingten Zugriff nicht allen  Benutzern zugewiesen sind (Richtlinien für bedingten Zugriff sollten nicht Microsoft Managed Desktop-Dienstkonten zugewiesen werden.)    |
+|Gerätekonformitätsrichtlinien     | Überprüft, ob Intune-Compliance-Richtlinien nicht allen  Benutzern zugewiesen sind (die Richtlinien sollten keinem Microsoft Managed Desktop-Gerät zugewiesen werden.)    |
+|Gerätekonfigurationsprofile     | Überprüft, ob Konfigurationsprofile nicht allen Benutzern oder allen  Geräten zugewiesen sind (Konfigurationsprofile sollten keinem Microsoft Managed Desktop zugewiesen werden.)     |
+|Gerätetypeinschränkungen     | Überprüft, ob Windows 10-Geräte in Ihrer Organisation in Intune registriert werden dürfen.        |
+|Seite "Registrierungsstatus"     | Überprüft, ob die Seite "Registrierungsstatus" nicht aktiviert ist      |
+|Registrierung in Intune     | Überprüft, ob Windows 10-Geräte in Ihrer Azure AD-Organisation automatisch in Intune registriert sind         |
+|Microsoft Store für Unternehmen     | Überprüft, ob der Microsoft Store für Unternehmen aktiviert und mit Intune synchronisiert wurde        |
+|Mehrstufige Authentifizierung | Überprüft, ob die mehrstufige Authentifizierung nicht auf Microsoft Managed Desktop -Dienstkonten angewendet wird.
+|PowerShell-Skripts     | Überprüft, ob Windows PowerShell Skripts *nicht* auf eine Weise zugewiesen werden, die auf Microsoft Managed Desktop-Geräte zu zielen wäre.    |
+|Region     | Überprüft, ob Ihre Region von Microsoft Managed Desktop unterstützt wird        |
+|Sicherheitsgrundwerte     | Überprüft, ob das Sicherheitsbaselineprofil nicht für alle Benutzer  oder alle Geräte gilt (Sicherheitsgrundlinienrichtlinien sollten nicht auf Microsoft Managed Desktop-Geräte ausgerichtet sein.)       |
+|Windows-Apps     | Überprüfen, welche Apps Sie Microsoft Managed Desktop-Geräten zuweisen möchten      |
+|Windows Hello for Business     | Überprüft, ob Windows Hello for Business aktiviert ist        |
+|Windows 10-Updatering     | Überprüft, ob die Richtlinie "Windows 10-Updatering" von Intune nicht für  alle Benutzer oder alle Geräte gilt (die Richtlinie sollte nicht für Microsoft Managed Desktop-Geräte verwendet werden.)     |
 
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory-Einstellungen
 
-|Prüfen  |Beschreibung  |
+|Scheck  |Beschreibung  |
 |---------|---------|
-|Ad-hoc-Abonnements für das Enterprise-Status-Roaming     | Gibt an, wie eine Einstellung überprüft wird, die (wenn Sie auf "false" festgelegt ist) möglicherweise verhindert, dass das Roaming von Unternehmensstatus ordnungsgemäß funktioniert.  |
-|Enterprise State Roaming     | Gibt an, wie Sie überprüfen, ob das Enterprise-Status-Roaming aktiviert ist.       |
-|Lizenzen     | Überprüft, ob Sie die erforderlichen [Lizenzen](prerequisites.md#more-about-licenses) erhalten haben.         |
-|Mehrstufige Authentifizierung     | Überprüft, ob die mehrstufige Authentifizierung nicht auf alle Benutzer angewendet wird (mehrstufige Authentifizierung darf nicht versehentlich auf von Microsoft verwaltete Desktop Dienstkonten angewendet werden.)|
-|Namen von Sicherheitskonten   | Überprüft, ob keine Benutzernamen mit denen in Konflikt stehen, die von Microsoft verwaltete Desktop zur eigenen Verwendung reserviert werden.        |
-|Sicherheitsadministrator Rollen     | Bestätigt, dass Benutzern mit dem Sicherheits Leser, dem Sicherheits Operator oder den globalen Leser Rollen diese Rollen in Microsoft Defender für Endpoint zugewiesen wurden.         |
-|Sicherheitsstandards | Überprüft, ob in ihrer Azure AD Organisation Sicherheitsstandards in Azure aktiviert sind Active Directory |
-|Zurücksetzen von Kennwörtern durch den Benutzer     | Bestätigt, dass Self-Service Password Reset aktiviert ist        |
-|Standard Benutzerrolle     | Überprüft, ob Benutzer Standardbenutzer sind und nicht über lokale Administratorrechte verfügen.         |
+|Ad-hoc-Abonnements für Enterprise State Roaming     | Empfiehlt, eine Einstellung zu überprüfen, die (bei Festlegung auf "false") möglicherweise verhindert, dass Enterprise State Roaming ordnungsgemäß funktioniert.  |
+|Enterprise State Roaming     | Empfiehlt, zu überprüfen, ob Enterprise State Roaming aktiviert ist.       |
+|Lizenzen     | Überprüft, ob Sie die erforderlichen Lizenzen [erhalten haben](prerequisites.md#more-about-licenses)         |
+|Mehrstufige Authentifizierung     | Überprüft, ob die mehrstufige Authentifizierung nicht auf alle Benutzer angewendet wird (die mehrstufige Authentifizierung darf nicht versehentlich auf Microsoft Managed Desktop-Dienstkonten angewendet werden.)|
+|Namen von Sicherheitskontos   | Überprüft, ob keine Benutzernamen mit denen in Konflikt stehen, die Microsoft Managed Desktop für die eigene Verwendung reserviert.        |
+|Sicherheitsadministratorrollen     | Überprüft, ob Benutzern mit Rollen "Sicherheitsleseprogramm", "Sicherheitsoperator" oder "Globaler Leser" diese Rollen in Microsoft Defender for Endpoint zugewiesen wurden.         |
+|Sicherheitsstandards | Überprüft, ob in Ihrer Azure AD-Organisation Sicherheitseinstellungen in Azure Active Directory aktiviert sind. |
+|Zurücksetzen von Kennwörtern durch den Benutzer     | Überprüft, ob die Self-Service-Kennwortzurücksetzung aktiviert ist.        |
+|Standardbenutzerrolle     | Überprüft, ob Benutzer Standardbenutzer sind und nicht über lokale Administratorrechte verfügen         |
 
 
-## <a name="microsoft-365-apps-for-enterprise-settings"></a>Microsoft 365-Apps für Enterprise-Einstellungen
+## <a name="microsoft-365-apps-for-enterprise-settings"></a>Einstellungen für Microsoft 365 Apps for Enterprise
 
-|Prüfen  |Beschreibung  |
+|Scheck  |Beschreibung  |
 |---------|---------|
-|OneDrive for Business     | Überprüft, ob OneDrive für Unternehmen nicht unterstützte Einstellungen verwendet.        |
+|OneDrive for Business     | Überprüft, ob OneDrive for Business nicht unterstützte Einstellungen verwendet.        |
 
 
-Für jede Überprüfung meldet das Tool eine von vier möglichen Ergebnissen:
+Für jede Überprüfung gibt das Tool eines von vier möglichen Ergebnissen an:
 
 
 |Ergebnis  |Bedeutung  |
 |---------|---------|
 |Bereit     | Es ist keine Aktion erforderlich, bevor Sie die Registrierung abschließen.        |
-|Empfehlung    | Führen Sie die Schritte im Tool aus, um die besten Erfahrungen mit der Registrierung und für Benutzer zu erzielen. Sie *können* die Registrierung abschließen, aber Sie müssen diese Probleme beheben, bevor Sie das erste Gerät bereitstellen.        |
-|Nicht bereit | Die *Registrierung schlägt fehl* , wenn Sie diese Probleme nicht beheben. Befolgen Sie die Schritte im Tool, um Sie zu beheben.        |
-|Fehler | Die von Ihnen verwendete Azure Active Director (AD)-Rolle verfügt nicht über ausreichende Berechtigungen zum Ausführen dieser Überprüfung. |
+|Empfehlung    | Führen Sie die Schritte im Tool aus, um die beste Erfahrung mit der Registrierung und für Benutzer zu bieten. Sie *können* die Registrierung abschließen, aber Sie müssen diese Probleme beheben, bevor Sie Ihr erstes Gerät bereitstellen.        |
+|Nicht bereit | *Die Registrierung wird fehlschlagen,* wenn Sie diese Probleme nicht beheben. Führen Sie die Schritte im Tool aus, um sie zu beheben.        |
+|Error | Die Azure Active Director (AD)-Rolle, die Sie verwenden, verfügt nicht über ausreichende Berechtigungen, um diese Überprüfung ausführen zu können. |
 
 ## <a name="after-enrollment"></a>Nach der Registrierung
 
-Nachdem Sie die Registrierung in Microsoft Managed Desktop abgeschlossen haben, denken Sie daran, zurückzugehen und bestimmte InTune-und Azure AD-Einstellungen anzupassen. Ausführliche Informationen finden Sie unter [Anpassen von Einstellungen nach der Registrierung](../get-started/conditional-access.md).
+Nachdem Sie die Registrierung bei Microsoft Managed Desktop abgeschlossen haben, denken Sie daran, zurück zu gehen und bestimmte Intune- und Azure AD-Einstellungen anzupassen. Weitere Informationen finden Sie unter ["Einstellungen nach der Registrierung anpassen".](../get-started/conditional-access.md)

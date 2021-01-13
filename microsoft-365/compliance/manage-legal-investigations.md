@@ -1,5 +1,5 @@
 ---
-title: Verwalten von rechtlichen Untersuchungen in Microsoft 365
+title: Verwalten rechtlicher Untersuchungen in Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,62 +16,62 @@ search.appverid:
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
-description: Verwenden Sie eDiscovery-Fälle im Security & Compliance Center in Office 365, um die rechtliche Untersuchung Ihres Unternehmens zu verwalten.
-ms.openlocfilehash: edc9835cdbefa611af4c0906be5d3e1d0404c635
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+description: Verwenden Sie eDiscovery-Fälle im Security & Compliance Center in Office 365, um die rechtliche Untersuchung Ihrer Organisation zu verwalten.
+ms.openlocfilehash: 7a02bd47f93a85e643694efea4dcc140847916e0
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285651"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840704"
 ---
-# <a name="manage-legal-investigations-in-microsoft-365"></a>Verwalten von rechtlichen Untersuchungen in Microsoft 365
+# <a name="manage-legal-investigations-in-microsoft-365"></a>Verwalten rechtlicher Untersuchungen in Microsoft 365
 
-Organisationen haben viele Gründe, auf einen Rechtsstreit mit bestimmten Führungskräften oder anderen Mitarbeitern in Ihrer Organisation zu reagieren. Dies kann dazu führen, dass weitere Ermittlungs spezifische Informationen in e-Mails, Dokumenten, Chats und anderen Inhaltsspeicherorten, die von Personen in ihren täglichen Arbeitsaufgaben verwendet werden, schnell gefunden und aufbewahrt werden. Sie können diese und viele andere ähnliche Aktivitäten mithilfe der eDiscovery Case-Tools im Security and Compliance Center ausführen.
+Organisationen haben viele Gründe, auf einen Rechtsfall zu reagieren, an dem bestimmte Führungskräfte oder andere Mitarbeiter in Ihrer Organisation beteiligt sind. Dies kann eine schnelle Suche und Aufbewahrung für weitere untersuchungsspezifische Informationen in E-Mails, Dokumenten, Chatunterhaltungen und anderen Inhaltsspeicherorten sein, die von Personen in ihren täglichen Aufgaben verwendet werden. Sie können diese und viele andere ähnliche Aktivitäten mithilfe der eDiscovery-Falltools im Security and Compliance Center ausführen.
   
-**Möchten Sie wissen, wie Microsoft die eDiscovery-Untersuchungen verwaltet?** Hier ist ein [Technisches Whitepaper](https://go.microsoft.com/fwlink/?linkid=852161) , das Sie herunterladen können, das erläutert, wie wir die gleichen Such-und Untersuchungs Tools zur Verwaltung unseres internen eDiscovery-Workflows verwenden.
-   
-## <a name="manage-legal-investigations-with-ediscovery-cases"></a>Verwalten von rechtlichen Untersuchungen mit eDiscovery-Fällen
+**Möchten Sie wissen, wie Microsoft seine eDiscovery-Untersuchungen verwaltet?** Hier ist ein [technisches](https://go.microsoft.com/fwlink/?linkid=852161) Whitepaper, das Sie herunterladen können und in dem erläutert wird, wie wir die gleichen Such- und Untersuchungstools verwenden, um unseren internen eDiscovery-Workflow zu verwalten.
 
-mit eDiscovery-Fällen können Sie steuern, wer eDiscovery-Fälle in Ihrer Organisation erstellen, auf Sie zugreifen und diese verwalten kann. Verwenden Sie Fälle, um Mitglieder hinzuzufügen und zu steuern, welche Arten von Aktionen Sie durchführen können, Aufbewahrungsmöglichkeiten für inhaltsspeicherorte, die für einen Rechtsfall relevant sind, und mithilfe des Inhalts Such Tools die Speicherorte für Inhalte zu durchsuchen, die möglicherweise auf Ihren Fall reagieren. Anschließend können Sie diese Ergebnisse auch zur weiteren Untersuchung durch externe Bearbeiter exportieren und herunterladen.
+## <a name="manage-legal-investigations-with-ediscovery-cases"></a>Verwalten rechtlicher Untersuchungen mit eDiscovery-Fällen
+
+Mit eDiscovery-Fällen können Sie steuern, wer eDiscovery-Fälle in Ihrer Organisation erstellen, darauf zugreifen und verwalten kann. Verwenden Sie Fälle, um Mitglieder hinzuzufügen und zu steuern, welche Arten von Aktionen sie ausführen können, platzieren Sie die für einen Rechtsfall relevanten Speicherorte in einem Haltefeld, und verwenden Sie das Tool für die Inhaltssuche, um die Halteorte nach Inhalten zu durchsuchen, die möglicherweise auf Ihren Fall reagieren. Anschließend können Sie diese Ergebnisse auch zur weiteren Untersuchung durch externe Prüfer exportieren und herunterladen.
   
-- [Verwalten des eDiscovery-Workflows](ediscovery-cases.md) durch Erstellen und Verwenden von eDiscovery-Fällen für jede rechtliche Untersuchung, die Ihre Organisation durchführen muss 
-    
-- [Zuweisen von eDiscovery-Berechtigungen](assign-ediscovery-permissions.md) zum Steuern der Benutzer, die eDiscovery-Fälle in Ihrer Organisation erstellen und verwalten können 
-    
-- [Einrichten von Compliance-Grenzen](tagging-and-assessment-in-advanced-ediscovery.md) zum Steuern der Benutzerinhalts Speicherorte, die eDiscovery-Manager durchsuchen können 
-    
-- [Suchen nach Inhalten](search-for-content.md) in Ihrer Organisation 
-    
+- [Verwalten Sie Ihren eDiscovery-Workflow,](ediscovery-cases.md) indem Sie eDiscovery-Fälle für jede rechtliche Untersuchung erstellen und verwenden, die Ihre Organisation unternehmen muss.
+
+- [Weisen Sie eDiscovery-Berechtigungen zu,](assign-ediscovery-permissions.md) um zu steuern, wer eDiscovery-Fälle in Ihrer Organisation erstellen und verwalten kann.
+
+- [Richten Sie Compliancegrenzen ein,](set-up-compliance-boundaries.md) um die Speicherorte für Benutzerinhalte zu steuern, die eDiscovery-Manager durchsuchen können.
+
+- [Suchen Sie nach Inhalten](search-for-content.md) in Ihrer Organisation.
+
 ### <a name="use-scripts-for-advanced-scenarios"></a>Verwenden von Skripts für erweiterte Szenarien
 
-Wie im vorherigen Abschnitt, in dem Skripts für Inhalts Suchszenarien aufgeführt sind, haben wir auch einige PowerShell-Skripts für Sicherheits & Compliance Center erstellt, die Sie bei der Verwaltung von eDiscovery-Fällen unterstützen.
+Wie im vorherigen Abschnitt, in dem Skripts für Inhaltssuchszenarien aufgeführt sind, haben wir auch einige Security & Compliance Center -PowerShell-Skripts erstellt, die Sie bei der Verwaltung von eDiscovery-Fällen unterstützen.
   
-- [Erstellen eines eDiscovery Hold-Berichts](create-a-report-on-holds-in-ediscovery-cases.md) mit Informationen zu allen mit eDiscovery-Fällen in Ihrer Organisation verknüpften Haltestatus 
-    
-- [Hinzufügen von Postfächern und OneDrive-Speicherorten](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) für eine Liste von Benutzern zu einem eDiscovery-Haltestatus 
+- [Erstellen Sie einen eDiscovery-Haltebericht,](create-a-report-on-holds-in-ediscovery-cases.md) der Informationen zu allen In-EDiscovery-Fällen in Ihrer Organisation zugeordneten Halte halte enthält.
+
+- [Hinzufügen von Postfächern und #A0](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) für eine Liste von Benutzern zu einem eDiscovery-Archiv.
   
-## <a name="manage-legal-investigations-with-the-advanced-ediscovery-solution-in-microsoft-365"></a>Verwalten von rechtlichen Untersuchungen mit der erweiterten eDiscovery-Lösung in Microsoft 365
+## <a name="manage-legal-investigations-with-the-advanced-ediscovery-solution-in-microsoft-365"></a>Verwalten rechtlicher Untersuchungen mit der Advanced eDiscovery-Lösung in Microsoft 365
 
 Die Advanced eDiscovery-Lösung in Microsoft 365 basiert auf den vorhandenen eDiscovery- und Analysefunktionen in Office 365. Diese neue Lösung mit dem Namen *Advanced eDiscovery* bietet einen End-to-End-Workflow zum Beibehalten, Sammeln, Überprüfen, Analysieren und Exportieren von Inhalten, die auf die internen und externen Ermittlungen Ihrer Organisation abgestimmt sind. Außerdem können Rechtsteams den gesamten Benachrichtigungs-Workflow einsehen, der für juristische Zwecke aufbewahrt wurde, und so mit den an einem Fall beteiligten Verwahrern kommunizieren.
 
-Advanced eDiscovery erfordert ein E5-Abonnement für Ihre Microsoft 365-oder Office 365-Organisation. Weitere Informationen zur Lizenzierung finden Sie unter [Erste Schritte mit Advanced eDiscovery](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses).
+Advanced eDiscovery erfordert ein E5-Abonnement für Ihre Microsoft 365- oder Office 365-Organisation. Weitere Informationen zur Lizenzierung finden Sie unter ["Einrichten von Advanced eDiscovery".](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses)
 
-Im folgenden finden Sie eine kurze Übersicht über den integrierten Workflow in Advanced eDiscovery. Weitere Informationen finden Sie unter [Explore the Advanced eDiscovery Workflow](get-started-with-advanced-ediscovery.md#explore-the-advanced-ediscovery-workflow).
+Hier finden Sie eine kurze Übersicht über den integrierten Workflow in Advanced eDiscovery. Weitere Informationen finden Sie unter [Verwalten des Advanced eDiscovery-Workflows.](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow)
 
-- [Erstellen einer Anfrage](create-new-ediscovery-case.md) für erste Schritte
+- [Erstellen Sie einen Fall](create-and-manage-advanced-ediscoveryv2-case.md#create-a-case) für die ersten Schritte.
 
-- [Verwalten Sie Verwalter](managing-custodians.md) , indem Sie Sie zu einem Fall hinzufügen und den Inhalten in Ihrem Postfach, OneDrive-Konto und Microsoft Teams, in denen Sie Mitglieder sind, Rechtliche Aufbewahrungspflicht erteilen.
+- [Verwalten Sie](managing-custodians.md) Verwahrer, indem Sie sie zu einem Fall hinzufügen und inhalte in ihrem Postfach, ihrem #A0 und Microsoft Teams, in dem sie Mitglied sind, gesetzlich archivieren.
 
-- [Verwalten der Kommunikation](managing-custodian-communications.md) mit Depotbanken durch Automatisierung des Benachrichtigungsprozesses für rechtliche Aufbewahrungen
+- [Verwalten Sie die](managing-custodian-communications.md) Kommunikation mit Verwahrern, indem Sie den Benachrichtigungsprozess für die gesetzliche Gesetzliche Benachrichtigung automatisieren.
 
-- [Indizieren von Depotdaten](processing-data-for-case.md) und Beheben von Indizierungs Fehlern, damit Sie effektiv Daten für ihre Untersuchungen erfassen können
+- [Indizieren Von Verwahrerdaten](processing-data-for-case.md) und Beheben von Indizierungsfehlern, damit Sie effektiv Daten für Ihre Untersuchungen sammeln können.
 
-- [Sammeln von Daten](collecting-data-for-ediscovery.md) für einen Fall und Hinzufügen des [Add-Ins zu einer Überprüfungsgruppe](collecting-data-for-ediscovery.md#add-search-results-to-a-review-set) zur weiteren Untersuchung
+- [Sammeln sie Daten](collecting-data-for-ediscovery.md) für einen Fall, und fügen Sie sie [einem Überprüfungssatz zur](collecting-data-for-ediscovery.md#add-search-results-to-a-review-set) weiteren Untersuchung hinzu.
 
-- [Anzeigen ](view-documents-in-review-set.md) von Dokumenten, [Abfrage](review-set-search.md) Daten und [Tag](tagging-documents.md) -Elementen in einem Überprüfungs Satzes
+- [Anzeigen](view-documents-in-review-set.md) von Dokumenten, [Abfragedaten](review-set-search.md) und [Tagelementen](tagging-documents.md) in einem Überprüfungssatz.
 
-- [Analysieren von Case-Daten](analyzing-data-in-review-set.md) mit erweiterten Analysetools
+- [Analysieren Sie Falldaten](analyzing-data-in-review-set.md) mit erweiterten Analysetools.
 
-- [Exportieren von Falldaten](exporting-data-ediscover20.md) zur Überprüfung durch externe Berater
+- [Exportieren Sie Falldaten](exporting-data-ediscover20.md) zur Überprüfung durch externe Rechtsberater.
 
-- [Verwalten von Aufträgen mit langer Ausführungszeit](managing-jobs-ediscovery20.md) in Advanced eDiscovery
+- [Verwalten lang dauernder Aufträge](managing-jobs-ediscovery20.md) in Advanced eDiscovery.

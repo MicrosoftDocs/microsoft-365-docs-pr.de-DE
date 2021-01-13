@@ -1,6 +1,6 @@
 ---
-title: Lizenzen zuweisen
-description: Im Rahmen der Registrierung müssen Sie Lizenzen zuweisen, die Sie Ihren Benutzern bereits erhalten haben.
+title: Zuweisen von Lizenzen
+description: Im Rahmen der Registrierung müssen Sie Ihren Benutzern lizenzen zuweisen, die Sie bereits erhalten haben.
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -9,27 +9,27 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 4bd4dcd522848c91c4c8494504dd4c917a7eb776
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: c370b37b805544c49e4e9e951d0b8de9c6af1589
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529743"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841037"
 ---
-# <a name="assign-licenses"></a>Lizenzen zuweisen
+# <a name="assign-licenses"></a>Zuweisen von Lizenzen
 
-Im Rahmen der Vorbereitung der Registrierung in Microsoft Managed Desktop müssen Sie sicherstellen, dass Sie die erforderlichen Lizenzen erhalten haben. Wenn Sie dies noch nicht getan haben, lesen Sie weitere Informationen zu [Lizenzen](../get-ready/prerequisites.md#more-about-licenses) , um genau zu erfahren, welche Lizenzen Sie benötigen.
+Im Rahmen der Vorbereitung auf die Registrierung bei Microsoft Managed Desktop müssen Sie sicherstellen, dass Sie die erforderlichen Lizenzen erhalten haben. Wenn Sie die Lizenzen noch nicht erworben haben, finden Sie unter ["Weitere](../get-ready/prerequisites.md#more-about-licenses) Informationen zu Lizenzen" weitere Informationen dazu, welche Lizenzen Sie genau benötigen.
 
 
-Wenn Ihre Lizenz alle zusammenhängen, ist es an der Zeit, Sie Ihren Benutzern zuzuweisen. Dazu wird empfohlen, dass Sie die [Gruppenbasierte Lizenzierungsfunktion](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) von Azure Active Directory nutzen.
+Wenn Ihre Lizenzen alle in einer Reihe stehen, ist es an der Zeit, sie Ihren Benutzern zuzuordnen. Zum Zuweisen von Lizenzen wird empfohlen, das gruppenbasierte Lizenzierungsfeature [von](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) Azure Active Directory zu nutzen.
 
-Wenn Sie Probleme mit der Lizenzzuweisung haben, wenden Sie sich an den Administrator [Support](../working-with-managed-desktop/admin-support.md).
+Wenn Sie Probleme mit der Lizenzzuweisung haben, wenden Sie sich an den [Administratorsupport.](../working-with-managed-desktop/admin-support.md)
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Schritte zum Einstieg in Microsoft Managed Desktop
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Schritte für die ersten Schritte mit Microsoft Managed Desktop
 
 1. [Hinzufügen und Überprüfen von Administrator-Kontakten im-Administratorportal](add-admin-contacts.md)
 2. [Bedingten Zugriff anpassen](conditional-access.md)
-3. Zuweisen von Lizenzen (dieses Thema)
+3. Zuweisen von Lizenzen (dieser Artikel)
 4. [Intune-Unternehmensportal bereitstellen](company-portal.md)
 5. [Aktivieren von Enterprise State Roaming](enterprise-state-roaming.md)
 6. [Einrichten von Geräten](set-up-devices.md)

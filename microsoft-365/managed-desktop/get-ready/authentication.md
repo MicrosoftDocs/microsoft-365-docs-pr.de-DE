@@ -1,6 +1,6 @@
 ---
 title: Vorbereiten des lokalen Ressourcenzugriffs für Microsoft Managed Desktop
-description: Wichtige Schritte, um sicherzustellen, dass eine Azure AD mit lokaler AD kommunizieren kann, um die Authentifizierung bereitzustellen
+description: Wichtige Schritte, um sicherzustellen, dass ein Azure AD mit dem lokalen AD kommunizieren kann, um die Authentifizierung zu ermöglichen
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -9,62 +9,62 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 7181e81a2db94ce26fb8601f8b9156c65084c439
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: c1732dc17188427f9a181d1c47abe71bb8f39584
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289579"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841411"
 ---
 #  <a name="prepare-on-premises-resources-access-for-microsoft-managed-desktop"></a>Vorbereiten des lokalen Ressourcenzugriffs für Microsoft Managed Desktop
 
-In Microsoft Managed Desktop werden Geräte automatisch mit Azure Active Directory (Azure AD) verbunden. Wenn Sie also eine lokale Active Directory verwenden, müssen Sie einige Dinge überprüfen, um sicherzustellen, dass die Azure AD verbundenen Geräte mit Ihrer lokalen Active Directory kommunizieren können. 
+In Microsoft Managed Desktop werden Geräte automatisch mit Azure Active Directory (Azure AD) verbunden. Wenn Sie ein lokales Active Directory verwenden, müssen Sie daher einige Dinge überprüfen, um sicherzustellen, dass mit Azure AD verbundene Geräte mit Ihrem lokalen Active Directory kommunizieren können. 
 
 > [!NOTE]  
-> *Hybrid* Azure AD Beitritt wird von Microsoft Managed Desktop nicht unterstützt.
+> *Hybrid* Der Beitritt zu Azure AD wird von Microsoft Managed Desktop nicht unterstützt.
 
-Azure Active Directory ermöglicht Ihren Benutzern die Nutzung von einmaligem Anmelden (Single Sign-on, SSO), was bedeutet, dass Sie in der Regel nicht jedes Mal, wenn Sie Ressourcen verwenden, Anmeldeinformationen bereitstellen müssen.
+Mit Azure Active Directory können Benutzer die Vorteile von single Sign-On (SSO) nutzen, was bedeutet, dass sie in der Regel nicht jedes Mal Anmeldeinformationen angeben müssen, wenn sie Ressourcen verwenden.
 
-Informationen zum Verbinden von Azure Active Directory finden Sie unter [How to: Plan your Azure AD Join Implementation](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan). Hintergrundinformationen zu einmaligem Anmelden (Single Sign-on, SSO) auf Geräten, die Azure AD beigetreten sind, finden Sie unter [How SSO to on-premises Resources Works on Azure AD Joined Devices](https://docs.microsoft.com/azure/active-directory/devices/azuread-join-sso#how-it-works).
-
-
-In diesem Thema werden die Dinge erläutert, die Sie überprüfen müssen, um sicherzustellen, dass apps und andere Ressourcen, die von der lokalen Active Directory Konnektivität abhängen, reibungslos mit Microsoft Managed Desktop funktionieren.
+Informationen zum Beitritt zu Azure Active Directory finden Sie unter [How to: Plan your Azure AD join implementation](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan). Hintergrundinformationen zu einmaligem Sign-On (Single Sign-On, SSO) auf Geräten, die mit Azure AD verbunden sind, finden Sie unter Funktionsweise von SSO zu lokalen Ressourcen auf Geräten, die mit Azure AD verbunden [sind.](https://docs.microsoft.com/azure/active-directory/devices/azuread-join-sso#how-it-works)
 
 
-## <a name="single-sign-on-for-on-premises-resources"></a>Einmaliges Anmelden für lokale Ressourcen
-
-Einmaliges Anmelden (Single Sign-on, SSO) mithilfe von UPN und Kennwort ist auf Microsoft Managed Desktop-Geräten standardmäßig aktiviert. Ihre Benutzer können aber auch Windows Hello for Business verwenden, was einige zusätzliche Setupschritte erfordert. 
-
-### <a name="single-sign-on-by-using-upn-and-password"></a>Einmaliges Anmelden mit UPN und Kennwort
-
-In den meisten Organisationen können Ihre Benutzer SSO verwenden, um sich über UPN und Kennwort auf Microsoft Managed Desktop-Geräten zu authentifizieren. Um jedoch sicherzustellen, dass dies funktioniert, sollten Sie Folgendes überprüfen:
-
-- Stellen Sie sicher, dass Azure AD Connect eingerichtet ist und einen lokalen Active Directory Server mit Windows Server 2008 R2 oder höher verwendet.
-- Stellen Sie sicher, dass Azure AD Connect eine unterstützte Version ausführt und diese drei Attribute mit Azure AD synchronisieren: 
-    - DNS-Domänenname des lokalen Active Directory (in dem sich die Benutzer befinden)
-    - NetBIOS Ihrer lokalen Active Directory (wo sich die Benutzer befinden)
-    - SAM-Konto Name des Benutzers
+In diesem Artikel werden die Dinge erläutert, die Sie überprüfen müssen, um sicherzustellen, dass Apps und andere Ressourcen, die von der lokalen Active Directory-Konnektivität abhängen, mit Microsoft Managed Desktop reibungslos funktionieren.
 
 
-### <a name="single-sign-on-by-using-windows-hello-for-business"></a>Einmaliges Anmelden mit Windows Hello for Business
+## <a name="single-sign-on-for-on-premises-resources"></a>Einzelne Sign-On für lokale Ressourcen
 
-Microsoft Managed Desktop-Geräte bieten ihren Benutzern auch eine schnelle und passive Benutzerfreundlichkeit, indem Sie Windows Hello for Business verwenden. Um sicherzustellen, dass Windows Hello for Business funktioniert, ohne dass Ihre Benutzer den jeweiligen UPN und das Kennwort angeben müssen, besuchen Sie [configure Azure AD Joined Devices for on-premises Single-Signing on using Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base) , um die Anforderungen zu überprüfen, und befolgen Sie dann die Schritte, die dort vorgesehen sind.
+Single Sign-On (SSO) mithilfe von UPN und Kennwort ist auf Microsoft Managed Desktop Devices standardmäßig aktiviert. Ihre Benutzer können jedoch auch Windows Hello for Business verwenden, was einige zusätzliche Einrichtungsschritte erfordert. 
+
+### <a name="single-sign-on-by-using-upn-and-password"></a>Einzelne Sign-On mithilfe von UPN und Kennwort
+
+In den meisten Organisationen können Ihre Benutzer SSO verwenden, um sich über UPN und Kennwort auf Microsoft Managed Desktop Devices zu authentifizieren. Um jedoch sicherzustellen, dass diese Funktion funktioniert, sollten Sie folgendes überprüfen:
+
+- Vergewissern Sie sich, dass Azure AD Connect eingerichtet ist und einen lokalen Active Windows Server 2008 R2 oder höher verwendet.
+- Vergewissern Sie sich, dass Azure AD Connect eine unterstützte Version ausgeführt wird und so festgelegt ist, dass diese drei Attribute mit Azure AD synchronisiert werden: 
+    - DER DNS-Domänenname des lokalen Active Directory (in dem sich die Benutzer befinden)
+    - NetBIOS Ihres lokalen Active Directory (in dem sich die Benutzer befinden)
+    - Name des Sam-Kontos des Benutzers
+
+
+### <a name="single-sign-on-by-using-windows-hello-for-business"></a>Einzelne Sign-On mithilfe von Windows Hello for Business
+
+Microsoft Managed Desktop-Geräte bieten Ihren Benutzern auch eine schnelle, kennwortlose Erfahrung, indem Sie Windows Hello for Business verwenden. Um sicherzustellen, dass Windows Hello for Business funktioniert, ohne dass Ihre Benutzer den entsprechenden UPN und das Kennwort angeben müssen, besuchen Sie "Konfigurieren von in Azure AD beigetretenen Geräten für lokales Single-Sign Bei Verwendung von [Windows Hello for Business,](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base) um die Anforderungen zu überprüfen, und führen Sie dann die dort bereitgestellten Schritte aus.
 
 
 ## <a name="apps-and-resources-that-use-authentication"></a>Apps und Ressourcen, die die Authentifizierung verwenden
 
-Ausführliche Anleitungen zum Einrichten von Apps für die Verwendung von Azure Active Directory erhalten Sie Untergrund [Legendes zu den Überlegungen zu Anwendungen und Ressourcen](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan#understand-considerations-for-applications-and-resources) im Azure-inhaltsset. Zusammenfassung:
+Weitere Informationen [zum Einrichten von](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan#understand-considerations-for-applications-and-resources) Apps für die Arbeit mit Azure Active Directory finden Sie unter "Überlegungen zu Anwendungen und Ressourcen im Azure-Inhaltssatz". Zusammenfassend:
 
 
-- Wenn Sie **Cloud-basierte apps**verwenden, wie Sie zum Azure AD-App-Katalog hinzugefügt wurden, benötigen die meisten keine weiteren Vorbereitungen für die Arbeit mit Microsoft Managed Desktop. Allerdings können Win32-apps, die nicht den webaccountmanager (WAM) verwenden, Benutzer weiterhin zur Authentifizierung auffordern.
+- Wenn Sie **cloudbasierte** Apps verwenden, z. B. Apps, die dem Azure AD-App-Katalog hinzugefügt wurden, benötigen die meisten keine weitere Vorbereitung für die Arbeit mit Microsoft Managed Desktop. Win32-Apps, die web Account Manager (WAM) nicht verwenden, können benutzer jedoch dennoch zur Authentifizierung aufgefordert werden.
 
-- Für apps, die **lokal gehostet**werden, müssen Sie diese apps der Liste der vertrauenswürdigen Sites in ihren Browsern hinzufügen. Auf diese Weise kann die Windows-Authentifizierung nahtlos funktionieren, ohne dass Benutzer zur Eingabe von Anmeldeinformationen aufgefordert werden. Verweisen Sie dazu in der [Referenz konfigurierbare Einstellungen](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/config-setting-ref)auf [vertrauenswürdige Websites](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/config-setting-ref#trusted-sites) .
+- Für Apps, die lokal **gehostet** werden, müssen Sie diese Apps der Liste der vertrauenswürdigen Websites in Ihren Browsern hinzufügen. Dieser Schritt ermöglicht die nahtlose Funktion der Windows-Authentifizierung, ohne dass Benutzer zur Eingabe von Anmeldeinformationen aufgefordert werden. Informationen zum Hinzufügen von Apps finden Sie unter ["Vertrauenswürdige Websites"](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/config-setting-ref#trusted-sites) in der Referenz zu [konfigurierbaren Einstellungen.](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/config-setting-ref)
 
-- Wenn Sie Active Directory Verbunddienste verwenden, überprüfen Sie, ob SSO aktiviert ist, indem Sie die Schritte unter [überprüfen und Verwalten von einmaligem Anmelden mit AD FS durchführen](https://docs.microsoft.com/previous-versions/azure/azure-services/jj151809(v=azure.100)). 
+- Wenn Sie Active Directory-Verbunddienste verwenden, überprüfen Sie mithilfe der Schritte unter Überprüfen und Verwalten des einmaligen Anmeldens mit AD FS, ob SSO [aktiviert ist.](https://docs.microsoft.com/previous-versions/azure/azure-services/jj151809(v=azure.100)) 
 
-- Für apps, die **lokal sind und ältere Protokolle verwenden**, ist kein zusätzliches Setup erforderlich, solange die Geräte Zugriff auf einen lokalen Domänencontroller haben, der authentifiziert werden soll. Um einen sicheren Zugriff für diese Anwendungen zu gewährleisten, sollten Sie jedoch Azure AD Anwendungs Proxy bereitstellen. Weitere Informationen finden Sie unter [Remote Zugriff auf lokale Anwendungen über den Anwendungs Proxy von Azure Active Directory](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
+- Für Apps, die lokal sind und ältere Protokolle verwenden, ist kein **zusätzliches** Setup erforderlich, solange die Geräte Zugriff auf einen lokalen Domänencontroller haben, um sich zu authentifizieren. Um den sicheren Zugriff für diese Anwendungen zu ermöglichen, sollten Sie jedoch Azure AD-Anwendungsproxy bereitstellen. Weitere Informationen finden Sie unter Remotezugriff auf lokale Anwendungen über [den Anwendungsproxy von Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)
 
-- Apps, die **lokal ausgeführt werden und auf der Computerauthentifizierung basieren** , werden nicht unterstützt, daher sollten Sie diese durch neuere Versionen ersetzen.
+- Apps, die **lokal ausgeführt** werden und sich auf die Computerauthentifizierung verlassen, werden nicht unterstützt. Daher sollten Sie erwägen, sie durch neuere Versionen zu ersetzen.
 
 ### <a name="network-shares-that-use-authentication"></a>Netzwerkfreigaben, die die Authentifizierung verwenden
 
@@ -72,8 +72,8 @@ Es ist kein zusätzliches Setup erforderlich, damit Benutzer auf Netzwerkfreigab
 
 ### <a name="printers"></a>Drucker
 
-Microsoft Managed Desktop-Geräte können keine Verbindung mit Druckern herstellen, die in Ihrem lokalen Active Directory veröffentlicht werden, es sei denn, Sie haben [Hybrid Cloud Print](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-deploy)konfiguriert.
+Microsoft Managed Desktop-Geräte können keine Verbindung mit Druckern herstellen, die in Ihrem lokalen Active Directory veröffentlicht werden, es sei denn, Sie haben [Hybrid Cloud Print konfiguriert.](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-deploy)
 
-Während Drucker nicht automatisch in einer nur-Cloud-Umgebung erkannt werden können, können Ihre Benutzer lokale Drucker mithilfe des Drucker Pfads oder des Druckerwarte Schlangen Pfads verwenden, solange die Geräte Zugriff auf einen lokalen Domänencontroller haben.
+Drucker können zwar nicht automatisch in einer Nur-Cloud-Umgebung ermittelt werden, Ihre Benutzer können jedoch lokale Drucker verwenden, indem sie den Druckerpfad oder den Druckerwarteschlangenpfad verwenden, solange die Geräte Zugriff auf einen lokalen Domänencontroller haben.
 
 <!--add fuller material on printers when available-->

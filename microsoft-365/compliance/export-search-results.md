@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exportieren Sie die Suchergebnisse aus einer Inhaltssuche im Microsoft 365 Compliance Center auf einen lokalen Computer. E-Mail-Ergebnisse werden als PST-Dateien exportiert. Inhalte von SharePoint- und OneDrive for #A0 werden als systemeigene #A1 exportiert.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 09f3ed5684338616ef20036e4fded400bd106c44
-ms.sourcegitcommit: f40378013757d560d5566a11ad4e6f527c018cc4
+ms.openlocfilehash: 12c8755d4ca8b5ff97582b879c07fe103c996ecf
+ms.sourcegitcommit: 495b66b77d6dbe6d69e5b06b304089e4e476e568
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796183"
+ms.locfileid: "49799702"
 ---
 # <a name="export-content-search-results"></a>Exportieren von Inhaltssuchergebnissen
 
@@ -187,20 +187,7 @@ Hier finden Sie weitere Informationen zum Exportieren von Suchergebnissen.
   
 ### <a name="export-limits"></a>Exportgrenzwerte
 
-Diese Grenzwerte gelten auch beim Exportieren von Suchergebnissen in einem Core eDiscovery-Fall.
-
-|Beschreibung der Beschränkung|Grenze|
-|:-----|:-----|
-|Maximale Menge an exportierbaren Daten aus einer einzelnen Inhaltssuche  <br/><br/> **Hinweis:** Wenn die Suchergebnisse größer als 2 TB sind, erwägen Sie die Verwendung von Datumsbereichen oder anderen Filtertypen, um die Gesamtgröße der Suchergebnisse zu verringern. <br/>  |2 TB  <br/> | 
-|Maximale Exportgeschwindigkeit einer Organisation an einem einzigen Tag <br/><br/> **Hinweis:** Dieser Grenzwert wird täglich um 12:00 Uhr UTC zurückgesetzt. <br/> |2 TB <br/> |
-|Maximale Anzahl gleichzeitiger Exporte, die gleichzeitig in Ihrer Organisation ausgeführt werden können <br/><br/> **Hinweis:** Beim Ausführen **eines Berichtsexports** wird die Gesamtanzahl gleichzeitiger Exporte für Ihre Organisation ermittelt. Wenn drei Benutzer jeweils drei Exporte ausführen, kann nur ein anderer Export ausgeführt werden. Unabhängig davon, ob ein Bericht oder Suchergebnisse exportiert werden, können keine weiteren Exporte ausgeführt werden, bis einer abgeschlossen ist.   <br/> |10  <br/> |
-|Maximale Exporte, die ein einzelner Benutzer ausführen kann <br/> |3  <br/> |
-|Die maximale Anzahl von Suchergebnissen für Postfächer kann mit dem eDiscovery-Exporttool im Microsoft 365 Compliance Center heruntergeladen werden.  <br/><br/> **Hinweis:** Um die Suchergebnisse aus mehr als 100.000 Postfächern herunterzuladen, müssen Sie Security & Compliance Center PowerShell verwenden. Anweisungen finden Sie [unter Exportieren von Ergebnissen aus mehr als 100.000 Postfächern.](#exporting-results-from-more-than-100000-mailboxes) <br/> | 100.000 <br/>|
-|Maximale Größe der PST-Datei, die exportiert werden kann <br/><br/> **Hinweis:** Wenn die Suchergebnisse aus dem Postfach eines Benutzers größer als 10 GB sind, werden die Suchergebnisse für das Postfach in zwei (oder mehr) separate PST-Dateien exportiert. Wenn Sie alle Suchergebnisse in einer einzigen PST-Datei exportieren möchten, wird die PST-Datei in zusätzlichen PST-Dateien verkn nen, wenn die Gesamtgröße der Suchergebnisse größer als 10 GB ist. Wenn Sie diese Standardgröße ändern möchten, können Sie die Windows-Registrierung auf dem Computer bearbeiten, den Sie zum Exportieren der Suchergebnisse verwenden. Siehe [Ändern der Größe von PST-Dateien beim Exportieren von eDiscovery-Suchergebnissen.](change-the-size-of-pst-files-when-exporting-results.md) Die Suchergebnisse aus einem bestimmten Postfach werden nicht auf mehrere PST-Dateien aufgeteilt, es sei denn, der Inhalt eines einzelnen Postfachs beträgt mehr als 10 GB. Wenn Sie die Suchergebnisse in einer PST-Datei exportieren möchten, die alle Nachrichten in einem einzigen Ordner enthält und die Suchergebnisse größer als 10 GB sind, sind die Elemente weiterhin in chronologischer Reihenfolge organisiert, sodass sie basierend auf dem Gesendeten Datum in zusätzlichen PST-Dateien verkn nnen.<br/> | 10 GB <br/> |
-|Rate, mit der Suchergebnisse aus Postfächern und Websites an einen von Microsoft bereitgestellten Azure Storage-Speicherort hochgeladen werden. |Maximal 2 GB pro Stunde|
-|||
-
-Weitere Informationen zu anderen Grenzwerten finden Sie unter ["Grenzwerte für die Inhaltssuche".](limits-for-content-search.md) 
+Informationen zu Beschränkungen beim Exportieren von Inhaltssuchergebnissen finden Sie im Abschnitt "Exportgrenzwerte" unter ["Grenzwerte für die Inhaltssuche".](limits-for-content-search.md#export-limits)
 
 ### <a name="export-reports"></a>Exportieren von Berichten
   

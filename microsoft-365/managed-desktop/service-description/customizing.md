@@ -1,6 +1,6 @@
 ---
 title: Dienstplanausnahmen
-description: ''
+description: So fordern Sie Ausnahmen für den Standarddienstplan an
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -9,72 +9,72 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0785d7ac12c7b027322338d9949a10ea30168b3b
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 97fe3fe1734908c46dcfff4acd76ce9ae5b8b1a5
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289061"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841267"
 ---
 # <a name="exceptions-to-the-service-plan"></a>Dienstplanausnahmen
 
-Microsoft Managed Desktop stellt eine kuratierte Geräteliste, [Standardgeräte Einstellungen](device-policies.md), Anwendungsanforderungen und bestimmte [konfigurierbare Einstellungen](../working-with-managed-desktop/config-setting-overview.md)bereit, die alle für eine sichere, produktive und angenehme Benutzeroberfläche ausgelegt sind. Es empfiehlt sich, immer bei der Bereitstellung des Diensts zu bleiben. Allerdings erkennen wir, dass einige Details des Diensts möglicherweise nicht genau den Anforderungen Ihrer Organisation entsprechen. Wenn Sie der Meinung sind, dass Sie den Dienst auf eine bestimmte Art und Weise ändern müssen, ist es wichtig, dass Sie die folgenden Prozesse befolgen, um diese Änderungen anzufordern.
+Microsoft Managed Desktop bietet eine [](device-policies.md)behandelte Geräteliste, Standardgeräteeinstellungen, Anwendungsanforderungen und bestimmte konfigurierbare [Einstellungen,](../working-with-managed-desktop/config-setting-overview.md)die alle eine sichere, produktive und angenehme Benutzererfahrung bieten. Es ist am besten, den Dienst immer wie bereitgestellt zu nutzen. Wir sind uns jedoch bewusst, dass einige Details des Diensts möglicherweise nicht genau den Anforderungen Ihrer Organisation entsprechen. Wenn Sie den Dienst in einer bestimmten Weise ändern müssen, ist es wichtig, dass Sie die folgenden Prozesse zum Anfordern dieser Änderungen befolgen.
  
-## <a name="types-of-exceptions"></a>Ausnahmetypen
+## <a name="types-of-exceptions"></a>Arten von Ausnahmen
 
-Eine Ausnahme ist jede Ergänzung oder Änderung an der Microsoft Managed Desktop-Basiskonfiguration; Beispiele reichen von der Konfiguration von USB-Ports bis zur Bereitstellungeines neuen Gerätetreibers. Wir gruppieren verschiedene Ausnahmen wie folgt:
+Eine Ausnahme ist jede Ergänzung oder Änderung der Microsoft Managed Desktop-Basiskonfiguration. Beispiele reichen von der Konfiguration von USB-Ports bis zur Bereitstellung eines neuen Gerätetreibers. Wir gruppieren verschiedene Ausnahmen wie folgt:
 
 |Typ  |Beschreibung  |
 |---------|---------|
-|Produktivitätssoftware     |  Von Benutzern benötigte Vordergrund-Software, eingeschränkt durch die [Anwendungsanforderungen](mmd-app-requirements.md)       |
-|Sicherheits-Agents & VPNs     |  Software, die zum Sichern, überwachen oder Ändern des Verhaltens des Geräts oder Netzwerks verwendet wird       |
-|Digitale Erlebnis Überwachung     |  Software zum Nachverfolgen von Daten auf dem Gerät eines Benutzers, um Sie zu melden.       |
-|Hardware-oder Software Treiber     |   Gerätetreiber, eingeschränkt durch die [Anwendungsanforderungen](mmd-app-requirements.md)      |
-|Richtlinien     | Windows 10-oder Microsoft 365-Apps für Enterprise-Einstellungen auf einem verwalteten Gerät        |
-|Geräte     | Geräte, die sich nicht in der Microsoft Managed Desktop- [Geräteliste](device-list.md) befinden        |
+|Produktivitätssoftware     |  Von Benutzern benötigte Vordergrundsoftware, eingeschränkt durch die [Anwendungsanforderungen](mmd-app-requirements.md)       |
+|Sicherheitsagenten & VPNs     |  Software zum Sichern, Überwachen oder Ändern des Verhaltens des Geräts oder Netzwerks       |
+|Überwachung der digitalen Erfahrung     |  Software, die zum Nachverfolgen von Daten auf dem Gerät eines Benutzers verwendet wird, um Berichte an die IT zu senden       |
+|Hardware- oder Softwaretreiber     |   Gerätetreiber, eingeschränkt durch die [Anwendungsanforderungen](mmd-app-requirements.md)      |
+|Richtlinien     | Windows 10- oder Microsoft 365 Apps for Enterprise-Einstellungen auf einem verwalteten Gerät        |
+|Geräte     | Geräte, die nicht in der Microsoft Managed Desktop [-Geräteliste enthalten sind](device-list.md)        |
 |Andere     |  Alles, was nicht von den anderen Bereichen abgedeckt wird       |
  
 ## <a name="request-an-exception"></a>Anfordern einer Ausnahme
 
-Übermitteln von Anforderungen über das Verwaltungsportal von Microsoft Managed Desktop durch Erstellen einer Änderungsanforderung. Achten Sie darauf, diese Details einzuschließen:
+Übermitteln Sie Anforderungen über das Microsoft Managed Desktop Admin-Portal, indem Sie eine Änderungsanforderung erstellen. Geben Sie unbedingt die folgenden Details an:
 
--   Ausnahmetyp: welche Kategorie von Ausnahme ist es? (siehe obige Tabelle)
--   Anforderung: Was ist die spezifische Geschäftsanforderung für die Ausnahme?
--   Vorschlag: welche Lösung wird von Ihrem Unternehmen angefordert?
--   Timeline: wie lange soll diese Ausnahme dauern? 
+-   Ausnahmetyp: Welche Ausnahmekategorie ist dies? (siehe vorherige Tabelle)
+-   Anforderung: Was ist die spezifische geschäftliche Anforderung für die Ausnahme?
+-   Vorschlag: Welche Lösung fordert Ihr Unternehmen an?
+-   Zeitachse: Wie lange soll diese Ausnahme dauern? 
 
-## <a name="how-we-assess-an-exception-request"></a>So bewerten wir eine ausnahmeanforderung
+## <a name="how-we-assess-an-exception-request"></a>Bewerten einer Ausnahmeanforderung
 
-Bei der Überprüfung von Ausnahmeanforderungen bewerten wir diese Faktoren in dieser Reihenfolge:
+Bei der Überprüfung von Ausnahmeanforderungen werden diese Faktoren in der folgenden Reihenfolge bewertet:
  
-1.  Einige Anwendungen und Richtlinien, die von Microsoft Managed Desktop auf allen Geräten bereitgestellt werden, sind nicht verhandelbar, daher darf Ihre Anforderung keine Auswirkungen auf diese haben. Weitere Informationen finden Sie unter [Device Configuration](device-policies.md) .
-2.  Eingeschränkte Produktivitätssoftware, die ein Benutzer für seine Aufgaben benötigt, wird wahrscheinlich genehmigt. 
-3.  Wenn Ihre Anforderung mithilfe der Microsoft-Technologie erfüllt werden kann, werden wir Ihre Anforderung für einen Ausnahme Migrationszeitraum von drei bis zwölf Monaten (je nach Projektumfang) genehmigen.
-4.  Wenn Ihre Anforderung mithilfe der Microsoft-Technologie nicht erfüllt werden kann, werden wir Ihre Anfrage wahrscheinlich genehmigen, es sei denn, Sie verletzt eine der nachfolgenden Bedingungen.  
+1.  Einige Anwendungen und Richtlinien, die Microsoft Managed Desktop auf allen Geräten bereitgestellt, sind nicht verhandelbar, sodass Ihre Anforderung diese nicht betreffen darf. Weitere [Informationen finden Sie unter](device-policies.md) "Gerätekonfiguration".
+2.  Eingeschränkte Produktivitätssoftware, die ein Benutzer für seine Arbeit benötigt, wird wahrscheinlich genehmigt. 
+3.  Wenn wir Ihre Anforderungen mit der Technologie von Microsoft erfüllen können, genehmigen wir Wahrscheinlichkeit ihre Anforderung für einen Ausnahmemigrationszeitraum von drei bis 12 Monaten (je nach Umfang des Projekts).
+4.  Wenn wir Ihre Anforderung mit der Technologie von Microsoft nicht erfüllen können, genehmigen wir Wahrscheinlichkeit nach Ihre Anforderung, es sei denn, sie verletzt eine der folgenden Bedingungen.  
 
-Durch diese Grundsätze wird sichergestellt, dass Microsoft Managed Desktop Ihren Anforderungen immer gerecht wird, während Abweichungen von unserer Standardvorlage nachverfolgt werden. 
+Diese Prinzipien stellen sicher, dass Microsoft Managed Desktop ihre Anforderungen immer erfüllen kann, während Abweichungen von unserer Standardvorlage nachverfolgung werden. 
 
 ## <a name="key-conditions"></a>Wichtige Bedingungen
 
-Ausnahmen werden überprüft, um sicherzustellen, dass Sie keine der folgenden Bedingungen verletzen:
+Wir überprüfen Ausnahmen, um sicherzustellen, dass sie keine dieser Bedingungen verletzen:
 
 -   Eine Ausnahme darf sich nicht negativ auf die Systemsicherheit auswirken. 
--   Das aufrecht erhalten der Ausnahme darf weder für Microsoft Managed Desktop-Vorgänge noch für den Support erhebliche Kosten verursachen.
--   Eine Ausnahme darf sich nicht auf die Systemstabilität auswirken, beispielsweise dadurch, dass Kernelmodus abstürzt oder hängt.
--   Die Änderung darf uns nicht daran hindern, den Dienst zu betreiben oder mit der Kerntechnologie von Microsoft Managed Desktop in Konflikt zu stehen.
+-   Die Verwaltung der Ausnahme darf weder für Microsoft Managed Desktop noch für support erhebliche Kosten entstehen.
+-   Eine Ausnahme darf sich nicht auf die Systemstabilität auswirken, z. B. durch Das Verursachen von Abstürzen oder Hängen des Kernelmodus.
+-   Die Änderung darf uns nicht davon abschränken, den Dienst zu verwenden, oder mit der Microsoft Managed Desktop-Kerntechnologie in Konflikt stehen.
 
-Diese Bedingungen können sich in Zukunft ändern. Wenn wir solche Änderungen vornehmen, werden wir eine Frist von 30 Tagen vorlegen, bevor diese Bedingungen in Kraft treten.  Wenn Microsoft Managed Desktop eine alternative Möglichkeit zur Erfüllung einer genehmigten Ausnahme bietet, wird der Kunde von Microsoft Managed Desktop benachrichtigt, wenn Microsoft Managed Desktop die Möglichkeit zur Unterstützung der Ausnahme ändert. 
+Diese Bedingungen können sich in Zukunft ändern. Wenn wir solche Änderungen vornehmen, werden wir 30 Tage vor dem In-Kraft-Treten dieser Bedingungen eine Benachrichtigung bereitstellen.  Wenn Microsoft Managed Desktop eine alternative Möglichkeit bietet, eine genehmigte Ausnahme zu erfüllen, benachrichtigt Microsoft Managed Desktop den Kunden, wenn Microsoft Managed Desktop die Art und Weise der Unterstützung der Ausnahme ändert. 
 
-## <a name="revoking-approval-for-an-exception"></a>Aufheben der Genehmigung für eine Ausnahme
+## <a name="revoking-approval-for-an-exception"></a>Die Genehmigung für eine Ausnahme wird wieder erteilt.
 
-Nachdem eine angeforderte Ausnahme genehmigt und bereitgestellt wurde, ist es möglich, dass Probleme auftreten, die die wichtigsten Bedingungen verletzen, die nicht offensichtlich waren, als wir die Änderung in erster Linie genehmigt haben. In diesem Fall müssen wir möglicherweise die Genehmigung für die Ausnahme widerrufen.
+Nachdem eine angeforderte Ausnahme genehmigt und bereitgestellt wurde, kann es sein, dass probleme auftreten, die die wichtigsten Bedingungen verletzen, die bei der Genehmigung der Änderung nicht offensichtlich waren. In diesem Fall müssen wir möglicherweise die Genehmigung für die Ausnahme widerrufen.
  
-In diesem Fall werden Sie über das Verwaltungsportal von Microsoft Managed Desktop benachrichtigt. Ab dem ersten Mal, wenn Sie benachrichtigt werden, haben Sie 90 Tage Zeit, um die Ausnahme zu entfernen, bevor die Geräte mit der Ausnahme nicht mehr an Vereinbarungen zum Service Level für Microsoft Managed Desktop gebunden sind. Wir senden Ihnen mehrere Benachrichtigungen entsprechend einer strengen Zeitachse--es kann jedoch sein, dass ein schwerer Vorfall oder eine Bedrohung die Zeitachse oder unsere Entscheidungen zu einer Ausnahme ändern muss. Wir *Entfernen* keine Ausnahme ohne Ihre Zustimmung, aber jedes Gerät mit einer widerrufenen Ausnahme wird nicht mehr an unsere Vereinbarung zum Service Level gebunden. Hier ist die Zeitachse der Benachrichtigungen, die wir Ihnen senden werden:
+In diesem Fall benachrichtigen wir Sie über das Microsoft Managed Desktop-Verwaltungsportal. Ab der ersten Benachrichtigung haben Sie 90 Tage Zeit, um die Ausnahme zu entfernen, bevor die Geräte mit der Ausnahme nicht mehr an Die Vereinbarungen zum Servicelevel von Microsoft Managed Desktop gebunden sind. Wir senden Ihnen mehrere Benachrichtigungen gemäß einer strikten Zeitachse. Bei einem schwerwiegenden Vorfall oder einer Bedrohung müssen wir jedoch möglicherweise die Zeitachse oder unsere Entscheidungen zu einer Ausnahme ändern. Wir entfernen keine *Ausnahme* ohne Ihre Zustimmung, aber jedes Gerät mit einer widerrufenen Ausnahme ist nicht mehr an unsere Vereinbarung zum Servicelevel gebunden. Hier ist die Zeitachse der Benachrichtigungen, die wir Ihnen senden:
 
-- **Erste Nachricht:** Wir bieten den ersten Hinweis auf unsere Entscheidung, die Genehmigung zu widerrufen, einschließlich Informationen dazu, warum wir Sie widerrufen, die Aktionen, die wir Ihnen empfehlen, die Frist für diese Aktionen und die folgenden Schritte, wenn Sie die Entscheidung anfechten möchten. Dies ist 90 Tage im voraus, bevor die Ausnahme von allen Geräten entfernt werden muss. 
-- **Zweite Benachrichtigung (30 Tage später):** Wir bieten eine zweite Benachrichtigung an, einschließlich der in der ersten Benachrichtigung bereitgestellten Informationen. 
-- **Dritte Benachrichtigung (60 Tage nach der ersten Benachrichtigung):** Wir bieten eine dritte Benachrichtigung an, einschließlich der in der ersten Benachrichtigung bereitgestellten Informationen. 
-- **Letzte Benachrichtigung (1 Woche vor der 90-tägigen Frist):** Wir bieten eine vierte Benachrichtigung an, einschließlich der in der ersten Benachrichtigung angegebenen Informationen.
-- **90 Tage nach der ersten Benachrichtigung:** Vereinbarungen zum Service Level von Microsoft Managed Desktop gelten nicht mehr für Geräte mit der widerrufenen Ausnahme. Sie können die Entscheidung jederzeit herausfordern und zusätzliche Informationen zur Überlegung bereitstellen, einschließlich Upgrades, Konfigurationsänderungen oder Softwareänderungen. 
+- **Erster Hinweis:** Wir stellen den ersten Hinweis auf unsere Entscheidung zum Widerrufen der Genehmigung zur Verfügung, einschließlich Informationen dazu, warum wir sie widerrufen, die Von Ihnen zu ergreifenden Maßnahmen, den Stichtag für diese Aktionen und die zu befolgenden Schritte, wenn Sie gegen die Entscheidung vorgehen möchten. Dieser Hinweis tritt 90 Tage im Voraus auf, bevor die Ausnahme von allen Geräten entfernt werden muss. 
+- **Zweiter Hinweis (30 Tage später):** Wir stellen einen zweiten Hinweis bereit, einschließlich der gleichen Informationen, die im ersten Hinweis enthalten sind. 
+- **Dritter Hinweis (60 Tage nach dem ersten Hinweis):** Wir stellen einen dritten Hinweis bereit, einschließlich der gleichen Informationen, die im ersten Hinweis enthalten sind. 
+- **Letzter Hinweis (eine Woche vor Ablauf der Frist von 90 Tage):** Wir stellen einen vierten Hinweis bereit, einschließlich der gleichen Informationen, die im ersten Hinweis enthalten sind.
+- **90 Tage nach dem ersten Hinweis:** Vereinbarungen zum Servicelevel von Microsoft Managed Desktop gelten nicht mehr für Geräte mit der widerrufenen Ausnahme. Sie können die Entscheidung jederzeit in Frage stellen und zusätzliche Informationen zur Prüfung bereitstellen, z. B. Upgrade, Konfigurationsänderungen oder Softwareänderungen. 
 
 

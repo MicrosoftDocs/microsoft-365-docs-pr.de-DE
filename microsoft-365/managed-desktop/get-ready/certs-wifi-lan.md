@@ -1,6 +1,6 @@
 ---
 title: Vorbereiten von Zertifikaten und Netzwerkprofilen für Microsoft Managed Desktop
-description: certs/WiFi/LAN
+description: certs/wifi/lan
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -11,79 +11,79 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: bccfe9a6a6a0550f96ab33d5fd5142e4eaae7b51
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: cf31778d773a271ead6a1745197f04eca127ab5d
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333524"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841095"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Vorbereiten von Zertifikaten und Netzwerkprofilen für Microsoft Managed Desktop  
  
-Die zertifikatbasierte Authentifizierung ist eine häufige Voraussetzung für Kunden, die Microsoft Managed Desktop verwenden. Möglicherweise benötigen Sie Zertifikate für den Zugriff auf WLAN oder LAN, eine Verbindung mit VPN-Lösungen oder für den Zugriff auf interne Ressourcen in Ihrer Organisation.   
+Die zertifikatbasierte Authentifizierung ist eine häufige Anforderung für Kunden, die Microsoft Managed Desktop verwenden. Möglicherweise benötigen Sie Zertifikate für den Zugriff auf Wi-Fi oder LAN, für die Verbindung mit VPN-Lösungen oder für den Zugriff auf interne Ressourcen in Ihrer Organisation.   
  
-Da Microsoft Managed Desktop-Geräte mit Azure Active Directory (Azure AD) verbunden und von Microsoft InTune verwaltet werden, müssen Sie diese Zertifikate mithilfe einer SCEP (Simple Certificate Enrollment Protocol) oder einer PKCS (Public Key Cryptography Standard)-Zertifikatinfrastruktur bereitstellen, die in InTune integriert ist.    
+Da Microsoft Managed #A0 mit Azure Active Directory (Azure AD) verbunden sind und von Microsoft Intune verwaltet werden, müssen Sie diese Zertifikate mithilfe einer #A1 (Simple Certificate Enrollment Protocol) oder eines #A2 (Public Key Cryptography Standard) bereitstellen, das in Intune integriert ist.    
  
 ## <a name="certificate-requirements"></a>Anforderungen für Zertifikate 
  
-Stammzertifikate sind erforderlich, um Zertifikate über eine SCEP-oder PKCS-Infrastruktur bereitzustellen. Für andere Anwendungen und Dienste in Ihrer Organisation ist es möglicherweise erforderlich, dass Stammzertifikate auf Ihren von Microsoft verwalteten Desktop Geräten bereitgestellt werden.    
+Stammzertifikate sind erforderlich, um Zertifikate über eine SCEP- oder #A0 bereitstellen zu können. Für andere Anwendungen und Dienste in Ihrer Organisation müssen möglicherweise Stammzertifikate auf Ihren Microsoft Managed Desktop-Geräten bereitgestellt werden.    
  
-Vor dem Bereitstellen von SCEP-oder PKCS-Zertifikaten für Microsoft Managed Desktop sollten Sie Anforderungen für jeden Dienst erfassen, der ein Benutzer-oder Gerätezertifikat in Ihrer Organisation erfordert. Um dies zu vereinfachen, können Sie eine der folgenden Planungsvorlagen verwenden:  
+Bevor Sie SCEP- oder #A0 für Microsoft Managed Desktop bereitstellen, sollten Sie Anforderungen für jeden Dienst sammeln, der ein Benutzer- oder Gerätezertifikat in Ihrer Organisation erfordert. Um diese Aktivität zu vereinfachen, können Sie eine der folgenden Planungsvorlagen verwenden:  
  
-- [PKCS-Zertifikatvorlage](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/PKCS-certificate-template.xlsx) 
+- [#A0](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/PKCS-certificate-template.xlsx) 
 - [SCEP-Zertifikatvorlage](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/SCEP-certificate-template.xlsx)
 
   
-## <a name="wi-fi-connectivity-requirements"></a>Wi-Fi-Verbindungsanforderungen
+## <a name="wi-fi-connectivity-requirements"></a>Wi-Fi Konnektivitätsanforderungen
 
-Damit ein Gerät automatisch mit der erforderlichen WLAN-Konfiguration für Ihr Unternehmensnetzwerk bereitgestellt werden kann, benötigen Sie möglicherweise ein Wi-Fi-Konfigurationsprofil. Sie können Microsoft Managed Desktop so konfigurieren, dass diese Profile auf Ihren Geräten bereitgestellt werden. Wenn Ihre Netzwerksicherheit erfordert, dass Geräteteil der lokalen Domäne sind, müssen Sie möglicherweise auch Ihre WLAN-Netzwerkinfrastruktur auswerten, um sicherzustellen, dass Sie mit den von Microsoft verwalteten Desktopgeräten kompatibel ist (Microsoft Managed Desktop-Geräte sind nur Azure AD verbunden). 
+Damit ein Gerät automatisch mit der erforderlichen Wi-Fi für Ihr Unternehmensnetzwerk bereitgestellt werden kann, benötigen Sie möglicherweise ein Wi-Fi Konfigurationsprofil. Sie können Microsoft Managed Desktop so konfigurieren, dass diese Profile auf Ihren Geräten bereitgestellt werden. Wenn Ihre Netzwerksicherheit erfordert, dass Geräte Teil der lokalen Domäne sind, müssen Sie möglicherweise auch Ihre Wi-Fi-Netzwerkinfrastruktur auswerten, um sicherzustellen, dass sie mit Microsoft Managed Desktop-Geräten kompatibel ist (Microsoft Managed Desktop-Geräte sind nur mit Azure AD verbunden). 
  
-Vor dem Bereitstelleneiner WLAN-Konfiguration für Microsoft Managed Desktop-Geräte müssen Sie die Anforderungen Ihrer Organisation für jedes WLAN-Netzwerk erfassen. Um dies zu vereinfachen, können Sie diese [WiFi-Profilvorlage](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/WiFi-profile-template.xlsx)verwenden.
- 
- 
-## <a name="wired-connectivity-requirements-and-8021x-authentication"></a>Kabel Verbindungsanforderungen und 802.1 x-Authentifizierung 
- 
-Wenn Sie die 802.1 x-Authentifizierung verwenden, um den Zugriff von Geräten auf Ihr lokales Netzwerk (Local Area Network, LAN) sicherzustellen, müssen Sie die erforderlichen Konfigurationsdetails auf Ihre verwalteten Desktop Geräte von Microsoft pushen. Microsoft Managed Desktop-Geräte mit Windows 10, Version 1809 oder höher, unterstützen die Bereitstellung einer 802.1 x-Konfiguration über den WiredNetwork-Konfigurationsdienst Anbieter (CSP). Weitere Informationen finden Sie unter [WiredNetwork CSP](https://docs.microsoft.com/windows/client-management/mdm/wirednetwork-csp) Documentation. 
- 
-Bevor Sie ein kabelgebundenes Netzwerk Konfigurationsprofil für Microsoft Managed Desktop-Geräte bereitstellen, erfassen Sie die Anforderungen Ihrer Organisation für Ihr drahtgebundenes Unternehmensnetzwerk. Führen Sie hierfür die folgenden Schritte aus. 
+Bevor Sie eine Wi-Fi auf Microsoft Managed Desktop-Geräten bereitstellen, müssen Sie die Anforderungen Ihrer Organisation für jedes Wi-Fi erfassen. Um diese Aktivität zu vereinfachen, können Sie diese [WiFi-Profilvorlage verwenden.](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/WiFi-profile-template.xlsx)
  
  
-1. Melden Sie sich bei einem Gerät an, auf dem Ihr vorhandenes 802.1 x-Profil konfiguriert ist und das mit dem LAN-Netzwerk verbunden ist.  
-2. Öffnen Sie eine Eingabeaufforderung mit administrativen Anmeldeinformationen. 
-3. Suchen Sie den Namen der LAN-Schnittstelle durch Ausführung der **Netsh Interface Show-Schnittstelle**. 
-4. Exportieren Sie das LAN-Profil-XML, indem Sie **Netsh LAN Export Profile Folder = ausführen.  Interface = "INTERFACE_NAME"**. 
-5. Wenn Sie Ihr exportiertes Profil auf dem Microsoft Managed Desktop-Gerät testen müssen, führen Sie **Netsh LAN Add profile filename = "PATH_AND_FILENAME.xml" Interface = "INTERFACE_NAME"** aus. 
+## <a name="wired-connectivity-requirements-and-8021x-authentication"></a>Anforderungen an kabelgebundene Verbindungen und 802.1x-Authentifizierung 
+ 
+Wenn Sie die 802.1x-Authentifizierung verwenden, um den Zugriff von Geräten auf Ihr lokales Netzwerk (Local Area Network, LAN) zu sichern, müssen Sie die erforderlichen Konfigurationsdetails an Ihre Microsoft Managed Desktop-Geräte übertragen. Microsoft Managed #A0 mit Windows 10, Version 1809 oder höher, unterstützen die Bereitstellung einer 802.1x-Konfiguration über den #A1 (CSP). Weitere Informationen finden Sie in der [#A0 von WiredNetwork.](https://docs.microsoft.com/windows/client-management/mdm/wirednetwork-csp) 
+ 
+Bevor Sie ein kabelgebundenes Netzwerkkonfigurationsprofil auf Microsoft Managed Desktop-Geräten bereitstellen, sollten Sie die Anforderungen Ihrer Organisation für Ihr kabelgebundenes Unternehmensnetzwerk erfassen. Führen Sie hierfür die folgenden Schritte aus. 
+ 
+ 
+1. Melden Sie sich bei einem Gerät an, auf dem Ihr vorhandenes 802.1x-Profil konfiguriert ist und das mit dem NETZWERK verbunden ist.  
+2. Öffnen Sie eine Eingabeaufforderung mit Administratoranmeldeinformationen. 
+3. Suchen Sie den Namen der LAN-Schnittstelle, indem Sie die **Netsh Interface Show Interface ausführen.** 
+4. Exportieren Sie die LAN-Profil-XML, indem **Sie netsh lan export profile folder=ausführen.  Interface="interface_name"**. 
+5. Wenn Sie Ihr exportiertes Profil auf einem Microsoft Managed Desktop-Gerät testen müssen, führen Sie **netsh lan add profile filename="PATH_AND_FILENAME.xml" interface="INTERFACE_NAME" aus.** 
  
  
 ## <a name="deploy-certificate-infrastructure"></a>Bereitstellen der Zertifikatinfrastruktur  
  
-Wenn Sie bereits über eine vorhandene SCEP-oder PKCS-Infrastruktur mit InTune verfügen und diese Ihren Anforderungen entspricht, können Sie Sie auch für Microsoft Managed Desktop verwenden. Wenn keine SCEP-oder PKCS-Infrastruktur bereits vorhanden ist, müssen Sie eine vorbereiten.  
+Wenn Sie bereits über eine SCEP- oder #A0 mit Intune verfügen und dieser Ansatz Ihren Anforderungen entspricht, können Sie ihn auch für Microsoft Managed Desktop verwenden. Wenn noch keine SCEP- oder #A0 vorhanden ist, müssen Sie eine vorbereiten.  
  
-Weitere Informationen finden Sie unter [Konfigurieren eines Zertifikat Profils für Ihre Geräte in Microsoft InTune](https://docs.microsoft.com/intune/certificates-configure). 
+Weitere Informationen finden Sie unter [Konfigurieren eines Zertifikatprofils für Ihre Geräte in Microsoft Intune.](https://docs.microsoft.com/intune/certificates-configure) 
  
  
  
 ## <a name="deploy-a-lan-profile"></a>Bereitstellen eines LAN-Profils 
  
-Nachdem Sie Ihr LAN-Profil exportiert haben, können Sie die Richtlinie für Microsoft Managed Desktop folgendermaßen vorbereiten:   
+Nachdem Ihr LAN-Profil exportiert wurde, können Sie die Richtlinie für Microsoft Managed Desktop vorbereiten, indem Sie die folgenden Schritte ausführen:   
  
-1. Erstellen Sie ein benutzerdefiniertes Profil in Microsoft InTune für das LAN-Profil mit den folgenden Einstellungen (siehe [Verwenden von benutzerdefinierten Einstellungen für Windows 10-Geräte in InTune](https://docs.microsoft.com/intune/custom-settings-windows-10)). Wählen Sie unter **benutzerdefinierte Oma-URI-Einstellungen**die Option **Hinzufügen**aus, und geben Sie dann die folgenden Werte ein: 
-    - Name: *moderner Arbeitsplatz – LAN-Profil für Windows 10* 
-    - Beschreibung: Geben Sie eine Beschreibung ein, die eine Übersicht über die Einstellung und weitere wichtige Details enthält. 
-    - Oma-URI (Groß-/Kleinschreibung beachten): Enter *./Device/Vendor/MSFT/WiredNetwork/LanXML*
-    - Datentyp: SELECT **String (XML File)**. 
-    - Benutzerdefiniertes XML: Hochladen der exportierten XML-Datei.
-2. Übermitteln Sie eine Support Anfrage an den Microsoft Managed Desktop-IT-Betrieb mithilfe des Verwaltungsportals von Microsoft Managed Desktop, um das Konfigurationsprofil auf "moderne Arbeitsplatz Geräte – Test" zu überprüfen und bereitzustellen. Microsoft Managed Desktop-IT-Betrieb informiert Sie, wenn die Anforderung über die Support Anfrage im Administratorportal abgeschlossen wird.
+1. Erstellen Sie ein benutzerdefiniertes Profil in Microsoft Intune für das LAN-Profil mit den folgenden Einstellungen (siehe Verwenden benutzerdefinierter Einstellungen für [Windows 10-Geräte in Intune).](https://docs.microsoft.com/intune/custom-settings-windows-10) Wählen **Sie in den benutzerdefinierten OMA-URI-Einstellungen** die Option **"Hinzufügen"** aus, und geben Sie dann die folgenden Werte ein: 
+    - Name: *Modern Workplace-Windows 10 LAN Profile* 
+    - Beschreibung: Geben Sie eine Beschreibung ein, die einen Überblick über die Einstellung sowie andere wichtige Details bietet. 
+    - OMA-URI (Groß-/Kleinschreibung wird beachtet): Geben Sie *"./Device/Vendor/MSFT/WiredNetwork/LanXML" ein.*
+    - Datentyp: Wählen **Sie Zeichenfolge (XML-Datei) aus.** 
+    - Benutzerdefinierte XML: Laden Sie die exportierte XML-Datei hoch.
+2. Übermitteln Sie eine Supportanfrage an Microsoft Managed Desktop IT Operations über das Microsoft Managed Desktop Admin-Portal, um das Konfigurationsprofil zu überprüfen und auf "Moderne Arbeitsplatzgeräte – Test" zu stellen. Microsoft Managed Desktop IT Operations teilen Ihnen mit, wann die Anforderung über die Supportanfrage im Verwaltungsportal abgeschlossen wurde.
  
-## <a name="deploy-certificates-and-wi-fivpn-profile"></a>Bereitstellen von Zertifikaten und Wi-Fi/VPN-Profil 
+## <a name="deploy-certificates-and-wi-fivpn-profile"></a>Bereitstellen von Zertifikaten und WLAN/VPN-Profil 
  
  
-Führen Sie die folgenden Schritte aus, um Zertifikate und Profile bereitzustellen:
+Führen Sie zum Bereitstellen von Zertifikaten und Profilen die folgenden Schritte aus:
 
-1. Erstellen Sie ein Profil für jedes der Stamm-und Zwischenzertifikate (siehe [Create Trusted Certificate Profiles](https://docs.microsoft.com/intune/protect/certificates-configure#step-3-create-trusted-certificate-profiles). Jedes dieser Profile muss eine Beschreibung aufweisen, die ein Ablaufdatum im Format tt/mm/jjjj enthält. **Zertifikat profile ohne Ablaufdatum werden nicht bereitgestellt.**
-2. Erstellen eines Profils für jedes SCEP-oder PKCS-Zertifikat (siehe [Erstellen eines SCEP-Zertifikats Profils](https://docs.microsoft.com/intune/protect/certificates-scep-configure#create-a-scep-certificate-profile) oder [Erstellen eines PKCS-Zertifikat Profils](https://docs.microsoft.com/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)) jedes dieser Profile muss eine Beschreibung aufweisen, die ein Ablaufdatum im Format tt/mm/jjjj enthält. **Zertifikat profile ohne Ablaufdatum werden nicht bereitgestellt.**
-3. Erstellen Sie ein Profil für jedes Firmen-WLAN-Netzwerk (siehe [WLAN-Einstellungen für Geräte unter Windows 10 und höher](https://docs.microsoft.com/intune/wi-fi-settings-windows)).
-4. Erstellen Sie ein Profil für jedes Unternehmens VPN (siehe [Windows 10 und Windows holographische Geräteeinstellungen zum Hinzufügen von VPN-Verbindungen mit InTune](https://docs.microsoft.com/intune/vpn-settings-windows-10)).
-5. Übermitteln Sie eine Support Anforderung mit dem Titel "Zertifikatbereitstellung" oder "WLAN-Profil Bereitstellung" an Microsoft Managed Desktop-IT-Vorgänge mithilfe des Verwaltungsportals von Microsoft Managed Desktop, um das Konfigurationsprofil auf "moderne Arbeitsplatz Geräte – Test" zu überprüfen und bereitzustellen. Microsoft Managed Desktop-IT-Betrieb informiert Sie darüber, wann die Anforderung über die Support Anfrage im Administratorportal abgeschlossen wurde. 
+1. Erstellen Sie ein Profil für jedes Stamm- und Zwischenzertifikat (siehe Erstellen [von vertrauenswürdigen Zertifikatprofilen).](https://docs.microsoft.com/intune/protect/certificates-configure#step-3-create-trusted-certificate-profiles) Jedes dieser Profile muss eine Beschreibung enthalten, die ein Ablaufdatum im TT/MM/JJJJ-Format enthält. **Zertifikatprofile ohne Ablaufdatum werden nicht bereitgestellt.**
+2. Erstellen Eines Profils für jedes SCEP- oder #A0 (siehe Erstellen eines [#A1](https://docs.microsoft.com/intune/protect/certificates-scep-configure#create-a-scep-certificate-profile) oder Erstellen eines PKCS-Zertifikatprofils) Jedes dieser Profile muss eine Beschreibung enthalten, die ein Ablaufdatum im DD/MM/JJJJ-Format enthält. [](https://docs.microsoft.com/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile) **Zertifikatprofile ohne Ablaufdatum werden nicht bereitgestellt.**
+3. Erstellen Sie ein Profil für jedes [Unternehmens-WLAN-Netzwerk (siehe WLAN-Einstellungen für Windows 10 und höher).](https://docs.microsoft.com/intune/wi-fi-settings-windows)
+4. Erstellen Sie ein Profil für jedes Unternehmens-VPN (siehe Windows 10- und Windows Holographic-Geräteeinstellungen zum Hinzufügen von [VPN-Verbindungen mithilfe von Intune).](https://docs.microsoft.com/intune/vpn-settings-windows-10)
+5. Übermitteln Sie eine Supportanfrage mit dem Titel "Zertifikatbereitstellung" oder "Wi-Fi-Profilbereitstellung" an Microsoft Managed Desktop IT Operations, indem Sie das Microsoft Managed Desktop Admin Portal verwenden, um das Konfigurationsprofil unter "Moderne Arbeitsplatzgeräte – Test" zu überprüfen und bereitstellen. Microsoft Managed Desktop IT Operations teilen Ihnen mit, wann die Anforderung über die Supportanfrage im Verwaltungsportal abgeschlossen wurde. 
  
  

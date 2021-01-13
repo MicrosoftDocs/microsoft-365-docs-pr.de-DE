@@ -1,49 +1,49 @@
 ---
 title: Einrichten von Geräten für Microsoft Managed Desktop
-description: ''
+description: So erhalten Sie neue Geräte oder verwenden vorhandene Geräte, die qualifiziert sind
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5efda6fe73dd5454c8b527b6ba63c9ae81951dd2
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 65c7c0c938b376a1b53910e7ca783b7bfe8a7ea8
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950508"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840503"
 ---
 # <a name="set-up-microsoft-managed-desktop-devices"></a>Richten Sie Microsoft Managed Desktop-Geräte ein
 
-Sie können sowohl neue als auch vorhandene Geräte in Microsoft Managed Desktop verwenden.
+Sie können neue und vorhandene Geräte in Microsoft Managed Desktop verwenden.
 
-## <a name="to-obtain-new-devices"></a>So rufen Sie neue Geräte ab
+## <a name="to-obtain-new-devices"></a>So erhalten Sie neue Geräte
 
-Es wird empfohlen, mit einem unserer genehmigten Geräte Partner zusammenzuarbeiten. Sie können mit Ihrem Microsoft-Konto Kontakt arbeiten, um weitere Hilfe beim Einrichten einer Gerätepartnerschaft zu erhalten. Im Wesentlichen jedoch ist der Prozess wie folgt:
+Wir empfehlen, mit einem unserer genehmigten Gerätepartner zusammen zu arbeiten. Sie können mit Ihrem Microsoft-Konto-Kontakt zusammenarbeiten, um weitere Hilfe beim Einrichten einer Gerätepartnerschaft zu erhalten. Im Wesentlichen ist der Vorgang jedoch wie hier:
 
-1. Überprüfen Sie die Liste der [derzeit genehmigten Geräte](../service-description/device-list.md).
-2. Ordnen Sie die Geräte in Zusammenarbeit mit einem zugelassenen Geräte Partner an.
-3. Nachdem Sie angekommen sind, führen Sie einen der folgenden Schritte aus:
+1. Überprüfen Sie die Liste der [derzeit genehmigten Geräte.](../service-description/device-list.md)
+2. Bestellen Sie die Geräte, und arbeiten Sie mit einem genehmigten Gerätepartner.
+3. Nachdem sie angekommen sind, gehen Sie wie folgt vor:
     - [Selbstregistrieren neuer Geräte](register-devices-self.md)
-    - Arbeiten mit einem Partner zum Registrieren der Geräte
-4. [Vorbereiten der Benutzer für die](get-started-devices.md) Verwendung von Microsoft Managed Desktop-Geräten
+    - Zusammenarbeit mit einem Partner zum Registrieren der Geräte
+4. [Bereiten Sie Ihre Benutzer auf die](get-started-devices.md) Verwendung von Microsoft Managed Desktop-Geräten vor
 
-## <a name="to-re-use-existing-devices"></a>So verwenden Sie vorhandene Geräte erneut
+## <a name="to-reuse-existing-devices"></a>So verwenden Sie vorhandene Geräte wieder
 
-1. Überprüfen Sie die Liste der [derzeit genehmigten Geräte](../service-description/device-list.md) , um festzustellen, welches Gerät für die Verwendung mit Microsoft Managed Desktop genehmigt wurde. Wenn Sie ein vorhandenes Gerät erneut verwenden, müssen Sie es erneut abbilden.
-2. Führen Sie eine der folgenden Aktionen aus:
+1. Überprüfen Sie die Liste der [derzeit genehmigten Geräte,](../service-description/device-list.md) um zu ermitteln, welche Ihrer Geräte für die Verwendung mit Microsoft Managed Desktop genehmigt wurden. Wenn Sie ein vorhandenes Gerät wiederverwenden, müssen Sie es neu abbilden.
+2. Gehen Sie wie folgt vor:
     - [Selbstregistrieren vorhandener Geräte](register-reused-devices-self.md)
-    - Arbeiten mit einem Partner zum Registrieren der Geräte
-3. [Vorbereiten der Benutzer für die](get-started-devices.md) Verwendung von Microsoft Managed Desktop-Geräten
+    - Zusammenarbeit mit einem Partner zum Registrieren der Geräte
+3. [Bereiten Sie Ihre Benutzer auf die](get-started-devices.md) Verwendung von Microsoft Managed Desktop-Geräten vor
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Schritte zum Einstieg in Microsoft Managed Desktop
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Schritte für die ersten Schritte mit Microsoft Managed Desktop
 
 1. [Hinzufügen und Überprüfen von Administrator-Kontakten im-Administratorportal](add-admin-contacts.md)
 2. [Bedingten Zugriff anpassen](conditional-access.md)
 3. [Zuweisen von Lizenzen](assign-licenses.md)
 4. [Intune-Unternehmensportal bereitstellen](company-portal.md)
 5. [Aktivieren von Enterprise State Roaming](enterprise-state-roaming.md)
-6. Einrichten von Geräten (dieses Thema)
+6. Einrichten von Geräten (dieser Artikel)
 7. [Vorbereiten Ihrer Benutzer für die Verwendung von Geräten](get-started-devices.md)
 8. [Bereitstellen von Apps](deploy-apps.md)

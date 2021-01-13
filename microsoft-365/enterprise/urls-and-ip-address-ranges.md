@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 'Zusammenfassung: Office 365 erfordert eine Internetverbindung. Die unten aufgeführten Endpunkte sollten für Kunden, die Office 365-Pläne verwenden, einschließlich Government Community Cloud (GCC), erreichbar sein.'
 hideEdit: true
-ms.openlocfilehash: 88837f495caac13db5bf029354d3a27ffa21dba6
-ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
+ms.openlocfilehash: 9b705c6cad0387efb16f3fc5494b1ba2fe337732
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49787691"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794400"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Office 365-URLs und -IP-Adressbereiche
 
@@ -79,6 +79,12 @@ Dies sind die dargestellten Datenspalten:
   
 [Netzwerke für die Inhaltsübermittlung](https://support.office.com/article/content-delivery-networks-0140f704-6614-49bb-aa6c-89b75dcd7f1f)
   
-[IP-Bereiche von Microsoft Azure-Rechenzentren](https://www.microsoft.com/download/details.aspx?id=41653)
+[Microsoft Azure IP-Bereiche und Dienstkategorien – öffentliche Cloud](https://www.microsoft.com/download/details.aspx?id=56519)
+
+[Microsoft Azure IP-Bereiche und Dienstkategorien – Cloud der US-Regierung](https://www.microsoft.com/download/details.aspx?id=57063)
+
+[Microsoft Azure IP-Bereiche und Dienstkategorien – Deutschland-Cloud](https://www.microsoft.com/download/details.aspx?id=57064)
+
+[Microsoft Azure IP-Bereiche und Dienstkategorien – China-Cloud](https://www.microsoft.com/download/details.aspx?id=57062)
   
 [Öffentlicher Microsoft IP-Bereich](https://www.microsoft.com/download/details.aspx?id=53602)

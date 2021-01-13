@@ -1,81 +1,81 @@
 ---
 title: Selbstregistrieren neuer Geräte
-description: Geräte selbst registrieren, damit Sie von Microsoft Managed Desktop verwaltet werden können
+description: Registrieren Sie Geräte selbst, damit sie von Microsoft Managed Desktop verwaltet werden können.
 ms.prod: w10
 author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 48c69a71a98e381123a8f87acc20a34eb6e99806
-ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
+ms.openlocfilehash: df6013f2f7fec32e79557a82f9b56fe4ad487786
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49071489"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840681"
 ---
 # <a name="register-new-devices-yourself"></a>Selbstregistrieren neuer Geräte
 
-Microsoft Managed Desktop kann mit brandneuen Geräten verwendet werden, oder Sie können Geräte wieder verwenden, die Sie möglicherweise bereits haben (Dies erfordert ein erneutes Abbild). Sie können Geräte mit Microsoft Managed Desktop im Microsoft Endpoint Manager-Portal registrieren.
+Microsoft Managed Desktop kann mit ganz neuen Geräten verwendet werden, oder Sie können bereits vorhandene Geräte wiederverwenden (für die ein Reimage erforderlich ist). Sie können Geräte bei Microsoft Managed Desktop im Microsoft Endpoint Manager-Portal registrieren.
 
 > [!NOTE]
-> Arbeiten mit einem Partner, um Geräte zu beziehen? Wenn dies der Fall ist, müssen Sie sich keine Gedanken über das erhalten der Hardware-Hashes machen. Das werden Sie für Sie erledigen. Stellen Sie sicher, dass Ihr Partner eine Beziehung mit Ihnen im [Partner Center](https://partner.microsoft.com/dashboard)herstellt. Ihr Partner kann weitere Informationen finden Sie unter [Hilfe zum Partner Center](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer). Nachdem diese Beziehung hergestellt wurde, registriert Ihr Partner einfach Geräte in Ihrem Namen – keine weiteren Schritte, die von Ihnen benötigt werden. Wenn Sie die Details anzeigen möchten oder Ihr Partner Fragen hat, finden Sie unter [Schritte für Partner zum Registrieren von Geräten](register-devices-partner.md). Nachdem die Geräte registriert wurden, können Sie mit der [Überprüfung des Images](#check-the-image) fortfahren und [die Geräte](#deliver-the-device) an Ihre Benutzer übermitteln.
+> Arbeiten Sie mit einem Partner zusammen, um Geräte zu erhalten? Wenn ja, müssen Sie sich keine Gedanken über das Abrufen der Hardwarehashes machen. Sie übernehmen dies für Sie. Stellen Sie sicher, dass Ihr Partner eine Beziehung mit Ihnen im [Partner Center aufbaut.](https://partner.microsoft.com/dashboard) Weitere Informationen finden Sie in der [Partner Center-Hilfe.](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer) Sobald diese Beziehung hergestellt ist, registriert Ihr Partner einfach Geräte in Ihrem Namen – keine weiteren Aktionen von Ihnen erforderlich. Wenn Sie die Details anzeigen möchten oder Ihr Partner Fragen hat, lesen Sie die Schritte für [Partner, um Geräte zu registrieren.](register-devices-partner.md) Nachdem die Geräte registriert wurden, [](#check-the-image) können Sie mit der Überprüfung des Images und der Bereitstellung der Geräte [für](#deliver-the-device) Ihre Benutzer fortfahren.
 
-## <a name="prepare-to-register-brand-new-devices"></a>Vorbereiten der Registrierung brandneuer Geräte
+## <a name="prepare-to-register-brand-new-devices"></a>Vorbereiten der Registrierung von ganz neuen Geräten
 
 
-Nachdem Sie die neuen Geräte in der Hand haben, führen Sie die folgenden Schritte aus:
+Sobald Sie die neuen Geräte in der Hand haben, führen Sie die folgenden Schritte aus:
 
 1. [Rufen Sie den Hardwarehash für jedes Gerät ab.](#obtain-the-hardware-hash)
-2. [Zusammenführen der Hash Daten](#merge-hash-data)
-3. [Registrieren Sie die Geräte in Microsoft Managed Desktop](#register-devices-by-using-the-admin-portal).
-4. [Stellen Sie sicher, dass das Bild korrekt ist.](#check-the-image)
-5. [Verteilen des Geräts](#deliver-the-device)
+2. [Zusammenführen der Hashdaten](#merge-hash-data)
+3. [Registrieren Sie die Geräte in Microsoft Managed Desktop.](#register-devices-by-using-the-admin-portal)
+4. [Überprüfen Sie, ob das Bild korrekt ist.](#check-the-image)
+5. [Bereitstellen des Geräts](#deliver-the-device)
 
-### <a name="obtain-the-hardware-hash"></a>Abrufen des Hardwarehash
+### <a name="obtain-the-hardware-hash"></a>Abrufen des Hardwarehashs
 
-Microsoft Managed Desktop identifiziert jedes Gerät eindeutig, indem es auf seinen Hardwarehash verweist. Sie haben drei Optionen zum erhalten dieser Informationen:
+Microsoft Managed Desktop identifiziert jedes Gerät eindeutig, indem auf den Hardwarehash bezuget wird. Sie haben drei Optionen, um diese Informationen zu erhalten:
 
-- Fragen Sie Ihren OEM-Lieferanten nach der Autopilot-Registrierungsdatei, die die Hardware-Hashes enthält.
-- Führen Sie auf jedem Gerät ein [Windows PowerShell-Skript](#powershell-script-method) aus, und sammeln Sie die Ergebnisse in einer Datei.
-- Starten Sie jedes Gerät, aber schließen Sie nicht die Windows Setup-Umgebung ab – und [sammeln Sie die Hashes auf einem wechselbaren Flashlaufwerk](#flash-drive-method).
+- Fragen Sie Ihren #A0 nach der AutoPilot-Registrierungsdatei, die die Hardwarehashes enthält.
+- Führen Sie [ein Windows PowerShell auf](#powershell-script-method) jedem Gerät aus, und sammeln Sie die Ergebnisse in einer Datei.
+- Starten Sie jedes Gerät – aber schließen Sie die #A0 nicht ab – und sammeln Sie die Hashes auf einem [Wechseldatenträger.](#flash-drive-method)
 
 #### <a name="powershell-script-method"></a>PowerShell-Skriptmethode
 
-Sie können das [Get-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) PowerShell-Skript auf der PowerShell Gallery-Website verwenden. Weitere Informationen zur Geräteidentifikation und zum Hardwarehash finden Sie unter [Hinzufügen von Geräten zu Windows Autopilot](https://docs.microsoft.com/mem/autopilot/add-devices#device-identification).
+Sie können [](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) dasGet-WindowsAutoPilotInfo.ps1A0 auf der PowerShell-Katalog-Website verwenden. Weitere Informationen zur Geräteidentifikation und zum Hardwarehash finden Sie unter [Hinzufügen von Geräten zu Windows Autopilot.](https://docs.microsoft.com/mem/autopilot/add-devices#device-identification)
 
 1.  Öffnen Sie eine PowerShell-Eingabeaufforderung mit Administratorrechten.
 2.  Ausführen `Install-Script -Name Get-WindowsAutoPilotInfo`
 3.  Ausführen `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
-4.  Ausführen `powershell -ExecutionPolicy restricted` , um zu verhindern, dass nachfolgende uneingeschränkte Skripts ausgeführt werden.
+4.  Ausführen, `powershell -ExecutionPolicy restricted` um zu verhindern, dass nachfolgende uneingeschränkte Skripts ausgeführt werden.
 
 
-#### <a name="flash-drive-method"></a>Flash Drive-Methode
+#### <a name="flash-drive-method"></a>Flashlaufwerkmethode
 
-1. Legen Sie auf einem anderen Gerät als dem, das Sie gerade registrieren, ein USB-Laufwerk ein.
+1. Fügen Sie auf einem anderen Gerät als dem, das Sie registrieren, ein USB-Laufwerk ein.
 2. Öffnen Sie eine PowerShell-Eingabeaufforderung mit Administratorrechten.
 3. Ausführen `Save-Script -Name Get-WindowsAutoPilotInfo -Path <pathToUsb>`
-4. Aktivieren Sie das Gerät, das Sie registrieren, aber *beginnen Sie nicht mit der Setup-Umgebung*. Wenn Sie das Setupprogramm versehentlich gestartet haben, müssen Sie das Gerät zurücksetzen oder neu abbilden.
-5. Legen Sie das USB-Laufwerk ein, und drücken Sie dann UMSCHALT + F10.
-6. Öffnen Sie eine PowerShell-Eingabeaufforderung mit Administratorrechten, und führen Sie dann aus `cd <pathToUsb>` .
+4. Aktivieren Sie das Gerät, das Sie registrieren, *aber starten Sie die Einrichtung nicht.* Wenn Sie versehentlich die Einrichtung starten, müssen Sie das Gerät zurücksetzen oder ein Reimaging durchführen.
+5. Setzen Sie das USB-Laufwerk ein, und drücken Sie dann UMSCHALT+ F10.
+6. Öffnen Sie eine PowerShell-Eingabeaufforderung mit Administratorrechten, und führen Sie dann `cd <pathToUsb>` aus.
 7. Ausführen `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
 8. Ausführen `.\Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
 9. Entfernen Sie das USB-Laufwerk, und fahren Sie dann das Gerät herunter, indem Sie `shutdown -s -t 0`
 
 >[!IMPORTANT]
->Schalten Sie das Gerät, das Sie erneut registrieren, erst wieder ein, wenn Sie die Registrierung dafür abgeschlossen haben. 
+>Schalten Sie das Gerät, das Sie registrieren, erst wieder ein, wenn Sie die Registrierung für das Gerät abgeschlossen haben. 
 
 
-### <a name="merge-hash-data"></a>Zusammenführen von Hash Daten
+### <a name="merge-hash-data"></a>Zusammenführen von Hashdaten
 
-Sie müssen die Daten in den CSV-Dateien in einer einzigen Datei zusammenfassen, um die Registrierung abzuschließen. Hier ist ein Beispiel für PowerShell-Skripts, um dies zu vereinfachen:
+Sie müssen die Daten in den CSV-Dateien in einer einzigen Datei kombinieren, um die Registrierung abzuschließen. Hier sehen Sie ein Beispiel für ein PowerShell-Skript, um dies einfach zu machen:
 
 `Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
 
 
-#### <a name="register-devices-by-using-the-admin-portal"></a>Registrieren von Geräten mithilfe des Verwaltungsportals
+#### <a name="register-devices-by-using-the-admin-portal"></a>Registrieren von Geräten über das Verwaltungsportal
 
-Wählen Sie in [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)im linken Navigationsbereich **Geräte** aus. Suchen Sie im Menü nach dem Abschnitt Microsoft Managed Desktop, und wählen Sie **Geräte** aus. Wählen Sie im Arbeitsbereich von Microsoft Managed Desktop Geräte die Option **+ Register Geräte** aus, die ein einfliegen zum Registrieren neuer Geräte öffnen.
+Wählen [Sie in Microsoft Endpoint Manager](https://endpoint.microsoft.com/)im linken Navigationsbereich "Geräte" aus.  Suchen Sie im Menü nach dem Abschnitt "Microsoft Managed Desktop", und wählen Sie **"Geräte" aus.** Wählen Sie im Arbeitsbereich "Microsoft Managed Desktop Devices" die Option **+Geräte** registrieren aus, wodurch ein Fly-In zum Registrieren neuer Geräte geöffnet wird.
 
 <!-- [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
@@ -85,42 +85,42 @@ Wählen Sie in [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)im l
 
 Gehen Sie folgendermaßen vor:
 
-1. Geben Sie im Feld **Dateiupload** einen Pfad zu der CSV-Datei an, die Sie zuvor erstellt haben.
-3. Wählen Sie **Geräte registrieren** aus. Das System fügt die Geräte zu ihrer Geräteliste auf dem Blade- **Gerät** hinzu, das als " **Registrierung ausstehend** " gekennzeichnet wird. Die Registrierung dauert in der Regel weniger als 10 Minuten, und wenn das Gerät erfolgreich ist, wird es **für den Benutzer bereit** angezeigt, sodass es bereit ist und darauf wartet, dass ein Benutzer mit der Verwendung beginnt.
+1. Geben **Sie im Dateiupload** einen Pfad zu der zuvor erstellten CSV-Datei an.
+3. Wählen Sie **Geräte registrieren aus.** Das System fügt die Geräte ihrer Liste der Geräte auf Geräten **hinzu,** die als **Registrierung ausstehend markiert sind.** Die Registrierung dauert in der Regel weniger als 10 Minuten, und bei erfolgreicher Verwendung wird das Gerät als bereit für den Benutzer angezeigt, was bedeutet, dass es bereit ist und darauf wartet, dass ein Benutzer mit der Verwendung beginnt. 
 
 
-Sie können den Fortschritt der Geräteregistrierung auf der Hauptseite überwachen. Mögliche Zustände, die dort gemeldet werden, umfassen:
+Sie können den Fortschritt der Geräteregistrierung auf der Hauptseite überwachen. Mögliche gemeldete Zustände sind:
 
 | Status | Beschreibung |
 |---------------|-------------|
-| Registrierung ausstehend | Die Registrierung ist noch nicht abgeschlossen. Überprüfen Sie später erneut. |
-| Registrierung fehlgeschlagen | Die Registrierung konnte nicht abgeschlossen werden. Weitere Informationen erhalten Sie unter [Problembehandlung bei der Geräteregistrierung](#troubleshooting-device-registration) . |
-| Benutzer einsatzfähig | Die Registrierung wurde erfolgreich ausgeführt, und das Gerät kann nun für den Benutzer bereitgestellt werden. Microsoft Managed Desktop führt Sie durch die erstmalige Einrichtung, sodass Sie keine weiteren Vorbereitungen treffen müssen. |
-| Aktiv | Das Gerät wurde dem Benutzer zugestellt und Sie haben sich bei Ihrem Mandanten registriert. Dies deutet auch darauf hin, dass das Gerät regelmäßig verwendet wird. |
-| Inaktiv | Das Gerät wurde dem Benutzer zugestellt und Sie haben sich bei Ihrem Mandanten registriert. Sie haben das Gerät jedoch vor kurzem nicht verwendet (in den letzten 7 Tagen).  | 
+| Registrierung ausstehend | Die Registrierung ist noch nicht abgeschlossen. Check back later. |
+| Registrierung fehlgeschlagen | Die Registrierung konnte nicht abgeschlossen werden. Weitere Informationen [finden Sie unter Problembehandlung bei](#troubleshooting-device-registration) der Geräteregistrierung. |
+| Bereit für Benutzer | Die Registrierung war erfolgreich, und das Gerät kann jetzt an den Benutzer zugestellt werden. Microsoft Managed Desktop führt sie durch die erste Einrichtung, sodass Sie keine weiteren Vorbereitungen machen müssen. |
+| Aktiv | Das Gerät wurde an den Benutzer zugestellt und bei Ihrem Mandanten registriert. Dieser Zustand gibt auch an, dass sie das Gerät regelmäßig verwenden. |
+| Inaktiv | Das Gerät wurde an den Benutzer zugestellt und bei Ihrem Mandanten registriert. Sie haben das Gerät jedoch erst kürzlich (in den letzten 7 Tagen) verwendet.  | 
 
 #### <a name="troubleshooting-device-registration"></a>Problembehandlung bei der Geräteregistrierung
 
 | Fehlermeldung | Details |
 |---------------|-------------|
-| Gerät nicht gefunden | Dieses Gerät konnte nicht registriert werden, da keine Übereinstimmung für den bereitgestellten Hersteller, das Modell oder die Seriennummer gefunden werden konnte. Bestätigen Sie diese Werte mit Ihrem Gerätelieferanten. |
-| Hardware Hash ungültig | Der für dieses Gerät angegebene Hardwarehash wurde nicht ordnungsgemäß formatiert. Überprüfen Sie den Hardwarehash doppelt, und senden Sie dann erneut. |
-| Gerät ist bereits registriert | Dieses Gerät ist bereits für Ihre Organisation registriert. Keine weitere Aktion erforderlich. |
-| Von einer anderen Organisation beanspruchtes Gerät | Dieses Gerät wurde bereits von einer anderen Organisation beansprucht. Erkundigen Sie sich bei Ihrem Gerätelieferanten. |
-| Unerwarteter Fehler | Ihre Anforderung konnte nicht automatisch verarbeitet werden. Kontaktieren Sie den Support, und geben Sie die Anforderungs-ID an: <requestId> |
+| Gerät nicht gefunden | Wir konnten dieses Gerät nicht registrieren, da wir keine Übereinstimmung für den angegebenen Hersteller, das Modell oder die Seriennummer finden konnten. Bestätigen Sie diese Werte bei Ihrem Geräteanbieter. |
+| Hardwarehash ungültig | Der Hardwarehash, den Sie für dieses Gerät bereitgestellt haben, wurde nicht richtig formatiert. Überprüfen Sie den Hardwarehash, und übermitteln Sie es erneut. |
+| Gerät bereits registriert | Dieses Gerät ist bereits in Ihrer Organisation registriert. Keine weitere Aktion erforderlich. |
+| Von einer anderen Organisation beanspruchtes Gerät | Dieses Gerät wurde bereits von einer anderen Organisation beansprucht. Er muss sich bei Ihrem Geräteanbieter ernennen. |
+| Unerwarteter Fehler | Ihre Anforderung konnte nicht automatisch verarbeitet werden. Wenden Sie sich an den Support, und geben Sie die Anforderungs-ID an: <requestId> |
 
 ### <a name="check-the-image"></a>Überprüfen des Bilds
 
-Wenn Ihr Gerät von einem Microsoft Managed Desktop Partner-Anbieter stammt, sollte das Bild korrekt sein.
+Wenn Ihr Gerät von einem Microsoft Managed Desktop -Partneranbieter stammen, sollte das Image korrekt sein.
 
-Sie können das Bild auch auf eigene Faust anwenden, wenn Sie es vorziehen. Um zu beginnen, wenden Sie sich an den Microsoft-Mitarbeiter, mit dem Sie zusammenarbeiten, und Sie werden den Speicherort und die Schritte zum Anwenden des Abbilds erhalten.
+Sie können das Bild auch selbst anwenden. Um zu beginnen, wenden Sie sich an den Microsoft-Vertreter, mit dem Sie arbeiten, und dieser stellt Ihnen den Speicherort und die Schritte zum Anwenden des Bilds zur Verfügung.
 
-### <a name="deliver-the-device"></a>Verteilen des Geräts
+### <a name="deliver-the-device"></a>Bereitstellen des Geräts
 
 > [!IMPORTANT]
-> Bevor Sie das Gerät an Ihren Benutzer übergeben, müssen Sie sicherstellen, dass Sie die [entsprechenden Lizenzen](../get-ready/prerequisites.md) für diesen Benutzer erworben und angewendet haben.
+> Bevor Sie das Gerät an Ihren Benutzer aus der Hand nehmen, stellen Sie sicher, dass Sie die entsprechenden [Lizenzen](../get-ready/prerequisites.md) für diesen Benutzer erhalten und angewendet haben.
 
-Wenn alle Lizenzen angewendet werden, können Sie [Ihre Benutzer zur Verwendung von Geräten verwenden](get-started-devices.md), und dann kann Ihr Benutzer das Gerät starten und die Windows Setup-Umgebung durchlaufen.
+Wenn alle Lizenzen angewendet werden, können Sie Ihre Benutzer für die Verwendung von Geräten bereit [machen.](get-started-devices.md)Anschließend kann der Benutzer das Gerät starten und die Windows-Setup-Erfahrung fortsetzen.
 
 
 
