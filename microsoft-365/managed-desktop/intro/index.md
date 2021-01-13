@@ -1,6 +1,6 @@
 ---
 title: Ist Microsoft Managed Desktop das Richtige für Sie?
-description: ''
+description: Orientierung, was der Dienst ist und Verknüpfungen zu Artikeln für verschiedene Zielgruppen
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b877a35133be13cd6783659f1e5d981633338be8
-ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
+ms.openlocfilehash: 8e95eb0fd0e03dc718affa7e7cf044beb654bb56
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269373"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840935"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Was ist Microsoft Managed Desktop?
 
@@ -71,9 +71,9 @@ Wir überwachen auch den Gerätezustand und geben Ihnen Einblicke in die Geräte
 ## <a name="need-more-details"></a>Möchten Sie mehr wissen?
 Weitere Informationen zum Wert von Microsoft Managed Desktop, einschließlich Kundengeschichten, finden Sie unter [Microsoft Managed Desktop](https://aka.ms/mmd). Die [Roadmap](https://aka.ms/AA6jiam), eine [Forrester Total Economic Impact-Fallstudie](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/forrester-tei-study.pdf) und eine [einseitige Zusammenfassung](https://aka.ms/AA6ob3h) zum Herunterladen sind großartige Möglichkeiten, um mit mehr zu beginnen. Die neuesten Nachrichten finden Sie im Microsoft Managed Desktop-[Blog](https://aka.ms/AA6l2dd).
 
-Wenn Microsoft Managed Desktop für Ihr Unternehmen geeignet erscheint, können Sie zusätzliche Dokumentationen lesen, in denen mehr über den Dienst erläutert wird, wie Sie Ihre Organisation auf die Registrierung vorbereiten, wie Sie mit dem Service beginnen und danach den Betrieb fortsetzen, einschließlich der Frage, wie Sie und Ihre Benutzer bei Bedarf problemlos Hilfe erhalten können. Wenn Sie bereits bereit sind, an Bord zu kommen, wenden Sie sich zunächst an Ihr [lokales Account-Team](https://pages.email.office.com/contactmmd/).
+Wenn Microsoft Managed Desktop für Ihr Unternehmen geeignet erscheint, können Sie weitere Dokumentationen lesen, in denen mehr über den Dienst erläutert wird, wie Sie Ihre Organisation auf die Registrierung vorbereiten, wie Sie mit dem Service beginnen und danach den Betrieb fortsetzen, einschließlich der Frage, wie Sie und Ihre Benutzer bei Bedarf problemlos Hilfe erhalten können. Wenn Sie bereits bereit sind, an Bord zu kommen, wenden Sie sich zunächst an Ihr [lokales Account-Team](https://pages.email.office.com/contactmmd/).
 
-**Mehr Überblick und Hintergrund** In erster Linie für technische und geschäftliche Entscheidungsträger beschreiben diese Themen die Aufteilung der Rollen und Verantwortlichkeiten zwischen Ihrem Unternehmen und Microsoft, mehr über die in Microsoft Managed Desktop verwendeten Technologien und darüber, wie der Dienst in eine umfassendere Strategie als Teil des ITIL-Framework passt.
+**Mehr Überblick und Hintergrund** In erster Linie für technische und geschäftliche Entscheidungsträger beschreiben diese Artikel die Aufteilung der Rollen und Verantwortlichkeiten zwischen Ihrem Unternehmen und Microsoft, mehr über die in Microsoft Managed Desktop verwendeten Technologien und darüber, wie der Dienst in eine umfassendere Strategie als Teil des ITIL-Framework passt.
 
 - [Microsoft Managed Desktop-Rollen und Verantwortlichkeiten](roles-and-responsibilities.md)
 - [Microsoft Managed Desktop-Technologien](technologies.md)

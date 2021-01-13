@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0e1189634857921d9c0e3df0683bd6e7758cd058
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: b5c5757c5e07e6edd546c0553028ccf56eb1b4f8
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289471"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840313"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Beschreibung des Microsoft Managed Desktop-Diensts
 
@@ -29,7 +29,7 @@ Microsoft Managed Desktop ist ein Dienst, der Ihren Benutzern eine sichere, mode
 - IT-Support für Ihre Benutzer
 - Operativer Support für IT-Experten
 
-Genauere Informationen über die spezifischen Dienste, die in Microsoft Managed Desktop enthalten sind, finden Sie in den anderen Themen dieses Abschnitts. Wenn Sie bereits beschlossen haben, dass Microsoft Managed Desktop das Richtige für Sie ist, bieten Ihnen die Themen in [Vorbereiten auf die Registrierung in Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/) eine Übersicht über die nächsten Schritte, mit denen Sie den Dienst nutzen.
+Genauere Informationen über die spezifischen Dienste, die in Microsoft Managed Desktop enthalten sind, finden Sie in den anderen Artikeln dieses Abschnitts. Wenn Sie bereits beschlossen haben, dass Microsoft Managed Desktop das Richtige für Sie ist, bieten Ihnen die Artikel in [Vorbereiten auf die Registrierung in Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/) eine Übersicht über die nächsten Schritte, mit denen Sie den Dienst nutzen.
 
 - [Von Microsoft Managed Desktop unterstützte Regionen und Sprachen](regions-languages.md) erklärt Ihnen, welche Regionen und Sprachen für den Dienst unterstützt werden.
 - Um das beste Erlebnis für Ihre Benutzer sicherzustellen, werden nur bestimmte Geräte von Microsoft Managed Desktop unterstützt. [Programm-Geräte](device-list.md) gibt die genauen Gerätemodelle und Konfigurationen an, die Sie mit dem Dienst verwenden können, egal ob Sie diese selbst anbieten oder mit einem Partner zusammenarbeiten.
