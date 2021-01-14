@@ -21,7 +21,7 @@ ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Zusammenfassung: '
 ms.openlocfilehash: bcec542ad285dcabaf71af1ea8efc28f3f7d6b5a
 ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "49780320"
@@ -34,35 +34,35 @@ ms.locfileid: "49780320"
 
 ## <a name="how-to-request-migration"></a>So fordern Sie die Migration an
 
-Wenn Sie berechtigter Kunde sind, ihren Dienst in Microsoft Cloud Deutschland (Microsoft Cloud Deutschland) bereitgestellt haben und sich als Mandantenadministrator (globaler) Administrator angemeldet haben, können Sie sich auf einer Seite im Microsoft 365 Admin Center für die Migration anmelden.
+Wenn Sie ein berechtigter Kunde sind, dessen Dienst in der Microsoft Cloud Germany (Microsoft Cloud Deutschland) bereitgestellt wird und Sie sich als (globaler) Mandanten-Administrator angemeldet haben, können Sie sich über eine Seite im Microsoft 365 Admin Center für die Migration anmelden.
 
-Erweitern Sie für den Zugriff auf die Seite **die** Einstellungen im Navigationsbereich auf der linken Seite, und klicken Sie dann auf **"Organisationsprofil".**
+Um auf die Seite zuzugreifen, erweitern Sie **Einstellungen** im Navigationsbereich auf der linken Seite, und klicken Sie dann auf **Organisationsprofil**.
 
 Scrollen Sie auf der Seite **Organisationsprofil** nach unten zum Abschnitt **Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen**.
 
-Wenn Sie Ihren Dienst von Microsoft Cloud Deutschland (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen migrieren möchten, klicken Sie auf **"Opt-in".**
+Wenn Sie Ihren Dienst von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen migrieren möchte, klicken Sie auf **Anmelden**.
  
 ![Anmeldungseinführung](../media/ms-cloud-germany-migration-opt-in/tenant-migration.png)
 
-Auf der rechten Seite des Bildschirms wird ein neuer Abschnitt angezeigt, um Ihre Bestätigung zu akzeptieren. Wählen **Sie "Ja"** aus, und klicken Sie dann auf **"Speichern".**
+Auf der rechten Seite des Bildschirms erscheint ein neuer Abschnitt, in dem Sie Ihre Bestätigung annehmen können. Wählen Sie **Ja**, und klicken Sie dann auf **Speichern**.
  
 ![Anmeldungsannahme](../media/ms-cloud-germany-migration-opt-in/tenant-migration-new-regions.png)
 
-Nachdem Sie sich im Namen Ihres Mandanten angemeldet haben, wird allen Administratoren die Bestätigung in "Migrieren von **Microsoft Cloud Deutschland (Microsoft Cloud Deutschland) zu Office 365-Diensten"** im Abschnitt "Regionen des neuen deutschen Rechenzentrums" angezeigt, einschließlich des Datums der Bestätigung. Administratoren erhalten außerdem eine Bestätigung im Nachrichtencenter des Microsoft 365 Admin Centers. 
+Sobald Sie im Namen Ihres Mandanten die Anmeldung vorgenommen haben, wird die Bestätigung im Abschnitt **Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen** angezeigt, einschließlich des Datums der Anmeldung. Administratoren erhalten außerdem eine Bestätigung im Nachrichtencenter des Microsoft 365 Admin Center. 
  
 ![Anmeldungsbestätigung](../media/ms-cloud-germany-migration-opt-in/tenant-migration2.png)
 
-## <a name="what-happens-after-opting-in-for-migration"></a>Was geschieht nach der Migration?
+## <a name="what-happens-after-opting-in-for-migration"></a>Was geschieht nach der Anmeldung für die Migration?
 
-Die Migrationen beginnen Anfang 2021 für Organisationen, die sich für den von Microsoft geleiteten Ansatz anmelden, und sie werden vor dem Deaktivierungsdatum von Microsoft Cloud Germany (Microsoft Cloud Deutschland) am 29. Oktober 2021 abgeschlossen sein.  Als Ergebnis der Migration werden die wichtigsten Kundendaten und -abonnements in die neuen deutschen Regionen verschoben.  Microsoft veröffentlicht Updates während des gesamten Migrationsprozesses im Nachrichtencenter. Weitere [Informationen finden Sie in](#more-information) diesen Artikeln.
+Die Migrationen beginnen Anfang 2021 für Organisationen, die sich für den von Microsoft geleiteten Ansatz anmelden, und sie werden vor dem Deaktivierungsdatum von Microsoft Cloud Germany (Microsoft Cloud Deutschland) am 29. Oktober 2021 abgeschlossen sein.  Als Ergebnis der Migration werden die wichtigsten Kundendaten und -abonnements in die neuen deutschen Regionen verschoben.  Microsoft veröffentlicht während des gesamten Migrationsprozesses Aktualisierungen im Nachrichtencenter. Weitere Informationen finden Sie in [diesen Artikeln](#more-information).
 
-## <a name="what-happens-if-you-do-not-opt-in-for-migration-in-admin-center"></a>Was geschieht, wenn Sie sich nicht für die Migration im Admin Center entscheiden?
+## <a name="what-happens-if-you-do-not-opt-in-for-migration-in-admin-center"></a>Was geschieht, wenn Sie sich im Admin Center nicht für die Migration anmelden?
 
-Die Onlinedienstbedingungen wurden geändert und enthalten Bedingungen, mit denen Microsoft Ihre Microsoft 365-, Dynamics 365- und Power BI-Daten und -Abonnements von Microsoft Cloud Deutschland in ein neues Rechenzentrum migrieren kann. Diese Bestimmungen gelten für jedes Abonnement von Microsoft Cloud Germany (Microsoft Cloud Deutschland), das seit dem 1. Mai 2020 verlängert wurde. 
+Die Nutzungsbedingungen für Onlinedienste haben sich geändert und umfassen Bedingungen, die es Microsoft erlaubt, Ihre Daten und Abonnements für Microsoft 365, Dynamics 365 und Power BI von Microsoft Cloud Deutschland in ein neues Rechenzentrum zu migrieren. Diese Bestimmungen gelten für jedes Abonnement von Microsoft Cloud Germany (Microsoft Cloud Deutschland), das seit dem 1. Mai 2020 verlängert wurde. 
 
-Der Mandantenadministrator des Kunden erhält eine E-Mail-Benachrichtigung, und das Nachrichtencenter informiert, dass die Migration automatisch für eine von Microsoft unterstützte Migration erfolgt. Diese Benachrichtigung wird mindestens 30 Tage vor der automatischen Anmeldung gesendet. Nach der Migration werden alle Kommunikations- und Statusaktualisierungen an Kundenadministratoren im Nachrichtencenter gesendet.
+Der Mandantenadministrator des Kunden erhält eine Benachrichtigung per E-Mail sowie im Nachrichtencenter und wird informiert, dass die Anmeldung für eine von Microsoft geleitete Migration automatisch vorgenommen wird. Diese Benachrichtigung wird mindestens 30 Tage vor der automatischen Anmeldung gesendet. Nach der Anmeldung zur Migration werden die gesamte Kommunikation und alle Statusaktualisierungen über das Nachrichtencenter an den Mandantenadministrator des Kunden gesendet.
 
-Kunden- und Partner-Mandantenadministratoren werden aufgefordert, sich für die Migration im Microsoft 365 Admin Center zu entscheiden, damit der Migrationsprozess so bald wie möglich beginnen kann.
+Administratoren von Kunden- und Partnermandanten werden gebeten, sich so bald wie möglich für die Migration im Microsoft 365 Admin Center anzumelden, damit der Migrationsprozess frühzeitig beginnen kann.
 
 ## <a name="next-step"></a>Nächster Schritt
 
