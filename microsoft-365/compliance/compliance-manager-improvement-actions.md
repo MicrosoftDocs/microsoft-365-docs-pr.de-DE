@@ -1,5 +1,5 @@
 ---
-title: Zuweisen und Abschließen von Verbesserungs Aktionen im Microsoft Compliance-Manager
+title: Zuweisen und Abschließen von Verbesserungsmaßnahmen im Microsoft Compliance Manager
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -13,143 +13,160 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Erfahren Sie, wie Sie Implementierungen und Tests für Steuerelemente im Microsoft Compliance-Manager durchführen. Zuweisen von Arbeit, Speichern einer Dokumentation und Exportieren von Berichten
-ms.openlocfilehash: 4b7ece89752a2c3e54a0a69bade2f489feacd0c3
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+description: Erfahren Sie, wie Sie Die Implementierung und das Testen von Steuerelementen im Microsoft Compliance Manager durchführen. Weisen Sie Arbeits-, Speicherdokumentations- und Exportberichte zu.
+ms.openlocfilehash: c465a574ed9c1a8ad8ef9e2bfc7f864545ae28d9
+ms.sourcegitcommit: 00d231bf0100e843a5a93161695e87ceff9e1349
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376526"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49849592"
 ---
-# <a name="assign-and-complete-improvement-actions-in-compliance-manager"></a>Zuweisen und Abschließen von Verbesserungs Aktionen im Compliance-Manager
+# <a name="assign-and-complete-improvement-actions-in-compliance-manager"></a>Zuweisen und Abschließen von Verbesserungsmaßnahmen im Compliance-Manager
 
-**In diesem Artikel:** In diesem Artikel wird erläutert, wie **Sie den Compliance-Workflow** mit Verbesserungs Aktionen verwalten. Hier erfahren Sie, wie Sie **Verbesserungs Aktionen** für Implementierung und Test, **Verwalten von Updates** und Exportieren von **Berichten** zuweisen.
+**In diesem Artikel:** In diesem Artikel wird erläutert, wie **Sie Ihren Complianceworkflow mit** Verbesserungsmaßnahmen verwalten. Erfahren Sie, **wie Sie Verbesserungsmaßnahmen** für Implementierung und Tests zuweisen, **Updates verwalten** und Berichte **exportieren.**
 
-## <a name="manage-compliance-workflows-with-improvement-actions"></a>Verwalten von Compliance-Workflows mit Verbesserungs Aktionen
+## <a name="manage-compliance-workflows-with-improvement-actions"></a>Verwalten von Complianceworkflows mit Verbesserungsmaßnahmen
 
-Verbesserungs Aktionen zentralisieren Sie Ihre Compliance-Aktivitäten. Jede Verbesserungs Aktion enthält detaillierte Anweisungen zur Implementierung, die Sie bei der Anpassung an Datenschutzbestimmungen und-Standards unterstützen. Aktionen können Benutzern in Ihrer Organisation zugewiesen werden, um Implementierungs-und Testaufgaben auszuführen. Sie können auch Dokumentation, Notizen und Datensatzstatus Aktualisierungen in der Aktion speichern.
+Verbesserungsmaßnahmen zentralisieren Ihre Complianceaktivitäten. Jede Verbesserungsaktion bietet detaillierte Implementierungsanleitungen, die Ihnen dabei helfen, sich an den Datenschutzbestimmungen und -standards auszurichten. Benutzern in Ihrer Organisation können Aktionen zugewiesen werden, um Implementierungs- und Testarbeiten durchzuführen. Sie können auch Dokumentationen, Notizen und Statusaktualisierungen innerhalb der Aktion speichern.
 
-Alle Ihre Verbesserungs Aktionen werden auf der Seite Verbesserungs Aktionen aufgelistet. Erfahren Sie mehr über [das Anzeigen von Verbesserungs Aktionen](compliance-manager-setup.md#improvement-actions-page).
+Alle Verbesserungsmaßnahmen werden auf der Seite mit den Verbesserungsmaßnahmen aufgeführt. Erfahren Sie mehr [über das Anzeigen Ihrer Verbesserungsmaßnahmen.](compliance-manager-setup.md#improvement-actions-page)
 
-## <a name="improvement-actions-details-page"></a>Detailseite für Verbesserungs Aktionen
+## <a name="improvement-actions-details-page"></a>Detailseite zu Verbesserungsmaßnahmen
 
-Jede Verbesserungs Aktion verfügt über eine Detailseite mit dem aktuellen Status, den zugehörigen Standards und behördlichen Anforderungen sowie empfohlenen Implementierungsanleitungen. [Technische Aktionen](compliance-score-calculation.md#technical-and-non-technical-actions) umfassen einen Link **jetzt starten** , der Sie zur geeigneten Lösung für die Implementierung führt. Sie können die Implementierungs-und Testdokumentation direkt an der Detailseite einer Verbesserungs Aktion anfügen.
+Jede Verbesserungsaktion verfügt über eine Detailseite, auf der der aktuelle Status, die zugehörigen Standards und behördlichen Anforderungen sowie empfohlene Implementierungsleitfäden angezeigt werden. [Zu den technischen](compliance-score-calculation.md#technical-and-non-technical-actions) Aktionen gehört **ein Link** "Jetzt starten", über den Sie zur entsprechenden Lösung für die Implementierung kommen. Sie können die Implementierungs- und Testdokumentation direkt auf der Detailseite einer Verbesserungsaktion anfügen.
 
-So zeigen Sie die Detailseite einer Verbesserungs Aktion an:
+So zeigen Sie die Detailseite einer Verbesserungsaktion an:
 
-1. Wechseln Sie zur Seite Verbesserungs Aktionen.
-2. Wählen Sie die Zeile der beabsichtigten Verbesserungs Aktion aus, in der die zugehörige Detailseite geöffnet wird.
+1. Wechseln Sie zur Seite "Verbesserungsmaßnahmen".
+2. Wählen Sie die Zeile der beabsichtigten Verbesserungsaktion aus, die die Detailseite öffnet.
 
-Sie können die nächste oder frühere Verbesserungs Aktion ganz einfach in der Liste anzeigen, indem Sie den nach-oben-oder nach-unten-Pfeil in der oberen rechten Ecke des Bildschirms auswählen. Wenn Sie Ihre Liste auf der Seite Verbesserungs Aktionen gefiltert haben, gelangen Sie zum nächsten Element in der gefilterten Liste, indem Sie nach oben oder unten navigieren.
+Sie können ganz einfach die nächste oder vorherige Verbesserungsaktion in der Liste anzeigen, indem Sie den Pfeil nach oben oder unten in der oberen rechten Ecke des Bildschirms auswählen. Wenn Sie Ihre Liste auf der Seite mit verbesserungsaktionen gefiltert haben, gelangen Sie beim Nach-oben- oder Abwärtswechsel zum nächsten Element in dieser gefilterten Liste.
 
-## <a name="assign-improvement-actions"></a>Zuweisen von Verbesserungs Aktionen
+## <a name="assign-improvement-actions"></a>Zuweisen von Verbesserungsmaßnahmen
 
-Um mit der Implementierung an einer Verbesserungs Aktion zu beginnen, können Sie die Arbeit selbst durchführen oder einem anderen Benutzer zuweisen. Die zugewiesene Person kann Folgendes sein:
+Um mit der Implementierung einer Verbesserungsaktion zu beginnen, können Sie die Arbeit selbst oder einem anderen Benutzer zuweisen. Die zugewiesene Person könnte:
 
 - Der Besitzer einer Unternehmensrichtlinie
 - Ein IT-Implementierer
-- Ein weiterer Mitarbeiter, der für die Ausführung der Aufgabe zuständig ist
+- Ein anderer Mitarbeiter, der für die Ausführung der Aufgabe verantwortlich ist
 
-Wenn Sie den entsprechenden Empfänger identifiziert haben, müssen Sie sicherstellen, dass er eine ausreichende [Compliance-Manager-Rolle](compliance-manager-setup.md#set-user-permissions-and-assign-roles) besitzt, um die Arbeit auszuführen. Führen Sie dann die folgenden Schritte aus, um die Verbesserungs Aktion zuzuweisen:
+Sobald Sie den entsprechenden Zugewiesenen identifiziert haben, stellen Sie sicher, dass er über eine ausreichende [Compliance-Manager-Rolle](compliance-manager-setup.md#set-user-permissions-and-assign-roles) zum Ausführen der Arbeit verkn nnen. Führen Sie dann die folgenden Schritte aus, um die Verbesserungsaktion zuzuordnen:
 
-1. Klicken Sie auf der Seite Details zur Verbesserungs Aktionen im oberen linken Bereich des Bildschirms auf **Status bearbeiten** .
+1. Wählen Sie auf der Detailseite für Verbesserungsmaßnahmen den Status **"Bearbeiten"** im linken oberen Bereich des Bildschirms aus.
 
-2. Aktivieren Sie im Flyout-Dialogfeld Status bearbeiten das Kontrollkästchen **zugewiesen an** , um eine Liste der Benutzer **vorgeschlagener Personen** anzuzeigen. Sie können den Benutzer aus der Liste auswählen oder die e-Mail-Adresse der Person eingeben, der Sie diese zuweisen möchten.
+2. Wählen Sie im Flyoutbereich "Status bearbeiten" das Feld "Zugewiesen **zu"** aus, um eine Liste vorgeschlagener **Personen** mit Benutzern anzuzeigen. Sie können den Benutzer aus der Liste auswählen oder die E-Mail-Adresse der Person eingeben, der Sie ihn zuweisen möchten.
 
-3. Wählen Sie **Speichern und schließen** aus. Der zugewiesene Benutzer erhält eine e-Mail mit der Erklärung, dass ihm die Verbesserungs Aktion zugewiesen wurde, mit einem direkten Link zur Verbesserungs Aktion. (Hinweis: High-End-Kunden der US Government Community (gcc) erhalten keine e-Mail, wenn Ihnen Aktionen zugewiesen sind.)
+3. Wählen Sie **"Speichern" und "Schließen" aus.** Der zugewiesene Benutzer erhält eine E-Mail mit der Erläuterung, dass ihm die Verbesserungsaktion zugewiesen wurde, mit einem direkten Link zur Verbesserungsaktion. (Hinweis: Hohe Kunden der US Government Community (GCC) erhalten keine E-Mail, wenn ihnen Aktionen zugewiesen werden.)
 
 Der zugewiesene Benutzer kann dann die empfohlenen Aktionen ausführen.
 
-## <a name="perform-work-and-store-documentation"></a>Ausführen der Dokumentation zu Arbeits-und Speicheraufgaben
+#### <a name="assign-multiple-improvement-actions-to-a-single-user"></a>Zuweisen mehrerer Verbesserungsmaßnahmen zu einem einzelnen Benutzer
 
-Sie können Dateien und Notizen im Zusammenhang mit Implementierungs-und Testaufgaben direkt im Abschnitt **Hinweise und Dokumentation** hochladen. Diese Umgebung ist ein sicheres, zentralisiertes Repository, mit dem Sie die Zufriedenheit von Steuerelementen zur Erfüllung von Compliance-Standards und-Vorschriften demonstrieren können. Jeder Benutzer mit schreibgeschütztem Zugriff kann Inhalt in diesem Abschnitt lesen. Nur Benutzer mit Bearbeitungsrechten können Dateien hochladen und herunterladen sowie Notizen eingeben oder bearbeiten.
+Sie können einem Benutzer mehrere Verbesserungsmaßnahmen zuweisen, indem Sie die folgenden Schritte ausführen:
 
-Der Abschnitt " **Notizen und Dokumentation** " enthält Felder für hochgeladene Dokumente, Implementierungshinweise, Test Notizen und zusätzliche Notizen.
+1. Wechseln Sie zur Seite "Verbesserungsmaßnahmen".
+2. Wählen Sie den Bereich links vom Namen der Verbesserungsaktion aus. Ein Roundchecksymbol wird angezeigt, das angibt, dass Sie diese Aktion ausgewählt haben. Überprüfen Sie alle Aktionen, die Sie zuweisen möchten.
+3. Wählen Sie **oben in der** Tabelle mit den Verbesserungsmaßnahmen den Link "Benutzer zuweisen" aus.
+4. Ein Popupfenster wird geöffnet. Beginnen Sie im Feld "Zuweisen **zu"** mit der Eingabe des Namens der Person, der Sie die Aktionen zuweisen möchten. Sie können auch aus der Liste der vorgeschlagenen Personen auswählen.
+5. Nachdem Sie das Feld "Zuweisen **zu"** mit dem Namen des Zugewiesenen auffüllen, wählen Sie **"Zuweisen" aus.**
+6. Dann wird die Seite mit verbesserungsaktionen mit dem neuen Zugewiesenen für die Aktionen angezeigt, die Sie gerade zugewiesen haben.
+
+## <a name="perform-work-and-store-documentation"></a>Ausführen von Arbeits- und Speicherdokumentation
+
+Sie können Dateien und Notizen im Zusammenhang mit Implementierungs- und Testarbeiten direkt in den Abschnitt **"Hinweise und Dokumentation"** hochladen. Diese Umgebung ist ein sicheres, zentralisiertes Repository, das Ihnen dabei hilft, die Zufriedenheit der Steuerelemente zur Einhaltung von Compliancestandards und -vorschriften zu demonstrieren. Jeder Benutzer mit schreibgeschützten Zugriff kann Inhalte in diesem Abschnitt lesen. Nur Benutzer mit Bearbeitungsrechten können Dateien hochladen und herunterladen sowie Notizen eingeben oder bearbeiten.
+
+Der **Abschnitt "Hinweise und Dokumentation"** enthält Felder für hochgeladene Dokumente, Implementierungshinweise, Testhinweise und zusätzliche Hinweise.
 
 #### <a name="uploaded-documents"></a>Hochgeladene Dokumente
 
-- Wählen Sie **Dokumente verwalten** aus, um relevante Dateien hochzuladen.
-- Wenn der Fensterausschnitt zum Verwalten von Dokumenten geöffnet wird, wählen Sie **Dokument hinzufügen** aus, und wählen Sie dann Ihre Datei von Ihrem System aus. Akzeptierte Dateitypen:
-    - Dokumente (. doc,. xls,. ppt,. txt,. pdf)
-    - Bilder (. jpg,. png)
-    - Video (. MKV)
-    - Komprimierte Dateien (ZIP, rar)
-- Nachdem die Datei im Bereich aufgelöst wurde, wählen Sie **Close** aus, wodurch die Dateianlage automatisch gespeichert wird. Anschließend wird die Datei unterhalb der **hochgeladenen Dokumente** aufgeführt angezeigt.
-- Um das Dokument herunterzuladen oder zu löschen, wählen Sie Dokumente aus unterhalb der Liste der Dokumente **Verwalten** aus. Wählen Sie im Flyout-Bereich die Dokumentzeile aus, um Sie hervorzuheben, und wählen Sie dann **herunterladen** oder **Löschen** aus.
+- Wählen **Sie "Dokumente verwalten"** aus, um relevante Dateien hochzuladen.
+- Wenn der Flyoutbereich "Dokumente verwalten" geöffnet wird, wählen Sie "Dokument **hinzufügen"** aus, und wählen Sie dann Ihre Datei aus Ihrem System aus. Akzeptierte Dateitypen:
+    - Dokumente (DOC, XLS, PPT, TXT, PDF)
+    - Bilder (.jpg, .png)
+    - Video (.mkv)
+    - Komprimierte Dateien (ZIP, RAR)
+- Sobald die Datei im Bereich aufgelöst wird, wählen **Sie "Schließen"** aus, wodurch die Dateianlage automatisch gespeichert wird. Dann wird die Datei unter hochgeladenen **Dokumenten aufgeführt.**
+- Um das Dokument herunterzuladen oder zu löschen, **wählen** Sie unter der Liste der Dokumente die Option "Dokumente verwalten" aus. Wählen Sie im Flyoutbereich die Dokumentzeile aus, um sie zu markieren, und wählen Sie dann **Herunterladen** oder **Löschen aus.**
 
-#### <a name="implementation-notes-test-notes-and-additional-notes"></a>Implementierungshinweise, Test Notizen und zusätzliche Hinweise
+#### <a name="implementation-notes-test-notes-and-additional-notes"></a>Implementierungshinweise, Testhinweise und zusätzliche Hinweise
 
-- Wenn Sie in einem dieser drei Felder Notizen hinzufügen möchten, wählen Sie unter einem dieser Felder die Option " **Implementierungshinweise bearbeiten** " aus.
-- Wenn der Flyout-Bereich geöffnet wird, geben Sie Notizen in das Textfeld ein, und klicken Sie dann auf **Speichern und schließen**.
-- Um Notizen zu bearbeiten, wählen Sie **Anmerkungen zur Implementierung bearbeiten** aus, nehmen Sie Ihre Änderungen vor, und klicken Sie dann auf **Speichern und schließen**.
+- Wenn Sie Notizen in einem dieser drei Felder hinzufügen möchten, wählen Sie **unter** einem dieser Felder die Option "Implementierungshinweise bearbeiten" aus.
+- Wenn der Flyoutbereich geöffnet wird, geben Sie Notizen in das Textfeld ein, und wählen Sie dann **Speichern und Schließen aus.**
+- Um Notizen zu bearbeiten, wählen **Sie "Implementierungsnotizen bearbeiten" aus,** nehmen Sie Ihre Änderungen vor, und wählen Sie dann **"Speichern" und "Schließen" aus.**
 
-In den Notizen Feldern ist kein Zeichen Grenzwert vorhanden. Es wird empfohlen, Notizen kurz aufzubewahren, damit Sie Sie auf der Detailseite der Verbesserungs Aktionen ganz einfach anzeigen und bearbeiten können.
+In den Notizenfeldern gibt es keine Zeichenbeschränkung. Es wird empfohlen, Notizen kurz zu halten, damit Sie sie auf der Detailseite zu Verbesserungsmaßnahmen einfach anzeigen und bearbeiten können.
 
-## <a name="change-improvement-action-status"></a>Status der Änderungs Verbesserungs Aktion
+## <a name="change-improvement-action-status"></a>Ändern des Verbesserungsaktionsstatus
 
-Sie können den Status und das Datum der Implementierung sowie den Teststatus und das Datum für jede Verbesserungs Aktion aufzeichnen. Die Felder " **Implementierung** " und " **Teststatus** " können von jedem Benutzer mit Bearbeitungsberechtigungen bearbeitet werden, nicht nur von der zugewiesenen Person.
+Sie können den Implementierungsstatus und das Datum sowie den Teststatus und das Datum für jede Verbesserungsaktion aufzeichnen. Die **Implementierungs-** **und Teststatusfelder** können von jedem Benutzer mit Bearbeitungsberechtigungen bearbeitet werden, nicht nur von der zugewiesenen Person.
 
-Um den Status einer Verbesserungs Aktion zu bearbeiten, wählen Sie im Abschnitt oben links auf der Seite Details die Option **Status bearbeiten** aus. Im folgenden finden Sie die verfügbaren Felder und Statusoptionen:
+Um den Status einer Verbesserungsaktion zu bearbeiten, wählen Sie im oberen linken Abschnitt der Detailseite den Status "Bearbeiten" aus.  Unten sind die verfügbaren Felder und Statusoptionen aufgeführt:
 
 - **Implementierungsstatus**
     - **Nicht implementiert** – Aktion noch nicht implementiert
-    - **Implementiert** -Aktion implementiert
-    - **Alternative Implementierung** : Wählen Sie diese Option aus, wenn Sie andere Tools von Drittanbietern verwendet haben oder andere Aktionen ergriffen haben, die nicht in Microsoft-Empfehlungen enthalten sind.
-    - **Geplante** Aktion ist für die Implementierung geplant
-    - **Außerhalb des Bereichs** – Aktionen sind für Ihre Organisation nicht relevant und tragen nicht zu ihrer Bewertung bei.
-- **Implementierungsdatum**: verfügbar zur Auswahl, wenn der Implementierungsstatus "implementiert" oder "alternative Implementierung" lautet
-- **Test Status**: verfügbar zur Auswahl, wenn der Implementierungsstatus "implementiert" oder "alternative Implementierung" lautet:
+    - **Implementiert** – Implementierte Aktion
+    - **Alternative Implementierung** – Wählen Sie diese Option aus, wenn Sie andere Drittanbietertools verwendet oder andere Aktionen ergreifen, die nicht in den Empfehlungen von Microsoft enthalten sind.
+    - **Geplant** – Die Aktion ist für die Implementierung geplant
+    - **Nicht relevant** – Aktion ist für Ihre Organisation nicht relevant und trägt nicht zu Ihrer Bewertung bei.
+- **Implementierungsdatum:** verfügbar, um auszuwählen, wann der Implementierungsstatus "implementiert" oder "alternative Implementierung" ist
+- **Teststatus:** Verfügbar, um auszuwählen, wann der Implementierungsstatus "implementiert" oder "alternative Implementierung" ist:
     - **Nicht bewertet** – Aktion wurde nicht getestet
-    - Die **übergebene** Implementierung wurde von einem Auditor überprüft.
-    - **Fehlgeschlagenes niedriges Risiko** – Testfehler, geringes Risiko
-    - **Fehler bei mittlerem Risiko** – Testfehler, mittleres Risiko
-    - **Gescheitertes hohes Risiko** – Testfehler, hohes Risiko
-    - **Außerhalb des Gültigkeitsbereichs** – die Aktion liegt außerhalb des Bereichs für die Bewertung und trägt nicht zu ihrem Ergebnis bei.
-- **Testdatum**: wechselt durch das Popup Kalenderfenster, um das Datum auszuwählen.
+    - **Übergeben** – Implementierung wurde von einem Gutachter überprüft
+    - **Fehlgeschlagenes niedriges Risiko** – Test fehlgeschlagen, niedriges Risiko
+    - **Mittleres Risiko fehlgeschlagen** – Test fehlgeschlagen, mittleres Risiko
+    - **Fehlgeschlagenes hohes Risiko** – Test fehlgeschlagen, hohes Risiko
+    - **Nicht im Bereich –** die Aktion liegt nicht im Bereich der Bewertung und trägt nicht zu Ihrer Bewertung bei.
+- **Testdatum:** Umschalten durch das Kalenderpop-up, um das Datum auszuwählen
 
-Häufige Aktionen synchronisieren gruppenübergreifend. Wenn zwei unterschiedliche Bewertungen in der gleichen Gruppe Verbesserungen durchführen, die von Ihnen verwaltet werden, werden alle Aktualisierungen, die Sie an den Implementierungsdetails oder Status einer Aktion vornehmen, automatisch mit derselben Aktion in einer anderen Bewertung in der Gruppe synchronisiert. Mit dieser Synchronisierung können Sie eine Verbesserungs Aktion implementieren und mehrere Anforderungen in mehreren Bestimmungen erfüllen.
+Allgemeine Aktionen werden gruppenübergreifend synchronisiert. Wenn zwei verschiedene Bewertungen in derselben Gruppe Verbesserungsmaßnahmen gemeinsam nutzen, die Von Ihnen verwaltet werden, werden alle Aktualisierungen, die Sie an den Implementierungsdetails oder dem Status einer Aktion vornehmen, automatisch mit derselben Aktion in jeder anderen Bewertung in der Gruppe synchronisiert. Mit dieser Synchronisierung können Sie eine Verbesserungsaktion implementieren und mehrere Anforderungen in mehreren Vorschriften erfüllen.
 
-## <a name="assign-improvement-action-to-assessor-for-completion"></a>Zuweisen von Verbesserungs Aktionen zum Abschlussprüfer
+## <a name="assign-improvement-action-to-assessor-for-completion"></a>Zuweisen von Verbesserungsmaßnahmen zum Abschluss an den Gutachter
 
-Nachdem Sie die Arbeit abgeschlossen, Tests durchgeführt und Beweise hochgeladen haben, besteht der nächste Schritt darin, die Verbesserungs Aktion einem Gutachter zur Überprüfung zuzuweisen. Der Assessor überprüft die Arbeit und untersucht die Dokumentation und wählt den entsprechenden Teststatus aus.
+Nachdem Sie die Arbeit abgeschlossen, Tests durchgeführt und Nachweise hochgeladen haben, besteht der nächste Schritt im Zuweisen der Verbesserungsaktion zu einem Gutachter zur Überprüfung. Der Prüfer überprüft die Arbeit, untersucht die Dokumentation und wählt den entsprechenden Teststatus aus.
 
-**Wenn der Teststatus auf "übergeben" festgelegt ist**: die Aktion ist abgeschlossen, und die erreichten Punkte zeigen die erreichten maximalpunkte. Die Punkte werden dann auf Ihre gesamte Konformitätsbewertung gezählt.
+**Wenn der Teststatus auf "Übergeben" festgelegt** ist: Die Aktion ist abgeschlossen, und die erreichten Punkte zeigen die maximal erreichten Punkte an. Die Punkte werden dann auf Ihre Gesamt-Compliance-Bewertung angerechnet.
 
-**Wenn der Teststatus auf "failed" festgelegt ist**: die Aktion erfüllt die Anforderungen nicht, und der Auditor kann Sie dem entsprechenden Benutzer für zusätzliche Arbeit zurückzuweisen.
+**Wenn der Teststatus auf "Fehlgeschlagen"** festgelegt ist: Die Aktion erfüllt nicht die Anforderungen, und der Gutachter kann sie dem entsprechenden Benutzer zuweisen, um zusätzliche Arbeit zu erhalten.
 
-## <a name="accepting-updates-to-improvement-actions"></a>Akzeptieren von Aktualisierungen für Verbesserungs Aktionen
+## <a name="accepting-updates-to-improvement-actions"></a>Akzeptieren von Updates für Verbesserungsmaßnahmen
 
-Wenn ein Update für eine Verbesserungs Aktion verfügbar ist, wird neben dem Namen eine Benachrichtigung angezeigt. Sie können entweder das Update annehmen oder es zu einem späteren Zeitpunkt verschieben.
+Wenn ein Update für eine Verbesserungsaktion verfügbar ist, wird neben dem Namen eine Benachrichtigung angezeigt. Sie können das Update entweder akzeptieren oder für einen späteren Zeitpunkt zurückdebeben.
 
-#### <a name="what-causes-an-update"></a>Was bewirkt, dass ein Update
+#### <a name="what-causes-an-update"></a>Ursachen eines Updates
 
-Eine Aktualisierung tritt auf, wenn Änderungen im Zusammenhang mit Scoring, Automatisierung oder Bereich vorgenommen werden. Änderungen können neue Richtlinien für Verbesserungs Aktionen basierend auf regulatorischen Änderungen oder aufgrund von Produktänderungen beinhalten. Nur die von ihren Organisationen verwalteten Verbesserungs Aktionen erhalten Aktualisierungsbenachrichtigungen.
+Eine Aktualisierung erfolgt, wenn Änderungen im Zusammenhang mit Bewertung, Automatisierung oder Bereich vorgenommen werden. Änderungen können neue Anleitungen für Verbesserungsmaßnahmen basierend auf gesetzlichen Änderungen oder aufgrund von Produktänderungen beinhalten. Nur die von Ihren Organisationen verwalteten Verbesserungsmaßnahmen erhalten Updatebenachrichtigungen.
 
-#### <a name="where-youll-see-assessment-update-notifications"></a>Wo Sie Benachrichtigungen über Bewertungs Updates sehen
+#### <a name="where-youll-see-assessment-update-notifications"></a>Wo Sie Benachrichtigungen über Bewertungsupdates sehen
 
-Wenn eine Verbesserungs Aktion aktualisiert wird, wird eine **ausstehende Update** Bezeichnung neben dem Namen auf der Seite Verbesserungs Aktionen und auf der Seite Details der zugehörigen Bewertungen angezeigt.
+Wenn eine Verbesserungsaktion aktualisiert wird,  wird neben dem Namen auf der Seite mit den Verbesserungsmaßnahmen und auf der Detailseite der zugehörigen Bewertungen eine Bezeichnung für ausstehende Updates angezeigt.
 
-Wechseln Sie zur Detailseite der Verbesserungs Aktion, und wählen Sie die Schaltfläche **Update überprüfen** im oberen Banner aus, um Details zu den Änderungen zu überprüfen und das Update zu akzeptieren oder zu verschieben.
+Wechseln Sie zur Detailseite der Verbesserungsaktion, und wählen Sie im oberen Banner die Schaltfläche "Update überprüfen" aus, um Details zu den Änderungen zu überprüfen und das Update zu akzeptieren oder zurück zu halten. 
 
-#### <a name="review-update-to-accept-or-defer"></a>Überprüfen der Aktualisierung zur Annahme oder Verschiebung
+#### <a name="review-update-to-accept-or-defer"></a>Überprüfen des Updates, um zu akzeptieren oder zu verzingen
 
-Nachdem Sie **Update überprüfen** auf der Seite Details zur Verbesserungs Aktion ausgewählt haben, wird auf der rechten Seite des Bildschirms ein Flyout-Bereich angezeigt. Der Flyout-Bereich enthält wichtige Details zum Update, beispielsweise die Auswirkungen auf die Bewertung und die Änderungen in der Bewertung und im Bereich.
+Nachdem Sie **auf der** Seite mit den Details zur Verbesserungsaktion die Option "Update überprüfen" ausgewählt haben, wird auf der rechten Seite des Bildschirms ein Flyoutbereich angezeigt. Der Flyoutbereich enthält wichtige Details zum Update, z. B. die auswirkungen auf die Bewertungen und Änderungen in Punktzahl und Umfang.
 
-Wählen Sie **Update akzeptieren** aus, um alle Änderungen an der Verbesserungs Aktion zu akzeptieren. **Akzeptierte Änderungen sind dauerhaft**.
+Wählen **Sie "Update akzeptieren"** aus, um alle Änderungen an der Verbesserungsaktion zu übernehmen. **Akzeptierte Änderungen sind dauerhaft.**
 
 > [!NOTE]
-> Wenn Sie eine Aktualisierung einer Aktion akzeptieren, akzeptieren Sie auch Aktualisierungen für andere Versionen oder Instanzen dieser Aktion. Updates werden mandantenweit für Technische Aktionen weitergegeben und werden gruppenweit für nicht technische Aktionen weitergegeben.
+> Wenn Sie eine Aktualisierung einer Aktion akzeptieren, akzeptieren Sie auch Updates für andere Versionen oder Instanzen dieser Aktion. Updates werden mandantenweit für technische Aktionen und gruppenweit für nicht technische Aktionen veröffentlicht.
 
-Wenn Sie **Abbrechen** auswählen, wird das Update nicht auf die Verbesserungs Aktion angewendet. Die Benachrichtigung über **ausstehende Updates** wird jedoch weiterhin angezeigt, bis Sie das Update akzeptieren.
+Wenn Sie **"Abbrechen"** auswählen, wird das Update nicht auf die Verbesserungsaktion angewendet. Es wird jedoch weiterhin die **Benachrichtigung** über ausstehende Updates angezeigt, bis Sie das Update akzeptieren.
 
-**Warum wird empfohlen, Updates zu akzeptieren?**
+**Warum wir empfehlen, Updates zu akzeptieren**
 
-Durch das akzeptieren von Updates können Sie sicherstellen, dass Sie über die neuesten Anleitungen zur Verwendung von Lösungen und geeignete Verbesserungsmaßnahmen verfügen, die Ihnen helfen, die Anforderungen der Zertifizierung zur Hand zu erfüllen.
+Durch das Akzeptieren von Updates können Sie sicherstellen, dass Sie über die neuesten Anleitungen zur Verwendung von Lösungen verfügen und geeignete Verbesserungsmaßnahmen ergreifen, um die Anforderungen der zertifizierung zu erfüllen.
 
-**Warum Sie ein Update möglicherweise verschieben möchten**
+**Gründe für die Verschiebung eines Updates**
 
-Wenn Sie sich mitten in einer Bewertung befinden, die die Verbesserungs Aktion enthält, sollten Sie sicherstellen, dass Sie die Arbeit daran abgeschlossen haben, bevor Sie das Update akzeptieren. Sie können das Update zu einem späteren Zeitpunkt verschieben, indem Sie im Flyout-Bereich Update aktualisieren die Option **Abbrechen** auswählen.
+Wenn Sie gerade eine Bewertung abschließen, die die Verbesserungsaktion enthält, sollten Sie sicherstellen, dass Sie die Arbeit daran abgeschlossen haben, bevor Sie das Update akzeptieren. Sie können das Update zu einem späteren Zeitpunkt zurückdrücken, indem Sie **im** Flyoutbereich "Überprüfungsupdate" die Option Abbrechen auswählen.
+
+#### <a name="accept-all-updates-at-once"></a>Alle Updates auf einmal akzeptieren
+
+Wenn Sie über mehrere Updates verfügen und alle gleichzeitig  akzeptieren möchten, wählen Sie oben in der Tabelle mit den Verbesserungsmaßnahmen den Link "Alle Updates akzeptieren" aus. Es wird ein Flyoutbereich mit der Anzahl der zu aktualisierende Aktionen angezeigt. Wählen Sie die Schaltfläche **"Updates akzeptieren"** aus, um alle Updates anzuwenden.
+
+Beachten Sie, dass bei der Rückkehr zur Seite mit Verbesserungsmaßnahmen am oberen Rand der Seite möglicherweise eine Meldung angezeigt wird, in der Sie aufgefordert werden, die Seite zu aktualisieren, damit die Updates abgeschlossen werden.
 
 ## <a name="export-a-report"></a>Exportieren eines Berichts
 
-Wählen Sie in der oberen linken Ecke des Bildschirms **exportieren** aus, um ein Excel-Arbeitsblatt herunterzuladen, das alle Ihre Verbesserungs Aktionen und die Filterkategorien enthält, die auf der Seite Verbesserungs Aktionen angezeigt werden.
+Wählen **Sie "Exportieren"** in der oberen linken Ecke des Bildschirms aus, um ein Excel-Arbeitsblatt herunterzuladen, das alle Verbesserungsmaßnahmen und filterkategorien enthält, die auf der Seite "Verbesserungsmaßnahmen" angezeigt werden.
