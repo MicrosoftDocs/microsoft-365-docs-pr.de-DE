@@ -1,6 +1,6 @@
 ---
-title: Erforderliche Arbeit für die Implementierung von Identitäts-und Gerätezugriffs Richtlinien – Microsoft 365 für Unternehmen | Microsoft-Dokumente
-description: Beschreibt die Voraussetzungen vor der Implementierung von Richtlinien und Konfigurationen für den Identitäts-und Geräte Zugriff.
+title: Erforderliche Arbeit für die Implementierung von Identitäts- und Gerätezugriffsrichtlinien – Microsoft 365 Enterprise | Microsoft Docs
+description: In diesem Artikel werden die Voraussetzungen beschrieben, die Sie für die Verwendung von Identitäts- und Gerätezugriffsrichtlinien und -konfigurationen erfüllen müssen.
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: Laurawi
@@ -18,65 +18,65 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: bd0b4efb1281d467a61e4aee792b507f0ca44181
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: eb07fe45c169d81559e4676f86abde5c6600a185
+ms.sourcegitcommit: 89097fb648987567b9493b9d94c85c5990562874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616560"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49845084"
 ---
-# <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Erforderliche Arbeit für die Implementierung von Identitäts-und Gerätezugriffs Richtlinien
+# <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Erforderliche Arbeit für die Implementierung von Identitäts- und Gerätezugriffsrichtlinien
 
-In diesem Artikel werden die Voraussetzungen beschrieben, die implementiert werden müssen, bevor Sie die empfohlenen Identitäts-und Gerätezugriffs Richtlinien bereitstellen können. In diesem Artikel werden auch die empfohlenen Standardkonfigurationen für Platt Form Clients behandelt, um den Benutzern die besten einmaligen Anmeldeinformationen (Single Sign-on, SSO) zu bieten, sowie die technischen Voraussetzungen für bedingten Zugriff.
+In diesem Artikel werden die Voraussetzungen beschrieben, die Administratoren erfüllen müssen, um empfohlene Identitäts- und Gerätezugriffsrichtlinien zu verwenden und bedingten Zugriff zu verwenden. Außerdem werden die empfohlenen Standardwerte für die Konfiguration von Clientplattformen für die beste SSO (Single Sign-On)-Erfahrung erläutert.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Vor dem Implementieren der empfohlenen Richtlinien für Identitäts-und Geräte Zugriff gibt es verschiedene Voraussetzungen, die Ihre Organisation für diese Identitäts-und Authentifizierungsmodelle für Microsoft 365 und Office 365 erfüllen muss:
+Bevor Sie die empfohlenen Identitäts- und Gerätezugriffsrichtlinien verwenden, muss Ihre Organisation die Voraussetzungen erfüllen. Die Anforderungen für die verschiedenen aufgeführten Identitäts- und Authentifizierungsmodelle unterscheiden sich:
 
 - Rein cloudbasiert
-- Hybrid mit Password Hash Sync (PHS)-Authentifizierung
+- Hybrid mit #A0 (Password Hash Sync, Kennworthashsynchronisierung)
 - Hybrid mit Pass-Through-Authentifizierung (PTA)
 - Verbund
 
-In der folgenden Tabelle sind die erforderlichen Features und deren Konfiguration aufgeführt, die für alle Identitäts Modelle gelten, sofern nicht anders angegeben.
+In der folgenden Tabelle sind die erforderlichen Features und deren Konfiguration aufgeführt, die für alle Identitätsmodelle gelten, sofern nicht angegeben.
 
 |Konfiguration|Ausnahmen|
 |---|:---:|
-|[Konfigurieren Sie PHS](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).  Dies muss aktiviert sein, um durchgesickerte Anmeldeinformationen zu erkennen und Sie für den risikobasierten bedingten Zugriff zu tätigen. **Hinweis:** Dies ist erforderlich, unabhängig davon, ob in Ihrer Organisation die Verbundauthentifizierung verwendet wird.|Rein cloudbasiert|
-|[Aktivieren Sie das nahtlose einmalige Anmelden](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso) , um Benutzer automatisch zu signieren, wenn Sie sich auf Ihren Organisations Geräten befinden, die mit Ihrem Organisationsnetzwerk verbunden sind.|Nur Cloud und Verbund|
-|[Konfigurieren Sie benannte Netzwerke](https://docs.microsoft.com/azure/active-directory/active-directory-known-networks-azure-portal). Azure AD Identitätsschutz erfasst und analysiert alle verfügbaren Sitzungsdaten, um ein Risikoergebnis zu generieren. Es wird empfohlen, die öffentlichen IP-Bereiche Ihrer Organisation für Ihr Netzwerk in der Konfiguration Azure AD benannte Netzwerke anzugeben. Für den Datenverkehr, der aus diesen Bereichen stammt, wird ein verringertes Risikoergebnis erzielt, und Datenverkehr von außerhalb der Organisationsumgebung erhält ein höheres Risikoergebnis.||
-|[Registrieren Sie alle Benutzer für Self-Service Password Reset (SSPR) und mehrstufige Authentifizierung (MFA)](https://docs.microsoft.com/azure/active-directory/authentication/concept-registration-mfa-sspr-converged). Es wird empfohlen, Benutzer für Azure AD Multi-Factor Authentication im Voraus zu registrieren. Azure AD Identitätsschutz nutzt Azure AD Multi-Factor Authentication, um eine zusätzliche Sicherheitsüberprüfung durchzuführen. Für eine optimale Anmelde Erfahrung empfehlen wir außerdem, dass Benutzer die [Microsoft Authenticator-App](https://docs.microsoft.com/azure/active-directory/user-help/microsoft-authenticator-app-how-to) und die Microsoft-Unternehmens Portal-App auf Ihren Geräten installieren. Diese können aus dem App Store für jede Plattform installiert werden.||
-|[Aktivieren der automatischen Geräteregistrierung für mit der Domäne verbundene Windows-Computer](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup). Bedingter Zugriff stellt sicher, dass Geräte, die mit apps verbunden sind, der Domäne beigetreten sind oder kompatibel sind. Um dies auf Windows-Computern zu unterstützen, muss das Gerät mit Azure AD registriert sein.  In diesem Artikel wird beschrieben, wie Sie die automatische Geräteregistrierung konfigurieren.|Rein cloudbasiert|
-|**Vorbereiten Ihres Supportteams**: Sie sollten vorausplanen, wie Sie mit Benutzern umgehen, die keine MFA durchführen können. Sie können sie z.B. Dies könnte das Hinzufügen zu einer Richtlinien Ausschlussgruppe oder das Registrieren neuer MFA-Informationen für Sie sein. Bevor Sie eine dieser sicherheitsrelevanten Änderungen vornehmen, müssen Sie sicherstellen, dass der tatsächliche Benutzer die Anforderung macht. Es kann hilfreich sein, den Vorgesetzten des Benutzers bei der Genehmigung mit einzubeziehen.||
-|[Konfigurieren des Kenn Wort Rückschreibens für lokale Ad](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started). Durch das Kenn Wort Rückschreiben können Azure AD festlegen, dass Benutzer ihre lokalen Kennwörter ändern müssen, wenn eine risikoreiche Konto Gefährdung erkannt wird. Sie können dieses Feature mit Azure AD Connect auf zwei Arten aktivieren: entweder aktivieren Sie das Rückschreiben von **Kennwörtern** im optionalen Features-Bildschirm des Setup-Assistenten für Azure AD Connect, oder aktivieren Sie es über Windows PowerShell.|Rein cloudbasiert|
-|[Konfigurieren Sie Azure AD Kennwortschutz](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad). Der Azure AD-Kennwortschutz erkennt und blockiert als schwach bekannte Kennwörter und deren Varianten und kann zusätzlich für Ihre Organisation spezifische schwache Ausdrücke blockieren. Listen standardmäßig global gesperrter Kennwörter werden automatisch auf alle Benutzer in einem Azure AD-Mandanten angewendet. Sie können zusätzliche Einträge in einer benutzerdefinierten Liste gesperrter Kennwörter angeben. Wenn Benutzer ihre Kennwörter ändern oder zurücksetzen, werden diese Listen gesperrter Kennwörter überprüft, um die Verwendung von sicheren Kennwörtern zu erzwingen.||
-|[Aktivieren Sie Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection). Mit Azure AD Identity Protection können Sie potenzielle Sicherheitsrisiken erkennen, die sich auf die Identitäten Ihrer Organisation auswirken, und eine automatisierte Behebungs Richtlinie auf niedrigem, mittlerem und hohem Anmelde Risiko und Benutzer Risiko konfigurieren.||
-|**Aktivieren Sie die moderne Authentifizierung** für [Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) und [Skype for Business Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx). Die moderne Authentifizierung ist eine Voraussetzung für die Verwendung von MFA. Die moderne Authentifizierung ist für Office 2016-und 2019-Clients, SharePoint und OneDrive für Unternehmen standardmäßig aktiviert.||
+|[Konfigurieren sie PHS](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).  Dies muss aktiviert sein, um nicht gespeicherte Anmeldeinformationen zu erkennen und für risikobasierten bedingten Zugriff darauf zu handeln. **Hinweis:** Dies ist unabhängig davon erforderlich, ob Ihre Organisation verbundbasierte Authentifizierung verwendet.|Rein cloudbasiert|
+|[Ermöglichen Sie das nahtlose einmalige Anmelden,](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso) um Benutzer automatisch zu anmelden, wenn sie sich auf ihren Organisationsgeräten befinden, die mit Ihrem Organisationsnetzwerk verbunden sind.|Nur-Cloud und Verbund|
+|[Konfigurieren sie benannte Netzwerke.](https://docs.microsoft.com/azure/active-directory/active-directory-known-networks-azure-portal) Azure AD Identity Protection sammelt und analysiert alle verfügbaren Sitzungsdaten, um eine Risikobewertung zu generieren. Es wird empfohlen, die öffentlichen IP-Bereiche Ihrer Organisation für Ihr Netzwerk in der Konfiguration mit benannten Azure AD-Netzwerken anzugeben. Datenverkehr, der aus diesen Bereichen kommt, wird mit einer reduzierten Risikobewertung und Datenverkehr von außerhalb der Unternehmensumgebung mit einer höheren Risikobewertung benotet.||
+|[Registrieren Sie alle Benutzer für die Self-Service-Kennwortzurücksetzung (Self-Service Password Reset, SSPR) und die mehrstufige Authentifizierung (MFA).](https://docs.microsoft.com/azure/active-directory/authentication/concept-registration-mfa-sspr-converged) Es wird empfohlen, Benutzer im Voraus für die mehrstufige Azure AD-Authentifizierung zu registrieren. Azure AD Identity Protection verwendet azure AD Multi-Factor Authentication, um eine zusätzliche Sicherheitsüberprüfung durchzuführen. Darüber hinaus empfehlen wir Benutzern, die Microsoft [Authenticator-App](https://docs.microsoft.com/azure/active-directory/user-help/microsoft-authenticator-app-how-to) und die Microsoft Company Portal-App auf ihren Geräten zu installieren, um eine optimale Anmeldeerfahrung zu bieten. Diese können aus dem App Store für jede Plattform installiert werden.||
+|[Aktivieren Sie die automatische Geräteregistrierung für in die Domäne beigetretene Windows-Computer.](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup) Der bedingte Zugriff sorgt dafür, dass Geräte, die eine Verbindung mit Apps herstellen, domänenverbindet oder kompatibel sind. Um dies auf Windows-Computern zu unterstützen, muss das Gerät bei Azure AD registriert werden.  In diesem Artikel wird die Konfiguration der automatischen Geräteregistrierung erläutert.|Rein cloudbasiert|
+|**Vorbereiten Ihres Supportteams**: Sie sollten vorausplanen, wie Sie mit Benutzern umgehen, die keine MFA durchführen können. Sie können sie z.B. Dies kann das Hinzufügen zu einer Richtlinienausschlussgruppe oder das Registrieren neuer MFA-Informationen sein. Bevor Sie eine dieser sicherheitssensiblen Änderungen vornehmen, müssen Sie sicherstellen, dass der tatsächliche Benutzer die Anforderung stellt. Es kann hilfreich sein, den Vorgesetzten des Benutzers bei der Genehmigung mit einzubeziehen.||
+|[Konfigurieren Sie das Kennwortrückschreiben in lokales AD](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started). Mit dem Kennwortrückschreiben kann Azure AD festlegen, dass Benutzer ihre lokalen Kennwörter ändern müssen, wenn eine Gefährdung des Kontos mit hohem Risiko erkannt wird. Sie können dieses Feature mithilfe von Azure AD Connect  auf eine von zwei Arten aktivieren: Aktivieren Sie entweder das Kennwortrückschreiben im Bildschirm mit den optionalen Features des Azure AD Connect-Setup-Assistenten, oder aktivieren Sie es über Windows PowerShell.|Rein cloudbasiert|
+|[Konfigurieren Sie den Azure AD-Kennwortschutz.](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) Der Azure AD-Kennwortschutz erkennt und blockiert als schwach bekannte Kennwörter und deren Varianten und kann zusätzlich für Ihre Organisation spezifische schwache Ausdrücke blockieren. Listen standardmäßig global gesperrter Kennwörter werden automatisch auf alle Benutzer in einem Azure AD-Mandanten angewendet. Sie können zusätzliche Einträge in einer benutzerdefinierten Liste gesperrter Kennwörter angeben. Wenn Benutzer ihre Kennwörter ändern oder zurücksetzen, werden diese Listen gesperrter Kennwörter überprüft, um die Verwendung von sicheren Kennwörtern zu erzwingen.||
+|[Aktivieren Sie Azure Active Directory Identity Protection.](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection) Azure AD Identity Protection ermöglicht es Ihnen, potenzielle Sicherheitsrisiken zu erkennen, die sich auf die IdentitätEn Ihrer Organisation auszunutzen, und eine automatisierte Wartungsrichtlinie für ein niedriges, mittleres und hohes Anmelde- und Benutzerrisiko zu konfigurieren.||
+|**Aktivieren Sie die moderne** [Authentifizierung für Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) und Skype for Business [Online.](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) Die moderne Authentifizierung ist eine Voraussetzung für die Verwendung von MFA. Die moderne Authentifizierung ist standardmäßig für Office 2016- und 2019-Clients, SharePoint und OneDrive for Business aktiviert.||
 |
 
 ## <a name="recommended-client-configurations"></a>Empfohlene Clientkonfigurationen
 
-In diesem Abschnitt werden die Standardkonfigurationen für Platt Form Clients beschrieben, die für die Bereitstellung der besten SSO-Benutzeroberfläche und die technischen Voraussetzungen für bedingten Zugriff empfohlen werden.
+In diesem Abschnitt werden die von uns empfohlenen Standardkonfigurationen für Plattformclients beschrieben, um ihren Benutzern die beste SSO-Erfahrung sowie die technischen Voraussetzungen für bedingten Zugriff zu bieten.
 
 ### <a name="windows-devices"></a>Windows-Geräte
 
-Wir empfehlen Windows 10 (Version 2004 oder höher), da Azure so konzipiert ist, dass es sowohl lokal als auch Azure AD eine möglichst reibungslose SSO-Funktionalität bietet. Arbeits-oder Schul ausgestellte Geräte sollten so konfiguriert werden, dass Sie direkt an Azure AD teilnehmen oder wenn die Organisation lokale Ad-Domänenbeitritt verwendet, diese Geräte sollten so konfiguriert werden, [dass Sie automatisch mit Azure AD registriert](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup)werden.
+Wir empfehlen Windows 10 (Version 2004 oder höher), da Azure für die reibungsloseste SSO-Erfahrung konzipiert ist, die sowohl für lokale als auch für Azure AD möglich ist. Von Arbeits- oder Schuleinrichtungen ausgestellte Geräte sollten so konfiguriert werden, dass sie Azure AD direkt beitreten, oder wenn die Organisation den lokalen Ad-Domänen-Beitritt verwendet, sollten diese Geräte für die automatische und automatische Registrierung bei Azure AD konfiguriert [werden.](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup)
 
-Für BYOD-Windows-Geräte können Benutzer **Add work oder School Account** verwenden. Beachten Sie, dass Benutzer des Google Chrome-Browsers auf Windows 10-Geräten [eine Erweiterung installieren](https://chrome.google.com/webstore/detail/windows-10-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji?utm_source=chrome-app-launcher-info-dialog) müssen, um die gleiche glatte Anmelde Erfahrung wie Microsoft Edge-Benutzer zu erhalten. Wenn Ihre Organisation Windows 8-oder 8,1-Geräte mit einer Domäne verbunden ist, können Sie auch Microsoft Workplace Join für nicht-Windows 10-Computer installieren. [Laden Sie das Paket herunter, um](https://www.microsoft.com/download/details.aspx?id=53554) die Geräte mit Azure AD zu registrieren.
+Für BYOD -Windows-Geräte können Benutzer das Konto **"Arbeits- oder Schulkonto hinzufügen" verwenden.** Beachten Sie, dass Benutzer des Google Chrome-Browsers [](https://chrome.google.com/webstore/detail/windows-10-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji?utm_source=chrome-app-launcher-info-dialog) auf Windows 10-Geräten eine Erweiterung installieren müssen, um die gleiche reibungslose Anmeldeerfahrung wie Microsoft Edge-Benutzer zu erhalten. Wenn Ihre Organisation über Domänengeräte Windows 8 oder 8.1-Geräte verfügt, können Sie Microsoft Workplace Join auch für Nicht-Windows 10-Computer installieren. [Laden Sie das Paket herunter, um die](https://www.microsoft.com/download/details.aspx?id=53554) Geräte bei Azure AD zu registrieren.
 
 ### <a name="ios-devices"></a>iOS-Geräte
 
-Es wird empfohlen, die [Microsoft Authenticator-App](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) auf Benutzergeräten zu installieren, bevor Sie den bedingten Zugriff oder MFA-Richtlinien bereitstellen. Die APP sollte mindestens installiert werden, wenn Benutzer aufgefordert werden, Ihr Gerät bei Azure AD zu registrieren, indem Sie ein Geschäfts-oder Schulkonto hinzufügen oder wenn Sie die Intune-Unternehmensportal-App installieren, um Ihr Gerät in die Verwaltung einzuschreiben. Dies hängt von der konfigurierten Richtlinie für den bedingten Zugriff ab.
+Es wird empfohlen, die [Microsoft Authenticator-App](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) auf Benutzergeräten zu installieren, bevor Sie Richtlinien für bedingten Zugriff oder MFA bereitstellen. Die App sollte mindestens installiert werden, wenn Benutzer aufgefordert werden, ihr Gerät bei Azure AD zu registrieren, indem sie ein Firmen- oder Schulkonto hinzufügen oder wenn sie die Intune-Unternehmensportal-App installieren, um ihr Gerät für die Verwaltung zu registrieren. Dies hängt von der konfigurierten Richtlinie für bedingten Zugriff ab.
 
 ### <a name="android-devices"></a>Android-Geräte
 
-Es wird empfohlen, dass Benutzer die [InTune-Unternehmens Portal-App](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal&hl=en) und die [Microsoft Authenticator-App](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) installieren, bevor Richtlinien für den bedingten Zugriff bereitgestellt werden oder bei bestimmten Authentifizierungsversuchen erforderlich sind. Nach der Installation der App können Benutzer aufgefordert werden, sich mit Azure AD zu registrieren oder ihr Gerät bei Intune zu registrieren. Dies hängt von der konfigurierten Richtlinie für den bedingten Zugriff ab.
+Es wird empfohlen, dass Benutzer die [Intune-Unternehmensportal-App](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal&hl=en) und [die Microsoft Authenticator-App](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) installieren, bevor Richtlinien für bedingten Zugriff bereitgestellt werden oder wenn dies bei bestimmten Authentifizierungsversuchen erforderlich ist. Nach der Installation der App können Benutzer aufgefordert werden, sich mit Azure AD zu registrieren oder ihr Gerät bei Intune zu registrieren. Dies hängt von der konfigurierten Richtlinie für bedingten Zugriff ab.
 
-Wir empfehlen auch, dass die organisationseigenen Geräte auf OEMs und Versionen standardisiert sind, die Android for Work oder Samsung Knox unterstützen, damit e-Mail-Konten verwaltet und durch InTune-MDM-Richtlinien geschützt werden können.
+Es wird außerdem empfohlen, geräte im Besitz der Organisation auf OEMs und Versionen zu standardisieren, die Android for Work oder Samsung Knox unterstützen, damit E-Mail-Konten verwaltet und durch intune-MDM-Richtlinien geschützt werden können.
 
 ### <a name="recommended-email-clients"></a>Empfohlene E-Mail-Clients
 
-Die folgenden e-Mail-Clients unterstützen moderne Authentifizierung und bedingten Zugriff.
+Die folgenden E-Mail-Clients unterstützen moderne Authentifizierung und bedingten Zugriff.
 
 |Plattform|Client|Version/Hinweise|
 |---|---|---|
@@ -105,24 +105,24 @@ Die folgenden Clients werden empfohlen, wenn eine Richtlinie für sichere Dokume
 
 Weitere Informationen zur Clientunterstützung in Microsoft 365 finden Sie in den folgenden Artikeln:
 
-- [Microsoft 365-Client-App-Unterstützung – bedingter Zugriff](../../enterprise/microsoft-365-client-support-conditional-access.md)
-- [Microsoft 365-Client-App-Support-moderne Authentifizierung](../../enterprise/microsoft-365-client-support-modern-authentication.md)
+- [Microsoft 365-Client-App-Unterstützung – Bedingter Zugriff](../../enterprise/microsoft-365-client-support-conditional-access.md)
+- [Microsoft 365-Client-App-Unterstützung – Moderne Authentifizierung](../../enterprise/microsoft-365-client-support-modern-authentication.md)
 
 ## <a name="protecting-administrator-accounts"></a>Schützen von Administratorkonten
 
-Für Microsoft 365 E3 oder E5 oder mit separaten Azure AD Premium P1-oder P2-Lizenzen können Sie MFA für Administratorkonten mit einer manuell erstellten Richtlinie für den bedingten Zugriff benötigen. Weitere Informationen finden Sie unter [Conditional Access: MFA for Administrators require](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) .
+Für Microsoft 365 E3 oder E5 oder mit separaten Azure AD Premium P1- oder P2-Lizenzen können Sie MFA für Administratorkonten mit einer manuell erstellten Richtlinie für bedingten Zugriff festlegen. Weitere [Informationen finden Sie unter "Bedingter Zugriff:MFA für Administratoren](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) erforderlich".
 
-Für Editionen von Microsoft 365 oder Office 365, die keinen bedingten Zugriff unterstützen, können Sie [Sicherheitsstandards](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) aktivieren, um MFA für alle Konten zu benötigen.
+Für Editionen von Microsoft 365 oder Office 365, [](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) die bedingten Zugriff nicht unterstützen, können Sie für Sicherheitseinstellungen MFA für alle Konten aktivieren.
 
 Hier sind einige zusätzliche Empfehlungen:
 
-- Verwenden Sie [Azure AD privilegierten Identitätsverwaltung](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started) , um die Anzahl der beständigen Administratorkonten zu reduzieren.
-- [Verwenden Sie die privilegierte Zugriffsverwaltung](../../compliance/privileged-access-management-overview.md) , um Ihre Organisation vor Verstößen zu schützen, die vorhandene privilegierte Administratorkonten mit dem ständigen Zugriff auf vertrauliche Daten oder den Zugriff auf wichtige Konfigurationseinstellungen verwenden können.
-- Erstellen und verwenden Sie separate Konten, denen [Microsoft 365-Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) *nur für die Verwaltung* zugewiesen sind. Administratoren sollten über ein eigenes Benutzerkonto für eine reguläre, nicht administrative Nutzung verfügen und nur dann ein Administratorkonto verwenden, wenn es erforderlich ist, um eine Aufgabe abzuschließen, die mit ihrer Rolle oder ihrer Aufgaben Funktion verknüpft ist.
-- Führen Sie [bewährte Methoden](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices) zum Sichern von privilegierten Konten in Azure AD aus.
+- Verwenden [Sie Azure AD Privileged Identity Management,](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started) um die Anzahl beständiger Administratorkonten zu reduzieren.
+- [Verwenden Sie privileged Access Management,](../../compliance/privileged-access-management-overview.md) um Ihre Organisation vor Sicherheitsverletzungen zu schützen, die vorhandene privilegierte Administratorkonten mit ständigem Zugriff auf vertrauliche Daten oder Zugriff auf kritische Konfigurationseinstellungen verwenden.
+- Erstellen und verwenden Sie separate Konten, denen [Microsoft 365-Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) nur für die *Verwaltung zugewiesen sind.* Administratoren sollten über ein eigenes Benutzerkonto für die regelmäßige nicht administrative Verwendung verfügen und nur bei Bedarf ein Administratorkonto verwenden, um eine Aufgabe auszuführen, die mit ihrer Rolle oder Jobfunktion verknüpft ist.
+- Befolgen [Sie bewährte Methoden](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices) zum Sichern privilegierter Konten in Azure AD.
 
 ## <a name="next-step"></a>Nächster Schritt
 
-[![Schritt 2: Konfigurieren der allgemeinen Identitäts-und Zugriffsrichtlinien für den bedingten Zugriff](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)](identity-access-policies.md)
+[![Schritt 2: Konfigurieren der allgemeinen Identitäts- und Zugriffsrichtlinien für bedingten Zugriff](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)](identity-access-policies.md)
 
-[Konfigurieren der allgemeinen Richtlinien für Identitäts-und Geräte Zugriff](identity-access-policies.md)
+[Konfigurieren der allgemeinen Identitäts- und Gerätezugriffsrichtlinien](identity-access-policies.md)

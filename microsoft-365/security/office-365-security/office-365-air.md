@@ -21,12 +21,12 @@ description: Erste Schritte mit automatisierten Untersuchungs- und Reaktionsfunk
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 6ccefb5c435f08fcef4dcc872af676fba70668ee
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 570fb3c9d180d3167cfc5a4e3c3825102875b74f
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794544"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49865008"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Automatisierte Untersuchung und Reaktion (AIR) in Microsoft Defender für Office 365
 
@@ -107,7 +107,7 @@ Microsoft 365 bietet viele integrierte Warnungsrichtlinien, mit denen Der Missbr
 |Warnung|Severity|Wie die Warnung generiert wird|
 |---|---|---|
 |Ein potenziell schädlicher URL-Klick wurde erkannt.|**High**|Diese Warnung wird generiert, wenn eine der folgenden Bedingungen auftritt: <ul><li>Ein Benutzer, der durch [sichere Links](atp-safe-links.md) in Ihrer Organisation geschützt ist, klickt auf einen schädlichen Link.</li><li>Von Microsoft Defender für Office 365 identifizierte Änderungen der Diktierung für URLs</li><li>Benutzer überschreiben Warnungsseiten für sichere Links (basierend auf der Richtlinie für sichere [Links in Ihrer Organisation).](set-up-atp-safe-links-policies.md)</li></ul> <p> Weitere Informationen zu Ereignissen, die diese Warnung auslösen, finden Sie unter ["Einrichten von Richtlinien für sichere Links".](set-up-atp-safe-links-policies.md)|
-|Eine E-Mail-Nachricht wird von einem Benutzer als Schadsoftware oder Phishing gemeldet.|**Informational**|Diese Warnung wird generiert, wenn Benutzer in Ihrer Organisation Nachrichten mithilfe des Add-Ins "Nachricht melden" als [Phishing-E-Mail melden.](enable-the-report-message-add-in.md)|
+|Eine E-Mail-Nachricht wird von einem Benutzer als Schadsoftware oder Phishing gemeldet.|**Informational**|Diese Warnung wird generiert, wenn Benutzer in Ihrer Organisation Nachrichten mithilfe des [Add-Ins](enable-the-report-message-add-in.md) "Nachricht melden" oder "Phishing melden" als [Phishing-E-Mail melden.](enable-the-report-phish-add-in.md)|
 |E-Mail-Nachrichten, die Schadsoftware enthalten, werden nach der Zustellung entfernt|**Informational**|Diese Warnung wird generiert, wenn E-Mail-Nachrichten, die Schadsoftware enthalten, an Postfächer in Ihrer Organisation zugestellt werden. Wenn dieses Ereignis auftritt, entfernt Microsoft die infizierten Nachrichten aus Exchange Online-Postfächern, indem die automatische Bereinigung zur [Nullstunde verwendet wird.](zero-hour-auto-purge.md)|
 |E-Mail-Nachrichten mit Phishing-URLs werden nach der Zustellung entfernt.|**Informational**|Diese Warnung wird generiert, wenn Nachrichten mit Phishing an Postfächer in Ihrer Organisation zugestellt werden. Wenn dieses Ereignis auftritt, entfernt Microsoft die infizierten Nachrichten aus Exchange Online-Postfächern, indem die automatische Bereinigung zur [Nullstunde verwendet wird.](zero-hour-auto-purge.md)|
 |Verdächtige Muster für das Senden von E-Mails werden erkannt|**Medium**|Diese Warnung wird generiert, wenn jemand in Ihrer Organisation verdächtige E-Mails gesendet hat und das Senden von E-Mails eingeschränkt werden kann. Dies ist eine frühe Warnung für verhalten, die darauf hinweisen könnte, dass das Konto gefährdet ist, aber nicht streng genug, um den Benutzer einzuschränken. <p> Obwohl es selten ist, kann eine von dieser Richtlinie generierte Warnung eine Anomalie sein. Es ist jedoch eine gute Idee zu überprüfen, ob [das Benutzerkonto gefährdet ist.](responding-to-a-compromised-email-account.md)|
@@ -141,7 +141,7 @@ Berechtigungen werden über bestimmte Rollen erteilt, z. B. die in der folgenden
 
 - [Überprüfen und Genehmigen ausstehender Aktionen](air-remediation-actions.md)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Automatisierte Untersuchung und Wartung in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 

@@ -1,5 +1,5 @@
 ---
-title: Installieren und Verwenden des Add-Ins für die Junk-e-Mail-Berichterstellung für Microsoft Outlook
+title: Installieren und Verwenden des Junk-E-Mail-Berichterstellungs-Add-Ins für Microsoft Outlook
 f1.keywords:
 - NOCSH
 ms.author: siosulli
@@ -13,123 +13,123 @@ localization_priority: Normal
 ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
-description: Hier erfahren Sie, wie Sie das Add-in "Microsoft Junk-e-Mail-Berichterstellung" installieren und verwenden, um Spam, nicht-Spam und Phishing-Nachrichten an Microsoft zu melden.
-ms.openlocfilehash: 4345066ec180b5d7fe5ff8b537a3cd057f60c31c
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Erfahren Sie, wie Sie das Microsoft-Add-In "Junk-E-Mail-Berichterstellung" installieren und verwenden, um Spam-, Nichtspam- und Phishingnachrichten an Microsoft zu melden.
+ms.openlocfilehash: 2b98fb0183cb7164ee90fb6a3a22d949e6edc2bc
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658869"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49865061"
 ---
-# <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Installieren und Verwenden des Add-Ins für die Junk-e-Mail-Berichterstellung für Microsoft Outlook
+# <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Installieren und Verwenden des Junk-E-Mail-Berichterstellungs-Add-Ins für Microsoft Outlook
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
 > [!NOTE]
-> Wenn Sie derzeit das Add-in "Junk-e-Mail-Berichterstellung" nicht verwenden, wird stattdessen das [Add-in "Berichtsnachricht](enable-the-report-message-add-in.md) " empfohlen. Weitere Informationen finden Sie unter [Melden von Nachrichten und Dateien an Microsoft](report-junk-email-messages-to-microsoft.md).
+> Wenn Sie das Junk-E-Mail-Berichterstellungs-Add-In derzeit nicht verwenden, empfehlen wir stattdessen das [Add-In](enable-the-report-message-add-in.md) "Nachricht melden" oder das ["Phishing-Add-In](enable-the-report-phish-add-in.md) melden". Weitere Informationen finden Sie unter [Melden von Nachrichten und Dateien an Microsoft](report-junk-email-messages-to-microsoft.md).
 
-Mit dem Add-in "Junk-e-Mail-Berichterstellung" für Microsoft Outlook können Benutzer falsch positive Ergebnisse (gute e-Mail-Nachrichten als Spam gekennzeichnet), falsche Negative (ungültige e-Mail-Nachricht) und Phishing-Nachrichten an Microsoft senden. Wenn Ihre Organisation keinen Exchange Online Schutz verwendet (beispielsweise lokale Exchange-oder e-Mail-Dienste, die nicht Exchange Online sind), wirkt sich die Übermittlung des Junk-e-Mail-Berichts nicht auf Ihre Spamfilterung aus.
+Mit dem Junk-E-Mail-Bericht-Add-In für Microsoft Outlook können Benutzer falsch positive Ergebnisse (gute E-Mails als Spam gekennzeichnet), falsch negative Ergebnisse (ungültige E-Mails sind zugelassen) und Phishingnachrichten an Microsoft übermitteln. Wenn Ihre Organisation Exchange Online Protection nicht verwendet (z. B. lokale Exchange- oder andere E-Mail-Dienste als Exchange Online), hat Ihre Übermittlung des Junk-E-Mail-Berichts keine Auswirkungen auf Ihre Spamfilterung.
 
-In diesem Thema wird erläutert, wie Sie das Add-in "Junk-e-Mail-Berichterstellung" installieren und verwenden.
+In diesem Thema wird erläutert, wie Sie das Junk-E-Mail-Berichterstellungs-Add-In installieren und verwenden.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Informationen zum Installieren des Junk-e-Mail-Berichts-Add-Ins finden Sie im Abschnitt [Installieren des Junk-e-Mail-Berichts-Add-ins](#install-the-junk-email-reporting-add-in) weiter unten in diesem Artikel.
+- Informationen zum Installieren des Junk-E-Mail-Berichterstellungs-Add-Ins finden Sie im Abschnitt "Installieren des [Junk-E-Mail-Berichterstellungs-Add-Ins"](#install-the-junk-email-reporting-add-in) weiter später in diesem Artikel.
 
-- Das Add-in "Junk-e-Mail-Berichterstellung" funktioniert mit den folgenden Versionen von Outlook:
+- Das Junk-E-Mail-Bericht-Add-In funktioniert mit den folgenden Versionen von Outlook:
 
   - Outlook 2013 oder höher
-  - Outlook im Lieferumfang von Microsoft 365-Apps für Unternehmen
+  - Outlook im Lieferumfang von Microsoft 365 Apps for Enterprise
 
-- Weitere Informationen zum Melden von Nachrichten an Microsoft finden Sie unter [Report Messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+- Weitere Informationen zum Melden von Nachrichten an Microsoft finden Sie unter ["Melden von Nachrichten und Dateien an Microsoft".](report-junk-email-messages-to-microsoft.md)
 
-## <a name="use-the-junk-email-reporting-add-in-to-report-spam-and-phishing-messages"></a>Verwenden des Add-Ins "Junk-e-Mail-Berichterstellung" zum Melden von Spam-und Phishing-Nachrichten
+## <a name="use-the-junk-email-reporting-add-in-to-report-spam-and-phishing-messages"></a>Verwenden des Junk-E-Mail-Berichterstellungs-Add-Ins zum Melden von Spam- und Phishingnachrichten
 
-1. Verwenden Sie für Nachrichten im Posteingang oder in einem anderen e-Mail-Ordner außer Junk-e-Mails eine der folgenden Methoden, um Spam-und Phishing-Nachrichten zu melden:
+1. Verwenden Sie für Nachrichten im Posteingang oder einem anderen E-Mail-Ordner mit Ausnahme von Junk-E-Mails eine der folgenden Methoden, um Spam- und Phishingnachrichten zu melden:
 
-   - Wählen Sie die Nachricht aus, oder öffnen Sie die Nachricht. Klicken Sie auf der Registerkarte **Start** oder **Nachricht** im Menüband auf **Junk**, und wählen Sie dann **als Junk melden** oder **als Phishing melden** aus.
+   - Wählen Sie die Nachricht aus, oder öffnen Sie die Nachricht. Klicken Sie  **auf der Registerkarte "Start"** oder "Nachricht" im Menüband auf **"Junk",** und wählen Sie dann **"Als** Junk melden" oder "Als Phishing **melden" aus.**
 
-     ![Melden von Junk-oder Phishing-e-Mails über das Menüband](../../media/junk-email-reporting-ribbon.png)
+     ![Melden von Junk- oder Phishing-E-Mails über das Menüband](../../media/junk-email-reporting-ribbon.png)
 
-   - Klicken Sie mit der rechten Maustaste auf die Nachricht, wählen Sie **Junk** aus, und wählen Sie dann **als Junk melden** oder **als Phishing melden** aus.
+   - Klicken Sie mit der rechten Maustaste auf die Nachricht, wählen **Sie "Junk"** aus, und wählen Sie dann **"Als Junk melden"** oder "Als Phishing **melden" aus.**
 
-     ![Melden von Junk-oder Phishing-e-Mails mit der rechten Maustaste](../../media/junk-email-reporting-right-click.png)
+     ![Melden von Junk- oder Phishing-E-Mails per Rechtsklick](../../media/junk-email-reporting-right-click.png)
 
-   - Wählen Sie mehrere Nachrichten aus, klicken Sie mit der rechten Maustaste, und wählen Sie dann **als Junk melden** oder **als Phishing melden** aus.
+   - Wählen Sie mehrere Nachrichten aus, klicken Sie mit der rechten Maustaste, und wählen Sie dann **"Als Junk melden"** oder "Als Phishing **melden" aus.**
 
-     ![Melden von mehreren Junk-oder Phishing-e-Mails mit der rechten Maustaste](../../media/junk-email-reporting-right-click-multiple.png)
+     ![Melden mehrerer Junk- oder Phishing-E-Mail-Nachrichten mit der rechten Maustaste](../../media/junk-email-reporting-right-click-multiple.png)
 
-2. Lesen Sie im daraufhin angezeigten Dialogfeld die Informationen, und klicken Sie auf **Bericht**. Wenn Sie Ihre Meinung ändern, klicken Sie auf **nicht melden**.
+2. Lesen Sie im angezeigten Dialogfeld die Informationen, und klicken Sie auf **"Bericht".** Wenn Sie Ihre Meinung ändern, klicken Sie auf **"Nicht melden".**
 
-   ![Dialogfeld "Bericht als Junk"](../../media/junk-email-reporting-report-as-junk-dialog.png)
+   ![Dialogfeld "Als Junk melden"](../../media/junk-email-reporting-report-as-junk-dialog.png)
 
-   ![Dialogfeld "als Phishing melden"](../../media/junk-email-reporting-report-as-phishing-dialog.png)
+   ![Melden als Phishingdialogfeld](../../media/junk-email-reporting-report-as-phishing-dialog.png)
 
 3. Die ausgewählten Nachrichten werden zur Analyse an Microsoft gesendet und:
 
-   - In den Junk-e-Mail-Ordner verschoben, wenn er als Spam gemeldet wurde.
+   - In den Junk-E-Mail-Ordner verschoben, wenn er als Spam gemeldet wurde.
    - Gelöscht, wenn es als Phishing gemeldet wurde.
 
    Wenn Sie überprüfen möchten, ob die Nachrichten gesendet wurden, öffnen Sie den Ordner **Gesendete Objekte**, in dem die gesendeten Nachrichten angezeigt werden sollten.
 
-## <a name="use-the-junk-email-reporting-add-in-to-report-non-spam-and-phishing-messages-from-the-junk-email-folder"></a>Verwenden des Add-Ins "Junk-e-Mail-Berichterstellung" zum Melden von nicht-Spam-und Phishing-Nachrichten aus dem Junk-e-Mail
+## <a name="use-the-junk-email-reporting-add-in-to-report-non-spam-and-phishing-messages-from-the-junk-email-folder"></a>Verwenden des Junk-E-Mail-Berichts-Add-Ins zum Melden von Nichtspam- und Phishingnachrichten aus dem Junk-E-Mail-Ordner
 
-1. Verwenden Sie im Ordner Junk-e-Mail eine der folgenden Methoden, um Spam-falsch positive Ergebnisse oder Phishing-Nachrichten zu melden:
+1. Verwenden Sie im Junk-E-Mail-Ordner eine der folgenden Methoden, um falsch positive Spam- oder Phishingnachrichten zu melden:
 
-   - Wählen Sie die Nachricht aus, oder öffnen Sie die Nachricht. Klicken Sie auf der Registerkarte **Start** oder **Nachricht** im Menüband auf **kein Junk-e**-Mail, und wählen Sie dann als nicht-Junk-e- **Mail** melden oder **als Phishing melden** aus.
+   - Wählen Sie die Nachricht aus, oder öffnen Sie die Nachricht. Klicken Sie  **auf der Registerkarte "Start"** oder "Nachricht" im Menüband auf "Kein **Junk",** und wählen Sie dann "Als Nicht-Junk-E-Mail melden" oder "Als Phishing **melden" aus.** 
 
-     ![Melden von Junk-und Phishing-e-Mails im Menüband im Ordner "Junk-e-Mail"](../../media/junk-email-reporting-junk-folder-ribbon.png)
+     ![Melden sie keine Junk- oder Phishing-E-Mails aus dem Menüband im Junk-E-Mail-Ordner.](../../media/junk-email-reporting-junk-folder-ribbon.png)
 
-   - Klicken Sie mit der rechten Maustaste auf die Nachricht, klicken Sie auf **Junk**, und wählen Sie dann als **nicht-Junk-e-Mail** melden oder **als Phishing melden** aus.
+   - Klicken Sie mit der rechten Maustaste auf die Nachricht, klicken Sie auf **"Junk",** und wählen Sie "Als Nicht-Junk-E-Mail **melden"** oder "Als Phishing **melden" aus.**
 
-     ![Melden von Junk-und Phishing-e-Mails per Rechtsklick im Junk-e-Mail-Ordner](../../media/junk-email-reporting-junk-folder-right-click.png)
+     ![Melden sie keine Junk- oder Phishing-E-Mails, wenn Sie mit der rechten Maustaste in den Junk-E-Mail-Ordner klicken.](../../media/junk-email-reporting-junk-folder-right-click.png)
 
-   - Wählen Sie mehrere Nachrichten aus, klicken Sie mit der rechten Maustaste, und wählen Sie dann als **nicht-Junk-e-Mail** melden oder **als Phishing melden** aus.
+   - Wählen Sie mehrere Nachrichten aus, klicken Sie mit der rechten Maustaste, und wählen Sie dann "Als Nicht-Junk-E-Mail **melden"** oder **"Als Phishing melden" aus.**
 
-     ![Melden Sie sich mit der rechten Maustaste in den Junk-e-Mail-Ordner, um mehrere nicht-Junk-oder Phishing-e-Mails](../../media/junk-email-reporting-junk-folder-right-click-multiple.png)
+     ![Melden mehrerer Junk- oder Phishing-E-Mail-Nachrichten durch Rechtsklick im Junk-E-Mail-Ordner](../../media/junk-email-reporting-junk-folder-right-click-multiple.png)
 
-2. Lesen Sie im daraufhin angezeigten Dialogfeld die Informationen, und klicken Sie auf **Bericht**. Wenn Sie Ihre Meinung ändern, klicken Sie auf **nicht melden**.
+2. Lesen Sie im angezeigten Dialogfeld die Informationen, und klicken Sie auf **"Bericht".** Wenn Sie Ihre Meinung ändern, klicken Sie auf **"Nicht melden".**
 
-   ![Dialogfeld "Bericht als nicht-Junk"](../../media/junk-email-reporting-report-as-not-junk-dialog.png)
+   ![Dialogfeld "Als nicht junk melden"](../../media/junk-email-reporting-report-as-not-junk-dialog.png)
 
-   ![Dialogfeld "als Phishing melden"](../../media/junk-email-reporting-report-as-phishing-dialog.png)
+   ![Melden als Phishingdialogfeld](../../media/junk-email-reporting-report-as-phishing-dialog.png)
 
 3. Die ausgewählten Nachrichten werden zur Analyse an Microsoft gesendet und:
 
-   - In den Junk-e-Mail-Ordner verschoben, wenn er als Spam gemeldet wurde.
+   - In den Junk-E-Mail-Ordner verschoben, wenn er als Spam gemeldet wurde.
    - Gelöscht, wenn es als Phishing gemeldet wurde.
 
    Wenn Sie überprüfen möchten, ob die Nachrichten gesendet wurden, öffnen Sie den Ordner **Gesendete Objekte**, in dem die gesendeten Nachrichten angezeigt werden sollten.
 
-## <a name="install-the-junk-email-reporting-add-in"></a>Installieren des Add-Ins für Junk-e-Mail-Berichte
+## <a name="install-the-junk-email-reporting-add-in"></a>Installieren des Junk-E-Mail-Berichterstellungs-Add-Ins
 
 - Sie benötigen Administratorrechte auf dem Computer, auf dem Sie das Add-in installieren.
 
-- Wechseln Sie zu, <https://www.microsoft.com/download/details.aspx?id=18275> und laden Sie die entsprechende MSI-Datei für Ihre Office-Version an einen Speicherort, der leicht zu finden ist:
+- Laden Sie die entsprechende .msi-Datei für Ihre Version von Office an einen leicht zu <https://www.microsoft.com/download/details.aspx?id=18275> findenen Speicherort herunter:
 
-  - **32-Bit**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
-  - **64-Bit**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
+  - **32-Bit:**`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
+  - **64-Bit:**`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
-- Für Outlook 2013 oder höher ist die einzige Voraussetzung die Microsoft .NET Framework 2.0. In Windows 10 installieren Sie das .NET Framework 2,0 nicht aus einem Download.
+- Für Outlook 2013 oder höher ist microsoft .NET Framework 2.0 die einzige Voraussetzung. In Windows 10 installieren Sie .NET Framework 2.0 nicht aus einem Download.
 
-### <a name="install-the-junk-email-reporting-add-in-using-the-setup-wizard"></a>Installieren des Junk-e-Mail-Berichts-Add-Ins mithilfe des Setup-Assistenten
+### <a name="install-the-junk-email-reporting-add-in-using-the-setup-wizard"></a>Installieren des Junk-E-Mail-Berichterstellungs-Add-Ins mithilfe des Setup-Assistenten
 
 1. Schließen Sie Outlook auf Ihrem Computer.
 
-2. Überprüfen Sie in Windows 10, ob die .NET Framework 2,0 aktiviert ist. Anweisungen finden Sie unter [Aktivieren der Microsoft .NET Framework 3.5 in der System](https://docs.microsoft.com/dotnet/framework/install/dotnet-35-windows-10#enable-the-net-framework-35-in-control-panel)Steuerung.
+2. Überprüfen Sie in Windows 10, ob .NET Framework 2.0 aktiviert ist. Anweisungen finden Sie unter [Aktivieren von .NET Framework 3.5 in der Systemsteuerung.](https://docs.microsoft.com/dotnet/framework/install/dotnet-35-windows-10#enable-the-net-framework-35-in-control-panel)
 
 3. Suchen Sie die heruntergeladene MSI-Datei, und doppelklicken Sie darauf.
 
 4. Klicken Sie auf der Seite **Willkommen beim Setup des Microsoft-Add-Ins "Junk-E-Mail-Berichtsprogramm"** auf **Weiter**.
 
-5. Lesen Sie den Lizenzvertrag, und klicken Sie auf **Ich stimme den Bedingungen des Lizenzvertrags** zu, wenn Sie den Bedingungen zustimmen, und klicken Sie dann auf **weiter**.
+5. Überprüfen Sie den Lizenzvertrag, klicken Sie auf **"Ich** stimme den Bedingungen des Lizenzvertrags zu, wenn Sie den Bedingungen zustimmen, und klicken Sie dann auf **"Weiter".**
 
 6. Klicken Sie nach Abschluss des Assistenten auf **Fertig stellen**.
 
 Starten Sie Outlook.
 
-Suchen Sie auf dem Outlook-Menüband nach der Schaltfläche **Junk** . Sie können Microsoft nun Junk-E-Mails melden, indem Sie die entsprechenden E-Mails im Posteingang auswählen und dann auf die Schaltfläche **Junk-E-Mails melden** klicken.
+Suchen Sie im Menüband von Outlook nach der Schaltfläche **"Junk".** Sie können Microsoft nun Junk-E-Mails melden, indem Sie die entsprechenden E-Mails im Posteingang auswählen und dann auf die Schaltfläche **Junk-E-Mails melden** klicken.
 
 Wählen Sie den Pfeil nach unten neben **Junk** aus, um weitere Optionen anzuzeigen, z. B. **Als betrügerischen Phishing-Versuch melden**, wenn Sie Phishing-Scam-E-Mails an Microsoft melden möchten. In Ihrem Junk-E-Mailordner können Sie auch **Keine Junk-E-Mail** auswählen, wenn eine E-Mail-Nachricht fälschlicherweise als Junk-E-Mail gekennzeichnet wurde.
 
@@ -137,21 +137,21 @@ Wählen Sie den Pfeil nach unten neben **Junk** aus, um weitere Optionen anzuzei
 
 1. Schließen Sie Outlook auf Ihrem Computer.
 
-2. Installieren Sie in Windows 10 die .NET Framework 2,0, indem Sie den folgenden Befehl ausführen:
+2. Installieren Sie in Windows 10 .NET Framework 2.0, indem Sie den folgenden Befehl ausführen:
 
    ```dos
    DISM /Online /Enable-Feature /FeatureName:NetFx3 /All
    ```
 
-3. Wenn Sie das Add-in ohne Benutzerinteraktion installieren möchten, öffnen Sie eine Eingabeaufforderung, und verwenden Sie die folgende Syntax:
+3. Öffnen Sie eine Eingabeaufforderung, und verwenden Sie die folgende Syntax, um das #A0 ohne Benutzerinteraktion zu installieren:
 
    ```dos
    msiexec /qn /i "<PathToMSIFile>\<MSIFile>" [MaxMessageSelection=<1-50>] [BccEmailAddress="<EmailAddress1>; <EmailAddress2>"...]
    ```
 
-   - `MaxMessageSelection` Gibt die maximale Anzahl von Nachrichten an, die Sie für eine einzelne Übermittlung auswählen können. Gültige Werte sind 1 bis 50. Der Standardwert ist 15.
+   - `MaxMessageSelection` gibt die maximale Anzahl von Nachrichten an, die Sie für eine einzelne Übermittlung auswählen können. Gültige Werte sind 1 bis 50. Der Standardwert ist 15.
 
-   - `BccEmailAddress` Gibt zusätzliche Bcc-Empfänger an, die eine Kopie aller Übermittlungen von Benutzern erhalten sollen. Der Standardwert ist leer (keine zusätzlichen Bcc-Empfänger).
+   - `BccEmailAddress` gibt zusätzliche Bcc-Empfänger an, die eine Kopie aller Benutzerübermittlungen erhalten. Der Standardwert ist leer (keine weiteren Bcc-Empfänger).
 
    In diesem Beispiel wird die 64-Bit-Version des Add-Ins aus dem angegebenen Pfad mit den Standardeinstellungen installiert.
 
@@ -161,7 +161,7 @@ Wählen Sie den Pfeil nach unten neben **Junk** aus, um weitere Optionen anzuzei
 
    In diesem Beispiel wird die 32-Bit-Version des Add-Ins aus dem angegebenen Pfad mit den folgenden zusätzlichen Einstellungen installiert:
 
-   - In einer einzigen Übermittlung können bis zu 20 Nachrichten ausgewählt werden.
+   - Bis zu 20 Nachrichten können in einer einzigen Übermittlung ausgewählt werden.
    - junkreports@contoso.com und hollyd@treyresearch.net erhalten Bcc-Kopien aller Übermittlungen.
 
    ```dos
@@ -170,100 +170,100 @@ Wählen Sie den Pfeil nach unten neben **Junk** aus, um weitere Optionen anzuzei
 
 ### <a name="how-do-you-know-this-worked"></a>Woher wissen Sie, dass dieses Verfahren erfolgreich war?
 
-Führen Sie die folgenden Schritte in Outlook aus, um zu überprüfen, ob Sie das Add-in "Junk-e-Mail-Berichterstellung" erfolgreich installiert haben:
+Um zu überprüfen, ob Sie das Junk-E-Mail-Berichterstellungs-Add-In erfolgreich installiert haben, gehen Sie in Outlook wie folgt vor:
 
-- Wählen Sie die Nachricht aus, oder öffnen Sie die Nachricht. Klicken Sie auf der Registerkarte **Start** oder **Nachricht** im Menüband auf **Junk**, und vergewissern Sie sich, dass die folgenden Optionen verfügbar sind:
+- Wählen Sie die Nachricht aus, oder öffnen Sie die Nachricht. Klicken Sie  **auf der Registerkarte "Start"** oder "Nachricht" im Menüband auf **"Junk",** und stellen Sie sicher, dass die folgenden Optionen verfügbar sind:
 
-  - **Als Junk melden**
-  - **Als Phishing melden**
-  - **Optionen für Junk-Berichterstellung**
-  - **Junk Online-Hilfe melden**
+  - **Melden als Junk-E-Mail**
+  - **Melden als Phishing**
+  - **Junk-Berichtsoptionen**
+  - **Melden der Junk-Online-Hilfe**
 
-  ![Melden von Junk-oder Phishing-e-Mails über das Menüband](../../media/junk-email-reporting-ribbon.png)
+  ![Melden von Junk- oder Phishing-E-Mails über das Menüband](../../media/junk-email-reporting-ribbon.png)
 
-- Klicken Sie mit der rechten Maustaste auf die Nachricht, wählen Sie **Junk** aus, und stellen Sie sicher, dass die folgenden Optionen verfügbar sind:
+- Klicken Sie mit der rechten Maustaste auf die Nachricht, wählen **Sie "Junk"** aus, und stellen Sie sicher, dass die folgenden Optionen verfügbar sind:
 
-  - **Als Junk melden**
-  - **Als Phishing melden**
-  - **Optionen für Junk-Berichterstellung**
-  - **Junk Online-Hilfe melden**
+  - **Melden als Junk-E-Mail**
+  - **Melden als Phishing**
+  - **Junk-Berichtsoptionen**
+  - **Melden der Junk-Online-Hilfe**
 
-  ![Melden von Junk-oder Phishing-e-Mails mit der rechten Maustaste](../../media/junk-email-reporting-right-click.png)
+  ![Melden von Junk- oder Phishing-E-Mails per Rechtsklick](../../media/junk-email-reporting-right-click.png)
 
 - Wählen Sie mehrere Nachrichten aus, klicken Sie mit der rechten Maustaste, und stellen Sie sicher, dass die folgenden Optionen verfügbar sind:
 
-  - **Als Junk melden**
-  - **Als Phishing melden**
+  - **Melden als Junk-E-Mail**
+  - **Melden als Phishing**
 
-  ![Melden von mehreren Junk-oder Phishing-e-Mails mit der rechten Maustaste](../../media/junk-email-reporting-right-click-multiple.png)
+  ![Melden mehrerer Junk- oder Phishing-E-Mail-Nachrichten mit der rechten Maustaste](../../media/junk-email-reporting-right-click-multiple.png)
 
-- Führen Sie die vorherigen Aktionen im Ordner **Junk-e-Mail** aus, und vergewissern Sie sich, dass die vorherigen **Junk** -Berichterstellungsoptionen jetzt **nicht Junk** sind.
+- Gehen Sie wie zuvor im Junk-E-Mail-Ordner vor, und stellen Sie sicher, dass die vorherigen **Junk-E-Mail-Berichtsoptionen** jetzt **"Kein Junk" sind.** 
 
-  ![Melden von Junk-und Phishing-e-Mails im Menüband im Ordner "Junk-e-Mail"](../../media/junk-email-reporting-junk-folder-ribbon.png)
+  ![Melden sie keine Junk- oder Phishing-E-Mails aus dem Menüband im Junk-E-Mail-Ordner.](../../media/junk-email-reporting-junk-folder-ribbon.png)
 
-  ![Melden von Junk-und Phishing-e-Mails per Rechtsklick im Junk-e-Mail-Ordner](../../media/junk-email-reporting-junk-folder-right-click.png)
+  ![Melden sie keine Junk- oder Phishing-E-Mails, wenn Sie mit der rechten Maustaste in den Junk-E-Mail-Ordner klicken.](../../media/junk-email-reporting-junk-folder-right-click.png)
 
-  ![Melden Sie sich mit der rechten Maustaste in den Junk-e-Mail-Ordner, um mehrere nicht-Junk-oder Phishing-e-Mails](../../media/junk-email-reporting-junk-folder-right-click-multiple.png)
+  ![Melden mehrerer Junk- oder Phishing-E-Mail-Nachrichten durch Rechtsklick im Junk-E-Mail-Ordner](../../media/junk-email-reporting-junk-folder-right-click-multiple.png)
 
 ## <a name="uninstall-the-junk-email-reporting-add-in"></a>Deinstallieren des Add-Ins "Junk-E-Mail-Berichtsprogramm"
 
-Nachdem Sie Outlook geschlossen haben, verwenden Sie eines der folgenden Verfahren, um das Add-in "Junk-e-Mail-Berichterstellung" zu deinstallieren:
+Nachdem Sie Outlook geschlossen haben, verwenden Sie eines der folgenden Verfahren, um das Junk-E-Mail-Berichterstellungs-Add-In zu deinstallieren:
 
-- **System** Steuerung: Drücken Sie die Windows-Taste + R. Geben Sie im daraufhin geöffneten Dialogfeld **Ausführen** die EINGABETASTE ein, `control appwiz.cpl` und klicken Sie dann auf **OK**.
+- **Systemsteuerung:** Drücken Sie die Windows-TASTE + R. Geben Sie im dialogfeld **"Ausführen"** ein, das geöffnet wird, `control appwiz.cpl` und klicken Sie dann auf **"OK".**
 
-  Suchen und wählen Sie **Microsoft Junk-e-Mail-Berichts-Add-in** in der Liste aus, und klicken Sie dann auf **deinstallieren**.
+  Suchen Sie das **Microsoft-Add-In "Junk-E-Mail-Berichterstellung"** in der Liste, und wählen Sie es aus, und klicken Sie dann auf **"Deinstallieren".**
 
-- **Windows Installer-Paket**: Suchen oder laden Sie die entsprechende MSI-Datei, und doppelklicken Sie darauf.
+- **Windows Installer-Paket:** Suchen oder herunterladen Sie die entsprechende MSI-Datei, und doppelklicken Sie darauf.
 
-  - **32-Bit**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
+  - **32-Bit:**`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
 
-  - **64-Bit**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
+  - **64-Bit:**`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
-  Wählen Sie im daraufhin angezeigten Dialogfeld **Microsoft Junk-e-Mail-Berichts-Add-in für Outlook entfernen** aus, und klicken Sie dann auf **weiter**.
+  Wählen Sie im angezeigten Dialogfeld **"Microsoft Junk-E-Mail-Berichterstellungs-Add-In für Outlook** entfernen" aus, und klicken Sie dann auf **"Weiter".**
 
-- **Automatischer Modus**: Suchen oder Herunterladen der entsprechenden MSI-Datei. Ersetzen Sie in einem Eingabeaufforderungsfenster \<PathToFile\> durch den Speicherort der MSI-Datei, und führen Sie einen der folgenden Befehle aus:
+- **Silent Mode**: Suchen oder Herunterladen der entsprechenden MSI-Datei. Ersetzen Sie in einem Eingabeaufforderungsfenster den Speicherort der MSI-Datei, und führen Sie einen der \<PathToFile\> folgenden Befehle aus:
 
-  - **32-Bit**:
+  - **32-Bit:**
 
     ```dos
     msiexec /x "<PathToFile>\Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi" /qn MSIRESTARTMANAGERCONTROL="DisableShutdown"
     ```
 
-  - **64-Bit**:
+  - **64-Bit:**
 
     ```dos
     msiexec /x "<PathToFile>\Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi" /qn MSIRESTARTMANAGERCONTROL="DisableShutdown"
     ```
 
-Wenn Sie Outlook nach der Deinstallation öffnen, sollten die Optionen Junk, not Junk und Phishing-Berichterstellung nicht mehr vorhanden sein.
+Wenn Sie Outlook nach der Deinstallation öffnen, sollten die Junk-, nicht Junk- und Phishingberichtsoptionen weg sein.
 
-## <a name="troubleshooting-the-junk-email-reporting-add-in"></a>Problembehandlung beim Add-in "Junk-e-Mail-Berichte"
+## <a name="troubleshooting-the-junk-email-reporting-add-in"></a>Problembehandlung für das Junk-E-Mail-Bericht-Add-In
 
-Gelegentlich können Probleme mit Outlook auftreten, nachdem Sie das Add-in "Junk-e-Mail-Berichterstellung" hinzugefügt haben. In diesem Abschnitt werden Probleme beschrieben, die auftreten können, sowie Tipps zum Beheben dieser Probleme.
+Gelegentlich können Probleme mit Outlook nach dem Hinzufügen des Junk-E-Mail-Berichterstellungs-Add-Ins angezeigt werden. In diesem Abschnitt werden Probleme beschrieben, die auftreten können, sowie Tipps zum Beheben dieser Probleme.
 
 ### <a name="troubleshooting-for-users"></a>Problembehandlung für Benutzer
 
-Eines oder mehrere der folgenden Probleme können auftreten:
+Eines oder mehrere der folgenden Probleme werden auftreten:
 
 - Das Programm reagiert nicht, wenn Sie auf **Junk-E-Mail melden** klicken
 - Outlook reagiert nicht mehr, wenn Sie eine E-Mail auswählen
 - Gemeldete Junk-E-Mails können nicht übermittelt werden, und es wird eine Unzustellbarkeitsnachricht angezeigt
 
-Um dieses Problem zu beheben, führen Sie die folgenden Schritte aus:
+Gehen Sie wie folgt vor, um dieses Problem zu beheben:
 
 1. Schließen Sie Outlook, und starten Sie es neu.
-2. Erstellen und senden Sie eine Testnachricht, und vergewissern Sie sich, dass der Empfänger die Nachricht erhalten hat.
-3. Wenn das Problem fortbesteht, wenden Sie sich an Ihren Administrator.
+2. Erstellen und senden Sie eine Testnachricht, und stellen Sie sicher, dass der Empfänger die Nachricht empfangen hat.
+3. Wenn das Problem weiterhin besteht, wenden Sie sich an Ihren Administrator.
 
-Weitere Methoden, die Sie zum Übermitteln von Nachrichten an Microsoft verwenden können, finden Sie unter [Report Messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+Weitere Methoden, die Sie zum Übermitteln von Nachrichten an Microsoft verwenden können, finden Sie unter "Nachrichten und Dateien an [Microsoft melden".](report-junk-email-messages-to-microsoft.md)
 
 ### <a name="troubleshooting-for-admins"></a>Problembehandlung für Administratoren
 
-#### <a name="problem-an-error-message-continually-appears-that-asks-users-to-contact-their-system-administrator"></a>Problem: Es wird ständig eine Fehlermeldung angezeigt, in der die Benutzer aufgefordert werden, Ihren System Administrator zu kontaktieren.
+#### <a name="problem-an-error-message-continually-appears-that-asks-users-to-contact-their-system-administrator"></a>Problem: Es wird ständig eine Fehlermeldung angezeigt, in der Benutzer zur Kontaktaufnahme mit ihrem Systemadministrator gefragt werden.
 
-1. Überprüfen oder Festlegen des `LoggingLevel` Registrierungsschlüssels auf den Wert "Verbose":
+1. Überprüfen oder legen Sie `LoggingLevel` den Registrierungsschlüssel auf den Wert "Verbose" (Ausführlich) ein:
 
-   - **32-Bit-Outlook unter 32-Bit-Windows**:
+   - **32-Bit-Version von Outlook unter 32-Bit-Windows:**
 
      ```text
      Windows Registry Editor Version 5.00
@@ -272,7 +272,7 @@ Weitere Methoden, die Sie zum Übermitteln von Nachrichten an Microsoft verwende
      "LoggingLevel"="Verbose"
      ```
 
-   - **32-Bit-Outlook unter 64-Bit-Windows**:
+   - **32-Bit-Version von Outlook unter 64-Bit-Windows:**
 
      ```text
      Windows Registry Editor Version 5.00
@@ -281,7 +281,7 @@ Weitere Methoden, die Sie zum Übermitteln von Nachrichten an Microsoft verwende
      "LoggingLevel"="Verbose"
      ```
 
-   - **64-Bit-Outlook**:
+   - **64-Bit-Version von Outlook:**
 
      ```text
      Windows Registry Editor Version 5.00
@@ -290,7 +290,7 @@ Weitere Methoden, die Sie zum Übermitteln von Nachrichten an Microsoft verwende
      "LoggingLevel"="Verbose"
      ```
 
-2. Starten Sie Outlook neu, und fordern Sie die Benutzer auf, zurückgemeldet zu werden, wenn die Fehlermeldung angezeigt wird.
+2. Starten Sie Outlook neu, und bitten Sie die Benutzer, sich zu melden, wenn die Fehlermeldung angezeigt wird.
 
 3. Erfassen Sie die Protokollinformationen am folgenden Speicherort:
 
@@ -298,9 +298,9 @@ Weitere Methoden, die Sie zum Übermitteln von Nachrichten an Microsoft verwende
 
 4. Kontaktieren Sie den technischen Support für Exchange Online Protection, und übergeben Sie den Mitarbeitern diese Protokollinformationen.
 
-#### <a name="problem-users-selected-not-to-receive-a-confirmation-prompt-when-they-report-messages-and-now-they-want-the-prompt-back"></a>Problem: Benutzer haben ausgewählt, beim Melden von Nachrichten keine Bestätigungsaufforderung zu erhalten, und möchten nun die Eingabeaufforderung zurück
+#### <a name="problem-users-selected-not-to-receive-a-confirmation-prompt-when-they-report-messages-and-now-they-want-the-prompt-back"></a>Problem: Benutzer haben ausgewählt, dass beim Melden von Nachrichten keine Bestätigungsaufforderung angezeigt werden soll, und möchten nun die Aufforderung zurück
 
-1. Erstellen Sie den `ConfirmReportJunk` Registrierungsschlüssel mit dem Wert "true":
+1. Erstellen Sie `ConfirmReportJunk` den Registrierungsschlüssel mit dem Wert "True":
 
    ```text
    Windows Registry Editor Version 5.00
