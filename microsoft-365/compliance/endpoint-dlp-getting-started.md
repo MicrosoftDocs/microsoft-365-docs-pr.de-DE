@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Richten Sie Microsoft 365 Endpunkt-DLP (Data Loss Prevention, Verhinderung von Datenverlust) ein, um Dateiaktivitäten zu überwachen und schützende Maßnahmen für diese Dateien auf Endpunkten anzuwenden.
-ms.openlocfilehash: 7dbceb97b7ccb542a0a4933f3e3cccf5a38026ea
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: 5a5c8e77679b55f20269b135da52bc0498fd7c11
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604259"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840924"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Erste Schritte mit Endpunkt-DLP
 
@@ -98,6 +98,8 @@ Vergewissern Sie sich, dass die Windows 10-Geräte, auf die Sie Endpunkt-DLP anw
 5. Installieren Sie den Microsoft Edge-Browser auf dem Endpunktgerät, um Richtlinienaktionen für die Aktivität „Hochladen in die Cloud“ durchzusetzen. Weitere Informationen finden Sie unter [Herunterladen des auf Chromium basierenden neuen Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
 6. Im monatlichen Enterprise-Kanal der Microsoft 365 Apps Versionen 2004–2008 gibt es ein bekanntes Problem mit Endpunkt-DLP zur Klassifizierung von Office-Inhalten. Aktualisieren Sie auf Version 2009 oder höher. Mehr zu den aktuellen Versionen unter [Updateverlauf für Microsoft 365 Apps (nach Datum)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date). Weitere Informationen zu diesem Problem finden Sie im Abschnitt Office Suite in den [Versionshinweisen für aktuelle Kanal-Veröffentlichungen im Jahr 2020](https://docs.microsoft.com/officeupdates/current-channel#version-2010-october-27).
+
+7. Wenn Sie Endpunkte besitzen, die einen Geräteproxy verwenden, um eine Internetverbindung herzustellen, befolgen Sie die Verfahren unter [Konfigurieren von Geräteproxy- und Internetverbindungseinstellungen für Endpunkt-DLP](endpoint-dlp-configure-proxy.md).
 
 ## <a name="onboarding-devices-into-device-management"></a>Onboarding von Geräten für die Geräteverwaltung
 
