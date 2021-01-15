@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Administratoren können erfahren, wie sich die Schulung zur Angriffssimulation im Microsoft 365 Security Center auf Die Mitarbeiter auswirkt und einblicke aus Simulations- und Schulungsergebnissen gewinnen kann.
-ms.openlocfilehash: 54855a4ce8e64f4d58b9ff2697395ed684be2773
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: c283819550872691d8dd23d3921c22cb23637633
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794556"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49870955"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>Gewinnen Sie Erkenntnisse durch Angriffssimulationsschulungen
 
@@ -53,4 +53,8 @@ Im Abschnitt "Empfohlene Aktionen" finden Sie Details zu den Empfehlungen, die i
 
 ## <a name="related-links"></a>Links zu verwandten Themen
 
-**Angriffssimulator** [Erstellen einer Phishingangriffssimulation](attack-simulation-training.md) und Erstellen einer Nutzlast für die Schulung Ihrer [Mitarbeiter](attack-simulation-training-payloads.md)
+[Erste Schritte mit dem Training zur Angriffssimulation](attack-simulation-training-get-started.md)
+
+[Erstellen einer Phishingangriffssimulation](attack-simulation-training.md)
+
+[Erstellen einer Nutzlast für die Schulung Ihrer Mitarbeiter](attack-simulation-training-payloads.md)

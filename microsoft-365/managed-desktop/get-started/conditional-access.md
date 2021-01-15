@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 88a832f6c4e17756bfb25ef5cb7c4c5ecedaf2c0
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: ca919798480698f92bba094c3755b3eccce30888
+ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794388"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49867970"
 ---
 # <a name="adjust-settings-after-enrollment"></a>Anpassen der Einstellungen nach der Registrierung
 
@@ -32,9 +32,9 @@ Nachdem Sie die Registrierung in Microsoft Managed Desktop abgeschlossen haben, 
 
 - Autopilot-Bereitstellungsprofil: Wenn Sie autopilot-Richtlinien verwenden, aktualisieren Sie jede, um die moderne Workplace Devices -All Azure **AD-Gruppe** auszuschließen. Um sie zu  aktualisieren, wählen Sie im Abschnitt "Ausgeschlossene Gruppen" unter "Aufgaben" die **Gruppe "Moderne** Arbeitsplatzgeräte – Alle Azure AD-Gruppen" **aus,** die während der Microsoft Managed Desktop-Registrierung erstellt wurde. Microsoft Managed Desktop hat außerdem ein Autopilotprofil erstellt, das den Namen "Modern Workplace" **(modern Workplace Autopilot Profile) hat.** Wenn Sie Ihre eigenen **Autopilotprofile** aktualisieren, stellen Sie sicher, dass Sie die Gruppe **"Modern Workplace Devices - All** Azure AD" nicht aus dem modern Workplace Autopilot Profile ausschließen, das von Microsoft Managed Desktop erstellt wurde. 
 
-- Richtlinien für bedingten Zugriff: Schließen Sie für Richtlinien für bedingten Zugriff, die Sie erstellt haben, die Azure AD-Gruppe **"Modern Workplace Service Accounts"** aus. Die Schritte finden Sie unter [Bedingter Zugriff: Benutzer und Gruppen.](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups) Microsoft Managed Desktop hat außerdem einige Richtlinien für bedingten Zugriff erstellt, die alle "Modern Workplace" im Namen haben (z. B. **"Modern Workplace Secure Workstation").** Wenn Sie Ihre eigenen Richtlinien für  bedingten Zugriff aktualisieren, stellen Sie sicher, dass Sie die Gruppe **"Moderne** Workplace-Geräte – Alle Azure AD"-Gruppen nicht von richtlinien ausschließen, die von Microsoft Managed Desktop erstellt wurden.
+- Richtlinien für bedingten Zugriff: Wenn Sie neue Richtlinien für bedingten Zugriff im Zusammenhang mit Azure AD, Microsoft Intune oder Microsoft Defender for Endpoint nach der Registrierung von Microsoft Managed Desktop erstellen, schließen Sie die Azure AD-Gruppe "Modern **Workplace Service Accounts"** aus. Die Schritte finden Sie unter [Bedingter Zugriff: Benutzer und Gruppen.](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups) Microsoft Managed Desktop verwaltet separate Richtlinien für bedingten Zugriff, um den Zugriff auf diese Konten einzuschränken. Um die Microsoft Managed Desktop-Richtlinie für bedingten Zugriff (**Modern Workplace – Secure Workstation)** zu überprüfen, wechseln Sie zu Microsoft Endpoint Manager, und navigieren Sie zu bedingten **Zugriff** in **Endpoint Security.** Ändern Sie keine Azure AD-Richtlinien für bedingten Zugriff, die von Microsoft Managed Desktop erstellt wurden und deren Name "Moderner Arbeitsplatz" ist.
 
-- Mehrstufige Authentifizierung: Stellen Sie sicher, dass alle Richtlinien für bedingten Zugriff, die eine mehrstufige Authentifizierung erfordern, die Azure AD-Gruppe **"Modern Workplace Service Accounts"** ausschließen. Weitere Informationen finden Sie unter [Richtlinien für bedingten Zugriff](../get-ready/readiness-assessment-fix.md#conditional-access-policies) und [bedingter Zugriff: MFA für alle Benutzer erforderlich.](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
+- Mehrstufige Authentifizierung: Wenn Sie neue mehrstufige Authentifizierungsanforderungen in Richtlinien für bedingten Zugriff im Zusammenhang mit Azure AD, Intune oder Microsoft Defender für Endpoint nach der Registrierung von Microsoft Managed Desktop erstellen, schließen Sie die Azure AD-Gruppe "Modern **Workplace Service Accounts"** aus. Die Schritte finden Sie unter [Bedingter Zugriff: Benutzer und Gruppen.](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups) Microsoft Managed Desktop verwaltet separate Richtlinien für bedingten Zugriff, um den Zugriff auf Mitglieder dieser Gruppe einzuschränken. Um die Microsoft Managed Desktop-Richtlinie für bedingten Zugriff (**Modern Workplace -**) zu überprüfen, wechseln Sie zu Microsoft Endpoint Manager, und navigieren Sie zu **bedingten Zugriff** in Endpoint **Security.** 
 
 - Windows 10-Updatering: Schließen Sie für alle von Ihnen erstellten Windows 10-Updateringrichtlinien die Gruppe **"Moderne** Arbeitsplatzgeräte – Alle Azure AD"-Gruppen aus jeder Richtlinie aus. Weitere Schritte finden Sie unter [Erstellen und Zuweisen von Updateringen.](https://docs.microsoft.com/mem/intune/protect/windows-10-update-rings#create-and-assign-update-rings) Microsoft Managed Desktop hat außerdem einige Updateringrichtlinien erstellt, die alle "Modern Workplace" im Namen haben (z. B. **Modern Workplace Update Policy [Broad]**, Modern Workplace Update Policy **[Fast]**, **Modern Workplace Update Policy [First]** und **Modern Workplace Update Policy [Test]**). Wenn Sie Ihre eigenen Richtlinien aktualisieren, stellen Sie sicher, dass Sie die **Gruppe "Moderne** Arbeitsplatzgeräte – Alle Azure AD" nicht von denjenigen ausschließen, die Microsoft Managed Desktop erstellt hat. 
 
