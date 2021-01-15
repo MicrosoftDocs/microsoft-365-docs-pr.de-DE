@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Verwenden Sie Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in SharePoint- und Microsoft Teams-Websites sowie in Microsoft 365-Gruppen.
-ms.openlocfilehash: c1232e8e839837fc5564909322c90f634f1c6fa9
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 9276288bc05abebe864a4465f69284372fa0baab
+ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49614929"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49868023"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites verwenden
 
@@ -79,7 +79,7 @@ Die Aktivierung von Vertraulichkeitsbezeichnungen für Container bedeutet, dass 
     
     Wenn nur dieser Bereich für die Bezeichnung ausgewählt ist, wird die Bezeichnung nicht in Office-Apps angezeigt, sie Vetraulichkeitsbezeichnungen unterstützen, und kann nicht auf Dateien und E-Mails angewendet werden. Eine solche Trennung von Bezeichnungen kann zwar sowohl für Benutzer als auch Administratoren hilfreich sein, jedoch auch die Komplexität der Bereitstellung von Bezeichnungen erhöhen.
     
-    Beispielsweise müssen Sie die [Reihenfolge Ihrer Bezeichnungen](sensitivity-labels.md#label-priority-order-matters) sorgfältig überprüfen, da SharePoint erkennt, wenn ein Dokument mit Vertraulichkeitsbezeichnung auf eine Seite mit Vertraulichkeitsbezeichnung hochgeladen wird. In diesem Szenario werden automatisch ein Überwachungsereignis und eine E-Mail generiert, wenn die Vertraulichkeitsbezeichnung des Dokuments eine höhere Priorität aufweist als die Bezeichnung der Seite. Weitere Informationen findem Sie im Abschnitt [Überwachung von Vertraulichkeitsbezeichnungsaktivitäten](#auditing-sensitivity-label-activities) auf dieser Seite. 
+    Beispielsweise müssen Sie die [Reihenfolge Ihrer Bezeichnungen](sensitivity-labels.md#label-priority-order-matters) sorgfältig überprüfen, da SharePoint erkennt, wenn ein Dokument mit Vertraulichkeitsbezeichnung auf eine Seite mit Vertraulichkeitsbezeichnung hochgeladen wird. In diesem Szenario werden automatisch ein Überwachungsereignis und eine E-Mail generiert, wenn das Dokument eine Vertraulichkeitsbezeichnung mit höherer Priorität hat als die der Website. Weitere Informationen findem Sie im Abschnitt [Überwachung von Vertraulichkeitsbezeichnungsaktivitäten](#auditing-sensitivity-label-activities) auf dieser Seite. 
 
 2. Wählen Sie dann auf der Seite **Definieren von Schutzeinstellungen für Gruppen und Websites** eine oder beide der verfügbaren Optionen aus:
     
@@ -277,9 +277,10 @@ Die folgenden Apps und Dienste unterstützen Vertraulichkeitsbezeichnungen, die 
 
   - SharePoint
   - Teams
-  - Outlook im Web und für Windows, MacOS, iOS und Android
+  - Outlook im Web und für Windows, macOS, iOS und Android
   - Formulare
   - Stream
+  - Microsoft Planner (Einführungsphase) 
 
 Die folgenden Apps und Dienste unterstützen derzeit keine Vertraulichkeitsbezeichnungen, die für Websites und Gruppeneinstellungen konfiguriert sind:
 
@@ -293,7 +294,6 @@ Die folgenden Apps und Dienste unterstützen derzeit keine Vertraulichkeitsbezei
 
   - Dynamics 365
   - Yammer
-  - Planner
   - Project
   - Power BI
 

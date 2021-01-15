@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Verwenden Sie das Tool für die Inhaltssuche im Security & Compliance Center, um Chatdaten von Teams für lokale Benutzer in einer Exchange-Hybridbereitstellung zu suchen und zu exportieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 60bb207463c360d98623caed4024bb87deb5fdfc
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: 9620c48056545e6d6cf053040849acfe0a1bc68e
+ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277097"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49868013"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>Suche nach Teams-Chatdaten für lokale Benutzer
 
@@ -60,7 +60,7 @@ Geben Sie die folgenden Informationen an, wenn Sie die Anforderung an den Micros
   
 - Der Standarddomänenname Ihrer Organisation.
 
-- Der Mandantenname und die Mandanten-ID Ihrer Organisation. Sie finden diese im Azure Active Directory-Portal (unter **Verwalten von ** \> **Eigenschaften**). Lesen Sie [Suchen Ihrer Microsoft 365-Mandanten-ID](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id).
+- Der Mandantenname und die Mandanten-ID Ihrer Organisation. Sie finden diese im Azure Active Directory-Portal (unter **Verwalten von** \> **Eigenschaften**). Lesen Sie [Suchen Ihrer Microsoft 365-Mandanten-ID](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id).
 
 - Der folgende Titel oder eine Beschreibung des Zwecks der Supportanforderung: "Anwendungs-Inhaltssuche für lokale Benutzer aktivieren". Auf diese Weise kann die Anforderung an das eDiscovery Engineering-Team geleitet werden, das die Anforderung umsetzt.
 
@@ -92,7 +92,7 @@ Nachdem das Feature aktiviert wurde, können Sie die Inhaltssuche im Security & 
     kind:im
     ```
 
-4. An diesem Punkt können Sie unter **Speicherorte**eine der folgenden Optionen auswählen:
+4. An diesem Punkt können Sie unter **Speicherorte** eine der folgenden Optionen auswählen:
 
     - **Alle Speicherorte:** Wählen Sie diese Option, um die Postfächer aller Benutzer in Ihrer Organisation zu durchsuchen. Wenn das Kontrollkästchen aktiviert ist, werden auch alle cloudbasierten Speicher von Teams-Chatdaten für lokale Benutzer durchsucht.
 
@@ -142,13 +142,13 @@ Weitere Informationen über diese Cmdlets finden Sie unter:
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
- **Wo befindet sich der cloudbasierte Speicher für lokale Benutzer?**
+**Wo befindet sich der cloudbasierte Speicher für lokale Benutzer?**
   
-Cloudbasierter Speicher wird in demselben Rechenzentrum wie Ihre Organisation bereitgestellt.
+Die Chat-Daten von Teams werden im bevorzugten Datenspeicher (PDL) für einen lokalen Benutzer gespeichert. Der PDL wird sowohl in Single-Geo- als auch in Multi-Geo-Umgebungen beachtet. Mehr dazu unter [Microsoft 365 Multi-Geo](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo).
   
  **Gibt es andere Voraussetzungen als die Einreichung einer Supportanfrage?**
   
- Wie zuvor erläutert müssen die Identitäten von Benutzern mit lokalen Postfächern mit Ihrer cloudbasierten Organisation synchronisiert werden, damit für jedes lokale Benutzerkonto in Office 365 ein entsprechendes E-Mail-Benutzerkonto angelegt wird. Außerdem muss Ihre Organisation ein Office 365 Enterprise-Abonnement haben, wie z. B. ein Office 365 Enterprise E1-, E3- oder E5-Abonnement.
+Wie zuvor erläutert müssen die Identitäten von Benutzern mit lokalen Postfächern mit Ihrer cloudbasierten Organisation synchronisiert werden, damit für jedes lokale Benutzerkonto in Office 365 ein entsprechendes E-Mail-Benutzerkonto angelegt wird. Außerdem muss Ihre Organisation ein Office 365 Enterprise-Abonnement haben, wie z. B. ein Office 365 Enterprise E1-, E3- oder E5-Abonnement.
   
  **Besteht das Risiko, dass die Chatdaten der Teams verloren gehen, wenn das lokale Postfach des Benutzers in die Cloud migriert wird?**
   

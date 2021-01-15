@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Aufbewahrungsrichtlinien für Überwachungsprotokolle sind Bestandteil der neuen erweiterten Überwachungsfunktionen in Microsoft 365. Mit einer Aufbewahrungsrichtlinie für Überwachungsprotokolle können Sie festlegen, wie lange Überwachungsprotokolle in Ihrer Organisation aufbewahrt werden sollen.
-ms.openlocfilehash: c2449ab90d04fd44909999d25b940ee4d2758b15
-ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
+ms.openlocfilehash: c106024e5426972f6637d6226b385d1179516d4d
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753334"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49870944"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Verwalten von Aufbewahrungsrichtlinien für Überwachungsprotokolle
 
@@ -36,10 +36,10 @@ Sie können Aufbewahrungsrichtlinien für Überwachungsprotokolle im Security & 
 
 ## <a name="default-audit-log-retention-policy"></a>Standardmäßige Aufbewahrungsrichtlinie für Überwachungsprotokolle
 
-Die erweiterte Überwachung in Microsoft 365 stellt eine Standardaufbewahrungsrichtlinie für Überwachungsprotokolle für alle Organisationen bereit. Diese Richtlinie bewahrt alle Exchange-, SharePoint- und Azure Active Directory-Überwachungsdatensätze für ein Jahr auf. Diese Standardrichtlinie bewahrt Überwachungsdatensätze auf, die den Wert **AzureActiveDirectory** , **Exchange** oder **SharePoint** für die **Workload** -Eigenschaft (der Dienst, in dem die Aktivität aufgetreten ist) enthalten. Die Standardrichtlinie kann nicht geändert werden. Im Abschnitt [Weitere Informationen](#more-information) in diesem Artikel finden Sie eine Liste der Datensatztypen für die einzelnen Workloads, die in der Standardrichtlinie enthalten sind.
+Die erweiterte Überwachung in Microsoft 365 stellt eine Standardaufbewahrungsrichtlinie für Überwachungsprotokolle für alle Organisationen bereit. Diese Richtlinie bewahrt alle Exchange-, SharePoint- und Azure Active Directory-Überwachungsdatensätze für ein Jahr auf. Diese Standardrichtlinie bewahrt Überwachungsdatensätze auf, die den Wert **AzureActiveDirectory**, **Exchange** oder **SharePoint** für die **Workload**-Eigenschaft (der Dienst, in dem die Aktivität aufgetreten ist) enthalten. Die Standardrichtlinie kann nicht geändert werden. Im Abschnitt [Weitere Informationen](#more-information) in diesem Artikel finden Sie eine Liste der Datensatztypen für die einzelnen Workloads, die in der Standardrichtlinie enthalten sind.
 
 > [!NOTE]
-> Die Standardrichtlinie zur Aufbewahrung von Überwachungsprotokollen gilt nur für Überwachungsdatensätze für Aktivitäten, die von Benutzern durchgeführt werden, denen eine Office 365- oder Microsoft 365 E5-Lizenz zugewiesen ist, oder die über eine Microsoft 365 E5 Compliance- oder E5 eDiscovery- und Überwachungs-Add-on-Lizenz verfügen. Wenn es in Ihrer Organisation nicht-E5-Benutzer gibt, werden die entsprechenden Überwachungsdatensätze für 90 Tage aufbewahrt.
+> Die Standardrichtlinie zur Aufbewahrung von Überwachungsprotokollen gilt nur für Überwachungsdatensätze für Aktivitäten, die von Benutzern durchgeführt werden, denen eine Office 365- oder Microsoft 365 E5-Lizenz zugewiesen ist, oder die über eine Microsoft 365 E5 Compliance- oder E5 eDiscovery- und Überwachungs-Add-on-Lizenz verfügen. Wenn Sie Nicht-E5-Benutzer oder Gastbenutzer in Ihrer Organisation haben, werden die entsprechenden Audit-Aufzeichnungen 90 Tage lang aufbewahrt.
 
 ## <a name="before-you-create-an-audit-log-retention-policy"></a>Vor dem Erstellen einer Aufbewahrungsrichtlinie für Überwachungsprotokolle
 
@@ -55,13 +55,13 @@ Die erweiterte Überwachung in Microsoft 365 stellt eine Standardaufbewahrungsri
 
 1. Wechseln Sie zu [https://compliance.microsoft.com](https://compliance.microsoft.com), und melden Sie sich mit dem Benutzerkonto an, dem die Rolle "Organisationskonfiguration"im Security & Compliance Center zugewiesen ist.
 
-2. Klicken Sie im linken Bereich des Microsoft 365 Compliance Center auf **Alle anzeigen** und dann auf **Überwachung** .
+2. Klicken Sie im linken Bereich des Microsoft 365 Compliance Center auf **Alle anzeigen** und dann auf **Überwachung**.
 
     Die Seite **Überwachung** wird angezeigt.
 
     ![Die Suchseite des Überwachungsprotokolls im Compliance Center](../media/AuditLogRetentionPolicy1.png)
 
-3. Klicken Sie auf **Richtlinie zur Überwachungsaufbewahrung erstellen** , und füllen Sie dann die folgenden Felder auf der Flyout-Seite aus:
+3. Klicken Sie auf **Richtlinie zur Überwachungsaufbewahrung erstellen**, und füllen Sie dann die folgenden Felder auf der Flyout-Seite aus:
 
     ![Flyoutseite "Aufbewahrungsrichtlinien für die Überwachung"](../media/AuditLogRetentionPolicy2.png)
 
@@ -81,7 +81,7 @@ Die erweiterte Überwachung in Microsoft 365 stellt eine Standardaufbewahrungsri
 
    6. **Priorität:** Dieser Wert bestimmt die Reihenfolge, in der Aufbewahrungsrichtlinien für Überwachungsprotokolle in Ihrer Organisation angewandt werden. Ein höherer Wert weist auf eine höhere Priorität hin.  So würde beispielsweise eine Richtlinie mit einem Prioritätswert von **5** Vorrang vor einer Richtlinie mit einem Prioritätswert von **0** haben. Wie zuvor erläutert, hat jede benutzerdefinierte Aufbewahrungsrichtlinie für Überwachungsprotokolle Vorrang vor der Standardrichtlinie für Ihre Organisation.
 
-4. Klicken Sie auf **Speichern** , um die neue Aufbewahrungsrichtlinie für Überwachungsprotokolle zu erstellen.
+4. Klicken Sie auf **Speichern**, um die neue Aufbewahrungsrichtlinie für Überwachungsprotokolle zu erstellen.
 
 ## <a name="create-an-audit-log-retention-policy-in-powershell"></a>Erstellen einer Aufbewahrungsrichtlinie für Überwachungsprotokolle in PowerShell
 
@@ -99,7 +99,7 @@ Aufbewahrungsrichtlinien für Überwachungsprotokolle können auch mithilfe von 
 
    - Eine Beschreibung der Richtlinie.
 
-   - Bewahrt alle Microsoft Teams-Aktivitäten auf (gemäß der Definition durch den *RecordType* -Parameter).
+   - Bewahrt alle Microsoft Teams-Aktivitäten auf (gemäß der Definition durch den *RecordType*-Parameter).
 
    - Bewahrt Microsoft Teams-Überwachungsprotokolle 10 Jahre lang auf.
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Verwenden Sie die MailItemsAccessed-Postfachüberwachungsaktion, um forensische Untersuchungen kompromittierter Benutzerkonten auszuführen.
-ms.openlocfilehash: 908c2a22b05d7daef8d55c7e0aac61f25489692a
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 15379a5c24ee222cf097e94d46dc46de0e385820
+ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546291"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49868003"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>Verwenden der erweiterten Überwachung zur Untersuchung kompromittierter Konten
 
@@ -178,8 +178,8 @@ Es kommt häufig vor, dass ein Angreifer und der Besitzer eines Postfachs gleich
 
 |Überwachungsdatensatz 1  |Überwachungsdatensatz 2  |Überwachungsdatensatz 3|
 |---------|---------|---------|
-|ClientIPAddress**1**<br/>SessionId**2**|ClientIPAddress**2**<br/>SessionId**2**|ClientIPAddress**1**<br/>SessionId**3**|
-|InternetMessageId**A**<br/>InternetMessageId**D**<br/>InternetMessageId**E**<br/>InternetMessageId**F**<br/>|InternetMessageId**A**<br/>InternetMessageId**C**|InternetMessageId**B** |
+|ClientIPAddress **1**<br/>SessionId **2**|ClientIPAddress **2**<br/>SessionId **2**|ClientIPAddress **1**<br/>SessionId **3**|
+|InternetMessageId **A**<br/>InternetMessageId **D**<br/>InternetMessageId **E**<br/>InternetMessageId **F**<br/>|InternetMessageId **A**<br/>InternetMessageId **C**|InternetMessageId **B** |
 ||||
 
 Wenn eine der in der Tabelle im [vorherigen Abschnitt](#filtering-of-duplicate-audit-records) aufgeführten Eigenschaften unterschiedlich ist, wird ein separater Überwachungsdatensatz generiert, um den neuen Kontext zu verfolgen. Die Zugriffe werden je nach dem Kontext, in dem die Aktivität stattgefunden hat, in separate Überwachungsdatensätze sortiert.
@@ -187,3 +187,9 @@ Wenn eine der in der Tabelle im [vorherigen Abschnitt](#filtering-of-duplicate-a
 In den im folgenden Screenshot gezeigten Überwachungsdatensätzen wird die Zugriffsaktivität in verschiedenen Überwachungsdatensätzen zusammengestellt, je nachdem, in welchem Kontext der Zugriff stattgefunden hat, obwohl gleichzeitig von EWSEditor und OWA auf E-Mails zugegriffen wird. In diesem Fall wird der Kontext durch verschiedene Werte für die ClientInfoString-Eigenschaft definiert.
 
 ![Unterschiedliche Überwachungsdatensätze je nach Kontext](../media/MailItemsAccessed4.png)
+
+Hier ist die Syntax für den im vorherigen Screenshot gezeigten Befehl:
+
+```powershell
+Search-MailboxAuditLog -Identity admin -ShowDetails -Operations MailItemsAccessed -ResultSize 2000 | Select LastAccessed,Operation,AuditOperationsCountInAggregatedRecord,ClientInfoString
+``` 

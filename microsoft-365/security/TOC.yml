@@ -334,6 +334,8 @@
                   href: ./office-365-security/auditing-reports-in-eop.md
             - name: Defender for Office 365
               href: ./office-365-security/office-365-atp.md
+            - name: Defender für Office 365 bewerten
+              href: ./office-365-security/office-365-evaluation.md
             - name: Neuerungen in Defender für Office 365
               href: office-365-security/whats-new-in-office-365-atp.md
             - name: 'Defender für Office 365 für SharePoint, OneDrive und Microsoft Teams'
@@ -481,6 +483,8 @@
               href: ./office-365-security/configuration-analyzer-for-security-policies.md
             - name: Angriffssimulator in Defender für Office 365
               href: ./office-365-security/attack-simulator.md
+            - name: Erste Schritte mit dem Angriffssimulationstraining
+              href: ./office-365-security/attack-simulation-training-get-started.md
             - name: Simulieren eines Phishing-Angriffs durch Angriffssimulationsschulungen
               href: ./office-365-security/attack-simulation-training.md
             - name: Erstellen einer benutzerdefinierten Nutzlast für Angriffssimulationsschulungen

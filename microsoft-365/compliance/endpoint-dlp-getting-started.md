@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Richten Sie Microsoft 365 Endpunkt-DLP (Data Loss Prevention, Verhinderung von Datenverlust) ein, um Dateiaktivitäten zu überwachen und schützende Maßnahmen für diese Dateien auf Endpunkten anzuwenden.
-ms.openlocfilehash: 5a5c8e77679b55f20269b135da52bc0498fd7c11
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: c9b7b10328e80a70f14b8fb40a3bf91cb89dbc88
+ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840924"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49867959"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Erste Schritte mit Endpunkt-DLP
 
@@ -84,7 +84,11 @@ Vergewissern Sie sich, dass die Windows 10-Geräte, auf die Sie Endpunkt-DLP anw
 
 1. Es muss Windows 10 x64 Build 1809 oder höher ausgeführt werden.
 
-2. Antimalware-Clientversion ist 4.18.2009.7 oder neuer. Überprüfen Sie die aktuelle Version, indem Sie die Windows-Sicherheits-App öffnen, das Symbol Einstellungen und dann Info auswählen. Die Versionsnummer wird unter Antimalware-Clientversion aufgeführt. Aktualisieren Sie auf die neueste Antimalware-Clientversion, indem Sie Windows Update KB4052623 installieren. Hinweis: Keine der Windows-Sicherheitskomponenten muss aktiv sein, Sie können Endpunkt-DLP unabhängig vom Windows-Sicherheitsstatus ausführen.
+2. Antimalware-Clientversion ist 4.18.2009.7 oder neuer. Überprüfen Sie die aktuelle Version, indem Sie die Windows-Sicherheits-App öffnen, das Symbol Einstellungen und dann Info auswählen. Die Versionsnummer wird unter Antimalware-Clientversion aufgeführt. Aktualisieren Sie auf die neueste Antimalware-Clientversion, indem Sie Windows Update KB4052623 installieren. 
+
+> [!NOTE]
+> Es wird keine der Windows-Sicherheitskomponenten benötigt. Sie können Endpoint DLP unabhängig vom Windows-Sicherheitsstatus ausführen. [Der Echtzeitschutz und der Verhaltensmonitor](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) müssen jedoch aktiviert sein.
+ 
 
 3. Die folgenden Windows-Updates sind installiert. Hinweis: Diese Updates sind keine Voraussetzung für die Einbindung eines Geräts an Endpunkt-DLP, enthalten jedoch Fixes für wichtige Probleme und müssen daher vor der Verwendung des Produkts installiert werden.
 
