@@ -521,6 +521,8 @@
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
             - name: Aktivieren des Add-Ins „Nachrichten melden“
               href: ./office-365-security/enable-the-report-message-add-in.md
+            - name: Aktivieren des Add-Ins „Phishing melden“
+              href: ./office-365-security/enable-the-report-phish-add-in.md
             - name: Installieren und Verwenden des Add-Ins „Melden von Junk-E-Mails“
               href: ./office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md
             - name: Regeln für den Nachrichtenfluss (Transportregeln) in EOP als eigenständige Lösung
