@@ -20,7 +20,7 @@ ms.custom:
 description: 'Zusammenfassung: Zusätzliche Geräteinformationen für Dienste beim Übergang von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen.'
 ms.openlocfilehash: 151fcac882dc91d96df3ece000c28d1a7abe1d1f
 ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "49780296"
@@ -61,7 +61,7 @@ Die Geräteregistrierung ist nach der Migration des Mandanten deaktiviert und ka
 Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
 ```
 
-## <a name="hybrid-azure-ad-join"></a>Hybride Einbindung in Azure AD
+## <a name="hybrid-azure-ad-join"></a>Azure AD Hybrid Join
 
 ### <a name="windows-down-level"></a>Kompatibles Windows
 
@@ -180,7 +180,7 @@ Der vorstehende Befehl muss nur einmal in einem administrativen Kontext auf dem 
 Der Benutzer kann das Gerät über die Windows-Einstellungen zu Azure AD verknüpfen: **Einstellungen > Konten > Zugriff auf Arbeit oder Schule > Verbinden**.
  
 
-## <a name="azure-ad-registered-company-owned"></a>Azure AD Registered (Im Besitz des Unternehmens)
+## <a name="azure-ad-registered-company-owned"></a>Azure AD-registriert (Unternehmensbesitz)
 
 Um herauszufinden, ob ein Windows 10-Gerät Azure AD-registriert ist, führen Sie auf dem Gerät folgenden Befehl aus:
 

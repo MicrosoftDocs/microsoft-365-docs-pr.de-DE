@@ -20,7 +20,7 @@ ms.custom:
 description: 'Zusammenfassung: Verstehen der Aktionen und Auswirkungen der Migrationsphasen für die Verschiebung von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in der neuen deutschen Rechenzentrumsregion.'
 ms.openlocfilehash: 940ad0799aca7ead20d226cfcf3cc4b7b21c6cdb
 ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/06/2021
 ms.locfileid: "49760198"
@@ -78,9 +78,9 @@ Zusätzliche Überlegungen:
 
 - Nach Abschluss der OneDrive-Migration in die Region Deutschland werden Datenindizes neu erstellt. Funktionen, die von Suchindizes abhängig sind, können betroffen sein, während die Neuindizierung im Gange ist.
 
-- Kunden von Microsoft Cloud Deutschland, deren SharePoint Online Instanz noch nicht migriert wurde, müssen SharePoint Online PowerShell-Modul/Microsoft. SharePointOnline. CSOM-Version 16.0.20616.12000 oder darunter bleiben. Andernfalls treten Verbindungen mit SharePoint Online über PowerShell oder das clientseitige Objektmodell fehl.
+- Microsoft Cloud Deutschland-Kunden, deren SharePoint Online-Instanz noch nicht migriert wurde, müssen bei Version 16.0.20616.12000 (oder niedriger) von SharePoint Online-PowerShell-Modul/Microsoft.SharePointOnline.CSOM bleiben. Andernfalls schlagen Verbindungen zu SharePoint Online über PowerShell oder das clientseitige Objektmodell fehl.
 
-- Kunden von Microsoft Cloud Deutschland, deren SharePoint Online Instanz migriert wurde, müssen SharePoint Online PowerShell-Modul/Microsoft. SharePointOnline. CSOM auf Version 16.0.20717.12000 oder höher aktualisieren. Andernfalls treten Verbindungen mit SharePoint Online über PowerShell oder das clientseitige Objektmodell fehl.
+- Microsoft Cloud Deutschland-Kunden, deren SharePoint Online-Instanz bereits migriert wurde, müssen SharePoint Online-PowerShell-Modul/Microsoft.SharePointOnline.CSOM auf Version 16.0.20717.12000 oder höher aktualisieren. Andernfalls schlagen Verbindungen zu SharePoint Online über PowerShell oder das clientseitige Objektmodell fehl.
 
 
 ## <a name="skype-for-business-online"></a>Skype for Business Online

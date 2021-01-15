@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Hier erfahren Sie, wie Sie Teams bereitstellen, in denen hochgradig vertrauliche Daten geschützt sind.
-ms.openlocfilehash: 6354de5a37547d14b16a4d6a0857ddc390d531e6
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 045f1b1d1ebf03eb70554dc5964acb0a12e0060f
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49750809"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49870851"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Teams für den Schutz hochgradig vertraulicher Daten konfigurieren
 
@@ -33,7 +33,7 @@ Für diese Schutzebene erstellen wir eine Vertraulichkeitsbezeichnung, die in Ih
 
 Die "Hochgradig vertraulich"-Stufe bietet den folgenden zusätzlichen Schutz gegenüber der Basisstufe:
 
-- Eine Vertraulichkeitsbezeichnung für das Team, die es Ihnen ermöglicht, die Gastfreigabe ein- oder auszuschalten und den Zugriff auf SharePoint-Inhalte für nicht verwaltete Geräte auf die Webebene zu beschränken. Diese Bezeichnung kann auch zum Klassifizieren und Verschlüsseln von Dateien verwendet werden.
+- Eine Vertraulichkeitsbezeichnung für das Team, die es Ihnen ermöglicht, die Gastfreigabe ein- oder auszuschalten und den Zugriff auf SharePoint-Inhalte für nicht verwaltete Geräte zu blockieren. Diese Bezeichnung kann auch zum Klassifizieren und Verschlüsseln von Dateien verwendet werden.
 - Einen restriktiveren standardmäßigen Freigabe-Linktyp
 - Nur Teambesitzer können private Kanäle erstellen.
 - Zugriffsanforderungen für die zugehörige SharePoint-Website werden deaktiviert.
@@ -63,7 +63,7 @@ Erstellen einer Vertraulichkeitsbezeichnung
 1. Öffnen Sie das [Microsoft 365 Compliance Center](https://compliance.microsoft.com).
 2. Klicken Sie unter **Lösungen** auf **Informationsschutz**.
 3. Klicken Sie auf **Bezeichnung erstellen**.
-4. Weisen Sie der Bezeichnung einen Namen zu. Wir empfehlen **Vertraulich**, Sie können aber auch einen anderen Namen auswählen, falls dieser bereits verwendet wird.
+4. Weisen Sie der Bezeichnung einen Namen zu. Wir empfehlen **Hochgradig vertraulich**, Sie können aber auch einen anderen Namen auswählen, falls dieser bereits verwendet wird.
 5. Fügen Sie einen Namen und eine Beschreibung hinzu, und klicken Sie auf **Weiter**.
 6. Wählen Sie auf der Seite **Definieren des Bereichs für diese Bezeichnung** die Option **Dateien & E-Mails** und **Gruppen & Websites** aus und klicken Sie **Weiter**.
 7. Wählen Sie auf der Seite **Schutzeinstellungen für Dateien und E-Mails auswählen** die Option **Dateien und E-Mails verschlüsseln** aus und klicken Sie dann **Weiter**.
