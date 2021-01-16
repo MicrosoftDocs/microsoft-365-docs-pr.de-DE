@@ -11,18 +11,16 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Administratoren können lernen, wie Sie Phishingangriffe simulieren und ihre Benutzer mithilfe von Angriffssimulationsschulungen in Microsoft Defender für Office 365 zur Phishingverhütung schulen.
-ms.openlocfilehash: dfdd3c93afb1b0fb30cc5b5affc040a369c29447
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: 56ee8b7c11187ee6883bffc9b41961d2783e1ff4
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870967"
+ms.locfileid: "49877152"
 ---
 # <a name="simulate-a-phishing-attack"></a>Simulieren eines Phishingangriffs
 
 Mit dem Training zur Angriffssimulation in Microsoft Defender für Office 365 können Sie gutartige Cyberangriffssimulationen in Ihrer Organisation ausführen, um Ihre Sicherheitsrichtlinien und -praktiken zu testen und Ihre Mitarbeiter zu schulen, um ihr Bewusstsein zu erhöhen und ihre Anfälligkeit für Angriffe zu verringern. Dieser Artikel führt Sie durch die Erstellung eines simulierten Phishingangriffs mithilfe von Angriffssimulationsschulungen.
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Informationen zu den ersten Schritte zum Training zur Angriffssimulation finden Sie unter ["Erste Schritte mit dem Attack Simulation Training".](attack-simulation-training-get-started.md)
 

@@ -11,18 +11,16 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Administratoren können erfahren, wie Sie benutzerdefinierte Nutzlasten für das Training zur Angriffssimulation in Microsoft Defender für Office 365 erstellen.
-ms.openlocfilehash: e3285b99d5b64255b9fdbda8c76b6f133aa013b2
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: 45311ad4c4eb09c8238d278475248680fbc66287
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870863"
+ms.locfileid: "49877128"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>Erstellen einer benutzerdefinierten Nutzlast für Angriffssimulationsschulungen
 
 Microsoft bietet einen robusten Nutzlastkatalog für verschiedene Social -Engineering-Techniken, die Sie mit Ihrer Angriffssimulationsschulung koppeln können. Möglicherweise möchten Sie jedoch benutzerdefinierte Nutzlasten erstellen, die für Ihre Organisation besser funktionieren. In diesem Artikel wird beschrieben, wie Sie eine Nutzlast in der Angriffssimulationsschulung in Microsoft Defender für Office 365 erstellen.
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 You can create a payload by clicking on **Create a payload** in either the dedicated [ **Payloads** tab](https://security.microsoft.com/attacksimulator?viewid=payload) or within the simulation creation [wizard](attack-simulation-training.md#selecting-a-payload).
 
@@ -67,7 +65,7 @@ Sie sind damit fertig, Ihre Nutzlast zu erstellen. Jetzt ist es an der Zeit, die
 
 ## <a name="related-links"></a>Verwandte Links
 
-[Erste Schritte mit dem Training zur Angriffssimulation](attack-simulation-training-get-started.md)
+[Erste Schritte mit dem Angriffssimulationstraining](attack-simulation-training-get-started.md)
 
 [Erstellen einer Phishingangriffssimulation](attack-simulation-training.md)
 

@@ -19,168 +19,169 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
-description: Erhalten Sie einen Überblick über das Microsoft 365-Nachrichtencenter und seine Rolle im Change Management.
-ms.openlocfilehash: cec60a7ae5df1af01625f8feef84ff258d798659
-ms.sourcegitcommit: 48f3c002678906189bfba079bbf055d67d08a60f
+description: Hier erhalten Sie einen Überblick über das Microsoft 365-Nachrichtencenter und seine Rolle bei der Änderungsverwaltung.
+ms.openlocfilehash: 6686fb8fe97cd38b432708c095b8d9545c33b6dd
+ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46564025"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49881693"
 ---
 # <a name="message-center"></a>Nachrichtencenter
 
 
-Um bevorstehende Änderungen, einschließlich neuer und geänderter Features, geplanter Wartung oder anderer wichtiger Ankündigungen, zu verfolgen, wechseln Sie zu <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">Nachrichtencenter</a>. 
+Informationen zu bevorstehenden Änderungen, einschließlich neuer und geänderter Features, geplanter Wartung oder anderer wichtiger Ankündigungen, finden Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">Nachrichtencenter.</a> 
   
 So öffnen Sie das Nachrichtencenter:
 
 ::: moniker range="o365-worldwide"
 
-- Wechseln Sie im Admin Center zum **Integritäts** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">Meldungscenter</a>.
+- Wechseln Sie im Admin Center zum **Health** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">Message Center</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-- Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a>zum **Integritäts** > **Meldungscenter**.
+- Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">im Admin Center</a>zum **Health** > **Message Center**.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
  
-- Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a>zum **Integritäts** > **Meldungscenter**.
+- Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">im Admin Center</a>zum **Health** > **Message Center**.
 
 ::: moniker-end
 
-Sie können auch die [Microsoft 365-Administrator-App](https://go.microsoft.com/fwlink/p/?linkid=627216) auf Ihrem mobilen Gerät verwenden, um das Nachrichtencenter anzuzeigen, was eine hervorragende Möglichkeit ist, mit Push-Benachrichtigungen auf dem neuesten Stand zu bleiben. 
+Sie können auch die [Microsoft 365-Administrator-App](https://go.microsoft.com/fwlink/p/?linkid=627216) auf Ihrem mobilen Gerät verwenden, um das Nachrichtencenter anzuzeigen. Dies ist eine hervorragende Möglichkeit, mit Pushbenachrichtigungen auf dem Laufenden zu bleiben. 
   
   
 ### <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
-|**Frage**|**Antwort**|
+|**Frage**|**Answer**|
 |:-----|:-----|
-|Wer kann Beiträge im Nachrichtencenter anzeigen?  <br/> |Die meisten Benutzer, denen in Microsoft 365 eine Administratorrolle zugewiesen wurde, können Nachrichtencenter-Beiträge anzeigen. Im [folgenden finden Sie eine Liste](#admin-roles-that-dont-have-access-to-the-message-center) von Administratorrollen, die keinen Zugriff auf das Nachrichtencenter haben. Sie können auch die Nachrichtencenter-Leserrolle Benutzern zuweisen, die in der Lage sein sollen, Nachrichtencenter-Beiträge zu lesen und freizugeben, ohne andere Administratorrechte zu haben.<br/>|
-|Ist dies die einzige Möglichkeit, mit der Microsoft Änderungen über Microsoft 365 kommuniziert?  <br/> |Nein, aber das Nachrichtencenter ist die primäre Möglichkeit, das Timing einzelner Änderungen in Microsoft 365 zu kommunizieren. Informationen zu weiteren Ressourcen finden Sie unter [stay on Top of Microsoft 365 Changes](stay-on-top-of-updates.md) .  <br/> |
-|Wie kann ich Beiträge in meiner Sprache anzeigen?  <br/> |Beiträge des Nachrichten Centers werden nur in Englisch verfasst, aber Sie können steuern, ob Beiträge standardmäßig in englischer Sprache angezeigt werden oder automatisch in Ihre bevorzugte Sprache übersetzt werden. Sie können auch für die maschinelle Übersetzung von Beiträgen in jede von uns unterstützte Sprache auswählen. Weitere Informationen finden Sie unter [Language Translation for Message Center posts](language-translation-for-message-center-posts.md) .  <br/> |
-|Kann ich eine Vorschau der Änderungen oder Features anzeigen, bevor ein Rollout in meiner Organisation stattfindet?  <br/> |Einige Änderungen und neue Features können in der Vorschau angezeigt werden, indem Sie sich für das gezielte Release-Programm entscheiden. Um sich anzumelden, navigieren Sie im Admin Center zu **Einstellungen**für die Freigabe von  >  **Organisationsprofilen**  >  **Release preferences**. (Im Admin Center müssen Sie möglicherweise am unteren Rand des linken Navigationsbereichs **Alle anzeigen** auswählen, um die **Einstellungen**anzuzeigen.) Sie können die Zielversion für die gesamte Organisation oder nur für ausgewählte Benutzer auswählen. Weitere Informationen zum Programm finden Sie unter [Standard oder Targeted Release Options in Microsoft 365](release-options-in-office-365.md) .  <br/> |
-|Kann ich das genaue Datum ermitteln, an dem eine Änderung für meine Organisation zur Verfügung steht?  <br/> |Leider können wir Ihnen das genaue Datum, an dem eine Änderung an Ihrer Organisation vorgenommen wird, nicht mitteilen. In unserem Message Center-Beitrag werden wir entsprechend unserer Konfidenz Stufe so viele Informationen wie möglich über den Zeitpunkt der Veröffentlichung geben. Wir arbeiten an Verbesserungen, um diese Detailebene besser zu nutzen.  <br/> |
-|Sind diese Nachrichten spezifisch für meine Organisation?  <br/> |Wir tun unser Bestes, um sicherzustellen, dass nur Nachrichtencenter-Beiträge angezeigt werden, die sich auf Ihre Organisation auswirken. Die Microsoft 365-Roadmap umfasst alle Funktionen, an denen wir derzeit arbeiten, und die bereitstellen, aber nicht alle diese Features gelten für jede Organisation. <br/> |
-|Kann ich Nachrichtencenter-Beiträge stattdessen per e-Mail erhalten?  <br/> |Ja! Sie können auswählen, dass Ihnen ein wöchentlicher Digest und bis zu zwei weitere e-Mail-Adressen gesendet werden. Die wöchentliche e-Mail-Übersicht ist standardmäßig aktiviert. Wenn Sie Ihre wöchentlichen Digests nicht erhalten, überprüfen Sie den Spam Ordner. Weitere Informationen zum Einrichten des wöchentlichen Digest finden Sie im Abschnitt ["Einstellungen"](#preferences) dieses Artikels.  <br/> |
-|Wie kann ich das Einrichten des Nachrichtencenter-Digest beenden?  <br/> |Wechseln Sie im Admin Center zu Nachrichtencenter, und wählen Sie **Einstellungen bearbeiten**aus. Deaktivieren Sie die Option zum **Senden eines wöchentlichen e-Mail-Digest meiner Nachrichten**. Wenn Sie auch keine e-Mails mehr zu wichtigen Updates erhalten möchten, deaktivieren Sie Senden von e-Mail- **Nachrichten für wichtige Updates**.  <br/> |
-|Wie kann ich sicherstellen, dass die Datenschutz Benachrichtigungen von den richtigen Kontakten in meiner Organisation empfangen werden? <br/> |Als globaler Administrator erhalten Sie Datenschutz Nachrichten für Ihre Organisation. Darüber hinaus können Sie Personen, die Datenschutz Nachrichten anzeigen sollten, die Rolle "Nachrichten Center-Datenschutz Leser" zuweisen. Andere Administratorrollen mit Zugriff auf das Nachrichten Center können keine Datenschutz Nachrichten anzeigen.   <br/><br/>Weitere Informationen finden Sie unter [Preferences](#preferences) in this article.<br/> |
+|Wer kann Beiträge im Nachrichtencenter anzeigen?  <br/> |Die meisten Benutzer, denen in Microsoft 365 eine Administratorrolle zugewiesen wurde, können Nachrichtencenterbeiträge anzeigen. [Hier ist eine Liste der](#admin-roles-that-dont-have-access-to-the-message-center) Administratorrollen, die keinen Zugriff auf das Nachrichtencenter haben. Sie können die Rolle des Nachrichtencenterlesers auch Benutzern zuweisen, die Nachrichtencenterbeiträge lesen und freigeben können sollen, ohne über andere Administratorrechte zu verfügen.<br/>|
+|Ist dies die einzige Möglichkeit, mit der Microsoft Änderungen zu Microsoft 365 kommuniziert?  <br/> |Nein, aber das Nachrichtencenter ist die primäre Art und Weise, wie wir den Zeitpunkt der einzelnen Änderungen in Microsoft 365 kommunizieren. Informationen zu zusätzlichen Ressourcen finden Sie unter "Bleiben Sie [über Microsoft 365-Änderungen](stay-on-top-of-updates.md) informiert".  <br/> |
+|Wie kann ich Beiträge in meiner Sprache anzeigen?  <br/> |Beiträge im Nachrichtencenter werden nur in Englisch geschrieben, Aber Sie können steuern, ob Beiträge standardmäßig in Englisch angezeigt werden oder automatisch in Ihre bevorzugte Sprache übersetzt werden. Sie können auch auswählen, dass Beiträge in eine beliebige Sprache übersetzt werden, die wir unterstützen. Weitere [Informationen finden Sie unter "Sprachübersetzung für Beiträge im](language-translation-for-message-center-posts.md) Nachrichtencenter".  <br/> |
+|Kann ich eine Vorschau der Änderungen oder Features anzeigen, bevor ein Rollout in meiner Organisation stattfindet?  <br/> |Einige Änderungen und neue Features können in der Vorschau angezeigt werden, indem Sie sich für das Targeted Release-Programm entscheiden. Wenn Sie sich dafür entscheiden möchten, wechseln Sie im Admin Center zu **"Einstellungen**  >  **Organisationsprofil**  >  **- Freigabeeinstellungen".** (Im Admin Center müssen Sie  möglicherweise "Alle anzeigen" am unteren Rand des linken Navigationsbereichs auswählen, um die Einstellungen **anzuzeigen.)** Sie können "Targeted Release" für Ihre gesamte Organisation oder nur für ausgewählte Benutzer auswählen. Weitere Informationen zum Programm finden Sie unter standard- oder [targeted release options in Microsoft 365.](release-options-in-office-365.md)  <br/> |
+|Kann ich das genaue Datum ermitteln, an dem eine Änderung für meine Organisation zur Verfügung steht?  <br/> |Leider können wir Ihnen nicht den genauen Termin mitteilen, an dem eine Änderung an Ihrer Organisation vorgenommen wird. In unserem Beitrag im Nachrichtencenter geben wir so viele Informationen wie möglich zum Zeitpunkt der Veröffentlichung, basierend auf unserer Vertrauensstufe. We're working on improvements to get better with that level of detail.  <br/> |
+|Sind diese Nachrichten spezifisch für meine Organisation?  <br/> |Wir tun unser Bestes, um sicherzustellen, dass nur Nachrichtencenterbeiträge angezeigt werden, die sich auf Ihre Organisation auswirken. Die Microsoft 365-Roadmap enthält alle Features, an der wir derzeit arbeiten und die wir ins Rollen bringen, aber nicht alle diese Features gelten für jede Organisation. <br/> |
+|Kann ich stattdessen Nachrichtencenterbeiträge per E-Mail senden lassen?  <br/> |Ja. Sie können eine wöchentliche Digest-E-Mail an Sie und bis zu zwei weitere E-Mail-Adressen senden lassen. Der wöchentliche E-Mail-Digest ist standardmäßig aktiviert. Wenn Sie ihre wöchentlichen Digests nicht erhalten, überprüfen Sie Ihren Spamordner. Weitere Informationen zum Einrichten des wöchentlichen [Digests](#preferences) finden Sie im Abschnitt "Einstellungen" dieses Artikels.  <br/> |
+|Wie kann ich den Nachrichtencenterhgest nicht mehr abrufen?  <br/> |Wechseln Sie zum Nachrichtencenter im Admin Center, und wählen Sie **"Einstellungen bearbeiten" aus.** Deaktivieren Sie die Option zum Senden **eines wöchentlichen E-Mail-Digests meiner Nachrichten.** Wenn Sie auch keine E-Mails zu wichtigen Updates mehr erhalten möchten, deaktivieren Sie "E-Mails **senden" für wichtige Updates.**  <br/> |
+|Wie kann ich sicherstellen, dass Benachrichtigungen zum Datenschutz von den richtigen Kontakten in meiner Organisation empfangen werden? <br/> |Als globaler Administrator erhalten Sie Datenschutznachrichten für Ihre Organisation. Darüber hinaus können Sie die Rolle "Message Center Privacy Reader" Personen zuweisen, denen Datenschutznachrichten angezeigt werden sollen. Andere Administratorrollen mit Zugriff auf das Nachrichtencenter können keine Datenschutznachrichten anzeigen.   <br/><br/>Weitere Informationen finden Sie in [diesem](#preferences) Artikel unter "Einstellungen".<br/> |
+|Warum kann ich keine Nachricht sehen, die zuvor dort war? <br/> |Um die Anzahl der Nachrichten im Nachrichtencenter zu verwalten, läuft jede Nachricht ab und wird nach einem bestimmten Zeitraum entfernt. Im Allgemeinen laufen Nachrichten 30 Tage nach dem im Nachrichtentext beschriebenen Zeitraum ab. <br/> |
 
 ### <a name="messages"></a>Nachrichten
 
-Das Nachrichtencenter zeigt eine Ansicht aller aktiven Nachrichten in einem Tabellenformat an. Standardmäßig wird die letzte Nachricht oben in der Liste angezeigt. Sie können eine Registerkarte auswählen, um **alle aktiven nach**richten, Nachrichten mit **hoher Wichtigkeit** , **Ungelesene nach**richten und **Nachrichten mit Fehlern**anzuzeigen. Sie können auch das Dropdownmenü **Filter** verwenden, um alle Nachrichten in einer bestimmten Nachrichtenkategorie anzuzeigen.
+Das Nachrichtencenter zeigt eine Ansicht aller aktiven Nachrichten in einem Tabellenformat an. Standardmäßig wird die neueste Nachricht am Anfang der Liste angezeigt. Sie können eine Registerkarte auswählen, **um** alle aktiven **Nachrichten,** Nachrichten mit hoher Wichtigkeit, **ungelesene** Nachrichten und verworfene Nachrichten **zu sehen.** Und Sie können das Dropdownmenü **"Filter"** verwenden, um alle Nachrichten in einer bestimmten Nachrichtenkategorie anzuzeigen.
 
-Hier finden Sie einen schnellen Überblick über die Informationen, die Sie in jeder Spalte sehen. Wählen Sie eine der Spaltenüberschriften aus, um die Sortierreihenfolge zu ändern.
+Hier finden Sie eine kurze Übersicht über die Informationen, die in den einzelnen Spalten angezeigt werden. Wählen Sie eine der Spaltenüberschriften aus, um die Sortierreihenfolge zu ändern.
   
 |**Spalte**|**Beschreibung**|
 |:-----|:-----|
-|Häkchen  <br/> |Durch Aktivieren des Häkchens in der Zeile Spaltenüberschrift werden alle aktuell angezeigten Nachrichten ausgewählt. Durch Aktivieren des Häkchens neben einer oder mehreren Nachrichten können Sie Aktionen für diese Nachrichten durchführen.  <br/> |
+|Häkchen  <br/> |Durch Aktivieren des Häkchens in der Spaltenüberschriftszeile werden alle aktuell angezeigten Nachrichten ausgewählt. Durch Aktivieren des Häkchens neben einer oder mehreren Nachrichten können Sie Aktionen für diese Nachrichten ergreifen.  <br/> |
 |Anwendungssymbol <br/> |Symbole geben die Anwendung an, für die die Nachricht gilt.<br/> |
-|Nachrichtentitel  <br/> |Nachrichtentitel sind eine kurze Beschreibung der bevorstehenden Änderungen. Wenn der vollständige Titel nicht angezeigt wird, zeigen Sie mit dem Mauszeiger darauf, und der gesamte Titel wird in einem Popup Feld angezeigt.  <br/> |
-|Weitere Optionen <br/> |Mit mehr Optionen können Sie eine Nachricht schließen, als gelesen oder ungelesen markieren oder Sie für einen anderen Administrator freigeben. Um eine zurückgegebene Nachricht wiederherzustellen, wählen Sie die Registerkarte **abgewiesene Nachrichten** aus, aktivieren Sie das Häkchen neben der Nachricht, und wählen Sie **Wiederherstellen**aus. <br/> |
-|Major-Update <br/> |Ein Ausrufezeichen in dieser Spalte weist auf ein Hauptupdate hin. <br/> |
-|Akt. nach  <br/> |Wir haben hier nur Termine, wenn wir eine Änderung vornehmen, für die Sie eine Aktion bis zu einem bestimmten Stichtag durchführen müssen. Da wir die Spalte **Act by** nur selten verwenden, sollten Sie, wenn Sie hier etwas sehen, besonders darauf achten.  <br/> |
-|Kategorie  <br/> | Nachrichten werden durch eine der folgenden drei Kategorien identifiziert: <br/><br/> **Verhindern oder beheben von Problemen**: informiert Sie über bekannte Probleme, die sich auf Ihre Organisation auswirken, und erfordert möglicherweise Maßnahmen zur Vermeidung von Dienstunterbrechungen. Das verhindern oder beheben von Problemen unterscheidet sich von Dienst Integritätsmeldungen, da Sie Sie auffordern, proaktiv zu sein, um Probleme zu vermeiden. <br/> <br/> **Änderungs Plan**: informiert Sie über Änderungen an Microsoft 365, die Sie möglicherweise zur Vermeidung von Dienstunterbrechungen benötigen. Beispielsweise informieren wir Sie über Änderungen an Systemanforderungen oder zu entfernten Features. Wir bemühen uns, mindestens 30 Tage lang eine Benachrichtigung über jede Änderung bereitzustellen, bei der ein Administrator handeln muss, damit der Dienst ordnungsgemäß funktioniert. <br/> <br/> **Informieren**Sie sich über neue oder aktualisierte Funktionen, die wir in Ihrer Organisation aktivieren. Die Features werden normalerweise zuerst in der [Microsoft 365-Roadmap](https://go.microsoft.com/fwlink/?linkid=2070821)angekündigt. <br/><br/>Sie können Sie auch über geplante Wartungsarbeiten entsprechend unserer Vereinbarung zum Service Level informieren. Geplante Wartungsarbeiten können zu Ausfallzeiten führen, bei denen Sie oder Ihre Benutzer nicht auf Microsoft 365, ein bestimmtes Feature oder einen Dienst wie e-Mail oder OneDrive für Unternehmen zugreifen können.  <br/> |
+|Nachrichtentitel  <br/> |Nachrichtentitel sind kurze Beschreibungen bevorstehender Änderungen. Wenn der vollständige Titel nicht angezeigt wird, zeigen Sie mit dem Cursor auf den Titel, und der gesamte Titel wird in einem Popupfeld angezeigt.  <br/> |
+|Weitere Optionen <br/> |Mit weiteren Optionen können Sie eine Nachricht schließen, als gelesen oder ungelesen markieren oder für einen anderen Administrator freigeben. Um eine verworfene Nachricht wiederherzustellen, wählen Sie die **Registerkarte** "Verworfene Nachrichten" aus, aktivieren Sie das Kontrollkästchen neben der Nachricht, und wählen Sie **"Wiederherstellen" aus.** <br/> |
+|Hauptupdate <br/> |Ein Ausrufezeichen in dieser Spalte weist auf eine größere Aktualisierung hin. <br/> |
+|Akt. nach  <br/> |Wir haben hier nur Datumsangaben, wenn wir eine Änderung vor uns nehmen, die erfordert, dass Sie bis zu einem bestimmten Stichtag eine Aktion ergreifen. Da wir das **Gesetz** nur selten nach Spalte verwenden, sollten Sie, wenn Hier etwas angezeigt wird, besonders darauf achten.  <br/> |
+|Kategorie  <br/> | Nachrichten werden durch eine der folgenden drei Kategorien identifiziert: <br/><br/> **Verhindern oder Beheben von Problemen:** Informiert Sie über bekannte Probleme, die Ihre Organisation betreffen, und erfordert möglicherweise Maßnahmen, um Dienstunterbrechungen zu vermeiden. Probleme zu verhindern oder zu beheben, unterscheiden sich von Dienstinte health-Meldungen, da sie Sie dazu aufgefordert werden, proaktiv zu sein, um Probleme zu vermeiden. <br/> <br/> **Plan für Änderungen:** Informiert Sie über Änderungen an Microsoft 365, für die Sie möglicherweise handeln müssen, um Dienstunterbrechungen zu vermeiden. Wir teilen Ihnen beispielsweise Änderungen an Systemanforderungen oder features mit, die entfernt werden. Wir versuchen, mindestens 30 Tage im Voraus über änderungen zu verfügen, für die ein Administrator handeln muss, damit der Dienst normal ausgeführt wird. <br/> <br/> **Bleiben Sie auf** dem Laufenden: Informiert Sie über neue oder aktualisierte Features, die wir in Ihrer Organisation aktivieren. Die Features werden in der Regel zuerst in der [Microsoft 365 Roadmap angekündigt.](https://go.microsoft.com/fwlink/?linkid=2070821) <br/><br/>Teilen Sie Ihnen möglicherweise auch die geplante Wartung in Übereinstimmung mit unserer Vereinbarung zum Servicelevel mit. Geplante Wartung kann zu Betriebszeit führen, bei der Sie oder Ihre Benutzer nicht auf Microsoft 365, ein bestimmtes Feature oder einen Dienst wie E-Mail oder OneDrive for Business zugreifen können.  <br/> |
 |Zuletzt aktualisiert  <br/> |Das Datum, an dem die Nachricht veröffentlicht oder zuletzt aktualisiert wurde.  <br/> |
-|Nachrichten-ID  <br/> |Microsoft verfolgt die Beiträge im Nachrichtencenter anhand der Nachrichten-ID nach. Sie können sich auf diese ID berufen, wenn Sie Feedback geben oder Unterstützung für eine bestimmte Nachricht aufrufen möchten.  <br/> |
+|Nachrichten-ID  <br/> |Microsoft verfolgt die Beiträge im Nachrichtencenter anhand der Nachrichten-ID nach. Sie können auf diese ID verweisen, wenn Sie Feedback geben möchten oder wenn Sie den Support zu einer bestimmten Nachricht anrufen.  <br/> |
 
 Navigieren Sie zu [Nachrichten im Nachrichtencenter verwalten](manage-messages.md), um weitere Informationen zu den Vorgängen abzurufen, die Sie mit Nachrichten ausführen können.
   
 ### <a name="major-updates"></a>Wichtige Updates
 
-Sie können wichtige Updates überprüfen, indem Sie oben im Nachrichtencenter auf die Registerkarte **hohe Wichtigkeit** klicken.
+Wichtige Updates können sie  überprüfen, indem Sie oben im Nachrichtencenter die Registerkarte "Hohe Wichtigkeit" auswählen.
 
-Wichtige Updates werden mindestens 30 Tage im Voraus mitgeteilt, wenn eine Aktion erforderlich ist und möglicherweise Folgendes umfasst:
+Wichtige Updates werden mindestens 30 Tage im Voraus mitgeteilt, wenn eine Aktion erforderlich ist, und kann Folgendes umfassen:
   
-- Änderungen an der täglichen Produktivität wie Posteingang, Besprechungen, Delegierungen, Freigabe und Zugriff
+- Änderungen an der täglichen Produktivität wie Posteingang, Besprechungen, Delegationen, Freigabe und Zugriff
 
-- Änderungen an Designs, Webparts und anderen Komponenten, die sich auf benutzerdefinierte Features auswirken können
+- Änderungen an Designs, Webparts und anderen Komponenten, die sich auf angepasste Features auswirken können
 
-- Erhöht oder verringert die sichtbare Kapazität wie Speicherplatz, Anzahl der Regeln, Elemente oder Dauer
+- Erhöht oder verringert die sichtbare Kapazität, z. B. Speicher, Anzahl der Regeln, Elemente oder Dauer
 
-- Änderungen am Produkt Branding, die möglicherweise:
+- Änderungen am Produktbranding, die:
 
-  - Verwirrung der Endbenutzer verursachen,
+  - Sorgen Sie für Verwirrung bei den Endbenutzern,
 
-  - Führen zu Änderungen an Helpdesk-Prozessen und Referenzmaterial oder
+  - Dies führt zu Änderungen an Helpdeskprozessen und Referenzmaterialien oder
 
   - Ändern einer URL
 
 - Ein neuer Dienst oder eine neue Anwendung
 
-- Änderungen, die eine Administratoraktion erfordern (ausschließlich verhindern oder beheben von Problemen)
+- Änderungen, die eine Administratoraktion erfordern (ohne Probleme zu verhindern oder zu beheben)
 
-- Änderungen an der Stelle, an der Ihre Daten gespeichert werden
+- Änderungen an dem Ort, an dem Ihre Daten gespeichert werden
   
 ### <a name="preferences"></a>Einstellungen
 
-Wenn die Verwaltung in Ihrer Organisation verteilt ist, möchten oder müssen Sie möglicherweise keine Beiträge zu allen Microsoft 365-Diensten sehen. Jeder Administrator kann:
+Wenn die Verwaltung über Ihre Organisation verteilt ist, möchten oder müssen Sie möglicherweise keine Beiträge zu allen Microsoft 365-Diensten sehen. Jeder Administrator kann:
 
-- Festlegen von Einstellungen, die Steuern, welche Nachrichten im Nachrichtencenter angezeigt werden.
+- Legen Sie Einstellungen fest, die steuern, welche Nachrichten im Nachrichtencenter angezeigt werden.
 - Filtern von Nachrichten
-- Festlegen von e-Mail-Einstellungen, um eine wöchentliche Übersicht über alle Nachrichten, e-Mails für wichtige Updates und e-Mails für Datenschutz Nachrichten zu erhalten.  
+- Legen Sie E-Mail-Einstellungen so vor, dass wöchentlich ein Digest aller Nachrichten, nur E-Mails für wichtige Updates und E-Mails für Datenschutznachrichten empfangen werden.  
 
 ::: moniker range="o365-worldwide"
 
-1. Wählen Sie oben im Nachrichtencenter die Option **"Einstellungen bearbeiten"** aus.
+1. Wählen **Sie oben im** Nachrichtencenter die Option "Einstellungen bearbeiten" aus.
 
-2. Stellen Sie sicher, dass das Kontrollkästchen für jeden Dienst aktiviert ist, den Sie überwachen möchten. Deaktivieren Sie die Kontrollkästchen für die Dienste, die aus der Nachrichtencenter Ansicht gefiltert werden sollen.
+2. Stellen Sie sicher, dass das Kontrollkästchen für jeden Dienst aktiviert ist, den Sie überwachen möchten. Clear the check boxes for the services you want to filter out of your Message center view.
 
-3. Digest-e-Mails sind standardmäßig aktiviert und werden an Ihre primäre e-Mail-Adresse gesendet. Deaktivieren Sie das Kontrollkästchen **wöchentlichen e-Mail-Digest von meinen Nachrichten senden** , um den Erhalt der wöchentlichen Übersicht zu beenden. <br/><br/>Die e-Mail-Benachrichtigung für wichtige Updates ist ein separates Steuerelement. Wenn Sie e-Mail-Benachrichtigungen zu wichtigen Updates erhalten möchten, stellen Sie sicher, dass **e-Mails für wichtige Updates senden** ausgewählt ist. Deaktivieren Sie das Kontrollkästchen, um das Abrufen von e-Mails zu wichtigen Updates zu beenden. <br><br/>Aktivieren Sie das Kontrollkästchen neben e-Mail-nach **richten für Datenschutz senden** , um getrennte e-Mail-Benachrichtigungen über Datenschutz Nachrichten zu erhalten (Datenschutz Nachrichten sind nicht in der wöchentlichen Übersicht enthalten). <br><br/>Sie können Ihre primäre e-Mail-Adresse auswählen oder deaktivieren, aber nicht ändern. Um andere e-Mail-Adressen anzugeben, an die die Datenschutz-e-Mail-Nachricht gesendet wird, aktivieren Sie das Kontrollkästchen **andere e** -Mail-Adressen, und geben Sie die anderen e-Mail-Adressen ein, an die die e-Mail gesendet werden soll. Geben Sie die e-Mail-Adresse für eine Microsoft 365-Gruppe oder eine Verteilerliste ein, wenn mehr als zwei Personendaten Schutz-e-Mails erhalten sollen.
+3. Digest-E-Mails sind standardmäßig aktiviert und werden an Ihre primäre E-Mail-Adresse gesendet. Wenn Sie den wöchentlichen Digest nicht mehr erhalten möchten, müssen Sie das Kontrollkästchen **"Wöchentlichen** E-Mail-Digest meiner Nachrichten senden" aktivieren. <br/><br/>Die E-Mail-Benachrichtigung für wichtige Updates ist ein separates Steuerelement. Wenn Sie E-Mail-Benachrichtigungen zu wichtigen Updates erhalten möchten, stellen Sie sicher, dass "E-Mails **senden"** für wichtige Updates ausgewählt ist. Aktivieren Sie das Kontrollkästchen, um das Abrufen von E-Mails zu wichtigen Updates zu beenden. <br><br/>Aktivieren Sie das  Kontrollkästchen neben "E-Mails senden" für Datenschutznachrichten, um separate E-Mail-Benachrichtigungen zu Datenschutznachrichten zu erhalten (Datenschutznachrichten sind nicht im wöchentlichen Digest enthalten). <br><br/>Sie können Ihre primäre E-Mail-Adresse auswählen oder löschen, sie jedoch nicht ändern. Aktivieren Sie das Kontrollkästchen Andere E-Mail-Adressen,  und geben Sie die anderen E-Mail-Adressen ein, an die die E-Mail gesendet werden soll, um andere E-Mail-Adressen anzugeben, an die die Datenschutznachricht gesendet wird. Geben Sie die E-Mail-Adresse für eine Microsoft 365-Gruppe oder eine Verteilerliste ein, wenn mehr als zwei Personen Eine Datenschutz-E-Mail erhalten sollen.
 
-4. Klicken Sie auf **Speichern** , um Ihre Änderungen beizubehalten.
+4. Wählen **Sie "Speichern"** aus, um Ihre Änderungen zu behalten.
   
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. Wählen Sie oben im Nachrichtencenter die Option zum **Bearbeiten von Nachrichtencenter Einstellungen** aus.
+1. Wählen **Sie oben im Nachrichtencenter die** Einstellungen für das Nachrichtencenter bearbeiten aus.
 
-2. Stellen Sie sicher, dass die Umschaltfläche für jeden Dienst, den Sie überwachen möchten, auf **Ein** festgelegt ist. Verwenden Sie die Umschaltfläche, um die Einstellung für die Dienste, die Sie aus der Nachrichtencenter-Ansicht filtern möchten, auf **aus** zu ändern.
+2. Stellen Sie sicher, dass die Umschaltfläche für jeden Dienst, den Sie überwachen möchten, auf **Ein** festgelegt ist. Verwenden Sie die Umschalteinstellung, um die Einstellung für die Dienste, die Sie aus der Ansicht des Nachrichtencenters herausfiltern möchten, in "Aus" zu ändern. 
 
-3. Digest-e-Mails sind standardmäßig aktiviert und werden an Ihre primäre e-Mail-Adresse gesendet. Ändern Sie die Einstellung wöchentliche **Übersicht über meine Nachrichten senden** auf **aus**, um den Erhalt der wöchentlichen Zusammenfassung zu beenden. <br/><br/>Die e-Mail-Benachrichtigung für wichtige Updates ist ein separates Steuerelement. Wenn Sie e-Mail-Benachrichtigungen zu wichtigen Updates erhalten möchten, stellen Sie sicher, dass **e-Mails für wichtige Updates senden** **auf**angezeigt wird. Ändern Sie die Einstellung auf **aus** , um das erhalten von e-Mails zu wichtigen Updates zu beenden. <br/><br/>Wenn Sie e-Mail-Benachrichtigungen zu Datenschutz Nachrichten erhalten möchten, stellen Sie sicher, dass **e-Mails für Datenschutz Nachrichten senden** **auf**angezeigt werden. Um den Empfang dieser Benachrichtigungen zu beenden, ändern Sie die Einstellung in **aus**. (Datenschutz Nachrichten sind nicht im wöchentlichen Digest enthalten.)<br/><br/>Sie können Ihre primäre e-Mail-Adresse auswählen oder deaktivieren, aber nicht ändern. Wenn Sie weitere e-Mail-Adressen angeben möchten, an die die wöchentliche e-Mail-Zusammenfassung gesendet wird, überprüfen Sie, ob **eine wöchentliche Digest-Nachrichten senden** **auf** Geben Sie die e-Mail-Adresse für eine Microsoft 365-Gruppe oder eine Verteilerliste ein, wenn mehr als zwei Personen die Digest-e-Mail erhalten sollen.
+3. Digest-E-Mails sind standardmäßig aktiviert und werden an Ihre primäre E-Mail-Adresse gesendet. Wenn Sie den wöchentlichen Digest nicht mehr erhalten möchten, ändern Sie die Einstellung "Wöchentlichen Digest senden" **meiner Nachrichten** auf **"Aus".** <br/><br/>Die E-Mail-Benachrichtigung für wichtige Updates ist ein separates Steuerelement. Wenn Sie E-Mail-Benachrichtigungen zu wichtigen Updates erhalten möchten, stellen Sie sicher, dass "E-Mails senden" **für wichtige Updates** ein **ist.** Ändern Sie die Einstellung auf **"Aus",** um das Abrufen von E-Mails zu wichtigen Updates zu beenden. <br/><br/>Um E-Mail-Benachrichtigungen zu Datenschutznachrichten zu erhalten, überprüfen Sie, ob "E-Mails senden" für Datenschutznachrichten **ein** **ist.** Um den Empfang dieser Benachrichtigungen zu beenden, ändern Sie die Einstellung in **"Aus".** (Datenschutznachrichten sind nicht im wöchentlichen Digest enthalten.)<br/><br/>Sie können Ihre primäre E-Mail-Adresse auswählen oder löschen, sie jedoch nicht ändern. Wenn Sie andere E-Mail-Adressen angeben möchten, an die die wöchentliche E-Mail-Zusammenfassung gesendet wird, überprüfen Sie, ob ein wöchentlicher Digest meiner **Nachrichten** gesendet **wird.** Geben Sie die E-Mail-Adresse für eine Microsoft 365-Gruppe oder eine Verteilerliste ein, wenn mehr als zwei Personen die Digest-E-Mail erhalten sollen.
 
-4. Klicken Sie auf **Speichern** , um Ihre Änderungen beizubehalten.<br/>
+4. Wählen **Sie "Speichern"** aus, um Ihre Änderungen zu behalten.<br/>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wählen Sie oben im Nachrichtencenter die Option zum **Bearbeiten von Nachrichtencenter Einstellungen** aus.
+1. Wählen **Sie oben im Nachrichtencenter die** Einstellungen für das Nachrichtencenter bearbeiten aus.
 
-2. Stellen Sie sicher, dass die Umschaltfläche für jeden Dienst, den Sie überwachen möchten, auf **Ein** festgelegt ist. Verwenden Sie die Umschaltfläche, um die Einstellung für die Dienste, die Sie aus der Nachrichtencenter-Ansicht filtern möchten, auf **aus** zu ändern.
+2. Stellen Sie sicher, dass die Umschaltfläche für jeden Dienst, den Sie überwachen möchten, auf **Ein** festgelegt ist. Verwenden Sie die Umschalteinstellung, um die Einstellung für die Dienste, die Sie aus der Ansicht des Nachrichtencenters herausfiltern möchten, in "Aus" zu ändern. 
 
-3. Digest-e-Mails sind standardmäßig aktiviert und werden an Ihre primäre e-Mail-Adresse gesendet. Ändern Sie die Einstellung wöchentliche **Übersicht über meine Nachrichten senden** auf **aus**, um den Erhalt der wöchentlichen Zusammenfassung zu beenden. <br/><br/>Die e-Mail-Benachrichtigung für wichtige Updates ist ein separates Steuerelement. Wenn Sie e-Mail-Benachrichtigungen zu wichtigen Updates erhalten möchten, stellen Sie sicher, dass **e-Mails für wichtige Updates senden** **auf**angezeigt wird. Ändern Sie die Einstellung auf **aus** , um das erhalten von e-Mails zu wichtigen Updates zu beenden. <br/><br/>Wenn Sie e-Mail-Benachrichtigungen zu Datenschutz Nachrichten erhalten möchten, stellen Sie sicher, dass **e-Mails für Datenschutz Nachrichten senden** **auf**angezeigt werden. Um den Empfang dieser Benachrichtigungen zu beenden, ändern Sie die Einstellung in **aus**. (Datenschutz Nachrichten sind nicht im wöchentlichen Digest enthalten.)<br/><br/>Sie können Ihre primäre e-Mail-Adresse auswählen oder deaktivieren, aber nicht ändern. Wenn Sie weitere e-Mail-Adressen angeben möchten, an die die wöchentliche e-Mail-Zusammenfassung gesendet wird, überprüfen Sie, ob **eine wöchentliche Digest-Nachrichten senden** **auf** Geben Sie die e-Mail-Adresse für eine Microsoft 365-Gruppe oder eine Verteilerliste ein, wenn mehr als zwei Personen die Digest-e-Mail erhalten sollen.
+3. Digest-E-Mails sind standardmäßig aktiviert und werden an Ihre primäre E-Mail-Adresse gesendet. Wenn Sie den wöchentlichen Digest nicht mehr erhalten möchten, ändern Sie die Einstellung "Wöchentlichen Digest senden" **meiner Nachrichten** auf **"Aus".** <br/><br/>Die E-Mail-Benachrichtigung für wichtige Updates ist ein separates Steuerelement. Wenn Sie E-Mail-Benachrichtigungen zu wichtigen Updates erhalten möchten, stellen Sie sicher, dass "E-Mails senden" **für wichtige Updates** ein **ist.** Ändern Sie die Einstellung auf **"Aus",** um das Abrufen von E-Mails zu wichtigen Updates zu beenden. <br/><br/>Um E-Mail-Benachrichtigungen zu Datenschutznachrichten zu erhalten, überprüfen Sie, ob "E-Mails senden" für Datenschutznachrichten **ein** **ist.** Um den Empfang dieser Benachrichtigungen zu beenden, ändern Sie die Einstellung in **"Aus".** (Datenschutznachrichten sind nicht im wöchentlichen Digest enthalten.)<br/><br/>Sie können Ihre primäre E-Mail-Adresse auswählen oder löschen, sie jedoch nicht ändern. Wenn Sie andere E-Mail-Adressen angeben möchten, an die die wöchentliche E-Mail-Zusammenfassung gesendet wird, überprüfen Sie, ob ein wöchentlicher Digest meiner **Nachrichten** gesendet **wird.** Geben Sie die E-Mail-Adresse für eine Microsoft 365-Gruppe oder eine Verteilerliste ein, wenn mehr als zwei Personen die Digest-E-Mail erhalten sollen.
 
-4. Klicken Sie auf **Speichern** , um Ihre Änderungen beizubehalten.<br/>
+4. Wählen **Sie "Speichern"** aus, um Ihre Änderungen zu behalten.<br/>
 
 ::: moniker-end
 
 #### <a name="display-messages-in-your-preferred-language"></a>Anzeigen von Nachrichten in Ihrer bevorzugten Sprache
   
-Wir verwenden maschinelle Übersetzungen, um Nachrichten automatisch in Ihrer bevorzugten Sprache anzuzeigen. Lesen Sie die [Sprachübersetzung für Nachrichtencenter-Beiträge](language-translation-for-message-center-posts.md) , um weitere Informationen zum Festlegen ihrer Sprache zu erhalten.
+Wir verwenden maschinelle Übersetzung, um Nachrichten automatisch in Ihrer bevorzugten Sprache anzeigen zu können. Lesen [Sie die Sprachübersetzung für Beiträge im Nachrichtencenter,](language-translation-for-message-center-posts.md) um weitere Informationen zum Festlegen Ihrer Sprache zu erhalten.
   
 > [!NOTE]
-> Der wöchentliche Digest und alle Beiträge, die per e-Mail gesendet werden, werden nur in Englisch versendet. Empfänger können [Übersetzer für Outlook](https://support.microsoft.com/office/3d7e12ed-99d6-406e-a453-b9db0d9653fa) verwenden, um die Nachricht in Ihrer bevorzugten Sprache zu lesen. 
+> Der wöchentliche Digest und alle per E-Mail gesendeten Beiträge werden nur in Englisch gesendet. Empfänger können ["Translator for Outlook"](https://support.microsoft.com/office/3d7e12ed-99d6-406e-a453-b9db0d9653fa) verwenden, um die Nachricht in ihrer bevorzugten Sprache zu lesen. 
   
 ### <a name="admin-roles-that-dont-have-access-to-the-message-center"></a>Administratorrollen, die keinen Zugriff auf das Nachrichtencenter haben
 
 - Complianceadministrator
 - Administrator für bedingten Zugriff
-- Kunden-Lockbox-Zugriffs genehmigende Person
+- Genehmigende Genehmigende für den Kunden-LockBox-Zugriff
 - Geräteadministratoren
-- Verzeichnis Leser
-- Verzeichnis Synchronisierungs Konten
+- Verzeichnisleser
+- Verzeichnissynchronisierungskonten
 - Verzeichnisautoren
 - Intune-Dienstadministrator
 - Administrator für privilegierte Rollen
 - Berichtleseberechtigter
 
-## <a name="unsubscribe-from-message-center-emails"></a>Kündigen des Abonnements von Nachrichtencenter-e-Mails
+## <a name="unsubscribe-from-message-center-emails"></a>Kündigen von Nachrichtencenter-E-Mails
 
-1. Digest-e-Mails sind standardmäßig aktiviert und werden an Ihre primäre e-Mail-Adresse gesendet. Ändern Sie die Einstellung wöchentliche **Übersicht über meine Nachrichten senden** auf **aus**, um den Erhalt der wöchentlichen Zusammenfassung zu beenden. <br/><br/>Die e-Mail-Benachrichtigung für wichtige Updates ist ein separates Steuerelement. Wenn Sie keine e-Mail-Benachrichtigungen zu wichtigen Updates erhalten möchten, stellen Sie sicher, dass **e-Mails für wichtige Updates senden** nicht **mehr angezeigt werden.**  <br/><br/>Um das Empfangen von e-Mail-Benachrichtigungen zu Datenschutz Nachrichten zu beenden, vergewissern Sie sich, dass **e-Mails für Datenschutz Nachrichten senden** **deaktiviert**sind.  (Datenschutz Nachrichten sind nicht im wöchentlichen Digest enthalten.)<br/><br/>
+1. Digest-E-Mails sind standardmäßig aktiviert und werden an Ihre primäre E-Mail-Adresse gesendet. Wenn Sie den wöchentlichen Digest nicht mehr erhalten möchten, ändern Sie die Einstellung "Wöchentlichen Digest senden" **meiner Nachrichten** auf **"Aus".** <br/><br/>Die E-Mail-Benachrichtigung für wichtige Updates ist ein separates Steuerelement. Wenn Sie keine E-Mail-Benachrichtigungen zu wichtigen Updates erhalten möchten, stellen Sie sicher, dass "E-Mails senden" für wichtige Updates **deaktiviert** **ist.**  <br/><br/>Um den Empfang von E-Mail-Benachrichtigungen zu Datenschutznachrichten zu beenden, überprüfen Sie, ob "E-Mails für Datenschutznachrichten senden" **deaktiviert** **ist.**  (Datenschutznachrichten sind nicht im wöchentlichen Digest enthalten.)<br/><br/>
 
-2. Klicken Sie auf **Speichern** , um Ihre Änderungen beizubehalten.<br/>
+2. Wählen **Sie "Speichern"** aus, um Ihre Änderungen zu behalten.<br/>

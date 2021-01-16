@@ -1,5 +1,5 @@
 ---
-title: Erste Schritte mit dem Training zur Angriffssimulation
+title: Erste Schritte mit dem Angriffssimulationstraining
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -19,18 +19,16 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können erfahren, wie Sie mithilfe von Angriffssimulationsschulungen simulierte Phishing- und Kennwortangriffe in ihren Microsoft 365 E5- oder Microsoft Defender für Office 365 Plan 2-Organisationen ausführen.
-ms.openlocfilehash: 9d97816edf7d59c002658fc8bb3f39e72dbc2430
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: 2c00fb27748887c6b8e2fa1458b10f0c3405eef7
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/15/2021
-ms.locfileid: "49871244"
+ms.locfileid: "49877164"
 ---
-# <a name="get-started-using-attack-simulation-training"></a>Erste Schritte mit dem Training zur Angriffssimulation
+# <a name="get-started-using-attack-simulation-training"></a>Erste Schritte mit dem Angriffssimulationstraining
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Wenn Ihre Organisation über Microsoft 365 E5 oder Microsoft Defender für Office 365 Plan 2 verfügt, der Funktionen zur Untersuchung und Reaktion auf Bedrohungen [umfasst,](office-365-ti.md)können Sie die Angriffssimulationsschulung im Microsoft Security Center verwenden, um realistische Angriffsszenarien in Ihrer Organisation durchzuführen. Diese simulierten Angriffe können Ihnen helfen, anfällige Benutzer zu identifizieren und zu finden, bevor sich ein tatsächlicher Angriff auf Ihr Endergebnis ausdingt. Lesen Sie diesen Artikel, um mehr zu erfahren.
 

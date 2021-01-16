@@ -13,16 +13,50 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 9dec293a26cbc3d239a597e46815d60d79b9ac20
-ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
+ms.openlocfilehash: 8f6826865f38dad6040f65ac083be76450127299
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48370412"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49877200"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Änderungsverlauf für Microsoft Managed Desktop-Dokumentation
 
-In diesem Artikel werden neue und aktualisierte Artikel in der [Dokumentation zu Microsoft Managed Desktop](index.yml)aufgelistet. "Aktualisierte" Artikel sind solche, die Material Ergänzungen oder Korrekturen vorgenommen haben – kleinere Korrekturen wie die Korrektur von Tippfehlern, Formatvorlagen oder Formatierungsproblemen werden nicht aufgeführt. Sie können den Verlauf bestimmter Commits (einschließlich der Details aller Änderungen) jederzeit anzeigen, indem Sie das [Repo auf GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)besuchen.
+Dieser Artikel enthält neue und aktualisierte Artikel in der [Microsoft Managed Desktop-Dokumentation.](index.yml) Bei "Aktualisierten" Artikeln wurden wesentliche Ergänzungen oder Korrekturen vorgenommen. Kleinere Korrekturen wie die Korrektur von Tippfehlern, Format- oder Formatierungsproblemen werden nicht aufgeführt. Sie können immer den Verlauf bestimmter Commits (einschließlich Details zu änderungen) anzeigen, indem Sie das [Repository auf GitHub besuchen.](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)
+
+
+## <a name="december-2020"></a>Dezember 2020
+Neuer oder geänderter Artikel | Beschreibung
+--- | ---
+[Was ist Microsoft Managed Desktop?](https://docs.microsoft.com/microsoft-365/managed-desktop/intro/index) | Aktualisierter Artikel
+[Mit Berichten arbeiten](working-with-managed-desktop/reports.md) | Aktualisierter Artikel
+[Datenschutz und personenbezogene Daten](service-description/privacy-personal-data.md) | Aktualisierter Artikel
+[Compliance](intro/compliance.md) | Aktualisierter Artikel
+[Voraussetzungen](get-ready/prerequisites.md) | Aktualisierter Artikel
+[Netzwerkkonfiguration](get-ready/network.md) | Aktualisierter Artikel
+
+
+## <a name="november-2020"></a>November 2020
+Neuer oder geänderter Artikel | Beschreibung
+--- | ---
+[Lösen von Problemen, die durch das Tool zur Bereitschaftsbewertung gefunden wurden](get-ready/readiness-assessment-fix.md) | Aktualisierter Artikel
+[Tool für die Bereitschaftsbewertung](get-ready/readiness-assessment-tool.md) | Neuer Artikel
+[Lösen von Problemen, die durch das Tool zur Bereitschaftsbewertung gefunden wurden](get-ready/readiness-assessment-fix.md) | Neuer Artikel
+[Selbstregistrieren neuer Geräte](get-started/register-devices-self.md) | Aktualisierter Artikel
+[Schritte für Partner zum Registrieren von Geräten](get-started/register-devices-partner.md) | Aktualisierter Artikel
+[Voraussetzungen für Gastkonten](get-ready/guest-accounts.md) | Neuer Artikel
+[Zugreifen auf das Verwaltungsportal](get-started/access-admin-portal.md) | Aktualisierter Artikel
+
+
+## <a name="october-2020"></a>Oktober 2020
+Neuer oder geänderter Artikel | Beschreibung
+--- | ---
+[Voraussetzungen](get-ready/prerequisites.md) | Aktualisierter Artikel
+[Mit Insights arbeiten](working-with-managed-desktop/insights.md) | Aktualisierter Artikel
+[Schritte für Partner zum Registrieren von Geräten](get-started/register-devices-partner.md) | Aktualisierter Artikel
+[Zugreifen auf das Verwaltungsportal](get-started/access-admin-portal.md) | Aktualisierter Artikel
+[Stellen Sie Anwendungen auf Geräten bereit](get-started/deploy-apps.md) | Aktualisierter Artikel
+[Hilfe für Benutzer](working-with-managed-desktop/end-user-support.md) | Aktualisierter Artikel
 
 
 ## <a name="september-2020"></a>September 2020
@@ -32,7 +66,7 @@ Neuer oder geänderter Artikel | Beschreibung
 [Voraussetzungen von zugeordneten Laufwerken für Microsoft Managed Desktop](get-ready/mapped-drives.md) | Aktualisierter Artikel
 [Hilfe für Benutzer](working-with-managed-desktop/end-user-support.md) | Aktualisierter Artikel
 [Referenz zu konfigurierbaren Einstellungen – Microsoft Managed Desktop](working-with-managed-desktop/config-setting-ref.md) | Aktualisierter Artikel
-[Bereitstellen und Nachverfolgen von konfigurierbaren Einstellungen – Microsoft Managed Desktop](working-with-managed-desktop/config-setting-deploy.md) | Aktualisierter Artikel
+[Bereitstellen und Nachverfolgen konfigurierbarer Einstellungen – Microsoft Managed Desktop](working-with-managed-desktop/config-setting-deploy.md) | Aktualisierter Artikel
 [Administratorunterstützung für Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Aktualisierter Artikel
 [Microsoft Teams](get-started/teams.md) | Neuer Artikel
 [Zugreifen auf das Verwaltungsportal](get-started/access-admin-portal.md) | Neuer Artikel
@@ -59,7 +93,7 @@ Neuer oder geänderter Artikel | Beschreibung
 ## <a name="july-2020"></a>Juli 2020
 Neuer oder geänderter Artikel | Beschreibung
 --- | ---
-[Microsoft Managed Desktop-App-Anforderungen](service-description/mmd-app-requirements.md) | Aktualisierter Artikel
+[Anforderungen an Microsoft Managed Desktop-Apps](service-description/mmd-app-requirements.md) | Aktualisierter Artikel
 [Compliance](intro/compliance.md) | Aktualisierter Artikel
 [Erste Schritte mit dem App-Steuerelement](get-started/get-started-app-control.md) | Aktualisierter Artikel
 [Arbeiten mit dem App-Steuerelement](working-with-managed-desktop/work-with-app-control.md) | Aktualisierter Artikel
@@ -95,7 +129,7 @@ Neuer oder geänderter Artikel | Beschreibung
 Neuer oder geänderter Artikel | Beschreibung
 --- | ---
 [Compliance](intro/compliance.md) | Neuer Artikel
-[Von Microsoft verwaltete Desktop unterstützte Regionen und Sprachen](service-description/regions-languages.md) | Aktualisierter Artikel
+[Von Microsoft Managed Desktop unterstützte Regionen und Sprachen](service-description/regions-languages.md) | Aktualisierter Artikel
 
 
 
@@ -113,8 +147,8 @@ Neuer oder geänderter Artikel | Beschreibung
 [Sicherheit in Microsoft Managed Desktop](service-description/security.md)| Aktualisierter Artikel
 [Mit Insights arbeiten](working-with-managed-desktop/insights.md) | Aktualisierter Artikel
 [Informationen zu Windows-Sicherheitsupdates](working-with-managed-desktop/security-update-insights.md) | Neuer Artikel
-[Behandlung von Updates in Microsoft Managed Desktop](service-description/updates.md) | Aktualisierter Artikel
-[Microsoft Managed Desktop-Geräte Dienste](service-description/device-services.md) | Aktualisierter Artikel
+[So werden Updates in Microsoft Managed Desktop behandelt](service-description/updates.md) | Aktualisierter Artikel
+[Microsoft Managed Desktop Device Services](service-description/device-services.md) | Aktualisierter Artikel
 
 
 
@@ -131,7 +165,7 @@ Neuer oder geänderter Artikel | Beschreibung
 --- | ---
 [Administratorunterstützung für Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Aktualisierter Artikel
 [Microsoft Managed Desktop-Geräte](service-description/device-list.md) | Aktualisierter Artikel
-[Archivierte Microsoft Managed Desktop-Geräte](service-description/archived-device-list.md) | Aktualisierter Artikel
+[Von Microsoft Managed Desktop archivierte Geräte](service-description/archived-device-list.md) | Aktualisierter Artikel
 
 
 
@@ -142,7 +176,7 @@ Neuer oder geänderter Artikel | Beschreibung
 [Benutzungseinblicke](working-with-managed-desktop/usage-insights.md) | Neuer Artikel
 [Zuverlässigkeitseinblicke](working-with-managed-desktop/reliability-insights.md) | Neuer Artikel
 [Microsoft Managed Desktop-Geräte](service-description/device-list.md) | Aktualisierter Artikel
-[Microsoft Managed Desktop-Hauptseite](https://docs.microsoft.com/microsoft-365/managed-desktop/) | Aktualisierter Artikel
+[Hauptseite von Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/) | Aktualisierter Artikel
 [Was ist Microsoft Managed Desktop?](https://docs.microsoft.com/microsoft-365/managed-desktop/intro/index) | Aktualisierter Artikel
 [Vorbereiten Ihrer Benutzer für die Verwendung von Geräten](get-started/get-started-devices.md) | Aktualisierter Artikel
 [Dienstplanausnahmen](service-description/customizing.md) | Aktualisierter Artikel
@@ -157,7 +191,7 @@ Neuer oder geänderter Artikel | Beschreibung
 [Dienständerungen und Kommunikation](service-description/servicechanges.md) | Neuer Artikel
 [Selbstregistrieren neuer Geräte](get-started/register-devices-self.md) | Aktualisierter Artikel
 [Selbstregistrieren vorhandener Geräte](get-started/register-reused-devices-self.md) | Aktualisierter Artikel
-[Von Microsoft verwaltete Desktop unterstützte Regionen und Sprachen](service-description/regions-languages.md) | Aktualisierter Artikel
+[Von Microsoft Managed Desktop unterstützte Regionen und Sprachen](service-description/regions-languages.md) | Aktualisierter Artikel
 
 
 
@@ -168,13 +202,13 @@ Neuer oder geänderter Artikel | Beschreibung
 [Microsoft Managed Desktop-Technologien](intro/technologies.md) | Aktualisierter Artikel
 [Hilfe für Benutzer](working-with-managed-desktop/end-user-support.md) | Aktualisierter Artikel
 [Microsoft Managed Desktop-Geräte](service-description/device-list.md) | Aktualisierter Artikel
-[Bereitstellen und Nachverfolgen von konfigurierbaren Einstellungen – Microsoft Managed Desktop](working-with-managed-desktop/config-setting-deploy.md) | Aktualisierter Artikel
+[Bereitstellen und Nachverfolgen konfigurierbarer Einstellungen – Microsoft Managed Desktop](working-with-managed-desktop/config-setting-deploy.md) | Aktualisierter Artikel
 [Administratorunterstützung für Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Aktualisierter Artikel
 [Voraussetzungen für Microsoft Managed Desktop](get-ready/prerequisites.md) | Aktualisierter Artikel
 [Richten Sie Microsoft Managed Desktop-Geräte ein](get-started/set-up-devices.md) | Neuer Artikel
 [Selbstregistrieren neuer Geräte](get-started/register-devices-self.md) | Aktualisierter Artikel
 [Selbstregistrieren vorhandener Geräte](get-started/register-reused-devices-self.md) | Neuer Artikel
-[Behandlung von Updates in Microsoft Managed Desktop](service-description/updates.md) | Aktualisierter Artikel
+[So werden Updates in Microsoft Managed Desktop behandelt](service-description/updates.md) | Aktualisierter Artikel
 
 ## <a name="august-2019"></a>August 2019
 Neuer oder geänderter Artikel | Beschreibung
@@ -201,16 +235,16 @@ Neuer oder geänderter Artikel | Beschreibung
 [Anwendungen in Microsoft Managed Desktop](get-ready/apps.md) | Aktualisierter Artikel
 [Arbeiten mit Microsoft Consulting Services](get-ready/apps-mcs.md) | Neuer Artikel
 [Microsoft Managed Desktop-Rollen und Verantwortlichkeiten](intro/roles-and-responsibilities.md) | Aktualisierter Artikel
-[Microsoft Managed Desktop-Produktlebenszyklus](service-description/device-lifecycle.md) | Neuer Artikel
+[Microsoft Managed Desktop – Produktlebenszyklus](service-description/device-lifecycle.md) | Neuer Artikel
 
 
 
 ## <a name="may-2019"></a>Mai 2019
 Neuer oder geänderter Artikel | Beschreibung
 --- | ---
-[Von Microsoft verwaltete Desktop unterstützte Regionen und Sprachen](service-description/regions-languages.md) | Aktualisierter Artikel
+[Von Microsoft Managed Desktop unterstützte Regionen und Sprachen](service-description/regions-languages.md) | Aktualisierter Artikel
 [Microsoft Managed Desktop-Geräte](service-description/device-list.md) | Aktualisierter Artikel
-[Archivierte Microsoft Managed Desktop-Geräte](service-description/archived-device-list.md) | Neuer Artikel
+[Von Microsoft Managed Desktop archivierte Geräte](service-description/archived-device-list.md) | Neuer Artikel
 [Voraussetzungen von zugeordneten Laufwerken für Microsoft Managed Desktop](get-ready/mapped-drives.md) | Neuer Artikel
 [Vorbereiten von Zertifikaten und Netzwerkprofilen für Microsoft Managed Desktop](get-ready/certs-wifi-lan.md) | Neuer Artikel
 [Bestellen von Microsoft Managed Desktop-Geräten](get-started/devices.md) | Aktualisierter Artikel
@@ -219,46 +253,46 @@ Neuer oder geänderter Artikel | Beschreibung
 ## <a name="april-2019"></a>April 2019
 Neuer oder geänderter Artikel | Beschreibung
 --- | ---
-[Installieren des InTune-Unternehmensportals auf Microsoft Managed Desktop-Geräten](get-started/company-portal.md) | Neuer Artikel
+[Installieren des Intune-Unternehmensportals auf Microsoft Managed Desktop-Geräten](get-started/company-portal.md) | Neuer Artikel
 [Installieren von Microsoft Project und Microsoft Visio auf Microsoft Managed Desktop-Geräten](get-started/project-visio.md) | Neuer Artikel 
 [Vorbereiten des lokalen Ressourcenzugriffs für Microsoft Managed Desktop](get-ready/authentication.md) | Neuer Artikel
 [Registrieren von Geräten in Microsoft Managed Desktop](get-started/register-devices-self.md) | Neuer Artikel
 [Registrieren von Geräten in Microsoft Managed Desktop für Partner](get-started/register-devices-partner.md) | Neuer Artikel
-[Bereitstellen von apps auf Microsoft Managed Desktop-Geräten](get-started/deploy-apps.md) | Aktualisierter Artikel
+[Bereitstellen von Apps auf Microsoft Managed Desktop-Geräten](get-started/deploy-apps.md) | Aktualisierter Artikel
 
 ## <a name="march-2019"></a>März 2019
 Neuer oder geänderter Artikel | Beschreibung
 --- | ---
-[Installieren des InTune-Unternehmensportals auf Microsoft Managed Desktop-Geräten](get-started/company-portal.md) | Neuer Artikel
+[Installieren des Intune-Unternehmensportals auf Microsoft Managed Desktop-Geräten](get-started/company-portal.md) | Neuer Artikel
 [Installieren von Microsoft Project und Microsoft Visio auf Microsoft Managed Desktop-Geräten](get-started/project-visio.md) | Neuer Artikel
 
 ## <a name="february-2019"></a>Februar 2019
 Neuer oder geänderter Artikel | Beschreibung
 --- | ---
-[Programmgeräte](service-description/device-list.md) | Mit Unterstützung für bestimmte Dell-und HP-Geräte aktualisiert.
+[Programmgeräte](service-description/device-list.md) | Mit Unterstützung für bestimmte Dell- und HP-Geräte aktualisiert.
 [Übersicht über konfigurierbare Einstellungen](working-with-managed-desktop/config-setting-overview.md) | Neuer Artikel
 [Referenz der konfigurierbaren Einstellungen](working-with-managed-desktop/config-setting-ref.md) | Neuer Artikel
-[Nachverfolgen und Bereitstellen von konfigurierbaren Einstellungen](working-with-managed-desktop/config-setting-deploy.md) | Neuer Artikel
+[Nachverfolgen und Bereitstellen konfigurierbarer Einstellungen](working-with-managed-desktop/config-setting-deploy.md) | Neuer Artikel
 [Erste Schritte mit Geräten](get-started/get-started-devices.md) | Neuer Artikel
 
 ## <a name="january-2019"></a>Januar 2019
 Neuer oder geänderter Artikel | Beschreibung
 --- | ---
 [Bereitstellen von Apps für Microsoft Managed Desktop-Geräte](get-started/deploy-apps.md) | Neuer Artikel.
-[Verwalten von Apps für Microsoft Managed Desktop](working-with-managed-desktop/manage-apps.md) | Mit Informationen zum Aktualisieren oder Zurücksetzen auf eine frühere Version von Branchen-Apps aktualisiert. 
+[Verwalten von Apps für Microsoft Managed Desktop](working-with-managed-desktop/manage-apps.md) | Mit Informationen zum Aktualisieren oder Rollback auf eine frühere Version von Line-of-Business-Apps aktualisiert. 
 
 ## <a name="december-2018"></a>Dezember 2018
 Neuer oder geänderter Artikel | Beschreibung
 --- | ---
-[Vorgänge und Überwachung für Microsoft Managed Desktop](service-description/operations-and-monitoring.md) | Balance of Responsibility-Tabelle und aktualisierte andere Tabellen hinzugefügt.
-[Administratorunterstützung für Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Aktualisierte Unterstützungstypen, Schweregrad Erklärungen und weitere Details.
+[Vorgänge und Überwachung für Microsoft Managed Desktop](service-description/operations-and-monitoring.md) | Die Tabelle mit den Verantwortlichkeitstabellen wurde hinzugefügt und andere Tabellen aktualisiert.
+[Administratorunterstützung für Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Aktualisierte Supporttypen, Erläuterungen zum Schweregrad und zusätzliche Details.
 
 ## <a name="november-2018"></a>November 2018
 
 Neuer oder geänderter Artikel | Beschreibung
 --- | ---
-[Unterstützung für Microsoft Managed Desktop](service-description/support.md)<br />und [Benutzerunterstützung für Microsoft Managed Desktop](working-with-managed-desktop/end-user-support.md) | Mit einschließen von Australien aktualisiert.
+[Unterstützung für Microsoft Managed Desktop](service-description/support.md)<br />und [Benutzerunterstützung für Microsoft Managed Desktop](working-with-managed-desktop/end-user-support.md) | Mit Australien aktualisiert.
 
 ## <a name="october-30-2018"></a>30. Oktober 2018
-Reorganisierter Inhalt: Abschnitt zur [Beschreibung des Microsoft Managed Desktop-Diensts](service-description/index.md)hinzugefügt. 
+Neu organisierter Inhalt: Abschnitt für [Microsoft Managed Desktop -Dienstbeschreibung hinzugefügt.](service-description/index.md) 
 

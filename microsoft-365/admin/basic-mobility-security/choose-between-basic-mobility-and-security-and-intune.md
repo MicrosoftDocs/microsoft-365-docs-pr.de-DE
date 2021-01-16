@@ -1,5 +1,5 @@
 ---
-title: Auswählen zwischen Basis Mobilität und Sicherheit und InTune
+title: Wählen Zwischen Basic Mobility and Security und Intune
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -18,20 +18,20 @@ ms.custom:
 search.appverid:
 - MET150
 description: Grundlegende Mobilität und Sicherheit sind Teil der Microsoft 365-Pläne.
-ms.openlocfilehash: 75fef5bd70d7b8926d31b80f16952aa996bc625c
-ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
+ms.openlocfilehash: cfd1a68c313d1a1335490e2b8d6938de192fe3f3
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580661"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49877092"
 ---
-# <a name="choose-between-basic-mobility-and-security-or-intune"></a>Auswählen zwischen Basis Mobilität und Sicherheit oder InTune
+# <a name="choose-between-basic-mobility-and-security-or-intune"></a>Wählen Sie zwischen Basic Mobility and Security oder Intune
 
-[Microsoft InTune](https://docs.microsoft.com/mem/intune/) ist ein eigenständiges Produkt, das in bestimmten Plänen von Microsoft 365 enthalten ist, während die grundlegende Mobilität und Sicherheit Teil der Microsoft 365-Pläne ist. 
+[Microsoft Intune](https://docs.microsoft.com/mem/intune/) ist ein eigenständiges Produkt, das in bestimmten Microsoft 365-Plänen enthalten ist, während Basic Mobility and Security Teil der Microsoft 365-Pläne ist. 
 
- ## <a name="availability-of-basic-mobility-and-security-and-intune"></a>Verfügbarkeit von grundlegender Mobilität und Sicherheit und InTune
+ ## <a name="availability-of-basic-mobility-and-security-and-intune"></a>Verfügbarkeit von Basic Mobility and Security und Intune
  
-Sowohl grundlegende Mobilität und Sicherheit als auch InTune sind in einer Vielzahl von Plänen enthalten, die in der folgenden Tabelle beschrieben werden.
+Sowohl Basic Mobility and Security als auch Intune sind in einer Vielzahl von Plänen enthalten, wie in der folgenden Tabelle beschrieben.
 
 | Plan | Grundlegende Mobilität und Sicherheit | Microsoft Intune |
 |:-----|:-----|:-----|
@@ -42,64 +42,65 @@ Sowohl grundlegende Mobilität und Sicherheit als auch InTune sind in einer Viel
 |Office 365 E3 |Ja|Nein|
 |Office 365 E5 |Ja|Nein|
 |Microsoft 365 Business Premium |Ja|Ja|
-|Microsoft 365-erst-3 |Ja|Ja|
+|Microsoft 365 Firstline 3 |Ja|Ja|
 |Microsoft 365 Enterprise E3 |Ja|Ja|
 |Microsoft 365 Enterprise E5 |Ja|Ja|
-|Microsoft 365 Education a1 |Ja|Ja|
+|Microsoft 365 Education A1 |Ja|Ja|
 |Microsoft 365 Education A3 |Ja|Ja|
 |Microsoft 365 Education A5 |Ja|Ja|
 |Microsoft Intune |Nein|Ja|
 |Enterprise Mobility & Security E3 |Nein|Ja|
-|Enterprise Mobility & Sicherheit E5 |Nein|Ja|
+|Enterprise Mobility & Security E5 |Nein|Ja|
 
 >[!NOTE]
->Sie können nicht mit der Verwendung von Basic Mobility and Security beginnen, wenn Sie bereits mit Microsoft InTune arbeiten.
+>Sie können mit der Verwendung von Basic Mobility and Security nicht beginnen, wenn Sie bereits Microsoft Intune verwenden.
 
- Ausführliche Informationen finden Sie unter [Microsoft 365 und Office 365 Platform Service descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description). 
+ Ausführliche Informationen finden Sie in [den Beschreibungen des Microsoft 365- und Office 365-Plattformdiensts.](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description) 
 
-## <a name="differences-in-capabilities"></a>Unterschiede bei den Funktionen
+## <a name="differences-in-capabilities"></a>Unterschiede in den Funktionen
 
-Mit Microsoft InTune und integrierter grundlegender Mobilität und Sicherheit können Sie mobile Geräte in Ihrer Organisation verwalten, es gibt jedoch wesentliche Unterschiede in der Funktion, die in der folgenden Tabelle beschrieben werden.
+Microsoft Intune und integrierte Basic Mobility and Security bieten Ihnen beide die Möglichkeit, mobile Geräte in Ihrer Organisation zu verwalten, es gibt jedoch wesentliche Unterschiede in der Funktion, die in der folgenden Tabelle beschrieben werden.
 
 >[!NOTE]
->Sie können Benutzer und Ihre mobilen Geräte sowohl mit InTune als auch mit Basic Mobility and Security in derselben Microsoft 365 Business Standard-Organisation verwalten *, indem Sie zuerst grundlegende Mobilität und Sicherheit einrichten und dann Microsoft InTune hinzufügen*. Auf diese Weise können Sie die grundlegende Mobilität und Sicherheit oder die mehr funktionsreiche InTune-Lösung auswählen. Weisen Sie eine InTune-Lizenz zum Aktivieren der InTune-Funktionen zu.
+>Sie können Benutzer und ihre mobilen Geräte sowohl mit Intune als auch mit Basic Mobility and Security in derselben Microsoft 365 Business Standard Organisation *verwalten,* indem Sie zunächst Basic Mobility and Security einrichten und dann Microsoft Intune hinzufügen. Auf diese Weise können Sie "Basic Mobility and Security" oder die funktionsreichere Intune-Lösung auswählen. Weisen Sie eine Lizenz für Intune zu, um die Features von Intune zu aktivieren.
 
 | Funktionsbereich | Wesentliche Elemente des Features | Grundlegende Mobilität und Sicherheit | Microsoft Intune |
 |:-----|:-----|:-----|:-----|
-|Gerätetypen|Verwalten verschiedener Betriebssystemplattformen und Haupt Verwaltungsmodi-Varianten. |Windows<br/>iOS<br/>Android<br/>Android Samsung Knox<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung Knox<br/>Mac OS, iPad OS|
-|Gerätekompatibilität|Festlegen und Verwalten von Sicherheitsrichtlinien wie PIN-Sperre auf Geräteebene und Erkennung von Jailbreaks. |Einschränkungen auf Android 9-und höher-Geräten. Siehe [Details](capabilities.md). |Ja|
-|Bedingter Zugriff basierend auf der Geräte Konformität |Verhindern, dass nicht konforme Geräte auf Firmen-e-Mails und Daten aus der Cloud zugreifen. |Wird in Windows 10 nicht unterstützt.<br/>Ist auf die Steuerung des Zugriffs auf Exchange Online, SharePoint Online und Outlook limitiert. |Ja |
-|Gerätekonfiguration  |Konfigurieren von Geräteeinstellungen (beispielsweise Deaktivieren der Kamera)|Beschränkte Gruppe von Einstellungen.|Ja|Gerätekompatibilität|Festlegen und Verwalten von Sicherheitsrichtlinien wie PIN-Sperre auf Geräteebene und Erkennung von Jailbreaks. |Einschränkungen auf Android 9-und höher-Geräten. Siehe [Details](capabilities.md). |Ja|
-|E-Mail-Profile  |Stellen Sie ein systemeigenes e-Mail-Profil auf dem Gerät. |Ja|Ja|
-|WiFi-profile |Stellen Sie ein systemeigenes WiFi-Profil auf dem Gerät zur Verfügung. |Nein|Ja|
-|VPN-profile |Stellen Sie ein systemeigenes VPN-Profil auf dem Gerät zur Verfügung. |Nein|Ja|
-|MDM-Anwendungsverwaltung |Stellen Sie Ihre internen Branchen-apps und apps-Stores für Benutzer bereit. |Nein|Ja|
-|MAM |Stellen Sie sicher, dass Ihre Benutzer über die Office Mobile-und Branchen-apps sicher auf Unternehmensinformationen zugreifen können, indem Sie Aktionen wie "Kopieren", "Ausschneiden", "Einfügen" und "Speichern unter" nur auf die für Unternehmensdaten genehmigten apps beschränken. |Nein|Ja|
-|Verwalteter Browser  |Aktivieren Sie sicheres Browsen mit der Edge-app. |Nein|Ja|
-|Zero Touch-Registrierungsprogramme Autopilot) |Registrieren Sie eine große Anzahl von unternehmenseigenen Geräten, während Sie das Benutzer Setup vereinfachen. |Nein|Ja|
+|Gerätetypen|Verwalten verschiedener Betriebssystemplattformen und hauptverwaltungsmodusvarianten. |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>Mac OS, iPad OS|
+|Gerätekompatibilität|Festlegen und Verwalten von Sicherheitsrichtlinien, z. B. PIN-Sperre auf Geräteebene und Jailbreakerkennung. |Einschränkungen auf Android 9- und höher-Geräten. Weitere [Informationen finden Sie unter](capabilities.md). |Ja|
+|Bedingter Zugriff basierend auf Gerätekonformität |Verhindern, dass nicht kompatible Geräte auf Unternehmens-E-Mails und -Daten aus der Cloud zugreifen. |Wird unter Windows 10 nicht unterstützt.<br/>Beschränkt auf die Steuerung des Zugriffs auf Exchange Online, SharePoint Online und Outlook. |Ja |
+|Gerätekonfiguration  |Konfigurieren von Geräteeinstellungen (z. B. Deaktivieren der Kamera)|Beschränkter Satz von Einstellungen.|Ja|
+|Gerätekompatibilität  |Festlegen und Verwalten von Sicherheitsrichtlinien, z. B. PIN-Sperre auf Geräteebene und Jailbreakerkennung. |Einschränkungen auf Android 9- und höher-Geräten. Weitere [Informationen finden Sie unter](capabilities.md). |Ja|
+|E-Mail-Profile  |Bereitstellen eines systemeigenen E-Mail-Profils auf dem Gerät. |Ja|Ja|
+|WLAN-Profile |Bereitstellen eines systemeigenen WLAN-Profils auf dem Gerät. |Nein|Ja|
+|VPN-Profile |Bereitstellen eines nativen VPN-Profils auf dem Gerät. |Nein|Ja|
+|Grundlegende Verwaltung von Anwendungen für Mobilität und Sicherheit  |Stellen Sie Ihre internen Line-of-Business-Apps und Aus-App-Stores für Benutzer zur Verfügung. |Nein|Ja|
+|Schutz mobiler Anwendungen  |Ermöglichen Sie Ihren Benutzern den sicheren Zugriff auf Unternehmensinformationen mithilfe der Office Mobile- und Line-of-Business-Apps, die sie kennen, und gleichzeitig die Sicherheit von Daten zu gewährleisten, indem Sie Aktionen wie Kopieren, Ausschneiden, Einfügen und Speichern auf diejenigen Apps beschränken, die für Unternehmensdaten genehmigt wurden. Funktioniert auch dann, wenn die Geräte nicht für Basic Mobility and Security registriert sind. Siehe "Schützen von App-Daten mithilfe von MAM-Richtlinien". |Nein|Ja|
+|Verwalteter Browser  |Aktivieren Sie sichereres Surfen im Web mithilfe der Edge-App. |Nein|Ja|
+|Zero touch enrollment programs Autopilot) |Registrieren Sie eine große Anzahl unternehmenseigener Geräte und vereinfachen Sie gleichzeitig die Benutzereinrichtung. |Nein|Ja|
 |||
 
-Zusätzlich zu den in der vorstehenden Tabelle aufgeführten Features umfassen Basic Mobility and Security und InTune eine Reihe von Remote Aktionen, die Befehle an Geräte über das Internet senden. Beispielsweise können Sie Office-Daten aus dem Gerät eines Mitarbeiters entfernen, während persönliche Daten hinterlassen werden (zurückziehen), Office-Apps aus dem Gerät eines Mitarbeiters entfernen (Wischen) oder ein Gerät auf seine Werkseinstellungen zurücksetzen (vollständige Zurücksetzung). 
+Zusätzlich zu den in der vorstehenden Tabelle aufgeführten Funktionen enthalten Basic Mobility and Security und Intune eine Reihe von Remoteaktionen, die Befehle über das Internet an Geräte senden. Sie können z. B. die Daten eines Mitarbeiters vom Gerät eines Mitarbeiters entfernen, während sie personenbezogene Daten erhalten (zurückziehen), office-Apps vom Gerät eines Mitarbeiters entfernen (Zurücksetzen) oder ein Gerät auf die Werkseinstellungen zurücksetzen (vollständige Zurücksetzung). 
 
-Zu den grundlegenden Mobilitäts-und Sicherheits Remote Aktionen gehören Ruhestand, wischen und vollständige Löschung. Weitere Informationen zu grundlegenden Mobilitäts-und Sicherheitsaktionen finden Sie unter [Features of Basic Mobility and Security](capabilities.md).
+Zu den grundlegenden Remoteaktionen für Mobilität und Sicherheit gehören "Zurückziehen", "Zurückziehen" und "Vollständige Zurückziehen". Weitere Informationen zu grundlegenden Mobilitäts- und Sicherheitsaktionen finden Sie unter ["Grundlegende Mobilität und Sicherheit".](capabilities.md)
 
-Mit InTune haben Sie die folgenden Aktionen:
+Mit Intune haben Sie die folgenden Aktionen:
 
--   Autopilot-Reset (nur Windows
--  [BitLocker-Schlüsselrotation](https://docs.microsoft.com/mem/intune/protect/encrypt-devices#rotate-bitlocker-recovery-keys)   (Nur Windows)
--  [Verwenden von wischen, zurückziehen oder manuelles aufhoben der Registrierung für das Gerät](https://docs.microsoft.com/mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal)
--  [Aktivierung deaktivieren Loc](https://docs.microsoft.com/mem/intune/remote-actions/device-activation-lock-disable)   (nur IOS)
--  [Neuer Anfang](https://docs.microsoft.com/mem/intune/remote-actions/device-fresh-start)   (Nur Windows)
-- [Vollständige Überprüfung](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)   (Nur Windows 10)
-- [Gerät suchen](https://docs.microsoft.com/mem/intune/remote-actions/device-locate)   (nur IOS)
-- [Verlorener Modus](https://docs.microsoft.com/mem/intune/remote-actions/device-lost-mode)   (nur IOS) – [Schnellüberprüfung](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)(nur Windows 10)
-- [Remote Steuerung für Android](https://docs.microsoft.com/mem/intune/remote-actions/teamviewer-support)
+-   Zurücksetzen von Autopilot (nur Windows)
+-  [Bitlocker-Schlüsseldrehung](https://docs.microsoft.com/mem/intune/protect/encrypt-devices#rotate-bitlocker-recovery-keys)   (nur Windows)
+-  [Verwenden des Zurückziehens, Zurückziehens oder manuellen Entfernens der Registrierung des Geräts](https://docs.microsoft.com/mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal)
+-  [Aktivierungsort deaktivieren](https://docs.microsoft.com/mem/intune/remote-actions/device-activation-lock-disable)   (nur iOS)
+-  [Neuanfang](https://docs.microsoft.com/mem/intune/remote-actions/device-fresh-start)   (nur Windows)
+- [Vollständiger Scan](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)   (nur Windows 10)
+- [Gerät suchen](https://docs.microsoft.com/mem/intune/remote-actions/device-locate)   (nur iOS)
+- [Modus "Verloren"](https://docs.microsoft.com/mem/intune/remote-actions/device-lost-mode)   (nur iOS) – [Schnellscan](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)(nur Windows 10)
+- [Remotesteuerung für Android](https://docs.microsoft.com/mem/intune/remote-actions/teamviewer-support)
 - [Remotesperre](https://docs.microsoft.com/mem/intune/remote-actions/device-remote-lock)
 - [Gerät umbenennen](https://docs.microsoft.com/mem/intune/remote-actions/device-rename)
--  [Zurücksetzen des Code](https://docs.microsoft.com/mem/intune/remote-actions/device-passcode-reset) [Neustarts](https://docs.microsoft.com/mem/intune/remote-actions/device-restart)   (nur Windows)
--  Aktualisieren von Windows Defender Security Intelligence (nur Windows)
--  Windows 10-Pin-Reset (nur Windows)
--  [Senden benutzerdefinierter Benachrichtigungen](https://docs.microsoft.com/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device)   (Android, Ios, iPad OS)
+-  [Zurücksetzen des Kennungsneustarts](https://docs.microsoft.com/mem/intune/remote-actions/device-passcode-reset) [](https://docs.microsoft.com/mem/intune/remote-actions/device-restart)   (nur Windows)
+-  Aktualisieren Windows Defender Security Intelligence (nur Windows)
+-  Zurücksetzen der Windows 10-PIN (nur Windows)
+-  [Senden von benutzerdefinierten Benachrichtigungen](https://docs.microsoft.com/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device)   (Android, iOS, iPad OS)
 -  [Gerät synchronisieren](https://docs.microsoft.com/mem/intune/remote-actions/device-sync)
 
-Weitere Informationen zu InTune-Aktionen finden Sie in der [Dokumentation zu Microsoft InTune](https://docs.microsoft.com/mem/intune/).
+Weitere Informationen zu Intune-Aktionen finden Sie in der [Microsoft Intune-Dokumentation.](https://docs.microsoft.com/mem/intune/)

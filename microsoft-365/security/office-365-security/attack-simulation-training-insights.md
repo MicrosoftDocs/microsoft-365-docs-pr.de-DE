@@ -11,18 +11,16 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Administratoren können erfahren, wie sich die Schulung zur Angriffssimulation im Microsoft 365 Security Center auf Die Mitarbeiter auswirkt und einblicke aus Simulations- und Schulungsergebnissen gewinnen kann.
-ms.openlocfilehash: c283819550872691d8dd23d3921c22cb23637633
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: baff6032f295b2b49b4f2ec9280fb465d47b8dc3
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870955"
+ms.locfileid: "49877140"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>Gewinnen Sie Erkenntnisse durch Angriffssimulationsschulungen
 
 Im Rahmen der Schulung zur Angriffssimulation bietet Microsoft Ihnen Einblicke basierend auf den Ergebnissen von Simulationen und Schulungen, die die Mitarbeiter durch geführt haben. Diese Einblicke helfen Ihnen, über den Fortschritt der Bedrohungsbereitschaft Ihrer Mitarbeiter auf dem Laufenden zu bleiben, und empfehlen die nächsten Schritte, um Ihre Mitarbeiter und Ihre Umgebung besser auf Angriffe vorzubereiten.
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Wir arbeiten kontinuierlich daran, die Einblicke zu erweitern, die Ihnen zur Verfügung stehen. Auswirkungen auf das Verhalten und empfohlene Aktionen sind derzeit verfügbar. To start, head over to [Attack simulation training in the Microsoft 365 security center](https://security.microsoft.com/attacksimulator?viewid=overview).
 
@@ -53,7 +51,7 @@ Im Abschnitt "Empfohlene Aktionen" finden Sie Details zu den Empfehlungen, die i
 
 ## <a name="related-links"></a>Links zu verwandten Themen
 
-[Erste Schritte mit dem Training zur Angriffssimulation](attack-simulation-training-get-started.md)
+[Erste Schritte mit dem Angriffssimulationstraining](attack-simulation-training-get-started.md)
 
 [Erstellen einer Phishingangriffssimulation](attack-simulation-training.md)
 
