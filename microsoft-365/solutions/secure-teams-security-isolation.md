@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Hier erfahren Sie, wie Sie ein Team mit einer eindeutigen Vertraulichkeitsbezeichnung für Sicherheit erstellen.
-ms.openlocfilehash: d5cfe33d4f254832ccf26552d8ca392cf1dc440c
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: 439dee40d1501801fc09d570614a591259c6f09c
+ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870979"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49881705"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Konfigurieren eines Teams mit Sicherheitsisolierung
 
@@ -46,7 +46,7 @@ Schauen Sie sich dieses Video an, um einen Überblick über den Bereitstellungsp
 <br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGHf]
 
-<a name="poster"></a> Eine zweiseitige Zusammenfassung dieses Szenarios zeigt das [Poster „Microsoft Teams mit Sicherheitsisolierung“](../downloads/team-security-isolation-poster.pdf).
+<a name="poster"></a> Eine einseitige Zusammenfassung dieses Szenarios zeigt das [Poster „Microsoft Teams mit Sicherheitsisolierung“](../downloads/team-security-isolation-poster.pdf).
 
 [![Poster „Microsoft Teams mit Sicherheitsisolierung“](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 
