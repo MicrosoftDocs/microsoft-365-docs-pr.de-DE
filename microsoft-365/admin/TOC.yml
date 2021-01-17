@@ -24,6 +24,8 @@
           href: setup/o365-setup-wizard-and-setup-page.md
         - name: Sichern von Windows 10-Computern
           href: ../business/secure-win-10-pcs.md
+        - name: Herunterladen von Software und Product Keys
+          href: setup/download-software-licenses-csp.md
         - name: Installieren von Office-Apps
           href: setup/install-applications.md
         - name: Einrichten von Windows-Geräten
@@ -360,12 +362,32 @@
               href: basic-mobility-security/overview.md
             - name: Vergleichen Sie zwischen grundlegender Mobilität und Sicherheit und Intune
               href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
-            - name: Grundlegende Mobilität und Sicherheit FAQ
-              href: basic-mobility-security/frequently-asked-questions.md
             - name: Funktionen von grundlegender Mobilität und Sicherheit
               href: basic-mobility-security/capabilities.md
-            - name: Vergleichen Sie zwischen grundlegender Mobilität und Sicherheit und Intune
-              href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
+            - name: Einrichten von grundlegender Mobilität und Sicherheit
+              href: basic-mobility-security/set-up.md
+            - name: Erstellen von Sicherheitsrichtlinien für Geräte
+              href: basic-mobility-security/create-device-security-policies.md
+            - name: Erstellen eines APNs-Zertifikats für iOS-Geräte
+              href: basic-mobility-security/create-an-apns-certificate-for-ios-devices.md
+            - name: Verwalten von Gerätezugriffseinstellungen
+              href: basic-mobility-security/manage-device-access-settings.md
+            - name: Abrufen von Details über verwaltete Geräte
+              href: basic-mobility-security/get-details-about-managed-devices.md
+            - name: Verwalten registrierter Geräte
+              href: basic-mobility-security/manage-enrolled-devices.md
+            - name: Einschreiben Ihres mobilen Geräts
+              href: basic-mobility-security/enroll-your-mobile-device.md
+            - name: Datenschutz und Sicherheit
+              href: basic-mobility-security/privacy-and-security.md
+            - name: Häufig gestellte Fragen
+              href: basic-mobility-security/frequently-asked-questions.md
+            - name: Zurücksetzen mobiler Geräte
+              href: basic-mobility-security/wipe-mobile-device.md
+            - name: Deaktivieren von grundlegender Mobilität und Sicherheit
+              href: basic-mobility-security/turn-off.md
+            - name: Problembehandlung
+              href: basic-mobility-security/troubleshoot.md
     - name: Arbeiten mit Kunden
       href: work-with-customers/index.yml
       items:
