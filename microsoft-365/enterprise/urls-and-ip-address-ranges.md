@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 'Zusammenfassung: Office 365 erfordert eine Internetverbindung. Die unten aufgeführten Endpunkte sollten für Kunden, die Office 365-Pläne verwenden, einschließlich Government Community Cloud (GCC), erreichbar sein.'
 hideEdit: true
-ms.openlocfilehash: 9b705c6cad0387efb16f3fc5494b1ba2fe337732
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 386c92d0856b3faa88fb8a05f8ddff58a81e3c4f
+ms.sourcegitcommit: a92b150da1e11d4a204c556ab98a4776727dbc22
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794400"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883336"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Office 365-URLs und -IP-Adressbereiche
 
@@ -62,7 +62,7 @@ Dies sind die dargestellten Datenspalten:
 [!INCLUDE [Office 365 worldwide endpoints](../includes/office-365-worldwide-endpoints.md)]
 
 >[!Note]
->Empfehlungen zu Yammer-IP-Adressen und -URLs finden Sie [in diesem Blogbeitrag](https://techcommunity.microsoft.com/t5/Yammer-Blog/Using-hard-coded-IP-addresses-for-Yammer-is-not-recommended/ba-p/276592).
+>Empfehlungen zu Yammer-IP-Adressen und -URLs finden Sie unter [Das Verwenden von hartcodierten IP-Adressen für Yammer wird nicht empfohlen](https://techcommunity.microsoft.com/t5/Yammer-Blog/Using-hard-coded-IP-addresses-for-Yammer-is-not-recommended/ba-p/276592)im Yammer-Blog.
 >
 
 ## <a name="related-topics"></a>Verwandte Themen
@@ -71,7 +71,7 @@ Dies sind die dargestellten Datenspalten:
 
 [Allgemeine Microsoft Stream Endpunkte](https://docs.microsoft.com/stream/network-overview#general-microsoft-stream-endpoints)
   
-[Überwachen der Microsoft 365-Konnektivität](https://docs.microsoft.com/microsoft-365/enterprise/monitor-connectivity?view=o365-worldwide)
+[Überwachen der Microsoft 365-Konnektivität](https://docs.microsoft.com/microsoft-365/enterprise/monitor-connectivity)
 
 [Rooten Sie das ZS und das ZS-Paket auf das Anwendungssystem des Drittanbieters](../compliance/encryption-office-365-certificate-chains.md)
   
@@ -88,3 +88,5 @@ Dies sind die dargestellten Datenspalten:
 [Microsoft Azure IP-Bereiche und Dienstkategorien – China-Cloud](https://www.microsoft.com/download/details.aspx?id=57062)
   
 [Öffentlicher Microsoft IP-Bereich](https://www.microsoft.com/download/details.aspx?id=53602)
+
+[Registrierung von Dienstnamen und Transportprotokoll-Portnummern](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)
