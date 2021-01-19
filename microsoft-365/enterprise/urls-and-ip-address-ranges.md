@@ -62,7 +62,7 @@ Dies sind die dargestellten Datenspalten:
 [!INCLUDE [Office 365 worldwide endpoints](../includes/office-365-worldwide-endpoints.md)]
 
 >[!Note]
->Empfehlungen zu Yammer-IP-Adressen und -URLs finden Sie unter [Das Verwenden von hartcodierten IP-Adressen für Yammer wird nicht empfohlen](https://techcommunity.microsoft.com/t5/Yammer-Blog/Using-hard-coded-IP-addresses-for-Yammer-is-not-recommended/ba-p/276592)im Yammer-Blog.
+>Empfehlungen zu Yammer-IP-Adressen und -URLs finden Sie unter [Das Verwenden von hartcodierten IP-Adressen für Yammer wird nicht empfohlen](https://techcommunity.microsoft.com/t5/Yammer-Blog/Using-hard-coded-IP-addresses-for-Yammer-is-not-recommended/ba-p/276592) im Yammer-Blog.
 >
 
 ## <a name="related-topics"></a>Verwandte Themen
